@@ -304,8 +304,8 @@ local L = app.L;
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 		--TODO: L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-		--TODO: L.QUESTS_BREADCRUMBS_CHECKBOX = "|cffADD8E6+Breadcrumbs";
-		--TODO: L.QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+Breadcrumbs";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
 		--TODO: L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		--TODO: L.REPUTATIONS_CHECKBOX = "|cffADD8E6Reputations";
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
@@ -512,7 +512,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -2070,7 +2070,6 @@ for key,value in pairs({
 	[250109] = "Cassa del Tesoro",	-- Treasure Chest
 	[250383] = "Reliquia di Ombraluna",	-- Moonshade Relic
 	[250541] = "Cassa del Tesoro",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "Cassa del Tesoro Piccola",	-- Small Treasure Chest
 	[250985] = "Cassa del Tesoro",	-- Treasure Chest
 	[251032] = "Comò",	-- Armoire
@@ -2978,7 +2977,11 @@ for key,value in pairs({
 	[375067] = "Cassa Glissandiana",	-- Glissandian Cache
 	[375068] = "Cassa Fuguelica",	-- Fugueal Cache
 	[375069] = "Cassa Cantarica",	-- Cantaric Cache
+	[375188] = "Disposizione dell'Alcova della Curvatura",	-- Camber Alcove Arrangement
+	[375189] = "Disposizione dell'Alcova del Repertorio",	-- Repertory Alcove Arrangement
+	[375190] = "Disposizione dell'Alcova Rotonda",	-- Rondure Alcove Arrangement
 	[375191] = "Disposizione dell'Alcova Dormiente",	-- Dormant Alcove Arrangement
+	[375192] = "Disposizione dell'Alcova Fulgida",	-- Fulgore Alcove Arrangement
 	[375270] = "Schema di Protoforma",	-- Protoform Schematic
 	[375272] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[375281] = "Reliquia Rubata",	-- Stolen Relic
@@ -2988,6 +2991,7 @@ for key,value in pairs({
 	[375362] = "Nido di Aviano",	-- Avian Nest
 	[375363] = "Cassa di Rifornimenti dei Giurafauce",	-- Mawsworn Supply Chest
 	[375366] = "Uova di Taracnide",	-- Tarachnid Eggs
+	[375368] = "Console del Catalizzatore della Creazione",	-- Creation Catalyst Console
 	[375369] = "Borsa Morsicata",	-- Gnawed Valise
 	[375370] = "Schema di Protoforma",	-- Protoform Schematic
 	[375371] = "Schema di Protoforma",	-- Protoform Schematic
@@ -3043,7 +3047,7 @@ for key,value in pairs({
 	[375893] = "Scrigno di Grande Valore",	-- High Value Cache
 	[375900] = "Schema di Protoforma",	-- Protoform Schematic
 	[375902] = "Drappo Etereo Strappato",	-- Torn Ethereal Drape
-	--TODO: [375903] = "Protoform Schematic",	-- Protoform Schematic
+	[375903] = "Schema di Protoforma",	-- Protoform Schematic
 	[375905] = "Schema di Protoforma",	-- Protoform Schematic
 	[375907] = "Schema di Protoforma",	-- Protoform Schematic
 	[375915] = "Barlume della Serenità",	-- Glimmer of Serenity

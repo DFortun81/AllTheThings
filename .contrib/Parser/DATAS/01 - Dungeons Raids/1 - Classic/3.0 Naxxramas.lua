@@ -2043,10 +2043,8 @@ applyclassicphase(PHASE_SIX,
 									i(23072, {	-- Fists of the Unrelenting
 										-- #if BEFORE TBC
 										["description"] = "These were made available after the TBC Prepatch.",
-										["u"] = NEVER_IMPLEMENTED,
-										-- #else
-										["u"] = TBC_PHASE_ONE,
 										-- #endif
+										["timeline"] = { "created 1.11.1.5462", "added 2.0.1.6180" },
 									}),
 									i(23047),	-- Eye of the Dead
 									i(23040),	-- Glyph of Deflection

@@ -522,6 +522,11 @@ _.Zones =
 			q(28503, {	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
+				["altQuests"] = {
+					-- 28503,	-- Hero's Call: Thousand Needles!
+					25479,	-- To New Thalanaar
+					25481,	-- To New Thalanaar
+				},
 			}),
 			q(49560, {	-- Hero's Call: Townlong Steppes!
 				["isBreadcrumb"] = true,

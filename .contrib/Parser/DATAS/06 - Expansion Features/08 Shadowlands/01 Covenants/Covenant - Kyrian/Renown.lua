@@ -9,6 +9,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	n(KYRIAN, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+			["sym"] = {
+				{"select","itemID",186593}	-- A Tiny Pair of Wings (PEPE!)
+			},
 			["g"] = {
 				i(186482,  {	-- Elysian Aquilon (MOUNT!)
 					["description"] = "Requires Renown 45.",
@@ -37,10 +40,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						}),
 						i(184997),	-- Aspiring Aspirant's Wraps
 					},
-				}),
-				i(186593,  {	-- A Tiny Pair of Wings (PEPE!)
-					["description"] = "Requires Renown 56.",
-					["questID"] = 64136,
 				}),
 				i(188005, {	-- Anima-Bathed Blade
 					["description"] = "Rewarded at 15 and 24 Renown.",

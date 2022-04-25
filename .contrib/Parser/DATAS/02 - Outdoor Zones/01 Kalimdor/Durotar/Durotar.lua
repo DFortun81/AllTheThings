@@ -1783,6 +1783,13 @@ root("Zones", m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["timeline"] = { "added 5.2.0.16486" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
 					["races"] = HORDE_ONLY,
@@ -1869,6 +1876,7 @@ root("Zones", m(KALIMDOR, {
 				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
 					["coord"] = { 57.6, 9.6, DUROTAR },
 					["races"] = { GOBLIN },
+					-- noted as not necessary 2022-04-17
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
 					["timeline"] = { "added 4.0.3.13277" },
 					["providers"] = {

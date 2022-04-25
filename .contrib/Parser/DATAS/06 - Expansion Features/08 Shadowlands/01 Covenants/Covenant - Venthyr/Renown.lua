@@ -9,6 +9,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	n(VENTHYR, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+			["sym"] = {
+				{"select","itemID",186580}	-- A Tiny Sinstone (PEPE!)
+			},
 			["g"] = {
 				i(182332,  {	-- Gravestone Battle Gargon (MOUNT!)
 					["description"] = "Requires Renown 39.",
@@ -34,10 +37,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						i(185057),	-- Harvester's Court Vestments
 						i(185063),	-- Harvester's Court Wraps
 					},
-				}),
-				i(186580,  {	-- A Tiny Sinstone (PEPE!)
-					["description"] = "Requires Renown 56.",
-					["questID"] = 64132,
 				}),
 				i(188003, {	-- Crate of Revendreth Reserve
 					["description"] = "Rewarded at 15 and 24 Renown.",

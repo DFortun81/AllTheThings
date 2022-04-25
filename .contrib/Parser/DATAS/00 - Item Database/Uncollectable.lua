@@ -10,6 +10,8 @@ i(180293);	-- Night Fae Insignia
 i(183190);	-- Oublion Cipher
 i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
+i(190172);	-- Title Reward: Gauntlet Runner
+i(184412);	-- Title Reward: Spirestalker
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
 
@@ -27,7 +29,10 @@ i(186472);	-- Wisps of Memory
 i(184147);	-- Agony Enrichment Device
 i(186201);	-- Ancient Anima Vessel
 i(186204);	-- Anima-Stained Glass Shards
+i(189864);	-- Anima Gossamer
 i(187349);	-- Anima Laden Egg
+i(189865);	-- Anima Matrix
+i(189544);	-- Anima Webbing
 i(181540);	-- Animaflower Bud
 i(187517);	-- Animaswell Prism
 i(181477);	-- Ardendew Pearl

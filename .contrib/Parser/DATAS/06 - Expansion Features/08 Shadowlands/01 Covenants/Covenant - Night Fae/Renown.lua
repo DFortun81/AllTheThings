@@ -9,6 +9,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 	n(NIGHT_FAE, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+			["sym"] = {
+				{"select","itemID",186473}	-- A Tiny Winter Staff (PEPE!)
+			},
 			["g"] = {
 				i(186493, {	-- Ardenweald Wilderling (MOUNT!)
 					["description"] = "Requires Renown 45.",
@@ -35,10 +38,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						i(184966),	-- Pure Sight Vestments
 						i(184973),	-- Pure Sight Wraps
 					},
-				}),
-				i(186473, {	-- A Tiny Winter Staff (PEPE!)
-					["description"] = "Requires Renown 56.",
-					["questID"] = 64078,
 				}),
 				i(188000, {	-- Grovetender's Pack
 					["description"] = "Rewarded at 15 and 24 Renown.",

@@ -304,8 +304,8 @@ local L = app.L;
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 		--TODO: L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-		--TODO: L.QUESTS_BREADCRUMBS_CHECKBOX = "|cffADD8E6+Breadcrumbs";
-		--TODO: L.QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+Breadcrumbs";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
 		--TODO: L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		--TODO: L.REPUTATIONS_CHECKBOX = "|cffADD8E6Reputations";
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
@@ -512,7 +512,7 @@ local L = app.L;
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -2072,7 +2072,6 @@ for key,value in pairs({
 	[250109] = "보물 상자",	-- Treasure Chest
 	[250383] = "달그늘 성물",	-- Moonshade Relic
 	[250541] = "보물 상자",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
 	[251032] = "장식장",	-- Armoire
@@ -2623,7 +2622,7 @@ for key,value in pairs({
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
-	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r  Empty Dish
 	[339248] = "감염된 보관함",	-- Infested Cache
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons
@@ -2980,7 +2979,11 @@ for key,value in pairs({
 	[375067] = "글리산도 보관함",	-- Glissandian Cache
 	[375068] = "푸가 보관함",	-- Fugueal Cache
 	[375069] = "노래의 보관함",	-- Cantaric Cache
+	[375188] = "솟아난 벽감 정렬",	-- Camber Alcove Arrangement
+	[375189] = "시초의 벽감 정렬",	-- Repertory Alcove Arrangement
+	[375190] = "구체의 벽감 정렬",	-- Rondure Alcove Arrangement
 	[375191] = "휴면의 벽감 정렬",	-- Dormant Alcove Arrangement
+	[375192] = "광휘의 벽감 정렬",	-- Fulgore Alcove Arrangement
 	[375270] = "원생형태 설계도",	-- Protoform Schematic
 	[375272] = "나락살이 보관함",	-- Mawsworn Cache
 	[375281] = "도둑맞은 유물",	-- Stolen Relic
@@ -2990,6 +2993,7 @@ for key,value in pairs({
 	[375362] = "새 둥지",	-- Avian Nest
 	[375363] = "나락살이 보급품 상자",	-- Mawsworn Supply Chest
 	[375366] = "원시거미 알",	-- Tarachnid Eggs
+	[375368] = "창조의 촉매 장치",	-- Creation Catalyst Console
 	[375369] = "갉아먹은 가방",	-- Gnawed Valise
 	[375370] = "원생형태 설계도",	-- Protoform Schematic
 	[375371] = "원생형태 설계도",	-- Protoform Schematic
@@ -3039,7 +3043,7 @@ for key,value in pairs({
 	[375538] = "잃어버린 계란형 물체",	-- Lost Ovoid
 	[375693] = "원생형태 설계도",	-- Protoform Schematic
 	[375694] = "원생형태 설계도",	-- Protoform Schematic
-	--TODO: [375746] = "Protoform Schematic",	-- Protoform Schematic
+	[375746] = "원형 설계도",	-- Prototype Schematic
 	[375748] = "원생형태 설계도",	-- Protoform Schematic
 	[375889] = "원생형태 설계도",	-- Protoform Schematic
 	[375893] = "진귀한 보관함",	-- High Value Cache

@@ -832,7 +832,9 @@ _.Zones =
 				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 					["coord"] = { 42.3, 39.7, DAZARALOR },
 					["g"] = {
-						i(168026),	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+						i(168026, {	-- Recipe Book: Sanguine Feather Quill of Lana'thel
+							["f"] = MISC,
+						}),
 					},
 				}),
 				n(122703, {	-- Clever Kumali <Alchemist Trainer>

@@ -36,8 +36,11 @@ root("Instances", tier(SL_TIER, {
 				i(187682),	-- Wastewarped Deathwalker (MOUNT!)
 			})),
 			ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- 	Shadowlands Keystone Hero: Season Three
-				title(458),	-- <Name>, the Cryptic Hero (TITLE!)
 			})),
+			-- achievement not ingame yet
+			--ach(, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- 	Cryptic Hero: Shadowlands Season 3
+			--	title(458),	-- <Name>, the Cryptic Hero (TITLE!)
+			--})),
 			-- Keystone Hero
 			ach(15051, {["timeline"] = {"added 9.1.0"}}),	-- Keystone Hero: De Other Side
 			ach(15048, {["timeline"] = {"added 9.1.0"}}),	-- Keystone Hero: Halls of Atonement

@@ -1001,10 +1001,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 				q(59211, {	-- Forgotten Village
-					["description"] = "This Bonus Objective is only available at level 58 or 59.",
-					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["lvl"] = { 58, 59 },
+					-- still not 100% confirmed on a way to actually complete this quest, either on fresh character or 60
+					["lockCriteria"] = { 1, "lvl", 60 },
 				}),
 				q(62780, {	-- Parasites of Reality (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character

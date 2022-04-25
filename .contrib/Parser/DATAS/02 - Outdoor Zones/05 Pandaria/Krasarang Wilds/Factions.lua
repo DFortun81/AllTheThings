@@ -262,10 +262,6 @@ _.Zones =
 								["provider"] = { "n", 68072 },	-- Kor'kron Bodyguard
 								["races"] = HORDE_ONLY,
 							}),
-							q(32125, {	-- Don't Try So Hard - DEPRECATED
-								["races"] = HORDE_ONLY,
-								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in "Flash! Aaaaaahhhh!"
-							}),
 							q(32351, {	-- Echoes of Thunder
 								["minReputation"] = { 1375, HONORED+10750 },
 								["sourceQuests"] = { 32384 },	-- Trapping the Leader

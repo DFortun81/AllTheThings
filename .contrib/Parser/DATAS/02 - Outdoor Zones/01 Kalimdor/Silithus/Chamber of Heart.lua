@@ -29,6 +29,7 @@ root("Zones", {
 							ach(13769),	-- Power Up
 							ach(13770),	-- Power Creep
 						}),
+						ach(13998),	-- Pure of Heart
 						ach(14157, {	-- The Corruptor's End
 							crit(1, {	-- Ny'alotha, the Waking City: The Corruptor's End
 								["sourceQuest"] = 58632,	-- Ny'alotha, the Waking City: The Corruptor's End

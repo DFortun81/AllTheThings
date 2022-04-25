@@ -54,9 +54,11 @@ root("WorldEvents", n(-539,	-- The Scepter of the Shifting Sands
 						title(33, {	-- Scarab Lord Crieve
 							["timeline"] = { "added 2.0.3.28000", "removed 4.0.3" },	-- Added in Burning Crusade Prepatch
 						}),
-						i(21176),	-- Black Qiraji Battle Tank (MOUNT!)
-						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
-							["timeline"] = { "added 7.3.5" },
+						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
+							mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
+								["timeline"] = { "added 7.3.5" },
+								["u"] = REMOVED_FROM_GAME,	-- when it's added, it's already removed because it's only given to players who already have the original removed
+							}),
 						}),
 					},
 				})),

@@ -14,8 +14,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(185452, {	-- Lost Soul
 				["description"] = "In multiple hidden areas.",
 				["coords"] = {
-					{ 37, 34.2, ZERETH_MORTIS },
 					{ 43.9, 79.9, ZERETH_MORTIS },
+					{ 30.4, 67.2, ZERETH_MORTIS },
+					{ 37.0, 34.2, ZERETH_MORTIS },
+					{ 37.6, 77.2, ZERETH_MORTIS },
+					{ 38.2, 71.4, ZERETH_MORTIS },
+					{ 38.4, 80.4, ZERETH_MORTIS },
+					{ 38.6, 80.4, ZERETH_MORTIS },
+					{ 43.8, 79.4, ZERETH_MORTIS },
+					{ 49.8, 80.0, ZERETH_MORTIS },
+					{ 58.4, 75.0, ZERETH_MORTIS },
 				},
 				["g"] = {
 					i(189988),	-- Sheep Soul

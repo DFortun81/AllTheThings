@@ -762,6 +762,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
+						["repeatable"] = true,
 					}),
 					q(10025, {	-- More Basilisk Eyes
 						["qg"] = 18596,	-- Arcanist Adyria
@@ -1071,10 +1072,6 @@ root("Zones", {
 							i(142282),	-- Plans: Stormforged Axe
 						},
 					}),
-					q(10009, {	-- Crackin' Some Skulls
-						["qg"] = 18584,	-- Sal'salabim
-						["sourceQuest"] = 10004,	-- Patience and Understanding *UNTESTED*
-					}),
 					q(41160, {	-- Earth to Earth
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
@@ -1090,10 +1087,6 @@ root("Zones", {
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 25167 },	-- General Tiras'alan
 						["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					}),
-					q(10010, {	-- It's Just That Easy?
-						["qg"] = 18584,	-- Sal'salabim
-						["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 					}),
 					q(10169, {	-- Losing Gracefully
 						["u"] = REMOVED_FROM_GAME,
@@ -1392,25 +1385,28 @@ root("Zones", {
 					})),
 				}),
 				n(REWARDS, {
-					i(33844, {	-- Barrel of Fish
-						i(33869),	-- Recipe: Broiled Bloodfin
-						-- #if AFTER 3.2.0
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						-- #endif
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33875),	-- Recipe: Kibler's Bits
-						i(33870),	-- Recipe: Skullfish Soup
-						i(33871),	-- Recipe: Stormchops
-					}),
-					i(33857, {	-- Crate of Meat
-						-- #if AFTER 3.2.0
-						i(34834),	-- Recipe: Captain Rumsey's Lager
-						-- #endif
-						i(33925),	-- Recipe: Delicious Chocolate Cake
-						i(33875),	-- Recipe: Kibler's Bits
-						i(33873),	-- Recipe: Spicy Hot Talbuk
-						i(33871),	-- Recipe: Stormchops
-					}),
+					["requireSkill"] = COOKING,
+					["groups"] = {
+						i(33844, {	-- Barrel of Fish
+							i(33869),	-- Recipe: Broiled Bloodfin
+							-- #if AFTER 3.2.0
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							-- #endif
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33870),	-- Recipe: Skullfish Soup
+							i(33871),	-- Recipe: Stormchops
+						}),
+						i(33857, {	-- Crate of Meat
+							-- #if AFTER 3.2.0
+							i(34834),	-- Recipe: Captain Rumsey's Lager
+							-- #endif
+							i(33925),	-- Recipe: Delicious Chocolate Cake
+							i(33875),	-- Recipe: Kibler's Bits
+							i(33873),	-- Recipe: Spicy Hot Talbuk
+							i(33871),	-- Recipe: Stormchops
+						}),
+					},
 				}),
 				n(VENDORS, {
 					n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
@@ -2094,6 +2090,7 @@ root("Zones", {
 							i(35255),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
 							-- #if AFTER CATA
 							i(35248),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
+							i(35250),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
 							-- #endif
 							-- #if BEFORE CATA
 							i(35251),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
@@ -2127,8 +2124,8 @@ root("Zones", {
 							i(35267),	-- Design: Inscribed Pyrestone
 							i(35253),	-- Design: Jagged Seaspray Emerald
 							-- #if BEFORE CATA
-							i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
 							i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
+							i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
 							-- #endif
 							i(35258),	-- Design: Mystic Lionseye
 							i(35269),	-- Design: Potent Pyrestone
@@ -2171,6 +2168,9 @@ root("Zones", {
 							i(35766),	-- Design: Steady Seaspray Emerald
 							i(35265),	-- Design: Stormy Empyrean Sapphire
 							i(35249),	-- Design: Subtle Crimson Spinel [TBC] / Design: Subtle Lionseye [CATA+]
+							-- #if BEFORE CATA
+							i(35250),	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
+							-- #endif
 							i(35261),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+] (both)
 							-- #if AFTER CATA
 							i(35239),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
@@ -2178,6 +2178,48 @@ root("Zones", {
 							i(35270),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
 							-- #if BEFORE CATA
 							i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
+							-- #endif
+							
+							-- #if BEFORE 6.0.1
+							-- #if AFTER CATA
+							i(32227, {	-- Crimson Spinel
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							i(32228, {	-- Empyrean Sapphire
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							i(32229, {	-- Lionseye
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							i(32231, {	-- Pyrestone
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							i(32249, {	-- Seaspray Emerald
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							i(32230, {	-- Shadowsong Amethyst
+								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							}),
+							-- #else
+							i(32227, {	-- Crimson Spinel
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							i(32228, {	-- Empyrean Sapphire
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							i(32229, {	-- Lionseye
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							i(32231, {	-- Pyrestone
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							i(32249, {	-- Seaspray Emerald
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							i(32230, {	-- Shadowsong Amethyst
+								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
+							}),
+							-- #endif
 							-- #endif
 						},
 					})),

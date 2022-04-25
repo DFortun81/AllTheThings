@@ -903,7 +903,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					},
 				}),
 				q(60840, {	-- Wild Hunt Offensive
-					["isWorldQuest"] = true,	-- shows up in /attwq without this
 					["coord"] = { 64.0, 46.0, ARDENWEALD },
 				}),
 				q(62720, {	-- The Fallen Tree (pre-60)

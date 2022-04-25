@@ -716,6 +716,15 @@ _.Zones =
 							i(118028),	-- Ogron Slayer's Greatstaff
 						},
 					}),
+					q(36832, {	-- Get the Xuk Outta Here!
+						["provider"] = { "n", 85980 },	-- Spirit of Bony Xuk
+						["coord"] = { 44.1, 48.8, GORGROND },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35247,	-- Zero Xuks Given
+						["g"] = {
+							follower(212),	-- Spirit of Bony Xuk
+						},
+					}),
 					q(34699,  {	-- Getting Gladiators
 						["provider"] = { "n", 79322 },	-- Gladiator Akaani
 						["coord"] = { 42.7, 62.9, GORGROND },
@@ -1191,6 +1200,19 @@ _.Zones =
 							35035,	-- Seedbearers of Bad News
 						},
 					}),
+					q(35038, {	-- What the Bony Xuk?	-- also requires On The Mend and Basilisk Butcher?
+						["provider"] = { "n", 84743 },	-- Bony Xuk
+						["coord"] = { 46.1, 55.0, GORGROND },
+						["sourceQuest"] = 35036,	-- Is This One of Yours?
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(112864),	-- Laughing Skull Trophy Necklace
+							i(119085),	-- Xuk's Bad Xuk Charm
+							i(119076),	-- Xuk's Fingerbone Pouch
+							i(112863),	-- Xuk's Good Xuk Charm
+							i(112865),	-- Xuk's Spirit-Speaking Chain
+						},
+					}),
 					q(36209,  {	-- What's Under There?
 						["provider"] = { "n", 82610 },	-- Rangari Erdanii
 						["coord"] = { 46.1, 55.0, GORGROND },
@@ -1199,6 +1221,30 @@ _.Zones =
 							36210,	-- Hard Shell
 							36208,	-- The Crystal Shard
 						},
+					}),
+					q(35041, {	-- Xuk It!
+						["provider"] = { "n", 84743 },	-- Bony Xuk
+						["coord"] = { 46.1, 55.0, GORGROND },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35037,	-- Bad At Breaking
+							35934,	-- Nisha's Vengeance
+							35925,	-- The Gronn Strategy
+							35038,	-- What the Bony Xuk?
+							35202,	-- Xuk Me, Right?
+						},
+					}),
+					q(35202, {	-- Xuk Me, Right?
+						["provider"] = { "n", 84743 },	-- Bony Xuk
+						["coord"] = { 46.1, 55.0, GORGROND },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35036,	-- Is This One of Yours?
+					}),
+					q(35247, {	-- Zero Xuks Given
+						["provider"] = { "n", 84748 },	-- Bony Xuk
+						["coord"] = { 43.8, 48.8, GORGROND },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 35041,	-- Xuk It!
 					}),
 					n(BONUS_OBJECTIVES, {
 						-- TODO: Check SQ also probably cant do after a certain level
@@ -1353,15 +1399,6 @@ _.Zones =
 						i(118030),	-- Overgrowth Cutter Gauntlets
 						i(118032),	-- Steamburst Handwraps
 						i(118033),	-- Wildwood Wrangler Gloves
-					},
-				}),
-				q(36832, {	-- Get the Xuk Outta Here!
-					["provider"] = { "n", 85980 },	-- Spirit of Bony Xuk
-					["coord"] = { 44.1, 48.8, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35247,	-- Zero Xuks Given
-					["g"] = {
-						follower(212),	-- Spirit of Bony Xuk
 					},
 				}),
 				q(33544, {	-- Goren, Goren, Gone!
@@ -2001,48 +2038,11 @@ _.Zones =
 						49564,	-- Hero's Call: Gorgrond!
 					},
 				}),
-				q(35038, {	-- What the Bony Xuk?	-- also requires On The Mend and Basilisk Butcher?
-					["provider"] = { "n", 84743 },	-- Bony Xuk
-					["coord"] = { 46.1, 55.0, GORGROND },
-					["sourceQuest"] = 35036,	-- Is This One of Yours?
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(112864),	-- Laughing Skull Trophy Necklace
-						i(119085),	-- Xuk's Bad Xuk Charm
-						i(119076),	-- Xuk's Fingerbone Pouch
-						i(112863),	-- Xuk's Good Xuk Charm
-						i(112865),	-- Xuk's Spirit-Speaking Chain
-					},
-				}),
 				q(35151, {	-- Your Base, Your Choice
 					["provider"] = { "n", 74594 },	-- Durotan
 					["coord"] = { 45.8, 70.2, GORGROND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36460,	-- Just Another Stick in the Wall
-				}),
-				q(35041, {	-- Xuk It!
-					["provider"] = { "n", 84743 },	-- Bony Xuk
-					["coord"] = { 46.1, 55.0, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						35037,	-- Bad At Breaking
-						35934,	-- Nisha's Vengeance
-						35925,	-- The Gronn Strategy
-						35038,	-- What the Bony Xuk?
-						35202,	-- Xuk Me, Right?
-					},
-				}),
-				q(35202, {	-- Xuk Me, Right?
-					["provider"] = { "n", 84743 },	-- Bony Xuk
-					["coord"] = { 46.1, 55.0, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35036,	-- Is This One of Yours?
-				}),
-				q(35247, {	-- Zero Xuks Given
-					["provider"] = { "n", 84748 },	-- Bony Xuk
-					["coord"] = { 43.8, 48.8, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35041,	-- Xuk It!
 				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ

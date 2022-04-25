@@ -594,7 +594,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
 				["g"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
-						--["questID"] =
+						["questID"] = 65474,
 					}),
 				},
 			}),
@@ -639,7 +639,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 					i(189713, {	-- Pocopoc's Copper and Cobalt Components
-						--["questID"] =
+						["questID"] = 65478
 					}),
 					i(189714, {	-- Pocopoc's Platinum and Emerald Components
 						["questID"] = 65479,
@@ -651,8 +651,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coords"] = {
 					{ 51.1, 64.5, ZERETH_MORTIS },
 					{ 54.5, 58.8, ZERETH_MORTIS },
+					{ 54.8, 58.3, ZERETH_MORTIS },
 					{ 48.2, 66.5, ZERETH_MORTIS },
 					{ 48.2, 42.8, ZERETH_MORTIS },
+					{ 48.4, 59.5, ZERETH_MORTIS },
 					{ 68.5, 36.1, ZERETH_MORTIS },
 					{ 62, 42, ZERETH_MORTIS },
 					{ 60.3, 71.6, ZERETH_MORTIS },
@@ -666,21 +668,29 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			o(375373, {	-- Discarded Automa Scrap
 				["coords"] = {
-					{ 41.2, 72.9, ZERETH_MORTIS },
+					{ 39.6, 77.7, ZERETH_MORTIS },
 					{ 40.1, 69.4, ZERETH_MORTIS },
-					{ 50.6, 93, ZERETH_MORTIS },
-					{ 62.1, 74.9, ZERETH_MORTIS },
+					{ 40.6, 70.0, ZERETH_MORTIS },
+					{ 41.2, 72.9, ZERETH_MORTIS },
+					{ 43.6, 83.3, ZERETH_MORTIS },
 					{ 49.7, 75.9, ZERETH_MORTIS },
-					{ 53.9, 88.6, ZERETH_MORTIS },
 					{ 50.6, 93.1, ZERETH_MORTIS },
+					{ 51.1, 46.9, ZERETH_MORTIS },
+					{ 53.9, 88.6, ZERETH_MORTIS },
+					{ 59.0, 60.9, ZERETH_MORTIS },
+					{ 62.1, 74.9, ZERETH_MORTIS },
+					{ 63.9, 72.3, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },
+					-- Locrian Esper
+					{ 50.2, 76.4, 2028 },
+					{ 79.2, 74.8, 2028 },
 				},
 				["g"] = {
 					i(189717, {	-- Pocopoc's Shielded Core
-						--["questID"] =
+						["questID"] = 65483,
 					}),
 					i(189718, {	-- Pocopoc's Upgraded Core
-						["questID"] = 65484
+						["questID"] = 65484,
 					}),
 				},
 			}),
@@ -710,7 +720,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["g"] = {
 					i(190766),	-- Spectral Mawrat's Tail (MOUNT!)
-					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 				},
 			}),
 			o(376041, {	-- Shrouded Cypher Cache

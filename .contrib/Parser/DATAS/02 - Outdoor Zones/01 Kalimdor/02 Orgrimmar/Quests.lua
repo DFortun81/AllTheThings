@@ -57,18 +57,12 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(32309, {	-- A Tale of Six Masters
-				["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["classes"] = { WARLOCK },
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-			}),
 			q(62568, {	-- Adventurers Wanted: Chromie's Call
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 				["coord"] = { 48.3, 71.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(25264, {	-- Ak'Zeloth
 				["sourceQuests"] = { 25263 },	-- Arnak Fireblade
@@ -174,12 +168,14 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(60123, {	-- Burning Crusade: To Outland!
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(29219, {	-- Bwemba's Spirit
 				["sourceQuests"] = { 29157 },	-- The Zandalari Menace
@@ -204,6 +200,7 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(32468, {	-- Crystal Clarity
 				["sourceQuests"] = { 32471 },	-- Light Camera Action
@@ -380,6 +377,11 @@ root("Zones", m(KALIMDOR, {
 				["isBreadcrumb"] = true,
 				["description"] = "This quest is automatically offered to Horde players upon reaching level 30.",
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1,
+					"spellID", 34090,	-- Expert Riding
+					"spellID", 34091,	-- Artisan Riding
+					"spellID", 90265,	-- Master Riding
+				},
 			}),
 			q(3563,  {	-- Jes'rimon's Payment to Jediga
 				["sourceQuests"] = { 3541 },	-- Delivery to Jes'rimon
@@ -403,24 +405,46 @@ root("Zones", m(KALIMDOR, {
 				["isBreadcrumb"] = true,
 				["description"] = "This quest is available to Goblins upon reaching level 10.",
 				["races"] = { GOBLIN },
+				["lockCriteria"] = { 1,
+					"spellID", 33388,	-- Apprentice Riding
+					"spellID", 33391,	-- Journeyman Riding
+					"spellID", 34090,	-- Expert Riding
+					"spellID", 34091,	-- Artisan Riding
+					"spellID", 90265,	-- Master Riding
+				},
 			}),
 			q(32669, {	-- Learn To Ride
 				["DisablePartySync"] = true,
 				["isBreadcrumb"] = true,
 				["description"] = "This quest is available to Orcs upon reaching level 10.",
 				["races"] = { ORC },
+				["lockCriteria"] = { 1,
+					"spellID", 33388,	-- Apprentice Riding
+					"spellID", 33391,	-- Journeyman Riding
+					"spellID", 34090,	-- Expert Riding
+					"spellID", 34091,	-- Artisan Riding
+					"spellID", 90265,	-- Master Riding
+				},
 			}),
 			q(32667, {	-- Learn To Ride
 				["DisablePartySync"] = true,
 				["isBreadcrumb"] = true,
 				["description"] = "This quest is available to Pandaren upon reaching level 10.",
 				["races"] = { PANDAREN_HORDE },
+				["lockCriteria"] = { 1,
+					"spellID", 33388,	-- Apprentice Riding
+					"spellID", 33391,	-- Journeyman Riding
+					"spellID", 34090,	-- Expert Riding
+					"spellID", 34091,	-- Artisan Riding
+					"spellID", 90265,	-- Master Riding
+				},
 			}),
 			q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 				["repeatable"] = true,
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(60345, {	-- License to Ride
 				["customCollect"] = "NPE",	-- New Player Experience
@@ -587,12 +611,14 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(60126, {	-- Mists of Pandaria: To Pandaria!
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(26417, {	-- Northern Stranglethorn: The Fallen Empire
 				["sourceQuests"] = { 26416 },	-- Well, Come to the Jungle
@@ -613,12 +639,6 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(32307, {	-- Reader for the Dead Tongue
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },	-- Kranosh
-				["classes"] = { WARLOCK },
-			}),
 			q(25275, {	-- Report to the Labor Captain
 				["provider"] = { "n", 3144 },	-- Eitrigg
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
@@ -628,7 +648,7 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 6385 },	-- Doras the Wind Rider Master
 				["provider"] = { "n", 3310 },	-- Doras
 				["coord"] = { 49.5, 59.2, ORGRIMMAR },
-				["races"] = { ORC, TROLL },
+				["races"] = { ORC, TROLL, MAGHAR },
 			}),
 			q(26840, {	-- Return to the Highlands
 				["sourceQuests"] = { 26830 },	-- Traitor's Bait
@@ -669,12 +689,6 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 3144 },	-- Eitrigg
 				["coord"] = { 48.6, 71.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-			}),
-			q(32317, {	-- Seeking the Soulstones
-				["sourceQuests"] = { 32309 },	-- A Tale of Six Masters
-				["provider"] = { "n", 88705 },	-- Kranosh
-				["classes"] = { WARLOCK },
-				["coord"] = { 53.8, 35.8, ORGRIMMAR },
 			}),
 			q(28465, {	-- Slaves of the Firelord
 				["sourceQuests"] = { 28301 },	-- Meet with Terga Earthbreaker
@@ -777,7 +791,13 @@ root("Zones", m(KALIMDOR, {
 			}),
 			q(28461, {	-- The Golem Lord's Creations
 				["sourceQuests"] = { 28297 },	-- Meet with Ormak Grimshot
-				["provider"] = { "n", 3352 },	-- Ormak Grimshot
+				["qgs"] = {
+				-- #IF BEFORE SHADOWLANDS
+					3352,	-- Ormak Grimshot
+				-- #ELSE
+					168551,	-- Tamanji
+				-- #ENDIF
+				},
 				["classes"] = { HUNTER },
 				["coord"] = { 63.8, 32.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
@@ -894,6 +914,7 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(28466, {	-- Weapons of Darkness
 				["sourceQuests"] = { 28302 },	-- Meet with Sunwalker Atohmo
@@ -930,14 +951,6 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
 				["coord"] = { 52.5, 88.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-			}),
-			q(65424, {	-- Whatever You Sayaad
-				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
-				["provider"] = { "n", 184600 },	-- Warlock Minion
-				["coord"] = { 74.6, 47.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { "added 9.2.0" },
 			}),
 			q(60346, {	-- What's Your Specialty? (Druid)
 				["customCollect"] = "NPE",	-- New Player Experience
@@ -1062,11 +1075,13 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				["repeatable"] = true,
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 			q(60097, {	-- Wrath of the Lich King: To Northrend!
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 				["coord"] = { 40.8, 79.9, ORGRIMMAR },
+				["lockCriteria"] = { 1, "lvl", 50 },
 			}),
 		}),
 	}),

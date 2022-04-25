@@ -1699,14 +1699,15 @@ root("Zones", m(KULTIRAS, {
 					i(158680),	-- Rikal's Ritual Beads
 				},
 			}),
-			n(BONUS_OBJECTIVES, {
+			n(BONUS_OBJECTIVES, sharedData({
+				["lockCriteria"] = { 1, "lvl", 50 },
+				["races"] = ALLIANCE_ONLY,
+			},{
 				-- TODO: Check SQ also probably cant do after a certain level
-				["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
-					q(50779),	-- A Clean Slate
-					q(51534),	-- The Battle for Brennadam
-					q(50133),	-- Weed Whacking
-				}),
-			}),
+				q(50779),	-- A Clean Slate
+				q(51534),	-- The Battle for Brennadam
+				q(50133),	-- Weed Whacking
+			})),
 		}),
 	}),
 }));

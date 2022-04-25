@@ -740,6 +740,7 @@ root("Zones", {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9886, {	-- Membership Benefits
 						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
@@ -747,6 +748,7 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 						["groups"] = {
 							i(25424),	-- Gem-Stuffed Envelope
 						},
@@ -757,6 +759,7 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, FRIENDLY },
 						["maxReputation"] = { 933, HONORED },
+						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
 						["groups"] = {
 							i(25419),	-- Unmarked Bag of Gems
 						},
@@ -773,6 +776,7 @@ root("Zones", {
 						["sourceQuest"] = 10476,	-- Fierce Enemies
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 978, EXALTED },	-- Kurenai, Exalted.
+						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -782,6 +786,7 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, HONORED },
 						["maxReputation"] = { 933, REVERED },
+						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
 						["groups"] = {
 							i(25422),	-- Bulging Sack of Gems
 						},
@@ -802,6 +807,7 @@ root("Zones", {
 						["repeatable"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9915, {	-- More Heads Full of Ivory
 						["provider"] = { "n", 18333 },	-- Shadrek
@@ -810,6 +816,7 @@ root("Zones", {
 						["repeatable"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9892, {	-- More Obsidian Warbeads
 						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
@@ -819,6 +826,7 @@ root("Zones", {
 						["minReputation"] = { 933, FRIENDLY },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
 					}),
 					q(10478, {	-- More Warbeads!
 						["provider"] = { "n", 18407 },	-- Warden Bullrok
@@ -826,6 +834,7 @@ root("Zones", {
 						["sourceQuest"] = 10479,	-- Proving Your Strength
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 941, EXALTED },	-- The Maghar, Exalted.
+						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
@@ -846,6 +855,7 @@ root("Zones", {
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906,  {	-- Message in a Battle
 						["provider"] = { "n", 18106 },	-- Jorin Deadeye
@@ -920,11 +930,15 @@ root("Zones", {
 						["crs"] = { 18238 },	-- Murkblood Invader
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
+						["coord"] = { 33.9, 58.0, NAGRAND },
+						["lockCriteria"] = { 1, "lvl", 50 },
 					}),
 					q(9872,  {	-- Murkblood Invaders (H)
 						["crs"] = { 18238 },	-- Murkblood Invader
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
+						["coord"] = { 33.9, 58.0, NAGRAND },
+						["lockCriteria"] = { 1, "lvl", 50 },
 					}),
 					q(9867,  {	-- Murkblood Leaders..
 						["provider"] = { "n", 18068 },	-- Farseer Margadesh <The Lightning Sons>

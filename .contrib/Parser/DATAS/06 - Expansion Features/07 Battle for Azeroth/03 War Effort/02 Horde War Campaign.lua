@@ -1402,13 +1402,6 @@ _.ExpansionFeatures =
 						-- 		1535,	-- Durotar (Scenario)
 						-- 	},
 						-- }),
-						q(57152, {	-- Most Loyal
-							["altQuests"] = { 54109 },	-- Queen's Favor
-							["sourceQuests"] = { 57151 },	-- A Line in the Sand
-							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
-							["coord"] = { 50, 91.3, 1534 },
-							["races"] = HORDE_ONLY,
-						}),
 
 						--	unsorted below this point
 
@@ -1560,7 +1553,15 @@ _.ExpansionFeatures =
 							["coord"] = { 50.1, 91.3, 1534 },
 							["races"] = HORDE_ONLY,
 						}),
+						q(57152, {	-- Most Loyal
+							["altQuests"] = { 54109 },	-- Queen's Favor
+							["sourceQuests"] = { 57151 },	-- A Line in the Sand
+							["provider"] = { "n", 156425 },	-- Dark Ranger Lenara
+							["coord"] = { 50, 91.3, 1534 },
+							["races"] = HORDE_ONLY,
+						}),
 						q(57147, {	-- Not My Warchief
+							["altQuests"] = { 54109 },	-- Queen's Favor
 							["description"] = "Have to be Sylvanas Loyalist that escapes with Eitrigg",
 							["sourceQuests"] = { 57152 },	-- Most Loyal
 							["provider"] = { "n", 156124 },	-- Eitrigg

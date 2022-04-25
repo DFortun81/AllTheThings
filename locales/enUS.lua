@@ -112,6 +112,8 @@ app.L = {
 	["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:";
 	["BREADCRUMB_PARTYSYNC_2"] = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
 	["BREADCRUMB_PARTYSYNC_3"] = "This may be obtained via Party Sync with a character that is able to accept this quest.";
+	["DISABLE_PARTYSYNC"] = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
+	["UNAVAILABLE_WARNING_FORMAT"] = "|c%sBecomes unavailable if %d of the following are met:|r";
 	["NO_ENTRIES"] = "No entries matching your filters were found.";
 	["NO_ENTRIES_DESC"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	["DEBUG_LOGIN"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
@@ -228,8 +230,13 @@ app.L = {
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
-	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
+	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	["CURRENCY_NEEDED_TO_BUY"] = "Items needed to buy not collected Things";
+	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
+	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
+	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
+	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
+	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -330,8 +337,8 @@ app.L = {
 	["MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP"] = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 	["QUESTS_CHECKBOX"] = "|cffADD8E6"..QUESTS_LABEL;
 	["QUESTS_CHECKBOX_TOOLTIP"] = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-	["QUESTS_BREADCRUMBS_CHECKBOX"] = "|cffADD8E6+Breadcrumbs";
-	["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"] = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
+	["QUESTS_LOCKED_CHECKBOX"] = "|cffADD8E6Locked Quests";
+	["QUESTS_LOCKED_CHECKBOX_TOOLTIP"] = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 	["RECIPES_CHECKBOX"] = "|cffADD8E6"..AUCTION_CATEGORY_RECIPES;
 	["RECIPES_CHECKBOX_TOOLTIP"] = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 	["REPUTATIONS_CHECKBOX"] = "|cffADD8E6Reputations";
@@ -551,7 +558,7 @@ app.L = {
 	-- About tab
 	["ABOUT"] = "About";
 	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 	["ABOUT_3"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -1292,19 +1299,12 @@ app.L = {
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 	-- Temp Sets for Creation Catalyst
-		[-1001] = "Interface\\Worldmap\\GlowSkull_64Green",
-		[-1002] = "Interface\\Worldmap\\GlowSkull_64Green",
-		[-1003] = "Interface\\Worldmap\\GlowSkull_64Blue",
-		[-1004] = "Interface\\Worldmap\\GlowSkull_64Blue",
+		[-1001] = app.asset("Difficulty_LFR"),
+		[-1002] = app.asset("Difficulty_Normal"),
+		[-1003] = app.asset("Difficulty_Heroic"),
+		[-1004] = app.asset("Difficulty_Mythic"),
 		[-1005] = "Interface\\Worldmap\\GlowSkull_64Purple",
-		[-1006] = "Interface\\Worldmap\\GlowSkull_64Purple",
-		[-1007] = "Interface\\Worldmap\\GlowSkull_64Red",
-		[-1008] = "Interface\\Worldmap\\GlowSkull_64Red",
-		[-1009] = "Interface\\Worldmap\\GlowSkull_64Grey",
-		[-1010] = "Interface\\Worldmap\\GlowSkull_64Grey",
-		[-1011] = "Interface\\Worldmap\\GlowSkull_64Grey",
-		[-1012] = "Interface\\Worldmap\\GlowSkull_64Grey",
-		[-1013] = "Interface\\Worldmap\\GlowSkull_64Grey",
+		[-1006] = "Interface\\Worldmap\\GlowSkull_64Red",
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1843,19 +1843,12 @@ app.L = {
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 	-- Temp Sets for Creation Catalyst
-		[-1001] = "LFR",
-		[-1002] = "LFR Alternative",
-		[-1003] = "Normal",
-		[-1004] = "Normal Alternative",
-		[-1005] = "Heroic",
-		[-1006] = "Heroic Alternative",
-		[-1007] = "Mythic",
-		[-1008] = "Mythic Alternative",
-		[-1009] = "PvP 1",
-		[-1010] = "Gladiator Alternative",
-		[-1011] = "PvP 3",
-		[-1012] = "Elite Alternative",
-		[-1013] = "PvP 5",
+		[-1001] = "Looking For Raid Alternative",
+		[-1002] = "Normal Alternative",
+		[-1003] = "Heroic Alternative",
+		[-1004] = "Mythic Alternative",
+		[-1005] = "Gladiator Alternative",
+		[-1006] = "Elite Alternative",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

@@ -262,9 +262,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 							}),
 						},
 					}),
-					q(24818, { -- A Change of Heart
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					q(24819, { -- A Change of Heart
 						["isRepeatable"] = true,
 						["provider"] = { "n", 38316 },	-- Ormus the Penitent

@@ -754,6 +754,7 @@ _.Zones =
 				}),
 				q(32816, {	-- Path of the Last Emperor
 					["provider"] = { "n", 70980 },	-- Seer Hao Pham Roo
+					["sourceQuest"] = 32815,	-- The Old Seer
 					["g"] = {
 						i(98137),	-- Treads of Reticence
 						i(98138),	-- Unpretentious Boots

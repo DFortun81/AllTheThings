@@ -14,23 +14,7 @@ root("ExpansionFeatures", {
 				}),
 				n(93787, {	-- Scouting Map
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["maps"] = {
-						647,	-- Acherus: The Ebon Hold (Death Knight) (Upper Level)
-						648,	-- Acherus: The Ebon Hold (Death Knight) (Lower Level)
-						717,	-- Dreadscar Rift (Warlock)
-						734,	-- Hall of the Guardian (Mage)
-						735,	-- Hall of the Guardian (Mage) (2nd Floor)
-						720,	-- Mardum, The Shattered Abyss (Demon Hunter)
-						721,	-- Lower Command Center (Demon Hunter)
-						702,	-- Netherlight Temple (Priest)
-						LIGHTS_HOPE_CHAPEL,	-- Sanctum of Light (Paladin)
-						695,	-- Skyhold (Warrior)
-						747,	-- The Dreamgrove (Druid)
-						626,	-- The Hall of Shadows (Rogue)
-						726,	-- The Heart of Azeroth (Shaman)
-						709,	-- The Wandering Isle (Monk)
-						739,	-- Trueshot Lodge (Hunter)
-					},
+					["maps"] = CLASS_HALL_MAPS,
 					["g"] = {
 						n(QUESTS, {
 							q(44057, {	-- A "Noble" Event
@@ -355,6 +339,12 @@ root("ExpansionFeatures", {
 						i(151844),	-- Xenedar Armor Set
 						i(152931),	-- Xenic Tincture
 					},
+				}),
+				n(VENDORS, {
+					i(143727, {	-- Champion's Salute (TOY!)
+						["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						["timeline"] = { "added 7.2.0" },
+					}),
 				}),
 			},
 		}),

@@ -1168,14 +1168,11 @@ q(9484),	-- Taming the Beast,		TBC: Taming the Beast
 q(9485),	-- Taming the Beast,		TBC: Taming the Beast
 q(9486),	-- Taming the Beast,		TBC: Taming the Beast
 q(9497),	-- Emblem of the Fel Horde,		TBC: Emblem of the Fel Horde
-q(9500),	-- Call of Water,		TBC: Call of Water
-q(9501),	-- Call of Water,		TBC: Call of Water
 q(9502),	-- Call of Water,		TBC: Call of Water
-q(9503),	-- Call of Water,		TBC: Call of Water
-q(9504),	-- Call of Water,		TBC: Call of Water
+
+
 q(9507),	-- <DEPRECATED>From the Desk of Mogul Razdunk
-q(9508),	-- Call of Water,		TBC: Call of Water
-q(9509),	-- Call of Water,		TBC: Call of Water
+
 q(9532),	-- Find Keltus Darkleaf,		TBC: Find Keltus Darkleaf
 q(9546),	-- Fulfilling a Promise
 q(9547),	-- Call of Air,		TBC: Call of Air
@@ -1251,7 +1248,6 @@ q(10402),	-- <TXT>,		TBC: <TXT>
 q(10404),	-- Against the Legion,		TBC: Against the Legion
 q(10452),	-- DON'T USE [PH] Fel Orc 1,		TBC: DON'T USE [PH] Fel Orc 1
 q(10453),	-- DON'T USE [PH] Fel Orc bread,		TBC: DON'T USE [PH] Fel Orc bread
-q(10490),	-- Call of Water,		TBC: Call of Water
 q(10491),	-- Call of Air,		TBC: Call of Air
 q(10520),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm
 q(10529),	-- The Hunter's Path,		TBC: The Hunter's Path
@@ -3006,7 +3002,6 @@ q(43367),	-- Pixie Dust
 q(43405),	-- Da-Nel's Second Quest
 q(43416),	-- Treasure
 q(43439),	--
-q(43466),	-- Hidden History
 q(43482),	--
 q(43544),	--
 q(43579),	-- Looted DK Daily Mount
@@ -3042,14 +3037,9 @@ q(43796),	-- Draenei Spoken To
 q(43816),	-- Hidden History
 q(43817),	-- Hidden History
 q(43818),	-- Hidden History
-q(43819),	-- Hidden History
-q(43820),	-- Hidden History
 q(43821),	-- Hidden History
 q(43822),	-- Hidden History
-q(43823),	-- Hidden History
-q(43824),	-- Hidden History
 q(43825),	-- Hidden History
-q(43826),	-- Hidden History
 q(43833),	-- Treasure 003 - Felsoul Lower
 q(43836),	-- [reuse]
 q(43843),	-- Treasure 010 - Falanaar Outdoor Ruins
@@ -4117,7 +4107,6 @@ q(50655),	--
 q(50664),	--
 8.0.1.25976
 q(50671),	--
-q(50681),	--
 q(50682),	--
 q(50683),	--
 q(50684),	--
@@ -4749,10 +4738,8 @@ q(56897),	--
 q(56898),	--
 q(56902),	--
 8.2.0.30495
-q(56944),	--
 q(56945),	--
 q(56949),	--
-q(56951),	--
 q(56967),	--
 8.2.0.30613
 q(57012),	--

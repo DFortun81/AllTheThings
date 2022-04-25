@@ -410,26 +410,58 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(22),		-- Missing Augari Chest
 		}),
 		ach(14729, {		-- To All The Squirrels I Love Despite Their Scars
-			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),		-- Felspider 39.0 47.6 AZSUNA
-			crit(2),		-- Tenebrous Snake 40.92 58.62 AZSUNA
-			crit(3),		-- Albatross Chick 30.0 35.6 AZSUNA
-			crit(4, {	-- Coastal Sandpiper 57.6 40.8 AZSUNA
-				["crs"] = { 89380 },	-- Coastal Sandpiper
-				["maps"] = {
-					AZSUNA,
-					EYE_OF_AZSHARA,
-				},
+			crit(1, {	-- Felspider
+				["crs"] = { 113345 },	-- Felspider
+				["coord"] = { 39.0, 47.6, AZSUNA },
 			}),
-			crit(5),		-- Glitterpool Frog 42.6 56.8 SURAMAR
-			crit(6),		-- Gleamhoof Fawn 54.8 72.6 VALSHARAH
-			crit(7),		-- Auburn Ringtail 63.6 72.0 VALSHARAH
-			crit(8),		-- Blighthawk 38.6 62.6 VALSHARAH
-			crit(9),		-- Black-Footed Fox Kit 56.6 55.4 HIGHMOUNTAIN
-			crit(10),		-- Long-Eared Owl 56.2 54.4 HIGHMOUNTAIN
-			crit(11),		-- Golden Eaglet 60.5, 51.5 STORMHEIM
-			crit(12),		-- Tiny Apparition 56.4 43.5 STORMHEIM (cr:97952)
-			crit(13),		-- Echo Batling 55.1 44.3 HIGHMOUNTAIN
+			crit(2, {	-- Tenebrous Snake
+				["crs"] = { 113278 },	-- Tenebrous Snake
+				["coord"] = { 40.92, 58.62, AZSUNA },
+			}),
+			crit(3, {	-- Albatross Chick
+				["crs"] = { 97020 },	-- Albatross Chick
+				["coord"] = { 30.0, 35.6, AZSUNA },
+			}),
+			crit(4, {	-- Coastal Sandpiper
+				["crs"] = { 89380 },	-- Coastal Sandpiper
+				["coord"] = { 57.6, 40.8, AZSUNA },
+			}),
+			crit(5, {	-- Glitterpool Frog
+				["crs"] = { 102492 },	-- Glitterpool Frog
+				["coord"] = { 42.6, 56.8, SURAMAR },
+			}),
+			crit(6, {	-- Gleamhoof Fawn
+				["crs"] = { 109818 },	-- Gleamhoof Fawn
+				["coord"] = { 54.8, 72.6, VALSHARAH },
+			}),
+			crit(7, {	-- Auburn Ringtail
+				["crs"] = { 95626 },	-- Auburn Ringtail
+				["coord"] = { 63.6, 72.0, VALSHARAH },
+			}),
+			crit(8, {	-- Blighthawk
+				["crs"] = { 98090 },	-- Blighthawk
+				["coord"] = { 38.6, 62.6, VALSHARAH },
+			}),
+			crit(9, {	-- Black-Footed Fox Kit
+				["crs"] = { 97730 },	-- Black-Footed Fox Kit
+				["coord"] = { 56.6, 55.4, HIGHMOUNTAIN },
+			}),
+			crit(10, {	-- Long-Eared Owl
+				["crs"] = { 97735 },	-- Long-Eared Owl
+				["coord"] = { 56.2, 54.4, HIGHMOUNTAIN },
+			}),
+			crit(11, {	-- Golden Eaglet
+				["crs"] = { 97722 },	-- Golden Eaglet
+				["coord"] = { 60.5, 51.5, STORMHEIM },
+			}),
+			crit(12, {	-- Tiny Apparition
+				["crs"] = { 97953 },	-- Tiny Apparition
+				["coord"] = { 56.4, 43.5, STORMHEIM },
+			}),
+			crit(13, {	-- Echo Batling
+				["crs"] = { 88281 },	-- Echo Batling
+				["coord"] = { 55.1, 44.3, HIGHMOUNTAIN },
+			}),
 		}),
 		ach(11256),		-- Treasures of Azsuna
 		ach(11257),		-- Treasures of Highmountain

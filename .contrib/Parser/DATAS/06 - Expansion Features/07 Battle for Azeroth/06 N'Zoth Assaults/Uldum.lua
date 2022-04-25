@@ -724,6 +724,7 @@ root("ExpansionFeatures", {
 						n(TREASURES, {
 							o(339248, {	-- Infested Cache
 								["questID"] = 58141,
+								["isDaily"] = true,
 								["coords"] = {
 									{ 36.1, 20.2, 1527 },
 									{ 37.4, 45.7, 1527 },

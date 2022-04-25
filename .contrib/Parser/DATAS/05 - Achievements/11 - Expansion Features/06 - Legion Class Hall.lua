@@ -4,23 +4,7 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 	achcat(ACHIEVEMENT_CATEGORY_LEGION_CLASS_HALL, {
-		["maps"] = {
-			647,	-- Death Knight — Acherus: The Ebon Hold (Upper Level)
-			648,	-- Death Knight — Acherus: The Ebon Hold (Lower Level)
-			720,	-- Demon Hunter — Mardum, The Shattered Abyss
-			721,	-- Demon Hunter — Lower Command Center
-			747,	-- Druid — The Dreamgrove
-			739,	-- Hunter — Trueshot Lodge
-			734,	-- Mage — Hall of the Guardian (1st Floor)
-			735,	-- Mage — Hall of the Guardian (2nd Floor)
-			709,	-- Monk — The Wandering Isle
-			LIGHTS_HOPE_CHAPEL,	-- Paladin — Sanctum of Light
-			702,	-- Priest — Netherlight Temple
-			626,	-- Rogue — The Hall of Shadows
-			726,	-- Shaman — The Heart of Azeroth
-			717,	-- Warlock — Dreadscar Rift
-			695,	-- Warrior — Skyhold
-		},
+		["maps"] = CLASS_HALL_MAPS,
 		["lvl"] = 100,
 		["g"] = {
 			ach(11298, {	-- A Classy Outfit

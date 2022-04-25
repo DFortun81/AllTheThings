@@ -477,6 +477,8 @@ _.Zones =
 					["coord"] = { 42.1, 17.3, 174 },
 					["provider"] = { "n", 38935 },	-- Thrall
 					["sourceQuests"] = { 25265 },	-- Victory!
+					-- apparently not necessary for follow up quest 2022-04-17
+					["isBreadcrumb"] = true,
 				}),
 				q(14243, {	-- Warchief's Revenge
 					["coord"] = { 12.4, 63.1, 174 },

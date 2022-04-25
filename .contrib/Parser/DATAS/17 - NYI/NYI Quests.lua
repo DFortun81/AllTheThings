@@ -33,6 +33,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(25483),	-- LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st
 			q(25484),	-- LFGDungeons - Holiday Dungeon - Ahune - 1st
 			q(25485),	-- LFGDungeons - Holiday Dungeon - Crown Chemical - 1st
+			q(24818),	-- A Change of Heart
 		}),
 		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
@@ -1490,14 +1491,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(QUESTS, {
 			-- 9.0.1
 			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+				q(60124),
 				-- Quest from Unsorted
 				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
 				q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
+				q(55424, { ["name"] = "Aspirant Elynna", }),	-- Aspirant Elynna
 				q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
 				q(59084, { ["name"] = "Bybeen Dreadweaver", }),	-- Bybeen Dreadweaver
+				q(60104, { ["name"] = "Darkness' Domain", }),	-- Darkness' Domain
+				q(60101, { ["name"] = "Deadsoul Interstitia", }),	-- Deadsoul Interstitia
 				q(59080, { ["name"] = "Demons!", }),	-- Demons!
 				q(62072, { ["name"] = "Familiar Faces", }),	-- Familiar Faces
+				q(60099, { ["name"] = "Fracture Chambers", }),	-- Fracture Chambers
+				q(60102, { ["name"] = "Kakophonus", }),	-- Kakophonus
 				q(59086, { ["name"] = "Manor of Minions", }),	-- Manor of Minions
 				q(59082, { ["name"] = "Next Realm!", }),	-- Next Realm!
 				q(62289, { ["name"] = "Observing Conflict", ["_drop"] = { "g" }, }),	-- Observing Conflict
@@ -1520,21 +1527,28 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62350, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 				q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
+				q(60105, { ["name"] = "Sineater Belfry", }),	-- Sineater Belfry
+				q(60092, { ["name"] = "Skoldus Hall", }),	-- Skoldus Hall
 				q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
 				q(59083, { ["name"] = "Sticky Getaway", }),	-- Sticky Getaway
 				q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
 				q(59078, { ["name"] = "The Hook", }),	-- The Hook
 				q(60499, { ["name"] = "The Light's Retribution", }),	-- The Light's Retribution
 				q(59076, { ["name"] = "The Minions of Mayhem", }),	-- The Minions of Mayhem
+				q(60103, { ["name"] = "The Miscreation Wing", }),	-- The Miscreation Wing
 				q(59077, { ["name"] = "The Plan", }),	-- The Plan
 				q(62594, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
 				q(62595, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
+				q(60100, { ["name"] = "The Soulforges", }),	-- The Soulforges
+				q(60106, { ["name"] = "The Upper Reaches", }),	-- The Upper Reaches
+				q(60107, { ["name"] = "The Winding Halls", }),	-- The Winding Halls
 				q(59085, { ["name"] = "Third Time is a Charm", }),	-- Third Time is a Charm
 				q(60172, { ["name"] = "This Quest is Temporary", }),	-- This Quest is Temporary
 				q(60155, { ["name"] = "To Open the Way", }),	-- To Open the Way
 				q(62077, { ["name"] = "To the Chase", }),	-- To the Chase
 				q(60138, { ["name"] = "Unlocking the Gates", }),	-- Unlocking the Gates
 				q(60559, { ["name"] = "Unused", }),	-- Unused
+				q(56070, { ["name"] = "Vengeance for the Venthyr", }),	-- Vengeance for the Venthyr
 				-- Quest from WoW.Tools
 				-- 9.0.1.33978
 				q(54783),	--
@@ -2424,7 +2438,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62359, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(62360, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 				q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
-				q(61524, { ["name"] = "The Ember Court", }),	-- The Ember Court
 				-- Quest from WoW.Tools
 				-- 9.0.2.35854
 				q(62815),	--
@@ -2513,12 +2526,30 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.1.0
 			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+				q(63420),
+				q(63430),
+				q(63431),
+				q(63432),
+				q(63729),
+				q(63862, {
+					["description"] = "Area: |cFFf09f26Korthia|r",
+					["lvl"] = 60,
+				}),
+				q(63946, {
+					["description"] = "Category: |cFFf09f26The Archivists' Codex|r",
+					["lvl"] = 60,
+				}),
+				q(64569, {
+					["description"] = "Area: |cFFf09f26Bastion|r",
+					["lvl"] = 60,
+				}),
 				-- Quest from Unsorted
 				q(63751, { ["name"] = "A Terrible Power", }),	-- A Terrible Power
 				q(64640, { ["name"] = "AubriesTestQuestForJeff", }),	-- AubriesTestQuestForJeff
 				q(64517, { ["name"] = "Byron Test - Item Gained", }),	-- Byron Test - Item Gained
 				q(64518, { ["name"] = "Byron Test - Obtain Any Item", }),	-- Byron Test - Obtain Any Item
 				q(64654, { ["name"] = "Champion: Ben Howell", }),	-- Champion: Ben Howell
+				q(64193, { ["name"] = "DEPRECATED: Table of Discontent", }),	-- DEPRECATED: Table of Discontent
 				q(63418, { ["name"] = "Exploited Explorers", }),	-- Exploited Explorers
 				q(63671, { ["name"] = "Favor: The Nathrezim Documents", }),	-- Favor: The Nathrezim Documents
 				q(64306, { ["name"] = "Quest Completion Criteria", }),	-- Quest Completion Criteria
@@ -2527,6 +2558,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63948, { ["name"] = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
 				q(63419, { ["name"] = "Spores Galore", }),	-- Spores Galore
 				q(64509, { ["name"] = "Stylish Cover", }),	-- Stylish Cover
+				q(64305, { ["name"] = "The Tormentors of Torghast", }),	-- The Tormentors of Torghast
 				q(64546, { ["name"] = "Visions of Sire Denathrius", ["_drop"] = {"g"} }),	-- Visions of Sire Denathrius
 				q(64235, { ["name"] = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
 				q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
@@ -2566,8 +2598,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63852),	--
 				q(63894),	--
 				q(63925),	--
-				q(63926),	--
-				q(63927),	--
 				q(63928),	--
 				q(63929),	--
 				q(63930),	--
@@ -2741,7 +2771,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64582, { ["name"] = "Yuni-Test", }),	-- Yuni-Test
 				-- Quest from WoW.Tools
 				-- 9.2.0.41089
-				q(63766),	--
+				q(63766, { ["name"] = "Relic of the First Ones", }),	-- Relic of the First Ones
 				q(63905),	--
 				q(63906),	--
 				q(63907),	--
@@ -2867,11 +2897,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(65450),	--
 				q(65462),	--
 				-- 9.2.0.41257
-				q(65474),	--
-				q(65478),	--
-				q(65479),	--
-				q(65483),	--
-				q(65484),	--
 				-- 9.2.0.41360
 				q(65521),	--
 				q(65535),	--
@@ -2926,11 +2951,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.0.42614
 				-- 9.2.0.42698
 				q(66041),	--
-				q(66047),	--
 				-- 9.2.0.42825
 				-- 9.2.0.42852
 				-- 9.2.0.42937
 				-- 9.2.0.42979
+				-- 9.2.0.43114
 			})),
 
 			-- 9.2.5
@@ -2993,24 +3018,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 9.x.x
 			n(P9xx, {
-				q(60124),
-				q(63420),
-				q(63430),
-				q(63431),
-				q(63432),
-				q(63729),
-				q(63862, {
-					["description"] = "Area: |cFFf09f26Korthia|r",
-					["lvl"] = 60,
-				}),
-				q(63946, {
-					["description"] = "Category: |cFFf09f26The Archivists' Codex|r",
-					["lvl"] = 60,
-				}),
-				q(64569, {
-					["description"] = "Area: |cFFf09f26Bastion|r",
-					["lvl"] = 60,
-				}),
 			}),
 		}),
 	}),

@@ -324,6 +324,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					--["coord"] = { X, Y, MAP },
 					["questID"] = 66285,
 					["cost"] = { { "i", 190727, 1 } },	-- 1 Security Override Orb
+					["isWeekly"] = true,
 					["g"] = {
 						i(189175),	-- Mawforged Bridle
 						i(189991),	-- Snail Soul
@@ -703,7 +704,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { { "i", 190967, 4 } },	-- 4xMourne Fragment
+						["g"] = {
+							objective(1, {
+								["cost"] = { { "i", 190967, 4 } }	-- 4xMourne Fragment
+							}),
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1063,7 +1068,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { { "i", 190966, 4 } },	-- 4xMourne Fragment
+						["g"] = {
+							objective(1, {
+								["cost"] = { { "i", 190966, 4 } }	-- 4xMourne Fragment
+							}),
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1410,7 +1419,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
-						["cost"] = { { "i", 190959, 4 } },	-- 4xMourne Fragment
+						["g"] = {
+							objective(1, {
+								["cost"] = { { "i", 190959, 4 } }	-- 4xMourne Fragment
+							}),
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1802,56 +1815,8 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		inst(1195, {	-- Sepulcher of the First Ones
-			n(ACHIEVEMENTS, {
-				ach(15424),	-- Vigilant Guardian (Raid Finder Sepulcher of the First Ones)
-				ach(15425),	-- Vigilant Guardian (Normal Sepulcher of the First Ones)
-				ach(15426),	-- Vigilant Guardian (Heroic Sepulcher of the First Ones)
-				ach(15427),	-- Vigilant Guardian (Mythic Sepulcher of the First Ones)
-				ach(15428),	-- Skolex (Raid Finder Sepulcher of the First Ones)
-				ach(15429),	-- Skolex (Normal Sepulcher of the First Ones)
-				ach(15430),	-- Skolex (Heroic Sepulcher of the First Ones)
-				ach(15431),	-- Skolex (Mythic Sepulcher of the First Ones)
-				ach(15432),	-- Artificer Xy'mox (Raid Finder Sepulcher of the First Ones)
-				ach(15433),	-- Artificer Xy'mox (Normal Sepulcher of the First Ones)
-				ach(15434),	-- Artificer Xy'mox (Heroic Sepulcher of the First Ones)
-				ach(15435),	-- Artificer Xy'mox (Mythic Sepulcher of the First Ones)
-				ach(15436),	-- Dausegne (Raid Finder Sepulcher of the First Ones)
-				ach(15437),	-- Dausegne (Normal Sepulcher of the First Ones)
-				ach(15438),	-- Dausegne (Heroic Sepulcher of the First Ones)
-				ach(15439),	-- Dausegne (Mythic Sepulcher of the First Ones)
-				ach(15440),	-- Prototype Pantheon (Raid Finder Sepulcher of the First Ones)
-				ach(15441),	-- Prototype Pantheon (Normal Sepulcher of the First Ones)
-				ach(15442),	-- Prototype Pantheon (Heroic Sepulcher of the First Ones)
-				ach(15443),	-- Prototype Pantheon (Mythic Sepulcher of the First Ones)
-				ach(15444),	-- Lihuvim (Raid Finder Sepulcher of the First Ones)
-				ach(15445),	-- Lihuvim (Normal Sepulcher of the First Ones)
-				ach(15446),	-- Lihuvim (Heroic Sepulcher of the First Ones)
-				ach(15447),	-- Lihuvim (Mythic Sepulcher of the First Ones)
-				ach(15448),	-- Halondrus (Raid Finder Sepulcher of the First Ones)
-				ach(15449),	-- Halondrus (Normal Sepulcher of the First Ones)
-				ach(15450),	-- Halondrus (Heroic Sepulcher of the First Ones)
-				ach(15451),	-- Halondrus (Mythic Sepulcher of the First Ones)
-				ach(15452),	-- Anduin (Raid Finder Sepulcher of the First Ones)
-				ach(15453),	-- Anduin (Normal Sepulcher of the First Ones)
-				ach(15454),	-- Anduin (Heroic Sepulcher of the First Ones)
-				ach(15455),	-- Anduin (Mythic Sepulcher of the First Ones)
-				ach(15456),	-- Lords of Dread (Raid Finder Sepulcher of the First Ones)
-				ach(15457),	-- Lords of Dread (Normal Sepulcher of the First Ones)
-				ach(15458),	-- Lords of Dread (Heroic Sepulcher of the First Ones)
-				ach(15459),	-- Lords of Dread (Mythic Sepulcher of the First Ones)
-				ach(15460),	-- Rygelon (Raid Finder Sepulcher of the First Ones)
-				ach(15461),	-- Rygelon (Normal Sepulcher of the First Ones)
-				ach(15462),	-- Rygelon (Heroic Sepulcher of the First Ones)
-				ach(15463),	-- Rygelon (Mythic Sepulcher of the First Ones)
-				ach(15464),	-- The Jailer (Raid Finder Sepulcher of the First Ones)
-				ach(15465),	-- The Jailer (Normal Sepulcher of the First Ones)
-				ach(15466),	-- The Jailer (Heroic Sepulcher of the First Ones)
-				ach(15467),	-- The Jailer (Mythic Sepulcher of the First Ones)
-				ach(15423),	-- <Hidden> Jailer Defeated
-			}),
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
-			-- Tiers that wasnt tiers anymore
 		}),
 	}),
 }));

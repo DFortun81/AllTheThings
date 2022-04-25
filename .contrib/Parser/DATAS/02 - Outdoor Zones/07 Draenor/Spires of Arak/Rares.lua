@@ -71,9 +71,6 @@ _.Zones =
 					["coord"] = { 71.6, 44.8, SPIRES_OF_ARAK },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
-						crit(2, {	-- Giga Sentinel
-							["achievementID"] = 9601,	-- King of the Monsters
-						}),
 						i(119401),	-- Sentinel's Wingblade
 					},
 				}),
@@ -83,12 +80,6 @@ _.Zones =
 					["coord"] = { 74.6, 43.6, SPIRES_OF_ARAK },
 					["lvl"] = 100,
 					["g"] = {
-						crit(5, {	-- Gluttonous Giant
-							["achievementID"] = 9601,	-- King of the Monsters
-						}),
-						crit(2, {	-- Gluttonous Giant
-							["achievementID"] = 9600,	-- Monster Mash
-						}),
 						i(119404),	-- Glowing Morel
 					},
 				}),
@@ -133,9 +124,6 @@ _.Zones =
 					["coord"] = { 74.4, 38.6, SPIRES_OF_ARAK },
 					["lvl"] = 100,
 					["g"] = {
-						crit(4, {	-- Mecha Plunderer
-							["achievementID"] = 9601,	-- King of the Monsters
-						}),
 						i(119398),	-- Plunderer's Drill
 					},
 				}),
@@ -144,11 +132,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 73.6, 45.0, SPIRES_OF_ARAK },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
-					["g"] = {
-						crit(1, {	-- Morphed Sentient
-							["achievementID"] = 9601,	-- King of the Monsters
-						}),
-					},
 				}),
 				n(84417, {	-- Mutafen
 					["questID"] = 36396,
@@ -208,12 +191,6 @@ _.Zones =
 					["coord"] = { 71.25, 33.24, SPIRES_OF_ARAK },
 					["lvl"] = 100,
 					["g"] = {
-						crit(3, {	-- Shadow Hulk
-							["achievementID"] = 9601,	-- King of the Monsters
-						}),
-						crit(1, {	-- Shadow Hulk
-							["achievementID"] = 9600,	-- Monster Mash
-						}),
 						i(119363),	-- Stretchy Purple Pants
 					},
 				}),
@@ -244,7 +221,7 @@ _.Zones =
 				n(84912, {	-- Sunderthorn
 					["questID"] = 36298,
 					["coord"] = { 58.6, 45.0, SPIRES_OF_ARAK },
-					["description"] = "This rare is bugged as of 8.0.1. If you fly in fast enough, you can still enough wasps to get her to spawn. Melee classes may find this near impossible.",
+					["description"] = "This rare can sometimes bug out. If you fly in fast enough, you can still enough wasps to get her to spawn. Melee classes may find this near impossible.",
 					["g"] = {
 						i(116855),	-- Stingtail's Toxic Stinger
 					},

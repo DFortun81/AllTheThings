@@ -5,6 +5,31 @@ _ = AllTheThings;
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
+-- Root constants
+-- Usage: ROOTS.[Constant]
+ROOTS = {
+	["ExpansionFeatures"] = "ExpansionFeatures",
+	["Instances"] = "Instances",
+	["Zones"] = "Zones",
+	["WorldDrops"] = "WorldDrops",
+	["GroupFinder"] = "GroupFinder",
+	["Achievements"] = "Achievements",
+	["WorldEvents"] = "WorldEvents",
+	["PVP"] = "PVP",
+	["Craftables"] = "Craftables",
+	["Professions"] = "Professions",
+	["Secrets"] = "Secrets",
+	["GearSets"] = "GearSets",
+	["Promotions"] = "Promotions",
+	["BlackMarket"] = "BlackMarket",
+	["InGameShop"] = "InGameShop",
+	["PetBattles"] = "PetBattles",
+	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
+	["NeverImplemented"] = "NeverImplemented",
+	["Factions"] = "Factions",
+	["Holidays"] = "Holidays",
+};
+
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
@@ -214,6 +239,7 @@ SHADOWMOON_VALLEY = 104;
 
 -- Cataclysm
 MOUNT_HYJAL = 198;
+DEEPHOLM = 207;
 
 -- Wrath of the Lich King
 NORTHREND = 113;
@@ -273,6 +299,39 @@ HELHEIM = 649;
 HIGHMOUNTAIN = 650;
 SURAMAR = 680;
 EYE_OF_AZSHARA = 790;
+-- Class Halls
+ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS = 647;
+ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND = 648;
+DREADSCAR_RIFT = 717;
+HALL_OF_THE_GUARDIAN = 734;
+HALL_OF_THE_GUARDIAN_2ND_FLOOR = 735;
+MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER = 720;
+MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER = 721;
+NETHERLIGHT_TEMPLE = 702;
+SANCTUM_OF_LIGHT = LIGHTS_HOPE_CHAPEL; -- = 24
+SKYHOLD = 695;
+THE_DREAMGROVE = 747;
+THE_HALL_OF_SHADOWS = 626;
+THE_HEART_Of_AZEROTH = 726;
+THE_WANDERING_ISLE = 709;
+TRUESHOT_LODGE = 739;
+CLASS_HALL_MAPS = {
+	ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS,
+	ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND,
+	DREADSCAR_RIFT,
+	HALL_OF_THE_GUARDIAN,
+	HALL_OF_THE_GUARDIAN_2ND_FLOOR,
+	MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER,
+	MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER,
+	NETHERLIGHT_TEMPLE,
+	SANCTUM_OF_LIGHT,
+	SKYHOLD,
+	THE_DREAMGROVE,
+	THE_HALL_OF_SHADOWS,
+	THE_HEART_Of_AZEROTH,
+	THE_WANDERING_ISLE,
+	TRUESHOT_LODGE,
+};
 
 -- Battle for Azeroth
 ZULDAZAR = 862;
@@ -311,6 +370,7 @@ ARCHONS_RISE = 1707;
 SANCTUM_OF_BINDING = 1708;
 KORTHIA = 1961;
 TAZAVESH_THE_VEILED_MARKET_WORLD = 2016;
+TORGHAST = 1627;
 ZERETH_MORTIS = 1970;
 
 -- RACES
@@ -1722,7 +1782,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	_.Professions = { bubbleDown({ ["requireSkill"] = skillID }, p) };
+	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay

@@ -46,11 +46,6 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(32295, {	-- An Unusual Tome
-					["provider"] = { "i", 92441 },	-- The Codex of Xerrath
-					["description"] = "This is part of the Warlock's green fire questline, and is available after you combine Sealed Tome of the Lost Legion with a healthstone.",
-					["classes"] = { WARLOCK },
-				}),
 				q(32525, {	-- Ashes of the Enemy (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -454,10 +449,6 @@ _.Zones =
 				q(32294, {	-- Raining Bones (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-				}),
-				q(32307, {	-- Reader for the Dead Tongue
-					["description"] = "This is part of the Warlock's green fire questline. It will be offered after the player summons their demons and speaks to them about The Codex of Xerrath.",
-					["classes"] = { WARLOCK },
 				}),
 				q(32532, {	-- Rise No More! (A)
 					["isDaily"] = true,

@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("ExpansionFeatures", tier(SL_TIER, {
-	m(1627, {	-- Torghast
+root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.1" } }, {
+	m(TORGHAST, {
 		n(QUESTS, {
 			q(60270, {	-- A Damned Pact
 				["sourceQuests"] = { 60269 },	-- Reawakening
@@ -37,30 +37,12 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 			}),
-			q(65035, {	-- Return to Oribos
-				["sourceQuests"] = { 64850 },	-- Traversing Torghast
-				["provider"] = { "n", 181328 },	-- Ve'nish
-				["coord"] = { 35.5, 46.9, 1627 },
-				["isBreadcrumb"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",
-			}),
-			q(64850, {	-- Traversing Torghast
-				["provider"] = { "n", 181328 },	-- Ve'nish
-				["coord"] = { 35.5, 46.9, 1627 },
-				["isDaily"] = true,
-				["timeline"] = { "added 9.1.5" },
-				["customCollect"] = "SL_SKIP",
-			}),
 			q(64210, {	-- The Box of Many Things
-			--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.
-			--	'in darkness' doesn't LOOK like a breadcrumb quest (because it doesn't hide 'the box of many things' until after it's turned in, but if 'the box' IS available earlier then your character may get locked out of picking up 'in darkness' if they overlooked it... so it may be a breadcrumb.  i do not knoooooow
 				["sourceQuests"] = { 64557 },	-- In Darkness, Found
 				["provider"] = { "n", 179598 },	-- Ve'nish
 				["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
-				["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
+				["maps"] = {
 					1968,	-- TG107_Floor
-					-- 1969,	-- TG108_Floor
 				},
 			}),
 			q(64813, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- The Crown of Wills
@@ -93,13 +75,12 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 			}),
 			q(63727, {	-- The Primus Returns
-			--	TODO: maybe move to korthia for visibility?
 				["sourceQuests"] = { 63726 },	-- Untangling the Sigil
 				["provider"] = { "n", 177569 },	-- The Primus
 				["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
 				["g"] = {
 					i(185965, {	-- Memories of Sunless Skies
-						["questID"] = 63893,	-- quest may need to be moved to HQT if the item can only be used once per account
+						["questID"] = 63893,
 					}),
 				},
 			}),
@@ -135,6 +116,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 64210 },	-- The Box of Many Things
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
+				["timeline"] = { "added 9.1.0" },
 			}),
 
 		--	Champion Unlocks
@@ -198,6 +180,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
 				["provider"] = { "n", 179666 },	-- ELGU - 007
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1328),	-- ELGU - 007
 				},
@@ -206,6 +189,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["sourceQuests"] = { 64185 },	-- Assist Ella With ?
 				["provider"] = { "n", 179672 },	-- Ella
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1327),	-- Ella
 				},
@@ -263,6 +247,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["sourceQuests"] = { 64189 },	-- Kinessa's Support
 				["provider"] = { "n", 179678 },	-- Kinessa the Absorbent
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1331),	-- Kinessa the Absorbent
 				},
@@ -279,6 +264,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				["sourceQuests"] = { 64191 },	-- Lassik's Gear
 				["provider"] = { "n", 179682 },	-- Lassik Spinebender
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1333),	-- Lassik Spinebender
 				},
@@ -326,6 +312,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["sourceQuests"] = { 64188 },	-- Ryuja's Supplies
 				["provider"] = { "n", 179676 },	-- Ryuja Shockfist
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1330),	-- Ryuja Shockfist
 				},
@@ -334,6 +321,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["sourceQuests"] = { 64184 },	-- Missing Friend
 				["provider"] = { "n", 179670 },	-- Spore of Marasmius
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1326),	-- Spore of Marasmius
 				},
@@ -342,6 +330,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
 				["provider"] = { "n", 179680 },	-- Steadyhands
+				["timeline"] = { "added 9.1.0" },
 				["g"] = {
 					follower(1332),	-- Steadyhands
 				},
@@ -420,6 +409,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179671 },	-- Ella
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61259, {	-- Ayeleth's Hunger
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -450,6 +440,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179665 },	-- ELGU - 007
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(59340, {	-- Gallath's Bell
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -500,12 +491,14 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			q(64187, {	-- Kiaranyka's Search
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
+				["timeline"] = { "added 9.1.0" },
 				--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 			}),
 			q(64189, {	-- Kinessa's Support
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179677 },	-- Kinessa the Absorbent
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61322, {	-- Kythekios' Memory Stone
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -516,6 +509,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179681 },	-- Lassik Spinebender
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61431, {	-- Lloth'wellyn's Breakthrough
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -531,6 +525,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61347, {	-- Molako's Freedom
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -541,6 +536,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179679 },	-- Steadyhands
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61340, {	-- Telethakas' Revenge
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -576,6 +572,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				["sourceQuests"] = { 60136 },	-- Into Torghast
 				["repeatable"] = true,
 				["provider"] = { "n", 179673 },	-- Ryuja Shockfist
+				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61395, {	-- Spare Parts
 				["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -922,7 +919,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 			}),
 		}),
 	}),
-}));
+})));
 
 root("HiddenQuestTriggers", tier(SL_TIER, {
 	m(1627, {	-- Torghast
@@ -943,7 +940,9 @@ root("HiddenQuestTriggers", tier(SL_TIER, {
 		q(62978),	-- Twisting Corridors, Layer 4
 		q(62979),	-- Twisting Corridors, Layer 6
 		q(62980),	-- Twisting Corridors, Layer 8
-		q(64347),	-- Adamant Vaults
+		q(64347, {	-- Adamant Vaults
+			["timeline"] = { "added 9.1.0" },
+		}),
 
 	-- Follower Access Triggers
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
@@ -973,6 +972,8 @@ root("HiddenQuestTriggers", tier(SL_TIER, {
 		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
+
+		-- 9.1.0
 		q(64176),	-- New Night Fae Follower triggered when completing 64184, "Missing Friend".
 		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
 		q(64180),	-- triggered when completing #64188, "Ryuja's Supplies"
@@ -1013,22 +1014,3 @@ root("HiddenQuestTriggers", tier(SL_TIER, {
 		q(65681),	-- Unlocking 'Unity' Legendary power
 	}),
 }));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
-	m(1627, {	-- Torghast
-		n(QUESTS, {
-			q(55424),	-- Aspirant Elynna
-			q(60104),	-- Darkness' Domain
-			q(60101),	-- Deadsoul Interstitia
-			q(60099),	-- Fracture Chambers
-			q(60102),	-- Kakophonus
-			q(60105),	-- Sineater Belfry
-			q(60092),	-- Skoldus Hall
-			q(60103),	-- The Miscreation Wing
-			q(60100),	-- The Soulforges
-			q(60106),	-- The Upper Reaches
-			q(60107),	-- The Winding Halls
-			q(56070),	-- Vengeancefor the Venthyr
-		}),
-	}),
-})));

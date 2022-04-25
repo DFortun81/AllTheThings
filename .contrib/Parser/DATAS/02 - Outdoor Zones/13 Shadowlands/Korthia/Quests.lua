@@ -233,13 +233,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			q(64211, {	-- Doorway in the Dark (A)
-				["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+				["sourceQuests"] = {
+					63593,	-- New Sigil of the Kyrian
+					63944,	-- Korthia Awaits (Skip Breadcrumb)
+				},
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 62.8, 26.2, KORTHIA },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(64212, {	-- Doorway in the Dark (H)
-				["sourceQuests"] = { 63593 },	-- New Sigil of the Kyrian
+				["sourceQuests"] = {
+					63593,	-- New Sigil of the Kyrian
+					63944,	-- Korthia Awaits (Skip Breadcrumb)
+				},
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 62.8, 26.2, KORTHIA },
 				["races"] = HORDE_ONLY,
@@ -287,6 +293,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 63622 },	-- Victory in Our Name
 				["provider"] = { "n", 177194 },	-- The Primus
 				["coord"] = { 63.1, 25.3, KORTHIA },
+				-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
+				["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
 			}),
 			q(63737, {	-- Finding One's True Purpose
 				["sourceQuests"] = { 63739 },	-- Hope Ascending
@@ -313,6 +321,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 178845 },	-- Xy'lony
 				["coord"] = { 64.5, 25.4, KORTHIA },
+				["isBreadcrumb"] = true,
 			}),
 			q(64556, {	-- In Need of Assistance
 				["sourceQuests"] = { 64555 },	-- Surveying Secrets
@@ -1019,28 +1028,3 @@ root("HiddenQuestTriggers", {
 	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas
 	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis
 });
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(64193, {	-- DEPRECATED: Table of Discontent
-			["sourceQuests"] = { 63738 },	-- Establishing the Archive
-			["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-			["coord"] = { 62.7, 22.5, KORTHIA },
-			["_drop"] = { "g" },	-- drop original quest reward, which now comes from another source
-		}),
-		q(64305, {	-- The Tormentors of Torghast
-			["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-			["provider"] = { "n", 179321 },	-- Duchess Mynx
-			["coord"] = { 63.4, 23.3, KORTHIA },
-		}),
-	}),
-	tier(SL_TIER, {
-		filter(COSMETIC, {
-			i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
-			i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
-			i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
-			i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
-			i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
-		}),
-	}),
-}));

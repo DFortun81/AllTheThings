@@ -460,15 +460,13 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/15 Silithus Venom Sample
@@ -500,6 +498,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
@@ -508,9 +507,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{ "i", 16728, 1 },	-- Lightforge Legplates
 						{ "i", 16729, 1 },	-- Lightforge Spaulders
 					},
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22087),	-- Soulforge Boots
@@ -539,6 +535,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
@@ -546,9 +543,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22086),	-- Soulforge Belt
@@ -882,6 +876,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(10492, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
@@ -889,9 +884,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -922,6 +914,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
@@ -930,9 +923,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{ "i", 16668, 1 },	-- Kilt of Elements
 						{ "i", 16669, 1 },	-- Pauldrons of Elements
 					},
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22096),	-- Boots of The Five Thunders
@@ -963,6 +953,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["maps"] = { BLACKROCK_SPIRE },
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
@@ -970,9 +961,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						{ "i", 16673, 1 },	-- Cord of Elements
 						{ "i", 16672, 1 },	-- Gauntlets of Elements
 					},
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22098),	-- Cord of The Five Thunders
@@ -1001,15 +989,13 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { BLACKROCK_SPIRE, SCHOLOMANCE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
 						{ "i", 16666, 1 },	-- Vest of Elements
 					},
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
-					["u"] = TBC_PHASE_ONE,
-					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22097),	-- Coif of The Five Thunders
@@ -1656,6 +1642,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuests"] = {
 						8926,	-- Just Compensation [ALLIANCE]
 						8931,	-- Just Compensation [ALLIANCE]
+						8932,	-- Just Compensation [ALLIANCE]
 						8933,	-- Just Compensation [ALLIANCE]
 						8934,	-- Just Compensation [ALLIANCE]
 						8935,	-- Just Compensation [ALLIANCE]
@@ -1676,6 +1663,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["sourceQuests"] = {
 						8927,	-- Just Compensation [HORDE]
 						8938,	-- Just Compensation [HORDE]
+						8939,	-- Just Compensation [HORDE]
 						8940,	-- Just Compensation [HORDE]
 						8941,	-- Just Compensation [HORDE]
 						8942,	-- Just Compensation [HORDE]

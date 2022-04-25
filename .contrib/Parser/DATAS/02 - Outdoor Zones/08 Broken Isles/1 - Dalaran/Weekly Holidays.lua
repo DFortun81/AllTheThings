@@ -43,7 +43,11 @@ root("Zones", m(BROKEN_ISLES, {
 				q(44167),					-- A Shattered Path Through Time
 				q(45799),					-- A Shrouded Path Through Time
 				q(44171),					-- Emissary of War
+				-- #IF AFTER LEGION
+				-- #IF BEFORE BFA
 				pvp(q(47148)),				-- Something Different
+				-- #ENDIF
+				-- #ENDIF
 				pvp(q(44172)),				-- The Arena Calls
 				pvp(petbattle(q(44174))),	-- The Very Best
 				q(44175),					-- The World Awaits

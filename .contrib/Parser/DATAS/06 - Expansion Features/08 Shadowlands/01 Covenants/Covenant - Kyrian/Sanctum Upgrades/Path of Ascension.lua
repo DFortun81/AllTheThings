@@ -190,8 +190,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								crit(9),	-- Athanos
 								crit(10),	-- Azaruux
 							}),
-							ach(14852),	-- The Hoot of the Issue
-							ach(14887),	-- To the Moon
+							ach(14502),	-- Pursuing Loyalty
+							ach(14852, {	-- The Hoot of the Issue
+								crit(1),	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+								crit(2),	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+							}),
+							ach(14887, {	-- To the Moon
+								["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
+							}),
 						}),
 						n(BLUEPRINTS, {
 							["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
@@ -234,6 +240,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["sourceQuests"] = { 60496 },	-- Into the Coliseum
 									["provider"] = { "n", 168427 },	-- Artemede
 									["coord"] = { 28.2, 42.4, ARCHONS_RISE },
+									["g"] = {
+										i(180464),	-- Blueprint: Herald's Footpads
+									},
 								}),
 								i(184478, {	-- Phial of Serenity
 									["cost"] = {
@@ -1347,24 +1356,8 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 end
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(KYRIAN, {
-			ach(14351, { -- The Path Towards Ascension 39
-				ach(14340),	-- The Path Towards Ascension 1
-				ach(14342),	-- The Path Towards Ascension 3
-				ach(14343),	-- The Path Towards Ascension 5
-				ach(14344),	-- The Path Towards Ascension 7
-				ach(14345),	-- The Path Towards Ascension 12
-				ach(14346),	-- The Path Towards Ascension 16
-				ach(14348),	-- The Path Towards Ascension 20
-				ach(14349),	-- The Path Towards Ascension 24
-			}),
-		}),
-	}),
 	n(QUESTS, {
-		q(60937, {	-- [DNT] Blueprint: Herald's Footpads
-			i(180464),	-- Blueprint: Herald's Footpads
-		}),
+		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265, {	-- Blueprint: Charm of Alacrity
 			i(181139),	-- Blueprint: Charm of Alacrity
 		}),

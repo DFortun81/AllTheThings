@@ -9,6 +9,57 @@ _.ExpansionFeatures =
 			["icon"] = "Interface\\Icons\\pandarenracial_innerpeace",
 			["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(6943),	-- Queuing Spree
+					a(ach(6874, {	-- Scenaturday (A)
+						title(206),	-- <Name> the Scenaturdist
+						crit(1, {	-- A Brewing Storm
+							["maps"] = { 447 },
+						}),
+						crit(2, {	-- Greenstone Village
+							["maps"] = { 448 },
+						}),
+						crit(3, {	-- Unga Ingoo
+							["maps"] = { 450 },
+						}),
+						crit(4, {	-- Brewmoon Festival
+							["maps"] = { 452 },
+						}),
+						crit(5, {	-- Crypt of Forgotten Kings
+							["maps"] = { 481 },
+						}),
+						crit(6, {	-- Arena of Annihilation
+							["maps"] = { 480 },
+						}),
+						crit(7, {	-- Theramore's Fall
+							["maps"] = { 483 },
+						}),
+					})),
+					h(ach(7509, {	-- Scenaturday (H)
+						title(206),	-- <Name> the Scenaturdist
+						crit(1, {	-- A Brewing Storm
+							["maps"] = { 447 },
+						}),
+						crit(2, {	-- Greenstone Village
+							["maps"] = { 448 },
+						}),
+						crit(3, {	-- Unga Ingoo
+							["maps"] = { 450 },
+						}),
+						crit(4, {	-- Brewmoon Festival
+							["maps"] = { 452 },
+						}),
+						crit(5, {	-- Crypt of Forgotten Kings
+							["maps"] = { 481 },
+						}),
+						crit(6, {	-- Arena of Annihilation
+							["maps"] = { 480 },
+						}),
+						crit(7, {	-- Theramore's Fall
+							["maps"] = { 483 },
+						}),
+					})),
+				}),
 				-- Scenario Maps
 				m(447, {	-- A Brewing Storm
 					["crs"] = {

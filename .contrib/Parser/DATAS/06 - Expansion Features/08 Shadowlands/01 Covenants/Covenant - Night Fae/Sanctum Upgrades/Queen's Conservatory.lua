@@ -342,11 +342,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["cost"] = { { "i", 183805, 1 } },	-- Tranquil Spirit of the Cosmos
+										["maps"] = { ARDENWEALD },
 									}),
 									q(62587, {	-- In Search of Inner Calm (1)
 										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["maps"] = { HIGHMOUNTAIN },
 									}),
 									q(62588, {	-- In Search of Inner Calm (2)
 										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
@@ -410,11 +413,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["provider"] = { "n", 174511 },	-- Lia the Curious
 										["coord"] = { 26.0, 63.8, 1662 },
 										["cost"] = { { "i", 183806, 1 } }, -- 1 Energetic Spirit of Curiosity
+										["maps"] = { FROSTFIRE_RIDGE },
 									}),
 									q(62629, {	-- All Spirits Great and Small (2)
 										["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
 										["coord"] = { 26.0, 63.8, 1662 },
+										["maps"] = { KUN_LAI_SUMMIT },
 									}),
 									q(62630, {	-- All Spirits Great and Small (3)
 										["sourceQuests"] = { 62629 },	-- All Spirits Great and Small (2)

@@ -118,17 +118,15 @@ root("Zones", m(SHADOWLANDS, {
 				pvp(petbattle(q(62639))),	-- The Very Best
 				q(62631),					-- The World Awaits
 			})),
-		}),
-	}),
-}));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(WEEKLY_HOLIDAYS, {
-			i(184316),	-- Cache of Nathrian Treasures
-			i(184317),	-- Cache of Nathrian Treasures
-			i(186530),	-- Cache of Sanctum Treasures
-			i(186529),	-- Cache of Sanctum Treasures
+			-- Auto-accepted in various situations, so no coords/provider
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+				["_drop"] = { "g" },	-- Drop Trash
+			}, {
+				-- #IF AFTER SHADOWLANDS
+				pvp(q(47148)),				-- Something Different
+				-- #ENDIF
+			})),
 		}),
 	}),
 }));

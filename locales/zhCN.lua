@@ -220,6 +220,11 @@ local L = app.L;
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度！|r";
 	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收藏的事物";
+	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等级";
+	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任务";
+	L.LOCK_CRITERIA_SPELL_LABEL = "已学法术/坐骑/配方";
+	L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
+	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -239,7 +244,7 @@ local L = app.L;
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt+点击锁定窗口";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt+点击解锁窗口";
 	L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求";
-	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
+	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
 	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "完成：%s";
 
@@ -306,8 +311,8 @@ local L = app.L;
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "启用此选项以追踪乐谱和自拍滤镜。\n\n你可以用你的点唱机播放游戏中的音乐并且你的自拍相机玩具为你的自拍收藏特定地点的滤镜。";
 		L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：由于暴雪数据库中每日、每周、每年和世界任务的追踪方式的性质，任务不会被永久追踪。";
-		L.QUESTS_BREADCRUMBS_CHECKBOX = "|cffADD8E6+无关紧要";
-		L.QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP = "启用此选项以专门包括跟踪无关紧要任务完成情况。 \n\n无关紧要任务是从技术上讲，它们是“可选的”，因为它们仅用于将玩家引导至不同的任务，如果在完成后续任务之前未完成，则它们将变得不可用。\nT这会使获取无关紧要非常依赖队伍同步功能或账号通用的任务";
+		L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+无关紧要";
+		L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "启用此选项以专门包括跟踪无关紧要任务完成情况。 \n\n无关紧要任务是从技术上讲，它们是“可选的”，因为它们仅用于将玩家引导至不同的任务，如果在完成后续任务之前未完成，则它们将变得不可用。\nT这会使获取无关紧要非常依赖队伍同步功能或账号通用的任务";
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 		L.REPUTATIONS_CHECKBOX = "|cffADD8E6声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
@@ -511,7 +516,7 @@ local L = app.L;
 	-- About tab
 		L.ABOUT = "关于";
 		L.ABOUT_1 = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\n另外：查看 All The Things 经典旧世和燃烧的远征经典旧世！\n\n是的，我打算玩经典旧世魔兽哦，但是在全职工作和开发插件的两个版本之间，不会有很多时间用于团队。\n\n不，ATT 不是将图标放在包图标上的插件。那是 CanIMogIt 和 Caerdon Wardrobe！\n\n对于在线收藏比较，请查看 shoogen 的 DataForAzeroth.com！|r";
-		L.ABOUT_2 = "其他贡献者：|CFFFFFFFF（加入团队顺序）\nDaktar，Lucetia，Slumber，Gold，Avella，Aiue，Dead Serious，Oiche，Oxlotus，Eiltherune，Blueyleader，Iyanden，Pr3vention，BigBlaris，Talonzor，Mogwai，Heallie，Eckhardt，Boohyaka，Sadidorf，Sanctuari，Molkree，Runawaynow，Braghe，Myrhial，Darkal 和其他 ATT Discord 的人们！\n\n特别鸣谢 AmiYuy（CanIMogIt）和Caerdon（Caerdon Wardrobe）。|r  ";
+		L.ABOUT_2 = "其他贡献者：|CFFFFFFFF（加入团队顺序）\nDaktar，Lucetia，Slumber，Gold，Avella，Aiue，Dead Serious，Oiche，Oxlotus，Eiltherune，Blueyleader，Iyanden，Pr3vention，BigBlaris，Talonzor，Mogwai，Heallie，Eckhardt，Boohyaka，Sadidorf，Sanctuari，Molkree，Runawaynow，Braghe，Myrhial，Darkal，Tag 和其他 ATT Discord 的人们！\n\n特别鸣谢 AmiYuy（CanIMogIt）和Caerdon（Caerdon Wardrobe）。|r  ";
 		L.ABOUT_3 = "\n|CFFFFFFFF你绝对应该下载他们的插件，以便在你的背包里的物品上获得收藏图标！|r";
 
 	-- Binding Localizations
@@ -1079,7 +1084,7 @@ for key, value in pairs({
 	[185035] = "通缉布告",	-- Wanted Poster
 	[185126] = "水晶监牢",	-- Crystal Prison	--TODO: This was taken from tbc Wowhead
 	[185165] = "军团联络器",	-- Legion Communicator
-	[185166] = "通缉布告",	-- Wanted Poster	--TODO: This was taken from tbc Wowhead
+	[185166] = "通缉布告",	-- Wanted Poster
 	[185168] = "强化魔铁箱",	-- Reinforced Fel Iron Chest
 	[186267] = "南瓜神龛",	-- Pumpkin Shrine
 	[186426] = "通缉布告",	-- Wanted Poster
@@ -2072,7 +2077,6 @@ for key, value in pairs({
 	[250109] = "宝箱",	-- Treasure Chest
 	[250383] = "月影圣物",	-- Moonshade Relic
 	[250541] = "宝箱",	-- Treasure Chest
-	--TODO: [250671] = "Notes on the Veiled Hand",	-- Notes on the Veiled Hand
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
 	[251032] = "衣橱",	-- Armoire
@@ -2309,7 +2313,7 @@ for key, value in pairs({
 	[278570] = "古代日志",	-- Ancient Journal
 	[278577] = "被撕碎的部落信函",	-- Torn Horde Missive
 	[278669] = "萧湾镇账本",	-- Fallhaven Ledger
-	[278675] = "被诅咒的雕像",	-- Cursed Effigy	--TODO: This was manually translated
+	[278675] = "被诅咒的雕像",	-- Cursed Effigy
 	[279042] = "走私者的藏品",	-- Smuggler's Stash
 	[279253] = "幸运的霍拉斯的幸运宝箱",	-- Lucky Horace's Lucky Chest
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
@@ -2342,7 +2346,7 @@ for key, value in pairs({
 	[281397] = "破浪宝箱",	-- Cutwater Treasure Chest
 	[281494] = "冰霜宝箱",	-- Frosty Treasure Chest
 	[281551] = "求助布告",	-- Help Wanted Poster
-	[281583] = "古代圣物",	-- Ancient Reliquary	--TODO: This was manually translated
+	[281583] = "古代圣物",	-- Ancient Reliquary
 	[281639] = "崩解的雕像",	-- Crumbling Statue
 	[281646] = "蜂蜜大桶",	-- Honey Vat
 	[281647] = "张贴的布告",	-- Posted Notice
@@ -2803,14 +2807,14 @@ for key, value in pairs({
 	[355886] = "凋殇者宝箱",	-- Plaguefallen Chest
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
-	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
+	[356693] = "瓦丝琪女男爵的奢华礼品",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
-	--TODO: [356700] = "Grandmaster Vole's Extravagant Tribute",	-- Grandmaster Vole's Extravagant Tribute
+	[356700] = "沃尔大师的奢华礼品",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "魔药设计师马里莱斯的奢华礼品",	-- Plague Deviser Marileth's Extravagant Tribute
 	[356709] = "月莓女勋爵的奢华礼品",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356712] = "狩猎队长柯莱恩的奢华礼品",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "宗主艾莉奥瑟的奢华供品",	-- Droman Aliothe's Extravagant Tribute
-	--TODO: [356720] = "Choofa's Extravagant Tribute",	-- Choofa's Extravagant Tribute
+	[356720] = "丘法的奢华礼品",	-- Choofa's Extravagant Tribute
 	[356725] = "文官阿得赖斯提斯的奢华供品",	-- Polemarch Adrestes' Extravagant Tribute
 	[356728] = "米卡尼科斯的奢华礼品",	-- Mikanikos' Extravagant Tribute
 	[356733] = "克雷雅和裴拉戈斯的奢华供品",	-- Kleia and Pelagos' Extravagant Tribute
@@ -2980,7 +2984,11 @@ for key, value in pairs({
 	[375067] = "滑音宝箱",	-- Glissandian Cache
 	[375068] = "赋格宝箱",	-- Fugueal Cache
 	[375069] = "声乐宝箱",	-- Cantaric Cache
+	[375188] = "拱曲凹室指向",	-- Camber Alcove Arrangement
+	[375189] = "储备凹室指向",	-- Repertory Alcove Arrangement
+	[375190] = "圆弧凹室指向",	-- Rondure Alcove Arrangement
 	[375191] = "休眠凹室指向",	-- Dormant Alcove Arrangement
+	[375192] = "灿烂凹室指向",	-- Fulgore Alcove Arrangement
 	[375270] = "原生体设计方案",	-- Protoform Schematic
 	[375272] = "渊誓之箱",	-- Mawsworn Cache
 	[375281] = "失窃的圣物",	-- Stolen Relic
@@ -2990,6 +2998,7 @@ for key, value in pairs({
 	[375362] = "元鸟之巢",	-- Avian Nest
 	[375363] = "渊誓补给宝箱",	-- Mawsworn Supply Chest
 	[375366] = "元蛛卵",	-- Tarachnid Eggs
+	[375368] = "造物化生控制台",	-- Creation Catalyst Console
 	[375369] = "被咬过的旅行袋",	-- Gnawed Valise
 	[375370] = "原生体设计方案",	-- Protoform Schematic
 	[375371] = "原生体设计方案",	-- Protoform Schematic
@@ -3143,6 +3152,17 @@ do a[key] = value; end
 --TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
+		[1] = {1, "|CFFFF0000此项玩家永远无法获得。|r", "从未实施"}, -- No Hope
+		[2] = {1, "|CFFFF0000此项已从游戏中删除。|r", "从游戏中移除"}, -- No Hope
+		[9] = {3, "|CFFFF0000获得它的原始来源已被删除，现在只能通过黑市拍卖行获得。|r", "黑市拍卖行 [BMAH]"},
+		[10] = {3, "|CFFFF0000最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r", "集换式卡牌游戏 [TCG]"},
+		[11] = {3, "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。|r", "需要召唤物品"},
+		[14] = {3, "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r", "PvP 精良/角斗士"},
+		[15] = {1, "|CFFFF0000这不能永久学习或用于幻化。|r", "不可学"},
+		[35] = {3, "|CFFFF0000这被锁定在付费墙后面，例如游戏内商店、另一个暴雪产品或战友招募服务。|r", "暴雪礼品卡"},
+		[38] = {1, "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r", "斡耳朵斯 - 传奇披风"},
+		[45] = {1, "|CFFFF0000暴雪的战利品更改损坏了几件物品，使其无法获得。\n贵族披风/古拉巴什帝国大氅（同为《争霸艾泽拉斯》使者奖励），“绞肉机”奥戈姆，《德拉诺之王》任务拾取战利品和经典试玩目前已损坏，需要修复。|r", "战利品损坏"},
+
 	-- Seasonal Filters
 		[1000] = {4, "|CFF00FFDE这要求美酒节处于激活状态。|r", "美酒节"},
 		[1001] = {4, "|CFF00FFDE这要求儿童周处于激活状态。|r", "儿童周"},

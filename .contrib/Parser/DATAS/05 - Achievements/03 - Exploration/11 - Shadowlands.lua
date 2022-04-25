@@ -467,7 +467,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				crit(13),		-- Ritualist's Cache
 			}),
 		}),
-		ach(14339),		-- Shard Labor
 		ach(14658),		-- Soulkeeper's Burden
 		ach(15411, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Synthe-supersized!
 			ach(15406),	-- Synthesized!

@@ -130,13 +130,12 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 18.14, 20.59, ASHENVALE },
 					["timeline"] = { "added 4.0.3.10000" },
 				}),
-				fp(167, {	-- Forest Song, Ashenvale
+				applyclassicphase(TBC_PHASE_ONE, fp(167, {	-- Forest Song, Ashenvale
 					["cr"] = 22935,	-- Suralais Farwind <Hippogryph Master>
 					["coord"] = { 85.1, 43.5, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["timeline"] = { "added 2.0.1.10000" },
-				}),
+				})),
 				fp(350, {	-- Hellscream's Watch, Ashenvale
 					["coord"] = { 38.07, 42.21, ASHENVALE },
 					["timeline"] = { "added 4.0.3.10000" },
@@ -163,14 +162,13 @@ root("Zones", m(KALIMDOR, {
 				}),
 			}),
 			n(QUESTS, {
-				q(9533, {	-- A Helping Hand
+				applyclassicphase(TBC_PHASE_ONE, q(9533, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
 					["coord"] = { 34.9, 49.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["lvl"] = 22,
-				}),
+				})),
 				q(26453, {	-- A Helping Hand
 					["provider"] = { "n", 17106 },	-- Vindicator Palanaar
 					["coord"] = { 35.0, 49.9, ASHENVALE },
@@ -192,12 +190,11 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9517, {	-- A Shameful Waste
+				applyclassicphase(TBC_PHASE_ONE, q(9517, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
 					["coord"] = { 86.8, 44.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
-					["u"] = TBC_PHASE_ONE,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["groups"] = {
 						objective(1, {	-- 0/15 Warsong Lumber
@@ -207,7 +204,7 @@ root("Zones", m(KALIMDOR, {
 							["provider"] = { "i", 24081 },	-- Satyrnaar Fel Wood
 						}),
 					},
-				}),
+				})),
 				q(26454, {	-- A Shameful Waste
 					["provider"] = { "n", 17291 },	-- Architect Nemos
 					["coord"] = { 86.8, 44.8, ASHENVALE },
@@ -228,14 +225,13 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 26475,	-- Elune's Tear
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9518, {	-- Agents of Destruction
+				applyclassicphase(TBC_PHASE_ONE, q(9518, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
 					["coord"] = { 86.0, 44.4, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["lvl"] = 24,
-				}),
+				})),
 				q(26457, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13287" } }, {	-- Agents of Destruction
 					["provider"] = { "n", 17287 },	-- Sentinel Luciel Starwhisper
 					["coord"] = { 83.8, 62.6, ASHENVALE },
@@ -515,22 +511,20 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 26449,	-- Never Again!
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9516, {	-- Destroy the Legion [Alliance]
+				applyclassicphase(TBC_PHASE_ONE, q(9516, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
 					["coord"] = { 86.5, 44.2, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 26,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
-				}),
-				q(9534, {	-- Destroy the Legion [Horde]
+				})),
+				applyclassicphase(TBC_PHASE_ONE, q(9534, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
 					["coord"] = { 73.2, 60.4, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 26,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
-				}),
+				})),
 				q(26444, {	-- Destroy the Legion [Alliance]
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
 					["coord"] = { 84.0, 62.7, ASHENVALE },
@@ -543,20 +537,18 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9520, {	-- Diabolical Plans [Alliance]
+				applyclassicphase(TBC_PHASE_ONE, q(9520, {	-- Diabolical Plans [Alliance]
 					["provider"] = { "i", 23780 },	-- Diabolical Plans
 					["races"] = HORDE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
-				}),
-				q(9535, {	-- Diabolical Plans [Horde]
+				})),
+				applyclassicphase(TBC_PHASE_ONE, q(9535, {	-- Diabolical Plans [Horde]
 					["provider"] = { "i", 23798 },	-- Diabolical Plans
 					["races"] = HORDE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
-				}),
+				})),
 				q(26443, {	-- Diabolical Plans
 					["provider"] = { "i", 23777 },	-- Diabolical Plans
 					["races"] = ALLIANCE_ONLY,
@@ -998,33 +990,31 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9522, bubbleDownSelf({ ["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" } }, {	-- Never Again! [Alliance]
+				applyclassicphase(TBC_PHASE_ONE, q(9522, bubbleDownSelf({ ["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" } }, {	-- Never Again! [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
 					["sourceQuest"] = 9520,	-- Diabolical Plans [Alliance]
 					["coord"] = { 86.5, 44.2, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["groups"] = {
 						i(24119),	-- Band of Argas
 						i(24120),	-- Seal of Argas
 						i(24118),	-- Signet of Argas
 					},
-				})),
-				q(9536, bubbleDownSelf({ ["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" } }, {	-- Never Again! [Horde]
+				}))),
+				applyclassicphase(TBC_PHASE_ONE, q(9536, bubbleDownSelf({ ["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" } }, {	-- Never Again! [Horde]
 					["qg"] = 17355,	-- Valusha
 					["sourceQuest"] = 9535,	-- Diabolical Plans [Horde]
 					["coord"] = { 73.2, 60.4, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["groups"] = {
 						i(24119),	-- Band of Argas
 						i(24120),	-- Seal of Argas
 						i(24118),	-- Signet of Argas
 					},
-				})),
-				q(26445, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Never Again! [Alliance]
+				}))),
+				applyclassicphase(CATA_PHASE_ONE, q(26445, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Never Again! [Alliance]
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
 					["coord"] = { 84.0, 62.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
@@ -1034,7 +1024,7 @@ root("Zones", m(KALIMDOR, {
 						i(24120),	-- Seal of Argus
 						i(24118),	-- Signet of Argus
 					},
-				})),
+				}))),
 				q(26449, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Never Again! [Horde]
 					["provider"] = { "n", 17355 },	-- Valusha
 					["coord"] = { 73.1, 60.1, ASHENVALE },
@@ -1327,11 +1317,10 @@ root("Zones", m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9526, {	-- Reclaiming Felfire Hill
+				applyclassicphase(TBC_PHASE_ONE, q(9526, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl <Ancient of War>
 					["coord"] = { 84.2, 45.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 24,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["groups"] = {
@@ -1339,7 +1328,7 @@ root("Zones", m(KALIMDOR, {
 							["provider"] = { "i", 23788 },	-- Tree Seedlings
 						}),
 					},
-				}),
+				})),
 				q(26446, {	-- Reclaiming Felfire Hill
 					["provider"] = { "n", 17310 },	-- Gnarl
 					["coord"] = { 83.7, 63.0, ASHENVALE },
@@ -1360,11 +1349,10 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 26454,	-- A Shameful Waste
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9521, {	-- Report from the Northern Front
+				applyclassicphase(TBC_PHASE_ONE, q(9521, {	-- Report from the Northern Front
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
 					["coord"] = { 86.0, 44.4, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 21,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["groups"] = {
@@ -1372,7 +1360,7 @@ root("Zones", m(KALIMDOR, {
 							["provider"] = { "i", 23778 },	-- Sentinel Luciel's Report
 						}),
 					},
-				}),
+				})),
 				q(26456, {	-- Report from the Northern Front
 					["provider"] = { "n", 3880 },	-- Sentinel Melyria Frostshadow
 					["coord"] = { 58.9, 58.7, ASHENVALE },
@@ -1380,14 +1368,13 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 13935,	-- Defend the Tree!
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(9428, {	-- Report to Spintertree Post
+				applyclassicphase(TBC_PHASE_ONE, q(9428, {	-- Report to Spintertree Post
 					["qg"] = 17098,	-- Ambassador Dawnsinger
 					["coord"] = { 71.0, 68.0, ORGRIMMAR },
-					["u"] = TBC_PHASE_ONE,
 					["races"] = { BLOODELF },
 					["lvl"] = 18,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
-				}),
+				})),
 				q(13626, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Respect for the Fallen
 					["provider"] = { "n", 11806 },	-- Sentinel Onaeya
 					["coord"] = { 26.6, 36.8, ASHENVALE },
@@ -1765,11 +1752,10 @@ root("Zones", m(KALIMDOR, {
 						i(131327, {["timeline"] = { "added 7.0.3.22248" }}),	-- Sheltered Aessina Wristguards
 					},
 				})),
-				q(9519, {	-- The Lost Chalice
+				applyclassicphase(TBC_PHASE_ONE, q(9519, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
 					["coord"] = { 85.3, 44.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 23,
 					["timeline"] = { "added 2.0.1.10000", "removed 4.0.3.10000" },
 					["groups"] = {
@@ -1778,7 +1764,7 @@ root("Zones", m(KALIMDOR, {
 							["coord"] = { 81.4, 48.9, ASHENVALE },
 						}),
 					},
-				}),
+				})),
 				q(26455, {	-- The Lost Chalice
 					["provider"] = { "n", 3848 },	-- Kayneth Stillwind
 					["coord"] = { 85.2, 44.7, ASHENVALE },
@@ -2411,11 +2397,10 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 35.0, 52.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(20855, {	-- Design: Wicked Moonstone Ring
+						applyclassicphase(TBC_PHASE_ONE, i(20855, {	-- Design: Wicked Moonstone Ring
 							["isLimited"] = true,
-							["u"] = TBC_PHASE_ONE,
 							["timeline"] = { "added 2.0.1.6180" },
-						}),
+						})),
 						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength
 							["isLimited"] = true,
 						}),
@@ -2431,17 +2416,21 @@ root("Zones", m(KALIMDOR, {
 						i(6054),	-- Recipe: Shadow Protection Potion
 					},
 				})),
-				n(6731, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.7318", "removed 4.0.3.10000" } }, {	-- Harlown Darkweave <Leatherworking Supplies>
-					["coord"] = { 18.2, 60.0, ASHENVALE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(7361),	-- Pattern: Herbalist's Gloves
-					},
-				})),
-				n(34601, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Harlown Darkweave
+				n(6731, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.7318" } }, {	-- Harlown Darkweave <Leatherworking Supplies>
 					["description"] = "Vendor will only sell to those who have rescued him. Go to Benjari Edune and pick up the quest |cFFFFD700Three Friends of the Forest|r to start the quest chain.",
 					["coord"] = { 18.2, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF BEFORE CATA
+					["groups"] = {
+						i(7361),	-- Pattern: Herbalist's Gloves
+					},
+					-- #ENDIF
+				})),
+				n(34601, bubbleDownSelf({ ["timeline"] = { "added 4.0.3.13277" } }, {	-- Harlown Darkweave <Leatherworking Supplies>
+					["sourceQuest"] = 13982,	-- in a Bind
+					["coord"] = { 18.2, 60.0, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 6731 }, -- Harlown Darkweave
 					["g"] = {
 						i(7361, {	-- Pattern: Herbalist's Gloves
 							["isLimited"] = true,

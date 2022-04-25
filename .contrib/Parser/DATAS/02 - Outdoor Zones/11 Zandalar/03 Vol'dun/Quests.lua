@@ -1563,7 +1563,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(BONUS_OBJECTIVES, sharedData({ ["races"] = HORDE_ONLY }, {
+				n(BONUS_OBJECTIVES, sharedData({
+					["lockCriteria"] = { 1, "lvl", 50 },
+					["races"] = HORDE_ONLY,
+				},{
 					-- TODO: probably cant do after a certain level?
 					q(47647, {	-- Monsters of Zem'lan
 						["sourceQuests"] = {

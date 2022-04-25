@@ -668,6 +668,9 @@ namespace ATT
                     case "cost":
                         Objects.MergeField_cost(item, value);
                         break;
+                    case "lc":
+                        Objects.MergeField_lockCriteria(item, value);
+                        break;
                     case "_drop":
                         // Signifies to drop existing Item fields when encountered
                         Objects.PerformDrops(item, value);

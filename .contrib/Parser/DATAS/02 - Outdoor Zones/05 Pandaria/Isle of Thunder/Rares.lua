@@ -201,29 +201,6 @@ _.Zones =
 						}),
 					},
 				}),
-				i(92441, {	-- The Codex of Xerrath
-					-- Putting this in front of the Sealed Tome due to update order and cost checking issue >_>
-					-- ["spellID"] = 101508, -- The Codex of Xerrath
-					["cost"] = {
-						{ "i", 92426, 1 },	-- Sealed Tome of the Lost Legion
-						{ "i", 5512, 1 },	-- Healthstone
-					},
-				}),
-				i(92426, {	-- Sealed Tome of the Lost Legion
-					["classes"] = { WARLOCK },
-					["crs"] = {
-						70000,	-- Al'tabim the All-Seeing
-						70001,	-- Backbreaker Uru
-						69999,	-- God-Hulk Ramuk
-						69998,	-- Goda
-						50358,	-- Haywire Sunreaver Construct
-						69996,	-- Ku'lai the Skyclaw
-						70002,	-- Lu-Ban
-						70003,	-- Molthor
-						69664,	-- Mumta
-						69997,	-- Progenitus
-					},
-				}),
 				i(94221, {	-- Shan'ze Ritual Stone
 					["description"] = "You will need 3 stones to summon these rares at their specific spawn points.",
 					["crs"] = {

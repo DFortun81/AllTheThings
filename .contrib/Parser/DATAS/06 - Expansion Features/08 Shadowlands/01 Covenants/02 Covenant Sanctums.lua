@@ -34,7 +34,13 @@ _.ExpansionFeatures =
 					}),
 					ach(14839),		-- Bound to Adventure
 					ach(14834),		-- Bound with Purpose
-					ach(14627),		-- Choosing your Purpose
+					ach(14627, {	-- Choosing Your Purpose
+						["maps"] = { ORIBOS },
+						["sourceQuests"] = {
+							57878,	-- Choosing Your Purpose (original playthrough version
+							62000,	-- Choosing Your Purpose (Threads of Fate)
+						},
+					}),
 					ach(15241, {	-- Renowned
 						["timeline"] = { "added 9.1.5" },
 						["g"] = {

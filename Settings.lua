@@ -121,7 +121,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		["Thing:MusicRollsAndSelfieFilters"] = true,
 		["Thing:Quests"] = true,
-		["Thing:QuestBreadcrumbs"] = true,
+		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = true,
@@ -392,7 +392,7 @@ settings.ApplyProfile = function()
 				settings.SetWindowFromProfile(suffix);
 			end
 		end
-		
+
 		if app.IsReady then
 			app.print(L["PROFILE"]..":",settings:GetProfile(true));
 		end
@@ -445,7 +445,7 @@ settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, e
 		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
 		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
 	end
-	
+
 	local active = (now >= start and now <= ends);
 	SeasonalSettingsBase.__index[u] = active;
 end
@@ -502,8 +502,6 @@ settings.GetModeString = function(self)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
-					-- Quest Breadcrumbs only count when Quests are enabled
-					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
@@ -558,8 +556,6 @@ settings.GetShortModeString = function(self)
 			if keyPrefix == "Thing:" then
 				totalThingCount = totalThingCount + 1;
 				if settings:Get(key) and
-					-- Quest Breadcrumbs only count when Quests are enabled
-					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
 					then
@@ -1113,14 +1109,15 @@ settings.UpdateMode = function(self, doRefresh)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		app.ShowTrackableThings = app.NoFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
 		app.RequireFactionFilter = app.NoFilter;
 		app.RequireCustomCollectFilter = app.NoFilter;
-		app.DefaultFilter = app.NoFilter;
+		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
+		app.DefaultGroupFilter = self:Get("Show:CompletedGroups") and app.NoFilter or app.Filter;
+		app.DefaultThingFilter = self:Get("Show:CollectedThings") and app.NoFilter or app.Filter;
 
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
@@ -1151,7 +1148,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleMounts = true;
 		app.CollectibleMusicRollsAndSelfieFilters = true;
 		app.CollectibleQuests = true;
-		app.CollectibleBreadcrumbs = true;
+		app.CollectibleQuestsLocked = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
 		app.CollectibleRuneforgeLegendaries = true;
@@ -1164,7 +1161,8 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
-		app.DefaultFilter = app.Filter;
+		app.DefaultGroupFilter = app.Filter;
+		app.DefaultThingFilter = app.Filter;
 		-- specifically hiding something
 		if settings:GetValue("Seasonal", "DoFiltering") then
 			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
@@ -1211,7 +1209,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectibleMusicRollsAndSelfieFilters = self:Get("Thing:MusicRollsAndSelfieFilters");
 		app.CollectibleQuests = self:Get("Thing:Quests");
-		app.CollectibleBreadcrumbs = self:Get("Thing:QuestBreadcrumbs");
+		app.CollectibleQuestsLocked = self:Get("Thing:QuestsLocked");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
 		app.CollectibleRuneforgeLegendaries = self:Get("Thing:RuneforgeLegendaries");
@@ -1848,10 +1846,10 @@ end);
 QuestsCheckBox:SetATTTooltip(L["QUESTS_CHECKBOX_TOOLTIP"]);
 QuestsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
-local QuestBreadcrumbsCheckBox = child:CreateCheckBox(L["QUESTS_BREADCRUMBS_CHECKBOX"],
+local QuestsLockedCheckBox = child:CreateCheckBox(L["QUESTS_LOCKED_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Thing:QuestBreadcrumbs"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+	self:SetChecked(settings:Get("Thing:QuestsLocked"));
+	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1860,16 +1858,17 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:QuestBreadcrumbs", self:GetChecked());
+	settings:Set("Thing:QuestsLocked", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestBreadcrumbsCheckBox:SetATTTooltip(L["QUESTS_BREADCRUMBS_CHECKBOX_TOOLTIP"]);
-QuestBreadcrumbsCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
-QuestBreadcrumbsCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
+QuestsLockedCheckBox:SetATTTooltip(L["QUESTS_LOCKED_CHECKBOX_TOOLTIP"]);
+QuestsLockedCheckBox:SetPoint("TOP", QuestsCheckBox, "TOP", 0, 0);
+QuestsLockedCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
 
 local QuestsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Quests"));
+	-- only requries Quests enabled. seems weird to enable Locked Quests with Account-Wide when you'd prefer to use another character to get those Locked Quests...
 	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -3077,9 +3076,9 @@ for _,v in ipairs(holidayOrder) do
 		function(self)
 			self:SetChecked(settings:GetValue("Seasonal", v));
 			if SeasonalSettingsBase.__index[v] then
-				self.Text:SetTextColor(0.6, 0.7, 1);
+				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
 			else
-				self.Text:SetTextColor(1, 1, 1);
+				self.Text:SetTextColor(0.678, 0.847, 0.902); --Reinstated Insane color logic
 			end
 		end,
 		function(self)
@@ -4298,8 +4297,6 @@ table.insert(settings.MostRecentTab.objects, ChatCommandsText);
 
 end)();
 
-
-
 ------------------------------------------
 -- The "Profiles" Tab.					--
 ------------------------------------------
@@ -4347,7 +4344,7 @@ NewProfileTextBox:Show();
 -- Profiles selector scrollbox
 local ProfileSelector = settings:CreateScrollFrame();
 local ProfileScroller = ProfileSelector.ScrollContainer;
-ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -36);
+ProfileScroller:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -10);
 ProfileScroller:SetPoint("RIGHT", NewProfileTextBox, "RIGHT", 25, 0);
 ProfileScroller:SetPoint("BOTTOM", settings, "BOTTOM", 0, 20);
 settings.ApplyBackdropColor(ProfileScroller, 20, 20, 20, 1);
@@ -4413,50 +4410,6 @@ local CreateProfileButton = settings:CreateButton(
 CreateProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "TOPRIGHT", 5, 4);
 CreateProfileButton:Show();
 
--- Switch Button
-local SwitchProfileButton = settings:CreateButton(
--- button settings
-{
-	text = SWITCH,
-	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
-},
--- function hooks for the button
-{
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
-		if profile then
-			UseProfile(profile);
-			refreshProfiles();
-			return true;
-		end
-	end
-});
-SwitchProfileButton:SetPoint("TOPLEFT", NewProfileTextBox, "BOTTOMLEFT", 0, -4);
-SwitchProfileButton:Show();
-
--- Copy Button
-local CopyProfileButton = settings:CreateButton(
--- button settings
-{
-	text = CALENDAR_COPY_EVENT,
-	tooltip = L["PROFILE_COPY_TOOLTIP"],
-},
--- function hooks for the button
-{
-	["OnClick"] = function(self)
-		local profile = tab.SelectedProfile;
-		if profile then
-			settings:CopyProfile(nil, profile);
-			settings:ApplyProfile();
-			settings:UpdateMode(1);
-			refreshProfiles();
-			return true;
-		end
-	end
-});
-CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "TOPRIGHT", 10, 0);
-CopyProfileButton:Show();
-
 -- Delete Button
 local DeleteProfileButton = settings:CreateButton(
 -- button settings
@@ -4479,8 +4432,53 @@ local DeleteProfileButton = settings:CreateButton(
 		end
 	end
 });
-DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, 0);
+DeleteProfileButton:SetPoint("BOTTOMLEFT", ProfileScroller, "BOTTOMRIGHT", 5, -1);
 DeleteProfileButton:Show();
+
+-- Switch Button
+local SwitchProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = SWITCH,
+	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			UseProfile(profile);
+			refreshProfiles();
+			return true;
+		end
+	end
+});
+SwitchProfileButton:SetPoint("LEFT", DeleteProfileButton, "LEFT", 0, 0);
+SwitchProfileButton:SetPoint("TOP", ProfileScroller, "TOP", 0, 2);
+SwitchProfileButton:Show();
+
+-- Copy Button
+local CopyProfileButton = settings:CreateButton(
+-- button settings
+{
+	text = CALENDAR_COPY_EVENT,
+	tooltip = L["PROFILE_COPY_TOOLTIP"],
+},
+-- function hooks for the button
+{
+	["OnClick"] = function(self)
+		local profile = tab.SelectedProfile;
+		if profile then
+			settings:CopyProfile(nil, profile);
+			settings:ApplyProfile();
+			settings:UpdateMode(1);
+			refreshProfiles();
+			return true;
+		end
+	end
+});
+CopyProfileButton:SetPoint("TOPLEFT", SwitchProfileButton, "BOTTOMLEFT", 0, -4);
+CopyProfileButton:Show();
 
 local function ProfileCheckbox_Disable(self)
 	self:Disable();
