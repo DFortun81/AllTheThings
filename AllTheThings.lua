@@ -7076,8 +7076,7 @@ local ObjectFunctions = {
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 	["modItemID"] = function(t)
-		rawset(t, "modItemID", t.itemID);
-		return rawget(t, "modItemID");
+		return t.itemID;
 	end,
 	-- default 'text' should be the colorized 'name'
 	["text"] = function(t)
@@ -15373,18 +15372,20 @@ RowOnEnter = function (self)
 			pcall(GameTooltip.SetHyperlink, GameTooltip, link);
 		end
 
-		local doSearch = true;
+		local doSearch;
 		-- Nothing generated into tooltip based on the link, or no link exists
 		if GameTooltip:NumLines() < 1 then
 			-- Mark the tooltip as being complete, and insert the same text from the row itself
 			GameTooltip:AddLine(reference.text);
 			GameTooltip.AttachComplete = true;
-			doSearch = nil;
+			doSearch = true;
 		end
 
 		-- Determine search results to add if nothing was added from being searched
 		if doSearch then
-			if reference.currencyID then
+			if reference.creatureID or reference.encounterID or reference.objectID then
+				-- rows with these fields should not include the extra search info
+			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
 			elseif reference.azeriteEssenceID then
 				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
