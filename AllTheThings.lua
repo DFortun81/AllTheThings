@@ -4744,15 +4744,6 @@ local function DeterminePurchaseGroups(group)
 		local curSkipLevel = app.SkipPurchases[-1];
 		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
 	end
-	-- do not fill 'saved' groups
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
-		if not (group.instanceID or group.mapID or group.difficultyID or itemID) and group.saved then return; end
-		local rawParent = group.parent;
-		-- parent is a saved quest, then do not fill
-		if rawParent and rawParent.questID and rawParent.saved then return; end
-	end
 
 	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
 	if collectibles and #collectibles > 0 then
@@ -4848,6 +4839,16 @@ local function DetermineSymlinkGroups(group, depth)
 	end
 end
 local function FillGroupsRecursive(group, depth)
+	-- do not fill 'saved' groups
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
+		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
+		local parent = group.parent;
+		-- parent is a saved quest, then do not fill with stuff
+		if parent and parent.questID and parent.saved then return; end
+	end
+
 	local groups;
 	-- Determine Cost groups
 	groups = app.ArrayAppend(groups, DeterminePurchaseGroups(group));
@@ -4862,10 +4863,14 @@ local function FillGroupsRecursive(group, depth)
 	if groups then
 		-- increment depth if things are being nested
 		depth = (depth or 0) + 1;
-		-- only prevent duplicates after X layers of nesting?
+		-- block crafted items always, but allow other types to duplicate a few levels
 		if depth >= DuplicatePreventionLevel then
 			for _,o in ipairs(groups) do
-				included[o.hash] = depth;
+				included[o.hash or ""] = depth;
+				included[o.itemID or 0] = depth;
+			end
+		else
+			for _,o in ipairs(groups) do
 				included[o.itemID or 0] = depth;
 			end
 		end
@@ -7074,7 +7079,7 @@ local ObjectFunctions = {
 	end,
 	-- default 'text' should be the colorized 'name'
 	["text"] = function(t)
-		return app.TryColorizeName(t, t.name);
+		return t.name and app.TryColorizeName(t, t.name) or t.link;
 	end,
 };
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -11264,6 +11269,7 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+-- Header Lib
 local headerFields = {
 	["key"] = function(t)
 		return "headerID";
