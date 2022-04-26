@@ -281,7 +281,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			n(TREASURES, {
 				o(375391, {	-- Protoform Schematic
 					["description"] = "Hidden atop the ramp.",
-					["coord"] = { 35.0, 71.5, 2029 },
+					["coord"] = { 48.93, 40.47, 2029 },
 					["g"] = {
 						i(189473),	-- Schematic: Bronzewing Vespoid
 					},
@@ -356,7 +356,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 				o(375486, {	-- Protoform Schematic
-					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators.",
+					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
 					["coord"] = { 57.9, 78, ZERETH_MORTIS },
 					["g"] = {
 						i(189446),	-- Schematic: Shelly
@@ -418,14 +418,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 				o(375270, {	-- Protoform Schematic
-					["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Locus Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
+					["description"] = "Requires Aealic Understanding and Chapter 6.\nUnlock Rondure Locus Arrangement at 50.5, 27.6 (close to Tertius Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Rondure Alcove.\n\nHidden behind the top of the door frame near a large orb.\nDisappears when looted by another player recently.",
 					["coord"] = { 42.8, 40.6, 2029 },
 					["g"] = {
 						i(189440),	-- Schematic: Omnipotential Core
 					},
 				}),
 				o(375746, {	-- Protoform Schematic
-					["description"] = "Requires Sopranian Understanding and Chapter 6. Camber Locus Arrangement is found at 47.7 34.5, on the back side of the Vessel's room. (accessible from flying or via the Ultimus Locus). Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.\n\nSuccefully completing this minigame will reward a schematic.",
+					["description"] = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
 					["coord"] = { 49, 73.1, 2029 },
 					["questID"] = 65651,
 					["g"] = {
