@@ -1919,6 +1919,9 @@ local function RawCloneData(data, clone)
 			rawset(clone, key, value);
 		end
 	end
+	-- maybe better solution at another time?
+	clone.__type = nil;
+	clone.__index = nil;
 	return clone;
 end
 (function()
@@ -7085,51 +7088,46 @@ local ObjectFunctions = {
 };
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)
-	local base = {
-		["__type"] = function(t)
-			return type;
-		end,
-	};
-	return {
-		__index = function(t, key)
-			_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
-			if _cache then return _cache(t); end
-			-- use default key value if existing
-			return rawget(ObjectDefaults, key);
-		end
-	};
+	-- if not type then app.PrintTable(fields); app.report("Every Object requires a Type!"); end
+	if fields.__type then return fields; end
+
+	fields.__type = function() return type; end;
+	fields.__index = function(t, key)
+		_cache = rawget(fields, key) or rawget(ObjectFunctions, key);
+		if _cache then return _cache(t); end
+		-- use default key value if existing
+		return rawget(ObjectDefaults, key);
+	end;
+	-- app.PrintDebug("BaseObjectFields",type,fields)
+	return fields;
 end
 -- special performance tracking function for object properties
 or
 function(fields, type)
-	local base = {
-		["__type"] = function(t)
-			return type;
-		end,
-	};
+	if fields.__type then return fields; end
+
 	-- init table for this object type
-	if type and not app.__perf[type] then
-		app.__perf[type] = {};
-	end
-	return {
-		__index = function(t, key)
-			if key then
-				local typeData, result = rawget(app.__perf, type);
-				local now = GetTimePreciseSec();
-				_cache = rawget(fields, key) or rawget(ObjectFunctions, key) or rawget(base, key);
-				if _cache then
-					result = _cache(t);
-				else
-					result = rawget(ObjectDefaults, key);
-				end
-				if typeData then
-					rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
-					rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
-				end
-				return result;
-			end
+    if type and not app.__perf[type] then
+        app.__perf[type] = {};
+    end
+
+	fields.__type = function() return type; end;
+	fields.__index = function(t, key)
+		local typeData, result = rawget(app.__perf, type);
+		local now = GetTimePreciseSec();
+		_cache = rawget(fields, key) or rawget(ObjectFunctions, key);
+		if _cache then
+			result = _cache(t);
+		else
+			result = rawget(ObjectDefaults, key);
 		end
-	};
+		if typeData then
+			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
+			rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
+		end
+		return result;
+	end;
+	return fields;
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField)
