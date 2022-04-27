@@ -603,8 +603,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							n(WEAPONS, {
 								i(186959, {	-- Cosmic Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
-								}, {
-								i(186948),	-- Cosmic Aspirant's Battleaxe
+								}),
+								i(186948, {	-- Cosmic Aspirant's Battleaxe
 									["cost"] = { { "c", 1792, 875 } },
 								}),
 								i(186964, {	-- Cosmic Aspirant's Blackjack
