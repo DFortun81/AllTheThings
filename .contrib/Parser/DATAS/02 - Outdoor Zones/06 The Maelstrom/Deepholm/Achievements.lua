@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
-		m(207, {	-- Deepholm
+		m(DEEPHOLM, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
@@ -13,7 +13,7 @@ _.Zones =
 					["filterID"] = BATTLE_PETS,
 					["g"] = {
 						crit(6, {	-- Bordin Steadyfist
-							["coord"] = { 49.8, 57.0, 207 },
+							["coord"] = { 49.8, 57.0, DEEPHOLM },
 							["cr"] = 66815,	-- Bordin Steadyfist <Master Pet Tamer>
 						}),
 					},

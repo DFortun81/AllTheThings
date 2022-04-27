@@ -64,8 +64,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(5,  {	-- Bloodknight Antari (Outland)
 				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 			}),
-			crit(6,  {	-- Bordin Steadyfist (Deepholm)
-				["coord"] = { 49.8, 57.0, 207 },
+			crit(6,  {	-- Bordin Steadyfist
+				["coord"] = { 49.8, 57.0, DEEPHOLM },
 			}),
 			crit(7,  {	-- Brok
 				["coord"] = { 61.4, 32.8, MOUNT_HYJAL },

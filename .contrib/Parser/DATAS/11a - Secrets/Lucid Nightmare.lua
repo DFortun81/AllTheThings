@@ -40,8 +40,8 @@ _.Secrets =
 				["model"] = 985300,
 				["questID"] = 47849,
 				["coords"] = {
-					{ 63.7, 22.6, 207 },	-- Deepholm
-					{ 58.3, 25.6, 207 },	-- Deepholm
+					{ 63.7, 22.6, DEEPHOLM },
+					{ 58.3, 25.6, DEEPHOLM },
 				},
 				["sourceQuest"] = 47841,	-- Step 4: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 5:|r First, obtain a |cFFFFD700Shadoweave Mask|r.  |cffcc33ffNote: You will need the actual item; it cannot be transmogged on your character.|r\n\nThis step requires visiting Deepholm.  Take the |cFFFFD700Therazane's Throne|r portal if it is available; otherwise, fly to |cFFFFFFFF58.3, 25.6|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave, mount up and go past the |cFFFFD700Colossal Gyreworm|r into the next section of the cavern. Go to the big grey rock in the center of the room at |cFFFFFFFF63.7, 22.6|r and you will see a |cFFFFD700Dark Fissure|r.  Click it.  Once you click it, a warning will pop up, saying: \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure.  You may not be able to climb back out again.  Are you very sure you want to do this?'|r\n\nOnce inside the fissure, you will see a chair.  Go behind the chair and click on the |cFFFFD700Dingy Plaque|r.  The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the seat of the chair.  Equip the Shadoweave Mask and interact with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r\n",

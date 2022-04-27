@@ -22,7 +22,7 @@ _.Instances = { tier(CATA_TIER, {
 				}),
 				q(28824, {	-- Wayward Child
 					["qg"] = 42465,	-- Therazane <The Stonemother>
-					["coord"] = { 56.3, 12.2, 207 },
+					["coord"] = { 56.3, 12.2, DEEPHOLM },
 					["sourceQuest"] = 26871,	-- A Rock Amongst Many
 					["lvl"] = 82,
 					["groups"] = {

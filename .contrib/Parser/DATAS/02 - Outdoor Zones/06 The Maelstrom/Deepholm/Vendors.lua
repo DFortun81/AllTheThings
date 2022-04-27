@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
-		m(207, {	-- Deepholm
+		m(DEEPHOLM, {
 			n(VENDORS, {
 				n(45408, {	-- D'lom the Collector <Therazane Quartermaster>
-					["coord"] = { 56.8, 13.2, 207 },
+					["coord"] = { 56.8, 13.2, DEEPHOLM },
 					["g"] = {
 						i(62352),	-- Diamant's Ring of Temperance
 						i(62351),	-- Felsen's Ring of Resolve

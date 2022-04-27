@@ -544,7 +544,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 53.0, 32.0, ULDUM },
 					}),
 					crit(2, {	-- Deepholm
-						["coord"] = { 49.4, 51.4, 207 },
+						["coord"] = { 49.4, 51.4, DEEPHOLM },
 					}),
 					crit(3, {	-- Twilight Highlands
 						["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
@@ -993,7 +993,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 					}),
 					crit(4, {	-- Deepholm
-						["coord"] = { 49.4, 51.4, 207 },
+						["coord"] = { 49.4, 51.4, DEEPHOLM },
 					}),
 					crit(5, {	-- Uldum
 						["coord"] = { 53.0, 34.0, ULDUM },
@@ -2218,7 +2218,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 			n(FACTION_HEADER_NEUTRAL, sharedData({ ["isYearly"] = true, }, {
 				q(29036, {	-- Honor the Flame — Deepholm
 					["qg"] = 51698,	-- Deepholm Flame Guardian
-					["coord"] = { 49.4, 51.4, 207 },
+					["coord"] = { 49.4, 51.4, DEEPHOLM },
 					["timeline"] = { "added 4.0.1" },
 				}),
 				q(29030, {	-- Honor the Flame — Hyjal

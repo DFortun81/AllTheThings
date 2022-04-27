@@ -1207,7 +1207,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 				["groups"] = {
 					crit(1, {	-- Deepholm, Temple of Earth
-						["coord"] = { 47.4, 51.7, 207 },
+						["coord"] = { 47.4, 51.7, DEEPHOLM },
 					}),
 					crit(2, {	-- Mount Hyjal, Grove of Aessina
 						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
@@ -1254,7 +1254,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 				["groups"] = {
 					crit(1, {	-- Deepholm, Temple of Earth
-						["coord"] = { 51.2, 50.0, 207 },
+						["coord"] = { 51.2, 50.0, DEEPHOLM },
 					}),
 					crit(2, {	-- Mount Hyjal, Grove of Aessina
 						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
@@ -3257,7 +3257,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 2.0.1" },
 					}),
 					q(29020, {	-- Candy Bucket — Deepholm, Temple of Earth, Alliance
-						["coord"] = { 47.4, 51.7, 207 },
+						["coord"] = { 47.4, 51.7, DEEPHOLM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12348, {	-- Candy Bucket — Desolace, Nijel's Point, Alliance
@@ -3600,7 +3600,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 3.0.1" },
 					}),
 					q(29019, {	-- Candy Bucket — Deepholm, Temple of Earth, Horde
-						["coord"] = { 51.2, 50.0, 207 },
+						["coord"] = { 51.2, 50.0, DEEPHOLM },
 						["timeline"] = { "added 4.1.0.13726" },
 					}),
 					q(12381, {	-- Candy Bucket — Desolace, Shadowprey Village, Horde

@@ -1088,7 +1088,7 @@ root("PetBattles", petbattle({
 		}),
 		q(31973, {	-- Bordin Steadyfist
 			["provider"] = { "n", 66815 },	-- Bordin Steadyfist
-			["coord"] = { 49.9, 57.1, 207 },
+			["coord"] = { 49.9, 57.1, DEEPHOLM },
 			["repeatable"] = true,
 		}),
 		-- MoP
