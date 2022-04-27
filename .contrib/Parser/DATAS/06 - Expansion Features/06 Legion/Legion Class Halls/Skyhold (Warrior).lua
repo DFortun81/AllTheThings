@@ -762,6 +762,8 @@ root("HiddenQuestTriggers", {
 	q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
 	q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
 	q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
+
+	q(44151),	-- Looting Skull of Nithogg (140658)
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
