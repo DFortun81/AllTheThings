@@ -675,6 +675,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 51.1, 46.9, ZERETH_MORTIS },
 					{ 53.9, 88.6, ZERETH_MORTIS },
 					{ 59.0, 60.9, ZERETH_MORTIS },
+					{ 59.9, 51.2, ZERETH_MORTIS },
 					{ 62.1, 74.9, ZERETH_MORTIS },
 					{ 63.9, 72.3, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },

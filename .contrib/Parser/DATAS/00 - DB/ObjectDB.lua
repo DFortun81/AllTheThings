@@ -3015,6 +3015,7 @@ _.ObjectIcons = {
 	[245479] = "Interface/Icons/INV_Box_01",	-- Battered Chest
 	[245688] = "Interface/Icons/inv_misc_bowl_01",	-- Shattered Burial Urn
 	[245996] = "Interface/Worldmap/TreasureChest_64Grey",	-- Small Treasure Chest
+	[245793] = "Interface/Icons/inv_offhand_1h_draenorcrafted_d_02a",	-- Tome
 	[246147] = "Interface/Worldmap/TreasureChest_64Grey",	-- Small Treasure Chest
 	[246249] = "Interface/Worldmap/TreasureChest_64Grey",	-- Small Treasure Chest
 	[246269] = "Interface/Worldmap/TreasureChest_64Grey",	-- Small Treasure Chest

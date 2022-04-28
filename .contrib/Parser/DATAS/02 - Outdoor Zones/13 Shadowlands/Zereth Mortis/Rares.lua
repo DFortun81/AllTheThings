@@ -227,10 +227,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["questID"] = 65548,
 				["g"] = {
 					i(187923, {	-- Aurelid Lure
-						["description"] = "This is a one time use.\nStep 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.",
+						["description"] = "Step 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.",
 						["cr"] = 182194,	--- Baroness Vashj
 						["coord"] = { 57.6, 92, MALDRAXXUS },
 						["questID"] = 65039,
+						["isWeekly"] = true,
 						["g"] = {
 							i(187662, {	-- Strange Goop
 								["description"] = "To start the questline fish up this item from around Hirukon spawn point.",

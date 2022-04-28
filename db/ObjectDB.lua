@@ -2811,6 +2811,7 @@ _.ObjectIcons = {
 	[245345] = "Interface/Worldmap/TreasureChest_64Grey",
 	[245479] = "Interface/Icons/INV_Box_01",
 	[245688] = "Interface/Icons/inv_misc_bowl_01",
+	[245793] = "Interface/Icons/inv_offhand_1h_draenorcrafted_d_02a",
 	[245996] = "Interface/Worldmap/TreasureChest_64Grey",
 	[246147] = "Interface/Worldmap/TreasureChest_64Grey",
 	[246249] = "Interface/Worldmap/TreasureChest_64Grey",

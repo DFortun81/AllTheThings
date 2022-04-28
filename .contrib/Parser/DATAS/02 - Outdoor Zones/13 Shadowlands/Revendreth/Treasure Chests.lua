@@ -615,6 +615,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			o_repeated({
 			-- Rewards
 				i(182716),	-- Messenger's Satchel
+				-- TODO: getting likely that the Cap/Grips are from any satchel, just stupid drop rate
+				-- i(182722),	-- Mail Courier's Cap
+				-- i(182721),	-- Mail Courier's Grips
 			-- Objects
 				o(354108, {	-- Stoneborn Satchel
 					["questID"] = 60938,
@@ -634,6 +637,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["isDaily"] = true,
 					["coord"] = { 80.4, 70.8, REVENDRETH },
 					["g"] = {
+						i(182722),	-- Mail Courier's Cap
 						i(182721),	-- Mail Courier's Grips
 					},
 				}),
