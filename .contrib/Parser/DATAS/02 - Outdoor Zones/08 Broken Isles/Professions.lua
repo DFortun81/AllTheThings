@@ -1861,6 +1861,7 @@ _.Zones =
 						["sourceQuests"] = {
 							40415,	-- Well Spent Time
 							40210,	-- Time Well Spent
+							42079,	-- Masquerade
 						},
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
