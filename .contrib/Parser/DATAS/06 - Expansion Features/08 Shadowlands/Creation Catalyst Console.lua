@@ -753,7 +753,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(ARMOR, {
-			n(-1001, {	-- LFR (Alt)
+			n(-1006, {	-- LFR (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6896 }, {
 					cl(DEATHKNIGHT, {
@@ -890,7 +890,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			}),
-			n(-1002, {	-- Normal (Alt)
+			n(-1007, {	-- Normal (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 8107 }, {
 					cl(DEATHKNIGHT, {
@@ -1027,7 +1027,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			}),
-			n(-1003, {	-- Heroic (Alt)
+			n(-1008, {	-- Heroic (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
@@ -1164,7 +1164,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			}),
-			n(-1004, {	-- Mythic (Alt)
+			n(-1009, {	-- Mythic (Alt)
 				["description"] = "This is theorized to be available from Mythic+ gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6897 }, {
 					cl(DEATHKNIGHT, {
@@ -1301,7 +1301,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			}),
-			pvp(n(-1005, {	--Gladiator Alternative
+			pvp(n(-1010, {	--Gladiator Alternative
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6894 }, {
 					cl(DEATHKNIGHT, {
@@ -1438,7 +1438,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			})),
-			pvp(n(-1006, {	-- Elite Alternative
+			pvp(n(-1011, {	-- Elite Alternative
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6895 }, {
 					cl(DEATHKNIGHT, {

@@ -1297,13 +1297,18 @@ app.L = {
 		--
 	-- Sets
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
+		-- Taken
+		--[-1002] = 3528288,																	-- Dutiful Spirit
+		--[-1003] = 3528296,																	-- Martial Spirit
+		--[-1004] = 3528312,																	-- Prideful Spirit
+		--[-1005] = 3528280,																	-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
-		[-1001] = app.asset("Difficulty_LFR"),
-		[-1002] = app.asset("Difficulty_Normal"),
-		[-1003] = app.asset("Difficulty_Heroic"),
-		[-1004] = app.asset("Difficulty_Mythic"),
-		[-1005] = "Interface\\Worldmap\\GlowSkull_64Purple",
-		[-1006] = "Interface\\Worldmap\\GlowSkull_64Red",
+		[-1006] = app.asset("Difficulty_LFR"),
+		[-1007] = app.asset("Difficulty_Normal"),
+		[-1008] = app.asset("Difficulty_Heroic"),
+		[-1009] = app.asset("Difficulty_Mythic"),
+		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
+		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1840,13 +1845,17 @@ app.L = {
 		[-988] = select(2, GetAchievementInfo(15402)),							-- Cypher of the First Ones
 	-- Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
+		--[-1002] = "Dutiful Spirit",												-- Dutiful Spirit
+		--[-1003] = "Martial Spirit",												-- Martial Spirit
+		--[-1004] = "Prideful Spirit",												-- Prideful Spirit
+		--[-1005] = "Untamed Spirit",												-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
-		[-1001] = "Looking For Raid Alternative",
-		[-1002] = "Normal Alternative",
-		[-1003] = "Heroic Alternative",
-		[-1004] = "Mythic Alternative",
-		[-1005] = "Gladiator Alternative",
-		[-1006] = "Elite Alternative",
+		[-1006] = "Looking For Raid Alternative",
+		[-1007] = "Normal Alternative",
+		[-1008] = "Heroic Alternative",
+		[-1009] = "Mythic Alternative",
+		[-1010] = "Gladiator Alternative",
+		[-1011] = "Elite Alternative",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
