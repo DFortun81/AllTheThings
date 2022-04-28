@@ -243,19 +243,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14730, {	-- To All The Squirrels I Set Sail to See
-					["collectible"] = false,
-					["g"] = {
-						crit(3, {	-- Fluttering Softwing
-							["crs"] = { 126546 },	-- Fluttering Softwing
-							["coord"] = { 84.76, 77.74, TIRAGARDE_SOUND },
-						}),
-						crit(5, {	-- Tiragarde Gull
-							["crs"] = { 126519 },	-- Tiragarde Gull
-							["coord"] = { 77.72, 47.90, TIRAGARDE_SOUND },
-						}),
-					},
-				}),
 				pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]
