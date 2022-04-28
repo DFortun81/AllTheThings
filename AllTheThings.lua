@@ -4238,19 +4238,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- Create a list of sources
+	-- app.PrintDebug("SourceLocations?",topLevelSearch,app.Settings:GetTooltipSetting("SourceLocations"),paramA,app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))
 	if topLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
-		local temp, text = {};
+		local temp, text, parent = {};
 		local unfiltered, uTexture = {};
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local abbrevs = L["ABBREVIATIONS"];
 		for _,j in ipairs(group.g or group) do
-			if j.parent and not j.parent.hideText and j.parent.parent
+			parent = j.parent;
+			-- app.PrintDebug("SourceLine?",parent and parent.hash,parent and parent.hideText,parent and parent.parent,app.IsComplete(j),app.HasCost(j, paramA, paramB))
+			if parent and not parent.hideText and parent.parent
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
 				then
-				text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+				text = BuildSourceText(paramA ~= "itemID" and parent or j, paramA ~= "itemID" and 1 or 0);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source, replacement);
@@ -4263,7 +4266,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
-						uTexture = GetUnobtainableTexture(j.u or app.RecursiveFirstParentWithField(j.parent, "u"));
+						uTexture = GetUnobtainableTexture(j.u or app.RecursiveFirstParentWithField(parent, "u"));
 						-- add the texture to the source line
 						if uTexture then
 							text = text .. " |T" .. uTexture .. ":0|t";
