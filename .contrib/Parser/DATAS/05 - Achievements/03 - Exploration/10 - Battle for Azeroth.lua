@@ -1543,19 +1543,54 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14730, {	-- To All The Squirrels I Set Sail to See
-			-- TODO map/coord/crs here instead of individual zone files
-			crit(1),	-- Honey Bee
-			crit(2),	-- Olivewing
-			crit(3),	-- Fluttering Softwing
-			crit(4),	-- Drustbat
-			crit(5),	-- Tiragarde Gull
-			crit(6),	-- Bramble Hare
-			crit(7),	-- Jungle Gulper
-			crit(8),	-- Crested Gekkota
-			crit(9),	-- Nazmani Weevil
-			crit(10),	-- Bloodfever Tarantula
-			crit(11),	-- Temple Beetle
-			crit(12),	-- Vale Flutterby
+			crit(1, {	-- Honey Bee
+				["crs"] = { 131376 },	-- Honey Bee
+				["coord"] = { 45.87, 62.73, STORMSONG_VALLEY },
+			}),
+			crit(2, {	-- Olivewing
+				["crs"] = { 143220 },	-- Olivewing
+				["coord"] = { 25.83, 70.26, STORMSONG_VALLEY },
+			}),
+			crit(3, {	-- Fluttering Softwing
+				["crs"] = { 126546 },	-- Fluttering Softwing
+				["coord"] = { 84.76, 77.74, TIRAGARDE_SOUND },
+			}),
+			crit(4, {	-- Drustbat
+				["crs"] = { 129791 },	-- Drustbat
+				["coord"] = { 53.09, 30.50, DRUSTVAR  },
+			}),
+			crit(5, {	-- Tiragarde Gull
+				["crs"] = { 126519 },	-- Tiragarde Gull
+				["coord"] = { 77.72, 47.90, TIRAGARDE_SOUND },
+			}),
+			crit(6, {	-- Bramble Hare
+				["crs"] = { 128798 },	-- Bramble Hare
+				["coord"] = { 59.81, 21.85, DRUSTVAR  },
+			}),
+			crit(7, {	-- Jungle Gulper
+				["crs"] = { 130445 },	-- Jungle Gulper
+				["coord"] = { 62.72, 16.52, ZULDAZAR },
+			}),
+			crit(8, {	-- Crested Gekkota
+				["crs"] = { 130716 },	-- Crested Gekkota
+				["coord"] = { 67.11, 41.89, ZULDAZAR },
+			}),
+			crit(9, {	-- Nazmani Weevil
+				["crs"] = { 130217 },	-- Nazmani Weevil
+				["coord"] = { 48.01, 69.10, NAZMIR },
+			}),
+			crit(10, {	-- Bloodfever Tarantula
+				["crs"] = { 131017 },	-- Bloodfever Tarantula
+				["coord"] = { 30.30, 66.91, NAZMIR },
+			}),
+			crit(11, {	-- Temple Beetle
+				["crs"] = { 130441 },	-- Temple Beetle
+				["coord"] = { 43.53, 36.77, DAZARALOR }
+			}),
+			crit(12, {	-- Vale Flutterby
+				["crs"] = { 134700 },	-- Vale Flutterby
+				["coord"] = { 52.75, 83.73, VOLDUN },
+			}),			
 		}),
 		ach(13635, {	-- Tour of the Depths
 			crit(1),	-- Complete an Emissary for your ally in Nazjatar
