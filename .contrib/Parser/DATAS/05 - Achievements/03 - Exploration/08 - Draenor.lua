@@ -150,15 +150,44 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(14),		-- Zeth'Gol
 		}),
 		ach(9400, {		-- Gorgrond Monster Hunter
-			crit(1),		-- Biolante
-			crit(2),		-- Roardan the Sky Terror
-			crit(3),		-- Crater Lord Igneous
-			crit(4),		-- Dessicus of the Dead Pools
-			crit(5),		-- Khargax the Devourer
-			crit(6),		-- Erosian the Violent
-			crit(7),		-- Charl Doomwing
-			crit(8),		-- Fungal Praetorian
-		}),
+			crit(1, {	-- Biolante
+				["crs"] = { 75207 },	-- Biolante
+				["coord"] = { 62.8, 54.0 , GORGROND },
+			}),
+			crit(2, {	-- Roardan the Sky Terror
+				["crs"] = { 77093 },	-- Roardan the Sky Terror
+				["coords"] = {
+					{ 51.2, 65.6, GORGROND },
+					{ 60.8, 66.4, GORGROND },
+					{ 61.6, 61.8, GORGROND },
+				},
+			}),
+			crit(3, {	-- Crater Lord Igneous
+				["crs"] = { 81528 },	-- Crater Lord Igneous
+				["coord"] = { 43.6, 59.6, GORGROND },
+			}),
+			crit(4, {	-- Dessicus of the Dead Pools
+				["crs"] = { 81529 },	-- Dessicus of the Dead Pools
+				["coord"] = { 38.8, 51.2, GORGROND },
+			}),
+			crit(5, {	-- Khargax the Devourer
+				["crs"] = { 81537 },	-- Khargax the Devourer
+				["coord"] = { 53.0, 66.6, GORGROND },
+			}),
+			crit(6, {	-- Erosian the Violent
+				["crs"] = { 81540 },	-- Erosian the Violent
+				["coord"] = { 51.8, 41.6, GORGROND },
+			}),
+			crit(7, {	-- Charl Doomwing
+				["crs"] = { 81548 },	-- Charl Doomwing
+				["coord"] = { 46.0, 46.8, GORGROND },
+			}),
+			crit(8, {	-- Fungal Praetorian
+				["crs"] = { 80785 },	-- Fungal Praetorian
+				["coord"] = { 58.0, 63.6, GORGROND },
+			}),
+		
+		}),	
 		ach(9728, {		-- Grand Treasure Hunter
 			ach(10348),		-- Master Treasure Hunter
 			ach(9727),		-- Expert Treasure Hunter
