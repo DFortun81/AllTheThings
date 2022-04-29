@@ -602,12 +602,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(2575),	-- Red Linen Shirt
 					},
 				}),
-				q(184, {	-- Furlbrow's Deed
-					["model"] = 243448,
-					["coord"] = { 24.7, 95.2, ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 203734 },	-- Westfall Deed
-				}),
 				q(35, {	-- Further Concerns
 					["provider"] = { "n", 240 },	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },

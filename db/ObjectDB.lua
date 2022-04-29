@@ -4,6 +4,9 @@
 local _ = select(2, ...);
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
+	[34] = "Old Jug",
+	[35] = "Captain's Footlocker",
+	[36] = "Broken Barrel",
 	[47] = "Wanted: Lieutenant Fangore",
 	[55] = "A half-eaten body",
 	[56] = "Rolf's corpse",
@@ -2261,6 +2264,7 @@ _.ObjectNames = {
 };
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
+	[34] = "Interface/Icons/INV_Drink_11",
 	[55] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
 	[56] = "Interface/Icons/INV_Misc_Bone_HumanSkull_01",
 	[61] = "Interface/Icons/Achievement_BG_Xkills_AVgraveyard",

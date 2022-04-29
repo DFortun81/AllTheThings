@@ -4,32 +4,21 @@ q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest 
 q(5),	-- Jitters' Growling Gut,		TBC: Jitters' Growling Gut,		CLASSIC: Jitters' Growling Gut
 q(6),	-- Bounty on Garrick Padfoot,		TBC: Bounty on Garrick Padfoot,		CLASSIC: Bounty on Garrick Padfoot
 q(7),	-- [DEPRECATED] Kobold Camp Cleanup,		TBC: Kobold Camp Cleanup,		CLASSIC: Kobold Camp Cleanup
-q(12),	-- The People's Militia,		TBC: The People's Militia,		CLASSIC: The People's Militia
-q(13),	-- The People's Militia,		TBC: The People's Militia,		CLASSIC: The People's Militia
 q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
 q(17),	-- Uldaman Reagent Run,		TBC: Uldaman Reagent Run,		CLASSIC: Uldaman Reagent Run
 q(18),	-- Brotherhood of Thieves,		TBC: Brotherhood of Thieves,		CLASSIC: Brotherhood of Thieves
 q(21),	-- [DEPRECATED] Skirmish at Echo Ridge,		TBC: Skirmish at Echo Ridge,		CLASSIC: Skirmish at Echo Ridge
-q(22),	-- Goretusk Liver Pie,		TBC: Goretusk Liver Pie,		CLASSIC: Goretusk Liver Pie
 q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
 q(27),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
 q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(33),	-- [DEPRECATED] Wolves Across the Border,		TBC: Wolves Across the Border,		CLASSIC: Wolves Across the Border
-q(36),	-- Westfall Stew,		TBC: Westfall Stew,		CLASSIC: Westfall Stew
-q(38),	-- Westfall Stew,		TBC: Westfall Stew,		CLASSIC: Westfall Stew
 q(39),	-- Deliver Thomas' Report,		TBC: Deliver Thomas' Report,		CLASSIC: Deliver Thomas' Report
-q(48),	-- Sweet Amber,		TBC: Sweet Amber,		CLASSIC: Sweet Amber
-q(49),	-- Sweet Amber,		TBC: Sweet Amber,		CLASSIC: Sweet Amber
-q(50),	-- Sweet Amber,		TBC: Sweet Amber,		CLASSIC: Sweet Amber
-q(51),	-- Sweet Amber,		TBC: Sweet Amber,		CLASSIC: Sweet Amber
 q(56),	-- The Night Watch,		TBC: The Night Watch,		CLASSIC: The Night Watch
 q(57),	-- The Night Watch,		TBC: The Night Watch,		CLASSIC: The Night Watch
 q(61),	-- Shipment to Stormwind,		TBC: Shipment to Stormwind,		CLASSIC: Shipment to Stormwind
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(64),	-- The Forgotten Heirloom,		TBC: The Forgotten Heirloom,		CLASSIC: The Forgotten Heirloom
-q(65),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
 q(66),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(67),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(68),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
@@ -48,26 +37,13 @@ q(95),	-- Sven's Revenge,		TBC: Sven's Revenge,		CLASSIC: Sven's Revenge
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(97),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(102),	-- Patrolling Westfall,		TBC: Patrolling Westfall,		CLASSIC: Patrolling Westfall
-q(103),	-- Keeper of the Flame,		TBC: Keeper of the Flame,		CLASSIC: Keeper of the Flame
-q(104),	-- The Coastal Menace,		TBC: The Coastal Menace,		CLASSIC: The Coastal Menace
 q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
 q(133),	-- Ghoulish Effigy,		TBC: Ghoulish Effigy,		CLASSIC: Ghoulish Effigy
 q(134),	-- Ogre Thieves,		TBC: Ogre Thieves,		CLASSIC: Ogre Thieves
-q(135),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
-q(136),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treasure,		CLASSIC: Captain Sander's Hidden Treasure
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(138),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treasure,		CLASSIC: Captain Sander's Hidden Treasure
-q(139),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treasure,		CLASSIC: Captain Sander's Hidden Treasure
-q(140),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treasure,		CLASSIC: Captain Sander's Hidden Treasure
-q(141),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
-q(142),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
 q(148),	-- Supplies from Darkshire,		TBC: Supplies from Darkshire,		CLASSIC: Supplies from Darkshire
 q(149),	-- Ghost Hair Thread,		TBC: Ghost Hair Thread,		CLASSIC: Ghost Hair Thread
-q(151),	-- Poor Old Blanchy,		TBC: Poor Old Blanchy,		CLASSIC: Poor Old Blanchy
-q(152),	-- The Coast Isn't Clear,		TBC: The Coast Isn't Clear,		CLASSIC: The Coast Isn't Clear
 q(154),	-- Return the Comb,		TBC: Return the Comb,		CLASSIC: Return the Comb
-q(155),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
 q(156),	-- Gather Rot Blossoms,		TBC: Gather Rot Blossoms,		CLASSIC: Gather Rot Blossoms
 q(157),	-- Deliver the Thread,		TBC: Deliver the Thread,		CLASSIC: Deliver the Thread
 q(158),	-- Zombie Juice,		TBC: Zombie Juice,		CLASSIC: Zombie Juice
@@ -322,7 +298,6 @@ q(1057),	-- Reclaiming the Charred Vale,		TBC: Reclaiming the Charred Vale,		CLA
 q(1061),	-- The Spirits of Stonetalon,		TBC: The Spirits of Stonetalon,		CLASSIC: The Spirits of Stonetalon
 q(1073),	-- Ineptitude + Chemicals = Fun,		TBC: Ineptitude + Chemicals = Fun,		CLASSIC: Ineptitude + Chemicals = Fun
 q(1074),	-- Ineptitude + Chemicals = Fun,		TBC: Ineptitude + Chemicals = Fun,		CLASSIC: Ineptitude + Chemicals = Fun
-q(1076),	-- Devils in Westfall,		TBC: Devils in Westfall,		CLASSIC: Devils in Westfall
 q(1077),	-- Special Delivery for Gaxim,		TBC: Special Delivery for Gaxim,		CLASSIC: Special Delivery for Gaxim
 q(1082),	-- Update for Sentinel Thenysil,		TBC: Update for Sentinel Thenysil,		CLASSIC: Update for Sentinel Thenysil
 q(1084),	-- Wounded Ancients,		TBC: Wounded Ancients,		CLASSIC: Wounded Ancients
@@ -471,9 +446,6 @@ q(1644),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome
 q(1646),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1647),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1648),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1649),	-- The Tome of Valor,		TBC: The Tome of Valor,		CLASSIC: The Tome of Valor
-q(1650),	-- The Tome of Valor,		TBC: The Tome of Valor,		CLASSIC: The Tome of Valor
-q(1651),	-- The Tome of Valor,		TBC: The Tome of Valor,		CLASSIC: The Tome of Valor
 q(1659),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1660),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1661),	-- The Tome of Nobility,		TBC: The Tome of Nobility,		CLASSIC: The Tome of Nobility

@@ -1313,6 +1313,74 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1794, {	-- The Tome of Valor [Dwarf]
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.6, 6.4, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = { DWARF },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
+				q(1793, {	-- The Tome of Valor [Human]
+					["qg"] = 6171,	-- Duthorian Rall
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = { HUMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
+				q(1649, {	-- The Tome of Valor (1/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuests"] = {
+						1794,	-- The Tome of Valor [Dwarf]
+						1793,	-- The Tome of Valor [Human]
+					},
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["cost"] = {
+						{ "i", 6776, 1 },	-- Tome of Valor
+					},
+					["lvl"] = 20,
+				}),
+				q(1650, {	-- The Tome of Valor (2/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1649,	-- The Tome of Valor (1/4)
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1651, {	-- The Tome of Valor (3/4)
+					["qg"] = 6182,	-- Daphne Stilwell
+					["sourceQuest"] = 1650,	-- The Tome of Valor (2/4)
+					["coord"] = { 42.4, 88.4, WESTFALL },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1652, {	-- The Tome of Valor (4/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1651,	-- The Tome of Valor (3/4)
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+					["groups"] = {
+						-- #if BEFORE 4.0.3
+						recipe(5502),	-- Sense Undead
+						-- #endif
+						i(9607, {	-- Bastion of Stormwind
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(29158, {	-- The Zandalar Representative
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,

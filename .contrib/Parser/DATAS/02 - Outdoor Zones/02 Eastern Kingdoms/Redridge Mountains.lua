@@ -961,17 +961,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(132, {	-- The Defias Brotherhood (2/7)
-					["providers"] = {
-						{ "n", 266 },	-- Wiley the Black
-						{ "i", 1327 },	-- Wiley's Note
-					},
-					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
-					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-				}),
 				q(89, {	-- The Everstill Bridge
 					["qg"] = 341,	-- Foreman Oslow
 					["coord"] = { 32.2, 48.6, REDRIDGE_MOUNTAINS },
@@ -1628,6 +1617,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						568,	-- Shadowhide Warrior
 					},
 				}),
+				-- #if BEFORE 4.0.3
+				i(723, {	-- Goretusk Liver
+					["crs"] = {
+						345,	-- Bellygrub
+						547,	-- Great Goretusk
+					},
+				}),
+				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 712,	-- Redridge Thrasher

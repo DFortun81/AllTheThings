@@ -850,6 +850,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 910 },	-- Defias Enchanter
 				}),
+				i(2017, {	-- Glowing Leather Bracers
+					["u"] = REMOVED_FROM_GAME,
+					["cr"] = 785,	-- Skeletal Warder
+				}),
 				i(2227, {	-- Heavy Ogre War Axe
 					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 892 },	-- Splinter Fist Taskmaster
