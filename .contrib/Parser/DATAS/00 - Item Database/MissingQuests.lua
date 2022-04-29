@@ -3107,7 +3107,6 @@ q(44430),	-- Unused
 q(44491),	-- 7.0 Suramar Collapse Scenario - Run Once
 q(44494),	--
 q(44554),	-- Mythic Keystone Weekly Tracking Quest
-q(44556),	-- Return to Karazhan
 q(44616),	-- We'll Need Some Obliterum
 q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B
 q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)

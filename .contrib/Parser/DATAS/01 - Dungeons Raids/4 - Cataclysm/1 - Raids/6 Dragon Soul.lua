@@ -76,6 +76,13 @@ _.Instances = { tier(CATA_TIER, {
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30108,	-- Our Man in Karazhan
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
+						["groups"] = {
+							objective(1, {	-- 0/1 Vial of Black Dragonsblood
+								["provider"] = { "i", 77954 },	-- Vial of Black Dragonsblood
+								["coord"] = { 54.0, 91.4, DEADWIND_PASS },
+								["cr"] = 57910,	-- Nalice <Leader of the Blackwyrm Cult>
+							}),
+						},
 					}),
 					q(30107, {	-- Cluster Clutch
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
