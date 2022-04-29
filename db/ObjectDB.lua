@@ -4,8 +4,10 @@
 local _ = select(2, ...);
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
+	[47] = "Wanted: Lieutenant Fangore",
 	[55] = "A half-eaten body",
 	[56] = "Rolf's corpse",
+	[60] = "Wanted: Gath'Ilzogg",
 	[61] = "A Weathered Grave",
 	[256] = "Wanted!",
 	[259] = "Half-buried Barrel",

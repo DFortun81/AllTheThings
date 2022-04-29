@@ -1554,13 +1554,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
-				q(1698, {	-- Yorus Barleybrew
-					["provider"] = { "n", 5479 },	-- Wu Shen
-					["classes"] = { WARRIOR },
-					["coord"] = { 78.8, 45.4, STORMWIND_CITY },
-					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(397, {	-- You Have Served Us Well
 					["sourceQuests"] = { 336 },	-- A Noble Brew
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw

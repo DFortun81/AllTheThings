@@ -9,7 +9,6 @@ q(13),	-- The People's Militia,		TBC: The People's Militia,		CLASSIC: The People
 q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
 q(17),	-- Uldaman Reagent Run,		TBC: Uldaman Reagent Run,		CLASSIC: Uldaman Reagent Run
 q(18),	-- Brotherhood of Thieves,		TBC: Brotherhood of Thieves,		CLASSIC: Brotherhood of Thieves
-q(20),	-- Blackrock Menace,		TBC: Blackrock Menace,		CLASSIC: Blackrock Menace
 q(21),	-- [DEPRECATED] Skirmish at Echo Ridge,		TBC: Skirmish at Echo Ridge,		CLASSIC: Skirmish at Echo Ridge
 q(22),	-- Goretusk Liver Pie,		TBC: Goretusk Liver Pie,		CLASSIC: Goretusk Liver Pie
 q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
@@ -18,7 +17,6 @@ q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lak
 q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(33),	-- [DEPRECATED] Wolves Across the Border,		TBC: Wolves Across the Border,		CLASSIC: Wolves Across the Border
-q(34),	-- An Unwelcome Guest,		TBC: An Unwelcome Guest,		CLASSIC: An Unwelcome Guest
 q(36),	-- Westfall Stew,		TBC: Westfall Stew,		CLASSIC: Westfall Stew
 q(38),	-- Westfall Stew,		TBC: Westfall Stew,		CLASSIC: Westfall Stew
 q(39),	-- Deliver Thomas' Report,		TBC: Deliver Thomas' Report,		CLASSIC: Deliver Thomas' Report
@@ -45,10 +43,7 @@ q(78),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Lege
 q(79),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(80),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(90),	-- Seasoned Wolf Kabobs,		TBC: Seasoned Wolf Kabobs,		CLASSIC: Seasoned Wolf Kabobs
-q(91),	-- Solomon's Law,		TBC: Solomon's Law,		CLASSIC: Solomon's Law
-q(92),	-- Redridge Goulash,		TBC: Redridge Goulash,		CLASSIC: Redridge Goulash
 q(93),	-- Dusky Crab Cakes,		TBC: Dusky Crab Cakes,		CLASSIC: Dusky Crab Cakes
-q(94),	-- A Watchful Eye,		TBC: A Watchful Eye,		CLASSIC: A Watchful Eye
 q(95),	-- Sven's Revenge,		TBC: Sven's Revenge,		CLASSIC: Sven's Revenge
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(97),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
@@ -57,19 +52,6 @@ q(102),	-- Patrolling Westfall,		TBC: Patrolling Westfall,		CLASSIC: Patrolling 
 q(103),	-- Keeper of the Flame,		TBC: Keeper of the Flame,		CLASSIC: Keeper of the Flame
 q(104),	-- The Coastal Menace,		TBC: The Coastal Menace,		CLASSIC: The Coastal Menace
 q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
-q(115),	-- Shadow Magic,		TBC: Shadow Magic,		CLASSIC: Shadow Magic
-q(118),	-- The Price of Shoes,		TBC: The Price of Shoes,		CLASSIC: The Price of Shoes
-q(119),	-- Return to Verner,		TBC: Return to Verner,		CLASSIC: Return to Verner
-q(120),	-- Messenger to Stormwind,		TBC: Messenger to Stormwind,		CLASSIC: Messenger to Stormwind
-q(121),	-- Messenger to Stormwind,		TBC: Messenger to Stormwind,		CLASSIC: Messenger to Stormwind
-q(124),	-- A Baying of Gnolls,		TBC: A Baying of Gnolls,		CLASSIC: A Baying of Gnolls
-q(125),	-- The Lost Tools,		TBC: The Lost Tools,		CLASSIC: The Lost Tools
-q(127),	-- Selling Fish,		TBC: Selling Fish,		CLASSIC: Selling Fish
-q(128),	-- Blackrock Bounty,		TBC: Blackrock Bounty,		CLASSIC: Blackrock Bounty
-q(129),	-- A Free Lunch,		TBC: A Free Lunch,		CLASSIC: A Free Lunch
-q(130),	-- Visit the Herbalist,		TBC: Visit the Herbalist,		CLASSIC: Visit the Herbalist
-q(131),	-- Delivering Daffodils,		TBC: Delivering Daffodils,		CLASSIC: Delivering Daffodils
-q(132),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
 q(133),	-- Ghoulish Effigy,		TBC: Ghoulish Effigy,		CLASSIC: Ghoulish Effigy
 q(134),	-- Ogre Thieves,		TBC: Ogre Thieves,		CLASSIC: Ogre Thieves
 q(135),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
@@ -80,10 +62,6 @@ q(139),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treas
 q(140),	-- Captain Sanders' Hidden Treasure,		TBC: Captain Sander's Hidden Treasure,		CLASSIC: Captain Sander's Hidden Treasure
 q(141),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
 q(142),	-- The Defias Brotherhood,		TBC: The Defias Brotherhood,		CLASSIC: The Defias Brotherhood
-q(143),	-- Messenger to Westfall,		TBC: Messenger to Westfall,		CLASSIC: Messenger to Westfall
-q(144),	-- Messenger to Westfall,		TBC: Messenger to Westfall,		CLASSIC: Messenger to Westfall
-q(145),	-- Messenger to Darkshire,		TBC: Messenger to Darkshire,		CLASSIC: Messenger to Darkshire
-q(146),	-- Messenger to Darkshire,		TBC: Messenger to Darkshire,		CLASSIC: Messenger to Darkshire
 q(148),	-- Supplies from Darkshire,		TBC: Supplies from Darkshire,		CLASSIC: Supplies from Darkshire
 q(149),	-- Ghost Hair Thread,		TBC: Ghost Hair Thread,		CLASSIC: Ghost Hair Thread
 q(151),	-- Poor Old Blanchy,		TBC: Poor Old Blanchy,		CLASSIC: Poor Old Blanchy
@@ -99,15 +77,12 @@ q(161),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Thre
 q(163),	-- Raven Hill,		TBC: Raven Hill,		CLASSIC: Raven Hill
 q(164),	-- Deliveries to Sven,		TBC: Deliveries to Sven,		CLASSIC: Deliveries to Sven
 q(165),	-- The Hermit,		TBC: The Hermit,		CLASSIC: The Hermit
-q(169),	-- Wanted: Gath'Ilzogg,		TBC: Wanted: Gath'Ilzogg,		CLASSIC: Wanted: Gath'Ilzogg
 q(170),	-- A New Threat,		TBC: A New Threat,		CLASSIC: A New Threat
 q(173),	-- Worgen in the Woods,		TBC: Worgen in the Woods,		CLASSIC: Worgen in the Woods
 q(174),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
 q(175),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
 q(177),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
-q(178),	-- Theocritus' Retrieval,		TBC: Theocritus' Retrieval,		CLASSIC: Theocritus' Retrieval
 q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
-q(180),	-- Wanted: Lieutenant Fangore,		TBC: Wanted: Lieutenant Fangore,		CLASSIC: Wanted: Lieutenant Fangore
 q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
 q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
 q(199),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
@@ -134,8 +109,6 @@ q(237),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,
 q(240),	-- Return to Jitters,		TBC: Return to Jitters,		CLASSIC: Return to Jitters
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(244),	-- Encroaching Gnolls,		TBC: Encroaching Gnolls,		CLASSIC: Encroaching Gnolls
-q(246),	-- Assessing the Threat,		TBC: Assessing the Threat,		CLASSIC: Assessing the Threat
-q(248),	-- Looking Further,		TBC: Looking Further,		CLASSIC: Looking Further
 q(250),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(251),	-- [DEPRECATED]Translate Abercrombie's Note,		TBC: Translate Abercrombie's Note,		CLASSIC: Translate Abercrombie's Note
 q(252),	-- Translation to Ello,		TBC: Translation to Ello,		CLASSIC: Translation to Ello
@@ -184,7 +157,6 @@ q(337),	-- An Old History Book,		TBC: An Old History Book,		CLASSIC: An Old Hist
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
 q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
 q(345),	-- Ink Supplies,		TBC: Ink Supplies,		CLASSIC: Ink Supplies
-q(347),	-- Rethban Ore,		TBC: Rethban Ore,		CLASSIC: Rethban Ore
 q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(363),	-- Rude Awakening,		TBC: Rude Awakening,		CLASSIC: Rude Awakening
@@ -1233,7 +1205,6 @@ q(10292),	-- More Power!,		TBC: More Power!
 q(10352),	-- A Donation of Wool,		TBC: A Donation of Wool
 q(10354),	-- A Donation of Silk,		TBC: A Donation of Silk
 q(10364),	-- Caedmos,		TBC: Caedmos
-q(10371),	-- Yorus Barleybrew,		TBC: Yorus Barleybrew
 q(10373),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!
 q(10374),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!
 q(10376),	-- Symbol of Hope
