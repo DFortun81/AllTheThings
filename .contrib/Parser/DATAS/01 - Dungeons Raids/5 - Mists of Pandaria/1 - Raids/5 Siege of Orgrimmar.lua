@@ -3683,9 +3683,14 @@ root("Instances", tier(MOP_TIER, {
 }));
 
 root("HiddenQuestTriggers", {
-	q(33345),	-- Dark Shaman Weekly Attempt
-	q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
-	q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
+	tier(MOP_TIER, {
+		q(33345),	-- Dark Shaman Weekly Attempt
+		q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
+	}),	
+	tier(LEGION_TIER, {
+		q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
+		q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
+	}),
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

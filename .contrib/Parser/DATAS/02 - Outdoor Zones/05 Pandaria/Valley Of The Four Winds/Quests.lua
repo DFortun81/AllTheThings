@@ -1142,9 +1142,6 @@ _.Zones =
 					["coord"] = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
 					["provider"] = { "n", 57198 },	-- Guard Captain Oakenshield
 				}),
-				q(33139, {	-- Secrets Lost, Forever?
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(30057, {	-- Seeing Orange
 					["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
 					["coord"] = { 41.3, 38.2, VALLEY_OF_THE_FOUR_WINDS },
