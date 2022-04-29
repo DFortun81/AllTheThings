@@ -10290,6 +10290,7 @@ end
 -- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
 -- upgrade levels into the respective upgrade tokens
 app.CacheHeirlooms = function()
+	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
 	if #heirloomIDs < 1 then return; end
 
 	-- setup the armor tokens which will contain the upgrades for the heirlooms
