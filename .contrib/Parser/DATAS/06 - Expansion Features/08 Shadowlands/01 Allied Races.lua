@@ -148,7 +148,8 @@ root("ExpansionFeatures", tier(SL_TIER, {
 							i(184922, {	-- Arsenal: Dark Iron Armaments
 								i(191631),	-- Lavaforge Bulwark
 								i(191626),	-- Lavaforge Hacker
-								i(191625),	-- Lavaforge Monolith
+								i(191625),	-- Lavaforge Monolith (staff)
+								i(192456),	-- Lavaforge Monolith (mace)
 							}),
 						},
 					}),
