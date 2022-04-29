@@ -3791,6 +3791,7 @@ app.TooltipSourceFields = {
 	"questID"
 };
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
+	-- app.PrintDebug("GetCachedSearchResults",search,method,paramA,paramB,...)
 	if not search or search:find("%[]") then return; end
 	local cache = searchCache[search];
 	if cache then return cache; end
@@ -5830,7 +5831,7 @@ local function CanAttachTooltips()
 end
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if group then
-		-- app.PrintDebug("Tooltip lines before search results",group.hash)
+		-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
 		-- if app.DEBUG_PRINT then app.PrintTable(group.tooltipInfo) end
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo and #group.tooltipInfo > 0 then
@@ -6584,7 +6585,7 @@ function app.IsNPCQuestGiver(self, npcID)
 end
 
 local function AttachTooltip(self)
-	-- print("AttachTooltip-Processing",self.AllTheThingsProcessing);
+	-- app.PrintDebug("AttachTooltip-Processing",self.AllTheThingsProcessing);
 	local numLines = self:NumLines();
 	-- app.PrintDebug("AttachTooltip",numLines,"i:",self:GetItem(),"u:",self:GetUnit(),"s:",self:GetSpell())
 	if numLines < 1 then
@@ -6646,15 +6647,16 @@ local function AttachTooltip(self)
 			end
 		end
 
-		--[[--
+		--[[--]
 		-- Debug all of the available fields on the tooltip.
+		app.PrintDebug("Tooltip Data")
 		for i,j in pairs(self) do
-			self:AddDoubleLine(tostring(i), tostring(j));
+			app.PrintDebug(i,type(j),j);
 		end
-		self:Show();
-		self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
-		self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
-		self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
+		-- self:Show();
+		-- self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
+		-- self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
+		-- self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
 		--]]--
 
 		-- Does the tooltip have a target?
@@ -11068,6 +11070,7 @@ end)();
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
+local GetSpellLink, GetSpellInfo = GetSpellLink, GetSpellInfo;
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -11126,13 +11129,13 @@ local fields = {
 		return "questID";
 	end,
 	["text"] = function(t)
-		return select(1, GetSpellLink(t.spellID));
+		return t.link;
 	end,
 	["icon"] = function(t)
 		return select(3, GetSpellInfo(t.spellID));
 	end,
 	["link"] = function(t)
-		return "quest:" .. t.questID;
+		return select(1, GetSpellLink(t.spellID));
 	end,
 	["description"] = function(t)
 		if t.crs and #t.crs > 0 then
@@ -14320,7 +14323,7 @@ function app:CreateMiniListForGroup(group)
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
 	if group.questID or group.sourceQuests then popout = nil; end
-	-- print("Popout for",suffix,"showing?",showing)
+	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
 	if not popout then
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
@@ -15383,7 +15386,9 @@ RowOnEnter = function (self)
 		end
 
 		-- Determine search results to add if nothing was added from being searched
-		if doSearch then
+		-- AttachComplete will be true or false if ATT has processed the tooltip/search results already
+		-- nil means no search results were determined, so we can manually add it below
+		if doSearch or GameTooltip.AttachComplete == nil then
 			if reference.creatureID or reference.encounterID or reference.objectID then
 				-- rows with these fields should not include the extra search info
 			elseif reference.currencyID then
@@ -16138,6 +16143,7 @@ RowOnEnter = function (self)
 
 		--[[ ROW DEBUGGING ]
 		GameTooltip:AddDoubleLine("Self",tostring(reference));
+		GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
 		GameTooltip:AddLine("-- Ref Fields:");
 		for key,val in pairs(reference) do
 			GameTooltip:AddDoubleLine(key,tostring(val));

@@ -370,6 +370,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								crit(29, {	-- Barrel O' Fish
+									["description"] = "Becomes available at max Shadowlands Fishing skill.",
 									["cost"] = {
 										{ "i", 173032, 5 },	-- 5 Lost Sole
 										{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
