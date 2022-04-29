@@ -681,9 +681,6 @@ q(3201),	-- At Last!,		TBC: At Last!,		CLASSIC: At Last!
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3364),	-- Scalding Mornbrew Delivery,		TBC: Scalding Mornbrew Delivery,		CLASSIC: Scalding Mornbrew Delivery
 q(3365),	-- Bring Back the Mug,		TBC: Bring Back the Mug,		CLASSIC: Bring Back the Mug
-q(3367),	-- Suntara Stones,		TBC: Suntara Stones,		CLASSIC: Suntara Stones
-q(3368),	-- Suntara Stones,		TBC: Suntara Stones,		CLASSIC: Suntara Stones
-q(3371),	-- Dwarven Justice,		TBC: Dwarven Justice,		CLASSIC: Dwarven Justice
 q(3372),	-- Release Them,		TBC: Release Them,		CLASSIC: Release Them
 q(3377),	-- Prayer to Elune,		TBC: Prayer to Elune,		CLASSIC: Prayer to Elune
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
