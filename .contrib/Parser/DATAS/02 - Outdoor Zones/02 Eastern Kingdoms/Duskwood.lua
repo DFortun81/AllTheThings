@@ -726,26 +726,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(VENDORS, {
-				n(844, {	-- Antonio Perelli <Traveling Salesman>
-					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
-					["races"] = ALLIANCE_ONLY,
-					["coords"] = {	-- probably has additional coordinates, but this is all that's listed on wowhead
-						{ 74.4, 41.2, DUSKWOOD },
-						{ 75.0, 46.4, DUSKWOOD },
-						{ 19.6, 60.6, DUSKWOOD },
-					},
-					["groups"] = {
-						i(4795, {	-- Bear Bracers
-							["isLimited"] = true,
-						}),
-						i(4796, {	-- Owl Bracers
-							["isLimited"] = true,
-						}),
-						i(4794, {	-- Wolf Bracers
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(228, {	-- Avette Fellwood <Bowyer>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.2, 44.8, DUSKWOOD },

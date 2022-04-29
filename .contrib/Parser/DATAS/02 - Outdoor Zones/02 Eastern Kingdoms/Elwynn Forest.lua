@@ -970,9 +970,40 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.",
+					-- #if AFTER CATA
+					["coords"] = {
+						{ 74.4, 41.2, DUSKWOOD },
+						{ 75.0, 46.4, DUSKWOOD },
+						{ 19.6, 60.6, DUSKWOOD },
+						{ 42.6, 66.6, ELWYNN_FOREST },
+						{ 75.0, 72.4, ELWYNN_FOREST },
+						{ 27.8, 43.6, REDRIDGE_MOUNTAINS },
+						{ 57.4, 52.2, WESTFALL },
+					},
+					-- #else
+					["coords"] = {
+						{ 19.6, 60.6, DUSKWOOD },
+						{ 50.8, 66.6, DUSKWOOD },
+						{ 75.0, 46.4, DUSKWOOD },
+						{ 42.6, 66.6, ELWYNN_FOREST },
+						{ 68.8, 71.6, ELWYNN_FOREST },
+						{ 75.0, 72.4, ELWYNN_FOREST },
+						{ 29.1, 47.4, REDRIDGE_MOUNTAINS },
+						{ 57.4, 52.2, WESTFALL },
+						{ 57.8, 65.0, WESTFALL },
+					},
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
 					["groups"] = {
+						-- #if BEFORE 4.0.3
+						i(4777, {	-- Ironwood Maul
+							["isLimited"] = true,
+						}),
+						i(4778, {	-- Heavy Spiked Mace
+							["isLimited"] = true,
+						}),
+						-- #endif
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
 						}),
@@ -982,6 +1013,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(4794, {	-- Wolf Bracers
 							["isLimited"] = true,
 						}),
+						-- #if BEFORE 4.0.3
+						i(4817, {	-- Blessed Claymore
+							["isLimited"] = true,
+						}),
+						i(4818, {	-- Executioner's Sword
+							["isLimited"] = true,
+						}),
+						-- #endif
 					},
 				}),
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>

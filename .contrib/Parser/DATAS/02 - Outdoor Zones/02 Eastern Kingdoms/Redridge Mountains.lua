@@ -578,21 +578,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(844, {	-- Antonio Perelli <Traveling Salesman>
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
-					["groups"] = {
-						i(4795, {	-- Bear Bracers
-							["isLimited"] = true,
-						}),
-						i(4796, {	-- Owl Bracers
-							["isLimited"] = true,
-						}),
-						i(4794, {	-- Wolf Bracers
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
 					["coord"] = { 78.8, 63.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
