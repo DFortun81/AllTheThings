@@ -1026,13 +1026,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(50361, {	-- Ornat
 					["coord"] = { 50.6, 60.6, BURNING_STEPPES },
 				}),
-				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(13254)),	-- Astral Guard
-						un(REMOVED_FROM_GAME, i(13248)),	-- Burstshot Harquebus
-					},
-				}),
 				n(50357, {	-- Sunwing
 					["coords"] = {
 						{ 8.4, 54.6, BURNING_STEPPES },
