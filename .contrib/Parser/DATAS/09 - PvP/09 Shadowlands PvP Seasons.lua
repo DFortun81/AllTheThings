@@ -849,7 +849,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0", "removed 9.2.5" } }, {
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(186944),	-- Cosmic Aspirant's Cape
@@ -1390,7 +1390,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { "added 9.2.5" } }, {
+	n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {
 		n(PVP_ELITE, {
 			filter(MOUNTS, {
 				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
