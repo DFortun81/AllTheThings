@@ -763,7 +763,7 @@ _.Zones =
 				}),
 				q(28031, {	-- Special Delivery for Brivelthwerp
 					["provider"] = { "n", 40726 },	-- Mazzer Stripscrew
-					["coord"] = { 78.8, 75.6, THOUSAND_NEEDLES },
+					["coord"] = { 78.12, 73.09, THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				}),
