@@ -410,9 +410,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(11, 1, 11),
 					["groups"] = {
 						objective(1, {	-- Night Elf Moon Crystal Deactivated
-							["cost"] = { { "i", 23191, 1 } },	-- Crystal Controlling Orb
-							["cr"] = 16333,	-- Sentinel Infiltrator
+							["provider"] = { "i", 23191 },	-- Crystal Controlling Orb
 							["coord"] = { 58, 65, GHOSTLANDS },
+							["cr"] = 16333,	-- Sentinel Infiltrator
 						}),
 						i(23400),	-- Sylastor's Cloak
 						i(23401),	-- Divining Crystal

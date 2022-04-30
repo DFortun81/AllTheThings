@@ -1594,7 +1594,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
 					["groups"] = {
-						objective(2, {	-- Gharsul the Remorseless slain
+						objective(1, {	-- Gharsul the Remorseless slain
 							["provider"] = { "n", 15958 },	-- Gharsul the Remorseless
 						}),
 					},
