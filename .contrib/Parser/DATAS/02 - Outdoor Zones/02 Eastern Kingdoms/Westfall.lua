@@ -262,7 +262,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						THE_BARRENS,
 						REDRIDGE_MOUNTAINS,
 						TIRISFAL_GLADES,
-						WESTFALL,
 					},
 					["cost"] = { { "i", 11109, 1 } },	-- Special Chicken Feed
 					["repeatable"] = true,
