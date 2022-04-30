@@ -40,7 +40,6 @@ q(233),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,
 q(234),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
 q(237),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(244),	-- Encroaching Gnolls,		TBC: Encroaching Gnolls,		CLASSIC: Encroaching Gnolls
 q(250),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(255),	-- [DEPRECATED]Mercenaries,		TBC: Mercenaries,		CLASSIC: Mercenaries
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -465,7 +464,6 @@ q(2258),	-- Badlands Reagent Run,		TBC: Badlands Reagent Run,		CLASSIC: Badlands
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
-q(2282),	-- Alther's Mill,		TBC: Alther's Mill,		CLASSIC: Alther's Mill
 q(2298),	-- Kingly Shakedown,		TBC: Kingly Shakedown,		CLASSIC: Kingly Shakedown
 q(2299),	-- To Hulfdan!,		TBC: To Hulfdan!,		CLASSIC: To Hulfdan!
 q(2300),	-- SI:7,		TBC: SI:7,		CLASSIC: SI:7
@@ -560,14 +558,11 @@ q(3117),	-- Etched Sigil,		TBC: Etched Sigil,		CLASSIC: Etched Sigil
 q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
 q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
 q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
-q(3181),	-- The Horn of the Beast,		TBC: The Horn of the Beast,		CLASSIC: The Horn of the Beast
 q(3182),	-- Proof of Deed,		TBC: Proof of Deed,		CLASSIC: Proof of Deed
 q(3201),	-- At Last!,		TBC: At Last!,		CLASSIC: At Last!
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3364),	-- Scalding Mornbrew Delivery,		TBC: Scalding Mornbrew Delivery,		CLASSIC: Scalding Mornbrew Delivery
 q(3365),	-- Bring Back the Mug,		TBC: Bring Back the Mug,		CLASSIC: Bring Back the Mug
-q(3372),	-- Release Them,		TBC: Release Them,		CLASSIC: Release Them
-q(3377),	-- Prayer to Elune,		TBC: Prayer to Elune,		CLASSIC: Prayer to Elune
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3384),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3401),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -598,7 +593,6 @@ q(3624),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3631),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(3661),	-- Favored of Elune?,		TBC: Favored of Elune?,		CLASSIC: Favored of Elune?
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3741),	-- Hilary's Necklace,		TBC: Hilary's Necklace,		CLASSIC: Hilary's Necklace
 q(3763),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3764),	-- Un'Goro Soil,		TBC: Un'Goro Soil,		CLASSIC: Un'Goro Soil
 q(3765),	-- The Corruption Abroad,		TBC: The Corruption Abroad,		CLASSIC: The Corruption Abroad
@@ -933,7 +927,6 @@ q(7652),	-- A Blue Light Bargain,		TBC: A Blue Light Bargain,		CLASSIC: A Blue L
 q(7670),	-- Lord Grayson Shadowbreaker,		TBC: Lord Grayson Shadowbreaker,		CLASSIC: Lord Grayson Shadowbreaker
 q(7681),	-- Hunter test quest,		TBC: Hunter test quest,		CLASSIC: Hunter test quest
 q(7682),	-- Hunter test quest2,		TBC: Hunter test quest2,		CLASSIC: Hunter test quest2
-q(7704),	-- Look at the Size of It!,		TBC: Look at the Size of It!,		CLASSIC: Look at the Size of It!
 q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>,		CLASSIC: Praise from the Emerald Circle <NYI> <TXT>
 q(7788),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(7789),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
@@ -2256,11 +2249,9 @@ q(40662),	-- Shattered Chosen
 q(40663),	-- Fiery Chosen
 q(40664),	-- Corrupted Chosen
 q(40685),	-- Into the Mouth of the Nether
-q(40687),	-- Destruction Chosen
 q(40689),	-- Reward: Deadwind Harvester
 q(40690),	-- Reward: Staff of Sargeras
 q(40691),	-- Reward: Skull of the Man'ari
-q(40698),	-- Purity of Form
 q(40699),	-- Credit - Scenario Complete
 q(40700),	-- Xalethar
 q(40707),	-- Shadow Chosen
@@ -2750,7 +2741,6 @@ q(43931),	--
 q(43940),	-- Holy Chosen
 q(43956),	-- Lysanis Shadesoul
 q(43967),	-- Unholy Chosen
-q(43981),	-- Affliction Chosen
 q(43983),	-- Destruction Chosen
 q(43990),	-- ZZZNOTUSEDZZZ
 q(43997),	-- Short-Supply Reward
@@ -2781,7 +2771,6 @@ q(44132),	-- Druids of the Scythe - 5
 q(44133),	-- Druids of the Scythe - 6
 q(44134),	-- DEPRECATED
 q(44141),	-- Tracking Quest
-q(44151),	-- Tracking Quest
 q(44173),	-- A Call to Battle
 q(44179),	-- Treasure
 q(44210),	-- The Might of Dalaran pt2
@@ -2805,10 +2794,8 @@ q(44362),	-- Tracking Quest: Lich King Conversation 04
 q(44372),	-- Protection Chosen
 q(44374),	-- Tracking Quest: Galen Betrayal
 q(44388),	-- Affliction Chosen
-q(44390),	-- Demonology Chosen
 q(44402),	-- Blood Chosen
 q(44403),	-- Frost Chosen
-q(44410),	-- Holy Chosen
 q(44430),	-- Unused
 q(44491),	-- 7.0 Suramar Collapse Scenario - Run Once
 q(44494),	--
@@ -3277,7 +3264,6 @@ q(49158),	--
 q(49162),	--
 q(49163),	--
 q(49164),	--
-q(49173),	--
 q(49189),	-- Intact Demon Eyes
 q(49190),	-- More Intact Demon Eyes
 q(49191),	-- Many More Intact Demon Eyes
@@ -4277,7 +4263,6 @@ q(54974),	--
 q(55093),	--
 q(55102),	--
 q(55104),	--
-q(55143),	--
 q(55149),	--
 q(55150),	--
 q(55151),	--
@@ -4351,7 +4336,6 @@ q(56333),	--
 8.2.0.30108
 8.2.0.30123
 8.2.0.30168
-q(56477),	--
 q(56478),	--
 q(56498),	--
 8.2.0.30170
@@ -4363,7 +4347,6 @@ q(56512),	--
 q(56513),	--
 q(56514),	--
 q(56524),	--
-q(56525),	--
 q(56531),	--
 q(56545),	--
 q(56546),	--
@@ -4393,7 +4376,6 @@ q(56704),	--
 q(56709),	--
 q(56717),	--
 q(56718),	--
-q(56720),	--
 q(56736),	--
 q(56738),	--
 q(56742),	--
@@ -4462,7 +4444,6 @@ q(57066),	--
 8.2.0.30774
 q(57139),	--
 q(57144),	--
-q(57145),	--
 q(57184),	--
 q(57193),	--
 q(57194),	--
