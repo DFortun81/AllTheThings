@@ -8,7 +8,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			["maps"] = { THE_WANDERING_ISLE },
 			["g"] = {
 				n(ARTIFACTS, {
-					--cl(MONK, BREWMASTER, {
+					cl(MONK, BREWMASTER, {
 						gt(254, {	-- Brewhouse
 							["description"] = "Click this once per day.",
 							["questID"] = 43974,
@@ -29,17 +29,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								i(140292),	-- Tumblerun Brew
 							},
 						}),
-					--}),
-					--cl(MONK, MISTWEAVER, {
+					}),
+					cl(MONK, MISTWEAVER, {
 						i(139562, {	-- Breath of the Undying Serpent
 							artifact(519),	-- Sheilun, Staff of the Mists
 						}),
-					--}),
-					--cl(MONK, WINDWALKER, {
+					}),
+					cl(MONK, WINDWALKER, {
 						i(139563, {	-- The Stormfist
 							artifact(527),	-- Fists of the Heavens
 						}),
-					--}),
+					}),
 				}),
 				n(QUESTS, {
 					-- Intro
@@ -69,7 +69,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
-					--cl(MONK, BREWMASTER, {
+					cl(MONK, BREWMASTER, {
 						q(42762, {	-- The Wanderer's Companion
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
@@ -119,8 +119,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(MONK, MISTWEAVER, {
+					}),
+					cl(MONK, MISTWEAVER, {
 						q(41003, {	-- The Emperor's Gift
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
@@ -136,8 +136,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(MONK, WINDWALKER, {
+					}),
+					cl(MONK, WINDWALKER, {
 						q(40569, {	-- The Legend of the Sands
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
@@ -171,7 +171,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
+					}),
 					q(44249, {	-- Inner Sanctuary
 						["sourceQuests"] = {
 							42765,	-- The Trial at the Temple
@@ -527,7 +527,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(533),	-- Fists of the Heavens [Main Hand]
 							-- artifact(533),	-- Fists of the Heavens [Off Hand]
 							ach(10746),	-- Forged for Battle
-						}
+						},
 					}),
 					-- Interlude
 					q(46024, {	-- An Urgent Warning

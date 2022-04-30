@@ -185,24 +185,6 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 					},
 				}),
-				q(43682, {	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
-					["qg"] = 11486,	-- Prince Tortheldrin
-					["sourceQuest"] = -91190,	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
-					["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
-					["timeline"] = { "added 7.0.3.21570" },
-					["maps"] = { 236 },	-- Capital Gardens
-					["classes"] = { PALADIN },
-					["cost"] = {
-						{ "i", 139620, 1 },	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
-						-- #if AFTER 8.2.0.30918
-						{ "i", 170511, 1 },	-- Head of Nefarian (Paladin, for Artifact appearance)
-						-- #else
-						{ "i", 19003, 1 },	-- Head of Nefarian (A)
-						{ "i", 19002, 1 },	-- Head of Nefarian (H)
-						-- #endif
-					},
-					["lvl"] = 110,
-				}),
 				q(7492, {	-- Camp Mojache
 					["qgs"] = {
 						10879,	-- Harbinger Balthazad

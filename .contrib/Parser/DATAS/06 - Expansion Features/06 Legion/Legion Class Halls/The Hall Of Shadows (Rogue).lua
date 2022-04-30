@@ -8,55 +8,56 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			["maps"] = { THE_HALL_OF_SHADOWS },
 			["g"] = {
 				n(ARTIFACTS, {
-				--cl(ROGUE, ASSASSINATION, {
-						i(139570, {	-- The Cypher of Broken Bone
-							artifact(611),	-- The Kingslayers [Main Hand]
-							-- artifact(611),	-- The Kingslayers [Off-Hand]
-						}),
-				--}),
-				--cl(ROGUE, OUTLAW, {
-						q(43558, {	-- Bindings of the Windlord
-							["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
-							["sourceQuests"] = { 39652 },	-- Where Dragons Rule
-							["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
-							["coord"] = { 40.8, 80.8, STORMHEIM },
-							["cost"] = {
-								{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
-								{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
-								{ "i", 124444, 10 },	-- 10xInfernal Brimstone
-							},
-						}),
-						q(43560, {	-- Audience with the Windlord
-							["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
-							["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
-							["g"] = {
-								i(139536, {	-- Emanation of the Winds
-									artifact(881),	-- The Dreadblades [Main Hand]
-									-- artifact(881),	-- The Dreadblades [Off-Hand]
-								}),
-							},
-						}),
-				--}),
-				--cl(ROGUE, SUBTLETY, {
-					gt(441, {	-- The Vault
-						n(98100, {	-- Taoshi
-							["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
-							["cost"] = { { "i", 94222, 1} },	-- 1xKey to the Palace of Lei Shen
-							["maps"] = { 518 },	-- Thunder King's Citadel
-							["g"] = {
-								i(95497, {	-- Burial Trove Key
-									["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
-									["g"] = {
-										i(139571, {	-- Tome of Otherwordly Venoms
-											artifact(891),	-- Find Hidden Artifact Skin
-										}),
-									},
-								}),
-							},
-						}),
-
+					cl(ROGUE, ASSASSINATION, {
+							i(139570, {	-- The Cypher of Broken Bone
+								artifact(611),	-- The Kingslayers [Main Hand]
+								-- artifact(611),	-- The Kingslayers [Off-Hand]
+							}),
 					}),
-				--}),
+					cl(ROGUE, OUTLAW, {
+							q(43558, {	-- Bindings of the Windlord
+								["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
+								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
+								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
+								["coord"] = { 40.8, 80.8, STORMHEIM },
+								["cost"] = {
+									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
+									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
+									{ "i", 124444, 10 },	-- 10xInfernal Brimstone
+								},
+							}),
+							q(43560, {	-- Audience with the Windlord
+								["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
+								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
+								["g"] = {
+									i(139536, {	-- Emanation of the Winds
+										artifact(881),	-- The Dreadblades [Main Hand]
+										-- artifact(881),	-- The Dreadblades [Off-Hand]
+									}),
+								},
+							}),
+					}),
+					cl(ROGUE, SUBTLETY, {
+						gt(441, {	-- The Vault
+							n(98100, {	-- Taoshi
+								["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
+								["cost"] = { { "i", 94222, 1} },	-- 1xKey to the Palace of Lei Shen
+								["maps"] = { 518 },	-- Thunder King's Citadel
+								["g"] = {
+									i(95497, {	-- Burial Trove Key
+										["description"] = "Used to open the Lei Shen's Burial Troves at the rest area after completing the scenario. These chests have a chance to contain  Tome of Otherworldly Venoms, which unlocks the hidden appearance!",
+										["g"] = {
+											i(139571, {	-- Tome of Otherwordly Venoms
+												artifact(891),	-- Fangs of the Devourer [Main Hand]
+												-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
+											}),
+										},
+									}),
+								},
+							}),
+
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					-- Intro
@@ -88,7 +89,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 					}),
-					--cl(ROGUE, ASSASSINATION, {
+					cl(ROGUE, ASSASSINATION, {
 						q(42501, {	-- Finishing the Job
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
@@ -152,8 +153,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(ROGUE, OUTLAW, {
+					}),
+					cl(ROGUE, OUTLAW, {
 						q(40847, {	-- A Friendly Accord
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
@@ -176,8 +177,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(ROGUE, SUBTLETY, {
+					}),
+					cl(ROGUE, SUBTLETY, {
 						q(41919, {	-- The Shadows Reveal
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
@@ -216,7 +217,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
+					}),
 					q(44252, {	-- A Sheath For Every Blade
 						["sourceQuests"] = {
 							42504,	-- The Unseen Blade (A)
@@ -488,217 +489,39 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
-					q(45571, {	-- A Bit of Espionage
-						["coord"] = { 41.4, 78.0, 626 },
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-						["sourceQuests"] = {
-							45836,	-- Jorach's Calling (A)
-							46326,	-- Jorach's Calling (H)
-						},
+					q(43479, {	-- The World is Not Enough
+						["sourceQuests"] = { 43470 },	-- Pruning the Garden
+						["provider"] = { "n", 98100 },	-- Taoshi
+						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43485, {	-- A Burning Distraction
-						["maps"] = { LEGION_DALARAN },
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = {
 							43469,	-- Where In the World is Mathias?
 							43479,	-- The World is Not Enough
 						},
-					}),
-					q(37448, {	-- A Simple Plan
-						["coord"] = { 40.5, 77.9, 626 },
-						["provider"] = { "n", 110953 },	-- Master Mathias Shaw
-						["sourceQuest"] = 37666,	-- Picking a Fight
-					}),
-					q(46058, {	-- Champion: Lilian Voss
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 98099 },	-- Lilian Voss
-						["sourceQuest"] = 46827,	-- Meld Into the Shadows
-						["g"] = {
-							follower(988),	-- Princess Tess Greymane / Lilian Voss
-						},
-					}),
-					q(43724, {	-- Champion: Master Mathias Shaw
-						["coord"] = { 40.5, 77.9, 626 },
-						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
-						["sourceQuest"] = 37689,	-- The Imposter
-						["g"] = {
-							follower(893),	-- Master Mathias Shaw
-						},
-					}),
-					q(43723, {	-- Champion: Taoshi
-						["coord"] = { 40.6, 77.0, 626 },
 						["provider"] = { "n", 98100 },	-- Taoshi
-						["sourceQuest"] = 37689,	-- The Imposter
-						["g"] = {
-							follower(892),	-- Taoshi
-						},
-					}),
-					q(46059, {	-- Champion: Tess Greymane
-						["coord"] = { 42.3, 75.9, 626 },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-						["sourceQuest"] = 46260,	-- Meld Into the Shadows
-						["g"] = {
-							follower(988),	-- Princess Tess Greymane / Lilian Voss
-						},
-					}),
-					q(46103, {	-- Dread Infiltrators
-						["coord"] = { 45.0, 64.0, BROKEN_SHORE },
-						["provider"] = { "n", 119259 },	-- Apothecary Keever
-						["sourceQuests"] = { 46251 },	-- Shard Times
-					}),
-					q(45835, {	-- False Orders (A)
-						["coord"] = { 57.7, 63.5, AZSUNA },
-						["provider"] = { "n", 119821 },	-- Tess Graymane
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 45833,	-- The Pirate's Bay
-					}),
-					q(46324, {	-- False Orders (H)
-						--TBD: ["coord"] = { },
-						--TBD: ["provider"] = { "n", xxxxx },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 46322,	-- The Pirate's Bay
-					}),
-					q(45848, {	-- Fit For a Pirate
-						["coord"] = { 57.7, 63.5, AZSUNA },
-						["provider"] = { "n", 118126 },	-- Crackers
-						["sourceQuests"] = {
-							45835,	-- False Orders (A)
-							46324,	-- False Orders (H)
-							45073,	-- Loot and Plunder!
-							44758,	-- What's the Cache? (A)
-							46323,	-- What's the Cache? (H)
-						},
-						["g"] = {
-							i(143679),	-- Crackers (PET!)
-						},
-					}),
-					q(44202, {	-- For the Cause (A)
-						["coord"] = { 40.5, 77.9, 626 },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
-						["isDaily"] = true,
-					}),
-					q(44203, {	-- For the Cause (H)
-						["coord"] = { 40.5, 77.9, 626 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
-						["isDaily"] = true,
-					}),
-					q(47607, {	-- High Fash-Djinn
-						["coord"] = { 45.0, 26.8, 626 },
-						["provider"] = { "n", 123087 },	-- Al'Abas
-						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
-						["g"] = {
-							i(151144),	-- Gleaming Lamp of Al'Abas
-						},
-					}),
-					q(47595, {	-- I Don't Need Them, But I'll Take Them
-						["coord"] = { 45.4, 27.6, 626 },
-						["provider"] = { "n", 103792 },	-- Griftah
-						["repeatable"] = true,
-						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
-					}),
-					q(45836, {	-- Jorach's Calling (A)
-						["coord"] = { 57.6, 63.4, AZSUNA },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
-						["sourceQuest"] = 45848,	-- Fit For a Pirate
-					}),
-					q(46326, {	-- Jorach's Calling (H)
-						["coord"] = { 57.6, 63.4, AZSUNA },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 119822 },	-- Lilian Voss
-						["sourceQuest"] = 45848,	-- Fit For a Pirate
-					}),
-					q(45073, {	-- Loot and Plunder!
-						["coord"] = { 57.7, 63.6, AZSUNA },
-						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
-						["sourceQuest"] = 45833,	-- The Pirate's Bay
-					}),
-					q(46260, {	-- Meld Into the Shadows (A)
-						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
-					}),
-					q(46827, {	-- Meld Into the Shadows (H)
-						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
-					}),
-					q(44215, {	-- One More Thing...
-						["coord"] = { 41.3, 78.1, 626 },
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 37689,	-- The Imposter
-					}),
-					q(37666, {	-- Picking a Fight
-						["coord"] = { 27.0, 89.1, SURAMAR },
-						["provider"] = { "n", 110793 },	-- Taoshi
-						["sourceQuest"] = 43508,	-- The Captive Spymaster
-					}),
-					q(45573, {	-- Rise Up (A)
-						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 45571,	-- A Bit of Espionage
-					}),
-					q(45576, {	-- Rise Up (H)
-						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 45571,	-- A Bit of Espionage
+						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43508, {	-- The Captive Spymaster
-						["provider"] = { "n", 110714 },	-- Taoshi
 						["sourceQuest"] = 43485,	-- A Burning Distraction
+						["provider"] = { "n", 110714 },	-- Taoshi
+						["coord"] = { 29.8, 79.7, SURAMAR },
 					}),
-					q(45833, {	-- The Pirate's Bay (A)
-						["coord"] = { 41.3, 78.0, 626 },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
+					q(37666, {	-- Picking a Fight
+						["sourceQuest"] = 43508,	-- The Captive Spymaster
+						["provider"] = { "n", 110793 },	-- Taoshi
+						["coord"] = { 27.0, 89.1, SURAMAR },
 					}),
-					q(46322, {	-- The Pirate's Bay (H)
-						["coord"] = { 41.3, 78.0, 626 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
-					}),
-					q(43479, {	-- The World is Not Enough
-						["sourceQuests"] = { 43470 },	-- Pruning the Garden
-						["provider"] = { "n", 98100 },	-- Taoshi
-					}),
-					q(45628, {	-- This Time, Leave a Trail (A)
-						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
-						["sourceQuest"] = 45573,	-- Rise Up
-					}),
-					q(45629, {	-- This Time, Leave a Trail (H)
-						["maps"] = { BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 45576,	-- Rise Up
+					q(37448, {	-- A Simple Plan
+						["sourceQuest"] = 37666,	-- Picking a Fight
+						["provider"] = { "n", 110953 },	-- Master Mathias Shaw
+						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
 					}),
 					q(37494, {	-- Under Cover of Darkness
 						["sourceQuests"] = { 37448 },	-- A Simple Plan
 						["provider"] = { "n", 98100 },	-- Taoshi
-						["coord"] = { 40.6, 77.0, 626 },
+						["coord"] = { 40.6, 77.0, THE_HALL_OF_SHADOWS },
 					}),
-					q(44758, {	-- What's the Cache? (A)
-						["coord"] = { 57.7, 63.5, AZSUNA },
-						["provider"] = { "n", 119821 },	-- Tess Graymane
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 45833,	-- The Pirate's Bay
-					}),
-					q(46323, {	-- What's the Cache? (H)
-						--TBD: ["coord"] = { },
-						--TBD: ["provider"] = { "n", xxxxx },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 46322,	-- The Pirate's Bay
-					}),
-
 					q(37689, {	-- The Imposter
 						["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
 						["provider"] = { "n", 111049 },	-- Master Mathias Shaw
@@ -708,10 +531,31 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							title(338),	-- Shadowblade <Name>
 						},
 					}),
+					q(43724, {	-- Champion: Master Mathias Shaw
+						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
+						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							follower(893),	-- Master Mathias Shaw
+						},
+					}),
+					q(43723, {	-- Champion: Taoshi
+						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 98100 },	-- Taoshi
+						["coord"] = { 40.6, 77.0, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							follower(892),	-- Taoshi
+						},
+					}),
+					q(44215, {	-- One More Thing...
+						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
+					}),
 					q(43422, {	-- A Hero's Weapon
-						["coord"] = { 38.0, 58.0, LEGION_DALARAN },
-						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44215,	-- One More Thing...
+						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 38.0, 58.0, THE_HALL_OF_SHADOWS },
 						["g"] = {
 							artifact(235),	-- The Kingslayers [Main Hand]
 							-- artifact(235),	-- The Kingslayers [Off-Hand]
@@ -737,9 +581,166 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
 					-- 7.2.0
+					q(45833, {	-- The Pirate's Bay (A)
+						["sourceQuest"] = 47137,	-- Champions of Legionfall
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46322, {	-- The Pirate's Bay (H)
+						["sourceQuest"] = 47137,	-- Champions of Legionfall
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(44758, {	-- What's the Cache? (A)
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 119821 },	-- Tess Graymane
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46323, {	-- What's the Cache? (H)
+						["sourceQuest"] = 46322,	-- The Pirate's Bay
+						["provider"] = { "n", 119822 },	-- Lilian Voss
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45835, {	-- False Orders (A)
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 119821 },	-- Tess Graymane
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46324, {	-- False Orders (H)
+						["sourceQuest"] = 46322,	-- The Pirate's Bay
+						["provider"] = { "n", 119822 },	-- Lilian Voss
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45073, {	-- Loot and Plunder!
+						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
+						["coord"] = { 57.7, 63.6, AZSUNA },
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45848, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Fit For a Pirate
+						["sourceQuests"] = {
+							45835,	-- False Orders (A)
+							46324,	-- False Orders (H)
+							45073,	-- Loot and Plunder!
+							44758,	-- What's the Cache? (A)
+							46323,	-- What's the Cache? (H)
+						},
+						["provider"] = { "n", 118126 },	-- Crackers
+						["coord"] = { 57.7, 63.5, AZSUNA },
+						["g"] = {
+							i(143679),	-- Crackers (PET!)
+						},
+					})),
+					q(45836, {	-- Jorach's Calling (A)
+						["sourceQuest"] = 45848,	-- Fit For a Pirate
+						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
+						["coord"] = { 57.6, 63.4, AZSUNA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46326, {	-- Jorach's Calling (H)
+						["sourceQuest"] = 45848,	-- Fit For a Pirate
+						["provider"] = { "n", 119822 },	-- Lilian Voss
+						["coord"] = { 57.6, 63.4, AZSUNA },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45571, {	-- A Bit of Espionage
+						["sourceQuests"] = {
+							45836,	-- Jorach's Calling (A)
+							46326,	-- Jorach's Calling (H)
+						},
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45573, {	-- Rise Up (A)
+						["sourceQuest"] = 45571,	-- A Bit of Espionage
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45576, {	-- Rise Up (H)
+						["sourceQuest"] = 45571,	-- A Bit of Espionage
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45628, {	-- This Time, Leave a Trail (A)
+						["sourceQuest"] = 45573,	-- Rise Up
+						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
+						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(45629, {	-- This Time, Leave a Trail (H)
+						["sourceQuest"] = 45576,	-- Rise Up
+						["provider"] = { "n", 117263 },	-- Lilian Voss
+						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46260, {	-- Meld Into the Shadows (A)
+						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46827, {	-- Meld Into the Shadows (H)
+						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
+						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+					}),
+					q(46058, {	-- Champion: Lilian Voss
+						["sourceQuest"] = 46827,	-- Meld Into the Shadows
+						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+						["g"] = {
+							follower(988),	-- Princess Tess Greymane / Lilian Voss
+						},
+					}),
+					q(46059, {	-- Champion: Tess Greymane
+						["sourceQuest"] = 46260,	-- Meld Into the Shadows
+						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
+						["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { "added 7.2.0" },
+						["g"] = {
+							follower(988),	-- Princess Tess Greymane / Lilian Voss
+						},
+					}),
+					q(46103, {	-- Dread Infiltrators
+						["sourceQuests"] = {
+							46058,	-- Champion: Lilian Voss
+							46059,	-- Champion: Tess Greymane
+						},
+						["provider"] = { "n", 119259 },	-- Apothecary Keever
+						["coord"] = { 45.0, 64.0, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
+					}),
 					q(46089, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (A)
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
 						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
@@ -748,6 +749,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(46178, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (H)
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
 						["provider"] = { "n", 98099 },	-- Lilian Voss
+						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
@@ -799,6 +801,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					})),
+					q(47607, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {	-- High Fash-Djinn
+						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
+						["provider"] = { "n", 123087 },	-- Al'Abas
+						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
+						["g"] = {
+							i(151144),	-- Gleaming Lamp of Al'Abas
+						},
+					})),
 					q(47594, {	-- I'll Take Those, Thanks!
 						["sourceQuest"] = 47605,	-- Coins of Air
 						["provider"] = { "n", 103792 },	-- Griftah
@@ -806,7 +816,26 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["isWeekly"] = true,
 						["timeline"] = { "added 7.2.5" },
 					}),
+					q(47595, {	-- I Don't Need Them, But I'll Take Them
+						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
+						["provider"] = { "n", 103792 },	-- Griftah
+						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
+						["repeatable"] = true,
+						["timeline"] = { "added 7.2.5" },
+					}),
 					-- Misc
+					q(44202, {	-- For the Cause (A)
+						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
+						["isDaily"] = true,
+					}),
+					q(44203, {	-- For the Cause (H)
+						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
+						["isDaily"] = true,
+					}),
 					q(43885, {	-- Hitting the Books
 						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
@@ -825,12 +854,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
 					}),
 					q(46779, {	-- Further Advancement
-						["coord"] = { 37.7, 44.8, THE_HALL_OF_SHADOWS },
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuests"] = {
 							46058,	-- Champion: Lilian Voss
 							46059,	-- Champion: Tess Greymane
 						},
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["coord"] = { 37.7, 44.8, THE_HALL_OF_SHADOWS },
+						["timeline"] = { "added 7.2.0" },
 					}),
 				}),
 				n(SPECIAL, {

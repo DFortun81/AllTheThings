@@ -7,7 +7,369 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 			["maps"] = { SANCTUM_OF_LIGHT },
 			["g"] = {
+				n(ARTIFACTS, {
+					cl(PALADIN, HOLY, {
+						i(139564, {	-- Lost Edicts of the Watcher
+							["description"] = "Drops from any demon.",
+							["groups"] = {
+								artifact(977),	-- Holy Paladin Hidden Artifact Appearance
+							},
+						}),
+					}),
+					cl(PALADIN, PROTECTION, {
+						i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
+							artifact(720),	-- Find Hidden Artifact Skin
+						}),
+					}),
+					cl(PALADIN, RETRIBUTION, {
+						q(43682, {	-- Book Presented
+							["name"] = "Book Presented",
+							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
+							["sourceQuest"] = -91190,	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
+							["qg"] = 11486,	-- Prince Tortheldrin
+							["maps"] = { DIRE_MAUL, 236 },	-- Capital Gardens
+							["cost"] = {
+								{ "i", 139620, 1 },	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
+								-- #if AFTER 8.2.0.30918
+								{ "i", 170511, 1 },	-- Head of Nefarian (Paladin, for Artifact appearance)
+								-- #else
+								{ "i", 19003, 1 },	-- Head of Nefarian (A)
+								{ "i", 19002, 1 },	-- Head of Nefarian (H)
+								-- #endif
+							},
+						}),
+						q(43683, {	-- Traveler Found
+							["name"] = "Traveler Found",
+							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
+							["sourceQuest"] = 43682,	-- Book Presented
+							["qgs"] = {
+								11609,	-- Alexia Ironknife
+								11608,	-- Bardu Sharpeye
+							},
+							["coords"] = {
+								{ 43.0, 84.2, WESTERN_PLAGUELANDS },
+								{ 83.2, 71.8, TIRISFAL_GLADES },
+							},
+						}),
+						q(43684, {	-- Notes Read
+							["name"] = "Notes Read",
+							["description"] = "After reading this, you can go kill Large Vile Slime next to Thondroril River in Western Plaguelands.",
+							["sourceQuest"] = 43683,	-- Traveler Found
+							["qg"] = 111121,	-- Grand Inquisitor Isillien's Journal
+							["coord"] = { 42.4, 18.7, WESTERN_PLAGUELANDS },
+						}),
+						q(43685, {	-- Phylactery Used
+							["name"] = "Phylactery Used",
+							["sourceQuest"] = 43684,	-- Notes Read
+							["qg"] = 111123,	-- Timolain the Accursed
+							["maps"] = { WESTERN_PLAGUELANDS },
+							["cost"] = { { "i", 139623, 1 } },	-- 1xTimolain's Phylactery
+						}),
+						q(43687, {	-- Walking in the Shadows
+							["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
+							["sourceQuests"] = { 43685 },	-- Phylactery Used
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 49.8, 72.2, SANCTUM_OF_LIGHT },
+							["cost"] = { { "i", 139624, 1 } },	-- 1xShard of Darkness
+							["g"] = {
+								i(139566, {	-- Heart of Corruption
+									artifact(865),	-- Retribution Hidden Artifact Appearance
+								}),
+							},
+						}),
+					}),
+				}),
 				n(QUESTS, {
+					q(38710, {	-- An Urgent Gathering
+						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
+						["maps"] = { LEGION_DALARAN },
+					}),
+					q(40408, {	-- Weapons of Legend
+						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
+						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 74.8, 48.2, LEGION_DALARAN },
+					}),
+					q(44063, {	-- Bolstering Your Arsenal
+						["sourceQuests"] = { 39756 },	-- A Sound Plan
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+					}),
+					q(44370, {	-- Completing Your Arsenal
+						["sourceQuests"] = { 42120 },	-- The Silver Hand
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+					}),
+					cl(PALADIN, HOLY, {
+						q(42231, {	-- The Mysterious Paladin
+							["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+						}),
+						q(42120, {	-- The Silver Hand
+							["sourceQuests"] = { 42377 },	-- The Brother's Trail
+							["provider"] = { "n", 106337 },	-- Travard
+							["coord"] = { 72.0, 49.3, LEGION_DALARAN },
+						}),
+					}),
+					cl(PALADIN, PROTECTION, {
+						q(42000, {	-- Seeker of Truth
+							["sourceQuests"] = { 40408 },	-- Weapons of Legend
+							["providers"] = {
+								{ "n", 90259 },	-- Lord Maxwell Tyrosus
+								{ "n", 90369 },	-- Lord Maxwell Tyrosus
+							},
+							["coord"] = { 74.8, 48.2, LEGION_DALARAN },
+						}),
+						q(42002, {	-- To Northrend
+							["sourceQuests"] = { 42000 },	-- Seeker of Truth
+							["provider"] = { "n", 105689 },	-- Orik Trueheart
+							["coord"] = { 73.9, 49.0, LEGION_DALARAN },
+						}),
+						q(42005, {	-- The End of the Saga
+							["sourceQuests"] = { 42002 }, -- To Northrend
+							["provider"] = { "n", 105724 },	-- Orik Trueheart
+							["coord"] = { 56.8, 78.7, HOWLING_FJORD },
+						}),
+						q(42017, {	-- Shrine of the Truthguard
+							["sourceQuests"] = { 42005 },	-- The End of the Saga
+							["provider"] = { "n", 105813 },	-- Orik Trueheart
+							["coord"] = { 73.9, 49.0, LEGION_DALARAN },
+						}),
+					}),
+					cl(PALADIN, RETRIBUTION, {
+						q(42770, {	-- Seeking Guidance
+							["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
+							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+						}),
+						q(42772, {	-- Sacred Ground
+							["sourceQuests"] = { 42770 },	-- Seeking Guidance
+							["provider"] = { "n", 108777 },	-- High Priest Thel'danis
+							["coord"] = { 51.4, 79.0, WESTERN_PLAGUELANDS },
+						}),
+						q(42771, {	-- Keeping the Peace
+							["sourceQuests"] = { 42770 },	-- Seeking Guidance
+							["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
+							["coord"] = { 51.3, 79.0, WESTERN_PLAGUELANDS },
+						}),
+						q(42773, {	-- The Light Reveals
+							["sourceQuests"] = { 42771 },	-- Keeping the Peace
+							["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 51.6, 81.9, WESTERN_PLAGUELANDS },
+						}),
+						q(42774, {	-- Hope Prevails
+							["sourceQuests"] = { 42773 },	-- The Light Reveals
+							["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
+						}),
+						q(38376, {	-- The Search for the Highlord
+							["sourceQuests"] = { 42774 },	-- Hope Prevails
+							["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
+							["coord"] = { 74.3, 53.2, EASTERN_PLAGUELANDS },
+						}),
+					}),
+					q(38576, {	-- We Meet at Light's Hope
+						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
+						["providers"] = {
+							{ "n", 106209 },	-- Lord Maxwell Tyrosus
+							{ "n", 106834 },	-- Lord Maxwell Tyrosus
+						},
+						["coord"] = { 71.7, 45.1, LEGION_DALARAN },
+					}),
+					q(42811, {	-- We Meet at Light's Hope
+						["sourceQuests"] = { 38376 },	-- The Search for the Highlord
+						["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 20.4, 61.4, BROKEN_SHORE },
+					}),
+					q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
+					q(38566, {	-- A United Force
+						["sourceQuests"] = {
+							38576,	-- We Meet at Light's Hope
+							42811,	-- We Meet at Light's Hope
+						},
+						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 63.0, 37.2, SANCTUM_OF_LIGHT },
+					}),
+					q(44250, {	-- Champion of the Light
+						["sourceQuests"] = { 38566 },	-- A United Force
+						["provider"] = { "n", 100196 },	-- Eadric the Pure
+						["coord"] = { 41.4, 61.1, SANCTUM_OF_LIGHT },
+						["g"] = {
+							i(139693),	-- Crown of the Silver Hand
+						},
+					}),
+					q(39722, {	-- Forging New Strength
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(38933, {	-- Logistical Matters
+						["sourceQuests"] = { 38566 },	-- A United Force
+						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 73.7, 19.6, SANCTUM_OF_LIGHT },
+					}),
+					-- Zone
+					q(39756, {	-- A Sound Plan
+						["sourceQuests"] = { 38933 },	-- Logistical Matters
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					-- Bla
+					q(39696, {	-- Rise, Champions
+						["sourceQuests"] = { 39756 },	-- A Sound Plan
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+						["g"] = {
+							follower(480),	-- Lord Maxwell Tyrosus
+						},
+					}),
+					q(42846, {	-- The Blood Matriarch
+						["sourceQuests"] = { 39696 },	-- Rise, Champions
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+					}),
+					q(42881, {	-- Champion: Lady Liadrin
+						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
+						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
+						["coord"] = { 38.2, 64.6, SANCTUM_OF_LIGHT },
+						["g"] = {
+							follower(478),	-- Lady Liadrin
+						},
+					}),
+					q(42847, {	-- Dark Storms
+						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					q(42848, {	-- Recruiting the Troops
+						["sourceQuests"] = { 42847 },	-- Dark Storms
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					q(42849, {	-- Wrath and Justice
+						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					q(42850, {	-- Tech It Up a Notch
+						["sourceQuests"] = { 42849 },	-- Wrath and Justice
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					q(42866, {	-- A Sign From The Sky
+						--["sourceQuests"] = { 42847 },	-- Dark Storms
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+					}),
+					q(42867, {	-- Meeting of the Silver Hand
+						["sourceQuests"] = { 44153 },	-- Light's Charge
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, SANCTUM_OF_LIGHT },
+					}),
+					q(42919, {	-- The Scion's Legacy
+						["sourceQuests"] = { 42867 },	-- Meeting of the Silver Hand
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
+					}),
+					q(42885, {	-- The Highlord's Command
+						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 50.8, 70.9, SANCTUM_OF_LIGHT },
+					}),
+					q(42966, {	-- The Highlord's Command
+						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 50.8, 70.9, SANCTUM_OF_LIGHT },
+					}),
+					q(42967, {	-- The Highlord's Command
+						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 50.8, 70.9, SANCTUM_OF_LIGHT },
+					}),
+					q(42968, {	-- The Highlord's Command
+						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 50.8, 70.9, SANCTUM_OF_LIGHT },
+					}),
+					q(42886, {	-- To Faronaar
+						["sourceQuests"] = {
+							42885,	-- The Highlord's Command
+							42966,	-- The Highlord's Command
+							42967,	-- The Highlord's Command
+							42968,	-- The Highlord's Command
+						},
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(42887, {	-- This Is Retribution
+						["sourceQuests"] = { 42886 },	-- To Faronaar
+						["provider"] = { "n", 109356 },	-- Vindicator Boros
+						["coord"] = { 45.9, 51.6, AZSUNA },
+					}),
+					q(43462, {	-- Mother Ozram
+						["sourceQuests"] = { 42887 },	-- This Is Retribution
+						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
+						["coord"] = { 30.6, 44.9, AZSUNA },
+					}),
+					q(42888, {	-- Communication Orbs
+						["sourceQuests"] = { 42887 },	-- This Is Retribution
+						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
+						["coord"] = { 30.6, 44.9, AZSUNA },
+					}),
+					q(42890, {	-- The Codex of Command
+						["sourceQuests"] = {
+							43462,	-- Mother Ozram
+							42888,	-- Communication Orbs
+						},
+						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
+						["maps"] = { AZSUNA },
+						["g"] = {},	-- First order campaign
+					}),
+					q(42852, {	-- Champion: Justicar Julia Celeste
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["provider"] = { "n", 99995 },	-- Justicar Julia Celeste
+						["coord"] = { 50.2, 72.8, LIGHTS_HOPE_CHAPEL },
+						["g"] = {
+							follower(755),	-- Justicar Julia Celeste
+						},
+					}),
+					q(42851, {	-- Champion: Vindicator Boros
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
+						["coord"] = { 49.3, 71.5, LIGHTS_HOPE_CHAPEL },
+						["g"] = {
+							follower(479),	-- Vindicator Boros
+						},
+					}),
+					q(43494, {	-- Silver Hand Knights
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+					}),
+					--
+					q(43486, {	-- Cracking the Codex
+						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane
+						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(49812, {	-- Delas in Dalaran
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane
+						["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
+						["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
+						["isBreadcrumb"] = true,
+					}),
+					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
+						--["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+					}),
+					q(43488, {	-- Blood of Our Enemy
+						--["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
+					}),
+
+
+
 					q(46083, {	-- A Few Things First
 						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
 						["provider"] = { "n", 92183 },	-- Alard Schmied
@@ -46,32 +408,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 110866 },	-- Delas Moonfang
 						["coord"] = { 48.5, 71.3, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(42866, {	-- A Sign From The Sky
-						["sourceQuests"] = { 42847 },	-- Dark Storms
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(39756, {	-- A Sound Plan
-						["sourceQuests"] = { 38933 },	-- Logistical Matters
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(38566, {	-- A United Force
-						["sourceQuests"] = {
-							38576,	-- We Meet at Light's Hope
-							42811,	-- We Meet at Light's Hope
-						},
-						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 63.0, 37.2, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(43491, {	-- Allies of the Light
 						["sourceQuests"] = { 43490 },	-- Aponi's Trail
 						["provider"] = { "n", 110969 },	-- Aponi Brightmane
 						["coord"] = { 48.9, 63.7, 748 },
-					}),
-					q(38710, {	-- An Urgent Gathering
-						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
-						["maps"] = { LEGION_DALARAN },
 					}),
 					q(45974, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -87,11 +427,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 66.2, 26.1, AZSUNA },
 						["maps"] = { 748 },	-- Niskara
 					}),
-					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
-						["sourceQuests"] = { 43486 },	-- Cracking the Codex
-						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
-					}),
 					q(43493, {	-- Black Rook Hold: Lord Ravencrest
 						["sourceQuests"] = { 43535 },	-- Translation: Danger!
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
@@ -100,11 +435,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(44220, {	-- Blessing of the Order
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(43488, {	-- Blood of Our Enemy
-						["sourceQuests"] = { 43486 },	-- Cracking the Codex
-						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
-					}),
 					q(43534, {	-- Blood of Sargeras
 						["sourceQuests"] = {
 							43492,	-- Champion: Aponi Brightmane
@@ -112,24 +442,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(44063, {	-- Bolstering Your Arsenal
-						["sourceQuests"] = { 39756 },	-- A Sound Plan
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(44218, {	-- Champion Armaments
-						["provider"] = { "n", 110434 },	-- Kristoff
-						["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
-					}),
-					q(44250, {	-- Champion of the Light
-						["sourceQuests"] = { 38566 },	-- A United Force
-						["provider"] = { "n", 100196 },	-- Eadric the Pure
-						["coord"] = { 41.4, 61.1, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							i(139693),	-- Crown of the Silver Hand
-						},
 					}),
 					q(43492, {	-- Champion: Aponi Brightmane
 						["sourceQuests"] = { 43541 },	-- United As One
@@ -155,22 +467,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(756),	-- Delas Moonfang
 						},
 					}),
-					q(42852, {	-- Champion: Justicar Julia Celeste
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
-						["provider"] = { "n", 99995 },	-- Justicar Julia Celeste
-						["coord"] = { 50.2, 72.8, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							follower(755),	-- Justicar Julia Celeste
-						},
-					}),
-					q(42881, {	-- Champion: Lady Liadrin
-						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
-						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
-						["coord"] = { 38.2, 64.6, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							follower(478),	-- Lady Liadrin
-						},
-					}),
 					q(43701, {	-- Champion: Lothraxion
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
@@ -189,34 +485,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(1000),	-- Nerus Moonfang
 						},
 					}),
-					q(42851, {	-- Champion: Vindicator Boros
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
-						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
-						["coord"] = { 49.3, 71.5, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							follower(479),	-- Vindicator Boros
-						},
-					}),
-					q(42888, {	-- Communication Orbs
-						["sourceQuests"] = { 42887 },	-- This Is Retribution
-						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
-						["coord"] = { 30.6, 44.9, AZSUNA },
-					}),
-					q(44370, {	-- Completing Your Arsenal
-						["sourceQuests"] = { 42120 },	-- The Silver Hand
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(43486, {	-- Cracking the Codex
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
-						["provider"] = { "n", 90251 },	-- Aponi Brightmane
-						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42847, {	-- Dark Storms
-						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(46259, {	-- Darkbinder Dilemma
 						["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
@@ -230,51 +498,24 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(49812, {	-- Delas in Dalaran
-						["provider"] = { "n", 90251 },	-- Aponi Brightmane
-						--["races"] = { BLOODELF, DARKIRONDWARF }, -- Might need confirmation
-						["sourceQuests"] = { 43486 },	-- Cracking the Codex
-						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
-						["isBreadcrumb"] = true,
-					}),
 					q(45149, {	-- Ending the Crescent Curse
 						["sourceQuests"] = { 45147 },	-- Felstone Destruction
 						["provider"] = { "n", 119545 },	-- Nerus Moonfang
 						["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(44219, {	-- Fate's Blessing
-						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
-						["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 					}),
 					q(45147, {	-- Felstone Destruction
 						["sourceQuests"] = { 45146 },	-- Runic Reading
 						["provider"] = { "n", 109102 },	-- Delas Moonfang
 						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(39722, {	-- Forging New Strength
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(45565, {	-- Further Training
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
-					q(46151, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(42844, {	-- Growing Power
 						["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
 						["isBreadcrumb"] = true,
-					}),
-					q(43883, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(42774, {	-- Hope Prevails
-						["sourceQuests"] = { 42773 },	-- The Light Reveals
-						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
 					}),
 					q(45975, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -284,28 +525,15 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 90249 },	-- Lady Liadrin
 						["coord"] = { 50.3, 74.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(42771, {	-- Keeping the Peace
-						["sourceQuests"] = { 42770 },	-- Seeking Guidance
-						["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
-						["coord"] = { 51.3, 79.0, WESTERN_PLAGUELANDS },
-					}),
 					q(45562, {	-- Kneel and Be Squired!
 						["sourceQuests"] = { 45561 },	-- Seek Me Out
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
-					q(46132, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(46074, {	-- Leather to Legendary
 						["sourceQuests"] = { 46083 },	-- A Few Things First
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-					}),
-					q(38933, {	-- Logistical Matters
-						["sourceQuests"] = { 38566 },	-- A United Force
-						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 73.7, 19.6, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(43698, {	-- Lumenstone
 						["sourceQuests"] = {
@@ -315,20 +543,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(42867, {	-- Meeting of the Silver Hand
-						["sourceQuests"] = { 44153 },	-- Light's Charge
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(45145, {	-- Moonfang Family Relics
 						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
 						["coord"] = { 66.8, 53.4, VALSHARAH },
-					}),
-					q(43462, {	-- Mother Ozram
-						["sourceQuests"] = { 42887 },	-- This Is Retribution
-						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
-						["coord"] = { 30.6, 44.9, AZSUNA },
 					}),
 					q(45567, {	-- My Kingdom for a Horse
 						["sourceQuests"] = { 45566 },	-- A Knight's Belongings
@@ -351,54 +569,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						["cost"] = { { "i", 131746, 1 } },	-- Stonehide Leather Barding
 					}),
-					q(42848, {	-- Recruiting the Troops
-						["sourceQuests"] = { 42847 },	-- Dark Storms
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(39696, {	-- Rise, Champions
-						["sourceQuests"] = { 39756 },	-- A Sound Plan
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							follower(480),	-- Lord Maxwell Tyrosus
-						},
-					}),
 					q(45146, {	-- Runic Reading
 						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
 						["provider"] = { "n", 109102 },	-- Delas Moonfang
 						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(42772, {	-- Sacred Ground
-						["sourceQuests"] = { 42770 },	-- Seeking Guidance
-						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
-						["coord"] = { 51.4, 79.0, WESTERN_PLAGUELANDS },
-					}),
 					q(45561, {	-- Seek Me Out
 						-- ["sourceQuests"] = { },	-- TODO
-					}),
-					q(42000, {	-- Seeker of Truth
-						["sourceQuests"] = { 40408 },	-- Weapons of Legend
-						["providers"] = {
-							{ "n", 90259 },	-- Lord Maxwell Tyrosus
-							{ "n", 90369 },	-- Lord Maxwell Tyrosus
-						},
-						["coord"] = { 74.8, 48.2, LEGION_DALARAN },
-					}),
-					q(42770, {	-- Seeking Guidance
-						["sourceQuests"] = { 44370 },	-- Completing Your Arsenal
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42017, {	-- Shrine of the Truthguard
-						["sourceQuests"] = { 42005 },	-- The End of the Saga
-						["provider"] = { "n", 105813 },	-- Orik Trueheart
-						["coord"] = { 73.9, 49.0, LEGION_DALARAN },
-					}),
-					q(43494, {	-- Silver Hand Knights
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(45770, {	-- Stirring in the Shadows
 						["sourceQuests"] = { 46074 },	-- Leather to Legendary
@@ -409,118 +586,30 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 									}),
 						},
 					}),
-					q(42850, {	-- Tech It Up a Notch
-						["sourceQuests"] = { 42849 },	-- Wrath and Justice
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42846, {	-- The Blood Matriarch
-						["sourceQuests"] = { 39696 },	-- Rise, Champions
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(42377, {	-- The Brother's Trail
 						["sourceQuests"] = { 42231 },	-- The Mysterious Paladin
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
-					}),
-					q(42890, {	-- The Codex of Command
-						["sourceQuests"] = {
-							43462,	-- Mother Ozram
-							42888,	-- Communication Orbs
-						},
-						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
-						["maps"] = { AZSUNA },
-					}),
-					q(42005, {	-- The End of the Saga
-						["sourceQuests"] = { 42002 }, -- To Northrend
-						["provider"] = { "n", 105724 },	-- Orik Trueheart
-						["coord"] = { 56.8, 78.7, HOWLING_FJORD },
 					}),
 					q(46071, {	-- The Hammer of Dalaran
 						["sourceQuests"] = { 46070 },	-- Preparations Underway
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(42885, {	-- The Highlord's Command
-						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42966, {	-- The Highlord's Command
-						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42967, {	-- The Highlord's Command
-						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42968, {	-- The Highlord's Command
-						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 50.8, 70.9, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42773, {	-- The Light Reveals
-						["sourceQuests"] = { 42771 },	-- Keeping the Peace
-						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 51.6, 81.9, WESTERN_PLAGUELANDS },
-					}),
 					q(43540, {	-- The Mind of the Enemy
 						["sourceQuests"] = { 43490 },	-- Aponi's Trail
 						["provider"] = { "n", 110969 },	-- Aponi Brightmane
 						["coord"] = { 48.9, 63.7, 748 },
-					}),
-					q(42231, {	-- The Mysterious Paladin
-						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42919, {	-- The Scion's Legacy
-						["sourceQuests"] = { 42867 },	-- Meeting of the Silver Hand
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 49.8, 72.4, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(38376, {	-- The Search for the Highlord
-						["sourceQuests"] = { 42774 },	-- Hope Prevails
-						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.3, 53.2, EASTERN_PLAGUELANDS },
-					}),
-					q(42120, {	-- The Silver Hand
-						["sourceQuests"] = { 42377 },	-- The Brother's Trail
-						["provider"] = { "n", 106337 },	-- Travard
-						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
 					}),
 					q(45568, {	-- They Stole Excaliberto!
 						["sourceQuests"] = { 45567 },	-- My Kingdom for a Horse
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
-					q(42887, {	-- This Is Retribution
-						["sourceQuests"] = { 42886 },	-- To Faronaar
-						["provider"] = { "n", 109356 },	-- Vindicator Boros
-						["coord"] = { 45.9, 51.6, AZSUNA },
-					}),
-					q(42886, {	-- To Faronaar
-						["sourceQuests"] = {
-							42885,	-- The Highlord's Command
-							42966,	-- The Highlord's Command
-							42967,	-- The Highlord's Command
-							42968,	-- The Highlord's Command
-						},
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(43489, {	-- To Felblaze Ingress
 						["sourceQuests"] = { 43493 },	-- Black Rook Hold: Lord Ravencrest
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(42002, {	-- To Northrend
-						["sourceQuests"] = { 42000 },	-- Seeker of Truth
-						["provider"] = { "n", 105689 },	-- Orik Trueheart
-						["coord"] = { 73.9, 49.0, LEGION_DALARAN },
 					}),
 					q(43535, {	-- Translation: Danger!
 						["sourceQuests"] = {
@@ -541,16 +630,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(139697),	-- Bindings of the Silver Hand
 						},
 					}),
-					q(43687, {	-- Walking in the Shadows (Artifact Appearance)
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
-						["sourceQuests"] = { 43685 },	-- Phylactery Used
-						["g"] = {
-							i(139566, {	-- Heart of Corruption
-								artifact(865),	-- Retribution Hidden Artifact Appearance
-							}),
-						},
-					}),
 					q(43697, {	-- Warriors of Light
 						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
@@ -559,24 +638,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(139690),	-- Breastplate of the Silver Hand
 							title(345),	-- Highlord %s
 						},
-					}),
-					q(38576, {	-- We Meet at Light's Hope
-						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
-						["providers"] = {
-							{ "n", 106209 },	-- Lord Maxwell Tyrosus
-							{ "n", 106834 },	-- Lord Maxwell Tyrosus
-						},
-						["coord"] = { 71.7, 45.1, LEGION_DALARAN },
-					}),
-					q(42811, {	-- We Meet at Light's Hope
-						["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-						["provider"] = { "n", 91144 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 20.4, 61.4, BROKEN_SHORE },
-					}),
-					q(40408, {	-- Weapons of Legend
-						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
-						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.8, 48.2, LEGION_DALARAN },
 					}),
 					q(45813, {	-- Where Art Thou, My Sweet
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
@@ -591,18 +652,26 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
 						["coord"] = { 43.8, 63.0, BROKEN_SHORE },
 					}),
-					q(42849, {	-- Wrath and Justice
-						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+					--
+					q(44219, {	-- Fate's Blessing
+						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
+						["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
+						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 					}),
-				}),
-				n(93787, {	-- Scouting Map
-					["g"] = {
-						i(139376),	-- Healing Well
-					},
-					["achievementID"] = 11217,
-					["modelScale"] = 2.5,
+					q(44218, {	-- Champion Armaments
+						["provider"] = { "n", 110434 },	-- Kristoff
+						["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
+						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
+					}),
+					q(46151, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(43883, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(46132, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 				}),
 				n(VENDORS, {
 					n(99976,  {	--  Crusader Lord Dalfors
@@ -708,7 +777,6 @@ root("HiddenQuestTriggers", {
 	q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
 	q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 	q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
-	q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
 	q(42960),	-- Paladin Order Hall - Tracking Quest: Chose Strategy B (choice for 42919 The Scion's Legacy)
 	q(42961),	-- Paladin Order Hall - Tracking Quest: Chose Strategy D (choice for 42919 The Scion's Legacy)
 	q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
