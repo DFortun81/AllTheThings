@@ -1396,7 +1396,6 @@ root("CommonQualityItems", {
 			i(2584),	-- Woolen Cape
 			i(53398),	-- Zen'Taji's Cloak
 		}),
-
 		filter(51, {	-- Neck
 			i(16787),	-- Amulet of Draconic Subversion
 			i(27941),	-- Compassionate Critter's Friend
