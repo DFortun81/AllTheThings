@@ -357,10 +357,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6388, {	-- Gryth Thurden
-					["sourceQuests"] = { 6391 },	-- Ride to Ironforge
-					["provider"] = { "n", 4256 },	-- Golnir Bouldertoe
-					["coord"] = { 51.0, 26.2, IRONFORGE },
-					["races"] = { DWARF, GNOME },
+					["providers"] = {
+						{ "n", 4256 },	-- Golnir Bouldertoe
+						{ "i", 16311 },	-- Honorary Picks
+					},
+					["sourceQuest"] = 6391,	-- Ride to Ironforge
+					["coord"] = { 51, 26, IRONFORGE },
+					["races"] = { DARKIRON, DWARF, GNOME },
+					-- #if BEFORE 4.0.3
+					["lvl"] = 10,
+					-- #endif
 				}),
 				q(1708, {	-- Iron Coral
 					["sourceQuests"] = { 1704 },	-- Klockmort Spannerspan
@@ -427,13 +433,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(302, {	-- Powder to Ironband
-					["sourceQuests"] = { 301 },	-- Report to Ironforge
-					["provider"] = { "n", 1356 },	-- Prospector Stormpike
-					["coord"] = { 74.4, 12.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1453, {	-- Reclaimers' Business in Desolace
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 5637 },	-- Roetten Stonehammer
@@ -446,11 +445,23 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.8, 52.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(6392, {	-- Return to Gremlock
-					["sourceQuests"] = { 6388 },	-- Gryth Thurden
-					["provider"] = { "n", 1573 },	-- Gryth Thurden
+				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
+					["providers"] = {
+						{ "n", 1573 },	-- Gryth Thurden
+						{ "i", 16311 },	-- Honorary Picks
+					},
+					["sourceQuest"] = 6388,	-- Gryth Thurden
+					-- #if AFTER 4.0.3
 					["coord"] = { 55.8, 47.8, IRONFORGE },
-					["races"] = { DWARF, GNOME },
+					["maps"] = { DUN_MOROGH },
+					-- #else
+					["coord"] = { 55.6, 48, IRONFORGE },
+					["maps"] = { LOCH_MODAN },
+					-- #endif
+					["races"] = { DARKIRON, DWARF, GNOME },
+					-- #if BEFORE 4.0.3
+					["lvl"] = 10,
+					-- #endif
 				}),
 				q(26118, {	-- Seize the Ambassador
 					["sourceQuests"] = { 26112 },	-- Demanding Answers

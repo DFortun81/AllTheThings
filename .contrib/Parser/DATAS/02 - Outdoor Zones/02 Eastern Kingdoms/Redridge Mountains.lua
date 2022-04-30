@@ -1672,6 +1672,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 544,	-- Murloc Nightcrawler
 				}),
+				i(2700, {	-- Recipe: Succulent Pork Ribs
+					["description"] = "Can drop from any mob in the zone.",
+				}),
 				i(1219, {	-- Redridge Machete
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 424,	-- Redridge Poacher

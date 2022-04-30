@@ -750,11 +750,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25792,	-- Pushing Forward
 					},
 				}),
+				-- #if AFTER 4.0.3
 				q(6387, {	-- Honor Students
-					["provider"] = { "n", 1699 },	-- Gremlock Pilsnor
+					["providers"] = {
+						{ "n", 1699 },	-- Gremlock Stoneseeker
+						{ "i", 16310 },	-- Gremlock's List
+					},
 					["coord"] = { 54.7, 50.5, DUN_MOROGH },
-					["races"] = { DWARF, GNOME },
+					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
+				-- #endif
 				q(25932, {	-- It's Raid Night Every Night
 					["provider"] = { "n", 41578 },	-- Sergeant Flinthammer
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
@@ -887,12 +892,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if AFTER 4.0.3
 				q(6391, {	-- Ride to Ironforge
-					["provider"] = { "n", 43701 },	-- Brolan Galebeard
-					["coord"] = { 53.8, 52.6, DUN_MOROGH },
+					["providers"] = {
+						{ "n", 43701 },	-- Brolan Galebeard
+						{ "i", 16310 },	-- Gremlock's List
+					},
 					["sourceQuest"] = 6387,	-- Honor Students
-					["races"] = { DWARF, GNOME },
+					["coord"] = { 53.8, 52.6, DUN_MOROGH },
+					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
+				-- #endif
 				q(466, {	-- Search for Incendicite
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
@@ -951,6 +961,39 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.8, 47.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
+				}),
+				q(1653, {	-- The Test of Righteousness (1/3)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1654, {	-- The Test of Righteousness (2/3)
+					["qg"] = 6181,	-- Jordan Stilwell
+					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
+					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DEADMINES, SHADOWFANG_KEEP, BLACKFATHOM_DEEPS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1806, {	-- The Test of Righteousness (3/3)
+					["qg"] = 6181,	-- Jordan Stilwell
+					["sourceQuest"] = 1654,	-- The Test of Righteousness (2/3)
+					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+					["groups"] = {
+						i(6953, {	-- Verigan's Fist
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(28868, {	-- The View from Down Here
 					["provider"] = { "n", 50601 },	-- Snevik the Blade

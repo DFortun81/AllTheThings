@@ -247,7 +247,6 @@ _.WorldDrops =
 				i(1608),	-- Skullcrusher Mace
 				i(15228),	-- Smashing Star
 				i(4569),	-- Staunch Hammer
-				un(REMOVED_FROM_GAME, i(2267)),	-- Stonesplinter Mace
 				i(789),		-- Stout Battlehammer
 				i(1721),	-- Viking Warhammer
 			}),

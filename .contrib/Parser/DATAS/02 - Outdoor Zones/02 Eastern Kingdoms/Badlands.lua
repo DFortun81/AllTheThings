@@ -140,6 +140,45 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						27885,	-- The Warden's Game
 					},
 				}),
+				q(2258, {	-- Badlands Reagent Run
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["coord"] = { 2.6, 46, BADLANDS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 36,
+					["groups"] = {
+						objective(1, {	-- 0/5 Buzzard Gizzard
+							["provider"] = { "i", 7847 },	-- Buzzard Gizzard
+							["crs"] = {
+								2830,	-- Buzzard
+								2831,	-- Giant Buzzard
+								2829,	-- Starving Buzzard
+							},
+						}),
+						objective(2, {	-- 0/10 Crag Coyote Fang
+							["provider"] = { "i", 7846 },	-- Crag Coyote Fang
+							["crs"] = {
+								2727,	-- Crag Coyote
+								2729,	-- Elder Crag Coyote
+								2728,	-- Feral Crag Coyote
+								2730,	-- Rabid Crag Coyote
+							},
+						}),
+						objective(3, {	-- 0/5 Rock Elemental Shard
+							["provider"] = { "i", 7848 },	-- Rock Elemental Shard
+							["crs"] = {
+								2745,	-- Ambassador Infernus
+								2791,	-- Enraged Rock Elemental
+								2919,	-- Fam'retor Guardian
+								2736,	-- Greater Rock Elemental
+								2735,	-- Lesser Rock Elemental
+								92,		-- Rock Elemental
+								2752,	-- Rumbler
+								8278,	-- Smoldar
+							},
+						}),
+					},
+				}),
 				q(27834, {	-- Baelog, the Glass Cannon
 					["providers"] = {
 						{ "n", 46853 },	-- Baelog

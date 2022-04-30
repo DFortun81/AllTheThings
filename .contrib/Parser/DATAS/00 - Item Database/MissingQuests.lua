@@ -4,7 +4,6 @@ q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest 
 q(6),	-- Bounty on Garrick Padfoot,		TBC: Bounty on Garrick Padfoot,		CLASSIC: Bounty on Garrick Padfoot
 q(7),	-- [DEPRECATED] Kobold Camp Cleanup,		TBC: Kobold Camp Cleanup,		CLASSIC: Kobold Camp Cleanup
 q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
-q(17),	-- Uldaman Reagent Run,		TBC: Uldaman Reagent Run,		CLASSIC: Uldaman Reagent Run
 q(18),	-- Brotherhood of Thieves,		TBC: Brotherhood of Thieves,		CLASSIC: Brotherhood of Thieves
 q(21),	-- [DEPRECATED] Skirmish at Echo Ridge,		TBC: Skirmish at Echo Ridge,		CLASSIC: Skirmish at Echo Ridge
 q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
@@ -21,12 +20,10 @@ q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(161),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(170),	-- A New Threat,		TBC: A New Threat,		CLASSIC: A New Threat
 q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
 q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
 q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
-q(199),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(200),	-- Bookie Herod,		TBC: Bookie Herod,		CLASSIC: Bookie Herod
 q(203),	-- The Second Rebellion,		TBC: The Second Rebellion,		CLASSIC: The Second Rebellion
 q(205),	-- Troll Witchery,		TBC: Troll Witchery,		CLASSIC: Troll Witchery
@@ -35,25 +32,16 @@ q(210),	-- Krazek's Cookery,		TBC: Krazek's Cookery,		CLASSIC: Krazek's Cookery
 q(212),	-- A Meal Served Cold,		TBC: A Meal Served Cold,		CLASSIC: A Meal Served Cold
 q(215),	-- Jungle Secrets,		TBC: Jungle Secrets,		CLASSIC: Jungle Secrets
 q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(224),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
 q(233),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
 q(234),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
-q(237),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(250),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
-q(255),	-- [DEPRECATED]Mercenaries,		TBC: Mercenaries,		CLASSIC: Mercenaries
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(263),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
-q(267),	-- The Trogg Threat,		TBC: The Trogg Threat,		CLASSIC: The Trogg Threat
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(274),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(276),	-- Tramping Paws,		TBC: Tramping Paws,		CLASSIC: Tramping Paws
 q(277),	-- Fire Taboo,		TBC: Fire Taboo,		CLASSIC: Fire Taboo
-q(278),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(279),	-- Claws from the Deep,		TBC: Claws from the Deep,		CLASSIC: Claws from the Deep
-q(280),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(281),	-- Reclaiming Goods,		TBC: Reclaiming Goods,		CLASSIC: Reclaiming Goods
 q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(284),	-- The Search Continues,		TBC: The Search Continues,		CLASSIC: The Search Continues
@@ -93,8 +81,6 @@ q(415),	-- Rejold's New Brew,		TBC: Rejold's New Brew,		CLASSIC: Rejold's New Br
 q(419),	-- The Lost Pilot,		TBC: The Lost Pilot,		CLASSIC: The Lost Pilot
 q(420),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
-q(436),	-- Ironband's Excavation,		TBC: Ironband's Excavation,		CLASSIC: Ironband's Excavation
-q(455),	-- The Algaz Gauntlet,		TBC: The Algaz Gauntlet,		CLASSIC: The Algaz Gauntlet
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(458),	-- The Woodland Protector,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
@@ -104,7 +90,6 @@ q(463),	-- The Greenwarden,		TBC: The Greenwarden,		CLASSIC: The Greenwarden
 q(464),	-- War Banners,		TBC: War Banners,		CLASSIC: War Banners
 q(465),	-- Nek'rosh's Gambit,		TBC: Nek'rosh's Gambit,		CLASSIC: Nek'rosh's Gambit
 q(467),	-- Stonegear's Search,		TBC: Stonegear's Search,		CLASSIC: Stonegear's Search
-q(468),	-- Report to Mountaineer Rockgar,		TBC: Report to Mountaineer Rockgar,		CLASSIC: Report to Mountaineer Rockgar
 q(469),	-- Daily Delivery,		TBC: Daily Delivery,		CLASSIC: Daily Delivery
 q(470),	-- Digging Through the Ooze,		TBC: Digging Through the Ooze,		CLASSIC: Digging Through the Ooze
 q(472),	-- Fall of Dun Modr,		TBC: Fall of Dun Modr,		CLASSIC: Fall of Dun Modr
@@ -176,7 +161,6 @@ q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CL
 q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(732),	-- Tremors of the Earth,		TBC: Tremors of the Earth,		CLASSIC: Tremors of the Earth
-q(738),	-- Find Agmond,		TBC: Find Agmond,		CLASSIC: Find Agmond
 q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
 q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
 q(781),	-- Attack on Camp Narache,		TBC: Attack on Camp Narache,		CLASSIC: Attack on Camp Narache
@@ -193,7 +177,6 @@ q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(860),	-- Sergra Darkthorn,		TBC: Sergra Darkthorn,		CLASSIC: Sergra Darkthorn
 q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
 q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
-q(912),	-- Stonesplinter Trogg Disguise,		TBC: Stonesplinter Trogg Disguise,		CLASSIC: Stonesplinter Trogg Disguise
 q(916),	-- Webwood Corruption,		TBC: Webwood Venom,		CLASSIC: Webwood Venom
 q(917),	-- Webwood Egg,		TBC: Webwood Egg,		CLASSIC: Webwood Egg
 q(920),	-- Tenaron's Summons,		TBC: Tenaron's Summons,		CLASSIC: Tenaron's Summons
@@ -303,7 +286,6 @@ q(1302),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
 q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1324),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1339),	-- Mountaineer Stormpike's Task,		TBC: Mountaineer Stormpike's Task,		CLASSIC: Mountaineer Stormpike's Task
 q(1360),	-- Reclaimed Treasures,		TBC: Reclaimed Treasures,		CLASSIC: Reclaimed Treasures
 q(1363),	-- Mazen's Behest,		TBC: Mazen's Behest,		CLASSIC: Mazen's Behest
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
@@ -460,7 +442,6 @@ q(2238),	-- Simple Subterfugin',		TBC: Simple Subterfugin',		CLASSIC: Simple Sub
 q(2239),	-- Onin's Report,		TBC: Onin's Report,		CLASSIC: Onin's Report
 q(2241),	-- The Apple Falls,		TBC: The Apple Falls,		CLASSIC: The Apple Falls
 q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
-q(2258),	-- Badlands Reagent Run,		TBC: Badlands Reagent Run,		CLASSIC: Badlands Reagent Run
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
@@ -479,7 +460,6 @@ q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not 
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2480),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
-q(2500),	-- Badlands Reagent Run,		TBC: Badlands Reagent Run,		CLASSIC: Badlands Reagent Run
 q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
 q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
 q(2521),	-- To Serve Kum'isha,		TBC: To Serve Kum'isha,		CLASSIC: To Serve Kum'isha
@@ -558,8 +538,6 @@ q(3117),	-- Etched Sigil,		TBC: Etched Sigil,		CLASSIC: Etched Sigil
 q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
 q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
 q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
-q(3182),	-- Proof of Deed,		TBC: Proof of Deed,		CLASSIC: Proof of Deed
-q(3201),	-- At Last!,		TBC: At Last!,		CLASSIC: At Last!
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3364),	-- Scalding Mornbrew Delivery,		TBC: Scalding Mornbrew Delivery,		CLASSIC: Scalding Mornbrew Delivery
 q(3365),	-- Bring Back the Mug,		TBC: Bring Back the Mug,		CLASSIC: Bring Back the Mug
@@ -1478,7 +1456,6 @@ q(26104),	-- Our Aquatic Neigh-Bors
 q(26109),	-- Land Ho!
 q(26123),	-- When in Vashj'ir...
 q(26151),	-- Dark Letter
-q(26156),	-- All The King's Men
 q(26198),	-- The Arts of a Mage
 q(26200),	-- The Arts of a Priest
 q(26201),	-- The Power of a Warlock
