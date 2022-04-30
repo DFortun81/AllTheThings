@@ -17131,6 +17131,20 @@ function app:GetDataCache()
 			app.ToggleCacheMaps();
 		end
 
+		-- Common Quality Items
+		if app.Categories.CommonQualityItems then
+			db = {};
+			db.expanded = false;
+			db.g = app.Categories.CommonQualityItems;
+			db.name = "Common Quality Items";
+			db.text = db.name;
+			db.description = "Common Quality Items";
+			tinsert(g, db);
+			--app.ToggleCacheMaps(true);
+			--CacheFields(db);
+			--app.ToggleCacheMaps();
+		end
+
 		-- Unsorted
 		if app.Categories.Unsorted then
 			db = {};
