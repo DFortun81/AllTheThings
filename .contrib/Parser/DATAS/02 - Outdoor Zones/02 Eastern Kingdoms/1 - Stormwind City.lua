@@ -398,12 +398,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(325, {	-- Armed and Ready
-					["provider"] = { "n", 1416 },	-- Grimand Elmore
-					["coord"] = { 59.6, 34.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1942, {	-- Astral Knot Garment
 					["sourceQuests"] = { 1940 },	-- Pristine Spider Silk
 					["provider"] = { "n", 1309 },	-- Wynne Larson

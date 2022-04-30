@@ -1,7 +1,6 @@
 --[[
 5.0.3.15890
 q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
-q(5),	-- Jitters' Growling Gut,		TBC: Jitters' Growling Gut,		CLASSIC: Jitters' Growling Gut
 q(6),	-- Bounty on Garrick Padfoot,		TBC: Bounty on Garrick Padfoot,		CLASSIC: Bounty on Garrick Padfoot
 q(7),	-- [DEPRECATED] Kobold Camp Cleanup,		TBC: Kobold Camp Cleanup,		CLASSIC: Kobold Camp Cleanup
 q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
@@ -15,49 +14,15 @@ q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lak
 q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(33),	-- [DEPRECATED] Wolves Across the Border,		TBC: Wolves Across the Border,		CLASSIC: Wolves Across the Border
 q(39),	-- Deliver Thomas' Report,		TBC: Deliver Thomas' Report,		CLASSIC: Deliver Thomas' Report
-q(56),	-- The Night Watch,		TBC: The Night Watch,		CLASSIC: The Night Watch
-q(57),	-- The Night Watch,		TBC: The Night Watch,		CLASSIC: The Night Watch
 q(61),	-- Shipment to Stormwind,		TBC: Shipment to Stormwind,		CLASSIC: Shipment to Stormwind
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(66),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(67),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(68),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(69),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(70),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(72),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
-q(74),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(75),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(78),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(79),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(80),	-- The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
-q(90),	-- Seasoned Wolf Kabobs,		TBC: Seasoned Wolf Kabobs,		CLASSIC: Seasoned Wolf Kabobs
-q(93),	-- Dusky Crab Cakes,		TBC: Dusky Crab Cakes,		CLASSIC: Dusky Crab Cakes
-q(95),	-- Sven's Revenge,		TBC: Sven's Revenge,		CLASSIC: Sven's Revenge
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(97),	-- [DEPRECATED]The Legend of Stalvan,		TBC: The Legend of Stalvan,		CLASSIC: The Legend of Stalvan
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
-q(133),	-- Ghoulish Effigy,		TBC: Ghoulish Effigy,		CLASSIC: Ghoulish Effigy
-q(134),	-- Ogre Thieves,		TBC: Ogre Thieves,		CLASSIC: Ogre Thieves
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(148),	-- Supplies from Darkshire,		TBC: Supplies from Darkshire,		CLASSIC: Supplies from Darkshire
-q(149),	-- Ghost Hair Thread,		TBC: Ghost Hair Thread,		CLASSIC: Ghost Hair Thread
-q(154),	-- Return the Comb,		TBC: Return the Comb,		CLASSIC: Return the Comb
-q(156),	-- Gather Rot Blossoms,		TBC: Gather Rot Blossoms,		CLASSIC: Gather Rot Blossoms
-q(157),	-- Deliver the Thread,		TBC: Deliver the Thread,		CLASSIC: Deliver the Thread
-q(158),	-- Zombie Juice,		TBC: Zombie Juice,		CLASSIC: Zombie Juice
-q(159),	-- Juice Delivery,		TBC: Juice Delivery,		CLASSIC: Juice Delivery
-q(160),	-- Note to the Mayor,		TBC: Note to the Mayor,		CLASSIC: Note to the Mayor
 q(161),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
-q(163),	-- Raven Hill,		TBC: Raven Hill,		CLASSIC: Raven Hill
-q(164),	-- Deliveries to Sven,		TBC: Deliveries to Sven,		CLASSIC: Deliveries to Sven
-q(165),	-- The Hermit,		TBC: The Hermit,		CLASSIC: The Hermit
 q(170),	-- A New Threat,		TBC: A New Threat,		CLASSIC: A New Threat
-q(173),	-- Worgen in the Woods,		TBC: Worgen in the Woods,		CLASSIC: Worgen in the Woods
-q(174),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
-q(175),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
-q(177),	-- [DEPRECATED]Look To The Stars,		TBC: Look To The Stars,		CLASSIC: Look To The Stars
 q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
 q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
 q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
@@ -70,36 +35,19 @@ q(210),	-- Krazek's Cookery,		TBC: Krazek's Cookery,		CLASSIC: Krazek's Cookery
 q(212),	-- A Meal Served Cold,		TBC: A Meal Served Cold,		CLASSIC: A Meal Served Cold
 q(215),	-- Jungle Secrets,		TBC: Jungle Secrets,		CLASSIC: Jungle Secrets
 q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(221),	-- Worgen in the Woods,		TBC: Worgen in the Woods,		CLASSIC: Worgen in the Woods
-q(222),	-- Worgen in the Woods,		TBC: Worgen in the Woods,		CLASSIC: Worgen in the Woods
 q(224),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
-q(225),	-- The Weathered Grave,		TBC: The Weathered Grave,		CLASSIC: The Weathered Grave
-q(226),	-- Wolves at Our Heels,		TBC: Wolves at Our Heels,		CLASSIC: Wolves at Our Heels
-q(227),	-- Morgan Ladimore,		TBC: Morgan Ladimore,		CLASSIC: Morgan Ladimore
-q(228),	-- Mor'Ladim,		TBC: Mor'Ladim,		CLASSIC: Mor'Ladim
-q(229),	-- The Daughter Who Lived,		TBC: The Daughter Who Lived,		CLASSIC: The Daughter Who Lived
-q(230),	-- Sven's Camp,		TBC: Sven's Camp,		CLASSIC: Sven's Camp
 q(233),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
 q(234),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
 q(237),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
-q(240),	-- Return to Jitters,		TBC: Return to Jitters,		CLASSIC: Return to Jitters
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(244),	-- Encroaching Gnolls,		TBC: Encroaching Gnolls,		CLASSIC: Encroaching Gnolls
 q(250),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
-q(251),	-- [DEPRECATED]Translate Abercrombie's Note,		TBC: Translate Abercrombie's Note,		CLASSIC: Translate Abercrombie's Note
-q(252),	-- Translation to Ello,		TBC: Translation to Ello,		CLASSIC: Translation to Ello
 q(255),	-- [DEPRECATED]Mercenaries,		TBC: Mercenaries,		CLASSIC: Mercenaries
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(262),	-- The Shadowy Figure,		TBC: The Shadowy Figure,		CLASSIC: The Shadowy Figure
 q(263),	-- In Defense of the King's Lands,		TBC: In Defense of the King's Lands,		CLASSIC: In Defense of the King's Lands
-q(265),	-- The Shadowy Search Continues,		TBC: The Shadowy Search Continues,		CLASSIC: The Shadowy Search Continues
-q(266),	-- [DEPRECATED]Inquire at the Inn,		TBC: Inquire at the Inn,		CLASSIC: Inquire at the Inn
 q(267),	-- The Trogg Threat,		TBC: The Trogg Threat,		CLASSIC: The Trogg Threat
-q(268),	-- Return to Sven,		TBC: Return to Sven,		CLASSIC: Return to Sven
-q(269),	-- Seeking Wisdom,		TBC: Seeking Wisdom,		CLASSIC: Seeking Wisdom
-q(270),	-- The Doomed Fleet,		TBC: The Doomed Fleet,		CLASSIC: The Doomed Fleet
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(274),	-- A Dark Threat Looms,		TBC: A Dark Threat Looms,		CLASSIC: A Dark Threat Looms
 q(276),	-- Tramping Paws,		TBC: Tramping Paws,		CLASSIC: Tramping Paws
@@ -124,12 +72,9 @@ q(306),	-- In Search of The Excavation Team,		TBC: In Search of The Excavation T
 q(310),	-- Bitter Rivals,		TBC: Bitter Rivals,		CLASSIC: Bitter Rivals
 q(312),	-- Tundra MacGrann's Stolen Stash,		TBC: Tundra MacGrann's Stolen Stash,		CLASSIC: Tundra MacGrann's Stolen Stash
 q(321),	-- Lightforge Iron,		TBC: Lightforge Iron,		CLASSIC: Lightforge Iron
-q(322),	-- Blessed Arm,		TBC: Blessed Arm,		CLASSIC: Blessed Arm
-q(323),	-- Proving Your Worth,		TBC: Proving Your Worth,		CLASSIC: Proving Your Worth
 q(324),	-- The Lost Ingots,		TBC: The Lost Ingots,		CLASSIC: The Lost Ingots
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
-q(337),	-- An Old History Book,		TBC: An Old History Book,		CLASSIC: An Old History Book
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
 q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
 q(345),	-- Ink Supplies,		TBC: Ink Supplies,		CLASSIC: Ink Supplies
@@ -142,7 +87,6 @@ q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the
 q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Head of the Beast
 q(395),	-- Brotherhood's End,		TBC: Brotherhood's End,		CLASSIC: Brotherhood's End
 q(399),	-- Humble Beginnings,		TBC: Humble Beginnings,		CLASSIC: Humble Beginnings
-q(401),	-- Wait for Sirra to Finish,		TBC: Wait for Sirra to Finish,		CLASSIC: Wait for Sirra to Finish
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(413),	-- Shimmer Stout,		TBC: Shimmer Stout,		CLASSIC: Shimmer Stout
 q(414),	-- Stout to Kadrell,		TBC: Stout to Kadrell,		CLASSIC: Stout to Kadrell
@@ -151,7 +95,6 @@ q(419),	-- The Lost Pilot,		TBC: The Lost Pilot,		CLASSIC: The Lost Pilot
 q(420),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
 q(436),	-- Ironband's Excavation,		TBC: Ironband's Excavation,		CLASSIC: Ironband's Excavation
-q(453),	-- Finding the Shadowy Figure,		TBC: Finding the Shadowy Figure,		CLASSIC: Finding the Shadowy Figure
 q(455),	-- The Algaz Gauntlet,		TBC: The Algaz Gauntlet,		CLASSIC: The Algaz Gauntlet
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
@@ -371,7 +314,6 @@ q(1375),	-- Khan Shaka,		TBC: Khan Shaka,		CLASSIC: Khan Shaka
 q(1385),	-- Brutal Politics,		TBC: Brutal Politics,		CLASSIC: Brutal Politics
 q(1386),	-- Assault on the Kolkar,		TBC: Assault on the Kolkar,		CLASSIC: Assault on the Kolkar
 q(1390),	-- <nyi> Oops, We Killed Them Again.,		CLASSIC: <nyi> Oops, We Killed Them Again.
-q(1395),	-- Supplies for Nethergarde,		TBC: Supplies for Nethergarde,		CLASSIC: Supplies for Nethergarde
 q(1396),	-- [DEPRECATED]Encroaching Wildlife,		TBC: Encroaching Wildlife,		CLASSIC: Encroaching Wildlife
 q(1397),	-- <nyi> Saved!,		CLASSIC: <nyi> Saved!
 q(1398),	-- [DEPRECATED]Driftwood,		TBC: Driftwood,		CLASSIC: Driftwood
@@ -400,7 +342,6 @@ q(1471),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1472),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1473),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
 q(1476),	-- Hearts of the Pure,		TBC: Hearts of the Pure,		CLASSIC: Hearts of the Pure
-q(1477),	-- Vital Supplies,		TBC: Vital Supplies,		CLASSIC: Vital Supplies
 q(1478),	-- Halgar's Summons,		TBC: Halgar's Summons,		CLASSIC: Halgar's Summons
 q(1498),	-- Path of Defense,		TBC: Path of Defense,		CLASSIC: Path of Defense
 q(1501),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
