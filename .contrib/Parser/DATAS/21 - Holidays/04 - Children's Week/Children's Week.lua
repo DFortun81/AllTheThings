@@ -81,8 +81,13 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 	-- #else
 	["holidayID"] = 235445,
 	-- #endif
+	-- #if AFTER CATA
+	["description"] = "Start: 05/01 at 12:00 AM\nEnd: 05/07 at 11:59 PM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 1, 5, 8); end]],
+	-- #else
 	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],
+	-- #endif
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
