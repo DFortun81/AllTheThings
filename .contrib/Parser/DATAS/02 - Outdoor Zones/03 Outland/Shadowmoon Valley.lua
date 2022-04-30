@@ -1793,6 +1793,7 @@ root("Zones", {
 					}),
 					q(10651, {	-- Varedis Must Be Stopped (Aldor) (awarded "Borrowed Power" criteria)
 						["qg"] = 21860,	-- Exarch Onaala
+						["coord"] = { 61.2, 29.2, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10650,	-- Return to the Aldor
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
