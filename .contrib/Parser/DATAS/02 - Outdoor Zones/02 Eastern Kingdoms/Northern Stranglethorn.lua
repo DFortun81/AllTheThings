@@ -99,7 +99,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(26746, {	-- A Nose for This Sort of Thing (A)
 					["provider"] = { "n", 43884 },	-- Osborn Obnoticus
-					["coord"] = { 41.8, 23.3, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.13 , 10.56, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26745,	-- Favored Skull
 				}),

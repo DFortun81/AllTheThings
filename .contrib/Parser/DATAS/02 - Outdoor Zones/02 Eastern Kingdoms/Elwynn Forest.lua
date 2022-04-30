@@ -593,6 +593,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(83, {	-- Fine Linen Goods
 					["provider"] = { "n", 278 },	-- Sara Timberlain
+					["coord"] = { 79.45 , 68.73, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(983),		-- Red Linen Sash
