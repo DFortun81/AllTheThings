@@ -5031,6 +5031,28 @@ app.BuildSourceParent = function(group)
 					tinsert(parents, parentNPC);
 				end
 			end
+			-- Things tagged with providers should show the providers as a Source
+			if thing.providers then
+				local type, id;
+				for _,p in ipairs(thing.providers) do
+					type, id = p[1], p[2];
+					-- app.PrintDebug("Root Provider",type,id);
+					local pRef = (type == "i" and app.SearchForObject("itemID", id))
+							or   (type == "o" and app.SearchForObject("objectID", id))
+							or   (type == "n" and app.SearchForObject("npcID", id));
+					if pRef then
+						pRef = CreateObject(pRef);
+						if parents then tinsert(parents, pRef);
+						else parents = { pRef }; end
+					else
+						pRef = (type == "i" and app.CreateItem(id))
+							or   (type == "o" and app.CreateObject(id))
+							or   (type == "n" and app.CreateNPC(id));
+						if parents then tinsert(parents, pRef);
+						else parents = { pRef }; end
+					end
+				end
+			end
 		end
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
 		if parents then
@@ -14540,167 +14562,149 @@ function app:CreateMiniListForGroup(group)
 
 			-- Show Quest Prereqs
 			local gTop;
-			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
-				-- clean out the sub-groups of the root since it will be listed at the top of the popout
-				root.g = nil;
-				gTop = app.NestSourceQuests(root).g or {};
-			elseif root.sourceQuests then
-				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
-				local addedQuests = {};
-				while sourceQuests and #sourceQuests > 0 do
-					subSourceQuests = {}; prereqs = {};
-					for i,sourceQuestID in ipairs(sourceQuests) do
-						if not addedQuests[sourceQuestID] then
-							addedQuests[sourceQuestID] = true;
-							local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-							if qs and #qs > 0 then
-								local i, sq = #qs;
-								while not sq and i > 0 do
-									if qs[i].questID == sourceQuestID then sq = qs[i]; end
-									i = i - 1;
-								end
-								-- just throw every sourceQuest into groups since it's specific questID?
-								-- continue to force collectible though even without quest tracking since it's a temp window
-								-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
-								local found = nil;
-								if sq and sq.questID then
-									if sq.parent and sq.parent.questID == sq.questID then
-										sq = sq.parent;
+			if root.sourceQuests then
+				if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+					-- clean out the sub-groups of the root since it will be listed at the top of the popout
+					root.g = nil;
+					gTop = app.NestSourceQuests(root).g or {};
+				else
+					local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
+					local addedQuests = {};
+					while sourceQuests and #sourceQuests > 0 do
+						subSourceQuests = {}; prereqs = {};
+						for i,sourceQuestID in ipairs(sourceQuests) do
+							if not addedQuests[sourceQuestID] then
+								addedQuests[sourceQuestID] = true;
+								local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+								if qs and #qs > 0 then
+									local i, sq = #qs;
+									while not sq and i > 0 do
+										if qs[i].questID == sourceQuestID then sq = qs[i]; end
+										i = i - 1;
 									end
-									found = sq;
-								end
-								if found
-									-- ensure the character meets the custom collect for the quest
-									and app.CheckCustomCollects(found)
-									-- ensure the current settings do not filter the quest
-									and app.RecursiveGroupRequirementsFilter(found) then
-									sourceQuest = CloneData(found);
-									sourceQuest.visible = true;
-									sourceQuest.hideText = true;
-									if found.sourceQuests and #found.sourceQuests > 0 and
-										(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
-										-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-										for j, subsourceQuests in ipairs(found.sourceQuests) do
-											subSourceQuests[subsourceQuests] = true;
+									-- just throw every sourceQuest into groups since it's specific questID?
+									-- continue to force collectible though even without quest tracking since it's a temp window
+									-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
+									local found = nil;
+									if sq and sq.questID then
+										if sq.parent and sq.parent.questID == sq.questID then
+											sq = sq.parent;
 										end
+										found = sq;
 									end
+									if found
+										-- ensure the character meets the custom collect for the quest
+										and app.CheckCustomCollects(found)
+										-- ensure the current settings do not filter the quest
+										and app.RecursiveGroupRequirementsFilter(found) then
+										sourceQuest = CloneData(found);
+										sourceQuest.visible = true;
+										sourceQuest.hideText = true;
+										if found.sourceQuests and #found.sourceQuests > 0 and
+											(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+											-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+											for j, subsourceQuests in ipairs(found.sourceQuests) do
+												subSourceQuests[subsourceQuests] = true;
+											end
+										end
+									else
+										sourceQuest = nil;
+									end
+								elseif sourceQuestID > 0 then
+									-- Create a Quest Object.
+									sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 								else
-									sourceQuest = nil;
+									-- Create a NPC Object.
+									sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
 								end
-							elseif sourceQuestID > 0 then
-								-- Create a Quest Object.
-								sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
-							else
-								-- Create a NPC Object.
-								sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
-							end
 
-							-- If the quest was valid, attach it.
-							if sourceQuest then tinsert(prereqs, sourceQuest); end
+								-- If the quest was valid, attach it.
+								if sourceQuest then tinsert(prereqs, sourceQuest); end
+							end
+						end
+
+						-- Convert the subSourceQuests table into an array
+						sourceQuests = {};
+						if #prereqs > 0 then
+							for sourceQuestID,i in pairs(subSourceQuests) do
+								tinsert(sourceQuests, tonumber(sourceQuestID));
+							end
+							-- print("Shifted pre-reqs down & next sq layer",#prereqs)
+							-- app.PrintTable(sourceQuests)
+							-- print("---")
+							tinsert(prereqs, {
+								["text"] = L["UPON_COMPLETION"],
+								["description"] = L["UPON_COMPLETION_DESC"],
+								["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+								["visible"] = true,
+								["expanded"] = true,
+								["g"] = g,
+								["hideText"] = true
+							});
+							g = prereqs;
 						end
 					end
 
-					-- Convert the subSourceQuests table into an array
+					-- Clean up the recursive hierarchy. (this removed duplicates)
 					sourceQuests = {};
-					if #prereqs > 0 then
-						for sourceQuestID,i in pairs(subSourceQuests) do
-							tinsert(sourceQuests, tonumber(sourceQuestID));
-						end
-						-- print("Shifted pre-reqs down & next sq layer",#prereqs)
-						-- app.PrintTable(sourceQuests)
-						-- print("---")
-						tinsert(prereqs, {
-							["text"] = L["UPON_COMPLETION"],
-							["description"] = L["UPON_COMPLETION_DESC"],
-							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-							["visible"] = true,
-							["expanded"] = true,
-							["g"] = g,
-							["hideText"] = true
-						});
-						g = prereqs;
-					end
-				end
-
-				-- Clean up the recursive hierarchy. (this removed duplicates)
-				sourceQuests = {};
-				prereqs = g;
-				while prereqs and #prereqs > 0 do
-					for i=#prereqs,1,-1 do
-						local o = prereqs[i];
-						if o.key then
-							sourceQuest = o.key .. o[o.key];
-							if sourceQuests[sourceQuest] then
-								-- Already exists in the hierarchy. Uh oh.
-								table.remove(prereqs, i);
-							else
-								sourceQuests[sourceQuest] = true;
+					prereqs = g;
+					while prereqs and #prereqs > 0 do
+						for i=#prereqs,1,-1 do
+							local o = prereqs[i];
+							if o.key then
+								sourceQuest = o.key .. o[o.key];
+								if sourceQuests[sourceQuest] then
+									-- Already exists in the hierarchy. Uh oh.
+									table.remove(prereqs, i);
+								else
+									sourceQuests[sourceQuest] = true;
+								end
 							end
 						end
-					end
 
-					if #prereqs > 1 then
-						prereqs = prereqs[#prereqs];
-						if prereqs then prereqs = prereqs.g; end
-					else
-						prereqs = prereqs[#prereqs];
-						if prereqs then prereqs = prereqs.g; end
-					end
-				end
-
-				-- Clean up standalone "Upon Completion" headers.
-				prereqs = g;
-				repeat
-					local n = #prereqs;
-					local lastprereq = prereqs[n];
-					if lastprereq.text == "Upon Completion" and n > 1 then
-						table.remove(prereqs, n);
-						local g = prereqs[n-1].g;
-						if not g then
-							g = {};
-							prereqs[n-1].g = g;
-						end
-						if lastprereq.g then
-							for i,data in ipairs(lastprereq.g) do
-								tinsert(g, data);
-							end
-						end
-						prereqs = g;
-					else
-						prereqs = lastprereq.g;
-					end
-				until not prereqs or #prereqs < 1;
-			end
-			-- If the initial quest is provided by an Item, then show that Item directly under the root Quest so it can easily show tooltip/Source information if desired
-			if g[1] and g[1].providers then
-				for _,p in ipairs(g[1].providers) do
-					if p[1] == "i" then
-						-- print("Root Provider",p[1], p[2]);
-						local pRef = app.SearchForObject("itemID", p[2]);
-						if pRef then
-							pRef = CreateObject(pRef);
-							-- Set the full Quest Chain as the child of the Item
-							pRef.g = g;
-							g = { pRef };
+						if #prereqs > 1 then
+							prereqs = prereqs[#prereqs];
+							if prereqs then prereqs = prereqs.g; end
 						else
-							pRef = app.CreateItem(p[2]);
-							-- Set the full Quest Chain as the child of the Item
-							pRef.g = g;
-							g = { pRef };
+							prereqs = prereqs[#prereqs];
+							if prereqs then prereqs = prereqs.g; end
 						end
 					end
+
+					-- Clean up standalone "Upon Completion" headers.
+					prereqs = g;
+					repeat
+						local n = #prereqs;
+						local lastprereq = prereqs[n];
+						if lastprereq.text == "Upon Completion" and n > 1 then
+							table.remove(prereqs, n);
+							local g = prereqs[n-1].g;
+							if not g then
+								g = {};
+								prereqs[n-1].g = g;
+							end
+							if lastprereq.g then
+								for i,data in ipairs(lastprereq.g) do
+									tinsert(g, data);
+								end
+							end
+							prereqs = g;
+						else
+							prereqs = lastprereq.g;
+						end
+					until not prereqs or #prereqs < 1;
 				end
+
+				local questChainHeader = {
+					["text"] = gTop and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
+					["description"] = L["QUEST_CHAIN_REQ_DESC"],
+					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+					["g"] = gTop or g,
+					["hideText"] = true,
+					["OnUpdate"] = app.AlwaysShowUpdate,
+				};
+				NestObject(group, questChainHeader);
 			end
-			local questChainHeader = {
-				["text"] = gTop and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
-				["description"] = L["QUEST_CHAIN_REQ_DESC"],
-				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-				["g"] = gTop or g,
-				["hideText"] = true,
-				["OnUpdate"] = app.AlwaysShowUpdate,
-			};
-			if not group.g then group.g = { questChainHeader }
-			else tinsert(group.g, questChainHeader); end
 		end
 
 		-- Insert the data group into the Raw Data table.
