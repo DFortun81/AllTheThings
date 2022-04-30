@@ -477,7 +477,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 								["timeline"] = { "added 9.2.0" },
 							}),
 							i(185047, {	-- Yak Soul
-								["description"] = "Only confirmed drop on Hard Mode.",
+								["description"] = "Drops on Hard Mode or M+.",
 							}),
 						},
 					}),
