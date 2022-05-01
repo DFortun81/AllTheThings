@@ -396,7 +396,10 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 					{ "n", 22818 },	-- Draenei Orphan
 				},
 				["cr"] = 22819,	-- Orphan Matron Mercy
-				["sourceQuest"] = 10968,	-- Call on the Farseer
+				["sourceQuests"] = {
+					10968,	-- Call on the Farseer
+					10962,	-- Time to Visit the Caverns [Alliance - Draenei]
+				},
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
@@ -505,10 +508,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 					{ "i", 31881 },	-- Draenei Orphan Whistle
 					{ "n", 22818 },	-- Draenei Orphan
 				},
-				["sourceQuests"] = {
-					10956,	-- The Seat of the Naaru
-					10962,	-- Time to Visit the Caverns
-				},
+				["sourceQuest"] = 10956,	-- The Seat of the Naaru
 				["coords"] = {
 					{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
 					{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
