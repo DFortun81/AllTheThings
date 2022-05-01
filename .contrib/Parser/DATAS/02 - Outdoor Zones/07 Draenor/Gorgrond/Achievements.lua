@@ -30,32 +30,6 @@ _.Zones =
 					crit(9),	-- Hunter Bal'ra
 				}),
 				ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
-				ach(9400,  {	-- Gorgrond Monster Hunter
-					crit(1, {	-- Biolante
-						["crs"] = { 75207 }
-					}),
-					crit(2, {	-- Roardan the Sky Terror
-						["crs"] = { 77093 }
-					}),
-					crit(3, {	-- Crater Lord Igneous
-						["crs"] = { 81528 }
-					}),
-					crit(4, {	-- Dessicus of the Dead Pools
-						["crs"] = { 81529 }
-					}),
-					crit(5, {	-- Khargax the Devourer
-						["crs"] = { 81537 }
-					}),
-					crit(6, {	-- Erosian the Violent
-						["crs"] = { 81540 }
-					}),
-					crit(7, {	-- Charl Doomwing
-						["crs"] = { 84151 }
-					}),
-					crit(8, {	-- Fungal Praetorian
-						["crs"] = { 80785 }
-					}),
-				}),
 				ach(9656,  {	-- In Plain Sight (The Pit)
 					["coords"] = {
 						{ 45.8, 27.2, GORGROND },
