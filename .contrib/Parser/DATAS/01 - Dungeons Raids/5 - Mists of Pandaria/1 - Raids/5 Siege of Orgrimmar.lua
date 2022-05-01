@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(MOP_TIER, {
+root(ROOTS.Instances, tier(MOP_TIER, {
 	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
@@ -1825,13 +1825,13 @@ root("Instances", tier(MOP_TIER, {
 						})),
 					}),
 					n(ZONE_DROPS, {
-						-- Confirmed drops are uncommented
+						-- Confirmed drops are uncommented (Remove from NYI below when confirmed)
 						-- i(113224),	-- Aeth's Swiftcinder Cloak
 						-- i(113231),	-- Brave Niunai's Cloak
 						-- i(113226),	-- Cape of the Alpha
 						-- i(113230),	-- Drape of the Omega
 						-- i(113223),	-- Turtleshell Greatcloak
-						-- i(113225),	-- Kalaena's Arcane Handwraps
+						i(113225),	-- Kalaena's Arcane Handwraps [Confirmed 2022-04-28]
 						-- i(113218),	-- Seebo's Sainted Touch
 						i(113220),	-- Crimson Gauntlets of Death
 						-- i(113221),	-- Siid's Silent Stranglers
@@ -3682,18 +3682,18 @@ root("Instances", tier(MOP_TIER, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(MOP_TIER, {
 		q(33345),	-- Dark Shaman Weekly Attempt
 		q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
-	}),	
+	}),
 	tier(LEGION_TIER, {
 		q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
 		q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
 	}),
 });
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(MOP_TIER, {
 		m(556, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
@@ -3704,6 +3704,21 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
 			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+			d(17, {	-- LFR
+				n(ZONE_DROPS, {
+					i(113224),	-- Aeth's Swiftcinder Cloak
+					i(113231),	-- Brave Niunai's Cloak
+					i(113226),	-- Cape of the Alpha
+					i(113230),	-- Drape of the Omega
+					i(113223),	-- Turtleshell Greatcloak
+					i(113218),	-- Seebo's Sainted Touch
+					i(113221),	-- Siid's Silent Stranglers
+					i(113227),	-- Marco's Crackling Gloves
+					i(113228),	-- Gauntlets of Discarded Time
+					i(113219),	-- Romy's Reliable Grips
+					i(113229),	-- Zoid's Molten Gauntlets
+				}),
+			}),
 		}),
 	}),
 }));

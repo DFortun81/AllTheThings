@@ -751,6 +751,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 56.3, 27.3, ZERETH_MORTIS },
 					{ 53.6, 35.9, ZERETH_MORTIS },
 				},
+				["g"] = {
+					i(189158),	-- Glimmer of Cunning
+				},
 			}),
 			o(375290, {	-- Cypher-Bound Chest
 				["coords"] = {

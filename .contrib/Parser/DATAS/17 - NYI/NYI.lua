@@ -2626,9 +2626,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(SL_TIER, 1.5, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
-				tier(SL_TIER, 2.0, {
-					i(190937),	-- Edge of the Enlightened
-				}),
+				-- tier(SL_TIER, 2.0, {
+				-- }),
 			}),
 			n(LEGENDARIES, {
 				-- Stupid Things?
@@ -3237,7 +3236,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 				i(191040),	-- Cache of Sepulcher Treasures
-				i(191041),	-- Cache of Sepulcher Treasures
 				i(190654),	-- Cache of Sepulcher Treasures
 				i(188796),	-- Cypher Test Item
 				i(190823),	-- Firim's Mysterious Cache

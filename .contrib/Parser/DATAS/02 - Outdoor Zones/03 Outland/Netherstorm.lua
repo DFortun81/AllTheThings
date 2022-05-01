@@ -25,22 +25,22 @@ root("Zones", {
 							-- Socrethar
 							10409,	-- Deathblow to the Legion (Aldor)
 							10507,	-- Turning Point (Scryers)
-							
+
 							-- The Violet Tower
 							10240,	-- Building a Perimeter
-							
+
 							-- Building the X-52 Nether-Rocket
 							10221,	-- Dr. Boom!
-								
+
 							-- Protect Area 52!
 							10249,	-- Back to the Chief!
-							
+
 							-- The Consortium
 							10276,	-- Full Triangle
 							10408,	-- Nexus-King Salhadaar
 							10440,	-- Success!
 							10274,	-- Securing the Celestial Ridge
-							
+
 							-- Destroying the All-Devouring
 							10439,	-- Dimensius the All-Devouring
 						},
@@ -916,6 +916,7 @@ root("Zones", {
 					q(10385, {	-- Potential for Brain Damage = High
 						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
 						["sourceQuest"] = 10384,	-- Ethereum Data
+						["coord"] = { 56.8, 38.7, NETHERSTORM },
 					}),
 					q(10300, {	-- Rebuilding the Staff
 						["provider"] = { "n", 19217 },	-- Ravandwyr
@@ -1077,6 +1078,7 @@ root("Zones", {
 					}),
 					q(10339, {	-- The Ethereum
 						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["coord"] = { 59.4, 32.2, NETHERSTORM },
 					}),
 					q(10345, {	-- The Flesh Lies...
 						["provider"] = { "n", 20551 },	-- Agent Araxes

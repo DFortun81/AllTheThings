@@ -15,6 +15,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(190930),	-- Dark Shawl of the Enlightened
 						i(190935),	-- Distinguished Blade of Cartel Al
 						i(190929),	-- Ebony Protocloak
+						i(190937),	-- Edge of the Enlightened
 						i(190234, {	-- Enlightened Portal Research
 							["questID"] = 65617,
 							["requireSkill"] = ENGINEERING,
