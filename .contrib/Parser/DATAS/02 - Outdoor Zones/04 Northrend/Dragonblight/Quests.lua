@@ -880,7 +880,7 @@ _.Zones =
 					["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
-					["sourceQuest"] = 12055,	-- A Strange Device
+					["sourceQuest"] = 12059,	-- A Strange Device
 				}),
 				q(12080, {	-- Really Big Worm
 					["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
