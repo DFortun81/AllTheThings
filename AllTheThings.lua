@@ -3972,17 +3972,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Merge the source group for all matching Sources of the search results
 			local sourceGroup;
 			for i,j in ipairs(group.g or group) do
-				-- print("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
+				-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
 				if sourceID and GroupMatchesParams(j, "s", sourceID) then
-					-- print("sourceID match",sourceID)
+					-- app.PrintDebug("sourceID match",sourceID)
 					if sourceGroup then MergeProperties(sourceGroup, j)
 					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB) then
-					-- print("exact match",paramA,paramB)
+					-- app.PrintDebug("exact match",paramA,paramB)
 					if sourceGroup then MergeProperties(sourceGroup, j, true)
 					else sourceGroup = CreateObject(j); end
 				elseif GroupMatchesParams(j, paramA, paramB, true) then
-					-- print("match",paramA,paramB)
+					-- app.PrintDebug("match",paramA,paramB)
 					if sourceGroup then MergeProperties(sourceGroup, j, true)
 					else sourceGroup = CreateObject(j); end
 				end
@@ -4027,7 +4027,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
-									local otherATTSource = app.SearchForMergedObject("s", otherSourceID);
+									local otherATTSource = app.SearchForObject("s", otherSourceID);
 									if otherATTSource then
 										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
@@ -4087,7 +4087,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
-									local otherATTSource = app.SearchForMergedObject("s", otherSourceID);
+									local otherATTSource = app.SearchForObject("s", otherSourceID);
 									if otherATTSource then
 										-- Show information about the appearance:
 										local failText = "";
