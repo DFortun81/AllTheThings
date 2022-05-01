@@ -1435,40 +1435,40 @@ root("CommonQualityItems", {
 			i(160277),	-- Pirate Bandana (Grey)
 			i(160276),	-- Pirate Bandana (Orange)
 			i(160275),	-- Pirate Bandana (Red)
-			i(160281),	-- "Pirate Bicorne (Forward
-			i(160282),	-- Blue)"
-			i(160283),	-- "Pirate Bicorne (Forward
-			i(160284),	-- Brown)"
-			i(160285),	-- "Pirate Bicorne (Forward
-			i(160272),	-- Green)"
-			i(160271),	-- "Pirate Bicorne (Forward
-			i(160273),	-- Grey)"
-			i(160274),	-- "Pirate Bicorne (Forward
-			i(160222),	-- Red)"
-			i(160291),	-- "Pirate Bicorne (Side
-			i(160293),	-- Black)"
-			i(160294),	-- "Pirate Bicorne (Side
-			i(160295),	-- Blue)"
-			i(160297),	-- "Pirate Bicorne (Side
-			i(160296),	-- Brown)"
-			i(160221),	-- "Pirate Bicorne (Side
-			i(160287),	-- Green)"
-			i(160288),	-- Pirate Boots
-			i(162608),	-- Pirate Flared Tricorne (Blue)
-			i(162605),	-- Pirate Flared Tricorne (Brown)
-			i(162609),	-- Pirate Flared Tricorne (Green)
-			i(162607),	-- Pirate Flared Tricorne (Grey)
-			i(162610),	-- "Pirate Flared Tricorne (Red
-			i(135550),	-- Military)"
-			i(135549),	-- Pirate Flared Tricorne (Red)
-			i(135547),	-- Pirate Gloves
-			i(135522),	-- Pirate Tricorne (Brown)
-			i(135548),	-- Pirate Tricorne (Green)
-			i(169924),	-- Tidesage Belt
-			i(175262),	-- Tidesage Boots
-			i(175263),	-- Tidesage Gloves
-			i(175264),	-- Tidesage Hood
-			i(135510),	-- Tidesage Pants
+			i(160281),	-- Pirate Bicorne (Forward, Blue)
+			i(160282),	-- Pirate Bicorne (Forward, Brown)
+			i(160283),	-- Pirate Bicorne (Forward, Green)
+			i(160284),	-- Pirate Bicorne (Forward, Grey)
+			i(160285),	-- Pirate Bicorne (Forward, Red)
+			i(160272),	-- Pirate Bicorne (Side, Black)
+			i(160271),	-- Pirate Bicorne (Side, Blue)
+			i(160273),	-- Pirate Bicorne (Side, Brown)
+			i(160274),	-- Pirate Bicorne (Side, Green)
+			i(160222),	-- Pirate Boots
+			i(160291),	-- Pirate Flared Tricorne (Blue)
+			i(160293),	-- Pirate Flared Tricorne (Brown)
+			i(160294),	-- Pirate Flared Tricorne (Green)
+			i(160295),	-- Pirate Flared Tricorne (Grey)
+			i(160297),	-- Pirate Flared Tricorne (Red, Military)
+			i(160296),	-- Pirate Flared Tricorne (Red)
+			i(160221),	-- Pirate Gloves
+			i(160287),	-- Pirate Tricorne (Brown)
+			i(160288),	-- Pirate Tricorne (Green)
+			i(162608),	-- Tidesage Belt
+			i(162605),	-- Tidesage Boots
+			i(162609),	-- Tidesage Gloves
+			i(162607),	-- Tidesage Hood
+			i(162610),	-- Tidesage Pants
+			i(135550),	-- Transmog UI Feet Item
+			i(135549),	-- Transmog UI Hand Item
+			i(135547),	-- Transmog UI Head Item
+			i(135522),	-- Transmog UI Chest Item
+			i(135548),	-- Transmog UI Legs Item
+			i(169924),	-- Transmog UI Trim Head Item
+			i(175262),	-- Transmog UI Trim Head Item
+			i(175263),	-- Transmog UI Trim Head Item
+			i(175264),	-- Transmog UI Trim Head Item
+			i(135510),	-- Transmog UI Trim Head Item
 		}),
 		filter(MISC, {
 			i(180596),	-- Sootible Hat
