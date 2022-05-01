@@ -1062,7 +1062,7 @@ for key, value in pairs({
 	[180793] = "节日礼物",	-- Festive Gift
 	[180794] = "詹迪斯·巴罗夫的日记",	-- Journal of Jandice Barov	--TODO: This was taken from classic Wowhead
 	[180918] = "通缉：饥饿者泰里斯",	-- Wanted: Thaelis the Hungerer
-	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was manually translated
+	[181011] = "魔导师达斯维瑟的日记",	-- Magister Duskwither's Journal	--TODO: This was taken from tbc Wowhead
 	[181073] = "薰炉",	-- Fragrant Cauldron	--TODO: This was taken from tbc Wowhead
 	[181074] = "竞技场的泥土",	-- Arena Spoils	--TODO: This was taken from classic Wowhead
 	--TODO: [181083] = "Sothos and Jarien's Heirlooms",	-- Sothos and Jarien's Heirlooms
