@@ -1396,6 +1396,166 @@ root("CommonQualityItems", {
 			i(2584),	-- Woolen Cape
 			i(53398),	-- Zen'Taji's Cloak
 		}),
+		--filter(SHIRTS, {	
+		--}),
+		filter(TABARDS, {
+			i(168100),	-- Alliance Tabard
+			i(178120),	-- Horde Tabard
+			i(64310),	-- No Tabard
+		}),
+		filter(COSMETIC, {
+			i(160227),	-- Bilge Rat Belt
+			i(158939),	-- Bilge Rat Hat
+			i(160224),	-- Bilge Rat Hat
+			i(160226),	-- Bilge Rat Pants
+			i(160225),	-- Bilge Rat Shirt
+			i(160231),	-- Blacktooth Belt
+			i(160232),	-- Blacktooth Hat
+			i(158938),	-- Blacktooth Hat
+			i(160230),	-- Blacktooth Pants
+			i(114985),	-- Bow Tie
+			i(155683),	-- Cutwater Hat
+			i(160247),	-- Cutwater Hat
+			i(160223),	-- Cutwater Pants
+			i(160220),	-- Cutwater Shirt
+			i(168004),	-- Gift of N'Zoth
+			i(153355),	-- Irontide Hat
+			i(160248),	-- Irontide Hat
+			i(160229),	-- Irontide Pants
+			i(160228),	-- Irontide Shirt
+			i(171261),	-- Loyalist Belt
+			i(171260),	-- Loyalist Gloves
+			i(171251),	-- Loyalist Hood
+			i(171255),	-- Loyalist Chest
+			i(171256),	-- Loyalist Legs
+			i(171252),	-- Loyalist Shoulders
+			i(160280),	-- Pirate Bandana (Black)
+			i(160279),	-- Pirate Bandana (Blue)
+			i(160278),	-- Pirate Bandana (Green)
+			i(160277),	-- Pirate Bandana (Grey)
+			i(160276),	-- Pirate Bandana (Orange)
+			i(160275),	-- Pirate Bandana (Red)
+			i(160281),	-- "Pirate Bicorne (Forward
+			i(160282),	-- Blue)"
+			i(160283),	-- "Pirate Bicorne (Forward
+			i(160284),	-- Brown)"
+			i(160285),	-- "Pirate Bicorne (Forward
+			i(160272),	-- Green)"
+			i(160271),	-- "Pirate Bicorne (Forward
+			i(160273),	-- Grey)"
+			i(160274),	-- "Pirate Bicorne (Forward
+			i(160222),	-- Red)"
+			i(160291),	-- "Pirate Bicorne (Side
+			i(160293),	-- Black)"
+			i(160294),	-- "Pirate Bicorne (Side
+			i(160295),	-- Blue)"
+			i(160297),	-- "Pirate Bicorne (Side
+			i(160296),	-- Brown)"
+			i(160221),	-- "Pirate Bicorne (Side
+			i(160287),	-- Green)"
+			i(160288),	-- Pirate Boots
+			i(162608),	-- Pirate Flared Tricorne (Blue)
+			i(162605),	-- Pirate Flared Tricorne (Brown)
+			i(162609),	-- Pirate Flared Tricorne (Green)
+			i(162607),	-- Pirate Flared Tricorne (Grey)
+			i(162610),	-- "Pirate Flared Tricorne (Red
+			i(135550),	-- Military)"
+			i(135549),	-- Pirate Flared Tricorne (Red)
+			i(135547),	-- Pirate Gloves
+			i(135522),	-- Pirate Tricorne (Brown)
+			i(135548),	-- Pirate Tricorne (Green)
+			i(169924),	-- Tidesage Belt
+			i(175262),	-- Tidesage Boots
+			i(175263),	-- Tidesage Gloves
+			i(175264),	-- Tidesage Hood
+			i(135510),	-- Tidesage Pants
+		}),
+		filter(MISC, {
+			i(180596),	-- Sootible Hat
+			i(34828),	-- Antique Silver Cufflinks
+			i(164308),	-- Art Template Cloth Head - Helm_Misc_PigNoseMask_A_01
+			i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
+			i(81862),	-- Art Template Robe Dress_B_03 - Blue
+			i(45998),	-- Battered Jungle Hat
+			i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
+			i(54441),	-- Black Embersilk Gown
+			i(6835),	-- Black Tuxedo Pants
+			i(151594),	-- Blighthead Bitter Wounds Mask
+			i(151592),	-- Blighthead Electric Beehive Mask
+			i(151593),	-- Blighthead Grim Smile Mask
+			i(151597),	-- Blighthead Mohawk Mask
+			i(151598),	-- Blighthead Romero Mask
+			i(151596),	-- Blighthead Slack-Jaw Mask
+			i(34008),	-- Blix's Eyesight Enhancing Romance Goggles
+			i(23909),	-- Blood Elf Bandit Mask
+			i(156724),	-- Blue Crystal Monocle
+			i(22281),	-- Blue Dinner Suit
+			i(19697),	-- Bounty of the Harvest
+			i(33105),	-- Budd's Guise of Zul'aman
+			i(44692),	-- Dalaran Nurse's Gown
+			i(13896),	-- Dark Green Wedding Hanbok
+			i(151595),	-- Devlynn Styx Mask
+			i(44737),	-- Draenic Silk Robes
+			i(19028),	-- Elegant Dress
+			i(21154),	-- Festival Dress
+			i(21542),	-- Festival Suit
+			i(139305),	-- Finely-Tailored Green Holiday Belt
+			i(139303),	-- Finely-Tailored Green Holiday Boots
+			i(139296),	-- Finely-Tailored Green Holiday Pants
+			i(139294),	-- Finely-Tailored Green Holiday Shirt
+			i(139298),	-- Finely-Tailored Green Holiday Shorts
+			i(139304),	-- Finely-Tailored Red Holiday Belt
+			i(139301),	-- Finely-Tailored Red Holiday Boots
+			i(139295),	-- Finely-Tailored Red Holiday Pants
+			i(139293),	-- Finely-Tailored Red Holiday Shirt
+			i(139297),	-- Finely-Tailored Red Holiday Shorts
+			i(13895),	-- Formal Dangui
+			i(69865),	-- Gem Studded Bracelets
+			i(156727),	-- Green Crystal Monocle
+			i(13900),	-- Green Wedding Hanbok
+			i(34087),	-- Green Winter Clothes
+			i(54451),	-- High Society Top Hat
+			i(60734),	-- Keeshan's Bandana
+			i(168121),	-- Light Tome
+			i(58255),	-- Lord Walden's Top Hat
+			i(22279),	-- Lovely Black Dress
+			i(22278),	-- Lovely Blue Dress
+			i(49916),	-- Lovely Charm Bracelet
+			i(22280),	-- Lovely Purple Dress
+			i(22276),	-- Lovely Red Dress
+			i(5514),	-- Mana Agate
+			i(43486),	-- Mohawk Mask
+			i(21040),	-- Narain's Robe
+			i(21039),	-- Narain's Turban
+			i(34827),	-- Noble's Monocle
+			i(59600),	-- Phosphora Fedora
+			i(22282),	-- Purple Dinner Suit
+			i(44648),	-- Purple Turban
+			i(156725),	-- Red Crystal Monocle
+			i(22277),	-- Red Dinner Suit
+			i(13899),	-- Red Traditional Hanbok
+			i(34085),	-- Red Winter Clothes
+			i(13898),	-- Royal Dangui
+			i(110427),	-- Safari Hat
+			i(10053),	-- Simple Black Dress
+			i(6786),	-- Simple Dress
+			i(38160),	-- Soul-Trader's Bindings
+			i(38162),	-- Soul-Trader's Boots
+			i(38161),	-- Soul-Trader's Gloves
+			i(38163),	-- Soul-Trader's Head Wrap
+			i(38286),	-- Soul-Trader's Pauldrons
+			i(38285),	-- Soul-Trader's Waistband
+			i(30719),	-- Spectrecles
+			i(30721),	-- Spectrecles
+			i(46735),	-- Synthebrew Goggles
+			i(138730),	-- Synthebrew Goggles XL
+			i(69864),	-- Tarnished Crown
+			i(44647),	-- Violet Hat
+			i(13897),	-- White Traditional Hanbok
+			i(6787),	-- White Woolen Dress
+			i(34086),	-- Winter Boots
+			i(156726),	-- Yellow Crystal Monocle
+		}),
 		filter(51, {	-- Neck
 			i(16787),	-- Amulet of Draconic Subversion
 			i(27941),	-- Compassionate Critter's Friend

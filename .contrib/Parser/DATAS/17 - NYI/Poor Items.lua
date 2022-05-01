@@ -1,6 +1,6 @@
------------------------------------------------------------------------
+-------------------------------------------------------------------
 --       P O O R   Q U A L I T Y   I T E M S   M O D U L E       --
------------------------------------------------------------------------
+-------------------------------------------------------------------
 
 root("PoorQualityItems", {
 	n(ARMOR, {
@@ -1145,6 +1145,26 @@ root("PoorQualityItems", {
 			i(1505),	-- Warped Cloak
 			i(1733),	-- Worn Cloak
 			i(1421),	-- Worn Hide Cloak
+		}),
+		filter(SHIRTS, {
+			i(129294),	-- Bonespeaker Tattoos
+			i(17),		-- Martin Fury
+			i(137552),	-- Purple Shirt
+			i(137118),	-- The Crone's Shirt
+		}),
+		filter(TABARDS, {
+			i(107897),	-- Slave Tabard
+		}),
+		filter(COSMETIC, {
+			i(182306),	-- Monster Mantle
+			i(162606),	-- Tidesage Chest
+		}),
+		filter(MISC, {
+			i(153169),	-- Commemorative Jed'hin Belt
+			i(153170),	-- Jed'hin Headguard
+			i(182320),	-- Monster - Warfronts Mythic Plague Doctor Mask
+			i(7997),	-- Red Defias Mask
+			i(151397),	-- Sweaty Wristbands
 		}),
 		filter(51, {	-- Neck
 			i(67388),	-- String of Alligator Teeth
