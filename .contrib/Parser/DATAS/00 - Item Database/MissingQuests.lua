@@ -39,27 +39,10 @@ q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(276),	-- Tramping Paws,		TBC: Tramping Paws,		CLASSIC: Tramping Paws
-q(277),	-- Fire Taboo,		TBC: Fire Taboo,		CLASSIC: Fire Taboo
-q(279),	-- Claws from the Deep,		TBC: Claws from the Deep,		CLASSIC: Claws from the Deep
-q(281),	-- Reclaiming Goods,		TBC: Reclaiming Goods,		CLASSIC: Reclaiming Goods
 q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
-q(284),	-- The Search Continues,		TBC: The Search Continues,		CLASSIC: The Search Continues
-q(285),	-- Search More Hovels,		TBC: Search More Hovels,		CLASSIC: Search More Hovels
 q(287),	-- Frostmane Hold,		TBC: Frostmane Hold,		CLASSIC: Frostmane Hold
-q(288),	-- The Third Fleet,		TBC: The Third Fleet,		CLASSIC: The Third Fleet
-q(289),	-- The Cursed Crew,		TBC: The Cursed Crew,		CLASSIC: The Cursed Crew
-q(290),	-- Lifting the Curse,		TBC: Lifting the Curse,		CLASSIC: Lifting the Curse
-q(292),	-- The Eye of Paleth,		TBC: The Eye of Paleth,		CLASSIC: The Eye of Paleth
-q(294),	-- Ormer's Revenge,		TBC: Ormer's Revenge,		CLASSIC: Ormer's Revenge
-q(295),	-- Ormer's Revenge,		TBC: Ormer's Revenge,		CLASSIC: Ormer's Revenge
-q(303),	-- The Dark Iron War,		TBC: The Dark Iron War,		CLASSIC: The Dark Iron War
-q(305),	-- In Search of The Excavation Team,		TBC: In Search of The Excavation Team,		CLASSIC: In Search of The Excavation Team
-q(306),	-- In Search of The Excavation Team,		TBC: In Search of The Excavation Team,		CLASSIC: In Search of The Excavation Team
 q(310),	-- Bitter Rivals,		TBC: Bitter Rivals,		CLASSIC: Bitter Rivals
 q(312),	-- Tundra MacGrann's Stolen Stash,		TBC: Tundra MacGrann's Stolen Stash,		CLASSIC: Tundra MacGrann's Stolen Stash
-q(321),	-- Lightforge Iron,		TBC: Lightforge Iron,		CLASSIC: Lightforge Iron
-q(324),	-- The Lost Ingots,		TBC: The Lost Ingots,		CLASSIC: The Lost Ingots
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
@@ -86,15 +69,7 @@ q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of 
 q(458),	-- The Woodland Protector,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
 q(459),	-- Demonic Thieves,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
 q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(463),	-- The Greenwarden,		TBC: The Greenwarden,		CLASSIC: The Greenwarden
-q(464),	-- War Banners,		TBC: War Banners,		CLASSIC: War Banners
-q(465),	-- Nek'rosh's Gambit,		TBC: Nek'rosh's Gambit,		CLASSIC: Nek'rosh's Gambit
 q(467),	-- Stonegear's Search,		TBC: Stonegear's Search,		CLASSIC: Stonegear's Search
-q(469),	-- Daily Delivery,		TBC: Daily Delivery,		CLASSIC: Daily Delivery
-q(470),	-- Digging Through the Ooze,		TBC: Digging Through the Ooze,		CLASSIC: Digging Through the Ooze
-q(472),	-- Fall of Dun Modr,		TBC: Fall of Dun Modr,		CLASSIC: Fall of Dun Modr
-q(473),	-- Report to Captain Stoutfist,		TBC: Report to Captain Stoutfist,		CLASSIC: Report to Captain Stoutfist
-q(484),	-- Young Crocolisk Skins,		TBC: Young Crocolisk Skins,		CLASSIC: Young Crocolisk Skins
 q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(500),	-- [DEPRECATED] Crushridge Bounty,		TBC: Crushridge Bounty,		CLASSIC: Crushridge Bounty
@@ -105,7 +80,6 @@ q(514),	-- [DEPRECATED] Letter to Stormpike,		TBC: Letter to Stormpike,		CLASSIC
 q(522),	-- [DEPRECATED] Assassin's Contract,		TBC: Assassin's Contract,		CLASSIC: Assassin's Contract
 q(523),	-- [DEPRECATED] Baron's Demise,		TBC: Baron's Demise,		CLASSIC: Baron's Demise
 q(525),	-- Further Mysteries,		TBC: Further Mysteries,		CLASSIC: Further Mysteries
-q(526),	-- Lightforge Ingots,		TBC: Lightforge Ingots,		CLASSIC: Lightforge Ingots
 q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(536),	-- [DEPRECATED] Down the Coast,		TBC: Down the Coast,		CLASSIC: Down the Coast
 q(537),	-- [DEPRECATED] Dark Council,		TBC: Dark Council,		CLASSIC: Dark Council
@@ -129,9 +103,6 @@ q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(616),	-- The Haunted Isle,		TBC: The Haunted Isle,		CLASSIC: The Haunted Isle
 q(623),	-- Akiris by the Bundle,		TBC: Akiris by the Bundle,		CLASSIC: Akiris by the Bundle
 q(627),	-- Favor for Krazek,		TBC: Favor for Krazek,		CLASSIC: Favor for Krazek
-q(631),	-- The Thandol Span,		TBC: The Thandol Span,		CLASSIC: The Thandol Span
-q(632),	-- The Thandol Span,		TBC: The Thandol Span,		CLASSIC: The Thandol Span
-q(634),	-- Plea To The Alliance,		TBC: Plea To The Alliance,		CLASSIC: Plea To The Alliance
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(637),	-- Sully Balloo's Letter,		TBC: Sully Balloo's Letter,		CLASSIC: Sully Balloo's Letter
 q(657),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
@@ -249,13 +220,10 @@ q(1245),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Miss
 q(1246),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1247),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1248),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1249),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1250),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1252),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
 q(1253),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1259),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
 q(1260),	-- [DEPRECATED]Morgan Stern,		TBC: Morgan Stern,		CLASSIC: Morgan Stern
-q(1264),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1265),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1266),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1274),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat

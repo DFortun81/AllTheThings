@@ -583,15 +583,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5630)),	-- Windfelt Gloves
 					},
 				}),
-				q(943,   {	-- The Absent Minded Prospector
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 2911 },	-- Archaeologist Flagongut
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5627)),	-- Relic Blade
-						un(REMOVED_FROM_GAME, i(5626)),	-- Skullchipper
-					},
-				}),
 				q(13911, {	-- The Absent-Minded Prospector
 					["provider"] = { "n", 34343 },	-- Prospector Remtravel
 					["coord"] = { 37.6, 82.9, DARKSHORE },

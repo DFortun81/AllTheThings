@@ -304,6 +304,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 2766 },	-- Lolo the Lookout
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(647, {	-- MacKreel's Moonshine
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(697, {	-- Malin's Request
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
@@ -818,23 +821,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if AFTER 4.0.3
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 42.6, 90.6, ARATHI_HIGHLANDS },
 					["groups"] = {
+						i(11150),	-- Formula: Enchant Gloves - Mining
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),
 						i(4825, {	-- Callous Axe
 							["isLimited"] = true,
 						}),
+						i(4826, {	-- Marauder Axe
+							["isLimited"] = true,
+						}),
 						i(4835, {	-- Elite Shoulders
 							["isLimited"] = true,
 						}),
-						i(11150),	-- Formula: Enchant Gloves - Mining
 						i(4833, {	-- Glorious Shoulders
-							["isLimited"] = true,
-						}),
-						i(4826, {	-- Marauder Axe
 							["isLimited"] = true,
 						}),
 						i(4832, {	-- Mystic Sarong
@@ -848,6 +852,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #endif
 				n(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
 					["coord"] = { 40.6, 48.2, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
