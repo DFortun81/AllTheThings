@@ -494,6 +494,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
@@ -618,6 +619,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the docks of Ratchet in the Barrens.
@@ -635,6 +637,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
@@ -708,6 +711,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Jaina's Autograph
@@ -1034,6 +1038,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { WESTFALL },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Westfall Lighthouse.
@@ -1114,6 +1119,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
@@ -1323,6 +1329,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.
