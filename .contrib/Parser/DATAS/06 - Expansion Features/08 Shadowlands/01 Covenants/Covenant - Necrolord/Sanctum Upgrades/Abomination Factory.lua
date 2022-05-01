@@ -474,7 +474,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
 								["cost"] = { { "i", 178554, 1 } },	-- Call Chordy
 								["crs"] = {
-									158259,	-- Chrody (as pet)
+									158259,	-- Chordy (as pet)
 									161270,	-- Chordy (in world)
 									167828,	-- Salvageable Items (lootable treasure in world)
 								},
@@ -825,7 +825,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								n(161270, {	-- Chordy
 									["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
 									["crs"] = {
-										158259,	-- Chrody (as pet)
+										158259,	-- Chordy (as pet)
 										161270,	-- Chordy (in world)
 										167828,	-- Salvageable Items (lootable treasure in world)
 									},
