@@ -1784,7 +1784,8 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	--root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	root("Professions", p);
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
