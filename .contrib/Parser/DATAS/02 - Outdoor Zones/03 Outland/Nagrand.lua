@@ -941,6 +941,8 @@ root("Zones", {
 						["lockCriteria"] = { 1, "lvl", 50 },
 					}),
 					q(9867,  {	-- Murkblood Leaders..
+						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
 						["provider"] = { "n", 18068 },	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
 						["races"] = HORDE_ONLY,
@@ -1156,6 +1158,7 @@ root("Zones", {
 						},
 					}),
 					q(9888,  {	-- The Impotent Leader
+						["description"] = "Completing this quest will grant Neutral with The Mag'har.",
 						["provider"] = { "n", 18106 },	-- Jorin Deadeye
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
@@ -1176,6 +1179,8 @@ root("Zones", {
 						["sourceQuest"] = 9999,	-- Buying Time
 					}),
 					q(9864,  {	-- The Missing War Party
+						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
 						["provider"] = { "n", 18067 },	-- Farseer Corhuk <The Lightning Sons>
 						["coord"] = { 54.8, 39.8, NAGRAND },
 						["races"] = HORDE_ONLY,
@@ -1386,6 +1391,8 @@ root("Zones", {
 						["sourceQuest"] = 10045,	-- Material Components
 					}),
 					q(9863,  {	-- Vile Idolatry
+						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
+						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
 						["provider"] = { "n", 18066 },	-- Farseer Kurkush <The Lightning Sons>
 						["coord"] = { 54.8, 39.4, NAGRAND },
 						["races"] = HORDE_ONLY,
