@@ -501,11 +501,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 				}),
-				q(7729, {	-- JOB OPPORTUNITY: Culling the Competition
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
-				}),
 				q(3822, {	-- Krom'Grul
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -947,11 +942,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 				}),
-				q(7722, {	-- What the Flux?
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 14624 },	-- Master Smith Burninate
-				}),
 				q(44927, {	-- Worth Its Weight in Steel
 					["provider"] = { "n", 115805 },	-- Hoddruc Bladebender
 					["coord"] = { 46.8, 44.9, BURNING_STEPPES },
@@ -1054,7 +1044,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 22.6, 41.8, BURNING_STEPPES },
 					},
 					["groups"] = {
-						i(12828, {	-- Plans: Volcanic Hammer 
+						i(12828, {	-- Plans: Volcanic Hammer
 							["timeline"] = {
 								"added 1.0.0",
 								"removed 7.3.5",
