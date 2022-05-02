@@ -79,6 +79,13 @@ namespace ATT
                     return;
                 }
 
+                var referenceFileName = $"{databaseRootFolder}\\Retail Database References.lua";
+                if (luaFiles.Contains(referenceFileName))
+                {
+                    luaFiles.Remove(referenceFileName);
+                    luaFiles.Insert(0, referenceFileName);
+                }
+
                 Lua lua = new Lua();
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
 

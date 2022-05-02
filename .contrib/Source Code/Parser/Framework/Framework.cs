@@ -642,7 +642,7 @@ namespace ATT
                         break;
                     // Future Unobtainable
                     case 6:
-                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
+                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
                         break;
                     // Removed From Game
                     case 2:
