@@ -596,6 +596,12 @@ namespace ATT
                         case "deleted":
                             {
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 4;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
                                 break;
                             }
                         case "removed":
