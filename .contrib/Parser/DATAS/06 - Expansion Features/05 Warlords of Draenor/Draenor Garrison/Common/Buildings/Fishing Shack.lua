@@ -260,6 +260,7 @@ _.ExpansionFeatures =
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(67410),	-- Very Unlucky Rock
 									}),
 								},
 							}),
@@ -278,6 +279,7 @@ _.ExpansionFeatures =
 											["collectible"] = false,
 											["u"] = 15,
 										}),
+										i(67410),	-- Very Unlucky Rock
 									}),
 								},
 							}),
