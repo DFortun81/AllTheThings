@@ -1736,13 +1736,13 @@ _.Zones =
 						},
 					}),
 					q(40193,  {	-- Getting the Kinks Out
-						["sourceQuests"] = { 40189 },	-- Claw of the Land
+						["sourceQuests"] = { 40189 },	-- Naga Know-How
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["isBreadcrumb"] = true,
 					}),
 					q(40194, {	-- Reclaimed Cargo
-						["sourceQuests"] = { 40193 },	-- Naga Know-How
+						["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
