@@ -592,6 +592,11 @@ namespace ATT
                 const string DebugFormat = "Automated Recipe - RecipeID:{0},ItemID:{1},Method:{2}";
                 data.TryGetValue("itemID", out object itemID);
                 data.TryGetValue("spellID", out long spellID);
+                // If the data was tagged directly with recipeID, use that as a fallback to spellID from DB info
+                if (spellID == 0)
+                {
+                    data.TryGetValue("recipeID", out spellID);
+                }
                 // get the name of the recipe item (i.e. Technique: blah blah)
                 Items.TryGetName(data, out string recipeItemName);
                 recipeID = 0;
