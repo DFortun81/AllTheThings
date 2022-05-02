@@ -320,7 +320,15 @@ itemrecipe(21992, 27032, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Nether
 -- #if AFTER 3.1.0.9767
 itemrecipe(22012, 0, "removed 3.1.0.9767", TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
 -- #else
-itemrecipe(22012, 27029, "removed 3.1.0.9767", TBC_PHASE_ONE).rank = 5;	-- Master First Aid - Doctor in the House
+local masterFirstAid = itemrecipe(22012, 27029, "removed 3.1.0.9767", TBC_PHASE_ONE);
+masterFirstAid.rank = 5;	-- Master First Aid - Doctor in the House
+masterFirstAid.OnUpdate = [[function(t)
+	local skills = _.CurrentCharacter.ActiveSkills[3273];
+	if skills and skills[2] >= 375 then
+		_.CurrentCharacter.Spells[t.spellID] = 1;
+		ATTAccountWideData.Spells[t.spellID] = 1;
+	end
+end]];
 -- #endif
 -- #endif
 

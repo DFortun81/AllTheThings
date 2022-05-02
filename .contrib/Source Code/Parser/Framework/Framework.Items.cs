@@ -811,6 +811,13 @@ namespace ATT
                             break;
                         }
 
+                    // Functions
+                    case "OnClick":
+                    case "OnUpdate":
+                    case "OnTooltip":
+                        data[field] = value;
+                        break;
+
                     // IMPORTANT: Parse Source ID!
                     case "modIDs":
                         {
