@@ -1568,6 +1568,12 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
+local function GetRemovedWithPatchString(rwp)
+	if rwp then
+		rwp = tonumber(rwp);
+		return "This gets removed in patch " .. math.floor(rwp / 10000) .. "." .. (math.floor(rwp / 100) % 10) .. "." .. (rwp % 10);
+	end
+end
 app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
@@ -4497,6 +4503,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
+		end
+		if group.rwp then
+			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = "FFFFAAAA" });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -15749,6 +15758,20 @@ RowOnEnter = function (self)
 		-- Description
 		if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
 			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+		end
+		if reference.rwp then
+			local found = false;
+			local rwp = GetRemovedWithPatchString(reference.rwp);
+			for i=1,GameTooltip:NumLines() do
+				if _G["GameTooltipTextLeft"..i]:GetText() == rwp then
+					found = true;
+					break;
+				end
+			end
+			if not found then
+				local a,r,g,b = HexToARGB("FFFFAAAA");
+				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
+			end
 		end
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
