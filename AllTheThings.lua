@@ -11616,6 +11616,7 @@ local fields = {
 	["key"] = function(t)
 		return "professionID";
 	end,
+	--[[
 	["name"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(1, GetSpellInfo(t.professionID)); end
 		if t.professionID == 129 then return select(1, GetSpellInfo(t.spellID)); end
@@ -11625,6 +11626,13 @@ local fields = {
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
 		if t.professionID == 129 then return select(3, GetSpellInfo(t.spellID)); end
 		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+	end,
+	]]--
+	["name"] = function(t)
+		return t.spellID ~= 2366 and select(1, GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
