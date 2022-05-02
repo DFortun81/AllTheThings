@@ -15,6 +15,9 @@ _.WorldDrops =
 			i(20768, {	--	Rabbit's Foot
 				["description"] = "Drops from wolves or dogs in Classic zones.",
 			}),
+			i(11406, {	--	Rotting Bear Carcass
+				["description"] = "Drops from bears in Classic zones.",
+			}),
 		}),
 	}),
 };
