@@ -10468,13 +10468,17 @@ app.CreateToy = function(id, t)
 end
 end)();
 
-local HarvestedItemDatabase = {};
+local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local itemHarvesterFields = RawCloneData(itemFields);
 itemHarvesterFields.visible = app.ReturnTrue;
 itemHarvesterFields.collectible = app.ReturnTrue;
 itemHarvesterFields.collected = app.ReturnFalse;
 itemHarvesterFields.text = function(t)
+	-- delayed localization since ATT's globals don't exist when this logic is processed on load
+	if not HarvestedItemDatabase then
+		HarvestedItemDatabase = LocalizeGlobal("AllTheThingsHarvestItems", true);
+	end
 	local link = t.link;
 	if link then
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
@@ -10525,7 +10529,6 @@ itemHarvesterFields.text = function(t)
 			t.info = info;
 			t.retries = nil;
 			HarvestedItemDatabase[t.itemID] = info;
-			AllTheThingsHarvestItems = HarvestedItemDatabase;
 			return link;
 		end
 	end
@@ -18647,43 +18650,37 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 			self.initialized = true;
 			self.Limit = tonumber(limit) or 200000;
 			self.PartitionSize = tonumber(partition) or 1000;
-			app.PrintDebug("Limit / Partition",self.Limit,self.PartitionSize)
+			self.ScrollCount = 2;
 			local db = {};
 			local CleanUpHarvests = function()
-				local g, partition, pg, pgcount, refresh = self.data.g;
-				local count = g and #g or 0;
-				if count > 0 then
-					for p=count,1,-1 do
-						partition = g[p];
-						if partition.g and partition.expanded then
-							refresh = true;
-							pg = partition.g;
-							pgcount = #pg;
-							-- print("UpdateDone.Partition",partition.text,pgcount)
-							if pgcount > 0 then
-								-- only remove the top 100 items from expanded partitions per frame to reduce pointless processing per frame
-								for i=100,1,-1 do
-									if pg[i].collected then
-										-- item harvested, so remove it
-										-- print("remove",pg[i].text)
-										table.remove(pg, i);
-									end
-								end
-							else
-								-- empty partition, so remove it
-								table.remove(g, p);
-							end
-						end
-					end
-					if refresh then
-						-- refresh the window again
-						self:BaseUpdate();
-					else
-						-- otherwise stop until a group is expanded again
-						self.UpdateDone = nil;
+				local scrollCount = self.ScrollCount;
+				local windowRows = self.rowData;
+				local completed = true;
+				local currentRow;
+				local text;
+				-- check each row in order to see if it is completed
+				while completed do
+					currentRow = windowRows[scrollCount];
+					-- i don't know why calling the .text field on the row an extra time is necessary. but otherwise this logic doesn't work.
+					text = currentRow and currentRow.text;
+					completed = currentRow and currentRow.collected;
+					if completed then
+						scrollCount = scrollCount + 1;
 					end
 				end
-			end;
+				-- set the scroll position of the window based on how many completed rows have been encountered
+				-- every row has been completed
+				if scrollCount >= #windowRows then
+					self.ScrollCount = 2;
+					self.ScrollBar:SetValue(1);
+					self.UpdateDone = nil;
+				else
+					self.ScrollCount = scrollCount;
+					self.ScrollBar:SetValue(scrollCount);
+				end
+				-- refresh the window
+				self:Refresh();
+			end
 			-- add a bunch of raw, delay-loaded items in order into the window
 			local groupCount, id = math.floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
@@ -18697,6 +18694,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 					["text"] = tostring(partitionStart + 1).."+",
 					["icon"] = app.asset("Interface_Quest_header"),
 					["visible"] = true,
+					["collected"] = true,
 					["OnClick"] = function(row, button)
 						-- assign the clean up method now that the group was clicked
 						self.UpdateDone = CleanUpHarvests;
