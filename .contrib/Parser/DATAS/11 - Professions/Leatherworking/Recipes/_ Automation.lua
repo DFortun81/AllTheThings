@@ -270,7 +270,7 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Heavy Desolate Armor Kit",
 							["hash"] = "recipeID324088",
-							["recipeID"] = 324088
+							["recipeID"] = 324088,
 						}
 					}
 				},

@@ -66,7 +66,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						--	Greens
 							i(185050),	-- Spider Soul
 						--	Whites
-							i(186994),	-- Design: Shaded Stone Statue
+							i(186994, {	-- Design: Shaded Stone Statue
+								["recipeID"] = 355189,
+							}),
 						-- Objects
 						o(369437, {	-- Riftbound Cache
 							["questID"] = 64456,
@@ -126,7 +128,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							179735,	-- Torglluun
 						}
 					}),
-					i(187006),	-- Recipe: Twilight Tea
+					i(187006, {	-- Recipe: Twilight Tea
+						["recipeID"] = 354764,
+					}),
 				}),
 			},
 		}),

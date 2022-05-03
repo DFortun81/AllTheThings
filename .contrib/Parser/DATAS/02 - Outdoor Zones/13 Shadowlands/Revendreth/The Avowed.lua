@@ -254,6 +254,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									["cost"] = { { "c", 1816, 500 } },
 								}),
 								i(182660, {	-- Recipe: Shadestone
+									["recipeID"] = 307143,
 									["cost"] = { { "c", 1816, 35 } },
 								}),
 								i(184219, {	-- Treatise on Sinstone Fragment Acquisition
@@ -288,6 +289,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									},
 								}),
 								i(180780, {	-- Recipe: Red Noggin Candle
+									["recipeID"] = 334413,
 									["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby
 								}),
 							},

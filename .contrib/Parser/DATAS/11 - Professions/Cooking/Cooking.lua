@@ -2260,7 +2260,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Feast of Gluttonous Hedonism",
-					["recipeID"] = 308403
+					["recipeID"] = 308403,
 				},
 				{
 					["name"] = "Surprisingly Palatable Feast",
@@ -2326,7 +2326,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Bonemeal Bread",
-					["recipeID"] = 354766
+					["recipeID"] = 354766,
 				},
 				{
 					["name"] = "Butterscotch Marinated Ribs",
@@ -2346,7 +2346,7 @@ profession(COOKING, {
 				},
 				{
 					["name"] = "Porous Rock Candy",
-					["recipeID"] = 354768
+					["recipeID"] = 354768,
 				},
 				{
 					["name"] = "Sweet Silvergill Sausages",

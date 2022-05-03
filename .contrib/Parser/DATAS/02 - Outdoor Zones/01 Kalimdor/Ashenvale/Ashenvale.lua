@@ -714,7 +714,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 41.4, 34.4, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
-					["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000" },
+					["timeline"] = { "added 1.11.1.10958" },
 				}),
 				q(25729, {	-- Gerenzo the Traitor
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate

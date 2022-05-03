@@ -22,6 +22,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(173068, {	-- Vantus Rune Technique: Castle Nathria
+					["recipeID"] = 311453,
 					["crs"] = {	-- TODO: probable that this can drop from any boss in the raid.  check back and add additional crs as necessary
 						164261,	-- Hungering Destroyer
 						165066,	-- Huntsman Altimor

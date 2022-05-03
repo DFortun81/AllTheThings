@@ -102,6 +102,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				-- Schematics
 				-- Pets
+				-- TODO: make waypoint plotting automatically check coords on provider objects / Parser report superfluous coords in Debug?
 				q(65327, {	-- Schematic Reassimilation: Ambystan Darter
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
@@ -130,7 +131,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				q(65348, {	-- Schematic Reassimilation: Omnipotential Core
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189440 },	-- Schematic: Omnipotential Core
-					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
+					["coord"] = { 42.8, 40.6, 2029 },
 				}),
 				q(65354, {	-- Schematic Reassimilation: Prototickles
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis

@@ -76,11 +76,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o_repeated({	-- Invasive Mawshroom
 				-- Contains
-				i(186990),	-- Recipe: Blossom Burst
-				i(186988),	-- Recipe: Glory Burst
-				i(186989),	-- Recipe: Marrow Burst
-				i(186987),	-- Recipe: Torch Burst
-				i(186986),	-- Recipe: Widow Burst
+				i(186990, {	-- Recipe: Blossom Burst
+					["recipeID"] = 354885,
+				}),
+				i(186988, {	-- Recipe: Glory Burst
+					["recipeID"] = 354881,
+				}),
+				i(186989, {	-- Recipe: Marrow Burst
+					["recipeID"] = 354880,
+				}),
+				i(186987, {	-- Recipe: Torch Burst
+					["recipeID"] = 354884,
+				}),
+				i(186986, {	-- Recipe: Widow Burst
+					["recipeID"] = 354882,
+				}),
 				i(187244),	-- Questionable Mawshrooms
 				i(187153),	-- Tasty Mawshroom
 				-- Objects
@@ -269,7 +279,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186748),	-- Vault Guardian's Visor
 				}),
 				i(187442),	-- Scholar's Ancient Pack
-				i(187008),	-- Recipe: Porous Rock Candy
+				i(187008, {	-- Recipe: Porous Rock Candy
+					["recipeID"] = 354768,
+				}),
 				-- Objects
 				o(369333, {	-- Nest of Unusual Materials
 					["questID"] = 64358,
@@ -338,8 +350,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					{ 49.2, 54.5, KORTHIA },
 				},
 				["g"] = {
-					i(186999),	-- Pattern: Pallid Bone Flute
-					i(187007),	-- Recipe: Bonemeal Bread
+					i(186999, {	-- Pattern: Pallid Bone Flute
+						["recipeID"] = 354800,
+					}),
+					i(187007, {	-- Recipe: Bonemeal Bread
+						["recipeID"] = 354766,
+					}),
 					i(187442),	-- Scholar's Ancient Pack
 				},
 			}),
@@ -377,7 +393,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					{ 62.4, 37.5, KORTHIA },
 				},
 				["g"] = {
-					i(186993),	-- Design: Porous Stone Statue
+					i(186993, {	-- Design: Porous Stone Statue
+						["recipeID"] = 355187,
+					}),
 				},
 			}),
 			o(369296, {	-- Shardhide Stash

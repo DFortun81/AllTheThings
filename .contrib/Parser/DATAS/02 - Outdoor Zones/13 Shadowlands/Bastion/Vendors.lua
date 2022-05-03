@@ -12,9 +12,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)
-					i(183094),	-- Plans: Shadowsteel Helm
-					i(183097),	-- Schematic: PHA7-YNX
-					i(183098),	-- Technique: Codex of the Still Mind
+					i(183094, {	-- Plans: Shadowsteel Helm
+						["recipeID"] = 322590,
+					}),
+					i(183097, {	-- Schematic: PHA7-YNX
+						["recipeID"] = 331007,
+					}),
+					i(183098, {	-- Technique: Codex of the Still Mind
+						["recipeID"] = 311424,
+					}),
 					i(183103, {	-- Technique: Contract: The Ascended
 						["cost"] = 17650000, -- 1,765g
 						["recipeID"] = 311409,

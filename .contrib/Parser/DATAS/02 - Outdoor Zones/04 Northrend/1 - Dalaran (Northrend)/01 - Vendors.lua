@@ -3244,10 +3244,11 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41565, {	-- Design: Lucent Huge Citrine
+							["recipeID"] = 53879,
 							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 						}),
 						i(41564, {	-- Design: Lucent Huge Citrine
-							["spellID"] = 0,	-- This is now available via 41565, need to delink the old plans from the recipe
+							["recipeID"] = 53879,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41575, {	-- Design: Mysterious Shadow Crystal
@@ -3401,10 +3402,11 @@ _.Zones =
 							["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 						}),
 						i(41571, {	-- Design: Turbid Dark Jade
+							["recipeID"] = 53924,
 							["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 						}),
 						i(41573, {	-- Design: Turbid Dark Jade
-							["spellID"] = 0,	-- This is now available via 41571, need to delink the old plans from the recipe
+							["recipeID"] = 53924,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41688, {	-- Design: Veiled Twilight Opal

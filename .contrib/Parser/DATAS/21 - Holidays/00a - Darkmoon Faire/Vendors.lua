@@ -765,12 +765,15 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 					["cost"] = { { "i", 124669, 100 }, },	-- 100x Darkmoon Daggermaw
 				}),
 				i(184689, {	-- Recipe: Extra Fancy Darkmoon Feast
+					["recipeID"] = 347509,
 					["cost"] = { { "i", 124669, 50 }, },	-- 50x Darkmoon Daggermaw
 				}),
 				i(184683, {	-- Recipe: Extra Lemony Herb Filet
+					["recipeID"] = 347457,
 					["cost"] = { { "i", 124669, 10 }, },	-- 10x Darkmoon Daggermaw
 				}),
 				i(184625, {	-- Recipe: Extra Sugary Fish Feast
+					["recipeID"] = 347176,
 					["cost"] = { { "i", 124669, 25 }, },	-- 25x Darkmoon Daggermaw
 				}),
 				i(126929, {	-- Recipe: Fancy Darkmoon Feast

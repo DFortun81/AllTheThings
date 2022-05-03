@@ -5222,11 +5222,11 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Pink Party Hat",
-					["recipeID"] = 334499
+					["recipeID"] = 334499,
 				},
 				{
 					["name"] = "Shadowlace Cloak",
-					["recipeID"] = 310898
+					["recipeID"] = 310898,
 				},
 				{
 					["name"] = "Shadowlace Cord",
@@ -5312,7 +5312,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Shrouded Hand Towel",
-					["recipeID"] = 355183
+					["recipeID"] = 355183,
 				}
 			}
 		},

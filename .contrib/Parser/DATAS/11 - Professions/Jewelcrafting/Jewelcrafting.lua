@@ -1557,7 +1557,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Turbid Dark Jade",
-					["recipeID"] = 53924
+					["recipeID"] = 53924,
 				},
 				{
 					["name"] = "Turbid Eye of Zul",
@@ -1639,7 +1639,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Lucent Huge Citrine",
-					["recipeID"] = 53879
+					["recipeID"] = 53879,
 				},
 				{
 					["name"] = "Lucent Monarch Topaz",
@@ -5701,7 +5701,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["groups"] = {
 				{
 					["name"] = "Crown of the Righteous",
-					["recipeID"] = 334548
+					["recipeID"] = 334548,
 				}
 			}
 		},

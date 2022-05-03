@@ -2352,7 +2352,9 @@ root("Zones", m(KALIMDOR, {
 				["g"] = {
 					i(41563),	-- Design: Willful Huge Citrine
 					i(41564),	-- Design: Empowered Huge Citrine
-					i(41565),	-- Design: Lucent Huge Citrine
+					i(41565, {	-- Design: Lucent Huge Citrine
+						["recipeID"] = 53879,
+					}),
 					i(41575),	-- Design: Mysterious Shadow Crystal
 					i(41559),	-- Design: Mystic Sun Crystal
 					i(41573),	-- Design: Opaque Dark Jade
@@ -2361,7 +2363,9 @@ root("Zones", m(KALIMDOR, {
 					i(41572),	-- Design: Steady Dark Jade
 					i(41560),	-- Design: Stormy Chalcedony
 					i(41570),	-- Design: Radiant Dark Jade
-					i(41571),	-- Design: Turbid Dark Jade
+					i(41571, {	-- Design: Turbid Dark Jade
+						["recipeID"] = 53924,
+					}),
 					un(REMOVED_FROM_GAME, i(28807)),	-- High Warlord's Chain Helm
 					un(REMOVED_FROM_GAME, i(31646)),	-- High Warlord Ringmail Chestguard
 					un(REMOVED_FROM_GAME, i(31647)),	-- High Warlord Ringmail Gloves
