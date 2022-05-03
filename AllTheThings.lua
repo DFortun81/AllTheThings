@@ -11757,7 +11757,7 @@ local criteriaFuncs = {
 	["label_questID"] = L["LOCK_CRITERIA_QUEST_LABEL"],
     ["text_questID"] = function(v)
 		local questObj = app.SearchForObject("questID", v);
-        return sformat("[%d] %s", v, questObj.text);
+        return sformat("[%d] %s", v, questObj and questObj.text or "???");
     end,
 
     ["spellID"] = function(v)
