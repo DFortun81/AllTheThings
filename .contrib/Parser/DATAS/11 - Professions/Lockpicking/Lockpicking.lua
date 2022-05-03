@@ -22,6 +22,61 @@ profession(633, {	-- Lockpicking
 			["groups"] = {
 				i(169475, {	-- Barnacled Lockbox
 					["timeline"] = { "added 8.2.0.30918" },
+					["sym"] = { {
+						"select", "itemID",
+						-- Last Updated: 2022-05-02, Crieve. 45 items total, no exclusives.
+						-- Weapons
+						170118,	-- Centurion's Shortsword
+						170116,	-- Darkened Slicer
+						170201,	-- Deeptide Scroll
+						170114,	-- Flanged Mace
+						170120,	-- Handmaiden's Longstaff
+						170115,	-- Massive Viridian Claw
+						170119,	-- Slithershell Warglaive
+						170117,	-- Wavebinder's Rod
+						170112,	-- Wavecrash Polearm
+						
+						-- Armor
+						169400,	-- Deeptide Cover
+						169435,	-- Deeptide Drape
+						169402,	-- Deeptide Amice
+						169425,	-- Deeptide Robe
+						169404,	-- Deeptide Cuffs
+						169399,	-- Deeptide Gloves
+						169403,	-- Deeptide Cinch
+						169401,	-- Deeptide Legwraps
+						169398,	-- Deeptide Slippers
+						
+						169416,	-- Reefwalker Coif
+						169431,	-- Reefwalker Cape
+						169418,	-- Reefwalker Monnion
+						169413,	-- Reefwalker Hauberk
+						169420,	-- Reefwalker Coils
+						169415,	-- Reefwalker Handlers
+						169419,	-- Reefwalker Chain
+						169417,	-- Reefwalker Trousers
+						169414,	-- Reefwalker Striders
+						
+						169408,	-- Slithershell Tricorne
+						169434,	-- Slithershell Cloak
+						169410,	-- Slithershell Mantle
+						169405,	-- Slithershell Vest
+						169412,	-- Slithershell Armwraps
+						169407,	-- Slithershell Mitts
+						169411,	-- Slithershell Belt
+						169409,	-- Slithershell Leggings
+						169406,	-- Slithershell Boots
+						
+						169424,	-- Wavecrash Headguard
+						169433,	-- Wavecrash Greatcloak
+						169427,	-- Wavecrash Shoulderplates
+						169421,	-- Wavecrash Chestplate
+						169429,	-- Wavecrash Wristguards
+						169423,	-- Wavecrash Crushers
+						169428,	-- Wavecrash Buckle
+						169426,	-- Wavecrash Greaves
+						169422,	-- Wavecrash Smashers
+					}},
 				}),
 				i(16882, {	-- Battered Junkbox
 					i(11968),	-- Amber Hoop
