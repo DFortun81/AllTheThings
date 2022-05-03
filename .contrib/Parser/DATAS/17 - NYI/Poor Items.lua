@@ -2,7 +2,7 @@
 --       P O O R   Q U A L I T Y   I T E M S   M O D U L E       --
 -------------------------------------------------------------------
 
-root("PoorQualityItems", {
+local f = root("PoorQualityItems", {
 	n(ARMOR, {
 		filter(CLOTH, {
 			n(HEAD, {
@@ -1778,3 +1778,20 @@ root("PoorQualityItems", {
 		}),
 	}),
 });
+
+local OnUpdateForPoorQualityItems = [[function(t)
+	if not t.initialized then
+		t.initialized = 1;
+		function f(g)
+			if g.itemID then
+				setmetatable(g, _.BaseCommonItem);
+			elseif g.g then
+				for i,o in ipairs(g.g) do f(o); end
+			end
+		end
+		f(t);
+	end
+end]];
+for i,o in ipairs(f) do
+	o.OnUpdate = OnUpdateForPoorQualityItems;
+end

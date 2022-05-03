@@ -2,7 +2,7 @@
 --       C O M M O N   Q U A L I T Y   I T E M S   M O D U L E       --
 -----------------------------------------------------------------------
 
-root("CommonQualityItems", {
+local f = root("CommonQualityItems", {
 	n(ARMOR, {
 		filter(CLOTH, {
 			n(HEAD, {
@@ -2171,3 +2171,20 @@ root("CommonQualityItems", {
 		}),
 	}),
 });
+
+local OnUpdateForCommonQualityItems = [[function(t)
+	if not t.initialized then
+		t.initialized = 1;
+		function f(g)
+			if g.itemID then
+				setmetatable(g, _.BaseCommonItem);
+			elseif g.g then
+				for i,o in ipairs(g.g) do f(o); end
+			end
+		end
+		f(t);
+	end
+end]];
+for i,o in ipairs(f) do
+	o.OnUpdate = OnUpdateForCommonQualityItems;
+end

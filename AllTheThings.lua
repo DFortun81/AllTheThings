@@ -10085,6 +10085,32 @@ fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields, "BaseItemWithQuestIDAndFactionID");
 
+local fields = RawCloneData(itemFields);
+fields.collectible = function(t)
+	return app.CollectibleTransmog;
+end
+fields.collected = function(t)
+	if t.itemID then
+		if GetItemCount(t.itemID, true) > 0 then
+			app.CurrentCharacter.CommonItems[t.itemID] = 1;
+			ATTAccountWideData.CommonItems[t.itemID] = 1;
+			return 1;
+		elseif app.CurrentCharacter.CommonItems[t.itemID] == 1 then
+			app.CurrentCharacter.CommonItems[t.itemID] = nil;
+			ATTAccountWideData.CommonItems[t.itemID] = nil;
+			for guid,characterData in pairs(ATTCharacterData) do
+				if characterData.CommonItems and characterData.CommonItems[t.itemID] then
+					ATTAccountWideData.CommonItems[t.itemID] = 1;
+				end
+			end
+		end
+		if ATTAccountWideData.CommonItems[t.itemID] then
+			return 2;
+		end
+	end
+end
+app.BaseCommonItem = app.BaseObjectFields(fields, "BaseCommonItem");
+
 -- Appearance Lib (Item Source)
 local fields = RawCloneData(itemFields);
 fields.key = function(t) return "s"; end;
@@ -21683,6 +21709,7 @@ app.Startup = function()
 	if not currentCharacter.ArtifactRelicItemLevels then currentCharacter.ArtifactRelicItemLevels = {}; end
 	if not currentCharacter.AzeriteEssenceRanks then currentCharacter.AzeriteEssenceRanks = {}; end
 	if not currentCharacter.Buildings then currentCharacter.Buildings = {}; end
+	if not currentCharacter.CommonItems then currentCharacter.CommonItems = {}; end
 	if not currentCharacter.CustomCollects then currentCharacter.CustomCollects = {}; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
@@ -21805,6 +21832,7 @@ app.Startup = function()
 	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
 	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
+	if not accountWideData.CommonItems then accountWideData.CommonItems = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
 	if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end

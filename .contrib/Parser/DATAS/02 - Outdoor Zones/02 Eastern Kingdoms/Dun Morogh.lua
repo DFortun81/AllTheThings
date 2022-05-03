@@ -15,51 +15,38 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		["achievementID"] = 627,
 		-- #endif
 		["groups"] = {
-			m(427, {	-- Coldridge Valley
+			m(COLDRIDGE_VALLEY, {
 				["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
 				["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
-						p(441, {	-- Alpine Hare
-							["crs"] = { 61690 },	-- Alpine Hare
-						}),
-						p(378, {	-- Rabbit
-							["crs"] = { 61080 },	-- Rabbit
-						}),
-						p(440, {	-- Snow Cub
-							["crs"] = { 61689 },	-- Snow Cub
-						}),
-					})),
-					-- #endif
 					n(QUESTS, {
 						q(3361, {	-- A Refugee's Quandary
 							["qg"] = 8416,	-- Felix Whindlebolt
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
-							["coord"] = { 41.8, 63.7, 427 },
+							["coord"] = { 41.8, 63.7, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24490, {	-- A Trip to Ironforge
 							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 218,	-- Ice and Fire
-							["coord"] = { 42.7, 62.1, 427 },
+							["coord"] = { 42.7, 62.1, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24471, {	-- Aid for the Wounded
 							["qg"] = 658,	-- Sten Stoutarm
 							["sourceQuest"] = 24469,	-- Hold the Line!
-							["coord"] = { 65.5, 41.9, 427 },
+							["coord"] = { 65.5, 41.9, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24475, {	-- All the Other Stuff
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24474,	-- First Things First: We're Gonna Need Some Beer
-							["coord"] = { 60.6, 21.0, 427 },
+							["coord"] = { 60.6, 21.0, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24496, {	-- Arcane Rune
 							["qg"] = 37087,	-- Jona Ironstock
-							["coord"] = { 61.4, 19.4, 427 },
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
 							["u"] = REMOVED_FROM_GAME,
@@ -68,26 +55,26 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
-							["coord"] = { 61.0, 19.7, 427 },
+							["coord"] = { 61.0, 19.7, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(24477, {	-- Dwarven Artifacts
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
-							["coord"] = { 61.6, 22.0, 427 },
+							["coord"] = { 61.6, 22.0, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(31150, {	-- Elegant Rune
 							["qg"] = 37087,	-- Jona Ironstock
-							["coord"] = { 61.4, 19.4, 427 },
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
 						q(3109, {	-- Encrypted Rune
 							["qg"] = 37087,	-- Jona Ironstock
-							["coord"] = { 61.4, 19.4, 427 },
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
 							["races"] = { DWARF, GNOME },
 							["classes"] = { ROGUE },
 							["u"] = REMOVED_FROM_GAME,
@@ -95,7 +82,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(24532, {	-- Evisceratin' the Enemy
 							["qg"] = 916,	-- Solm Hargin
 							["sourceQuest"] = 3109,	-- Encrypted Rune
-							["coord"] = { 59.5, 20.4, 427 },
+							["coord"] = { 59.5, 20.4, COLDRIDGE_VALLEY },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["u"] = REMOVED_FROM_GAME,
@@ -103,24 +90,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
-							["coord"] = { 62.7, 21.4, 427 },
+							["coord"] = { 62.7, 21.4, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24491, {	-- Follow that Gyro-Copter!
 							["qg"] = 6782,	-- Hands Springsprocket
 							["sourceQuest"] = 24490,	-- A Trip to Ironforge
-							["coord"] = { 87.5, 44.4, 427 },
+							["coord"] = { 87.5, 44.4, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24470, {	-- Give 'em What-For
 							["qg"] = 37081,	-- Joren Ironstock
 							["sourceQuest"] = 24469,	-- Hold the Line!
-							["coord"] = { 67.1, 41.2, 427 },
+							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24469, {	-- Hold the Line!
 							["qg"] = 37081,	-- Joren Ironstock
-							["coord"] = { 67.1, 41.2, 427 },
+							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(218, {	-- Ice and Fire
@@ -129,13 +116,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								182,	-- The Troll Menace
 								24489,	-- Trolling for Information
 							},
-							["coord"] = { 42.7, 62.2, 427 },
+							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
-							["coord"] = { 63.2, 22.3, 427 },
+							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
@@ -145,19 +132,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								24471,	-- Aid for the Wounded
 								24470,	-- Give 'em What-For
 							},
-							["coord"] = { 67.1, 41.3, 427 },
+							["coord"] = { 67.1, 41.3, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24486, {	-- Make Hay While the Sun Shines
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24477,	-- Dwarven Artifacts
-							["coord"] = { 61.7, 22.0, 427 },
+							["coord"] = { 61.7, 22.0, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
-							["coord"] = { 69.8, 43.9, 427 },
+							["coord"] = { 69.8, 43.9, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57540),	-- Coldridge Mountaineer's Pouch
@@ -166,13 +153,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(182, {	-- The Troll Menace
 							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
-							["coord"] = { 42.7, 62.2, 427 },
+							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
-							["coord"] = { 43.2, 63.1, 427 },
+							["coord"] = { 43.2, 63.1, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24487, {	-- Whitebeard Needs Ye
@@ -181,12 +168,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								24475,	-- All the Other Stuff
 								24486,	-- Make Hay While the Sun Shines
 							},
-							["coord"] = { 60.6, 21.1, 427 },
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24533, {	-- Words of Power
 							["qg"] = 837,	-- Branstock Khalder
-							["coord"] = { 60.7, 14.6, 427 },
+							["coord"] = { 60.7, 14.6, COLDRIDGE_VALLEY },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["u"] = REMOVED_FROM_GAME,
@@ -194,26 +181,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			m(469, {	-- New Tinkertown [Above]
+			-- #if AFTER 4.0.3
+			m(NEW_TINKERTOWN, {
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
-				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
-				-- #endif
-				["maps"] = { 30 },	-- New Tinkertown [Below]
+				["maps"] = { NEW_TINKERTOWN_LOWER },
 				["groups"] = {
 					-- #if AFTER MOP
 					petbattle(filter(BATTLE_PETS, {
-						p(441, {	-- Alpine Hare
-							["crs"] = { 61690 },	-- Alpine Hare
-						}),
 						p(1162, {	-- Fluxfire Feline
 							["crs"] = { 68838 },	-- Fluxfire Feline
 						}),
 						p(442, {	-- Irradiated Roach
 							["crs"] = { 61691 },	-- Irradiated Roach
-						}),
-						p(440, {	-- Snow Cub
-							["crs"] = { 61689 },	-- Snow Cub
 						}),
 					})),
 					-- #endif
@@ -221,25 +201,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(26205, {	-- A Job for the Multi-Bot
 							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
-							["coord"] = { 40.5, 28.0, 469 },
+							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26566, {	-- A Triumph of Gnomish Ingenuity
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26208,	-- The Fight Continues
-							["coord"] = { 38.7, 32.7, 469 },
+							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26331, {	-- Crushcog's Minions
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26329,	-- One More Thing
-							["coord"] = { 38.7, 32.7, 469 },
+							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26265, {	-- Dealing with the Fallout
 							["qg"] = 42630,	-- Corporal Fizzwhistle
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
-							["coord"] = { 38.2, 40.2, 469 },
+							["coord"] = { 38.2, 40.2, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["groups"] = {
 								i(59053),	-- Airfield Courier Bag
@@ -248,14 +228,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(27635, {	-- Decontamination
 							["qg"] = 46274,	-- Gaffer Coilspring
 							["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
-							["coord"] = { 53.0, 82.3, 30 },
+							["coord"] = { 53.0, 82.3, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
 						q(26364, {	-- Down with Crushcog!
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26342,	-- Paint it Black
-							["coord"] = { 48.7, 52.8, 469 },
+							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26318, {	-- Finishin' the Job
@@ -264,118 +244,118 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								26285,	-- Get Me Explosives Back!
 								26284,	-- Missing in Action
 							},
-							["coord"] = { 37.2, 65.1, 469 },
+							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26285, {	-- Get Me Explosives Back!
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
-							["coord"] = { 37.2, 65.1, 469 },
+							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26423, {	-- Meet the High Tinker
 							["qg"] = 42366,	-- Kelsey Steelspark
 							["sourceQuest"] = 26206,	-- The Future of Gnomeregan
-							["coord"] = { 38.0, 33.6, 469 },
+							["coord"] = { 38.0, 33.6, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 						}),
 						q(31137, {	-- Meet the High Tinker
 							["qg"] = 63238,	-- Xi, Friend to the Small
 							["sourceQuest"] = 31135,	-- The Future of Gnomeregan
-							["coord"] = { 40.1, 35.6, 469 },
+							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { MONK },
 						}),
 						q(26422, {	-- Meet the High Tinker
 							["qg"] = 42323,	-- "Doc" Cogspin
 							["sourceQuest"] = 26199,	-- The Future of Gnomeregan
-							["coord"] = { 39.4, 28.4, 469 },
+							["coord"] = { 39.4, 28.4, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { PRIEST },
 						}),
 						q(26421, {	-- Meet the High Tinker
 							["qg"] = 42331,	-- Bipsi Frostflinger
 							["sourceQuest"] = 26197,	-- The Future of Gnomeregan
-							["coord"] = { 41.1, 29.1, 469 },
+							["coord"] = { 41.1, 29.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { MAGE },
 						}),
 						q(26425, {	-- Meet the High Tinker
 							["qg"] = 42324,	-- Drill Sergeant Steamcrank
 							["sourceQuest"] = 26203,	-- The Future of Gnomeregan
-							["coord"] = { 40.6, 36.1, 469 },
+							["coord"] = { 40.6, 36.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { WARRIOR },
 						}),
 						q(26424, {	-- Meet the High Tinker
 							["qg"] = 460,	-- Alamar Grimm
 							["sourceQuest"] = 26202,	-- The Future of Gnomeregan
-							["coord"] = { 37.7, 38.0, 469 },
+							["coord"] = { 37.7, 38.0, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { WARLOCK },
 						}),
 						q(41218, {	-- Meet the High Tinker
 							["qg"] = 103614,	-- Muffinus Chromebrew
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
-							["coord"] = { 41.9, 31.6, 469 },
+							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { HUNTER },
 						}),
 						q(26284, {	-- Missing in Action
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
-							["coord"] = { 37.2, 65.1, 469 },
+							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26333, {	-- No Tanks!
 							["qg"] = 42491,	-- Hinkles Fastblast
 							["sourceQuest"] = 26329,	-- One More Thing
-							["coord"] = { 38.1, 33.6, 469 },
+							["coord"] = { 38.1, 33.6, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26373, {	-- On to Kharanos
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26364,	-- Down with Crushcog!
-							["coord"] = { 48.7, 52.8, 469 },
+							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["isBreadcrumb"] = true,
 						}),
 						q(26329, {	-- One More Thing
 							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26318,	-- Finishin' the Job
-							["coord"] = { 37.2, 65.1, 469 },
+							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26342, {	-- Paint it Black
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26339,	-- Staging in Brewnall
-							["coord"] = { 48.7, 52.8, 469 },
+							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(27670, {	-- Pinned Down
 							["qg"] = 45966,	-- Nevin Twistwrench
-							["coord"] = { 34.1, 32.2, 30 },
+							["coord"] = { 34.1, 32.2, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
 						q(28167, {	-- Report to Carvo Blastbolt
 							["qg"] = 45966,	-- Nevin Twistwrench
 							["sourceQuest"] = 27670,	-- Pinned Down
-							["coord"] = { 34.0, 32.2, 30 },
+							["coord"] = { 34.0, 32.2, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
 						q(26222, {	-- Scrounging for Parts
 							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26566,	-- A Triumph of Gnomish Ingenuity
-							["coord"] = { 40.5, 28.0, 469 },
+							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(27671, {	-- See to the Survivors
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 28167,	-- Report to Carvo Blastbolt
-							["coord"] = { 50.9, 31.9, 30 },
+							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
@@ -389,14 +369,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								26333,	-- No Tanks!
 							},
 							["coords"] = {
-								{ 38.0, 33.5, 469 },
-								{ 41.9, 31.6, 469 },
+								{ 38.0, 33.5, NEW_TINKERTOWN },
+								{ 41.9, 31.6, NEW_TINKERTOWN },
 							},
 							["races"] = { GNOME },
 						}),
 						q(31138, {	-- The Arts of a Monk
 							["qg"] = 63238,	-- Xi, Friend to the Small
-							["coord"] = { 40.1, 35.6, 469 },
+							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { GNOME },
 							["classes"] = { MONK },
@@ -406,7 +386,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						q(26207, {	-- The Arts of a Rogue
 							["qg"] = 42366,	-- Kelsey Steelspark
-							["coord"] = { 38.0, 33.5, 469 },
+							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 							["u"] = REMOVED_FROM_GAME,
@@ -422,13 +402,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								26424,	-- Meet the High Tinker (Warlock)
 								41218,	-- Meet the High Tinker (Hunter)
 							},
-							["coord"] = { 38.7, 32.7, 469 },
+							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26197, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { MAGE },
 							["groups"] = {
@@ -438,7 +418,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(26199, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { PRIEST },
 							["groups"] = {
@@ -448,7 +428,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(26202, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { WARLOCK },
 							["groups"] = {
@@ -458,7 +438,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(26203, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { WARRIOR },
 							["groups"] = {
@@ -468,7 +448,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(26206, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { ROGUE },
 							["groups"] = {
@@ -479,14 +459,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(31135, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { MONK },
 						}),
 						q(41217, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coord"] = { 39.4, 38.3, 469 },
+							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 							["classes"] = { HUNTER },
 							["groups"] = {
@@ -496,7 +476,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(27674, {	-- To the Surface
 							["qg"] = 46255,	-- Technician Braggle
 							["sourceQuest"] = 27635,	-- Decontamination
-							["coord"] = { 66.3, 81.6, 30 },
+							["coord"] = { 66.3, 81.6, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
@@ -507,47 +487,26 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								26265,	-- Dealing with the Fallout
 								26264,	-- What's Left Behind
 							},
-							["coord"] = { 38.3, 33.4, 469 },
+							["coord"] = { 38.3, 33.4, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(26264, {	-- What's Left Behind
 							["qg"] = 42611,	-- Tock Sprysprocket
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
-							["coord"] = { 39.2, 26.5, 469 },
+							["coord"] = { 39.2, 26.5, NEW_TINKERTOWN },
 							["races"] = { GNOME },
 						}),
 						q(28169, {	-- Withdraw to the Loading Room!
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 27671,	-- See to the Survivors
-							["coord"] = { 50.9, 31.9, 30 },
+							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
 							["_drop"] = { "races" },	-- drop Mechagnome
 							["races"] = { GNOME },
 						}),
 					}),
-					n(RARES, {
-						n(8503, {	-- Gibblewilt NOTE: As of 8.0 npc still spawns but drops are unobtainable
-							un(REMOVED_FROM_GAME, i(10554)),	-- Foreman Pants
-							un(REMOVED_FROM_GAME, i(10553)),	-- Foreman Vest
-						}),
-						n(1260,	{	-- Great Father Arktikus NOTE: Believe this npc has been replaced by Boss Bruggor but cannot find confirmation
-							un(REMOVED_FROM_GAME, i(3223)),	-- Frostmane Scepter
-						}),
-						n(1132),	-- Timber
-						n(107431, {	-- Weaponized Rabbot
-							["coord"] = { 66.0, 27.0, 469 },
-						}),
-					}),
-					n(VENDORS, {
-						n(8508, {	-- Gretta Ganter <Fishing Supplies>
-							["coord"] = { 51.6, 50.0, 469 },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
-								i(6325),	-- Recipe: Brilliant Smallfish
-							},
-						}),
-					}),
 				},
 			}),
+			-- #endif
 			n(ACHIEVEMENTS, {
 				removeclassicphase(ach(627, {	-- Explore Dun Morogh
 					-- #if BEFORE WRATH
@@ -561,10 +520,54 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			petbattle(filter(BATTLE_PETS, {
 				p(441, {	-- Alpine Hare
 					["crs"] = { 61690 },	-- Alpine Hare
+					-- #if AFTER CATA
+					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+					-- #else
+					["maps"] = { COLDRIDGE_VALLEY },
+					-- #endif
+				}),
+				p(378, {	-- Rabbit
+					["crs"] = { 61080 },	-- Rabbit
+					["maps"] = { COLDRIDGE_VALLEY },
 				}),
 				p(440, {	-- Snow Cub
 					["crs"] = { 61689 },	-- Snow Cub
+					-- #if AFTER CATA
+					["maps"] = { COLDRIDGE_VALLEY, NEW_TINKERTOWN },
+					-- #else
+					["maps"] = { COLDRIDGE_VALLEY },
+					-- #endif
 				}),
+			})),
+			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, explorationBatch({
+				["115:115:252:249"] = 137,	-- Brewnall Village
+				["125:125:217:287"] = 135,	-- Frostmane Hold
+				["128:120:792:279"] = 806,	-- South Gate Outpost
+				["128:128:573:280"] = 803,	-- Amberstill Ranch
+				["128:165:502:221"] = 138,	-- Misty Pine Refuge
+				["128:165:759:173"] = 808,	-- North Gate Outpost
+				["128:180:281:167"] = 211,	-- Iceflow Lake
+				["128:190:347:163"] = 802,	-- Shimmer Ridge
+				["150:128:295:385"] = 800,	-- Coldridge Pass
+				["155:128:522:322"] = 804,	-- The Tundrid Hills
+				["155:170:694:273"] = 212,	-- Helm's Bed Lake
+				["165:165:608:291"] = 134,	-- Gol'Bolar Quarry
+				["180:128:274:296"] = 801,	-- Chill Breeze Valley
+				["180:165:166:184"] = 133,	-- Gnomeregan
+				["200:185:314:311"] = 136,	-- The Grizzled Den
+				["200:200:386:294"] = 131,	-- Kharanos
+				["240:185:155:403"] = 132,	-- Coldridge Valley
+				["315:200:397:163"] = 809,	-- Gates of Ironforge
+				--[[
+				[77] = 1,                                -- Anvilmar
+				[189] = 10,                              -- Steelgrill's Depot
+				[716] = 13,                              -- Ironband's Compound
+				[805] = 19,                              -- South Gate Pass
+				[807] = 21,                              -- North Gate Pass
+				[2102] = 24,                             -- Thunderbrew Distillery
+				]]--
 			})),
 			-- #endif
 			-- #if AFTER 4.0.3.13277
@@ -1057,64 +1060,212 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(1130, {	-- Bjarn
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 69.2, 55.8, DUN_MOROGH },
 						{ 69.8, 58.6, DUN_MOROGH },
 						{ 67.8, 58.8, DUN_MOROGH },
 						{ 66.2, 59.8, DUN_MOROGH },
 					},
+					-- #else
+					["coords"] = {
+						{ 52.8, 58.4, DUN_MOROGH },
+						{ 56.8, 56.8, DUN_MOROGH },
+						{ 63.6, 60.6, DUN_MOROGH },
+						{ 59.0, 61.6, DUN_MOROGH },
+					},
+					-- #endif
+					["groups"] = {
+						i(2069, {	-- Black Bear Hide Vest
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				n(1137, {	-- Edan the Howler
+					-- #if AFTER CATA
+					["coord"] = { 46.4, 47.6, DUN_MOROGH },
+					-- #else
+					["coords"] = {
+						{ 43.6, 49.6, DUN_MOROGH },
+						{ 39.6, 48.2, DUN_MOROGH },
+						{ 42.2, 46.4, DUN_MOROGH },
+					},
+					-- #endif
+					["groups"] = {
+						i(3225, {	-- Bloodstained Knife
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3008, {	-- Wendigo Fur Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				n(8503, {	-- Gibblewilt
+					-- #if AFTER CATA
+					["coord"] = { 40.8, 45.2, NEW_TINKERTOWN },
+					-- #else
+					["coords"] = {
+						{ 27.2, 36.6, DUN_MOROGH },
+						{ 25.0, 44.6, DUN_MOROGH },
+					},
+					-- #endif
+					["groups"] = {
+						i(10554, {	-- Foreman Pants
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(10553, {	-- Foreman Vest
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				n(1260, {	-- Great Father Arctikus
+					-- #if AFTER CATA
+					["coord"] = { 29.8, 67.8, NEW_TINKERTOWN },
+					-- #else
+					["coords"] = {
+						{ 23.8, 53.4, DUN_MOROGH },
+						{ 22.0, 51.0, DUN_MOROGH },
+					},
+					-- #endif
+					["groups"] = {
+						i(3223, {	-- Frostmane Scepter
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(2546, {	-- Royal Frostmane Girdle
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				n(1119, {	-- Hammerspine
+					-- #if AFTER CATA
 					["description"] = "Spawns at the very end of the cave.",
 					["coords"] = {
 						{ 77.9, 55.1, DUN_MOROGH }, -- cave entrance
 						{ 56.3, 39.1, 31 }, -- spawn area
 					},
+					-- #else
+					["coords"] = {
+						{ 71.8, 51.4, DUN_MOROGH },
+						{ 72.8, 53.8, DUN_MOROGH },
+					},
+					-- #endif
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(2254)),	-- Icepane Warhammer
+						i(763, {	-- Ice-covered Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(2254, {	-- Icepane Warhammer
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				n(1271, {	-- Old Icebeard
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 38.4, 54.0, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(2899)),	-- Wendigo Collar
+						i(2899, {	-- Wengido Collar
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
+				}),
+				n(1132, {	-- Timber
+					-- #if AFTER CATA
+					["coord"] = { 67.8, 37.4, NEW_TINKERTOWN },
+					-- #else
+					["coords"] = {
+						{ 36.0, 37.8, DUN_MOROGH },
+						{ 35.6, 42.8, DUN_MOROGH },
+						{ 31.8, 42.6, DUN_MOROGH },
+					},
+					-- #endif
+					["groups"] = {
+						i(3224, {	-- Silver-lined Bracers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(1965, {	-- White Wolf Gloves
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				n(107431, {	-- Weaponized Rabbot
+					["coord"] = { 66.0, 27.0, NEW_TINKERTOWN },
+					["timeline"] = { "added 7.0.3.22290" },
 				}),
 			}),
 			n(VENDORS, {
+				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
+					-- #if AFTER CATA
+					["coord"] = { 51.6, 50.0, NEW_TINKERTOWN },
+					-- #else
+					["coord"] = { 31.6, 44.6, DUN_MOROGH },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(6325),	-- Recipe: Brilliant Smallfish
+					},
+				}),
+				n(1247, {	-- Innkeeper Belm <Innkeeper>
+					-- #if AFTER CATA
+					["coord"] = { 54.4, 50.8, DUN_MOROGH },
+					-- #else
+					["coord"] = { 47.4, 52.6, DUN_MOROGH },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2894),	-- Rhapsody Malt
+						i(2686),	-- Thunder Ale
+					},
+				}),
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
+					-- #if AFTER CATA
 					["coord"] = { 56.2, 46.3, DUN_MOROGH },
+					-- #else
+					["coord"] = { 49.0, 48.0, DUN_MOROGH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8595),	-- Blue Mechanostrider (MOUNT!)
 						i(13321),	-- Green Mechanostrider (MOUNT!)
 						i(8563),	-- Red Mechanostrider (MOUNT!)
+						i(13322),	-- Unpainted Mechanostrider (MOUNT!)
 						i(18772),	-- Swift Green Mechanostrider (MOUNT!)
 						i(18773),	-- Swift White Mechanostrider (MOUNT!)
 						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
-						i(13322),	-- Unpainted Mechanostrider (MOUNT!)
-						un(REMOVED_FROM_GAME, i(13327)),	-- Icy Blue Mechanostrider Mod A (MOUNT!) -- unable to 100% verify this vendor as source
-						un(REMOVED_FROM_GAME, i(13326)),	-- White Mechanostrider Mod B (MOUNT!) -- unable to 100% verify this vendor as source
+						i(13327, {	-- Icy Blue Mechanostrider Mod A (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
+						i(13326, {	-- White Mechanostrider Mod A (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
 					},
 				}),
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
+					-- #if AFTER CATA
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
+					-- #else
+					["coord"] = { 63.4, 50.6, DUN_MOROGH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5872),	-- Brown Ram (MOUNT!)
 						i(5864),	-- Gray Ram (MOUNT!)
-						i(18785),	-- Swift White Ram (MOUNT!)
+						i(5873),	-- White Ram (MOUNT!)
 						i(18786),	-- Swift Brown Ram (MOUNT!)
 						i(18787),	-- Swift Gray Ram (MOUNT!)
-						i(5873),	-- White Ram (MOUNT!)
-						un(REMOVED_FROM_GAME, i(13328)),	-- Black Ram (MOUNT!) -- unable to 100% verify this vendor as source
-						un(REMOVED_FROM_GAME, i(13329)),	-- Frost Ram (MOUNT!) -- unable to 100% verify this vendor as source
+						i(18785),	-- Swift White Ram (MOUNT!)
+						i(13328, {	-- Black Ram (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
+						i(13329, {	-- Frost Ram (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
 					},
 				}),
 				n(1263, {	-- Yarlyn Amberstill
+					-- #if AFTER CATA
 					["coord"] = { 70.5, 49.1, DUN_MOROGH },
+					-- #else
+					["coord"] = { 63.2, 50.8, DUN_MOROGH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8497),	-- Rabbit Crate (Snowshoe) (PET!)
