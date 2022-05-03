@@ -18613,11 +18613,15 @@ end;
 customWindowUpdates["ItemFinder"] = function(self, ...)
 	if self:IsVisible() then
 		if not self.initialized then
-			app.MaximumItemInfoRetries = 30;
+			local partition = app.GetCustomWindowParam("finder", "partition");
+			local limit = app.GetCustomWindowParam("finder", "limit");
+
+			app.MaximumItemInfoRetries = 10;
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 200000;
-			self.PartitionSize = 1000;
+			self.Limit = tonumber(limit) or 200000;
+			self.PartitionSize = tonumber(partition) or 1000;
+			app.PrintDebug("Limit / Partition",self.Limit,self.PartitionSize)
 			local db = {};
 			local CleanUpHarvests = function()
 				local g, partition, pg, pgcount, refresh = self.data.g;
@@ -18631,7 +18635,8 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 							pgcount = #pg;
 							-- print("UpdateDone.Partition",partition.text,pgcount)
 							if pgcount > 0 then
-								for i=pgcount,1,-1 do
+								-- only remove the top 100 items from expanded partitions per frame to reduce pointless processing per frame
+								for i=100,1,-1 do
 									if pg[i].collected then
 										-- item harvested, so remove it
 										-- print("remove",pg[i].text)
@@ -18654,7 +18659,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 				end
 			end;
 			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount = self.Limit / self.PartitionSize - 1;
+			local groupCount, id = math.floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
 			local dlo, obj = app.DelayLoadedObject, app.CreateItemHarvester;
@@ -18673,8 +18678,13 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 					end,
 					["g"] = partitionGroups,
 				};
-				for i=1,self.PartitionSize,1 do
-					tinsert(partitionGroups, dlo(obj, "text", overrides, partitionStart + i));
+				if partitionStart + 1 < self.Limit then
+					for i=1,self.PartitionSize,1 do
+						id = partitionStart + i;
+						if id <= self.Limit then
+							tinsert(partitionGroups, dlo(obj, "text", overrides, id));
+						end
+					end
 				end
 				tinsert(g, partition);
 			end
@@ -22215,8 +22225,10 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		-- app.print(args)
 		-- first arg is always the window/command to execute
 		for k=2,#args do
-			-- maybe allow input of params with values?
-			app.SetCustomWindowParam(cmd, args[k], true);
+			local customArg, customValue = args[k];
+			customArg, customValue = strsplit("=",customArg);
+			-- app.PrintDebug("Split custom arg:",customArg,customValue)
+			app.SetCustomWindowParam(cmd, customArg, customValue or true);
 		end
 		if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
 			app.ToggleMainList();
