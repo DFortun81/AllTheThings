@@ -4737,7 +4737,7 @@ end
 (function()
 local included = {};
 local knownSkills;
-local DuplicatePreventionLevel = 3;
+local DuplicatePreventionLevel = 5;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 app.SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -15757,9 +15757,9 @@ RowOnEnter = function (self)
 						end
 					elseif _ == "c" then
 						amount = v[3];
-						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2])
-						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or currencyData.name or "Unknown"
-						icon = currencyData.iconFileID or nil
+						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2]);
+						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or currencyData.name or "Unknown";
+						icon = currencyData.iconFileID or nil;
 						if amount > 1 then
 							amount = formatNumericWithCommas(amount) .. "x ";
 						else
@@ -15770,10 +15770,10 @@ RowOnEnter = function (self)
 						icon = nil;
 						amount = GetMoneyString(v[2]);
 					end
-					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???"));
+					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA));
 				end
 			else
-				local amount = GetMoneyString(reference.cost)
+				local amount = GetMoneyString(reference.cost);
 				GameTooltip:AddDoubleLine(L["COST"], amount);
 			end
 		end

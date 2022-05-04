@@ -894,6 +894,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
