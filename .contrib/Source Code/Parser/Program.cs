@@ -65,12 +65,8 @@ namespace ATT
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
-                if (luaFiles.Contains(mainFileName))
-                {
-                    luaFiles.Remove(mainFileName); // Do not iterate over the header file.
-                    luaFiles.Sort();
-                }
-                else
+                // Do not iterate over the header file.
+                if (!luaFiles.Remove(mainFileName))
                 {
                     Trace.WriteLine("Could not find the '_main.lua' header file.");
                     Trace.WriteLine("Operation cannot continue without it.");
@@ -78,6 +74,7 @@ namespace ATT
                     Console.ReadLine();
                     return;
                 }
+                luaFiles.Sort();
 
                 Lua lua = new Lua();
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));

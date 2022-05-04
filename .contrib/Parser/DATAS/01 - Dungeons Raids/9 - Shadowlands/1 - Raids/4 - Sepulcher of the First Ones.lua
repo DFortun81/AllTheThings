@@ -52,10 +52,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					185421,	-- Zovaal <The Jailer>
 				},
 				["g"] = {
-					i(187806, {	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
-						["recipeID"] = 359890,	-- Vantus Rune: Sepulcher of the First Ones
-						["requireSkill"] = INSCRIPTION,
-					}),
+					i(187806),	-- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
 				},
 			}),
 			n(CONDUITS, {

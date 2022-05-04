@@ -448,7 +448,7 @@ namespace ATT
                     case "coords":
                     case "criteriaID":
                     case "heirloomID":
-                    case "recipeID":
+                    //case "recipeID":  // if an Item teaches a Recipe, it's not a different Recipe based on Source, so we can merge it
                     case "previousRecipeID":
                     case "nextRecipeID":
                     case "minReputation":
@@ -515,6 +515,7 @@ namespace ATT
                     case "illusionID":
                     case "achID":
                     case "requireSkill":
+                    case "recipeID":
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
