@@ -8,11 +8,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_human",
 		-- #endif
 		["isRaid"] = true,
-		--["maps"] = {
-			-- TODO: will need to move to specific scenario quests
-			-- 1012,	-- Stormwind City (BFA Scenario)
-			-- 1013,	-- The Stockade (BFA Scenario)
-		--},
 		["groups"] = {
 			petbattle(filter(BATTLE_PETS, {
 				p(378, {	-- Rabbit
