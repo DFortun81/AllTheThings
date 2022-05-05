@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Framework\Framework.Logging.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />

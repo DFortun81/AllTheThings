@@ -1,5 +1,4 @@
-﻿using NLua;
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -589,17 +588,16 @@ namespace ATT
 
             internal static bool FindRecipeForData(long requiredSkill, Dictionary<string, object> data, out long recipeID)
             {
-                const string DebugFormat = "Automated Recipe - RecipeID:{0},ItemID:{1},Method:{2}";
+                // Expected data for a Recipe: ItemID & RecipeID
                 data.TryGetValue("itemID", out object itemID);
+                data.TryGetValue("recipeID", out recipeID);
+                // No need to adjust the data
+                if (recipeID > 0)
+                    return false;
+
                 data.TryGetValue("spellID", out long spellID);
-                // If the data was tagged directly with recipeID, use that as a fallback to spellID from DB info
-                if (spellID == 0)
-                {
-                    data.TryGetValue("recipeID", out spellID);
-                }
                 // get the name of the recipe item (i.e. Technique: blah blah)
                 Items.TryGetName(data, out string recipeItemName);
-                recipeID = 0;
 
                 // Item directly marked as a 'Recipe', then assume the associated spellID represents the recipeID
                 if (data.TryGetValue("f", out long filterID))
@@ -610,9 +608,7 @@ namespace ATT
                         {
                             recipeID = spellID;
 
-                            if (DebugMode)
-                                Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Recipe Filter on data with spellID - {recipeItemName}"));
-
+                            LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
                             return true;
                         }
                     }
@@ -650,9 +646,7 @@ namespace ATT
                     data.Remove("spellID");
                     recipeID = spellID;
 
-                    if (DebugMode)
-                        Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' with spellID matches exact recipeID with name '{matchedRecipeName}'"));
-
+                    LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
                     return true;
                 }
 
@@ -664,9 +658,7 @@ namespace ATT
                     {
                         recipeID = recipeInfo.Key;
 
-                        if (DebugMode)
-                            Trace.WriteLine(string.Format(DebugFormat, recipeID, itemID, $"Data name '{recipeItemName}' matched recipe with name '{recipeInfo.Value}'"));
-
+                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, recipeID, recipeItemName);
                         return true;
                     }
                     // do we need further checking?

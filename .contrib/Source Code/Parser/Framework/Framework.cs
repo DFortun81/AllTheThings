@@ -269,6 +269,14 @@ namespace ATT
                 = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
 
         /// <summary>
+        /// A collection of named format strings for logging messages
+        /// </summary>
+        public static Dictionary<string, string> LogFormats = new Dictionary<string, string>
+        {
+            { "ItemRecipeFormat", "Add to ItemRecipes.lua: i({0}, {1}); -- {2}" },
+        };
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -476,8 +484,6 @@ namespace ATT
                         var item = Items.Get(data);
                         if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
                         {
-                            if (DebugMode)
-                                Trace.WriteLine($"Converted Item {itemID} spellID into recipeID {spellID} due to Recipe Filter");
                             // remove the spellID if existing
                             item.Remove("spellID");
                             data.Remove("spellID");
@@ -802,7 +808,21 @@ namespace ATT
             }
             if (data.TryGetValue("recipeID", out f))
             {
-                if (f < 1) data.Remove("recipeID");
+                if (f < 1)
+                {
+                    data.Remove("recipeID");
+                }
+                else if (DebugMode)
+                {
+                    var cachedItem = Items.GetNull(data);
+                    if (cachedItem != null)
+                    {
+                        cachedItem.TryGetValue("itemID", out long itemID);
+                        cachedItem.TryGetValue("recipeID", out long spellID);
+                        cachedItem.TryGetValue("name", out string itemName);
+                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, itemName);
+                    }
+                }
             }
             if (data.TryGetValue("s", out f))
             {
