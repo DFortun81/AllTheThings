@@ -269,6 +269,14 @@ namespace ATT
                 = new Dictionary<string, SortedDictionary<decimal, List<Dictionary<string, object>>>>();
 
         /// <summary>
+        /// A collection of named format strings for logging messages
+        /// </summary>
+        public static Dictionary<string, string> LogFormats = new Dictionary<string, string>
+        {
+            { "ItemRecipeFormat", "Add to ItemRecipes.lua: i({0}, {1}); -- {2}" },
+        };
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -448,8 +456,14 @@ namespace ATT
             }
 
             // Get the filter for this Item
+            Objects.Filters filter = Objects.Filters.Ignored;
             if (data.TryGetValue("f", out long f))
             {
+                if (f >= 0)
+                {
+                    // Parse it!
+                    filter = (Objects.Filters)f;
+                }
                 // remove modID from things which shouldn't have it
                 if (f >= 56 && data.Remove("modID"))
                 {
@@ -463,15 +477,13 @@ namespace ATT
                 }
 
                 // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
-                switch ((Objects.Filters)f)
+                switch (filter)
                 {
                     case Objects.Filters.Recipe:
                         // switch any existing spellID to recipeID
                         var item = Items.Get(data);
                         if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
                         {
-                            if (DebugMode)
-                                Trace.WriteLine($"Converted Item {itemID} spellID into recipeID {spellID} due to Recipe Filter");
                             // remove the spellID if existing
                             item.Remove("spellID");
                             data.Remove("spellID");
@@ -590,6 +602,12 @@ namespace ATT
                         case "deleted":
                             {
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 4;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
                                 break;
                             }
                         case "removed":
@@ -636,7 +654,7 @@ namespace ATT
                         break;
                     // Future Unobtainable
                     case 6:
-                        data["rwp"] = removedPatch.ConvertToVersionString(); // "Removed With Patch"
+                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
                         break;
                     // Removed From Game
                     case 2:
@@ -667,15 +685,6 @@ namespace ATT
             }
 
             Objects.AssignFactionID(data);
-
-            // Cache the Filter ID.
-            Objects.Filters filter = Objects.Filters.Ignored;
-            if (f >= 0)
-            {
-                // Parse it!
-                filter = (Objects.Filters)f;
-            }
-
 
             // Mark the achievement as referenced
             if (data.TryGetValue("achID", out long achID))
@@ -799,7 +808,21 @@ namespace ATT
             }
             if (data.TryGetValue("recipeID", out f))
             {
-                if (f < 1) data.Remove("recipeID");
+                if (f < 1)
+                {
+                    data.Remove("recipeID");
+                }
+                else if (DebugMode)
+                {
+                    var cachedItem = Items.GetNull(data);
+                    if (cachedItem != null)
+                    {
+                        cachedItem.TryGetValue("itemID", out long itemID);
+                        cachedItem.TryGetValue("recipeID", out long spellID);
+                        cachedItem.TryGetValue("name", out string itemName);
+                        LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, itemName);
+                    }
+                }
             }
             if (data.TryGetValue("s", out f))
             {
@@ -807,43 +830,6 @@ namespace ATT
             }
 
             minLevel = LevelConsolidation(data, minLevel);
-
-            if (data.TryGetValue("q", out f))
-            {
-                if (f == 7 && data.TryGetValue("itemID", out object itemRef))
-                {
-                    data["heirloomID"] = itemRef;
-                    if (data.TryGetValue("ignoreSource", out itemRef))
-                    {
-                        Trace.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING SOURCE IDS?!");
-                        Console.ReadLine();
-                    }
-                    else if (data.TryGetValue("ignoreBonus", out itemRef))
-                    {
-                        Trace.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING BONUS IDS?!");
-                        Console.ReadLine();
-                    }
-                }
-
-                // For Rings, Necklaces, and Trinkets - Ignore BoE filters
-                switch (filter)
-                {
-                    /*
-                    case Objects.Filters.Ring:
-                    case Objects.Filters.Trinket:
-                    case Objects.Filters.Neck:
-                    case Objects.Filters.Relic:
-                        data.Remove("b");
-                        break;
-                        */
-                    case Objects.Filters.Consumable:
-                    case Objects.Filters.Faction:
-                        data.Remove("heirloomID");
-                        break;
-                    default:
-                        break;
-                }
-            }
 
             if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
             {
@@ -1018,6 +1004,8 @@ namespace ATT
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
+
+            CheckHeirloom(data);
 
             // when consolidating data, check for duplicate objects (instead of when merging)
             foreach (string key in TypeUseCounts.Keys)
@@ -1205,6 +1193,46 @@ namespace ATT
                     // this can always be reported because it should always be actual, available in-game recipes which have no associated RecipeID
                     Items.TryGetName(data, out string name);
                     Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Checks to assign an heirloomID to the data if it meets the criteria of being an heirloom
+        /// </summary>
+        /// <param name="data"></param>
+        private static void CheckHeirloom(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("q", out long quality))
+            {
+                if (quality == 7 && data.TryGetValue("itemID", out object itemID))
+                {
+                    // Get the filter for this Item
+                    Objects.Filters filter = Objects.Filters.Ignored;
+                    if (data.TryGetValue("f", out long f))
+                    {
+                        if (f >= 0)
+                        {
+                            // Parse it!
+                            filter = (Objects.Filters)f;
+                        }
+                    }
+
+                    // Heirlooms quality for non-equippable Items are not really Heirlooms
+                    if (filter == Objects.Filters.Ignored || filter == Objects.Filters.Consumable || filter == Objects.Filters.Faction)
+                        return;
+
+                    data["heirloomID"] = itemID;
+                    if (data.ContainsKey("ignoreSource"))
+                    {
+                        Trace.WriteLine($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING SOURCE IDS?!");
+                        Console.ReadLine();
+                    }
+                    else if (data.ContainsKey("ignoreBonus"))
+                    {
+                        Trace.WriteLine($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING BONUS IDS?!");
+                        Console.ReadLine();
+                    }
                 }
             }
         }

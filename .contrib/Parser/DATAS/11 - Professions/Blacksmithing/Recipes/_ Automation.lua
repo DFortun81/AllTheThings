@@ -382,7 +382,7 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Shadowsteel Pauldrons",
 							["hash"] = "recipeID322593",
-							["recipeID"] = 322593
+							["recipeID"] = 322593,
 						},
 						{
 							["name"] = "Shadowsteel Sabatons",

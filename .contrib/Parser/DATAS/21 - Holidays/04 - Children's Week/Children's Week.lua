@@ -81,8 +81,13 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 	-- #else
 	["holidayID"] = 235445,
 	-- #endif
+	-- #if AFTER CATA
 	["description"] = "Start: 05/02 at 10:00 AM\nEnd: 05/09 at 10:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 2, 5, 9); end]],
+	-- #else
+	["description"] = "Start: 05/01 at 12:00 AM\nEnd: 05/07 at 11:59 PM",
+	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. CHILDRENS_WEEK .. [[, 5, 1, 5, 8); end]],
+	-- #endif
 	["groups"] = {
 		-- #if AFTER WRATH
 		n(ACHIEVEMENTS, {
@@ -391,7 +396,10 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 					{ "n", 22818 },	-- Draenei Orphan
 				},
 				["cr"] = 22819,	-- Orphan Matron Mercy
-				["sourceQuest"] = 10968,	-- Call on the Farseer
+				["sourceQuests"] = {
+					10968,	-- Call on the Farseer
+					10962,	-- Time to Visit the Caverns [Alliance - Draenei]
+				},
 				["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
 				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
@@ -486,6 +494,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Cairne's Hoofprint
@@ -500,10 +509,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 					{ "i", 31881 },	-- Draenei Orphan Whistle
 					{ "n", 22818 },	-- Draenei Orphan
 				},
-				["sourceQuests"] = {
-					10956,	-- The Seat of the Naaru
-					10962,	-- Time to Visit the Caverns
-				},
+				["sourceQuest"] = 10956,	-- The Seat of the Naaru
 				["coords"] = {
 					{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
 					{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
@@ -613,6 +619,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the docks of Ratchet in the Barrens.
@@ -630,6 +637,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { THE_BARRENS },
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Mor'shan Rampart in the Barrens.
@@ -703,6 +711,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- 0/1 Jaina's Autograph
@@ -1029,6 +1038,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { WESTFALL },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the Westfall Lighthouse.
@@ -1109,6 +1119,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.
@@ -1318,6 +1329,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 				["timeline"] = { "added 1.4.0", "removed 4.0.1" },
 				["maps"] = { LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 				["lvl"] = lvlsquish(10, 10, 10),
 				["groups"] = {
 					objective(1, {	-- Go to the top of the Stonewrought Dam in Loch Modan.

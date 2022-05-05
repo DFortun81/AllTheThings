@@ -8,7 +8,24 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			["maps"] = { THE_HEART_Of_AZEROTH },
 			["g"] = {
 				n(ARTIFACTS, {
-
+					cl(SHAMAN, ELEMENTAL, {
+						i(139572, {	-- Lost Codex of the Amani
+							artifact(900),	-- The Fist of Ra-den
+							-- artifact(900),	-- The Highkeeper's Ward
+						}),
+					}),
+					cl(SHAMAN, SHAMAN_RESTORATION, {
+						i(139574, {	-- Coil of the Drowned Queen
+							artifact(926),	-- Sharas'dal, Scepter of Tides
+							-- artifact(926),	-- Shield of the Sea Queen
+						}),
+					}),
+					cl(SHAMAN, ENHANCEMENT, {
+						i(139573, {	-- The Warmace of Shirvallah
+							artifact(880),	-- Doomhammer
+							-- artifact(880),	-- Fury of the Stonemother
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					q(39746, {	-- A Ring Unbroken
@@ -65,7 +82,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 							["coord"] = { 47.0, 83.0, 395 },	-- Guo-Lai Halls, Vale of Eternal Blossom
 							["g"] = {
-
+								artifact(113),	-- The Fist of Ra-den
+								artifact(113),	-- The Highkeeper's Ward
 							},
 						}),
 					}),
@@ -93,7 +111,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["coord"] = { 43.6, 63.2, 205 },	-- Shimmering Expanse
 							["maps"] = { 742, 743 },	-- Abyssal Maw (Scenario Map)
 							["g"] = {
-
+								artifact(116),	-- Sharas'dal, Scepter of Tides
+								artifact(116),	-- Shield of the Sea Queen
 							},
 						}),
 					}),
@@ -145,7 +164,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["coord"] = { 56.5, 12.9, DEEPHOLM },
 							["maps"] = { 729 },	-- Crumbling Depths (Scenario Map)
 							["g"] = {
-
+								artifact(117),	-- Doomhammer
+								artifact(117),	-- Fury of the Stonemother
 							},
 						}),
 					}),
@@ -172,7 +192,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 31.6, 76.2, THE_HEART_Of_AZEROTH },
 						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
 					}),
-					-- Choose Zone
+					-- Start Legion Zone
 					q(41510, {	-- Azeroth Needs You
 						["sourceQuests"] = {
 							--#if BEFORE 8.0.1
@@ -184,7 +204,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 29.0, 69.1, THE_HEART_Of_AZEROTH },
 					}),
-					-- Learn Stuff
+					-- Learn Mission Table & Research
 					q(44544, {	-- Call of the Earthen Ring
 						["provider"] = { "n", 114274 },	-- Mackay Firebeard
 						["maps"] = { LEGION_DALARAN },
@@ -271,20 +291,28 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(41771, {	-- Recharging the Blade
 						["sourceQuests"] = { 41770 },	-- The Skies Above
 						["provider"] = { "n", 104797 },	-- Consular Celestos
-						["coord"] = { 55.2, 18.4, 737 },	-- The Vortex Pinnacle
+						["coord"] = { 55.2, 18.4, 737 },	-- The Vortex Pinnacle (Scenario Map)
 					}),
 					q(41776, {	-- Return of the Windlord
 						["sourceQuests"] = { 41771 },	-- Recharging the Blade
 						["provider"] = { "n", 113340 },	-- Consular Celestos
-						["coord"] = { 52.1, 81.9, 737 },	-- The Vortex Pinnacle
+						["coord"] = { 52.1, 81.9, 737 },	-- The Vortex Pinnacle (Scenario Map)
 					}),
 					q(41901, {	-- Oath of the Windlord
 						["sourceQuests"] = { 41776 },	-- Return of the Windlord
 						["provider"] = { "n", 104788 },	-- Thunderaan
-						["coord"] = { 52.4, 79.3, 737 },	-- The Vortex Pinnacle
+						["coord"] = { 52.4, 79.3, 737 },	-- The Vortex Pinnacle (Scenario Map)
 						["g"] = {
-							-- Major Campaign?
-						}
+							artifact(675),	-- The Fist of Ra-den
+							-- artifact(675),	-- The Highkeeper's Ward
+							artifact(774),	-- Sharas'dal, Scepter of Tides
+							-- artifact(774),	-- Shield of the Sea Queen
+							artifact(303),	-- Doomhammer
+							-- artifact(303),	-- Fury of the Stonemother
+							crit(3, {	-- Complete the first order campaign effort
+								["achievementID"] = 10461,	-- Fighting with Style: Classic
+							}),
+						},
 					}),
 					q(41742, {	-- Champion: Celestos
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
@@ -488,8 +516,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 110495 },	-- Farseer Nobundo
 						["coord"] = { 35.0, 46.0, THE_HEART_Of_AZEROTH },
 						["g"] = {
-							-- Weps
-						}
+							artifact(676),	-- The Fist of Ra-den
+							-- artifact(676),	-- The Highkeeper's Ward
+							artifact(775),	-- Sharas'dal, Scepter of Tides
+							-- artifact(775),	-- Shield of the Sea Queen
+							artifact(298),	-- Doomhammer
+							-- artifact(298),	-- Fury of the Stonemother
+							ach(10746),	-- Forged for Battle
+						},
 					}),
 					-- Interlude (Shaman only missing both these quests?!)
 					--q(, {	-- An Urgent Warning
@@ -517,26 +551,31 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45706, {	-- The Power of Thousands
 						["sourceQuests"] = { 45652 },	-- A "Humble" Request
 						["provider"] = { "n", 117482 },	-- Magatha Grimtotem
 						["coord"] = { 35.4, 76.0, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45724, {	-- Snakes and Stones
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45723, {	-- The Crone's Wrath
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45725, {	-- Breaking Chains
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(44800, {	-- Against Magatha's Will
 						["sourceQuests"] = {
@@ -546,26 +585,31 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["maps"] = { THOUSAND_NEEDLES },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45763, {	-- Demonic Disruption
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45765, {	-- Brothers and Sisters
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45971, {	-- Infernal Phenomena
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45767, {	-- Elemental Cores
 						["sourceQuests"] = { 45763 },	-- Demonic Disruption
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45883, {	-- The Firelord's Offense
 						["sourceQuests"] = {
@@ -575,25 +619,28 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45769, {	-- Conflagration
 						["sourceQuests"] = { 45883 },	-- The Firelord's Offense
 						["provider"] = { "n", 115492 },	-- Firelord Smolderon
 						["coord"] = { 54.6, 52.4, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46258, {	-- The Calm After the Storm
 						["sourceQuests"] = { 45769 },	-- Conflagration
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo
 						["coord"] = { 30.4, 51.8, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46057, {	-- Champion: Magatha Grimtotem
+					q(46057, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Magatha Grimtotem
 						["sourceQuests"] = { 46258 },	-- The Calm After the Storm
 						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
 						["coord"] = { 34.2, 30.6, THE_HEART_Of_AZEROTH },
 						["g"] = {
 							follower(992),	-- Magatha Grimtotem
 						},
-					}),
+					})),
 					q(46791, {	-- Carried On the Wind
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
@@ -601,8 +648,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 117888 },	-- Orono
 						["coord"] = { 44.6, 61.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46792, {	-- Gathering of the Storms
+					q(46792, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Gathering of the Storms
 						["sourceQuests"] = { 46791 },	-- Carried On the Wind
 						["provider"] = { "n", 106521 },	-- Consular Celestos
 						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
@@ -610,7 +658,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							i(143489),	-- Farseer's Raging Tempest (MOUNT!)
 						},
-					}),
+					})),
 					-- Misc
 					q(43886, {	-- Speaking to the Wind
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
@@ -642,6 +690,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 46057 },	-- Champion: Magatha Grimtotem
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.2.0" },
 					}),
 				}),
 				n(SPECIAL, {

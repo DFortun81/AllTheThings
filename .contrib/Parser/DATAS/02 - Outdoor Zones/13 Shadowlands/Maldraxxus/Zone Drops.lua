@@ -123,8 +123,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			i(176981),	-- Warflesh Spaulders
 			i(176976),	-- Warflesh Stand
 			i(176965),	-- Warflesh Vest
-			i(186727, {["timeline"] = {"added 9.1.0"}}),	-- Seal Breaker Key
-			i(186995, {["timeline"] = {"added 9.1.0"}}),	-- Pattern: Shrouded Hand Towel
+			i(186727, {	-- Seal Breaker Key
+				["timeline"] = {"added 9.1.0"}
+			}),
+			i(186995, {	-- Pattern: Shrouded Hand Towel
+				["timeline"] = {"added 9.1.0"}
+			}),
 		}),
 	}),
 })));

@@ -79,7 +79,33 @@ root("Zones", m(SHADOWLANDS, {
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
 				}),
-				i(190656, {	-- Cache of Sepulcher Treasures (HC)
+				i(191040, {	-- Cache of Sepulcher Treasures (5x BC TW -> N) [Q:62632]
+					["timeline"] = { "added 9.2.0" },
+					["sym"] = {
+						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is", "encounterID" },					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+				}),
+				i(191041, {	-- Cache of Sepulcher Treasures (4x Mythic -> H)
+					["timeline"] = { "added 9.2.0" },
+					["sym"] = {
+						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is", "encounterID" },					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+				}),
+				i(190656, {	-- Cache of Sepulcher Treasures (H)
 					["timeline"] = { "added 9.2.0" },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones

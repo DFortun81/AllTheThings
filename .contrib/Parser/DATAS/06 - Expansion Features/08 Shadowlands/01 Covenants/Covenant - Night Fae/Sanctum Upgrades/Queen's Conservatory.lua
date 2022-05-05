@@ -226,7 +226,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["provider"] = { "n", 174273 },	-- Falir the Shifting
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
-										["altQuests"] = { 62445 },
 									}),
 									q(62450, {	-- A Spirit's Heart
 										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)

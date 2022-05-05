@@ -31,9 +31,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["isWeekly"] = true,
 				["coord"] = { 61.1, 15.1, BASTION },
 				["g"] = {
-					i(180783, {	-- Design: Crown of the Righteous
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					i(180783),	-- Design: Crown of the Righteous
 					i(183756),	-- Floating Circlet
 				},
 			}),

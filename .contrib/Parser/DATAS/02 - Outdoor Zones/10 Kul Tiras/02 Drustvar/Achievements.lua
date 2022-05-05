@@ -460,19 +460,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14730, {	-- To All The Squirrels I Set Sail to See
-					["collectible"] = false,
-					["g"] = {
-						crit(4, {	-- Drustbat
-							["crs"] = { 129791 },	-- Drustbat
-							["coord"] = { 53.09, 30.50, DRUSTVAR },
-						}),
-						crit(6, {	-- Bramble Hare
-							["crs"] = { 128798 },	-- Bramble Hare
-							["coord"] = { 59.81, 21.85, DRUSTVAR },
-						}),
-					},
-				}),
 				pvp(ach(12579)),	-- Tour of Duty: Drustvar
 				ach(12995, {	-- Treasures of Drustvar
 					o(297879, {	-- Bespelled Chest

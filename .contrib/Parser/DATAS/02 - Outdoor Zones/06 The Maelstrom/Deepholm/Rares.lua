@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
-		m(207, {	-- Deepholm
+		m(DEEPHOLM, {
 			n(RARES, {
 				n(50062, {	-- Aeonaxx <Mate of Aeosera>
 					["g"] = {

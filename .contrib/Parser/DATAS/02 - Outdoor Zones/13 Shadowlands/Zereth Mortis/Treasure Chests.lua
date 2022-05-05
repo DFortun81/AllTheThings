@@ -52,12 +52,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375188, {	-- Camber Alcove Arrangement
-				["description"] = "Requires Aealic Understanding and Chapter 6.",
-				["coord"] =	{ 47.7, 34.5, ZERETH_MORTIS },
+				["description"] = "Requires Sopranian Understanding and Chapter 6.",
+				["coord"] =	{ 47.68, 34.48, ZERETH_MORTIS },
 				["questID"] = 65343,
-				["g"] = {
-					-- TODO
-				},
+				["sym"] = {{"select","objectID",375746}},	-- Protoform Schematic
 			}),
 			o(375382, {	-- Crushed Supply Crate
 				["description"] = "To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",
@@ -400,11 +398,26 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			o(375190, {	-- Rondure Alcove Arrangement
-				["description"] = "Requires Aealic Understanding and Chapter 6.",
-				["coord"] =	{ 50.5, 27.6, ZERETH_MORTIS },
+				["description"] = "Requires Aealic Understanding and Chapter 6.\nLeft of an upwards stone ramp, in a small alcove.",
+				["coord"] =	{ 50.46, 27.61, ZERETH_MORTIS },
 				["questID"] = 65345,
+				["sym"] = {{"select","objectID",375270}},	-- Protoform Schematic
 				["g"] = {
-					-- TODO
+					o(375494, {	-- Rondure Cache
+						["coord"] = { 43, 40, 2029 },
+						["questID"] = 65567,
+						["isDaily"] = true,
+						["g"] = {
+							i(190096, {	-- Pocobold
+								["questID"] = 65534,
+								["g"] = {
+									crit(8, {	-- Pocobold
+										["achievementID"] = 15508,	-- Fashion of the First Ones
+									}),
+								},
+							}),
+						},
+					}),
 				},
 			}),
 			o(375281, {	-- Stolen Relic
@@ -522,22 +535,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(189863),	-- Spatial Opener
 					i(190926),	-- Infested Automa Core (TOY!)
-				},
-			}),
-			o(375494, {	-- Rondure Cache
-				["description"] = "Requires Aealic Understanding and Chapter 6. Rondure Alcove Arrangement is found at 50.5, 27.6 Close to Tertius Locus. Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
-				["coord"] = { 43, 40, 2029 },
-				["questID"] = 65567,
-				["isDaily"] = true,
-				["g"] = {
-					i(190096, {	-- Pocobold
-						["questID"] = 65534,
-						["g"] = {
-							crit(8, {	-- Pocobold
-								["achievementID"] = 15508,	-- Fashion of the First Ones
-							}),
-						},
-					}),
 				},
 			}),
 			o(375403, {	-- Pulp-Covered Relic
@@ -677,10 +674,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 50.6, 93.1, ZERETH_MORTIS },
 					{ 51.1, 46.9, ZERETH_MORTIS },
 					{ 53.9, 88.6, ZERETH_MORTIS },
+					{ 57.7, 43.6, ZERETH_MORTIS },
 					{ 59.0, 60.9, ZERETH_MORTIS },
+					{ 59.9, 51.2, ZERETH_MORTIS },
 					{ 62.1, 74.9, ZERETH_MORTIS },
 					{ 63.9, 72.3, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },
+					{ 70.0, 34.2, ZERETH_MORTIS },
 					-- Locrian Esper
 					{ 50.2, 76.4, 2028 },
 					{ 79.2, 74.8, 2028 },
@@ -752,6 +752,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 61.4, 38.3, ZERETH_MORTIS },
 					{ 56.3, 27.3, ZERETH_MORTIS },
 					{ 53.6, 35.9, ZERETH_MORTIS },
+				},
+				["g"] = {
+					i(189158),	-- Glimmer of Cunning
 				},
 			}),
 			o(375290, {	-- Cypher-Bound Chest

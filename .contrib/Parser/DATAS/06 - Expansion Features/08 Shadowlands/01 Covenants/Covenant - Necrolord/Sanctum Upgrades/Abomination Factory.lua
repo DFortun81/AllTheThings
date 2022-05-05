@@ -370,6 +370,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								crit(29, {	-- Barrel O' Fish
+									["description"] = "Becomes available at max Shadowlands Fishing skill.",
 									["cost"] = {
 										{ "i", 173032, 5 },	-- 5 Lost Sole
 										{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
@@ -473,6 +474,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["description"] = "Possible to find the Great Luckydo when Chordy finds treasure.",
 								["cost"] = { { "i", 178554, 1 } },	-- Call Chordy
 								["crs"] = {
+									--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 									161270,	-- Chordy (in world)
 									167828,	-- Salvageable Items (lootable treasure in world)
 								},
@@ -822,6 +824,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								n(161270, {	-- Chordy
 									["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
+									["crs"] = {
+										--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
+										161270,	-- Chordy (in world)
+										167828,	-- Salvageable Items (lootable treasure in world)
+									},
 									["g"] = {
 										i(184205),	-- Long Lost Crown
 										i(184204),	-- Otherworld Hat

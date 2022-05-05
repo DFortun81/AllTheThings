@@ -103,15 +103,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14730, {	-- To All The Squirrels I Set Sail to See
-					["collectible"] = false,
-					["g"] = {
-						crit(11, {	-- Temple Beetle
-							["crs"] = { 130441 },	-- Temple Beetle
-							["coord"] = { 43.53, 36.77, DAZARALOR }
-						}),
-					},
-				}),
 				ach(12555, {	-- Welcome to Zandalar
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["races"] = HORDE_ONLY,

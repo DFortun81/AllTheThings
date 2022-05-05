@@ -247,10 +247,8 @@ _.WorldDrops =
 				i(1608),	-- Skullcrusher Mace
 				i(15228),	-- Smashing Star
 				i(4569),	-- Staunch Hammer
-				un(REMOVED_FROM_GAME, i(2267)),	-- Stonesplinter Mace
 				i(789),		-- Stout Battlehammer
 				i(1721),	-- Viking Warhammer
-				un(REMOVED_FROM_GAME, i(920)),	-- Wicked Spiked Mace
 			}),
 			filter(TWO_HANDED_MACES, {
 				i(15264),	-- Backbreaker
@@ -264,7 +262,6 @@ _.WorldDrops =
 				i(15266),	-- Fierce Mauler
 				i(15262),	-- Greater Maul
 				i(15259),	-- Hefty Battlehammer
-				un(REMOVED_FROM_GAME, i(911)),	-- Ironwood Treebranch
 				i(3193),	-- Oak Mallet
 				i(15265),	-- Painbringer
 				i(12983),	-- Rakzur Club
@@ -339,7 +336,6 @@ _.WorldDrops =
 				i(14973),	-- Glorious Shield
 				i(4067),	-- Glyphed Buckler
 				i(7537),	-- Gothic Shield
-				un(REMOVED_FROM_GAME, i(2021)),	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
 				i(15298),	-- Grizzly Buckler
 				i(15512),	-- Grunt's Shield
 				i(15621),	-- Gryphon Mail Buckler
@@ -429,7 +425,6 @@ _.WorldDrops =
 			filter(STAVES, {
 				i(3185),	-- Acrobatic Staff
 				i(937),		-- Black Duskwood Staff
-				un(REMOVED_FROM_GAME, i(2013)),	-- Cryptbone Staff
 				i(15274),	-- Diviner Long Staff
 				i(2072),	-- Dwarven Magestaff
 				i(944),		-- Elemental Mage Staff
@@ -443,7 +438,6 @@ _.WorldDrops =
 				i(1607),	-- Soulkeeper
 				i(1613),	-- Spiritchaser Staff
 				i(13000),	-- Staff of Hale Magefire
-				un(REMOVED_FROM_GAME, i(880)),	-- Staff of Horrors
 				i(873),		-- Staff of Jordan
 				i(4566),	-- Sturdy Quarterstaff
 				i(1720),	-- Tanglewood Staff

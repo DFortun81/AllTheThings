@@ -5222,11 +5222,11 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Pink Party Hat",
-					["recipeID"] = 334499
+					["recipeID"] = 334499,
 				},
 				{
 					["name"] = "Shadowlace Cloak",
-					["recipeID"] = 310898
+					["recipeID"] = 310898,
 				},
 				{
 					["name"] = "Shadowlace Cord",
@@ -5312,7 +5312,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Shrouded Hand Towel",
-					["recipeID"] = 355183
+					["recipeID"] = 355183,
 				}
 			}
 		},
@@ -5386,46 +5386,6 @@ profession(TAILORING, {
 				}),
 			},
 		})),
-		q(3379, {	-- Shadoweaver
-			["qg"] = 8439,	-- Nilith Lokrav
-			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["requireSkill"] = TAILORING,
-			["lvl"] = 40,
-			["groups"] = {
-				i(10461),	-- Shadowy Bracers
-			},
-		}),
-		q(3385, {	-- The Undermarket (1/2)
-			["qg"] = 8439,	-- Nilith Lokrav
-			["sourceQuest"] = 3379,	-- Shadoweaver
-			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["requireSkill"] = TAILORING,
-			["cost"] = {
-				{ "i", 10467, 1 },	-- Trader's Satchel
-			},
-			["lvl"] = 40,
-			["groups"] = {
-				{
-					["itemID"] = 10467,	-- Trader's Satchel
-					["cr"] = 8444,	-- Trade Master Kovic <The Undermarket>
-					["coord"] = { 35.8, 52.6, SEARING_GORGE },
-				},
-				i(10479),	-- Kovic's Trading Satchel
-				i(10462),	-- Shadowy Belt
-			},
-		}),
-		q(3402, {	-- The Undermarket (2/2)
-			["qg"] = 8439,	-- Nilith Lokrav
-			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
-			["coord"] = { 41.0, 75.0, SEARING_GORGE },
-			["requireSkill"] = TAILORING,
-			["lvl"] = 40,
-			["groups"] = {
-				i(10463, {	-- Pattern: Shadoweave Mask
-					["timeline"] = { "removed 4.0.3.10000", "added 7.3" },
-				}),
-			},
-		}),
 	})),
 });
 

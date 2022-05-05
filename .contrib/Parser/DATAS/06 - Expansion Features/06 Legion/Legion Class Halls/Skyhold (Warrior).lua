@@ -8,7 +8,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			["maps"] = { SKYHOLD },
 			["g"] = {
 				n(ARTIFACTS, {
-					--cl(WARRIOR, ARMS, {
+					cl(WARRIOR, ARMS, {
 						q(43643, {	-- Secrets of the Axes
 							["coord"] = { 41.0, 37.1, SKYHOLD },
 							["provider"] = { "n", 96586 },	-- Master Smith Helgar
@@ -19,8 +19,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(WARRIOR, FURY, {
+					}),
+					cl(WARRIOR, FURY, {
 						i(139579, {	-- The Dragonslayers
 							["cost"] = {
 								{ "i", 140660, 1 },	-- Haft of the God-King
@@ -32,8 +32,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								-- artifact(964),	-- Warswords of the Valarjar [Off Hand]
 							},
 						}),
-					--}),
-					cl(WARRIOR, { --PROTECTION,
+					}),
+					cl(WARRIOR, PROTECTION, {
 						["description"] = "Read the Saga of the Valajar tablet (right behind your AK research guy) in your Order Hall first.\nGo to Highmount and go forward into the cave until the zone changes to \"Neltharions Vault\" (just to make sure, the next step can already trigger in front of the cave)\nIf you see the chat emote \"You hear a strange roar from the cavern ahead\"(May not be seen anymore as of 9.1.0) carefully search all gold piles for your appreance (it can be on multiple locations, so search carefully)\nIf you do not see that emote, try visiting the cave the next day...\n\nYou must be spec'd Protection to see the appearance on the ground.",
 						["coords"] = {
 							{ 45.1, 28.6, SKYHOLD },
@@ -104,7 +104,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["provider"] = { "n", 96469 },	-- Odyn
 					}),
-					--cl(WARRIOR, ARMS, {
+					cl(WARRIOR, ARMS, {
 						q(41105, {	-- The Sword of Kings
 							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
@@ -119,8 +119,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(WARRIOR, FURY, {
+					}),
+					cl(WARRIOR, FURY, {
 						q(40043, {	-- The Hunter of Heroes
 							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
@@ -138,8 +138,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
-					--cl(WARRIOR, PROTECTION, {
+					}),
+					cl(WARRIOR, PROTECTION, {
 						q(39191, {	-- Legacy of the Icebreaker
 							["sourceQuests"] = {
 								40579,	-- Weapons of Legend
@@ -157,7 +157,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								}),
 							},
 						}),
-					--}),
+					}),
 					q(44255, {	-- Axe and You Shall Receive
 						["sourceQuests"] = {
 							41105,	-- The Sword of Kings
@@ -610,6 +610,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["coord"] = { 59.7, 13.4, SKYHOLD },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					i(144436, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
@@ -762,6 +763,8 @@ root("HiddenQuestTriggers", {
 	q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
 	q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
 	q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
+
+	q(44151),	-- Looting Skull of Nithogg (140658)
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

@@ -2179,7 +2179,7 @@ root("Zones", {
 							-- #if BEFORE CATA
 							i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
 							-- #endif
-							
+
 							-- #if BEFORE 6.0.1
 							-- #if AFTER CATA
 							i(32227, {	-- Crimson Spinel
@@ -2392,6 +2392,7 @@ root("Zones", {
 								["isLimited"] = true,
 							}),
 							i(32381, {	-- Schematic: Fused Wiring
+								["recipeID"] = 39895,
 								["isLimited"] = true,
 							}),
 						},

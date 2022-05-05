@@ -8,21 +8,21 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 			["maps"] = { TRUESHOT_LODGE },
 			["g"] = {
 				n(ARTIFACTS, {
-					--cl(HUNTER, BEAST_MASTERY, {
+					cl(HUNTER, BEAST_MASTERY, {
 						i(139555, {	-- Designs of the Grand Architect
 							artifact(918),	-- Titanstrike
 						}),
-					--}),
-					--cl(HUNTER, MARKSMANSHIP, {
+					}),
+					cl(HUNTER, MARKSMANSHIP, {
 						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
 							artifact(224),	-- Thas'dorah, Legacy of the Windrunners
 						}),
-					--}),
-					--cl(HUNTER, SURVIVAL, {
+					}),
+					cl(HUNTER, SURVIVAL, {
 						i(139557, {	-- Last Breath of the Forest
 							artifact(473),	-- Talonclaw
 						}),
-					--}),
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1760, {	-- Trueshot Lodge, Highmountain
@@ -57,7 +57,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),
-					--cl(HUNTER, BEAST_MASTERY, {
+					cl(HUNTER, BEAST_MASTERY, {
 						q(41541, {	-- A Beastly Expedition
 							["sourceQuests"] = {
 								40618,	-- Weapons of Legend
@@ -100,8 +100,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
 							["maps"] = { LEGION_DALARAN },
 						}),
-					--}),
-					--cl(HUNTER, MARKSMANSHIP, {
+					}),
+					cl(HUNTER, MARKSMANSHIP, {
 						q(41540, {	-- Rendezvous with the Courier
 							["sourceQuests"] = {
 								40618,	-- Weapons of Legend
@@ -167,8 +167,8 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							["provider"] = { "n", 102570 },	-- Vereesa Windrunner
 							["maps"] = { LEGION_DALARAN },
 						}),
-					--}),
-					--cl(HUNTER, SURVIVAL, {
+					}),
+					cl(HUNTER, SURVIVAL, {
 						q(41542, {	-- Preparation for the Hunt
 							["sourceQuests"] = {
 								40618,	-- Weapons of Legend
@@ -204,7 +204,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								}),
 							},
 						}),
-					--}),
+					}),
 					q(44233, {	-- Walk This Way
 						["sourceQuests"] = {
 							40952,	-- Hunter to Hunter

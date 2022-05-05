@@ -56,7 +56,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(183104, {	-- Technique: Contract: The Undying Army
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311411,
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves
 					i(184738),	-- Chainmail of the March Warden

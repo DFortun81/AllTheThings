@@ -124,7 +124,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["name"] = "Stones to Ore",
-							["recipeID"] = 307144
+							["recipeID"] = 307144,
 						},
 					},
 				},

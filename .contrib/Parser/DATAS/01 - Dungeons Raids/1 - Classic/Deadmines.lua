@@ -136,6 +136,12 @@ root("Instances", tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Red Silk Bandana
 							["provider"] = { "i", 915 },	-- Red Silk Bandana
+							["description"] = "Can also drop from any Defias mob in the Deadmines.",
+							["crs"] = {
+								619,	-- Defias Conjurer
+								824,	-- Defias Digger
+								594,	-- Defias Henchman
+							},
 						}),
 						i(6094, {	-- Piercing Axe
 							["timeline"] = { "removed 4.0.3" },

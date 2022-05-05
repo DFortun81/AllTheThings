@@ -35,9 +35,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
+						["recipeID"] = 324088,
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183106, {	-- Recipe: Eternal Cauldron
+						["recipeID"] = 307087,
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183134, {	-- Illusion: Hunt's Favor
@@ -71,7 +73,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(172634, {	-- Brightgleam
 				["coord"] = { 33.2, 51.6, ARDENWEALD },
 				["g"] = {
-					i(180782),	-- Technique: Fae Revel Masque
+					i(180782, {	-- Technique: Fae Revel Masque
+						["recipeID"] = 334537,
+					}),
 				},
 			}),
 			n(165341, {	-- Droman Dawnblossom

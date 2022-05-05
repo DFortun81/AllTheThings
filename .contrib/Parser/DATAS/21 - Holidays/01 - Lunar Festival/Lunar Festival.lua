@@ -410,7 +410,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			}),
 			q(29734, {	-- Deepforge the Elder
 				["qg"] = 55216,	-- Elder Deepforge
-				["coord"] = { 27.7, 69.1, 207 },
+				["coord"] = { 27.7, 69.1, DEEPHOLM },
 				["timeline"] = { "added 4.3.0.15050" },
 				["isYearly"] = true,
 			}),
@@ -446,7 +446,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			}),
 			q(29735, {	-- Stonebrand the Elder
 				["qg"] = 55217,	-- Elder Stonebrand
-				["coord"] = { 49.7, 54.8, 207 },
+				["coord"] = { 49.7, 54.8, DEEPHOLM },
 				["timeline"] = { "added 4.3.0.15050" },
 				["isYearly"] = true,
 			}),

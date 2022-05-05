@@ -345,14 +345,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						}),
 					}),
 					i(190611),	-- Tabard of the Enlightened
-					i(187797, {	-- Technique: Contract: The Enlightened (RECIPE!)
-						["recipeID"] = 359786,	-- Contract: Enlightened Brokers
-						["requireSkill"] = INSCRIPTION,
-					}),
-					i(190379, {	-- Technique: Glyph of the Spectral Lupine (RECIPE!)
-						["recipeID"] = 367389,	-- Glyph of the Spectral Lupine
-						["requireSkill"] = INSCRIPTION,
-					}),
+					i(187797),	-- Technique: Contract: The Enlightened (RECIPE!)
+					i(190379),	-- Technique: Glyph of the Spectral Lupine (RECIPE!)
 					-- Memories
 					i(190584),	-- Memory of Unity (DK)
 					i(190587),	-- Memory of Unity (DH)

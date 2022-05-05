@@ -5,18 +5,18 @@
 _.Zones =
 {
 	m(948, {	-- The Maelstrom
-		m(207, {	-- Deepholm
+		m(DEEPHOLM, {
 			n(QUESTS, {
 				q(26581, {	-- A Head Full of Wind
 					["lvl"] = 82,
 					["provider"] = { "n", 43395 },	-- Windspeaker Lorvarius
-					["coord"] = { 71.8, 47.6, 207 },
+					["coord"] = { 71.8, 47.6, DEEPHOLM },
 					["sourceQuests"] = { 26580 },	-- Familiar Intruders
 				}),
 				q(26871, {	-- A Rock Amongst Many
 					["lvl"] = 82,
 					["provider"] = { "o", 204959 },	-- Gigantic Painite Cluster
-					["coord"] = { 66.3, 20.7, 207 },
+					["coord"] = { 66.3, 20.7, DEEPHOLM },
 					["sourceQuests"] = { 26869 },	-- Depth of the Depths
 					["model"] = 383743,
 					["modelScale"] = 4,
@@ -29,7 +29,7 @@ _.Zones =
 				q(26835, {	-- A Slight Problem
 					["lvl"] = 82,
 					["provider"] = { "n", 44143 },	-- Slate Quicksand
-					["coord"] = { 27.6, 44.8, 207 },
+					["coord"] = { 27.6, 44.8, DEEPHOLM },
 					["sourceQuests"] = {
 						26792,	-- Fungal Monstrosities
 						26791,	-- Sprout No More
@@ -38,7 +38,7 @@ _.Zones =
 				q(26857, {	-- Abyssion's Minions
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 					["sourceQuests"] = { 26771 },	-- Testing the Trap
 				}),
 				q(26248, {	-- All Our Friends Are Dead
@@ -53,7 +53,7 @@ _.Zones =
 				q(26411, {	-- Apply and Flash Dry
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
-					["coord"] = { 46.5, 57.3, 207 },
+					["coord"] = { 46.5, 57.3, DEEPHOLM },
 					["sourceQuests"] = {
 						26410,	--  Explosive Bonding Compound
 						27135,	--  Something that Burns
@@ -67,7 +67,7 @@ _.Zones =
 				q(26750, {	-- At the Stonemother's Call
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26585,	-- Corruption Destruction
 						26659,	-- Resonating Blow
@@ -77,7 +77,7 @@ _.Zones =
 				q(26752, {	-- Audience with the Stonemother
 					["lvl"] = 82,
 					["provider"] = { "n", 42465 },	-- Therazane
-					["coord"] = { 56.3, 12.2, 207 },
+					["coord"] = { 56.3, 12.2, DEEPHOLM },
 					["sourceQuests"] = { 26750 },	-- At the Stonemother's Call
 					["g"] = {
 						i(61410),	-- Clutch of the Stonemother
@@ -88,7 +88,7 @@ _.Zones =
 				q(26591, {	-- Battlefront Triage
 					["lvl"] = 82,
 					["provider"] = { "n", 43319 },	-- Earthmender Deepvein
-					["coord"] = { 24.6, 62.1, 207 },
+					["coord"] = { 24.6, 62.1, DEEPHOLM },
 					["sourceQuests"] = {
 						26501,	--  Sealing the Way
 						26502,	--  Thunder Stones
@@ -97,14 +97,14 @@ _.Zones =
 				q(28488, {	-- Beneath the Surface
 					["lvl"] = 82,
 					["provider"] = { "n", 43805 },	-- Felsen the Enduring
-					["coord"] = { 56.1, 14.4, 207 },
+					["coord"] = { 56.1, 14.4, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
 				q(26766, {	-- Big Game, Big Bait
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 					["sourceQuests"] = { 27061 },	-- The Twilight Overlook
 				}),
 				q(26256, {	-- Bleed the Bloodshaper
@@ -114,13 +114,13 @@ _.Zones =
 				q(26861, {	-- Block the Gates
 					["lvl"] = 82,
 					["provider"] = { "n", 44222 },	-- Seer Galekk
-					["coord"] = { 64.6, 82.2, 207 },
+					["coord"] = { 64.6, 82.2, DEEPHOLM },
 					["sourceQuests"] = { 26771 },	-- Testing the Trap
 				}),
 				q(26259, {	-- Blood of the Earthwarder
 					["lvl"] = 82,
 					["provider"] = { "n", 43397 },	-- Seer Kormo
-					["coord"] = { 49.7, 53.0, 207 },
+					["coord"] = { 49.7, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 26255 },	-- Return to the Temple of Earth
 					["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 					["g"] = {
@@ -161,7 +161,7 @@ _.Zones =
 				q(26632, {	-- Close Escort
 					["lvl"] = 82,
 					["provider"] = { "n", 45043 },	-- Peak Grindstone
-					["coord"] = { 20.7, 61.6, 207 },
+					["coord"] = { 20.7, 61.6, DEEPHOLM },
 					["sourceQuests"] = { 27126 },	-- Rush Delivery
 					["g"] = {
 						i(61456),	-- Broken Emergency Brake
@@ -172,13 +172,13 @@ _.Zones =
 				q(26313, {	-- Core of Our Troubles
 					["lvl"] = 82,
 					["provider"] = { "n", 42731 },	-- Earthmender Norsala
-					["coord"] = { 46.1, 45.8, 207 },
+					["coord"] = { 46.1, 45.8, DEEPHOLM },
 					["sourceQuests"] = { 26326 },	-- The Very Earth Beneath Our Feet
 				}),
 				q(26585, {	-- Corruption Destruction
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26578,	-- Doomshrooms
 						26579,	-- Gone Soft
@@ -188,19 +188,19 @@ _.Zones =
 				q(26312, {	-- Crumbling Defenses
 					["lvl"] = 82,
 					["provider"] = { "n", 42730 },	-- Earthcaller Torunscar
-					["coord"] = { 46.1, 45.7, 207 },
+					["coord"] = { 46.1, 45.7, DEEPHOLM },
 					["sourceQuests"] = { 26326 },	-- The Very Earth Beneath Our Feet
 				}),
 				q(26258, {	-- Deathwing's Fall
 					["lvl"] = 82,
 					["provider"] = { "n", 43065 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 26255 },	-- Return to the Temple of Earth
 				}),
 				q(27040, {	-- Decryption Made Easy [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 44799 },	-- Explorer Mowi
-					["coord"] = { 47.3, 51.4, 207 },
+					["coord"] = { 47.3, 51.4, DEEPHOLM },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27006,	--  Fly Over
@@ -230,7 +230,7 @@ _.Zones =
 				q(26247, {	-- Diplomacy First
 					["lvl"] = 82,
 					["provider"] = { "n", 43065 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26246,	-- Captain's Log
 						26245,	-- Gunship Down
@@ -240,19 +240,19 @@ _.Zones =
 				q(26656, {	-- Don't. Stop. Moving.
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
-					["coord"] = { 39.9, 19.4, 207 },
+					["coord"] = { 39.9, 19.4, DEEPHOLM },
 					["sourceQuests"] = { 26576 },	-- Steady Hand
 				}),
 				q(26578, {	-- Doomshrooms
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = { 26577 },	-- Rocky Upheaval
 				}),
 				q(26834, {	-- Down Into the Chasm
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
-					["coord"] = { 22.7, 52.0, 207 },
+					["coord"] = { 22.7, 52.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26770,	--  Mystic Masters
 						26762,	--  Reactivate the Constructs
@@ -261,13 +261,13 @@ _.Zones =
 				q(29329, {	-- Elemental Bonds: Patience
 					["lvl"] = 85,
 					["provider"] = { "n", 53738 },	-- Aggra
-					["coord"] = { 56.5, 12.4, 207 },
+					["coord"] = { 56.5, 12.4, DEEPHOLM },
 					["sourceQuest"] = 29337,	-- Into Constant Earth
 				}),
 				q(27136, {	-- Elemental Energy
 					["lvl"] = 82,
 					["provider"] = { "n", 43397 },	-- Seer Kormo
-					["coord"] = { 49.7, 53.0, 207 },
+					["coord"] = { 49.7, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 27123 },	-- Deepholm, Realm of Earth
 					["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 					["g"] = {
@@ -279,38 +279,38 @@ _.Zones =
 				q(27933, {	-- Elemental Ore
 					["lvl"] = 82,
 					["provider"] = { "n", 47195 },	-- Slate Quicksand
-					["coord"] = { 30.6, 77.8, 207 },
+					["coord"] = { 30.6, 77.8, DEEPHOLM },
 					["sourceQuests"] = { 27931 },	--  The Quaking Fields
 				}),
 				q(26436, {	-- Entrenched
 					["lvl"] = 82,
 					["provider"] = { "n", 42467 },	-- Diamant the Patient
-					["coord"] = { 56.5, 42.8, 207 },
+					["coord"] = { 56.5, 42.8, DEEPHOLM },
 					["sourceQuests"] = { 26871 },	-- A Rock Amongst Many
 				}),
 				q(26410, {	-- Explosive Bonding Compound
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
-					["coord"] = { 46.5, 57.3, 207 },
+					["coord"] = { 46.5, 57.3, DEEPHOLM },
 					["sourceQuests"] = { 26409 },	--  Where's Goldmine?
 				}),
 				q(26580, {	-- Familiar Intruders
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = { 26577 },	-- Rocky Upheaval
 				}),
 				q(27046, {	-- Fear of Boring
 					["lvl"] = 82,
 					["provider"] = { "n", 43805 },	-- Felsen the Enduring
-					["coord"] = { 56.1, 14.4, 207 },
+					["coord"] = { 56.1, 14.4, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
 				q(27042, {	-- Fight Fire and Water and Air with... [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 44802 },	-- Prospector Brewer
-					["coord"] = { 47.3, 51.4, 207 },
+					["coord"] = { 47.3, 51.4, DEEPHOLM },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27006,	--  Fly Over
@@ -339,7 +339,7 @@ _.Zones =
 				q(26564, {	-- Fixer Upper
 					["lvl"] = 82,
 					["provider"] = { "n", 43169 },	-- Clay Mudaxle
-					["coord"] = { 24.7, 62.2, 207 },
+					["coord"] = { 24.7, 62.2, DEEPHOLM },
 					["sourceQuests"] = { 26502 },	--  Thunder Stones
 					["g"] = {
 						i(61460),	-- Catapult Loading Scoop
@@ -350,7 +350,7 @@ _.Zones =
 				q(27006, {	-- Fly Over [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 44802 },	-- Prospector Brewer
-					["coord"] = { 47.3, 51.4, 207 },
+					["coord"] = { 47.3, 51.4, DEEPHOLM },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27008, {	-- Fly Over [Horde]
@@ -361,14 +361,14 @@ _.Zones =
 				q(26658, {	-- Fragile Values
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
-					["coord"] = { 39.9, 19.4, 207 },
+					["coord"] = { 39.9, 19.4, DEEPHOLM },
 					["sourceQuests"] = { 26656 },	-- Don't. Stop. Moving.
 				}),
 				q(27050, {	-- Fungal Fury
 					["lvl"] = 82,
 					["isDaily"] = true,
 					["provider"] = { "n", 43804 },	-- Gorsik the Tumultuous
-					["coord"] = { 57.8, 13.0, 207 },
+					["coord"] = { 57.8, 13.0, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["g"] = {
 						ach(5450),	-- Fungal Frenzy
@@ -377,14 +377,14 @@ _.Zones =
 				q(26792, {	-- Fungal Monstrosities
 					["lvl"] = 82,
 					["provider"] = { "n", 44143 },	-- Slate Quicksand
-					["coord"] = { 27.6, 44.8, 207 },
+					["coord"] = { 27.6, 44.8, DEEPHOLM },
 					["sourceQuests"] = { 26834 },	-- Down Into the Chasm
 				}),
 				q(28390, {	-- Glop, Son of Glop
 					["lvl"] = 82,
 					["isDaily"] = true,
 					["provider"] = { "n", 44973 },	-- Ruberick
-					["coord"] = { 59.4, 14.0, 207 },
+					["coord"] = { 59.4, 14.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26709,	-- The Stone Throne
 						26583,	-- Wrath of the Fungalmancer
@@ -397,7 +397,7 @@ _.Zones =
 				q(26579, {	-- Gone Soft
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = { 26577 },	-- Rocky Upheaval
 					["g"] = {
 						i(61415),	-- Cloak of Fungal Growth
@@ -408,19 +408,19 @@ _.Zones =
 				q(26245, {	-- Gunship Down
 					["lvl"] = 82,
 					["provider"] = { "n", 43065 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 27123 },	-- Deepholm, Realm of Earth
 				}),
 				q(26657, {	-- Hard Falls
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
-					["coord"] = { 39.9, 19.4, 207 },
+					["coord"] = { 39.9, 19.4, DEEPHOLM },
 					["sourceQuests"] = { 26656 },	-- Don't. Stop. Moving.
 				}),
 				q(26376, {	-- Hatred Runs Deep
 					["lvl"] = 82,
 					["provider"] = { "n", 42467 },	-- Diamant the Patient
-					["coord"] = { 56.5, 42.8, 207 },
+					["coord"] = { 56.5, 42.8, DEEPHOLM },
 					["sourceQuests"] = { 26328 },	-- Rocky Relations
 					["g"] = {
 						i(61432),	-- Bloodcult Handwraps
@@ -431,7 +431,7 @@ _.Zones =
 				q(26315, {	-- Imposing Confrontation
 					["lvl"] = 82,
 					["provider"] = { "n", 42731 },	-- Earthmender Norsala
-					["coord"] = { 46.1, 45.8, 207 },
+					["coord"] = { 46.1, 45.8, DEEPHOLM },
 					["sourceQuests"] = {
 						26313,	-- Core of Our Troubles
 						26312,	-- Crumbling Defenses
@@ -446,37 +446,37 @@ _.Zones =
 				q(26438, {	-- Intervention
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = { 26436 },	-- Entrenched
 				}),
 				q(28866, {	-- Into the Stonecore
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 				}),
 				q(29338, {	-- Into Unrelenting Flame
 					["lvl"] = 85,
 					["provider"] = { "n", 53738 },	-- Aggra
-					["coord"] = { 64.0, 46.0, 207 },
+					["coord"] = { 64.0, 46.0, DEEPHOLM },
 					["sourceQuest"] = 29329,	-- Elemental Bonds: Patience
 				}),
 				q(26755, {	-- Keep Them off the Front
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
-					["coord"] = { 22.7, 52.0, 207 },
+					["coord"] = { 22.7, 52.0, DEEPHOLM },
 					["sourceQuests"] = { 26632 },	--  Close Escort
 				}),
 				q(26375, {	-- Loose Stones
 					["lvl"] = 82,
 					["provider"] = { "n", 42899 },	-- Quartz Stonetender
-					["coord"] = { 56.5, 41.0, 207 },
+					["coord"] = { 56.5, 41.0, DEEPHOLM },
 					["sourceQuests"] = { 26328 },	-- Rocky Relations
 				}),
 				q(26710, {	-- Lost In The Deeps
 					["lvl"] = 82,
 					["isDaily"] = true,
 					["provider"] = { "n", 44945 },	-- Pyrite Stonetender
-					["coord"] = { 55.4, 14.0, 207 },
+					["coord"] = { 55.4, 14.0, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["g"] = {
 						ach(5449, {	-- Rock Lover
@@ -487,13 +487,13 @@ _.Zones =
 				q(26437, {	-- Making Things Crystal Clear
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = { 26436 },	-- Entrenched
 				}),
 				q(27102, {	-- Maziel's Ascendancy
 					["lvl"] = 82,
 					["provider"] = { "o", 205207 },	-- Maziel's Journal
-					["coord"] = { 67.2, 70.2, 207 },
+					["coord"] = { 67.2, 70.2, DEEPHOLM },
 					["sourceQuests"] = { 27101 },	-- Maziel's Revelation
 					["g"] = {
 						i(61481),	-- Mercury Treads
@@ -508,14 +508,14 @@ _.Zones =
 				q(27047, {	-- Motes
 					["lvl"] = 82,
 					["provider"] = { "n", 43805 },	-- Felsen the Enduring
-					["coord"] = { 56.1, 14.4, 207 },
+					["coord"] = { 56.1, 14.4, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
 				q(26770, {	-- Mystic Masters
 					["lvl"] = 82,
 					["provider"] = { "n", 43898 },	-- Flint Oremantle
-					["coord"] = { 22.8, 52.1, 207 },
+					["coord"] = { 22.8, 52.1, DEEPHOLM },
 					["sourceQuests"] = { 26755 },	--  Keep Them off the Front
 					["g"] = {
 						i(61453),	-- Gloves of Troggslaying
@@ -526,7 +526,7 @@ _.Zones =
 				q(26314, {	-- On Even Ground
 					["lvl"] = 82,
 					["provider"] = { "n", 42730 },	-- Earthcaller Torunscar
-					["coord"] = { 46.1, 45.7, 207 },
+					["coord"] = { 46.1, 45.7, DEEPHOLM },
 					["sourceQuests"] = { 26326 },	-- The Very Earth Beneath Our Feet
 				}),
 				q(26250, {	-- On Second Thought, Take One Prisoner
@@ -537,7 +537,7 @@ _.Zones =
 				q(27934, {	-- One With the Ground
 					["lvl"] = 82,
 					["provider"] = { "n", 47195 },	-- Slate Quicksand
-					["coord"] = { 30.6, 77.8, 207 },
+					["coord"] = { 30.6, 77.8, DEEPHOLM },
 					["sourceQuests"] = {
 						27932,	--  The Axe of Earthly Sundering
 						27933,	--  Elemental Ore
@@ -546,13 +546,13 @@ _.Zones =
 				q(26828, {	-- Our Part of the Bargain
 					["lvl"] = 82,
 					["provider"] = { "n", 43065 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 26827 },	-- Rallying the Earthen Ring
 				}),
 				q(28869, {	-- Pebble
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26437,	-- Making Things Crystal Clear
 						26438,	-- Intervention
@@ -563,13 +563,13 @@ _.Zones =
 				q(26507, {	-- Petrified Delicacies
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = { 26441 },	-- So Big, So Round...
 				}),
 				q(26439, {	-- Putting the Pieces Together
 					["lvl"] = 82,
 					["provider"] = { "n", 43344 },	-- Berracite
-					["coord"] = { 34.1, 35.2, 207 },
+					["coord"] = { 34.1, 35.2, DEEPHOLM },
 					["sourceQuests"] = { 26436 },	-- Entrenched
 				}),
 				q(26261, {	-- Question the Slaves
@@ -593,19 +593,19 @@ _.Zones =
 				q(26827, {	-- Rallying the Earthen Ring
 					["lvl"] = 82,
 					["provider"] = { "n", 43809 },	-- Earthcaller Torunscar
-					["coord"] = { 56.1, 13.5, 207 },
+					["coord"] = { 56.1, 13.5, DEEPHOLM },
 					["sourceQuests"] = { 26752 },	-- Audience with the Stonemother
 				}),
 				q(26762, {	-- Reactivate the Constructs
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
-					["coord"] = { 22.7, 52.0, 207 },
+					["coord"] = { 22.7, 52.0, DEEPHOLM },
 					["sourceQuests"] = { 26755 },	--  Keep Them off the Front
 				}),
 				q(26836, {	-- Rescue the Stonefather... and Flint
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
-					["coord"] = { 22.7, 52.0, 207 },
+					["coord"] = { 22.7, 52.0, DEEPHOLM },
 					["sourceQuests"] = { 26835 },	-- A Slight Problem
 					["g"] = {
 						i(61449),	-- Liberator's Girdle
@@ -616,7 +616,7 @@ _.Zones =
 				q(26659, {	-- Resonating Blow
 					["lvl"] = 82,
 					["provider"] = { "n", 42466 },	-- Terrath the Steady
-					["coord"] = { 39.9, 19.4, 207 },
+					["coord"] = { 39.9, 19.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26658,	-- Fragile Values
 						26657,	-- Hard Falls
@@ -635,7 +635,7 @@ _.Zones =
 				q(26575, {	-- Rock Bottom
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = { 26441 },	-- So Big, So Round...
 					["g"] = {
 						i(61422),	-- Basilisk Eye Wand
@@ -646,13 +646,13 @@ _.Zones =
 				q(26328, {	-- Rocky Relations
 					["lvl"] = 82,
 					["provider"] = { "n", 42731 },	-- Earthmender Norsala
-					["coord"] = { 46.1, 45.8, 207 },
+					["coord"] = { 46.1, 45.8, DEEPHOLM },
 					["sourceQuests"] = { 26315 },	-- Imposing Confrontation
 				}),
 				q(26577, {	-- Rocky Upheaval
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26507,	-- Petrified Delicacies
 						26575,	-- Rock Bottom
@@ -661,13 +661,13 @@ _.Zones =
 				q(27126, {	-- Rush Delivery
 					["lvl"] = 82,
 					["provider"] = { "n", 43169 },	-- Clay Mudaxle
-					["coord"] = { 24.7, 62.2, 207 },
+					["coord"] = { 24.7, 62.2, DEEPHOLM },
 					["sourceQuests"] = { 26625 },	--  Troggzor the Earthinator
 				}),
 				q(26501, {	-- Sealing the Way
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
-					["coord"] = { 27.9, 68.8, 207 },
+					["coord"] = { 27.9, 68.8, DEEPHOLM },
 					["sourceQuests"] = { 26499 },	--  Stonefather's Boon
 					["g"] = {
 						i(61463),	-- Earthswell Belt
@@ -678,7 +678,7 @@ _.Zones =
 				q(26584, {	-- Shaken and Stirred
 					["lvl"] = 82,
 					["provider"] = { "n", 42472 },	-- Gorsik the Tumultuous
-					["coord"] = { 72.2, 54.0, 207 },
+					["coord"] = { 72.2, 54.0, DEEPHOLM },
 					["sourceQuests"] = {
 						26578,	-- Doomshrooms
 						26579,	-- Gone Soft
@@ -688,7 +688,7 @@ _.Zones =
 				q(26537, {	-- Shatter Them!
 					["lvl"] = 82,
 					["provider"] = { "n", 43168 },	-- Gravel Longslab
-					["coord"] = { 24.5, 62.4, 207 },
+					["coord"] = { 24.5, 62.4, DEEPHOLM },
 					["sourceQuests"] = { 26501 },	--  Sealing the Way
 				}),
 				q(27007, {	-- Silvermarsh Rendezvous
@@ -705,7 +705,7 @@ _.Zones =
 				q(27049, {	-- Soft Rock
 					["lvl"] = 82,
 					["provider"] = { "n", 43804 },	-- Gorsik the Tumultuous
-					["coord"] = { 57.8, 13.0, 207 },
+					["coord"] = { 57.8, 13.0, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
@@ -725,19 +725,19 @@ _.Zones =
 				q(27135, {	-- Something that Burns
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
-					["coord"] = { 46.5, 57.3, 207 },
+					["coord"] = { 46.5, 57.3, DEEPHOLM },
 					["sourceQuests"] = { 26409 },	--  Where's Goldmine?
 				}),
 				q(26791, {	-- Sprout No More
 					["lvl"] = 82,
 					["provider"] = { "n", 44143 },	-- Slate Quicksand
-					["coord"] = { 27.6, 44.8, 207 },
+					["coord"] = { 27.6, 44.8, DEEPHOLM },
 					["sourceQuests"] = { 26834 },	-- Down Into the Chasm
 				}),
 				q(26576, {	-- Steady Hand
 					["lvl"] = 82,
 					["provider"] = { "n", 42469 },	-- Kor the Immovable
-					["coord"] = { 34.4, 34.4, 207 },
+					["coord"] = { 34.4, 34.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26507,	-- Petrified Delicacies
 						26575,	-- Rock Bottom
@@ -746,7 +746,7 @@ _.Zones =
 				q(26499, {	-- Stonefather's Boon
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
-					["coord"] = { 27.9, 68.8, 207 },
+					["coord"] = { 27.9, 68.8, DEEPHOLM },
 					["sourceQuests"] = {
 						27935,	--  Bring Down the Avalanche
 						27936,	--  Bring Down the Avalanche
@@ -755,7 +755,7 @@ _.Zones =
 				q(26413, {	-- Take Him to the Earthcaller
 					["lvl"] = 82,
 					["provider"] = { "n", 42574 },	-- Initiate Goldmine
-					["coord"] = { 46.5, 57.3, 207 },
+					["coord"] = { 46.5, 57.3, DEEPHOLM },
 					["sourceQuests"] = { 26411 },	--  Apply and Flash Dry
 					["g"] = {
 						i(61466),	-- Bell-Ringer's Skullcap
@@ -771,7 +771,7 @@ _.Zones =
 				q(26771, {	-- Testing the Trap
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 					["sourceQuests"] = {
 						26766,	-- Big Game, Big Bait
 						26768,	-- To Catch a Dragon
@@ -785,7 +785,7 @@ _.Zones =
 				q(28292, {	-- That's No Pyramid! (A)
 					["lvl"] = 82,
 					["provider"] = { "n", 44799 },	-- Explorer Mowi
-					["coord"] = { 47.4, 51.4, 207 },
+					["coord"] = { 47.4, 51.4, DEEPHOLM },
 					["sourceQuest"] = 27058,	-- The Wrong Sequence (A)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -793,7 +793,7 @@ _.Zones =
 				q(28293, {	-- That's No Pyramid! (H)
 					["lvl"] = 82,
 					["provider"] = { "n", 44823 },	-- Examiner Rowe
-					["coord"] = { 51.2, 50.0, 207 },
+					["coord"] = { 51.2, 50.0, DEEPHOLM },
 					["sourceQuest"] = 27059,	-- The Wrong Sequence (H)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -806,7 +806,7 @@ _.Zones =
 				q(27932, {	-- The Axe of Earthly Sundering
 					["lvl"] = 82,
 					["provider"] = { "n", 47195 },	-- Slate Quicksand
-					["coord"] = { 30.6, 77.8, 207 },
+					["coord"] = { 30.6, 77.8, DEEPHOLM },
 					["sourceQuests"] = { 27931 },	--  The Quaking Fields
 					["g"] = {
 						i(61400),	-- Size-Cutting Bracers
@@ -825,7 +825,7 @@ _.Zones =
 				q(26244, {	-- The Earth Claims All
 					["lvl"] = 82,
 					["provider"] = { "n", 43397 },	-- Seer Kormo
-					["coord"] = { 49.7, 53.0, 207 },
+					["coord"] = { 49.7, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 27123 },	-- Deepholm, Realm of Earth
 					["g"] = {
 						i(61502),	-- Deepstone Treads
@@ -836,7 +836,7 @@ _.Zones =
 				q(27952, {	-- The Explorers [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 42573 },	-- Earthcaller Yevaa
-					["coord"] = { 49.5, 53.3, 207 },
+					["coord"] = { 49.5, 53.3, DEEPHOLM },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
@@ -848,7 +848,7 @@ _.Zones =
 				q(27937, {	-- The Hero Returns
 					["lvl"] = 82,
 					["provider"] = { "n", 43897 },	-- Pyrium Lodestone
-					["coord"] = { 22.7, 52.0, 207 },
+					["coord"] = { 22.7, 52.0, DEEPHOLM },
 					["sourceQuests"] = { 26836 },	--  Rescue the Stonefather... and Flint
 					["g"] = {
 						i(61398),	-- Axe of Earthly Sundering
@@ -877,7 +877,7 @@ _.Zones =
 				q(27938, {	-- The Middle Fragment
 					["lvl"] = 82,
 					["provider"] = { "n", 44204 },	-- Stonefather Oremantle
-					["coord"] = { 28.0, 68.6, 207 },
+					["coord"] = { 28.0, 68.6, DEEPHOLM },
 					["sourceQuests"] = { 27937 },	-- The Hero Returns
 					["g"] = {
 						i(61396),	-- Leggings of Fragmented Hope
@@ -888,13 +888,13 @@ _.Zones =
 				q(27931, {	-- The Quaking Fields
 					["lvl"] = 82,
 					["provider"] = { "n", 43071 },	-- Crag Rockcrusher
-					["coord"] = { 27.9, 68.8, 207 },
+					["coord"] = { 27.9, 68.8, DEEPHOLM },
 					["sourceQuests"] = { 26484 },	--  To Stonehearth's Aid
 				}),
 				q(27953, {	-- The Reliquary [Horde]
 					["lvl"] = 82,
 					["provider"] = { "n", 42573 },	-- Earthcaller Yevaa
-					["coord"] = { 49.5, 53.3, 207 },
+					["coord"] = { 49.5, 53.3, DEEPHOLM },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
@@ -903,7 +903,7 @@ _.Zones =
 					["lvl"] = 82,
 					["isDaily"] = true,
 					["provider"] = { "n", 43806 },	-- Terrath the Steady
-					["coord"] = { 56.6, 14.0, 207 },
+					["coord"] = { 56.6, 14.0, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["g"] = {
 						ach(5447),	-- My Very Own Broodmother
@@ -912,19 +912,19 @@ _.Zones =
 				q(26829, {	-- The Stone March
 					["lvl"] = 82,
 					["provider"] = { "n", 44025 },	-- Therazane
-					["coord"] = { 63.3, 25.0, 207 },
+					["coord"] = { 63.3, 25.0, DEEPHOLM },
 					["sourceQuests"] = { 26828 },	-- Our Part of the Bargain
 				}),
 				q(26709, {	-- The Stone Throne
 					["lvl"] = 82,
 					["provider"] = { "n", 43792 },	-- Therazane
-					["coord"] = { 49.7, 53.3, 207 },
+					["coord"] = { 49.7, 53.3, DEEPHOLM },
 					["sourceQuests"] = { 26971 },	-- The Binding
 				}),
 				q(26831, {	-- The Twilight Flight
 					["lvl"] = 82,
 					["provider"] = { "n", 44080 },	-- Boden the Imposing
-					["coord"] = { 62.7, 26.9, 207 },
+					["coord"] = { 62.7, 26.9, DEEPHOLM },
 					["sourceQuests"] = { 26828 },	-- Our Part of the Bargain
 				}),
 				q(27061, {	-- The Twilight Overlook
@@ -934,7 +934,7 @@ _.Zones =
 				q(27004, {	-- The Twilight Plot [Alliance]
 					["lvl"] = 82,
 					["provider"] = { "n", 44799 },	-- Explorer Mowi
-					["coord"] = { 47.3, 51.4, 207 },
+					["coord"] = { 47.3, 51.4, DEEPHOLM },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27952 },	-- The Explorers
 				}),
@@ -947,7 +947,7 @@ _.Zones =
 				q(26326, {	-- The Very Earth Beneath Our Feet
 					["lvl"] = 82,
 					["provider"] = { "n", 43065 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = {
 						27938,	-- The Middle Fragment
 						26876,	-- The World Pillar Fragment
@@ -956,7 +956,7 @@ _.Zones =
 				q(26876, {	-- The World Pillar Fragment
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 					["sourceQuests"] = {
 						26857,	-- Abyssion's Minions
 						26861,	-- Block the Gates
@@ -988,7 +988,7 @@ _.Zones =
 				q(26832, {	-- Therazane's Mercy
 					["lvl"] = 82,
 					["provider"] = { "n", 44025 },	-- Therazane
-					["coord"] = { 63.3, 25.0, 207 },
+					["coord"] = { 63.3, 25.0, DEEPHOLM },
 					["sourceQuests"] = { 26828 },	-- Our Part of the Bargain
 					["g"] = {
 						i(61408),	-- Lorthuna's Broken Shackles
@@ -999,32 +999,32 @@ _.Zones =
 				q(27051, {	-- Through Persistence
 					["lvl"] = 82,
 					["provider"] = { "n", 44973 },	-- Ruberick
-					["coord"] = { 59.4, 14.0, 207 },
+					["coord"] = { 59.4, 14.0, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
 				q(26502, {	-- Thunder Stones
 					["lvl"] = 82,
 					["provider"] = { "n", 43160 },	-- Earthbreaker Dolomite
-					["coord"] = { 28.2, 69.7, 207 },
+					["coord"] = { 28.2, 69.7, DEEPHOLM },
 					["sourceQuests"] = { 26500 },	--  We're Surrounded
 				}),
 				q(26768, {	-- To Catch a Dragon
 					["lvl"] = 82,
 					["provider"] = { "n", 44010 },	-- Stormcaller Mylra
-					["coord"] = { 64.4, 82.2, 207 },
+					["coord"] = { 64.4, 82.2, DEEPHOLM },
 					["sourceQuests"] = { 27061 },	-- The Twilight Overlook
 				}),
 				q(26484, {	-- To Stonehearth's Aid
 					["lvl"] = 82,
 					["provider"] = { "n", 42573 },	-- Earthcaller Yevaa
-					["coord"] = { 49.5, 53.3, 207 },
+					["coord"] = { 49.5, 53.3, DEEPHOLM },
 					["sourceQuests"] = { 26413 },	--  Take Him to the Earthcaller
 				}),
 				q(26625, {	-- Troggzor the Earthinator
 					["lvl"] = 82,
 					["provider"] = { "n", 43168 },	-- Gravel Longslab
-					["coord"] = { 24.5, 62.4, 207 },
+					["coord"] = { 24.5, 62.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26591,	--  Battlefront Triage
 						26564,	--  Fixer Upper
@@ -1044,32 +1044,32 @@ _.Zones =
 				q(27048, {	-- Underground Economy
 					["lvl"] = 82,
 					["provider"] = { "n", 44968 },	-- Ricket
-					["coord"] = { 61.2, 26.2, 207 },
+					["coord"] = { 61.2, 26.2, DEEPHOLM },
 					["sourceQuests"] = { 26709 },	-- The Stone Throne
 					["isDaily"] = true,
 				}),
 				q(26875, {	-- Undying Twilight
 					["lvl"] = 82,
 					["provider"] = { "n", 43818 },	-- Maruut Stonebinder
-					["coord"] = { 49.6, 53.0, 207 },
+					["coord"] = { 49.6, 53.0, DEEPHOLM },
 					["sourceQuests"] = { 26833 },	-- Word In Stone
 				}),
 				q(26582, {	-- Unnatural Causes
 					["lvl"] = 82,
 					["provider"] = { "n", 43395 },	-- Windspeaker Lorvarius
-					["coord"] = { 71.8, 47.6, 207 },
+					["coord"] = { 71.8, 47.6, DEEPHOLM },
 					["sourceQuests"] = { 26581 },	-- A Head Full of Wind
 				}),
 				q(26377, {	-- Unsolid Ground
 					["lvl"] = 82,
 					["provider"] = { "n", 42467 },	-- Diamant the Patient
-					["coord"] = { 56.5, 42.8, 207 },
+					["coord"] = { 56.5, 42.8, DEEPHOLM },
 					["sourceQuests"] = { 26328 },	-- Rocky Relations
 				}),
 				q(26426, {	-- Violent Gale
 					["lvl"] = 82,
 					["provider"] = { "n", 42467 },	-- Diamant the Patient
-					["coord"] = { 56.5, 42.8, 207 },
+					["coord"] = { 56.5, 42.8, DEEPHOLM },
 					["sourceQuests"] = {
 						26376,	-- Hatred Runs Deep
 						26375,	-- Loose Stones
@@ -1079,7 +1079,7 @@ _.Zones =
 				q(26500, {	-- We're Surrounded
 					["lvl"] = 82,
 					["provider"] = { "n", 43160 },	-- Earthbreaker Dolomite
-					["coord"] = { 28.2, 69.7, 207 },
+					["coord"] = { 28.2, 69.7, DEEPHOLM },
 					["sourceQuests"] = {
 						27935,	--  Bring Down the Avalanche
 						27936,	--  Bring Down the Avalanche
@@ -1088,7 +1088,7 @@ _.Zones =
 				q(26409, {	-- Where's Goldmine?
 					["lvl"] = 82,
 					["provider"] = { "n", 42573 },	-- Earthcaller Yevaa
-					["coord"] = { 49.5, 53.3, 207 },
+					["coord"] = { 49.5, 53.3, DEEPHOLM },
 				}),
 				q(26427, {	-- Without a Captain or Crew
 					["lvl"] = 82,
@@ -1103,7 +1103,7 @@ _.Zones =
 				q(26833, {	-- Word In Stone
 					["lvl"] = 82,
 					["provider"] = { "n", 44025 },	-- Therazane
-					["coord"] = { 56.3, 12.2, 207 },
+					["coord"] = { 56.3, 12.2, DEEPHOLM },
 					["sourceQuests"] = {
 						26829,	-- The Stone March
 						26831,	-- The Twilight Flight
@@ -1113,7 +1113,7 @@ _.Zones =
 				q(26583, {	-- Wrath of the Fungalmancer
 					["lvl"] = 82,
 					["provider"] = { "n", 43442 },	-- Ruberick
-					["coord"] = { 68.5, 26.4, 207 },
+					["coord"] = { 68.5, 26.4, DEEPHOLM },
 					["sourceQuests"] = {
 						26578,	-- Doomshrooms
 						26579,	-- Gone Soft

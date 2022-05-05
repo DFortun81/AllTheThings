@@ -217,7 +217,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			-- Pet Protoform
 			i(189157),	-- Glimmer of Animation
-			i(189158),	-- Glimmer of Cunning
 			i(189159),	-- Glimmer of Discovery
 			i(189160),	-- Glimmer of Focus
 			i(189161),	-- Glimmer of Malice

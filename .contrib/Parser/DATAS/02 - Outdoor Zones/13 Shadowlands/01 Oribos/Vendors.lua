@@ -27,12 +27,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)
-					i(183094),	-- Plans: Shadowsteel Helm
-					i(183097),	-- Schematic: PHA7-YNX
-					i(183098),	-- Technique: Codex of the Still Mind
+					i(183094, {	-- Plans: Shadowsteel Helm
+						-- ["cost"] = , -- TODO:
+					}),
+					i(183097, {	-- Schematic: PHA7-YNX
+						-- ["cost"] = , -- TODO:
+					}),
+					i(183098, {	-- Technique: Codex of the Still Mind
+						-- ["cost"] = , -- TODO:
+					}),
 					i(183103, {	-- Technique: Contract: The Ascended
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311409,
 					}),
 					i(183243, {	-- Memory of the Arbiter's Judgment
 						["cost"] = 11000000, -- 1,100g
@@ -206,7 +211,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(183104, {	-- Technique: Contract: The Undying Army
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311411,
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves
 					i(184738),	-- Chainmail of the March Warden
@@ -263,7 +267,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(183102, {	-- Technique: Contract: Court of Harvesters
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311412,
 					}),
 					i(183245, {	-- Memory of Norgannon
 						["cost"] = 11000000, -- 1,100g
@@ -346,6 +349,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(186992, {	-- Formula: Anima-ted Leash
+						["recipeID"] = 355184,
 						["cost"] = { { "i", 163036, 15 } },	-- 15x Polished Pet Charm
 					}),
 				}),
@@ -465,9 +469,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
+						["recipeID"] = 324088,
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183106, {	-- Recipe: Eternal Cauldron
+						["recipeID"] = 307087,
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183134, {	-- Illusion: Hunt's Favor
@@ -603,8 +609,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							n(WEAPONS, {
 								i(186959, {	-- Cosmic Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
-								}, {
-								i(186948),	-- Cosmic Aspirant's Battleaxe
+								}),
+								i(186948, {	-- Cosmic Aspirant's Battleaxe
 									["cost"] = { { "c", 1792, 875 } },
 								}),
 								i(186964, {	-- Cosmic Aspirant's Blackjack

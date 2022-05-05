@@ -74,7 +74,7 @@ _.Instances = { tier(CATA_TIER, {
 				},
 			}),
 			n(50061, {	-- Xariona
-				["maps"] = { 207 },	-- Deepholm
+				["maps"] = { DEEPHOLM },
 				["g"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets
 					un(REMOVED_FROM_GAME, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]

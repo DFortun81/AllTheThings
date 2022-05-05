@@ -57,7 +57,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Framework\Framework.Logging.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />

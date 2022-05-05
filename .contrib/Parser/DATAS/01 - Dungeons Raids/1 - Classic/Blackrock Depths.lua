@@ -40,6 +40,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		["groups"] = {
 			n(FACTIONS, {
 				faction(59, {	-- Thorium Brotherhood
+					["maps"] = { SEARING_GORGE },
 					["OnTooltip"] = OnTooltipForThoriumBrotherhood,
 				}),
 			}),

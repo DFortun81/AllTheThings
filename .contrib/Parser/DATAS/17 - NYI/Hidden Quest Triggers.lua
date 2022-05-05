@@ -917,6 +917,7 @@ root("HiddenQuestTriggers", {
 		q(33071),	-- The Call of War - completed with quest 39691
 		q(33073),	-- [NOTUSED]Vignette: Ancient Saltsnap Turtle - completed with quest 33070
 		q(33079),	-- The Demons Among Us - Alliance - completed with quest 40593 & 40607
+		q(33139),	-- Secrets Lost, Forever? - completed with quest 33021
 		q(33264),	-- A Proper Burial - completed with quest 33125
 		q(33267),	-- [Deprecated] - completed with quest 33461
 		q(33380),	-- REUSE - completed with quest 33622
@@ -3178,6 +3179,7 @@ root("HiddenQuestTriggers", {
 		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
 		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
 		q(32097),	-- Short-Supply Reward
+		q(33233, { ["_drop"] = { "g" }, }),	-- Short-Supply Reward
 
 		-- SCENARIOS
 		q(32817),	-- Complete "Loyalty" Scenario — triggeres when turning in "The King and the Council"
@@ -3185,13 +3187,13 @@ root("HiddenQuestTriggers", {
 		q(32898),	-- Daily Scenario Random (1st) (Mists)
 		q(32899),	-- Daily Scenario Random (Nth) (Mists)
 		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
-		q(32873, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Heroic Random - 1st
-		q(32874, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32873, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+		q(32874, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
 		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
 		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
-		q(31616, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Normal Random - 1st
-		q(31617, { ["_drop"] = { "g" }, }), -- LFGDungeons - Mists - Scenario - Normal Random - Nth
-		q(31987, { ["_drop"] = { "g" }, }), -- LFGDungeons - Theramore Launch Event
+		q(31616, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
+		q(31617, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+		q(31987, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Theramore Launch Event
 
 		-- PROVING GROUNDS
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze

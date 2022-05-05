@@ -283,313 +283,353 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		n(QUESTS, {
 			-- 5.0.1
 			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
-				q(30003),	-- A Book By Its Cover
-				q(30019),	-- A Breach in the Wall
-				q(30537),	-- A Fizzy Fusion
-				q(29766),	-- A Good Start
-				q(29722),	-- A Lesson in Bravery
-				q(29561),	-- Against the Odds
-				q(31668),	-- Ambush Event Tracking
-				q(29721),	-- An Offering
-				q(30986),	-- Ancient Mogu Crypt
-				q(30706),	-- Angry Scribblings
-				q(31604),	-- Assault on Zan'vess
-				q(29843),	-- Aunty Lin Windfur
-				q(29703),	-- Barrel of Monkies
-				q(29746),	-- Breadcrumb Into Ruins
-				q(31761),	-- Breaking Their Spirits (Not Yet Implemented)
-				q(29878),	-- Building a Better Hozen Trap
-				q(29724),	-- Burial at Sea
-				q(29856),	-- Cairn of Bone
-				q(30705),	-- Captain's Log
-				q(29880, { ["_drop"] = { "g" }, }), -- Catch and Release!
-				q(30197),	-- Cart Ride
-				q(29534),	-- Collect Things
-				q(30934),	-- Criteria Effects Test Quest
-				q(31060),	-- Dawson test POI
-				q(31027),	-- Defeat the Abomination
-				q(30215),	-- DEPRECATED
-				q(30216),	-- DEPRECATED
-				q(30217),	-- DEPRECATED
-				q(30218),	-- DEPRECATED
-				q(30219),	-- DEPRECATED
-				q(30220),	-- DEPRECATED
-				q(30221),	-- DEPRECATED
-				q(30222),	-- DEPRECATED
-				q(30223),	-- DEPRECATED
-				q(30224),	-- DEPRECATED
-				q(29868),	-- DEPRECATED: Captain Cartheron
-				q(29846),	-- DEPRECATED: Captain Rufus Hardwick
-				q(29854),	-- DEPRECATED: Claiming Kalimdor
-				q(29832),	-- DEPRECATED: Gathering Evidence
-				q(29849),	-- DEPRECATED: Gunner Blastbarrel
-				q(29867),	-- DEPRECATED: Shadow Hunter Urko'jin
-				q(29859),	-- DEPRECATED: Spies in Our Midst
-				q(29831),	-- DEPRECATED: Terror on the High Seas
-				q(29845),	-- DEPRECATED: The Merchants' Plight
-				q(29876),	-- DEPRECATED: The Third Captain
-				q(29852),	-- DEPRECATED: They Call Him Swifthands
-				q(29857),	-- DEPRECATED: Where Are Those Ships?
-				q(30714),	-- Destroy the Leaders
-				q(31654),	-- Doors to Vale OPEN
-				q(29817),	-- Drunken Tigers
-				q(31600),	-- Enable Scenarios
-				q(30886),	-- Example Pandaren Race Quest
-				q(30609),	-- Exit Strategy
-				q(29728),	-- Explosive Evidence
-				q(29902),	-- Fighting the Flames
-				q(31278),	-- Figuring out how to make quests
-				q(31331),	-- Figuring out how to make quests
-				q(29767),	-- Fish Fry
-				q(29818),	-- Fix the Flavor
-				q(31115),	-- FLAG - Freed Han
-				q(31219),	-- FLAG - Unlocked Nurong
-				q(31218),	-- FLAG - Unlocked Tenwu
-				q(31665),	-- FLAG - Vegetron 4000 Converted
-				q(29549),	-- Flightmaster Down
-				q(30364),	-- Fly, Spy!
-				q(31098),	-- Founding of the Order of the Cloud Serpent
-				q(29938, { ["_drop"] = { "g" }, }), -- Friends and Foes
-				q(30153),	-- Full Speed Ahead
-				q(30538),	-- Fun for the Little Ones
-				q(29816),	-- Get a Sample
-				q(30501),	-- Gossip Accept Quest Test Case
-				q(30910),	-- Greenstone Village
-				q(29551),	-- Grove Stalkers
-				q(30358),	-- Gryphon, Down
-				q(30965),	-- Herding Cats
-				q(30311),	-- High Standards
-				q(31694),	-- Hisingen Blues
-				q(29712),	-- Horde Justice
-				q(30704),	-- Hozen in the Mist
-				q(30918),	-- Hui's Vengeance
-				q(30021),	-- Impenetrable
-				q(29705),	-- Invasion of the Bottle Snatchers
-				q(31697),	-- Jeremy's Test Quest
-				q(29706),	-- Kegplosion
-				q(29584),	-- Kill Mogu Firestarters
-				q(29531),	-- Kill Stuff
-				q(31099),	-- Klaxx Attack
-				q(30180),	-- Labor for Labor
-				q(29841),	-- Lay of the Land[TEMP]
-				q(31101),	-- Legends of the Brewfathers
-				q(29813),	-- Lethal Hangovers
-				q(30316),	-- Longshot
-				q(30377),	-- Minimum Safe Distance
-				q(31655),	-- Mishi Tracking 1
-				q(30009),	-- Muster of Fort Grookin
-				q(29696),	-- My Stars!
-				q(33019),	-- NC S1 Q2
-				q(33023),	-- NC S1 Q6
-				q(33025),	-- NC S2 Q2
-				q(29814),	-- Need a Chaser
-				q(29897),	-- No Such Thing As A Free Lunch
-				q(30198),	-- NOT USED
-				q(30199),	-- NOT USED
-				q(30201),	-- NOT USED
-				q(30202),	-- NOT USED
-				q(30203),	-- NOT USED
-				q(30262),	-- NOT USED
-				q(30303),	-- NOT USED
-				q(30483),	-- NOT USED
-				q(30315),	-- Normal Quest Test Case
-				q(31554),	-- On The Mend
-				q(29869),	-- One Hand Clapping
-				q(30990),	-- Open the Golden Doors
-				q(31028),	-- Paragon 5
-				q(30345),	-- Poisoned!
-				q(30941),	-- Preparing Zouchin Village
-				q(30710),	-- Provoking the Trolls
-				q(30974, { ["_drop"] = { "g" }, }), -- Raising Spirits
-				q(31273),	-- Relics of the Swarm
-				q(30278),	-- REUSE FOR PROGRESSION
-				q(30279),	-- REUSE FOR PROGRESSION
-				q(30247),	-- Roll Club: Vale of Eternal Blossoms
-				q(30020),	-- Running Out of Options
-				q(29837),	-- Sacred Scroll
-				q(29812),	-- Save the Cuddlies
-				q(29550),	-- Saving Snowpuff
-				q(30961),	-- Savior of the Inkgill
-				q(29842),	-- Seeking Answers
-				q(30677),	-- Shuttle Service
-				q(30122, { ["_drop"] = { "g" }, }), -- Silver Filigree Flask
-				q(29718),	-- Sixteen Fluid Ounces of Prevention
-				q(30294),	-- Small Comforts
-				q(29744),	-- Some "Pupil of Nature"
-				q(30759),	-- Sotelo's Quest
-				q(30597, { ["_drop"] = { "g" }, }), -- Strange Spherical Stone
-				q(29554),	-- Sunken Junk
-				q(30250),	-- Survival Ring: Thunder
-				q(29713),	-- Standard Protocol
-				q(29896),	-- Steaking a Claim
-				q(31025),	-- Sweet Tooth
-				q(29541),	-- Take Care of It
-				q(30362),	-- Tanks for Nothing!
-				q(30378),	-- The Blastmaster
-				q(29719),	-- The Double Hozu Dare
-				q(29923),	-- The Dream Brew
-				q(30253),	-- The Family Farm
-				q(31545),	-- The Finer Things
-				q(31557),	-- The Finer Things
-				q(31558),	-- The Finer Things
-				q(31559),	-- The Finer Things
-				q(31560),	-- The Finer Things
-				q(31561),	-- The Finer Things
-				q(31562),	-- The Finer Things
-				q(31563),	-- The Finer Things
-				q(31564),	-- The Finer Things
-				q(31565),	-- The Finer Things
-				q(31566),	-- The Finer Things
-				q(31567),	-- The Finer Things
-				q(29407),	-- The First Sign of Winter
-				q(29693),	-- The General's Edge
-				q(31017),	-- The Humble Grummle
-				q(29720),	-- The Jade Witch
-				q(29557),	-- The Mission Continues
-				q(29819),	-- The New Master
-				q(31533),	-- The Perfect Feather
-				q(30458),	-- The Scouts Return
-				q(31491),	-- The Ten Foot Pole
-				q(29806),	-- The Wanderer
-				q(31305),	-- The Way of the Grill
-				q(29715),	-- The Witch in the Woods
-				q(31283),	-- Theramore Destroyed Tracking
-				q(29546),	-- Tipping the Scales
-				q(30343),	-- To the Waterline!
-				q(30007),	-- Tracking Event: Completed Arrival Phase
-				q(29805),	-- Tracking Event: Found Mishka at Plane
-				q(29602),	-- Tracking Event: Gryphon Found
-				q(29710),	-- Tracking Event: Looted Food Crate
-				q(29711),	-- Tracking Event: Looted Scroll
-				q(29707),	-- Tracking Event: Opened Shackle 1
-				q(29708),	-- Tracking Event: Opened Shackle 2
-				q(29709),	-- Tracking Event: Opened Shackle 3
-				q(29610),	-- Tracking Event: Player's First Arrival
-				q(29603),	-- Tracking Event: Provisioner Found
-				q(30415),	-- Tracking Quest - Successful
-				q(29895),	-- Trail of the White Pawn
-				q(30520),	-- Tummy Trouble
-				q(30295),	-- Turn-in Quest Test Case
-				q(29621),	-- UNUSED
-				q(29625),	-- UNUSED
-				q(29648),	-- UNUSED
-				q(31685),	-- Valley of the Four Winds
-				q(31723),	-- Valley of the Four Winds
-				q(30443),	-- Walking on Sunwalkers
-				q(31280),	-- Ways of Cooking
-				q(29714),	-- Wet Work!
-				q(29732),	-- What Goes Down, Must Come Up!
-				q(29858),	-- Wisdom of the Ages
-				q(29729, { ["_drop"] = { "g" }, }), -- Without a Trace
-				q(29773),	-- Wugou, the Spirit of Earth
-				q(29886),	-- Zen Healing
-				q(31763),	-- [KILL GIANT SERPENT] [GET RID OF THIS?]
-				q(31764),	-- [PUT OUT THE FIRES]
-				q(31759),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
-				q(31731),	-- [SINK SHIPS] (Not Used?)
+				q(30003, { ["name"] = "A Book By Its Cover", }),	-- A Book By Its Cover
+				q(30019, { ["name"] = "A Breach in the Wall", }),	-- A Breach in the Wall
+				q(30537, { ["name"] = "A Fizzy Fusion", }),	-- A Fizzy Fusion
+				q(29766, { ["name"] = "A Good Start", }),	-- A Good Start
+				q(29722, { ["name"] = "A Lesson in Bravery", }),	-- A Lesson in Bravery
+				q(29561, { ["name"] = "Against the Odds", }),	-- Against the Odds
+				q(31668, { ["name"] = "Ambush Event Tracking", }),	-- Ambush Event Tracking
+				q(29721, { ["name"] = "An Offering", }),	-- An Offering
+				q(30986, { ["name"] = "Ancient Mogu Crypt", }),	-- Ancient Mogu Crypt
+				q(30706, { ["name"] = "Angry Scribblings", }),	-- Angry Scribblings
+				q(31604, { ["name"] = "Assault on Zan'vess", }),	-- Assault on Zan'vess
+				q(29843, { ["name"] = "Aunty Lin Windfur", }),	-- Aunty Lin Windfur
+				q(29703, { ["name"] = "Barrel of Monkies", }),	-- Barrel of Monkies
+				q(29746, { ["name"] = "Breadcrumb Into Ruins", }),	-- Breadcrumb Into Ruins
+				q(31761, { ["name"] = "Breaking Their Spirits (Not Yet Implemented)", }),	-- Breaking Their Spirits (Not Yet Implemented)
+				q(29878, { ["name"] = "Building a Better Hozen Trap", }),	-- Building a Better Hozen Trap
+				q(29724, { ["name"] = "Burial at Sea", }),	-- Burial at Sea
+				q(29856, { ["name"] = "Cairn of Bone", }),	-- Cairn of Bone
+				q(30705, { ["name"] = "Captain's Log", }),	-- Captain's Log
+				q(29880, { ["name"] = "Catch and Release!", ["_drop"] = { "g" }, }),	-- Catch and Release!
+				q(30197, { ["name"] = "Cart Ride", }),	-- Cart Ride
+				q(29534, { ["name"] = "Collect Things", }),	-- Collect Things
+				q(30934, { ["name"] = "Criteria Effects Test Quest", }),	-- Criteria Effects Test Quest
+				q(31060, { ["name"] = "Dawson test POI", }),	-- Dawson test POI
+				q(31027, { ["name"] = "Defeat the Abomination", }),	-- Defeat the Abomination
+				q(30215, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30216, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30217, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30218, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30219, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30220, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30221, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30222, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30223, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(30224, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
+				q(29868, { ["name"] = "DEPRECATED: Captain Cartheron", }),	-- DEPRECATED: Captain Cartheron
+				q(29846, { ["name"] = "DEPRECATED: Captain Rufus Hardwick", }),	-- DEPRECATED: Captain Rufus Hardwick
+				q(29854, { ["name"] = "DEPRECATED: Claiming Kalimdor", }),	-- DEPRECATED: Claiming Kalimdor
+				q(29832, { ["name"] = "DEPRECATED: Gathering Evidence", }),	-- DEPRECATED: Gathering Evidence
+				q(29849, { ["name"] = "DEPRECATED: Gunner Blastbarrel", }),	-- DEPRECATED: Gunner Blastbarrel
+				q(29867, { ["name"] = "DEPRECATED: Shadow Hunter Urko'jin", }),	-- DEPRECATED: Shadow Hunter Urko'jin
+				q(29859, { ["name"] = "DEPRECATED: Spies in Our Midst", }),	-- DEPRECATED: Spies in Our Midst
+				q(29831, { ["name"] = "DEPRECATED: Terror on the High Seas", }),	-- DEPRECATED: Terror on the High Seas
+				q(29845, { ["name"] = "DEPRECATED: The Merchants' Plight", }),	-- DEPRECATED: The Merchants' Plight
+				q(29876, { ["name"] = "DEPRECATED: The Third Captain", }),	-- DEPRECATED: The Third Captain
+				q(29852, { ["name"] = "DEPRECATED: They Call Him Swifthands", }),	-- DEPRECATED: They Call Him Swifthands
+				q(29857, { ["name"] = "DEPRECATED: Where Are Those Ships?", }),	-- DEPRECATED: Where Are Those Ships?
+				q(30714, { ["name"] = "Destroy the Leaders", }),	-- Destroy the Leaders
+				q(31654, { ["name"] = "Doors to Vale OPEN", }),	-- Doors to Vale OPEN
+				q(29817, { ["name"] = "Drunken Tigers", }),	-- Drunken Tigers
+				q(31600, { ["name"] = "Enable Scenarios", }),	-- Enable Scenarios
+				q(30886, { ["name"] = "Example Pandaren Race Quest", }),	-- Example Pandaren Race Quest
+				q(30609, { ["name"] = "Exit Strategy", }),	-- Exit Strategy
+				q(29728, { ["name"] = "Explosive Evidence", }),	-- Explosive Evidence
+				q(29902, { ["name"] = "Fighting the Flames", }),	-- Fighting the Flames
+				q(31278, { ["name"] = "Figuring out how to make quests", }),	-- Figuring out how to make quests
+				q(31331, { ["name"] = "Figuring out how to make quests", }),	-- Figuring out how to make quests
+				q(29767, { ["name"] = "Fish Fry", }),	-- Fish Fry
+				q(29818, { ["name"] = "Fix the Flavor", }),	-- Fix the Flavor
+				q(31115, { ["name"] = "FLAG - Freed Han", }),	-- FLAG - Freed Han
+				q(31219, { ["name"] = "FLAG - Unlocked Nurong", }),	-- FLAG - Unlocked Nurong
+				q(31218, { ["name"] = "FLAG - Unlocked Tenwu", }),	-- FLAG - Unlocked Tenwu
+				q(31665, { ["name"] = "FLAG - Vegetron 4000 Converted", }),	-- FLAG - Vegetron 4000 Converted
+				q(29549, { ["name"] = "Flightmaster Down", }),	-- Flightmaster Down
+				q(30364, { ["name"] = "Fly, Spy!", }),	-- Fly, Spy!
+				q(31098, { ["name"] = "Founding of the Order of the Cloud Serpent", }),	-- Founding of the Order of the Cloud Serpent
+				q(29938, { ["name"] = "Friends and Foes", ["_drop"] = { "g" }, }),	-- Friends and Foes
+				q(30153, { ["name"] = "Full Speed Ahead", }),	-- Full Speed Ahead
+				q(30538, { ["name"] = "Fun for the Little Ones", }),	-- Fun for the Little Ones
+				q(29816, { ["name"] = "Get a Sample", }),	-- Get a Sample
+				q(30501, { ["name"] = "Gossip Accept Quest Test Case", }),	-- Gossip Accept Quest Test Case
+				q(30910, { ["name"] = "Greenstone Village", }),	-- Greenstone Village
+				q(29551, { ["name"] = "Grove Stalkers", }),	-- Grove Stalkers
+				q(30358, { ["name"] = "Gryphon, Down", }),	-- Gryphon, Down
+				q(30965, { ["name"] = "Herding Cats", }),	-- Herding Cats
+				q(30311, { ["name"] = "High Standards", }),	-- High Standards
+				q(31694, { ["name"] = "Hisingen Blues", }),	-- Hisingen Blues
+				q(29712, { ["name"] = "Horde Justice", }),	-- Horde Justice
+				q(30704, { ["name"] = "Hozen in the Mist", }),	-- Hozen in the Mist
+				q(30918, { ["name"] = "Hui's Vengeance", }),	-- Hui's Vengeance
+				q(30021, { ["name"] = "Impenetrable", }),	-- Impenetrable
+				q(29705, { ["name"] = "Invasion of the Bottle Snatchers", }),	-- Invasion of the Bottle Snatchers
+				q(31697, { ["name"] = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
+				q(29706, { ["name"] = "Kegplosion", }),	-- Kegplosion
+				q(29584, { ["name"] = "Kill Mogu Firestarters", }),	-- Kill Mogu Firestarters
+				q(29531, { ["name"] = "Kill Stuff", }),	-- Kill Stuff
+				q(31099, { ["name"] = "Klaxx Attack", }),	-- Klaxx Attack
+				q(30180, { ["name"] = "Labor for Labor", }),	-- Labor for Labor
+				q(29841, { ["name"] = "Lay of the Land[TEMP]", }),	-- Lay of the Land[TEMP]
+				q(31101, { ["name"] = "Legends of the Brewfathers", }),	-- Legends of the Brewfathers
+				q(29813, { ["name"] = "Lethal Hangovers", }),	-- Lethal Hangovers
+				q(30316, { ["name"] = "Longshot", }),	-- Longshot
+				q(30377, { ["name"] = "Minimum Safe Distance", }),	-- Minimum Safe Distance
+				q(31655, { ["name"] = "Mishi Tracking 1", }),	-- Mishi Tracking 1
+				q(30009, { ["name"] = "Muster of Fort Grookin", }),	-- Muster of Fort Grookin
+				q(29696, { ["name"] = "My Stars!", }),	-- My Stars!
+				q(29814, { ["name"] = "Need a Chaser", }),	-- Need a Chaser
+				q(29897, { ["name"] = "No Such Thing As A Free Lunch", }),	-- No Such Thing As A Free Lunch
+				q(30198, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30199, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30201, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30202, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30203, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30262, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30303, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30483, { ["name"] = "NOT USED", }),	-- NOT USED
+				q(30315, { ["name"] = "Normal Quest Test Case", }),	-- Normal Quest Test Case
+				q(31554, { ["name"] = "On The Mend", }),	-- On The Mend
+				q(29869, { ["name"] = "One Hand Clapping", }),	-- One Hand Clapping
+				q(30990, { ["name"] = "Open the Golden Doors", }),	-- Open the Golden Doors
+				q(31028, { ["name"] = "Paragon 5", }),	-- Paragon 5
+				q(30345, { ["name"] = "Poisoned!", }),	-- Poisoned!
+				q(30941, { ["name"] = "Preparing Zouchin Village", }),	-- Preparing Zouchin Village
+				q(30710, { ["name"] = "Provoking the Trolls", }),	-- Provoking the Trolls
+				q(30974, { ["name"] = "Raising Spirits", ["_drop"] = { "g" }, }),	-- Raising Spirits
+				q(31273, { ["name"] = "Relics of the Swarm", }),	-- Relics of the Swarm
+				q(30278, { ["name"] = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
+				q(30279, { ["name"] = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
+				q(30247, { ["name"] = "Roll Club: Vale of Eternal Blossoms", }),	-- Roll Club: Vale of Eternal Blossoms
+				q(30020, { ["name"] = "Running Out of Options", }),	-- Running Out of Options
+				q(29837, { ["name"] = "Sacred Scroll", }),	-- Sacred Scroll
+				q(29812, { ["name"] = "Save the Cuddlies", }),	-- Save the Cuddlies
+				q(29550, { ["name"] = "Saving Snowpuff", }),	-- Saving Snowpuff
+				q(30961, { ["name"] = "Savior of the Inkgill", }),	-- Savior of the Inkgill
+				q(29842, { ["name"] = "Seeking Answers", }),	-- Seeking Answers
+				q(30677, { ["name"] = "Shuttle Service", }),	-- Shuttle Service
+				q(30122, { ["name"] = "Silver Filigree Flask", ["_drop"] = { "g" }, }),	-- Silver Filigree Flask
+				q(29718, { ["name"] = "Sixteen Fluid Ounces of Prevention", }),	-- Sixteen Fluid Ounces of Prevention
+				q(30294, { ["name"] = "Small Comforts", }),	-- Small Comforts
+				q(29744, { ["name"] = "Some \"Pupil of Nature\"", }),	-- Some "Pupil of Nature"
+				q(30759, { ["name"] = "Sotelo's Quest", }),	-- Sotelo's Quest
+				q(30597, { ["name"] = "Strange Spherical Stone", ["_drop"] = { "g" }, }),	-- Strange Spherical Stone
+				q(29554, { ["name"] = "Sunken Junk", }),	-- Sunken Junk
+				q(30250, { ["name"] = "Survival Ring: Thunder", }),	-- Survival Ring: Thunder
+				q(29713, { ["name"] = "Standard Protocol", }),	-- Standard Protocol
+				q(29896, { ["name"] = "Steaking a Claim", }),	-- Steaking a Claim
+				q(31025, { ["name"] = "Sweet Tooth", }),	-- Sweet Tooth
+				q(29541, { ["name"] = "Take Care of It", }),	-- Take Care of It
+				q(30362, { ["name"] = "Tanks for Nothing!", }),	-- Tanks for Nothing!
+				q(30378, { ["name"] = "The Blastmaster", }),	-- The Blastmaster
+				q(29719, { ["name"] = "The Double Hozu Dare", }),	-- The Double Hozu Dare
+				q(29923, { ["name"] = "The Dream Brew", }),	-- The Dream Brew
+				q(30253, { ["name"] = "The Family Farm", }),	-- The Family Farm
+				q(31545, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31557, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31558, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31559, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31560, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31561, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31562, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31563, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31564, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31565, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31566, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(31567, { ["name"] = "The Finer Things", }),	-- The Finer Things
+				q(29407, { ["name"] = "The First Sign of Winter", }),	-- The First Sign of Winter
+				q(29693, { ["name"] = "The General's Edge", }),	-- The General's Edge
+				q(31017, { ["name"] = "The Humble Grummle", }),	-- The Humble Grummle
+				q(29720, { ["name"] = "The Jade Witch", }),	-- The Jade Witch
+				q(29557, { ["name"] = "The Mission Continues", }),	-- The Mission Continues
+				q(29819, { ["name"] = "The New Master", }),	-- The New Master
+				q(31533, { ["name"] = "The Perfect Feather", }),	-- The Perfect Feather
+				q(30458, { ["name"] = "The Scouts Return", }),	-- The Scouts Return
+				q(31491, { ["name"] = "The Ten Foot Pole", }),	-- The Ten Foot Pole
+				q(29806, { ["name"] = "The Wanderer", }),	-- The Wanderer
+				q(31305, { ["name"] = "The Way of the Grill", }),	-- The Way of the Grill
+				q(29715, { ["name"] = "The Witch in the Woods", }),	-- The Witch in the Woods
+				q(31283, { ["name"] = "Theramore Destroyed Tracking", }),	-- Theramore Destroyed Tracking
+				q(29546, { ["name"] = "Tipping the Scales", }),	-- Tipping the Scales
+				q(30343, { ["name"] = "To the Waterline!", }),	-- To the Waterline!
+				q(30007, { ["name"] = "Tracking Event: Completed Arrival Phase", }),	-- Tracking Event: Completed Arrival Phase
+				q(29805, { ["name"] = "Tracking Event: Found Mishka at Plane", }),	-- Tracking Event: Found Mishka at Plane
+				q(29602, { ["name"] = "Tracking Event: Gryphon Found", }),	-- Tracking Event: Gryphon Found
+				q(29710, { ["name"] = "Tracking Event: Looted Food Crate", }),	-- Tracking Event: Looted Food Crate
+				q(29711, { ["name"] = "Tracking Event: Looted Scroll", }),	-- Tracking Event: Looted Scroll
+				q(29707, { ["name"] = "Tracking Event: Opened Shackle 1", }),	-- Tracking Event: Opened Shackle 1
+				q(29708, { ["name"] = "Tracking Event: Opened Shackle 2", }),	-- Tracking Event: Opened Shackle 2
+				q(29709, { ["name"] = "Tracking Event: Opened Shackle 3", }),	-- Tracking Event: Opened Shackle 3
+				q(29610, { ["name"] = "Tracking Event: Player's First Arrival", }),	-- Tracking Event: Player's First Arrival
+				q(29603, { ["name"] = "Tracking Event: Provisioner Found", }),	-- Tracking Event: Provisioner Found
+				q(30415, { ["name"] = "Tracking Quest - Successful", }),	-- Tracking Quest - Successful
+				q(29895, { ["name"] = "Trail of the White Pawn", }),	-- Trail of the White Pawn
+				q(30520, { ["name"] = "Tummy Trouble", }),	-- Tummy Trouble
+				q(30295, { ["name"] = "Turn-in Quest Test Case", }),	-- Turn-in Quest Test Case
+				q(29621, { ["name"] = "UNUSED", }),	-- UNUSED
+				q(29625, { ["name"] = "UNUSED", }),	-- UNUSED
+				q(29648, { ["name"] = "UNUSED", }),	-- UNUSED
+				q(31685, { ["name"] = "Valley of the Four Winds", }),	-- Valley of the Four Winds
+				q(31723, { ["name"] = "Valley of the Four Winds", }),	-- Valley of the Four Winds
+				q(30443, { ["name"] = "Walking on Sunwalkers", }),	-- Walking on Sunwalkers
+				q(31280, { ["name"] = "Ways of Cooking", }),	-- Ways of Cooking
+				q(29714, { ["name"] = "Wet Work!", }),	-- Wet Work!
+				q(29732, { ["name"] = "What Goes Down, Must Come Up!", }),	-- What Goes Down, Must Come Up!
+				q(29858, { ["name"] = "Wisdom of the Ages", }),	-- Wisdom of the Ages
+				q(29729, { ["name"] = "Without a Trace", ["_drop"] = { "g" }, }),	-- Without a Trace
+				q(29773, { ["name"] = "Wugou, the Spirit of Earth", }),	-- Wugou, the Spirit of Earth
+				q(29886, { ["name"] = "Zen Healing", }),	-- Zen Healing
+				q(31763, { ["name"] = "[KILL GIANT SERPENT] [GET RID OF THIS?]", }),	-- [KILL GIANT SERPENT] [GET RID OF THIS?]
+				q(31764, { ["name"] = "[PUT OUT THE FIRES]", }),	-- [PUT OUT THE FIRES]
+				q(31759, { ["name"] = "[RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]", }),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
+				q(31731, { ["name"] = "[SINK SHIPS] (Not Used?)", }),	-- [SINK SHIPS] (Not Used?)
 			})),
 
 			-- 5.0.4
 			tier(MOP_TIER, 0.4, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
-				q(31940),	-- Battle Pet Trainers: Pandaria
-				q(31988),	-- Daily Selected Scenario
-				q(31968),	-- Doubt Begins To Surface
-				q(31887),	-- Pet Battle Trainers: Kalimdor
-				q(31888),	-- Pet Battle Trainers: Kalimdor
-				q(31890),	-- Pet Battle Trainers: Kalimdor
-				q(31892),	-- Pet Battle Trainers: Kalimdor
-				q(31893),	-- Pet Battle Trainers: Kalimdor
-				q(32114),	-- So, You Wanted to Test Daily Quests?
-				q(31939),	-- Test
-				q(31979),	-- The Returning Champion
-				q(31816),	-- Traitor Gluk
-				q(32396),	-- Uncompletable Binding Quest [DND]
-				q(32013),	-- [Coming in Patch 5.1]
-				q(32014),	-- [Coming Soon...]
-				q(32015),	-- [Coming Soon...]
+				q(31940, { ["name"] = "Battle Pet Trainers: Pandaria", }),	-- Battle Pet Trainers: Pandaria
+				q(31988, { ["name"] = "Daily Selected Scenario", }),	-- Daily Selected Scenario
+				q(31968, { ["name"] = "Doubt Begins To Surface", }),	-- Doubt Begins To Surface
+				q(31887, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+				q(31888, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+				q(31890, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+				q(31892, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+				q(31893, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+				q(32114, { ["name"] = "So, You Wanted to Test Daily Quests?", }),	-- So, You Wanted to Test Daily Quests?
+				q(31939, { ["name"] = "Test", }),	-- Test
+				q(31979, { ["name"] = "The Returning Champion", }),	-- The Returning Champion
+				q(31816, { ["name"] = "Traitor Gluk", }),	-- Traitor Gluk
+				q(32396, { ["name"] = "Uncompletable Binding Quest [DND]", }),	-- Uncompletable Binding Quest [DND]
+				q(32013, { ["name"] = "[Coming in Patch 5.1]", }),	-- [Coming in Patch 5.1]
+				q(32014, { ["name"] = "[Coming Soon...]", }),	-- [Coming Soon...]
+				q(32015, { ["name"] = "[Coming Soon...]", }),	-- [Coming Soon...]
 			})),
 
 			-- 5.1.0
 			tier(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
-				q(32367),	-- A Bit of Yak
-				q(32375),	-- A Dash of That
-				q(32366),	-- A Lick of Fire
-				q(32195),	-- Anger Remains
-				q(32147),	-- Attack Daily 06
-				q(32360),	-- Awaiting the Black Harvest
-				q(32173),	-- Build Portal 01
-				q(32174),	-- Build Portal 01
-				q(32159),	-- Circle of Life
-				q(32129),	-- Defense Daily 06
-				q(32311),	-- Enlistment Orders
-				q(32312),	-- Enlistment Orders
-				q(32313),	-- Hunt Helheim
-				q(32306),	-- Lumber Collection Tracking
-				q(32155),	-- Necessary Breaks
-				q(32369),	-- Secrets of the Past
-				q(32314),	-- Slaughter Selenora
-				q(32359),	-- The Eye of the Naaru
-				q(32358),	-- The Soulcore
-				q(32415),	-- Their Tracks
-				q(32433),	-- Undermining the Under Miner
-				q(32458),	-- With the Wind's Blessing...
-				q(32459),	-- With the Wind's Blessing...
-				q(32425),	-- [NYI] A Return to Lion's Landing
-				q(32422),	-- [NYI] Into Violet Hold
-				q(32407),	-- [NYI] Magus Commerce Exchange
-				q(32424),	-- [NYI] What Had To Be Done
+				q(32367, { ["name"] = "A Bit of Yak", }),	-- A Bit of Yak
+				q(32375, { ["name"] = "A Dash of That", }),	-- A Dash of That
+				q(32366, { ["name"] = "A Lick of Fire", }),	-- A Lick of Fire
+				q(32195, { ["name"] = "Anger Remains", }),	-- Anger Remains
+				q(32147, { ["name"] = "Attack Daily 06", }),	-- Attack Daily 06
+				q(32360, { ["name"] = "Awaiting the Black Harvest", }),	-- Awaiting the Black Harvest
+				q(32173, { ["name"] = "Build Portal 01", }),	-- Build Portal 01
+				q(32174, { ["name"] = "Build Portal 01", }),	-- Build Portal 01
+				q(32159, { ["name"] = "Circle of Life", }),	-- Circle of Life
+				q(32129, { ["name"] = "Defense Daily 06", }),	-- Defense Daily 06
+				q(32311, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
+				q(32312, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
+				q(32313, { ["name"] = "Hunt Helheim", }),	-- Hunt Helheim
+				q(32306, { ["name"] = "Lumber Collection Tracking", }),	-- Lumber Collection Tracking
+				q(32155, { ["name"] = "Necessary Breaks", }),	-- Necessary Breaks
+				q(32369, { ["name"] = "Secrets of the Past", }),	-- Secrets of the Past
+				q(32314, { ["name"] = "Slaughter Selenora", }),	-- Slaughter Selenora
+				q(32359, { ["name"] = "The Eye of the Naaru", }),	-- The Eye of the Naaru
+				q(32358, { ["name"] = "The Soulcore", }),	-- The Soulcore
+				q(32415, { ["name"] = "Their Tracks", }),	-- Their Tracks
+				q(32433, { ["name"] = "Undermining the Under Miner", }),	-- Undermining the Under Miner
+				q(32458, { ["name"] = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
+				q(32459, { ["name"] = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
+				q(32425, { ["name"] = "[NYI] A Return to Lion's Landing", }),	-- [NYI] A Return to Lion's Landing
+				q(32422, { ["name"] = "[NYI] Into Violet Hold", }),	-- [NYI] Into Violet Hold
+				q(32407, { ["name"] = "[NYI] Magus Commerce Exchange", }),	-- [NYI] Magus Commerce Exchange
+				q(32424, { ["name"] = "[NYI] What Had To Be Done", }),	-- [NYI] What Had To Be Done
 			})),
 
 			-- 5.2.0
 			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = {"created 5.2.0"} }, {
-				q(32475),	-- A Spark of Life
-				q(32727),	-- Contributed to Server Percentage Daily Tracking Quest
-				q(32566),	-- DEBUG: Eligible for All Quests
-				q(32492),	-- Destroy Cauldrons
-				q(32267),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)
-				q(32273),	-- Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)
-				q(32270),	-- Disarm mines near enemy camp (poke them with a stick =P)
-				q(32263),	-- Find scout near enemy camp (injured, port him back)
-				q(32281),	-- Fleshcrafter's End
-				q(32472),	-- Frighten Pterodactyls [PH]
-				q(32205),	-- Gather Scout Reports
-				q(32570),	-- Gather Scout Reports
-				q(32622),	-- Intro Flight
-				q(32651),	-- Intro Flight
-				q(32286),	-- Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)
-				q(32210),	-- Kill mogu boss for key, use object behind jumping puzzle
-				q(32203),	-- Kill Mogu Spirits
-				q(32229),	-- Kill Roaming Troll War Party
-				q(32202),	-- Kill Trolls
-				q(32280),	-- Metalocalypse
-				q(32504),	-- Mission: The Secrets of Stormwind
-				q(32211),	-- Nalak the Storm Lord
-				q(32758),	-- Reader for the Dead Tongue
-				q(32253),	-- REMOVE (No Longer Used)
-				q(32717),	-- REUSE ME
-				q(32467),	-- Sacrificial Prevention [PH]
-				q(32271),	-- Set magical mines around camp (using modern warfare lightning)
-				q(32482),	-- Shwayder's Test Quest
-				q(32272),	-- Start and defend summoning ritual near enemy camp
-				q(32231),	-- Trailing Light in the Dark
-				q(32569),	-- Trailing Light in the Dark
-				q(32290),	-- Unused
-				q(32490),	-- UNUSED
-				q(32508),	-- Welcome to the Island
-				q(32291),	-- [PH] The Fall of Shan Bu
+				q(32475, { ["name"] = "A Spark of Life", }),	-- A Spark of Life
+				q(32727, { ["name"] = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
+				q(32566, { ["name"] = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
+				q(32492, { ["name"] = "Destroy Cauldrons", }),	-- Destroy Cauldrons
+				q(32267, { ["name"] = "Destroy enemy portal near camp (streaming attackers, defended, enemy can use)", }),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)
+				q(32273, { ["name"] = "Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)", }),	-- Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)
+				q(32270, { ["name"] = "Disarm mines near enemy camp (poke them with a stick =P)", }),	-- Disarm mines near enemy camp (poke them with a stick =P)
+				q(32263, { ["name"] = "Find scout near enemy camp (injured, port him back)", }),	-- Find scout near enemy camp (injured, port him back)
+				q(32281, { ["name"] = "Fleshcrafter's End", }),	-- Fleshcrafter's End
+				q(32472, { ["name"] = "Frighten Pterodactyls [PH]", }),	-- Frighten Pterodactyls [PH]
+				q(32205, { ["name"] = "Gather Scout Reports", }),	-- Gather Scout Reports
+				q(32570, { ["name"] = "Gather Scout Reports", }),	-- Gather Scout Reports
+				q(32622, { ["name"] = "Intro Flight", }),	-- Intro Flight
+				q(32651, { ["name"] = "Intro Flight", }),	-- Intro Flight
+				q(32286, { ["name"] = "Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)", }),	-- Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)
+				q(32210, { ["name"] = "Kill mogu boss for key, use object behind jumping puzzle", }),	-- Kill mogu boss for key, use object behind jumping puzzle
+				q(32203, { ["name"] = "Kill Mogu Spirits", }),	-- Kill Mogu Spirits
+				q(32229, { ["name"] = "Kill Roaming Troll War Party", }),	-- Kill Roaming Troll War Party
+				q(32202, { ["name"] = "Kill Trolls", }),	-- Kill Trolls
+				q(32280, { ["name"] = "Metalocalypse", }),	-- Metalocalypse
+				q(32504, { ["name"] = "Mission: The Secrets of Stormwind", }),	-- Mission: The Secrets of Stormwind
+				q(32211, { ["name"] = "Nalak the Storm Lord", }),	-- Nalak the Storm Lord
+				q(32758, { ["name"] = "Reader for the Dead Tongue", }),	-- Reader for the Dead Tongue
+				q(32253, { ["name"] = "REMOVE (No Longer Used)", }),	-- REMOVE (No Longer Used)
+				q(32717, { ["name"] = "REUSE ME", }),	-- REUSE ME
+				q(32467, { ["name"] = "Sacrificial Prevention [PH]", }),	-- Sacrificial Prevention [PH]
+				q(32271, { ["name"] = "Set magical mines around camp (using modern warfare lightning)", }),	-- Set magical mines around camp (using modern warfare lightning)
+				q(32482, { ["name"] = "Shwayder's Test Quest", }),	-- Shwayder's Test Quest
+				q(32272, { ["name"] = "Start and defend summoning ritual near enemy camp", }),	-- Start and defend summoning ritual near enemy camp
+				q(32231, { ["name"] = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
+				q(32569, { ["name"] = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
+				q(32290, { ["name"] = "Unused", }),	-- Unused
+				q(32490, { ["name"] = "UNUSED", }),	-- UNUSED
+				q(32508, { ["name"] = "Welcome to the Island", }),	-- Welcome to the Island
+				q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
 			})),
 
 			-- 5.3.0
 			tier(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = {"created 5.3.0"} }, {
-				q(32825),	-- Re-Use Me
-				q(32826),	-- Re-Use Me
-				q(32827),	-- Re-Use Me
+				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
+				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
+				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
+			})),
+			
+			-- 5.4.0
+			tier(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = {"created 5.4.0"} }, {
+				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
+				q(33361, { ["name"] = "5.4 Raid - RRP - Boss 2 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 2 Legendary Quest
+				q(33362, { ["name"] = "5.4 Raid - RRP - Boss 3 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 3 Legendary Quest
+				q(33363, { ["name"] = "5.4 Raid - RRP - Boss 4 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 4 Legendary Quest
+				q(33364, { ["name"] = "5.4 Raid - RRP - Boss 5 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 5 Legendary Quest
+				q(33365, { ["name"] = "5.4 Raid - RRP - Boss 6 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 6 Legendary Quest
+				q(33366, { ["name"] = "5.4 Raid - RRP - Boss 7 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 7 Legendary Quest
+				q(33367, { ["name"] = "5.4 Raid - RRP - Boss 8 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 8 Legendary Quest
+				q(33368, { ["name"] = "5.4 Raid - RRP - Boss 9 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 9 Legendary Quest
+				q(33369, { ["name"] = "5.4 Raid - RRP - Boss 10 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 10 Legendary Quest
+				q(33370, { ["name"] = "5.4 Raid - RRP - Boss 11 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 11 Legendary Quest
+				q(33371, { ["name"] = "5.4 Raid - RRP - Boss 12 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 12 Legendary Quest
+				q(33372, { ["name"] = "5.4 Raid - RRP - Boss 13 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 13 Legendary Quest
+				q(33373, { ["name"] = "5.4 Raid - RRP - Boss 14 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 14 Legendary Quest
+				q(33347, { ["name"] = "5.4 Test - RRP - Child Level Tracking Quest", }),	-- 5.4 Test - RRP - Child Level Tracking Quest
+				q(33346, { ["name"] = "5.4 Test - RRP - Top Level Tracking Quest", }),	-- 5.4 Test - RRP - Top Level Tracking Quest
+				q(32995, { ["name"] = "A Blood-Caked Scroll", }),	-- A Blood-Caked Scroll
+				q(32973, { ["name"] = "Avatar of Flame Kill Tracking Quest", }),	-- Avatar of Flame Kill Tracking Quest
+				q(32972, { ["name"] = "Avatar of Flame Transform Tracking Quest", }),	-- Avatar of Flame Transform Tracking Quest
+				q(32996, { ["name"] = "Battle-Hardened Relics", }),	-- Battle-Hardened Relics
+				q(33122, { ["name"] = "DEPRECATED Great Job, You Won", }),	-- DEPRECATED Great Job, You Won
+				q(33121, { ["name"] = "DEPRECATED The Celestial Tournament", }),	-- DEPRECATED The Celestial Tournament
+				q(33124, { ["name"] = "Fishing with Fin - Tracking Quest", }),	-- Fishing with Fin - Tracking Quest
+				q(33003, { ["name"] = "Glyph of the Armsmaster", }),	-- Glyph of the Armsmaster
+				q(33019, { ["name"] = "NC S1 Q2", }),	-- NC S1 Q2
+				q(33023, { ["name"] = "NC S1 Q6", }),	-- NC S1 Q6
+				q(33025, { ["name"] = "NC S2 Q2", }),	-- NC S2 Q2
+				q(33007, { ["name"] = "Proving Grounds", }),	-- Proving Grounds
+				q(32910, { ["name"] = "reuse me", }),	-- reuse me
+				q(33000, { ["name"] = "Saurfang, Warrior", }),	-- Saurfang, Warrior
+				q(33002, { ["name"] = "Scribe Wei Wu", }),	-- Scribe Wei Wu
+				q(33257, { ["name"] = "Sprite Fright - Tracking Quest", }),	-- Sprite Fright - Tracking Quest
+				q(32952, { ["name"] = "TEST", }),	-- TEST
+				q(33001, { ["name"] = "The Armsmasters", }),	-- The Armsmasters
+				q(33123, { ["name"] = "The Celestial Tournament", }),	-- The Celestial Tournament
+				q(33110, { ["name"] = "The Usurper", }),	-- The Usurper
+				q(32964, { ["name"] = "Tracking Quest: Ghost Pirate Battle - Completed", }),	-- Tracking Quest: Ghost Pirate Battle - Completed
+				q(32965, { ["name"] = "Tracking Quest: Ghost Pirate Battle - Looted Treasure", }),	-- Tracking Quest: Ghost Pirate Battle - Looted Treasure
+				q(32949, { ["name"] = "Tracking Quest: Guru Kukuru", }),	-- Tracking Quest: Guru Kukuru
+				q(32958, { ["name"] = "[REUSEME]", }),	-- [REUSEME]
 			})),
 
 			-- 5.4.2
 			tier(MOP_TIER, 4.2, bubbleDown({ ["timeline"] = {"created 5.4.2"} }, {
-				q(33634),	-- Maldo's Test Quest
-
+				q(33634, { ["name"] = "6.0 Invasion Opt-Out", }),	-- Maldo's Test Quest
 			})),
 		}),
 	}),
@@ -610,6 +650,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(34944, { ["name"] = "A Flock of Fledglings", }),	-- A Flock of Fledglings
 				q(34354, { ["name"] = "A Good Death", }),	-- A Good Death
 				q(33266, { ["name"] = "A Light in the Dark - Tracking Quest", }),	-- A Light in the Dark - Tracking Quest
+				q(33577, { ["name"] = "A New Threat", }),	-- A New Threat
 				q(36413, { ["name"] = "A Power Restored", }),	-- A Power Restored
 				q(36263, { ["name"] = "A Strengthened Bond", }),	-- A Strengthened Bond
 				q(34299, { ["name"] = "A Threat We Can't Ignore", }),	-- A Threat We Can't Ignore
@@ -1366,9 +1407,40 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 6.2.3 - no NYI quests
 
-			-- 6.x.x - quests in API with no name or patch info
+			-- 6.x.x - quests in API with no name or patch info / quests from wow.tools
 			n(P6xx, {
+				q(32785),
+				q(32786),
+				q(32787),
+				q(32788),
+				q(32789),
+				q(32790),
+				q(32798),
+				q(32908),
+				q(32909),
+				q(32916),
+				q(32928),
+				q(32930),
+				q(32931),
+				q(32932),
+				q(32933),
+				q(33029),
+				q(33030),
+				q(33031),
+				q(33032),
+				q(33033),
+				q(33152),
+				q(33153),
 				q(33169),
+				q(33254),
+				q(33262),
+				q(33282),
+				q(33328),
+				q(33339),
+				q(33353),
+				q(33386),
+				q(33392),
+				q(33403),
 				q(33406),
 				q(33415),
 				q(33420),
@@ -1379,21 +1451,126 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(33433),
 				q(33459),
 				q(33460),
+				q(33465),
+				q(33471),
+				q(33472),
+				q(33482),
+				q(33486),
+				q(33491),
+				q(33515),
+				q(33517),
+				q(33518),
+				q(33519),
+				q(33520),
+				q(33523),
+				q(33524),
 				q(33528),
+				q(33535),
+				q(33537),
+				q(33538),
+				q(33541),
+				q(33542),
+				q(33558),
+				q(33559),
+				q(33576),
+				q(33583),
+				q(33585),
+				q(33587),
+				q(33589),
+				q(33590),
+				q(33591),
+				q(33592),
+				q(33594),
+				q(33595),
+				q(33596),
+				q(33598),
+				q(33599),
+				q(33600),
+				q(33601),
+				q(33604),
+				q(33605),
+				q(33606),
+				q(33607),
+				q(33608),
+				q(33623),
+				q(33624),
+				q(33625),
+				q(33626),
+				q(33627),
+				q(33628),
+				q(33629),
+				q(33630),
+				q(33631),
+				q(33636),
+				q(33637),
+				q(33646),
+				q(33647),
+				q(33648),
+				q(33650),
+				q(33651),
+				q(33652),
+				q(33653),
+				q(33654),
+				q(33696),
+				q(33709),
+				q(33711),
+				q(33712),
+				q(33714),
+				q(33715),
+				q(33723),
+				q(33725),
+				q(33738),
+				q(33739),
+				q(33743),
+				q(33753),
+				q(33759),
+				q(33760),
+				q(33768),
+				q(33777),
 				q(37801),
 				q(37806),
 				q(37807),
 				q(37808),
 				q(37809),
 				q(37810),
+				q(33818),
+				q(33819),
+				q(33841),
+				q(33842),
+				q(33845),
+				q(33848),
+				q(33849),
+				q(33850),
+				q(33851),
+				q(33852),
+				q(33853),
+				q(33854),
+				q(33855),
+				q(33856),
+				q(33857),
+				q(33858),
+				q(33859),
 				q(37863),
+				q(33865),
+				q(33870),
+				q(33876),
+				q(33892),
+				q(33895),
+				q(33902),
+				q(33912),
 				q(37920),
+				q(33922),
 				q(37925),
 				q(37926),
-
-				-- Quests from wow.tools - unknown name, unknown patch, only ID
-				-- 34000 - 34999
+				q(33932),
+				q(33934),
+				q(33939),
+				q(33941),
+				q(33950),
+				q(33951),
+				q(33953),
 				q(34005),
+				q(34007),
 				q(34009),
 				q(34010),
 				q(34011),
@@ -1453,8 +1630,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(34880),
 				q(34926),
 				q(34928),
-
-				-- 35000 - 35999
 				q(35039),
 				q(35094),
 				q(35130),
@@ -1468,8 +1643,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(35328),
 				q(35698),
 				q(35700),
-
-				-- 36000 - 36999
 				q(36156),
 				q(36173),
 				q(36187),

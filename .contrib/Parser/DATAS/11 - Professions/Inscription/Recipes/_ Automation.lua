@@ -161,7 +161,7 @@ profession(773, {	-- Inscription
 						{
 							["name"] = "Codex of the Still Mind",
 							["hash"] = "recipeID311424",
-							["recipeID"] = 311424
+							["recipeID"] = 311424,
 						},
 						{
 							["name"] = "Tome of the Still Mind",
@@ -320,7 +320,7 @@ profession(773, {	-- Inscription
 						{
 							["name"] = "Fae Revel Masque",
 							["hash"] = "recipeID334537",
-							["recipeID"] = 334537
+							["recipeID"] = 334537,
 						}
 					}
 				}

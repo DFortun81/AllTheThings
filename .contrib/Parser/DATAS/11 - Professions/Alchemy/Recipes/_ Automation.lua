@@ -114,7 +114,7 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Eternal Cauldron",
 							["hash"] = "recipeID307087",
-							["recipeID"] = 307087
+							["recipeID"] = 307087,
 						}
 					}
 				},
@@ -289,7 +289,7 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Shadestone",
 							["hash"] = "recipeID307143",
-							["recipeID"] = 307143
+							["recipeID"] = 307143,
 						},
 						{
 							["name"] = "Shadowghast Ingot",
@@ -355,7 +355,7 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Red Noggin Candle",
 							["hash"] = "recipeID334413",
-							["recipeID"] = 334413
+							["recipeID"] = 334413,
 						}
 					}
 				}

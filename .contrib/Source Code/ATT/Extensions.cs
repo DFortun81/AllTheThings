@@ -34,6 +34,25 @@ namespace ATT
         }
 
         /// <summary>
+        /// Convert the version number into a valid game version number.
+        /// </summary>
+        /// <param name="version">The version number.</param>
+        /// <returns>The version number as represented in WoW.</returns>
+        public static long ConvertToGameVersion(this long version)
+        {
+            var s = version.ToString();
+            var leadingZeros = new char[] { '0' };
+            var len = s.Length;
+            var major = s.Substring(0, len - 12).TrimStart(leadingZeros);
+            if (major.Length == 0) major = "0";
+            var minor = s.Substring(len - 12, 3).TrimStart(leadingZeros);
+            if (minor.Length == 0) minor = "0";
+            var patch = s.Substring(len - 9, 3).TrimStart(leadingZeros);
+            if (patch.Length == 0) patch = "0";
+            return long.Parse($"{major}{minor.PadLeft(2, '0')}{patch.PadLeft(2, '0')}");
+        }
+
+        /// <summary>
         /// Convert the version number into a valid version string.
         /// </summary>
         /// <param name="version">The version number.</param>

@@ -281,8 +281,6 @@ _.WorldDrops =
 				un(REMOVED_FROM_GAME, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 				i(13067),	-- Hydralick Armor
 				i(1981),	-- Icemail Jerkin
-				un(REMOVED_FROM_GAME, i(914)),	-- Large Ogre Chain Vest
-				un(REMOVED_FROM_GAME, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
 				i(1715),	-- Polished Jazeraint Armor
 				i(1716),	-- Robe of the Magi
 				i(940),		-- Robes of Insight
@@ -300,7 +298,6 @@ _.WorldDrops =
 				i(9433),	-- Forgotten Wraps
 				i(13106),	-- Glowing Magical Bracelets
 				i(13135),	-- Lordly Armguards
-				un(REMOVED_FROM_GAME, i(897)),	-- Madwolf Bracers
 				i(13107),	-- Magiskull Cuffs
 				i(13012),	-- Yorgen Bracers
 			}),
@@ -343,7 +340,6 @@ _.WorldDrops =
 				i(13129),	-- Firemane Leggings
 				i(13074),	-- Golem Shard Leggings
 				i(2277),	-- Necromancer Leggings
-				un(REMOVED_FROM_GAME, i(2233)),	 -- Shadow Weaver Leggings
 				i(13114),	-- Troll's Bane Leggings
 				i(13130),	-- Windrunner Legguards
 			}),

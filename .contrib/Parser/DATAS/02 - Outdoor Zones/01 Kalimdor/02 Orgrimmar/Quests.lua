@@ -853,6 +853,11 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 51443 },	-- Mission Statement
 				["provider"] = { "n", 135205 },	-- Nathanos Blightcaller
 				["coord"] = { 54.4, 78.4, ORGRIMMAR },
+				["maps"] = {
+					DAZARALOR,
+					1012,	-- Stormwind City (Scenario)
+					1013,	-- The Stockade (Scenario)
+				},
 				["races"] = HORDE_ONLY,
 			}),
 			q(1146,  {	-- The Swarm Grows

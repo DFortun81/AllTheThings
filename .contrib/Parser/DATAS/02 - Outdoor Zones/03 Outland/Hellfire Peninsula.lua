@@ -2866,10 +2866,7 @@ root("Zones", {
 						["groups"] = {
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
-							i(22012, {	-- Master First Aid - Doctor in the House
-								["timeline"] = { "removed 3.1.0", "removed 8.0.1" },
-								["rank"] = 5,
-							}),
+							i(22012),	-- Master First Aid - Doctor in the House
 						},
 					}),
 					n(18267, {	-- Battlecryer Blackeye
@@ -2932,10 +2929,7 @@ root("Zones", {
 						["groups"] = {
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
-							i(22012, {	-- Master First Aid - Doctor in the House
-								["timeline"] = { "removed 3.1.0", "removed 8.0.1" },
-								["rank"] = 5,
-							}),
+							i(22012),	-- Master First Aid - Doctor in the House
 						},
 					}),
 					n(16585, {	-- Cookie One-Eye <Food & Drink>

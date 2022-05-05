@@ -190,6 +190,7 @@ BLACKROCK_MOUNTAIN_LEVEL2 = 34;
 BLACKROCK_MOUNTAIN_LEVEL3 = 35;
 BLASTED_LANDS = 17;
 BURNING_STEPPES = 36;
+COLDRIDGE_VALLEY = 427;
 DEADWIND_PASS = 42;
 DEEPRUN_TRAM = 499;
 DUN_MOROGH = 27;
@@ -200,6 +201,8 @@ HILLSBRAD_FOOTHILLS = 25;
 IRONFORGE = 87;
 LIGHTS_HOPE_CHAPEL = 24;
 LOCH_MODAN = 48;
+NEW_TINKERTOWN = 469;
+NEW_TINKERTOWN_LOWER = 30;
 NORTHERN_STRANGLETHORN = 50;
 REDRIDGE_MOUNTAINS = 49;
 RUINS_OF_GILNEAS = 217;
@@ -1782,7 +1785,8 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	--root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	root("Professions", p);
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay

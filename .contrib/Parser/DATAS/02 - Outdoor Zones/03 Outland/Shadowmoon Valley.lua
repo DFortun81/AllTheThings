@@ -565,7 +565,7 @@ root("Zones", {
 					q(10627, {	-- Capture the Weapons (H)
 						["qg"] = 19333,	-- Grokom Deatheye
 						["sourceQuest"] = 10623,	-- Illidari Bane-Shard (H)
-						["coord"] = { 29.8, 31.2, TEROKKAR_FOREST },
+						["coord"] = { 29.8, 31.2, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(30926),	-- Ashwalker's Footwraps
@@ -868,10 +868,14 @@ root("Zones", {
 					q(10621, {	-- Illidari Bane-Shard (A)
 						["provider"] = { "i", 30756 },	-- Illidari Bane-Shard (A)
 						["races"] = ALLIANCE_ONLY,
+						["crs"] = { 21499 },	-- Overseer Ripwsaw
+						["coord"] = { 23.0, 35.6, SHADOWMOON_VALLEY },
 					}),
 					q(10623, {	-- Illidari Bane-Shard (H)
 						["provider"] = { "i", 30579 },	-- Illidari Bane-Shard (H)
 						["races"] = HORDE_ONLY,
+						["crs"] = { 21499 },	-- Overseer Ripwsaw
+						["coord"] = { 23.0, 35.6, SHADOWMOON_VALLEY },
 					}),
 					q(10782, {	-- Imbuing the Headpiece
 						["qg"] = 22024,	-- Parshah
@@ -1793,6 +1797,7 @@ root("Zones", {
 					}),
 					q(10651, {	-- Varedis Must Be Stopped (Aldor) (awarded "Borrowed Power" criteria)
 						["qg"] = 21860,	-- Exarch Onaala
+						["coord"] = { 61.2, 29.2, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10650,	-- Return to the Aldor
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {

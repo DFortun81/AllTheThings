@@ -1010,7 +1010,7 @@ _.Zones =
 					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25612,	-- Return from the Firelands
 					["isBreadcrumb"] = true,
-					["description"] = "If you finish quest \"Aessina's Miracle\" before turning in this quest, NPC will phase out and you won't be able to complete it.",
+					["lockCriteria"] = { 1, "questID", 25372 },	-- Aessina's Miracle
 				}),
 				q(25472, {	-- The Flameseer's Staff
 					["provider"] = { "n", 39869 },	-- Windspeaker Tamila
@@ -1062,11 +1062,14 @@ _.Zones =
 					},
 					["sourceQuests"] = {
 						25520,	-- An Ancient Awakens
+						25807,	-- An Ancient Reborn
 						25382,	-- Disrupting the Rituals
 						25491,	-- Durable Seeds
 						29066,	-- Good News... and Bad News
 						25502,	-- Prepping the Soil
 						-- 25832,	-- Return to Aviana (picked this up at the same time as the above quest)
+						25611,	-- Return from the Firelands (A)
+						25612,	-- Return from the Firelands (H)
 					},
 				}),
 				q(25412, {	-- The Name Never Spoken

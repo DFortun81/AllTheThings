@@ -78,7 +78,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["spellID"] = 0,
+							["recipeID"] = 39895,
 							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 						i(18652, {	-- Schematic: Gyrofreeze Ice Reflector

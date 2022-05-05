@@ -8,11 +8,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_human",
 		-- #endif
 		["isRaid"] = true,
-		--["maps"] = {
-			-- TODO: will need to move to specific scenario quests
-			-- 1012,	-- Stormwind City (BFA Scenario)
-			-- 1013,	-- The Stockade (BFA Scenario)
-		--},
 		["groups"] = {
 			petbattle(filter(BATTLE_PETS, {
 				p(378, {	-- Rabbit
@@ -397,12 +392,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(325, {	-- Armed and Ready
-					["provider"] = { "n", 1416 },	-- Grimand Elmore
-					["coord"] = { 59.6, 34.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1942, {	-- Astral Knot Garment
 					["sourceQuests"] = { 1940 },	-- Pristine Spider Silk
@@ -1313,6 +1302,74 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1794, {	-- The Tome of Valor [Dwarf]
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.6, 6.4, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = { DWARF },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
+				q(1793, {	-- The Tome of Valor [Human]
+					["qg"] = 6171,	-- Duthorian Rall
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = { HUMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
+				q(1649, {	-- The Tome of Valor (1/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuests"] = {
+						1794,	-- The Tome of Valor [Dwarf]
+						1793,	-- The Tome of Valor [Human]
+					},
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["cost"] = {
+						{ "i", 6776, 1 },	-- Tome of Valor
+					},
+					["lvl"] = 20,
+				}),
+				q(1650, {	-- The Tome of Valor (2/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1649,	-- The Tome of Valor (1/4)
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1651, {	-- The Tome of Valor (3/4)
+					["qg"] = 6182,	-- Daphne Stilwell
+					["sourceQuest"] = 1650,	-- The Tome of Valor (2/4)
+					["coord"] = { 42.4, 88.4, WESTFALL },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(1652, {	-- The Tome of Valor (4/4)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1651,	-- The Tome of Valor (3/4)
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+					["groups"] = {
+						-- #if BEFORE 4.0.3
+						recipe(5502),	-- Sense Undead
+						-- #endif
+						i(9607, {	-- Bastion of Stormwind
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(29158, {	-- The Zandalar Representative
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -1553,13 +1610,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lockCriteria"] = { 1, "lvl", 50 },
-				}),
-				q(1698, {	-- Yorus Barleybrew
-					["provider"] = { "n", 5479 },	-- Wu Shen
-					["classes"] = { WARRIOR },
-					["coord"] = { 78.8, 45.4, STORMWIND_CITY },
-					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(397, {	-- You Have Served Us Well
 					["sourceQuests"] = { 336 },	-- A Noble Brew
@@ -1940,7 +1990,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(41563),	-- Design: Willful Huge Citrine
 						i(41564),	-- Design: Empowered Huge Citrine
-						i(41565),	-- Design: Lucent Huge Citrine
+						i(41565, {	-- Design: Lucent Huge Citrine
+							["recipeID"] = 53879,
+						}),
 						i(41575),	-- Design: Mysterious Shadow Crystal
 						i(41559),	-- Design: Mystic Sun Crystal
 						i(41573),	-- Design: Opaque Dark Jade
@@ -1949,7 +2001,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(41572),	-- Design: Steady Dark Jade
 						i(41560),	-- Design: Stormy Chalcedony
 						i(41570),	-- Design: Radiant Dark Jade
-						i(41571),	-- Design: Turbid Dark Jade
+						i(41571, {	-- Design: Turbid Dark Jade
+							["recipeID"] = 53924,
+						}),
 						un(REMOVED_FROM_GAME, i(28960)),	    -- Grand Marshal's Heavy Crossbow
 					},
 				}),

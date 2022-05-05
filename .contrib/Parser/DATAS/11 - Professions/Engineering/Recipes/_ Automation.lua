@@ -171,7 +171,7 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Wormhole Generator: Shadowlands",
 							["hash"] = "recipeID310535",
-							["recipeID"] = 310535
+							["recipeID"] = 310535,
 						}
 					}
 				},

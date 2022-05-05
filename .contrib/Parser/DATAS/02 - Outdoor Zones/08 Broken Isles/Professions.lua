@@ -1636,7 +1636,7 @@ _.Zones =
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 					}),
 					q(40181,  {	-- Black Rook Bandit
-						["sourceQuests"] = { 40201 },	-- Playthings
+						["sourceQuests"] = { 40180 },	-- Mail Men
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
@@ -1645,7 +1645,7 @@ _.Zones =
 						},
 					}),
 					q(40182,  {	-- Too Good To Pass Up
-						["sourceQuests"] = { 40181 },	-- Black Rook Bandit
+						["sourceQuests"] = { 40180 },	-- Mail Men
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
@@ -1654,8 +1654,9 @@ _.Zones =
 					}),
 					q(40176,  {	-- From Head to Toe
 						["sourceQuests"] = {
-							40201,	-- Too Good To Pass Up
 							40179,	-- Stormheim Savagery
+							40181,  -- Black Rook Bandit
+							40182,  -- Too Good To Pass Up
 						},
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
@@ -1709,7 +1710,10 @@ _.Zones =
 						},
 					}),
 					q(40190,  {	-- Hardening the Hide
-						["sourceQuests"] = { 40189 },	-- Naga Know-How
+						["sourceQuests"] = { 
+							40185,  -- Shoulder the Burden
+							40186,  -- Drogbar Durability
+						 },
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["isBreadcrumb"] = true,
@@ -1732,7 +1736,7 @@ _.Zones =
 						},
 					}),
 					q(40193,  {	-- Getting the Kinks Out
-						["sourceQuests"] = { 40192 },	-- Claw of the Land
+						["sourceQuests"] = { 40189 },	-- Naga Know-How
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["isBreadcrumb"] = true,
@@ -1861,6 +1865,7 @@ _.Zones =
 						["sourceQuests"] = {
 							40415,	-- Well Spent Time
 							40210,	-- Time Well Spent
+							42079,	-- Masquerade
 						},
 						["provider"] = { "n", 93523 },	-- Namha Moonwater
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },

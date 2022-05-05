@@ -8,7 +8,7 @@ _.WorldDrops =
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
 				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses
-					["spellID"] = 0,
+					["f"] = MISC,
 					["g"] = {
 						recipe(146921),	-- Accelerated Balanced Trillium Ingot
 						recipe(143255),	-- Balanced Trillium Ingot
@@ -17,7 +17,6 @@ _.WorldDrops =
 			}),
 			prof(ENGINEERING, {
 				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
-					["spellID"] = 0,	-- Not learnable.
 					["f"] = MISC,
 					["g"] = {
 						recipe(139197),	-- Advanced Refrigeration Unit
@@ -28,7 +27,7 @@ _.WorldDrops =
 					},
 				}),
 				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
-					["spellID"] = 0,	-- Not learnable.
+					["f"] = MISC,
 					["u"] = REMOVED_FROM_GAME,
 					["_drop"] = { "g" },
 					["g"] = {
@@ -70,7 +69,7 @@ _.WorldDrops =
 				}),
 				i(100864, {	-- Pattern: Hardened Magnificent Hide and Its Uses
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
-					["spellID"] = 0,	-- Not learnable.
+					["f"] = MISC,
 					["g"] = {
 						recipe(142976),	-- Hardened Magnificent Hide
 					},
@@ -80,7 +79,7 @@ _.WorldDrops =
 			}),
 			prof(TAILORING, {
 				i(100863, {	-- Pattern: Celestial Cloth and Its Uses
-					["spellID"] = 0,	-- Not learnable.
+					["f"] = MISC,
 					["g"] = {
 						recipe(143011),	-- Celestial Cloth
 					},

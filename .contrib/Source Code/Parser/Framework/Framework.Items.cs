@@ -448,7 +448,7 @@ namespace ATT
                     case "coords":
                     case "criteriaID":
                     case "heirloomID":
-                    case "recipeID":
+                    //case "recipeID":  // if an Item teaches a Recipe, it's not a different Recipe based on Source, so we can merge it
                     case "previousRecipeID":
                     case "nextRecipeID":
                     case "minReputation":
@@ -522,7 +522,6 @@ namespace ATT
                     case "petTypeID":
 #endif
                     case "speciesID":
-                    case "spellID":
                     case "objectiveID":
                     case "runeforgePowerID":
                     case "raceID":
@@ -543,6 +542,31 @@ namespace ATT
                         }
                         else
                         {
+                            item[field] = longval;
+                        }
+                        break;
+                    case "spellID":
+                    case "recipeID":
+                        longval = Convert.ToInt64(value);
+                        // any 0 value should simply be removed for cleanliness
+                        if (longval == 0)
+                        {
+                            if (DebugMode)
+                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+
+                            item.Remove(field);
+                        }
+                        else
+                        {
+                            // setting a recipeID on the Item should remove the spellID
+                            if (field == "recipeID")
+                            {
+                                item.Remove("spellID");
+                            }
+                            // setting a spellID on an Item with a recipeID should do nothing
+                            else if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                                break;
+
                             item[field] = longval;
                         }
                         break;
@@ -810,6 +834,13 @@ namespace ATT
                             data[field] = value;
                             break;
                         }
+
+                    // Functions
+                    case "OnClick":
+                    case "OnUpdate":
+                    case "OnTooltip":
+                        data[field] = value;
+                        break;
 
                     // IMPORTANT: Parse Source ID!
                     case "modIDs":
