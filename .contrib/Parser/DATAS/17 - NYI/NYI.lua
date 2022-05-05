@@ -3229,9 +3229,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187515),	-- Theotar's Bottomless Teapot
 				i(187433),	-- Windcrystal Chimes
 			}),
-			tier(SL_TIER, 1.5, {
-				i(187659),	-- Adventurer's Footlocker
-			}),
 			tier(SL_TIER, 2.0, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
