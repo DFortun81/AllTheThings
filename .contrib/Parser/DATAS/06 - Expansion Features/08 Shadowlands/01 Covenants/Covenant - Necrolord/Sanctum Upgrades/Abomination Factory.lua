@@ -825,7 +825,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								n(161270, {	-- Chordy
 									["description"] = "These abomination crafting reagents can randomly be found using Chordy's ability in any Shadowlands zone",
 									["crs"] = {
-										158259,	-- Chordy (as pet)
+										--158259,	-- Chordy (as pet) - All summonable pets from Abomination Factory use same ID, don't use this.
 										161270,	-- Chordy (in world)
 										167828,	-- Salvageable Items (lootable treasure in world)
 									},
