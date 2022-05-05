@@ -867,9 +867,10 @@ root("Zones", {
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
-					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell
 						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["coord"] = { 30.6, 34.4, SHATTRATH_CITY },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["isBreadcrumb"] = true,
 					})),
@@ -900,29 +901,101 @@ root("Zones", {
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 						["repeatable"] = true,
 					}),
-					q(11877, {	-- Sunfury Attack Plans
-						["qg"] = 25140,	-- Lord Torvos
-						["repeatable"] = true,
-					}),
-					q(11880, {	-- The Multiphase Survey
-						["qg"] = 19475,	-- Harbinger Haronem
-						["repeatable"] = true,
-					}),
-					q(11875, {	-- Gaining the Advantage
+					applyclassicphase(TBC_PHASE_FIVE, q(11875, {	-- Gaining the Advantage
 						["qg"] = 19202,	-- Emissary Mordin
 						["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-						["repeatable"] = true,
-					}),
-					applyclassicphase(TBC_PHASE_FIVE, q(11513, {	-- Intercepting the Mana Cells
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
+						["groups"] = {
+							objective(1, {	-- 0/8 Nether Residue
+								["provider"] = { "i", 35229 },	-- Nether Residue
+							}),
+						},
+					})),
+					applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
+						["qg"] = 25140,	-- Lord Torvos
+						["coord"] = { 62.6, 36, SHATTRATH_CITY },
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maps"] = { NETHERSTORM },
+						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
+						["groups"] = {
+							objective(1, {	-- 0/1 Sunfury Attack Plans
+								["provider"] = { "i", 35231 },	-- Sunfury Attack Plans
+								["crs"] = {
+									21089,	-- Sunfury Blood Knight
+									18853,	-- Sunfury Bloodwarder
+									19453,	-- Sunfury Captain
+									18855,	-- Sunfury Magister
+									20248,	-- Sunfury Nethermancer
+									19779,	-- Sunfury Geologist
+									19643,	-- Sunfury Astromancer
+									18857,	-- Sunfury Warp-Master
+									19635,	-- Captain Arathyn
+									18852,	-- Sunfury Warp-Engineer
+									20139,	-- Sunfury Conjurer
+									20140,	-- Sunfury Centurion
+									20134,	-- Sunfury Arcanist
+									18850,	-- Sunfury Guardsman
+									20207,	-- Sunfury Bowman
+									20136,	-- Sunfury Researcher
+									20135,	-- Sunfury Arch Mage
+								},
+							}),
+						},
+					})),
+					applyclassicphase(TBC_PHASE_FIVE, q(11880, {	-- The Multiphase Survey
+						["qg"] = 19475,	-- Harbinger Haronem
+						["coord"] = { 61.4, 52.2, SHATTRATH_CITY },
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maps"] = { NAGRAND },
+						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
+						["groups"] = {
+							objective(1, {	-- 0/6 	Multiphase Readings Taken
+								["provider"] = { "i", 35233 },	-- Multiphase Spectrographic Goggles
+								["coord"] = { 36, 66, NAGRAND },
+							}),
+						},
+					})),
+					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11513, {	-- Intercepting the Mana Cells
+						["qg"] = 24932,	-- Exarch Nasuun
+						["sourceQuest"] = 11517,	-- Report to Nasuun
+						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
+						["timeline"] = { "removed 3.0.1" },
+						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
+						-- #if BEFORE 3.0.1
+						["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+						["groups"] = {
+							objective(1, {	-- 0/10 Smuggled Mana Cell
+								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
+								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+							}),
+							i(35232),	-- Shattered Sun Supplies
+						},
+						-- #endif
+					})),
+					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11514, {	-- Maintaining the Sunwell Portal
 						["qg"] = 24932,	-- Exarch Nasuun
 						["sourceQuest"] = 11534,	-- Report to Nasuun
 						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["isDaily"] = true,
-					})),
-					applyclassicphase(TBC_PHASE_FIVE, q(11514, {	-- Maintaining the Sunwell Portal
-						["qg"] = 24932,	-- Exarch Nasuun
-						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
-						["repeatable"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
+						["groups"] = {
+							objective(1, {	-- 0/10 Smuggled Mana Cell
+								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
+								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+							}),
+							i(35232),	-- Shattered Sun Supplies
+						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
 						["qg"] = 23449,	-- Yuula
@@ -1083,15 +1156,10 @@ root("Zones", {
 							i(142286),	-- Plans: Lavaforged Warhammer
 						},
 					}),
-					q(11550, {	-- Enter, the Deceiver...
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 25167 },	-- General Tiras'alan
-						["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
-					}),
 					q(10169, {	-- Losing Gracefully
-						["u"] = REMOVED_FROM_GAME,
-						["provider"] = { "n", 19485 },	-- Magister Falris
+						["qg"] = 19485,	-- Magister Falris
 						["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
+						["timeline"] = { "added 2.0.3", "removed 2.4.0" },
 					}),
 					q(10037, {	-- Rather Be Fishin'
 						["qg"] = 18653,	-- Seth
@@ -1306,7 +1374,7 @@ root("Zones", {
 					applyclassicphase(WRATH_PHASE_ONE, q(12773, {	-- Darnassus
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { NIGHTELF },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["qg"] = 29087,	-- Bishop Lazaril
 						["sourceQuest"] = 12753,	-- A Desperate Alliance
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12783, {	-- Desperate Research
@@ -1332,55 +1400,55 @@ root("Zones", {
 					applyclassicphase(WRATH_PHASE_ONE, q(12771, {	-- Ironforge (Dwarf)
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { DWARF },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["qg"] = 29087,	-- Bishop Lazaril
 						["sourceQuest"] = 12753,	-- A Desperate Alliance
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12809, {	-- Ironforge (Gnome)
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { GNOME },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["qg"] = 29087,	-- Bishop Lazaril
 						["sourceQuest"] = 12808,	-- A Desperate Alliance
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12785, {	-- Orgrimmar (Troll)
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { TROLL },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["qg"] = 28318,	-- Grand Apothecary Putress
 						["sourceQuest"] = 12783,	-- Desperate Research
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12812, {	-- Orgrimmar (Orc)
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { ORC },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["qg"] = 28318,	-- Grand Apothecary Putress
 						["sourceQuest"] = 12811,	-- Desperate Research
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12788, {	-- Silvermoon
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { BLOODELF },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["qg"] = 28318,	-- Grand Apothecary Putress
 						["sourceQuest"] = 12782,	-- Desperate Research
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12774, {	-- Stormwind
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { HUMAN },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["qg"] = 29087,	-- Bishop Lazaril
 						["sourceQuest"] = 12775,	-- A Desperate Alliance
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12776, {	-- The Exodar
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { DRAENEI },
-						["provider"] = { "n", 29087 },	-- Bishop Lazaril
+						["qg"] = 29087,	-- Bishop Lazaril
 						["sourceQuest"] = 12777,	-- A Desperate Alliance
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12787, {	-- The Undercity
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { UNDEAD },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["qg"] = 28318,	-- Grand Apothecary Putress
 						["sourceQuest"] = 12752,	-- Desperate Research
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, q(12786, {	-- Thunder Bluff
 						["timeline"] = { "added 3.0.2", "removed 3.1.0" },
 						["races"] = { TAUREN },
-						["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+						["qg"] = 28318,	-- Grand Apothecary Putress
 						["sourceQuest"] = 12784,	-- Desperate Research
 					})),
 				}),
