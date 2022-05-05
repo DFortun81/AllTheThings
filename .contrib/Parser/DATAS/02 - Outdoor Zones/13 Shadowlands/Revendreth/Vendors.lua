@@ -121,16 +121,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", 163036, 250 } },
 					}),
 					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
-						["recipeID"] = 308403,
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183099, {	-- Design: Revitalizing Jewel Doublet
-						["recipeID"] = 311870,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183102, {	-- Technique: Contract: Court of Harvesters
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311412,
 					}),
 					i(183245, {	-- Memory of Norgannon
 						["cost"] = 11000000, -- 1,100g

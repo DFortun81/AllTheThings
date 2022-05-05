@@ -57,10 +57,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189985),	-- Curtain of Untold Realms
 					i(189999),	-- Dark Sky Gavel
 					i(189930),	-- Restraints of Boundless Chaos
-					i(187837, {	-- Schematic: Erratic Genesis Matrix (RECIPE!)
-						["recipeID"] = 360126,	-- Erratic Genesis Matrix
-						["requireSkill"] = ENGINEERING,
-					}),
+					i(187837),	-- Schematic: Erratic Genesis Matrix (RECIPE!)
 				},
 			}),
 			n(184409, {	-- Euv'ouk
@@ -87,10 +84,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189936),	-- Feasting's Feeding Cloak
 					i(189969),	-- Vespoid's Clanging Legguards
 					i(189970),	-- Visor of Visceral Cravings
-					i(187848, {	-- Recipe: Sustaining Armor Polish (RECIPE!)
-						["recipeID"] = 360318,
-						["requireSkill"] = ALCHEMY,
-					}),
+					i(187848),	-- Recipe: Sustaining Armor Polish (RECIPE!)
 				},
 			}),
 			n(183646, {	-- Furidian
@@ -119,10 +113,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189951),	-- Sunbathed Avian Armor
 					i(190602),	-- Symbol of the Raptora
 					i(190057),	-- Protective Raptora's Wing-Glaive
-					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
-						["recipeID"] = 360088,
-						["requireSkill"] = ENGINEERING,
-					}),
+					i(187832),	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
 				},
 			}),
 			n(182318, {	-- General Zarathura <Army of the Endless>
@@ -407,10 +398,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189916),	-- Mutated Devourer's Harness
 					i(189941),	-- Voracious Diadem
 					i(189972),	-- Scorpid Soul (SOUL!)
-					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
-						["recipeID"] = 360317,	-- Devourer Essence Stone
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					i(187847),	-- Design: Devourer Essence Stone (RECIPE!)
 				},
 			}),
 			n(183722, {	-- Sorranos <Vombata Prime>
@@ -424,10 +412,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189962),	-- Sorrano's Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
 					i(190582),	-- Symbol of the Vombata
-					i(187826, {	-- Formula: Cosmic Protoweave (RECIPE!)
-						["recipeID"] = 360013,	-- Cosmic Protoweave
-						["requireSkill"] = ENCHANTING,
-					}),
+					i(187826),	-- Formula: Cosmic Protoweave (RECIPE!)
 				},
 			}),
 			n(183925, {	-- Tahkwitz
@@ -442,10 +427,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190003),	-- Skyward Savior's Talon
 					i(189915),	-- Tahkwitz' Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
-					i(187832, {	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
-						["recipeID"] = 360088,
-						["requireSkill"] = ENGINEERING,
-					}),
+					i(187832),	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
 				},
 			}),
 			n(181249, {	-- Tethos
@@ -459,10 +441,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190055),	-- Coalescing Energy Implement
 					i(189967),	-- Hood of Star Topology
 					i(189966),	-- Singing Metal Wristbands
-					i(187830, {	-- Design: Aealic Harmonizing Stone (RECIPE!)
-						["recipeID"] = 360016,	-- Aealic Harmonizing Stone
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					i(187830),	-- Design: Aealic Harmonizing Stone (RECIPE!)
 				},
 			}),
 			n(183516, {	-- The Engulfer
@@ -478,10 +457,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
 					i(190730),	-- Matriarch's Shell Band
-					i(187847, {	-- Design: Devourer Essence Stone (RECIPE!)
-						["recipeID"] = 360317,	-- Devourer Essence Stone
-						["requireSkill"] = JEWELCRAFTING,
-					}),
+					i(187847),	-- Design: Devourer Essence Stone (RECIPE!)
 				},
 			}),
 			n(181360, {	-- Vexis <Lupine Prime>
@@ -527,10 +503,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(190052),	-- Xy'rath's Letter Opener
 					i(190007),	-- Xy'rath's Signature Saber
-					i(187828, {	-- Recipe: Infusion: Corpse Purification (RECIPE!)
-						["recipeID"] = 360014,
-						["requireSkill"] = ALCHEMY,
-					}),
+					i(187828),	-- Recipe: Infusion: Corpse Purification (RECIPE!)
 				},
 			}),
 			n(183764, {	-- Zatojin <Vespoid Prime>
@@ -545,10 +518,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190726),	-- Extract of Prodigious Sands
 					i(189902),	-- Hapless Traveler's Treads
 					i(189939),	-- Zatojin's Paralytic Grip
-					i(187848, {	-- Recipe: Sustaining Armor Polish (RECIPE!)
-						["recipeID"] = 360318,
-						["requireSkill"] = ALCHEMY,
-					}),
+					i(187848),	-- Recipe: Sustaining Armor Polish (RECIPE!)
 				},
 			}),
 		})),

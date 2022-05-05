@@ -37,7 +37,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			i(180781, {	-- Pattern: Pink Party Hat
-				["recipeID"] = 334499,
 				["crs"] = {
 					172389,	-- Acrid Runoff
 					165014,	-- Animated Plague
@@ -128,7 +127,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["timeline"] = {"added 9.1.0"}
 			}),
 			i(186995, {	-- Pattern: Shrouded Hand Towel
-				["recipeID"] = 355183,
 				["timeline"] = {"added 9.1.0"}
 			}),
 		}),

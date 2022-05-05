@@ -13,17 +13,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)
 					i(183094, {	-- Plans: Shadowsteel Helm
-						["recipeID"] = 322590,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183097, {	-- Schematic: PHA7-YNX
-						["recipeID"] = 331007,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183098, {	-- Technique: Codex of the Still Mind
-						["recipeID"] = 311424,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183103, {	-- Technique: Contract: The Ascended
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311409,
 					}),
 					i(183243, {	-- Memory of the Arbiter's Judgment
 						["cost"] = 11000000, -- 1,100g

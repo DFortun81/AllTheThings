@@ -117,7 +117,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				--	Whites
 					i(186991, {	-- Transmute: Stones to Ore
-						["recipeID"] = 307144,
 						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 					}),
 					i(184665, {	-- Chronicle of Lost Memories
@@ -531,7 +530,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					}),
 				--	Greens
 					i(186724, {	-- Technique: Contract: Death's Advance
-						["recipeID"] = 354000,
 						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
 					}),
 				},

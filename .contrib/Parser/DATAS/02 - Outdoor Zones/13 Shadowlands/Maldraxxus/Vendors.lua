@@ -46,20 +46,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 					}),
 					i(183101, {	-- Pattern: Shadowlace Cloak
-						["recipeID"] = 310898,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183095, {	-- Plans: Shadowsteel Pauldrons
-						["recipeID"] = 322593,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
-						["recipeID"] = 310535,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183104, {	-- Technique: Contract: The Undying Army
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311411,
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves
 					i(184738),	-- Chainmail of the March Warden

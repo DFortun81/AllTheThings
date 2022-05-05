@@ -561,8 +561,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							["cost"] = { { "c", CYPHER, 1000 }, },
 						}),
 						i(187824, {	-- Formula: Magically Regulated Automa Core (RECIPE!)
-							["recipeID"] = 360007,	-- Magically Regulated Automa Core
-							["requireSkill"] = ENCHANTING,
 							["cost"] = { { "c", CYPHER, 25 }, },
 						}),
 						i(190333, {	-- Jiro Circle of Song (TOY!)
@@ -631,8 +629,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
 						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
-							["recipeID"] = 359333,	-- Empty Kettle of Stone Soup
-							["requireSkill"] = COOKING,
 							["cost"] = { { "c", CYPHER, 25 }, },
 						}),
 					},

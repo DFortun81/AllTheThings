@@ -680,6 +680,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 62.1, 74.9, ZERETH_MORTIS },
 					{ 63.9, 72.3, ZERETH_MORTIS },
 					{ 67.5, 40.3, ZERETH_MORTIS },
+					{ 70.0, 34.2, ZERETH_MORTIS },
 					-- Locrian Esper
 					{ 50.2, 76.4, 2028 },
 					{ 79.2, 74.8, 2028 },

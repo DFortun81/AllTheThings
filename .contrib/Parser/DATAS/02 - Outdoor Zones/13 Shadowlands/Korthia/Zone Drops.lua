@@ -127,7 +127,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 		-- Patterns
 			i(186995, {	-- Pattern: Shrouded Hand Towel
-				["recipeID"] = 355183,
 				["crs"] = {	-- probably drops from many more (or any mawsworn); this is a mob specific to the Wild Worldcracker event
 					180030,	-- Opportunistic Corruptor
 				},

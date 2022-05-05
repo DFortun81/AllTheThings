@@ -210,8 +210,6 @@ _.ExpansionFeatures =
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-								["recipeID"] = 367393,
-								["requireSkill"] = INSCRIPTION,
 								["timeline"] = { "added 9.2.0" },
 							}),
 						},
@@ -265,8 +263,6 @@ _.ExpansionFeatures =
 							i(187880),	-- Goat Soul
 							i(187862),	-- Snake Soul
 							i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-								["recipeID"] = 367393,
-								["requireSkill"] = INSCRIPTION,
 								["timeline"] = { "added 9.2.0" },
 							}),
 						},

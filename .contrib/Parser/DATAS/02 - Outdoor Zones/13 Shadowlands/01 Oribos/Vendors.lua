@@ -28,17 +28,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)
 					i(183094, {	-- Plans: Shadowsteel Helm
-						["recipeID"] = 322590,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183097, {	-- Schematic: PHA7-YNX
-						["recipeID"] = 331007,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183098, {	-- Technique: Codex of the Still Mind
-						["recipeID"] = 311424,
+						-- ["cost"] = , -- TODO:
 					}),
 					i(183103, {	-- Technique: Contract: The Ascended
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311409,
 					}),
 					i(183243, {	-- Memory of the Arbiter's Judgment
 						["cost"] = 11000000, -- 1,100g
@@ -85,7 +84,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "c", 1816, 500 } },
 					}),
 					i(182660, {	-- Recipe: Shadestone
-						["recipeID"] = 307143,
 						["cost"] = { { "c", 1816, 35 } },
 					}),
 					i(184219, {	-- Treatise on Sinstone Fragment Acquisition
@@ -203,20 +201,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 					}),
 					i(183101, {	-- Pattern: Shadowlace Cloak
-						["recipeID"] = 310898,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183095, {	-- Plans: Shadowsteel Pauldrons
-						["recipeID"] = 322593,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
-						["recipeID"] = 310535,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183104, {	-- Technique: Contract: The Undying Army
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311411,
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves
 					i(184738),	-- Chainmail of the March Warden
@@ -266,16 +260,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["cost"] = { { "i", 163036, 250 } },
 					}),
 					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
-						["recipeID"] = 308403,
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183099, {	-- Design: Revitalizing Jewel Doublet
-						["recipeID"] = 311870,
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183102, {	-- Technique: Contract: Court of Harvesters
 						["cost"] = 17650000, -- 1,765g
-						["recipeID"] = 311412,
 					}),
 					i(183245, {	-- Memory of Norgannon
 						["cost"] = 11000000, -- 1,100g
