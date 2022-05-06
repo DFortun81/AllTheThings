@@ -919,6 +919,8 @@ namespace ATT
                     Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
             }
 
+
+            // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
             if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
@@ -927,7 +929,7 @@ namespace ATT
                 }
                 else
                 {
-                    switch (Convert.ToInt64(requiredSkill))
+                    switch (requiredSkill)
                     {
                         // https://www.wowhead.com/skill=
                         case 40:    // Rogue Poisons
@@ -954,6 +956,7 @@ namespace ATT
                 }
 
                 // if this data has a recipeID, cache the information
+                // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
                 if (data.TryGetValue("recipeID", out long recipeID))
                 {
                     Items.TryGetName(data, out string recipeName);
@@ -1005,6 +1008,8 @@ namespace ATT
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
+
+            CheckRequireSkill(data);
 
             CheckHeirloom(data);
 
@@ -1170,6 +1175,7 @@ namespace ATT
 
         /// <summary>
         /// Attempts to find the recipe ID in the already parsed data which corresponds to this item.... by name
+        /// TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
         /// </summary>
         /// <param name="data"></param>
         private static void TryFindRecipeID(Dictionary<string, object> data)
@@ -1194,6 +1200,42 @@ namespace ATT
                     // this can always be reported because it should always be actual, available in-game recipes which have no associated RecipeID
                     Items.TryGetName(data, out string name);
                     Trace.WriteLine($"Failed to find RecipeID for '{name}' with data: {MiniJSON.Json.Serialize(data)}");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Converts the Specific 'requireSkill' field of the data to the General 'requireSkill'
+        /// </summary>
+        /// <param name="data"></param>
+        private static void CheckRequireSkill(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("requireSkill", out long requiredSkill))
+            {
+                if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
+                {
+                    data["requireSkill"] = newRequiredSkill;
+                }
+                else
+                {
+                    switch (requiredSkill)
+                    {
+                        // https://www.wowhead.com/skill=
+                        case 40:    // Rogue Poisons
+                        case 149:   // Wolf Riding
+                        case 150:   // Tiger Riding
+                        case 762:   // Riding
+                        case 849:   // Warlock
+                        case 0: // Explicitly ignoring.
+                                // Ignore! (and remove!)
+                            data.Remove("requireSkill");
+                            break;
+                        default:
+                            Trace.Write("Missing Skill ID in Conversion Table: ");
+                            Trace.WriteLine(requiredSkill);
+                            Trace.WriteLine(ToJSON(data));
+                            break;
+                    }
                 }
             }
         }
