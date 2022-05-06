@@ -102,6 +102,9 @@ i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun
 -- SHD
 i(187007, 354766); -- Recipe: Bonemeal Bread
 i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup
+i(184625, 347176); -- Recipe: Extra Sugary Fish Feast
+i(184683, 347457); -- Recipe: Extra Lemony Herb Filet
+i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast
 i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism
 i(187008, 354768); -- Recipe: Porous Rock Candy
 i(187006, 354764); -- Recipe: Twilight Tea

@@ -1792,6 +1792,7 @@ end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
 	--root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	print("Don't use profession(). It's pointless now that it no longer applies the 'requireSkill' to its content. It will be removed soon.")
 	root("Professions", p);
 	return p;
 end

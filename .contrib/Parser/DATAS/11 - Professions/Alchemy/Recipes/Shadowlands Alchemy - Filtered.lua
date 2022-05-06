@@ -1,4 +1,6 @@
-profession(ALCHEMY, {
+
+-- Temporary filtering/sourcing until Profession > Recipes are made Dynamic
+root(ROOTS.Professions, bubbleDown({["requireSkill"] = ALCHEMY}, prof(ALCHEMY, {
 	filter(RECIPES, {
 		{
 			["categoryID"] = 1294,	-- Shadowlands Alchemy
@@ -131,9 +133,9 @@ profession(ALCHEMY, {
 			}
 		},
 	}),
-});
+})));
 
-root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(SL_TIER, {
 		prof(ALCHEMY, {
 			i(183868),	-- Recipe: Crafter's Mark III (was in beta but not live, possibly added in future?)

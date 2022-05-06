@@ -1,4 +1,6 @@
-profession(ALCHEMY, {
+
+-- Temporary filtering/sourcing until Profession > Recipes are made Dynamic
+root(ROOTS.Professions, bubbleDown({["requireSkill"] = ALCHEMY}, prof(ALCHEMY, {
 	filter(RECIPES, {
 		{
 			["categoryID"] = 1250,	-- training recipes
@@ -108,4 +110,4 @@ profession(ALCHEMY, {
 			}
 		}
 	}),
-});
+})));
