@@ -1,4 +1,5 @@
-profession(633, {	-- Lockpicking
+
+root(ROOTS.Professions, prof(LOCKPICKING, {
 	-- #if AFTER CATA
 	["description"] = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
 	-- #else
@@ -35,7 +36,7 @@ profession(633, {	-- Lockpicking
 						170119,	-- Slithershell Warglaive
 						170117,	-- Wavebinder's Rod
 						170112,	-- Wavecrash Polearm
-						
+
 						-- Armor
 						169400,	-- Deeptide Cover
 						169435,	-- Deeptide Drape
@@ -46,7 +47,7 @@ profession(633, {	-- Lockpicking
 						169403,	-- Deeptide Cinch
 						169401,	-- Deeptide Legwraps
 						169398,	-- Deeptide Slippers
-						
+
 						169416,	-- Reefwalker Coif
 						169431,	-- Reefwalker Cape
 						169418,	-- Reefwalker Monnion
@@ -56,7 +57,7 @@ profession(633, {	-- Lockpicking
 						169419,	-- Reefwalker Chain
 						169417,	-- Reefwalker Trousers
 						169414,	-- Reefwalker Striders
-						
+
 						169408,	-- Slithershell Tricorne
 						169434,	-- Slithershell Cloak
 						169410,	-- Slithershell Mantle
@@ -66,7 +67,7 @@ profession(633, {	-- Lockpicking
 						169411,	-- Slithershell Belt
 						169409,	-- Slithershell Leggings
 						169406,	-- Slithershell Boots
-						
+
 						169424,	-- Wavecrash Headguard
 						169433,	-- Wavecrash Greatcloak
 						169427,	-- Wavecrash Shoulderplates
@@ -208,27 +209,27 @@ profession(633, {	-- Lockpicking
 						186141,	-- Mawsworn Scout's Quickshot Bow
 						186146,	-- Mawsworn Sentry's Cudgel
 						186148,	-- Mawsworn Vanquisher's Spire
-						
+
 						-- Armor
 						186116,	-- Mawsworn Assassin's Hood
 						186137,	-- Mawsworn Assassin's Shoulderpads
 						186119,	-- Mawsworn Assassin's Bracers
 						186114,	-- Mawsworn Assassin's Boots
-						
+
 						186110,	-- Mawsworn Darkcaster's Crest
 						186107,	-- Mawsworn Darkcaster's Robes
 						186109,	-- Mawsworn Darkcaster's Handwraps
 						186112,	-- Mawsworn Darkcaster's Cinch
-						
+
 						186128,	-- Mawsworn Guard's Helm
 						186129,	-- Mawsworn Guard's Breastplate
 						186132,	-- Mawsworn Guard's Legguards
-						
+
 						186120,	-- Mawsworn Scout's Chainmail
 						186126,	-- Mawsworn Scout's Cincture
-						
+
 						186152,	-- Mawsworn Lieutenant's Cloak
-						
+
 						-- Accessories
 						186145,	-- Stygian Thorn Loop
 					}},
@@ -375,7 +376,7 @@ profession(633, {	-- Lockpicking
 					["timeline"] = { "added 9.0.1.36216" },
 				}),
 				i(5759, {	-- Thorium Lockbox
-					
+
 				}),
 				i(116920, {	-- True Steel Lockbox
 					["timeline"] = { "added 6.0.1.18594" },
@@ -506,4 +507,4 @@ profession(633, {	-- Lockpicking
 			},
 		}),
 	}
-});
+}));

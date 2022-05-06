@@ -977,6 +977,7 @@ INSCRIPTION = 773;
 JEWELCRAFTING = 755;
 JUNKYARD_TINKERING = 2720;
 LEATHERWORKING = 165;
+LOCKPICKING = 633;
 MINING = 186;
 PROTOFORM_SYNTHESIS = 2819;
 SKINNING = 393;
@@ -1791,9 +1792,12 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 end
 profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: Only use in the Profession Folder.)
 	local p = prof(skillID, t);
-	--root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
-	print("Don't use profession(). It's pointless now that it no longer applies the 'requireSkill' to its content. It will be removed soon.")
-	root("Professions", p);
+	-- TODO: the bubbleDown remains necessary until another solution (similar to ItemRecipes.lua ??) is designed
+	-- to apply the proper requireSkill value where necessary on Sourced data. Removing the bubbleDown will cause Sourced profession content to no longer
+	-- be associated to the required Profession!
+	root(ROOTS.Professions, bubbleDown({ ["requireSkill"] = skillID }, p));
+	-- print("Don't use profession(). It's pointless now that it no longer applies the 'requireSkill' to its content. It will be removed soon.")
+	-- root("Professions", p);
 	return p;
 end
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
