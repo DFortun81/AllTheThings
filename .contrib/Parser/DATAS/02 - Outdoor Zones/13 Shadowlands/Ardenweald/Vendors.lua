@@ -29,17 +29,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(183093, {	-- Technique: Contract: The Wild Hunt
 						["cost"] = 17650000,	-- 1,765g
-						["recipeID"] = 311410,
 					}),
 					i(183096, {	-- Formula: Sacred Shard
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
-						["recipeID"] = 324088,
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183106, {	-- Recipe: Eternal Cauldron
-						["recipeID"] = 307087,
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183134, {	-- Illusion: Hunt's Favor
@@ -73,9 +70,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(172634, {	-- Brightgleam
 				["coord"] = { 33.2, 51.6, ARDENWEALD },
 				["g"] = {
-					i(180782, {	-- Technique: Fae Revel Masque
-						["recipeID"] = 334537,
-					}),
+					i(180782),	-- Technique: Fae Revel Masque
 				},
 			}),
 			n(165341, {	-- Droman Dawnblossom

@@ -1,4 +1,6 @@
-profession(INSCRIPTION, {
+
+-- Temporary filtering/sourcing until Profession > Recipes are made Dynamic
+root(ROOTS.Professions, bubbleDown({["requireSkill"] = INSCRIPTION}, prof(INSCRIPTION, {
 	filter(RECIPES, {
 	-- Reviewed and updated as of 11.22.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Legion Inscription
@@ -496,4 +498,4 @@ profession(INSCRIPTION, {
 			},
 		},
 	}),
-});
+})));

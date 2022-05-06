@@ -51,6 +51,7 @@ i(3832, 3453); -- Recipe: Elixir of Detect Lesser Invisibility
 -- BFA
 -- SHD
 i(186990, 354885); -- Recipe: Blossom Burst
+i(183106, 307087); -- Recipe: Eternal Cauldron
 i(186988, 354881); -- Recipe: Glory Burst
 i(187828, 360014); -- Recipe: Infusion: Corpse Purification
 i(186989, 354880); -- Recipe: Marrow Burst
@@ -121,6 +122,7 @@ ProfessionID = ENCHANTING;
 -- LEG
 -- BFA
 -- SHD
+i(186992, 355184); -- Formula: Anima-ted Leash
 i(187826, 360013); -- Formula: Cosmic Protoweave
 i(187824, 360007); -- Formula: Magically Regulated Automa Core
 
@@ -185,8 +187,12 @@ i(186724, 354000); -- Technique: Contract: Death's Advance
 i(183103, 311409); -- Technique: Contract: The Ascended
 i(187797, 359786); -- Technique: Contract: The Enlightened
 i(183104, 311411); -- Technique: Contract: The Undying Army
+i(183093, 311410); -- Technique: Contract: The Wild Hunt
+i(180782, 334537); -- Technique: Fae Revel Masque
 i(190379, 367389); -- Technique: Glyph of the Spectral Lupine
 i(190381, 367393); -- Technique: Glyph of the Spectral Vulpine
+i(173068, 311453); -- Vantus Rune Technique: Castle Nathria
+i(186671, 354394); -- Vantus Rune Technique: Sanctum of Domination
 i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
 
 -----------------
@@ -225,7 +231,9 @@ ProfessionID = LEATHERWORKING;
 -- LEG
 -- BFA
 -- SHD
+i(187000, 355354); -- Pattern: Elusive Pet Treat
 i(183839, 308897); -- Pattern: Heavy Callous Hide
+i(183100, 324088); -- Pattern: Heavy Desolate Armor Kit
 i(186999, 354800); -- Pattern: Pallid Bone Flute
 
 -----------------

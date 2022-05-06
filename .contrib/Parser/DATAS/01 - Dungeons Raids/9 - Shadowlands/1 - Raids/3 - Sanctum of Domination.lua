@@ -19,7 +19,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				i(186671, {	-- Vantus Rune Technique: Sanctum of Domination
-					["recipeID"] = 354394,
 					["crs"] = {
 						175611,	-- The Tarragrue
 						175725,	-- Eye of the Jailer
