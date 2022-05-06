@@ -646,18 +646,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			-- Repeatable chests Without QuestID
 			o(375362, {	-- Avian Nest
 				["coords"] = {
+					{ 40.5, 56.6, ZERETH_MORTIS },
+					{ 40.6, 59.7, ZERETH_MORTIS },
 					{ 51.1, 64.5, ZERETH_MORTIS },
 					{ 54.5, 58.8, ZERETH_MORTIS },
 					{ 54.8, 58.3, ZERETH_MORTIS },
 					{ 48.2, 66.5, ZERETH_MORTIS },
 					{ 48.2, 42.8, ZERETH_MORTIS },
 					{ 48.4, 59.5, ZERETH_MORTIS },
+					{ 66.0, 42.8, ZERETH_MORTIS },
 					{ 68.5, 36.1, ZERETH_MORTIS },
 					{ 62, 42, ZERETH_MORTIS },
 					{ 60.3, 71.6, ZERETH_MORTIS },
 					{ 59.1, 64.7, ZERETH_MORTIS },
 					{ 60.3, 71.7, ZERETH_MORTIS },
-					{ 40.5, 56.6, ZERETH_MORTIS },
 				},
 				["g"] = {
 					i(189148),	-- Poultrid Lattice
