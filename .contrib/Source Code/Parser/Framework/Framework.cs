@@ -245,6 +245,11 @@ namespace ATT
         public static bool ProcessingSourceData = false;
 
         /// <summary>
+        /// Whether the Parser is processing Merge data which is allowed to Merge certain fields to be shared among all Sources of a Thing
+        /// </summary>
+        public static bool ProcessingMergeData = false;
+
+        /// <summary>
         /// Represents whether we are currently processing the main Achievements Category
         /// </summary>
         private static bool ProcessingAchievementCategory { get; set; }
@@ -383,7 +388,8 @@ namespace ATT
             }
             else
             {
-                DataConsolidation(data);
+                if (!DataConsolidation(data))
+                    return false;
             }
 
             // If this container has groups, then process those groups as well.
@@ -556,111 +562,6 @@ namespace ATT
                 {
                     if (sources.TryGetValue("mainHand", out long s))
                         data["s"] = s;
-                }
-            }
-
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
-            {
-                // 2.0.1 or older items.
-                int removed = 0;
-                var index = 0;
-                long firstVersion = 0;
-                long lastVersion = 0;
-                long removedPatch = 0;
-                foreach (var entry in timeline)
-                {
-                    var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion();
-                    if (version > lastVersion) lastVersion = version;
-                    switch (commandSplit[0])
-                    {
-                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
-                        case "created":
-                            {
-                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
-                                else removed = 1;
-                                break;
-                            }
-                        case "added":
-                            {
-                                // If this is the first patch the thing was added.
-                                if (index == 0)
-                                {
-                                    firstVersion = version;
-                                    if (CURRENT_RELEASE_VERSION < version)
-                                    {
-                                        return false;    // Invalid
-                                    }
-                                    else removed = 0;
-                                }
-                                else
-                                {
-                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
-                                }
-                                break;
-                            }
-                        case "deleted":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
-                                }
-                                break;
-                            }
-                        case "removed":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
-                                }
-                                break;
-                            }
-                        case "blackmarket":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
-                                break;
-                            }
-                        case "timewalking":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
-                                break;
-                            }
-                    }
-                    ++index;
-                }
-
-                // final removed type for the current parser patch
-                switch (removed)
-                {
-                    // Never Implemented
-                    case 1:
-                    // Never Implemented (after already being available previously)
-                    case 4:
-                        data["u"] = 1;
-                        break;
-                    // Black Market
-                    case 3:
-                        data["u"] = 9;
-                        break;
-                    // Timewalking re-implemented
-                    case 5:
-                        data["u"] = 1016;
-                        break;
-                    // Future Unobtainable
-                    case 6:
-                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
-                        break;
-                    // Removed From Game
-                    case 2:
-                        data["u"] = 2;
-                        break;
                 }
             }
 
@@ -999,11 +900,15 @@ namespace ATT
         /// * Consolidation of dictionary information into sourced data
         /// </summary>
         /// <param name="data"></param>
-        private static void DataConsolidation(Dictionary<string, object> data)
+        private static bool DataConsolidation(Dictionary<string, object> data)
         {
             // Merge all relevant dictionary info into the data
             Items.MergeInto(data);
             Objects.MergeInto(data);
+
+            // verify the timeline data of Merged data (can prevent keeping the data in the data container)
+            if (!CheckTimeline(data))
+                return false;
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -1028,6 +933,118 @@ namespace ATT
             // clean up any metadata tags
             foreach (string key in data.Keys.Where(k => k.StartsWith("_")).ToArray())
                 data.Remove(key);
+
+            return true;
+        }
+
+        private static bool CheckTimeline(Dictionary<string, object> data)
+        {
+            // Check to see what patch this data was made relevant for.
+            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
+            {
+                // 2.0.1 or older items.
+                int removed = 0;
+                var index = 0;
+                long firstVersion = 0;
+                long lastVersion = 0;
+                long removedPatch = 0;
+                foreach (var entry in timeline)
+                {
+                    var commandSplit = Convert.ToString(entry).Split(' ');
+                    var version = commandSplit[1].Split('.').ConvertVersion();
+                    if (version > lastVersion) lastVersion = version;
+                    switch (commandSplit[0])
+                    {
+                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
+                        case "created":
+                            {
+                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
+                                else removed = 1;
+                                break;
+                            }
+                        case "added":
+                            {
+                                // If this is the first patch the thing was added.
+                                if (index == 0)
+                                {
+                                    firstVersion = version;
+                                    if (CURRENT_RELEASE_VERSION < version)
+                                    {
+                                        return false;    // Invalid
+                                    }
+                                    else removed = 0;
+                                }
+                                else
+                                {
+                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
+                                }
+                                break;
+                            }
+                        case "deleted":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
+                                break;
+                            }
+                        case "removed":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
+                                break;
+                            }
+                        case "blackmarket":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
+                                break;
+                            }
+                        case "timewalking":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                break;
+                            }
+                    }
+                    ++index;
+                }
+
+                // final removed type for the current parser patch
+                switch (removed)
+                {
+                    // Never Implemented
+                    case 1:
+                    // Never Implemented (after already being available previously)
+                    case 4:
+                        data["u"] = 1;
+                        break;
+                    // Black Market
+                    case 3:
+                        data["u"] = 9;
+                        break;
+                    // Timewalking re-implemented
+                    case 5:
+                        data["u"] = 1016;
+                        break;
+                    // Future Unobtainable
+                    case 6:
+                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
+                        break;
+                    // Removed From Game
+                    case 2:
+                        data["u"] = 2;
+                        break;
+                }
+            }
+
+            return true;
         }
 
         private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
@@ -2611,6 +2628,7 @@ namespace ATT
                             // This is slightly more annoying to parse, but it works okay.
                             if (pair.Value is Dictionary<long, object> itemDB)
                             {
+                                ProcessingMergeData = true;
                                 foreach (var itemValuePair in itemDB)
                                 {
                                     if (itemValuePair.Value is Dictionary<string, object> item)
@@ -2625,6 +2643,7 @@ namespace ATT
                                         Console.ReadLine();
                                     }
                                 }
+                                ProcessingMergeData = false;
                             }
                             else if (pair.Value is List<object> items)
                             {
