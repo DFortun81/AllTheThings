@@ -1955,4 +1955,7 @@ root("HiddenQuestTriggers", {
 		q(33824),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #2
 		q(33825),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #3
 	}),
+	tier(LEGION_TIER, {
+		q(41805),	-- Key of Kalyndras tracking quest
+	})
 });
