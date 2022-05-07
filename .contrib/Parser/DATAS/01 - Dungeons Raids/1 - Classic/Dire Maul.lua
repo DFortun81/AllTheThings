@@ -1307,6 +1307,9 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					o(179501, -- Knot Thimblejack's Cache
 						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
+						-- #if BEFORE 4.0.3
+						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
+						-- #endif
 						["groups"] = {
 							i(18414),	-- Pattern: Belt of the Archmage
 							i(18517),	-- Pattern: Chromatic Cloak
