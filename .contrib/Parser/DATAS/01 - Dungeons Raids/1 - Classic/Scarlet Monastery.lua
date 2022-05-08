@@ -388,7 +388,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								["qg"] = 3978,	-- Sage Truthseeker
 								["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
 								["timeline"] = { "removed 4.0.3" },
-								["races"] = { ORC, TAUREN, TROLL },
+								["races"] = exclude(UNDEAD, HORDE_ONLY),
 								["lvl"] = 28,
 								["groups"] = {
 									objective(1, {	-- 0/1 Compendium of the Fallen
