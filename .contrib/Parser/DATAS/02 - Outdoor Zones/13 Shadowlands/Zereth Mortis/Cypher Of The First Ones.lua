@@ -453,6 +453,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 						["g"] = {
 							i(187527),	-- Aeon Matrix
+							i(187788, {	-- Aetheric Lattice
+								["coords"] = {
+									{ 53.0, 29.1, ZERETH_MORTIS },
+								},
+							}),
 							i(187891, {	-- Empyrean Essence
 								["coords"] = {
 									{ 44.8, 76.5, ZERETH_MORTIS },

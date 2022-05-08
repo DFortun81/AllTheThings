@@ -752,8 +752,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			o(375366, {	-- Tarachnid Eggs
 				["coords"] = {
 					{ 61.4, 38.3, ZERETH_MORTIS },
-					{ 56.3, 27.3, ZERETH_MORTIS },
 					{ 53.6, 35.9, ZERETH_MORTIS },
+					{ 55.3, 32.9, ZERETH_MORTIS },
+					{ 56.3, 27.3, ZERETH_MORTIS },
 				},
 				["g"] = {
 					i(189158),	-- Glimmer of Cunning
