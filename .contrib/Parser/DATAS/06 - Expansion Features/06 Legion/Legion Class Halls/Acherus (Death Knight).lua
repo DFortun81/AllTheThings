@@ -5,357 +5,537 @@
 root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
 		cl(DEATHKNIGHT, bubbleDownSelf({ ["classes"] = { DEATHKNIGHT } }, {
-			["maps"] = { ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+			["maps"] = { ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },	-- Uppstairs/Down
 			["g"] = {
+				n(ARTIFACTS, {
+					cl(DEATHKNIGHT, BLOOD, {
+						i(139546, {	-- Twisting Anima of Souls
+							artifact(921),	-- Maw of the Damned
+						}),
+					}),
+					cl(DEATHKNIGHT, FROST, {
+						i(139547, {	-- Runes of the Darkening
+							artifact(870),	-- Blades of the Fallen Prince [Main Hand]
+							artifact(870),	-- Blades of the Fallen Prince [Off Hand]
+						}),
+					}),
+					cl(DEATHKNIGHT, UNHOLY, {
+						n(111093, {	-- Stitchwork
+							["questID"] = 44188,	-- Hidden Tracking
+							["maps"] = { ICECROWN_CITADEL, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
+							["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
+							["g"] = {
+								i(139548, {	-- The Bonereaper's Hook
+									artifact(404),	-- Apocalypse
+								}),
+							},
+						}),
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1862),
 				}),
 				n(QUESTS, {
-					q(40933, {	-- A Grisly Task
-						["provider"] = { "n", 100729 },	-- Revil Kost
-						["coord"] = { 52.3, 34.5, DEADWIND_PASS },
-						["sourceQuest"] = 40932,	-- Disturbing the Past
+					q(40714, {	-- The Call To War
+						["maps"] = { LEGION_DALARAN },
 					}),
-					q(43407, {	-- A Hero's Weapon
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 56.9, 58.5, 647 },
-						["sourceQuest"] = 44248, -- Champion: Darion Mograine
-						["g"] = {
-							spell(219663), -- Heroic Weapons (Artifact Appearances)
-						},
-					}),
+					-- Artifact
 					q(40715, {	-- A Pact of Necessity
 						["sourceQuests"] = { 40714 },	-- The Call to War
 						["provider"] = { "n", 101441 },	-- Duke Lankral
+						["coord"] = { 72.8, 46.8, LEGION_DALARAN },
 					}),
-					q(42708, {	-- A Personal Request
-						["provider"] = { "n", 93456 }, -- Thassarian
-						["coord"] = { 56.0, 30.7, 648 },
-						["sourceQuest"] = 42537, -- The King Rises
-					}),
-					q(44690, {	-- A Thirst For Blood
-						["provider"] = { "n", 93491 }, -- Lord Thorval
-						["coord"] = { 63.1, 69.4, 647 },
-						["sourceQuest"] = 43573, -- Advancing the War Effort
+					q(43962, {	-- Blades of Destiny
+						["sourceQuest"] = 40715,	-- A Pact of Necessity
+						["provider"] = { "n", 109788 }, -- Duke Lankral
+						["coord"] = { 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 					}),
 					q(44401, {	-- A Weapon For Every Occasion
-						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["sourceQuest"] = 43962, -- Blades of Destiny
+						["provider"] = { "n", 109788 }, -- Duke Lankral
+						["coord"] = { 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+					}),
+					cl(DEATHKNIGHT, BLOOD, {
+						q(40740, {	-- The Dead and the Damned
+							["sourceQuests"] = {
+								40715,	-- A Pact of Necessity
+								43962,	-- Blades of Destiny
+								44401,	-- A Weapon For Every Occasion
+							},
+							["providers"] = {
+								{ "n", 101441 },	-- Duke Lankral
+								{ "n", 109788 },	-- Duke Lankral
+							},
+							["coords"] = {
+								{ 72.8, 46.8, LEGION_DALARAN },
+								{ 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+							},
+							["maps"] = { 714 },	-- Niskara (Scenario Map)
+							["g"] = {
+								i(128402, { -- Maw of the Damned
+									artifact(107),	-- Maw of the Damned
+								}),
+							},
+						}),
+					}),
+					cl(DEATHKNIGHT, FROST, {
+						q(38990, {	-- The Call of Icecrown
+							["sourceQuests"] = {
+								40715,	-- A Pact of Necessity
+								43962,	-- Blades of Destiny
+								44401,	-- A Weapon For Every Occasion
+							},
+							["providers"] = {
+								{ "n", 101441 },	-- Duke Lankral
+								{ "n", 109788 },	-- Duke Lankral
+							},
+							["coords"] = {
+								{ 72.8, 46.8, LEGION_DALARAN },
+								{ 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+							},
+							["maps"] = { 698, 700, 701 },	-- Icecrown Citadel (Scenario Map)
+							["g"] = {
+								i(128292, {	-- Blades of the Fallen Prince [Main Hand]
+									artifact(111),	-- Blades of the Fallen Prince [Main Hand]
+								}),
+								i(128293, {	-- Blades of the Fallen Prince [Off Hand]
+									artifact(111),	-- Blades of the Fallen Prince [Off Hand]
+								}),
+								i(127009),	-- Fragment of Frostmourne
+							},
+						}),
+					}),
+					cl(DEATHKNIGHT, UNHOLY, {
+						q(40930, {	-- Apocalypse
+							["sourceQuests"] = {
+								40715,	-- A Pact of Necessity
+								43962,	-- Blades of Destiny
+								44401,	-- A Weapon For Every Occasion
+							},
+							["providers"] = {
+								{ "n", 101441 },	-- Duke Lankral
+								{ "n", 109788 },	-- Duke Lankral
+							},
+							["coords"] = {
+								{ 72.8, 46.8, LEGION_DALARAN },
+								{ 58.2, 60.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+							},
+						}),
+						q(40931, {	-- Following the Curse
+							["sourceQuest"] = 40930,	-- Apocalypse
+							["provider"] = { "n", 100323 },	-- Revil Kost
+							["coord"] = { 77.4, 36.2, DUSKWOOD },
+						}),
+						q(40932, {	-- Disturbing the Past
+							["sourceQuest"] = 40931,	-- Following the Curse
+							["provider"] = { "n", 100729 },	-- Revil Kost
+							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
+						}),
+						q(40933, {	-- A Grisly Task
+							["sourceQuest"] = 40932,	-- Disturbing the Past
+							["provider"] = { "n", 100729 },	-- Revil Kost
+							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
+						}),
+						q(40934, {	-- The Dark Riders (Good)
+							["description"] = "Obtainable if you are good to Revil Kost",
+							["sourceQuest"] = 40933, -- A Grisly Task
+							["provider"] = { "n", 100812 },	-- Revil Kost
+							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
+							["g"] = {
+								i(128403, { -- Apocalypse
+									artifact(110),	-- Standard
+								}),
+							},
+						}),
+						q(40986, {	-- The Dark Riders (Bad)
+							["description"] = "Obtainable if you attack Revil Kost",
+							["sourceQuest"] = 40933, -- A Grisly Task
+							["provider"] = { "n", 100812 },	-- Revil Kost
+							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
+							["g"] = {
+								i(128403, { -- Apocalypse
+									artifact(110),	-- Standard
+								}),
+							},
+						}),
+						q(40935, {	-- The Call of Vengeance (Good)
+							["description"] = "Obtainable if you are good to Revil Kost",
+							["sourceQuest"] = 40934, -- The Dark Riders (Good)
+							["provider"] = { "n", 101282 },	-- Revil Kost
+							["coord"] = { 68.4, 27.0, DEADWIND_PASS },
+							["isBreadcrumb"] = true,
+						}),
+						q(40987, {	-- The Call of Vengeance (Bad)
+							["description"] = "Obtainable if you attack Revil Kost",
+							["sourceQuest"] = 40986, -- The Dark Riders (Bad)
+							["provider"] = { "n", 101282 },	-- Revil Kost
+							["coord"] = { 68.4, 27.0, DEADWIND_PASS },
+							["isBreadcrumb"] = true,
+						}),
+					}),
+					q(39757, {	-- Keeping Your Edge
+						["sourceQuests"] = {
+							40740,	-- The Dead and the Damned
+							38990,	-- The Call of Icecrown
+							40935,	-- The Call of Vengeance (Good)
+							40987,	-- The Call of Vengeance (Bad)
+						},
+						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
+						["coord"] = { 49.6, 52.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
 					}),
 					q(39761, {	-- Advanced Runecarving
-						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
-						["coord"] = { 60.2, 60.0, 647 },
 						["sourceQuest"] = 39757, -- Keeping Your Edge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(43573, {	-- Advancing the War Effort
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 42824, -- The Zealot Rises
-					}),
-					q(43928, {	-- Aggregates of Anguish
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 42824, -- The Zealot Rises
-					}),
-					q(46719, {	-- Amal'thazad's Message
-						["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
-						["coord"] = { 43.4, 62.7, BROKEN_SHORE },
-						["sourceQuests"] = { 46251 },	-- Shard Times
-					}),
-					q(46030, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(40930, {	-- Apocalypse [Unholy]
-						["provider"] = { "n", 109788 }, -- Duke Lankral
-						["coord"] = { 57.7, 60.5, 647 },
+						["provider"] = { "n", 97072 }, -- Grand Master Siegesmith Corvus
+						["coord"] = { 60.2, 60.0, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
 					}),
 					q(44217, {	-- Armor Fit For A Deathlord
+						["sourceQuest"] = 39761, --Advanced Runecarving
 						["provider"] = { "n", 93550 }, -- Quartermaster Ozorg
-						["coord"] = { 44.2, 37.5, 647 },
+						["coord"] = { 44.2, 37.5, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						["g"] = {
 							i(139676),	-- Deathlord's Helm
 						},
 					}),
-					q(43962, {	-- Blades of Destiny
-						["provider"] = { "n", 109788 }, -- Duke Lankral
-						["sourceQuest"] = 40715,	-- A Pact of Necessity
+					-- Choose Zone
+					q(39832, {	-- Plans and Preparations
+						["sourceQuest"] = 39757, -- Keeping Your Edge
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
+					q(39799, {	-- Our Next Move
+						["sourceQuest"] = 39832, -- Plans and Preparations
+						["provider"] = { "n", 93437 }, -- Siouxsie the Banshee
+						["coord"] = { 50.6, 51.6, 647 },
+					}),
+					q(42449, {	-- Return of the Four Horsemen
+						["sourceQuest"] = 39799, -- Our Next Move
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(42484, {	-- The Firstborn Rises
+						["sourceQuest"] = 42449, -- Return of the Four Horsemen
+						["provider"] = { "n", 107554 },	-- Thassarian
+						["coord"] = { 47.3, 17.7, DUROTAR },
+					}),
+					-- Learn Mission Table & Research
 					q(44550, {	-- Called to Acherus
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
 						["sourceQuests"] = { 42484 }, -- The Firstborn Rises
+						["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
+						["isBreadcrumb"] = true,
 						["maps"] = { LEGION_DALARAN },
 					}),
-					q(44231, {	-- Champion Armaments
-						["provider"] = { "n", 110410 },	-- Dread Collector Bane
-						["coord"] = { 51.7, 32.4, 647 },
-						["description"] = "Only available if you you have the |cFFFFD700Brothers in Arms|r order hall upgrade.",
+					q(43264, {	-- Rise, Champions
+						["sourceQuests"] = { 44550 }, -- Called to Acherus
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
-					q(44247, {	-- Champion: Amal'thazad
-						["provider"] = { "n", 93555 },	-- Amal'thazad
-						["coord"] = { 58.1, 31.1, 647 },
-						["sourceQuest"] = 44282,	-- Eye of Azshara: The Frozen Soul
+					q(39816, {	-- Champion: Thassarian
+						["sourceQuest"] = 43264,	-- Rise, Champions
+						["provider"] = { "n", 93456 },	-- Thassarian
+						["coord"] = { 55.9, 30.8, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["g"] = {
-							follower(854),	-- Amal'thazad
-						},
-					}),
-					q(44248, {	-- Champion: Darion Mograine
-						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["coord"] = { 27.0, 28.9, 648 },
-						["sourceQuest"] = 43686,	-- The Fourth Horseman
-						["g"] = {
-							follower(855),	-- Highlord Darion Mograine
-						},
-					}),
-					q(44245, {	-- Champion: High Inquisitor Whitemane
-						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
-						["coord"] = { 44.8, 72.9, 647 },
-						["sourceQuest"] = 42824,	-- The Zealot Rises
-						["g"] = {
-							follower(839),	-- High Inquisitor Whitemane
-						},
-					}),
-					q(44244, {	-- Champion: Koltira Deathweaver
-						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
-						["coord"] = { 66.3, 64.6, 647 },
-						["sourceQuest"] = 42708,	-- A Personal Request
-						["g"] = {
-							follower(599),	-- Koltira Deathweaver
-						},
-					}),
-					q(46050, {	-- Champion: Minerva Ravensorrow
-						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
-						["coord"] = { 25.6, 34.2, 647 },
-						["sourceQuest"] = 45103,	-- We Ride!
-						["g"] = {
-							follower(1003),	-- Minerva Ravensorrow
+							follower(584),	-- Thassarian
 						},
 					}),
 					q(39818, {	-- Champion: Nazgrim
+						["sourceQuest"] = 43264,	-- Rise, Champions
 						["provider"] = { "n", 109890 },	-- Nazgrim
-						["coord"] = { 39.6, 68.2, 647 },
-						["sourceQuests"] = {
-							42484, -- The Firstborn Rises
-							44550, -- Called to Acherus [Breadcrumb]
-						},
+						["coord"] = { 39.8, 68.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["g"] = {
 							follower(586),	-- Nazgrim
 						},
 					}),
+					q(43265, {	-- Spread the Word
+						["sourceQuest"] = 43264,	-- Rise, Champions
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43266, {	-- Recruiting the Troops
+						["sourceQuest"] = 43265, -- Spread the Word
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43267, {	-- Troops in the Field
+						["sourceQuest"] = 43266,	-- Recruiting the Troops
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43268, {	-- Tech It Up A Notch
+						["sourceQuest"] = 43267, -- Troops in the Field
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43539, {	-- Salanar the Horseman
+						["sourceQuest"] = 43267, -- Troops in the Field
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					-- Chap 1
+					q(42533, {	-- The Ruined Kingdom
+						["sourceQuests"] = {
+							43539, -- Salanar the Horseman
+							43268, -- Tech It Up A Notch
+						},
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(42535, {	-- Death... and Decay
+						["sourceQuest"] = 42533, -- The Ruined Kingdom
+						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
+					}),
+					q(42534, {	-- Our Oldest Enemies
+						["sourceQuest"] = 42533, -- The Ruined Kingdom
+						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
+					}),
+					q(42536, {	-- Regicide
+						["sourceQuests"] = {
+							42535, -- Death... and Decay
+							42534, -- Our Oldest Enemies
+						},
+						["provider"] = { "n", 108042 },	-- Thassarian
+						["coord"] = { 19.6, 67.0, ARATHI_HIGHLANDS },
+					}),
+					q(42537, {	-- The King Rises
+						["sourceQuest"] = 42536, -- Regicide
+						["provider"] = { "n", 108042 },	-- Thassarian
+						["coord"] = { 23.4, 61.4, ARATHI_HIGHLANDS },
+					}),
+					q(44243, {	-- Champion: Thoras Trollbane
+						["sourceQuest"] = 42537, -- The King Rises
+						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
+						["coord"] = { 59.5, 34.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["g"] = {
+							follower(838),	-- Thoras Trollbane
+						},
+					}),
+					q(42708, {	-- A Personal Request
+						["sourceQuest"] = 42537, -- The King Rises
+						["provider"] = { "n", 93456 }, -- Thassarian
+						["coord"] = { 56.0, 30.7, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["maps"] = { UNDERCITY },
+						["g"] = {
+							artifact(357),	-- Maw of the Damned
+							artifact(376),	-- Blades of the Fallen Prince [Main Hand]
+							artifact(376),	-- Blades of the Fallen Prince [Off Hand]
+							artifact(390),	-- Apocalypse
+							crit(3, {	-- Complete the first order campaign effort
+								["achievementID"] = 10461,	-- Fighting with Style: Classic
+							}),
+						},
+					}),
+					q(44244, {	-- Champion: Koltira Deathweaver
+						["sourceQuest"] = 42708,	-- A Personal Request
+						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
+						["coord"] = { 66.3, 64.6, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["g"] = {
+							follower(599),	-- Koltira Deathweaver
+						},
+					}),
+					-- Chap 2
+					q(43899, {	-- Steeds of the Damned
+						["sourceQuest"] = 42708, -- A Personal Request
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(44082, {	-- Knights of the Ebon Blade
+						["sourceQuest"] = 42708, -- A Personal Request
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43571, {	-- Neltharion's Lair: Braid of the Underking
+						["sourceQuest"] = 42708, -- A Personal Request
+						["provider"] = { "n", 111480 }, -- Salanar the Horseman
+						["coord"] = { 36.2, 56.1, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["maps"] = { 731 },	-- Neltharion's Lair
+					}),
+					q(43572, {	-- Darkheart Thicket: The Nightmare Lash
+						["sourceQuest"] = 43571, -- Neltharion's Lair: Braid of the Underking
+						["provider"] = { "n", 111480 }, -- Salanar the Horseman
+						["coord"] = { 36.2, 56.1, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["maps"] = { 733 },	-- Darkheart Thicket
+					}),
+					q(42818, {	-- The Scarlet Assault
+						["sourceQuest"] = 43899, -- Steeds of the Damned
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(42821, {	-- Raising an Army
+						["sourceQuest"] = 42818, -- The Scarlet Assault
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+					}),
+					q(42882, {	-- The Scarlet Massacre
+						["sourceQuest"] = 42818,	-- The Scarlet Assault
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+					}),
+					q(42823, {	-- The Scarlet Commander
+						["sourceQuests"] = {
+							42821, -- Raising an Army
+							42882, -- The Scarlet Massacre
+						},
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+					}),
+					q(42824, {	-- The Zealot Rises
+						["sourceQuest"] = 42823,	-- The Scarlet Commander
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+					}),
+					q(44245, {	-- Champion: High Inquisitor Whitemane
+						["sourceQuest"] = 42824,	-- The Zealot Rises
+						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
+						["coord"] = { 44.8, 72.9, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["g"] = {
+							follower(839),	-- High Inquisitor Whitemane
+						},
+					}),
+					-- Chap 3
+					q(44286, {	-- Vault of the Wardens: A Masterpiece of Flesh
+						["sourceQuest"] = 42824,	-- The Zealot Rises
+						["provider"] = { "n", 93491 }, -- Lord Thorval
+						["coord"] = { 63.1, 69.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
+					}),
 					q(44246, {	-- Champion: Rottgut
-						["provider"] = { "n", 108975 }, -- Rottgut [Spawns next to Lord Thorval after completing the listed source quest.]
-						["coord"] = { 64.1, 69.5, 647 },
 						["sourceQuest"] = 44286,	-- Vault of the Wardens: A Masterpiece of Flesh
+						["provider"] = { "n", 108975 }, -- Rottgut
+						["coord"] = { 64.1, 69.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["g"] = {
 							i(139680),		-- Deathlord's Bracers
 							follower(853),	-- Rottgut
 						},
 					}),
-					q(39816, {	-- Champion: Thassarian
-						["provider"] = { "n", 93456 },	-- Thassarian
-						["coord"] = { 56.1, 30.5, 647 },
+					q(43573, {	-- Advancing the War Effort
+						["sourceQuest"] = 42824, -- The Zealot Rises
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(43928, {	-- Aggregates of Anguish
+						["sourceQuest"] = 42824, -- The Zealot Rises
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+					}),
+					q(44690, {	-- A Thirst For Blood
+						["sourceQuest"] = 43573, -- Advancing the War Effort
+						["provider"] = { "n", 93491 }, -- Lord Thorval
+						["coord"] = { 63.1, 69.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["cost"] = {{ "i", 124124, 3 }},	-- 3xBlood of Sargeras
+					}),
+					q(43574, {	-- Maw of Souls: Maul of the Dead
 						["sourceQuests"] = {
-							42484, -- The Firstborn Rises
-							44550, -- Called to Acherus [Breadcrumb]
+							43573, -- Advancing the War Effort
+							43572, -- Darkheart Thicket: The Nightmare Lash
 						},
-						["g"] = {
-							follower(584),	-- Thassarian
-						},
-					}),
-					q(44243, {	-- Champion: Thoras Trollbane
-						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
-						["coord"] = { 59.5, 34.0, 647 },
-						["sourceQuest"] = 42537, -- The King Rises
-						["g"] = {
-							follower(838),	-- Thoras Trollbane
-						},
-					}),
-					q(43572, {	-- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 647 },
-						["sourceQuest"] = 42708, -- A Personal Request
-					}),
-					q(42535, {	-- Death... and Decay
-						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
-						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
-						["sourceQuest"] = 42533, -- The Ruined Kingdom
-					}),
-					q(40932, {	-- Disturbing the Past
-						["provider"] = { "n", 100729 },	-- Revil Kost
-						["coord"] = { 52.3, 34.5, DEADWIND_PASS },
-						["sourceQuest"] = 40931,	-- Following the Curse
-					}),
-					q(46812, {	-- Draconic Secrets
-						["coord"] = { 44.7, 4.4, ICECROWN },
-						["sourceQuest"] = 46720, -- Frozen Memories
+						["coord"] = { 36.2, 56.1, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 					}),
 					q(44282, {	-- Eye of Azshara: The Frozen Soul
-						["provider"] = { "n", 93555 }, -- Amal'thazad
-						["coord"] = { 58.1, 31.1, 647 },
 						["sourceQuest"] = 43928, -- Aggregates of Anguish
+						["provider"] = { "n", 93555 }, -- Amal'thazad
+						["coord"] = { 58.1, 31.1, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["maps"] = { 713 },	--  Eye of Azshara
 					}),
-					q(40931, {	-- Following the Curse
-						["provider"] = { "n", 100323 },	-- Revil Kost
-						["coord"] = { 77.4, 36.2, DUSKWOOD },
-						["sourceQuest"] = 40930,	-- Apocalypse
+					q(44247, {	-- Champion: Amal'thazad
+						["sourceQuest"] = 44282,	-- Eye of Azshara: The Frozen Soul
+						["provider"] = { "n", 93555 },	-- Amal'thazad
+						["coord"] = { 58.1, 31.1, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["g"] = {
+							follower(854),	-- Amal'thazad
+						},
+					}),
+					q(43686, {	-- The Fourth Horseman
+						["sourceQuests"] = {
+							43573,	-- Advancing the War Effort
+							43928,	-- Aggregates of Anguish
+							44690, 	-- A Thirst For Blood
+						},
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 51.6, 50.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["g"] = {
+							title(328),	-- Deathlord
+							i(139673),	-- Deathlord's Chestguard
+						},
+					}),
+					q(44248, {	-- Champion: Darion Mograine
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["sourceQuest"] = 43686,	-- The Fourth Horseman
+						["g"] = {
+							follower(855),	-- Highlord Darion Mograine
+						},
+					}),
+					--
+					q(43407, {	-- A Hero's Weapon
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
+						["coord"] = { 56.9, 58.5, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["sourceQuest"] = 44248, -- Champion: Darion Mograine
+						["g"] = {
+							artifact(358),	-- Maw of the Damned
+							artifact(370),	-- Blades of the Fallen Prince [Main Hand]
+							artifact(370),	-- Blades of the Fallen Prince [Off Hand]
+							artifact(395),	-- Apocalypse
+							ach(10746),	-- Forged for Battle
+						},
+					}),
+					-- Interlude
+					q(46030, {	-- An Urgent Warning
+						["sourceQuest"] = 43407,	-- A Hero's Weapon
+						["provider"] = { "n", 118433 },	-- Injured Ebon Knight
+						["coord"] = { 56.0, 30.7, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["isBreadcrumb"] = true,
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+					}),
+					q(46031, {	-- Investigate the Broken Shore
+						["sourceQuest"] = 46030,	-- An Urgent Warning
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+					}),
+					-- 7.2.0
+					q(45240, {	-- Making Preparations
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						--["sourceQuest"] = 47137, -- Champions of Legionfall (must be in log)
+						["maps"] = { 823 },	-- Pit of Saron (Scenario Map)
+					}),
+					q(45398, {	-- Harnessing Power
+						["sourceQuest"] = 45240, -- Making Preparations
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },	-- Pit of Saron (Scenario Map)
+					}),
+					q(45399, {	-- Severing the Sveldrek
+						["sourceQuest"] = 45240, -- Making Preparations
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },	-- Pit of Saron (Scenario Map)
+					}),
+					q(45331, {	-- Return to Acherus
+						["sourceQuests"] = {
+							45398, -- Harnessing Power
+							45399, -- Severing the Sveldrek
+						},
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },	-- Pit of Saron (Scenario Map)
+					}),
+					q(44775, {	-- The Peak of Bones
+						["sourceQuest"] = 45331, -- Return to Acherus
+						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
+						["coord"] = { 27.0, 28.9, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+					}),
+					q(46305, {	-- Thorim's Flame
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["coord"] = { 51.3, 84.3, STORMHEIM },
+						["sourceQuest"] = 44775,	-- The Peak of Bones
 					}),
 					q(44783, {	-- From Bones They Rise
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
 						["coord"] = { 51.3, 84.3, STORMHEIM },
 						["sourceQuest"] = 44775, -- The Peak of Bones
-					}),
-					q(46720, {	-- Frozen Memories
-						["provider"] = { "n", 93555 },	-- Amal'thazadd
-						["coord"] = { 58.1, 31.1, 647 },
-						["sourceQuest"] = 46719, -- Amal'thazad's Message
-					}),
-					q(46789, {	-- Further Advancement
-						["provider"] = { "n", 93568 },	-- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 45103, -- We Ride!
-					}),
-					q(46125, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(45398, {	-- Harnessing Power
-						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-						["coord"] = { 47.8, 19.2, 823 },
-						["sourceQuest"] = 45240, -- Making Preparations
-					}),
-					q(43877, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(46031, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(39757, {	-- Keeping Your Edge
-						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
-						["coord"] = { 49.6, 52.6, 647 },
-						["sourceQuest"] = 40715,	-- A Pact of Necessity
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(44082, {	-- Knights of the Ebon Blade
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 42708, -- A Personal Request
-					}),
-					q(46108, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(45240, {	-- Making Preparations
-						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["coord"] = { 27.0, 28.9, 648 },
-						["sourceQuest"] = 47137, -- Champions of Legionfall (must be in log)
-					}),
-					q(43574, {	-- Maw of Souls: Maul of the Dead
-						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 647 },
-						["sourceQuest"] = 43573, -- Advancing the War Effort
-					}),
-					q(43571, {	-- Neltharion's Lair: Braid of the Underking
-						["provider"] = { "n", 111480 }, -- Salanar the Horseman
-						["coord"] = { 36.2, 56.1, 647 },
-						["sourceQuest"] = 42708, -- A Personal Request
-					}),
-					q(45243, {	-- On Daumyr's Wings
-						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["coord"] = { 27.0, 28.9, 648 },
-						["sourceQuest"] = 44787, -- The Bonemother
-					}),
-					q(39799, {	-- Our Next Move
-						["provider"] = { "n", 93437 }, -- Siouxsie the Banshee
-						["coord"] = { 50.6, 51.6, 647 },
-						["sourceQuest"] = 39832, -- Plans and Preparations
-					}),
-					q(42534, {	-- Our Oldest Enemies
-						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
-						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
-						["sourceQuest"] = 42533, -- The Ruined Kingdom
-					}),
-					q(39832, {	-- Plans and Preparations
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuest"] = 40715,	-- A Pact of Necessity
-					}),
-					q(42821, {	-- Raising an Army
-						["provider"] = { "n", 109221 }, -- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
-						["sourceQuest"] = 42818, -- The Scarlet Assault
-					}),
-					q(43266, {	-- Recruiting the Troops
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 43265, -- Spread the Word
-					}),
-					q(42536, {	-- Regicide
-						["provider"] = { "n", 108042 },	-- Thassarian
-						["coord"] = { 19.6, 67.0, ARATHI_HIGHLANDS },
-						["sourceQuests"] = {
-							42535, -- Death... and Decay
-							42534, -- Our Oldest Enemies
-						},
-					}),
-					q(42449, {	-- Return of the Four Horsemen
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuest"] = 39799, -- Our Next Move
-					}),
-					q(45331, {	-- Return to Acherus
-						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-						["coord"] = { 47.8, 19.2, 823 },
-						["sourceQuests"] = {
-							45398, -- Harnessing Power
-							45399, -- Severing the Sveldrek
-						},
-					}),
-					q(43264, {	-- Rise, Champions
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuests"] = {
-							42484, -- The Firstborn Rises
-							44550, -- Called to Acherus [Breadcrumb]
-						},
-					}),
-					q(43539, {	-- Salanar the Horseman
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 43267, -- Troops in the Field
-					}),
-					q(45399, {	-- Severing the Sveldrek
-						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-						["coord"] = { 47.8, 19.2, 823 },
-						["sourceQuest"] = 45240, -- Making Preparations
-					}),
-					q(43265, {	-- Spread the Word
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuests"] = {
-							39818, -- Champion: Nazgrim
-							39816, -- Champion: Thassarian
-							43264, -- Rise, Champions
-						},
-					}),
-					q(43899, {	-- Steeds of the Damned
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 42708, -- A Personal Request
-					}),
-					n(111093, {	-- Stitchwork
-						["questID"] = 44188,	-- Hidden Tracking
-						["maps"] = { ICECROWN_CITADEL, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
-						["collectible"] = false,
-						["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
-						["g"] = {
-							i(139548, {	-- The Bonereaper's Hook
-								artifact(404),	-- Find Hidden Artifact Skin
-							}),
-						},
-					}),
-					q(43268, {	-- Tech It Up A Notch
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 43267, -- Troops in the Field
 					}),
 					q(44787, {	-- The Bonemother
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
@@ -365,131 +545,89 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							46305, -- Thorim's Flame
 						},
 					}),
-					q(38990, {	-- The Call of Icecrown [Frost]
-						["maps"] = {
-							698,	-- Icecrown Citadel
-							700,	-- Icecrown Citadel
-							701,	-- Icecrown Citadel
-						},
-						["g"] = {
-							i(128292),	-- Blades of the Fallen Prince
-							i(127009),	-- Fragment of Frostmourne
-						},
-					}),
-					q(40935, {	-- The Call of Vengeance
-						["provider"] = { "n", 101282 },	-- Revil Kost
-						["coord"] = { 68.4, 27.0, DEADWIND_PASS },
-						["sourceQuest"] = 40934, -- The Dark Riders
-					}),
-					q(40714, {	-- The Call To War
-						["description"] = "Automatically given to you when you arrive in Dalaran.",
-						["maps"] = { LEGION_DALARAN },
-					}),
-					q(40934, {	-- The Dark Riders
-						["provider"] = { "n", 100812 },	-- Revil Kost
-						["coord"] = { 49.4, 74.6, DEADWIND_PASS },
-						["sourceQuest"] = 40933, -- A Grisly Task
-						["g"] = {
-							i(128403), -- Apocalypse (Artifact)
-						},
-					}),
-					q(40740, {	-- The Dead and the Damned [Blood]
-						["maps"] = {
-							701,	-- Icecrown Citadel
-							714,	-- Niskara
-						},
-						["g"] = {
-							i(128402), -- Maw of the Damned
-						},
-					}),
-					q(42484, {	-- The Firstborn Rises
-						["provider"] = { "n", 107554 },	-- Thassarian
-						["coord"] = { 47.3, 17.7, DUROTAR },
-						["sourceQuest"] = 42449, -- Return of the Four Horsemen
-					}),
-					q(43686, {	-- The Fourth Horseman
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuest"] = 43574, -- Maw of Souls: Maul of the Dead
-						["g"] = {
-							title(328),	-- Deathlord
-							i(139673),	-- Deathlord's Chestguard
-						},
-					}),
-					q(42537, {	-- The King Rises
-						["provider"] = { "n", 108042 },	-- Thassarian
-						["coord"] = { 23.4, 61.4, ARATHI_HIGHLANDS },
-						["sourceQuest"] = 42536, -- Regicide
-					}),
-					q(46813, {	-- The Lost Glacier
-						["provider"] = { "n", 121752 },	-- Slimy
-						["coord"] = { 54.7, 28.2, 648 },
-						["sourceQuest"] = 46812, -- Draconic Secrets
-						["maps"] = { 871 },	-- The Lost Glacier (scenario map)
-						["g"] = {
-							i(142231, {	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
-									}),
-						},
-					}),
-					q(44775, {	-- The Peak of Bones
+					q(45243, {	-- On Daumyr's Wings
 						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["coord"] = { 27.0, 28.9, 648 },
-						["sourceQuest"] = 45331, -- Return to Acherus
-					}),
-					q(42533, {	-- The Ruined Kingdom
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuests"] = {
-							43539, -- Salanar the Horseman
-							43268, -- Tech It Up A Notch
-						},
-					}),
-					q(42818, {	-- The Scarlet Assault
-						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
-						["coord"] = { 51.6, 50.0, 647 },
-						["sourceQuest"] = 43899, -- Steeds of the Damned
-					}),
-					q(42823, {	-- The Scarlet Commander
-						["provider"] = { "n", 109221 }, -- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
-						["sourceQuests"] = {
-							42821, -- Raising an Army
-							42882, -- The Scarlet Massacre
-						},
-					}),
-					q(42882, {	-- The Scarlet Massacre
-						["provider"] = { "n", 109221 }, -- Thassarian
-						["coord"] = { 72.0, 48.0, 804 },
-						["maps"] = { 805 },	-- Scarlet Monastery: Death Knight Campaign
-						["sourceQuest"] = 42818,	-- The Scarlet Assault
-					}),
-					q(42824, {	-- The Zealot Rises
-						["provider"] = { "n", 109221 }, -- Thassarian
-						["sourceQuest"] = 42823,	-- The Scarlet Commander
-						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
-					}),
-					q(46305, {	-- Thorim's Flame
-						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-						["coord"] = { 51.3, 84.3, STORMHEIM },
-						["sourceQuest"] = 44775,	-- The Peak of Bones
-					}),
-					q(43267, {	-- Troops in the Field
-						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
-						["coord"] = { 49.7, 51.3, 648 },
-						["sourceQuest"] = 43266,	-- Recruiting the Troops
-					}),
-					q(44234, {	-- Unleashing our Wrath
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(44286, {	-- Vault of the Wardens: A Masterpiece of Flesh
-						["provider"] = { "n", 93491 }, -- Lord Thorval
-						["coord"] = { 63.1, 69.4, 647 },
-						["sourceQuest"] = 42824,	-- The Zealot Rises
+						["coord"] = { 27.0, 28.9, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						["sourceQuest"] = 44787, -- The Bonemother
 					}),
 					q(45103, {	-- We Ride!
 						["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
 						["coord"] = { 51.6, 21.8, BROKEN_SHORE },
 						["sourceQuest"] = 45243,	-- On Daumyr's Wings
+					}),
+					q(46050, {	-- Champion: Minerva Ravensorrow
+						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
+						["coord"] = { 25.6, 34.2, 647 },
+						["sourceQuest"] = 45103,	-- We Ride!
+						["g"] = {
+							follower(1003),	-- Minerva Ravensorrow
+						},
+					}),
+					q(46719, {	-- Amal'thazad's Message
+						["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
+						["coord"] = { 43.4, 62.7, BROKEN_SHORE },
+						-- ["sourceQuests"] = { 46251 },	-- Shard Times
+					}),
+					q(46720, {	-- Frozen Memories
+						["provider"] = { "n", 93555 },	-- Amal'thazadd
+						["coord"] = { 58.1, 31.1, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["sourceQuest"] = 46719, -- Amal'thazad's Message
+					}),
+					q(46812, {	-- Draconic Secrets
+						["coord"] = { 44.7, 4.4, ICECROWN },
+						["sourceQuest"] = 46720, -- Frozen Memories
+						["maps"] = { 860 },	-- The Ruby Sanctum (Scenario Map)
+					}),
+					q(46813, {	-- The Lost Glacier
+						["sourceQuest"] = 46812, -- Draconic Secrets
+						["maps"] = {
+							860,	-- The Ruby Sanctum (Scenario Map)
+							871,	-- The Lost Glacier (Scenario Map)
+						},
+						["g"] = {
+							i(142231),	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
+						},
+					}),
+					-- Misc
+					q(43877, {	-- Hitting the Books
+						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
+						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { "added 7.0.3", "removed 7.3.0" },
+					}),
+					q(46108, {	-- Knowledge is Power
+						["sourceQuest"] = 43877,	-- Hitting the Books
+						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
+						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+					}),
+					q(46125, {	-- Furthering Knowledge
+						["sourceQuest"] = 46108,	-- Knowledge is Power
+						["provider"] = { "n", 97111 },	-- Illanna Dreadmoore <Ebon Blade Archivist>
+						["coord"] = { 49.8, 56.2, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { "added 7.1.5", "removed 7.3.0" },
+					}),
+					q(46789, {	-- Further Advancement
+						["sourceQuest"] = 45103, -- We Ride!
+						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
+						["coord"] = { 49.7, 51.3, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { "added 7.2.0" },
+					}),
+				}),
+				n(SPECIAL, {
+					gt(433, {	-- Brothers in Arms
+						q(44231, {	-- Champion Armaments
+							["sourceQuest"] = 43268,	-- Tech It Up A Notch
+							["provider"] = { "n", 110410 },	-- Dread Collector Bane
+							["coord"] = { 51.7, 32.4, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						}),
+					}),
+					gt(432, {	-- Unholy Reclamation / Frost Wyrm
+						q(44234, {	-- Unleashing our Wrath
+							["sourceQuest"] = 43268,	-- Tech It Up A Notch
+							["provider"] = { "n", 111634 },	-- Winter Payne
+							["coord"] = { 26.3, 23.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+							["timeline"] = { "added 7.0.3", "removed 8.0.1" },
+						}),
 					}),
 				}),
 				n(VENDORS, {
@@ -510,12 +648,20 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 							i(38667),	-- Bloodbane's Gauntlets of Command
 							i(140538),	-- Broadaxe of the Ebon Blade
-							i(174485),	-- Burning Greatsword of the Ebon Blade
-							i(174662),	-- Burning Saber of the Ebon Blade
+							i(174485, {	-- Burning Greatsword of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
+							i(174662, {	-- Burning Saber of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
 							i(34657),	-- Choker of Damnation
 							i(38147),	-- Corrupted Band
-							i(174486),	-- Crimson Greatsword of the Ebon Blade
-							i(174659),	-- Crimson Saber of the Ebon Blade
+							i(174486, {	-- Crimson Greatsword of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
+							i(174659, {	-- Crimson Saber of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
 							i(140935, {	-- Deathlord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
 							}),
@@ -550,8 +696,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(38669),	-- Engraved Saronite Legplates
-							i(174488),	-- Freezing Greatsword of the Ebon Blade
-							i(174660),	-- Freezing Saber of the Ebon Blade
+							i(174488, {	-- Freezing Greatsword of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
+							i(174660, {	-- Freezing Saber of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
 							i(38633),	-- Greataxe of the Ebon Blade
 							i(38661),	-- Greathelm of the Scourge Champion
 							i(38632),	-- Greatsword of the Ebon Blade
@@ -571,8 +721,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(38664),	-- Sky Darkener's Shroud of the Unholy
 							i(38674),	-- Soul Harvester's Charm
 							i(38668),	-- The Plaguebringer's Girdle
-							i(174487),	-- Unholy Greatsword of the Ebon Blade
-							i(174661),	-- Unholy Saber of the Ebon Blade
+							i(174487, {	-- Unholy Greatsword of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
+							i(174661, {	-- Unholy Saber of the Ebon Blade
+								["timeline"] = { "added 8.3.0" },
+							}),
 							i(38671),	-- Valanar's Signet Ring
 							i(140554),	-- Warsword of the Ebon Blade
 							i(40775, {	-- Winged Steed of the Ebon Blade (MOUNT!)
@@ -585,13 +739,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 54.8, 28.9, 648 },
 						["g"] = {
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
+								["sourceQuest"]  =46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["timeline"] = { "added 7.2.0" },
 							}),
 							i(147540, {	-- Frostbrood Whelpling (PET!)
+								["sourceQuest"]  =46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["timeline"] = { "added 7.2.0" },
 							}),
 							i(147541, {	-- Vilebrood Whelpling (PET!)
+								["sourceQuest"]  =46813,	-- The Lost Glacier
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["timeline"] = { "added 7.2.0" },
 							}),
 						},
 					}),
@@ -605,12 +765,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 root("HiddenQuestTriggers", {
-		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen
+		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen (first)
 		q(40936),	-- Death Knight Order Hall - Convincing Revil Kost to help during 'Apocalypse' (40930)
-		q(40986),	-- Death Knight Order Hall - Completed 'The Dark Riders' (40934) / Unlocked Apocalypse DK-Unholy Artifact
-		q(40987),	-- Death Knight Order Hall - Completed 'The Call of Vengeance' (40935)
 		q(43965),	-- Death Knight Order Hall - Blood Artifact Chosen second
 		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
+		q(40723),	-- Death Knight Order Hall - Frost Artifact Chosen (first)
+		q(40724),	-- Death Knight Order Hall - Unholy Artifact Chosen (first)
 		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
 		q(44587),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds A
 		q(44588),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds B

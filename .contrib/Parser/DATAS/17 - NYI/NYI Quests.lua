@@ -260,6 +260,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 
 			q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest) -- Idk why under SL_tier
+
+			--
 		}),
 		q(3064),	-- <NYI> <TXT> Pirate Hats
 		q(241),	-- <TEST> HEY MISTER WILSON!
@@ -582,7 +584,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 			})),
-			
+
 			-- 5.4.0
 			tier(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
@@ -1660,6 +1662,2503 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
+	tier(BFA_TIER, {
+		n(QUESTS, {
+			tier(BFA_TIER, 0.1, {
+				-- Unsorted
+				q(47246, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(47290, {
+				}),
+				q(47506, {
+					["lvl"] = 255,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(47529, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(47588, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 10,
+				}),
+				q(47695, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(47894, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(48023, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(48086, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(48104, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(48176, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(48237, {
+					["description"] = "Type: |cFFf09f26Account|r",
+				}),
+				q(48515, {
+					["description"] = "Area: |cFFf09f26Drustvar|r",
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(48604, {
+					["description"] = "Area: |cFFf09f26Drustvar|r",
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(48653, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(48759, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48760, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48765, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48766, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48771, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48772, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(48808, {
+					["description"] = "Area: |cFFf09f26Drustvar|r",
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(48905, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+				}),
+				q(48913, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48914, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48915, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48916, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48917, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48918, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48919, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48920, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48921, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48922, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48923, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48924, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48925, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48926, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48927, {
+					["description"] = "Category: |cFFf09f26Mining|r",
+					["lvl"] = 10,
+				}),
+				q(48949, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(48950, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49073, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49123, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49124, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49375, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+				}),
+				q(49376, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49381, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49408, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49449, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49455, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49456, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49457, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49458, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49459, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49460, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49461, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49462, {
+					["description"] = "Category: |cFFf09f26Herbalism|r",
+					["lvl"] = 10,
+				}),
+				q(49464, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49578, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49579, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49580, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49590, {
+					["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49591, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49592, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49593, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49594, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49595, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49596, {
+					["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49597, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49598, {
+					["description"] = "Category: |cFFf09f26Jewelcrafting|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49661, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49694, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49873, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49874, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49875, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49876, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49877, {
+					["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49878, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49879, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49880, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(49881, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49882, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+				}),
+				q(49943, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49944, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49945, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49946, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49947, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49948, {
+					["description"] = "Category: |cFFf09f26Inscription|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49952, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(49991, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50035, {
+
+				}),
+				q(50084, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50273, {
+					["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Blacksmithing|r",
+					["lvl"] = 10,
+				}),
+				q(50321, {
+					["description"] = "Area: |cFFf09f26Nazmir|r",
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50326, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["g"] = {
+						i(150733, { -- Scroll of Town Portal
+							["b"] = 1,
+							["ilvl"] = 45,
+							["q"] = 1,
+							["spellID"] = 259731,
+						})
+					}
+				}),
+				q(50350, {
+					["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50375, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50377, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50520, {
+					["lvl"] = 30,
+				}),
+				q(50632, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158174, { -- Battleworn Armor Kit
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						}),
+						i(162143, { -- Potion of Restoration
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						}),
+						i(158179, { -- Potion of Combat Acumen
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(50668, {
+					["description"] = "Area: |cFFf09f26Orgrimmar|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(50670, {
+
+				}),
+				q(50694, {
+					["description"] = "Area: |cFFf09f26Stormsong Valley|r",
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(50709, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158326, { -- Makeshift Explosives
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(50764, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158709, { -- Refurbished Shredder
+							["b"] = 1,
+							["f"] = 102,
+							["ilvl"] = 30,
+							["q"] = 3,
+						})
+					}
+				}),
+				q(51052, {
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = 1,
+					["g"] = {
+						i(151557, { -- Champion's Strongbox
+							["b"] = 1,
+							["ilvl"] = 100,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(51068, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159723, { -- Chunk of Boar Meat
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(159726, { -- Baked Egg
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(159724, { -- Slice of Cheese
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(159727, { -- Flagon of Applebrew
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						})
+					}
+				}),
+				q(51070, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(51086, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(51130, {
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["repeatable"] = 1,
+					["g"] = {
+						i(151557, { -- Champion's Strongbox
+							["b"] = 1,
+							["ilvl"] = 100,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(51344, {
+					["description"] = "Area: |cFFf09f26Hall of Communion|r",
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+				}),
+				q(51370, {
+					["lvl"] = 50,
+					["g"] = {
+						i(160054, { -- War-Torn Satchel of Cooperation
+							["b"] = 1,
+							["f"] = 102,
+							["ilvl"] = 30,
+							["q"] = 3,
+						})
+					}
+				}),
+				q(51425, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160219, { -- Scroll of Town Portal
+							["b"] = 1,
+							["ilvl"] = 45,
+							["q"] = 1,
+							["spellID"] = 278212,
+						})
+					}
+				}),
+				q(51535, {
+					["description"] = "Category: |cFFf09f26Mag'har Orc|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(51567, {
+					["description"] = "Category: |cFFf09f26Island Expeditions|r",
+					["lvl"] = 10,
+				}),
+				q(51703, {
+					["lvl"] = 10,
+				}),
+				q(51704, {
+					["lvl"] = 10,
+				}),
+				q(52012, {
+					["description"] = "Category: |cFFf09f26Horde War Campaign|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(52440, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52467, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(162140, { -- Battleworn Armor Kit
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						}),
+						i(162142, { -- Potion of Restoration
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						}),
+						i(162141, { -- Potion of Combat Acumen
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(52468, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(163988, { -- Chunk of Boar Meat
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(163990, { -- Baked Egg
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(163989, { -- Slice of Cheese
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						}),
+						i(163991, { -- Flagon of Applebrew
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 1,
+						})
+					}
+				}),
+				q(52497, {
+					["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(52991, {
+					["description"] = "Category: |cFFf09f26Hallow's End|r",
+					["lvl"] = 10,
+				}),
+				q(53080, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(163219, { -- Repurposed Explosive Device
+							["b"] = 1,
+							["f"] = 55,
+							["q"] = 2,
+						})
+					}
+				}),
+				q(53146, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53148, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(53149, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53150, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(53162, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53173, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(53179, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53190, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(53192, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53193, {
+					["description"] = "Area: |cFFf09f26Arathi Highlands|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(53199, {
+					["description"] = "Area: |cFFf09f26Zuldazar|r",
+					["lvl"] = 50,
+				}),
+				q(53358, {
+					["lvl"] = 10,
+				}),
+				q(53413, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53415, {
+					["description"] = "Category: |cFFf09f26Warfronts|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				-- Tools
+				-- 8.0.1.25902
+				q(47197),	--
+				q(47206),	--
+				q(47227),	--
+				q(47232),	--
+				q(47233),	--
+				q(47242),	--
+				q(47243),	--
+				q(47266),	--
+				q(47291),	--
+				q(47292),	--
+				q(47293),	--
+				q(47294),	--
+				q(47295),	--
+				q(47296),	--
+				q(47297),	--
+				q(47298),	--
+				q(47299),	--
+				q(47300),	--
+				q(47301),	--
+				q(47303),	--
+				q(47304),	--
+				q(47305),	--
+				q(47306),	--
+				q(47308),	--
+				q(47323),	--
+				q(47328),	--
+				q(47409),	--
+				q(47419),	--
+				q(47420),	--
+				q(47457),	--
+				q(47458),	--
+				q(47460),	-- Interact - Doodad & Creature Test [DO NOT LOCALIZE]
+				q(47467),	--
+				q(47474),	--
+				q(47475),	--
+				q(47476),	--
+				q(47477),	--
+				q(47478),	--
+				q(47479),	--
+				q(47494),	--
+				q(47500),	--
+				q(47504),	--
+				q(47505),	--
+				q(47510),	--
+				q(47511),	--
+				q(47517),	--
+				q(47519),	--
+				q(47524),	--
+				q(47534),	--
+				q(47538),	--
+				q(47539),	--
+				q(47544),	--
+				q(47546),	--
+				q(47547),	--
+				q(47548),	--
+				q(47549),	--
+				q(47553),	--
+				q(47555),	--
+				q(47565),	--
+				q(47568),	--
+				q(47569),	--
+				q(47572),	--
+				q(47575),	--
+				q(47579),	--
+				q(47582),	--
+				q(47600),	--
+				q(47633),	--
+				q(47634),	--
+				q(47637),	--
+				q(47650),	--
+				q(47651),	--
+				q(47667),	--
+				q(47669),	--
+				q(47670),	--
+				q(47673),	--
+				q(47693),	--
+				q(47694),	--
+				q(47701),	--
+				q(47702),	--
+				q(47708),	--
+				q(47710),	--
+				q(47721),	--
+				q(47722),	--
+				q(47729),	--
+				q(47732),	--
+				q(47788),	--
+				q(47789),	--
+				q(47794),	--
+				q(47834),	--
+				q(47839),	--
+				q(47861),	--
+				q(47862),	--
+				q(47872),	--
+				q(47879),	--
+				q(47926),	--
+				q(47933),	--
+				q(47944),	--
+				q(47966),	--
+				q(47983),	--
+				q(47984),	--
+				q(48006),	--
+				q(48017),	--
+				q(48312),	--
+				q(48325),	--
+				q(48328),	--
+				q(48401),	--
+				q(48463),	--
+				q(48464),	--
+				q(48487),	--
+				q(48501),	--
+				q(48503),	--
+				q(48528),	--
+				q(48536),	--
+				q(48537),	--
+				q(48552),	--
+				q(48556),	--
+				q(48610),	--
+				q(48625),	--
+				q(48630),	--
+				q(48660),	--
+				q(48663),	--
+				q(48681),	--
+				q(48782),	--
+				q(48785),	--
+				q(48786),	--
+				q(48787),	--
+				q(48788),	--
+				q(48789),	--
+				q(48807),	--
+				q(48826),	--
+				q(48839),	--
+				q(48841),	--
+				q(48843),	--
+				q(48844),	--
+				q(48848),	--
+				q(48849),	--
+				q(48851),	--
+				q(48861),	--
+				q(48862),	--
+				q(48863),	--
+				q(48891),	--
+				q(48892),	--
+				q(48893),	--
+				q(48930),	--
+				q(48932),	--
+				q(48961),	--
+				q(48975),	--
+				q(48997),	--
+				q(48998),	--
+				q(48999),	--
+				q(49000),	--
+				q(49034),	--
+				q(49035),	--
+				q(49038),	--
+				q(49063),	--
+				q(49065),	--
+				q(49074),	--
+				q(49113),	--
+				q(49119),	--
+				q(49127),	--
+				q(49140),	--
+				q(49165),	--
+				q(49182),	--
+				q(49208),	--
+				q(49209),	--
+				q(49217),	--
+				q(49219),	--
+				q(49220),	--
+				q(49221),	--
+				q(49222),	--
+				q(49228),	--
+				q(49243),	--
+				q(49244),	--
+				q(49245),	--
+				q(49246),	--
+				q(49250),	--
+				q(49253),	--
+				q(49254),	--
+				q(49255),	--
+				q(49256),	--
+				q(49265),	--
+				q(49271),	--
+				q(49272),	--
+				q(49273),	--
+				q(49275),	--
+				q(49277),	--
+				q(49279),	--
+				q(49280),	--
+				q(49281),	--
+				q(49291),	--
+				q(49297),	--
+				q(49298),	--
+				q(49301),	--
+				q(49303),	--
+				q(49304),	--
+				q(49306),	--
+				q(49307),	--
+				q(49308),	--
+				q(49316),	--
+				q(49318),	--
+				q(49319),	--
+				q(49320),	--
+				q(49321),	--
+				q(49322),	--
+				q(49323),	--
+				q(49324),	--
+				q(49325),	--
+				q(49326),	--
+				q(49328),	--
+				q(49329),	--
+				q(49330),	--
+				q(49332),	--
+				q(49338),	--
+				q(49339),	--
+				q(49342),	--
+				q(49343),	--
+				q(49344),	--
+				q(49346),	--
+				q(49347),	--
+				q(49349),	--
+				q(49350),	--
+				q(49351),	--
+				q(49352),	--
+				q(49353),	--
+				q(49355),	--
+				q(49356),	--
+				q(49387),	--
+				q(49396),	--
+				q(49415),	--
+				q(49423),	--
+				q(49429),	--
+				q(49430),	--
+				q(49436),	--
+				q(49438),	--
+				q(49441),	--
+				q(49442),	--
+				q(49463),	--
+				q(49466),	--
+				q(49476),	--
+				q(49478),	--
+				q(49482),	--
+				q(49485),	--
+				q(49486),	--
+				q(49487),	--
+				q(49517),	--
+				q(49518),	--
+				q(49519),	--
+				q(49520),	--
+				q(49521),	--
+				q(49524),	--
+				q(49611),	--
+				q(49670),	--
+				q(49671),	--
+				q(49673),	--
+				q(49682),	--
+				q(49686),	--
+				q(49687),	--
+				q(49688),	--
+				q(49689),	--
+				q(49690),	--
+				q(49691),	--
+				q(49692),	--
+				q(49693),	--
+				q(49726),	--
+				q(49727),	--
+				q(49728),	--
+				q(49729),	--
+				q(49770),	--
+				q(49790),	--
+				q(49802),	--
+				q(49808),	--
+				q(49819),	--
+				q(49820),	--
+				q(49821),	--
+				q(49822),	--
+				q(49823),	--
+				q(49824),	--
+				q(49825),	--
+				q(49826),	--
+				q(49827),	--
+				q(49828),	--
+				q(49829),	--
+				q(49830),	--
+				q(49833),	--
+				q(49834),	--
+				q(49835),	--
+				q(49836),	--
+				q(49837),	--
+				q(49838),	--
+				q(49839),	--
+				q(49840),	--
+				q(49841),	--
+				q(49842),	--
+				q(49872),	--
+				q(49883),	--
+				q(49892),	--
+				q(49893),	--
+				q(49894),	--
+				q(49895),	--
+				q(49900),	--
+				q(49903),	--
+				q(49906),	--
+				q(49907),	--
+				q(49910),	--
+				q(49912),	--
+				q(49915),	--
+				q(49927),	--
+				q(49934),	--
+				q(49953),	--
+				q(49954),	--
+				q(49958),	--
+				q(49959),	--
+				q(49961),	--
+				q(49962),	--
+				q(49970),	--
+				q(49971),	--
+				q(49974),	--
+				q(49978),	--
+				q(49990),	--
+				q(49992),	--
+				q(49993),	--
+				q(50004),	--
+				q(50006),	--
+				q(50007),	--
+				q(50008),	--
+				q(50011),	--
+				q(50012),	--
+				q(50014),	--
+				q(50015),	--
+				q(50016),	--
+				q(50017),	--
+				q(50018),	--
+				q(50019),	--
+				q(50020),	--
+				q(50021),	--
+				q(50022),	--
+				q(50023),	--
+				q(50025),	--
+				q(50027),	--
+				q(50028),	--
+				q(50029),	--
+				q(50030),	--
+				q(50031),	--
+				q(50032),	--
+				q(50033),	--
+				q(50038),	--
+				q(50062),	--
+				q(50066),	--
+				q(50067),	--
+				q(50068),	--
+				q(50072),	--
+				q(50077),	--
+				q(50080),	-- Raiding the Raiders
+				q(50086),	--
+				q(50093),	--
+				q(50153),	--
+				q(50167),	--
+				q(50195),	-- Bilgemaul's Brigade
+				q(50200),	--
+				q(50201),	--
+				q(50202),	--
+				q(50203),	--
+				q(50204),	--
+				q(50205),	--
+				q(50206),	-- Strike Back
+				q(50208),	--
+				q(50236),	--
+				q(50261),	--
+				q(50262),	--
+				q(50267),	--
+				q(50282),	--
+				q(50283),	--
+				q(50290),	--
+				q(50291),	--
+				q(50292),	--
+				q(50293),	--
+				q(50294),	--
+				q(50298),	--
+				q(50309),	--
+				q(50310),	--
+				q(50323),	--
+				q(50330),	--
+				q(50357),	--
+				q(50380),	--
+				q(50382),	--
+				q(50390),	--
+				q(50392),	--
+				q(50398),	--
+				q(50399),	--
+				q(50403),	--
+				q(50404),	--
+				q(50405),	--
+				q(50406),	--
+				q(50407),	--
+				q(50408),	--
+				q(50409),	--
+				q(50410),	--
+				q(50411),	--
+				q(50415),	--
+				q(50416),	--
+				q(50428),	--
+				q(50429),	--
+				q(50458),	--
+				q(50462),	--
+				q(50463),	--
+				q(50464),	--
+				q(50472),	--
+				q(50475),	--
+				q(50477),	--
+				q(50478),	--
+				q(50479),	--
+				q(50487),	--
+				q(50523),	--
+				q(50532),	--
+				q(50554),	--
+				q(50555),	--
+				q(50556),	--
+				q(50557),	--
+				q(50560),	--
+				q(50575),	--
+				q(50579),	--
+				q(50580),	--
+				q(50589),	--
+				q(50597),	--
+				q(50607),	--
+				q(50613),	--
+				q(50624),	--
+				q(50629),	--
+				q(50630),	--
+				q(50638),	--
+				q(50643),	--
+				q(50654),	--
+				q(50655),	--
+				q(50664),	--
+				-- 8.0.1.25976
+				q(50671),	--
+				q(50682),	--
+				q(50683),	--
+				q(50684),	--
+				q(50685),	--
+				q(50701),	--
+				q(50708),	--
+				q(50713),	--
+				q(50714),	--
+				q(50766),	--
+				q(50768),	--
+				q(50785),	--
+				q(50806),	--
+				q(50807),	--
+				q(50809),	--
+				q(50811),	--
+				q(50822),	--
+				q(50836),	--
+				-- 8.0.1.26010
+				q(50865),	--
+				q(50896),	--
+				q(50902),	--
+				q(50906),	--
+				q(50927),	--
+				-- 8.0.1.26032
+				q(50932),	--
+				q(50935),	--
+				q(50946),	--
+				-- 8.0.1.26095
+				q(50971),	--
+				q(50986),	-- Work Order: Sea Stalk
+				q(50999),	-- Work Order: Riverbud
+				q(51078),	-- Azerite Madness
+				-- 8.0.1.26131
+				q(51141),	--
+				q(51148),	--
+				q(51158),	--
+				q(51160),	--
+				q(51206),	--
+				-- 8.0.1.26141
+				-- 8.0.1.26175
+				q(51219),	--
+				q(51333),	-- Anchors Aweigh!
+				-- 8.0.1.26231
+				q(51345),	--
+				q(51347),	--
+				q(51348),	--
+				q(51375),	--
+				q(51400),	--
+				-- 8.0.1.26287
+				q(51413),	--
+				q(51417),	--
+				q(51476),	--
+				q(51493),	--
+				q(51499),	--
+				q(51537),	--
+				q(51549),	--
+				q(51556),	-- Myself Again
+				q(51560),	--
+				q(51563),	--
+				q(51580),	-- Rear Admiral Hainsworth
+				-- 8.0.1.26297
+				-- 8.0.1.26310
+				q(51600),	--
+				q(51631),	--
+				q(51634),	--
+				-- 8.0.1.26321
+				-- 8.0.1.26367
+				q(51692),	--
+				q(51701),	--
+				q(51702),	--
+				q(51705),	--
+				q(51721),	--
+				q(51725),	--
+				q(51751),	-- Operation Royalty
+				q(51755),	--
+				-- 8.0.1.26433
+				q(51790),	--
+				q(51898),	--
+				q(51948),	--
+				-- 8.0.1.26476
+				q(52018),	--
+				q(52019),	--
+				q(52037),	--
+				q(52152),	--
+				q(52161),	--
+				q(52162),	--
+				q(52175),	--
+				q(52182),	-- The Azerite Stuff
+				-- 8.0.1.26491
+				-- 8.0.1.26522
+				q(52207),	-- The Azerite Stuff
+				q(52262),	--
+				q(52292),	--
+				q(52293),	-- Lizards and Ledgers
+				q(52399),	--
+				q(52401),	--
+				q(52402),	-- Work Order: Viridium
+				q(52403),	--
+				q(52434),	--
+				q(52435),	--
+				q(52465),	--
+				q(52470),	--
+				-- 8.0.1.26530
+				-- 8.0.1.26557
+				-- 8.0.1.26567
+				q(52304),	--
+				q(52747),	--
+				q(52775),	-- Siege of Boralus: What's Yours is Mine
+				q(52783),	--
+				q(52808),	--
+				q(52811),	--
+				q(52820),	--
+				q(52821),	--
+				q(52825),	--
+				q(52841),	--
+				q(52842),	--
+				q(52843),	--
+				q(52844),	--
+				q(52846),	--
+				q(52863),	--
+				q(52868),	--
+				q(52881),	--
+				q(52883),	-- Breakthru
+				-- 8.0.1.26585
+				-- 8.0.1.26604
+				-- 8.0.1.26610
+				-- 8.0.1.26624
+				q(47284),	--
+				q(52934),	--
+				q(52959),	--
+				q(52960),	--
+				q(52961),	--
+				q(52984),	-- I Want It All
+				q(52985),	--
+				q(52993),	--
+				q(53009),	-- Hang On In There
+				q(53010),	-- No Turning Back
+				q(53012),	-- Put Away Your Toys
+				q(53026),	--
+				q(53029),	-- A Dying World
+				q(53096),	-- Short-Supply Reward
+				q(53191),	--
+				q(53201),	--
+				q(53203),	--
+				q(53204),	--
+				q(53214),	--
+				q(53215),	--
+				q(53271),	-- Blooming Star Moss
+				q(53273),	-- Winter's Kiss Cluster
+				q(53281),	-- Winter's Kiss Cluster
+				q(53283),	-- Flourishing Sea Stalks
+				q(53284),	-- Flourishing Riverbud
+				q(53288),	-- Overgrown Anchor Weed
+				q(53297),	-- Flourishing Riverbud
+				q(53299),	-- Blooming Siren's Sting
+				q(53302),	-- Flourishing Riverbud
+				q(53309),	--
+				-- 8.0.1.26629
+				-- 8.0.1.26637
+				-- 8.0.1.26640
+				-- 8.0.1.26683
+				-- 8.0.1.26707
+				q(52048),	--
+				q(53317),	-- Dense Storm Silver
+				q(53319),	-- Our Sacred Forest
+				q(53320),	-- Ours For the Taking
+				q(53427),	--
+				q(53428),	--
+				q(53429),	--
+				q(53447),	--
+				q(53460),	--
+				-- 8.0.1.26714
+				-- 8.0.1.26715
+				-- 8.0.1.26734
+				q(53469),	--
+				q(53477),	--
+				-- 8.0.1.26766
+				-- 8.0.1.26788
+				q(53504),	--
+				q(53505),	--
+				q(53506),	--
+				q(53507),	--
+				q(53508),	--
+				q(53509),	--
+				q(53510),	--
+				q(53511),	--
+				q(53512),	--
+				q(53513),	--
+				q(53514),	--
+				q(53515),	--
+				q(53516),	--
+				q(53517),	--
+				q(53518),	--
+				q(53519),	--
+				q(53522),	--
+				q(53523),	--
+				q(53524),	--
+				q(53525),	--
+				q(53526),	--
+				q(53527),	--
+				q(53528),	--
+				q(53529),	--
+				q(53530),	--
+				q(53531),	--
+				q(53549),	-- Bounty Bag
+				q(53564),	--
+				-- 8.0.1.26806
+				-- 8.0.1.26812
+				q(53581),	--
+				q(53582),	--
+				-- 8.0.1.26838
+				-- 8.0.1.26871
+				q(53584),	--
+				q(53592),	--
+				q(53628),	--
+				-- 8.0.1.26877
+				-- 8.0.1.26892
+				-- 8.0.1.26903
+				q(53635),	--
+				q(53637),	--
+				q(53642),	--
+				q(53643),	--
+				-- 8.0.1.26918
+				-- 8.0.1.26926
+				q(53644),	--
+				q(53650),	--
+				q(53653),	--
+				q(53654),	--
+				q(53655),	--
+				q(53656),	--
+				q(53657),	--
+				-- 8.0.1.26936
+				q(53659),	--
+				q(53660),	--
+				q(53661),	--
+				q(53662),	--
+				-- 8.0.1.26949
+				-- 8.0.1.26970
+				-- 8.0.1.26999
+				-- 8.0.1.27004
+				-- 8.0.1.27009
+				-- 8.0.1.27019
+				-- 8.0.1.27026
+				-- 8.0.1.27075
+				-- 8.0.1.27089
+				-- 8.0.1.27101
+				-- 8.0.1.27138
+				-- 8.0.1.27144
+				-- 8.0.1.27165
+				-- 8.0.1.27178
+				-- 8.0.1.27219
+				-- 8.0.1.27291
+				-- 8.0.1.27326
+				-- 8.0.1.27353
+				-- 8.0.1.27355
+				-- 8.0.1.27356
+				-- 8.0.1.27366
+				-- 8.0.1.27377
+				-- 8.0.1.27404
+				-- 8.0.1.27481
+				-- 8.0.1.27547
+				-- 8.0.1.27602
+				-- 8.0.1.27791
+				-- 8.0.1.27843
+				-- 8.0.1.27980
+				-- 8.0.1.28153
+			}),
+			tier(BFA_TIER, 1.0, {
+				-- Unsorted
+				q(53801, {
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(166370, { -- Sentinel Equipment Cache
+							["b"] = 1,
+							["ilvl"] = 59,
+							["q"] = 3,
+						})
+					}
+				}),
+				q(53987, {
+					["description"] = "Category: |cFFf09f26Horde War Campaign|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(54210, {
+					["description"] = "Category: |cFFf09f26Alliance War Campaign|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(54424, {
+					["description"] = "Area: |cFFf09f26Boralus Harbor|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(54447, {
+					["description"] = "Category: |cFFf09f26The Zandalari|r",
+					["lvl"] = 50,
+				}),
+				q(54748, {
+				}),
+				q(54979, {
+					["description"] = "Category: |cFFf09f26World PvP|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(167100, { -- Alliance Champion's Cache
+							["b"] = 1,
+							["ilvl"] = 59,
+							["q"] = 3,
+						})
+					}
+				}),
+				-- tools
+				-- 8.1.0.27826
+				q(53718),	--
+				q(53723),	--
+				q(53754),	--
+				q(53756),	--
+				q(53757),	--
+				q(53758),	--
+				q(53764),	--
+				q(53770),	--
+				q(53785),	--
+				q(53786),	--
+				q(53789),	--
+				q(53790),	--
+				q(53792),	--
+				q(53793),	--
+				q(53794),	--
+				q(53795),	--
+				q(53796),	--
+				q(53797),	--
+				q(53798),	--
+				q(53799),	--
+				q(53803),	--
+				q(53854),	--
+				q(53855),	--
+				q(53860),	--
+				q(53871),	--
+				q(53873),	--
+				q(53884),	--
+				q(53946),	--
+				q(53972),	--
+				q(53984),	--
+				q(53985),	--
+				q(53991),	--
+				q(54010),	--
+				q(54013),	--
+				q(54019),	--
+				q(54023),	--
+				q(54024),	--
+				q(54025),	--
+				q(54029),	--
+				q(54095),	--
+				q(54115),	--
+				q(54116),	--
+				q(54119),	-- Hartford Sternbach
+				q(54142),	--
+				q(54173),	--
+				q(54209),	--
+				q(54215),	--
+				q(54216),	--
+				q(54217),	--
+				q(54218),	--
+				q(54219),	--
+				q(54220),	--
+				q(54221),	--
+				q(54222),	--
+				q(54223),	--
+				q(54228),	--
+				q(54230),	--
+				q(54233),	--
+				q(54235),	--
+				q(54241),	--
+				q(54248),	--
+				q(54255),	-- Short-Supply Reward
+				q(54256),	-- Short-Supply Reward
+				-- 8.1.0.27934
+				-- 8.1.0.27985
+				q(54279),	--
+				q(54286),	--
+				q(54290),	--
+				q(54313),	--
+				q(54317),	--
+				q(54321),	--
+				q(54349),	-- Darkshore Donations: Tidespray Linen Bandage
+				q(54398),	--
+				q(54406),	--
+				q(54409),	--
+				q(54413),	--
+				q(54422),	--
+				q(54423),	--
+				q(54427),	--
+				q(54429),	--
+				q(54443),	--
+				q(54445),	--
+				q(54446),	--
+				-- 8.1.0.28048
+				q(54486),	--
+				q(54487),	--
+				q(54489),	--
+				q(54490),	--
+				q(54491),	--
+				q(54492),	--
+				q(54529),	--
+				-- 8.1.0.28085
+				-- 8.1.0.28151
+				q(54687),	--
+				q(54696),	--
+				-- 8.1.0.28186
+				-- 8.1.0.28202
+				q(54713),	--
+				q(54767),	--
+				q(54772),	--
+				q(54774),	--
+				q(54776),	--
+				q(54785),	--
+				-- 8.1.0.28294
+				q(54860),	--
+				q(54870),	--
+				-- 8.1.0.28366
+				q(54882),	--
+				q(54885),	--
+				q(54888),	--
+				q(54894),	--
+				-- 8.1.0.28440
+				q(54908),	--
+				-- 8.1.0.28485
+				-- 8.1.0.28616
+				q(54942),	--
+				-- 8.1.0.28657
+				q(55026),	--
+				-- 8.1.0.28710
+				-- 8.1.0.28724
+				-- 8.1.0.28768
+				-- 8.1.0.28807
+				-- 8.1.0.28822
+				-- 8.1.0.28833
+				-- 8.1.0.29088
+				-- 8.1.0.29139
+				-- 8.1.0.29235
+				-- 8.1.0.29285
+				-- 8.1.0.29297
+				-- 8.1.0.29482
+				-- 8.1.0.29600
+				-- 8.1.0.29621
+			}),
+			tier(BFA_TIER, 1.5, {
+				-- Unsorted
+				q(53787, {
+					["description"] = "Category: |cFFf09f26Engineering|r",
+					["lvl"] = 50,
+				}),
+				q(53943, {
+					["description"] = "Category: |cFFf09f26Engineering|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53953, {
+					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
+					["lvl"] = 60,
+					["races"] = HORDE_ONLY,
+				}),
+				q(54957, {
+					["description"] = "Area: |cFFf09f26Trueshot Lodge|r",
+					["lvl"] = 50,
+				}),
+				q(55023, {
+					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
+					["lvl"] = 60,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(55667, {
+					["lvl"] = 50,
+				}),
+				q(55668, {
+					["lvl"] = 50,
+				}),
+				-- Tools
+				-- 8.1.5.28938
+				q(53788),	--
+				q(53829),	--
+				q(53834),	--
+				q(53843),	-- The Ub3rlode
+				q(53944),	--
+				q(54030),	--
+				q(54752),	--
+				q(54962),	--
+				q(54993),	--
+				q(54994),	--
+				q(54998),	--
+				q(55000),	--
+				q(55001),	--
+				q(55140),	--
+				q(55141),	--
+				q(55147),	--
+				q(55163),	--
+				-- 8.1.5.29141
+				q(55189),	--
+				q(55190),	--
+				q(55191),	--
+				q(55237),	--
+				q(55238),	--
+				q(55239),	--
+				-- 8.1.5.29220
+				q(55376),	--
+				q(55377),	--
+				q(55464),	--
+				-- 8.1.5.29281
+				-- 8.1.5.29310
+				-- 8.1.5.29352
+				-- 8.1.5.29385
+				-- 8.1.5.29418
+				-- 8.1.5.29484
+				-- 8.1.5.29495
+				-- 8.1.5.29558
+				-- 8.1.5.29599
+				-- 8.1.5.29620
+				-- 8.1.5.29634
+				-- 8.1.5.29664
+				-- 8.1.5.29683
+				-- 8.1.5.29701
+				-- 8.1.5.29704
+				-- 8.1.5.29705
+				-- 8.1.5.29718
+				-- 8.1.5.29732
+				-- 8.1.5.29737
+				-- 8.1.5.29814
+				-- 8.1.5.29869
+				-- 8.1.5.29896
+				-- 8.1.5.29981
+				-- 8.1.5.30477
+				-- 8.1.5.30706
+			}),
+			tier(BFA_TIER, 2.0, {
+				-- Unsorted
+				q(54085, {
+					["lvl"] = 50,
+				}),
+				q(54941, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(54996, {
+					["description"] = "Category: |cFFf09f26Seasonal|r",
+					["lvl"] = 50,
+				}),
+				q(55111, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["g"] = {
+						i(169444, { -- Creature Compendium: Zanj'ir Naga
+							["q"] = 0,
+						})
+					}
+				}),
+				q(55224, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55225, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55226, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55483, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(55484, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(55487, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(55523, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(55524, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(55525, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(55526, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(55527, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(55722, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55788, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55802, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55803, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55804, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55805, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55806, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55807, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55808, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55809, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55826, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55835, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55838, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55839, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55840, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55841, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55842, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55843, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(55844, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["isDaily"] = 1,
+					["lvl"] = 50,
+				}),
+				q(56080, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(56081, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+				}),
+				q(56138, {
+					["description"] = "Type: |cFFf09f26Group|r\nArea: |cFFf09f26Mechagon|r",
+					["lvl"] = 50,
+				}),
+				q(56406, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				q(56409, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				q(56411, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				q(56412, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				q(56415, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				q(56416, {
+					["description"] = "Area: |cFFf09f26Nazjatar|r",
+					["lvl"] = 50,
+					["repeatable"] = 1,
+				}),
+				-- Tools
+				-- 8.2.0.30080
+				q(54122),	--
+				q(54125),	--
+				q(54866),	--
+				q(54867),	--
+				q(54966),	--
+				q(54967),	--
+				q(54968),	--
+				q(54970),	--
+				q(54971),	--
+				q(54973),	--
+				q(54974),	--
+				q(55093),	--
+				q(55102),	--
+				q(55104),	--
+				q(55149),	--
+				q(55150),	--
+				q(55151),	--
+				q(55212),	--
+				q(55352),	--
+				q(55365),	--
+				q(55370),	--
+				q(55371),	--
+				q(55372),	--
+				q(55402),	--
+				q(55406),	--
+				q(55415),	--
+				q(55416),	--
+				q(55417),	--
+				q(55418),	--
+				q(55419),	--
+				q(55420),	--
+				q(55421),	--
+				q(55422),	--
+				q(55453),	--
+				q(55501),	--
+				q(55540),	--
+				q(55541),	--
+				q(55542),	--
+				q(55543),	--
+				q(55606),	--
+				q(55621),	--
+				q(55653),	--
+				q(55656),	--
+				q(55666),	--
+				q(55702),	--
+				q(55703),	--
+				q(55741),	--
+				q(55744),	--
+				q(55746),	--
+				q(55762),	--
+				q(55769),	--
+				q(55800),	--
+				q(55925),	--
+				q(55930),	--
+				q(55968),	--
+				q(55974),	--
+				q(55975),	--
+				q(55977),	--
+				q(55978),	--
+				q(56005),	--
+				q(56040),	--
+				q(56052),	--
+				q(56065),	--
+				q(56073),	--
+				q(56101),	--
+				q(56102),	--
+				q(56115),	--
+				q(56124),	--
+				q(56127),	--
+				q(56140),	--
+				q(56147),	--
+				q(56204),	--
+				q(56228),	--
+				q(56229),	--
+				q(56230),	--
+				q(56251),	--
+				q(56252),	--
+				q(56253),	--
+				q(56254),	--
+				q(56317),	--
+				q(56331),	--
+				q(56333),	--
+				-- 8.2.0.30093
+				-- 8.2.0.30096
+				-- 8.2.0.30108
+				-- 8.2.0.30123
+				-- 8.2.0.30168
+				q(56478),	--
+				q(56498),	--
+				-- 8.2.0.30170
+				-- 8.2.0.30203
+				-- 8.2.0.30262
+				q(56509),	--
+				q(56510),	--
+				q(56512),	--
+				q(56513),	--
+				q(56514),	--
+				q(56524),	--
+				q(56531),	--
+				q(56545),	--
+				q(56546),	--
+				q(56549),	--
+				q(56551),	--
+				q(56553),	--
+				q(56554),	--
+				q(56555),	--
+				q(56556),	--
+				q(56567),	--
+				q(56568),	--
+				q(56601),	--
+				q(56607),	--
+				q(56618),	--
+				q(56636),	--
+				q(56637),	--
+				q(56638),	--
+				q(56639),	--
+				q(56651),	--
+				-- 8.2.0.30329
+				q(56666),	--
+				q(56667),	--
+				q(56691),	--
+				q(56699),	--
+				q(56702),	--
+				q(56704),	--
+				q(56709),	--
+				q(56717),	--
+				q(56718),	--
+				q(56736),	--
+				q(56738),	--
+				q(56742),	--
+				q(56744),	--
+				q(56745),	--
+				q(56766),	--
+				-- 8.2.0.30430
+				q(56841),	--
+				q(56844),	--
+				q(56845),	--
+				q(56846),	--
+				q(56847),	--
+				q(56848),	--
+				q(56849),	--
+				q(56850),	--
+				q(56851),	--
+				q(56852),	--
+				q(56853),	--
+				q(56854),	--
+				q(56855),	--
+				q(56856),	--
+				q(56857),	--
+				q(56858),	--
+				q(56859),	--
+				q(56860),	--
+				q(56861),	--
+				q(56862),	--
+				q(56863),	--
+				q(56864),	--
+				q(56865),	--
+				q(56866),	--
+				q(56867),	--
+				q(56868),	--
+				q(56869),	--
+				q(56870),	--
+				q(56871),	--
+				q(56872),	--
+				q(56873),	--
+				q(56874),	--
+				q(56875),	--
+				q(56876),	--
+				q(56884),	--
+				q(56897),	--
+				q(56898),	--
+				q(56902),	--
+				-- 8.2.0.30495
+				q(56945),	--
+				q(56949),	--
+				q(56967),	--
+				-- 8.2.0.30613
+				q(57012),	--
+				q(57013),	--
+				q(57014),	--
+				q(57015),	--
+				q(57016),	--
+				q(57017),	--
+				q(57018),	--
+				q(57019),	--
+				q(57020),	--
+				q(57021),	--
+				q(57033),	--
+				q(57044),	--
+				q(57066),	--
+				-- 8.2.0.30634
+				-- 8.2.0.30669
+				-- 8.2.0.30774
+				q(57139),	--
+				q(57144),	--
+				q(57184),	--
+				q(57193),	--
+				q(57194),	--
+				q(57195),	--
+				-- 8.2.0.30827
+				q(57225),	-- Short-Supply Reward
+				q(57226),	-- Short-Supply Reward
+				-- 8.2.0.30888
+				-- 8.2.0.30898
+				-- 8.2.0.30918
+				-- 8.2.0.30920
+				-- 8.2.0.30948
+				-- 8.2.0.30993
+				-- 8.2.0.31229
+				q(57408),	--
+				-- 8.2.0.31429
+				-- 8.2.0.31478
+			}),
+			tier(BFA_TIER, 2.5, {
+				-- Unsorted
+				q(54052, {
+					["description"] = "Category: |cFFf09f26Questfall|r",
+				}),
+				q(56622, {
+					["description"] = "Area: |cFFf09f26Ashran|r",
+					["lvl"] = 60,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(170077, { -- Gleaming Ashmaul Strongbox
+							["b"] = 1,
+							["ilvl"] = 72,
+							["q"] = 4,
+						})
+					}
+				}),
+				q(56623, {
+					["description"] = "Area: |cFFf09f26Ashran|r",
+					["lvl"] = 60,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(170077, { -- Gleaming Ashmaul Strongbox
+							["b"] = 1,
+							["ilvl"] = 72,
+							["q"] = 4,
+						})
+					}
+				}),
+				q(57308, {
+					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+					["lvl"] = 10,
+				}),
+				q(57319, {
+					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+					["lvl"] = 10,
+				}),
+				-- tools
+				-- 8.2.5.31337
+				q(56169),	--
+				q(56646),	--
+				q(56878),	--
+				q(56880),	--
+				q(56941),	--
+				q(57050),	--
+				q(57160),	--
+				q(57293),	--
+				q(57294),	--
+				q(57295),	--
+				q(57520),	--
+				q(57550),	--
+				q(57560),	--
+				-- 8.2.5.31401
+				q(57697),	--
+				q(57698),	--
+				q(57706),	--
+				-- 8.2.5.31521
+				-- 8.2.5.31599
+				-- 8.2.5.31812
+				q(58014),	--
+				q(58015),	--
+				q(58017),	--
+				q(58018),	--
+				q(58019),	--
+				-- 8.2.5.31884
+				-- 8.2.5.31919
+				-- 8.2.5.31921
+				-- 8.2.5.31958
+				-- 8.2.5.31960
+				-- 8.2.5.31961
+				-- 8.2.5.31984
+				-- 8.2.5.32028
+				-- 8.2.5.32079
+				-- 8.2.5.32144
+				-- 8.2.5.32185
+				-- 8.2.5.32265
+				-- 8.2.5.32294
+				-- 8.2.5.32305
+				-- 8.2.5.32494
+				-- 8.2.5.32580
+				-- 8.2.5.32638
+				-- 8.2.5.32722
+				-- 8.2.5.32750
+				-- 8.2.5.32978
+			}),
+			tier(BFA_TIER, 3.0, {
+				-- Unsorted
+				q(55036, {
+					["description"] = "Area: |cFFf09f26Prototype|r",
+					["lvl"] = 50,
+				}),
+				q(55037, {
+					["description"] = "Area: |cFFf09f26Prototype|r",
+					["lvl"] = 50,
+				}),
+				q(57022, {
+					["description"] = "Area: |cFFf09f26Uldum|r",
+					["lvl"] = 50,
+				}),
+				q(57155, {
+					["description"] = "Area: |cFFf09f26Crucible of Storms|r",
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(57156, {
+					["description"] = "Area: |cFFf09f26Crucible of Storms|r",
+					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
+				}),
+				q(57370, {
+					["description"] = "Area: |cFFf09f26Uldum|r",
+					["lvl"] = 50,
+				}),
+				q(57371, {
+					["description"] = "Area: |cFFf09f26Uldum|r",
+					["lvl"] = 50,
+				}),
+				-- Tools
+				-- 8.3.0.32044
+				q(48940),	-- West Trebuchet Defended
+				q(54037),	--
+				q(54038),	--
+				q(54039),	--
+				q(54985),	--
+				q(54987),	--
+				q(54988),	--
+				q(54989),	--
+				q(55085),	--
+				q(55105),	--
+				q(55613),	-- Tracking Quest
+				q(55614),	-- Tracking Quest
+				q(55640),	-- Vision of Stormwind
+				q(55643),	--
+				q(55644),	--
+				q(55655),	-- Tracking Quest
+				q(55850),	--
+				q(56027),	--
+				q(56059),	--
+				q(56060),	--
+				q(56061),	--
+				q(56062),	--
+				q(56077),	--
+				q(56093),	--
+				q(56096),	--
+				q(56125),	--
+				q(56130),	--
+				q(56342),	--
+				q(56366),	--
+				q(56369),	--
+				q(56653),	--
+				q(56654),	--
+				q(56655),	--
+				q(56656),	--
+				q(56657),	--
+				q(56822),	--
+				q(56828),	--
+				q(56831),	--
+				q(56835),	--
+				q(56934),	--
+				q(56940),	--
+				q(56953),	--
+				q(57054),	--
+				q(57056),	--
+				q(57057),	--
+				q(57073),	--
+				q(57154),	--
+				q(57196),	--
+				q(57250),	--
+				q(57286),	--
+				q(57287),	--
+				q(57289),	--
+				q(57292),	--
+				q(57431),	--
+				q(57440),	--
+				q(57472),	--
+				q(57489),	--
+				q(57518),	--
+				q(57523),	--
+				q(57621),	-- Summoning Ritual
+				q(57629),	--
+				q(57630),	--
+				q(57631),	--
+				q(57632),	--
+				q(57665),	--
+				q(57667),	--
+				q(57679),	--
+				q(57725),	--
+				q(57736),	--
+				q(57786),	--
+				q(57830),	--
+				q(57831),	--
+				q(57840),	--
+				q(57894),	--
+				q(57910),	--
+				q(57911),	--
+				q(57988),	--
+				q(58123),	--
+				q(58132),	--
+				q(58133),	--
+				q(58134),	--
+				q(58135),	--
+				q(58136),	--
+				q(58220),	--
+				q(58331),	--
+				q(58448),	--
+				q(58453),	--
+				q(58459),	--
+				q(58509),	--
+				q(58511),	--
+				q(58513),	--
+				-- 8.3.0.32151
+				q(58534),	--
+				q(58538),	--
+				q(58542),	--
+				q(58546),	--
+				q(58550),	--
+				q(58576),	--
+				q(58604),	--
+				q(58626),	--
+				-- 8.3.0.32203
+				q(58635),	--
+				-- 8.3.0.32218
+				-- 8.3.0.32272
+				q(58657),	--
+				q(58659),	--
+				q(58698),	--
+				q(58700),	--
+				-- 8.3.0.32414
+				q(58840),	--
+				q(58841),	--
+				q(58848),	--
+				q(58874),	--
+				-- 8.3.0.32489
+				q(57596),	--
+				q(58898),	--
+				q(58899),	--
+				q(58913),	--
+				q(58925),	--
+				q(58935),	--
+				q(58942),	--
+				q(58943),	--
+				q(58944),	--
+				q(58945),	--
+				-- 8.3.0.32593
+				q(58956),	--
+				q(59031),	--
+				q(59034),	--
+				q(59037),	--
+				q(59038),	--
+				q(59039),	--
+				q(59040),	--
+				q(59041),	--
+				q(59049),	--
+				q(59052),	--
+				q(59053),	--
+				-- 8.3.0.32712
+				q(59065),	--
+				-- 8.3.0.32805
+				q(59131),	--
+				q(59137),	--
+				q(59148),	--
+				q(59149),	--
+				q(59150),	--
+				q(59152),	--
+				q(59153),	--
+				q(59154),	--
+				q(59155),	--
+				q(59156),	--
+				q(59158),	--
+				q(59159),	--
+				q(59160),	--
+				q(59173),	-- Short-Supply Reward
+				q(59174),	-- Short-Supply Reward
+				-- 8.3.0.32846
+				-- 8.3.0.32861
+				q(59191),	--
+				q(59192),	--
+				q(59193),	--
+				q(59194),	--
+				q(59195),	--
+				-- 8.3.0.32976
+				-- 8.3.0.33010
+				-- 8.3.0.33051
+				-- 8.3.0.33062
+				-- 8.3.0.33073
+				-- 8.3.0.33084
+				-- 8.3.0.33095
+				-- 8.3.0.33115
+				-- 8.3.0.33169
+				-- 8.3.0.33183
+				-- 8.3.0.33237
+				-- 8.3.0.33369
+				-- 8.3.0.33528
+				-- 8.3.0.33724
+				-- 8.3.0.33775
+				-- 8.3.0.33941
+				-- 8.3.0.34220
+				-- 8.3.0.34601
+				-- 8.3.0.34769
+				-- 8.3.0.34963
+			}),
+			tier(BFA_TIER, 3.7, {
+				-- Tools
+				-- 8.3.7.34872
+				q(59248),	--
+				q(59291),	-- Conquest's Reward
+				q(59292),	-- Conquest's Reward
+				q(59553),	--
+				-- 8.3.7.35114
+				-- 8.3.7.35249
+				-- 8.3.7.35284
+				-- 8.3.7.35435
+				-- 8.3.7.35662
+			}),
+			q(54168, {
+				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
+				["isDaily"] = 1,
+				["races"] = HORDE_ONLY,
+				["repeatable"] = 1,
+			}),
+			q(54986, {
+				["lvl"] = 50,
+				["g"] = {
+					i(169154, { -- [PH] N'Zoth Cache
+						["q"] = 4,
+					})
+				}
+			}),
+			q(55208, {
+			}),
+			q(57640, {
+				["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+				["lvl"] = 10,
+			}),
+		}),
+	}),
 	tier(SL_TIER, {
 		n(QUESTS, {
 			-- 9.0.1
@@ -1679,6 +4178,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(60099, { ["name"] = "Fracture Chambers", }),	-- Fracture Chambers
 				q(60102, { ["name"] = "Kakophonus", }),	-- Kakophonus
 				q(59086, { ["name"] = "Manor of Minions", }),	-- Manor of Minions
+				q(57671, { ["name"] = "Meeting Blightcaller", }),	-- Meeting Blightcaller
 				q(59082, { ["name"] = "Next Realm!", }),	-- Next Realm!
 				q(62289, { ["name"] = "Observing Conflict", ["_drop"] = { "g" }, }),	-- Observing Conflict
 				q(59079, { ["name"] = "Portal to Paradise", }),	-- Portal to Paradise
@@ -3129,6 +5629,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.0.42937
 				-- 9.2.0.42979
 				-- 9.2.0.43114
+				-- 9.2.0.43206
+				-- 9.2.0.43340
+				-- 9.2.0.43345
 			})),
 
 			-- 9.2.5

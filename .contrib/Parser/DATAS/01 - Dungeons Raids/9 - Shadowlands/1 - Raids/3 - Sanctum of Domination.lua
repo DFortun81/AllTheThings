@@ -991,7 +991,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						crit(10, {	-- Sylvanas Windrunner
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
 						}),
-						ach(15134),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
+							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+						}),
 						ach(15133),	-- This World is a Prism
 						i(186398),	-- Edge of Night
 						i(186414, {	-- Rae'shalare, Death's Whisper
@@ -1236,8 +1238,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains
 						}),
-						ach(15134),	-- Ahead of the Curve: Sylvanas Windrunner
-						ach(15135),	-- Cutting Edge: Sylvanas Windrunner
+						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
+							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+						}),
+						ach(15135, {	-- Cutting Edge: Sylvanas Windrunner
+							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
+						}),
 						ach(15133),	-- This World is a Prism
 						i(186642),	-- Vengeance (MOUNT!)
 						i(186398),	-- Edge of Night

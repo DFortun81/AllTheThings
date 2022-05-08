@@ -367,74 +367,73 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
 					}),
-
-
-
-					q(46083, {	-- A Few Things First
-						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["cost"] = {
-							{ "i", 123918, 25 },	-- Leystone Ore x25
-							{ "i", 147768, 1 },		-- Suramarian Sapphire
-						},
-					}),
-					q(45645, {	-- A Fool's Errand
-						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
-						["provider"] = { "n", 117438 },	-- Doloria
-						["coord"] = { 48.2, 41.0, LEGION_DALARAN },
-					}),
-					q(43424, {	-- A Hero's Weapon
-						["sourceQuests"] = { 43697 },	-- Warriors of Light
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 72.6, 25.8, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(45566, {	-- A Knight's Belongings
-						["sourceQuests"] = { 45565 },	-- Further Training
-						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
-					}),
-					q(43700, {	-- A Light in the Darkness
+					q(43535, {	-- Translation: Danger!
 						["sourceQuests"] = {
-							43699,	-- Defenders of the World
-							43698,	-- Lumenstone
+							43487,	-- Assault on Violet Hold: The Fel Lexicon
+							43488,	-- Blood of Our Enemy
 						},
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-						["maps"] = { 702 },	-- Netherlight Temple
-					}),
-					q(43934, {	-- A New Path
-						["sourceQuests"] = { 43541 },	-- United As One
-						["provider"] = { "n", 110866 },	-- Delas Moonfang
-						["coord"] = { 48.5, 71.3, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(43491, {	-- Allies of the Light
-						["sourceQuests"] = { 43490 },	-- Aponi's Trail
-						["provider"] = { "n", 110969 },	-- Aponi Brightmane
-						["coord"] = { 48.9, 63.7, 748 },
-					}),
-					q(45974, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(45890, {	-- Ancestors and Enemies
-						["sourceQuests"] = { 45143 },	-- Judgment Awaits
-						["provider"] = { "n", 109102 },	-- Delas Moonfang
-						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(43490, {	-- Aponi's Trail
-						["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
-						["provider"] = { "o", 252232 },	-- Aponi's Libram
-						["coord"] = { 66.2, 26.1, AZSUNA },
-						["maps"] = { 748 },	-- Niskara
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
 					}),
 					q(43493, {	-- Black Rook Hold: Lord Ravencrest
 						["sourceQuests"] = { 43535 },	-- Translation: Danger!
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(44220, {	-- Blessing of the Order
-						["u"] = REMOVED_FROM_GAME,
+					q(43489, {	-- To Felblaze Ingress
+						["sourceQuests"] = { 43493 },	-- Black Rook Hold: Lord Ravencrest
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
+					q(43490, {	-- Aponi's Trail
+						["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
+						["provider"] = { "o", 252232 },	-- Aponi's Libram
+						["coord"] = { 66.2, 26.1, AZSUNA },
+						["maps"] = { 748 },	-- Niskara (Scenario Map)
+					}),
+					q(43540, {	-- The Mind of the Enemy
+						["sourceQuests"] = { 43490 },	-- Aponi's Trail
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.7, 748 },
+					}),
+					q(43491, {	-- Allies of the Light
+						["sourceQuests"] = { 43490 },	-- Aponi's Trail
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.7, 748 },
+					}),
+					q(43541, {	-- United As One
+						["sourceQuests"] = {
+							43491,	-- Allies of the Light
+							43540,	-- The Mind of the Enemy
+						},
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+						["g"] = {
+							i(139697),	-- Bindings of the Silver Hand
+						},
+					}),
+					q(43492, {	-- Champion: Aponi Brightmane
+						["sourceQuests"] = { 43541 },	-- United As One
+						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
+						["coord"] = { 48.3, 72.4, LIGHTS_HOPE_CHAPEL },
+						["g"] = {
+							follower(757),	-- Aponi Brightmane
+						},
+					}),
+					q(43934, {	-- A New Path
+						["sourceQuests"] = { 43541 },	-- United As One
+						["provider"] = { "n", 110866 },	-- Delas Moonfang
+						["coord"] = { 48.5, 71.3, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(43933, {	-- Champion: Delas Moonfang
+						["sourceQuests"] = { 43934 },	-- A New Path
+						["provider"] = { "n", 113299 },	-- Delas Moonfang
+						["coord"] = { 71.9, 24.4, LIGHTS_HOPE_CHAPEL },
+						["g"] = {
+							follower(756),	-- Delas Moonfang
+						},
+					}),
+					-- Chap
 					q(43534, {	-- Blood of Sargeras
 						["sourceQuests"] = {
 							43492,	-- Champion: Aponi Brightmane
@@ -443,12 +442,38 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(43492, {	-- Champion: Aponi Brightmane
-						["sourceQuests"] = { 43541 },	-- United As One
-						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
-						["coord"] = { 48.3, 72.4, LIGHTS_HOPE_CHAPEL },
+					q(43698, {	-- Lumenstone
+						["sourceQuests"] = {
+							43492,	-- Champion: Aponi Brightmane
+							43933,	-- Champion: Delas Moonfang
+						},
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(43699, {	-- Defenders of the World
+						["sourceQuests"] = {
+							43492,	-- Champion: Aponi Brightmane
+							43933,	-- Champion: Delas Moonfang
+						},
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(43700, {	-- A Light in the Darkness
+						["sourceQuests"] = {
+							43699,	-- Defenders of the World
+							43698,	-- Lumenstone
+						},
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+						["maps"] = { NETHERLIGHT_TEMPLE },
+					}),
+					q(43697, {	-- Warriors of Light
+						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
 						["g"] = {
-							follower(757),	-- Aponi Brightmane
+							i(139690),	-- Breastplate of the Silver Hand
+							title(345),	-- Highlord %s
 						},
 					}),
 					q(43785, {	-- Champion: Arator the Redeemer
@@ -459,14 +484,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(758),	-- Arator the Redeemer
 						},
 					}),
-					q(43933, {	-- Champion: Delas Moonfang
-						["sourceQuests"] = { 43934 },	-- A New Path
-						["provider"] = { "n", 113299 },	-- Delas Moonfang
-						["coord"] = { 71.9, 24.4, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							follower(756),	-- Delas Moonfang
-						},
-					}),
 					q(43701, {	-- Champion: Lothraxion
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
@@ -474,6 +491,59 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							follower(759),	-- Lothraxion
 						},
+					}),
+					q(43424, {	-- A Hero's Weapon
+						["sourceQuests"] = { 43697 },	-- Warriors of Light
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 72.6, 25.8, LIGHTS_HOPE_CHAPEL },
+					}),
+					-- Interlude
+					q(45974, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					q(45975, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					-- 7.2.0
+					q(45143, {	-- Judgement Awaits
+						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
+						["provider"] = { "n", 90249 },	-- Lady Liadrin
+						["coord"] = { 50.3, 74.1, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(45890, {	-- Ancestors and Enemies
+						["sourceQuests"] = { 45143 },	-- Judgment Awaits
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(46259, {	-- Darkbinder Dilemma
+						["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
+						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
+						["coord"] = { 66.8, 53.4, VALSHARAH },
+					}),
+					q(45145, {	-- Moonfang Family Relics
+						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
+						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
+						["coord"] = { 66.8, 53.4, VALSHARAH },
+					}),
+					q(45146, {	-- Runic Reading
+						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(45147, {	-- Felstone Destruction
+						["sourceQuests"] = { 45146 },	-- Runic Reading
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(45148, {	-- Oath Breaker
+						["sourceQuests"] = { 45147 },	-- Felstone Destruction
+						["provider"] = { "n", 119545 },	-- Nerus Moonfang
+						["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
+					}),
+					q(45149, {	-- Ending the Crescent Curse
+						["sourceQuests"] = { 45147 },	-- Felstone Destruction
+						["provider"] = { "n", 119545 },	-- Nerus Moonfang
+						["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(46045, {	-- Champion: Nerus Moonfang
 						["sourceQuests"] = {
@@ -485,28 +555,46 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(1000),	-- Nerus Moonfang
 						},
 					}),
-					q(46259, {	-- Darkbinder Dilemma
-						["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
-						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
-						["coord"] = { 66.8, 53.4, VALSHARAH },
+					q(46069, {	-- Worthy of the Title
+						["sourceQuests"] = { 46045 },	-- Champion: Nerus Moonfang
+						["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
+						["coord"] = { 43.8, 63.0, BROKEN_SHORE },
 					}),
-					q(43699, {	-- Defenders of the World
-						["sourceQuests"] = {
-							43492,	-- Champion: Aponi Brightmane
-							43933,	-- Champion: Delas Moonfang
-						},
+					q(46070, {	-- Preparations Underway
+						["sourceQuests"] = { 46069 },	-- Worthy of the Title
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
+						["cost"] = { { "i", 131746, 1 } },	-- Stonehide Leather Barding
+					}),
+					q(46071, {	-- The Hammer of Dalaran
+						["sourceQuests"] = { 46070 },	-- Preparations Underway
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 					}),
-					q(45149, {	-- Ending the Crescent Curse
-						["sourceQuests"] = { 45147 },	-- Felstone Destruction
-						["provider"] = { "n", 119545 },	-- Nerus Moonfang
-						["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
+					q(46083, {	-- A Few Things First
+						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
+						["provider"] = { "n", 92183 },	-- Alard Schmied
+						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["cost"] = {
+							{ "i", 123918, 25 },	-- Leystone Ore x25
+							{ "i", 147768, 1 },		-- Suramarian Sapphire
+						},
 					}),
-					q(45147, {	-- Felstone Destruction
-						["sourceQuests"] = { 45146 },	-- Runic Reading
-						["provider"] = { "n", 109102 },	-- Delas Moonfang
-						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
+
+
+
+					q(45645, {	-- A Fool's Errand
+						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
+						["provider"] = { "n", 117438 },	-- Doloria
+						["coord"] = { 48.2, 41.0, LEGION_DALARAN },
+					}),
+					q(45566, {	-- A Knight's Belongings
+						["sourceQuests"] = { 45565 },	-- Further Training
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+					}),
+					q(44220, {	-- Blessing of the Order
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(45565, {	-- Further Training
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
@@ -516,14 +604,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(42844, {	-- Growing Power
 						["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
 						["isBreadcrumb"] = true,
-					}),
-					q(45975, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(45143, {	-- Judgement Awaits
-						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
-						["provider"] = { "n", 90249 },	-- Lady Liadrin
-						["coord"] = { 50.3, 74.1, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(45562, {	-- Kneel and Be Squired!
 						["sourceQuests"] = { 45561 },	-- Seek Me Out
@@ -535,44 +615,15 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 					}),
-					q(43698, {	-- Lumenstone
-						["sourceQuests"] = {
-							43492,	-- Champion: Aponi Brightmane
-							43933,	-- Champion: Delas Moonfang
-						},
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(45145, {	-- Moonfang Family Relics
-						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
-						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
-						["coord"] = { 66.8, 53.4, VALSHARAH },
-					}),
 					q(45567, {	-- My Kingdom for a Horse
 						["sourceQuests"] = { 45566 },	-- A Knight's Belongings
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
-					q(45148, {	-- Oath Breaker
-						["sourceQuests"] = { 45147 },	-- Felstone Destruction
-						["provider"] = { "n", 119545 },	-- Nerus Moonfang
-						["coord"] = { 58.9, 31.9, LIGHTS_HOPE_CHAPEL },
-					}),
 					q(45644, {	-- Oh Doloria, My Sweet Doloria
 						["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
 						["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
-					}),
-					q(46070, {	-- Preparations Underway
-						["sourceQuests"] = { 46069 },	-- Worthy of the Title
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-						["cost"] = { { "i", 131746, 1 } },	-- Stonehide Leather Barding
-					}),
-					q(45146, {	-- Runic Reading
-						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
-						["provider"] = { "n", 109102 },	-- Delas Moonfang
-						["coord"] = { 59.1, 32.6, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(45561, {	-- Seek Me Out
 						-- ["sourceQuests"] = { },	-- TODO
@@ -591,53 +642,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
 					}),
-					q(46071, {	-- The Hammer of Dalaran
-						["sourceQuests"] = { 46070 },	-- Preparations Underway
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(43540, {	-- The Mind of the Enemy
-						["sourceQuests"] = { 43490 },	-- Aponi's Trail
-						["provider"] = { "n", 110969 },	-- Aponi Brightmane
-						["coord"] = { 48.9, 63.7, 748 },
-					}),
 					q(45568, {	-- They Stole Excaliberto!
 						["sourceQuests"] = { 45567 },	-- My Kingdom for a Horse
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
-					}),
-					q(43489, {	-- To Felblaze Ingress
-						["sourceQuests"] = { 43493 },	-- Black Rook Hold: Lord Ravencrest
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-					}),
-					q(43535, {	-- Translation: Danger!
-						["sourceQuests"] = {
-							43487,	-- Assault on Violet Hold: The Fel Lexicon
-							43488,	-- Blood of Our Enemy
-						},
-						["provider"] = { "n", 110571 },	-- Delas Moonfang
-						["coord"] = { 44.6, 23.1, LEGION_DALARAN },
-					}),
-					q(43541, {	-- United As One
-						["sourceQuests"] = {
-							43491,	-- Allies of the Light
-							43540,	-- The Mind of the Enemy
-						},
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
-						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
-							i(139697),	-- Bindings of the Silver Hand
-						},
-					}),
-					q(43697, {	-- Warriors of Light
-						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
-						["g"] = {
-							i(139690),	-- Breastplate of the Silver Hand
-							title(345),	-- Highlord %s
-						},
 					}),
 					q(45813, {	-- Where Art Thou, My Sweet
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
@@ -646,11 +654,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							follower(1001),	-- Maximillian of Northshire
 						},
-					}),
-					q(46069, {	-- Worthy of the Title
-						["sourceQuests"] = { 46251 },	-- Shard Times
-						["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
-						["coord"] = { 43.8, 63.0, BROKEN_SHORE },
 					}),
 					--
 					q(44219, {	-- Fate's Blessing
