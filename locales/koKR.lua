@@ -1102,8 +1102,10 @@ for key,value in pairs({
 	[186585] = "용가죽 두루마리",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "커다란 호박등",	-- Large Jack-o'-Lantern
+	[187072] = "서슬가시 뿌리",	-- Razorthorn Root
 	[187236] = "겨울맞이 축제 선물",	-- Winter Veil Gift
 	[187273] = "수상한 발굽 자국",	-- Suspicious Hoofprint
+	[187333] = "선홍딸기 덤불",	-- Bloodberry Bush
 	[187559] = "호드 화톳불",	-- Horde Bonfire
 	[187564] = "얼라이언스 화톳불",	-- Alliance Bonfire
 	[187565] = "장로 아트카노크",	-- Elder Atkanok

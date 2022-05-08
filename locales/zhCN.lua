@@ -1107,8 +1107,10 @@ for key, value in pairs({
 	--TODO: [186585] = "Dragonskin Scroll",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "大南瓜灯",	-- Large Jack-o'-Lantern
+	--TODO: [187072] = "Razorthorn Root",	-- Razorthorn Root
 	[187236] = "冬幕节礼物",	-- Winter Veil Gift
 	[187273] = "可疑的蹄印",	-- Suspicious Hoofprint
+	[187333] = "血莓灌木",	-- Bloodberry Bush
 	[187559] = "部落篝火",	-- Horde Bonfire
 	[187564] = "联盟篝火",	-- Alliance Bonfire
 	[187565] = "长者阿特卡诺克",	-- Elder Atkanok
