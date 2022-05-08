@@ -1088,8 +1088,10 @@ for key,value in pairs({
 	[186585] = "Свиток из кожи дракона",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Большой светильник из тыквы",	-- Large Jack-o'-Lantern
+	[187072] = "Корень острого шипа",	-- Razorthorn Root
 	[187236] = "Подарок к Зимнему Покрову",	-- Winter Veil Gift
 	[187273] = "Подозрительный след копыта",	-- Suspicious Hoofprint
+	[187333] = "Куст Кровяники",	-- Bloodberry Bush
 	[187559] = "Большой костер Орды",	-- Horde Bonfire
 	[187564] = "Большой костер Альянса",	-- Alliance Bonfire
 	[187565] = "Старейшина Атканок",	-- Elder Atkanok

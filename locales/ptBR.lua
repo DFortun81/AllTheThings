@@ -1102,8 +1102,10 @@ for key,value in pairs({
 	[186585] = "Pergaminho de Pele de Dragão",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Lanterna de Abóbora Grande",	-- Large Jack-o'-Lantern
+	[187072] = "Raiz Espinhosa",	-- Razorthorn Root
 	[187236] = "Presente de Véu de Inverno",	-- Winter Veil Gift
 	[187273] = "Pegada Suspeita",	-- Suspicious Hoofprint
+	[187333] = "Arbusto de Fruta-sangue",	-- Bloodberry Bush
 	[187559] = "Fogueira da Horda",	-- Horde Bonfire
 	[187564] = "Fogueira da Aliança",	-- Alliance Bonfire
 	[187565] = "Ancião Atkanok",	-- Elder Atkanok
