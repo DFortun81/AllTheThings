@@ -700,7 +700,7 @@ namespace ATT
                     switch (filter)
                     {
                         case Objects.Filters.Recipe:
-                            data["recipeID"] = data["spellID"];
+                            data["recipeID"] = f;
                             break;
                             //default:
                             //    data.Remove("spellID");

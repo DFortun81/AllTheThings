@@ -1,10 +1,10 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Text;
-using System.Collections.Concurrent;
 
 namespace ATT
 {
@@ -257,14 +257,21 @@ namespace ATT
             /// <returns></returns>
             public static bool TryGetName(Dictionary<string, object> data, out string name)
             {
+                // get the name of the Sourced data
                 data.TryGetValue("name", out name);
 
+                // get the name for matching specific Item
                 if (name == null)
-                    Get(data).TryGetValue("name", out name);
+                    GetNull(data)?.TryGetValue("name", out name);
+
+                // get the name for the general Item
+                if (name == null && data.TryGetValue("itemID", out decimal itemID))
+                    GetNull(itemID)?.TryGetValue("name", out name);
 
                 return name != null;
             }
             #endregion
+
             #region Export
             /// <summary>
             /// Export Item Debugging Files to the supplied directory.
