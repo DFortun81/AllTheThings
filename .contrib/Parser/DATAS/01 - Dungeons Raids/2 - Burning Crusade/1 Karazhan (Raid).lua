@@ -456,7 +456,6 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9637,	-- Kalynna's Request
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 32.2, 63.6, NETHERSTORM },
-					["maps"] = { NETHERSTORM },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Faint Arcane Essence
