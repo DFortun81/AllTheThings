@@ -380,7 +380,7 @@ root("Zones", m(ZANDALAR, {
 	}),
 }));
 
-root("Zones", m(ZANDALAR, {
+root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, {
 	m(ZULDAZAR, {
 		q(54324),	-- completing 'Ritual Rampage'
 	}),

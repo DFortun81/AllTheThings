@@ -1174,13 +1174,13 @@ _.Zones =
 				}),
 				q(49218, {	-- The Castaways (A)
 					["isBreadcrumb"] = true,
-					["coord"] = { 85.5, 83.5, TIRAGARDE_SOUND },
+					["coord"] = { 85.8, 83.5, TIRAGARDE_SOUND },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
 				}),
 				q(53442, {	-- The Castaways (H)
 					["isBreadcrumb"] = true,
-					["coord"] = { 85.5, 83.5, TIRAGARDE_SOUND },
+					["coord"] = { 85.8, 83.5, TIRAGARDE_SOUND },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
 				}),
