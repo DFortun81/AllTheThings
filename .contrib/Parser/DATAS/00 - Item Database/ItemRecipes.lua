@@ -29,7 +29,7 @@ end
 -----------------
 ProfessionID = ALCHEMY;
 -----------------
--- CLA
+-- #IF AFTER CLASSIC
 i(6454, 7935); -- Manual: Strong Anti-Venom
 i(9294, 11458); -- Recipe: Wildvine Potion
 i(13487, 17564); -- Recipe: Transmute Water to Undeath
@@ -54,14 +54,14 @@ i(9298, 11472); -- Recipe: Elixir of Giants
 i(3830, 3450); -- Recipe: Elixir of Fortitude
 i(9297, 11468); -- Recipe: Elixir of Dream Vision
 i(3832, 3453); -- Recipe: Elixir of Detect Lesser Invisibility
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(186990, 354885); -- Recipe: Blossom Burst
 i(183106, 307087); -- Recipe: Eternal Cauldron
 i(186988, 354881); -- Recipe: Glory Burst
@@ -73,51 +73,75 @@ i(187848, 360318); -- Recipe: Sustaining Armor Polish
 i(186987, 354884); -- Recipe: Torch Burst
 i(186986, 354882); -- Recipe: Widow Burst
 i(186991, 307144); -- Transmute: Stones to Ore
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = ARCHAEOLOGY;
 -----------------
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = BLACKSMITHING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(183094, 322590); -- Plans: Shadowsteel Helm
 i(183095, 322593); -- Plans: Shadowsteel Pauldrons
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = COOKING;
 -----------------
--- CLA
+-- #IF AFTER CLASSIC
 i(21025, 25659); -- Recipe: Dirge's Kickin' Chimaerok Chops
 i(17200, 21143, FEAST_OF_WINTER_VEIL); -- Recipe: Gingerbread Cookie
 i(3737, 3400, "removed 4.0.3.2000"); -- Recipe: Soothing Turtle Bisque
 -- #if NOT ANYCLASSIC
 i(7678, 9513, REMOVED_FROM_GAME); -- Recipe: Thistle Tea
 -- #endif
--- BC
--- WOTLK
--- CATA
--- MOP
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
 i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(187007, 354766); -- Recipe: Bonemeal Bread
 i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup
 i(184625, 347176); -- Recipe: Extra Sugary Fish Feast
@@ -126,78 +150,123 @@ i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast
 i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism
 i(187008, 354768); -- Recipe: Porous Rock Candy
 i(187006, 354764); -- Recipe: Twilight Tea
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = ENCHANTING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(186992, 355184); -- Formula: Anima-ted Leash
 i(187826, 360013); -- Formula: Cosmic Protoweave
 i(187824, 360007); -- Formula: Magically Regulated Automa Core
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = ENGINEERING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(187837, 360126); -- Schematic: Erratic Genesis Matrix
 i(183097, 331007); -- Schematic: PHA7-YNX
 i(187832, 360088); -- Schematic: Pure-Air Sail Extensions
 i(183858, 310535); -- Schematic: Wormhole Generator: Shadowlands
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = FISHING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = HERBALISM;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = INSCRIPTION;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(183098, 311424); -- Technique: Codex of the Still Mind
 i(183102, 311412); -- Technique: Contract: Court of Harvesters
 i(186724, 354000); -- Technique: Contract: Death's Advance
@@ -211,13 +280,22 @@ i(190381, 367393); -- Technique: Glyph of the Spectral Vulpine
 i(173068, 311453); -- Vantus Rune Technique: Castle Nathria
 i(186671, 354394); -- Vantus Rune Technique: Sanctum of Domination
 i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = JEWELCRAFTING;
 -----------------
--- CLA
--- BC
--- WOTLK
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
 i(43319, 58149); -- Design: Windfire Band
 i(41563, 53884); -- Design: Willful Huge Citrine
 i(41688, 53985); -- Design: Veiled Twilight Opal
@@ -293,7 +371,7 @@ i(42300, 56053); -- Design: Brilliant Dragon's Eye
 i(42309, 56053); -- Design: Brilliant Dragon's Eye
 i(41576, 53830); -- Design: Bold Scarlet Ruby
 i(42298, 56049); -- Design: Bold Dragon's Eye
--- CATA
+-- #IF AFTER CATA
 i(46952, 66571); -- Design: Willful Ametrine
 i(46951, 66570); -- Design: Veiled Dreadstone
 i(46914, 66445); -- Design: Turbid Eye of Zul
@@ -367,78 +445,124 @@ i(46930, 66446); -- Design: Brilliant Cardinal Ruby
 i(46916, 66446); -- Design: Brilliant Cardinal Ruby
 i(46917, 66447); -- Design: Bold Cardinal Ruby
 i(47010, 66576); -- Design: Accurate Dreadstone
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(187830, 360016); -- Design: Aealic Harmonizing Stone
 i(180783, 334548); -- Design: Crown of the Righteous
 i(187847, 360317); -- Design: Devourer Essence Stone
 i(186993, 355187); -- Design: Porous Stone Statue
 i(183099, 311870); -- Design: Revitalizing Jewel Doublet
 i(186994, 355189); -- Design: Shaded Stone Statue
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = JUNKYARD_TINKERING;
 -----------------
--- BFA
+-- #IF AFTER BFA
+-- #ENDIF
 
 -----------------
 ProfessionID = LEATHERWORKING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(187000, 355354); -- Pattern: Elusive Pet Treat
 i(183839, 308897); -- Pattern: Heavy Callous Hide
 i(183100, 324088); -- Pattern: Heavy Desolate Armor Kit
 i(186999, 354800); -- Pattern: Pallid Bone Flute
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = MINING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = SKINNING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
 
 -----------------
 ProfessionID = TAILORING;
 -----------------
--- CLA
--- BC
--- WOTLK
--- CATA
--- MOP
--- WOD
--- LEG
--- BFA
--- SHD
+-- #IF AFTER CLASSIC
+-- #IF AFTER TBC
+-- #IF AFTER WRATH
+-- #IF AFTER CATA
+-- #IF AFTER MOP
+-- #IF AFTER WOD
+-- #IF AFTER LEGION
+-- #IF AFTER BFA
+-- #IF AFTER SHADOWLANDS
 i(180781, 334499); -- Pattern: Pink Party Hat
 i(183101, 310898); -- Pattern: Shadowlace Cloak
 i(186995, 355183); -- Pattern: Shrouded Hand Towel
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
+-- #ENDIF
