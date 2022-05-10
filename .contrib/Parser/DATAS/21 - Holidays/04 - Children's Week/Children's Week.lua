@@ -1622,7 +1622,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 	},
 }));
 
-root(ROOTS.Holidays, {
+root(ROOTS.HiddenQuestTriggers, {
 	q(55376),	-- completing Hunting for Gold (53969)
 	q(55377),	-- completing Hunting for Gold (53969)
 });
