@@ -2984,9 +2984,6 @@ profession(COOKING, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
-			un(REMOVED_FROM_GAME, i(27736, {	-- Master Cookbook
-				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
-			})),
 			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy
 			un(REMOVED_FROM_GAME, i(3736)),		-- Recipe: Tasty Lion Steak
 			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
