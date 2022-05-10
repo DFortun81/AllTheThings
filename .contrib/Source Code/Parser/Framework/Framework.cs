@@ -230,7 +230,6 @@ namespace ATT
         private static readonly string[] HeirarchicalConsolidationFields = new string[]
         {
             "sourceIgnored",
-            "requireSkill"
         };
 
         /// <summary>
