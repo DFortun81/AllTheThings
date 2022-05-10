@@ -6349,7 +6349,7 @@ i(46951, {	-- Design: Veiled Dreadstone
 i(46952, {	-- Design: Willful Ametrine
 	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 }),
-]]
+--]]
 -- #endif
 
 -- #if AFTER CATA

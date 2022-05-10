@@ -147,7 +147,6 @@ profession(ENGINEERING, {
 				{ "i", 4392, 2 },	-- Advanced Target Dummy
 				{ "i", 4407, 1 },	-- Accurate Scope
 			},
-			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
 		q(29475, {	-- Goblin Engineering

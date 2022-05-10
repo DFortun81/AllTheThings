@@ -1160,6 +1160,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
+					["sym"] = {
+						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+						{"isnt","c"},	-- Discard headers for Classes [c]
+					},
 					["groups"] = {
 						i(50993),	-- Band of the Night Raven
 						i(50996),	-- Belt of Omission
@@ -1198,11 +1204,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						i(50973),	-- Vestments of Spruce and Fir
 						i(50469),	-- Volde's Cloak of the Night Sky
 						i(50992),	-- Waistband of Despair
-					},
-					["sym"] = {
-						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
 				}),
 				n(38181, {	-- Haragg the Unseen <Warlock Armor>

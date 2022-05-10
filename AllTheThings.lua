@@ -1788,6 +1788,7 @@ local MergeProperties = function(g, t, noReplace, clone)
 end
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
+-- CreateObject(t, rootOnly)
 local CreateObject;
 CreateObject = function(t, rootOnly)
 	if not t then return {}; end
@@ -6899,7 +6900,7 @@ end
 	end
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	GameTooltip.SetCurrencyToken = function(self, tokenID)
-		-- print("set currency token", tokenID)
+		-- app.PrintDebug("GameTooltip.SetCurrencyToken", tokenID)
 		-- this only runs once per tooltip show
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
@@ -17618,7 +17619,6 @@ function app:BuildSearchResponse(groups, field, value, clear)
 		local ignoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
 		for _,group in ipairs(groups) do
 			v = group[field];
-			response = nil;
 			if v and (not value or
 				(v == value or
 					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then

@@ -1545,6 +1545,7 @@ root("Zones", {
 						["coord"] = { 78.5, 63.0, ZANGARMARSH },
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},

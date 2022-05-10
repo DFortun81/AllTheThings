@@ -75,7 +75,8 @@ local WARDEN_OF_THE_GROUPS = {
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
 };
-root("Holidays", applyholiday(CHILDRENS_WEEK, {
+
+root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 	-- #if ANYCLASSIC
 	["npcID"] = -52,
 	-- #else
@@ -1620,3 +1621,8 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 		-- #endif
 	},
 }));
+
+root(ROOTS.Holidays, {
+	q(55376),	-- completing Hunting for Gold (53969)
+	q(55377),	-- completing Hunting for Gold (53969)
+});

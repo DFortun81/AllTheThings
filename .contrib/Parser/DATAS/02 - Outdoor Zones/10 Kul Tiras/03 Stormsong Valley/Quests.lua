@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KULTIRAS, {
+root(ROOTS.Zones, m(KULTIRAS, {
 	m(STORMSONG_VALLEY, {
 		n(QUESTS, {
 			q(50616, {	-- A Bit of a Bind
@@ -1712,7 +1712,7 @@ root("Zones", m(KULTIRAS, {
 	}),
 }));
 
-root("HiddenQuestTriggers", m(KULTIRAS, {
+root(ROOTS.HiddenQuestTriggers, m(KULTIRAS, {
 	m(STORMSONG_VALLEY, {
 		n(QUESTS, {
 			q(51354),	-- Anger in a Bottle (seems to just be a duplicate version)
@@ -1724,12 +1724,14 @@ root("HiddenQuestTriggers", m(KULTIRAS, {
 			q(54855),	-- naming the ship "The Lionheart" during Blessing of the Tides quest to recruit Kul Tirans
 			q(54775),	-- Warmode Storm's Rage
 			q(54716),	-- Secret Chest during Stormsong Valley Incursion in Warmode
+			q(54317),	-- BfA Alliance Stormsong "Invasion"
 			--q(53635),	-- Got this either just after collecting Curious Grain Sacks, or after Killing Poacher Zane
+			q(50694),	-- triggers with / alternate way of completing 'A Bloody Mess' (50593)
 		}),
 	}),
 }));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			filter(CLOTH, {

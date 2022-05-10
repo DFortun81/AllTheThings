@@ -861,12 +861,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 -- 41154??
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(40514),	-- Warlock Order Hall - Revil convinced
 	q(40686),	-- Warlock Order Hall - Affliction chosen first
 	q(40687),	-- Destruction Chosen (first)
 	q(42084),	-- Selecting a Sixth: Kira
 	q(42085),	-- Selecting a Sixth: Lulubelle
+	q(42203),	-- Using Portal to Scenario during Dark Whispers (42125)
+	q(42205),	-- Using Portal to Scenario during Dark Whispers (42125)
 	q(40688),	-- Warlock Order Hall - Choosing demonology artifact first
 	q(43982),	-- Warlock Order Hall - Demonology chosen second
 	q(43981),	-- Warlock Order Hall - Aff chosen second
@@ -888,9 +890,9 @@ root("HiddenQuestTriggers", {
 });
 
 -- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
+-- root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+-- 	n(QUESTS, {
 
-	}),
-}));
+-- 	}),
+-- }));
 -- #endif

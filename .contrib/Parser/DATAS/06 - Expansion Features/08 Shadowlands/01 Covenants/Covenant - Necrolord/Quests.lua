@@ -815,9 +815,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["coord"] = { 66.2, 32.1, MALDRAXXUS },
 			}),
 			q(63624, {	-- The Roads We Walk
+				["customCollect"] = "SL_COV_NEC",	-- Necrolord
 				["sourceQuests"] = { 63623 },	-- Filling an Empty Throne
 				["provider"] = { "n", 177975 },	-- The Primus
 				["coord"] = { 49.7, 51.4, SEAT_OF_THE_PRIMUS },
+				-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
+				["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
 			}),
 			q(62843, {	-- The Soul Contact
 				["sourceQuests"] = { 61397 },	-- Opportunity Strikes

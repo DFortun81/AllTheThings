@@ -337,12 +337,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-				q(54132, {	-- Horde of Heroes (Faction Assault WQ)
-					["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
-					["lvl"] = 110,
-					["races"] = HORDE_ONLY,
-					["isWorldQuest"] = true,
-				}),
 				q(52988, {	-- House Cleaning
 					["lvl"] = { 50 },
 					["races"] = ALLIANCE_ONLY,

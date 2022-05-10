@@ -1226,6 +1226,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 
 		q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
 		q(64848),	-- Choosing Torghast as leveling
 		q(65030),	-- accepting/completing 'Battlegrounds' [65031]
+		q(65753),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Devouring Malediction'
 		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
 		q(66047),	-- Solo Shuffle Completion? /First win
 		q(65511),	-- Stay a while and listen with Vareesa Windrunner

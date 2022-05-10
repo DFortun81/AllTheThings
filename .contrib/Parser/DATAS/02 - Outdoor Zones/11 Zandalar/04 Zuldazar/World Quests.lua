@@ -137,6 +137,10 @@ root("Zones", m(ZANDALAR, {
 					i(160307),	-- Raal's Hexing Stick
 				},
 			}),
+			q(54132, {	-- Horde of Heroes (Faction Assault WQ)
+				["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
+				["races"] = HORDE_ONLY,
+			}),
 			a(q(51178)),	-- Hundred Troll Holdout (A)
 			h(q(51232)),	-- Hundred Troll Holdout (H)
 			q(51305),	-- Jelly Clouds (possibly NYI?)
@@ -383,5 +387,6 @@ root("Zones", m(ZANDALAR, {
 root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, {
 	m(ZULDAZAR, {
 		q(54324),	-- completing 'Ritual Rampage'
+		q(54776),	-- completing 'Horde of Heroes'
 	}),
 }));

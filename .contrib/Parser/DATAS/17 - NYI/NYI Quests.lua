@@ -2141,11 +2141,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(50670, {
 
 				}),
-				q(50694, {
-					["description"] = "Area: |cFFf09f26Stormsong Valley|r",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50709, {
 					["description"] = "Category: |cFFf09f26Warfronts|r",
 					["isDaily"] = 1,
@@ -3248,7 +3243,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54286),	--
 				q(54290),	--
 				q(54313),	--
-				q(54317),	--
 				q(54321),	--
 				q(54349),	-- Darkshore Donations: Tidespray Linen Bandage
 				q(54398),	--

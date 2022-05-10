@@ -67,7 +67,6 @@ root("HiddenQuestTriggers", {
 		--q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde
 		--q(62688),	-- Popped taking portal to Oribos
 		--q(55628),	-- Killing Paol Pondwader(Second ID?) / 'A Sound Defense' Quest / after killing (Rare) Beehemoth in Stormsong Valley / triggering this, am doing WQ "Too Much To Bear" / Trig Sound and doing Azerite Mining WQ
-		--q(54317),	-- BfA Alliance Stormsong "Invasion"
 		--q(62521),	-- unknown tracking
 		--q(62571),	-- Flying in Maldraxxus
 		--q(62397),	-- Unknown

@@ -2918,6 +2918,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},
@@ -2978,6 +2979,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},
