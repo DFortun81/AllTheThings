@@ -1178,7 +1178,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE 3.0.1
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					["groups"] = {
 						objective(1, {	-- 0/2 Pit Overlord
 							["provider"] = { "i", 34475 },	-- Arcane Charges
