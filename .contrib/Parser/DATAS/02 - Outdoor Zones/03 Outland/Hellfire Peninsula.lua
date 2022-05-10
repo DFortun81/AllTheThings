@@ -695,6 +695,7 @@ root("Zones", {
 					applyclassicphase(TBC_PHASE_FIVE, q(11516, {	-- Blast the Gateway
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
+						["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 25, 70),
 						["isDaily"] = true,
@@ -712,6 +713,7 @@ root("Zones", {
 					applyclassicphase(TBC_PHASE_FIVE, q(11515, {	-- Blood for Blood
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
+						["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 25, 70),
 						["isDaily"] = true,
