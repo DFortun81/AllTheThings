@@ -1228,6 +1228,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 
 		q(65030),	-- accepting/completing 'Battlegrounds' [65031]
 		q(65753),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Devouring Malediction'
 		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
+		q(65756),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
 		q(66047),	-- Solo Shuffle Completion? /First win
 		q(65511),	-- Stay a while and listen with Vareesa Windrunner
 		q(65618),	-- Stay a while and listen with Bolvar

@@ -436,9 +436,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",

@@ -990,7 +990,6 @@ root("HiddenQuestTriggers", {
 		---   OUTLAND   ---
 		-------------------
 		--	QUESTING / LEVELING
-		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
 		q(12494),	-- FLAG: Riding Training Advertisement
