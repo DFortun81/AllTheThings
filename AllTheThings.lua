@@ -4486,6 +4486,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
+			group.fillable = true;
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
 			-- Fill up the group
@@ -4869,8 +4870,8 @@ local function DetermineSymlinkGroups(group, depth)
 end
 local function FillGroupsRecursive(group, depth)
 	-- do not fill 'saved' groups
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
+	-- or groups directly under saved groups unless in Acct or Debug mode or if the group is directly marked as fillable (i.e. from a search result)
+	if not app.MODE_DEBUG_OR_ACCOUNT and not group.fillable then
 		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
 		local parent = group.parent;
