@@ -275,7 +275,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
 		q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
 		q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-		q(39991),	-- Blessing of Cenarius -- didn't make it to live, triggers when turning in #39988
 		q(45816),	-- Choose Order Hall to Support
 		q(46273),	-- The Giver of Quests
 		q(46256),	-- X Treasures Found, 1 Challenge Attempted

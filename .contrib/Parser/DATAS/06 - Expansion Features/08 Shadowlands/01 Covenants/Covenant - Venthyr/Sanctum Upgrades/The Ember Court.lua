@@ -2383,7 +2383,7 @@ root("HiddenQuestTriggers", {
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
 			--q(61941),	-- Maybe Etiquette?
 			--q(61926),	-- Maybe Revendreth Etiquette?
-			--q(63353),	-- Achievement related to "Rendles Big Day"
+			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
