@@ -1072,7 +1072,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
 					["qg"] = 25112,	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { "removed 3.0.1" },
 					-- #if BEFORE 3.0.1
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
@@ -1413,6 +1413,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11517, {	-- Report to Nasuun
 					["qg"] = 25034,	-- Tradesman Portanuus
 					["coord"] = { 47.2, 35.0, ISLE_OF_QUELDANAS },
+					["maps"] = { SHATTRATH_CITY },
 					-- #if ANYCLASSIC
 					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					-- #endif
@@ -1554,7 +1555,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B, q(11548, {	-- Your Continued Support
 					["qg"] = 25112,	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["cost"] = { { "g", 100000 } },	-- 10g
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
