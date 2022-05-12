@@ -1588,6 +1588,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						i(35766),	-- Design: Steady Seaspray Emerald
 						i(35500),	-- Formula: Enchant Chest - Dodge
 						i(34872),	-- Formula: Void Shatter
+						i(29193, {	-- Glyph of the Gladiator
+							["timeline"] = { "removed 5.0.4" },
+						}),
 						i(34672),	-- Inuuro's Blade
 						i(34671),	-- K'iru's Presage
 						i(34673),	-- Legionfoe
