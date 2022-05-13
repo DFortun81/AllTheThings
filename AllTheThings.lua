@@ -3779,7 +3779,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 			-- If there's progress to display, then let's summarize a bit better.
 			if group.visible then
 				-- Insert into the display.
-				-- if app.DEBUG_PRINT then print("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
+				-- app.PrintDebug("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 				local o = { group = group, right = GetProgressTextForRow(group) };
 				local indicator = app.GetIndicatorIcon(group);
 				o.prefix = indicator and (string.sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
@@ -4339,7 +4339,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Find or Create the root group for the search results, and capture the results which need to be nested instead
 		local root;
 		local nested = {};
-		-- app.PrintDebug("Find Root for",paramA,paramB);
+		-- app.PrintDebug("Find Root for",paramA,paramB,"#group",group and #group);
 		-- check for Item groups in a special way to account for extra ID's
 		if paramA == "itemID" then
 			local refinedMatches = app.GroupBestMatchingItems(group, paramB);
@@ -4427,11 +4427,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if paramA == "itemID" then
 			paramB = root.modItemID or paramB;
 		end
-		-- print("Root",root.key,root[root.key],root.modItemID);
+		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID);
 		-- app.PrintTable(root)
-		-- print("Root Collect",root.collectible,root.collected);
-		-- print("params",paramA,paramB);
-		-- print(#nested,"Nested total");
+		-- app.PrintDebug("Root Collect",root.collectible,root.collected);
+		-- app.PrintDebug("params",paramA,paramB);
+		-- app.PrintDebug(#nested,"Nested total");
 		-- Nest the objects by matching filter priority if it's not a currency
 		if paramA ~= "currencyID" then
 			PriorityNestObjects(root, nested, nil, app.RecursiveGroupRequirementsFilter);
@@ -4465,6 +4465,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
+		-- Ensure no weird parent references attached to the base search result
+		group.sourceParent = nil;
+		group.parent = nil;
 
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
@@ -4486,7 +4489,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
-			group.fillable = true;
 			-- Append currency info to any orphan currency groups
 			app.BuildCurrencies(group);
 			-- Fill up the group
@@ -4497,10 +4499,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
-			-- Ensure no weird parent references attached to the base search result
-			group.sourceParent = nil;
-			group.parent = nil;
-
 			BuildGroups(group, group.g);
 			app.TopLevelUpdateGroup(group);
 		end
@@ -4554,15 +4552,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	if topLevelSearch and group.g then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
+			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
 			local entries, left, right = {};
 			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
-			-- print(entries and #entries,"contains entries")
+			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
 				local tooltipSourceFields = app.TooltipSourceFields;
-				local costCollectibles = group.costCollectibles;
-				-- print("#entries",#entries);
 				tinsert(info, { left = L["CONTAINS"] });
 				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
 				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithField, app.SearchForObject;
@@ -4665,7 +4662,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					tinsert(info, { left = L["AND_"] .. (#entries - containCount) .. L["_MORE"] .. "..." });
 				end
 				if app.Settings:GetTooltipSetting("Currencies") then
+					-- app.PrintDebug("Currencies",group.hash,#entries)
 					local currencyCount = 0;
+					local costCollectibles = group.costCollectibles;
 					for i=1,#entries do
 						item = entries[i];
 						group = item.group;
@@ -4775,19 +4774,23 @@ local function DeterminePurchaseGroups(group)
 		if curSkipLevel and curSkipLevel < reqSkipLevel then return; end;
 	end
 
-	local collectibles = group.costCollectibles or (group.collectibleAsCost and group.costCollectibles);
+	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
+		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
-		local clone;
+		local groupHash = group.hash;
+		local clone, hash;
 		for _,o in ipairs(collectibles) do
-			if not included[o.hash] then
+			hash = o.hash;
+			-- don't add copies of this group if it matches the 'cost' group, or has already been used
+			if hash ~= groupHash and not included[hash] then
 				clone = CreateObject(o);
 				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
 				-- clone.indicatorIcon = "Interface_Vendor";
 				tinsert(groups, clone);
 			end
 		end
-		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,groups and #groups);
+		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
 		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
 		group.collectibleAsCost = false;
 		return groups;
@@ -4870,8 +4873,8 @@ local function DetermineSymlinkGroups(group, depth)
 end
 local function FillGroupsRecursive(group, depth)
 	-- do not fill 'saved' groups
-	-- or groups directly under saved groups unless in Acct or Debug mode or if the group is directly marked as fillable (i.e. from a search result)
-	if not app.MODE_DEBUG_OR_ACCOUNT and not group.fillable then
+	-- or groups directly under saved groups unless in Acct or Debug mode
+	if not app.MODE_DEBUG_OR_ACCOUNT then
 		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
 		local parent = group.parent;
@@ -4893,8 +4896,8 @@ local function FillGroupsRecursive(group, depth)
 	if groups then
 		-- increment depth if things are being nested
 		depth = (depth or 0) + 1;
-		-- block crafted items always, but allow other types to duplicate a few levels
-		if depth >= DuplicatePreventionLevel then
+		-- block crafted items or currencies always, but allow other types to duplicate a few levels
+		if depth >= DuplicatePreventionLevel or group.currencyID then
 			for _,o in ipairs(groups) do
 				included[o.hash or ""] = depth;
 				included[o.itemID or 0] = depth;
@@ -7226,79 +7229,152 @@ app.CreateCache = function(idField)
 	return cache;
 end
 -- Function which returns whether the given Thing can even be considered as a collectible currency based on current settings
-app.PreCheckCollectible = function(t)
+local function PreCheckCollectible(t)
 	return app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected");
 end
 -- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
-app.CheckCollectible = function(ref)
+local function CheckCollectible(ref)
 	-- don't include groups which do not meet the current filter requirements
 	if app.RecursiveGroupRequirementsFilter(ref) then
 		-- Used as a cost for something which is collectible itself and not collected
-		-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
+		-- app.PrintDebug("CheckCollectible",ref.hash)
 		if ref.collectible then
-			-- if LOG then print("Cost Required via Collectible") end
+			-- app.PrintDebug("Cost Required via Collectible",ref.hash)
 			return true,ref.collected;
 		-- Used as a cost for something which has an incomplete progress
 		elseif ref.total and ref.total > 0 then
-			-- if LOG then print("Cost Required via Total/Prog") end
+			-- app.PrintDebug("Cost Required via Total/Prog",ref.hash)
 			return true,ref.progress == ref.total;
 		-- Used as a cost for something which is collectible as a cost itself and not collected
 		elseif ref.collectibleAsCost then
-			-- if LOG then print("Cost Required via Collectible") end
+			-- app.PrintDebug("Cost Required via collectibleAsCost",ref.hash)
 			return true,ref.collectedAsCost;
-		-- Something that hasn't been calculated yet which could contain collectibles
-		elseif not ref.total and (ref.sym or ref.g) then
-			-- If this is something with ONLY direct subgroups, just build it out in the source
-			if ref.g and not ref.sym then
-				-- Build the ref groups
-				BuildGroups(ref, ref.g);
-				-- do an Update pass for the ref
+		end
+		-- If this group has sub-groups and not yet updated, then update this group and check the total to see if it has collectibles
+		if ref.g and (ref.total or 0) == 0 then
+			-- checking last update time is needed for groups which have a cost but nothing actually collectible due to filters... total is 0
+			local lastUpdate = ref._LastUpdateTime;
+			-- app.PrintDebug("Updating sub-groups...",ref.hash)
+			-- do an Update pass for the ref if necessary
+			if not lastUpdate or lastUpdate < app._LastUpdateTime then
+				ref._LastUpdateTime = app._LastUpdateTime;
 				app.TopLevelUpdateGroup(ref);
-				-- print("Populated collectedAsCost for (raw groups)",t.modItemID)
+				-- app.PrintDebug("Updated sub-groups",ref.hash,ref.progress,ref.total,ref._LastUpdateTime,"<=",app._LastUpdateTime)
 				-- app.PrintTable(ref)
-				-- check if this ref has been completed
-				if ref.total and ref.total > 0 then
-					return true,ref.progress == ref.total;
+				-- raw sub-groups have something collectible, so return
+				if ref.total and ref.progress < ref.total then
+					return true,false;
 				end
-			else
-				local refCache = ref._cache;
-				if refCache then
-					-- Already have a cached version of this reference with populated content
-					local expItem = refCache.GetCachedField(ref, "_populated");
-					if expItem then
-						if expItem.total and expItem.total > 0 then
-							return true,expItem.progress == expItem.total;
-						end
-						return;
-					end
-					-- print("Un-populated collectedAsCost",t.modItemID)
-					-- app.PrintTable(ref)
-					-- create a cached copy of this ref if it is an Item
-					expItem = CreateObject(ref);
-					-- fill the copied Item's symlink if any
-					FillSymLinks(expItem);
-					-- Build the Item's groups if any
-					BuildGroups(expItem, expItem.g);
-					-- do an Update pass for the copied Item
-					app.TopLevelUpdateGroup(expItem);
-					-- print("Populated collectedAsCost (symlink)",t.modItemID)
-					-- app.PrintTable(expItem)
-					-- save it in the Item cache in case something else is able to purchase this reference
-					refCache.SetCachedField(ref, "_populated", expItem);
-					-- check if this expItem has been completed
+			end
+		end
+		-- If this group has a symlink, generate the symlink into a cached version of the ref and see if it has collectibles
+		if ref.sym then
+			-- app.PrintDebug("Checking symlink...",ref.hash)
+			local refCache = ref._cache;
+			if refCache then
+				-- Already have a cached version of this reference with populated content
+				local expItem = refCache.GetCachedField(ref, "_populated");
+				if expItem then
+					-- app.PrintDebug("Cached symlink",expItem.hash,expItem.progress,expItem.total)
 					if expItem.total and expItem.total > 0 then
 						return true,expItem.progress == expItem.total;
 					end
+					return;
 				end
-				-- print("cannot determine collectibility")
-				-- print("cost",t.key,t.key and t[t.key])
+				-- app.PrintDebug("Filling symlink...",ref.hash)
 				-- app.PrintTable(ref)
-				-- print(ref.__type, ref._cache)
-				return false,false;
+				-- create a cached copy of this ref if it is an Item
+				expItem = CreateObject(ref);
+				-- fill the copied Item's symlink if any
+				FillSymLinks(expItem);
+				-- Build the Item's groups if any
+				BuildGroups(expItem, expItem.g);
+				-- do an Update pass for the copied Item
+				app.TopLevelUpdateGroup(expItem);
+				-- app.PrintDebug("Fresh symlink",expItem.hash,expItem.progress,expItem.total)
+				-- app.PrintTable(expItem)
+				-- save it in the Item cache in case something else is able to purchase this reference
+				refCache.SetCachedField(ref, "_populated", expItem);
+				-- check if this expItem has been completed
+				if expItem.total and expItem.total > 0 then
+					return true,expItem.progress == expItem.total;
+				end
 			end
+			-- print("cannot determine collectibility")
+			-- print("cost",t.key,t.key and t[t.key])
+			-- app.PrintTable(ref)
+			-- print(ref.__type, ref._cache)
+			-- return false,false;
 		end
 	end
+end
+-- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
+app.CollectibleAsCost = function(t)
+	local collectibles = t.costCollectibles;
+	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
+	if not collectibles or #collectibles == 0 then return; end
+	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		local parent = t.parent;
+		if parent and parent.questID and parent.saved then
+			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
+			return;
+		end
+	end
+	-- Make sure this thing can actually be collectible
+	if not PreCheckCollectible(t) then
+		-- app.PrintDebug("CollectibleAsCost:PreCheckCollectible",t.hash)
+		return;
+	end
+	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
+	t.collectibleAsCost = false;
+	-- check the collectibles if any are considered collectible currently
+	local collectible, collected;
+	for _,ref in ipairs(collectibles) do
+		-- Use the common collectibility check logic
+		collectible, collected = CheckCollectible(ref);
+		if collectible and not collected then
+			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
+			t.collectibleAsCost = nil;
+			return true;
+		end
+	end
+	-- app.PrintDebug("CollectibleAsCost:false",t.hash)
+	t.collectibleAsCost = nil;
+end
+app.CollectedAsCost = function(t)
+	local collectibles = t.costCollectibles;
+	if not collectibles or #collectibles == 0 then return; end
+	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
+	if not app.MODE_DEBUG_OR_ACCOUNT then
+		local parent = t.parent;
+		if parent and parent.questID and parent.saved then
+			-- app.PrintDebug("CollectedAsCost:t.parent.saved",t.hash)
+			return;
+		end
+	end
+	-- Make sure this thing can actually be collectible
+	if not PreCheckCollectible(t) then
+		-- app.PrintDebug("CollectedAsCost:PreCheckCollectible",t.hash)
+		return;
+	end
+	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
+	t.collectedAsCost = false;
+	-- check the collectibles if any are considered collectible currently
+	local collectible, collected;
+	for _,ref in ipairs(collectibles) do
+		-- Use the common collectibility check logic
+		collectible, collected = CheckCollectible(ref);
+		if collectible and not collected then
+			-- app.PrintDebug("CollectedAsCost:false",t.hash,"from",ref.hash)
+			t.collectedAsCost = nil;
+			return;
+		end
+	end
+	-- app.PrintDebug("CollectedAsCost:true",t.hash)
+	t.collectedAsCost = nil;
+	return true;
 end
 end)();
 
@@ -8352,6 +8428,18 @@ end
 local function default_link(t)
 	return C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1);
 end
+local function default_costCollectibles(t)
+	local id = t.currencyID;
+	if id then
+		local results = app.SearchForField("currencyIDAsCost", id);
+		if results and #results > 0 then
+			-- not sure we need to copy these into another table
+			-- app.PrintDebug("default_costCollectibles",t.hash,#results)
+			return results;
+		end
+	end
+	return app.EmptyTable;
+end
 local fields = {
 	["key"] = function(t)
 		return "currencyID";
@@ -8377,63 +8465,10 @@ local fields = {
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
 	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles");
+		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
-	["collectibleAsCost"] = function(t)
-		if not t.costCollectibles then
-			local results, id;
-			if t.currencyID then
-				id = t.currencyID;
-				results = app.SearchForField("currencyIDAsCost", id);
-			end
-			if results and #results > 0 then
-				local costCollectibles, collectible = {};
-				cache.SetCachedField(t, "costCollectibles", costCollectibles);
-				local canBeCollectible = app.PreCheckCollectible(t);
-				for _,ref in pairs(results) do
-					-- different currencyID
-					if ref.currencyID ~= t.currencyID and
-						-- is not a parent of the cost group itself
-						not GetRelativeField(t, "parent", ref) then
-						-- track this item as a cost collectible
-						tinsert(costCollectibles, ref);
-						if canBeCollectible then
-							collectible = collectible or app.CheckCollectible(ref);
-						end
-					end
-				end
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-				return collectible;
-			else
-				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
-			end
-		else
-			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-			-- Make sure this thing can actually be collectible
-			if not app.PreCheckCollectible(t) then return; end
-			-- Use the common collectibility check logic
-			local collectible;
-			for _,ref in pairs(t.costCollectibles) do
-				collectible = app.CheckCollectible(ref);
-				if collectible then return true; end
-			end
-		end
-	end,
-	["collectedAsCost"] = function(t)
-		local collectibles = t.costCollectibles;
-		if not collectibles then return; end
-		-- Make sure this thing can actually be collectible
-		if not app.PreCheckCollectible(t) then return; end
-		local collectible, collected;
-		for _,ref in pairs(collectibles) do
-			-- Use the common collectibility check logic
-			collectible, collected = app.CheckCollectible(ref);
-			if collectible and not collected then return false; end
-		end
-		return true;
-	end,
+	["collectibleAsCost"] = app.CollectibleAsCost,
+	["collectedAsCost"] = app.CollectedAsCost,
 	["costTotal"] = function(t)
 		return t.collectibleAsCost and 1 or 0;
 	end,
@@ -9866,6 +9901,35 @@ end
 local function default_specs(t)
 	return GetFixedItemSpecInfo(t.itemID);
 end
+local function default_costCollectibles(t)
+	local results, id;
+	local modItemID = t.modItemID;
+	-- Search by modItemID if possible for accuracy
+	if modItemID and modItemID ~= t.itemID then
+		id = modItemID;
+		results = app.SearchForField("itemIDAsCost", id);
+		-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
+	end
+	-- If no results, search by itemID + modID only if different
+	if not results then
+		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
+		if id ~= modItemID then
+			results = app.SearchForField("itemIDAsCost", id);
+			-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
+		end
+	end
+	-- If no results, search by plain itemID only
+	if not results and t.itemID then
+		id = t.itemID;
+		results = app.SearchForField("itemIDAsCost", id);
+	end
+	if results and #results > 0 then
+		-- not sure we need to copy these into another table
+		-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
+		return results;
+	end
+	return app.EmptyTable;
+end
 local itemFields = {
 	["key"] = function(t)
 		return "itemID";
@@ -9933,71 +9997,10 @@ local itemFields = {
 		return app.CollectibleAchievements;
 	end,
 	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles");
+		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
-	["collectibleAsCost"] = function(t)
-		if not t.costCollectibles then
-			-- if t.itemID == 71686 then app.DEBUG_PRINT = true; end
-			local results, id;
-			-- Search by modItemID if possible for accuracy
-			if t.modItemID and t.modItemID ~= t.itemID then
-				id = t.modItemID;
-				results = app.SearchForField("itemIDAsCost", id);
-				-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
-			end
-			-- If no results, search by itemID + modID only if different
-			if not results then
-				id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
-				if id ~= t.modItemID then
-					results = app.SearchForField("itemIDAsCost", id);
-					-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
-				end
-			end
-			-- If no results, search by plain itemID only
-			if not results and t.itemID then
-				id = t.itemID;
-				results = app.SearchForField("itemIDAsCost", id);
-			end
-			-- if app.DEBUG_PRINT then print("collectibleAsCost",t.modItemID,results and #results) end
-			if results and #results > 0 then
-				-- setup the costCollectibles initially
-				-- app.PrintDebug("> costs",t.hash,t.modItemID)
-				local costCollectibles, collectible = {};
-				cache.SetCachedField(t, "costCollectibles", costCollectibles);
-				local canBeCollectible = app.PreCheckCollectible(t);
-				for _,ref in pairs(results) do
-					-- different itemID, OR same itemID with different modID is allowed
-					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
-						-- is not a parent of the cost group itself
-						not GetRelativeField(t, "parent", ref)
-						then
-						-- track this item as a cost collectible
-						tinsert(costCollectibles, ref);
-						if canBeCollectible then
-							collectible = collectible or app.CheckCollectible(ref);
-						end
-					end
-				end
-				-- app.PrintDebug("< costs")
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-				return collectible;
-			else
-				cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
-			end
-		else
-			-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-			-- Make sure this thing can actually be collectible
-			if not app.PreCheckCollectible(t) then return; end
-			-- Use the common collectibility check logic
-			local collectible;
-			for _,ref in pairs(t.costCollectibles) do
-				collectible = app.CheckCollectible(ref);
-				if collectible then return true; end
-			end
-		end
-	end,
+	["collectibleAsCost"] = app.CollectibleAsCost,
+	["collectedAsCost"] = app.CollectedAsCost,
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
@@ -10010,22 +10013,7 @@ local itemFields = {
 	["collectibleAsTransmog"] = function(t)
 		return app.CollectibleTransmog;
 	end,
-	["collectibleAsQuest"] = function(t)
-		return app.CollectibleAsQuest(t);
-	end,
-	["collectedAsCost"] = function(t)
-		local collectibles = t.costCollectibles;
-		if not collectibles then return; end
-		-- Make sure this thing can actually be collectible
-		if not app.PreCheckCollectible(t) then return; end
-		local collectible, collected;
-		for _,ref in pairs(collectibles) do
-			-- Use the common collectibility check logic
-			collectible, collected = app.CheckCollectible(ref);
-			if collectible and not collected then return false; end
-		end
-		return true;
-	end,
+	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsFaction"] = function(t)
 		if t.factionID then
 			if t.repeatable then
@@ -10986,9 +10974,23 @@ local function CacheInfo(t, field)
 	end
 	if field then return _t[field]; end
 end
+local function default_costCollectibles(t)
+	local id = t.itemID;
+	if id then
+		local results = app.SearchForField("itemIDAsCost", id);
+		if results and #results > 0 then
+			-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
+			return results;
+		end
+	end
+	return app.EmptyTable;
+end
 local mountFields = {
 	["key"] = function(t)
 		return "spellID";
+	end,
+	["_cache"] = function(t)
+		return cache;
 	end,
 	["text"] = function(t)
 		return cache.GetCachedField(t, "text", CacheInfo);
@@ -11006,74 +11008,16 @@ local mountFields = {
 		return app.CollectibleMounts;
 	end,
 	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles");
+		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
-	["collectibleAsCost"] = function(t)
-		local id = t.itemID;
-		if id then
-			if not t.costCollectibles then
-				-- search by plain itemID only
-				local results = app.SearchForField("itemIDAsCost", id);
-				-- app.PrintDebug("collectibleAsCost",id,results and #results)
-				if results and #results > 0 then
-					-- setup the costCollectibles initially
-					-- app.PrintDebug("> costs",t.hash,t.modItemID)
-					local costCollectibles, collectible = {};
-					cache.SetCachedField(t, "costCollectibles", costCollectibles);
-					local canBeCollectible = app.PreCheckCollectible(t);
-					for _,ref in pairs(results) do
-						-- different itemID
-						if ref.itemID ~= id and
-							-- is not a parent of the cost group itself
-							not GetRelativeField(t, "parent", ref)
-							then
-							-- track this item as a cost collectible
-							tinsert(costCollectibles, ref);
-							if canBeCollectible then
-								collectible = collectible or app.CheckCollectible(ref);
-							end
-						end
-					end
-					-- app.PrintDebug("< costs")
-					-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-					if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-					return collectible;
-				else
-					cache.SetCachedField(t, "costCollectibles", app.EmptyTable);
-				end
-			else
-				-- This instance of the Thing (t) is not actually collectible for this character if it is under a saved parent
-				if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return; end
-				-- Make sure this thing can actually be collectible
-				if not app.PreCheckCollectible(t) then return; end
-				-- Use the common collectibility check logic
-				local collectible;
-				for _,ref in pairs(t.costCollectibles) do
-					collectible = app.CheckCollectible(ref);
-					if collectible then return true; end
-				end
-			end
-		end
-	end,
+	["collectibleAsCost"] = app.CollectibleAsCost,
+	["collectedAsCost"] = app.CollectedAsCost,
 	["collected"] = function(t)
 		if ATTAccountWideData.Spells[t.spellID] then return 1; end
 		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
-	end,
-	["collectedAsCost"] = function(t)
-		local collectibles = t.costCollectibles;
-		if not collectibles then return; end
-		-- Make sure this thing can actually be collectible
-		if not app.PreCheckCollectible(t) then return; end
-		local collectible, collected;
-		for _,ref in pairs(collectibles) do
-			-- Use the common collectibility check logic
-			collectible, collected = app.CheckCollectible(ref);
-			if collectible and not collected then return false; end
-		end
-		return true;
 	end,
 	["costTotal"] = function(t)
 		return t.collectibleAsCost and 1 or 0;
@@ -11292,12 +11236,8 @@ local npcFields = {
 	["linkAsAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
 	end,
-	["collectibleAsQuest"] = function(t)
-		return app.CollectibleAsQuest(t);
-	end,
-	["collectedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
+	["collectibleAsQuest"] = app.CollectibleAsQuest,
+	["collectedAsQuest"] = IsQuestFlaggedCompletedForObject,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID) or IsAnyQuestFlaggedCompleted(t.altQuests);
 	end,
@@ -11465,9 +11405,7 @@ local objectFields = {
 	["linkAsAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
 	end,
-	["collectibleAsQuest"] = function(t)
-		return app.CollectibleAsQuest(t);
-	end,
+	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
@@ -14376,6 +14314,7 @@ end
 app.Windows = {};
 app._UpdateWindows = function(force, got)
 	-- app.PrintDebug("_UpdateWindows",force,got)
+	app._LastUpdateTime = GetTimePreciseSec();
 	for _,window in pairs(app.Windows) do
 		window:Update(force, got);
 	end
