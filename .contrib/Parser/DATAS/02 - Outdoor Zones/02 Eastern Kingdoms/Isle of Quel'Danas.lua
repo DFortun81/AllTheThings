@@ -1057,7 +1057,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				})),
 			}),
 			n(FACTIONS, {
-				faction(1077),	-- Shattered Sun Offensive
+				faction(1077, {	-- Shattered Sun Offensive
+					["maps"] = { MAGISTERS_TERRACE },
+				}),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(213, {	-- Shattered Sun Stage Area
