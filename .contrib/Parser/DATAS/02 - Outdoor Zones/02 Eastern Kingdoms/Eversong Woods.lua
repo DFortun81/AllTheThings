@@ -111,6 +111,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -129,6 +130,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3.10000" },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -147,6 +149,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -165,6 +168,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -208,6 +212,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -228,6 +233,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -265,6 +271,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -285,6 +292,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -502,6 +510,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						-- #endif
@@ -659,6 +668,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { PALADIN },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -677,6 +687,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -694,6 +705,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -711,6 +723,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -728,6 +741,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
@@ -745,6 +759,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 7.0.3.10000" },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							-- #if AFTER CATA
 							["lvl"] = lvlsquish(3, 1, 3),
 							-- #else
