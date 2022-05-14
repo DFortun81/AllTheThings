@@ -4614,30 +4614,30 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #entries > 0 then
 				local tooltipSourceFields = app.TooltipSourceFields;
 				tinsert(info, { left = L["CONTAINS"] });
-				local containCount, item, group = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
+				local containCount, item, entry = math.min(app.Settings:GetTooltipSetting("ContainsCount") or 25, #entries);
 				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithField, app.SearchForObject;
 				for i=1,containCount do
 					item = entries[i];
-					group = item.group;
-					left = group.text or RETRIEVING_DATA;
+					entry = item.group;
+					left = entry.text or RETRIEVING_DATA;
 					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
 
-					-- If this group has a specific Class requirement and is not itself a 'Class' header, tack that on as well
-					if group.c and group.key ~= "classID" and #group.c == 1 then
-						local class = GetClassInfo(group.c[1]);
-						left = left .. " [" .. app.TryColorizeName(group, class) .. "]";
+					-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
+					if entry.c and entry.key ~= "classID" and #entry.c == 1 then
+						local class = GetClassInfo(entry.c[1]);
+						left = left .. " [" .. app.TryColorizeName(entry, class) .. "]";
 					end
-					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
+					if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
 
-					-- If this group has specialization requirements, let's attempt to show the specialization icons.
+					-- If this entry has specialization requirements, let's attempt to show the specialization icons.
 					right = item.right;
-					local specs = group.specs;
+					local specs = entry.specs;
 					if specs and #specs > 0 then
 						right = GetSpecsString(specs, false, false) .. right;
 					end
-					-- If this group has customCollect requirements, list them for clarity
-					if group.customCollect then
-						for i,c in ipairs(group.customCollect) do
+					-- If this entry has customCollect requirements, list them for clarity
+					if entry.customCollect then
+						for i,c in ipairs(entry.customCollect) do
 							local icon_color_str = L["CUSTOM_COLLECTS_REASONS"][c]["icon"].." |c"..L["CUSTOM_COLLECTS_REASONS"][c]["color"]..L["CUSTOM_COLLECTS_REASONS"][c]["text"];
 							if i > 1 then
 								right = icon_color_str .. " / " .. right;
@@ -4646,13 +4646,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 					end
-					-- If this group is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-					if group.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
+					-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+					if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
 						-- Add the Zone name
 						local field, id;
 						for _,v in ipairs(tooltipSourceFields) do
 							if not field then
-								id = RecursiveParentField(group, v, true);
+								id = RecursiveParentField(entry, v, true);
 								-- print("check",v,id)
 								if id then field = v; end
 							end
@@ -4687,25 +4687,25 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							locationGroup = SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
 							locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						end
-						-- print("contains info",group.itemID,field,id,locationGroup,locationName)
+						-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
 						if locationName then
 							-- Add the immediate parent group Vendor name
-							local rawParent, sParent = rawget(group, "parent"), group.sourceParent;
-							-- the source group is different from the raw parent and the search context, then show the source parent text for reference
+							local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
+							-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
 							if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
 								right = locationName .. " > " .. sParent.text .. " " .. right;
 							else
 								right = locationName .. " " .. right;
 							end
 						-- else
-							-- print("No Location name for item",group.itemID,id,field)
+							-- print("No Location name for item",entry.itemID,id,field)
 						end
 					end
-					-- If this group is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
-					if group.criteriaID and group.achievementID then
-						local rawParent = rawget(group, "parent");
-						if not rawParent or rawParent.achievementID ~= group.achievementID then
-							local critAch = SearchForObject("achievementID", group.achievementID);
+					-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
+					if entry.criteriaID and entry.achievementID then
+						local rawParent = rawget(entry, "parent");
+						if not rawParent or rawParent.achievementID ~= entry.achievementID then
+							local critAch = SearchForObject("achievementID", entry.achievementID);
 							left = left .. " > " .. critAch.text;
 						end
 					end
@@ -4716,18 +4716,24 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				if app.Settings:GetTooltipSetting("Currencies") then
 					-- app.PrintDebug("Currencies",group.hash,#entries)
-					local currencyCount = 0;
 					local costCollectibles = group.costCollectibles;
-					for i=1,#entries do
-						item = entries[i];
-						group = item.group;
-						if group.collectible and not group.collected then
-							local canBeBoughtFor = app.ItemCanBeBoughtWithCurrencyCount(group.itemID, paramB, costCollectibles);
-							currencyCount = currencyCount + canBeBoughtFor;
+					-- app.PrintDebug("costCollectibles",group.hash,costCollectibles and #costCollectibles)
+					if costCollectibles and #costCollectibles > 0 then
+						local costAmounts = app.BuildCostTable(costCollectibles, paramB);
+						local currencyCount, CheckCollectible = 0, app.CheckCollectible;
+						local entryGroup, collectible, collected;
+						for _,costEntry in ipairs(entries) do
+							entryGroup = costEntry.group;
+							collectible, collected = CheckCollectible(entryGroup);
+							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
+							if collectible and not collected then
+								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
+								currencyCount = currencyCount + (entryGroup.total - entryGroup.progress) * (costAmounts[entryGroup.hash] or 0);
+							end
 						end
-					end
-					if currencyCount > 0 then
-						tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = currencyCount });
+						if currencyCount > 0 then
+							tinsert(info, { left = L["CURRENCY_NEEDED_TO_BUY"], right = formatNumericWithCommas(currencyCount) });
+						end
 					end
 				end
 			end
@@ -4784,20 +4790,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	return group;
 end
-app.ItemCanBeBoughtWithCurrencyCount = function(targetItemID, currencyItemID, costCollectibles)
-	-- TODO: this does not handle recursive and nested cases, like Murloc items in Nazjatar
-	if costCollectibles and #costCollectibles > 0 then
-		for i=1,#costCollectibles do
-			if costCollectibles[i].itemID and costCollectibles[i].itemID == targetItemID then
-				for _,costComp in ipairs(costCollectibles[i].cost) do
-					if costComp[2] == currencyItemID then
-						return costComp[3];
-					end
+-- Builds a hash table of hashes of collectibles which use the specified costID (without regard to being an item or currency) and storing the quantity in the hash table
+app.BuildCostTable = function(collectibles, costID)
+	local costAmounts, cost = {};
+	for _,collectible in ipairs(collectibles) do
+		cost = collectible.cost;
+		if cost then
+			for _,eachCost in ipairs(cost) do
+				if eachCost[2] == costID then
+					costAmounts[collectible.hash] = eachCost[3];
 				end
 			end
 		end
 	end
-	return 0;
+	-- app.PrintDebug("Total Costs for",costID)
+	-- if app.DEBUG_PRINT then app.PrintTable(costAmounts) end
+	return costAmounts;
 end
 -- Auto-Expansion logic
 (function()
@@ -7362,6 +7370,7 @@ local function CheckCollectible(ref)
 		end
 	end
 end
+app.CheckCollectible = CheckCollectible;
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
 app.CollectibleAsCost = function(t)
 	local collectibles = t.costCollectibles;
