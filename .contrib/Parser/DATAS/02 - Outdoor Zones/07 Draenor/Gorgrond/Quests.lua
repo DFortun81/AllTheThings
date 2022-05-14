@@ -261,6 +261,7 @@ _.Zones =
 						["sourceQuests"] = {
 							35507,	-- Down the Goren Hole
 							35509,	-- Will of the Genesaur
+							35501,	-- Doomshot
 						},
 						["g"] = {
 							i(112588),	-- Foundry-Fired Plate Chestplate
@@ -1537,11 +1538,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 80714 },	-- Fungal Lurcher
 					["description"] = "Must have accepted |cFFFFD700Scout Forensics|r for this to drop.",
+					["sourceQuest"] = 35633,	-- Scout Forensics
 				}),
 				q(35021, {	-- Mysterious Pod (H)
+					["description"] = "Must have accepted or have completed the quest Basic Skulltaking for the quest item to drop.",
 					["provider"] = { "i", 112378 },	-- Glowing Red Pod
 					["races"] = HORDE_ONLY,
 					["crs"] = { 80714 },	-- Fungal Lurcher
+					["sourceQuest"] = 35016,	-- Basic Skulltaking
 				}),
 				q(34463, {	-- Mysterious Ring
 					["provider"] = { "o", 229330 },	-- Mysterious Ring
@@ -1599,7 +1603,9 @@ _.Zones =
 				q(33689, {	-- Plant Pruning (H)
 					["provider"] = { "n", 81731 },	-- Rakthoth
 					["coord"] = { 49.3, 49.7, GORGROND },
+					["description"] = "Available after building Beastwatch and selecting the Lumber Mill or the Sparring Arena.",
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	--Your Base, Your Choice
 					["g"] = {
 						i(118034),	-- Foundry-Fired Plate Waistguard
 						i(118037),	-- Overgrowth Cutter Girdle

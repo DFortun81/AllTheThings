@@ -3158,8 +3158,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(174496),	-- Third Bell of Markos
 				i(174489),	-- Treated Animacone
 				i(183965),	-- Uncommon Anima Items
-				i(182195),	-- Vanity Mirror
-				i(182210),	-- Vanity Mirror
 				i(178589),	-- Venthyr Armaments
 				i(180211),	-- Venthyr Eye
 				i(180216),	-- Venthyr Heart
