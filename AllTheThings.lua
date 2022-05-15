@@ -1518,23 +1518,28 @@ local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
 local function GetProgressTextForRow(data)
-	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
-		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+	local total = data.total;
+	local isCollectible = data.collectible;
+	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+
+	if isContainer then
 		local costTotal = data.costTotal;
-		if costTotal and
-			data.total - data.progress > 0 and
-			(data.total - data.progress) == (costTotal - data.costProgress) then
+		local isCost = costTotal and costTotal > 0;
+		local isFilledCost = data.collectibleAsCost == false;
+
+		-- Cost & Progress
+		if isFilledCost then
+			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
+		end
+		-- Cost
+		if isCost then
 			return L["COST_ICON"];
 		end
-		-- groups which have been filled with cost collectibles should show the progress along with the icon
-		if data.collectibleAsCost == false then
-			return L["COST_ICON"] .. "  " .. GetProgressColorText(data.progress or 0, data.total);
-		end
-		return GetProgressColorText(data.progress or 0, data.total);
-	elseif data.collectible then
+		return GetProgressColorText(data.progress or 0, total);
+	elseif isCollectible then
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
-		return GetCompletionIcon(data.saved);
+		return GetCollectionIcon(data.saved);
 	elseif data.visible then
 		if data.count then
 			return (data.count .. "x");
@@ -1546,23 +1551,25 @@ local function GetProgressTextForRow(data)
 	end
 end
 local function GetProgressTextForTooltip(data)
-	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
-		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+	local total = data.total;
+	local isCollectible = data.collectible;
+	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+
+	if isContainer then
 		local costTotal = data.costTotal;
-		if costTotal and
-			data.total - data.progress > 0 and
-			(data.total - data.progress) == (costTotal - data.costProgress) then
+		local isCost = costTotal and costTotal > 0;
+		local isFilledCost = data.collectibleAsCost == false;
+
+		-- Cost & Progress
+		if isFilledCost then
+			return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+		end
+		-- Cost
+		if isCost then
 			return L["COST_TEXT"];
 		end
-		-- groups which have been filled with cost collectibles should show the progress along with the icon
-		if data.collectibleAsCost == false then
-			return L["COST_TEXT"] .. "  " .. GetProgressColorText(data.progress or 0, data.total);
-		end
-		if data.collectible or data.trackable then
-			return GetProgressColorText(data.progress or 0, data.total).. " "..(data.collectible and GetCollectionIcon(data.collected) or (data.trackable and GetCompletionIcon(data.saved)));
-		end
-		return GetProgressColorText(data.progress or 0, data.total);
-	elseif data.collectible then
+		return GetProgressColorText(data.progress or 0, total);
+	elseif isCollectible then
 		return GetCollectionText(data.collected);
 	elseif data.trackable then
 		return GetCompletionText(data.saved);
