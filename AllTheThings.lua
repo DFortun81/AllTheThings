@@ -1539,7 +1539,7 @@ local function GetProgressTextForRow(data)
 	elseif isCollectible then
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
-		return GetCollectionIcon(data.saved);
+		return GetCompletionIcon(data.saved);
 	elseif data.visible then
 		if data.count then
 			return (data.count .. "x");
