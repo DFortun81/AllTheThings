@@ -1423,7 +1423,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					10953,	-- Visit the Throne of the Elements [Horde - Blood Elf]
 				},
 				["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-				["timeline"] = { "added 2.0.1", "added 2.4.0" },
+				["timeline"] = { "added 2.0.1", "removed 2.4.0" },
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
