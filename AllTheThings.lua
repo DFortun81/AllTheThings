@@ -2577,7 +2577,7 @@ end
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 (function()
 local questRetries = {};
-local QuestUtils_GetQuestName, C_QuestLog_RequestLoadQuestByID = QuestUtils_GetQuestName, C_QuestLog.RequestLoadQuestByID;
+local QuestUtils_GetQuestName, C_QuestLog_RequestLoadQuestByID, C_QuestLog_IsOnQuest = QuestUtils_GetQuestName, C_QuestLog.RequestLoadQuestByID, C_QuestLog.IsOnQuest;
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if id then
 		local title = QuestUtils_GetQuestName(id);
@@ -7296,31 +7296,28 @@ app.CreateCache = function(idField)
 	end;
 	return cache;
 end
--- Function which returns whether the given Thing can even be considered as a collectible currency based on current settings
-local function PreCheckCollectible(t)
-	return app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected");
-end
 -- Function which returns both collectible/collected based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible without regard to filtering
 local function CheckCollectible(ref)
 	-- don't include groups which do not meet the current filter requirements
 	if app.RecursiveGroupRequirementsFilter(ref) then
-		-- Used as a cost for something which is collectible itself and not collected
 		-- app.PrintDebug("CheckCollectible",ref.hash)
-		if ref.collectible then
+		local total = ref.total;
+		-- Used as a cost for something which has an incomplete progress
+		if total and total > 0 then
+			-- app.PrintDebug("Cost Required via Total/Prog",ref.hash)
+			return true,ref.progress == total;
+		-- Used as a cost for something which is collectible itself and not collected
+		elseif ref.collectible then
 			-- app.PrintDebug("Cost Required via Collectible",ref.hash)
 			return true,ref.collected;
-		-- Used as a cost for something which has an incomplete progress
-		elseif ref.total and ref.total > 0 then
-			-- app.PrintDebug("Cost Required via Total/Prog",ref.hash)
-			return true,ref.progress == ref.total;
 		-- Used as a cost for something which is collectible as a cost itself and not collected
 		elseif ref.collectibleAsCost then
 			-- app.PrintDebug("Cost Required via collectibleAsCost",ref.hash)
 			return true,ref.collectedAsCost;
 		end
 		-- If this group has sub-groups and not yet updated, then update this group and check the total to see if it has collectibles
-		if ref.g and (ref.total or 0) == 0 then
+		if ref.g and (total or 0) == 0 then
 			-- checking last update time is needed for groups which have a cost but nothing actually collectible due to filters... total is 0
 			local lastUpdate = ref._LastUpdateTime;
 			-- app.PrintDebug("Updating sub-groups...",ref.hash)
@@ -7331,7 +7328,7 @@ local function CheckCollectible(ref)
 				-- app.PrintDebug("Updated sub-groups",ref.hash,ref.progress,ref.total,ref._LastUpdateTime,"<=",app._LastUpdateTime)
 				-- app.PrintTable(ref)
 				-- raw sub-groups have something collectible, so return
-				if ref.total and ref.progress < ref.total then
+				if total and ref.progress < total then
 					return true,false;
 				end
 			end
@@ -7390,11 +7387,11 @@ app.CollectibleAsCost = function(t)
 			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
 			return;
 		end
-	end
-	-- Make sure this thing can actually be collectible
-	if not PreCheckCollectible(t) then
-		-- app.PrintDebug("CollectibleAsCost:PreCheckCollectible",t.hash)
-		return;
+		-- Make sure this thing can actually be collectible via hierarchy
+		if GetRelativeValue(t, "altcollected") then
+			-- app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
+			return;
+		end
 	end
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
@@ -7414,6 +7411,7 @@ app.CollectibleAsCost = function(t)
 end
 app.CollectedAsCost = function(t)
 	local collectibles = t.costCollectibles;
+	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
 	if not collectibles or #collectibles == 0 then return; end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
 	if not app.MODE_DEBUG_OR_ACCOUNT then
@@ -7422,11 +7420,11 @@ app.CollectedAsCost = function(t)
 			-- app.PrintDebug("CollectedAsCost:t.parent.saved",t.hash)
 			return;
 		end
-	end
-	-- Make sure this thing can actually be collectible
-	if not PreCheckCollectible(t) then
-		-- app.PrintDebug("CollectedAsCost:PreCheckCollectible",t.hash)
-		return;
+		-- Make sure this thing can actually be collectible via hierarchy
+		if GetRelativeValue(t, "altcollected") then
+			-- app.PrintDebug("CollectedAsCost:altcollected",t.hash)
+			return;
+		end
 	end
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectedAsCost = false;
@@ -8502,7 +8500,6 @@ local function default_costCollectibles(t)
 	if id then
 		local results = app.SearchForField("currencyIDAsCost", id);
 		if results and #results > 0 then
-			-- not sure we need to copy these into another table
 			-- app.PrintDebug("default_costCollectibles",t.hash,#results)
 			return results;
 		end
