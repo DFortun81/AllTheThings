@@ -265,6 +265,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(182114, {	-- Iska, Outrider of Ruin
+				["crs"] = { 182120 },	-- Rhuv, Gorger of Ruin
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
 				["questID"] = 65585,
 				["g"] = {
