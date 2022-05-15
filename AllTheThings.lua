@@ -6117,7 +6117,7 @@ AddTomTomWaypoint = function(group)
 										if key == "objectiveID" then
 											if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
 										elseif key == "criteriaID" then
-											tooltip:AddLine("Criteria for " .. GetAchievementLink(group.achievementID));
+											tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
 										else
 											if key == "npcID" then key = "creatureID"; end
 											AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
