@@ -3,10 +3,12 @@
 ---------------------------------------------------
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, {
 			i(189715, {	-- Pocopoc's Diamond Vambraces
 				["questID"] = 65481,
 			}),
+		}),
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(179006, {	-- Akkaris <Annelid Prime>
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65552,

@@ -1278,9 +1278,18 @@ namespace ATT
                     }
 
                     // Heirlooms quality for non-equippable Items are not really Heirlooms
-                    if (filter == Objects.Filters.Ignored || filter == Objects.Filters.Consumable || filter == Objects.Filters.Faction)
-                        return;
+                    switch (filter)
+                    {
+                        case Objects.Filters.Ignored:
+                        case Objects.Filters.Consumable:
+                        case Objects.Filters.Faction:
+                        case Objects.Filters.Toy:
+                        case Objects.Filters.Quest:
+                        case Objects.Filters.Recipe:
+                            return;
+                    }
 
+                    //LogDebugFormatted("ItemID:{0} Marked as Heirloom. Filter: {1}", itemID, filter.ToString());
                     data["heirloomID"] = itemID;
                     if (data.ContainsKey("ignoreSource"))
                     {
