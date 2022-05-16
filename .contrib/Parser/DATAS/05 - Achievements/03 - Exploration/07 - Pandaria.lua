@@ -376,7 +376,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["coord"] = { 42.26, 17.46, THE_JADE_FOREST },
 			}),
 			crit(4, {	-- The Thunder King
-				["coord"] = { 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
+				["coords"] = {
+					{ 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 40.19, 75.63, 1530 },	-- BFA alternate zone
+				},
 			}),
 		}),
 		ach(6855, {	-- The Seven Burdens of Shaohao
