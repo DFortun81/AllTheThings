@@ -5052,7 +5052,6 @@ end
 (function()
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
-	-- ["headerID"] = true,
 	-- ["filterID"] = true,
 	-- ["flightPathID"] = true,
 	-- ["professionID"] = true,
@@ -5072,15 +5071,26 @@ app.ThingKeys = {
 	["artifactID"] = true,
 	["achievementID"] = true,	-- special handling
 };
+local SpecificSources = {
+	["headerID"] = {
+		[-1] = true,	-- COMMON_BOSS_DROPS
+	},
+};
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
-	-- only show sources for Things and not 'headers'
-	if not group or not group.key or not app.ThingKeys[group.key] then return; end
+	-- only show sources for Things or specific of other types
+	if not group or not group.key then return; end
+	local groupKey, thingKeys = group.key, app.ThingKeys;
+	local thingCheck = thingKeys[groupKey];
+	local specificSource = SpecificSources[groupKey]
+	if specificSource then
+		 specificSource = specificSource[group[groupKey]];
+	end
+	if not thingCheck and not specificSource then return; end
 
 	-- pull all listings of this 'Thing'
-	local groupKey, thingKeys = group.key, app.ThingKeys;
 	local keyValue = group[groupKey];
-	local things = app.SearchForLink(groupKey .. ":" .. keyValue);
+	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		-- print("Found things",#things)
 		local parents, parentKey, parent;
@@ -5112,7 +5122,7 @@ app.BuildSourceParent = function(group)
 			end
 			-- Things tagged with an npcID should show that NPC as a Source
 			if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
-				local parentNPC = app.SearchForObject("npcID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
+				local parentNPC = app.SearchForObject("creatureID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
 				if parents then tinsert(parents, parentNPC);
 				else parents = { parentNPC }; end
 			end
@@ -5121,7 +5131,7 @@ app.BuildSourceParent = function(group)
 				if not parents then parents = {}; end
 				local parentNPC;
 				for _,npcID in ipairs(thing.crs) do
-					parentNPC = app.SearchForObject("npcID", npcID) or {["npcID"] = npcID};
+					parentNPC = app.SearchForObject("creatureID", npcID) or {["npcID"] = npcID};
 					tinsert(parents, parentNPC);
 				end
 			end
@@ -12870,7 +12880,7 @@ local fields = {
 		return L["TITLES_DESC"];
 	end,
 	["text"] = function(t)
-		local name = t.playerTitle;
+		local name = t.name;
 		if name then
 			name = "|cff00ccff" .. name .. "|r";
 			rawset(t, "text", name);
@@ -12897,14 +12907,8 @@ local fields = {
 			return rawget(t, "_title");
 		end
 	end,
-	["playerTitle"] = function(t)
-		local name = t.name;
-		if name then
-			return StylizePlayerTitle(name, t.style, UnitName("player"));
-		end
-	end,
 	["style"] = function(t)
-		local name = t.name;
+		local name = t.titleName;
 		if name then
 			local first = string.sub(name, 1, 1);
 			if first == " " then
@@ -12945,14 +12949,18 @@ local fields = {
 	end,
 	["name"] = function(t)
 		-- return the gender-proper name for the title
-		local name;
-		if t.titleIDs then
-			name = GetTitleName(app.Gender == 2 and t.titleIDs[1] or t.titleIDs[2]);
-		else
-			name = GetTitleName(t.titleID);
+		local name = t.titleName;
+		if name then
+			rawset(t, "name", StylizePlayerTitle(name, t.style, UnitName("player")));
 		end
-		if name then rawset(t, "name", name); end
 		return name;
+	end,
+	["titleName"] = function(t)
+		if t.titleIDs then
+			return GetTitleName(app.Gender == 2 and t.titleIDs[1] or t.titleIDs[2]);
+		else
+			return GetTitleName(t.titleID);
+		end
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleTitles;
