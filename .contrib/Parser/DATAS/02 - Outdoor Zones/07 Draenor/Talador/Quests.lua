@@ -1314,7 +1314,6 @@ _.Zones =
 						33920,	-- The Heart of Auchindoun
 						34351,	-- We Must Construct Additional Pylons
 						34418,	-- Holding the Line
-						
 					},
 				}),
 				q(34472, {	-- Temporal Juxtaposition
