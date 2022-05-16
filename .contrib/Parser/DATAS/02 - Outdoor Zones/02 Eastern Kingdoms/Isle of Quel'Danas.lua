@@ -1769,7 +1769,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #endif
 					},
 				})),
-				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
+				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B, n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },
 					["groups"] = {
 						i(34925),	-- Adorned Supernal Legwraps
