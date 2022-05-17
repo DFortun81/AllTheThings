@@ -21,7 +21,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				["_quests"] = { 51173 },	-- Sandfishing
 			}),
 		})),
-		ach(14161),		-- All Consuming
 		ach(13790, {	-- Armed for Action
 			crit(1),	-- Volatile Blaster
 			crit(2),	-- Ricket's Special Delivery
@@ -74,11 +73,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(13047),		-- Clever Use of Mechanical Explosives
 		a(ach(12582)),	-- Come Sail Away
 		a(ach(13053)),	-- Deadliest Cache
-		ach(14154, {	-- Defend the Vale
-			crit(1),		-- Assault: The Warring Clans
-			crit(2),		-- Assault: The Endless Swarm
-			crit(3),		-- Assault: The Black Empire
-		}),
 		h(ach(13435)),	-- Doomsoul Surprise
 		ach(13045),		-- Every Day I'm Truffling
 		a(ach(13283, {	-- Frontline Warrior (A)
@@ -403,11 +397,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(3),		-- Through the Front Door
 				crit(4),		-- Fly Out to Meet Them
 			})),
-		}),
-		ach(14153, {	-- Uldum Under Assault
-			crit(1),		-- Assault: Amathet Advance
-			crit(2),		-- Assault: Aqir Unearthed
-			crit(3),		-- Assault: The Black Empire
 		}),
 		h(ach(13709, {	-- Unfathomable
 			crit(1),		-- Welcome to Nazjatar
