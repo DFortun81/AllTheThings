@@ -750,6 +750,290 @@ local OLUS_GROUPS = {
 	}),
 };
 local SORYN_GROUPS = {
+	-- #if ANYCLASSIC
+	-- In TBC Classic, they made it so you could turn in the tokens for S3 gear rather than S2 gear. (makes more sense since it's for the T6 tokens and downgrading to S2 doesn't make sence as that was T5 equivalent...)
+	cl(WARRIOR, {
+		i(33730, {	-- Vengeful Gladiator's Plate Helm
+			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+		}),
+		i(33732, {	-- Vengeful Gladiator's Plate Shoulders
+			["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+		}),
+		i(33728, {	-- Vengeful Gladiator's Plate Chestpiece
+			["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+		}),
+		i(33729, {	-- Vengeful Gladiator's Plate Gauntlets
+			["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+		}),
+		i(33731, {	-- Vengeful Gladiator's Plate Legguards
+			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+		}),
+	}),
+	cl(PALADIN, {
+		i(33697, {	-- Vengeful Gladiator's Lamellar Helm
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33699, {	-- Vengeful Gladiator's Lamellar Shoulders
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33695, {	-- Vengeful Gladiator's Lamellar Chestpiece
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33696, {	-- Vengeful Gladiator's Lamellar Gauntlets
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33698, {	-- Vengeful Gladiator's Lamellar Legguards
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+		
+		i(33724, {	-- Vengeful Gladiator's Ornamented Headcover
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33726, {	-- Vengeful Gladiator's Ornamented Spaulders
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33722, {	-- Vengeful Gladiator's Ornamented Chestguard
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33723, {	-- Vengeful Gladiator's Ornamented Gloves
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33725, {	-- Vengeful Gladiator's Ornamented Legplates
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+		
+		i(33751, {	-- Vengeful Gladiator's Scaled Helm
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33753, {	-- Vengeful Gladiator's Scaled Shoulders
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33749, {	-- Vengeful Gladiator's Scaled Chestpiece
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33750, {	-- Vengeful Gladiator's Scaled Gauntlets
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33752, {	-- Vengeful Gladiator's Scaled Legguards
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+	}),
+	cl(HUNTER, {
+		i(33666, {	-- Vengeful Gladiator's Chain Helm
+			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+		}),
+		i(33668, {	-- Vengeful Gladiator's Chain Spaulders
+			["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+		}),
+		i(33664, {	-- Vengeful Gladiator's Chain Armor
+			["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+		}),
+		i(33665, {	-- Vengeful Gladiator's Chain Gauntlets
+			["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+		}),
+		i(33667, {	-- Vengeful Gladiator's Chain Leggings
+			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+		}),
+	}),
+	cl(ROGUE, {
+		i(33701, {	-- Vengeful Gladiator's Leather Helm
+			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+		}),
+		i(33703, {	-- Vengeful Gladiator's Leather Spaulders
+			["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+		}),
+		i(33704, {	-- Vengeful Gladiator's Leather Tunic
+			["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+		}),
+		i(33700, {	-- Vengeful Gladiator's Leather Gloves
+			["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+		}),
+		i(33702, {	-- Vengeful Gladiator's Leather Legguards
+			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+		}),
+	}),
+	cl(PRIEST, {
+		i(33718, {	-- Vengeful Gladiator's Mooncloth Hood
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33720, {	-- Vengeful Gladiator's Mooncloth Mantle
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33721, {	-- Vengeful Gladiator's Mooncloth Robe
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33717, {	-- Vengeful Gladiator's Mooncloth Gloves
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33719, {	-- Vengeful Gladiator's Mooncloth Leggings
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+		
+		i(33745, {	-- Vengeful Gladiator's Satin Hood
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33747, {	-- Vengeful Gladiator's Satin Mantle
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33748, {	-- Vengeful Gladiator's Satin Robe
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33744, {	-- Vengeful Gladiator's Satin Gloves
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33746, {	-- Vengeful Gladiator's Satin Leggings
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+	}),
+	cl(SHAMAN, {
+		i(33708, {	-- Vengeful Gladiator's Linked Helm
+			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+		}),
+		i(33710, {	-- Vengeful Gladiator's Linked Spaulders
+			["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+		}),
+		i(33706, {	-- Vengeful Gladiator's Linked Armor
+			["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+		}),
+		i(33707, {	-- Vengeful Gladiator's Linked Gauntlets
+			["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+		}),
+		i(33709, {	-- Vengeful Gladiator's Linked Leggings
+			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+		}),
+		
+		i(33713, {	-- Vengeful Gladiator's Mail Helm
+			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+		}),
+		i(33715, {	-- Vengeful Gladiator's Mail Spaulders
+			["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+		}),
+		i(33711, {	-- Vengeful Gladiator's Mail Armor
+			["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+		}),
+		i(33712, {	-- Vengeful Gladiator's Mail Gauntlets
+			["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+		}),
+		i(33714, {	-- Vengeful Gladiator's Mail Leggings
+			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+		}),
+		
+		i(33740, {	-- Vengeful Gladiator's Ringmail Helm
+			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
+		}),
+		i(33742, {	-- Vengeful Gladiator's Ringmail Spaulders
+			["cost"] = { { "i", 31103, 1 }, },	-- Pauldrons of the Forgotten Protector
+		}),
+		i(33738, {	-- Vengeful Gladiator's Ringmail Armor
+			["cost"] = { { "i", 31091, 1 }, },	-- Chestguard of the Forgotten Protector
+		}),
+		i(33739, {	-- Vengeful Gladiator's Ringmail Gauntlets
+			["cost"] = { { "i", 31094, 1 }, },	-- Gloves of the Forgotten Protector
+		}),
+		i(33741, {	-- Vengeful Gladiator's Ringmail Leggings
+			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
+		}),
+	}),
+	cl(MAGE, {
+		i(33758, {	-- Vengeful Gladiator's Silk Cowl
+			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+		}),
+		i(33757, {	-- Vengeful Gladiator's Silk Amice
+			["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+		}),
+		i(33760, {	-- Vengeful Gladiator's Silk Raiment
+			["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+		}),
+		i(33759, {	-- Vengeful Gladiator's Silk Handguards
+			["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+		}),
+		i(33761, {	-- Vengeful Gladiator's Silk Trousers
+			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+		}),
+	}),
+	cl(WARLOCK, {
+		i(33677, {	-- Vengeful Gladiator's Dreadweave Hood
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33679, {	-- Vengeful Gladiator's Dreadweave Mantle
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33680, {	-- Vengeful Gladiator's Dreadweave Robe
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33676, {	-- Vengeful Gladiator's Dreadweave Gloves
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33678, {	-- Vengeful Gladiator's Dreadweave Leggings
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+		
+		i(33683, {	-- Vengeful Gladiator's Felweave Cowl
+			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
+		}),
+		i(33682, {	-- Vengeful Gladiator's Felweave Amice
+			["cost"] = { { "i", 31101, 1 }, },	-- Pauldrons of the Forgotten Conqueror
+		}),
+		i(33685, {	-- Vengeful Gladiator's Felweave Raiment
+			["cost"] = { { "i", 31089, 1 }, },	-- Chestguard of the Forgotten Conqueror
+		}),
+		i(33684, {	-- Vengeful Gladiator's Felweave Handguards
+			["cost"] = { { "i", 31092, 1 }, },	-- Gloves of the Forgotten Conqueror
+		}),
+		i(33686, {	-- Vengeful Gladiator's Felweave Trousers
+			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
+		}),
+	}),
+	cl(DRUID, {
+		i(33672, {	-- Vengeful Gladiator's Dragonhide Helm
+			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+		}),
+		i(33674, {	-- Vengeful Gladiator's Dragonhide Spaulders
+			["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+		}),
+		i(33675, {	-- Vengeful Gladiator's Dragonhide Tunic
+			["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+		}),
+		i(33671, {	-- Vengeful Gladiator's Dragonhide Gloves
+			["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+		}),
+		i(33673, {	-- Vengeful Gladiator's Dragonhide Legguards
+			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+		}),
+		
+		i(33691, {	-- Vengeful Gladiator's Kodohide Helm
+			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+		}),
+		i(33693, {	-- Vengeful Gladiator's Kodohide Spaulders
+			["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+		}),
+		i(33694, {	-- Vengeful Gladiator's Kodohide Tunic
+			["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+		}),
+		i(33767, {	-- Vengeful Gladiator's Kodohide Gloves
+			["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+		}),
+		i(33692, {	-- Vengeful Gladiator's Kodohide Legguards
+			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+		}),
+		
+		i(33768, {	-- Vengeful Gladiator's Wyrmhide Helm
+			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
+		}),
+		i(33770, {	-- Vengeful Gladiator's Wyrmhide Spaulders
+			["cost"] = { { "i", 31102, 1 }, },	-- Pauldrons of the Forgotten Vanquisher
+		}),
+		i(33771, {	-- Vengeful Gladiator's Wyrmhide Tunic
+			["cost"] = { { "i", 31090, 1 }, },	-- Chestguard of the Forgotten Vanquisher
+		}),
+		i(33767, {	-- Vengeful Gladiator's Wyrmhide Gloves
+			["cost"] = { { "i", 31093, 1 }, },	-- Gloves of the Forgotten Vanquisher
+		}),
+		i(33769, {	-- Vengeful Gladiator's Wyrmhide Legguards
+			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
+		}),
+	}),
+	-- #else
 	cl(WARRIOR, {
 		i(30488, {	-- Merciless Gladiator's Plate Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
@@ -1031,6 +1315,7 @@ local SORYN_GROUPS = {
 			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
 		}),
 	}),
+	-- #endif
 };
 root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 	m(ISLE_OF_QUELDANAS, {
