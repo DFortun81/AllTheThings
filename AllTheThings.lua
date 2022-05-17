@@ -10091,6 +10091,9 @@ local itemFields = {
 	end,
 	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsQuest"] = IsQuestFlaggedCompletedForObject,
+	["lockedAsQuest"] = function(t)
+		return app.LockedAsQuest(t);
+	end,
 	["collectedAsFaction"] = function(t)
 		if t.factionID then
 			if t.repeatable then
@@ -10152,6 +10155,7 @@ fields.collectible = itemFields.collectibleAsQuest;
 fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
+fields.locked = itemFields.lockedAsQuest;
 app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
 
 local fields = RawCloneData(itemFields);
@@ -10159,6 +10163,7 @@ fields.collectible = itemFields.collectibleAsFactionOrQuest;
 fields.collected = itemFields.collectedAsFactionOrQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
+fields.locked = itemFields.lockedAsQuest;
 app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields, "BaseItemWithQuestIDAndFactionID");
 
 local fields = RawCloneData(itemFields);
@@ -11810,6 +11815,71 @@ local criteriaFuncs = {
     end,
 };
 app.QuestLockCriteriaFunctions = criteriaFuncs;
+local function LockedAsQuest(t)
+	local questID = t.questID;
+	if not IsQuestFlaggedCompleted(questID) then
+		local lockCriteria = t.lc;
+		if lockCriteria then
+			local criteriaRequired = lockCriteria[1];
+			local critKey, critFunc, nonQuestLock;
+			local i, limit = 2, #lockCriteria;
+			while i < limit do
+				critKey = lockCriteria[i];
+				critFunc = criteriaFuncs[critKey];
+				i = i + 1;
+				if critFunc then
+					if critFunc(lockCriteria[i]) then
+						criteriaRequired = criteriaRequired - 1;
+						if not nonQuestLock and critKey ~= "questID" then
+							nonQuestLock = true;
+						end
+					end
+				else
+					app.print("Unknown 'lockCriteria' key:",critKey,lockCriteria[i]);
+				end
+				-- enough criteria met to consider this quest locked
+				if criteriaRequired <= 0 then
+					-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
+					-- and this does not come into play during party sync
+					rawset(t, "locked", true);
+					-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
+					if nonQuestLock then
+						-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+						rawset(t, "DisablePartySync", true);
+					end
+					return true;
+				end
+				i = i + 1;
+			end
+		end
+		-- if an alt-quest is completed, then this quest is locked
+		if t.altcollected then
+			rawset(t, "locked", t.altcollected);
+			return true;
+		end
+		-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
+		if t.isBreadcrumb and t.nextQuests then
+			local nq;
+			for _,questID in ipairs(t.nextQuests) do
+				if IsQuestFlaggedCompleted(questID) then
+					rawset(t, "locked", questID);
+					return questID;
+				else
+					-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
+					nq = app.SearchForObject("questID", questID);
+					if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
+						rawset(t, "locked", questID);
+						return questID;
+					end
+				end
+			end
+		end
+	end
+	-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
+	-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
+	rawset(t, "locked", false);
+end
+app.LockedAsQuest = LockedAsQuest;
 
 local questFields = {
 	["key"] = function(t)
@@ -11956,70 +12026,7 @@ local questFields = {
 			end
 		end
 	end,
-	["locked"] = function(t)
-		local questID = t.questID;
-		if not IsQuestFlaggedCompleted(questID) then
-			local lockCriteria = t.lc;
-			if lockCriteria then
-				local criteriaRequired = lockCriteria[1];
-				local critKey, critFunc, nonQuestLock;
-				local i, limit = 2, #lockCriteria;
-				while i < limit do
-					critKey = lockCriteria[i];
-					critFunc = criteriaFuncs[critKey];
-					i = i + 1;
-					if critFunc then
-						if critFunc(lockCriteria[i]) then
-							criteriaRequired = criteriaRequired - 1;
-							if not nonQuestLock and critKey ~= "questID" then
-								nonQuestLock = true;
-							end
-						end
-					else
-						app.print("Unknown 'lockCriteria' key:",critKey,lockCriteria[i]);
-					end
-					-- enough criteria met to consider this quest locked
-					if criteriaRequired <= 0 then
-						-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
-						-- and this does not come into play during party sync
-						rawset(t, "locked", true);
-						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
-						if nonQuestLock then
-							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
-							rawset(t, "DisablePartySync", true);
-						end
-						return true;
-					end
-					i = i + 1;
-				end
-			end
-			-- if an alt-quest is completed, then this quest is locked
-			if t.altcollected then
-				rawset(t, "locked", t.altcollected);
-				return true;
-			end
-			-- determine if a 'nextQuest' exists and is completed specifically by this character, to remove availability of the breadcrumb
-			if t.isBreadcrumb and t.nextQuests then
-				local nq;
-				for _,questID in ipairs(t.nextQuests) do
-					if IsQuestFlaggedCompleted(questID) then
-						rawset(t, "locked", questID);
-						return questID;
-					else
-						-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-						nq = app.SearchForObject("questID", questID);
-						if nq and (IsQuestFlaggedCompleted(nq.questID) or nq.altcollected or nq.locked) then
-							rawset(t, "locked", questID);
-							return questID;
-						end
-					end
-				end
-			end
-		end
-		-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
-		-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
-		rawset(t, "locked", false);
-	end,
+	["locked"] = LockedAsQuest,
 };
 app.BaseQuest = app.BaseObjectFields(questFields, "BaseQuest");
 
