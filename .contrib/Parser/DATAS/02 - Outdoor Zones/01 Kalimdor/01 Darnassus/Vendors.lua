@@ -89,7 +89,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Striped Dawnsaber (MOUNT!)
+						i(47100, {	-- Striped Dawnsaber (MOUNT!)
+							["timeline"] = { "added 3.2.0.10026" },
+						}),
 						i(8629),	-- Striped Nightsaber (MOUNT!)
 						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(18766),	-- Swift Frostsaber (MOUNT!)
