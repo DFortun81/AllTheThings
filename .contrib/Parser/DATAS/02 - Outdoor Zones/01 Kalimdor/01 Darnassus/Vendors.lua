@@ -81,18 +81,26 @@ _.Zones =
 					},
 				}),
 				n(4730,  {	-- Lelanai <Saber Handler>
+					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
+					-- #else
+					["coord"] = { 38.3, 15.3, DARNASSUS },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(8632),	-- Spotted Frostsaber (MOUNT!)
+						i(47100),	-- Striped Dawnsaber (MOUNT!)
+						i(8629),	-- Striped Nightsaber (MOUNT!)
+						i(8631),	-- Striped Frostsaber (MOUNT!)
 						i(18766),	-- Swift Frostsaber (MOUNT!)
 						i(18767),	-- Swift Mistsaber (MOUNT!)
 						i(18902),	-- Swift Stormsaber (MOUNT!)
-						i(8629),	-- Striped Nightsaber (MOUNT!)
-						i(8631),	-- Striped Frostsaber (MOUNT!)
-						i(8632),	-- Spotted Frostsaber (MOUNT!)
-						i(47100),	-- Striped Dawnsaber (MOUNT!)
-						un(REMOVED_FROM_GAME, i(12302)),	-- Ancient Frostsaber (MOUNT!)
-						un(REMOVED_FROM_GAME, i(12303)),	-- Nightsaber (MOUNT!)
+						i(12302, {	-- Ancient Frostsaber (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
+						i(12303, {	-- Nightsaber (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
 					},
 				}),
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>

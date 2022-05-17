@@ -7,17 +7,25 @@ _.Zones =
 		m(MULGORE, {
 			n(VENDORS, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
+					-- #if AFTER CATA
 					["coord"] = { 47.6, 58.0, MULGORE },
+					-- #else
+					["coord"] = { 47.6, 58.4, MULGORE },
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(15277),	-- Gray Kodo (MOUNT!)
+						i(15290),	-- Brown Kodo (MOUNT!)
 						i(18793),	-- Great White Kodo (MOUNT!)
 						i(18794),	-- Great Brown Kodo (MOUNT!)
 						i(18795),	-- Great Gray Kodo (MOUNT!)
-						i(15277),	-- Gray Kodo (MOUNT!)
-						i(15290),	-- Brown Kodo (MOUNT!)
 						i(46100),	-- White Kodo (MOUNT!)
-						un(REMOVED_FROM_GAME, i(15292)),	-- Green Kodo (MOUNT!) -- Unable to 100% verify this source.
-						un(REMOVED_FROM_GAME, i(15293)),	-- Teal Kodo (MOUNT!) -- Unable to 100% verify this source.
+						i(15292, {	-- Green Kodo (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
+						i(15293, {	-- Teal Kodo (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
 					},
 				}),
 				n(5940, {	-- Harn Longcast <Fishing Supplies>

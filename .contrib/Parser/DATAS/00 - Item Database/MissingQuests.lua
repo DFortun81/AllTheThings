@@ -20,7 +20,6 @@ q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(170),	-- A New Threat,		TBC: A New Threat,		CLASSIC: A New Threat
 q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
 q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
 q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
@@ -32,8 +31,6 @@ q(210),	-- Krazek's Cookery,		TBC: Krazek's Cookery,		CLASSIC: Krazek's Cookery
 q(212),	-- A Meal Served Cold,		TBC: A Meal Served Cold,		CLASSIC: A Meal Served Cold
 q(215),	-- Jungle Secrets,		TBC: Jungle Secrets,		CLASSIC: Jungle Secrets
 q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(233),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
-q(234),	-- Coldridge Valley Mail Delivery,		TBC: Coldridge Valley Mail Delivery,		CLASSIC: Coldridge Valley Mail Delivery
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -41,7 +38,6 @@ q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down th
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(287),	-- Frostmane Hold,		TBC: Frostmane Hold,		CLASSIC: Frostmane Hold
-q(310),	-- Bitter Rivals,		TBC: Bitter Rivals,		CLASSIC: Bitter Rivals
 q(312),	-- Tundra MacGrann's Stolen Stash,		TBC: Tundra MacGrann's Stolen Stash,		CLASSIC: Tundra MacGrann's Stolen Stash
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
@@ -327,7 +323,6 @@ q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1579),	-- Gaffer Jacks,		TBC: Gaffer Jacks,		CLASSIC: Gaffer Jacks
 q(1580),	-- Electropellers,		TBC: Electropellers,		CLASSIC: Electropellers
 q(1598),	-- The Stolen Tome,		TBC: The Stolen Tome,		CLASSIC: The Stolen Tome
-q(1599),	-- Beginnings,		TBC: Beginnings,		CLASSIC: Beginnings
 q(1638),	-- A Warrior's Training,		TBC: A Warrior's Training,		CLASSIC: A Warrior's Training
 q(1640),	-- Beat Bartleby,		TBC: Beat Bartleby,		CLASSIC: Beat Bartleby
 q(1642),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
@@ -508,7 +503,6 @@ q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Mui
 q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
 q(3364),	-- Scalding Mornbrew Delivery,		TBC: Scalding Mornbrew Delivery,		CLASSIC: Scalding Mornbrew Delivery
-q(3365),	-- Bring Back the Mug,		TBC: Bring Back the Mug,		CLASSIC: Bring Back the Mug
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3384),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3401),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>

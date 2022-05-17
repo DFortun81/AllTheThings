@@ -1722,16 +1722,17 @@ root("Zones", m(KALIMDOR, {
 					["races"] = { TROLL },
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
 				}),
-				q(7664, bubbleDownSelf({ ["timeline"] = { "added 1.4.0", "removed 4.0.3.10000" } }, {	-- Ivory Raptor Replacement
-					["provider"] = { "n", 7952 },	-- Zjolnir
+				q(7664, {	-- Ivory Raptor Replacement
+					["qg"] = 7952,	-- Zjolnir
+					["coord"] = { 55.2, 75.6, DUROTAR },
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 13317, 1 } },	-- Ivory Raptor (MOUNT!)
+					["sym"] = { { "select", "itemID", 18788, 18789, 18990 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
-						i(18788),	-- Swift Blue Raptor (MOUNT!)
-						i(18789),	-- Swift Olive Raptor (MOUNT!)
-						i(18990),	-- Swift Orange Raptor
-					},
-				})),
+					["_drop"] = { "g" },
+				}),
 				q(31012, {	-- Joining the Horde
 					["qg"] = 60570,	-- Ji Firepaw
 					["coord"] = { 45.6, 12.6, DUROTAR },
@@ -2021,16 +2022,17 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(7665,  bubbleDownSelf({ ["timeline"] = { "added 1.4.0", "removed 4.0.3.10000" } }, {	-- Red Raptor Replacement
-					["provider"] = { "n", 7952 },	-- Zjolnir
+				q(7665, {	-- Red Raptor Replacement
+					["qg"] = 7952,	-- Zjolnir
+					["coord"] = { 55.2, 75.6, DUROTAR },
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 8586, 1 } },	-- Mottled Red Raptor (MOUNT!)
+					["sym"] = { { "select", "itemID", 18788, 18789, 18990 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
-						i(18788),	-- Swift Blue Raptor (MOUNT!)
-						i(18789),	-- Swift Olive Raptor (MOUNT!)
-						i(18990),	-- Swift Orange Raptor
-					},
-				})),
+					["_drop"] = { "g" },
+				}),
 				q(823, {	-- Report to Orgnil
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
@@ -2877,14 +2879,18 @@ root("Zones", m(KALIMDOR, {
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					["g"] = {
+						i(8588),	-- Emerald Raptor (MOUNT!)
 						i(18788),	-- Swift Blue Raptor (MOUNT!)
 						i(18789),	-- Swift Olive Raptor (MOUNT!)
 						i(18790),	-- Swift Orange Raptor (MOUNT!)
-						i(8588),	-- Emerald Raptor (MOUNT!)
 						i(8591),	-- Turquoise Raptor (MOUNT!)
 						i(8592),	-- Violet Raptor (MOUNT!)
-						i(13317, { ["timeline"] = {"removed 1.4.0"}}),	-- Ivory Raptor (MOUNT!) -- Unable to 100% verify this source.
-						i(8586, { ["timeline"] = {"removed 1.4.0"}}),	-- Mottled Red Raptor (MOUNT!)-- Unable to 100% verify this source.
+						i(13317, {	-- Ivory Raptor (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
+						i(8586, {	-- Mottled Red Raptor (MOUNT!)
+							["timeline"] = { "removed 1.4.0" },
+						}),
 					},
 				}),
 			})),

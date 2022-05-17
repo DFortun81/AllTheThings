@@ -3,59 +3,156 @@
 ---------------------------------------------------
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(DUN_MOROGH, {
-		["lore"] = "Dun Morogh is the snowy starter zone for Dwarf and Gnome in central Eastern Kingdoms. New players learn the basics of questing by fighting leper gnomes from Gnomeregan and lighter topics like safely transporting ale. This zone is reached on foot via a series of elaborate connecting tunnels not found anywhere else in Azeroth.",
+		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes’ former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
 		["maps"] = {
-			28,		-- Coldridge Pass
 			29,		-- The Grizzled Den
-			31,		-- Coldridge Valley
-			428,	-- Frostmane Hovel (Coldridge Valley)
 			470,	-- Frostmane Hold
 		},
 		-- #if AFTER WRATH
-		["achievementID"] = 627,
+		["icon"] = "Interface\\Icons\\achievement_zone_dunmorogh",
 		-- #endif
 		["groups"] = {
 			m(COLDRIDGE_VALLEY, {
 				["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
 				["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
+				["maps"] = {
+					28,		-- Coldridge Pass
+					31,		-- Coldridge Valley
+					428,	-- Frostmane Hovel (Coldridge Valley)
+				},
 				["groups"] = {
 					n(QUESTS, {
+						q(170, {	-- A New Threat
+							["qg"] = 713,	-- Balir Frosthammer
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["coord"] = { 29.6, 71.2, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/6 Rockjaw Trogg
+									["provider"] = { "n", 707 },	-- Rockjaw Trogg
+								}),
+								objective(2, {	-- 0/6 Burly Rockjaw Trogg
+									["provider"] = { "n", 724 },	-- Burly Rockjaw Trogg
+								}),
+								i(6185, {	-- Bear Shawl
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(2172, {	-- Rustic Belt
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(6173, {	-- Snow Boots
+									["timeline"] = { "removed 4.0.3" },
+								}),
+							},
+						}),
 						q(3361, {	-- A Refugee's Quandary
 							["qg"] = 8416,	-- Felix Whindlebolt
+							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
 							["coord"] = { 41.8, 63.7, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 28.6, 67.8, DUN_MOROGH },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(3, 3, 1),
+							["groups"] = {
+								objective(1, {	-- 0/1 Felix's Box
+									["provider"] = { "i", 10438 },	-- Felix's Box
+									["coord"] = { 20.9, 76.1, DUN_MOROGH },
+								}),
+								objective(2, {	-- 0/1 Felix's Chest
+									["provider"] = { "i", 16313 },	-- Felix's Chest
+									["coord"] = { 22.8, 79.9, DUN_MOROGH },
+								}),
+								objective(3, {	-- 0/1 Felix's Bucket of Bolts
+									["provider"] = { "i", 16314 },	-- Felix's Bucket of Bolts
+									["coord"] = { 26.3, 79.2, DUN_MOROGH },
+								}),
+							},
 						}),
 						q(24490, {	-- A Trip to Ironforge
 							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 218,	-- Ice and Fire
 							["coord"] = { 42.7, 62.1, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24471, {	-- Aid for the Wounded
 							["qg"] = 658,	-- Sten Stoutarm
 							["sourceQuest"] = 24469,	-- Hold the Line!
 							["coord"] = { 65.5, 41.9, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24475, {	-- All the Other Stuff
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24474,	-- First Things First: We're Gonna Need Some Beer
 							["coord"] = { 60.6, 21.0, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24496, {	-- Arcane Rune
 							["qg"] = 37087,	-- Jona Ironstock
 							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
-							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(1599, {	-- Beginnings
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
+							["coord"] = { 28.6, 66.1, DUN_MOROGH },
+							["altQuests"] = { 1598 },	-- The Stolen Tome
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								objective(1, {	-- 0/3 Feather Charm
+									["provider"] = { "i", 6753 },	-- Feather Charm
+									["cr"] = 946,	-- Frostmane Novice
+								}),
+								-- #if BEFORE 4.0.3
+								recipe(688),	-- Summon Imp
+								-- #endif
+							},
+						}),
+						q(3365, {	-- Bring Back the Mug
+							["providers"] = {
+								{ "n", 836 },	-- Durnan Furcutter
+								{ "i", 10440 },	-- Nori's Mug
+							},
+							["sourceQuest"] = 3364,	-- Scalding Mornbrew Delivery
+							["coord"] = { 28.8, 66.4, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 4,
+						}),
+						q(233, {	-- Coldridge Valley Mail Delivery (1/2)
+							["providers"] = {
+								{ "n", 658 },	-- Sten Stoutarm
+								{ "i", 2187 },	-- A Stack of Letters
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(234, {	-- Coldridge Valley Mail Delivery (2/2)
+							["providers"] = {
+								{ "n", 714 },	-- Talin Keeneye
+								{ "i", 2188 },	-- A Letter to Grelin Whitebeard
+							},
+							["sourceQuest"] = 233,	-- Coldridge Valley Mail Delivery (1/2)
+							["coord"] = { 22.6, 71.4, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24493, {	-- Don't Forget About Us
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
 							["coord"] = { 61.0, 19.7, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
@@ -63,6 +160,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
 							["coord"] = { 61.6, 22.0, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(31150, {	-- Elegant Rune
@@ -83,6 +181,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 916,	-- Solm Hargin
 							["sourceQuest"] = 3109,	-- Encrypted Rune
 							["coord"] = { 59.5, 20.4, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["u"] = REMOVED_FROM_GAME,
@@ -91,23 +190,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
 							["coord"] = { 62.7, 21.4, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24491, {	-- Follow that Gyro-Copter!
 							["qg"] = 6782,	-- Hands Springsprocket
 							["sourceQuest"] = 24490,	-- A Trip to Ironforge
 							["coord"] = { 87.5, 44.4, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24470, {	-- Give 'em What-For
 							["qg"] = 37081,	-- Joren Ironstock
 							["sourceQuest"] = 24469,	-- Hold the Line!
 							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24469, {	-- Hold the Line!
 							["qg"] = 37081,	-- Joren Ironstock
 							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(218, {	-- Ice and Fire
@@ -121,8 +224,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
@@ -133,18 +236,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								24470,	-- Give 'em What-For
 							},
 							["coord"] = { 67.1, 41.3, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24486, {	-- Make Hay While the Sun Shines
 							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24477,	-- Dwarven Artifacts
 							["coord"] = { 61.7, 22.0, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["coord"] = { 69.8, 43.9, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57540),	-- Coldridge Mountaineer's Pouch
@@ -160,6 +266,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
 							["coord"] = { 43.2, 63.1, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24487, {	-- Whitebeard Needs Ye
@@ -169,11 +276,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								24486,	-- Make Hay While the Sun Shines
 							},
 							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24533, {	-- Words of Power
 							["qg"] = 837,	-- Branstock Khalder
 							["coord"] = { 60.7, 14.6, COLDRIDGE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["u"] = REMOVED_FROM_GAME,
@@ -589,8 +698,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
+					["sourceQuest"] = 318,	-- Evershine
+					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 2,
+					["groups"] = {
+						objective(1, {	-- 0/6 Ice Claw Bear
+							["provider"] = { "n", 1196 },	-- Ice Claw Bear
+						}),
+						objective(2, {	-- 0/8 Elder Crag Boar
+							["provider"] = { "n", 1127 },	-- Elder Crag Boar
+						}),
+						objective(3, {	-- 0/8 Snow Leopard
+							["provider"] = { "n", 1201 },	-- Snow Leopard
+						}),
+					},
 				}),
 				q(25882, {	-- A Hand at the Ranch
 					["qg"] = 41298,	-- Slamp Wobblecog
@@ -599,41 +722,114 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25841,	-- Strike From Above
 					},
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(26855, {	-- A Pilot's Revenge
-					["provider"] = { "o", 2059 },	-- A Dwarven Corpse
-					["sourceQuest"] = 26854,	-- The Lost Pilot
-					["coord"] = { 87.6, 50.2, DUN_MOROGH },
+				q(417, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal
+					},
+					["sourceQuest"] = 419,	-- The Lost Pilot
+					["coord"] = { 79.7, 36.2, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
 					["groups"] = {
-						i(57560),	-- Mangy Claw Mitts
-						i(57566),	-- Siege Engineer's Belt
-						i(57562),	-- Hammerfoot's Plate Leggings
-						i(57563),	-- South Gate Blunderbuss
-						i(131612),	-- Siege Engineer's Waistband
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 }, 	-- Mangy Claw
+							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(2218, {	-- Craftsman's Dagger
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(1009, {	-- Compact Hammer
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
-				q(417, {	-- A Pilot's Revenge
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(1009)),	-- Compact Hammer
-						un(REMOVED_FROM_GAME, i(2218)),	-- Craftsman's Dagger
+				q(26855, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal
 					},
+					["sourceQuest"] = 26854,	-- The Lost Pilot
+					["coord"] = { 87.6, 50.2, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 }, 	-- Mangy Claw
+							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(57560, {	-- Mangy Claw Mitts
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57566, {	-- Siege Engineer's Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57562, {	-- Hammerfoot's Plate Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57563, {	-- South Gate Blunderbuss
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131612, {	-- Siege Engineer's Waistband
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+				q(5541, {	-- Ammo for Rumbleshot
+					["qg"] = 1694,	-- Loslor Rudge
+					["coord"] = { 50.0, 49.4, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rumbleshot's Ammo
+							["provider"] = { "i", 13850 },	-- Rumbleshot's Ammo
+							["coord"] = { 44.13, 56.95, DUN_MOROGH },
+						}),
+					},
+				}),
+				q(310, {	-- Bitter Rivals
+					["providers"] = {
+						{ "n", 1375 },	-- Marleth Barleybrew
+						{ "i", 2548 },	-- Barrel of Barleybrew Scalder
+					},
+					["coord"] = { 30.2, 45.6, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 2,
 				}),
 				q(7674, {	-- Black Ram Exchange
 					["qg"] = 1261,	-- Veron Amberstill
+					-- #if AFTER CATA
+					["coord"] = { 70.6, 48.9, DUN_MOROGH },
+					-- #else
+					["coord"] = { 63.4, 50.6, DUN_MOROGH },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 13328, 1 } },	-- Black Ram
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },
 				}),
 				q(26380, {	-- Bound for Kharanos
-					["qg"] = 42933,	-- Ciara Deepstone
+					["providers"] = {
+						{ "n", 42933 },	-- Ciara Deepstone
+						{ "i", 58271 },	-- Sample Casks
+					},
 					["coord"] = { 49.9, 44.9, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				
 				q(25667, {	-- Culling the Wendigos
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
@@ -695,28 +891,26 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7675, {	-- Icy Blue Mechanostrider Replacement
-					["qg"] = 7955,	-- Milli Featherwhistle
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						i(18772),	-- Swift Green Mechanostrider (MOUNT!)
-						i(18773),	-- Swift White Mechanostrider (MOUNT!)
-						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
-					},
-				}),
 				q(313, {	-- Forced to Watch from Afar
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(7673, { -- Frost Ram Exchange
+				q(7673, {	-- Frost Ram Exchange
 					["qg"] = 1261,	-- Veron Amberstill
+					-- #if AFTER CATA
+					["coord"] = { 70.6, 48.9, DUN_MOROGH },
+					-- #else
+					["coord"] = { 63.4, 50.6, DUN_MOROGH },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 13329, 1 } },	-- Frost Ram
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },
 				}),
 				q(25724, {	-- Frostmane Aggression
 					["qg"] = 40950,	-- Captain Tharran
@@ -784,6 +978,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
+				q(7675, {	-- Icy Blue Mechanostrider Replacement
+					["qg"] = 7955,	-- Milli Featherwhistle
+					-- #if AFTER CATA
+					["coord"] = { 56.2, 46.3, DUN_MOROGH },
+					-- #else
+					["coord"] = { 49.0, 48.0, DUN_MOROGH },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 13327, 1 } },	-- Icy Blue Mechanostrider Mod A
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
+				}),
 				q(25932, {	-- It's Raid Night Every Night
 					["qg"] = 41578,	-- Sergeant Flinthammer
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
@@ -1048,14 +1257,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(7676, {	-- White Mechanostrider Replacement
 					["qg"] = 7955,	-- Milli Featherwhistle
+					-- #if AFTER CATA
+					["coord"] = { 56.2, 46.3, DUN_MOROGH },
+					-- #else
+					["coord"] = { 49.0, 48.0, DUN_MOROGH },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 13326, 1 } },	-- White Mechanostrider Mod A
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						i(18772),	-- Swift Green Mechanostrider (MOUNT!)
-						i(18773),	-- Swift White Mechanostrider (MOUNT!)
-						i(18774),	-- Swift Yellow Mechanostrider (MOUNT!)
-					},
+					["_drop"] = { "g" },
 				}),
 			}),
 			n(RARES, {
