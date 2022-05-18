@@ -10602,7 +10602,7 @@ itemHarvesterFields.text = function(t)
 				info.iLvl = nil;
 			end
 			-- can debug output for tooltip harvesting
-			-- if t.itemID == 153037 then
+			-- if t.itemID == 141038 then
 			-- 	info._debug = true;
 			-- end
 			t.itemType = itemType;
@@ -10639,17 +10639,32 @@ itemTooltipHarvesterFields.text = function(t)
 				if line then
 					local text = line:GetText();
 					if text then
+						-- sub items within recipe tooltips show this text, need to wait until it loads
+						if text == RETRIEVING_ITEM_INFO then
+							return RETRIEVING_DATA;
+						end
 						-- pull the "Recipe Type: Recipe Name" out if it matches
 						if index == 1 then
+							-- if debugPrint then
+							-- 	print("line match",text:match("^[^:]+:%s*([^:]+)$"))
+							-- end
 							craftName = text:match("^[^:]+:%s*([^:]+)$");
-							if craftName then craftName = "^%s*"..craftName; end
+							if craftName then
+								-- '-' following a character is considered a Regex quantifier, so replace '-' with %- for literal match
+								craftName = "^%s*"..craftName:gsub("%-","%%-");
+								-- if debugPrint then print("Crafted Item Match:",craftName) end
+							end
 						-- use this name to check that the Item it creates may be listed underneath
 						elseif craftName and text:match(craftName) then
-							-- print("subitem for",t.info.itemID)
-							-- print(craftName)
+							-- if debugPrint then
+							-- 	print("subitem",t.info.itemID,craftName)
+							-- end
 							isSubItem = true;
 							-- don't care to store info about the sub item
 						elseif isSubItem and text:match("^Requires") then
+							-- if debugPrint then
+							-- 	print("leaving subitem",t.info.itemID,craftName)
+							-- end
 							-- leaving the sub-item tooltip when encountering 'Requires '
 							isSubItem = nil;
 						end
@@ -10666,20 +10681,27 @@ itemTooltipHarvesterFields.text = function(t)
 									t.info.classes = classes;
 								end
 							elseif string.find(text, "Races: ") then
-								local races = {};
 								local _,list = strsplit(":", text);
-								for i,s in ipairs({strsplit(",", list)}) do
-									local race = app.RaceDB[strtrim(s)];
-									if type(race) == "number" then
-										tinsert(races, race);
-									else -- Pandaren
-										for _,panda in pairs(race) do
-											tinsert(races, panda);
+								local raceNames = {strsplit(",", list)};
+								if raceNames then
+									local races = {};
+									for _,s in ipairs(raceNames) do
+										local race = app.RaceDB[strtrim(s)];
+										if not race then
+											print("Uknown Race",strtrim(s))
+										elseif type(race) == "number" then
+											tinsert(races, race);
+										else -- Pandaren
+											for _,panda in pairs(race) do
+												tinsert(races, panda);
+											end
 										end
 									end
-								end
-								if #races > 0 then
-									t.info.races = races;
+									if #races > 0 then
+										t.info.races = races;
+									end
+								else
+									print("Empty Races on Item:",t.itemID)
 								end
 							elseif string.find(text, " Only") then
 								local faction,list,c = strsplit(" ", text);
