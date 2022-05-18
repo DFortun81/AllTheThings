@@ -16069,6 +16069,10 @@ RowOnEnter = function (self)
 					-- The character is able to accept the breadcrumb quest without Party Sync
 					GameTooltip:AddLine(L["BREADCRUMB_PARTYSYNC"]);
 					AddQuestInfoToTooltip(GameTooltip, nextq);
+				elseif reference.DisablePartySync == false then
+					-- unknown if party sync will function for this Thing
+					GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+					AddQuestInfoToTooltip(GameTooltip, nextq);
 				elseif not reference.DisablePartySync then
 					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
 					GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_2"]));
@@ -16121,7 +16125,10 @@ RowOnEnter = function (self)
 
 		-- it is locked and no warning has been added to the tooltip
 		if not lockedWarning and reference.locked then
-			if not reference.DisablePartySync then
+			if reference.DisablePartySync == false then
+				-- unknown if party sync will function for this Thing
+				GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_4"]));
+			elseif not reference.DisablePartySync then
 				-- should be possible in party sync
 				GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.LockedWarning, L["BREADCRUMB_PARTYSYNC_3"]));
 			else

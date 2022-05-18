@@ -190,6 +190,7 @@ root(ROOTS.Zones, m(905, {	-- Argus
 			o(273443, {-- Void-Seeped Cache
 				["questID"] = 48361,
 				["coords"] = {
+					{ 19.8, 46.6, 882 },
 					{ 37.7, 48.7, 882 },
 				},
 			}),

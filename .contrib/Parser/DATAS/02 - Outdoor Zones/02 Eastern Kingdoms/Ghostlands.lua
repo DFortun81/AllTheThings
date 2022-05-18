@@ -439,11 +439,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16231,	-- Dame Auriferous
 					["sourceQuest"] = 9163,	-- Into Occupied Territory
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22594, 1 },	-- Night Elf Plans
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 1, 11),
+					["groups"] = {
+						objective(1, {	-- Night Elf Plans
+							["provider"] = { "i", 22594 },	-- Night Elf Plans
+						}),
+					},
 				}),
 				q(9155, {	-- Down the Dead Scar
 					["qg"] = 16200,	-- Deathstalker Rathiel
@@ -480,11 +482,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16189,	-- Skymaster Sunwing <Bat Handler>
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 45.4, 30.5, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Quartermaster Lymel's Bill of Lading
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						objective(1, {	-- Quartermaster Lymel's Bill of Lading
+							["provider"] = { "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
+						}),
+					},
 				}),
 				-- #endif
 				q(9157, {	-- Forgotten Rituals
@@ -503,11 +507,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22653, 1 },	-- Dar'Khan's Head
-					},
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 1, 15),
+					["groups"] = {
+						objective(1, {	-- Dar'Khan's Head
+							["provider"] = { "i", 22653 },	-- Dar'Khan's Head
+						}),
+					},
 				}),
 				q(9139, {	-- Goldenmist Village
 					["qg"] = 16197,	-- Arcanist Vandril
@@ -535,11 +541,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9329,	-- The Forsaken [Non-Blood Elf Only]
 					},
 					["coord"] = { 47.3, 29.3, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Quartermaster Lymel's Bill of Lading
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						objective(1, {	-- Quartermaster Lymel's Bill of Lading
+							["provider"] = { "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
+						}),
+					},
 				}),
 				-- #endif
 				q(9491, {	-- Greed
@@ -583,22 +591,26 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22653, 1 },	-- Dar'Khan's Head
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 1, 15),
+					["groups"] = {
+						objective(1, {	-- Dar'Khan's Head
+							["provider"] = { "i", 22653 },	-- Dar'Khan's Head
+						}),
+					},
 				}),
 				q(9162, {	-- Hints of the Past
 					["provider"] = { "o", 181150 },	-- Dusty Journal
 					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["coord"] = { 79.6, 17.5, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22706, 1 },	-- Dar'Khan's Journal
-					},
 					["model"] = 198020,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
+					["groups"] = {
+						objective(1, {	-- Dar'Khan's Journal
+							["provider"] = { "i", 22706 },	-- Dar'Khan's Journal
+						}),
+					},
 				}),
 				q(9163, {	-- Into Occupied Territory
 					["qg"] = 16231,	-- Dame Auriferous
@@ -664,33 +676,37 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16252,	-- High Executor Mavren
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22627, 1 },	-- The Lady's Necklace
-					},
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 1, 15),
+					["groups"] = {
+						objective(1, {	-- The Lady's Necklace
+							["provider"] = { "i", 22627 },	-- The Lady's Necklace
+						}),
+					},
 				}),
 				q(9180, {	-- Journey to Undercity [Blood Elf Only]
 					["qg"] = 16252,	-- High Executor Mavren
 					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22627, 1 },	-- The Lady's Necklace
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 1, 15),
+					["groups"] = {
+						objective(1, {	-- The Lady's Necklace
+							["provider"] = { "i", 22627 },	-- The Lady's Necklace
+						}),
+					},
 				}),
 				q(9217, {	-- More Rotting Hearts
 					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9216,	-- Rotting Hearts
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22641, 10 },	-- Rotting Heart
-					},
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
+						objective(1, {
+							["cost"] = {{ "i", 22641, 10 }},	-- 10x Rotting Heart
+						}),
 						i(22779),	-- Scourgebane Draught
 					},
 				}),
@@ -698,13 +714,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9218,	-- Spinal Dust
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22642, 10 },	-- Spinal Dust
-					},
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
+						objective(1, {
+							["cost"] = {{ "i", 22642, 10 }},	-- 10x Spinal Dust
+						}),
 						i(22778),	-- Scourgebane Infusion
 					},
 				}),
@@ -727,12 +743,12 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16203,	-- Ranger Vynna
 					["sourceQuest"] = 9162,	-- Hints of the Past
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22706, 1 },	-- Dar'Khan's Journal
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 22706 },	-- Dar'Khan's Journal
+						}),
 						i(28154),	-- Red Silk Trousers
 						i(28157),	-- Black Leather Jerkin
 						i(28161),	-- Tranquillien	Plate Leggings
@@ -770,12 +786,12 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9155,	-- Down the Dead Scar
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22641, 10 },	-- Rotting Heart
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
+						objective(1, {
+							["cost"] = {{ "i", 22641, 10 }},	-- Rotting Heart
+						}),
 						i(22779),	-- Scourgebane Draught
 					},
 				}),
@@ -825,12 +841,12 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9155,	-- Down the Dead Scar
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22642, 10 },	-- Spinal Dust
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
 					["groups"] = {
+						objective(1, {
+							["cost"] = {{ "i", 22642, 10 }},	-- Spinal Dust
+						}),
 						i(22778),	-- Scourgebane Infusion
 					},
 				}),
