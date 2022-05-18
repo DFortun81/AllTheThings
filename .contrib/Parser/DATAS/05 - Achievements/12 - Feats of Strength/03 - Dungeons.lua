@@ -237,13 +237,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			["timeline"] = { "added 9.2.5", "removed 10.0.0" },
 		}),
 		ach(15689, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shadowlands Keystone Conqueror: Season Four
-			title(465),	-- %s the [PH] Season 4 Title
+			title(465),	-- %s the Shrouded
 		})),
 		ach(15690, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shadowlands Keystone Master: Season Four
 			-- i(),	-- mount
 		})),
 		ach(15691, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" "removed 9.2.5" } }, {	-- Cryptic Hero: Shadowlands Season 3
 			title(458),	-- <Name>, the Cryptic Hero
+		})),
+		ach(15756, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shrouded Hero: Shadowlands Season 4
+			title(466),	-- %s, the Shrouded Hero
 		})),
 	}),
 }));

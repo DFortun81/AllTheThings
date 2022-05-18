@@ -43,10 +43,13 @@ root("Instances", tier(SL_TIER, {
 			-- Season 4
 			ach(15688, {["timeline"] = { "added 9.2.5", "removed 10.0.0" }}),	-- Shadowlands Keystone Explorer: Season Four
 			ach(15689, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shadowlands Keystone Conqueror: Season Four
-				title(465),	-- %s the [PH] Season 4 Title
+				title(465),	-- %s the Shrouded
 			})),
 			ach(15690, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shadowlands Keystone Master: Season Four
 				-- i(),	-- mount
+			})),
+			ach(15756, bubbleDownSelf({ ["timeline"] = { "added 9.2.5", "removed 10.0.0" } }, {	-- Shrouded Hero: Shadowlands Season 4
+				title(466),	-- %s, the Shrouded Hero
 			})),
 			-- Keystone Hero
 			ach(15051, {["timeline"] = {"added 9.1.0"}}),	-- Keystone Hero: De Other Side
