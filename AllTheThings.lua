@@ -10641,7 +10641,12 @@ itemTooltipHarvesterFields.text = function(t)
 					if text then
 						-- sub items within recipe tooltips show this text, need to wait until it loads
 						if text == RETRIEVING_ITEM_INFO then
-							return RETRIEVING_DATA;
+							t.info.retries = (t.info.retries or 0) + 1;
+							-- 30 attempts to load the sub-item, otherwise just continue parsing tooltip without it
+							if t.info.retries < 30 then
+								return RETRIEVING_DATA;
+							end
+							app.PrintDebug("Failed loading sub-item for",t.info.itemID)
 						end
 						-- pull the "Recipe Type: Recipe Name" out if it matches
 						if index == 1 then
@@ -10688,7 +10693,7 @@ itemTooltipHarvesterFields.text = function(t)
 									for _,s in ipairs(raceNames) do
 										local race = app.RaceDB[strtrim(s)];
 										if not race then
-											print("Uknown Race",strtrim(s))
+											print("Unknown Race",t.info.itemID,strtrim(s))
 										elseif type(race) == "number" then
 											tinsert(races, race);
 										else -- Pandaren
@@ -10701,7 +10706,7 @@ itemTooltipHarvesterFields.text = function(t)
 										t.info.races = races;
 									end
 								else
-									print("Empty Races on Item:",t.itemID)
+									print("Empty Races",t.info.itemID)
 								end
 							elseif string.find(text, " Only") then
 								local faction,list,c = strsplit(" ", text);
@@ -10712,7 +10717,7 @@ itemTooltipHarvesterFields.text = function(t)
 									elseif faction == "Horde" then
 										t.info.races = app.FACTION_RACES[2];
 									else
-										print("Unknown Faction", faction);
+										print("Unknown Faction",t.info.itemID,faction);
 									end
 								end
 							elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
@@ -10755,7 +10760,7 @@ itemTooltipHarvesterFields.text = function(t)
 												elseif spellName == "Warforged Nightmare" then
 													-- Do nothing, for now.
 												else
-													print("Unknown Skill", text, "'" .. spellName .. "'");
+													print("Unknown Skill",t.info.itemID, text, "'" .. spellName .. "'");
 												end
 											elseif spellName == "Previous Rank" then
 												-- Do nothing
@@ -10830,7 +10835,7 @@ itemTooltipHarvesterFields.text = function(t)
 											elseif string.find(spellName, ": ") then
 												-- Do nothing.
 											else
-												print("Unknown Spell", text, "'" .. spellName .. "'");
+												print("Unknown Spell",t.info.itemID, text, "'" .. spellName .. "'");
 											end
 										end
 									end
@@ -10841,6 +10846,7 @@ itemTooltipHarvesterFields.text = function(t)
 				end
 			end
 			-- if debugPrint then print("---") end
+			t.info.retries = nil;
 			rawset(t, "text", link);
 			rawset(t, "collected", true);
 		end
@@ -18683,13 +18689,37 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 					self.ScrollCount = 2;
 					self.ScrollBar:SetValue(1);
 					self.UpdateDone = nil;
+					-- update the window since we've cleared everything available
+					-- app.PrintDebug("UpdateWindow - done processing")
+					-- self:Update();
 				else
 					self.ScrollCount = scrollCount;
 					self.ScrollBar:SetValue(scrollCount);
 				end
-				-- refresh the window
 				self:Refresh();
 			end
+			-- processes the content of the partition and makes the partition hidden if everything within is completed
+			-- local RemoveHarvests = function(self)
+			-- 	app.PrintDebug("OnUpdate",self.text)
+			-- 	if self.visible and self.g then
+			-- 		local completed, i, g = true, 1, self.g;
+			-- 		local o;
+			-- 		-- check each item in order to see if it is completed
+			-- 		while completed and i < #g do
+			-- 			o = g[i];
+			-- 			completed = o and o.collected;
+			-- 			if completed then
+			-- 				i = i + 1;
+			-- 			end
+			-- 		end
+			-- 		if completed then
+			-- 			app.PrintDebug("Hide Partition",self.text)
+			-- 			self.visible = false;
+			-- 			self.OnUpdate = nil;
+			-- 		end
+			-- 	end
+			-- 	return true;
+			-- end
 			-- add a bunch of raw, delay-loaded items in order into the window
 			local groupCount, id = math.floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
@@ -18709,6 +18739,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 						self.UpdateDone = CleanUpHarvests;
 						-- no return so that it acts like a normal row
 					end,
+					-- ["OnUpdate"] = RemoveHarvests,
 					["g"] = partitionGroups,
 				};
 				if partitionStart + 1 < self.Limit then
