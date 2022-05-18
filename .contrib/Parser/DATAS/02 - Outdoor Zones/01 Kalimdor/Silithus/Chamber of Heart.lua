@@ -48,6 +48,7 @@ root("Zones", {
 						q(54453, {	-- Supplies from Magni
 							["repeatable"] = true,
 							["coord"] = { 42.22, 44.27, SILITHUS },
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["lvl"] = { 50 },
 							["g"] = {
 								i(166298, {	-- Champions of Azeroth Supplies

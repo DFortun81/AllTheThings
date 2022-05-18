@@ -187,12 +187,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(186620),	-- Rezara's Fencing Grips
 				},
 			}),
-			n(179791, {	-- Deomen the Vortex
+			n(179779, {	-- Deomen the Vortex
 				["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
 				["questID"] = 64251,
 				["isDaily"] = true,
+				["crs"] = { 179791 },	-- Deomen the Vortex (while in cage)
 				["timeline"] = { "added 9.1.0" },
-			--	["coord"] = { 66.4, 55.4, THE_MAW }, old coord?
 				["coord"] = { 61.3, 41.3, THE_MAW },
 				["g"] = {
 					crit(5, {	-- Deomen the Vortex

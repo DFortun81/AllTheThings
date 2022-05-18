@@ -386,6 +386,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(189927),	-- Broker's Gnawed Spaulders
+					i(190730),	-- Matriarch's Shell Band
 					i(189998),	-- Ornate Stone Mallet
 					i(189955),	-- Scarabid's Clattering Handguards
 				},
@@ -459,7 +460,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190006),	-- Anima-Siphoning Sword
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
-					i(190730),	-- Matriarch's Shell Band
 					i(187847),	-- Design: Devourer Essence Stone (RECIPE!)
 				},
 			}),

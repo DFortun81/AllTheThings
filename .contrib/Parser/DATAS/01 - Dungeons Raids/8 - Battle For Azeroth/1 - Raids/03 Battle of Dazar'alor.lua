@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
@@ -1248,7 +1248,11 @@ _.Instances = { tier(BFA_TIER, {
 			})),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
-	q(55027),	-- Killing Opulence(M)
-};
+}));
+
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	inst(1176, {	-- Battle of Dazar'alor
+		q(55026),	-- Killing Opulence (H)
+		q(55027),	-- Killing Opulence (M)
+	}),
+}));

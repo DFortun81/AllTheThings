@@ -1463,7 +1463,6 @@ root("HiddenQuestTriggers", {
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(49264),	-- opening a Void-Seeped Cache in Eredath
-		q(48361),	-- opening a Void-Seeped Cache in Eredath
 
 		--	Deaths of Chromie scenario
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
@@ -2452,10 +2451,7 @@ root("HiddenQuestTriggers", {
 		q(57635),	-- Uldum - Black Empire Cache
 		q(57628),	-- Uldum - Black Empire Coffer
 		q(58138),	-- Uldum - Infested Cache
-		q(58139),	-- Uldum - Infested Cache
-		q(58140),	-- Uldum - Infested Cache (24.52 55.08)
 		q(58142),	-- Uldum - Infested Cache
-		q(58137),	-- Uldum - Infested Strongbox
 		q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
 		q(59055),	-- Looting a bounty in Uldum as Alliance
 		q(59056),	-- Looting a bounty in Uldum as Alliance

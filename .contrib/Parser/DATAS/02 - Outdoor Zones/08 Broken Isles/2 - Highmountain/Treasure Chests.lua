@@ -201,7 +201,7 @@ root("HiddenQuestTriggers", {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(TREASURES, {
-				-- q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem
+				q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem (32.4, 38.5, 750)
 				q(40389),	-- creating Rocfeather Skyhorn Kite
 			}),
 		}),

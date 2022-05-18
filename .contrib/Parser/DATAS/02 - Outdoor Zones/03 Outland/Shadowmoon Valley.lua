@@ -422,9 +422,12 @@ root("Zones", {
 					}),
 					q(10562, {	-- Besieged! (A)
 						["qg"] = 21357,	-- Wing Commander Nuainn
-						-- #if AFTER 7.3.5.25600
-						["sourceQuest"] = 49550,	-- Hero's Call: Shadowmoon Valley!
-						-- #endif
+						["sourceQuests"] = {
+							11044,	-- Visions of Destruction
+							-- #if AFTER 7.3.5.25600
+							49550,	-- Hero's Call: Shadowmoon Valley!
+							-- #endif
+						},
 						["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 					}),

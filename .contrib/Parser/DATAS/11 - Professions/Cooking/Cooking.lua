@@ -2729,7 +2729,11 @@ profession(COOKING, {
 			["cost"] = {
 				{ "i", 12207, 12 },	-- Giant Egg
 				{ "i", 7974, 10 },	-- Zesty Clam Meat
+				-- #if AFTER CATA
+				{ "i", 3927, 20 },	-- Fine Aged Cheddar
+				-- #else
 				{ "i", 8932, 20 },	-- Alterac Swiss
+				-- #endif
 			},
 			["lvl"] = 35,
 			["groups"] = {

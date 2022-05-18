@@ -2899,7 +2899,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.0.1.26141
 				-- 8.0.1.26175
 				q(51219),	--
-				q(51333),	-- Anchors Aweigh!
 				-- 8.0.1.26231
 				q(51345),	--
 				q(51347),	--
@@ -3288,7 +3287,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.1.0.28616
 				q(54942),	--
 				-- 8.1.0.28657
-				q(55026),	--
 				-- 8.1.0.28710
 				-- 8.1.0.28724
 				-- 8.1.0.28768
@@ -3989,7 +3987,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57489),	--
 				q(57518),	--
 				q(57523),	--
-				q(57621),	-- Summoning Ritual
 				q(57629),	--
 				q(57630),	--
 				q(57631),	--

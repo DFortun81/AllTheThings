@@ -98,11 +98,12 @@ _.ObjectNames = {
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
-	-- #if AFTER WRATH
-	[113768] = [[GetSpellInfo(61820),	-- Brightly Colored Egg]],
-	-- #else
-	[113768] = "Brightly Colored Egg",
-	-- #endif
+	[113768] =
+		-- #if AFTER WRATH
+		[[GetSpellInfo(61820),	-- Brightly Colored Egg]],
+		-- #else
+		"Brightly Colored Egg",
+		-- #endif
 	[113791] = "Brazier of Everfount",
 	[123329] = "Baelog's Chest",
 	[124388] = "Garrett Family Chest",
@@ -1518,6 +1519,7 @@ _.ObjectNames = {
 	[273414] = "Ancient Eredar Cache",
 	[273415] = "Ancient Eredar Cache",
 	[273439] = "Ancient Eredar Cache",
+	[273443] = "Void-Seeped Cache",
 	[273519] = "Legion War Supplies",
 	[273521] = "Legion War Supplies",
 	[273523] = "Legion War Supplies",
@@ -1891,7 +1893,10 @@ _.ObjectNames = {
 	[337237] = "Lost Vault",
 	[337241] = "Stashed Equipment",
 	[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
+	[339243] = "Infested Strongbox",
 	[339248] = "Infested Cache",
+	[339249] = "Infested Cache",
+	[339250] = "Infested Cache",
 	[339283] = "Forgotten Noble's Chest",
 	[339601] = "Scroll of Aeons",
 	[339625] = "Sophia's Gift",
@@ -2476,11 +2481,12 @@ _.ObjectIcons = {
 	[37099] = "Interface/Icons/INV_Misc_StoneTablet_03",	-- Atal'ai Tablet
 	[62483] = "Interface/Icons/INV_WorseRobot",
 	[112948] = "Interface/Icons/battleground_strongbox_skirmish_horde",	-- Intrepid's Locked Strongbox
-	-- #if AFTER WRATH
-	[113768] = "Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
-	-- #else
-	[113768] = [[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
-	-- #endif
+	[113768] =
+		-- #if AFTER WRATH
+		"Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
+		-- #else
+		[[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
+		-- #endif
 	[131474] = "Interface/Icons/Creatureportrait_Nexus_Floating_Disc",	-- The Discs of Norgannon
 	[138492] = "Interface/Icons/inv_enchanting_wod_crystal2",	-- Shards of Myzrael
 	[141832] = "Interface/Icons/inv_hammer_19",	-- Gong of Zul'Farrak
@@ -2574,11 +2580,12 @@ _.ObjectIcons = {
 	[182549] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Fel Orc Plans
 	[182587] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
 	[182588] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
-	-- #if AFTER CATA
-	[182947] = "Interface/Icons/ability_warlock_ancientgrimoire",	-- The Codex of Blood
-	-- #else
-	[182947] = "Interface/Icons/inv_misc_book_06",	-- The Codex of Blood
-	-- #endif
+	[182947] =
+		-- #if AFTER CATA
+		"Interface/Icons/ability_warlock_ancientgrimoire",	-- The Codex of Blood
+		-- #else
+		"Interface/Icons/inv_misc_book_06",	-- The Codex of Blood
+		-- #endif
 	[182952] = "Interface/Icons/INV_Crate_01",	-- Steam Pump Flotsam
 	[183770] = "Interface/Icons/Spell_Mage_FocusingCrystal",	-- B'naar Control Console
 	[183811] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster

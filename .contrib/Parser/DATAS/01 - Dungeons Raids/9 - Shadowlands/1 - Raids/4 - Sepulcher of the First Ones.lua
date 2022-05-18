@@ -328,7 +328,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				o(375905, {	-- Protoform Schematic
-					["description"] = "In the chains.",
+					["description"] = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
 					--["coord"] = { X, Y, MAP },
 					["g"] = {
 						i(189461),	-- Schematic: Serenade

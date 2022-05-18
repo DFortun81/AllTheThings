@@ -321,7 +321,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				i(188564),	-- Gloves of the Arcane Tempest
 				i(188566),	-- Leggings of the Arcane Tempest
 				i(188568),	-- Mantle of the Arcane Tempest
-				i(188643),	-- Raiment of the Arcane Tempest
 				i(188567),	-- Robes of the Arcane Tempest
 				i(188570),	-- Sash of the Arcane Tempest
 				i(188571),	-- Slippers of the Arcane Tempest
@@ -424,3 +423,11 @@ root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
 	q(64933),	-- unlocking Diabolic Raiment set
 	q(64934),	-- unlocking Titanic Onslaught Armor set
 }));
+
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, tier(LEGION_TIER, {
+	n(-10048, {	-- Mage Tower
+		cl(MAGE, {	-- Regalia of the Arcane Tempest set
+			i(188643),	-- Raiment of the Arcane Tempest
+		}),
+	}),
+})));

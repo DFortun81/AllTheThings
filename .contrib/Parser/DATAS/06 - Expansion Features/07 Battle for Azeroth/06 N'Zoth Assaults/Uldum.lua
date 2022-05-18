@@ -219,42 +219,41 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						q(57359, {	-- Summoning Ritual
 							["description"] = "The portal needs to be clicked multiple times in order for the rares to spawn.  You can only click the portal once per day, so work together with others to get the spawn.  Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
-							["altQuests"] = { 57621, 57620 },	-- Summoning Ritual (there seem to be 3 separate questIDs, probably depending on the location that's up)
+							["altQuests"] = { 57620, 57621 },	-- Summoning Ritual
 							--["isWorldQuest"] = true, -- maybe?  classified as wq on wowhead
 							["coords"] = {
 								{ 55.2, 79.4, 1527 },
 								{ 50.0, 78.6, 1527 },
 								{ 50.8, 87.4, 1527 },
 							},
-							["g"] = {
+							["g"] = sharedData({
+								["isDaily"] = true,
+							}, {
+								-- Summoning Ritual (there seem to be 3 separate questIDs, probably depending on the location that's up)
+								q(57620),	-- Summoning Ritual
+								q(57621),	-- Summoning Ritual
 								n(157472, {	-- Aphrom the Guise of Madness
 									["questID"] = 57437,
-									["isDaily"] = true,
 								}),
 								n(157470, {	-- R'aas the Anima Devourer
 									["questID"] = 57436,
-									["isDaily"] = true,
 								}),
 								n(157390, {	-- R'oyolok the Reality Eater
 									["questID"] = 57434,
-									["isDaily"] = true,
 								}),
 								n(157476, {	-- Shugshul the Flesh Gorger
 									["questID"] = 57439,
-									["isDaily"] = true,
 								}),
 								n(157473, {	-- Yiphrim the Will Ravager
 									["questID"] = 57438,
-									["isDaily"] = true,
 									["g"] = {
 										i(174874),	-- Budget K'thir Disguise (TOY!)
 									},
 								}),
 								n(157469, {	-- Zoth'rum the Intellect Pillager
 									["questID"] = 57435,
-									["isDaily"] = true,
 								}),
-							},
+							}),
 						}),
 					})),
 					n(WORLD_QUESTS, sharedData({
@@ -934,10 +933,18 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["coord"] = { 41.1, 41.8, 1527 }, -- probably circles around Orsis
 						}),
 					})),
-					n(TREASURES, {
+					n(TREASURES, sharedData({
+						["isDaily"] = true,
+					}, {
+						o(339243, {	-- Infested Strongbox
+							["questID"] = 58137,
+							["cost"] = {{"i",174761,1}},	-- Aqir Relic
+							["coords"] = {
+								{ 36.3, 23.2, 1527 },
+							},
+						}),
 						o(339248, {	-- Infested Cache
 							["questID"] = 58141,
-							["isDaily"] = true,
 							["coords"] = {
 								{ 36.1, 20.2, 1527 },
 								{ 37.4, 45.7, 1527 },
@@ -952,11 +959,23 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								{ 40.8, 38.9, 1527 },
 								{ 41.6, 42.4, 1527 },
 								{ 41.6, 42.5, 1527 },
-								{ 43.1, 36.4, 1527 },
-								{ 43.1, 36.5, 1527 },
+								{ 43.0, 36.4, 1527 },
 							},
 						}),
-					}),
+						o(339249, {	-- Infested Cache
+							["questID"] = 58140,
+							["coords"] = {
+								{ 21.7, 64.4, 1527 },
+								{ 24.52, 55.08, 1527 },
+							},
+						}),
+						o(339250, {	-- Infested Cache
+							["questID"] = 58139,
+							["coords"] = {
+								{ 27.5, 64.1, 1527 },
+							},
+						}),
+					})),
 					n(WORLD_QUESTS, sharedData({
 						["isWorldQuest"] = true,
 					}, {
