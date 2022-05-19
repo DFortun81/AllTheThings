@@ -15,18 +15,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["questID"] = 64207,
 				["coord"] = { 66.0, 57.4, THE_MAW },
 				["cost"] = { { "i", 186727, 4 } },	-- 4x Seal Breaker Key
+				["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 				["g"] = {
 					o(369133, {	-- Domination Seal #1
 						["questID"] = 64204,
+						["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 					}),
 					o(369135, {	-- Domination Seal #2
 						["questID"] = 64205,
+						["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 					}),
 					o(369134, {	-- Domination Sealed Cage
 						["questID"] = 64208,
+						["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 					}),
 					o(369138, {	-- Domination Chest Seal
 						["questID"] = 64206,
+						["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 					}),
 					i(186607),	-- Nilganihmaht's Silver Ring
 				},

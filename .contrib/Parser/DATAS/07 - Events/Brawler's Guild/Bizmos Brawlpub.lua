@@ -229,7 +229,6 @@ root("WorldEvents", m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo'
 					i(127773, {	-- Gemcutter Module: Mastery
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
-						["spellID"] = 0,
 						["f"] = MISC,
 					}),
 					i(98080),	-- Gorgeous Blouse

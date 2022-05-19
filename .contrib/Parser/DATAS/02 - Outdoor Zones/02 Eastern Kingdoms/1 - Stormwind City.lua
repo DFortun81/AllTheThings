@@ -383,7 +383,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
-					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					["provider"] = { "o", 369893 },	-- Urgent Missive
+					["coord"] = { 68.1, 22.4, BORALUS },	-- Urgent Missive
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58912, {	-- An Urgent Meeting

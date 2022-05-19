@@ -445,7 +445,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
-						["altQuest"] = 9793,	-- The Fate of Tuurem
+						["altQuests"] = { 9793 },	-- The Fate of Tuurem
 					}),
 					q(10115, {	-- Daggerfen Deviance
 						["qg"] = 18008,	-- Ikuti
@@ -966,7 +966,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
-						["altQuest"] = 10104,	-- Concerns About Tuurem
+						["altQuests"] = { 10104 },	-- Concerns About Tuurem
 					}),
 					q(9776,  {	-- The Orebor Harborage
 						["qg"] = 18003,	-- Anchorite Ahuurn

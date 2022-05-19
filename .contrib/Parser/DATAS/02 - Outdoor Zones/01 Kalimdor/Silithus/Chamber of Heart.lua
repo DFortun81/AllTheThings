@@ -714,10 +714,29 @@ root("Zones", {
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
 						}),
 						q(56185, {	-- Whispers of N'zoth (A)
-							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 74.9, 15.1, BORALUS },
-							["sourceQuest"] = 57002,	-- Old Soldier
+							["qgs"] = {
+								-- #IF AFTER 9.2
+								155496,	-- Wrathion
+								-- #ELSE
+								154464,	-- Earthen Guardian
+								-- #ENDIF
+							},
+							["coords"] = {
+								-- #IF AFTER 9.2
+								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
+								-- #ELSE
+								{ 74.9, 15.1, BORALUS },
+								-- #ENDIF
+							},
+							["sourceQuests"] = {
+								-- #IF AFTER 9.2
+								-- #ELSE
+								57002,	-- Old Soldier
+								-- #ENDIF
+							},
+							-- #IF BEFORE 9.2
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							-- #ENDIF
 							["races"] = ALLIANCE_ONLY,
 							["timeline"] = {
 								"added 8.2.5.31921",
@@ -726,13 +745,36 @@ root("Zones", {
 							},
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
-							["provider"] = { "n", 154465 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, DAZARALOR },
+							["qgs"] = {
+								-- #IF AFTER 9.2
+								155496,	-- Wrathion
+								-- #ELSE
+								154465,	-- Earthen Guardian
+								-- #ENDIF
+							},
+							["coords"] = {
+								-- #IF AFTER 9.2
+								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
+								-- #ELSE
+								{ 51.0, 88.8, DAZARALOR },
+								-- #ENDIF
+							},
 							["sourceQuests"] = {
+								-- #IF AFTER 9.2
+								-- Available without completing:
+								-- 55519,	-- A Fresh Trauma
+								-- 55390,	-- In Darkness, I Dream
+								-- 57374,	-- Into the Darkest Depths
+								-- 57276,	-- Maintaining Focus (H)
+								-- 56260,	-- Unlocking the Power (H)
+								-- #ELSE
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal (Sylvanas Version)
+								-- #ENDIF
 							},
+							-- #IF BEFORE 9.2
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							-- #ENDIF
 							["races"] = HORDE_ONLY,
 							["timeline"] = {
 								"added 8.2.5.31921",

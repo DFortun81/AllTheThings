@@ -209,7 +209,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 					["sourceQuests"] = { 44500 },	-- Author! Author!
 					-- #if AFTER SHADOWLANDS
 					["description"] = "This is available to players chosing the Legion Timeline during Chromie Time.",
-					["timeline"] = {},
+					["timeline"] = { "added 7.0.3.22248", "removed 7.0.3.22810", "added 9.0" },
 					-- TODO: confirm if this can somehow be picked up via Party Sync
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
 					-- #endif

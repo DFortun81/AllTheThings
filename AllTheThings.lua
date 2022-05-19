@@ -11530,6 +11530,9 @@ local objectFields = {
 			end
 		end
 	end,
+	["lockedAsQuest"] = function(t)
+		return app.LockedAsQuest(t);
+	end,
 	["indicatorIcon"] = function(t)
 		if app.CurrentVignettes["objectID"][t.objectID] then
 			return "Category_Secrets";
@@ -11594,7 +11597,8 @@ fields.collectible = objectFields.collectibleAsQuest;
 fields.collected = objectFields.collectedAsQuest;
 fields.trackable = objectFields.trackableAsQuest;
 fields.repeatable = objectFields.repeatableAsQuest;
-fields.saved = fields.savedAsQuest;
+fields.saved = objectFields.savedAsQuest;
+fields.locked = objectFields.lockedAsQuest;
 app.BaseObjectWithQuest = app.BaseObjectFields(fields, "BaseObjectWithQuest");
 
 local fields = RawCloneData(objectFields);
@@ -11605,7 +11609,8 @@ fields.collectible = objectFields.collectibleAsQuest;
 fields.collected = objectFields.collectedAsQuest;
 fields.trackable = objectFields.trackableAsQuest;
 fields.repeatable = objectFields.repeatableAsQuest;
-fields.saved = fields.savedAsQuest;
+fields.saved = objectFields.savedAsQuest;
+fields.locked = objectFields.lockedAsQuest;
 app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseObjectWithAchievementAndQuest");
 app.CreateObject = function(id, t)
 	if t then

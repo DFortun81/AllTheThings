@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	m(1527, {	-- Uldum (under assault)
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
 		["lvl"] = { 50 },
-		["maps"] = {
+		-- ["maps"] = {
 			-- TODO: confirm
 			-- ULDUM,	-- pre-120, funky map changes forces us to put the old map here too
 			-- 1571,	-- Uldum (dark vision)
-		},
+		-- },
 		["g"] = {
 			q(57157, {	-- Assault: The Black Empire
 				["isWeekly"] = true,
