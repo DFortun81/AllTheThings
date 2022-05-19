@@ -10655,17 +10655,16 @@ itemTooltipHarvesterFields.text = function(t)
 							-- end
 							craftName = text:match("^[^:]+:%s*([^:]+)$");
 							if craftName then
-								-- '-' following a character is considered a Regex quantifier, so replace '-' with %- for literal match
-								craftName = "^%s*"..craftName:gsub("%-","%%-");
-								-- if debugPrint then print("Crafted Item Match:",craftName) end
+								-- whitespace search... recipes have whitespace and then a sub-item
+								craftName = "^%s+";
 							end
-						-- use this name to check that the Item it creates may be listed underneath
+						-- use this name to check that the Item it creates may be listed underneath, by finding whitespace after a matching recipe name
 						elseif craftName and text:match(craftName) then
 							-- if debugPrint then
-							-- 	print("subitem",t.info.itemID,craftName)
+								-- print("subitem",t.info.itemID,craftName)
 							-- end
 							isSubItem = true;
-							-- don't care to store info about the sub item
+						-- leave the sub-item info when reaching the 'Requires' portion of the parent item tooltip
 						elseif isSubItem and text:match("^Requires") then
 							-- if debugPrint then
 							-- 	print("leaving subitem",t.info.itemID,craftName)
