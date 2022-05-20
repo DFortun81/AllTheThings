@@ -103,6 +103,7 @@ local L = app.L;
 	L.BREADCRUMB_PARTYSYNC = "如果先完成这些任务中的任何一个在没有小队同步的情况下可能无法完成：";
 	L.BREADCRUMB_PARTYSYNC_2 = "这可以通过与另一个没有完成这些任务的角色进行小队同步获得：";
 	L.BREADCRUMB_PARTYSYNC_3 = "可能需要与能够接受此任务的角色进行小队同步。";
+	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
 	L.NO_ENTRIES = "没有找到符合过滤条件的条目。";
 	L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'。某个过滤条件可能会限制该组的可见性。";
 	L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
