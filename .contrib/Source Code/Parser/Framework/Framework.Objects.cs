@@ -841,6 +841,9 @@ namespace ATT
                 {2525, 165},    // Kul Tiran Leatherworking [8.0.1]
                 {2758, 165},    // Shadowlands Leatherworking [9.0.1]
 
+                // Lockpicking Skills
+                {633, 633 },
+
                 // Mining Skills
                 {186, 186},     // Mining [7.3.5]
                 {2572, 186},    // Classic Mining [8.0.1]
