@@ -6820,21 +6820,14 @@ local function RefreshCollections()
 
 		-- Harvest Title Collections
 		-- TODO: once profiles and re-calculating account-wide data exist, can redesign this
-		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, app.CurrentCharacter.Titles, app.GUID;
+		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then
 				if not acctTitles[i] then print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i)) end
-				rawset(acctTitles, i, charGuid);
 				rawset(charTitles, i, 1);
-			-- make sure to remove titles which this character does NOT know currently
-			else
-				charTitles[i] = nil;
-				-- this is the character tied to an account-learned title or it was marked in the old way, then clear it
-				if acctTitles[i] == charGuid or acctTitles[i] == 1 then
-					acctTitles[i] = nil;
-				end
 			end
 		end
+		app.CurrentCharacter.Titles = charTitles;
 		coroutine.yield();
 
 		-- Refresh Mounts / Pets
@@ -6845,14 +6838,9 @@ local function RefreshCollections()
 			if spellID then
 				if isCollected then
 					if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-					rawset(acctSpells, spellID, 1);
 					rawset(charSpells, spellID, 1);
 				else
-					-- remove mounts that the player doesnt actually know
-					-- TODO: there are actually character-specific mounts... will probably just need to deal with this situation via character data maintenance
-					-- if acctSpells[spellID] then print("Removed Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-					-- acctSpells[spellID] = nil;
-					charSpells[spellID] = nil;
+					rawset(charSpells, spellID, nil);
 				end
 			end
 		end
@@ -6913,6 +6901,8 @@ local function RefreshCollections()
 			end
 		end
 		coroutine.yield();
+		
+		app:RecalculateAccountWideData();
 
 		-- Refresh Sources from Cache if tracking Transmog
 		if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
@@ -8190,13 +8180,15 @@ local function CheckAchievementCollectionStatus(achievementID)
 	end
 end
 RefreshAchievementCollection = function()
-	local maxid, achID = 0;
-	for achievementID,_ in pairs(fieldCache["achievementID"]) do
-		achID = tonumber(achievementID);
-		if achID > maxid then maxid = achID; end
-	end
-	for achievementID=maxid,1,-1 do
-		CheckAchievementCollectionStatus(achievementID);
+	if ATTAccountWideData then
+		local maxid, achID = 0;
+		for achievementID,_ in pairs(fieldCache["achievementID"]) do
+			achID = tonumber(achievementID);
+			if achID > maxid then maxid = achID; end
+		end
+		for achievementID=maxid,1,-1 do
+			CheckAchievementCollectionStatus(achievementID);
+		end
 	end
 end
 app:RegisterEvent("ACHIEVEMENT_EARNED");
@@ -13282,14 +13274,16 @@ local fields = {
 			-- otherwise verify both titles for players with one already saved
 			elseif IsTitleKnown(m) then
 				charTitles[m] = 1;
-				acctTitles[m] = app.GUID;
+				acctTitles[m] = 1;
 				-- the shared arbitrary ID can be used for account-wide checks
+				charTitles[id] = 1;
 				acctTitles[id] = 1;
 				return true;
 			elseif IsTitleKnown(f) then
 				charTitles[f] = 1;
-				acctTitles[f] = app.GUID;
+				acctTitles[f] = 1;
 				-- the shared arbitrary ID can be used for account-wide checks
+				charTitles[id] = 1;
 				acctTitles[id] = 1;
 				return true;
 			end
@@ -13297,7 +13291,7 @@ local fields = {
 			if charTitles[id] then return true; end
 			if IsTitleKnown(id) then
 				charTitles[id] = 1;
-				acctTitles[id] = app.GUID;
+				acctTitles[id] = 1;
 				return true;
 			end
 		end
