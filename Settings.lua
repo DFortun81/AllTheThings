@@ -294,7 +294,7 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show();
 	end
-	
+
 	-- Account Synchronization
 	self.TabsByName["Sync"]:InitializeSyncWindow();
 	if self:GetTooltipSetting("Auto:Sync") then
@@ -4632,9 +4632,9 @@ end);
 AutomaticallySyncAccountDataCheckBox:SetATTTooltip("Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.");
 AutomaticallySyncAccountDataCheckBox:SetPoint("TOPLEFT", SyncLabel, "BOTTOMLEFT", 4, 0);
 
-function settings.MostRecentTab:InitializeSyncWindow()
+function tab:InitializeSyncWindow()
 	local syncWindow = app:GetWindow("Sync");
-	local syncWindow_Show,naughty = syncWindow.Show;
+	local syncWindow_Show,syncWindow_Refresh,naughty = syncWindow.Show, syncWindow.Refresh;
 	syncWindow.OnRefresh = syncWindow.Update;
 	syncWindow.Show = function(self)
 		if not naughty then
@@ -4644,6 +4644,14 @@ function settings.MostRecentTab:InitializeSyncWindow()
 		end
 		naughty = nil;
 	end
+	syncWindow.Refresh = function(self)
+		self:ClearAllPoints();
+		self:SetPoint("LEFT", SyncLabel, "LEFT", 0, 0);
+		self:SetPoint("RIGHT", SyncLabel, "LEFT", 300, 0);
+		self:SetPoint("TOP", AutomaticallySyncAccountDataCheckBox, "BOTTOM", 0, 4);
+		self:SetPoint("BOTTOM", settings, "BOTTOM", 0, 4);
+		syncWindow_Refresh(self);
+	end
 	syncWindow.CloseButton:Disable();
 	syncWindow:SetClampedToScreen(false);
 	syncWindow:SetUserPlaced(false);
@@ -4651,10 +4659,6 @@ function settings.MostRecentTab:InitializeSyncWindow()
 	syncWindow:SetMovable(false);
 	syncWindow:SetResizable(false);
 	syncWindow:SetParent(settings);
-	syncWindow:SetPoint("LEFT", SyncLabel, "LEFT", 0, 0);
-	syncWindow:SetPoint("RIGHT", SyncLabel, "LEFT", 300, 0);
-	syncWindow:SetPoint("TOP", AutomaticallySyncAccountDataCheckBox, "BOTTOM", 0, 4);
-	syncWindow:SetPoint("BOTTOM", settings, "BOTTOM", 0, 4);
 	table.insert(tab.objects, syncWindow);
 end
 end)();
