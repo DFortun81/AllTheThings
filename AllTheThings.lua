@@ -5515,7 +5515,7 @@ function app:ReceiveSyncRequest(sender, battleTag)
 end
 function app:ReceiveSyncSummary(sender, summary)
 	if app:IsAccountLinked(sender) then
-		local first,msg = #queue == 0,"";
+		local first = #queue == 0;
 		for i,data in ipairs(summary) do
 			local guid,lastPlayed = strsplit(":", data);
 			local character = ATTCharacterData[guid];
