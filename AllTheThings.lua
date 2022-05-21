@@ -4735,7 +4735,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							-- anything shown in the tooltip which is not collected according to the user's settings should be considered for the cost
 							if collectible and not collected then
 								-- app.PrintDebug("Purchasable",entryGroup.hash,collectible,collected,entryGroup.total - entryGroup.progress,"x",costAmounts[entryGroup.hash])
-								currencyCount = currencyCount + (entryGroup.total - entryGroup.progress) * (costAmounts[entryGroup.hash] or 0);
+								currencyCount = currencyCount + (costAmounts[entryGroup.hash] or 0);
 							end
 						end
 						if currencyCount > 0 then
