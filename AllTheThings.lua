@@ -5351,7 +5351,7 @@ end
 
 -- Synchronization Functions
 (function()
-local outgoing,incoming,queue = {},{},{};
+local outgoing,incoming,queue,active = {},{},{};
 local whiteListedFields = { "Achievements", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" };
 local function splittoarray(sep, inputstr)
 	local t = {};
@@ -5361,9 +5361,10 @@ local function splittoarray(sep, inputstr)
 	return t;
 end
 local function processQueue()
-	if #queue > 0 then
+	if #queue > 0 and not active then
 		local data = queue[1];
 		table.remove(queue, 1);
+		active = data[1];
 		app.print("Updating " .. data[2] .. " from " .. data[3] .. "...");
 		C_ChatInfo.SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
 	end
@@ -5433,6 +5434,7 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 	
 	app:RecalculateAccountWideData();
 	app.Settings:Refresh();
+	active = nil;
 	processQueue();
 	return false;
 end
@@ -5459,7 +5461,7 @@ function app:SendChunk(sender, uid, index, success)
 end
 
 function app:IsAccountLinked(sender)
-	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[strsplit("-", sender)[1]];
+	return AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[strsplit("-", sender)];
 end
 function app:RecalculateAccountWideData()
 	for key,data in pairs(ATTAccountWideData) do
@@ -5487,7 +5489,7 @@ end
 function app:ReceiveSyncRequest(sender, battleTag)
 	if battleTag ~= select(2, BNGetInfo()) then
 		-- Check to see if the the character/account is linked.
-		if not (AllTheThingsAD.LinkedAccounts[sender] or AllTheThingsAD.LinkedAccounts[battleTag]) then
+		if not (app:IsAccountLinked(sender) or AllTheThingsAD.LinkedAccounts[battleTag]) then
 			return false;
 		end
 	end
@@ -5517,7 +5519,7 @@ function app:ReceiveSyncSummary(sender, summary)
 		for i,data in ipairs(summary) do
 			local guid,lastPlayed = strsplit(":", data);
 			local character = ATTCharacterData[guid];
-			if not character or not character.lastPlayed or (character.lastPlayed < tonumber(lastPlayed)) then
+			if not character or not character.lastPlayed or (character.lastPlayed < tonumber(lastPlayed)) and guid ~= active then
 				tinsert(queue, { guid, character and character.text or guid, sender });
 			end
 		end
