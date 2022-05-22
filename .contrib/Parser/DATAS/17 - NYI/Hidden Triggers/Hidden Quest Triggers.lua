@@ -2915,7 +2915,7 @@ root("HiddenQuestTriggers", {
 		-- Revendreth Treasures
 		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
 		q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)
-		q(60940),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only)
+		q(60852),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only) / Bleakwood Chest
 		-- Revendreth WQs
 		q(59858),	-- Tea Tales: Theotar Achievement criteria
 		q(59861),	-- Tea Tales: Theotar Achievement criteria
