@@ -16,6 +16,9 @@ _.WorldDrops =
 					}),
 				},
 			}),
+			i(36812, {	-- Ground Gear
+				["description"] = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
+			}),
 		}),
 	}),
 };

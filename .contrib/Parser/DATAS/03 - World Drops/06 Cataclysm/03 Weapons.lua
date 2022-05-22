@@ -185,6 +185,7 @@ _.WorldDrops =
 				i(66940),	-- Staff of Solemn Secrecy
 				i(55336),	-- Steelspark Staff
 				i(55444),	-- Steelspark Staff
+				i(62072),	-- Robble's Wobbly Staff
 			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(55454),	-- Angerfang Sword

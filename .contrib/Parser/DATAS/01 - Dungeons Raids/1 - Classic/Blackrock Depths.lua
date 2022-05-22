@@ -1696,6 +1696,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								i(11938),	-- Sack of Gems
 								i(11966),	-- Small Sack of Coins
 								i(11937),	-- Fat Sack of Coins
+								i(11944),	-- Dark Iron Baby Booties
 							},
 						}),
 						o(161495, {	-- Secret Safe
