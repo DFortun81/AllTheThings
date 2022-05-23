@@ -44,6 +44,7 @@ _.Zones =
 					},
 				}),
 				o(269064, {	-- Small Treasure Chest (need to verify objectID)
+					["description"] = "Inside Nar'thalas Academy, down the right branching hallway. May require Nar'thalas Academy quests to open the door.",
 					["questID"] = 42285,
 					["coord"] = { 71.7, 21.7, 631 },
 				}),
@@ -193,6 +194,7 @@ _.Zones =
 					["coord"] = { 56.4, 34.8, AZSUNA },
 				}),
 				o(250092, {	-- Treasure Chest
+					["description"] = "At the far back of the Leyhollow cave.",
 					["questID"] = 42289,
 					["coord"] = { 51.5, 24.3, AZSUNA },
 				}),
