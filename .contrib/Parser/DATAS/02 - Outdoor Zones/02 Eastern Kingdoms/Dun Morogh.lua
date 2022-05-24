@@ -147,6 +147,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(3107, {	-- Consecrated Rune
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9563 },	-- Consecrated Rune
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { DWARF },
+							["classes"] = { PALADIN },
+						}),
 						q(24493, {	-- Don't Forget About Us
 							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
@@ -163,28 +182,104 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(179, {	-- Dwarven Outfitters
+							["qg"] = 658,	-- Sten Stoutarm
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/8 Tough Wolf Meat
+									["provider"] = { "i", 750 },
+									["crs"] = {
+										705,	-- Ragged Young Wolf
+										704,	-- Ragged Timber Wolf
+									},
+								}),
+								i(719, {	-- Rabbit Handler Gloves
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(6171, {	-- Wolf Handler Gloves
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(2547, {	-- Boar Handler Gloves
+									["timeline"] = { "removed 4.0.3" },
+								}),
+							},
+						}),
 						q(31150, {	-- Elegant Rune
-							["qg"] = 37087,	-- Jona Ironstock
+							["providers"] = {
+								{ "n", 37087 },	-- Jona Ironstock
+								{ "i", 85174 },	-- Elegant Rune
+							},
 							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
-						q(3109, {	-- Encrypted Rune
-							["qg"] = 37087,	-- Jona Ironstock
+						q(3113, {	-- Encrypted Memorandum
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9558 },	-- Encrypted Memorandum
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
 							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
-							["races"] = { DWARF, GNOME },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = { GNOME },
 							["classes"] = { ROGUE },
-							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(3109, {	-- Encrypted Rune
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9550 },	-- Encrypted Rune
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { DWARF },
+							["classes"] = { ROGUE },
+						}),
+						q(3108, {	-- Etched Rune
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9566 },	-- Etched Rune
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { DWARF },
+							["classes"] = { HUNTER },
 						}),
 						q(24532, {	-- Evisceratin' the Enemy
 							["qg"] = 916,	-- Solm Hargin
 							["sourceQuest"] = 3109,	-- Encrypted Rune
 							["coord"] = { 59.5, 20.4, COLDRIDGE_VALLEY },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
-							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
 							["qg"] = 37087,	-- Jona Ironstock
@@ -206,13 +301,80 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(66930, {	-- Boots of the Blameless
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(66929, {	-- Big Trogg Armbands
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(66928, {	-- Belt of So-Called Leaders
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131896, {	-- Big Trogg Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
+						}),
+						q(3114, {	-- Glyphic Memorandum
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9573 },	-- Glyphic Memorandum
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { MAGE },
+						}),
+						q(3110, {	-- Hallowed Rune
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9556 },	-- Hallowed Rune
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { DWARF },
+							["classes"] = { PRIEST },
 						}),
 						q(24469, {	-- Hold the Line!
 							["qg"] = 37081,	-- Joren Ironstock
 							["coord"] = { 67.1, 41.2, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(66922, {	-- Perimeter Britches
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(66923, {	-- Lent Hands
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(66926, {	-- Trogg Repeller Platemail
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131895, {	-- Ironstock's Iron Grips
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
+						-- #if AFTER CATA
 						q(218, {	-- Ice and Fire
 							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuests"] = {
@@ -221,7 +383,28 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(57534, {	-- Grik'nir's Chilly Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57535, {	-- Whitebeard's Bracer
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57536, {	-- Legs of the Wayward Elemental
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131891, {	-- Grik'nir's Warming Bands
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(6176, {	-- Dwarven Kite Shield
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(5581, {	-- Smooth Walking Staff
+									["timeline"] = { "removed 4.0.3" },
+								}),
+							},
 						}),
+						-- #endif
 						q(31151, {	-- Kick, Punch, It's All in the Mind
 							["qg"] = 63285,	-- Lo
 							["coord"] = { 63.2, 22.3, COLDRIDGE_VALLEY },
@@ -245,6 +428,20 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["coord"] = { 61.7, 22.0, COLDRIDGE_VALLEY },
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(57530, {	-- Explorer's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57531, {	-- Winter Jacket
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57532, {	-- Rockjaw Breastplate
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131890, {	-- Plundered Rockjaw Chestguard
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
@@ -253,14 +450,146 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								i(57540),	-- Coldridge Mountaineer's Pouch
+								i(57540, {	-- Coldridge Mountaineer's Pouch
+									["timeline"] = { "added 4.0.3.13277" },
+									["groups"] = {
+										i(57542, {	-- Coldridge Mountaineer's Pouch
+											["timeline"] = { "added 4.0.3.13277" },
+										}),
+										i(57541, {	-- Ragged Wolf Hide Cloak
+											["timeline"] = { "added 4.0.3.13277" },
+										}),
+									},
+								}),
 							},
 						}),
-						q(182, {	-- The Troll Menace
+						q(3364, {	-- Scalding Mornbrew Delivery
+							["providers"] = {
+								{ "n", 12738 },	-- Nori Pridedrift
+								{ "i", 10439 },	-- Durnan's Scalding Mornbrew
+							},
+							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 4,
+						}),
+						q(282, {	-- Senir's Observations (1/2)
+							["providers"] = {
+								{ "n", 786 },	-- Grelin Whitebeard
+								{ "i", 2619 },	-- Grelin's Report
+							},
+							["sourceQuest"] = 218,	-- The Stolen Journal
+							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(420, {	-- Senir's Observations (2/2)
+							["providers"] = {
+								{ "n", 1965 },	-- Mountaineer Thalos
+								{ "i", 2619 },	-- Grelin's Report
+							},
+							["sourceQuest"] = 282,	-- Senir's Observations (1/2)
+							["coord"] = { 33.4, 71.8, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(3112, {	-- Simple Memorandum
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9544 },	-- Simple Memorandum
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { WARRIOR },
+						}),
+						q(3106, {	-- Simple Rune
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9543 },	-- Simple Rune
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { DWARF, NIGHT_ELF },
+							["classes"] = { WARRIOR },
+						}),
+						q(3115, {	-- Tainted Memorandum
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n", 658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i", 9577 },	-- Tainted Memorandum
+							},
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							-- #if AFTER CATA
+							["coord"] = { 61.4, 19.4, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 29.8, 71.2, DUN_MOROGH },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = { GNOME },
+							["classes"] = { WARLOCK },
+						}),
+						-- #if BEFORE CATA
+						q(218, {	-- The Stolen Journal
 							["qg"] = 786,	-- Grelin Whitebeard
+							["sourceQuest"] = 182,	-- The Troll Cave
+							["coord"] = { 25, 75.8, DUN_MOROGH },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
+									["provider"] = { "i", 2004 },	-- Grenlin Whitebeard's Journal
+									["coord"] = { 30.4, 80.2, DUN_MOROGH },
+									["cr"] = 808,	-- Grik'nir the Cold
+								}),
+								i(6176, {	-- Dwarven Kite Shield
+									["timeline"] = { "removed 4.0.3" },
+								}),
+								i(5581, {	-- Smooth Walking Staff
+									["timeline"] = { "removed 4.0.3" },
+								}),
+							},
+						}),
+						-- #endif
+						q(182, {	-- The Troll Cave / The Troll Menace [CATA+]
+							["qg"] = 786,	-- Grelin Whitebeard
+							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
 							["coord"] = { 42.7, 62.2, COLDRIDGE_VALLEY },
+							-- #else
+							["coord"] = { 25, 75.8, DUN_MOROGH },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/14 Frostmane Troll Whelp
+									["provider"] = { "n", 706 },	-- Frostmane Troll Whelp
+								}),
+								i(2047),	-- Anvilmar Hand Axe
+								i(2048),	-- Anvilmar Hammer
+								i(2195),	-- Anvilmar Knife
+								i(5761),	-- Anvilmar Sledge
+								i(961),	-- Healing Herb
+							},
 						}),
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
@@ -282,10 +611,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						q(24533, {	-- Words of Power
 							["qg"] = 837,	-- Branstock Khalder
 							["coord"] = { 60.7, 14.6, COLDRIDGE_VALLEY },
-							["timeline"] = { "added 4.0.3.13277" },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 				},
@@ -829,11 +1157,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
 				q(25667, {	-- Culling the Wendigos
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25997, {	-- Dark Iron Scheming
@@ -843,60 +1171,93 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25978,	-- Entombed in Ice
 					},
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57575),	-- Belt of Dark Schemes
-						i(57576),	-- Dark Iron Infiltrator's Bracer
-						i(57578),	-- Dark Iron Hobplate Boots
-						i(131462),	-- Dark Iron Spy-Bands
+						i(57575, {	-- Belt of Dark Schemes
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57576, {	-- Dark Iron Infiltrator's Bracer
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57578, {	-- Dark Iron Hobplate Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131462, {	-- Dark Iron Spy-Bands
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(25979, {	-- Dealing with the Surge
 					["qg"] = 41804,	-- Khurgon Singefeather
 					["coord"] = { 82.6, 48.3, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26112, {	-- Demanding Answers
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["coord"] = { 78.2, 20.4, IRONFORGE },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(308, {	-- Distracting Jarven
 					["qg"] = 1373,	-- Jarven Thunderbrew
+					["altQuests"] = { 310 },	-- Bitter Rivals
+					["coord"] = { 47.6, 52.6, DUN_MOROGH },
+					["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25840, {	-- Eliminate the Resistance
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57554, {	-- Frostmane Belt
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57555, {	-- Battok's Bloody Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131448, {	-- Frostmane Chain Links
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(25978, {	-- Entombed in Ice
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(318, {	-- Evershine
 					["qg"] = 1378,	-- Pilot Bellowfiz
+					["sourceQuest"] = 317,	-- Stocking Jetsteam
+					["coord"] = { 49.4, 48.4, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 2,
 				}),
 				q(26078, {	-- Extinguish the Fires
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 25998,	-- Get to the Airfield
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if AFTER CATA
 				q(313, {	-- Forced to Watch from Afar
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #endif
 				q(7673, {	-- Frost Ram Exchange
 					["qg"] = 1261,	-- Veron Amberstill
 					-- #if AFTER CATA
@@ -916,39 +1277,96 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 26373,	-- On to Kharanos
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2900),	-- Stone Buckler
+					},
+				}),
+				q(287, {	-- Frostmane Hold
+					["qg"] = 1252,	-- Senir Whitebeard
+					["sourceQuest"] = 420,	-- Senir's Observations (2/2)
+					["coord"] = { 46.6, 53.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 7,
+					["groups"] = {
+						objective(1, {	-- 0/5 Frostmane Headhunter
+							["provider"] = { "n", 1123 },	-- Frostmane Headhunter
+						}),
+						i(3216, {	-- Warm Winter Robe
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						-- #if BEFORE 4.0.3
+						i(2900),	-- Stone Buckler
+						-- #endif
+						i(57553, {	-- Ragged Belt
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+						i(57557, {	-- Warm Winter Wristguards
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+						i(131203, {	-- Chain Link Winter Bracers
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(5625, {	-- Garments of the Light
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["sourceQuest"] = 5626,	-- In Favor of the Light
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 5,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
+						i(16605, {	-- Friar's Robes of the Light
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(25998, {	-- Get to the Airfield
 					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26094,	-- Striking Back
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57579),	-- Airfield Defender's Garb
-						i(57580),	-- Tunic of Dark Leather
-						i(57581),	-- Grimaxe's Black Breastplate
-						i(57582),	-- Stonebreaker's Gauntlets
-						i(131483),	-- Vest of Dark Chainmail
-						i(131484),	-- Grimaxe's Chainmail Breastplate
+						i(57579, {	-- Airfield Defender's Garb
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57580, {	-- Tunic of Dark Leather
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57581, {	-- Grimaxe's Black Breastplate
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57582, {	-- Stonebreaker's Gauntlets
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131483, {	-- Vest of Dark Chainmail
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(131484, {	-- Grimaxe's Chainmail Breastplate
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				}),
 				q(403, {	-- Guarded Thunderbrew Barrel
+					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
+					["sourceQuest"] = 310,	-- Bitter Rivals
+					["altQuests"] = { 311 },	-- Return to Marleth
+					["coord"] = { 47.7, 52.7, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25933, {	-- Help for the Quarry
 					["qg"] = 41578,	-- Sergeant Flinterhammer
@@ -957,6 +1375,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25905,	-- Rams on the Lam
 					},
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25838, {	-- Help from Steelgrill's Depot
@@ -966,6 +1385,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25792,	-- Pushing Forward
 					},
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER 4.0.3
@@ -993,17 +1413,41 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["_drop"] = { "g" },
 				}),
+				q(5626, {	-- In Favor of the Light
+					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
+					["coord"] = { 28.6, 66.4, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
+				}),
 				q(25932, {	-- It's Raid Night Every Night
 					["qg"] = 41578,	-- Sergeant Flinthammer
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57558, {	-- Robes of Endless Raiding
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57559, {	-- Boots of the Weary Raider
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57556, {	-- Bracer of the Nightly Raid
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131458, {	-- Well-Worn Raider Treads
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(32663, {	-- Learn To Ride
 					["races"] = { GNOME },
 					["description"] = "This quest is available to Gnomes upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["timeline"] = { "added 5.2.0.16486" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1018,6 +1462,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Dwarves upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["timeline"] = { "added 5.2.0.16486" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1028,63 +1473,171 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
-					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["races"] = { GNOME },
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
-					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["races"] = { DWARF },
+				}),
+				q(1679, {	-- Muren Stormpike
+					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>
+					["altQuests"] = {
+						1638,	-- A Warrior's Training
+						1684,	-- Elanaria
+						1678,	-- Vejrek
+						-- #if AFTER TBC
+						9582,	-- Strength of One
+						-- #endif
+					},
+					["coord"] = { 47.2, 52.6, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
+				}),
+				q(2239, {	-- Onin's Report
+					["providers"] = {
+						{ "n", 6886 },	-- Onin MacHammer
+						{ "i", 7715 },	-- Onin's Report
+					},
+					["sourceQuest"] = 2238,	-- Simple Subterfugin'
+					["coord"] = { 25.2, 44.4, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+					["groups"] = {
+						i(7298, {	-- Blade of Cunning
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(412, {	-- Operation Recombobulation
 					["qg"] = 1269,	-- Razzle Sprysprocket
+					-- #if AFTER CATA
 					["sourceQuests"] = {
 						25667,	-- Culling the Wendigos
 						313,	-- Forced to Watch from Afar
 						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
 					},
 					["coord"] = { 53.2, 51.9, DUN_MOROGH },
+					-- #else
+					["coord"] = { 45.8, 49.2, DUN_MOROGH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(7, 7, 1),
+					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/8 Gyromechanic Gear
+							["provider"] = { "i", 3084 },	-- Gyromechanic Gear
+							["crs"] = {
+								8503,	-- Gibblewilt
+								1211,	-- Leper Gnome
+							},
+						}),
+						-- #else
+						objective(1, {	-- 0/8 Restabilization Cog
+							["provider"] = { "i", 3083 },	-- Restabilization Cog
+							["crs"] = {
+								8503,	-- Gibblewilt
+								1211,	-- Leper Gnome
+							},
+						}),
+						objective(2, {	-- 0/8 Gyromechanic Gear
+							["provider"] = { "i", 3084 },	-- Gyromechanic Gear
+							["crs"] = {
+								8503,	-- Gibblewilt
+								1211,	-- Leper Gnome
+							},
+						}),
+						-- #endif
+						i(57546, {	-- Cog Belt
+							["timeline"] = { "added 4.0.3" },
+						}),
+						i(57545, {	-- Oil-Stained Gloves
+							["timeline"] = { "added 4.0.3" },
+						}),
+						i(131207, {	-- Well-Oiled Chain Gauntlets
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(3152, {	-- Driving Gloves
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3153, {	-- Oil-stained Cloak
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(25668, {	-- Pilfered Supplies
 					["qg"] = 40951,	-- Quartermaster Glynna
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 					["coord"] = { 53.7, 52.0, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57550, {	-- Grizzled Den Boots
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57551, {	-- Wendigo Leggings
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131436, {	-- Wendigo Pantaloons
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
 				}),
 				q(25937, {	-- Priceless Treasures
 					["qg"] = 50631,	-- Prospector Drugan
 					["coord"] = { 76.1, 53.0, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57571),	-- Archaeologist's Pants
-						i(57572),	-- Dun Morogh Hiking Pants
-						i(57574),	-- Museum Guard's Bracers
-						i(131459),	-- Museum Guard's Warboots
+						i(57571, {	-- Archaeologist's Pants
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57572, {	-- Dun Morogh Hiking Pants
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(57574, {	-- Museum Guard's Bracers
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131459, {	-- Museum Guard's Warboots
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 						i(57549, {	-- Prospector's Bag
-							["f"] = 113,	-- Bag
+							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
 				}),
 				q(314, {	-- Protecting the Herd
 					["qg"] = 1265,	-- Rudra Amberstill
+					-- #if AFTER CATA
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["coord"] = { 70.2, 48.1, DUN_MOROGH },
+					-- #else
+					["coord"] = { 63, 49.8, DUN_MOROGH },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
-						--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
-						--Might be racial locked and not unobtainable
-						un(REMOVED_FROM_GAME, i(3103)),	-- Coldridge Hammer	-- Was a quest reward prior to Cataclysm and no longer isn't.
-						i(10549, {	-- Rancher's Trousers
-							
+						objective(1, {	-- 0/1 Fang of Vagash
+							["provider"] = { "i", 3627 },	-- Fang of Vagash
+							["cr"] = 1388,	-- Vagash
+							["coord"] = { 62.65, 46.08, DUN_MOROGH },
 						}),
-						i(2817, {	-- Soft Leather Tunic / Hard Leather Tunic [CATA+]
-							
+						i(10549),	-- Rancher's Trousers
+						i(2817),	-- Soft Leather Tunic / Hard Leather Tunic [CATA+]
+						i(57552, {	-- Vagash Breastplate
+							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(131205, {	-- Ram Rescue Vest
-							
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(57552, {	-- Vagash Breastplate
-							
+						i(3103, {	-- Coldridge Hammer
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -1096,34 +1649,74 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
 					},
 					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(10547),	-- Camping Knife
+						i(1010),	-- Gnarled Short Staff
+						i(1011),	-- Sharp Axe
+						i(156940, {	-- Snubnose Blunderbuss
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+					},
 				}),
 				q(26085, {	-- Rallying the Defenders
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25905, {	-- Rams on the Lam
 					["qg"] = 1261,	-- Veron Amberstill
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(415, {	-- Rejold's New Brew
+					["qgs"] = {
+						1378,	-- Pilot Bellowfiz
+						1872,	-- Tharek Blackstone
+					},
+					["coords"] = {
+						{ 49.4, 48.4, DUN_MOROGH },
+						{ 46, 51.6, DUN_MOROGH },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 8,
+					["groups"] = {
+						i(3087),	-- Mug of Shimmer Stout
+					},
 				}),
 				q(320, {	-- Return to Bellowfiz
-					["qg"] = 1374,	-- Rejold Barleybrew
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				o(270, {	-- Unguarded Thunder Ale Barrel
-					["model"] = 199563,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						q(311, {	-- Return to Marleth
-							["u"] = REMOVED_FROM_GAME,
-							["races"] = ALLIANCE_ONLY,
-						}),
+					["providers"] = {
+						{ "n", 1374 },	-- Rejold Barleybrew
+						{ "i", 2696 },	-- Cask of Evershine
 					},
+					["sourceQuest"] = 319,	-- A Favor for Evershine
+					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 2,
+					["groups"] = {
+						i(1011),	-- Sharp Axe
+						i(1010),	-- Gnarled Short Staff
+						i(10547),	-- Camping Knife
+					},
+				}),
+				q(311, {	-- Return to Marleth
+					["providers"] = {
+						{ "o", 270 },	-- Unguarded Thunder Ale Barrel
+						{ "i", 2666 },	-- Barrel of Thunder Ale
+					},
+					["sourceQuest"] = 310,	-- Bitter Rivals
+					["coord"] = { 47.7, 52.7, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 2,
 				}),
 				-- #if AFTER 4.0.3
 				q(6391, {	-- Ride to Ironforge
@@ -1136,29 +1729,128 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
-				q(466, {	-- Search for Incendicite
+				q(2218, {	-- Road to Salvation
+					["qg"] = 1234,	-- Hogral Bakkan
+					["coord"] = { 47.6, 52.6, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+				}),
+				q(466, {	-- Search for Incendicite
+					["qg"] = 1377,	-- Pilot Stonegear
+					["sourceQuest"] = 467,	-- Stonegear's Search
+					["coord"] = { 49.6, 48.4, DUN_MOROGH },
+					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(3565)),	-- Beerstained Gloves
+						i(3565, {	-- Beerstained Gloves
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
+				}),
+				q(413, {	-- Shimmer Stout
+					["providers"] = {
+						{ "n", 1374 },	-- Rejold Barleybrew
+						{ "i", 3085 },	-- Barrel of Shimmer Stout
+					},
+					["sourceQuests"] = {
+						415,	-- Rejold's New Brew
+						315,	-- The Perfect Stout
+					},
+					["coord"] = { 30.2, 45.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
+				}),
+				q(1879, {	-- Speak with Bink
+					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
+					["altQuests"] = { 1860 },	-- Speak with Jennea
+					["coord"] = { 47.4, 52, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
 				}),
 				q(317, {	-- Stocking Jetsteam
 					["qg"] = 1378,	-- Pilot Bellowfiz
-					["races"] = { DWARF, GNOME },
-					["u"] = REMOVED_FROM_GAME,
+					["coord"] = { 49.4, 48.4, DUN_MOROGH },
+					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 2,
+					["groups"] = {
+						objective(2, {	-- 0/2 Thick Bear Fur
+							["provider"] = { "i", 6952 },	-- Thick Bear Fur
+							["crs"] = {
+								1128,	-- Young Black Bear
+								1196,	-- Ice Claw Bear
+							},
+						}),
+					},
+				}),
+				q(467, {	-- Stonegear's Search
+					["qgs"] = {
+						1340,	-- Mountaineer Kadrell
+						2092,	-- Pilot Longbeard
+					},
+					["coords"] = {
+						{ 34.8, 47, LOCH_MODAN },
+						{ 72.4, 93.6, IRONFORGE },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
+				q(414, {	-- Stout to Kadrell
+					["providers"] = {
+						{ "n", 1959 },	-- Mountaineer Barleybrew
+						{ "i", 3086 },	-- Cask of Shimmer Stout
+					},
+					["sourceQuest"] = 413,	-- Shimmer Stout
+					["coord"] = { 86.2, 48.8, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
 				}),
 				q(25841, {	-- Strike From Above
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26094, {	-- Striking Back
 					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(2160, {	-- Supplies to Tannok
+					["providers"] = {
+						{ "n", 6782 },	-- Hands Springsprocket
+						{ "i", 7646 },	-- Crate of Inn Supplies
+					},
+					["coord"] = { 33.8, 72.2, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(57537, {	-- Frosthammer Bracer
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+						i(57538, {	-- Kharanos Belt
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+						i(57539, {	-- Snow Stomping Boots
+							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+						}),
+					},
 				}),
 				q(315, {	-- The Perfect Stout
 					["qg"] = 1374,	-- Rejold Barleybrew
@@ -1167,6 +1859,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(24528, {	-- The Power of the Light
 					["qg"] = 926,	-- Bromos Grummner
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["u"] = REMOVED_FROM_GAME,
@@ -1193,6 +1886,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 41363,	-- Delber Cranktoggle
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
 					["coord"] = { 56.8, 47.1, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1653, {	-- The Test of Righteousness (1/3)
@@ -1209,7 +1903,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { DEADMINES, SHADOWFANG_KEEP, BLACKFATHOM_DEEPS },
+					["maps"] = { DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP, BLACKFATHOM_DEEPS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
@@ -1232,6 +1926,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 50601,	-- Snevik the Blade
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 					["coord"] = { 62.5, 53.8, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(432, {	-- Those Blasted Troggs!
@@ -1252,6 +1947,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						432,	-- Those Blasted Troggs!
 					},
 					["coord"] = { 75.8, 54.2, DUN_MOROGH },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

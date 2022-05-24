@@ -17,6 +17,7 @@ _.ObjectNames = {
 	[257] = "Suspicious Barrel",
 	[259] = "Half-buried Barrel",
 	[261] = "Damaged Crate",
+	[269] = "Guarded Thunder Ale Barrel",
 	[270] = "Unguarded Thunder Ale Barrel",
 	[711] = "Wanted!",
 	[1561] = "Sealed Crate",

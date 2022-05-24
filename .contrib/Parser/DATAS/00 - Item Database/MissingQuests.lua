@@ -37,7 +37,6 @@ q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
-q(287),	-- Frostmane Hold,		TBC: Frostmane Hold,		CLASSIC: Frostmane Hold
 q(312),	-- Tundra MacGrann's Stolen Stash,		TBC: Tundra MacGrann's Stolen Stash,		CLASSIC: Tundra MacGrann's Stolen Stash
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
@@ -54,9 +53,6 @@ q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Hea
 q(395),	-- Brotherhood's End,		TBC: Brotherhood's End,		CLASSIC: Brotherhood's End
 q(399),	-- Humble Beginnings,		TBC: Humble Beginnings,		CLASSIC: Humble Beginnings
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(413),	-- Shimmer Stout,		TBC: Shimmer Stout,		CLASSIC: Shimmer Stout
-q(414),	-- Stout to Kadrell,		TBC: Stout to Kadrell,		CLASSIC: Stout to Kadrell
-q(415),	-- Rejold's New Brew,		TBC: Rejold's New Brew,		CLASSIC: Rejold's New Brew
 q(419),	-- The Lost Pilot,		TBC: The Lost Pilot,		CLASSIC: The Lost Pilot
 q(420),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
@@ -65,7 +61,6 @@ q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of 
 q(458),	-- The Woodland Protector,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
 q(459),	-- Demonic Thieves,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
 q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(467),	-- Stonegear's Search,		TBC: Stonegear's Search,		CLASSIC: Stonegear's Search
 q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(500),	-- [DEPRECATED] Crushridge Bounty,		TBC: Crushridge Bounty,		CLASSIC: Crushridge Bounty
@@ -339,7 +334,6 @@ q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1665),	-- Bartleby's Mug,		TBC: Bartleby's Mug,		CLASSIC: Bartleby's Mug
 q(1666),	-- Marshal Haggard,		TBC: Marshal Haggard,		CLASSIC: Marshal Haggard
-q(1679),	-- Muren Stormpike,		TBC: Muren Stormpike,		CLASSIC: Muren Stormpike
 q(1680),	-- Tormus Deepforge,		TBC: Tormus Deepforge,		CLASSIC: Tormus Deepforge
 q(1681),	-- Ironband's Compound,		TBC: Ironband's Compound,		CLASSIC: Ironband's Compound
 q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
@@ -373,7 +367,6 @@ q(1819),	-- Ulag the Cleaver,		TBC: Ulag the Cleaver,		CLASSIC: Ulag the Cleaver
 q(1820),	-- Speak with Coleman,		TBC: Speak with Coleman,		CLASSIC: Speak with Coleman
 q(1821),	-- Agamand Heirlooms,		TBC: Agamand Heirlooms,		CLASSIC: Agamand Heirlooms
 q(1860),	-- Speak with Jennea,		TBC: Speak with Jennea,		CLASSIC: Speak with Jennea
-q(1879),	-- Speak with Bink,		TBC: Speak with Bink,		CLASSIC: Speak with Bink
 q(1881),	-- Speak with Anastasia,		TBC: Speak with Anastasia,		CLASSIC: Speak with Anastasia
 q(1885),	-- Mennet Carkad,		TBC: Mennet Carkad,		CLASSIC: Mennet Carkad
 q(1886),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
@@ -398,11 +391,8 @@ q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's R
 q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
 q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
 q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
-q(2160),	-- Supplies to Tannok,		TBC: Supplies to Tannok,		CLASSIC: Supplies to Tannok
 q(2205),	-- Seek out SI: 7,		TBC: Seek out SI: 7,		CLASSIC: Seek out SI: 7
-q(2218),	-- Road to Salvation,		TBC: Road to Salvation,		CLASSIC: Road to Salvation
 q(2238),	-- Simple Subterfugin',		TBC: Simple Subterfugin',		CLASSIC: Simple Subterfugin'
-q(2239),	-- Onin's Report,		TBC: Onin's Report,		CLASSIC: Onin's Report
 q(2241),	-- The Apple Falls,		TBC: The Apple Falls,		CLASSIC: The Apple Falls
 q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
@@ -488,15 +478,7 @@ q(3102),	-- Encrypted Letter,		TBC: Encrypted Letter,		CLASSIC: Encrypted Letter
 q(3103),	-- Hallowed Letter,		TBC: Hallowed Letter,		CLASSIC: Hallowed Letter
 q(3104),	-- Glyphic Letter,		TBC: Glyphic Letter,		CLASSIC: Glyphic Letter
 q(3105),	-- Tainted Letter,		TBC: Tainted Letter,		CLASSIC: Tainted Letter
-q(3106),	-- Simple Rune,		TBC: Simple Rune,		CLASSIC: Simple Rune
-q(3107),	-- Consecrated Rune,		TBC: Consecrated Rune,		CLASSIC: Consecrated Rune
-q(3108),	-- Etched Rune,		TBC: Etched Rune,		CLASSIC: Etched Rune
-q(3110),	-- Hallowed Rune,		TBC: Hallowed Rune,		CLASSIC: Hallowed Rune
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
-q(3112),	-- Simple Memorandum,		TBC: Simple Memorandum,		CLASSIC: Simple Memorandum
-q(3113),	-- Encrypted Memorandum,		TBC: Encrypted Memorandum,		CLASSIC: Encrypted Memorandum
-q(3114),	-- Glyphic Memorandum,		TBC: Glyphic Memorandum,		CLASSIC: Glyphic Memorandum
-q(3115),	-- Tainted Rune,		TBC: Tainted Memorandum,		CLASSIC: Tainted Memorandum
 q(3117),	-- Etched Sigil,		TBC: Etched Sigil,		CLASSIC: Etched Sigil
 q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
 q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
@@ -667,7 +649,6 @@ q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		C
 q(5541),	-- Ammo for Rumbleshot,		TBC: Ammo for Rumbleshot,		CLASSIC: Ammo for Rumbleshot
 q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
 q(5623),	-- In Favor of the Light,		TBC: In Favor of the Light,		CLASSIC: In Favor of the Light
-q(5626),	-- In Favor of the Light,		TBC: In Favor of the Light,		CLASSIC: In Favor of the Light
 q(5627),	-- Stars of Elune,		TBC: Stars of Elune,		CLASSIC: Stars of Elune
 q(5628),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5629),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
@@ -772,7 +753,6 @@ q(6026),	-- That's Asking A Lot,		TBC: That's Asking A Lot,		CLASSIC: That's Ask
 q(6028),	-- The Everlook Report,		TBC: The Everlook Report,		CLASSIC: The Everlook Report
 q(6061),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6063),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6064),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6065),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6066),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6067),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
@@ -782,9 +762,6 @@ q(6073),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's P
 q(6074),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6075),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6076),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6084),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6085),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6086),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
 q(6087),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6088),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6089),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
