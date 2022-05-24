@@ -265,25 +265,30 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(182114, {	-- Iska, Outrider of Ruin
-				n(182120, {	-- Rhuv, Gorger of Ruin
-					["coord"] = { 63.8, 27, ZERETH_MORTIS },
-					["questID"] = 65585,
-					["g"] = {
-						crit(1, {	-- Iska, Outrider of Ruin
-							["achievementID"] = 15392,	-- Dune Dominance
-						}),
-						i(190458),	-- Atrophy's Omnious Bulwark
-						i(190102),	-- Chains of Infectious Serrations
-						i(190104),	-- Deadeye's Spirit Piercer
-						i(190463),	-- Dismal Mystic's Glaive
-						i(190050),	-- Entropic Broker's Ripper
-						i(190124),	-- Interrogator's Vicious Dirk
-						i(190103),	-- Pillar of Noxious Dissemination
-						i(190126),	-- Rotculler's Encroaching Shears
-						i(190107),	-- Staff of Broken Coils
-						i(190765),	-- Iska's Mawrat Leash (MOUNT!)
-					},
-				}),	
+				["coord"] = { 63.8, 27, ZERETH_MORTIS },
+				["questID"] = 65585,
+				["g"] = {
+					n(182120, {	-- Rhuv, Gorger of Ruin
+						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["questID"] = 65706,
+						["isDaily"] = true,
+						["g"] = {
+							i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+						},
+					}),
+					crit(1, {	-- Iska, Outrider of Ruin
+						["achievementID"] = 15392,	-- Dune Dominance
+					}),
+					i(190458),	-- Atrophy's Omnious Bulwark
+					i(190102),	-- Chains of Infectious Serrations
+					i(190104),	-- Deadeye's Spirit Piercer
+					i(190463),	-- Dismal Mystic's Glaive
+					i(190050),	-- Entropic Broker's Ripper
+					i(190124),	-- Interrogator's Vicious Dirk
+					i(190103),	-- Pillar of Noxious Dissemination
+					i(190126),	-- Rotculler's Encroaching Shears
+					i(190107),	-- Staff of Broken Coils
+				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
 				["coord"] = { 54, 34, ZERETH_MORTIS },
