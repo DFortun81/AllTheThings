@@ -1517,6 +1517,13 @@ end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
+local function GetStateIcon(data, iconOnly)
+	if data.collectible then
+		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
+	elseif data.trackable then
+		return iconOnly and GetCompletionIcon(data.saved) or GetCompletionText(data.saved);
+	end
+end
 local function GetProgressTextForRow(data)
 	local total = data.total;
 	local isCollectible = data.collectible;
@@ -1525,16 +1532,19 @@ local function GetProgressTextForRow(data)
 	if isContainer then
 		local costTotal = data.costTotal;
 		local isCost = costTotal and costTotal > 0;
-		local isFilledCost = data.collectibleAsCost == false;
+		local isFilledCost = data.filledCost;
 
 		-- Cost & Progress
 		if isFilledCost then
 			return L["COST_ICON"].." "..GetProgressColorText(data.progress or 0, total);
 		end
+
 		-- Cost
 		if isCost then
 			return L["COST_ICON"];
 		end
+
+		-- Progress Only
 		return GetProgressColorText(data.progress or 0, total);
 	elseif isCollectible then
 		return GetCollectionIcon(data.collected);
@@ -1550,30 +1560,43 @@ local function GetProgressTextForRow(data)
 		return "---";
 	end
 end
-local function GetProgressTextForTooltip(data)
+local function GetProgressTextForTooltip(data, iconOnly)
 	local total = data.total;
 	local isCollectible = data.collectible;
 	local isContainer = total and (total > 1 or (total > 0 and not isCollectible));
+	local stateText = GetStateIcon(data, iconOnly);
 
 	if isContainer then
 		local costTotal = data.costTotal;
 		local isCost = costTotal and costTotal > 0;
-		local isFilledCost = data.collectibleAsCost == false;
+		local isFilledCost = data.filledCost;
 
 		-- Cost & Progress
 		if isFilledCost then
-			return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			if stateText then
+				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total).." "..stateText;
+			else
+				return L["COST_TEXT"].." "..GetProgressColorText(data.progress or 0, total);
+			end
 		end
+
 		-- Cost
 		if isCost then
-			return L["COST_TEXT"];
+			if stateText then
+				return L["COST_TEXT"].." "..stateText;
+			else
+				return L["COST_TEXT"];
+			end
 		end
-		return GetProgressColorText(data.progress or 0, total);
-	elseif isCollectible then
-		return GetCollectionText(data.collected);
-	elseif data.trackable then
-		return GetCompletionText(data.saved);
+
+		-- Progress Only
+		if stateText then
+			return GetProgressColorText(data.progress or 0, total).." "..stateText;
+		else
+			return GetProgressColorText(data.progress or 0, total);
+		end
 	end
+	return stateText;
 end
 local function GetRemovedWithPatchString(rwp)
 	if rwp then
@@ -4780,7 +4803,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+			group.collectionText = GetProgressTextForTooltip(group, app.Settings:GetTooltipSetting("ShowIconOnly"));
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
@@ -4861,6 +4884,7 @@ local function DeterminePurchaseGroups(group)
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
 		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
 		group.collectibleAsCost = false;
+		group.filledCost = true;
 		return groups;
 	end
 end
