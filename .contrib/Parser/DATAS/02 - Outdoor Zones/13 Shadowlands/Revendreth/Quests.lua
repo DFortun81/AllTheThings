@@ -34,7 +34,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 62045 },	-- Ready for More
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 				["g"] = {
-					i(182589, {	-- Loyal Gorger
+					i(182589, {	-- Loyal Gorger (MOUNT!)
 						-- tagged with cost here so that it shows under the Rare for the start of the quest chain item
 						["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn
 					}),

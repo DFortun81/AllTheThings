@@ -174,7 +174,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						},
 					}),
 					n(SPECIAL, {
-						mount(346141, {	-- Slime Serpent
+						mount(346141, {	-- Slime Serpent (MOUNT!)
 							["description"] = SLIME_SERPENT_DESC,
 						}),
 					}),
@@ -238,7 +238,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						},
 					}),
 					n(SPECIAL, {
-						mount(346141, {	-- Slime Serpent
+						mount(346141, {	-- Slime Serpent (MOUNT!)
 							["description"] = SLIME_SERPENT_DESC,
 						}),
 					}),

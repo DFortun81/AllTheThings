@@ -46,7 +46,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 					155945,	-- Gherus the Chained
 				},
 			}),
-			i(188700, {	-- Sturdy Silver Mawrat Harness (MOUNT!)
+			i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
 				["description"] = "Only from Layer 13 or higher",
 				["crs"] = {
 					171422,	-- Arch-Suppressor Laguas

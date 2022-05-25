@@ -109,7 +109,7 @@ _.Secrets =
 				["description"] = "Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes.  Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",
 				["provider"] = { "i", 185475 },	-- Feral Shadehound
 				["g"] = {
-					i(184168),	-- Bound Shadehound
+					i(184168),	-- Bound Shadehound (MOUNT!)
 					i(185616),	-- Summon Feral Shadehound
 				},
 			}),

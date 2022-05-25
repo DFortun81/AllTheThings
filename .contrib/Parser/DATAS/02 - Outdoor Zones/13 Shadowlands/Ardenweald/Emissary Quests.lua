@@ -13,7 +13,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["g"] = {
 					i(180649, {	-- Wild Hunt Supplies
 						i(180635),	-- Hungry Burrower
-						i(183800),	-- Amber Ardenmoth
+						i(183800),	-- Amber Ardenmoth (MOUNT!)
 						i(187870, {["timeline"] = {"added 9.1.5"}}),	-- Porcupine Soul
 						i(185054, {["timeline"] = {"added 9.1.5"}}),	-- Mammoth Soul
 					}),

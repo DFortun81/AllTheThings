@@ -426,11 +426,11 @@ root("PVP", pvp(tier(SL_TIER, {
 		i(164587),	-- Warlord's Trophy Dread Elite
 		--]]
 		filter(MOUNTS, {
-			i(184014, {	-- Vicious War Spider (A)
+			i(184014, {	-- Vicious War Spider (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 9.0.2", "removed 9.1.0" },
 			}),
-			i(184013, {	-- Vicious War Spider (H)
+			i(184013, {	-- Vicious War Spider (H) (MOUNT!)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 9.0.2", "removed 9.1.0" },
 			}),
@@ -841,10 +841,10 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		})),
 		filter(MOUNTS, {
-			i(186178, {	-- Vicious War Gorm (A)
+			i(186178, {	-- Vicious War Gorm (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			i(186179, {	-- Vicious War Gorm (H)
+			i(186179, {	-- Vicious War Gorm (H) (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		}),
@@ -1375,7 +1375,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				}),
 			}),
 			filter(MOUNTS, {
-				i(189507),	-- Cosmic Gladiator's Soul Eater
+				i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
 			}),
 			--[[
 			filter(TABARDS, {
@@ -1384,10 +1384,10 @@ root("PVP", pvp(tier(SL_TIER, {
 			--]]
 		})),
 		filter(MOUNTS, {
-			i(187681, {	-- Vicious War Gulper (A)
+			i(187681, {	-- Vicious War Gulper (A) (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			i(187680, {	-- Vicious War Gulper (H)
+			i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		}),

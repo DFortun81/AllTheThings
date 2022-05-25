@@ -267,7 +267,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									i(180940, {	-- Ebony Crypt Keeper's Mantle
 										["cost"] = { { "c", 1816, 500 } },
 									}),
-									i(182954, {	-- Inquisition Gargon
+									i(182954, {	-- Inquisition Gargon (MOUNT!)
 										["cost"] = { { "c", 1816, 2000 } },
 									}),
 								})),

@@ -6,7 +6,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS, bubbleDown({ ["u"
 	achcat(ACHIEVEMENT_CATEGORY_TIMEWALKING, {
 		ach(15309),		-- A Towering Success
 		ach(15310, {	-- A Tour of Towers
-			i(188674),	-- Mage-Bound Spelltome
+			i(188674),	-- Mage-Bound Spelltome (MOUNT!)
 		}),
 	}),
 })));

@@ -246,7 +246,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								n(REWARDS, {
 									["maps"] = { REVENDRETH },
 									["g"] = {
-										i(183798),	-- Silessa's Battle Harness (MOUNT!)
+										i(183798),	-- Battle Gargon Silessa (MOUNT!)
 										i(183855),	-- Stony's Infused Ruby (PET!)
 										i(183707),	-- Mantle of Burnished Blades
 										i(183972),	-- Forgotten Venthyr Winged Kris

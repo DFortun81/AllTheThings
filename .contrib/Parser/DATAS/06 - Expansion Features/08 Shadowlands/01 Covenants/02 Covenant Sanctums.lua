@@ -104,10 +104,10 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						["timeline"] = { "added 9.1.5" },
 					}),
 					-- Mounts
-					i(183617),	-- Chittering Animite
-					i(183052),	-- Darkwarren Hardshell
-					i(183618),	-- Highwind Darkmane
-					i(183615),	-- Warstitched Darkhound
+					i(183617),	-- Chittering Animite (MOUNT!)
+					i(183052),	-- Darkwarren Hardshell (MOUNT!)
+					i(183618),	-- Highwind Darkmane (MOUNT!)
+					i(183615),	-- Warstitched Darkhound (MOUNT!)
 					-- Pets
 					i(180629),	-- Devouring Animite
 					i(181170),	-- Pernicious Bonetusk
@@ -228,9 +228,9 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["g"] = {
 						i(184159, {	-- Necroray Egg (Timer)
 							i(184158, {	-- Oozing Necroray Egg (No Timer)
-								i(184160),	-- Bulbous Necroray
-								i(184161),	-- Infested Necroray
-								i(184162),	-- Pestilent Necroray
+								i(184160),	-- Bulbous Necroray (MOUNT!)
+								i(184161),	-- Infested Necroray (MOUNT!)
+								i(184162),	-- Pestilent Necroray (MOUNT!)
 							}),
 						}),
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
@@ -273,9 +273,9 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["g"] = {
 						i(184159, {	-- Necroray Egg (Timer)
 							i(184158, {	-- Oozing Necroray Egg (No Timer)
-								i(184160),	-- Bulbous Necroray
-								i(184161),	-- Infested Necroray
-								i(184162),	-- Pestilent Necroray
+								i(184160),	-- Bulbous Necroray (MOUNT!)
+								i(184161),	-- Infested Necroray (MOUNT!)
+								i(184162),	-- Pestilent Necroray (MOUNT!)
 							}),
 						}),
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)

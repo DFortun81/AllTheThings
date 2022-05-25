@@ -224,7 +224,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
 						},
 						["g"] = {
-							i(186103),	-- Undying Darkhound's Harness (MOUNT!)
+							i(186103),	-- Undying Darkhound (MOUNT!)
 							i(186557),	-- Fodder (PET!)
 						},
 					}),

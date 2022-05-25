@@ -132,10 +132,10 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	}),
 
 	-- Blizzconline 2021 "Celebration Collection" (Removed from store 21 Feb 2022)
-	mount(341821, {	-- Snowstorm
-		["timeline"] = { "added 9.0.2.37176" },
+	mount(341821, {	-- Snowstorm (MOUNT!)
+		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
 	pet(3053, {	-- Moon-Touched Netherwhelp
-		["timeline"] = { "added 9.0.2.37176" },
+		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
 })));

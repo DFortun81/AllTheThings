@@ -395,16 +395,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(301841, {		-- Kua'fon
 					--["modelID"] = ,
 				}),
-				mount(302796, {		-- Swift Spectral Armored Gryphon
+				mount(302796, {	-- Swift Spectral Armored Gryphon
 					["modelID"] = 92403,
 				}),
-				mount(302794, {		-- Swift Spectral Fathom Ray
+				mount(302794, {	-- Swift Spectral Fathom Ray
 					["modelID"] = 92401,
 				}),
-				mount(302795, {		-- Swift Spectral Magnetocraft
+				mount(302795, {	-- Swift Spectral Magnetocraft
 					["modelID"] = 92732,
 				}),
-				mount(302797, {		-- Swift Spectral Pterrordax
+				mount(302797, {	-- Swift Spectral Pterrordax
 					["modelID"] = 92078,
 				}),
 			}),
@@ -413,24 +413,71 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(SL_TIER, {
 		filter(MOUNTS, {
 			tier(SL_TIER, 0.1, {
-				i(182083),	-- Bonecleaver's Skullboar
-				i(181817),	-- Deathbringer's Flayedwing
-				i(184035),	-- Silessa's Harness
+				i(182083, {	-- Bonecleaver's Skullboar / Bonecleaver's Skullboar
+					--["modelID"] = ,
+				}),
+				i(181817, {	-- Deathbringer's Flayedwing / Deathbringer's Flayedwing
+					--["modelID"] = ,
+				}),
+				mount(312772, {	-- Gilded Prowler
+					--["modelID"] = ,
+				}),
+				mount(332257, {	-- Gorm (Yellow)
+					--["modelID"] = ,
+				}),
+				mount(334482, {	-- PH Death Elemental
+					--["modelID"] = ,
+				}),
+				mount(332908, {	-- PH Devourer Mite (Green)
+					--["modelID"] = ,
+				}),
+				mount(312758, {	-- PH Epic Phalynx
+					--["modelID"] = ,
+				}),
+				mount(312756, {	-- PH Phalynx
+					--["modelID"] = ,
+				}),
+				i(184035, {	-- Silessa's Harness
+					--["modelID"] = ,
+				}),
+			}),
+			tier(SL_TIER, 0.5, {
+				mount(347813, {	-- Fireplume Phoenix
+					--["modelID"] = ,
+				}),
 			}),
 			tier(SL_TIER, 1.0, {
-				i(186491),	-- Spring Wilderling Harness
-				i(186639),	-- Pilfered Gearglider
-				i(186640),	-- Silver Gearglider
-				--
-				i(187412), -- Shardhide Ka-Sha (Silver Shardhide Mount)
+				i(186639, {	-- Pilfered Gearglider / Pilfered Gearglider
+					--["modelID"] = ,
+				}),
+				i(187412, {	-- Shardhide Ka-Sha
+					--["modelID"] = ,
+				}),
+				i(186640, {	-- Silver Gearglider / Silver Gearglider
+					--["modelID"] = ,
+				}),
+				i(186491, {	-- Spring Wilderling / Spring Wilderling Harness
+					--["modelID"] = ,
+				}),
+			}),
+			tier(SL_TIER, 1.5, {
+				mount(350529, {	-- NAK's Test Mount [DNT]
+					--["modelID"] = ,
+				}),
 			}),
 			tier(SL_TIER, 2.0, {
-				mount(356802, {		-- Holy Lightstrider
+				i(187674, {	-- [PH] Progenitor Jellyfish (Dark)
+					--["modelID"] = ,
+				}),
+				mount(356802, {	-- Holy Lightstrider
 					["modelID"] = 101577,
 				}),
-				i(187644),	-- Vicious Warstalker (A)
-				i(187642),	-- Vicious Warstalker (H)
-				i(187674),	-- [PH] Progenitor Jellyfish (Dark)
+				i(187644, {	-- Vicious Warstalker (A) / Vicious Warstalker
+					--["modelID"] = ,
+				}),
+				i(187642, {	-- Vicious Warstalker (H) / Vicious Warstalker
+					--["modelID"] = ,
+				}),
 			}),
 		}),
 	}),
