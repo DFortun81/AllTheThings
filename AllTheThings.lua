@@ -7656,17 +7656,15 @@ app.CheckCollectible = CheckCollectible;
 app.CollectibleAsCost = function(t)
 	local collectibles = t.costCollectibles;
 	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
-	if not collectibles or #collectibles == 0 then return; end
+	if not collectibles or #collectibles == 0 then
+		t.collectibleAsCost = false;
+		return;
+	end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
 	if not app.MODE_DEBUG_OR_ACCOUNT then
 		local parent = t.parent;
 		if parent and parent.questID and parent.saved then
 			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
-			return;
-		end
-		-- Make sure this thing can actually be collectible via hierarchy
-		if GetRelativeValue(t, "altcollected") then
-			-- app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
 			return;
 		end
 	end
@@ -7678,47 +7676,21 @@ app.CollectibleAsCost = function(t)
 		-- Use the common collectibility check logic
 		collectible, collected = CheckCollectible(ref);
 		if collectible and not collected then
-			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
 			t.collectibleAsCost = nil;
+			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
+			-- Found something collectible for t, make sure t is actually obtainable as well
+			-- Make sure this thing can actually be collectible via hierarchy
+			if GetRelativeValue(t, "altcollected") then
+				app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
+				return;
+			end
+			-- Costs are only collectible until all purchases are collected, thus to be collectible means being not collected as well
+			t.collectedAsCost = false;
 			return true;
 		end
 	end
 	-- app.PrintDebug("CollectibleAsCost:false",t.hash)
 	t.collectibleAsCost = nil;
-end
-app.CollectedAsCost = function(t)
-	local collectibles = t.costCollectibles;
-	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
-	if not collectibles or #collectibles == 0 then return; end
-	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		local parent = t.parent;
-		if parent and parent.questID and parent.saved then
-			-- app.PrintDebug("CollectedAsCost:t.parent.saved",t.hash)
-			return;
-		end
-		-- Make sure this thing can actually be collectible via hierarchy
-		if GetRelativeValue(t, "altcollected") then
-			-- app.PrintDebug("CollectedAsCost:altcollected",t.hash)
-			return;
-		end
-	end
-	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
-	t.collectedAsCost = false;
-	-- check the collectibles if any are considered collectible currently
-	local collectible, collected;
-	for _,ref in ipairs(collectibles) do
-		-- Use the common collectibility check logic
-		collectible, collected = CheckCollectible(ref);
-		if collectible and not collected then
-			-- app.PrintDebug("CollectedAsCost:false",t.hash,"from",ref.hash)
-			t.collectedAsCost = nil;
-			return;
-		end
-	end
-	-- app.PrintDebug("CollectedAsCost:true",t.hash)
-	t.collectedAsCost = nil;
-	return true;
 end
 end)();
 
