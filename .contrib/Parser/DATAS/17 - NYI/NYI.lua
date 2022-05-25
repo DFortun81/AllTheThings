@@ -48,12 +48,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191911),	-- Cosmic Creation Impetus
 		i(191734),	-- Motion Sick Peon's Magical Elixir
 
-		i(192099),  -- Earpieces of Tranquil Focus (TOY!)
 		-- Winter Veil 2022
 		ach(15645),	-- To Catch Falling Stars
 		ach(15653),	-- The More You Know*
 		i(191937),	-- Falling Star Catcher (TOY!)
 		i(191925),	-- Falling Star Flinger (TOY!)
+		-- Watch Twitch?
+		ach(15594, {	-- Fearless Spectator
+			title(459),	-- 	Fearless Spectator <Name>
+		}),
 	}),
 	tier(SL_TIER, 2.0, {
 		n(QUESTS, {	-- Darkal Sort?

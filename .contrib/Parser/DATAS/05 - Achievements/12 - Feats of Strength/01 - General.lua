@@ -46,7 +46,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(14),	-- Shadowlands Dilettante
 			crit(15),	-- Tower Ranger
 			crit(16),	-- Walking in Maw-mphis
-			crit
 		})),
 		un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 			un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest

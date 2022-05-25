@@ -5613,7 +5613,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 				-- 9.2.5.42850
 				q(63479),	-- Summons from the Matriarch
 				q(63505),	--
@@ -5626,7 +5626,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63536),	--
 				q(65541),	--
 				q(65598),	--
-				q(65655),	--
+				q(65655),	-- Eyes of the Wolf
 				q(65656),	--
 				q(65657),	--
 				q(65658),	--
@@ -5664,8 +5664,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66313),	--
 				q(66316),	--
 				q(66343),	--
-				q(66390),	-- Missing Merchandise
-				q(66420),	--
 				-- 9.2.5.43057
 				-- 9.2.5.43254
 				q(66480),	--
@@ -5674,21 +5672,21 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66560),	--
 				q(66579),	-- Sounds of Healing
 				-- 9.2.5.43412
-				q(66614),	--
-				q(66615),	--
-				q(66616),	--
-				q(66617),	--
-				q(66618),	--
-				q(66619),	--
-				q(66648),	--
+				q(66614),	-- Valinor, the Light of Eons
+				q(66615),	-- Nurgash Muchformed
+				q(66616),	-- Oranomonos the Everbranching
+				q(66617),	-- Mortanis
+				q(66618),	-- Mor'geth
+				q(66619),	-- Antros
+				q(66648),	-- Crossing Fate
 				q(66649),	--
 				q(66650),	--
 				q(66661),	-- It's Just a Coin, What Could it Cost?
 				-- 9.2.5.43519
-				q(66693),	--
-				q(66694),	--
-				q(66695),	--
-				q(66696),	--
+				q(66693),	-- Tempting Fate: Castle Nathria
+				q(66694),	-- Tempting Fate: Sanctum of Domination
+				q(66695),	-- Tempting Fate: Sepchuler of the First Ones
+				q(66696),	-- Tempting Fate: Fate of the Shadowlands
 				-- 9.2.5.43630
 				-- 9.2.5.43741
 				-- 9.2.5.43810

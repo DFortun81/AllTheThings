@@ -66,14 +66,14 @@ root("Instances", tier(SL_TIER, {
 				crit(1),	-- Return to Karazhan: Lower
 				crit(2),	-- Return to Karazhan: Upper
 			})),
-			ach(15052, {["timeline"] = {"added 9.1.0"}, REMOVED_SLS4}),	-- Keystone Hero: Sanguine Depths
-			ach(15049, {["timeline"] = {"added 9.1.0"}, REMOVED_SLS4}),	-- Keystone Hero: Spires of Ascension
-			ach(15045, {["timeline"] = {"added 9.1.0"}, REMOVED_SLS4}),	-- Keystone Hero: The Necrotic Wake
-			ach(15500, bubbleDownSel({ ["timeline"] = { "added 9.2.0" }, }, {	-- Keystone Hero: Tazavesh, the Veiled Market
+			ach(15052, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Sanguine Depths
+			ach(15049, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Spires of Ascension
+			ach(15045, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: The Necrotic Wake
+			ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" }, }, {	-- Keystone Hero: Tazavesh, the Veiled Market
 				crit(1),	-- Tazavesh: Streets of Wonder
 				crit(2),	-- Tazavesh: So'leah's Gambit
 			})),
-			ach(15050, {["timeline"] = {"added 9.1.0"}, REMOVED_SLS4}),	-- Keystone Hero: Theater of Pain
+			ach(15050, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Theater of Pain
 		}),
 		n(SOULSHAPES, {
 			i(182173, {["timeline"] = {"added 9.0.2" }}),	-- Hyena Soul

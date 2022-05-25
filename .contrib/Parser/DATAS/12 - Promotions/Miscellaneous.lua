@@ -5,9 +5,6 @@ local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 	["timeline"] = { "added 9.0.5" },
 	["description"] = "Granted to players by logging in on character of at least level 20.",
 });
-local FEARLESS_SPECTATOR = ach(15594, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Fearless Spectator
-	title(459),	-- 	Fearless Spectator <Name>
-}));
 
 root("Promotions", filter(MISC, {
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
@@ -27,7 +24,6 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		FEARLESS_SPECTATOR,
 		i(32465, {	-- Fortune Cookie (Lucky)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
@@ -94,9 +90,3 @@ root("Promotions", filter(MISC, {
 	}),
 }));
 WANDERING_ANCIENT.u = nil;
-for _,i in pairs(FEARLESS_SPECTATOR) do
-	for _,j in pairs(i) do
-		i.u = nil;
-		j.u = nil;
-	end;
-end;
