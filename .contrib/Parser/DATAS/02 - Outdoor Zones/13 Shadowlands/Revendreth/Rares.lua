@@ -103,7 +103,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(15, {	-- Famu the Infinite
 						["achievementID"] = 14310,	-- Adventurer of Revendreth
 					}),
-					i(180582),	-- Endmire Flyer Tether (MOUNT!)
+					i(180582),	-- Endmire Flyer (MOUNT!)
 					i(183739),	-- Endmire Wristwarmers
 					i(182972),	-- Critter Two-Thumbs Portrait
 				},

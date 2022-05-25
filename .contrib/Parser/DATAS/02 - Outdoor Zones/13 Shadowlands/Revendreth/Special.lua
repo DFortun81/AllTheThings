@@ -109,7 +109,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							166068,	-- Slabchop <Chugs, Chews, and Stews>
 						},
 					}),
-					i(182614, {	-- Blanchy's Reins (MOUNT!)
+					i(182614, {	-- Sinrunner Blanchy (MOUNT!)
 						["sourceQuests"] = { 62050 },	-- Dredhollow Apple
 					}),
 				},

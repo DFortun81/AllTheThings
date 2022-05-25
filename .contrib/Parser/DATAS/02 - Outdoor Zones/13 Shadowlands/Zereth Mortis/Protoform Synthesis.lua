@@ -694,168 +694,168 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 				}),
 				filter(MOUNTS, {
-					i(187632, {	-- Adorned Vombata
+					i(187632, {	-- Adorned Vombata (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", VOMBATA_LATTICE, 1},
 							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
 						},
 					}),
-					i(187670, {	-- Bronze Helicid
+					i(187670, {	-- Bronze Helicid (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189179, 1 },	-- 1x Unalloyed Bronze Ingot
 						},
 					}),
-					i(187663, {	-- Bronzewing Vespoid
+					i(187663, {	-- Bronzewing Vespoid (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", VESPOID_LATTICE, 1},
 							{ "i", 189179, 1 },	-- 1x Unalloyed Bronze Ingot
 						},
 					}),
-					i(187665, {	-- Buzz
+					i(187665, {	-- Buzz (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 500 },
 							{ "i", VESPOID_LATTICE, 1},
 							{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 						},
 					}),
-					i(187630, {	-- Curious Crystalsniffer
+					i(187630, {	-- Curious Crystalsniffer (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", VOMBATA_LATTICE, 1},
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
-					i(187631, {	-- Darkened Vombata
+					i(187631, {	-- Darkened Vombata (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", VOMBATA_LATTICE, 1},
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
-					i(187638, {	-- Deathrunner
+					i(187638, {	-- Deathrunner (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", CREVID_LATTICE, 1},
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
-					i(187666, {	-- Desertwing Hunter
+					i(187666, {	-- Desertwing Hunter (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", RAPTORA_LATTICE, 1},
 							{ "i", 189180, 1 },	-- 1x Wind's Infinite Call
 						},
 					}),
-					i(187664, {	-- Forged Spiteflyer
+					i(187664, {	-- Forged Spiteflyer (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", VESPOID_LATTICE, 1},
 							{ "i", 189173, 1 },	-- 1x Eternal Ragepearl
 						},
 					}),
-					i(187677, {	-- Genesis Crawler
+					i(187677, {	-- Genesis Crawler (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", TARRACHNID_LATTICE, 1},
 							{ "i", 189171, 1 },	-- 1x Bauble of Pure Innovation
 						},
 					}),
-					i(187683, {	-- Goldplate Bufonid
+					i(187683, {	-- Goldplate Bufonid (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189171, 1 },	-- 1x Bauble of Pure Innovation
 						},
 					}),
-					i(190580, {	-- Heartbond Lupine
+					i(190580, {	-- Heartbond Lupine (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 500 },
 							{ "i", LUPINE_LATTICE, 1},
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
-					i(187679, {	-- Ineffable Skitterer
+					i(187679, {	-- Ineffable Skitterer (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 500 },
 							{ "i", TARRACHNID_LATTICE, 1},
 							{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 						},
 					}),
-					i(187667, {	-- Mawdapted Raptora
+					i(187667, {	-- Mawdapted Raptora (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", RAPTORA_LATTICE, 1},
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
-					i(187639, {	-- Pale Regal Cervid
+					i(187639, {	-- Pale Regal Cervid (MOUNT!)
 						["cost"] = {
 								{ "i", GENESIS, 400 },
 								{ "i", CREVID_LATTICE, 1},
 								{ "i", 189176, 1 },	-- 1x Protoform Sentience Crown
 							},
 					}),
-					i(188809, {	-- Prototype Leaper
+					i(188809, {	-- Prototype Leaper (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 250 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
-					i(187668, {	-- Raptora Swooper
+					i(187668, {	-- Raptora Swooper (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", RAPTORA_LATTICE, 1},
 							{ "i", 189173, 1 },	-- 1x Eternal Ragepearl
 						},
 					}),
-					i(188810, {	-- Russet Bufonid
+					i(188810, {	-- Russet Bufonid (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189174, 1 },	-- 1x Lens of Focused Intention
 						},
 					}),
-					i(187641, {	-- Sundered Zerethsteed
+					i(187641, {	-- Sundered Zerethsteed (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", CREVID_LATTICE, 1},
 							{ "i", 189175, 1 },	-- 1x Mawforged Bridle
 						},
 					}),
-					i(187669, {	-- Serenade
+					i(187669, {	-- Serenade (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 500 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189172, 1 },	-- 1x Crystallized Echo of the First Song
 						},
 					}),
-					i(187672, {	-- Scarlet Helicid
+					i(187672, {	-- Scarlet Helicid (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 350 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189177, 1 },	-- 1x Revelation Key
 						},
 					}),
-					i(187678, {	-- Tarachnid Creeper
+					i(187678, {	-- Tarachnid Creeper (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 450 },
 							{ "i", TARRACHNID_LATTICE, 1},
 							{ "i", 189177, 1 },	-- 1x Revelation Key
 						},
 					}),
-					i(187671, {	-- Unsuccessful Prototype Fleetpod
+					i(187671, {	-- Unsuccessful Prototype Fleetpod (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 300 },
 							{ "i", HELICID_LATTICE, 1},
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},
 					}),
-					i(187660, {	-- Vespoid Flutterer
+					i(187660, {	-- Vespoid Flutterer (MOUNT!)
 						["cost"] = {
 							{ "i", GENESIS, 400 },
 							{ "i", VESPOID_LATTICE, 1},

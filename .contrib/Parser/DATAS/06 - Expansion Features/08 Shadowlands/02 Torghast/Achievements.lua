@@ -135,7 +135,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 				}),
 			}),
 			ach(15089, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Flawless Master (Layer 12)
-				i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
+				i(186655),	-- Mawsworn Charger (MOUNT!)
 				ach(15088),	-- Flawless: Upper Reaches (Layer 12)
 				ach(15087),	-- Flawless: Mort'regar (Layer 12)
 				ach(15084),	-- Flawless: The Soulforges (Layer 12)

@@ -722,7 +722,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 48.8, 42.4, ZERETH_MORTIS },
 				},
 				["g"] = {
-					i(190766),	-- Spectral Mawrat's Tail (MOUNT!)
+					i(190766),	-- Colossal Wraithbound Mawrat (MOUNT!)
 				},
 			}),
 			o(376041, {	-- Shrouded Cypher Cache

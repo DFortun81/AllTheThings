@@ -1181,7 +1181,7 @@ i(167170, 291538);	-- Unshackled Waveray
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
 -- NYI --
-i(168673, 0);	-- Keys to the Silver Mono-Wheel (No mount in yet)
+i(168673, 0);		-- Keys to the Silver Mono-Wheel (No mount in yet)
 --i(0, 301841);		-- Kua'fon
 --i(0, 302796);		-- Swift Spectral Armored Gryphon
 --i(0, 302794);		-- Swift Spectral Fathom Ray
@@ -1248,48 +1248,47 @@ i(181820, 332467);	-- Armored Chosen Tauralus
 i(181821, 332464);	-- Armored Plaguerot Tauralus
 i(181822, 332462);	-- Armored War-Bred Tauralus
 i(183741, 342335);	-- Ascended Skymane
+i(183798, 333023);	-- Battle Gargon Silessa
 i(180948, 312754);	-- Battle Gargon Vrednic
-i(182614, 339588);	-- Blanchy's Reins
+i(184062, 344228);	-- Battle-Bound Warhound
 i(182085, 332478);	-- Blisterback Bloodtusk
-i(182083, 332482);	-- Bonecleaver's Skullboar
 i(182075, 332457);	-- Bonehoof Tauralus
 i(182078, 336041);	-- Bonesewn Fleshroc
 i(184160, 344574);	-- Bulbous Necroray
-i(181818, 336038);	-- Chewed Reins of the Callow Flayedwing
+i(181818, 336038);	-- Callow Flayedwing
 i(183617, 312776);	-- Chittering Animite
 i(182074, 332460);	-- Chosen Tauralus
+i(182081, 327405);	-- Colossal Slaughterclaw
 i(184166, 344578);	-- Corridor Creeper
 i(183518, 341639);	-- Court Sinrunner
 i(180945, 332932);	-- Crypt Gargon
 i(183052, 312763);	-- Darkwarren Hardshell
 i(181317, 336064);	-- Dauntless Duskrunner
-i(181817, 318052);	-- Deathbringer's Flayedwing
 i(182209, 332949);	-- Desire's Battle Gargon
-i(180263, 312759);	-- Dreamlight Runedeer
 i(180263, 312759);	-- Dreamlight Runestag
 i(180729, 332256);	-- Duskflutter Ardenmoth
 i(180721, 312761);	-- Enchanted Dreamlight Runestag
 i(180722, 332246);	-- Enchanted Shadeleaf Runestag
 i(180723, 332247);	-- Enchanted Wakener's Runestag
 i(180724, 332248);	-- Enchanted Winterborn Runestag
-i(180582, 332905);	-- Endmire Flyer Tether
+i(180582, 332905);	-- Endmire Flyer
 i(180766, 334406);	-- Eternal Phalynx of Courage
 i(180768, 334409);	-- Eternal Phalynx of Humility
 i(180767, 334408);	-- Eternal Phalynx of Loyalty
 i(180765, 334403);	-- Eternal Phalynx of Purity
 i(183740, 342334);	-- Gilded Prowler
-i(184062, 344228);	-- Gnawed Reins of the Battle-Bound Warhound
 i(182084, 332480);	-- Gorespine
-i(182332, 333021);	-- Gravestone Battle Armor
+i(182332, 333021);	-- Gravestone Battle Gargon
 i(181300, 336039);	-- Gruesome Flayedwing
 i(183618, 341776);	-- Highwind Darkmane
 i(180581, 312753);	-- Hopecrusher Gargon
 i(180461, 332882);	-- Horrid Dredwing
+i(182079, 336042);	-- Hulking Deathroc
 i(184161, 344576);	-- Infested Necroray
 i(182954, 332923);	-- Inquisition Gargon
 i(182589, 333027);	-- Loyal Gorger
 i(182082, 332484);	-- Lurid Bloodtusk
-i(181819, 336036);	-- Marrowfang's Reins
+i(181819, 336036);	-- Marrowfang
 i(184167, 312762);	-- Mawsworn Soulhunter
 i(180726, 334365);	-- Pale Acidmaw
 i(184162, 344575);	-- Pestilent Necroray
@@ -1300,21 +1299,18 @@ i(180764, 334398);	-- Phalynx of Purity
 i(182076, 332456);	-- Plaguerot Tauralus
 i(182080, 336045);	-- Predatory Plagueroc
 i(182596, 332903);	-- Rampart Screecher
-i(182081, 327405);	-- Reins of the Colossal Slaughterclaw
 i(180413, 332243);	-- Shadeleaf Runestag
 i(180727, 332252);	-- Shimmermist Runner
-i(183798, 333023);	-- Silessa's Battle Harness
 i(180748, 318051);	-- Silky Shimmermoth
 i(181316, 312777);	-- Silvertip Dredwing
 i(180772, 334433);	-- Silverwind Larion
 i(183715, 332927);	-- Sinfall Gargon
 i(183937, 332400);	-- Sinful Gladiator's Soul Eater
+i(182614, 339588);	-- Sinrunner Blanchy
 i(182717, 340068);	-- Sintouched Deathwalker
-i(182079, 336042);	-- Slime-Covered Reins of the Hulking Deathroc
 i(180725, 334364);	-- Spinemaw Gladechewer
 i(180773, 312765);	-- Sundancer
 i(180728, 312767);	-- Swift Gloomhoof
-i(184168, 344577);	-- Tower Shadehound
 i(183053, 340503);	-- Umbral Scythehorn
 i(183801, 342667);	-- Vibrant Flutterwing
 i(184013, 327408);	-- Vicious War Spider (H)
@@ -1327,12 +1323,15 @@ i(180730, 334366);	-- Wild Glimmerfur Prowler
 i(180731, 334352);	-- Wildseed Cradle
 i(180415, 332245);	-- Winterborn Runestag
 -- NYI --
+i(182083, 332482);	-- Bonecleaver's Skullboar		/	Bonecleaver's Skullboar
+i(181817, 318052);	-- Deathbringer's Flayedwing	/	Deathbringer's Flayedwing
 --i(0, 312772);		-- Gilded Prowler
 --i(0, 332257);		-- Gorm (Yellow)
 --i(0, 334482);		-- PH Death Elemental
 --i(0, 332908);		-- PH Devourer Mite (Green)
 --i(0, 312758);		-- PH Epic Phalynx
 --i(0, 312756);		-- PH Phalynx
+i(184035, 0);		-- Silessa's Harness
 
 -----------------
 -- PATCH 9.0.2 --
@@ -1403,9 +1402,10 @@ i(186179, 348769);	-- Vicious War Gorm (H)
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
 -- NYI --
-i(186639, 353264);	-- Pilfered Gearglider
-i(186640, 353265);	-- Silver Gearglider
-i(186491, 353860);	-- Spring Wilderling Harness
+i(186639, 353264);	-- Pilfered Gearglider	/	Pilfered Gearglider
+i(187412, 0); 		-- Shardhide Ka-Sha
+i(186640, 353265);	-- Silver Gearglider	/	Silver Gearglider
+i(186491, 353860);	-- Spring Wilderling	/	Spring Wilderling Harness
 
 -----------------
 -- PATCH 9.1.5 --
@@ -1464,6 +1464,7 @@ i(187660, 342678);	-- Vespoid Flutterer
 i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
 -- NYI --
+i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
 --i(0, 356802);		-- Holy Lightstrider
 
 -----------------

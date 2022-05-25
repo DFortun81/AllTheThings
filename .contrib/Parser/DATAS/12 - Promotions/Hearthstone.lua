@@ -14,7 +14,7 @@ root("Promotions", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "Complete Hearthstone's Mercenaries Mode tutorial and send your party on a mission in order to receive this new mount.",
 		["timeline"] = { "added 9.1.0" },
 		["groups"] = {
-			mount(356488),	-- Sarge's Tale
+			mount(356488),	-- Sarge's Tale (MOUNT!)
 			ach(15323),	-- Sarge's Tale
 		},
 	}),

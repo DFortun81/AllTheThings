@@ -271,7 +271,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						["g"] = {
 							ach(14368),	-- Mythic: The Necrotic Wake
 							ach(14285),	-- Ready for Raiding VII
-							i(181819),	-- Marrowfang's Reins (MOUNT!)
+							i(181819),	-- Marrowfang (MOUNT!)
 							i(178780),	-- Rimebinder's Runeblade
 							i(178777),	-- Dark Frost Helmet
 							i(178779),	-- Undying Chill Shoulderpads

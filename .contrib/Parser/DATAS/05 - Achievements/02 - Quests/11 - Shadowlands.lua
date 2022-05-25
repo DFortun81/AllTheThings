@@ -35,7 +35,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			},
 		}),
 		ach(15064, {	-- Breaking The Chains
-			i(186654),	-- Bracelet of Salarangor
+			i(186654),	-- Hand of Salaranga (MOUNT!)
 			ach(14961, {	-- Chains of Domination
 				crit(1),	-- Battle of Ardenweald
 				crit(2),	-- Maw Walkers

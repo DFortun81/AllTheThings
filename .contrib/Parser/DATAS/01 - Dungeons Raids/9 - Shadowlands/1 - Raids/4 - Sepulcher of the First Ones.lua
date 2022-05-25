@@ -22,7 +22,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15478),	-- Heroic: Sepulcher of the First Ones
 				ach(15490),	-- Mythic: Sepulcher of the First Ones
 				ach(15491, {	-- Glory of the Sepulcher Raider
-					i(187675),	-- Shimmering Aurelid
+					i(187675),	-- Shimmering Aurelid (MOUNT!)
 				}),
 				ach(15493),	-- Ephemeral Plains
 				ach(15492),	-- Cornerstone of Creation

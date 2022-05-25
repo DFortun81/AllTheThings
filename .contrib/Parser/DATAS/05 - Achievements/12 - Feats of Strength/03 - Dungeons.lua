@@ -176,7 +176,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(8),	-- Sanguine Depths
 		}),
 		ach(14532, {	-- Shadowlands Keystone Master: Season One
-			i(182717),	-- Sintouched Deathwalker
+			i(182717),	-- Sintouched Deathwalker (MOUNT!)
 			crit(1),	-- Necrotic Wake
 			crit(2),	-- Plaguefall
 			crit(3),	-- Mists of Tirna Scithe
@@ -226,7 +226,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			title(457),	-- <Name> the Cryptic
 		})),
 		ach(15499, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Master: Season Three
-			i(187682),	-- Wastewarped Deathwalker
+			i(187682),	-- Wastewarped Deathwalker (MOUNT!)
 		})),
 		ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Keystone Hero: Tazavesh, the Veiled Market
 			crit(1),	-- Tazavesh: Streets of Wonder

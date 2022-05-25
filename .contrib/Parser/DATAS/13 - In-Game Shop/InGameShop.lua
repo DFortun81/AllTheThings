@@ -41,10 +41,10 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 		}),
 		i(107951),			-- Iron Skyreaver (MOUNT!)
-		mount(308087),		-- Lucky Yun
+		mount(308087),		-- Lucky Yun (MOUNT!)
 		i(147901),			-- Luminous Starseeker (MOUNT!)
 		i(122469),			-- Mystic Runesaber (MOUNT!)
-		mount(347812),		-- Sapphire Skyblazer
+		mount(347812),		-- Sapphire Skyblazer (MOUNT!)
 		i(153539, {			-- Seabraid Stallion (MOUNT!)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -54,7 +54,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		i(156564),			-- Shu-zen, the Divine Sentinel (MOUNT!)
 		mount(308078),		-- Squeakers, the Trickster (MOUNT!)
 		mount(326390),		-- Steamscale Incinerator (MOUNT!)
-		mount(317177),		-- Sunwarmed Purrkin
+		mount(317177),		-- Sunwarmed Purrkin (MOUNT!)
 		i(92724, {			-- Swift Windsteed (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 		}),
@@ -65,7 +65,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			i(112324),		-- Nightmarish Hitching Post (TOY!)
 		}),
 		i(69846),			-- Winged Guardian (MOUNT!)
-		mount(359317),		-- Wen Lo, the River's Edge
+		mount(359317),		-- Wen Lo, the River's Edge (MOUNT!)
 	}),
 	filter(BATTLE_PETS, {
 		i(106240),			-- Alterac Brew-Pup

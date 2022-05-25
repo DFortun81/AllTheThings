@@ -30,7 +30,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["g"] = {
 					CHRONICLE_OF_LOST_MEMORIES,
 					MEMORY_OF_A_VITAL_SACRIFICE,
-					i(182332, {	-- Gravestone Battle Armor (MOUNT!)
+					i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
 						["cost"] = {
 							{ "c", ANIMA, 100 },
 							{ "c", GRATEFUL, 50 },

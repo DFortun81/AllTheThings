@@ -19,13 +19,13 @@ local ECHTHRA_GROUP = {
 	i(181234),	-- Dutybound Spellblade
 };
 local BINKIROS_GROUP = {
-	i(181300, {	-- Gruesome Flayedwing
+	i(181300, {	-- Gruesome Flayedwing (MOUNT!)
 		["cost"] = { { "c", ANIMA, 2500 } },
 	}),
-	i(180726, {	-- Pale Acidmaw
+	i(180726, {	-- Pale Acidmaw (MOUNT!)
 		["cost"] = { { "c", ANIMA, 2500 } },
 	}),
-	i(181316, {	-- Silvertip Dreadwing
+	i(181316, {	-- Silvertip Dreadwing (MOUNT!)
 		["cost"] = { { "c", ANIMA, 2500 } },
 	}),
 };
@@ -1196,10 +1196,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							n(171973, {	-- Binkiros <Mount Vendor>
 								["coord"] = { 31.6, 48.0, ARCHONS_RISE },
 								["g"] = appendGroups(BINKIROS_GROUP, {
-									i(180768, {	-- Eternal Phalynx of Humility
+									i(180768, {	-- Eternal Phalynx of Humility (MOUNT!)
 										["cost"] = { { "c", ANIMA, 2500 } },
 									}),
-									i(180767, {	-- Eternal Phalynx of Loyalty
+									i(180767, {	-- Eternal Phalynx of Loyalty (MOUNT!)
 										["cost"] = { { "c", ANIMA, 2500 } },
 									}),
 								}),

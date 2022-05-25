@@ -14,7 +14,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180646, {	-- Supplies of the Undying Army
 						i(184495),	-- Infested Arachnid Casing (TOY!)
 						i(181269),	-- Micromancer's Mystical Cowl
-						i(182081),	-- Reins of the Colossal Slaughterclaw (Colossal Slaughterclaw in journal)
+						i(182081),	-- Colossal Slaughterclaw (MOUNT!)
 					}),
 				},
 			}),

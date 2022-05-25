@@ -41,7 +41,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["questID"] = 60977,
 						["isDaily"] = true,
 						["g"] = {
-							i(183741),	-- Ascended Skymane
+							i(183741),	-- Ascended Skymane (MOUNT!)
 						},
 					}),
 				},
@@ -340,7 +340,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(10, {	-- Sundancer
 						["achievementID"] = 14307,	-- Adventurer of Bastion
 					}),
-					i(180773),	-- Sundancer
+					i(180773),	-- Sundancer (MOUNT!)
 				},
 			}),
 			n(171012, {	-- Swelling Tear

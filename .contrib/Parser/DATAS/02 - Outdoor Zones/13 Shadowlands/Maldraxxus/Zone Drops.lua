@@ -17,7 +17,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["g"] = {
 					i(184103, {	-- Cracked Blight-Touched Egg
-						i(181818),	-- Chewed Reins of the Callowed Flayedwing
+						i(181818),	-- Callow Flayedwing (MOUNT!)
 					}),
 				},
 			}),

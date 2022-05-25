@@ -8,7 +8,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
 				["coord"] = { 52.2, 47.0, BASTION },
 				["g"] = {
-					i(183740, {	-- Gilded Prowler
+					i(183740, {	-- Gilded Prowler (MOUNT!)
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)

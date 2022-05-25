@@ -220,7 +220,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							crit(5, {	-- Violet Mistake
 								["achievementID"] = 14721,	-- It's in the Mix
 							}),
-							i(182079),	-- Slime-Covered Reins of the Hulking Deathroc (MOUNT!)
+							i(182079),	-- Hulking Deathroc (MOUNT!)
 							i(184301),	-- Twenty-Loop Violet Girdle
 						},
 					}),
@@ -349,7 +349,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 62786,	-- seems to trigger on first ToP rare killed each day
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
-						i(184062, {	-- Gnawed Reins of the Battle-Bound Warhound (MOUNT!)
+						i(184062, {	-- Battle-Bound Warhound (MOUNT!)
 							["crs"] = {
 								162873,	-- Azmogal
 								162875,	-- Devmorta
@@ -391,7 +391,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(21, {	-- Warbringer Mal'Korak
 						["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 					}),
-					i(182085),	-- Blisterback Bloodtusk
+					i(182085),	-- Blisterback Bloodtusk (MOUNT!)
 					i(184288),	-- Ruthless Warlord's Barrier
 				},
 			}),

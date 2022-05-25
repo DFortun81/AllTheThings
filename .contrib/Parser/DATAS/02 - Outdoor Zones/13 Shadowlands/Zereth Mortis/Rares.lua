@@ -273,7 +273,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["questID"] = 65706,
 						["isDaily"] = true,
 						["g"] = {
-							i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+							i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
 						},
 					}),
 					crit(1, {	-- Iska, Outrider of Ruin

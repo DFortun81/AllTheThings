@@ -235,7 +235,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 160484 },	-- Featherlight
 				["coord"] = { 40.7, 42.7, ARDENWEALD },
 				["g"] = {
-					i(180263),	-- Dreamlight Runestag
+					i(180263),	-- Dreamlight Runestag (MOUNT!)
 				},
 			}),
 			q(58160, {	-- For Queen and Grove!

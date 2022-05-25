@@ -652,9 +652,11 @@ root("Zones", {
 					}),
 					faction(932, {	-- The Aldor
 						["maxReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["altAchievements"] = { 1205 },	-- Hero of Shattrath
 					}),
 					faction(934, {	-- The Scryers
 						["maxReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["altAchievements"] = { 1205 },	-- Hero of Shattrath
 					}),
 					faction(935, {	-- The Sha'tar
 						["maps"] = { TEMPEST_KEEP_ARCATRAZ, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
@@ -2547,7 +2549,7 @@ local KARYNNA_GROUPS = {
 		i(27705, {	-- Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(31616, {	-- Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -2563,7 +2565,7 @@ local KARYNNA_GROUPS = {
 		i(31618, {	-- Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(27881, {	-- Gladiator's Scaled Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -2630,7 +2632,7 @@ local KARYNNA_GROUPS = {
 		i(31411, {	-- Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(27708, {	-- Gladiator's Satin Hood
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -2663,7 +2665,7 @@ local KARYNNA_GROUPS = {
 		i(26001, {	-- Gladiator's Linked Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(27471, {	-- Gladiator's Mail Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -2679,7 +2681,7 @@ local KARYNNA_GROUPS = {
 		i(27472, {	-- Gladiator's Mail Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(31400, {	-- Gladiator's Ringmail Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -2729,7 +2731,7 @@ local KARYNNA_GROUPS = {
 		i(24555, {	-- Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
 		}),
-		
+
 		i(30187, {	-- Gladiator's Felweave Cowl
 			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
 		}),
@@ -2762,7 +2764,7 @@ local KARYNNA_GROUPS = {
 		i(28128, {	-- Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(31376, {	-- Gladiator's Kodohide Helm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -2778,7 +2780,7 @@ local KARYNNA_GROUPS = {
 		i(31377, {	-- Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(28137, {	-- Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -2837,7 +2839,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(31995, {	-- Merciless Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32022, {	-- Merciless Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -2853,7 +2855,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(32023, {	-- Merciless Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32041, {	-- Merciless Gladiator's Scaled Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -2920,7 +2922,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(32035, {	-- Merciless Gladiator's Satin Hood
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
@@ -2953,7 +2955,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(32007, {	-- Merciless Gladiator's Linked Leggings
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32011, {	-- Merciless Gladiator's Mail Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -2969,7 +2971,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(32012, {	-- Merciless Gladiator's Mail Leggings
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32031, {	-- Merciless Gladiator's Ringmail Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -3019,7 +3021,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
-		
+
 		i(31980, {	-- Merciless Gladiator's Felweave Cowl
 			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
@@ -3052,7 +3054,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(31988, {	-- Merciless Gladiator's Kodohide Helm
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
@@ -3068,7 +3070,7 @@ local OLUS_GROUPS = {	-- This was also from Olus on the Isle of Quel'Danas
 		i(31989, {	-- Merciless Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),

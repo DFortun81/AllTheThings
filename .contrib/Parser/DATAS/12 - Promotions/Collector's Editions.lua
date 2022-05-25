@@ -244,7 +244,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 				}),
 			}),
 			-- #else
-			mount(346136),	-- Viridian Phase-Hunter
+			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
 			-- #endif
 		},
 	})),

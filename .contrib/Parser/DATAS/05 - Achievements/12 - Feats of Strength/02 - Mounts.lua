@@ -23,7 +23,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
 		})),
 		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
-			i(189507),	-- Cosmic Gladiator's Soul Eater
+			i(189507),	-- Cosmic Gladiator's Soul Eater (MOUNT!)
 		}))),
 		un(REMOVED_FROM_GAME, ach(11001, {	-- Cruel Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
@@ -114,7 +114,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			title(143),		-- the Camel-Hoarder
 		}),
 		ach(14816, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" }},{	-- Sinful Gladiator's Soul Eater
-			i(183937),	-- Sinful Gladiator's Soul Eater
+			i(183937),	-- Sinful Gladiator's Soul Eater (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
@@ -130,7 +130,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent (MOUNT!)
 		})),
 		ach(14999, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Unchained Gladiator's Soul Eater
-			i(186177),	-- Unchained Gladiator's Soul Eater
+			i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
 			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake (MOUNT!)

@@ -28,7 +28,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 		}),
 		ach(14773),		-- Explosive Extermination
 		ach(15089, {	-- Flawless Master
-			i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
+			i(186655),	-- Mawsworn Charger (MOUNT!)
 			ach(15088),	-- Flawless: Upper Reaches
 			ach(15087),	-- Flawless: Mort'regar
 			ach(15084),	-- Flawless: The Soulforges
@@ -146,7 +146,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 			title(450),	-- <Name>, Tower Ranger
 		})),
 		ach(14570, {	-- Twisting Corridors: Layer 8
-			i(184166),	-- Corridor Creeper
+			i(184166),	-- Corridor Creeper (MOUNT!)
 			ach(14468),	-- Twisting Corridors: Layer 1
 			ach(14469, {	-- Twisting Corridors: Layer 2
 				i(183412),		-- Death Seeker (PET!)

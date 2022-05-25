@@ -165,7 +165,7 @@ _.GearSets =
 					mount(270562, {	-- Darkforge Ram (MOUNT!)
 						["races"] = { DARKIRON },
 					}),
-					mount(363613, {	-- Lightforged Ruinstrider
+					mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
 						["races"] = { LIGHTFORGED },
 						["timeline"] = { "added 9.1.5" },
 					}),

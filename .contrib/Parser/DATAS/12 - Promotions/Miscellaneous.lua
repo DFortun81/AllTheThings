@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient
+local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 	["timeline"] = { "added 9.0.5" },
 	["description"] = "Granted to players by logging in on character of at least level 20.",
 });

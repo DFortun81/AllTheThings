@@ -23,7 +23,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
 				["coord"] = { 47.6, 77.2, ORIBOS },
 				["g"] = {
-					i(183740, {	-- Gilded Prowler
+					i(183740, {	-- Gilded Prowler (MOUNT!)
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(184410),	-- Aspirant's Stretcher (TOY!)
@@ -97,7 +97,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(180940, {	-- Ebony Crypt Keeper's Mantle
 							["cost"] = { { "c", 1816, 500 } },
 						}),
-						i(182954, {	-- Inquisition Gargon
+						i(182954, {	-- Inquisition Gargon (MOUNT!)
 							["cost"] = { { "c", 1816, 2000 } },
 						}),
 					})),
@@ -250,7 +250,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
 				["coord"] = { 46.6, 77.2, ORIBOS },
 				["g"] = {
-					i(183518, {	-- Court Sinrunner
+					i(183518, {	-- Court Sinrunner (MOUNT!)
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(179282, {	-- Court of Harvesters Tabard
