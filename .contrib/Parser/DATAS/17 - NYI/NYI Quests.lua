@@ -582,7 +582,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 			})),
-			
+
 			-- 5.4.0
 			tier(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
@@ -3129,6 +3129,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.0.42937
 				-- 9.2.0.42979
 				-- 9.2.0.43114
+				-- 9.2.0.43206
+				-- 9.2.0.43340
+				-- 9.2.0.43345
 			})),
 
 			-- 9.2.5
@@ -3175,7 +3178,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66069),	--
 				q(66170),	--
 				q(66243),	--
-				q(66253),	-- [DNT] Retrieve Shipments
 				q(66280),	--
 				-- 9.2.5.43022
 				q(66285),	--
@@ -3183,11 +3185,32 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66309),	--
 				q(66313),	--
 				q(66316),	--
-				q(66323),	--
 				q(66343),	--
 				q(66390),	-- Missing Merchandise
 				q(66420),	--
 				-- 9.2.5.43057
+				-- 9.2.5.43254
+				q(66480),	--
+				q(66507),	-- A Winter Veil Gift
+				q(66508),	-- A Gently Shaken Gift
+				q(66560),	--
+				q(66579),	-- Sounds of Healing
+				-- 9.2.5.43412
+				q(66614),	--
+				q(66615),	--
+				q(66616),	--
+				q(66617),	--
+				q(66618),	--
+				q(66619),	--
+				q(66648),	--
+				q(66649),	--
+				q(66650),	--
+				q(66661),	-- It's Just a Coin, What Could it Cost?
+				-- 9.2.5.43519
+				q(66693),	--
+				q(66694),	--
+				q(66695),	--
+				q(66696),	--
 			})),
 
 			-- 9.x.x
