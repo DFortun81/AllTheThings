@@ -5390,9 +5390,9 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 		if index % 25 == 0 then app.print("Syncing " .. index .. " / " .. incomingForUID.total); end
 		return true;
 	end
-	
+
 	incomingFromSender[uid] = nil;
-	
+
 	local msg = "";
 	for i=1,incomingForUID.total,1 do
 		msg = msg .. incomingForUID.chunks[i];
@@ -5431,7 +5431,7 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 		end
 		app.print("Update complete for " .. character.text .. ".");
 	end
-	
+
 	app:RecalculateAccountWideData();
 	app.Settings:Refresh();
 	active = nil;
@@ -5493,10 +5493,10 @@ function app:ReceiveSyncRequest(sender, battleTag)
 			return false;
 		end
 	end
-	
+
 	-- Whitelist the character name, if not already. (This is needed for future sync methods)
 	AllTheThingsAD.LinkedAccounts[sender] = true;
-	
+
 	-- Generate the sync string (there may be several depending on how many alts there are)
 	local msgs = {};
 	local msg = "?\tsyncsum";
@@ -5534,7 +5534,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 			if character then
 				-- Put easy character data into a raw data string
 				local rawData = character.guid .. ":" .. character.name .. ":" .. character.lvl .. ":" .. character.text .. ":" .. (character.realm or " ") .. ":" .. (character.factionID or " ") .. ":" .. (character.classID or " ") .. ":" .. (character.raceID or " ") .. ":" .. character.lastPlayed .. ":" .. character.Deaths;
-				
+
 				for i,field in ipairs(whiteListedFields) do
 					if character[field] then
 						rawData = rawData .. ":" .. field;
@@ -5545,7 +5545,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 						end
 					end
 				end
-				
+
 				if not rawMsg then
 					rawMsg = rawData;
 				else
@@ -5553,7 +5553,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 				end
 			end
 		end
-		
+
 		if rawMsg then
 			-- Send Addon Message Back
 			local length = string.len(rawMsg);
@@ -5569,7 +5569,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 			local uid = outgoingForSender.total + 1;
 			outgoingForSender.uids[uid] = chunks;
 			outgoingForSender.total = uid;
-			
+
 			-- Send Addon Message Back
 			C_ChatInfo.SendAddonMessage("ATT", "chks\t" .. uid .. "\t" .. #chunks, "WHISPER", sender);
 		end
@@ -6901,7 +6901,7 @@ local function RefreshCollections()
 			end
 		end
 		coroutine.yield();
-		
+
 		app:RecalculateAccountWideData();
 
 		-- Refresh Sources from Cache if tracking Transmog
