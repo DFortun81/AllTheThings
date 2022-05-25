@@ -2792,10 +2792,12 @@ local function CreateHash(t)
 			hash = key .. t.modItemID;
 		elseif key == "creatureID" then
 			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
-			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
+			local difficultyID = GetRelativeValue(t, "difficultyID");
+			if difficultyID then hash = hash .. "-" .. difficultyID; end
 		elseif key == "encounterID" then
 			if t.creatureID then hash = hash .. ":" .. t.creatureID; end
-			if t.difficultyID then hash = hash .. "-" .. t.difficultyID; end
+			local difficultyID = GetRelativeValue(t, "difficultyID");
+			if difficultyID then hash = hash .. "-" .. difficultyID; end
 			if t.crs then
 				local numCrs = #t.crs;
 				if numCrs == 1 then
