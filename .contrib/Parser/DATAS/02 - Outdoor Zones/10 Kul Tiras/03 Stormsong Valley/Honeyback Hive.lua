@@ -37,7 +37,7 @@ _.Zones =
 								["coord"] = { 62.5, 26.3, STORMSONG_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(170069, {	-- Honeyback Harvester's Harness
+									i(170069, {	-- Honeyback Harvester (MOUNT!)
 										["races"] = ALLIANCE_ONLY,
 									}),
 								},

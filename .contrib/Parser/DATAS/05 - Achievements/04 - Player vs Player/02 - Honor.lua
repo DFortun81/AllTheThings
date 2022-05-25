@@ -72,7 +72,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			i(163975),	-- Sir Snips
 		}),
 		ach(12917, {	-- Honor Level 500
-			i(164250),	-- Prestigious Bloodforged Courser
+			i(164250),	-- Prestigious Bloodforged Courser (MOUNT!)
 		}),
 	}),
 })));

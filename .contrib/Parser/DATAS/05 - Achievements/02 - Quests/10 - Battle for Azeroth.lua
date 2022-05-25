@@ -185,7 +185,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(6),		-- Boon of Krag'wa
 		})),
 		ach(13791, {	-- Making the Mount
-			i(168827),		-- Scrapforged Mechaspider
+			i(168827),		-- Scrapforged Mechaspider (MOUNT!)
 			crit(1),		-- Shop Project
 			crit(2),		-- Right Bot for the Job
 			crit(3),		-- Ready to Rumble
@@ -311,8 +311,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			["u"] = NEVER_IMPLEMENTED,
 		})),
 		ach(13517, {	-- Two Sides To Every Tale
-			h(i(168055)),	-- Bloodflank Charger (mount)
-			a(i(168056)),	-- Ironclad Frostclaw (mount)
+			h(i(168055)),	-- Bloodflank Charger (MOUNT!)
+			a(i(168056)),	-- Ironclad Frostclaw (MOUNT!)
 			a(ach(12891, {	-- A Nation United
 				a(ach(12593, {	-- Loremaster of Kul Tiras [A]
 					a(ach(12473, {	-- A Sound Plan

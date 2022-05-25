@@ -898,7 +898,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								ach(12518),	-- Allied Races: Mag'har Orc
-								i(161330, {		-- Mag'har Direwolf [Mag'har Orc Quest Chain]
+								i(161330, {	-- Mag'har Direwolf (MOUNT!)
 									["races"] = HORDE_ONLY
 								}),
 							},

@@ -348,7 +348,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
@@ -640,7 +640,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
@@ -933,7 +933,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {

@@ -1042,7 +1042,6 @@ i(163578, 279457);	-- Broken Highland Mustang
 i(161666, 275838);	-- Captured Swampstalker
 i(161665, 275837);	-- Cobalt Pterrordax
 i(163577, 279454);	-- Conqueror's Scythemaw
-i(156884, 262027);	-- Corrupted Gladiator's Proto-Drake
 i(163583, 279467);	-- Craghorn Chasm-Leaper
 i(161912, 260172);	-- Dapple Gray
 i(161331, 271646);	-- Dark Iron Core Hound
@@ -1072,11 +1071,10 @@ i(163582, 279469);	-- Qinsho's Eternal Hound
 i(156880, 262023);	-- Sinister Gladiator's Proto-Drake
 i(163645, 279611);	-- Skullripper
 i(161910, 260173);	-- Smoky Charger
-i(163063, 278656);	-- Spectral Phoenix
 i(161664, 244712);	-- Spectral Pterrorwing
 i(163586, 254811);	-- Squawks
 i(161909, 275866);	-- Stormsong Coastwatcher
-i(159842, 254813);	-- Summon Sharkbait
+i(159842, 254813);	-- Sharkbait
 i(163585, 278979);	-- Surf Jelly
 i(163644, 279569);	-- Swift Albino Raptor
 i(163127, 274610);	-- Teldrassil Hippogryph
@@ -1096,18 +1094,19 @@ i(163706, 279868);	-- Witherbark Direwing
 i(153594, 256123);	-- Xiwyllag ATV
 i(157870, 263707);	-- Zandalari Direhorn
 -- NYI --
-i(156885, 262028);	-- Gold Gladiator's Proto-Drake
-i(156883, 262026);	-- Green Gladiator's Proto-Drake
+i(156885, 262028);	-- Gold Gladiator's Proto-Drake		/	Gold Gladiator's Proto-Drake
+i(156883, 262026);	-- Green Gladiator's Proto-Drake	/	Green Gladiator's Proto-Drake
 --i(0, 237285);		-- Hyena Mount White (PH)
 --i(0, 261963);		-- Mounted
+i(156882, 262025);	-- Pale Gladiator's Proto-Drake		/	Pale Gladiator's Proto-Drake
 --i(0, 254812);		-- PH Giant Parrot (Blue)
 --i(0, 256121);		-- PH Goblin Hovercraft (Blue)
 --i(0, 256125);		-- PH Goblin Hovercraft (Green)
 --i(0, 256124);		-- PH Goblin Hovercraft (Red)
 --i(0, 260176);		-- Proudmoore Horse 2
-i(163188);	-- Surf Jelly
-i(156882, 262025);	-- Pale Gladiator's Proto-Drake
-i(163186, 278966);	-- Tempestuous Skystallion
+i(163063, 278656);	-- Spectral Phoenix					/	Reins of the Spectral Phoenix
+i(163188, 0);		-- Surf Jelly
+i(163186, 278966);	-- Tempestuous Skystallion			/	Tempestuous Skystallion
 
 -----------------
 -- PATCH 8.1.0 --
@@ -1128,27 +1127,23 @@ i(166539, 289101);	-- Dazar'alor Windreaver
 i(166433, 288499);	-- Frightened Kodo
 i(166518, 289083);	-- G.M.O.D.
 i(166705, 289555);	-- Glacial Tidestorm
-i(163183, 259740);	-- Green Marsh Hopper
 i(166774, 290134);	-- Hogrus, Swine of Good Fortune
 i(166467, 288721);	-- Island Thunderscale
 i(166435, 288505);	-- Kaldorei Nightsaber
 i(164571, 281554);	-- Meat Wagon
 i(166463, 288740);	-- Priestess' Moonsaber
-i(166417, 237288);	-- Reins of the Onyx War Hyena
 i(166466, 288722);	-- Risen Mare
 i(166464, 288735);	-- Rubyshell Krolusk
 i(166471, 288711);	-- Saltwater Seahorse
-i(166436, 288506);	-- Sandy Nightsaber (A)
-i(174373, 288506);	-- Sandy Nightsaber (H)
 i(166745, 266925);	-- Siltwing Albatross
-i(156880, 262023);	-- Sinister Gladiator's Proto-Drake
 i(166470, 288712);	-- Stonehide Elderhorn
-i(156798, 261395);	-- The Hivemind
 i(166803, 288503);	-- Umber Nightsaber
 i(165020, 281890);	-- Vicious Black Bonesteed
 i(165019, 281887);	-- Vicious Black Warsaber
 i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
+-- NYI --
+i(166417, 237288);	-- Reins of the Onyx War Hyena	/	Reins of the Onyx War Hyena
 
 -----------------
 -- PATCH 8.1.5 --
@@ -1166,18 +1161,14 @@ i(164762, 282682);	-- Kul Tiran Charger
 i(168830, 290718);	-- Aerial Unit R-21/X
 i(167167, 292407);	-- Ankoan Waveray
 i(167171, 292419);	-- Azshari Bloatray
-i(161666, 275838);	-- Captured Swampstalker
 i(168408, 297560);	-- Child of Torcali
 i(169202, 300153);	-- Crimson Tidestallion
 i(169200, 300147);	-- Deepcoral Snapdragon
-i(161908, 275859);	-- Dusky Waycrest Gryphon
 i(169201, 300150);	-- Fabious
 i(169203, 300151);	-- Inkscale Deepseeker
 i(168370, 297157);	-- Junkheap Drifter
 i(168329, 296788);	-- Mechacycle Model W
 i(168826, 299158);	-- Mechagon Peacekeeper
-i(156881, 262024);	-- Notorious Gladiator's Proto-Drake
-i(161879, 275868);	-- Proudmoore Sea Scout
 i(169198, 294038);	-- Royal Snapdragon
 i(168829, 299170);	-- Rustbolt Resistor
 i(168823, 291492);	-- Rusty Mechanocrawler
@@ -1185,18 +1176,12 @@ i(168827, 299159);	-- Scrapforged Mechaspider
 i(169163, 300149);	-- Silent Glider
 i(169194, 294039);	-- Snapback Scuttler
 i(169199, 300146);	-- Snapdragon Kelpstalker
-i(161664, 244712);	-- Spectral Pterrorwing
-i(161909, 275866);	-- Stormsong Coastwatcher
 i(166776, 290132);	-- Sylverian Dreamer
 i(167170, 291538);	-- Unshackled Waveray
-i(163122, 261433);	-- Vicious War Basilisk (A)
-i(163121, 261434);	-- Vicious War Basilisk (H)
-i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
-i(153594, 256123);	-- Xiwyllag-ATV
 -- NYI --
-i(168673);	-- Keys to the Silver Mono-Wheel (No mount in yet)
+i(168673, 0);	-- Keys to the Silver Mono-Wheel (No mount in yet)
 --i(0, 301841);		-- Kua'fon
 --i(0, 302796);		-- Swift Spectral Armored Gryphon
 --i(0, 302794);		-- Swift Spectral Fathom Ray
@@ -1332,8 +1317,8 @@ i(180728, 312767);	-- Swift Gloomhoof
 i(184168, 344577);	-- Tower Shadehound
 i(183053, 340503);	-- Umbral Scythehorn
 i(183801, 342667);	-- Vibrant Flutterwing
-i(184013, 327408);	-- Vicious War Spider(H)
-i(184014, 327407);	-- Vicious War Spider(A)
+i(184013, 327408);	-- Vicious War Spider (H)
+i(184014, 327407);	-- Vicious War Spider (A)
 i(184183, 344659);	-- Voracious Gorger
 i(180414, 332244);	-- Wakener's Runestag
 i(182077, 332455);	-- War-Bred Tauralus

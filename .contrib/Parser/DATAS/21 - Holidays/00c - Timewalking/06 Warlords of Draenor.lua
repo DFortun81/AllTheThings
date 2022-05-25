@@ -19,10 +19,10 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 42.8, 54.5, WARSPEAR },
 				["g"] = {
-					i(167894, {	-- Beastlord's Irontusk
+					i(167894, {	-- Beastlord's Irontusk (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
-					i(167895, {	-- Beastlord's Warwolf
+					i(167895, {	-- Beastlord's Warwolf (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
 					i(168012, {	-- Apexis Focusing Shard (TOY!)
@@ -158,10 +158,10 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 36.9, 72.5, STORMSHIELD },
 				["g"] = {
-					i(167894, {	-- Beastlord's Irontusk
+					i(167894, {	-- Beastlord's Irontusk (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
-					i(167895, {	-- Beastlord's Warwolf
+					i(167895, {	-- Beastlord's Warwolf (MOUNT!)
 						["cost"] = { { "c", 1166, 5000 } },	-- 5000x Timewarped Badge
 					}),
 					i(168012, {	-- Apexis Focusing Shard (TOY!)

@@ -364,7 +364,7 @@ root("Zones", {
 							["provider"] = { "i", 174863 },	-- Spawn of Vexiona
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
-								i(174862),	-- Uncorrupted Voidwing
+								i(174862),	-- Uncorrupted Voidwing (MOUNT!)
 							},
 						}),
 						q(58737, {	-- Magni's Findings
@@ -1088,7 +1088,7 @@ root("Zones", {
 								i(174361, {	-- Black Dragonscale Backpack
 									["cost"] = { { "c", 1719, 5000 }, },	-- 5,000 Corrupted Mementos
 								}),
-								i(174770, {	-- Wicked Swarmer
+								i(174770, {	-- Wicked Swarmer (MOUNT!)
 									["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos
 								}),
 							},

@@ -10,13 +10,13 @@ _.Zones =
 				i(161344, {	-- Abyssal Fragment
 					["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
 					["g"] = {
-						i(161479, {	-- Nazjatar Blood Serpent
+						i(161479, {	-- Nazjatar Blood Serpent (MOUNT!)
 							["coord"] = { 73.5, 23.6, STORMSONG_VALLEY },
 							["crs"] = { 140474 },	-- Adherent of the Abyss
 						}),
 					},
 				}),
-				i(163573, {	-- Goldemane's Reins
+				i(163573, {	-- Goldenmane (MOUNT!)
 					["crs"] = {
 						132226,	-- Briarback Kraultender
 						129750,	-- Briarback Skirmisher

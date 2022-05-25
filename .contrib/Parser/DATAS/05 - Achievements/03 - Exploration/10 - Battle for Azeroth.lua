@@ -267,7 +267,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(5),		-- Ready for War
 		}),
 		ach(13250, {	-- Battle for Azeroth Pathfinder, Part Two
-			i(169162),	-- Wonderwing 2.0
+			i(169162),	-- Wonderwing 2.0 (MOUNT!)
 			crit(1),	-- Rustbolt Resistance Revered
 			crit(2),	-- Unshackled Revered
 			crit(3),	-- Battle for Azeroth Pathfinder, Part One
@@ -717,7 +717,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(8),		-- Legends of the Tidesages - Part 8
 		}),
 		ach(13541, {	-- Mecha-Done
-			i(168329),	-- Keys to the Model W
+			i(168329),	-- Mechacycle Model W (MOUNT!)
 			crit(1),	-- The Mechagonian Threat
 			crit(2),	-- Rest in Pisons
 			crit(3),	-- Outside Influences
@@ -1637,7 +1637,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),	-- 7 Glowing Arcane Trunks
 		}),
 		ach(13638, {	-- Undersea Usurper
-			i(169194),	-- Snapback Scuttler
+			i(169194),	-- Snapback Scuttler (MOUNT!)
 			title(405),	-- of the Deeps
 			crit(1),	-- Tour of the Depths
 			crit(2),	-- Nazjatarget Elminated

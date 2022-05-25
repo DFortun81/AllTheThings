@@ -331,7 +331,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
 				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg
+					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				e(2168, {	-- Taloc
 					["crs"] = {
@@ -532,7 +532,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
 				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg
+					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				e(2168, {	-- Taloc
 					["crs"] = {
@@ -740,7 +740,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg
+					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				e(2168, {	-- Taloc
 					["crs"] = {

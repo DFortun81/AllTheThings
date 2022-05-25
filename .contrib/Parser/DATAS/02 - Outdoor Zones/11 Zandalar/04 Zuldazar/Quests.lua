@@ -641,7 +641,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["g"] = {
-						i(159146),	-- Kua'fon's Harness (MOUNT!)
+						i(159146),	-- Kua'fon (MOUNT!)
 					},
 				}),
 				q(50942, {	-- Dress for the Slide, Not the Ride

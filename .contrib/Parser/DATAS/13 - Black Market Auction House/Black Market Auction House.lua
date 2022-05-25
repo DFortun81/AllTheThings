@@ -65,7 +65,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 		i(137574),	-- Felblaze Infernal (MOUNT!)
 		i(45693),	-- Mimiron's Head (MOUNT!)
-		i(172012),	-- Obsidian Worldbreaker
+		i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 		i(94230),	-- Amber Primordial Direhorn (MOUNT!)
 		i(87777),	-- Astral Cloud Serpent (MOUNT!)
 		i(43952),	-- Azure Drake (MOUNT!)
@@ -80,7 +80,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(44707),	-- Green Proto-Drake (MOUNT!)
 		i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-		i(163042),  -- Reins of the Mighty Caravan Brutosaur
+		i(163042),  -- Mighty Caravan Brutosaur (MOUNT!)
 		i(49636),	-- Onyxian Drake (MOUNT!)
 		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(94229),	-- Slate Primordial Direhorn (MOUNT!)

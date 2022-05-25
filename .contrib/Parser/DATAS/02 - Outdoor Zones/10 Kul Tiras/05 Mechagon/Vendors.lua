@@ -87,7 +87,7 @@ _.Zones =
 							i(161382),	-- Wind-Up Utility Pylon
 						}),
 						i(168907),	-- Holographic Digitalization Hearthstone (TOY!)
-						i(167751),	-- Mechanocat Laser Pointer
+						i(167751),	-- X-995 Mechanocat (MOUNT!)
 						i(169384),	-- Microbot XD
 						i(168057),	-- Rustbolt Requisitions
 						i(169155),	-- Scrapmaster's Blowtorch

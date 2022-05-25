@@ -14,7 +14,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 65.3, 70.6, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163644),	-- Swift Albino Raptor
+							i(163644),	-- Swift Albino Raptor (MOUNT!)
 						},
 					}),
 					n(142508, {	-- Branchlord Aldrus
@@ -64,7 +64,7 @@ _.ExpansionFeatures =
 						["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
 						["description"] = "Only shows up when Alliance-controlled.",
 						["g"] = {
-							i(163579),	-- Highland Mustang
+							i(163579),	-- Highland Mustang (MOUNT!)
 						},
 					}),
 					n(141668, {	-- Echo of Myzrael
@@ -128,7 +128,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["description"] = "Only shows up when Horde-controlled.",
 						["g"] = {
-							i(163578),	-- Broken Highland Mustang
+							i(163578),	-- Broken Highland Mustang (MOUNT!)
 						},
 					}),
 					n(142112, {	-- Kor'gresh Coldrage
@@ -176,7 +176,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 67.5, 61.0, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163706),	-- Witherbark Direwing
+							i(163706),	-- Witherbark Direwing (MOUNT!)
 						},
 					}),
 					n(142423, {	-- Overseer Krix
@@ -189,7 +189,7 @@ _.ExpansionFeatures =
 							{ 27.4, 55.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
-							i(163646),	-- Lil' Donkey
+							i(163646),	-- Lil' Donkey (MOUNT!)
 						},
 					}),
 					n(142435, {	-- Plaguefeather
@@ -251,7 +251,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 56.8, 45.1, ARATHI_HIGHLANDS },
 						["g"] = {
-							i(163645),	-- Skullripper
+							i(163645),	-- Skullripper (MOUNT!)
 						},
 					}),
 					n(141616, {	-- Thundering Goliath

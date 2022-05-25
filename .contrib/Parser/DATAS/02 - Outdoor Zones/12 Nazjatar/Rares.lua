@@ -715,7 +715,7 @@ _.Zones =
 					crit(31, {	-- I Thought You Said They'd Be Rare?
 						["achievementID"] = 13691,
 					}),
-					i(169163),	-- Silent Glider
+					i(169163),	-- Silent Glider (MOUNT!)
 					i(170176),	-- Fathom Ray Wing
 				},
 			}),

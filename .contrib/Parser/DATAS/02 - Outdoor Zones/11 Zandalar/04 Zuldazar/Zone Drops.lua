@@ -27,7 +27,7 @@ _.Zones =
 							128653,	-- Young Seaspray
 						},
 						["g"] = {
-							i(159146),	-- Kua'fon's Harness
+							i(159146),	-- Kua'fon (MOUNT!)
 						},
 					}),
 				},

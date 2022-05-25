@@ -29,7 +29,7 @@ _.Zones =
 					ach(13482),	-- Head Financier of Mechagon
 				}),
 				ach(13541, {	-- Mecha-Done
-					i(168329),	-- Keys to the Model W
+					i(168329),	-- Mechacycle Model W (MOUNT!)
 					ach(13553, {	-- The Mechagonian Threat (A)
 						["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 						["races"] = ALLIANCE_ONLY,

@@ -440,7 +440,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["coord"] = { 33.7, 68.6, 1530 },
 							["isDaily"] = true,
 							["g"] = {
-								i(174840),	-- Xinlao
+								i(174840),	-- Xinlao (MOUNT!)
 							},
 						}),
 						n(157183, {	-- Coagulated Anima
@@ -459,7 +459,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								{ 32.4, 44.0, 1530 },
 							},
 							["g"] = {
-								i(173887),	-- Clutch of Ha-Li
+								i(173887),	-- Clutch of Ha-Li (MOUNT!)
 							},
 						}),
 						n(157171, {	-- Heixi the Stonelord
@@ -471,7 +471,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["coord"] = { 13.1, 25.5, 1530 },
 							-- TODO:: determine patrol path
 							["g"] = {
-								i(174841),	-- Ren's Stalwart Hound
+								i(174841),	-- Ren's Stalwart Hound (MOUNT!)
 							},
 						}),
 						n(160968, {	-- Jade Colossus
@@ -489,7 +489,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								i(174927, {	-- Zan-Tien Lasso
 									["description"] = "The lasso is a zone drop from various Mogu mobs.",
 									["g"] = {
-										i(174752),	-- Ivory Cloud Serpent
+										i(174752),	-- Ivory Cloud Serpent (MOUNT!)
 									},
 								}),
 							},
@@ -1021,7 +1021,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 									}),
 								},
 							}),
-							i(174649, {	-- Rajani Warserpent
+							i(174649, {	-- Rajani Warserpent (MOUNT!)
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
 							}),
 							i(172009, {	-- Recipe: Contract: Rajani

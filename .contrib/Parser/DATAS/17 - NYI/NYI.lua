@@ -1972,24 +1972,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(169192),	-- Unknown
 			}),
 		}),
-		filter(MOUNTS, {
-			tier(BFA_TIER, 0.1, {
-				i(156885),	-- Gold Gladiator's Proto-Drake
-				i(156883),	-- Green Gladiator's Proto-Drake
-				i(156882),	-- Pale Gladiator's Proto-Drake
-				i(163063),	-- Reins of the spectral phoenix
-				i(163188),	-- Surf Jelly
-				i(163186),	-- Tempestuous Skystallion
-			}),
-			tier(BFA_TIER, 1.0, {
-				i(166417)	-- Reins of the Onyx War Hyena
-			}),
-			tier(BFA_TIER, 2.0, {
-				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet)
-					--["modelID"] = ,
-				}),
-			}),
-		}),
 		filter(QUEST_ITEMS, {
 			tier(BFA_TIER, 0.1, {
 				i(157772),	-- A Royal Concern

@@ -159,10 +159,10 @@ _.GearSets =
 					i(157702),	-- Lightsoul Legplates
 					i(157699),	-- Lightsoul Sabatons
 					i(157631),	-- Maul of Smiting
-					mount(290608, {	-- Crusader's Direhorn
+					mount(290608, {	-- Crusader's Direhorn (MOUNT!)
 						["races"] = { ZANDALARI },
 					}),
-					mount(270562, {	-- Darkforge Ram
+					mount(270562, {	-- Darkforge Ram (MOUNT!)
 						["races"] = { DARKIRON },
 					}),
 					mount(363613, {	-- Lightforged Ruinstrider

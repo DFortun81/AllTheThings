@@ -153,7 +153,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "
 					["sourceQuests"] = { 53095 },	-- A Flicker of Hope
 					["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
 					["groups"] = {
-						i(163127),	-- Smoldering Reeins of the Teldrassil Hippogryph
+						i(163127),	-- Teldrassil Hippogryph (MOUNT!)
 					},
 				}),
 				-- Horde Part I
@@ -308,7 +308,7 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 8.0.1.27101", "
 						53610,	-- Driving Them Out
 					},
 					["groups"] = {
-						i(163128),	-- War-Torn Reins of the Undercity Plaguebat
+						i(163128),	-- Undercity Plaguebat (MOUNT!)
 					},
 				}),
 			},

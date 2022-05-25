@@ -4,10 +4,10 @@
 
 root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 	filter(MOUNTS, {
-		mount(302361, {		-- Alabaster Stormtalon
+		mount(302361, {		-- Alabaster Stormtalon (MOUNT!)
 			["races"] = ALLIANCE_ONLY,
 		}),
-		mount(302362, {		-- Alabaster Thunderwing
+		mount(302362, {		-- Alabaster Thunderwing (MOUNT!)
 			["races"] = HORDE_ONLY,
 		}),
 		i(95341, {			-- Armored Bloodwing (MOUNT!)
@@ -33,7 +33,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(78924),			-- Heart of the Aspects (MOUNT!)
-		i(166774),			-- Hogrus, Swine of Good Fortune
+		i(166774),			-- Hogrus, Swine of Good Fortune (MOUNT!)
 		i(128425, {			-- Illidari Felstalker (MOUNT!)
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
 		}),
@@ -52,15 +52,15 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			},
 		}),
 		i(156564),			-- Shu-zen, the Divine Sentinel (MOUNT!)
-		mount(308078),		-- Squeakers, the Trickster
-		mount(326390),		-- Steamscale Incinerator
+		mount(308078),		-- Squeakers, the Trickster (MOUNT!)
+		mount(326390),		-- Steamscale Incinerator (MOUNT!)
 		mount(317177),		-- Sunwarmed Purrkin
 		i(92724, {			-- Swift Windsteed (MOUNT!)
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		i(166776),			-- Sylverian Dreamer
-		i(160589),			-- The Dreadwake
-		i(166775),			-- Vulpine Familiar
+		i(166776),			-- Sylverian Dreamer (MOUNT!)
+		i(160589),			-- The Dreadwake (MOUNT!)
+		i(166775),			-- Vulpine Familiar (MOUNT!)
 		i(112326, {			-- Warforged Nightmare (MOUNT!)
 			i(112324),		-- Nightmarish Hitching Post (TOY!)
 		}),

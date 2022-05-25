@@ -1020,7 +1020,7 @@ root("Zones", {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
-					i(169199, {	-- Snapdragon Kelpstalker
+					i(169199, {	-- Snapdragon Kelpstalker (MOUNT!)
 						["description"] = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
 					}),
 				},

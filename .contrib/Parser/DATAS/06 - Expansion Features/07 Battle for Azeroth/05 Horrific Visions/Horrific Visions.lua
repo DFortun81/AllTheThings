@@ -52,7 +52,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					},
 				}),
 				ach(13994, {	-- Through the Depths of Visions
-					i(174654),	-- Black Serpent of N'Zoth
+					i(174654),	-- Black Serpent of N'Zoth (MOUNT!)
 					ach(14066, {	-- The Most Horrific Vision of Stormwind
 						ach(14064),	-- The Even More Horrific Vision of Stormwind
 						ach(14062),	-- Horrific Vision of Stormwind
@@ -203,7 +203,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 							{ 75.7, 64.6, 1470 },	-- Stormwind
 						},
 						["g"] = {
-							i(174653),	-- Mail Muncher
+							i(174653),	-- Mail Muncher (MOUNT!)
 						},
 					}),
 				},

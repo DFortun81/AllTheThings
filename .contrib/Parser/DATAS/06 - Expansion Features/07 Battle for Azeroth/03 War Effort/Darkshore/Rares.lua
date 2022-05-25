@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 						["coord"] = { 49.5, 25.1, DARKSHORE },
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
-							i(166438),	-- Caged Bear
+							i(166438),	-- Caged Bear (MOUNT!)
 						},
 					}),
 					n(148787, {	-- Alash'anir
@@ -25,7 +25,7 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 56.48, 30.73, DARKSHORE },
 						["g"] = {
-							i(166432),	-- Ashenvale Chimaera
+							i(166432),	-- Ashenvale Chimaera (MOUNT!)
 						},
 					}),
 					n(147966, {	-- Aman
@@ -49,7 +49,7 @@ _.ExpansionFeatures =
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
 							i(166449),	-- Darkshore Sentinel
-							i(166803),	-- Umber Nightsaber
+							i(166803),	-- Umber Nightsaber (MOUNT!)
 						},
 					}),
 					n(147708, {	-- Athrikus Narassin
@@ -68,7 +68,7 @@ _.ExpansionFeatures =
 						["coord"] = { 49.68, 24.94, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							i(166428),	-- Blackpaw
+							i(166428),	-- Blackpaw (MOUNT!)
 						},
 					}),
 					n(149141, {	-- Burninator Mark V [A Only]
@@ -121,8 +121,8 @@ _.ExpansionFeatures =
 						["coord"] = { 50.79, 32.22, DARKSHORE },
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
-							i(166437),	-- Captured Kaldorei Nightsaber
-							--i(166435),	-- Kaldorei Nightsaber -- Possible it's a drop here; will need data
+							i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)
+							--i(166435),	-- Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
 						},
 					}),
 					n(147241, {	-- Cyclarus
@@ -149,7 +149,7 @@ _.ExpansionFeatures =
 							{ 45.01, 67.01, DARKSHORE },
 						},
 						["g"] = {
-							i(166433),	-- Frightened Kodo
+							i(166433),	-- Frightened Kodo (MOUNT!)
 						},
 					}),
 					n(149654, {	-- Glimmerspine
@@ -213,7 +213,7 @@ _.ExpansionFeatures =
 						},
 						["description"] = "Only shows up when Alliance Controlled.",
 						["g"] = {
-							i(166434),	-- Captured Umber Nightsaber
+							i(166434),	-- Captured Umber Nightsaber (MOUNT!)
 						},
 					}),
 					n(147970, {	-- Mrggrmarr
@@ -268,8 +268,8 @@ _.ExpansionFeatures =
 						["coord"] = { 39.79, 32.94, DARKSHORE },
 						["description"] = "Only shows up when Horde Controlled.",
 						["g"] = {
-							--i(166437),	-- Captured Kaldorei Nightsaber -- Possible it's a drop here; will need data
-							i(166435),	-- Kaldorei Nightsaber
+							--i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+							i(166435),	-- Kaldorei Nightsaber (MOUNT!)
 						},
 					}),
 					n(147751, {	-- Shattershard

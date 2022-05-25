@@ -287,7 +287,7 @@ _.Secrets =
 			o(13000037, {	-- Step 8: Hivemind
 				["description"] = "Each player needs to take one position each around the circle.",
 				["g"] = {
-					i(156798),	-- The Hivemind
+					i(156798),	-- The Hivemind (MOUNT!)
 				},
 			}),
 		},

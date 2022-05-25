@@ -398,10 +398,10 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164587)),	-- Warlord's Trophy Dread Elite
 			})),
 			filter(MOUNTS, {
-				i(163123, {	-- Vicious War Riverbeast (A)
+				i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(163124, {	-- Vicious War Clefthoof (H)
+				i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -824,10 +824,10 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(164959)),	-- Warlord's Trophy Sinister Elite
 			})),
 			filter(MOUNTS, {
-				i(165019, {	-- Vicious Black Warsaber (A)
+				i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(165020, {	-- Vicious Black Bonesteed (H)
+				i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1290,10 +1290,10 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(171099)),	-- Warlord's Trophy Notorious Elite
 			})),
 			filter(MOUNTS, {
-				i(163122, {	-- Vicious War Basilisk (A)
+				i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(163121, {	-- Vicious War Basilisk (H)
+				i(163121, {	-- Vicious War Basilisk (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1710,10 +1710,10 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(172899)),	-- Warlord's Trophy Corrupted Elite
 			})),
 			filter(MOUNTS, {
-				i(173714, {	-- Vicious White Warsaber (A)
+				i(173714, {	-- Vicious White Warsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(173713, {	-- Vicious White Bonesteed (H)
+				i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
 			}),

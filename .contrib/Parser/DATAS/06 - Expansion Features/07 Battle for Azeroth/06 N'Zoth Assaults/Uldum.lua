@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["questID"] = 57273,
 							["coord"] = { 68.3, 31.9, 1527 },
 							["g"] = {
-								i(174753),	-- Waste Marauder
+								i(174753),	-- Waste Marauder (MOUNT!)
 							},
 						}),
 						n(152040, {	-- Scoutmaster Moswen
@@ -868,7 +868,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							["questID"] = 58696,
 							["coord"] = { 30.7, 49.8, 1527 },
 							["g"] = {
-								i(174769),	-- Malevolent Drone
+								i(174769),	-- Malevolent Drone (MOUNT!)
 							},
 						}),
 						n(162163, {	-- High Priest Ytaessis
@@ -1282,7 +1282,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58865,	-- Otherworldly Armaments
 						["g"] = {
-							i(174771),	-- Shadowbarb Drone
+							i(174771),	-- Shadowbarb Drone (MOUNT!)
 						},
 					}),
 					q(58879, {	-- Alpaca It Up
@@ -1310,7 +1310,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 								["provider"] = { "n", 162765 },	-- Friendly Alpaca
 								["sourceQuest"] = 58879,	-- Alpaca It Up
 								["g"] = {
-									i(174859),	-- Springfur Alpaca
+									i(174859),	-- Springfur Alpaca (MOUNT!)
 								},
 							}),
 						},
@@ -1433,7 +1433,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["questID"] = 57259,
 						["coord"] = { 73.9, 83.5, 1527 },
 						["g"] = {
-							i(174641),	-- Drake of the Four Winds
+							i(174641),	-- Drake of the Four Winds (MOUNT!)
 						},
 					}),
 					n(162196, {	-- Obsidian Annihilator
@@ -1482,7 +1482,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(174648, {	-- Uldum Accord Tabard
 								["cost"] = 2280000,	-- 228g
 							}),
-							i(174754, {	-- Wastewander Skyterror
+							i(174754, {	-- Wastewander Skyterror (MOUNT!)
 								["cost"] = 228000000,	-- 22,800g
 							}),
 						},

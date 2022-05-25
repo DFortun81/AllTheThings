@@ -113,7 +113,7 @@ _.Zones =
 						{ 26.4, 52.6, VOLDUN },
 					},
 					["g"] = {
-						i(174860),	-- Reins of the Elusive Quickhoof
+						i(174860),	-- Elusive Quickhoof (MOUNT!)
 					},
 				}),
 				n(136335, {	-- Enraged Krolusk

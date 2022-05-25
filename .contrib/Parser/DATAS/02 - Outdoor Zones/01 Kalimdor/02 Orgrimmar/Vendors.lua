@@ -336,16 +336,16 @@ root("Zones", m(KALIMDOR, {
 					i(102533, {	-- Vicious Skeletal Warhorse (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(165020, {	-- Vicious Bonestead (A)
+					i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
-					i(163121, {	-- Vicious War Basilisk (A)
+					i(163121, {	-- Vicious War Basilisk (A) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 					i(142235, {	-- Vicious War Bear (H) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(163124, {	-- Vicious War Clefthoof (A)
+					i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 					i(152869, {	-- Vicious War Fox (H) (MOUNT!)
@@ -369,7 +369,7 @@ root("Zones", m(KALIMDOR, {
 					i(140348, {	-- Vicious Warstrider (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(173713, {	-- Vicious White Bonesteed (A)
+					i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 				}),

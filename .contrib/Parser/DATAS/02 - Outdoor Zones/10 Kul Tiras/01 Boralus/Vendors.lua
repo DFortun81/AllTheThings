@@ -344,7 +344,7 @@ _.Zones =
 							filter(MOUNTS, {
 								["description"] = "Can drop from any epic or rare box.",
 								["g"] = {
-									i(166470),	-- Stonehide Elderhorn
+									i(166470),	-- Stonehide Elderhorn (MOUNT!)
 								},
 							}),
 							filter(BATTLE_PETS, {
@@ -490,11 +490,11 @@ _.Zones =
 								i(164407),	-- Twilight Dragon's Legplates
 								i(164409),	-- Twilight Dragon's Warboots
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163583),	-- Craghorn Chasm-Leaper
-									i(163586),	-- Squawks
-									i(163585),	-- Surf Jelly
-									i(163584),	-- Twilight Avenger
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+									i(163586),	-- Squawks (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
+									i(163584),	-- Twilight Avenger (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163798),	-- Captain Nibs
@@ -542,8 +542,8 @@ _.Zones =
 								i(164463),	-- Tomb-Keeper's Legguards
 								i(164465),	-- Tomb-Keeper's Sabatons
 								filter(MOUNTS, {
-									i(163583),	-- Craghorn Chasm-Leaper
-									i(163582),	-- Qinsho's Eternal Hound
+									i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+									i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163800),	-- Poro
@@ -591,8 +591,8 @@ _.Zones =
 								i(164486),	-- Faceless Follower's Legwraps
 								i(164488),	-- Faceless Follower's Sandals
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(166466),	-- Risen Mare
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(166466),	-- Risen Mare (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(166494),	-- Lord Woofington
@@ -635,11 +635,11 @@ _.Zones =
 								i(166837),	-- Sleetguard Greatbelt
 								i(166838),	-- Sleetguard Warboots
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163583),	-- Craghorn Chasm-Leaper
-									i(166467),	-- Island Thunderscale
-									i(163585),	-- Surf Jelly
-									i(163584),	-- Twilight Avenger
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+									i(166467),	-- Island Thunderscale (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
+									i(163584),	-- Twilight Avenger (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163797),	-- Scuttle
@@ -688,9 +688,9 @@ _.Zones =
 								i(164504),	-- Saurok Scale Greaves
 								i(164502),	-- Saurok Scale Boots
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163586),	-- Squawks
-									i(163585),	-- Surf Jelly
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163586),	-- Squawks (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163799),	-- Barnaby
@@ -724,9 +724,9 @@ _.Zones =
 								i(164478),	-- Spider Acolyte's Leggings
 								i(164480),	-- Spider Acolyte's Anklewraps
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163583),	-- Craghorn Chasm-Leaper
-									i(163585),	-- Surf Jelly
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(166488),	-- Rotting Ghoul
@@ -759,9 +759,9 @@ _.Zones =
 								i(164463),	-- Tomb-Keeper's Legguards
 								i(164465),	-- Tomb-Keeper's Sabatons
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163583),	-- Craghorn Chasm-Leaper
-									i(163582),	-- Qinsho's Eternal Hound
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+									i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(169322),	-- Adventurous Hopling Pack
@@ -818,8 +818,8 @@ _.Zones =
 								i(164544),	-- Wild Marauder Breeches
 								i(164542),	-- Wild Marauder Boots
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163585),	-- Surf Jelly
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
@@ -907,7 +907,7 @@ _.Zones =
 								i(164445),	-- Spiritbough Breeches
 								i(164444),	-- Spiritbough Striders
 								filter(MOUNTS, {
-									i(163585),	-- Surf Jelly
+									i(163585),	-- Surf Jelly (MOUNT!)
 								}),
 								n(WEAPONS, {
 									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
@@ -933,8 +933,8 @@ _.Zones =
 								i(164472),	-- Mrrglurggl Legguards
 								i(164470),	-- Mrrglurggl Boots
 								filter(MOUNTS, {
-									i(166468),	-- Bloodgorged Hunter
-									i(163585),	-- Surf Jelly
+									i(166468),	-- Bloodgorged Hunter (MOUNT!)
+									i(163585),	-- Surf Jelly (MOUNT!)
 								}),
 								filter(BATTLE_PETS, {
 									i(163823),	-- Coldlight Surfrunner
@@ -2547,10 +2547,10 @@ _.Zones =
 						i(162130, {	-- Recipe: Potion of Bursting Blood (Rank 3)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(161911, {	-- Reins of the Admiralty Stallion (MOUNT!)
+						i(161911, {	-- Admiralty Stallion (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(161879, {	-- Reins of the Proudmoore Sea Scout (MOUNT!)
+						i(161879, {	-- Proudmoore Sea Scout (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
 						i(161567, {	-- Sailing Master's Sash
@@ -2604,7 +2604,7 @@ _.Zones =
 						i(166550, {	-- Royal Blue Cloak
 							["cost"] = { { "c", 1717, 125 }, },	-- 125x Legion Service Medal
 						}),
-						i(166436, {	-- Sandy Nightsaber
+						i(166436, {	-- Sandy Nightsaber (A) (MOUNT!)
 							["cost"] = { { "c", 1717, 350 }, },	-- 350x Legion Service Medal
 						}),
 						i(166766, {	-- Tidesages' Warscroll
@@ -2672,10 +2672,14 @@ _.Zones =
 					["coord"] = { 56.7, 47.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
+							["cost"] = 50000000000,	-- 5,000,000g
+							["timeline"] = { "added 8.0.1", "removed 9.0.1"}
+						}),
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
 						}),
-						i(163589, {	-- Reins of the Palehide Direhorn (MOUNT!)
+						i(163589, {	-- Palehide Direhorn (MOUNT!)
 							["cost"] = 5000000000,	-- 500,000g
 						}),
 					},

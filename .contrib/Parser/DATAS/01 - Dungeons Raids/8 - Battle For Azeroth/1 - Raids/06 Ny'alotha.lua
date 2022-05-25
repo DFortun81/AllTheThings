@@ -290,7 +290,7 @@ _.Instances = { tier(BFA_TIER, {
 			d(14, {	-- Normal
 				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite
+						i(174861),	-- Wriggling Parasite (MOUNT!)
 					}),
 				}),
 				n(QUESTS, {
@@ -523,7 +523,7 @@ _.Instances = { tier(BFA_TIER, {
 			d(15, {	-- Heroic
 				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite
+						i(174861),	-- Wriggling Parasite (MOUNT!)
 					}),
 				}),
 				n(QUESTS, {
@@ -759,7 +759,7 @@ _.Instances = { tier(BFA_TIER, {
 			d(16, {	-- Mythic
 				n(ACHIEVEMENTS, {
 					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite
+						i(174861),	-- Wriggling Parasite (MOUNT!)
 					}),
 				}),
 				n(QUESTS, {
@@ -1000,7 +1000,7 @@ _.Instances = { tier(BFA_TIER, {
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
-						i(174872),	-- Ny'alotha Allseer
+						i(174872),	-- Ny'alotha Allseer (MOUNT!)
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality

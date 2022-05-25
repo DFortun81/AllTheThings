@@ -92,7 +92,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(12),	-- Mechagon Workshop
 		})),
 		un(REMOVED_FROM_GAME, ach(14145, {		-- Battle for Azeroth Keystone Master: Season Four
-			i(174836),	-- Awakened Mindborer
+			i(174836),	-- Awakened Mindborer (MOUNT!)
 			crit(1),	-- Atal'Dazar
 			crit(2),	-- Freehold
 			crit(3),	-- Kings' Rest

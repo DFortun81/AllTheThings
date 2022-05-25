@@ -4414,13 +4414,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(102514, {	-- Vicious Kaldorei Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(165019, {	-- Vicious Black Warsaber (A)
+						i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(140353, {	-- Vicious Gilnean Warhorse (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(163122, {	-- Vicious War Basilisk (A)
+						i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(142234, {	-- Vicious War Bear (A) (MOUNT!)
@@ -4441,10 +4441,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(116777, {	-- Vicious War Ram (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(163123, {	-- Vicious War Riverbeast (A)
+						i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
-						i(173714, {	-- Vicious White Warsaber (A)
+						i(173714, {	-- Vicious White Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(143648, {	-- Vicious War Turtle (A) (MOUNT!)

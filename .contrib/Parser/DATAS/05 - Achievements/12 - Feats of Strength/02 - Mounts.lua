@@ -20,7 +20,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		})),
 		ach(14183),			-- Conspicuous Consumption
 		un(REMOVED_FROM_GAME, ach(13958, {	-- Corrupted Gladiator's Proto-Drake
-			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake
+			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
 		})),
 		pvp(ach(15384, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Gladiator's Soul Eater
 			i(189507),	-- Cosmic Gladiator's Soul Eater
@@ -39,7 +39,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(141848)),	-- Dominant Gladiator's Storm Dragon (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(13093, {	-- Dread Gladiator's Proto-Drake
-			un(REMOVED_FROM_GAME, i(156879)),	-- Dread Gladiator's Proto-Drake
+			un(REMOVED_FROM_GAME, i(156879)),	-- Dread Gladiator's Proto-Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(11000, {	-- Fearless Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141844)),	-- Fearless Gladiator's Storm Dragon (MOUNT!)
@@ -72,7 +72,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(13632, {	-- Notoroious Gladiator's Proto-Drake
-			un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake
+			un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake (MOUNT!)
 		})),
 		ach(879, {	-- Old School Ride
 			["providers"] = {
@@ -114,7 +114,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			i(183937),	-- Sinful Gladiator's Soul Eater
 		})),
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
-			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
+			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
 			un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake (MOUNT!)

@@ -343,19 +343,69 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(BFA_TIER, {
 		filter(MOUNTS, {
 			tier(BFA_TIER, 0.1, {
-				i(156885),	-- Gold Gladiator's Proto-Drake
-				i(156883),	-- Green Gladiator's Proto-Drake
-				i(156882),	-- Pale Gladiator's Proto-Drake
-				i(163063),	-- Reins of the spectral phoenix
-				i(163188),	-- Surf Jelly
-				i(163186),	-- Tempestuous Skystallion
+				i(156885, {	-- Gold Gladiator's Proto-Drake / Gold Gladiator's Proto-Drake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(156883, {	-- Green Gladiator's Proto-Drake / Green Gladiator's Proto-Drake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(237285, {		-- Hyena Mount White (PH) (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(261963, {		-- Mounted (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(156882, {	-- Pale Gladiator's Proto-Drake / Pale Gladiator's Proto-Drake (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(254812, {		-- PH Giant Parrot (Blue) (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(256121, {		-- PH Goblin Hovercraft (Blue) (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(256125, {		-- PH Goblin Hovercraft (Green) (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(256124, {		-- PH Goblin Hovercraft (Red) (MOUNT!)
+					--["modelID"] = ,
+				}),
+				mount(260176, {		-- Proudmoore Horse 2 (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(163063, {	-- Spectral Phoenix / Reins of the Spectral Phoenix (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(163188, {	-- Surf Jelly (MOUNT!)
+					--["modelID"] = ,
+				}),
+				i(163186, {	-- Tempestuous Skystallion / Tempestuous Skystallion (MOUNT!)
+					--["modelID"] = ,
+				}),
 			}),
 			tier(BFA_TIER, 1.0, {
-				i(166417)	-- Reins of the Onyx War Hyena
+				i(166417, {	-- Reins of the Onyx War Hyena / Reins of the Onyx War Hyena (MOUNT!)
+					--["modelID"] = ,
+				}),
 			}),
 			tier(BFA_TIER, 2.0, {
 				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet)
 					--["modelID"] = ,
+				}),
+				mount(301841, {		-- Kua'fon
+					--["modelID"] = ,
+				}),
+				mount(302796, {		-- Swift Spectral Armored Gryphon
+					["modelID"] = 92403,
+				}),
+				mount(302794, {		-- Swift Spectral Fathom Ray
+					["modelID"] = 92401,
+				}),
+				mount(302795, {		-- Swift Spectral Magnetocraft
+					["modelID"] = 92732,
+				}),
+				mount(302797, {		-- Swift Spectral Pterrordax
+					["modelID"] = 92078,
 				}),
 			}),
 		}),

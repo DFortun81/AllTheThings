@@ -168,7 +168,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(24),		-- Four Play
 		}),
 		ach(13315, {	-- Glory of the Dazar'alor Raider
-			i(166539),		-- Dazar'alor Windreaver
+			i(166539),		-- Dazar'alor Windreaver (MOUNT!)
 			ach(13316),		-- Can I Get a Hek Hek Hek Yeah?
 			ach(13325),		-- Walk the Dinosaur
 			ach(13345),		-- Praise the Sunflower
@@ -430,7 +430,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(10),		-- Clear Conscience
 		}),
 		ach(14146, {	-- Glory of the Ny'alotha Raider
-			i(174861),	-- Wriggling Parasite
+			i(174861),	-- Wriggling Parasite (MOUNT!)
 			crit(1),	-- Smoke Test
 			crit(2),	-- Mana Sponge
 			crit(3),	-- Phase 3: Prophet
@@ -462,7 +462,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(14),		-- Strike!
 		}),
 		ach(13687, {	-- Glory of the Eternal Raider
-			i(167171),	-- Azshari Bloatray
+			i(167171),	-- Azshari Bloatray (MOUNT!)
 			crit(1),	-- You and What Army?
 			crit(2),	-- Fun Run
 			crit(3),	-- Intro to Marine Biology
@@ -656,7 +656,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(9),		-- Grand Fin-ale
 		}),
 		ach(12806, {	-- Glory of the Uldir Raider
-			i(163216),		-- Bloodgorged Crawg
+			i(163216),		-- Bloodgorged Crawg (MOUNT!)
 			crit(1),		-- Double Dribble
 			crit(2),		-- Elevator Music
 			crit(3),		-- Parental Controls
@@ -684,7 +684,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(13),		-- One Light in the Darkness
 		}),
 		ach(12812, {	-- Glory of the Wartorn Hero
-			i(161215),		-- Reins of the Obsidian Krolusk
+			i(161215),		-- Obsidian Krolusk (MOUNT!)
 			crit(1),		-- Pecking Order
 			crit(2),		-- I'm in Charge Now!
 			crit(3),		-- That Sweete Booty

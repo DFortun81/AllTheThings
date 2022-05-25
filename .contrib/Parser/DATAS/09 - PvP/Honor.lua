@@ -109,6 +109,6 @@ root("PVP", pvp(n(PVP_HONOR, {
 		}),
 	}),
 	ach(12917, {	-- Honor Level 500
-		i(164250),	-- Prestigious Bloodforged Courser
+		i(164250),	-- Prestigious Bloodforged Courser (MOUNT!)
 	}),
 })));
