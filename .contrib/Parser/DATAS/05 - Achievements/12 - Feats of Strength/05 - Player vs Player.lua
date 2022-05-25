@@ -1330,7 +1330,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15353, {	-- Cosmic Gladiator: Shadowlands Season 3
 				title(452),	-- Cosmic Gladiator <Name>
 			}),
-			ach(15351),		-- Duelist: Shadowlands Season 3
+			ach(15351, {		-- Duelist: Shadowlands Season 3
+				illusion(6351),	-- Cosmic Flow
+			}),
 			ach(15354, {		-- Elite: Shadowlands Season 3
 				i(186777),	-- Cosmic Gladiator's Tabard
 			}),
@@ -1344,7 +1346,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15350),	-- Rival I: Shadowlands Season 3
 			ach(15378),	-- Rival II: Shadowlands Season 3
 		})),
-		n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { "added 9.2.5" } }, {
+		n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SLS4 } }, {
 			ach(15600),		-- Challenger I: Shadowlands Season 4
 			ach(15601),		-- Challenger II: Shadowlands Season 4
 			ach(15609, {	-- Combatant I: Shadowlands Season 4
@@ -1358,9 +1360,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15606, {	-- Eternal Gladiator: Shadowlands Season 4
 				title(461),	-- Eternal Gladiator <Name>
 			}),
-			ach(15604),		-- Duelist: Shadowlands Season 4
+			ach(15604, {		-- Duelist: Shadowlands Season 4
+				illusion(6378),	-- Eternal Flux
+			}),
 			ach(15639),		-- Elite: Shadowlands Season 4
-			ach(15605),		-- Gladiator: Shadowlands Season 4
+			ach(15605, {		-- Gladiator: Shadowlands Season 4
+				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
+			}),
 			ach(15608, {	-- Hero of the Alliance: Eternal
 				["races"] = ALLIANCE_ONLY,
 			}),

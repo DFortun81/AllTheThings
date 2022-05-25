@@ -994,6 +994,7 @@ i(187705);	-- Choofa's Call
 i(188698);	-- Eagger Basket
 i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
+i(187591);	-- Nightborne Guard's Vigilance
 i(187422);	-- Rockin' Rollin' Racer Customizer 19.9.3
 i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
 i(187897);	-- Scouting Map: Cataclysm's Consequences
@@ -1011,7 +1012,6 @@ i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
 -- NYI --
 i(188699);	-- Insulated Dancing Insoles
-i(187591);	-- Nightborne Guard's Vigilance
 i(187861);	-- Magical Seeds
 i(187958);	-- PH - Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
@@ -1035,4 +1035,12 @@ i(190177);	-- Sphere of Enlightened Cogitation
 i(190238);	-- Xy'rath's Booby-Trapped Cache
 -- NYI --
 i(190196);	-- Enlightened Hearthstone
+
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+-- NYI --
+i(192099);  -- Earpieces of Tranquil Focus
+i(191937);	-- Falling Star Catcher
+i(191925);	-- Falling Star Flinger
 end)();

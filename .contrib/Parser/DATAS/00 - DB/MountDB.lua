@@ -1327,7 +1327,6 @@ i(182083, 332482);	-- Bonecleaver's Skullboar		/	Bonecleaver's Skullboar
 i(181817, 318052);	-- Deathbringer's Flayedwing	/	Deathbringer's Flayedwing
 --i(0, 312772);		-- Gilded Prowler
 --i(0, 332257);		-- Gorm (Yellow)
---i(0, 334482);		-- PH Death Elemental
 --i(0, 332908);		-- PH Devourer Mite (Green)
 --i(0, 312758);		-- PH Epic Phalynx
 --i(0, 312756);		-- PH Phalynx
@@ -1470,15 +1469,10 @@ i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
 -----------------
 -- PATCH 9.2.5 --
 -----------------
--- * = Sourced
--- Dark Iron Dwarf
-i(191123, 369666);	-- Grimhowl*
-
-i(191566, 370620);	-- Elusive Emerald Hawkstrider*
-
--- PVP
-i(191290, 370346);	-- Eternal Gladiator's Soul Eater*
-
+i(191566, 370620);	-- Elusive Emerald Hawkstrider
+i(191290, 370346);	-- Eternal Gladiator's Soul Eater
+i(191123, 369666);	-- Grimhowl
+i(192557, 334482);	-- Restoration Deathwalker
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
 end)();

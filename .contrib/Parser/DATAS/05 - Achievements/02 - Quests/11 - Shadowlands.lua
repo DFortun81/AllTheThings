@@ -180,6 +180,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			["altQuests"] = { 60602 },	-- Secret Service
 		}),
 		ach(14790),		-- Covenant Campaign
+		ach(15647, {	-- Dead Men Tell Some Tales
+			["timeline"] = { "added 9.2.5" },
+		}),
 		ach(14735, {	-- Flight School Graduate
 			crit(1, {		-- Flight School: Falling With Style
 				["_quests"] = { 60844 },	-- Flight School: Falling With Style

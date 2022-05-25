@@ -31,9 +31,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(10309)),		-- Collector's Edition: Zeradar
 		un(REMOVED_FROM_GAME, ach(664)),		-- Collector's Edition: Zergling
 		un(REMOVED_FROM_GAME, ach(5378)),		-- Deathy
-		ach(15594, {	-- Fearless Spectator
+		ach(15594, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Fearless Spectator
 			title(459),	-- 	Fearless Spectator <Name>
-		}),
+		})),
 		un(REMOVED_FROM_GAME, ach(11210, {		-- Fight for the Alliance
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
