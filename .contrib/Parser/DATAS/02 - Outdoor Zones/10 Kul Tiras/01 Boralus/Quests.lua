@@ -898,4 +898,7 @@ _.HiddenQuestTriggers = {
 	q(54293),	-- Mission Report: Castaway Point
 	q(54283),	-- Upgrade: Castaway Point started
 	q(54304),	-- Upgrade: Arom's Stand started
+	-- Misc
+	q(54870),	-- "Stay a while and listen" type conversation between Jaina and Katherine Proudmoore next to the flight master. Available during the war campaign after Clearing Out the Cache.
+	q(55464),	-- "Stay a while and listen" type conversation between Jaina and Tandred Proudmoore in Proudmoore Keep at 48, 60. Obtainable after Sail with the Tides completed.
 };

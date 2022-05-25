@@ -171,6 +171,19 @@ _.Zones =
 					["questID"] = 43306,
 					["coord"] = { 74.4, 41.8, STORMHEIM },
 				}),
+				o(250987, { -- Small Treasure Chest
+					["questID"] = 42632,
+					["coord"] = { 74, 52.2, STORMHEIM },
+				}),
+				o(251776, { -- Small Treasure Chest
+					["questID"] = 43238,
+					["coord"] = { 43.1, 40.5, STORMHEIM },
+				}),
+				o(241153, { -- Small Treasure Chest
+					["questID"] = 38483,
+					["coord"] = { 50.3, 41, STORMHEIM },
+					["description"] = "Inside the cave.",
+				}),
 				o(241146, {	-- Treasure Chest
 					["questID"] = 38474,
 					["coord"] = { 42.6, 65.8, STORMHEIM },

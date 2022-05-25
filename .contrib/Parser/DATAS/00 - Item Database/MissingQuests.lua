@@ -1743,7 +1743,6 @@ q(38465),	-- Vignette: Shyama the Dreaded
 q(38469),	-- Bonus Objective: The Moonclaw Vale
 q(38470),	-- Rampant Mandragora
 q(38471),	-- Elune's Kiss
-q(38483),	-- 7.0 Stormheim - Treasure 008 - Hrydshal - ZTO
 q(38484),	--
 q(38491),	-- Infected Mushroom
 q(38492),	--
@@ -1951,7 +1950,6 @@ q(39559),	-- FLAG - Enchanting Research S/3/3/2
 q(39560),	-- FLAG - Enchanting Research S/3/3/3
 q(39564),	-- Vignette: Murktide Alpha
 q(39589),	-- A Mysterious Summons
-q(39606),	-- Treasures of Deathwing
 q(39618),	-- FLAG - Enchanting Research G/1/1/1
 q(39619),	-- FLAG - Enchanting Research G/1/1/2
 q(39620),	-- FLAG - Enchanting Research G/1/1/3
@@ -2137,7 +2135,6 @@ q(40453),	-- Artifact XP - Darkest Fear
 q(40454),	-- Artifact XP - Imagined Horror
 q(40455),	-- Artifact XP - Seersei
 q(40456),	-- Artifact XP - Gorebeak
-q(40473),	-- 7.0 Highmountain - Treasure 066 - Riverbend - M (RKS)
 q(40501),	-- REUSEME_40501
 q(40502),	-- Test - Fireball
 q(40548),	--
@@ -2545,7 +2542,6 @@ q(42600),	--
 q(42613),	-- Growing Power
 q(42615),	--
 q(42621),	--
-q(42632),	-- Treasure 048 - Dreyrgrot
 q(42637),	-- Tracking Quest
 q(42638),	-- Tracking Quest
 q(42672),	-- Growing Power
@@ -2589,7 +2585,6 @@ q(43147),	-- 7.0 Suramar Collapse Scenario - Treasure 11 - Reduce Runaways 02
 q(43206),	-- Jeremy's Test Quest
 q(43214),	-- Primal Gladiator's Plate Armor
 q(43234),	-- Wild Combatant's Weapons
-q(43238),	-- Treasure 063 - Nastrondir
 q(43263),	-- Growing Power
 q(43274),	-- reuse me
 q(43278),	-- Felforged Plate Armor
@@ -2698,7 +2693,6 @@ q(44319),	-- Tracking Quest
 q(44320),	-- Tracking Quest
 q(44321),	-- Tracking Quest
 q(44322),	-- Tracking Quest
-q(44352),	-- 7.0 Highmountain - Treasure 100 - Riverbend - M (ZTO)
 q(44354),	-- Tracking Quest - W2 - Spoke to Brann
 q(44358),	-- Bonus Book Read Tracking Quest
 q(44359),	-- Tracking Quest: Lich King Conversation 01

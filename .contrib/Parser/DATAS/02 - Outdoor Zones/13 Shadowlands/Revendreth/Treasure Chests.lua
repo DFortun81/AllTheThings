@@ -261,6 +261,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			o(358398, {	-- Lost Journal
+				["questID"] = 62478,
 				["coord"] = { 28.5, 43.4, REVENDRETH },
 				["g"] = {
 					i(183742),	-- Enemy Infiltration - Preface

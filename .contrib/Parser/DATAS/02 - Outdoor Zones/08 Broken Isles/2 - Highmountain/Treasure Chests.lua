@@ -40,6 +40,11 @@ root("Zones", {
 					["questID"] = 40476,
 					["coord"] = { 52.9, 23.3, 655 },	-- Lifespring Lower Cavern
 				}),
+				o(251124, { -- Glimmering Treasure Chest
+					["description"] = "On a ledge inside Neltharion's Vault. Use a teleporter or flying mount to reach it, then click the brazier. The chest will spawn after waves of enemies are defeated.",
+					["questID"] = 39606,
+					["coord"] = { 59.6, 40.9, 657 },
+				}),
 				o(245525, {	-- Small Treasure Chest
 					["questID"] = 40472,
 					["coord"] = { 50.6, 75.4, 750 },
@@ -151,6 +156,11 @@ root("Zones", {
 					["questID"] = 40471,
 					["coord"] = { 63.0, 67.9, 652 },
 				}),
+				o(245527, { -- Treasure Chest
+					["questID"] = 40473,
+					["coord"] = { 39.3, 76.3, HIGHMOUNTAIN },
+					["description"] = "There is a phasing issue with this chest- you have to stand behind the totem on the right side of the chest and click from the rock. It's a bit tricky. If your zone is Riverbend, the chest will disappear- you want Highmountain.",
+				}),
 				o(245528, {	-- Treasure Chest
 					["questID"] = 40474,
 					["coord"] = { 39.4, 62.3, HIGHMOUNTAIN },
@@ -192,6 +202,11 @@ root("Zones", {
 					["questID"] = 40489,
 					["coord"] = { 85.2, 38.2, 651 },	-- Bitestone Enclave
 				}),
+				o(257978, { -- Treasure Chest
+					["questID"] = 44352,
+					["coord"] = { 32.2, 38.4, 750 },
+					["description"] = "In an underwater cave. Entrance is below the boat with another treasure on it.",
+				}),
 			}),
 		}),
 	}),
@@ -201,7 +216,6 @@ root("HiddenQuestTriggers", {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(TREASURES, {
-				q(44352),	-- HQT for Quest according to discord the one on the boat below thunder totem (32.4, 38.5, 750)
 				q(40389),	-- creating Rocfeather Skyhorn Kite
 			}),
 		}),
