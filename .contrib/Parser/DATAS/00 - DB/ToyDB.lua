@@ -1039,8 +1039,8 @@ i(190196);	-- Enlightened Hearthstone
 -----------------
 -- PATCH 9.2.5 --
 -----------------
--- NYI --
 i(192099);  -- Earpieces of Tranquil Focus
+-- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
 end)();

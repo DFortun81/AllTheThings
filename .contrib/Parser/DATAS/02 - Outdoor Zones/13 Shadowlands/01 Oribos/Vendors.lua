@@ -353,6 +353,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				}),
 			}),
+			n(188391, {	-- Ko'ropo <Sire Supplier>
+				["coord"] = { 66.7, 31.6, ORIBOS },
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select", "instanceID", 1190},			-- Castle Nathria
+					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+					{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+					{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+					{"is","encounterID"},					-- Only Encounter Headers
+					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+					{"is", "itemID"},						-- Only Items!
+					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+				},
+			}),
 			n(177829, bubbleDownSelf({ ["timeline"] = { "added 9.0.5" } }, {	-- Ko'tul <Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
 				["g"] = {
@@ -502,6 +516,34 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
 						}),
 					})),
+				},
+			}),
+			n(188377, {	-- So'turu <Fence of the First Ones>
+				["coord"] = { 67.0, 32.2, ORIBOS },
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
+					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+					{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+					{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+					{"is", "encounterID" },					-- Only Encounter Headers
+					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+					{"is", "itemID"},						-- Only Items!
+					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+				},
+			}),
+			n(188386, {	-- Ta'choso <Domination Dealer>
+				["coord"] = { 67.3, 32.7, ORIBOS },
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select", "instanceID", 1193},			-- Sanctum of Domination
+					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+					{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
+					{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+					{"is", "encounterID" },					-- Only Encounter Headers
+					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+					{"is", "itemID"},						-- Only Items!
+					{"invtype", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 				},
 			}),
 			n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>

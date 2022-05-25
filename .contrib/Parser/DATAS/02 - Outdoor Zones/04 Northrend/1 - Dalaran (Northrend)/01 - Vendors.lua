@@ -508,6 +508,7 @@ _.Zones =
 					["g"] = {
 						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
 						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+						i(192099, {["timeline"]={"added 9.2.5"}}),  -- Earpieces of Tranquil Focus (TOY!)
 						i(104324),	-- Foot Ball (TOY!)
 						i(137663),	-- Soft Foam Sword (TOY!)
 						i(104323),	-- The Swineskin (TOY!)
