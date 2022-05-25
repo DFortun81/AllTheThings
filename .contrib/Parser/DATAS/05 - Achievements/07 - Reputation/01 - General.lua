@@ -5,7 +5,7 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
 		ach(12866, {	-- 100 Exalted Reputations
-			i(163982),		-- Pureheart Courser
+			i(163982),		-- Pureheart Courser (MOUNT!)
 			title(379),		-- Esteemed <Name>
 			ach(12865),		-- 90 Exalted Reputations
 			ach(12864, {	-- 80 Exalted Reputations

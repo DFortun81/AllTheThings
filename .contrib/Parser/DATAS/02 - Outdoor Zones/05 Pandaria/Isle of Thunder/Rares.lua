@@ -127,7 +127,6 @@ _.Zones =
 					["coord"] = { 39.41, 81.60, ISLE_OF_THUNDER },
 					["g"] = {
 						i(95566),	-- Ra'sha's Sacrificial Dagger
-					--	items not linked to bags to avoid unnecessary bloat.
 						i(94158),	-- Big Bag of Zandalari Supplies
 						i(94159),	-- Small Bag of Zandalari Supplies
 					},

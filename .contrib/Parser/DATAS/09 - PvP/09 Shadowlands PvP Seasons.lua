@@ -1377,9 +1377,11 @@ root("PVP", pvp(tier(SL_TIER, {
 			filter(MOUNTS, {
 				i(189507),	-- Cosmic Gladiator's Soul Eater
 			}),
+			--[[
 			filter(TABARDS, {
 				i(186777),	-- Cosmic Gladiator's Tabard
 			}),
+			--]]
 		})),
 		filter(MOUNTS, {
 			i(187681, {	-- Vicious War Gulper (A)

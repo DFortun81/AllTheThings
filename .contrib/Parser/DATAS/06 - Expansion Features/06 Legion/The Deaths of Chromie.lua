@@ -390,4 +390,5 @@ _.ExpansionFeatures =
 root("HiddenQuestTriggers", {
 	q(47920),	-- Ensemble: Timewarden's Plate
 	q(64652),	-- unknown reason
+	q(47922),	-- Ensemble: Epoch Sentinel's Mail
 });

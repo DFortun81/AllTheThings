@@ -3,9 +3,8 @@
 -----------------------------------------------
 
 root("PVP", pvp(tier(TBC_TIER, {
-	n(PRE_SEASON, bubbleDownSelf({["u"] = REMOVED_FROM_GAME}, {
-		["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
-		["groups"] = {
+	n(SEASON_GLADIATOR, {
+		n(PVP_HONOR, {
 			n(WEAPONS, {
 				i(28940),	-- Grand Marshal's Barricade
 				i(28941),	-- Grand Marshal's Battletome
@@ -260,9 +259,7 @@ root("PVP", pvp(tier(TBC_TIER, {
 				i(28874),	-- High Warlord's Wyrmhide Spaulders
 				i(28875),	-- High Warlord's Wyrmhide Tunic
 			}),
-		},
-	})),
-	n(SEASON_GLADIATOR, {
+		}),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146651, {	-- Arsenal: Gladiator's Weapons
@@ -363,53 +360,51 @@ root("PVP", pvp(tier(TBC_TIER, {
 						{"select", "itemID", 29005 },	-- Marshal's Wyrmhide Boots
 						{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(28126, {	-- Gladiator's Dragonhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(28127, {	-- Gladiator's Dragonhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(28128, {	-- Gladiator's Dragonhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(28129, {	-- Gladiator's Dragonhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(28130, {	-- Gladiator's Dragonhide Tunic
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(31375, {	-- Gladiator's Kodohide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(31376, {	-- Gladiator's Kodohide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(31377, {	-- Gladiator's Kodohide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(31378, {	-- Gladiator's Kodohide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(31379, {	-- Gladiator's Kodohide Tunic
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(28136, {	-- Gladiator's Wyrmhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(28137, {	-- Gladiator's Wyrmhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(28138, {	-- Gladiator's Wyrmhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(28139, {	-- Gladiator's Wyrmhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(28140, {	-- Gladiator's Wyrmhide Tunic
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(28126, {	-- Gladiator's Dragonhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(28127, {	-- Gladiator's Dragonhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28128, {	-- Gladiator's Dragonhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28129, {	-- Gladiator's Dragonhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(28130, {	-- Gladiator's Dragonhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31375, {	-- Gladiator's Kodohide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(31376, {	-- Gladiator's Kodohide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31377, {	-- Gladiator's Kodohide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31378, {	-- Gladiator's Kodohide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(31379, {	-- Gladiator's Kodohide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28136, {	-- Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(28137, {	-- Gladiator's Wyrmhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28138, {	-- Gladiator's Wyrmhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28139, {	-- Gladiator's Wyrmhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(28140, {	-- Gladiator's Wyrmhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(HUNTER, {

@@ -1306,6 +1306,7 @@ _.Zones =
 						26319,	-- Anub'ar Cultist
 						26606,	-- Anub'ar Slayer
 					},
+					["sourceQuest"] = 12056,	-- Marked For Death: High Cultist Zangus
 				}),
 				q(12065, {	-- The Focus on the Beach (A)
 					["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
@@ -1387,7 +1388,11 @@ _.Zones =
 					["coord"] = { 38.1, 46.3, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26379 },	-- Overlord Agmar
-					["sourceQuest"] = 12072,	-- Blightbeasts be Damned!
+					["sourceQuests"] = {
+						12140,	-- All Hail Roanauk!
+						12072,	-- Blightbeasts be Damned!
+						12221,	-- The Forsaken Blight
+					},
 					["g"] = {
 						i(38541),	-- Implacable Zombie Crushers
 						i(38543),	-- Reinforced Traveler's Boots

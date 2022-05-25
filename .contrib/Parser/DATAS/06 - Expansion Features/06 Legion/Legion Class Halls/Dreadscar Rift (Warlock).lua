@@ -52,7 +52,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								["sourceQuests"] = { 44097 },	-- Nearly Satisfactory Eredar Head
 								["g"] = {
 									artifact(937),	-- Skull of the Man'ari
-									-- artifact(937),	-- Spine of Thal'kiel
+									artifact(937),	-- Spine of Thal'kiel
 								},
 							}),
 						},
@@ -152,37 +152,41 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["provider"] = { "n", 100729 },	-- Revil Kost
 							["coord"] = { 52.3, 34.4, DEADWIND_PASS },
 						}),
-						-- A bit unsure about these quests
-						q(40623, {	-- The Dark Riders
+						q(40623, {	-- The Dark Riders (Good)
+							["description"] = "Obtainable if you are good to Revil Kost",
 							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
-								artifact(294),	-- Ulthalesh, the Deadwind Harvester
+								i(128942, {	-- Ulthalesh, the Deadwind Harvester
+									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+								}),
 							},
 						}),
-						q(41155, {	-- The Dark Riders
+						q(41155, {	-- The Dark Riders (Bad)
+							["description"] = "Obtainable if you attack Revil Kost",
 							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
-								artifact(294),	-- Ulthalesh, the Deadwind Harvester
+								i(128942, {	-- Ulthalesh, the Deadwind Harvester
+									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+								}),
 							},
 						}),
-						-- Ask Darkal about these?
-						q(41156, {	-- The Power Possessed
-							["sourceQuests"] = { 41155 },	-- The Dark Riders
+						q(40712, {	-- The Power Possessed (Good)
+							["description"] = "Obtainable if you are good to Revil Kost",
+							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
-						q(40712, {	-- The Power Possessed
-							["sourceQuests"] = { 40623 },	-- The Dark Riders
+						q(41156, {	-- The Power Possessed (Bad)
+							["description"] = "Obtainable if you attack Revil Kost",
+							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 					}),
 					cl(WARLOCK, DEMONOLOGY, {
@@ -208,8 +212,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["provider"] = { "n", 106610 },	-- Calydus
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["g"] = {
-								artifact(811),	-- Skull of the Man'ari
-								artifact(811),	-- Spine of Thal'kiel
+								i(128943, {	-- Skull of the Man'ari
+									artifact(811),	-- Skull of the Man'ari
+								}),
+								i(137246, {	-- Spine of Thal'kiel
+									artifact(811),	-- Spine of Thal'kiel
+								}),
 							},
 						}),
 					}),
@@ -237,15 +245,17 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["provider"] = { "n", 109838 },	-- Calydus
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["g"] = {
-								artifact(188),	-- Scepter of Sargeras
+								i(128941, {	-- Scepter of Sargeras
+									artifact(188),	-- Scepter of Sargeras
+								}),
 							},
 						}),
 					}),
 					-- Introduction
 					q(40731, {	-- The Heart of the Dreadscar
-						["sourceQuests"] = { -- ???
-							40712,	-- The Power Possessed
-							41156,	-- The Power Possessed
+						["sourceQuests"] = {
+							40712,	-- The Power Possessed (Good)
+							41156,	-- The Power Possessed (Bad)
 							42125,	-- Dark Whispers
 							43254,	-- Ritual Ruination
 						},
@@ -364,7 +374,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["maps"] = { 748 },	-- Niskara (Scenario Map)
 						["g"] = {
 							artifact(813),	-- Skull of the Man'ari
-							-- artifact(813),	-- Spine of Thal'kiel
+							artifact(813),	-- Spine of Thal'kiel
 							artifact(322),	-- Ulthalesh, the Deadwind Harvester
 							artifact(191),	-- Scepter of Sargeras
 						},
@@ -474,6 +484,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
+						["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 					}),
 					q(42103, {	-- Let it Feed
 						["sourceQuests"] = {
@@ -557,7 +568,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							artifact(334),	-- Ulthalesh, the Deadwind Harvester
 							artifact(815),	-- Skull of the Man'ari
-							-- artifact(815),	-- Spine of Thal'kiel
+							artifact(815),	-- Spine of Thal'kiel
 							artifact(194),	-- Scepter of Sargeras
 							ach(10746),	-- Forged for Battle
 						}
@@ -573,7 +584,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(45990, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45989,	-- An Urgent Warning
 						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder <Mission Strategist>
-						["coord"] = { 66.6, 46.6, SKYHOLD },
+						["coord"] = { 66.6, 46.6, DREADSCAR_RIFT },
 						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
 					}),
 					-- 7.2.0
@@ -581,16 +592,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45024, {	-- Cult Culling
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45025, {	-- Stealing the Source of Power
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45026, {	-- Expending Fel Energy
 						["sourceQuests"] = {
@@ -599,36 +613,41 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45794, {	-- Informing the Council
 						["sourceQuests"] = { 45026 },	-- Expending Fel Energy
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45027, {	-- To the Broken Shore
 						["sourceQuests"] = { 45794 },	-- Informing the Council
 						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(45028, {	-- The Fate of Kanrethad
 						["sourceQuests"] = { 45027 },	-- To the Broken Shore
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 81.1, 49.6, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46020, {	-- Crystal Containment
 						["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 78.1, 39.7, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46047, {	-- Champion: Kanrethad Ebonlocke
+					q(46047, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Kanrethad Ebonlocke
 						["sourceQuests"] = { 46020 },	-- Crystal Containment
 						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
 						["g"] = {
 							follower(997),	-- Kanrethad Ebonlocke
 						},
-					}),
-					q(46316, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
+					})),
+					q(46316, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
 						["description"] = "This quest is only available if you completed the Green Fire Questline.",
 						["sourceQuests"] = {
 							46020,	-- Crystal Containment
@@ -639,7 +658,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							follower(997),	-- Kanrethad Ebonlocke
 						},
-					}),
+					})),
 					q(46237, {	-- Bloodbringer's Missive
 						["sourceQuests"] = {
 							46047,	-- Champion: Kanrethad Ebonlocke
@@ -647,21 +666,30 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46239, {	-- Fel to the Core
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46240, {	-- Give Me Fuel, Give Me Fire
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46238, {	-- If You Build It
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
+						["cost"] = {
+							{ "i", 123919, 5 },	-- 5xFelslate
+							{ "i", 130175, 3 },	-- 3xChaotic Spinel
+							{ "i", 127845, 1 },	-- 1xUnbending Potion
+						},
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46241, {	-- The Minions of Hel'nurath
 						["sourceQuests"] = {
@@ -671,19 +699,21 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
+						["timeline"] = { "added 7.2.0" },
 					}),
 					q(46242, {	-- The Dreadlord's Calling
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["maps"] = { BROKEN_SHORE },
+						["timeline"] = { "added 7.2.0" },
 					}),
-					q(46243, {	-- The Wrathsteed of Xoroth
+					q(46243, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- The Wrathsteed of Xoroth
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
 						["g"] = {
 							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
 						},
-					}),
+					})),
 					-- Misc
 					q(43887, {	-- Hitting the Books
 						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
@@ -778,6 +808,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(143637, {	-- Netherlord's Brimstone Wrathsteed (MOUNT!)
 								["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["timeline"] = { "added 7.2.0" },
 							}),
 						},
 					}),
@@ -830,12 +861,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 -- 41154??
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	q(40514),	-- Warlock Order Hall - Revil convinced
 	q(40686),	-- Warlock Order Hall - Affliction chosen first
 	q(40687),	-- Destruction Chosen (first)
 	q(42084),	-- Selecting a Sixth: Kira
 	q(42085),	-- Selecting a Sixth: Lulubelle
+	q(42203),	-- Using Portal to Scenario during Dark Whispers (42125)
+	q(42205),	-- Using Portal to Scenario during Dark Whispers (42125)
 	q(40688),	-- Warlock Order Hall - Choosing demonology artifact first
 	q(43982),	-- Warlock Order Hall - Demonology chosen second
 	q(43981),	-- Warlock Order Hall - Aff chosen second
@@ -857,9 +890,9 @@ root("HiddenQuestTriggers", {
 });
 
 -- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
+-- root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+-- 	n(QUESTS, {
 
-	}),
-}));
+-- 	}),
+-- }));
 -- #endif

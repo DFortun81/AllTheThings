@@ -7,13 +7,13 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(163981),	-- Frenzied Feltalon
+				i(163981),	-- Frenzied Feltalon (MOUNT!)
 			},
 		}),
 		ach(12934, {	-- A Horde of Hoofbeats (H, 400 mounts)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(163981),	-- Frenzied Feltalon
+				i(163981),	-- Frenzied Feltalon (MOUNT!)
 			},
 		}),
 		ach(12932, {	-- No Stable Big Enough (A, 350 mounts)

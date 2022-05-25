@@ -142,63 +142,63 @@ root("Zones", {
 				}),
 				n(QUESTS, {
 					q(10197, {	-- A Convincing Disguise
-						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10652,	-- Behind Enemy Lines
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10202, {	-- A Defector
-						["provider"] = { "n", 19469 },	-- Magistrix Larynna
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10341,	-- Kick Them While They're Down
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10508, {	-- A Gift for Voren'thal
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10432,	-- Damning Evidence
 						-- May also require Shutting Down Manaforge Ara.
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10264, {	-- Assisting the Consortium (The Scryers)
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 10186 },	-- You're Hired!
+						["sourceQuest"] = 10186,	-- You're Hired!
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10652, {	-- Behind Enemy Lines
-						["provider"] = { "n", 20162 },	-- Veronia
+						["qg"] = 20162,	-- Veronia
 						["coord"] = { 33.8, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10194,	-- Stealth Flight
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10204, {	-- Bloodgem Crystals
-						["provider"] = { "n", 19469 },	-- Magistrix Larynna
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
-						["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+						["sourceQuest"] = 10189,	-- Manaforge B'naar
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10509, {	-- Bound for Glory
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10508,	-- A Gift for Voren'thal
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10432, {	-- Damning Evidence
-						["provider"] = { "n", 20920 },	-- Magister Theledorn
+						["qg"] = 20920,	-- Magister Theledorn
 						["coord"] = { 26.2, 41.6, NETHERSTORM },
 						["sourceQuest"] = 10202,	-- A Defector
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10193, {	-- High Value Targets
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
-						["sourceQuests"] = { 10189 },	-- Manaforge B'naar
+						["sourceQuest"] = 10189,	-- Manaforge B'naar
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10198, {	-- Information Gathering
-						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10197,	-- A Convincing Disguise
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -210,7 +210,7 @@ root("Zones", {
 						},
 					}),
 					q(10341, {	-- Kick Them While They're Down
-						["provider"] = { "n", 19469 },	-- Magistrix Larynna
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -222,7 +222,7 @@ root("Zones", {
 						},
 					}),
 					q(10189, {	-- Manaforge B'naar
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuests"] = {
 							10552,	-- Allegiance to the Scryers
@@ -231,37 +231,37 @@ root("Zones", {
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10200, {	-- Return to Thalodien
-						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10329, {	-- Shutting Down Manaforge B'naar
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10193,	-- High Value Targets
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10330, {	-- Shutting Down Manaforge Coruu
-						["provider"] = { "n", 19840 },	-- Caledis Brightdawn
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10198,	-- Information Gathering
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10338, {	-- Shutting Down Manaforge Duro
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10200,	-- Return to Thalodien
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10194, {	-- Stealth Flight
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
-						["sourceQuests"] = { 10329 },	-- Shutting Down Manaforge B'naar
+						["sourceQuest"] = 10329,	-- Shutting Down Manaforge B'naar
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10365, {	-- Shutting Down Manaforge Ara
-						["provider"] = { "n", 19468 },	-- Spymaster Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -271,7 +271,7 @@ root("Zones", {
 						},
 					}),
 					q(10507, {	-- Turning Point
-						["provider"] = { "n", 18530 },	-- Voren'thal the Seer
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 						["sourceQuest"] = 10509,	-- Bound for Glory
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
@@ -284,23 +284,23 @@ root("Zones", {
 						},
 					}),
 					q(10970, {	-- A Mission of Mercy
-						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["minReputation"] = { 933, HONORED },
 					}),
 					q(10973, {	-- A Thousand Worlds
-						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["minReputation"] = { 933, REVERED },
 					}),
 					q(10308, {	-- Another Heap of Ethereals
-						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["repeatable"] = true,
 						["description"] = "Gives reputation through Exalted.",
 						["sourceQuest"] = 10262,	-- A Heap of Ethereals
 					}),
 					q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10971,	-- Ethereum Secrets
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["description"] = "Gives reputation through Exalted.",
@@ -310,12 +310,12 @@ root("Zones", {
 						},
 					}),
 					q(10971, {	-- Ethereum Secrets
-						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["sourceQuest"] = 10970,	-- A Mission of Mercy
 					}),
 					q(10969, {	-- Seek Out Ameer
-						["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
+						["qg"] = 22899,	-- Protectorate Advisor Rahim
 						["coord"] = { 45.8, 36.2, NETHERSTORM },
 						["minReputation"] = { 933, HONORED },
 						["isBreadcrumb"] = true,	-- for "A Mission of Mercy"
@@ -330,13 +330,13 @@ root("Zones", {
 						},
 					}),
 					q(10380, {	-- A Dark Pact
-						["provider"] = { "n", 20780 },	-- Kaylaan
+						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10431,	-- Outside Assistance
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10381, {	-- Aldor No More
-						["provider"] = { "n", 20780 },	-- Kaylaan
+						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10380,	-- A Dark Pact
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -348,14 +348,14 @@ root("Zones", {
 						},
 					}),
 					q(10263, {	-- Assisting the Consortium (The Aldor)
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = { 10186 },	-- You're Hired!
+						["sourceQuest"] = 10186,	-- You're Hired!
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10246, {	-- Attack on Manaforge Coruu
-						["provider"] = { "n", 19466 },	-- Exarch Orelis
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -367,7 +367,7 @@ root("Zones", {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10409, {	-- Deathblow to the Legion
-						["provider"] = { "n", 18538 },	-- Ishanah
+						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10410,	-- Ishanah's Help
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -380,7 +380,7 @@ root("Zones", {
 						},
 					}),
 					q(10241, {	-- Distraction at Manaforge B'naar
-						["provider"] = { "n", 19466 },	-- Exarch Orelis
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["sourceQuests"] = {
@@ -389,13 +389,13 @@ root("Zones", {
 						},
 					}),
 					q(10410, {	-- Ishanah's Help
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10407,	-- Socrethar's Shadow
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10313, {	-- Measuring Warp Energies
-						["provider"] = { "n", 19466 },	-- Exarch Orelis
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -407,19 +407,19 @@ root("Zones", {
 						},
 					}),
 					q(10243, {	-- Naaru Technology
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10431, {	-- Outside Assistance
-						["provider"] = { "n", 19466 },	-- Exarch Orelis
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10328,	-- Sunfury Briefings
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10323, {	-- Shutting Down Manaforge Ara
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
@@ -429,25 +429,25 @@ root("Zones", {
 						},
 					}),
 					q(10299, {	-- Shutting Down Manaforge B'naar
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10245,	-- B'naar Console Transcription
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10321, {	-- Shutting Down Manaforge Coruu
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10322, {	-- Shutting Down Manaforge Duro
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10407, {	-- Socrethar's Shadow
-						["provider"] = { "n", 19467 },	-- Anchorite Karja
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuests"] = {
 							10323,	-- Shutting Down Manaforge Ara
@@ -456,13 +456,13 @@ root("Zones", {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10328, {	-- Sunfury Briefings
-						["provider"] = { "n", 19466 },	-- Exarch Orelis
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10185, {	-- A Fate Worse Than Death
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.6, 86.2, NETHERSTORM },
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 						["groups"] = {
@@ -473,9 +473,9 @@ root("Zones", {
 						},
 					}),
 					q(10262, {	-- A Heap of Ethereals
-						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
-						["sourceQuests"] = { 10265 },	-- Consortium Crystal Collection
+						["sourceQuest"] = 10265,	-- Consortium Crystal Collection
 					}),
 					q(10314, {	-- A Lingering Suspicion
 						["provider"] = { "o", 184300 },	-- Necromantic Focus
@@ -483,11 +483,11 @@ root("Zones", {
 						["sourceQuest"] = 10316,	-- Searching for Evidence
 					}),
 					q(10270, {	-- A Not-So-Modest Proposal
-						["provider"] = { "n", 20071 },	-- Wind Trader Marid
+						["qg"] = 20071,	-- Wind Trader Marid
 						["coord"] = { 58.3, 31.7, NETHERSTORM },
 					}),
 					q(10272, {	-- A Promising Start
-						["provider"] = { "n", 20110 },	-- Tyri
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["sourceQuest"] = 10281,	-- Formal Introductions
 					}),
@@ -497,17 +497,17 @@ root("Zones", {
 						["coord"] = { 58.6, 88.6, NETHERSTORM },
 					}),
 					q(10436, {	-- All Clear!
-						["provider"] = { "n", 20913 },	-- Tashar
+						["qg"] = 20913,	-- Tashar
 						["coord"] = { 44.7, 14.6, NETHERSTORM },
 						["sourceQuest"] = 10430,	-- Testing the Prototype
 					}),
 					q(10268, {	-- An Audience with the Prince
-						["provider"] = { "n", 20066 },	-- Gahruj
+						["qg"] = 20066,	-- Gahruj
 						["coord"] = { 46.7, 56.9, NETHERSTORM },
 						["sourceQuest"] = 10267,	-- Rightful Repossession
 					}),
 					q(10176, {	-- Ar'kelos the Guardian
-						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10209,	-- Summoner Kanthin's Prize
 						["groups"] = {
 							i(29777),	-- Cloak of the Valiant Defender
@@ -517,7 +517,7 @@ root("Zones", {
 						},
 					}),
 					q(10353, {	-- Arconus the Insatiable
-						["provider"] = { "n", 20552 },	-- Agent Ya-six
+						["qg"] = 20552,	-- Agent Ya-six
 						["coord"] = { 60.9, 41.5, NETHERSTORM },
 						["groups"] = {
 							i(30329),	-- Flesh Handler's Headpiece
@@ -527,9 +527,9 @@ root("Zones", {
 						},
 					}),
 					q(10249, {	-- Back to the Chief!
-						["provider"] = { "n", 19832 },	-- Doctor Vomisa, Ph.T.
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["coord"] = { 37.3, 63.6, NETHERSTORM },
-						["sourceQuests"] = { 10248 },	-- You, Robot
+						["sourceQuest"] = 10248,	-- You, Robot
 						["groups"] = {
 							i(134021, {	-- X-52 Rocket Helmet (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
@@ -548,7 +548,7 @@ root("Zones", {
 						["coord"] = { 60.6, 87.6, NETHERSTORM },
 					}),
 					q(10924, {	-- Bloody Imp-ossible!
-						["provider"] = { "n", 22479 },	-- Sab'aoth
+						["qg"] = 22479,	-- Sab'aoth
 						["coord"] = { 66.4, 67.2, NETHERSTORM },
 					}),
 					q(10701, {	-- Breaking Down Netherock
@@ -562,7 +562,7 @@ root("Zones", {
 						},
 					}),
 					q(10240, {	-- Building a Perimeter
-						["provider"] = { "n", 19489 },	-- Lieutenant-Sorcerer Morran
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10239,	-- Potential Energy Source
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["groups"] = {
@@ -578,7 +578,7 @@ root("Zones", {
 						["coord"] = { 59.6, 87.6, NETHERSTORM },
 					}),
 					q(10422, {	-- Captain Tyralius
-						["provider"] = { "n", 20450 },	-- Flesh Handler Viridius
+						["qg"] = 20450,	-- Flesh Handler Viridius
 						["cr"] = 20770,	-- Warden Icoshock
 						["coords"] = {
 							{ 58.6, 31.7, NETHERSTORM },
@@ -587,7 +587,7 @@ root("Zones", {
 						},
 					}),
 					q(10319, {	-- Capturing the Phylactery
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10314,	-- A Lingering Suspicion
 					}),
@@ -596,7 +596,7 @@ root("Zones", {
 						["coord"] = { 59.8, 85.6, NETHERSTORM },
 					}),
 					q(10265, {	-- Consortium Crystal Collection
-						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["sourceQuests"] = {
 							10263,	-- Assisting the Consortium (The Aldor)
@@ -604,26 +604,26 @@ root("Zones", {
 						},
 					}),
 					q(10427, {	-- Creatures of the Eco-Domes
-						["provider"] = { "n", 20871 },	-- Aurine Moonblaze
+						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 						["sourceQuest"] = 10426,	-- Flora of the Eco-Domes
 					}),
 					q(10174, {	-- Curse of the Violet Tower
-						["provider"] = { "n", 19217 },	-- Ravandwyr
+						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
 						["sourceQuest"] = 10300,	-- Rebuilding the Staff
 					}),
 					q(10418, {	-- Deal With the Saboteurs
-						["provider"] = { "n", 20810 },	-- Mehrdad
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
 						["sourceQuest"] = 10417,	-- Run a Diagnostic!
 					}),
 					q(10317, {	-- Dealing with the Foreman
-						["provider"] = { "n", 20112 },	-- Wind Trader Tuluman
+						["qg"] = 20112,	-- Wind Trader Tuluman
 						["coord"] = { 34.6, 37.9, NETHERSTORM },
 					}),
 					q(10318, {	-- Dealing with the Overmaster
-						["provider"] = { "n", 20393 },	-- Foreman Sundown
+						["qg"] = 20393,	-- Foreman Sundown
 						["coord"] = { 26.4, 42.3, NETHERSTORM },
 						["sourceQuest"] = 10317,	-- Dealing with the Foreman
 						["groups"] = {
@@ -634,7 +634,7 @@ root("Zones", {
 						},
 					}),
 					q(10235, {	-- Declawing Doomclaw
-						["provider"] = { "n", 19728 },	-- Mama Wheeler
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["sourceQuest"] = 10234,	-- One Demon's Trash...
 						["groups"] = {
@@ -644,7 +644,7 @@ root("Zones", {
 						},
 					}),
 					q(10406, {	-- Delivering the Message
-						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10405,	-- S-A-B-O-T-A-G-E
 						["groups"] = {
@@ -655,7 +655,7 @@ root("Zones", {
 						},
 					}),
 					q(10320, {	-- Destroy Naberius!
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10319,	-- Capturing the Phylactery
 						["groups"] = {
@@ -666,12 +666,12 @@ root("Zones", {
 						},
 					}),
 					q(10424, {	-- Diagnosis: Critical
-						["provider"] = { "n", 20811 },	-- Ghabar
+						["qg"] = 20811,	-- Ghabar
 						["coord"] = { 43.5, 35.1, NETHERSTORM },
 						["sourceQuest"] = 10423,	-- To the Stormspire
 					}),
 					q(10439, {	-- Dimensius the All-Devouring
-						["provider"] = { "n", 20907 },	-- Professor Dabiri
+						["qg"] = 20907,	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 						["sourceQuest"] = 10438,	-- On Nethery Wings
 						["groups"] = {
@@ -682,12 +682,12 @@ root("Zones", {
 						},
 					}),
 					q(10247, {	-- Doctor Vomisa, Ph.T.
-						["provider"] = { "n", 19570 },	-- Rocket-Chief Fuselage
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["sourceQuest"] = 10237,	-- Warn Area 52!
 					}),
 					q(10223, {	-- Down With Daellis
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10222,	-- The Sunfury Garrison
 						["groups"] = {
@@ -698,7 +698,7 @@ root("Zones", {
 						},
 					}),
 					q(10221, {	-- Dr. Boom!
-						["provider"] = { "n", 19634 },	-- Lead Sapper Blastfizzle
+						["qg"] = 19634,	-- Lead Sapper Blastfizzle
 						["coord"] = { 34.2, 68.0, NETHERSTORM },
 						["sourceQuest"] = 10203,	-- Invaluable Asset Zapping
 						["groups"] = {
@@ -709,15 +709,15 @@ root("Zones", {
 						},
 					}),
 					q(10311, {	-- Drijya Needs Your Help
-						["provider"] = { "n", 20066 },	-- Gahruj
+						["qg"] = 20066,	-- Gahruj
 						["isBreadcrumb"] = true,
 					}),
 					q(10411, {	-- Electro-Shock Goodness!
-						["provider"] = { "n", 20449 },	-- Researcher Navuud
+						["qg"] = 20449,	-- Researcher Navuud
 						["coord"] = { 59.2, 32.6, NETHERSTORM },
 					}),
 					q(10226, {	-- Elemental Power Extraction
-						["provider"] = { "n", 19709 },	-- Chief Engineer Trep
+						["qg"] = 19709,	-- Chief Engineer Trep
 						["coord"] = { 32.4, 66.8, NETHERSTORM },
 						["sourceQuest"] = 10224,	-- Essence for the Engines
 						["groups"] = {
@@ -728,7 +728,7 @@ root("Zones", {
 						},
 					}),
 					q(10425, {	-- Escape from the Staging Grounds
-						["provider"] = { "n", 20763 },	-- Captured Protectorate Vanguard
+						["qg"] = 20763,	-- Captured Protectorate Vanguard
 						["coord"] = { 57.0, 37.6, NETHERSTORM },
 						["groups"] = {
 							i(30331),	-- Diviner's Cinch
@@ -738,51 +738,51 @@ root("Zones", {
 						},
 					}),
 					q(10224, {	-- Essence for the Engines
-						["provider"] = { "n", 19709 },	-- Chief Engineer Trep
+						["qg"] = 19709,	-- Chief Engineer Trep
 						["coord"] = { 32.4, 66.8, NETHERSTORM },
 						["sourceQuest"] = 10225,	-- Report to Engineering
 					}),
 					q(10384, {	-- Ethereum Data
-						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10339,	-- The Ethereum
 					}),
 					q(10855, {	-- Fel Reavers, No Thanks!
-						["provider"] = { "n", 20471 },	-- Nether-Stalker Nauthis
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 					}),
 					q(10256, {	-- Finding the Keymaster
-						["provider"] = { "n", 19481 },	-- Archmage Vargoth
+						["qg"] = 19481,	-- Archmage Vargoth
 						["coord"] = { 58.3, 86.4, NETHERSTORM },
 						["sourceQuest"] = 10176,	-- Ar'kelos the Guardian
 					}),
 					q(10426, {	-- Flora of the Eco-Domes
-						["provider"] = { "n", 20871 },	-- Aurine Moonblaze
+						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 					}),
 					q(10281, {	-- Formal Introductions
-						["provider"] = { "n", 20154 },	-- Shrouded Figure
+						["qg"] = 20154,	-- Shrouded Figure
 						["coord"] = { 70.9, 38.8, NETHERSTORM },
 						["sourceQuest"] = 10271,	-- Getting Down to Business
 					}),
 					q(10276, {	-- Full Triangle
-						["provider"] = { "n", 20112 },	-- Wind Trader Tuluman
+						["qg"] = 20112,	-- Wind Trader Tuluman
 						["coord"] = { 34.6, 37.9, NETHERSTORM },
-						["sourceQuests"] = { 10275 },	-- Triangulation Point Two
+						["sourceQuest"] = 10275,	-- Triangulation Point Two
 					}),
 					q(10271, {	-- Getting Down to Business
-						["provider"] = { "n", 20518 },	-- Image of Wind Trader Marid
+						["qg"] = 20518,	-- Image of Wind Trader Marid
 						["coord"] = { 71.1, 39.0, NETHERSTORM },
 						["sourceQuest"] = 10270,	-- A Not-So-Modest Proposal
 					}),
 					q(10333, {	-- Help Mama Wheeler
-						["provider"] = { "n", 19645 },	-- Papa Wheeler
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["sourceQuest"] = 10206,	-- Pick Your Part
 						["isBreadcrumb"] = true,
 					}),
 					q(10293, {	-- Hitting the Motherlode
-						["provider"] = { "n", 20067 },	-- Zuben Elgenubi
+						["qg"] = 20067,	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },
 						["sourceQuest"] = 10290,	-- In Search of Farahlite
 						["groups"] = {
@@ -792,25 +792,25 @@ root("Zones", {
 						},
 					}),
 					q(10232, {	-- In A Scrap With The Legion
-						["provider"] = { "n", 19645 },	-- Papa Wheeler
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["sourceQuest"] = 10206,	-- Pick Your Part
 					}),
 					q(10290, {	-- In Search of Farahlite
-						["provider"] = { "n", 20067 },	-- Zuben Elgenubi
+						["qg"] = 20067,	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },
 					}),
 					q(10331, {	-- Indispensable Tools
-						["provider"] = { "n", 20463 },	-- Apprentice Andrethan
+						["qg"] = 20463,	-- Apprentice Andrethan
 						["coord"] = { 57.7, 85.2, NETHERSTORM },
 					}),
 					q(10203, {	-- Invaluable Asset Zapping
-						["provider"] = { "n", 19570 },	-- Rocket-Chief Fuselage
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["sourceQuest"] = 10186,	-- You're Hired!
 					}),
 					q(10309, {	-- It's a Fel Reaver, But with Heart
-						["provider"] = { "n", 19690 },	-- N. D. Meancamp
+						["qg"] = 19690,	-- N. D. Meancamp
 						["coord"] = { 26.8, 77.0, NETHERSTORM },
 						["groups"] = {
 							i(30268),	-- Heap Leggings
@@ -819,19 +819,19 @@ root("Zones", {
 						},
 					}),
 					q(10433, {	-- Keeping Up Appearances
-						["provider"] = { "n", 20921 },	-- Shauly Pore
+						["qg"] = 20921,	-- Shauly Pore
 						["coord"] = { 46.5, 56.0, NETHERSTORM },
 					}),
 					q(10192, {	-- Krasus's Compendium
-						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10188,	-- The Sigil of Krasus
 					}),
 					q(10184, {	-- Malevolent Remnants
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 					}),
 					q(10191, {	-- Mark V is Alive!
-						["provider"] = { "n", 19589 },	-- Maxx A. Million Mk. V
+						["qg"] = 19589,	-- Maxx A. Million Mk. V
 						["coord"] = { 31.6, 56.6, NETHERSTORM },
 						["groups"] = {
 							i(30226),	-- Alley's Recurve
@@ -844,7 +844,7 @@ root("Zones", {
 						},
 					}),
 					q(10332, {	-- Master Smith Rhonsus
-						["provider"] = { "n", 20463 },	-- Apprentice Andrethan
+						["qg"] = 20463,	-- Apprentice Andrethan
 						["coord"] = { 57.7, 85.2, NETHERSTORM },
 						["sourceQuest"] = 10331,	-- Indispensable Tools
 						["groups"] = {
@@ -855,16 +855,16 @@ root("Zones", {
 						},
 					}),
 					q(10334, {	-- Needs More Cowbell
-						["provider"] = { "n", 20464 },	-- Thadell
+						["qg"] = 20464,	-- Thadell
 						["coord"] = { 57.7, 84.9, NETHERSTORM },
 					}),
 					q(10850, {	-- Nether Gas In a Fel Fire Engine
-						["provider"] = { "n", 22293 },	-- Inactive Fel Reaver
+						["qg"] = 22293,	-- Inactive Fel Reaver
 						["sourceQuest"] = 10855,	-- Fel Reavers, No Thanks!
 						["repeatable"] = true,
 					}),
 					q(10408, {	-- Nexus-King Salhadaar
-						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10406,	-- Delivering the Message
 						["groups"] = {
@@ -876,30 +876,30 @@ root("Zones", {
 						},
 					}),
 					q(10315, {	-- Neutralizing the Nethermancers
-						["provider"] = { "n", 20341 },	-- Nether-Stalker Oazul
+						["qg"] = 20341,	-- Nether-Stalker Oazul
 						["coord"] = { 34.5, 37.8, NETHERSTORM },
 					}),
 					q(10348, {	-- New Opportunities
-						["provider"] = { "n", 20810 },	-- Mehrdad
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
 					}),
 					q(10183, {	-- Off To Area 52
-						["provider"] = { "n", 19569 },	-- Netherologist Coppernickels
+						["qg"] = 19569,	-- Netherologist Coppernickels
 						["coord"] = { 21.2, 55.6, NETHERSTORM },
 						["isBreadcrumb"] = true,	-- for "You're Hired!"
 					}),
 					q(10438, {	-- On Nethery Wings
-						["provider"] = { "n", 20907 },	-- Professor Dabiri
+						["qg"] = 20907,	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 						["sourceQuest"] = 10437,	-- Recipe for Destruction
 					}),
 					q(10234, {	-- One Demon's Trash...
-						["provider"] = { "n", 19728 },	-- Mama Wheeler
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["sourceQuest"] = 10333,	-- Help Mama Wheeler
 					}),
 					q(10206, {	-- Pick Your Part
-						["provider"] = { "n", 19645 },	-- Papa Wheeler
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["sourceQuest"] = 10265,	-- Consortium Crystal Collection
 						["groups"] = {
@@ -909,42 +909,42 @@ root("Zones", {
 						},
 					}),
 					q(10239, {	-- Potential Energy Source
-						["provider"] = { "n", 19489 },	-- Lieutenant-Sorcerer Morran
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10343,	-- The Unending Invasion
 					}),
 					q(10385, {	-- Potential for Brain Damage = High
-						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10384,	-- Ethereum Data
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 					}),
 					q(10300, {	-- Rebuilding the Staff
-						["provider"] = { "n", 19217 },	-- Ravandwyr
+						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
 						["sourceQuest"] = 10173,	-- The Archmage's Staff
 					}),
 					q(10190, {	-- Recharging the Batteries
-						["provider"] = { "n", 19578 },	-- Bot-Specialist Alley
+						["qg"] = 19578,	-- Bot-Specialist Alley
 						["coord"] = { 31.5, 56.6, NETHERSTORM },
 					}),
 					q(10437, {	-- Recipe for Destruction
-						["provider"] = { "n", 20907 },	-- Professor Dabiri
+						["qg"] = 20907,	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 					}),
 					q(10225, {	-- Report to Engineering
-						["provider"] = { "n", 19570 },	-- Rocket-Chief Fuselage
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["sourceQuest"] = 10186,	-- You're Hired!
 					}),
 					q(10266, {	-- Request for Assistance
-						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay-ji
+						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10205,	-- Warp-Raider Nesaad
 					}),
 					q(10435, {	-- Retrieving the Goods
-						["provider"] = { "n", 20205 },	-- Audi the Needle
+						["qg"] = 20205,	-- Audi the Needle
 						["coord"] = { 44.7, 36.7, NETHERSTORM },
-						["sourceQuests"] = { 10434 },	-- The Dynamic Duo
+						["sourceQuest"] = 10434,	-- The Dynamic Duo
 						["groups"] = {
 							i(30284),	-- Audi's Embroidered Boots
 							i(30285),	-- B.O.O.M. Operative's Belt
@@ -953,7 +953,7 @@ root("Zones", {
 						},
 					}),
 					q(10267, {	-- Rightful Repossession
-						["provider"] = { "n", 20066 },	-- Gahruj
+						["qg"] = 20066,	-- Gahruj
 						["coord"] = { 46.7, 56.9, NETHERSTORM },
 						["sourceQuest"] = 10266,	-- Request for Assistance
 						["groups"] = {
@@ -963,16 +963,16 @@ root("Zones", {
 						},
 					}),
 					q(10417, {	-- Run a Diagnostic!
-						["provider"] = { "n", 20810 },	-- Mehrdad
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
 					}),
 					q(10405, {	-- S-A-B-O-T-A-G-E
-						["provider"] = { "n", 20482 },	-- Image of Commander Ameer
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["sourceQuest"] = 10385,	-- Potential for Brain Damage = High
 					}),
 					q(10310, {	-- Sabotage the Warp-Gate!
-						["provider"] = { "n", 20281 },	-- Drijya
+						["qg"] = 20281,	-- Drijya
 						["sourceQuest"] = 10311,	-- Drijya Needs Your Help
 						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
@@ -981,12 +981,12 @@ root("Zones", {
 						},
 					}),
 					q(10316, {	-- Searching for Evidence
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10312,	-- The Annals of Kirin'Var
 					}),
 					q(10274, {	-- Securing the Celestial Ridge
-						["provider"] = { "n", 20110 },	-- Tyri
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["sourceQuest"] = 10273,	-- Troublesome Distractions
 						["groups"] = {
@@ -997,11 +997,11 @@ root("Zones", {
 						},
 					}),
 					q(10342, {	-- Securing the Shaleskin Shale
-						["provider"] = { "n", 19617 },	-- Boots
+						["qg"] = 19617,	-- Boots
 						["coord"] = { 32.3, 63.9, NETHERSTORM },
 					}),
 					q(10280, {	-- Special Delivery to Shattrath City
-						["provider"] = { "n", 20084 },	-- Image of Nexus-Prince Haramad
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["coord"] = { 45.9, 36.0, NETHERSTORM },
 						["sourceQuest"] = 10276,	-- Full Triangle
 						["description"] = "Items do not show up on quest rewards but appearances are awarded upon turn in to A'dal.",
@@ -1012,7 +1012,7 @@ root("Zones", {
 						},
 					}),
 					q(10440, {	-- Success!
-						["provider"] = { "n", 20913 },	-- Tashar
+						["qg"] = 20913,	-- Tashar
 						["coord"] = { 44.7, 14.6, NETHERSTORM },
 						["sourceQuest"] = 10436,	-- All Clear!
 						["groups"] = {
@@ -1023,11 +1023,11 @@ root("Zones", {
 						},
 					}),
 					q(10209, {	-- Summoner Kanthin's Prize
-						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10301,	-- Unlocking the Compendium
 					}),
 					q(10335, {	-- Surveying the Ruins
-						["provider"] = { "n", 20470 },	-- Zephyrion
+						["qg"] = 20470,	-- Zephyrion
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["groups"] = {
 							i(30255),	-- Chestguard of the Stormspire
@@ -1036,7 +1036,7 @@ root("Zones", {
 						},
 					}),
 					q(10857, {	-- Teleport This!
-						["provider"] = { "n", 20471 },	-- Nether-Stalker Nauthis
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["sourceQuest"] = 10856,	-- The Best Defense
 						["groups"] = {
@@ -1047,12 +1047,12 @@ root("Zones", {
 						},
 					}),
 					q(10430, {	-- Testing the Prototype
-						["provider"] = { "n", 20811 },	-- Ghabar
+						["qg"] = 20811,	-- Ghabar
 						["coord"] = { 43.5, 35.1, NETHERSTORM },
-						["sourceQuests"] = { 10424 },	-- Diagnosis: Critical
+						["sourceQuest"] = 10424,	-- Diagnosis: Critical
 					}),
 					q(10199, {	-- That Little Extra Kick
-						["provider"] = { "n", 19617 },	-- Boots
+						["qg"] = 19617,	-- Boots
 						["coord"] = { 32.3, 63.9, NETHERSTORM },
 						["sourceQuest"] = 10342,	-- Securing the Shaleskin Shale
 						["groups"] = {
@@ -1063,25 +1063,25 @@ root("Zones", {
 						},
 					}),
 					q(10173, {	-- The Archmage's Staff
-						["provider"] = { "n", 19217 },	-- Ravandwyr
+						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
 					}),
 					q(10856, {	-- The Best Defense
-						["provider"] = { "n", 20471 },	-- Nether-Stalker Nauthis
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["sourceQuest"] = 10855,	-- Fel Reavers, No Thanks!
 					}),
 					q(10434, {	-- The Dynamic Duo
-						["provider"] = { "n", 20921 },	-- Shauly Pore
+						["qg"] = 20921,	-- Shauly Pore
 						["coord"] = { 46.5, 56.0, NETHERSTORM },
 						["sourceQuest"] = 10433,	-- Keeping Up Appearances
 					}),
 					q(10339, {	-- The Ethereum
-						["provider"] = { "n", 20448 },	-- Commander Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.4, 32.2, NETHERSTORM },
 					}),
 					q(10345, {	-- The Flesh Lies...
-						["provider"] = { "n", 20551 },	-- Agent Araxes
+						["qg"] = 20551,	-- Agent Araxes
 						["coord"] = { 59.4, 45.0, NETHERSTORM },
 						["groups"] = {
 							i(30519),	-- Boots of the Nexus Warden
@@ -1101,11 +1101,11 @@ root("Zones", {
 						},
 					}),
 					q(10336, {	-- The Minions of Culuthas
-						["provider"] = { "n", 20471 },	-- Nether-Stalker Nauthis
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 					}),
 					q(10188, {	-- The Sigil of Krasus
-						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 						["groups"] = {
 							i(29773),	-- Battle-Mage's Helmet
@@ -1115,47 +1115,47 @@ root("Zones", {
 						},
 					}),
 					q(10222, {	-- The Sunfury Garrison
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10188,	-- The Sigil of Krasus
 					}),
 					q(10343, {	-- The Unending Invasion
-						["provider"] = { "n", 19489 },	-- Lieutenant-Sorcerer Morran
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 					}),
 					q(10312, {	-- The Annals of Kirin'Var
-						["provider"] = { "n", 19488 },	-- Custodian Dieworth
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10184,	-- Malevolent Remnants
 					}),
 					q(10423, {	-- To the Stormspire
-						["provider"] = { "n", 20810 },	-- Mehrdad
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
-						["sourceQuests"] = { 10418 },	-- Deal With the Saboteurs
+						["sourceQuest"] = 10418,	-- Deal With the Saboteurs
 					}),
 					q(10233, {	-- Torching Sunfury Hold
-						["provider"] = { "n", 19489 },	-- Lieutenant-Sorcerer Morran
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["sourceQuest"] = 10192,	-- Krasus's Compendium
 					}),
 					q(10269, {	-- Triangulation Point One
-						["provider"] = { "n", 20084 },	-- Image of Nexus-Prince Haramad
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["coord"] = { 45.9, 36.0, NETHERSTORM },
 						["sourceQuest"] = 10268,	-- An Audience With the Prince
 					}),
 					q(10275, {	-- Triangulation Point Two
-						["provider"] = { "n", 20092 },	-- Dealer Hazzin
+						["qg"] = 20092,	-- Dealer Hazzin
 						["coord"] = { 58.3, 31.3, NETHERSTORM },
 						["sourceQuest"] = 10269,	-- Triangulation Point One
 					}),
 					q(10273, {	-- Troublesome Distractions
-						["provider"] = { "n", 20110 },	-- Tyri
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["sourceQuest"] = 10272,	-- A Promising Start
 					}),
 					q(10301, {	-- Unlocking the Compendium
-						["provider"] = { "n", 19644 },	-- Image of Archmage Vargoth
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10192,	-- Krasus's Compendium
 					}),
 					q(10261, {	-- Wanted: Annihilator Servo!
@@ -1168,12 +1168,12 @@ root("Zones", {
 						},
 					}),
 					q(10237, {	-- Warn Area 52!
-						["provider"] = { "n", 19728 },	-- Mama Wheeler
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["sourceQuest"] = 10235,	-- Declawing Doomclaw
 					}),
 					q(10205, {	-- Warp-Raider Nesaad
-						["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10262,	-- A Heap of Ethereals
 						["groups"] = {
@@ -1183,12 +1183,12 @@ root("Zones", {
 						},
 					}),
 					q(10429, {	-- When Nature Goes Too Far
-						["provider"] = { "n", 20871 },	-- Aurine Moonblaze
+						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 						["sourceQuest"] = 10427,	-- Creatures of the Eco-Domes
 					}),
 					q(10337, {	-- When the Cows Come Home
-						["provider"] = { "n", 20415 },	-- Bessy
+						["qg"] = 20415,	-- Bessy
 						["coord"] = { 59.1, 78.8, NETHERSTORM },
 						["sourceQuest"] = 10334,	-- Needs More Cowbell
 						["groups"] = {
@@ -1200,12 +1200,12 @@ root("Zones", {
 						},
 					}),
 					q(10248, {	-- You, Robot
-						["provider"] = { "n", 19832 },	-- Doctor Vomisa, Ph.T.
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["coord"] = { 37.3, 63.6, NETHERSTORM },
 						["sourceQuest"] = 10247,	-- Doctor Vomisa, Ph.T.
 					}),
 					q(10186, {	-- You're Hired!
-						["provider"] = { "n", 19570 },	-- Rocket-Chief Fuselage
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["sourceQuests"] = {
 							11042,	-- A Mystifying Vision
@@ -4738,7 +4738,7 @@ root("Zones", {
 						["cr"] = 18866,  -- Mageslayer
 					}),
 					n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)
-						["sourceQuests"] = { 10970 },	-- A Mission of Mercy (required to be able to find the prison keys)
+						["sourceQuest"] = 10970,	-- A Mission of Mercy (required to be able to find the prison keys)
 						["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",
 						["coords"] = {
 							{ 54.6, 46.6, NETHERSTORM },

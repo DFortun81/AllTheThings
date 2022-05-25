@@ -5,7 +5,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(278, {	-- Pit of Saron
 		["mapID"] = PIT_OF_SARON,
 		["coord"] = { 52.3, 89.3, ICECROWN },
-		["maps"] = { 823 },
 		["lvl"] = 78,
 		["groups"] = {
 			n(QUESTS, {

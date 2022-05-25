@@ -436,9 +436,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
-					["timeline"] = { "removed 4.0.3" },
-				})),
+				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
@@ -481,7 +479,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(18736),	-- Plaguehound Leggings
 				i(18745),	-- Sacred Cloth Leggings
 				i(18742),	-- Stratholme Militia Shoulderguard
-				
+
 				i(16681, {	-- Beaststalker's Bindings
 					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
@@ -982,9 +980,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["creatureID"] = 10435,	-- Magistrate Barthilas
 						["description"] = "If you enter from the Main Gate side, you can fight this boss first, otherwise he runs to the Slaughter House.",
 						["groups"] = {
-							i(12382, {	-- Key to the City
-								["timeline"] = { "removed 4.0.3" },
-							}),
+							i(12382),	-- Key to the City
 							i(18725),	-- Peacemaker
 							i(18727),	-- Crimson Felt Hat
 							i(13376),	-- Royal Tribunal Cloak

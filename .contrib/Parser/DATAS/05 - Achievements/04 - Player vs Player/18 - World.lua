@@ -19,7 +19,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(12605, {	-- Conqueror of Azeroth (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(163577),	-- Conquerer's Scythemaw
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
 				title(377),	-- %s, Conqueror of Azeroth
 				ach(12573, {	-- Band of Brothers
 					crit(1),		-- Honorable Kill
@@ -40,7 +40,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 		ach(12604, {	-- Conqueror of Azeroth (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(163577),	-- Conquerer's Scythemaw
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
 				title(377),	-- %s, Conqueror of Azeroth
 				ach(12573, {	-- Band of Brothers
 					crit(1),		-- Honorable Kill

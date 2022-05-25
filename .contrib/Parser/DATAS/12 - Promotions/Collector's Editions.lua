@@ -165,7 +165,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["description"] = "These rewards are available to anyone that purchases Shadowlands Heroic Edition.",
 		["timeline"] = { "added 9.0.1" },
 		["groups"] = {
-			mount(307932),	-- Ensorcelled Everwyrm
+			mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
 			n(QUESTS, {
 				q(57686, {	-- The Eternal Traveler
 					["qg"] = 158635,	-- Xolartios <Eternal Traveler>
@@ -200,8 +200,8 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["description"] = "These rewards were made available to anyone that purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",
 		["timeline"] = { "added 8.2.5.31958" },
 		["groups"] = {
-			a(mount(302361)),	-- Alabaster Stormtalon
-			h(mount(302362)),	-- Alabaster Thunderwing
+			a(mount(302361)),	-- Alabaster Stormtalon (MOUNT!)
+			h(mount(302362)),	-- Alabaster Thunderwing (MOUNT!)
 		},
 	}),
 	-- #endif
@@ -304,7 +304,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["timeline"] = { "added 8.1.0.28724" },
 		["groups"] = {
 			ach(13196),	-- Meat Marauder
-			i(164571),	-- Meat Wagon
+			i(164571),	-- Meat Wagon (MOUNT!)
 		},
 	})),
 })));

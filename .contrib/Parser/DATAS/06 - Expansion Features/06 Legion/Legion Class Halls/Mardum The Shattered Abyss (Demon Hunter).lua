@@ -7,45 +7,284 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			["g"] = {
-				n(-498, {	-- Twisting Nether
-					["description"] = "These items are only accessible to Demon Hunters who have chosen the Twisting Nether Order Advancement in their Class Hall.",
-					["questID"] = 44707,
-					["lvl"] = 105,
-					["crs"] = {
-						112385,	-- Argothel
-						112380,	-- Balzorok
-						112378,	-- Dal'grozz
-						112397,	-- Dargrol
-						112376,	-- Dro'zek
-						112377,	-- Erdu'un
-						112374,	-- Firecaller Rok'duun
-						112399,	-- Gelgothar
-						112381,	-- Gelthrak
-						112396,	-- Gloth
-						112395,	-- Gurgstok
-						112391,	-- Idra'zuul
-						112384,	-- Ko'razz
-						112394,	-- Kur'zok
-						112398,	-- Maglothar
-						112387,	-- Mordrethal
-						112389,	-- Ra'thuzek
-						112379,	-- Rek'zelok
-						112388,	-- Thel'draz
-						112375,	-- Zaldrok
-					},
-					["g"] = {
-						i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
-							artifact(571),	-- Find Hidden Artifact Skin
+				n(ARTIFACTS, {
+					cl(DEMONHUNTER, HAVOC, {
+						i(141409, {	-- Candrael's Charm
+							["description"] = "Find this item on mobs in Suramar.",
+							["maps"] = { SURAMAR },
 						}),
-						i(136900),	-- Hateful Eye (PET!)
-						i(141959),	-- Soul Flame of Alacrity
-						i(141962),	-- Soul Flame of Castigation
-						i(141958),	-- Soul Flame of Fortification
-						i(141960),	-- Soul Flame of Insight
-						i(141961),	-- Soul Flame of Rejuvenation
-					},
+						n(113935, {	-- Candrael Twinshadow
+							["description"] = "They will fling you up in the air to flying demon Downfall.",
+							["coord"] = { 28.2, 70.2, SURAMAR },
+							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
+							["g"] = {
+								n(111110, {	-- Downfall
+									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
+									["g"] = {
+										i(139549, {	-- Guise of the Deathwalker
+											artifact(982),	-- Twinblades of the Deceiver [Main Hand]
+											artifact(982),	-- Twinblades of the Deceiver [Off Hand]
+										}),
+									},
+								}),
+							},
+						}),
+					}),
+					cl(DEMONHUNTER, VENGEANCE, {
+						gt(419, {	-- Twisting Nether
+							["questID"] = 44707,
+							["crs"] = {
+								112385,	-- Argothel
+								112380,	-- Balzorok
+								112378,	-- Dal'grozz
+								112397,	-- Dargrol
+								112376,	-- Dro'zek
+								112377,	-- Erdu'un
+								112374,	-- Firecaller Rok'duun
+								112399,	-- Gelgothar
+								112381,	-- Gelthrak
+								112396,	-- Gloth
+								112395,	-- Gurgstok
+								112391,	-- Idra'zuul
+								112384,	-- Ko'razz
+								112394,	-- Kur'zok
+								112398,	-- Maglothar
+								112387,	-- Mordrethal
+								112389,	-- Ra'thuzek
+								112379,	-- Rek'zelok
+								112388,	-- Thel'draz
+								112375,	-- Zaldrok
+							},
+							["g"] = {
+								i(139550, {	-- Bulwark of the Iron Warden
+									artifact(571),	-- Aldrachi Warblades [Main Hand]
+									artifact(571),	-- Aldrachi Warblades [Off Hand]
+								}),
+							},
+						}),
+					}),
 				}),
 				n(QUESTS, {
+					q(39047, {	-- Call of the Illidari (Altruis)
+						["maps"] = { LEGION_DALARAN },
+						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+					}),
+					q(39261, {	-- Call of the Illidari (Kayn)
+						["maps"] = { LEGION_DALARAN },
+						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+					}),
+					-- Artifact
+					q(40816, {	-- The Power to Survive (Altruis)
+						["sourceQuests"] = { 39047 },	-- Call of the Illidari (Altruis)
+						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
+						["coord"] = { 74.9, 48.9, LEGION_DALARAN },
+					}),
+					q(40814, {	-- The Power to Survive (Kayn)
+						["sourceQuests"] = { 39261 },	-- Call of the Illidari (Kayn)
+						["provider"] = { "n", 99247 },	-- Kayn Sunfury
+						["coord"] = { 74.9, 48.9, LEGION_DALARAN },
+					}),
+					q(44379, {	-- In Pursuit of Power (Altruis)
+						["sourceQuests"] = { 40816 },	-- The Power to Survive (Altruis)
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["coord"] = { 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					q(44383, {	-- In Pursuit of Power (Kayn)
+						["sourceQuests"] = { 40814 },	-- The Power to Survive (Kayn)
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+						["coord"] = { 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					cl(DEMONHUNTER, HAVOC, {
+						q(41120, {	-- Making Arrangements (Altruis)
+							["sourceQuests"] = {
+								40816,	-- The Power to Survive (Altruis)
+								44379,	-- In Pursuit of Power (Altruis)
+							},
+							["providers"] = {
+								{ "n", 99254 },	-- Altruis the Sufferer
+								{ "n", 95237 },	-- Altruis the Sufferer
+							},
+							["coords"] = {
+								{ 74.9, 48.9, LEGION_DALARAN },
+								{ 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+							},
+						}),
+						q(40819, {	-- Making Arrangements (Kayn)
+							["sourceQuests"] = {
+								40814,	-- The Power to Survive (Kayn)
+								44383,	-- In Pursuit of Power (Kayn)
+							},
+							["providers"] = {
+								{ "n", 99247 },	-- Kayn Sunfury
+								{ "n", 95240 },	-- Kayn Sunfury
+							},
+							["coords"] = {
+								{ 74.9, 48.9, LEGION_DALARAN },
+								{ 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+							},
+						}),
+						q(41121, {	-- By Any Means (Altruis)
+							["sourceQuest"] = 41120,	-- Making Arrangements (Altruis)
+							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
+							["coord"] = { 65.6, 67.2, LEGION_DALARAN },
+						}),
+						q(39051, {	-- By Any Means (Kayn)
+							["sourceQuest"] = 40819,	-- Making Arrangements (Kayn)
+							["provider"] = { "n", 94902 },	-- Kayn Sunfury
+							["coord"] = { 65.3, 66.9, LEGION_DALARAN },
+						}),
+						q(41119, {	-- The Hunt (Altruis)
+							["sourceQuest"] = 41121,	-- By Any Means (Altruis)
+							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
+							["maps"] = { 723 },	-- Violet Hold
+							["g"] = {
+								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
+									artifact(26),	-- Standard
+								}),
+								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
+									artifact(26),	-- Standard
+								}),
+							},
+						}),
+						q(39247, {	-- The Hunt (Kayn)
+							["sourceQuest"] = 39051,	-- By Any Means (Kayn)
+							["provider"] = { "n", 94902 },	-- Kayn Sunfury
+							["maps"] = { 723 },	-- Violet Hold
+							["g"] = {
+								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
+									artifact(26),	-- Standard
+								}),
+								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
+									artifact(26),	-- Standard
+								}),
+							},
+						}),
+					}),
+					cl(DEMONHUNTER, VENGEANCE, {
+						q(41803, {	-- Asking a Favor (Altruis)
+							["sourceQuests"] = {
+								40816,	-- The Power to Survive (Altruis)
+								44379,	-- In Pursuit of Power (Altruis)
+							},
+							["providers"] = {
+								{ "n", 99254 },	-- Altruis the Sufferer
+								{ "n", 95237 },	-- Altruis the Sufferer
+							},
+							["coords"] = {
+								{ 74.9, 48.9, LEGION_DALARAN },
+								{ 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+							},
+						}),
+						q(40247, {	-- Asking a Favor (Kayn)
+							["sourceQuests"] = {
+								40814,	-- The Power to Survive (Kayn)
+								44383,	-- In Pursuit of Power (Kayn)
+							},
+							["providers"] = {
+								{ "n", 99247 },	-- Kayn Sunfury
+								{ "n", 95240 },	-- Kayn Sunfury
+							},
+							["coords"] = {
+								{ 74.9, 48.9, LEGION_DALARAN },
+								{ 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+							},
+						}),
+						q(41804, {	-- Ask and You Shall Receive
+							["sourceQuests"] = {
+								41803,	-- Asking a Favor (Altruis)
+								40247,	-- Asking a Favor (Kayn)
+							},
+							["provider"] = { "n", 90417 },	-- Archmage Khadgar
+							["coord"] = { 28.5, 48.3, LEGION_DALARAN },
+						}),
+						q(41806, {	-- Return to Jace
+							["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
+							["provider"] = { "n", 90417 },	-- Archmage Khadgar
+							["coord"] = { 28.8, 48.6, LEGION_DALARAN },
+						}),
+						q(41807, {	-- Establishing a Connection
+							["sourceQuests"] = { 41806 },	-- Return to Jace
+							["provider"] = { "n", 99262 },	-- Jace Darkweaver
+							["coord"] = { 74.4, 51.2, LEGION_DALARAN },
+						}),
+						q(41863, {	-- Vengeance Will Be Ours (Altruis)
+							["sourceQuests"] = { 41807 },	-- Establishing a Connection
+							["provider"] = { "n", 99254 },	-- Altruis the Sufferer
+							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
+							["g"] = {
+								i(128832, {	-- Aldrachi Warblades [Main Hand]
+									artifact(554),	-- Aldrachi Warblades [Main Hand]
+								}),
+								i(128831, {	-- Aldrachi Warblades [Off Hand]
+									artifact(554),	-- Aldrachi Warblades [Off Hand]
+								}),
+							},
+						}),
+						q(40249, {	-- Vengeance Will Be Ours (Kayn)
+							["sourceQuests"] = { 41807 },	-- Establishing a Connection
+							["provider"] = { "n", 99247 },	-- Kayn Sunfury
+							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
+							["g"] = {
+								i(128832, {	-- Aldrachi Warblades [Main Hand]
+									artifact(554),	-- Aldrachi Warblades [Main Hand]
+								}),
+								i(128831, {	-- Aldrachi Warblades [Off Hand]
+									artifact(554),	-- Aldrachi Warblades [Off Hand]
+								}),
+							},
+						}),
+					}),
+					q(42869, {	-- Eternal Vigil
+						["sourceQuests"] = {
+							41119,	-- The Hunt (Altruis)
+							39247,	-- The Hunt (Kayn)
+							41863,	-- Vengeance Will Be Ours (Altruis)
+							40249,	-- Vengeance Will Be Ours (Kayn)
+						},
+						["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
+						["coord"] = { 74.3, 46.2, LEGION_DALARAN },
+					}),
+					q(42872, {	-- Securing the Way
+						["sourceQuests"] = { 42869 },	-- Eternal Vigil
+						["provider"] = { "n", 109196 },	-- Jace Darkweaver
+						["coord"] = { 95.3, 65.1, LEGION_DALARAN },
+					}),
+					q(41033, {	-- Return to Mardum (Altruis)
+						["sourceQuest"] = 42872,	-- Securing the Way
+						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
+						["coord"] = { 94.9, 66.5, LEGION_DALARAN },
+					}),
+					q(41221, {	-- Return to Mardum (Kayn)
+						["sourceQuest"] = 42872,	-- Securing the Way
+						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
+						["coord"] = { 94.9, 66.5, LEGION_DALARAN },
+					}),
+					q(41060, {	-- Unbridled Power (Altruis)
+						["sourceQuests"] = { 41033 },	-- Return to Mardum (Altruis)
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["coord"] = { 57.7, 68.4, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					q(41037, {	-- Unbridled Power (Kayn)
+						["sourceQuests"] = { 41221 },	-- Return to Mardum (Kayn)
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+						["coord"] = { 57.7, 68.4, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					q(41070, {	-- Spoils of Victory (Altruis)
+						["sourceQuests"] = { 41060 },	-- Unbridled Power (Altruis)
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["coord"] = { 58.6, 58.9, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					q(41062, {	-- Spoils of Victory (Kayn)
+						["sourceQuests"] = { 41037 },	-- Unbridled Power (Kayn)
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+						["coord"] = { 58.6, 58.9, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+					}),
+					q(41064, {	-- Cursed Forge of the Nathrezim
+						["sourceQuests"] = {
+							41070,	-- Spoils of Victory (Altruis)
+							41062,	-- Spoils of Victory (Kayn)
+						},
+					}),
 					-- confirmed/sourced
 					q(42810, {	-- A Final Offer
 						["sourceQuests"] = { 42754 },	-- Jump-Capable
@@ -74,41 +313,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(45993, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
 					}),
-					q(41803, {	-- Asking a Favor (Altruis)
-						["maps"] = { LEGION_DALARAN },
-						["sourceQuests"] = {
-							40814,	-- The Power to Survive (if chosen first)
-							44383,	-- In Pursuit of Power (if chosen second)
-						},
-						["providers"] = {
-							{ "n", 99254 },	-- Altruis the Sufferer
-							{ "n", 108571 },	-- Altruis the Sufferer
-						},
-					}),
-					q(40247, {	-- Asking a Favor (Kayn)
-						["coord"] = { 74.5, 48.7, LEGION_DALARAN },
-						["sourceQuests"] = {
-							40814,	-- The Power to Survive (if chosen first)
-							44383,	-- In Pursuit of Power (if chosen second)
-						},
-						["providers"] = {
-							{ "n", 99247 },	-- Kayne Sunfury
-							{ "n", 108572 },	-- Kayn Sunfury
-						},
-					}),
 					q(42733, {	-- A Very Special Kind of Fuel
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 55.6, 50.1, 721 },
 						["lvl"] = 110,
-					}),
-					q(41804, {	-- Ask and You Shall Receive
-						["coord"] = { 28.5, 48.3, LEGION_DALARAN },
-						["provider"] = { "n", 90417 },	-- Archmage Khadgar
-						["sourceQuests"] = {
-							41803,	-- Asking a Favor (Altruis)
-							40247,	-- Asking a Favor (Kayn)
-						},
 					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
@@ -124,24 +333,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-					}),
-					q(41121, {	-- By Any Means
-						["coord"] = { 65.6, 67.2, LEGION_DALARAN },
-						["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-						["sourceQuest"] = 41120,	-- Making Arrangements
-					}),
-					q(39051, {	-- By Any Means
-						["coord"] = { 65.3, 66.9, LEGION_DALARAN },
-						["provider"] = { "n", 94902 },	-- Kayn Sunfury
-						["sourceQuest"] = 40819,	-- Making Arrangements
-					}),
-					q(39047, {	-- Call of the Illidari (Altruis)
-						["maps"] = { LEGION_DALARAN },
-						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
-					}),
-					q(39261, {	-- Call of the Illidari (Kayn)
-						["maps"] = { LEGION_DALARAN },
-						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
 					}),
 					q(44223, {	-- Champion Armaments
 						["coord"] = { 60.0, 43.8, 720 },
@@ -270,9 +461,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
 					}),
-					q(41064, {	-- Cursed Forge of the Nathrezim
-						["u"] = REMOVED_FROM_GAME,
-					}),
 					q(42732, {	-- Deadlier Warglaives
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
@@ -312,16 +500,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["coord"] = { 59.5, 58.0, 720 },
-					}),
-					q(41807, {	-- Establishing a Connection
-						["coord"] = { 74.4, 51.2, LEGION_DALARAN },
-						["provider"] = { "n", 99262 },	-- Jace Darkweaver
-						["sourceQuests"] = { 41806 },	-- Return to Jace
-					}),
-					q(42869, {	-- Eternal Vigil
-						["coord"] = { 74.3, 46.2, LEGION_DALARAN },
-						["sourceQuests"] = { 39247, 41119 },	-- The Hunt
-						["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 					}),
 					q(44226, {	-- Fate Favors Us
 						["provider"] = { "n", 112992 },	-- Seer Aleis
@@ -374,18 +552,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
-					}),
-					q(44379, {	-- In Pursuit of Power (Altruis)
-						["lvl"] = 120,
-						["coord"] = { 58.6, 57.8, 720 },
-						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
-						["sourceQuest"] = 41099,	-- Direct Our Wrath
-					}),
-					q(44383, {	-- In Pursuit of Power (Kayn)
-						["lvl"] = 120,
-						["coord"] = { 58.6, 57.8, 720 },
-						["provider"] = { "n", 95240 },	-- Kayn
-						["sourceQuest"] = 41069,	-- Direct Our Wrath
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
@@ -443,27 +609,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 59.3, 57.6, 720 },
 						["lvl"] = 101,
 					}),
-					q(40819, {	-- Making Arrangements (Kayn)
-						["coord"] = { 74.5, 48.7, LEGION_DALARAN },
-						["sourceQuests"] = {
-							40814,	-- The Power to Survive (if chosen first)
-							44383,	-- In Pursuit of Power (if chosen second)
-						},
-						["providers"] = {
-							{ "n", 99247 },	-- Kayn Sunfury
-							{ "n", 108572 },	-- Kayn Sunfury
-						},
-					}),
-					q(41120, {	-- Making Arrangements (Altruis)
-						["coord"] = { 74.9, 48.9, LEGION_DALARAN },
-						["sourceQuests"] = {
-							40816,	-- The Power to Survive (if chosen first)
-						},
-						["providers"] = {
-							{ "n", 99254 },	-- Altruis the Sufferer
-							{ "n", 108571 },	-- Altruis the Sufferer
-						},
-					}),
 					q(42735, {	-- Malace in Vrykul Land
 						["sourceQuests"] = { 42787 },	-- Deal With it Personally
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
@@ -519,21 +664,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 						["provider"] = { "n", 117709 },	-- Lady S'theno
 						["coord"] = { 52.1, 21.3, BROKEN_SHORE },
-					}),
-					q(41806, {	-- Return to Jace
-						["coord"] = { 28.8, 48.6, LEGION_DALARAN },
-						["provider"] = { "n", 90417 },	-- Archmage Khadgar
-						["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
-					}),
-					q(41033, {	-- Return to Mardum (Altruis)
-						["coord"] = { 94.9, 66.5, LEGION_DALARAN },
-						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
-						["sourceQuest"] = 42872,	-- Securing the Way
-					}),
-					q(41221, {	-- Return to Mardum (Kayn)
-						["coord"] = { 95.0, 65.7, LEGION_DALARAN },
-						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
-						["sourceQuests"] = { 42872 },	-- Securing the Way
 					}),
 					q(42666, {	-- Return to the Fel Hammer (Altruis)
 						["sourceQuests"] = { 41069 },	-- Direct Our Wrath
@@ -601,21 +731,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
 					}),
-					q(42872, {	-- Securing the Way
-						["coord"] = { 95.3, 65.1, LEGION_DALARAN },
-						["provider"] = { "n", 109196 },	-- Jace Darkweaver
-						["sourceQuests"] = { 42869 },	-- Eternal Vigil
-					}),
-					q(41062, {	-- Spoils of Victory (Kayn)
-						["sourceQuests"] = { 41037 },	-- Unbridled Power
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["coord"] = { 58.6, 58.9, 720 },
-					}),
-					q(41070, {	-- Spoils of Victory (Altruis)
-						["coord"] = { 58.6, 58.9, 720 },
-						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
-						["sourceQuests"] = { 41060 },	-- Unbridled Power
-					}),
 					q(42749, {	-- Strange Bedfellows
 						["sourceQuests"] = {
 							42738,	-- Rune Ruination: Runelord Ragnar
@@ -649,16 +764,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 57.5, 53.3, 720 },
 						["lvl"] = 110,
 					}),
-					q(41119, {	-- The Hunt (Altruis)
-						["maps"] = { 723 },	-- Violet Hold
-						["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-						["sourceQuest"] = 41121,	-- By Any Means (Altruis)
-					}),
-					q(39247, {	-- The Hunt (Kayn)
-						["maps"] = { 723 },	-- Violet Hold
-						["provider"] = { "n", 94902 },	-- Kayn Sunfury
-						["sourceQuest"] = 39051,	-- By Any Means (Kayn)
-					}),
 					q(41066, {	-- The Hunter's Gaze
 						["sourceQuests"] = { 41062, 41070 },	-- Spoils of Victory (Kayne/Altruis)
 						["provider"] = { "n", 95238 },	-- Allari the Souleater
@@ -675,16 +780,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 74.0, 721 },
 						["lvl"] = 110,
-					}),
-					q(40816, {	-- The Power to Survive (Altruis)
-						["coord"] = { 74.9, 48.9, LEGION_DALARAN },
-						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
-						["sourceQuests"] = { 39047 },	-- Call of the Illidari
-					}),
-					q(40814, {	-- The Power to Survive (Kayn)
-						["coord"] = { 74.9, 48.9, LEGION_DALARAN },
-						["provider"] = { "n", 99247 },	-- Kayn Sunfury
-						["sourceQuests"] = { 39261 },	-- Call of the Illidari
 					}),
 					q(44161, {	-- Things Gaardoun Needs (Altruis)
 						["sourceQuests"] = {
@@ -737,16 +832,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(139722),	-- Wristwraps of the Shattered Abyss
 						},
 					}),
-					q(41060, {	-- Unbridled Power (Altruis)
-						["coord"] = { 57.7, 68.4, 720 },
-						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
-						["sourceQuests"] = { 41033 },	-- Return to Mardum
-					}),
-					q(41037, {	-- Unbridled Power (Kayn)
-						["coord"] = { 57.7, 68.4, 720 },
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["sourceQuests"] = { 41221 },	-- Return to Mardum
-					}),
 					q(42131, {	-- Unexpected Visitors
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
@@ -771,16 +856,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
 						["sourceQuests"] = { 42749 },	-- Strange Bedfellows
 						["maps"] = { STORMHEIM },
-					}),
-					q(41863, {	-- Vengeance Will Be Ours (Altruis)
-						["coord"] = { 74.9, 49.0, LEGION_DALARAN },
-						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
-						["sourceQuests"] = { 41807 },	-- Establishing a Connection
-					}),
-					q(40249, {	-- Vengeance Will Be Ours (Kayn)
-						["coord"] = { 74.9, 49.0, LEGION_DALARAN },
-						["provider"] = { "n", 99247 },	-- Kayn Sunfury
-						["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					}),
 					q(45798, {	-- War'zuul the Provoker
 						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
@@ -807,6 +882,41 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["lvl"] = 110,
 						["g"] = {
 							i(139718),	-- Helm of the Shattered Abyss
+						},
+					}),
+				}),
+				n(SPECIAL, {
+					gt(419, {	-- Twisting Nether
+						["questID"] = 44707,
+						["crs"] = {
+							112385,	-- Argothel
+							112380,	-- Balzorok
+							112378,	-- Dal'grozz
+							112397,	-- Dargrol
+							112376,	-- Dro'zek
+							112377,	-- Erdu'un
+							112374,	-- Firecaller Rok'duun
+							112399,	-- Gelgothar
+							112381,	-- Gelthrak
+							112396,	-- Gloth
+							112395,	-- Gurgstok
+							112391,	-- Idra'zuul
+							112384,	-- Ko'razz
+							112394,	-- Kur'zok
+							112398,	-- Maglothar
+							112387,	-- Mordrethal
+							112389,	-- Ra'thuzek
+							112379,	-- Rek'zelok
+							112388,	-- Thel'draz
+							112375,	-- Zaldrok
+						},
+						["g"] = {
+							i(136900),	-- Hateful Eye (PET!)
+							i(141959),	-- Soul Flame of Alacrity
+							i(141962),	-- Soul Flame of Castigation
+							i(141958),	-- Soul Flame of Fortification
+							i(141960),	-- Soul Flame of Insight
+							i(141961),	-- Soul Flame of Rejuvenation
 						},
 					}),
 				}),

@@ -434,53 +434,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					},
 				}),
 			}),
-			n(TREASURES, sharedData({ ["repeatable"] = true }, {
-				o(375915, {	-- Glimmer of Serenity
-					["description"] = "Multiple spawn places. Usually on top of an orb.",
-					["coords"] = {
-						{ 50.0, 11.0, ZERETH_MORTIS },
-						{ 46.9, 11.2, ZERETH_MORTIS },
-						{ 64.7, 63.4, ZERETH_MORTIS },
-						{ 51.2, 28.3, ZERETH_MORTIS },
-						{ 50.7, 89.0, ZERETH_MORTIS },
-						{ 67.1, 15.9, ZERETH_MORTIS },
-						{ 43.0, 35.5, ZERETH_MORTIS },
-						{ 60.4, 25.3, ZERETH_MORTIS },
-						{ 52.9, 80.7, ZERETH_MORTIS },
-						{ 50.2, 32.2, ZERETH_MORTIS },
-						{ 67.0, 16.0, ZERETH_MORTIS },
-						{ 32.8, 39.3, ZERETH_MORTIS },
-						{ 66.3, 27.2, ZERETH_MORTIS },
-						{ 37.7, 29.1, ZERETH_MORTIS },
-						{ 61.5, 18.3, ZERETH_MORTIS },
-					},
-					["g"] = {
-						i(189168),	-- Glimmer of Serenity
-					},
-				}),
-				o(375974, {	-- Crystallized Echo of the First Song
-					["description"] = "Spawns in multple places.",
-					["coords"] = {
-						{ 77.5, 59, ZERETH_MORTIS },
-						{ 77.4, 45.4, ZERETH_MORTIS },
-						{ 77.6, 60.4, ZERETH_MORTIS },
-						{ 58.7, 89.8, ZERETH_MORTIS },
-					},
-					["g"] = {
-						i(189172),	-- Crystallized Echo of the First Song
-						i(189441),	-- Schematic: Resonant Echo
-					},
-				}),
-				o(375950, {	-- Bauble of Pure Innovation
-					["description"] = "Multiple spawn places?",
-					["coords"] = {
-						{ 34.5, 49.7, ZERETH_MORTIS },
-					},
-					["g"] = {
-						i(189171),	-- Bauble of Pure Innovation
-					},
-				}),
-			})),
 			filter(RECIPES, {
 				filter(BATTLE_PETS, {
 					recipe(364527),	-- Ambystan Darter

@@ -10,19 +10,23 @@ root("BlackMarket", {
 				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			},
 		},{
+		-- #IF BEFORE SHADOWLANDS
 		n(142062, {	-- Madam Gosu [Boralus - Alliance]
 			["coord"] = { 56.71, 46.32, BORALUS },
 		}),
+		-- #ENDIF
 		n(103791, {	-- Madam Gosu [Rogue Class Hall]
 			["coord"] = { 57.91, 46.28, 626 },
 		}),
+		-- #IF BEFORE SHADOWLANDS
 		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
 			["coord"] = { 63.54, 62.68, ZULDAZAR },
 		}),
+		-- #ENDIF
 		n(160081, {	-- Ta'xera <Matron of the Market>
 			["coord"] = { 52.40, 83.80, REVENDRETH },
 		}),
-		-- #IF BEFORE SHADOWLANDS
+		-- #IF BEFORE BFA
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
@@ -36,7 +40,7 @@ root("BlackMarket", {
 	})),
 });
 root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
-	f(113, {	-- Bags
+	filter(113, {	-- Bags
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 	}),
 	filter(103, {	-- Illusions
@@ -61,7 +65,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 		i(137574),	-- Felblaze Infernal (MOUNT!)
 		i(45693),	-- Mimiron's Head (MOUNT!)
-		i(172012),	-- Obsidian Worldbreaker
+		i(172012),	-- Obsidian Worldbreaker (MOUNT!)
 		i(94230),	-- Amber Primordial Direhorn (MOUNT!)
 		i(87777),	-- Astral Cloud Serpent (MOUNT!)
 		i(43952),	-- Azure Drake (MOUNT!)
@@ -76,7 +80,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(44707),	-- Green Proto-Drake (MOUNT!)
 		i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-		i(163042),  -- Reins of the Mighty Caravan Brutosaur
+		i(163042),  -- Mighty Caravan Brutosaur (MOUNT!)
 		i(49636),	-- Onyxian Drake (MOUNT!)
 		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(94229),	-- Slate Primordial Direhorn (MOUNT!)

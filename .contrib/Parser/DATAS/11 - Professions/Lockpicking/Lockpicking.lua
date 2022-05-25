@@ -1,4 +1,4 @@
-profession(633, {	-- Lockpicking
+root(ROOTS.Professions, prof(LOCKPICKING, {
 	-- #if AFTER CATA
 	["description"] = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
 	-- #else
@@ -506,4 +506,4 @@ profession(633, {	-- Lockpicking
 			},
 		}),
 	}
-});
+}));

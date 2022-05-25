@@ -251,15 +251,15 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					}),
 				}),
 				filter(MOUNTS, {
-					i(166468),	-- Bloodgorged Hunter
-					i(163583),	-- Craghorn Chasm-Leaper
-					i(166467),	-- Island Thunderscale
-					i(163582),	-- Qinsho's Eternal Hound
-					i(166466),	-- Risen Mare
-					i(163586),	-- Squawks
-					i(166470),	-- Stonehide Elderhorn
-					i(163585),	-- Surf Jelly
-					i(163584),	-- Twilight Avenger
+					i(166468),	-- Bloodgorged Hunter (MOUNT!)
+					i(163583),	-- Craghorn Chasm-Leaper (MOUNT!)
+					i(166467),	-- Island Thunderscale (MOUNT!)
+					i(163582),	-- Qinsho's Eternal Hound (MOUNT!)
+					i(166466),	-- Risen Mare (MOUNT!)
+					i(163586),	-- Squawks (MOUNT!)
+					i(166470),	-- Stonehide Elderhorn (MOUNT!)
+					i(163585),	-- Surf Jelly (MOUNT!)
+					i(163584),	-- Twilight Avenger (MOUNT!)
 				}),
 				filter(BATTLE_PETS, {
 					i(169322),	-- Adventurous Hopling Pack

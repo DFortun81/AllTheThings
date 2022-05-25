@@ -209,6 +209,7 @@ _.WorldDrops =
 				i(25141),	-- Halaani Hammer
 				i(31299),	-- The Oathkeeper
 				i(31322),	-- The Hammer of Destiny
+				i(25402),	-- The Stoppable Force
 			}),
 			filter(POLEARMS, {
 				i(25226),	-- War Scythe

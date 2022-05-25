@@ -452,11 +452,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 70,
 				}),
 				q(9644, {	-- Nightbane
-					["qg"] = 17613,	-- Archmage Alturus
+					["qg"] = 17636,	-- Kalynna Lathred
 					["sourceQuest"] = 9637,	-- Kalynna's Request
 					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { NETHERSTORM },
+					["coord"] = { 32.2, 63.6, NETHERSTORM },
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Faint Arcane Essence

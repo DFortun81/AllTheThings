@@ -70,5 +70,8 @@ _.WorldDrops =
 				["description"] = "Can be pickpocketed from Northrend humanoids.",
 			}),
 		}),
+		i(6150, {	-- A Frayed Knot
+			["description"] = "Can be pickpocketed from Classic humanoids.",
+		}),
 	}),
 };

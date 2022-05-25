@@ -78,10 +78,10 @@ root("Promotions", {
 		i(171363, {	-- Illusion: Stinging Sands
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
-		i(173299, {	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
+		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
-		i(173297, {	-- Reins of the Explorer's Dunetrekker (MOUNT!)
+		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
 			["timeline"] = { "added 8.2.5.31958" },
 		}),
 		i(173298, bubbleDown({ ["timeline"] = "added 8.2.5.31958" }, {	-- Explorer's Certification

@@ -815,9 +815,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
-					i(187000, {	-- Pattern: Elusive Pet Treat
-						["recipeID"] = 355354,
-					}),
+					i(187000),	-- Pattern: Elusive Pet Treat
 				},
 			}),
 			q(63989, {	-- Oozing with Character (Plaguey)

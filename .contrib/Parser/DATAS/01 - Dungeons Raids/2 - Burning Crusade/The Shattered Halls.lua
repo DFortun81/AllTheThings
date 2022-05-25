@@ -196,28 +196,20 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(25792),	-- Curate's Boots
 					},
 				}),
-				q(9524, {	-- Imprisoned in the Citadel [Alliance]
+				applyclassicphase(TBC_PHASE_FOUR, q(9524, {	-- Imprisoned in the Citadel [Alliance]
 					["qg"] = 17288,	-- Randy Whizzlesprocket
-					-- #if ANYCLASSIC
-					["description"] = "It is currently unknown if this quest will become available later or not.",
-					["timeline"] = { "created 2.0.3" },	-- Never Implemented.
-					-- #else
+					["description"] = "This quest can only be completed on Heroic Difficulty.",
 					["timeline"] = { "removed 4.3.0" },
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 70,
-				}),
-				q(9525, {	-- Imprisoned in the Citadel [Horde]
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, q(9525, {	-- Imprisoned in the Citadel [Horde]
 					["qg"] = 17294,	-- Drisella
-					-- #if ANYCLASSIC
-					["description"] = "It is currently unknown if this quest will become available later or not.",
-					["timeline"] = { "created 2.0.3" },	-- Never Implemented.
-					-- #else
+					["description"] = "This quest can only be completed on Heroic Difficulty.",
 					["timeline"] = { "removed 4.3.0" },
-					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = 70,
-				}),
+				})),
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },

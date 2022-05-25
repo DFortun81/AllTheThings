@@ -1067,29 +1067,35 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(7660,  {	-- Wolf Swapping - Arctic Wolf
-				["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
-				["coord"] = { 61.0, 35.2, ORGRIMMAR },
+			q(7660, {	-- Wolf Swapping - Arctic Wolf
+				["qg"] = 3362,	-- Ogunaro Wolfrunner
+				-- #if AFTER CATA
+				["coord"] = { 61.6, 35.6, ORGRIMMAR },
+				-- #else
+				["coord"] = { 69.4, 12.4, ORGRIMMAR },
+				-- #endif
+				["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+				["timeline"] = { "removed 1.4.0" },
+				["cost"] = { { "i", 12351, 1 } },	-- Arctic Wolf
+				["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					i(18796),	-- Swift Brown Wolf (MOUNT!)
-					i(18798),	-- Swift Gray Wolf (MOUNT!)
-					i(18797),	-- Swift Timber Wolf (MOUNT!)
-				},
+				["_drop"] = { "g" },
 			}),
-			q(7661,  {	-- Wolf Swapping - Red Wolf
-				["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
-				["coord"] = { 61.0, 35.2, ORGRIMMAR },
+			q(7661, {	-- Wolf Swapping - Red Wolf
+				["qg"] = 3362,	-- Ogunaro Wolfrunner
+				-- #if AFTER CATA
+				["coord"] = { 61.6, 35.6, ORGRIMMAR },
+				-- #else
+				["coord"] = { 69.4, 12.4, ORGRIMMAR },
+				-- #endif
+				["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+				["timeline"] = { "removed 1.4.0" },
+				["cost"] = { { "i", 12330, 1 } },	-- Red Wolf (MOUNT!)
+				["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					i(18796),	-- Swift Brown Wolf (MOUNT!)
-					i(18798),	-- Swift Gray Wolf (MOUNT!)
-					i(18797),	-- Swift Timber Wolf (MOUNT!)
-				},
+				["_drop"] = { "g" },
 			}),
 			q(60963, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
 				["sourceQuests"] = { 60097 },	-- Wrath of the Lich King: To Northrend!

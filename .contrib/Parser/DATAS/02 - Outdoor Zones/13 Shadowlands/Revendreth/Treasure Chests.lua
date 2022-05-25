@@ -261,6 +261,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			o(358398, {	-- Lost Journal
+				["questID"] = 62478,
 				["coord"] = { 28.5, 43.4, REVENDRETH },
 				["g"] = {
 					i(183742),	-- Enemy Infiltration - Preface
@@ -652,7 +653,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["coord"] = { 75.4, 39.0, REVENDRETH },
 				}),
 				o(354113, {	-- Stoneborn Satchel
-					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
+					["questID"] = 60940,	-- also triggered 60852, put that one in HQT
 					["isDaily"] = true,
 					["coord"] = { 76.6, 51.0, REVENDRETH },
 				}),

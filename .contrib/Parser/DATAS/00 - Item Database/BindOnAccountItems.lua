@@ -1,11 +1,12 @@
-_.ItemDB = {};
+
+local Items = root("ItemDB");
 -- There is not currently an automatic way to know whether an Item is BoA or BoP since in both
 -- situations [b] = 1
 -- Items listed in this file will be directly marked as BoE to allow ATT to properly
 -- treat them for their BoA status
 local i = function(itemID)
 	local item = { ["b"] = 2 };
-	_.ItemDB[itemID] = item;
+	Items[itemID] = item;
 	return item;
 end
 
@@ -23,6 +24,17 @@ i(188655);	-- Crystalline Memory Repository
 i(188656);	-- Fractal Thoughtbinder
 i(188657);	-- Mind-Expanding Prism
 i(190184);	-- Incense of Infinity
+i(188156);	-- Korthian Accessory
+i(188161);	-- Korthian Belt
+i(188155);	-- Korthian Boots
+i(188163);	-- Korthian Bracers
+i(188154);	-- Korthian Chestpiece
+i(188153);	-- Korthian Cloak
+i(188157);	-- Korthian Gloves
+i(188158);	-- Korthian Helm
+i(188159);	-- Korthian Legguards
+i(188160);	-- Korthian Shoulders
+i(188162);	-- Korthian Weaponry
 
 -- BFA Black Empire Tokens
 i(173420);	-- Black Empire Cloth Belt

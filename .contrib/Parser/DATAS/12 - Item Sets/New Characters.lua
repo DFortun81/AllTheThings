@@ -13,7 +13,7 @@ _.GearSets =
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Draenei Paladin.|r",
 						["races"] = { DRAENEI },
 					}),
-					mount(270564, {	-- Dawnforge Ram
+					mount(270564, {	-- Dawnforge Ram (MOUNT!)
 						["description"] = "|cFF40bf40Received on reaching Level 10 as a Dwarf Paladin.|r", -- Possibly as D.I.D too
 						["races"] = { DWARF },
 					}),

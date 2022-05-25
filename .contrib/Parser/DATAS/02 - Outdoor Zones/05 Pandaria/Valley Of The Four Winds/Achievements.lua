@@ -50,10 +50,7 @@ _.Zones =
 							["questID"] = 31292,
 							["coord"] = { 45.4, 38.2, VALLEY_OF_THE_FOUR_WINDS },
 							["g"] = {
-								i(86079, {	-- Ancient Pandaren Woodcutter
-									["questID"] = 31292,
-									["ignoreSource"] = true
-								}),
+								i(86079),	-- Ancient Pandaren Woodcutter
 							},
 						}),
 						o(213749, {		-- Staff of the Hidden Master

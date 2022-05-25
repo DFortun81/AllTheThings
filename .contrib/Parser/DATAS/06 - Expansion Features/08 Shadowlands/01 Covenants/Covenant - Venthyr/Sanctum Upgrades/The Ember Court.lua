@@ -1879,6 +1879,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 						-- Random, non-collectible items which go into your bags while in the Ember Court
 						i(181355),	-- Faulty Fireworks
 						i(182211),	-- Stone Brick
+						i(182195),	-- Vanity Mirror before use
+						i(182210, {	-- Vanity Mirror after use
+							["description"] = "This is the already-used version of the mirror.",
+						}),
 						n(VENDORS, {
 							n(174711, {	-- Freeman
 								["minReputation"] = { 2445, REVERED },
@@ -2383,7 +2387,7 @@ root("HiddenQuestTriggers", {
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
 			--q(61941),	-- Maybe Etiquette?
 			--q(61926),	-- Maybe Revendreth Etiquette?
-			--q(63353),	-- Achievement related to "Rendles Big Day"
+			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)

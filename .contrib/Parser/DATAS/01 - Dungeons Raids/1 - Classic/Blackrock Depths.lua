@@ -633,6 +633,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4003,	-- The Royal Rescue
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -648,6 +649,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4362,	-- The Fate of the Kingdom
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1694,6 +1696,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								i(11938),	-- Sack of Gems
 								i(11966),	-- Small Sack of Coins
 								i(11937),	-- Fat Sack of Coins
+								i(11944),	-- Dark Iron Baby Booties
 							},
 						}),
 						o(161495, {	-- Secret Safe

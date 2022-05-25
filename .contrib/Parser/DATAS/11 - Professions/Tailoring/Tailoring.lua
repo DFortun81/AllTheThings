@@ -5325,7 +5325,7 @@ profession(TAILORING, {
 			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
 			["maps"] = { ZANGARMARSH },
 			["altQuests"] = {
-				10831,	-- Becoming a Mooncloth Tailor
+				-- 10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
 				10832,	-- Becoming a Spellfire Tailor
 			},
@@ -5353,7 +5353,7 @@ profession(TAILORING, {
 			["maps"] = { SHADOWMOON_VALLEY },
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
-				10833,	-- Becoming a Shadoweave Tailor
+				-- 10833,	-- Becoming a Shadoweave Tailor
 				10832,	-- Becoming a Spellfire Tailor
 			},
 			["lvl"] = lvlsquish(60, 20, 60),
@@ -5373,7 +5373,7 @@ profession(TAILORING, {
 			["altQuests"] = {
 				10831,	-- Becoming a Mooncloth Tailor
 				10833,	-- Becoming a Shadoweave Tailor
-				10832,	-- Becoming a Spellfire Tailor
+				-- 10832,	-- Becoming a Spellfire Tailor
 			},
 			["lvl"] = lvlsquish(60, 20, 60),
 			["groups"] = {

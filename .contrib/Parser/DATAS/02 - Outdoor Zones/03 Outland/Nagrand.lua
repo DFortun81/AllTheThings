@@ -370,13 +370,13 @@ root("Zones", {
 				}),
 				n(QUESTS, {
 					q(11042, {	-- A Mystifying Vision
-						["provider"] = { "n", 23268 },	-- Seer Jovar
+						["qg"] = 23268,	-- Seer Jovar
 						["coord"] = { 55.4, 68.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9800,  {	-- A Rare Bean
-						["provider"] = { "n", 18073 },	-- Elementalist Lo'ap <The Earthen Ring>
+						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["sourceQuests"] = {
 							9869,	-- The Throne of the Elements (A)
@@ -384,25 +384,25 @@ root("Zones", {
 						},
 					}),
 					q(10102, {	-- A Secret Revealed
-						["provider"] = { "n", 17545 },	-- K'ure
+						["qg"] = 17545,	-- K'ure
 						["coord"] = { 35.4, 77.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10101,	-- When Spirits Speak
 					}),
 					q(11037, {	-- A Strange Vision
-						["provider"] = { "n", 23265 },	-- Seer Nakha
+						["qg"] = 23265,	-- Seer Nakha
 						["coord"] = { 55.6, 37.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(10085, {	-- A Visit With The Ancestors
-						["provider"] = { "n", 18687 },	-- Mother Kashur
+						["qg"] = 18687,	-- Mother Kashur
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10082,	-- The Agitated Ancestors
 					}),
 					q(10044, {	-- A Visit With the Greatmother
-						["provider"] = { "n", 18063 },	-- Garrosh <Son of Hellscream>
+						["qg"] = 18063,	-- Garrosh <Son of Hellscream>
 						["coord"] = { 55.4, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -412,7 +412,7 @@ root("Zones", {
 						},
 					}),
 					q(10669, {	-- Against All Odds
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.3, 43.0, NAGRAND },
 						["sourceQuests"] = {
 							10640,	-- Altruis (Aldor)
@@ -420,7 +420,7 @@ root("Zones", {
 						},
 					}),
 					q(10668, {	-- Against the Illidari
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.3, 43.0, NAGRAND },
 						["sourceQuests"] = {
 							10640,	-- Altruis (Aldor)
@@ -428,7 +428,7 @@ root("Zones", {
 						},
 					}),
 					q(10641, {	-- Against the Legion
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.3, 43.0, NAGRAND },
 						["sourceQuests"] = {
 							10640,	-- Altruis (Aldor)
@@ -436,12 +436,12 @@ root("Zones", {
 						},
 					}),
 					q(9804,  {	-- Agitated Spirits of Skysong
-						["provider"] = { "n", 18073 },	-- Elementalist Lo'ap <The Earthen Ring>
+						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["sourceQuest"] = 9800,	-- A Rare Bean
 					}),
 					q(9907,  {	-- An Audacious Advance
-						["provider"] = { "n", 18106 },	-- Jorin Deadeye
+						["qg"] = 18106,	-- Jorin Deadeye
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9906,	-- Message in a Battle
@@ -452,18 +452,18 @@ root("Zones", {
 						},
 					}),
 					q(9928,  {	-- Armaments for Deception
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["sourceQuest"] = 10107,	-- Diplomatic Measures (Horde Version)´
 					}),
 					q(9891,  {	-- Because Kilrath is a Coward
-						["provider"] = { "n", 18273 },	-- Kilrath
+						["qg"] = 18273,	-- Kilrath
 						["coord"] = { 19.6, 60.8, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9890,	-- Success!
 					}),
 					q(9916,  {	-- Bleeding Hollow Supply Crates
-						["provider"] = { "n", 18300 },	-- Elkay'gan the Mystic
+						["qg"] = 18300,	-- Elkay'gan the Mystic
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9910,	-- Standards and Practices
@@ -474,12 +474,12 @@ root("Zones", {
 						},
 					}),
 					q(9805,  {	-- Blessing of Incineratus
-						["provider"] = { "n", 18073 },	-- Elementalist Lo'ap <The Earthen Ring>
+						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["sourceQuest"] = 9804,	-- Agitated Spirits of Skysong
 					}),
 					q(9932,  {	-- Body of Evidence
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["sourceQuests"] = {
 							9928,	-- Armaments for Deception
@@ -487,7 +487,7 @@ root("Zones", {
 						},
 					}),
 					q(10111, {	-- Bring Me The Egg!
-						["provider"] = { "n", 19035 },	-- Wazat
+						["qg"] = 19035,	-- Wazat
 						["coord"] = { 61.6, 67.0, NAGRAND },
 						["sourceQuest"] = 10109,	-- I Must Have Them!
 						["groups"] = {
@@ -497,12 +497,12 @@ root("Zones", {
 						},
 					}),
 					q(9999,  {	-- Buying Time
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["sourceQuest"] = 9991,	-- Survey the Land
 					}),
 					q(9955,  {	-- Cho'war the Pillager (A)
-						["provider"] = { "n", 18445 },	-- Corki
+						["qg"] = 18445,	-- Corki
 						["coord"] = { 31.4, 44.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9954,	-- Corki's Ransom
@@ -513,7 +513,7 @@ root("Zones", {
 						},
 					}),
 					q(9946,  {	-- Cho'war the Pillager (H)
-						["provider"] = { "n", 18414 },	-- Elder Yorley
+						["qg"] = 18414,	-- Elder Yorley
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9945,	-- War on the Warmaul
@@ -524,16 +524,16 @@ root("Zones", {
 						},
 					}),
 					q(9789,  {	-- Clefthoof Mastery
-						["provider"] = { "n", 18180 },	-- Hemet Nesingwary
+						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
 					}),
 					q(9850,  {	-- Clefthoof Mastery
-						["provider"] = { "n", 18180 },	-- Hemet Nesingwary
+						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
 						["sourceQuest"] = 9789,	-- Clefthoof Mastery
 					}),
 					q(9851,  {	-- Clefthoof Mastery
-						["provider"] = { "n", 18180 },	-- Hemet Nesingwary
+						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
 						["sourceQuest"] = 9850,	-- Clefthoof Mastery
 						["groups"] = {
@@ -543,7 +543,7 @@ root("Zones", {
 						},
 					}),
 					q(9924,  {	-- Corki's Gone Missing Again
-						["provider"] = { "n", 18183 },	-- Arechron
+						["qg"] = 18183,	-- Arechron
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9923,	-- HELP!
@@ -554,52 +554,52 @@ root("Zones", {
 						},
 					}),
 					q(9954,  {	-- Corki's Ransom
-						["provider"] = { "n", 18183 },	-- Arechron
+						["qg"] = 18183,	-- Arechron
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9924,	-- Corki's Gone Missing Again
 					}),
 					q(10009, {	-- Crackin' Some Skulls
-						["provider"] = { "n", 18584 },	-- Sal'salabim
+						["qg"] = 18584,	-- Sal'salabim
 						["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10004,	-- Patience and Understanding
 					}),
 					q(10108, {	-- Diplomatic Measures (A)
-						["provider"] = { "n", 18223 },	-- Mo'mor the Breaker
+						["qg"] = 18223,	-- Mo'mor the Breaker
 						["coord"] = { 54.6, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9922,	-- The Twin Clefts of Nagrand
 					}),
 					q(10107, {	-- Diplomatic Measures (H)
-						["provider"] = { "n", 18106 },	-- Jorin Deadeye
+						["qg"] = 18106,	-- Jorin Deadeye
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9907,	-- An Audacious Advance
 					}),
 					q(9917,  {	-- Do My Eyes Deceive Me
-						["provider"] = { "n", 18353 },	-- Huntress Bintook
+						["qg"] = 18353,	-- Huntress Bintook
 						["coord"] = { 55.0, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9889,  {	-- Don't Kill the Fat One
-						["provider"] = { "n", 18273 },	-- Kilrath
+						["qg"] = 18273,	-- Kilrath
 						["coord"] = { 19.6, 60.8, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9888,	-- The Impotent Leader
 					}),
 					q(9821,  {	-- Eating Damnation
-						["provider"] = { "n", 18099 },	-- Gordawg <Fury of Earth>
+						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["coord"] = { 60.0, 22.0, NAGRAND },
 						["sourceQuest"] = 9819,	-- The Tortured Earth
 					}),
 					q(11503, {	-- Enemies, Old and New
-						["provider"] = { "n", 24881 },	-- Karrtog
+						["qg"] = 24881,	-- Karrtog
 						["coord"] = { 52.8, 36.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(9948,  {	-- Finding the Survivors
-						["provider"] = { "n", 18415 },	-- Elder Ungriz
+						["qg"] = 18415,	-- Elder Ungriz
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -609,7 +609,7 @@ root("Zones", {
 						},
 					}),
 					q(10011, {	-- Forge Camp: Annihilated
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["sourceQuest"] = 10010,	-- It's Just That Easy?
 						["groups"] = {
@@ -620,7 +620,7 @@ root("Zones", {
 						},
 					}),
 					q(9900,  {	-- Gava'xi
-						["provider"] = { "n", 18276 },	-- Zerid
+						["qg"] = 18276,	-- Zerid
 						["coord"] = { 30.8, 58.1, NAGRAND },
 						["sourceQuest"] = 9913,	-- The Consortium Needs You!
 						["groups"] = {
@@ -631,7 +631,7 @@ root("Zones", {
 					}),
 					q(9853,  {	-- Gurok the Usurper
 						["coord"] = { 60.0, 22.0, NAGRAND },
-						["provider"] = { "n", 18099 },	-- Gordawg <Fury of Earth>
+						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["sourceQuest"] = 9849,	-- Shattering the Veil
 						["groups"] =	{
 							i(25564),	-- Earthen Mark of Health
@@ -640,19 +640,19 @@ root("Zones", {
 						},
 					}),
 					q(9982,  {	-- He Called Himself Altruis... (A)
-						["provider"] = { "n", 18416 },	-- Huntress Kima
+						["qg"] = 18416,	-- Huntress Kima
 						["coord"] = { 54.8, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9983,  {	-- He Called Himself Altruis... (H)
-						["provider"] = { "n", 18301 },	-- Matron Celestine
+						["qg"] = 18301,	-- Matron Celestine
 						["coord"] = { 55.2, 36.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9866,  {	-- He Will Walk The Earth...
-						["provider"] = { "n", 18229 },	-- Saurfang the Younger
+						["qg"] = 18229,	-- Saurfang the Younger
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9865,	-- Once Were Warriors
@@ -663,7 +663,7 @@ root("Zones", {
 						},
 					}),
 					q(9923,  {	-- HELP!
-						["provider"] = { "n", 18369 },	-- Corki
+						["qg"] = 18369,	-- Corki
 						["coord"] = { 72.6,70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -680,16 +680,16 @@ root("Zones", {
 						},
 					}),
 					q(10109, {	-- I Must Have Them!
-						["provider"] = { "n", 19035 },	-- Wazat
+						["qg"] = 19035,	-- Wazat
 						["coord"] = { 61.6, 67.0, NAGRAND },
 					}),
 					q(9897,  {	-- I'm Saved!
-						["provider"] = { "n", 18294 },	-- Kristen Dipswitch
+						["qg"] = 18294,	-- Kristen Dipswitch
 						["coord"] = { 71.4, 40.6, NAGRAND },
 						["description"] = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws."
 					}),
 					q(10646, {	-- Illidan's Pupil
-						["provider"] = { "n", 18417 },	-- Altruis
+						["qg"] = 18417,	-- Altruis
 						["sourceQuests"] = {
 							10641,	-- Against the Legion
 							10668,	-- Against the Illidari
@@ -698,26 +698,27 @@ root("Zones", {
 						["coord"] = { 27.3, 43.0, NAGRAND },
 					}),
 					q(11502, {	-- In Defense of Halaa
-						["provider"] = { "n", 24866 },	-- Lakoor
+						["qg"] = 24866,	-- Lakoor
 						["coord"] = { 55.8, 73.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(10010, {	-- It's Just That Easy?
-						["provider"] = { "n", 18584 },	-- Sal'salabim
+						["qg"] = 18584,	-- Sal'salabim
 						["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10009,	-- Crackin' Some Skulls
 					}),
 					q(11048, {	-- Kroghan's Report
-						["provider"] = { "n", 18090 },	-- Captain Kroghan
+						["qg"] = 18090,	-- Captain Kroghan
 						["coord"] = { 55.4, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(10253, {	-- Levixus the Soul Caller
-						["provider"] = { "n", 19844 },	-- Nitrin the Learned
-						["coord"] = { 51.8, 56.8, NAGRAND },
+						["qg"] = 19844,	-- Nitrin the Learned
 						["sourceQuest"] = 10252,	-- Vision of the Dead
+						["coord"] = { 51.8, 56.8, NAGRAND },
+						["maps"] = { TEROKKAR_FOREST },
 						["groups"] = {
 							i(29312),	-- Cover of Righteous Fury
 							i(29313),	-- Earthbreaker's Greaves
@@ -726,24 +727,24 @@ root("Zones", {
 						},
 					}),
 					q(10045, {	-- Material Components
-						["provider"] = { "n", 18141 },	-- Greatmother Geyah
+						["qg"] = 18141,	-- Greatmother Geyah
 						["coord"] = { 56.6, 34.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10044,	-- A Visit With the Greatmother
 					}),
 					q(9925,  {	-- Matters of Security
-						["provider"] = { "n", 18276 },	-- Zerid
+						["qg"] = 18276,	-- Zerid
 						["coord"] = { 30.8, 58.1, NAGRAND },
 					}),
 					q(9914, {	-- A Head Full of Ivory
-						["provider"] = { "n", 18333 },	-- Shadrek
+						["qg"] = 18333,	-- Shadrek
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9886, {	-- Membership Benefits
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["isMonthly"] = true,
 						["minReputation"] = { 933, NEUTRAL },
@@ -754,7 +755,7 @@ root("Zones", {
 						},
 					}),
 					q(9884, {	-- Membership Benefits
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["isMonthly"] = true,
 						["minReputation"] = { 933, FRIENDLY },
@@ -765,13 +766,13 @@ root("Zones", {
 						},
 					}),
 					q(10476, {	-- Fierce Enemies
-						["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
+						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10477, {	-- More Warbeads!
-						["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
+						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["sourceQuest"] = 10476,	-- Fierce Enemies
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
@@ -781,7 +782,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9885, {	-- Membership Benefits
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["isMonthly"] = true,
 						["minReputation"] = { 933, HONORED },
@@ -792,7 +793,7 @@ root("Zones", {
 						},
 					}),
 					q(9887, {	-- Membership Benefits
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["isMonthly"] = true,
 						["minReputation"] = { 933, REVERED },
@@ -801,7 +802,7 @@ root("Zones", {
 						},
 					}),
 					q(9883, {	-- More Crystal Fragments
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["sourceQuest"] = 9882,	-- Stealing from Thieves
 						["repeatable"] = true,
@@ -810,7 +811,7 @@ root("Zones", {
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9915, {	-- More Heads Full of Ivory
-						["provider"] = { "n", 18333 },	-- Shadrek
+						["qg"] = 18333,	-- Shadrek
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["sourceQuest"] = 9914,	-- A Head Full of Ivory
 						["repeatable"] = true,
@@ -819,7 +820,7 @@ root("Zones", {
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9892, {	-- More Obsidian Warbeads
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["sourceQuest"] = 9893,	-- Obsidian Warbeads
 						["repeatable"] = true,
@@ -829,7 +830,7 @@ root("Zones", {
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
 					}),
 					q(10478, {	-- More Warbeads!
-						["provider"] = { "n", 18407 },	-- Warden Bullrok
+						["qg"] = 18407,	-- Warden Bullrok
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["sourceQuest"] = 10479,	-- Proving Your Strength
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
@@ -839,32 +840,32 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					q(10479, {	-- Proving Your Strength
-						["provider"] = { "n", 18407 },	-- Warden Bullrok
+						["qg"] = 18407,	-- Warden Bullrok
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["races"] = HORDE_ONLY,
 					}),
 					q(9893, {	-- Obsidian Warbeads
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { 933, FRIENDLY },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 					}),
 					q(9882, {	-- Stealing from Thieves
-						["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
+						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906,  {	-- Message in a Battle
-						["provider"] = { "n", 18106 },	-- Jorin Deadeye
+						["qg"] = 18106,	-- Jorin Deadeye
 						["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
 					q(9934,  {	-- Message to Garadar
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -878,7 +879,7 @@ root("Zones", {
 						},
 					}),
 					q(9933,  {	-- Message to Telaar
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -892,19 +893,19 @@ root("Zones", {
 						},
 					}),
 					q(9944,  {	-- Missing Mag'hari Procession
-						["provider"] = { "n", 18302 },	-- Matron Drakia
+						["qg"] = 18302,	-- Matron Drakia
 						["coord"] = { 56.6, 34.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9920,  {	-- Mo'mor the Breaker
-						["provider"] = { "n", 18353 },	-- Huntress Bintook
+						["qg"] = 18353,	-- Huntress Bintook
 						["coord"] = { 55.0, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9918,	-- Not On My Watch!
 					}),
 					q(9815,  {	-- Muck Diving
-						["provider"] = { "n", 18073 },	-- Elementalist Lo'ap <The Earthen Ring>
+						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["sourceQuests"] = {
 							9869,	-- The Throne of the Elements (A)
@@ -917,7 +918,7 @@ root("Zones", {
 						},
 					}),
 					q(9862,  {	-- Murkblood Corrupters
-						["provider"] = { "n", 18074 },	-- Elementalist Morgh <The Earthen Ring>
+						["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 						["coord"] = { 60.6, 22.4, NAGRAND },
 						["sourceQuest"] = 9861,	-- The Howling Wind
 						["groups"] = {
@@ -943,7 +944,7 @@ root("Zones", {
 					q(9867,  {	-- Murkblood Leaders..
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
-						["provider"] = { "n", 18068 },	-- Farseer Margadesh <The Lightning Sons>
+						["qg"] = 18068,	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -953,19 +954,19 @@ root("Zones", {
 						},
 					}),
 					q(9918,  {	-- Not On My Watch!
-						["provider"] = { "n", 18353 },	-- Huntress Bintook
+						["qg"] = 18353,	-- Huntress Bintook
 						["coord"] = { 55.0, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9917,	-- Do My Eyes Deceive Me
 					}),
 					q(9865,  {	-- Once Were Warriors
-						["provider"] = { "n", 18229 },	-- Saurfang the Younger
+						["qg"] = 18229,	-- Saurfang the Younger
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9864,	-- The Missing War Party
 					}),
 					q(9873,  {	-- Ortor My Old Friend...
-						["provider"] = { "n", 18183 },	-- Arechron
+						["qg"] = 18183,	-- Arechron
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9871,	-- Murkblood Invaders!
@@ -1020,29 +1021,29 @@ root("Zones", {
 						},
 					}),
 					q(10004, {	-- Patience and Understanding
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["sourceQuest"] = 10001,	-- The Master Planner
 					}),
 					q(10650, {	-- Return to the Aldor
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 10649,	-- The Book of Fel Names
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10170, {	-- Return to the Greatmother
-						["provider"] = { "n", 18687 },	-- Mother Kashur
+						["qg"] = 18687,	-- Mother Kashur
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10168,	-- What the Soul Sees
 					}),
 					q(10691, {	-- Return to the Scryers
-						["provider"] = { "n", 18417 },	-- Altruis
+						["qg"] = 18417,	-- Altruis
 						["coord"] = { 27.3, 43.0, NAGRAND },
 						["sourceQuest"] = 10649,	-- The Book of Fel Names
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(9931,  {	-- Returning the Favor
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["sourceQuests"] = {
 							9928,	-- Armaments for Deception
@@ -1050,7 +1051,7 @@ root("Zones", {
 						},
 					}),
 					q(9927,  {	-- Ruthless Cunning
-						["provider"] = { "n", 18261 },	-- Lantresor of the Blade
+						["qg"] = 18261,	-- Lantresor of the Blade
 						["coord"] = { 73.8, 62.6, NAGRAND },
 						["sourceQuests"] = {
 							10108,	-- Diplomatic Measures (A)
@@ -1058,12 +1059,12 @@ root("Zones", {
 						},
 					}),
 					q(9849,  {	-- Shattering the Veil
-						["provider"] = { "n", 18099 },	-- Gordawg <Fury of Earth>
+						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["coord"] = { 60.0, 22.0, NAGRAND },
 						["sourceQuest"] = 9821,	-- Eating Damnation
 					}),
 					q(9878,  {	-- Solving the Problem
-						["provider"] = { "n", 18224 },	-- Poli'lukluk the Wiser
+						["qg"] = 18224,	-- Poli'lukluk the Wiser
 						["coord"] = { 54.4, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9918,	-- Not On My Watch!
@@ -1074,13 +1075,13 @@ root("Zones", {
 						},
 					}),
 					q(9910,  {	-- Standards and Practices
-						["provider"] = { "n", 18300 },	-- Elkay'gan the Mystic
+						["qg"] = 18300,	-- Elkay'gan the Mystic
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 					}),
 					q(9874,  {	-- Stopping the Spread
-						["provider"] = { "n", 18222 },	-- Otonbu the Sage
+						["qg"] = 18222,	-- Otonbu the Sage
 						["coord"] = { 54.4, 72.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1090,13 +1091,13 @@ root("Zones", {
 						},
 					}),
 					q(9890,  {	-- Success!
-						["provider"] = { "n", 18262 },	-- Unkor the Ruthless
+						["qg"] = 18262,	-- Unkor the Ruthless
 						["coord"] = { 20.0, 63.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9889,	-- Don't Kill the Fat One
 					}),
 					q(9991,  {	-- Survey the Land
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["sourceQuests"] = {
 							9982,	-- He Called Himself Altruis... (A)
@@ -1104,16 +1105,16 @@ root("Zones", {
 						},
 					}),
 					q(9857,  {	-- Talbuk Mastery
-						["provider"] = { "n", 18218 },	-- Harold Lane
+						["qg"] = 18218,	-- Harold Lane
 						["coord"] = { 71.4, 40.6, NAGRAND },
 					}),
 					q(9858,  {	-- Talbuk Mastery
-						["provider"] = { "n", 18218 },	-- Harold Lane
+						["qg"] = 18218,	-- Harold Lane
 						["coord"] = { 71.4, 40.6, NAGRAND },
 						["sourceQuest"] = 9857,	-- Talbuk Mastery
 					}),
 					q(9859,  {	-- Talbuk Mastery
-						["provider"] = { "n", 18218 },	-- Harold Lane
+						["qg"] = 18218,	-- Harold Lane
 						["coord"] = { 71.4, 40.6, NAGRAND },
 						["sourceQuest"] = 9858,	-- Talbuk Mastery
 						["groups"] = {
@@ -1123,13 +1124,13 @@ root("Zones", {
 						},
 					}),
 					q(10082, {	-- The Agitated Ancestors
-						["provider"] = { "n", 18687 },	-- Mother Kashur
+						["qg"] = 18687,	-- Mother Kashur
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10081,	-- To Meet Mother Kashur
 					}),
 					q(9913,  {	-- The Consortium Needs You!
-						["provider"] = { "n", 18335 },	-- Consortium Recruiter <The Consortium>
+						["qg"] = 18335,	-- Consortium Recruiter <The Consortium>
 						["isBreadcrumb"] = true,
 						["coords"] = {
 							{ 51.9, 34.8, NAGRAND },
@@ -1159,7 +1160,7 @@ root("Zones", {
 					}),
 					q(9888,  {	-- The Impotent Leader
 						["description"] = "Completing this quest will grant Neutral with The Mag'har.",
-						["provider"] = { "n", 18106 },	-- Jorin Deadeye
+						["qg"] = 18106,	-- Jorin Deadeye
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -1168,37 +1169,37 @@ root("Zones", {
 						},
 					}),
 					q(10171, {	-- The Inconsolable Chieftain
-						["provider"] = { "n", 18141 },	-- Greatmother Geyah
+						["qg"] = 18141,	-- Greatmother Geyah
 						["coord"] = { 56.6, 34.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10170,	-- Return to the Greatmother
 					}),
 					q(10001, {	-- The Master Planner
-						["provider"] = { "n", 18417 },	-- Altruis the Sufferer
+						["qg"] = 18417,	-- Altruis the Sufferer
 						["coord"] = { 27.4, 42.0, NAGRAND },
 						["sourceQuest"] = 9999,	-- Buying Time
 					}),
 					q(9864,  {	-- The Missing War Party
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
-						["provider"] = { "n", 18067 },	-- Farseer Corhuk <The Lightning Sons>
+						["qg"] = 18067,	-- Farseer Corhuk <The Lightning Sons>
 						["coord"] = { 54.8, 39.8, NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10113, {	-- The Nesingwary Safari (A)
-						["provider"] = { "n", 19137 },	-- "Shotgun" Jones <Nesingwary Safari>
+						["qg"] = 19137,	-- "Shotgun" Jones <Nesingwary Safari>
 						["coord"] = { 55.0, 70.4, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(10114, {	-- The Nesingwary Safari (H)
-						["provider"] = { "n", 19133 },	-- Ohlorn Farstrider <Nesingwary Safari>
+						["qg"] = 19133,	-- Ohlorn Farstrider <Nesingwary Safari>
 						["coord"] = { 55.4, 37.4, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9956,  {	-- The Ravaged Caravan
-						["provider"] = { "n", 18416 },	-- Huntress Kima
+						["qg"] = 18416,	-- Huntress Kima
 						["coord"] = { 54.8, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1221,26 +1222,26 @@ root("Zones", {
 						["lvl"] = 70,
 					})),
 					q(9962,  {	-- The Ring of Blood: Brokentoe
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 					}),
 					q(9970,  {	-- The Ring of Blood: Rokdar the Sundered Lord
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["sourceQuest"] = 9967,	-- The Ring of Blood: The Blue Brothers
 					}),
 					q(9972,  {	-- The Ring of Blood: Skra'gath
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["sourceQuest"] = 9970,	-- The Ring of Blood: Rokdar the Sundered Lord
 					}),
 					q(9967,  {	-- The Ring of Blood: The Blue Brothers
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["sourceQuest"] = 9962,	-- The Ring of Blood: Brokentoe
 					}),
 					q(9977,  {	-- The Ring of Blood: The Final Challenge
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["sourceQuest"] = 9973,	-- The Ring of Blood: The Warmaul Champion
 						["groups"] = {
@@ -1253,18 +1254,18 @@ root("Zones", {
 						},
 					}),
 					q(9973,  {	-- The Ring of Blood: The Warmaul Champion
-						["provider"] = { "n", 18471 },	-- Gurgthock
+						["qg"] = 18471,	-- Gurgthock
 						["coord"] = { 42.8, 20.7, NAGRAND },
 						["sourceQuest"] = 9972,	-- The Ring of Blood: Skra'gath
 					}),
 					q(9921,  {	-- The Ruins of Burning Blade
-						["provider"] = { "n", 18223 },	-- Mo'mor the Breaker
+						["qg"] = 18223,	-- Mo'mor the Breaker
 						["coord"] = { 54.6, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9920,	-- Mo'mor the Breaker
 					}),
 					q(9810,  {	-- The Spirit Polluted
-						["provider"] = { "n", 18073 },	-- Elementalist Lo'ap <The Earthen Ring>
+						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["sourceQuest"] = 9805,	-- Blessing of Incineratus
 						["groups"] = {
@@ -1274,34 +1275,34 @@ root("Zones", {
 						},
 					}),
 					q(9869,  {	-- The Throne of the Elements (A)
-						["provider"] = { "n", 18233 },	-- Elementalist Ioki <The Earthen Ring>
+						["qg"] = 18233,	-- Elementalist Ioki <The Earthen Ring>
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9870,  {	-- The Throne of the Elements (H)
-						["provider"] = { "n", 18234 },	-- Elementalist Yal'hah <The Earthen Ring>
+						["qg"] = 18234,	-- Elementalist Yal'hah <The Earthen Ring>
 						["coord"] = { 55.8, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9879,  {	-- The Totem of Kar'dash (A)
-						["provider"] = { "n", 18209 },	-- Kurenai Captive
+						["qg"] = 18209,	-- Kurenai Captive
 						["coord"] = { 33.0, 42.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9868,  {	-- The Totem of Kar'dash (H)
-						["provider"] = { "n", 18210 },	-- Mag'har Captive
+						["qg"] = 18210,	-- Mag'har Captive
 						["coord"] = { 31.4, 44.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
 					q(9819,  {	-- The Tortured Earth
-						["provider"] = { "n", 18099 },	-- Gordawg <Fury of Earth>
+						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["coord"] = { 60.0, 22.0, NAGRAND },
 						["sourceQuest"] = 9818,	-- The Underneath
 					}),
 					q(9922,  {	-- The Twin Clefts of Nagrand
-						["provider"] = { "n", 18223 },	-- Mo'mor the Breaker
+						["qg"] = 18223,	-- Mo'mor the Breaker
 						["coord"] = { 54.6, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9921,	-- The Ruins of Burning Blade
@@ -1312,7 +1313,7 @@ root("Zones", {
 						},
 					}),
 					q(9852,  {	-- The Ultimate Bloodsport
-						["provider"] = { "n", 18180 },	-- Hemet Nesingwary
+						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
 						["sourceQuests"] = {
 							9856,	-- Windroc Mastery
@@ -1346,7 +1347,7 @@ root("Zones", {
 						},
 					}),
 					q(9818,  {	-- The Underneath
-						["provider"] = { "n", 18071 },	-- Elementalist Untrag <The Earthen Ring>
+						["qg"] = 18071,	-- Elementalist Untrag <The Earthen Ring>
 						["coord"] = { 60.6, 22.6, NAGRAND },
 						["sourceQuests"] = {
 							9869,	-- The Throne of the Elements (A)
@@ -1354,7 +1355,7 @@ root("Zones", {
 						},
 					}),
 					q(10172, {	-- There Is No Hope
-						["provider"] = { "n", 18063 },	-- Garrosh <Son of Hellscream>
+						["qg"] = 18063,	-- Garrosh <Son of Hellscream>
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10171,	-- The Inconsolable Chieftain
@@ -1385,7 +1386,7 @@ root("Zones", {
 						["lvl"] = 70,
 					})),
 					q(10081, {	-- To Meet Mother Kashur
-						["provider"] = { "n", 18141 },	-- Greatmother Geyah
+						["qg"] = 18141,	-- Greatmother Geyah
 						["coord"] = { 56.6, 34.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10045,	-- Material Components
@@ -1393,7 +1394,7 @@ root("Zones", {
 					q(9863,  {	-- Vile Idolatry
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
-						["provider"] = { "n", 18066 },	-- Farseer Kurkush <The Lightning Sons>
+						["qg"] = 18066,	-- Farseer Kurkush <The Lightning Sons>
 						["coord"] = { 54.8, 39.4, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1404,17 +1405,17 @@ root("Zones", {
 					}),
 					q(10252, {	-- Vision of the Dead
 						["coord"] = { 51.8, 56.8, NAGRAND },
-						["provider"] = { "n", 19844 },	-- Nitrin the Learned
+						["qg"] = 19844,	-- Nitrin the Learned
 						["sourceQuest"] = 10251,	-- The Master's Grand Design?
 					}),
 					q(11044, {	-- Visions of Destruction
-						["provider"] = { "n", 23268 },	-- Seer Jovar
+						["qg"] = 23268,	-- Seer Jovar
 						["coord"] = { 55.4, 68.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9938,  {	-- WANTED: Durn the Hungerer (A)
-						["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
+						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -1428,7 +1429,7 @@ root("Zones", {
 						},
 					}),
 					q(9937,  {	-- WANTED: Durn the Hungerer (H)
-						["provider"] = { "n", 18407 },	-- Warden Bullrok
+						["qg"] = 18407,	-- Warden Bullrok
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -1466,19 +1467,19 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					q(9945,  {	-- War on the Warmaul
-						["provider"] = { "n", 18414 },	-- Elder Yorley
+						["qg"] = 18414,	-- Elder Yorley
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9944,	-- Missing Mag'hari Procession
 					}),
 					q(10101, {	-- When Spirits Speak
-						["provider"] = { "n", 18687 },	-- Mother Kashur
+						["qg"] = 18687,	-- Mother Kashur
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10085,	-- A Visit With The Ancestors
 					}),
 					q(9854,  {	-- Windroc Mastery
-						["provider"] = { "n", 18200 },	-- Shado 'Fitz' Farstrider
+						["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 						["coord"] = { 71.6, 40.5, NAGRAND },
 						["sourceQuests"] = {
 							10113,	-- The Nesingwary Safari (A)
@@ -1486,12 +1487,12 @@ root("Zones", {
 						},
 					}),
 					q(9855,  {	-- Windroc Mastery
-						["provider"] = { "n", 18200 },	-- Shado 'Fitz' Farstrider
+						["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 						["coord"] = { 71.6, 40.5, NAGRAND },
 						["sourceQuest"] = 9854,	-- Windroc Mastery
 					}),
 					q(9856,  {	-- Windroc Mastery
-						["provider"] = { "n", 18200 },	-- Shado 'Fitz' Farstrider
+						["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 						["coord"] = { 71.6, 40.5, NAGRAND },
 						["sourceQuest"] = 9855,	-- Windroc Mastery
 						["groups"] = {

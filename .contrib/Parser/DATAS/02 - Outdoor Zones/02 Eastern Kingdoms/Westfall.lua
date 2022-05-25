@@ -216,28 +216,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map
 					["coord"] = { 49.2, 9.80, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (2/4)
 					["provider"] = { "o", 307330 },	-- Captain's Footlocker
 					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
 					["coord"] = { 25.9, 47.7, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (3/4)
 					["provider"] = { "o", 307307 },	-- broken barrel
 					["sourceQuest"] = 26354,	-- Captain Sanders' Hidden Treasure (2/4)
 					["coord"] = { 40.6, 47.8, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (4/4)
 					["provider"] = { "o", 307277 },	-- Old Jug
 					["sourceQuest"] = 26355,	-- Captain Sanders' Hidden Treasure (3/4)
 					["coord"] = { 40.5, 16.8, WESTFALL },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(3344),	-- Captain Sanders' Sash
 						i(3342),	-- Captain Sanders' Shirt

@@ -285,6 +285,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 170284 },	-- Elios
 				["coord"] = { 53.2, 46.4, BASTION },
 			}),
+			q(62200, {	-- Functioning Anima Core
+				["provider"] = { "i", 182759 },	-- Functioning Anima Core
+				["repeatable"] = true,
+			}),
 			q(57529, {	-- Garden in Turmoil
 				["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 				["isBreadcrumb"] = true,

@@ -1,7 +1,6 @@
 -- Reassign the pointer to the recipe function to automatically mark the removal date.
-local oldRecipe = recipe;
-recipe = function(recipeID, t)
-	local o = oldRecipe(recipeID, t);
+local recipe = function(recipeID, t)
+	local o = recipe(recipeID, t);
 	o.timeline = { "removed 8.0.1.10000" };
 	return o;
 end
@@ -281,9 +280,6 @@ profession(FIRST_AID, {
 	}),
 	-- #endif
 });
-
--- Reset the pointer to the recipe function.
-recipe = oldRecipe;
 
 -- First Aid Recipes
 local itemDB = root("ItemDB", {});

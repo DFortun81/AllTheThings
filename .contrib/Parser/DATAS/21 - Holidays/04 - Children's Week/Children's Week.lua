@@ -75,7 +75,8 @@ local WARDEN_OF_THE_GROUPS = {
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
 };
-root("Holidays", applyholiday(CHILDRENS_WEEK, {
+
+root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 	-- #if ANYCLASSIC
 	["npcID"] = -52,
 	-- #else
@@ -1422,7 +1423,7 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 					10953,	-- Visit the Throne of the Elements [Horde - Blood Elf]
 				},
 				["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-				["timeline"] = { "added 2.0.1", "added 2.4.0" },
+				["timeline"] = { "added 2.0.1", "removed 2.4.0" },
 				["maps"] = { SHATTRATH_CITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -1620,3 +1621,8 @@ root("Holidays", applyholiday(CHILDRENS_WEEK, {
 		-- #endif
 	},
 }));
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(55376),	-- completing Hunting for Gold (53969)
+	q(55377),	-- completing Hunting for Gold (53969)
+});

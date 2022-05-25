@@ -180,7 +180,7 @@ root("Zones", {
 					["coord"] = { 52.6, 41.0, MECHAGON },
 					["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
 					["g"] = {
-						i(168823),	-- Rusty Mechanocrawler
+						i(168823),	-- Rusty Mechanocrawler (MOUNT!)
 					},
 				}),
 				n(150394, {	-- Armored Vaultbot
@@ -792,7 +792,7 @@ root("Zones", {
 						crit(18, {	-- Rustfeather
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168370),	-- Rusted Keys to the Junkheap Drifter
+						i(168370),	-- Junkheap Drifter (MOUNT!)
 						i(169173, {	-- Blueprint: Anti-Gravity Pack
 							["questID"] = 55081,
 							["g"] = {

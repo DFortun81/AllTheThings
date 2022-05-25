@@ -445,6 +445,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						["altQuests"] = { 9793 },	-- The Fate of Tuurem
 					}),
 					q(10115, {	-- Daggerfen Deviance
 						["qg"] = 18008,	-- Ikuti
@@ -965,6 +966,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						["altQuests"] = { 10104 },	-- Concerns About Tuurem
 					}),
 					q(9776,  {	-- The Orebor Harborage
 						["qg"] = 18003,	-- Anchorite Ahuurn
@@ -1545,7 +1547,7 @@ root("Zones", {
 						["coord"] = { 78.5, 63.0, ZANGARMARSH },
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},

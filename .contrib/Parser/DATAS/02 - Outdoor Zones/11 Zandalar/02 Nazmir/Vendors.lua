@@ -25,13 +25,13 @@ _.Zones =
 				n(148810, {	-- Gottum <Da Frogman>
 					["coord"] = { 71.2, 55.5, NAZMIR },
 					["g"] = {
-						i(166442, {	-- Blue Marsh Hopper
+						i(166442, {	-- Blue Marsh Hopper (MOUNT!)
 							["cost"] = 3333330000,	-- 333,333g
 						}),
-						i(163183, {	-- Green Marsh Hopper
+						i(163183, {	-- Green Marsh Hopper (MOUNT!)
 							["cost"] = 3333330000,	-- 333,333g
 						}),
-						i(166443, {	-- Yellow Marsh Hopper
+						i(166443, {	-- Yellow Marsh Hopper (MOUNT!)
 							["cost"] = 3333330000,	-- 333,333g
 						}),
 					},
@@ -94,10 +94,10 @@ _.Zones =
 						i(162693, {	-- Recipe: Potion of Bursting Blood (Rank 3)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(161666, {	-- Reins of the Captured Swampstalker (MOUNT!)
+						i(161666, {	-- Captured Swampstalker (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
-						i(161774, {	-- Reins of the Expedition Bloodswarmer (MOUNT!)
+						i(161774, {	-- Expedition Bloodswarmer (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
 						}),
 						i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 2)

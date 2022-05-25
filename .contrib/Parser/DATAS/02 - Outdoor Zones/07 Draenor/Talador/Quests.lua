@@ -1310,7 +1310,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						33530,	-- Nightmare in the Tomb
+						33917,	-- Disrupting the Flow
+						33920,	-- The Heart of Auchindoun
 						34351,	-- We Must Construct Additional Pylons
+						34418,	-- Holding the Line
 					},
 				}),
 				q(34472, {	-- Temporal Juxtaposition
@@ -1460,7 +1463,7 @@ _.Zones =
 				}),
 				q(33754, {	-- Through the Looking Glass
 					["provider"] = { "n", 75806 },	-- Durotan
-					["coord"] = { 70.8, 29.6, TALADOR },
+					["coord"] = { 61.4, 10.8, TALADOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34683,	-- One Step Ahead
 				}),

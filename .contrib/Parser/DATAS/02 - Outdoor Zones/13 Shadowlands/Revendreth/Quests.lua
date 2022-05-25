@@ -534,7 +534,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 				["g"] = {
 					i(182586, {	-- A Venthyr Arm Holding a Cudgel
-						i(182587) -- Gorger Slobbered Cudgel
+						i(182587), -- Gorger Slobbered Cudgel
+						i(182588), -- A Bloody Hand
 					}),
 				}
 			}),

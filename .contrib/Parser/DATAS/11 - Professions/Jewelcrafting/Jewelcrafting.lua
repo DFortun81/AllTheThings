@@ -6070,6 +6070,7 @@ itemrecipe({"Design: Lustrous Star of Elune [TBC]", "Design: Sparkling Star of E
 itemrecipe({"Design: Purified Shadowsong Amethyst [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 37504, 48789, 39741, REMOVED_WITH_CATA);	-- Kept the same name, very weird.
 itemrecipe({"Design: Royal Nightseye [TBC]", "Design: Purified Nightseye [CATA+]"}, 24212, 31105, 31112, REMOVED_WITH_CATA);
 itemrecipe({"Design: Royal Shadowsong Amethyst [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32302, 39732, 39741, REMOVED_WITH_CATA);
+itemrecipe({"Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA]"}, 35250, 39710, 39711, REMOVED_WITH_CATA);
 itemrecipe({"Design: Teardrop Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32281, 39710, 39711, REMOVED_WITH_CATA);
 itemrecipe({"Design: Teardrop Living Ruby [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24195, 31087, 31088, REMOVED_WITH_CATA);
 itemrecipe({"Design: Thick Dawnstone [TBC]", "Design: Subtle Dawnstone [CATA+]"}, 24207, 31100, 31090, REMOVED_WITH_CATA);
@@ -6348,7 +6349,7 @@ i(46951, {	-- Design: Veiled Dreadstone
 i(46952, {	-- Design: Willful Ametrine
 	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 }),
-]]
+--]]
 -- #endif
 
 -- #if AFTER CATA
@@ -6396,7 +6397,6 @@ neverimplemented(itemrecipe("Design: Cut Emerald - Deprecated", 21950));
 neverimplemented(itemrecipe("Design: Cut Azerothian Diamond", 21951));
 neverimplemented(itemrecipe("Design: Primal Stone Statue", 25888, 32810));
 neverimplemented(itemrecipe("Design: Relentless Earthstorm Diamond", 32412, 39961));	-- Originally Consortium Quartermaster, never made it out of Beta. A Different version was added later.
-neverimplemented(itemrecipe("Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA]", 35250, 39710));	-- Originally Shattered Sun Offensive Vendor, never made it out of Beta. A Different version was added later.
 neverimplemented(recipe(32810));	-- Primal Stone Statue
 neverimplemented(i(25884));	-- Primal Stone Statue
 neverimplemented(itemrecipe("Design: Silver Rose Pendant", 20972, 25614));

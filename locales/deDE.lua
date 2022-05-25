@@ -101,6 +101,7 @@ local L = app.L;
 	--TODO: L.BREADCRUMB_PARTYSYNC = "This may be unable to be completed without Party Sync if completing any of these quests first:";
 	--TODO: L.BREADCRUMB_PARTYSYNC_2 = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
 	--TODO: L.BREADCRUMB_PARTYSYNC_3 = "This may be obtained via Party Sync with a character that is able to accept this quest.";
+	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
 	--TODO: L.NO_ENTRIES = "No entries matching your filters were found.";
 	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
@@ -217,7 +218,7 @@ local L = app.L;
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
-	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Items needed to buy not collected Things";
+	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Estimated amount needed to obtain remaining Things";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -414,7 +415,7 @@ local L = app.L;
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
-		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the approximate amount of items/currency required to buy Uncollected Things.\n\nOnly those collectible Things that can be directly purchased for an item/currency are counted. Containers that do not give items with a 100% chance are not counted.";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nCounts for Containers are calculated by multiplying the cost of the Container by the remaining Things it contains. Thus for Containers which reward multiple Things at once, the estimate will be higher than actually required.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
@@ -1103,8 +1104,10 @@ for key,value in pairs({
 	[186585] = "Rolle aus Drachenhaut",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Große Kürbislaterne",	-- Large Jack-o'-Lantern
+	[187072] = "Messerdornwurzel",	-- Razorthorn Root
 	[187236] = "Winterhauchgeschenk",	-- Winter Veil Gift
 	[187273] = "Verdächtiger Hufabdruck",	-- Suspicious Hoofprint
+	[187333] = "Blutbeerenbusch",	-- Bloodberry Bush
 	[187559] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[187564] = "Freudenfeuer der Allianz",	-- Alliance Bonfire
 	[187565] = "Ältester Atkanok",	-- Elder Atkanok

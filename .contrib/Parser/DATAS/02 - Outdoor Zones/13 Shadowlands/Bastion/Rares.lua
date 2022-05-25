@@ -153,10 +153,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(24, {	-- Corrupted Clawguard
 						["achievementID"] = 14307,	-- Adventurer of Bastion
 					}),
-					i(182759, {	-- Functioning Anima Core
-						["repeatable"] = true,
-						["questID"] = 62200,	-- Functioning Anima Core
-					}),
+					i(182759),	-- Functioning Anima Core
 					i(180651),	-- Discarded Phalynx Core (so the item is associated with the rare)
 				},
 			}),
@@ -265,10 +262,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					crit(1, {	-- Herculon
 						["achievementID"] = 14307,	-- Adventurer of Bastion
 					}),
-					i(182759, {	-- Functioning Anima Core
-						["repeatable"] = true,
-						["questID"] = 62200,	-- Functioning Anima Core
-					}),
+					i(182759),	-- Functioning Anima Core
 				},
 			}),
 			n(161529, { -- Nemaeus

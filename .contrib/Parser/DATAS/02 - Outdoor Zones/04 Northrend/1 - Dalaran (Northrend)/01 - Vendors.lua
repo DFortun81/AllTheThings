@@ -3174,7 +3174,6 @@ _.Zones =
 							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 						}),
 						i(42300, {	-- Design: Brilliant Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42309, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41704, {	-- Design: Chaotic Skyflare Diamond
@@ -3184,14 +3183,12 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41792, {	-- Design: Design: Deft Monarch Topaz
-							["spellID"] = 0,	-- This is now available via 41687, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(42301, {	-- Design: Delicate Dragon's Eye
 							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 						}),
 						i(42299, {	-- Design: Delicate Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42301, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41577, {	-- Design: Delicate Scarlet Ruby
@@ -3204,7 +3201,6 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41694, {	-- Design: Energized Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41692, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(42302, {	-- Design: Flashing Dragon's Eye
@@ -3220,11 +3216,9 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41785, {	-- Design: Glinting Twilight Opal
-							["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41796, {	-- Design: Glinting Twilight Opal
-							["spellID"] = 0,	-- This is now available via 41582, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41708, {	-- Design: Insightful Earthsiege Diamond
@@ -3240,7 +3234,6 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41782, {	-- Design: Lightning Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41696, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41565, {	-- Design: Lucent Huge Citrine
@@ -3282,14 +3275,12 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41689, {	-- Design: Reckless Monarch Topaz
-							["spellID"] = 0,	-- This is now available via 41690, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41697, {	-- Design: Regal Forest Emerald
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41703, {	-- Design: Regal Forest Emerald
-							["spellID"] = 0,	-- This is now available via 41697, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41710, {	-- Design: Relentless Earthsiege Diamond
@@ -3335,7 +3326,6 @@ _.Zones =
 							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 						}),
 						i(42303, {	-- Design: Smooth Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42310, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(42311, {	-- Design: Solid Dragon's Eye
@@ -3348,7 +3338,6 @@ _.Zones =
 							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 						}),
 						i(42304, {	-- Design: Sparkling Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42312, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(41581, {	-- Design: Sparkling Sky Sapphire
@@ -3367,14 +3356,12 @@ _.Zones =
 							["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 						}),
 						i(41791, {	-- Design: Subtle Autumn's Glow
-							["spellID"] = 0,	-- This is now available via 41719, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(42314, {	-- Design: Subtle Dragon's Eye
 							["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 						}),
 						i(42315, {	-- Design: Subtle Dragon's Eye
-							["spellID"] = 0,	-- This is now available via 42314, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(42652, {	-- Design: Titanium Earthguard Chain
@@ -3425,7 +3412,227 @@ _.Zones =
 				}),
 				n(28701,  {	-- Timothy Jones <Jewelcrafting Trainer>
 					["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
-					["g"] = COMMON_WRATH_JEWELCRAFTING_RECIPES,
+					["g"] = {
+						i(47010, {	-- Design: Accurate Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46917, {	-- Design: Bold Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46916, {	-- Design: Brilliant Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46930, {	-- Design: Brilliant Cardinal Ruby
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47015, {	-- Design: Champion's Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46949, {	-- Design: Deadly Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47011, {	-- Design: Deadly Ametrine
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46941, {	-- Design: Defender's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47020, {	-- Design: Deft Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47023, {	-- Design: Deft Ametrine
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46918, {	-- Design: Delicate Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46919, {	-- Design: Delicate Cardinal Ruby
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46912, {	-- Design: Energized Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46910, {	-- Design: Energized Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46953, {	-- Design: Etched Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47019, {	-- Design: Fierce Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46923, {	-- Design: Flashing Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46904, {	-- Design: Forceful Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46956, {	-- Design: Glinting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46945, {	-- Design: Glinting Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46946, {	-- Design: Glinting Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47008, {	-- Design: Glinting Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46942, {	-- Design: Guardian's Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46948, {	-- Design: Inscribed Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46901, {	-- Design: Jagged Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46944, {	-- Design: Jagged Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46909, {	-- Design: Lightning Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46907, {	-- Design: Lightning Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47021, {	-- Design: Lucent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47016, {	-- Design: Lucent Ametrine
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46905, {	-- Design: Misty Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46906, {	-- Design: Misty Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46943, {	-- Design: Mysterious Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46932, {	-- Design: Mystic King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(49112, {	-- Design: Nightmare Tear
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46899, {	-- Design: Nimble Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46950, {	-- Design: Potent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46920, {	-- Design: Precise Cardinal Ruby
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46937, {	-- Design: Purified Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46900, {	-- Design: Purified Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46903, {	-- Design: Purified Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46947, {	-- Design: Purified Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46939, {	-- Design: Purified Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46933, {	-- Design: Quick King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46911, {	-- Design: Radiant Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46908, {	-- Design: Radiant Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47007, {	-- Design: Reckless Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46897, {	-- Design: Regal Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46940, {	-- Design: Regal Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47022, {	-- Design: Resolute Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47018, {	-- Design: Resplendent Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46928, {	-- Design: Rigid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46913, {	-- Design: Shattered Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46938, {	-- Design: Shifting Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46934, {	-- Design: Shifting Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46929, {	-- Design: Smooth King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46921, {	-- Design: Smooth King's Amber
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46924, {	-- Design: Solid Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46935, {	-- Design: Sovereign Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46925, {	-- Design: Sparkling Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46927, {	-- Design: Sparkling Majestic Zircon
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(47017, {	-- Design: Stalwart Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(47012, {	-- Design: Stalwart Ametrine
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46898, {	-- Design: Steady Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46926, {	-- Design: Stormy Majestic Zircon
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46922, {	-- Design: Subtle King's Amber
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46931, {	-- Design: Subtle King's Amber
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46902, {	-- Design: Timeless Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46936, {	-- Design: Timeless Dreadstone
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46915, {	-- Design: Turbid Eye of Zul
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46914, {	-- Design: Turbid Eye of Zul
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(46951, {	-- Design: Veiled Dreadstone
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+						i(46952, {	-- Design: Willful Ametrine
+							["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+						}),
+					},
 				}),
 				n(28991,  {	-- Valaden Silverblade <Sword Merchant>
 					["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },

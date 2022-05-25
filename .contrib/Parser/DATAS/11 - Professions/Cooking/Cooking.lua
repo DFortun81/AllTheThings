@@ -2729,7 +2729,11 @@ profession(COOKING, {
 			["cost"] = {
 				{ "i", 12207, 12 },	-- Giant Egg
 				{ "i", 7974, 10 },	-- Zesty Clam Meat
+				-- #if AFTER CATA
+				{ "i", 3927, 20 },	-- Fine Aged Cheddar
+				-- #else
 				{ "i", 8932, 20 },	-- Alterac Swiss
+				-- #endif
 			},
 			["lvl"] = 35,
 			["groups"] = {
@@ -2982,9 +2986,6 @@ profession(COOKING, {
 	filter(RECIPES, {
 		tier(CLASSIC_TIER, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
-				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
-			})),
-			un(REMOVED_FROM_GAME, i(27736, {	-- Master Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
 			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy

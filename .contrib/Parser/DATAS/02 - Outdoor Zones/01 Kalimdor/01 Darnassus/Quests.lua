@@ -37,16 +37,20 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
-				q(7671,  {	-- Frostsaber Replacement
-					["u"] = REMOVED_FROM_GAME,
-					["repeatable"] = true,
-					["provider"] = { "n", 4730 },	-- Lelanai
+				q(7671, {	-- Frostsaber Replacement
+					["qg"] = 4730,	-- Lelanai
+					-- #if AFTER CATA
+					["coord"] = { 42.6, 32.8, DARNASSUS },
+					-- #else
+					["coord"] = { 38.3, 15.3, DARNASSUS },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
+					["sym"] = { { "select", "itemID", 18766, 18767, 18902 } },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(18766),	-- Swift Frostsaber (MOUNT!)
-						i(18767),	-- Swift Mistsaber (MOUNT!)
-						i(18902),	-- Swift Stormsaber (MOUNT!)
-					},
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 				}),
 				q(32664, {	-- Learn to Ride
 					["DisablePartySync"] = true,
@@ -90,16 +94,20 @@ _.Zones =
 					["races"] = { NIGHTELF },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(7672,  {	-- Nightsaber Replacement
-					["u"] = REMOVED_FROM_GAME,
-					["repeatable"] = true,
-					["provider"] = { "n", 4730 },	-- Lelanai
+				q(7672, {	-- Nightsaber Replacement
+					["qg"] = 4730,	-- Lelanai
+					-- #if AFTER CATA
+					["coord"] = { 42.6, 32.8, DARNASSUS },
+					-- #else
+					["coord"] = { 38.3, 15.3, DARNASSUS },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
+					["sym"] = { { "select", "itemID", 18766, 18767, 18902 } },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(18766),	-- Swift Frostsaber (MOUNT!)
-						i(18767),	-- Swift Mistsaber (MOUNT!)
-						i(18902),	-- Swift Stormsaber (MOUNT!)
-					},
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 				}),
 				q(6343,  {	-- Return to Nyoma
 					["sourceQuests"] = { 6342 },	-- An Unexpected Gift

@@ -354,11 +354,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["maps"] = { ZULDAZAR },
 									}),
 									q(62589, {	-- In Search of Inner Calm (3)
 										["sourceQuests"] = { 62588 },	-- In Search of Inner Calm (2)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["maps"] = { WINTERSPRING },
 									}),
 									q(62590, {	-- In Search of Inner Calm (4)
 										["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
@@ -424,6 +426,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62629 },	-- All Spirits Great and Small (2)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
 										["coord"] = { 26.0, 63.8, 1662 },
+										["maps"] = { TIRAGARDE_SOUND },
 									}),
 								}),
 							},

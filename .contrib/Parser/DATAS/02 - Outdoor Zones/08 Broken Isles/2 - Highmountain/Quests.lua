@@ -1077,8 +1077,8 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
-	--q(44352),	-- Tracking Quest - Highmountain Treasure Chest (UNderwater Cave) (All Chests seems to have a QuestID attached already...)
 	q(43957),	-- Jade Darkhaven
+	q(39991),	-- Being blessed by Cenarius during 40388, was a real quest during beta but turned into an HQT in retail
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

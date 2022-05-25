@@ -21,6 +21,9 @@ root("Zones", {
 				o(279253, {	-- Lucky Horace's Lucky Chest
 					["questID"] = 49867,
 					["coord"] = { 77.6, 36.1, NAZMIR },
+					["g"] = {
+						i(67410),	-- Very Unlucky Rock
+					},
 				}),
 				o(278437, {	-- Offering to Bwonsamdi
 					["questID"] = 49484,

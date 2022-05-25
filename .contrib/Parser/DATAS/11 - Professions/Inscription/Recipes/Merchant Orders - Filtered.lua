@@ -1,4 +1,6 @@
-profession(INSCRIPTION, {
+
+-- Temporary filtering/sourcing until Profession > Recipes are made Dynamic
+root(ROOTS.Professions, bubbleDown({["requireSkill"] = INSCRIPTION}, prof(INSCRIPTION, {
 	filter(RECIPES, {
 		{	-- Merchant Orders
 			["categoryID"] = 403,	-- Merchant Orders
@@ -10,4 +12,4 @@ profession(INSCRIPTION, {
 			}
 		},
 	}),
-});
+})));

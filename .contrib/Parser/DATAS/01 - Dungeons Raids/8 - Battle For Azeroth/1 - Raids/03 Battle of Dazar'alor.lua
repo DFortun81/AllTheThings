@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
@@ -348,7 +348,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
@@ -640,7 +640,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
@@ -933,7 +933,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
@@ -1248,7 +1248,11 @@ _.Instances = { tier(BFA_TIER, {
 			})),
 		},
 	}),
-})};
-_.HiddenQuestTriggers = {
-	q(55027),	-- Killing Opulence(M)
-};
+}));
+
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	inst(1176, {	-- Battle of Dazar'alor
+		q(55026),	-- Killing Opulence (H)
+		q(55027),	-- Killing Opulence (M)
+	}),
+}));

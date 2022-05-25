@@ -122,7 +122,7 @@ _.Instances = { tier(BFA_TIER, {
 			})),
 			bubbleDown({ ["timeline"] = { "added 8.3.0", "removed 9.0.2" } },
 				ach(14145, {		-- Battle for Azeroth Keystone Master: Season Four
-					i(174836)	-- Awakened Mindborer
+					i(174836)	-- Awakened Mindborer (MOUNT!)
 			})),
 		}),
 	}),

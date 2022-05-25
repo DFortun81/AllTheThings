@@ -10,14 +10,14 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				["races"] = ALLIANCE_ONLY,
 				["u"] = WOW_ANNIVERSARY,
 				["g"] = {
-					i(172022),	-- Stormpike Battle Ram
+					i(172022),	-- Stormpike Battle Ram (MOUNT!)
 				},
 			}),
 			ach(13930, {	-- Alterac Valley of Olde (H)
 				["races"] = HORDE_ONLY,
 				["u"] = WOW_ANNIVERSARY,
 				["g"] = {
-					i(172023),	-- Frostwolf Snarler
+					i(172023),	-- Frostwolf Snarler (MOUNT!)
 				},
 			}),
 			ach(708, {	-- Hero of the Frostwolf Clan

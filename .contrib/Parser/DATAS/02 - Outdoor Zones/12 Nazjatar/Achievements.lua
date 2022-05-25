@@ -76,7 +76,7 @@ _.Zones =
 			})),
 			pvp(ach(13569)),	-- Tour of Duty: Nazjatar
 			ach(13638, {	-- Undersea Usurper
-				i(169194),		-- Snapback Scuttler
+				i(169194),		-- Snapback Scuttler (MOUNT!)
 				title(405),		-- of the Deeps
 				ach(13635),		-- Tour of the Depths
 				ach(13690),		-- Nazjatarget Elminated

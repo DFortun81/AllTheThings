@@ -1165,6 +1165,7 @@ _.Zones =
 				}),
 				q(29600, {	-- Snap Judgment
 					["provider"] = { "n", 56802 },	-- Zhang Yue
+					["coord"] = { 59.8, 27.8, VALLEY_OF_THE_FOUR_WINDS },
 					["g"] = {
 						i(81805),	-- Silkmaster's Satin Cuffs
 						i(81806),	-- Sunsoaked Bindings

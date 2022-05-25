@@ -239,10 +239,10 @@ _.Zones =
 						i(162129, {	-- Recipe: Potion of Replenishment (Rank 3)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(161912, {	-- Reins of the Dapple Gray (MOUNT!)
+						i(161912, {	-- Dapple Gray (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(161909, {	-- Reins of the Stormsong Coastwatcher (MOUNT!)
+						i(161909, {	-- Stormsong Coastwatcher (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
 						i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 2)

@@ -33,7 +33,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(62578),	--
 			-- 9.0.2
 			q(62990),	--
-			q(63353),	--
 			-- 9.1.0
 			q(64369),	--
 		},
@@ -171,116 +170,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(8802),	-- Tome of Arcane Intellect
 			i(8868),	-- Tome of Conjure Water VI
 		}),
-		filter(MOUNTS, {
-			i(16344, {		-- Arctic Wolf / zzUNUSEDLieutenant General's Mount (MOUNT!)
-				["modelID"] = 1166
-			}),
-			mount(25863, {	-- Black Qiraji Battle Tank (MOUNT!)
-				["modelID"] = 15676
-			}),
-			mount(26655, {	-- Black Qiraji Battle Tank (MOUNT!)
-				["modelID"] = 15676
-			}),
-			i(5874, {		-- Black Ram / Harness: Black Ram (MOUNT!)
-				["modelID"] = 2784
-			}),
-			i(1041, {		-- Black Wolf / Horn of the Black Wolf (MOUNT!)
-				["modelID"] = 207
-			}),
-			i(5875, {		-- Blue Ram / Harness: Blue Ram (MOUNT!)
-				["modelID"] = 2787
-			}),
-			i(875, {		-- Brown Horse / Brown Horse Summoning (MOUNT!)
-				["modelID"] = 2404,
-			}),
-			i(16338, {		-- Brown Horse / Knight-Lieutenant's Steed (MOUNT!)
-				["modelID"] = 2404,
-			}),
-			i(16343, {		-- Brown Wolf / Blood Guard's Mount (MOUNT!)
-				["modelID"] = 2328,
-			}),
-			i(20221, {		-- Chromatic Mount / Foror's Fabled Steed (MOUNT!)
-				["modelID"] = 18164,
-			}),
-			i(13325, {		-- Fluorescent Green Mechanostrider (MOUNT!)
-				["modelID"] = 9475,
-			}),
-			i(12327, {		-- Golden Sabercat / Reins of the Golden Sabercat (MOUNT!)
-				["modelID"] = 9714,
-			}),
-			i(1134, {		-- Gray Wolf / Horn of the Gray Wolf (MOUNT!)
-				["modelID"] = 2320,
-			}),
-			mount(15780, {	-- Green Mechanostrider (MOUNT!)
-				["modelID"] = 9475,
-			}),
-			i(8589, {		-- Ivory Raptor / Old Whistle of the Ivory Raptor (MOUNT!)
-				["modelID"] = 6471,
-			}),
-			i(8633, {		-- Leopard / Reins of the Leopard (MOUNT!)
-				["modelID"] = 4805,
-			}),
-			i(23193, {		-- Naxxramas Deathcharger / Naxxramas Deathcharger Reins /// Classic/TBC: Skeletal Steed / Skeletal Steed Reins (MOUNT!)
-				["modelID"] = 10718
-			}),
-			i(8627, {		-- Nightsaber / Reins of the Nightsaber (MOUNT!)
-				["modelID"] = 9991
-			}),
-			i(8590, {		-- Obsidian Raptor / Old Whistle of the Obsidian Raptor (MOUNT!)
-				["modelID"] = 6468,
-			}),
-			i(16339, {		-- Palomino / Commander's Steed (MOUNT!)
-				["modelID"] = 2408,
-			}),
-			i(2413, {		-- Palamino Stallion / Palomino (MOUNT!)
-				["modelID"] = 2408,
-			}),
-			i(12325, {		-- Primal Leopard / Reins of the Primal Leopard (MOUNT!)
-				["modelID"] = 4805,
-			}),
-			i(13323, {		-- Purple Mechanostrider / Purple Mechanostrider (MOUNT!)
-				["modelID"] = 10662,
-			}),
-			i(13324, {		-- Red and Blue Mechanostrider / Red and Blue Mechanostrider (MOUNT!)
-				["modelID"] = 10664,
-			}),
-			i(21736, {	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (MOUNT!)
-				["modelID"] = 15293,
-			}),
-			i(14062, {		-- Riding Kodo / Kodo Mount (MOUNT!)
-				["modelID"] = 11641,
-			}),
-			i(5663, {		-- Red Wolf / Horn of the Red Wolf (MOUNT!)
-				["modelID"] = 2326,
-			}),
-			i(8583, {		-- Skeletal Horse / Horn of the Skeletal Mount (MOUNT!)
-				["modelID"] = 5228,
-			}),
-			i(8628, {		-- Spotted Panther / Reins of the Spotted Nightsaber (MOUNT!)
-				["modelID"] = 6447,
-			}),
-			mount(15781, {	-- Steel Mechanostrider (MOUNT!)
-				["modelID"] = 9476,
-			}),
-			i(18768, {		-- Swift Dawnsaber / Reins of the Swift Dawnsaber (MOUNT!)
-				["modelID"] = 14329,
-			}),
-			i(12326, {		-- Tawny Sabercat / Reins of the Tawny Sabercat (MOUNT!)
-				["modelID"] = 6442,
-			}),
-			i(8630, {		-- Tiger / Reins of the Bengal Tiger (MOUNT!)
-				["modelID"] = 6443,
-			}),
-			i(901, {		-- White Stallion / Deptecated White Stallion Summoning (Mount) (MOUNT!)
-				["modelID"] = 2410,
-			}),
-			i(2415, {		-- White Stallion / White Stallion (MOUNT!)
-				["modelID"] = 2410,
-			}),
-			i(1133, {		-- Winter Wolf / Horn of the Winter Wolf (MOUNT!)
-				["modelID"] = 1166,
-			}),
-		}),
 		filter(QUEST_ITEMS, {
 			i(17409),	-- Encrusted Crystal Fragment
 			i(20883),	-- Qiraji Glyphed Jewel
@@ -408,53 +297,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(31500),	-- Tome of Arcane Missiles XI
 				i(31496),	-- Tome of Fireball XIV
 				i(31498),	-- Tome of Frostbolt XIV
-			}),
-		}),
-		filter(MOUNTS, {
-			tier(TBC_TIER, 0.1, {
-				mount(33630, {	-- Blue Mechanostrider (MOUNT!)
-					["modelID"] = 6569.
-				}),
-				i(21736, {	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (MOUNT!)
-					["modelID"] = 16314,
-				}),
-			}),
-			tier(TBC_TIER, 0.8, {
-				i(29225, {	-- Swift Warstrider / zzoldSwift Warstrider (MOUNT!)
-					["modelID"] = 20359,
-				}),
-			}),
-			tier(TBC_TIER, 2.3, {
-				i(28482, {	-- Great Elite Elekk / Great Elite Elekk (MOUNT!)
-					["modelID"] = 17906,
-				}),
-			}),
-			tier(TBC_TIER, 3.0, {
-				i(25596, {	-- Peep the Phoenix Mount / Peep's Whistle (MOUNT!)
-					["modelID"] = 17890,
-				}),
-			}),
-			tier(TBC_TIER, 4.3, {
-				mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
-					["modelID"] = 26691,
-				}),
-			}),
-			n(P2xx, {
-				mount(44317, {	-- Merciless Nether Drake (MOUNT!)
-					["modelID"] = 20344,
-				}),
-				i(27819, {	-- Swift Razzashi Raptor / Crazy Raptor 75 (MOUNT!)
-					["modelID"] = 15289,
-				}),
-				i(27853, {	-- Swift Razzashi Raptor / Crazy Raptor 150 (MOUNT!)
-					["modelID"] = 15289,
-				}),
-				i(37598, {	-- Swift Zhevra / Swift Zhevra OLD (MOUNT!)
-					["modelID"] = 24693,
-				}),
-				i(28025, {	-- Video Mount / Video Mount (MOUNT!)
-					["modelID"] = 6569,
-				}),
 			}),
 		}),
 	}),
@@ -631,88 +473,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(44125),	-- zzzOLDLesser Inscription of Template - PH
 				i(44126),	-- zzzOLDGreater Inscription of Template - PH
 			}),
-		}),
-		filter(MOUNTS, {
-			tier(WOTLK_TIER, 0.1, {
-				i(43964, {	-- Black Polar Bear / Reins of the Black Polar Bear (MOUNT!)
-					["modelID"] = 27659,
-				}),
-				mount(60136, {	-- Grand Caravan Mammoth (MOUNT!)
-					["modelID"] = 27237
-				}),
-				mount(60140, {	-- Grand Caravan Mammoth (MOUNT!)
-					["modelID"] = 27238
-				}),
-			}),
-			tier(WOTLK_TIER, 0.2, {
-				i(44555, {	-- Swift Mooncloth Carpet / Swift Mooncloth Carpet (NOT IN GAME) (MOUNT!)
-					["modelID"] = 44555,
-				}),
-				i(44557, {	-- Swift Shadoweave Carpet / Swift Ebonweave Carpet (NOT IN GAME) (MOUNT!)
-					["modelID"] = 44557,
-				}),
-				i(44556, {	-- Swift Spellfire Carpet / Swift Spellfire Carpet (NOT IN GAME) (MOUNT!)
-					["modelID"] = 44556,
-				}),
-			}),
-			tier(WOTLK_TIER, 0.3, {
-				i(43963, {	-- Brown Polar Bear / Reins of the Brown Polar Bear (MOUNT!)
-					["modelID"] = 27660,
-				}),
-			}),
-			tier(WOTLK_TIER, 1.0, {
-				i(46101, {	-- Blue Skeletal Warhorse / Blue Skeletal Warhorse (MOUNT!)
-					["modelID"] = 10718,
-				}),
-			}),
-			tier(WOTLK_TIER, 1.2, {
-				i(46755, {	-- Great Golden Kodo / Great Golden Kodo (MOUNT!)
-					["modelID"] = 28556,
-				}),
-				i(46756, {	-- Great Red Elekk / Great Red Elekk (MOUNT!)
-					["modelID"] = 28606,
-				}),
-				i(46749, {	-- Swift Burgundy Wolf / Swift Burgundy Wolf (MOUNT!)
-					["modelID"] = 14335,
-				}),
-				i(46758, {	-- Swift Gray Steed / Swift Gray Steed (MOUNT!)
-					["modelID"] = 29043,
-				}),
-				i(46759, {	-- Swift Moonsaber / Swift Moonsaber (MOUNT!)
-					["modelID"] = 14333,
-				}),
-				i(46760, {	-- Swift Purple Raptor / Swift Purple Raptor (MOUNT!)
-					["modelID"] = 14343,
-				}),
-				i(46761, {	-- Swift Red Hawkstrider / Swift Red Hawkstrider (MOUNT!)
-					["modelID"] = 28607,
-				}),
-				i(46762, {	-- Swift Violet Ram / Swift Violet Ram (MOUNT!)
-					["modelID"] = 28612,
-				}),
-				i(46763, {	-- Turbostride / Turbostrider (MOUNT!)
-					["modelID"] = 14375,
-				}),
-				i(46764, {	-- White Skeletal Warhorse / White Skeletal Warhorse (MOUNT!)
-					["modelID"] = 28605
-				}),
-			}),
-			tier(WOTLK_TIER, 1.3, {
-				mount(66122, {	-- Magic Rooster (MOUNT!)
-					["modelID"] = 29344,
-				}),
-				mount(66123, {	-- Magic Rooster (MOUNT!)
-					["modelID"] = 29378,
-				}),
-				mount(66124, {	-- Magic Rooster (MOUNT!)
-					["modelID"] = 29379,
-				}),
-			}),
-			tier(WOTLK_TIER, {
-				mount(75387, {	-- Tiny Mooncloth Carpet (MOUNT!)
-					["modelID"] = 31837,
-				}),
-			})
 		}),
 		filter(QUEST_ITEMS, {
 			tier(WOTLK_TIER, 1.0, {
@@ -1067,47 +827,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(82463),	-- Unknown
 				i(90568),	-- Unknown
 				i(90569),	-- Unknown
-			}),
-		}),
-		filter(MOUNTS, {
-			tier(MOP_TIER, 0.1, {
-				i(87785, {	-- Albino Riding Crane / Reins of the Albino Riding Crane (MOUNT!)
-					["modelID"] = 43708,
-				}),
-				i(87786, {	-- Black Riding Yak / Reins of the Black Riding Yak (MOUNT!)
-					["modelID"] = 43709,
-				}),
-				i(87787, {	-- Brown Riding Yak / Reins of the Brown Riding Yak (MOUNT!)
-					["modelID"] = 43710,
-				}),
-				i(84728, {	-- Crimson Riding Crane / Reins of the Crimson Riding Crane (MOUNT!)
-					["modelID"] = 42837,
-				}),
-				i(87794, {	-- Golden Water Strider / Reins of the Golden Water Strider (MOUNT!)
-					["modelID"] = 43716,
-				}),
-				i(87793, {	-- Jade Water Strider / Reins of the Jade Water Strider (MOUNT!)
-					["modelID"] = 43714,
-				}),
-				i(87784, {	-- Jungle Riding Crane / Reins of the Jungle Riding Crane (MOUNT!)
-					["modelID"] = 43707,
-				}),
-				i(87792, {	-- Orange Water Strider / Reins of the Orange Water Strider (MOUNT!)
-					["modelID"] = 43715,
-				}),
-				i(84753, {	-- White Riding Yak / Reins of the White Riding Yak (MOUNT!)
-					["modelID"] = 41089,
-				}),
-			}),
-			tier(MOP_TIER, 0.4, {
-				i(91016, {	-- Great Red Dragon Turtle / Reins of the Great Red Dragon Turtle (MOUNT!)
-					["modelID"] = 42352,
-				}),
-			}),
-			tier(MOP_TIER, 4.0, {
-				i(104011, {	-- Stormcrow / Stormcrow (MOUNT!)
-					["modelID"] = 51323,
-				}),
 			}),
 		}),
 		filter(QUEST_ITEMS, {
@@ -1533,23 +1252,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(124644),	-- Unknown
 			}),
 		}),
-		filter(MOUNTS, {
-			tier(WOD_TIER, 0.2, {
-				i(116657, {	-- Ancient Leatherhide / Ancient Leatherhide (MOUNT!)
-					["modelID"] = 52373,
-				}),
-			}),
-			tier(WOD_TIER, 2.0, {
-				i(128480, {	-- Bristling Hellboar / Bristling Hellboar (MOUNT!)
-					["modelID"] = 64726,
-				}),
-			}),
-			tier(WOD_TIER, 2.1, {
-				mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
-					["modelID"] = 65845,
-				}),
-			}),
-		}),
 		filter(QUEST_ITEMS, {
 			tier(WOD_TIER, 0.1, {
 				i(109012),	-- Frostwolf Ancestral Totem
@@ -1745,33 +1447,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(137602),	-- Unknown
 				i(140787),	-- Unknown
 				i(140921),	-- Unknown
-			}),
-		}),
-		filter(MOUNTS, {
-			tier(LEGION_TIER, 0.3, {
-				i(137576, {	-- Coldflame Infernal / Dim Coldflame Core (MOUNT!)
-					["modelID"] = 70052,
-				}),
-				i(138386, {	-- Fel Bat (Test) (MOUNT!)
-					["modelID"] = 68250,
-				}),
-				i(137615, {	-- Flarecore Infernal / Molten Flarecore (MOUNT!)
-					["modelID"] = 70127,
-				}),
-				i(129744, {	-- Ironbound Wraithcharger / Iron Warhorse (MOUNT!)
-					["modelID"] = 48946,
-				}),
-			}),
-			tier(LEGION_TIER, 2.0, {
-				i(143752, {	-- Mag'har Direwolf / Sound Test Mount (MOUNT!)
-					["modelID"] = 84468,
-				}),
-				mount(241851, {	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-					["modelID"] = 74303,
-				}),
-				mount(239363, {	-- Swift Spectral Hippogryph (MOUNT!)
-					["modelID"] = 75637,
-				}),
 			}),
 		}),
 		filter(QUEST_ITEMS, {
@@ -2306,24 +1981,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(164765),	-- Unknown
 				i(164769),	-- Unknown
 				i(169192),	-- Unknown
-			}),
-		}),
-		filter(MOUNTS, {
-			tier(BFA_TIER, 0.1, {
-				i(156885),	-- Gold Gladiator's Proto-Drake
-				i(156883),	-- Green Gladiator's Proto-Drake
-				i(156882),	-- Pale Gladiator's Proto-Drake
-				i(163063),	-- Reins of the spectral phoenix
-				i(163188),	-- Surf Jelly
-				i(163186),	-- Tempestuous Skystallion
-			}),
-			tier(BFA_TIER, 1.0, {
-				i(166417)	-- Reins of the Onyx War Hyena
-			}),
-			tier(BFA_TIER, 2.0, {
-				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet)
-					--["modelID"] = ,
-				}),
 			}),
 		}),
 		filter(QUEST_ITEMS, {
@@ -3172,8 +2829,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(174496),	-- Third Bell of Markos
 				i(174489),	-- Treated Animacone
 				i(183965),	-- Uncommon Anima Items
-				i(182195),	-- Vanity Mirror
-				i(182210),	-- Vanity Mirror
 				i(178589),	-- Venthyr Armaments
 				i(180211),	-- Venthyr Eye
 				i(180216),	-- Venthyr Heart
@@ -3254,26 +2909,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(P9xx, {
 				i(173774),	-- Wilderbew Special
 				i(173790),	-- Bunch of Berries
-			}),
-		}),
-		filter(MOUNTS, {
-			tier(SL_TIER, 0.1, {
-				i(182083),	-- Bonecleaver's Skullboar
-				i(181817),	-- Deathbringer's Flayedwing
-				i(184035),	-- Silessa's Harness
-			}),
-			tier(SL_TIER, 1.0, {
-				i(186491),	-- Spring Wilderling Harness
-				i(186639),	-- Pilfered Gearglider
-				i(186640),	-- Silver Gearglider
-				--
-				i(187412), -- Shardhide Ka-Sha (Silver Shardhide Mount)
-			}),
-			tier(SL_TIER, 2.0, {
-				mount(356802, {		-- Holy Lightstrider
-					["modelID"] = 101577,
-				}),
-				i(187674),	-- [PH] Progenitor Jellyfish (Dark)
 			}),
 		}),
 		filter(QUEST_ITEMS, {

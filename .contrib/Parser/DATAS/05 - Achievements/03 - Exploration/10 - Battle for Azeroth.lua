@@ -267,7 +267,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(5),		-- Ready for War
 		}),
 		ach(13250, {	-- Battle for Azeroth Pathfinder, Part Two
-			i(169162),	-- Wonderwing 2.0
+			i(169162),	-- Wonderwing 2.0 (MOUNT!)
 			crit(1),	-- Rustbolt Resistance Revered
 			crit(2),	-- Unshackled Revered
 			crit(3),	-- Battle for Azeroth Pathfinder, Part One
@@ -280,27 +280,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),		-- Weathered Nazmani Tablet
 			crit(3),		-- Cracked Tablet
 			crit(4),		-- Fractured Tablet
-		}),
-		ach(14159, {	-- Combating the Corruption
-			crit(1),		-- Corrupted Acolyte slain
-			crit(2),		-- Corrupted Assassin slain
-			crit(3),		-- Corrupted Beheader slain
-			crit(4),		-- Corrupted Bloodseeker slain
-			crit(5),		-- Corrupted Bonestripper slain
-			crit(6),		-- Corrupted Despoiler slain
-			crit(7),		-- Corrupted Dominator slain
-			crit(8),		-- Corrupted Doomsayer slain
-			crit(9),		-- Corrupted Fleshbeast slain
-			crit(10),		-- Corrupted Jailer slain
-			crit(11),		-- Corrupted Mind Eater slain
-			crit(12),		-- Corrupted Neferset Guard slain
-			crit(13),		-- Corrupted Observer slain
-			crit(14),		-- Corrupted Putrefaction slain
-			crit(15),		-- Corrupted Summoner slain
-			crit(16),		-- Corrupted Thaumaturge slain
-			crit(17),		-- Corrupted Thoughtstealer slain
-			crit(18),		-- Corrupted Tormentor slain
-			crit(19),		-- Corrupted Watcher slain
 		}),
 		ach(13094, {	-- Cursed Game Hunter
 			--[[
@@ -667,7 +646,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(36),	-- Urduu
 			crit(37),	-- Voice in the Deeps
 		}),
-		ach(14158),	-- It's Not A Tumor!
 		ach(13479, {	-- Junkyard Architect
 			ach(13478),	-- Junkyard Collector
 			crit(1),	-- Scrap Grenade
@@ -739,7 +717,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(8),		-- Legends of the Tidesages - Part 8
 		}),
 		ach(13541, {	-- Mecha-Done
-			i(168329),	-- Keys to the Model W
+			i(168329),	-- Mechacycle Model W (MOUNT!)
 			crit(1),	-- The Mechagonian Threat
 			crit(2),	-- Rest in Pisons
 			crit(3),	-- Outside Influences
@@ -936,7 +914,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["_quests"] = { 56003 },
 			}),
 		}),
-		ach(14160),		-- Rare to Well Done
 		ach(13470, {	-- Rest In Pistons
 			crit(1),	-- Mechagnoian Nullfier
 			crit(2),	-- The Scrap King
@@ -1590,7 +1567,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(12, {	-- Vale Flutterby
 				["crs"] = { 134700 },	-- Vale Flutterby
 				["coord"] = { 52.75, 83.73, VOLDUN },
-			}),			
+			}),
 		}),
 		ach(13635, {	-- Tour of the Depths
 			crit(1),	-- Complete an Emissary for your ally in Nazjatar
@@ -1660,7 +1637,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(2),	-- 7 Glowing Arcane Trunks
 		}),
 		ach(13638, {	-- Undersea Usurper
-			i(169194),	-- Snapback Scuttler
+			i(169194),	-- Snapback Scuttler (MOUNT!)
 			title(405),	-- of the Deeps
 			crit(1),	-- Tour of the Depths
 			crit(2),	-- Nazjatarget Elminated

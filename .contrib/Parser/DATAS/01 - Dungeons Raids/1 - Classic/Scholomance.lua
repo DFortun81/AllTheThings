@@ -699,9 +699,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["timeline"] = { "removed 4.0.3" },
 						["cr"] = 10499,	-- Spectral Researcher
 					}),
-					applyclassicphase(PHASE_SIX, i(22526, {	-- Bone Fragments
-						["timeline"] = { "deleted 4.0.3" },
-					})),
+					applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
 					i(12843, {	-- Corruptor's Scourgestone
 						["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 						["timeline"] = { "deleted 4.0.3" },

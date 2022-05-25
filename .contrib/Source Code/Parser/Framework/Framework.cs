@@ -244,6 +244,11 @@ namespace ATT
         public static bool ProcessingSourceData = false;
 
         /// <summary>
+        /// Whether the Parser is processing Merge data which is allowed to Merge certain fields to be shared among all Sources of a Thing
+        /// </summary>
+        public static bool ProcessingMergeData = false;
+
+        /// <summary>
         /// Represents whether we are currently processing the main Achievements Category
         /// </summary>
         private static bool ProcessingAchievementCategory { get; set; }
@@ -382,7 +387,8 @@ namespace ATT
             }
             else
             {
-                DataConsolidation(data);
+                if (!DataConsolidation(data))
+                    return false;
             }
 
             // If this container has groups, then process those groups as well.
@@ -558,111 +564,6 @@ namespace ATT
                 }
             }
 
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
-            {
-                // 2.0.1 or older items.
-                int removed = 0;
-                var index = 0;
-                long firstVersion = 0;
-                long lastVersion = 0;
-                long removedPatch = 0;
-                foreach (var entry in timeline)
-                {
-                    var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion();
-                    if (version > lastVersion) lastVersion = version;
-                    switch (commandSplit[0])
-                    {
-                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
-                        case "created":
-                            {
-                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
-                                else removed = 1;
-                                break;
-                            }
-                        case "added":
-                            {
-                                // If this is the first patch the thing was added.
-                                if (index == 0)
-                                {
-                                    firstVersion = version;
-                                    if (CURRENT_RELEASE_VERSION < version)
-                                    {
-                                        return false;    // Invalid
-                                    }
-                                    else removed = 0;
-                                }
-                                else
-                                {
-                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
-                                }
-                                break;
-                            }
-                        case "deleted":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
-                                }
-                                break;
-                            }
-                        case "removed":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
-                                }
-                                break;
-                            }
-                        case "blackmarket":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
-                                break;
-                            }
-                        case "timewalking":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
-                                break;
-                            }
-                    }
-                    ++index;
-                }
-
-                // final removed type for the current parser patch
-                switch (removed)
-                {
-                    // Never Implemented
-                    case 1:
-                    // Never Implemented (after already being available previously)
-                    case 4:
-                        data["u"] = 1;
-                        break;
-                    // Black Market
-                    case 3:
-                        data["u"] = 9;
-                        break;
-                    // Timewalking re-implemented
-                    case 5:
-                        data["u"] = 1016;
-                        break;
-                    // Future Unobtainable
-                    case 6:
-                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
-                        break;
-                    // Removed From Game
-                    case 2:
-                        data["u"] = 2;
-                        break;
-                }
-            }
-
             // Remove any fields which contain 'empty' data
             if (data.TryGetValue("customCollect", out List<object> cc))
             {
@@ -798,7 +699,7 @@ namespace ATT
                     switch (filter)
                     {
                         case Objects.Filters.Recipe:
-                            data["recipeID"] = data["spellID"];
+                            data["recipeID"] = f;
                             break;
                             //default:
                             //    data.Remove("spellID");
@@ -918,6 +819,8 @@ namespace ATT
                     Trace.WriteLine($"Single 'maps' value used within Achievement: {achID}. It can be Sourced directly in the Location.");
             }
 
+
+            // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
             if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
@@ -926,7 +829,7 @@ namespace ATT
                 }
                 else
                 {
-                    switch (Convert.ToInt64(requiredSkill))
+                    switch (requiredSkill)
                     {
                         // https://www.wowhead.com/skill=
                         case 40:    // Rogue Poisons
@@ -953,6 +856,7 @@ namespace ATT
                 }
 
                 // if this data has a recipeID, cache the information
+                // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
                 if (data.TryGetValue("recipeID", out long recipeID))
                 {
                     Items.TryGetName(data, out string recipeName);
@@ -995,15 +899,21 @@ namespace ATT
         /// * Consolidation of dictionary information into sourced data
         /// </summary>
         /// <param name="data"></param>
-        private static void DataConsolidation(Dictionary<string, object> data)
+        private static bool DataConsolidation(Dictionary<string, object> data)
         {
             // Merge all relevant dictionary info into the data
             Items.MergeInto(data);
             Objects.MergeInto(data);
 
+            // verify the timeline data of Merged data (can prevent keeping the data in the data container)
+            if (!CheckTimeline(data))
+                return false;
+
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
+
+            CheckRequireSkill(data);
 
             CheckHeirloom(data);
 
@@ -1022,6 +932,118 @@ namespace ATT
             // clean up any metadata tags
             foreach (string key in data.Keys.Where(k => k.StartsWith("_")).ToArray())
                 data.Remove(key);
+
+            return true;
+        }
+
+        private static bool CheckTimeline(Dictionary<string, object> data)
+        {
+            // Check to see what patch this data was made relevant for.
+            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
+            {
+                // 2.0.1 or older items.
+                int removed = 0;
+                var index = 0;
+                long firstVersion = 0;
+                long lastVersion = 0;
+                long removedPatch = 0;
+                foreach (var entry in timeline)
+                {
+                    var commandSplit = Convert.ToString(entry).Split(' ');
+                    var version = commandSplit[1].Split('.').ConvertVersion();
+                    if (version > lastVersion) lastVersion = version;
+                    switch (commandSplit[0])
+                    {
+                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
+                        case "created":
+                            {
+                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
+                                else removed = 1;
+                                break;
+                            }
+                        case "added":
+                            {
+                                // If this is the first patch the thing was added.
+                                if (index == 0)
+                                {
+                                    firstVersion = version;
+                                    if (CURRENT_RELEASE_VERSION < version)
+                                    {
+                                        return false;    // Invalid
+                                    }
+                                    else removed = 0;
+                                }
+                                else
+                                {
+                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
+                                }
+                                break;
+                            }
+                        case "deleted":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
+                                break;
+                            }
+                        case "removed":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
+                                else
+                                {
+                                    // Mark the first patch this was removed on. (the upcoming patch)
+                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removed != 1) removed = 6;
+                                }
+                                break;
+                            }
+                        case "blackmarket":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
+                                break;
+                            }
+                        case "timewalking":
+                            {
+                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                break;
+                            }
+                    }
+                    ++index;
+                }
+
+                // final removed type for the current parser patch
+                switch (removed)
+                {
+                    // Never Implemented
+                    case 1:
+                    // Never Implemented (after already being available previously)
+                    case 4:
+                        data["u"] = 1;
+                        break;
+                    // Black Market
+                    case 3:
+                        data["u"] = 9;
+                        break;
+                    // Timewalking re-implemented
+                    case 5:
+                        data["u"] = 1016;
+                        break;
+                    // Future Unobtainable
+                    case 6:
+                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
+                        break;
+                    // Removed From Game
+                    case 2:
+                        data["u"] = 2;
+                        break;
+                }
+            }
+
+            return true;
         }
 
         private static void ConsolidateHeirarchicalFields(Dictionary<string, object> parentGroup, List<object> groups)
@@ -1169,6 +1191,7 @@ namespace ATT
 
         /// <summary>
         /// Attempts to find the recipe ID in the already parsed data which corresponds to this item.... by name
+        /// TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua
         /// </summary>
         /// <param name="data"></param>
         private static void TryFindRecipeID(Dictionary<string, object> data)
@@ -1198,6 +1221,42 @@ namespace ATT
         }
 
         /// <summary>
+        /// Converts the Specific 'requireSkill' field of the data to the General 'requireSkill'
+        /// </summary>
+        /// <param name="data"></param>
+        private static void CheckRequireSkill(Dictionary<string, object> data)
+        {
+            if (data.TryGetValue("requireSkill", out long requiredSkill))
+            {
+                if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
+                {
+                    data["requireSkill"] = newRequiredSkill;
+                }
+                else
+                {
+                    switch (requiredSkill)
+                    {
+                        // https://www.wowhead.com/skill=
+                        case 40:    // Rogue Poisons
+                        case 149:   // Wolf Riding
+                        case 150:   // Tiger Riding
+                        case 762:   // Riding
+                        case 849:   // Warlock
+                        case 0: // Explicitly ignoring.
+                                // Ignore! (and remove!)
+                            data.Remove("requireSkill");
+                            break;
+                        default:
+                            Trace.Write("Missing Skill ID in Conversion Table: ");
+                            Trace.WriteLine(requiredSkill);
+                            Trace.WriteLine(ToJSON(data));
+                            break;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
         /// Checks to assign an heirloomID to the data if it meets the criteria of being an heirloom
         /// </summary>
         /// <param name="data"></param>
@@ -1219,9 +1278,18 @@ namespace ATT
                     }
 
                     // Heirlooms quality for non-equippable Items are not really Heirlooms
-                    if (filter == Objects.Filters.Ignored || filter == Objects.Filters.Consumable || filter == Objects.Filters.Faction)
-                        return;
+                    switch (filter)
+                    {
+                        case Objects.Filters.Ignored:
+                        case Objects.Filters.Consumable:
+                        case Objects.Filters.Faction:
+                        case Objects.Filters.Toy:
+                        case Objects.Filters.Quest:
+                        case Objects.Filters.Recipe:
+                            return;
+                    }
 
+                    //LogDebugFormatted("ItemID:{0} Marked as Heirloom. Filter: {1}", itemID, filter.ToString());
                     data["heirloomID"] = itemID;
                     if (data.ContainsKey("ignoreSource"))
                     {
@@ -1445,14 +1513,6 @@ namespace ATT
             {
                 ProcessingAchievementCategory = container.Key == "Achievements";
                 Process(container.Value, 0, 1);
-            }
-
-            // Remove the removed from game flag from the Tome of Polymorph: Turtle
-            var tomeOfPolymorph = Items.GetNull(22739);
-            if (tomeOfPolymorph != null)
-            {
-                tomeOfPolymorph.Remove("timeline");
-                if (tomeOfPolymorph.TryGetValue("u", out long u) && u != 14) tomeOfPolymorph.Remove("u");
             }
 
             // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
@@ -2576,6 +2636,7 @@ namespace ATT
                             // This is slightly more annoying to parse, but it works okay.
                             if (pair.Value is Dictionary<long, object> itemDB)
                             {
+                                ProcessingMergeData = true;
                                 foreach (var itemValuePair in itemDB)
                                 {
                                     if (itemValuePair.Value is Dictionary<string, object> item)
@@ -2590,6 +2651,7 @@ namespace ATT
                                         Console.ReadLine();
                                     }
                                 }
+                                ProcessingMergeData = false;
                             }
                             else if (pair.Value is List<object> items)
                             {

@@ -98,11 +98,12 @@ _.ObjectNames = {
 	[112888] = "Dusty Shelf",
 	[112948] = "Intrepid's Locked Strongbox",
 	[113757] = "Shadowforge Cache",
-	-- #if AFTER WRATH
-	[113768] = [[GetSpellInfo(61820),	-- Brightly Colored Egg]],
-	-- #else
-	[113768] = "Brightly Colored Egg",
-	-- #endif
+	[113768] =
+		-- #if AFTER WRATH
+		[[GetSpellInfo(61820),	-- Brightly Colored Egg]],
+		-- #else
+		"Brightly Colored Egg",
+		-- #endif
 	[113791] = "Brazier of Everfount",
 	[123329] = "Baelog's Chest",
 	[124388] = "Garrett Family Chest",
@@ -332,8 +333,10 @@ _.ObjectNames = {
 	[186881] = "Dark Iron Sabotage Plans",
 	[186887] = "Large Jack-o'-Lantern",
 	[187021] = "Bakkalzu's Satchel",
+	[187072] = "Razorthorn Root",
 	[187236] = "Winter Veil Gift",
 	[187273] = "Suspicious Hoofprint",
+	[187333] = "Bloodberry Bush",
 	[187559] = "Horde Bonfire",
 	[187564] = "Alliance Bonfire",
 	[187565] = "Elder Atkanok",
@@ -1108,6 +1111,7 @@ _.ObjectNames = {
 	[241150] = "Small Treasure Chest",
 	[241151] = "Small Treasure Chest",
 	[241152] = "Treasure Chest",
+	[241153] = "Small Treasure Chest",
 	[241154] = "Small Treasure Chest",
 	[241155] = "Treasure Chest",
 	[241180] = "Treasure Chest",
@@ -1251,6 +1255,7 @@ _.ObjectNames = {
 	[245479] = "Battered Chest",
 	[245524] = "Treasure Chest",
 	[245525] = "Small Treasure Chest",
+	[245527] = "Treasure Chest",
 	[245528] = "Treasure Chest",
 	[245529] = "Small Treasure Chest",
 	[245530] = "Glimmering Treasure Chest",
@@ -1334,7 +1339,9 @@ _.ObjectNames = {
 	[250671] = "Notes on the Veiled Hand",
 	[250984] = "Small Treasure Chest",
 	[250985] = "Treasure Chest",
+	[250987] = "Small Treasure Chest",
 	[251032] = "Armoire",
+	[251124] = "Glimmering Treasure Chest",
 	[251168] = "Ephemeral Crystal",
 	[251218] = "Rollo's Runestone",
 	[251220] = "Ragnar's Runestone",
@@ -1354,6 +1361,7 @@ _.ObjectNames = {
 	[251762] = "Small Treasure Chest",
 	[251764] = "Small Treasure Chest",
 	[251772] = "Small Treasure Chest",
+	[251776] = "Small Treasure Chest",
 	[251780] = "Small Treasure Chest",
 	[251782] = "Small Treasure Chest",
 	[251792] = "Small Treasure Chest",
@@ -1466,6 +1474,7 @@ _.ObjectNames = {
 	[257393] = "Treasure Chest",
 	[257545] = "Treasure Chest",
 	[257546] = "Treasure Chest",
+	[257978] = "Treasure Chest",
 	[257999] = "Technique: Tome of the Tranquil Mind",
 	[258690] = "Small Treasure Chest",
 	[258978] = "Waterlogged Tome",
@@ -1516,6 +1525,7 @@ _.ObjectNames = {
 	[273414] = "Ancient Eredar Cache",
 	[273415] = "Ancient Eredar Cache",
 	[273439] = "Ancient Eredar Cache",
+	[273443] = "Void-Seeped Cache",
 	[273519] = "Legion War Supplies",
 	[273521] = "Legion War Supplies",
 	[273523] = "Legion War Supplies",
@@ -1889,7 +1899,10 @@ _.ObjectNames = {
 	[337237] = "Lost Vault",
 	[337241] = "Stashed Equipment",
 	[339211] = "|cFFFFFFFFStep 2:|r Empty Dish",
+	[339243] = "Infested Strongbox",
 	[339248] = "Infested Cache",
+	[339249] = "Infested Cache",
+	[339250] = "Infested Cache",
 	[339283] = "Forgotten Noble's Chest",
 	[339601] = "Scroll of Aeons",
 	[339625] = "Sophia's Gift",
@@ -2205,6 +2218,8 @@ _.ObjectNames = {
 	[369439] = "Riftbound Cache",
 	[369602] = "Hands of Defiance",
 	[369757] = "Submerged Chest",
+	[369893] = "Urgent Missive",
+	[369894] = "Urgent Missive",
 	[370140] = "Damaged Jiro Stash",
 	[370469] = "Spectral Feed",
 	[370494] = "Toccatian Cache",
@@ -2474,11 +2489,12 @@ _.ObjectIcons = {
 	[37099] = "Interface/Icons/INV_Misc_StoneTablet_03",	-- Atal'ai Tablet
 	[62483] = "Interface/Icons/INV_WorseRobot",
 	[112948] = "Interface/Icons/battleground_strongbox_skirmish_horde",	-- Intrepid's Locked Strongbox
-	-- #if AFTER WRATH
-	[113768] = "Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
-	-- #else
-	[113768] = [[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
-	-- #endif
+	[113768] =
+		-- #if AFTER WRATH
+		"Interface/Icons/inv_egg_06",	-- Brightly Colored Egg
+		-- #else
+		[[_.asset("Holiday_noblegarden")]],	-- Brightly Colored Egg
+		-- #endif
 	[131474] = "Interface/Icons/Creatureportrait_Nexus_Floating_Disc",	-- The Discs of Norgannon
 	[138492] = "Interface/Icons/inv_enchanting_wod_crystal2",	-- Shards of Myzrael
 	[141832] = "Interface/Icons/inv_hammer_19",	-- Gong of Zul'Farrak
@@ -2572,11 +2588,12 @@ _.ObjectIcons = {
 	[182549] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Fel Orc Plans
 	[182587] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
 	[182588] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
-	-- #if AFTER CATA
-	[182947] = "Interface/Icons/ability_warlock_ancientgrimoire",	-- The Codex of Blood
-	-- #else
-	[182947] = "Interface/Icons/inv_misc_book_06",	-- The Codex of Blood
-	-- #endif
+	[182947] =
+		-- #if AFTER CATA
+		"Interface/Icons/ability_warlock_ancientgrimoire",	-- The Codex of Blood
+		-- #else
+		"Interface/Icons/inv_misc_book_06",	-- The Codex of Blood
+		-- #endif
 	[182952] = "Interface/Icons/INV_Crate_01",	-- Steam Pump Flotsam
 	[183770] = "Interface/Icons/Spell_Mage_FocusingCrystal",	-- B'naar Control Console
 	[183811] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster

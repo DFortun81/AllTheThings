@@ -599,7 +599,8 @@ _.Zones =
 				}),
 				q(58582, {	-- Return of the Black Prince
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
+					["provider"] = { "o", 369894 },	-- Urgent Missive
+					["coord"] = { 58.5, 62.6, ZANDALAR },
 					["description"] = "Automatically granted.",
 				}),
 				q(50881, {	-- Royal Report

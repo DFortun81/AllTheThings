@@ -768,7 +768,7 @@ _.Zones =
 					i(170204, {	-- Symbol of Gral (TOY!)
 						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 					}),
-					i(167170, {	-- Unshackled Waveray
+					i(167170, {	-- Unshackled Waveray (MOUNT!)
 						["cost"] = { { "c", 1721, 250 }, },	-- 250x Prismatic Manapearl
 					}),
 				},

@@ -551,7 +551,7 @@ root("Zones", {
 						["sourceQuest"] = 10913,	-- An Improper Burial
 					}),
 					q(10112, {	-- A Personal Favor
-						["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
+						["qg"] = 18484,	-- Wind Trader Lathrai
 						["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 						["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 						["groups"] = {
@@ -562,7 +562,7 @@ root("Zones", {
 						},
 					}),
 					q(10913, {	-- An Improper Burial -- aa
-						["provider"] = { "n", 22446 },	-- Commander Ra'vaj
+						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
 					q(10013, {	-- An Unseen Hand
@@ -573,39 +573,39 @@ root("Zones", {
 						["sourceQuest"] = 10000,	-- An Unwelcome Presence
 					}),
 					q(10000, {	-- An Unwelcome Presence
-						["provider"] = { "n", 18383 },	-- Kurgatok
+						["qg"] = 18383,	-- Kurgatok
 						["coord"] = { 48.8, 45.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10201, {	-- And Now, the Moment of Truth
-						["provider"] = { "n", 18385 },	-- Rakoria
+						["qg"] = 18385,	-- Rakoria
 						["coord"] = { 50.1, 44.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9993,	-- Olemba Seed Oil
 					}),
 					q(10868, {	-- Arakkoa War Path
-						["provider"] = { "n", 18712 },	-- Advisor Faila
+						["qg"] = 18712,	-- Advisor Faila
 						["coord"] = { 48.9, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					q(9996, {	-- Attack on Firewing Point (A)
-						["provider"] = { "n", 21006 },	-- Lieutenant Meridian
+						["qg"] = 21006,	-- Lieutenant Meridian
 						["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10444,	-- Report to the Allerian Post
 					}),
 					q(9997, {	-- Attack on Firewing Point (H)
-						["provider"] = { "n", 21007 },	-- Sergeant Chawni
+						["qg"] = 21007,	-- Sergeant Chawni
 						["coord"] = { 63.2, 42.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10448,	-- Report to Stonebreaker Camp
 					}),
 					q(10878, {	-- Before Darkness Falls -- aa
-						["provider"] = { "n", 22370 },	-- Mekeda
+						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 					}),
 					q(9978, {	-- By Any Means Necessary
-						["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
+						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 						["sourceQuests"] = {
 							9971,	-- Clues in the Thicket
@@ -621,15 +621,15 @@ root("Zones", {
 						},
 					}),
 					q(9971, {	-- Clues in the Thicket
-						["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
+						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					}),
 					q(10922, {	-- Digging Through Bones -- aa
-						["provider"] = { "n", 22458 },	-- Chief Archaeologist Letoll
+						["qg"] = 22458,	-- Chief Archaeologist Letoll
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 					}),
 					q(10051, {	-- Escape from Firewing Point! (A)
-						["provider"] = { "n", 18760 },	-- Isla Starmane
+						["qg"] = 18760,	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -639,7 +639,7 @@ root("Zones", {
 						},
 					}),
 					q(10052, {	-- Escape from Firewing Point! (H)
-						["provider"] = { "n", 18760 },	-- Isla Starmane
+						["qg"] = 18760,	-- Isla Starmane
 						["coord"] = { 73.9, 35.1, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -649,7 +649,7 @@ root("Zones", {
 						},
 					}),
 					q(10887, {	-- Escaping the Tomb -- aa
-						["provider"] = { "n", 22377 },	-- Akuno
+						["qg"] = 22377,	-- Akuno
 						["coord"] = { 30.6, 49.1, TEROKKAR_FOREST },
 						["groups"] = {
 							i(31733),	-- Akuno's Blade
@@ -659,7 +659,7 @@ root("Zones", {
 						},
 					}),
 					q(10923, {	-- Evil Draws Near
-						["provider"] = { "n", 22456 },	-- Oakun
+						["qg"] = 22456,	-- Oakun
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 						["sourceQuest"] = 10877,	-- The Dread Relic
 						["groups"] = {
@@ -669,7 +669,7 @@ root("Zones", {
 						},
 					}),
 					q(10228, {	-- Ezekiel
-						["provider"] = { "n", 19417 },	-- Ramdor the Mad
+						["qg"] = 19417,	-- Ramdor the Mad
 						["coord"] = { 35.2, 66.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10227,	-- I See Dead Draenei
 					}),
@@ -681,16 +681,16 @@ root("Zones", {
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
 					}),
 					q(10920, {	-- For the Fallen
-						["provider"] = { "n", 22462 },	-- Vindicator Haylen
+						["qg"] = 22462,	-- Vindicator Haylen
 						["coord"] = { 49.7, 76.1, TEROKKAR_FOREST },
 					}),
 					q(10929, {	-- Fumping
-						["provider"] = { "n", 22481 },	-- Dwarfowitz
+						["qg"] = 22481,	-- Dwarfowitz
 						["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10922,	-- Digging Through Bones
 					}),
 					q(10031, {	-- Helping the Lost Find Their Way
-						["provider"] = { "n", 19417 },	-- Ramdor the Mad
+						["qg"] = 19417,	-- Ramdor the Mad
 						["coord"] = { 35.1, 66.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10030,	-- Recover the Bones
 						["groups"] = {
@@ -701,16 +701,16 @@ root("Zones", {
 						},
 					}),
 					q(10227, {	-- I See Dead Draenei -- aa
-						["provider"] = { "n", 19697 },	-- Ha'lei
+						["qg"] = 19697,	-- Ha'lei
 						["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },
 					}),
 					q(9990, {	-- Investigate Tuurem
-						["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
+						["qg"] = 18484,	-- Wind Trader Lathrai
 						["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 						["sourceQuest"] = 10112,	-- A Personal Favor
 					}),
 					q(9951, {	-- It's Watching You! -- aa
-						["provider"] = { "n", 18424 },	-- Warden Treelos
+						["qg"] = 18424,	-- Warden Treelos
 						["coords"] = {
 							{ 43.4, 22.4, TEROKKAR_FOREST },
 							{ 44.3, 24.2, TEROKKAR_FOREST },
@@ -729,7 +729,7 @@ root("Zones", {
 						},
 					}),
 					q(10042, {	-- Kill the Shadow Council! (A)
-						["provider"] = { "n", 18715 },	-- Private Weeks
+						["qg"] = 18715,	-- Private Weeks
 						["coord"] = { 40.4, 36.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10023,	-- Patriarch Ironjaw
@@ -740,7 +740,7 @@ root("Zones", {
 						},
 					}),
 					q(10043, {	-- Kill the Shadow Council (H)
-						["provider"] = { "n", 18714 },	-- Scout Neftis
+						["qg"] = 18714,	-- Scout Neftis
 						["coord"] = { 39.0, 43.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10041,	-- Who Are They?
@@ -763,7 +763,7 @@ root("Zones", {
 						},
 					}),
 					q(10006, {	-- Letting Earthbinder Tavgren Know (H)
-						["provider"] = { "n", 18447 },	-- Tooki
+						["qg"] = 18447,	-- Tooki
 						["coord"] = { 50.0, 45.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10447,	-- The Final Code
@@ -775,7 +775,7 @@ root("Zones", {
 						},
 					}),
 					q(10026, {	-- Magical Disturbances
-						["provider"] = { "n", 18252 },	-- Andarl
+						["qg"] = 18252,	-- Andarl
 						["coord"] = { 58.4, 53.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
@@ -784,7 +784,7 @@ root("Zones", {
 						},
 					}),
 					q(10027, {	-- Magical Disturbances
-						["provider"] = { "n", 18383 },	-- Kurgatok
+						["qg"] = 18383,	-- Kurgatok
 						["coord"] = { 48.8, 45.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
@@ -794,7 +794,7 @@ root("Zones", {
 						["coord"] = { 37.7, 51.3, TEROKKAR_FOREST },
 					}),
 					q(9993, {	-- Olemba Seed Oil
-						["provider"] = { "n", 18385 },	-- Rakoria
+						["qg"] = 18385,	-- Rakoria
 						["coord"] = { 50.1, 44.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
@@ -803,45 +803,45 @@ root("Zones", {
 						},
 					}),
 					q(9992, {	-- Olemba Seeds
-						["provider"] = { "n", 18390 },	-- Ros'eleth
+						["qg"] = 18390,	-- Ros'eleth
 						["coord"] = { 57.4, 55.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10023, {	-- Patriarch Ironjaw
-						["provider"] = { "n", 18384 },	-- Malukaz
+						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10018,	-- Vestments of the Wolf Spirit
 					}),
 					q(10030, {	-- Recover the Bones
-						["provider"] = { "n", 18675 },	-- Soolaveen
+						["qg"] = 18675,	-- Soolaveen
 						["coord"] = { 37.1, 49.5, TEROKKAR_FOREST },
 						["sourceQuest"] = 10840,	-- The Tomb of Lights
 					}),
 					q(10448, {	-- Report to Stonebreaker Camp
-						["provider"] = { "n", 18447 },	-- Tooki
+						["qg"] = 18447,	-- Tooki
 						["coord"] = { 50.0, 45.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9995,	-- What Are These Things?
 					}),
 					q(10444, {	-- Report to the Allerian Post
-						["provider"] = { "n", 18459 },	-- Jenai Starwhisper
+						["qg"] = 18459,	-- Jenai Starwhisper
 						["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9994,	-- What Are These Things?
 					}),
 					q(10926, {	-- Return to Sha'tari Base Camp
-						["provider"] = { "n", 22462 },	-- Vindicator Haylen
+						["qg"] = 22462,	-- Vindicator Haylen
 						["coord"] = { 49.7, 76.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10921,	-- Terokkarantula
 					}),
 					q(10889, {	-- Return to Shattrath
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10874,	-- Veil Shalas: Signal Fires
 					}),
 					q(10863, {	-- Secrets of the Arakkoa
-						["provider"] = { "n", 15991 },	-- Lady Dena Kennedy
+						["qg"] = 15991,	-- Lady Dena Kennedy
 						["coord"] = { 57.6, 56.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -852,7 +852,7 @@ root("Zones", {
 						["sourceQuest"] = 10847,	-- The Eyes of Skettis
 					}),
 					q(10898, {	-- Skywing -- aa
-						["provider"] = { "n", 22424 },	-- Skywing
+						["qg"] = 22424,	-- Skywing
 						["coord"] = { 53.7, 72.3, TEROKKAR_FOREST },
 						["groups"] = {
 							i(31766),	-- Skywitch Hat
@@ -862,34 +862,34 @@ root("Zones", {
 						},
 					}),
 					q(10038, {	-- Speak with Private Weeks
-						["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
+						["qg"] = 18713,	-- Lieutenant Gravelhammer
 						["coord"] = { 57.6, 55.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10908, {	-- Speak with Rilak the Redeemed -- aa
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["isBreadcrumb"] = true,
 					}),
 					q(10039, {	-- Speak with Scout Neftis
-						["provider"] = { "n", 18712 },	-- Advisor Faila
+						["qg"] = 18712,	-- Advisor Faila
 						["coord"] = { 48.9, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					q(11505, {	-- Spirits of Auchindoun (A)
-						["provider"] = { "n", 24885 },	-- Exorcist Sullivan
+						["qg"] = 24885,	-- Exorcist Sullivan
 						["coord"] = { 55.8, 53.8, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(11506, {	-- Spirits of Auchindoun (H)
-						["provider"] = { "n", 24886 },	-- Exorcist Vaisha
+						["qg"] = 24886,	-- Exorcist Vaisha
 						["coord"] = { 49.8, 46.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(9968, {	-- Strange Energy
-						["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
+						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 						["sourceQuests"] = {
 							9957,	-- What's Wrong at Cenarion Thicket?
@@ -900,27 +900,27 @@ root("Zones", {
 						},
 					}),
 					q(9986, {	-- Stymying the Arakkoa (A)
-						["provider"] = { "n", 18389 },	-- Thander
+						["qg"] = 18389,	-- Thander
 						["coord"] = { 57.8, 54.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(9987, {	-- Stymying the Arakkoa (H)
-						["provider"] = { "n", 18386 },	-- Rokag
+						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10862, {	-- Surrender to the Horde
-						["provider"] = { "n", 18386 },	-- Rokag
+						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(10873, {	-- Taken in the Night -- aa
-						["provider"] = { "n", 22364 },	-- Scout Navrin
+						["qg"] = 22364,	-- Scout Navrin
 						["coord"] = { 31.4, 75.6, TEROKKAR_FOREST },
 					}),
 					q(10921, {	-- Terokkarantula
-						["provider"] = { "n", 22462 },	-- Vindicator Haylen
+						["qg"] = 22462,	-- Vindicator Haylen
 						["coord"] = { 49.7, 76.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10920,	-- For the Fallen
 						["groups"] = {
@@ -931,7 +931,7 @@ root("Zones", {
 						},
 					}),
 					q(10930, {	-- The Big Bone Worm
-						["provider"] = { "n", 22481 },	-- Dwarfowitz
+						["qg"] = 22481,	-- Dwarfowitz
 						["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10929,	-- Fumping
 						["groups"] = {
@@ -941,11 +941,11 @@ root("Zones", {
 						},
 					}),
 					q(10877, {	-- The Dread Relic -- aa
-						["provider"] = { "n", 22456 },	-- Oakun
+						["qg"] = 22456,	-- Oakun
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 					}),
 					q(10022, {	-- The Elusive Ironjaw
-						["provider"] = { "n", 18387 },	-- Bertelm
+						["qg"] = 18387,	-- Bertelm
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10016,	-- Timber Worg Tails
@@ -966,7 +966,7 @@ root("Zones", {
 						},
 					}),
 					q(10915, {	-- The Fallen Exarch
-						["provider"] = { "n", 22446 },	-- Commander Ra'vaj
+						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10914,	-- A Hero Is Needed
 						["groups"] = {
@@ -977,7 +977,7 @@ root("Zones", {
 						},
 					}),
 					q(10446, {	-- The Final Code (A)
-						["provider"] = { "n", 21006 },	-- Lieutenant Meridian
+						["qg"] = 21006,	-- Lieutenant Meridian
 						["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9996,	-- Attack on Firewing Point
@@ -989,7 +989,7 @@ root("Zones", {
 						},
 					}),
 					q(10447, {	-- The Final Code (H)
-						["provider"] = { "n", 21007 },	-- Sergeant Chawni
+						["qg"] = 21007,	-- Sergeant Chawni
 						["coord"] = { 63.2, 42.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9997,	-- Attack on Firewing Point
@@ -1001,23 +1001,23 @@ root("Zones", {
 						},
 					}),
 					q(10002, {	-- The Firewing Liaison (A)
-						["provider"] = { "n", 18565 },	-- Theloria Shadecloak
+						["qg"] = 18565,	-- Theloria Shadecloak
 						["coord"] = { 69.6, 44.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
 					}),
 					q(10003, {	-- The Firewing Liaison (H)
-						["provider"] = { "n", 18566 },	-- Shadowstalker Kaide
+						["qg"] = 18566,	-- Shadowstalker Kaide
 						["coord"] = { 63.4, 42.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10000,	-- An Unwelcome Presence
 					}),
 					q(10896, {	-- The Infested Protectors -- aa
-						["provider"] = { "n", 22420 },	-- Lakotae
+						["qg"] = 22420,	-- Lakotae
 						["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
 					}),
 					q(10881, {	-- The Shadow Tomb
-						["provider"] = { "n", 22370 },	-- Mekeda
+						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 						["sourceQuest"] = 10880,	-- Cabal Orders
 						["groups"] = {
@@ -1029,7 +1029,7 @@ root("Zones", {
 						},
 					}),
 					q(10879, {	-- The Skettis Offensive
-						["provider"] = { "n", 22373 },	-- Defender Grashna
+						["qg"] = 22373,	-- Defender Grashna
 						["coord"] = { 51.8, 20.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10889,	-- Return to Shattrath
 						["groups"] = {
@@ -1038,18 +1038,18 @@ root("Zones", {
 						},
 					}),
 					q(10840, {	-- The Tomb of Lights
-						["provider"] = { "n", 22278 },	-- High Priest Orglum
+						["qg"] = 22278,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 						["sourceQuest"] = 10852,	-- Missing Friends
 					}),
 					q(10869, {	-- Thin the Flock
-						["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
+						["qg"] = 18713,	-- Lieutenant Gravelhammer
 						["coord"] = { 57.6, 55.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10007, {	-- Thinning the Ranks
-						["provider"] = { "n", 18565 },	-- Theloria Shadecloak
+						["qg"] = 18565,	-- Theloria Shadecloak
 						["coord"] = { 69.6, 44.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
@@ -1060,12 +1060,12 @@ root("Zones", {
 						},
 					}),
 					q(10016, {	-- Timber Worg Tails
-						["provider"] = { "n", 18387 },	-- Bertelm
+						["qg"] = 18387,	-- Bertelm
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 					}),
 					q(10035, {	-- Torgos! (A)
-						["provider"] = { "n", 18704 },	-- Taela Everstride
+						["qg"] = 18704,	-- Taela Everstride
 						["coord"] = { 58.0, 53.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
@@ -1075,7 +1075,7 @@ root("Zones", {
 						},
 					}),
 					q(10036, {	-- Torgos! (H)
-						["provider"] = { "n", 18705 },	-- Mawg Grimshot
+						["qg"] = 18705,	-- Mawg Grimshot
 						["coord"] = { 49.2, 45.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10034,	-- WANTED: Bonelashers Dead!
@@ -1085,12 +1085,12 @@ root("Zones", {
 						},
 					}),
 					q(9998, {	-- Unruly Neighbors
-						["provider"] = { "n", 18387 },	-- Bertelm
+						["qg"] = 18387,	-- Bertelm
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(10861, {	-- Veil Lithic: Preemptive Strike
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10848,	-- Veil Rhaze: Unliving Evil
 						["groups"] = {
@@ -1101,7 +1101,7 @@ root("Zones", {
 						},
 					}),
 					q(10848, {	-- Veil Rhaze: Unliving Evil
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10839,	-- Veil Skith: Darkstone of Terokk
 						["groups"] = {
@@ -1110,7 +1110,7 @@ root("Zones", {
 						},
 					}),
 					q(10874, {	-- Veil Shalas: Signal Fires
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10861,	-- Veil Lithic: Preemptive Strike
 						["groups"] = {
@@ -1120,12 +1120,12 @@ root("Zones", {
 						},
 					}),
 					q(10839, {	-- Veil Skith: Darkstone of Terokk
-						["provider"] = { "n", 22272 },	-- Kirrik the Awakened
+						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10849,	-- Seek Out Kirrik
 					}),
 					q(10842, {	-- Vengeful Souls
-						["provider"] = { "n", 21465 },	-- High Priest Orglum
+						["qg"] = 21465,	-- High Priest Orglum
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 						--["sourceQuest"] = 10852,	-- Missing Friends
@@ -1135,13 +1135,13 @@ root("Zones", {
 						},
 					}),
 					q(10028, {	-- Vessels of Power
-						["provider"] = { "n", 18390 },	-- Ros'eleth
+						["qg"] = 18390,	-- Ros'eleth
 						["coord"] = { 57.4, 55.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9992,	-- Olemba Seeds
 					}),
 					q(10018, {	-- Vestments of the Wolf Spirit
-						["provider"] = { "n", 18384 },	-- Malukaz
+						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1158,7 +1158,7 @@ root("Zones", {
 						["provider"] = { "o", 182588 },	-- Wanted Poster
 					}),
 					q(10791, {	-- Welcoming the Wolf Spirit
-						["provider"] = { "n", 18384 },	-- Malukaz
+						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10023,	-- Patriarch Ironjaw
@@ -1170,19 +1170,19 @@ root("Zones", {
 						},
 					}),
 					q(9994, {	-- What Are These Things? (A)
-						["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
+						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9990,	-- Investigate Tuurem
 					}),
 					q(9995, {	-- What Are These Things? (H)
-						["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
+						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9990,	-- Investigate Tuurem
 					}),
 					q(10008, {	-- What Happens in Terokkar Stays in Terokkar
-						["provider"] = { "n", 18566 },	-- Shadowstalker Kaide
+						["qg"] = 18566,	-- Shadowstalker Kaide
 						["coord"] = { 63.3, 42.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1192,14 +1192,14 @@ root("Zones", {
 						},
 					}),
 					q(9961, {	-- What's Wrong at Cenarion Thicket?
-						["provider"] = { "n", 18459 },	-- Jenai Starwhisper
+						["qg"] = 18459,	-- Jenai Starwhisper
 						["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 						["maps"] = { ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(9960, {	-- What's Wrong at Cenarion Thicket?
-						["provider"] = { "n", 18447 },	-- Tooki
+						["qg"] = 18447,	-- Tooki
 						["coord"] = { 50.0, 45.8, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1211,19 +1211,19 @@ root("Zones", {
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
 					q(10040, {	-- Who Are They? (A)
-						["provider"] = { "n", 18715 },	-- Private Weeks
+						["qg"] = 18715,	-- Private Weeks
 						["coord"] = { 40.4, 36.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10038,	-- Speak with Private Weeks
 					}),
 					q(10041, {	-- Who Are They? (H)
-						["provider"] = { "n", 18714 },	-- Scout Neftis
+						["qg"] = 18714,	-- Scout Neftis
 						["coord"] = { 39.0, 43.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10039,	-- Speak with Scout Neftis
 					}),
 					q(9979, {	-- Wind Trader Lathrai
-						["provider"] = { "n", 18482 },	-- Empoor
+						["qg"] = 18482,	-- Empoor
 						["sourceQuest"] = 9978,	-- By Any Means Necessary
 						["coords"] = {
 							{ 38.0, 26.4, TEROKKAR_FOREST },
@@ -1649,6 +1649,9 @@ root("Zones", {
 							23022,    -- Gordunni Soulreaper
 						},
 					}),
+					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, i(34255, {	-- Razorthorn Flayer Gland
+						["cr"] = 24920,	-- Razorthorn Flayer
+					})),
 					UNHOLY_ENCHANT,
 					i(32620, {	-- Time-Lost Scroll
 						["cost"] = {

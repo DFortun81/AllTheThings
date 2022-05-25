@@ -1,10 +1,10 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Text;
-using System.Collections.Concurrent;
 
 namespace ATT
 {
@@ -257,14 +257,21 @@ namespace ATT
             /// <returns></returns>
             public static bool TryGetName(Dictionary<string, object> data, out string name)
             {
+                // get the name of the Sourced data
                 data.TryGetValue("name", out name);
 
+                // get the name for matching specific Item
                 if (name == null)
-                    Get(data).TryGetValue("name", out name);
+                    GetNull(data)?.TryGetValue("name", out name);
+
+                // get the name for the general Item
+                if (name == null && data.TryGetValue("itemID", out decimal itemID))
+                    GetNull(itemID)?.TryGetValue("name", out name);
 
                 return name != null;
             }
             #endregion
+
             #region Export
             /// <summary>
             /// Export Item Debugging Files to the supplied directory.
@@ -527,7 +534,6 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "f":
-                    case "u":
                     case "b":
                     case "r":
                     case "ilvl":
@@ -569,6 +575,32 @@ namespace ATT
 
                             item[field] = longval;
                         }
+                        break;
+
+                    // Conditional Fields -- only merge if NOT Location Sourced data
+                    case "u":
+                        if (!ProcessingMergeData) break;
+
+                        longval = Convert.ToInt64(value);
+                        // any 0 value should simply be removed for cleanliness
+                        if (longval == 0)
+                        {
+                            if (DebugMode)
+                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
+
+                            item.Remove(field);
+                        }
+                        else
+                        {
+                            item[field] = longval;
+                            LogDebug($"Merge {item["itemID"]}: {field} <== {longval}");
+                        }
+                        break;
+                    case "timeline":
+                        if (!ProcessingMergeData) break;
+
+                        Objects.MergeStringArrayData(item, field, value);
+                        LogDebug($"Merge {item["itemID"]}: {field} <== {MiniJSON.Json.Serialize(value)}");
                         break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
@@ -651,11 +683,8 @@ namespace ATT
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
-                    case "timeline":
-                        {
-                            Objects.MergeStringArrayData(item, field, value);
-                            break;
-                        }
+                        Objects.MergeStringArrayData(item, field, value);
+                        break;
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":
@@ -801,7 +830,6 @@ namespace ATT
                     case "isToy":
                     case "objectiveID":
                     case "f":
-                    //case "u":
                     case "b":
                     case "rank":
                     case "ilvl":
@@ -825,6 +853,15 @@ namespace ATT
                     case "conduitID":
                     case "customCollect":
                         data[field] = value;
+                        break;
+                    // Conditional merges
+                    case "u":
+                    case "timeline":
+                        if (!data.ContainsKey(field))
+                        {
+                            data[field] = value;
+                            LogDebug($"MergeInto {data["itemID"]}: {field} <== {MiniJSON.Json.Serialize(value)}");
+                        }
                         break;
                     case "races":
                     case "r":

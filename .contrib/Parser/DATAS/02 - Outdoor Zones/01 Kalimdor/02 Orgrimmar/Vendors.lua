@@ -336,16 +336,16 @@ root("Zones", m(KALIMDOR, {
 					i(102533, {	-- Vicious Skeletal Warhorse (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(165020, {	-- Vicious Bonestead (A)
+					i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
-					i(163121, {	-- Vicious War Basilisk (A)
+					i(163121, {	-- Vicious War Basilisk (A) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 					i(142235, {	-- Vicious War Bear (H) (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(163124, {	-- Vicious War Clefthoof (A)
+					i(163124, {	-- Vicious War Clefthoof (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 					i(152869, {	-- Vicious War Fox (H) (MOUNT!)
@@ -369,7 +369,7 @@ root("Zones", m(KALIMDOR, {
 					i(140348, {	-- Vicious Warstrider (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 					}),
-					i(173713, {	-- Vicious White Bonesteed (A)
+					i(173713, {	-- Vicious White Bonesteed (MOUNT!)
 						["cost"] = { { "i", 103533, 1 }, },
 					}),
 				}),
@@ -2506,18 +2506,26 @@ root("Zones", m(KALIMDOR, {
 				},
 			}),
 			n(3362,   {	-- Ogunaro Wolfrunner <Kennel Master>
-			["coord"] = { 61.6, 35.6, ORGRIMMAR },
+				-- #if AFTER CATA
+				["coord"] = { 61.6, 35.6, ORGRIMMAR },
+				-- #else
+				["coord"] = { 69.4, 12.4, ORGRIMMAR },
+				-- #endif
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(46099),	-- Black Wolf (MOUNT!)
+					i(5668),	-- Brown Wolf (MOUNT!)
+					i(5665),	-- Dire Wolf (MOUNT!)
 					i(18796),	-- Swift Brown Wolf (MOUNT!)
 					i(18797),	-- Swift Timber Wolf (MOUNT!)
 					i(18798),	-- Swift Gray Wolf (MOUNT!)
 					i(1132),	-- Timber Wolf (MOUNT!)
-					i(5665),	-- Dire Wolf (MOUNT!)
-					i(5668),	-- Brown Wolf (MOUNT!)
-					i(46099),	-- Black Wolf (MOUNT!)
-					un(REMOVED_FROM_GAME, i(12351)),	-- Arctic Wolf (MOUNT!) -- Unable to 100% verify this source.
-					un(REMOVED_FROM_GAME, i(12330)),	-- Red Wolf (MOUNT!) -- Unable to 100% verify this source.
+					i(12351, {	-- Arctic Wolf (MOUNT!)
+						["timeline"] = { "removed 1.4.0" },
+					}),
+					i(12330, {	-- Red Wolf (MOUNT!)
+						["timeline"] = { "removed 1.4.0" },
+					}),
 				},
 			}),
 			n(3317,   {	-- Ollanus <Cloth Armor Merchant>

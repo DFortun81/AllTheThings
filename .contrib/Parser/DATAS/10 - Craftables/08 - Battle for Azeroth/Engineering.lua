@@ -7,9 +7,9 @@ _.Craftables =
 	tier(BFA_TIER, {
 		prof(ENGINEERING, {
 			filter(MOUNTS, {
-				i(161134),	-- Mecha-Mogul Mk2
+				i(161134),	-- Mecha-Mogul Mk2 (MOUNT!)
 				i(158886, {	-- Super-Charged Engine
-					i(153594),	-- Xiwyllag ATV
+					i(153594),	-- Xiwyllag ATV (MOUNT!)
 				}),
 			}),
 			filter(BATTLE_PETS, {

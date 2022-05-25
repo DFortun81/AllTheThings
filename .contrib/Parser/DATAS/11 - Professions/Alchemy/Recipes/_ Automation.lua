@@ -1,9 +1,6 @@
---[[
-DO NOT MODIFY THIS FILE, I WILL CUT YOU.
- With love,
-    -CRIEVE
-]]--
-profession(171, {	-- Alchemy
+
+-- Temporary filtering/sourcing until Profession > Recipes are made Dynamic
+root(ROOTS.Professions, bubbleDown({["requireSkill"] = ALCHEMY}, prof(ALCHEMY, {
 	filter(RECIPES, {
 		{
 			["name"] = "Training",
@@ -4165,4 +4162,4 @@ profession(171, {	-- Alchemy
 			}
 		}
 	}),
-});
+})));

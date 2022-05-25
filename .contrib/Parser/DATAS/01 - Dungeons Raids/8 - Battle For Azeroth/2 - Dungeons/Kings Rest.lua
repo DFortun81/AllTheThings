@@ -156,7 +156,7 @@ _.Instances = { tier(BFA_TIER, {
 									i(161214),	-- Thousand Year Old Mummy Wraps (PET!)
 								},
 							}),
-							i(159921),	-- Mummified Raptor Skull (MOUNT!)
+							i(159921),	-- Tomb Stalker (MOUNT!)
 							i(159644),	-- Geti'ikku, Cut of Death
 							i(159645),	-- Headcracker of Supplication
 							i(159236),	-- Headdress of the First Empire

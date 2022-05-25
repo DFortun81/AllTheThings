@@ -1331,7 +1331,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				title(452),	-- Cosmic Gladiator <Name>
 			}),
 			ach(15351),		-- Duelist: Shadowlands Season 3
-			ach(15354),		-- Elite: Shadowlands Season 3
+			ach(15354, {		-- Elite: Shadowlands Season 3
+				i(186777),	-- Cosmic Gladiator's Tabard
+			}),
 			ach(15352),		-- Gladiator: Shadowlands Season 3
 			ach(15355, {	-- Hero of the Alliance: Cosmic
 				["races"] = ALLIANCE_ONLY,

@@ -153,7 +153,11 @@ _.Instances = { tier(BFA_TIER, {
 				["lvl"] = 120,
 				["g"] = {
 					n(135448, {	-- Gol'than the Malodorous
-						i(160704),	--  Filthy Bucket
+						["crs"] = { 135451 },	-- Filthy Bucket
+						["provider"] = { "i", 158698 },	-- Discarded Cell Key
+						["g"] = {
+							i(160704),	--  Filthy Bucket
+						},
 					}),
 					e(2097, {	-- The Sand Queen
 						["crs"] = { 127479 },	-- The Sand Queen

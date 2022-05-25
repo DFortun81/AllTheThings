@@ -98,27 +98,35 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(7663,  {	-- New Kodo - Green
-					["u"] = REMOVED_FROM_GAME,
-					["repeatable"] = true,
-					["provider"] = { "n", 3685 },	-- Harb Clawhoof
+				q(7663, {	-- New Kodo - Green
+					["qg"] = 3685,	-- Harb Clawhoof
+					-- #if AFTER CATA
 					["coord"] = { 47.6, 58.0, MULGORE },
-					["g"] = {
-						i(18794),	-- Great Brown Kodo (MOUNT!)
-						i(18795),	-- Great Gray Kodo (MOUNT!)
-						i(18793),	-- Great White Kodo (MOUNT!)
-					},
+					-- #else
+					["coord"] = { 47.6, 58.4, MULGORE },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 15292, 1 } },	-- Green Kodo (MOUNT!)
+					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 				}),
-				q(7662,  {	-- New Kodo - Teal
-					["u"] = REMOVED_FROM_GAME,
-					["repeatable"] = true,
-					["provider"] = { "n", 3685 },	-- Harb Clawhoof
+				q(7662, {	-- New Kodo - Teal
+					["qg"] = 3685,	-- Harb Clawhoof
+					-- #if AFTER CATA
 					["coord"] = { 47.6, 58.0, MULGORE },
-					["g"] = {
-						i(18794),	-- Great Brown Kodo (MOUNT!)
-						i(18795),	-- Great Gray Kodo (MOUNT!)
-						i(18793),	-- Great White Kodo (MOUNT!)
-					},
+					-- #else
+					["coord"] = { 47.6, 58.4, MULGORE },
+					-- #endif
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["timeline"] = { "removed 1.4.0" },
+					["cost"] = { { "i", 15293, 1 } },	-- Teal Kodo (MOUNT!)
+					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 				}),
 				q(20440, {	-- Poison Water
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn

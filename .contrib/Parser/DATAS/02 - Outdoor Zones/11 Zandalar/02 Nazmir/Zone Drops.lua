@@ -8,7 +8,7 @@ _.Zones =
 		m(NAZMIR, {
 			n(ZONE_DROPS, {
 				-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
-				i(163575, {	-- Reins of a Tamed Bloodfeaster
+				i(163575, {	-- Leaping Veinseeker (MOUNT!)
 					["crs"] = {
 						136293,	-- Blood Troll Berserker
 						120607,	-- Blood Troll Brutalizer

@@ -338,7 +338,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(168602),	-- Cloak of Blessed Depths
 				}),
 				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray
+					i(167171),	-- Azshari Bloatray (MOUNT!)
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,	-- Abyssal Commander Sivara
@@ -552,7 +552,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(168602),	-- Cloak of Blessed Depths
 				}),
 				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray
+					i(167171),	-- Azshari Bloatray (MOUNT!)
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,
@@ -768,7 +768,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(168602),	-- Cloak of Blessed Depths
 				}),
 				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray
+					i(167171),	-- Azshari Bloatray (MOUNT!)
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,

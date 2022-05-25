@@ -98,10 +98,10 @@ _.Zones =
 						i(162766, {	-- Recipe: Recurve Bow of the Strands (Rank 3)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(161773, {	-- Reins of the Alabaster Hyena (MOUNT!)
+						i(161773, {	-- Alabaster Hyena (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
 						}),
-						i(161667, {	-- Reins of the Voldunai Dunescraper (MOUNT!)
+						i(161667, {	-- Voldunai Dunescraper (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
 						i(161502, {	-- Sash of the Scaled Devoted

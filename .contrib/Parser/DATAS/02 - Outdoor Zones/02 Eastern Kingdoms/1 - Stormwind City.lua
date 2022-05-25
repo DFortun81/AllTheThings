@@ -145,6 +145,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 									i(33820),	-- Weather-Beaten Fishing Hat
 									i(45991),	-- Bone Fishing Pole
 									i(45992),	-- Jeweled Fishing Pole
+									i(67410),	-- Very Unlucky Rock
 								},
 							}),
 							q(26488, {	-- Big Gulp
@@ -383,7 +384,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
-					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					["provider"] = { "o", 369893 },	-- Urgent Missive
+					["coord"] = { 68.1, 22.4, BORALUS },	-- Urgent Missive
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58912, {	-- An Urgent Meeting
@@ -4412,13 +4414,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(102514, {	-- Vicious Kaldorei Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(165019, {	-- Vicious Black Warsaber (A)
+						i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(140353, {	-- Vicious Gilnean Warhorse (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(163122, {	-- Vicious War Basilisk (A)
+						i(163122, {	-- Vicious War Basilisk (A) (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(142234, {	-- Vicious War Bear (A) (MOUNT!)
@@ -4439,10 +4441,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(116777, {	-- Vicious War Ram (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-						i(163123, {	-- Vicious War Riverbeast (A)
+						i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
-						i(173714, {	-- Vicious White Warsaber (A)
+						i(173714, {	-- Vicious White Warsaber (MOUNT!)
 							["cost"] = { { "i", 103533, 1 }, },
 						}),
 						i(143648, {	-- Vicious War Turtle (A) (MOUNT!)

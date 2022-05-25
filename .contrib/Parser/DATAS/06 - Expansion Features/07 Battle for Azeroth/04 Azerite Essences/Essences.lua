@@ -2,7 +2,7 @@
 --    E S S E N C E S      M O D U L E     --
 ---------------------------------------------
 
-root("ExpansionFeatures", tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(AZERITE_ESSENCES, {
 		["description"] = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
 		["g"] = {
@@ -182,8 +182,12 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
-	q(62689),	-- triggered when 5x Focused Life Anima and got "Magnifying Lens of the Focusing" R2
-	q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
-	q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence
-});
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	n(AZERITE_ESSENCES, {
+		q(62689),	-- triggered when 5x Focused Life Anima and got "Magnifying Lens of the Focusing" R2
+		q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
+		q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence
+		q(57033),	-- Rank 1 of Anima of Life and Death
+		q(57044),	-- Rank 2 of Anima of Life and Death
+	}),
+}));

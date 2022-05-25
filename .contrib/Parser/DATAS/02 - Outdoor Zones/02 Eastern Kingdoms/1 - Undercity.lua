@@ -48,6 +48,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 									i(33820),	-- Weather-Beaten Fishing Hat
 									i(45991),	-- Bone Fishing Pole
 									i(45992),	-- Jeweled Fishing Pole
+									i(67410),	-- Very Unlucky Rock
 								},
 							}),
 							q(29317, {	-- Fish Head

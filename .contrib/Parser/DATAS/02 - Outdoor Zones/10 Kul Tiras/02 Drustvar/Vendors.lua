@@ -102,10 +102,10 @@ _.Zones =
 						i(162412, {	-- Recipe: Recurve Bow of the Strands (Rank 3)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(161908, {	-- Reins of the Dusky Waycrest Gryphon (MOUNT!)
+						i(161908, {	-- Dusky Waycrest Gryphon (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
-						i(161910, {	-- Reins of the Smoky Charger (MOUNT!)
+						i(161910, {	-- Smoky Charger (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
 						}),
 						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)

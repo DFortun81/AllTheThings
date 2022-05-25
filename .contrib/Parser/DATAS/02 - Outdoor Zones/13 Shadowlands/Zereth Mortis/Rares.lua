@@ -3,10 +3,12 @@
 ---------------------------------------------------
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
-		n(RARES, sharedData({ ["isDaily"] = true }, {
+		n(RARES, {
 			i(189715, {	-- Pocopoc's Diamond Vambraces
 				["questID"] = 65481,
 			}),
+		}),
+		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(179006, {	-- Akkaris <Annelid Prime>
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65552,
@@ -266,6 +268,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 63.8, 27, ZERETH_MORTIS },
 				["questID"] = 65585,
 				["g"] = {
+					n(182120, {	-- Rhuv, Gorger of Ruin
+						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["questID"] = 65706,
+						["isDaily"] = true,
+						["g"] = {
+							i(190765),	-- Iska's Mawrat Leash (MOUNT!)
+						},
+					}),
 					crit(1, {	-- Iska, Outrider of Ruin
 						["achievementID"] = 15392,	-- Dune Dominance
 					}),
@@ -368,13 +378,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190107),	-- Staff of Broken Coils
 				},
 			}),
-			n(182120, {	-- Rhuv, Gorger of Ruin
-				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65706,
-				["g"] = {
-					i(190765),	-- Iska's Mawrat Leash (MOUNT!)
-				},
-			}),
 			n(183927, {	-- Sand Matriarch Ileus
 				["coord"] = { 55.4, 47.1, ZERETH_MORTIS },
 				["questID"] = 65574,
@@ -383,6 +386,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						["achievementID"] = 15391,	-- Adventurer of Zereth Mortis
 					}),
 					i(189927),	-- Broker's Gnawed Spaulders
+					i(190730),	-- Matriarch's Shell Band
 					i(189998),	-- Ornate Stone Mallet
 					i(189955),	-- Scarabid's Clattering Handguards
 				},
@@ -456,7 +460,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190006),	-- Anima-Siphoning Sword
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
-					i(190730),	-- Matriarch's Shell Band
 					i(187847),	-- Design: Devourer Essence Stone (RECIPE!)
 				},
 			}),

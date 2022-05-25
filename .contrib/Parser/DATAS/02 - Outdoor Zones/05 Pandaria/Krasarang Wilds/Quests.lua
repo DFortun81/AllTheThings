@@ -116,7 +116,7 @@ _.Zones =
 				q(30668, {	-- Build Your Own Raft
 					["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
 					["provider"] = { "n", 60173 },	-- Jay Cloudfall
-					["coord"] = { 53.5, 76.0, KRASARANG_WILDS },
+					["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 				}),
 
 
@@ -399,7 +399,7 @@ _.Zones =
 						30121,	-- Search Party
 					},
 					["provider"] = { "n", 58160 },	-- Chizen Dawnchaser
-					["coord"] = { 72.1, 17.3, KRASARANG_WILDS },
+					["coord"] = { 60.4, 25.4, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(81522),	-- Ring of the Pools of Youth
@@ -565,7 +565,7 @@ _.Zones =
 
 				q(30666, {	-- Sudden, Unexpected Crocolisk Aggression
 					["provider"] = { "n", 60173 },	-- Jay Cloudfall
-					["coord"] = { 53.6, 76.0, KRASARANG_WILDS },
+					["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 				}),
 
 
@@ -610,7 +610,7 @@ _.Zones =
 				q(30669, {	-- The Lorewalker on the Lake
 					["sourceQuests"] = { 30668 }, -- Build Your Own Raft
 					["provider"] = { "n", 60173 },	-- Jay Cloudfall
-					["coord"] = { 53.6, 75.9, KRASARANG_WILDS },
+					["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 				}),
 
 

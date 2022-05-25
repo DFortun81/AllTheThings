@@ -8,7 +8,7 @@ _.Craftables =
 		prof(BLACKSMITHING, {
 			filter(MOUNTS, {
 				i(158887, {	-- Monelite Reinforced Chassis
-					i(153594),	-- Xiwyllag ATV
+					i(153594),	-- Xiwyllag ATV (MOUNT!)
 				}),
 			}),
 			filter(114, {	-- Mount Equipment

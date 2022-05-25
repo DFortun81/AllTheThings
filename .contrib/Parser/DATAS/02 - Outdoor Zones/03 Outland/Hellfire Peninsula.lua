@@ -695,6 +695,7 @@ root("Zones", {
 					applyclassicphase(TBC_PHASE_FIVE, q(11516, {	-- Blast the Gateway
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 25, 70),
 						["isDaily"] = true,
@@ -712,6 +713,7 @@ root("Zones", {
 					applyclassicphase(TBC_PHASE_FIVE, q(11515, {	-- Blood for Blood
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
+						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 25, 70),
 						["isDaily"] = true,
@@ -2555,14 +2557,14 @@ root("Zones", {
 					}),
 					q(49862, {	-- To Outland! [Alliance]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600" },
+						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
 					q(49816, {	-- To Outland! [Horde]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600" },
+						["timeline"] = { "added 7.3.5.25600", "removed 9.0" },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
@@ -2918,7 +2920,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},
@@ -2979,7 +2981,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(27736, {	-- Master Cookbook
-								["timeline"] = { "removed 3.1.0", "deleted 5.0.5" },
+								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
 						},

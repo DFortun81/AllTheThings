@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
-root("Instances", { tier(LEGION_TIER, {
+root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(875, {	-- Tomb of Sargeras
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
@@ -1432,21 +1432,22 @@ root("Instances", { tier(LEGION_TIER, {
 			})
 		},
 	}),
-})});
+}));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(LEGION_TIER, {
-		inst(875, {	-- Tomb of Sargeras
-			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
-			i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
-			i(147074),	-- Vambraces of Resoulte Justice
-			i(157761),	-- Barbaric Mindslaver
-			i(157763),	-- Engine of Eradication
-			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
-		}),
+root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
+	inst(875, {	-- Tomb of Sargeras
+		q(48064),	-- first time cinematic prior to Goroth
+		q(48084),	-- Tracking Quest (KJ first kill?) / Heroic KJ
 	}),
 }));
 
-root("HiddenQuestTriggers", {
-	q(48084),	-- Tracking Quest (KJ first kill?) / Heroic KJ
-});
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(LEGION_TIER, {
+	inst(875, {	-- Tomb of Sargeras
+		i(147036),	-- Fel-Stippled Legguards		(removed Beta)
+		i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
+		i(147074),	-- Vambraces of Resoulte Justice
+		i(157761),	-- Barbaric Mindslaver
+		i(157763),	-- Engine of Eradication
+		i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
+	}),
+})));
