@@ -5,6 +5,7 @@ local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 	["timeline"] = { "added 9.0.5" },
 	["description"] = "Granted to players by logging in on character of at least level 20.",
 });
+
 root("Promotions", filter(MISC, {
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {

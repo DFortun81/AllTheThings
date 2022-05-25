@@ -450,4 +450,16 @@ _.IllusionDB = {
 		["text"] = "Unchained Fury",
 	--	["questID"] = ,
 	},
+	{	-- Illusion: Unchained Fury
+	--	["itemID"] = ,
+		["illusionID"] = 6351,
+		["text"] = "Cosmic Flow",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Unchained Fury
+	--	["itemID"] = ,
+		["illusionID"] = 6378,
+		["text"] = "Eternal Flux",
+	--	["questID"] = ,
+	},
 };

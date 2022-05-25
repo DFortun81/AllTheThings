@@ -19,6 +19,18 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(14327),	-- I Can See My House From Here
 		ach(14290),	-- I Only Have Eyes For You
 		ach(14289),	-- Kaal-ed Shot
+		ach(15651, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {
+			crit(1),	-- Mythic: The Necrotic Wake
+			crit(2),	-- Mythic: Mists of Tirna Scithe
+			crit(3),	-- Mythic: Spires of Ascension
+			crit(4),	-- Mythic: De Other Side
+			crit(5),	-- Mythic: Streets of Wonder
+			crit(6),	-- Mythic: Plaguefall
+			crit(7),	-- Mythic: Halls of Atonement
+			crit(8),	-- Mythic: Theater of Pain
+			crit(9),	-- Mythic: Sanguine Depths
+			crit(10),	-- Mythic: So'leah's Gambit
+		})),
 		ach(14409, {	-- Mythic: De Other Side
 			ach(14373),	-- De Other Side
 			ach(14408),	-- Heroic: De Other Side
@@ -39,10 +51,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(14197),	-- Sanguine Depths
 			ach(14198),	-- Heroic: Sanguine Depths
 		}),
+		ach(15652, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: So'leah's Gambit
 		ach(14325, {	-- Mythic: Spires of Ascension
 			ach(14326),	-- Spires of Ascension
 			ach(14324),	-- Heroic: Spires of Ascension
 		}),
+		ach(15650, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: Streets of Wonder
 		ach(14368, {	-- Mythic: The Necrotic Wake
 			ach(14366),	-- The Necrotic Wake
 			ach(14367),	-- Heroic: The Necrotic Wake

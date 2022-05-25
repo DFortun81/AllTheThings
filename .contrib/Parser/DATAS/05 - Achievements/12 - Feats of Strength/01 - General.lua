@@ -28,6 +28,25 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(12447, {	-- Allied Races: Void Elf
 		ach(13207, {	-- Allied Races: Vulpera
 		--]]
+		ach(15654, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {
+			title(463),	-- Veilstrider <Name>
+			crit(1),	-- Castle Nathria
+			crit(2),	-- Chains of Domination
+			crit(3),	-- Dead Men Tell Some Tales
+			crit(4),	-- Fake It 'Til You Make It
+			crit(5),	-- From A to Zereth
+			crit(6),	-- Many, Many Things
+			crit(7),	-- Myths of the Shadowlands Dungeons
+			crit(8),	-- On the Offensive
+			crit(9),	-- Re-Re-Re-Renowned
+			crit(10),	-- Sanctum Superior
+			crit(11),	-- Sanctum of Domination
+			crit(12),	-- Secrets of the First Ones
+			crit(13),	-- Sepulcher of the First Ones
+			crit(14),	-- Shadowlands Dilettante
+			crit(15),	-- Tower Ranger
+			crit(16),	-- Walking in Maw-mphis
+		})),
 		un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 			un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 		})),

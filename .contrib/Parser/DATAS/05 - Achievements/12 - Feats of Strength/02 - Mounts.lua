@@ -41,6 +41,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13093, {	-- Dread Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156879)),	-- Dread Gladiator's Proto-Drake (MOUNT!)
 		})),
+		pvp(ach(15612, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Eternal Gladiator's Soul Eater
+			i(191290),	--Eternal Gladiator's Soul Eater (MOUNT!)
+		}))),
 		un(REMOVED_FROM_GAME, ach(11000, {	-- Fearless Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141844)),	-- Fearless Gladiator's Storm Dragon (MOUNT!)
 		})),

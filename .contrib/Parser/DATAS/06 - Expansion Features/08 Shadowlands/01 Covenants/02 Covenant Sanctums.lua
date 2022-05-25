@@ -39,14 +39,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						62000,	-- Choosing Your Purpose (Threads of Fate)
 					},
 				}),
+				ach(14628),	-- The Road to Renown
+				ach(14629),	-- Gaining Respect
+				ach(14630),	-- Becoming a Hero
+				ach(14631),	-- Champion of the Covenant
 				ach(15241, {	-- Renowned
 					["timeline"] = { "added 9.1.5" },
-					["g"] = {
-						ach(14628),	-- The Road to Renown
-						ach(14629),	-- Gaining Respect
-						ach(14630),	-- Becoming a Hero
-						ach(14631),	-- Champion of the Covenant
-					},
+				}),
+				ach(15646, {	-- Re-Re-Re-Renowned
+					["timeline"] = { "added 9.2.5" },
 				}),
 				ach(14632),		-- Conducting Anima
 				ach(14639),		-- Dedication to the Restoration

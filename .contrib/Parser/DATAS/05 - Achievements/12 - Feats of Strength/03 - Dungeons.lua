@@ -187,9 +187,19 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(8),	-- Sanguine Depths
 		}),
 		ach(15051),		-- Keystone Hero: De Other Side
+		ach(15695, {["timeline"] = { ADDED_SLS4 }}),	-- Keystone Hero: Grimrail Depot
 		ach(15048),		-- Keystone Hero: Halls of Atonement
+		ach(15694, {["timeline"] = { ADDED_SLS4 }}),	-- Keystone Hero: Iron Docks
 		ach(15047),		-- Keystone Hero: Mists of Tirna Scithe
+		ach(15693, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Keystone Hero: Operation: Mechagon
+			crit(1),	-- Operation: Mechagon - Junkyard
+			crit(2),	-- Operation: Mechagon - Workshop
+		})),
 		ach(15046),		-- Keystone Hero: Plaguefall
+		ach(15692, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Keystone Hero: Return to Karazhan
+			crit(1),	-- Return to Karazhan: Lower
+			crit(2),	-- Return to Karazhan: Upper
+		})),
 		ach(15052),		-- Keystone Hero: Sanguine Depths
 		ach(15049),		-- Keystone Hero: Spires of Ascension
 		ach(15045),		-- Keystone Hero: The Necrotic Wake
@@ -218,8 +228,19 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			crit(1),	-- Tazavesh: Streets of Wonder
 			crit(2),	-- Tazavesh: So'leah's Gambit
 		})),
-		ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Hero: Season Three
+		ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } })),	-- Shadowlands Keystone Hero: Season Three
+		ach(15688, {["timeline"] = { ADDED_SLS4 }}),	-- Shadowlands Keystone Explorer: Season Four
+		ach(15689, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Shadowlands Keystone Conqueror: Season Four
+			title(465),	-- <Name> the Shrouded
+		})),
+		ach(15690, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Shadowlands Keystone Master: Season Four
+			i(192557),	-- Restoration Deathwalker (MOUNT!)
+		})),
+		ach(15691, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Cryptic Hero: Shadowlands Season 3
 			title(458),	-- <Name>, the Cryptic Hero
+		})),
+		ach(15756, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Shrouded Hero: Shadowlands Season 4
+			title(466),	-- <Name>, the Shrouded Hero
 		})),
 	}),
 }));

@@ -572,6 +572,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(15331, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treasures of Zereth Mortis
 			ach(15513),	-- Curious Collections
 		})),
+		ach(15648, sharedDataSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Walking in Maw-mphis
+			title(462),	-- <Name>, Maw Walker
+			crit(1),	-- 'Ghast Five
+			crit(2),	-- Better to Be Lucky Than Dead
+			crit(3),	-- It's About Sending a Message
+			crit(4),	-- Hunting Party
+			crit(5),	-- Trading Partners
+			crit(6),	-- Soulkeeper's Burden
+			crit(7),	-- Explore The Maw
+		})),
 		ach(14770, {	-- What We Ride in the Shadows
 			crit(1),		-- Old Gate
 			crit(2),		-- Hole in the Wall

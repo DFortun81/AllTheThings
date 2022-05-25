@@ -5613,7 +5613,83 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+				-- 9.2.5.42850
+				q(63479),	-- Summons from the Matriarch
+				q(63505),	--
+				q(63506),	--
+				q(63507),	-- Kate Reuse Me
+				q(63508),	--
+				q(63509),	--
+				q(63510),	--
+				q(63511),	--
+				q(63536),	--
+				q(65541),	--
+				q(65598),	--
+				q(65655),	-- Eyes of the Wolf
+				q(65656),	--
+				q(65657),	--
+				q(65658),	--
+				q(65659),	--
+				q(65660),	--
+				q(65661),	--
+				q(65662),	--
+				q(65663),	--
+				q(65664),	--
+				q(65665),	--
+				q(65666),	--
+				q(65667),	--
+				q(65668),	--
+				q(65669),	--
+				q(65767),	--
+				q(65788),	--
+				q(66059),	--
+				q(66060),	--
+				q(66061),	--
+				q(66062),	--
+				q(66063),	--
+				q(66064),	--
+				q(66065),	--
+				q(66066),	--
+				q(66067),	--
+				q(66068),	--
+				q(66069),	--
+				q(66170),	--
+				q(66243),	--
+				q(66280),	--
+				-- 9.2.5.43022
+				q(66285),	--
+				q(66302),	--
+				q(66309),	--
+				q(66313),	--
+				q(66316),	--
+				q(66343),	--
+				-- 9.2.5.43057
+				-- 9.2.5.43254
+				q(66480),	--
+				q(66507),	-- A Winter Veil Gift
+				q(66508),	-- A Gently Shaken Gift
+				q(66560),	--
+				q(66579),	-- Sounds of Healing
+				-- 9.2.5.43412
+				q(66614),	-- Valinor, the Light of Eons
+				q(66615),	-- Nurgash Muchformed
+				q(66616),	-- Oranomonos the Everbranching
+				q(66617),	-- Mortanis
+				q(66618),	-- Mor'geth
+				q(66619),	-- Antros
+				q(66648),	-- Crossing Fate
+				q(66649),	--
+				q(66650),	--
+				q(66661),	-- It's Just a Coin, What Could it Cost?
+				-- 9.2.5.43519
+				q(66693),	-- Tempting Fate: Castle Nathria
+				q(66694),	-- Tempting Fate: Sanctum of Domination
+				q(66695),	-- Tempting Fate: Sepchuler of the First Ones
+				q(66696),	-- Tempting Fate: Fate of the Shadowlands
+				-- 9.2.5.43630
+				-- 9.2.5.43741
+				-- 9.2.5.43810
 			})),
 
 			-- 9.x.x

@@ -614,6 +614,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(66420, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Happy Hour
+					["sourceQuests"] = { 66390 },	-- Missing Merchandise
+					["provider"] = { "n", 188342 },	-- Onnesa
+					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(191865),	-- Bottle of Briny Seawater
+					},
+				})),
 				q(333, {	-- Harlan Needs a Resupply
 					["provider"] = { "n", 1427 },	-- Harlan Bagley
 					["coord"] = { 62.2, 67.8, STORMWIND_CITY },
@@ -796,6 +805,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
 					},
 				}),
+				q(66390, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Missing Merchandise
+					["provider"] = { "n", 188342 },	-- Onnesa
+					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(191854),	-- Briny Seawater
+					},
+				})),
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

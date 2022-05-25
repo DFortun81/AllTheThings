@@ -1327,7 +1327,6 @@ i(182083, 332482);	-- Bonecleaver's Skullboar		/	Bonecleaver's Skullboar
 i(181817, 318052);	-- Deathbringer's Flayedwing	/	Deathbringer's Flayedwing
 --i(0, 312772);		-- Gilded Prowler
 --i(0, 332257);		-- Gorm (Yellow)
---i(0, 334482);		-- PH Death Elemental
 --i(0, 332908);		-- PH Devourer Mite (Green)
 --i(0, 312758);		-- PH Epic Phalynx
 --i(0, 312756);		-- PH Phalynx
@@ -1456,14 +1455,24 @@ i(187641, 359277);	-- Sundered Zerethsteed
 i(187669, 346719);	-- Serenade
 i(187678, 359402);	-- Tarachnid Creeper
 i(187671, 359377);	-- Unsuccessful Prototype Fleetpod
-i(187682, 359407);	-- Wastewarped Deathwalker
 i(187681, 347256);	-- Vicious War Croaker (A)
 i(187680, 347255);	-- Vicious War Croaker (H)
+i(187644, 349824);	-- Vicious Warstalker (A)
+i(187642, 349823);	-- Vicious Warstalker (H)
 i(187660, 342678);	-- Vespoid Flutterer
+i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
 -- NYI --
 i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
 --i(0, 356802);		-- Holy Lightstrider
-i(187644, 349824);	-- Vicious Warstalker (A)	/	Vicious Warstalker
-i(187642, 349823);	-- Vicious Warstalker (H)	/	Vicious Warstalker
+
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+i(191566, 370620);	-- Elusive Emerald Hawkstrider
+i(191290, 370346);	-- Eternal Gladiator's Soul Eater
+i(191123, 369666);	-- Grimhowl
+i(192557, 334482);	-- Restoration Deathwalker
+-- NYI --
+--i(0, 367190);	-- [DND] Test Mount JZB model:88719
 end)();

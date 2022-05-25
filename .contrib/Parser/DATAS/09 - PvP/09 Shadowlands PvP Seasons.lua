@@ -849,7 +849,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+	n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(186944),	-- Cosmic Aspirant's Cape
@@ -1388,6 +1388,21 @@ root("PVP", pvp(tier(SL_TIER, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			i(187680, {	-- Vicious War Gulper (H) (MOUNT!)
+				["races"] = HORDE_ONLY,
+			}),
+		}),
+	})),
+	n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SLS4 } }, {
+		n(PVP_ELITE, {
+			filter(MOUNTS, {
+				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
+			}),
+		}),
+		filter(MOUNTS, {
+			i(187644, {	-- Vicious Warstalker (A) (MOUNT!)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(187642, {	-- Vicious Warstalker (H) (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		}),

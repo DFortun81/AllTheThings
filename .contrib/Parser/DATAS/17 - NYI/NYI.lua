@@ -37,6 +37,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64369),	--
 		},
 	}),
+	tier(SL_TIER, 2.5, {
+		i(191425),	-- Choral Amice
+		--
+		i(191217),	-- [Daon Test]Beast Battle-Training Stone
+		i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
+		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
+
+		i(191910),	-- Confounding Antique Cypher
+		i(191911),	-- Cosmic Creation Impetus
+		i(191734),	-- Motion Sick Peon's Magical Elixir
+
+		-- Winter Veil 2022
+		ach(15645),	-- To Catch Falling Stars
+		ach(15653),	-- The More You Know*
+		i(191937),	-- Falling Star Catcher (TOY!)
+		i(191925),	-- Falling Star Flinger (TOY!)
+		-- Watch Twitch?
+		ach(15594, {	-- Fearless Spectator
+			title(459),	-- 	Fearless Spectator <Name>
+		}),
+	}),
 	tier(SL_TIER, 2.0, {
 		n(QUESTS, {	-- Darkal Sort?
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
@@ -2692,6 +2713,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(SL_TIER, 2.0, {
 				ach(15504),	-- Maldraxxus Coliseum matches
 				ach(15505),	-- Maldraxxus Coliseum victories
+				ach(15576),	-- Enigma Arena matches
+				ach(15577),	-- Enigma Arena victories
 			}),
 		}),
 		filter(MISC, {

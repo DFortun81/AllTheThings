@@ -383,6 +383,15 @@ root("Zones", m(KALIMDOR, {
 					"spellID", 90265,	-- Master Riding
 				},
 			}),
+			q(66323, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Idling Pie
+				["sourceQuests"] = { 66253 },	-- Stolen Shipments
+				["provider"] = { "n", 187768 },	-- Zaa'je
+				["coord"] = { 48.5, 75.9, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(191682),	-- Explosive Pie
+				},
+			})),
 			q(3563,  {	-- Jes'rimon's Payment to Jediga
 				["sourceQuests"] = { 3541 },	-- Delivery to Jes'rimon
 				["provider"] = { "n", 8659 },	-- Jes'rimon
@@ -708,6 +717,14 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
+			q(66253, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Stolen Shipments
+				["provider"] = { "n", 187768 },	-- Zaa'je
+				["coord"] = { 48.5, 75.9, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(191408),	-- Explosive Pie
+				},
+			})),
 			q(28459, {	-- Stones of Binding
 				["sourceQuests"] = { 28299 },	-- Meet with Kranosh
 				["provider"] = { "n", 88705 },	-- Kranosh
