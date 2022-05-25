@@ -37,7 +37,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64369),	--
 		},
 	}),
-	tier(SL_TIER, 2.5, {
+	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 		i(191425),	-- Choral Amice
 		--
 		i(191217),	-- [Daon Test]Beast Battle-Training Stone
@@ -57,8 +57,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		ach(15594, {	-- Fearless Spectator
 			title(459),	-- 	Fearless Spectator <Name>
 		}),
-	}),
-	tier(SL_TIER, 2.0, {
+	})),
+	tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 		n(QUESTS, {	-- Darkal Sort?
 			q(65152),	-- A Hardened Bond (This is Soulbind Quest for Necrolords new one might cross complete?? /Braghe)
 			q(64649),	-- A Mountain of Work to Do
@@ -68,7 +68,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(189572),	-- Tame Prime: Hadeon the Stonebreaker
 		i(189573),	-- Tame Prime: Garudeon
 
-	}),
+	})),
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
 			n(BACK, {

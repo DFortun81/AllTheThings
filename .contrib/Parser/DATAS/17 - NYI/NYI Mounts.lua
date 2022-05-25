@@ -470,11 +470,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modelID"] = 101577,
 				}),
 			}),
-			tier(SL_TIER, 2.5, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 				mount(367190, {	-- [DND] Test Mount JZB (MOUNT!)
 					["modelID"] = 88719,
 				}),
-			}),
+			})),
 		}),
 	}),
 }));

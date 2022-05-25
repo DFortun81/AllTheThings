@@ -5613,7 +5613,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 				-- 9.2.5.42850
 				q(63479),	-- Summons from the Matriarch
 				q(63505),	--
