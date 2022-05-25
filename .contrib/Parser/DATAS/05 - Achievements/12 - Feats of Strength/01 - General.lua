@@ -67,9 +67,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender
 		})),
 		un(REMOVED_FROM_GAME, ach(6433)),	-- Realm First! Challenge Conqueror: Gold
-		un(REMOVED_FROM_GAME, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-			un(REMOVED_FROM_GAME, title(90)),	-- , Conqueror of Naxxramas
-		})),
 		un(REMOVED_FROM_GAME, ach(3117, {	-- Realm First! Death's Demise
 			un(REMOVED_FROM_GAME, title(124)),	-- , Death's Demise
 		})),

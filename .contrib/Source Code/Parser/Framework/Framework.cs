@@ -387,6 +387,9 @@ namespace ATT
             }
             else
             {
+                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
+                Objects.PostProcessMergeInto(data);
+
                 if (!DataConsolidation(data))
                     return false;
             }
@@ -400,18 +403,15 @@ namespace ATT
 
                 Process(groups, modID, minLevel);
 
+                // Parent field consolidation now that groups have been processed
+                if (!MergeItemData)
+                    ConsolidateHeirarchicalFields(data, groups);
+
                 CurrentParentGroup = previousParent;
             }
 
             if (!MergeItemData)
             {
-                // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully processed
-                Objects.PostProcessMergeInto(data);
-                // In case anything was merged and this data did not previously have sub-group container, try to pull it out again
-                if (data.TryGetValue("g", out groups))
-                    // Parent field consolidation now that groups have been processed
-                    ConsolidateHeirarchicalFields(data, groups);
-
                 if (DebugMode)
                 {
                     // Capture references to specified Debug DB keys for Debug output
@@ -604,7 +604,7 @@ namespace ATT
                         if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
                         {
                             DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                            //Trace.WriteLine($"Duplicated Achievement {achID} into Achievement Category");
+                            LogDebug($"Duplicated Achievement {achID} into Achievement Category" + Environment.NewLine + MiniJSON.Json.Serialize(data));
                         }
                     }
                 }
@@ -944,7 +944,6 @@ namespace ATT
                 // 2.0.1 or older items.
                 int removed = 0;
                 var index = 0;
-                long firstVersion = 0;
                 long lastVersion = 0;
                 long removedPatch = 0;
                 foreach (var entry in timeline)
@@ -966,7 +965,6 @@ namespace ATT
                                 // If this is the first patch the thing was added.
                                 if (index == 0)
                                 {
-                                    firstVersion = version;
                                     if (CURRENT_RELEASE_VERSION < version)
                                     {
                                         return false;    // Invalid
