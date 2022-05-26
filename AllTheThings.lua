@@ -6,7 +6,6 @@
 
 local app = select(2, ...);
 local L = app.L;
-local auctionFrame = CreateFrame("Frame");
 local window;
 
 -- Assign the FactionID.
@@ -213,9 +212,6 @@ end
 local Callback = app.Callback;
 -- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
 local function DelayedCallback(method, delaySec, ...)
-	if not app.__callbacks then
-		app.__callbacks = {};
-	end
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = ... and {...} or true;
 		-- print("DelayedCallback:",method, ...)
@@ -238,12 +234,6 @@ end
 -- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end
-	if not app.__callbacks then
-		app.__callbacks = {};
-	end
-	if not app.__combatcallbacks then
-		app.__combatcallbacks = {};
-	end
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = ... and {...} or true;
 		-- If in combat, register to trigger on leave combat
@@ -2902,17 +2892,6 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 			group.expanded = expanded;
 			for _,subgroup in ipairs(group.g) do
 				ExpandGroupsRecursively(subgroup, expanded, manual);
-			end
-		end
-	end
-end
--- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
-local function HasExpandedSubgroup(group)
-	if group and group.g then
-		for _,subgroup in ipairs(group.g) do
-			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
-			if subgroup.expanded then
-				return true;
 			end
 		end
 	end
@@ -15419,6 +15398,17 @@ local function AddQuestInfoToTooltip(tooltip, quests)
 		end
 	end
 end
+-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+local function HasExpandedSubgroup(group)
+	if group and group.g then
+		for _,subgroup in ipairs(group.g) do
+			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+			if subgroup.expanded then
+				return true;
+			end
+		end
+	end
+end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
@@ -18069,7 +18059,7 @@ customWindowUpdates["AuctionData"] = function(self)
 						local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
 						if cooldown - now < 0 then
 							SetDataMember("AuctionScanCooldownTime", time() + 900);
-							auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
+							app.AuctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
 							C_AuctionHouse_ReplicateItems();
 						else
 							app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
@@ -21764,6 +21754,10 @@ hooksecurefunc("EmbeddedItemTooltip_SetItemByQuestReward", function(self, ...)
 end);
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
+-- Auction House Lib
+(function()
+local auctionFrame = CreateFrame("Frame");
+app.AuctionFrame = auctionFrame;
 app.ProcessAuctionData = function()
 	-- If we have no auction data, then simply return now.
 	if not AllTheThingsAuctionData then return end;
@@ -22078,6 +22072,7 @@ app.OpenAuctionModule = function(self)
 		end);
 	end
 end
+end)();
 
 -- Creates the data structures and initial 'Default' profiles for ATT
 app.SetupProfiles = function()
