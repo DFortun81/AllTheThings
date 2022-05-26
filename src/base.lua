@@ -87,11 +87,11 @@ app.SetScript = function(self, ...)
 		_:SetScript(scriptName, nil);
 	end
 end
+-- Setup the callback tables since they are heavily used
+app.__callbacks = {};
+app.__combatcallbacks = {};
 -- Triggers a timer callback method to run on the next game frame with the provided params; the method can only be set to run once per frame
 local function Callback(method, ...)
-	if not app.__callbacks then
-		app.__callbacks = {};
-	end
 	if not app.__callbacks[method] then
 		app.__callbacks[method] = ... and {...} or true;
 		-- print("Callback:",method, ...)
