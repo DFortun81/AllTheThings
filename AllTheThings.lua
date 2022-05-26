@@ -291,14 +291,14 @@ local contains = function(arr, value)
 	end
 end
 local containsAny = function(arr, otherArr)
-	for i, v in ipairs(arr) do
-		for j, w in ipairs(otherArr) do
+	for _,v in ipairs(arr) do
+		for _,w in ipairs(otherArr) do
 			if v == w then return true; end
 		end
 	end
 end
 local containsValue = function(dict, value)
-	for key,value2 in pairs(dict) do
+	for _,value2 in pairs(dict) do
 		if value2 == value then return true; end
 	end
 end
@@ -432,7 +432,6 @@ app.SortDefaults = {
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	["Hierarchy"] = defaultHierarchyComparison,
 };
--- local defaultStringComparison
 local function Sort(t, compare, nested)
 	if t then
 		if not compare then compare = defaultComparison; end
@@ -447,7 +446,6 @@ end
 -- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
 -- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
 app.Sort = function(t, compare, nested)
-	if app.DisableSort then return; end
 	pcall(Sort, t, compare, nested);
 end
 local sortByNameSafely = function(a, b)
@@ -571,12 +569,14 @@ end
 app.ArrayAppend = function(a1, ...)
 	if ... then
 		a1 = a1 or {};
-		local i, select, a = #a1 + 1, select;
-		for n=1,select("#", ...) do
+		local i, select, arrs, a = #a1 + 1, select, select("#", ...);
+		for n=1,arrs do
 			a = select(n, ...);
-			for ai=1,#a do
-				a1[i] = a[ai];
-				i = i + 1;
+			if a then
+				for ai=1,#a do
+					a1[i] = a[ai];
+					i = i + 1;
+				end
 			end
 		end
 	end
@@ -4835,14 +4835,11 @@ local function FillGroupsRecursive(group, depth)
 	end
 
 	local groups;
-	-- Determine Cost groups
-	groups = app.ArrayAppend(groups, DeterminePurchaseGroups(group));
-
-	-- Determine Crafted groups
-	groups = app.ArrayAppend(groups, DetermineCraftedGroups(group));
-
-	-- Determine Symlink groups
-	groups = app.ArrayAppend(groups, DetermineSymlinkGroups(group));
+	-- Determine Cost/Crafted/Symlink groups
+	groups = app.ArrayAppend(groups,
+		DeterminePurchaseGroups(group),
+		DetermineCraftedGroups(group),
+		DetermineSymlinkGroups(group));
 
 	-- Prevent repeated nesting of anything dynamically nested
 	if groups then
@@ -18608,9 +18605,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
 				-- Fill up the groups that need to be filled!
-				app.DisableSort = 1;
 				app.FillGroups(self.data);
-				app.DisableSort = nil;
 
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(self.data, "instanceID") then
