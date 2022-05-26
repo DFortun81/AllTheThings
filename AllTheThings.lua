@@ -15756,16 +15756,18 @@ RowOnEnter = function (self)
 			else
 				minlvl = reference.lvl;
 			end
-			-- i suppose a maxlvl of 1 might exist?
-			if maxlvl and maxlvl > 0 then
-				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
-			-- no point to show 'requires lvl 1'
-			elseif minlvl and minlvl > 1 then
-				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+			if app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("LevelRequirements") then
+				-- i suppose a maxlvl of 1 might exist?
+				if maxlvl and maxlvl > 0 then
+					GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
+				-- no point to show 'requires lvl 1'
+				elseif minlvl and minlvl > 1 then
+					GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+				end
 			end
 		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
+		if reference.requireSkill and app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("ProfessionRequirements") then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(reference.requireSkill))); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
@@ -15931,7 +15933,7 @@ RowOnEnter = function (self)
 				end
 			end
 		end
-		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
+		if reference.c and app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
@@ -15943,7 +15945,7 @@ RowOnEnter = function (self)
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
-		if app.Settings:GetTooltipSetting("RaceRequirements") then
+		if app.Settings:GetTooltipSetting("Enabled") and app.Settings:GetTooltipSetting("RaceRequirements") then
 			if reference.races then
 				local str = "";
 				for i,race in ipairs(reference.races) do
