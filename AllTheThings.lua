@@ -17828,7 +17828,7 @@ app._RefreshData = function()
 		app:GetDataCache();
 
 		-- Refresh all Quests without callback
-		app.RefreshQuestInfo();
+		app.QueryCompletedQuests();
 
 		-- Reapply custom collects
 		app.RefreshCustomCollectibility();
