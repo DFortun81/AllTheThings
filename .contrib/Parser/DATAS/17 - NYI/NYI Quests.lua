@@ -1975,70 +1975,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49694, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49873, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
-				q(49874, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
 				q(49875, {
 					["description"] = "Category: |cFFf09f26Inscription|r",
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49876, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49877, {
-					["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
-				q(49878, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
-				q(49879, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
 				}),
 				q(49880, {
 					["description"] = "Category: |cFFf09f26Inscription|r",
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49881, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
-				q(49882, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-				}),
-				q(49943, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-				}),
-				q(49944, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-				}),
 				q(49945, {
-					["description"] = "Category: |cFFf09f26Inscription|r",
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-				}),
-				q(49946, {
 					["description"] = "Category: |cFFf09f26Inscription|r",
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
