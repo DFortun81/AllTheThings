@@ -204,6 +204,7 @@ _.Zones =
 						["provider"] = { "n", 150318 }, -- Veriss
 						["coord"] = { 27.6, 52.3, VOLDUN },
 						["sourceQuest"] = 49946,	-- Lines in the Sand (H)
+						["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
 						["lvl"] = 50,
 					}),
 					q(49879, { -- Brush With Death
