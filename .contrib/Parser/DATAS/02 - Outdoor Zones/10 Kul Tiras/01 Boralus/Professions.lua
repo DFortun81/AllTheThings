@@ -162,16 +162,14 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(INSCRIPTION, {
+				prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
 					q(54477, {	-- Inscribed Methods
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 						["coord"] = { 73.4, 6.3, BORALUS },
 						["races"] = ALLIANCE_ONLY,
 						["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 					}),
 					q(40537, { --Drawing Blood (A) 
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 130399 }, -- Zooey Inksprocket
 						["coord"] = { 73.4, 6.3, BORALUS },
 						["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
@@ -179,7 +177,6 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49694, { -- Turn to Drust (A) 
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 130399 }, -- Zooey Inksprocket
 						["coord"] = { 73.4, 6.3, BORALUS },
 						["sourceQuest"] = 40537,	-- Drawing Blood (A)
@@ -187,14 +184,12 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49873, { --Sacrificial Writes
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "o", 279647 }, -- Tome of Sacrifice
 						["coord"] = { 20.6, 44, DRUSTVAR },
 						["sourceQuest"] = 49694,	-- Turn to Drust (A)
 						["lvl"] = 50,
 					}),
 					q(49874, { -- By the Book
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 131657 }, -- Bloodshed Compendium
 						["coord"] = { 20.7, 44, DRUSTVAR },
 						["sourceQuest"] = 49873,	--Sacrificial Writes
@@ -202,7 +197,6 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49876, { -- Lines in the Sand (A)
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 131386 }, -- Kronah
 						["coord"] = { 20.6, 44, DRUSTVAR },
 						["sourceQuest"] = 49874,	-- By the Book
@@ -210,7 +204,6 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49877, { -- Temple of Sethraliss: Booking on a Favor
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 150318 }, -- Veriss
 						["coord"] = { 27.6, 52.3, VOLDUN },
 						["sourceQuest"] = 49876,	-- Lines in the Sand (A)
@@ -218,21 +211,18 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49879, { -- Brush With Death
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "o", 279645 }, -- Tome of Oblivion
 						["coord"] = { 27.6, 52.3, VOLDUN },
 						["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 						["lvl"] = 50,
 					}),
 					q(49878, { --Penning In Protection
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
 						["coord"] = { 27.6, 52.2, VOLDUN },
 						["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 						["lvl"] = 50,
 					}),
 					q(49881, { -- The Final Verse
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 150318 }, -- Veriss
 						["coord"] = { 27.6, 52.3, VOLDUN },
 						["sourceQuests"] = {
@@ -242,13 +232,12 @@ _.Zones =
 						["lvl"] = 50,
 					}),
 					q(49882, { -- A Test of Quills
-						["requireSkill"] = INSCRIPTION,
 						["provider"] = { "n", 131397 }, -- Miju
 						["coord"] = { 32.6, 86, ZULDAZAR },
 						["sourceQuest"] = 49881,	-- The Final Verse
 						["lvl"] = 50,
 					}),
-				}),
+				})),
 				prof(JEWELCRAFTING, {
 					q(54479, {	-- Jeweled Designs
 						["requireSkill"] = JEWELCRAFTING,
