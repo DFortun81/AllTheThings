@@ -125,8 +125,8 @@ _.Zones =
 						crit(1, {	-- Brutosaur of Nazmir Fed
 							["description"] = "Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",
 							["coords"] = {
-								{ 32.3, 35.3, NAZMIR },	-- Goramor
 								{ 34.6, 54.9, NAZMIR },	-- Blind Wunja
+								{ 32.3, 35.3, NAZMIR },	-- Goramor
 							},
 							["crs"] = {
 								126833,	-- Blind Wunja

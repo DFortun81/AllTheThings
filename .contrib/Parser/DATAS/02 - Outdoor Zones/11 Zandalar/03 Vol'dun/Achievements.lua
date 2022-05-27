@@ -65,12 +65,12 @@ _.Zones =
 						crit(2, {	-- Brutosaur of Vol'dun Fed
 							["description"] = "Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",
 							["coords"] = {
-								{ 62.0, 9.20, VOLDUN },	-- Ol' Stompy
 								{ 40.4, 55.4, VOLDUN },	-- Rikati
+								{ 62.0, 9.20, VOLDUN },	-- Ol' Stompy
 							},
 							["crs"] = {
-								143332,	-- Ol' Stompy
 								133833,	-- Rikati
+								143332,	-- Ol' Stompy
 							},
 						}),
 					},
