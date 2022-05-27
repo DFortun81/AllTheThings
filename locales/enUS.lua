@@ -1747,7 +1747,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
-		[-695] = select(2, GetAchievementInfo(15353)) or "Cosmic Gladiator",	-- Cosmic Gladiator: Shadowlands Season 3
+		[-695] = select(2, GetAchievementInfo(15353)),							-- Cosmic Gladiator: Shadowlands Season 3
 		[-696] = select(2, GetAchievementInfo(15606)) or "Eternal Gladiator",	-- Eternal Gladiator: Shadowlands Season 4
 	-- More PvP Seasons are likely to come dont use IDs here
 	-- Pets

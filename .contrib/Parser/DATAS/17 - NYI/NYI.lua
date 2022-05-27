@@ -43,16 +43,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191217),	-- [Daon Test]Beast Battle-Training Stone
 		i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
+		i(193263),	-- Add Keystone Affix: Shrouded
 
+		i(191926),	-- Confounding Ancient Cypher
 		i(191910),	-- Confounding Antique Cypher
 		i(191911),	-- Cosmic Creation Impetus
+		i(191927),	-- Sacred Creation Impetus
 		i(191734),	-- Motion Sick Peon's Magical Elixir
+		i(192438),	-- Cache of Fated Treasures (Heroic)
+		i(192437),	-- Cache of Fated Treasures (Normal)
+		i(192466),	-- Puzzling Cartel Dinar
+
+		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace?)
 
 		-- Winter Veil 2022
 		ach(15645),	-- To Catch Falling Stars
 		ach(15653),	-- The More You Know*
 		i(191937),	-- Falling Star Catcher (TOY!)
 		i(191925),	-- Falling Star Flinger (TOY!)
+		q(66507),	-- A Winter Veil Gift
+		q(66508),	-- A Gently Shaken Gift
 		-- Watch Twitch?
 		ach(15594, {	-- Fearless Spectator
 			title(459),	-- 	Fearless Spectator <Name>

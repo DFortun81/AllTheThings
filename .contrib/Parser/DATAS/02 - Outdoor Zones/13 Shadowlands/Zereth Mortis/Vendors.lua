@@ -347,6 +347,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(190611),	-- Tabard of the Enlightened
 					i(187797),	-- Technique: Contract: The Enlightened (RECIPE!)
 					i(190379),	-- Technique: Glyph of the Spectral Lupine (RECIPE!)
+					i(191781),	-- Vestige of the Devourers
 					-- Memories
 					i(190584),	-- Memory of Unity (DK)
 					i(190587),	-- Memory of Unity (DH)

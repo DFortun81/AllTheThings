@@ -249,6 +249,8 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										i(183798),	-- Battle Gargon Silessa (MOUNT!)
 										i(183855),	-- Stony's Infused Ruby (PET!)
 										i(183707),	-- Mantle of Burnished Blades
+										i(183711),	-- Burnished Crypt Keeper's Mantle
+										i(183710),	-- Burnished Sinstone Chain
 										i(183972),	-- Forgotten Venthyr Winged Kris
 										i(183973),	-- Lost Winged Ritual Kris
 										i(183976, {	-- Rogue Researcher's Dagger
@@ -284,8 +286,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(181061),	-- Burnished Death Shroud Hood
 											i(181063),	-- Burnished Death Shroud Spaulders
 											i(181058),	-- Burnished Death Shroud Vest
-											i(183711),	-- Burnished Crypt Keeper's Mantle
-											i(183710),	-- Burnished Sinstone Chain
 										}),
 										filter(MAIL, {
 											i(181091),	-- Fearstalker's Burnished Belt

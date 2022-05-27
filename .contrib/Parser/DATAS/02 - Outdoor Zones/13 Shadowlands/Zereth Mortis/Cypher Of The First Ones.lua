@@ -26,6 +26,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "i", 190579 },	-- Unformed Essence
 				}),
+				q(66579, {	-- Sounds of Healing
+					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+					["provider"] = { "i", 192444 },	-- Resonating Disc
+					["timeline"] = { "added 9.2.5" },
+				}),
 				-- Puzzle Quests
 				q(65460, {	-- Your First Cantaric Protolock
 					["description"] = "Requires Cachial.",

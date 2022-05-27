@@ -28,6 +28,49 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					-- i(189156),	-- Vombata Lattice
 				},
 			}),
+			-- Weapons
+			i(192428, {	-- Ballad Shield
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192450, {	-- Choral Staff
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192422, {	-- Harmonium Lantern
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192451, {	-- Lamenting Blade
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192425, {	-- Legato Hammer
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192430, {	-- Meno Sword
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192449, {	-- Overture's Shiv
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192424, {	-- Rhapsodic Cleaver
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192441, {	-- Rhapsodic Pulverizer
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192429, {	-- Scepter of Requiem
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192427, {	-- Senza Spellblade
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192423, {	-- Serenading Arbalest
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192440, {	-- Tempo Smasher
+				["timeline"] = { "added 9.2.5" },
+			}),
+			i(192426, {	-- Waltzing Glaive
+				["timeline"] = { "added 9.2.5" },
+			}),
 			--
 			i(190605),	-- Impossibly Ancient Cloak
 			i(190355),	-- Cryptic Cinch

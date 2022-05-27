@@ -643,7 +643,318 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["classes"] = { DRUID },
 							}),
 						}),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
+							n(WEAPONS, {
+								i(192405, {	-- Eternal Aspirant's Barrier
+									["cost"] = { { "c", 1792, 450 } },
+								}),
+								i(192394, {	-- Eternal Aspirant's Battleaxe
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192410, {	-- Eternal Aspirant's Blackjack
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192409, {	-- Eternal Aspirant's Blade
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192411, {	-- Eternal Aspirant's Crescent
+									["cost"] = { { "c", 1792, 1325 } },
+								}),
+								i(192395, {	-- Eternal Aspirant's Dagger
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192404, {	-- Eternal Aspirant's Gavel
+									["cost"] = { { "c", 1792, 1325 } },
+								}),
+								i(192400, {	-- Eternal Aspirant's Greataxe
+									["cost"] = { { "c", 1792, 1325 } },
+								}),
+								i(192401, {	-- Eternal Aspirant's Greatsword
+									["cost"] = { { "c", 1792, 1750 } },
+								}),
+								i(192406, {	-- Eternal Aspirant's Hatchet
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192408, {	-- Eternal Aspirant's Longspear
+									["cost"] = { { "c", 1792, 1750 } },
+								}),
+								i(192396, {	-- Eternal Aspirant's Mace
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192402, {	-- Eternal Aspirant's Orb
+									["cost"] = { { "c", 1792, 450 } },
+								}),
+								i(192397, {	-- Eternal Aspirant's Polearm
+									["cost"] = { { "c", 1792, 1750 } },
+								}),
+								i(192407, {	-- Eternal Aspirant's Recurve
+									["cost"] = { { "c", 1792, 1750 } },
+								}),
+								i(192398, {	-- Eternal Aspirant's Staff
+									["cost"] = { { "c", 1792, 1750 } },
+								}),
+								i(192399, {	-- Eternal Aspirant's Sword
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192403, {	-- Eternal Aspirant's Warglaive
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+							}),
+							n(BACK, {
+								i(192390, {	-- Eternal Aspirant's Cape
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192319, {	-- Eternal Aspirant's Cloak
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192355, {	-- Eternal Aspirant's Drape
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							filter(CLOTH, {
+								i(192380, {	-- Eternal Aspirant's Silk Belt
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192384, {	-- Eternal Aspirant's Silk Bindings
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192344, {	-- Eternal Aspirant's Silk Cord
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192368, {	-- Eternal Aspirant's Silk Cover
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192361, {	-- Eternal Aspirant's Silk Footwraps
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192330, {	-- Eternal Aspirant's Silk Gloves
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192366, {	-- Eternal Aspirant's Silk Handwraps
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192332, {	-- Eternal Aspirant's Silk Hood
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192336, {	-- Eternal Aspirant's Silk Leggings
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192372, {	-- Eternal Aspirant's Silk Legwraps
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192341, {	-- Eternal Aspirant's Silk Mantle
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192377, {	-- Eternal Aspirant's Silk Shawl
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192325, {	-- Eternal Aspirant's Silk Treads
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192320, {	-- Eternal Aspirant's Silk Tunic
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192356, {	-- Eternal Aspirant's Silk Vest
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192348, {	-- Eternal Aspirant's Silk Wristwraps
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							n(FINGER, {
+								i(192383, {	-- Eternal Aspirant's Band
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192347, {	-- Eternal Aspirant's Ring
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192391, {	-- Eternal Aspirant's Signet
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							filter(LEATHER, {
+								i(192387, {	-- Eternal Aspirant's Leather Armguards
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192346, {	-- Eternal Aspirant's Leather Belt
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192327, {	-- Eternal Aspirant's Leather Boots
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192338, {	-- Eternal Aspirant's Leather Breeches
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192382, {	-- Eternal Aspirant's Leather Cord
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192363, {	-- Eternal Aspirant's Leather Footpads
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192328, {	-- Eternal Aspirant's Leather Gloves
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192364, {	-- Eternal Aspirant's Leather Grips
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192334, {	-- Eternal Aspirant's Leather Helm
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192374, {	-- Eternal Aspirant's Leather Leggings
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192375, {	-- Eternal Aspirant's Leather Mantle
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192370, {	-- Eternal Aspirant's Leather Mask
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192339, {	-- Eternal Aspirant's Leather Spaulders
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192359, {	-- Eternal Aspirant's Leather Tunic
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192323, {	-- Eternal Aspirant's Leather Vest
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192351, {	-- Eternal Aspirant's Leather Wristwraps
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							filter(MAIL, {
+								i(192345, {	-- Eternal Aspirant's Chain Belt
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192386, {	-- Eternal Aspirant's Chain Bracer
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192381, {	-- Eternal Aspirant's Chain Clasp
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192331, {	-- Eternal Aspirant's Chain Gauntlets
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192367, {	-- Eternal Aspirant's Chain Handguards
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192369, {	-- Eternal Aspirant's Chain Headguard
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192333, {	-- Eternal Aspirant's Chain Helm
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192337, {	-- Eternal Aspirant's Chain Leggings
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192326, {	-- Eternal Aspirant's Chain Sabatons
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192378, {	-- Eternal Aspirant's Chain Shoulderguards
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192342, {	-- Eternal Aspirant's Chain Spaulders
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192362, {	-- Eternal Aspirant's Chain Stompers
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192358, {	-- Eternal Aspirant's Chain Tunic
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192322, {	-- Eternal Aspirant's Chain Vest
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192373, {	-- Eternal Aspirant's Chain Wargreaves
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192350, {	-- Eternal Aspirant's Chain Wristwraps
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							n(NECK, {
+								i(192389, {	-- Eternal Aspirant's Choker
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192353, {	-- Eternal Aspirant's Necklace
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192393, {	-- Eternal Aspirant's Pendant
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+							filter(PLATE, {
+								i(192385, {	-- Eternal Aspirant's Plate Armguards
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192357, {	-- Eternal Aspirant's Plate Armor
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192321, {	-- Eternal Aspirant's Plate Chestplate
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192349, {	-- Eternal Aspirant's Plate Cuffs
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192329, {	-- Eternal Aspirant's Plate Gauntlets
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192343, {	-- Eternal Aspirant's Plate Girdle
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192379, {	-- Eternal Aspirant's Plate Greatbelt
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192365, {	-- Eternal Aspirant's Plate Handguards
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192354, {	-- Eternal Aspirant's Plate Headguard
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192318, {	-- Eternal Aspirant's Plate Helm
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192335, {	-- Eternal Aspirant's Plate Legguards
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+								i(192376, {	-- Eternal Aspirant's Plate Pauldrons
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192340, {	-- Eternal Aspirant's Plate Shoulders
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192360, {	-- Eternal Aspirant's Plate Stompers
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192324, {	-- Eternal Aspirant's Plate Warboots
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192371, {	-- Eternal Aspirant's Plate Wargreaves
+									["cost"] = { { "c", 1792, 875 } },
+								}),
+							}),
+							n(-386, {	-- Trinket
+								i(192352, {	-- Eternal Aspirant's Badge of Ferocity
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192392, {	-- Eternal Aspirant's Emblem
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192388, {	-- Eternal Aspirant's Insignia of Alacrity
+									["cost"] = { { "c", 1792, 700 } },
+								}),
+								i(192412, {	-- Eternal Aspirant's Medallion
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192413, {	-- Eternal Aspirant's Relentless Brooch
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+								i(192414, {	-- Eternal Aspirant's Sigil of Adaptation
+									["cost"] = { { "c", 1792, 525 } },
+								}),
+							}),
+						})),
+						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
 							n(WEAPONS, {
 								i(186959, {	-- Cosmic Aspirant's Barrier
 									["cost"] = { { "c", 1792, 450 } },
@@ -954,7 +1265,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+						n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {
 								i(185295, {	-- Unchained Aspirant's Barrier
 									["cost"] = { { "c", 1792, 425 } },	-- 425x Honor
@@ -1265,7 +1576,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_SINFUL, bubbleDown({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
+						n(SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
 							i(175884, {	-- Sinful Aspirant's Badge of Ferocity
 								["cost"] = { { "c", 1792, 525 } },
 							}),
@@ -1525,7 +1836,338 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(182465),	-- Truth's Wake
 							i(182681),	-- Vengeful Shock
 						})),
-						n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+						n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
+							n(WEAPONS, {
+								i(192292, {	-- Eternal Gladiator's Ballista
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192306, {	-- Eternal Gladiator's Barrier
+									["cost"] = { { "c", 1602, 450 } },
+								}),
+								i(192288, {	-- Eternal Gladiator's Ceremonial Sword
+									["cost"] = { { "c", 1602, 1350 } },
+								}),
+								i(192207, {	-- Eternal Gladiator's Chalice
+									["cost"] = { { "c", 1602, 450 } },
+								}),
+								i(192309, {	-- Eternal Gladiator's Focus Staff
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192311, {	-- Eternal Gladiator's Gavel
+									["cost"] = { { "c", 1602, 1350 } },
+								}),
+								i(192287, {	-- Eternal Gladiator's Gladius
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192310, {	-- Eternal Gladiator's Greatstaff
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192308, {	-- Eternal Gladiator's Greatsword
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192208, {	-- Eternal Gladiator's Guard
+									["cost"] = { { "c", 1602, 450 } },
+								}),
+								i(192284, {	-- Eternal Gladiator's Hacker
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192285, {	-- Eternal Gladiator's Knife
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192291, {	-- Eternal Gladiator's Pulverizer
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192307, {	-- Eternal Gladiator's Rifle
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192312, {	-- Eternal Gladiator's Ripper
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192286, {	-- Eternal Gladiator's Ritual Dagger
+									["cost"] = { { "c", 1602, 1350 } },
+								}),
+								i(192293, {	-- Eternal Gladiator's Scythe
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192313, {	-- Eternal Gladiator's Slicer
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192283, {	-- Eternal Gladiator's Splitter
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192294, {	-- Eternal Gladiator's Vesper
+									["cost"] = { { "c", 1602, 1800 } },
+								}),
+								i(192290, {	-- Eternal Gladiator's Warglaive
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+								i(192289, {	-- Eternal Gladiator's Xiphos
+									["cost"] = { { "c", 1602, 900 } },
+								}),
+							}),
+							n(BACK, {
+								i(192209, {	-- Eternal Gladiator's Cloak
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192210, {	-- Eternal Gladiator's Drape
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192212, {	-- Eternal Gladiator's Greatcloak
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192211, {	-- Eternal Gladiator's Shawl
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							filter(CLOTH, {
+								i(192230, {	-- Eternal Gladiator's Silk Amice
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192234, {	-- Eternal Gladiator's Silk Armbands
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192232, {	-- Eternal Gladiator's Silk Belt
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192231, {	-- Eternal Gladiator's Silk Cord
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192223, {	-- Eternal Gladiator's Silk Gloves
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192226, {	-- Eternal Gladiator's Silk Guise
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192224, {	-- Eternal Gladiator's Silk Handwraps
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192225, {	-- Eternal Gladiator's Silk Hood
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192227, {	-- Eternal Gladiator's Silk Leggings
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192229, {	-- Eternal Gladiator's Silk Mantle
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192219, {	-- Eternal Gladiator's Silk Robe
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192221, {	-- Eternal Gladiator's Silk Slippers
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192222, {	-- Eternal Gladiator's Silk Treads
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192228, {	-- Eternal Gladiator's Silk Trousers
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192220, {	-- Eternal Gladiator's Silk Vestments
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192233, {	-- Eternal Gladiator's Silk Wristwraps
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							n(FINGER, {
+								i(192214, {	-- Eternal Gladiator's Band
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192213, {	-- Eternal Gladiator's Ring
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192215, {	-- Eternal Gladiator's Signet
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							filter(LEATHER, {
+								i(192247, {	-- Eternal Gladiator's Leather Belt
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192237, {	-- Eternal Gladiator's Leather Boots
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192243, {	-- Eternal Gladiator's Leather Breeches
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192239, {	-- Eternal Gladiator's Leather Gloves
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192240, {	-- Eternal Gladiator's Leather Grips
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192241, {	-- Eternal Gladiator's Leather Helm
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192236, {	-- Eternal Gladiator's Leather Jerkin
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192244, {	-- Eternal Gladiator's Leather Legwraps
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192242, {	-- Eternal Gladiator's Leather Mask
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192246, {	-- Eternal Gladiator's Leather Shoulderpads
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192245, {	-- Eternal Gladiator's Leather Spaulders
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192248, {	-- Eternal Gladiator's Leather Strap
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192238, {	-- Eternal Gladiator's Leather Treads
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192235, {	-- Eternal Gladiator's Leather Vest
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192250, {	-- Eternal Gladiator's Leather Wristguards
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192249, {	-- Eternal Gladiator's Leather Wristwraps
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							filter(MAIL, {
+								i(192263, {	-- Eternal Gladiator's Chain Belt
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192254, {	-- Eternal Gladiator's Chain Boots
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192266, {	-- Eternal Gladiator's Chain Bracers
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192260, {	-- Eternal Gladiator's Chain Breeches
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192258, {	-- Eternal Gladiator's Chain Faceguard
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192255, {	-- Eternal Gladiator's Chain Gauntlets
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192264, {	-- Eternal Gladiator's Chain Girdle
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192256, {	-- Eternal Gladiator's Chain Handguards
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192257, {	-- Eternal Gladiator's Chain Helm
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192259, {	-- Eternal Gladiator's Chain Leggings
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192261, {	-- Eternal Gladiator's Chain Monnion
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192253, {	-- Eternal Gladiator's Chain Sabatons
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192262, {	-- Eternal Gladiator's Chain Shoulderguard
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192252, {	-- Eternal Gladiator's Chain Tunic
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192251, {	-- Eternal Gladiator's Chain Vest
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192265, {	-- Eternal Gladiator's Chain Wristguards
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							n(NECK, {
+								i(192218, {	-- Eternal Gladiator's Amulet
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192216, {	-- Eternal Gladiator's Necklace
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192217, {	-- Eternal Gladiator's Pendant
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							filter(PLATE, {
+								i(192267, {	-- Eternal Gladiator's Plate Chestguard
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192268, {	-- Eternal Gladiator's Plate Chestplate
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192271, {	-- Eternal Gladiator's Plate Gauntlets
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192279, {	-- Eternal Gladiator's Plate Girdle
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192280, {	-- Eternal Gladiator's Plate Greatbelt
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192272, {	-- Eternal Gladiator's Plate Handguards
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192273, {	-- Eternal Gladiator's Plate Helm
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192274, {	-- Eternal Gladiator's Plate Helmet
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192275, {	-- Eternal Gladiator's Plate Legguards
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192278, {	-- Eternal Gladiator's Plate Pauldrons
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192277, {	-- Eternal Gladiator's Plate Shoulders
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192270, {	-- Eternal Gladiator's Plate Stompers
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192282, {	-- Eternal Gladiator's Plate Vambraces
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192269, {	-- Eternal Gladiator's Plate Warboots
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192276, {	-- Eternal Gladiator's Plate Wargreaves
+									["cost"] = { { "c", 1602, 875 } },
+								}),
+								i(192281, {	-- Eternal Gladiator's Plate Wristguards
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+							n(-386, {	-- Trinket
+								i(192295, {	-- Eternal Gladiator's Badge of Ferocity
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								--i(192305, {	-- Eternal Gladiator's Devouring Malediction
+								--i(192302),	-- Eternal Gladiator's Echoing Resolve
+								i(192297, {	-- Eternal Gladiator's Emblem
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								--i(192304, {	-- Eternal Gladiator's Eternal Aegis
+								--i(192301),	-- Eternal Gladiator's Fastidious Resolve
+								i(192296, {	-- Eternal Gladiator's Insignia of Alacrity
+									["cost"] = { { "c", 1602, 700 } },
+								}),
+								i(192298, {	-- Eternal Gladiator's Medallion
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								i(192299, {	-- Eternal Gladiator's Relentless Brooch
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+								--i(192303, {	-- Eternal Gladiator's Resonator
+								i(192300, {	-- Eternal Gladiator's Sigil of Adaptation
+									["cost"] = { { "c", 1602, 525 } },
+								}),
+							}),
+						})),
+						n(SEASON_COSMIC, bubbleDownSelf({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
 							n(WEAPONS, {
 								i(186863, {	-- Cosmic Gladiator's Ballista
 									["cost"] = { { "c", 1602, 1800 } },
@@ -1835,10 +2477,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									["cost"] = { { "c", 1602, 700 } },
 								}),
 								--i(188778, {	-- Cosmic Gladiator's Devouring Malediction
+								--i(188691),	-- Cosmic Gladiator's Echoing Resolve
 								i(186868, {	-- Cosmic Gladiator's Emblem
 									["cost"] = { { "c", 1602, 700 } },
 								}),
 								--i(188775, {	-- Cosmic Gladiator's Eternal Aegis
+								--i(188524),	-- Cosmic Gladiator's Fastidious Resolve
 								i(186867, {	-- Cosmic Gladiator's Insignia of Alacrity
 									["cost"] = { { "c", 1602, 700 } },
 								}),
@@ -1854,7 +2498,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_UNCHAINED, bubbleDown({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
+						n(SEASON_UNCHAINED, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {
 							n(WEAPONS, {
 								i(188660, {	-- Unchained Gladiator's Barrier
 									["cost"] = { { "c", 1602, 450 } },	-- 450x Conquest
@@ -2192,7 +2836,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								}),
 							}),
 						})),
-						n(SEASON_SINFUL, bubbleDown({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
+						n(SEASON_SINFUL, bubbleDownSelf({ ["timeline"] = { "added 9.0.2", "removed 9.1.0" } }, {
 							n(KYRIAN, sharedData({ ["customCollect"] = { "SL_COV_KYR" } }, {
 								i(177851, {	-- Sinful Gladiator's Ceremonial Sword
 									["cost"] = { { "c", 1602, 1350 } },

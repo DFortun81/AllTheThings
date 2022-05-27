@@ -5,6 +5,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			-- Quest
+			i(192444, {	-- Resonating Disc
+				["timeline"] = { "added 9.2.5" },
+			}),
 			i(190579),	-- Unformed Essence
 			-- Schematic
 			i(189468, {	-- Schematic: Goldplate Bufonid

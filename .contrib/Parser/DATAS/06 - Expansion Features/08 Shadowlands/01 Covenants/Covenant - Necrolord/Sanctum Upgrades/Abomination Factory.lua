@@ -346,8 +346,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								crit(25, {	-- Plague Pack
+									["description"] = "You need to obtain either Grungy Containment Pack or Pristine Containment Pack to be able to see this at the crafting table.",
 									["cost"] = {
 										{ "i", 183744, 5 },	-- 5 Superior Parts
+										{ "i", 184156, 1 },	-- 1xPristine Containment Pack
+										{ "i", 184154, 1 },	-- 1xGrungy Containment Pack
 									},
 								}),
 								crit(26, {	-- Safe Fall Pack
@@ -371,6 +374,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								crit(29, {	-- Barrel O' Fish
 									["description"] = "Becomes available at max Shadowlands Fishing skill.",
+									["requireSkill"] = FISHING,
 									["cost"] = {
 										{ "i", 173032, 5 },	-- 5 Lost Sole
 										{ "i", 173033, 5 },	-- 5 Iridescent Amberjack
