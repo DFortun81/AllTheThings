@@ -145,7 +145,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 						["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
 						["coord"] = { 57.2, 31.9, 1186 },
 						["g"] = {
-							i(184922, {	-- Arsenal: Dark Iron Armaments
+							i(184922, {	-- Arsenal: Lavaforge Armaments
 								i(191631),	-- Lavaforge Bulwark
 								i(191626),	-- Lavaforge Hacker
 								i(191625),	-- Lavaforge Monolith (Staff)
@@ -171,3 +171,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		},
 	}),
 })));
+
+root("HiddenQuestTriggers", {
+	q(66302),	-- Arsenal: Lavaforge Armaments (Triggered when learning the Arsenal)
+});

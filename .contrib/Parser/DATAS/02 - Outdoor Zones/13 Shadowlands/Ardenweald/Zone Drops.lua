@@ -5,6 +5,7 @@
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ARDENWEALD, {
 		n(ZONE_DROPS, {
+			i(180478),	-- Champion's Pelt
 			i(180522),	-- Phaedrum Lockbox
 			i(175545),	-- Blackthorn Chestplate
 			i(175553),	-- Blackthorn Gauntlets

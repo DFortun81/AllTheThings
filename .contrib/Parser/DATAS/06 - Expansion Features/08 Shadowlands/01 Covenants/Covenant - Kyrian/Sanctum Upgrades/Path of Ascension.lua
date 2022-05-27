@@ -144,6 +144,11 @@ local ZELESKOS_GROUP = {
 		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
 	}),
 };
+local CALLOUSED_BONE = 180594;
+local CHAMPIONS_PELT = 180478;
+local ELYSIAN_FEATHERS = 180477;
+local NIGHTFORGED_STEEL = 180595;
+local SOUL_MIRROR = 179378;
 
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
@@ -199,121 +204,339 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
 							}),
 						}),
-						n(BLUEPRINTS, {
+						prof(ASCENSION_CRAFTING, {
 							["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 							["crs"] = { 168430 },	-- Dactylis
 							["g"] = {
-								i(184578, {	-- Artisan Tool Belt
-									["cost"] = {
-										{ "i", 180594, 8 },	-- Calloused Bone
-										{ "i", 180478, 10 },	-- Champion's Pelt
-										{ "i", 180477, 8 },	-- Elysian Feathers
-										{ "i", 180595, 6 },	-- Nightforged Steel
-									},
+								n(QUESTS, {
+									q(62976, {	-- Artisan Tool Belt
+										["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184578 },	-- Artisan Tool Belt
+									}),
+									q(60945, {	-- Deep Echo Trident
+										["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
+										["provider"] = { "i", 181499 },	-- Deep Echo Trident
+									}),
+									q(61714, {	-- Gilded Abacus
+										["sourceQuests"] = { 62971 },	-- Blueprint: Gilded Abacus
+										["provider"] = { "i", 184580 },	-- Gilded Abacus
+									}),
+									q(60497, {	-- Herald's Footpads
+										["sourceQuests"] = { 60496 },	-- Into the Coliseum
+										["provider"] = { "n", 168427 },	-- Artemede
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
+										["g"] = {
+											i(180464),	-- Blueprint: Herald's Footpads
+										},
+									}),
+									q(60974, {	-- Phial of Serenity
+										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
+										["provider"] = { "i", 184478 },	-- Phial of Serenity
+									}),
+									q(62998, {	-- Ring of Warding
+										["sourceQuests"] = { 62928 },	-- Blueprint: Ring of Warding
+										["provider"] = { "i", 184481 },	-- Ring of Warding
+									}),
+									q(62995, {	-- Spiritforged Aegis
+										["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
+										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
+									}),
+									q(62483, {	-- Steward Mail Pouch
+										["sourceQuests"] = { 62970 },	-- Blueprint: Steward Mail Pouch
+										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
+									}),
+									q(62996, {	-- Vial of Lichfrost
+										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
+										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
+									}),
 								}),
-								q(62976, {	-- Artisan Tool Belt
-									["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
-									["provider"] = { "i", 184578 },	-- Artisan Tool Belt
+								filter(RECIPES, {
+									-- Lures
+									recipe(333530, {	-- Anointment Oil
+										["collectible"] = false,
+									}),
+									recipe(333548, {	-- Ashfallen Key
+										["collectible"] = false,
+									}),
+									recipe(333545, {	-- Catalyst of Creation
+										["collectible"] = false,
+									}),
+									recipe(333535, {	-- Fountain of Rejuvenation
+										["collectible"] = false,
+									}),
+									recipe(333533, {	-- Heartpiercer Javelin
+										["collectible"] = false,
+									}),
+									recipe(333549, {	-- Humility's Guard
+										["collectible"] = false,
+									}),
+									recipe(328321, {	-- Overcharged Goliath Core
+										["collectible"] = false,
+									}),
+									recipe(333546, {	-- Praetor Resonance Beacon
+										["collectible"] = false,
+									}),
+									recipe(328680, {	-- Soul Mirror
+										["collectible"] = false,
+									}),
+									recipe(333547, {	-- Soulseeker Crystal
+										["collectible"] = false,
+									}),
+
+									-- Boons
+									recipe(345786, {	-- Artisan Tool Belt
+										["collectible"] = false,
+									}),
+									recipe(342521),	-- Empyrean Refreshment
+									recipe(345760, {	-- Gilded Abacus
+										["collectible"] = false,
+									}),
+									recipe(345713),	-- Kyrian Smith's Kit
+									recipe(345894),	-- Medallion of Service
+									recipe(335705, {	-- Sigil of Haunting Memories
+										["collectible"] = false,
+									}),
+									recipe(342503),	-- Skystrider Glider
+									recipe(345757, {	-- Steward Mail Pouch
+										["collectible"] = false,
+									}),
+									recipe(345916),	-- Vesper of Calling
+
+									-- Charms
+									recipe(335619),	-- Charm of Discord
+									recipe(335626),	-- Charm of Focus
+									recipe(333220),	-- Charm of Fortitude
+									recipe(335603),	-- Charm of Persistence
+									recipe(338384),	-- Charm of Quickness
+
+									-- Equipment
+									recipe(333230, {	-- Deep Echo Trident
+										["collectible"] = false,
+									}),
+									recipe(333209, {	-- Herald's Footpads
+										["collectible"] = false,
+									}),
+									recipe(333372, {	-- Phial of Serenity
+										["collectible"] = false,
+									}),
+									recipe(345978, {	-- Ring of Warding
+										["collectible"] = false,
+									}),
+									recipe(333374, {	-- Spiritforged Aegis
+										["collectible"] = false,
+									}),
+									recipe(333362, {	-- Vial of Lichfrost
+										["collectible"] = false,
+									}),
 								}),
-								i(181499, {	-- Deep Echo Trident
-									["cost"] = {
-										{ "i", 180594, 6 },	-- Calloused Bone
-										{ "i", 180595, 8 },	-- Nightforged Steel
-									},
+								n(CRAFTABLES, {
+									-- Lures
+									i(181273, {	-- Anointment Oil
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 4 },
+											{ "i", ELYSIAN_FEATHERS, 1 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
+									i(181279, {	-- Ashfallen Key
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+									i(181276, {	-- Catalyst of Creation
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 3 },
+											{ "i", CHAMPIONS_PELT, 4 },
+											{ "i", ELYSIAN_FEATHERS, 2 },
+										},
+									}),
+									i(181275, {	-- Fountain of Rejuvenation
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+									i(181274, {	-- Heartpiercer Javelin
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 4 },
+											{ "i", NIGHTFORGED_STEEL, 3 },
+										},
+									}),
+									i(181280, {	-- Humility's Guard
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 3 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+											{ "i", NIGHTFORGED_STEEL, 4 },
+										},
+									}),
+									i(179010, {	-- Overcharged Goliath Core
+										["cost"] = {
+											{ "i", 179009, 3 },	-- 3xTampered Anima Charger
+											{ "i", 179008, 1 },	-- 1xDepleted Goliath Core
+										},
+									}),
+									i(181277, {	-- Praetor Resonance Beacon
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+									i(179378, {	-- Soul Mirror
+										["cost"] = {
+											{ "i", 178995, 5 },	-- 5xSoul Mirror Shard
+										},
+									}),
+									i(181278, {	-- Soulseeker Crystal
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+
+									-- Boons
+									i(184578, {	-- Artisan Tool Belt
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 8 },
+											{ "i", CHAMPIONS_PELT, 10 },
+											{ "i", ELYSIAN_FEATHERS, 8 },
+											{ "i", NIGHTFORGED_STEEL, 6 },
+										},
+									}),
+									i(183793, {	-- Empyrean Refreshment
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 2 },
+											{ "i", CHAMPIONS_PELT, 6 },
+											{ "i", ELYSIAN_FEATHERS, 2 },
+											{ "i", NIGHTFORGED_STEEL, 4 },
+										},
+									}),
+									i(184580, {	-- Gilded Abacus
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 12 },
+											{ "i", NIGHTFORGED_STEEL, 16 },
+										},
+									}),
+									currency(1819),	-- Medallion of Service (No Cost since it will just go around in circle(see vendor))
+									i(181166, {	-- Sigil of Haunting Memories
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 8 },
+											{ "i", ELYSIAN_FEATHERS, 6 },
+										},
+									}),
+									i(180445, {	-- Skystrider Glider
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 4 },
+											{ "i", CHAMPIONS_PELT, 4 },
+											{ "i", ELYSIAN_FEATHERS, 6 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
+									i(184577, {	-- Steward Mail Pouch
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 20 },
+											{ "i", ELYSIAN_FEATHERS, 12 },
+										},
+									}),
+									i(184451, {	-- Vesper of Calling
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 8 },
+											{ "i", CHAMPIONS_PELT, 8 },
+											{ "i", ELYSIAN_FEATHERS, 8 },
+											{ "i", NIGHTFORGED_STEEL, 8 },
+										},
+									}),
+
+									-- Charms
+									i(181140, {	-- Charm of Alacrity
+										["cost"] = {
+											{ "i", ELYSIAN_FEATHERS, 4 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
+									i(181157, {	-- Charm of Discord
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 4 },
+											{ "i", NIGHTFORGED_STEEL, 4 },
+										},
+									}),
+									i(181159, {	-- Charm of Energizing
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 4 },
+											{ "i", ELYSIAN_FEATHERS, 3 },
+										},
+									}),
+									i(181239, {	-- Charm of Focus
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 2 },
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 2 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
+									i(180479, {	-- Charm of Fortitude
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 4 },
+											{ "i", CHAMPIONS_PELT, 6 },
+										},
+									}),
+									i(181145, {	-- Charm of Persistence
+										["cost"] = {
+											{ "i", ELYSIAN_FEATHERS, 4 },
+											{ "i", NIGHTFORGED_STEEL, 4 },
+										},
+									}),
+									i(181846, {	-- Charm of Quickness
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+
+									-- Equipment
+									i(181499, {	-- Deep Echo Trident
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 6 },
+											{ "i", NIGHTFORGED_STEEL, 8 },
+										},
+									}),
+									i(180579, {	-- Herald's Footpads
+										["cost"] = {
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 4 },
+										},
+									}),
+									i(184478, {	-- Phial of Serenity
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 2 },
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 12 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
+									i(184481, {	-- Ring of Warding
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 8 },
+											{ "i", CHAMPIONS_PELT, 8 },
+											{ "i", NIGHTFORGED_STEEL, 6 },
+										},
+									}),
+									i(184475, {	-- Spiritforged Aegis
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 2 },
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", ELYSIAN_FEATHERS, 10 },
+											{ "i", NIGHTFORGED_STEEL, 6 },
+										},
+									}),
+									i(184477, {	-- Vial of Lichfrost
+										["cost"] = {
+											{ "i", CALLOUSED_BONE, 8 },
+											{ "i", CHAMPIONS_PELT, 2 },
+											{ "i", NIGHTFORGED_STEEL, 2 },
+										},
+									}),
 								}),
-								q(60945, {	-- Deep Echo Trident
-									["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
-									["provider"] = { "i", 181499 },	-- Deep Echo Trident
-								}),
-								i(184580, {	-- Gilded Abacus
-									["cost"] = {
-										{ "i", 180594, 12 },	-- Calloused Bone
-										{ "i", 180595, 16 },	-- Nightforged Steel
-									},
-								}),
-								q(61714, {	-- Gilded Abacus
-									["sourceQuests"] = { 62971 },	-- Blueprint: Gilded Abacus
-									["provider"] = { "i", 184580 },	-- Gilded Abacus
-								}),
-								q(60497, {	-- Herald's Footpads
-									-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
-									["sourceQuests"] = { 60496 },	-- Into the Coliseum
-									["provider"] = { "n", 168427 },	-- Artemede
-									["coord"] = { 28.2, 42.4, ARCHONS_RISE },
-									["g"] = {
-										i(180464),	-- Blueprint: Herald's Footpads
-									},
-								}),
-								i(184478, {	-- Phial of Serenity
-									["cost"] = {
-										{ "i", 180594, 2 },	-- Calloused Bone
-										{ "i", 180478, 2 },	-- Champion's Pelt
-										{ "i", 180477, 12 },	-- Elysian Feathers
-										{ "i", 180595, 2 },	-- Nightforged Steel
-									},
-								}),
-								q(60974, {	-- Phial of Serenity
-									["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
-									["provider"] = { "i", 184478 },	-- Phial of Serenity
-								}),
-								i(184481, {	-- Ring of Warding
-									["cost"] = {
-										{ "i", 180594, 8 },	-- Calloused Bone
-										{ "i", 180478, 8 },	-- Champion's Pelt
-										{ "i", 180595, 6 },	-- Nightforged Steel
-									},
-								}),
-								q(62998, {	-- Ring of Warding
-									["sourceQuests"] = { 62928 },	-- Blueprint: Ring of Warding
-									["provider"] = { "i", 184481 },	-- Ring of Warding
-								}),
-								i(184475, {	-- Spiritforged Aegis
-									["cost"] = {
-										{ "i", 180594, 2 },	-- Calloused Bone
-										{ "i", 180478, 2 },	-- Champion's Pelt
-										{ "i", 180477, 10 },	-- Elysian Feathers
-										{ "i", 180595, 6 },	-- Nightforged Steel
-									},
-								}),
-								q(62995, {	-- Spiritforged Aegis
-									["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
-									["provider"] = { "i", 184475 },	-- Spiritforged Aegis
-								}),
-								i(184577, {	-- Steward Mail Pouch
-									["cost"] = {
-										{ "i", 180478, 20 },	-- Champion's Pelt
-										{ "i", 180477, 12 },	-- Elysian Feathers
-									},
-								}),
-								q(62483, {	-- Steward Mail Pouch
-									["sourceQuests"] = { 62970 },	-- Blueprint: Steward Mail Pouch
-									["provider"] = { "i", 184577 },	-- Steward Mail Pouch
-								}),
-								i(184477, {	-- Vial of Lichfrost
-									["cost"] = {
-										{ "i", 180594, 8 },	-- Calloused Bone
-										{ "i", 180478, 2 },	-- Champion's Pelt
-										{ "i", 180595, 2 },	-- Nightforged Steel
-									},
-								}),
-								q(62996, {	-- Vial of Lichfrost
-									["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
-									["provider"] = { "i", 184477 },	-- Vial of Lichfrost
-								}),
-								i(180594),	-- Calloused Bone
-								i(180478),	-- Champion's Pelt
-								i(181157),	-- Charm of Discord
-								i(181239),	-- Charm of Focus
-								i(180479),	-- Charm of Fortitude
-								i(181145),	-- Charm of Persistence
-								i(181846),	-- Charm of Quickness
-								i(180477),	-- Elysian Feathers
-								i(183793),	-- Empyrean Refreshment
-								i(180579),	-- Herald's Footpads
-								i(183126),	-- Kyrian Smith's Kit
-								i(180595),	-- Nightforged Steel
-								i(180445),	-- Skystrider Glider
-								i(184451),	-- Vesper of Calling
 							},
 						}),
 						n(TIER_ONE, {
@@ -334,6 +557,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181274, 1 },	-- 1xHeartpiercer Javelin
+										},
 									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
@@ -350,11 +577,19 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181279, 1 },	-- 1xAshfallen Key
+										},
 									}),
 									q(61356, {	-- Echthra, Dame of Hated
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181273, 1 },	-- 1xAnointment Oil
+										},
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
@@ -390,6 +625,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181275, 1 },	-- 1xFountain of Rejuvenation
+										},
 									}),
 									q(61489, {	-- Of Hearsay and Heresy
 										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
@@ -418,6 +657,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181277, 1 },	-- 1xPraetor Resonance Beacon
+										},
 									}),
 									q(61366, {	-- Tactical Operation
 										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
@@ -444,6 +687,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 60493 },	-- Humble Gatherer
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 179010, 2 },	-- 2xOvercharged Goliath Core
+										},
 									}),
 								}),
 								n(REWARDS, {
@@ -540,10 +787,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["g"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
-										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181280, 1 },	-- 1xHumility's Guard
+										},
 									}),
 									q(61373, {	-- Azaruux, the Realm Ender
 										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
@@ -579,10 +829,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61363, {	-- Mad Mortimer
-										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181276, 1 },	-- 1xCatalyst of Creation
+										},
 									}),
 									q(62053, {	-- Necromantic Power
 										["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
@@ -687,7 +940,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									q(63172, {	-- Path of Ascension: Splinterbark Nightmare
-									--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
@@ -704,10 +956,13 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									q(61367, {	-- Thran'tiok
-										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["cost"] = {
+											{ "i", SOUL_MIRROR, 1 },
+											{ "i", 181278, 1 },	-- 1xSoulseeker Crystal
+										},
 									}),
 								}),
 								n(REWARDS, {
@@ -1204,6 +1459,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									}),
 								}),
 							}),
+							n(174582, {	-- Caretaker Caryn
+								["coord"] = { 26.4, 33.8, ARCHONS_RISE },
+								["g"] = {
+									i(184444, {	-- Supplies for the Path
+										["description"] = "Contains around 15-20 of each rare-quality crafting material for Path of Ascension crafting.",
+										["cost"] = { { "c", 1819, 5 } },	-- 5x Medallion of Service
+										["g"] = {
+											i(CALLOUSED_BONE),
+											i(CHAMPIONS_PELT),
+											i(ELYSIAN_FEATHERS),
+											i(NIGHTFORGED_STEEL),
+										},
+									}),
+								},
+							}),
 							n(171959, {	-- Orluna <Armor Vendor>
 								["coord"] = { 27.1, 40.9, ARCHONS_RISE },
 								["g"] = {
@@ -1356,7 +1626,9 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 end
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
+	prof(ASCENSION_CRAFTING, {
+		recipe(335849),	-- Charm of Energizing
+		recipe(335596),	-- Charm of Alacrity
 		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265, {	-- Blueprint: Charm of Alacrity
 			i(181139),	-- Blueprint: Charm of Alacrity

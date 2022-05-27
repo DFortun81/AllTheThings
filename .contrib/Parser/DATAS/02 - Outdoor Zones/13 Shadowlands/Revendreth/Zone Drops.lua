@@ -121,6 +121,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
+			i(180595),	-- Nightforged Steel
 			i(177772),	-- Avowed Tormenter's Cord
 			i(177769),	-- Avowed Tormenter's Handwraps
 			i(177770),	-- Avowed Tormenter's Hood

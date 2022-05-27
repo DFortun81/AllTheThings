@@ -55,6 +55,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					157309,	-- Violet Mistake
 				},
 			}),
+			i(180594),	-- Calloused Bone
 			i(180532),	-- Laestrite Lockbox
 			i(176990),	-- Blackhound Armplates
 			i(178950),	-- Blackhound Bulwark

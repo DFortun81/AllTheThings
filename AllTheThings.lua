@@ -984,6 +984,7 @@ end
 			cache = {};
 			-- "Professions" that anyone can "know"
 			cache[2720] = true;	-- Junkyard Tinkering
+			cache[2791] = true;	-- Ascension Crafting
             cache[2819] = true;	-- Protoform Synthesis
 			SetTempDataMember("PROFESSION_CACHE", cache);
 			local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();

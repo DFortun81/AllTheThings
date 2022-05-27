@@ -389,18 +389,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							currency(1931),	-- Cataloged Research
 						},
 					})),
-					i(191300, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Certified Vouchsafe
+					i(191300, {	-- Certified Vouchsafe
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
-					})),
+						["timeline"] = { "added 9.2.0" }
+					}),
 					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(2009),	-- Cosmic Flux
 						},
 					})),
-					i(191297, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Ephemera-Infused Mesh
+					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-					})),
+						["timeline"] = { "added 9.2.0" }
+					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
 						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
 						["g"] = {
@@ -413,9 +415,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(191303, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Overflowing Chest of Riches
+					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
-					})),
+						["timeline"] = { "added 9.2.0" }
+					}),
+					i(187707, {	-- Progentior Essentia
+						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
+						["timeline"] = { "added 9.2.0" }
+					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", 1191, 750 } },	-- 750x Valor
 						["timeline"] = { "added 9.0.5" },
@@ -563,6 +570,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
+					i(187707, {	-- Progentior Essentia
+						["cost"] = { { "c", ANIMA, 25000 } },
+						["timeline"] = { "added 9.2.0" }
+					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = { { "c", ANIMA, 7500 } },
 						["timeline"] = { "added 9.0.5" },

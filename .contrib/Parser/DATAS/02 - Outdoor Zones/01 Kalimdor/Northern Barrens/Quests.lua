@@ -357,6 +357,7 @@ _.Zones =
 					["sourceQuests"] = {
 						850,	-- Kolkar Leaders
 						851,	-- Verog the Dervish
+						14073,	-- Deathgate's Reinforcements
 					},
 					["g"] = {
 						i(59585),	-- Lushwater Cloak

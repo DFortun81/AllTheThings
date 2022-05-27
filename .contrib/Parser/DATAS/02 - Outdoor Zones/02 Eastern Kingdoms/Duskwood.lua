@@ -2123,6 +2123,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 root("HiddenQuestTriggers", {
 	tier(CATA_TIER, {
 		q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
+		q(40937),	-- Tracking: Revil Defeated
+		q(41153),	-- Revil Defeated
 	}),
 });
 -- #endif

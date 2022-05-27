@@ -2224,7 +2224,6 @@ q(40903),	--
 q(40922),	-- Tracking Quest: Mephistos 2
 q(40926),	--
 q(40928),	--
-q(40937),	-- Tracking: Revil Defeated
 q(40939),	-- Vignette: Stormwing Matriarch
 q(40940),	-- Test Quest Two
 q(40948),	--
@@ -2267,8 +2266,6 @@ q(41133),	--
 q(41134),	-- 7.0 Suramar - Vignette: Jetsam - twh
 q(41142),	-- 7.0 Suramar - Vignette: Khory - twh
 q(41147),	-- The Other City of Mages
-q(41153),	-- Revil Defeated
-q(41154),	--
 q(41211),	-- Neltharion's Lair: Neltharion's Treasure
 q(41213),	-- Artifact XP - Cho'Zok
 q(41229),	-- Tracking Quest: Chen Obtained
@@ -2526,7 +2523,6 @@ q(42550),	-- 10v10 #3
 q(42551),	-- 10v10 #4
 q(42566),	-- A Blaze of Starlight
 q(42569),	-- Shaman Shrine - Azsuna Earth 01
-q(42570),	-- Shaman Shrine - Azsuna Earth 02
 q(42571),	-- Shaman Shrine - Highmountain Earth 01
 q(42572),	-- Shaman Shrine - Highmountain Earth 02
 q(42573),	-- Shaman Shrine - Stormheim Earth 01

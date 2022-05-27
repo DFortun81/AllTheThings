@@ -18,6 +18,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					156560,	-- Misguided Postulant
 				},
 			}),
+			i(180477),	-- Elysian Feathers
+			i(178995),	-- Soul Mirror Shard
+			i(179008),	-- Depleted Goliath Core
+			i(179009),	-- Tampered Anima Charger
 			i(180533),	-- Solenium Lockbox
 			i(176788),	-- Darkfeather Belt
 			i(176792),	-- Darkfeather Bindings

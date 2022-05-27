@@ -858,7 +858,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 	}),
 })));
 
--- 41154??
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 root(ROOTS.HiddenQuestTriggers, {
@@ -887,12 +886,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
 	q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
 	q(43678),	-- Destro hidden artifact from ritual of doom
+	q(41154),	-- Attacking Revil Kost During Artifact Quest
 });
-
--- These quests never made it in.
--- root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
--- 	n(QUESTS, {
-
--- 	}),
--- }));
 -- #endif

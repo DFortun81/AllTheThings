@@ -333,6 +333,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60862,
 				["isDaily"] = true,
 				["description"] = "Requires two Buffs to mount the rare. First buff is from the statue next to the rare & the second buff comes from the Skystrider Glider item.",
+				["cost"] = {{ "i", 180445, 1 }},	-- 1xSkystrider Glider
 				["g"] = {
 					ach(14733, {	-- In the Hot Seat
 						["description"] = "Requires using the Skystrider Glider to bring Sundancer down. Being present for a kill will not grant credit.",
