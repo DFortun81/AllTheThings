@@ -4445,7 +4445,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	if topLevelSearch and not app.ATTWindowTooltip then
+	if topLevelSearch then
 		-- Add various text to the group now that it has been consolidated from all sources
 		if group.isLimited then
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
@@ -7083,8 +7083,6 @@ local function ClearTooltip(self)
 	self.AttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
-
-	app.ATTWindowTooltip = nil;
 end
 
 -- Tooltip Hooks
@@ -15645,7 +15643,7 @@ RowOnEnter = function (self)
 			end
 		else
 			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.AttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
-			-- complete tooltip already exists and hasn't been cleared elsewhere, don' touch it
+			-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
 			if GameTooltip.AttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
 				-- app.PrintDebug("RowOnEnter, complete");
 				return;
@@ -15653,9 +15651,6 @@ RowOnEnter = function (self)
 			-- need to clear the tooltip if it is being refreshed, setting the same link again will hide it instead
 			GameTooltip:ClearLines();
 		end
-
-		-- track that an ATT row is causing the tooltip
-		app.ATTWindowTooltip = true;
 
 		local link = reference.link;
 		if link then
@@ -15669,13 +15664,12 @@ RowOnEnter = function (self)
 		if GameTooltip:NumLines() < 1 then
 			-- Mark the tooltip as being complete, and insert the same text from the row itself
 			GameTooltip:AddLine(reference.text);
-			GameTooltip.AttachComplete = true;
 			doSearch = true;
 		end
 
 		-- Determine search results to add if nothing was added from being searched
 		-- AttachComplete will be true or false if ATT has processed the tooltip/search results already
-		-- nil means no search results were determined, so we can manually add it below
+		-- nil means no search results were attached, so we can manually add it below
 		if doSearch or GameTooltip.AttachComplete == nil then
 			if reference.creatureID or reference.encounterID or reference.objectID then
 				-- rows with these fields should not include the extra search info
@@ -16035,52 +16029,56 @@ RowOnEnter = function (self)
 			end
 		end
 
-		-- Additional information (search will not insert this information when the tooltip is from an ATT row)
-		-- Lore
-		if app.Settings:GetTooltipSetting("Lore") and reference.lore then
-			GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
-		end
-		-- Description
-		if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
-			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-		end
-		if reference.rwp then
-			local found = false;
-			local rwp = GetRemovedWithPatchString(reference.rwp);
-			for i=1,GameTooltip:NumLines() do
-				if _G["GameTooltipTextLeft"..i]:GetText() == rwp then
-					found = true;
-					break;
+		-- Additional information (search will insert this information if found in search)
+		if GameTooltip.AttachComplete == nil then
+			-- Lore
+			if app.Settings:GetTooltipSetting("Lore") and reference.lore then
+				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
+			end
+			-- Description
+			if app.Settings:GetTooltipSetting("Descriptions") and reference.description then
+				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+			end
+			if reference.rwp then
+				local found = false;
+				local rwp = GetRemovedWithPatchString(reference.rwp);
+				for i=1,GameTooltip:NumLines() do
+					if _G["GameTooltipTextLeft"..i]:GetText() == rwp then
+						found = true;
+						break;
+					end
+				end
+				if not found then
+					local a,r,g,b = HexToARGB("FFFFAAAA");
+					GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
 				end
 			end
-			if not found then
-				local a,r,g,b = HexToARGB("FFFFAAAA");
-				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
+			-- an item used for a faction which is repeatable
+			if reference.itemID and reference.factionID and reference.repeatable then
+				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
 			end
-		end
-		-- an item used for a faction which is repeatable
-		if reference.itemID and reference.factionID and reference.repeatable then
-			GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
-		end
-		-- Unobtainable
-		if reference.u then
-			GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-		end
-		-- Pet Battles
-		if reference.pb then
-			GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
-		end
-		-- PvP
-		if reference.pvp then
-			GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
-		end
-		-- Ignored for Source/Progress
-		if reference.sourceIgnored then
-			GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
-		end
-		-- Has a symlink for additonal information
-		if reference.sym then
-			GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
+			-- Unobtainable
+			if reference.u then
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+			end
+			-- Pet Battles
+			if reference.pb then
+				GameTooltip:AddLine(L["REQUIRES_PETBATTLES"], 1, 1, 1, 1, true);
+			end
+			-- PvP
+			if reference.pvp then
+				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
+			end
+			-- Ignored for Source/Progress
+			if reference.sourceIgnored then
+				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+			end
+			-- Has a symlink for additonal information
+			if reference.sym then
+				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
+			end
+			-- Tooltip for something which was not attached via search, so mark it as complete here
+			GameTooltip.AttachComplete = true;
 		end
 
 		-- Further conditional texts that can be displayed
