@@ -213,6 +213,10 @@ _.Zones =
 					["questID"] = 43868,
 					["coord"] = { 51.9, 82.2, SURAMAR },
 				}),
+				o(245941, {	-- Warp Cache
+					["questID"] = 40692,
+					["coord"] = { 58.6, 33.8, SURAMAR },
+				}),
 			}),
 		}),
 	}),

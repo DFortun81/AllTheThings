@@ -1287,6 +1287,7 @@ _.ObjectNames = {
 	[245688] = "Shattered Burial Urn",
 	[245996] = "Small Treasure Chest",
 	[245793] = "Battered Journal",
+	[245941] = "Warp Cache",
 	[246037] = "Treasure Chest",
 	[246147] = "Small Treasure Chest",
 	[246154] = "Broken Toy Box",

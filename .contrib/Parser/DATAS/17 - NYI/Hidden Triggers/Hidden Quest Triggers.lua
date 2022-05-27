@@ -1459,7 +1459,6 @@ root("HiddenQuestTriggers", {
 		q(45493),	-- Val'sharah - WQ rare: Witchdoctor Grgl-Brgl
 
 		--	Treasures
-		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
 		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) — looting treasure after Arru
 		q(49264),	-- opening a Void-Seeped Cache in Eredath
 
