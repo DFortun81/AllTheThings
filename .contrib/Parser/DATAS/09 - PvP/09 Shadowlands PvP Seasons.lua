@@ -1392,7 +1392,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SLS4 } }, {
+	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
 		n(PVP_ELITE, {
 			filter(MOUNTS, {
 				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)

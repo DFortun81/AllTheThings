@@ -1346,7 +1346,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			ach(15350),	-- Rival I: Shadowlands Season 3
 			ach(15378),	-- Rival II: Shadowlands Season 3
 		})),
-		n(SEASON_ETERNAL, bubbleDown({ ["timeline"] = { ADDED_SLS4 } }, {
+		n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
 			ach(15600),		-- Challenger I: Shadowlands Season 4
 			ach(15601),		-- Challenger II: Shadowlands Season 4
 			ach(15609, {	-- Combatant I: Shadowlands Season 4
