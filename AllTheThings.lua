@@ -567,9 +567,10 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 end
 -- Allows efficiently appending the content of multiple arrays (in sequence) onto the end of the provided array, or new empty array
 app.ArrayAppend = function(a1, ...)
-	if ... then
+	local arrs = select("#", ...);
+	if arrs > 0 then
 		a1 = a1 or {};
-		local i, select, arrs, a = #a1 + 1, select, select("#", ...);
+		local i, select, a = #a1 + 1, select;
 		for n=1,arrs do
 			a = select(n, ...);
 			if a then
