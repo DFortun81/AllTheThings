@@ -156,7 +156,6 @@ root("Holidays", d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 					i(109869),	-- Bloodfeather Bracers
 					i(109870),	-- Crystalbinder Wristguards
 					i(109871),	-- Leafmender Wraps
-					i(109983),	-- Lavalink Helm
 					i(109883),	-- Morningscale Bracers
 					i(109874),	-- Rockhide Wristguards
 					i(109873),	-- Sharpeye Bracers

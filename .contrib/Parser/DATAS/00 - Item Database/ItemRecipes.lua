@@ -279,7 +279,7 @@ i(190379, 367389); -- Technique: Glyph of the Spectral Lupine
 i(190381, 367393); -- Technique: Glyph of the Spectral Vulpine
 i(173068, 311453); -- Vantus Rune Technique: Castle Nathria
 i(186671, 354394); -- Vantus Rune Technique: Sanctum of Domination
-i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones (RECIPE!)
+i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
