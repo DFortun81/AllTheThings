@@ -3337,14 +3337,8 @@ local function Resolve_Extract(results, group, field)
 end
 -- Pops the provided group, returning the results from the combined 'g' and 'sym' properties of the group
 local function Resolve_Pop(group)
-	local results = {};
-	-- insert raw things from this group
-	if group.g then
-		ArrayAppend(results, group.g);
-	end
-	-- insert symlinked things from this group
-	ArrayAppend(results, ResolveSymbolicLink(group));
-	return results;
+	-- insert raw & symlinked Things from this group
+	return ArrayAppend(nil, group.g, ResolveSymbolicLink(group));
 end
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
