@@ -239,60 +239,110 @@ root("ExpansionFeatures", n(-363, {	-- The Argent Tournament
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33312 },	-- Lana Stouthammer
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13666, {	-- A Blade Fit For A Champion (A)
 				["coord"] = { 76.5, 19.4, ICECROWN },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33625 },	-- Arcanist Taelis
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13746, {	-- A Blade Fit For A Champion (A)
 				["coord"] = { 76.5, 19.8, ICECROWN },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33335 },	-- Ambrose Boltspark
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13603, {	-- A Blade Fit For A Champion (A)
 				["coord"] = { 76.6, 19.1, ICECROWN },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13752, {	-- A Blade Fit For A Champion (A)
 				["coord"] = { 76.1, 19.1, ICECROWN },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33593 },	-- Colosos
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13757, {	-- A Blade Fit For A Champion (A)
 				["coord"] = { 76.3, 19.0, ICECROWN },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33592 },	-- Jaelyne Evensong
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13773, {	-- A Blade Fit For A Champion (H)
 				["coord"] = { 76.2, 24.6, ICECROWN },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33403 },	-- Runok Wildmane
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13778, {	-- A Blade Fit For A Champion (H)
 				["coord"] = { 76.5, 24.2, ICECROWN },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33373 },	-- Deathstalker Visceri
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13768, {	-- A Blade Fit For A Champion (H)
 				["coord"] = { 76.0, 24.5, ICECROWN },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33372 },	-- Zul'tore
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13783, {	-- A Blade Fit For A Champion (H)
 				["coord"] = { 76.5, 23.9, ICECROWN },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
+				["g"] = {
+					n(33224, {	-- Maiden of Ashwood Lake
+						["description"] = "KISS THIS FROG.",
+					}),
+				},
 			}),
 			q(13762, {	-- A Blade Fit For A Champion (H)
 				["coord"] = { 76.5, 24.6, ICECROWN },
