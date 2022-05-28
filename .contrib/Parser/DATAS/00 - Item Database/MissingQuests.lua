@@ -37,7 +37,6 @@ q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
-q(312),	-- Tundra MacGrann's Stolen Stash,		TBC: Tundra MacGrann's Stolen Stash,		CLASSIC: Tundra MacGrann's Stolen Stash
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
@@ -391,15 +390,12 @@ q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's R
 q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
 q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
 q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
-q(2205),	-- Seek out SI: 7,		TBC: Seek out SI: 7,		CLASSIC: Seek out SI: 7
 q(2238),	-- Simple Subterfugin',		TBC: Simple Subterfugin',		CLASSIC: Simple Subterfugin'
-q(2241),	-- The Apple Falls,		TBC: The Apple Falls,		CLASSIC: The Apple Falls
 q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
 q(2298),	-- Kingly Shakedown,		TBC: Kingly Shakedown,		CLASSIC: Kingly Shakedown
-q(2299),	-- To Hulfdan!,		TBC: To Hulfdan!,		CLASSIC: To Hulfdan!
 q(2300),	-- SI:7,		TBC: SI:7,		CLASSIC: SI:7
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2360),	-- Mathias and the Defias,		TBC: Mathias and the Defias,		CLASSIC: Mathias and the Defias
@@ -758,9 +754,6 @@ q(6067),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's P
 q(6071),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6072),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6073),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6074),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6075),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6076),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6087),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6088),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6089),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
