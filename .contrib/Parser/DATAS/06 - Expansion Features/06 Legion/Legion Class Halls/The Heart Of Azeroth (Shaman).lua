@@ -800,6 +800,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 root("HiddenQuestTriggers", {
 	q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
 	q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
+	q(41328),	-- Shaman Order Hall - Enhancement Chosen First
 	q(41329),	-- Shaman Order Hall - Elemental Chosen First
 	q(41330),	-- Shaman Order Hall - Restoration Chosen First
 	q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed

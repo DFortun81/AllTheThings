@@ -974,6 +974,7 @@ root("HiddenQuestTriggers", {
 		q(39692, { ["_drop"] = { "g" }, }), -- The Call of War - completed with quest 39691
 		q(39978),	-- Meet the Recruits - completed with quest 32715
 		q(45405),	-- Breaching the Sanctum - completed with quest 44719
+		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
 
 		-------------------

@@ -89,6 +89,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										57900,	-- Across the Shadowlands
 									},
 									["altQuests"] = { 61860 },	-- Adenturer: Pelodis
+									["DisablePartySync"] = true,
 									["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 									["provider"] = { "n", 160389 },    -- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
@@ -102,6 +103,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										57900,	-- Across the Shadowlands
 									},
 									["altQuests"] = { 61859 },	-- Adenturer: Nemea
+									["DisablePartySync"] = true,
 									["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 									["provider"] = { "n", 160389 },    -- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },

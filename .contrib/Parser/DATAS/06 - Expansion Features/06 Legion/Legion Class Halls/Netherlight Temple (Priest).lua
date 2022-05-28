@@ -693,6 +693,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 -- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 root("HiddenQuestTriggers", {
+	q(40707),	-- Priest Order Hall - Shadow chosen first
 	q(40708),	-- Priest Order Hall - Holy chosen first
 	q(40709),	-- Priest Order Hall - Discipline chosen first
 	q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967

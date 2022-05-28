@@ -67,10 +67,6 @@ _.Zones =
 						["coord"] = { 46.6, 49.4, HELHEIM },
 						["provider"] = { "n", 97480 },	-- Ashildir
 					}),
-					q(39852, {	-- [PH] Collect Weapons
-						["u"] = NEVER_IMPLEMENTED,
-						["provider"] = { "n", 97319 },	-- Ashildir
-					}),
 					q(39853, {	-- Victory is Eternal
 						["sourceQuests"] = {
 							39851,	-- Allies in Death

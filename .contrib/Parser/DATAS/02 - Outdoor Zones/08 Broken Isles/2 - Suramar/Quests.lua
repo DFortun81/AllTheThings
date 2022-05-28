@@ -1909,8 +1909,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(40776),	-- Kazok'thul
 		q(41000),	-- King Forgalash's Burden
 		q(40974),	-- Latosius's Trial
-		q(40121),	-- Ley Line Influences
-		q(40160),	-- Magic Clams
 		q(41027),	-- One Last Breath
 		q(40346),	-- Pilfered Provisions
 		q(40637),	-- Proof of Honor
@@ -1919,7 +1917,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(40906),	-- Serpents from the Deep
 		q(40670),	-- Shattering the Sashj'tar
 		q(40342),	-- Surprise the Sashj'tar
-		q(40161),	-- Tapping the Underground
 		q(40396),	-- That's the Spirit
 		q(40742),	-- The Elusive Three
 		q(41104),	-- The New Jarl

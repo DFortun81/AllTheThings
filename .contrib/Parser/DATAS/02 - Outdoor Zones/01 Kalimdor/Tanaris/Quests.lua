@@ -511,9 +511,6 @@ _.Zones =
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
 					["sourceQuest"] = 2661,	-- Delivery for Marin
 				}),
-				q(38890, {	-- Not Dead Yet! -- never went live
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(82,    {	-- Noxious Lair Investigation
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
@@ -680,9 +677,6 @@ _.Zones =
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, TANARIS },
 					["sourceQuest"] = 25112,	-- Butcherbot
-				}),
-				q(38892, {	-- Scouting Report -- never went live
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(3520, {	-- Screecher Spirits
 					["u"] = REMOVED_FROM_GAME,

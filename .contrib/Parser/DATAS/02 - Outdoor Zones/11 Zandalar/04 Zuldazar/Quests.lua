@@ -1849,12 +1849,6 @@ _.Zones =
 					["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(49059, {	-- The Bones of Xibala (A)
-				--	["coord"] = { 40.0, 76.5, ZULDAZAR },
-					["races"] = ALLIANCE_ONLY,
-				--	["provider"] = { "n", ??? },	-- ???
-					["isBreadcrumb"] = true,
-				}),
 				q(49426, {	-- The King's Gambit
 					["sourceQuests"] = { 49425 },	-- City of Gold
 					["provider"] = { "n", 131049 },	-- Rezan
@@ -1891,7 +1885,6 @@ _.Zones =
 					["coord"] = { 41.2, 71.4, ZULDAZAR },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
-					["sourceQuests"] = { 49059 },	-- The Bones of Xibala
 				}),
 				q(49490, {	-- The Urn of Voices
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
