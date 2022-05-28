@@ -663,6 +663,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(109, {	-- Report to Gryan Stoutmantle
+					["qgs"] = {
+						237,	-- Farmer Furlbrow
+						233,	-- Farmer Saldean
+						240,	-- Marshal Dughan
+						261,	-- Guard Thomas
+						294,	-- Marshal Haggard
+						963,	-- Deputy Rainer
+					},
+					["coords"] = {
+						{ 60, 19.4, WESTFALL },
+						{ 56, 31.2, WESTFALL },
+						{ 42.2, 65.8, ELWYNN_FOREST },
+						{ 74.0, 72.2, ELWYNN_FOREST },
+						{ 84.6, 69.6, ELWYNN_FOREST },
+						{ 24.2, 74.6, ELWYNN_FOREST },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
+				}),
 				q(26322, {	-- Rise of the Brotherhood
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26320,	-- A Vision of the Past

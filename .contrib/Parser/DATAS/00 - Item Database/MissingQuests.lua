@@ -17,7 +17,6 @@ q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(109),	-- Report to Gryan Stoutmantle,		TBC: Report to Gryan Stoutmantle,		CLASSIC: Report to Gryan Stoutmantle
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
 q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
 q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
