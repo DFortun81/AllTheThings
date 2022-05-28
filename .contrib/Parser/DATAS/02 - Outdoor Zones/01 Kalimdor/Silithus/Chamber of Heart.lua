@@ -728,13 +728,8 @@ root("Zones", {
 								{ 74.9, 15.1, BORALUS },
 								-- #ENDIF
 							},
-							["sourceQuests"] = {
-								-- #IF AFTER 9.2
-								-- #ELSE
-								57002,	-- Old Soldier
-								-- #ENDIF
-							},
-							-- #IF BEFORE 9.2
+							-- #if BEFORE 9.2
+							["sourceQuest"] = 57002,	-- Old Soldier
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							-- #ENDIF
 							["races"] = ALLIANCE_ONLY,
@@ -759,6 +754,7 @@ root("Zones", {
 								{ 51.0, 88.8, DAZARALOR },
 								-- #ENDIF
 							},
+							-- #if BEFORE 9.2
 							["sourceQuests"] = {
 								-- #IF AFTER 9.2
 								-- Available without completing:
@@ -772,6 +768,7 @@ root("Zones", {
 								57152,	-- Most Loyal (Sylvanas Version)
 								-- #ENDIF
 							},
+							-- #endif
 							-- #IF BEFORE 9.2
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							-- #ENDIF
