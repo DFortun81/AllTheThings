@@ -188,6 +188,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(CLASSIC_TIER, {
 		n(QUESTS, {
+			q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 			q(3064),	-- <NYI> <TXT> Pirate Hats
 			q(241),	-- <TEST> HEY MISTER WILSON!
 			q(8489),	-- BETA An Intact Converter [Eversong Woods]

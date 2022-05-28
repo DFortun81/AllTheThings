@@ -1,6 +1,5 @@
 --[[
 5.0.3.15890
-q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 q(6),	-- Bounty on Garrick Padfoot,		TBC: Bounty on Garrick Padfoot,		CLASSIC: Bounty on Garrick Padfoot
 q(7),	-- [DEPRECATED] Kobold Camp Cleanup,		TBC: Kobold Camp Cleanup,		CLASSIC: Kobold Camp Cleanup
 q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
