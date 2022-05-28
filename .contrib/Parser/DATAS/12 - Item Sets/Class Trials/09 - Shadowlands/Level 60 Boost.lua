@@ -270,7 +270,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153967),	-- Streamtalker Stone of Rage
 					}),
 				}),
-				cl(WARLOCK, {
+				cl(WARLOCK, {	-- 170k IDs instead? Need confirmation.
 					cl(WARLOCK, AFFLICTION, {
 						i(154024),	-- Felsoul Stave
 						i(154016),	-- Felsoul Cowl
@@ -289,6 +289,26 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(154013),	-- Felsoul Stone of Destruction
 					}),
 				}),
+				--[[	Warlock items need further confirmation, since blizz missplaced all IDs for Level 50 Boost before. 154k IDs would make sence in comparison to other sets, but 170k would be all in NYI then.
+				cl(WARLOCK, {
+					cl(WARLOCK, AFFLICTION, {
+						i(170742),	-- Felsoul Stave
+						i(170905),	-- Felsoul Cowl
+						i(170908),	-- Felsoul Shoulderpads
+						i(170741),	-- Felsoul Cloak of Destruction
+						i(170907),	-- Felsoul Robe
+						i(170910),	-- Felsoul Wristwraps
+						i(170904),	-- Felsoul Handwraps
+						i(170909),	-- Felsoul Cord
+						i(170906),	-- Felsoul Leggings
+						i(170903),	-- Felsoul Sandals
+						i(170738),	-- Felsoul Band of Destruction
+						i(170739),	-- Felsoul Ring of Destruction
+						i(170740),	-- Felsoul Stone of Destruction
+						i(170737),	-- Felsoul Idol of Destruction
+					}),
+				}),
+				--]]
 				cl(WARRIOR, {
 					i(187659, {	-- Adventurer's Footlocker
 						i(170745),	-- Oathsworn Axe

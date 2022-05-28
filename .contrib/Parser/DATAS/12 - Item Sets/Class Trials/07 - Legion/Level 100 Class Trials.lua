@@ -438,773 +438,321 @@ root("GearSets", n(CLASS_TRIAL, {
 	})),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(LEGION_TIER, {
-		n(CLASS_TRIAL, {
+	n(CLASS_TRIAL, {
+		tier(LEGION_TIER, {
 			cl(DEATHKNIGHT, {
-				-- added 7.2.5/No Info
-				i(150621),	-- Heart-Lesion Breastplate
-				i(150622),	-- Heart-Lesion Sabatons
-				i(150623),	-- Heart-Lesion Gauntlets
-				i(150624),	-- Heart-Lesion Helm
-				i(150625),	-- Heart-Lesion Legplates
-				i(150626),	-- Heart-Lesion Pauldrons
-				i(150627),	-- Heart-Lesion Girdle
-				i(150628),	-- Heart-Lesion Vambraces
-				i(150610),	-- Frost-Etched Runeblade
-				-- added 7.2.5/Confirmed
-				i(150582),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-				i(150609),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-				-- added 7.3.5/Confirmed
-				i(157658),	-- Heart-Lesion Breastplate
-				i(157659),	-- Heart-Lesion Sabatons
-				i(157660),	-- Heart-Lesion Gauntlets
-				i(157662),	-- Heart-Lesion Legplates
-				i(157664),	-- Heart-Lesion Girdle
-				i(157665),	-- Heart-Lesion Vambraces)
-				i(157661),	-- Heart-Lesion Helm
-				i(157663),	-- Heart-Lesion Pauldrons
-				i(153737),	-- Heart-Lesion Faceguard
-				i(153739),	-- Heart-Lesion Amulet
-				i(153744),	-- Heart-Lesion Shoulderguards
-				i(153734),	-- Heart-Lesion Cloak of Stoicism
-				i(153733),	-- Heart-Lesion Chestguard
-				i(153746),	-- Heart-Lesion Armguards
-				i(153736),	-- Heart-Lesion Handguards
-				i(153745),	-- Heart-Lesion Waistband
-				i(153738),	-- Heart-Lesion Legguards
-				i(153735),	-- Heart-Lesion Greaves
-				i(153742),	-- Heart-Lesion Band of Stoicism
-				i(153741),	-- Heart-Lesion Ring of Stoicism
-				i(153740),	-- Heart-Lesion Defender Idol
-				i(153743),	-- Heart-Lesion Defender Stone
-				i(157647),	-- Frost-Etched Runeblade
-				i(153717),	-- Heart-Lession Greatsword (You get the Runeblade)
-				i(157618),	-- Unholy Runeblade
-				i(157646),	-- Bloodcaked Runeblade
-				-- added 7.0.3/No Info
-				i(122067),	-- Inexorable Greatsword
-				i(121848),	-- Inexorable Stone of Battle
-				i(121849),	-- Inexorable Idol of Battle
-				i(121852),	-- Inexorable Defender Idol
-				i(121855),	-- Inexorable Defender Stone
-				i(121838),	-- Inexorable Breastplate
-				i(121839),	-- Inexorable Sabatons
-				i(121840),	-- Inexorable Handguards
-				i(121841),	-- Inexorable Faceguard
-				i(121842),	-- Inexorable Legguards
-				i(121843),	-- Inexorable Shoulderguards
-				i(121856),	-- Inexorable Waistband
-				i(121857),	-- Inexorable Armguards
-				i(123207),	-- Inexorable Breastplate
-				i(123208),	-- Inexorable Sabatons
-				i(123209),	-- Inexorable Handguards
-				i(123210),	-- Inexorable Faceguard
-				i(123211),	-- Inexorable Legguards
-				i(123212),	-- Inexorable Shoulderguards
-				i(123213),	-- Inexorable Waistband
-				i(123214),	-- Inexorable Armguards
-				i(123215),	-- Inexorable Breastplate
-				i(123216),	-- Inexorable Sabatons
-				i(123217),	-- Inexorable Handguards
-				i(123218),	-- Inexorable Faceguard
-				i(123219),	-- Inexorable Legguards
-				i(123220),	-- Inexorable Shoulderguards
-				i(123221),	-- Inexorable Waistband
-				i(123222),	-- Inexorable Armguards
-				i(121844),	-- Inexorable Cloak of Battle
-				i(121850),	-- Inexorable Cloak of Stoicism
-				i(121845),	-- Inexorable Pendant
-				i(121851),	-- Inexorable Amulet
-				i(121846),	-- Inexorable Band of Might
-				i(121847),	-- Inexorable Ring of Might
-				i(121853),	-- Inexorable Band of Stoicism
-				i(121854),	-- Inexorable Ring of Stoicism
-				i(122068),	-- Inexorable Runeblade
-				i(122084),	-- Inexorable Blade
-				-- added 7.0.3/Confirmed
-				i(140687),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-				i(140714),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
+				cl(DEATHKNIGHT, UNHOLY, {
+					i(150624),	-- Heart-Lesion Helm
+					i(157661),	-- Heart-Lesion Helm
+					i(150626),	-- Heart-Lesion Pauldrons
+					i(157663),	-- Heart-Lesion Pauldrons
+					i(150621),	-- Heart-Lesion Breastplate
+					i(157658),	-- Heart-Lesion Breastplate
+					i(150628),	-- Heart-Lesion Vambraces
+					i(157665),	-- Heart-Lesion Vambraces
+					i(150623),	-- Heart-Lesion Gauntlets
+					i(157660),	-- Heart-Lesion Gauntlets
+					i(150627),	-- Heart-Lesion Girdle
+					i(157664),	-- Heart-Lesion Girdle
+					i(150625),	-- Heart-Lesion Legplates
+					i(157662),	-- Heart-Lesion Legplates
+					i(150622),	-- Heart-Lesion Sabatons
+					i(157659),	-- Heart-Lesion Sabatons
+				}),
+				cl(DEATHKNIGHT, BLOOD, {
+					i(153717),	-- Heart-Lession Greatsword
+					i(153737),	-- Heart-Lesion Faceguard
+					i(153739),	-- Heart-Lesion Amulet
+					i(153744),	-- Heart-Lesion Shoulderguards
+					i(153734),	-- Heart-Lesion Cloak of Stoicism
+					i(153733),	-- Heart-Lesion Chestguard
+					i(153746),	-- Heart-Lesion Armguards
+					i(153736),	-- Heart-Lesion Handguards
+					i(153745),	-- Heart-Lesion Waistband
+					i(153738),	-- Heart-Lesion Legguards
+					i(153735),	-- Heart-Lesion Greaves
+					i(153742),	-- Heart-Lesion Band of Stoicism
+					i(153741),	-- Heart-Lesion Ring of Stoicism
+					i(153740),	-- Heart-Lesion Defender Idol
+					i(153743),	-- Heart-Lesion Defender Stone
+				}),
 			}),
 			cl(DEMONHUNTER, {
-				-- added 7.2.5/Confirmed
-				i(150715),	-- Illidari Warglaive
-				-- added 7.2.5/No Info
-				i(150716),	-- Illidari Blindfold
-				i(150717),	-- Illidari Leggings
-				i(150718),	-- Illidari Bracers
-				i(150719),	-- Illidari Belt
-				i(150720),	-- Illidari Robe
-				i(150721),	-- Illidari Gloves
-				i(150722),	-- Illidari Shoulders
-				i(150723),	-- Illidari Boots
-				i(150724),	-- Illidari Shoulders
-				i(150725),	-- Illidari Leggings
-				i(150726),	-- Illidari Blindfold
-				i(150727),	-- Illidari Gloves
-				i(150728),	-- Illidari Robe
-				i(150729),	-- Illidari Bracers
-				i(150730),	-- Illidari Boots
-				i(150731),	-- Illidari Belt
+				cl(DEMONHUNTER, HAVOC, {
+					i(150715),	-- Illidari Warglaive
+					i(150716),	-- Illidari Blindfold
+					i(150726),	-- Illidari Blindfold
+					i(150722),	-- Illidari Shoulders
+					i(150724),	-- Illidari Shoulders
+					i(150720),	-- Illidari Robe
+					i(150728),	-- Illidari Robe
+					i(150718),	-- Illidari Bracers
+					i(150729),	-- Illidari Bracers
+					i(150721),	-- Illidari Gloves
+					i(150727),	-- Illidari Gloves
+					i(150719),	-- Illidari Belt
+					i(150731),	-- Illidari Belt
+					i(150717),	-- Illidari Leggings
+					i(150725),	-- Illidari Leggings
+					i(150723),	-- Illidari Boots
+					i(150730),	-- Illidari Boots
+				}),
 			}),
 			cl(DRUID, {
-				-- added 7.2.5/No Info
-				i(150629),	-- Springrain Tunic
-				i(150630),	-- Springrain Treads
-				i(150631),	-- Springrain Grips
-				i(150632),	-- Springrain Headpiece
-				i(150633),	-- Springrain Leggings
-				i(150634),	-- Springrain Spaulders
-				i(150635),	-- Springrain Belt
-				i(150636),	-- Springrain Bracers
-				i(150583),	-- Staff of Astral Alignment
-				-- added 7.2.5/Confirmed
-				i(150585),	-- Restorative Ashwood Stafft
-				-- added 7.3.5/No Info
-				i(153792),	-- Springrain Staff
-				-- added 7.3.5/Level 110 unused Boost Gear
-				i(153787),	-- Springrain Hood [NYI]
-				i(153794),	-- Springrain Choker [NYI]
-				i(153778),	-- Springrain Necklace [NYI]
-				i(153789),	-- Springrain Shoulders [NYI]
-				i(153793),	-- Springrain Cloak of Durability [NYI]
-				i(153777),	-- Springrain Cloak of Wisdom [NYI]
-				i(153784),	-- Springrain Jerkin [NYI]
-				i(153791),	-- Springrain Bindings [NYI]
-				i(153786),	-- Springrain Gloves [NYI]
-				i(153790),	-- Springrain Waistband [NYI]
-				i(153788),	-- Springrain Britches [NYI]
-				i(153785),	-- Springrain Boots [NYI]
-				i(153797),	-- Springrain Band of Durability [NYI]
-				i(153780),	-- Springrain Band of Wisdom *LA0422Feral
-				i(153795),	-- Springrain Idol of Durability [NYI]
-				i(153779),	-- Springrain Idol of Wisdom [NYI]
-				i(153796),	-- Springrain Ring of Durability [NYI]
-				i(153781),	-- Springrain Ring of Wisdom [NYI]
-				i(153798),	-- Springrain Stone of Durability [NYI]
-				i(153782),	-- Springrain Stone of Wisdom [NYI]
-				i(157648),	-- Oakenstaff Protector
-				i(157620),	-- Halberd of Ferocity
-				i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
-				-- added 7.0.3/Confirmed
-				i(122069),	-- Nurturer Spear
-				i(140690),	-- Restorative Ashwood Staff
-				-- added 7.0.3/No Info
-				i(121870),	-- Nurturer Vest
-				i(121871),	-- Nurturer Footpads
-				i(121872),	-- Nurturer Handguards
-				i(121873),	-- Nurturer Helm
-				i(121886),	-- Nurturer Legguards
-				i(121887),	-- Nurturer Pauldrons
-				i(121888),	-- Nurturer Cord
-				i(121889),	-- Nurturer Cuffs
-				i(123223),	-- Nurturer Vest
-				i(123224),	-- Nurturer Footpads
-				i(123225),	-- Nurturer Handguards
-				i(123226),	-- Nurturer Helm
-				i(123227),	-- Nurturer Legguards
-				i(123228),	-- Nurturer Pauldrons
-				i(123229),	-- Nurturer Cord
-				i(123230),	-- Nurturer Cuffs
-				i(123231),	-- Nurturer Vest
-				i(123232),	-- Nurturer Footpads
-				i(123233),	-- Nurturer Handguards
-				i(123234),	-- Nurturer Helm
-				i(123235),	-- Nurturer Legguards
-				i(123236),	-- Nurturer Pauldrons
-				i(123237),	-- Nurturer Cord
-				i(123238),	-- Nurturer Cuffs
-				i(123239),	-- Nurturer Vest
-				i(123240),	-- Nurturer Footpads
-				i(123241),	-- Nurturer Handguards
-				i(123242),	-- Nurturer Helm
-				i(123243),	-- Nurturer Legguards
-				i(123244),	-- Nurturer Pauldrons
-				i(123245),	-- Nurturer Cord
-				i(123246),	-- Nurturer Cuffs
-				i(121860),	-- Nurturer Idol of Rage
-				i(121863),	-- Nurturer Stone of Rage
-				i(121866),	-- Nurturer Idol of Durability
-				i(121869),	-- Nurturer Stone of Durability
-				i(121876),	-- Nurturer Idol of Destruction
-				i(121879),	-- Nurturer Stone of Destruction
-				i(121882),	-- Nurturer Idol of Wisdom
-				i(121885),	-- Nurturer Stone of Wisdom
-				i(121858),	-- Nurturer Cloak of Rage
-				i(121864),	-- Nurturer Cloak of Rage
-				i(121874),	-- Nurturer Cloak of Destruction
-				i(121880),	-- Nurturer Cloak of Wisdom
-				i(121859),	-- Nurturer Choker
-				i(121865),	-- Nurturer Choker
-				i(121875),	-- Nurturer Medallion
-				i(121881),	-- Nurturer Necklace
-				i(121861),	-- Nurturer Band of Onslaught
-				i(121862),	-- Nurturer Ring of Onslaught
-				i(121867),	-- Nurturer Band of Durability
-				i(121868),	-- Nurturer Ring of Durability
-				i(121877),	-- Nurturer Band of Destruction
-				i(121878),	-- Nurturer Ring of Destruction
-				i(121883),	-- Nurturer Band of Wisdom
-				i(121884),	-- Nurturer Ring of Wisdom
-				i(122070),	-- Nurturer Staff
-				i(140688),	-- Staff of Astral Alignment
+				cl(DRUID, BALANCE, {
+					i(150632),	-- Springrain Headpiece
+					i(153778),	-- Springrain Necklace
+					i(150634),	-- Springrain Spaulders
+					i(150629),	-- Springrain Tunic
+					i(150636),	-- Springrain Bracers
+					i(150631),	-- Springrain Grips
+					i(150635),	-- Springrain Belt
+					i(150633),	-- Springrain Leggings
+					i(150630),	-- Springrain Treads
+				}),
+				cl(DRUID, FERAL, {
+					i(153794),	-- Springrain Choker
+				}),
+				cl(DRUID, GUARDIAN, {
+					i(153793),	-- Springrain Cloak of Durability
+					i(153797),	-- Springrain Band of Durability
+					i(153796),	-- Springrain Ring of Durability
+					i(153795),	-- Springrain Idol of Durability
+					i(153798),	-- Springrain Stone of Durability
+				}),
+				cl(DRUID, RESTORATION, {
+					i(153792),	-- Springrain Staff
+					i(153787),	-- Springrain Hood
+					i(153789),	-- Springrain Shoulders
+					i(153777),	-- Springrain Cloak of Wisdom
+					i(153784),	-- Springrain Jerkin
+					i(153791),	-- Springrain Bindings
+					i(153786),	-- Springrain Gloves
+					i(153790),	-- Springrain Waistband
+					i(153788),	-- Springrain Britches
+					i(153785),	-- Springrain Boots
+					i(153780),	-- Springrain Band of Wisdom
+					i(153781),	-- Springrain Ring of Wisdom
+					i(153779),	-- Springrain Idol of Wisdom
+					i(153782),	-- Springrain Stone of Wisdom
+				}),
 			}),
 			cl(HUNTER, {
-				-- added 7.2.5/Confirmed
-				i(150642),	-- Trailseeker Spaulders
-				i(150637),	-- Trailseeker Vest
-				i(150638),	-- Trailseeker Greaves
-				i(150639),	-- Trailseeker Gauntlets
-				i(150640),	-- Trailseeker Helm
-				i(150641),	-- Trailseeker Legguards
-				i(150643),	-- Trailseeker Belt
-				i(150644),	-- Trailseeker Bracers
-				i(150586),	-- Packmasters Rifle
-				-- added 7.3.5/Confirmed
-				i(157650),	-- Tracker's Spear
-				-- added 7.0.3/Confirmed
-				i(122080),	-- Warscout Shotgun (not added version)
-				i(140691),	-- Packmasters Rifle
-				-- added 7.0.3/No Info
-				i(121892),	-- Warscout Idol of Rage
-				i(121895),	-- Warscout Stone of Rage
-				i(121890),	-- Warscout Cloak of Rage
-				i(121891),	-- Warscout Choker
-				i(121893),	-- Warscout Band of Onslaught
-				i(121894),	-- Warscout Ring of Onslaught
-				i(121896),	-- Warscout Tunic
-				i(121897),	-- Warscout Greaves
-				i(121898),	-- Warscout Gauntlets
-				i(121899),	-- Warscout Helm
-				i(121900),	-- Warscout Legguards
-				i(121901),	-- Warscout Spaulders
-				i(121902),	-- Warscout Belt
-				i(121903),	-- Warscout Bracers
-				i(123247),	-- Warscout Tunic
-				i(123248),	-- Warscout Greaves
-				i(123249),	-- Warscout Gauntlets
-				i(123250),	-- Warscout Helm
-				i(123251),	-- Warscout Legguards
-				i(123252),	-- Warscout Spaulders
-				i(123253),	-- Warscout Belt
-				i(123254),	-- Warscout Bracers
-				i(123255),	-- Warscout Tunic
-				i(123256),	-- Warscout Greaves
-				i(123257),	-- Warscout Gauntlets
-				i(123258),	-- Warscout Helm
-				i(123259),	-- Warscout Legguards
-				i(123260),	-- Warscout Spaulders
-				i(123261),	-- Warscout Belt
-				i(123262),	-- Warscout Bracers
-				i(127685),	-- Warscout Longspear
+				cl(HUNTER, BEAST_MASTERY, {
+					i(150640),	-- Trailseeker Helm
+					i(150642),	-- Trailseeker Spaulders
+					i(150637),	-- Trailseeker Vest
+					i(150644),	-- Trailseeker Bracers
+					i(150639),	-- Trailseeker Gauntlets
+					i(150643),	-- Trailseeker Belt
+					i(150641),	-- Trailseeker Legguards
+					i(150638),	-- Trailseeker Greaves
+				}),
 			}),
 			cl(MAGE, {
-				-- added 7.2.5/Confirmed
-				i(150651),	-- Mountainsage Cord
-				i(150646),	-- Mountainsage Handwraps
-				i(150647),	-- Mountainsage Hood
-				i(150648),	-- Mountainsage Leggings
-				i(150649),	-- Mountainsage Robe
-				i(150645),	-- Mountainsage Sandals
-				i(150650),	-- Mountainsage Shoulderpads
-				i(150652),	-- Mountainsage Wristwraps
-				i(153828),	-- Mountainsage Wand	*LA0207
-				i(150614),	-- Staff of Arcane Power
-				i(150588),	-- Staff of Inner Flame
-				i(150587),	-- Frostcore Staff
-				-- added 7.3.5/Confirmed
-				i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
-				i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
-				-- added 7.0.3/No Info
-				i(121904),	-- Abstruse Sandals
-				i(121905),	-- Abstruse Handwraps
-				i(121906),	-- Abstruse Hood
-				i(121913),	-- Abstruse Leggings
-				i(121914),	-- Abstruse Robe
-				i(121915),	-- Abstruse Shoulderpads
-				i(121916),	-- Abstruse Cord
-				i(121917),	-- Abstruse Wristwraps
-				i(123263),	-- Abstruse Sandals
-				i(123264),	-- Abstruse Handwraps
-				i(123265),	-- Abstruse Hood
-				i(123266),	-- Abstruse Leggings
-				i(123267),	-- Abstruse Robe
-				i(123268),	-- Abstruse Shoulderpads
-				i(123269),	-- Abstruse Cord
-				i(123270),	-- Abstruse Wristwraps
-				i(123271),	-- Abstruse Sandals
-				i(123272),	-- Abstruse Handwraps
-				i(123273),	-- Abstruse Hood
-				i(123274),	-- Abstruse Leggings
-				i(123275),	-- Abstruse Robe
-				i(123276),	-- Abstruse Shoulderpads
-				i(123277),	-- Abstruse Cord
-				i(123278),	-- Abstruse Wristwraps
-				i(121909),	-- Abstruse Idol of Destruction
-				i(121912),	-- Abstruse Stone of Destruction
-				i(121907),	-- Abstruse Cloak of Destruction
-				i(121908),	-- Abstruse Medallion
-				i(121910),	-- Abstruse Band of Destruction
-				i(121911),	-- Abstruse Ring of Destruction
-				i(122081),	-- Abstruse Wand
-				i(122071),	-- Abstruse Staff
-				i(140719),	-- Staff of Arcane Power
-				i(140693),	-- Staff of Inner Flame
-				i(140692),	-- Frostcore Staff
+				cl(MAGE, FROST, {
+					i(150651),	-- Mountainsage Cord
+					i(150646),	-- Mountainsage Handwraps
+					i(150647),	-- Mountainsage Hood
+					i(150648),	-- Mountainsage Leggings
+					i(150649),	-- Mountainsage Robe
+					i(150645),	-- Mountainsage Sandals
+					i(150650),	-- Mountainsage Shoulderpads
+					i(150652),	-- Mountainsage Wristwraps
+					i(153828),	-- Mountainsage Wand
+				}),
 			}),
 			cl(MONK, {
-				-- added 7.2.5/No Info
-				i(150653),	-- Mistdancer Vest
-				i(150654),	-- Mistdancer Footpads
-				i(150655),	-- Mistdancer Handguards
-				i(150656),	-- Mistdancer Helm
-				i(150657),	-- Mistdancer Legguards
-				i(150659),	-- Mistdancer Cord
-				i(150660),	-- Mistdancer Cuffs
-				i(150658),	-- Mistdancer Pauldrons
-				i(150590),	-- Staff of the Jade Mist
-				i(150591),	-- Sword of Singing Wind
-				i(150589),	-- Brewmasher's Staff
-				-- added 7.3.5/Confirmed
-				i(157626),	-- Staff of Singing Mists (Lv20 Start Gear?)
-				-- added 7.0.3/No Info
-				i(121926),	-- Harmonious Tunic
-				i(121927),	-- Harmonious Slippers
-				i(121928),	-- Harmonious Gloves
-				i(121929),	-- Harmonious Hood
-				i(121933),	-- Harmonious Britches
-				i(121937),	-- Harmonious Shoulders
-				i(121938),	-- Harmonious Waistband
-				i(121942),	-- Harmonious Bindings
-				i(123279),	-- Harmonious Tunic
-				i(123280),	-- Harmonious Slippers
-				i(123281),	-- Harmonious Gloves
-				i(123282),	-- Harmonious Hood
-				i(123283),	-- Harmonious Britches
-				i(123284),	-- Harmonious Shoulders
-				i(123285),	-- Harmonious Waistband
-				i(123286),	-- Harmonious Bindings
-				i(121924),	-- Harmonious Defender Stone
-				i(121925),	-- Harmonious Defender Idol
-				i(121934),	-- Harmonious Idol of Wisdom
-				i(121936),	-- Harmonious Stone of Wisdom
-				i(121939),	-- Harmonious Idol of Rage
-				i(121941),	-- Harmonious Stone of Rage
-				i(121920),	-- Harmonious Cloak of Rage
-				i(121930),	-- Harmonious Cloak of Wisdom
-				i(121923),	-- Harmonious Amulet
-				i(121935),	-- Harmonious Necklace
-				i(121940),	-- Harmonious Choker
-				i(121918),	-- Harmonious Band of Onslaught
-				i(121919),	-- Harmonious Ring of Onslaught
-				i(121921),	-- Harmonious Band of Stoicism
-				i(121922),	-- Harmonious Ring of Stoicism
-				i(121931),	-- Harmonious Band of Wisdom
-				i(121932),	-- Harmonious Ring of Wisdom
-				i(122072),	-- Harmonious Spire
-				i(122073),	-- Harmonious Staff
-				i(122085),	-- Harmonious Sword
-				i(140695),	-- Staff of the Jade Mist
+				cl(MONK, BREWMASTER, {
+					i(153831),	-- Mistdancer Amulet
+					i(153832),	-- Mistdancer Band of Stoicism
+					i(153833),	-- Mistdancer Ring of Stoicism
+					i(153836),	-- Mistdancer Defender Idol
+					i(153834),	-- Mistdancer Defender Stone
+				}),
+				cl(MONK, MISTWEAVER, {
+					i(153847),	-- Mistdancer Hood
+					i(153851),	-- Mistdancer Necklace
+					i(153855),	-- Mistdancer Shoulders
+					i(153848),	-- Mistdancer Cloak of Wisdom
+					i(153866),	-- Mistdancer Jerkin
+					i(153858),	-- Mistdancer Bindings
+					i(153846),	-- Mistdancer Gloves
+					i(153857),	-- Mistdancer Waistband
+					i(153850),	-- Mistdancer Britches
+					i(153845),	-- Mistdancer Boots
+					i(153853),	-- Mistdancer Band of Wisdom
+					i(153852),	-- Mistdancer Ring of Wisdom
+					i(153849),	-- Mistdancer Idol of Wisdom
+					i(153854),	-- Mistdancer Stone of Wisdom
+				}),
+				cl(MONK, WINDWALKER, {
+					i(150656),	-- Mistdancer Helm
+					i(150658),	-- Mistdancer Pauldrons
+					i(150653),	-- Mistdancer Vest
+					i(150660),	-- Mistdancer Cuffs
+					i(150655),	-- Mistdancer Handguards
+					i(150659),	-- Mistdancer Cord
+					i(150657),	-- Mistdancer Legguards
+					i(150654),	-- Mistdancer Footpads
+				}),
 			}),
 			cl(PALADIN, {
-				-- added 7.2.5/No Info
-				i(150661),	-- Sunsoul Battleplate
-				i(150662),	-- Sunsoul Sabatons
-				i(150663),	-- Sunsoul Gauntlets
-				i(150664),	-- Sunsoul Helm
-				i(150665),	-- Sunsoul Legplates
-				i(150666),	-- Sunsoul Pauldrons
-				i(150667),	-- Sunsoul Girdle
-				i(150668),	-- Sunsoul Vambraces
-				i(150617),	-- Defender's Bulwark
-				i(150593),	-- Defender's Longsword
-				i(150616),	-- Justicar's Shield
-				-- added 7.2.5/Confirmed
-				i(150592),	-- Justicar's Hammer
-				i(150594),	-- Warhammer of Retribution
-				-- added 7.3.5/No Info
-				i(153890),	-- Sunsoul Shield
-				-- added 7.3.5/Confirmed
-				i(157630),	-- Stalwart's Longsword
-				i(157654),	-- Stalwart's Bulwark (Lv20 Start Gear?)
-				i(157653),	-- Faithful Shield (Lv20 Start Gear?)
-				i(157629),	-- Hammer of Faith
-				-- added 7.0.3/Confirmed
-				i(122074),	-- Duskbreaker Warmaul
-				i(140697),	-- Justicar's Hammer
-				i(140699),	-- Warhammer of Retribution
-				-- added 7.0.3/No Info
-				i(121949),	-- Duskbreaker Idol of Wisdom
-				i(121952),	-- Duskbreaker Stone of Wisdom
-				i(121960),	-- Duskbreaker Stone of Battle
-				i(121961),	-- Duskbreaker Idol of Battle
-				i(121964),	-- Duskbreaker Defender Idol
-				i(121967),	-- Duskbreaker Defender Stone
-				i(121943),	-- Duskbreaker Battleplate
-				i(121944),	-- Duskbreaker Gloves
-				i(121945),	-- Duskbreaker Headpiece
-				i(121953),	-- Duskbreaker Leggings
-				i(121955),	-- Duskbreaker Spaulders
-				i(121968),	-- Duskbreaker Belt
-				i(121969),	-- Duskbreaker Armplates
-				i(123287),	-- Duskbreaker Sabatons
-				i(123288),	-- Duskbreaker Battleplate
-				i(123289),	-- Duskbreaker Gloves
-				i(123290),	-- Duskbreaker Headpiece
-				i(123291),	-- Duskbreaker Leggings
-				i(123292),	-- Duskbreaker Spaulders
-				i(123293),	-- Duskbreaker Belt
-				i(123294),	-- Duskbreaker Armplates
-				i(123295),	-- Duskbreaker Sabatons
-				i(123296),	-- Duskbreaker Battleplate
-				i(123297),	-- Duskbreaker Gloves
-				i(123298),	-- Duskbreaker Headpiece
-				i(123299),	-- Duskbreaker Leggings
-				i(123300),	-- Duskbreaker Spaulders
-				i(123301),	-- Duskbreaker Belt
-				i(123302),	-- Duskbreaker Armplates
-				i(123303),	-- Duskbreaker Sabatons
-				i(121947),	-- Duskbreaker Cloak of Wisdom
-				i(121956),	-- Duskbreaker Cloak of Battle
-				i(121962),	-- Duskbreaker Cloak of Stoicism
-				i(121948),	-- Duskbreaker Necklace
-				i(121957),	-- Duskbreaker Pendant
-				i(121963),	-- Duskbreaker Amulet
-				i(121950),	-- Duskbreaker Band of Wisdom
-				i(121951),	-- Duskbreaker Ring of Wisdom
-				i(121958),	-- Duskbreaker Band of Might
-				i(121959),	-- Duskbreaker Ring of Might
-				i(121965),	-- Duskbreaker Band of Stoicism
-				i(121966),	-- Duskbreaker Ring of Stoicism
-				i(121946),	-- Duskbreaker Shield
-				i(121954),	-- Duskbreaker Bulwark
-				i(122087),	-- Duskbreaker Sword
-				i(122086),	-- Duskbreaker Scepter
-				i(140737),	-- Defender's Bulwark
-				i(140698),	-- Defender's Longsword
-				i(140736),	-- Justicar's Shield
+				cl(PALADIN, HOLY, {
+					i(153890),	-- Sunsoul Shield
+					i(153879),	-- Sunsoul Headpiece
+					i(153881),	-- Sunsoul Necklace
+					i(153886),	-- Sunsoul Spaulders
+					i(153876),	-- Sunsoul Cloak of Wisdom
+					i(153875),	-- Sunsoul Breastplate
+					i(153888),	-- Sunsoul Armplates
+					i(153878),	-- Sunsoul Gloves
+					i(153912),	-- Sunsoul Waistband
+					i(153880),	-- Sunsoul Leggings
+					i(153877),	-- Sunsoul Boots
+					i(153884),	-- Sunsoul Band of Wisdom
+					i(153883),	-- Sunsoul Ring of Wisdom
+					i(153882),	-- Sunsoul Idol of Wisdom
+					i(153885),	-- Sunsoul Stone of Wisdom
+				}),
+				cl(PALADIN, PROTECTION, {
+					i(153904),	-- Sunsoul Faceguard
+					i(153906),	-- Sunsoul Amulet
+					i(153911),	-- Sunsoul Shoulderguards
+					i(153901),	-- Sunsoul Cloak of Stoicism
+					i(153900),	-- Sunsoul Chestguard
+					i(153913),	-- Sunsoul Armguards
+					i(153903),	-- Sunsoul Handguards
+					i(153887),	-- Sunsoul Belt
+					i(153905),	-- Sunsoul Legguards
+					i(153902),	-- Sunsoul Greaves
+					i(153909),	-- Sunsoul Band of Stoicism
+					i(153908),	-- Sunsoul Ring of Stoicism
+					i(153907),	-- Sunsoul Defender Idol
+					i(153910),	-- Sunsoul Defender Stone
+				}),
+				cl(PALADIN, RETRIBUTION, {
+					i(150664),	-- Sunsoul Helm
+					i(150666),	-- Sunsoul Pauldrons
+					i(150661),	-- Sunsoul Battleplate
+					i(150668),	-- Sunsoul Vambraces
+					i(150663),	-- Sunsoul Gauntlets
+					i(150667),	-- Sunsoul Girdle
+					i(150665),	-- Sunsoul Legplates
+					i(150662),	-- Sunsoul Sabatons
+				}),
 			}),
 			cl(PRIEST, {
-				-- added 7.2.5/Confirmed
-				i(150597),	-- Whispering Staff of the Void
-				-- added 7.2.5/No Info
-				i(150669),	-- Communal Boots
-				i(150670),	-- Communal Gloves
-				i(150671),	-- Communal Cowl
-				i(150672),	-- Communal Pants
-				i(150673),	-- Communal Robe
-				i(150674),	-- Communal Mantle
-				i(150675),	-- Communal Sash
-				i(150676),	-- Communal Bindings
-				i(150595),	-- Staff of Dual Convictions
-				i(150596),	-- Staff of Radiance
-				-- adde 7.3.5/No Info
-				i(153944),	-- Communal Stave
-				i(157634),	-- Whispering Staff of the Void
-				i(157633),	-- Staff of Radiance
-				-- added 7.3.5/Confirmed
-				i(153919),	-- Communal Wand
-				i(153938),	-- Communal Cowl
-				i(153914),	-- Communal Medallion
-				i(153941),	-- Communal Mantle
-				i(153935),	-- Communal Cloak of Destructio
-				i(153940),	-- Communal Robe	NYI
-				i(153943),	-- Communal Bindings	NYI
-				i(153937),	-- Communal Gloves	NYI
-				i(153942),	-- Communal Sash	NYI
-				i(153939),	-- Communal Pants	NYI
-				i(153936),	-- Communal Boots	NYI
-				i(153916),	-- Communal Band of Destruction	NYI
-				i(153917),	-- Communal Ring of Destruction	NYI
-				i(153918),	-- Communal Stone of Destruction	NYI
-				i(153915),	-- Communal Idol of Destruction	NYI
-				-- added 7.0.3/No Info
-				i(121970),	-- Soulward Sandals
-				i(121971),	-- Soulward Handwraps
-				i(121972),	-- Soulward Hood
-				i(121985),	-- Soulward Leggings
-				i(121986),	-- Soulward Vestments
-				i(121987),	-- Soulward Shoulderpads
-				i(121988),	-- Soulward Cord
-				i(121989),	-- Soulward Wristwraps
-				i(123304),	-- Soulward Sandals
-				i(123305),	-- Soulward Handwraps
-				i(123306),	-- Soulward Hood
-				i(123307),	-- Soulward Leggings
-				i(123308),	-- Soulward Vestments
-				i(123309),	-- Soulward Shoulderpads
-				i(123310),	-- Soulward Cord
-				i(123311),	-- Soulward Wristwraps
-				i(123312),	-- Soulward Sandals
-				i(123313),	-- Soulward Handwraps
-				i(123314),	-- Soulward Hood
-				i(123315),	-- Soulward Leggings
-				i(123316),	-- Soulward Vestments
-				i(123317),	-- Soulward Shoulderpads
-				i(123318),	-- Soulward Cord
-				i(123319),	-- Soulward Wristwraps
-				i(121975),	-- Soulward Idol of Destruction
-				i(121978),	-- Soulward Stone of Destruction
-				i(121981),	-- Soulward Idol of Wisdom
-				i(121984),	-- Soulward Stone of Wisdom
-				i(121973),	-- Soulward Cloak of Destruction
-				i(121979),	-- Soulward Cloak of Wisdom
-				i(121974),	-- Soulward Medallion
-				i(121980),	-- Soulward Necklace
-				i(121976),	-- Soulward Band of Destruction
-				i(121977),	-- Soulward Ring of Destruction
-				i(121982),	-- Soulward Band of Wisdom
-				i(121983),	-- Soulward Ring of Wisdom
-				i(122082),	-- Soulward Wand
-				i(122075),	-- Soulward Staff
-				i(122076),	-- Soulward Stave
-				i(140700),	-- Staff of Dual Convictions
-				i(140701),	-- Staff of Radiance
-				-- added 7.0.3/Confirmed
-				i(140702),	-- Whispering Staff of the Void
+				cl(PRIEST, HOLY, {
+					i(153919),	-- Communal Wand
+				}),
+				cl(PRIEST, SHADOW, {
+					i(153944),	-- Communal Stave
+					i(150671),	-- Communal Cowl
+					i(153938),	-- Communal Cowl
+					i(153914),	-- Communal Medallion
+					i(150674),	-- Communal Mantle
+					i(153941),	-- Communal Mantle
+					i(153935),	-- Communal Cloak of Destruction
+					i(150673),	-- Communal Robe
+					i(153940),	-- Communal Robe
+					i(150676),	-- Communal Bindings
+					i(153943),	-- Communal Bindings
+					i(150670),	-- Communal Gloves
+					i(153937),	-- Communal Gloves
+					i(150675),	-- Communal Sash
+					i(153942),	-- Communal Sash
+					i(150672),	-- Communal Pants
+					i(153939),	-- Communal Pants
+					i(150669),	-- Communal Boots
+					i(153936),	-- Communal Boots
+					i(153916),	-- Communal Band of Destruction
+					i(153917),	-- Communal Ring of Destruction
+					i(153915),	-- Communal Idol of Destruction
+					i(153918),	-- Communal Stone of Destruction
+				}),
 			}),
 			cl(ROGUE, {
-				-- added 7.2.5/No Info
-				i(150677),	-- Lightdrinker Jerkin
-				i(150678),	-- Lightdrinker Boots
-				i(150679),	-- Lightdrinker Gloves
-				i(150680),	-- Lightdrinker Hood
-				i(150681),	-- Lightdrinker Britches
-				i(150682),	-- Lightdrinker Shoulders
-				i(150683),	-- Lightdrinker Waistband
-				i(150684),	-- Lightdrinker Bindings
-				-- added 7.2.5/Confirmed
-				i(150598),	-- Duskfall Daggers
-				i(150599),	-- Assassins Serrated Dagger
-				i(150600),	-- Outlaw's Cutlass
-				-- added 7.3.5/Confirmed
-				i(157635),	-- Duskfall Daggers
-				i(157637),	-- Swaggering Cutlass
-				-- added 7.0.3/No Info
-				i(121996),	-- Skulldugger Jerkin
-				i(121997),	-- Skulldugger Boots
-				i(121998),	-- Skulldugger Gloves
-				i(121999),	-- Skulldugger Hood
-				i(122000),	-- Skulldugger Britches
-				i(122001),	-- Skulldugger Shoulders
-				i(122002),	-- Skulldugger Waistband
-				i(122003),	-- Skulldugger Bindings
-				i(123320),	-- Skulldugger Jerkin
-				i(123321),	-- Skulldugger Boots
-				i(123322),	-- Skulldugger Gloves
-				i(123323),	-- Skulldugger Hood
-				i(123324),	-- Skulldugger Britches
-				i(123325),	-- Skulldugger Shoulders
-				i(123326),	-- Skulldugger Waistband
-				i(123327),	-- Skulldugger Bindings
-				i(123328),	-- Skulldugger Jerkin
-				i(123329),	-- Skulldugger Boots
-				i(123330),	-- Skulldugger Gloves
-				i(123331),	-- Skulldugger Hood
-				i(123332),	-- Skulldugger Britches
-				i(123333),	-- Skulldugger Shoulders
-				i(123334),	-- Skulldugger Waistband
-				i(123335),	-- Skulldugger Bindings
-				i(121992),	-- Skulldugger Idol of Rage
-				i(121995),	-- Skulldugger Stone of Rage
-				i(121990),	-- Skulldugger Cloak of Rage
-				i(121991),	-- Skulldugger Choker
-				i(121993),	-- Skulldugger Band of Onslaught
-				i(121994),	-- Skulldugger Ring of Onslaught
-				i(122088),	-- Skulldugger Dagger
-				i(122089),	-- Skulldugger Shiv
-				i(122094),	-- Skulldugger Sword
-				-- 7.0.3/Confirmed
-				i(140703),	-- Duskfall Daggers
-				i(140704),	-- Assassins Serrated Dagger
-				i(140705),	-- Outlaw's Cutlass
+				cl(ROGUE, ASSASSINATION, {
+					i(150680),	-- Lightdrinker Hood
+					i(150682),	-- Lightdrinker Shoulders
+					i(150677),	-- Lightdrinker Jerkin
+					i(150684),	-- Lightdrinker Bindings
+					i(150679),	-- Lightdrinker Gloves
+					i(150683),	-- Lightdrinker Waistband
+					i(150681),	-- Lightdrinker Britches
+					i(150678),	-- Lightdrinker Boots
+				}),
 			}),
 			cl(SHAMAN, {
-				-- added 7.2.5/No Info
-				i(150685),	-- Streamtalker Tunic
-				i(150686),	-- Streamtalker Boots
-				i(150687),	-- Streamtalker Gloves
-				i(150688),	-- Streamtalker Coif
-				i(150689),	-- Streamtalker Legwraps
-				i(150690),	-- Streamtalker Pauldrons
-				i(150691),	-- Streamtalker Belt
-				i(150692),	-- Streamtalker Armbands
-				i(150603),	-- Earthmenders Talons (probably first try for party sync)
-				i(150601),	-- Stormshaper's Claws
-				i(150618),	-- Stormshaper's Bulwark
-				i(150619),	-- Earthmender's Shield
-				i(150602),	-- Talons of Totemic Might
-				-- added 7.3.5/Confirmed
-				i(157640),	-- Raincaller's Talons (probably first try for party sync)
-				i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
-				i(157639),	-- Spiritbreaker Talons
-				-- added 7.0.3/Confirmed
-				i(122010),	-- Stormseeker Vest
-				i(122012),	-- Stormseeker Sabatons
-				i(122013),	-- Stormseeker Grips
-				i(122014),	-- Stormseeker Cowl
-				i(122027),	-- Stormseeker Leggings
-				i(122029),	-- Stormseeker Spaulders
-				i(122030),	-- Stormseeker Girdle
-				i(122031),	-- Stormseeker Bracers
-				i(123336),	-- Stormseeker Vest
-				i(123337),	-- Stormseeker Sabatons
-				i(123338),	-- Stormseeker Grips
-				i(123339),	-- Stormseeker Cowl
-				i(123340),	-- Stormseeker Leggings
-				i(123341),	-- Stormseeker Spaulders
-				i(123342),	-- Stormseeker Girdle
-				i(123343),	-- Stormseeker Bracers
-				i(123344),	-- Stormseeker Vest
-				i(123345),	-- Stormseeker Sabatons
-				i(123346),	-- Stormseeker Grips
-				i(123347),	-- Stormseeker Cowl
-				i(123348),	-- Stormseeker Leggings
-				i(123349),	-- Stormseeker Spaulders
-				i(123350),	-- Stormseeker Girdle
-				i(123351),	-- Stormseeker Bracers
-				i(140708),	-- Earthmenders talons (probably first try for party sync)
-				-- added 7.0.3/No Info
-				i(122006),	-- Stormseeker Idol of Rage
-				i(122009),	-- Stormseeker Stone of Rage
-				i(122017),	-- Stormseeker Idol of Destruction
-				i(122020),	-- Stormseeker Stone of Destruction
-				i(122023),	-- Stormseeker Idol of Wisdom
-				i(122026),	-- Stormseeker Stone of Wisdom
-				i(122004),	-- Stormseeker Cloak of Rage
-				i(122015),	-- Stormseeker Cloak of Destruction
-				i(122021),	-- Stormseeker Cloak of Wisdom
-				i(122005),	-- Stormseeker Choker
-				i(122016),	-- Stormseeker Medallion
-				i(122022),	-- Stormseeker Necklace
-				i(122007),	-- Stormseeker Band of Onslaught
-				i(122008),	-- Stormseeker Ring of Onslaught
-				i(122018),	-- Stormseeker Band of Destruction
-				i(122019),	-- Stormseeker Ring of Destruction
-				i(122024),	-- Stormseeker Band of Wisdom
-				i(122025),	-- Stormseeker Ring of Wisdom
-				i(122011),	-- Stormseeker Aegis
-				i(122028),	-- Stormseeker Shield
-				i(122090),	-- Stormseeker Claws
-				i(122091),	-- Stormseeker Talons
-				i(122092),	-- Stormseeker Slicers
-				i(140706),	-- Stormshaper's Claws
-				i(140738),	-- Stormshaper's Bulwark
-				i(140739),	-- Earthmender's Shield
-				i(140707),	-- Talons of Totemic Might
+				cl(SHAMAN, ELEMENTAL, {
+					i(150688),	-- Streamtalker Coif
+					i(150690),	-- Streamtalker Pauldrons
+					i(150685),	-- Streamtalker Tunic
+					i(150692),	-- Streamtalker Armbands
+					i(150687),	-- Streamtalker Gloves
+					i(150691),	-- Streamtalker Belt
+					i(150689),	-- Streamtalker Legwraps
+					i(150686),	-- Streamtalker Boots
+				}),
+				cl(SHAMAN, RESTORATION, {
+					i(153999),	-- Streamtalker Slicers
+					i(154003),	-- Streamtalker Cowl
+					i(153993),	-- Streamtalker Necklace
+					i(154006),	-- Streamtalker Spaulders
+					i(153992),	-- Streamtalker Cloak of Wisdom
+					i(154000),	-- Streamtalker Vest
+					i(154008),	-- Streamtalker Bracers
+					i(154002),	-- Streamtalker Grips
+					i(154007),	-- Streamtalker Girdle
+					i(154004),	-- Streamtalker Leggings
+					i(154001),	-- Streamtalker Sabatons
+					i(153996),	-- Streamtalker Band of Wisdom
+					i(153995),	-- Streamtalker Ring of Wisdom
+					i(153994),	-- Streamtalker Idol of Wisdom
+					i(153997),	-- Streamtalker Stone of Wisdom
+				}),
 			}),
 			cl(WARLOCK, {
-				-- added 7.2.5/No Info
-				i(150693),	-- Felsoul Sandals
-				i(150694),	-- Felsoul Handwraps
-				i(150695),	-- Felsoul Cowl
-				i(150696),	-- Felsoul Leggings
-				i(150697),	-- Felsoul Robe
-				i(150698),	-- Felsoul Shoulderpads
-				i(150699),	-- Felsoul Cord
-				i(150700),	-- Felsoul Wristwraps
-				i(150605),	-- Demonologist's Staff
-				i(150615),	-- Staff of Swelling Agony
-				-- added 7.2.5/Confirmed
-				i(150604),	-- Destructive Spellstaff
-				-- added 7.3.5/Confirmed
-				i(154022),	-- Felsoul Wand
-				i(157642),	-- Demonologist's Staff
-				i(157641),	-- Destructive Spellstaff
-				-- added 7.0.3/No Info
-				i(122032),	-- Ruinrain Sandals
-				i(122033),	-- Ruinrain Handwraps
-				i(122034),	-- Ruinrain Cowl
-				i(122041),	-- Ruinrain Leggings
-				i(122042),	-- Ruinrain Robe
-				i(122043),	-- Ruinrain Shoulderpads
-				i(122044),	-- Ruinrain Cord
-				i(122045),	-- Ruinrain Wristwraps
-				i(123352),	-- Ruinrain Sandals
-				i(123353),	-- Ruinrain Handwraps
-				i(123354),	-- Ruinrain Cowl
-				i(123355),	-- Ruinrain Leggings
-				i(123356),	-- Ruinrain Robe
-				i(123357),	-- Ruinrain Shoulderpads
-				i(123358),	-- Ruinrain Cord
-				i(123359),	-- Ruinrain Wristwraps
-				i(123360),	-- Ruinrain Sandals
-				i(123361),	-- Ruinrain Handwraps
-				i(123362),	-- Ruinrain Cowl
-				i(123363),	-- Ruinrain Leggings
-				i(123364),	-- Ruinrain Robe
-				i(123365),	-- Ruinrain Shoulderpads
-				i(123366),	-- Ruinrain Cord
-				i(123367),	-- Ruinrain Wristwraps
-				i(122037),	-- Ruinrain Idol of Destruction
-				i(122040),	-- Ruinrain Stone of Destruction
-				i(122035),	-- Ruinrain Cloak of Destruction
-				i(122036),	-- Ruinrain Medallion
-				i(122038),	-- Ruinrain Band of Destruction
-				i(122039),	-- Ruinrain Ring of Destruction
-				i(122083),	-- Ruinrain Wand
-				i(122077),	-- Ruinrain Staff
-				i(140710),	-- Demonologist's Staff
-				i(140720),	-- Staff of Swelling Agony
-				-- added 7.0.3/Confirmed
-				i(140709),	-- Destructive Spellstaff
+				cl(WARLOCK, AFFLICTION, {
+					i(154022),	-- Felsoul Wand
+					i(150695),	-- Felsoul Cowl
+					i(150698),	-- Felsoul Shoulderpads
+					i(150697),	-- Felsoul Robe
+					i(150700),	-- Felsoul Wristwraps
+					i(150694),	-- Felsoul Handwraps
+					i(150699),	-- Felsoul Cord
+					i(150696),	-- Felsoul Leggings
+					i(150693),	-- Felsoul Sandals
+				}),
 			}),
 			cl(WARRIOR, {
-				-- added 7.2.5/No Info
-				i(150701),	-- Oathsworn Breastplate
-				i(150702),	-- Oathsworn Sabatons
-				i(150703),	-- Oathsworn Gauntlets
-				i(150704),	-- Oathsworn Helm
-				i(150705),	-- Oathsworn Legplates
-				i(150706),	-- Oathsworn Pauldrons
-				i(150707),	-- Oathsworn Girdle
-				i(150708),	-- Oathsworn Vambraces
-				i(150620),	-- Protector's Barrier
-				-- added 7.2.5/Confirmed
-				i(150608),	-- Protector's Axe
-				i(150607),	-- Greataxe of Fury
-				i(150606),	-- Armsmaster's Greataxe
-				-- added 7.3.5/Confirmed
-				i(154041),	-- Oathsworn Faceguard
-				i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
-				i(157657),	-- Foebreaker's Barrier (Lv20 Start Gear?)
-				i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
-				-- added 7.0.3/No Info
-				i(122078),	-- Defiant Greataxe
-				i(122079),	-- Defiant Headchopper
-				i(122093),	-- Defiant Axe
-				i(122056),	-- Defiant Stone of Battle
-				i(122057),	-- Defiant Idol of Battle
-				i(122060),	-- Defiant Defender Idol
-				i(122063),	-- Defiant Defender Stone
-				i(122046),	-- Defiant Breastplate
-				i(122047),	-- Defiant Greaves
-				i(122048),	-- Defiant Faceguard
-				i(122049),	-- Defiant Legguards
-				i(122051),	-- Defiant Shoulderguards
-				i(122064),	-- Defiant Waistband
-				i(122065),	-- Defiant Armguards
-				i(122066),	-- Defiant Handguards
-				i(123368),	-- Defiant Breastplate
-				i(123369),	-- Defiant Greaves
-				i(123370),	-- Defiant Faceguard
-				i(123371),	-- Defiant Legguards
-				i(123372),	-- Defiant Shoulderguards
-				i(123373),	-- Defiant Waistband
-				i(123374),	-- Defiant Armguards
-				i(123375),	-- Defiant Handguards
-				i(122052),	-- Defiant Cloak of Battle
-				i(122058),	-- Defiant Cloak of Stoicism
-				i(122053),	-- Defiant Pendant
-				i(122059),	-- Defiant Amulet
-				i(122054),	-- Defiant Band of Might
-				i(122055),	-- Defiant Ring of Might
-				i(122061),	-- Defiant Band of Stoicism
-				i(122062),	-- Defiant Ring of Stoicism
-				i(122050),	-- Defiant Bulwark
-				i(140740),	-- Protector's Barrier
-				-- added 7.0.3/Confirmed
-				i(140713),	-- Protector's Axe
-				i(140711),	-- Armsmaster's Greataxe
+				cl(WARRIOR, ARMS, {
+					i(150704),	-- Oathsworn Helm
+					i(150706),	-- Oathsworn Pauldrons
+					i(150701),	-- Oathsworn Breastplate
+					i(150708),	-- Oathsworn Vambraces
+					i(150703),	-- Oathsworn Gauntlets
+					i(150707),	-- Oathsworn Girdle
+					i(150705),	-- Oathsworn Legplates
+					i(150702),	-- Oathsworn Sabatons
+				}),
+				cl(WARRIOR, PROTECTION, {
+					i(154041),	-- Oathsworn Faceguard
+					i(154043),	-- Oathsworn Amulet
+					i(154048),	-- Oathsworn Shoulderguards
+					i(154038),	-- Oathsworn Cloak of Stoicism
+					i(154037),	-- Oathsworn Chestguard
+					i(154050),	-- Oathsworn Armguards
+					i(154040),	-- Oathsworn Handguards
+					i(154049),	-- Oathsworn Waistband
+					i(154042),	-- Oathsworn Legguards
+					i(154039),	-- Oathsworn Greaves
+					i(154045),	-- Oathsworn Band of Stoicism
+					i(154046),	-- Oathsworn Ring of Stoicism
+					i(154044),	-- Oathsworn Defender Idol
+					i(154047),	-- Oathsworn Defender Stone
+				}),
 			}),
 		}),
 	}),

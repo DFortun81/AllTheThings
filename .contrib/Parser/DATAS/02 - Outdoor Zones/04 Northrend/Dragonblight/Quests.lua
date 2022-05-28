@@ -731,10 +731,7 @@ _.Zones =
 				q(12267, {	-- Neltharion's Flame
 					["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 					["provider"] = { "n", 26593 },	-- Serinar
-					["sourceQuests"] = {
-						12264,	-- Culling the Damned
-						12265,	-- Defining the Defilers
-					},
+					["sourceQuest"] = 12265,	-- Defining the Defilers
 					["g"] = {
 						i(37944),	-- High Priest Forith's Robes
 						i(38095),	-- Legplates of the Conquered Knight
@@ -1239,7 +1236,6 @@ _.Zones =
 					["provider"] = { "n", 27243 },	-- High Executor Wroth
 					["sourceQuests"] = {
 						12271,	-- The Rod of Compulsion
-						12252,	-- Torture the Torturer
 					},
 					["g"] = {
 						i(37968),	-- Robe of Calcified Tears
