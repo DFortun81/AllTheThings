@@ -273,6 +273,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(123241),	-- Nurturer Handguards
 			i(121873),	-- Nurturer Helm
 			i(123226),	-- Nurturer Helm
+			i(123234),	-- Nurturer Helm
 			i(123242),	-- Nurturer Helm
 			i(121876),	-- Nurturer Idol of Destruction
 			i(121866),	-- Nurturer Idol of Durability
