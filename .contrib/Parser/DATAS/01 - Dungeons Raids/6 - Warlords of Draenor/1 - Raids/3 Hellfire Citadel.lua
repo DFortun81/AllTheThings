@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root("Instances", tier(WOD_TIER, {
 	inst(669, {	-- Hellfire Citadel
 		["isRaid"] = true,
 		["lvl"] = 100,
@@ -1900,4 +1900,8 @@ _.Instances = { tier(WOD_TIER, {
 			}),
 		},
 	}),
-})};
+}));
+
+root("HiddenQuestTriggers", {
+	--q(8152),	-- Achimonde Normal. (Was also doing 39830)??
+})

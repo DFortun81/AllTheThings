@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(VALE_OF_ETERNAL_BLOSSOMS, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66741,	-- Aki the Chosen <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(7318),	-- A Taste of History
 				ach(7323),	-- Collateral Damage
 				ach(7320),	-- Dog Pile

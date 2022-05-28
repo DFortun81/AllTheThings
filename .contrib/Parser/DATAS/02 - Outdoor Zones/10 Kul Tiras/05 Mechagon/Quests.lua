@@ -1616,7 +1616,7 @@ root("HiddenQuestTriggers", {
 				q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
 				q(56662),	-- Triggered when completed "Real Ultimate Power"
 				--q(56252),	-- Paint Bottle:Electric blue?
-				--q(55453),	-- Unknown Mecha
+				q(55453),	-- happened after i handed in copper trim, which was also last item for my mecha-done achievement
 				q(56238),	-- Triggered in the alternative world
 				q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
 				q(56435),	-- Playing Ode to Tinkertown on the Gramophone

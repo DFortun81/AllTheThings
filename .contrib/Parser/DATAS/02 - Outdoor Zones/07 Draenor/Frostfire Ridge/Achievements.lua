@@ -7,7 +7,7 @@ _.Zones =
 	m(DRAENOR, {
 		m(FROSTFIRE_RIDGE, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 87122,	-- Gargra <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(9533),	-- Breaker of Chains (Bloodmaul Stronghold)
 				ach(9537, {	-- By Fire Be... Merged? (Magnarok)
 					["sourceQuest"] = 37204,	-- Rekindling an Old Flame

@@ -2941,7 +2941,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(52993),	--
 				q(53009),	-- Hang On In There
 				q(53010),	-- No Turning Back
-				q(53012),	-- Put Away Your Toys
 				q(53026),	--
 				q(53029),	-- A Dying World
 				q(53096),	-- Short-Supply Reward
@@ -3194,7 +3193,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54406),	--
 				q(54409),	--
 				q(54413),	--
-				q(54422),	--
 				q(54423),	--
 				q(54427),	--
 				q(54429),	--
@@ -3576,7 +3574,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55420),	--
 				q(55421),	--
 				q(55422),	--
-				q(55453),	--
 				q(55501),	--
 				q(55540),	--
 				q(55541),	--
@@ -3716,7 +3713,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56898),	--
 				q(56902),	--
 				-- 8.2.0.30495
-				q(56945),	--
 				q(56949),	--
 				q(56967),	--
 				-- 8.2.0.30613

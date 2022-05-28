@@ -74,6 +74,8 @@ root("HiddenQuestTriggers", {
 		--q(62397),	-- Unknown
 		q(48673),	-- Lockout Tracking - Normal - Blood (Popped After completing Invasion Point: Sangua)
 		--q(45775),	-- Discord: this week's archaeology quest. when I either turned it in at the blood elf in suramar, or when I took the follow up quest. dont remember which. 7 April 2022
+		--q(48308),	-- Popped with Antoran High Command(48288)
+		q(54422),	-- After winning a PVP pet battle I received a clickable item that added a mission to the BFA mission table:[A Shady Character] has been added to your Mission Table.
 
 		-------------------
 		--    VARIOUS    --
@@ -2308,6 +2310,7 @@ root("HiddenQuestTriggers", {
 		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
 		q(56957),	-- Grid of Bursting Vitality (Rank 3)
 		q(56958),	-- Tempered Azerite Formation (Rank 3)
+		q(56945),	-- Tempered Azerite Formation (Rank 3)
 		q(56943),	-- Animated Elemental Heart (Rank 1)
 		q(56947),	-- Animated Elemental Heart (Rank 1) — this + quest above popped at the same time after assembly.  was my first one, if that matters!
 

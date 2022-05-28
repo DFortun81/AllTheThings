@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66466,	-- Stone Cold Trixxy <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(5443, {		-- E'ko Madness (Winterspring)
 					crit(1, {	-- Winterspring Furbolg
 						["crs"] = {

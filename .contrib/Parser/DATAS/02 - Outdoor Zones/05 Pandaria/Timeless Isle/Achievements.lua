@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(TIMELESS_ISLE, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -50,7 +50,7 @@ _.Zones =
 							["cr"] = 71924,	-- Wrathion <The Black Prince>
 						}),
 					},
-				}),
+				})),
 				ach(8716),	-- Emissary of Ordos
 				ach(8726),	-- Extreme Treasure Hunter
 				ach(8725, {	-- Eyes on the Ground

@@ -21,11 +21,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = { 50 },
 				}),
-				q(53012, {	-- Put Away Your Toys
-					["isWorldQuest"] = true,
-					["lvl"] = { 50 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 					["isWorldQuest"] = true,
 					["lvl"] = { 50 },
@@ -530,6 +525,12 @@ _.Zones =
 					["lvl"] = { 50 },
 					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
+					["coord"] = { 53.2, 33.4, STORMSONG_VALLEY },
+				}),
+				q(53012, {	-- Put Away Your Toys
+					["isWorldQuest"] = true,
+					["lvl"] = { 50 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52199, {	-- Rum- Paaaage!
 					["lvl"] = { 50 },

@@ -7,7 +7,7 @@ _.Zones =
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 87110,	-- Tarr the Terrible <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
 					crit(1, {	-- Garrosh's Shackles
 						["_quests"] = { 37130 },

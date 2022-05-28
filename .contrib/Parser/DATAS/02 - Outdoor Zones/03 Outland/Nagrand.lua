@@ -52,7 +52,7 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(9069, {	-- An Awfully Big Adventure
+					petbattle(ach(9069, {	-- An Awfully Big Adventure
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
@@ -62,7 +62,7 @@ root("Zones", {
 								["cr"] = 66552,	-- Narrok <Master Pet Tamer>
 							}),
 						},
-					}),
+					})),
 					removeclassicphase(ach(902, {	-- Chief Exalted Officer
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],

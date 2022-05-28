@@ -8,7 +8,7 @@ _.Zones =
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(ACHIEVEMENTS, {
 				ach(9437),	-- A Demidos of Reality
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -18,7 +18,7 @@ _.Zones =
 							["cr"] = 87124,	-- Ashlei <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon
 				--	unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield
 					["races"] = ALLIANCE_ONLY,

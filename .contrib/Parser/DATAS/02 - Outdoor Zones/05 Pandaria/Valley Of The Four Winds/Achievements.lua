@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66734,	-- Farmer Nishi <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(7294),	-- A Taste of Things to Come (Halfhill)
 				ach(6846, {	-- Fish Tales
 					["collectible"] = false,

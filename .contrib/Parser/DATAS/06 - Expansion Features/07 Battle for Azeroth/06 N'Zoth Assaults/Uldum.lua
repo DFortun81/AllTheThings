@@ -231,7 +231,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							}, {
 								-- Summoning Ritual (there seem to be 3 separate questIDs, probably depending on the location that's up)
 								q(57620),	-- Summoning Ritual
-								q(57621),	-- Summoning Ritual
+								q(57621),	-- Summoning Ritual (Portal event in Uldum at coords during Black Empire assault.)
 								n(157472, {	-- Aphrom the Guise of Madness
 									["questID"] = 57437,
 								}),

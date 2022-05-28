@@ -19,7 +19,7 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(9069, {	-- An Awfully Big Adventure
+					petbattle(ach(9069, {	-- An Awfully Big Adventure
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
@@ -29,7 +29,7 @@ root("Zones", {
 								["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
 							}),
 						},
-					}),
+					})),
 					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",

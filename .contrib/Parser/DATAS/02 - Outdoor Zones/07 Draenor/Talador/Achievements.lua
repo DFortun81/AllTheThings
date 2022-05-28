@@ -7,7 +7,7 @@ _.Zones =
 	m(DRAENOR, {
 		m(TALADOR, {
 			n(ACHIEVEMENTS, {
-				ach(9069,  {	-- An Awfully Big Adventure
+				petbattle(ach(9069,  {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 87125,	-- Taralune <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(9635),		-- Bobbing for Orcs
 				ach(9634),		-- Charged Up
 				ach(8920,  {	-- Don't Let the Tala-door Hit You on the Way Out (A) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)

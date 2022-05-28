@@ -300,7 +300,9 @@ _.ExpansionFeatures =
 								i(117405, {	-- Nat's Drinking Hat
 									["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
 								}),
-								i(86596),	-- Nat's Fishing Chair (TOY!)
+								i(86596, {	-- Nat's Fishing Chair (TOY!)
+									["description"] = "Requires Best Friend to see.",
+								}),
 								i(87791, {	-- Crimson Water Strider (MOUNT!)
 									["cost"] = { { "i", 117397, 100 }, },	-- 100x Nat's Lucky Coin
 								}),

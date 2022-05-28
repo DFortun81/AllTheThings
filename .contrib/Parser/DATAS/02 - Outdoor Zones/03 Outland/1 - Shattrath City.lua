@@ -598,7 +598,7 @@ root("Zones", {
 			["lvl"] = 58,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(9069, {	-- An Awfully Big Adventure
+					petbattle(ach(9069, {	-- An Awfully Big Adventure
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
@@ -608,7 +608,7 @@ root("Zones", {
 								["cr"] = 66553,	-- Morulu The Elder <Master Pet Tamer>
 							}),
 						},
-					}),
+					})),
 					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
 						-- #if BEFORE 3.0.1
 						["cost"] = {

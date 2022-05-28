@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -21,7 +21,7 @@ _.Zones =
 							["cr"] = 68465,	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(6716, {	-- Between a Saurok and a Hard Place
 					["collectible"] = false,
 					["g"] = {

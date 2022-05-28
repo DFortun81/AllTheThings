@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(ZULDRAK, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(1596, {	-- Guru of Drakuru
 					["collectible"] = false,
 					["g"] = {

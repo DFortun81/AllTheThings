@@ -7,7 +7,7 @@ _.Zones =
 	m(948, {	-- The Maelstrom
 		m(DEEPHOLM, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66815,	-- Bordin Steadyfist <Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(4871, {	-- Deep into Deepholm
 					crit(1, {	-- The Middle World Pillar Fragment
 						["sourceQuest"] = 27938,	-- The Middle Fragment

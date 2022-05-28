@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(DRAGONBLIGHT, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(35, {	-- Might of Dragonblight (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

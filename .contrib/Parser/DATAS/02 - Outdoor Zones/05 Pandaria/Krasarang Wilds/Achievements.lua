@@ -13,7 +13,7 @@ _.Zones =
 				-- add SQs for Horde loremaster achievement + Dominance Offensive achievement
 			n(ACHIEVEMENTS, {
 				-- I still am not sure whether achieves like this will be listed per Zone or simply mapped from the Main achievement section...
-				-- ach(9069, {	-- An Awfully Big Adventure
+				-- petbattle(ach(9069, {	-- An Awfully Big Adventure
 				--  ["timeline"] = { "added 6.0.2" },
 				-- 	["collectible"] = false,
 				-- 	["filterID"] = BATTLE_PETS,
@@ -23,7 +23,7 @@ _.Zones =
 				-- 			["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
 				-- 		}),
 				-- 	},
-				-- }),
+				-- })),
 				ach(6716, {	-- Between a Saurok and a Hard Place
 					["collectible"] = false,
 					["g"] = {
@@ -74,7 +74,7 @@ _.Zones =
 								}),
 								i(86121, {	-- Radiant Seafarer's Boots
 									["description"] = "Only lootable while in a Paladin Holy Spec.",
-								}), 
+								}),
 							},
 						}),
 						o(213653, {		-- Pandaren Fishing Spear

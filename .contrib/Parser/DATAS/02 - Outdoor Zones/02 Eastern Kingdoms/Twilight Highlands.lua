@@ -9,7 +9,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -19,7 +19,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuests"] = { 27380 },	-- Nightmare
 				}),

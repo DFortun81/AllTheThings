@@ -28,7 +28,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
 				})),
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -38,7 +38,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 66522,	-- Lydia Accoste <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

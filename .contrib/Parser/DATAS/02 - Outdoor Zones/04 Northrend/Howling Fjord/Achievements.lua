@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(HOWLING_FJORD, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(1254, {	-- Friend or Fowl? [TODO: Move to Howling Fjord]
 					["coords"] = {
 						{ 69.6, 65.8, HOWLING_FJORD },

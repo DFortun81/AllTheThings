@@ -646,7 +646,6 @@ q(5523),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5524),	-- Chromatic Mantle of the Dawn,		TBC: Chromatic Mantle of the Dawn,		CLASSIC: Chromatic Mantle of the Dawn
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
-q(5541),	-- Ammo for Rumbleshot,		TBC: Ammo for Rumbleshot,		CLASSIC: Ammo for Rumbleshot
 q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
 q(5623),	-- In Favor of the Light,		TBC: In Favor of the Light,		CLASSIC: In Favor of the Light
 q(5627),	-- Stars of Elune,		TBC: Stars of Elune,		CLASSIC: Stars of Elune
@@ -2328,7 +2327,6 @@ q(41757),	--
 q(41758),	--
 q(41765),	--
 q(41779),	-- DANGER: Xavrix
-q(41805),	-- Key of Kalyndras
 q(41817),	-- Skull of the Taskmaster
 q(41820),	-- Walk Without Rhythm
 q(41822),	-- Following his Hoofsteps
@@ -2423,8 +2421,6 @@ q(42179),	-- [NYI] Pump it Up Again
 q(42180),	--
 q(42195),	--
 q(42196),	--
-q(42203),	-- Ritual Bit
-q(42205),	-- Entrance Bit
 q(42216),	--
 q(42217),	--
 q(42218),	--
@@ -2522,7 +2518,6 @@ q(42549),	-- 10v10 #2
 q(42550),	-- 10v10 #3
 q(42551),	-- 10v10 #4
 q(42566),	-- A Blaze of Starlight
-q(42569),	-- Shaman Shrine - Azsuna Earth 01
 q(42571),	-- Shaman Shrine - Highmountain Earth 01
 q(42572),	-- Shaman Shrine - Highmountain Earth 02
 q(42573),	-- Shaman Shrine - Stormheim Earth 01
@@ -3103,11 +3098,9 @@ q(47875),	--
 q(47876),	--
 q(47886),	--
 q(47893),	--
-q(47922),	-- Tracking Quest
 q(47923),	-- Tracking Quest
 q(47964),	-- Shoe Shine Kit Tracking Quest
 q(48062),	-- Scarlet Crusader
-q(48064),	-- Goroth Intro
 q(48220),	--
 q(48278),	-- Fate of the Life-Binder
 q(48316),	-- Tracking Quest

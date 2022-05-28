@@ -1547,7 +1547,9 @@ _.Zones =
 									}),
 									i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
 									i(93225),	-- Grand Commendation of the Anglers
-									i(86596),	-- Nat's Fishing Chair (TOY!)
+									i(86596, {	-- Nat's Fishing Chair (TOY!)
+										["description"] = "Requires Best Friend to see.",
+									}),
 									i(88710),	-- Nat's Hat -- NOT MOGGABLE
 									i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
 									i(85505),	-- Recipe: Krasarang Fritters

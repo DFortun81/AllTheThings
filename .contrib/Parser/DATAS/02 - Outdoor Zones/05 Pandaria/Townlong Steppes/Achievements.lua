@@ -7,7 +7,7 @@ _.Zones =
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -21,7 +21,7 @@ _.Zones =
 							["cr"] = 66918,	-- Seeker Zusshi <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(7310),	-- Defender of Gods
 				ach(7309),	-- Fire in the Yaung-hole!
 				ach(7298, {	-- Getting Around with the Shado-Pan

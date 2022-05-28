@@ -81,7 +81,7 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(9069, {	-- An Awfully Big Adventure
+					petbattle(ach(9069, {	-- An Awfully Big Adventure
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
@@ -91,7 +91,7 @@ root("Zones", {
 								["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
 							}),
 						},
-					}),
+					})),
 					removeclassicphase(ach(862, {	-- Explore Hellfire Peninsula
 						-- #if BEFORE WRATH
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",

@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(ULDUM, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(4872, {	-- Unearthing Uldum
 					crit(1, {	-- Rescued by Outsiders
 						["sourceQuest"] = 28112,	-- Escape From the Lost City

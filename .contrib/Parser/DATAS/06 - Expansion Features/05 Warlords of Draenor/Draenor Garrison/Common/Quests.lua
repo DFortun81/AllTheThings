@@ -1934,6 +1934,7 @@ _.ExpansionFeatures =
 				q(39195, {	-- Gems of the Apexis
 					["requireSkill"] = JEWELCRAFTING,
 					["isBreadcrumb"] = true,
+					["sourceQuest"] = 38445,	-- The Assault Base
 					["provider"] = { "n", 77209 },	-- Baros Alexston
 					["races"] = ALLIANCE_ONLY,
 				}),

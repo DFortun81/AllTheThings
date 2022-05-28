@@ -4,7 +4,7 @@
 
 root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Island
 	n(ACHIEVEMENTS, {
-		ach(9069, {	-- An Awfully Big Adventure
+		petbattle(ach(9069, {	-- An Awfully Big Adventure
 			["timeline"] = { "added 6.0.2" },
 			["collectible"] = false,
 			["filterID"] = BATTLE_PETS,
@@ -18,7 +18,7 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 					["cr"] = 67370,	-- Jeremy Feasel <Master Pet Tamer>
 				}),
 			},
-		}),
+		})),
 		ach(15215, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Can't Stop the Feeling
 			ach(15214),	-- What a Feeling
 		})),

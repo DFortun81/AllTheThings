@@ -7,7 +7,7 @@ _.Zones =
 	m(DRAENOR, {
 		m(GORGROND, {
 			n(ACHIEVEMENTS, {
-				ach(9069,  {	-- An Awfully Big Adventure
+				petbattle(ach(9069,  {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 83837,	-- Cymre Brightblade <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(9678,  {	-- Ancient No More
 					crit(1),	-- Swift Onyx Flayer
 					crit(2),	-- Mogarnago

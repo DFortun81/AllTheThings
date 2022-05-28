@@ -39,7 +39,7 @@ _.Zones =
 						["sourceQuest"] = 31211,	-- The Poisoned Mind
 					}),
 				}),
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -53,7 +53,7 @@ _.Zones =
 							["cr"] = 66739,	-- Wastewalker Shu <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(6716, {	-- Between a Saurok and a Hard Place
 					["collectible"] = false,
 					["g"] = {

@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(ICECROWN, {
 			n(ACHIEVEMENTS, {
-				ach(9069, {	-- An Awfully Big Adventure
+				petbattle(ach(9069, {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 66675,	-- Major Payne
 						}),
 					},
-				}),
+				})),
 				ach(40, {		-- Icecrown: The Final Goal
 					crit(1, {	-- Crusader Bridenbrad
 						["sourceQuest"] = 13083,	-- Light Within the Darkness

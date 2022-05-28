@@ -7,7 +7,7 @@ _.Zones =
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
 			n(ACHIEVEMENTS, {
-				ach(9069,  {	-- An Awfully Big Adventure
+				petbattle(ach(9069,  {	-- An Awfully Big Adventure
 					["timeline"] = { "added 6.0.2" },
 					["collectible"] = false,
 					["filterID"] = BATTLE_PETS,
@@ -17,7 +17,7 @@ _.Zones =
 							["cr"] = 87123,	-- Vesharr <Grand Master Pet Tamer>
 						}),
 					},
-				}),
+				})),
 				ach(9605,  {	-- Arak Star
 					crit(1, {	-- The Howling Crag
 						["sourceQuest"] = 36590,	-- The Howling Crag

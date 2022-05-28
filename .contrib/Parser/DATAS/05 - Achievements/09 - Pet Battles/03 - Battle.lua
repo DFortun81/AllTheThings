@@ -47,7 +47,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				["crs"] = { 175786 },	-- Glurp
 			}),
 		}),
-		ach(9069,  {	-- An Awfully Big Adventure
+		petbattle(ach(9069,  {	-- An Awfully Big Adventure
 			i(120121),	-- Trunks
 			crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
 				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
@@ -182,7 +182,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(44, {	-- Wrathion (Celestial Tournament)
 				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
 			}),
-		}),
+		})),
 		ach(12088, {	-- Anomalous Animals of Argus
 			crit(1),	-- Ruinhoof (Krokuun)
 			crit(2),	-- Foulclaw (krokuun)
