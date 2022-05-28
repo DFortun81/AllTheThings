@@ -1,7 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
+
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(QUESTS, {
@@ -185,105 +185,32 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(42559),	-- WOD 100 H
 			q(42560),	-- WOD 100 H
 		}),
-		tier(BFA_TIER, { -- These Quests might be ingame, very unlikely however.
-			q(53374),	-- BFA 111-119 E
-			q(53375),	-- BFA 111-119 E
-			q(53376),	-- BFA 111-119 E
-			q(53377),	-- BFA 111-119 E
-			q(53378),	-- BFA 111-119 E
-			q(53388),	-- BFA 111-119 E
-			q(53389),	-- BFA 111-119 E
-			q(53390),	-- BFA 111-119 E
-			q(53559),	-- BFA 111-119 E
-			q(53560),	-- BFA 111-119 E
-			q(53561),	-- BFA 111-119 E
-			q(53562),	-- BFA 111-119 E
-			q(53563),	-- BFA 111-119 E
-			q(53379, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53380),	-- BFA 120 E
-			q(53381),	-- BFA 120 E
-			q(53382, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53383),	-- BFA 120 E
-			q(53391),	-- BFA 120 E
-			q(53392),	-- BFA 120 E
-			q(53393),	-- BFA 120 E
-			q(53394, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53395),	-- BFA 120 E
-			q(53396),	-- BFA 120 E
-			q(53397),	-- BFA 120 E
-			q(53398, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53399),	-- BFA 120 E
-			q(53400),	-- BFA 120 E
-			q(53401),	-- BFA 120 E
-			q(53402),	-- BFA 120 E
-			q(53403),	-- BFA 120 E
-			q(53404),	-- BFA 120 E
-			q(53554, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53555, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53556),	-- BFA 120 E
-			q(53557),	-- BFA 120 E
-			q(53558),	-- BFA 120 E
-			q(57961),	-- Heroic: Battle for Darkshore
-			q(57962),	-- Heroic: Battle for Darkshore
-			q(57973),	-- Heroic: Battle for Darkshore
-			q(57974),	-- Heroic: Battle for Darkshore
-			q(56129),	-- Heroic: Battle for Stromgarde
-			q(56206),	-- Heroic: Battle for Stromgarde
-			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
-			q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
-			q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
-			q(53341),	-- LFG - BFA - Island Expedition - PvP Win - Nth
-			q(50627),	-- LFGDungeons - BFA - Heroic Random - 1st
-			q(50628),	-- LFGDungeons - BFA - Heroic Random - Nth
-			q(50626),	-- LFGDungeons - BFA - Normal Random - 1st
-			q(50625),	-- LFGDungeons - BFA - Normal Random - Nth
-			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
-			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
-			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
-			q(58707),	-- Sorting Through Visions
-			q(58089),	-- Test Quest
-			q(57112),	-- Test Shared Quest
-
-			q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st-- Idk why under SL_tier
-
-
-			q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest) -- Idk why under SL_tier
-
-			--
+	}),
+	tier(CLASSIC_TIER, {
+		n(QUESTS, {
+			q(3064),	-- <NYI> <TXT> Pirate Hats
+			q(241),	-- <TEST> HEY MISTER WILSON!
+			q(8489),	-- BETA An Intact Converter [Eversong Woods]
+			q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
+			q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
 		}),
-		q(3064),	-- <NYI> <TXT> Pirate Hats
-		q(241),	-- <TEST> HEY MISTER WILSON!
-		q(11179),	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless -- can't find a history of a non-"temporarily deprecated" version of this quest
-		q(41006),	-- Assassinate That Guy
-		q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
-		q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
-		q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
-		q(41400),	-- Battle: Pandaren Cuisine!
-		q(8489),	-- BETA An Intact Converter [Eversong Woods]
-		q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
-		q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
-		q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
-		q(45816),	-- Choose Order Hall to Support
-		q(46273),	-- The Giver of Quests
-		q(46256),	-- X Treasures Found, 1 Challenge Attempted
-		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
+	}),
+	tier(TBC_TIER, {
+		n(QUESTS, {
+			q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
+		}),
+	}),
+	tier(WOTLK_TIER, {
+		n(QUESTS, {
+			tier(WOTLK_TIER, 3.0, {
+				q(11179),	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless -- can't find a history of a non-"temporarily deprecated" version of this quest
+			}),
+		}),
 	}),
 	tier(MOP_TIER, {
 		n(QUESTS, {
 			-- 5.0.1
-			tier(MOP_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+			tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 5.0.1" } }, {
 				q(30003, { ["name"] = "A Book By Its Cover", }),	-- A Book By Its Cover
 				q(30019, { ["name"] = "A Breach in the Wall", }),	-- A Breach in the Wall
 				q(30537, { ["name"] = "A Fizzy Fusion", }),	-- A Fizzy Fusion
@@ -488,7 +415,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.0.4
-			tier(MOP_TIER, 0.4, bubbleDown({ ["timeline"] = { "created 5.0.4" } }, {
+			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
 				q(31940, { ["name"] = "Battle Pet Trainers: Pandaria", }),	-- Battle Pet Trainers: Pandaria
 				q(31988, { ["name"] = "Daily Selected Scenario", }),	-- Daily Selected Scenario
 				q(31968, { ["name"] = "Doubt Begins To Surface", }),	-- Doubt Begins To Surface
@@ -508,7 +435,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.1.0
-			tier(MOP_TIER, 1.0, bubbleDown({ ["timeline"] = {"created 5.1.0"} }, {
+			tier(MOP_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 5.1.0"} }, {
 				q(32367, { ["name"] = "A Bit of Yak", }),	-- A Bit of Yak
 				q(32375, { ["name"] = "A Dash of That", }),	-- A Dash of That
 				q(32366, { ["name"] = "A Lick of Fire", }),	-- A Lick of Fire
@@ -539,7 +466,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.2.0
-			tier(MOP_TIER, 2.0, bubbleDown({ ["timeline"] = {"created 5.2.0"} }, {
+			tier(MOP_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
 				q(32475, { ["name"] = "A Spark of Life", }),	-- A Spark of Life
 				q(32727, { ["name"] = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
 				q(32566, { ["name"] = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
@@ -578,14 +505,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDown({ ["timeline"] = {"created 5.3.0"} }, {
+			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
 				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 			})),
 
 			-- 5.4.0
-			tier(MOP_TIER, 4.0, bubbleDown({ ["timeline"] = {"created 5.4.0"} }, {
+			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
 				q(33361, { ["name"] = "5.4 Raid - RRP - Boss 2 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 2 Legendary Quest
 				q(33362, { ["name"] = "5.4 Raid - RRP - Boss 3 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 3 Legendary Quest
@@ -629,7 +556,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 5.4.2
-			tier(MOP_TIER, 4.2, bubbleDown({ ["timeline"] = {"created 5.4.2"} }, {
+			tier(MOP_TIER, 4.2, bubbleDownSelf({ ["timeline"] = {"created 5.4.2"} }, {
 				q(33634, { ["name"] = "6.0 Invasion Opt-Out", }),	-- Maldo's Test Quest
 			})),
 		}),
@@ -637,7 +564,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(WOD_TIER, {
 		n(QUESTS, {
 			-- 6.0.1
-			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 6.0.1" } }, {
 				q(33772, { ["name"] = "6.0 Invasion Opt-Out", }),	-- 6.0 Invasion Opt-Out
 				q(34311, { ["name"] = "6.0 Invasion: Opted Out", }),	-- 6.0 Invasion: Opted Out
 				q(36211, { ["name"] = "6.0 Tanaan - Boots Bootstrap", }),	-- 6.0 Tanaan - Boots Bootstrap
@@ -1228,7 +1155,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.0.2
-			tier(WOD_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 6.0.2" } }, {
+			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 6.0.2" } }, {
 				q(37598, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 				q(37599, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
 				q(37600, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
@@ -1292,12 +1219,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.0.3
-			tier(WOD_TIER, 0.3, bubbleDown({ ["timeline"] = { "created 6.0.3" } }, {
+			tier(WOD_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 6.0.3" } }, {
 				q(33466, { ["name"] = "Rally the Artificers", }),	-- Rally the Artificers
 			})),
 
 			-- 6.1.0
-			tier(WOD_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+			tier(WOD_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 6.1.0" } }, {
 				q(35256, { ["name"] = "A Heart Unbroken", }),	-- A Heart Unbroken
 				q(38204, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
 				q(38205, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
@@ -1334,7 +1261,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 6.1.2 - no NYI quests
 
 			-- 6.2.0
-			tier(WOD_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
+			tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 6.2.0" } }, {
 				q(38592, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 				q(38594, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
 				q(37888, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
@@ -1381,7 +1308,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.2.1
-			tier(WOD_TIER, 2.1, bubbleDown({ ["timeline"] = { "created 6.2.1" } }, {
+			tier(WOD_TIER, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
 				q(39292, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
 				q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
@@ -1394,7 +1321,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 6.2.2
-			tier(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+			tier(WOD_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { "created 6.2.2" } }, {
 				q(35499, { ["name"] = "Blow up towers", }),	-- Blow up towers
 				q(39052, { ["name"] = "Blueprints Are Important", }),	-- Blueprints Are Important
 				q(33560, { ["name"] = "Light's Rest", }),	-- Light's Rest
@@ -1409,7 +1336,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 6.2.3 - no NYI quests
 
 			-- 6.x.x - quests in API with no name or patch info / quests from wow.tools
-			n(P6xx, {
+			n(P6xx, bubbleDownSelf({ ["timeline"] = { "created 6.0.1" } }, {
 				q(32785),
 				q(32786),
 				q(32787),
@@ -1658,12 +1585,93 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(36869),
 				q(36910),
 				q(36949),
-			}),
+			})),
+		}),
+	}),
+	tier(LEGION_TIER, {
+		n(QUESTS, {
+			-- 7.0.1
+			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 7.0.1" } }, {
+				q(41006),	-- Assassinate That Guy
+				q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
+				q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
+				q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
+				q(41400),	-- Battle: Pandaren Cuisine!
+			})),
+
+			-- 7.2.0
+			tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
+				q(45816),	-- Choose Order Hall to Support
+				q(46273),	-- The Giver of Quests
+				q(46256),	-- X Treasures Found, 1 Challenge Attempted
+				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
+			})),
 		}),
 	}),
 	tier(BFA_TIER, {
 		n(QUESTS, {
-			tier(BFA_TIER, 0.1, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
+				q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
+				q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
+				q(53341),	-- LFG - BFA - Island Expedition - PvP Win - Nth
+				q(50627),	-- LFGDungeons - BFA - Heroic Random - 1st
+				q(50628),	-- LFGDungeons - BFA - Heroic Random - Nth
+				q(50626),	-- LFGDungeons - BFA - Normal Random - 1st
+				q(50625),	-- LFGDungeons - BFA - Normal Random - Nth
+				q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
+				q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
+				q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
+				q(53374),	-- BFA 111-119 E
+				q(53375),	-- BFA 111-119 E
+				q(53376),	-- BFA 111-119 E
+				q(53377),	-- BFA 111-119 E
+				q(53378),	-- BFA 111-119 E
+				q(53388),	-- BFA 111-119 E
+				q(53389),	-- BFA 111-119 E
+				q(53390),	-- BFA 111-119 E
+				q(53559),	-- BFA 111-119 E
+				q(53560),	-- BFA 111-119 E
+				q(53561),	-- BFA 111-119 E
+				q(53562),	-- BFA 111-119 E
+				q(53563),	-- BFA 111-119 E
+				q(53379, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53380),	-- BFA 120 E
+				q(53381),	-- BFA 120 E
+				q(53382, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53383),	-- BFA 120 E
+				q(53391),	-- BFA 120 E
+				q(53392),	-- BFA 120 E
+				q(53393),	-- BFA 120 E
+				q(53394, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53395),	-- BFA 120 E
+				q(53396),	-- BFA 120 E
+				q(53397),	-- BFA 120 E
+				q(53398, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53399),	-- BFA 120 E
+				q(53400),	-- BFA 120 E
+				q(53401),	-- BFA 120 E
+				q(53402),	-- BFA 120 E
+				q(53403),	-- BFA 120 E
+				q(53404),	-- BFA 120 E
+				q(53554, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53555, {	-- BFA 120 E
+					["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				}),
+				q(53556),	-- BFA 120 E
+				q(53557),	-- BFA 120 E
+				q(53558),	-- BFA 120 E
 				-- Unsorted
 				q(47246, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -3069,8 +3077,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.0.1.27843
 				-- 8.0.1.27980
 				-- 8.0.1.28153
-			}),
-			tier(BFA_TIER, 1.0, {
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
 				-- Unsorted
 				q(53801, {
 					["lvl"] = 50,
@@ -3245,8 +3255,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.1.0.29482
 				-- 8.1.0.29600
 				-- 8.1.0.29621
-			}),
-			tier(BFA_TIER, 1.5, {
+			})),
+
+			-- 8.1.5
+			tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 8.1.5" } }, {
 				-- Unsorted
 				q(53787, {
 					["description"] = "Category: |cFFf09f26Engineering|r",
@@ -3329,8 +3341,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.1.5.29981
 				-- 8.1.5.30477
 				-- 8.1.5.30706
-			}),
-			tier(BFA_TIER, 2.0, {
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+				q(56129),	-- Heroic: Battle for Stromgarde
+				q(56206),	-- Heroic: Battle for Stromgarde
+				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
 				-- Unsorted
 				q(54085, {
 					["lvl"] = 50,
@@ -3749,8 +3766,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57408),	--
 				-- 8.2.0.31429
 				-- 8.2.0.31478
-			}),
-			tier(BFA_TIER, 2.5, {
+			})),
+
+			-- 8.2.5
+			tier(BFA_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 8.2.5" } }, {
+				q(58089),	-- Test Quest
 				-- Unsorted
 				q(54052, {
 					["description"] = "Category: |cFFf09f26Questfall|r",
@@ -3834,8 +3854,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.2.5.32722
 				-- 8.2.5.32750
 				-- 8.2.5.32978
-			}),
-			tier(BFA_TIER, 3.0, {
+			})),
+
+			-- 8.3.0
+			tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 8.3.0" } }, {
+				q(57112),	-- Test Shared Quest
+				q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st
+				q(58707),	-- Sorting Through Visions
+				q(57961),	-- Heroic: Battle for Darkshore
+				q(57962),	-- Heroic: Battle for Darkshore
+				q(57973),	-- Heroic: Battle for Darkshore
+				q(57974),	-- Heroic: Battle for Darkshore
 				-- Unsorted
 				q(55036, {
 					["description"] = "Area: |cFFf09f26Prototype|r",
@@ -4049,8 +4078,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.3.0.34601
 				-- 8.3.0.34769
 				-- 8.3.0.34963
-			}),
-			tier(BFA_TIER, 3.7, {
+			})),
+
+			-- 8.3.7
+			tier(BFA_TIER, 3.7, bubbleDownSelf({ ["timeline"] = { "created 8.3.7" } }, {
 				-- Tools
 				-- 8.3.7.34872
 				q(59248),	--
@@ -4062,33 +4093,37 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.3.7.35284
 				-- 8.3.7.35435
 				-- 8.3.7.35662
-			}),
-			q(54168, {
-				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
-				["isDaily"] = 1,
-				["races"] = HORDE_ONLY,
-				["repeatable"] = 1,
-			}),
-			q(54986, {
-				["lvl"] = 50,
-				["g"] = {
-					i(169154, { -- [PH] N'Zoth Cache
-						["q"] = 4,
-					})
-				}
-			}),
-			q(55208, {
-			}),
-			q(57640, {
-				["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
-				["lvl"] = 10,
-			}),
+			})),
+
+			-- 8.x.x (Someone might know how to sort these)
+			n(P8xx, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				q(54168, {
+					["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
+					["isDaily"] = 1,
+					["races"] = HORDE_ONLY,
+					["repeatable"] = 1,
+				}),
+				q(54986, {
+					["lvl"] = 50,
+					["g"] = {
+						i(169154, { -- [PH] N'Zoth Cache
+							["q"] = 4,
+						})
+					}
+				}),
+				q(55208, {
+				}),
+				q(57640, {
+					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+					["lvl"] = 10,
+				}),
+			})),
 		}),
 	}),
 	tier(SL_TIER, {
 		n(QUESTS, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				q(60124),
 				-- Quest from Unsorted
 				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
@@ -5009,7 +5044,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { "created 9.0.2" } }, {
 				-- Quest from Unsorted
 				q(62642, { ["name"] = "LFGDungeons - SL - Heroic Random - 1st", }),	-- LFGDungeons - SL - Heroic Random - 1st
 				q(62643, { ["name"] = "LFGDungeons - SL - Heroic Random - Nth", }),	-- LFGDungeons - SL - Heroic Random - Nth
@@ -5102,7 +5137,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.0.5
-			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
+			tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 9.0.5" } }, {
 				-- Quest from Unsorted
 				-- Quest from WoW.Tools
 				-- 9.0.5.37503
@@ -5123,7 +5158,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
 				q(63420),
 				q(63430),
 				q(63431),
@@ -5274,7 +5309,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.1.5
-			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
 				-- Quest from Unsorted
 				q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(64997, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
@@ -5360,7 +5395,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
 				-- Quest from Unsorted
 				q(64006, { ["name"] = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
 				q(65703, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
@@ -5556,7 +5591,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
 				-- 9.2.5.42850
 				q(63479),	-- Summons from the Matriarch
 				q(63505),	--
@@ -5630,10 +5665,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.5.43741
 				-- 9.2.5.43810
 			})),
-
-			-- 9.x.x
-			n(P9xx, {
-			}),
 		}),
 	}),
 }));

@@ -118,34 +118,45 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(TBC_TIER, {
 		filter(MOUNTS, {
-			tier(TBC_TIER, 0.1, {
+			-- 2.0.1
+			tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 2.0.1"} }, {
 				mount(33630, {	-- Blue Mechanostrider (MOUNT!)
 					["modelID"] = 6569.
 				}),
 				i(21736, {	-- CLASSIC:Riding Gryphon TBC:Nether Drake / CLASSIC:Riding Gryphon Reins, TBC:Nether Drake Reins (MOUNT!)
 					["modelID"] = 16314,
 				}),
-			}),
-			tier(TBC_TIER, 0.8, {
+			})),
+
+			-- 2.0.8
+			tier(TBC_TIER, 0.8, bubbleDownSelf({ ["timeline"] = {"created 2.0.8"} }, {
 				i(29225, {	-- Swift Warstrider / zzoldSwift Warstrider (MOUNT!)
 					["modelID"] = 20359,
 				}),
-			}),
-			tier(TBC_TIER, 2.3, {
+			})),
+
+			-- 2.2.3
+			tier(TBC_TIER, 2.3, bubbleDownSelf({ ["timeline"] = {"created 2.2.3"} }, {
 				i(28482, {	-- Great Elite Elekk / Great Elite Elekk (MOUNT!)
 					["modelID"] = 17906,
 				}),
-			}),
-			tier(TBC_TIER, 3.0, {
+			})),
+
+			-- 2.3.0
+			tier(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
 				i(25596, {	-- Peep the Phoenix Mount / Peep's Whistle (MOUNT!)
 					["modelID"] = 17890,
 				}),
-			}),
-			tier(TBC_TIER, 4.3, {
+			})),
+
+			-- 2.4.3
+			tier(TBC_TIER, 4.3, bubbleDownSelf({ ["timeline"] = {"created 2.4.3"} }, {
 				mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
 					["modelID"] = 26691,
 				}),
-			}),
+			})),
+
+			-- 2.x.x
 			n(P2xx, {
 				mount(44317, {	-- Merciless Nether Drake (MOUNT!)
 					["modelID"] = 20344,
@@ -167,7 +178,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(WOTLK_TIER, {
 		filter(MOUNTS, {
-			tier(WOTLK_TIER, 0.1, {
+			-- 3.0.1
+			tier(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
 				i(43964, {	-- Black Polar Bear / Reins of the Black Polar Bear (MOUNT!)
 					["modelID"] = 27659,
 				}),
@@ -177,8 +189,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(60140, {	-- Grand Caravan Mammoth (MOUNT!)
 					["modelID"] = 27238
 				}),
-			}),
-			tier(WOTLK_TIER, 0.2, {
+			})),
+
+			-- 3.0.2
+			tier(WOTLK_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 3.0.2"} }, {
 				i(44555, {	-- Swift Mooncloth Carpet / Swift Mooncloth Carpet (NOT IN GAME) (MOUNT!)
 					["modelID"] = 44555,
 				}),
@@ -188,18 +202,24 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(44556, {	-- Swift Spellfire Carpet / Swift Spellfire Carpet (NOT IN GAME) (MOUNT!)
 					["modelID"] = 44556,
 				}),
-			}),
-			tier(WOTLK_TIER, 0.3, {
+			})),
+
+			-- 3.0.3
+			tier(WOTLK_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 3.0.3"} }, {
 				i(43963, {	-- Brown Polar Bear / Reins of the Brown Polar Bear (MOUNT!)
 					["modelID"] = 27660,
 				}),
-			}),
-			tier(WOTLK_TIER, 1.0, {
+			})),
+
+			-- 3.1.0
+			tier(WOTLK_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 3.1.0"} }, {
 				i(46101, {	-- Blue Skeletal Warhorse / Blue Skeletal Warhorse (MOUNT!)
 					["modelID"] = 10718,
 				}),
-			}),
-			tier(WOTLK_TIER, 1.2, {
+			})),
+
+			-- 3.1.2
+			tier(WOTLK_TIER, 1.2, bubbleDownSelf({ ["timeline"] = {"created 3.1.2"} }, {
 				i(46755, {	-- Great Golden Kodo / Great Golden Kodo (MOUNT!)
 					["modelID"] = 28556,
 				}),
@@ -230,8 +250,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(46764, {	-- White Skeletal Warhorse / White Skeletal Warhorse (MOUNT!)
 					["modelID"] = 28605
 				}),
-			}),
-			tier(WOTLK_TIER, 1.3, {
+			})),
+
+			-- 3.1.3
+			tier(WOTLK_TIER, 1.3, bubbleDownSelf({ ["timeline"] = {"created 3.1.3"} }, {
 				mount(66122, {	-- Magic Rooster (MOUNT!)
 					["modelID"] = 29344,
 				}),
@@ -241,17 +263,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(66124, {	-- Magic Rooster (MOUNT!)
 					["modelID"] = 29379,
 				}),
-			}),
-			tier(WOTLK_TIER, {
+			})),
+
+			-- 3.3.3
+			tier(WOTLK_TIER, 3.3, bubbleDownSelf({ ["timeline"] = {"created 3.3.3"} }, {
 				mount(75387, {	-- Tiny Mooncloth Carpet (MOUNT!)
 					["modelID"] = 31837,
 				}),
-			})
+			})),
 		}),
 	}),
 	tier(MOP_TIER, {
 		filter(MOUNTS, {
-			tier(MOP_TIER, 0.1, {
+			-- 5.0.1
+			tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
 				i(87785, {	-- Albino Riding Crane / Reins of the Albino Riding Crane (MOUNT!)
 					["modelID"] = 43708,
 				}),
@@ -279,41 +304,51 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(84753, {	-- White Riding Yak / Reins of the White Riding Yak (MOUNT!)
 					["modelID"] = 41089,
 				}),
-			}),
-			tier(MOP_TIER, 0.4, {
+			})),
+
+			-- 5.0.4
+			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = {"created 5.0.4"} }, {
 				i(91016, {	-- Great Red Dragon Turtle / Reins of the Great Red Dragon Turtle (MOUNT!)
 					["modelID"] = 42352,
 				}),
-			}),
-			tier(MOP_TIER, 4.0, {
+			})),
+
+			-- 5.4.0
+			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				i(104011, {	-- Stormcrow / Stormcrow (MOUNT!)
 					["modelID"] = 51323,
 				}),
-			}),
+			})),
 		}),
 	}),
 	tier(WOD_TIER, {
 		filter(MOUNTS, {
-			tier(WOD_TIER, 0.2, {
+			-- 6.0.2
+			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
 				i(116657, {	-- Ancient Leatherhide / Ancient Leatherhide (MOUNT!)
 					["modelID"] = 52373,
 				}),
-			}),
-			tier(WOD_TIER, 2.0, {
+			})),
+
+			-- 6.2.0
+			tier(WOD_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 6.2.0"} }, {
 				i(128480, {	-- Bristling Hellboar / Bristling Hellboar (MOUNT!)
 					["modelID"] = 64726,
 				}),
-			}),
-			tier(WOD_TIER, 2.1, {
+			})),
+
+			-- 6.2.1
+			tier(WOD_TIER, 2.1, bubbleDownSelf({ ["timeline"] = {"created 6.2.1"} }, {
 				mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
 					["modelID"] = 65845,
 				}),
-			}),
+			})),
 		}),
 	}),
 	tier(LEGION_TIER, {
 		filter(MOUNTS, {
-			tier(LEGION_TIER, 0.3, {
+			-- 7.0.3
+			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 				i(137576, {	-- Coldflame Infernal / Dim Coldflame Core (MOUNT!)
 					["modelID"] = 70052,
 				}),
@@ -326,8 +361,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(129744, {	-- Ironbound Wraithcharger / Iron Warhorse (MOUNT!)
 					["modelID"] = 48946,
 				}),
-			}),
-			tier(LEGION_TIER, 2.0, {
+			})),
+
+			-- 7.2.0
+			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
 				i(143752, {	-- Mag'har Direwolf / Sound Test Mount (MOUNT!)
 					["modelID"] = 84468,
 				}),
@@ -337,12 +374,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(239363, {	-- Swift Spectral Hippogryph (MOUNT!)
 					["modelID"] = 75637,
 				}),
-			}),
+			})),
 		}),
 	}),
 	tier(BFA_TIER, {
 		filter(MOUNTS, {
-			tier(BFA_TIER, 0.1, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 				i(156885, {	-- Gold Gladiator's Proto-Drake / Gold Gladiator's Proto-Drake (MOUNT!)
 					--["modelID"] = ,
 				}),
@@ -382,13 +420,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(163186, {	-- Tempestuous Skystallion / Tempestuous Skystallion (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(BFA_TIER, 1.0, {
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
 				i(166417, {	-- Reins of the Onyx War Hyena / Reins of the Onyx War Hyena (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(BFA_TIER, 2.0, {
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 				i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet) (MOUNT!)
 					--["modelID"] = ,
 				}),
@@ -407,12 +449,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(302797, {	-- Swift Spectral Pterrordax (MOUNT!)
 					["modelID"] = 92078,
 				}),
-			}),
+			})),
 		}),
 	}),
 	tier(SL_TIER, {
 		filter(MOUNTS, {
-			tier(SL_TIER, 0.1, {
+			-- 9.0.1
+			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				i(182083, {	-- Bonecleaver's Skullboar / Bonecleaver's Skullboar (MOUNT!)
 					--["modelID"] = ,
 				}),
@@ -437,13 +480,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(184035, {	-- Silessa's Harness (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(SL_TIER, 0.5, {
+			})),
+
+			-- 9.0.5
+			tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				mount(347813, {	-- Fireplume Phoenix (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(SL_TIER, 1.0, {
+			})),
+
+			-- 9.1.0
+			tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 9.1.0" } }, {
 				i(186639, {	-- Pilfered Gearglider / Pilfered Gearglider (MOUNT!)
 					--["modelID"] = ,
 				}),
@@ -456,21 +503,27 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(186491, {	-- Spring Wilderling / Spring Wilderling Harness (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(SL_TIER, 1.5, {
+			})),
+
+			-- 9.1.5
+			tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 9.1.5" } }, {
 				mount(350529, {	-- NAK's Test Mount [DNT] (MOUNT!)
 					--["modelID"] = ,
 				}),
-			}),
-			tier(SL_TIER, 2.0, {
+			})),
+
+			-- 9.2.0
+			tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 9.2.0" } }, {
 				i(187674, {	-- [PH] Progenitor Jellyfish (Dark) (MOUNT!)
 					--["modelID"] = ,
 				}),
 				mount(356802, {	-- Holy Lightstrider (MOUNT!)
 					["modelID"] = 101577,
 				}),
-			}),
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			})),
+
+			-- 9.2.5
+			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
 				mount(367190, {	-- [DND] Test Mount JZB (MOUNT!)
 					["modelID"] = 88719,
 				}),
