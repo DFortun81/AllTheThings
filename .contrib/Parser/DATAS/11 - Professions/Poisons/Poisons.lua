@@ -1,5 +1,5 @@
 -- #if BEFORE 3.0.2
-profession(40, {	-- Poisons
+profession(POISONS, {
 	["timeline"] = { "removed 3.0.2" },
 	["classes"] = { ROGUE },
 	["groups"] = {
