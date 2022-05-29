@@ -8215,8 +8215,12 @@ app.ShowIfReplayableQuest = function(data)
 	return true;
 end
 local function QueryCompletedQuests()
-	local t = CompletedQuests;
 	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
+	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
+	if not freshCompletes or #freshCompletes == 0 then
+		return;
+	end
+	local t = CompletedQuests;
 	-- print("total completed quests new/previous",#freshCompletes,rawget(t, "_TOTAL") or 0)
 	local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
 	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
