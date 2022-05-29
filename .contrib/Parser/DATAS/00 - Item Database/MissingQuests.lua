@@ -12,8 +12,6 @@ q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(179),	-- Dwarven Outfitters,		TBC: Dwarven Outfitters,		CLASSIC: Dwarven Outfitters
-q(183),	-- The Boar Hunter,		TBC: The Boar Hunter,		CLASSIC: The Boar Hunter
 q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
 q(200),	-- Bookie Herod,		TBC: Bookie Herod,		CLASSIC: Bookie Herod
 q(203),	-- The Second Rebellion,		TBC: The Second Rebellion,		CLASSIC: The Second Rebellion
@@ -28,7 +26,6 @@ q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(282),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
@@ -43,8 +40,6 @@ q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Hea
 q(395),	-- Brotherhood's End,		TBC: Brotherhood's End,		CLASSIC: Brotherhood's End
 q(399),	-- Humble Beginnings,		TBC: Humble Beginnings,		CLASSIC: Humble Beginnings
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(419),	-- The Lost Pilot,		TBC: The Lost Pilot,		CLASSIC: The Lost Pilot
-q(420),	-- Senir's Observations,		TBC: Senir's Observations,		CLASSIC: Senir's Observations
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
@@ -463,7 +458,6 @@ q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
 q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
 q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
-q(3364),	-- Scalding Mornbrew Delivery,		TBC: Scalding Mornbrew Delivery,		CLASSIC: Scalding Mornbrew Delivery
 q(3383),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3384),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3401),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -1554,10 +1548,8 @@ q(32832),	-- Taran Zhu and Dezco Scene
 7.3.0.24473
 q(8971),	-- REUSE,		TBC: REUSE,		CLASSIC: REUSE
 q(9065),	-- The Pattymac Special,		TBC: The "Chow" Quest (123)aa,		CLASSIC: The "Chow" Quest (123)aa
-q(36939),	-- [UNUSED]Blood of the Annihilan
 q(37042),	--
 q(37139),	--
-q(37175),	-- Craig's Test Quest Again!
 q(37200),	--
 q(37258),	--
 q(37267),	--
@@ -1567,35 +1559,14 @@ q(37527),	--
 q(37529),	--
 q(37532),	-- [UNUSED]Rolling With the Tidestone
 q(37643),	--
-q(37691),	-- [DEPRECATED]The Ancient One
-q(37697),	-- Treasure Goblin
 q(37805),	-- Goblin Looted
-q(37825),	-- Vignette Placeholder
-q(37826),	-- Azsuna - Treasure 003 - Plundered Artifacts
-q(37827),	-- Azsuna - Treasure 005 - Discarded Flotsam
-q(37833),	-- Azsuna - Treasure 010 - Offerings To Elune
-q(37843),	-- Mana Bark
-q(37844),	-- Essence of the Unbound
-q(37845),	-- Rift Rippers
 q(37846),	--
 q(37854),	--
-q(37867),	-- Crystalbeard
-q(37927),	-- We Meet at Light's Hope
 q(37929),	--
-q(37930),	-- Whelp? That Happened.
 q(37931),	--
 q(37936),	--
 q(37954),	--
-q(37962),	-- REUSE
 q(37971),	--
-q(37982),	-- Art Tracker - Ashbringer - Tier 0 - Base
-q(37983),	-- Art Tracker - Ashbringer - Tier 1 - Holy
-q(37984),	-- Art Tracker - Ashbringer - Tier 1 - Fire
-q(37985),	-- Art Tracker - Ashbringer - Tier 1 - Corrupted
-q(37986),	-- Art Tracker - Ashbringer - Tier 2 - Corrupted
-q(37987),	-- Art Tracker - Ashbringer - Tier 2 - Fire
-q(37988),	-- Art Tracker - Ashbringer - Tier 2 - Holy
-q(38000),	-- Azsuna - Treasure 001 - Drowned Ruins
 q(38011),	--
 q(38012),	--
 q(38016),	--
@@ -1648,26 +1619,14 @@ q(38105),	-- Gossip Test Case 3
 q(38106),	-- Greeting Text Test Case 1
 q(38107),	-- Greeting Text Test Case 2
 q(38108),	-- Greeting Text Test Case 3
-q(38215),	-- 7.0 Stormheim - Treasure 015 - Haustvald - ZTO
 q(38218),	-- Preserving The Lore
 q(38219),	-- Defending The Grove
-q(38220),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - Aggramar's Vault
-q(38227),	-- A True Leader Inspires Others
 q(38228),	--
 q(38230),	--
 q(38233),	--
-q(38278),	-- Vignette: Kraw the Mystic
-q(38279),	-- The Royal Taster
-q(38281),	-- Treasure: Spoils of the Burning Crusade
 q(38284),	-- Seeds of Remedy
 q(38285),	-- Menacing Sprites
-q(38309),	-- Content Perk: The Light Reveals
-q(38310),	-- Content Perk: Righteous Strength
-q(38311),	-- Content Perk: Call of the Highlord
-q(38313),	-- [PH] Worg Pelts
-q(38314),	-- Vignette: Hidden Demon
 q(38319),	--
-q(38321),	-- Blackbeak Overlook
 q(38325),	--
 q(38326),	--
 q(38327),	--
@@ -1681,46 +1640,23 @@ q(38340),	--
 q(38341),	-- Halting the Nightmare
 q(38353),	-- Rescued From Darkness
 q(38364),	--
-q(38368),	-- Vignette: Hidden Demon
 q(38373),	--
 q(38375),	--
-q(38380),	-- Vignette: Hivequeen Zsala
 q(38385),	--
-q(38392),	-- 7.0 Val'sharah - Treasure 014 - Malorne's Refuge - twh
-q(38393),	-- 7.0 Val'sharah - Treasure 015 - Malorne's Refuge - twh
-q(38398),	-- Vignette: Helyra's Kraken
 q(38403),	--
 q(38409),	--
 q(38418),	--
 q(38429),	--
 q(38432),	--
-q(38434),	-- The Ashbringer
 q(38450),	--
-q(38451),	-- Vignette: Geir Gutslice
-q(38452),	-- Vignette: Hidden Demon
-q(38454),	-- Unfortunate Circumstances
 q(38456),	--
 q(38464),	--
-q(38465),	-- Vignette: Shyama the Dreaded
 q(38469),	-- Bonus Objective: The Moonclaw Vale
-q(38470),	-- Rampant Mandragora
-q(38471),	-- Elune's Kiss
 q(38484),	--
-q(38491),	-- Infected Mushroom
 q(38492),	--
 q(38493),	--
-q(38494),	-- 7.0 Stormheim - Treasure 016 - Bear Cave - ZTO
 q(38497),	--
-q(38504),	-- Shrine of the Bear Twins
-q(38508),	-- Shrine of the Bear Twins - Reward
-q(38509),	-- 7.0 Stormheim - Treasure 021 - Helheim - ZTO
-q(38511),	-- 7.0 Stormheim - Treasure 022 - Helheim - ZTO
-q(38512),	-- Oakleaf
-q(38517),	-- Tayla's Rescue
 q(38520),	--
-q(38521),	-- Tayla's Rescue - Reward
-q(38535),	-- Brimbil's Journey
-q(38548),	-- Brimbil's Journey - Reward
 q(38553),	--
 q(38554),	--
 q(38555),	--
@@ -1728,7 +1664,6 @@ q(38556),	--
 q(38590),	--
 q(38606),	--
 q(38608),	-- Reclaim Valhallas
-q(38610),	-- Arauk Nashal 70:JP3 - Gates of Valhallas -Tracking quest - Titan Vehicle - Bonus Objective
 q(38625),	-- Hook & Sinker
 q(38627),	-- Worgen Stalkers (Horde Only)
 q(38630),	-- Horde Kill Squad (Alliance Only)
@@ -1740,56 +1675,28 @@ q(38653),	--
 q(38658),	-- Aid For the Wounded
 q(38660),	-- Cleansing the Corruption
 q(38661),	-- Nightmare Bombs
-q(38664),	-- Tracking Quest: Saved Family 1
-q(38665),	-- Tracking Quest: Saved Family 2
-q(38667),	-- The Demon's Trail
-q(38668),	-- Our Last Hope
-q(38670),	-- Goredome 2
 q(38673),	-- The Wormtalon Crone
-q(38674),	-- Malfurion's Cure
-q(38688),	-- Hope Remains
 q(38693),	-- [DEPRECATED] Kill Feral Dogs
-q(38699),	-- Competitive Exorcise
 q(38706),	--
-q(38708),	-- Purge the River
-q(38730),	-- Farm Defense
-q(38734),	-- Banshee Queen
 q(38737),	-- An End To War
 q(38745),	-- Hard Lessons
 q(38824),	--
-q(38827),	-- Your Will Be Done
 q(38835),	--
-q(38838),	-- Vignette: Enraged Earthservant
-q(38840),	-- Fishy Business
-q(38841),	-- Die, Fish-People
-q(38844),	-- Rally the Wilds Buff Received
 q(38846),	--
 q(38848),	--
-q(38850),	-- The Fate of Tirion Fordring
-q(38856),	-- Holy Retribution
 q(38859),	--
-q(38867),	-- Inspiration Strikes
 q(38875),	--
 q(38879),	--
 q(38880),	--
 q(38881),	--
 q(38883),	--
 q(38884),	--
-q(38885),	-- Shivering Ashmaw Cub
 q(38891),	--
-q(38895),	-- 7.0 Val'sharah - Vignette: Swiftflight - Treasure001 - twh
-q(38896),	-- Tearing down the Legion
-q(38902),	-- Vignette: Coruscating Bloom
 q(38905),	--
-q(38906),	-- To the Rescue
 q(38908),	--
-q(38914),	-- Secrets of Highmountain
 q(38918),	--
 q(38920),	--
 q(38921),	--
-q(38937),	-- Unused - Wraith Zapper
-q(38938),	-- Unbearable
-q(38940),	-- First Mission Complete
 q(38942),	--
 q(38973),	--
 q(38984),	--
@@ -1798,156 +1705,36 @@ q(38986),	--
 q(38987),	--
 q(38988),	--
 q(38991),	--
-q(38992),	-- Mograine's Oath
-q(38993),	-- First Mission Sent
 q(38998),	--
 q(38999),	--
-q(39005),	-- Second Mission Sent
-q(39006),	-- Second Mission Complete
 q(39008),	--
-q(39009),	-- Third Mission Complete
-q(39010),	-- Third Mission Sent
-q(39016),	-- Unused - The Fish Must Flow
 q(39028),	-- REUSE ME
-q(39030),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - God-King Intro
 q(39053),	--
 q(39064),	--
 q(39065),	--
 q(39066),	-- [PH] Defeat the Dark Val'kyr
 q(39091),	--
-q(39094),	-- 7.0 Val'sharah - Village - Small Treasure 001 - twh
-q(39095),	-- 7.0 Val'sharah - Village - Small Treasure 002 - twh
-q(39098),	-- 7.0 Val'sharah - Village - Small Treasure 003 - twh
-q(39099),	-- 7.0 Val'sharah - Hollow - Small Treasure 000 - twh
-q(39100),	-- 7.0 Val'sharah - Hollow - Small Treasure 001 - twh
-q(39101),	-- 7.0 Val'sharah - Hollow - Small Treasure 002 - twh
-q(39103),	-- 7.0 Val'sharah - Rook - Small Treasure 000 - twh
-q(39104),	-- 7.0 Val'sharah - Rook - Small Treasure 001 - twh
-q(39105),	-- 7.0 Val'sharah - Rook - Small Treasure 002 - twh
-q(39106),	-- 7.0 Val'sharah - Rook - Small Treasure 003 - twh
-q(39109),	-- 7.0 Val'sharah - Rook - Medium Treasure 001 - twh
-q(39110),	-- 7.0 Val'sharah - Rook - Large Treasure 000 - twh
-q(39111),	-- 7.0 Val'sharah - Ruins - Small Treasure 000 - twh
-q(39112),	-- 7.0 Val'sharah - Ruins - Small Treasure 001 - twh
-q(39113),	-- 7.0 Val'sharah - Ruins - Small Treasure 002 - twh
-q(39114),	-- 7.0 Val'sharah - Ruins - Medium Treasure 000 - twh
 q(39115),	--
-q(39116),	-- DEPRECATED
-q(39118),	-- Lower Citadel Speed Tracking
 q(39126),	-- Cleansing the Fountain
-q(39132),	-- The New Chieftain
-q(39135),	-- A Sundered Tribe
-q(39136),	-- Unused
-q(39138),	-- March Forth and Conquer
 q(39139),	--
 q(39140),	--
 q(39141),	--
 q(39146),	--
 q(39148),	--
 q(39150),	--
-q(39151),	-- Forging the Artifact
-q(39152),	-- Felwrought Annihilator Looted
-q(39156),	-- Uther's Spirit Honored
-q(39158),	-- Vignette: Rally the Wilds
-q(39190),	-- DEPRECATED
 q(39194),	--
-q(39200),	-- Lynore's Fury
-q(39205),	-- The Twisted Garden
 q(39213),	--
 q(39215),	--
-q(39216),	-- Ready to forge Tracking Bit
-q(39234),	-- Peak Urgency
-q(39269),	-- Never Alone
 q(39270),	--
-q(39271),	-- First Mission Sent
-q(39273),	-- First Mission Complete
 q(39281),	--
-q(39282),	-- Second Mission Complete
 q(39284),	--
-q(39285),	-- Second Mission Sent
 q(39286),	-- A Gruesome Task
 q(39291),	--
 q(39298),	--
-q(39303),	-- Third Mission Sent
-q(39304),	-- Third Mission Complete
 q(39319),	--
 q(39320),	--
-q(39324),	-- Through the Portal
-q(39352),	-- Extinguishing the Sentinels
-q(39353),	-- Test - New
-q(39382),	-- Perrexx the Corruptor
-q(39397),	-- Invasion Experience Received
-q(39420),	-- Xavius Event TRACKING
-q(39428),	-- Satyr Line TRACKING
-q(39460),	-- Vale POI Event TRACKING
-q(39464),	-- Artifact Received
-q(39467),	-- Vignette: Sorcery and Suction
-q(39507),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin
-q(39534),	-- FLAG - Enchanting Research S/1/1/1
-q(39535),	-- FLAG - Enchanting Research S/1/1/2
-q(39536),	-- FLAG - Enchanting Research S/1/1/3
-q(39537),	-- FLAG - Enchanting Research S/1/2/1
-q(39538),	-- FLAG - Enchanting Research S/1/2/2
-q(39539),	-- FLAG - Enchanting Research S/1/2/3
-q(39540),	-- FLAG - Enchanting Research S/1/3/1
-q(39541),	-- FLAG - Enchanting Research S/1/3/2
-q(39542),	-- FLAG - Enchanting Research S/1/3/3
-q(39543),	-- FLAG - Enchanting Research S/2/3/3
-q(39544),	-- FLAG - Enchanting Research S/2/3/2
-q(39545),	-- FLAG - Enchanting Research S/2/3/1
-q(39546),	-- FLAG - Enchanting Research S/2/2/3
-q(39547),	-- FLAG - Enchanting Research S/2/2/2
-q(39548),	-- FLAG - Enchanting Research S/2/2/1
-q(39549),	-- FLAG - Enchanting Research S/2/1/3
-q(39550),	-- FLAG - Enchanting Research S/2/1/2
-q(39551),	-- FLAG - Enchanting Research S/2/1/1
-q(39552),	-- FLAG - Enchanting Research S/3/1/1
-q(39553),	-- FLAG - Enchanting Research S/3/1/2
-q(39554),	-- FLAG - Enchanting Research S/3/1/3
-q(39555),	-- FLAG - Enchanting Research S/3/2/1
-q(39556),	-- FLAG - Enchanting Research S/3/2/2
-q(39557),	-- FLAG - Enchanting Research S/3/2/3
-q(39558),	-- FLAG - Enchanting Research S/3/3/1
-q(39559),	-- FLAG - Enchanting Research S/3/3/2
-q(39560),	-- FLAG - Enchanting Research S/3/3/3
 q(39564),	-- Vignette: Murktide Alpha
-q(39589),	-- A Mysterious Summons
-q(39618),	-- FLAG - Enchanting Research G/1/1/1
-q(39619),	-- FLAG - Enchanting Research G/1/1/2
-q(39620),	-- FLAG - Enchanting Research G/1/1/3
-q(39621),	-- FLAG - Enchanting Research G/1/2/1
-q(39622),	-- FLAG - Enchanting Research G/1/2/2
-q(39623),	-- FLAG - Enchanting Research G/1/2/3
-q(39624),	-- FLAG - Enchanting Research G/1/3/1
-q(39625),	-- FLAG - Enchanting Research G/1/3/2
-q(39626),	-- FLAG - Enchanting Research G/1/3/3
-q(39627),	-- FLAG - Enchanting Research G/2/1/1
-q(39628),	-- FLAG - Enchanting Research G/2/1/2
-q(39629),	-- FLAG - Enchanting Research G/2/1/3
-q(39630),	-- FLAG - Enchanting Research G/2/2/1
-q(39631),	-- FLAG - Enchanting Research G/2/2/2
-q(39632),	-- FLAG - Enchanting Research G/2/2/3
-q(39633),	-- FLAG - Enchanting Research G/2/3/1
-q(39634),	-- FLAG - Enchanting Research G/2/3/2
-q(39635),	-- FLAG - Enchanting Research G/2/3/3
-q(39636),	-- FLAG - Enchanting Research G/3/1/1
-q(39637),	-- FLAG - Enchanting Research G/3/1/2
-q(39638),	-- FLAG - Enchanting Research G/3/1/3
-q(39639),	-- FLAG - Enchanting Research G/3/2/1
-q(39640),	-- FLAG - Enchanting Research G/3/2/2
-q(39641),	-- FLAG - Enchanting Research G/3/2/3
-q(39642),	-- FLAG - Enchanting Research G/3/3/1
-q(39643),	-- FLAG - Enchanting Research G/3/3/2
-q(39644),	-- FLAG - Enchanting Research G/3/3/3
-q(39647),	-- Get the Little Ones!
-q(39687),	-- Harbingers of the Past
-q(39693),	-- The Path of Huln
 q(39715),	-- Menacing Grumplings
-q(39717),	-- Scouting Mission Complete
-q(39730),	-- Scouting Mission Complete
-q(39732),	-- Scouting Mission Complete
-q(39734),	-- Scouting Mission Complete
-q(39745),	-- Khadgar Teleport
 q(39747),	--
 q(39754),	--
 q(39755),	--
@@ -1955,13 +1742,7 @@ q(39760),	--
 q(39778),	--
 q(39779),	--
 q(39784),	-- Beastmaster Pao'lek
-q(39785),	-- [PH] Walrus Tusks
-q(39794),	-- Lord Maxwell Tyrosus Slotted
-q(39795),	-- Vindicator Boros Slotted
 q(39797),	-- Aponi Brightmane Slotted
-q(39798),	-- Lady Liadrin Slotted
-q(39805),	-- Drogbar Spellcaster
-q(39807),	-- The Snowbringer
 q(39838),	-- Fire!
 q(39839),	-- Mysterious Dust
 q(39840),	-- The Council's Approval
@@ -1970,14 +1751,10 @@ q(39842),	-- One Mage's Trash
 q(39843),	-- The Muck Stops Here
 q(39844),	-- Cold Hard Coin
 q(39845),	-- The Obliterum Forge
-q(39846),	-- 7.0 Dalaran - Treasure 001 - Burnt Cart
-q(39854),	-- Curse of the Sea
 q(39863),	-- Trial By Fel Fire
-q(39871),	-- Huntress Ellandryn
 q(39888),	--
 q(39893),	--
 q(39894),	--
-q(39896),	-- DEPRECATED: The Ringer
 q(39897),	--
 q(39898),	--
 q(39899),	--
@@ -1992,44 +1769,15 @@ q(39915),	--
 q(39917),	--
 q(39922),	--
 q(39924),	--
-q(39925),	-- Emissary Azathar Looted
-q(39926),	-- Lord Malus Looted
-q(39927),	-- Wingterror Ikzil Looted
-q(39928),	-- Uther's Spirit Honored
-q(39929),	-- Uther's Spirit Honored
-q(39930),	-- Uther's Spirit Honored
-q(39969),	-- Kill Azshara
-q(39979),	-- DEPRECATED
-q(39980),	-- Highlord Darion Mograine Slotted
-q(39981),	-- Thassarian Slotted
-q(39982),	-- Koltira Deathweaver Slotted
-q(39989),	-- Keepers of the Hammer
-q(39993),	-- Abandoned Fishing Pole
 q(40027),	--
-q(40066),	-- 7.0 Stormheim - Treasure 032 - Blackbeak Overlook - twh
-q(40067),	-- 7.0 Stormheim - Vignette: Boulderfall - twh
-q(40097),	-- 7.0 Stormheim - Vignette: Sunbreeze - twh
 q(40098),	--
-q(40100),	-- 7.0 Stormheim - Vignette: Eileen the Raven - twh
 q(40101),	--
-q(40103),	-- 7.0 ALPHA DK TEST QUEST
-q(40110),	-- Disrupt the Inkbinders
-q(40124),	-- Gift of the Storm Cooldown
 q(40128),	--
 q(40129),	-- Repairing the Source
 q(40150),	--
-q(40164),	-- REUSE
 q(40226),	--
 q(40239),	--
-q(40240),	-- Looted Blacksmith Defender's Cache
-q(40245),	-- Looted Tailoring Defender's Cache
-q(40246),	-- Looted Leatherworking Defender's Cache
-q(40250),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 1
-q(40258),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 2
-q(40260),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 3
 q(40271),	--
-q(40272),	-- 7.0 Val'sharah - Village - Medium Treasure 001 - twh
-q(40273),	-- 7.0 Val'sharah - Temple of Elune - Medium Treasure 001 - bic
 q(40275),	--
 q(40281),	--
 q(40283),	--
@@ -2043,62 +1791,16 @@ q(40291),	--
 q(40292),	--
 q(40294),	--
 q(40295),	--
-q(40296),	-- Tracking Quest: Corridor
-q(40305),	-- Barracks Drop 01 Tracking Event
 q(40309),	--
-q(40311),	-- Titanic Showdown
-q(40312),	-- A Timely Opportunity
-q(40313),	-- Barracks Drop 02 Tracking Event
 q(40318),	--
 q(40335),	-- Sashj'tar Accord DISABLED
-q(40343),	-- Magni/Eitrigg Meetup Seen
-q(40369),	-- Artifact XP - Ironbranch
-q(40380),	-- Artifact XP - Thondrax
-q(40381),	-- Artifact XP - Darkfiend Assassin
-q(40382),	-- Artifact XP - Jinikki the Puncturer
-q(40383),	-- Artifact XP - Kiranys Duskwhisper
 q(40387),	--
 q(40398),	-- Shaman Shrine - Stormheim Water 01 - DGK
-q(40399),	-- 7.0 Suramar - Vignette: Sailor's Nightmare - twh
-q(40407),	-- The Fate of Azeroth
 q(40413),	-- Amateur Hunters
 q(40420),	-- Felsoul Hold
 q(40421),	--
 q(40423),	-- Unethical Adventurers
-q(40425),	-- Artifact XP - Pollous the Fetid
-q(40426),	-- Artifact XP - Kalazzius the Guileful
-q(40427),	-- Artifact XP - Grelda the Crone
-q(40428),	-- Artifact XP - Henry
-q(40429),	-- Artifact XP - Perrexx
-q(40430),	-- Artifact XP - Wraithtalon
-q(40431),	-- Artifact XP - Dreadbog
-q(40432),	-- Artifact XP - Razzok
-q(40433),	-- Artifact XP - Lyrath Moonfeather
-q(40434),	-- Artifact XP - Tur'xoran
-q(40435),	-- Artifact XP - Wingterror Ikzil
-q(40436),	-- Artifact XP - Thaon Moonclaw
-q(40437),	-- Artifact XP - Kagraxxis the Corruptor
-q(40438),	-- Artifact XP - Xandris the Betrayer
-q(40439),	-- Artifact XP - Sirius Ebonwing
-q(40440),	-- Artifact XP - Rotbeak
-q(40441),	-- Artifact XP - Lieutenant Desdel Stareye
-q(40442),	-- Artifact XP - Varethos
-q(40443),	-- Artifact XP - Kester Farseeker
-q(40444),	-- Artifact XP - Trelan Shieldbreaker
-q(40445),	-- Artifact XP - Starlys Strongbow
-q(40446),	-- Artifact XP - Gravax the Desecrator
-q(40447),	-- Artifact XP - Verus Shadowfall
-q(40448),	-- Artifact XP - Araxxas
-q(40449),	-- Artifact XP - Xalythar the Tormentor
-q(40450),	-- Artifact XP - Magula
-q(40451),	-- Artifact XP - Morphael
-q(40452),	-- Artifact XP - Theryssia
-q(40453),	-- Artifact XP - Darkest Fear
-q(40454),	-- Artifact XP - Imagined Horror
-q(40455),	-- Artifact XP - Seersei
-q(40456),	-- Artifact XP - Gorebeak
 q(40501),	-- REUSEME_40501
-q(40502),	-- Test - Fireball
 q(40548),	--
 q(40549),	--
 q(40550),	--
@@ -2108,36 +1810,10 @@ q(40554),	--
 q(40555),	--
 q(40563),	--
 q(40564),	-- Shoe Shine Kit Tracking Quest
-q(40565),	-- REUSEME
 q(40566),	--
-q(40574),	-- Golganneth Shrine Cleansed
-q(40590),	-- Warrior Inbound
-q(40591),	-- The Second Valarjar
 q(40592),	--
-q(40622),	-- Aman'thul Shrine Cleansed
-q(40628),	-- Corrupted Ashbringer
-q(40629),	-- Fiery Ashbringer
-q(40630),	-- Shattered Ashbringer
-q(40641),	-- Deprecated
 q(40648),	--
-q(40662),	-- Shattered Chosen
-q(40663),	-- Fiery Chosen
-q(40664),	-- Corrupted Chosen
-q(40685),	-- Into the Mouth of the Nether
-q(40689),	-- Reward: Deadwind Harvester
-q(40690),	-- Reward: Staff of Sargeras
-q(40691),	-- Reward: Skull of the Man'ari
-q(40699),	-- Credit - Scenario Complete
 q(40700),	-- Xalethar
-q(40707),	-- Shadow Chosen
-q(40719),	-- DEPRECATE- REUSE
-q(40720),	-- DEPRECATE - REUSE
-q(40721),	-- DEPRECATE - REUSE
-q(40726),	-- Test Reward Quest
-q(40728),	-- Wormgut's Quest
-q(40739),	-- FLAG - Reaves Thermal Anvil Module
-q(40764),	-- Tracking Quest for Latosius Challenge 1
-q(40766),	-- Charfeather
 q(40769),	-- Blackroot Idols
 q(40770),	-- Keeper's Request
 q(40771),	-- Wild By Nature
@@ -2152,13 +1828,10 @@ q(40799),	--
 q(40800),	--
 q(40802),	--
 q(40803),	-- REUSE ME
-q(40804),	-- Li Li Slotted
-q(40805),	-- Meet The Master
 q(40806),	-- Arcano-Plasm
 q(40807),	-- Clearing the Tunnels
 q(40808),	-- Fuel Transfer Worker
 q(40809),	--
-q(40810),	-- Tracking Quest: Dorion Fed
 q(40811),	-- Not to Scale
 q(40812),	-- Trident True
 q(40813),	-- It's in the Glands
@@ -2167,7 +1840,6 @@ q(40826),	--
 q(40827),	-- Clearing the Tunnels
 q(40828),	-- Fuel Transfer Worker
 q(40831),	-- Save the Crumbling Coast
-q(40833),	-- Mograine's Recruit
 q(40836),	--
 q(40841),	-- The Aid of Val'sharah
 q(40845),	-- Coastal Healing
@@ -2177,73 +1849,37 @@ q(40884),	-- Corrupted Into Crystal
 q(40885),	-- Transplanting Their Cores
 q(40886),	-- Verdant Search
 q(40887),	--
-q(40888),	-- Hammer of Khaz'goroth Actived
-q(40889),	-- Tidestone of Golganneth Activated
-q(40891),	-- Aegis of Aggramar Activated
 q(40895),	-- The Haunted Mire
 q(40899),	--
 q(40903),	--
 q(40922),	-- Tracking Quest: Mephistos 2
 q(40926),	--
 q(40928),	--
-q(40939),	-- Vignette: Stormwing Matriarch
-q(40940),	-- Test Quest Two
 q(40948),	--
 q(40979),	--
 q(40981),	--
 q(40984),	--
-q(40992),	-- Honor Among Thieves
-q(40998),	-- Rendezvous
 q(40999),	--
-q(41012),	-- Kirin Tor Showdown Seen
 q(41015),	-- Artifacts Need Artificers
 q(41017),	-- Empowering Your Artifact
-q(41018),	-- UNUSED - Agent of Aid
 q(41020),	--
-q(41029),	-- Tracking Quest for Latosius Challenge 2
 q(41041),	-- Sashj'tar Allies DISBALED
-q(41042),	-- Champion Chomper
 q(41046),	--
-q(41048),	-- 7.0 Suramar - Treasure 003 - Jandvik - twh
-q(41049),	-- 7.0 Suramar - Treasure 004 - Jandvik - twh
-q(41050),	-- 7.0 Suramar - Treasure 005 - Jandvik - twh
-q(41051),	-- 7.0 Suramar - Treasure 006 - Jandvik - twh
-q(41058),	-- The Forge of Guardians
 q(41061),	--
-q(41065),	-- Troubling News
-q(41082),	-- Reward: Aluneth
-q(41083),	-- Reward: Felo'melorn
-q(41084),	-- Reward: Ebonchill
 q(41088),	--
 q(41092),	-- Forge Guards Move
-q(41101),	-- Lady S'theno Calls
-q(41102),	-- Trusted Lieutenant
-q(41103),	-- Unleashed Havoc
-q(41126),	-- 7.0 Suramar - Vignette: Flotsam - twh
-q(41128),	-- Valhallas - Vignette: Earlnoc - MRN
 q(41130),	--
 q(41131),	--
 q(41132),	--
 q(41133),	--
-q(41134),	-- 7.0 Suramar - Vignette: Jetsam - twh
-q(41142),	-- 7.0 Suramar - Vignette: Khory - twh
 q(41147),	-- The Other City of Mages
 q(41211),	-- Neltharion's Lair: Neltharion's Treasure
-q(41213),	-- Artifact XP - Cho'Zok
-q(41229),	-- Tracking Quest: Chen Obtained
 q(41236),	--
-q(41241),	-- Cursed Queenfish Needed
 q(41245),	--
 q(41247),	--
-q(41248),	-- DEPRECATED
 q(41249),	--
-q(41250),	-- DEPRECATED
-q(41251),	-- DEPRECATED
 q(41281),	-- Mounted Shark Fishing
-q(41284),	-- Tracking Quest: The Monkey King Obtained
-q(41285),	-- Tracking Quest: Li Li Obtained
 q(41325),	--
-q(41328),	-- Enhancement Artifact Chosen
 q(41341),	--
 q(41348),	--
 q(41365),	--
@@ -2254,12 +1890,10 @@ q(41404),	--
 q(41417),	--
 q(41419),	--
 q(41429),	--
-q(41431),	-- Legion Portal
 q(41456),	--
 q(41476),	--
 q(41477),	--
 q(41543),	--
-q(41559),	-- Where's Our Wine? - Tracking
 q(41576),	--
 q(41577),	--
 q(41578),	--
@@ -2280,59 +1914,25 @@ q(41593),	--
 q(41594),	--
 q(41595),	--
 q(41608),	-- DEPREACTED: Huge Highmountain Salmon
-q(41681),	-- 7.0 Suramar - Treasure 007 - Jandvik - twh
-q(41682),	-- 7.0 Suramar - Treasure 008 - Sashj'tar Ruins - twh
 q(41683),	--
-q(41688),	-- Ursol
 q(41693),	--
 q(41698),	--
 q(41757),	--
 q(41758),	--
 q(41765),	--
 q(41779),	-- DANGER: Xavrix
-q(41817),	-- Skull of the Taskmaster
-q(41820),	-- Walk Without Rhythm
-q(41822),	-- Following his Hoofsteps
-q(41823),	-- Ashes to Ashes
-q(41825),	-- Winged Menace
 q(41827),	--
-q(41829),	-- The Darkfeather Scout
 q(41830),	--
-q(41831),	-- Taurson's Punch Out
-q(41832),	-- White Water Terror
-q(41833),	-- Grmlrml's Last Ride
-q(41837),	-- Rockaway Bully
-q(41842),	-- Bottom of the Food Chain
 q(41843),	--
-q(41848),	-- Legion Invaders
-q(41856),	-- Legion Portal
 q(41857),	-- Neltharion's Lair: Stonedark Slaves
-q(41859),	-- Rescue Efforts
-q(41872),	-- [DEPRECATED]
-q(41874),	-- Talked to Tyrande to Start Events
-q(41875),	-- Found First Clue
-q(41876),	-- Umbraxis Tracker
 q(41887),	--
 q(41894),	--
 q(41902),	--
-q(41903),	-- Gathering the Pieces
 q(41912),	--
 q(41913),	--
-q(41917),	-- Vignette: Bear Cub
 q(41923),	--
 q(41928),	--
-q(41932),	-- Legion Portal
-q(41933),	-- Legion Portal
-q(41942),	-- Legion Portal
-q(41947),	-- Legion Portal
-q(41951),	-- Legion Portal
-q(41952),	-- Rescue Efforts
-q(41953),	-- Vis'ileth
-q(41954),	-- Rescue Efforts
-q(41959),	-- Legion Portal
-q(41960),	-- Rescue Efforts
 q(41962),	--
-q(41963),	-- Knowledge Unlock Daily Tracking Quest
 q(41968),	--
 q(41969),	--
 q(41970),	--
@@ -2343,20 +1943,6 @@ q(41974),	--
 q(41975),	--
 q(41976),	--
 q(41977),	--
-q(41978),	-- A Strong Defense
-q(41979),	-- Rescue Efforts
-q(41982),	-- Book Read Tracking Quest
-q(41983),	-- [NYI] Bear Necessities
-q(41986),	-- REUSE
-q(41987),	-- Garn
-q(41988),	-- A Strong Defense
-q(41991),	-- Rescue Efforts
-q(41994),	-- Legion Portal
-q(41997),	-- A Strong Defense
-q(42003),	-- Kept Secret, Kept Safe
-q(42012),	-- A Gift of Time
-q(42029),	-- Rise, Champions [NYI]
-q(42030),	-- Building Our Troops [NYI]
 q(42052),	-- The Shade of Xavius
 q(42057),	--
 q(42059),	--
@@ -2367,7 +1953,6 @@ q(42095),	--
 q(42099),	--
 q(42106),	-- Party Crasher
 q(42109),	--
-q(42113),	-- Tracking Quest
 q(42121),	--
 q(42122),	--
 q(42144),	--
@@ -2379,7 +1964,6 @@ q(42161),	--
 q(42162),	--
 q(42163),	--
 q(42164),	--
-q(42167),	-- Blood Gather Bit
 q(42179),	-- [NYI] Pump it Up Again
 q(42180),	--
 q(42195),	--

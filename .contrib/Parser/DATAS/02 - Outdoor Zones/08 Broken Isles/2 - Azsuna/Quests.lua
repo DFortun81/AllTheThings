@@ -806,7 +806,6 @@ root("Zones", m(BROKEN_ISLES, {
 			q(43561),	-- I Believe I Can Fly!
 			q(40133),	-- Scrap of Pants
 			q(37660),	-- The Scythe of Souls
-			q(37930),	-- Whelp? That Happened.
 			--]]
 		}),
 	}),

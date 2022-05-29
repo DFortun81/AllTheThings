@@ -1076,7 +1076,6 @@ _.Zones =
 				q(40540),	-- Come at Me, Brul
 				q(47767),	-- Death Metal Knight
 				q(39125),	-- Demon Destroyer
-				q(40110),	-- Disrupt the Inkbinders
 				q(47050),	-- Enhancement: Fate of the Tideskorn
 				q(40542),	-- Eyes of Nashal
 				q(40544),	-- Eyes of Nashal
@@ -1085,7 +1084,6 @@ _.Zones =
 				q(41167),	-- Fel Fragments
 				q(41158),	-- Fragments of the Fjords
 				q(38607),	-- Gates of Valhallas
-				q(38670),	-- Goredome 2
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
 				q(38712),	-- Houndmaster Ely

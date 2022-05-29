@@ -20,8 +20,6 @@ _.Zones =
 				q(38219),	-- Defending The Grove
 				q(41880),	-- Den of Shadows
 				q(38839),	-- Done with Waiting
-				q(38840),	-- Fishy Business
-				q(41875),	-- Found First Clue
 				q(38341),	-- Halting the Nightmare
 				q(38745),	-- Hard Lessons
 				q(38285),	-- Menacing Sprites
@@ -32,33 +30,20 @@ _.Zones =
 				q(38353),	-- Rescued From Darkness
 				q(46820),	-- REUSE
 				q(39028),	-- REUSE ME
-				q(39428),	-- Satyr Line TRACKING
-				q(41874),	-- Talked to Tyrande to Start Events
 				q(41879),	-- TBD
 				q(38697),	-- The Sword of Truth
 				q(38673),	-- The Wormtalon Crone
 				q(40921),	-- Tracking Quest: Bastillax 1
 				q(40924),	-- Tracking Quest: Bastillax 4
-				q(40296),	-- Tracking Quest: Corridor
 				q(40386),	-- Tracking Quest: Khadgar Arrival
 				q(40922),	-- Tracking Quest: Mephistos 2
 				q(40923),	-- Tracking Quest: Mephistos 3
 				q(40422),	-- Tracking Quest: VotW Started
-				q(41876),	-- Umbraxis Tracker
-				q(38938),	-- Unbearable
 				q(38304),	-- Val'sharah
-				q(39460),	-- Vale POI Event TRACKING
-				q(41917),	-- Vignette: Bear Cub
-				q(38902),	-- Vignette: Coruscating Bloom
 				q(38380),	-- Vignette: Hivequeen Zsala
-				q(38278),	-- Vignette: Kraw the Mystic
-				q(39158),	-- Vignette: Rally the Wilds
-				q(38465),	-- Vignette: Shyama the Dreaded
-				q(39467),	-- Vignette: Sorcery and Suction
 				q(43447),	-- Vignette: Wraithtalon
 				q(44825),	-- Wisp in the Willows
 				q(46819),	-- Wrecked Cart
-				q(39420),	-- Xavius Event TRACKING
 				]]--
 				q(45924),	-- Abyssal Monstrosity (Invasion WQ)
 				q(45922),	-- Agmozuul (Invasion wq)

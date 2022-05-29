@@ -981,26 +981,21 @@ _.Zones =
 					q(39371),	-- Witches of the Sky
 				})),
 	--[[ TODO: These quests will be organized Soon™
-				q(40312),	-- A Timely Opportunity REMOVED
 				q(39646),	-- Albino Elderhorn
 				q(41053),	-- Altar of the Eternal Hunt
 				q(40413),	-- Amateur Hunters
 				q(42505),	-- Arcanist Shal'iman
-				q(41823),	-- Ashes to Ashes
 				q(46182),	-- Battle for Highmountain
 				q(43961),	-- Bestrix
 				q(42417),	-- Bilebrain
-				q(41842),	-- Bottom of the Food Chain
 				q(40243),	-- Break Weapon Racks
 				q(40405),	-- Bristlemaul
 				q(39235),	-- Buba
 				q(44311),	-- Burning Plate of the Worldbreaker Available
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
-				q(41042),	-- Champion Chomper
 				q(43960),	-- Cinderwing
 				q(42699),	-- Coura, Master of Arcana
 				q(39994),	-- Crab Rider Grmlrml
-				q(41241),	-- Cursed Queenfish Needed
 				q(47073),	-- Delivering Lost Knowledge
 				q(40414),	-- Devouring Darkness
 				q(47020),	-- Discipline: Rumblings Near Feltotem
@@ -1008,9 +1003,6 @@ _.Zones =
 				q(39576),	-- Echoes of Deathwing
 				q(39762),	-- Feltotem Warlock
 				q(39430),	-- Flasking for a Favor
-				q(41822),	-- Following his Hoofsteps
-				q(41987),	-- Garn
-				q(41833),	-- Grmlrml's Last Ride
 				q(40347),	-- Gurbog da Basher
 				q(39436),	-- Haglands Treasure
 				q(39827),	-- Haglands Treasure
@@ -1020,7 +1012,6 @@ _.Zones =
 				q(42286),	-- Houndmaster Stroxis
 				q(42376),	-- Inquisitor Tivos
 				q(43815),	-- Karthax
-				q(39989),	-- Keepers of the Hammer
 				q(41193),	-- Laying to Rest
 				q(44059),	-- Legion Attacks
 				q(38785),	-- Living Leystone Sample
@@ -1034,13 +1025,10 @@ _.Zones =
 				q(42381),	-- Ox'iloth
 				q(42700),	-- Quin'el, Master of Chillwind
 				q(41540),	-- Rendezvous with the Courier
-				q(41837),	-- Rockaway Bully
 				q(42384),	-- Scouting Reports
 				q(40133),	-- Scrap of Pants
 				q(44039),	-- Sea King Tidross
-				q(38914),	-- Secrets of Highmountain REMOVED
 				q(42698),	-- Selia, Master of Balefire
-				q(41817),	-- Skull of the Taskmaster
 				q(39465),	-- Skywhisker Taskmaster
 				q(40175),	-- Sleeping Bear
 				q(40681),	-- Snarf
@@ -1048,7 +1036,6 @@ _.Zones =
 				q(41187),	-- Surveying Student
 				q(40184),	-- Tauren Tanning
 				q(40959),	-- The Campaign Begins
-				q(41829),	-- The Darkfeather Scout
 				q(40202),	-- The Final Lessons
 				q(40135),	-- The Freedom to Roam
 				q(38513),	-- The Highmountain Smiths
@@ -1064,11 +1051,8 @@ _.Zones =
 				q(38533),	-- Tribal Knowledge
 				q(40423),	-- Unethical Adventurers
 				q(42280),	-- Vorthax
-				q(41820),	-- Walk Without Rhythm
 				q(38786),	-- Where Respect is Due
-				q(41832),	-- White Water Terror
 				q(47019),	-- Windwalker: Rumblings Near Feltotem
-				q(41825),	-- Winged Menace
 				q(41761),	-- Winter Moose Roundup
 				--]]
 			}),
