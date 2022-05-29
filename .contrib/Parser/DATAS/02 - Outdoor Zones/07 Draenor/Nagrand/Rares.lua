@@ -221,6 +221,11 @@ _.Zones =
 						i(119384),	-- Krud's Girthy Girdle
 					},
 				}),
+				n(80370, {	-- Lernaea
+					["questID"] = 37408,
+					["coord"] = { 52.0, 89.8, DRAENOR_NAGRAND },
+					["isDaily"] = true,
+				}),
 				n(50981, {	-- Luk'hok
 					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 84.6, 64.0, DRAENOR_NAGRAND },

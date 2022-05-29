@@ -1186,7 +1186,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(37539, { ["name"] = "UNUSED", }),	-- UNUSED
 				q(37471, { ["name"] = "Vignette: Dahrok Boneshatter", }),	-- Vignette: Dahrok Boneshatter
 				q(37650, { ["name"] = "Vignette: Iron Horde Caravan", }),	-- Vignette: Iron Horde Caravan
-				q(37408, { ["name"] = "Vignette: Lernaea", }),	-- Vignette: Lernaea
 				q(37389, { ["name"] = "Vignette: Ug'lok the Frozen", }),	-- Vignette: Ug'lok the Frozen
 				q(37584, { ["name"] = "Your Second Alchemy Work Order", }),	-- Your Second Alchemy Work Order
 				q(37587, { ["name"] = "Your Second Blacksmithing Work Order", }),	-- Your Second Blacksmithing Work Order
