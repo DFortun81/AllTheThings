@@ -1,11 +1,11 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
 profession(HERBALISM, {
-	-- #if AFTER WOD
+	-- #if BEFORE WOD
 	tier(CLASSIC_TIER, {
-	-- #endif
 		recipe(2383),	-- Find Herbs
-	-- #if AFTER WOD
 	}),
+	-- #endif
+	-- #if AFTER WOD
 	tier(WOD_TIER, {
 		filter(BATTLE_PETS, {
 			i(118595),	-- Nightshade Sproutling
