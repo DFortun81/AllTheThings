@@ -660,7 +660,7 @@ _.Zones =
 					["sourceQuest"] = 13073,	-- The Keeper's Favor
 				}),
 				q(13080, {	-- Hope Yet Remains
-					["coord"] = { 79.8, 30.8, MOONGLADE },
+					["coord"] = { 79.8, 30.8, ICECROWN },
 					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["sourceQuest"] = 13079,	-- The Boon of Alexstrasza
 				}),
@@ -886,7 +886,7 @@ _.Zones =
 					},
 				}),
 				q(13083, {	-- Light Within the Darkness
-					["coord"] = { 79.7, 30.8, MOONGLADE },
+					["coord"] = { 79.7, 30.8, ICECROWN },
 					["provider"] = { "o", 192833 },	-- Bridenbrad's Possessions
 					["sourceQuest"] = 13082,	-- The Boon of A'day
 					["g"] = {
@@ -1736,7 +1736,7 @@ _.Zones =
 					},
 				}),
 				q(13077, {	-- The Touch of an Aspect
-					["coord"] = { 79.7, 71.7, MOONGLADE },
+					["coord"] = { 79.7, 71.7, ICECROWN },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13076,	-- Time Yet Remains
 				}),
@@ -1802,7 +1802,7 @@ _.Zones =
 					},
 				}),
 				q(13076, {	-- Time Yet Remains
-					["coord"] = { 79.8, 30.8, MOONGLADE },
+					["coord"] = { 79.8, 30.8, ICECROWN },
 					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["sourceQuest"] = 13075,	-- The Boon of Remulos
 				}),
