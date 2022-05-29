@@ -1728,7 +1728,7 @@ root("Zones", m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { "removed 1.4.0" },
 					["cost"] = { { "i", 13317, 1 } },	-- Ivory Raptor (MOUNT!)
-					["sym"] = { { "select", "itemID", 18788, 18789, 18990 } },
+					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
@@ -2028,7 +2028,7 @@ root("Zones", m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { "removed 1.4.0" },
 					["cost"] = { { "i", 8586, 1 } },	-- Mottled Red Raptor (MOUNT!)
-					["sym"] = { { "select", "itemID", 18788, 18789, 18990 } },
+					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
