@@ -1,16 +1,10 @@
 --[[
 5.0.3.15890
-q(6),	-- Bounty on Garrick Padfoot,		TBC: Bounty on Garrick Padfoot,		CLASSIC: Bounty on Garrick Padfoot
-q(7),	-- [DEPRECATED] Kobold Camp Cleanup,		TBC: Kobold Camp Cleanup,		CLASSIC: Kobold Camp Cleanup
-q(15),	-- [DEPRECATED] Investigate Echo Ridge,		TBC: Investigate Echo Ridge,		CLASSIC: Investigate Echo Ridge
-q(18),	-- Brotherhood of Thieves,		TBC: Brotherhood of Thieves,		CLASSIC: Brotherhood of Thieves
-q(21),	-- [DEPRECATED] Skirmish at Echo Ridge,		TBC: Skirmish at Echo Ridge,		CLASSIC: Skirmish at Echo Ridge
 q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
 q(27),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
 q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(33),	-- [DEPRECATED] Wolves Across the Border,		TBC: Wolves Across the Border,		CLASSIC: Wolves Across the Border
 q(39),	-- Deliver Thomas' Report,		TBC: Deliver Thomas' Report,		CLASSIC: Deliver Thomas' Report
 q(61),	-- Shipment to Stormwind,		TBC: Shipment to Stormwind,		CLASSIC: Shipment to Stormwind
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -39,7 +33,6 @@ q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Reveale
 q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
 q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
-q(345),	-- Ink Supplies,		TBC: Ink Supplies,		CLASSIC: Ink Supplies
 q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(363),	-- Rude Awakening,		TBC: Rude Awakening,		CLASSIC: Rude Awakening
@@ -123,7 +116,6 @@ q(732),	-- Tremors of the Earth,		TBC: Tremors of the Earth,		CLASSIC: Tremors o
 q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
 q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
 q(781),	-- Attack on Camp Narache,		TBC: Attack on Camp Narache,		CLASSIC: Attack on Camp Narache
-q(783),	-- [DEPRECATED] A Threat Within,		TBC: A Threat Within,		CLASSIC: A Threat Within
 q(787),	-- The New Horde,		TBC: The New Horde,		CLASSIC: The New Horde
 q(807),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(810),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -314,7 +306,6 @@ q(1537),	-- <NYI> Call of Air,		TBC: <NYI> Call of Air,		CLASSIC: <NYI> Call of 
 q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1579),	-- Gaffer Jacks,		TBC: Gaffer Jacks,		CLASSIC: Gaffer Jacks
 q(1580),	-- Electropellers,		TBC: Electropellers,		CLASSIC: Electropellers
-q(1598),	-- The Stolen Tome,		TBC: The Stolen Tome,		CLASSIC: The Stolen Tome
 q(1638),	-- A Warrior's Training,		TBC: A Warrior's Training,		CLASSIC: A Warrior's Training
 q(1640),	-- Beat Bartleby,		TBC: Beat Bartleby,		CLASSIC: Beat Bartleby
 q(1642),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
@@ -466,12 +457,6 @@ q(3091),	-- Simple Note,		TBC: Simple Note,		CLASSIC: Simple Note
 q(3092),	-- Etched Note,		TBC: Etched Note,		CLASSIC: Etched Note
 q(3093),	-- Rune-Inscribed Note,		TBC: Rune-Inscribed Note,		CLASSIC: Rune-Inscribed Note
 q(3094),	-- Verdant Note,		TBC: Verdant Note,		CLASSIC: Verdant Note
-q(3100),	-- Simple Letter,		TBC: Simple Letter,		CLASSIC: Simple Letter
-q(3101),	-- Consecrated Letter,		TBC: Consecrated Letter,		CLASSIC: Consecrated Letter
-q(3102),	-- Encrypted Letter,		TBC: Encrypted Letter,		CLASSIC: Encrypted Letter
-q(3103),	-- Hallowed Letter,		TBC: Hallowed Letter,		CLASSIC: Hallowed Letter
-q(3104),	-- Glyphic Letter,		TBC: Glyphic Letter,		CLASSIC: Glyphic Letter
-q(3105),	-- Tainted Letter,		TBC: Tainted Letter,		CLASSIC: Tainted Letter
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
 q(3117),	-- Etched Sigil,		TBC: Etched Sigil,		CLASSIC: Etched Sigil
 q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
@@ -524,9 +509,6 @@ q(3841),	-- An Orphan Looking For a Home,		TBC: An Orphan Looking For a Home,		C
 q(3842),	-- A Short Incubation,		TBC: A Short Incubation,		CLASSIC: A Short Incubation
 q(3843),	-- The Newest Member of the Family,		TBC: The Newest Member of the Family,		CLASSIC: The Newest Member of the Family
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
-q(3903),	-- Milly Osworth,		TBC: Milly Osworth,		CLASSIC: Milly Osworth
-q(3904),	-- Milly's Harvest,		TBC: Milly's Harvest,		CLASSIC: Milly's Harvest
-q(3905),	-- Grape Manifest,		TBC: Grape Manifest,		CLASSIC: Grape Manifest
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
 q(4101),	-- [DEPRECATED]Cleansing Felwood,		TBC: Cleansing Felwood,		CLASSIC: Cleansing Felwood
 q(4124),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
@@ -623,7 +605,6 @@ q(5246),	-- Fragments of the Past,		TBC: Fragments of the Past,		CLASSIC: Fragme
 q(5247),	-- Fragments of the Past,		TBC: Fragments of the Past,		CLASSIC: Fragments of the Past
 q(5249),	-- [DEPRECATED]To Winterspring!,		TBC: To Winterspring!,		CLASSIC: To Winterspring!
 q(5250),	-- Starfall,		TBC: Starfall,		CLASSIC: Starfall
-q(5261),	-- [DEPRECATED] Eagan Peltskinner,		TBC: Eagan Peltskinner,		CLASSIC: Eagan Peltskinner
 q(5283),	-- The Art of the Armorsmith,		TBC: The Art of the Armorsmith,		CLASSIC: The Art of the Armorsmith
 q(5284),	-- The Way of the Weaponsmith,		TBC: The Way of the Weaponsmith,		CLASSIC: The Way of the Weaponsmith
 q(5301),	-- The Art of the Armorsmith,		TBC: The Art of the Armorsmith,		CLASSIC: The Art of the Armorsmith
@@ -641,7 +622,6 @@ q(5524),	-- Chromatic Mantle of the Dawn,		TBC: Chromatic Mantle of the Dawn,		C
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
 q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
-q(5623),	-- In Favor of the Light,		TBC: In Favor of the Light,		CLASSIC: In Favor of the Light
 q(5627),	-- Stars of Elune,		TBC: Stars of Elune,		CLASSIC: Stars of Elune
 q(5628),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5629),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
@@ -1423,14 +1403,6 @@ q(26880),	-- Gilneas City Unphase Cheat
 q(26891),	-- Amongst the Ruins
 q(26900),	-- Agamaggan
 q(26904),	-- Corruption
-q(26910),	-- Etched Letter
-q(26913),	-- Charging into Battle
-q(26914),	-- Corruption
-q(26915),	-- The Deepest Cut
-q(26916),	-- Mastering the Arcane
-q(26917),	-- The Hunter's Path
-q(26918),	-- The Power of the Light
-q(26919),	-- Learning the Word
 q(26940),	-- Frost Nova
 q(26945),	-- Learning New Techniques
 q(26946),	-- A Rogue's Advantage

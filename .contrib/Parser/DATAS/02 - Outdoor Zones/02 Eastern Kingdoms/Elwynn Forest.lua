@@ -3,80 +3,223 @@
 ---------------------------------------------------
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(ELWYNN_FOREST, {
-		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.",
+		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
 		-- #if AFTER WRATH
-		["achievementID"] = 776,
+		["icon"] = "Interface\\Icons\\achievement_zone_elwynnforest",
 		-- #endif
+		-- #if AFTER CATA
 		["maps"] = {
 			38,	-- Fargodeep Mine Lv1
 			39,	-- Fargodeep Mine Lv2
 			40,	-- Jasperlode Mine
 		},
+		-- #endif
 		["groups"] = {
-			m(425, {	-- Northshire
-				["lore"] = "Northshire Valley is a pristine valley in Elwynn Forest in which both Northshire Abbey and the Northshire Vineyards are located. The Northshire River also flows through it. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
-				-- #if AFTER WRATH
+			m(NORTHSHIRE_VALLEY, {
+				["lore"] = "Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
+				-- #if ANYCLASSIC
+				["icon"] = asset("Achievement_Character_Human_Female"),
+				-- #else
 				["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 				-- #endif
 				["groups"] = {
 					n(QUESTS, {
+						q(783, {	-- A Threat Within
+							["qg"] = 823,	-- Deputy Willem
+							["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(28762, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(29078, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBrideMarshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBrideMarshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
 							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28767, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28766, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28763, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28764, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28757, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28765, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(31139, {	-- Beating Them Back!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["classes"] = { MONK },	-- May also include DK and Druid
+							["groups"] = {
+								i(57253, {	-- Northshire Abbot's Cinch
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57255, {	-- Worg Handler's Gloves
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(118532, {	-- Runner's Belt
+									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(131899, {	-- Chaser's Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(26389, {	-- Blackrock Invasion
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["qg"] = 197,	-- Marshal McBride
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
@@ -87,25 +230,150 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								28820,	-- The Rear is Clear (human priest)
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
+							},
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
+							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+						}),
+						q(6, {	-- Bounty on Garrick Padfoot
+							["qg"] = 823,	-- Deputy Willem
+							["sourceQuest"] = 18,	-- Brotherhood of Thieves
+							["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Garrick's Head
+									["provider"] = { "i", 182 },	-- Garrick's Head
+									["coord"] = { 57.4, 48.6, ELWYNN_FOREST },
+									["cr"] = 103,	-- Garrick Padfoot
+								}),
+								i(6076, {	-- Tapered Pants
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+								i(60, {	-- Layered Tunic
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+								i(3070, {	-- Ensign Cloak
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+							},
+						}),
+						q(18, {	-- Brotherhood of Thieves
+							["qg"] = 823,	-- Deputy Willem
+							["coord"] = { 48.2, 42.8, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/12 Red Burlap Bandana
+									["provider"] = { "i", 752 },	-- Red Burlap Bandana
+									["cr"] = 38,	-- Defias Thug
+								}),
+								i(2224, {	-- Militia Dagger
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+								i(5580),	-- Militia Hammer
+								i(1161, {	-- Militia Shortsword
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+								i(5579),	-- Militia Warhammer
+								i(1159, {	-- Militia Quarterstaff
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
 							},
 						}),
 						q(31141, {	-- Calligraphed Letter
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 85160 },	-- Calligraphed Letter
+							},
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+						}),
+						q(26913, {	-- Charging into Battle
+							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
+							["sourceQuest"] = 3100,	-- Simple Letter
+							["coord"] = { 40.6, 53.6, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { WARRIOR },
+						}),
+						q(3101, {	-- Consecrated Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9570 },	-- Consecrated Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["classes"] = { PALADIN },
+							["races"] = { HUMAN },
+						}),
+						-- #if AFTER 5.0.4
+						q(26914, {	-- Corruption [MOP] / Immolation [CATA]
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
+							["sourceQuest"] = 3105,	-- Tainted Letter
+							["coord"] = { 39.6, 55.2, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { WARLOCK },
+						}),
+						-- #endif
+						q(5261, {	-- Eagan Peltskinner
+							["qg"] = 823,	-- Deputy Willem
+							["sourceQuest"] = 783,	-- A Threat Within
+							["coord"] = { 48.17, 42.94, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
+						q(3102, {	-- Encrypted Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9555 },	-- Encrypted Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { ROGUE },
 						}),
 						q(26390, {	-- Ending the Invasion!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 26389,	-- Blackrock Invasion
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
+							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["groups"] = {
+								i(57393, {	-- Abbey Defender's Crossbow
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(133699, {	-- Militia Dagger
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(5580),	-- Militia Hammer
+								i(5579),	-- Militia Warhammer
+								i(85575, {	-- Peacebringer's Staff
+									["timeline"] = { "added 5.0.1.15650" },
+								}),
+							},
+						}),
+						q(26910, {	-- Etched Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 60677 },	-- Etched Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { HUNTER },
 						}),
 						q(26391, {	-- Extinguishing Hope
-							["provider"] = { "n", 9296 },	-- Milly Osworth
-							["coord"] = { 33.3, 54.6, 425 },
-							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["qg"] = 9296,	-- Milly Osworth
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
@@ -117,349 +385,1007 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
 							},
+							["coord"] = { 33.3, 54.6, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
+							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
+							["groups"] = {
+								i(11475),	-- Wine-stained Cloak
+								i(57247, {	-- Grape-Picking Sack
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28811, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28787,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["sourceQuest"] = 28787,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28812, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28788,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["sourceQuest"] = 28788,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28810, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28786,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["sourceQuest"] = 28786,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28813, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28789,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["sourceQuest"] = 28789,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28806, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28780,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["sourceQuest"] = 28780,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28808, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28784,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["sourceQuest"] = 28784,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(28809, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 28785,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["sourceQuest"] = 28785,	-- Join the Battle!
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(29082, {	-- Fear No Evil
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
-							["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 29080,	-- Join the Battle!
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
+							["races"] = exclude({ HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
 						}),
 						q(63447, {	-- Fear No Evil
-							["sourceQuests"] = { 29080 },	-- Join the Battle
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["coord"] = { 35.3, 37.9, 425 },
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 29080,	-- Join the Battle
+							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 9.0.5.37893" },
 							["races"] = { KULTIRAN },
+							["groups"] = {
+								i(57258, {	-- Wolf Hunter's Vest
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57257, {	-- Borderlands Bracers
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131874, {	-- Light Gleaming Bracers
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57256, {	-- Northshire Abbot's Shoes
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+							},
+						}),
+						q(3104, {	-- Glyphic Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9571 },	-- Glyphic Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { MAGE },
+						}),
+						q(3905, {	-- Grape Manifest
+							["providers"] = {
+								{ "n", 9296 },	-- Milly Osworth
+								{ "i", 11125 },	-- Grape Manifest
+							},
+							["sourceQuest"] = 3904,	-- Milly's Harvest
+							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								i(11475),	-- Wine-stained Cloak
+								i(2690, {	-- Latched Belt
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+							},
+						}),
+						q(3103, {	-- Hallowed Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9548 },	-- Hallowed Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { PRIEST },
+						}),
+						-- #if BEFORE 5.0.4
+						q(26919, {	-- Healing the Wounded [CATA] / Learning the Word [MOP]
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
+							["sourceQuest"] = 3103,	-- Hallowed Letter
+							["coord"] = { 39.2, 44.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { PRIEST },
+						}),
+						q(26914, {	-- Immolation [CATA] / Corruption [MOP]
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
+							["sourceQuest"] = 3105,	-- Tainted Letter
+							["coord"] = { 39.6, 55.2, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { WARLOCK },
+						}),
+						-- #endif
+						q(5623, {	-- In Favor of the Light
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
+							["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = { HUMAN },
+							["classes"] = { PRIEST },
+							["lvl"] = 5,
+						}),
+						q(345, {	-- Ink Supplies
+							["qg"] = 951,	-- Brother Paxton
+							["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
+							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 20,
+						}),
+						q(15, {	-- Investigate Echo Ridge
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/10 Kobold Worker
+									["provider"] = { "n", 257 },	-- Kobold Worker
+								}),
+							},
 						}),
 						q(29080, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29079,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
+							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28774,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["sourceQuest"] = 28774,	-- Lions for Lambs
 						}),
 						q(28786, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28771,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["sourceQuest"] = 28771,	-- Lions for Lambs
 						}),
 						q(28785, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28770,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["sourceQuest"] = 28770,	-- Lions for Lambs
 						}),
 						q(28787, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28772,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["sourceQuest"] = 28772,	-- Lions for Lambs
 						}),
 						q(28784, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28769,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["sourceQuest"] = 28769,	-- Lions for Lambs
 						}),
 						q(28780, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28759,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["sourceQuest"] = 28759,	-- Lions for Lambs
 						}),
 						q(28788, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28773,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["sourceQuest"] = 28773,	-- Lions for Lambs
 						}),
 						q(31143, {	-- Join the Battle!
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 31140,	-- Lions for Lambs
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["sourceQuest"] = 31140,	-- Lions for Lambs
 						}),
-						q(28771, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+						q(7, {	-- Kobold Camp Cleanup
+							["qg"] = 197,	-- Marshal McBride
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/10 Kobold Vermin
+									["provider"] = { "n", 6 },	-- Kobold Vermin
+								}),
+							},
+						}),
+						-- #if AFTER 5.0.4
+						q(26919, {	-- Learning the Word [MOP] / Healing the Wounded [CATA]
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
+							["sourceQuest"] = 3103,	-- Hallowed Letter
+							["coord"] = { 39.2, 44.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+						}),
+						-- #endif
+						q(28771, {	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28763,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
+							["races"] = { HUMAN },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28772, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28764,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["sourceQuest"] = 28764,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28773, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28765,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["sourceQuest"] = 28765,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28774, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28766,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["sourceQuest"] = 28766,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28759, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28767,	-- Beating Them Back
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["sourceQuest"] = 28767,	-- Beating Them Back
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(29079, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29078,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
+							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(31140, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 31139,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["sourceQuest"] = 31139,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28769, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28757,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["sourceQuest"] = 28757,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28770, {	-- Lions for Lambs
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 28762,	-- Beating Them Back!
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["sourceQuest"] = 28762,	-- Beating Them Back!
+							["groups"] = {
+								i(57386, {	-- Northshire Abbot's Robe
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57387, {	-- Spymaster's Legs
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(57388, {	-- Stormwind Infantry Belt
+									["timeline"] = { "added 4.0.3.13277" },
+								}),
+								i(131875, {	-- Spy Dispatchers Greaves
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
+						}),
+						q(26916, {	-- Mastering the Arcane 
+							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
+							["sourceQuest"] = 3104,	-- Glyphic Letter
+							["coord"] = { 38.6, 43.6, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { MAGE },
+						}),
+						q(3903, {	-- Milly Osworth
+							["qg"] = 823,	-- Deputy Willem
+							["sourceQuest"] = 18,	-- Brotherhood of Thieves
+							["coord"] = { 48.2, 42.8, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+						}),
+						q(3904, {	-- Milly's Harvest
+							["qg"] = 9296,	-- Milly Osworth
+							["sourceQuest"] = 3903,	-- Milly Osworth
+							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/8 Milly's Harvest
+									["provider"] = { "i", 11119 },	-- Milly's Harvest
+								}),
+							},
 						}),
 						q(31142, {	-- Palm of the Tiger
-							["provider"] = { "n", 63258 },	-- Bao
-							["coord"] = { 41.0, 52.2, 425 },
+							["qg"] = 63258,	-- Bao
+							["sourceQuest"] = 31141,	-- Calligraphed Letter
+							["coord"] = { 41.0, 52.2, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 						}),
 						q(54, {	-- Report to Goldshire
-							["provider"] = { "n", 197 },	-- Marshal McBride
-							["coord"] = { 33.5, 53.0, 425 },
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 745 },	-- Marshal McBride's Documents
+							},
+							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
+							-- #if AFTER CATA
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							-- #else
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							-- #endif
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
-							["sourceQuest"] = 26390,	-- Ending the Invasion
+							["groups"] = {
+								i(6078),	-- Pikeman Shield
+								i(57391, {	-- Pikeman Trousers
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+								i(57390, {	-- Goldshire Heavy Jacket
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+								i(131876, {	-- Deputy's Chainmail
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57389, {	-- Innkeeper's Longstockings
+									["timeline"] = { "added 4.0.3.13287" },
+								}),
+							},
 						}),
 						q(346, {	-- Return to Kristoff
-							["u"] = REMOVED_FROM_GAME,
-							["provider"] = { "n", 951 },	-- Brother Paxton
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 347,	-- Rethban Ore
-							["groups"] = {
-								un(REMOVED_FROM_GAME, i(6095)),	-- Wandering Boots
+							["providers"] = {
+								{ "n", 951 },	-- Brother Paxton
+								{ "i", 2795 },	-- Book: Stresses of Iron
 							},
+							["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
+							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 20,
+							["groups"] = {
+								i(6095, {	-- Wandering Boots 
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+							},
+						}),
+						q(3100, {	-- Simple Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9542 },	-- Simple Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { WARRIOR },
+						}),
+						q(21, {	-- Skirmish at Echo Ridge
+							["qg"] = 197,	-- Marshal McBride
+							["sourceQuest"] = 15,	-- Investigate Echo Ridge
+							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/12 Kobold Laborer
+									["provider"] = { "n", 80 },	-- Kobold Laborer
+								}),
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+							},
+						}),
+						q(3105, {	-- Tainted Letter
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 9576 },	-- Tainted Letter
+							},
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { WARLOCK },
+						}),
+						q(26915, {	-- The Deepest Cut 
+							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
+							["sourceQuest"] = 3102,	-- Encrypted Letter
+							["coord"] = { 41.8, 45.8, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { ROGUE },
+						}),
+						q(26917, {	-- The Hunter's Path
+							["qg"] = 43278,	-- Ashley Blank <Hunter Trainer>
+							["sourceQuest"] = 26910,	-- Etched Letter
+							["coord"] = { 34.6, 55.8, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["races"] = { HUMAN },
+							["classes"] = { HUNTER },
+						}),
+						q(26918, {	-- The Power of the Light 
+							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
+							["sourceQuest"] = 3101,	-- Consecrated Letter
+							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
+							["timeline"] = { "added 4.0.3", "removed 7.0.3" },
+							["classes"] = { PALADIN },
+							["races"] = { HUMAN },
 						}),
 						q(28819, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28793,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["sourceQuest"] = 28793,	-- They Sent Assassins
 						}),
 						q(28822, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28796,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["sourceQuest"] = 28796,	-- They Sent Assassins
 						}),
 						q(31145, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 31144,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["sourceQuest"] = 31144,	-- They Sent Assassins
 						}),
 						q(28821, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28795,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["sourceQuest"] = 28795,	-- They Sent Assassins
 						}),
 						q(28817, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28791,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["sourceQuest"] = 28791,	-- They Sent Assassins
 						}),
 						q(28823, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28797,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["sourceQuest"] = 28797,	-- They Sent Assassins
 						}),
 						q(28820, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28794,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["sourceQuest"] = 28794,	-- They Sent Assassins
 						}),
 						q(28818, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28792,	-- They Sent Assassins
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["sourceQuest"] = 28792,	-- They Sent Assassins
 						}),
 						q(29083, {	-- The Rear is Clear
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29081,	-- They Sent Assassin
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
+							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+						}),
+						q(1598, {	-- The Stolen Tome
+							["qg"] = 459,	-- Drusilla La Salle
+							["altQuests"] = { 1599 },	-- Beginnings
+							["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 3.3.0" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { WARLOCK },
+							-- #if BEFORE 3.3.0
+							["groups"] = {
+								objective(1, {	-- 0/1 Powers of the Void
+									["provider"] = { "i", 6785 },	-- Powers of the Void
+									["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
+								}),
+								recipe(688),	-- Summon Imp
+							},
+							-- #endif
 						}),
 						q(28792, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28784,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
-							["sourceQuest"] = 28784,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(31144, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 31143,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 5.0.1.15640" },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
-							["sourceQuest"] = 31143,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28794, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28786,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
-							["sourceQuest"] = 28786,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28793, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28785,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
-							["sourceQuest"] = 28785,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28795, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28787,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
-							["sourceQuest"] = 28787,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28797, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28789,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
-							["sourceQuest"] = 28789,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28791, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28780,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
-							["sourceQuest"] = 28780,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(28796, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
+							["qg"] = 823,	-- Sergeant Willem
+							["sourceQuest"] = 28788,	-- Join the Battle!
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
-							["sourceQuest"] = 28788,	-- Join the Battle!
+							["groups"] = {
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
 						}),
 						q(29081, {	-- They Sent Assassins
-							["provider"] = { "n", 823 },	-- Sergeant Willem
-							["coord"] = { 35.7, 39.7, 425 },
-							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
+							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29080,	-- Join the Battle!
-						}),
-					}),
-					n(RARES, {
-						n(62, {	-- Gug Fatcandle
-							["coord"] = { 31.6, 16.7, 425 },
+							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.6.13596" },
+							["races"] = exclude({ HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
-								i(56147),	-- Fatcandle Bag
+								i(2186),	-- Outfitter Belt
+								i(2691),	-- Outfitter Boots
+								i(11192),	-- Outfitter Gloves
+								i(131924, {	-- Outrider Belt
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
+							},
+						}),
+						q(33, {	-- Wolves Across the Border
+							["qg"] = 196,	-- Eagan Peltskinner
+							["sourceQuest"] = 5261,	-- Eagan Peltskinner
+							["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
+							["timeline"] = { "removed 4.0.3.13277" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/8 Tough Wolf Meat
+									["provider"] = { "i", 750 },
+									["crs"] = {
+										299,	-- Young Wolf
+										69,	-- Timber Wolf
+									},
+								}),
+								i(80, {	-- Soft Fur-lined Shoes
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
+								i(6070, {	-- Wolfskin Bracers
+									["timeline"] = { "removed 4.0.3.13277" },
+								}),
 							},
 						}),
 					}),
+					-- #if AFTER 4.0.3
+					n(RARES, {
+						n(62, {	-- Gug Fatcandle
+							["coord"] = { 31.6, 16.7, NORTHSHIRE_VALLEY },
+							["timeline"] = { "added 4.0.3" },
+							["groups"] = {
+								i(56147, {	-- Fatcandle Bag
+									["timeline"] = { "added 4.0.3" },
+								}),
+							},
+						}),
+					}),
+					-- #endif
 				},
 			}),
+			n(ACHIEVEMENTS, {
+				removeclassicphase(ach(776, {	-- Explore Elwynn Forest
+					-- #if BEFORE WRATH
+					["description"] = "Explore Elwynn Forest, revealing the covered areas of the world map.",
+					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+					-- #endif
+				})),
+			}),
+			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(374, {	-- Black Lamb
 					["crs"] = { 60649 },	-- Black Lamb
@@ -486,39 +1412,78 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
 			})),
+			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, explorationBatch({
+				["225:220:422:332"] = 18,	-- Crystal Lake
+				["240:220:250:270"] = 87,	-- Goldshire
+				["255:250:551:292"] = 91,	-- Tower of Azora
+				["256:210:704:330"] = 88,	-- Eastvale Logging Camp
+				["256:237:425:431"] = 797,	-- Jerod's Landing
+				["256:240:238:428"] = 57,	-- Fargodeep Mine
+				["256:249:577:419"] = 62,	-- Brackwell Pumpkin Patch
+				["256:256:381:147"] = 9,	-- Northshire Valley
+				["256:341:124:327"] = 60,	-- Forest's Edge
+				["306:233:696:435"] = 798,	-- Ridgepoint Tower
+				["310:256:587:190"] = 86,	-- Stone Cairn Lake
+				["485:405:0:0"] = 1519,	-- Stormwind City
+				--[[
+				[23] = 3,                                -- Northshire River
+				[24] = 4,                                -- Northshire Abbey
+				[34] = 5,                                -- Echo Ridge Mine
+				[53] = 6,                                -- Thieves Camp
+				[54] = 7,                                -- Jasperlode Mine
+				[56] = 9,                                -- Heroes' Vigil
+				[59] = 11,                               -- Northshire Vineyards
+				[61] = 13,                               -- Thunder Falls
+				[63] = 15,                               -- The Stonefield Farm
+				[64] = 16,                               -- The Maclure Vineyards
+				[80] = 17,                               -- Stormwind Mountains
+				[89] = 21,                               -- Mirror Lake Orchard
+				[92] = 23,                               -- Mirror Lake
+				[120] = 24,                              -- Westbrook Garrison
+				]]--
+			})),
+			-- #endif
+			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
 				fp(589, {	-- Eastvale Logging Camp, Elwynn
 					["coord"] = { 81.8, 66.4, ELWYNN_FOREST },
+					["timeline"] = { "added 4.0.1.12984" },
+					["cr"] = 43000,	-- Goss the Swift <Gryphon Master>
 				}),
 				fp(582, {	-- Goldshire, Elwynn
 					["coord"] = { 41.8, 64.6, ELWYNN_FOREST },
+					["timeline"] = { "added 4.0.1.12984" },
+					["cr"] = 42983,	-- Bartlett the Brave <Gryphon Master>
 				}),
 			}),
+			-- #endif
 			n(QUESTS, {
 				q(5545, {	-- A Bundle of Trouble
-					["provider"] = { "n", 10616 },	-- Supervisor Raelen
+					["qg"] = 10616,	-- Supervisor Raelen
 					["coord"] = { 81.3, 66.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(40, {	-- A Fishy Peril
-					["provider"] = { "n", 241 },	-- Remy
+					["qg"] = 241,	-- Remy
 					["coord"] = { 42.1, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26393, {	-- A Swift Message
-					["provider"] = { "n", 514 },	-- Smith Argus
+					["qg"] = 514,	-- Smith Argus
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["races"] = { HUMAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 253 },	-- William Pestle
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 60,	-- Kobold Candles
 				}),
 				q(84, {	-- Back to Billy
-					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
+					["qg"] = 246,	-- "Auntie" Bernice Stonefield
 					["coord"] = { 34.4, 84.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 86,	-- Pie for Billy
@@ -538,7 +1503,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(59, {	-- Cloth and Leather Armor
-					["provider"] = { "n", 261 },	-- Guard Thomas
+					["qg"] = 261,	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 71,	-- Report to Thomas
@@ -561,13 +1526,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(112, {	-- Collecting Kelp
-					["provider"] = { "n", 253 },	-- William Pestle
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 107,	-- Note to William
 				}),
 				q(26394, {	-- Continue to Stormwind
-					["provider"] = { "n", 42983 },	-- Bartlett the Brave
+					["qg"] = 42983,	-- Bartlett the Brave
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["races"] = { HUMAN },
 					["sourceQuest"] = 26393,	-- A Swift Message
@@ -581,18 +1546,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(1097, {	-- Elmore's Task
 					["isBreadcrumb"] = true,	-- for "Stormpike's Delivery" in Stormwind
-					["provider"] = { "n", 514 },	-- Smith Argus
+					["qg"] = 514,	-- Smith Argus
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37, {	-- Find the Lost Guards
-					["provider"] = { "n", 261 },	-- Guard Thomas
+					["qg"] = 261,	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35,	-- Further Concerns
 				}),
 				q(83, {	-- Fine Linen Goods
-					["provider"] = { "n", 278 },	-- Sara Timberlain
+					["qg"] = 278,	-- Sara Timberlain
 					["coord"] = { 79.45 , 68.73, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -604,44 +1569,48 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(35, {	-- Further Concerns
-					["provider"] = { "n", 240 },	-- Marshal Dughan
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 40,	-- A Fishy Peril
 				}),
 				q(5624, {	-- Garments of the Light
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
+					["sourceQuest"] = 5623,	-- In Favor of the Light
+					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
+					["timeline"] = { "removed 4.0.3.13277" },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
+					["lvl"] = 5,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(16605)),	-- Friar's Robes of the Light
+						i(16605),	-- Friar's Robes of the Light
 					},
 				}),
 				q(16, {	-- Give Gerard a Drink
-					["provider"] = { "n", 255 },	-- Gerard Tiller
+					["qg"] = 255,	-- Gerard Tiller
 					["coord"] = { 43.1, 85.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(47, {	-- Gold Dust Exchange
-					["provider"] = { "n", 241 },	-- Remy "Two Times"
+					["qg"] = 241,	-- Remy "Two Times"
 					["coord"] = { 42.1, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(87, {	-- Goldtooth
-					["provider"] = { "n", 247 },	-- Billy Maclure
+					["qg"] = 247,	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 84,	-- Back to Billy
 				}),
 				q(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963, 42256)
-					["provider"] = { "n", 240 },	-- Marshal Dughan
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(60, {	-- Kobold Candles
-					["provider"] = { "n", 253 },	-- William Pestle
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -664,12 +1633,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(85, {	-- Lost Necklace
-					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
+					["qg"] = 246,	-- "Auntie" Bernice Stonefield
 					["coord"] = { 34.4, 84.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(147, {	-- Manhunt
-					["provider"] = { "n", 42256 },	-- Marshal Patterson
+					["qg"] = 42256,	-- Marshal Patterson
 					["coord"] = { 81.8, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 123,	-- The Collector
@@ -682,7 +1651,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(107, {	-- Note to William
-					["provider"] = { "n", 248 },	-- Gramma Stonefield
+					["qg"] = 248,	-- Gramma Stonefield
 					["coord"] = { 34.9, 83.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 111,	-- Speak with Gramma
@@ -699,18 +1668,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["_drop"] = { "g" },
 				}),
 				q(86, {	-- Pie for Billy
-					["provider"] = { "n", 247 },	-- Billy Maclure
+					["qg"] = 247,	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 85,	-- Lost Necklace
 				}),
 				q(88, {	-- Princess Must Die!
-					["provider"] = { "n", 244 },	-- Ma Stonefield
+					["qg"] = 244,	-- Ma Stonefield
 					["coord"] = { 34.6, 84.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52, {	-- Protect the Frontier
-					["provider"] = { "n", 261 },	-- Guard Thomas
+					["qg"] = 261,	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -729,19 +1698,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(2158, {	-- Rest and Relaxation
 					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
+					["qg"] = 6774,	-- Falkhaan Isenstrider
 					["lvl"] = 4,
 					["coord"] = { 45.3, 49.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37112, {	-- Rest and Relaxation
-					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
+					["qg"] = 6774,	-- Falkhaan Isenstrider
 					["lvl"] = 4,
 					["coord"] = { 45.3, 49.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
-					["provider"] = { "n", 963 },	-- Deputy Rainer
+					["qg"] = 963,	-- Deputy Rainer
 					["coord"] = { 24.2, 74.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
@@ -754,25 +1723,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(111, {	-- Speak with Gramma
-					["provider"] = { "n", 252 },	-- Tommy Joe Stonefield
+					["qg"] = 252,	-- Tommy Joe Stonefield
 					["coord"] = { 29.8, 85.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 106,	-- Young Lovers
 				}),
 				q(114, {	-- The Escape
-					["provider"] = { "n", 253 },	-- William Pestle
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 112,	-- Collecting Kelp
 				}),
 				q(76, {	-- The Jasperlode Mine
-					["provider"] = { "n", 240 },	-- Marshal Dughan
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 				}),
 				q(62, {	-- The Fargodeep Mine
-					["provider"] = { "n", 240 },	-- Marshal Dughan
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -808,7 +1777,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(239, {	-- Westbrook Garrison Needs Help!
-					["provider"] = { "n", 240 },	-- Marshal Dughan
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
@@ -826,7 +1795,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["_drop"] = { "g" },
 				}),
 				q(106, {	-- Young Lovers
-					["provider"] = { "n", 251 },	-- Maybell Maclure
+					["qg"] = 251,	-- Maybell Maclure
 					["coord"] = { 43.1, 89.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26150,	-- A Visit With Maybell
@@ -839,8 +1808,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 83.0, 82.8, ELWYNN_FOREST },
 						{ 81.6, 85.2, ELWYNN_FOREST },
 					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(472, {	-- Fedfennel
+					-- #if AFTER CATA
 					["coords"] = {
 						{ 66.4, 40.4, ELWYNN_FOREST },
 						{ 66.8, 41.6, ELWYNN_FOREST },
@@ -851,6 +1822,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 69.2, 38.6, ELWYNN_FOREST },
 						{ 70.2, 40.0, ELWYNN_FOREST },
 					},
+					-- #else
+					["coord"] = { 68.0, 40.6, ELWYNN_FOREST },
+					-- #endif
 					["groups"] = {
 						i(3233),	-- Gnoll Hide Sack
 						i(5744),	-- Pale Skinner
@@ -858,70 +1832,78 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				n(50926, {	-- Grizzled Ben
 					["coord"] = { 27.2, 67.5, ELWYNN_FOREST },
-					["groups"] = {
-						i(5571),	-- Small Black Pouch
-						i(805),	-- Small Red Pouch
-						i(828),	-- Small Blue Pouch
-						i(4496),	-- Small Brown Pouch
-						i(5572),	-- Small Green Pouch
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(100, {	-- Gruff Swiftbite
+					-- #if AFTER CATA
 					["coord"] = { 25.9, 92.0, ELWYNN_FOREST },
+					-- #else
+					["coord"] = { 27.6, 88.4, ELWYNN_FOREST },
+					-- #endif
 					["groups"] = {
-						i(38513),	-- Boarhide Leggings
+						i(38513, {	-- Boarhide Leggings
+							["timeline"] = { "added 3.0.1.8634" },
+						}),
 					},
 				}),
 				n(50916, {	-- Lamepaw the Whimperer
 					["coord"] = { 51.3, 64.6, ELWYNN_FOREST },
-					["groups"] = {
-						i(5571),	-- Small Black Pouch
-						i(805),	-- Small Red Pouch
-						i(828),	-- Small Blue Pouch
-						i(4496),	-- Small Brown Pouch
-						i(5572),	-- Small Green Pouch
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(99, {	-- Morgaine the Sly
+					-- #if AFTER CATA
 					["coord"] = { 30.8, 64.6, ELWYNN_FOREST },
+					-- #else
+					["coord"] = { 31.8, 65.6, ELWYNN_FOREST },
+					-- #endif
 					["groups"] = {
-						i(1917),	-- Jeweled Dagger
+						i(1917, {	-- Jeweled Dagger
+							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+						}),
+						i(6201, {	-- Lithe Boots
+							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+						}),
+						i(2091, {	-- Magic Dust
+							["timeline"] = { "removed 4.0.1" },
+						}),
 					},
 				}),
 				n(471, {	-- Mother Fang
-					["coords"] = {
-						{ 54.3, 31.1, 40 },	-- Actual Spawn
-						{ 61.7, 53.9, ELWYNN_FOREST },	-- Mine Entrance
-					},
+					-- #if AFTER CATA
+					["coord"] = { 54.3, 31.1, 40 },
+					-- #else
+					["coord"] = { 61.8, 47.8, ELWYNN_FOREST },
+					-- #endif
 					["groups"] = {
-						i(3000),	-- Brood Mother Carapace
+						i(3000, {	-- Brood Mother Carapace
+							["timeline"] = { "removed 4.0.1", "added 8.0.1" },
+						}),
+						i(6148, {	-- Web-covered Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				n(79, {	-- Narg the Taskmaster
+					-- #if AFTER CATA
 					["coord"] = { 38.1, 83.3, ELWYNN_FOREST },
+					-- #else
+					["coord"] = { 41.2, 78.8, ELWYNN_FOREST },
+					-- #endif
+					["groups"] = {
+						i(6147),	-- Ratty Old Belt
+						i(1913),	-- Studded Blackjack
+					},
 				}),
 				n(50942, {	-- Snoot the Rooter
 					["coord"] = { 69.7, 80.0, ELWYNN_FOREST },
-					["groups"] = {
-						i(5571),	-- Small Black Pouch
-						i(805),	-- Small Red Pouch
-						i(828),	-- Small Blue Pouch
-						i(4496),	-- Small Brown Pouch
-						i(5572),	-- Small Green Pouch
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(50752, {	-- Tarantis
 					["coords"] = {
 						{ 65.8, 65.0, ELWYNN_FOREST },
 						{ 67.6, 63.2, ELWYNN_FOREST },
 					},
-					["groups"] = {
-						i(5571),	-- Small Black Pouch
-						i(805),	-- Small Red Pouch
-						i(828),	-- Small Blue Pouch
-						i(4496),	-- Small Brown Pouch
-						i(5572),	-- Small Green Pouch
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(51014, {	-- Terrapis
 					["coords"] = {
@@ -934,35 +1916,43 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 53.8, 87.8, ELWYNN_FOREST },
 						{ 50.6, 87.2, ELWYNN_FOREST },
 					},
-					["groups"] = {
-						i(5571),	-- Small Black Pouch
-						i(805),	-- Small Red Pouch
-						i(828),	-- Small Blue Pouch
-						i(4496),	-- Small Brown Pouch
-						i(5572),	-- Small Green Pouch
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(61, {	-- Thuros Lightfingers
+					-- #if AFTER CATA
 					["coord"] = { 50.6, 83.0, ELWYNN_FOREST },
+					-- #else
+					["coords"] = {
+						{ 30.0, 59.6, ELWYNN_FOREST },
+						{ 51.4, 60.8, ELWYNN_FOREST },
+						{ 51.2, 85.0, ELWYNN_FOREST },
+						{ 89.6, 78.6, ELWYNN_FOREST },
+					},
+					-- #endif
+					["groups"] = {
+						i(6202),	-- Fingerless Gloves
+						i(6203),	-- Thuggish Shield
+					},
 				}),
 			}),
+			-- #if AFTER 8.1.0.28724
 			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest
 					["model"] = 196989,
 					["questID"] = 54131,
 					["coord"] = { 32.3, 63.6, ELWYNN_FOREST },
+					["timeline"] = { "added 8.1.0.28724" },
 					["lvl"] = 110,
 					["groups"] = {
 						i(3678),	-- Recipe: Crocolisk Steak
-						i(7997, {	-- Red Defias Mask
-							["collectible"] = false,
-						}),
-						i(2057,	{ -- Pitted Defias Shortsword
-							["collectible"] = false,
+						i(7997),	-- Red Defias Mask
+						i(2057, {	-- Pitted Defias Shortsword
+							["timeline"] = { "removed 4.0.3", "added 8.1.0.28724" },
 						}),
 					},
 				}),
 			}),
+			-- #endif
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.",
@@ -1018,8 +2008,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				n(465, {	-- Barkeep Dobbins <Bartender>
+					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(1939),	-- Skin of Sweet Rum
+					},
+				}),
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>
-					["coord"] = { 44.2, 53.4, ELWYNN_FOREST },
+					["coord"] = { 44.2, 53.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8485),	-- Cat Carrier (Bombay) (PET!)
@@ -1029,7 +2026,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1250, {	-- Drake Lindgren <General & Trade Supplies>
-					["coord"] = { 83.3, 66.7, ELWYNN_FOREST },
+					["coord"] = { 83.2, 66.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -1062,7 +2059,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1198, {	-- Rallic Finn <Bowyer>
-					["coord"] = { 83.3, 66.1, ELWYNN_FOREST },
+					["coord"] = { 83.2, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -1071,7 +2068,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
-					["coord"] = { 41.9, 67.1, ELWYNN_FOREST },
+					["coord"] = { 41.8, 67.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -1082,6 +2079,68 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(1307, {	-- Gold Pickup Schedule
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						100,	-- Gruff Swiftbite
+						448,	-- Hogger
+						478,	-- Riverpaw Outrunner
+						97,		-- Riverpaw Runt
+					},
+				}),
+				i(778, {	-- Kobold Excavation Pick
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 476,	-- Kobold Geomancer
+				}),
+				i(1389, {	-- Kobold Mining Mallet
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 40,	-- Kobold Miner
+				}),
+				i(1195, {	-- Kobold Mining Shovel
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 475,	-- Kobold Tunneler
+				}),
+				i(1399, {	-- Magic Candle
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 476,	-- Kobold Geomancer
+				}),
+				-- #if BEFORE 8.1.0.28724
+				i(2057, {	-- Pitted Defias Shortsword
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 38,	-- Defias Thug
+				}),
+				-- #endif
+				i(2055, {	-- Small Wooden Hammer
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 80,	-- Kobold Laborer
+				}),
+				i(781, {	-- Stone Gnoll Hammer
+					["timeline"] = { "removed 4.0.3" },
+					["crs"] = {
+						478,	-- Riverpaw Outrunner
+						97,		-- Riverpaw Runt
+					},
+				}),
+				i(1972, {	-- Westfall Deed
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						116,	-- Defias Bandit
+						6866,	-- Defias Bodyguard
+						6846,	-- Defias Dockmaster
+						6927,	-- Defias Dockworker
+						474,	-- Defias Rogue Wizard
+						880,	-- Erlan Drudgemoor
+					},
+				}),
+			}),
 		},
+	}),
+}));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(7962),	-- Wabbit Pelts
+		q(7961),	-- Waskily Wabbits!
 	}),
 }));
