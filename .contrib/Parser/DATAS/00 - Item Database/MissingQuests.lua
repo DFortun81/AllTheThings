@@ -2431,7 +2431,6 @@ q(45606),	--
 q(45636),	-- Dual Boss - Free Attempt Used [DNT]
 q(45653),	-- Kill it with Fire!
 q(45682),	-- Looted Rogue Vault
-q(45728),	-- Legion Assault: Thunder Totem
 q(45745),	-- Legion 110 PvP
 q(45768),	--
 q(45775),	-- FLAG (DNT)
@@ -2527,7 +2526,6 @@ q(46820),	-- REUSE
 q(46823),	-- Shadowstrike and Thunderstrike
 q(46824),	-- Shadowstrike and Thunderstrike Anniversary
 q(46826),	-- Battleplate of the Silver Hand
-q(46831),	-- Broken Village
 q(46872),	--
 q(46873),	--
 q(46874),	--
@@ -2593,117 +2591,16 @@ q(47192),	--
 q(47215),	-- Tracking Quest
 q(47256),	-- Tracking Quest
 q(47265),	--
-q(47288),	-- Valuable Fossils
-q(47359),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
-q(47360),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
-q(47385),	-- Tracking Quest
-q(47386),	-- Tracking Quest
 q(47417),	--
 q(47590),	-- Tier 3 Mob Daily Bonus (DNT)
 q(47626),	--
 q(47655),	--
 q(47658),	-- DNT
 q(47842),	--
-q(47857),	-- REUSE ME
-q(47859),	-- Tracking Quest
 q(47875),	--
 q(47876),	--
 q(47886),	--
 q(47893),	--
 q(48220),	--
-q(48278),	-- Fate of the Life-Binder
-q(48316),	-- Tracking Quest
-q(48340),	-- Tracking Quest
-q(48341),	-- Tracking Quest
-q(48342),	-- Tracking Quest
-q(48377),	-- Tracking Quest
-q(48378),	-- VO LINES FOR WQ
-q(48379),	-- Tracking Quest
-q(48380),	-- Tracking Quest
-q(48392),	-- Tracking Quest
-q(48393),	-- Tracking Quest
-q(48396),	-- Tracking Quest
 q(48457),	-- Tracking Quest
-7.3.0.24484
-7.3.0.24492
-7.3.0.24500
-q(48545),	-- Strange Ecologies
-q(48546),	-- Tracking Quest
-q(48547),	-- Quest
-q(48548),	-- Quest
-q(48568),	-- Tracking Quest
-q(48582),	--
-7.3.0.24539
-q(48631),	-- Securing Krokuun
-q(48632),	-- Void Extract
-q(48633),	--
-q(48685),	-- Lockout Tracking - Boss - Fire
-q(48686),	-- Lockout Tracking - Boss - Ice
-q(48687),	-- Lockout Tracking - Boss - Blood
-q(48688),	-- Lockout Tracking - Boss - Islands
-q(48689),	-- Lockout Tracking - Boss - Marsh
-q(48690),	-- Lockout Tracking - Boss - Forest
-7.3.0.24563
-7.3.0.24608
-q(48784),	--
-q(48819),	-- Tracking Quest
-q(48906),	-- Tracking Quest
-7.3.0.24651
-q(48964),	-- Immortal Ace
-q(48969),	--
-q(49006),	--
-q(49025),	--
-q(49026),	--
-q(49033),	-- REUSE ME
-7.3.0.24681
-7.3.0.24692
-7.3.0.24700
-7.3.0.24715
-7.3.0.24727
-q(49121),	--
-q(49128),	--
-q(49150),	--
-q(49152),	--
-q(49155),	--
-q(49157),	--
-q(49158),	--
-q(49162),	--
-q(49163),	--
-q(49164),	--
-q(49189),	-- Intact Demon Eyes
-q(49190),	-- More Intact Demon Eyes
-q(49191),	-- Many More Intact Demon Eyes
-q(49192),	--
-q(49193),	-- A Pile of Intact Demon Eyes
-q(49194),	-- Another Pile of Intact Demon Eyes
-q(49200),	-- Yet More Intact Demon Eyes
-7.3.0.24730
-7.3.0.24738
-7.3.0.24744
-7.3.0.24758
-7.3.0.24759
-7.3.0.24781
-7.3.0.24793
-7.3.0.24829
-7.3.0.24834
-7.3.0.24843
-7.3.0.24845
-7.3.0.24852
-7.3.0.24853
-7.3.0.24864
-7.3.0.24878
-7.3.0.24887
-7.3.0.24896
-7.3.0.24904
-7.3.0.24920
-7.3.0.24931
-q(49383),	--
-q(49384),	--
-q(49385),	--
-q(49386),	--
-7.3.0.24956
-7.3.0.24970
-7.3.0.24974
-7.3.0.25021
-7.3.0.25195
 --]]

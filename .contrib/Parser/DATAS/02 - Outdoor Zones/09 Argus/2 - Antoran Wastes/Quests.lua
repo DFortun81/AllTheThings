@@ -33,13 +33,7 @@ _.Zones =
 				--[[
 				q(49030),	-- Fragments of the Abyss
 				q(48636),	-- Fueling the Antoran Campaign
-				q(48964),	-- Immortal Ace
-				q(49189),	-- Intact Demon Eyes
 				q(49029),	-- Invasion of Space
-				q(49191),	-- Many More Intact Demon Eyes
-				q(49190, {	-- More Intact Demon Eyes
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49031),	-- Out With The Inquisitors
 --]]			q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
 					["sourceQuests"] = { 48201 },	-- Reinforce Light's Purchase
@@ -58,7 +52,6 @@ _.Zones =
 				}),
 --[[
 				q(49027),	-- Targets of Opportunity: Terminus
-				q(49200),	-- Yet More Intact Demon Eyes
 --]]
 				q(48870, {	-- The Many-Faced Devourer
 					["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",

@@ -231,7 +231,6 @@ _.Zones =
 				}),
 --[[
 				q(48636),	-- Fueling the Antoran Campaign
-				q(48632),	-- Void Extract
 --]]
 			}),
 		}),
