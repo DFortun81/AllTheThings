@@ -907,6 +907,7 @@ for key,value in pairs({
 	[257] = "Barril Suspeito",	-- Suspicious Barrel
 	[259] = "Barril Semienterrado",	-- Half-buried Barrel
 	[261] = "Caixote Danificado",	-- Damaged Crate
+	[269] = "Barril de Cerveja do Trovão Protegido",	-- Guarded Thunder Ale Barrel
 	[270] = "Barril de Cerveja do Trovão Desprotegido",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "Procura-se!",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1561] = "Caixote Selado",	-- Sealed Crate
@@ -1873,6 +1874,7 @@ for key,value in pairs({
 	[241150] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[241151] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[241152] = "Baú do Tesouro",	-- Treasure Chest
+	[241153] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[241154] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[241155] = "Baú do Tesouro",	-- Treasure Chest
 	[241180] = "Baú do Tesouro",	-- Treasure Chest
@@ -2016,6 +2018,7 @@ for key,value in pairs({
 	[245479] = "Baú Desgastado",	-- Battered Chest
 	[245524] = "Baú do Tesouro",	-- Treasure Chest
 	[245525] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
+	[245527] = "Baú do Tesouro",	-- Treasure Chest
 	[245528] = "Baú do Tesouro",	-- Treasure Chest
 	[245529] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[245530] = "Baú do Tesouro Luzente",	-- Glimmering Treasure Chest
@@ -2046,6 +2049,7 @@ for key,value in pairs({
 	[245603] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[245688] = "Urna Funerária Estilhaçada",	-- Shattered Burial Urn
 	[245793] = "Diário Surrado",	-- Battered Journal
+	[245941] = "Fardo Dimensional",	-- Warp Cache
 	[245996] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[246037] = "Baú do Tesouro",	-- Treasure Chest
 	[246147] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
@@ -2098,7 +2102,9 @@ for key,value in pairs({
 	[250541] = "Baú do Tesouro",	-- Treasure Chest
 	[250984] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[250985] = "Baú do Tesouro",	-- Treasure Chest
+	[250987] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251032] = "Armário",	-- Armoire
+	[251124] = "Baú do Tesouro Luzente",	-- Glimmering Treasure Chest
 	[251168] = "Cristal Efêmero",	-- Ephemeral Crystal
 	[251218] = "Pedra Rúnica de Rollo",	-- Rollo's Runestone
 	[251220] = "Pedra Rúnica de Ragnar",	-- Ragnar's Runestone
@@ -2118,6 +2124,7 @@ for key,value in pairs({
 	[251762] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251764] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251772] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
+	[251776] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251780] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251782] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[251792] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
@@ -2224,6 +2231,7 @@ for key,value in pairs({
 	[257393] = "Baú do Tesouro",	-- Treasure Chest
 	[257545] = "Baú do Tesouro",	-- Treasure Chest
 	[257546] = "Baú do Tesouro",	-- Treasure Chest
+	[257978] = "Baú do Tesouro",	-- Treasure Chest
 	[257999] = "Técnica: Tomo da Mente Tranquila",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "Baú do Tesouro Pequeno",	-- Small Treasure Chest
 	[258978] = "Tomo Encharcado",	-- Waterlogged Tome
@@ -2274,6 +2282,7 @@ for key,value in pairs({
 	[273414] = "Baú Eredar Antigo",	-- Ancient Eredar Cache
 	[273415] = "Baú Eredar Antigo",	-- Ancient Eredar Cache
 	[273439] = "Baú Eredar Antigo",	-- Ancient Eredar Cache
+	[273443] = "Baú Infectado pelo Caos",	-- Void-Seeped Cache
 	[273519] = "Suprimentos de Guerra da Legião",	-- Legion War Supplies
 	[273521] = "Suprimentos de Guerra da Legião",	-- Legion War Supplies
 	[273523] = "Suprimentos de Guerra da Legião",	-- Legion War Supplies
@@ -2338,6 +2347,9 @@ for key,value in pairs({
 	[279260] = "Baú \"Inteligentemente\" Disfarçado",	-- Cleverly Disguised Chest
 	[279299] = "Selo Venenoso",	-- Venomous Seal
 	[279609] = "Espólios de Pandária",	-- Spoils of Pandaria
+	[279645] = "Tomo do Oblívio",	-- Tome of Oblivion
+	[279646] = "Crônicas da Guarda de Sangue",	-- Bloodguard Chronicles
+	[279647] = "Tomo do Sacrifício",	-- Tome of Sacrifice
 	[279689] = "Tesouro Nazmani Perdido",	-- Lost Nazmani Treasure
 	[279750] = "Baú Coberto de Feno",	-- Hay Covered Chest
 	[280504] = "Baú Engolido",	-- Swallowed Naga Chest
@@ -2647,7 +2659,10 @@ for key,value in pairs({
 	[337237] = "Cofre Perdido",	-- Lost Vault
 	[337241] = "Equipamento Escondido",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339243] = "Caixa-forte Infestada",	-- Infested Strongbox
 	[339248] = "Depósito Infestado",	-- Infested Cache
+	--TODO: [339249] = "Infested Cache",	-- Infested Cache
+	--TODO: [339250] = "Infested Cache",	-- Infested Cache
 	[339283] = "Baú de Nobre Esquecido",	-- Forgotten Noble's Chest
 	[339601] = "Pergaminho das Eras",	-- Scroll of Aeons
 	[339625] = "Presente de Sofia",	-- Sophia's Gift
@@ -2963,6 +2978,8 @@ for key,value in pairs({
 	[369440] = "Cabedal Fendífero",	-- Riftbound Cache
 	[369602] = "Mãos da Revolta",	-- Hands of Defiance
 	[369757] = "Baú Submerso",	-- Submerged Chest
+	[369893] = "Missiva Urgente",	-- Urgent Missive
+	[369894] = "Missiva Urgente",	-- Urgent Missive
 	[370140] = "Baú de Jiro Danificado",	-- Damaged Jiro Stash
 	[370469] = "Alimento Espectral",	-- Spectral Feed
 	[370494] = "Baú Tocatiano",	-- Toccatian Cache

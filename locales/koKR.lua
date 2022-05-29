@@ -907,6 +907,7 @@ for key,value in pairs({
 	[257] = "수상한 통",	-- Suspicious Barrel
 	[259] = "반쯤 묻힌 통",	-- Half-buried Barrel
 	[261] = "부서진 상자",	-- Damaged Crate
+	[269] = "야벤이 지키고 있는 썬더브루 맥주통",	-- Guarded Thunder Ale Barrel
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
 	[1561] = "봉인된 함",	-- Sealed Crate
@@ -1873,6 +1874,7 @@ for key,value in pairs({
 	[241150] = "작은 보물 상자",	-- Small Treasure Chest
 	[241151] = "작은 보물 상자",	-- Small Treasure Chest
 	[241152] = "보물 상자",	-- Treasure Chest
+	[241153] = "작은 보물 상자",	-- Small Treasure Chest
 	[241154] = "작은 보물 상자",	-- Small Treasure Chest
 	[241155] = "보물 상자",	-- Treasure Chest
 	[241180] = "보물 상자",	-- Treasure Chest
@@ -2016,6 +2018,7 @@ for key,value in pairs({
 	[245479] = "찌그러진 궤짝",	-- Battered Chest
 	[245524] = "보물 상자",	-- Treasure Chest
 	[245525] = "작은 보물 상자",	-- Small Treasure Chest
+	[245527] = "보물 상자",	-- Treasure Chest
 	[245528] = "보물 상자",	-- Treasure Chest
 	[245529] = "작은 보물 상자",	-- Small Treasure Chest
 	[245530] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
@@ -2046,6 +2049,7 @@ for key,value in pairs({
 	[245603] = "작은 보물 상자",	-- Small Treasure Chest
 	[245688] = "조각난 유골 단지",	-- Shattered Burial Urn
 	[245793] = "닳아해진 일지",	-- Battered Journal
+	--TODO: [245941] = "Warp Cache",	-- Warp Cache
 	[245996] = "작은 보물 상자",	-- Small Treasure Chest
 	[246037] = "보물 상자",	-- Treasure Chest
 	[246147] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2098,7 +2102,9 @@ for key,value in pairs({
 	[250541] = "보물 상자",	-- Treasure Chest
 	[250984] = "작은 보물 상자",	-- Small Treasure Chest
 	[250985] = "보물 상자",	-- Treasure Chest
+	[250987] = "작은 보물 상자",	-- Small Treasure Chest
 	[251032] = "장식장",	-- Armoire
+	--TODO: [251124] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
 	[251168] = "찰나의 수정",	-- Ephemeral Crystal
 	[251218] = "롤로의 룬석",	-- Rollo's Runestone
 	[251220] = "라그나르의 룬석",	-- Ragnar's Runestone
@@ -2118,6 +2124,7 @@ for key,value in pairs({
 	[251762] = "작은 보물 상자",	-- Small Treasure Chest
 	[251764] = "작은 보물 상자",	-- Small Treasure Chest
 	[251772] = "작은 보물 상자",	-- Small Treasure Chest
+	[251776] = "작은 보물 상자",	-- Small Treasure Chest
 	[251780] = "작은 보물 상자",	-- Small Treasure Chest
 	[251782] = "작은 보물 상자",	-- Small Treasure Chest
 	[251792] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2224,6 +2231,7 @@ for key,value in pairs({
 	[257393] = "보물 상자",	-- Treasure Chest
 	[257545] = "보물 상자",	-- Treasure Chest
 	[257546] = "보물 상자",	-- Treasure Chest
+	[257978] = "보물 상자",	-- Treasure Chest
 	[257999] = "각인 기법: 고요한 정신의 고서",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "작은 보물 상자",	-- Small Treasure Chest
 	[258978] = "물에 젖은 고서",	-- Waterlogged Tome
@@ -2274,6 +2282,7 @@ for key,value in pairs({
 	--TODO: [273414] = "Ancient Eredar Cache",	-- Ancient Eredar Cache
 	[273415] = "고대 에레다르 보관함",	-- Ancient Eredar Cache
 	[273439] = "고대 에레다르 보관함",	-- Ancient Eredar Cache
+	[273443] = "공허가 스민 보관함",	-- Void-Seeped Cache
 	[273519] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273521] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273523] = "군단 전쟁 물자",	-- Legion War Supplies
@@ -2338,6 +2347,9 @@ for key,value in pairs({
 	[279260] = "\"교묘하게\" 위장된 상자",	-- Cleverly Disguised Chest
 	[279299] = "맹독의 문장",	-- Venomous Seal
 	[279609] = "판다리아 전리품",	-- Spoils of Pandaria
+	--TODO: [279645] = "Tome of Oblivion",	-- Tome of Oblivion
+	[279646] = "혈투사 연대기",	-- Bloodguard Chronicles
+	[279647] = "희생의 고서",	-- Tome of Sacrifice
 	[279689] = "잃어버린 나즈마니 보물",	-- Lost Nazmani Treasure
 	--TODO: [279750] = "Hay Covered Chest",	-- Hay Covered Chest
 	[280504] = "삼켜진 상자",	-- Swallowed Naga Chest
@@ -2647,7 +2659,10 @@ for key,value in pairs({
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r 빈 그릇",	--|cFFFFFFFFStep 2:|r  Empty Dish
+	[339243] = "감염된 금고",	-- Infested Strongbox
 	[339248] = "감염된 보관함",	-- Infested Cache
+	[339249] = "감염된 보관함",	-- Infested Cache
+	[339250] = "감염된 보관함",	-- Infested Cache
 	[339283] = "잊힌 귀족의 상자",	-- Forgotten Noble's Chest
 	[339601] = "영겁의 두루마리",	-- Scroll of Aeons
 	[339625] = "소피아의 선물",	-- Sophia's Gift
@@ -2963,6 +2978,8 @@ for key,value in pairs({
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
 	[369602] = "저항의 손",	-- Hands of Defiance
 	[369757] = "가라앉은 상자",	-- Submerged Chest
+	[369893] = "긴급 서신",	-- Urgent Missive
+	[369894] = "긴급 서신",	-- Urgent Missive
 	[370140] = "손상된 지로 보관함",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[370494] = "토카타 보관함",	-- Toccatian Cache

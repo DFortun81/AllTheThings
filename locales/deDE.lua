@@ -908,6 +908,7 @@ for key,value in pairs({
 	[257] = "Verdächtiges Fass",	-- Suspicious Barrel
 	[259] = "Halb vergrabenes Fass",	-- Half-buried Barrel
 	[261] = "Beschädigte Kiste",	-- Damaged Crate
+	[269] = "Bewachtes Fass mit Donnerbräu Lager",	-- Guarded Thunder Ale Barrel
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
 	[711] = "GESUCHT!",	-- Wanted!
 	[1561] = "Versiegelte Kiste",	-- Sealed Crate
@@ -1874,6 +1875,7 @@ for key,value in pairs({
 	[241150] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[241151] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[241152] = "Schatztruhe",	-- Treasure Chest
+	[241153] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[241154] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[241155] = "Schatztruhe",	-- Treasure Chest
 	[241180] = "Schatztruhe",	-- Treasure Chest
@@ -2017,6 +2019,7 @@ for key,value in pairs({
 	[245479] = "Ramponierte Truhe",	-- Battered Chest
 	[245524] = "Schatztruhe",	-- Treasure Chest
 	[245525] = "Kleine Schatztruhe",	-- Small Treasure Chest
+	[245527] = "Schatztruhe",	-- Treasure Chest
 	[245528] = "Schatztruhe",	-- Treasure Chest
 	[245529] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[245530] = "Glitzernde Schatztruhe",	-- Glimmering Treasure Chest
@@ -2047,6 +2050,7 @@ for key,value in pairs({
 	[245603] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[245688] = "Zerbrochene Graburne",	-- Shattered Burial Urn
 	[245793] = "Zerfleddertes Tagebuch",	-- Battered Journal
+	[245941] = "Warpspeicher",	-- Warp Cache
 	[245996] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[246037] = "Schatztruhe",	-- Treasure Chest
 	[246147] = "Kleine Schatztruhe",	-- Small Treasure Chest
@@ -2099,7 +2103,9 @@ for key,value in pairs({
 	[250541] = "Schatztruhe",	-- Treasure Chest
 	[250984] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[250985] = "Schatztruhe",	-- Treasure Chest
+	[250987] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251032] = "Schrank",	-- Armoire
+	[251124] = "Glitzernde Schatztruhe",	-- Glimmering Treasure Chest
 	[251168] = "Flüchtiger Kristall",	-- Ephemeral Crystal
 	[251218] = "Rollos Runenstein",	-- Rollo's Runestone
 	[251220] = "Ragnars Runenstein",	-- Ragnar's Runestone
@@ -2119,6 +2125,7 @@ for key,value in pairs({
 	[251762] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251764] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251772] = "Kleine Schatztruhe",	-- Small Treasure Chest
+	[251776] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251780] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251782] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[251792] = "Kleine Schatztruhe",	-- Small Treasure Chest
@@ -2225,6 +2232,7 @@ for key,value in pairs({
 	[257393] = "Schatztruhe",	-- Treasure Chest
 	[257545] = "Schatztruhe",	-- Treasure Chest
 	[257546] = "Schatztruhe",	-- Treasure Chest
+	[257978] = "Schatztruhe",	-- Treasure Chest
 	[257999] = "Technik: Foliant des ruhigen Gemüts",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "Kleine Schatztruhe",	-- Small Treasure Chest
 	[258978] = "Durchnässter Foliant",	-- Waterlogged Tome
@@ -2275,6 +2283,7 @@ for key,value in pairs({
 	[273414] = "Uralte Truhe der Eredar",	-- Ancient Eredar Cache
 	[273415] = "Uralte Truhe der Eredar",	-- Ancient Eredar Cache
 	[273439] = "Uralte Truhe der Eredar",	-- Ancient Eredar Cache
+	[273443] = "Leerendurchtränkte Truhe",	-- Void-Seeped Cache
 	[273519] = "Kriegsvorräte der Legion",	-- Legion War Supplies
 	[273521] = "Kriegsvorräte der Legion",	-- Legion War Supplies
 	[273523] = "Kriegsvorräte der Legion",	-- Legion War Supplies
@@ -2339,6 +2348,9 @@ for key,value in pairs({
 	[279260] = "\"Genial\" getarnte Truhe",	-- Cleverly Disguised Chest
 	[279299] = "Giftsiegeltruhe",	-- Venomous Seal
 	[279609] = "Schätze Pandarias",	-- Spoils of Pandaria
+	[279645] = "Foliant der Vergessenheit",	-- Tome of Oblivion
+	[279646] = "Blutwachenchronik",	-- Bloodguard Chronicles
+	[279647] = "Foliant der Opferung",	-- Tome of Sacrifice
 	[279689] = "Verlorener Schatz der Nazmani",	-- Lost Nazmani Treasure
 	[279750] = "Heubedeckte Truhe",	-- Hay Covered Chest
 	[280504] = "Verschluckte Truhe",	-- Swallowed Naga Chest
@@ -2648,7 +2660,10 @@ for key,value in pairs({
 	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
 	[337241] = "Verstaute Ausrüstung",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFSchritt 2:|r Leerer Teller",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339243] = "Befallene Schließkassette",	-- Infested Strongbox
 	[339248] = "Befallene Truhe",	-- Infested Cache
+	[339249] = "Befallene Truhe",	-- Infested Cache
+	[339250] = "Befallene Truhe",	-- Infested Cache
 	[339283] = "Truhe des vergessenen Adligen",	-- Forgotten Noble's Chest
 	[339601] = "Schriftrolle der Äonen",	-- Scroll of Aeons
 	[339625] = "Sophias Gabe",	-- Sophia's Gift
@@ -2964,6 +2979,8 @@ for key,value in pairs({
 	[369440] = "Rissgebundene Truhe",	-- Riftbound Cache
 	[369602] = "Hände des Widerstands",	-- Hands of Defiance
 	[369757] = "Untergetauchte Truhe",	-- Submerged Chest
+	[369893] = "Dringendes Schreiben",	-- Urgent Missive
+	[369894] = "Dringendes Schreiben",	-- Urgent Missive
 	[370140] = "Beschädigter Behälter der Jiro",	-- Damaged Jiro Stash
 	[370469] = "Spektrales Futter",	-- Spectral Feed
 	[370494] = "Toccatianische Truhe",	-- Toccatian Cache
