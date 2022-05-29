@@ -275,7 +275,8 @@ root("Instances", { tier(LEGION_TIER, {
 })});
 
 root("HiddenQuestTriggers", {
-	q(48569),	-- learning Ensemble: Light-Woven Triumvirate Regalia
 	q(48566),	-- learning Ensemble: Venerated Triumvirate Battleplate
 	q(48567),	-- learning Ensemble: Sterling Triumvirate Chainmail
+	q(48568),	-- learning Ensemble: Burnished Triumvirate Armor
+	q(48569),	-- learning Ensemble: Light-Woven Triumvirate Regalia
 });

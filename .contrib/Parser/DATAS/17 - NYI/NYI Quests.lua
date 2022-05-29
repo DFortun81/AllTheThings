@@ -2157,10 +2157,59 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 			-- 7.3.0
 			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
-
+				q(49193),	-- A Pile of Intact Demon Eyes
+				q(49194),	-- Another Pile of Intact Demon Eyes
+				q(45036),	-- Asgrim the Dreadkiller
+				q(46831),	-- Broken Village
+				q(48278),	-- Fate of the Life-Binder
+				q(45034),	-- Fire the Cannons!
+				q(49030, { ["_drop"] = { "g" }, }),	-- Fragments of the Abyss
+				q(48964),	-- Immortal Ace
+				q(49189),	-- Intact Demon Eyes
+				q(49029, { ["_drop"] = { "g" }, }),	-- Invasion of Space
+				q(45728),	-- Legion Assault: Thunder Totem
+				q(47359),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
+				q(47360),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
+				q(48687),	-- Lockout Tracking - Boss - Blood
+				q(48685),	-- Lockout Tracking - Boss - Fire
+				q(48690),	-- Lockout Tracking - Boss - Forest
+				q(48686),	-- Lockout Tracking - Boss - Ice
+				q(48688),	-- Lockout Tracking - Boss - Islands
+				q(48689),	-- Lockout Tracking - Boss - Marsh
+				q(45105),	-- Lord Raz'gor
+				q(49191),	-- Many More Intact Demon Eyes
+				q(49190),	-- More Intact Demon Eyes
+				q(49031, { ["_drop"] = { "g" }, }),	-- Out With The Inquisitors
+				q(48547),	-- Quest
+				q(48548),	-- Quest
+				q(47857),	-- REUSE ME
+				q(49033),	-- REUSE ME
+				q(48631),	-- Securing Krokuun
+				q(48545),	-- Strange Ecologies
+				q(49027, { ["_drop"] = { "g" }, }),	-- Targets of Opportunity: Terminus
+				q(47002),	-- The Crown of the Triumvirate
+				q(47385),	-- Tracking Quest
+				q(47386),	-- Tracking Quest
+				q(47859),	-- Tracking Quest
+				q(48316),	-- Tracking Quest
+				q(48340),	-- Tracking Quest
+				q(48341),	-- Tracking Quest
+				q(48342),	-- Tracking Quest
+				q(48377),	-- Tracking Quest
+				q(48379),	-- Tracking Quest
+				q(48380),	-- Tracking Quest
+				q(48392),	-- Tracking Quest
+				q(48393),	-- Tracking Quest
+				q(48396),	-- Tracking Quest
+				q(48819),	-- Tracking Quest
+				q(48906),	-- Tracking Quest
+				q(47288),	-- Valuable Fossils
+				q(48378),	-- VO LINES FOR WQ
+				q(48632),	-- Void Extract
+				q(40779),	-- We Need Even More Power!
+				q(49200),	-- Yet More Intact Demon Eyes
 			})),
 
-			-- 7.3.2 - no NYI quests
 			tier(LEGION_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
 				-- Tools
 				-- 7.3.2.25079

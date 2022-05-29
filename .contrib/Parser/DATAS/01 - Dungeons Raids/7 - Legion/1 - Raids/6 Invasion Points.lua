@@ -452,6 +452,7 @@ root("HiddenQuestTriggers", {
 		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
 		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
 		q(49175),	-- Greater Invasion Point: Matron Folnuna - bonus roll used
+		q(48620),	-- Greater Invasion Point: Mistress Alluradel - weekly completion
 		q(49173),	-- Greater Invasion Point: Mistress Alluradel - bonus roll used
 		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
