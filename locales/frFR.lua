@@ -906,6 +906,7 @@ for key,value in pairs({
 	[257] = "Tonneau suspect",	-- Suspicious Barrel
 	[259] = "Tonneau à moitié enseveli",	-- Half-buried Barrel
 	[261] = "Caisse endommagée",	-- Damaged Crate
+	[269] = "Tonneau de Tonneblonde gardé",	-- Guarded Thunder Ale Barrel
 	[270] = "Tonneau de Tonneblonde non gardé",	-- Unguarded Thunder Ale Barrel
 	[711] = "Avis de recherche !",	-- Wanted!
 	[1561] = "Caisse scellée",	-- Sealed Crate
@@ -1872,6 +1873,7 @@ for key,value in pairs({
 	[241150] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[241151] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[241152] = "Coffre au trésor",	-- Treasure Chest
+	[241153] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[241154] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[241155] = "Coffre au trésor",	-- Treasure Chest
 	[241180] = "Coffre au trésor",	-- Treasure Chest
@@ -2015,6 +2017,7 @@ for key,value in pairs({
 	[245479] = "Coffre endommagé",	-- Battered Chest
 	[245524] = "Coffre au trésor",	-- Treasure Chest
 	[245525] = "Petit coffre au trésor",	-- Small Treasure Chest
+	[245527] = "Coffre au trésor",	-- Treasure Chest
 	[245528] = "Coffre au trésor",	-- Treasure Chest
 	[245529] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[245530] = "Coffre au trésor scintillant",	-- Glimmering Treasure Chest
@@ -2045,6 +2048,7 @@ for key,value in pairs({
 	[245603] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[245688] = "Urne mortuaire brisée",	-- Shattered Burial Urn
 	[245793] = "Journal endommagé",	-- Battered Journal
+	[245941] = "Cache dimensionnelle",	-- Warp Cache
 	[245996] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[246037] = "Coffre au trésor",	-- Treasure Chest
 	[246147] = "Petit coffre au trésor",	-- Small Treasure Chest
@@ -2097,7 +2101,9 @@ for key,value in pairs({
 	[250541] = "Coffre au trésor",	-- Treasure Chest
 	[250984] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[250985] = "Coffre au trésor",	-- Treasure Chest
+	[250987] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251032] = "Armoire",	-- Armoire
+	[251124] = "Coffre au trésor scintillant",	-- Glimmering Treasure Chest
 	[251168] = "Cristal éphémère",	-- Ephemeral Crystal
 	[251218] = "Pierre runique de Rollo",	-- Rollo's Runestone
 	[251220] = "Pierre runique de Ragnar",	-- Ragnar's Runestone
@@ -2117,6 +2123,7 @@ for key,value in pairs({
 	[251762] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251764] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251772] = "Petit coffre au trésor",	-- Small Treasure Chest
+	[251776] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251780] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251782] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[251792] = "Petit coffre au trésor",	-- Small Treasure Chest
@@ -2223,6 +2230,7 @@ for key,value in pairs({
 	[257393] = "Coffre au trésor",	-- Treasure Chest
 	[257545] = "Coffre au trésor",	-- Treasure Chest
 	[257546] = "Coffre au trésor",	-- Treasure Chest
+	[257978] = "Coffre au trésor",	-- Treasure Chest
 	[257999] = "Technique : Tome de l’esprit tranquille",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "Petit coffre au trésor",	-- Small Treasure Chest
 	[258978] = "Tome détrempé",	-- Waterlogged Tome
@@ -2273,6 +2281,7 @@ for key,value in pairs({
 	[273414] = "Ancienne cache érédar",	-- Ancient Eredar Cache
 	[273415] = "Ancienne cache érédar",	-- Ancient Eredar Cache
 	[273439] = "Ancienne cache érédar",	-- Ancient Eredar Cache
+	[273443] = "Cache infiltrée par le Vide",	-- Void-Seeped Cache
 	[273519] = "Fournitures de guerre de la Légion",	-- Legion War Supplies
 	[273521] = "Fournitures de guerre de la Légion",	-- Legion War Supplies
 	[273523] = "Fournitures de guerre de la Légion",	-- Legion War Supplies
@@ -2337,6 +2346,9 @@ for key,value in pairs({
 	[279260] = "Coffre « habilement » déguisé",	-- Cleverly Disguised Chest
 	[279299] = "Sceau venimeux",	-- Venomous Seal
 	[279609] = "Butin de Pandarie",	-- Spoils of Pandaria
+	[279645] = "Tome de l’oubli",	-- Tome of Oblivion
+	[279646] = "Chroniques de la garde de sang",	-- Bloodguard Chronicles
+	[279647] = "Tome du Sacrifice",	-- Tome of Sacrifice
 	[279689] = "Trésor nazmani perdu",	-- Lost Nazmani Treasure
 	[279750] = "Coffre couvert de foin",	-- Hay Covered Chest
 	[280504] = "Coffre avalé",	-- Swallowed Naga Chest
@@ -2646,7 +2658,10 @@ for key,value in pairs({
 	[337237] = "Caveau perdu",	-- Lost Vault
 	[337241] = "Réserve d’équipement",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r Assiette vide",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339243] = "Coffre-fort infesté",	-- Infested Strongbox
 	[339248] = "Cache infestée",	-- Infested Cache
+	[339249] = "Cache infestée",	-- Infested Cache
+	[339250] = "Cache infestée",	-- Infested Cache
 	[339283] = "Coffre de noble oublié",	-- Forgotten Noble's Chest
 	[339601] = "Parchemin des éons",	-- Scroll of Aeons
 	[339625] = "Don de Sophia",	-- Sophia's Gift
@@ -2962,6 +2977,8 @@ for key,value in pairs({
 	[369440] = "Cache liée à la faille",	-- Riftbound Cache
 	[369602] = "Mains de la défiance",	-- Hands of Defiance
 	[369757] = "Coffre submergé",	-- Submerged Chest
+	[369893] = "Missive urgente",	-- Urgent Missive
+	[369894] = "Missive urgente",	-- Urgent Missive
 	[370140] = "Butin jiro endommagé",	-- Damaged Jiro Stash
 	[370469] = "Céréales spectrales",	-- Spectral Feed
 	[370494] = "Cache toccatienne",	-- Toccatian Cache

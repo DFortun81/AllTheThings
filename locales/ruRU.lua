@@ -893,6 +893,7 @@ for key,value in pairs({
 	[257] = "Подозрительная бочка",	-- Suspicious Barrel
 	[259] = "Полузакопанная бочка",	-- Half-buried Barrel
 	[261] = "Поврежденный ящик",	-- Damaged Crate
+	[269] = "Охраняемая бочка Громового эля",	-- Guarded Thunder Ale Barrel
 	[270] = "Неохраняемая бочка Громового эля",	-- Unguarded Thunder Ale Barrel
 	[711] = "Розыск!",	-- Wanted!
 	[1561] = "Запечатанный ящик",	-- Sealed Crate
@@ -1859,6 +1860,7 @@ for key,value in pairs({
 	[241150] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[241151] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[241152] = "Сундук с сокровищами",	-- Treasure Chest
+	[241153] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[241154] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[241155] = "Сундук с сокровищами",	-- Treasure Chest
 	[241180] = "Сундук с сокровищами",	-- Treasure Chest
@@ -2002,6 +2004,7 @@ for key,value in pairs({
 	[245479] = "Побитый сундук",	-- Battered Chest
 	[245524] = "Сундук с сокровищами",	-- Treasure Chest
 	[245525] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
+	[245527] = "Сундук с сокровищами",	-- Treasure Chest
 	[245528] = "Сундук с сокровищами",	-- Treasure Chest
 	[245529] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[245530] = "Сверкающий сундук с сокровищами",	-- Glimmering Treasure Chest
@@ -2032,6 +2035,7 @@ for key,value in pairs({
 	[245603] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[245688] = "Расколотая погребальная урна",	-- Shattered Burial Urn
 	[245793] = "Потрепанный дневник",	-- Battered Journal
+	[245941] = "Искаженный тайник",	-- Warp Cache
 	[245996] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[246037] = "Сундук с сокровищами",	-- Treasure Chest
 	[246147] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
@@ -2084,7 +2088,9 @@ for key,value in pairs({
 	[250541] = "Сундук с сокровищами",	-- Treasure Chest
 	[250984] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[250985] = "Сундук с сокровищами",	-- Treasure Chest
+	[250987] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251032] = "Комод",	-- Armoire
+	[251124] = "Сверкающий сундук с сокровищами",	-- Glimmering Treasure Chest
 	[251168] = "Эфемерный кристалл",	-- Ephemeral Crystal
 	[251218] = "Рунический камень Ролло",	-- Rollo's Runestone
 	[251220] = "Рунический камень Рагнара",	-- Ragnar's Runestone
@@ -2104,6 +2110,7 @@ for key,value in pairs({
 	[251762] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251764] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251772] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
+	[251776] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251780] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251782] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[251792] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
@@ -2210,6 +2217,7 @@ for key,value in pairs({
 	[257393] = "Сундук с сокровищами",	-- Treasure Chest
 	[257545] = "Сундук с сокровищами",	-- Treasure Chest
 	[257546] = "Сундук с сокровищами",	-- Treasure Chest
+	[257978] = "Сундук с сокровищами",	-- Treasure Chest
 	[257999] = "Техника: фолиант безмятежного разума",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "Маленький сундук с сокровищами",	-- Small Treasure Chest
 	[258978] = "Промокший насквозь фолиант",	-- Waterlogged Tome
@@ -2260,6 +2268,7 @@ for key,value in pairs({
 	[273414] = "Древний эредарский тайник",	-- Ancient Eredar Cache
 	[273415] = "Древний эредарский тайник",	-- Ancient Eredar Cache
 	[273439] = "Древний эредарский тайник",	-- Ancient Eredar Cache
+	[273443] = "Тронутый Бездной тайник",	-- Void-Seeped Cache
 	[273519] = "Военные припасы Легиона",	-- Legion War Supplies
 	[273521] = "Военные припасы Легиона",	-- Legion War Supplies
 	[273523] = "Военные припасы Легиона",	-- Legion War Supplies
@@ -2324,6 +2333,9 @@ for key,value in pairs({
 	[279260] = "\"Хитроумно\" замаскированный сундук",	-- Cleverly Disguised Chest
 	[279299] = "Сундук с отравленной печатью",	-- Venomous Seal
 	[279609] = "Пандарийские трофеи",	-- Spoils of Pandaria
+	[279645] = "Фолиант забвения",	-- Tome of Oblivion
+	[279646] = "Хроники кровавых стражей",	-- Bloodguard Chronicles
+	[279647] = "Фолиант жертвоприношения",	-- Tome of Sacrifice
 	[279689] = "Утерянное назманийское сокровище",	-- Lost Nazmani Treasure
 	[279750] = "Покрытый сеном сундук",	-- Hay Covered Chest
 	[280504] = "Проглоченный сундук",	-- Swallowed Naga Chest
@@ -2633,7 +2645,10 @@ for key,value in pairs({
 	[337237] = "Утерянное хранилище",	-- Lost Vault
 	[337241] = "Сложенное снаряжение",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFШаг 2:|r Пустая миска",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339243] = "Зараженный сундучок",	-- Infested Strongbox
 	[339248] = "Зараженный тайник",	-- Infested Cache
+	[339249] = "Зараженный тайник",	-- Infested Cache
+	[339250] = "Зараженный тайник",	-- Infested Cache
 	[339283] = "Позабытый сундук аристократа",	-- Forgotten Noble's Chest
 	[339601] = "Свиток веков",	-- Scroll of Aeons
 	[339625] = "Дар Софии",	-- Sophia's Gift
@@ -2949,6 +2964,8 @@ for key,value in pairs({
 	[369440] = "Тайник Разлома",	-- Riftbound Cache
 	[369602] = "Руки непокорных",	-- Hands of Defiance
 	[369757] = "Погруженный сундук",	-- Submerged Chest
+	[369893] = "Срочное послание",	-- Urgent Missive
+	[369894] = "Срочное послание",	-- Urgent Missive
 	[370140] = "Поврежденный тайник джиро",	-- Damaged Jiro Stash
 	[370469] = "Призрачный корм",	-- Spectral Feed
 	[370494] = "Токкатийский тайник",	-- Toccatian Cache

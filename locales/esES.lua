@@ -911,6 +911,7 @@ for key,value in pairs({
 	[257] = "Barrica sospechosa",	-- Suspicious Barrel
 	[259] = "Barrica semienterrada",	-- Half-buried Barrel
 	[261] = "Cajón dañado",	-- Damaged Crate
+	[269] = "Barrica de Cerveza del Trueno custodiado",	-- Guarded Thunder Ale Barrel
 	[270] = "Barrica de Cerveza del Trueno sin vigilar",	-- Unguarded Thunder Ale Barrel
 	[711] = "¡Se busca!",	-- Wanted!
 	[1561] = "Cajón sellado",	-- Sealed Crate
@@ -1877,6 +1878,7 @@ for key,value in pairs({
 	[241150] = "Arqueta pequeña",	-- Small Treasure Chest
 	[241151] = "Arqueta pequeña",	-- Small Treasure Chest
 	[241152] = "Arqueta",	-- Treasure Chest
+	[241153] = "Arqueta pequeña",	-- Small Treasure Chest
 	[241154] = "Arqueta pequeña",	-- Small Treasure Chest
 	[241155] = "Arqueta",	-- Treasure Chest
 	[241180] = "Arqueta",	-- Treasure Chest
@@ -2020,6 +2022,7 @@ for key,value in pairs({
 	[245479] = "Cofre maltrecho",	-- Battered Chest
 	[245524] = "Arqueta",	-- Treasure Chest
 	[245525] = "Arqueta pequeña",	-- Small Treasure Chest
+	[245527] = "Arqueta",	-- Treasure Chest
 	[245528] = "Arqueta",	-- Treasure Chest
 	[245529] = "Arqueta pequeña",	-- Small Treasure Chest
 	[245530] = "Arqueta brillante",	-- Glimmering Treasure Chest
@@ -2050,6 +2053,7 @@ for key,value in pairs({
 	[245603] = "Arqueta pequeña",	-- Small Treasure Chest
 	[245688] = "Urna funeraria destrozada",	-- Shattered Burial Urn
 	[245793] = "Diario maltrecho",	-- Battered Journal
+	[245941] = "Alijo de distorsión",	-- Warp Cache
 	[245996] = "Arqueta pequeña",	-- Small Treasure Chest
 	[246037] = "Arqueta",	-- Treasure Chest
 	[246147] = "Arqueta pequeña",	-- Small Treasure Chest
@@ -2102,7 +2106,9 @@ for key,value in pairs({
 	[250541] = "Arqueta",	-- Treasure Chest
 	[250984] = "Arqueta pequeña",	-- Small Treasure Chest
 	[250985] = "Arqueta",	-- Treasure Chest
+	[250987] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251032] = "Ropero",	-- Armoire
+	[251124] = "Arqueta brillante",	-- Glimmering Treasure Chest
 	[251168] = "Cristal efímero",	-- Ephemeral Crystal
 	[251218] = "Piedra rúnica de Rolo",	-- Rollo's Runestone
 	[251220] = "Piedra rúnica de Ragnar",	-- Ragnar's Runestone
@@ -2122,6 +2128,7 @@ for key,value in pairs({
 	[251762] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251764] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251772] = "Arqueta pequeña",	-- Small Treasure Chest
+	[251776] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251780] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251782] = "Arqueta pequeña",	-- Small Treasure Chest
 	[251792] = "Arqueta pequeña",	-- Small Treasure Chest
@@ -2228,6 +2235,7 @@ for key,value in pairs({
 	[257393] = "Arqueta",	-- Treasure Chest
 	[257545] = "Arqueta",	-- Treasure Chest
 	[257546] = "Arqueta",	-- Treasure Chest
+	[257978] = "Arqueta",	-- Treasure Chest
 	[257999] = "Técnica: Escrito de la mente tranquila",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "Arqueta pequeña",	-- Small Treasure Chest
 	[258978] = "Tomo empapado",	-- Waterlogged Tome
@@ -2278,6 +2286,7 @@ for key,value in pairs({
 	[273414] = "Alijo eredar antiguo",	-- Ancient Eredar Cache
 	[273415] = "Alijo eredar antiguo",	-- Ancient Eredar Cache
 	[273439] = "Alijo eredar antiguo",	-- Ancient Eredar Cache
+	[273443] = "Alijo calado de Vacío",	-- Void-Seeped Cache
 	[273519] = "Suministros bélicos de la Legión",	-- Legion War Supplies
 	[273521] = "Suministros bélicos de la Legión",	-- Legion War Supplies
 	[273523] = "Suministros bélicos de la Legión",	-- Legion War Supplies
@@ -2342,6 +2351,9 @@ for key,value in pairs({
 	[279260] = "Cofre \"astutamente\" camuflado",	-- Cleverly Disguised Chest
 	[279299] = "Sello venenoso",	-- Venomous Seal
 	[279609] = "Botín de Pandaria",	-- Spoils of Pandaria
+	[279645] = "Tomo de olvido",	-- Tome of Oblivion
+	[279646] = "Crónicas de guardia de sangre",	-- Bloodguard Chronicles
+	[279647] = "Escrito sobre Sacrificio",	-- Tome of Sacrifice
 	[279689] = "Tesoro Nazmani perdido",	-- Lost Nazmani Treasure
 	[279750] = "Cofre cubierto de heno",	-- Hay Covered Chest
 	[280504] = "Tesoro tragado",	-- Swallowed Naga Chest
@@ -2651,7 +2663,10 @@ for key,value in pairs({
 	[337237] = "Cámara perdida",	-- Lost Vault
 	[337241] = "Equipamiento oculto",	-- Stashed Equipment
 	[339211] = "|cFFFFFFFFStep 2:|r Plato vacío",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	[339243] = "Caja fuerte infestada",	-- Infested Strongbox
 	[339248] = "Alijo infestado",	-- Infested Cache
+	[339249] = "Alijo infestado",	-- Infested Cache
+	[339250] = "Alijo infestado",	-- Infested Cache
 	[339283] = "Cofre de noble olvidado",	-- Forgotten Noble's Chest
 	[339601] = "Pergamino de los Eones",	-- Scroll of Aeons
 	[339625] = "Don de Sophia",	-- Sophia's Gift
@@ -2967,6 +2982,8 @@ for key,value in pairs({
 	[369440] = "Alijo vinculafalla",	-- Riftbound Cache
 	[369602] = "Manos de desafío",	-- Hands of Defiance
 	[369757] = "Cofre sumergido",	-- Submerged Chest
+	[369893] = "Misiva urgente",	-- Urgent Missive
+	[369894] = "Misiva urgente",	-- Urgent Missive
 	[370140] = "Alijo jiro dañado",	-- Damaged Jiro Stash
 	[370469] = "Pienso espectral",	-- Spectral Feed
 	[370494] = "Alijo de tocata",	-- Toccatian Cache

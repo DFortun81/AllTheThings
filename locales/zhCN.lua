@@ -912,6 +912,7 @@ for key, value in pairs({
 	[257] = "可疑的桶",	-- Suspicious Barrel
 	[259] = "半埋的大桶",	-- Half-buried Barrel
 	[261] = "破损的箱子",	-- Damaged Crate
+	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1561] = "密封的箱子",	-- Sealed Crate
@@ -1878,6 +1879,7 @@ for key, value in pairs({
 	[241150] = "小宝箱",	-- Small Treasure Chest
 	[241151] = "小宝箱",	-- Small Treasure Chest
 	[241152] = "宝箱",	-- Treasure Chest
+	[241153] = "小宝箱",	-- Small Treasure Chest
 	[241154] = "小宝箱",	-- Small Treasure Chest
 	[241155] = "宝箱",	-- Treasure Chest
 	[241180] = "宝箱",	-- Treasure Chest
@@ -2021,6 +2023,7 @@ for key, value in pairs({
 	--TODO: [245479] = "Battered Chest",	-- Battered Chest
 	[245524] = "宝箱",	-- Treasure Chest
 	[245525] = "小宝箱",	-- Small Treasure Chest
+	[245527] = "宝箱",	-- Treasure Chest
 	[245528] = "宝箱",	-- Treasure Chest
 	[245529] = "小宝箱",	-- Small Treasure Chest
 	[245530] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest
@@ -2051,6 +2054,7 @@ for key, value in pairs({
 	[245603] = "小宝箱",	-- Small Treasure Chest
 	[245688] = "碎裂的骨灰坛",	-- Shattered Burial Urn
 	[245793] = "破碎的日记",	-- Battered Journal
+	--TODO: [245941] = "Warp Cache",	-- Warp Cache
 	[245996] = "小宝箱",	-- Small Treasure Chest
 	[246037] = "宝箱",	-- Treasure Chest
 	[246147] = "小宝箱",	-- Small Treasure Chest
@@ -2103,7 +2107,9 @@ for key, value in pairs({
 	[250541] = "宝箱",	-- Treasure Chest
 	[250984] = "小宝箱",	-- Small Treasure Chest
 	[250985] = "宝箱",	-- Treasure Chest
+	[250987] = "小宝箱",	-- Small Treasure Chest
 	[251032] = "衣橱",	-- Armoire
+	--TODO: [251124] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
 	[251168] = "瞬灭水晶",	-- Ephemeral Crystal
 	[251218] = "罗洛的符文石",	-- Rollo's Runestone
 	[251220] = "拉格纳的符文石",	-- Ragnar's Runestone
@@ -2123,6 +2129,7 @@ for key, value in pairs({
 	[251762] = "小宝箱",	-- Small Treasure Chest
 	[251764] = "小宝箱",	-- Small Treasure Chest
 	[251772] = "小宝箱",	-- Small Treasure Chest
+	[251776] = "小宝箱",	-- Small Treasure Chest
 	[251780] = "小宝箱",	-- Small Treasure Chest
 	[251782] = "小宝箱",	-- Small Treasure Chest
 	[251792] = "小宝箱",	-- Small Treasure Chest
@@ -2229,6 +2236,7 @@ for key, value in pairs({
 	[257393] = "宝箱",	-- Treasure Chest
 	[257545] = "宝箱",	-- Treasure Chest
 	[257546] = "宝箱",	-- Treasure Chest
+	[257978] = "宝箱",	-- Treasure Chest
 	[257999] = "工艺图：宁神书卷",	-- Technique: Tome of the Tranquil Mind
 	[258690] = "小宝箱",	-- Small Treasure Chest
 	[258978] = "浸水的书籍",	-- Waterlogged Tome
@@ -2279,6 +2287,7 @@ for key, value in pairs({
 	[273414] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
 	[273415] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
 	[273439] = "上古艾瑞达宝箱",	-- Ancient Eredar Cache
+	[273443] = "浸透虚空的宝箱",	-- Void-Seeped Cache
 	[273519] = "军团战争物资",	-- Legion War Supplies
 	[273521] = "军团战争物资",	-- Legion War Supplies
 	[273523] = "军团战争物资",	-- Legion War Supplies
@@ -2343,6 +2352,9 @@ for key, value in pairs({
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
 	[279299] = "剧毒封印",	-- Venomous Seal
 	--TODO: [279609] = "Spoils of Pandaria",	-- Spoils of Pandaria
+	--TODO: [279645] = "Tome of Oblivion",	-- Tome of Oblivion
+	[279646] = "血卫士编年史",	-- Bloodguard Chronicles
+	[279647] = "牺牲之书",	-- Tome of Sacrifice
 	[279689] = "丢失的纳兹曼尼宝物",	-- Lost Nazmani Treasure
 	[279750] = "干草覆盖的宝箱",	-- Hay Covered Chest
 	[280504] = "被吞没的宝箱",	-- Swallowed Naga Chest
@@ -2652,7 +2664,10 @@ for key, value in pairs({
 	[337237] = "失落宝物",	-- Lost Vault
 	[337241] = "贮藏的装备",	-- Stashed Equipment
 	--TODO: [339211] = "|cFFFFFFFFStep 2:|r Empty Dish",	-- |cFFFFFFFFStep 2:|r Empty Dish
+	--TODO: [339243] = "Infested Strongbox",	-- Infested Strongbox
 	[339248] = "感染宝箱",	-- Infested Cache
+	[339249] = "感染宝箱",	-- Infested Cache
+	--TODO: [339250] = "Infested Cache",	-- Infested Cache
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
 	--TODO: [339625] = "Sophia's Gift",	-- Sophia's Gift
@@ -2968,6 +2983,8 @@ for key, value in pairs({
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
 	[369602] = "蔑视之手",	-- Hands of Defiance
 	[369757] = "水下的宝箱",	-- Submerged Chest
+	[369893] = "急件",	-- Urgent Missive
+	[369894] = "急件",	-- Urgent Missive
 	[370140] = "损坏的机若藏品",	-- Damaged Jiro Stash
 	--TODO: [370469] = "Spectral Feed",	-- Spectral Feed
 	[370494] = "弹奏宝箱",	-- Toccatian Cache
