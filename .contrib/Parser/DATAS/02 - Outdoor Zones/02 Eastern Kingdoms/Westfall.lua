@@ -380,6 +380,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(26378, {	-- Hero's Call: Westfall!
+					["qgs"] = {
+						963,	-- Deputy Rainer
+						240,	-- Marshal Dughan
+						261,	-- Guard Thomas
+						294,	-- Marshal Haggard
+						42256,	-- Marshal Patterson
+					},
+					["coords"] = {
+						{ 24.2, 74.6, ELWYNN_FOREST },
+						{ 42.2, 65.8, ELWYNN_FOREST },
+						{ 73.8, 72.2, ELWYNN_FOREST },
+						{ 84.6, 69.4, ELWYNN_FOREST },
+						{ 81.8, 66.0, ELWYNN_FOREST },
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(26266, {	-- Hope for the People
 					["qg"] = 235,	-- Salma Saldean
 					["sourceQuest"] = 26270,	-- You Have Our Thanks

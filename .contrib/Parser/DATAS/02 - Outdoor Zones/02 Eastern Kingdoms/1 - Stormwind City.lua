@@ -522,17 +522,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26395, {	-- Dungar Longdrink
-					["sourceQuests"] = { 26394 },	-- Continue to Stormwind
-					["provider"] = { "n", 1323 },	-- Osric Strang
+					["qg"] = 1323,	-- Osric Strang
+					["sourceQuest"] = 26394,	-- Continue to Stormwind
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
+					["timeline"] = { "added 4.0.3" },
 					["races"] = { HUMAN },
 				}),
 				q(6261, {	-- Dungar Longdrink
-					["sourceQuests"] = { 6281 },	-- Continue to Stormwind
-					["provider"] = { "n", 1323 },	-- Osric Strang
+					["qg"] = 1323,	-- Osric Strang
+					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = { HUMAN },
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
 					["isBreadcrumb"] = true,

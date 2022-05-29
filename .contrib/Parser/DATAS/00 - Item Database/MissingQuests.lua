@@ -5,8 +5,6 @@ q(27),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Lear
 q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
 q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(39),	-- Deliver Thomas' Report,		TBC: Deliver Thomas' Report,		CLASSIC: Deliver Thomas' Report
-q(61),	-- Shipment to Stormwind,		TBC: Shipment to Stormwind,		CLASSIC: Shipment to Stormwind
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -349,7 +347,6 @@ q(1818),	-- Speak with Dillinger,		TBC: Speak with Dillinger,		CLASSIC: Speak wi
 q(1819),	-- Ulag the Cleaver,		TBC: Ulag the Cleaver,		CLASSIC: Ulag the Cleaver
 q(1820),	-- Speak with Coleman,		TBC: Speak with Coleman,		CLASSIC: Speak with Coleman
 q(1821),	-- Agamand Heirlooms,		TBC: Agamand Heirlooms,		CLASSIC: Agamand Heirlooms
-q(1860),	-- Speak with Jennea,		TBC: Speak with Jennea,		CLASSIC: Speak with Jennea
 q(1881),	-- Speak with Anastasia,		TBC: Speak with Anastasia,		CLASSIC: Speak with Anastasia
 q(1885),	-- Mennet Carkad,		TBC: Mennet Carkad,		CLASSIC: Mennet Carkad
 q(1886),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
@@ -380,7 +377,6 @@ q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadew
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
 q(2298),	-- Kingly Shakedown,		TBC: Kingly Shakedown,		CLASSIC: Kingly Shakedown
-q(2300),	-- SI:7,		TBC: SI:7,		CLASSIC: SI:7
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2360),	-- Mathias and the Defias,		TBC: Mathias and the Defias,		CLASSIC: Mathias and the Defias
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
