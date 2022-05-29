@@ -8493,13 +8493,27 @@ local fields = {
 		return app.CollectibleAchievements;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
-		if select(13, GetAchievementInfo(t.achievementID)) then
-			app.CurrentCharacter.Achievements[t.achievementID] = 1;
-			ATTAccountWideData.Achievements[t.achievementID] = 1;
-			return 1;
+		if t.saved then return 1; end
+		if app.AccountWideAchievements then
+			local id = t.achievementID;
+			-- cached account-wide credit, or API account-wide credit
+			if ATTAccountWideData.Achievements[id] then return 2; end
+			local acctApiCredit = select(4, GetAchievementInfo(id));
+			if acctApiCredit then
+				return 2;
+			end
 		end
-		if app.AccountWideAchievements and ATTAccountWideData.Achievements[t.achievementID] then return 2; end
+	end,
+	["trackable"] = app.ReturnTrue,
+	["saved"] = function(t)
+		local id = t.achievementID;
+		if app.CurrentCharacter.Achievements[id] then return true; end
+		local earnedByMe = select(13, GetAchievementInfo(id));
+		if earnedByMe then
+			app.CurrentCharacter.Achievements[id] = 1;
+			ATTAccountWideData.Achievements[id] = 1;
+			return true;
+		end
 	end,
 	["parentCategoryID"] = function(t)
 		return GetAchievementCategory(t.achievementID) or -1;
@@ -8627,12 +8641,14 @@ local criteriaFields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		local achievementID = t.achievementID;
-		if achievementID then
-			if app.CurrentCharacter.Achievements[achievementID] then return 1; end
-			if app.AccountWideAchievements and ATTAccountWideData.Achievements[achievementID] then return 2; end
-			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
-				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+		if t.saved then return 1; end
+		if app.AccountWideAchievements then
+			local achievementID = t.achievementID;
+			-- cached account-wide credit, or API account-wide credit
+			if ATTAccountWideData.Achievements[achievementID] then return 2; end
+			local acctApiCredit = select(4, GetAchievementInfo(achievementID));
+			if acctApiCredit then
+				return 2;
 			end
 		end
 	end,
