@@ -831,7 +831,6 @@ q(7874),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,	
 q(7875),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
 q(7876),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
 q(7904),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(7962),	-- [DEPRECATED] Wabbit Pelts,		TBC: Wabbit Pelts,		CLASSIC: Wabbit Pelts
 q(8080),	-- Arathi Basin Resources!,		TBC: Arathi Basin Resources!,		CLASSIC: Arathi Basin Resources!
 q(8123),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines,		CLASSIC: Cut Arathor Supply Lines
 q(8152),	-- REUSE,		CLASSIC: REUSE
@@ -2406,7 +2405,6 @@ q(45310),	-- 7.1.5 Class Hall - Brawlers - Fight 03 - Overmax Reward Credit - Tr
 q(45314),	-- Treasure 060 - Fel Hammer
 q(45315),	-- 7.1.5 Class Hall - Brawlers - Intro - Tracking Quest - Has Picked up Quest Item
 q(45332),	-- Tracking Quest - Zirux
-q(45333),	-- On Unhallowed Ground
 q(45336),	--
 q(45338),	--
 q(45340),	-- Sea Giant's Stash
@@ -2596,44 +2594,15 @@ q(47215),	-- Tracking Quest
 q(47256),	-- Tracking Quest
 q(47265),	--
 q(47288),	-- Valuable Fossils
-q(47331),	-- Tracking Quest
 q(47359),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
 q(47360),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
 q(47385),	-- Tracking Quest
 q(47386),	-- Tracking Quest
 q(47417),	--
-q(47424),	-- FLAG - First Chromie Saved
 q(47590),	-- Tier 3 Mob Daily Bonus (DNT)
-q(47609),	-- Wild Gladiator's Chain Armor
-q(47610),	-- Golden King Plate
-q(47611),	-- Betrayer Regalia
-q(47612),	-- Windfury Set
-q(47613),	-- Silent Assassin Armor
-q(47614),	-- Light Regalia
-q(47615),	-- Holy Warrior Plate
-q(47616),	-- Regal Lord Armor
-q(47617),	-- Elemental Triad Regalia
-q(47618),	-- Howling Beast Set
-q(47619),	-- Cycle Armor
-q(47620),	-- Lich Lord Plate
 q(47626),	--
 q(47655),	--
 q(47658),	-- DNT
-q(47715),	-- Tracking Quest
-q(47795),	-- Chromie Reputation
-q(47796),	-- Timewarped Badges
-q(47798),	-- Chromie Reputation
-q(47799),	-- Chromie Reputation
-q(47800),	-- Chromie Reputation Aura
-q(47801),	-- Gold
-q(47802),	-- Fangs of the Bronze
-q(47803),	-- Hide of the Bronze
-q(47804),	-- Wings of the Bronze
-q(47805),	-- Stolen Time
-q(47806),	-- Draconic Assistant
-q(47820),	-- Stolen Time
-q(47821),	-- Stolen Time
-q(47825),	-- Keepsake Box
 q(47842),	--
 q(47857),	-- REUSE ME
 q(47859),	-- Tracking Quest
@@ -2641,9 +2610,6 @@ q(47875),	--
 q(47876),	--
 q(47886),	--
 q(47893),	--
-q(47923),	-- Tracking Quest
-q(47964),	-- Shoe Shine Kit Tracking Quest
-q(48062),	-- Scarlet Crusader
 q(48220),	--
 q(48278),	-- Fate of the Life-Binder
 q(48316),	-- Tracking Quest
@@ -2740,62 +2706,4 @@ q(49386),	--
 7.3.0.24974
 7.3.0.25021
 7.3.0.25195
-7.3.2.25079
-7.3.2.25163
-q(49619),	--
-q(49621),	--
-7.3.2.25196
-7.3.2.25208
-7.3.2.25255
-7.3.2.25326
-7.3.2.25383
-7.3.2.25442
-7.3.2.25455
-7.3.2.25477
-7.3.2.25480
-7.3.2.25497
-7.3.2.25516
-7.3.2.25549
-7.3.5.25928
-q(47957),	--
-q(47958),	--
-q(48490),	--
-q(48491),	--
-q(48602),	--
-q(48603),	--
-q(49659),	--
-q(49660),	--
-q(49760),	--
-q(49761),	--
-q(49762),	--
-q(49763),	--
-q(49764),	--
-q(49786),	--
-q(49815),	--
-q(49909),	--
-q(50050),	--
-q(50051),	--
-q(50180),	--
-q(50182),	--
-q(50184),	--
-q(50186),	--
-q(50222),	--
-q(50256),	--
-q(50257),	--
-q(50258),	--
-q(50312),	--
-q(50320),	--
-7.3.5.25937
-7.3.5.25944
-7.3.5.25946
-7.3.5.25950
-7.3.5.25961
-7.3.5.25996
-7.3.5.26124
-7.3.5.26365
-7.3.5.26654
-7.3.5.26755
-7.3.5.26822
-7.3.5.26899
-7.3.5.26972
 --]]

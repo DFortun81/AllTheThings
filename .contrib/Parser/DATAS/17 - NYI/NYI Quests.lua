@@ -95,7 +95,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(45538),	-- 10v10 Weekly Quest UI
 			q(43497),	-- Legion 110 A
 			q(43498),	-- Legion 110 A
-			
+
 			q(42457),	-- Legion 110 A
 			q(42458),	-- Legion 110 A
 			q(42462),	-- Legion 110 A
@@ -118,7 +118,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(53733),	-- Legion 110 A
 			q(43499),	-- Legion 110 H
 			q(43500),	-- Legion 110 H
-			
+
 			q(42459),	-- Legion 110 H
 			q(42460),	-- Legion 110 H
 			q(42463),	-- Legion 110 H
@@ -2092,22 +2092,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(38313),	-- [PH] Worg Pelts
 				q(36939),	-- [UNUSED]Blood of the Annihilan
 			})),
-			
+
 			-- 7.0.3
 			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
-				
+
 			})),
-			
+
 			-- 7.1.0
 			tier(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 7.1.0" } }, {
-				
+
 			})),
-			
+
 			-- 7.1.5
 			tier(LEGION_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 7.1.5" } }, {
-				
+
 			})),
-			
+
 			-- 7.2.0
 			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
 				q(45816),	-- Choose Order Hall to Support
@@ -2115,7 +2115,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
 				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 			})),
-			
+
 			-- 7.2.5
 			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
 				q(43404),	-- A Gathering for the Grand Master
@@ -2154,14 +2154,33 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(47804),	-- Wings of the Bronze
 				q(47290),	-- World Event Dungeon - Hummel
 			})),
-			
+
 			-- 7.3.0
 			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
-				
+
 			})),
-			
+
 			-- 7.3.2 - no NYI quests
-			
+			tier(LEGION_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
+				-- Tools
+				-- 7.3.2.25079
+				-- 7.3.2.25163
+				q(49619),	--
+				q(49621),	--
+				-- 7.3.2.25196
+				-- 7.3.2.25208
+				-- 7.3.2.25255
+				-- 7.3.2.25326
+				-- 7.3.2.25383
+				-- 7.3.2.25442
+				-- 7.3.2.25455
+				-- 7.3.2.25477
+				-- 7.3.2.25480
+				-- 7.3.2.25497
+				-- 7.3.2.25516
+				-- 7.3.2.25549
+			})),
+
 			-- 7.3.5
 			tier(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = { "created 7.3.5" } }, {
 				q(50035),	-- Bret Test - SQL
@@ -2170,6 +2189,49 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49789),	-- The Pledge
 				q(48489),	-- The Spires of Home
 				q(49931),	-- The Titan's Wrath
+				-- Tools
+				-- 7.3.5.25928
+				q(47957),	--
+				q(47958),	--
+				q(48490),	--
+				q(48491),	--
+				q(48602),	--
+				q(48603),	--
+				q(49659),	--
+				q(49660),	--
+				q(49760),	--
+				q(49761),	--
+				q(49762),	--
+				q(49763),	--
+				q(49764),	--
+				q(49786),	--
+				q(49815),	--
+				q(49909),	--
+				q(50050),	--
+				q(50051),	--
+				q(50180),	--
+				q(50182),	--
+				q(50184),	--
+				q(50186),	--
+				q(50222),	--
+				q(50256),	--
+				q(50257),	--
+				q(50258),	--
+				q(50312),	--
+				q(50320),	--
+				-- 7.3.5.25937
+				-- 7.3.5.25944
+				-- 7.3.5.25946
+				-- 7.3.5.25950
+				-- 7.3.5.25961
+				-- 7.3.5.25996
+				-- 7.3.5.26124
+				-- 7.3.5.26365
+				-- 7.3.5.26654
+				-- 7.3.5.26755
+				-- 7.3.5.26822
+				-- 7.3.5.26899
+				-- 7.3.5.26972
 			})),
 		}),
 	}),
