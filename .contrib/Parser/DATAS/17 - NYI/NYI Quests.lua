@@ -2119,7 +2119,41 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			
 			-- 7.2.5
 			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
-				
+				q(43404),	-- A Gathering for the Grand Master
+				q(45441),	-- Adacic Grubs - REWORK
+				q(47611),	-- Betrayer Regalia
+				q(47619),	-- Cycle Armor
+				q(47806),	-- Draconic Assistant
+				q(47617),	-- Elemental Triad Regalia
+				q(47802),	-- Fangs of the Bronze
+				q(47424),	-- FLAG - First Chromie Saved
+				q(47801),	-- Gold
+				q(47610),	-- Golden King Plate
+				q(47803),	-- Hide of the Bronze
+				q(47615),	-- Holy Warrior Plate
+				q(47618),	-- Howling Beast Set
+				q(47795),	-- Chromie Reputation
+				q(47798),	-- Chromie Reputation
+				q(47799),	-- Chromie Reputation
+				q(47800),	-- Chromie Reputation Aura
+				q(47825),	-- Keepsake Box
+				q(47614),	-- Light Regalia
+				q(47620),	-- Lich Lord Plate
+				q(45333),	-- On Unhallowed Ground
+				q(47616),	-- Regal Lord Armor
+				q(48062),	-- Scarlet Crusader
+				q(47964),	-- Shoe Shine Kit Tracking Quest
+				q(47613),	-- Silent Assassin Armor
+				q(47805),	-- Stolen Time
+				q(47820),	-- Stolen Time
+				q(47821),	-- Stolen Time
+				q(47796),	-- Timewarped Badges
+				q(47331),	-- Tracking Quest
+				q(47715),	-- Tracking Quest
+				q(47609),	-- Wild Gladiator's Chain Armor
+				q(47612),	-- Windfury Set
+				q(47804),	-- Wings of the Bronze
+				q(47290),	-- World Event Dungeon - Hummel
 			})),
 			
 			-- 7.3.0
@@ -2127,10 +2161,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				
 			})),
 			
+			-- 7.3.2 - no NYI quests
+			
 			-- 7.3.5
 			tier(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = { "created 7.3.5" } }, {
 				q(50035),	-- Bret Test - SQL
-				q(50384),	-- Doug Test - Completable Quest4
+				q(50384, { ["_drop"] = { "g" }, }),	-- Doug Test - Completable Quest4
 				q(50250),	-- Posthaste
 				q(49789),	-- The Pledge
 				q(48489),	-- The Spires of Home
@@ -2207,8 +2243,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
-				}),
-				q(47290, {
 				}),
 				q(47506, {
 					["lvl"] = 255,

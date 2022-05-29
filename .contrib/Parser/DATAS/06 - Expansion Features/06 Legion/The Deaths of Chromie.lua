@@ -389,7 +389,8 @@ _.ExpansionFeatures =
 
 root("HiddenQuestTriggers", {
 	q(47920),	-- Ensemble: Timewarden's Plate
-	q(64652),	-- unknown reason
+	q(47921),	-- Ensemble: Chronoscryer's Finery
 	q(47922),	-- Ensemble: Epoch Sentinel's Mail
-	--q(47923),	-- To little info atm
+	q(47923),	-- Ensemble: Riftscarred Vestments
+	--q(64652),	-- unknown reason
 });
