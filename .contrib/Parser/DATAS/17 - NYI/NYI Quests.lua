@@ -2094,12 +2094,47 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(36939),	-- [UNUSED]Blood of the Annihilan
 			})),
 			
+			-- 7.0.3
+			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { "created 7.0.3" } }, {
+				
+			})),
+			
+			-- 7.1.0
+			tier(LEGION_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 7.1.0" } }, {
+				
+			})),
+			
+			-- 7.1.5
+			tier(LEGION_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { "created 7.1.5" } }, {
+				
+			})),
+			
 			-- 7.2.0
 			tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 7.2.0" } }, {
 				q(45816),	-- Choose Order Hall to Support
 				q(46273),	-- The Giver of Quests
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
 				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
+			})),
+			
+			-- 7.2.5
+			tier(LEGION_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 7.2.5" } }, {
+				
+			})),
+			
+			-- 7.3.0
+			tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = { "created 7.3.0" } }, {
+				
+			})),
+			
+			-- 7.3.5
+			tier(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = { "created 7.3.5" } }, {
+				q(50035),	-- Bret Test - SQL
+				q(50384),	-- Doug Test - Completable Quest4
+				q(50250),	-- Posthaste
+				q(49789),	-- The Pledge
+				q(48489),	-- The Spires of Home
+				q(49931),	-- The Titan's Wrath
 			})),
 		}),
 	}),
@@ -2512,9 +2547,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["description"] = "Area: |cFFf09f26Zuldazar|r",
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
-				}),
-				q(50035, {
-
 				}),
 				q(50084, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",

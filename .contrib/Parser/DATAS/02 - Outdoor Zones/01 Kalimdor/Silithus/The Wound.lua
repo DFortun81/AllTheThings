@@ -24,6 +24,7 @@ _.Zones =
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 69.4, 17.6, SILITHUS },
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
 						q(50229, {	-- A Wee Bit O' Cloth
@@ -38,6 +39,7 @@ _.Zones =
 								50047,	-- Free Samples
 								50046,	-- It's a Sabotage
 							},
+							["coord"] = { 69.4, 17.6, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
@@ -50,6 +52,7 @@ _.Zones =
 						q(50047, {	-- Free Samples
 							["sourceQuest"] = 49981,	-- Witness to the Wound
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 69.4, 17.6, SILITHUS },
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
 						q(50046, {	-- It's a Sabotage
@@ -65,6 +68,7 @@ _.Zones =
 						}),
 						q(50227, {	-- Larvae By The Dozen
 							["sourceQuest"] = 50372,	-- Desert Research
+							["coord"] = { 69.4, 19.0, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 132606 },	-- Tammy Tinkspinner
 						}),
@@ -136,8 +140,19 @@ _.Zones =
 								}),
 							},
 						}),
+						q(50048, {	-- The Seething Shore
+							["sourceQuest"] = 50372,	-- Desert Research
+							["races"] = ALLIANCE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(50054, {	-- The Seething Shore
+							["sourceQuest"] = 50358,	-- Desert Research
+							["races"] = HORDE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(50226, {	-- The Source of Power
 							["sourceQuest"] = 50372,	-- Desert Research
+							["coord"] = { 69.4, 19.0, SILITHUS },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 132606 },	-- Tammy Tinkspinner
 						}),
@@ -149,6 +164,7 @@ _.Zones =
 						}),
 						q(50056, {	-- The Speaker's Call
 							["sourceQuest"] = 50374,	-- The Blood of Azeroth
+							["coord"] = { 69.4, 17.6, SILITHUS },
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
@@ -176,6 +192,7 @@ _.Zones =
 								50046,	-- It's a Sabotage
 							},
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 69.4, 17.6, SILITHUS },
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
 						q(50232, {	-- The Twilight Survivor
@@ -231,8 +248,3 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(49931),	-- The Titan's Wrath
-	}),
-});
