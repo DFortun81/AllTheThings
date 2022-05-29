@@ -1357,6 +1357,7 @@ app.Colors = {
 	["ChatLink"] = "ff149bfd",
 	["TooltipDescription"] = "ff66ccff",
 	["DefaultDifficulty"] = "ff1eff00",
+	["RemovedWithPatch"] = "ffffaaaa",
 };
 Colorize = function(str, color)
 	return "|c" .. color .. str .. "|r";
@@ -1590,9 +1591,9 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	return stateText;
 end
 local function GetRemovedWithPatchString(rwp)
+	rwp = tonumber(rwp);
 	if rwp then
-		rwp = tonumber(rwp);
-		return "This gets removed in patch " .. math.floor(rwp / 10000) .. "." .. (math.floor(rwp / 100) % 10) .. "." .. (rwp % 10);
+		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], math.floor(rwp / 10000).."."..(math.floor(rwp / 100) % 10).."."..(rwp % 10));
 	end
 end
 app.GetProgressText = GetProgressTextDefault;
@@ -4458,7 +4459,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = group.description, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if group.rwp then
-			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = "FFFFAAAA" });
+			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 		if group.u and (not group.crs or group.itemID or group.s) then
 			tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -16040,18 +16041,9 @@ RowOnEnter = function (self)
 				GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 			end
 			if reference.rwp then
-				local found = false;
 				local rwp = GetRemovedWithPatchString(reference.rwp);
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == rwp then
-						found = true;
-						break;
-					end
-				end
-				if not found then
-					local a,r,g,b = HexToARGB("FFFFAAAA");
-					GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
-				end
+				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
+				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
 			end
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
