@@ -5232,7 +5232,7 @@ end
 -- Synchronization Functions
 (function()
 local outgoing,incoming,queue,active = {},{},{};
-local whiteListedFields = { "Achievements", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" };
+local whiteListedFields = { --[["Achievements",]] "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" };
 local function splittoarray(sep, inputstr)
 	local t = {};
 	for str in string.gmatch(inputstr, "([^" .. (sep or "%s") .. "]+)") do
@@ -6772,7 +6772,7 @@ local function RefreshCollections()
 			if CompletedQuests[questID] then
 				-- Throw up a warning to report if this was already completed by another character
 				if questGuid and questGuid ~= charGuid then
-					app.PrintDebug("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+					app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
 				end
 				-- Mark the quest as completed for the Account
 				acctQuests[questID] = 1;
@@ -8944,11 +8944,11 @@ end
 local function CheckAchievementCollectionStatus(achievementID)
 	if ATTAccountWideData then
 		achievementID = tonumber(achievementID);
-		-- only care about setting current character achievements since account
-		-- data recalculation will wipe anything not saved to a specific character
-		local earnedByMe = select(13, GetAchievementInfo(achievementID));
+		local _,_,_,acctCredit,_,_,_,_,_,_,_,isGuild,earnedByMe = GetAchievementInfo(achievementID);
 		if earnedByMe then
 			app.CurrentCharacter.Achievements[achievementID] = 1;
+			ATTAccountWideData.Achievements[achievementID] = 1;
+		elseif acctCredit and not isGuild then
 			ATTAccountWideData.Achievements[achievementID] = 1;
 		end
 	end
