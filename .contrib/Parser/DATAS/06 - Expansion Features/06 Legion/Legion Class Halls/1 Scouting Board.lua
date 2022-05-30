@@ -355,9 +355,3 @@ root("HiddenQuestTriggers", {
 	q(48309),	-- looting 'Discharged Shock Lance' [152320] when completing a mission
 	q(48310),	-- Tracking Quest for Druids?
 });
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(49620),	-- completed some missions on the Legion Mission Board
-	}),
-}));

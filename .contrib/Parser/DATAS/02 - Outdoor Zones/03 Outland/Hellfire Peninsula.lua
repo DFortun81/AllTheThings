@@ -3383,12 +3383,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10054),	-- BETA Impending Doom
 		q(10060),	-- BETA Impending Doom
 		q(9511),	-- BETA Kargath's Battle Plans
-		q(10062, {	-- BETA Looking to the Leadership
-			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-			--i(25989),	-- Draenethyst Chaplet
-			--i(25992),	-- Enforcer's Chain
-			--i(25993),	-- Finely Wrought Chain
-		}),
 		q(9342, {	-- BETA Marauding Crust Bursters
 			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
 			--i(25785),	-- Adept's Band
@@ -3396,18 +3390,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		q(10135),	-- BETA Mission: Be the Messenger [Horde]
 		q(10148),	-- BETA Mission: Be the Messenger [Alliance]
-		q(10401, {	-- BETA Mission: End All, Be All [Horde]
-			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-			--i(28041),	-- Bladefist's Breadth
-			--i(28042),	-- Regal Protectorate
-			--i(28040),	-- Vengeance of the Illidari
-		}),
-		q(10149, {	-- BETA Mission: End All, Be All [Alliance]
-			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
-			--i(28041),	-- Bladefist's Breadth
-			--i(28042),	-- Regal Protectorate
-			--i(28040),	-- Vengeance of the Illidari
-		}),
 		q(10133),	-- BETA Mission: Kill the Messenger
 		q(10147),	-- BETA Mission: Kill the Messenger
 		q(10127),	-- BETA Mission: Sever the Tie
@@ -3437,15 +3419,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			--i(25787),	-- Charm of Alacrity
 			--i(25786),	-- Hypnotist's Watch
 		}),
-		q(10386),	-- BETA The Fel Reaver Slayer
-		q(10387),	-- BETA The Fel Reaver Slayer
 		q(10100, {	-- BETA The Mastermind
 			-- Items on the current version of the quest, these don't need to be marked removed (and shouldn't be)
 			--i(25982),	-- Foreman's Sash
 			--i(25983),	-- Heavy Miner's Belt
 			--i(25984),	-- Miner's Brace
 		}),
-		q(10061),	-- BETA The Unyielding
 		q(10130),	-- BETA The Western Flank
 		q(10152),	-- BETA The Western Flank
 		q(9377),	-- BETA Thirsting For Power

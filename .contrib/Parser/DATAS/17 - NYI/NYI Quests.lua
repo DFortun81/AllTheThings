@@ -168,7 +168,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	}),
 	tier(CLASSIC_TIER, {
 		n(QUESTS, {
-			q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 			q(3064),	-- <NYI> <TXT> Pirate Hats
 			q(241),	-- <TEST> HEY MISTER WILSON!
 			q(8489),	-- BETA An Intact Converter [Eversong Woods]
@@ -2212,7 +2211,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.3.0.24484
 				-- 7.3.0.24492
 				-- 7.3.0.24500
-				q(48546),	-- Tracking Quest
 				q(48582),	--
 				-- 7.3.0.24539
 				q(48633),	--
@@ -2221,7 +2219,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(48784),	--
 				-- 7.3.0.24651
 				q(48969),	--
-				q(49006),	--
 				q(49025),	--
 				q(49026),	--
 				-- 7.3.0.24681
@@ -2236,7 +2233,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49155),	--
 				q(49157),	--
 				q(49158),	--
-				q(49162),	--
 				q(49163),	--
 				q(49164),	--
 				q(49192),	--
@@ -2260,9 +2256,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.3.0.24904
 				-- 7.3.0.24920
 				-- 7.3.0.24931
-				q(49383),	--
-				q(49384),	--
-				q(49385),	--
 				q(49386),	--
 				-- 7.3.0.24956
 				-- 7.3.0.24970
@@ -2271,26 +2264,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.3.0.25195
 			})),
 
-			-- 7.3.2
-			tier(LEGION_TIER, 3.2, bubbleDownSelf({ ["timeline"] = { "created 7.3.2" } }, {
-				-- Tools
-				-- 7.3.2.25079
-				-- 7.3.2.25163
-				q(49619),	--
-				q(49621),	--
-				-- 7.3.2.25196
-				-- 7.3.2.25208
-				-- 7.3.2.25255
-				-- 7.3.2.25326
-				-- 7.3.2.25383
-				-- 7.3.2.25442
-				-- 7.3.2.25455
-				-- 7.3.2.25477
-				-- 7.3.2.25480
-				-- 7.3.2.25497
-				-- 7.3.2.25516
-				-- 7.3.2.25549
-			})),
+			-- 7.3.2 - no NYI quests
 
 			-- 7.3.5
 			tier(LEGION_TIER, 3.5, bubbleDownSelf({ ["timeline"] = { "created 7.3.5" } }, {
@@ -2302,21 +2276,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49931),	-- The Titan's Wrath
 				-- Tools
 				-- 7.3.5.25928
-				q(47957),	--
-				q(47958),	--
+				q(48068),	-- A Cure for Ebonhorn
+				q(48435),	-- The Spiritwalkers
 				q(48490),	--
 				q(48491),	--
-				q(48602),	--
-				q(48603),	--
 				q(49659),	--
 				q(49660),	--
-				q(49760),	--
-				q(49761),	--
-				q(49762),	--
-				q(49763),	--
-				q(49764),	--
 				q(49786),	--
-				q(49815),	--
 				q(49909),	--
 				q(50050),	--
 				q(50051),	--
@@ -2328,7 +2294,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(50256),	--
 				q(50257),	--
 				q(50258),	--
-				q(50312),	--
 				q(50320),	--
 				-- 7.3.5.25937
 				-- 7.3.5.25944
@@ -2819,11 +2784,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 							["q"] = 2,
 						})
 					}
-				}),
-				q(50668, {
-					["description"] = "Area: |cFFf09f26Orgrimmar|r",
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 				}),
 				q(50670, {
 
@@ -3555,7 +3515,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(50713),	--
 				q(50714),	--
 				q(50766),	--
-				q(50768),	--
 				q(50785),	--
 				q(50806),	--
 				q(50807),	--
@@ -3575,7 +3534,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(50946),	--
 				-- 8.0.1.26095
 				q(50971),	--
-				q(50986),	-- Work Order: Sea Stalk
 				q(50999),	-- Work Order: Riverbud
 				q(51078),	-- Azerite Madness
 				-- 8.0.1.26131
@@ -3612,7 +3570,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(51634),	--
 				-- 8.0.1.26321
 				-- 8.0.1.26367
-				q(51692),	--
 				q(51701),	--
 				q(51702),	--
 				q(51705),	--
@@ -3641,7 +3598,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(52293),	-- Lizards and Ledgers
 				q(52399),	--
 				q(52401),	--
-				q(52402),	-- Work Order: Viridium
 				q(52403),	--
 				q(52434),	--
 				q(52435),	--
@@ -3673,7 +3629,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.0.1.26610
 				-- 8.0.1.26624
 				q(47284),	--
-				q(52934),	--
 				q(52959),	--
 				q(52960),	--
 				q(52961),	--
@@ -3711,18 +3666,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(53319),	-- Our Sacred Forest
 				q(53320),	-- Ours For the Taking
 				q(53427),	--
-				q(53428),	--
-				q(53429),	--
 				q(53447),	--
 				q(53460),	--
 				-- 8.0.1.26714
 				-- 8.0.1.26715
 				-- 8.0.1.26734
 				q(53469),	--
-				q(53477),	--
 				-- 8.0.1.26766
 				-- 8.0.1.26788
-				q(53504),	--
 				q(53505),	--
 				q(53506),	--
 				q(53507),	--
@@ -3733,21 +3684,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(53512),	--
 				q(53513),	--
 				q(53514),	--
-				q(53515),	--
 				q(53516),	--
 				q(53517),	--
 				q(53518),	--
 				q(53519),	--
 				q(53522),	--
 				q(53523),	--
-				q(53524),	--
 				q(53525),	--
 				q(53526),	--
 				q(53527),	--
 				q(53528),	--
 				q(53529),	--
 				q(53530),	--
-				q(53531),	--
 				q(53549),	-- Bounty Bag
 				q(53564),	--
 				-- 8.0.1.26806
@@ -3762,14 +3710,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.0.1.26877
 				-- 8.0.1.26892
 				-- 8.0.1.26903
-				q(53635),	--
 				q(53637),	--
 				q(53642),	--
 				q(53643),	--
 				-- 8.0.1.26918
 				-- 8.0.1.26926
 				q(53644),	--
-				q(53650),	--
 				q(53653),	--
 				q(53654),	--
 				q(53655),	--
@@ -3836,15 +3782,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(54424, {
-					["description"] = "Area: |cFFf09f26Boralus Harbor|r",
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54447, {
-					["description"] = "Category: |cFFf09f26The Zandalari|r",
-					["lvl"] = 50,
-				}),
 				q(54748, {
 				}),
 				q(54979, {
@@ -3862,7 +3799,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- tools
 				-- 8.1.0.27826
 				q(53718),	--
-				q(53723),	--
 				q(53754),	--
 				q(53756),	--
 				q(53757),	--
@@ -3907,15 +3843,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54142),	--
 				q(54173),	--
 				q(54209),	--
-				q(54215),	--
-				q(54216),	--
-				q(54217),	--
-				q(54218),	--
-				q(54219),	--
-				q(54220),	--
-				q(54221),	--
-				q(54222),	--
-				q(54223),	--
 				q(54228),	--
 				q(54230),	--
 				q(54233),	--
@@ -3936,12 +3863,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54406),	--
 				q(54409),	--
 				q(54413),	--
-				q(54423),	--
 				q(54427),	--
 				q(54429),	--
 				q(54443),	--
-				q(54445),	--
-				q(54446),	--
 				-- 8.1.0.28048
 				q(54486),	--
 				q(54487),	--
@@ -3962,7 +3886,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54774),	--
 				q(54785),	--
 				-- 8.1.0.28294
-				q(54860),	--
 				-- 8.1.0.28366
 				q(54882),	--
 				q(54885),	--
@@ -4046,7 +3969,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55190),	--
 				q(55191),	--
 				q(55237),	--
-				q(55238),	--
 				q(55239),	--
 				-- 8.1.5.29220
 				-- 8.1.5.29281
@@ -4080,7 +4002,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
 				q(56129),	-- Heroic: Battle for Stromgarde
 				q(56206),	-- Heroic: Battle for Stromgarde
-				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
 				-- Unsorted
 				q(54085, {
 					["lvl"] = 50,
@@ -4106,6 +4027,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["isDaily"] = 1,
 					["lvl"] = 50,
+					["_drop"] = { "g" },
 				}),
 				q(55225, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
@@ -4294,14 +4216,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54122),	--
 				q(54125),	--
 				q(54866),	--
-				q(54867),	--
-				q(54966),	--
-				q(54967),	--
-				q(54968),	--
-				q(54970),	--
-				q(54971),	--
-				q(54973),	--
-				q(54974),	--
 				q(55093),	--
 				q(55102),	--
 				q(55104),	--
@@ -4352,13 +4266,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56005),	--
 				q(56040),	--
 				q(56052),	--
-				q(56065),	--
 				q(56073),	--
 				q(56101),	--
 				q(56102),	--
 				q(56115),	--
 				q(56124),	--
-				q(56127),	--
 				q(56140),	--
 				q(56147),	--
 				q(56204),	--
@@ -4371,13 +4283,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56254),	--
 				q(56317),	--
 				q(56331),	--
-				q(56333),	--
 				-- 8.2.0.30093
 				-- 8.2.0.30096
 				-- 8.2.0.30108
 				-- 8.2.0.30123
 				-- 8.2.0.30168
-				q(56478),	--
 				q(56498),	--
 				-- 8.2.0.30170
 				-- 8.2.0.30203
@@ -4399,9 +4309,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56556),	--
 				q(56567),	--
 				q(56568),	--
-				q(56601),	--
-				q(56607),	--
-				q(56618),	--
 				q(56636),	--
 				q(56637),	--
 				q(56638),	--
@@ -4409,23 +4316,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56651),	--
 				-- 8.2.0.30329
 				q(56666),	--
-				q(56667),	--
 				q(56691),	--
-				q(56699),	--
-				q(56702),	--
-				q(56704),	--
 				q(56709),	--
 				q(56717),	--
 				q(56718),	--
 				q(56736),	--
 				q(56738),	--
-				q(56742),	--
-				q(56744),	--
-				q(56745),	--
-				q(56766),	--
 				-- 8.2.0.30430
 				q(56841),	--
-				q(56844),	--
 				q(56845),	--
 				q(56846),	--
 				q(56847),	--
@@ -4463,7 +4361,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56898),	--
 				q(56902),	--
 				-- 8.2.0.30495
-				q(56949),	--
 				q(56967),	--
 				-- 8.2.0.30613
 				q(57012),	--
@@ -4481,7 +4378,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.2.0.30669
 				-- 8.2.0.30774
 				q(57139),	--
-				q(57144),	--
 				q(57184),	--
 				q(57193),	--
 				q(57194),	--
@@ -4553,7 +4449,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57294),	--
 				q(57295),	--
 				q(57520),	--
-				q(57550),	--
 				q(57560),	--
 				-- 8.2.5.31401
 				q(57697),	--
@@ -4700,7 +4595,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57725),	--
 				q(57736),	--
 				q(57786),	--
-				q(57830),	--
 				q(57831),	--
 				q(57840),	--
 				q(57894),	--
@@ -4726,8 +4620,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(58538),	--
 				q(58542),	--
 				q(58546),	--
-				q(58550),	--
-				q(58576),	--
 				q(58604),	--
 				q(58626),	--
 				-- 8.3.0.32203
@@ -4759,9 +4651,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(59031),	--
 				q(59034),	--
 				q(59037),	--
-				q(59038),	--
 				q(59039),	--
-				q(59040),	--
 				q(59041),	--
 				q(59049),	--
 				q(59052),	--
@@ -4927,8 +4817,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55401),	--
 				q(55612),	--
 				q(56066),	--
-				q(56067),	--
-				q(56068),	--
 				q(56928),	--
 				q(56929),	--
 				q(56930),	--
@@ -5670,11 +5558,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61897),	--
 				q(61917),	--
 				q(61920),	--
-				q(61923),	--
-				q(61926),	--
 				q(61932),	--
 				q(61934),	--
-				q(61935),	--
 				q(61938),	--
 				q(61940),	--
 				q(61941),	--
@@ -5703,9 +5588,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62291, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 				-- 9.0.1.35482
 				-- 9.0.1.35522
-				q(62377),	--
 				q(62380),	--
-				q(62381),	--
 				q(62413),	--
 				q(62416),	--
 				-- 9.0.1.35598
@@ -5834,7 +5717,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(63203),	--
 				-- 9.0.2.36401
 				q(63218),	--
-				q(63219),	--
 				-- 9.0.2.36512
 				q(63358),	--
 				q(63378),	--
@@ -5978,7 +5860,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64102),	--
 				q(64130),	--
 				-- 9.1.0.38394
-				q(64192),	--
 				q(64239),	--
 				-- 9.1.0.38511
 				-- 9.1.0.38524
@@ -6092,7 +5973,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64921),	--
 				q(64922),	--
 				q(64946),	--
-				q(64975),	--
 				q(64980),	--
 				q(64983),	--
 				q(64991),	--

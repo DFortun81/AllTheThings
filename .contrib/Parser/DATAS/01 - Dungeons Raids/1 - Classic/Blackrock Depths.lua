@@ -2003,5 +2003,7 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	q(3911),	-- The Last Element
+	n(QUESTS, {
+		q(3911),	-- The Last Element
+	}),
 }));

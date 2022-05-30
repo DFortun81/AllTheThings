@@ -400,7 +400,6 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(26874),	-- Awakening Naralex
-		q(26879),	-- Disciples of Naralex
 		q(3366),	-- OLD The Glowing Shard
 	}),
 }));

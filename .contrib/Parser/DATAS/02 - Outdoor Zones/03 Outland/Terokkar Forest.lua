@@ -1699,9 +1699,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		q(9965),	-- BETA A Show of Good Faith
 		q(9966),	-- BETA A Show of Good Faith
-		q(9989, {	-- BETA Alien Spirits
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
 		q(10032),	-- BETA Artifacts from Tuurem
 		q(9984),	-- BETA Host of the Hidden City
 		q(9985),	-- BETA Host of the Hidden City
@@ -1760,7 +1757,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(9929),	-- BETA The Missing Merchant
 		q(9930),	-- BETA The Missing Merchant
 		q(10029),	-- BETA The Spirits Are Calling
-		q(10841),	-- BETA The Vengeful Harbringer
 		q(9941),	-- BETA Tracking Down the Culprits
 		q(9942),	-- BETA Tracking Down the Culprits
 	}),

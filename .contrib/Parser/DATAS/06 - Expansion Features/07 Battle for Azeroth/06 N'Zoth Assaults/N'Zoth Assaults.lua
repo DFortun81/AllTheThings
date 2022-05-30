@@ -705,14 +705,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(BFA_TIER, {
 	n(-10072, {	-- N'Zoth Assault
-		q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
-			["coord"] = { 56.6, 31.7, 1527 },
-			["provider"] = { "n", 160252 },	-- Blacktalon Agent
-			["g"] = {
-				i(174288, {	-- Breath of Everlasting Spirit (once a week)
-					["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-				}),
-			},
-		}),
+		q(57874),	-- Visions of a Dark Destiny
 	}),
 })));

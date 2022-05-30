@@ -370,7 +370,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(63026),	-- Return Lost Souls
 		q(63027),	-- Return Lost Souls
 		q(59606),	-- The Anima Expert
-		q(57896),	-- The Archon's Will
+		q(57896, { ["_drop"] = { "g" }, }),	-- The Archon's Will
 		q(59318),	-- Work Not Wasted
 	}),
 }));

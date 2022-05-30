@@ -795,7 +795,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(58625),	-- Connecting the Dots
-		q(57537),	-- Covering our Tracks
 		q(57513),	-- Enemy of My Enemy
 		q(59204),	-- Foreign Contamination
 		q(57978),	-- Forward and Back
