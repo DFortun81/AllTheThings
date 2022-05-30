@@ -8927,7 +8927,7 @@ harvesterFields.text = function(t)
 			AllTheThingsHarvestItems = HarvestedAchievementDatabase;
 			setmetatable(t, app.BaseAchievement);
 			rawset(t, "collected", true);
-			return link;
+			return Name;
 		end
 	end
 
@@ -8943,9 +8943,13 @@ end
 
 local function CheckAchievementCollectionStatus(achievementID)
 	if ATTAccountWideData then
-		local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-		if id and not isGuild and accCompleted and bit.band(flags,0x1) == 0 then
-			ATTAccountWideData.Achievements[id] = 1;
+		achievementID = tonumber(achievementID);
+		-- only care about setting current character achievements since account
+		-- data recalculation will wipe anything not saved to a specific character
+		local earnedByMe = select(13, GetAchievementInfo(achievementID));
+		if earnedByMe then
+			app.CurrentCharacter.Achievements[achievementID] = 1;
+			ATTAccountWideData.Achievements[achievementID] = 1;
 		end
 	end
 end
