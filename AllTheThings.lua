@@ -20170,7 +20170,7 @@ customWindowUpdates["Sync"] = function(self)
 
 			local function OnRightButtonDeleteCharacter(row, button)
 				if button == "RightButton" then
-					app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+					app:ShowPopupDialog("CHARACTER DATA: " .. (row.ref.text or RETRIEVING_DATA) .. L["CONFIRM_DELETE"],
 					function()
 						ATTCharacterData[row.ref.datalink] = nil;
 						app:RecalculateAccountWideData();
@@ -20181,7 +20181,7 @@ customWindowUpdates["Sync"] = function(self)
 			end
 			local function OnRightButtonDeleteLinkedAccount(row, button)
 				if button == "RightButton" then
-					app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+					app:ShowPopupDialog("LINKED ACCOUNT: " .. (row.ref.text or RETRIEVING_DATA) .. L["CONFIRM_DELETE"],
 					function()
 						AllTheThingsAD.LinkedAccounts[row.ref.datalink] = nil;
 						app:SynchronizeWithPlayer(row.ref.datalink);
@@ -20209,35 +20209,35 @@ customWindowUpdates["Sync"] = function(self)
 					end
 					GameTooltip:AddLine(" ", 1, 1, 1);
 					GameTooltip:AddDoubleLine("Total", tostring(total), 0.8, 0.8, 1);
-					GameTooltip:AddLine("Right Click to Delete this Character", 1, 0.8, 0.8);
+					GameTooltip:AddLine(L["DELETE_CHARACTER"], 1, 0.8, 0.8);
 				end
 			end
 			local function OnTooltipForLinkedAccount(t)
 				if t.unit then
-					GameTooltip:AddLine("This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.", 0.8, 0.8, 1, true);
-					GameTooltip:AddLine("Right Click to Delete this Linked Character", 1, 0.8, 0.8);
+					GameTooltip:AddLine(L["LINKED_ACCOUNT_TOOLTIP"], 0.8, 0.8, 1, true);
+					GameTooltip:AddLine(L["DELETE_LINKED_CHARACTER"], 1, 0.8, 0.8);
 				else
-					GameTooltip:AddLine("Right Click to Delete this Linked Account", 1, 0.8, 0.8);
+					GameTooltip:AddLine(L["DELETE_LINKED_ACCOUNT"], 1, 0.8, 0.8);
 				end
 			end
 
 			local syncHeader;
 			syncHeader = {
-				['text'] = "Account Management",
+				['text'] = L["ACCOUNT_MANAGEMENT"],
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
-				["description"] = "This list shows you all of the functionality related to syncing account data.",
+				["description"] = L["ACCOUNT_MANAGEMENT_TOOLTIP"],
 				['visible'] = true,
 				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
-						['text'] = "Add Linked Character / Account",
+						['text'] = L["ADD_LINKED_CHARACTER_ACCOUNT"],
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-						['description'] = "Click here to link a character or account to your account.",
+						['description'] = L["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app:ShowPopupDialogWithEditBox("Please type the name of the character or BNET account to link to.", "", function(cmd)
+							app:ShowPopupDialogWithEditBox(L["ADD_LINKED_POPUP"], "", function(cmd)
 								if cmd and cmd ~= "" then
 									AllTheThingsAD.LinkedAccounts[cmd] = true;
 									self:Reset();
@@ -20249,9 +20249,9 @@ customWindowUpdates["Sync"] = function(self)
 					},
 					-- Characters Section
 					{
-						['text'] = "Characters",
+						['text'] = L["CHARACTERS"],
 						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
-						["description"] = "This shows all of the characters on your account.",
+						["description"] = L["SYNC_CHARACTERS_TOOLTIP"],
 						['OnUpdate'] = function(data)
 							data.g = {};
 							for guid,character in pairs(ATTCharacterData) do
@@ -20268,7 +20268,7 @@ customWindowUpdates["Sync"] = function(self)
 
 							if #data.g < 1 then
 								table.insert(data.g, {
-									['text'] = "No characters found.",
+									['text'] = L["NO_CHARACTERS_FOUND"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
 								});
@@ -20284,9 +20284,9 @@ customWindowUpdates["Sync"] = function(self)
 
 					-- Linked Accounts Section
 					{
-						['text'] = "Linked Accounts",
+						['text'] = L["LINKED_ACCOUNTS"],
 						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
-						["description"] = "This shows all of the linked accounts you have defined so far.",
+						["description"] = L["LINKED_ACCOUNTS_TOOLTIP"],
 						['OnUpdate'] = function(data)
 							data.g = {};
 							local charactersByName = {};
@@ -20333,7 +20333,7 @@ customWindowUpdates["Sync"] = function(self)
 
 							if #data.g < 1 then
 								table.insert(data.g, {
-									['text'] = "No linked accounts found.",
+									['text'] = L["NO_LINKED_ACCOUNTS"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
 								});
