@@ -763,6 +763,9 @@ root("Zones", {
 								-- 57374,	-- Into the Darkest Depths
 								-- 57276,	-- Maintaining Focus (H)
 								-- 56260,	-- Unlocking the Power (H)
+
+								-- reported as available after completing this quest, but is available on my alts without completing this quest...
+								-- 53127,	-- The Lord Admiral's Lament
 								-- #ELSE
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal (Sylvanas Version)
