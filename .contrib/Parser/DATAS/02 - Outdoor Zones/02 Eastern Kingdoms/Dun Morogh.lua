@@ -665,28 +665,28 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
 							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26566, {	-- A Triumph of Gnomish Ingenuity
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26208,	-- The Fight Continues
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26331, {	-- Crushcog's Minions
 							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26329,	-- One More Thing
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26265, {	-- Dealing with the Fallout
 							["qg"] = 42630,	-- Corporal Fizzwhistle
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
 							["coord"] = { 38.2, 40.2, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								i(59038, {	-- Fallout Cover
 									["timeline"] = { "added 4.0.3.13277" },
@@ -700,16 +700,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 46274,	-- Gaffer Coilspring
 							["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
 							["coord"] = { 53.0, 82.3, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26364, {	-- Down with Crushcog!
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26342,	-- Paint it Black
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								i(59052, {	-- Belt of Static Equilibrium
 									["timeline"] = { "added 4.0.3.13277" },
@@ -733,7 +732,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								i(59046, {	-- Friction Gloves
 									["timeline"] = { "added 4.0.3.13277" },
@@ -754,14 +753,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26423, {	-- Meet the High Tinker
 							["qg"] = 42366,	-- Kelsey Steelspark
 							["sourceQuest"] = 26206,	-- The Future of Gnomeregan
 							["coord"] = { 38.0, 33.6, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
 						}),
 						q(31137, {	-- Meet the High Tinker
@@ -769,7 +768,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 31135,	-- The Future of Gnomeregan
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
 						q(26422, {	-- Meet the High Tinker
@@ -777,7 +776,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26199,	-- The Future of Gnomeregan
 							["coord"] = { 39.4, 28.4, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
 						}),
 						q(26421, {	-- Meet the High Tinker
@@ -785,7 +784,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26197,	-- The Future of Gnomeregan
 							["coord"] = { 41.1, 29.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
 						}),
 						q(26425, {	-- Meet the High Tinker
@@ -793,7 +792,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26203,	-- The Future of Gnomeregan
 							["coord"] = { 40.6, 36.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
 						}),
 						q(26424, {	-- Meet the High Tinker
@@ -801,7 +800,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26202,	-- The Future of Gnomeregan
 							["coord"] = { 37.7, 38.0, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
 						}),
 						q(41218, {	-- Meet the High Tinker
@@ -809,7 +808,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
 							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
 							["timeline"] = { "added 7.0.1.20773" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 						}),
 						q(26284, {	-- Missing in Action
@@ -817,14 +816,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26333, {	-- No Tanks!
 							["qg"] = 42491,	-- Hinkles Fastblast
 							["sourceQuest"] = 26329,	-- One More Thing
 							["coord"] = { 38.1, 33.6, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								i(59049, {	-- Inertial Bracers
 									["timeline"] = { "added 4.0.3.13277" },
@@ -845,7 +844,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26364,	-- Down with Crushcog!
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["isBreadcrumb"] = true,
 						}),
 						q(26329, {	-- One More Thing
@@ -853,44 +852,41 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26318,	-- Finishin' the Job
 							["coord"] = { 37.2, 65.1, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26342, {	-- Paint it Black
 							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26339,	-- Staging in Brewnall
 							["coord"] = { 48.7, 52.8, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(27670, {	-- Pinned Down
 							["qg"] = 45966,	-- Nevin Twistwrench
 							["coord"] = { 34.1, 32.2, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(28167, {	-- Report to Carvo Blastbolt
 							["qg"] = 45966,	-- Nevin Twistwrench
 							["sourceQuest"] = 27670,	-- Pinned Down
 							["coord"] = { 34.0, 32.2, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26222, {	-- Scrounging for Parts
 							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26566,	-- A Triumph of Gnomish Ingenuity
 							["coord"] = { 40.5, 28.0, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(27671, {	-- See to the Survivors
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 28167,	-- Report to Carvo Blastbolt
 							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26339, {	-- Staging in Brewnall
 							["qg"] = 42366,	-- Kelsey Steelspark
@@ -900,7 +896,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.0, 33.5, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(31138, {	-- The Arts of a Monk
 							["qg"] = 63238,	-- Xi, Friend to the Small
@@ -945,14 +941,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.7, 32.7, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26197, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13287" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MAGE },
 							["groups"] = {
 								i(59042, {	-- Electro-Staff
@@ -965,7 +961,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								i(59040, {	-- Staff of the Force
@@ -978,7 +974,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								i(59041, {	-- Vibro Knife
@@ -991,7 +987,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { WARRIOR },
 							["groups"] = {
 								i(59039, {	-- Very Light Sabre
@@ -1004,7 +1000,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { ROGUE },
 							["groups"] = {
 								i(59043, {	-- Death Star
@@ -1020,7 +1016,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
 						q(41217, {	-- The Future of Gnomeregan
@@ -1028,7 +1024,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27674,	-- To the Surface
 							["coord"] = { 39.4, 38.3, NEW_TINKERTOWN },
 							["timeline"] = { "added 7.0.1.20773" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 							["groups"] = {
 								i(134123, {	-- "Reliable" Boom-O-Tronic
@@ -1040,9 +1036,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 46255,	-- Technician Braggle
 							["sourceQuest"] = 27635,	-- Decontamination
 							["coord"] = { 66.3, 81.6, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26316, {	-- What's Keeping Jessup?
 							["qg"] = 42489,	-- Captain Tread Sparknozzle
@@ -1053,22 +1048,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.3, 33.4, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26264, {	-- What's Left Behind
 							["qg"] = 42611,	-- Tock Sprysprocket
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
 							["coord"] = { 39.2, 26.5, NEW_TINKERTOWN },
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(28169, {	-- Withdraw to the Loading Room!
 							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 27671,	-- See to the Survivors
 							["coord"] = { 50.9, 31.9, NEW_TINKERTOWN_LOWER },
-							["_drop"] = { "races" },	-- drop Mechagnome
 							["timeline"] = { "added 4.0.3.13277" },
-							["races"] = { GNOME },
+							["races"] = { GNOME, MECHAGNOME },
 						}),
 					}),
 				},
