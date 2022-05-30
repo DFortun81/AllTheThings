@@ -559,6 +559,27 @@ app.L = {
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
+	
+	-- Sync tab
+	["ACCOUNT_SYNCHRONIZATION"] = "Account Synchronization";
+	["AUTO_SYNC_ACC_DATA_CHECKBOX"] = "Automatically Sync Account Data";
+	["AUTO_SYNC_ACC_DATA_TOOLTIP"] = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+	["ACCOUNT_MANAGEMENT"] = "Account Management";
+	["ACCOUNT_MANAGEMENT_TOOLTIP"] = "This list shows you all of the functionality related to syncing account data.";
+	["ADD_LINKED_CHARACTER_ACCOUNT"] = "Add Linked Character / Account";
+	["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"] = "Click here to link a character or account to your account.";
+	["ADD_LINKED_POPUP"] = "Please type the name of the character or BNET account to link to.";
+	["CHARACTERS"] = "Characters";
+	["SYNC_CHARACTERS_TOOLTIP"] = "This shows all of the characters on your account.";
+	["NO_CHARACTERS_FOUND"] = "No characters found.";
+	["LINKED_ACCOUNTS"] = "Linked Accounts";
+	["LINKED_ACCOUNTS_TOOLTIP"] = "This shows all of the linked accounts you have defined so far.";
+	["NO_LINKED_ACCOUNTS"] = "No linked accounts found.";
+	["LINKED_ACCOUNT_TOOLTIP"] = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+	["DELETE_LINKED_CHARACTER"] = "Right Click to Delete this Linked Character";
+	["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
+	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
+	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
 	["ABOUT"] = "About";

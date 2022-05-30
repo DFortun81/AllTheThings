@@ -4650,11 +4650,11 @@ local tab = settings:CreateTab("Sync");
 local SyncLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 SyncLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 SyncLabel:SetJustifyH("LEFT");
-SyncLabel:SetText("Account Synchronization");
+SyncLabel:SetText(L["ACCOUNT_SYNCHRONIZATION"]);
 SyncLabel:Show();
 table.insert(settings.MostRecentTab.objects, SyncLabel);
 
-local AutomaticallySyncAccountDataCheckBox = settings:CreateCheckBox("Automatically Sync Account Data",
+local AutomaticallySyncAccountDataCheckBox = settings:CreateCheckBox(L["AUTO_SYNC_ACC_DATA_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"));
 end,
@@ -4663,7 +4663,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:Sync", checked);
 	if checked then app:Synchronize(true); end
 end);
-AutomaticallySyncAccountDataCheckBox:SetATTTooltip("Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.");
+AutomaticallySyncAccountDataCheckBox:SetATTTooltip(L["AUTO_SYNC_ACC_DATA_TOOLTIP"]);
 AutomaticallySyncAccountDataCheckBox:SetPoint("TOPLEFT", SyncLabel, "BOTTOMLEFT", 4, 0);
 
 function tab:InitializeSyncWindow()
