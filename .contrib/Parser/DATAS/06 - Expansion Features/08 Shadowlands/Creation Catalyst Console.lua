@@ -1301,7 +1301,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					}),
 				}),
 			}),
-			pvp(n(-1010, {	--Gladiator Alternative
+			pvp(n(-1010, {	-- Gladiator Alternative
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 6894 }, {
 					cl(DEATHKNIGHT, {

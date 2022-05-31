@@ -104,6 +104,8 @@ local L = app.L;
 	L.BREADCRUMB_PARTYSYNC_2 = "这可以通过与另一个没有完成这些任务的角色进行小队同步获得：";
 	L.BREADCRUMB_PARTYSYNC_3 = "可能需要与能够接受此任务的角色进行小队同步。";
 	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
+	--TODO: L.DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
+	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "|c%sBecomes unavailable if %d of the following are met:|r";
 	L.NO_ENTRIES = "没有找到符合过滤条件的条目。";
 	L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'。某个过滤条件可能会限制该组的可见性。";
 	L.DEBUG_LOGIN = "登录后获得的奖励。\n\n干得好！你做到了！\n\n仅在调试模式下可见。";
@@ -219,7 +221,7 @@ local L = app.L;
 	L.REPORT_INACCURATE_QUEST = "错误任务信息！（点击报告）";
 	L.NESTED_QUEST_REQUIREMENTS = "多重任务需要";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打开主列表更新进度 ]";
-	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度！|r";
+	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207此群组及其内容不影响此窗口的进度 since it is Sourced in another Location！|r";	-- TODO: Localize this
 	L.CURRENCY_NEEDED_TO_BUY = "需要购买物品未收藏的事物";	-- TODO: Estimated amount needed to obtain remaining Things
 	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等级";
 	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任务";
@@ -312,8 +314,8 @@ local L = app.L;
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6乐谱/自拍滤镜";
 		L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "启用此选项以追踪乐谱和自拍滤镜。\n\n你可以用你的点唱机播放游戏中的音乐并且你的自拍相机玩具为你的自拍收藏特定地点的滤镜。";
 		L.QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：由于暴雪数据库中每日、每周、每年和世界任务的追踪方式的性质，任务不会被永久追踪。";
-		L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+无关紧要";
-		L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "启用此选项以专门包括跟踪无关紧要任务完成情况。 \n\n无关紧要任务是从技术上讲，它们是“可选的”，因为它们仅用于将玩家引导至不同的任务，如果在完成后续任务之前未完成，则它们将变得不可用。\nT这会使获取无关紧要非常依赖队伍同步功能或账号通用的任务";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6Locked Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 		L.RECIPES_CHECKBOX_TOOLTIP = "启用此选项可追踪你的专业图纸。\n\n注意：你必须打开专业列表才能缓存这些。";
 		L.REPUTATIONS_CHECKBOX = "|cffADD8E6声望";
 		L.REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
@@ -418,7 +420,7 @@ local L = app.L;
 		L.SHOW_MODELS_CHECKBOX = "模型预览";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
-		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项可显示购买未收藏事物所需的大致物品/货币数量。\n\nCounts for Containers are calculated by multiplying the cost of the Container by the remaining Things it contains. Thus for Containers which reward multiple Things at once, the estimate will be higher than actually required.";	-- TODO: Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nCounts for Containers are calculated by multiplying the cost of the Container by the remaining Things it contains. Thus for Containers which reward multiple Things at once, the estimate will be higher than actually required.
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项可显示购买未收藏事物所需的大致物品/货币数量。\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";	-- TODO: Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.
 		L.SHARED_APPEARANCES_CHECKBOX = "共享外观";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "启用该选项可以在鼠标提示中看到外观相似的物品。\n\n注意：不符合装备类型的物品会显示在列表中。这是为了帮助你判断收藏进度。\n\n如果你对此感到困惑，从 ATT v1.5.0 开始，你可以右键单击物品，打开物品和它的共享外观，进入它们自己的独立小列表。";
 		L.INCLUDE_ORIGINAL_CHECKBOX = "原始来源";
@@ -518,6 +520,28 @@ local L = app.L;
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 Shift-点击切换到它";
 
+	-- Sync tab
+		--TODO: L.SYNC = "Sync";
+		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
+		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
+		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+		--TODO: L.CHARACTERS = "Characters";
+		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
+		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
+		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
+		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+		--TODO: L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
+		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
+		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+		--TODO: L.DELETE_CHARACTER = "Right Click to Delete this Character";
+		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
+
 	-- About tab
 		L.ABOUT = "关于";
 		L.ABOUT_1 = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\n另外：查看 All The Things 经典旧世和燃烧的远征经典旧世！\n\n是的，我打算玩经典旧世魔兽哦，但是在全职工作和开发插件的两个版本之间，不会有很多时间用于团队。\n\n不，ATT 不是将图标放在包图标上的插件。那是 CanIMogIt 和 Caerdon Wardrobe！\n\n对于在线收藏比较，请查看 shoogen 的 DataForAzeroth.com！|r";
@@ -563,6 +587,7 @@ local L = app.L;
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
 		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
+		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Filter Text
 		L.ACHIEVEMENT_ID = "成就 ID";
@@ -664,6 +689,8 @@ for key,value in pairs({
 		[-22] = "秘密",												-- Secrets
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-26] = "掉落",												-- Drops
+		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
+		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
@@ -696,6 +723,8 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
+	--TODO: [-219] = "Sourceless",									-- Sourceless
+	-- PvP
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
@@ -819,7 +848,6 @@ for key,value in pairs({
 			[-1005] = "狂野精魂",										-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "晋升者议会",										-- Ascended Counil
-			[-966] = "图纸和制造",										-- Blueprints (for Path of Ascension)
 			[-973] = "忠诚",											-- Loyalty
 			[-975] = "谦逊",											-- Humility
 		-- SL Revendreth/Venthyr
@@ -831,6 +859,13 @@ for key,value in pairs({
 			[-969] = "组 B",											-- Set B
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
+	-- Temp Sets for Creation Catalyst
+		[-1006] = "随机团队 Alternative",								-- TODO: Raid Finder Alternative
+		[-1007] = "普通 Alternative",									-- TODO: Normal Alternative
+		[-1008] = "英雄 Alternative",									-- TODO: Heroic Alternative
+		[-1009] = "史诗 Alternative",									-- TODO: Mythic Alternative
+		[-1010] = "角斗士 Alternative",								-- TODO: Gladiator Alternative
+		[-1011] = "精锐 Alternative",									-- TODO: Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
@@ -2109,7 +2144,7 @@ for key, value in pairs({
 	[250985] = "宝箱",	-- Treasure Chest
 	[250987] = "小宝箱",	-- Small Treasure Chest
 	[251032] = "衣橱",	-- Armoire
-	--TODO: [251124] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
+	[251124] = "闪闪发光的宝箱",	-- Glimmering Treasure Chest	--TODO: This was manually translated
 	[251168] = "瞬灭水晶",	-- Ephemeral Crystal
 	[251218] = "罗洛的符文石",	-- Rollo's Runestone
 	[251220] = "拉格纳的符文石",	-- Ragnar's Runestone
@@ -2667,7 +2702,7 @@ for key, value in pairs({
 	--TODO: [339243] = "Infested Strongbox",	-- Infested Strongbox
 	[339248] = "感染宝箱",	-- Infested Cache
 	[339249] = "感染宝箱",	-- Infested Cache
-	--TODO: [339250] = "Infested Cache",	-- Infested Cache
+	[339250] = "感染宝箱",	-- Infested Cache	--TODO: This was manually translated
 	[339283] = "被遗忘的贵族宝箱",	-- Forgotten Noble's Chest
 	[339601] = "万世卷轴",	-- Scroll of Aeons
 	--TODO: [339625] = "Sophia's Gift",	-- Sophia's Gift
@@ -3193,6 +3228,7 @@ do a[key] = value; end
 --TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
+	-- Arbitrary Filters
 		[1] = {1, "|CFFFF0000此项玩家永远无法获得。|r", "从未实施"}, -- No Hope
 		[2] = {1, "|CFFFF0000此项已从游戏中删除。|r", "从游戏中移除"}, -- No Hope
 		[9] = {3, "|CFFFF0000获得它的原始来源已被删除，现在只能通过黑市拍卖行获得。|r", "黑市拍卖行 [BMAH]"},

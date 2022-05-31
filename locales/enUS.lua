@@ -1565,7 +1565,7 @@ app.L = {
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
 		[-218] = "Coastal",														-- Coastal (for Fishing)
-		[-219] = "Sourceless",													-- Sourceless
+	[-219] = "Sourceless",														-- Sourceless
 	-- Class
 		[-220] = CLASS,															-- Class
 	-- Bonus Objectives
@@ -1879,12 +1879,12 @@ app.L = {
 		--[-1004] = "Prideful Spirit",												-- Prideful Spirit
 		--[-1005] = "Untamed Spirit",												-- Untamed Spirit
 	-- Temp Sets for Creation Catalyst
-		[-1006] = "Looking For Raid Alternative",
-		[-1007] = "Normal Alternative",
-		[-1008] = "Heroic Alternative",
-		[-1009] = "Mythic Alternative",
-		[-1010] = "Gladiator Alternative",
-		[-1011] = "Elite Alternative",
+		[-1006] = "Raid Finder Alternative",										-- Raid Finder Alternative
+		[-1007] = "Normal Alternative",												-- Normal Alternative
+		[-1008] = "Heroic Alternative",												-- Heroic Alternative
+		[-1009] = "Mythic Alternative",												-- Mythic Alternative
+		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
+		[-1011] = "Elite Alternative",												-- Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

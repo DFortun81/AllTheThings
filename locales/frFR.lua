@@ -101,6 +101,8 @@ local L = app.L;
 	--TODO: L.BREADCRUMB_PARTYSYNC_2 = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
 	--TODO: L.BREADCRUMB_PARTYSYNC_3 = "This may be obtained via Party Sync with a character that is able to accept this quest.";
 	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
+	--TODO: L.DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
+	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "|c%sBecomes unavailable if %d of the following are met:|r";
 	--TODO: L.NO_ENTRIES = "No entries matching your filters were found.";
 	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
 	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
@@ -216,8 +218,13 @@ local L = app.L;
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	--TODO: L.NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
-	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window!|r";
+	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Estimated amount needed to obtain remaining Things";
+	--TODO: L.LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
+	--TODO: L.LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
+	--TODO: L.LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
+	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
+	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -304,8 +311,8 @@ local L = app.L;
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t |cffADD8E6Music Rolls / Selfie Filters";
 		--TODO: L.MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "Enable this option to track music rolls and selfie filters.\n\nYou can use your Jukebox Toy to play in-game music and your Selfie Camera toy to collect filters for your selfies from certain locations.";
 		--TODO: L.QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and World Quests are tracked in the Blizzard Database.";
-		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6+Breadcrumbs";
-		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Breadcrumb Quest completion.\n\nBreadcrumb Quests are technically 'optional' in that they only serve to lead the player to a different Quest, and become unavailable if they are not completed prior to completing their following Quest(s).\nThis can make obtaining Breadcrumbs very reliant on the Party Sync feature or Account-Wide Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX = "|cffADD8E6Locked Quests";
+		--TODO: L.QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 		--TODO: L.RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		--TODO: L.REPUTATIONS_CHECKBOX = "|cffADD8E6Reputations";
 		--TODO: L.REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
@@ -413,7 +420,7 @@ local L = app.L;
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
-		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nCounts for Containers are calculated by multiplying the cost of the Container by the remaining Things it contains. Thus for Containers which reward multiple Things at once, the estimate will be higher than actually required.";
+		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
 		--TODO: L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
@@ -513,6 +520,28 @@ local L = app.L;
 		--TODO: L.PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		--TODO: L.PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
 
+	-- Sync tab
+		--TODO: L.SYNC = "Sync";
+		--TODO: L.ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
+		--TODO: L.AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
+		--TODO: L.AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
+		--TODO: L.ACCOUNT_MANAGEMENT = "Account Management";
+		--TODO: L.ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
+		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
+		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
+		--TODO: L.CHARACTERS = "Characters";
+		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
+		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
+		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
+		--TODO: L.LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
+		--TODO: L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
+		--TODO: L.LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+		--TODO: L.DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
+		--TODO: L.DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
+		--TODO: L.DELETE_CHARACTER = "Right Click to Delete this Character";
+		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
+
 	-- About tab
 		--TODO: L.ABOUT = "About";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
@@ -558,6 +587,7 @@ local L = app.L;
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -650,6 +680,8 @@ for key,value in pairs({
 		--TODO: [-22] = "Secrets",									-- Secrets
 		--TODO: [-23] = "Common Dungeon Drop",						-- WoD Common Dungeon Drop
 		--TODO: [-26] = "Drops",									-- Drops
+		--TODO: [-27] = "Lower",									-- Lower (Blackrock Spire)
+		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		--TODO: [-41] = "Cache of Madness",
 	-- World Events
 		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
@@ -692,6 +724,8 @@ for key,value in pairs({
 	-- Fishing
 		--TODO: [-217] = "Lures",									-- Lures (for Fishing)
 		--TODO: [-218] = "Coastal",									-- Coastal (for Fishing)
+	--TODO: [-219] = "Sourceless",									-- Sourceless
+	-- PvP
 		--TODO: [-242] = "Unrated",									-- Unrated
 		--TODO: [-243] = "Bounty",									-- Bounty
 	-- Allied Races
@@ -811,7 +845,6 @@ for key,value in pairs({
 			[-1005] = "Esprit indompté",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Conseil des transcendés",						-- Ascended Counil
-			--TODO: [-966] = "Blueprints & Crafting",				-- Blueprints (for Path of Ascension)
 			--TODO: [-973] = "Loyalty",								-- Loyalty
 			--TODO: [-975] = "Humility",							-- Humility
 		-- SL Revendreth/Venthyr
@@ -823,6 +856,13 @@ for key,value in pairs({
 			--TODO: [-969] = "Set B",								-- Set B
 			--TODO: [-970] = "Set C",								-- Set C
 			--TODO: [-971] = "Set D",								-- Set D
+	-- Temp Sets for Creation Catalyst
+		[-1006] = "Raids Alternative",								-- TODO: Raid Finder Alternative
+		[-1007] = "Normal Alternative",								-- TODO: Normal Alternative
+		[-1008] = "Héroïque Alternative",							-- TODO: Heroic Alternative
+		[-1009] = "Mythique Alternative",							-- TODO: Mythic Alternative
+		[-1010] = "Gladiateur Alternative",							-- TODO: Gladiator Alternative
+		[-1011] = "Élite Alternative",								-- TODO: Elite Alternative
 	-- Warrior order hall lore items
 		--TODO: [-2200] = "Great Odyn and the Firelord",
 		--TODO: [-2201] = "The Wanderer and the Serpent",

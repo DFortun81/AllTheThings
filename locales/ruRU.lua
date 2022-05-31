@@ -103,6 +103,8 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.BREADCRUMB_PARTYSYNC_2 = "Может быть получено при помощи Синхронизации группы с другим персонажем, который не выполнил ни одно из этих заданий:";
 	L.BREADCRUMB_PARTYSYNC_3 = "Может быть получено при помощи Синхронизации группы с персонажем, который может принять это задание.";
 	L.BREADCRUMB_PARTYSYNC_4 = "Пожалуйста, расскажите на нашем сервере Discord, смогли ли Вы получить это Задание при помощи Синхронизации группы!";
+	L.DISABLE_PARTYSYNC = "Скорее всего это Задание невозможно выполнить на данном персонаже даже с Синхронизацией группы. Если Вам всё же удастся, пожалуйста, сообщите нам в Discord!";
+	L.UNAVAILABLE_WARNING_FORMAT = "|c%s Становится недоступным, если %d из следующих выполнены:|r";
 	L.NO_ENTRIES = "Не найдено ничего, что бы соответствовало вашим фильтрам.";
 	L.NO_ENTRIES_DESC = "Если Вы уверены, что это была ошибка, попробуйте включить 'Режим Отладки'. Один из Ваших фильтов может ограничивать видимость группы.";
 	L.DEBUG_LOGIN = "Награда за вход в игру.\n\nОтличная работа! ВЫ СДЕЛАЛИ ЭТО!\n\nОтображается только в Режиме Отладки.";
@@ -218,8 +220,13 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
 	L.NESTED_QUEST_REQUIREMENTS = "Вложенные Требования Заданий";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
-	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Эта группа и её содержимое не влияют на прогресс данного окна!|r";
+	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Эта группа и её содержимое не влияют на прогресс данного окна, так как у этой Штучки уже указан Источник в другом месте!|r";
 	L.CURRENCY_NEEDED_TO_BUY = "Примерно необходимо для покупки Не Собранных Штучек";
+	L.LOCK_CRITERIA_LEVEL_LABEL = "Уровень Игрока";
+	L.LOCK_CRITERIA_QUEST_LABEL = "Выполненное Задание";
+	L.LOCK_CRITERIA_SPELL_LABEL = "Выученный Навык/Транспорт/Рецепт";
+	L.LOCK_CRITERIA_FACTION_LABEL = "Репутация";
+	L.LOCK_CRITERIA_FACTION_FORMAT = "%s с %s (Текущее: %s)";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -415,7 +422,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.SHOW_MODELS_CHECKBOX = "Предпоказ";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке модель вместо иконки.\n\nДанная настройка может помочь идентифицировать Редкого монстра или Торговца по внешнему виду. Возможно, Вы захотите оставить опцию включенной по этой причине.";
 		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Рассчет покупок";
-		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество Предметов/Валюты, необходимое для покупки Штучек.\n\nДля Контейнеров это просто произведение цены контейнера на количество Не Собранных Штучек. Таким образом стоимость будет завышена для Контейнеров, которые могут давать несколько Штучек за раз.";
+		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество Предметов/Валюты, необходимое для покупки Штучек.\n\nДля Контейнеров, которые не гарантируют получение всего содержимого за раз, оценка затрат будет ниже.";
 		L.SHARED_APPEARANCES_CHECKBOX = "Общие Облики";
 		L.SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке предметы, которые имеют общий облик.\n\nПримечание: Предметы, которые не совпадают по типу брони отображаются в списке для того, чтобы определить прогресс Коллекции.\n\nЕсли Вы путаетесь в них, начиная с ATT v1.5.0, Вы можете Правым Кликом по предмету \"открыть\" предмет и его собственный Мини Список со всеми Общими Обликами.";
 		L.INCLUDE_ORIGINAL_CHECKBOX = "Оригинал";
@@ -582,6 +589,7 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.SECRETS_HEADER = "Секреты";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
+		L.REMOVED_WITH_PATCH_FORMAT = "Это исчезнет в патче %s";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
@@ -657,6 +665,8 @@ for key,value in pairs({
 		[-22] = "Секреты",										-- Secrets
 		[-23] = "Обычная добыча с боссов",						-- WoD Common Dungeon Drop
 		[-26] = BATTLE_PET_SOURCE_1,							-- Drops
+		[-27] = "Нижняя часть",									-- Lower (Blackrock Spire)
+		[-28] = "Верхняя часть",								-- Upper (Blackrock Spire)
 		[-41] = "Тайник Безумия",
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
@@ -700,7 +710,9 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "Наживки",											-- Lures (for Fishing)
 		[-218] = "Побережье",										-- Coastal (for Fishing)
-		[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
+	[-219] = "Без Источника",										-- Sourceless
+	[-228] = "Точка полета",									-- GetSpellInfo(218950),  -- Flight Path
+	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 	-- Allied Races
@@ -818,7 +830,6 @@ for key,value in pairs({
 			[-1005] = "Неукрощенный дух",							-- Untamed Spirit
 		-- SL Bastion/Kyrian
 			[-940] = "Совет перерожденных",							-- Ascended Counil
-			[-966] = "Чертежи и Создание",							-- "Blueprints & Crafting"
 			[-973] = "Верность",									-- Loyalty
 			[-975] = "Смирение",									-- Humility
 		-- SL Revendreth/Venthyr
@@ -830,6 +841,13 @@ for key,value in pairs({
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
+	-- Temp Sets for Creation Catalyst
+		[-1006] = "Поиск рейда Реколор",							-- Raid Finder Alternative
+		[-1007] = "Обычный Реколор",								-- Normal Alternative
+		[-1008] = "Героический Реколор",							-- Heroic Alternative
+		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
+		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
+		[-1011] = "Ветеран Реколор",								-- Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",
