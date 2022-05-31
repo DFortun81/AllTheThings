@@ -1420,6 +1420,23 @@ bubbleDown = function(data, t)
 		return t;
 	end
 end
+-- Applies a copy of the provided data into all sub-groups of the provided table/array assuming that table matches the requirements of the filter.
+bubbleDownFiltered = function(data, filter, t)
+	if t then
+		if t.g or t.groups then
+			if filter(t) then applyData(data, t); end
+			bubbleDownFiltered(data, filter, t.groups);
+			bubbleDownFiltered(data, filter, t.g);
+		elseif isarray(t) then
+			for _,group in ipairs(t) do
+				bubbleDownFiltered(data, filter, group);
+			end
+		else
+			if filter(t) then applyData(data, t); end
+		end
+		return t;
+	end
+end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion

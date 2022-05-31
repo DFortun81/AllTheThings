@@ -4,7 +4,7 @@
 
 root("PVP", pvp(tier(TBC_TIER, {
 	n(SEASON_GLADIATOR, {
-		n(PVP_HONOR, {
+		n(PVP_HONOR, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 2.4.0" } }, function(t) return t.itemID; end, {
 			n(WEAPONS, {
 				i(28940),	-- Grand Marshal's Barricade
 				i(28941),	-- Grand Marshal's Battletome
@@ -259,7 +259,7 @@ root("PVP", pvp(tier(TBC_TIER, {
 				i(28874),	-- High Warlord's Wyrmhide Spaulders
 				i(28875),	-- High Warlord's Wyrmhide Tunic
 			}),
-		}),
+		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146651, {	-- Arsenal: Gladiator's Weapons
