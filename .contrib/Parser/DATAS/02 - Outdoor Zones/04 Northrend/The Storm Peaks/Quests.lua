@@ -61,6 +61,7 @@ _.Zones =
 				q(12956, {	-- A Spark of Hope
 					["coord"] = { 77.1, 62.9, THE_STORM_PEAKS },
 					["model"] = 195374,
+					["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
 					["provider"] = { "o", 192060 },	-- Fjorn's Anvil
 					["sourceQuests"] = { 12922 },	-- The Refiner's Fire
 				}),
@@ -471,6 +472,7 @@ _.Zones =
 				q(12915, {	-- Mending Fences
 					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
+					["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
 					["sourceQuests"] = { 13064 },	-- Sibling Rivalry
 				}),
 				q(12905, {	-- Mildred the Cruel
@@ -935,6 +937,7 @@ _.Zones =
 				q(12922, {	-- The Refiner's Fire
 					["crs"] = { 29375 },	-- Stormforged Iron Giant
 					["provider"] = { "i", 41556 },	-- Slag Covered Metal
+					["sourceQuests"] = { 13064 },	-- Sibling Rivalry (guessed by last quest completed prior)
 					["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 				}),
 				q(13843, {	-- The Scrapbot Construction Kit
