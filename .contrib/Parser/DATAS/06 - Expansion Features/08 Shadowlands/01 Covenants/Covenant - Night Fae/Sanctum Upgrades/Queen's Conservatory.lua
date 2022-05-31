@@ -366,6 +366,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
 										["coord"] = { 25.6, 47.5, 1662 },
+										["maps"] = { HOWLING_FJORD },
 									}),
 									q(62591, {	-- In Search of Inner Calm (5)
 										["sourceQuests"] = { 62590 },	-- In Search of Inner Calm (4)

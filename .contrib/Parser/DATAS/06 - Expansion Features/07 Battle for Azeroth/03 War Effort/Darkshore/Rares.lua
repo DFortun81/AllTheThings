@@ -313,7 +313,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(147664, {	-- Zim'kaga [A Only]
-						-- ["questID"] = 54290,	-- Zimkaga [Alliance]
 						["races"] = ALLIANCE_ONLY,
 						["questID"] = 54274,
 						["isWeekly"] = true,
