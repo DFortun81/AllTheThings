@@ -722,7 +722,7 @@ end
 settings.CreateTab = function(self, text)
 	local id = #self.Tabs + 1;
 	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "OptionsFrameTabButtonTemplate");
-	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", -10, 0); end
+	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", L["TAB_SPACING"], 0); end
 	table.insert(self.Tabs, tab);
 	self.MostRecentTab = tab;
 	tab.objects = {};
