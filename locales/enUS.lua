@@ -12,6 +12,7 @@
 
 local name, app = ...;
 app.L = {
+	["TAB_SPACING"] = -10;	-- This is to control spacing between tab names in Settings
 	-- General Text
 	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT|r";

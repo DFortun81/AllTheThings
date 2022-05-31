@@ -2,6 +2,7 @@
 if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
+L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 
 -- General Text
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
