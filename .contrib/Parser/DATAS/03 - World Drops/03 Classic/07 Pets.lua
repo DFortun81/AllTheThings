@@ -12,7 +12,7 @@ _.WorldDrops =
 			i(3670, {	--	Large Slimy Bone
 				["description"] = "Drops from Slimes in Classic zones.",
 			}),
-			i(20768, {	--	Rabbit's Foot
+			i(3300, {	--	Rabbit's Foot
 				["description"] = "Drops from wolves or dogs in Classic zones.",
 			}),
 			i(11406, {	--	Rotting Bear Carcass
