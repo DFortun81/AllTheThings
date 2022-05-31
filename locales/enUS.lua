@@ -559,8 +559,9 @@ app.L = {
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
 	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
-	
+
 	-- Sync tab
+	["SYNC"] = "Sync";
 	["ACCOUNT_SYNCHRONIZATION"] = "Account Synchronization";
 	["AUTO_SYNC_ACC_DATA_CHECKBOX"] = "Automatically Sync Account Data";
 	["AUTO_SYNC_ACC_DATA_TOOLTIP"] = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";

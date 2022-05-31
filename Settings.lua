@@ -296,7 +296,7 @@ settings.Initialize = function(self)
 	end
 
 	-- Account Synchronization
-	self.TabsByName["Sync"]:InitializeSyncWindow();
+	self.TabsByName[L["SYNC"]]:InitializeSyncWindow();
 	if self:GetTooltipSetting("Auto:Sync") then
 		app:Synchronize(true);
 	end
@@ -4646,7 +4646,7 @@ end)();
 -- The "Sync" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Sync");
+local tab = settings:CreateTab(L["SYNC"]);
 local SyncLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 SyncLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 SyncLabel:SetJustifyH("LEFT");
