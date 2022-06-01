@@ -6166,16 +6166,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 9.2.5
 			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
 				-- 9.2.5.42850
-				q(63505),	--
-				q(63506),	--
+				q(63505),	-- An Engraved Invitation	-- Ardenweald category
+				q(63506),	-- Mecha Gone	-- Ardenweald category, weird
 				q(63507),	-- Kate Reuse Me
-				q(63508),	--
-				q(63509),	--
-				q(63510),	--
-				q(63511),	--
+				q(63508),	-- Into the Woods Without Delay	-- Ardenweald category
+				q(63509),	-- Road Trip!	-- Ardenweald category
+				q(63510),	-- Hi, Mountain!	-- Ardenweald category, weird
+				q(63511),	-- Big Finish	-- Ardenweald category
 				q(63536),	--
 				q(65541),	--
-				q(65598),	--
+				q(65598),	-- Adore Elune	-- Ardenweald category
 				q(65767),	--
 				q(66059),	--
 				q(66060),	--
