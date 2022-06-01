@@ -1253,5 +1253,6 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, {
 			52.4, 61.6 (184939)
 			53.6, 43.8 (184945)
 		--]]
+		q(65488),	-- Dialog option with Ve'nari's body near creation catalyst
 	}),
 }));

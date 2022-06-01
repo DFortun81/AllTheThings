@@ -126,6 +126,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 							}),
 						},
 					}),
+					n(189038, {	-- Fallen Knight's Ranseur
+						["sourceQuests"] = { 63490 },	-- Blood Knight
+						["coord"] = { 38.4, 81.9, GHOSTLANDS },
+						["classes"] = { PALADIN },
+						["g"] = {
+							i(191957),	-- Fallen Knight's Ranseur
+						},
+					}),
 				}),
 			}),
 			race(DARKIRON, {
