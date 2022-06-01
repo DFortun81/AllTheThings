@@ -385,7 +385,7 @@ root("Zones", m(KALIMDOR, {
 			}),
 			q(66323, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Idling Pie
 				["sourceQuests"] = { 66253 },	-- Stolen Shipments
-				["provider"] = { "n", 187768 },	-- Zaa'je
+				["provider"] = { "n", 187758 },	-- Zaa'je
 				["coord"] = { 48.5, 75.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -718,7 +718,7 @@ root("Zones", m(KALIMDOR, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(66253, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Stolen Shipments
-				["provider"] = { "n", 187768 },	-- Zaa'je
+				["provider"] = { "n", 187758 },	-- Zaa'je
 				["coord"] = { 48.5, 75.9, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {

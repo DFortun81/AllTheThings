@@ -11,6 +11,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			20,		-- Keeper's Rest (part of Priest artifact questline)
 			466,	-- Night Web's Hollow
 			908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario)
+			-- #if AFTER 9.2.5
+			2070	-- Tirisfal Glades (Present)
+			-- #endif
 		},
 		["groups"] = {
 			m(465, {	-- Deathknell
@@ -413,6 +416,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 				}),
+				q(65788, {	-- A Walk with Ghosts
+					["sourceQuests"] = { 66091 },	-- Path of the Dark Rangers (H)
+					["provider"] = { "n", 185852 },	-- Lilian Voss
+					["coord"] = { 61.8, 67.8, 2070 },
+					["timeline"] = { "added 9.2.5" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(26930, {	-- After the Crusade
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
@@ -439,6 +449,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
 					},
+				}),
+				q(65657, {	-- Assemble the Forsaken
+					["sourceQuests"] = {
+						65656,	-- Call to Lordaeron
+						65655,	-- Eyes of the Wolf
+					},
+					["provider"] = { "n", 185512 },	-- Calia Menethil
+					["coord"] = { 60.8, 51.4, 2070 },
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(370, {	-- At War With The Scarlet Crusade
 					["u"] = REMOVED_FROM_GAME,
@@ -468,6 +487,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25007 },	-- East... Always to the East
+				}),
+				q(65661, {	-- Consulting Our Allies
+					["sourceQuests"] = { 65660 },	-- Walk of Faith
+					["provider"] = { "n", 185513 },	-- Lilian Voss
+					["coord"] = { 61.9, 55.6, 2070 },
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
@@ -739,6 +764,20 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24994 },	-- Doom Weed
 				}),
+				q(66090, {	-- Path of the Dark Rangers (A)
+					["sourceQuests"] = { 65668 },	-- The Desolate Council
+					["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
+					["coord"] = { 61.9, 67.8, 2070 },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 9.2.5" },
+				}),
+				q(66091, {	-- Path of the Dark Rangers (H)
+					["sourceQuests"] = { 65668 },	-- The Desolate Council
+					["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
+					["coord"] = { 61.9, 67.8, 2070 },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 9.2.5" },
+				}),
 				q(24999, {	-- Planting the Seed of Fear
 					["provider"] = { "n", 38978 },	-- Apprentice Crispin
 					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
@@ -777,6 +816,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1495 },	-- Deathguard Linnea
+				}),
+				q(65669, {	-- Report to Greymane
+					["sourceQuests"] = { 66090 },	-- Path of the Dark Rangers (A)
+					["provider"] = { "n", 185848 },	-- Calia Menethil
+					-- ["coord"] = { 61.9, 67.8, 2070 },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(360, {	-- Return to the Magistrate
 					["u"] = REMOVED_FROM_GAME,
@@ -868,6 +914,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 				}),
+				q(65659, {	-- The Blight Congress
+					["sourceQuests"] = { 65657 },	-- Assemble the Forsaken
+					["provider"] = { "n", 185513 },	-- Lilian Voss
+					["coord"] = { 60.9, 51.3, 2070 },
+					["timeline"] = { "added 9.2.5" },
+				}),
 				q(375, {	-- The Chill of Death
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -878,6 +930,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.2, 60.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24983 },	-- Forsaken Duties
+				}),
+				q(65668, {	-- The Desolate Council
+					["sourceQuests"] = { 65667 },	-- The Remedy of Lordaeron
+					["provider"] = { "n", 185852 },	-- Lilian Voss
+					["coord"] = { 61.9, 67.7, 2070 },
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(408, {	-- The Family Crypt
 					["u"] = REMOVED_FROM_GAME,
@@ -956,6 +1014,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
 				}),
+				q(65667, {	-- The Remedy of Lordaeron
+					["sourceQuests"] = { 65666 },	-- Return to Brill
+					["provider"] = { "n", 185839 },	-- Calia Menethil
+					["coord"] = { 65.8, 60.4, 2070 },
+					["timeline"] = { "added 9.2.5" },
+				}),
 				q(24980, {	-- The Scarlet Palisade
 					["provider"] = { "n", 1519 },	-- Deathguard Simmer
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
@@ -973,6 +1037,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 				}),
+				q(65658, {	-- This Land is Ours
+					["sourceQuests"] = { 65657 },	-- Assemble the Forsaken
+					["provider"] = { "n", 185514 },	-- Dark Ranger Velonara
+					["coord"] = { 62.0, 50.5, 2070 },
+					["timeline"] = { "added 9.2.5" },
+				}),
 				q(25011, {	-- To Bigger and Better Things
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
@@ -984,6 +1054,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24975 },	-- Fields of Grief
+				}),
+				q(65660, {	-- Walk of Faith
+					["sourceQuests"] = { 65659 },	-- The Blight Congress
+					["provider"] = { "n", 185797 },	-- Calia Menethil
+					["coord"] = { 62.0, 55.7, 2070 },
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(398, {	-- Wanted: Maggot Eye
 					["u"] = REMOVED_FROM_GAME,

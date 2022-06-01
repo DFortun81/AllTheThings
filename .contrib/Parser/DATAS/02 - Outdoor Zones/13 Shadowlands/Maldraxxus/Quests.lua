@@ -174,15 +174,36 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 164244 },	-- Grandmaster Vole
 				["coord"] = { 50.3, 44.3, MALDRAXXUS },
 			}),
+			q(65665, {	-- Embodiment
+				["sourceQuests"] = {
+					65663,	-- Feed th Eater
+					65664,	-- Essence of Plague
+				},
+				["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
+				["coord"] = { 68.7, 81.8, MALDRAXXUS },
+				["timeline"] = { "added 9.2.5" },
+			}),
 			q(59185, {	-- Entangling Web
 				["sourceQuests"] = { 59172 },	-- War is Deception
 				["provider"] = { "n", 162487 },	-- Baroness Vashj
 				["coord"] = { 50.3, 67.7, MALDRAXXUS },
 			}),
+			q(65664, {	-- Essence of Plague
+				["sourceQuests"] = { 65662 },	-- House of Plagues
+				["provider"] = { "n", 185517 },	-- Plague Deviser Marileth
+				["coord"] = { 71.2, 71.5, MALDRAXXUS },
+				["timeline"] = { "added 9.2.5" },
+			}),
 			q(59231, {	-- Fathomless Power
 				["sourceQuests"] = { 60831 },	-- Fit For a Margrave
 				["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 				["coord"] = { 60.4, 71.6, MALDRAXXUS },
+			}),
+			q(65663, {	-- Feed th Eater
+				["sourceQuests"] = { 65662 },	-- House of Plagues
+				["provider"] = { "n", 185803 },	-- Calia Menethil
+				["coord"] = { 71.1, 71.4, MALDRAXXUS },
+				["timeline"] = { "added 9.2.5" },
 			}),
 			q(60557, {	-- First Time? You Have to Fight!
 				["sourceQuests"] = { 57912 },	-- Baron of the Chosen
@@ -233,6 +254,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175453),	-- Flesh Architect's Footguards
 					i(175451),	-- Cruel Executioner's Warboots
 				},
+			}),
+			q(65662, {	-- House of Plagues
+				["sourceQuests"] = { 65661 },	-- Consulting Our Allies
+				["provider"] = { "n", 177782 },	-- Margrave Sin'dane
+				["coord"] = { 74.8, 33.6, MALDRAXXUS },
+				["timeline"] = { "added 9.2.5" },
 			}),
 			q(59750, {	-- How To Get A Head
 				["sourceQuests"] = { 57425 },	-- Land of Opportunity
@@ -398,6 +425,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(175707),	-- Signet of the Learned
 				},
 			}),
+			q(65666, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Brill
+				["sourceQuests"] = { 65665 },	-- Embodiment
+				["provider"] = { "n", 185829 },	-- Lilian Voss
+				["coord"] = { 68.6, 81.8, MALDRAXXUS },
+				["timeline"] = { "added 9.2.5" },
+			})),
 			q(58622, {	-- Secrets Among the Shelves
 				["sourceQuests"] = {
 					59917,	-- Kill Them, Of Course

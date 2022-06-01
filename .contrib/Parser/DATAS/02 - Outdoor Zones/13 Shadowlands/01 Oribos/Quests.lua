@@ -223,6 +223,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 32.6, 51, 2042 },
 				["timeline"] = { "added 9.2.0" },
 			}),
+			q(65656, {	-- Call to Lordaeron
+				--["sourceQuests"] = {},
+				["provider"] = { "n", 173386 },	-- Calia Menethil
+				["coord"] = { 41.2, 69.3, ORIBOS },
+				["timeline"] = { "added 9.2.5" },
+				["races"] = HORDE_ONLY,
+			}),
 			q(64007, {	-- Charge of the Covenants
 				["sourceQuests"] = { 63665 },	-- Opening to Oribos
 				["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
@@ -233,6 +240,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 39.2, 69.7, ORIBOS },
+			}),
+			q(65655, {	-- Eyes of the Wolf
+				--["sourceQuests"] = {},
+				["provider"] = { "n", 185525 },	-- Genn Greymane <King of Gilneas>
+				["coord"] = { 41.9, 63.5, ORIBOS },
+				["timeline"] = { "added 9.2.5" },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(62966, {	-- Finding a Witness
 				["sourceQuests"] = { 60139 },	-- Torture Chamber: Jaina
@@ -418,6 +432,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
+			}),
+			q(66170,{	-- Silent Vigil
+				["sourceQuests"] = { 65297 },	-- Penance and Renewal
+				["provider"] = { "n", 187436 },	-- Dori'thur <Tyrande's Companion>
+				["coord"] = { 46.6, 55.9, 1671 },
+				["timeline"] = { "added 9.2.5" },
 			}),
 			q(60129, {	-- Stranger in an Even Stranger Land
 				["sourceQuests"] = { 59770 },	-- Stand as One
@@ -1233,11 +1253,13 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 
 		q(65757),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
 		q(66047),	-- Solo Shuffle Completion? /First win
 		q(65511),	-- Stay a while and listen with Vareesa Windrunner
-		q(65618),	-- Stay a while and listen with Bolvar
+		q(65618),	-- Stay a while and listen with Bolvar(9.2.0)
 		q(65612),	-- Stay a while and listen with Baine
 		q(65609),	-- Stay a while and listen with Lor'themar
 		q(65607),	-- Stay a while and listen with King Greymane
 		q(65614),	-- Stay a while and listen with Arbiter Pelagos
+		q(66316),	-- Stay a while and listen with Bolvar(9.2.5)
+		q(66313),	-- Stay a while and listen with Proundmoore
 	}),
 })));
 

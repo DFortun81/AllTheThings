@@ -284,6 +284,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(14765, {	-- Ramparts Racer
 			["altQuests"] = { 59643 },	-- It's Race Day in the Ramparts!
 		}),
+		ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
+			["_quests"] = {
+				65788,	-- A Walk with Ghosts
+				65669,	-- Report to Greymane
+			},
+			["g"] = {
+				title(460),	-- <Name> of Lordaeron
+			},
+		})),
 		ach(15036, {	-- Rooting Out The Evil
 			crit(1),	-- Clean Out the Crucible
 			crit(2),	-- Looming Darkness
