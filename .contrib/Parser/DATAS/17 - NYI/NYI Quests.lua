@@ -6166,7 +6166,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 9.2.5
 			tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { "created 9.2.5" } }, {
 				-- 9.2.5.42850
-				q(63479),	-- Summons from the Matriarch
 				q(63505),	--
 				q(63506),	--
 				q(63507),	-- Kate Reuse Me
@@ -6189,8 +6188,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66067),	--
 				q(66068),	--
 				q(66069),	--
-				q(66243),	--
-				q(66280),	--
 				-- 9.2.5.43022
 				q(66285),	--
 				q(66309),	--

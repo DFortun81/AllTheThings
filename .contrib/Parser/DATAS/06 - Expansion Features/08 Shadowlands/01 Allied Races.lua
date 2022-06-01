@@ -10,10 +10,17 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
 				["races"] = { BLOODELF },
 				["g"] = bubbleDown({ ["races"] = { BLOODELF } }, {
-					q(65652, {	-- Summons from the Matriarch
-						["sourceQuests"] = { 54096 },	-- The Fall of the Sunwell (Might need anything from SL also)
+					q(65652, {	-- Summons from the Matriarch (non-Paladin)
+						-- ["sourceQuests"] = { },
 						["provider"] = { "n", 176789 },	-- Lady Liadrin
 						["coord"] = { 25.4, 52.1, ORIBOS },
+						["classes"] = exclude(PALADIN, ALL_CLASSES),
+					}),
+					q(63479, {	-- Summons from the Matriarch (Paladin)
+						-- ["sourceQuests"] = { },
+						["provider"] = { "n", 176789 },	-- Lady Liadrin
+						["coord"] = { 25.4, 52.1, ORIBOS },
+						["classes"] = { PALADIN },
 					}),
 					q(63480, {	-- Briefing
 						["sourceQuests"] = { 65652 },	-- Summons from the Matriarch
@@ -84,23 +91,25 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 						["provider"] = { "n", 176882 },	-- Lady Liadrin
 						["coord"] = { 35.6, 73.0, GHOSTLANDS },
 						["g"] = {
-							i(191604),	-- Veil-Touched Ranseur
+							i(191604),	-- Veil-Touched Ranseur (Maybe only Paladin?)
 						},
 					}),
 					q(65653, {	-- Victory for the Sin'dorei
 						["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 						["provider"] = { "n", 176882 },	-- Lady Liadrin
 						["coord"] = { 34.2, 77.4, GHOSTLANDS },
+						["classes"] = exclude(PALADIN, ALL_CLASSES),
 						["g"] = {
 							i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 						},
 					}),
 					q(63490, {	-- Blood Knight
-						["sourceQuests"] = { 65653 },	-- Victory for the Sin'dorei
-						--["provider"] = { "n",  },	-- Lady Liadrin
-						--["coord"] = { X, Y, SILVERMOON_CITY },
+						["sourceQuests"] = { 63489 },	-- Justice Long Overdue
+						["provider"] = { "n", 176882 },	-- Lady Liadrin
+						["coord"] = { 34.0, 77.4, SILVERMOON_CITY },
 						["classes"] = { PALADIN },
 						["g"] = {
+							i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 							i(191565, {	-- Ensemble: Blood Knight's Dedication
 								i(191554),	-- Blood Knight's Dedication Belt
 								i(191560),	-- Blood Knight's Dedication Bracers
@@ -174,4 +183,5 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 
 root("HiddenQuestTriggers", {
 	q(66302),	-- Arsenal: Lavaforge Armaments (Triggered when learning the Arsenal)
+	q(66280),	-- Ensemble: Blood Knight's Dedication (Triggered when learning the Ensemble)
 });

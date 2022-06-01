@@ -420,8 +420,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 66091 },	-- Path of the Dark Rangers (H)
 					["provider"] = { "n", 185852 },	-- Lilian Voss
 					["coord"] = { 61.8, 67.8, 2070 },
-					["timeline"] = { "added 9.2.5" },
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 9.2.5" },
 				}),
 				q(26930, {	-- After the Crusade
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
@@ -789,7 +789,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1652 },	-- Deathguard Burgess
 				}),
-				q(10590, {	-- Prove  Your Hatred
+				q(10590, {	-- Prove Your Hatred
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { BLOODELF },
 					["classes"] = { PALADIN },

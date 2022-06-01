@@ -105,6 +105,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
 				["timeline"] = { "added 9.1.0" },
 			}),
+			q(66243, {	-- A Gift of Hope
+				--["sourceQuests"] = {},
+				["provider"] = { "n", 187905 },	-- Lilacsprig <Queen's Messenger>
+				["coord"] = { 60.6, 41.2, ORIBOS },
+				["timeline"] = { "added 9.2.5" },
+			}),
 			q(61716, {	-- A Glimpse into Darkness
 				["sourceQuests"] = { 61715 },	-- Request of the Highlord
 				["provider"] = { "n", 173384 },	-- Highlord Bolvar Fordragon
@@ -227,8 +233,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				--["sourceQuests"] = {},
 				["provider"] = { "n", 173386 },	-- Calia Menethil
 				["coord"] = { 41.2, 69.3, ORIBOS },
-				["timeline"] = { "added 9.2.5" },
 				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 9.2.5" },
 			}),
 			q(64007, {	-- Charge of the Covenants
 				["sourceQuests"] = { 63665 },	-- Opening to Oribos
@@ -245,8 +251,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				--["sourceQuests"] = {},
 				["provider"] = { "n", 185525 },	-- Genn Greymane <King of Gilneas>
 				["coord"] = { 41.9, 63.5, ORIBOS },
-				["timeline"] = { "added 9.2.5" },
 				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 9.2.5" },
 			}),
 			q(62966, {	-- Finding a Witness
 				["sourceQuests"] = { 60139 },	-- Torture Chamber: Jaina
