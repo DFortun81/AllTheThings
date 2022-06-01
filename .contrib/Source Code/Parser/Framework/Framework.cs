@@ -93,7 +93,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 5, 43903 } },
+            { "SHADOWLANDS", new int[] { 9, 2, 5, 43971 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
