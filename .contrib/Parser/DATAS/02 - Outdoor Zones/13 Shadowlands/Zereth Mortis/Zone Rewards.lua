@@ -53,9 +53,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(192424, {	-- Rhapsodic Cleaver
 				["timeline"] = { "added 9.2.5" },
 			}),
-			i(192441, {	-- Rhapsodic Pulverizer
-				["timeline"] = { "added 9.2.5" },
-			}),
 			i(192429, {	-- Scepter of Requiem
 				["timeline"] = { "added 9.2.5" },
 			}),

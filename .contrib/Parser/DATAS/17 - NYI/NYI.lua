@@ -207,6 +207,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(192437),	-- Cache of Fated Treasures (Normal)
 		i(192466),	-- Puzzling Cartel Dinar
 
+		i(192441),	-- Rhapsodic Pulverizer
+
+		i(192485),	-- Stored Wisdom Device (TOY!)
+
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace?)
 
 		-- Winter Veil 2022

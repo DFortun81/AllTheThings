@@ -1043,4 +1043,5 @@ i(192099);  -- Earpieces of Tranquil Focus
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
+i(192485);	-- Stored Wisdom Device
 end)();
