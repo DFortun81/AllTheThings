@@ -648,7 +648,17 @@ namespace ATT
                         Objects.Merge(data, "qgs", quest_qgs);
                 }
             }
-            else if (data.TryGetValue("_quests", out object quests))
+            // Alliance-Only QuestID
+            if (data.TryGetValue("questIDA", out questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+            }
+            // Horde-Only QuestID
+            if (data.TryGetValue("questIDH", out questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+            }
+            if (data.TryGetValue("_quests", out object quests))
             {
                 // don't duplicate achievements in this way
                 if (data.TryGetValue("achID", out achID))
@@ -662,7 +672,7 @@ namespace ATT
                     cloned = true;
                 }
             }
-            else if (data.TryGetValue("_items", out object items))
+            if (data.TryGetValue("_items", out object items))
             {
                 // don't duplicate achievements in this way
                 if (data.TryGetValue("criteriaID", out long criteriaID))
@@ -677,7 +687,7 @@ namespace ATT
                     cloned = true;
                 }
             }
-            else if (data.TryGetValue("_npcs", out object npcs))
+            if (data.TryGetValue("_npcs", out object npcs))
             {
                 // TODO: consolidate when creature/npc are the same... if that ever happens
                 DuplicateDataIntoGroups(data, npcs, "creatureID");
@@ -922,10 +932,14 @@ namespace ATT
             {
                 if (data.TryGetValue(key, out decimal id))
                 {
-                    Dictionary<decimal, int> idCounts = TypeUseCounts[key];
-                    idCounts.TryGetValue(id, out int count);
-                    count += 1;
-                    idCounts[id] = count;
+                    IncrementTypeUseCount(key, id);
+                }
+                else if (key == "questID")
+                {
+                    if (data.TryGetValue("questIDA", out id))
+                        IncrementTypeUseCount(key, id);
+                    if (data.TryGetValue("questIDH", out id))
+                        IncrementTypeUseCount(key, id);
                 }
             }
 
@@ -934,6 +948,14 @@ namespace ATT
                 data.Remove(key);
 
             return true;
+        }
+
+        private static void IncrementTypeUseCount(string key, decimal id)
+        {
+            Dictionary<decimal, int> idCounts = TypeUseCounts[key];
+            idCounts.TryGetValue(id, out int count);
+            count += 1;
+            idCounts[id] = count;
         }
 
         private static bool CheckTimeline(Dictionary<string, object> data)
@@ -2379,19 +2401,16 @@ namespace ATT
                     }
 
                 case "altQuestID":
-                case "hQuestID":
-                case "hordeQuestID":
-                    {
-                        return "altQuestID";
-                    }
-
+                    return "altQuestID";
                 case "questID":
+                    return "questID";
                 case "aQuestID":
                 case "allyQuestID":
                 case "allianceQuestID":
-                    {
-                        return "questID";
-                    }
+                    return "questIDA";
+                case "hQuestID":
+                case "hordeQuestID":
+                    return "questIDH";
                 case "lc":
                 case "lockCriteria":
                     return "lc";

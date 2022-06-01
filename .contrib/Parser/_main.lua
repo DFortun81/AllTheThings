@@ -25,6 +25,7 @@ ROOTS = {
 	["InGameShop"] = "InGameShop",
 	["PetBattles"] = "PetBattles",
 	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
+	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
 	["NeverImplemented"] = "NeverImplemented",
 	["Factions"] = "Factions",
 	["Holidays"] = "Holidays",
@@ -1349,7 +1350,7 @@ end
 
 -- Helper Functions
 isarray = function(t)
-	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 -- Ensures that 't' has a 'groups' field containing the array data of the table
 togroups = function(t)

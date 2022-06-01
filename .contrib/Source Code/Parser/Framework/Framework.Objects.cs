@@ -1657,6 +1657,8 @@ namespace ATT
                     case "parentCategoryID":
                     case "criteriaType":
                     case "assetID":
+                    case "questIDA":
+                    case "questIDH":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;
