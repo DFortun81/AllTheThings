@@ -272,7 +272,10 @@ _.WorldDrops =
 				un(REMOVED_FROM_GAME, i(54784, {	-- Burnished Tunic
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				})),
-				i(17050),	-- Chan's Imperial Robes
+				i(17050, {	-- Chan's Imperial Robes
+					["description"] = "This item disappeared after the Cataclsym. It might now only be available from the Emerald Encrusted Chest in the Blasted Lands.",
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(13009),	-- Cow King's Hide
 				i(1717),	-- Double Link Tunic
 				i(13123),	-- Dreamwalker Armor
@@ -296,6 +299,7 @@ _.WorldDrops =
 				i(12999),	-- Drakewing Bands
 				i(13119),	-- Enchanted Kodo Bracers
 				i(9433),	-- Forgotten Wraps
+				i(13076),	-- Giantslayer Bracers
 				i(13106),	-- Glowing Magical Bracelets
 				i(13135),	-- Lordly Armguards
 				i(13107),	-- Magiskull Cuffs

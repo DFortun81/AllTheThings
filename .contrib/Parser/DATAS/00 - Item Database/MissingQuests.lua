@@ -391,9 +391,6 @@ q(2480),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's A
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
 q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
 q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
-q(2521),	-- To Serve Kum'isha,		TBC: To Serve Kum'isha,		CLASSIC: To Serve Kum'isha
-q(2585),	-- The Decisive Striker,		TBC: The Decisive Striker,		CLASSIC: The Decisive Striker
-q(2603),	-- Vulture's Vigor,		TBC: Vulture's Vigor,		CLASSIC: Vulture's Vigor
 q(2607),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
 q(2608),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
 q(2609),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
@@ -434,8 +431,6 @@ q(2986),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(2988),	-- Witherbark Cages,		TBC: Witherbark Cages,		CLASSIC: Witherbark Cages
 q(2989),	-- The Altar of Zul,		TBC: The Altar of Zul,		CLASSIC: The Altar of Zul
 q(2990),	-- Thadius Grimshade,		TBC: Thadius Grimshade,		CLASSIC: Thadius Grimshade
-q(2992),	-- The Divination,		TBC: The Divination,		CLASSIC: The Divination
-q(2993),	-- Return to the Hinterlands,		TBC: Return to the Hinterlands,		CLASSIC: Return to the Hinterlands
 q(2996),	-- Seeking Strahad,		TBC: Seeking Strahad,		CLASSIC: Seeking Strahad
 q(2997),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2998),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
@@ -776,8 +771,6 @@ q(7561),	-- Rise, Thunderfury!,		CLASSIC: Rise, Thunderfury!
 q(7562),	-- Mor'zul Bloodbringer,		TBC: Mor'zul Bloodbringer,		CLASSIC: Mor'zul Bloodbringer
 q(7563),	-- Rage of Blood,		TBC: Rage of Blood,		CLASSIC: Rage of Blood
 q(7564),	-- Wildeyes,		TBC: Wildeyes,		CLASSIC: Wildeyes
-q(7581),	-- The Prison's Bindings,		TBC: The Prison's Bindings,		CLASSIC: The Prison's Bindings
-q(7582),	-- The Prison's Casing,		TBC: The Prison's Casing,		CLASSIC: The Prison's Casing
 q(7601),	-- What Niby Commands,		TBC: What Niby Commands,		CLASSIC: What Niby Commands
 q(7602),	-- Flawless Fel Essence,		TBC: Flawless Fel Essence,		CLASSIC: Flawless Fel Essence
 q(7621),	-- A Warning,		TBC: A Warning,		CLASSIC: A Warning

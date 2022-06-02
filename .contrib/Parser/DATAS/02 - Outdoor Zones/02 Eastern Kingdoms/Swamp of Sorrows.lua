@@ -376,11 +376,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27871,	-- To Stonard
 				}),
-				q(2783, {	-- Petty Squabbles
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 7826 },	-- Ambassador Ardalan
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(1424, {	-- Pool of Tears
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -638,6 +633,31 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
+				}),
+				q(3627, {	-- Uniting the Shattered Amulet
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { BLASTED_LANDS },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 Amulet of Allistarj
+							["provider"] = { "i", 10755 },	-- Amulet of Allistarj
+							["coord"] = { 66.8, 29.6, BLASTED_LANDS },
+							["cr"] = 7666,	-- Archmage Allistarj
+						}),
+						objective(2, {	-- 0/1 Amulet of Grol
+							["provider"] = { "i", 10753 },	-- Amulet of Grol
+							["coord"] = { 43.0, 12.8, BLASTED_LANDS },
+							["cr"] = 7665,	-- Grol the Destroyer
+						}),
+						objective(3, {	-- 0/1 Amulet of Sevine
+							["provider"] = { "i", 10754 },	-- Amulet of Sevine
+							["coord"] = { 40.6, 30.2, BLASTED_LANDS },
+							["cr"] = 7667,	-- Lady Sevine
+						}),
+					},
 				}),
 				q(27857, {	-- We're Under Attack!
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag

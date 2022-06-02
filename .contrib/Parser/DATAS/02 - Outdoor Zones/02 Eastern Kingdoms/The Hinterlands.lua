@@ -880,7 +880,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(8217, {	-- Mith'rethis the Enchanter
 					["coord"] = { 64.8, 81.6, THE_HINTERLANDS },
 					["groups"] = {
-						i(17050),	-- Chan's Imperial Robes
+						i(17050, {	-- Chan's Imperial Robes
+							["description"] = "This item disappeared after the Cataclsym. It might now only be available from the Emerald Encrusted Chest in the Blasted Lands.",
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				n(8211, {	-- Old Cliff Jumper
