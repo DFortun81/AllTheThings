@@ -1,13 +1,13 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using System.Collections.Concurrent;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace ATT
 {
@@ -26,10 +26,10 @@ namespace ATT
         /// https://us.api.blizzard.com/data/wow/search/item?namespace=static-us&locale=en_US&inventory_type.name.en_US=Off&_page=1&_pageSize=1000&orderby=id:asc&access_token=
         /// </summary>
         const string API_CALL_SEARCH = "/data/wow/search/{0}?namespace=static-us&locale=en_US&_page={1}&_pageSize=1000&access_token=";
-        
+
         static string API_KEY = null;
-        static HttpClient Client { get; } = new HttpClient();
-        static bool HasClientInitialized { get; set; } = false;
+        private static HttpClient _client;
+        static HttpClient Client => _client ?? (_client = InitClient());
         static ConcurrentQueue<Tuple<int, string>> DataResults { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
@@ -269,56 +269,56 @@ namespace ATT
             WaitForAPI = true;
             while (WaitForAPI || APIResults.Count > 0)
             {
-                if (APIResults.Count > 0)
+                if (APIResults.TryDequeue(out Tuple<int, Task<HttpResponseMessage>> responseData))
                 {
-                    if (APIResults.TryDequeue(out Tuple<int, Task<HttpResponseMessage>> responseData))
+                    // get the actual response message from the task
+                    try
                     {
-                        // get the actual response message from the task
-                        try
+                        Task<HttpResponseMessage> responseTask = responseData.Item2;
+                        HttpResponseMessage response = responseTask.Result;
+                        if (response.IsSuccessStatusCode)
                         {
-                            Task<HttpResponseMessage> responseTask = responseData.Item2;
-                            HttpResponseMessage response = responseTask.Result;
-                            if (response.IsSuccessStatusCode)
-                            {
-                                string data = response.Content.ReadAsStringAsync().Result;
-                                if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + responseData.Item1.ToString() + "]: NULL");
-                                else
-                                {
-                                    Console.WriteLine("[" + responseData.Item1.ToString() + "]: FOUND");
-                                    DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, data));
-                                }
-                            }
-                            // queried too fast!
-                            else if ((int)response.StatusCode == 429)
-                            {
-                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST!");
-                                QueueAPIRequestForID(responseData.Item1, true);
-                            }
-                            // item doesn't exist -- save a raw file for it so re-parsing/testing is faster, ugh
-                            else if ((int)response.StatusCode == 404)
-                            {
-                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
-                                DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
-                            }
-                            // authorization ran out
-                            else if (response.StatusCode == HttpStatusCode.Unauthorized)
-                            {
-                                // dont worry about auth errors i suppose...
-                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
-                                //break;
-                            }
+                            string data = response.Content.ReadAsStringAsync().Result;
+                            if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + responseData.Item1.ToString() + "]: NULL");
                             else
                             {
-                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: " + response.StatusCode.ToString());
-                                //Error = "UNKNOWN API STATUS: " + response.StatusCode.ToString();
-                                //break;
+                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: FOUND");
+                                DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, data));
                             }
                         }
-                        catch
+                        // queried too fast!
+                        else if ((int)response.StatusCode == 429)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: API EXPLODE!");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST!");
                             QueueAPIRequestForID(responseData.Item1, true);
                         }
+                        // item doesn't exist -- save a raw file for it so re-parsing/testing is faster, ugh
+                        else if ((int)response.StatusCode == 404)
+                        {
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
+                            DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
+                        }
+                        // forbidden??
+                        else if (response.StatusCode == HttpStatusCode.Forbidden)
+                        {
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: FORBIDDEN");
+                        }
+                        // authorization ran out
+                        else if (response.StatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            // dont worry about auth errors i suppose...
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
+                        }
+                        else
+                        {
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: " + response.StatusCode.ToString());
+                            QueueAPIRequestForID(responseData.Item1, true);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("[" + responseData.Item1.ToString() + "]: API EXPLODE! " + ex.Message);
+                        QueueAPIRequestForID(responseData.Item1, true);
                     }
                 }
                 else
@@ -339,13 +339,10 @@ namespace ATT
             WaitForData = true;
             while (WaitForData || DataResults.Count > 0)
             {
-                if (DataResults.Count > 0)
+                if (DataResults.TryDequeue(out Tuple<int, string> data))
                 {
-                    if (DataResults.TryDequeue(out Tuple<int, string> data))
-                    {
-                        // Simply write the data for parsing later
-                        File.WriteAllText(string.Format(RawDirectoryFormat, data.Item1), data.Item2);
-                    }
+                    // Simply write the data for parsing later
+                    File.WriteAllText(string.Format(RawDirectoryFormat, data.Item1), data.Item2);
                 }
                 else
                 {
@@ -401,11 +398,8 @@ namespace ATT
             }
         }
 
-        static void InitClient()
+        static HttpClient InitClient()
         {
-            if (HasClientInitialized) return;
-            HasClientInitialized = true;
-
             while (!File.Exists("API.key"))
             {
                 Console.WriteLine("You are missing an 'API.key' API Key file! Please get one and try again.");
@@ -413,10 +407,15 @@ namespace ATT
             }
             API_KEY = File.ReadAllText("API.key");
 
-            Client.BaseAddress = new Uri("https://us.api.blizzard.com");
-            Client.Timeout = new TimeSpan(0, 0, 10);
-            Client.DefaultRequestHeaders.Accept.Clear();
-            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            HttpClient client = new HttpClient
+            {
+                BaseAddress = new Uri("https://us.api.blizzard.com"),
+                Timeout = new TimeSpan(0, 0, 10),
+            };
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+            return client;
         }
 
         private static void QueueAPIRequestForID(int i, bool retry = false)

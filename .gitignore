@@ -39,3 +39,4 @@ __pycache__
 /.vscode/settings.json
 .venv
 .contrib/Parser/*.txt
+.contrib/Source Code/Item DB Compare Tool/bin/
