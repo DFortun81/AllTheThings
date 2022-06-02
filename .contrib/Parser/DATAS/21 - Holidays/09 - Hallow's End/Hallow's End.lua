@@ -389,6 +389,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 	["description"] = "Start: 10/18 at 10:00 AM\nEnd: 11/01 at 11:00 AM",
 	["OnUpdate"] = [[function() _.Settings:CheckSeasonalDate(]] .. HALLOWS_END .. [[, 10, 18, 11, 1); end]],
 	["groups"] = {
+		-- #if AFTER 2.0.1
 		n(ACHIEVEMENTS, {
 			ach(1656, {	-- Hallowed Be Thy Name
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -501,6 +502,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "i", 33154 },	-- Sinister Squashling
 					{ "i", 33292 },	-- Hallowed Helm
 				},
+				["timeline"] = { "added 2.0.1" },
 				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
 				-- #else
@@ -1452,6 +1454,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				-- #endif
 			})),
 		}),
+		-- #endif
 		n(23682, {	-- Headless Horseman
 			-- #if AFTER WRATH
 			["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",

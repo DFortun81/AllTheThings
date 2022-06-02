@@ -1976,7 +1976,9 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			},
 			["groups"] = {
 				i(21212),	-- Fresh Holly
-				i(34191),	-- Handful of Snowflakes
+				i(34191, {	-- Handful of Snowflakes
+					["timeline"] = { "added 2.3.0.7561" },
+				}),
 				i(21519),	-- Mistletoe
 			},
 		}),

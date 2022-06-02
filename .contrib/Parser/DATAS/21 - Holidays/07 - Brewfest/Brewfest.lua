@@ -369,6 +369,7 @@ root("Holidays", applyholiday(BREWFEST, {
 			["questID"] = 12062,	-- Insult Coren Direbrew
 			["maps"] = { BLACKROCK_DEPTHS },
 			-- #endif
+			["timeline"] = { "added 2.0.1" },
 			["isDaily"] = true,
 			-- #if AFTER SHADOWLANDS
 			["lvl"] = 20,
