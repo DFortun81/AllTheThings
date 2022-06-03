@@ -780,7 +780,6 @@ BATTLEGROUNDS = -304;
 RATED_BATTLEGROUNDS = -650;
 
 -- PvP Seasons
-PRE_SEASON = -658;
 SEASON_GLADIATOR = -664;
 SEASON_MERCILESS = -665;
 SEASON_VENGEFUL = -666;
@@ -1533,6 +1532,22 @@ merge = function(...)
 		end
 	end
 	return t;
+end
+run = function(method, t)
+	if t then
+		if t.g or t.groups then
+			method(t);
+			run(method, t.groups);
+			run(method, t.g);
+		elseif isarray(t) then
+			for _,group in ipairs(t) do
+				run(method, group);
+			end
+		else
+			method(t);
+		end
+		return t;
+	end
 end
 unpack = function(t, i)
   i = i or 1
