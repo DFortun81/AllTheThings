@@ -21,6 +21,7 @@ root("WorldEvents", n(-541,	-- The Silithyst Must Flow
 					-- #endif
 				},
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(53, 15, 53),
 			}),
 			q(9415, {	-- Report to Marshal Bluewall
@@ -32,6 +33,7 @@ root("WorldEvents", n(-541,	-- The Silithyst Must Flow
 					{ 50.7, 34.7, SILITHUS },
 					-- #endif
 				},
+				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(53, 15, 53),
 			}),
