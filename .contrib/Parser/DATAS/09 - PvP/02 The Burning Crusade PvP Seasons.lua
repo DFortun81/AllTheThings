@@ -3265,7 +3265,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146603 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				
 				i(35068, {	-- Brutal Gladiator's Plate Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),

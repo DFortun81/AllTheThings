@@ -37,9 +37,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				n(-861, {	-- Rank 4
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-						az(32, 4, {	-- Conflict and Strife (Rank 4)
-							["u"] = 14,	-- PvP Elite/Gladiator
-						}),
+						un(ELITE_PVP_REQUIREMENT, az(32, 4)),	-- Conflict and Strife (Rank 4)
 						az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 						az(15, 4),	-- Ripple in Space (Rank 4)
 						az(12, 4),	-- The Crucible of Flame (Rank 4)

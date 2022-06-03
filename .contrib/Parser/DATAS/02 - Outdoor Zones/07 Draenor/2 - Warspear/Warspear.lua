@@ -3654,7 +3654,7 @@ _.Zones =
 										{ "g", 50000000 },	-- 5,000g
 									},
 								}),
-								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
+								un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 								})),
 							},

@@ -1312,7 +1312,7 @@ root("Zones", {
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
-						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
+						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["groups"] = pvp({
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher

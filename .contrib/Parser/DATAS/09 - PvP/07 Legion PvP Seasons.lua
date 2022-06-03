@@ -807,7 +807,7 @@ _.PVP =
 				}),
 				n(PVP_ELITE, {
 					cl(DEATHKNIGHT, {
-						un(14, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -816,29 +816,29 @@ _.PVP =
 								{"exclude", "itemID", 146220 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
-								un(14, i(136043)),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(136045)),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(136049)),	-- Vindictive Gladiator's Dreadplate Girdle (A)
-								un(14, i(136046)),	-- Vindictive Gladiator's Dreadplate Helm (A)
-								un(14, i(136047)),	-- Vindictive Gladiator's Dreadplate Legguards (A)
-								un(14, i(136044)),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
-								un(14, i(136048)),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
-								un(14, i(136050)),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
-								un(14, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
-								un(14, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(143018)),	-- Fearless Gladiator's Dreadplate Girdle (A)
-								un(14, i(143015)),	-- Fearless Gladiator's Dreadplate Helm (A)
-								un(14, i(143016)),	-- Fearless Gladiator's Dreadplate Legguards (A)
-								un(14, i(143013)),	-- Fearless Gladiator's Dreadplate Sabatons (A)
-								un(14, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
-								un(14, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(136131)),	-- Vindictive Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136043)),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(136045)),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(136049)),	-- Vindictive Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(136046)),	-- Vindictive Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136047)),	-- Vindictive Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136044)),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(136048)),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136050)),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(143018)),	-- Fearless Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(143015)),	-- Fearless Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143016)),	-- Fearless Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143013)),	-- Fearless Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
 							},
 						})),
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -847,29 +847,29 @@ _.PVP =
 								{"exclude", "itemID", 146270 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
-								un(14, i(136317)),	-- Vindictive Gladiator's Felskin Belt (A)
-								un(14, i(136311)),	-- Vindictive Gladiator's Felskin Boots (A)
-								un(14, i(136312)),	-- Vindictive Gladiator's Felskin Gloves (A)
-								un(14, i(136313)),	-- Vindictive Gladiator's Felskin Helm (A)
-								un(14, i(136314)),	-- Vindictive Gladiator's Felskin Legguards (A)
-								un(14, i(136316)),	-- Vindictive Gladiator's Felskin Spaulders (A)
-								un(14, i(136315)),	-- Vindictive Gladiator's Felskin Tunic (A)
-								un(14, i(136318)),	-- Vindictive Gladiator's Felskin Wristguards (A)
-								un(14, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
-								un(14, i(143276)),	-- Fearless Gladiator's Felskin Belt (A)
-								un(14, i(143270)),	-- Fearless Gladiator's Felskin Boots (A)
-								un(14, i(143271)),	-- Fearless Gladiator's Felskin Gloves (A)
-								un(14, i(143272)),	-- Fearless Gladiator's Felskin Helm (A)
-								un(14, i(143273)),	-- Fearless Gladiator's Felskin Legguards (A)
-								un(14, i(143275)),	-- Fearless Gladiator's Felskin Spaulders (A)
-								un(14, i(143274)),	-- Fearless Gladiator's Felskin Tunic (A)
-								un(14, i(143277)),	-- Fearless Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136895)),	-- Vindictive Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136317)),	-- Vindictive Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(136311)),	-- Vindictive Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(136312)),	-- Vindictive Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(136313)),	-- Vindictive Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136314)),	-- Vindictive Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136316)),	-- Vindictive Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136315)),	-- Vindictive Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(136318)),	-- Vindictive Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143276)),	-- Fearless Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(143270)),	-- Fearless Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(143271)),	-- Fearless Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(143272)),	-- Fearless Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143273)),	-- Fearless Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143275)),	-- Fearless Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143274)),	-- Fearless Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(143277)),	-- Fearless Gladiator's Felskin Wristguards (A)
 							},
 						})),
 					}),
 					cl(DRUID, {
-						un(14, i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -878,29 +878,29 @@ _.PVP =
 								{"exclude", "itemID", 146228 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
-								un(14, i(136135)),	-- Vindictive Gladiator's Dragonhide Cloak (A)
-								un(14, i(136052)),	-- Vindictive Gladiator's Dragonhide Gloves (A)
-								un(14, i(136053)),	-- Vindictive Gladiator's Dragonhide Helm (A)
-								un(14, i(136054)),	-- Vindictive Gladiator's Dragonhide Legguards (A)
-								un(14, i(136051)),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
-								un(14, i(136055)),	-- Vindictive Gladiator's Dragonhide Robe (A)
-								un(14, i(136056)),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
-								un(14, i(136058)),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
-								un(14, i(143026)),	-- Fearless Gladiator's Dragonhide Belt (A)
-								un(14, i(143104)),	-- Fearless Gladiator's Dragonhide Cloak (A)
-								un(14, i(143021)),	-- Fearless Gladiator's Dragonhide Gloves (A)
-								un(14, i(143022)),	-- Fearless Gladiator's Dragonhide Helm (A)
-								un(14, i(143023)),	-- Fearless Gladiator's Dragonhide Legguards (A)
-								un(14, i(143020)),	-- Fearless Gladiator's Dragonhide Moccasins (A)
-								un(14, i(143025)),	-- Fearless Gladiator's Dragonhide Spaulders (A)
-								un(14, i(143024)),	-- Fearless Gladiator's Dragonhide Tunic (A)
-								un(14, i(143027)),	-- Fearless Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136057)),	-- Vindictive Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(136135)),	-- Vindictive Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136052)),	-- Vindictive Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(136053)),	-- Vindictive Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136054)),	-- Vindictive Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136051)),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(136055)),	-- Vindictive Gladiator's Dragonhide Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(136056)),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136058)),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143026)),	-- Fearless Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(143104)),	-- Fearless Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143021)),	-- Fearless Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(143022)),	-- Fearless Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143023)),	-- Fearless Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143020)),	-- Fearless Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(143025)),	-- Fearless Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143024)),	-- Fearless Gladiator's Dragonhide Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(143027)),	-- Fearless Gladiator's Dragonhide Wristguards (A)
 							},
 						})),
 					}),
 					cl(HUNTER, {
-						un(14, i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -909,29 +909,29 @@ _.PVP =
 								{"exclude", "itemID", 146226 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
-								un(14, i(136059)),	-- Vindictive Gladiator's Chain Armor (A)
-								un(14, i(136065)),	-- Vindictive Gladiator's Chain Clasp (A)
-								un(14, i(136061)),	-- Vindictive Gladiator's Chain Gauntlets (A)
-								un(14, i(136062)),	-- Vindictive Gladiator's Chain Helm (A)
-								un(14, i(136063)),	-- Vindictive Gladiator's Chain Leggings (A)
-								un(14, i(136064)),	-- Vindictive Gladiator's Chain Spaulders (A)
-								un(14, i(136060)),	-- Vindictive Gladiator's Chain Treads (A)
-								un(14, i(136139)),	-- Vindictive Gladiator's Drape of the Tracker (A)
-								un(14, i(143035)),	-- Fearless Gladiator's Chain Armband (A)
-								un(14, i(143028)),	-- Fearless Gladiator's Chain Armor (A)
-								un(14, i(143034)),	-- Fearless Gladiator's Chain Clasp (A)
-								un(14, i(143030)),	-- Fearless Gladiator's Chain Gauntlets (A)
-								un(14, i(143031)),	-- Fearless Gladiator's Chain Helm (A)
-								un(14, i(143032)),	-- Fearless Gladiator's Chain Leggings (A)
-								un(14, i(143033)),	-- Fearless Gladiator's Chain Spaulders (A)
-								un(14, i(143029)),	-- Fearless Gladiator's Chain Treads (A)
-								un(14, i(143108)),	-- Fearless Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(136066)),	-- Vindictive Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(136059)),	-- Vindictive Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(136065)),	-- Vindictive Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(136061)),	-- Vindictive Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(136062)),	-- Vindictive Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136063)),	-- Vindictive Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(136064)),	-- Vindictive Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136060)),	-- Vindictive Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(136139)),	-- Vindictive Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(143035)),	-- Fearless Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(143028)),	-- Fearless Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(143034)),	-- Fearless Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(143030)),	-- Fearless Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(143031)),	-- Fearless Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143032)),	-- Fearless Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(143033)),	-- Fearless Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143029)),	-- Fearless Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(143108)),	-- Fearless Gladiator's Drape of the Tracker (A)
 							},
 						})),
 					}),
 					cl(MAGE, {
-						un(14, i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -940,29 +940,29 @@ _.PVP =
 								{"exclude", "itemID", 146234 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
-								un(14, i(136074)),	-- Vindictive Gladiator's Silk Bracers (A)
-								un(14, i(136073)),	-- Vindictive Gladiator's Silk Cord (A)
-								un(14, i(136069)),	-- Vindictive Gladiator's Silk Cowl (A)
-								un(14, i(136068)),	-- Vindictive Gladiator's Silk Handguards (A)
-								un(14, i(136071)),	-- Vindictive Gladiator's Silk Robe (A)
-								un(14, i(136067)),	-- Vindictive Gladiator's Silk Treads (A)
-								un(14, i(136070)),	-- Vindictive Gladiator's Silk Trousers (A)
-								un(14, i(136132)),	-- Vindictive Gladiator's Silken Shawl (A)
-								un(14, i(143041)),	-- Fearless Gladiator's Silk Amice (A)
-								un(14, i(143043)),	-- Fearless Gladiator's Silk Bracers (A)
-								un(14, i(143042)),	-- Fearless Gladiator's Silk Cord (A)
-								un(14, i(143038)),	-- Fearless Gladiator's Silk Cowl (A)
-								un(14, i(143037)),	-- Fearless Gladiator's Silk Handguards (A)
-								un(14, i(143040)),	-- Fearless Gladiator's Silk Robe (A)
-								un(14, i(143036)),	-- Fearless Gladiator's Silk Treads (A)
-								un(14, i(143039)),	-- Fearless Gladiator's Silk Trousers (A)
-								un(14, i(143101)),	-- Fearless Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(136072)),	-- Vindictive Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(136074)),	-- Vindictive Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136073)),	-- Vindictive Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(136069)),	-- Vindictive Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(136068)),	-- Vindictive Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136071)),	-- Vindictive Gladiator's Silk Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(136067)),	-- Vindictive Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(136070)),	-- Vindictive Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136132)),	-- Vindictive Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(143041)),	-- Fearless Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(143043)),	-- Fearless Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143042)),	-- Fearless Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(143038)),	-- Fearless Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(143037)),	-- Fearless Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143040)),	-- Fearless Gladiator's Silk Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(143036)),	-- Fearless Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(143039)),	-- Fearless Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143101)),	-- Fearless Gladiator's Silken Shawl (A)
 							},
 						})),
 					}),
 					cl(MONK, {
-						un(14, i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -971,29 +971,29 @@ _.PVP =
 								{"exclude", "itemID", 146230 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
-								un(14, i(136136)),	-- Vindictive Gladiator's Ironskin Cloak (A)
-								un(14, i(136076)),	-- Vindictive Gladiator's Ironskin Gloves (A)
-								un(14, i(136077)),	-- Vindictive Gladiator's Ironskin Helm (A)
-								un(14, i(136078)),	-- Vindictive Gladiator's Ironskin Legguards (A)
-								un(14, i(136075)),	-- Vindictive Gladiator's Ironskin Slippers (A)
-								un(14, i(136079)),	-- Vindictive Gladiator's Ironskin Spaulders (A)
-								un(14, i(136080)),	-- Vindictive Gladiator's Ironskin Tunic (A)
-								un(14, i(136082)),	-- Vindictive Gladiator's Ironskin Wristguards (A)
-								un(14, i(143050)),	-- Fearless Gladiator's Ironskin Belt (A)
-								un(14, i(143105)),	-- Fearless Gladiator's Ironskin Cloak (A)
-								un(14, i(143045)),	-- Fearless Gladiator's Ironskin Gloves (A)
-								un(14, i(143046)),	-- Fearless Gladiator's Ironskin Helm (A)
-								un(14, i(143047)),	-- Fearless Gladiator's Ironskin Legguards (A)
-								un(14, i(143044)),	-- Fearless Gladiator's Ironskin Slippers (A)
-								un(14, i(143048)),	-- Fearless Gladiator's Ironskin Spaulders (A)
-								un(14, i(143049)),	-- Fearless Gladiator's Ironskin Tunic (A)
-								un(14, i(143051)),	-- Fearless Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136081)),	-- Vindictive Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(136136)),	-- Vindictive Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136076)),	-- Vindictive Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(136077)),	-- Vindictive Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136078)),	-- Vindictive Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136075)),	-- Vindictive Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136079)),	-- Vindictive Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136080)),	-- Vindictive Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(136082)),	-- Vindictive Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143050)),	-- Fearless Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(143105)),	-- Fearless Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143045)),	-- Fearless Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(143046)),	-- Fearless Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143047)),	-- Fearless Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143044)),	-- Fearless Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143048)),	-- Fearless Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143049)),	-- Fearless Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(143051)),	-- Fearless Gladiator's Ironskin Wristguards (A)
 							},
 						})),
 					}),
 					cl(PALADIN, {
-						un(14, i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1002,29 +1002,29 @@ _.PVP =
 								{"exclude", "itemID", 146222 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
-								un(14, i(136083)),	-- Vindictive Gladiator's Scaled Battlerobe (A)
-								un(14, i(136085)),	-- Vindictive Gladiator's Scaled Gauntlets (A)
-								un(14, i(136089)),	-- Vindictive Gladiator's Scaled Girdle (A)
-								un(14, i(136086)),	-- Vindictive Gladiator's Scaled Helm (A)
-								un(14, i(136087)),	-- Vindictive Gladiator's Scaled Legguards (A)
-								un(14, i(136084)),	-- Vindictive Gladiator's Scaled Sabatons (A)
-								un(14, i(136088)),	-- Vindictive Gladiator's Scaled Shoulders (A)
-								un(14, i(136090)),	-- Vindictive Gladiator's Scaled Wristplates (A)
-								un(14, i(143109)),	-- Fearless Gladiator's Greatcloak of Faith (A)
-								un(14, i(143052)),	-- Fearless Gladiator's Scaled Chestpiece (A)
-								un(14, i(143054)),	-- Fearless Gladiator's Scaled Gauntlets (A)
-								un(14, i(143058)),	-- Fearless Gladiator's Scaled Girdle (A)
-								un(14, i(143055)),	-- Fearless Gladiator's Scaled Helm (A)
-								un(14, i(143056)),	-- Fearless Gladiator's Scaled Legguards (A)
-								un(14, i(143053)),	-- Fearless Gladiator's Scaled Sabatons (A)
-								un(14, i(143057)),	-- Fearless Gladiator's Scaled Shoulders (A)
-								un(14, i(143059)),	-- Fearless Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(136140)),	-- Vindictive Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(136083)),	-- Vindictive Gladiator's Scaled Battlerobe (A)
+								un(ELITE_PVP_REQUIREMENT, i(136085)),	-- Vindictive Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(136089)),	-- Vindictive Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(136086)),	-- Vindictive Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136087)),	-- Vindictive Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136084)),	-- Vindictive Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(136088)),	-- Vindictive Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136090)),	-- Vindictive Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(143109)),	-- Fearless Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(143052)),	-- Fearless Gladiator's Scaled Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(143054)),	-- Fearless Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(143058)),	-- Fearless Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(143055)),	-- Fearless Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143056)),	-- Fearless Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143053)),	-- Fearless Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(143057)),	-- Fearless Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143059)),	-- Fearless Gladiator's Scaled Wristplates (A)
 							},
 						})),
 					}),
 					cl(PRIEST, {
-						un(14, i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1033,29 +1033,29 @@ _.PVP =
 								{"exclude", "itemID", 146236 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
-								un(14, i(136098)),	-- Vindictive Gladiator's Satin Bracers (A)
-								un(14, i(136097)),	-- Vindictive Gladiator's Satin Cord (A)
-								un(14, i(136092)),	-- Vindictive Gladiator's Satin Gloves (A)
-								un(14, i(136093)),	-- Vindictive Gladiator's Satin Hood (A)
-								un(14, i(136094)),	-- Vindictive Gladiator's Satin Leggings (A)
-								un(14, i(136096)),	-- Vindictive Gladiator's Satin Mantle (A)
-								un(14, i(136095)),	-- Vindictive Gladiator's Satin Robe (A)
-								un(14, i(136091)),	-- Vindictive Gladiator's Satin Treads (A)
-								un(14, i(143062)),	-- Fearless Gladiator's Satin Hood (A)
-								un(14, i(143063)),	-- Fearless Gladiator's Satin Leggings (A)
-								un(14, i(143065)),	-- Fearless Gladiator's Satin Mantle (A)
-								un(14, i(143061)),	-- Fearless Gladiator's Satin Gloves (A)
-								un(14, i(143060)),	-- Fearless Gladiator's Satin Treads (A)
-								un(14, i(143066)),	-- Fearless Gladiator's Satin Cord (A)
-								un(14, i(143067)),	-- Fearless Gladiator's Satin Bracers (A)
-								un(14, i(143298)),	-- Fearless Gladiator's Drape of Piety (A)
-								un(14, i(143064)),	-- Fearless Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(136873)),	-- Vindictive Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(136098)),	-- Vindictive Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136097)),	-- Vindictive Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(136092)),	-- Vindictive Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(136093)),	-- Vindictive Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(136094)),	-- Vindictive Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(136096)),	-- Vindictive Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(136095)),	-- Vindictive Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(136091)),	-- Vindictive Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(143062)),	-- Fearless Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(143063)),	-- Fearless Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(143065)),	-- Fearless Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(143061)),	-- Fearless Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(143060)),	-- Fearless Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(143066)),	-- Fearless Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(143067)),	-- Fearless Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143298)),	-- Fearless Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(143064)),	-- Fearless Gladiator's Satin Robe (A)
 							},
 						})),
 					}),
 					cl(ROGUE, {
-						un(14, i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1064,29 +1064,29 @@ _.PVP =
 								{"exclude", "itemID", 146232 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
-								un(14, i(136101)),	-- Vindictive Gladiator's Leather Gloves (A)
-								un(14, i(136102)),	-- Vindictive Gladiator's Leather Helm (A)
-								un(14, i(136103)),	-- Vindictive Gladiator's Leather Legguards (A)
-								un(14, i(136100)),	-- Vindictive Gladiator's Leather Slippers (A)
-								un(14, i(136104)),	-- Vindictive Gladiator's Leather Spaulders (A)
-								un(14, i(136099)),	-- Vindictive Gladiator's Leather Tunic (A)
-								un(14, i(136106)),	-- Vindictive Gladiator's Leather Wristguards (A)
-								un(14, i(136874)),	-- Vindictive Gladiator's Shadowcape (A)
-								un(14, i(143074)),	-- Fearless Gladiator's Leather Belt (A)
-								un(14, i(143070)),	-- Fearless Gladiator's Leather Gloves (A)
-								un(14, i(143071)),	-- Fearless Gladiator's Leather Helm (A)
-								un(14, i(143072)),	-- Fearless Gladiator's Leather Legguards (A)
-								un(14, i(143069)),	-- Fearless Gladiator's Leather Slippers (A)
-								un(14, i(143073)),	-- Fearless Gladiator's Leather Spaulders (A)
-								un(14, i(143068)),	-- Fearless Gladiator's Leather Tunic (A)
-								un(14, i(143075)),	-- Fearless Gladiator's Leather Wristguards (A)
-								un(14, i(143299)),	-- Fearless Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(136105)),	-- Vindictive Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(136101)),	-- Vindictive Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(136102)),	-- Vindictive Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136103)),	-- Vindictive Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136100)),	-- Vindictive Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136104)),	-- Vindictive Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136099)),	-- Vindictive Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(136106)),	-- Vindictive Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136874)),	-- Vindictive Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(143074)),	-- Fearless Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(143070)),	-- Fearless Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(143071)),	-- Fearless Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143072)),	-- Fearless Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143069)),	-- Fearless Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143073)),	-- Fearless Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143068)),	-- Fearless Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(143075)),	-- Fearless Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143299)),	-- Fearless Gladiator's Shadowcape (A)
 							},
 						})),
 					}),
 					cl(SHAMAN, {
-						un(14, i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1095,29 +1095,29 @@ _.PVP =
 								{"exclude", "itemID", 146224 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
-								un(14, i(136107)),	-- Vindictive Gladiator's Ringmail Armor (A)
-								un(14, i(136108)),	-- Vindictive Gladiator's Ringmail Boots (A)
-								un(14, i(136113)),	-- Vindictive Gladiator's Ringmail Clasp (A)
-								un(14, i(136109)),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
-								un(14, i(136110)),	-- Vindictive Gladiator's Ringmail Helm (A)
-								un(14, i(136111)),	-- Vindictive Gladiator's Ringmail Kilt (A)
-								un(14, i(136112)),	-- Vindictive Gladiator's Ringmail Spaulders (A)
-								un(14, i(136875)),	-- Vindictive Gladiator's Totemic Cloak (A)
-								un(14, i(143083)),	-- Fearless Gladiator's Ringmail Armband (A)
-								un(14, i(143076)),	-- Fearless Gladiator's Ringmail Armor (A)
-								un(14, i(143077)),	-- Fearless Gladiator's Ringmail Boots (A)
-								un(14, i(143082)),	-- Fearless Gladiator's Ringmail Clasp (A)
-								un(14, i(143078)),	-- Fearless Gladiator's Ringmail Gauntlets (A)
-								un(14, i(143079)),	-- Fearless Gladiator's Ringmail Helm (A)
-								un(14, i(143080)),	-- Fearless Gladiator's Ringmail Kilt (A)
-								un(14, i(143081)),	-- Fearless Gladiator's Ringmail Spaulders (A)
-								un(14, i(143300)),	-- Fearless Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136114)),	-- Vindictive Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(136107)),	-- Vindictive Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(136108)),	-- Vindictive Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(136113)),	-- Vindictive Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(136109)),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(136110)),	-- Vindictive Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136111)),	-- Vindictive Gladiator's Ringmail Kilt (A)
+								un(ELITE_PVP_REQUIREMENT, i(136112)),	-- Vindictive Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136875)),	-- Vindictive Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143083)),	-- Fearless Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(143076)),	-- Fearless Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(143077)),	-- Fearless Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(143082)),	-- Fearless Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(143078)),	-- Fearless Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(143079)),	-- Fearless Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143080)),	-- Fearless Gladiator's Ringmail Kilt (A)
+								un(ELITE_PVP_REQUIREMENT, i(143081)),	-- Fearless Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143300)),	-- Fearless Gladiator's Totemic Cloak (A)
 							},
 						})),
 					}),
 					cl(WARLOCK, {
-						un(14, i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1126,29 +1126,29 @@ _.PVP =
 								{"exclude", "itemID", 146238 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
-								un(14, i(136122)),	-- Vindictive Gladiator's Felweave Bracers (A)
-								un(14, i(136883)),	-- Vindictive Gladiator's Felweave Cloak (A)
-								un(14, i(136121)),	-- Vindictive Gladiator's Felweave Cord (A)
-								un(14, i(136117)),	-- Vindictive Gladiator's Felweave Cowl (A)
-								un(14, i(136116)),	-- Vindictive Gladiator's Felweave Handguards (A)
-								un(14, i(136119)),	-- Vindictive Gladiator's Felweave Raiment (A)
-								un(14, i(136115)),	-- Vindictive Gladiator's Felweave Treads (A)
-								un(14, i(136118)),	-- Vindictive Gladiator's Felweave Trousers (A)
-								un(14, i(143089)),	-- Fearless Gladiator's Felweave Amice (A)
-								un(14, i(143091)),	-- Fearless Gladiator's Felweave Bracers (A)
-								un(14, i(143308)),	-- Fearless Gladiator's Felweave Cloak (A)
-								un(14, i(143090)),	-- Fearless Gladiator's Felweave Cord (A)
-								un(14, i(143086)),	-- Fearless Gladiator's Felweave Cowl (A)
-								un(14, i(143085)),	-- Fearless Gladiator's Felweave Handguards (A)
-								un(14, i(143088)),	-- Fearless Gladiator's Felweave Raiment (A)
-								un(14, i(143084)),	-- Fearless Gladiator's Felweave Treads (A)
-								un(14, i(143087)),	-- Fearless Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136120)),	-- Vindictive Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(136122)),	-- Vindictive Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(136883)),	-- Vindictive Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(136121)),	-- Vindictive Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(136117)),	-- Vindictive Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(136116)),	-- Vindictive Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136119)),	-- Vindictive Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(136115)),	-- Vindictive Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(136118)),	-- Vindictive Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143089)),	-- Fearless Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(143091)),	-- Fearless Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(143308)),	-- Fearless Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(143090)),	-- Fearless Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(143086)),	-- Fearless Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(143085)),	-- Fearless Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143088)),	-- Fearless Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(143084)),	-- Fearless Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(143087)),	-- Fearless Gladiator's Felweave Trousers (A)
 							},
 						})),
 					}),
 					cl(WARRIOR, {
-						un(14, i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -1157,24 +1157,24 @@ _.PVP =
 								{"exclude", "itemID", 146218 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
-								un(14, i(136123)),	-- Vindictive Gladiator's Plate Chestpiece (A)
-								un(14, i(136125)),	-- Vindictive Gladiator's Plate Gauntlets (A)
-								un(14, i(136129)),	-- Vindictive Gladiator's Plate Girdle (A)
-								un(14, i(136126)),	-- Vindictive Gladiator's Plate Helm (A)
-								un(14, i(136127)),	-- Vindictive Gladiator's Plate Legguards (A)
-								un(14, i(136128)),	-- Vindictive Gladiator's Plate Shoulders (A)
-								un(14, i(136124)),	-- Vindictive Gladiator's Plate Warboots (A)
-								un(14, i(136130)),	-- Vindictive Gladiator's Plate Wristplates (A)
-								un(14, i(143314)),	-- Fearless Gladiator's Cloak of Battle (A)
-								un(14, i(143092)),	-- Fearless Gladiator's Plate Chestpiece (A)
-								un(14, i(143094)),	-- Fearless Gladiator's Plate Gauntlets (A)
-								un(14, i(143098)),	-- Fearless Gladiator's Plate Girdle (A)
-								un(14, i(143095)),	-- Fearless Gladiator's Plate Helm (A)
-								un(14, i(143096)),	-- Fearless Gladiator's Plate Legguards (A)
-								un(14, i(143097)),	-- Fearless Gladiator's Plate Shoulders (A)
-								un(14, i(143093)),	-- Fearless Gladiator's Plate Warboots (A)
-								un(14, i(143099)),	-- Fearless Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(136889)),	-- Vindictive Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(136123)),	-- Vindictive Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(136125)),	-- Vindictive Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(136129)),	-- Vindictive Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(136126)),	-- Vindictive Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(136127)),	-- Vindictive Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(136128)),	-- Vindictive Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(136124)),	-- Vindictive Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(136130)),	-- Vindictive Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(143314)),	-- Fearless Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(143092)),	-- Fearless Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(143094)),	-- Fearless Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(143098)),	-- Fearless Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(143095)),	-- Fearless Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(143096)),	-- Fearless Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(143097)),	-- Fearless Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(143093)),	-- Fearless Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(143099)),	-- Fearless Gladiator's Plate Wristplates (A)
 							},
 						})),
 					}),
@@ -2015,25 +2015,25 @@ _.PVP =
 								{"exclude", "itemID", 146221 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
-								un(14, i(136156)),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(136158)),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(136162)),	-- Vindictive Gladiator's Dreadplate Girdle (H)
-								un(14, i(136159)),	-- Vindictive Gladiator's Dreadplate Helm (H)
-								un(14, i(136160)),	-- Vindictive Gladiator's Dreadplate Legguards (H)
-								un(14, i(136157)),	-- Vindictive Gladiator's Dreadplate Sabatons (H)
-								un(14, i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
-								un(14, i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
-								un(14, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
-								un(14, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
-								un(14, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(143131)),	-- Fearless Gladiator's Dreadplate Girdle (H)
-								un(14, i(143128)),	-- Fearless Gladiator's Dreadplate Helm (H)
-								un(14, i(143129)),	-- Fearless Gladiator's Dreadplate Legguards (H)
-								un(14, i(143126)),	-- Fearless Gladiator's Dreadplate Sabatons (H)
-								un(14, i(143130)),	-- Fearless Gladiator's Dreadplate Shoulders (H)
-								un(14, i(143132)),	-- Fearless Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136156)),	-- Vindictive Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(136158)),	-- Vindictive Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(136162)),	-- Vindictive Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(136159)),	-- Vindictive Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136160)),	-- Vindictive Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136157)),	-- Vindictive Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(136161)),	-- Vindictive Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136163)),	-- Vindictive Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(136244)),	-- Vindictive Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(143131)),	-- Fearless Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(143128)),	-- Fearless Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143129)),	-- Fearless Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143126)),	-- Fearless Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(143130)),	-- Fearless Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143132)),	-- Fearless Gladiator's Dreadplate Wristplates (H)
 							},
 						}),
 					}),
@@ -2047,24 +2047,24 @@ _.PVP =
 								{"exclude", "itemID", 146271 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
-								un(14, i(136325)),	-- Vindictive Gladiator's Felskin Belt (H)
-								un(14, i(136319)),	-- Vindictive Gladiator's Felskin Boots (H)
-								un(14, i(136320)),	-- Vindictive Gladiator's Felskin Gloves (H)
-								un(14, i(136321)),	-- Vindictive Gladiator's Felskin Helm (H)
-								un(14, i(136322)),	-- Vindictive Gladiator's Felskin Legguards (H)
-								un(14, i(136324)),	-- Vindictive Gladiator's Felskin Spaulders (H)
-								un(14, i(136323)),	-- Vindictive Gladiator's Felskin Tunic (H)
-								un(14, i(136326)),	-- Vindictive Gladiator's Felskin Wristguards (H)
-								un(14, i(143321)),	-- Fearless Gladiator's Demonthread Cloak (H)
-								un(14, i(143284)),	-- Fearless Gladiator's Felskin Belt (H)
-								un(14, i(143278)),	-- Fearless Gladiator's Felskin Boots (H)
-								un(14, i(143279)),	-- Fearless Gladiator's Felskin Gloves (H)
-								un(14, i(143280)),	-- Fearless Gladiator's Felskin Helm (H)
-								un(14, i(143281)),	-- Fearless Gladiator's Felskin Legguards (H)
-								un(14, i(143283)),	-- Fearless Gladiator's Felskin Spaulders (H)
-								un(14, i(143282)),	-- Fearless Gladiator's Felskin Tunic (H)
-								un(14, i(143285)),	-- Fearless Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136896)),	-- Vindictive Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136325)),	-- Vindictive Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(136319)),	-- Vindictive Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(136320)),	-- Vindictive Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(136321)),	-- Vindictive Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136322)),	-- Vindictive Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136324)),	-- Vindictive Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136323)),	-- Vindictive Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(136326)),	-- Vindictive Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143321)),	-- Fearless Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143284)),	-- Fearless Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(143278)),	-- Fearless Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(143279)),	-- Fearless Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(143280)),	-- Fearless Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143281)),	-- Fearless Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143283)),	-- Fearless Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143282)),	-- Fearless Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(143285)),	-- Fearless Gladiator's Felskin Wristguards (H)
 							},
 						}),
 					}),
@@ -2078,24 +2078,24 @@ _.PVP =
 								{"exclude", "itemID", 146229 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
-								un(14, i(136248)),	-- Vindictive Gladiator's Dragonhide Cloak (H)
-								un(14, i(136165)),	-- Vindictive Gladiator's Dragonhide Gloves (H)
-								un(14, i(136166)),	-- Vindictive Gladiator's Dragonhide Helm (H)
-								un(14, i(136167)),	-- Vindictive Gladiator's Dragonhide Legguards (H)
-								un(14, i(136164)),	-- Vindictive Gladiator's Dragonhide Moccasins (H)
-								un(14, i(136168)),	-- Vindictive Gladiator's Dragonhide Robe (H)
-								un(14, i(136169)),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
-								un(14, i(136171)),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
-								un(14, i(143139)),	-- Fearless Gladiator's Dragonhide Belt (H)
-								un(14, i(143217)),	-- Fearless Gladiator's Dragonhide Cloak (H)
-								un(14, i(143134)),	-- Fearless Gladiator's Dragonhide Gloves (H)
-								un(14, i(143135)),	-- Fearless Gladiator's Dragonhide Helm (H)
-								un(14, i(143136)),	-- Fearless Gladiator's Dragonhide Legguards (H)
-								un(14, i(143133)),	-- Fearless Gladiator's Dragonhide Moccasins (H)
-								un(14, i(143138)),	-- Fearless Gladiator's Dragonhide Spaulders (H)
-								un(14, i(143137)),	-- Fearless Gladiator's Dragonhide Tunic (H)
-								un(14, i(143140)),	-- Fearless Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136170)),	-- Vindictive Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(136248)),	-- Vindictive Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136165)),	-- Vindictive Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(136166)),	-- Vindictive Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136167)),	-- Vindictive Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136164)),	-- Vindictive Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(136168)),	-- Vindictive Gladiator's Dragonhide Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(136169)),	-- Vindictive Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136171)),	-- Vindictive Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143139)),	-- Fearless Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(143217)),	-- Fearless Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143134)),	-- Fearless Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(143135)),	-- Fearless Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143136)),	-- Fearless Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143133)),	-- Fearless Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(143138)),	-- Fearless Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143137)),	-- Fearless Gladiator's Dragonhide Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(143140)),	-- Fearless Gladiator's Dragonhide Wristguards (H)
 							},
 						}),
 					}),
@@ -2109,24 +2109,24 @@ _.PVP =
 								{"exclude", "itemID", 146227 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
-								un(14, i(136172)),	-- Vindictive Gladiator's Chain Armor (H)
-								un(14, i(136178)),	-- Vindictive Gladiator's Chain Clasp (H)
-								un(14, i(136174)),	-- Vindictive Gladiator's Chain Gauntlets (H)
-								un(14, i(136175)),	-- Vindictive Gladiator's Chain Helm (H)
-								un(14, i(136176)),	-- Vindictive Gladiator's Chain Leggings (H)
-								un(14, i(136177)),	-- Vindictive Gladiator's Chain Spaulders (H)
-								un(14, i(136173)),	-- Vindictive Gladiator's Chain Treads (H)
-								un(14, i(136252)),	-- Vindictive Gladiator's Drape of the Tracker (H)
-								un(14, i(143148)),	-- Fearless Gladiator's Chain Armband (H)
-								un(14, i(143141)),	-- Fearless Gladiator's Chain Armor (H)
-								un(14, i(143147)),	-- Fearless Gladiator's Chain Clasp (H)
-								un(14, i(143143)),	-- Fearless Gladiator's Chain Gauntlets (H)
-								un(14, i(143144)),	-- Fearless Gladiator's Chain Helm (H)
-								un(14, i(143145)),	-- Fearless Gladiator's Chain Leggings (H)
-								un(14, i(143146)),	-- Fearless Gladiator's Chain Spaulders (H)
-								un(14, i(143142)),	-- Fearless Gladiator's Chain Treads (H)
-								un(14, i(143221)),	-- Fearless Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(136179)),	-- Vindictive Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(136172)),	-- Vindictive Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(136178)),	-- Vindictive Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(136174)),	-- Vindictive Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(136175)),	-- Vindictive Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136176)),	-- Vindictive Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(136177)),	-- Vindictive Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136173)),	-- Vindictive Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(136252)),	-- Vindictive Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(143148)),	-- Fearless Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(143141)),	-- Fearless Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(143147)),	-- Fearless Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(143143)),	-- Fearless Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(143144)),	-- Fearless Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143145)),	-- Fearless Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(143146)),	-- Fearless Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143142)),	-- Fearless Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(143221)),	-- Fearless Gladiator's Drape of the Tracker (H)
 							},
 						}),
 					}),
@@ -2140,24 +2140,24 @@ _.PVP =
 								{"exclude", "itemID", 146235 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
-								un(14, i(136187)),	-- Vindictive Gladiator's Silk Bracers (H)
-								un(14, i(136186)),	-- Vindictive Gladiator's Silk Cord (H)
-								un(14, i(136182)),	-- Vindictive Gladiator's Silk Cowl (H)
-								un(14, i(136181)),	-- Vindictive Gladiator's Silk Handguards (H)
-								un(14, i(136184)),	-- Vindictive Gladiator's Silk Robe (H)
-								un(14, i(136180)),	-- Vindictive Gladiator's Silk Treads (H)
-								un(14, i(136183)),	-- Vindictive Gladiator's Silk Trousers (H)
-								un(14, i(136245)),	-- Vindictive Gladiator's Silken Shawl (H)
-								un(14, i(143154)),	-- Fearless Gladiator's Silk Amice (H)
-								un(14, i(143156)),	-- Fearless Gladiator's Silk Bracers (H)
-								un(14, i(143155)),	-- Fearless Gladiator's Silk Cord (H)
-								un(14, i(143151)),	-- Fearless Gladiator's Silk Cowl (H)
-								un(14, i(143150)),	-- Fearless Gladiator's Silk Handguards (H)
-								un(14, i(143153)),	-- Fearless Gladiator's Silk Robe (H)
-								un(14, i(143149)),	-- Fearless Gladiator's Silk Treads (H)
-								un(14, i(143152)),	-- Fearless Gladiator's Silk Trousers (H)
-								un(14, i(143214)),	-- Fearless Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(136185)),	-- Vindictive Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(136187)),	-- Vindictive Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136186)),	-- Vindictive Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(136182)),	-- Vindictive Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(136181)),	-- Vindictive Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136184)),	-- Vindictive Gladiator's Silk Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(136180)),	-- Vindictive Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(136183)),	-- Vindictive Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136245)),	-- Vindictive Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(143154)),	-- Fearless Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(143156)),	-- Fearless Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143155)),	-- Fearless Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(143151)),	-- Fearless Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(143150)),	-- Fearless Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143153)),	-- Fearless Gladiator's Silk Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(143149)),	-- Fearless Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(143152)),	-- Fearless Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143214)),	-- Fearless Gladiator's Silken Shawl (H)
 							},
 						}),
 					}),
@@ -2171,24 +2171,24 @@ _.PVP =
 								{"exclude", "itemID", 146231 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
-								un(14, i(136249)),	-- Vindictive Gladiator's Ironskin Cloak (H)
-								un(14, i(136189)),	-- Vindictive Gladiator's Ironskin Gloves (H)
-								un(14, i(136190)),	-- Vindictive Gladiator's Ironskin Helm (H)
-								un(14, i(136191)),	-- Vindictive Gladiator's Ironskin Legguards (H)
-								un(14, i(136188)),	-- Vindictive Gladiator's Ironskin Slippers (H)
-								un(14, i(136192)),	-- Vindictive Gladiator's Ironskin Spaulders (H)
-								un(14, i(136193)),	-- Vindictive Gladiator's Ironskin Tunic (H)
-								un(14, i(136195)),	-- Vindictive Gladiator's Ironskin Wristguards (H)
-								un(14, i(143163)),	-- Fearless Gladiator's Ironskin Belt (H)
-								un(14, i(143218)),	-- Fearless Gladiator's Ironskin Cloak (H)
-								un(14, i(143158)),	-- Fearless Gladiator's Ironskin Gloves (H)
-								un(14, i(143159)),	-- Fearless Gladiator's Ironskin Helm (H)
-								un(14, i(143160)),	-- Fearless Gladiator's Ironskin Legguards (H)
-								un(14, i(143157)),	-- Fearless Gladiator's Ironskin Slippers (H)
-								un(14, i(143161)),	-- Fearless Gladiator's Ironskin Spaulders (H)
-								un(14, i(143162)),	-- Fearless Gladiator's Ironskin Tunic (H)
-								un(14, i(143164)),	-- Fearless Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136194)),	-- Vindictive Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(136249)),	-- Vindictive Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136189)),	-- Vindictive Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(136190)),	-- Vindictive Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136191)),	-- Vindictive Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136188)),	-- Vindictive Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136192)),	-- Vindictive Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136193)),	-- Vindictive Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(136195)),	-- Vindictive Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143163)),	-- Fearless Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(143218)),	-- Fearless Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143158)),	-- Fearless Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(143159)),	-- Fearless Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143160)),	-- Fearless Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143157)),	-- Fearless Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143161)),	-- Fearless Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143162)),	-- Fearless Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(143164)),	-- Fearless Gladiator's Ironskin Wristguards (H)
 							},
 						}),
 					}),
@@ -2202,24 +2202,24 @@ _.PVP =
 								{"exclude", "itemID", 146223 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
-								un(14, i(136196)),	-- Vindictive Gladiator's Scaled Chestpiece (H)
-								un(14, i(136198)),	-- Vindictive Gladiator's Scaled Gauntlets (H)
-								un(14, i(136202)),	-- Vindictive Gladiator's Scaled Girdle (H)
-								un(14, i(136199)),	-- Vindictive Gladiator's Scaled Helm (H)
-								un(14, i(136200)),	-- Vindictive Gladiator's Scaled Legguards (H)
-								un(14, i(136197)),	-- Vindictive Gladiator's Scaled Sabatons (H)
-								un(14, i(136201)),	-- Vindictive Gladiator's Scaled Shoulders (H)
-								un(14, i(136203)),	-- Vindictive Gladiator's Scaled Wristplates (H)
-								un(14, i(143222)),	-- Fearless Gladiator's Greatcloak of Faith (H)
-								un(14, i(143165)),	-- Fearless Gladiator's Scaled Chestpiece (H)
-								un(14, i(143167)),	-- Fearless Gladiator's Scaled Gauntlets (H)
-								un(14, i(143171)),	-- Fearless Gladiator's Scaled Girdle (H)
-								un(14, i(143168)),	-- Fearless Gladiator's Scaled Helm (H)
-								un(14, i(143169)),	-- Fearless Gladiator's Scaled Legguards (H)
-								un(14, i(143166)),	-- Fearless Gladiator's Scaled Sabatons (H)
-								un(14, i(143170)),	-- Fearless Gladiator's Scaled Shoulders (H)
-								un(14, i(143172)),	-- Fearless Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(136253)),	-- Vindictive Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(136196)),	-- Vindictive Gladiator's Scaled Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(136198)),	-- Vindictive Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(136202)),	-- Vindictive Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(136199)),	-- Vindictive Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136200)),	-- Vindictive Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136197)),	-- Vindictive Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(136201)),	-- Vindictive Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136203)),	-- Vindictive Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(143222)),	-- Fearless Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(143165)),	-- Fearless Gladiator's Scaled Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(143167)),	-- Fearless Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(143171)),	-- Fearless Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(143168)),	-- Fearless Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143169)),	-- Fearless Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143166)),	-- Fearless Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(143170)),	-- Fearless Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143172)),	-- Fearless Gladiator's Scaled Wristplates (H)
 							},
 						}),
 					}),
@@ -2233,24 +2233,24 @@ _.PVP =
 								{"exclude", "itemID", 146237 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
-								un(14, i(136211)),	-- Vindictive Gladiator's Satin Bracers (H)
-								un(14, i(136210)),	-- Vindictive Gladiator's Satin Cord (H)
-								un(14, i(136205)),	-- Vindictive Gladiator's Satin Gloves (H)
-								un(14, i(136206)),	-- Vindictive Gladiator's Satin Hood (H)
-								un(14, i(136207)),	-- Vindictive Gladiator's Satin Leggings (H)
-								un(14, i(136209)),	-- Vindictive Gladiator's Satin Mantle (H)
-								un(14, i(136208)),	-- Vindictive Gladiator's Satin Robe (H)
-								un(14, i(136204)),	-- Vindictive Gladiator's Satin Treads (H)
-								un(14, i(143178)),	-- Fearless Gladiator's Satin Mantle (H)
-								un(14, i(143177)),	-- Fearless Gladiator's Satin Robe (H)
-								un(14, i(143179)),	-- Fearless Gladiator's Satin Cord (H)
-								un(14, i(143174)),	-- Fearless Gladiator's Satin Gloves (H)
-								un(14, i(143301)),	-- Fearless Gladiator's Drape of Piety (H)
-								un(14, i(143175)),	-- Fearless Gladiator's Satin Hood (H)
-								un(14, i(143173)),	-- Fearless Gladiator's Satin Treads (H)
-								un(14, i(143180)),	-- Fearless Gladiator's Satin Bracers (H)
-								un(14, i(143176)),	-- Fearless Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(136876)),	-- Vindictive Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(136211)),	-- Vindictive Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136210)),	-- Vindictive Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(136205)),	-- Vindictive Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(136206)),	-- Vindictive Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(136207)),	-- Vindictive Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(136209)),	-- Vindictive Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(136208)),	-- Vindictive Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(136204)),	-- Vindictive Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(143178)),	-- Fearless Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(143177)),	-- Fearless Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(143179)),	-- Fearless Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(143174)),	-- Fearless Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(143301)),	-- Fearless Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(143175)),	-- Fearless Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(143173)),	-- Fearless Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(143180)),	-- Fearless Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143176)),	-- Fearless Gladiator's Satin Leggings (H)
 							},
 						}),
 					}),
@@ -2264,24 +2264,24 @@ _.PVP =
 								{"exclude", "itemID", 146233 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
-								un(14, i(136214)),	-- Vindictive Gladiator's Leather Gloves (H)
-								un(14, i(136215)),	-- Vindictive Gladiator's Leather Helm (H)
-								un(14, i(136216)),	-- Vindictive Gladiator's Leather Legguards (H)
-								un(14, i(136213)),	-- Vindictive Gladiator's Leather Slippers (H)
-								un(14, i(136217)),	-- Vindictive Gladiator's Leather Spaulders (H)
-								un(14, i(136212)),	-- Vindictive Gladiator's Leather Tunic (H)
-								un(14, i(136219)),	-- Vindictive Gladiator's Leather Wristguards (H)
-								un(14, i(136877)),	-- Vindictive Gladiator's Shadowcape (H)
-								un(14, i(143187)),	-- Fearless Gladiator's Leather Belt (H)
-								un(14, i(143183)),	-- Fearless Gladiator's Leather Gloves (H)
-								un(14, i(143184)),	-- Fearless Gladiator's Leather Helm (H)
-								un(14, i(143185)),	-- Fearless Gladiator's Leather Legguards (H)
-								un(14, i(143182)),	-- Fearless Gladiator's Leather Slippers (H)
-								un(14, i(143186)),	-- Fearless Gladiator's Leather Spaulders (H)
-								un(14, i(143181)),	-- Fearless Gladiator's Leather Tunic (H)
-								un(14, i(143188)),	-- Fearless Gladiator's Leather Wristguards (H)
-								un(14, i(143302)),	-- Fearless Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(136218)),	-- Vindictive Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(136214)),	-- Vindictive Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(136215)),	-- Vindictive Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136216)),	-- Vindictive Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136213)),	-- Vindictive Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136217)),	-- Vindictive Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136212)),	-- Vindictive Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(136219)),	-- Vindictive Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136877)),	-- Vindictive Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(143187)),	-- Fearless Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(143183)),	-- Fearless Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(143184)),	-- Fearless Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143185)),	-- Fearless Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143182)),	-- Fearless Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143186)),	-- Fearless Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143181)),	-- Fearless Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(143188)),	-- Fearless Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143302)),	-- Fearless Gladiator's Shadowcape (H)
 							},
 						}),
 					}),
@@ -2295,24 +2295,24 @@ _.PVP =
 								{"exclude", "itemID", 146225 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
-								un(14, i(136220)),	-- Vindictive Gladiator's Ringmail Armor (H)
-								un(14, i(136221)),	-- Vindictive Gladiator's Ringmail Boots (H)
-								un(14, i(136226)),	-- Vindictive Gladiator's Ringmail Clasp (H)
-								un(14, i(136222)),	-- Vindictive Gladiator's Ringmail Gauntlets (H)
-								un(14, i(136223)),	-- Vindictive Gladiator's Ringmail Helm (H)
-								un(14, i(136224)),	-- Vindictive Gladiator's Ringmail Kilt (H)
-								un(14, i(136225)),	-- Vindictive Gladiator's Ringmail Spaulders (H)
-								un(14, i(136878)),	-- Vindictive Gladiator's Totemic Cloak (H)
-								un(14, i(143196)),	-- Fearless Gladiator's Ringmail Armband (H)
-								un(14, i(143189)),	-- Fearless Gladiator's Ringmail Armor (H)
-								un(14, i(143190)),	-- Fearless Gladiator's Ringmail Boots (H)
-								un(14, i(143195)),	-- Fearless Gladiator's Ringmail Clasp (H)
-								un(14, i(143191)),	-- Fearless Gladiator's Ringmail Gauntlets (H)
-								un(14, i(143192)),	-- Fearless Gladiator's Ringmail Helm (H)
-								un(14, i(143193)),	-- Fearless Gladiator's Ringmail Kilt (H)
-								un(14, i(143194)),	-- Fearless Gladiator's Ringmail Spaulders (H)
-								un(14, i(143303)),	-- Fearless Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136227)),	-- Vindictive Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(136220)),	-- Vindictive Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(136221)),	-- Vindictive Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(136226)),	-- Vindictive Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(136222)),	-- Vindictive Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(136223)),	-- Vindictive Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136224)),	-- Vindictive Gladiator's Ringmail Kilt (H)
+								un(ELITE_PVP_REQUIREMENT, i(136225)),	-- Vindictive Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136878)),	-- Vindictive Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143196)),	-- Fearless Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(143189)),	-- Fearless Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(143190)),	-- Fearless Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(143195)),	-- Fearless Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(143191)),	-- Fearless Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(143192)),	-- Fearless Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143193)),	-- Fearless Gladiator's Ringmail Kilt (H)
+								un(ELITE_PVP_REQUIREMENT, i(143194)),	-- Fearless Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143303)),	-- Fearless Gladiator's Totemic Cloak (H)
 							},
 						}),
 					}),
@@ -2326,24 +2326,24 @@ _.PVP =
 								{"exclude", "itemID", 146239 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
-								un(14, i(136235)),	-- Vindictive Gladiator's Felweave Bracers (H)
-								un(14, i(136884)),	-- Vindictive Gladiator's Felweave Cloak (H)
-								un(14, i(136234)),	-- Vindictive Gladiator's Felweave Cord (H)
-								un(14, i(136230)),	-- Vindictive Gladiator's Felweave Cowl (H)
-								un(14, i(136229)),	-- Vindictive Gladiator's Felweave Handguards (H)
-								un(14, i(136232)),	-- Vindictive Gladiator's Felweave Raiment (H)
-								un(14, i(136228)),	-- Vindictive Gladiator's Felweave Treads (H)
-								un(14, i(136231)),	-- Vindictive Gladiator's Felweave Trousers (H)
-								un(14, i(143202)),	-- Fearless Gladiator's Felweave Amice (H)
-								un(14, i(143204)),	-- Fearless Gladiator's Felweave Bracers (H)
-								un(14, i(143309)),	-- Fearless Gladiator's Felweave Cloak (H)
-								un(14, i(143203)),	-- Fearless Gladiator's Felweave Cord (H)
-								un(14, i(143199)),	-- Fearless Gladiator's Felweave Cowl (H)
-								un(14, i(143198)),	-- Fearless Gladiator's Felweave Handguards (H)
-								un(14, i(143201)),	-- Fearless Gladiator's Felweave Raiment (H)
-								un(14, i(143197)),	-- Fearless Gladiator's Felweave Treads (H)
-								un(14, i(143200)),	-- Fearless Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136233)),	-- Vindictive Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(136235)),	-- Vindictive Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(136884)),	-- Vindictive Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(136234)),	-- Vindictive Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(136230)),	-- Vindictive Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(136229)),	-- Vindictive Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136232)),	-- Vindictive Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(136228)),	-- Vindictive Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(136231)),	-- Vindictive Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143202)),	-- Fearless Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(143204)),	-- Fearless Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(143309)),	-- Fearless Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(143203)),	-- Fearless Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(143199)),	-- Fearless Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(143198)),	-- Fearless Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143201)),	-- Fearless Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(143197)),	-- Fearless Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(143200)),	-- Fearless Gladiator's Felweave Trousers (H)
 							},
 						}),
 					}),
@@ -2357,24 +2357,24 @@ _.PVP =
 								{"exclude", "itemID", 146219 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
-								un(14, i(136236)),	-- Vindictive Gladiator's Plate Chestpiece (H)
-								un(14, i(136238)),	-- Vindictive Gladiator's Plate Gauntlets (H)
-								un(14, i(136242)),	-- Vindictive Gladiator's Plate Girdle (H)
-								un(14, i(136239)),	-- Vindictive Gladiator's Plate Helm (H)
-								un(14, i(136240)),	-- Vindictive Gladiator's Plate Legguards (H)
-								un(14, i(136241)),	-- Vindictive Gladiator's Plate Shoulders (H)
-								un(14, i(136237)),	-- Vindictive Gladiator's Plate Warboots (H)
-								un(14, i(136243)),	-- Vindictive Gladiator's Plate Wristplates (H)
-								un(14, i(143315)),	-- Fearless Gladiator's Cloak of Battle (H)
-								un(14, i(143205)),	-- Fearless Gladiator's Plate Chestpiece (H)
-								un(14, i(143207)),	-- Fearless Gladiator's Plate Gauntlets (H)
-								un(14, i(143211)),	-- Fearless Gladiator's Plate Girdle (H)
-								un(14, i(143208)),	-- Fearless Gladiator's Plate Helm (H)
-								un(14, i(143209)),	-- Fearless Gladiator's Plate Legguards (H)
-								un(14, i(143210)),	-- Fearless Gladiator's Plate Shoulders (H)
-								un(14, i(143206)),	-- Fearless Gladiator's Plate Warboots (H)
-								un(14, i(143212)),	-- Fearless Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(136890)),	-- Vindictive Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(136236)),	-- Vindictive Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(136238)),	-- Vindictive Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(136242)),	-- Vindictive Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(136239)),	-- Vindictive Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(136240)),	-- Vindictive Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(136241)),	-- Vindictive Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(136237)),	-- Vindictive Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(136243)),	-- Vindictive Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(143315)),	-- Fearless Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(143205)),	-- Fearless Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(143207)),	-- Fearless Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(143211)),	-- Fearless Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(143208)),	-- Fearless Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(143209)),	-- Fearless Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(143210)),	-- Fearless Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(143206)),	-- Fearless Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(143212)),	-- Fearless Gladiator's Plate Wristplates (H)
 							},
 						}),
 					}),
@@ -2728,136 +2728,136 @@ _.PVP =
 				}),
 				n(PVP_ELITE, {
 					cl(DEATHKNIGHT, {
-						un(14, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
-						un(14, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
-						un(14, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
-						un(14, i(143018)),	-- Fearless Gladiator's Dreadplate Girdle (A)
-						un(14, i(143015)),	-- Fearless Gladiator's Dreadplate Helm (A)
-						un(14, i(143016)),	-- Fearless Gladiator's Dreadplate Legguards (A)
-						un(14, i(143013)),	-- Fearless Gladiator's Dreadplate Sabatons (A)
-						un(14, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
-						un(14, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(143018)),	-- Fearless Gladiator's Dreadplate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(143015)),	-- Fearless Gladiator's Dreadplate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143016)),	-- Fearless Gladiator's Dreadplate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143013)),	-- Fearless Gladiator's Dreadplate Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
-						un(14, i(143276)),	-- Fearless Gladiator's Felskin Belt (A)
-						un(14, i(143270)),	-- Fearless Gladiator's Felskin Boots (A)
-						un(14, i(143271)),	-- Fearless Gladiator's Felskin Gloves (A)
-						un(14, i(143272)),	-- Fearless Gladiator's Felskin Helm (A)
-						un(14, i(143273)),	-- Fearless Gladiator's Felskin Legguards (A)
-						un(14, i(143275)),	-- Fearless Gladiator's Felskin Spaulders (A)
-						un(14, i(143274)),	-- Fearless Gladiator's Felskin Tunic (A)
-						un(14, i(143277)),	-- Fearless Gladiator's Felskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143276)),	-- Fearless Gladiator's Felskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(143270)),	-- Fearless Gladiator's Felskin Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(143271)),	-- Fearless Gladiator's Felskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(143272)),	-- Fearless Gladiator's Felskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143273)),	-- Fearless Gladiator's Felskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143275)),	-- Fearless Gladiator's Felskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143274)),	-- Fearless Gladiator's Felskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(143277)),	-- Fearless Gladiator's Felskin Wristguards (A)
 					}),
 					cl(DRUID, {
-						un(14, i(143026)),	-- Fearless Gladiator's Dragonhide Belt (A)
-						un(14, i(143104)),	-- Fearless Gladiator's Dragonhide Cloak (A)
-						un(14, i(143021)),	-- Fearless Gladiator's Dragonhide Gloves (A)
-						un(14, i(143022)),	-- Fearless Gladiator's Dragonhide Helm (A)
-						un(14, i(143023)),	-- Fearless Gladiator's Dragonhide Legguards (A)
-						un(14, i(143020)),	-- Fearless Gladiator's Dragonhide Moccasins (A)
-						un(14, i(143025)),	-- Fearless Gladiator's Dragonhide Spaulders (A)
-						un(14, i(143024)),	-- Fearless Gladiator's Dragonhide Tunic (A)
-						un(14, i(143027)),	-- Fearless Gladiator's Dragonhide Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143026)),	-- Fearless Gladiator's Dragonhide Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(143104)),	-- Fearless Gladiator's Dragonhide Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143021)),	-- Fearless Gladiator's Dragonhide Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(143022)),	-- Fearless Gladiator's Dragonhide Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143023)),	-- Fearless Gladiator's Dragonhide Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143020)),	-- Fearless Gladiator's Dragonhide Moccasins (A)
+						un(ELITE_PVP_REQUIREMENT, i(143025)),	-- Fearless Gladiator's Dragonhide Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143024)),	-- Fearless Gladiator's Dragonhide Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(143027)),	-- Fearless Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(HUNTER, {
-						un(14, i(143035)),	-- Fearless Gladiator's Chain Armband (A)
-						un(14, i(143028)),	-- Fearless Gladiator's Chain Armor (A)
-						un(14, i(143034)),	-- Fearless Gladiator's Chain Clasp (A)
-						un(14, i(143030)),	-- Fearless Gladiator's Chain Gauntlets (A)
-						un(14, i(143031)),	-- Fearless Gladiator's Chain Helm (A)
-						un(14, i(143032)),	-- Fearless Gladiator's Chain Leggings (A)
-						un(14, i(143033)),	-- Fearless Gladiator's Chain Spaulders (A)
-						un(14, i(143029)),	-- Fearless Gladiator's Chain Treads (A)
-						un(14, i(143108)),	-- Fearless Gladiator's Drape of the Tracker (A)
+						un(ELITE_PVP_REQUIREMENT, i(143035)),	-- Fearless Gladiator's Chain Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(143028)),	-- Fearless Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(143034)),	-- Fearless Gladiator's Chain Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(143030)),	-- Fearless Gladiator's Chain Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(143031)),	-- Fearless Gladiator's Chain Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143032)),	-- Fearless Gladiator's Chain Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(143033)),	-- Fearless Gladiator's Chain Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143029)),	-- Fearless Gladiator's Chain Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(143108)),	-- Fearless Gladiator's Drape of the Tracker (A)
 					}),
 					cl(MAGE, {
-						un(14, i(143041)),	-- Fearless Gladiator's Silk Amice (A)
-						un(14, i(143043)),	-- Fearless Gladiator's Silk Bracers (A)
-						un(14, i(143042)),	-- Fearless Gladiator's Silk Cord (A)
-						un(14, i(143038)),	-- Fearless Gladiator's Silk Cowl (A)
-						un(14, i(143037)),	-- Fearless Gladiator's Silk Handguards (A)
-						un(14, i(143040)),	-- Fearless Gladiator's Silk Robe (A)
-						un(14, i(143036)),	-- Fearless Gladiator's Silk Treads (A)
-						un(14, i(143039)),	-- Fearless Gladiator's Silk Trousers (A)
-						un(14, i(143101)),	-- Fearless Gladiator's Silken Shawl (A)
+						un(ELITE_PVP_REQUIREMENT, i(143041)),	-- Fearless Gladiator's Silk Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(143043)),	-- Fearless Gladiator's Silk Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143042)),	-- Fearless Gladiator's Silk Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(143038)),	-- Fearless Gladiator's Silk Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(143037)),	-- Fearless Gladiator's Silk Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143040)),	-- Fearless Gladiator's Silk Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(143036)),	-- Fearless Gladiator's Silk Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(143039)),	-- Fearless Gladiator's Silk Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143101)),	-- Fearless Gladiator's Silken Shawl (A)
 					}),
 					cl(MONK, {
-						un(14, i(143050)),	-- Fearless Gladiator's Ironskin Belt (A)
-						un(14, i(143105)),	-- Fearless Gladiator's Ironskin Cloak (A)
-						un(14, i(143045)),	-- Fearless Gladiator's Ironskin Gloves (A)
-						un(14, i(143046)),	-- Fearless Gladiator's Ironskin Helm (A)
-						un(14, i(143047)),	-- Fearless Gladiator's Ironskin Legguards (A)
-						un(14, i(143044)),	-- Fearless Gladiator's Ironskin Slippers (A)
-						un(14, i(143048)),	-- Fearless Gladiator's Ironskin Spaulders (A)
-						un(14, i(143049)),	-- Fearless Gladiator's Ironskin Tunic (A)
-						un(14, i(143051)),	-- Fearless Gladiator's Ironskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143050)),	-- Fearless Gladiator's Ironskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(143105)),	-- Fearless Gladiator's Ironskin Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143045)),	-- Fearless Gladiator's Ironskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(143046)),	-- Fearless Gladiator's Ironskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143047)),	-- Fearless Gladiator's Ironskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143044)),	-- Fearless Gladiator's Ironskin Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143048)),	-- Fearless Gladiator's Ironskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143049)),	-- Fearless Gladiator's Ironskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(143051)),	-- Fearless Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(PALADIN, {
-						un(14, i(143109)),	-- Fearless Gladiator's Greatcloak of Faith (A)
-						un(14, i(143052)),	-- Fearless Gladiator's Scaled Chestpiece (A)
-						un(14, i(143054)),	-- Fearless Gladiator's Scaled Gauntlets (A)
-						un(14, i(143058)),	-- Fearless Gladiator's Scaled Girdle (A)
-						un(14, i(143055)),	-- Fearless Gladiator's Scaled Helm (A)
-						un(14, i(143056)),	-- Fearless Gladiator's Scaled Legguards (A)
-						un(14, i(143053)),	-- Fearless Gladiator's Scaled Sabatons (A)
-						un(14, i(143057)),	-- Fearless Gladiator's Scaled Shoulders (A)
-						un(14, i(143059)),	-- Fearless Gladiator's Scaled Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(143109)),	-- Fearless Gladiator's Greatcloak of Faith (A)
+						un(ELITE_PVP_REQUIREMENT, i(143052)),	-- Fearless Gladiator's Scaled Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(143054)),	-- Fearless Gladiator's Scaled Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(143058)),	-- Fearless Gladiator's Scaled Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(143055)),	-- Fearless Gladiator's Scaled Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143056)),	-- Fearless Gladiator's Scaled Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143053)),	-- Fearless Gladiator's Scaled Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(143057)),	-- Fearless Gladiator's Scaled Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143059)),	-- Fearless Gladiator's Scaled Wristplates (A)
 					}),
 					cl(PRIEST, {
-						un(14, i(143062)),	-- Fearless Gladiator's Satin Hood (A)
-						un(14, i(143063)),	-- Fearless Gladiator's Satin Leggings (A)
-						un(14, i(143065)),	-- Fearless Gladiator's Satin Mantle (A)
-						un(14, i(143061)),	-- Fearless Gladiator's Satin Gloves (A)
-						un(14, i(143060)),	-- Fearless Gladiator's Satin Treads (A)
-						un(14, i(143066)),	-- Fearless Gladiator's Satin Cord (A)
-						un(14, i(143067)),	-- Fearless Gladiator's Satin Bracers (A)
-						un(14, i(143298)),	-- Fearless Gladiator's Drape of Piety (A)
-						un(14, i(143064)),	-- Fearless Gladiator's Satin Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(143062)),	-- Fearless Gladiator's Satin Hood (A)
+						un(ELITE_PVP_REQUIREMENT, i(143063)),	-- Fearless Gladiator's Satin Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(143065)),	-- Fearless Gladiator's Satin Mantle (A)
+						un(ELITE_PVP_REQUIREMENT, i(143061)),	-- Fearless Gladiator's Satin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(143060)),	-- Fearless Gladiator's Satin Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(143066)),	-- Fearless Gladiator's Satin Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(143067)),	-- Fearless Gladiator's Satin Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143298)),	-- Fearless Gladiator's Drape of Piety (A)
+						un(ELITE_PVP_REQUIREMENT, i(143064)),	-- Fearless Gladiator's Satin Robe (A)
 					}),
 					cl(ROGUE, {
-						un(14, i(143074)),	-- Fearless Gladiator's Leather Belt (A)
-						un(14, i(143070)),	-- Fearless Gladiator's Leather Gloves (A)
-						un(14, i(143071)),	-- Fearless Gladiator's Leather Helm (A)
-						un(14, i(143072)),	-- Fearless Gladiator's Leather Legguards (A)
-						un(14, i(143069)),	-- Fearless Gladiator's Leather Slippers (A)
-						un(14, i(143073)),	-- Fearless Gladiator's Leather Spaulders (A)
-						un(14, i(143068)),	-- Fearless Gladiator's Leather Tunic (A)
-						un(14, i(143075)),	-- Fearless Gladiator's Leather Wristguards (A)
-						un(14, i(143299)),	-- Fearless Gladiator's Shadowcape (A)
+						un(ELITE_PVP_REQUIREMENT, i(143074)),	-- Fearless Gladiator's Leather Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(143070)),	-- Fearless Gladiator's Leather Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(143071)),	-- Fearless Gladiator's Leather Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143072)),	-- Fearless Gladiator's Leather Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143069)),	-- Fearless Gladiator's Leather Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143073)),	-- Fearless Gladiator's Leather Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143068)),	-- Fearless Gladiator's Leather Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(143075)),	-- Fearless Gladiator's Leather Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143299)),	-- Fearless Gladiator's Shadowcape (A)
 					}),
 					cl(SHAMAN, {
-						un(14, i(143083)),	-- Fearless Gladiator's Ringmail Armband (A)
-						un(14, i(143076)),	-- Fearless Gladiator's Ringmail Armor (A)
-						un(14, i(143077)),	-- Fearless Gladiator's Ringmail Boots (A)
-						un(14, i(143082)),	-- Fearless Gladiator's Ringmail Clasp (A)
-						un(14, i(143078)),	-- Fearless Gladiator's Ringmail Gauntlets (A)
-						un(14, i(143079)),	-- Fearless Gladiator's Ringmail Helm (A)
-						un(14, i(143080)),	-- Fearless Gladiator's Ringmail Kilt (A)
-						un(14, i(143081)),	-- Fearless Gladiator's Ringmail Spaulders (A)
-						un(14, i(143300)),	-- Fearless Gladiator's Totemic Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143083)),	-- Fearless Gladiator's Ringmail Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(143076)),	-- Fearless Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(143077)),	-- Fearless Gladiator's Ringmail Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(143082)),	-- Fearless Gladiator's Ringmail Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(143078)),	-- Fearless Gladiator's Ringmail Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(143079)),	-- Fearless Gladiator's Ringmail Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143080)),	-- Fearless Gladiator's Ringmail Kilt (A)
+						un(ELITE_PVP_REQUIREMENT, i(143081)),	-- Fearless Gladiator's Ringmail Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143300)),	-- Fearless Gladiator's Totemic Cloak (A)
 					}),
 					cl(WARLOCK, {
-						un(14, i(143089)),	-- Fearless Gladiator's Felweave Amice (A)
-						un(14, i(143091)),	-- Fearless Gladiator's Felweave Bracers (A)
-						un(14, i(143308)),	-- Fearless Gladiator's Felweave Cloak (A)
-						un(14, i(143090)),	-- Fearless Gladiator's Felweave Cord (A)
-						un(14, i(143086)),	-- Fearless Gladiator's Felweave Cowl (A)
-						un(14, i(143085)),	-- Fearless Gladiator's Felweave Handguards (A)
-						un(14, i(143088)),	-- Fearless Gladiator's Felweave Raiment (A)
-						un(14, i(143084)),	-- Fearless Gladiator's Felweave Treads (A)
-						un(14, i(143087)),	-- Fearless Gladiator's Felweave Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143089)),	-- Fearless Gladiator's Felweave Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(143091)),	-- Fearless Gladiator's Felweave Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(143308)),	-- Fearless Gladiator's Felweave Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(143090)),	-- Fearless Gladiator's Felweave Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(143086)),	-- Fearless Gladiator's Felweave Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(143085)),	-- Fearless Gladiator's Felweave Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143088)),	-- Fearless Gladiator's Felweave Raiment (A)
+						un(ELITE_PVP_REQUIREMENT, i(143084)),	-- Fearless Gladiator's Felweave Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(143087)),	-- Fearless Gladiator's Felweave Trousers (A)
 					}),
 					cl(WARRIOR, {
-						un(14, i(143314)),	-- Fearless Gladiator's Cloak of Battle (A)
-						un(14, i(143092)),	-- Fearless Gladiator's Plate Chestpiece (A)
-						un(14, i(143094)),	-- Fearless Gladiator's Plate Gauntlets (A)
-						un(14, i(143098)),	-- Fearless Gladiator's Plate Girdle (A)
-						un(14, i(143095)),	-- Fearless Gladiator's Plate Helm (A)
-						un(14, i(143096)),	-- Fearless Gladiator's Plate Legguards (A)
-						un(14, i(143097)),	-- Fearless Gladiator's Plate Shoulders (A)
-						un(14, i(143093)),	-- Fearless Gladiator's Plate Warboots (A)
-						un(14, i(143099)),	-- Fearless Gladiator's Plate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(143314)),	-- Fearless Gladiator's Cloak of Battle (A)
+						un(ELITE_PVP_REQUIREMENT, i(143092)),	-- Fearless Gladiator's Plate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(143094)),	-- Fearless Gladiator's Plate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(143098)),	-- Fearless Gladiator's Plate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(143095)),	-- Fearless Gladiator's Plate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(143096)),	-- Fearless Gladiator's Plate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(143097)),	-- Fearless Gladiator's Plate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(143093)),	-- Fearless Gladiator's Plate Warboots (A)
+						un(ELITE_PVP_REQUIREMENT, i(143099)),	-- Fearless Gladiator's Plate Wristplates (A)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(143102)),	-- Fearless Gladiator's Necklace (A)
@@ -3207,136 +3207,136 @@ _.PVP =
 				}),
 				n(PVP_ELITE, {
 					cl(DEATHKNIGHT, {
-						un(14, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
-						un(14, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
-						un(14, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
-						un(14, i(143131)),	-- Fearless Gladiator's Dreadplate Girdle (H)
-						un(14, i(143128)),	-- Fearless Gladiator's Dreadplate Helm (H)
-						un(14, i(143129)),	-- Fearless Gladiator's Dreadplate Legguards (H)
-						un(14, i(143126)),	-- Fearless Gladiator's Dreadplate Sabatons (H)
-						un(14, i(143130)),	-- Fearless Gladiator's Dreadplate Shoulders (H)
-						un(14, i(143132)),	-- Fearless Gladiator's Dreadplate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(143213)),	-- Fearless Gladiator's Dreadcloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143125)),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(143127)),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(143131)),	-- Fearless Gladiator's Dreadplate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(143128)),	-- Fearless Gladiator's Dreadplate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143129)),	-- Fearless Gladiator's Dreadplate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143126)),	-- Fearless Gladiator's Dreadplate Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(143130)),	-- Fearless Gladiator's Dreadplate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143132)),	-- Fearless Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(143321)),	-- Fearless Gladiator's Demonthread Cloak (H)
-						un(14, i(143284)),	-- Fearless Gladiator's Felskin Belt (H)
-						un(14, i(143278)),	-- Fearless Gladiator's Felskin Boots (H)
-						un(14, i(143279)),	-- Fearless Gladiator's Felskin Gloves (H)
-						un(14, i(143280)),	-- Fearless Gladiator's Felskin Helm (H)
-						un(14, i(143281)),	-- Fearless Gladiator's Felskin Legguards (H)
-						un(14, i(143283)),	-- Fearless Gladiator's Felskin Spaulders (H)
-						un(14, i(143282)),	-- Fearless Gladiator's Felskin Tunic (H)
-						un(14, i(143285)),	-- Fearless Gladiator's Felskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143321)),	-- Fearless Gladiator's Demonthread Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143284)),	-- Fearless Gladiator's Felskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(143278)),	-- Fearless Gladiator's Felskin Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(143279)),	-- Fearless Gladiator's Felskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(143280)),	-- Fearless Gladiator's Felskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143281)),	-- Fearless Gladiator's Felskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143283)),	-- Fearless Gladiator's Felskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143282)),	-- Fearless Gladiator's Felskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(143285)),	-- Fearless Gladiator's Felskin Wristguards (H)
 					}),
 					cl(DRUID, {
-						un(14, i(143139)),	-- Fearless Gladiator's Dragonhide Belt (H)
-						un(14, i(143217)),	-- Fearless Gladiator's Dragonhide Cloak (H)
-						un(14, i(143134)),	-- Fearless Gladiator's Dragonhide Gloves (H)
-						un(14, i(143135)),	-- Fearless Gladiator's Dragonhide Helm (H)
-						un(14, i(143136)),	-- Fearless Gladiator's Dragonhide Legguards (H)
-						un(14, i(143133)),	-- Fearless Gladiator's Dragonhide Moccasins (H)
-						un(14, i(143138)),	-- Fearless Gladiator's Dragonhide Spaulders (H)
-						un(14, i(143137)),	-- Fearless Gladiator's Dragonhide Tunic (H)
-						un(14, i(143140)),	-- Fearless Gladiator's Dragonhide Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143139)),	-- Fearless Gladiator's Dragonhide Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(143217)),	-- Fearless Gladiator's Dragonhide Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143134)),	-- Fearless Gladiator's Dragonhide Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(143135)),	-- Fearless Gladiator's Dragonhide Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143136)),	-- Fearless Gladiator's Dragonhide Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143133)),	-- Fearless Gladiator's Dragonhide Moccasins (H)
+						un(ELITE_PVP_REQUIREMENT, i(143138)),	-- Fearless Gladiator's Dragonhide Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143137)),	-- Fearless Gladiator's Dragonhide Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(143140)),	-- Fearless Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(HUNTER, {
-						un(14, i(143148)),	-- Fearless Gladiator's Chain Armband (H)
-						un(14, i(143141)),	-- Fearless Gladiator's Chain Armor (H)
-						un(14, i(143147)),	-- Fearless Gladiator's Chain Clasp (H)
-						un(14, i(143143)),	-- Fearless Gladiator's Chain Gauntlets (H)
-						un(14, i(143144)),	-- Fearless Gladiator's Chain Helm (H)
-						un(14, i(143145)),	-- Fearless Gladiator's Chain Leggings (H)
-						un(14, i(143146)),	-- Fearless Gladiator's Chain Spaulders (H)
-						un(14, i(143142)),	-- Fearless Gladiator's Chain Treads (H)
-						un(14, i(143221)),	-- Fearless Gladiator's Drape of the Tracker (H)
+						un(ELITE_PVP_REQUIREMENT, i(143148)),	-- Fearless Gladiator's Chain Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(143141)),	-- Fearless Gladiator's Chain Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(143147)),	-- Fearless Gladiator's Chain Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(143143)),	-- Fearless Gladiator's Chain Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(143144)),	-- Fearless Gladiator's Chain Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143145)),	-- Fearless Gladiator's Chain Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(143146)),	-- Fearless Gladiator's Chain Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143142)),	-- Fearless Gladiator's Chain Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(143221)),	-- Fearless Gladiator's Drape of the Tracker (H)
 					}),
 					cl(MAGE, {
-						un(14, i(143154)),	-- Fearless Gladiator's Silk Amice (H)
-						un(14, i(143156)),	-- Fearless Gladiator's Silk Bracers (H)
-						un(14, i(143155)),	-- Fearless Gladiator's Silk Cord (H)
-						un(14, i(143151)),	-- Fearless Gladiator's Silk Cowl (H)
-						un(14, i(143150)),	-- Fearless Gladiator's Silk Handguards (H)
-						un(14, i(143153)),	-- Fearless Gladiator's Silk Robe (H)
-						un(14, i(143149)),	-- Fearless Gladiator's Silk Treads (H)
-						un(14, i(143152)),	-- Fearless Gladiator's Silk Trousers (H)
-						un(14, i(143214)),	-- Fearless Gladiator's Silken Shawl (H)
+						un(ELITE_PVP_REQUIREMENT, i(143154)),	-- Fearless Gladiator's Silk Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(143156)),	-- Fearless Gladiator's Silk Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143155)),	-- Fearless Gladiator's Silk Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(143151)),	-- Fearless Gladiator's Silk Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(143150)),	-- Fearless Gladiator's Silk Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143153)),	-- Fearless Gladiator's Silk Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(143149)),	-- Fearless Gladiator's Silk Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(143152)),	-- Fearless Gladiator's Silk Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143214)),	-- Fearless Gladiator's Silken Shawl (H)
 					}),
 					cl(MONK, {
-						un(14, i(143163)),	-- Fearless Gladiator's Ironskin Belt (H)
-						un(14, i(143218)),	-- Fearless Gladiator's Ironskin Cloak (H)
-						un(14, i(143158)),	-- Fearless Gladiator's Ironskin Gloves (H)
-						un(14, i(143159)),	-- Fearless Gladiator's Ironskin Helm (H)
-						un(14, i(143160)),	-- Fearless Gladiator's Ironskin Legguards (H)
-						un(14, i(143157)),	-- Fearless Gladiator's Ironskin Slippers (H)
-						un(14, i(143161)),	-- Fearless Gladiator's Ironskin Spaulders (H)
-						un(14, i(143162)),	-- Fearless Gladiator's Ironskin Tunic (H)
-						un(14, i(143164)),	-- Fearless Gladiator's Ironskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143163)),	-- Fearless Gladiator's Ironskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(143218)),	-- Fearless Gladiator's Ironskin Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143158)),	-- Fearless Gladiator's Ironskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(143159)),	-- Fearless Gladiator's Ironskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143160)),	-- Fearless Gladiator's Ironskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143157)),	-- Fearless Gladiator's Ironskin Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143161)),	-- Fearless Gladiator's Ironskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143162)),	-- Fearless Gladiator's Ironskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(143164)),	-- Fearless Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(PALADIN, {
-						un(14, i(143222)),	-- Fearless Gladiator's Greatcloak of Faith (H)
-						un(14, i(143165)),	-- Fearless Gladiator's Scaled Chestpiece (H)
-						un(14, i(143167)),	-- Fearless Gladiator's Scaled Gauntlets (H)
-						un(14, i(143171)),	-- Fearless Gladiator's Scaled Girdle (H)
-						un(14, i(143168)),	-- Fearless Gladiator's Scaled Helm (H)
-						un(14, i(143169)),	-- Fearless Gladiator's Scaled Legguards (H)
-						un(14, i(143166)),	-- Fearless Gladiator's Scaled Sabatons (H)
-						un(14, i(143170)),	-- Fearless Gladiator's Scaled Shoulders (H)
-						un(14, i(143172)),	-- Fearless Gladiator's Scaled Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(143222)),	-- Fearless Gladiator's Greatcloak of Faith (H)
+						un(ELITE_PVP_REQUIREMENT, i(143165)),	-- Fearless Gladiator's Scaled Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(143167)),	-- Fearless Gladiator's Scaled Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(143171)),	-- Fearless Gladiator's Scaled Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(143168)),	-- Fearless Gladiator's Scaled Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143169)),	-- Fearless Gladiator's Scaled Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143166)),	-- Fearless Gladiator's Scaled Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(143170)),	-- Fearless Gladiator's Scaled Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143172)),	-- Fearless Gladiator's Scaled Wristplates (H)
 					}),
 					cl(PRIEST, {
-						un(14, i(143178)),	-- Fearless Gladiator's Satin Mantle (H)
-						un(14, i(143177)),	-- Fearless Gladiator's Satin Robe (H)
-						un(14, i(143179)),	-- Fearless Gladiator's Satin Cord (H)
-						un(14, i(143174)),	-- Fearless Gladiator's Satin Gloves (H)
-						un(14, i(143301)),	-- Fearless Gladiator's Drape of Piety (H)
-						un(14, i(143175)),	-- Fearless Gladiator's Satin Hood (H)
-						un(14, i(143173)),	-- Fearless Gladiator's Satin Treads (H)
-						un(14, i(143180)),	-- Fearless Gladiator's Satin Bracers (H)
-						un(14, i(143176)),	-- Fearless Gladiator's Satin Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(143178)),	-- Fearless Gladiator's Satin Mantle (H)
+						un(ELITE_PVP_REQUIREMENT, i(143177)),	-- Fearless Gladiator's Satin Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(143179)),	-- Fearless Gladiator's Satin Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(143174)),	-- Fearless Gladiator's Satin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(143301)),	-- Fearless Gladiator's Drape of Piety (H)
+						un(ELITE_PVP_REQUIREMENT, i(143175)),	-- Fearless Gladiator's Satin Hood (H)
+						un(ELITE_PVP_REQUIREMENT, i(143173)),	-- Fearless Gladiator's Satin Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(143180)),	-- Fearless Gladiator's Satin Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143176)),	-- Fearless Gladiator's Satin Leggings (H)
 					}),
 					cl(ROGUE, {
-						un(14, i(143187)),	-- Fearless Gladiator's Leather Belt (H)
-						un(14, i(143183)),	-- Fearless Gladiator's Leather Gloves (H)
-						un(14, i(143184)),	-- Fearless Gladiator's Leather Helm (H)
-						un(14, i(143185)),	-- Fearless Gladiator's Leather Legguards (H)
-						un(14, i(143182)),	-- Fearless Gladiator's Leather Slippers (H)
-						un(14, i(143186)),	-- Fearless Gladiator's Leather Spaulders (H)
-						un(14, i(143181)),	-- Fearless Gladiator's Leather Tunic (H)
-						un(14, i(143188)),	-- Fearless Gladiator's Leather Wristguards (H)
-						un(14, i(143302)),	-- Fearless Gladiator's Shadowcape (H)
+						un(ELITE_PVP_REQUIREMENT, i(143187)),	-- Fearless Gladiator's Leather Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(143183)),	-- Fearless Gladiator's Leather Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(143184)),	-- Fearless Gladiator's Leather Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143185)),	-- Fearless Gladiator's Leather Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143182)),	-- Fearless Gladiator's Leather Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143186)),	-- Fearless Gladiator's Leather Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143181)),	-- Fearless Gladiator's Leather Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(143188)),	-- Fearless Gladiator's Leather Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143302)),	-- Fearless Gladiator's Shadowcape (H)
 					}),
 					cl(SHAMAN, {
-						un(14, i(143196)),	-- Fearless Gladiator's Ringmail Armband (H)
-						un(14, i(143189)),	-- Fearless Gladiator's Ringmail Armor (H)
-						un(14, i(143190)),	-- Fearless Gladiator's Ringmail Boots (H)
-						un(14, i(143195)),	-- Fearless Gladiator's Ringmail Clasp (H)
-						un(14, i(143191)),	-- Fearless Gladiator's Ringmail Gauntlets (H)
-						un(14, i(143192)),	-- Fearless Gladiator's Ringmail Helm (H)
-						un(14, i(143193)),	-- Fearless Gladiator's Ringmail Kilt (H)
-						un(14, i(143194)),	-- Fearless Gladiator's Ringmail Spaulders (H)
-						un(14, i(143303)),	-- Fearless Gladiator's Totemic Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143196)),	-- Fearless Gladiator's Ringmail Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(143189)),	-- Fearless Gladiator's Ringmail Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(143190)),	-- Fearless Gladiator's Ringmail Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(143195)),	-- Fearless Gladiator's Ringmail Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(143191)),	-- Fearless Gladiator's Ringmail Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(143192)),	-- Fearless Gladiator's Ringmail Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143193)),	-- Fearless Gladiator's Ringmail Kilt (H)
+						un(ELITE_PVP_REQUIREMENT, i(143194)),	-- Fearless Gladiator's Ringmail Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143303)),	-- Fearless Gladiator's Totemic Cloak (H)
 					}),
 					cl(WARLOCK, {
-						un(14, i(143202)),	-- Fearless Gladiator's Felweave Amice (H)
-						un(14, i(143204)),	-- Fearless Gladiator's Felweave Bracers (H)
-						un(14, i(143309)),	-- Fearless Gladiator's Felweave Cloak (H)
-						un(14, i(143203)),	-- Fearless Gladiator's Felweave Cord (H)
-						un(14, i(143199)),	-- Fearless Gladiator's Felweave Cowl (H)
-						un(14, i(143198)),	-- Fearless Gladiator's Felweave Handguards (H)
-						un(14, i(143201)),	-- Fearless Gladiator's Felweave Raiment (H)
-						un(14, i(143197)),	-- Fearless Gladiator's Felweave Treads (H)
-						un(14, i(143200)),	-- Fearless Gladiator's Felweave Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143202)),	-- Fearless Gladiator's Felweave Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(143204)),	-- Fearless Gladiator's Felweave Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(143309)),	-- Fearless Gladiator's Felweave Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(143203)),	-- Fearless Gladiator's Felweave Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(143199)),	-- Fearless Gladiator's Felweave Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(143198)),	-- Fearless Gladiator's Felweave Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143201)),	-- Fearless Gladiator's Felweave Raiment (H)
+						un(ELITE_PVP_REQUIREMENT, i(143197)),	-- Fearless Gladiator's Felweave Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(143200)),	-- Fearless Gladiator's Felweave Trousers (H)
 					}),
 					cl(WARRIOR, {
-						un(14, i(143315)),	-- Fearless Gladiator's Cloak of Battle (H)
-						un(14, i(143205)),	-- Fearless Gladiator's Plate Chestpiece (H)
-						un(14, i(143207)),	-- Fearless Gladiator's Plate Gauntlets (H)
-						un(14, i(143211)),	-- Fearless Gladiator's Plate Girdle (H)
-						un(14, i(143208)),	-- Fearless Gladiator's Plate Helm (H)
-						un(14, i(143209)),	-- Fearless Gladiator's Plate Legguards (H)
-						un(14, i(143210)),	-- Fearless Gladiator's Plate Shoulders (H)
-						un(14, i(143206)),	-- Fearless Gladiator's Plate Warboots (H)
-						un(14, i(143212)),	-- Fearless Gladiator's Plate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(143315)),	-- Fearless Gladiator's Cloak of Battle (H)
+						un(ELITE_PVP_REQUIREMENT, i(143205)),	-- Fearless Gladiator's Plate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(143207)),	-- Fearless Gladiator's Plate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(143211)),	-- Fearless Gladiator's Plate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(143208)),	-- Fearless Gladiator's Plate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(143209)),	-- Fearless Gladiator's Plate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(143210)),	-- Fearless Gladiator's Plate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(143206)),	-- Fearless Gladiator's Plate Warboots (H)
+						un(ELITE_PVP_REQUIREMENT, i(143212)),	-- Fearless Gladiator's Plate Wristplates (H)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(143215)),	-- Fearless Gladiator's Necklace (H)
@@ -4194,7 +4194,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4203,29 +4203,29 @@ _.PVP =
 								{"exclude", "itemID", 147625 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
-								un(14, i(144804)),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(144808)),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(144816)),	-- Cruel Gladiator's Dreadplate Girdle (A)
-								un(14, i(144810)),	-- Cruel Gladiator's Dreadplate Helm (A)
-								un(14, i(144812)),	-- Cruel Gladiator's Dreadplate Legguards (A)
-								un(14, i(144806)),	-- Cruel Gladiator's Dreadplate Sabatons (A)
-								un(14, i(144814)),	-- Cruel Gladiator's Dreadplate Shoulders (A)
-								un(14, i(144818)),	-- Cruel Gladiator's Dreadplate Wristplates (A)
-								un(14, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
-								un(14, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(145658)),	-- Ferocious Gladiator's Dreadplate Girdle (A)
-								un(14, i(145652)),	-- Ferocious Gladiator's Dreadplate Helm (A)
-								un(14, i(145654)),	-- Ferocious Gladiator's Dreadplate Legguards (A)
-								un(14, i(145648)),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
-								un(14, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
-								un(14, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(144780)),	-- Cruel Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(144804)),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(144808)),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(144816)),	-- Cruel Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(144810)),	-- Cruel Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144812)),	-- Cruel Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144806)),	-- Cruel Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(144814)),	-- Cruel Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144818)),	-- Cruel Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145658)),	-- Ferocious Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145652)),	-- Ferocious Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145654)),	-- Ferocious Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145648)),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 							},
 						})),
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(147627, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147627, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4234,29 +4234,29 @@ _.PVP =
 								{"exclude", "itemID", 147627 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
-								un(14, i(144832)),	-- Cruel Gladiator's Felskin Belt (A)
-								un(14, i(144822)),	-- Cruel Gladiator's Felskin Boots (A)
-								un(14, i(144824)),	-- Cruel Gladiator's Felskin Gloves (A)
-								un(14, i(144826)),	-- Cruel Gladiator's Felskin Helm (A)
-								un(14, i(144828)),	-- Cruel Gladiator's Felskin Legguards (A)
-								un(14, i(144830)),	-- Cruel Gladiator's Felskin Spaulders (A)
-								un(14, i(144820)),	-- Cruel Gladiator's Felskin Tunic (A)
-								un(14, i(144834)),	-- Cruel Gladiator's Felskin Wristguards (A)
-								un(14, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
-								un(14, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
-								un(14, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
-								un(14, i(145666)),	-- Ferocious Gladiator's Felskin Gloves (A)
-								un(14, i(145668)),	-- Ferocious Gladiator's Felskin Helm (A)
-								un(14, i(145670)),	-- Ferocious Gladiator's Felskin Legguards (A)
-								un(14, i(145672)),	-- Ferocious Gladiator's Felskin Spaulders (A)
-								un(14, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
-								un(14, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144782)),	-- Cruel Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(144832)),	-- Cruel Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(144822)),	-- Cruel Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(144824)),	-- Cruel Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(144826)),	-- Cruel Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144828)),	-- Cruel Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144830)),	-- Cruel Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144820)),	-- Cruel Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(144834)),	-- Cruel Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(145666)),	-- Ferocious Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(145668)),	-- Ferocious Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145670)),	-- Ferocious Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145672)),	-- Ferocious Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
 							},
 						})),
 					}),
 					cl(DRUID, {
-						un(14, i(147623, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147623, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4265,29 +4265,29 @@ _.PVP =
 								{"exclude", "itemID", 147623 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
-								un(14, i(144784)),	-- Cruel Gladiator's Dragonhide Cloak (A)
-								un(14, i(144840)),	-- Cruel Gladiator's Dragonhide Gloves (A)
-								un(14, i(144842)),	-- Cruel Gladiator's Dragonhide Helm (A)
-								un(14, i(144844)),	-- Cruel Gladiator's Dragonhide Legguards (A)
-								un(14, i(144838)),	-- Cruel Gladiator's Dragonhide Moccasins (A)
-								un(14, i(144836)),	-- Cruel Gladiator's Dragonhide Robe (A)
-								un(14, i(144846)),	-- Cruel Gladiator's Dragonhide Spaulders (A)
-								un(14, i(144850)),	-- Cruel Gladiator's Dragonhide Wristguards (A)
-								un(14, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
-								un(14, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
-								un(14, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
-								un(14, i(145684)),	-- Ferocious Gladiator's Dragonhide Helm (A)
-								un(14, i(145686)),	-- Ferocious Gladiator's Dragonhide Legguards (A)
-								un(14, i(145680)),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
-								un(14, i(145678)),	-- Ferocious Gladiator's Dragonhide Robe (A)
-								un(14, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
-								un(14, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144848)),	-- Cruel Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(144784)),	-- Cruel Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(144840)),	-- Cruel Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(144842)),	-- Cruel Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144844)),	-- Cruel Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144838)),	-- Cruel Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(144836)),	-- Cruel Gladiator's Dragonhide Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(144846)),	-- Cruel Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144850)),	-- Cruel Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(145684)),	-- Ferocious Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145686)),	-- Ferocious Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145680)),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(145678)),	-- Ferocious Gladiator's Dragonhide Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 							},
 						})),
 					}),
 					cl(HUNTER, {
-						un(14, i(147621, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147621, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4296,29 +4296,29 @@ _.PVP =
 								{"exclude", "itemID", 147621 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
-								un(14, i(144852)),	-- Cruel Gladiator's Chain Armor (A)
-								un(14, i(144864)),	-- Cruel Gladiator's Chain Clasp (A)
-								un(14, i(144856)),	-- Cruel Gladiator's Chain Gauntlets (A)
-								un(14, i(144858)),	-- Cruel Gladiator's Chain Helm (A)
-								un(14, i(144860)),	-- Cruel Gladiator's Chain Leggings (A)
-								un(14, i(144862)),	-- Cruel Gladiator's Chain Spaulders (A)
-								un(14, i(144854)),	-- Cruel Gladiator's Chain Treads (A)
-								un(14, i(144786)),	-- Cruel Gladiator's Drape of the Tracker (A)
-								un(14, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
-								un(14, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
-								un(14, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
-								un(14, i(145698)),	-- Ferocious Gladiator's Chain Gauntlets (A)
-								un(14, i(145700)),	-- Ferocious Gladiator's Chain Helm (A)
-								un(14, i(145702)),	-- Ferocious Gladiator's Chain Leggings (A)
-								un(14, i(145704)),	-- Ferocious Gladiator's Chain Spaulders (A)
-								un(14, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
-								un(14, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(144866)),	-- Cruel Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(144852)),	-- Cruel Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(144864)),	-- Cruel Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(144856)),	-- Cruel Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(144858)),	-- Cruel Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144860)),	-- Cruel Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(144862)),	-- Cruel Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144854)),	-- Cruel Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(144786)),	-- Cruel Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(145698)),	-- Ferocious Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145700)),	-- Ferocious Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145702)),	-- Ferocious Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(145704)),	-- Ferocious Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
 							},
 						})),
 					}),
 					cl(MAGE, {
-						un(14, i(147644, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147644, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4327,29 +4327,29 @@ _.PVP =
 								{"exclude", "itemID", 147644 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
-								un(14, i(144882)),	-- Cruel Gladiator's Silk Bracers (A)
-								un(14, i(144880)),	-- Cruel Gladiator's Silk Cord (A)
-								un(14, i(144872)),	-- Cruel Gladiator's Silk Cowl (A)
-								un(14, i(144870)),	-- Cruel Gladiator's Silk Handguards (A)
-								un(14, i(144876)),	-- Cruel Gladiator's Silk Robe (A)
-								un(14, i(144868)),	-- Cruel Gladiator's Silk Treads (A)
-								un(14, i(144874)),	-- Cruel Gladiator's Silk Trousers (A)
-								un(14, i(144788)),	-- Cruel Gladiator's Silken Shawl (A)
-								un(14, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
-								un(14, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
-								un(14, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
-								un(14, i(145714)),	-- Ferocious Gladiator's Silk Cowl (A)
-								un(14, i(145712)),	-- Ferocious Gladiator's Silk Handguards (A)
-								un(14, i(145718)),	-- Ferocious Gladiator's Silk Robe (A)
-								un(14, i(145710)),	-- Ferocious Gladiator's Silk Treads (A)
-								un(14, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
-								un(14, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(144878)),	-- Cruel Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(144882)),	-- Cruel Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144880)),	-- Cruel Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(144872)),	-- Cruel Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(144870)),	-- Cruel Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144876)),	-- Cruel Gladiator's Silk Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(144868)),	-- Cruel Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(144874)),	-- Cruel Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144788)),	-- Cruel Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(145714)),	-- Ferocious Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(145712)),	-- Ferocious Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145718)),	-- Ferocious Gladiator's Silk Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(145710)),	-- Ferocious Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
 							},
 						})),
 					}),
 					cl(MONK, {
-						un(14, i(147632, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147632, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4358,29 +4358,29 @@ _.PVP =
 								{"exclude", "itemID", 147632 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
-								un(14, i(144790)),	-- Cruel Gladiator's Ironskin Cloak (A)
-								un(14, i(144886)),	-- Cruel Gladiator's Ironskin Gloves (A)
-								un(14, i(144888)),	-- Cruel Gladiator's Ironskin Helm (A)
-								un(14, i(144890)),	-- Cruel Gladiator's Ironskin Legguards (A)
-								un(14, i(144884)),	-- Cruel Gladiator's Ironskin Slippers (A)
-								un(14, i(144892)),	-- Cruel Gladiator's Ironskin Spaulders (A)
-								un(14, i(144894)),	-- Cruel Gladiator's Ironskin Tunic (A)
-								un(14, i(144898)),	-- Cruel Gladiator's Ironskin Wristguards (A)
-								un(14, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
-								un(14, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
-								un(14, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
-								un(14, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
-								un(14, i(145732)),	-- Ferocious Gladiator's Ironskin Legguards (A)
-								un(14, i(145726)),	-- Ferocious Gladiator's Ironskin Slippers (A)
-								un(14, i(145734)),	-- Ferocious Gladiator's Ironskin Spaulders (A)
-								un(14, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
-								un(14, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144896)),	-- Cruel Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(144790)),	-- Cruel Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(144886)),	-- Cruel Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(144888)),	-- Cruel Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144890)),	-- Cruel Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144884)),	-- Cruel Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144892)),	-- Cruel Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144894)),	-- Cruel Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(144898)),	-- Cruel Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145732)),	-- Ferocious Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145726)),	-- Ferocious Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145734)),	-- Ferocious Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 							},
 						})),
 					}),
 					cl(PALADIN, {
-						un(14, i(147642, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147642, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4389,29 +4389,29 @@ _.PVP =
 								{"exclude", "itemID", 147642 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
-								un(14, i(144906)),	-- Cruel Gladiator's Scaled Breastplate (A)
-								un(14, i(144910)),	-- Cruel Gladiator's Scaled Gauntlets (A)
-								un(14, i(144918)),	-- Cruel Gladiator's Scaled Girdle (A)
-								un(14, i(144912)),	-- Cruel Gladiator's Scaled Helm (A)
-								un(14, i(144914)),	-- Cruel Gladiator's Scaled Legguards (A)
-								un(14, i(144908)),	-- Cruel Gladiator's Scaled Sabatons (A)
-								un(14, i(144916)),	-- Cruel Gladiator's Scaled Shoulders (A)
-								un(14, i(144920)),	-- Cruel Gladiator's Scaled Wristplates (A)
-								un(14, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
-								un(14, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
-								un(14, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
-								un(14, i(145760)),	-- Ferocious Gladiator's Scaled Girdle (A)
-								un(14, i(145754)),	-- Ferocious Gladiator's Scaled Helm (A)
-								un(14, i(145756)),	-- Ferocious Gladiator's Scaled Legguards (A)
-								un(14, i(145750)),	-- Ferocious Gladiator's Scaled Sabatons (A)
-								un(14, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
-								un(14, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(144792)),	-- Cruel Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(144906)),	-- Cruel Gladiator's Scaled Breastplate (A)
+								un(ELITE_PVP_REQUIREMENT, i(144910)),	-- Cruel Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(144918)),	-- Cruel Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(144912)),	-- Cruel Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144914)),	-- Cruel Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144908)),	-- Cruel Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(144916)),	-- Cruel Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144920)),	-- Cruel Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
+								un(ELITE_PVP_REQUIREMENT, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145760)),	-- Ferocious Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145754)),	-- Ferocious Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145756)),	-- Ferocious Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145750)),	-- Ferocious Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
 							},
 						})),
 					}),
 					cl(PRIEST, {
-						un(14, i(147640, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147640, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4420,29 +4420,29 @@ _.PVP =
 								{"exclude", "itemID", 147640 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
-								un(14, i(144936)),	-- Cruel Gladiator's Satin Bracers (A)
-								un(14, i(144934)),	-- Cruel Gladiator's Satin Cord (A)
-								un(14, i(144924)),	-- Cruel Gladiator's Satin Gloves (A)
-								un(14, i(144926)),	-- Cruel Gladiator's Satin Hood (A)
-								un(14, i(144928)),	-- Cruel Gladiator's Satin Leggings (A)
-								un(14, i(144932)),	-- Cruel Gladiator's Satin Mantle (A)
-								un(14, i(144930)),	-- Cruel Gladiator's Satin Robe (A)
-								un(14, i(144922)),	-- Cruel Gladiator's Satin Treads (A)
-								un(14, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
-								un(14, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
-								un(14, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
-								un(14, i(145766)),	-- Ferocious Gladiator's Satin Gloves (A)
-								un(14, i(145768)),	-- Ferocious Gladiator's Satin Hood (A)
-								un(14, i(145770)),	-- Ferocious Gladiator's Satin Leggings (A)
-								un(14, i(145774)),	-- Ferocious Gladiator's Satin Mantle (A)
-								un(14, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
-								un(14, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(144794)),	-- Cruel Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(144936)),	-- Cruel Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144934)),	-- Cruel Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(144924)),	-- Cruel Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(144926)),	-- Cruel Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(144928)),	-- Cruel Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(144932)),	-- Cruel Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(144930)),	-- Cruel Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(144922)),	-- Cruel Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(145766)),	-- Ferocious Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(145768)),	-- Ferocious Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(145770)),	-- Ferocious Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(145774)),	-- Ferocious Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
 							},
 						})),
 					}),
 					cl(ROGUE, {
-						un(14, i(147634, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147634, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4451,29 +4451,29 @@ _.PVP =
 								{"exclude", "itemID", 147634 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
-								un(14, i(144948)),	-- Cruel Gladiator's Leather Gloves (A)
-								un(14, i(144950)),	-- Cruel Gladiator's Leather Helm (A)
-								un(14, i(144952)),	-- Cruel Gladiator's Leather Legguards (A)
-								un(14, i(144946)),	-- Cruel Gladiator's Leather Slippers (A)
-								un(14, i(144954)),	-- Cruel Gladiator's Leather Spaulders (A)
-								un(14, i(144944)),	-- Cruel Gladiator's Leather Tunic (A)
-								un(14, i(144958)),	-- Cruel Gladiator's Leather Wristguards (A)
-								un(14, i(144796)),	-- Cruel Gladiator's Shadowcape (A)
-								un(14, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
-								un(14, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
-								un(14, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
-								un(14, i(145794)),	-- Ferocious Gladiator's Leather Legguards (A)
-								un(14, i(145788)),	-- Ferocious Gladiator's Leather Slippers (A)
-								un(14, i(145796)),	-- Ferocious Gladiator's Leather Spaulders (A)
-								un(14, i(145786)),	-- Ferocious Gladiator's Leather Tunic (A)
-								un(14, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
-								un(14, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(144956)),	-- Cruel Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(144948)),	-- Cruel Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(144950)),	-- Cruel Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144952)),	-- Cruel Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144946)),	-- Cruel Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144954)),	-- Cruel Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144944)),	-- Cruel Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(144958)),	-- Cruel Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(144796)),	-- Cruel Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145794)),	-- Ferocious Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145788)),	-- Ferocious Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145796)),	-- Ferocious Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145786)),	-- Ferocious Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
 							},
 						})),
 					}),
 					cl(SHAMAN, {
-						un(14, i(147637, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147637, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4482,29 +4482,29 @@ _.PVP =
 								{"exclude", "itemID", 147637 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
-								un(14, i(144960)),	-- Cruel Gladiator's Ringmail Armor (A)
-								un(14, i(144962)),	-- Cruel Gladiator's Ringmail Boots (A)
-								un(14, i(144972)),	-- Cruel Gladiator's Ringmail Clasp (A)
-								un(14, i(144964)),	-- Cruel Gladiator's Ringmail Gauntlets (A)
-								un(14, i(144966)),	-- Cruel Gladiator's Ringmail Helm (A)
-								un(14, i(144968)),	-- Cruel Gladiator's Ringmail Kilt (A)
-								un(14, i(144970)),	-- Cruel Gladiator's Ringmail Spaulders (A)
-								un(14, i(144798)),	-- Cruel Gladiator's Totemic Cloak (A)
-								un(14, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
-								un(14, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
-								un(14, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
-								un(14, i(145814)),	-- Ferocious Gladiator's Ringmail Clasp (A)
-								un(14, i(145806)),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
-								un(14, i(145808)),	-- Ferocious Gladiator's Ringmail Helm (A)
-								un(14, i(145810)),	-- Ferocious Gladiator's Ringmail Kilt (A)
-								un(14, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
-								un(14, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(144974)),	-- Cruel Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(144960)),	-- Cruel Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(144962)),	-- Cruel Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(144972)),	-- Cruel Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(144964)),	-- Cruel Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(144966)),	-- Cruel Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(144968)),	-- Cruel Gladiator's Ringmail Kilt (A)
+								un(ELITE_PVP_REQUIREMENT, i(144970)),	-- Cruel Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(144798)),	-- Cruel Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(145814)),	-- Ferocious Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(145806)),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145808)),	-- Ferocious Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145810)),	-- Ferocious Gladiator's Ringmail Kilt (A)
+								un(ELITE_PVP_REQUIREMENT, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
 							},
 						})),
 					}),
 					cl(WARLOCK, {
-						un(14, i(147629, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147629, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4513,29 +4513,29 @@ _.PVP =
 								{"exclude", "itemID", 147629 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
-								un(14, i(145008)),	-- Cruel Gladiator's Felweave Bracers (A)
-								un(14, i(144800)),	-- Cruel Gladiator's Felweave Cloak (A)
-								un(14, i(145006)),	-- Cruel Gladiator's Felweave Cord (A)
-								un(14, i(144998)),	-- Cruel Gladiator's Felweave Cowl (A)
-								un(14, i(144996)),	-- Cruel Gladiator's Felweave Handguards (A)
-								un(14, i(145002)),	-- Cruel Gladiator's Felweave Raiment (A)
-								un(14, i(144994)),	-- Cruel Gladiator's Felweave Treads (A)
-								un(14, i(145000)),	-- Cruel Gladiator's Felweave Trousers (A)
-								un(14, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
-								un(14, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
-								un(14, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
-								un(14, i(145848)),	-- Ferocious Gladiator's Felweave Cord (A)
-								un(14, i(145840)),	-- Ferocious Gladiator's Felweave Cowl (A)
-								un(14, i(145838)),	-- Ferocious Gladiator's Felweave Handguards (A)
-								un(14, i(145844)),	-- Ferocious Gladiator's Felweave Raiment (A)
-								un(14, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
-								un(14, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145004)),	-- Cruel Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(145008)),	-- Cruel Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(144800)),	-- Cruel Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145006)),	-- Cruel Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(144998)),	-- Cruel Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(144996)),	-- Cruel Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145002)),	-- Cruel Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(144994)),	-- Cruel Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(145000)),	-- Cruel Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(145848)),	-- Ferocious Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(145840)),	-- Ferocious Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(145838)),	-- Ferocious Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145844)),	-- Ferocious Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
 							},
 						})),
 					}),
 					cl(WARRIOR, {
-						un(14, i(147636, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(147636, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -4544,24 +4544,24 @@ _.PVP =
 								{"exclude", "itemID", 147636 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
-								un(14, i(145010)),	-- Cruel Gladiator's Plate Chestpiece (A)
-								un(14, i(145014)),	-- Cruel Gladiator's Plate Gauntlets (A)
-								un(14, i(145022)),	-- Cruel Gladiator's Plate Girdle (A)
-								un(14, i(145016)),	-- Cruel Gladiator's Plate Helm (A)
-								un(14, i(145018)),	-- Cruel Gladiator's Plate Legguards (A)
-								un(14, i(145020)),	-- Cruel Gladiator's Plate Shoulders (A)
-								un(14, i(145012)),	-- Cruel Gladiator's Plate Warboots (A)
-								un(14, i(145024)),	-- Cruel Gladiator's Plate Wristplates (A)
-								un(14, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
-								un(14, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
-								un(14, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
-								un(14, i(145864)),	-- Ferocious Gladiator's Plate Girdle (A)
-								un(14, i(145858)),	-- Ferocious Gladiator's Plate Helm (A)
-								un(14, i(145860)),	-- Ferocious Gladiator's Plate Legguards (A)
-								un(14, i(145862)),	-- Ferocious Gladiator's Plate Shoulders (A)
-								un(14, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
-								un(14, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(144802)),	-- Cruel Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145010)),	-- Cruel Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(145014)),	-- Cruel Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145022)),	-- Cruel Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145016)),	-- Cruel Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145018)),	-- Cruel Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145020)),	-- Cruel Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145012)),	-- Cruel Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(145024)),	-- Cruel Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(145864)),	-- Ferocious Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(145858)),	-- Ferocious Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(145860)),	-- Ferocious Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(145862)),	-- Ferocious Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
 							},
 						})),
 					}),
@@ -5424,24 +5424,24 @@ _.PVP =
 								{"exclude", "itemID", 147626 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
-								un(14, i(144805)),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(144809)),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(144817)),	-- Cruel Gladiator's Dreadplate Girdle (H)
-								un(14, i(144811)),	-- Cruel Gladiator's Dreadplate Helm (H)
-								un(14, i(144813)),	-- Cruel Gladiator's Dreadplate Legguards (H)
-								un(14, i(144807)),	-- Cruel Gladiator's Dreadplate Sabatons (H)
-								un(14, i(144815)),	-- Cruel Gladiator's Dreadplate Shoulders (H)
-								un(14, i(144819)),	-- Cruel Gladiator's Dreadplate Wristplates (H)
-								un(14, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
-								un(14, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(145659)),	-- Ferocious Gladiator's Dreadplate Girdle (H)
-								un(14, i(145653)),	-- Ferocious Gladiator's Dreadplate Helm (H)
-								un(14, i(145655)),	-- Ferocious Gladiator's Dreadplate Legguards (H)
-								un(14, i(145649)),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
-								un(14, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
-								un(14, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(144781)),	-- Cruel Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(144805)),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(144809)),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(144817)),	-- Cruel Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(144811)),	-- Cruel Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144813)),	-- Cruel Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144807)),	-- Cruel Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(144815)),	-- Cruel Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144819)),	-- Cruel Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145659)),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145653)),	-- Ferocious Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145655)),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145649)),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 							},
 						}),
 					}),
@@ -5455,24 +5455,24 @@ _.PVP =
 								{"exclude", "itemID", 147628 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
-								un(14, i(144833)),	-- Cruel Gladiator's Felskin Belt (H)
-								un(14, i(144823)),	-- Cruel Gladiator's Felskin Boots (H)
-								un(14, i(144825)),	-- Cruel Gladiator's Felskin Gloves (H)
-								un(14, i(144827)),	-- Cruel Gladiator's Felskin Helm (H)
-								un(14, i(144829)),	-- Cruel Gladiator's Felskin Legguards (H)
-								un(14, i(144831)),	-- Cruel Gladiator's Felskin Spaulders (H)
-								un(14, i(144821)),	-- Cruel Gladiator's Felskin Tunic (H)
-								un(14, i(144835)),	-- Cruel Gladiator's Felskin Wristguards (H)
-								un(14, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
-								un(14, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
-								un(14, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
-								un(14, i(145667)),	-- Ferocious Gladiator's Felskin Gloves (H)
-								un(14, i(145669)),	-- Ferocious Gladiator's Felskin Helm (H)
-								un(14, i(145671)),	-- Ferocious Gladiator's Felskin Legguards (H)
-								un(14, i(145673)),	-- Ferocious Gladiator's Felskin Spaulders (H)
-								un(14, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
-								un(14, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144783)),	-- Cruel Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(144833)),	-- Cruel Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(144823)),	-- Cruel Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(144825)),	-- Cruel Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(144827)),	-- Cruel Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144829)),	-- Cruel Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144831)),	-- Cruel Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144821)),	-- Cruel Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(144835)),	-- Cruel Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(145667)),	-- Ferocious Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(145669)),	-- Ferocious Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145671)),	-- Ferocious Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145673)),	-- Ferocious Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
 							},
 						}),
 					}),
@@ -5486,24 +5486,24 @@ _.PVP =
 								{"exclude", "itemID", 147624 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
-								un(14, i(144785)),	-- Cruel Gladiator's Dragonhide Cloak (H)
-								un(14, i(144841)),	-- Cruel Gladiator's Dragonhide Gloves (H)
-								un(14, i(144843)),	-- Cruel Gladiator's Dragonhide Helm (H)
-								un(14, i(144845)),	-- Cruel Gladiator's Dragonhide Legguards (H)
-								un(14, i(144839)),	-- Cruel Gladiator's Dragonhide Moccasins (H)
-								un(14, i(144837)),	-- Cruel Gladiator's Dragonhide Robe (H)
-								un(14, i(144847)),	-- Cruel Gladiator's Dragonhide Spaulders (H)
-								un(14, i(144851)),	-- Cruel Gladiator's Dragonhide Wristguards (H)
-								un(14, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
-								un(14, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
-								un(14, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
-								un(14, i(145685)),	-- Ferocious Gladiator's Dragonhide Helm (H)
-								un(14, i(145687)),	-- Ferocious Gladiator's Dragonhide Legguards (H)
-								un(14, i(145681)),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
-								un(14, i(145679)),	-- Ferocious Gladiator's Dragonhide Robe (H)
-								un(14, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
-								un(14, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144849)),	-- Cruel Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(144785)),	-- Cruel Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(144841)),	-- Cruel Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(144843)),	-- Cruel Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144845)),	-- Cruel Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144839)),	-- Cruel Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(144837)),	-- Cruel Gladiator's Dragonhide Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(144847)),	-- Cruel Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144851)),	-- Cruel Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(145685)),	-- Ferocious Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145687)),	-- Ferocious Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145681)),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(145679)),	-- Ferocious Gladiator's Dragonhide Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
 							},
 						}),
 					}),
@@ -5517,24 +5517,24 @@ _.PVP =
 								{"exclude", "itemID", 147622 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
-								un(14, i(144853)),	-- Cruel Gladiator's Chain Armor (H)
-								un(14, i(144865)),	-- Cruel Gladiator's Chain Clasp (H)
-								un(14, i(144857)),	-- Cruel Gladiator's Chain Gauntlets (H)
-								un(14, i(144859)),	-- Cruel Gladiator's Chain Helm (H)
-								un(14, i(144861)),	-- Cruel Gladiator's Chain Leggings (H)
-								un(14, i(144863)),	-- Cruel Gladiator's Chain Spaulders (H)
-								un(14, i(144855)),	-- Cruel Gladiator's Chain Treads (H)
-								un(14, i(144787)),	-- Cruel Gladiator's Drape of the Tracker (H)
-								un(14, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
-								un(14, i(145695)),	-- Ferocious Gladiator's Chain Armor (H)
-								un(14, i(145707)),	-- Ferocious Gladiator's Chain Clasp (H)
-								un(14, i(145699)),	-- Ferocious Gladiator's Chain Gauntlets (H)
-								un(14, i(145701)),	-- Ferocious Gladiator's Chain Helm (H)
-								un(14, i(145703)),	-- Ferocious Gladiator's Chain Leggings (H)
-								un(14, i(145705)),	-- Ferocious Gladiator's Chain Spaulders (H)
-								un(14, i(145697)),	-- Ferocious Gladiator's Chain Treads (H)
-								un(14, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(144867)),	-- Cruel Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(144853)),	-- Cruel Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(144865)),	-- Cruel Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(144857)),	-- Cruel Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(144859)),	-- Cruel Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144861)),	-- Cruel Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(144863)),	-- Cruel Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144855)),	-- Cruel Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(144787)),	-- Cruel Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(145695)),	-- Ferocious Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(145707)),	-- Ferocious Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(145699)),	-- Ferocious Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145701)),	-- Ferocious Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145703)),	-- Ferocious Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(145705)),	-- Ferocious Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145697)),	-- Ferocious Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
 							},
 						}),
 					}),
@@ -5548,24 +5548,24 @@ _.PVP =
 								{"exclude", "itemID", 147643 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
-								un(14, i(144883)),	-- Cruel Gladiator's Silk Bracers (H)
-								un(14, i(144881)),	-- Cruel Gladiator's Silk Cord (H)
-								un(14, i(144873)),	-- Cruel Gladiator's Silk Cowl (H)
-								un(14, i(144871)),	-- Cruel Gladiator's Silk Handguards (H)
-								un(14, i(144877)),	-- Cruel Gladiator's Silk Robe (H)
-								un(14, i(144869)),	-- Cruel Gladiator's Silk Treads (H)
-								un(14, i(144875)),	-- Cruel Gladiator's Silk Trousers (H)
-								un(14, i(144789)),	-- Cruel Gladiator's Silken Shawl (H)
-								un(14, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
-								un(14, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
-								un(14, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
-								un(14, i(145715)),	-- Ferocious Gladiator's Silk Cowl (H)
-								un(14, i(145713)),	-- Ferocious Gladiator's Silk Handguards (H)
-								un(14, i(145719)),	-- Ferocious Gladiator's Silk Robe (H)
-								un(14, i(145711)),	-- Ferocious Gladiator's Silk Treads (H)
-								un(14, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
-								un(14, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(144879)),	-- Cruel Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(144883)),	-- Cruel Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144881)),	-- Cruel Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(144873)),	-- Cruel Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(144871)),	-- Cruel Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144877)),	-- Cruel Gladiator's Silk Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(144869)),	-- Cruel Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(144875)),	-- Cruel Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144789)),	-- Cruel Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(145715)),	-- Ferocious Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(145713)),	-- Ferocious Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145719)),	-- Ferocious Gladiator's Silk Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(145711)),	-- Ferocious Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
 							},
 						}),
 					}),
@@ -5579,24 +5579,24 @@ _.PVP =
 								{"exclude", "itemID", 147631 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
-								un(14, i(144791)),	-- Cruel Gladiator's Ironskin Cloak (H)
-								un(14, i(144887)),	-- Cruel Gladiator's Ironskin Gloves (H)
-								un(14, i(144889)),	-- Cruel Gladiator's Ironskin Helm (H)
-								un(14, i(144891)),	-- Cruel Gladiator's Ironskin Legguards (H)
-								un(14, i(144885)),	-- Cruel Gladiator's Ironskin Slippers (H)
-								un(14, i(144893)),	-- Cruel Gladiator's Ironskin Spaulders (H)
-								un(14, i(144895)),	-- Cruel Gladiator's Ironskin Tunic (H)
-								un(14, i(144899)),	-- Cruel Gladiator's Ironskin Wristguards (H)
-								un(14, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
-								un(14, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
-								un(14, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
-								un(14, i(145731)),	-- Ferocious Gladiator's Ironskin Helm (H)
-								un(14, i(145733)),	-- Ferocious Gladiator's Ironskin Legguards (H)
-								un(14, i(145727)),	-- Ferocious Gladiator's Ironskin Slippers (H)
-								un(14, i(145735)),	-- Ferocious Gladiator's Ironskin Spaulders (H)
-								un(14, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
-								un(14, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144897)),	-- Cruel Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(144791)),	-- Cruel Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(144887)),	-- Cruel Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(144889)),	-- Cruel Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144891)),	-- Cruel Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144885)),	-- Cruel Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144893)),	-- Cruel Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144895)),	-- Cruel Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(144899)),	-- Cruel Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(145731)),	-- Ferocious Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145733)),	-- Ferocious Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145727)),	-- Ferocious Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145735)),	-- Ferocious Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 							},
 						}),
 					}),
@@ -5610,24 +5610,24 @@ _.PVP =
 								{"exclude", "itemID", 147641 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
-								un(14, i(144907)),	-- Cruel Gladiator's Scaled Breastplate (H)
-								un(14, i(144911)),	-- Cruel Gladiator's Scaled Gauntlets (H)
-								un(14, i(144919)),	-- Cruel Gladiator's Scaled Girdle (H)
-								un(14, i(144913)),	-- Cruel Gladiator's Scaled Helm (H)
-								un(14, i(144915)),	-- Cruel Gladiator's Scaled Legguards (H)
-								un(14, i(144909)),	-- Cruel Gladiator's Scaled Sabatons (H)
-								un(14, i(144917)),	-- Cruel Gladiator's Scaled Shoulders (H)
-								un(14, i(144921)),	-- Cruel Gladiator's Scaled Wristplates (H)
-								un(14, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
-								un(14, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
-								un(14, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
-								un(14, i(145761)),	-- Ferocious Gladiator's Scaled Girdle (H)
-								un(14, i(145755)),	-- Ferocious Gladiator's Scaled Helm (H)
-								un(14, i(145757)),	-- Ferocious Gladiator's Scaled Legguards (H)
-								un(14, i(145751)),	-- Ferocious Gladiator's Scaled Sabatons (H)
-								un(14, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
-								un(14, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(144793)),	-- Cruel Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(144907)),	-- Cruel Gladiator's Scaled Breastplate (H)
+								un(ELITE_PVP_REQUIREMENT, i(144911)),	-- Cruel Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(144919)),	-- Cruel Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(144913)),	-- Cruel Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144915)),	-- Cruel Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144909)),	-- Cruel Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(144917)),	-- Cruel Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144921)),	-- Cruel Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
+								un(ELITE_PVP_REQUIREMENT, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145761)),	-- Ferocious Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145755)),	-- Ferocious Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145757)),	-- Ferocious Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145751)),	-- Ferocious Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
 							},
 						}),
 					}),
@@ -5641,24 +5641,24 @@ _.PVP =
 								{"exclude", "itemID", 147639 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
-								un(14, i(144937)),	-- Cruel Gladiator's Satin Bracers (H)
-								un(14, i(144935)),	-- Cruel Gladiator's Satin Cord (H)
-								un(14, i(144925)),	-- Cruel Gladiator's Satin Gloves (H)
-								un(14, i(144927)),	-- Cruel Gladiator's Satin Hood (H)
-								un(14, i(144929)),	-- Cruel Gladiator's Satin Leggings (H)
-								un(14, i(144933)),	-- Cruel Gladiator's Satin Mantle (H)
-								un(14, i(144931)),	-- Cruel Gladiator's Satin Robe (H)
-								un(14, i(144923)),	-- Cruel Gladiator's Satin Treads (H)
-								un(14, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
-								un(14, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
-								un(14, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
-								un(14, i(145767)),	-- Ferocious Gladiator's Satin Gloves (H)
-								un(14, i(145769)),	-- Ferocious Gladiator's Satin Hood (H)
-								un(14, i(145771)),	-- Ferocious Gladiator's Satin Leggings (H)
-								un(14, i(145775)),	-- Ferocious Gladiator's Satin Mantle (H)
-								un(14, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
-								un(14, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(144795)),	-- Cruel Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(144937)),	-- Cruel Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144935)),	-- Cruel Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(144925)),	-- Cruel Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(144927)),	-- Cruel Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(144929)),	-- Cruel Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(144933)),	-- Cruel Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(144931)),	-- Cruel Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(144923)),	-- Cruel Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(145767)),	-- Ferocious Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(145769)),	-- Ferocious Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(145771)),	-- Ferocious Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(145775)),	-- Ferocious Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
 							},
 						}),
 					}),
@@ -5672,24 +5672,24 @@ _.PVP =
 								{"exclude", "itemID", 147633 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
-								un(14, i(144949)),	-- Cruel Gladiator's Leather Gloves (H)
-								un(14, i(144951)),	-- Cruel Gladiator's Leather Helm (H)
-								un(14, i(144953)),	-- Cruel Gladiator's Leather Legguards (H)
-								un(14, i(144947)),	-- Cruel Gladiator's Leather Slippers (H)
-								un(14, i(144955)),	-- Cruel Gladiator's Leather Spaulders (H)
-								un(14, i(144945)),	-- Cruel Gladiator's Leather Tunic (H)
-								un(14, i(144959)),	-- Cruel Gladiator's Leather Wristguards (H)
-								un(14, i(144797)),	-- Cruel Gladiator's Shadowcape (H)
-								un(14, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
-								un(14, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
-								un(14, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
-								un(14, i(145795)),	-- Ferocious Gladiator's Leather Legguards (H)
-								un(14, i(145789)),	-- Ferocious Gladiator's Leather Slippers (H)
-								un(14, i(145797)),	-- Ferocious Gladiator's Leather Spaulders (H)
-								un(14, i(145787)),	-- Ferocious Gladiator's Leather Tunic (H)
-								un(14, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
-								un(14, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(144957)),	-- Cruel Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(144949)),	-- Cruel Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(144951)),	-- Cruel Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144953)),	-- Cruel Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144947)),	-- Cruel Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144955)),	-- Cruel Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144945)),	-- Cruel Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(144959)),	-- Cruel Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(144797)),	-- Cruel Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145795)),	-- Ferocious Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145789)),	-- Ferocious Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145797)),	-- Ferocious Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145787)),	-- Ferocious Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
 							},
 						}),
 					}),
@@ -5703,24 +5703,24 @@ _.PVP =
 								{"exclude", "itemID", 147638 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
-								un(14, i(144961)),	-- Cruel Gladiator's Ringmail Armor (H)
-								un(14, i(144963)),	-- Cruel Gladiator's Ringmail Boots (H)
-								un(14, i(144973)),	-- Cruel Gladiator's Ringmail Clasp (H)
-								un(14, i(144965)),	-- Cruel Gladiator's Ringmail Gauntlets (H)
-								un(14, i(144967)),	-- Cruel Gladiator's Ringmail Helm (H)
-								un(14, i(144969)),	-- Cruel Gladiator's Ringmail Kilt (H)
-								un(14, i(144971)),	-- Cruel Gladiator's Ringmail Spaulders (H)
-								un(14, i(144799)),	-- Cruel Gladiator's Totemic Cloak (H)
-								un(14, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
-								un(14, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
-								un(14, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
-								un(14, i(145815)),	-- Ferocious Gladiator's Ringmail Clasp (H)
-								un(14, i(145807)),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
-								un(14, i(145809)),	-- Ferocious Gladiator's Ringmail Helm (H)
-								un(14, i(145811)),	-- Ferocious Gladiator's Ringmail Kilt (H)
-								un(14, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
-								un(14, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(144975)),	-- Cruel Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(144961)),	-- Cruel Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(144963)),	-- Cruel Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(144973)),	-- Cruel Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(144965)),	-- Cruel Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(144967)),	-- Cruel Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(144969)),	-- Cruel Gladiator's Ringmail Kilt (H)
+								un(ELITE_PVP_REQUIREMENT, i(144971)),	-- Cruel Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(144799)),	-- Cruel Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(145815)),	-- Ferocious Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(145807)),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145809)),	-- Ferocious Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145811)),	-- Ferocious Gladiator's Ringmail Kilt (H)
+								un(ELITE_PVP_REQUIREMENT, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
 							},
 						}),
 					}),
@@ -5734,24 +5734,24 @@ _.PVP =
 								{"exclude", "itemID", 147630 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
-								un(14, i(145009)),	-- Cruel Gladiator's Felweave Bracers (H)
-								un(14, i(144801)),	-- Cruel Gladiator's Felweave Cloak (H)
-								un(14, i(145007)),	-- Cruel Gladiator's Felweave Cord (H)
-								un(14, i(144999)),	-- Cruel Gladiator's Felweave Cowl (H)
-								un(14, i(144997)),	-- Cruel Gladiator's Felweave Handguards (H)
-								un(14, i(145003)),	-- Cruel Gladiator's Felweave Raiment (H)
-								un(14, i(144995)),	-- Cruel Gladiator's Felweave Treads (H)
-								un(14, i(145001)),	-- Cruel Gladiator's Felweave Trousers (H)
-								un(14, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
-								un(14, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
-								un(14, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
-								un(14, i(145849)),	-- Ferocious Gladiator's Felweave Cord (H)
-								un(14, i(145841)),	-- Ferocious Gladiator's Felweave Cowl (H)
-								un(14, i(145839)),	-- Ferocious Gladiator's Felweave Handguards (H)
-								un(14, i(145845)),	-- Ferocious Gladiator's Felweave Raiment (H)
-								un(14, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
-								un(14, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145005)),	-- Cruel Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(145009)),	-- Cruel Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(144801)),	-- Cruel Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145007)),	-- Cruel Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(144999)),	-- Cruel Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(144997)),	-- Cruel Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145003)),	-- Cruel Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(144995)),	-- Cruel Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(145001)),	-- Cruel Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(145849)),	-- Ferocious Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(145841)),	-- Ferocious Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(145839)),	-- Ferocious Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145845)),	-- Ferocious Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
 							},
 						}),
 					}),
@@ -5765,24 +5765,24 @@ _.PVP =
 								{"exclude", "itemID", 147635 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
-								un(14, i(145011)),	-- Cruel Gladiator's Plate Chestpiece (H)
-								un(14, i(145015)),	-- Cruel Gladiator's Plate Gauntlets (H)
-								un(14, i(145023)),	-- Cruel Gladiator's Plate Girdle (H)
-								un(14, i(145017)),	-- Cruel Gladiator's Plate Helm (H)
-								un(14, i(145019)),	-- Cruel Gladiator's Plate Legguards (H)
-								un(14, i(145021)),	-- Cruel Gladiator's Plate Shoulders (H)
-								un(14, i(145013)),	-- Cruel Gladiator's Plate Warboots (H)
-								un(14, i(145025)),	-- Cruel Gladiator's Plate Wristplates (H)
-								un(14, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
-								un(14, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
-								un(14, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
-								un(14, i(145865)),	-- Ferocious Gladiator's Plate Girdle (H)
-								un(14, i(145859)),	-- Ferocious Gladiator's Plate Helm (H)
-								un(14, i(145861)),	-- Ferocious Gladiator's Plate Legguards (H)
-								un(14, i(145863)),	-- Ferocious Gladiator's Plate Shoulders (H)
-								un(14, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
-								un(14, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(144803)),	-- Cruel Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145011)),	-- Cruel Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(145015)),	-- Cruel Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145023)),	-- Cruel Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145017)),	-- Cruel Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145019)),	-- Cruel Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145021)),	-- Cruel Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145013)),	-- Cruel Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(145025)),	-- Cruel Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(145865)),	-- Ferocious Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(145859)),	-- Ferocious Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(145861)),	-- Ferocious Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(145863)),	-- Ferocious Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
 							},
 						}),
 					}),
@@ -6190,136 +6190,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
-						un(14, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
-						un(14, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
-						un(14, i(145658)),	-- Ferocious Gladiator's Dreadplate Girdle (A)
-						un(14, i(145652)),	-- Ferocious Gladiator's Dreadplate Helm (A)
-						un(14, i(145654)),	-- Ferocious Gladiator's Dreadplate Legguards (A)
-						un(14, i(145648)),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
-						un(14, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
-						un(14, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(145650)),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(145658)),	-- Ferocious Gladiator's Dreadplate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(145652)),	-- Ferocious Gladiator's Dreadplate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145654)),	-- Ferocious Gladiator's Dreadplate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145648)),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(145656)),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145660)),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
-						un(14, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
-						un(14, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
-						un(14, i(145666)),	-- Ferocious Gladiator's Felskin Gloves (A)
-						un(14, i(145668)),	-- Ferocious Gladiator's Felskin Helm (A)
-						un(14, i(145670)),	-- Ferocious Gladiator's Felskin Legguards (A)
-						un(14, i(145672)),	-- Ferocious Gladiator's Felskin Spaulders (A)
-						un(14, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
-						un(14, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145624)),	-- Ferocious Gladiator's Demonthread Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145674)),	-- Ferocious Gladiator's Felskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(145664)),	-- Ferocious Gladiator's Felskin Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(145666)),	-- Ferocious Gladiator's Felskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(145668)),	-- Ferocious Gladiator's Felskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145670)),	-- Ferocious Gladiator's Felskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145672)),	-- Ferocious Gladiator's Felskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145662)),	-- Ferocious Gladiator's Felskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(145676)),	-- Ferocious Gladiator's Felskin Wristguards (A)
 					}),
 					cl(DRUID, {
-						un(14, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
-						un(14, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
-						un(14, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
-						un(14, i(145684)),	-- Ferocious Gladiator's Dragonhide Helm (A)
-						un(14, i(145686)),	-- Ferocious Gladiator's Dragonhide Legguards (A)
-						un(14, i(145680)),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
-						un(14, i(145678)),	-- Ferocious Gladiator's Dragonhide Robe (A)
-						un(14, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
-						un(14, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145690)),	-- Ferocious Gladiator's Dragonhide Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(145626)),	-- Ferocious Gladiator's Dragonhide Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145682)),	-- Ferocious Gladiator's Dragonhide Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(145684)),	-- Ferocious Gladiator's Dragonhide Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145686)),	-- Ferocious Gladiator's Dragonhide Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145680)),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
+						un(ELITE_PVP_REQUIREMENT, i(145678)),	-- Ferocious Gladiator's Dragonhide Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(145688)),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145692)),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(HUNTER, {
-						un(14, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
-						un(14, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
-						un(14, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
-						un(14, i(145698)),	-- Ferocious Gladiator's Chain Gauntlets (A)
-						un(14, i(145700)),	-- Ferocious Gladiator's Chain Helm (A)
-						un(14, i(145702)),	-- Ferocious Gladiator's Chain Leggings (A)
-						un(14, i(145704)),	-- Ferocious Gladiator's Chain Spaulders (A)
-						un(14, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
-						un(14, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
+						un(ELITE_PVP_REQUIREMENT, i(145708)),	-- Ferocious Gladiator's Chain Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(145694)),	-- Ferocious Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(145706)),	-- Ferocious Gladiator's Chain Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(145698)),	-- Ferocious Gladiator's Chain Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(145700)),	-- Ferocious Gladiator's Chain Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145702)),	-- Ferocious Gladiator's Chain Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(145704)),	-- Ferocious Gladiator's Chain Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145696)),	-- Ferocious Gladiator's Chain Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(145628)),	-- Ferocious Gladiator's Drape of the Tracker (A)
 					}),
 					cl(MAGE, {
-						un(14, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
-						un(14, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
-						un(14, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
-						un(14, i(145714)),	-- Ferocious Gladiator's Silk Cowl (A)
-						un(14, i(145712)),	-- Ferocious Gladiator's Silk Handguards (A)
-						un(14, i(145718)),	-- Ferocious Gladiator's Silk Robe (A)
-						un(14, i(145710)),	-- Ferocious Gladiator's Silk Treads (A)
-						un(14, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
-						un(14, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
+						un(ELITE_PVP_REQUIREMENT, i(145720)),	-- Ferocious Gladiator's Silk Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(145724)),	-- Ferocious Gladiator's Silk Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145722)),	-- Ferocious Gladiator's Silk Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(145714)),	-- Ferocious Gladiator's Silk Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(145712)),	-- Ferocious Gladiator's Silk Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145718)),	-- Ferocious Gladiator's Silk Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(145710)),	-- Ferocious Gladiator's Silk Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(145716)),	-- Ferocious Gladiator's Silk Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145630)),	-- Ferocious Gladiator's Silken Shawl (A)
 					}),
 					cl(MONK, {
-						un(14, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
-						un(14, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
-						un(14, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
-						un(14, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
-						un(14, i(145732)),	-- Ferocious Gladiator's Ironskin Legguards (A)
-						un(14, i(145726)),	-- Ferocious Gladiator's Ironskin Slippers (A)
-						un(14, i(145734)),	-- Ferocious Gladiator's Ironskin Spaulders (A)
-						un(14, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
-						un(14, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145732)),	-- Ferocious Gladiator's Ironskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145726)),	-- Ferocious Gladiator's Ironskin Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145734)),	-- Ferocious Gladiator's Ironskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145736)),	-- Ferocious Gladiator's Ironskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(145740)),	-- Ferocious Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(PALADIN, {
-						un(14, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
-						un(14, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
-						un(14, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
-						un(14, i(145760)),	-- Ferocious Gladiator's Scaled Girdle (A)
-						un(14, i(145754)),	-- Ferocious Gladiator's Scaled Helm (A)
-						un(14, i(145756)),	-- Ferocious Gladiator's Scaled Legguards (A)
-						un(14, i(145750)),	-- Ferocious Gladiator's Scaled Sabatons (A)
-						un(14, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
-						un(14, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(145634)),	-- Ferocious Gladiator's Greatcloak of Faith (A)
+						un(ELITE_PVP_REQUIREMENT, i(145748)),	-- Ferocious Gladiator's Scaled Breastplate (A)
+						un(ELITE_PVP_REQUIREMENT, i(145752)),	-- Ferocious Gladiator's Scaled Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(145760)),	-- Ferocious Gladiator's Scaled Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(145754)),	-- Ferocious Gladiator's Scaled Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145756)),	-- Ferocious Gladiator's Scaled Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145750)),	-- Ferocious Gladiator's Scaled Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(145758)),	-- Ferocious Gladiator's Scaled Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145762)),	-- Ferocious Gladiator's Scaled Wristplates (A)
 					}),
 					cl(PRIEST, {
-						un(14, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
-						un(14, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
-						un(14, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
-						un(14, i(145766)),	-- Ferocious Gladiator's Satin Gloves (A)
-						un(14, i(145768)),	-- Ferocious Gladiator's Satin Hood (A)
-						un(14, i(145770)),	-- Ferocious Gladiator's Satin Leggings (A)
-						un(14, i(145774)),	-- Ferocious Gladiator's Satin Mantle (A)
-						un(14, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
-						un(14, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(145636)),	-- Ferocious Gladiator's Drape of Piety (A)
+						un(ELITE_PVP_REQUIREMENT, i(145778)),	-- Ferocious Gladiator's Satin Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145776)),	-- Ferocious Gladiator's Satin Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(145766)),	-- Ferocious Gladiator's Satin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(145768)),	-- Ferocious Gladiator's Satin Hood (A)
+						un(ELITE_PVP_REQUIREMENT, i(145770)),	-- Ferocious Gladiator's Satin Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(145774)),	-- Ferocious Gladiator's Satin Mantle (A)
+						un(ELITE_PVP_REQUIREMENT, i(145772)),	-- Ferocious Gladiator's Satin Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(145764)),	-- Ferocious Gladiator's Satin Treads (A)
 					}),
 					cl(ROGUE, {
-						un(14, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
-						un(14, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
-						un(14, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
-						un(14, i(145794)),	-- Ferocious Gladiator's Leather Legguards (A)
-						un(14, i(145788)),	-- Ferocious Gladiator's Leather Slippers (A)
-						un(14, i(145796)),	-- Ferocious Gladiator's Leather Spaulders (A)
-						un(14, i(145786)),	-- Ferocious Gladiator's Leather Tunic (A)
-						un(14, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
-						un(14, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
+						un(ELITE_PVP_REQUIREMENT, i(145798)),	-- Ferocious Gladiator's Leather Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(145790)),	-- Ferocious Gladiator's Leather Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(145792)),	-- Ferocious Gladiator's Leather Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145794)),	-- Ferocious Gladiator's Leather Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145788)),	-- Ferocious Gladiator's Leather Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145796)),	-- Ferocious Gladiator's Leather Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145786)),	-- Ferocious Gladiator's Leather Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(145800)),	-- Ferocious Gladiator's Leather Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145638)),	-- Ferocious Gladiator's Shadowcape (A)
 					}),
 					cl(SHAMAN, {
-						un(14, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
-						un(14, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
-						un(14, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
-						un(14, i(145814)),	-- Ferocious Gladiator's Ringmail Clasp (A)
-						un(14, i(145806)),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
-						un(14, i(145808)),	-- Ferocious Gladiator's Ringmail Helm (A)
-						un(14, i(145810)),	-- Ferocious Gladiator's Ringmail Kilt (A)
-						un(14, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
-						un(14, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145816)),	-- Ferocious Gladiator's Ringmail Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(145802)),	-- Ferocious Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(145804)),	-- Ferocious Gladiator's Ringmail Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(145814)),	-- Ferocious Gladiator's Ringmail Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(145806)),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(145808)),	-- Ferocious Gladiator's Ringmail Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145810)),	-- Ferocious Gladiator's Ringmail Kilt (A)
+						un(ELITE_PVP_REQUIREMENT, i(145812)),	-- Ferocious Gladiator's Ringmail Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145640)),	-- Ferocious Gladiator's Totemic Cloak (A)
 					}),
 					cl(WARLOCK, {
-						un(14, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
-						un(14, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
-						un(14, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
-						un(14, i(145848)),	-- Ferocious Gladiator's Felweave Cord (A)
-						un(14, i(145840)),	-- Ferocious Gladiator's Felweave Cowl (A)
-						un(14, i(145838)),	-- Ferocious Gladiator's Felweave Handguards (A)
-						un(14, i(145844)),	-- Ferocious Gladiator's Felweave Raiment (A)
-						un(14, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
-						un(14, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145846)),	-- Ferocious Gladiator's Felweave Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(145850)),	-- Ferocious Gladiator's Felweave Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(145642)),	-- Ferocious Gladiator's Felweave Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(145848)),	-- Ferocious Gladiator's Felweave Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(145840)),	-- Ferocious Gladiator's Felweave Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(145838)),	-- Ferocious Gladiator's Felweave Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145844)),	-- Ferocious Gladiator's Felweave Raiment (A)
+						un(ELITE_PVP_REQUIREMENT, i(145836)),	-- Ferocious Gladiator's Felweave Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(145842)),	-- Ferocious Gladiator's Felweave Trousers (A)
 					}),
 					cl(WARRIOR, {
-						un(14, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
-						un(14, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
-						un(14, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
-						un(14, i(145864)),	-- Ferocious Gladiator's Plate Girdle (A)
-						un(14, i(145858)),	-- Ferocious Gladiator's Plate Helm (A)
-						un(14, i(145860)),	-- Ferocious Gladiator's Plate Legguards (A)
-						un(14, i(145862)),	-- Ferocious Gladiator's Plate Shoulders (A)
-						un(14, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
-						un(14, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(145644)),	-- Ferocious Gladiator's Cloak of Battle (A)
+						un(ELITE_PVP_REQUIREMENT, i(145852)),	-- Ferocious Gladiator's Plate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(145856)),	-- Ferocious Gladiator's Plate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(145864)),	-- Ferocious Gladiator's Plate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(145858)),	-- Ferocious Gladiator's Plate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(145860)),	-- Ferocious Gladiator's Plate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(145862)),	-- Ferocious Gladiator's Plate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(145854)),	-- Ferocious Gladiator's Plate Warboots (A)
+						un(ELITE_PVP_REQUIREMENT, i(145866)),	-- Ferocious Gladiator's Plate Wristplates (A)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145742)),	-- Ferocious Gladiator's Necklace (A)
@@ -6723,136 +6723,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
-						un(14, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
-						un(14, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
-						un(14, i(145659)),	-- Ferocious Gladiator's Dreadplate Girdle (H)
-						un(14, i(145653)),	-- Ferocious Gladiator's Dreadplate Helm (H)
-						un(14, i(145655)),	-- Ferocious Gladiator's Dreadplate Legguards (H)
-						un(14, i(145649)),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
-						un(14, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
-						un(14, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(145651)),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(145659)),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(145653)),	-- Ferocious Gladiator's Dreadplate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145655)),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145649)),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(145657)),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145661)),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
-						un(14, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
-						un(14, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
-						un(14, i(145667)),	-- Ferocious Gladiator's Felskin Gloves (H)
-						un(14, i(145669)),	-- Ferocious Gladiator's Felskin Helm (H)
-						un(14, i(145671)),	-- Ferocious Gladiator's Felskin Legguards (H)
-						un(14, i(145673)),	-- Ferocious Gladiator's Felskin Spaulders (H)
-						un(14, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
-						un(14, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145625)),	-- Ferocious Gladiator's Demonthread Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145675)),	-- Ferocious Gladiator's Felskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(145665)),	-- Ferocious Gladiator's Felskin Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(145667)),	-- Ferocious Gladiator's Felskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(145669)),	-- Ferocious Gladiator's Felskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145671)),	-- Ferocious Gladiator's Felskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145673)),	-- Ferocious Gladiator's Felskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145663)),	-- Ferocious Gladiator's Felskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(145677)),	-- Ferocious Gladiator's Felskin Wristguards (H)
 					}),
 					cl(DRUID, {
-						un(14, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
-						un(14, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
-						un(14, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
-						un(14, i(145685)),	-- Ferocious Gladiator's Dragonhide Helm (H)
-						un(14, i(145687)),	-- Ferocious Gladiator's Dragonhide Legguards (H)
-						un(14, i(145681)),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
-						un(14, i(145679)),	-- Ferocious Gladiator's Dragonhide Robe (H)
-						un(14, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
-						un(14, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145691)),	-- Ferocious Gladiator's Dragonhide Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(145627)),	-- Ferocious Gladiator's Dragonhide Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145683)),	-- Ferocious Gladiator's Dragonhide Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(145685)),	-- Ferocious Gladiator's Dragonhide Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145687)),	-- Ferocious Gladiator's Dragonhide Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145681)),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
+						un(ELITE_PVP_REQUIREMENT, i(145679)),	-- Ferocious Gladiator's Dragonhide Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(145689)),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145693)),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(HUNTER, {
-						un(14, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
-						un(14, i(145695)),	-- Ferocious Gladiator's Chain Armor (H)
-						un(14, i(145707)),	-- Ferocious Gladiator's Chain Clasp (H)
-						un(14, i(145699)),	-- Ferocious Gladiator's Chain Gauntlets (H)
-						un(14, i(145701)),	-- Ferocious Gladiator's Chain Helm (H)
-						un(14, i(145703)),	-- Ferocious Gladiator's Chain Leggings (H)
-						un(14, i(145705)),	-- Ferocious Gladiator's Chain Spaulders (H)
-						un(14, i(145697)),	-- Ferocious Gladiator's Chain Treads (H)
-						un(14, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
+						un(ELITE_PVP_REQUIREMENT, i(145709)),	-- Ferocious Gladiator's Chain Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(145695)),	-- Ferocious Gladiator's Chain Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(145707)),	-- Ferocious Gladiator's Chain Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(145699)),	-- Ferocious Gladiator's Chain Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(145701)),	-- Ferocious Gladiator's Chain Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145703)),	-- Ferocious Gladiator's Chain Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(145705)),	-- Ferocious Gladiator's Chain Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145697)),	-- Ferocious Gladiator's Chain Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(145629)),	-- Ferocious Gladiator's Drape of the Tracker (H)
 					}),
 					cl(MAGE, {
-						un(14, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
-						un(14, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
-						un(14, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
-						un(14, i(145715)),	-- Ferocious Gladiator's Silk Cowl (H)
-						un(14, i(145713)),	-- Ferocious Gladiator's Silk Handguards (H)
-						un(14, i(145719)),	-- Ferocious Gladiator's Silk Robe (H)
-						un(14, i(145711)),	-- Ferocious Gladiator's Silk Treads (H)
-						un(14, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
-						un(14, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
+						un(ELITE_PVP_REQUIREMENT, i(145721)),	-- Ferocious Gladiator's Silk Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(145725)),	-- Ferocious Gladiator's Silk Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145723)),	-- Ferocious Gladiator's Silk Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(145715)),	-- Ferocious Gladiator's Silk Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(145713)),	-- Ferocious Gladiator's Silk Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145719)),	-- Ferocious Gladiator's Silk Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(145711)),	-- Ferocious Gladiator's Silk Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(145717)),	-- Ferocious Gladiator's Silk Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145631)),	-- Ferocious Gladiator's Silken Shawl (H)
 					}),
 					cl(MONK, {
-						un(14, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
-						un(14, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
-						un(14, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
-						un(14, i(145731)),	-- Ferocious Gladiator's Ironskin Helm (H)
-						un(14, i(145733)),	-- Ferocious Gladiator's Ironskin Legguards (H)
-						un(14, i(145727)),	-- Ferocious Gladiator's Ironskin Slippers (H)
-						un(14, i(145735)),	-- Ferocious Gladiator's Ironskin Spaulders (H)
-						un(14, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
-						un(14, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145739)),	-- Ferocious Gladiator's Ironskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(145633)),	-- Ferocious Gladiator's Ironskin Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145729)),	-- Ferocious Gladiator's Ironskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(145731)),	-- Ferocious Gladiator's Ironskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145733)),	-- Ferocious Gladiator's Ironskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145727)),	-- Ferocious Gladiator's Ironskin Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145735)),	-- Ferocious Gladiator's Ironskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145737)),	-- Ferocious Gladiator's Ironskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(145741)),	-- Ferocious Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(PALADIN, {
-						un(14, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
-						un(14, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
-						un(14, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
-						un(14, i(145761)),	-- Ferocious Gladiator's Scaled Girdle (H)
-						un(14, i(145755)),	-- Ferocious Gladiator's Scaled Helm (H)
-						un(14, i(145757)),	-- Ferocious Gladiator's Scaled Legguards (H)
-						un(14, i(145751)),	-- Ferocious Gladiator's Scaled Sabatons (H)
-						un(14, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
-						un(14, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(145635)),	-- Ferocious Gladiator's Greatcloak of Faith (H)
+						un(ELITE_PVP_REQUIREMENT, i(145749)),	-- Ferocious Gladiator's Scaled Breastplate (H)
+						un(ELITE_PVP_REQUIREMENT, i(145753)),	-- Ferocious Gladiator's Scaled Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(145761)),	-- Ferocious Gladiator's Scaled Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(145755)),	-- Ferocious Gladiator's Scaled Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145757)),	-- Ferocious Gladiator's Scaled Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145751)),	-- Ferocious Gladiator's Scaled Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(145759)),	-- Ferocious Gladiator's Scaled Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145763)),	-- Ferocious Gladiator's Scaled Wristplates (H)
 					}),
 					cl(PRIEST, {
-						un(14, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
-						un(14, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
-						un(14, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
-						un(14, i(145767)),	-- Ferocious Gladiator's Satin Gloves (H)
-						un(14, i(145769)),	-- Ferocious Gladiator's Satin Hood (H)
-						un(14, i(145771)),	-- Ferocious Gladiator's Satin Leggings (H)
-						un(14, i(145775)),	-- Ferocious Gladiator's Satin Mantle (H)
-						un(14, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
-						un(14, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(145637)),	-- Ferocious Gladiator's Drape of Piety (H)
+						un(ELITE_PVP_REQUIREMENT, i(145779)),	-- Ferocious Gladiator's Satin Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145777)),	-- Ferocious Gladiator's Satin Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(145767)),	-- Ferocious Gladiator's Satin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(145769)),	-- Ferocious Gladiator's Satin Hood (H)
+						un(ELITE_PVP_REQUIREMENT, i(145771)),	-- Ferocious Gladiator's Satin Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(145775)),	-- Ferocious Gladiator's Satin Mantle (H)
+						un(ELITE_PVP_REQUIREMENT, i(145773)),	-- Ferocious Gladiator's Satin Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(145765)),	-- Ferocious Gladiator's Satin Treads (H)
 					}),
 					cl(ROGUE, {
-						un(14, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
-						un(14, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
-						un(14, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
-						un(14, i(145795)),	-- Ferocious Gladiator's Leather Legguards (H)
-						un(14, i(145789)),	-- Ferocious Gladiator's Leather Slippers (H)
-						un(14, i(145797)),	-- Ferocious Gladiator's Leather Spaulders (H)
-						un(14, i(145787)),	-- Ferocious Gladiator's Leather Tunic (H)
-						un(14, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
-						un(14, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
+						un(ELITE_PVP_REQUIREMENT, i(145799)),	-- Ferocious Gladiator's Leather Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(145791)),	-- Ferocious Gladiator's Leather Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(145793)),	-- Ferocious Gladiator's Leather Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145795)),	-- Ferocious Gladiator's Leather Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145789)),	-- Ferocious Gladiator's Leather Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145797)),	-- Ferocious Gladiator's Leather Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145787)),	-- Ferocious Gladiator's Leather Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(145801)),	-- Ferocious Gladiator's Leather Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145639)),	-- Ferocious Gladiator's Shadowcape (H)
 					}),
 					cl(SHAMAN, {
-						un(14, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
-						un(14, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
-						un(14, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
-						un(14, i(145815)),	-- Ferocious Gladiator's Ringmail Clasp (H)
-						un(14, i(145807)),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
-						un(14, i(145809)),	-- Ferocious Gladiator's Ringmail Helm (H)
-						un(14, i(145811)),	-- Ferocious Gladiator's Ringmail Kilt (H)
-						un(14, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
-						un(14, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145817)),	-- Ferocious Gladiator's Ringmail Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(145803)),	-- Ferocious Gladiator's Ringmail Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(145805)),	-- Ferocious Gladiator's Ringmail Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(145815)),	-- Ferocious Gladiator's Ringmail Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(145807)),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(145809)),	-- Ferocious Gladiator's Ringmail Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145811)),	-- Ferocious Gladiator's Ringmail Kilt (H)
+						un(ELITE_PVP_REQUIREMENT, i(145813)),	-- Ferocious Gladiator's Ringmail Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145641)),	-- Ferocious Gladiator's Totemic Cloak (H)
 					}),
 					cl(WARLOCK, {
-						un(14, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
-						un(14, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
-						un(14, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
-						un(14, i(145849)),	-- Ferocious Gladiator's Felweave Cord (H)
-						un(14, i(145841)),	-- Ferocious Gladiator's Felweave Cowl (H)
-						un(14, i(145839)),	-- Ferocious Gladiator's Felweave Handguards (H)
-						un(14, i(145845)),	-- Ferocious Gladiator's Felweave Raiment (H)
-						un(14, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
-						un(14, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145847)),	-- Ferocious Gladiator's Felweave Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(145851)),	-- Ferocious Gladiator's Felweave Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(145643)),	-- Ferocious Gladiator's Felweave Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(145849)),	-- Ferocious Gladiator's Felweave Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(145841)),	-- Ferocious Gladiator's Felweave Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(145839)),	-- Ferocious Gladiator's Felweave Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145845)),	-- Ferocious Gladiator's Felweave Raiment (H)
+						un(ELITE_PVP_REQUIREMENT, i(145837)),	-- Ferocious Gladiator's Felweave Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(145843)),	-- Ferocious Gladiator's Felweave Trousers (H)
 					}),
 					cl(WARRIOR, {
-						un(14, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
-						un(14, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
-						un(14, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
-						un(14, i(145865)),	-- Ferocious Gladiator's Plate Girdle (H)
-						un(14, i(145859)),	-- Ferocious Gladiator's Plate Helm (H)
-						un(14, i(145861)),	-- Ferocious Gladiator's Plate Legguards (H)
-						un(14, i(145863)),	-- Ferocious Gladiator's Plate Shoulders (H)
-						un(14, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
-						un(14, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(145645)),	-- Ferocious Gladiator's Cloak of Battle (H)
+						un(ELITE_PVP_REQUIREMENT, i(145853)),	-- Ferocious Gladiator's Plate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(145857)),	-- Ferocious Gladiator's Plate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(145865)),	-- Ferocious Gladiator's Plate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(145859)),	-- Ferocious Gladiator's Plate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(145861)),	-- Ferocious Gladiator's Plate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(145863)),	-- Ferocious Gladiator's Plate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(145855)),	-- Ferocious Gladiator's Plate Warboots (H)
+						un(ELITE_PVP_REQUIREMENT, i(145867)),	-- Ferocious Gladiator's Plate Wristplates (H)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(145743)),	-- Ferocious Gladiator's Necklace (H)
@@ -7946,7 +7946,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -7956,38 +7956,38 @@ _.PVP =
 								{"exclude", "itemID", 149458 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
-								un(14, i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(148191)),	-- Fierce Gladiator's Dreadplate Girdle (A)
-								un(14, i(148185)),	-- Fierce Gladiator's Dreadplate Helm (A)
-								un(14, i(148187)),	-- Fierce Gladiator's Dreadplate Legguards (A)
-								un(14, i(148181)),	-- Fierce Gladiator's Dreadplate Sabatons (A)
-								un(14, i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders (A)
-								un(14, i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates (A)
-								un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
-								un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
-								un(14, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
-								un(14, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle (A)
-								un(14, i(148678)),	-- Dominant Gladiator's Dreadplate Helm (A)
-								un(14, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards (A)
-								un(14, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons (A)
-								un(14, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
-								un(14, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
-								un(14, i(149140)),	-- Demonic Gladiator's Dreadcloak
-								un(14, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
-								un(14, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
-								un(14, i(149176)),	-- Demonic Gladiator's Dreadplate Girdle
-								un(14, i(149170)),	-- Demonic Gladiator's Dreadplate Helm
-								un(14, i(149172)),	-- Demonic Gladiator's Dreadplate Legguards
-								un(14, i(149166)),	-- Demonic Gladiator's Dreadplate Sabatons
-								un(14, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
-								un(14, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148155)),	-- Fierce Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148191)),	-- Fierce Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148185)),	-- Fierce Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148187)),	-- Fierce Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148181)),	-- Fierce Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148678)),	-- Dominant Gladiator's Dreadplate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(149140)),	-- Demonic Gladiator's Dreadcloak
+								un(ELITE_PVP_REQUIREMENT, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
+								un(ELITE_PVP_REQUIREMENT, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149176)),	-- Demonic Gladiator's Dreadplate Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149170)),	-- Demonic Gladiator's Dreadplate Helm
+								un(ELITE_PVP_REQUIREMENT, i(149172)),	-- Demonic Gladiator's Dreadplate Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149166)),	-- Demonic Gladiator's Dreadplate Sabatons
+								un(ELITE_PVP_REQUIREMENT, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
 							},
 						})),
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(149460, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149460, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -7997,38 +7997,38 @@ _.PVP =
 								{"exclude", "itemID", 149460 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
-								un(14, i(148207)),	-- Fierce Gladiator's Felskin Belt (A)
-								un(14, i(148197)),	-- Fierce Gladiator's Felskin Boots (A)
-								un(14, i(148199)),	-- Fierce Gladiator's Felskin Gloves (A)
-								un(14, i(148201)),	-- Fierce Gladiator's Felskin Helm (A)
-								un(14, i(148203)),	-- Fierce Gladiator's Felskin Legguards (A)
-								un(14, i(148205)),	-- Fierce Gladiator's Felskin Spaulders (A)
-								un(14, i(148195)),	-- Fierce Gladiator's Felskin Tunic (A)
-								un(14, i(148209)),	-- Fierce Gladiator's Felskin Wristguards (A)
-								un(14, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
-								un(14, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
-								un(14, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
-								un(14, i(148692)),	-- Dominant Gladiator's Felskin Gloves (A)
-								un(14, i(148694)),	-- Dominant Gladiator's Felskin Helm (A)
-								un(14, i(148696)),	-- Dominant Gladiator's Felskin Legguards (A)
-								un(14, i(148698)),	-- Dominant Gladiator's Felskin Spaulders (A)
-								un(14, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
-								un(14, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
-								un(14, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
-								un(14, i(149192)),	-- Demonic Gladiator's Felskin Belt
-								un(14, i(149182)),	-- Demonic Gladiator's Felskin Boots
-								un(14, i(149184)),	-- Demonic Gladiator's Felskin Gloves
-								un(14, i(149186)),	-- Demonic Gladiator's Felskin Helm
-								un(14, i(149188)),	-- Demonic Gladiator's Felskin Legguards
-								un(14, i(149190)),	-- Demonic Gladiator's Felskin Spaulders
-								un(14, i(149180)),	-- Demonic Gladiator's Felskin Tunic
-								un(14, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148157)),	-- Fierce Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148207)),	-- Fierce Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148197)),	-- Fierce Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148199)),	-- Fierce Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148201)),	-- Fierce Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148203)),	-- Fierce Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148205)),	-- Fierce Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148195)),	-- Fierce Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148209)),	-- Fierce Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148692)),	-- Dominant Gladiator's Felskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148694)),	-- Dominant Gladiator's Felskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148696)),	-- Dominant Gladiator's Felskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148698)),	-- Dominant Gladiator's Felskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149192)),	-- Demonic Gladiator's Felskin Belt
+								un(ELITE_PVP_REQUIREMENT, i(149182)),	-- Demonic Gladiator's Felskin Boots
+								un(ELITE_PVP_REQUIREMENT, i(149184)),	-- Demonic Gladiator's Felskin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149186)),	-- Demonic Gladiator's Felskin Helm
+								un(ELITE_PVP_REQUIREMENT, i(149188)),	-- Demonic Gladiator's Felskin Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149190)),	-- Demonic Gladiator's Felskin Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149180)),	-- Demonic Gladiator's Felskin Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
 							},
 						})),
 					}),
 					cl(DRUID, {
-						un(14, i(149456, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149456, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8038,38 +8038,38 @@ _.PVP =
 								{"exclude", "itemID", 149456 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
-								un(14, i(148159)),	-- Fierce Gladiator's Dragonhide Cloak (A)
-								un(14, i(148215)),	-- Fierce Gladiator's Dragonhide Gloves (A)
-								un(14, i(148217)),	-- Fierce Gladiator's Dragonhide Helm (A)
-								un(14, i(148219)),	-- Fierce Gladiator's Dragonhide Legguards (A)
-								un(14, i(148213)),	-- Fierce Gladiator's Dragonhide Moccasins (A)
-								un(14, i(148221)),	-- Fierce Gladiator's Dragonhide Spaulders (A)
-								un(14, i(148211)),	-- Fierce Gladiator's Dragonhide Vest (A)
-								un(14, i(148225)),	-- Fierce Gladiator's Dragonhide Wristguards (A)
-								un(14, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
-								un(14, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
-								un(14, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
-								un(14, i(148710)),	-- Dominant Gladiator's Dragonhide Helm (A)
-								un(14, i(148712)),	-- Dominant Gladiator's Dragonhide Legguards (A)
-								un(14, i(148706)),	-- Dominant Gladiator's Dragonhide Moccasins (A)
-								un(14, i(148714)),	-- Dominant Gladiator's Dragonhide Spaulders (A)
-								un(14, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
-								un(14, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
-								un(14, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
-								un(14, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
-								un(14, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
-								un(14, i(149202)),	-- Demonic Gladiator's Dragonhide Helm
-								un(14, i(149204)),	-- Demonic Gladiator's Dragonhide Legguards
-								un(14, i(149198)),	-- Demonic Gladiator's Dragonhide Moccasins
-								un(14, i(149206)),	-- Demonic Gladiator's Dragonhide Spaulders
-								un(14, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
-								un(14, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148223)),	-- Fierce Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148159)),	-- Fierce Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148215)),	-- Fierce Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148217)),	-- Fierce Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148219)),	-- Fierce Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148213)),	-- Fierce Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(148221)),	-- Fierce Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148211)),	-- Fierce Gladiator's Dragonhide Vest (A)
+								un(ELITE_PVP_REQUIREMENT, i(148225)),	-- Fierce Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148710)),	-- Dominant Gladiator's Dragonhide Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148712)),	-- Dominant Gladiator's Dragonhide Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148706)),	-- Dominant Gladiator's Dragonhide Moccasins (A)
+								un(ELITE_PVP_REQUIREMENT, i(148714)),	-- Dominant Gladiator's Dragonhide Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
+								un(ELITE_PVP_REQUIREMENT, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
+								un(ELITE_PVP_REQUIREMENT, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149202)),	-- Demonic Gladiator's Dragonhide Helm
+								un(ELITE_PVP_REQUIREMENT, i(149204)),	-- Demonic Gladiator's Dragonhide Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149198)),	-- Demonic Gladiator's Dragonhide Moccasins
+								un(ELITE_PVP_REQUIREMENT, i(149206)),	-- Demonic Gladiator's Dragonhide Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
+								un(ELITE_PVP_REQUIREMENT, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
 							},
 						})),
 					}),
 					cl(HUNTER, {
-						un(14, i(149454, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149454, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8079,38 +8079,38 @@ _.PVP =
 								{"exclude", "itemID", 149454 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
-								un(14, i(148227)),	-- Fierce Gladiator's Chain Armor (A)
-								un(14, i(148239)),	-- Fierce Gladiator's Chain Clasp (A)
-								un(14, i(148231)),	-- Fierce Gladiator's Chain Gauntlets (A)
-								un(14, i(148233)),	-- Fierce Gladiator's Chain Helm (A)
-								un(14, i(148235)),	-- Fierce Gladiator's Chain Leggings (A)
-								un(14, i(148237)),	-- Fierce Gladiator's Chain Spaulders (A)
-								un(14, i(148229)),	-- Fierce Gladiator's Chain Treads (A)
-								un(14, i(148161)),	-- Fierce Gladiator's Drape of the Tracker (A)
-								un(14, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
-								un(14, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
-								un(14, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
-								un(14, i(148732)),	-- Dominant Gladiator's Chain Clasp (A)
-								un(14, i(148724)),	-- Dominant Gladiator's Chain Gauntlets (A)
-								un(14, i(148726)),	-- Dominant Gladiator's Chain Helm (A)
-								un(14, i(148728)),	-- Dominant Gladiator's Chain Leggings (A)
-								un(14, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
-								un(14, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
-								un(14, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
-								un(14, i(149226)),	-- Demonic Gladiator's Chain Armband
-								un(14, i(149212)),	-- Demonic Gladiator's Chain Armor
-								un(14, i(149224)),	-- Demonic Gladiator's Chain Clasp
-								un(14, i(149216)),	-- Demonic Gladiator's Chain Gauntlets
-								un(14, i(149218)),	-- Demonic Gladiator's Chain Helm
-								un(14, i(149220)),	-- Demonic Gladiator's Chain Leggings
-								un(14, i(149222)),	-- Demonic Gladiator's Chain Spaulders
-								un(14, i(149214)),	-- Demonic Gladiator's Chain Treads
+								un(ELITE_PVP_REQUIREMENT, i(148241)),	-- Fierce Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(148227)),	-- Fierce Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(148239)),	-- Fierce Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(148231)),	-- Fierce Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148233)),	-- Fierce Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148235)),	-- Fierce Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148237)),	-- Fierce Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148229)),	-- Fierce Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148161)),	-- Fierce Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
+								un(ELITE_PVP_REQUIREMENT, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(148732)),	-- Dominant Gladiator's Chain Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(148724)),	-- Dominant Gladiator's Chain Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148726)),	-- Dominant Gladiator's Chain Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148728)),	-- Dominant Gladiator's Chain Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
+								un(ELITE_PVP_REQUIREMENT, i(149226)),	-- Demonic Gladiator's Chain Armband
+								un(ELITE_PVP_REQUIREMENT, i(149212)),	-- Demonic Gladiator's Chain Armor
+								un(ELITE_PVP_REQUIREMENT, i(149224)),	-- Demonic Gladiator's Chain Clasp
+								un(ELITE_PVP_REQUIREMENT, i(149216)),	-- Demonic Gladiator's Chain Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149218)),	-- Demonic Gladiator's Chain Helm
+								un(ELITE_PVP_REQUIREMENT, i(149220)),	-- Demonic Gladiator's Chain Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149222)),	-- Demonic Gladiator's Chain Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149214)),	-- Demonic Gladiator's Chain Treads
 							},
 						})),
 					}),
 					cl(MAGE, {
-						un(14, i(149477, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149477, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8120,38 +8120,38 @@ _.PVP =
 								{"exclude", "itemID", 149477 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
-								un(14, i(148257)),	-- Fierce Gladiator's Silk Bracers (A)
-								un(14, i(148255)),	-- Fierce Gladiator's Silk Cord (A)
-								un(14, i(148247)),	-- Fierce Gladiator's Silk Cowl (A)
-								un(14, i(148245)),	-- Fierce Gladiator's Silk Handguards (A)
-								un(14, i(148243)),	-- Fierce Gladiator's Silk Treads (A)
-								un(14, i(148249)),	-- Fierce Gladiator's Silk Trousers (A)
-								un(14, i(148251)),	-- Fierce Gladiator's Silk Tunic (A)
-								un(14, i(148163)),	-- Fierce Gladiator's Silken Shawl (A)
-								un(14, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
-								un(14, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
-								un(14, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
-								un(14, i(148740)),	-- Dominant Gladiator's Silk Cowl (A)
-								un(14, i(148738)),	-- Dominant Gladiator's Silk Handguards (A)
-								un(14, i(148736)),	-- Dominant Gladiator's Silk Treads (A)
-								un(14, i(148742)),	-- Dominant Gladiator's Silk Trousers (A)
-								un(14, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
-								un(14, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
-								un(14, i(149238)),	-- Demonic Gladiator's Silk Amice
-								un(14, i(149242)),	-- Demonic Gladiator's Silk Bracers
-								un(14, i(149240)),	-- Demonic Gladiator's Silk Cord
-								un(14, i(149232)),	-- Demonic Gladiator's Silk Cowl
-								un(14, i(149230)),	-- Demonic Gladiator's Silk Handguards
-								un(14, i(149228)),	-- Demonic Gladiator's Silk Treads
-								un(14, i(149234)),	-- Demonic Gladiator's Silk Trousers
-								un(14, i(149236)),	-- Demonic Gladiator's Silk Tunic
-								un(14, i(149148)),	-- Demonic Gladiator's Silken Shawl
+								un(ELITE_PVP_REQUIREMENT, i(148253)),	-- Fierce Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(148257)),	-- Fierce Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148255)),	-- Fierce Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148247)),	-- Fierce Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(148245)),	-- Fierce Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148243)),	-- Fierce Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148249)),	-- Fierce Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148251)),	-- Fierce Gladiator's Silk Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148163)),	-- Fierce Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148740)),	-- Dominant Gladiator's Silk Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(148738)),	-- Dominant Gladiator's Silk Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148736)),	-- Dominant Gladiator's Silk Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148742)),	-- Dominant Gladiator's Silk Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
+								un(ELITE_PVP_REQUIREMENT, i(149238)),	-- Demonic Gladiator's Silk Amice
+								un(ELITE_PVP_REQUIREMENT, i(149242)),	-- Demonic Gladiator's Silk Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149240)),	-- Demonic Gladiator's Silk Cord
+								un(ELITE_PVP_REQUIREMENT, i(149232)),	-- Demonic Gladiator's Silk Cowl
+								un(ELITE_PVP_REQUIREMENT, i(149230)),	-- Demonic Gladiator's Silk Handguards
+								un(ELITE_PVP_REQUIREMENT, i(149228)),	-- Demonic Gladiator's Silk Treads
+								un(ELITE_PVP_REQUIREMENT, i(149234)),	-- Demonic Gladiator's Silk Trousers
+								un(ELITE_PVP_REQUIREMENT, i(149236)),	-- Demonic Gladiator's Silk Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149148)),	-- Demonic Gladiator's Silken Shawl
 							},
 						})),
 					}),
 					cl(MONK, {
-						un(14, i(149465, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149465, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8161,38 +8161,38 @@ _.PVP =
 								{"exclude", "itemID", 149465 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
-								un(14, i(148165)),	-- Fierce Gladiator's Ironskin Cloak (A)
-								un(14, i(148261)),	-- Fierce Gladiator's Ironskin Gloves (A)
-								un(14, i(148263)),	-- Fierce Gladiator's Ironskin Helm (A)
-								un(14, i(148265)),	-- Fierce Gladiator's Ironskin Legguards (A)
-								un(14, i(148259)),	-- Fierce Gladiator's Ironskin Slippers (A)
-								un(14, i(148267)),	-- Fierce Gladiator's Ironskin Spaulders (A)
-								un(14, i(148269)),	-- Fierce Gladiator's Ironskin Tunic (A)
-								un(14, i(148273)),	-- Fierce Gladiator's Ironskin Wristguards (A)
-								un(14, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
-								un(14, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
-								un(14, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
-								un(14, i(148756)),	-- Dominant Gladiator's Ironskin Helm (A)
-								un(14, i(148758)),	-- Dominant Gladiator's Ironskin Legguards (A)
-								un(14, i(148752)),	-- Dominant Gladiator's Ironskin Slippers (A)
-								un(14, i(148760)),	-- Dominant Gladiator's Ironskin Spaulders (A)
-								un(14, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
-								un(14, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
-								un(14, i(149256)),	-- Demonic Gladiator's Ironskin Belt
-								un(14, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
-								un(14, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
-								un(14, i(149248)),	-- Demonic Gladiator's Ironskin Helm
-								un(14, i(149250)),	-- Demonic Gladiator's Ironskin Legguards
-								un(14, i(149244)),	-- Demonic Gladiator's Ironskin Slippers
-								un(14, i(149252)),	-- Demonic Gladiator's Ironskin Spaulders
-								un(14, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
-								un(14, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148271)),	-- Fierce Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148165)),	-- Fierce Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148261)),	-- Fierce Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148263)),	-- Fierce Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148265)),	-- Fierce Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148259)),	-- Fierce Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148267)),	-- Fierce Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148269)),	-- Fierce Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148273)),	-- Fierce Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148756)),	-- Dominant Gladiator's Ironskin Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148758)),	-- Dominant Gladiator's Ironskin Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148752)),	-- Dominant Gladiator's Ironskin Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148760)),	-- Dominant Gladiator's Ironskin Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(149256)),	-- Demonic Gladiator's Ironskin Belt
+								un(ELITE_PVP_REQUIREMENT, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149248)),	-- Demonic Gladiator's Ironskin Helm
+								un(ELITE_PVP_REQUIREMENT, i(149250)),	-- Demonic Gladiator's Ironskin Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149244)),	-- Demonic Gladiator's Ironskin Slippers
+								un(ELITE_PVP_REQUIREMENT, i(149252)),	-- Demonic Gladiator's Ironskin Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
 							},
 						})),
 					}),
 					cl(PALADIN, {
-						un(14, i(149475, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149475, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8202,38 +8202,38 @@ _.PVP =
 								{"exclude", "itemID", 149475 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
-								un(14, i(148281)),	-- Fierce Gladiator's Scaled Breastplate (A)
-								un(14, i(148285)),	-- Fierce Gladiator's Scaled Gauntlets (A)
-								un(14, i(148293)),	-- Fierce Gladiator's Scaled Girdle (A)
-								un(14, i(148287)),	-- Fierce Gladiator's Scaled Helm (A)
-								un(14, i(148289)),	-- Fierce Gladiator's Scaled Legguards (A)
-								un(14, i(148283)),	-- Fierce Gladiator's Scaled Sabatons (A)
-								un(14, i(148291)),	-- Fierce Gladiator's Scaled Shoulders (A)
-								un(14, i(148295)),	-- Fierce Gladiator's Scaled Wristplates (A)
-								un(14, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
-								un(14, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
-								un(14, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
-								un(14, i(148786)),	-- Dominant Gladiator's Scaled Girdle (A)
-								un(14, i(148780)),	-- Dominant Gladiator's Scaled Helm (A)
-								un(14, i(148782)),	-- Dominant Gladiator's Scaled Legguards (A)
-								un(14, i(148776)),	-- Dominant Gladiator's Scaled Sabatons (A)
-								un(14, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
-								un(14, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
-								un(14, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
-								un(14, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
-								un(14, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
-								un(14, i(149278)),	-- Demonic Gladiator's Scaled Girdle
-								un(14, i(149272)),	-- Demonic Gladiator's Scaled Helm
-								un(14, i(149274)),	-- Demonic Gladiator's Scaled Legguards
-								un(14, i(149268)),	-- Demonic Gladiator's Scaled Sabatons
-								un(14, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
-								un(14, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(148281)),	-- Fierce Gladiator's Scaled Breastplate (A)
+								un(ELITE_PVP_REQUIREMENT, i(148285)),	-- Fierce Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148293)),	-- Fierce Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148287)),	-- Fierce Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148289)),	-- Fierce Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148283)),	-- Fierce Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(148291)),	-- Fierce Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148295)),	-- Fierce Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
+								un(ELITE_PVP_REQUIREMENT, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
+								un(ELITE_PVP_REQUIREMENT, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148786)),	-- Dominant Gladiator's Scaled Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148780)),	-- Dominant Gladiator's Scaled Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148782)),	-- Dominant Gladiator's Scaled Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148776)),	-- Dominant Gladiator's Scaled Sabatons (A)
+								un(ELITE_PVP_REQUIREMENT, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
+								un(ELITE_PVP_REQUIREMENT, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
+								un(ELITE_PVP_REQUIREMENT, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149278)),	-- Demonic Gladiator's Scaled Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149272)),	-- Demonic Gladiator's Scaled Helm
+								un(ELITE_PVP_REQUIREMENT, i(149274)),	-- Demonic Gladiator's Scaled Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149268)),	-- Demonic Gladiator's Scaled Sabatons
+								un(ELITE_PVP_REQUIREMENT, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
 							},
 						})),
 					}),
 					cl(PRIEST, {
-						un(14, i(149473, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149473, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8243,38 +8243,38 @@ _.PVP =
 								{"exclude", "itemID", 149473 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
-								un(14, i(148311)),	-- Fierce Gladiator's Satin Bracers (A)
-								un(14, i(148309)),	-- Fierce Gladiator's Satin Cord (A)
-								un(14, i(148299)),	-- Fierce Gladiator's Satin Gloves (A)
-								un(14, i(148301)),	-- Fierce Gladiator's Satin Hood (A)
-								un(14, i(148303)),	-- Fierce Gladiator's Satin Leggings (A)
-								un(14, i(148307)),	-- Fierce Gladiator's Satin Mantle (A)
-								un(14, i(148305)),	-- Fierce Gladiator's Satin Robe (A)
-								un(14, i(148297)),	-- Fierce Gladiator's Satin Treads (A)
-								un(14, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
-								un(14, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
-								un(14, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
-								un(14, i(148792)),	-- Dominant Gladiator's Satin Gloves (A)
-								un(14, i(148794)),	-- Dominant Gladiator's Satin Hood (A)
-								un(14, i(148796)),	-- Dominant Gladiator's Satin Leggings (A)
-								un(14, i(148800)),	-- Dominant Gladiator's Satin Mantle (A)
-								un(14, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
-								un(14, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
-								un(14, i(149154)),	-- Demonic Gladiator's Drape of Piety
-								un(14, i(149296)),	-- Demonic Gladiator's Satin Bracers
-								un(14, i(149294)),	-- Demonic Gladiator's Satin Cord
-								un(14, i(149284)),	-- Demonic Gladiator's Satin Gloves
-								un(14, i(149286)),	-- Demonic Gladiator's Satin Hood
-								un(14, i(149288)),	-- Demonic Gladiator's Satin Leggings
-								un(14, i(149292)),	-- Demonic Gladiator's Satin Mantle
-								un(14, i(149290)),	-- Demonic Gladiator's Satin Robe
-								un(14, i(149282)),	-- Demonic Gladiator's Satin Treads
+								un(ELITE_PVP_REQUIREMENT, i(148169)),	-- Fierce Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(148311)),	-- Fierce Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148309)),	-- Fierce Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148299)),	-- Fierce Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148301)),	-- Fierce Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(148303)),	-- Fierce Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148307)),	-- Fierce Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148305)),	-- Fierce Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(148297)),	-- Fierce Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
+								un(ELITE_PVP_REQUIREMENT, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148792)),	-- Dominant Gladiator's Satin Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148794)),	-- Dominant Gladiator's Satin Hood (A)
+								un(ELITE_PVP_REQUIREMENT, i(148796)),	-- Dominant Gladiator's Satin Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148800)),	-- Dominant Gladiator's Satin Mantle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
+								un(ELITE_PVP_REQUIREMENT, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(149154)),	-- Demonic Gladiator's Drape of Piety
+								un(ELITE_PVP_REQUIREMENT, i(149296)),	-- Demonic Gladiator's Satin Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149294)),	-- Demonic Gladiator's Satin Cord
+								un(ELITE_PVP_REQUIREMENT, i(149284)),	-- Demonic Gladiator's Satin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149286)),	-- Demonic Gladiator's Satin Hood
+								un(ELITE_PVP_REQUIREMENT, i(149288)),	-- Demonic Gladiator's Satin Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149292)),	-- Demonic Gladiator's Satin Mantle
+								un(ELITE_PVP_REQUIREMENT, i(149290)),	-- Demonic Gladiator's Satin Robe
+								un(ELITE_PVP_REQUIREMENT, i(149282)),	-- Demonic Gladiator's Satin Treads
 							},
 						})),
 					}),
 					cl(ROGUE, {
-						un(14, i(149467, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149467, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8284,38 +8284,38 @@ _.PVP =
 								{"exclude", "itemID", 149467 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
-								un(14, i(148323)),	-- Fierce Gladiator's Leather Gloves (A)
-								un(14, i(148325)),	-- Fierce Gladiator's Leather Helm (A)
-								un(14, i(148327)),	-- Fierce Gladiator's Leather Legguards (A)
-								un(14, i(148321)),	-- Fierce Gladiator's Leather Slippers (A)
-								un(14, i(148329)),	-- Fierce Gladiator's Leather Spaulders (A)
-								un(14, i(148319)),	-- Fierce Gladiator's Leather Tunic (A)
-								un(14, i(148333)),	-- Fierce Gladiator's Leather Wristguards (A)
-								un(14, i(148171)),	-- Fierce Gladiator's Shadowcape (A)
-								un(14, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
-								un(14, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
-								un(14, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
-								un(14, i(148820)),	-- Dominant Gladiator's Leather Legguards (A)
-								un(14, i(148814)),	-- Dominant Gladiator's Leather Slippers (A)
-								un(14, i(148822)),	-- Dominant Gladiator's Leather Spaulders (A)
-								un(14, i(148812)),	-- Dominant Gladiator's Leather Tunic (A)
-								un(14, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
-								un(14, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
-								un(14, i(149316)),	-- Demonic Gladiator's Leather Belt
-								un(14, i(149308)),	-- Demonic Gladiator's Leather Gloves
-								un(14, i(149310)),	-- Demonic Gladiator's Leather Helm
-								un(14, i(149312)),	-- Demonic Gladiator's Leather Legguards
-								un(14, i(149306)),	-- Demonic Gladiator's Leather Slippers
-								un(14, i(149314)),	-- Demonic Gladiator's Leather Spaulders
-								un(14, i(149304)),	-- Demonic Gladiator's Leather Tunic
-								un(14, i(149318)),	-- Demonic Gladiator's Leather Wristguards
-								un(14, i(149156)),	-- Demonic Gladiator's Shadowcape
+								un(ELITE_PVP_REQUIREMENT, i(148331)),	-- Fierce Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148323)),	-- Fierce Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148325)),	-- Fierce Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148327)),	-- Fierce Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148321)),	-- Fierce Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148329)),	-- Fierce Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148319)),	-- Fierce Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148333)),	-- Fierce Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148171)),	-- Fierce Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
+								un(ELITE_PVP_REQUIREMENT, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
+								un(ELITE_PVP_REQUIREMENT, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148820)),	-- Dominant Gladiator's Leather Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148814)),	-- Dominant Gladiator's Leather Slippers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148822)),	-- Dominant Gladiator's Leather Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148812)),	-- Dominant Gladiator's Leather Tunic (A)
+								un(ELITE_PVP_REQUIREMENT, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
+								un(ELITE_PVP_REQUIREMENT, i(149316)),	-- Demonic Gladiator's Leather Belt
+								un(ELITE_PVP_REQUIREMENT, i(149308)),	-- Demonic Gladiator's Leather Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149310)),	-- Demonic Gladiator's Leather Helm
+								un(ELITE_PVP_REQUIREMENT, i(149312)),	-- Demonic Gladiator's Leather Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149306)),	-- Demonic Gladiator's Leather Slippers
+								un(ELITE_PVP_REQUIREMENT, i(149314)),	-- Demonic Gladiator's Leather Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149304)),	-- Demonic Gladiator's Leather Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149318)),	-- Demonic Gladiator's Leather Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(149156)),	-- Demonic Gladiator's Shadowcape
 							},
 						})),
 					}),
 					cl(SHAMAN, {
-						un(14, i(149470, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149470, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8325,38 +8325,38 @@ _.PVP =
 								{"exclude", "itemID", 149470 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
-								un(14, i(148335)),	-- Fierce Gladiator's Ringmail Armor (A)
-								un(14, i(148337)),	-- Fierce Gladiator's Ringmail Boots (A)
-								un(14, i(148347)),	-- Fierce Gladiator's Ringmail Clasp (A)
-								un(14, i(148339)),	-- Fierce Gladiator's Ringmail Gauntlets (A)
-								un(14, i(148341)),	-- Fierce Gladiator's Ringmail Helm (A)
-								un(14, i(148343)),	-- Fierce Gladiator's Ringmail Leggings (A)
-								un(14, i(148345)),	-- Fierce Gladiator's Ringmail Spaulders (A)
-								un(14, i(148173)),	-- Fierce Gladiator's Totemic Cloak (A)
-								un(14, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
-								un(14, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
-								un(14, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
-								un(14, i(148840)),	-- Dominant Gladiator's Ringmail Clasp (A)
-								un(14, i(148832)),	-- Dominant Gladiator's Ringmail Gauntlets (A)
-								un(14, i(148834)),	-- Dominant Gladiator's Ringmail Helm (A)
-								un(14, i(148836)),	-- Dominant Gladiator's Ringmail Leggings (A)
-								un(14, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
-								un(14, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
-								un(14, i(149334)),	-- Demonic Gladiator's Ringmail Armband
-								un(14, i(149320)),	-- Demonic Gladiator's Ringmail Armor
-								un(14, i(149322)),	-- Demonic Gladiator's Ringmail Boots
-								un(14, i(149332)),	-- Demonic Gladiator's Ringmail Clasp
-								un(14, i(149324)),	-- Demonic Gladiator's Ringmail Gauntlets
-								un(14, i(149326)),	-- Demonic Gladiator's Ringmail Helm
-								un(14, i(149328)),	-- Demonic Gladiator's Ringmail Leggings
-								un(14, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
-								un(14, i(149158)),	-- Demonic Gladiator's Totemic Cloak
+								un(ELITE_PVP_REQUIREMENT, i(148349)),	-- Fierce Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(148335)),	-- Fierce Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(148337)),	-- Fierce Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148347)),	-- Fierce Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(148339)),	-- Fierce Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148341)),	-- Fierce Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148343)),	-- Fierce Gladiator's Ringmail Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148345)),	-- Fierce Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148173)),	-- Fierce Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
+								un(ELITE_PVP_REQUIREMENT, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
+								un(ELITE_PVP_REQUIREMENT, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148840)),	-- Dominant Gladiator's Ringmail Clasp (A)
+								un(ELITE_PVP_REQUIREMENT, i(148832)),	-- Dominant Gladiator's Ringmail Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148834)),	-- Dominant Gladiator's Ringmail Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148836)),	-- Dominant Gladiator's Ringmail Leggings (A)
+								un(ELITE_PVP_REQUIREMENT, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(149334)),	-- Demonic Gladiator's Ringmail Armband
+								un(ELITE_PVP_REQUIREMENT, i(149320)),	-- Demonic Gladiator's Ringmail Armor
+								un(ELITE_PVP_REQUIREMENT, i(149322)),	-- Demonic Gladiator's Ringmail Boots
+								un(ELITE_PVP_REQUIREMENT, i(149332)),	-- Demonic Gladiator's Ringmail Clasp
+								un(ELITE_PVP_REQUIREMENT, i(149324)),	-- Demonic Gladiator's Ringmail Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149326)),	-- Demonic Gladiator's Ringmail Helm
+								un(ELITE_PVP_REQUIREMENT, i(149328)),	-- Demonic Gladiator's Ringmail Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149158)),	-- Demonic Gladiator's Totemic Cloak
 							},
 						})),
 					}),
 					cl(WARLOCK, {
-						un(14, i(149462, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149462, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8366,38 +8366,38 @@ _.PVP =
 								{"exclude", "itemID", 149462 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
-								un(14, i(148383)),	-- Fierce Gladiator's Felweave Bracers (A)
-								un(14, i(148175)),	-- Fierce Gladiator's Felweave Cloak (A)
-								un(14, i(148381)),	-- Fierce Gladiator's Felweave Cord (A)
-								un(14, i(148373)),	-- Fierce Gladiator's Felweave Cowl (A)
-								un(14, i(148371)),	-- Fierce Gladiator's Felweave Handguards (A)
-								un(14, i(148377)),	-- Fierce Gladiator's Felweave Raiment (A)
-								un(14, i(148369)),	-- Fierce Gladiator's Felweave Treads (A)
-								un(14, i(148375)),	-- Fierce Gladiator's Felweave Trousers (A)
-								un(14, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
-								un(14, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
-								un(14, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
-								un(14, i(148874)),	-- Dominant Gladiator's Felweave Cord (A)
-								un(14, i(148866)),	-- Dominant Gladiator's Felweave Cowl (A)
-								un(14, i(148864)),	-- Dominant Gladiator's Felweave Handguards (A)
-								un(14, i(148870)),	-- Dominant Gladiator's Felweave Raiment (A)
-								un(14, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
-								un(14, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
-								un(14, i(149364)),	-- Demonic Gladiator's Felweave Amice
-								un(14, i(149368)),	-- Demonic Gladiator's Felweave Bracers
-								un(14, i(149160)),	-- Demonic Gladiator's Felweave Cloak
-								un(14, i(149366)),	-- Demonic Gladiator's Felweave Cord
-								un(14, i(149358)),	-- Demonic Gladiator's Felweave Cowl
-								un(14, i(149356)),	-- Demonic Gladiator's Felweave Handguards
-								un(14, i(149362)),	-- Demonic Gladiator's Felweave Raiment
-								un(14, i(149354)),	-- Demonic Gladiator's Felweave Treads
-								un(14, i(149360)),	-- Demonic Gladiator's Felweave Trousers
+								un(ELITE_PVP_REQUIREMENT, i(148379)),	-- Fierce Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(148383)),	-- Fierce Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148175)),	-- Fierce Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148381)),	-- Fierce Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148373)),	-- Fierce Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(148371)),	-- Fierce Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148377)),	-- Fierce Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(148369)),	-- Fierce Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148375)),	-- Fierce Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
+								un(ELITE_PVP_REQUIREMENT, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
+								un(ELITE_PVP_REQUIREMENT, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
+								un(ELITE_PVP_REQUIREMENT, i(148874)),	-- Dominant Gladiator's Felweave Cord (A)
+								un(ELITE_PVP_REQUIREMENT, i(148866)),	-- Dominant Gladiator's Felweave Cowl (A)
+								un(ELITE_PVP_REQUIREMENT, i(148864)),	-- Dominant Gladiator's Felweave Handguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148870)),	-- Dominant Gladiator's Felweave Raiment (A)
+								un(ELITE_PVP_REQUIREMENT, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
+								un(ELITE_PVP_REQUIREMENT, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
+								un(ELITE_PVP_REQUIREMENT, i(149364)),	-- Demonic Gladiator's Felweave Amice
+								un(ELITE_PVP_REQUIREMENT, i(149368)),	-- Demonic Gladiator's Felweave Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149160)),	-- Demonic Gladiator's Felweave Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149366)),	-- Demonic Gladiator's Felweave Cord
+								un(ELITE_PVP_REQUIREMENT, i(149358)),	-- Demonic Gladiator's Felweave Cowl
+								un(ELITE_PVP_REQUIREMENT, i(149356)),	-- Demonic Gladiator's Felweave Handguards
+								un(ELITE_PVP_REQUIREMENT, i(149362)),	-- Demonic Gladiator's Felweave Raiment
+								un(ELITE_PVP_REQUIREMENT, i(149354)),	-- Demonic Gladiator's Felweave Treads
+								un(ELITE_PVP_REQUIREMENT, i(149360)),	-- Demonic Gladiator's Felweave Trousers
 							},
 						})),
 					}),
 					cl(WARRIOR, {
-						un(14, i(149469, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(149469, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -8407,33 +8407,33 @@ _.PVP =
 								{"exclude", "itemID", 149469 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
-								un(14, i(148385)),	-- Fierce Gladiator's Plate Chestpiece (A)
-								un(14, i(148389)),	-- Fierce Gladiator's Plate Gauntlets (A)
-								un(14, i(148397)),	-- Fierce Gladiator's Plate Girdle (A)
-								un(14, i(148391)),	-- Fierce Gladiator's Plate Helm (A)
-								un(14, i(148393)),	-- Fierce Gladiator's Plate Legguards (A)
-								un(14, i(148395)),	-- Fierce Gladiator's Plate Shoulders (A)
-								un(14, i(148387)),	-- Fierce Gladiator's Plate Warboots (A)
-								un(14, i(148399)),	-- Fierce Gladiator's Plate Wristplates (A)
-								un(14, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
-								un(14, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
-								un(14, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
-								un(14, i(148890)),	-- Dominant Gladiator's Plate Girdle (A)
-								un(14, i(148884)),	-- Dominant Gladiator's Plate Helm (A)
-								un(14, i(148886)),	-- Dominant Gladiator's Plate Legguards (A)
-								un(14, i(148888)),	-- Dominant Gladiator's Plate Shoulders (A)
-								un(14, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
-								un(14, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
-								un(14, i(149162)),	-- Demonic Gladiator's Cloak of Battle
-								un(14, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
-								un(14, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
-								un(14, i(149382)),	-- Demonic Gladiator's Plate Girdle
-								un(14, i(149376)),	-- Demonic Gladiator's Plate Helm
-								un(14, i(149378)),	-- Demonic Gladiator's Plate Legguards
-								un(14, i(149380)),	-- Demonic Gladiator's Plate Shoulders
-								un(14, i(149372)),	-- Demonic Gladiator's Plate Warboots
-								un(14, i(149384)),	-- Demonic Gladiator's Plate Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148177)),	-- Fierce Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148385)),	-- Fierce Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(148389)),	-- Fierce Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148397)),	-- Fierce Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148391)),	-- Fierce Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148393)),	-- Fierce Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148395)),	-- Fierce Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148387)),	-- Fierce Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148399)),	-- Fierce Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
+								un(ELITE_PVP_REQUIREMENT, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
+								un(ELITE_PVP_REQUIREMENT, i(148890)),	-- Dominant Gladiator's Plate Girdle (A)
+								un(ELITE_PVP_REQUIREMENT, i(148884)),	-- Dominant Gladiator's Plate Helm (A)
+								un(ELITE_PVP_REQUIREMENT, i(148886)),	-- Dominant Gladiator's Plate Legguards (A)
+								un(ELITE_PVP_REQUIREMENT, i(148888)),	-- Dominant Gladiator's Plate Shoulders (A)
+								un(ELITE_PVP_REQUIREMENT, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
+								un(ELITE_PVP_REQUIREMENT, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
+								un(ELITE_PVP_REQUIREMENT, i(149162)),	-- Demonic Gladiator's Cloak of Battle
+								un(ELITE_PVP_REQUIREMENT, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
+								un(ELITE_PVP_REQUIREMENT, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149382)),	-- Demonic Gladiator's Plate Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149376)),	-- Demonic Gladiator's Plate Helm
+								un(ELITE_PVP_REQUIREMENT, i(149378)),	-- Demonic Gladiator's Plate Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149380)),	-- Demonic Gladiator's Plate Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149372)),	-- Demonic Gladiator's Plate Warboots
+								un(ELITE_PVP_REQUIREMENT, i(149384)),	-- Demonic Gladiator's Plate Wristplates
 							},
 						})),
 					}),
@@ -9537,33 +9537,33 @@ _.PVP =
 								{"exclude", "itemID", 149459 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
-								un(14, i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(148192)),	-- Fierce Gladiator's Dreadplate Girdle (H)
-								un(14, i(148186)),	-- Fierce Gladiator's Dreadplate Helm (H)
-								un(14, i(148188)),	-- Fierce Gladiator's Dreadplate Legguards (H)
-								un(14, i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons (H)
-								un(14, i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders (H)
-								un(14, i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates (H)
-								un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
-								un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
-								un(14, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
-								un(14, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle (H)
-								un(14, i(148679)),	-- Dominant Gladiator's Dreadplate Helm (H)
-								un(14, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards (H)
-								un(14, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons (H)
-								un(14, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
-								un(14, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
-								un(14, i(149141)),	-- Demonic Gladiator's Dreadcloak
-								un(14, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
-								un(14, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
-								un(14, i(149177)),	-- Demonic Gladiator's Dreadplate Girdle
-								un(14, i(149171)),	-- Demonic Gladiator's Dreadplate Helm
-								un(14, i(149173)),	-- Demonic Gladiator's Dreadplate Legguards
-								un(14, i(149167)),	-- Demonic Gladiator's Dreadplate Sabatons
-								un(14, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
-								un(14, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148156)),	-- Fierce Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148192)),	-- Fierce Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148186)),	-- Fierce Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148188)),	-- Fierce Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148679)),	-- Dominant Gladiator's Dreadplate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(149141)),	-- Demonic Gladiator's Dreadcloak
+								un(ELITE_PVP_REQUIREMENT, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
+								un(ELITE_PVP_REQUIREMENT, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149177)),	-- Demonic Gladiator's Dreadplate Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149171)),	-- Demonic Gladiator's Dreadplate Helm
+								un(ELITE_PVP_REQUIREMENT, i(149173)),	-- Demonic Gladiator's Dreadplate Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149167)),	-- Demonic Gladiator's Dreadplate Sabatons
+								un(ELITE_PVP_REQUIREMENT, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
 							},
 						}),
 					}),
@@ -9578,33 +9578,33 @@ _.PVP =
 								{"exclude", "itemID", 149461 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
-								un(14, i(148208)),	-- Fierce Gladiator's Felskin Belt (H)
-								un(14, i(148198)),	-- Fierce Gladiator's Felskin Boots (H)
-								un(14, i(148200)),	-- Fierce Gladiator's Felskin Gloves (H)
-								un(14, i(148202)),	-- Fierce Gladiator's Felskin Helm (H)
-								un(14, i(148204)),	-- Fierce Gladiator's Felskin Legguards (H)
-								un(14, i(148206)),	-- Fierce Gladiator's Felskin Spaulders (H)
-								un(14, i(148196)),	-- Fierce Gladiator's Felskin Tunic (H)
-								un(14, i(148210)),	-- Fierce Gladiator's Felskin Wristguards (H)
-								un(14, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
-								un(14, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
-								un(14, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
-								un(14, i(148693)),	-- Dominant Gladiator's Felskin Gloves (H)
-								un(14, i(148695)),	-- Dominant Gladiator's Felskin Helm (H)
-								un(14, i(148697)),	-- Dominant Gladiator's Felskin Legguards (H)
-								un(14, i(148699)),	-- Dominant Gladiator's Felskin Spaulders (H)
-								un(14, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
-								un(14, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
-								un(14, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
-								un(14, i(149193)),	-- Demonic Gladiator's Felskin Belt
-								un(14, i(149183)),	-- Demonic Gladiator's Felskin Boots
-								un(14, i(149185)),	-- Demonic Gladiator's Felskin Gloves
-								un(14, i(149187)),	-- Demonic Gladiator's Felskin Helm
-								un(14, i(149189)),	-- Demonic Gladiator's Felskin Legguards
-								un(14, i(149191)),	-- Demonic Gladiator's Felskin Spaulders
-								un(14, i(149181)),	-- Demonic Gladiator's Felskin Tunic
-								un(14, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148158)),	-- Fierce Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148208)),	-- Fierce Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148198)),	-- Fierce Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148200)),	-- Fierce Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148202)),	-- Fierce Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148204)),	-- Fierce Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148206)),	-- Fierce Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148196)),	-- Fierce Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148210)),	-- Fierce Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148693)),	-- Dominant Gladiator's Felskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148695)),	-- Dominant Gladiator's Felskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148697)),	-- Dominant Gladiator's Felskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148699)),	-- Dominant Gladiator's Felskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149193)),	-- Demonic Gladiator's Felskin Belt
+								un(ELITE_PVP_REQUIREMENT, i(149183)),	-- Demonic Gladiator's Felskin Boots
+								un(ELITE_PVP_REQUIREMENT, i(149185)),	-- Demonic Gladiator's Felskin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149187)),	-- Demonic Gladiator's Felskin Helm
+								un(ELITE_PVP_REQUIREMENT, i(149189)),	-- Demonic Gladiator's Felskin Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149191)),	-- Demonic Gladiator's Felskin Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149181)),	-- Demonic Gladiator's Felskin Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
 							},
 						}),
 					}),
@@ -9619,33 +9619,33 @@ _.PVP =
 								{"exclude", "itemID", 149457 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
-								un(14, i(148160)),	-- Fierce Gladiator's Dragonhide Cloak (H)
-								un(14, i(148216)),	-- Fierce Gladiator's Dragonhide Gloves (H)
-								un(14, i(148218)),	-- Fierce Gladiator's Dragonhide Helm (H)
-								un(14, i(148220)),	-- Fierce Gladiator's Dragonhide Legguards (H)
-								un(14, i(148214)),	-- Fierce Gladiator's Dragonhide Moccasins (H)
-								un(14, i(148222)),	-- Fierce Gladiator's Dragonhide Spaulders (H)
-								un(14, i(148212)),	-- Fierce Gladiator's Dragonhide Vest (H)
-								un(14, i(148226)),	-- Fierce Gladiator's Dragonhide Wristguards (H)
-								un(14, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
-								un(14, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
-								un(14, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
-								un(14, i(148711)),	-- Dominant Gladiator's Dragonhide Helm (H)
-								un(14, i(148713)),	-- Dominant Gladiator's Dragonhide Legguards (H)
-								un(14, i(148707)),	-- Dominant Gladiator's Dragonhide Moccasins (H)
-								un(14, i(148715)),	-- Dominant Gladiator's Dragonhide Spaulders (H)
-								un(14, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
-								un(14, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
-								un(14, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
-								un(14, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
-								un(14, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
-								un(14, i(149203)),	-- Demonic Gladiator's Dragonhide Helm
-								un(14, i(149205)),	-- Demonic Gladiator's Dragonhide Legguards
-								un(14, i(149199)),	-- Demonic Gladiator's Dragonhide Moccasins
-								un(14, i(149207)),	-- Demonic Gladiator's Dragonhide Spaulders
-								un(14, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
-								un(14, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148224)),	-- Fierce Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148160)),	-- Fierce Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148216)),	-- Fierce Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148218)),	-- Fierce Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148220)),	-- Fierce Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148214)),	-- Fierce Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(148222)),	-- Fierce Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148212)),	-- Fierce Gladiator's Dragonhide Vest (H)
+								un(ELITE_PVP_REQUIREMENT, i(148226)),	-- Fierce Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148711)),	-- Dominant Gladiator's Dragonhide Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148713)),	-- Dominant Gladiator's Dragonhide Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148707)),	-- Dominant Gladiator's Dragonhide Moccasins (H)
+								un(ELITE_PVP_REQUIREMENT, i(148715)),	-- Dominant Gladiator's Dragonhide Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
+								un(ELITE_PVP_REQUIREMENT, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
+								un(ELITE_PVP_REQUIREMENT, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149203)),	-- Demonic Gladiator's Dragonhide Helm
+								un(ELITE_PVP_REQUIREMENT, i(149205)),	-- Demonic Gladiator's Dragonhide Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149199)),	-- Demonic Gladiator's Dragonhide Moccasins
+								un(ELITE_PVP_REQUIREMENT, i(149207)),	-- Demonic Gladiator's Dragonhide Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
+								un(ELITE_PVP_REQUIREMENT, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
 							},
 						}),
 					}),
@@ -9660,33 +9660,33 @@ _.PVP =
 								{"exclude", "itemID", 149455 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
-								un(14, i(148228)),	-- Fierce Gladiator's Chain Armor (H)
-								un(14, i(148240)),	-- Fierce Gladiator's Chain Clasp (H)
-								un(14, i(148232)),	-- Fierce Gladiator's Chain Gauntlets (H)
-								un(14, i(148234)),	-- Fierce Gladiator's Chain Helm (H)
-								un(14, i(148236)),	-- Fierce Gladiator's Chain Leggings (H)
-								un(14, i(148238)),	-- Fierce Gladiator's Chain Spaulders (H)
-								un(14, i(148230)),	-- Fierce Gladiator's Chain Treads (H)
-								un(14, i(148162)),	-- Fierce Gladiator's Drape of the Tracker (H)
-								un(14, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
-								un(14, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
-								un(14, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
-								un(14, i(148725)),	-- Dominant Gladiator's Chain Gauntlets (H)
-								un(14, i(148727)),	-- Dominant Gladiator's Chain Helm (H)
-								un(14, i(148729)),	-- Dominant Gladiator's Chain Leggings (H)
-								un(14, i(148731)),	-- Dominant Gladiator's Chain Spaulders (H)
-								un(14, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
-								un(14, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
-								un(14, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
-								un(14, i(149227)),	-- Demonic Gladiator's Chain Armband
-								un(14, i(149213)),	-- Demonic Gladiator's Chain Armor
-								un(14, i(149225)),	-- Demonic Gladiator's Chain Clasp
-								un(14, i(149217)),	-- Demonic Gladiator's Chain Gauntlets
-								un(14, i(149219)),	-- Demonic Gladiator's Chain Helm
-								un(14, i(149221)),	-- Demonic Gladiator's Chain Leggings
-								un(14, i(149223)),	-- Demonic Gladiator's Chain Spaulders
-								un(14, i(149215)),	-- Demonic Gladiator's Chain Treads
+								un(ELITE_PVP_REQUIREMENT, i(148242)),	-- Fierce Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(148228)),	-- Fierce Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(148240)),	-- Fierce Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(148232)),	-- Fierce Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148234)),	-- Fierce Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148236)),	-- Fierce Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148238)),	-- Fierce Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148230)),	-- Fierce Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148162)),	-- Fierce Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(148725)),	-- Dominant Gladiator's Chain Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148727)),	-- Dominant Gladiator's Chain Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148729)),	-- Dominant Gladiator's Chain Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148731)),	-- Dominant Gladiator's Chain Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
+								un(ELITE_PVP_REQUIREMENT, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
+								un(ELITE_PVP_REQUIREMENT, i(149227)),	-- Demonic Gladiator's Chain Armband
+								un(ELITE_PVP_REQUIREMENT, i(149213)),	-- Demonic Gladiator's Chain Armor
+								un(ELITE_PVP_REQUIREMENT, i(149225)),	-- Demonic Gladiator's Chain Clasp
+								un(ELITE_PVP_REQUIREMENT, i(149217)),	-- Demonic Gladiator's Chain Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149219)),	-- Demonic Gladiator's Chain Helm
+								un(ELITE_PVP_REQUIREMENT, i(149221)),	-- Demonic Gladiator's Chain Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149223)),	-- Demonic Gladiator's Chain Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149215)),	-- Demonic Gladiator's Chain Treads
 							},
 						}),
 					}),
@@ -9701,33 +9701,33 @@ _.PVP =
 								{"exclude", "itemID", 149476 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
-								un(14, i(148258)),	-- Fierce Gladiator's Silk Bracers (H)
-								un(14, i(148256)),	-- Fierce Gladiator's Silk Cord (H)
-								un(14, i(148248)),	-- Fierce Gladiator's Silk Cowl (H)
-								un(14, i(148246)),	-- Fierce Gladiator's Silk Handguards (H)
-								un(14, i(148244)),	-- Fierce Gladiator's Silk Treads (H)
-								un(14, i(148250)),	-- Fierce Gladiator's Silk Trousers (H)
-								un(14, i(148252)),	-- Fierce Gladiator's Silk Tunic (H)
-								un(14, i(148164)),	-- Fierce Gladiator's Silken Shawl (H)
-								un(14, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
-								un(14, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
-								un(14, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
-								un(14, i(148741)),	-- Dominant Gladiator's Silk Cowl (H)
-								un(14, i(148739)),	-- Dominant Gladiator's Silk Handguards (H)
-								un(14, i(148737)),	-- Dominant Gladiator's Silk Treads (H)
-								un(14, i(148743)),	-- Dominant Gladiator's Silk Trousers (H)
-								un(14, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
-								un(14, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
-								un(14, i(149239)),	-- Demonic Gladiator's Silk Amice
-								un(14, i(149243)),	-- Demonic Gladiator's Silk Bracers
-								un(14, i(149241)),	-- Demonic Gladiator's Silk Cord
-								un(14, i(149233)),	-- Demonic Gladiator's Silk Cowl
-								un(14, i(149231)),	-- Demonic Gladiator's Silk Handguards
-								un(14, i(149229)),	-- Demonic Gladiator's Silk Treads
-								un(14, i(149235)),	-- Demonic Gladiator's Silk Trousers
-								un(14, i(149237)),	-- Demonic Gladiator's Silk Tunic
-								un(14, i(149149)),	-- Demonic Gladiator's Silken Shawl
+								un(ELITE_PVP_REQUIREMENT, i(148254)),	-- Fierce Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(148258)),	-- Fierce Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148256)),	-- Fierce Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148248)),	-- Fierce Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(148246)),	-- Fierce Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148244)),	-- Fierce Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148250)),	-- Fierce Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148252)),	-- Fierce Gladiator's Silk Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148164)),	-- Fierce Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148741)),	-- Dominant Gladiator's Silk Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(148739)),	-- Dominant Gladiator's Silk Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148737)),	-- Dominant Gladiator's Silk Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148743)),	-- Dominant Gladiator's Silk Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
+								un(ELITE_PVP_REQUIREMENT, i(149239)),	-- Demonic Gladiator's Silk Amice
+								un(ELITE_PVP_REQUIREMENT, i(149243)),	-- Demonic Gladiator's Silk Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149241)),	-- Demonic Gladiator's Silk Cord
+								un(ELITE_PVP_REQUIREMENT, i(149233)),	-- Demonic Gladiator's Silk Cowl
+								un(ELITE_PVP_REQUIREMENT, i(149231)),	-- Demonic Gladiator's Silk Handguards
+								un(ELITE_PVP_REQUIREMENT, i(149229)),	-- Demonic Gladiator's Silk Treads
+								un(ELITE_PVP_REQUIREMENT, i(149235)),	-- Demonic Gladiator's Silk Trousers
+								un(ELITE_PVP_REQUIREMENT, i(149237)),	-- Demonic Gladiator's Silk Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149149)),	-- Demonic Gladiator's Silken Shawl
 							},
 						}),
 					}),
@@ -9742,33 +9742,33 @@ _.PVP =
 								{"exclude", "itemID", 149464 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
-								un(14, i(148166)),	-- Fierce Gladiator's Ironskin Cloak (H)
-								un(14, i(148262)),	-- Fierce Gladiator's Ironskin Gloves (H)
-								un(14, i(148264)),	-- Fierce Gladiator's Ironskin Helm (H)
-								un(14, i(148266)),	-- Fierce Gladiator's Ironskin Legguards (H)
-								un(14, i(148260)),	-- Fierce Gladiator's Ironskin Slippers (H)
-								un(14, i(148268)),	-- Fierce Gladiator's Ironskin Spaulders (H)
-								un(14, i(148270)),	-- Fierce Gladiator's Ironskin Tunic (H)
-								un(14, i(148274)),	-- Fierce Gladiator's Ironskin Wristguards (H)
-								un(14, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
-								un(14, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
-								un(14, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
-								un(14, i(148757)),	-- Dominant Gladiator's Ironskin Helm (H)
-								un(14, i(148759)),	-- Dominant Gladiator's Ironskin Legguards (H)
-								un(14, i(148753)),	-- Dominant Gladiator's Ironskin Slippers (H)
-								un(14, i(148761)),	-- Dominant Gladiator's Ironskin Spaulders (H)
-								un(14, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
-								un(14, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
-								un(14, i(149257)),	-- Demonic Gladiator's Ironskin Belt
-								un(14, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
-								un(14, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
-								un(14, i(149249)),	-- Demonic Gladiator's Ironskin Helm
-								un(14, i(149251)),	-- Demonic Gladiator's Ironskin Legguards
-								un(14, i(149245)),	-- Demonic Gladiator's Ironskin Slippers
-								un(14, i(149253)),	-- Demonic Gladiator's Ironskin Spaulders
-								un(14, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
-								un(14, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(148272)),	-- Fierce Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148166)),	-- Fierce Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148262)),	-- Fierce Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148264)),	-- Fierce Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148266)),	-- Fierce Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148260)),	-- Fierce Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148268)),	-- Fierce Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148270)),	-- Fierce Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148274)),	-- Fierce Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148757)),	-- Dominant Gladiator's Ironskin Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148759)),	-- Dominant Gladiator's Ironskin Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148753)),	-- Dominant Gladiator's Ironskin Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148761)),	-- Dominant Gladiator's Ironskin Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(149257)),	-- Demonic Gladiator's Ironskin Belt
+								un(ELITE_PVP_REQUIREMENT, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149249)),	-- Demonic Gladiator's Ironskin Helm
+								un(ELITE_PVP_REQUIREMENT, i(149251)),	-- Demonic Gladiator's Ironskin Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149245)),	-- Demonic Gladiator's Ironskin Slippers
+								un(ELITE_PVP_REQUIREMENT, i(149253)),	-- Demonic Gladiator's Ironskin Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
 							},
 						}),
 					}),
@@ -9783,33 +9783,33 @@ _.PVP =
 								{"exclude", "itemID", 149474 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
-								un(14, i(148282)),	-- Fierce Gladiator's Scaled Breastplate (H)
-								un(14, i(148286)),	-- Fierce Gladiator's Scaled Gauntlets (H)
-								un(14, i(148294)),	-- Fierce Gladiator's Scaled Girdle (H)
-								un(14, i(148288)),	-- Fierce Gladiator's Scaled Helm (H)
-								un(14, i(148290)),	-- Fierce Gladiator's Scaled Legguards (H)
-								un(14, i(148284)),	-- Fierce Gladiator's Scaled Sabatons (H)
-								un(14, i(148292)),	-- Fierce Gladiator's Scaled Shoulders (H)
-								un(14, i(148296)),	-- Fierce Gladiator's Scaled Wristplates (H)
-								un(14, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
-								un(14, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
-								un(14, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
-								un(14, i(148787)),	-- Dominant Gladiator's Scaled Girdle (H)
-								un(14, i(148781)),	-- Dominant Gladiator's Scaled Helm (H)
-								un(14, i(148783)),	-- Dominant Gladiator's Scaled Legguards (H)
-								un(14, i(148777)),	-- Dominant Gladiator's Scaled Sabatons (H)
-								un(14, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
-								un(14, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
-								un(14, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
-								un(14, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
-								un(14, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
-								un(14, i(149279)),	-- Demonic Gladiator's Scaled Girdle
-								un(14, i(149273)),	-- Demonic Gladiator's Scaled Helm
-								un(14, i(149275)),	-- Demonic Gladiator's Scaled Legguards
-								un(14, i(149269)),	-- Demonic Gladiator's Scaled Sabatons
-								un(14, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
-								un(14, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(148282)),	-- Fierce Gladiator's Scaled Breastplate (H)
+								un(ELITE_PVP_REQUIREMENT, i(148286)),	-- Fierce Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148294)),	-- Fierce Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148288)),	-- Fierce Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148290)),	-- Fierce Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148284)),	-- Fierce Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(148292)),	-- Fierce Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148296)),	-- Fierce Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
+								un(ELITE_PVP_REQUIREMENT, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
+								un(ELITE_PVP_REQUIREMENT, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148787)),	-- Dominant Gladiator's Scaled Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148781)),	-- Dominant Gladiator's Scaled Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148783)),	-- Dominant Gladiator's Scaled Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148777)),	-- Dominant Gladiator's Scaled Sabatons (H)
+								un(ELITE_PVP_REQUIREMENT, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
+								un(ELITE_PVP_REQUIREMENT, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
+								un(ELITE_PVP_REQUIREMENT, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149279)),	-- Demonic Gladiator's Scaled Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149273)),	-- Demonic Gladiator's Scaled Helm
+								un(ELITE_PVP_REQUIREMENT, i(149275)),	-- Demonic Gladiator's Scaled Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149269)),	-- Demonic Gladiator's Scaled Sabatons
+								un(ELITE_PVP_REQUIREMENT, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
 							},
 						}),
 					}),
@@ -9824,33 +9824,33 @@ _.PVP =
 								{"exclude", "itemID", 149472 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
-								un(14, i(148312)),	-- Fierce Gladiator's Satin Bracers (H)
-								un(14, i(148310)),	-- Fierce Gladiator's Satin Cord (H)
-								un(14, i(148300)),	-- Fierce Gladiator's Satin Gloves (H)
-								un(14, i(148302)),	-- Fierce Gladiator's Satin Hood (H)
-								un(14, i(148304)),	-- Fierce Gladiator's Satin Leggings (H)
-								un(14, i(148308)),	-- Fierce Gladiator's Satin Mantle (H)
-								un(14, i(148306)),	-- Fierce Gladiator's Satin Robe (H)
-								un(14, i(148298)),	-- Fierce Gladiator's Satin Treads (H)
-								un(14, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
-								un(14, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
-								un(14, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
-								un(14, i(148793)),	-- Dominant Gladiator's Satin Gloves (H)
-								un(14, i(148795)),	-- Dominant Gladiator's Satin Hood (H)
-								un(14, i(148797)),	-- Dominant Gladiator's Satin Leggings (H)
-								un(14, i(148801)),	-- Dominant Gladiator's Satin Mantle (H)
-								un(14, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
-								un(14, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
-								un(14, i(149155)),	-- Demonic Gladiator's Drape of Piety
-								un(14, i(149297)),	-- Demonic Gladiator's Satin Bracers
-								un(14, i(149295)),	-- Demonic Gladiator's Satin Cord
-								un(14, i(149285)),	-- Demonic Gladiator's Satin Gloves
-								un(14, i(149287)),	-- Demonic Gladiator's Satin Hood
-								un(14, i(149289)),	-- Demonic Gladiator's Satin Leggings
-								un(14, i(149293)),	-- Demonic Gladiator's Satin Mantle
-								un(14, i(149291)),	-- Demonic Gladiator's Satin Robe
-								un(14, i(149283)),	-- Demonic Gladiator's Satin Treads
+								un(ELITE_PVP_REQUIREMENT, i(148170)),	-- Fierce Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(148312)),	-- Fierce Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148310)),	-- Fierce Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148300)),	-- Fierce Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148302)),	-- Fierce Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(148304)),	-- Fierce Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148308)),	-- Fierce Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148306)),	-- Fierce Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(148298)),	-- Fierce Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
+								un(ELITE_PVP_REQUIREMENT, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148793)),	-- Dominant Gladiator's Satin Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148795)),	-- Dominant Gladiator's Satin Hood (H)
+								un(ELITE_PVP_REQUIREMENT, i(148797)),	-- Dominant Gladiator's Satin Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148801)),	-- Dominant Gladiator's Satin Mantle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
+								un(ELITE_PVP_REQUIREMENT, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(149155)),	-- Demonic Gladiator's Drape of Piety
+								un(ELITE_PVP_REQUIREMENT, i(149297)),	-- Demonic Gladiator's Satin Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149295)),	-- Demonic Gladiator's Satin Cord
+								un(ELITE_PVP_REQUIREMENT, i(149285)),	-- Demonic Gladiator's Satin Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149287)),	-- Demonic Gladiator's Satin Hood
+								un(ELITE_PVP_REQUIREMENT, i(149289)),	-- Demonic Gladiator's Satin Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149293)),	-- Demonic Gladiator's Satin Mantle
+								un(ELITE_PVP_REQUIREMENT, i(149291)),	-- Demonic Gladiator's Satin Robe
+								un(ELITE_PVP_REQUIREMENT, i(149283)),	-- Demonic Gladiator's Satin Treads
 							},
 						}),
 					}),
@@ -9865,33 +9865,33 @@ _.PVP =
 								{"exclude", "itemID", 149466 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
-								un(14, i(148324)),	-- Fierce Gladiator's Leather Gloves (H)
-								un(14, i(148326)),	-- Fierce Gladiator's Leather Helm (H)
-								un(14, i(148328)),	-- Fierce Gladiator's Leather Legguards (H)
-								un(14, i(148322)),	-- Fierce Gladiator's Leather Slippers (H)
-								un(14, i(148330)),	-- Fierce Gladiator's Leather Spaulders (H)
-								un(14, i(148320)),	-- Fierce Gladiator's Leather Tunic (H)
-								un(14, i(148334)),	-- Fierce Gladiator's Leather Wristguards (H)
-								un(14, i(148172)),	-- Fierce Gladiator's Shadowcape (H)
-								un(14, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
-								un(14, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
-								un(14, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
-								un(14, i(148821)),	-- Dominant Gladiator's Leather Legguards (H)
-								un(14, i(148815)),	-- Dominant Gladiator's Leather Slippers (H)
-								un(14, i(148823)),	-- Dominant Gladiator's Leather Spaulders (H)
-								un(14, i(148813)),	-- Dominant Gladiator's Leather Tunic (H)
-								un(14, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
-								un(14, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
-								un(14, i(149317)),	-- Demonic Gladiator's Leather Belt
-								un(14, i(149309)),	-- Demonic Gladiator's Leather Gloves
-								un(14, i(149311)),	-- Demonic Gladiator's Leather Helm
-								un(14, i(149313)),	-- Demonic Gladiator's Leather Legguards
-								un(14, i(149307)),	-- Demonic Gladiator's Leather Slippers
-								un(14, i(149315)),	-- Demonic Gladiator's Leather Spaulders
-								un(14, i(149305)),	-- Demonic Gladiator's Leather Tunic
-								un(14, i(149319)),	-- Demonic Gladiator's Leather Wristguards
-								un(14, i(149157)),	-- Demonic Gladiator's Shadowcape
+								un(ELITE_PVP_REQUIREMENT, i(148332)),	-- Fierce Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148324)),	-- Fierce Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148326)),	-- Fierce Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148328)),	-- Fierce Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148322)),	-- Fierce Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148330)),	-- Fierce Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148320)),	-- Fierce Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148334)),	-- Fierce Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148172)),	-- Fierce Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
+								un(ELITE_PVP_REQUIREMENT, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
+								un(ELITE_PVP_REQUIREMENT, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148821)),	-- Dominant Gladiator's Leather Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148815)),	-- Dominant Gladiator's Leather Slippers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148823)),	-- Dominant Gladiator's Leather Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148813)),	-- Dominant Gladiator's Leather Tunic (H)
+								un(ELITE_PVP_REQUIREMENT, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
+								un(ELITE_PVP_REQUIREMENT, i(149317)),	-- Demonic Gladiator's Leather Belt
+								un(ELITE_PVP_REQUIREMENT, i(149309)),	-- Demonic Gladiator's Leather Gloves
+								un(ELITE_PVP_REQUIREMENT, i(149311)),	-- Demonic Gladiator's Leather Helm
+								un(ELITE_PVP_REQUIREMENT, i(149313)),	-- Demonic Gladiator's Leather Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149307)),	-- Demonic Gladiator's Leather Slippers
+								un(ELITE_PVP_REQUIREMENT, i(149315)),	-- Demonic Gladiator's Leather Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149305)),	-- Demonic Gladiator's Leather Tunic
+								un(ELITE_PVP_REQUIREMENT, i(149319)),	-- Demonic Gladiator's Leather Wristguards
+								un(ELITE_PVP_REQUIREMENT, i(149157)),	-- Demonic Gladiator's Shadowcape
 							},
 						}),
 					}),
@@ -9906,33 +9906,33 @@ _.PVP =
 								{"exclude", "itemID", 149471 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
-								un(14, i(148336)),	-- Fierce Gladiator's Ringmail Armor (H)
-								un(14, i(148338)),	-- Fierce Gladiator's Ringmail Boots (H)
-								un(14, i(148348)),	-- Fierce Gladiator's Ringmail Clasp (H)
-								un(14, i(148340)),	-- Fierce Gladiator's Ringmail Gauntlets (H)
-								un(14, i(148342)),	-- Fierce Gladiator's Ringmail Helm (H)
-								un(14, i(148344)),	-- Fierce Gladiator's Ringmail Leggings (H)
-								un(14, i(148346)),	-- Fierce Gladiator's Ringmail Spaulders (H)
-								un(14, i(148174)),	-- Fierce Gladiator's Totemic Cloak (H)
-								un(14, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
-								un(14, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
-								un(14, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
-								un(14, i(148841)),	-- Dominant Gladiator's Ringmail Clasp (H)
-								un(14, i(148833)),	-- Dominant Gladiator's Ringmail Gauntlets (H)
-								un(14, i(148835)),	-- Dominant Gladiator's Ringmail Helm (H)
-								un(14, i(148837)),	-- Dominant Gladiator's Ringmail Leggings (H)
-								un(14, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
-								un(14, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
-								un(14, i(149335)),	-- Demonic Gladiator's Ringmail Armband
-								un(14, i(149321)),	-- Demonic Gladiator's Ringmail Armor
-								un(14, i(149323)),	-- Demonic Gladiator's Ringmail Boots
-								un(14, i(149333)),	-- Demonic Gladiator's Ringmail Clasp
-								un(14, i(149325)),	-- Demonic Gladiator's Ringmail Gauntlets
-								un(14, i(149327)),	-- Demonic Gladiator's Ringmail Helm
-								un(14, i(149329)),	-- Demonic Gladiator's Ringmail Leggings
-								un(14, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
-								un(14, i(149159)),	-- Demonic Gladiator's Totemic Cloak
+								un(ELITE_PVP_REQUIREMENT, i(148350)),	-- Fierce Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(148336)),	-- Fierce Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(148338)),	-- Fierce Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148348)),	-- Fierce Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(148340)),	-- Fierce Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148342)),	-- Fierce Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148344)),	-- Fierce Gladiator's Ringmail Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148346)),	-- Fierce Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148174)),	-- Fierce Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
+								un(ELITE_PVP_REQUIREMENT, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
+								un(ELITE_PVP_REQUIREMENT, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148841)),	-- Dominant Gladiator's Ringmail Clasp (H)
+								un(ELITE_PVP_REQUIREMENT, i(148833)),	-- Dominant Gladiator's Ringmail Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148835)),	-- Dominant Gladiator's Ringmail Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148837)),	-- Dominant Gladiator's Ringmail Leggings (H)
+								un(ELITE_PVP_REQUIREMENT, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(149335)),	-- Demonic Gladiator's Ringmail Armband
+								un(ELITE_PVP_REQUIREMENT, i(149321)),	-- Demonic Gladiator's Ringmail Armor
+								un(ELITE_PVP_REQUIREMENT, i(149323)),	-- Demonic Gladiator's Ringmail Boots
+								un(ELITE_PVP_REQUIREMENT, i(149333)),	-- Demonic Gladiator's Ringmail Clasp
+								un(ELITE_PVP_REQUIREMENT, i(149325)),	-- Demonic Gladiator's Ringmail Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149327)),	-- Demonic Gladiator's Ringmail Helm
+								un(ELITE_PVP_REQUIREMENT, i(149329)),	-- Demonic Gladiator's Ringmail Leggings
+								un(ELITE_PVP_REQUIREMENT, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
+								un(ELITE_PVP_REQUIREMENT, i(149159)),	-- Demonic Gladiator's Totemic Cloak
 							},
 						}),
 					}),
@@ -9947,33 +9947,33 @@ _.PVP =
 								{"exclude", "itemID", 149463 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
-								un(14, i(148384)),	-- Fierce Gladiator's Felweave Bracers (H)
-								un(14, i(148176)),	-- Fierce Gladiator's Felweave Cloak (H)
-								un(14, i(148382)),	-- Fierce Gladiator's Felweave Cord (H)
-								un(14, i(148374)),	-- Fierce Gladiator's Felweave Cowl (H)
-								un(14, i(148372)),	-- Fierce Gladiator's Felweave Handguards (H)
-								un(14, i(148378)),	-- Fierce Gladiator's Felweave Raiment (H)
-								un(14, i(148370)),	-- Fierce Gladiator's Felweave Treads (H)
-								un(14, i(148376)),	-- Fierce Gladiator's Felweave Trousers (H)
-								un(14, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
-								un(14, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
-								un(14, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
-								un(14, i(148875)),	-- Dominant Gladiator's Felweave Cord (H)
-								un(14, i(148867)),	-- Dominant Gladiator's Felweave Cowl (H)
-								un(14, i(148865)),	-- Dominant Gladiator's Felweave Handguards (H)
-								un(14, i(148871)),	-- Dominant Gladiator's Felweave Raiment (H)
-								un(14, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
-								un(14, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
-								un(14, i(149365)),	-- Demonic Gladiator's Felweave Amice
-								un(14, i(149369)),	-- Demonic Gladiator's Felweave Bracers
-								un(14, i(149161)),	-- Demonic Gladiator's Felweave Cloak
-								un(14, i(149367)),	-- Demonic Gladiator's Felweave Cord
-								un(14, i(149359)),	-- Demonic Gladiator's Felweave Cowl
-								un(14, i(149357)),	-- Demonic Gladiator's Felweave Handguards
-								un(14, i(149363)),	-- Demonic Gladiator's Felweave Raiment
-								un(14, i(149355)),	-- Demonic Gladiator's Felweave Treads
-								un(14, i(149361)),	-- Demonic Gladiator's Felweave Trousers
+								un(ELITE_PVP_REQUIREMENT, i(148380)),	-- Fierce Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(148384)),	-- Fierce Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148176)),	-- Fierce Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148382)),	-- Fierce Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148374)),	-- Fierce Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(148372)),	-- Fierce Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148378)),	-- Fierce Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(148370)),	-- Fierce Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148376)),	-- Fierce Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
+								un(ELITE_PVP_REQUIREMENT, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
+								un(ELITE_PVP_REQUIREMENT, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
+								un(ELITE_PVP_REQUIREMENT, i(148875)),	-- Dominant Gladiator's Felweave Cord (H)
+								un(ELITE_PVP_REQUIREMENT, i(148867)),	-- Dominant Gladiator's Felweave Cowl (H)
+								un(ELITE_PVP_REQUIREMENT, i(148865)),	-- Dominant Gladiator's Felweave Handguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148871)),	-- Dominant Gladiator's Felweave Raiment (H)
+								un(ELITE_PVP_REQUIREMENT, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
+								un(ELITE_PVP_REQUIREMENT, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
+								un(ELITE_PVP_REQUIREMENT, i(149365)),	-- Demonic Gladiator's Felweave Amice
+								un(ELITE_PVP_REQUIREMENT, i(149369)),	-- Demonic Gladiator's Felweave Bracers
+								un(ELITE_PVP_REQUIREMENT, i(149161)),	-- Demonic Gladiator's Felweave Cloak
+								un(ELITE_PVP_REQUIREMENT, i(149367)),	-- Demonic Gladiator's Felweave Cord
+								un(ELITE_PVP_REQUIREMENT, i(149359)),	-- Demonic Gladiator's Felweave Cowl
+								un(ELITE_PVP_REQUIREMENT, i(149357)),	-- Demonic Gladiator's Felweave Handguards
+								un(ELITE_PVP_REQUIREMENT, i(149363)),	-- Demonic Gladiator's Felweave Raiment
+								un(ELITE_PVP_REQUIREMENT, i(149355)),	-- Demonic Gladiator's Felweave Treads
+								un(ELITE_PVP_REQUIREMENT, i(149361)),	-- Demonic Gladiator's Felweave Trousers
 							},
 						}),
 					}),
@@ -9988,33 +9988,33 @@ _.PVP =
 								{"exclude", "itemID", 149468 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
-								un(14, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
-								un(14, i(148386)),	-- Fierce Gladiator's Plate Chestpiece (H)
-								un(14, i(148390)),	-- Fierce Gladiator's Plate Gauntlets (H)
-								un(14, i(148398)),	-- Fierce Gladiator's Plate Girdle (H)
-								un(14, i(148392)),	-- Fierce Gladiator's Plate Helm (H)
-								un(14, i(148394)),	-- Fierce Gladiator's Plate Legguards (H)
-								un(14, i(148396)),	-- Fierce Gladiator's Plate Shoulders (H)
-								un(14, i(148388)),	-- Fierce Gladiator's Plate Warboots (H)
-								un(14, i(148400)),	-- Fierce Gladiator's Plate Wristplates (H)
-								un(14, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
-								un(14, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
-								un(14, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
-								un(14, i(148891)),	-- Dominant Gladiator's Plate Girdle (H)
-								un(14, i(148885)),	-- Dominant Gladiator's Plate Helm (H)
-								un(14, i(148887)),	-- Dominant Gladiator's Plate Legguards (H)
-								un(14, i(148889)),	-- Dominant Gladiator's Plate Shoulders (H)
-								un(14, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
-								un(14, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
-								un(14, i(149163)),	-- Demonic Gladiator's Cloak of Battle
-								un(14, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
-								un(14, i(149375)),	-- Demonic Gladiator's Plate Gauntlets
-								un(14, i(149383)),	-- Demonic Gladiator's Plate Girdle
-								un(14, i(149377)),	-- Demonic Gladiator's Plate Helm
-								un(14, i(149379)),	-- Demonic Gladiator's Plate Legguards
-								un(14, i(149381)),	-- Demonic Gladiator's Plate Shoulders
-								un(14, i(149373)),	-- Demonic Gladiator's Plate Warboots
-								un(14, i(149385)),	-- Demonic Gladiator's Plate Wristplates
+								un(ELITE_PVP_REQUIREMENT, i(148178)),	-- Fierce Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148386)),	-- Fierce Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(148390)),	-- Fierce Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148398)),	-- Fierce Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148392)),	-- Fierce Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148394)),	-- Fierce Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148396)),	-- Fierce Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148388)),	-- Fierce Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148400)),	-- Fierce Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
+								un(ELITE_PVP_REQUIREMENT, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
+								un(ELITE_PVP_REQUIREMENT, i(148891)),	-- Dominant Gladiator's Plate Girdle (H)
+								un(ELITE_PVP_REQUIREMENT, i(148885)),	-- Dominant Gladiator's Plate Helm (H)
+								un(ELITE_PVP_REQUIREMENT, i(148887)),	-- Dominant Gladiator's Plate Legguards (H)
+								un(ELITE_PVP_REQUIREMENT, i(148889)),	-- Dominant Gladiator's Plate Shoulders (H)
+								un(ELITE_PVP_REQUIREMENT, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
+								un(ELITE_PVP_REQUIREMENT, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
+								un(ELITE_PVP_REQUIREMENT, i(149163)),	-- Demonic Gladiator's Cloak of Battle
+								un(ELITE_PVP_REQUIREMENT, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
+								un(ELITE_PVP_REQUIREMENT, i(149375)),	-- Demonic Gladiator's Plate Gauntlets
+								un(ELITE_PVP_REQUIREMENT, i(149383)),	-- Demonic Gladiator's Plate Girdle
+								un(ELITE_PVP_REQUIREMENT, i(149377)),	-- Demonic Gladiator's Plate Helm
+								un(ELITE_PVP_REQUIREMENT, i(149379)),	-- Demonic Gladiator's Plate Legguards
+								un(ELITE_PVP_REQUIREMENT, i(149381)),	-- Demonic Gladiator's Plate Shoulders
+								un(ELITE_PVP_REQUIREMENT, i(149373)),	-- Demonic Gladiator's Plate Warboots
+								un(ELITE_PVP_REQUIREMENT, i(149385)),	-- Demonic Gladiator's Plate Wristplates
 							},
 						}),
 					}),
@@ -10422,136 +10422,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
-						un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
-						un(14, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
-						un(14, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle (A)
-						un(14, i(148678)),	-- Dominant Gladiator's Dreadplate Helm (A)
-						un(14, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards (A)
-						un(14, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons (A)
-						un(14, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
-						un(14, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(148678)),	-- Dominant Gladiator's Dreadplate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
-						un(14, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
-						un(14, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
-						un(14, i(148692)),	-- Dominant Gladiator's Felskin Gloves (A)
-						un(14, i(148694)),	-- Dominant Gladiator's Felskin Helm (A)
-						un(14, i(148696)),	-- Dominant Gladiator's Felskin Legguards (A)
-						un(14, i(148698)),	-- Dominant Gladiator's Felskin Spaulders (A)
-						un(14, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
-						un(14, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148650)),	-- Dominant Gladiator's Demonthread Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148700)),	-- Dominant Gladiator's Felskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(148690)),	-- Dominant Gladiator's Felskin Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(148692)),	-- Dominant Gladiator's Felskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(148694)),	-- Dominant Gladiator's Felskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148696)),	-- Dominant Gladiator's Felskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148698)),	-- Dominant Gladiator's Felskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148688)),	-- Dominant Gladiator's Felskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(148702)),	-- Dominant Gladiator's Felskin Wristguards (A)
 					}),
 					cl(DRUID, {
-						un(14, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
-						un(14, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
-						un(14, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
-						un(14, i(148710)),	-- Dominant Gladiator's Dragonhide Helm (A)
-						un(14, i(148712)),	-- Dominant Gladiator's Dragonhide Legguards (A)
-						un(14, i(148706)),	-- Dominant Gladiator's Dragonhide Moccasins (A)
-						un(14, i(148714)),	-- Dominant Gladiator's Dragonhide Spaulders (A)
-						un(14, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
-						un(14, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148716)),	-- Dominant Gladiator's Dragonhide Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(148652)),	-- Dominant Gladiator's Dragonhide Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148708)),	-- Dominant Gladiator's Dragonhide Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(148710)),	-- Dominant Gladiator's Dragonhide Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148712)),	-- Dominant Gladiator's Dragonhide Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148706)),	-- Dominant Gladiator's Dragonhide Moccasins (A)
+						un(ELITE_PVP_REQUIREMENT, i(148714)),	-- Dominant Gladiator's Dragonhide Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148704)),	-- Dominant Gladiator's Dragonhide Vest (A)
+						un(ELITE_PVP_REQUIREMENT, i(148718)),	-- Dominant Gladiator's Dragonhide Wristguards (A)
 					}),
 					cl(HUNTER, {
-						un(14, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
-						un(14, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
-						un(14, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
-						un(14, i(148732)),	-- Dominant Gladiator's Chain Clasp (A)
-						un(14, i(148724)),	-- Dominant Gladiator's Chain Gauntlets (A)
-						un(14, i(148726)),	-- Dominant Gladiator's Chain Helm (A)
-						un(14, i(148728)),	-- Dominant Gladiator's Chain Leggings (A)
-						un(14, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
-						un(14, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(148654)),	-- Dominant Gladiator's Drape of the Tracker (A)
+						un(ELITE_PVP_REQUIREMENT, i(148734)),	-- Dominant Gladiator's Chain Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(148720)),	-- Dominant Gladiator's Chain Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(148732)),	-- Dominant Gladiator's Chain Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(148724)),	-- Dominant Gladiator's Chain Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(148726)),	-- Dominant Gladiator's Chain Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148728)),	-- Dominant Gladiator's Chain Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(148730)),	-- Dominant Gladiator's Chain Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148722)),	-- Dominant Gladiator's Chain Treads (A)
 					}),
 					cl(MAGE, {
-						un(14, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
-						un(14, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
-						un(14, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
-						un(14, i(148740)),	-- Dominant Gladiator's Silk Cowl (A)
-						un(14, i(148738)),	-- Dominant Gladiator's Silk Handguards (A)
-						un(14, i(148736)),	-- Dominant Gladiator's Silk Treads (A)
-						un(14, i(148742)),	-- Dominant Gladiator's Silk Trousers (A)
-						un(14, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
-						un(14, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
+						un(ELITE_PVP_REQUIREMENT, i(148746)),	-- Dominant Gladiator's Silk Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(148750)),	-- Dominant Gladiator's Silk Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148748)),	-- Dominant Gladiator's Silk Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(148740)),	-- Dominant Gladiator's Silk Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(148738)),	-- Dominant Gladiator's Silk Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148736)),	-- Dominant Gladiator's Silk Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(148742)),	-- Dominant Gladiator's Silk Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148744)),	-- Dominant Gladiator's Silk Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(148656)),	-- Dominant Gladiator's Silken Shawl (A)
 					}),
 					cl(MONK, {
-						un(14, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
-						un(14, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
-						un(14, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
-						un(14, i(148756)),	-- Dominant Gladiator's Ironskin Helm (A)
-						un(14, i(148758)),	-- Dominant Gladiator's Ironskin Legguards (A)
-						un(14, i(148752)),	-- Dominant Gladiator's Ironskin Slippers (A)
-						un(14, i(148760)),	-- Dominant Gladiator's Ironskin Spaulders (A)
-						un(14, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
-						un(14, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148764)),	-- Dominant Gladiator's Ironskin Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(148658)),	-- Dominant Gladiator's Ironskin Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148754)),	-- Dominant Gladiator's Ironskin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(148756)),	-- Dominant Gladiator's Ironskin Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148758)),	-- Dominant Gladiator's Ironskin Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148752)),	-- Dominant Gladiator's Ironskin Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148760)),	-- Dominant Gladiator's Ironskin Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148762)),	-- Dominant Gladiator's Ironskin Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(148766)),	-- Dominant Gladiator's Ironskin Wristguards (A)
 					}),
 					cl(PALADIN, {
-						un(14, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
-						un(14, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
-						un(14, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
-						un(14, i(148786)),	-- Dominant Gladiator's Scaled Girdle (A)
-						un(14, i(148780)),	-- Dominant Gladiator's Scaled Helm (A)
-						un(14, i(148782)),	-- Dominant Gladiator's Scaled Legguards (A)
-						un(14, i(148776)),	-- Dominant Gladiator's Scaled Sabatons (A)
-						un(14, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
-						un(14, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith (A)
+						un(ELITE_PVP_REQUIREMENT, i(148774)),	-- Dominant Gladiator's Scaled Breastplate (A)
+						un(ELITE_PVP_REQUIREMENT, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(148786)),	-- Dominant Gladiator's Scaled Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(148780)),	-- Dominant Gladiator's Scaled Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148782)),	-- Dominant Gladiator's Scaled Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148776)),	-- Dominant Gladiator's Scaled Sabatons (A)
+						un(ELITE_PVP_REQUIREMENT, i(148784)),	-- Dominant Gladiator's Scaled Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148788)),	-- Dominant Gladiator's Scaled Wristplates (A)
 					}),
 					cl(PRIEST, {
-						un(14, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
-						un(14, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
-						un(14, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
-						un(14, i(148792)),	-- Dominant Gladiator's Satin Gloves (A)
-						un(14, i(148794)),	-- Dominant Gladiator's Satin Hood (A)
-						un(14, i(148796)),	-- Dominant Gladiator's Satin Leggings (A)
-						un(14, i(148800)),	-- Dominant Gladiator's Satin Mantle (A)
-						un(14, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
-						un(14, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(148662)),	-- Dominant Gladiator's Drape of Piety (A)
+						un(ELITE_PVP_REQUIREMENT, i(148804)),	-- Dominant Gladiator's Satin Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148802)),	-- Dominant Gladiator's Satin Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(148792)),	-- Dominant Gladiator's Satin Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(148794)),	-- Dominant Gladiator's Satin Hood (A)
+						un(ELITE_PVP_REQUIREMENT, i(148796)),	-- Dominant Gladiator's Satin Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(148800)),	-- Dominant Gladiator's Satin Mantle (A)
+						un(ELITE_PVP_REQUIREMENT, i(148798)),	-- Dominant Gladiator's Satin Robe (A)
+						un(ELITE_PVP_REQUIREMENT, i(148790)),	-- Dominant Gladiator's Satin Treads (A)
 					}),
 					cl(ROGUE, {
-						un(14, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
-						un(14, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
-						un(14, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
-						un(14, i(148820)),	-- Dominant Gladiator's Leather Legguards (A)
-						un(14, i(148814)),	-- Dominant Gladiator's Leather Slippers (A)
-						un(14, i(148822)),	-- Dominant Gladiator's Leather Spaulders (A)
-						un(14, i(148812)),	-- Dominant Gladiator's Leather Tunic (A)
-						un(14, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
-						un(14, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
+						un(ELITE_PVP_REQUIREMENT, i(148824)),	-- Dominant Gladiator's Leather Belt (A)
+						un(ELITE_PVP_REQUIREMENT, i(148816)),	-- Dominant Gladiator's Leather Gloves (A)
+						un(ELITE_PVP_REQUIREMENT, i(148818)),	-- Dominant Gladiator's Leather Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148820)),	-- Dominant Gladiator's Leather Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148814)),	-- Dominant Gladiator's Leather Slippers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148822)),	-- Dominant Gladiator's Leather Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148812)),	-- Dominant Gladiator's Leather Tunic (A)
+						un(ELITE_PVP_REQUIREMENT, i(148826)),	-- Dominant Gladiator's Leather Wristguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148664)),	-- Dominant Gladiator's Shadowcape (A)
 					}),
 					cl(SHAMAN, {
-						un(14, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
-						un(14, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
-						un(14, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
-						un(14, i(148840)),	-- Dominant Gladiator's Ringmail Clasp (A)
-						un(14, i(148832)),	-- Dominant Gladiator's Ringmail Gauntlets (A)
-						un(14, i(148834)),	-- Dominant Gladiator's Ringmail Helm (A)
-						un(14, i(148836)),	-- Dominant Gladiator's Ringmail Leggings (A)
-						un(14, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
-						un(14, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148842)),	-- Dominant Gladiator's Ringmail Armband (A)
+						un(ELITE_PVP_REQUIREMENT, i(148828)),	-- Dominant Gladiator's Ringmail Armor (A)
+						un(ELITE_PVP_REQUIREMENT, i(148830)),	-- Dominant Gladiator's Ringmail Boots (A)
+						un(ELITE_PVP_REQUIREMENT, i(148840)),	-- Dominant Gladiator's Ringmail Clasp (A)
+						un(ELITE_PVP_REQUIREMENT, i(148832)),	-- Dominant Gladiator's Ringmail Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(148834)),	-- Dominant Gladiator's Ringmail Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148836)),	-- Dominant Gladiator's Ringmail Leggings (A)
+						un(ELITE_PVP_REQUIREMENT, i(148838)),	-- Dominant Gladiator's Ringmail Spaulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148666)),	-- Dominant Gladiator's Totemic Cloak (A)
 					}),
 					cl(WARLOCK, {
-						un(14, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
-						un(14, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
-						un(14, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
-						un(14, i(148874)),	-- Dominant Gladiator's Felweave Cord (A)
-						un(14, i(148866)),	-- Dominant Gladiator's Felweave Cowl (A)
-						un(14, i(148864)),	-- Dominant Gladiator's Felweave Handguards (A)
-						un(14, i(148870)),	-- Dominant Gladiator's Felweave Raiment (A)
-						un(14, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
-						un(14, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148872)),	-- Dominant Gladiator's Felweave Amice (A)
+						un(ELITE_PVP_REQUIREMENT, i(148876)),	-- Dominant Gladiator's Felweave Bracers (A)
+						un(ELITE_PVP_REQUIREMENT, i(148668)),	-- Dominant Gladiator's Felweave Cloak (A)
+						un(ELITE_PVP_REQUIREMENT, i(148874)),	-- Dominant Gladiator's Felweave Cord (A)
+						un(ELITE_PVP_REQUIREMENT, i(148866)),	-- Dominant Gladiator's Felweave Cowl (A)
+						un(ELITE_PVP_REQUIREMENT, i(148864)),	-- Dominant Gladiator's Felweave Handguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148870)),	-- Dominant Gladiator's Felweave Raiment (A)
+						un(ELITE_PVP_REQUIREMENT, i(148862)),	-- Dominant Gladiator's Felweave Treads (A)
+						un(ELITE_PVP_REQUIREMENT, i(148868)),	-- Dominant Gladiator's Felweave Trousers (A)
 					}),
 					cl(WARRIOR, {
-						un(14, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
-						un(14, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
-						un(14, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
-						un(14, i(148890)),	-- Dominant Gladiator's Plate Girdle (A)
-						un(14, i(148884)),	-- Dominant Gladiator's Plate Helm (A)
-						un(14, i(148886)),	-- Dominant Gladiator's Plate Legguards (A)
-						un(14, i(148888)),	-- Dominant Gladiator's Plate Shoulders (A)
-						un(14, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
-						un(14, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
+						un(ELITE_PVP_REQUIREMENT, i(148670)),	-- Dominant Gladiator's Cloak of Battle (A)
+						un(ELITE_PVP_REQUIREMENT, i(148878)),	-- Dominant Gladiator's Plate Chestpiece (A)
+						un(ELITE_PVP_REQUIREMENT, i(148882)),	-- Dominant Gladiator's Plate Gauntlets (A)
+						un(ELITE_PVP_REQUIREMENT, i(148890)),	-- Dominant Gladiator's Plate Girdle (A)
+						un(ELITE_PVP_REQUIREMENT, i(148884)),	-- Dominant Gladiator's Plate Helm (A)
+						un(ELITE_PVP_REQUIREMENT, i(148886)),	-- Dominant Gladiator's Plate Legguards (A)
+						un(ELITE_PVP_REQUIREMENT, i(148888)),	-- Dominant Gladiator's Plate Shoulders (A)
+						un(ELITE_PVP_REQUIREMENT, i(148880)),	-- Dominant Gladiator's Plate Warboots (A)
+						un(ELITE_PVP_REQUIREMENT, i(148892)),	-- Dominant Gladiator's Plate Wristplates (A)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148768)), -- Dominant Gladiator's Necklace (A)
@@ -10987,136 +10987,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
-						un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
-						un(14, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
-						un(14, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle (H)
-						un(14, i(148679)),	-- Dominant Gladiator's Dreadplate Helm (H)
-						un(14, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards (H)
-						un(14, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons (H)
-						un(14, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
-						un(14, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(148679)),	-- Dominant Gladiator's Dreadplate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates (H)
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
-						un(14, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
-						un(14, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
-						un(14, i(148693)),	-- Dominant Gladiator's Felskin Gloves (H)
-						un(14, i(148695)),	-- Dominant Gladiator's Felskin Helm (H)
-						un(14, i(148697)),	-- Dominant Gladiator's Felskin Legguards (H)
-						un(14, i(148699)),	-- Dominant Gladiator's Felskin Spaulders (H)
-						un(14, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
-						un(14, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148651)),	-- Dominant Gladiator's Demonthread Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148701)),	-- Dominant Gladiator's Felskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(148691)),	-- Dominant Gladiator's Felskin Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(148693)),	-- Dominant Gladiator's Felskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(148695)),	-- Dominant Gladiator's Felskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148697)),	-- Dominant Gladiator's Felskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148699)),	-- Dominant Gladiator's Felskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148689)),	-- Dominant Gladiator's Felskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(148703)),	-- Dominant Gladiator's Felskin Wristguards (H)
 					}),
 					cl(DRUID, {
-						un(14, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
-						un(14, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
-						un(14, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
-						un(14, i(148711)),	-- Dominant Gladiator's Dragonhide Helm (H)
-						un(14, i(148713)),	-- Dominant Gladiator's Dragonhide Legguards (H)
-						un(14, i(148707)),	-- Dominant Gladiator's Dragonhide Moccasins (H)
-						un(14, i(148715)),	-- Dominant Gladiator's Dragonhide Spaulders (H)
-						un(14, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
-						un(14, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148717)),	-- Dominant Gladiator's Dragonhide Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(148653)),	-- Dominant Gladiator's Dragonhide Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148709)),	-- Dominant Gladiator's Dragonhide Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(148711)),	-- Dominant Gladiator's Dragonhide Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148713)),	-- Dominant Gladiator's Dragonhide Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148707)),	-- Dominant Gladiator's Dragonhide Moccasins (H)
+						un(ELITE_PVP_REQUIREMENT, i(148715)),	-- Dominant Gladiator's Dragonhide Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148705)),	-- Dominant Gladiator's Dragonhide Vest (H)
+						un(ELITE_PVP_REQUIREMENT, i(148719)),	-- Dominant Gladiator's Dragonhide Wristguards (H)
 					}),
 					cl(HUNTER, {
-						un(14, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
-						un(14, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
-						un(14, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
-						un(14, i(148725)),	-- Dominant Gladiator's Chain Gauntlets (H)
-						un(14, i(148727)),	-- Dominant Gladiator's Chain Helm (H)
-						un(14, i(148729)),	-- Dominant Gladiator's Chain Leggings (H)
-						un(14, i(148731)),	-- Dominant Gladiator's Chain Spaulders (H)
-						un(14, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
-						un(14, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
+						un(ELITE_PVP_REQUIREMENT, i(148735)),	-- Dominant Gladiator's Chain Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(148721)),	-- Dominant Gladiator's Chain Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(148733)),	-- Dominant Gladiator's Chain Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(148725)),	-- Dominant Gladiator's Chain Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(148727)),	-- Dominant Gladiator's Chain Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148729)),	-- Dominant Gladiator's Chain Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(148731)),	-- Dominant Gladiator's Chain Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148723)),	-- Dominant Gladiator's Chain Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(148655)),	-- Dominant Gladiator's Drape of the Tracker (H)
 					}),
 					cl(MAGE, {
-						un(14, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
-						un(14, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
-						un(14, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
-						un(14, i(148741)),	-- Dominant Gladiator's Silk Cowl (H)
-						un(14, i(148739)),	-- Dominant Gladiator's Silk Handguards (H)
-						un(14, i(148737)),	-- Dominant Gladiator's Silk Treads (H)
-						un(14, i(148743)),	-- Dominant Gladiator's Silk Trousers (H)
-						un(14, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
-						un(14, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
+						un(ELITE_PVP_REQUIREMENT, i(148747)),	-- Dominant Gladiator's Silk Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(148751)),	-- Dominant Gladiator's Silk Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148749)),	-- Dominant Gladiator's Silk Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(148741)),	-- Dominant Gladiator's Silk Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(148739)),	-- Dominant Gladiator's Silk Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148737)),	-- Dominant Gladiator's Silk Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(148743)),	-- Dominant Gladiator's Silk Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148745)),	-- Dominant Gladiator's Silk Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(148657)),	-- Dominant Gladiator's Silken Shawl (H)
 					}),
 					cl(MONK, {
-						un(14, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
-						un(14, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
-						un(14, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
-						un(14, i(148757)),	-- Dominant Gladiator's Ironskin Helm (H)
-						un(14, i(148759)),	-- Dominant Gladiator's Ironskin Legguards (H)
-						un(14, i(148753)),	-- Dominant Gladiator's Ironskin Slippers (H)
-						un(14, i(148761)),	-- Dominant Gladiator's Ironskin Spaulders (H)
-						un(14, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
-						un(14, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148765)),	-- Dominant Gladiator's Ironskin Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(148659)),	-- Dominant Gladiator's Ironskin Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148755)),	-- Dominant Gladiator's Ironskin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(148757)),	-- Dominant Gladiator's Ironskin Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148759)),	-- Dominant Gladiator's Ironskin Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148753)),	-- Dominant Gladiator's Ironskin Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148761)),	-- Dominant Gladiator's Ironskin Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148763)),	-- Dominant Gladiator's Ironskin Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(148767)),	-- Dominant Gladiator's Ironskin Wristguards (H)
 					}),
 					cl(PALADIN, {
-						un(14, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
-						un(14, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
-						un(14, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
-						un(14, i(148787)),	-- Dominant Gladiator's Scaled Girdle (H)
-						un(14, i(148781)),	-- Dominant Gladiator's Scaled Helm (H)
-						un(14, i(148783)),	-- Dominant Gladiator's Scaled Legguards (H)
-						un(14, i(148777)),	-- Dominant Gladiator's Scaled Sabatons (H)
-						un(14, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
-						un(14, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith (H)
+						un(ELITE_PVP_REQUIREMENT, i(148775)),	-- Dominant Gladiator's Scaled Breastplate (H)
+						un(ELITE_PVP_REQUIREMENT, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(148787)),	-- Dominant Gladiator's Scaled Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(148781)),	-- Dominant Gladiator's Scaled Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148783)),	-- Dominant Gladiator's Scaled Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148777)),	-- Dominant Gladiator's Scaled Sabatons (H)
+						un(ELITE_PVP_REQUIREMENT, i(148785)),	-- Dominant Gladiator's Scaled Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148789)),	-- Dominant Gladiator's Scaled Wristplates (H)
 					}),
 					cl(PRIEST, {
-						un(14, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
-						un(14, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
-						un(14, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
-						un(14, i(148793)),	-- Dominant Gladiator's Satin Gloves (H)
-						un(14, i(148795)),	-- Dominant Gladiator's Satin Hood (H)
-						un(14, i(148797)),	-- Dominant Gladiator's Satin Leggings (H)
-						un(14, i(148801)),	-- Dominant Gladiator's Satin Mantle (H)
-						un(14, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
-						un(14, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(148663)),	-- Dominant Gladiator's Drape of Piety (H)
+						un(ELITE_PVP_REQUIREMENT, i(148805)),	-- Dominant Gladiator's Satin Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148803)),	-- Dominant Gladiator's Satin Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(148793)),	-- Dominant Gladiator's Satin Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(148795)),	-- Dominant Gladiator's Satin Hood (H)
+						un(ELITE_PVP_REQUIREMENT, i(148797)),	-- Dominant Gladiator's Satin Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(148801)),	-- Dominant Gladiator's Satin Mantle (H)
+						un(ELITE_PVP_REQUIREMENT, i(148799)),	-- Dominant Gladiator's Satin Robe (H)
+						un(ELITE_PVP_REQUIREMENT, i(148791)),	-- Dominant Gladiator's Satin Treads (H)
 					}),
 					cl(ROGUE, {
-						un(14, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
-						un(14, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
-						un(14, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
-						un(14, i(148821)),	-- Dominant Gladiator's Leather Legguards (H)
-						un(14, i(148815)),	-- Dominant Gladiator's Leather Slippers (H)
-						un(14, i(148823)),	-- Dominant Gladiator's Leather Spaulders (H)
-						un(14, i(148813)),	-- Dominant Gladiator's Leather Tunic (H)
-						un(14, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
-						un(14, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
+						un(ELITE_PVP_REQUIREMENT, i(148825)),	-- Dominant Gladiator's Leather Belt (H)
+						un(ELITE_PVP_REQUIREMENT, i(148817)),	-- Dominant Gladiator's Leather Gloves (H)
+						un(ELITE_PVP_REQUIREMENT, i(148819)),	-- Dominant Gladiator's Leather Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148821)),	-- Dominant Gladiator's Leather Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148815)),	-- Dominant Gladiator's Leather Slippers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148823)),	-- Dominant Gladiator's Leather Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148813)),	-- Dominant Gladiator's Leather Tunic (H)
+						un(ELITE_PVP_REQUIREMENT, i(148827)),	-- Dominant Gladiator's Leather Wristguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148665)),	-- Dominant Gladiator's Shadowcape (H)
 					}),
 					cl(SHAMAN, {
-						un(14, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
-						un(14, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
-						un(14, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
-						un(14, i(148841)),	-- Dominant Gladiator's Ringmail Clasp (H)
-						un(14, i(148833)),	-- Dominant Gladiator's Ringmail Gauntlets (H)
-						un(14, i(148835)),	-- Dominant Gladiator's Ringmail Helm (H)
-						un(14, i(148837)),	-- Dominant Gladiator's Ringmail Leggings (H)
-						un(14, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
-						un(14, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148843)),	-- Dominant Gladiator's Ringmail Armband (H)
+						un(ELITE_PVP_REQUIREMENT, i(148829)),	-- Dominant Gladiator's Ringmail Armor (H)
+						un(ELITE_PVP_REQUIREMENT, i(148831)),	-- Dominant Gladiator's Ringmail Boots (H)
+						un(ELITE_PVP_REQUIREMENT, i(148841)),	-- Dominant Gladiator's Ringmail Clasp (H)
+						un(ELITE_PVP_REQUIREMENT, i(148833)),	-- Dominant Gladiator's Ringmail Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(148835)),	-- Dominant Gladiator's Ringmail Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148837)),	-- Dominant Gladiator's Ringmail Leggings (H)
+						un(ELITE_PVP_REQUIREMENT, i(148839)),	-- Dominant Gladiator's Ringmail Spaulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148667)),	-- Dominant Gladiator's Totemic Cloak (H)
 					}),
 					cl(WARLOCK, {
-						un(14, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
-						un(14, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
-						un(14, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
-						un(14, i(148875)),	-- Dominant Gladiator's Felweave Cord (H)
-						un(14, i(148867)),	-- Dominant Gladiator's Felweave Cowl (H)
-						un(14, i(148865)),	-- Dominant Gladiator's Felweave Handguards (H)
-						un(14, i(148871)),	-- Dominant Gladiator's Felweave Raiment (H)
-						un(14, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
-						un(14, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148873)),	-- Dominant Gladiator's Felweave Amice (H)
+						un(ELITE_PVP_REQUIREMENT, i(148877)),	-- Dominant Gladiator's Felweave Bracers (H)
+						un(ELITE_PVP_REQUIREMENT, i(148669)),	-- Dominant Gladiator's Felweave Cloak (H)
+						un(ELITE_PVP_REQUIREMENT, i(148875)),	-- Dominant Gladiator's Felweave Cord (H)
+						un(ELITE_PVP_REQUIREMENT, i(148867)),	-- Dominant Gladiator's Felweave Cowl (H)
+						un(ELITE_PVP_REQUIREMENT, i(148865)),	-- Dominant Gladiator's Felweave Handguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148871)),	-- Dominant Gladiator's Felweave Raiment (H)
+						un(ELITE_PVP_REQUIREMENT, i(148863)),	-- Dominant Gladiator's Felweave Treads (H)
+						un(ELITE_PVP_REQUIREMENT, i(148869)),	-- Dominant Gladiator's Felweave Trousers (H)
 					}),
 					cl(WARRIOR, {
-						un(14, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
-						un(14, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
-						un(14, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
-						un(14, i(148891)),	-- Dominant Gladiator's Plate Girdle (H)
-						un(14, i(148885)),	-- Dominant Gladiator's Plate Helm (H)
-						un(14, i(148887)),	-- Dominant Gladiator's Plate Legguards (H)
-						un(14, i(148889)),	-- Dominant Gladiator's Plate Shoulders (H)
-						un(14, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
-						un(14, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
+						un(ELITE_PVP_REQUIREMENT, i(148671)),	-- Dominant Gladiator's Cloak of Battle (H)
+						un(ELITE_PVP_REQUIREMENT, i(148879)),	-- Dominant Gladiator's Plate Chestpiece (H)
+						un(ELITE_PVP_REQUIREMENT, i(148883)),	-- Dominant Gladiator's Plate Gauntlets (H)
+						un(ELITE_PVP_REQUIREMENT, i(148891)),	-- Dominant Gladiator's Plate Girdle (H)
+						un(ELITE_PVP_REQUIREMENT, i(148885)),	-- Dominant Gladiator's Plate Helm (H)
+						un(ELITE_PVP_REQUIREMENT, i(148887)),	-- Dominant Gladiator's Plate Legguards (H)
+						un(ELITE_PVP_REQUIREMENT, i(148889)),	-- Dominant Gladiator's Plate Shoulders (H)
+						un(ELITE_PVP_REQUIREMENT, i(148881)),	-- Dominant Gladiator's Plate Warboots (H)
+						un(ELITE_PVP_REQUIREMENT, i(148893)),	-- Dominant Gladiator's Plate Wristplates (H)
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(148769)), -- Dominant Gladiator's Necklace (H)
@@ -11554,136 +11554,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
 					un(REMOVED_FROM_GAME, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 					cl(DEATHKNIGHT, {
-						un(14, i(149140)),	-- Demonic Gladiator's Dreadcloak
-						un(14, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
-						un(14, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
-						un(14, i(149176)),	-- Demonic Gladiator's Dreadplate Girdle
-						un(14, i(149170)),	-- Demonic Gladiator's Dreadplate Helm
-						un(14, i(149172)),	-- Demonic Gladiator's Dreadplate Legguards
-						un(14, i(149166)),	-- Demonic Gladiator's Dreadplate Sabatons
-						un(14, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
-						un(14, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149140)),	-- Demonic Gladiator's Dreadcloak
+						un(ELITE_PVP_REQUIREMENT, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
+						un(ELITE_PVP_REQUIREMENT, i(149168)),	-- Demonic Gladiator's Dreadplate Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149176)),	-- Demonic Gladiator's Dreadplate Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149170)),	-- Demonic Gladiator's Dreadplate Helm
+						un(ELITE_PVP_REQUIREMENT, i(149172)),	-- Demonic Gladiator's Dreadplate Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149166)),	-- Demonic Gladiator's Dreadplate Sabatons
+						un(ELITE_PVP_REQUIREMENT, i(149174)),	-- Demonic Gladiator's Dreadplate Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149178)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
-						un(14, i(149192)),	-- Demonic Gladiator's Felskin Belt
-						un(14, i(149182)),	-- Demonic Gladiator's Felskin Boots
-						un(14, i(149184)),	-- Demonic Gladiator's Felskin Gloves
-						un(14, i(149186)),	-- Demonic Gladiator's Felskin Helm
-						un(14, i(149188)),	-- Demonic Gladiator's Felskin Legguards
-						un(14, i(149190)),	-- Demonic Gladiator's Felskin Spaulders
-						un(14, i(149180)),	-- Demonic Gladiator's Felskin Tunic
-						un(14, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149142)),	-- Demonic Gladiator's Demonthread Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149192)),	-- Demonic Gladiator's Felskin Belt
+						un(ELITE_PVP_REQUIREMENT, i(149182)),	-- Demonic Gladiator's Felskin Boots
+						un(ELITE_PVP_REQUIREMENT, i(149184)),	-- Demonic Gladiator's Felskin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149186)),	-- Demonic Gladiator's Felskin Helm
+						un(ELITE_PVP_REQUIREMENT, i(149188)),	-- Demonic Gladiator's Felskin Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149190)),	-- Demonic Gladiator's Felskin Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149180)),	-- Demonic Gladiator's Felskin Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149194)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
 					cl(DRUID, {
-						un(14, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
-						un(14, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
-						un(14, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
-						un(14, i(149202)),	-- Demonic Gladiator's Dragonhide Helm
-						un(14, i(149204)),	-- Demonic Gladiator's Dragonhide Legguards
-						un(14, i(149198)),	-- Demonic Gladiator's Dragonhide Moccasins
-						un(14, i(149206)),	-- Demonic Gladiator's Dragonhide Spaulders
-						un(14, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
-						un(14, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149208)),	-- Demonic Gladiator's Dragonhide Belt
+						un(ELITE_PVP_REQUIREMENT, i(149144)),	-- Demonic Gladiator's Dragonhide Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149200)),	-- Demonic Gladiator's Dragonhide Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149202)),	-- Demonic Gladiator's Dragonhide Helm
+						un(ELITE_PVP_REQUIREMENT, i(149204)),	-- Demonic Gladiator's Dragonhide Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149198)),	-- Demonic Gladiator's Dragonhide Moccasins
+						un(ELITE_PVP_REQUIREMENT, i(149206)),	-- Demonic Gladiator's Dragonhide Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149196)),	-- Demonic Gladiator's Dragonhide Vest
+						un(ELITE_PVP_REQUIREMENT, i(149210)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
 					cl(HUNTER, {
-						un(14, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
-						un(14, i(149226)),	-- Demonic Gladiator's Chain Armband
-						un(14, i(149212)),	-- Demonic Gladiator's Chain Armor
-						un(14, i(149224)),	-- Demonic Gladiator's Chain Clasp
-						un(14, i(149216)),	-- Demonic Gladiator's Chain Gauntlets
-						un(14, i(149218)),	-- Demonic Gladiator's Chain Helm
-						un(14, i(149220)),	-- Demonic Gladiator's Chain Leggings
-						un(14, i(149222)),	-- Demonic Gladiator's Chain Spaulders
-						un(14, i(149214)),	-- Demonic Gladiator's Chain Treads
+						un(ELITE_PVP_REQUIREMENT, i(149146)),	-- Demonic Gladiator's Drape of the Tracker
+						un(ELITE_PVP_REQUIREMENT, i(149226)),	-- Demonic Gladiator's Chain Armband
+						un(ELITE_PVP_REQUIREMENT, i(149212)),	-- Demonic Gladiator's Chain Armor
+						un(ELITE_PVP_REQUIREMENT, i(149224)),	-- Demonic Gladiator's Chain Clasp
+						un(ELITE_PVP_REQUIREMENT, i(149216)),	-- Demonic Gladiator's Chain Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149218)),	-- Demonic Gladiator's Chain Helm
+						un(ELITE_PVP_REQUIREMENT, i(149220)),	-- Demonic Gladiator's Chain Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149222)),	-- Demonic Gladiator's Chain Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149214)),	-- Demonic Gladiator's Chain Treads
 					}),
 					cl(MAGE, {
-						un(14, i(149238)),	-- Demonic Gladiator's Silk Amice
-						un(14, i(149242)),	-- Demonic Gladiator's Silk Bracers
-						un(14, i(149240)),	-- Demonic Gladiator's Silk Cord
-						un(14, i(149232)),	-- Demonic Gladiator's Silk Cowl
-						un(14, i(149230)),	-- Demonic Gladiator's Silk Handguards
-						un(14, i(149228)),	-- Demonic Gladiator's Silk Treads
-						un(14, i(149234)),	-- Demonic Gladiator's Silk Trousers
-						un(14, i(149236)),	-- Demonic Gladiator's Silk Tunic
-						un(14, i(149148)),	-- Demonic Gladiator's Silken Shawl
+						un(ELITE_PVP_REQUIREMENT, i(149238)),	-- Demonic Gladiator's Silk Amice
+						un(ELITE_PVP_REQUIREMENT, i(149242)),	-- Demonic Gladiator's Silk Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149240)),	-- Demonic Gladiator's Silk Cord
+						un(ELITE_PVP_REQUIREMENT, i(149232)),	-- Demonic Gladiator's Silk Cowl
+						un(ELITE_PVP_REQUIREMENT, i(149230)),	-- Demonic Gladiator's Silk Handguards
+						un(ELITE_PVP_REQUIREMENT, i(149228)),	-- Demonic Gladiator's Silk Treads
+						un(ELITE_PVP_REQUIREMENT, i(149234)),	-- Demonic Gladiator's Silk Trousers
+						un(ELITE_PVP_REQUIREMENT, i(149236)),	-- Demonic Gladiator's Silk Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149148)),	-- Demonic Gladiator's Silken Shawl
 					}),
 					cl(MONK, {
-						un(14, i(149256)),	-- Demonic Gladiator's Ironskin Belt
-						un(14, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
-						un(14, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
-						un(14, i(149248)),	-- Demonic Gladiator's Ironskin Helm
-						un(14, i(149250)),	-- Demonic Gladiator's Ironskin Legguards
-						un(14, i(149244)),	-- Demonic Gladiator's Ironskin Slippers
-						un(14, i(149252)),	-- Demonic Gladiator's Ironskin Spaulders
-						un(14, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
-						un(14, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149256)),	-- Demonic Gladiator's Ironskin Belt
+						un(ELITE_PVP_REQUIREMENT, i(149150)),	-- Demonic Gladiator's Ironskin Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149246)),	-- Demonic Gladiator's Ironskin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149248)),	-- Demonic Gladiator's Ironskin Helm
+						un(ELITE_PVP_REQUIREMENT, i(149250)),	-- Demonic Gladiator's Ironskin Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149244)),	-- Demonic Gladiator's Ironskin Slippers
+						un(ELITE_PVP_REQUIREMENT, i(149252)),	-- Demonic Gladiator's Ironskin Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149254)),	-- Demonic Gladiator's Ironskin Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149258)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
 					cl(PALADIN, {
-						un(14, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
-						un(14, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
-						un(14, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
-						un(14, i(149278)),	-- Demonic Gladiator's Scaled Girdle
-						un(14, i(149272)),	-- Demonic Gladiator's Scaled Helm
-						un(14, i(149274)),	-- Demonic Gladiator's Scaled Legguards
-						un(14, i(149268)),	-- Demonic Gladiator's Scaled Sabatons
-						un(14, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
-						un(14, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149152)),	-- Demonic Gladiator's Greatcloak of Faith
+						un(ELITE_PVP_REQUIREMENT, i(149266)),	-- Demonic Gladiator's Scaled Breastplate
+						un(ELITE_PVP_REQUIREMENT, i(149270)),	-- Demonic Gladiator's Scaled Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149278)),	-- Demonic Gladiator's Scaled Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149272)),	-- Demonic Gladiator's Scaled Helm
+						un(ELITE_PVP_REQUIREMENT, i(149274)),	-- Demonic Gladiator's Scaled Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149268)),	-- Demonic Gladiator's Scaled Sabatons
+						un(ELITE_PVP_REQUIREMENT, i(149276)),	-- Demonic Gladiator's Scaled Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149280)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
 					cl(PRIEST, {
-						un(14, i(149154)),	-- Demonic Gladiator's Drape of Piety
-						un(14, i(149296)),	-- Demonic Gladiator's Satin Bracers
-						un(14, i(149294)),	-- Demonic Gladiator's Satin Cord
-						un(14, i(149284)),	-- Demonic Gladiator's Satin Gloves
-						un(14, i(149286)),	-- Demonic Gladiator's Satin Hood
-						un(14, i(149288)),	-- Demonic Gladiator's Satin Leggings
-						un(14, i(149292)),	-- Demonic Gladiator's Satin Mantle
-						un(14, i(149290)),	-- Demonic Gladiator's Satin Robe
-						un(14, i(149282)),	-- Demonic Gladiator's Satin Treads
+						un(ELITE_PVP_REQUIREMENT, i(149154)),	-- Demonic Gladiator's Drape of Piety
+						un(ELITE_PVP_REQUIREMENT, i(149296)),	-- Demonic Gladiator's Satin Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149294)),	-- Demonic Gladiator's Satin Cord
+						un(ELITE_PVP_REQUIREMENT, i(149284)),	-- Demonic Gladiator's Satin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149286)),	-- Demonic Gladiator's Satin Hood
+						un(ELITE_PVP_REQUIREMENT, i(149288)),	-- Demonic Gladiator's Satin Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149292)),	-- Demonic Gladiator's Satin Mantle
+						un(ELITE_PVP_REQUIREMENT, i(149290)),	-- Demonic Gladiator's Satin Robe
+						un(ELITE_PVP_REQUIREMENT, i(149282)),	-- Demonic Gladiator's Satin Treads
 					}),
 					cl(ROGUE, {
-						un(14, i(149316)),	-- Demonic Gladiator's Leather Belt
-						un(14, i(149308)),	-- Demonic Gladiator's Leather Gloves
-						un(14, i(149310)),	-- Demonic Gladiator's Leather Helm
-						un(14, i(149312)),	-- Demonic Gladiator's Leather Legguards
-						un(14, i(149306)),	-- Demonic Gladiator's Leather Slippers
-						un(14, i(149314)),	-- Demonic Gladiator's Leather Spaulders
-						un(14, i(149304)),	-- Demonic Gladiator's Leather Tunic
-						un(14, i(149318)),	-- Demonic Gladiator's Leather Wristguards
-						un(14, i(149156)),	-- Demonic Gladiator's Shadowcape
+						un(ELITE_PVP_REQUIREMENT, i(149316)),	-- Demonic Gladiator's Leather Belt
+						un(ELITE_PVP_REQUIREMENT, i(149308)),	-- Demonic Gladiator's Leather Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149310)),	-- Demonic Gladiator's Leather Helm
+						un(ELITE_PVP_REQUIREMENT, i(149312)),	-- Demonic Gladiator's Leather Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149306)),	-- Demonic Gladiator's Leather Slippers
+						un(ELITE_PVP_REQUIREMENT, i(149314)),	-- Demonic Gladiator's Leather Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149304)),	-- Demonic Gladiator's Leather Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149318)),	-- Demonic Gladiator's Leather Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149156)),	-- Demonic Gladiator's Shadowcape
 					}),
 					cl(SHAMAN, {
-						un(14, i(149334)),	-- Demonic Gladiator's Ringmail Armband
-						un(14, i(149320)),	-- Demonic Gladiator's Ringmail Armor
-						un(14, i(149322)),	-- Demonic Gladiator's Ringmail Boots
-						un(14, i(149332)),	-- Demonic Gladiator's Ringmail Clasp
-						un(14, i(149324)),	-- Demonic Gladiator's Ringmail Gauntlets
-						un(14, i(149326)),	-- Demonic Gladiator's Ringmail Helm
-						un(14, i(149328)),	-- Demonic Gladiator's Ringmail Leggings
-						un(14, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
-						un(14, i(149158)),	-- Demonic Gladiator's Totemic Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149334)),	-- Demonic Gladiator's Ringmail Armband
+						un(ELITE_PVP_REQUIREMENT, i(149320)),	-- Demonic Gladiator's Ringmail Armor
+						un(ELITE_PVP_REQUIREMENT, i(149322)),	-- Demonic Gladiator's Ringmail Boots
+						un(ELITE_PVP_REQUIREMENT, i(149332)),	-- Demonic Gladiator's Ringmail Clasp
+						un(ELITE_PVP_REQUIREMENT, i(149324)),	-- Demonic Gladiator's Ringmail Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149326)),	-- Demonic Gladiator's Ringmail Helm
+						un(ELITE_PVP_REQUIREMENT, i(149328)),	-- Demonic Gladiator's Ringmail Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149330)),	-- Demonic Gladiator's Ringmail Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149158)),	-- Demonic Gladiator's Totemic Cloak
 					}),
 					cl(WARLOCK, {
-						un(14, i(149364)),	-- Demonic Gladiator's Felweave Amice
-						un(14, i(149368)),	-- Demonic Gladiator's Felweave Bracers
-						un(14, i(149160)),	-- Demonic Gladiator's Felweave Cloak
-						un(14, i(149366)),	-- Demonic Gladiator's Felweave Cord
-						un(14, i(149358)),	-- Demonic Gladiator's Felweave Cowl
-						un(14, i(149356)),	-- Demonic Gladiator's Felweave Handguards
-						un(14, i(149362)),	-- Demonic Gladiator's Felweave Raiment
-						un(14, i(149354)),	-- Demonic Gladiator's Felweave Treads
-						un(14, i(149360)),	-- Demonic Gladiator's Felweave Trousers
+						un(ELITE_PVP_REQUIREMENT, i(149364)),	-- Demonic Gladiator's Felweave Amice
+						un(ELITE_PVP_REQUIREMENT, i(149368)),	-- Demonic Gladiator's Felweave Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149160)),	-- Demonic Gladiator's Felweave Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149366)),	-- Demonic Gladiator's Felweave Cord
+						un(ELITE_PVP_REQUIREMENT, i(149358)),	-- Demonic Gladiator's Felweave Cowl
+						un(ELITE_PVP_REQUIREMENT, i(149356)),	-- Demonic Gladiator's Felweave Handguards
+						un(ELITE_PVP_REQUIREMENT, i(149362)),	-- Demonic Gladiator's Felweave Raiment
+						un(ELITE_PVP_REQUIREMENT, i(149354)),	-- Demonic Gladiator's Felweave Treads
+						un(ELITE_PVP_REQUIREMENT, i(149360)),	-- Demonic Gladiator's Felweave Trousers
 					}),
 					cl(WARRIOR, {
-						un(14, i(149162)),	-- Demonic Gladiator's Cloak of Battle
-						un(14, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
-						un(14, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
-						un(14, i(149382)),	-- Demonic Gladiator's Plate Girdle
-						un(14, i(149376)),	-- Demonic Gladiator's Plate Helm
-						un(14, i(149378)),	-- Demonic Gladiator's Plate Legguards
-						un(14, i(149380)),	-- Demonic Gladiator's Plate Shoulders
-						un(14, i(149372)),	-- Demonic Gladiator's Plate Warboots
-						un(14, i(149384)),	-- Demonic Gladiator's Plate Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149162)),	-- Demonic Gladiator's Cloak of Battle
+						un(ELITE_PVP_REQUIREMENT, i(149370)),	-- Demonic Gladiator's Plate Chestpiece
+						un(ELITE_PVP_REQUIREMENT, i(149374)),	-- Demonic Gladiator's Plate Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149382)),	-- Demonic Gladiator's Plate Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149376)),	-- Demonic Gladiator's Plate Helm
+						un(ELITE_PVP_REQUIREMENT, i(149378)),	-- Demonic Gladiator's Plate Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149380)),	-- Demonic Gladiator's Plate Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149372)),	-- Demonic Gladiator's Plate Warboots
+						un(ELITE_PVP_REQUIREMENT, i(149384)),	-- Demonic Gladiator's Plate Wristplates
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149260)), -- Demonic Gladiator's Necklace (A)
@@ -12119,136 +12119,136 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating] h
 					un(REMOVED_FROM_GAME, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating] h
 					cl(DEATHKNIGHT, {
-						un(14, i(149141)),	-- Demonic Gladiator's Dreadcloak
-						un(14, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
-						un(14, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
-						un(14, i(149177)),	-- Demonic Gladiator's Dreadplate Girdle
-						un(14, i(149171)),	-- Demonic Gladiator's Dreadplate Helm
-						un(14, i(149173)),	-- Demonic Gladiator's Dreadplate Legguards
-						un(14, i(149167)),	-- Demonic Gladiator's Dreadplate Sabatons
-						un(14, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
-						un(14, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149141)),	-- Demonic Gladiator's Dreadcloak
+						un(ELITE_PVP_REQUIREMENT, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
+						un(ELITE_PVP_REQUIREMENT, i(149169)),	-- Demonic Gladiator's Dreadplate Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149177)),	-- Demonic Gladiator's Dreadplate Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149171)),	-- Demonic Gladiator's Dreadplate Helm
+						un(ELITE_PVP_REQUIREMENT, i(149173)),	-- Demonic Gladiator's Dreadplate Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149167)),	-- Demonic Gladiator's Dreadplate Sabatons
+						un(ELITE_PVP_REQUIREMENT, i(149175)),	-- Demonic Gladiator's Dreadplate Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149179)),	-- Demonic Gladiator's Dreadplate Wristplates
 					}),
 					cl(DEMONHUNTER, {
-						un(14, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
-						un(14, i(149193)),	-- Demonic Gladiator's Felskin Belt
-						un(14, i(149183)),	-- Demonic Gladiator's Felskin Boots
-						un(14, i(149185)),	-- Demonic Gladiator's Felskin Gloves
-						un(14, i(149187)),	-- Demonic Gladiator's Felskin Helm
-						un(14, i(149189)),	-- Demonic Gladiator's Felskin Legguards
-						un(14, i(149191)),	-- Demonic Gladiator's Felskin Spaulders
-						un(14, i(149181)),	-- Demonic Gladiator's Felskin Tunic
-						un(14, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149143)),	-- Demonic Gladiator's Demonthread Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149193)),	-- Demonic Gladiator's Felskin Belt
+						un(ELITE_PVP_REQUIREMENT, i(149183)),	-- Demonic Gladiator's Felskin Boots
+						un(ELITE_PVP_REQUIREMENT, i(149185)),	-- Demonic Gladiator's Felskin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149187)),	-- Demonic Gladiator's Felskin Helm
+						un(ELITE_PVP_REQUIREMENT, i(149189)),	-- Demonic Gladiator's Felskin Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149191)),	-- Demonic Gladiator's Felskin Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149181)),	-- Demonic Gladiator's Felskin Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149195)),	-- Demonic Gladiator's Felskin Wristguards
 					}),
 					cl(DRUID, {
-						un(14, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
-						un(14, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
-						un(14, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
-						un(14, i(149203)),	-- Demonic Gladiator's Dragonhide Helm
-						un(14, i(149205)),	-- Demonic Gladiator's Dragonhide Legguards
-						un(14, i(149199)),	-- Demonic Gladiator's Dragonhide Moccasins
-						un(14, i(149207)),	-- Demonic Gladiator's Dragonhide Spaulders
-						un(14, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
-						un(14, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149209)),	-- Demonic Gladiator's Dragonhide Belt
+						un(ELITE_PVP_REQUIREMENT, i(149145)),	-- Demonic Gladiator's Dragonhide Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149201)),	-- Demonic Gladiator's Dragonhide Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149203)),	-- Demonic Gladiator's Dragonhide Helm
+						un(ELITE_PVP_REQUIREMENT, i(149205)),	-- Demonic Gladiator's Dragonhide Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149199)),	-- Demonic Gladiator's Dragonhide Moccasins
+						un(ELITE_PVP_REQUIREMENT, i(149207)),	-- Demonic Gladiator's Dragonhide Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149197)),	-- Demonic Gladiator's Dragonhide Vest
+						un(ELITE_PVP_REQUIREMENT, i(149211)),	-- Demonic Gladiator's Dragonhide Wristguards
 					}),
 					cl(HUNTER, {
-						un(14, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
-						un(14, i(149227)),	-- Demonic Gladiator's Chain Armband
-						un(14, i(149213)),	-- Demonic Gladiator's Chain Armor
-						un(14, i(149225)),	-- Demonic Gladiator's Chain Clasp
-						un(14, i(149217)),	-- Demonic Gladiator's Chain Gauntlets
-						un(14, i(149219)),	-- Demonic Gladiator's Chain Helm
-						un(14, i(149221)),	-- Demonic Gladiator's Chain Leggings
-						un(14, i(149223)),	-- Demonic Gladiator's Chain Spaulders
-						un(14, i(149215)),	-- Demonic Gladiator's Chain Treads
+						un(ELITE_PVP_REQUIREMENT, i(149147)),	-- Demonic Gladiator's Drape of the Tracker
+						un(ELITE_PVP_REQUIREMENT, i(149227)),	-- Demonic Gladiator's Chain Armband
+						un(ELITE_PVP_REQUIREMENT, i(149213)),	-- Demonic Gladiator's Chain Armor
+						un(ELITE_PVP_REQUIREMENT, i(149225)),	-- Demonic Gladiator's Chain Clasp
+						un(ELITE_PVP_REQUIREMENT, i(149217)),	-- Demonic Gladiator's Chain Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149219)),	-- Demonic Gladiator's Chain Helm
+						un(ELITE_PVP_REQUIREMENT, i(149221)),	-- Demonic Gladiator's Chain Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149223)),	-- Demonic Gladiator's Chain Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149215)),	-- Demonic Gladiator's Chain Treads
 					}),
 					cl(MAGE, {
-						un(14, i(149239)),	-- Demonic Gladiator's Silk Amice
-						un(14, i(149243)),	-- Demonic Gladiator's Silk Bracers
-						un(14, i(149241)),	-- Demonic Gladiator's Silk Cord
-						un(14, i(149233)),	-- Demonic Gladiator's Silk Cowl
-						un(14, i(149231)),	-- Demonic Gladiator's Silk Handguards
-						un(14, i(149229)),	-- Demonic Gladiator's Silk Treads
-						un(14, i(149235)),	-- Demonic Gladiator's Silk Trousers
-						un(14, i(149237)),	-- Demonic Gladiator's Silk Tunic
-						un(14, i(149149)),	-- Demonic Gladiator's Silken Shawl
+						un(ELITE_PVP_REQUIREMENT, i(149239)),	-- Demonic Gladiator's Silk Amice
+						un(ELITE_PVP_REQUIREMENT, i(149243)),	-- Demonic Gladiator's Silk Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149241)),	-- Demonic Gladiator's Silk Cord
+						un(ELITE_PVP_REQUIREMENT, i(149233)),	-- Demonic Gladiator's Silk Cowl
+						un(ELITE_PVP_REQUIREMENT, i(149231)),	-- Demonic Gladiator's Silk Handguards
+						un(ELITE_PVP_REQUIREMENT, i(149229)),	-- Demonic Gladiator's Silk Treads
+						un(ELITE_PVP_REQUIREMENT, i(149235)),	-- Demonic Gladiator's Silk Trousers
+						un(ELITE_PVP_REQUIREMENT, i(149237)),	-- Demonic Gladiator's Silk Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149149)),	-- Demonic Gladiator's Silken Shawl
 					}),
 					cl(MONK, {
-						un(14, i(149257)),	-- Demonic Gladiator's Ironskin Belt
-						un(14, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
-						un(14, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
-						un(14, i(149249)),	-- Demonic Gladiator's Ironskin Helm
-						un(14, i(149251)),	-- Demonic Gladiator's Ironskin Legguards
-						un(14, i(149245)),	-- Demonic Gladiator's Ironskin Slippers
-						un(14, i(149253)),	-- Demonic Gladiator's Ironskin Spaulders
-						un(14, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
-						un(14, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149257)),	-- Demonic Gladiator's Ironskin Belt
+						un(ELITE_PVP_REQUIREMENT, i(149151)),	-- Demonic Gladiator's Ironskin Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149247)),	-- Demonic Gladiator's Ironskin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149249)),	-- Demonic Gladiator's Ironskin Helm
+						un(ELITE_PVP_REQUIREMENT, i(149251)),	-- Demonic Gladiator's Ironskin Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149245)),	-- Demonic Gladiator's Ironskin Slippers
+						un(ELITE_PVP_REQUIREMENT, i(149253)),	-- Demonic Gladiator's Ironskin Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149255)),	-- Demonic Gladiator's Ironskin Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149259)),	-- Demonic Gladiator's Ironskin Wristguards
 					}),
 					cl(PALADIN, {
-						un(14, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
-						un(14, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
-						un(14, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
-						un(14, i(149279)),	-- Demonic Gladiator's Scaled Girdle
-						un(14, i(149273)),	-- Demonic Gladiator's Scaled Helm
-						un(14, i(149275)),	-- Demonic Gladiator's Scaled Legguards
-						un(14, i(149269)),	-- Demonic Gladiator's Scaled Sabatons
-						un(14, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
-						un(14, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149153)),	-- Demonic Gladiator's Greatcloak of Faith
+						un(ELITE_PVP_REQUIREMENT, i(149267)),	-- Demonic Gladiator's Scaled Breastplate
+						un(ELITE_PVP_REQUIREMENT, i(149271)),	-- Demonic Gladiator's Scaled Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149279)),	-- Demonic Gladiator's Scaled Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149273)),	-- Demonic Gladiator's Scaled Helm
+						un(ELITE_PVP_REQUIREMENT, i(149275)),	-- Demonic Gladiator's Scaled Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149269)),	-- Demonic Gladiator's Scaled Sabatons
+						un(ELITE_PVP_REQUIREMENT, i(149277)),	-- Demonic Gladiator's Scaled Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149281)),	-- Demonic Gladiator's Scaled Wristplates
 					}),
 					cl(PRIEST, {
-						un(14, i(149155)),	-- Demonic Gladiator's Drape of Piety
-						un(14, i(149297)),	-- Demonic Gladiator's Satin Bracers
-						un(14, i(149295)),	-- Demonic Gladiator's Satin Cord
-						un(14, i(149285)),	-- Demonic Gladiator's Satin Gloves
-						un(14, i(149287)),	-- Demonic Gladiator's Satin Hood
-						un(14, i(149289)),	-- Demonic Gladiator's Satin Leggings
-						un(14, i(149293)),	-- Demonic Gladiator's Satin Mantle
-						un(14, i(149291)),	-- Demonic Gladiator's Satin Robe
-						un(14, i(149283)),	-- Demonic Gladiator's Satin Treads
+						un(ELITE_PVP_REQUIREMENT, i(149155)),	-- Demonic Gladiator's Drape of Piety
+						un(ELITE_PVP_REQUIREMENT, i(149297)),	-- Demonic Gladiator's Satin Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149295)),	-- Demonic Gladiator's Satin Cord
+						un(ELITE_PVP_REQUIREMENT, i(149285)),	-- Demonic Gladiator's Satin Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149287)),	-- Demonic Gladiator's Satin Hood
+						un(ELITE_PVP_REQUIREMENT, i(149289)),	-- Demonic Gladiator's Satin Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149293)),	-- Demonic Gladiator's Satin Mantle
+						un(ELITE_PVP_REQUIREMENT, i(149291)),	-- Demonic Gladiator's Satin Robe
+						un(ELITE_PVP_REQUIREMENT, i(149283)),	-- Demonic Gladiator's Satin Treads
 					}),
 					cl(ROGUE, {
-						un(14, i(149317)),	-- Demonic Gladiator's Leather Belt
-						un(14, i(149309)),	-- Demonic Gladiator's Leather Gloves
-						un(14, i(149311)),	-- Demonic Gladiator's Leather Helm
-						un(14, i(149313)),	-- Demonic Gladiator's Leather Legguards
-						un(14, i(149307)),	-- Demonic Gladiator's Leather Slippers
-						un(14, i(149315)),	-- Demonic Gladiator's Leather Spaulders
-						un(14, i(149305)),	-- Demonic Gladiator's Leather Tunic
-						un(14, i(149319)),	-- Demonic Gladiator's Leather Wristguards
-						un(14, i(149157)),	-- Demonic Gladiator's Shadowcape
+						un(ELITE_PVP_REQUIREMENT, i(149317)),	-- Demonic Gladiator's Leather Belt
+						un(ELITE_PVP_REQUIREMENT, i(149309)),	-- Demonic Gladiator's Leather Gloves
+						un(ELITE_PVP_REQUIREMENT, i(149311)),	-- Demonic Gladiator's Leather Helm
+						un(ELITE_PVP_REQUIREMENT, i(149313)),	-- Demonic Gladiator's Leather Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149307)),	-- Demonic Gladiator's Leather Slippers
+						un(ELITE_PVP_REQUIREMENT, i(149315)),	-- Demonic Gladiator's Leather Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149305)),	-- Demonic Gladiator's Leather Tunic
+						un(ELITE_PVP_REQUIREMENT, i(149319)),	-- Demonic Gladiator's Leather Wristguards
+						un(ELITE_PVP_REQUIREMENT, i(149157)),	-- Demonic Gladiator's Shadowcape
 					}),
 					cl(SHAMAN, {
-						un(14, i(149335)),	-- Demonic Gladiator's Ringmail Armband
-						un(14, i(149321)),	-- Demonic Gladiator's Ringmail Armor
-						un(14, i(149323)),	-- Demonic Gladiator's Ringmail Boots
-						un(14, i(149333)),	-- Demonic Gladiator's Ringmail Clasp
-						un(14, i(149325)),	-- Demonic Gladiator's Ringmail Gauntlets
-						un(14, i(149327)),	-- Demonic Gladiator's Ringmail Helm
-						un(14, i(149329)),	-- Demonic Gladiator's Ringmail Leggings
-						un(14, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
-						un(14, i(149159)),	-- Demonic Gladiator's Totemic Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149335)),	-- Demonic Gladiator's Ringmail Armband
+						un(ELITE_PVP_REQUIREMENT, i(149321)),	-- Demonic Gladiator's Ringmail Armor
+						un(ELITE_PVP_REQUIREMENT, i(149323)),	-- Demonic Gladiator's Ringmail Boots
+						un(ELITE_PVP_REQUIREMENT, i(149333)),	-- Demonic Gladiator's Ringmail Clasp
+						un(ELITE_PVP_REQUIREMENT, i(149325)),	-- Demonic Gladiator's Ringmail Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149327)),	-- Demonic Gladiator's Ringmail Helm
+						un(ELITE_PVP_REQUIREMENT, i(149329)),	-- Demonic Gladiator's Ringmail Leggings
+						un(ELITE_PVP_REQUIREMENT, i(149331)),	-- Demonic Gladiator's Ringmail Spaulders
+						un(ELITE_PVP_REQUIREMENT, i(149159)),	-- Demonic Gladiator's Totemic Cloak
 					}),
 					cl(WARLOCK, {
-						un(14, i(149365)),	-- Demonic Gladiator's Felweave Amice
-						un(14, i(149369)),	-- Demonic Gladiator's Felweave Bracers
-						un(14, i(149161)),	-- Demonic Gladiator's Felweave Cloak
-						un(14, i(149367)),	-- Demonic Gladiator's Felweave Cord
-						un(14, i(149359)),	-- Demonic Gladiator's Felweave Cowl
-						un(14, i(149357)),	-- Demonic Gladiator's Felweave Handguards
-						un(14, i(149363)),	-- Demonic Gladiator's Felweave Raiment
-						un(14, i(149355)),	-- Demonic Gladiator's Felweave Treads
-						un(14, i(149361)),	-- Demonic Gladiator's Felweave Trousers
+						un(ELITE_PVP_REQUIREMENT, i(149365)),	-- Demonic Gladiator's Felweave Amice
+						un(ELITE_PVP_REQUIREMENT, i(149369)),	-- Demonic Gladiator's Felweave Bracers
+						un(ELITE_PVP_REQUIREMENT, i(149161)),	-- Demonic Gladiator's Felweave Cloak
+						un(ELITE_PVP_REQUIREMENT, i(149367)),	-- Demonic Gladiator's Felweave Cord
+						un(ELITE_PVP_REQUIREMENT, i(149359)),	-- Demonic Gladiator's Felweave Cowl
+						un(ELITE_PVP_REQUIREMENT, i(149357)),	-- Demonic Gladiator's Felweave Handguards
+						un(ELITE_PVP_REQUIREMENT, i(149363)),	-- Demonic Gladiator's Felweave Raiment
+						un(ELITE_PVP_REQUIREMENT, i(149355)),	-- Demonic Gladiator's Felweave Treads
+						un(ELITE_PVP_REQUIREMENT, i(149361)),	-- Demonic Gladiator's Felweave Trousers
 					}),
 					cl(WARRIOR, {
-						un(14, i(149163)),	-- Demonic Gladiator's Cloak of Battle
-						un(14, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
-						un(14, i(149375)),	-- Demonic Gladiator's Plate Gauntlets
-						un(14, i(149383)),	-- Demonic Gladiator's Plate Girdle
-						un(14, i(149377)),	-- Demonic Gladiator's Plate Helm
-						un(14, i(149379)),	-- Demonic Gladiator's Plate Legguards
-						un(14, i(149381)),	-- Demonic Gladiator's Plate Shoulders
-						un(14, i(149373)),	-- Demonic Gladiator's Plate Warboots
-						un(14, i(149385)),	-- Demonic Gladiator's Plate Wristplates
+						un(ELITE_PVP_REQUIREMENT, i(149163)),	-- Demonic Gladiator's Cloak of Battle
+						un(ELITE_PVP_REQUIREMENT, i(149371)),	-- Demonic Gladiator's Plate Chestpiece
+						un(ELITE_PVP_REQUIREMENT, i(149375)),	-- Demonic Gladiator's Plate Gauntlets
+						un(ELITE_PVP_REQUIREMENT, i(149383)),	-- Demonic Gladiator's Plate Girdle
+						un(ELITE_PVP_REQUIREMENT, i(149377)),	-- Demonic Gladiator's Plate Helm
+						un(ELITE_PVP_REQUIREMENT, i(149379)),	-- Demonic Gladiator's Plate Legguards
+						un(ELITE_PVP_REQUIREMENT, i(149381)),	-- Demonic Gladiator's Plate Shoulders
+						un(ELITE_PVP_REQUIREMENT, i(149373)),	-- Demonic Gladiator's Plate Warboots
+						un(ELITE_PVP_REQUIREMENT, i(149385)),	-- Demonic Gladiator's Plate Wristplates
 					}),
 					n(NECK, {
 						un(REMOVED_FROM_GAME, i(149261)), -- Demonic Gladiator's Necklace (H)

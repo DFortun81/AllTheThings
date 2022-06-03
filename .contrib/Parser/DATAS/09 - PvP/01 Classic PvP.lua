@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
-	["groups"] = bubbleDown({ ["u"] = 4 },{
+	["groups"] = bubbleDown({ ["u"] = ELITE_PVP_REQUIREMENT },{
 		n(FACTION_HEADER_ALLIANCE, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {

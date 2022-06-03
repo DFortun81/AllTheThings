@@ -3271,7 +3271,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
-						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						n(WEAPONS, {
 							i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

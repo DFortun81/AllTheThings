@@ -891,8 +891,8 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-						un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
+						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak
@@ -1456,8 +1456,8 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-						un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
+						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak
