@@ -282,6 +282,13 @@ namespace ATT
         };
 
         /// <summary>
+        /// Populated with a set of parsed Item Dictionary datas which will conditionally be merged following the DataValidation phase. This
+        /// is useful to be able to define specific relationships on specific Items (Mount/Pet/etc.) and only incorporate the relationship if
+        /// the Item is Sourced elsewhere for the specific ATT Build
+        /// </summary>
+        internal static List<Dictionary<string, object>> ConditionalItemData { get; } = new List<Dictionary<string, object>>();
+
+        /// <summary>
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
@@ -1952,6 +1959,14 @@ namespace ATT
         /// </summary>
         private static void AdditionalProcessing()
         {
+            // Merge conditional data
+            ProcessingMergeData = true;
+            foreach (var data in ConditionalItemData)
+            {
+                Items.Merge(data, true);
+            }
+            ProcessingMergeData = false;
+
             // Go through and merge all of the item species data into the item containers.
             foreach (var pair in Items.AllItemsWithSpecies)
             {
@@ -2649,11 +2664,11 @@ namespace ATT
                         }
                     case "ItemDB":
                         {
+                            ProcessingMergeData = true;
                             // The format of the Item DB is a dictionary of item ID -> Values.
                             // This is slightly more annoying to parse, but it works okay.
                             if (pair.Value is Dictionary<long, object> itemDB)
                             {
-                                ProcessingMergeData = true;
                                 foreach (var itemValuePair in itemDB)
                                 {
                                     if (itemValuePair.Value is Dictionary<string, object> item)
@@ -2668,7 +2683,6 @@ namespace ATT
                                         Console.ReadLine();
                                     }
                                 }
-                                ProcessingMergeData = false;
                             }
                             else if (pair.Value is List<object> items)
                             {
@@ -2691,8 +2705,53 @@ namespace ATT
                                 Console.WriteLine("ItemDB not in the correct format!");
                                 Console.ReadLine();
                             }
-                            break;
+                            ProcessingMergeData = false;
                         }
+                        break;
+                    case "ItemDBConditional":
+                        {
+                            // The format of the Item DB is a dictionary of item ID -> Values.
+                            // This is slightly more annoying to parse, but it works okay.
+                            if (pair.Value is Dictionary<long, object> itemDB)
+                            {
+                                foreach (var itemValuePair in itemDB)
+                                {
+                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    {
+                                        item["itemID"] = itemValuePair.Key;
+                                        ConditionalItemData.Add(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else if (pair.Value is List<object> items)
+                            {
+                                foreach (var o in items)
+                                {
+                                    if (o is Dictionary<string, object> item)
+                                    {
+                                        ConditionalItemData.Add(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
                     case "ItemMountDB":
                         {
                             // The format of the Item Mount DB is a dictionary of item ID -> Spell ID.

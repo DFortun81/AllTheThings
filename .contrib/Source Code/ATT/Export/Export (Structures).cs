@@ -62,7 +62,7 @@ namespace ATT
 
                 // Reduce the allowed set of replacements
                 order = order
-                    .TakeWhile(a => a.Value > minimumReplacements)
+                    .TakeWhile(a => a.Value >= minimumReplacements)
                     .Take(maximum)
                     .ToList();
 

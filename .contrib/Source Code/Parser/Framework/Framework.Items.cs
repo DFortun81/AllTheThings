@@ -766,10 +766,11 @@ namespace ATT
 
             /// <summary>
             /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.
+            /// NOTE: Only data containing an itemID will merge.<para/>
+            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
-            public static void Merge(Dictionary<string, object> data)
+            public static void Merge(Dictionary<string, object> data, bool conditionalMerge = false)
             {
                 // Ignore this for Artifacts.
                 if (data.ContainsKey("artifactID")) return;
@@ -787,10 +788,11 @@ namespace ATT
                 {
                     //long itemID = Convert.ToInt64(itemIDRef);
                     //if (itemID < 1) return;
-                    var item = Get(data);
+                    var item = conditionalMerge ? GetNull(data) : Get(data);
                     //decimal specificItemID = decimal.Truncate(GetSpecificItemID(data));
                     //if (specificItemID == 143643) { Trace.WriteLine("Before:" + MiniJSON.Json.Serialize(item)); Trace.WriteLine("Merge:" + MiniJSON.Json.Serialize(data)); }
-                    foreach (var pair in data) Merge(item, pair.Key, pair.Value);
+                    if (item != null)
+                        foreach (var pair in data) Merge(item, pair.Key, pair.Value);
                     //if (specificItemID == 143643) Trace.WriteLine("After:" + MiniJSON.Json.Serialize(item));
                 }
             }
