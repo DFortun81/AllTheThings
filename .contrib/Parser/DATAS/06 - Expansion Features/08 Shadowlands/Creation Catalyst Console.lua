@@ -69,7 +69,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		["sourceQuest"] = 64842,	-- Flora Frenzy (technically the console was interactible after completing this quest, possibly earlier)
 		["g"] = {
 			d(17, {	-- LFR
-				["description"] = "This is theorized to be available from LFR gear.",
+				["description"] = "Items of 249 item level or lower will take the LFR appearance.",
 				["g"] = bubbleDown({ ["modID"] = 4 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 4),
@@ -182,7 +182,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(14, {	-- Normal
-				["description"] = "This is theorized to be available from Normal gear.",
+				["description"] = "Items between 252 and 262 item level will take the Normal appearance.",
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 3),
@@ -295,7 +295,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(15, {	-- Heroic
-				["description"] = "This. is theorized to be available from Heroic gear.",
+				["description"] = "Items between 265 and 275 item level will take the Heroic appearance.",
 				["g"] = bubbleDown({ ["modID"] = 5 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 5),
@@ -408,7 +408,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(16, {	-- Mythic
-				["description"] = "This is theorized to be available from Mythic gear.",
+				["description"] = "Items at 278 item level or above will take the Mythic Appearance.",
 				["g"] = bubbleDown({ ["modID"] = 6  }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 6),
