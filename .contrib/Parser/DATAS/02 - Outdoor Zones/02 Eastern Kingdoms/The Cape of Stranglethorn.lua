@@ -1122,13 +1122,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(17249, {	-- Landro Longshot <The Black Flame>
-					["coord"] = { 42.6, 71.5, THE_CAPE_OF_STRANGLETHORN },
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
-						un(REMOVED_FROM_GAME, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
-					},
-				}),
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
 					["coord"] = { 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {

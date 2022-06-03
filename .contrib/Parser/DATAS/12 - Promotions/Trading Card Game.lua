@@ -187,6 +187,9 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 	}),
 	filter(TOYS, {
+		i(23716, {	-- Carved Ogre Idol
+			["timeline"] = { "added 2.2.3" },
+		}),
 		i(49704, {	-- Carved Ogre Idol (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },
 		}),
@@ -242,6 +245,9 @@ root("Promotions", n(TCG_HEADER, bubbleDown({
 		}),
 		i(34499, {	-- Paper Flying Machine Kit (TOY!)
 			["timeline"] = { "added 2.3.0.7561" },
+		}),
+		i(23714, {	-- Perpetual Purple Firework
+			["timeline"] = { "added 2.2.3" },
 		}),
 		i(49703, {	-- Perpetual Purple Firework (TOY!)
 			["timeline"] = { "added 3.2.2.10468" },

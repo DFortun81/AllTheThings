@@ -198,124 +198,124 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				cl(WARRIOR, {
 					-- High Warlord's Plate [Warrior]
+					i(28853),	-- High Warlord's Plate Helm
+					i(28855),	-- High Warlord's Plate Shoulders
 					i(28851),	-- High Warlord's Plate Chestpiece
 					i(28852),	-- High Warlord's Plate Gauntlets
-					i(28853),	-- High Warlord's Plate Helm
 					i(28854),	-- High Warlord's Plate Legguards
-					i(28855),	-- High Warlord's Plate Shoulders
 				}),
 				cl(PALADIN, {
 					-- High Warlord's Lamellar [Paladin]
+					i(28833),	-- High Warlord's Lamellar Helm
+					i(28835),	-- High Warlord's Lamellar Shoulders
 					i(28831),	-- High Warlord's Lamellar Chestpiece
 					i(28832),	-- High Warlord's Lamellar Gauntlets
-					i(28833),	-- High Warlord's Lamellar Helm
 					i(28834),	-- High Warlord's Lamellar Legguards
-					i(28835),	-- High Warlord's Lamellar Shoulders
 
 					-- High Warlord's Ornamented [Paladin]
+					i(31637),	-- High Warlord's Ornamented Headguard
+					i(31639),	-- High Warlord's Ornamented Spaulders
 					i(31635),	-- High Warlord's Ornamented Chestplate
 					i(31636),	-- High Warlord's Ornamented Gloves
-					i(31637),	-- High Warlord's Ornamented Headguard
 					i(31638),	-- High Warlord's Ornamented Leggings
-					i(31639),	-- High Warlord's Ornamented Spaulders
 
 					-- High Warlord's Scaled [Paladin]
+					i(28863),	-- High Warlord's Scaled Helm
+					i(28865),	-- High Warlord's Scaled Shoulders
 					i(28861),	-- High Warlord's Scaled Chestpiece
 					i(28862),	-- High Warlord's Scaled Gauntlets
-					i(28863),	-- High Warlord's Scaled Helm
 					i(28864),	-- High Warlord's Scaled Legguards
-					i(28865),	-- High Warlord's Scaled Shoulders
 				}),
 				cl(HUNTER, {
 					-- High Warlord's Chain [Hunter]
+					i(28807),	-- High Warlord's Chain Helm
+					i(28809),	-- High Warlord's Chain Spaulders
 					i(28805),	-- High Warlord's Chain Armor
 					i(28806),	-- High Warlord's Chain Gauntlets
-					i(28807),	-- High Warlord's Chain Helm
 					i(28808),	-- High Warlord's Chain Leggings
-					i(28809),	-- High Warlord's Chain Spaulders
 				}),
 				cl(ROGUE, {
 					-- High Warlord's Leather [Rogue]
-					i(28836),	-- High Warlord's Leather Gloves
 					i(28837),	-- High Warlord's Leather Helm
-					i(28838),	-- High Warlord's Leather Legguards
 					i(28839),	-- High Warlord's Leather Spaulders
 					i(28840),	-- High Warlord's Leather Tunic
+					i(28836),	-- High Warlord's Leather Gloves
+					i(28838),	-- High Warlord's Leather Legguards
 				}),
 				cl(PRIEST, {
 					-- High Warlord's Mooncloth [Priest]
 					i(31626),	-- High Warlord's Mooncloth Cowl
-					i(31621),	-- High Warlord's Mooncloth Mitts
-					i(31627),	-- High Warlord's Mooncloth Legguards
 					i(31628),	-- High Warlord's Mooncloth Shoulderpads
 					i(31629),	-- High Warlord's Mooncloth Vestments
+					i(31621),	-- High Warlord's Mooncloth Mitts
+					i(31627),	-- High Warlord's Mooncloth Legguards
 
 					-- High Warlord's Satin [Priest]
-					i(28856),	-- High Warlord's Satin Gloves
 					i(28857),	-- High Warlord's Satin Hood
-					i(28858),	-- High Warlord's Satin Leggings
 					i(28859),	-- High Warlord's Satin Mantle
 					i(28860),	-- High Warlord's Satin Robe
+					i(28856),	-- High Warlord's Satin Gloves
+					i(28858),	-- High Warlord's Satin Leggings
 				}),
 				cl(SHAMAN, {
 					-- High Warlord's Linked [Shaman]
+					i(28843),   -- High Warlord's Linked Helm
+					i(28845),   -- High Warlord's Linked Spaulders
 					i(28841),   -- High Warlord's Linked Armor
 					i(28842),   -- High Warlord's Linked Gauntlets
-					i(28843),   -- High Warlord's Linked Helm
 					i(28844),   -- High Warlord's Linked Leggings
-					i(28845),   -- High Warlord's Linked Spaulders
 
 					-- High Warlord's Mail [Shaman]
+					i(28848),   -- High Warlord's Mail Helm
+					i(28850),   -- High Warlord's Mail Spaulders
 					i(28846),   -- High Warlord's Mail Armor
 					i(28847),   -- High Warlord's Mail Gauntlets
-					i(28848),   -- High Warlord's Mail Helm
 					i(28849),   -- High Warlord's Mail Leggings
-					i(28850),   -- High Warlord's Mail Spaulders
 
 					-- High Warlord's Ringmail [Shaman]
+					i(31648),   -- High Warlord's Ringmail Headpiece
+					i(31650),   -- High Warlord's Ringmail Shoulders
 					i(31646),   -- High Warlord's Ringmail Chestguard
 					i(31647),   -- High Warlord's Ringmail Gloves
-					i(31648),   -- High Warlord's Ringmail Headpiece
 					i(31649),   -- High Warlord's Ringmail Legguards
-					i(31650),   -- High Warlord's Ringmail Shoulders
 				}),
 				cl(MAGE, {
 					-- High Warlord's Silk [Mage]
-					i(28866),	-- High Warlord's Silk Amice
 					i(28867),	-- High Warlord's Silk Cowl
-					i(28868),	-- High Warlord's Silk Handguards
+					i(28866),	-- High Warlord's Silk Amice
 					i(28869),	-- High Warlord's Silk Raiment
+					i(28868),	-- High Warlord's Silk Handguards
 					i(28870),	-- High Warlord's Silk Trousers
 				}),
 				cl(WARLOCK, {
 					-- High Warlord's Dreadweave [Warlock]
-					i(28817),	-- High Warlord's Dreadweave Gloves
 					i(28818),	-- High Warlord's Dreadweave Hood
-					i(28819),	-- High Warlord's Dreadweave Leggings
 					i(28820),	-- High Warlord's Dreadweave Mantle
 					i(28821),	-- High Warlord's Dreadweave Robe
+					i(28817),	-- High Warlord's Dreadweave Gloves
+					i(28819),	-- High Warlord's Dreadweave Leggings
 				}),
 				cl(DRUID, {
 					-- High Warlord's Dragonhide [Druid]
-					i(28811),	-- High Warlord's Dragonhide Gloves
 					i(28812),	-- High Warlord's Dragonhide Helm
-					i(28813),	-- High Warlord's Dragonhide Legguards
 					i(28814),	-- High Warlord's Dragonhide Spaulders
 					i(28815),	-- High Warlord's Dragonhide Tunic
+					i(28811),	-- High Warlord's Dragonhide Gloves
+					i(28813),	-- High Warlord's Dragonhide Legguards
 
 					-- High Warlord's Kodohide [Druid]
-					i(31584),	-- High Warlord's Kodohide Gloves
 					i(31585),	-- High Warlord's Kodohide Helm
-					i(31586),	-- High Warlord's Kodohide Legguards
 					i(31587),	-- High Warlord's Kodohide Spaulders
 					i(31588),	-- High Warlord's Kodohide Tunic
+					i(31584),	-- High Warlord's Kodohide Gloves
+					i(31586),	-- High Warlord's Kodohide Legguards
 
 					-- High Warlord's Wyrmhide [Druid]
-					i(28871),	-- High Warlord's Wyrmhide Gloves
 					i(28872),	-- High Warlord's Wyrmhide Helm
-					i(28873),	-- High Warlord's Wyrmhide Legguards
 					i(28874),	-- High Warlord's Wyrmhide Spaulders
 					i(28875),	-- High Warlord's Wyrmhide Tunic
+					i(28871),	-- High Warlord's Wyrmhide Gloves
+					i(28873),	-- High Warlord's Wyrmhide Legguards
 				}),
 			},
 		}),
@@ -327,6 +327,10 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { -- combined with Season 2
 						"added 7.2.0.23436",
 						"removed 7.2.5.10000",
+					},
+					["sym"] = {
+						{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
+						{"exclude", "itemID", 146651 },	-- Exclude itself to stop duplicating
 					},
 				}),
 				i(28302, {	-- Gladiator's Bonecracker
@@ -426,13 +430,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(28126, {	-- Gladiator's Dragonhide Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(28127, {	-- Gladiator's Dragonhide Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(28128, {	-- Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(28129, {	-- Gladiator's Dragonhide Spaulders
@@ -441,13 +439,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(28130, {	-- Gladiator's Dragonhide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31375, {	-- Gladiator's Kodohide Gloves
+				i(28126, {	-- Gladiator's Dragonhide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31376, {	-- Gladiator's Kodohide Helm
+				i(28128, {	-- Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31377, {	-- Gladiator's Kodohide Legguards
+				
+				i(31376, {	-- Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31378, {	-- Gladiator's Kodohide Spaulders
@@ -456,19 +455,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31379, {	-- Gladiator's Kodohide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(28136, {	-- Gladiator's Wyrmhide Gloves
+				i(31375, {	-- Gladiator's Kodohide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(28137, {	-- Gladiator's Wyrmhide Helm
+				i(31377, {	-- Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(28138, {	-- Gladiator's Wyrmhide Legguards
+				
+				i(28137, {	-- Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(28139, {	-- Gladiator's Wyrmhide Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(28140, {	-- Gladiator's Wyrmhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28136, {	-- Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(28138, {	-- Gladiator's Wyrmhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -485,20 +491,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146608 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(28331, {	-- Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(28333, {	-- Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(28334, {	-- Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(28335, {	-- Gladiator's Chain Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(28331, {	-- Gladiator's Chain Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(28332, {	-- Gladiator's Chain Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(28333, {	-- Gladiator's Chain Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
@@ -514,19 +520,19 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146617 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(25854, {	-- Merciless Gladiator's Silk Amice
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
-				i(25855, {	-- Merciless Gladiator's Silk Cowl
+				i(25855, {	-- Gladiator's Silk Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(25857, {	-- Merciless Gladiator's Silk Handguards
+				i(25854, {	-- Gladiator's Silk Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(25856, {	-- Merciless Gladiator's Silk Raiment
+				i(25856, {	-- Gladiator's Silk Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(25858, {	-- Merciless Gladiator's Silk Trousers
+				i(25857, {	-- Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(25858, {	-- Gladiator's Silk Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -551,19 +557,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146616 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(27704, {	-- Gladiator's Lamellar Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(27706, {	-- Gladiator's Lamellar Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(27702, {	-- Gladiator's Lamellar Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(27703, {	-- Gladiator's Lamellar Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(27704, {	-- Gladiator's Lamellar Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(27705, {	-- Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(27706, {	-- Gladiator's Lamellar Shoulders
+				
+				i(31616, {	-- Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31619, {	-- Gladiator's Ornamented Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(31613, {	-- Gladiator's Ornamented Chestguard
@@ -572,13 +585,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31614, {	-- Gladiator's Ornamented Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31616, {	-- Gladiator's Ornamented Headcover
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(31618, {	-- Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31619, {	-- Gladiator's Ornamented Spaulders
+				
+				i(27881, {	-- Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(27883, {	-- Gladiator's Scaled Shoulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(27879, {	-- Gladiator's Scaled Chestpiece
@@ -587,14 +601,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(27880, {	-- Gladiator's Scaled Gauntlets
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(27881, {	-- Gladiator's Scaled Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(27882, {	-- Gladiator's Scaled Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(27883, {	-- Gladiator's Scaled Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(PRIEST, {
@@ -609,13 +617,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(31409, {	-- Gladiator's Mooncloth Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(31410, {	-- Gladiator's Mooncloth Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(31411, {	-- Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31412, {	-- Gladiator's Mooncloth Mantle
@@ -624,19 +626,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31413, {	-- Gladiator's Mooncloth Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(27707, {	-- Gladiator's Satin Gloves
+				i(31409, {	-- Gladiator's Mooncloth Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(27708, {	-- Gladiator's Satin Hood
+				i(31411, {	-- Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(27709, {	-- Gladiator's Satin Leggings
+				
+				i(27708, {	-- Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(27710, {	-- Gladiator's Satin Mantle
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(27711, {	-- Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(27707, {	-- Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(27709, {	-- Gladiator's Satin Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -653,19 +662,19 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146612 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(25834, {	-- Gladiator's Leather Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(25830, {	-- Gladiator's Leather Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(25833, {	-- Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(25832, {	-- Gladiator's Leather Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(25831, {	-- Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(25834, {	-- Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(25833, {	-- Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -690,19 +699,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146614 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(25998, {	-- Gladiator's Linked Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(25999, {	-- Gladiator's Linked Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(25997, {	-- Gladiator's Linked Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(26000, {	-- Gladiator's Linked Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(25998, {	-- Gladiator's Linked Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(26001, {	-- Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(25999, {	-- Gladiator's Linked Spaulders
+				
+				i(27471, {	-- Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(27473, {	-- Gladiator's Mail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(27469, {	-- Gladiator's Mail Armor
@@ -711,13 +727,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(27470, {	-- Gladiator's Mail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(27471, {	-- Gladiator's Mail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(27472, {	-- Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(27473, {	-- Gladiator's Mail Spaulders
+				
+				i(31400, {	-- Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31407, {	-- Gladiator's Ringmail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(31396, {	-- Gladiator's Ringmail Armor
@@ -726,14 +743,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31397, {	-- Gladiator's Ringmail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31400, {	-- Gladiator's Ringmail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(31406, {	-- Gladiator's Ringmail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(31407, {	-- Gladiator's Ringmail Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
@@ -742,11 +753,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
+						{"exclude", "itemID", 24553 },	-- General's Dreadweave Hood
+						{"exclude", "itemID", 24554 },	-- General's Dreadweave Mantle
+						-- Crieve NOTE: This list did not originally have the Dreadweave Hood/Mantle. Not sure if that was a bug or intentional.
 						{"select", "itemID", 147615 },	-- General's Felweave Belt
 						{"select", "itemID", 147616 },	-- General's Felweave Boots
 						{"select", "itemID", 147772 },  -- General's Felweave Cuffs
 						{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
 					},
+				}),
+				i(24553, {	-- Gladiator's Dreadweave Hood
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(24554, {	-- Gladiator's Dreadweave Mantle
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(24552, {	-- Gladiator's Dreadweave Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(24556, {	-- Gladiator's Dreadweave Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -754,20 +777,18 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(24555, {	-- Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(24552, {	-- Gladiator's Dreadweave Robe
+				
+				i(30187, {	-- Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(30186, {	-- Gladiator's Felweave Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(30187, {	-- Gladiator's Felweave Cowl
+				i(30200, {	-- Gladiator's Felweave Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(30188, {	-- Gladiator's Felweave Handguards
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
-				i(30200, {	-- Gladiator's Felweave Raiment
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(30201, {	-- Gladiator's Felweave Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -786,20 +807,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146613 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(24545, {	-- Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(24546, {	-- Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(24544, {	-- Gladiator's Plate Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(24549, {	-- Gladiator's Plate Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(24545, {	-- Gladiator's Plate Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(24547, {	-- Gladiator's Plate Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(24546, {	-- Gladiator's Plate Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			n(WRIST, {
@@ -1324,6 +1345,9 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32962, {	-- Merciless Gladiator's Touch of Defeat
 					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 				}),
+				i(32054, {	-- Merciless Gladiator's War Edge
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
 				i(32055, {	-- Merciless Gladiator's War Staff
 					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 				}),
@@ -1346,13 +1370,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146619 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(31968, {	-- Merciless Gladiator's Dragonhide Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31971, {	-- Merciless Gladiator's Dragonhide Spaulders
@@ -1361,13 +1379,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31972, {	-- Merciless Gladiator's Dragonhide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31987, {	-- Merciless Gladiator's Kodohide Gloves
+				i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31988, {	-- Merciless Gladiator's Kodohide Helm
+				i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31989, {	-- Merciless Gladiator's Kodohide Legguards
+				
+				i(31988, {	-- Merciless Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31990, {	-- Merciless Gladiator's Kodohide Spaulders
@@ -1376,19 +1395,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31991, {	-- Merciless Gladiator's Kodohide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
+				i(31987, {	-- Merciless Gladiator's Kodohide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
+				i(31989, {	-- Merciless Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
+				
+				i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(32059, {	-- Merciless Gladiator's Wyrmhide Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32060, {	-- Merciless Gladiator's Wyrmhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32056, {	-- Merciless Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(32058, {	-- Merciless Gladiator's Wyrmhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -1404,20 +1430,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146618 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(31962, {	-- Merciless Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31964, {	-- Merciless Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(31960, {	-- Merciless Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31961, {	-- Merciless Gladiator's Chain Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31962, {	-- Merciless Gladiator's Chain Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(31963, {	-- Merciless Gladiator's Chain Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(31964, {	-- Merciless Gladiator's Chain Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
@@ -1432,17 +1458,17 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146627 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(32047, {	-- Merciless Gladiator's Silk Amice
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(32048, {	-- Merciless Gladiator's Silk Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32049, {	-- Merciless Gladiator's Silk Handguards
+				i(32047, {	-- Merciless Gladiator's Silk Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32050, {	-- Merciless Gladiator's Silk Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32049, {	-- Merciless Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32051, {	-- Merciless Gladiator's Silk Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1466,19 +1492,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146626 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(31997, {	-- Merciless Gladiator's Lamellar Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31993, {	-- Merciless Gladiator's Lamellar Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(31997, {	-- Merciless Gladiator's Lamellar Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(31995, {	-- Merciless Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31996, {	-- Merciless Gladiator's Lamellar Shoulders
+				
+				i(32022, {	-- Merciless Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32020, {	-- Merciless Gladiator's Ornamented Chestguard
@@ -1487,13 +1520,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32021, {	-- Merciless Gladiator's Ornamented Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(32022, {	-- Merciless Gladiator's Ornamented Headcover
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(32023, {	-- Merciless Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32024, {	-- Merciless Gladiator's Ornamented Spaulders
+				
+				i(32041, {	-- Merciless Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32043, {	-- Merciless Gladiator's Scaled Shoulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32039, {	-- Merciless Gladiator's Scaled Chestpiece
@@ -1502,14 +1536,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32040, {	-- Merciless Gladiator's Scaled Gauntlets
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32041, {	-- Merciless Gladiator's Scaled Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(32042, {	-- Merciless Gladiator's Scaled Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(32043, {	-- Merciless Gladiator's Scaled Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(PRIEST, {
@@ -1524,13 +1552,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(32016, {	-- Merciless Gladiator's Mooncloth Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(32018, {	-- Merciless Gladiator's Mooncloth Mantle
@@ -1539,19 +1561,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32019, {	-- Merciless Gladiator's Mooncloth Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32034, {	-- Merciless Gladiator's Satin Gloves
+				i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(32035, {	-- Merciless Gladiator's Satin Hood
+				i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32036, {	-- Merciless Gladiator's Satin Leggings
+				
+				i(32035, {	-- Merciless Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(32037, {	-- Merciless Gladiator's Satin Mantle
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32038, {	-- Merciless Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32034, {	-- Merciless Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(32036, {	-- Merciless Gladiator's Satin Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -1567,19 +1596,19 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146622 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(31998, {	-- Merciless Gladiator's Leather Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(31999, {	-- Merciless Gladiator's Leather Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(32000, {	-- Merciless Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(32001, {	-- Merciless Gladiator's Leather Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32002, {	-- Merciless Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31998, {	-- Merciless Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(32000, {	-- Merciless Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -1616,19 +1645,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32008, {	-- Merciless Gladiator's Linked Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
+				
+				i(32011, {	-- Merciless Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32013, {	-- Merciless Gladiator's Mail Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(32009, {	-- Merciless Gladiator's Mail Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(32010, {	-- Merciless Gladiator's Mail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(32011, {	-- Merciless Gladiator's Mail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(32012, {	-- Merciless Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(32013, {	-- Merciless Gladiator's Mail Spaulders
+				
+				i(32031, {	-- Merciless Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(32029, {	-- Merciless Gladiator's Ringmail Armor
@@ -1637,14 +1674,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32030, {	-- Merciless Gladiator's Ringmail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(32031, {	-- Merciless Gladiator's Ringmail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(32032, {	-- Merciless Gladiator's Ringmail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(32033, {	-- Merciless Gladiator's Ringmail Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
@@ -1659,13 +1690,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146621 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(31974, {	-- Merciless Gladiator's Dreadweave Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(31976, {	-- Merciless Gladiator's Dreadweave Mantle
@@ -1674,17 +1699,24 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31977, {	-- Merciless Gladiator's Dreadweave Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31979, {	-- Merciless Gladiator's Felweave Amice
+				i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
+				i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				
 				i(31980, {	-- Merciless Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(31981, {	-- Merciless Gladiator's Felweave Handguards
+				i(31979, {	-- Merciless Gladiator's Felweave Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(31982, {	-- Merciless Gladiator's Felweave Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(31981, {	-- Merciless Gladiator's Felweave Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(31983, {	-- Merciless Gladiator's Felweave Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1702,20 +1734,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146623 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(30488, {	-- Merciless Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(30490, {	-- Merciless Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(30486, {	-- Merciless Gladiator's Plate Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(30487, {	-- Merciless Gladiator's Plate Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(30488, {	-- Merciless Gladiator's Plate Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(30489, {	-- Merciless Gladiator's Plate Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(30490, {	-- Merciless Gladiator's Plate Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			n(WRIST, {
@@ -1879,28 +1911,61 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
 			filter(HELD_IN_OFF_HAND, {
-				un(REMOVED_FROM_GAME, i(33946)), -- Merciless Gladiator's Idol of Resolve
-				un(REMOVED_FROM_GAME, i(33943)), -- Merciless Gladiator's Idol of Steadfastness
-				un(REMOVED_FROM_GAME, i(33076)), -- Merciless Gladiator's Idol of Tenacity
-				un(REMOVED_FROM_GAME, i(33937)), -- Merciless Gladiator's Libram of Fortitude
-				un(REMOVED_FROM_GAME, i(33077)), -- Merciless Gladiator's Libram of Justice
-				un(REMOVED_FROM_GAME, i(33949)), -- Merciless Gladiator's Libram of Vengeance
-				un(REMOVED_FROM_GAME, i(33940)), -- Merciless Gladiator's Totem of Indomitability
-				un(REMOVED_FROM_GAME, i(33952)), -- Merciless Gladiator's Totem of Survival
-				un(REMOVED_FROM_GAME, i(33078)), -- Merciless Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(32054)), -- Merciless Gladiator's War Edge (Throw Wep)
+				i(33946, { -- Merciless Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33943, { -- Merciless Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33076, { -- Merciless Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33937, { -- Merciless Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33077, { -- Merciless Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33949, { -- Merciless Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33940, { -- Merciless Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33952, { -- Merciless Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33078, { -- Merciless Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
 			}),
 			filter(51,	{	-- Neck
-				un(REMOVED_FROM_GAME, i(33067)), -- Veteran's Pendant of Conquest
-				un(REMOVED_FROM_GAME, i(33065)), -- Veteran's Pendant of Dominance
-				un(REMOVED_FROM_GAME, i(33068)), -- Veteran's Pendant of Salvation
-				un(REMOVED_FROM_GAME, i(33067)), -- Veteran's Pendant of Conquest
-				un(REMOVED_FROM_GAME, i(33066)), -- Veteran's Pendant of Triumph
+				i(33067, { -- Veteran's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33065, { -- Veteran's Pendant of Dominance
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33068, { -- Veteran's Pendant of Salvation
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33067, { -- Veteran's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33066, { -- Veteran's Pendant of Triumph
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
 			}),
 			filter(52,	{	-- Finger
-				un(REMOVED_FROM_GAME, i(33056)), -- Veteran's Band of Dominance
-				un(REMOVED_FROM_GAME, i(33064)), -- Veteran's Band of Salvation
-				un(REMOVED_FROM_GAME, i(33057)), -- Veteran's Band of Triumph
+				i(33056, { -- Veteran's Band of Dominance
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33064, { -- Veteran's Band of Salvation
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33057, { -- Veteran's Band of Triumph
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
 			}),
 		}),
 	})),
@@ -2017,6 +2082,9 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33764, {	-- Vengeful Gladiator's Touch of Defeat
 					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 				}),
+				i(33765, {	-- Vengeful Gladiator's War Edge
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
 				i(33766, {	-- Vengeful Gladiator's War Staff
 					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 				}),
@@ -2042,13 +2110,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146629 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(33671, {	-- Vengeful Gladiator's Dragonhide Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(33672, {	-- Vengeful Gladiator's Dragonhide Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33673, {	-- Vengeful Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33674, {	-- Vengeful Gladiator's Dragonhide Spaulders
@@ -2057,13 +2119,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33675, {	-- Vengeful Gladiator's Dragonhide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33690, {	-- Vengeful Gladiator's Kodohide Gloves
+				i(33671, {	-- Vengeful Gladiator's Dragonhide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33691, {	-- Vengeful Gladiator's Kodohide Helm
+				i(33673, {	-- Vengeful Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33692, {	-- Vengeful Gladiator's Kodohide Legguards
+				
+				i(33691, {	-- Vengeful Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33693, {	-- Vengeful Gladiator's Kodohide Spaulders
@@ -2072,19 +2135,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33694, {	-- Vengeful Gladiator's Kodohide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33767, {	-- Vengeful Gladiator's Wyrmhide Gloves
+				i(33690, {	-- Vengeful Gladiator's Kodohide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33768, {	-- Vengeful Gladiator's Wyrmhide Helm
+				i(33692, {	-- Vengeful Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33769, {	-- Vengeful Gladiator's Wyrmhide Legguards
+				
+				i(33768, {	-- Vengeful Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33770, {	-- Vengeful Gladiator's Wyrmhide Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33771, {	-- Vengeful Gladiator's Wyrmhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33767, {	-- Vengeful Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(33769, {	-- Vengeful Gladiator's Wyrmhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2100,20 +2170,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146628 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(33666, {	-- Vengeful Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33668, {	-- Vengeful Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(33664, {	-- Vengeful Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33665, {	-- Vengeful Gladiator's Chain Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33666, {	-- Vengeful Gladiator's Chain Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33667, {	-- Vengeful Gladiator's Chain Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33668, {	-- Vengeful Gladiator's Chain Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
@@ -2128,17 +2198,17 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146637 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(33757, {	-- Vengeful Gladiator's Silk Amice
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(33758, {	-- Vengeful Gladiator's Silk Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33759, {	-- Vengeful Gladiator's Silk Handguards
+				i(33757, {	-- Vengeful Gladiator's Silk Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33760, {	-- Vengeful Gladiator's Silk Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33759, {	-- Vengeful Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33761, {	-- Vengeful Gladiator's Silk Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2162,19 +2232,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146636 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(33697, {	-- Vengeful Gladiator's Lamellar Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33699, {	-- Vengeful Gladiator's Lamellar Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(33695, {	-- Vengeful Gladiator's Lamellar Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33696, {	-- Vengeful Gladiator's Lamellar Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33697, {	-- Vengeful Gladiator's Lamellar Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33698, {	-- Vengeful Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33699, {	-- Vengeful Gladiator's Lamellar Shoulders
+				
+				i(33724, {	-- Vengeful Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33726, {	-- Vengeful Gladiator's Ornamented Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33722, {	-- Vengeful Gladiator's Ornamented Chestguard
@@ -2183,14 +2260,15 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33723, {	-- Vengeful Gladiator's Ornamented Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33724, {	-- Vengeful Gladiator's Ornamented Headcover
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33725, {	-- Vengeful Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33726, {	-- Vengeful Gladiator's Ornamented Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				
+				i(33751, {	-- Vengeful Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33753, {	-- Vengeful Gladiator's Scaled Shoulders
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33749, {	-- Vengeful Gladiator's Scaled Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2198,13 +2276,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33750, {	-- Vengeful Gladiator's Scaled Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33751, {	-- Vengeful Gladiator's Scaled Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33752, {	-- Vengeful Gladiator's Scaled Legguards
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33753, {	-- Vengeful Gladiator's Scaled Shoulders
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2220,13 +2292,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146635 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(33717, {	-- Vengeful Gladiator's Mooncloth Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(33718, {	-- Vengeful Gladiator's Mooncloth Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33719, {	-- Vengeful Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33720, {	-- Vengeful Gladiator's Mooncloth Mantle
@@ -2235,19 +2301,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33721, {	-- Vengeful Gladiator's Mooncloth Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33744, {	-- Vengeful Gladiator's Satin Gloves
+				i(33717, {	-- Vengeful Gladiator's Mooncloth Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33745, {	-- Vengeful Gladiator's Satin Hood
+				i(33719, {	-- Vengeful Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33746, {	-- Vengeful Gladiator's Satin Leggings
+				
+				i(33745, {	-- Vengeful Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33747, {	-- Vengeful Gladiator's Satin Mantle
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33748, {	-- Vengeful Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33744, {	-- Vengeful Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(33746, {	-- Vengeful Gladiator's Satin Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2263,19 +2336,19 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146632 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(33700, {	-- Vengeful Gladiator's Leather Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(33701, {	-- Vengeful Gladiator's Leather Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33702, {	-- Vengeful Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33703, {	-- Vengeful Gladiator's Leather Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33704, {	-- Vengeful Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33700, {	-- Vengeful Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(33702, {	-- Vengeful Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2297,19 +2370,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146634 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(33708, {	-- Vengeful Gladiator's Linked Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33710, {	-- Vengeful Gladiator's Linked Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(33706, {	-- Vengeful Gladiator's Linked Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33707, {	-- Vengeful Gladiator's Linked Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33708, {	-- Vengeful Gladiator's Linked Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33709, {	-- Vengeful Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33710, {	-- Vengeful Gladiator's Linked Spaulders
+				
+				i(33713, {	-- Vengeful Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33715, {	-- Vengeful Gladiator's Mail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33711, {	-- Vengeful Gladiator's Mail Armor
@@ -2318,13 +2398,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33712, {	-- Vengeful Gladiator's Mail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33713, {	-- Vengeful Gladiator's Mail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33714, {	-- Vengeful Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33715, {	-- Vengeful Gladiator's Mail Spaulders
+				
+				i(33740, {	-- Vengeful Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33742, {	-- Vengeful Gladiator's Ringmail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33738, {	-- Vengeful Gladiator's Ringmail Armor
@@ -2333,14 +2414,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33739, {	-- Vengeful Gladiator's Ringmail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33740, {	-- Vengeful Gladiator's Ringmail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33741, {	-- Vengeful Gladiator's Ringmail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33742, {	-- Vengeful Gladiator's Ringmail Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
@@ -2355,13 +2430,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146631 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(33676, {	-- Vengeful Gladiator's Dreadweave Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(33677, {	-- Vengeful Gladiator's Dreadweave Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33678, {	-- Vengeful Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33679, {	-- Vengeful Gladiator's Dreadweave Mantle
@@ -2370,17 +2439,24 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33680, {	-- Vengeful Gladiator's Dreadweave Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33682, {	-- Vengeful Gladiator's Felweave Amice
+				i(33676, {	-- Vengeful Gladiator's Dreadweave Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
+				i(33678, {	-- Vengeful Gladiator's Dreadweave Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				
 				i(33683, {	-- Vengeful Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(33684, {	-- Vengeful Gladiator's Felweave Handguards
+				i(33682, {	-- Vengeful Gladiator's Felweave Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33685, {	-- Vengeful Gladiator's Felweave Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33684, {	-- Vengeful Gladiator's Felweave Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(33686, {	-- Vengeful Gladiator's Felweave Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2398,20 +2474,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146633 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(33730, {	-- Vengeful Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(33732, {	-- Vengeful Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(33728, {	-- Vengeful Gladiator's Plate Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(33729, {	-- Vengeful Gladiator's Plate Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(33730, {	-- Vengeful Gladiator's Plate Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(33731, {	-- Vengeful Gladiator's Plate Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(33732, {	-- Vengeful Gladiator's Plate Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			n(WRIST, {
@@ -2563,37 +2639,87 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
 			filter(HELD_IN_OFF_HAND, {
-				un(REMOVED_FROM_GAME, i(33947)), -- Vengeful Gladiator's Idol of Resolve
-				un(REMOVED_FROM_GAME, i(33944)), -- Vengeful Gladiator's Idol of Steadfastness
-				un(REMOVED_FROM_GAME, i(33841)), -- Vengeful Gladiator's Idol of Tenacity
-				un(REMOVED_FROM_GAME, i(33938)), -- Vengeful Gladiator's Libram of Fortitude
-				un(REMOVED_FROM_GAME, i(33842)), -- Vengeful Gladiator's Libram of Justice
-				un(REMOVED_FROM_GAME, i(33950)), -- Vengeful Gladiator's Libram of Vengeance
-				un(REMOVED_FROM_GAME, i(33941)), -- Vengeful Gladiator's Totem of Indomitability
-				un(REMOVED_FROM_GAME, i(33953)), -- Vengeful Gladiator's Totem of Survival
-				un(REMOVED_FROM_GAME, i(33843)), -- Vengeful Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(33765)), -- Vengeful Gladiator's War Edge (Throw Wep)
+				i(33947, { -- Vengeful Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33944, { -- Vengeful Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33841, { -- Vengeful Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33938, { -- Vengeful Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33842, { -- Vengeful Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33950, { -- Vengeful Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33941, { -- Vengeful Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33953, { -- Vengeful Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33843, { -- Vengeful Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
 			}),
 			filter(51,	{	-- Neck
-				un(REMOVED_FROM_GAME, i(33920)), -- Vindicator's Pendant of Conquest
-				un(REMOVED_FROM_GAME, i(33921)), -- Vindicator's Pendant of Dominance
-				un(REMOVED_FROM_GAME, i(35317)), -- Vindicator's Pendant of Reprieve
-				un(REMOVED_FROM_GAME, i(33922)), -- Vindicator's Pendant of Salvation
-				un(REMOVED_FROM_GAME, i(35319)), -- Vindicator's Pendant of Subjugation
-				un(REMOVED_FROM_GAME, i(33923)), -- Vindicator's Pendant of Triumph
+				i(33920, { -- Vindicator's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33921, { -- Vindicator's Pendant of Dominance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				applyclassicphase(TBC_PHASE_FOUR, i(35317, { -- Vindicator's Pendant of Reprieve
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				i(33922, { -- Vindicator's Pendant of Salvation
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				applyclassicphase(TBC_PHASE_FOUR, i(35319, { -- Vindicator's Pendant of Subjugation
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				i(33923, { -- Vindicator's Pendant of Triumph
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
 			}),
 			filter(52,	{	-- Finger
-				un(REMOVED_FROM_GAME, i(33853)), -- Vindicator's Band of Dominance
-				un(REMOVED_FROM_GAME, i(33918)), -- Vindicator's Band of Salvation
-				un(REMOVED_FROM_GAME, i(35320)), -- Vindicator's Band of Subjugation
-				un(REMOVED_FROM_GAME, i(33919)), -- Vindicator's Band of Triumph
+				i(33853, { -- Vindicator's Band of Dominance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33918, { -- Vindicator's Band of Salvation
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				applyclassicphase(TBC_PHASE_FOUR, i(35320, { -- Vindicator's Band of Subjugation
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				i(33919, { -- Vindicator's Band of Triumph
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
 			}),
 			filter(53,	{	-- Trinket
-				un(REMOVED_FROM_GAME, i(34579)), -- Battlemaster's Audacity
-				un(REMOVED_FROM_GAME, i(34576)), -- Battlemaster's Cruelty
-				un(REMOVED_FROM_GAME, i(34577)), -- Battlemaster's Depravity
-				un(REMOVED_FROM_GAME, i(34578)), -- Battlemaster's Determination
-				un(REMOVED_FROM_GAME, i(34580)), -- Battlemaster's Perseverance
+				applyclassicphase(TBC_PHASE_FOUR, i(35327, { -- Battlemaster's Alacrity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, i(34579, { -- Battlemaster's Audacity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, i(34576, { -- Battlemaster's Cruelty
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, i(34577, { -- Battlemaster's Depravity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, i(34578, { -- Battlemaster's Determination
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
+				applyclassicphase(TBC_PHASE_FOUR, i(34580, { -- Battlemaster's Perseverance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				})),
 			}),
 		}),
 	})),
@@ -2775,13 +2901,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146599 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(34998, {	-- Brutal Gladiator's Dragonhide Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(34999, {	-- Brutal Gladiator's Dragonhide Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35000, {	-- Brutal Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35001, {	-- Brutal Gladiator's Dragonhide Spaulders
@@ -2790,13 +2910,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35002, {	-- Brutal Gladiator's Dragonhide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35022, {	-- Brutal Gladiator's Kodohide Gloves
+				i(34998, {	-- Brutal Gladiator's Dragonhide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35023, {	-- Brutal Gladiator's Kodohide Helm
+				i(35000, {	-- Brutal Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35024, {	-- Brutal Gladiator's Kodohide Legguards
+				
+				i(35023, {	-- Brutal Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35025, {	-- Brutal Gladiator's Kodohide Spaulders
@@ -2805,19 +2926,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35026, {	-- Brutal Gladiator's Kodohide Tunic
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35111, {	-- Brutal Gladiator's Wyrmhide Gloves
+				i(35022, {	-- Brutal Gladiator's Kodohide Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35112, {	-- Brutal Gladiator's Wyrmhide Helm
+				i(35024, {	-- Brutal Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35113, {	-- Brutal Gladiator's Wyrmhide Legguards
+				
+				i(35112, {	-- Brutal Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35114, {	-- Brutal Gladiator's Wyrmhide Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35115, {	-- Brutal Gladiator's Wyrmhide Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35111, {	-- Brutal Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(35113, {	-- Brutal Gladiator's Wyrmhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2833,20 +2961,20 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146598 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(34992, {	-- Brutal Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(34994, {	-- Brutal Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(34990, {	-- Brutal Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(34991, {	-- Brutal Gladiator's Chain Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(34992, {	-- Brutal Gladiator's Chain Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(34993, {	-- Brutal Gladiator's Chain Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(34994, {	-- Brutal Gladiator's Chain Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
@@ -2861,17 +2989,17 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146607 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(35096, {	-- Brutal Gladiator's Silk Amice
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(35097, {	-- Brutal Gladiator's Silk Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35098, {	-- Brutal Gladiator's Silk Handguards
+				i(35096, {	-- Brutal Gladiator's Silk Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35099, {	-- Brutal Gladiator's Silk Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35098, {	-- Brutal Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35100, {	-- Brutal Gladiator's Silk Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2895,19 +3023,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146606 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(35029, {	-- Brutal Gladiator's Lamellar Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35031, {	-- Brutal Gladiator's Lamellar Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(35027, {	-- Brutal Gladiator's Lamellar Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35028, {	-- Brutal Gladiator's Lamellar Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35029, {	-- Brutal Gladiator's Lamellar Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35030, {	-- Brutal Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35031, {	-- Brutal Gladiator's Lamellar Shoulders
+				
+				i(35061, {	-- Brutal Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35063, {	-- Brutal Gladiator's Ornamented Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35059, {	-- Brutal Gladiator's Ornamented Chestguard
@@ -2916,14 +3051,15 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35060, {	-- Brutal Gladiator's Ornamented Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35061, {	-- Brutal Gladiator's Ornamented Headcover
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35062, {	-- Brutal Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35063, {	-- Brutal Gladiator's Ornamented Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				
+				i(35090, {	-- Brutal Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35092, {	-- Brutal Gladiator's Scaled Shoulders
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35088, {	-- Brutal Gladiator's Scaled Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2931,13 +3067,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35089, {	-- Brutal Gladiator's Scaled Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35090, {	-- Brutal Gladiator's Scaled Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35091, {	-- Brutal Gladiator's Scaled Legguards
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35092, {	-- Brutal Gladiator's Scaled Shoulders
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2953,13 +3083,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146605 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(35053, {	-- Brutal Gladiator's Mooncloth Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(35054, {	-- Brutal Gladiator's Mooncloth Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35055, {	-- Brutal Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35056, {	-- Brutal Gladiator's Mooncloth Mantle
@@ -2968,19 +3092,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35057, {	-- Brutal Gladiator's Mooncloth Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35083, {	-- Brutal Gladiator's Satin Gloves
+				i(35053, {	-- Brutal Gladiator's Mooncloth Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35084, {	-- Brutal Gladiator's Satin Hood
+				i(35055, {	-- Brutal Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35085, {	-- Brutal Gladiator's Satin Leggings
+				
+				i(35084, {	-- Brutal Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35086, {	-- Brutal Gladiator's Satin Mantle
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35087, {	-- Brutal Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35083, {	-- Brutal Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(35085, {	-- Brutal Gladiator's Satin Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -2996,19 +3127,19 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146602 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(35032, {	-- Brutal Gladiator's Leather Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(35033, {	-- Brutal Gladiator's Leather Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35034, {	-- Brutal Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35035, {	-- Brutal Gladiator's Leather Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35036, {	-- Brutal Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35032, {	-- Brutal Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(35034, {	-- Brutal Gladiator's Leather Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
@@ -3030,19 +3161,26 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				i(35044, {	-- Brutal Gladiator's Linked Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35046, {	-- Brutal Gladiator's Linked Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(35042, {	-- Brutal Gladiator's Linked Armor
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35043, {	-- Brutal Gladiator's Linked Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35044, {	-- Brutal Gladiator's Linked Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35045, {	-- Brutal Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35046, {	-- Brutal Gladiator's Linked Spaulders
+				
+				i(35050, {	-- Brutal Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35052, {	-- Brutal Gladiator's Mail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35048, {	-- Brutal Gladiator's Mail Armor
@@ -3051,13 +3189,14 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35049, {	-- Brutal Gladiator's Mail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35050, {	-- Brutal Gladiator's Mail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35051, {	-- Brutal Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35052, {	-- Brutal Gladiator's Mail Spaulders
+				
+				i(35079, {	-- Brutal Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35081, {	-- Brutal Gladiator's Ringmail Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35077, {	-- Brutal Gladiator's Ringmail Armor
@@ -3066,14 +3205,8 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35078, {	-- Brutal Gladiator's Ringmail Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35079, {	-- Brutal Gladiator's Ringmail Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35080, {	-- Brutal Gladiator's Ringmail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35081, {	-- Brutal Gladiator's Ringmail Spaulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
@@ -3088,13 +3221,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146601 },	-- Exclude itself to stop duplicating
 					},
 				}),
-				i(35003, {	-- Brutal Gladiator's Dreadweave Gloves
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-				}),
 				i(35004, {	-- Brutal Gladiator's Dreadweave Hood
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35005, {	-- Brutal Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35006, {	-- Brutal Gladiator's Dreadweave Mantle
@@ -3103,17 +3230,24 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35007, {	-- Brutal Gladiator's Dreadweave Robe
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35009, {	-- Brutal Gladiator's Felweave Amice
+				i(35003, {	-- Brutal Gladiator's Dreadweave Gloves
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
+				i(35005, {	-- Brutal Gladiator's Dreadweave Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				
 				i(35010, {	-- Brutal Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				i(35011, {	-- Brutal Gladiator's Felweave Handguards
+				i(35009, {	-- Brutal Gladiator's Felweave Amice
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35012, {	-- Brutal Gladiator's Felweave Raiment
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35011, {	-- Brutal Gladiator's Felweave Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 				i(35013, {	-- Brutal Gladiator's Felweave Trousers
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3131,20 +3265,21 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"exclude", "itemID", 146603 },	-- Exclude itself to stop duplicating
 					},
 				}),
+				
+				i(35068, {	-- Brutal Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(35070, {	-- Brutal Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
 				i(35066, {	-- Brutal Gladiator's Plate Chestpiece
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 				i(35067, {	-- Brutal Gladiator's Plate Gauntlets
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				i(35068, {	-- Brutal Gladiator's Plate Helm
-					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
 				i(35069, {	-- Brutal Gladiator's Plate Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-				}),
-				i(35070, {	-- Brutal Gladiator's Plate Shoulders
-					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			bubbleDown({ ["timeline"] = { "added 3.0.2.8962" } }, n(BACK, {
@@ -3303,44 +3438,99 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 			}),
 			filter(HELD_IN_OFF_HAND, {
-				un(REMOVED_FROM_GAME, i(35019)),	-- Brutal Gladiator's Idol of Resolve
-				un(REMOVED_FROM_GAME, i(35020)),	-- Brutal Gladiator's Idol of Steadfastness
-				un(REMOVED_FROM_GAME, i(35021)),	-- Brutal Gladiator's Idol of Tenacity
-				un(REMOVED_FROM_GAME, i(35039)),	-- Brutal Gladiator's Libram of Fortitude
-				un(REMOVED_FROM_GAME, i(35040)),	-- Brutal Gladiator's Libram of Justice
-				un(REMOVED_FROM_GAME, i(35041)),	-- Brutal Gladiator's Libram of Vengeance
-				un(REMOVED_FROM_GAME, i(35104)),	-- Brutal Gladiator's Totem of Indomitability
-				un(REMOVED_FROM_GAME, i(35105)),	-- Brutal Gladiator's Totem of Survival
-				un(REMOVED_FROM_GAME, i(35106)),	-- Brutal Gladiator's Totem of the Third Wind
+				i(35019, {	-- Brutal Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35020, {	-- Brutal Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35021, {	-- Brutal Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35039, {	-- Brutal Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35040, {	-- Brutal Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35041, {	-- Brutal Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35104, {	-- Brutal Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35105, {	-- Brutal Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35106, {	-- Brutal Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
 			}),
 			filter(51,	{	-- Neck
-				un(REMOVED_FROM_GAME, i(35132)),	-- Guardian's Pendant of Conquest
-				un(REMOVED_FROM_GAME, i(35133)),	-- Guardian's Pendant of Dominance
-				un(REMOVED_FROM_GAME, i(37929)),	-- Guardian's Pendant of Reprieve
-				un(REMOVED_FROM_GAME, i(35134)),	-- Guardian's Pendant of Salvation
-				un(REMOVED_FROM_GAME, i(37928)),	-- Guardian's Pendant of Subjugation
-				un(REMOVED_FROM_GAME, i(35135)),	-- Guardian's Pendant of Triumph
+				i(35132, {	-- Guardian's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(35133, {	-- Guardian's Pendant of Dominance
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(37929, {	-- Guardian's Pendant of Reprieve
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(35134, {	-- Guardian's Pendant of Salvation
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(37928, {	-- Guardian's Pendant of Subjugation
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(35135, {	-- Guardian's Pendant of Triumph
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
 			}),
 			filter(52,	{	-- Finger
-				un(REMOVED_FROM_GAME, i(35129)),	-- Guardian's Band of Dominance
-				un(REMOVED_FROM_GAME, i(35130)),	-- Guardian's Band of Salvation
-				un(REMOVED_FROM_GAME, i(37927)),	-- Guardian's Band of Subjugation
-				un(REMOVED_FROM_GAME, i(35131)),	-- Guardian's Band of Triumph
+				i(35129, {	-- Guardian's Band of Dominance
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(35130, {	-- Guardian's Band of Salvation
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(37927, {	-- Guardian's Band of Subjugation
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(35131, {	-- Guardian's Band of Triumph
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
 			}),
 			filter(53,	{	-- Trinket
-				un(REMOVED_FROM_GAME, i(37864)),	-- (A) Medallion of the Alliance
-				un(REMOVED_FROM_GAME, i(37865)),	-- (H) Medallion of the Horde
-				un(REMOVED_FROM_GAME, i(35327)),	-- Battlemaster's Alacrity
-				un(REMOVED_FROM_GAME, i(41587)),	-- Battlemaster's Celerity
-				un(REMOVED_FROM_GAME, i(41588)),	-- Battlemaster's Aggression
-				un(REMOVED_FROM_GAME, i(41589)),	-- Battlemaster's Resolve
-				un(REMOVED_FROM_GAME, i(41590)),	-- Battlemaster's Courage
-				un(REMOVED_FROM_GAME, i(37865)),	-- Medallion of the Horde (epic)
-				un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the Horde (dk)
-				un(REMOVED_FROM_GAME, i(37864)),	-- Medallion of the Alliance (epic)
-				un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the Alliance (dk)
-				un(REMOVED_FROM_GAME, i(69861)),	-- (A) Medallion of the Alliance (not during bc, but for bc)
-				un(REMOVED_FROM_GAME, i(69862)),	-- (H) Medallion of the Alliance (not during bc, but for bc)
+				i(41587, {	-- Battlemaster's Celerity
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(41588, {	-- Battlemaster's Aggression
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(41589, {	-- Battlemaster's Resolve
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(41590, {	-- Battlemaster's Courage
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(37864, {	-- Medallion of the Alliance (epic)
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(38589, {	-- Medallion of the Alliance (dk)
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
+					["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+				}),
+				i(37865, {	-- Medallion of the Horde (epic)
+					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+				i(38588, {	-- Medallion of the Horde (dk)
+					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
+				}),
+				i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
+					["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+				}),
 			}),
 		}),
 	})),

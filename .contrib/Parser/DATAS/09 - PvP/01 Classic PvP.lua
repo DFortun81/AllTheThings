@@ -538,8 +538,6 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 					}),
 				}),
-				i(28377),	-- Sergeant's Heavy Cloak
-				i(28378),	-- Sergeant's Heavy Cape
 				i(16486),	-- First Sergeant's Silk Cuffs
 				i(16497),	-- First Sergeant's Leather Armguards
 				i(16532),	-- First Sergeant's Mail Wristguards
