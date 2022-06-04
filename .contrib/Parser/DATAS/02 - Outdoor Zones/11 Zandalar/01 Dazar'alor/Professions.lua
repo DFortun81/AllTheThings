@@ -173,12 +173,18 @@ root("Zones", m(ZANDALAR, {
 					["sourceQuest"] = 49944,	-- Turn to Drust (H)
 					["provider"] = { "o", 279647 }, -- Tome of Sacrifice
 					["coord"] = { 20.6, 44, DRUSTVAR },
+					["g"] = {
+						recipe(259665), -- Blood Contract: Sacrifice
+					},
 				}),
 				q(49874, { -- By the Book
 					["sourceQuest"] = 49873,	--Sacrificial Writes
 					["provider"] = { "n", 131657 }, -- Bloodshed Compendium
 					["coord"] = { 20.7, 44, DRUSTVAR },
 					["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
+					["g"] = {
+						recipe(292012), -- Blood Contract: Bloodshed
+					},
 				}),
 				q(49946, { -- Lines in the Sand (H)
 					["sourceQuest"] = 49874,	-- By the Book
@@ -196,11 +202,17 @@ root("Zones", m(ZANDALAR, {
 					["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 					["provider"] = { "o", 279645 }, -- Tome of Oblivion
 					["coord"] = { 27.6, 52.3, VOLDUN },
+					["g"] = {
+						recipe(292322), -- Blood Contract: Oblivion
+					},
 				}),
 				q(49878, { --Penning In Protection
 					["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
 					["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
 					["coord"] = { 27.6, 52.2, VOLDUN },
+					["g"] = {
+						recipe(292320), -- Blood Contract: Bloodguard
+					},
 				}),
 				q(49881, { -- The Final Verse
 					["sourceQuests"] = {
