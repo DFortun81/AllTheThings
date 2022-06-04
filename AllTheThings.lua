@@ -7959,6 +7959,7 @@ app.TryPopulateQuestRewards = function(questObject)
 				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
 
 				QuestHarvester.AllTheThingsProcessing = true;
+				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
 				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
 				local link = select(2, QuestHarvester:GetItem());
 				QuestHarvester.AllTheThingsProcessing = false;
@@ -21156,7 +21157,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					local mapObject = app.CreateMapWithStyle(mapID);
 					local bounties = C_QuestLog_GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
-						for i,bounty in ipairs(bounties) do
+						for _,bounty in ipairs(bounties) do
 							local questObject = GetPopulatedQuestObject(bounty.questID);
 							NestObject(mapObject, questObject);
 						end
