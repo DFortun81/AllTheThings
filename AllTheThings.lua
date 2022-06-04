@@ -2105,7 +2105,7 @@ local function GetUnobtainableTexture(groupORu)
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
-	if group.saved then
+	if group.trackable and group.saved then
 		if group.parent and group.parent.locks or group.repeatable then
 			return app.asset("known");
 		else
@@ -8488,7 +8488,11 @@ local fields = {
 			end
 		end
 	end,
-	["trackable"] = app.ReturnTrue,
+	["trackable"] = function(t)
+		-- don't show tracking for achievements if they have sub-groups and are within instances (still using achievements as headers under LFR...)
+		rawset(t, "trackable", not rawget(t, "g") or not GetRelativeValue(t, "instanceID"));
+		return rawget(t, "trackable");
+	end,
 	["saved"] = function(t)
 		local id = t.achievementID;
 		if app.CurrentCharacter.Achievements[id] then return true; end
