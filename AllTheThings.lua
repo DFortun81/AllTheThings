@@ -2387,10 +2387,17 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		local id = questRef.questID;
 		-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
 		if not (app.RequiredSkillFilter(questRef)
-			and app.ClassRequirementFilter(questRef)
-			and app.RaceRequirementFilter(questRef)
-			and app.RequireCustomCollectFilter(questRef)
-			and app.ItemIsInGame(questRef)) then
+		and app.ClassRequirementFilter(questRef)
+		and app.RaceRequirementFilter(questRef)
+		and app.RequireCustomCollectFilter(questRef)
+		and app.ItemIsInGame(questRef)) then
+
+			-- Play a sound when a reportable error is found, if any sound setting is enabled
+			if app.Settings:GetTooltipSetting("Warn:Removed")
+			or app.Settings:GetTooltipSetting("Celebrate") then
+				app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+			end
+
 			local popupID = "quest-filter-" .. id;
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
 				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef)
@@ -14108,6 +14115,12 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+
+				-- Play a sound when a reportable error is found, if any sound setting is enabled
+				if app.Settings:GetTooltipSetting("Warn:Removed")
+				or app.Settings:GetTooltipSetting("Celebrate") then
+					app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+				end
 			end
 			Callback(app.PlayFanfare);
 			Callback(app.TakeScreenShot);
@@ -14219,6 +14232,12 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 			else
 				print(format(L["ITEM_ID_ADDED_MISSING"], "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
+
+				-- Play a sound when a reportable error is found, if any sound setting is enabled
+				if app.Settings:GetTooltipSetting("Warn:Removed")
+				or app.Settings:GetTooltipSetting("Celebrate") then
+					app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+				end
 			end
 		end
 		-- If the item isn't in the list, then don't bother refreshing the data.
