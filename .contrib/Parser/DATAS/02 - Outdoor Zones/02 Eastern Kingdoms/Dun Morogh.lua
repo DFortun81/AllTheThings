@@ -641,6 +641,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 					}),
+					n(ZONE_DROPS, {
+						i(2108, {	-- Frostmane Leather Vest
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 706,	-- Frostmane Troll Whelp
+						}),
+						i(2787, {	-- Trogg Dagger
+							["cr"] = 724,	-- Burly Rockjaw Trogg
+						}),
+					}),
 				},
 			}),
 			-- #if AFTER 4.0.3
@@ -2550,10 +2559,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						1122,	-- Frostmane Hideskinner
 					},
 				}),
-				i(2108, {	-- Frostmane Leather Vest
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 706,	-- Frostmane Troll Whelp
-				}),
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1196,	-- Ice Claw Bear
@@ -2561,9 +2566,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1115,	-- Rockjaw Skullthumper
-				}),
-				i(2787, {	-- Trogg Dagger
-					["cr"] = 724,	-- Burly Rockjaw Trogg
 				}),
 			}),
 		},
