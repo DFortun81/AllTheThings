@@ -2559,6 +2559,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						1122,	-- Frostmane Hideskinner
 					},
 				}),
+				i(2258, {	-- Frostmane Shortsword
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1120,	-- Frostmane Troll
+				}),
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1196,	-- Ice Claw Bear
