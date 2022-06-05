@@ -842,6 +842,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
 						}),
 					}),
+					gt(375, { -- Eagle Ally
+						i(140216), -- Eagle Feather
+					}),
 				}),
 				n(VENDORS, {
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
@@ -898,9 +901,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							}),
 							i(136781, {	-- Pet Training Manual: Fetch
 								["spellID"] = 125050,	-- Fetch
+								["f"] = RECIPES,
 							}),
 							i(136780, {	-- Pet Training Manual: Play Dead
 								["spellID"] = 209997,	-- Play Dead
+								["f"] = RECIPES,
 							}),
 							i(139712, {	-- Spaulders of the Unseen Path
 								["cost"] = 5000000,	-- 500g
