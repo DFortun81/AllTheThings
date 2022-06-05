@@ -1374,6 +1374,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					-- #endif
+					n(ZONE_DROPS, {
+						-- #if BEFORE 8.1.0.28724
+						i(2057, {	-- Pitted Defias Shortsword
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 38,	-- Defias Thug
+						}),
+						-- #endif
+						i(2055, {	-- Small Wooden Hammer
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 80,	-- Kobold Laborer
+						}),
+					}),
 				},
 			}),
 			n(ACHIEVEMENTS, {
@@ -2511,16 +2523,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(1399, {	-- Magic Candle
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
-				}),
-				-- #if BEFORE 8.1.0.28724
-				i(2057, {	-- Pitted Defias Shortsword
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 38,	-- Defias Thug
-				}),
-				-- #endif
-				i(2055, {	-- Small Wooden Hammer
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 80,	-- Kobold Laborer
 				}),
 				i(781, {	-- Stone Gnoll Hammer
 					["timeline"] = { "removed 4.0.3" },
