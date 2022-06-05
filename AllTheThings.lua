@@ -2459,6 +2459,11 @@ local PrintQuestInfo = function(questID, new, info)
 			end
 		end
 		print("Quest",questChange,chatMsg,(info or ""));
+		-- Play a sound when a reportable error is found, if any sound setting is enabled
+		if app.Settings:GetTooltipSetting("Warn:Removed")
+		or app.Settings:GetTooltipSetting("Celebrate") then
+			app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+		end
 	end
 end
 local DirtyQuests = {};
