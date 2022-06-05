@@ -158,33 +158,42 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				i(187860),	-- Mortis Mover (TOY!)
 				crit(1, {	-- Pollinated Extraction
 					["provider"] = { "i", 187879 },	-- Pollinated Extraction
+					["coord"] = { 60.4, 76.2, ZERETH_MORTIS },
 				}),
 				crit(2, {	-- Honeycombed Lattice
 					["provider"] = { "i", 187885 },	-- Honeycombed Lattice
+					["coord"] = { 64.1, 59.4, ZERETH_MORTIS },
 				}),
 				crit(3, {	-- Anima-charged Yolk
 					["provider"] = { "i", 187890 },	-- Anima-charged Yolk
 				}),
 				crit(4, {	-- Unstable Agitant
 					["provider"] = { "i", 187889 },	-- Unstable Agitant
+					["coord"] = { 25.5, 56.7, ZERETH_MORTIS },
 				}),
 				crit(5, {	-- Empyrean Essence
 					["provider"] = { "i", 187891 },	-- Empyrean Essence
+					["coord"] = { 46.1, 71.0, ZERETH_MORTIS },
 				}),
 				crit(6, {	-- Incorporeal Sand
 					["provider"] = { "i", 187892 },	-- Incorporeal Sand
+					["coord"] = { 43.2, 29.0, ZERETH_MORTIS },
 				}),
 				crit(7, {	-- Volatile Precursor
 					["provider"] = { "i", 187893 },	-- Volatile Precursor
+					["coord"] = { 43.5, 57.9, ZERETH_MORTIS },
 				}),
 				crit(8, {	-- Energized Firmament
 					["provider"] = { "i", 187894 },	-- Energized Firmament
+					["coord"] = { 53.3, 30.8, ZERETH_MORTIS },
 				}),
 				crit(9, {	-- Wayward Essence
 					["provider"] = { "i", 190128 },	-- Wayward Essence
+					["coord"] = { 32.7, 40.7, ZERETH_MORTIS },
 				}),
 				crit(10, {	-- Serene Pigment
 					["provider"] = { "i", 190129 },	-- Serene Pigment
+					["coord"] = { 34.5, 46.6, ZERETH_MORTIS },
 				}),
 			}),
 			ach(15331, {	-- Treasures of Zereth Mortis
