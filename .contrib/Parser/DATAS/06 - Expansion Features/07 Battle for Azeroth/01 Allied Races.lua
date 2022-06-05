@@ -289,19 +289,19 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					}),
 					q(54576, {	-- Gnomeregan's Finest
 						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
+						["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
 						["sourceQuest"] = 54402, -- Shifting Gears
 						["maps"] = { 1380 },	-- GnomereganC
 					}),
 					q(54577, {	-- Shadowed Halls and Dusty Cogs
 						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
+						["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
 						["sourceQuest"] = 54576, -- Gnomeregan's Finest
 						["maps"] = { 1380 },	-- GnomereganC
 					}),
 					q(54580, {	-- A Tundra Conundrum
 						["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
-						["coord"] = { 41.8, 31.7, 469 },
+						["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
 						["sourceQuest"] = 54577, -- Shadowed Halls and Dusty Cogs
 					}),
 					q(54581, {	-- Now With More Mechanical Fowl

@@ -156,12 +156,12 @@ root("PetBattles", petbattle({
 		}),
 		q(54186, {	-- Pet Battle Challenge: Gnomeregan
 			["provider"] = { "n", 147070 },	-- Micro Zoox
-			["coord"] = { 31.2, 37.4, 469 },	-- New Tinkertown
+			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN },
 			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
 			["isWeekly"] = true,
 			["lvl"] = 120,
 			["maps"] = {
-				30,		-- New Tinkertown (Below)
+				NEW_TINKERTOWN_LOWER,
 				840,	-- Pet Dungeon
 				841,	-- Pet Dungeon
 				842,	-- Pet Dungeon
@@ -186,7 +186,7 @@ root("PetBattles", petbattle({
 				}),
 				q(54185, {	-- Gnomeregan's New Guardians
 					["provider"] = { "n", 147070 },	-- Micro Zoox
-					["coord"] = { 31.67, 71.61, 30 },
+					["coord"] = { 31.67, 71.61, NEW_TINKERTOWN_LOWER },
 					["sourceQuests"] = {
 						54184,	-- Trouble in Gnomeregan (A)
 						54276,	-- Trouble in Gnomeregan (H)
@@ -198,7 +198,7 @@ root("PetBattles", petbattle({
 					},
 				}),
 				n(147070, {	-- Micro Zoox
-					["coord"] = { 31.8, 71.6, 30 },	-- New Tinkertown (Below)
+					["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
 					["g"] = {
 						i(165855, {	-- Leper Rat Tail
 							["cost"] = { { "i", 165835, 2 } },	-- 2x Pristine Gizmo
