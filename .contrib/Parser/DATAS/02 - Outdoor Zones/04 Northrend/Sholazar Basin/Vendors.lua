@@ -14,9 +14,11 @@ _.Zones =
 						i(136855),	-- Hunter's Call (TOY!)
 						i(136781, {	-- Pet Training Manual: Fetch
 							["spellID"] = 125050,	-- Fetch
+							["f"] = RECIPES,
 						}),
 						i(136780, {	-- Pet Training Manual: Play Dead
 							["spellID"] = 209997,	-- Play Dead
+							["f"] = RECIPES,
 						}),
 						i(136783, {	-- The Art of Concealment
 							["spellID"] = 61648,	-- Aspect of the Chameleon
