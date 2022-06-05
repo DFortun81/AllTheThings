@@ -751,7 +751,7 @@ local OLUS_GROUPS = {
 };
 local SORYN_GROUPS = {
 	-- #if ANYCLASSIC
-	-- In TBC Classic, they made it so you could turn in the tokens for S3 gear rather than S2 gear. (makes more sense since it's for the T6 tokens and downgrading to S2 doesn't make sence as that was T5 equivalent...)
+	-- In TBC Classic, they made it so you could turn in the tokens for S3 gear rather than S2 gear. (makes more sense since it's for the T6 tokens and downgrading to S2 doesn't make sense as that was T5 equivalent...)
 	cl(WARRIOR, {
 		i(33730, {	-- Vengeful Gladiator's Plate Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
