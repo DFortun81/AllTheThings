@@ -642,12 +642,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(ZONE_DROPS, {
+						i(2109, {	-- Frostmane Chain Vest
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 808,	-- Grik'nir the Cold
+						}),
 						i(2108, {	-- Frostmane Leather Vest
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 706,	-- Frostmane Troll Whelp
 						}),
+						i(2110, {	-- Light Magesmith Robe
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 946,	-- Frostmane Novice
+						}),
 						i(2787, {	-- Trogg Dagger
 							["cr"] = 724,	-- Burly Rockjaw Trogg
+						}),
+						i(2054, {	-- Trogg Hand Axe
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 1718,	-- Rockjaw Raider
 						}),
 					}),
 				},
@@ -2563,13 +2575,37 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1120,	-- Frostmane Troll
 				}),
+				i(2257, {	-- Frostmane Staff
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1124,	-- Frostmane Shadowcaster
+				}),
+				i(2112, {	-- Lumberjack Jerkin
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1689,	-- Scarred Crag Boar
+				}),
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1196,	-- Ice Claw Bear
 				}),
+				i(2065, {	-- Rockjaw Blade
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1116,	-- Rockjaw Ambusher
+				}),
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1115,	-- Rockjaw Skullthumper
+				}),
+				i(2114, {	-- Snowy Robe
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1133,	-- Starving Winter Wolf
+				}),
+				i(2064, {	-- Trogg Club
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1118,	-- Rockjaw Backbreaker
+				}),
+				i(5767, {	-- Violet Robes
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 1397,	-- Frostmane Seer
 				}),
 			}),
 		},
