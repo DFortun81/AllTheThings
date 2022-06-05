@@ -169,7 +169,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				}),
 				crit(4, {	-- Unstable Agitant
 					["provider"] = { "i", 187889 },	-- Unstable Agitant
-					["coord"] = {  25.5, 56.7, ZERETH_MORTIS },
+					["coord"] = { 25.5, 56.7, ZERETH_MORTIS },
 				}),
 				crit(5, {	-- Empyrean Essence
 					["provider"] = { "i", 187891 },	-- Empyrean Essence
