@@ -581,7 +581,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					-- Interlude
 					q(45997, {	-- An Urgent Warning
-						["sourceQuest"] = 43415,	--A Hero's Weapon
+						["sourceQuest"] = 43415,	-- A Hero's Weapon
 						["provider"] = { "n", 118428 },	-- Injured Conjuror
 						["coord"] = { 80.9, 63.1, HALL_OF_THE_GUARDIAN },
 						["isBreadcrumb"] = true,

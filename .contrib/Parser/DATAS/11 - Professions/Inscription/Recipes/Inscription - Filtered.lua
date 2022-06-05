@@ -38,7 +38,7 @@ root(ROOTS.Professions, bubbleDown({["requireSkill"] = INSCRIPTION}, prof(INSCRI
 						{	-- Shimmering Ink
 							["recipeID"] = 57711--[[Shimmering Ink]]
 						},
-						{	--Fiery Ink
+						{	-- Fiery Ink
 							["recipeID"] = 57710--[[Fiery Ink]]
 						},
 						{	-- Celestial Ink

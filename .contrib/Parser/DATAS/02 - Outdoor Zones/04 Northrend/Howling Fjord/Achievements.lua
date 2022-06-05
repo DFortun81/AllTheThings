@@ -33,17 +33,17 @@ _.Zones =
 				ach(34, {	-- I've Toured the Fjord (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1, {	--The Ill-Equipped Port
+						crit(1, {	-- The Ill-Equipped Port
 							["sourceQuests"] = {
 								11291,	-- To Westguard Keep!
 								-- TODO:: confirm the quest below
 								11436,	-- Let's Go Surfing Now
 							},
 						}),
-						crit(2, {	--Descendants of the Vrykul
+						crit(2, {	-- Descendants of the Vrykul
 							["sourceQuest"] = 11344,	-- Anguish of Nifflevar
 						}),
-						crit(3, {	--Iron Rune Constructs
+						crit(3, {	-- Iron Rune Constructs
 							["sourceQuest"] = 11501,	-- News From the East
 						}),
 						crit(4, {	-- Doom Approaches
@@ -70,10 +70,10 @@ _.Zones =
 								11238,	-- The Frost Wyrm and its Master
 							},
 						}),
-						crit(10, {	--Sisters of the Fjord
+						crit(10, {	-- Sisters of the Fjord
 							["sourceQuest"] = 11428,	-- Keeper Witherleaf
 						}),
-						crit(11, {	--The Iron Dwarves
+						crit(11, {	-- The Iron Dwarves
 							["sourceQuests"] = {
 								11359,	-- Demolishing Megalith
 								11348,	-- The Rune of Command

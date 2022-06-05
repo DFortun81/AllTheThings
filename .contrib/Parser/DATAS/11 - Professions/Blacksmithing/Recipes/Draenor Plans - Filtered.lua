@@ -1,7 +1,7 @@
 profession(BLACKSMITHING, {
 	filter(RECIPES, {
 	-- Reviewed and updated as of 12.13.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
-		{	--Draenor Plans
+		{	-- Draenor Plans
 			["categoryID"] = 389--[[Draenor Plans]],
 			["g"] = {
 				{	-- Reagents and Research

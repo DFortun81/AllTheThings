@@ -64,7 +64,7 @@ _.Zones =
 						i(158646),	-- Curseform Sickle
 						i(155143),	-- Marshal's Halberd
 						i(159536),	-- Gol Osigr Hammer
-						--Horde Source id's(not actual reward)
+						-- Horde Source id's (not actual reward)
 						i(161298),	-- Strong Juju Bloodhexxer
 					},
 				}),

@@ -97,7 +97,7 @@ profession(LEATHERWORKING, {
 					["categoryID"] = 388,
 					["g"] = {
 						{
-							["recipeID"] = 173416,	--Small Football
+							["recipeID"] = 173416,	-- Small Football
 							["u"] = NEVER_IMPLEMENTED,
 						}
 					}

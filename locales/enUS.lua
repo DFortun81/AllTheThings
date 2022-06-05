@@ -1908,7 +1908,7 @@ app.L = {
 		[-5205] = "Hidden Appearance",
 		-- Class Sets
 		[-5350] = "Class Trial Item Sets",										-- Class Trial
-		--Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
+		-- Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
 		[-5353] = select(2,GetAchievementInfo(2398)),							-- 4th Anniversary
 		[-5354] = select(2,GetAchievementInfo(4400)),							-- 5th Anniversary
 		[-5355] = select(2,GetAchievementInfo(5512)),							-- 6th Anniversary

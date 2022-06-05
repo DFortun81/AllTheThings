@@ -683,7 +683,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					gt(411, {	-- Heavenly Forge
 						q(44221, {	-- Champion Armaments
-							["sourceQuest"] = 42611,	--Einar the Runecaster
+							["sourceQuest"] = 42611,	-- Einar the Runecaster
 							["coord"] = { 62.3, 25.8, SKYHOLD },
 							["provider"] = { "n", 110437 },	-- Haklang Ulfsson
 						}),

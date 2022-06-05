@@ -3510,7 +3510,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112825),	-- Sigil of Rampage
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					crit(3, {	--Thok the Bloodthirsty
+					crit(3, {	-- Thok the Bloodthirsty
 						["achievementID"] = 8461,	-- The Underhold
 					}),
 					ach(8479),	-- Mythic: Thok the Bloodthirsty

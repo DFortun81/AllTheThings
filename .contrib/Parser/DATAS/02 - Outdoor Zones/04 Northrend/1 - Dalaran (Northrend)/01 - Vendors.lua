@@ -573,13 +573,13 @@ _.Zones =
 							["cost"] = { { "i", 45653, 1 }, },	-- Legplates of the Wayward Conqueror
 						}),
 						i(46177, {	-- Conqueror's Aegis Shoulderguards
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
 						}),
 						i(46152, {	-- Conqueror's Aegis Shoulderplates
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
 						}),
 						i(46182, {	-- Conqueror's Aegis Spaulders
-							["cost"] = { { "i", 45656, 1 }, },	--Mantle of the Wayward Conqueror
+							["cost"] = { { "i", 45656, 1 }, },	-- Mantle of the Wayward Conqueror
 						}),
 						i(46178, {	-- Conqueror's Aegis Tunic
 							["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror

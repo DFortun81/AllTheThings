@@ -12,7 +12,7 @@ _.Zones =
 					["coord"] = { 29.5, 69.6, STORMSONG_VALLEY },	-- entrance to cellar
 					["g"] = {
 						i(160470),	-- Broodcrawler Wristguards
-						crit(8, {	--Broodmother
+						crit(8, {	-- Broodmother
 							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 						}),
 					},

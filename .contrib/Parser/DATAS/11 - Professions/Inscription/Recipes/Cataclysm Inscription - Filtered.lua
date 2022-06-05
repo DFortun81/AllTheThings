@@ -138,10 +138,10 @@ root(ROOTS.Professions, bubbleDown({["requireSkill"] = INSCRIPTION}, prof(INSCRI
 				{	-- Quest
 					["categoryID"] = 791--[[Quest]],
 					["g"] = {
-						recipe(89244, {	--Forged Documents
+						recipe(89244, {	-- Forged Documents
 							["races"] = ALLIANCE_ONLY,
 						}),
-						recipe(86654, {	--Forged Documents
+						recipe(86654, {	-- Forged Documents
 							["races"] = HORDE_ONLY,
 						}),
 					},

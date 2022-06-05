@@ -178,7 +178,7 @@ root("Zones", m(ZANDALAR, {
 					},
 				}),
 				q(49874, { -- By the Book
-					["sourceQuest"] = 49873,	--Sacrificial Writes
+					["sourceQuest"] = 49873,	-- Sacrificial Writes
 					["provider"] = { "n", 131657 }, -- Bloodshed Compendium
 					["coord"] = { 20.7, 44, DRUSTVAR },
 					["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)

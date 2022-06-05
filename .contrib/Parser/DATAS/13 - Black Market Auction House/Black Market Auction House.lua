@@ -291,7 +291,7 @@ root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
 			i(22505),	-- Plagueheart Leggings
 			i(22508),	-- Plagueheart Sandals
 		}),
-		gs(924, {	--Dreamwalker Raiment
+		gs(924, {	-- Dreamwalker Raiment
 			i(22490),	-- Dreamwalker Headpiece
 			i(22491),	-- Dreamwalker Spaulders
 			i(22488),	-- Dreamwalker Tunic

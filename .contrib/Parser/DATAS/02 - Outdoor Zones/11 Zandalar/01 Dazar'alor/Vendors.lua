@@ -40,7 +40,7 @@ _.Zones =
 						}),
 						i(163619, {	-- Golden Beetle
 							--["questID"] = 53114,	-- Golden Beetle
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+							-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 							["repeatable"] = true,
 							["description"] = "Cost: 100 Seafarer's Dubloons",
 							["races"] = HORDE_ONLY,
@@ -80,7 +80,7 @@ _.Zones =
 						}),
 						i(163620, {	-- Island Flotsam
 							--["questID"] = 53115,	-- Island Flotsam
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+							-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 							["repeatable"] = true,
 							["description"] = "Cost: 100 Seafarer's Dubloons",
 							["races"] = HORDE_ONLY,
@@ -98,7 +98,7 @@ _.Zones =
 						}),
 						i(163618, {	-- Shimmering Shell
 							--["questID"] = 53113,	-- Shimminering Shell
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
+							-- Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
 							["repeatable"] = true,
 							["description"] = "Cost: 100 Seafarer's Dubloons",
 							["races"] = HORDE_ONLY,

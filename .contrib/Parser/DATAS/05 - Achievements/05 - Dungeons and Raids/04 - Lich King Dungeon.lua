@@ -219,12 +219,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(1),	-- Drakos the Interrogator
 			crit(2),	-- Mage-Lord Urom
 			crit(3),	-- Varos Cloudstrider
-			crit(4),	--Ley-Guardian Eregos
+			crit(4),	-- Ley-Guardian Eregos
 			ach(487, {	-- The Oculus
 				crit(1),	-- Drakos the Interrogator
 				crit(2),	-- Mage-Lord Urom
 				crit(3),	-- Varos Cloudstrider
-				crit(4),	--Ley-Guardian Eregos
+				crit(4),	-- Ley-Guardian Eregos
 			}),
 		}),
 		ach(4520, {	-- Heroic: The Pit of Saron

@@ -1605,7 +1605,7 @@ _.Zones =
 					["coord"] = { 49.3, 49.7, GORGROND },
 					["description"] = "Available after building Beastwatch and selecting the Lumber Mill or the Sparring Arena.",
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35151,	--Your Base, Your Choice
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["g"] = {
 						i(118034),	-- Foundry-Fired Plate Waistguard
 						i(118037),	-- Overgrowth Cutter Girdle
