@@ -203,9 +203,3 @@ root(ROOTS.Holidays, d(24, bubbleDown({ ["u"] = TIMEWALKING }, {
 root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
-
-root(ROOTS.NeverImplemented, tier(LEGION_TIER, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	d(24, {
-		i(187568),	-- Duskwatch Arcblade (Removed during PTR...Was looking great)
-	}),
-})));

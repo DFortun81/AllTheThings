@@ -99,6 +99,11 @@ root("HiddenAchievementTriggers", {
 			ach(15466),	-- The Jailer (Heroic Sepulcher of the First Ones)
 			ach(15467),	-- The Jailer (Mythic Sepulcher of the First Ones)
 			ach(15423),	-- <Hidden> Jailer Defeated
+
+			ach(15504),	-- Maldraxxus Coliseum matches
+			ach(15505),	-- Maldraxxus Coliseum victories
+			ach(15576),	-- Enigma Arena matches
+			ach(15577),	-- Enigma Arena victories
 		}),
 	}),
 });
