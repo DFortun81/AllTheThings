@@ -611,7 +611,7 @@ namespace ATT
                         if (achInfo.TryGetValue("parentCategoryID", out object achCatID))
                         {
                             DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
-                            LogDebug($"Duplicated Achievement {achID} into Achievement Category" + Environment.NewLine + MiniJSON.Json.Serialize(data));
+                            LogDebug($"Duplicated Achievement {achID} into Achievement Category");
                         }
                     }
                 }
