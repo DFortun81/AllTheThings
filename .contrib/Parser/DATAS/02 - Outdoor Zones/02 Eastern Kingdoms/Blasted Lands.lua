@@ -1754,7 +1754,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER 7.0.3
 						i(17050, {	-- Chan's Imperial Robes
-							["description"] = "This item disappeared after the Cataclsym. It might now only be available from the Emerald Encrusted Chest.",
+							["description"] = "This item disappeared after the Cataclysm. It might now only be available from the Emerald Encrusted Chest.",
 							["timeline"] = { "removed 4.0.3", "added 7.0.3" },
 						}),
 						-- #endif

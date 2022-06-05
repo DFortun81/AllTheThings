@@ -273,7 +273,7 @@ _.WorldDrops =
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				})),
 				i(17050, {	-- Chan's Imperial Robes
-					["description"] = "This item disappeared after the Cataclsym. It might now only be available from the Emerald Encrusted Chest in the Blasted Lands.",
+					["description"] = "This item disappeared after the Cataclysm. It might now only be available from the Emerald Encrusted Chest in the Blasted Lands.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(13009),	-- Cow King's Hide
