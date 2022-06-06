@@ -107,19 +107,6 @@ root("Promotions", {
 	})),
 });
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(TBC_TIER, {
-		filter(MOUNTS, {
-			-- #if AFTER SHADOWLANDS
-			tier(TBC_TIER, 4.3, {
-			-- #endif
-				i(37598, {	-- Swift Zhevra (MOUNT!)
-					["timeline"] = { "created 2.4.3.8601" },
-				}),
-			-- #if AFTER SHADOWLANDS
-			}),
-			-- #endif
-		}),
-	}),
 	n(QUESTS, {
 		q(57850),	-- Storied Partnerships
 		q(57852),	-- Dungeon Adventure

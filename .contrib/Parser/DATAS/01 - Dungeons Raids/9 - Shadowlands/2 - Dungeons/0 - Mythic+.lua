@@ -80,11 +80,3 @@ root("Instances", tier(SL_TIER, {
 		}),
 	}),
 }));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(ACHIEVEMENTS, {
-			ach(15403),	--[DNT] <Hidden> Mythic+ Rating > 0 (Shadowlands, S2 or later)
-		}),
-	}),
-}));

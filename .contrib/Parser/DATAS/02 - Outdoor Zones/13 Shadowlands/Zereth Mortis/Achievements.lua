@@ -211,14 +211,3 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		}),
 	}),
 })));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		n(ACHIEVEMENTS, {
-			ach(15307),	-- 9.2 Campaign - Quest Launch [DNT]
-			ach(15345),	-- <Hidden> 9.2 Content Skip Unlock [DNT]
-			ach(15519),	-- <Hidden> 9.2 Flying Unlock [DNT]
-			ach(15510),	-- 9.2 Tracking - Protoform Synthesis - Mount Crafting Unlocked [DNT]
-		})
-	})
-}));

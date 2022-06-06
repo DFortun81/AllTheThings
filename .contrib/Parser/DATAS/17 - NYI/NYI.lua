@@ -14,6 +14,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["modID"] = 5,
 				}),
 				i(160378),	-- Stormchaser Clutch
+				i(106163),	-- Frostwolf Wind-Talker Robe	-- rewarded by some WoD quest (Frostfire Ridge?)
+				i(106142),	-- Frostwolf Scout's Tunic	-- rewarded by some WoD quest (Frostfire Ridge?)
+				i(106166),	-- Frostwolf Ringmail Armor	-- rewarded by some WoD quest (Frostfire Ridge?)
+				i(106147),	-- Forstwolf Stalwart Chestpiece	-- rewarded by some WoD quest (Frostfire Ridge?)
+				i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
+				i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
+				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
 			}),
 			n(WEAPONS, {
 				i(108905, {	-- Jagged Turtleshell Blade
@@ -21,6 +28,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					-- Dont tell the Users is actually obtainable but there is just no info
 					["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 				}),
+				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
+				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
+				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
+				i(90331),	-- Face Smasher Warhammer	-- rewarded by some MoP quest probably (Jade Forest?)
+				i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
 			}),
 			n(QUESTS, {	-- These are/were completable
 				-- Classic
@@ -179,6 +191,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.1.0
 				q(64192),	--
 				q(64369),	--
+				q(64516),	--
 				-- 9.1.5
 				q(64975),	--
 			}),
@@ -321,16 +334,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(44874),	-- Greater Inscription of the Storm
 				i(45705),	-- Argent Tournament Invitation
 			}),
-			tier(MOP_TIER, 4.0, {
-				i(101729),	-- Grand Deluxe Noodle Cart Kit
-				i(101727),	-- Grand Noodle Cart Kit
-				i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
-			}),
-			tier(WOD_TIER, 0.1, {
-				i(115300),		-- Marinated Elekk Steak
-				i(115302),		-- Seasoned Elekk Ribeye
-				i(115291),		-- Whole Pot-Roasted Elekk
-			}),
 		}),
 		filter(MISC, {
 			tier(WOTLK_TIER, 0.1, {
@@ -405,6 +408,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(92746),	-- Portable Refrigerator
 			}),
 		}),
+		filter(CONSUMABLES, {
+			tier(MOP_TIER, 4.0, {
+				i(101729),	-- Grand Deluxe Noodle Cart Kit
+				i(101727),	-- Grand Noodle Cart Kit
+				i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
+			}),
+		}),
 		filter(MISC, {
 			tier(MOP_TIER, 0.1, {
 				i(79907),	-- Spear of Xuen (Old Version)
@@ -440,6 +450,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		filter(BAGS, {
 			tier(WOD_TIER, 2.2, {
 				i(130943),	-- Reusable Tote Bag
+			}),
+		}),
+		filter(CONSUMABLES, {
+			tier(WOD_TIER, 0.1, {
+				i(115300),		-- Marinated Elekk Steak
+				i(115302),		-- Seasoned Elekk Ribeye
+				i(115291),		-- Whole Pot-Roasted Elekk
 			}),
 		}),
 		filter(MISC, {

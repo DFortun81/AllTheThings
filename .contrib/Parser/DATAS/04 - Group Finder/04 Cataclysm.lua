@@ -124,9 +124,6 @@ _.GroupFinder =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
-			filter(LEATHER, {
-				i(113710),	-- Ravaged Leather Leggings
-			}),
 			filter(MAIL, {
 				i(113715),	-- Sparkmail Vest
 			}),

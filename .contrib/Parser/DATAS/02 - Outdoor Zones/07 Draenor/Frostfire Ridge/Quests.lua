@@ -1297,24 +1297,3 @@ root("HiddenQuestTriggers", {
 		q(37652),	-- Vignette: Jabberjaw - secondary trigger for Jabberjaw rare
 	}),
 });
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOD_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(106163),	-- Frostwolf Wind-Talker Robe
-			}),
-			filter(LEATHER, {
-				i(106142),	-- Frostwolf Scout's Tunic
-			}),
-			filter(MAIL, {
-				i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
-			}),
-			filter(PLATE, {
-				i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
-			}),
-		}),
-		n(WEAPONS, {
-			i(118186),	-- Frostwolf Wisdom Stick
-		}),
-	}),
-}));

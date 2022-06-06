@@ -9661,7 +9661,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(127055),	-- Gladiator's Plate Chestpiece
 				i(127081),	-- Gladiator's Plate Helm
 				i(127092),	-- Gladiator's Plate Gauntlets
-				i(127103),	-- Gladiator's Plate Shoulders
+				-- i(127103),	-- Gladiator's Plate Shoulders	-- in NYI Sourceless
 				i(127114),	-- Gladiator's Plate Legguards
 			}),
 		}),

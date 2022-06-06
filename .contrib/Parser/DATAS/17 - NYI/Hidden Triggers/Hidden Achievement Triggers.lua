@@ -13,16 +13,26 @@ root("HiddenAchievementTriggers", {
 		ach(53),	-- Alterac Valley battles
 	}),
 	tier(SL_TIER, {
-		ach(14351),	-- The Path Towards Ascension 39
-		ach(14340),	-- The Path Towards Ascension 1
-		ach(14342),	-- The Path Towards Ascension 3
-		ach(14343),	-- The Path Towards Ascension 5
-		ach(14344),	-- The Path Towards Ascension 7
-		ach(14345),	-- The Path Towards Ascension 12
-		ach(14346),	-- The Path Towards Ascension 16
-		ach(14348),	-- The Path Towards Ascension 20
-		ach(14349),	-- The Path Towards Ascension 24
-		tier(SL_TIER, 2.0, {
+		-- 9.0.1
+		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+			ach(14351),	-- The Path Towards Ascension 39
+			ach(14340),	-- The Path Towards Ascension 1
+			ach(14342),	-- The Path Towards Ascension 3
+			ach(14343),	-- The Path Towards Ascension 5
+			ach(14344),	-- The Path Towards Ascension 7
+			ach(14345),	-- The Path Towards Ascension 12
+			ach(14346),	-- The Path Towards Ascension 16
+			ach(14348),	-- The Path Towards Ascension 20
+			ach(14349),	-- The Path Towards Ascension 24
+		})),
+
+		-- 9.1.5
+		tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 9.1.5"} }, {
+			ach(15403),	--[DNT] <Hidden> Mythic+ Rating > 0 (Shadowlands, S2 or later)
+		})),	
+
+		-- 9.2.0
+		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 9.2.0"} }, {
 			ach(15559),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Aealic
 			ach(15560),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Dealic
 			ach(15561),	-- 	9.2 ZM - Cypher System - Talent Unlocked - Trebalim
@@ -99,11 +109,16 @@ root("HiddenAchievementTriggers", {
 			ach(15466),	-- The Jailer (Heroic Sepulcher of the First Ones)
 			ach(15467),	-- The Jailer (Mythic Sepulcher of the First Ones)
 			ach(15423),	-- <Hidden> Jailer Defeated
-
+			--
 			ach(15504),	-- Maldraxxus Coliseum matches
 			ach(15505),	-- Maldraxxus Coliseum victories
 			ach(15576),	-- Enigma Arena matches
 			ach(15577),	-- Enigma Arena victories
-		}),
+			--
+			ach(15307),	-- 9.2 Campaign - Quest Launch [DNT]
+			ach(15345),	-- <Hidden> 9.2 Content Skip Unlock [DNT]
+			ach(15519),	-- <Hidden> 9.2 Flying Unlock [DNT]
+			ach(15510),	-- 9.2 Tracking - Protoform Synthesis - Mount Crafting Unlocked [DNT]
+		})),
 	}),
 });

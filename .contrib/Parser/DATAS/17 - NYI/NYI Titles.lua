@@ -4,8 +4,8 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	tier(WOTLK_TIER, {
-		filter(TITLES, {
+	filter(TITLES, {
+		tier(WOTLK_TIER, {
 			tier(WOTLK_TIER, 0.1, {
 				title(64),	-- Grand Master Alchemist <Name>
 				title(65),	-- Grand Master Blacksmith <Name>
@@ -38,23 +38,17 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				title(91),	-- <Name>, Hero of Northrend
 			}),
 		}),
-	}),
-	tier(LEGION_TIER, {
-		filter(TITLES, {
+		tier(LEGION_TIER, {
 			tier(LEGION_TIER, 0.1, {
 				title(330),	-- Master Assassin <Name>
 			}),
 		}),
-	}),
-	tier(BFA_TIER, {
-		filter(TITLES, {
+		tier(BFA_TIER, {
 			tier(BFA_TIER, 2.0, {
 				title(406),	-- Sparking <Name>
 			}),
 		}),
-	}),
-	tier(SL_TIER, {
-		filter(TITLES, {
+		tier(SL_TIER, {
 			tier(SL_TIER, 0.1, {
 				i(183940, {	-- Avowed Archivist's Tome
 					title(436),	-- <Name> the Avowed

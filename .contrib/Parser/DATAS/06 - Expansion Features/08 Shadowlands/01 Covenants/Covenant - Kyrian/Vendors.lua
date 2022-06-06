@@ -65,6 +65,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							i(185002),	-- Devoted Aspirant's Hood
 							i(185003),	-- Devoted Aspirant's Leggings
 							i(185007),	-- Devoted Aspirant's Robes
+							i(184999),	-- Devoted Aspirant's Vestments
 							i(185004),	-- Devoted Aspirant's Sash
 							i(185000),	-- Devoted Aspirant's Slippers
 							i(185005),	-- Devoted Aspirant's Wraps
@@ -1535,9 +1536,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {
 		n(KYRIAN, {
 			n(ARMOR, {
-				filter(COSMETIC, {
-					i(184999),	-- Devoted Aspirant's Vestments
-				}),
 				filter(MAIL, {
 					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
 					i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest

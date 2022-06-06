@@ -3706,11 +3706,6 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
-					i(113224),	-- Aeth's Swiftcinder Cloak
-					i(113231),	-- Brave Niunai's Cloak
-					i(113226),	-- Cape of the Alpha
-					i(113230),	-- Drape of the Omega
-					i(113223),	-- Turtleshell Greatcloak
 					i(113218),	-- Seebo's Sainted Touch
 					i(113221),	-- Siid's Silent Stranglers
 					i(113227),	-- Marco's Crackling Gloves

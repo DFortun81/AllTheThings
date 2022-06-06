@@ -209,7 +209,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 				i(173971),	-- Vulpera Heritage Shoulderpads
 				i(174376),	-- Vulpera Heritage Rucksack
 				i(173966),	-- Vulpera Heritage Vest
+				i(174355),	-- Vulpera Heritage Wristraps
 				i(173967),	-- Vulpera Heritage Handgrips
+				i(174354),	-- Vulpera Heritage Footwraps
 				i(173970),	-- Vulpera Heritage Utility Belt
 				i(173969),	-- Vulpera Heritage Legguards
 			},

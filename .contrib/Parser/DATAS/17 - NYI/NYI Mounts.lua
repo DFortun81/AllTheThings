@@ -159,6 +159,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
 					["modelID"] = 26691,
 				}),
+				i(37598, {	-- Swift Zhevra / Swift Zhevra OLD (MOUNT!)
+					["modelID"] = 24693,
+				}),
 			})),
 
 			-- 2.x.x
@@ -171,9 +174,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				i(27853, {	-- Swift Razzashi Raptor / Crazy Raptor 150 (MOUNT!)
 					["modelID"] = 15289,
-				}),
-				i(37598, {	-- Swift Zhevra / Swift Zhevra OLD (MOUNT!)
-					["modelID"] = 24693,
 				}),
 				i(28025, {	-- Video Mount / Video Mount (MOUNT!)
 					["modelID"] = 6569,

@@ -1636,8 +1636,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161924),	-- Seapriest's Wand (A) (never addedd)
 			i(161926),	-- Talanji's Salutary Scepter (A) (never added)
 		}),
-		n(BACK, {
-			i(155091),	-- Thovas-Explorer's Cape
-		}),
 	}),
 });

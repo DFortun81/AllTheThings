@@ -4,8 +4,8 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	tier(CATA_TIER, {
-		filter(TOYS, {
+	filter(TOYS, {
+		tier(CATA_TIER, {
 			tier(CATA_TIER, 3.0, {
 				i(72226),	-- Art Template Plate Belt - Plate_PVPWarrior_D_01 - Orange (TOY!)
 				i(72227),	-- Art Template Plate Boot - Plate_PVPWarrior_D_01 - Orange (TOY!)
@@ -23,16 +23,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(72233),	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange (TOY!)
 			}),
 		}),
-	}),
-	tier(MOP_TIER, {
-		filter(TOYS, {
+		tier(MOP_TIER, {
 			tier(MOP_TIER, 0.1, {
 				i(88587),	-- Iron Belly Spirits (TOY!)
 			}),
 		}),
-	}),
-	tier(WOD_TIER, {
-		filter(TOYS, {
+		tier(WOD_TIER, {
 			tier(WOD_TIER, 0.1, {
 				i(119179),	-- Iron Star Roller (TOY!)
 				i(110586),	-- Mysterious Flower (TOY!)
@@ -54,9 +50,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(122235),	-- Unknown (TOY!)
 			}),
 		}),
-	}),
-	tier(LEGION_TIER, {
-		filter(TOYS, {
+		tier(LEGION_TIER, {
 			tier(LEGION_TIER, 0.3, {
 				i(140779),	-- Falanaar Echo (TOY!)
 				i(129111),	-- Kvaldir Raiding Horn (TOY!)
@@ -74,9 +68,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(129045),	-- Whitewater Tsunami (TOY!)
 			}),
 		}),
-	}),
-	tier(BFA_TIER, {
-		filter(TOYS, {
+		tier(BFA_TIER, {
 			tier(BFA_TIER, 0.1, {
 				i(164372),	-- Jinyu Light Globe (TOY!)
 				i(164377),	-- Regenerating Banana Bunch (TOY!)
@@ -92,9 +84,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(168836);	-- Unknown (TOY!)
 			}),
 		}),
-	}),
-	tier(SL_TIER, {
-		filter(TOYS, {
+		tier(SL_TIER, {
 			tier(SL_TIER, 0.1, {
 				i(174445),	-- Glimmerfly Cocoon (TOY!)
 				i(182655),	-- Hill King's Roarbox (TOY!)
