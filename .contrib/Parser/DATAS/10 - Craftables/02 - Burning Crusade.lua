@@ -511,6 +511,19 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				ill(5864),	-- Netherflame
 			}),
 		})),
+		cat(693, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
+			-- #if AFTER BFA
+			i(38895),	-- Enchant Cloak - Dodge
+			i(38893),	-- Enchant Cloak - Stealth
+			i(38894),	-- Enchant Cloak - Subtlety
+			-- #endif
+		})),
+		cat(694, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
+			-- #if AFTER BFA
+			i(38890),	-- Enchant Gloves - Superior Agility
+			i(38885),	-- Enchant Gloves - Threat
+			-- #endif
+		})),
 		category(697, {	-- Rods
 			i(22462, {	-- Runed Adamantite Rod
 				["timeline"] = { "removed 5.0.4.10000" },

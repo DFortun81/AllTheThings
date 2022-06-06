@@ -13,7 +13,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13935),	-- Agility
 			r(20023),	-- Greater Agility
 			r(20020),	-- Greater Stamina
-			r(63746, {["timelime"]={"added 3.1.0"}}),	-- Lesser Accuracy
+			r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
 			r(13637),	-- Lesser Agility
 			r(13644),	-- Lesser Stamina
 			r(13687),	-- Lesser Versatility / CLASSIC: Lesser Spirit
@@ -32,23 +32,23 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13846),	-- Greater Versatility / CLASSIC: Greater Spirit
 			r(23802),	-- Healing Power
 			r(13822),	-- Intellect
-			r(13646),	-- Lesser Dodge
+			r(13646),	-- Lesser Dodge / CLASSIC: Lesser Deflection
 			r(13622),	-- Lesser Intellect
 			r(13501),	-- Lesser Stamina
 			r(13536),	-- Lesser Strength
 			r(7859),	-- Lesser Versatility / CLASSIC: Lesser Spirit
-			r(13648),	-- Stamina
-			r(13661),	-- Strength
-			r(20011),	-- Superior Stamina
-			r(20010),	-- Superior Strength
-			r(20009),	-- Superior Versatility / CLASSIC: Superior Spirit
-			r(13642),	-- Versatility / CLASSIC: Spirit
 			r(7779),	-- Minor Agility
 			r(7428),	-- Minor Dodge / CLASSIC: Minor Deflection
 			r(7418),	-- Minor Health
 			r(7457),	-- Minor Stamina
 			r(7782),	-- Minor Strength
 			r(7766),	-- Minor Versatility / CLASSIC: Minor Spirit
+			r(13648),	-- Stamina
+			r(13661),	-- Strength
+			r(20011),	-- Superior Stamina
+			r(20010),	-- Superior Strength
+			r(20009),	-- Superior Versatility / CLASSIC: Superior Spirit
+			r(13642),	-- Versatility / CLASSIC: Spirit
 		}),
 		cat(692, {	-- Chest Enchantments
 			r(13640),	-- Greater Health
@@ -86,13 +86,18 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(7454, {["timeline"]={"removed 5.0.4"}}),	-- Minor Resistance
 			r(13794, {["timeline"]={"removed 5.0.4"}}),	-- Resistance
 			r(20015),	-- Superior Defense
+			-- #if BEFORE BFA
+			r(25086),	-- Dodge
+			r(25083),	-- Stealth
+			r(25084),	-- Subtlety
+			-- #endif
 		}),
 		cat(694, {	-- Glove Enchantments
 			r(13868, {["timeline"]={"removed 4.0.3"}}),	-- Advanced Herbalism
 			r(13841),	-- Advanced Mining
 			r(13815),	-- Agility
-			r(13620),	-- Fishing
 			r(25078),	-- Fire Power
+			r(13620),	-- Fishing
 			r(25074),	-- Frost Power
 			r(20012),	-- Greater Agility
 			r(20013),	-- Greater Strength
@@ -105,14 +110,11 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13698),	-- Skinning
 			r(13887),	-- Strength
 			-- #if BEFORE BFA
-			r(25086),	-- Dodge
-			r(25083),	-- Stealth
-			r(25084),	-- Subtlety
 			r(25080),	-- Superior Agility
 			r(25072),	-- Threat
 			-- #endif
 		}),
-		cat(706, bubbleDownSelf({ ["timline"] = { "added 7.3.0" } }, {	-- Illusions
+		cat(706, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217637),	-- Tome of Illusions: Azeroth
 		})),
 		cat(699, {	-- Oils
@@ -146,7 +148,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13378),	-- Minor Stamina
 			r(13817),	-- Stamina
 			r(13659),	-- Versatility / CLASSIC: Spirit
-			r(20016),	-- Vitality / Superior Spirit
+			r(20016),	-- Vitality / CLASSIC: Superior Spirit
 		}),
 		cat(700, {	-- Trinket
 			r(15596),	-- Smoking Heart of the Mountain
@@ -192,11 +194,15 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 		}),
 	}),
 	tier(TBC_TIER, {
-		cat(694, {	-- Glove Enchantments
+		cat(693, {	-- Cloak Enchantments
 			-- #if AFTER BFA
 			r(25086),	-- Dodge
 			r(25083),	-- Stealth
 			r(25084),	-- Subtlety
+			-- #endif
+		}),
+		cat(694, {	-- Glove Enchantments
+			-- #if AFTER BFA
 			r(25080),	-- Superior Agility
 			r(25072),	-- Threat
 			-- #endif

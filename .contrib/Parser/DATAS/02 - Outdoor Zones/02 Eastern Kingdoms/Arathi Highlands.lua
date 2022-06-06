@@ -900,8 +900,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(21942, {	-- Design: Ruby Crown of Restoration
 							["isLimited"] = true,
 						}),
-						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge
-							["timeline"] = { "added 4.1.0" },
+						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
+							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
 						i(5973, {	-- Pattern: Barbaric Leggings
 							["isLimited"] = true,

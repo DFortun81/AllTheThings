@@ -910,33 +910,166 @@ root("Craftables", tier(CLASSIC_TIER, {
 		}),
 	}),
 	prof(ENCHANTING, {
-		-- #if AFTER 7.0.3.22248
-		applyclassicphase(LEGION_PHASE_ONE, filter(103, {	-- Illusions
+		r(13262, {	-- Disenchant
+			["collectible"]=false,
+			["g"] = {
+				i(16203),	-- Greater Eternal Essence
+				i(10939),	-- Greater Magic Essence
+				i(16204),	-- Illusion Dust
+				i(14344),	-- Large Brilliant Shard
+				i(16202),	-- Lesser Eternal Essence
+				i(10938),	-- Lesser Magic Essence
+				i(14343),	-- Small Brilliant Shard
+				i(10940),	-- Strange Dust
+			},
+		}),
+		cat(690, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
+			i(38844),	-- Enchant Boots - Agility
+			i(38863),	-- Enchant Boots - Greater Agility
+			i(38862),	-- Enchant Boots - Greater Stamina
+			i(45628, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Lesser Accuracy
+			i(38807),	-- Enchant Boots - Lesser Agility
+			i(38810),	-- Enchant Boots - Lesser Stamina
+			i(38819),	-- Enchant Boots - Lesser Versatility / WRATH: Enchant Boots - Lesser Spirit
+			i(38786),	-- Enchant Boots - Minor Agility
+			i(38837),	-- Enchant Boots - Minor Speed
+			i(38785),	-- Enchant Boots - Minor Stamina
+			i(38830),	-- Enchant Boots - Stamina
+			i(38864),	-- Enchant Boots - Versatility / WRATH: Enchant Boots - Spirit
+		})),
+		cat(691, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bracer Enchantments
+			i(38881),	-- Enchant Bracer - Argent Versatility / WRATH: Enchant Bracer - Mana Regeneration
+			i(38842),	-- Enchant Bracer - Dodge
+			i(38852),	-- Enchant Bracer - Greater Intellect
+			i(38849),	-- Enchant Bracer - Greater Stamina
+			i(38846),	-- Enchant Bracer - Greater Strength
+			i(38832),	-- Enchant Bracer - Greater Versatility / WRATH: Enchant Bracer - Greater Spirit
+			i(38882),	-- Enchant Bracer - Healing Power
+			i(38829),	-- Enchant Bracer - Intellect
+			i(38811),	-- Enchant Bracer - Lesser Dodge / WRATH: Enchant Bracer - Lesser Deflection
+			i(38803),	-- Enchant Bracer - Lesser Intellect
+			i(38793),	-- Enchant Bracer - Lesser Stamina
+			i(38797),	-- Enchant Bracer - Lesser Strength
+			i(38783),	-- Enchant Bracer - Lesser Versatility / WRATH: Enchant Bracer - Lesser Spirit
+			i(38777),	-- Enchant Bracer - Minor Agility
+			i(38768),	-- Enchant Bracer - Minor Dodge / WRATH: Enchant Bracer - Minor Deflection
+			i(38679),	-- Enchant Bracer - Minor Health
+			i(38771),	-- Enchant Bracer - Minor Stamina
+			i(38778),	-- Enchant Bracer - Minor Strength
+			i(38774),	-- Enchant Bracer - Minor Versatility / WRATH: Enchant Bracer - Minor Spirit
+			i(38812),	-- Enchant Bracer - Stamina
+			i(38817),	-- Enchant Bracer - Strength
+			i(38855),	-- Enchant Bracer - Superior Stamina
+			i(38854),	-- Enchant Bracer - Superior Strength
+			i(38853),	-- Enchant Bracer - Superior Versatility / WRATH: Enchant Bracer - Superior Spirit
+			i(38809),	-- Enchant Bracer - Versatility / WRATH: Enchant Bracer - Spirit
+		})),
+		cat(692, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Chest Enchantments
+			i(38808),	-- Enchant Chest - Greater Health
+			i(38818),	-- Enchant Chest - Greater Mana
+			i(38865),	-- Enchant Chest - Greater Stats
+			i(38782),	-- Enchant Chest - Health
+			i(38798),	-- Enchant Chest - Lesser Absorption
+			i(38773),	-- Enchant Chest - Lesser Health
+			i(38776),	-- Enchant Chest - Lesser Mana
+			i(38824),	-- Enchant Chest - Lesser Stats
+			i(38866),	-- Enchant Chest - Major Health
+			i(38867),	-- Enchant Chest - Major Mana
+			i(38799),	-- Enchant Chest - Mana
+			i(38767),	-- Enchant Chest - Minor Absorption
+			i(38766),	-- Enchant Chest - Minor Health
+			i(38769),	-- Enchant Chest - Minor Mana
+			i(38804),	-- Enchant Chest - Minor Stats
+			i(38847),	-- Enchant Chest - Stats
+			i(38833),	-- Enchant Chest - Superior Health
+			i(38841),	-- Enchant Chest - Superior Mana
+		})),
+		cat(693, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
+			i(38806),	-- Enchant Cloak - Defense
+			i(38815, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Fire Resistance
+			i(38825),	-- Enchant Cloak - Greater Defense
+			i(38891, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Fire Resistance
+			i(38892, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Nature Resistance
+			i(38858, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Resistance
+			i(38835),	-- Enchant Cloak - Lesser Agility
+			i(38784, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Lesser Fire Resistance
+			i(38790),	-- Enchant Cloak - Lesser Protection
+			i(38795, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Lesser Shadow Resistance
+			i(38789),	-- Enchant Cloak - Minor Agility
+			i(38775),	-- Enchant Cloak - Minor Protection
+			i(38770, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Minor Resistance
+			i(38826, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Resistance
+			i(38859),	-- Enchant Cloak - Superior Defense
+			-- #if BEFORE BFA
+			i(38895),	-- Enchant Cloak - Dodge
+			i(38893),	-- Enchant Cloak - Stealth
+			i(38894),	-- Enchant Cloak - Subtlety
+			-- #endif
+		})),
+		cat(694, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
+			i(38834, {["timeline"]={"added 3.0.1","removed 4.0.3"}}),	-- Enchant Gloves - Advanced Herbalism
+			i(38831),	-- Enchant Gloves - Advanced Mining
+			i(38827),	-- Enchant Gloves - Agility
+			i(38888),	-- Enchant Gloves - Fire Power
+			i(38802),	-- Enchant Gloves - Fishing
+			i(38887),	-- Enchant Gloves - Frost Power
+			i(38856),	-- Enchant Gloves - Greater Agility
+			i(38857),	-- Enchant Gloves - Greater Strength
+			i(38889),	-- Enchant Gloves - Healing Power
+			i(38801),	-- Enchant Gloves - Herbalism
+			i(38800),	-- Enchant Gloves - Mining
+			i(38851),	-- Enchant Gloves - Minor Haste
+			i(38850),	-- Enchant Gloves - Riding Skill
+			i(38886),	-- Enchant Gloves - Shadow Power
+			i(38823),	-- Enchant Gloves - Skinning
+			i(38836),	-- Enchant Gloves - Strength
+			-- #if BEFORE BFA
+			i(38890),	-- Enchant Gloves - Superior Agility
+			i(38885),	-- Enchant Gloves - Threat
+			-- #endif
+		})),
+		applyclassicphase(LEGION_PHASE_ONE, filter(103, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			i(138787, {	-- Tome of Illusions: Azeroth
 				ill(803),	-- Fiery Weapon
 				ill(1899),	-- Unholy Weapon
 				ill(5863),	-- Coldlight
 			}),
+		}))),
+		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
+			i(20748, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil
+			i(20749, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil
+			i(20747),	-- Lesser Mana Oil
+			i(20746),	-- Lesser Wizard Oil
+			i(20745),	-- Minor Mana Oil
+			i(20744),	-- Minor Wizard Oil
+			i(20750),	-- Wizard Oil
 		})),
-		-- #endif
-		category(697, {	-- Rods
-			i(16207, {	-- Runed Arcanite Rod
-				["timeline"] = { "removed 5.0.1" },
-			}),
-			i(6218),	-- Runed Copper Rod
-			i(11130, {	-- Runed Golden Rod
-				["timeline"] = { "removed 5.0.1" },
-			}),
-			i(6339, {	-- Runed Silver Rod
-				["timeline"] = { "removed 5.0.1" },
-			}),
-			i(11145, {	-- Runed Truesilver Rod
-				["timeline"] = { "removed 5.0.1" },
-			}),
-		}),
-		category(701, {	-- Reagents
+		cat(701, {	-- Reagents
 			i(12810),	-- Enchanted Leather
 			i(12655),	-- Enchanted Thorium Bar
+		}),
+		cat(697, {	-- Rods
+			i(16207, {["timeline"]={"removed 5.0.4"}}),	-- Runed Arcanite Rod
+			i(6218),	-- Runed Copper Rod
+			i(11130, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
+			i(6339, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
+			i(11145, {["timeline"]={"removed 5.0.4"}}),	-- Runed Truesilver Rod
+		}),
+		cat(696, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Shield Enchantments
+			i(38843, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Shield - Frost Resistance
+			i(38861),	-- Enchant Shield - Greater Stamina
+			i(38839),	-- Enchant Shield - Greater Versatility / WRATH: Enchant Shield - Greater Spirit
+			i(38820),	-- Enchant Shield - Lesser Parry / WRATH: Enchant Shield - Lesser Block
+			i(38791),	-- Enchant Shield - Lesser Protection
+			i(38805),	-- Enchant Shield - Lesser Stamina
+			i(38792),	-- Enchant Shield - Lesser Versatility / WRATH: Enchant Shield - Lesser Spirit
+			i(38787),	-- Enchant Shield - Minor Stamina
+			i(38828),	-- Enchant Shield - Stamina
+			i(38816),	-- Enchant Shield - Versatility / WRATH: Enchant Shield - Spirit
+			i(38860),	-- Enchant Shield - Vitality / WRATH: Enchant Shield - Superior Spirit
+		})),
+		filter(53, {	-- Trinkets
+			i(11811),	-- Smoking Heart of the Mountain
 		}),
 		filter(WANDS, {
 			i(11288),	-- Greater Magic Wand
@@ -944,17 +1077,38 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 		}),
-		filter(53, {	-- Trinkets
-			i(11811),	-- Smoking Heart of the Mountain
-		}),
-		applyclassicphase(PHASE_FIVE, category(699, {	-- Oils
-			i(20748),	-- Brilliant Mana Oil
-			i(20749),	-- Brilliant Wizard Oil
-			i(20747),	-- Lesser Mana Oil
-			i(20746),	-- Lesser Wizard Oil
-			i(20745),	-- Minor Mana Oil
-			i(20744),	-- Minor Wizard Oil
-			i(20750),	-- Wizard Oil
+		cat(695, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
+			i(38880),	-- Enchant Weapon - Agility
+			i(38896),	-- Enchant 2H Weapon - Agility
+			i(38873),	-- Enchant Weapon - Crusader
+			i(38840),	-- Enchant Weapon - Demonslaying
+			i(38838),	-- Enchant Weapon - Fiery Weapon
+			i(38845),	-- Enchant 2H Weapon - Greater Impact
+			i(38848),	-- Enchant Weapon - Greater Striking
+			i(38878),	-- Enchant Weapon - Healing Power
+			i(38868),	-- Enchant Weapon - Icy Chill
+			i(38822),	-- Enchant 2H Weapon - Impact
+			i(38813),	-- Enchant Weapon - Lesser Beastslayer
+			i(38814),	-- Enchant Weapon - Lesser Elemental Slayer
+			i(38796),	-- Enchant 2H Weapon - Lesser Impact
+			i(38781),	-- Enchant 2H Weapon - Lesser Intellect
+			i(38794),	-- Enchant Weapon - Lesser Striking
+			i(38788),	-- Enchant 2H Weapon - Lesser Versatility / WRATH: Enchant 2H Weapon - Lesser Spirit
+			i(38871, {["timeline"]={"added 3.0.1","removed 4.0.3"}}),	-- Enchant Weapon - Lifestealing
+			i(38875),	-- Enchant 2H Weapon - Major Intellect
+			i(38874),	-- Enchant 2H Weapon - Major Versatility / WRATH: Enchant 2H Weapon - Major Spirit
+			i(38884),	-- Enchant Weapon - Mighty Intellect
+			i(38883),	-- Enchant Weapon - Mighty Versatility / WRATH: Enchant Weapon - Mighty Spirit
+			i(38779),	-- Enchant Weapon - Minor Beastslayer
+			i(38772),	-- Enchant 2H Weapon - Minor Impact
+			i(38780),	-- Enchant Weapon - Minor Striking
+			i(38877),	-- Enchant Weapon - Spellpower
+			i(38879),	-- Enchant Weapon - Strength
+			i(38821),	-- Enchant Weapon - Striking
+			i(38869, {["timeline"]={"added 3.0.1","removed 6.0.1"}}),	-- Enchant 2H Weapon - Superior Impact
+			i(38870),	-- Enchant Weapon - Superior Striking
+			i(38872),	-- Enchant Weapon - Unholy Weapon
+			i(38876),	-- Enchant Weapon - Winter's Might
 		})),
 	}),
 	prof(ENGINEERING, {

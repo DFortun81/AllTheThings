@@ -1201,8 +1201,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 							["u"] = REMOVED_FROM_GAME,
 						}),
-						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
-							["timeline"] = { "added 4.1.0" },
+						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
+							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
 					},
 				}),
