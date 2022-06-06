@@ -343,6 +343,8 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(164752),	-- Illidari Boots
 					i(164756),	-- Illidari Band
 					i(164757),	-- Illidari Ring
+					i(164755),	-- Charm of Demonic Fire
+					i(164754),	-- Demon Trophy
 					-- 8.2.5
 					i(170927),	-- Illidari Shoulders
 					i(170939),	-- Illidari Chain

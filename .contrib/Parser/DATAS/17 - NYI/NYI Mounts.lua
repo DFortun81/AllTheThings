@@ -4,8 +4,8 @@
 -- Everything in this file hasn't been implemented yet.
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	tier(CLASSIC_TIER, {
-		filter(MOUNTS, {
+	filter(MOUNTS, {
+		tier(CLASSIC_TIER, {
 			i(16344, {		-- Arctic Wolf / zzUNUSEDLieutenant General's Mount (MOUNT!)
 				["modelID"] = 1166
 			}),
@@ -115,9 +115,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				["modelID"] = 1166,
 			}),
 		}),
-	}),
-	tier(TBC_TIER, {
-		filter(MOUNTS, {
+		tier(TBC_TIER, {
 			-- 2.0.1
 			tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 2.0.1"} }, {
 				mount(33630, {	-- Blue Mechanostrider (MOUNT!)
@@ -182,9 +180,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			}),
 		}),
-	}),
-	tier(WOTLK_TIER, {
-		filter(MOUNTS, {
+		tier(WOTLK_TIER, {
 			-- 3.0.1
 			tier(WOTLK_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 3.0.1"} }, {
 				i(43964, {	-- Black Polar Bear / Reins of the Black Polar Bear (MOUNT!)
@@ -238,6 +234,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				i(46758, {	-- Swift Gray Steed / Swift Gray Steed (MOUNT!)
 					["modelID"] = 29043,
+					["_drop"] = { "spellID", "mountID" },
 				}),
 				i(46759, {	-- Swift Moonsaber / Swift Moonsaber (MOUNT!)
 					["modelID"] = 14333,
@@ -279,9 +276,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
-	}),
-	tier(MOP_TIER, {
-		filter(MOUNTS, {
+		tier(MOP_TIER, {
 			-- 5.0.1
 			tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
 				i(87785, {	-- Albino Riding Crane / Reins of the Albino Riding Crane (MOUNT!)
@@ -327,9 +322,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
-	}),
-	tier(WOD_TIER, {
-		filter(MOUNTS, {
+		tier(WOD_TIER, {
 			-- 6.0.2
 			tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = {"created 6.0.2"} }, {
 				i(116657, {	-- Ancient Leatherhide / Ancient Leatherhide (MOUNT!)
@@ -351,9 +344,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
-	}),
-	tier(LEGION_TIER, {
-		filter(MOUNTS, {
+		tier(LEGION_TIER, {
 			-- 7.0.3
 			tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
 				i(137576, {	-- Coldflame Infernal / Dim Coldflame Core (MOUNT!)
@@ -383,9 +374,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
-	}),
-	tier(BFA_TIER, {
-		filter(MOUNTS, {
+		tier(BFA_TIER, {
 			-- 8.0.1
 			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 				i(156885, {	-- Gold Gladiator's Proto-Drake / Gold Gladiator's Proto-Drake (MOUNT!)
@@ -458,9 +447,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 		}),
-	}),
-	tier(SL_TIER, {
-		filter(MOUNTS, {
+		tier(SL_TIER, {
 			-- 9.0.1
 			tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 				i(182083, {	-- Bonecleaver's Skullboar / Bonecleaver's Skullboar (MOUNT!)

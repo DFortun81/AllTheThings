@@ -915,7 +915,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 				}),
 				q(65659, {	-- The Blight Congress
-					["sourceQuests"] = { 65657 },	-- Assemble the Forsaken
+					["sourceQuests"] = { 65658 },	-- This Land is Ours
 					["provider"] = { "n", 185513 },	-- Lilian Voss
 					["coord"] = { 60.9, 51.3, 2070 },
 					["timeline"] = { "added 9.2.5" },

@@ -1055,12 +1055,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(150515),	-- Nadina's Pendant of Purity
 				}),
 			}),
-			cl(DEMONHUNTER, {
-				tier(BFA_TIER, 0.1, {
-					i(164754),	-- Demon Trophy
-					i(164755),	-- Charm of Demonic Fire
-				}),
-			}),
 			n(BACK, {
 				tier(BFA_TIER, 0.1, {
 					i(153397),	-- Salt Starched Shawl
