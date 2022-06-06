@@ -2435,6 +2435,11 @@ local PrintQuestInfo = function(questID, new, info)
 		else
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
 			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+				-- Play a sound when a reportable error is found, if any sound setting is enabled
+				if app.Settings:GetTooltipSetting("Warn:Removed")
+				or app.Settings:GetTooltipSetting("Celebrate") then
+					app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+				end
 				-- Linkify the output
 				local popupID = "quest-" .. questID .. questChange;
 				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID);
@@ -2459,11 +2464,6 @@ local PrintQuestInfo = function(questID, new, info)
 			end
 		end
 		print("Quest",questChange,chatMsg,(info or ""));
-		-- Play a sound when a reportable error is found, if any sound setting is enabled
-		if app.Settings:GetTooltipSetting("Warn:Removed")
-		or app.Settings:GetTooltipSetting("Celebrate") then
-			app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-		end
 	end
 end
 local DirtyQuests = {};
