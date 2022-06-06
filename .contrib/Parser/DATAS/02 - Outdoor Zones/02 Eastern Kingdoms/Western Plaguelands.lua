@@ -981,8 +981,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(18171),	-- Arcane Mantle of the Dawn
 						i(18182),	-- Chromatic Mantle of the Dawn
 						i(18169),	-- Flame Mantle of the Dawn
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
-						i(19447),	-- Formula: Enchant Bracer - Healing Power
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						i(19442),	-- Formula: Powerful Anti-Venom
 						i(18170),	-- Frost Mantle of the Dawn
 						i(18172),	-- Nature Mantle of the Dawn

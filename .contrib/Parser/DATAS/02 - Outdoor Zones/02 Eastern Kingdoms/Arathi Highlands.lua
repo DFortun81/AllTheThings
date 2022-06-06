@@ -941,7 +941,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 2584 },	-- Stromgarde Defender
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				i(11166, {	-- Formula: Enchant Gloves - Skinning
+				i(11166, {	-- Formula: Enchant Gloves - Skinning (RECIPE!)
 					["crs"] = {
 						2558,	-- Witherbark Berserker
 						2556,	-- Witherbark Headhunter

@@ -301,7 +301,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(17011),	-- Lava Core
 			}),
 			n(COMMON_BOSS_DROPS, {
-				i(18260, {	-- Formula: Enchant Weapon - Healing Power
+				i(18260, {	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					["crs"]	= {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -312,7 +312,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18259, {	-- Formula: Enchant Weapon - Spellpower
+				i(18259, {	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					["crs"]	= {
 						12118,	-- Lucifron
 						11982,	-- Magmadar

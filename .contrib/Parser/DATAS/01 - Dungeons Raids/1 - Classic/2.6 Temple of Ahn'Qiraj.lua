@@ -1061,13 +1061,13 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					15299,	-- Viscidus
 				},
 				["groups"] = {
-					i(20736),	-- Formula: Enchant Cloak - Dodge
-					i(20734),	-- Formula: Enchant Cloak - Stealth
-					i(20729),	-- Formula: Enchant Gloves - Fire Power
-					i(20728),	-- Formula: Enchant Gloves - Frost Power
-					i(20730),	-- Formula: Enchant Gloves - Healing Power
-					i(20727),	-- Formula: Enchant Gloves - Shadow Power
-					i(20731),	-- Formula: Enchant Gloves - Superior Agility
+					i(20736),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
+					i(20734),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
+					i(20729),	-- Formula: Enchant Gloves - Fire Power (RECIPE!)
+					i(20728),	-- Formula: Enchant Gloves - Frost Power (RECIPE!)
+					i(20730),	-- Formula: Enchant Gloves - Healing Power (RECIPE!)
+					i(20727),	-- Formula: Enchant Gloves - Shadow Power (RECIPE!)
+					i(20731),	-- Formula: Enchant Gloves - Superior Agility (RECIPE!)
 				},
 			}),
 			n(ZONE_DROPS, {
@@ -1459,7 +1459,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1549, {	-- The Twin Emperors
 			-- #endif
 				n(15276, {	-- Emperor Vek'lor
-					i(20735),	-- Formula: Enchant Cloak - Subtlety
+					i(20735),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 					i(20930),	-- Vek'lor's Diadem
 					i(21597),	-- Royal Scepter of Vek'lor
 					i(21602),	-- Qiraji Execution Bracers
@@ -1472,7 +1472,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					})),
 				}),
 				n(15275, {	-- Emperor Vek'nilash
-					i(20726),	-- Formula: Enchant Gloves - Threat
+					i(20726),	-- Formula: Enchant Gloves - Threat (RECIPE!)
 					i(20926),	-- Vek'nilash's Circlet
 					i(21679),	-- Kalimdor's Revenge
 					i(21608),	-- Amulet of Vek'nilash

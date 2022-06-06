@@ -11,9 +11,9 @@ _.Zones =
 					["coord"] = { 36.2, 46.6, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
@@ -21,9 +21,9 @@ _.Zones =
 					["coord"] = { 76.8, 62.2, DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
@@ -31,9 +31,9 @@ _.Zones =
 					["coord"] = { 28.8, 55.8, DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),

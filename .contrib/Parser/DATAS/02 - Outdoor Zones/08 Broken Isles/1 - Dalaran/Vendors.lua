@@ -3129,10 +3129,10 @@ _.Zones =
 						i(128580),	-- Formula: Enchant Ring - Word of Haste (Rank 2)
 						i(128581),	-- Formula: Enchant Ring - Word of Mastery (Rank 2)
 						i(128582),	-- Formula: Enchant Ring - Word of Versatility (Rank 2)
-						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(140634),	-- Formula: Ley Shatter
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),

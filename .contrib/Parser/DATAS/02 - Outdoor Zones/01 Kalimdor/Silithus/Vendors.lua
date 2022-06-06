@@ -45,11 +45,17 @@ _.Zones =
 				n(15419,  {	-- Kania <Enchanting Supplies>
 					["coord"] = { 55.6, 37.2, SILITHUS },
 					["g"] = {
-						i(20754),	-- Formula: Lesser Mana Oil
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(20755),	-- Formula: Wizard Oil
+						i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+							["timeline"] = { "removed 5.0.4" },
+						}),
+						i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+							["timeline"] = { "removed 5.0.4" },
+						}),
+						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+						i(20755),	-- Formula: Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						i(22308),	-- Pattern: Enchanted Runecloth Bag
 					},

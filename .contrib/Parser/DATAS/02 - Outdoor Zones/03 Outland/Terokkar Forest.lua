@@ -2,23 +2,23 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local HUNGRY_NETHER_RAYS_GROUPS = {};
-local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy
+local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
 local OnTooltipForSkyguard = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		GameTooltip:AddLine("Protip: Join a rep farming group.", 1, 0.5, 0.5);
-		
+
 		local isHuman = _.RaceIndex == 1;
 		local repPerKill = isHuman and 5.5 or 5;
 		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
 		GameTooltip:AddDoubleLine("Kill Arokkoa.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		local repPerKill = isHuman and 110 or 100;
 		local x, n = math.ceil((42000 - reputation) / repPerKill), math.ceil(42000 / repPerKill);
 		GameTooltip:AddDoubleLine("Summon Bosses.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		local repPerTurnIn = isHuman and 165 or 150;
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Shadow Dust.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
@@ -67,7 +67,7 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
-							
+
 							-- Refugee Caravan
 							10878,	-- Before Darkness Falls
 							10031,	-- Helping the Lost Find Their Way
@@ -75,7 +75,7 @@ root("Zones", {
 							10896,	-- The Infested Protectors
 							10881,	-- The Shadow Tomb
 							10842,	-- Vengeful Souls
-							
+
 							-- Sha'tari Base Camp
 							10915,	-- The Fallen Exarch
 							10926,	-- Return to Sha'tari Base Camp
@@ -83,11 +83,11 @@ root("Zones", {
 							-- TODO: verify below:
 							10923,	-- Evil Draws Near
 							10873,	-- Taken in the Night
-							
+
 							-- The Warden's Secret
 							9951,	-- It's Watching You!
 							10005,	-- Letting Earthbinder Tavgren Know
-							
+
 							-- Allerian Stronghold
 							10042,	-- Kill the Shadow Council!
 							10035,	-- Torgos!
@@ -160,7 +160,7 @@ root("Zones", {
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
-							
+
 							-- Refugee Caravan
 							10878,	-- Before Darkness Falls
 							10031,	-- Helping the Lost Find Their Way
@@ -168,7 +168,7 @@ root("Zones", {
 							10896,	-- The Infested Protectors
 							10881,	-- The Shadow Tomb
 							10842,	-- Vengeful Souls
-							
+
 							-- Sha'tari Base Camp
 							10915,	-- The Fallen Exarch
 							10926,	-- Return to Sha'tari Base Camp
@@ -176,11 +176,11 @@ root("Zones", {
 							-- TODO: verify below:
 							10923,	-- Evil Draws Near
 							10873,	-- Taken in the Night
-							
+
 							-- The Warden's Secret
 							9951,	-- It's Watching You!
 							10005,	-- Letting Earthbinder Tavgren Know
-							
+
 							-- Stonebreaker Hold
 							10013,	-- An Unseen Hand
 							10043,	-- Kill the Shadow Council

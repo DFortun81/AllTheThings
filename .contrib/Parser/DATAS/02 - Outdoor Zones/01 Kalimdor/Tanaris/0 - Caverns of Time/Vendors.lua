@@ -40,7 +40,7 @@ _.Zones =
 							i(24174),	-- Design: Pendant of Frozen Flame
 							i(33158),	-- Design: Stone of Blades
 							i(28272),	-- Formula: Enchant Gloves - Major Spellpower
-							i(33152),	-- Formula: Enchant Gloves - Superior Agility
+							i(33152, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Gloves - Superior Agility (RECIPE!)
 							i(22536),	-- Formula: Enchant Ring - Spellpower
 							i(29713),	-- Pattern: Drums of Panic
 							-- #if ANYCLASSIC

@@ -930,8 +930,8 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil
-						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil
+						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
+						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
 						i(19772),	-- Pattern: Blood Tiger Breastplate
 						i(19773),	-- Pattern: Blood Tiger Shoulders
 						i(19766),	-- Pattern: Bloodvine Boots

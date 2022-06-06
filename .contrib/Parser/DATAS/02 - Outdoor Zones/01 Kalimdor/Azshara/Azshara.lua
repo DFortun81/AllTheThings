@@ -1573,9 +1573,9 @@ root("Zones", m(KALIMDOR, {
 				n(36365, bubbleDownSelf({ ["timeline"] = { "added 4.0.1.12984" } }, {	-- Zoey Wizzlespark <Xylem's Apprentice>
 					["coord"] = { 55.8, 12.0, AZSHARA },
 					["g"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				})),
@@ -1591,8 +1591,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 2.3.0.7485", "removed 4.0.3" },
 				})),
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
-					["timeline"] = { "removed 2.0.10" },	-- now learned from trainer, formula was removed from game
-					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+					["timeline"] = { "removed 2.3.0" },	-- Learned from trainer
 					["crs"] = { 6201 },	-- Legashi Rogue
 				}),
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders

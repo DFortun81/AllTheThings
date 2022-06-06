@@ -1303,13 +1303,13 @@ root("Instances", tier(CLASSIC_TIER, {
 			}),
 			n(VENDORS, {
 				n(12944, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-					applyclassicphase(PHASE_THREE, i(19449, {	-- Formula: Enchant Weapon - Mighty Intellect
+					applyclassicphase(PHASE_THREE, i(19449, {	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19448, {	-- Formula: Enchant Weapon - Mighty Spirit
+					applyclassicphase(PHASE_THREE, i(19448, {	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength
+					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
 					i(17025, {	-- Pattern: Black Dragonscale Boots

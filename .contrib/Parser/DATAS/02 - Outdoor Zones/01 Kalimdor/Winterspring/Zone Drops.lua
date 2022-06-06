@@ -8,7 +8,7 @@ _.Zones =
 		m(WINTERSPRING, {
 			n(ZONE_DROPS, {
 				i(34535),	-- Azure Whelpling
-				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
+				i(16223, {	-- Formula: Enchant Weapon - Icy Chill (RECIPE!)
 					["crs"] = {
 						7524,	-- Anguished Highborne
 						7523,	-- Suffering Highborne

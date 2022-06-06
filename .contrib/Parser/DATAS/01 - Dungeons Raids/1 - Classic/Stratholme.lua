@@ -574,7 +574,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(16249, {	-- Formula: Enchant 2H Weapon - Major Intellect
+						i(16249, {	-- Formula: Enchant 2H Weapon - Major Intellect (RECIPE!)
 							["cr"] = 10422,  -- Crimson Sorcerer / Risen Sorcerer [CATA+]
 						}),
 						i(14495, {	-- Pattern: Ghostweave Pants
@@ -873,7 +873,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				-- #endif
 				["groups"] = {
 					n(ZONE_DROPS, {
-						i(16248, {	-- Formula: Enchant Weapon - Unholy
+						i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt

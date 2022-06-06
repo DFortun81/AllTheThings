@@ -4,9 +4,6 @@
 -- //Braghe
 --[[
 0.5.3.3368
-recipe(7411),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Apprentice)
-recipe(7412),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Journeyman)
-recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Expert)
 0.5.5.3494
 0.6.0.3592
 0.7.0.3694
@@ -14,46 +11,12 @@ recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Expert)
 0.7.6.3712
 0.8.0.3734
 0.9.0.3807
-recipe(13920),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Artisan)
-recipe(13262),	-- Disenchant,		TBC: Disenchant,		CLASSIC: Disenchant
-recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
-recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
-recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
-recipe(13663),	-- Greater Mana,		TBC: Enchant Chest - Greater Mana,		CLASSIC: Enchant Chest - Greater Mana
-recipe(13687),	-- Lesser Versatility,		TBC: Enchant Boots - Lesser Spirit,		CLASSIC: Enchant Boots - Lesser Spirit
 0.9.1.3810
 0.10.0.3892
 0.11.0.3925
 0.12.0.3988
 1.0.0.3980
-recipe(17180),	-- Enchanted Thorium Bar,		TBC: Enchanted Thorium,		CLASSIC: Enchanted Thorium
-recipe(17181),	-- Enchanted Leather,		TBC: Enchanted Leather,		CLASSIC: Enchanted Leather
 1.1.2.4125
-recipe(20035),	-- Major Versatility,		TBC: Enchant 2H Weapon - Major Spirit,		CLASSIC: Enchant 2H Weapon - Major Spirit
-recipe(20032),	-- Lifestealing,		TBC: Enchant Weapon - Lifestealing,		CLASSIC: Enchant Weapon - Lifestealing
-recipe(20025),	-- Greater Stats,		TBC: Enchant Chest - Greater Stats,		CLASSIC: Enchant Chest - Greater Stats
-recipe(20034),	-- Crusader,		TBC: Enchant Weapon - Crusader,		CLASSIC: Enchant Weapon - Crusader
-recipe(20011),	-- Superior Stamina,		TBC: Enchant Bracer - Superior Stamina,		CLASSIC: Enchant Bracer - Superior Stamina
-recipe(20031),	-- Superior Striking,		TBC: Enchant Weapon - Superior Striking,		CLASSIC: Enchant Weapon - Superior Striking
-recipe(20036),	-- Major Intellect,		TBC: Enchant 2H Weapon - Major Intellect,		CLASSIC: Enchant 2H Weapon - Major Intellect
-recipe(20033),	-- Unholy Weapon,		TBC: Enchant Weapon - Unholy Weapon,		CLASSIC: Enchant Weapon - Unholy Weapon
-recipe(20030),	-- Superior Impact,		TBC: Enchant 2H Weapon - Superior Impact,		CLASSIC: Enchant 2H Weapon - Superior Impact
-recipe(20010),	-- Superior Strength,		TBC: Enchant Bracer - Superior Strength,		CLASSIC: Enchant Bracer - Superior Strength
-recipe(20023),	-- Greater Agility,		TBC: Enchant Boots - Greater Agility,		CLASSIC: Enchant Boots - Greater Agility
-recipe(20013),	-- Greater Strength,		TBC: Enchant Gloves - Greater Strength,		CLASSIC: Enchant Gloves - Greater Strength
-recipe(20051),	-- ,		TBC: Runed Arcanite Rod,		CLASSIC: Runed Arcanite Rod
-recipe(20028),	-- Major Mana,		TBC: Enchant Chest - Major Mana,		CLASSIC: Enchant Chest - Major Mana
-recipe(20015),	-- Superior Defense,		TBC: Enchant Cloak - Superior Defense,		CLASSIC: Enchant Cloak - Superior Defense
-recipe(20029),	-- Icy Chill,		TBC: Enchant Weapon - Icy Chill,		CLASSIC: Enchant Weapon - Icy Chill
-recipe(20016),	-- Vitality,		TBC: Enchant Shield - Superior Spirit,		CLASSIC: Enchant Shield - Superior Spirit
-recipe(20026),	-- Major Health,		TBC: Enchant Chest - Major Health,		CLASSIC: Enchant Chest - Major Health
-recipe(20024),	-- Versatility,		TBC: Enchant Boots - Spirit,		CLASSIC: Enchant Boots - Spirit
-recipe(20012),	-- Greater Agility,		TBC: Enchant Gloves - Greater Agility,		CLASSIC: Enchant Gloves - Greater Agility
-recipe(20009),	-- Superior Versatility,		TBC: Enchant Bracer - Superior Spirit,		CLASSIC: Enchant Bracer - Superior Spirit
-recipe(20017),	-- Greater Stamina,		TBC: Enchant Shield - Greater Stamina,		CLASSIC: Enchant Shield - Greater Stamina
-recipe(20014),	-- ,		TBC: Enchant Cloak - Greater Resistance,		CLASSIC: Enchant Cloak - Greater Resistance
-recipe(20020),	-- Greater Stamina,		TBC: Enchant Boots - Greater Stamina,		CLASSIC: Enchant Boots - Greater Stamina
-recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		CLASSIC: Enchant Bracer - Greater Intellect
 1.2.0.4147
 1.2.2.4196
 1.2.3.4211
@@ -88,35 +51,6 @@ recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		
 1.12.1.5875
 1.12.2.6005
 1.13.0.28211
-recipe(21931),	-- Winter's Might,		TBC: Enchant Weapon - Winter's Might,		CLASSIC: Enchant Weapon - Winter's Might
-recipe(22434),	-- ,		CLASSIC: Charged Scale of Onyxia
-recipe(22749),	-- Spellpower,		TBC: Enchant Weapon - Spell Power,		CLASSIC: Enchant Weapon - Spell Power
-recipe(22750),	-- Healing Power,		TBC: Enchant Weapon - Healing Power,		CLASSIC: Enchant Weapon - Healing Power
-recipe(23799),	-- Strength,		TBC: Enchant Weapon - Strength,		CLASSIC: Enchant Weapon - Strength
-recipe(23800),	-- Agility,		TBC: Enchant Weapon - Agility,		CLASSIC: Enchant Weapon - Agility
-recipe(23801),	-- Argent Versatility,		TBC: Enchant Bracer - Mana Regeneration,		CLASSIC: Enchant Bracer - Mana Regeneration
-recipe(23802),	-- Healing Power,		TBC: Enchant Bracer - Healing Power,		CLASSIC: Enchant Bracer - Healing Power
-recipe(23803),	-- Mighty Versatility,		TBC: Enchant Weapon - Mighty Spirit,		CLASSIC: Enchant Weapon - Mighty Spirit
-recipe(23804),	-- Mighty Intellect,		TBC: Enchant Weapon - Mighty Intellect,		CLASSIC: Enchant Weapon - Mighty Intellect
-recipe(25072),	-- Threat,		TBC: Enchant Gloves - Threat,		CLASSIC: Enchant Gloves - Threat
-recipe(25073),	-- Shadow Power,		TBC: Enchant Gloves - Shadow Power,		CLASSIC: Enchant Gloves - Shadow Power
-recipe(25074),	-- Frost Power,		TBC: Enchant Gloves - Frost Power,		CLASSIC: Enchant Gloves - Frost Power
-recipe(25078),	-- Fire Power,		TBC: Enchant Gloves - Fire Power,		CLASSIC: Enchant Gloves - Fire Power
-recipe(25079),	-- Healing Power,		TBC: Enchant Gloves - Healing Power,		CLASSIC: Enchant Gloves - Healing Power
-recipe(25080),	-- Superior Agility,		TBC: Enchant Gloves - Superior Agility,		CLASSIC: Enchant Gloves - Superior Agility
-recipe(25081),	-- ,		TBC: Enchant Cloak - Greater Fire Resistance,		CLASSIC: Enchant Cloak - Greater Fire Resistance
-recipe(25082),	-- ,		TBC: Enchant Cloak - Greater Nature Resistance,		CLASSIC: Enchant Cloak - Greater Nature Resistance
-recipe(25083),	-- Stealth,		TBC: Enchant Cloak - Stealth,		CLASSIC: Enchant Cloak - Stealth
-recipe(25084),	-- Subtlety,		TBC: Enchant Cloak - Subtlety,		CLASSIC: Enchant Cloak - Subtlety
-recipe(25086),	-- Dodge,		TBC: Enchant Cloak - Dodge,		CLASSIC: Enchant Cloak - Dodge
-recipe(25124),	-- Minor Wizard Oil,		TBC: Minor Wizard Oil,		CLASSIC: Minor Wizard Oil
-recipe(25125),	-- Minor Mana Oil,		TBC: Minor Mana Oil,		CLASSIC: Minor Mana Oil
-recipe(25126),	-- Lesser Wizard Oil,		TBC: Lesser Wizard Oil,		CLASSIC: Lesser Wizard Oil
-recipe(25127),	-- Lesser Mana Oil,		TBC: Lesser Mana Oil,		CLASSIC: Lesser Mana Oil
-recipe(25128),	-- Wizard Oil,		TBC: Wizard Oil,		CLASSIC: Wizard Oil
-recipe(25129),	-- Brilliant Wizard Oil,		TBC: Brilliant Wizard Oil,		CLASSIC: Brilliant Wizard Oil
-recipe(25130),	-- Brilliant Mana Oil,		TBC: Brilliant Mana Oil,		CLASSIC: Brilliant Mana Oil
-recipe(27837),	-- Agility,		TBC: Enchant 2H Weapon - Agility,		CLASSIC: Enchant 2H Weapon - Agility
 1.13.0.28377
 1.13.2.30073
 1.13.2.30112
@@ -523,68 +457,6 @@ recipe(64579),	-- Blood Draining
 recipe(69412),	-- Abyssal Shatter
 recipe(71692),	-- Angler
 4.0.1.12911
-recipe(13607),	-- Mana,		TBC: Enchant Chest - Mana,		CLASSIC: Enchant Chest - Mana
-recipe(13663),	-- Greater Mana,		TBC: Enchant Chest - Greater Mana,		CLASSIC: Enchant Chest - Greater Mana
-recipe(13687),	-- Lesser Versatility,		TBC: Enchant Boots - Lesser Spirit,		CLASSIC: Enchant Boots - Lesser Spirit
-recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
-recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
-recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
-recipe(13868),	-- Advanced Herbalism,		TBC: Enchant Gloves - Advanced Herbalism,		CLASSIC: Enchant Gloves - Advanced Herbalism
-recipe(17181),	-- Enchanted Leather,		TBC: Enchanted Leather,		CLASSIC: Enchanted Leather
-recipe(17180),	-- Enchanted Thorium Bar,		TBC: Enchanted Thorium,		CLASSIC: Enchanted Thorium
-recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		CLASSIC: Enchant Bracer - Greater Intellect
-recipe(20020),	-- Greater Stamina,		TBC: Enchant Boots - Greater Stamina,		CLASSIC: Enchant Boots - Greater Stamina
-recipe(20014),	-- ,		TBC: Enchant Cloak - Greater Resistance,		CLASSIC: Enchant Cloak - Greater Resistance
-recipe(20017),	-- Greater Stamina,		TBC: Enchant Shield - Greater Stamina,		CLASSIC: Enchant Shield - Greater Stamina
-recipe(20009),	-- Superior Versatility,		TBC: Enchant Bracer - Superior Spirit,		CLASSIC: Enchant Bracer - Superior Spirit
-recipe(20012),	-- Greater Agility,		TBC: Enchant Gloves - Greater Agility,		CLASSIC: Enchant Gloves - Greater Agility
-recipe(20024),	-- Versatility,		TBC: Enchant Boots - Spirit,		CLASSIC: Enchant Boots - Spirit
-recipe(20026),	-- Major Health,		TBC: Enchant Chest - Major Health,		CLASSIC: Enchant Chest - Major Health
-recipe(20016),	-- Vitality,		TBC: Enchant Shield - Superior Spirit,		CLASSIC: Enchant Shield - Superior Spirit
-recipe(20029),	-- Icy Chill,		TBC: Enchant Weapon - Icy Chill,		CLASSIC: Enchant Weapon - Icy Chill
-recipe(20015),	-- Superior Defense,		TBC: Enchant Cloak - Superior Defense,		CLASSIC: Enchant Cloak - Superior Defense
-recipe(20028),	-- Major Mana,		TBC: Enchant Chest - Major Mana,		CLASSIC: Enchant Chest - Major Mana
-recipe(20051),	-- ,		TBC: Runed Arcanite Rod,		CLASSIC: Runed Arcanite Rod
-recipe(20013),	-- Greater Strength,		TBC: Enchant Gloves - Greater Strength,		CLASSIC: Enchant Gloves - Greater Strength
-recipe(20023),	-- Greater Agility,		TBC: Enchant Boots - Greater Agility,		CLASSIC: Enchant Boots - Greater Agility
-recipe(20010),	-- Superior Strength,		TBC: Enchant Bracer - Superior Strength,		CLASSIC: Enchant Bracer - Superior Strength
-recipe(20030),	-- Superior Impact,		TBC: Enchant 2H Weapon - Superior Impact,		CLASSIC: Enchant 2H Weapon - Superior Impact
-recipe(20033),	-- Unholy Weapon,		TBC: Enchant Weapon - Unholy Weapon,		CLASSIC: Enchant Weapon - Unholy Weapon
-recipe(20036),	-- Major Intellect,		TBC: Enchant 2H Weapon - Major Intellect,		CLASSIC: Enchant 2H Weapon - Major Intellect
-recipe(20031),	-- Superior Striking,		TBC: Enchant Weapon - Superior Striking,		CLASSIC: Enchant Weapon - Superior Striking
-recipe(20011),	-- Superior Stamina,		TBC: Enchant Bracer - Superior Stamina,		CLASSIC: Enchant Bracer - Superior Stamina
-recipe(20034),	-- Crusader,		TBC: Enchant Weapon - Crusader,		CLASSIC: Enchant Weapon - Crusader
-recipe(20025),	-- Greater Stats,		TBC: Enchant Chest - Greater Stats,		CLASSIC: Enchant Chest - Greater Stats
-recipe(20032),	-- Lifestealing,		TBC: Enchant Weapon - Lifestealing,		CLASSIC: Enchant Weapon - Lifestealing
-recipe(20035),	-- Major Versatility,		TBC: Enchant 2H Weapon - Major Spirit,		CLASSIC: Enchant 2H Weapon - Major Spirit
-recipe(21931),	-- Winter's Might,		TBC: Enchant Weapon - Winter's Might,		CLASSIC: Enchant Weapon - Winter's Might
-recipe(22749),	-- Spellpower,		TBC: Enchant Weapon - Spell Power,		CLASSIC: Enchant Weapon - Spell Power
-recipe(22750),	-- Healing Power,		TBC: Enchant Weapon - Healing Power,		CLASSIC: Enchant Weapon - Healing Power
-recipe(23799),	-- Strength,		TBC: Enchant Weapon - Strength,		CLASSIC: Enchant Weapon - Strength
-recipe(23800),	-- Agility,		TBC: Enchant Weapon - Agility,		CLASSIC: Enchant Weapon - Agility
-recipe(23801),	-- Argent Versatility,		TBC: Enchant Bracer - Mana Regeneration,		CLASSIC: Enchant Bracer - Mana Regeneration
-recipe(23802),	-- Healing Power,		TBC: Enchant Bracer - Healing Power,		CLASSIC: Enchant Bracer - Healing Power
-recipe(23803),	-- Mighty Versatility,		TBC: Enchant Weapon - Mighty Spirit,		CLASSIC: Enchant Weapon - Mighty Spirit
-recipe(23804),	-- Mighty Intellect,		TBC: Enchant Weapon - Mighty Intellect,		CLASSIC: Enchant Weapon - Mighty Intellect
-recipe(25072),	-- Threat,		TBC: Enchant Gloves - Threat,		CLASSIC: Enchant Gloves - Threat
-recipe(25073),	-- Shadow Power,		TBC: Enchant Gloves - Shadow Power,		CLASSIC: Enchant Gloves - Shadow Power
-recipe(25074),	-- Frost Power,		TBC: Enchant Gloves - Frost Power,		CLASSIC: Enchant Gloves - Frost Power
-recipe(25078),	-- Fire Power,		TBC: Enchant Gloves - Fire Power,		CLASSIC: Enchant Gloves - Fire Power
-recipe(25079),	-- Healing Power,		TBC: Enchant Gloves - Healing Power,		CLASSIC: Enchant Gloves - Healing Power
-recipe(25080),	-- Superior Agility,		TBC: Enchant Gloves - Superior Agility,		CLASSIC: Enchant Gloves - Superior Agility
-recipe(25081),	-- ,		TBC: Enchant Cloak - Greater Fire Resistance,		CLASSIC: Enchant Cloak - Greater Fire Resistance
-recipe(25082),	-- ,		TBC: Enchant Cloak - Greater Nature Resistance,		CLASSIC: Enchant Cloak - Greater Nature Resistance
-recipe(25083),	-- Stealth,		TBC: Enchant Cloak - Stealth,		CLASSIC: Enchant Cloak - Stealth
-recipe(25084),	-- Subtlety,		TBC: Enchant Cloak - Subtlety,		CLASSIC: Enchant Cloak - Subtlety
-recipe(25086),	-- Dodge,		TBC: Enchant Cloak - Dodge,		CLASSIC: Enchant Cloak - Dodge
-recipe(25124),	-- Minor Wizard Oil,		TBC: Minor Wizard Oil,		CLASSIC: Minor Wizard Oil
-recipe(25125),	-- Minor Mana Oil,		TBC: Minor Mana Oil,		CLASSIC: Minor Mana Oil
-recipe(25126),	-- Lesser Wizard Oil,		TBC: Lesser Wizard Oil,		CLASSIC: Lesser Wizard Oil
-recipe(25127),	-- Lesser Mana Oil,		TBC: Lesser Mana Oil,		CLASSIC: Lesser Mana Oil
-recipe(25128),	-- Wizard Oil,		TBC: Wizard Oil,		CLASSIC: Wizard Oil
-recipe(25129),	-- Brilliant Wizard Oil,		TBC: Brilliant Wizard Oil,		CLASSIC: Brilliant Wizard Oil
-recipe(25130),	-- Brilliant Mana Oil,		TBC: Brilliant Mana Oil,		CLASSIC: Brilliant Mana Oil
-recipe(27837),	-- Agility,		TBC: Enchant 2H Weapon - Agility,		CLASSIC: Enchant 2H Weapon - Agility
 recipe(28029),	-- Enchanting,		TBC: Enchanting
 recipe(27899),	-- Brawn,		TBC: Enchant Bracer - Brawn
 recipe(27905),	-- Stats,		TBC: Enchant Bracer - Stats
@@ -785,68 +657,6 @@ recipe(74255),	-- Greater Mastery
 recipe(74256),	-- Greater Speed
 recipe(74258),	-- Enchanting
 4.3.4.15595
-recipe(13607),	-- Mana,		TBC: Enchant Chest - Mana,		CLASSIC: Enchant Chest - Mana
-recipe(13663),	-- Greater Mana,		TBC: Enchant Chest - Greater Mana,		CLASSIC: Enchant Chest - Greater Mana
-recipe(13687),	-- Lesser Versatility,		TBC: Enchant Boots - Lesser Spirit,		CLASSIC: Enchant Boots - Lesser Spirit
-recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
-recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
-recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
-recipe(13868),	-- Advanced Herbalism,		TBC: Enchant Gloves - Advanced Herbalism,		CLASSIC: Enchant Gloves - Advanced Herbalism
-recipe(17181),	-- Enchanted Leather,		TBC: Enchanted Leather,		CLASSIC: Enchanted Leather
-recipe(17180),	-- Enchanted Thorium Bar,		TBC: Enchanted Thorium,		CLASSIC: Enchanted Thorium
-recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		CLASSIC: Enchant Bracer - Greater Intellect
-recipe(20020),	-- Greater Stamina,		TBC: Enchant Boots - Greater Stamina,		CLASSIC: Enchant Boots - Greater Stamina
-recipe(20014),	-- ,		TBC: Enchant Cloak - Greater Resistance,		CLASSIC: Enchant Cloak - Greater Resistance
-recipe(20017),	-- Greater Stamina,		TBC: Enchant Shield - Greater Stamina,		CLASSIC: Enchant Shield - Greater Stamina
-recipe(20009),	-- Superior Versatility,		TBC: Enchant Bracer - Superior Spirit,		CLASSIC: Enchant Bracer - Superior Spirit
-recipe(20012),	-- Greater Agility,		TBC: Enchant Gloves - Greater Agility,		CLASSIC: Enchant Gloves - Greater Agility
-recipe(20024),	-- Versatility,		TBC: Enchant Boots - Spirit,		CLASSIC: Enchant Boots - Spirit
-recipe(20026),	-- Major Health,		TBC: Enchant Chest - Major Health,		CLASSIC: Enchant Chest - Major Health
-recipe(20016),	-- Vitality,		TBC: Enchant Shield - Superior Spirit,		CLASSIC: Enchant Shield - Superior Spirit
-recipe(20029),	-- Icy Chill,		TBC: Enchant Weapon - Icy Chill,		CLASSIC: Enchant Weapon - Icy Chill
-recipe(20015),	-- Superior Defense,		TBC: Enchant Cloak - Superior Defense,		CLASSIC: Enchant Cloak - Superior Defense
-recipe(20028),	-- Major Mana,		TBC: Enchant Chest - Major Mana,		CLASSIC: Enchant Chest - Major Mana
-recipe(20051),	-- ,		TBC: Runed Arcanite Rod,		CLASSIC: Runed Arcanite Rod
-recipe(20013),	-- Greater Strength,		TBC: Enchant Gloves - Greater Strength,		CLASSIC: Enchant Gloves - Greater Strength
-recipe(20023),	-- Greater Agility,		TBC: Enchant Boots - Greater Agility,		CLASSIC: Enchant Boots - Greater Agility
-recipe(20010),	-- Superior Strength,		TBC: Enchant Bracer - Superior Strength,		CLASSIC: Enchant Bracer - Superior Strength
-recipe(20030),	-- Superior Impact,		TBC: Enchant 2H Weapon - Superior Impact,		CLASSIC: Enchant 2H Weapon - Superior Impact
-recipe(20033),	-- Unholy Weapon,		TBC: Enchant Weapon - Unholy Weapon,		CLASSIC: Enchant Weapon - Unholy Weapon
-recipe(20036),	-- Major Intellect,		TBC: Enchant 2H Weapon - Major Intellect,		CLASSIC: Enchant 2H Weapon - Major Intellect
-recipe(20031),	-- Superior Striking,		TBC: Enchant Weapon - Superior Striking,		CLASSIC: Enchant Weapon - Superior Striking
-recipe(20011),	-- Superior Stamina,		TBC: Enchant Bracer - Superior Stamina,		CLASSIC: Enchant Bracer - Superior Stamina
-recipe(20034),	-- Crusader,		TBC: Enchant Weapon - Crusader,		CLASSIC: Enchant Weapon - Crusader
-recipe(20025),	-- Greater Stats,		TBC: Enchant Chest - Greater Stats,		CLASSIC: Enchant Chest - Greater Stats
-recipe(20032),	-- Lifestealing,		TBC: Enchant Weapon - Lifestealing,		CLASSIC: Enchant Weapon - Lifestealing
-recipe(20035),	-- Major Versatility,		TBC: Enchant 2H Weapon - Major Spirit,		CLASSIC: Enchant 2H Weapon - Major Spirit
-recipe(21931),	-- Winter's Might,		TBC: Enchant Weapon - Winter's Might,		CLASSIC: Enchant Weapon - Winter's Might
-recipe(22749),	-- Spellpower,		TBC: Enchant Weapon - Spell Power,		CLASSIC: Enchant Weapon - Spell Power
-recipe(22750),	-- Healing Power,		TBC: Enchant Weapon - Healing Power,		CLASSIC: Enchant Weapon - Healing Power
-recipe(23799),	-- Strength,		TBC: Enchant Weapon - Strength,		CLASSIC: Enchant Weapon - Strength
-recipe(23800),	-- Agility,		TBC: Enchant Weapon - Agility,		CLASSIC: Enchant Weapon - Agility
-recipe(23801),	-- Argent Versatility,		TBC: Enchant Bracer - Mana Regeneration,		CLASSIC: Enchant Bracer - Mana Regeneration
-recipe(23802),	-- Healing Power,		TBC: Enchant Bracer - Healing Power,		CLASSIC: Enchant Bracer - Healing Power
-recipe(23803),	-- Mighty Versatility,		TBC: Enchant Weapon - Mighty Spirit,		CLASSIC: Enchant Weapon - Mighty Spirit
-recipe(23804),	-- Mighty Intellect,		TBC: Enchant Weapon - Mighty Intellect,		CLASSIC: Enchant Weapon - Mighty Intellect
-recipe(25072),	-- Threat,		TBC: Enchant Gloves - Threat,		CLASSIC: Enchant Gloves - Threat
-recipe(25073),	-- Shadow Power,		TBC: Enchant Gloves - Shadow Power,		CLASSIC: Enchant Gloves - Shadow Power
-recipe(25074),	-- Frost Power,		TBC: Enchant Gloves - Frost Power,		CLASSIC: Enchant Gloves - Frost Power
-recipe(25078),	-- Fire Power,		TBC: Enchant Gloves - Fire Power,		CLASSIC: Enchant Gloves - Fire Power
-recipe(25079),	-- Healing Power,		TBC: Enchant Gloves - Healing Power,		CLASSIC: Enchant Gloves - Healing Power
-recipe(25080),	-- Superior Agility,		TBC: Enchant Gloves - Superior Agility,		CLASSIC: Enchant Gloves - Superior Agility
-recipe(25081),	-- ,		TBC: Enchant Cloak - Greater Fire Resistance,		CLASSIC: Enchant Cloak - Greater Fire Resistance
-recipe(25082),	-- ,		TBC: Enchant Cloak - Greater Nature Resistance,		CLASSIC: Enchant Cloak - Greater Nature Resistance
-recipe(25083),	-- Stealth,		TBC: Enchant Cloak - Stealth,		CLASSIC: Enchant Cloak - Stealth
-recipe(25084),	-- Subtlety,		TBC: Enchant Cloak - Subtlety,		CLASSIC: Enchant Cloak - Subtlety
-recipe(25086),	-- Dodge,		TBC: Enchant Cloak - Dodge,		CLASSIC: Enchant Cloak - Dodge
-recipe(25124),	-- Minor Wizard Oil,		TBC: Minor Wizard Oil,		CLASSIC: Minor Wizard Oil
-recipe(25125),	-- Minor Mana Oil,		TBC: Minor Mana Oil,		CLASSIC: Minor Mana Oil
-recipe(25126),	-- Lesser Wizard Oil,		TBC: Lesser Wizard Oil,		CLASSIC: Lesser Wizard Oil
-recipe(25127),	-- Lesser Mana Oil,		TBC: Lesser Mana Oil,		CLASSIC: Lesser Mana Oil
-recipe(25128),	-- Wizard Oil,		TBC: Wizard Oil,		CLASSIC: Wizard Oil
-recipe(25129),	-- Brilliant Wizard Oil,		TBC: Brilliant Wizard Oil,		CLASSIC: Brilliant Wizard Oil
-recipe(25130),	-- Brilliant Mana Oil,		TBC: Brilliant Mana Oil,		CLASSIC: Brilliant Mana Oil
-recipe(27837),	-- Agility,		TBC: Enchant 2H Weapon - Agility,		CLASSIC: Enchant 2H Weapon - Agility
 recipe(28029),	-- Enchanting,		TBC: Enchanting
 recipe(27899),	-- Brawn,		TBC: Enchant Bracer - Brawn
 recipe(27905),	-- Stats,		TBC: Enchant Bracer - Stats

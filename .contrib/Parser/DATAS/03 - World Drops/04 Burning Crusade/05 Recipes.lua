@@ -42,7 +42,7 @@ _.WorldDrops =
 				i(28279),	-- Formula: Enchant Boots - Cat's Swiftness (BoE version)
 				i(22542),	-- Formula: Enchant Boots - Vitality
 				i(22532),	-- Formula: Enchant Bracer - Versatility Prime
-				i(16253),	-- Formula: Enchant Chest - Greater Stats
+				i(16253),	-- Formula: Enchant Chest - Greater Stats (RECIPE!) (Classic Recipe)
 				i(28270),	-- Formula: Enchant Chest - Major Resilience
 				i(22540),	-- Formula: Enchant Shield - Parry
 				i(22557),	-- Formula: Enchant Weapon - Battlemaster

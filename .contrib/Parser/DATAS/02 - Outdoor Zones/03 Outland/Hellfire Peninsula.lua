@@ -3053,7 +3053,7 @@ root("Zones", {
 							i(25825),	-- Footman's Longsword
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats
-							i(33150),	-- Formula: Enchant Cloak - Subtlety
+							i(33150, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(29166),	-- Hellforged Halberd
 							i(29156),	-- Honor's Call
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
@@ -3146,7 +3146,7 @@ root("Zones", {
 							i(25824),	-- Farseer's Band
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats
-							i(33151),	-- Formula: Enchant Cloak - Subtlety
+							i(33151, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(25823),	-- Grunt's Waraxe
 							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
 							i(29152),	-- Marksman's Bow
@@ -3325,9 +3325,9 @@ root("Zones", {
 
 -- Add in the items that aren't locked by phase.
 appendGroups({
-	i(20753),	-- Formula: Lesser Wizard Oil
-	i(20752),	-- Formula: Minor Mana Oil
-	i(20758),	-- Formula: Minor Wizard Oil
+	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch
 	-- #if BEFORE CATA
 	i(6342),	-- Formula: Enchant Chest - Minor Mana

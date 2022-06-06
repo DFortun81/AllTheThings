@@ -83,8 +83,8 @@ _.Zones =
 							n(11557, {	-- Meilosh
 								["coord"] = { 64.8, 5.2, FELWOOD },
 								["g"] = {
-									i(22392),	-- Formula: Enchant 2H Weapon - Agility
-									i(19445),	-- Formula: Enchant Weapon - Agility
+									i(22392),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
+									i(19445),	-- Formula: Enchant Weapon - Agility (RECIPE!)
 									i(19218),	-- Pattern: Mantle of the Timbermaw
 									i(19326),	-- Pattern: Might of the Timbermaw
 									i(19327),	-- Pattern: Timbermaw Brawlers

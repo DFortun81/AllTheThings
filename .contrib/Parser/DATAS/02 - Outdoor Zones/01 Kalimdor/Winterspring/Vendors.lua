@@ -40,7 +40,7 @@ _.Zones =
 						i(21957, {	-- Design: Necklace of the Diamond Tower
 							["isLimited"] = true,
 						}),
-						i(16221, {	-- Formula: Enchant Chest - Major Health
+						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15740, {	-- Pattern: Frostsaber Boots

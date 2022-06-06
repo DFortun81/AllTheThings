@@ -34,8 +34,11 @@ _.Zones =
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
 					["coord"] = { 48.31, 40.20, MOONGLADE },
 					["g"] = {
-						i(16224, {	-- Formula: Enchant Cloak - Superior Defense
+						i(16224, {	-- Formula: Enchant Cloak - Superior Defense (RECIPE!)
 							["isLimited"] = true,
+						}),
+						i(16243, {	-- Formula: Runed Arcanite Rod
+							["timeline"] = { "removed 5.0.4" },
 						}),
 						i(136849),	-- Nature's Beacon (TOY!)
 						i(14483, {	-- Pattern: Felcloth Pants

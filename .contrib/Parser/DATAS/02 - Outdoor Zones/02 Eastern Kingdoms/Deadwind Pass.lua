@@ -131,7 +131,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
-				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
+				i(16246, {	-- Formula: Enchant Bracer - Superior Strength (RECIPE!)
 					["cr"] = 7372,	-- Deadwind Warlock
 				}),
 			}),

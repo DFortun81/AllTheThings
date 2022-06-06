@@ -95,20 +95,20 @@ _.WorldDrops =
 				i(12691),	-- Plans: Wildthorn Mail
 			}),
 			prof(ENCHANTING, {
-				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility (RECIPE!)
-				i(16245, {	-- Formula: Enchant Boots - Greater Agility
-					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
+				i(16245, {	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
+					["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
 				}),
-				i(16215),	-- Formula: Enchant Boots - Greater Stamina
-				i(11167),	-- Formula: Enchant Boots - Lesser Versatility
-				i(16220),	-- Formula: Enchant Boots - Versatility
+				i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
+				i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
+				i(16220),	-- Formula: Enchant Boots - Versatility / CLASSIC: Formula: Enchant Boots - Spirit (RECIPE!)
 				i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 				i(6375),	-- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
 				i(6347),	-- Formula: Enchant Bracer - Minor Strength (RECIPE!)
 				i(6344),	-- Formula: Enchant Bracer - Minor Versatility / CLASSIC: Formula: Enchant Bracer - Minor Spirit (RECIPE!)
-				i(16251),	-- Formula: Enchant Bracer - Superior Stamina
-				i(16218),	-- Formula: Enchant Bracer - Superior Versatility
+				i(16251),	-- Formula: Enchant Bracer - Superior Stamina (RECIPE!)
+				i(16218),	-- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 				i(6342),	-- Formula: Enchant Chest - Minor Mana
 				i(11098, {	-- Formula: Enchant Cloak - Lesser Shadow Resistance (RECIPE!)
 					["timeline"] = { "removed 5.0.4" },
@@ -118,7 +118,7 @@ _.WorldDrops =
 				i(11224, {	-- Formula: Enchant Shield - Frost Resistance (RECIPE!)
 					["timeline"] = { "removed 5.0.4" },
 				}),
-				i(11168),	-- Formula: Enchant Shield - Lesser Parry
+				i(11168),	-- Formula: Enchant Shield - Lesser Parry / CLASSIC: Formula: Enchant Shield - Lesser Block (RECIPE!)
 				i(11081),	-- Formula: Enchant Shield - Lesser Protection (RECIPE!)
 				i(11202),	-- Formula: Enchant Shield - Stamina (RECIPE!)
 				i(11208),	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)

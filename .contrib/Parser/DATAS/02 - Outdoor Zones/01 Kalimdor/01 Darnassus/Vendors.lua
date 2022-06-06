@@ -139,7 +139,7 @@ _.Zones =
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16217, {	-- Formula: Enchant Shield - Greater Stamina
+						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -210,9 +210,9 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 					},
 					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
+						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),

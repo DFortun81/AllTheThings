@@ -1359,7 +1359,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
 							i(24429),	-- Expedition Flare
 							i(25835),	-- Explorer's Walking Stick
-							i(33149),	-- Formula: Enchant Cloak - Stealth
+							i(33149, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
 							i(28271),	-- Formula: Enchant Gloves - Spell Strike
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads

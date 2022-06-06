@@ -762,7 +762,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				["isYearly"] = true,
 				["lvl"] = 40,
 				["groups"] = {
-					i(17725),	-- Formula: Enchant Weapon - Winter's Might
+					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 					i(17722),	-- Pattern: Gloves of the Greatfather
 					i(17724),	-- Pattern: Green Holiday Shirt
 					i(17706),	-- Plans: Edge of Winter
@@ -1686,7 +1686,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				i(17406),	-- Holiday Cheesewheel
 			}),
 			i(17726, {	-- Smokywood Pastures Special Gift
-				i(17725),	-- Formula: Enchant Weapon - Winter's Might
+				i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 				-- #if AFTER 6.2.2
 				i(128649, {	-- Illusion: Winter's Grasp
 					["timeline"] = { "added 6.2.2.20395" },

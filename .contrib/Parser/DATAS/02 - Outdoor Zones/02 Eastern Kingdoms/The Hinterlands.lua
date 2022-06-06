@@ -1005,11 +1005,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
-				n(2644, {	-- Vilebranch Hideskinner
-					un(REMOVED_FROM_GAME, i(15760)),	-- Pattern: Ironfeather Breastplate
+				i(15760, {	-- Pattern: Ironfeather Breastplate
+					["cr"] = 2644,	-- Vilebranch Hideskinner
+					["u"] = REMOVED_FROM_GAME,
 				}),
-				n(2642, {	-- Vilebranch Shadowcaster
-					un(REMOVED_FROM_GAME, i(16214)),	-- Formula: Enchant Bracer - Greater Intellect
+				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect
+					["cr"] = 2642,	-- Vilebranch Shadowcaster
+					["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
 				}),
 			}),
 		},

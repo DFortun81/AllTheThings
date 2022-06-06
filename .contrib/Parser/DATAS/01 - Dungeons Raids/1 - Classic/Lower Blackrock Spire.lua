@@ -18,7 +18,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		-- #if AFTER 6.0.1
 		["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
 		-- #else
-		
+
 		-- #endif
 		["lvl"] = 50,
 		["groups"] = {
@@ -1144,10 +1144,10 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #endif
 				n(ZONE_DROPS, {
 					i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-						["timeline"] = { "removed 6.0.2" },	-- Learned from Trainer
+						["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 						["cr"] = 9198,	-- Spirestone Mystic
 					}),
-					i(16250, {	-- Formula: Enchant Weapon - Superior Striking
+					i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
 						["cr"] = 9216,	-- Spirestone Warlord
 					}),
 					i(14513, {	-- Pattern: Robe of the Archmage
@@ -1570,7 +1570,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					}),
 					-- #endif
 					n(ZONE_DROPS, {
-						i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact
+						i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 							["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 						}),

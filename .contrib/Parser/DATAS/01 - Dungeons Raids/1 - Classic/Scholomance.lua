@@ -674,15 +674,15 @@ root("Instances", tier(CLASSIC_TIER, {
 					}),
 				})),
 				n(ZONE_DROPS, {
-					i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / Formula: Enchant 2H Weapon - Major Versatility
+					i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
 						-- #if BEFORE 5.0.4
 						["cr"] = 10469,	-- Scholomance Adept
 						-- #else
 						["cr"] = 58757,	-- Scholomance Acolyte
 						-- #endif
 					}),
-					i(16254, {	-- Formula: Enchant Weapon - Lifestealing
-						["timeline"] = { "removed 4.0.3" },
+					i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
+						["timeline"] = { "removed 5.0.3" },
 						["cr"] = 10499,	-- Spectral Researcher
 					}),
 					i(15776, {	-- Pattern: Runic Leather Armor

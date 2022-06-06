@@ -45,6 +45,9 @@ i(6344, 7766);	-- Minor Versatility / CLASSIC: Minor Spirit (Bracer)
 --i(0, 7748);	-- Lesser Health (Chest)
 i(6342, 7443);	-- Minor Mana (Chest)
 --i(0, 7457);	-- Minor Stamina (Bracer)
+--i(0, 7411);	-- Enchanting (Apprentice)
+--i(0, 7412);	-- Enchanting (Journeyman)
+--i(0, 7413);	-- Enchanting (Expert)
 -- REMOVED --
 --i(0, 7861),	-- Lesser Fire Resistance (removed 5.0.4)
 --i(0, 7861),	-- Runed Silver Rod (removed 5.0.4)
@@ -63,6 +66,8 @@ i(6342, 7443);	-- Minor Mana (Chest)
 -----------------
 -- PATCH 0.9.0 --
 -----------------
+i(11168, 13689);	-- Lesser Parry / CLASSIC: Lesser Block
+--i(0, 13663);	-- Greater Mana (Chest)
 --i(0, 13661);	-- Strength (Bracers)
 --i(0, 13503);	-- Lesser Striking (Wep)
 --i(0, 14810);	-- Greater Mystic Wand
@@ -126,11 +131,19 @@ i(11038, 13380);	-- Lesser Versatility / CLASSIC: Lesser Spirit (Wep)
 --i(0, 13378);	-- Minor Stamina (Shield)
 --i(0, 13693);	-- Striking (Wep)
 
+--i(0, 13695);	-- Impact (Wep)
+--i(0, 13700);	-- Lesser Stats (Chest)
+i(11166, 13698);	-- Skinning (Glove)
+i(11167, 13687);	-- Lesser Versatility / CLASSIC: Lesser Spirit (BOOT)
+--i(0, 13920);	-- Enchanting (Artisan)
+--i(0, 13262);	-- Disenchant
+
+
 
 
 -- REMOVED --
 --i(0, 13628);	-- Runed Golden Rod
-i(11205, 13868);	-- Advanced Herbalism (MOP+)
+i(11205, 13868);	-- Advanced Herbalism (CATA+)
 --i(0, 13794);	-- Resistance (Cloak)
 i(11224, 13933);	-- Frost Resistance (Shield)
 --i(0, 13657);	-- Fire Resistance (Cloak)
@@ -138,9 +151,94 @@ i(11098, 13522);	-- Lesser Shadow Resistance (Cloak)
 --i(0, 13702);	-- Runed Truesilver Rod
 
 
+-----------------
+-- PATCH 1.0.0 --
+-----------------
+--i(0, 17180);	-- Enchanted Thorium Bar
+--i(0, 17181);	-- Enchanted Leather
+
+
+-----------------
+-- PATCH 1.1.2 --
+-----------------
+i(16255, 20035);	-- Major Versatility / CLASSIC: Major Spirit (Wep)
+i(16253, 20025);	-- Greater Stats (Chest)
+i(16252, 20034);	-- Crusader (Wep)
+i(16251, 20011);	-- Superior Stamina (Bracer)
+i(16250, 20031);	-- Superior Striking (Wep)
+i(16249, 20036);	-- Major Intellect (Wep)
+i(16248, 20033);	-- Unholy (Wep)
+i(16246, 20010);	-- Superior Strength (Bracer)
+i(16245, 20023);	-- Greater Agility (Boot)
+i(16244, 20013);	-- Greater Strength (Glove)
+
+i(16242, 20028);	-- Major Mana (Chest)
+i(16224, 20015);	-- Superior Defense (Claok)
+i(16223, 20029);	-- Icy Chill
+i(16222, 20016);	-- Vitality / CLASSIC: Superior Spirit (Shield)
+i(16221, 20026);	-- Major Health (Chest)
+i(16220, 20024);	-- Versatility / CLASSIC: Spirit (Boot)
+i(16219, 20012);	-- Greater Agility (Glove)
+i(16218, 20009);	-- Superior Versatility / CLASSIC: Superior Spirit (Bracer)
+i(16217, 20017);	-- Greater Stamina (Shield)
+i(16215, 20020);	-- Greater Stamina (Boot)
+i(16214, 20008);	-- Greater Intellect (Bracer)
 
 
 
+-- removed
+i(16254, 20032);	-- Lifestealing (Wep)
+i(16247, 20030);	-- Superior Impact (Wep)
+i(16243, 20051);	-- Runed Arcanite Rod (Wep)
+i(16216, 20014);	-- Greater Resistance (Cloak)
+
+-----------------
+--   CLASSIC   --
+-----------------
+-- The remaining recipes existed before 1.13.0 But there is no data about them in wow own db.
+i(17725, 21931);	-- Winter's Might
+i(18259, 22749);	-- Spell Power (wep)
+i(18260, 22750);	-- Healing Power (wep)
+i(19444, 23799);	-- Strength (Wep)
+i(19445, 23800);	-- Agility (One HandWep)
+i(19446, 23801);	-- Argent Versatility / CLASSIC: Mana Regeneration (Bracer)
+i(19447, 23802);	-- Healing Power (Bracer)
+i(19448, 23803);	-- Mighty Versatility / CLASSIC: Mighty Spirit (Wep)
+i(19449, 23804);	-- Mighty Intellect (Wep)
+i(20726, 25072);	-- Threat (CLASSIC+)
+i(33153, 25072);	-- Threat (2.2.0+)
+i(20727, 25073);	-- Shadow Power (Glove)
+i(20728, 25074);	-- Frost Power (Glove)
+i(20729, 25078);	-- Fire Power (Glove)
+i(20730, 25079);	-- Healing Power (Glove)
+i(20731, 25080);	-- Superior Agility (CLASSIC+)
+i(33152, 25080);	-- Superior Agility (2.2.0+)
+i(20734, 25083);	-- Stealth (Cloak) (CLASSIC+)
+i(33149, 25083);	-- Stealth (Cloak) (2.2.0+)
+i(20735, 25084);	-- Subtlety (Cloak) (CLASSIC+)
+i(33150, 25084);	-- Subtlety (Cloak) (2.2.0+) (A)
+i(33151, 25084);	-- Subtlety (Cloak) (2.2.0+) (H)
+i(20736, 25086);	-- Dodge (Cloak) (CLASSIC+)
+i(33148, 25086);	-- Dodge (Cloak) (2.2.0+)
+i(20758, 25124);	-- Minor Wizard Oil
+i(20752, 25125);	-- Minor Mana Oil
+i(20753, 25126);	-- Lesser Wizard Oil
+i(20754, 25127);	-- Lesser Mana Oil
+i(20755, 25128);	-- Wizard Oil
+i(20756, 25129);	-- Brilliant Wizard Oil
+i(20757, 25130);	-- Brilliant Mana Oil
+i(22392, 27837);	-- Agility (2H-Wep)
+
+-- removed
+i(20732, 25081);	-- Greater Fire Resistance (Cloak)
+i(20733, 25082);	-- Striking (Wep)
+--i(0, 13693);	-- Striking (Wep)
+--i(0, 13693);	-- Striking (Wep)
+
+
+
+-- NYI
+--i(0, 22434);	-- Charged Scale of Onyxia
 
 
 

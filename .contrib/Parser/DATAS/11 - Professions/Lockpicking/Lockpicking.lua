@@ -111,7 +111,9 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(5756),	-- Sliverblade
 					i(11967),	-- Zircon Band
 				}),
-				i(5760),	-- Eternium Lockbox
+				i(5760, {	-- Eternium Lockbox
+					i(12058),	-- Demonic Bone Ring
+				}),
 				i(63349, {	-- Flame-Scarred Junkbox
 					["timeline"] = { "added 4.0.1.12941" },
 					["groups"] = {
@@ -127,8 +129,8 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 				}),
 				i(16885, {	-- Heavy Junkbox
 					i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
-					i(16215),	-- Formula: Enchant Boots Greater Stamina
-					i(16218),	-- Formula: Enchant Bracer Superior Versatility
+					i(16215),	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
+					i(16218),	-- Formula: Enchant Bracer Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 					i(14494),	-- Pattern: Brightcloth Pants
 					i(15746),	-- Pattern: Chimeric Leggings
 					i(15755),	-- Pattern: Chimeric Vest
@@ -250,9 +252,9 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 				i(4638,  {	-- Reinforced Steel Lockbox
 					i(21947),	-- Design: Gem Studded Band
 					i(21945),	-- Design: The Aquamarine Ward
-					i(16215),	-- Formula: Enchant Boots - Greater Stamina
+					i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
-					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
+					i(16218),	-- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
 					i(11208),	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)
 					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
@@ -290,7 +292,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(10606),	-- Schematic: Parachute Cloak
 				}),
 				i(4636,  {	-- Strong Iron Lockbox
-					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
+					i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					i(7085),	-- Pattern: Azure Shoulders
 					i(7086),	-- Pattern: Earthen Silk Belt
@@ -317,7 +319,6 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						i(12002),	-- Formula: Enchant Bracer Superior Stamina
 						i(15746),	-- Plans: Radiant Leggings
 						i(2163),	-- The Night Blade
-						i(16218),	-- Demonic Bone Ring
 						i(12046),	-- Dragonscale Band
 						i(12034),	-- Granite Necklace
 						i(12004),	-- Jungle Ring

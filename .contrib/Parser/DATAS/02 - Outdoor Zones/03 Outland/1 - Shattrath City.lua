@@ -1527,7 +1527,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
 							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
 							i(28273),	-- Formula: Enchant Gloves - Major Healing
-							i(33153),	-- Formula: Enchant Gloves - Threat
+							i(33153, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
 							i(22537),	-- Formula: Enchant Ring - Healing Power
 							i(28281),	-- Formula: Enchant Weapon - Major Healing
 							i(29175),	-- Gavel of Pure Light
@@ -2091,7 +2091,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
-							i(33148),	-- Formula: Enchant Cloak - Dodge
+							i(33148, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Dodge
 							applyclassicphase(TBC_PHASE_THREE, i(22538)),	-- Formula: Enchant Ring - Stats
 							i(30832),	-- Gavel of Unearthed Secrets
 							i(29199, {	-- Glyph of Shadow Warding
@@ -2505,9 +2505,9 @@ root("Zones", {
 
 -- Add in the items that aren't locked by phase.
 local COMMON_ENCHANTING_RECIPES = {
-	i(20753),	-- Formula: Lesser Wizard Oil
-	i(20752),	-- Formula: Minor Mana Oil
-	i(20758),	-- Formula: Minor Wizard Oil
+	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ZURII_YURIAL_GROUPS);

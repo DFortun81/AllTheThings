@@ -392,7 +392,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						},
 					}),
 					n(ZONE_DROPS, {
-						i(16252, {	-- Formula: Enchant Weapon - Crusader
+						i(16252, {	-- Formula: Enchant Weapon - Crusader (RECIPE!)
 							["cr"] = 9451,	-- Scarlet Archmage
 						}),
 					}),
@@ -1655,8 +1655,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["spellID"] = 121183,	-- Contemplation
 						}),
 						i(18169),	-- Flame Mantle of the Dawn
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
-						i(19447),	-- Formula: Enchant Bracer - Healing Power
+						i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						i(19442),	-- Formula: Powerful Anti-Venom
 						i(18170),	-- Frost Mantle of the Dawn
 						i(18172),	-- Nature Mantle of the Dawn
@@ -1725,13 +1725,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(66076),	-- Mr. Grubbs Pet
 					},
 				}),
-				i(16242, {	-- Formula: Enchant Chest - Major Mana
+				i(16242, {	-- Formula: Enchant Chest - Major Mana (RECIPE!)
 					["crs"] = { 9452 },	-- Scarlet Enchanter
-					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
+					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 				}),
-				i(16222, {	-- Formula: Enchant Shield - Superior Versatility (formerly Superior Spirit)
+				i(16222, {	-- Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit
 					["crs"] = { 9447 },	-- Scarlet Warder
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
 				}),
 				i(13479, {	-- Recipe: Elixir of the Sages
 					["crs"] = {
