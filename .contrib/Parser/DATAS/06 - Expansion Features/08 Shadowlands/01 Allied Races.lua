@@ -14,7 +14,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 						-- ["sourceQuests"] = { },
 						["provider"] = { "n", 176789 },	-- Lady Liadrin
 						["coord"] = { 25.4, 52.1, ORIBOS },
-						["classes"] = exclude(PALADIN, ALL_CLASSES),
+						["classes"] = exclude({DRUID, PALADIN, SHAMAN}, ALL_CLASSES),
 					}),
 					q(63479, {	-- Summons from the Matriarch (Paladin)
 						-- ["sourceQuests"] = { },
@@ -98,7 +98,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 						["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 						["provider"] = { "n", 176882 },	-- Lady Liadrin
 						["coord"] = { 34.2, 77.4, GHOSTLANDS },
-						["classes"] = exclude(PALADIN, ALL_CLASSES),
+						["classes"] = exclude({DRUID, PALADIN, SHAMAN}, ALL_CLASSES),
 						["g"] = {
 							i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 						},

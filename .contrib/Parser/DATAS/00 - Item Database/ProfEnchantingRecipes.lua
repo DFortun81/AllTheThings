@@ -1,5 +1,5 @@
 -- Here is a full list from https://wow.tools/dbc/?dbc=skilllineability with SkillLine set as 333 (Enchanting). The Name is taken from https://www.wowhead.com/ and https://tbc.wowhead.com/ and https://classic.wowhead.com/ .
--- It actually exist a table called spellName on wow.tools might be something to look into if a name is missing.
+-- https://wow.tools/dbc/?dbc=spellname Works very good to get missing names (just choose the same build).
 -- OBS that anything before 7.3.0 can be a bit wonky. Remember that 1.13.0+, 2.5.0+ and 3.4.0+(which doesnt have column names yet) is classic builds
 -- //Braghe
 --[[
@@ -1707,52 +1707,6 @@ recipe(305938),	-- Uncanny Combatant's Sorcerous Scepter
 8.3.7.35435
 8.3.7.35662
 9.0.1.33978
-recipe(309534),	-- Eternal Agility
-recipe(309535),	-- Eternal Bulwark
-recipe(309528),	-- Fortified Speed
-recipe(309530),	-- Fortified Avoidance
-recipe(309531),	-- Fortified Leech
-recipe(309532),	-- Agile Soulwalker
-recipe(309524),	-- Shadowlands Gathering
-recipe(309525),	-- Strength of Soul
-recipe(309526),	-- Eternal Strength
-recipe(309628),	--
-recipe(309629),	--
-recipe(309630),	--
-recipe(309631),	--
-recipe(309632),	--
-recipe(309633),	--
-recipe(309634),	--
-recipe(309635),	--
-recipe(309608),	-- Illuminated Soul
-recipe(309609),	-- Eternal Intellect
-recipe(309610),	-- Shaded Hearthing
-recipe(309636),	-- Enchanted Elethium Bar
-recipe(309637),	-- Enchanted Heavy Callous Hide
-recipe(309638),	-- Enchanted Lightless Silk
-recipe(309612),	-- Bargain of Critical Strike
-recipe(309616),	-- Tenet of Critical Strike
-recipe(309613),	-- Bargain of Haste
-recipe(309617),	-- Tenet of Haste
-recipe(309614),	-- Bargain of Mastery
-recipe(309618),	-- Tenet of Mastery
-recipe(309615),	-- Bargain of Versatility
-recipe(309619),	-- Tenet of Versatility
-recipe(309645),	-- Eternal Crystal
-recipe(309644),	-- Sacred Shard
-recipe(309620),	-- Lightless Force
-recipe(309621),	-- Eternal Grace
-recipe(309622),	-- Ascended Vigor
-recipe(309623),	-- Sinful Revelation
-recipe(309627),	-- Celestial Guidance
-recipe(309832),	-- Shadowlands Enchanting
-recipe(323609),	-- Soul Treads
-recipe(323760),	-- Eternal Skirmish
-recipe(323761),	-- Eternal Bounds
-recipe(323762),	-- Sacred Stats
-recipe(323755),	-- Soul Vitality
-recipe(324750),	-- Disenchant
-recipe(324773),	-- Eternal Stats
 9.0.1.34003
 9.0.1.34081
 9.0.1.34098
@@ -1770,10 +1724,6 @@ recipe(324773),	-- Eternal Stats
 9.0.1.34972
 9.0.1.35078
 9.0.1.35167
-recipe(338119),	-- Bug Zapifier
-recipe(338121),	-- True Aim Spear
-recipe(338123),	-- Unbreakable Crystal
-recipe(338125),	-- Everburning Brand
 9.0.1.35213
 9.0.1.35256
 9.0.1.35282
@@ -1781,14 +1731,8 @@ recipe(338125),	-- Everburning Brand
 9.0.1.35432
 9.0.1.35482
 9.0.1.35522
-recipe(342316),	-- Eternal Insight
 9.0.1.35598
 9.0.1.35679
-recipe(343680),	-- Novice Crafter's Mark
-recipe(343684),	-- Crafter's Mark I
-recipe(343683),	-- Crafter's Mark II
-recipe(343682),	--
-recipe(343681),	--
 9.0.1.35707
 9.0.1.35755
 9.0.1.35789
@@ -1820,7 +1764,6 @@ recipe(343681),	--
 9.0.2.36037
 9.0.2.36086
 9.0.2.36165
-recipe(346026),	-- Boundless Basket
 9.0.2.36206
 9.0.2.36267
 9.0.2.36294
@@ -1858,7 +1801,6 @@ recipe(346026),	-- Boundless Basket
 9.1.0.38312
 9.1.0.38394
 9.1.0.38511
-recipe(355184),	-- Anima-ted Leash
 9.1.0.38524
 9.1.0.38549
 9.1.0.38600
@@ -1920,8 +1862,6 @@ recipe(355184),	-- Anima-ted Leash
 9.1.5.41793
 9.1.5.42010
 9.2.0.41089
-recipe(360007),	-- Magically Regulated Automa Core
-recipe(360013),	-- Cosmic Protoweave
 9.2.0.41257
 9.2.0.41360
 9.2.0.41462

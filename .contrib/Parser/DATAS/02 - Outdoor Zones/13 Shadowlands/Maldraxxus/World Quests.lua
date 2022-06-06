@@ -113,6 +113,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = ENCHANTING,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338123,{["u"]=15}),	-- Unbreakable Crystal
+					i(182043),	-- Antique Necromancer's Staff
+					i(182042),	-- Necrotic Essence
+					i(181949),	-- Unbreakable Crystal
+				},
 			}),
 			q(61609, {	-- Engineering: Boneclad Stake Launcher
 				["requireSkill"] = ENGINEERING,

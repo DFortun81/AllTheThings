@@ -92,6 +92,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = ENCHANTING,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338125,{["u"]=15}),	-- Everburning Brand
+					i(182067),	-- Antique Duelist's Rapier
+					i(181950),	-- Everburning Brand
+					i(182066),	-- Sanguine Crystal
+				},
 			}),
 			q(61622, {	-- Engineering: Duelist's Pistol
 				["requireSkill"] = ENGINEERING,

@@ -136,3 +136,103 @@ i(11224, 13933);	-- Frost Resistance (Shield)
 --i(0, 13657);	-- Fire Resistance (Cloak)
 i(11098, 13522);	-- Lesser Shadow Resistance (Cloak)
 --i(0, 13702);	-- Runed Truesilver Rod
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+--i(0, 309532);	-- Agile Soulwalker
+--i(0, 309622);	-- Ascended Vigor
+--i(0, 309612);	-- Bargain of Critical Strike
+--i(0, 309613);	-- Bargain of Haste
+--i(0, 309614);	-- Bargain of Mastery
+--i(0, 309615);	-- Bargain of Versatility
+--i(0, 346026);	-- Boundless Basket (Quest)
+--i(0, 309627);	-- Celestial Guidance
+--i(0, 343684);	-- Crafter's Mark I
+--i(183870, 343683);	-- Crafter's Mark II (Multiple Recipes from this item depending on profession)
+--i(0, 309636);	-- Enchanted Elethium Bar
+--i(0, 309637);	-- Enchanted Heavy Callous Hide
+--i(0, 309638);	-- Enchanted Lightless Silk
+--i(0, 265105);	-- Enchanted Twilight Wand (Actually Added 8.0.1....)
+--i(0, 309534);	-- Eternal Agility
+--i(0, 323761);	-- Eternal Bounds
+--i(0, 309535);	-- Eternal Bulwark
+--i(0, 309645);	-- Eternal Crystal
+--i(0, 309621);	-- Eternal Grace
+--i(0, 342316);	-- Eternal Insight
+--i(0, 309609);	-- Eternal Intellect
+--i(0, 323760);	-- Eternal Skirmish
+--i(0, 324773);	-- Eternal Stats
+--i(0, 309526);	-- Eternal Strength
+--i(0, 338125);	-- Everburning Brand (Quest)
+--i(0, 309528);	-- Fortified Speed
+--i(0, 309530);	-- Fortified Avoidance
+--i(0, 309531);	-- Fortified Leech
+--i(0, 309608);	-- Illuminated Soul
+--i(0, 309620);	-- Lightless Force
+--i(0, 343680);	-- Novice Crafter's Mark
+i(183096, 309644);	-- Sacred Shard
+--i(0, 323762);	-- Sacred Stats
+--i(0, 309610);	-- Shaded Hearthing
+--i(0, 309524);	-- Shadowlands Gathering
+--i(0, 309623);	-- Sinful Revelation
+--i(0, 323609);	-- Soul Treads
+--i(0, 323755);	-- Soul Vitality
+--i(0, 309525);	-- Strength of Soul
+--i(0, 309616);	-- Tenet of Critical Strike
+--i(0, 309617);	-- Tenet of Haste
+--i(0, 309618);	-- Tenet of Mastery
+--i(0, 309619);	-- Tenet of Versatility
+--i(0, 338121);	-- True Aim Spear (Quest)
+--i(0, 338123);	-- Unbreakable Crystal (Quest)
+-- NYI --
+--i(0, 309628);	--	9.0 Enchanting - Modified Crafting Reagent 01
+--i(0, 309629);	--	9.0 Enchanting - Modified Crafting Reagent 02
+--i(0, 309630);	--	9.0 Enchanting - Modified Crafting Reagent 03
+--i(0, 309631);	--	9.0 Enchanting - Modified Crafting Reagent 04
+--i(0, 309632);	--	9.0 Enchanting - Modified Crafting Reagent 05
+--i(0, 309633);	--	9.0 Enchanting - Modified Crafting Reagent 06
+--i(0, 309634);	--	9.0 Enchanting - Modified Crafting Reagent 07
+--i(0, 309635);	--	9.0 Enchanting - Modified Crafting Reagent 08
+--i(0, 343682);	--	Crafter's Mark III
+--i(0, 343681);	--	Crafter's Mark IV
+i(182666, 0);	--	Formula: Enchanted Elethium Bar
+i(183866, 0);	--	Formula: Crafter's Mark III / [DNT][REUSE ME] Formula: Crafter's Mark III
+
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+i(186992, 355184);	-- Anima-ted Leash
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+i(187826, 360013);	-- Cosmic Protoweave
+i(187824, 360007);	-- Magically Regulated Automa Core

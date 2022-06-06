@@ -686,7 +686,6 @@ select(2, ...).CategoryNames = {
 	[1337] = "Weapons",
 	[1338] = "Materials",
 	[1339] = "Mail Armor",
-	[1364] = "Shadowlands Enchanting",
 	[1365] = "Boot Enchantments",
 	[1366] = "Chest Enchantments",
 	[1367] = "Cloak Enchantments",

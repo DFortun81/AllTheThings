@@ -86,6 +86,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = ENCHANTING,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338121,{["u"]=15}),	-- True Aim Spear
+					i(182021),	-- Antique Kyrian Javelin
+					i(181948),	-- Enchant: True Aim
+					i(182020),	-- Transcendent Dust
+				},
 			}),
 			q(61520, {	-- Enemy of My Mnemis
 				["isWorldQuest"] = true,

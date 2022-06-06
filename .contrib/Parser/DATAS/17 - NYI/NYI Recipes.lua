@@ -941,6 +941,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				r(7448),	-- CLASSIC: Imbue Chest - Lesser Absorb / ???: Vile Like Fire!: Fire (Reused recipeID)
 				r(7451),	-- CLASSIC: Imbue Chest - Minor Spirit / ???: Zone Player Total - Horde (Reused recipeID)
 			}),
+			i(177964),	-- Enchant Weapon - Force Multiplier (8.3.0??)
+			tier(SL_TIER, {
+				-- 9.0.1
+				r(309628),	--	9.0 Enchanting - Modified Crafting Reagent 01
+				r(309629),	--	9.0 Enchanting - Modified Crafting Reagent 02
+				r(309630),	--	9.0 Enchanting - Modified Crafting Reagent 03
+				r(309631),	--	9.0 Enchanting - Modified Crafting Reagent 04
+				r(309632),	--	9.0 Enchanting - Modified Crafting Reagent 05
+				r(309633),	--	9.0 Enchanting - Modified Crafting Reagent 06
+				r(309634),	--	9.0 Enchanting - Modified Crafting Reagent 07
+				r(309635),	--	9.0 Enchanting - Modified Crafting Reagent 08
+				r(343682),	--	Crafter's Mark III
+				r(343681),	--	Crafter's Mark IV
+				i(182666),	--	Formula: Enchanted Elethium Bar (learned from trainer not item)
+				i(183866),	--	Formula: Crafter's Mark III / [DNT][REUSE ME] Formula: Crafter's Mark III
+			})
 		}),
 		prof(ENCHANTING, {
 			i(22564),	-- Formula: Arcane Dust

@@ -53,7 +53,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				i(184618, {	-- Rank Insignia: Acquisitionist
 					["cost"] = { { "c", 1767, 1575 } },
 				}),
-				i(183870, {	-- Recipe: Crafter's Mark II
+				i(183870, {	-- Recipe: Crafter's Mark II (RECIPE!)
 					["cost"] = { { "c", 1767, 300 } },
 					["g"] = {
 						recipe(343678, {	-- Crafter's Mark II

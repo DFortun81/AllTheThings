@@ -263,10 +263,6 @@ i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect
 i(168234);	-- Ancient Runestone
-i(182067);	-- Antique Duelist's Rapier
-i(182021);	-- Antique Kyrian Javelin
-i(182043);	-- Antique Necromancer's Staff
-i(181991);	-- Antique Stalker's Bow
 i(183919);	-- Ashen Core
 i(147438);	-- Bag of Wisp-Touched Elderhide
 i(146308);	-- Barrel of Storm Brew

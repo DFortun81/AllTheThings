@@ -348,7 +348,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{ "i", 6150, 1 },	-- A Frayed Knot
 						},
 					}),
-					i(186992, {	-- Formula: Anima-ted Leash
+					i(186992, {	-- Formula: Anima-ted Leash (RECIPE!)
 						["cost"] = { { "i", 163036, 15 } },	-- 15x Polished Pet Charm
 					}),
 				}),
@@ -484,7 +484,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183093, {	-- Technique: Contract: The Wild Hunt
 						["cost"] = 17650000,	-- 1,765g
 					}),
-					i(183096, {	-- Formula: Sacred Shard
+					i(183096, {	-- Formula: Sacred Shard (RECIPE!)
 						["cost"] = 13500000,	-- 1,350g
 					}),
 					i(183100, {	-- Pattern: Heavy Desolate Armor Kit

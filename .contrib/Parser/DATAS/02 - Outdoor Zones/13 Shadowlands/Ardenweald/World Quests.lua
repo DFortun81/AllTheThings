@@ -58,6 +58,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = ENCHANTING,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(346026, {["u"] = 15}),	-- Boundless Basket
+					i(181991),	-- Antique Stalker's Bow
+					i(181384),	-- Boundless Basket
+					i(181990),	-- Twilight Dust
+				},
 			}),
 			q(61597, {	-- Engineering: Bug Zapifier
 				["requireSkill"] = ENGINEERING,
