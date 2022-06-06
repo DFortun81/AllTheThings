@@ -150,6 +150,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 
 			-- 2.4.3
+			tier(TBC_TIER, 4.1, bubbleDownSelf({ ["timeline"] = {"created 2.4.1"} }, {
+				i(37827, { -- Brewfest Riding Kodo (MOUNT!) 						<---- Duplication in Brewfest
+					["modelID"] = 24758,
+				}),
+			})),
+
+			-- 2.4.3
 			tier(TBC_TIER, 4.3, bubbleDownSelf({ ["timeline"] = {"created 2.4.3"} }, {
 				mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
 					["modelID"] = 26691,

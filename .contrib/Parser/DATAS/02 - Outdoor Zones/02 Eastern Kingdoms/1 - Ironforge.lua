@@ -1035,7 +1035,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 					},
 					["groups"] = {
-						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil

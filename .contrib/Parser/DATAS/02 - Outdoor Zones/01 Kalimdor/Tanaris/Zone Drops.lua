@@ -8,8 +8,12 @@ _.Zones =
 		m(TANARIS, {
 			n(ZONE_DROPS, {
 				i(9249),	-- Captain's Key
-				i(71714),	-- Formula: Enchant Cloak - Lesser Agility
-				un(REMOVED_FROM_GAME, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)
+				i(71714, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
+					["timeline"] = { "added 4.0.3" },
+				}),
+				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
+					["timeline"] = { "removed 4.0.3" },
+				}),
 				i(72028),	-- Pattern: Tough Scorpid Boots
 				un(REMOVED_FROM_GAME, i(8399)),	-- Pattern: Tough Scorpid Boots (old BoE version was removed from game)
 				i(72026),	-- Pattern: Tough Scorpid Bracers

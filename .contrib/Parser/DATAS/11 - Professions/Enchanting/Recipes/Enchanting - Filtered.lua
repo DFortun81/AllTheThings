@@ -1,3 +1,4 @@
+-- [[
 profession(ENCHANTING, {
 	filter(RECIPES, {
 		{
@@ -490,3 +491,4 @@ profession(ENCHANTING, {
 		}
 	}),
 });
+--]]

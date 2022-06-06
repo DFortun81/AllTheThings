@@ -825,7 +825,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 42.6, 90.6, ARATHI_HIGHLANDS },
 					["groups"] = {
-						i(11150),	-- Formula: Enchant Gloves - Mining
+						i(11150),	-- Formula: Enchant Gloves - Mining (RECIPE!)
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),
@@ -901,8 +901,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge
-							["description"] = "The enchantment is now available through the trainer.",
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 4.1.0" },
 						}),
 						i(5973, {	-- Pattern: Barbaric Leggings
 							["isLimited"] = true,

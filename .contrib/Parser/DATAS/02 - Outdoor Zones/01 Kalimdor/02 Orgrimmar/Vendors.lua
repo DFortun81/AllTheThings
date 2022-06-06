@@ -2325,7 +2325,10 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 53.2, 48.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
+						["isLimited"] = true,
+					}),
+					i(6346, {	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
 						["isLimited"] = true,
 					}),
 					i(20753),	-- Formula: Lesser Wizard Oil

@@ -747,9 +747,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5608),	-- Living Cowl
-						un(REMOVED_FROM_GAME, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
+						i(11205, {	-- Formula: Enchant Gloves - Advanced Herbalism (RECIPE!)
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				}),
+ 				}),
 				n(50903, {	-- Orlix the Swamplord
 					["coords"] = {
 						{ 17.12, 36.45, SWAMP_OF_SORROWS },
@@ -799,7 +801,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(21941, {	-- Design: Black Pearl Panther
 							["isLimited"] = true,
 						}),
-						i(11223, {	-- Formula: Enchant Bracer - Dodge
+						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12232),	-- Recipe: Carrion Surprise

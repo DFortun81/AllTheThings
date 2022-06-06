@@ -4,137 +4,18 @@
 -- //Braghe
 --[[
 0.5.3.3368
-recipe(7412),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7411),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7418),	-- Minor Health,		TBC: Enchant Bracer - Minor Health,		CLASSIC: Enchant Bracer - Minor Health
-recipe(7420),	-- Minor Health,		TBC: Enchant Chest - Minor Health,		CLASSIC: Enchant Chest - Minor Health
-recipe(7421),	-- Runed Copper Rod,		TBC: Runed Copper Rod,		CLASSIC: Runed Copper Rod
-recipe(7426),	-- Minor Absorption,		TBC: Enchant Chest - Minor Absorption,		CLASSIC: Enchant Chest - Minor Absorption
-recipe(7428),	-- Minor Dodge,		TBC: Enchant Bracer - Minor Deflection,		CLASSIC: Enchant Bracer - Minor Deflect
-recipe(7867),	-- Minor Agility,		TBC: Enchant Boots - Minor Agility,		CLASSIC: Enchant Boots - Minor Agility
-recipe(7865),	-- Fate Rune of Nigh Invincibility,		CLASSIC: Imbue Cloak - Lesser Protection
-recipe(7863),	-- Minor Stamina,		TBC: Enchant Boots - Minor Stamina,		CLASSIC: Enchant Boots - Minor Stamina
-recipe(7861),	-- ,		TBC: Enchant Cloak - Lesser Fire Resistance,		CLASSIC: Enchant Cloak - Lesser Fire Resistance
-recipe(7859),	-- Lesser Versatility,		TBC: Enchant Bracer - Lesser Spirit,		CLASSIC: Enchant Bracer - Lesser Spirit
-recipe(7857),	-- Health,		TBC: Enchant Chest - Health,		CLASSIC: Enchant Chest - Health
-recipe(7855),	-- Summon Water Terror,		CLASSIC: Imbue Chest - Absorb
-recipe(7853),	-- The Art of Being a Water Terror: Force Cast on Player,		CLASSIC: Imbue Chest - Lesser Spirit
-recipe(7795),	-- ,		TBC: Runed Silver Rod,		CLASSIC: Runed Silver Rod
-recipe(7793),	-- Lesser Intellect,		TBC: Enchant 2H Weapon - Lesser Intellect,		CLASSIC: Enchant 2H Weapon - Lesser Intellect
-recipe(7745),	-- Minor Impact,		TBC: Enchant 2H Weapon - Minor Impact,		CLASSIC: Enchant 2H Weapon - Minor Impact
-recipe(7788),	-- Minor Striking,		TBC: Enchant Weapon - Minor Striking,		CLASSIC: Enchant Weapon - Minor Striking
-recipe(7786),	-- Minor Beastslayer,		TBC: Enchant Weapon - Minor Beastslayer,		CLASSIC: Enchant Weapon - Minor Beastslayer
-recipe(7782),	-- Minor Strength,		TBC: Enchant Bracer - Minor Strength,		CLASSIC: Enchant Bracer - Minor Strength
-recipe(7779),	-- Minor Agility,		TBC: Enchant Bracer - Minor Agility,		CLASSIC: Enchant Bracer - Minor Agility
-recipe(7776),	-- Lesser Mana,		TBC: Enchant Chest - Lesser Mana,		CLASSIC: Enchant Chest - Lesser Mana
-recipe(7771),	-- Minor Protection,		TBC: Enchant Cloak - Minor Protection,		CLASSIC: Enchant Cloak - Minor Protection
-recipe(7769),	-- Strafe Jotunheim Building,		CLASSIC: Imbue Bracers - Minor Wisdom OLD
-recipe(7766),	-- Minor Versatility,		TBC: Enchant Bracer - Minor Spirit,		CLASSIC: Enchant Bracer - Minor Spirit
-recipe(7748),	-- Lesser Health,		TBC: Enchant Chest - Lesser Health,		CLASSIC: Enchant Chest - Lesser Health
-recipe(7434),	-- Fate Rune of Unsurpassed Vigor,		CLASSIC: Imbue Weapon - Beastslayer
-recipe(7439),	-- The Art of Being a Water Terror: Water Terror Aura,		CLASSIC: Imbue Cloak - Minor Resistance
-recipe(7443),	-- Minor Mana,		TBC: Enchant Chest - Minor Mana,		CLASSIC: Enchant Chest - Minor Mana
-recipe(7448),	-- Vile Like Fire!: Fire,		CLASSIC: Imbue Chest - Lesser Absorb
-recipe(7451),	-- Zone Player Total - Horde,		CLASSIC: Imbue Chest - Minor Spirit
-recipe(7454),	-- ,		TBC: Enchant Cloak - Minor Resistance,		CLASSIC: Enchant Cloak - Minor Resistance
-recipe(7457),	-- Minor Stamina,		TBC: Enchant Bracer - Minor Stamina,		CLASSIC: Enchant Bracer - Minor Stamina
+recipe(7411),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Apprentice)
+recipe(7412),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Journeyman)
+recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Expert)
 0.5.5.3494
-recipe(7788),	-- Minor Striking,		TBC: Enchant Weapon - Minor Striking,		CLASSIC: Enchant Weapon - Minor Striking
-recipe(7786),	-- Minor Beastslayer,		TBC: Enchant Weapon - Minor Beastslayer,		CLASSIC: Enchant Weapon - Minor Beastslayer
-recipe(7782),	-- Minor Strength,		TBC: Enchant Bracer - Minor Strength,		CLASSIC: Enchant Bracer - Minor Strength
-recipe(7779),	-- Minor Agility,		TBC: Enchant Bracer - Minor Agility,		CLASSIC: Enchant Bracer - Minor Agility
-recipe(7776),	-- Lesser Mana,		TBC: Enchant Chest - Lesser Mana,		CLASSIC: Enchant Chest - Lesser Mana
-recipe(7771),	-- Minor Protection,		TBC: Enchant Cloak - Minor Protection,		CLASSIC: Enchant Cloak - Minor Protection
-recipe(7769),	-- Strafe Jotunheim Building,		CLASSIC: Imbue Bracers - Minor Wisdom OLD
-recipe(7766),	-- Minor Versatility,		TBC: Enchant Bracer - Minor Spirit,		CLASSIC: Enchant Bracer - Minor Spirit
-recipe(7748),	-- Lesser Health,		TBC: Enchant Chest - Lesser Health,		CLASSIC: Enchant Chest - Lesser Health
-recipe(7457),	-- Minor Stamina,		TBC: Enchant Bracer - Minor Stamina,		CLASSIC: Enchant Bracer - Minor Stamina
-recipe(7454),	-- ,		TBC: Enchant Cloak - Minor Resistance,		CLASSIC: Enchant Cloak - Minor Resistance
-recipe(7451),	-- Zone Player Total - Horde,		CLASSIC: Imbue Chest - Minor Spirit
-recipe(7448),	-- Vile Like Fire!: Fire,		CLASSIC: Imbue Chest - Lesser Absorb
-recipe(7443),	-- Minor Mana,		TBC: Enchant Chest - Minor Mana,		CLASSIC: Enchant Chest - Minor Mana
-recipe(7439),	-- The Art of Being a Water Terror: Water Terror Aura,		CLASSIC: Imbue Cloak - Minor Resistance
-recipe(7434),	-- Fate Rune of Unsurpassed Vigor,		CLASSIC: Imbue Weapon - Beastslayer
-recipe(7853),	-- The Art of Being a Water Terror: Force Cast on Player,		CLASSIC: Imbue Chest - Lesser Spirit
-recipe(7795),	-- ,		TBC: Runed Silver Rod,		CLASSIC: Runed Silver Rod
-recipe(7793),	-- Lesser Intellect,		TBC: Enchant 2H Weapon - Lesser Intellect,		CLASSIC: Enchant 2H Weapon - Lesser Intellect
-recipe(7745),	-- Minor Impact,		TBC: Enchant 2H Weapon - Minor Impact,		CLASSIC: Enchant 2H Weapon - Minor Impact
 0.6.0.3592
 0.7.0.3694
 0.7.1.3702
 0.7.6.3712
 0.8.0.3734
 0.9.0.3807
-recipe(13661),	-- Strength,		TBC: Enchant Bracer - Strength,		CLASSIC: Enchant Bracer - Strength
-recipe(13503),	-- Lesser Striking,		TBC: Enchant Weapon - Lesser Striking,		CLASSIC: Enchant Weapon - Lesser Striking
-recipe(14810),	-- Greater Mystic Wand,		TBC: Greater Mystic Wand,		CLASSIC: Greater Mystic Wand
-recipe(14809),	-- Lesser Mystic Wand,		TBC: Lesser Mystic Wand,		CLASSIC: Lesser Mystic Wand
-recipe(14807),	-- Greater Magic Wand,		TBC: Greater Magic Wand,		CLASSIC: Greater Magic Wand
-recipe(14293),	-- Lesser Magic Wand,		TBC: Lesser Magic Wand,		CLASSIC: Lesser Magic Wand
-recipe(13948),	-- Minor Haste,		TBC: Enchant Gloves - Minor Haste,		CLASSIC: Enchant Gloves - Minor Haste
-recipe(13947),	-- Riding Skill,		TBC: Enchant Gloves - Riding Skill,		CLASSIC: Enchant Gloves - Riding Skill
-recipe(13945),	-- Greater Stamina,		TBC: Enchant Bracer - Greater Stamina,		CLASSIC: Enchant Bracer - Greater Stamina
-recipe(13937),	-- Greater Impact,		TBC: Enchant 2H Weapon - Greater Impact,		CLASSIC: Enchant 2H Weapon - Greater Impact
-recipe(13640),	-- Greater Health,		TBC: Enchant Chest - Greater Health,		CLASSIC: Enchant Chest - Greater Health
-recipe(13637),	-- Lesser Agility,		TBC: Enchant Boots - Lesser Agility,		CLASSIC: Enchant Boots - Lesser Agility
-recipe(13635),	-- Defense,		TBC: Enchant Cloak - Defense,		CLASSIC: Enchant Cloak - Defense
-recipe(13631),	-- Lesser Stamina,		TBC: Enchant Shield - Lesser Stamina,		CLASSIC: Enchant Shield - Lesser Stamina
-recipe(13628),	-- ,		TBC: Runed Golden Rod,		CLASSIC: Runed Golden Rod
-recipe(13626),	-- Minor Stats,		TBC: Enchant Chest - Minor Stats,		CLASSIC: Enchant Chest - Minor Stats
-recipe(13622),	-- Lesser Intellect,		TBC: Enchant Bracer - Lesser Intellect,		CLASSIC: Enchant Bracer - Lesser Intellect
-recipe(13620),	-- Fishing,		TBC: Enchant Gloves - Fishing,		CLASSIC: Enchant Gloves - Fishing
-recipe(13617),	-- Herbalism,		TBC: Enchant Gloves - Herbalism,		CLASSIC: Enchant Gloves - Herbalism
-recipe(13868),	-- Advanced Herbalism,		TBC: Enchant Gloves - Advanced Herbalism,		CLASSIC: Enchant Gloves - Advanced Herbalism
-recipe(13846),	-- Greater Versatility,		TBC: Enchant Bracer - Greater Spirit,		CLASSIC: Enchant Bracer - Greater Spirit
-recipe(13841),	-- Advanced Mining,		TBC: Enchant Gloves - Advanced Mining,		CLASSIC: Enchant Gloves - Advanced Mining
-recipe(13836),	-- Stamina,		TBC: Enchant Boots - Stamina,		CLASSIC: Enchant Boots - Stamina
-recipe(13822),	-- Intellect,		TBC: Enchant Bracer - Intellect,		CLASSIC: Enchant Bracer - Intellect
-recipe(13817),	-- Stamina,		TBC: Enchant Shield - Stamina,		CLASSIC: Enchant Shield - Stamina
-recipe(13794),	-- ,		TBC: Enchant Cloak - Resistance,		CLASSIC: Enchant Cloak - Resistance
-recipe(13746),	-- Greater Defense,		TBC: Enchant Cloak - Greater Defense,		CLASSIC: Enchant Cloak - Greater Defense
-recipe(13920),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(13943),	-- Greater Striking,		TBC: Enchant Weapon - Greater Striking,		CLASSIC: Enchant Weapon - Greater Striking
-recipe(13941),	-- Stats,		TBC: Enchant Chest - Stats,		CLASSIC: Enchant Chest - Stats
-recipe(13939),	-- Greater Strength,		TBC: Enchant Bracer - Greater Strength,		CLASSIC: Enchant Bracer - Greater Strength
-recipe(13933),	-- ,		TBC: Enchant Shield - Frost Resistance,		CLASSIC: Enchant Shield - Frost Resistance
-recipe(13931),	-- Dodge,		TBC: Enchant Bracer - Deflection,		CLASSIC: Enchant Bracer - Deflection
-recipe(13917),	-- Superior Mana,		TBC: Enchant Chest - Superior Mana,		CLASSIC: Enchant Chest - Superior Mana
-recipe(13915),	-- Demonslaying,		TBC: Enchant Weapon - Demonslaying,		CLASSIC: Enchant Weapon - Demonslaying
-recipe(13905),	-- Greater Versatility,		TBC: Enchant Shield - Greater Spirit,		CLASSIC: Enchant Shield - Greater Spirit
-recipe(13898),	-- Fiery Weapon,		TBC: Enchant Weapon - Fiery Weapon,		CLASSIC: Enchant Weapon - Fiery Weapon
-recipe(13890),	-- Minor Speed,		TBC: Enchant Boots - Minor Speed,		CLASSIC: Enchant Boots - Minor Speed
-recipe(13887),	-- Strength,		TBC: Enchant Gloves - Strength,		CLASSIC: Enchant Gloves - Strength
-recipe(13882),	-- Lesser Agility,		TBC: Enchant Cloak - Lesser Agility,		CLASSIC: Enchant Cloak - Lesser Agility
-recipe(13659),	-- Versatility,		TBC: Enchant Shield - Spirit,		CLASSIC: Enchant Shield - Spirit
-recipe(13657),	-- ,		TBC: Enchant Cloak - Fire Resistance,		CLASSIC: Enchant Cloak - Fire Resistance
-recipe(13655),	-- Lesser Elemental Slayer,		TBC: Enchant Weapon - Lesser Elemental Slayer,		CLASSIC: Enchant Weapon - Lesser Elemental Slayer
-recipe(13653),	-- Lesser Beastslayer,		TBC: Enchant Weapon - Lesser Beastslayer,		CLASSIC: Enchant Weapon - Lesser Beastslayer
-recipe(13648),	-- Stamina,		TBC: Enchant Bracer - Stamina,		CLASSIC: Enchant Bracer - Stamina
-recipe(13646),	-- Lesser Dodge,		TBC: Enchant Bracer - Lesser Deflection,		CLASSIC: Enchant Bracer - Lesser Deflection
-recipe(13644),	-- Lesser Stamina,		TBC: Enchant Boots - Lesser Stamina,		CLASSIC: Enchant Boots - Lesser Stamina
-recipe(13642),	-- Versatility,		TBC: Enchant Bracer - Spirit,		CLASSIC: Enchant Bracer - Spirit
-recipe(13612),	-- Mining,		TBC: Enchant Gloves - Mining,		CLASSIC: Enchant Gloves - Mining
-recipe(13607),	-- Mana,		TBC: Enchant Chest - Mana,		CLASSIC: Enchant Chest - Mana
-recipe(13538),	-- Lesser Absorption,		TBC: Enchant Chest - Lesser Absorption,		CLASSIC: Enchant Chest - Lesser Absorption
-recipe(13529),	-- Lesser Impact,		TBC: Enchant 2H Weapon - Lesser Impact,		CLASSIC: Enchant 2H Weapon - Lesser Impact
-recipe(13522),	-- ,		TBC: Enchant Cloak - Lesser Shadow Resistance,		CLASSIC: Enchant Cloak - Lesser Shadow Resistance
-recipe(13501),	-- Lesser Stamina,		TBC: Enchant Bracer - Lesser Stamina,		CLASSIC: Enchant Bracer - Lesser Stamina
-recipe(13485),	-- Lesser Versatility,		TBC: Enchant Shield - Lesser Spirit,		CLASSIC: Enchant Shield - Lesser Spirit
-recipe(15596),	-- Smoking Heart of the Mountain,		TBC: Smoking Heart of the Mountain,		CLASSIC: Smoking Heart of the Mountain
-recipe(13935),	-- Agility,		TBC: Enchant Boots - Agility,		CLASSIC: Enchant Boots - Agility
-recipe(13858),	-- Superior Health,		TBC: Enchant Chest - Superior Health,		CLASSIC: Enchant Chest - Superior Health
-recipe(13815),	-- Agility,		TBC: Enchant Gloves - Agility,		CLASSIC: Enchant Gloves - Agility
-recipe(13702),	-- ,		TBC: Runed Truesilver Rod,		CLASSIC: Runed Truesilver Rod
-recipe(13536),	-- Lesser Strength,		TBC: Enchant Bracer - Lesser Strength,		CLASSIC: Enchant Bracer - Lesser Strength
-recipe(13464),	-- Lesser Protection,		TBC: Enchant Shield - Lesser Protection,		CLASSIC: Enchant Shield - Lesser Protection
-recipe(13421),	-- Lesser Protection,		TBC: Enchant Cloak - Lesser Protection,		CLASSIC: Enchant Cloak - Lesser Protection
-recipe(13419),	-- Minor Agility,		TBC: Enchant Cloak - Minor Agility,		CLASSIC: Enchant Cloak - Minor Agility
-recipe(13380),	-- Lesser Versatility,		TBC: Enchant 2H Weapon - Lesser Spirit,		CLASSIC: Enchant 2H Weapon - Lesser Spirit
-recipe(13378),	-- Minor Stamina,		TBC: Enchant Shield - Minor Stamina,		CLASSIC: Enchant Shield - Minor Stamina
+recipe(13920),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting (Artisan)
 recipe(13262),	-- Disenchant,		TBC: Disenchant,		CLASSIC: Disenchant
-recipe(13689),	-- Lesser Parry,		TBC: Enchant Shield - Lesser Block,		CLASSIC: Enchant Shield - Lesser Block
-recipe(13693),	-- Striking,		TBC: Enchant Weapon - Striking,		CLASSIC: Enchant Weapon - Striking
 recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
 recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
 recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
@@ -642,107 +523,13 @@ recipe(64579),	-- Blood Draining
 recipe(69412),	-- Abyssal Shatter
 recipe(71692),	-- Angler
 4.0.1.12911
-recipe(7411),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7412),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7418),	-- Minor Health,		TBC: Enchant Bracer - Minor Health,		CLASSIC: Enchant Bracer - Minor Health
-recipe(7420),	-- Minor Health,		TBC: Enchant Chest - Minor Health,		CLASSIC: Enchant Chest - Minor Health
-recipe(7421),	-- Runed Copper Rod,		TBC: Runed Copper Rod,		CLASSIC: Runed Copper Rod
-recipe(7426),	-- Minor Absorption,		TBC: Enchant Chest - Minor Absorption,		CLASSIC: Enchant Chest - Minor Absorption
-recipe(7428),	-- Minor Dodge,		TBC: Enchant Bracer - Minor Deflection,		CLASSIC: Enchant Bracer - Minor Deflect
-recipe(7443),	-- Minor Mana,		TBC: Enchant Chest - Minor Mana,		CLASSIC: Enchant Chest - Minor Mana
-recipe(7454),	-- ,		TBC: Enchant Cloak - Minor Resistance,		CLASSIC: Enchant Cloak - Minor Resistance
-recipe(7457),	-- Minor Stamina,		TBC: Enchant Bracer - Minor Stamina,		CLASSIC: Enchant Bracer - Minor Stamina
-recipe(7748),	-- Lesser Health,		TBC: Enchant Chest - Lesser Health,		CLASSIC: Enchant Chest - Lesser Health
-recipe(7766),	-- Minor Versatility,		TBC: Enchant Bracer - Minor Spirit,		CLASSIC: Enchant Bracer - Minor Spirit
-recipe(7771),	-- Minor Protection,		TBC: Enchant Cloak - Minor Protection,		CLASSIC: Enchant Cloak - Minor Protection
-recipe(7776),	-- Lesser Mana,		TBC: Enchant Chest - Lesser Mana,		CLASSIC: Enchant Chest - Lesser Mana
-recipe(7779),	-- Minor Agility,		TBC: Enchant Bracer - Minor Agility,		CLASSIC: Enchant Bracer - Minor Agility
-recipe(7782),	-- Minor Strength,		TBC: Enchant Bracer - Minor Strength,		CLASSIC: Enchant Bracer - Minor Strength
-recipe(7786),	-- Minor Beastslayer,		TBC: Enchant Weapon - Minor Beastslayer,		CLASSIC: Enchant Weapon - Minor Beastslayer
-recipe(7788),	-- Minor Striking,		TBC: Enchant Weapon - Minor Striking,		CLASSIC: Enchant Weapon - Minor Striking
-recipe(7745),	-- Minor Impact,		TBC: Enchant 2H Weapon - Minor Impact,		CLASSIC: Enchant 2H Weapon - Minor Impact
-recipe(7793),	-- Lesser Intellect,		TBC: Enchant 2H Weapon - Lesser Intellect,		CLASSIC: Enchant 2H Weapon - Lesser Intellect
-recipe(7795),	-- ,		TBC: Runed Silver Rod,		CLASSIC: Runed Silver Rod
-recipe(7857),	-- Health,		TBC: Enchant Chest - Health,		CLASSIC: Enchant Chest - Health
-recipe(7859),	-- Lesser Versatility,		TBC: Enchant Bracer - Lesser Spirit,		CLASSIC: Enchant Bracer - Lesser Spirit
-recipe(7861),	-- ,		TBC: Enchant Cloak - Lesser Fire Resistance,		CLASSIC: Enchant Cloak - Lesser Fire Resistance
-recipe(7863),	-- Minor Stamina,		TBC: Enchant Boots - Minor Stamina,		CLASSIC: Enchant Boots - Minor Stamina
-recipe(7867),	-- Minor Agility,		TBC: Enchant Boots - Minor Agility,		CLASSIC: Enchant Boots - Minor Agility
-recipe(13262),	-- Disenchant,		TBC: Disenchant,		CLASSIC: Disenchant
-recipe(13378),	-- Minor Stamina,		TBC: Enchant Shield - Minor Stamina,		CLASSIC: Enchant Shield - Minor Stamina
-recipe(13380),	-- Lesser Versatility,		TBC: Enchant 2H Weapon - Lesser Spirit,		CLASSIC: Enchant 2H Weapon - Lesser Spirit
-recipe(13419),	-- Minor Agility,		TBC: Enchant Cloak - Minor Agility,		CLASSIC: Enchant Cloak - Minor Agility
-recipe(13421),	-- Lesser Protection,		TBC: Enchant Cloak - Lesser Protection,		CLASSIC: Enchant Cloak - Lesser Protection
-recipe(13464),	-- Lesser Protection,		TBC: Enchant Shield - Lesser Protection,		CLASSIC: Enchant Shield - Lesser Protection
-recipe(13485),	-- Lesser Versatility,		TBC: Enchant Shield - Lesser Spirit,		CLASSIC: Enchant Shield - Lesser Spirit
-recipe(13501),	-- Lesser Stamina,		TBC: Enchant Bracer - Lesser Stamina,		CLASSIC: Enchant Bracer - Lesser Stamina
-recipe(13503),	-- Lesser Striking,		TBC: Enchant Weapon - Lesser Striking,		CLASSIC: Enchant Weapon - Lesser Striking
-recipe(13522),	-- ,		TBC: Enchant Cloak - Lesser Shadow Resistance,		CLASSIC: Enchant Cloak - Lesser Shadow Resistance
-recipe(13529),	-- Lesser Impact,		TBC: Enchant 2H Weapon - Lesser Impact,		CLASSIC: Enchant 2H Weapon - Lesser Impact
-recipe(13536),	-- Lesser Strength,		TBC: Enchant Bracer - Lesser Strength,		CLASSIC: Enchant Bracer - Lesser Strength
-recipe(13538),	-- Lesser Absorption,		TBC: Enchant Chest - Lesser Absorption,		CLASSIC: Enchant Chest - Lesser Absorption
 recipe(13607),	-- Mana,		TBC: Enchant Chest - Mana,		CLASSIC: Enchant Chest - Mana
-recipe(13612),	-- Mining,		TBC: Enchant Gloves - Mining,		CLASSIC: Enchant Gloves - Mining
-recipe(13617),	-- Herbalism,		TBC: Enchant Gloves - Herbalism,		CLASSIC: Enchant Gloves - Herbalism
-recipe(13620),	-- Fishing,		TBC: Enchant Gloves - Fishing,		CLASSIC: Enchant Gloves - Fishing
-recipe(13622),	-- Lesser Intellect,		TBC: Enchant Bracer - Lesser Intellect,		CLASSIC: Enchant Bracer - Lesser Intellect
-recipe(13626),	-- Minor Stats,		TBC: Enchant Chest - Minor Stats,		CLASSIC: Enchant Chest - Minor Stats
-recipe(13628),	-- ,		TBC: Runed Golden Rod,		CLASSIC: Runed Golden Rod
-recipe(13631),	-- Lesser Stamina,		TBC: Enchant Shield - Lesser Stamina,		CLASSIC: Enchant Shield - Lesser Stamina
-recipe(13635),	-- Defense,		TBC: Enchant Cloak - Defense,		CLASSIC: Enchant Cloak - Defense
-recipe(13637),	-- Lesser Agility,		TBC: Enchant Boots - Lesser Agility,		CLASSIC: Enchant Boots - Lesser Agility
-recipe(13640),	-- Greater Health,		TBC: Enchant Chest - Greater Health,		CLASSIC: Enchant Chest - Greater Health
-recipe(13642),	-- Versatility,		TBC: Enchant Bracer - Spirit,		CLASSIC: Enchant Bracer - Spirit
-recipe(13644),	-- Lesser Stamina,		TBC: Enchant Boots - Lesser Stamina,		CLASSIC: Enchant Boots - Lesser Stamina
-recipe(13646),	-- Lesser Dodge,		TBC: Enchant Bracer - Lesser Deflection,		CLASSIC: Enchant Bracer - Lesser Deflection
-recipe(13648),	-- Stamina,		TBC: Enchant Bracer - Stamina,		CLASSIC: Enchant Bracer - Stamina
-recipe(13653),	-- Lesser Beastslayer,		TBC: Enchant Weapon - Lesser Beastslayer,		CLASSIC: Enchant Weapon - Lesser Beastslayer
-recipe(13655),	-- Lesser Elemental Slayer,		TBC: Enchant Weapon - Lesser Elemental Slayer,		CLASSIC: Enchant Weapon - Lesser Elemental Slayer
-recipe(13657),	-- ,		TBC: Enchant Cloak - Fire Resistance,		CLASSIC: Enchant Cloak - Fire Resistance
-recipe(13659),	-- Versatility,		TBC: Enchant Shield - Spirit,		CLASSIC: Enchant Shield - Spirit
-recipe(13661),	-- Strength,		TBC: Enchant Bracer - Strength,		CLASSIC: Enchant Bracer - Strength
 recipe(13663),	-- Greater Mana,		TBC: Enchant Chest - Greater Mana,		CLASSIC: Enchant Chest - Greater Mana
 recipe(13687),	-- Lesser Versatility,		TBC: Enchant Boots - Lesser Spirit,		CLASSIC: Enchant Boots - Lesser Spirit
-recipe(13689),	-- Lesser Parry,		TBC: Enchant Shield - Lesser Block,		CLASSIC: Enchant Shield - Lesser Block
-recipe(13693),	-- Striking,		TBC: Enchant Weapon - Striking,		CLASSIC: Enchant Weapon - Striking
 recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
 recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
 recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
-recipe(13702),	-- ,		TBC: Runed Truesilver Rod,		CLASSIC: Runed Truesilver Rod
-recipe(13920),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(13746),	-- Greater Defense,		TBC: Enchant Cloak - Greater Defense,		CLASSIC: Enchant Cloak - Greater Defense
-recipe(13794),	-- ,		TBC: Enchant Cloak - Resistance,		CLASSIC: Enchant Cloak - Resistance
-recipe(13815),	-- Agility,		TBC: Enchant Gloves - Agility,		CLASSIC: Enchant Gloves - Agility
-recipe(13817),	-- Stamina,		TBC: Enchant Shield - Stamina,		CLASSIC: Enchant Shield - Stamina
-recipe(13822),	-- Intellect,		TBC: Enchant Bracer - Intellect,		CLASSIC: Enchant Bracer - Intellect
-recipe(13836),	-- Stamina,		TBC: Enchant Boots - Stamina,		CLASSIC: Enchant Boots - Stamina
-recipe(13841),	-- Advanced Mining,		TBC: Enchant Gloves - Advanced Mining,		CLASSIC: Enchant Gloves - Advanced Mining
-recipe(13846),	-- Greater Versatility,		TBC: Enchant Bracer - Greater Spirit,		CLASSIC: Enchant Bracer - Greater Spirit
-recipe(13858),	-- Superior Health,		TBC: Enchant Chest - Superior Health,		CLASSIC: Enchant Chest - Superior Health
 recipe(13868),	-- Advanced Herbalism,		TBC: Enchant Gloves - Advanced Herbalism,		CLASSIC: Enchant Gloves - Advanced Herbalism
-recipe(13882),	-- Lesser Agility,		TBC: Enchant Cloak - Lesser Agility,		CLASSIC: Enchant Cloak - Lesser Agility
-recipe(13887),	-- Strength,		TBC: Enchant Gloves - Strength,		CLASSIC: Enchant Gloves - Strength
-recipe(13890),	-- Minor Speed,		TBC: Enchant Boots - Minor Speed,		CLASSIC: Enchant Boots - Minor Speed
-recipe(13898),	-- Fiery Weapon,		TBC: Enchant Weapon - Fiery Weapon,		CLASSIC: Enchant Weapon - Fiery Weapon
-recipe(13905),	-- Greater Versatility,		TBC: Enchant Shield - Greater Spirit,		CLASSIC: Enchant Shield - Greater Spirit
-recipe(13915),	-- Demonslaying,		TBC: Enchant Weapon - Demonslaying,		CLASSIC: Enchant Weapon - Demonslaying
-recipe(13917),	-- Superior Mana,		TBC: Enchant Chest - Superior Mana,		CLASSIC: Enchant Chest - Superior Mana
-recipe(13931),	-- Dodge,		TBC: Enchant Bracer - Deflection,		CLASSIC: Enchant Bracer - Deflection
-recipe(13933),	-- ,		TBC: Enchant Shield - Frost Resistance,		CLASSIC: Enchant Shield - Frost Resistance
-recipe(13935),	-- Agility,		TBC: Enchant Boots - Agility,		CLASSIC: Enchant Boots - Agility
-recipe(13937),	-- Greater Impact,		TBC: Enchant 2H Weapon - Greater Impact,		CLASSIC: Enchant 2H Weapon - Greater Impact
-recipe(13939),	-- Greater Strength,		TBC: Enchant Bracer - Greater Strength,		CLASSIC: Enchant Bracer - Greater Strength
-recipe(13941),	-- Stats,		TBC: Enchant Chest - Stats,		CLASSIC: Enchant Chest - Stats
-recipe(13943),	-- Greater Striking,		TBC: Enchant Weapon - Greater Striking,		CLASSIC: Enchant Weapon - Greater Striking
-recipe(13945),	-- Greater Stamina,		TBC: Enchant Bracer - Greater Stamina,		CLASSIC: Enchant Bracer - Greater Stamina
-recipe(13947),	-- Riding Skill,		TBC: Enchant Gloves - Riding Skill,		CLASSIC: Enchant Gloves - Riding Skill
-recipe(13948),	-- Minor Haste,		TBC: Enchant Gloves - Minor Haste,		CLASSIC: Enchant Gloves - Minor Haste
-recipe(14293),	-- Lesser Magic Wand,		TBC: Lesser Magic Wand,		CLASSIC: Lesser Magic Wand
-recipe(14807),	-- Greater Magic Wand,		TBC: Greater Magic Wand,		CLASSIC: Greater Magic Wand
-recipe(14809),	-- Lesser Mystic Wand,		TBC: Lesser Mystic Wand,		CLASSIC: Lesser Mystic Wand
-recipe(14810),	-- Greater Mystic Wand,		TBC: Greater Mystic Wand,		CLASSIC: Greater Mystic Wand
-recipe(15596),	-- Smoking Heart of the Mountain,		TBC: Smoking Heart of the Mountain,		CLASSIC: Smoking Heart of the Mountain
 recipe(17181),	-- Enchanted Leather,		TBC: Enchanted Leather,		CLASSIC: Enchanted Leather
 recipe(17180),	-- Enchanted Thorium Bar,		TBC: Enchanted Thorium,		CLASSIC: Enchanted Thorium
 recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		CLASSIC: Enchant Bracer - Greater Intellect
@@ -998,107 +785,13 @@ recipe(74255),	-- Greater Mastery
 recipe(74256),	-- Greater Speed
 recipe(74258),	-- Enchanting
 4.3.4.15595
-recipe(7411),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7412),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7413),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(7418),	-- Minor Health,		TBC: Enchant Bracer - Minor Health,		CLASSIC: Enchant Bracer - Minor Health
-recipe(7420),	-- Minor Health,		TBC: Enchant Chest - Minor Health,		CLASSIC: Enchant Chest - Minor Health
-recipe(7421),	-- Runed Copper Rod,		TBC: Runed Copper Rod,		CLASSIC: Runed Copper Rod
-recipe(7426),	-- Minor Absorption,		TBC: Enchant Chest - Minor Absorption,		CLASSIC: Enchant Chest - Minor Absorption
-recipe(7428),	-- Minor Dodge,		TBC: Enchant Bracer - Minor Deflection,		CLASSIC: Enchant Bracer - Minor Deflect
-recipe(7443),	-- Minor Mana,		TBC: Enchant Chest - Minor Mana,		CLASSIC: Enchant Chest - Minor Mana
-recipe(7454),	-- ,		TBC: Enchant Cloak - Minor Resistance,		CLASSIC: Enchant Cloak - Minor Resistance
-recipe(7457),	-- Minor Stamina,		TBC: Enchant Bracer - Minor Stamina,		CLASSIC: Enchant Bracer - Minor Stamina
-recipe(7748),	-- Lesser Health,		TBC: Enchant Chest - Lesser Health,		CLASSIC: Enchant Chest - Lesser Health
-recipe(7766),	-- Minor Versatility,		TBC: Enchant Bracer - Minor Spirit,		CLASSIC: Enchant Bracer - Minor Spirit
-recipe(7771),	-- Minor Protection,		TBC: Enchant Cloak - Minor Protection,		CLASSIC: Enchant Cloak - Minor Protection
-recipe(7776),	-- Lesser Mana,		TBC: Enchant Chest - Lesser Mana,		CLASSIC: Enchant Chest - Lesser Mana
-recipe(7779),	-- Minor Agility,		TBC: Enchant Bracer - Minor Agility,		CLASSIC: Enchant Bracer - Minor Agility
-recipe(7782),	-- Minor Strength,		TBC: Enchant Bracer - Minor Strength,		CLASSIC: Enchant Bracer - Minor Strength
-recipe(7786),	-- Minor Beastslayer,		TBC: Enchant Weapon - Minor Beastslayer,		CLASSIC: Enchant Weapon - Minor Beastslayer
-recipe(7788),	-- Minor Striking,		TBC: Enchant Weapon - Minor Striking,		CLASSIC: Enchant Weapon - Minor Striking
-recipe(7745),	-- Minor Impact,		TBC: Enchant 2H Weapon - Minor Impact,		CLASSIC: Enchant 2H Weapon - Minor Impact
-recipe(7793),	-- Lesser Intellect,		TBC: Enchant 2H Weapon - Lesser Intellect,		CLASSIC: Enchant 2H Weapon - Lesser Intellect
-recipe(7795),	-- ,		TBC: Runed Silver Rod,		CLASSIC: Runed Silver Rod
-recipe(7857),	-- Health,		TBC: Enchant Chest - Health,		CLASSIC: Enchant Chest - Health
-recipe(7859),	-- Lesser Versatility,		TBC: Enchant Bracer - Lesser Spirit,		CLASSIC: Enchant Bracer - Lesser Spirit
-recipe(7861),	-- ,		TBC: Enchant Cloak - Lesser Fire Resistance,		CLASSIC: Enchant Cloak - Lesser Fire Resistance
-recipe(7863),	-- Minor Stamina,		TBC: Enchant Boots - Minor Stamina,		CLASSIC: Enchant Boots - Minor Stamina
-recipe(7867),	-- Minor Agility,		TBC: Enchant Boots - Minor Agility,		CLASSIC: Enchant Boots - Minor Agility
-recipe(13262),	-- Disenchant,		TBC: Disenchant,		CLASSIC: Disenchant
-recipe(13378),	-- Minor Stamina,		TBC: Enchant Shield - Minor Stamina,		CLASSIC: Enchant Shield - Minor Stamina
-recipe(13380),	-- Lesser Versatility,		TBC: Enchant 2H Weapon - Lesser Spirit,		CLASSIC: Enchant 2H Weapon - Lesser Spirit
-recipe(13419),	-- Minor Agility,		TBC: Enchant Cloak - Minor Agility,		CLASSIC: Enchant Cloak - Minor Agility
-recipe(13421),	-- Lesser Protection,		TBC: Enchant Cloak - Lesser Protection,		CLASSIC: Enchant Cloak - Lesser Protection
-recipe(13464),	-- Lesser Protection,		TBC: Enchant Shield - Lesser Protection,		CLASSIC: Enchant Shield - Lesser Protection
-recipe(13485),	-- Lesser Versatility,		TBC: Enchant Shield - Lesser Spirit,		CLASSIC: Enchant Shield - Lesser Spirit
-recipe(13501),	-- Lesser Stamina,		TBC: Enchant Bracer - Lesser Stamina,		CLASSIC: Enchant Bracer - Lesser Stamina
-recipe(13503),	-- Lesser Striking,		TBC: Enchant Weapon - Lesser Striking,		CLASSIC: Enchant Weapon - Lesser Striking
-recipe(13522),	-- ,		TBC: Enchant Cloak - Lesser Shadow Resistance,		CLASSIC: Enchant Cloak - Lesser Shadow Resistance
-recipe(13529),	-- Lesser Impact,		TBC: Enchant 2H Weapon - Lesser Impact,		CLASSIC: Enchant 2H Weapon - Lesser Impact
-recipe(13536),	-- Lesser Strength,		TBC: Enchant Bracer - Lesser Strength,		CLASSIC: Enchant Bracer - Lesser Strength
-recipe(13538),	-- Lesser Absorption,		TBC: Enchant Chest - Lesser Absorption,		CLASSIC: Enchant Chest - Lesser Absorption
 recipe(13607),	-- Mana,		TBC: Enchant Chest - Mana,		CLASSIC: Enchant Chest - Mana
-recipe(13612),	-- Mining,		TBC: Enchant Gloves - Mining,		CLASSIC: Enchant Gloves - Mining
-recipe(13617),	-- Herbalism,		TBC: Enchant Gloves - Herbalism,		CLASSIC: Enchant Gloves - Herbalism
-recipe(13620),	-- Fishing,		TBC: Enchant Gloves - Fishing,		CLASSIC: Enchant Gloves - Fishing
-recipe(13622),	-- Lesser Intellect,		TBC: Enchant Bracer - Lesser Intellect,		CLASSIC: Enchant Bracer - Lesser Intellect
-recipe(13626),	-- Minor Stats,		TBC: Enchant Chest - Minor Stats,		CLASSIC: Enchant Chest - Minor Stats
-recipe(13628),	-- ,		TBC: Runed Golden Rod,		CLASSIC: Runed Golden Rod
-recipe(13631),	-- Lesser Stamina,		TBC: Enchant Shield - Lesser Stamina,		CLASSIC: Enchant Shield - Lesser Stamina
-recipe(13635),	-- Defense,		TBC: Enchant Cloak - Defense,		CLASSIC: Enchant Cloak - Defense
-recipe(13637),	-- Lesser Agility,		TBC: Enchant Boots - Lesser Agility,		CLASSIC: Enchant Boots - Lesser Agility
-recipe(13640),	-- Greater Health,		TBC: Enchant Chest - Greater Health,		CLASSIC: Enchant Chest - Greater Health
-recipe(13642),	-- Versatility,		TBC: Enchant Bracer - Spirit,		CLASSIC: Enchant Bracer - Spirit
-recipe(13644),	-- Lesser Stamina,		TBC: Enchant Boots - Lesser Stamina,		CLASSIC: Enchant Boots - Lesser Stamina
-recipe(13646),	-- Lesser Dodge,		TBC: Enchant Bracer - Lesser Deflection,		CLASSIC: Enchant Bracer - Lesser Deflection
-recipe(13648),	-- Stamina,		TBC: Enchant Bracer - Stamina,		CLASSIC: Enchant Bracer - Stamina
-recipe(13653),	-- Lesser Beastslayer,		TBC: Enchant Weapon - Lesser Beastslayer,		CLASSIC: Enchant Weapon - Lesser Beastslayer
-recipe(13655),	-- Lesser Elemental Slayer,		TBC: Enchant Weapon - Lesser Elemental Slayer,		CLASSIC: Enchant Weapon - Lesser Elemental Slayer
-recipe(13657),	-- ,		TBC: Enchant Cloak - Fire Resistance,		CLASSIC: Enchant Cloak - Fire Resistance
-recipe(13659),	-- Versatility,		TBC: Enchant Shield - Spirit,		CLASSIC: Enchant Shield - Spirit
-recipe(13661),	-- Strength,		TBC: Enchant Bracer - Strength,		CLASSIC: Enchant Bracer - Strength
 recipe(13663),	-- Greater Mana,		TBC: Enchant Chest - Greater Mana,		CLASSIC: Enchant Chest - Greater Mana
 recipe(13687),	-- Lesser Versatility,		TBC: Enchant Boots - Lesser Spirit,		CLASSIC: Enchant Boots - Lesser Spirit
-recipe(13689),	-- Lesser Parry,		TBC: Enchant Shield - Lesser Block,		CLASSIC: Enchant Shield - Lesser Block
-recipe(13693),	-- Striking,		TBC: Enchant Weapon - Striking,		CLASSIC: Enchant Weapon - Striking
 recipe(13695),	-- Impact,		TBC: Enchant 2H Weapon - Impact,		CLASSIC: Enchant 2H Weapon - Impact
 recipe(13698),	-- Skinning,		TBC: Enchant Gloves - Skinning,		CLASSIC: Enchant Gloves - Skinning
 recipe(13700),	-- Lesser Stats,		TBC: Enchant Chest - Lesser Stats,		CLASSIC: Enchant Chest - Lesser Stats
-recipe(13702),	-- ,		TBC: Runed Truesilver Rod,		CLASSIC: Runed Truesilver Rod
-recipe(13920),	-- Enchanting,		TBC: Enchanting,		CLASSIC: Enchanting
-recipe(13746),	-- Greater Defense,		TBC: Enchant Cloak - Greater Defense,		CLASSIC: Enchant Cloak - Greater Defense
-recipe(13794),	-- ,		TBC: Enchant Cloak - Resistance,		CLASSIC: Enchant Cloak - Resistance
-recipe(13815),	-- Agility,		TBC: Enchant Gloves - Agility,		CLASSIC: Enchant Gloves - Agility
-recipe(13817),	-- Stamina,		TBC: Enchant Shield - Stamina,		CLASSIC: Enchant Shield - Stamina
-recipe(13822),	-- Intellect,		TBC: Enchant Bracer - Intellect,		CLASSIC: Enchant Bracer - Intellect
-recipe(13836),	-- Stamina,		TBC: Enchant Boots - Stamina,		CLASSIC: Enchant Boots - Stamina
-recipe(13841),	-- Advanced Mining,		TBC: Enchant Gloves - Advanced Mining,		CLASSIC: Enchant Gloves - Advanced Mining
-recipe(13846),	-- Greater Versatility,		TBC: Enchant Bracer - Greater Spirit,		CLASSIC: Enchant Bracer - Greater Spirit
-recipe(13858),	-- Superior Health,		TBC: Enchant Chest - Superior Health,		CLASSIC: Enchant Chest - Superior Health
 recipe(13868),	-- Advanced Herbalism,		TBC: Enchant Gloves - Advanced Herbalism,		CLASSIC: Enchant Gloves - Advanced Herbalism
-recipe(13882),	-- Lesser Agility,		TBC: Enchant Cloak - Lesser Agility,		CLASSIC: Enchant Cloak - Lesser Agility
-recipe(13887),	-- Strength,		TBC: Enchant Gloves - Strength,		CLASSIC: Enchant Gloves - Strength
-recipe(13890),	-- Minor Speed,		TBC: Enchant Boots - Minor Speed,		CLASSIC: Enchant Boots - Minor Speed
-recipe(13898),	-- Fiery Weapon,		TBC: Enchant Weapon - Fiery Weapon,		CLASSIC: Enchant Weapon - Fiery Weapon
-recipe(13905),	-- Greater Versatility,		TBC: Enchant Shield - Greater Spirit,		CLASSIC: Enchant Shield - Greater Spirit
-recipe(13915),	-- Demonslaying,		TBC: Enchant Weapon - Demonslaying,		CLASSIC: Enchant Weapon - Demonslaying
-recipe(13917),	-- Superior Mana,		TBC: Enchant Chest - Superior Mana,		CLASSIC: Enchant Chest - Superior Mana
-recipe(13931),	-- Dodge,		TBC: Enchant Bracer - Deflection,		CLASSIC: Enchant Bracer - Deflection
-recipe(13933),	-- ,		TBC: Enchant Shield - Frost Resistance,		CLASSIC: Enchant Shield - Frost Resistance
-recipe(13935),	-- Agility,		TBC: Enchant Boots - Agility,		CLASSIC: Enchant Boots - Agility
-recipe(13937),	-- Greater Impact,		TBC: Enchant 2H Weapon - Greater Impact,		CLASSIC: Enchant 2H Weapon - Greater Impact
-recipe(13939),	-- Greater Strength,		TBC: Enchant Bracer - Greater Strength,		CLASSIC: Enchant Bracer - Greater Strength
-recipe(13941),	-- Stats,		TBC: Enchant Chest - Stats,		CLASSIC: Enchant Chest - Stats
-recipe(13943),	-- Greater Striking,		TBC: Enchant Weapon - Greater Striking,		CLASSIC: Enchant Weapon - Greater Striking
-recipe(13945),	-- Greater Stamina,		TBC: Enchant Bracer - Greater Stamina,		CLASSIC: Enchant Bracer - Greater Stamina
-recipe(13947),	-- Riding Skill,		TBC: Enchant Gloves - Riding Skill,		CLASSIC: Enchant Gloves - Riding Skill
-recipe(13948),	-- Minor Haste,		TBC: Enchant Gloves - Minor Haste,		CLASSIC: Enchant Gloves - Minor Haste
-recipe(14293),	-- Lesser Magic Wand,		TBC: Lesser Magic Wand,		CLASSIC: Lesser Magic Wand
-recipe(14807),	-- Greater Magic Wand,		TBC: Greater Magic Wand,		CLASSIC: Greater Magic Wand
-recipe(14809),	-- Lesser Mystic Wand,		TBC: Lesser Mystic Wand,		CLASSIC: Lesser Mystic Wand
-recipe(14810),	-- Greater Mystic Wand,		TBC: Greater Mystic Wand,		CLASSIC: Greater Mystic Wand
-recipe(15596),	-- Smoking Heart of the Mountain,		TBC: Smoking Heart of the Mountain,		CLASSIC: Smoking Heart of the Mountain
 recipe(17181),	-- Enchanted Leather,		TBC: Enchanted Leather,		CLASSIC: Enchanted Leather
 recipe(17180),	-- Enchanted Thorium Bar,		TBC: Enchanted Thorium,		CLASSIC: Enchanted Thorium
 recipe(20008),	-- Greater Intellect,		TBC: Enchant Bracer - Greater Intellect,		CLASSIC: Enchant Bracer - Greater Intellect

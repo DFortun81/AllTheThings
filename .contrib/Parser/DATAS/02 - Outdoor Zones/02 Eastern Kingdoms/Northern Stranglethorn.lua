@@ -1314,7 +1314,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 677 },	-- Venture Co. Tinkerer
 				}),
 				i(2955),	-- First Mate Hat
-				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining
+				i(11203, {	-- Formula: Enchant Gloves - Advanced Mining (RECIPE!)
 					["crs"] = { 674 },	-- Venture Co. Strip Miner
 				}),
 				i(1991, {	-- Goblin Power Shovel

@@ -1487,10 +1487,10 @@ root("Instances", tier(CLASSIC_TIER, {
 				e(370, {	-- Lord Roccor
 					["creatureID"] = 9025,
 					["groups"] = {
-						i(45050, {	-- Formula: Smoking Heart of the Mountain [BOP]
+						i(45050, {	-- Formula: Smoking Heart of the Mountain [BOP] (RECIPE!)
 							["timeline"] = { "added 3.1.0.9658" },
 						}),
-						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE]
+						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
 							["timeline"] = { "removed 3.1.0.9658" },
 						}),
 						i(11631),	-- Stoneshell Guard
@@ -1658,7 +1658,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				e(373, {	-- Pyromancer Loregrain
 					["creatureID"] = 9024,
 					["groups"] = {
-						i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
+						i(11207),	-- Formula: Enchant Weapon - Fiery Weapon (RECIPE!)
 						i(11750),	-- Kindling Stave
 						i(11748),	-- Pyric Caduceus
 						i(11747),	-- Flamestrider Robes

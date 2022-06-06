@@ -136,7 +136,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(11223, {	-- Formula: Enchant Bracer - Dodge
+						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina

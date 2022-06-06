@@ -35,7 +35,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						170119,	-- Slithershell Warglaive
 						170117,	-- Wavebinder's Rod
 						170112,	-- Wavecrash Polearm
-						
+
 						-- Armor
 						169400,	-- Deeptide Cover
 						169435,	-- Deeptide Drape
@@ -46,7 +46,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						169403,	-- Deeptide Cinch
 						169401,	-- Deeptide Legwraps
 						169398,	-- Deeptide Slippers
-						
+
 						169416,	-- Reefwalker Coif
 						169431,	-- Reefwalker Cape
 						169418,	-- Reefwalker Monnion
@@ -56,7 +56,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						169419,	-- Reefwalker Chain
 						169417,	-- Reefwalker Trousers
 						169414,	-- Reefwalker Striders
-						
+
 						169408,	-- Slithershell Tricorne
 						169434,	-- Slithershell Cloak
 						169410,	-- Slithershell Mantle
@@ -66,7 +66,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						169411,	-- Slithershell Belt
 						169409,	-- Slithershell Leggings
 						169406,	-- Slithershell Boots
-						
+
 						169424,	-- Wavecrash Headguard
 						169433,	-- Wavecrash Greatcloak
 						169427,	-- Wavecrash Shoulderplates
@@ -86,7 +86,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(11994),	-- Coral Band
 					i(12054),	-- Demon Band
 					i(2567),	-- Evocator's Blade
-					i(6375),	-- Formula: Enchant Bracer - Lesser Versatility
+					i(6375),	-- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
 					i(5002),	-- Glowing Green Talisman
 					i(11969),	-- Jacinth Circle
 					i(6454),	-- Manula: Strong Anti-Venom
@@ -167,7 +167,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 				}),
 				i(4634,	 {	-- Iron Lockbox
 					i(13063),	-- Starfaller
-					i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
+					i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					i(7449),	-- Pattern: Dusky Leather Leggings
 					i(5774),	-- Pattern: Green Silk Pack
 					i(7450),	-- Pattern: Green Whelp Armor
@@ -208,27 +208,27 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						186141,	-- Mawsworn Scout's Quickshot Bow
 						186146,	-- Mawsworn Sentry's Cudgel
 						186148,	-- Mawsworn Vanquisher's Spire
-						
+
 						-- Armor
 						186116,	-- Mawsworn Assassin's Hood
 						186137,	-- Mawsworn Assassin's Shoulderpads
 						186119,	-- Mawsworn Assassin's Bracers
 						186114,	-- Mawsworn Assassin's Boots
-						
+
 						186110,	-- Mawsworn Darkcaster's Crest
 						186107,	-- Mawsworn Darkcaster's Robes
 						186109,	-- Mawsworn Darkcaster's Handwraps
 						186112,	-- Mawsworn Darkcaster's Cinch
-						
+
 						186128,	-- Mawsworn Guard's Helm
 						186129,	-- Mawsworn Guard's Breastplate
 						186132,	-- Mawsworn Guard's Legguards
-						
+
 						186120,	-- Mawsworn Scout's Chainmail
 						186126,	-- Mawsworn Scout's Cincture
-						
+
 						186152,	-- Mawsworn Lieutenant's Cloak
-						
+
 						-- Accessories
 						186145,	-- Stygian Thorn Loop
 					}},
@@ -251,9 +251,9 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(21947),	-- Design: Gem Studded Band
 					i(21945),	-- Design: The Aquamarine Ward
 					i(16215),	-- Formula: Enchant Boots - Greater Stamina
-					i(11225),	-- Formula: Enchant Bracer - Greater Stamina
+					i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
-					i(11208),	-- Formula: Enchant Weapon - Demonslaying
+					i(11208),	-- Formula: Enchant Weapon - Demonslaying (RECIPE!)
 					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8389),	-- Pattern: Big Voodoo Pants
@@ -272,8 +272,8 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					["timeline"] = { "added 9.0.1.36216" },
 				}),
 				i(4637,  {	-- Steel Lockbox
-					i(11204),	-- Formula: Enchant Bracer - Greater Versatility
-					i(11202),	-- Formula: Enchant Shield - Stamina
+					i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
+					i(11202),	-- Formula: Enchant Shield - Stamina (RECIPE!)
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8386),	-- Pattern: Big Voodoo Robe
 					i(10312),	-- Pattern: Red Mageweave Gloves
@@ -291,7 +291,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 				}),
 				i(4636,  {	-- Strong Iron Lockbox
 					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
-					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
+					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					i(7085),	-- Pattern: Azure Shoulders
 					i(7086),	-- Pattern: Earthen Silk Belt
 					i(5974),	-- Pattern: Guardian Cloak
@@ -344,8 +344,8 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(21944),	-- Design: Truesilver Boar
 					i(7552),	-- Falcon's Hook
 					i(12011),	-- Forest Loop
-					i(11225),	-- Formula: Enchant Bracer - Greater Stamina
-					i(11204),	-- Formula: Enchant Bracer - Greater Versatility
+					i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
+					i(11204),	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 					i(2164),	-- Gut Ripper
 					i(11973),	-- Hematite Link
 					i(11987),	-- Iridium Circle
@@ -375,7 +375,7 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					["timeline"] = { "added 9.0.1.36216" },
 				}),
 				i(5759, {	-- Thorium Lockbox
-					
+
 				}),
 				i(116920, {	-- True Steel Lockbox
 					["timeline"] = { "added 6.0.1.18594" },

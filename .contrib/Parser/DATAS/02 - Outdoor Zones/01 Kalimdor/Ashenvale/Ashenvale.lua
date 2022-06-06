@@ -2401,10 +2401,10 @@ root("Zones", m(KALIMDOR, {
 							["isLimited"] = true,
 							["timeline"] = { "added 2.0.1.6180" },
 						})),
-						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength
+						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(11039, {	-- Formula: Enchant Cloak - Minor Agility
+						i(11039, {	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2471,8 +2471,8 @@ root("Zones", m(KALIMDOR, {
 				}),
 			})),
 			n(ZONE_DROPS, {
-				i(11151, {["timeline"] = {"removed 5.0.4"}}),	-- CLASSIC: Formula: Enchant Gloves - Herbalism / MOP:Ancient Enchanting Vellum
-				i(78343, {["timeline"] = {"added 4.3.0.15005"}}),	-- Formula: Enchant Gloves - Herbalism
+				i(11151, {["timeline"] = {"removed 4.3.0"}}),	-- CLASSIC: Formula: Enchant Gloves - Herbalism / MOP:Ancient Enchanting Vellum (RECIPE!)
+				i(78343, {["timeline"] = {"added 4.3.0."}}),	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 				i(2567, {	-- Evocator's Blade
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
 					["timeline"] = { "added 1.11.1.5462" },

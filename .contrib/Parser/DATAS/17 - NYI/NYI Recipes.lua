@@ -929,6 +929,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
 		}),
 		prof(ENCHANTING, {
+			tier(CLASSIC_TIER, {
+				-- 0.5.3.3368
+				r(7865),	-- CLASSIC: Imbue Cloak - Lesser Protection / WRATH: Fate Rune of Nigh Invincibility (Reused recipeID)
+				i(7864),	-- Formula: Enchant Boots - Minor Stamina (RECIPE!)
+				r(7855),	-- CLASSIC: Imbue Chest - Absorb / WRATH: Summon Water Terror (Reused recipeID)
+				r(7853),	-- CLASSIC: Imbue Chest - Lesser Spirit / WRATH: The Art of Being a Water Terror: Force Cast on Player (Reused recipeID)
+				r(7769),	-- CLASSIC: Imbue Bracers - Minor Wisdom OLD / WRATH: Strafe Jotunheim Building (Reused recipeID)
+				r(7434),	-- CLASSIC: Imbue Weapon - Beastslayer / WRATH: Fate Rune of Unsurpassed Vigor (Reused recipeID)
+				r(7439),	-- CLASSIC: Imbue Cloak - Minor Resistance / WRATH: The Art of Being a Water Terror: Water Terror Aura (Reused recipeID)
+				r(7448),	-- CLASSIC: Imbue Chest - Lesser Absorb / ???: Vile Like Fire!: Fire (Reused recipeID)
+				r(7451),	-- CLASSIC: Imbue Chest - Minor Spirit / ???: Zone Player Total - Horde (Reused recipeID)
+			}),
+		}),
+		prof(ENCHANTING, {
 			i(22564),	-- Formula: Arcane Dust
 			i(84582),	-- Formula: Enchant Weapon - Windsong (never added version)
 			i(168450),	-- Formula: Enchant Ring - Accord of Critical Strike (not used, vendors sell 169530 and 169604)

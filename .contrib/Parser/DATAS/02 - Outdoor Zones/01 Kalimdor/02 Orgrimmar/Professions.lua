@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local GODAN_TIMELINE = "added 2.1.0";
 
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
@@ -175,6 +176,93 @@ root("Zones", m(KALIMDOR, {
 					}),
 				}),
 			}),
+			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+				n(3345, {	-- Godan <Enchanting Trainer>
+					["coord"] = { 53.4, 49.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						cat(697, {	-- Rods
+							r(7421),	-- Runed Copper Rod
+							r(7795, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
+							r(13628, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
+							r(13702, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Runed Truesilver Rod
+						}),
+						cat(690, {	-- Boot Enchantments
+							r(7867),	-- Minor Agility
+							r(7863),	-- Minor Stamina
+							r(13637, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Agility
+							r(13836, {["timeline"]={GODAN_TIMELINE}}),	-- Stamina
+							r(13890, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Speed
+							r(13644, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
+							r(13935, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
+						}),
+						cat(691, {	-- Bracer Enchantments
+							r(7428),	-- Minor Dodge / Minor Deflection
+							r(7418),	-- Minor Health
+							r(7779),	-- Minor Agility
+							r(7457),	-- Minor Stamina
+							r(13661, {["timeline"]={GODAN_TIMELINE}}),	-- Strength
+							r(13622),	-- Lesser Intellect
+							r(13822, {["timeline"]={GODAN_TIMELINE}}),	-- Intellect
+							r(13939, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Strength
+							r(13648, {["timeline"]={GODAN_TIMELINE}}),	-- Stamina
+							r(13646, {["timeline"]={"added 4.1.0"}}),	-- Lesser Dodge
+							r(13642, {["timeline"]={"added 4.1.0"}}),	-- Versatility / CLASSIC: Spirit
+							r(13501),	-- Lesser Stamina
+						}),
+						cat(692, {	-- Chest Enchantments
+							r(7426),	-- Minor Absorption
+							r(7420),	-- Minor Health
+							r(7857),	-- Health
+							r(7748),	-- Lesser Health
+							r(13626),	-- Minor Stats
+							r(13640, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Health
+							r(13941, {["timeline"]={GODAN_TIMELINE}}),	-- Stats
+							r(13917, {["timeline"]={GODAN_TIMELINE}}),	-- Superior Mana
+							r(13607),	-- Mana
+							r(13538),	-- Lesser Absorption
+							r(13858, {["timeline"]={GODAN_TIMELINE}}),	-- Superior Health
+						}),
+						cat(693, {	-- Cloak Enchantments
+							r(7771),	-- Minor Protection
+							r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
+							r(7454, {["timeline"]={"removed 5.0.4"}}),	-- Minor Resistance
+							r(13635, {["timeline"]={GODAN_TIMELINE}}),	-- Defense
+							r(13794, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Resistance
+							r(13746, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Defense
+							r(13657, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Fire Resistance
+							r(13421),	-- Lesser Protection
+						}),
+						cat(694, {	-- Glove Enchantments
+							r(13948, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Haste
+							r(13887, {["timeline"]={GODAN_TIMELINE}}),	-- Strength
+							r(13815, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
+						}),
+						cat(695, {	-- Weapon Enchantments
+							r(13937, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Impact
+							r(7745),	-- Minor Impact
+							r(7788),	-- Minor Striking
+							r(13503),	-- Lesser Striking
+							r(13943, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Striking
+							r(13529),	-- Lesser Impact
+							r(13693, {["timeline"]={GODAN_TIMELINE}}),	-- Striking
+						}),
+						cat(696, {	-- Shield Enchantments
+							r(13631, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
+							r(13905, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Versatility / CLASSIC: Greater Spirit
+							r(13659, {["timeline"]={GODAN_TIMELINE}}),	-- Versatility / CLASSIC: Spirit
+							r(13485),	-- Lesser Versatility / CLASSIC:Lesser Spirit
+							r(13378),	-- Minor Stamina
+						}),
+						cat(698, {	-- Wands
+							r(14810, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Mystic Wand
+							r(14809, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Mystic Wand
+							r(14807),	-- Greater Magic Wand
+							r(14293),	-- Lesser Magic Wand
+						}),
+					},
+				}),
+			})),
 			prof(FISHING, {
 				n(ACHIEVEMENTS, {
 					ach(5477, {	-- Fish or Cut Bait: Orgrimmar

@@ -1870,7 +1870,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 1036,	-- Dragonmaw Centurion
 				}),
 				-- #if BEFORE 4.0.3
-				i(11150, {	-- Formula: Enchant Gloves - Mining
+				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
 					["crs"] = {
 						1364,	-- Balgaras the Foul
 						1054,	-- Dark Iron Demolitionist

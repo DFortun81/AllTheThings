@@ -943,7 +943,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.8, 82.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
+						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -956,7 +956,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.8, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6346),	-- Formula: Enchant Chest - Lesser Mana
+						i(6346),	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil

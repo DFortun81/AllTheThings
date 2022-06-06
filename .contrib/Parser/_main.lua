@@ -1867,6 +1867,7 @@ end
 recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
+r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end
 	local o = _[category];

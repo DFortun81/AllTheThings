@@ -3412,7 +3412,7 @@ profession(333, {	-- Enchanting
 				}
 			}
 		},
-		{
+		--[[{
 			["name"] = "Enchanting",
 			["categoryID"] = 667,
 			["hash"] = "categoryID667",
@@ -4184,6 +4184,6 @@ profession(333, {	-- Enchanting
 					}
 				}
 			}
-		}
+		}--]]
 	}),
 });

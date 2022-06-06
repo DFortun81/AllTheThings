@@ -1202,8 +1202,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge (Removed in Cata and available through trainer now)
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 4.1.0" },
 						}),
 					},
 				}),
@@ -1322,7 +1321,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						un(REMOVED_FROM_GAME, i(4724)),	-- Humbert's Helm
 					},
 				}),
-				i(11152, {	-- Formula: Enchant Gloves - Fishing
+				i(11152, {	-- Formula: Enchant Gloves - Fishing (RECIPE!)
 					["crs"] = {
 						14276,	-- Scargil
 						2375,	-- Torn Fin Coastrunner

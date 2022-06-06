@@ -29,10 +29,10 @@ _.Zones =
 					["coord"] = { 48.6, 61.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength
+						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(11039, {	-- Formula: Enchant Cloak - Minor Agility
+						i(11039, {	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
