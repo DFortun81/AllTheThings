@@ -321,6 +321,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(44874),	-- Greater Inscription of the Storm
 				i(45705),	-- Argent Tournament Invitation
 			}),
+			tier(MOP_TIER, 4.0, {
+				i(101729),	-- Grand Deluxe Noodle Cart Kit
+				i(101727),	-- Grand Noodle Cart Kit
+				i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
+			}),
+			tier(WOD_TIER, 0.1, {
+				i(115300),		-- Marinated Elekk Steak
+				i(115302),		-- Seasoned Elekk Ribeye
+				i(115291),		-- Whole Pot-Roasted Elekk
+			}),
 		}),
 		filter(MISC, {
 			tier(WOTLK_TIER, 0.1, {

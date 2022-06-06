@@ -3192,45 +3192,7 @@ itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 
 -- #endif
 
--- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(RECIPES, {
-		itemrecipe("Recipe: Herb Baked Egg", 6891, 8604),	-- this is taught by trainer when you learn cooking; recipe item was never in game
-		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
-		-- #if ANYCLASSIC
-		itemrecipe("Recipe: Thistle Tea", 7678, 9513),
-		-- #endif
-		itemrecipe("Artisan Cookbook", 16073, 19887),
 
-		-- #if AFTER WRATH
-		i(34126),	-- Recipe: Shoveltusk Soup
-		i(39692),	-- Recipe: Succulent Orca Stew
-		i(39644),	-- Recipe: Kungaloosh [Learned from the quest directly]
-		-- #endif
-		-- #if AFTER MOP
-		i(101631),	-- Recipe: Noodle Cart Kit [Learned from the quest directly]
-		i(101664),	-- Recipe: Deluxe Noodle Cart Kit [Learned from the quest directly]
-
-		recipe(145170),	-- Grand Deluxe Noodle Cart Kit
-		i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
-		i(101729),	-- Grand Deluxe Noodle Cart Kit
-
-		recipe(145167),	-- Grand Noodle Cart Kit
-		i(101728),	-- Recipe: Grand Noodle Cart Kit
-		i(101727),	-- Grand Noodle Cart Kit
-
-		recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
-		i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
-		i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
-		-- #endif
-		-- #if AFTER WOD
-		recipe(169696),	-- Marinated Elekk Steak (Never made it to Live)
-		i(115300),		-- Marinated Elekk Steak
-		recipe(169699),	-- Seasoned Elekk Ribeye (Never made it to Live)
-		recipe(169701),	-- Seasoned Elekk Ribeye (Never made it to Live)
-		recipe(169693),	-- Whole Pot-Roasted Elekk (Never made it to Live)
-		i(115291),		-- Whole Pot-Roasted Elekk
-		-- #endif
-	}),
 }));

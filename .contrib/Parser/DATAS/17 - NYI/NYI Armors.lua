@@ -39,6 +39,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(18320),	-- Demonheart Spaulders
 				i(18304),	-- Greenroot Mail
 				--
+				i(6730),	-- Ironforge Chain
+				i(6733),	-- Ironforge Gauntlets
+				i(7925),	-- Mithril Scale Gloves
 				i(12105),	-- Pridemail Leggings
 				i(13090),	-- Breastplate of the Chosen
 				i(12615),	-- Savage Mail Tunic
@@ -518,6 +521,28 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(MOP_TIER, 0.1, {
 					i(81709),	-- Belt of Broken Bones
 					i(81710),	-- Grinning Skull Greatboots
+					i(82911),	-- Lightsteel Helm
+					i(82912),	-- Lightsteel Shoulders
+					i(82913),	-- Lightsteel Breastplate
+					i(82914),	-- Lightsteel Gauntlets
+					i(82918),	-- Lightsteel Belt
+					i(82915),	-- Lightsteel Legplates
+					i(82917),	-- Lightsteel Boots
+					i(82935),	-- Masterwork Lightsteel Helm
+					i(82936),	-- Masterwork Lightsteel Shoulders
+					i(82937),	-- Masterwork Lightsteel Breastplate
+					i(82940),	-- Masterwork Lightsteel Bracers
+					i(82938),	-- Masterwork Lightsteel Gauntlets
+					i(82942),	-- Masterwork Lightsteel Belt
+					i(82939),	-- Masterwork Lightsteel Legplates
+					i(82941),	-- Masterwork Lightsteel Boots
+					i(80811),	-- Spiritguard Helm
+					i(82896),	-- Spiritguard Shoulders
+					i(82897),	-- Spiritguard Breastplate
+					i(82898),	-- Spiritguard Gauntlets
+					i(82902),	-- Spiritguard Belt
+					i(82899),	-- Spiritguard Legplates
+					i(82901),	-- Spiritguard Boots
 				}),
 			}),
 			filter(FINGER_F, {
@@ -800,6 +825,88 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(108037),	-- Draenic Steel Shoulders
 					i(108038),	-- Draenic Steel Girdle
 					i(108039),	-- Draenic Steel Wristwraps
+					--
+					i(107971),	-- Draenic Steel Helm
+					i(107979),	-- Draenic Steel Helm
+					i(108081),	-- Hardened Draenic Steel Helm
+					i(108165),	-- Peerless Draenic Steel Helm
+					i(108181),	-- Peerless Draenic Steel Helm
+					i(108189),	-- Peerless Draenic Steel Helm
+					i(108197),	-- Peerless Draenic Steel Helm
+					i(108205),	-- Peerless Draenic Steel Helm
+					i(108213),	-- Peerless Draenic Steel Helm
+					i(108221),	-- Peerless Draenic Steel Helm
+					i(107973),	-- Draenic Steel Shoulders
+					i(107981),	-- Draenic Steel Shoulders
+					i(108083),	-- Hardened Draenic Steel Shoulders
+					i(108167),	-- Peerless Draenic Steel Shoulders
+					i(108183),	-- Peerless Draenic Steel Shoulders
+					i(108191),	-- Peerless Draenic Steel Shoulders
+					i(108199),	-- Peerless Draenic Steel Shoulders
+					i(108207),	-- Peerless Draenic Steel Shoulders
+					i(108215),	-- Peerless Draenic Steel Shoulders
+					i(108223),	-- Peerless Draenic Steel Shoulders
+					i(107968),	-- Draenic Steel Chestplate
+					i(107976),	-- Draenic Steel Chestplate
+					i(108078),	-- Hardened Draenic Steel Chestplate
+					i(108162),	-- Peerless Draenic Steel Chestplate
+					i(108178),	-- Peerless Draenic Steel Chestplate
+					i(108186),	-- Peerless Draenic Steel Chestplate
+					i(108194),	-- Peerless Draenic Steel Chestplate
+					i(108202),	-- Peerless Draenic Steel Chestplate
+					i(108210),	-- Peerless Draenic Steel Chestplate
+					i(108218),	-- Peerless Draenic Steel Chestplate
+					i(107970),	-- Draenic Steel Guantlets
+					i(107978),	-- Draenic Steel Guantlets
+					i(108080),	-- Hardened Draenic Steel Guantlets
+					i(108164),	-- Peerless Draenic Steel Guantlets
+					i(108180),	-- Peerless Draenic Steel Guantlets
+					i(108188),	-- Peerless Draenic Steel Guantlets
+					i(108196),	-- Peerless Draenic Steel Guantlets
+					i(108204),	-- Peerless Draenic Steel Guantlets
+					i(108212),	-- Peerless Draenic Steel Guantlets
+					i(108220),	-- Peerless Draenic Steel Guantlets
+					i(107975),	-- Draenic Steel Wristwraps
+					i(107983),	-- Draenic Steel Wristwraps
+					i(108085),	-- Hardened Draenic Steel Wristwraps
+					i(108169),	-- Peerless Draenic Steel Wristwraps
+					i(108185),	-- Peerless Draenic Steel Wristwraps
+					i(108193),	-- Peerless Draenic Steel Wristwraps
+					i(108201),	-- Peerless Draenic Steel Wristwraps
+					i(108209),	-- Peerless Draenic Steel Wristwraps
+					i(108217),	-- Peerless Draenic Steel Wristwraps
+					i(108225),	-- Peerless Draenic Steel Wristwraps
+					i(107974),	-- Draenic Steel Girdle
+					i(107982),	-- Draenic Steel Girdle
+					i(108084),	-- Hardened Draenic Steel Girdle
+					i(108168),	-- Peerless Draenic Steel Girdle
+					i(108184),	-- Peerless Draenic Steel Girdle
+					i(108192),	-- Peerless Draenic Steel Girdle
+					i(108200),	-- Peerless Draenic Steel Girdle
+					i(108208),	-- Peerless Draenic Steel Girdle
+					i(108216),	-- Peerless Draenic Steel Girdle
+					i(108224),	-- Peerless Draenic Steel Girdle
+					i(107972),	-- Draenic Steel Legguards
+					i(107980),	-- Draenic Steel Legguards
+					i(108082),	-- Hardened Draenic Steel Legguards
+					i(108166),	-- Peerless Draenic Steel Legguards
+					i(108182),	-- Peerless Draenic Steel Legguards
+					i(108190),	-- Peerless Draenic Steel Legguards
+					i(108198),	-- Peerless Draenic Steel Legguards
+					i(108206),	-- Peerless Draenic Steel Legguards
+					i(108214),	-- Peerless Draenic Steel Legguards
+					i(108222),	-- Peerless Draenic Steel Legguards
+					i(107969),	-- Draenic Steel Warboots
+					i(107977),	-- Draenic Steel Warboots
+					i(108079),	-- Hardened Draenic Steel Warboots
+					i(108163),	-- Peerless Draenic Steel Warboots
+					i(108179),	-- Peerless Draenic Steel Warboots
+					i(108187),	-- Peerless Draenic Steel Warboots
+					i(108195),	-- Peerless Draenic Steel Warboots
+					i(108203),	-- Peerless Draenic Steel Warboots
+					i(108211),	-- Peerless Draenic Steel Warboots
+					i(108219),	-- Peerless Draenic Steel Warboots
+					--
 					i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
 					i(109275),	-- 7.0 QA Combat Test Plate Chest 1
 					i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1

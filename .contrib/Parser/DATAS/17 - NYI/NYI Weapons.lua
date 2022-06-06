@@ -7,6 +7,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	tier(CLASSIC_TIER, {
 		n(WEAPONS, {
 			i(13262),	-- Ashbringer
+			i(12795),	-- Blood Talon
+			i(12772),	-- Inlaid Thorium Hammer
+			i(12779),	-- Rune Edge
+			i(12764),	-- Thorium Greatsword
 		}),
 	}),
 	tier(BFA_TIER, {
@@ -408,6 +412,34 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(SL_TIER, {
 			tier(SL_TIER, 2.0, {
 				i(189996),	-- Elegantly Balanced Axe
+			}),
+		}),
+		prof(BLACKSMITHING, {
+			tier(WOD_TIER, {
+				i(108054),	-- Draenic Steel Dagger
+				i(108150),	-- Hardened Draenic Steel Dagger
+				i(108234),	-- Peerless Draenic Steel Dagger
+				i(108235),	-- Peerless Draenic Steel Dagger
+				i(108236),	-- Peerless Draenic Steel Dagger
+				i(108237),	-- Peerless Draenic Steel Dagger
+				i(108046),	-- Draenic Steel War Axe
+				i(108142),	-- Hardened Draenic Steel War Axe
+				i(108226),	-- Peerless Draenic Steel War Axe
+				i(108227),	-- Peerless Draenic Steel War Axe
+				i(108228),	-- Peerless Draenic Steel War Axe
+				i(108229),	-- Peerless Draenic Steel War Axe
+				i(108058),	-- Draenic Steel Mace
+				i(108154),	-- Hardened Draenic Steel Mace
+				i(108238),	-- Peerless Draenic Steel Mace
+				i(108239),	-- Peerless Draenic Steel Mace
+				i(108240),	-- Peerless Draenic Steel Mace
+				i(108241),	-- Peerless Draenic Steel Mace
+				i(108062),	-- Draenic Steel Bulwark
+				i(108158),	-- Hardened Draenic Steel Bulwark
+				i(108242),	-- Peerless Draenic Steel Bulwark
+				i(108243),	-- Peerless Draenic Steel Bulwark
+				i(108244),	-- Peerless Draenic Steel Bulwark
+				i(108245),	-- Peerless Draenic Steel Bulwark
 			}),
 		}),
 	}),
