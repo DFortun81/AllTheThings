@@ -9683,6 +9683,7 @@ local fields = {
 	["icon"] = function(t)
 		return app.DifficultyIcons[t.difficultyID];
 	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return t.locks;
 	end,
