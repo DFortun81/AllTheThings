@@ -947,6 +947,7 @@ BOWS = 32;
 CROSSBOWS = 33;
 FIST_WEAPONS = 34;
 WARGLAIVES = 35;
+THROWN = 36;
 MISC = 50;
 NECK_F = 51;
 FINGER_F = 52;
@@ -1438,6 +1439,26 @@ bubbleDownFiltered = function(data, filter, t)
 		return t;
 	end
 end
+bubbleDownAndReplace = function(data, t)
+	if t then
+		if t.g or t.groups then
+			for key, value in pairs(data) do
+				t[key] = value;
+			end
+			bubbleDown(data, t.groups);
+			bubbleDown(data, t.g);
+		elseif isarray(t) then
+			for i,group in ipairs(t) do
+				bubbleDown(data, group);
+			end
+		else
+			for key, value in pairs(data) do
+				t[key] = value;
+			end
+		end
+		return t;
+	end
+end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 bubbleDownSelf = function(data, t)
 	-- if this is an array, convert to .g container first to prevent merge confusion
@@ -1446,38 +1467,40 @@ bubbleDownSelf = function(data, t)
 	return bubbleDown(data, t);
 end
 bubbleUp = function(t)
-	local t2 = {};
-	for i, group in pairs(t) do
-		table.insert(t2, group);
-	end
-	for i=#t,1,-1 do
-		table.remove(t, i);
-	end
-	for i, group in pairs(t2) do
-		if type(i) ~= "number" then
-			print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
-		elseif type(group) ~= "table" then
-			print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-		else
-			if group.bubble then
-				-- this isn't just a normal group object, merge up the contents.
-				if group.groups or group.g then
-					for j,subgroup in pairs(group.groups or group.g) do
-						if type(j) ~= "number" then
-							print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
-						elseif type(subgroup) ~= "table" then
-							print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
-						else
-							table.insert(t, subgroup);
+	if t then
+		local t2 = {};
+		for i, group in pairs(t) do
+			table.insert(t2, group);
+		end
+		for i=#t,1,-1 do
+			table.remove(t, i);
+		end
+		for i, group in pairs(t2) do
+			if type(i) ~= "number" then
+				print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+			elseif type(group) ~= "table" then
+				print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
+			else
+				if group.bubble then
+					-- this isn't just a normal group object, merge up the contents.
+					if group.groups or group.g then
+						for j,subgroup in pairs(group.groups or group.g) do
+							if type(j) ~= "number" then
+								print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
+							elseif type(subgroup) ~= "table" then
+								print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
+							else
+								table.insert(t, subgroup);
+							end
 						end
 					end
+				else
+					table.insert(t, group);
 				end
-			else
-				table.insert(t, group);
 			end
 		end
+		return t;
 	end
-	return t;
 end
 contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
@@ -1580,11 +1603,11 @@ removeclassicphase = function(t)
 	if t then
 		if t.g or t.groups then
 			t.u = nil;
-			bubbleDown(data, t.groups);
-			bubbleDown(data, t.g);
+			removeclassicphase(t.groups);
+			removeclassicphase(t.g);
 		elseif isarray(t) then
 			for i,group in ipairs(t) do
-				bubbleDown(data, group);
+				removeclassicphase(group);
 			end
 		else
 			t.u = nil;
@@ -1746,11 +1769,23 @@ ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
 	return struct("illusionID", id, t);
 end
+ill = illusion;											-- Create an ILLUSION Object
+item = function(id, t)									-- Create an ITEM Object
+	return struct("itemID", id, t);
+end
+i = item;												-- Create an ITEM Object (alternative shortcut)
+ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
+	t = struct("itemID", id, t);
+	-- #if NOT ANYCLASSIC
+	t.ignoreBonus = true;
+	-- #endif
+	return t;
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	return struct("instanceID", id, t);
 end
 inst_tw = function(id ,t)								-- Create a TIMEWALKING INSTANCE Object
-	t = struct("instanceID", id, t);
+	t = inst(id, t);
 	t.u = TIMEWALKING;
 	-- Look for the CreatureID's
 	local groups = t.groups or t.g;
@@ -1769,18 +1804,6 @@ inst_tw = function(id ,t)								-- Create a TIMEWALKING INSTANCE Object
 		end
 	end
 	return t;
-end
-item = function(id, t)									-- Create an ITEM Object
-	return struct("itemID", id, t);
-end
-i = item;												-- Create an ITEM Object (alternative shortcut)
-ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
-	t = struct("itemID", id, t);
-	t.ignoreBonus = true;
-	return t;
-end
-ill = function(id, t)									-- Create an ILLUSION Object
-	return struct("illusionID", id, t);
 end
 map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
@@ -1802,6 +1825,10 @@ mount = function(id, t)									-- Create a MOUNT Object, which is just a spellI
 	return struct("mountID", id, t);
 end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
+	if not id then
+		--error("NPC ID Missing");
+		return unpack(t);
+	end
 	return struct("npcID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
