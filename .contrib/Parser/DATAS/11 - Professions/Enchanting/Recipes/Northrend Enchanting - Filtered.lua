@@ -72,7 +72,7 @@ profession(ENCHANTING, {
 						{
 							-- Greater Blasting
 							["recipeID"] = 44612, --[[Greater Blasting]]
-							["u"] = 1
+							["u"] = NEVER_IMPLEMENTED
 						},
 						{
 							["recipeID"] = 71692--[[Angler]]
@@ -223,7 +223,7 @@ profession(ENCHANTING, {
 						{
 							-- Titanguard
 							["recipeID"] = 62257, --[[Titanguard]]
-							["u"] = 1
+							["u"] = NEVER_IMPLEMENTED
 						},
 						{
 							["recipeID"] = 44633--[[Exceptional Agility]]

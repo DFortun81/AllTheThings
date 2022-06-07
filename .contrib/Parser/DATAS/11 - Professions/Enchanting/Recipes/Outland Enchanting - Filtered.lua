@@ -20,7 +20,7 @@ profession(ENCHANTING, {
 						{
 							-- Arcane Dust
 							["recipeID"] = 28021, --[[Arcane Dust]]
-							["u"] = 1
+							["u"] = NEVER_IMPLEMENTED
 						},
 						{
 							["recipeID"] = 42615--[[Small Prismatic Shard]]

@@ -46,7 +46,7 @@ profession(ENCHANTING, {
 			{
 				-- Illusion: Holy Infusion
 				["recipeID"] = 181870, --[[Illusion: Holy Infusion]]
-				["u"] = 1
+				["u"] = NEVER_IMPLEMENTED
 			},
 			{
 				["recipeID"] = 175070,--[[Illusion: Jade Spirit]]

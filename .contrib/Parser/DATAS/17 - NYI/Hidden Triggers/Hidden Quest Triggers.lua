@@ -10,7 +10,7 @@ root("HiddenQuestTriggers", {
 
 
 		tier(BFA_TIER, {
-			["g"] = bubbleDown({["u"] = 1}, {
+			["g"] = bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				n(QUESTS, {
 					q(47860),	-- A Rude Awakening
 					q(48994),	-- Akunda the Liar

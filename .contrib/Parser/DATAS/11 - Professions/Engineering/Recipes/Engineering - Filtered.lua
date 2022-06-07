@@ -201,7 +201,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "The Mortar: Reloaded",
 							["recipeID"] = 13240,
-							["u"] = 2
+							["u"] = REMOVED_FROM_GAME
 						},
 						{
 							["name"] = "Thorium Grenade",
@@ -216,12 +216,12 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Bloodvine Goggles",
 							["recipeID"] = 24356,
-							["u"] = 2
+							["u"] = REMOVED_FROM_GAME
 						},
 						{
 							["name"] = "Bloodvine Lens",
 							["recipeID"] = 24357,
-							["u"] = 2
+							["u"] = REMOVED_FROM_GAME
 						},
 						{
 							["name"] = "Bright-Eye Goggles",

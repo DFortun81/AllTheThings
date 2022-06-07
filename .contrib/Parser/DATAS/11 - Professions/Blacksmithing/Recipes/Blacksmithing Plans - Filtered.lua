@@ -211,7 +211,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Ornate Mithril Shoulder
 							["recipeID"] = 9952--[[Ornate Mithril Shoulder]],
-							["u"] = 2
+							["u"] = REMOVED_FROM_GAME
 						},
 						{	-- Heavy Mithril Shoulder
 							["recipeID"] = 9926--[[Heavy Mithril Shoulder]]
@@ -648,7 +648,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Blood Talon
 							["recipeID"] = 16986--[[Blood Talon]],
-							["u"] = 1
+							["u"] = NEVER_IMPLEMENTED
 						},
 						{	-- Dark Iron Destroyer
 							["recipeID"] = 20897--[[Dark Iron Destroyer]]

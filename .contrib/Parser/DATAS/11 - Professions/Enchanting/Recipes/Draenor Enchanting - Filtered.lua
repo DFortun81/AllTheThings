@@ -15,7 +15,7 @@ profession(ENCHANTING, {
 						{
 							-- Temporal Crystal
 							["recipeID"] = 178241, --[[Temporal Crystal]]
-							["u"] = 1
+							["u"] = NEVER_IMPLEMENTED
 						},
 						{
 							["recipeID"] = 169092--[[Temporal Crystal]]

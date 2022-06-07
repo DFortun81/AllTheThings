@@ -497,7 +497,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield
 		}),
 		-- #if BEFORE MOP
-		filter(36, {	-- Thrown
+		filter(THROWN, {
 			applyclassicphase(TBC_PHASE_ONE, i(29203, {	-- Enchanted Thorium Blades
 				["timeline"] = {
 					"added 2.0.1.10000",
