@@ -23582,6 +23582,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	local oldState = sourceID and ATTAccountWideData.Sources[sourceID];
 	if oldState then
+		local unlearnedSourceIDs = { sourceID };
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 		ATTAccountWideData.Sources[sourceID] = nil;
 
@@ -23601,6 +23602,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 					if ATTAccountWideData.Sources[otherSourceID] then
 						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
 						if not otherSourceInfo.isCollected and otherSourceInfo.categoryID == categoryID then
+							tinsert(unlearnedSourceIDs, otherSourceID);
 							ATTAccountWideData.Sources[otherSourceID] = nil;
 							shared = shared + 1;
 						end
@@ -23617,7 +23619,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		end
 
 		-- Refresh the Data and Cry!
-		app:RefreshData(false, true);
+		UpdateRawIDs("s", unlearnedSourceIDs);
 		Callback(app.PlayRemoveSound);
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
