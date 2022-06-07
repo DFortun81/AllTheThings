@@ -14077,6 +14077,22 @@ UpdateGroups = function(parent, g, window)
 		end
 	end
 end
+-- Adjusts the progress/total of the group's parent chain
+local function AdjustParentProgress(group, progChange, totalChange)
+	-- rawget, .parent will default to sourceParent in some cases
+	local parent = group and not group.sourceIgnored and rawget(group, "parent");
+	if parent then
+		-- app.PrintDebug("APP:",parent.text)
+		-- app.PrintDebug("CUR:",parent.progress,parent.total)
+		-- app.PrintDebug("CHG:",progChange,totalChange)
+		parent.total = (parent.total or 0) + totalChange;
+		parent.progress = (parent.progress or 0) + progChange;
+		-- app.PrintDebug("END:",parent.progress,parent.total)
+		-- verify visibility of the group, always a 'group' since it is already a parent of another group
+		SetGroupVisibility(rawget(parent, "parent"), parent);
+		AdjustParentProgress(parent, progChange, totalChange);
+	end
+end
 local function UpdateParentProgress(group, change)
 	change = change or 1;
 	group.progress = group.progress + change;
@@ -14119,6 +14135,48 @@ local function TopLevelUpdateGroup(group, window)
 	if group.OnUpdate then group.OnUpdate(group); end
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
+-- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy
+local function DirectGroupUpdate(group)
+	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
+	local parent = rawget(group, "parent");
+	if parent and not app.RecursiveGroupRequirementsFilter(group) then
+		-- app.PrintDebug("DGU:Filtered",group.text,group.parent.text)
+		return;
+	end
+	local prevTotal, prevProg = group.total or 0, group.progress or 0;
+	group.total = 0;
+	group.progress = 0;
+	local ItemBindFilter = app.ItemBindFilter;
+	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
+		app.ItemBindFilter = app.NoFilter;
+		UpdateGroups(group, group.g, window);
+		-- reapply the previous BoE filter
+		app.ItemBindFilter = ItemBindFilter;
+	else
+		UpdateGroups(group, group.g, window);
+	end
+	if group.collectible then
+		group.total = group.total + 1;
+		if group.collected then
+			group.progress = group.progress + 1;
+		end
+	end
+	if group.OnUpdate then group.OnUpdate(group); end
+	if parent then
+		if group.g then
+			SetGroupVisibility(parent, group);
+		else
+			SetThingVisibility(parent, group);
+		end
+	end
+	local progChange, totalChange = group.progress - prevProg, group.total - prevTotal;
+	-- Something to change
+	if progChange ~= 0 or totalChange ~= 0 then
+		AdjustParentProgress(group, progChange, totalChange);
+	end
+	-- app.PrintDebug("DGU:",group.text,window and window.Suffix,progChange,totalChange)
+end
+app.DirectGroupUpdate = DirectGroupUpdate;
 
 -- Helper Methods
 -- The following Helper Methods are used when you obtain a new appearance.
