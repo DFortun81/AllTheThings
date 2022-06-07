@@ -2165,9 +2165,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	["holidayID"] = 235442,
 	-- #endif
 	["groups"] = {
-		i(37827, { -- Brewfest Riding Kodo (MOUNT!)
-			["timeline"] = { "created 2.0.1" },
-		}),
 		i(167998, {	-- Dark Iron Tankard
 			["timeline"] = { "created 8.1.5.29701" },
 		}),

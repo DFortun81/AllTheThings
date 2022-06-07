@@ -714,11 +714,3 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 		}),
 	},
 }));
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	holiday(235466, {
-		n(ACHIEVEMENTS, {
-			ach(15395),	-- Fae's Giving [DNT]
-		})
-	})
-}));

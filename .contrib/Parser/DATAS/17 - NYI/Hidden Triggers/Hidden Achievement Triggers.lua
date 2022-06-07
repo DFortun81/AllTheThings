@@ -15,7 +15,6 @@ root("HiddenAchievementTriggers", {
 	tier(SL_TIER, {
 		-- 9.0.1
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-			ach(14351),	-- The Path Towards Ascension 39
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
 			ach(14343),	-- The Path Towards Ascension 5
@@ -24,11 +23,13 @@ root("HiddenAchievementTriggers", {
 			ach(14346),	-- The Path Towards Ascension 16
 			ach(14348),	-- The Path Towards Ascension 20
 			ach(14349),	-- The Path Towards Ascension 24
+			ach(14351),	-- The Path Towards Ascension 39
 		})),
 
 		-- 9.1.5
 		tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 9.1.5"} }, {
 			ach(15403),	--[DNT] <Hidden> Mythic+ Rating > 0 (Shadowlands, S2 or later)
+			ach(15395),	-- Fae's Giving [DNT]
 		})),	
 
 		-- 9.2.0

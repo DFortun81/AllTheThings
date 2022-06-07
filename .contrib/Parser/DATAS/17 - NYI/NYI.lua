@@ -195,12 +195,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.1.5
 				q(64975),	--
 			}),
-			i(185920),	-- Cartel Al Incident Report
-			i(185927),	-- Expedition Report A37J - Foreword
-			i(185928),	-- Expedition Report A37J - Part 1
-			i(185929),	-- Expedition Report A37J - Part 2
-			i(185930),	-- Expedition Report A37J - Part 3
-			i(185931),	-- Expedition Report A37J - Part 4
+			filter(MISC, {
+				i(185920),	-- Cartel Al Incident Report
+				i(185927),	-- Expedition Report A37J - Foreword
+				i(185928),	-- Expedition Report A37J - Part 1
+				i(185929),	-- Expedition Report A37J - Part 2
+				i(185930),	-- Expedition Report A37J - Part 3
+				i(185931),	-- Expedition Report A37J - Part 4
+			}),
 		},
 	}),
 	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {

@@ -147,9 +147,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 			})),
 
-			-- 2.4.3
+			-- 2.4.1
 			tier(TBC_TIER, 4.1, bubbleDownSelf({ ["timeline"] = {"created 2.4.1"} }, {
-				i(37827, { -- Brewfest Riding Kodo (MOUNT!) 						<---- Duplication in Brewfest
+				i(37827, { -- Brewfest Riding Kodo (MOUNT!)
 					["modelID"] = 24758,
 				}),
 			})),
