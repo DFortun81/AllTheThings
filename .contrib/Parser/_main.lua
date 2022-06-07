@@ -1951,8 +1951,12 @@ tier = function(id, patch, t)							-- Create a TIER Object
 	else
 		id = id + (patch / 100);
 		t = togroups(t);
-	end;
-	return struct("tierID", id, t);
+	end
+	t = struct("tierID", id, t);
+	if not t.timeline then
+		t.timeline = { "added " .. math.floor(id) .. ".0.1" };
+	end
+	return t;
 end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
