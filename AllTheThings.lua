@@ -13913,12 +13913,13 @@ end
 -- Processing Functions
 local function SetGroupVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
+	local forceShowParent;
 	-- If this group is forced to be shown due to contained groups being shown
 	if group.forceShow then
 		group.visible = true;
 		group.forceShow = nil;
 		-- Continue the forceShow visibility outward
-		parent.forceShow = true;
+		forceShowParent = true;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,group.visible) end
 	-- If this group contains Things, show based on visibility filter
 	elseif group.total > 0 then
@@ -13927,20 +13928,24 @@ local function SetGroupVisibility(parent, group)
 		-- The group can still be trackable even if it isn't visible due to the total
 		if not group.visible and app.ShowTrackableThings(group) then
 			group.visible = not group.saved or app.GroupVisibilityFilter(group);
-			parent.forceShow = group.visible or parent.forceShow;
+			forceShowParent = group.visible;
 		end
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowTrackableThings(group) then
 		group.visible = not group.saved or app.GroupVisibilityFilter(group);
-		parent.forceShow = group.visible or parent.forceShow;
+		forceShowParent = group.visible;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
 	else
 		group.visible = app.DefaultGroupFilter();
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,group.visible) end
 	end
+	if parent and forceShowParent then
+		parent.forceShow = forceShowParent;
+	end
 end
 local function SetThingVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetThingVisibility",group.key,group[group.key]) end
+	local forceShowParent;
 	if group.total > 0 then
 		-- If we've collected the item, use the "Show Collected Items" filter.
 		group.visible = group.progress < group.total or app.CollectedItemVisibilityFilter(group);
@@ -13948,15 +13953,18 @@ local function SetThingVisibility(parent, group)
 	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
 		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-		parent.forceShow = group.visible or parent.forceShow;
+		forceShowParent = group.visible;
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.trackable",group.progress,group.total,group.visible) end
 	else
 		group.visible = app.DefaultThingFilter();
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.default",group.progress,group.total,group.visible) end
 	end
+	if parent and forceShowParent then
+		parent.forceShow = forceShowParent;
+	end
 end
-local UpdateGroup, UpdateGroups;
-UpdateGroup = function(parent, group, window)
+local UpdateGroups;
+local function UpdateGroup(parent, group, window)
 	-- if group.key == "runeforgePowerID" and group[group.key] == 134 then app.DEBUG_PRINT = 134; end
 	-- if not app.DEBUG_PRINT and shouldLog then
 	-- 	app.DEBUG_PRINT = shouldLog;
