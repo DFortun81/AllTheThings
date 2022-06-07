@@ -12900,7 +12900,16 @@ end)();
 
 -- Spell Lib
 (function()
-local GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo = GetSpellInfo, GetSpellLink, IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo
+local GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo =
+	  GetSpellInfo, GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo
+
+-- Consolidates some spell checking since
+local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+    if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
+        or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
+        return true;
+    end
+end
 
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;
@@ -13001,22 +13010,18 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return true; end
-		if IsSpellKnown(t.spellID) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
-			ATTAccountWideData.Spells[t.spellID] = 1;
+		local spellID = t.spellID;
+		if app.CurrentCharacter.Spells[spellID] then return true; end
+		if IsSpellKnownHelper(spellID) then
+			app.CurrentCharacter.Spells[spellID] = 1;
+			ATTAccountWideData.Spells[spellID] = 1;
 			return true;
 		end
 	end,
 	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if t.saved then return 1; end
 		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-		if IsSpellKnown(t.spellID) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
-			ATTAccountWideData.Spells[t.spellID] = 1;
-			return 1;
-		end
 	end,
 	["specs"] = function(t)
 		if t.itemID then
@@ -13046,13 +13051,8 @@ local recipeFields = RawCloneData(fields, {
 		return app.CollectibleRecipes;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if t.saved then return 1; end
 		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
-		if IsSpellKnown(t.spellID) then
-			app.CurrentCharacter.Spells[t.spellID] = 1;
-			ATTAccountWideData.Spells[t.spellID] = 1;
-			return 1;
-		end
 	end,
 	["b"] = function(t)
 		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
@@ -14428,7 +14428,7 @@ local function SetCustomCollectibility(key, func)
 	-- print("SetCustomCollectibility",key);
 	local result = func();
 	if result ~= nil then
-		-- print("saved",result);
+		-- app.PrintDebug("SetCustomCollectibility",key,result);
 		app.CurrentCharacter.CustomCollects[key] = result;
 	else
 		-- failed attempt to set the CC, try next frame
