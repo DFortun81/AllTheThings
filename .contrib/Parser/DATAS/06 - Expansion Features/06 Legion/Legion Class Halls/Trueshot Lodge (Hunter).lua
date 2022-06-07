@@ -933,6 +933,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								["spellID"] = 242155,	-- Hybrid Kinship
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
+								["f"] = RECIPES,
 							}),
 							i(142228, {	-- Huntmaster's Dire Wolfhawk (MOUNT!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
