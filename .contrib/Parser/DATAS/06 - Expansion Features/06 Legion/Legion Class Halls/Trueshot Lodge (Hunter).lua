@@ -267,7 +267,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					--
 					q(42519, {	-- Rise, Champions
-						["sourceQuests"] = { 40959 },	-- The Campaign Begins
+						["sourceQuests"] = { 
+							40959, 	-- The Campaign Begins
+							44090,	-- Pledge of Loyalty
+						},
 						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
 						["coord"] = { 47.3, 53.9, TRUESHOT_LODGE },
 					}),
@@ -601,9 +604,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						},
 					}),
 					q(44090, {	-- Pledge of Loyalty
-						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
+						["sourceQuests"] = { 40959 },	-- The Campaign Begins
 						["provider"] = { "n", 113327 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
+						["isBreadcrumb"] = true,
 					}),
 					q(43423, {	-- A Hero's Weapon
 						["sourceQuests"] = { 44090 },	-- Pledge of Loyalty
