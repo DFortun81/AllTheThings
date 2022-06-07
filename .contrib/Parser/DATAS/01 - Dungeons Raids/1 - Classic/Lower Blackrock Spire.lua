@@ -1566,6 +1566,11 @@ root("Instances", tier(CLASSIC_TIER, {
 						ach(2188, {	-- Leeeeeeeeeeeeeroy!
 							["provider"] = { "n", 10161 },	-- Rookery Whelp
 							["timeline"] = { "removed 6.0.2" },
+							["groups"] = {
+								title(110, {	-- Jenkins
+									["style"] = 2,
+								}),
+							},
 						}),
 					}),
 					-- #endif

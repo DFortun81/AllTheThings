@@ -211,7 +211,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, spell(159896)),	-- Path of the Iron Prow
 		})),
 		un(REMOVED_FROM_GAME, ach(2188, {	-- Leeeeeeeeeeeeeroy!
-			title(110),		-- %s Jenkins
+			title(110, {	-- Jenkins
+				["style"] = 2,
+			}),
 		})),
 		un(REMOVED_FROM_GAME, ach(6901, {	-- Mogu'shan Palace: Gold
 			un(REMOVED_FROM_GAME, ach(6900)),		-- Mogu'shan Palace: Silver
