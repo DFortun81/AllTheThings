@@ -36,6 +36,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					q(40384, {	-- Needs of the Hunters
 						["provider"] = { "n", 100786 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
+						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
 					}),
 					q(41415, {	-- The Hunter's Call
 						["sourceQuest"] = 40384,	-- Needs of the Hunters
@@ -608,9 +609,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["provider"] = { "n", 113327 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
 						["isBreadcrumb"] = true,
+						["description"] = "After completing The Campaign Begins, return to Dalaran and this NPC will approach you within a few seconds.",
 					}),
 					q(43423, {	-- A Hero's Weapon
-						["sourceQuests"] = { 44090 },	-- Pledge of Loyalty
+						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
 						["provider"] = { "n", 110505 },	-- Emmarel Shadewarden
 						["coord"] = { 47.7, 49.3, TRUESHOT_LODGE },
 						["g"] = {
