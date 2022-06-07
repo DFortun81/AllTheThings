@@ -8656,10 +8656,12 @@ local criteriaFields = {
 		if app.AccountWideAchievements then
 			local achievementID = t.achievementID;
 			-- cached account-wide credit, or API account-wide credit
-			if ATTAccountWideData.Achievements[achievementID] then return 2; end
-			local acctApiCredit = select(4, GetAchievementInfo(achievementID));
-			if acctApiCredit then
-				return 2;
+			if achievementID then
+				if ATTAccountWideData.Achievements[achievementID] then return 2; end
+				local acctApiCredit = select(4, GetAchievementInfo(achievementID));
+				if acctApiCredit then
+					return 2;
+				end
 			end
 		end
 	end,
