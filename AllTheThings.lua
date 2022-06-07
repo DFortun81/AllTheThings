@@ -10886,6 +10886,7 @@ local fields = {
 			return 1;
 		end
 	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return t.locks;
 	end,
