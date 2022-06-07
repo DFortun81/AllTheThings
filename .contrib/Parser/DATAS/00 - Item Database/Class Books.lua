@@ -182,7 +182,6 @@ i(22890);	-- Tome of Frost Ward
 i(21214);	-- Tome of Frostbolt
 i(136971);	-- Tome of Hex: Snake
 i(120139);	-- Tome of Polymorph: Penguin
-i(147580);	-- Tome of the Hybrid Beast
 i(147770);	-- Tome of the PTR Beast
 i(136790);	-- Tome of the Wilds: Track Beasts
 i(16665);	-- Tome of Tranquilizing Shot
