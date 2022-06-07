@@ -6052,37 +6052,15 @@ local function SearchForMissingItemNames(group)
 	return arr;
 end
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
-local function UpdateSearchResults(searchResults, verifyCollectible)
-	-- print("UpdateSearchResults",searchResults and #searchResults,verifyCollectible)
+local function UpdateSearchResults(searchResults)
+	-- print("UpdateSearchResults",searchResults and #searchResults)
 	if searchResults then
 		-- Ad-hoc update system only needs to pass along updates to the results if the Main list is open
 		-- otherwise it only needs to refresh windows
 		if not app.Settings:GetTooltipSetting("Updates:AdHoc") or app:GetWindow("Prime"):IsVisible() then
-			-- Mark all results as marked. This prevents a double +1 on parents.
-			for i,result in ipairs(searchResults) do
-				-- print("result",result.text,result.visible,result.parent and result.parent.total)
-				if result.visible and result.parent and result.parent.total then
-					if not verifyCollectible or result.collectible then
-						-- print(".marked",result.text,verifyCollectible)
-						result.marked = true;
-					end
-				end
-			end
-
-			-- Only unmark and +1 marked search results.
-			for i,result in ipairs(searchResults) do
-				if result.marked then
-					result.marked = nil;
-					-- Every result has a total/progress now
-					-- print("Update self+parent",result.text,"=>",result.parent.text)
-					app.UpdateParentProgress(result, 1);
-					-- This is an item that has a relative set of groups
-					if result.g then
-						app.SetGroupVisibility(result.parent, result);
-					else
-						app.SetThingVisibility(result.parent, result);
-					end
-				end
+			local Update = app.DirectGroupUpdate;
+			for _,result in ipairs(searchResults) do
+				Update(result);
 			end
 		end
 
@@ -8279,7 +8257,7 @@ local QuestCompletionHelper = function(questID)
 		if app.CollectibleQuests or app.CollectibleQuestsLocked then
 			-- Search ATT for the related quests.
 			local searchResults = SearchForField("questID", questID);
-			UpdateSearchResults(searchResults, true);
+			UpdateSearchResults(searchResults);
 		end
 		-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
 		if CustomCollectQuests[questID] then
@@ -9283,18 +9261,17 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- print("PET_JOURNAL_PET_DELETED", petID,C_PetJournal.GetPetInfoByPetID(petID));
 
 	-- Check against all of the collected species for a species that is no longer 1/X
-	local atLeastOne = false;
-	for speciesID,collected in pairs(CollectedSpeciesHelper) do
+	local missing = {};
+	for speciesID,_ in pairs(CollectedSpeciesHelper) do
 		if C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
 			rawset(CollectedSpeciesHelper, speciesID, nil);
-			atLeastOne = true;
+			tinsert(missing, speciesID);
 		end
 	end
-	if atLeastOne then
+	if #missing > 0 then
 		app:PlayRemoveSound();
-		app:RefreshData(false, true);
-		-- wipe(searchCache); -- handled by refresh data
 	end
+	UpdateRawIDs("speciesID", missing);
 end
 
 local fields = {
