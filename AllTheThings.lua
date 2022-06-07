@@ -2468,6 +2468,7 @@ local PrintQuestInfo = function(questID, new, info)
 end
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
+	key = tonumber(key);
 	local total = rawget(t, "_TOTAL") or 0;
 	if value then
 		if not rawget(t, key) then
@@ -2481,6 +2482,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		PrintQuestInfo(key);
 	elseif value == false then
 		rawset(t, "_TOTAL", total - 1);
+		rawset(DirtyQuests, key, true);
 		rawset(DirtyQuests, "DIRTY", true);
 		-- no need to actually set the key in the table since it's been marked as incomplete
 		-- and this meta function only triggers on NEW key assignments
@@ -8251,20 +8253,6 @@ local CustomCollectQuests = {
 	[65078] = 1,	-- Shadowlands - Covenant - Night Fae
 	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
 };
-local QuestCompletionHelper = function(questID)
-	if questID then
-		-- Only increase progress for Quests as Collectible users.
-		if app.CollectibleQuests or app.CollectibleQuestsLocked then
-			-- Search ATT for the related quests.
-			local searchResults = SearchForField("questID", questID);
-			UpdateSearchResults(searchResults);
-		end
-		-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
-		if CustomCollectQuests[questID] then
-			Callback(app.RefreshCustomCollectibility);
-		end
-	end
-end
 local function RefreshQuestCompletionState(questID)
 	-- print("QuestRefresh",questID)
 	if questID then
@@ -8273,12 +8261,17 @@ local function RefreshQuestCompletionState(questID)
 		QueryCompletedQuests();
 	end
 
-	for questID,_ in pairs(DirtyQuests) do
-		QuestCompletionHelper(tonumber(questID));
-	end
-	-- soft update if any quests were even completed to ensure visible changes occur
+	-- update if any quests were even completed to ensure visible changes occur
 	if DirtyQuests.DIRTY then
-		app:UpdateWindows();
+		local updateQuests = {};
+		for questID,_ in pairs(DirtyQuests) do
+			tinsert(updateQuests, questID);
+			-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
+			if CustomCollectQuests[questID] then
+				Callback(app.RefreshCustomCollectibility);
+			end
+		end
+		UpdateRawIDs("questID", updateQuests);
 	end
 	-- re-register the criteria update event
 	app:RegisterEvent("CRITERIA_UPDATE");
