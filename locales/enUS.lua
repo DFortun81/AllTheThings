@@ -1787,7 +1787,7 @@ app.L = {
 		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
-		[-809] = "Stored Wisdom Device",										-- Stored Wisdom Device
+		[-809] = GetSpellInfo(373230),											-- Stored Wisdom Device
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
