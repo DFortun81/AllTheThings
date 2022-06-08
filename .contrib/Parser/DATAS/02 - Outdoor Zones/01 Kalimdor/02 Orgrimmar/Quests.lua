@@ -641,6 +641,7 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 35068 },	-- Gotura Fourwinds
 				["coord"] = { 47.6, 71.3, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["altQuests"] = { 28494 },	-- Warchief's Command: Northern Barrens!
 			}),
 			q(44092, {	-- Protect the Home Front
 				["provider"] = { "n", 95234 },	-- Elthyn Da'rai
