@@ -311,7 +311,7 @@ i(162719, 255101);	-- Pact of Versatility [Rank 3] (H)
 i(162314, 268897);	-- Quick Navigation [Rank 3]
 i(162301, 255097);	-- Seal of Versatility [Rank 3]
 i(162298, 255094);	-- Seal of Critical Strike [Rank 3]
---i(162299, 255095):	-- Seal of Haste [Rank 3]
+i(162299, 255095);	-- Seal of Haste [Rank 3]
 i(162300, 255096);	-- Seal of Mastery [Rank 3]
 i(162316, 255112);	-- Siphoning [Rank 3] (A)
 i(162723, 255112);	-- Siphoning [Rank 3] (H)

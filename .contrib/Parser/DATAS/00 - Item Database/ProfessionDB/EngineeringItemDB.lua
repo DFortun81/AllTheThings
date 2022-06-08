@@ -1,5 +1,5 @@
 local Items = root("ItemDBConditional");
-local ProfessionID = BLACKSMITHING;
+local ProfessionID = ENGINEERING;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then
 		print("Duplicate Recipe Item Defined!",itemID,recipeID);
