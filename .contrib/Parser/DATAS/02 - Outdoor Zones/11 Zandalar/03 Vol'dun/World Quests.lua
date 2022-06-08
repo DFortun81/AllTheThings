@@ -674,7 +674,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
+						i(162445),	-- Pattern: Battle Flag: Rallying Swiftness [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51008, {	-- Work Order: Blood-Stained Bone
@@ -704,7 +704,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
+						i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52371, {	-- Work Order: F.R.I.E.D.
@@ -734,7 +734,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(162260),	-- Recipe: Potion of Concealment (Rank 3)
+						i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52412, {	-- Work Order: Rubelite

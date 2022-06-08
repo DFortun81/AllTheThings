@@ -698,7 +698,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 					-- #if NOT ANYCLASSIC
 					-- This does not properly get marked in Classic, can't confirm on Retail.
-					r(13920),	-- Enchanting (Artisan)
+					r(13920, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Artisan)
 					-- #endif
 					cat(690, {	-- Boot Enchantments
 						r(13935),	-- Agility

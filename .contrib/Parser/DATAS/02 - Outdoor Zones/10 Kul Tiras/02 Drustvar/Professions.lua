@@ -48,66 +48,6 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(ENCHANTING, {
-					q(53996, {	-- Pick Up Sticks
-						["provider"] = { "n", 146053 },	-- Sef Iwen
-						["coord"] = { 53.4, 40.1, DRUSTVAR },
-						["sourceQuests"] = {
-							53993,	-- A Voice on the Wind (A)
-							55635,	-- A Voice on the Wind (H)
-						},
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-					}),
-					q(53997, {	-- The Sixth Sense
-						["provider"] = { "n", 146053 },	-- Sef Iwen
-						["coord"] = { 53.4, 40.1, DRUSTVAR },
-						["sourceQuest"] = 53996,	-- Pick Up Sticks
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-					}),
-					q(53998, {	-- Exhumed
-						["provider"] = { "n", 146091 },	-- Sef Iwen
-						["coord"] = { 55.3, 46.1, DRUSTVAR },
-						["sourceQuest"] = 53997,	-- The Sixth Sense
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-					}),
-					q(53999, {	-- The Threads That Bind
-						["provider"] = { "n", 146091 },	-- Sef Iwen
-						["coord"] = { 55.3, 46.1, DRUSTVAR },
-						["sourceQuest"] = 53998,	-- Exhumed
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-					}),
-					q(54000, {	-- The Beat Goes On
-						["provider"] = { "n", 146093 },	-- Sef Iwen
-						["coord"] = { 63.0, 59.4, DRUSTVAR },
-						["sourceQuest"] = 53999,	-- Exhumed
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-						["g"] = {
-							un(15, recipe(284415)),	-- Enchant Runic Power Core
-						},
-					}),
-					q(54001, {	-- We're Going In
-						["provider"] = { "n", 146094 },	-- Sef Iwen
-						["coord"] = { 58.9, 62.9, DRUSTVAR },
-						["sourceQuest"] = 54000,	-- The Beat Goes On
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-					}),
-					q(54002, {	-- Putting it All Togethereeee
-						["provider"] = { "n", 152255 },	-- Sef Iwen
-						["coord"] = { 57.8, 80.8, DRUSTVAR },
-						["sourceQuest"] = 54001,	-- We're Going In
-						["requireSkill"] = ENCHANTING,
-						["lvl"] = 120,
-						["g"] = {
-							recipe(287494),	-- Iwen's Enchanting Rod
-						},
-					}),
-				}),
 				prof(JEWELCRAFTING, {
 					q(55580, {	-- High Prospects (H)
 						["provider"] = { "n", 150896 },	-- Shrine of the Eventide

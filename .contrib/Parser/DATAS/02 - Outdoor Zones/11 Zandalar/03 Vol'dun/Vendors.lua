@@ -32,19 +32,19 @@ _.Zones =
 						i(159753, {	-- Desert Flute (TOY!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162763, {	-- Design: Royal Quartz Loop (Rank 3)
+						i(162763, {	-- Design: Royal Quartz Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(160529, {	-- Dune Shroud
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162719, {	-- Formula: Enchant Ring - Pact of Versatility (Rank 3)
+						i(162719, {	-- Formula: Enchant Ring - Pact of Versatility [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162725, {	-- Formula: Enchant Weapon - Gale-Force Striking (Rank 3)
+						i(162725, {	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162726, {	-- Formula: Enchant Weapon - Versatile Navigation (Rank 3)
+						i(162726, {	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(165246, {	-- Gauntlets of Scavenged Plates
@@ -74,28 +74,28 @@ _.Zones =
 						i(161999, {	-- Pack of Many Pockets
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(162769, {	-- Pattern: Deep Sea Bag (Rank 3)
+						i(162769, {	-- Pattern: Deep Sea Bag [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162772, {	-- Pattern: Embroidered Deep Sea Cloak (Rank 3)
+						i(162772, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(163313, {	-- Recipe: Battle Potion of Agility (Rank 3)
+						i(163313, {	-- Recipe: Battle Potion of Agility [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162705, {	-- Recipe: Coastal Rejuvenation Potion (Rank 3)
+						i(162705, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162755, {	-- Recipe: Contract: Voldunai (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162698, {	-- Recipe: Flask of the Undertow (Rank 3)
+						i(162698, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162694, {	-- Recipe: Potion of Rising Death (Rank 3)
+						i(162694, {	-- Recipe: Potion of Rising Death [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162766, {	-- Recipe: Recurve Bow of the Strands (Rank 3)
+						i(162766, {	-- Recipe: Recurve Bow of the Strands [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161773, {	-- Alabaster Hyena (MOUNT!)
@@ -110,10 +110,10 @@ _.Zones =
 						i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162735, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 3)
+						i(162735, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162727, {	-- Schematic: Frost-Laced Ammunition (Rank 3)
+						i(162727, {	-- Schematic: Frost-Laced Ammunition [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(165249, {	-- Scorched Sandstalkers

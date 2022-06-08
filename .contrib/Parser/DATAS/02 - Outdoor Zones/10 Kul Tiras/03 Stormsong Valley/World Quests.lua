@@ -884,7 +884,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(162299),	-- Formula: Enchant Ring - Seal of Haste (Rank 3)
+						i(162299),	-- Formula: Enchant Ring - Seal of Haste [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
@@ -893,7 +893,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(162300),	-- Formula: Enchant Ring - Seal of Mastery (Rank 3)
+						i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52344, {	-- Work Order: Kul Tiramisu (Rank 3)

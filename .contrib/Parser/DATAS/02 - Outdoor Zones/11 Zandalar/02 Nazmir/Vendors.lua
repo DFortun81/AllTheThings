@@ -43,19 +43,19 @@ _.Zones =
 						i(165242, {	-- Bracers of the Swamp Hunter
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162762, {	-- Design: Tidal Amethyst Loop (Rank 3)
+						i(162762, {	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(160531, {	-- Drape of the Blood Purge
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162718, {	-- Formula: Enchant Ring - Pact of Mastery (Rank 3)
+						i(162718, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162724, {	-- Formula: Enchant Weapon - Masterful Navigation (Rank 3)
+						i(162724, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162723, {	-- Formula: Enchant Weapon - Siphoning (Rank 3)
+						i(162723, {	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161538, {	-- Gloomplate Gauntlets
@@ -73,25 +73,25 @@ _.Zones =
 						i(161520, {	-- Hir'eek Hide Leggings
 							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
-						i(163315, {	-- Recipe: Battle Potion of Intellect (Rank 3)
+						i(163315, {	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162703, {	-- Recipe: Coastal Mana Potion (Rank 3)
+						i(162703, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162754, {	-- Recipe: Contract: Talanji's Expedition (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162697, {	-- Recipe: Flask of the Vast Horizon (Rank 3)
+						i(162697, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162768, {	-- Recipe: Hardened Tempest Knuckles (Rank 3)
+						i(162768, {	-- Recipe: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162767, {	-- Recipe: Mistscale Knuckles (Rank 3)
+						i(162767, {	-- Recipe: Mistscale Knuckles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162693, {	-- Recipe: Potion of Bursting Blood (Rank 3)
+						i(162693, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161666, {	-- Captured Swampstalker (MOUNT!)
@@ -103,7 +103,7 @@ _.Zones =
 						i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 3)
+						i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(165234, {	-- Swamp Medic's Gloves

@@ -858,8 +858,9 @@ _.Zones =
 					["coord"] = { 47.0, 35.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(168024, {	-- Recipe: Iwen's Enchanting Rod
+						i(168024, {	-- Recipe: Iwen's Enchanting Rod (RECIPE!)
 							["sourceQuest"] = 54002,	-- Putting it All Together
+							["timeline"] = { "added 8.1.5" },
 						}),
 					},
 				}),
@@ -962,25 +963,25 @@ _.Zones =
 						i(161497, {	-- Cord of the Loa Worshippers
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162764, {	-- Design: Laribole Staff of Alacrity (Rank 3)
+						i(162764, {	-- Design: Laribole Staff of Alacrity [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162761, {	-- Design: Owlseye Loop (Rank 3)
+						i(162761, {	-- Design: Owlseye Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162765, {	-- Design: Scarlet Diamond Staff of Intuition (Rank 3)
+						i(162765, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(160530, {	-- Dinomancer's Cloak
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162717, {	-- Formula: Enchant Ring - Pact of Haste (Rank 3)
+						i(162717, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation (Rank 3)
+						i(162722, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation (Rank 3)
+						i(162721, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161548, {	-- Gonk Adherents Vambraces
@@ -995,19 +996,19 @@ _.Zones =
 						i(163210, {	-- Party Totem (TOY!)
 							["cost"] = 18000000,	-- 1,800g
 						}),
-						i(163317, {	-- Recipe: Battle Potion of Stamina (Rank 3)
+						i(163317, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162704, {	-- Recipe: Coastal Healing Potion (Rank 3)
+						i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162753, {	-- Recipe: Contract: Zandalari Empire (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162696, {	-- Recipe: Flask of Endless Fathoms (Rank 3)
+						i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162692, {	-- Recipe: Potion of Replenishment (Rank 3)
+						i(162692, {	-- Recipe: Potion of Replenishment [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161665, {	-- Cobalt Pterrordax (MOUNT!)
@@ -1019,16 +1020,16 @@ _.Zones =
 						i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 3)
+						i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162743, {	-- Schematic: Deployable Attire Rearranger (Rank 3)
+						i(162743, {	-- Schematic: Deployable Attire Rearranger [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162742, {	-- Schematic: Interdimensional Companion Repository (Rank 3)
+						i(162742, {	-- Schematic: Interdimensional Companion Repository [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162741, {	-- Schematic: Organic Discombobulation Grenade (Rank 3)
+						i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(166736, {	-- Schematic: Unstable Temporal Time Shifter (Rank 2)
@@ -1174,13 +1175,13 @@ _.Zones =
 						i(161532, {	-- Bindings of the Elemental Allies
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162760, {	-- Design: Amberblaze Loop (Rank 3)
+						i(162760, {	-- Design: Amberblaze Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(160532, {	-- Drape of the Horde's Fury
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162716, {	-- Formula: Enchant Ring - Pact of Critical Strike (Rank 3)
+						i(162716, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161521, {	-- Goblin Sapper's Legguards
@@ -1199,37 +1200,37 @@ _.Zones =
 						i(165719, {	-- Monelite Whetstone
 							["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
 						}),
-						i(163319, {	-- Recipe: Battle Potion of Strength (Rank 3)
+						i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(166310, {	-- Recipe: Contract: The Honorbound (Rank 2)
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter (Rank 3)
+						i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162701, {	-- Recipe: Endless Tincture of Fractional Power (Rank 3)
+						i(162701, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162695, {	-- Recipe: Flask of the Currents (Rank 3)
+						i(162695, {	-- Recipe: Flask of the Currents [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162691, {	-- Recipe: Steelskin Potion (Rank 3)
+						i(162691, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162707, {	-- Recipe: Stormsteel Dagger (Rank 3)
+						i(162707, {	-- Recipe: Stormsteel Dagger [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162774, {	-- Recipe: Stormsteel Saber (Rank 3)
+						i(162774, {	-- Recipe: Stormsteel Saber [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162706, {	-- Recipe: Stormsteel Shield (Rank 3)
+						i(162706, {	-- Recipe: Stormsteel Shield [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162708, {	-- Recipe: Stormsteel Spear (Rank 3)
+						i(162708, {	-- Recipe: Stormsteel Spear [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162702, {	-- Recipe: Surging Alchemist Stone (Rank 3)
+						i(162702, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161537, {	-- Sabatons of the Renewed Warpath
@@ -1238,16 +1239,16 @@ _.Zones =
 						i(162728, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	(Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162729, {	-- Schematic: AZ3-R1-T3 Synthetic Specs (Rank 3)
+						i(162729, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162746, {	-- Schematic: Finely-Tuned Stormsteel Destroyer (Rank 3)
+						i(162746, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162744, {	-- Schematic: Monelite Scope of Alacrity (Rank 3)
+						i(162744, {	-- Schematic: Monelite Scope of Alacrity [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162745, {	-- Schematic: Precision Attitude Adjuster (Rank 3)
+						i(162745, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161512, {	-- Silent Stalker Belt

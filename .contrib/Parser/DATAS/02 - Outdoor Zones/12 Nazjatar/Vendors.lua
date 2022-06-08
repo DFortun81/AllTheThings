@@ -175,16 +175,16 @@ _.Zones =
 					i(169365, {	-- Damplight Slug (PET!)
 						["cost"] = 5000000,	-- 500g
 					}),
-					i(169604, {	-- Formula: Accord of Critical Strike (Rank 3)
+					i(169604, {	-- Formula: Accord of Critical Strike [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169605, {	-- Formula: Accord of Haste (Rank 3)
+					i(169605, {	-- Formula: Accord of Haste [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169606, {	-- Formula: Accord of Mastery (Rank 3)
+					i(169606, {	-- Formula: Accord of Mastery [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169607, {	-- Formula: Accord of Versatility (Rank 3)
+					i(169607, {	-- Formula: Accord of Versatility [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(169549, {	-- Recipe: Contract: Unshackled
@@ -213,7 +213,7 @@ _.Zones =
 					}),
 				},
 			}),
-			n(154653, {	-- Tomas Riogain <Nazjatar PvP Quartermaster>
+			pvp(n(154653, {	-- Tomas Riogain <Nazjatar PvP Quartermaster>
 				["coord"] = { 38.1, 55.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -250,10 +250,10 @@ _.Zones =
 					i(169357, {	-- Chitterspine Devourer (PET!)
 						["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
 					}),
-					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 2)
+					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter [Rank 2] (RECIPE!)
 						["cost"] = { { "i", 137642, 2 }, },		-- 2x Mark of Honor
 					}),
-					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 3)
+					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter [Rank 3] (RECIPE!)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
 					}),
 					i(169203, {	-- Inkscale Deepseeker (MOUNT!)
@@ -452,8 +452,8 @@ _.Zones =
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
 					}),
 				},
-			}),
-			n(154652, {	-- Dazzerian <Nazjatar PvP Quartermaster>
+			})),
+			pvp(n(154652, {	-- Dazzerian <Nazjatar PvP Quartermaster>
 				["coord"] = { 48.8, 60.6, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -483,10 +483,10 @@ _.Zones =
 					i(169357, {	-- Chitterspine Devourer (PET!)
 						["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
 					}),
-					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 2)
+					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter [Rank 2] (RECIPE!)
 						["cost"] = { { "i", 137642, 2 }, },		-- 2x Mark of Honor
 					}),
-					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 3)
+					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter [Rank 3] (RECIPE!)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
 					}),
 					i(169276, {	-- Horde War Banner (TOY!)
@@ -691,7 +691,7 @@ _.Zones =
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
 					}),
 				},
-			}),
+			})),
 			n(154860, {	-- Feylana the Handler <Hippogryph Vendor>
 				["coord"] = { 73.6, 46.0, 1355 },
 				["g"] = {
@@ -952,16 +952,16 @@ _.Zones =
 					i(163073, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
 					}),
-					i(169530, {	-- Formula: Accord of Critical Strike (Rank 3)
+					i(169530, {	-- Formula: Accord of Critical Strike [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169531, {	-- Formula: Accord of Haste (Rank 3)
+					i(169531, {	-- Formula: Accord of Haste [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169532, {	-- Formula: Accord of Mastery (Rank 3)
+					i(169532, {	-- Formula: Accord of Mastery [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(169533, {	-- Formula: Accord of Versatility (Rank 3)
+					i(169533, {	-- Formula: Accord of Versatility [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(169364, {	-- Prismatic Softshell (PET!)

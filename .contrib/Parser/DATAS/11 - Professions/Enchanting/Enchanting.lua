@@ -1,14 +1,15 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
--- Enchanting - Skill ID 333
+-- Enchanting - Skill ID 333 / SPELL ID 7411
 root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	tier(CLASSIC_TIER, {
-		r(7411),	-- Enchanting (Apprentice)
-		r(7412),	-- Enchanting (Journeyman)
-		r(7413),	-- Enchanting (Expert)
-		r(13920),	-- Enchanting (Artisan)
-		r(13262, {["collectible"]=false}),	-- Disenchant
+		r(7411, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Apprentice)
+		r(7412, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Journeyman)
+		r(7413, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Expert)
+		r(13920, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Artisan)
+		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting [NOT SOURCED]
+		r(13262),	-- Disenchant
 		cat(690, {	-- Boot Enchantments
 			r(13935),	-- Agility
 			r(20023),	-- Greater Agility
@@ -194,6 +195,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 		}),
 	}),
 	tier(TBC_TIER, {
+		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting [NOT SOURCED]
 		cat(693, {	-- Cloak Enchantments
 			-- #if AFTER BFA
 			r(25086),	-- Dodge
@@ -208,9 +210,290 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			-- #endif
 		}),
 	}),
+	tier(WOTLK_TIER, {
+		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting [NOT SOURCED]
+	}),
+	tier(CATA_TIER, {
+		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting [NOT SOURCED]
+	}),
+	tier(MOP_TIER, {
+		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting [NOT SOURCED]
+	}),
+	tier(WOD_TIER, {
+		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting [NOT SOURCED]
+	}),
+	tier(LEGION_TIER, {
+		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting [NOT SOURCED]
+	}),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+		r(264473, {	-- Kul Tiran Enchanting
+			["races"] = ALLIANCE_ONLY
+		}),
+		r(265805, {	-- Zandalari Enchanting
+			["races"] = HORDE_ONLY
+		}),
+		cat(1240, {	-- Conversions
+			r(287270, {["timeline"]={"added 8.1.0"}}),	-- Aqueous Invocation
+			r(286665, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Expulsion
+			r(286644, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Invocation
+		}),
+		cat(1251, {	-- Disenchants
+			r(290360, {["timeline"]={"added 8.1.0"}}),	-- Umbra Shatter
+			r(290361, {["timeline"]={"added 8.1.0"}}),	-- Veiled Shatter
+		}),
+		cat(1232, {	-- Follower Equipment
+			r(278418),	-- Disenchanting Rod
+		}),
+		cat(650, {	-- Glove Enchantments
+			r(255070, {	-- Kul Tiran Crafting
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(255035, {	-- Kul Tiran Herbalism
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(255040, {	-- Kul Tiran Mining
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(255065, {	-- Kul Tiran Skinning
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(255066, {	-- Kul Tiran Surveying
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(267498, {	-- Zandalari Crafting
+				["races"] = HORDE_ONLY
+			}),
+			r(267458, {	-- Zandalari Herbalism
+				["races"] = HORDE_ONLY
+			}),
+			r(267482, {	-- Zandalari Mining
+				["races"] = HORDE_ONLY
+			}),
+			r(267486, {	-- Zandalari Skinning
+				["races"] = HORDE_ONLY
+			}),
+			r(267490, {	-- Zandalari Surveying
+				["races"] = HORDE_ONLY
+			}),
+		}),
+		cat(1290, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {	-- Mount Equipment
+			r(301412),	-- Light-Step Hoofplates
+		})),
+		cat(1237, bubbleDownSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
+			r(285644),	-- Enchanted Tiki Mask
+		})),
+		cat(651, {	-- Ring Enchantments
+			r(298009, {["timeline"]={"added 8.2.0"}}),	-- Accord of Critical Strike [Rank 1]
+			r(298010, {["timeline"]={"added 8.2.0"}}),	-- Accord of Critical Strike [Rank 2]
+			r(298011, {["timeline"]={"added 8.2.0"}}),	-- Accord of Critical Strike [Rank 3]
+			r(297989, {["timeline"]={"added 8.2.0"}}),	-- Accord of Haste [Rank 1]
+			r(297994, {["timeline"]={"added 8.2.0"}}),	-- Accord of Haste [Rank 2]
+			r(298016, {["timeline"]={"added 8.2.0"}}),	-- Accord of Haste [Rank 3]
+			r(297995, {["timeline"]={"added 8.2.0"}}),	-- Accord of Mastery [Rank 1]
+			r(298001, {["timeline"]={"added 8.2.0"}}),	-- Accord of Mastery [Rank 2]
+			r(298002, {["timeline"]={"added 8.2.0"}}),	-- Accord of Mastery [Rank 3]
+			r(297993, {["timeline"]={"added 8.2.0"}}),	-- Accord of Versatility [Rank 1]
+			r(297991, {["timeline"]={"added 8.2.0"}}),	-- Accord of Versatility [Rank 2]
+			r(297999, {["timeline"]={"added 8.2.0"}}),	-- Accord of Versatility [Rank 3]
+			r(255075),	-- Pact of Critical Strike [Rank 1]
+			r(255090),	-- Pact of Critical Strike [Rank 2]
+			r(255098),	-- Pact of Critical Strike [Rank 3]
+			r(255076),	-- Pact of Haste [Rank 1]
+			r(255091),	-- Pact of Haste [Rank 2]
+			r(255099),	-- Pact of Haste [Rank 3]
+			r(255077),	-- Pact of Mastery [Rank 1]
+			r(255092),	-- Pact of Mastery [Rank 2]
+			r(255100),	-- Pact of Mastery [Rank 3]
+			r(255078),	-- Pact of Versatility [Rank 1]
+			r(255093),	-- Pact of Versatility [Rank 2]
+			r(255101),	-- Pact of Versatility [Rank 3]
+			r(255071),	-- Seal of Critical Strike [Rank 1]
+			r(255086),	-- Seal of Critical Strike [Rank 2]
+			r(255094),	-- Seal of Critical Strike [Rank 3]
+			r(255072),	-- Seal of Haste [Rank 1]
+			r(255087),	-- Seal of Haste [Rank 2]
+			r(255095),	-- Seal of Haste [Rank 3]
+			r(255073),	-- Seal of Mastery [Rank 1]
+			r(255088),	-- Seal of Mastery [Rank 2]
+			r(255096),	-- Seal of Mastery [Rank 3]
+			r(255074),	-- Seal of Versatility [Rank 1]
+			r(255089),	-- Seal of Versatility [Rank 2]
+			r(255097),	-- Seal of Versatility [Rank 3]
+		}),
+		cat(1255, {	-- Training
+			r(284415, {	-- Enchant Runic Power Core
+				["u"] = 15,	-- Training
+				["timeline"] = { "added 8.1.5" },
+			}),
+		}),
+		cat(1097, {	-- Wands
+			r(265110),	-- Enchanter's Sorcerous Scepter [Rank 1]
+			r(265111),	-- Enchanter's Sorcerous Scepter [Rank 2]
+			r(265112),	-- Enchanter's Sorcerous Scepter [Rank 3]
+			r(265106),	-- Enchanter's Umbral Wand
+			r(269715),	-- Honorable Combatant's Sorcerous Scepter [Rank 1]
+			pvp(r(269716)),	-- Honorable Combatant's Sorcerous Scepter [Rank 2]
+			pvp(r(269719)),	-- Honorable Combatant's Sorcerous Scepter [Rank 3]
+			r(294781, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Sorcerous Scepter [Rank 1]
+			pvp(r(294782, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Sorcerous Scepter [Rank 2]
+			pvp(r(294783, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Sorcerous Scepter [Rank 3]
+			r(282851, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter [Rank 1]
+			pvp(r(282855, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Sorcerous Scepter [Rank 2]
+			pvp(r(282857, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Sorcerous Scepter [Rank 3]
+			r(305936, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
+			pvp(r(305937, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Sorcerous Scepter [Rank 2]
+			pvp(r(305938, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Sorcerous Scepter [Rank 3]
+		}),
+		cat(652, {	-- Weapon Enchantments
+			r(255103),	-- Coastal Surge [Rank 1]
+			r(255104),	-- Coastal Surge [Rank 2]
+			r(255105),	-- Coastal Surge [Rank 3]
+			r(268907),	-- Deadly Navigation [Rank 1]
+			r(268908),	-- Deadly Navigation [Rank 2]
+			r(268909),	-- Deadly Navigation [Rank 3]
+			r(298440, {["timeline"]={"added 8.2.0"}}),	-- Force Multiplier [Rank 1]
+			r(298439, {["timeline"]={"added 8.2.0"}}),	-- Force Multiplier [Rank 2]
+			r(300788, {["timeline"]={"added 8.2.0"}}),	-- Force Multiplier [Rank 3]
+			r(255141),	-- Gale-Force Striking [Rank 1]
+			r(255142),	-- Gale-Force Striking [Rank 2]
+			r(255143),	-- Gale-Force Striking [Rank 3]
+			r(298433, {["timeline"]={"added 8.2.0"}}),	-- Machinist's Brilliance [Rank 1]
+			r(300769, {["timeline"]={"added 8.2.0"}}),	-- Machinist's Brilliance [Rank 2]
+			r(300770, {["timeline"]={"added 8.2.0"}}),	-- Machinist's Brilliance [Rank 3]
+			r(268901),	-- Masterful Navigation [Rank 1]
+			r(268902),	-- Masterful Navigation [Rank 2]
+			r(268903),	-- Masterful Navigation [Rank 3]
+			r(298442, {["timeline"]={"added 8.2.0"}}),	-- Naga Hide [Rank 1]
+			r(298441, {["timeline"]={"added 8.2.0"}}),	-- Naga Hide [Rank 2]
+			r(300789, {["timeline"]={"added 8.2.0"}}),	-- Naga Hide [Rank 3]
+			r(298438, {["timeline"]={"added 8.2.0"}}),	-- Oceanic Restoration [Rank 1]
+			r(298437, {["timeline"]={"added 8.2.0"}}),	-- Oceanic Restoration [Rank 2]
+			r(298515, {["timeline"]={"added 8.2.0"}}),	-- Oceanic Restoration [Rank 3]
+			r(268894),	-- Quick Navigation [Rank 1]
+			r(268895),	-- Quick Navigation [Rank 2]
+			r(268897),	-- Quick Navigation [Rank 3]
+			r(255110),	-- Siphoning [Rank 1]
+			r(255111),	-- Siphoning [Rank 2]
+			r(255112),	-- Siphoning [Rank 3]
+			r(268913),	-- Stalwart Navigation [Rank 1]
+			r(268914),	-- Stalwart Navigation [Rank 2]
+			r(268915),	-- Stalwart Navigation [Rank 3]
+			r(255129),	-- Torrent of Elements [Rank 1]
+			r(255130),	-- Torrent of Elements [Rank 2]
+			r(255131),	-- Torrent of Elements [Rank 3]
+			r(268852),	-- Versatile Navigation [Rank 1]
+			r(268878),	-- Versatile Navigation [Rank 2]
+			r(268879),	-- Versatile Navigation [Rank 3]
+		}),
+		cat(1098, {	-- Wrist Enchantments
+			r(271433),	-- Cooled Hearthing
+			r(271366),	-- Safe Hearthing
+			r(255068, {	-- Swift Hearthing (A)
+				["races"] = ALLIANCE_ONLY
+			}),
+			r(267495, {	-- Swift Hearthing (H)
+				["races"] = HORDE_ONLY
+			}),
+		}),
+		cat(1249, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
+			r(287494),	-- Iwen's Enchanting Rod
+		})),
+		n(QUESTS, {
+			q(54473, {	-- Enchanted Formulae (A)
+				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
+				["coord"] = { 74.1, 11.4, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+			}),
+			q(54474, {	-- Enchanted Formulae (H)
+				["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
+				["coord"] = { 47.0, 35.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+			}),
+			q(54005, {	-- What the Drust Knew (A)
+				["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
+				["provider"] = { "n", 136041 },	-- Emily Fairweather
+				["coord"] = { 74.2, 11.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(54161, {	-- What the Drust Knew (H)
+				["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
+				["provider"] = { "n", 122702 },	-- Enchantress Quinni
+				["coord"] = { 47.1, 35.7, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(53993, {	-- A Voice on the Wind (A)
+				["sourceQuest"] = 54005,	-- What the Drust Knew (A)
+				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
+				["coord"] = { 74.2, 11.4, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(55635, {	-- A Voice on the Wind (H)
+				["sourceQuest"] = 54161,	-- What the Drust Knew (H)
+				["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
+				["coord"] = { 47.1, 35.3, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(53996, {	-- Pick Up Sticks
+				["sourceQuests"] = {
+					53993,	-- A Voice on the Wind (A)
+					55635,	-- A Voice on the Wind (H)
+				},
+				["provider"] = { "n", 146053 },	-- Sef Iwen
+				["coord"] = { 53.4, 40.1, DRUSTVAR },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(53997, {	-- The Sixth Sense
+				["sourceQuest"] = 53996,	-- Pick Up Sticks
+				["provider"] = { "n", 146053 },	-- Sef Iwen
+				["coord"] = { 53.4, 40.1, DRUSTVAR },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(53998, {	-- Exhumed
+				["sourceQuest"] = 53997,	-- The Sixth Sense
+				["provider"] = { "n", 146091 },	-- Sef Iwen
+				["coord"] = { 55.3, 46.1, DRUSTVAR },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(53999, {	-- The Threads That Bind
+				["sourceQuest"] = 53998,	-- Exhumed
+				["provider"] = { "n", 146091 },	-- Sef Iwen
+				["coord"] = { 55.3, 46.1, DRUSTVAR },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(54000, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- The Beat Goes On
+				["provider"] = { "n", 146093 },	-- Sef Iwen
+				["coord"] = { 63.0, 59.4, DRUSTVAR },
+				["sourceQuest"] = 53999,	-- Exhumed
+				["g"] = {
+					recipe(284415, {	-- Enchant Runic Power Core
+						["u"] = 15,	-- Training
+					}),
+				},
+			})),
+			q(54001, {	-- We're Going In
+				["sourceQuest"] = 54000,	-- The Beat Goes On
+				["provider"] = { "n", 146094 },	-- Sef Iwen
+				["coord"] = { 58.9, 62.9, DRUSTVAR },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(54002, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Putting it All Togethereeee
+				["sourceQuest"] = 54001,	-- We're Going In
+				["provider"] = { "n", 152255 },	-- Sef Iwen
+				["coord"] = { 57.8, 80.8, DRUSTVAR },
+				["g"] = {
+					recipe(287494),	-- Iwen's Enchanting Rod
+				},
+			})),
+		}),
+	})),
 	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		r(309832),	-- Shadowlands Enchanting
-		r(324750, {["collectible"] = false}),	-- Disenchant
 		cat(1365, {	-- Boot Enchantments
 			r(309532),	-- Agile Soulwalker
 			r(309534),	-- Eternal Agility
@@ -286,6 +569,19 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(309623),	-- Sinful Revelation
 		}),
 	})),
+	--[[ Unsure About these
+	-- Introduced in BFA
+		r(300381),	-- Disenchant (Vanilla)
+		r(300382),	-- Disenchant (TBC)
+		r(302690),	-- Disenchant (WOTLK)
+		r(302691),	-- Disenchant (Cata)
+		r(302692),	-- Disenchant (MoP)
+		r(302693),	-- Disenchant (WoD)
+		r(302694),	-- Disenchant (Legion)
+		r(302695),	-- Disenchant (BFA/Kul Tiran?)
+	--
+		r(324750),	-- Disenchant (SL)
+		--]]
 	n(DROPS, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
 			["requireSkill"] = ENCHANTING,

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root("Zones", m(ZANDALAR, {
-	m(THE_GREAT_SEAL, {	-- Dazar'alor
+	m(THE_GREAT_SEAL, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				q(54464, {	-- Alchemical Equations
@@ -85,33 +85,99 @@ root("Zones", m(ZANDALAR, {
 					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 				}),
 			}),
-			prof(ENCHANTING, {
-				q(54474, {	-- Enchanted Formulae
-					["requireSkill"] = ENCHANTING,
-					["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
-					["coord"] = { 47.0, 35.8, DAZARALOR },
+			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
+					["coord"] = { 47.0, 35.8, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 110,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					["g"] = {
+						r(265805, {	-- Zandalari Enchanting
+							["races"] = HORDE_ONLY
+						}),
+						cat(1240, {	-- Conversions
+							r(287270, {["timeline"]={"added 8.1.0"}}),	-- Aqueous Invocation
+							r(286665, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Expulsion
+							r(286644, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Invocation
+						}),
+						cat(1251, {	-- Disenchants
+							r(290360, {["timeline"]={"added 8.1.0"}}),	-- Umbra Shatter
+							r(290361, {["timeline"]={"added 8.1.0"}}),	-- Veiled Shatter
+						}),
+						cat(1232, {	-- Follower Equipment
+							r(278418),	-- Disenchanting Rod
+						}),
+						cat(650, {	-- Glove Enchantments
+							r(267498, {	-- Zandalari Crafting
+								["races"] = HORDE_ONLY
+							}),
+							r(267458, {	-- Zandalari Herbalism
+								["races"] = HORDE_ONLY
+							}),
+							r(267482, {	-- Zandalari Mining
+								["races"] = HORDE_ONLY
+							}),
+							r(267486, {	-- Zandalari Skinning
+								["races"] = HORDE_ONLY
+							}),
+							r(267490, {	-- Zandalari Surveying
+								["races"] = HORDE_ONLY
+							}),
+						}),
+						cat(651, {	-- Ring Enchantments,
+							r(255075),	-- Pact of Critical Strike [Rank 1]
+							r(255090),	-- Pact of Critical Strike [Rank 2]
+							r(255076),	-- Pact of Haste [Rank 1]
+							r(255091),	-- Pact of Haste [Rank 2]
+							r(255077),	-- Pact of Mastery [Rank 1]
+							r(255092),	-- Pact of Mastery [Rank 2]
+							r(255078),	-- Pact of Versatility [Rank 1]
+							r(255093),	-- Pact of Versatility [Rank 2]
+							r(255071),	-- Seal of Critical Strike [Rank 1]
+							r(255086),	-- Seal of Critical Strike [Rank 2]
+							r(255072),	-- Seal of Haste [Rank 1]
+							r(255087),	-- Seal of Haste [Rank 2]
+							r(255073),	-- Seal of Mastery [Rank 1]
+							r(255088),	-- Seal of Mastery [Rank 2]
+							r(255074),	-- Seal of Versatility [Rank 1]
+							r(255089),	-- Seal of Versatility [Rank 2]
+						}),
+						cat(1097, {	-- Wands
+							r(265110),	-- Enchanter's Sorcerous Scepter [Rank 1]
+							r(265111),	-- Enchanter's Sorcerous Scepter [Rank 2]
+							r(265106),	-- Enchanter's Umbral Wand
+							r(269715),	-- Honorable Combatant's Sorcerous Scepter [Rank 1]
+							r(282851, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter [Rank 1]
+							r(305936, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
+						}),
+						cat(652, {	-- Weapon Enchantments
+							r(255103),	-- Coastal Surge [Rank 1]
+							r(255104),	-- Coastal Surge [Rank 2]
+							r(268907),	-- Deadly Navigation [Rank 1]
+							r(268908),	-- Deadly Navigation [Rank 2]
+							r(255141),	-- Gale-Force Striking [Rank 1]
+							r(255142),	-- Gale-Force Striking [Rank 2]
+							r(268901),	-- Masterful Navigation [Rank 1]
+							r(268902),	-- Masterful Navigation [Rank 2]
+							r(268894),	-- Quick Navigation [Rank 1]
+							r(268895),	-- Quick Navigation [Rank 2]
+							r(255110),	-- Siphoning [Rank 1]
+							r(255111),	-- Siphoning [Rank 2]
+							r(268913),	-- Stalwart Navigation [Rank 1]
+							r(268914),	-- Stalwart Navigation [Rank 2]
+							r(255129),	-- Torrent of Elements [Rank 1]
+							r(255130),	-- Torrent of Elements [Rank 2]
+							r(268852),	-- Versatile Navigation [Rank 1]
+							r(268878),	-- Versatile Navigation [Rank 2]
+						}),
+						cat(1098, {	-- Wrist Enchantments
+							r(271433),	-- Cooled Hearthing
+							r(271366),	-- Safe Hearthing
+							r(267495, {	-- Swift Hearthing
+								["races"] = HORDE_ONLY
+							}),
+						}),
+					},
 				}),
-				-- Tools of Trade Questline
-				q(54161, {	-- What the Drust Knew (H)
-					["provider"] = { "n", 122702 },	-- Enchantress Quinni
-					["coord"] = { 47.1, 35.7, DAZARALOR },
-					["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
-					["requireSkill"] = ENCHANTING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55635, {	-- A Voice on the Wind (H)
-					["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-					["coord"] = { 47.1, 35.3, DAZARALOR },
-					["sourceQuest"] = 54161,	-- What the Drust Knew (H)
-					["requireSkill"] = ENCHANTING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-			}),
+			})),
 			prof(ENGINEERING, {
 				q(54476, {	-- Engineered Blueprints
 					["requireSkill"] = ENGINEERING,

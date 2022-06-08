@@ -273,7 +273,7 @@ root("Zones", {
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
+						i(162444),	-- Pattern: Battle Flag: Phalanx Defense [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51009, {	-- Work Order: Calcified Bone
@@ -296,14 +296,14 @@ root("Zones", {
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
+						i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52361, {	-- Work Order: Enchant Weapon - Torrent of Elements
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
+						i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52411, {	-- Work Order: Kubiline
@@ -316,7 +316,7 @@ root("Zones", {
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
+						i(162259),	-- Recipe: Sea Mist Potion [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51005, {	-- Work Order: Sea Stalk

@@ -97,32 +97,99 @@ root("Zones", m(KULTIRAS, {
 					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
 				}),
 			}),
-			prof(ENCHANTING, {
-				q(54473, {	-- Enchanted Formulae
-					["requireSkill"] = ENCHANTING,
-					["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
-					["coord"] = { 74.1, 11.4, BORALUS },
+			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
+					--["coord"] = { }
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
+					["g"] = {
+						r(264473, {	-- Kul Tiran Enchanting
+							["races"] = ALLIANCE_ONLY
+						}),
+						cat(1240, {	-- Conversions
+							r(287270, {["timeline"]={"added 8.1.0"}}),	-- Aqueous Invocation
+							r(286665, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Expulsion
+							r(286644, {["timeline"]={"added 8.1.0"}}),	-- Sanguinated Invocation
+						}),
+						cat(1251, {	-- Disenchants
+							r(290360, {["timeline"]={"added 8.1.0"}}),	-- Umbra Shatter
+							r(290361, {["timeline"]={"added 8.1.0"}}),	-- Veiled Shatter
+						}),
+						cat(1232, {	-- Follower Equipment
+							r(278418),	-- Disenchanting Rod
+						}),
+						cat(650, {	-- Glove Enchantments
+							r(255070, {	-- Kul Tiran Crafting
+								["races"] = ALLIANCE_ONLY
+							}),
+							r(255035, {	-- Kul Tiran Herbalism
+								["races"] = ALLIANCE_ONLY
+							}),
+							r(255040, {	-- Kul Tiran Mining
+								["races"] = ALLIANCE_ONLY
+							}),
+							r(255065, {	-- Kul Tiran Skinning
+								["races"] = ALLIANCE_ONLY
+							}),
+							r(255066, {	-- Kul Tiran Surveying
+								["races"] = ALLIANCE_ONLY
+							}),
+						}),
+						cat(651, {	-- Ring Enchantments,
+							r(255075),	-- Pact of Critical Strike [Rank 1]
+							r(255090),	-- Pact of Critical Strike [Rank 2]
+							r(255076),	-- Pact of Haste [Rank 1]
+							r(255091),	-- Pact of Haste [Rank 2]
+							r(255077),	-- Pact of Mastery [Rank 1]
+							r(255092),	-- Pact of Mastery [Rank 2]
+							r(255078),	-- Pact of Versatility [Rank 1]
+							r(255093),	-- Pact of Versatility [Rank 2]
+							r(255071),	-- Seal of Critical Strike [Rank 1]
+							r(255086),	-- Seal of Critical Strike [Rank 2]
+							r(255072),	-- Seal of Haste [Rank 1]
+							r(255087),	-- Seal of Haste [Rank 2]
+							r(255073),	-- Seal of Mastery [Rank 1]
+							r(255088),	-- Seal of Mastery [Rank 2]
+							r(255074),	-- Seal of Versatility [Rank 1]
+							r(255089),	-- Seal of Versatility [Rank 2]
+						}),
+						cat(1097, {	-- Wands
+							r(265110),	-- Enchanter's Sorcerous Scepter [Rank 1]
+							r(265111),	-- Enchanter's Sorcerous Scepter [Rank 2]
+							r(265106),	-- Enchanter's Umbral Wand
+							r(269715),	-- Honorable Combatant's Sorcerous Scepter [Rank 1]
+							r(282851, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Sorcerous Scepter [Rank 1]
+							r(305936, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
+						}),
+						cat(652, {	-- Weapon Enchantments
+							r(255103),	-- Coastal Surge [Rank 1]
+							r(255104),	-- Coastal Surge [Rank 2]
+							r(268907),	-- Deadly Navigation [Rank 1]
+							r(268908),	-- Deadly Navigation [Rank 2]
+							r(255141),	-- Gale-Force Striking [Rank 1]
+							r(255142),	-- Gale-Force Striking [Rank 2]
+							r(268901),	-- Masterful Navigation [Rank 1]
+							r(268902),	-- Masterful Navigation [Rank 2]
+							r(268894),	-- Quick Navigation [Rank 1]
+							r(268895),	-- Quick Navigation [Rank 2]
+							r(255110),	-- Siphoning [Rank 1]
+							r(255111),	-- Siphoning [Rank 2]
+							r(268913),	-- Stalwart Navigation [Rank 1]
+							r(268914),	-- Stalwart Navigation [Rank 2]
+							r(255129),	-- Torrent of Elements [Rank 1]
+							r(255130),	-- Torrent of Elements [Rank 2]
+							r(268852),	-- Versatile Navigation [Rank 1]
+							r(268878),	-- Versatile Navigation [Rank 2]
+						}),
+						cat(1098, {	-- Wrist Enchantments
+							r(271433),	-- Cooled Hearthing
+							r(271366),	-- Safe Hearthing
+							r(255068, {	-- Swift Hearthing
+								["races"] = ALLIANCE_ONLY
+							}),
+						}),
+					},
 				}),
-				q(54005, {	-- What the Drust Knew (A)
-					["provider"] = { "n", 136041 },	-- Emily Fairweather
-					["coord"] = { 74.2, 11.3, BORALUS },
-					["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
-					["requireSkill"] = ENCHANTING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53993, {	-- A Voice on the Wind (A)
-					["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
-					["coord"] = { 74.2, 11.4, BORALUS },
-					["sourceQuest"] = 54005,	-- What the Drust Knew (A)
-					["requireSkill"] = ENCHANTING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-			}),
+			})),
 			prof(ENGINEERING, {
 				q(54475, {	-- Engineered Blueprints
 					["requireSkill"] = ENGINEERING,

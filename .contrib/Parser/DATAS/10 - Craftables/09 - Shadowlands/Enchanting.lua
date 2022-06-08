@@ -4,13 +4,10 @@
 
 root("Craftables", tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 	prof(ENCHANTING, {
-		r(324750, {	-- Disenchant
-			["collectible"] = false,
-			["g"] = {
-				i(172232),	-- Eternal Crystal
-				i(172231),	-- Sacred Shard
-				i(172230),	-- Soul Dust
-			},
+		r(13262, {	-- Disenchant
+			i(172232),	-- Eternal Crystal
+			i(172231),	-- Sacred Shard
+			i(172230),	-- Soul Dust
 		}),
 		cat(1365, {	-- Boot Enchantments
 			i(172413),	-- Enchant Boots - Agile Soulwalker

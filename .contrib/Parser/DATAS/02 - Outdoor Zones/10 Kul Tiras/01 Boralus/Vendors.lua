@@ -11,202 +11,204 @@ _.Zones =
 					["coord"] = { 56.3, 27.2, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
-						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
+						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter [Rank 2] (RECIPE!)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
+						}),
+						i(171152, {	-- Formula: Uncanny Combatant's Sorcerous Scepter [Rank 3] (RECIPE!)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
+						}),
+						i(170586, {	-- Pattern: Uncanny Combatant's Bow [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(171152, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 3)
+						i(170587, {	-- Pattern: Uncanny Combatant's Bow [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170586, {	-- Pattern: Uncanny Combatant's Bow (Rank 2)
+						i(170420, {	-- Pattern: Uncanny Combatant's Leather Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170587, {	-- Pattern: Uncanny Combatant's Bow (Rank 3)
+						i(170421, {	-- Pattern: Uncanny Combatant's Leather Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170420, {	-- Pattern: Uncanny Combatant's Leather Armguards (Rank 2)
+						i(170414, {	-- Pattern: Uncanny Combatant's Leather Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170421, {	-- Pattern: Uncanny Combatant's Leather Armguards (Rank 3)
+						i(170415, {	-- Pattern: Uncanny Combatant's Leather Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170414, {	-- Pattern: Uncanny Combatant's Leather Gauntlets (Rank 2)
+						i(170416, {	-- Pattern: Uncanny Combatant's Leather Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170415, {	-- Pattern: Uncanny Combatant's Leather Gauntlets (Rank 3)
+						i(170417, {	-- Pattern: Uncanny Combatant's Leather Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170416, {	-- Pattern: Uncanny Combatant's Leather Leggings (Rank 2)
+						i(170412, {	-- Pattern: Uncanny Combatant's Leather Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170417, {	-- Pattern: Uncanny Combatant's Leather Leggings (Rank 3)
+						i(170413, {	-- Pattern: Uncanny Combatant's Leather Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170412, {	-- Pattern: Uncanny Combatant's Leather Treads (Rank 2)
+						i(170418, {	-- Pattern: Uncanny Combatant's Leather Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170413, {	-- Pattern: Uncanny Combatant's Leather Treads (Rank 3)
+						i(170419, {	-- Pattern: Uncanny Combatant's Leather Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170418, {	-- Pattern: Uncanny Combatant's Leather Waistguard (Rank 2)
+						i(170430, {	-- Pattern: Uncanny Combatant's Mail Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170419, {	-- Pattern: Uncanny Combatant's Leather Waistguard (Rank 3)
+						i(170431, {	-- Pattern: Uncanny Combatant's Mail Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170430, {	-- Pattern: Uncanny Combatant's Mail Armguards (Rank 2)
+						i(170424, {	-- Pattern: Uncanny Combatant's Mail Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170431, {	-- Pattern: Uncanny Combatant's Mail Armguards (Rank 3)
+						i(170425, {	-- Pattern: Uncanny Combatant's Mail Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170424, {	-- Pattern: Uncanny Combatant's Mail Gauntlets (Rank 2)
+						i(170426, {	-- Pattern: Uncanny Combatant's Mail Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170425, {	-- Pattern: Uncanny Combatant's Mail Gauntlets (Rank 3)
+						i(170427, {	-- Pattern: Uncanny Combatant's Mail Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170426, {	-- Pattern: Uncanny Combatant's Mail Leggings (Rank 2)
+						i(170422, {	-- Pattern: Uncanny Combatant's Mail Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170427, {	-- Pattern: Uncanny Combatant's Mail Leggings (Rank 3)
+						i(170423, {	-- Pattern: Uncanny Combatant's Mail Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170422, {	-- Pattern: Uncanny Combatant's Mail Treads (Rank 2)
+						i(170428, {	-- Pattern: Uncanny Combatant's Mail Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170423, {	-- Pattern: Uncanny Combatant's Mail Treads (Rank 3)
+						i(170429, {	-- Pattern: Uncanny Combatant's Mail Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170428, {	-- Pattern: Uncanny Combatant's Mail Waistguard (Rank 2)
+						i(170445, {	-- Pattern: Uncanny Combatant's Satin Belt [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170429, {	-- Pattern: Uncanny Combatant's Mail Waistguard (Rank 3)
+						i(170446, {	-- Pattern: Uncanny Combatant's Satin Belt [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170445, {	-- Pattern: Uncanny Combatant's Satin Belt (Rank 2)
+						i(170448, {	-- Pattern: Uncanny Combatant's Satin Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170446, {	-- Pattern: Uncanny Combatant's Satin Belt (Rank 3)
+						i(170449, {	-- Pattern: Uncanny Combatant's Satin Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170448, {	-- Pattern: Uncanny Combatant's Satin Boots (Rank 2)
+						i(170454, {	-- Pattern: Uncanny Combatant's Satin Bracers [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170449, {	-- Pattern: Uncanny Combatant's Satin Boots (Rank 3)
+						i(170455, {	-- Pattern: Uncanny Combatant's Satin Bracers [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170454, {	-- Pattern: Uncanny Combatant's Satin Bracers (Rank 2)
+						i(170444, {	-- Pattern: Uncanny Combatant's Satin Cloak [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170455, {	-- Pattern: Uncanny Combatant's Satin Bracers (Rank 3)
+						i(170447, {	-- Pattern: Uncanny Combatant's Satin Cloak [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170444, {	-- Pattern: Uncanny Combatant's Satin Cloak (Rank 2)
+						i(170450, {	-- Pattern: Uncanny Combatant's Satin Mittens [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170447, {	-- Pattern: Uncanny Combatant's Satin Cloak (Rank 3)
+						i(170451, {	-- Pattern: Uncanny Combatant's Satin Mittens [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170450, {	-- Pattern: Uncanny Combatant's Satin Mittens (Rank 2)
+						i(170452, {	-- Pattern: Uncanny Combatant's Satin Pants [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170451, {	-- Pattern: Uncanny Combatant's Satin Mittens (Rank 3)
+						i(170453, {	-- Pattern: Uncanny Combatant's Satin Pants [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170452, {	-- Pattern: Uncanny Combatant's Satin Pants (Rank 2)
+						i(170955, {	-- Plans: Uncanny Combatant's Cutlass [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170453, {	-- Pattern: Uncanny Combatant's Satin Pants (Rank 3)
+						i(170954, {	-- Plans: Uncanny Combatant's Cutlass [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170955, {	-- Plans: Uncanny Combatant's Cutlass (Rank 2)
+						i(170953, {	-- Plans: Uncanny Combatant's Deckpounder [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170954, {	-- Plans: Uncanny Combatant's Cutlass (Rank 3)
+						i(170952, {	-- Plans: Uncanny Combatant's Deckpounder [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170953, {	-- Plans: Uncanny Combatant's Deckpounder (Rank 2)
+						i(170402, {	-- Plans: Uncanny Combatant's Plate Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170952, {	-- Plans: Uncanny Combatant's Deckpounder (Rank 3)
+						i(170403, {	-- Plans: Uncanny Combatant's Plate Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170402, {	-- Plans: Uncanny Combatant's Plate Armguards (Rank 2)
+						i(170394, {	-- Plans: Uncanny Combatant's Plate Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170403, {	-- Plans: Uncanny Combatant's Plate Armguards (Rank 3)
+						i(170395, {	-- Plans: Uncanny Combatant's Plate Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170394, {	-- Plans: Uncanny Combatant's Plate Boots (Rank 2)
+						i(170396, {	-- Plans: Uncanny Combatant's Plate Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170395, {	-- Plans: Uncanny Combatant's Plate Boots (Rank 3)
+						i(170397, {	-- Plans: Uncanny Combatant's Plate Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170396, {	-- Plans: Uncanny Combatant's Plate Gauntlets (Rank 2)
+						i(170398, {	-- Plans: Uncanny Combatant's Plate Greaves [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170397, {	-- Plans: Uncanny Combatant's Plate Gauntlets (Rank 3)
+						i(170399, {	-- Plans: Uncanny Combatant's Plate Greaves [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170398, {	-- Plans: Uncanny Combatant's Plate Greaves (Rank 2)
+						i(170392, {	-- Plans: Uncanny Combatant's Plate Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170399, {	-- Plans: Uncanny Combatant's Plate Greaves (Rank 3)
+						i(170393, {	-- Plans: Uncanny Combatant's Plate Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170392, {	-- Plans: Uncanny Combatant's Plate Waistguard (Rank 2)
+						i(170947, {	-- Plans: Uncanny Combatant's Polearm [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170393, {	-- Plans: Uncanny Combatant's Plate Waistguard (Rank 3)
+						i(170946, {	-- Plans: Uncanny Combatant's Polearm [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170947, {	-- Plans: Uncanny Combatant's Polearm (Rank 2)
+						i(170949, {	-- Plans: Uncanny Combatant's Shanker [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170946, {	-- Plans: Uncanny Combatant's Polearm (Rank 3)
+						i(170948, {	-- Plans: Uncanny Combatant's Shanker [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170949, {	-- Plans: Uncanny Combatant's Shanker (Rank 2)
+						i(170400, {	-- Plans: Uncanny Combatant's Shield [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170948, {	-- Plans: Uncanny Combatant's Shanker (Rank 3)
+						i(170401, {	-- Plans: Uncanny Combatant's Shield [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170400, {	-- Plans: Uncanny Combatant's Shield (Rank 2)
+						i(170951, {	-- Plans: Uncanny Combatant's Spellblade [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170401, {	-- Plans: Uncanny Combatant's Shield (Rank 3)
+						i(170950, {	-- Plans: Uncanny Combatant's Spellblade [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(170951, {	-- Plans: Uncanny Combatant's Spellblade (Rank 2)
+						i(171159, {	-- Recipe: Uncanny Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(170950, {	-- Plans: Uncanny Combatant's Spellblade (Rank 3)
+						i(171158, {	-- Recipe: Uncanny Combatant's Intuitive Staff [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(171159, {	-- Recipe: Uncanny Combatant's Intuitive Staff (Rank 2)
+						i(174273, {	-- Schematic: Uncanny Combatant's Discombobulator [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(171158, {	-- Recipe: Uncanny Combatant's Intuitive Staff (Rank 3)
+						i(174274, {	-- Schematic: Uncanny Combatant's Discombobulator [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(174273, {	-- Schematic: Uncanny Combatant's Discombobulator (Rank 2)
+						i(174271, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(174274, {	-- Schematic: Uncanny Combatant's Discombobulator (Rank 3)
+						i(174272, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(174271, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer (Rank 2)
+						i(171059, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(174272, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer (Rank 3)
-							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
-						}),
-						i(171059, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 2)
-							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-						}),
-						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 3)
+						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
 					}),
@@ -1125,8 +1127,9 @@ _.Zones =
 					["coord"] = { 74.1, 11.4, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(168024, {	-- Recipe: Iwen's Enchanting Rod
+						i(168024, {	-- Recipe: Iwen's Enchanting Rod (RECIPE!)
 							["sourceQuest"] = 54002,	-- Putting it All Together
+							["timeline"] = { "added 8.1.5" },
 						}),
 					},
 				}),
@@ -1163,406 +1166,408 @@ _.Zones =
 					["coord"] = { 56.0, 26.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
-						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
+						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162440, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 3)
+						i(162440, {	-- Pattern: Honorable Combatant's Satin Belt [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162433, {	-- Pattern: Honorable Combatant's Satin Boots (Rank 2)
+						i(162433, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162434, {	-- Pattern: Honorable Combatant's Satin Boots (Rank 3)
+						i(162434, {	-- Pattern: Honorable Combatant's Satin Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers (Rank 2)
+						i(162441, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers (Rank 3)
+						i(162442, {	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak (Rank 2)
+						i(162431, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak (Rank 3)
+						i(162432, {	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens (Rank 2)
+						i(162435, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens (Rank 3)
+						i(162436, {	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162437, {	-- Pattern: Honorable Combatant's Satin Pants (Rank 2)
+						i(162437, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162438, {	-- Pattern: Honorable Combatant's Satin Pants (Rank 3)
+						i(162438, {	-- Pattern: Honorable Combatant's Satin Pants [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165340, {	-- Pattern: Sinister Combatant's Satin Belt (Rank 2)
+						i(165340, {	-- Pattern: Sinister Combatant's Satin Belt [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165341, {	-- Pattern: Sinister Combatant's Satin Belt (Rank 3)
+						i(165341, {	-- Pattern: Sinister Combatant's Satin Belt [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165334, {	-- Pattern: Sinister Combatant's Satin Boots (Rank 2)
+						i(165334, {	-- Pattern: Sinister Combatant's Satin Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165335, {	-- Pattern: Sinister Combatant's Satin Boots (Rank 3)
+						i(165335, {	-- Pattern: Sinister Combatant's Satin Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165342, {	-- Pattern: Sinister Combatant's Satin Bracers (Rank 2)
+						i(165342, {	-- Pattern: Sinister Combatant's Satin Bracers [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165343, {	-- Pattern: Sinister Combatant's Satin Bracers (Rank 3)
+						i(165343, {	-- Pattern: Sinister Combatant's Satin Bracers [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165332, {	-- Pattern: Sinister Combatant's Satin Cloak (Rank 2)
+						i(165332, {	-- Pattern: Sinister Combatant's Satin Cloak [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165333, {	-- Pattern: Sinister Combatant's Satin Cloak (Rank 3)
+						i(165333, {	-- Pattern: Sinister Combatant's Satin Cloak [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165336, {	-- Pattern: Sinister Combatant's Satin Mittens (Rank 2)
+						i(165336, {	-- Pattern: Sinister Combatant's Satin Mittens [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165337, {	-- Pattern: Sinister Combatant's Satin Mittens (Rank 3)
+						i(165337, {	-- Pattern: Sinister Combatant's Satin Mittens [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165338, {	-- Pattern: Sinister Combatant's Satin Pants (Rank 2)
+						i(165338, {	-- Pattern: Sinister Combatant's Satin Pants [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165339, {	-- Pattern: Sinister Combatant's Satin Pants (Rank 3)
+						i(165339, {	-- Pattern: Sinister Combatant's Satin Pants [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162417, {	-- Recipe: Honorable Combatant's Bow (Rank 2)
+						i(162417, {	-- Recipe: Honorable Combatant's Bow [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162418, {	-- Recipe: Honorable Combatant's Bow (Rank 3)
+						i(162418, {	-- Recipe: Honorable Combatant's Bow [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162277, {	-- Recipe: Honorable Combatant's Cutlass (Rank 2)
+						i(162277, {	-- Recipe: Honorable Combatant's Cutlass [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162278, {	-- Recipe: Honorable Combatant's Cutlass (Rank 3)
+						i(162278, {	-- Recipe: Honorable Combatant's Cutlass [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162279, {	-- Recipe: Honorable Combatant's Deckpounder (Rank 2)
+						i(162279, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162280, {	-- Recipe: Honorable Combatant's Deckpounder (Rank 3)
+						i(162280, {	-- Recipe: Honorable Combatant's Deckpounder [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel (Rank 2)
+						i(162353, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel (Rank 3)
+						i(162354, {	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(163024, {	-- Recipe: Honorable Combatant's Intuitive Staff (Rank 2)
+						i(163024, {	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(163025, {	-- Recipe: Honorable Combatant's Intuitive Staff (Rank 3)
+						i(163025, {	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards (Rank 2)
+						i(162398, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards (Rank 3)
+						i(162399, {	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets (Rank 2)
+						i(162392, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets (Rank 3)
+						i(162393, {	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings (Rank 2)
+						i(162394, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings (Rank 3)
+						i(162395, {	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162390, {	-- Recipe: Honorable Combatant's Leather Treads (Rank 2)
+						i(162390, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162391, {	-- Recipe: Honorable Combatant's Leather Treads (Rank 3)
+						i(162391, {	-- Recipe: Honorable Combatant's Leather Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard (Rank 2)
+						i(162396, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard (Rank 3)
+						i(162397, {	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards (Rank 2)
+						i(162410, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162411, {	-- Recipe: Honorable Combatant's Mail Armguards (Rank 3)
+						i(162411, {	-- Recipe: Honorable Combatant's Mail Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets (Rank 2)
+						i(162404, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets (Rank 3)
+						i(162405, {	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings (Rank 2)
+						i(162406, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162407, {	-- Recipe: Honorable Combatant's Mail Leggings (Rank 3)
+						i(162407, {	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162402, {	-- Recipe: Honorable Combatant's Mail Treads (Rank 2)
+						i(162402, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162403, {	-- Recipe: Honorable Combatant's Mail Treads (Rank 3)
+						i(162403, {	-- Recipe: Honorable Combatant's Mail Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard (Rank 2)
+						i(162408, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard (Rank 3)
+						i(162409, {	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards (Rank 2)
+						i(162271, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards (Rank 3)
+						i(162272, {	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162262, {	-- Recipe: Honorable Combatant's Plate Boots (Rank 2)
+						i(162262, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162263, {	-- Recipe: Honorable Combatant's Plate Boots (Rank 3)
+						i(162263, {	-- Recipe: Honorable Combatant's Plate Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets (Rank 2)
+						i(162265, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets (Rank 3)
+						i(162266, {	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves (Rank 2)
+						i(162267, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves (Rank 3)
+						i(162268, {	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162273, {	-- Recipe: Honorable Combatant's Plate Shield (Rank 2)
+						i(162273, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162274, {	-- Recipe: Honorable Combatant's Plate Shield (Rank 3)
+						i(162274, {	-- Recipe: Honorable Combatant's Plate Shield [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard (Rank 2)
+						i(162269, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard (Rank 3)
+						i(162270, {	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162283, {	-- Recipe: Honorable Combatant's Polearm (Rank 2)
+						i(162283, {	-- Recipe: Honorable Combatant's Polearm [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162284, {	-- Recipe: Honorable Combatant's Polearm (Rank 3)
+						i(162284, {	-- Recipe: Honorable Combatant's Polearm [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162281, {	-- Recipe: Honorable Combatant's Shanker (Rank 2)
+						i(162281, {	-- Recipe: Honorable Combatant's Shanker [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162282, {	-- Recipe: Honorable Combatant's Shanker (Rank 3)
+						i(162282, {	-- Recipe: Honorable Combatant's Shanker [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter (Rank 2)
+						i(162308, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter (Rank 3)
+						i(162309, {	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(162668, {	-- Recipe: Honorable Combatant's Spellblade (Rank 2)
+						i(162668, {	-- Recipe: Honorable Combatant's Spellblade [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(162669, {	-- Recipe: Honorable Combatant's Spellblade (Rank 3)
+						i(162669, {	-- Recipe: Honorable Combatant's Spellblade [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(166271, {	-- Recipe: Potion of the Unveiling Eye (Rank 2)
+						i(166271, {	-- Recipe: Potion of the Unveiling Eye [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(166272, {	-- Recipe: Potion of the Unveiling Eye (Rank 3)
+						i(166272, {	-- Recipe: Potion of the Unveiling Eye [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165330, {	-- Recipe: Sinister Combatant's Bow (Rank 2)
+						i(165330, {	-- Recipe: Sinister Combatant's Bow [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165331, {	-- Recipe: Sinister Combatant's Bow (Rank 3)
+						i(165331, {	-- Recipe: Sinister Combatant's Bow [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165290, {	-- Recipe: Sinister Combatant's Cutlass (Rank 2)
+						i(165290, {	-- Recipe: Sinister Combatant's Cutlass [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165291, {	-- Recipe: Sinister Combatant's Cutlass (Rank 3)
+						i(165291, {	-- Recipe: Sinister Combatant's Cutlass [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165292, {	-- Recipe: Sinister Combatant's Deckpounder (Rank 2)
+						i(165292, {	-- Recipe: Sinister Combatant's Deckpounder [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165293, {	-- Recipe: Sinister Combatant's Deckpounder (Rank 3)
+						i(165293, {	-- Recipe: Sinister Combatant's Deckpounder [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165306, {	-- Recipe: Sinister Combatant's Etched Vessel (Rank 2)
+						i(165306, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165307, {	-- Recipe: Sinister Combatant's Etched Vessel (Rank 3)
+						i(165307, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165308, {	-- Recipe: Sinister Combatant's Intuitive Staff (Rank 2)
+						i(165308, {	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165309, {	-- Recipe: Sinister Combatant's Intuitive Staff (Rank 3)
+						i(165309, {	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165318, {	-- Recipe: Sinister Combatant's Leather Armguards (Rank 2)
+						i(165318, {	-- Recipe: Sinister Combatant's Leather Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165319, {	-- Recipe: Sinister Combatant's Leather Armguards (Rank 3)
+						i(165319, {	-- Recipe: Sinister Combatant's Leather Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165312, {	-- Recipe: Sinister Combatant's Leather Gauntlets (Rank 2)
+						i(165312, {	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165313, {	-- Recipe: Sinister Combatant's Leather Gauntlets (Rank 3)
+						i(165313, {	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165314, {	-- Recipe: Sinister Combatant's Leather Leggings (Rank 2)
+						i(165314, {	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165315, {	-- Recipe: Sinister Combatant's Leather Leggings (Rank 3)
+						i(165315, {	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165310, {	-- Recipe: Sinister Combatant's Leather Treads (Rank 2)
+						i(165310, {	-- Recipe: Sinister Combatant's Leather Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165311, {	-- Recipe: Sinister Combatant's Leather Treads (Rank 3)
+						i(165311, {	-- Recipe: Sinister Combatant's Leather Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165316, {	-- Recipe: Sinister Combatant's Leather Waistguard (Rank 2)
+						i(165316, {	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165317, {	-- Recipe: Sinister Combatant's Leather Waistguard (Rank 3)
+						i(165317, {	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165328, {	-- Recipe: Sinister Combatant's Mail Armguards (Rank 2)
+						i(165328, {	-- Recipe: Sinister Combatant's Mail Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165329, {	-- Recipe: Sinister Combatant's Mail Armguards (Rank 3)
+						i(165329, {	-- Recipe: Sinister Combatant's Mail Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165322, {	-- Recipe: Sinister Combatant's Mail Gauntlets (Rank 2)
+						i(165322, {	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165323, {	-- Recipe: Sinister Combatant's Mail Gauntlets (Rank 3)
+						i(165323, {	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165324, {	-- Recipe: Sinister Combatant's Mail Leggings (Rank 2)
+						i(165324, {	-- Recipe: Sinister Combatant's Mail Leggings [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165325, {	-- Recipe: Sinister Combatant's Mail Leggings (Rank 3)
+						i(165325, {	-- Recipe: Sinister Combatant's Mail Leggings [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165320, {	-- Recipe: Sinister Combatant's Mail Treads (Rank 2)
+						i(165320, {	-- Recipe: Sinister Combatant's Mail Treads [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165321, {	-- Recipe: Sinister Combatant's Mail Treads (Rank 3)
+						i(165321, {	-- Recipe: Sinister Combatant's Mail Treads [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165326, {	-- Recipe: Sinister Combatant's Mail Waistguard (Rank 2)
+						i(165326, {	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165327, {	-- Recipe: Sinister Combatant's Mail Waistguard (Rank 3)
+						i(165327, {	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165288, {	-- Recipe: Sinister Combatant's Plate Armguards (Rank 2)
+						i(165288, {	-- Recipe: Sinister Combatant's Plate Armguards [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165289, {	-- Recipe: Sinister Combatant's Plate Armguards (Rank 3)
+						i(165289, {	-- Recipe: Sinister Combatant's Plate Armguards [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165278, {	-- Recipe: Sinister Combatant's Plate Boots (Rank 2)
+						i(165278, {	-- Recipe: Sinister Combatant's Plate Boots [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165279, {	-- Recipe: Sinister Combatant's Plate Boots (Rank 3)
+						i(165279, {	-- Recipe: Sinister Combatant's Plate Boots [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165280, {	-- Recipe: Sinister Combatant's Plate Gauntlets (Rank 2)
+						i(165280, {	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165281, {	-- Recipe: Sinister Combatant's Plate Gauntlets (Rank 3)
+						i(165281, {	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165282, {	-- Recipe: Sinister Combatant's Plate Greaves (Rank 2)
+						i(165282, {	-- Recipe: Sinister Combatant's Plate Greaves [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165283, {	-- Recipe: Sinister Combatant's Plate Greaves (Rank 3)
+						i(165283, {	-- Recipe: Sinister Combatant's Plate Greaves [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165284, {	-- Recipe: Sinister Combatant's Plate Shield (Rank 2)
+						i(165284, {	-- Recipe: Sinister Combatant's Plate Shield [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165285, {	-- Recipe: Sinister Combatant's Plate Shield (Rank 3)
+						i(165285, {	-- Recipe: Sinister Combatant's Plate Shield [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165286, {	-- Recipe: Sinister Combatant's Plate Waistguard (Rank 2)
+						i(165286, {	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165287, {	-- Recipe: Sinister Combatant's Plate Waistguard (Rank 3)
+						i(165287, {	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165298, {	-- Recipe: Sinister Combatant's Polearm (Rank 2)
+						i(165298, {	-- Recipe: Sinister Combatant's Polearm [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165299, {	-- Recipe: Sinister Combatant's Polearm (Rank 3)
+						i(165299, {	-- Recipe: Sinister Combatant's Polearm [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165296, {	-- Recipe: Sinister Combatant's Shanker (Rank 2)
+						i(165296, {	-- Recipe: Sinister Combatant's Shanker [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165297, {	-- Recipe: Sinister Combatant's Shanker (Rank 3)
+						i(165297, {	-- Recipe: Sinister Combatant's Shanker [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165300, {	-- Recipe: Sinister Combatant's Sorcerous Scepter (Rank 2)
+						i(165300, {	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
-						i(165301, {	-- Recipe: Sinister Combatant's Sorcerous Scepter (Rank 3)
+						i(165301, {	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
-						i(165294, {	-- Recipe: Sinister Combatant's Spellblade (Rank 2)
+						i(165294, {	-- Recipe: Sinister Combatant's Spellblade [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165295, {	-- Recipe: Sinister Combatant's Spellblade (Rank 3)
+						i(165295, {	-- Recipe: Sinister Combatant's Spellblade [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(163020, {	-- Schematic: Honorable Combatant's Discombobulator (Rank 2)
+						i(163020, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(163021, {	-- Schematic: Honorable Combatant's Discombobulator (Rank 3)
+						i(163021, {	-- Schematic: Honorable Combatant's Discombobulator [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer (Rank 2)
+						i(163022, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer (Rank 3)
+						i(163023, {	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165302, {	-- Schematic: Sinister Combatant's Discombobulator (Rank 2)
+						i(165302, {	-- Schematic: Sinister Combatant's Discombobulator [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165303, {	-- Schematic: Sinister Combatant's Discombobulator (Rank 3)
+						i(165303, {	-- Schematic: Sinister Combatant's Discombobulator [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-						i(165304, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer (Rank 2)
+						i(165304, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						i(165305, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer (Rank 3)
+						i(165305, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
 					}),
@@ -2366,20 +2371,20 @@ _.Zones =
 								az(18, 1),	-- Artifice of Time (Rank 1)
 							},
 						}),
-						i(168921, {	-- Azerite-Infused Timequartz (Rank 2)
+						i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							["g"] = {
-								az(18, 2),	-- Artifice of Time (Rank 2)
+								az(18, 2),	-- Artifice of Time [Rank 2]
 							},
 						}),
-						i(168922, {	-- Azerite-Fueled Timequartz (Rank 3)
+						i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							["g"] = {
-								az(18, 3),	-- Artifice of Time (Rank 3)
+								az(18, 3),	-- Artifice of Time [Rank 3]
 							},
 						}),
 						i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
@@ -2398,18 +2403,18 @@ _.Zones =
 								az(23, 1),	-- Blood of the Enemy (Rank 1)
 							},
 						}),
-						i(168443, {	-- Agitated Blood of the Dominated (Rank 2)
+						i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							["g"] = {
-								az(23, 2),	-- Blood of the Enemy (Rank 2)
+								az(23, 2),	-- Blood of the Enemy [Rank 2]
 							},
 						}),
-						i(168444, {	-- Churning Blood of the Conquered (Rank 3)
+						i(168444, {	-- Churning Blood of the Conquered [Rank 3]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 							["g"] = {
-								az(23, 3),	-- Blood of the Enemy (Rank 3)
+								az(23, 3),	-- Blood of the Enemy [Rank 3]
 							},
 						}),
 						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
@@ -2428,20 +2433,20 @@ _.Zones =
 								az(3, 1),	-- Sphere of Suppression (Rank 1)
 							},
 						}),
-						i(168579, {	-- Sphere of Unrestrained Fury (Rank 2)
+						i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
 							["g"] = {
-								az(3, 2),	-- Sphere of Suppression (Rank 2)
+								az(3, 2),	-- Sphere of Suppression [Rank 2]
 							},
 						}),
-						i(168580, {	-- Sphere of Leeched Mobility (Rank 3)
+						i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
 							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 							["g"] = {
-								az(3, 3),	-- Sphere of Suppression (Rank 3)
+								az(3, 3),	-- Sphere of Suppression [Rank 3]
 							},
 						}),
 						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
@@ -2493,19 +2498,19 @@ _.Zones =
 						i(163200, {	-- Cursed Spyglass (TOY!)
 							["cost"] = 18000000,	-- 1,800g
 						}),
-						i(162380, {	-- Design: Tidal Amethyst Loop (Rank 3)
+						i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161570, {	-- First Lieutenant's Ceremonial Belt
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162304, {	-- Formula: Enchant Ring - Pact of Mastery (Rank 3)
+						i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation (Rank 3)
+						i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162316, {	-- Formula: Enchant Weapon - Siphoning (Rank 3)
+						i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(163201, {	-- Gnoll Targetting Barrel (TOY!)
@@ -2526,25 +2531,25 @@ _.Zones =
 						i(161573, {	-- Proudmoore Marine's Legplates
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(163316, {	-- Recipe: Battle Potion of Intellect (Rank 3)
+						i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162254, {	-- Recipe: Coastal Mana Potion (Rank 3)
+						i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162359, {	-- Recipe: Contract: Proudmoore Admiralty (Rank 2)
+						i(162359, {	-- Recipe: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162134, {	-- Recipe: Flask of the Vast Horizon (Rank 3)
+						i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162414, {	-- Recipe: Hardened Tempest Knuckles (Rank 3)
+						i(162414, {	-- Recipe: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162413, {	-- Recipe: Mistscale Knuckles (Rank 3)
+						i(162413, {	-- Recipe: Mistscale Knuckles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162130, {	-- Recipe: Potion of Bursting Blood (Rank 3)
+						i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161911, {	-- Admiralty Stallion (MOUNT!)
@@ -2556,13 +2561,13 @@ _.Zones =
 						i(161567, {	-- Sailing Master's Sash
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 2)
+						i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 3)
+						i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166277, {	-- Schematic: Unstable Temporal Time Shift (Rank 2)
+						i(166277, {	-- Schematic: Unstable Temporal Time Shift [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(161572, {	-- Yardarm Sharpshooter's Boots
@@ -2700,13 +2705,13 @@ _.Zones =
 						i(161588, {	-- Bracers of the Allied Earthbinders
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162378, {	-- Design: Amberblaze Loop (Rank 3)
+						i(162378, {	-- Design: Amberblaze Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161590, {	-- Elite Footman's Legplates
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike (Rank 3)
+						i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161585, {	-- Gloves of the Forward Skirmisher
@@ -2725,55 +2730,55 @@ _.Zones =
 						i(165720, {	-- Monelite Whetstone
 							["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
 						}),
-						i(163320, {	-- Recipe: Battle Potion of Strength (Rank 3)
+						i(163320, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166278, {	-- Recipe: Contract: 7th Legion (Rank 2)
+						i(166278, {	-- Recipe: Contract: 7th Legion [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter (Rank 3)
+						i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162138, {	-- Recipe: Endless Tincture of Fractional Power (Rank 3)
+						i(162138, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162132, {	-- Recipe: Flask of the Currents (Rank 3)
+						i(162132, {	-- Recipe: Flask of the Currents [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162128, {	-- Recipe: Steelskin Potion (Rank 3)
+						i(162128, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162275, {	-- Recipe: Stormsteel Dagger (Rank 3)
+						i(162275, {	-- Recipe: Stormsteel Dagger [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162670, {	-- Recipe: Stormsteel Saber (Rank 3)
+						i(162670, {	-- Recipe: Stormsteel Saber [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162261, {	-- Recipe: Stormsteel Shield (Rank 3)
+						i(162261, {	-- Recipe: Stormsteel Shield [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162276, {	-- Recipe: Stormsteel Spear (Rank 3)
+						i(162276, {	-- Recipe: Stormsteel Spear [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162139, {	-- Recipe: Surging Alchemist Stone (Rank 3)
+						i(162139, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161589, {	-- Royal Knight's Sabatons
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs (Rank 2)
+						i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs (Rank 3)
+						i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer (Rank 3)
+						i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162344, {	-- Schematic: Monelite Scope of Alacrity (Rank 3)
+						i(162344, {	-- Schematic: Monelite Scope of Alacrity [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162345, {	-- Schematic: Precision Attitude Adjuster (Rank 3)
+						i(162345, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(160539, {	-- Tabard of the 7th Legion

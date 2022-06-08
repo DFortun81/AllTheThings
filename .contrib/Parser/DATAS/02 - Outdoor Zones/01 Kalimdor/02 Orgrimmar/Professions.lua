@@ -185,7 +185,7 @@ root("Zones", m(KALIMDOR, {
 						r(7412),	-- Enchanting (Journeyman)
 						r(7413),	-- Enchanting (Expert)
 						r(13920, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Enchanting (Artisan)
-						r(13262, {["collectible"]=false}),	-- Disenchant
+						r(13262),	-- Disenchant
 						cat(690, {	-- Boot Enchantments
 							r(13935, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
 							r(20023, {["timeline"]={"added 2.3.0"}}),	-- Greater Agility

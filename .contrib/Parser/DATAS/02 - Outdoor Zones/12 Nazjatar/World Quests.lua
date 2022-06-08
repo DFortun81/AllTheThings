@@ -355,48 +355,72 @@ _.Zones =
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169535),	-- Formula: Force Multiplier [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56820, {	-- Work Order: Enchant Weapon - Force Multiplier (H)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169535),	-- Formula: Force Multiplier [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56824, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (A)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169534),	-- Formula: Machinist's Brilliance [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56821, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (H)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169534),	-- Formula: Machinist's Brilliance [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(170213),	-- Formula: Naga Hide [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56818, {	-- Work Order: Enchant Weapon - Naga Hide (H)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(170213),	-- Formula: Naga Hide [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56825, {	-- Work Order: Enchant Weapon - Oceanic Restoration (A)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169536),	-- Formula: Oceanic Restoration [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56819, {	-- Work Order: Enchant Weapon - Oceanic Restoration (H)
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENCHANTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(169536),	-- Formula: Oceanic Restoration [Rank 3] (RECIPE!)
+					},
 				}),
 				q(56570, {	-- Work Order: Greater Flask of the Currents (A)
 					["isWorldQuest"] = true,
@@ -471,19 +495,15 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 			}),
-			i(169535),	-- Formula: Force Multiplier (Rank 3)
-			i(169534),	-- Formula: Machinist's Brilliance (Rank 3)
-			i(170213),	-- Formula: Naga Hide (Rank 3)
-			i(169536),	-- Formula: Oceanic Restoration (Rank 3)
-			i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
-			i(168331),	-- Recipe: Baked Port Tato (Rank 3)
-			i(168333),	-- Recipe: Bil'Tong (Rank 3)
-			i(168334),	-- Recipe: Fragrant Kakavia (Rank 3)
-			i(168330),	-- Recipe: Mech-Dowel's "Big Mech" (Rank 3)
-			i(169500),	-- Recipe: Greater Flask of the Currents (Rank 3)
-			i(169501),	-- Recipe: Greater Flask of Endless Fathoms (Rank 3)
-			i(169503),	-- Recipe: Greater Flask of the Undertow (Rank 3)
-			i(169502),	-- Recipe: Greater Flask of the Vast Horizon (Rank 3)
+			i(168332),	-- Recipe: Abyssal-Fried Rissole [Rank 3] (RECIPE!)
+			i(168331),	-- Recipe: Baked Port Tato [Rank 3] (RECIPE!)
+			i(168333),	-- Recipe: Bil'Tong [Rank 3] (RECIPE!)
+			i(168334),	-- Recipe: Fragrant Kakavia [Rank 3] (RECIPE!)
+			i(168330),	-- Recipe: Mech-Dowel's "Big Mech" [Rank 3] (RECIPE!)
+			i(169500),	-- Recipe: Greater Flask of the Currents [Rank 3] (RECIPE!)
+			i(169501),	-- Recipe: Greater Flask of Endless Fathoms [Rank 3] (RECIPE!)
+			i(169503),	-- Recipe: Greater Flask of the Undertow [Rank 3] (RECIPE!)
+			i(169502),	-- Recipe: Greater Flask of the Vast Horizon [Rank 3] (RECIPE!)
 		}),
 	}),
 };

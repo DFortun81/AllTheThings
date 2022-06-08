@@ -38,7 +38,7 @@ _.Zones =
 						i(161596, {	-- Coven Buster's Waistguard
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162381, {	-- Design: Royal Quartz Loop (Rank 3)
+						i(162381, {	-- Design: Royal Quartz Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161591, {	-- Eternal Flamekeeper's Handwraps
@@ -47,13 +47,13 @@ _.Zones =
 						i(161593, {	-- Footpads of the Deft Exorcist
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162305, {	-- Formula: Enchant Ring - Pact of Versatility (Rank 3)
+						i(162305, {	-- Formula: Enchant Ring - Pact of Versatility [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162318, {	-- Formula: Enchant Weapon - Gale-Force Striking (Rank 3)
+						i(162318, {	-- Formula: Enchant Weapon - Gale-Force Striking [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162320, {	-- Formula: Enchant Weapon - Versatile Navigation (Rank 3)
+						i(162320, {	-- Formula: Enchant Weapon - Versatile Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161597, {	-- Gauntlets of Renewed Resolution
@@ -75,31 +75,31 @@ _.Zones =
 						i(160541, {	-- Order of Embers Tabard
 							["cost"] = 6250000,	-- 625g
 						}),
-						i(162421, {	-- Pattern: Deep Sea Bag (Rank 3)
+						i(162421, {	-- Pattern: Deep Sea Bag [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162427, {	-- Pattern: Embroidered Deep Sea Cloak (Rank 3)
+						i(162427, {	-- Pattern: Embroidered Deep Sea Cloak [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(163491, {	-- Pristine Falcon Feather (PET!)
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
-						i(163314, {	-- Recipe: Battle Potion of Agility (Rank 3)
+						i(163314, {	-- Recipe: Battle Potion of Agility [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162256, {	-- Recipe: Coastal Rejuvenation Potion (Rank 3)
+						i(162256, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162361, {	-- Recipe: Contract: Order of Embers (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162135, {	-- Recipe: Flask of the Undertow (Rank 3)
+						i(162135, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162131, {	-- Recipe: Potion of Rising Death (Rank 3)
+						i(162131, {	-- Recipe: Potion of Rising Death [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162412, {	-- Recipe: Recurve Bow of the Strands (Rank 3)
+						i(162412, {	-- Recipe: Recurve Bow of the Strands [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161908, {	-- Dusky Waycrest Gryphon (MOUNT!)
@@ -111,10 +111,10 @@ _.Zones =
 						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 3)
+						i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162322, {	-- Schematic: Frost-Laced Ammunition (Rank 3)
+						i(162322, {	-- Schematic: Frost-Laced Ammunition [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162624, {	-- Tome of Hex: Wicker Mongrel

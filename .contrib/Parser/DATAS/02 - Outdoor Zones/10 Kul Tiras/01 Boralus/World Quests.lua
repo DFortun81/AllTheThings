@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KULTIRAS, {
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3]
+					i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52356, {	-- Work Order: Enchant Weapon - Torrent of Elements
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(KULTIRAS, {
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3]
+					i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52363, {	-- Work Order: Incendiary Ammunition

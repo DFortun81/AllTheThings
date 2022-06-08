@@ -911,17 +911,14 @@ root("Craftables", tier(CLASSIC_TIER, {
 	}),
 	prof(ENCHANTING, {
 		r(13262, {	-- Disenchant
-			["collectible"]=false,
-			["g"] = {
-				i(16203),	-- Greater Eternal Essence
-				i(10939),	-- Greater Magic Essence
-				i(16204),	-- Illusion Dust
-				i(14344),	-- Large Brilliant Shard
-				i(16202),	-- Lesser Eternal Essence
-				i(10938),	-- Lesser Magic Essence
-				i(14343),	-- Small Brilliant Shard
-				i(10940),	-- Strange Dust
-			},
+			i(16203),	-- Greater Eternal Essence
+			i(10939),	-- Greater Magic Essence
+			i(16204),	-- Illusion Dust
+			i(14344),	-- Large Brilliant Shard
+			i(16202),	-- Lesser Eternal Essence
+			i(10938),	-- Lesser Magic Essence
+			i(14343),	-- Small Brilliant Shard
+			i(10940),	-- Strange Dust
 		}),
 		cat(690, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
 			i(38844),	-- Enchant Boots - Agility

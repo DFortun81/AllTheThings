@@ -19,10 +19,10 @@ _.Zones =
 						i(163513, {	-- Cou'pa (PET!)
 							["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
 						}),
-						i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike (Rank 3)
+						i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162301, {	-- Formula: Enchant Ring - Seal of Versatility (Rank 3)
+						i(162301, {	-- Formula: Enchant Ring - Seal of Versatility [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161529, {	-- Girdle of the Scroll-Sages
@@ -40,10 +40,10 @@ _.Zones =
 						i(162288, {	-- Recipe: Bountiful Captain's Feast (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162289, {	-- Recipe: Bountiful Captain's Feast (Rank 3)
+						i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162358, {	-- Recipe: Codex of the Quiet Mind (Rank 3)
+						i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162373, {	-- Recipe: Contract: Champions of Azeroth (Rank 2)
@@ -52,37 +52,37 @@ _.Zones =
 						i(162371, {	-- Recipe: Contract: Tortollan Seekers (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162377, {	-- Recipe: Darkmoon Card of War (Rank 3)
+						i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162136, {	-- Recipe: Endless Tincture of Renewed Combat (Rank 3)
+						i(162136, {	-- Recipe: Endless Tincture of Renewed Combat [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162287, {	-- Recipe: Galley Banquet (Rank 3)
+						i(162287, {	-- Recipe: Galley Banquet [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162292, {	-- Recipe: Grilled Catfish (Rank 3)
+						i(162292, {	-- Recipe: Grilled Catfish [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162352, {	-- Recipe: Inscribed Vessel of Mysticism (Rank 3)
+						i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(166263, {	-- Recipe: Sanguinated Feast (Rank 2)
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162293, {	-- Recipe: Seasoned Loins (Rank 3)
+						i(162293, {	-- Recipe: Seasoned Loins [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166368, {	-- Recipe: Seasoned Steak and Potatoes (Rank 3)
+						i(166368, {	-- Recipe: Seasoned Steak and Potatoes [Rank 3] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162137, {	-- Recipe: Siren's Alchemist Stone (Rank 3)
+						i(162137, {	-- Recipe: Siren's Alchemist Stone [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162376, {	-- Recipe: Tome of the Quiet Mind (Rank 3)
+						i(162376, {	-- Recipe: Tome of the Quiet Mind [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166367, {	-- Recipe: Wild Berry Bread (Rank 3)
+						i(166367, {	-- Recipe: Wild Berry Bread [Rank 3] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(161494, {	-- Sea-Treated Footwraps
@@ -97,7 +97,7 @@ _.Zones =
 						i(160543, {	-- Tabard of the Tortollan Seekers
 							["cost"] = 6250000,	-- 625g
 						}),
-						i(162023, {	-- Technique: Glyph of the Dolphin (Rank 3)
+						i(162023, {	-- Technique: Glyph of the Dolphin [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161544, {	-- Vambraces of a Thousand Year Toil
@@ -194,22 +194,22 @@ _.Zones =
 						i(163463, {	-- Dead Ringer (TOY!)
 							["cost"] = 18000000,	-- 1,800g
 						}),
-						i(162382, {	-- Design: Laribole Staff of Alacrity (Rank 3)
+						i(162382, {	-- Design: Laribole Staff of Alacrity [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162379, {	-- Design: Owlseye Loop (Rank 3)
+						i(162379, {	-- Design: Owlseye Loop [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162385, {	-- Design: Scarlet Diamond Staff of Intuition (Rank 3)
+						i(162385, {	-- Design: Scarlet Diamond Staff of Intuition [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162303, {	-- Formula: Enchant Ring - Pact of Haste (Rank 3)
+						i(162303, {	-- Formula: Enchant Ring - Pact of Haste [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162313, {	-- Formula: Enchant Weapon - Deadly Navigation (Rank 3)
+						i(162313, {	-- Formula: Enchant Weapon - Deadly Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162312, {	-- Formula: Enchant Weapon - Stalwart Navigation (Rank 3)
+						i(162312, {	-- Formula: Enchant Weapon - Stalwart Navigation [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161575, {	-- Handwraps of Deep Faith
@@ -224,19 +224,19 @@ _.Zones =
 						i(163490, {	-- Pair of Bee Wings (PET!)
 							["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
 						}),
-						i(163318, {	-- Recipe: Battle Potion of Stamina (Rank 3)
+						i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162255, {	-- Recipe: Coastal Healing Potion (Rank 3)
+						i(162255, {	-- Recipe: Coastal Healing Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162363, {	-- Recipe: Contract: Storm's Wake (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162133, {	-- Recipe: Flask of Endless Fathoms	(Rank 3)
+						i(162133, {	-- Recipe: Flask of Endless Fathoms	[Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162129, {	-- Recipe: Potion of Replenishment (Rank 3)
+						i(162129, {	-- Recipe: Potion of Replenishment [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161912, {	-- Dapple Gray (MOUNT!)
@@ -248,16 +248,16 @@ _.Zones =
 						i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 2)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 3)
+						i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162342, {	-- Schematic: Deployable Attire Rearranger [Rank 3
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162341, {	-- Schematic: Interdimensional Companion Repository (Rank 3)
+						i(162341, {	-- Schematic: Interdimensional Companion Repository [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162337, {	-- Schematic: Organic Discombobulation Grenade (Rank 3)
+						i(162337, {	-- Schematic: Organic Discombobulation Grenade [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(161576, {	-- Sea Priest's Waistcord

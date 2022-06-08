@@ -276,7 +276,6 @@ select(2, ...).CategoryNames = {
 	[643] = "Oils",
 	[644] = "Materials",
 	[645] = "Special",
-	[647] = "Zandalari Enchanting",
 	[650] = "Glove Enchantments",
 	[651] = "Ring Enchantments",
 	[652] = "Weapon Enchantments",
