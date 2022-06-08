@@ -135,7 +135,8 @@ _.Zones =
 						i(94126),	-- Zandalari Kneebiter
 						i(94232, {	-- Ancient Tome of Dinomancy
 							["classes"] = { HUNTER },
-							--["spellID"] = 138430,	-- Ancient Zandalari Knowledge
+							["spellID"] = 138430,	-- Ancient Zandalari Knowledge
+							["f"] = RECIPES,
 						}),
 					}),
 				}),

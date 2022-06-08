@@ -1255,6 +1255,7 @@ app.L = {
 		[-806] = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",						-- Waist of Time
 		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
 		[-808] = 2998185,																	-- Bound Shadehound
+		[-809] = 3954409,																	-- Stored Wisdom Device
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
@@ -1786,6 +1787,7 @@ app.L = {
 		[-806] = "Waist of Time",												-- Waist of Time
 		[-807] = GetSpellInfo(261395),											-- The Hivemind
 		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
+		[-809] = "Stored Wisdom Device",										-- Stored Wisdom Device
 	-- More Secrets are likely to come dont use IDs here
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
