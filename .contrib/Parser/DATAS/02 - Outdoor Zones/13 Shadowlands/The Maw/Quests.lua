@@ -757,7 +757,6 @@ root("HiddenQuestTriggers", {
 	q(64315),	-- Ve'nari paragon chest
 	q(64627),	-- popped after turning in 'Setting the Ground Rules' (62882) on a fresh alt
 	q(64149),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop)
-	q(65470),	-- Dialog option with Ve'nari's Echo
 });
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

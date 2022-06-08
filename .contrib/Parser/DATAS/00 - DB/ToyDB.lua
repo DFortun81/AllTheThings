@@ -1040,7 +1040,7 @@ i(190196);	-- Enlightened Hearthstone
 -- PATCH 9.2.5 --
 -----------------
 i(192099);  -- Earpieces of Tranquil Focus
+i(192485);	-- Stored Wisdom Device
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
-i(192485);	-- Stored Wisdom Device
