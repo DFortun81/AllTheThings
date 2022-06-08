@@ -1261,7 +1261,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 60.0, 74.8, WESTFALL },
 					},
 					-- #else
-					["coord"] = { 51.8, 24.6, WESTFALL },
+					["coord"] = { 37.6, 32.8, WESTFALL },
 					-- #endif
 					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
