@@ -332,13 +332,3 @@ end]];
 -- Wrath Recipes
 itemrecipe(39152, 45546, "added 3.0.1.8714", WRATH_PHASE_ONE);	-- Manual: Heavy Frostweave Bandage
 -- #endif
-
--- These items never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(RECIPES, {
-		i(16085),	-- Artisan First Aid - Heal Thyself
-		i(8547),	-- Formula: Powerful Smelling Salts
-		i(23689),	-- Manual: Crystal Infused Bandage
-		i(23690),	-- Recipe: Crystal Flake Throat Lozenge
-	}),
-}));

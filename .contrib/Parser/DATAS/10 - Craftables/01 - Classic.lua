@@ -2717,33 +2717,44 @@ root("Craftables", tier(CLASSIC_TIER, {
 	}),
 }));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	prof(BLACKSMITHING, {
-		-- #if BEFORE 7.1.5.23360
-		i(12769, {	-- Bleakwood Hew
-			["timeline"] = {
-				"created 1.11.1.5462",	-- Was originally never implemented.
-				"added 7.1.5.23360",
-			},
+	n(PROFESSIONS, {
+		prof(BLACKSMITHING, {
+			tier(CLASSIC_TIER, {
+				-- #if BEFORE 7.1.5.23360
+				i(12769, {	-- Bleakwood Hew
+					["timeline"] = {
+						"created 1.11.1.5462",	-- Was originally never implemented.
+						"added 7.1.5.23360",
+					},
+				}),
+				i(12802, {	-- Darkspear
+					["timeline"] = {
+						"created 1.12.1.6898",	-- Was originally never implemented.
+						"added 7.1.5.23360",
+					},
+				}),
+				-- #endif
+				-- #if BEFORE TBC
+				i(12625),	-- Dawnbringer Shoulders
+				-- #endif
+				i(12795, {	-- Blood Talon
+					["timeline"] = { "created 1.12.1.6898" },
+				}),
+				i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
+				i(13262),	-- Ashbringer
+				i(12772),	-- Inlaid Thorium Hammer
+				i(12779),	-- Rune Edge
+				i(12764),	-- Thorium Greatsword
+				i(6730),	-- Ironforge Chain
+				i(6733),	-- Ironforge Gauntlets
+				i(7925),	-- Mithril Scale Gloves
+			}),
 		}),
-		-- #endif
-		i(12795, {	-- Blood Talon
-			["timeline"] = { "created 1.12.1.6898" },
+		prof(LEATHERWORKING, {
+			tier(CLASSIC_TIER, {
+				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
+				i(15141),	-- Onyxia Scale Breastplate
+			}),
 		}),
-		-- #if BEFORE 7.1.5.23360
-		i(12802, {	-- Darkspear
-			["timeline"] = {
-				"created 1.12.1.6898",	-- Was originally never implemented.
-				"added 7.1.5.23360",
-			},
-		}),
-		-- #endif
-		-- #if BEFORE TBC
-		i(12625),	-- Dawnbringer Shoulders
-		-- #endif
-		i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
-	}),
-	prof(LEATHERWORKING, {
-		i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
-		i(15141),	-- Onyxia Scale Breastplate
 	}),
 }));

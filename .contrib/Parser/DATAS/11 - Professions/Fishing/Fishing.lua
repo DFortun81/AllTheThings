@@ -500,14 +500,3 @@ itemrecipe(27532, 0--[[7732]], "removed 3.1.0.9767");	-- Master Fishing - The Ar
 itemrecipe(34109, 0--[[43308]], "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
 -- #endif
 -- #endif
-
--- These items never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(RECIPES, {
-		i(16082),	-- Artisan Fishing - The Way of the Lure
-		-- #if AFTER CATA
-		i(46054),	-- Journeyman Fishing - Fishing for Dummies
-		i(46055),	-- Grand Master Fishing - Deep Sea Adventures
-		-- #endif
-	}),
-}));

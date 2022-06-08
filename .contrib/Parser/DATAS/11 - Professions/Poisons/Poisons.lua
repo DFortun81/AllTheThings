@@ -148,10 +148,3 @@ profession(POISONS, {
 	}
 });
 -- #endif
-
--- These items never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	filter(200, {	-- Recipe
-		i(5657),	-- Recipe: Instant Toxin
-	}),
-}));

@@ -61,6 +61,7 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170611), -- Springrain Stave
 					}),
 					cl(DRUID, BALANCE, {
+						-- #if BEFORE 9.2.5
 						i(153760),	-- Springrain Stave
 						i(153757),	-- Springrain Headpiece
 						i(153763),	-- Springrain Medallion
@@ -76,6 +77,24 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153766),	-- Springrain Ring of Destruction
 						i(153764),	-- Springrain Idol of Destruction
 						i(153767),	-- Springrain Stone of Destruction
+						-- #endif
+						-- #if AFTER 9.2.5
+						i(153760),	-- Springrain Stave
+						i(153757),	-- Springrain Headpiece
+						i(153763),	-- Springrain Medallion
+						i(153759),	-- Springrain Spaulders
+						i(153748),	-- Springrain Cloak of Rage	--	changed cloak after 9.2.5
+						i(153754),	-- Springrain Tunic
+						i(153762),	-- Springrain Wrists
+						i(153756),	-- Springrain Grips
+						i(153761),	-- Springrain Belt
+						i(153758),	-- Springrain Leggings
+						i(153755),	-- Springrain Treads
+						i(153765),	-- Springrain Band of Destruction
+						i(153766),	-- Springrain Ring of Destruction
+						i(153764),	-- Springrain Idol of Destruction
+						i(153767),	-- Springrain Stone of Destruction
+						-- #endif
 					}),
 					cl(DRUID, FERAL, {
 						i(153773),	-- Springrain Spear
@@ -254,7 +273,8 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153969),	-- Streamtalker Idol of Destruction
 						i(153972),	-- Streamtalker Stone of Destruction
 					}),
-					cl(SHAMAN, ENHANCEMENT, {
+					cl(SHAMAN, ENHANCEMENT, {	-- Blizzard at its best (changing items between patches)
+						-- #if BEFORE 9.2.5
 						i(153983),	-- Streamtalker Talons
 						i(153987),	-- Streamtalker Helm
 						i(153963),	-- Streamtalker Choker
@@ -270,6 +290,24 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(153966),	-- Streamtalker Ring of Onslaught
 						i(153964),	-- Streamtalker Idol of Rage
 						i(153967),	-- Streamtalker Stone of Rage
+						-- #endif
+						-- #if AFTER 9.2.5
+						i(153983),	-- Streamtalker Talons
+						i(153977),	-- Streamtalker Coif
+						i(153968),	-- Streamtalker Medallion
+						i(153980),	-- Streamtalker Pauldrons
+						i(153962),	-- Streamtalker Cloak of Rage
+						i(153974),	-- Streamtalker Tunic
+						i(153982),	-- Streamtalker Armbands
+						i(153976),	-- Streamtalker Gloves
+						i(153981),	-- Streamtalker Belt
+						i(153978),	-- Streamtalker Legwraps
+						i(153975),	-- Streamtalker Boots
+						i(153971),	-- Streamtalker Band of Destruction
+						i(153970),	-- Streamtalker Ring of Destruction
+						i(153969),	-- Streamtalker Idol of Destruction
+						i(153972),	-- Streamtalker Stone of Destruction
+						-- #endif
 					}),
 				}),
 				cl(WARLOCK, {

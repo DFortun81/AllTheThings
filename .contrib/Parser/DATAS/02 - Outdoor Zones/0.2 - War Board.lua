@@ -176,7 +176,7 @@ _.Zones =
 			}),
 			q(28494, {	-- Warchief's Command: Northern Barrens!
 				["isBreadcrumb"] = true,
-				["altQuests"] = 26642,	-- Preserving the Barrens
+				["altQuests"] = { 26642 },	-- Preserving the Barrens
 			}),
 			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
 				["isBreadcrumb"] = true,

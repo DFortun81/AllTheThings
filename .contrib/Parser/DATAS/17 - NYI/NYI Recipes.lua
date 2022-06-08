@@ -315,6 +315,26 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(168588),	-- REUSE ME [MTMM]
 			i(168590),	-- REUSE ME [MTMM]
 		}),
+		prof(FIRST_AID, {
+			tier(CLASSIC_TIER, {
+				i(16085),	-- Artisan First Aid - Heal Thyself
+				i(8547),	-- Formula: Powerful Smelling Salts
+				i(23689),	-- Manual: Crystal Infused Bandage
+				i(23690),	-- Recipe: Crystal Flake Throat Lozenge
+			}),
+		}),
+		prof(FISHING, {
+			tier(CLASSIC_TIER, {
+				i(16082),	-- Artisan Fishing - The Way of the Lure
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.1
+				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
+					i(46054),	-- Journeyman Fishing - Fishing for Dummies
+					i(46055),	-- Grand Master Fishing - Deep Sea Adventures
+				})),
+			}),
+		}),
 		prof(INSCRIPTION, {
 			tier(MOP_TIER, {
 				-- 5.0.1
@@ -518,7 +538,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				})),
 			}),
 		}),
-		-- Poisons?
-		i(5657),	-- Recipe: Instant Toxin
+		prof(POISONS, {
+			tier(CLASSIC_TIER, {
+				i(5657),	-- Recipe: Instant Toxin
+			}),
+		}),
 	}),
 }));
