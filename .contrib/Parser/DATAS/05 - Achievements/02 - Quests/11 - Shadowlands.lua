@@ -285,7 +285,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			["altQuests"] = { 59643 },	-- It's Race Day in the Ramparts!
 		}),
 		ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
-			["altQuests"] = {
+			["sourceQuests"] = {
 				65788,	-- A Walk with Ghosts
 				65669,	-- Report to Greymane
 			},

@@ -5642,8 +5642,9 @@ fieldConverters = {
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
-			if (group.modItemID or value) ~= value then
-				CacheField(group, "itemID", group.modItemID);
+			local modItemID = group.modItemID;
+			if (modItemID or value) ~= value then
+				CacheField(group, "itemID", modItemID);
 			end
 		end
 		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
@@ -5888,26 +5889,31 @@ app.SearchForField = SearchForField;
 app.SearchForObject = function(field, id)
 	local fcache = SearchForField(field, id);
 	if fcache then
+		local count = #fcache;
+		-- quick escape for single cache results! hooray!
+		if count == 1 then
+			return fcache[1];
+		end
 		-- find a filter-match object first
-		local fcacheObj, keyMatch, fieldMatch, match, inFilter;
-		for i=1,#fcache,1 do
+		local fcacheObj, keyMatch, fieldMatch, match;
+		local Filter = app.RecursiveGroupRequirementsFilter;
+		for i=1,count,1 do
 			fcacheObj = fcache[i];
-			inFilter = app.RecursiveGroupRequirementsFilter(fcacheObj);
 			-- field matching id
 			if fcacheObj[field] == id then
 				if fcacheObj.key == field then
 					-- with keyed-field matching key & current filters
-					if inFilter then
+					if Filter(fcacheObj) then
 						return fcacheObj;
 					end
-					keyMatch = inFilter and fcacheObj or keyMatch or fcacheObj;
+					keyMatch = keyMatch or fcacheObj;
 				else
 					-- with field matching id
-					fieldMatch = inFilter and fcacheObj or fieldMatch or fcacheObj;
+					fieldMatch = fieldMatch or fcacheObj;
 				end
 			-- basic group related to search
 			else
-				match = inFilter and fcacheObj or match or fcacheObj;
+				match = match or fcacheObj;
 			end
 		end
 		-- otherwise just find the first matching object
@@ -7324,6 +7330,7 @@ local ObjectFunctions = {
 		return t.name and app.TryColorizeName(t, t.name) or t.link;
 	end,
 };
+local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)
 	-- if not type then app.PrintTable(fields); app.report("Every Object requires a Type!"); end
@@ -7331,8 +7338,8 @@ app.BaseObjectFields = not app.__perf and function(fields, type)
 
 	fields.__type = function() return type; end;
 	fields.__index = function(t, key)
-		_cache = rawget(fields, key) or rawget(ObjectFunctions, key);
-		if _cache then return _cache(t); end
+		objFunc = rawget(fields, key) or rawget(ObjectFunctions, key);
+		if objFunc then return objFunc(t); end
 		-- use default key value if existing
 		return rawget(ObjectDefaults, key);
 	end;
@@ -7353,11 +7360,13 @@ function(fields, type)
 	fields.__index = function(t, key)
 		local typeData, result = rawget(app.__perf, type);
 		local now = GetTimePreciseSec();
-		_cache = rawget(fields, key) or rawget(ObjectFunctions, key);
-		if _cache then
-			result = _cache(t);
+		objFunc = rawget(fields, key) or rawget(ObjectFunctions, key);
+		if objFunc then
+			result = objFunc(t);
+			key = tostring(key);
 		else
 			result = rawget(ObjectDefaults, key);
+			key = tostring(key).."_miss";
 		end
 		if typeData then
 			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
