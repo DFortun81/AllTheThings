@@ -1,7 +1,7 @@
-_.Uncollectable = {};
+local Items = root("Uncollectable");
 local i = function(itemID)
-	local item = { ["itemID"] = itemID };
-	_.Uncollectable[itemID] = item;
+	local item = {};
+	Items[itemID] = item;
 	return item;
 end
 -- SL

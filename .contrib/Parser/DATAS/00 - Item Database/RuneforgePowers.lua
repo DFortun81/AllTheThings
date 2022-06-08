@@ -1,4 +1,5 @@
-_.ItemDB = {};
+
+local Items = root("ItemDBConditional");
 local i = function(itemID
 				,runeforgePowerID
 				,specSetID)
@@ -7,7 +8,7 @@ local i = function(itemID
 	if ClassInfoDB then
 		item.classes = ClassInfoDB.GetClassesBySet(specSetID);
 	end
-	_.ItemDB[itemID] = item;
+	Items[itemID] = item;
 	return item;
 end
 

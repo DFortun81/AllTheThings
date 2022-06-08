@@ -1,11 +1,12 @@
-_.ItemDB = {};
+
+local Items = root("ItemDBConditional");
 local i = function(itemID, factionID, unlock)
 	local o = {
 		["factionID"] = factionID,
 		["f"] = 112
 	};
 	if not unlock then o.repeatable = true; end
-	_.ItemDB[itemID] = o;
+	Items[itemID] = o;
 	return o;
 end
 

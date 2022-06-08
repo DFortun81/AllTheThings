@@ -1,6 +1,6 @@
-_.ItemDB = {};
+local Items = root("ItemDBConditional");
 local i = function(itemID, buildingID)
-	_.ItemDB[itemID] = { ["buildingID"] = buildingID };
+	Items[itemID] = { ["buildingID"] = buildingID };
 end
 
 

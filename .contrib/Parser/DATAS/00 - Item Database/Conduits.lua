@@ -1,17 +1,17 @@
 
-_.ItemDB = {};
+local Items = root("ItemDBConditional");
 local i = function(itemID
 				,conduitID
 				,classes
 				,covenant)
 	local item = { ["conduitID"] = conduitID, };
 	if #classes < 12 then
-		item.classes = classes
+		item.classes = classes;
 	end
 	if string.len(covenant) > 0 then
-		item.customCollect = { covenant }
+		item.customCollect = { covenant };
 	end
-	_.ItemDB[itemID] = item;
+	Items[itemID] = item;
 	return item;
 end
 

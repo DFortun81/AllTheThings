@@ -1,9 +1,9 @@
-(function()
-_.ItemToyDB = {};
+
+local ItemDB = root("ItemDBConditional");
 local i = function(itemID)
 	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
 	-- So we cannot trust them and have to do it ourselves.
-	_.ItemToyDB[itemID] = 1;
+	ItemDB[itemID] = { ["isToy"] = true, };
 end
 
 -----------------
@@ -1044,4 +1044,3 @@ i(192099);  -- Earpieces of Tranquil Focus
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
 i(192485);	-- Stored Wisdom Device
-end)();

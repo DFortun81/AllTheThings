@@ -1,8 +1,9 @@
-_.ItemSpeciesDB = {};
+
+local ItemDB = root("ItemDBConditional");
 local pet = function(itemID, speciesID, altSpeciesID)
 	local item = { ["speciesID"] = speciesID, ["ignoreBonus"] = true };
 	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
-	_.ItemSpeciesDB[itemID] = item;
+	ItemDB[itemID] = item;
 	return item;
 end
 

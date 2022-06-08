@@ -1,6 +1,8 @@
-_.ItemDB = {};
+
+-- TODO: this file is dumb. move this information to EngineeringItemDB.lua once it exists
+local Items = root("ItemDBConditional");
 local i = function(itemID, skillID)
-	_.ItemDB[itemID] = { ["requireSkill"] = skillID };
+	Items[itemID] = { ["requireSkill"] = skillID };
 end
 
 -- Gnomish Engineering

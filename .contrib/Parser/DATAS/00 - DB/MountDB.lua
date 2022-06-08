@@ -1,14 +1,15 @@
-(function()
-_.ItemMountDB = {};
+
+local ItemDB = root("ItemDBConditional");
 local i = function(itemID, spellID)
 	-- This is necessary because Blizzard sometimes tells us that things are Mounts when they are not Mounts.
 	-- So we cannot trust them and have to do it ourselves.
-	_.ItemMountDB[itemID] = spellID or 0;
+	ItemDB[itemID] = { ["mountID"] = spellID };
 end
-local iNYI = function(itemID, spellID)
-	-- This is necessary because Blizzard sometimes reuses spellID for different items
-	_.ItemMountDB[itemID] = 0;
-end
+-- This isn't used anywhere?
+-- local iNYI = function(itemID, spellID)
+-- 	-- This is necessary because Blizzard sometimes reuses spellID for different items
+-- 	ItemDB[itemID] = { ["mountID"] = spellID };
+-- end
 
 -- first number = the item that teaches you to use the mount. ("taught by" tab on wowhead)
 -- second number = the spellID you learn from the mount. ("teaches" tab on wowhead)
@@ -1476,4 +1477,3 @@ i(191123, 369666);	-- Grimhowl
 i(192557, 334482);	-- Restoration Deathwalker
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
-end)();

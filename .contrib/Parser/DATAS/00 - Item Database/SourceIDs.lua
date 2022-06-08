@@ -1,9 +1,9 @@
-_.ItemDB = {};
+local Items = root("ItemDBConditional");
 local i = function(itemID, modID, s)
-	_.ItemDB[itemID] = { ["mods"] = { [modID] = s }, ["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.", };
+	Items[itemID] = { ["mods"] = { [modID] = s }, ["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.", };
 end
 local ib = function(itemID, bonusID, s)
-	_.ItemDB[itemID] = { ["bonuses"] = { [bonusID] = s }, ["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.", };
+	Items[itemID] = { ["bonuses"] = { [bonusID] = s }, ["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.", };
 end
 
 i(7509, 0, 2859);		-- Manaweave Robe (Ghostlands)

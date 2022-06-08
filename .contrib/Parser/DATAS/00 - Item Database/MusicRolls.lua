@@ -1,6 +1,6 @@
-_.ItemDB = {};
+local Items = root("ItemDBConditional");
 local i = function(itemID, questID)
-	_.ItemDB[itemID] = { ["musicRollID"] = questID };
+	Items[itemID] = { ["musicRollID"] = questID };
 end
 
 -- Stash of Dusty Music Rolls
