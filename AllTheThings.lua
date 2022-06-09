@@ -2426,6 +2426,11 @@ local PrintQuestInfo = function(questID, new, info)
 		end
 		local chatMsg;
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
+			-- Play a sound when a reportable error is found, if any sound setting is enabled
+			if app.Settings:GetTooltipSetting("Warn:Removed")
+			or app.Settings:GetTooltipSetting("Celebrate") then
+				app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
+			end
 			-- Linkify the output
 			local popupID = "quest-" .. questID .. questChange;
 			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID);
