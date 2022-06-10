@@ -910,7 +910,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 		}),
 	}),
 	prof(ENCHANTING, {
-		r(13262, {	-- Disenchant
+		spell(13262, {	-- Disenchant
 			i(16203),	-- Greater Eternal Essence
 			i(10939),	-- Greater Magic Essence
 			i(16204),	-- Illusion Dust
