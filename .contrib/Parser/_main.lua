@@ -1828,7 +1828,11 @@ end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
 		--error("NPC ID Missing");
-		return unpack(t);
+		if t then
+			return unpack(t);
+		else
+			return nil;
+		end
 	end
 	return struct("npcID", id, t);
 end
