@@ -33,7 +33,19 @@ _.Zones =
 					["coord"] = { 28.8, 74.0, THE_STORM_PEAKS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(43462, {	-- Airy Pale Ale
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						}),
+						i(43473, {	-- Drakefire Chile Ale
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						}),
 						i(43499, {	-- Iron Boot Flask (TOY!)
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						}),
+						i(43472, {	-- Snowfall Lager
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+						}),
+						i(43470, {	-- Worg Tooth Oatmeal Stout
 							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 						}),
 					},

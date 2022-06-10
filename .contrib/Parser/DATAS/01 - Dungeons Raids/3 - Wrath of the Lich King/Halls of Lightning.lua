@@ -55,6 +55,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							28584,	-- Unbound Firestorm
 						},
 					}),
+					i(42780),	-- Relics of Ulduar
 					i(36997, {	-- Sash of the Hardened Watcher
 						["crs"] = {
 							28583,	-- Blistering Steamrager
@@ -223,6 +224,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								28584,	-- Unbound Firestorm
 							},
 						}),
+						i(42780),	-- Relics of Ulduar
 					}),
 					cr(28586, e(597, {	-- General Bjarngrim
 						{	-- Heroic: Halls of Lightning: General Bjarngrim

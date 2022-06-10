@@ -542,9 +542,7 @@ root("Zones", {
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
-						["cost"] = {
-							{ "i", 24245, 10 },	-- Glowcap
-						},
+						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
 					q(9816,  {	-- Have You Ever Seen One of These?
@@ -688,9 +686,7 @@ root("Zones", {
 						["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
-						["cost"] = {
-							{ "i", 24245, 10 },	-- Glowcap
-						},
+						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
@@ -707,6 +703,7 @@ root("Zones", {
 						["sourceQuest"] = 9743,	-- Natural Enemies
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
@@ -720,6 +717,7 @@ root("Zones", {
 					q(9743,  {	-- Natural Enemies
 						["qg"] = 17923,	-- Fahssn
 						["coord"] = { 19.0, 62.6, ZANGARMARSH },
+						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
 					q(10105, {	-- News for Rakoria
@@ -1579,6 +1577,15 @@ root("Zones", {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(24291, {	-- Bog Lord Tendril
+						["crs"] = {
+							18125,	-- Starving Fungal Giant
+							18127,	-- Bog Lord
+							19402,	-- Withered Bog Lord
+							18124,	-- Withered Giant
+							19519,	-- Starving Bog Lord
+						},
+					}),
 					i(29960, {	-- Captured Firefly
 						["cr"] = 20197,	-- Bogflare Needler
 					}),

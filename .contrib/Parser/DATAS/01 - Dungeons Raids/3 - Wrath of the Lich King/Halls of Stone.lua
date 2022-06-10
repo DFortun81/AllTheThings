@@ -41,6 +41,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							27971,	-- Unrelenting Construct
 						},
 					}),
+					i(42780),	-- Relics of Ulduar
 					i(35682, {	-- Rune Giant Bindings
 						["crs"] = {
 							27962,	-- Dark Rune Elementalist
@@ -177,6 +178,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								27971,	-- Unrelenting Construct
 							},
 						}),
+						i(42780),	-- Relics of Ulduar
 					}),
 					cr(27977, e(604, {	-- Krystallus
 						{	-- Heroic: Halls of Stone: Krystallus

@@ -303,11 +303,9 @@ root("Zones", {
 						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10971,	-- Ethereum Secrets
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
-						["description"] = "Gives reputation through Exalted.",
+						["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+						["cost"] = { { "i", 31957, 1 } },	-- Ethereum Prisoner I.D. Tag
 						["repeatable"] = true,
-						["cost"] = {
-							{ "i", 31957, 1 },	-- Ethereum Prisoner I.D. Tag
-						},
 					}),
 					q(10971, {	-- Ethereum Secrets
 						["qg"] = 20448,	-- Commander Ameer

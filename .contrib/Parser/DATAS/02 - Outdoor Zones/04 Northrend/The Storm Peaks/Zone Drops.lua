@@ -29,6 +29,7 @@ _.Zones =
 						29792,	-- Frostfeather Screecher
 					},
 				}),
+				i(42780),	-- Relics of Ulduar
 				i(49050, {	-- Schematic: Jeeves
 					["crs"] = { 29724 },	-- Library Guardian
 				}),

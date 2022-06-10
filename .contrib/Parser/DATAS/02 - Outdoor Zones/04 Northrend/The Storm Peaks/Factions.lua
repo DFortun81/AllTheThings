@@ -87,6 +87,7 @@ _.Zones =
 						q(13559, {	-- Hodir's Tribute
 							["provider"] = { "n", 32540 },	-- Lillehoff
 							["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
+							["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 							["repeatable"] = true,
 						}),
 						q(13011, {	-- Culling Jorcuttar

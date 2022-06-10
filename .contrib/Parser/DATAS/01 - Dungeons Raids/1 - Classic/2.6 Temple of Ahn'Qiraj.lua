@@ -723,6 +723,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				q(8595, {	-- Mortal Champions
 					["qg"] = 15503,	-- Kandrostrasz
 					["sourceQuest"] = 8579,	-- Mortal Champions
+					["maxReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
 					},
@@ -730,6 +731,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				}),
 				q(8784, {	-- Secrets of the Qiraji
 					["qg"] = 15503,	-- Kandrostrasz
+					["maxReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 21230, 1 },	-- Ancient Qiraji Artifact
 					},

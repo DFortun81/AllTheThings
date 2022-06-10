@@ -94,12 +94,14 @@ _.Zones =
 				q(12870, {	-- Ancient Relics (A)
 					["provider"] = { "n", 29744 },	-- Rork Sharpchin
 					["coord"] = { 28.8, 74.0, THE_STORM_PEAKS },
+					["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12882, {	-- Ancient Relics (H)
-					["coord"] = { 36.9, 49.5, THE_STORM_PEAKS },
-					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 30472 },	-- Olut Alegut
+					["coord"] = { 36.9, 49.5, THE_STORM_PEAKS },
+					["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
+					["races"] = HORDE_ONLY,
 				}),
 				q(12875, {	-- An Experienced Guide
 					["provider"] = { "n", 29593 },	-- Yorg Stormheart

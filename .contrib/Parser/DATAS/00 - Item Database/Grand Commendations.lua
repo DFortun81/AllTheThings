@@ -3,15 +3,20 @@ local Items = root("ItemDBConditional");
 local i = function(itemID, factionID, unlock)
 	local o = {
 		["factionID"] = factionID,
+		-- #if NOT ANYCLASSIC
 		["f"] = 112
+		-- #endif
 	};
+	-- #if NOT ANYCLASSIC
 	if not unlock then o.repeatable = true; end
+	-- #endif
 	Items[itemID] = o;
 	return o;
 end
 
--- Burning Crusade
-i(31957, 933);	-- Ethereum Prisoner I.D. Tag (Consortium)
+-- Classic
+i(12844, 529);		-- Argent Dawn Valor Token [Argent Dawn]
+i(19858, 270);	-- Zandalar Honor Token [Zandalar Tribe]
 
 -- Wrath of the Lich King
 -- Argent Tournament
@@ -111,46 +116,6 @@ i(143939, 1388);	-- Commendation of the Sunreaver Onslaught
 i(143941, 1272);	-- Commendation of The Tillers
 
 -- Miscellaneous Rep Items
-
--- Classic
-i(12844, 529);		-- Argent Dawn Valor Token [Argent Dawn]
-i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
-i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
-i(19708, 270);		-- Blue Hakkari Bijou [Zandalar Tribe]
-i(19713, 270);		-- Bronze Hakkari Bijou [Zandalar Tribe]
-i(19715, 270);		-- Golden Hakkari Bijou [Zandalar Tribe]
-i(19711, 270);		-- Green Hakkari Bijou [Zandalar Tribe]
-i(19710, 270);		-- Orange Hakkari Bijou [Zandalar Tribe]
-i(19712, 270);		-- Purple Hakkari Bijou [Zandalar Tribe]
-i(19707, 270);		-- Red Hakkari Bijou [Zandalar Tribe]
-i(19714, 270);		-- Silver Hakkari Bijou [Zandalar Tribe]
-i(19709, 270);		-- Yellow Hakkari Bijou [Zandalar Tribe]
-i(19706, 270);		-- Bloodscalp Coin [Zandalar Tribe]
-i(19701, 270);		-- Gurubashi Coin [Zandalar Tribe]
-i(19700, 270);		-- Hakkari Coin [Zandalar Tribe]
-i(19699, 270);		-- Razzashi Coin [Zandalar Tribe]
-i(19704, 270);		-- Sandfury Coin [Zandalar Tribe]
-i(19705, 270);		-- Skullsplitter Coin [Zandalar Tribe]
-i(19702, 270);		-- Vilebranch Coin [Zandalar Tribe]
-i(19703, 270);		-- Witherbark Coin [Zandalar Tribe]
-i(19698, 270);		-- Zulian Coin [Zandalar Tribe]
-
-
--- Burning Crusade
-i(24291, 970);		-- Bog Lord Tendrils [Sporeggar]
-i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
-i(29425, 932);		-- Mark of Kil'jaden [The Aldor]
-i(30809, 932);		-- Mark of Sargeras [The Aldor]
-i(29740, 932);		-- Fel Armament [The Aldor]
-i(29426, 934);		-- Firewing Signet [The Scryers]
-i(30810, 934);		-- Sunfury Signet [The Scryers]
-i(29739, 934);		-- Arcane Tome [The Scryers]
-i(32506, 1015);		-- Netherwing Egg [Netherwing]
-i(24245, 970);		-- Glowcap [Sporegeggar]
-i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
-
--- Wrath of the Lich King
-i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]
 
 -- Cataclysm
 i(63518, 1178);		-- Hellscream's Reach Commendation
