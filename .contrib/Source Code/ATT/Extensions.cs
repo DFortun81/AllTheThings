@@ -21,9 +21,17 @@ namespace ATT
             if (arr == null || arr.Length < 1) return 0;
             try
             {
+                // Support for Full Patch versions as whole numbers.
+                if (arr.Length == 1)
+                {
+                    var versionString = Convert.ToString(arr[0]);
+                    var version = long.Parse(versionString);
+                    if (versionString.Length == 11) return version;
+                    return (version * 1000000) + 100000;  // Need to add 6 spaces for the build version ABBCC100000
+                }
                 return long.Parse(new StringBuilder().Append(Convert.ToString(arr[0]).Trim())
-                    .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(3, '0'))
-                    .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(3, '0'))
+                    .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(2, '0'))
+                    .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(2, '0'))
                     .Append((arr.Length >= 4 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(6, '0')).ToString());
             }
             catch(Exception e)
@@ -43,11 +51,11 @@ namespace ATT
             var s = version.ToString();
             var leadingZeros = new char[] { '0' };
             var len = s.Length;
-            var major = s.Substring(0, len - 12).TrimStart(leadingZeros);
+            var major = s.Substring(0, len - 10).TrimStart(leadingZeros);
             if (major.Length == 0) major = "0";
-            var minor = s.Substring(len - 12, 3).TrimStart(leadingZeros);
+            var minor = s.Substring(len - 10, 2).TrimStart(leadingZeros);
             if (minor.Length == 0) minor = "0";
-            var patch = s.Substring(len - 9, 3).TrimStart(leadingZeros);
+            var patch = s.Substring(len - 7, 2).TrimStart(leadingZeros);
             if (patch.Length == 0) patch = "0";
             return long.Parse($"{major}{minor.PadLeft(2, '0')}{patch.PadLeft(2, '0')}");
         }
@@ -62,11 +70,11 @@ namespace ATT
             var s = version.ToString();
             var leadingZeros = new char[] { '0' };
             var len = s.Length;
-            var major = s.Substring(0, len - 12).TrimStart(leadingZeros);
+            var major = s.Substring(0, len - 10).TrimStart(leadingZeros);
             if (major.Length == 0) major = "0";
-            var minor = s.Substring(len - 12, 3).TrimStart(leadingZeros);
+            var minor = s.Substring(len - 10, 2).TrimStart(leadingZeros);
             if (minor.Length == 0) minor = "0";
-            var patch = s.Substring(len - 9, 3).TrimStart(leadingZeros);
+            var patch = s.Substring(len - 7, 2).TrimStart(leadingZeros);
             if (patch.Length == 0) patch = "0";
             return $"{major}.{minor}.{patch}";
         }

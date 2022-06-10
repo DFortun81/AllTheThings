@@ -402,18 +402,24 @@ namespace ATT
 
         static void ProcessImportCommand(string[] command, StringBuilder builder, string content, ref int index, int length)
         {
-            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + string.Join(" ", command.Skip(1));
+            string shortname = string.Join(" ", command.Skip(1));
+            if (index > 0) builder.Append("\n");
+            builder.Append("-- ").Append(shortname).AppendLine();
+
+            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
             if (Directory.Exists(filename))
             {
+                int fileCount = 0;
                 foreach (var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
                 {
-                    if (index > 0) builder.Append("\n");
+                    if (fileCount > 0) builder.AppendLine();
+                    builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
                     builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file))).Append("\nend)();");
+                    ++fileCount;
                 }
             }
             else if (File.Exists(filename))
             {
-                if (index > 0) builder.Append("\n");
                 builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename))).Append("\nend)();");
             }
             else
@@ -511,6 +517,37 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
+                catch(NLua.Exceptions.LuaScriptException e)
+                {
+                    Trace.WriteLine(fileName);
+                    Trace.WriteLine(e.Message);
+                    if (e.Data != null)
+                    {
+                        foreach (var key in e.Data.Keys)
+                        {
+                            Trace.Write(key);
+                            Trace.Write(": ");
+                            Trace.WriteLine(e.Data[key]);
+                        }
+                    }
+                    var line = GetLineNumber(e);
+                    if (line > -1)
+                    {
+                        var lines = content.Split(new char[] { '\n', '\r' });
+                        for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
+                        {
+                            Trace.Write(i);
+                            Trace.Write(":");
+                            if (i == line) Trace.Write(">");
+                            Trace.WriteLine(lines[i]);
+                            ++i;
+                        }
+                    }
+                    else Trace.WriteLine(e);
+
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
                 catch (Exception e)
                 {
                     Trace.WriteLine(fileName);
@@ -518,7 +555,7 @@ namespace ATT
                     var line = GetLineNumber(e);
                     if (line > -1)
                     {
-                        var lines = content.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                        var lines = content.Split(new char[] { '\n', '\r' });
                         for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
                         {
                             Trace.Write(i);

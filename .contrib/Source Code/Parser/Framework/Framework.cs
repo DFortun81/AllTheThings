@@ -126,7 +126,7 @@ namespace ATT
         public static readonly int CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
 
         /// <summary>
-        /// The last patch version of the current build type. [Format: ABBBCCCFFFFFF]
+        /// The last patch version of the current build type. [Format: ABBCCFFFFFF]
         /// </summary>
         public static readonly long CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
 
