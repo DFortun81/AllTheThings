@@ -2750,13 +2750,6 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(7925),	-- Mithril Scale Gloves
 			}),
 		}),
-		prof(JEWELCRAFTING, {
-			tier(TBC_TIER, {
-				i(21793),	-- Arcanite Sword Pendant
-				i(21780),	-- Blood Crown
-				i(20956),	-- Silver Rose Pendant
-			}),
-		}),
 		prof(LEATHERWORKING, {
 			tier(CLASSIC_TIER, {
 				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
