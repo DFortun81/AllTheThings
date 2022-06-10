@@ -407,6 +407,44 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 2.0.1"} }, {
 					i(24195),	-- Design: Brilliant Living Ruby
 				})),
+				
+				-- 2.1.0
+				tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
+					i(32412),	-- Design: Relentless Earthstorm Diamond
+				})),
+				
+				-- 2.1.3
+				tier(TBC_TIER, 1.3, bubbleDownSelf({ ["timeline"] = {"created 2.1.3"} }, {
+					i(21958),	-- Design: Arcanite Sword Pendant
+					i(21959),	-- Design: Blood Crown
+					i(25888),	-- Primal Stone Statue
+				})),
+				
+				-- 2.3.0
+				tier(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
+					i(34221),	-- Design: Chaotic Skyfire Diamond
+				})),
+				
+				-- 2.4.0
+				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
+					i(35533),	-- Design: Amulet of Flowing Life
+					i(35534),	-- Hard Khorium Band
+					i(35535),	-- Hard Khorium Choker
+					i(35536),	-- Loop of Forged Power
+					i(35537),	-- Pendant of Sunfire
+					i(35538),	-- Ring of Flowing Life
+				})),
+
+				i(21950),	-- Design: Cut Emerald - Deprecated
+				i(21951),	-- Design: Cut Azerothian Diamond
+				i(20972),	-- Design: Silver Rose Pendant
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.1
+				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 4.0.1"} }, {
+					r(73259),	-- Resolute Hessonite
+					r(73233),	-- Mystic Alicite
+				})),
 			}),
 			tier(WOD_TIER, {
 				-- 6.0.1
@@ -414,7 +452,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(116080),	-- Recipe: Greater Taladite Amplifier
 				})),
 			}),	
-			i(21958),	-- Design: Arcanite Sword Pendant
 		}),
 		prof(LEATHERWORKING, {
 			tier(CLASSIC_TIER, {

@@ -1358,3 +1358,14 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 	}),
 })));
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(PROFESSIONS, {
+		prof(JEWELCRAFTING, {
+			tier(TBC_TIER, {
+				i(21793),	-- Arcanite Sword Pendant
+				i(21780),	-- Blood Crown
+				i(20956),	-- Silver Rose Pendant
+			}),
+		}),
+	}),
+}));

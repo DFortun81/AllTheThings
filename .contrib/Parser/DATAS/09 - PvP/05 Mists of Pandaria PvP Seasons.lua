@@ -10389,6 +10389,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(84968),	-- Malevolent Gladiator's Slicer
 				i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
 				i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
+				--i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
 			}),
 			cl(DEATHKNIGHT, {
 				i(88191),	-- Gladiator's Dreadplate Chestpiece

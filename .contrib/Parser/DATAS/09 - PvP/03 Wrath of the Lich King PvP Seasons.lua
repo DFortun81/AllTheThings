@@ -3932,6 +3932,7 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		n(SEASON_DEADLY, {
 			n(WEAPONS, {
+				--i(42214),	-- Savage Gladiator's Waraxe	-- in NYI Sourceless
 				i(42523),	-- Savage Gladiator's Endgame
 				i(42529),	-- Savage Gladiator's Reprieve
 				i(42535),	-- Savage Gladiator's Grimoire

@@ -638,10 +638,20 @@ _.Craftables =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(CATA_TIER, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(PROFESSIONS, {
+		prof(JEWELCRAFTING, {
+			tier(CATA_TIER, {
+				i(52107),	-- Resolute Hessonite
+				i(52150),	-- Perfect Resolute Hessonite
+				i(52092),	-- Mystic Alicite
+				i(52165),	-- Perfect Mystic Alicite
+			}),
+		}),
 		prof(LEATHERWORKING, {
-			i(56497),	-- Razorshell Gloves
+			tier(CATA_TIER, {
+				i(56497),	-- Razorshell Gloves
+			}),
 		}),
 	}),
-});
+}));
