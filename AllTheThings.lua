@@ -19567,6 +19567,8 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['description'] = L["RESET_INSTANCES_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
+							-- make sure the indicator icon is allowed to show
+							row.ref.trackable = true;
 							if IsAltKeyDown() then
 								row.ref.saved = not row.ref.saved;
 								Callback(self.Update, self);
