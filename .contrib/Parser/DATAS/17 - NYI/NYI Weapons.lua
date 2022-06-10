@@ -64,6 +64,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(5748),	-- Centaur Longbow
 			i(115294),	-- Spectral Longbow
 			i(182563),	-- NPE Weapon Bow
+			i(182563, {	-- NPE Weapon Bow
+				["bonusID"] = 6895,
+			}),
 			-- ItemID/Retrieving
 			i(108783),	-- 7.0 PH Weapon - Bow Agi
 			i(165266),	-- Fallback Weapon - Bow

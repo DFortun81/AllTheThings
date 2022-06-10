@@ -1,6 +1,7 @@
 local Items = root("Uncollectable");
 local i = function(itemID)
-	local item = {};
+	-- need the ID within the group even though it's saved via ID
+	local item = { ["itemID"] = itemID };
 	Items[itemID] = item;
 	return item;
 end
