@@ -94,6 +94,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(183714),	-- Swamp Reed (Withering Creeper is the equivalent wild pet in game, item was never used)
 		p(2341),		-- Feathers (possibly tied to a quest?)
 		i(166358),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform. A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		-- #if BEFORE 7.0.3
+		i(23712),	-- White Tiger Cub -- later reused for Ash'ana.
+		-- #endif
 		tier(SL_TIER, {
 			i(184034), -- Stony's Infused Ruby
 			tier(SL_TIER, 2.0, {
