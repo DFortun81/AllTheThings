@@ -109,6 +109,9 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(3396),	-- Recipe: Elixir of Lesser Agility
 					i(12008),	-- Savannah Ring
 					i(5756),	-- Sliverblade
+					i(4454, {	-- Talon of Vultros
+						["timeline"] = { "added 7.2.5.18522" }, -- Unclear when exactly. Going with the big return of items in 7.2.5
+					}),
 					i(11967),	-- Zircon Band
 				}),
 				i(5760, {	-- Eternium Lockbox
