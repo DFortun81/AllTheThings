@@ -2087,6 +2087,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 910,	-- Defias Enchanter
 				}),
+				-- #if BEFORE CATA
+				i(6211, {	-- Recipe: Elixir of Ogre's Strength
+					["crs"] = {
+						1251,	-- Splinter Fist Firemonger
+						891,	-- Splinter Fist Fire Weaver
+					},
+				}),
+				-- #endif
 				i(2233, {	-- Shadow Weaver Leggings
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 533,	-- Nightbane Shadow Weaver
