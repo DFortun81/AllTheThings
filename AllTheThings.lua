@@ -13897,11 +13897,7 @@ end
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
 app.RecursiveFirstParentWithField = function(group, field, followSource)
 	if group then
-		if group[field] then
-			return group[field];
-		else
-			return app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
-		end
+		return group[field] or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
 -- Returns the first found recursive Parent of the group which meets the provided field and value combination
@@ -21290,7 +21286,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, g = {} };
+					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, trackable = false, g = {} };
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));
