@@ -66,6 +66,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(113626),	-- Recipe: UNUSED
 				})),
 			}),
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183868),	-- [DNT][REUSE ME] Recipe: Crafter's Mark III
+					i(182665),	-- Recipe: Sins to Virtue
+				})),
+			}),
 		}),
 		prof(BLACKSMITHING, {
 			-- Classic
@@ -134,6 +141,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(116746),	-- Recipe: Greater Steelforged Essence
+				})),
+			}),
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183864),	-- [DNT][REUSE ME] Plans: Crafter's Mark III
+					i(182670),	-- Plans: Reinforced Girdle
 				})),
 			}),
 		}),
@@ -252,6 +266,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.1.5
 				tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
 					i(165843),	-- Schematic: Mechantula
+				})),
+			}),
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
 				})),
 			}),
 		}),
@@ -400,6 +420,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				})),
 			}),
 			i(169550),	-- REUSE ME [MTMM]
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
+				})),
+			}),
 		}),
 		prof(JEWELCRAFTING, {
 			tier(TBC_TIER, {
@@ -457,7 +483,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(CLASSIC_TIER, {
 				i(4997),	-- Deprecated Recipe: Kodo Skin Bag
 				i(8388),	-- Pattern: Nightscape Cloak
-				i(15780),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
+				i(15780),	-- Pattern: Onyxia Scale Breastplate
 			}),
 			tier(TBC_TIER, {
 				-- 2.4.0
@@ -484,14 +510,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(67011),	-- Pattern: Darkbrand Shoulders
 					i(67038),	-- Pattern: Heavy Savage Armor Kit
 					i(67036),	-- Pattern: Heavy Savage Leather
-					i(67017),	-- Pattern: Razorshell Belt (never made it into game)
-					i(67009),	-- Pattern: Razorshell Boots (never made it into game)
-					i(67003),	-- Pattern: Razorshell Bracers (never made it into game)
-					i(67035),	-- Pattern: Razorshell Chest (never made it into game)
-					i(67013),	-- Pattern: Razorshell Gloves (never made it into game)
-					i(67023),	-- Pattern: Razorshell Helm (never made it into game)
-					i(67030),	-- Pattern: Razorshell Leggings (never made it into game)
-					i(67004),	-- Pattern: Razorshell Shoulders (never made it into game)
+					i(67017),	-- Pattern: Razorshell Belt
+					i(67009),	-- Pattern: Razorshell Boots
+					i(67003),	-- Pattern: Razorshell Bracers
+					i(67035),	-- Pattern: Razorshell Chest
+					i(67013),	-- Pattern: Razorshell Gloves
+					i(67023),	-- Pattern: Razorshell Helm
+					i(67030),	-- Pattern: Razorshell Leggings
+					i(67004),	-- Pattern: Razorshell Shoulders
 					i(66995),	-- Pattern: Savage Cloak
 					i(67018),	-- Pattern: Scorched Leg Armor
 					i(67005),	-- Pattern: Shellscale Cloak (was changed to Hardened Scale Cloak and added to trainers)
@@ -504,14 +530,14 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(67025),	-- Pattern: Tsunami Leggings
 					i(67014),	-- Pattern: Tsunami Shoulders
 					i(67019),	-- Pattern: Twilight Leg Armor
-					i(67012),	-- Pattern: Windbound Belt (never made it into game)
-					i(67008),	-- Pattern: Windbound Boots (never made it into game)
-					i(67001),	-- Pattern: Windbound Bracers (never made it into game)
-					i(67028),	-- Pattern: Windbound Chest (never made it into game)
-					i(67002),	-- Pattern: Windbound Gloves (never made it into game)
-					i(67034),	-- Pattern: Windbound Helm (never made it into game)
-					i(67022),	-- Pattern: Windbound Leggings (never made it into game)
-					i(67016),	-- Pattern: Windbound Shoulders (never made it into game)
+					i(67012),	-- Pattern: Windbound Belt
+					i(67008),	-- Pattern: Windbound Boots
+					i(67001),	-- Pattern: Windbound Bracers
+					i(67028),	-- Pattern: Windbound Chest
+					i(67002),	-- Pattern: Windbound Gloves
+					i(67034),	-- Pattern: Windbound Helm
+					i(67022),	-- Pattern: Windbound Leggings
+					i(67016),	-- Pattern: Windbound Shoulders
 				})),
 			}),
 			tier(WOD_TIER, {
@@ -532,6 +558,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.1.0
 				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
 					i(166312),	-- Recipe: Coarse Leather Barding [Rank 2]
+				})),
+			}),
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183869),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
+					i(182669),	-- Pattern: Loosened Belt
 				})),
 			}),
 		}),
@@ -563,15 +596,94 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 		prof(TAILORING, {
+			tier(CLASSIC_TIER, {
+				i(7093),	-- Pattern: Boots of Darkness
+				r(8778),	-- Boots of Darkness
+				i(6273),	-- Pattern: Green Woolen Robe
+				r(7636),	-- Green Woolen Robe
+				i(10324),	-- Pattern: Stormcloth Boots
+				r(12090),	-- Stormcloth Boots
+				i(10304),	-- Pattern: Stormcloth Gloves
+				r(12063),	-- Stormcloth Gloves
+				i(10319),	-- Pattern: Stormcloth Headband
+				r(12083),	-- Stormcloth Headband
+				i(10303),	-- Pattern: Stormcloth Pants
+				r(12062),	-- Stormcloth Pants
+				i(10322),	-- Pattern: Stormcloth Shoulders
+				r(12087),	-- Stormcloth Shoulders
+				i(10313),	-- Pattern: Stormcloth Vest
+				r(12068),	-- Stormcloth Vest
+				i(21369),	-- Pattern: Felcloth Bag
+			}),
 			tier(TBC_TIER, {
 				i(24315),	-- Pattern: Heavy Netherweave Net
+				i(29120),	-- Pattern: Truefaith Vestments
+				i(30474),	-- Pattern: Lifeblood Bracers
+				r(36672),	-- Lifeblood Bracers
+				i(30473),	-- Pattern: Lifeblood Belt
+				r(36670),	-- Lifeblood Belt
+				i(30472),	-- Pattern: Lifeblood Leggings
+				r(36669),	-- Lifeblood Leggings
+				i(30470),	-- Pattern: Netherflame Belt
+				r(36667),	-- Netherflame Belt
+				i(30471),	-- Pattern: Netherflame Boots
+				r(36668),	-- Netherflame Boots
+				i(30469),	-- Pattern: Netherflame Robe
+				r(36665),	-- Netherflame Robe
+			}),
+			tier(WOTLK_TIER, {
+				i(42196),	-- Pattern: Aurora Slippers
+				i(42190),	-- Pattern: Deathchill Cloak
+				i(42180),	-- Pattern: Ebonweave
+				i(42200),	-- Pattern: Ebonweave Gloves
+				i(42199),	-- Pattern: Ebonweave Robe
+				i(42194),	-- Pattern: Frostmoon Pants
+				i(42186),	-- Pattern: Frostweave Bag
+				i(42179),	-- Pattern: Green Workman's Shirt
+				i(42191),	-- Pattern: Hat of Wintry Doom
+				i(42195),	-- Pattern: Light Blessed Mittens
+				i(42181),	-- Pattern: Moonshroud
+				i(42198),	-- Pattern: Moonshroud Gloves
+				i(42197),	-- Pattern: Moonshroud Robe
+				i(42192),	-- Pattern: Silky Iceshard Boots
+				i(42182),	-- Pattern: Spellweave
+				i(42202),	-- Pattern: Spellweave Gloves
+				i(42201),	-- Pattern: Spellweave Robe
+				i(42189),	-- Pattern: Wispcloak
+				i(42174),	-- Pattern: Yellow Lumberjack Shirt
 			}),
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(114867),	-- Pattern: Miniature Flying Carpet - NYI
+					r(168851),	-- Miniature Flying Carpet
 					i(114872),	-- Recipe: Greater Hexweave Essence
+					r(169669),	-- Hexweave Cloth
 					i(118098),	-- Pettern: Murloc Chew Toy
+					r(173415),	-- Murloc Chew Toy
+				})),
+			}),
+			tier(LEGION_TIER, {
+				-- 7.0.3
+				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+					i(137981),	-- Pattern: Silkweave Cloak
+				})),
+			}),
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+					i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+					i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+					i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+					i(162771),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+					i(162428),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+					i(162430),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+				})),
+			}),
+			tier(SL_TIER, {
+				-- 9.0.1
+				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 				})),
 			}),
 		}),

@@ -627,16 +627,22 @@ root("Craftables", tier(WOTLK_TIER, {
 
 -- The items never made it in.
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(WOTLK_TIER, {
+	n(PROFESSIONS, {
 		prof(ENCHANTING, {
-			i(34138),	-- Enchanted White Wand
-			i(34139),	-- Enchanted Crimson Wand
+			tier(WOTLK_TIER, {
+				i(34138),	-- Enchanted White Wand
+				i(34139),	-- Enchanted Crimson Wand
+			}),
 		}),
 		prof(ENGINEERING, {
-			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+			tier(WOTLK_TIER, {
+				i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+			}),
 		}),
 		prof(LEATHERWORKING, {
-			i(38378)	-- Wyrmscale Leg Armor
+			tier(WOTLK_TIER, {
+				i(38378)	-- Wyrmscale Leg Armor
+			}),
 		}),
 	}),
 }));

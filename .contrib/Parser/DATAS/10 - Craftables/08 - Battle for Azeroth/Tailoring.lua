@@ -168,13 +168,15 @@ _.Craftables =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(BFA_TIER, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(PROFESSIONS, {
 		prof(TAILORING, {
-			i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
-			i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
-			i(161988),	-- Tidespray Linen Cloak of the Feather
-			i(161991),	-- Tidespray Linen Cloak of Resilience
+			tier(BFA_TIER, {
+				i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
+				i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+				i(161988),	-- Tidespray Linen Cloak of the Feather
+				i(161991),	-- Tidespray Linen Cloak of Resilience
+			}),
 		}),
 	}),
-});
+}));

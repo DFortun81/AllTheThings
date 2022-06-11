@@ -5487,9 +5487,6 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	return o;
 end
 
--- Classic Recipes
-
-
 -- #if AFTER TBC
 -- TBC Recipes
 itemrecipe("Pattern: Frozen Shadoweave Shoulders", 21912, 26756, TBC_PHASE_ONE);
@@ -5503,11 +5500,6 @@ itemrecipe("Pattern: Spellfire Gloves", 21909, 26753, TBC_PHASE_ONE);
 itemrecipe("Pattern: Spellfire Robe", 21910, 26754, TBC_PHASE_ONE);
 -- #endif
 
--- #if AFTER WRATH
--- Wrath Recipes
-
--- #endif
-
 -- Never Implemented Recipe and Crafted Item Database
 local neverimplemented = function(thing)
 	table.insert(_.NeverImplemented, prof(TAILORING, { thing }));
@@ -5519,109 +5511,6 @@ neverimplemented(itemrecipe("Pattern: ", , ));
 neverimplemented(recipe());	--
 neverimplemented(i());	--
 ]]
-
--- Recipes that were created with the launch of the game, but never implemented. :(
-neverimplemented(itemrecipe("Pattern: Boots of Darkness", 7093, 8778));
-neverimplemented(recipe(8778));	-- Boots of Darkness
-neverimplemented(i(7027));	-- Boots of Darkness
-neverimplemented(itemrecipe("Pattern: Green Woolen Robe", 6273, 7636));
-neverimplemented(recipe(7636));	-- Green Woolen Robe
-neverimplemented(i(6243));	-- Green Woolen Robe
-neverimplemented(itemrecipe("Pattern: Stormcloth Boots", 10324, 12090));
-neverimplemented(recipe(12090));	-- Stormcloth Boots
-neverimplemented(i(10039));	-- Stormcloth Boots
-neverimplemented(itemrecipe("Pattern: Stormcloth Gloves", 10304, 12063));
-neverimplemented(recipe(12063));	-- Stormcloth Gloves
-neverimplemented(i(10011));	-- Stormcloth Gloves
-neverimplemented(itemrecipe("Pattern: Stormcloth Headband", 10319, 12083));
-neverimplemented(recipe(12083));	-- Stormcloth Headband
-neverimplemented(i(10032));	-- Stormcloth Headband
-neverimplemented(itemrecipe("Pattern: Stormcloth Pants", 10303, 12062));
-neverimplemented(recipe(12062));	-- Stormcloth Pants
-neverimplemented(i(10010));	-- Stormcloth Pants
-neverimplemented(itemrecipe("Pattern: Stormcloth Shoulders", 10322, 12087));
-neverimplemented(recipe(12087));	-- Stormcloth Shoulders
-neverimplemented(i(10038));	-- Stormcloth Shoulders
-neverimplemented(itemrecipe("Pattern: Stormcloth Vest", 10313, 12068));
-neverimplemented(recipe(12068));	-- Stormcloth Vest
-neverimplemented(i(10020));	-- Stormcloth Vest
-neverimplemented(itemrecipe("Pattern: Felcloth Bag", 21369, 26086));	-- recipe item is not in game; you learn the pattern from Jandice Barov's Journal in Scholo
-
--- #if AFTER TBC
-neverimplemented(itemrecipe("Pattern: Lifeblood Bracers", 30474, 36672));
-neverimplemented(recipe(36672));	-- Lifeblood Bracers
-neverimplemented(i(30464));	-- Lifeblood Bracers
-neverimplemented(itemrecipe("Pattern: Lifeblood Belt", 30473, 36670));
-neverimplemented(recipe(36670));	-- Lifeblood Belt
-neverimplemented(i(30463));	-- Lifeblood Belt
-neverimplemented(itemrecipe("Pattern: Lifeblood Leggings", 30472, 36669));
-neverimplemented(recipe(36669));	-- Lifeblood Leggings
-neverimplemented(i(30465));	-- Lifeblood Leggings
-neverimplemented(itemrecipe("Pattern: Netherflame Belt", 30470, 36667));
-neverimplemented(recipe(36667));	-- Netherflame Belt
-neverimplemented(i(30460));	-- Netherflame Belt
-neverimplemented(itemrecipe("Pattern: Netherflame Boots", 30471, 36668));
-neverimplemented(recipe(36668));	-- Netherflame Boots
-neverimplemented(i(30461));	-- Netherflame Boots
-neverimplemented(itemrecipe("Pattern: Netherflame Robe", 30469, 36665));
-neverimplemented(recipe(36665));	-- Netherflame Robe
-neverimplemented(i(30459));	-- Netherflame Robe
--- #endif
-
--- #if AFTER WRATH
-neverimplemented(i(42196));	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42190));	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42180));	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42200));	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42199));	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42194));	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42186));	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42179));	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42191));	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42195));	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42181));	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42198));	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42197));	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42192));	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42182));	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42202));	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42201));	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42189));	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
-neverimplemented(i(42174));	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
--- #endif
-
--- #if AFTER CATA
-
--- #endif
-
--- #if AFTER MOP
-
--- #endif
-
--- #if AFTER WOD
-neverimplemented(recipe(169669));	-- Hexweave Cloth
-neverimplemented(recipe(168851));	-- Miniature Flying Carpet
-neverimplemented(i(114833));	-- Miniature Flying Carpet
-neverimplemented(recipe(173415));	-- Murloc Chew Toy
-neverimplemented(i(118052));	-- Murloc Chew Toy
--- #endif
-
--- #if AFTER LEGION
-neverimplemented(i(137981));	-- Pattern: Silkweave Cloak
--- #endif
-
--- #if AFTER BFA
-neverimplemented(i(162424));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
-neverimplemented(i(162770));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
-neverimplemented(i(162426));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
-neverimplemented(i(162771));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
-neverimplemented(i(162428));	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
-neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
--- #endif
-
--- #if AFTER SHADOWLANDS
-neverimplemented(i(183871));	-- Pattern: Crafter's Mark III (was in beta but not live, possibly added in future?)
--- #endif
 
 -- Apply the Never Implemented flag to the Never Implemented things.
 bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);

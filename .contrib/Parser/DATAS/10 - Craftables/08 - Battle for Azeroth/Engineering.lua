@@ -160,10 +160,12 @@ _.Craftables =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(BFA_TIER, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(PROFESSIONS, {
 		prof(ENGINEERING, {
-			i(153505),	-- Monelite Boomstick
+			tier(BFA_TIER, {
+				i(153505),	-- Monelite Boomstick
+			}),
 		}),
 	}),
-});
+}));

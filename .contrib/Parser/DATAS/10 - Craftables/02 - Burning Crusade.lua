@@ -1367,5 +1367,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(20956),	-- Silver Rose Pendant
 			}),
 		}),
+		prof(TAILORING, {
+			tier(TBC_TIER, {
+				i(30464),	-- Lifeblood Bracers
+				i(30463),	-- Lifeblood Belt
+				i(30465),	-- Lifeblood Leggings
+				i(30460),	-- Netherflame Belt
+				i(30461),	-- Netherflame Boots
+				i(30459),	-- Netherflame Robe
+			}),
+		}),
 	}),
 }));

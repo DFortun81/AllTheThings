@@ -33,11 +33,13 @@ _.Craftables =
 };
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	tier(SL_TIER, {
+	n(PROFESSIONS, {
 		prof(ALCHEMY, {
-			i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
-			i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
-			i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
+			tier(SL_TIER, {
+				i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
+				i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
+				i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
+			}),
 		}),
 	}),
 }));

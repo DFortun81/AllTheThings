@@ -7,33 +7,39 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS, {
 		["description"] = "This Category contains Things that probably exist in the game but no known source.",
 		["g"] = {
-			n(ARMOR, {
-				i(163255, {	-- 7th Legionnaire's Treads
-					-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
-					["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
-					["modID"] = 5,
-				}),
+			n(ARMOR, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+				-- Quests / Rares ?
 				i(160378),	-- Stormchaser Clutch
 				i(106163),	-- Frostwolf Wind-Talker Robe	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(106142),	-- Frostwolf Scout's Tunic	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(106166),	-- Frostwolf Ringmail Armor	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(106147),	-- Forstwolf Stalwart Chestpiece	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
-				i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
 				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
-			}),
-			n(WEAPONS, {
-				i(108905, {	-- Jagged Turtleshell Blade
-					-- Keep this here until we get solid and an accurate source.
-					-- Dont tell the Users is actually obtainable but there is just no info
-					["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
+				
+				-- PvP (probably from some Ensemble)
+				i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
+				
+				-- Other
+				i(163255, {	-- 7th Legionnaire's Treads
+					-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
+					["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
+					["modID"] = 5,
 				}),
+				i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
+			})),
+			n(WEAPONS, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+				-- Quests / Rares ?
+				i(108905),	-- Jagged Turtleshell Blade
 				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
-				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
-				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
 				i(90331),	-- Face Smasher Warhammer	-- rewarded by some MoP quest probably (Jade Forest?)
 				i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
-			}),
+				
+				-- PvP (probably from some Ensemble)
+				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
+				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
+				i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- I collected it somehow -Darkal
+				i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
+			})),
 			n(QUESTS, {	-- These are/were completable
 				-- Classic
 				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa

@@ -1092,8 +1092,3 @@ root("HiddenQuestTriggers", {
 	}),
 });
 -- #endif
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(29120, {	-- Pattern: Truefaith Vestments (Priest Only)
-		["timeline"] = { "created 2.0.1" },
-	}),
-}));

@@ -284,30 +284,6 @@ _.Craftables =
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
-			tier(MOP_TIER, {
-				i(82911),	-- Lightsteel Helm
-				i(82912),	-- Lightsteel Shoulders
-				i(82913),	-- Lightsteel Breastplate
-				i(82914),	-- Lightsteel Gauntlets
-				i(82918),	-- Lightsteel Belt
-				i(82915),	-- Lightsteel Legplates
-				i(82917),	-- Lightsteel Boots
-				i(82935),	-- Masterwork Lightsteel Helm
-				i(82936),	-- Masterwork Lightsteel Shoulders
-				i(82937),	-- Masterwork Lightsteel Breastplate
-				i(82940),	-- Masterwork Lightsteel Bracers
-				i(82938),	-- Masterwork Lightsteel Gauntlets
-				i(82942),	-- Masterwork Lightsteel Belt
-				i(82939),	-- Masterwork Lightsteel Legplates
-				i(82941),	-- Masterwork Lightsteel Boots
-				i(80811),	-- Spiritguard Helm
-				i(82896),	-- Spiritguard Shoulders
-				i(82897),	-- Spiritguard Breastplate
-				i(82898),	-- Spiritguard Gauntlets
-				i(82902),	-- Spiritguard Belt
-				i(82899),	-- Spiritguard Legplates
-				i(82901),	-- Spiritguard Boots
-			}),
 			tier(WOD_TIER, {
 				i(107971),	-- Draenic Steel Helm
 				i(107979),	-- Draenic Steel Helm
@@ -413,6 +389,12 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(108243),	-- Peerless Draenic Steel Bulwark
 				i(108244),	-- Peerless Draenic Steel Bulwark
 				i(108245),	-- Peerless Draenic Steel Bulwark
+			}),
+		}),
+		prof(TAILORING, {
+			tier(WOD_TIER, {
+				i(114833),	-- Miniature Flying Carpet
+				i(118052),	-- Murloc Chew Toy
 			}),
 		}),
 	}),

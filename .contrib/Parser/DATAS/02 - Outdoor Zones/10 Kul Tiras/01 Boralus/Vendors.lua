@@ -800,7 +800,6 @@ _.Zones =
 								i(164523),	-- Rattling Bone Hauberk
 								i(164530),	-- Rattling Bone Armplates
 								i(164524),	-- Rattling Bone Crushers
-								un(NEVER_IMPLEMENTED, i(164525)),	-- Rattling Bone Greatbelt
 								i(164527),	-- Rattling Bone Legguards
 								i(164529),	-- Rattling Bone Warboots
 								i(164519),	-- Voodoo Stalker's Mask
