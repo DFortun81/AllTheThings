@@ -825,4 +825,5 @@ root("HiddenQuestTriggers", {
 	q(45496),	-- The Whisperer
 	q(42570),	-- Shaman Shrine - Azsuna Earth 02
 	q(42569),	-- Shaman Shrine - Azsuna Earth 01
+	q(45492),	-- Marlblub the Massive (while on the WQ of the same name)  
 });
