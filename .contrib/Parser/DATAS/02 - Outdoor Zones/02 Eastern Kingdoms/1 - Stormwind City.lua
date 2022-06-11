@@ -783,14 +783,38 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1364, {	-- Mazen's Behest
-					["provider"] = { "n", 5386 },	-- Acolyte Dellis
-					["coord"] = { 51.6, 73.8, STORMWIND_CITY },
+				q(1363, {	-- Mazen's Behest (1/2)
+					["qg"] = 338,	-- Mazen Mac'Nadir
+					["coord"] = { 41.4, 64.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 37,
+				}),
+				q(1364, {	-- Mazen's Behest (2/2)
+					["qg"] = 5386,	-- Acolyte Dellis
+					["sourceQuest"] = 1363,	-- Mazen's Behest (1/2)
+					["coord"] = { 40.8, 64, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 37,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(10747)),	-- Teacher's Sash
-						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
+						objective(1, {	-- 0/1 Khadgar's Essays on Dimensional Convergence
+							["provider"] = { "i", 6065 },	-- Khadgar's Essays on Dimensional Convergence
+							["crs"] = {
+								1081,	-- Mire Lord
+								14448,	-- Molt Thorn
+								764,	-- Swampwalker
+								765,	-- Swampwalker Elder
+								766,	-- Tangled Horror
+							},
+						}),
+						i(10747, {	-- Teacher's Sash
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(10748, {	-- Wanderlust Boots
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(28287, {	-- Meet with Farseer Umbrua

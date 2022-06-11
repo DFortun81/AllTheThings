@@ -228,7 +228,6 @@ q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The 
 q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1324),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1360),	-- Reclaimed Treasures,		TBC: Reclaimed Treasures,		CLASSIC: Reclaimed Treasures
-q(1363),	-- Mazen's Behest,		TBC: Mazen's Behest,		CLASSIC: Mazen's Behest
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
 q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
 q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
@@ -236,11 +235,7 @@ q(1375),	-- Khan Shaka,		TBC: Khan Shaka,		CLASSIC: Khan Shaka
 q(1385),	-- Brutal Politics,		TBC: Brutal Politics,		CLASSIC: Brutal Politics
 q(1386),	-- Assault on the Kolkar,		TBC: Assault on the Kolkar,		CLASSIC: Assault on the Kolkar
 q(1390),	-- <nyi> Oops, We Killed Them Again.,		CLASSIC: <nyi> Oops, We Killed Them Again.
-q(1396),	-- [DEPRECATED]Encroaching Wildlife,		TBC: Encroaching Wildlife,		CLASSIC: Encroaching Wildlife
 q(1397),	-- <nyi> Saved!,		CLASSIC: <nyi> Saved!
-q(1398),	-- [DEPRECATED]Driftwood,		TBC: Driftwood,		CLASSIC: Driftwood
-q(1421),	-- [DEPRECATED]The Lost Caravan,		TBC: The Lost Caravan,		CLASSIC: The Lost Caravan
-q(1425),	-- [DEPRECATED]Deliver the Shipment,		TBC: Deliver the Shipment,		CLASSIC: Deliver the Shipment
 q(1437),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
 q(1438),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
 q(1439),	-- Search for Tyranis,		TBC: Search for Tyranis,		CLASSIC: Search for Tyranis
@@ -860,12 +855,9 @@ q(8412),	-- [DEPRECATED] Spirit Totem,		TBC: Spirit Totem,		CLASSIC: Spirit Tote
 q(8414),	-- Dispelling Evil,		TBC: Dispelling Evil,		CLASSIC: Dispelling Evil
 q(8415),	-- Chillwind Camp,		TBC: Chillwind Camp,		CLASSIC: Chillwind Point
 q(8416),	-- Inert Scourgestones,		TBC: Inert Scourgestones,		CLASSIC: Inert Scourgestones
-q(8417),	-- A Troubled Spirit,		TBC: A Troubled Spirit,		CLASSIC: A Troubled Spirit
 q(8419),	-- An Imp's Request,		TBC: An Imp's Request,		CLASSIC: An Imp's Request
 q(8420),	-- Hot and Itchy,		TBC: Hot and Itchy,		CLASSIC: Hot and Itchy
 q(8421),	-- The Wrong Stuff,		TBC: The Wrong Stuff,		CLASSIC: The Wrong Stuff
-q(8423),	-- Warrior Kinship,		TBC: Warrior Kinship,		CLASSIC: Warrior Kinship
-q(8424),	-- War on the Shadowsworn,		TBC: War on the Shadowsworn,		CLASSIC: War on the Shadowsworn
 q(8444),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8445),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8459),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -934,8 +926,6 @@ q(9593),	-- Taming the Beast,		TBC: Taming the Beast
 q(9596),	-- <DEPRECATED>Control
 q(9597),	-- <UNUSED>
 q(9599),	-- <UNUSED>,		TBC: <UNUSED>
-q(9609),	-- [DEPRECATED]Help Watcher Biggs,		TBC: Help Watcher Biggs
-q(9610),	-- [DEPRECATED]Pool of Tears,		TBC: Pool of Tears
 q(9613),	-- Deprecated: Keanna's Will,		TBC: Deprecated: Keanna's Will
 q(9614),	-- Deprecated: Reforge a Short Blade,		TBC: Deprecated: Reforge a Short Blade
 q(9615),	-- Deprecated: Reforge a Long Blade,		TBC: Deprecated: Reforge a Long Blade

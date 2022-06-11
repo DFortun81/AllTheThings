@@ -5,6 +5,14 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(FERALAS, {
+			-- #if AFTER CATA
+			prof(SKINNING, {
+				["cr"] = 39384,	-- Noxious Whelp
+				["groups"] = {
+					i(7392),	-- Green Whelp Scale
+				},
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11474, {	-- Sprite Darter Egg (PET!)
 					["crs"] = {
@@ -18,9 +26,11 @@ _.Zones =
 						5246,	-- Zukk'ash Worker
 					},
 				}),
+				-- #if AFTER CATA
 				i(8498, {	-- Emerald Whelping (PET!)
-					["crs"] = { 39384 },	-- Noxious Whelp
+					["cr"] = 39384,	-- Noxious Whelp
 				}),
+				-- #endif
 			}),
 		}),
 	}),

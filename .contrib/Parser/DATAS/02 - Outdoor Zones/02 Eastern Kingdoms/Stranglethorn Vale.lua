@@ -34,8 +34,38 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 716 },	-- Barnil Stonepot
 				}),
-				q(624, {	-- Cortellos' Riddle
-					["u"] = REMOVED_FROM_GAME,
+				q(624, {	-- Cortello's Riddle (1/3)
+					["provider"] = { "i", 4056 },	-- Cortello's Riddle
+					["coords"] = {
+						{ 29.5, 89.3, STRANGLETHORN_VALE },
+						{ 33.6, 88.3, STRANGLETHORN_VALE },
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["lvl"] = 35,
+				}),
+				q(625, {	-- Cortello's Riddle (2/3)
+					["provider"] = { "o", 2553 },	-- A Soggy Scroll
+					["sourceQuest"] = 624,	-- Cortello's Riddle (1/3)
+					["coord"] = { 22.8, 48.1, SWAMP_OF_SORROWS },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["lvl"] = 35,
+				}),
+				q(626, {	-- Cortello's Riddle (3/3)
+					["provider"] = { "o", 2555 },	-- Musty Scroll
+					["sourceQuest"] = 625,	-- Cortello's Riddle (2/3)
+					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { THE_HINTERLANDS },
+					["lvl"] = 35,
+					["groups"] = {
+						{
+							["itemID"] = 11324,	-- Explorer's Knapsack
+							["coord"] = { 80.8, 46.8, THE_HINTERLANDS },
+							["timeline"] = { "removed 4.0.3" },
+						},
+					},
 				}),
 				q(1116, {	-- Dream Dust in the Swamp
 					["u"] = REMOVED_FROM_GAME,
