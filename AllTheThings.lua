@@ -11910,6 +11910,34 @@ app.ImportRawLink = function(group, rawlink)
 		end
 	end
 end
+-- Adds necessary SourceID information for Item data into the Harvest variable
+app.SaveHarvestSource = function(data)
+	local s, itemID = data.s, data.itemID;
+	if s and itemID then
+		local item = AllTheThingsHarvestItems[itemID];
+		if not item then
+			item = {};
+			-- print("NEW SOURCE ID!",data.text,s,itemID);
+			AllTheThingsHarvestItems[itemID] = item;
+		end
+		local bonusID = data.bonusID;
+		if bonusID then
+			local bonuses = item.bonuses;
+			if not bonuses then
+				bonuses = {};
+				item.bonuses = bonuses;
+			end
+			bonuses[bonusID] = s;
+		else
+			local mods = item.mods;
+			if not mods then
+				mods = {};
+				item.mods = mods;
+			end
+			mods[data.modID or 0] = s;
+		end
+	end
+end
 -- Refines a set of items down to the most-accurate matches to the provided modItemID
 -- The sets of items will be returned based on their respective match depth to the given modItemID
 -- Ex: { [1] = { { ItemID }, { ItemID2 } }, [2] = { { ModID } }, [3] = { { BonusID } } }
@@ -14815,6 +14843,8 @@ function app:CreateMiniListForGroup(group)
 			-- source without an item, try to generate the valid item link for it
 			if not group.itemID then
 				app.ImportRawLink(group, app.DetermineItemLink(group.s));
+				-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Havrest, add harvest, parse)
+				app.SaveHarvestSource(group);
 			end
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -15242,27 +15272,7 @@ local function SetRowData(self, row, data)
 						artifact[data.isOffHand and 1 or 2] = s;
 						AllTheThingsArtifactsItems[data.artifactID] = artifact;
 					else
-						local item = AllTheThingsHarvestItems[data.itemID];
-						if not item then
-							item = {};
-						end
-						if data.bonusID then
-							local bonuses = item.bonuses;
-							if not bonuses then
-								bonuses = {};
-								item.bonuses = bonuses;
-							end
-							bonuses[data.bonusID] = s;
-						else
-							local mods = item.mods;
-							if not mods then
-								mods = {};
-								item.mods = mods;
-							end
-							mods[data.modID or 0] = s;
-						end
-						-- print("NEW SOURCE ID!",text,s);
-						AllTheThingsHarvestItems[data.itemID] = item;
+						app.SaveHarvestSource(data);
 					end
 				end
 			elseif success then
