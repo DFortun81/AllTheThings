@@ -8132,6 +8132,11 @@ app.TryPopulateQuestRewards = function(questObject)
 					tinsert(nonItemNested, data);
 				end
 			end
+			-- Everything retrieved from API should not be related to another sourceParent
+			-- i.e. Threads of Fate Quest rewards which show up later under regular World Quests
+			for _,item in pairs(apiItems) do
+				item.sourceParent = nil;
+			end
 			NestObjects(questObject, nonItemNested, true);
 		end
 
