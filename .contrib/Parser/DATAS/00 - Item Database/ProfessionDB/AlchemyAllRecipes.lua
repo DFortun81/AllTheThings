@@ -871,90 +871,7 @@ r(251662),	--
 7.3.5.26899
 7.3.5.26972
 8.0.1.25902
-r(252389),	-- Coastal Rejuvenation Potion
-r(251824),	--
-r(252385),	-- Coastal Mana Potion
-r(252356),	-- Flask of the Vast Horizon
-r(252358),	-- Flask of the Undertow
-r(260403),	-- Silas' Sphere of Transmutation
-r(264245),	-- Pandaria Alchemy
-r(252380),	-- Surging Alchemist Stone
-r(252341),	-- Potion of Bursting Blood
-r(252397),	-- Sea Mist Potion
-r(252368),	-- Siren's Alchemist Stone
-r(251305),	-- Transmute: Herbs to Ore
-r(252362),	-- Endless Tincture of Renewed Combat
-r(252339),	-- Potion of Replenishment
-r(252359),	-- Flask of the Undertow
-r(252335),	-- Steelskin Potion
-r(251311),	-- Transmute: Ore to Gems
-r(252366),	--
-r(252352),	-- Flask of Endless Fathoms
-r(252365),	--
-r(251832),	-- Transmute: Expulsom
-r(252334),	-- Steelskin Potion
-r(252402),	-- Potion of Concealment
-r(264211),	-- Alchemy
-r(252394),	-- Lightfoot Potion
-r(252369),	-- Siren's Alchemist Stone
-r(252388),	-- Coastal Rejuvenation Potion
-r(252383),	-- Coastal Healing Potion
-r(252382),	-- Coastal Healing Potion
-r(252401),	-- Potion of Concealment
-r(252354),	-- Flask of the Vast Horizon
-r(252361),	-- Endless Tincture of Renewed Combat
-r(252395),	-- Lightfoot Potion
-r(252381),	-- Surging Alchemist Stone
-r(252363),	-- Endless Tincture of Renewed Combat
-r(252396),	-- Lightfoot Potion
-r(252350),	-- Flask of the Currents
-r(252346),	-- Potion of Rising Death
-r(252340),	-- Potion of Replenishment
-r(252379),	-- Surging Alchemist Stone
-r(264213),	-- Outland Alchemy
-r(252400),	-- Potion of Concealment
-r(252391),	-- Demitri's Draught of Deception
-r(252399),	-- Sea Mist Potion
-r(264243),	-- Cataclysm Alchemy
-r(264250),	-- Legion Alchemy
-r(252357),	-- Flask of the Undertow
-r(252374),	--
-r(252376),	-- Endless Tincture of Fractional Power
-r(251822),	-- Transmute: Fish to Gems
-r(264247),	-- Draenor Alchemy
-r(252348),	-- Flask of the Currents
-r(252375),	--
-r(252370),	-- Siren's Alchemist Stone
-r(252390),	-- Coastal Rejuvenation Potion
-r(252387),	-- Coastal Mana Potion
-r(252392),	-- Demitri's Draught of Deception
-r(252377),	-- Endless Tincture of Fractional Power
-r(252353),	-- Flask of Endless Fathoms
-r(251314),	-- Transmute: Cloth to Skins
-r(252345),	-- Potion of Rising Death
-r(252373),	--
-r(251306),	-- Transmute: Herbs to Cloth
-r(251808),	-- Transmute: Meat to Pet
-r(252393),	-- Demitri's Draught of Deception
-r(252344),	-- Potion of Rising Death
-r(252378),	-- Endless Tincture of Fractional Power
-r(251310),	-- Transmute: Ore to Cloth
-r(252351),	-- Flask of Endless Fathoms
-r(264220),	-- Northrend Alchemy
-r(264255),	-- Kul Tiran Alchemy
-r(251309),	-- Transmute: Ore to Herbs
-r(252336),	-- Steelskin Potion
-r(252349),	-- Flask of the Currents
-r(252398),	-- Sea Mist Potion
-r(252342),	-- Potion of Bursting Blood
-r(252367),	--
-r(252337),	-- Potion of Replenishment
-r(252384),	-- Coastal Healing Potion
-r(252355),	-- Flask of the Vast Horizon
-r(252343),	-- Potion of Bursting Blood
-r(252386),	-- Coastal Mana Potion
 8.0.1.25976
-r(265787),	-- Zandalari Alchemy
 8.0.1.26010
 8.0.1.26032
 8.0.1.26095
@@ -967,13 +884,6 @@ r(265787),	-- Zandalari Alchemy
 8.0.1.26310
 8.0.1.26321
 8.0.1.26367
-r(172540),	-- Healing Tonic
-r(7935),	-- Strong Anti-Venom,		TBC: Strong Anti-Venom,		CLASSIC: Strong Anti-Venom
-r(172542),	-- Fire Ammonite Oil
-r(7934),	-- Anti-Venom,		TBC: Anti-Venom,		CLASSIC: Anti-Venom
-r(172541),	-- Blackwater Anti-Venom
-r(221690),	-- Silvery Salve
-r(23787),	-- Powerful Anti-Venom,		TBC: Powerful Anti-Venom,		CLASSIC: Powerful Anti-Venom
 8.0.1.26433
 8.0.1.26476
 8.0.1.26491
@@ -981,26 +891,10 @@ r(23787),	-- Powerful Anti-Venom,		TBC: Powerful Anti-Venom,		CLASSIC: Powerful 
 8.0.1.26530
 8.0.1.26557
 8.0.1.26567
-r(276976),	-- Mystical Cauldron
-r(276977),	-- Mystical Cauldron
-r(276975),	-- Mystical Cauldron
 8.0.1.26585
 8.0.1.26604
 8.0.1.26610
 8.0.1.26624
-r(279162),	-- Battle Potion of Intellect
-r(278420),	-- Potion of Herb Tracking
-r(279160),	-- Battle Potion of Agility
-r(279168),	-- Battle Potion of Strength
-r(279167),	-- Battle Potion of Stamina
-r(279163),	-- Battle Potion of Intellect
-r(279169),	-- Battle Potion of Strength
-r(279161),	-- Battle Potion of Agility
-r(279170),	-- Battle Potion of Strength
-r(279164),	-- Battle Potion of Intellect
-r(279166),	-- Battle Potion of Stamina
-r(279159),	-- Battle Potion of Agility
-r(279165),	-- Battle Potion of Stamina
 8.0.1.26629
 8.0.1.26637
 8.0.1.26640
@@ -1054,17 +948,7 @@ r(279165),	-- Battle Potion of Stamina
 8.1.0.27826
 8.1.0.27934
 8.1.0.27985
-r(286923),	-- Eternal Alchemist Stone
-r(286630),	-- Sanguinated Dilution
-r(286922),	-- Spirited Alchemist Stone
-r(286547),	-- Transmute: Herbs to Anchors
-r(286921),	-- Tidal Alchemist Stone
 8.1.0.28048
-r(287449),	-- Potion of the Unveiling Eye
-r(287288),	-- Vial of Obfuscation
-r(287447),	-- Potion of the Unveiling Eye
-r(287448),	-- Potion of the Unveiling Eye
-r(287234),	-- Aqueous Dilution
 8.1.0.28085
 8.1.0.28151
 8.1.0.28186
@@ -1074,9 +958,6 @@ r(287234),	-- Aqueous Dilution
 8.1.0.28440
 8.1.0.28485
 8.1.0.28616
-r(291086),	-- Emblazoned Alchemist Stone
-r(291084),	-- Sanguinated Alchemist Stone
-r(291085),	-- Imbued Alchemist Stone
 8.1.0.28657
 8.1.0.28710
 8.1.0.28724
@@ -1093,8 +974,6 @@ r(291085),	-- Imbued Alchemist Stone
 8.1.0.29600
 8.1.0.29621
 8.1.5.28938
-r(288176),	-- Potion of Shifting States
-r(288182),	-- Potion of Durability
 8.1.5.29141
 8.1.5.29220
 8.1.5.29281
@@ -1123,62 +1002,11 @@ r(288182),	-- Potion of Durability
 8.1.5.30477
 8.1.5.30706
 8.2.0.30080
-r(298727),	-- Potion of Empowered Proximity
-r(298751),	-- Superior Battle Potion of Strength
-r(298846),	-- Greater Flask of Endless Fathoms
-r(298850),	-- Greater Flask of the Vast Horizon
-r(298853),	-- Greater Flask of the Undertow
-r(298734),	-- Superior Steelskin Potion
-r(298749),	-- Superior Battle Potion of Stamina
-r(298842),	-- Greater Flask of the Currents
-r(298997),	-- Ascended Alchemist Stone
-r(298747),	-- Superior Battle Potion of Stamina
-r(298752),	-- Superior Battle Potion of Strength
-r(298862),	-- Greater Mystical Cauldron
-r(298748),	-- Superior Battle Potion of Stamina
-r(298854),	-- Greater Flask of the Undertow
-r(298728),	-- Potion of Empowered Proximity
-r(298863),	-- Greater Mystical Cauldron
-r(298851),	-- Greater Flask of the Vast Horizon
-r(298847),	-- Greater Flask of Endless Fathoms
-r(298736),	-- Superior Steelskin Potion
-r(300749),	-- Potion of Unbridled Fury
-r(298740),	-- Potion of Reconstitution
-r(298731),	-- Superior Battle Potion of Agility
-r(298855),	-- Greater Flask of the Undertow
-r(298730),	-- Superior Battle Potion of Agility
-r(298738),	-- Potion of Reconstitution
-r(298750),	-- Superior Battle Potion of Strength
-r(298742),	-- Superior Battle Potion of Intellect
-r(298745),	-- Potion of Focused Resolve
-r(300751),	-- Potion of Unbridled Fury
-r(298996),	-- Crushing Alchemist Stone
-r(298726),	-- Potion of Empowered Proximity
-r(298843),	-- Greater Flask of the Currents
-r(298729),	-- Superior Battle Potion of Agility
-r(298743),	-- Superior Battle Potion of Intellect
-r(298746),	-- Potion of Focused Resolve
-r(298741),	-- Superior Battle Potion of Intellect
-r(298845),	-- Greater Flask of the Currents
-r(298737),	-- Potion of Reconstitution
-r(298744),	-- Potion of Focused Resolve
-r(298995),	-- Abyssal Alchemist Stone
-r(300750),	-- Potion of Unbridled Fury
-r(298864),	-- Greater Mystical Cauldron
-r(298735),	-- Superior Steelskin Potion
-r(298848),	-- Greater Flask of Endless Fathoms
-r(300752),	-- Potion of Wild Mending
-r(300754),	-- Potion of Wild Mending
-r(298852),	-- Greater Flask of the Vast Horizon
-r(300753),	-- Potion of Wild Mending
 8.2.0.30093
 8.2.0.30096
 8.2.0.30108
 8.2.0.30123
 8.2.0.30168
-r(301312),	-- Abyssal Healing Potion
-r(301311),	-- Abyssal Healing Potion
-r(301310),	-- Abyssal Healing Potion
 8.2.0.30170
 8.2.0.30203
 8.2.0.30262
@@ -1225,10 +1053,6 @@ r(301310),	-- Abyssal Healing Potion
 8.2.5.32750
 8.2.5.32978
 8.3.0.32044
-r(305994),	-- Unbound Alchemist Stone
-r(305993),	-- Awakened Alchemist Stone
-r(305992),	-- Peerless Alchemist Stone
-r(307172),	-- Void Focus
 8.3.0.32151
 8.3.0.32203
 8.3.0.32218
@@ -1267,54 +1091,6 @@ r(307172),	-- Void Focus
 8.3.7.35435
 8.3.7.35662
 9.0.1.33978
-r(307122),	-- Ground Widowbloom
-r(307107),	-- 9.0 Alchemy - Modified Crafting Reagent 03
-r(307142),	-- Shadowghast Ingot
-r(307124),	-- Ground Rising Glory
-r(307121),	-- Ground Vigil's Torch
-r(307105),	-- Alchemist's Pouch
-r(307381),	-- Potion of Empowered Exorcisms
-r(295084),	-- Potion of Shaded Sight
-r(307111),	--
-r(307093),	-- Potion of Spectral Agility
-r(307143),	-- Shadestone
-r(307110),	--
-r(307145),	-- 9.0 Transmute: 04
-r(307149),	-- 9.0 Transmute: 08
-r(307144),	-- Stones to Ore
-r(307120),	-- Ground Death Blossom
-r(307123),	-- Ground Marrowroot
-r(307103),	-- Spectral Flask of Stamina
-r(307087),	-- Eternal Cauldron
-r(301578),	-- Spiritual Healing Potion
-r(322301),	-- Potion of Sacrificial Anima
-r(309822),	-- Shadowlands Alchemy
-r(307200),	-- Spiritual Alchemy Stone
-r(256134),	-- Potion of Soul Purity
-r(261423),	-- Spiritual Rejuvenation Potion
-r(307383),	-- Potion of Divine Awakening
-r(307100),	-- Spiritual Anti-Venom
-r(307095),	-- Potion of Spiritual Clarity
-r(307146),	-- 9.0 Transmute: 05
-r(307094),	-- Potion of Hardened Shadows
-r(307382),	-- Potion of Phantom Fire
-r(307098),	-- Potion of Spectral Strength
-r(307106),	-- 9.0 Alchemy - Modified Crafting Reagent 02
-r(307101),	-- Spectral Flask of Power
-r(307109),	--
-r(307112),	--
-r(307147),	-- 9.0 Transmute: 06
-r(307125),	-- Ground Nightshade
-r(307096),	-- Potion of Spectral Intellect
-r(307108),	-- 9.0 Alchemy - Modified Crafting Reagent 04
-r(307148),	-- 9.0 Transmute: 07
-r(307097),	-- Potion of Spectral Stamina
-r(256133),	-- Potion of Specter Swiftness
-r(307119),	-- Embalmer's Oil
-r(307118),	-- Shadowcore Oil
-r(301683),	-- Spiritual Mana Potion
-r(261424),	-- Potion of the Hidden Spirit
-r(307384),	-- Potion of Deathly Fixation
 9.0.1.34003
 9.0.1.34081
 9.0.1.34098
@@ -1327,24 +1103,11 @@ r(307384),	-- Potion of Deathly Fixation
 9.0.1.34490
 9.0.1.34615
 9.0.1.34714
-r(334413),	-- Red Noggin Candle
 9.0.1.34821
 9.0.1.34902
 9.0.1.34972
 9.0.1.35078
 9.0.1.35167
-r(338204),	-- Bramblethorn Juice
-r(338203),	-- Refined Submission
-r(338194),	-- Flask of Measured Discipline
-r(338190),	-- Potion of Hibernal Rest
-r(338200),	-- Crushed Bones
-r(338191),	-- Liquid Sleep
-r(338202),	-- Elixir of Humility
-r(338195),	-- Distilled Resolve
-r(338199),	-- Brutal Oil
-r(338198),	-- Draught of Grotesque Strength
-r(338192),	-- Powdered Dreamroot
-r(338196),	-- Pulverized Breezebloom
 9.0.1.35213
 9.0.1.35256
 9.0.1.35282
@@ -1353,16 +1116,9 @@ r(338196),	-- Pulverized Breezebloom
 9.0.1.35482
 9.0.1.35522
 9.0.1.35598
-r(342887),	-- Potion of Unhindered Passing
 9.0.1.35679
-r(343675),	-- Novice Crafter's Mark
-r(343679),	-- Crafter's Mark I
-r(343676),	-- Crafter's Mark of the Chained Isle
-r(343677),	-- Crafter's Mark III
-r(343678),	-- Crafter's Mark II
 9.0.1.35707
 9.0.1.35755
-r(344316),	-- Potion of the Psychopomp's Speed
 9.0.1.35789
 9.0.1.35828
 9.0.1.35853
@@ -1428,12 +1184,6 @@ r(344316),	-- Potion of the Psychopomp's Speed
 9.0.5.38556
 9.1.0.38312
 9.1.0.38394
-r(354882),	-- Widow Burst
-r(354885),	-- Blossom Burst
-r(354881),	-- Glory Burst
-r(354884),	-- Torch Burst
-r(354860),	--
-r(354880),	-- Marrow Burst
 9.1.0.38511
 9.1.0.38524
 9.1.0.38549
@@ -1496,11 +1246,6 @@ r(354880),	-- Marrow Burst
 9.1.5.41793
 9.1.5.42010
 9.2.0.41089
-r(360318),	-- Sustaining Armor Polish
-r(359666),	-- Crafter's Mark IV
-r(359673),	-- Crafter's Mark of the First Ones
-r(359870),	-- Cosmic Healing Potion
-r(360014),	-- Infusion: Corpse Purification
 9.2.0.41257
 9.2.0.41360
 9.2.0.41462
