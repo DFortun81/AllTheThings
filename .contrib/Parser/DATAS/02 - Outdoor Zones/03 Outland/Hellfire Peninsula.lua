@@ -73,8 +73,8 @@ local FELANNIA_JOHAN_GROUPS = {};
 bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
 root("Zones", {
-	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
-		m(HELLFIRE_PENINSULA, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
+		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_hellfirepeninsula_01",
@@ -427,7 +427,6 @@ root("Zones", {
 								}),
 								cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
 									r(32664),	-- Runed Fel Iron Rod
-									r(32667),	-- Runed Eternium Rod
 								})),
 								cat(687, {	-- Shield Enchantments
 									r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
@@ -3290,7 +3289,7 @@ root("Zones", {
 						["coord"] = { 24.4, 38.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(25848, {	-- Formula: Runed Adamantite Rod
+							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
 								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
 						},
@@ -3377,8 +3376,8 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
-	}))),
+		})),
+	})),
 });
 
 -- Add in the items that aren't locked by phase.

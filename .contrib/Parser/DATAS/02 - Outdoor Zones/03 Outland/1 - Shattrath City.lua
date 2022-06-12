@@ -580,7 +580,9 @@ local MADAME_RUBY_GROUPS = {
 	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
 		["isLimited"] = true,
 	}),
-	i(25849),	-- Formula: Runed Eternium Rod
+	i(25849, {	-- Formula: Runed Eternium Rod (RECIPE!)
+		["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+	}),
 	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
 	}),
@@ -2091,7 +2093,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
-							i(33148, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Dodge
+							i(33148, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
 							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={"added 2.0.1","removed 6.0.2"}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
 							i(30832),	-- Gavel of Unearthed Secrets
 							i(29199, {	-- Glyph of Shadow Warding

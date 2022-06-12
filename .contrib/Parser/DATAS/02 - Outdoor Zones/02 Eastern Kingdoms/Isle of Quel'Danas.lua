@@ -1317,8 +1317,8 @@ local SORYN_GROUPS = {
 	}),
 	-- #endif
 };
-root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
-	m(ISLE_OF_QUELDANAS, {
+root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
+	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_isleofqueldanas",
@@ -2455,8 +2455,8 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, bubbleDownSe
 				}),
 			}),
 		},
-	}),
-}))));
+	})),
+})));
 
 -- Remove the phase identifiers from the PvP Gear.
 for i,o in ipairs(KARYNNA_GROUPS) do o.u = nil; end

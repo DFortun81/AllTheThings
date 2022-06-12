@@ -4768,13 +4768,13 @@ root("Zones", {
 							i(31927),	-- Living Band
 						},
 					}),
-					i(22530, {	-- Formula: Enchant Bracer - Greater Dodge
+					i(22530, {	-- Formula: Enchant Bracer - Greater Dodge / TBC: Formula: Enchant Bracer - Major Defense (RECIPE!)
 						["crs"] = {
 							23008,	-- Ethereum Jailor
 							22822,	-- Ethereum Nullifier
 						},
 					}),
-					i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance
+					i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
 						["cr"] = 18870,  -- Voidshrieker
 						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 					}),

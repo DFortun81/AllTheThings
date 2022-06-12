@@ -1534,7 +1534,7 @@ root("Zones", {
 						["coord"] = { 48.8, 46.0, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(25848, {	-- Formula: Runed Adamantite Rod
+							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
 								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
 							i(27699),	-- Recipe: Golden Fish Sticks
