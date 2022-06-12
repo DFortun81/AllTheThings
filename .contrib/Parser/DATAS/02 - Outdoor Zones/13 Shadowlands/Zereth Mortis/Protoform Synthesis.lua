@@ -603,7 +603,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(189365, {	-- Fierce Scarabid
 						["cost"] = {
-							{ "i", GENESIS, 300 },
+							{ "i", GENESIS, 400 },
 							{ "i", SCARABID_LATTICE, 1},
 							{ "i", 189163, 1 },	-- 1x Glimmer of Motion
 						},
