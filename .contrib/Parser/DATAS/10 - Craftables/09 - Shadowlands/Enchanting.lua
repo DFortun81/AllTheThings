@@ -1,9 +1,9 @@
------------------------------------------------------
---     W O R L D   E V E N T S   M O D U L E       --
------------------------------------------------------
+---------------------------------------------
+--    C R A F T A B L E S   M O D U L E    --
+---------------------------------------------
 
 root("Craftables", tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
-	prof(ENCHANTING, {
+	prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 		r(13262, {	-- Disenchant
 			i(172232),	-- Eternal Crystal
 			i(172231),	-- Sacred Shard
@@ -73,5 +73,5 @@ root("Craftables", tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2"
 			i(172370),	-- Enchant Weapon - Lightless Force
 			i(172368),	-- Enchant Weapon - Sinful Revelation
 		}),
-	}),
+	})),
 })));

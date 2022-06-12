@@ -574,24 +574,24 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 	}),
 });
 local MADAME_RUBY_GROUPS = {
-	i(28282, {	-- Formula: Enchant Shield - Major Stamina
+	i(28282, {	-- Formula: Enchant Shield - Major Stamina (RECIPE!)
 		["isLimited"] = true,
 	}),
-	i(22565, {	-- Formula: Large Prismatic Shard
+	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
 		["isLimited"] = true,
 	}),
 	i(25849),	-- Formula: Runed Eternium Rod
-	i(22562, {	-- Formula: Superior Mana Oil
+	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
 	}),
-	i(22563, {	-- Formula: Superior Wizard Oil
+	i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
 		["isLimited"] = true,
 	}),
 };
 local ZURII_YURIAL_GROUPS = {};
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHATTRATH_CITY, {
+		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",
 			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
 			["isRaid"] = true,
@@ -1526,10 +1526,10 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
 							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
-							i(28273),	-- Formula: Enchant Gloves - Major Healing
+							i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
 							i(33153, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
-							i(22537),	-- Formula: Enchant Ring - Healing Power
-							i(28281),	-- Formula: Enchant Weapon - Major Healing
+							i(22537, {["timeline"]={"added 2.0.1","removed 6.0.2"}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+							i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 							i(29175),	-- Gavel of Pure Light
 							i(29195, {	-- Glyph of Arcane Warding
 								["timeline"] = { "removed 5.0.4" },
@@ -2092,7 +2092,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
 							i(33148, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Dodge
-							applyclassicphase(TBC_PHASE_THREE, i(22538)),	-- Formula: Enchant Ring - Stats
+							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={"added 2.0.1","removed 6.0.2"}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
 							i(30832),	-- Gavel of Unearthed Secrets
 							i(29199, {	-- Glyph of Shadow Warding
 								["timeline"] = { "removed 5.0.4" },
@@ -2499,7 +2499,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

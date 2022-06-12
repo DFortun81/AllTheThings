@@ -172,70 +172,6 @@
 2.0.0.5665
 2.0.0.5666
 2.0.0.6080
-r(28029),	-- Enchanting,		TBC: Enchanting
-r(27899),	-- Brawn,		TBC: Enchant Bracer - Brawn
-r(27905),	-- Stats,		TBC: Enchant Bracer - Stats
-r(27906),	-- Greater Dodge,		TBC: Enchant Bracer - Major Defense
-r(27911),	-- Superior Healing,		TBC: Enchant Bracer - Superior Healing
-r(27913),	-- Versatility Prime,		TBC: Enchant Bracer - Restore Mana Prime
-r(27914),	-- Fortitude,		TBC: Enchant Bracer - Fortitude
-r(27917),	-- Spellpower,		TBC: Enchant Bracer - Spellpower
-r(27920),	-- ,		TBC: Enchant Ring - Striking
-r(27924),	-- ,		TBC: Enchant Ring - Spellpower
-r(27926),	-- ,		TBC: Enchant Ring - Healing Power
-r(27927),	-- ,		TBC: Enchant Ring - Stats
-r(27944),	-- Lesser Dodge,		TBC: Enchant Shield - Tough Shield
-r(27945),	-- Intellect,		TBC: Enchant Shield - Intellect
-r(27946),	-- Parry,		TBC: Enchant Shield - Shield Block
-r(27947),	-- ,		TBC: Enchant Shield - Resistance
-r(27948),	-- Vitality,		TBC: Enchant Boots - Vitality
-r(27950),	-- Fortitude,		TBC: Enchant Boots - Fortitude
-r(27951),	-- Dexterity,		TBC: Enchant Boots - Dexterity
-r(27954),	-- Surefooted,		TBC: Enchant Boots - Surefooted
-r(27957),	-- Exceptional Health,		TBC: Enchant Chest - Exceptional Health
-r(27958),	-- Exceptional Mana,		TBC: Enchant Chest - Exceptional Mana
-r(27960),	-- Exceptional Stats,		TBC: Enchant Chest - Exceptional Stats
-r(27961),	-- Major Armor,		TBC: Enchant Cloak - Major Armor
-r(27962),	-- ,		TBC: Enchant Cloak - Major Resistance
-r(27967),	-- Major Striking,		TBC: Enchant Weapon - Major Striking
-r(27968),	-- Major Intellect,		TBC: Enchant Weapon - Major Intellect
-r(27972),	-- Potency,		TBC: Enchant Weapon - Potency
-r(27971),	-- Savagery,		TBC: Enchant 2H Weapon - Savagery
-r(27975),	-- Major Spellpower,		TBC: Enchant Weapon - Major Spellpower
-r(27977),	-- Major Agility,		TBC: Enchant 2H Weapon - Major Agility
-r(28004),	-- Battlemaster,		TBC: Enchant Weapon - Battlemaster
-r(28003),	-- Spellsurge,		TBC: Enchant Weapon - Spellsurge
-r(27984),	-- Mongoose,		TBC: Enchant Weapon - Mongoose
-r(27981),	-- Sunfire,		TBC: Enchant Weapon - Sunfire
-r(27982),	-- Soulfrost,		TBC: Enchant Weapon - Soulfrost
-r(28016),	-- Superior Mana Oil,		TBC: Superior Mana Oil
-r(28019),	-- Superior Wizard Oil,		TBC: Superior Wizard Oil
-r(28021),	-- Arcane Dust,		TBC: Arcane Dust
-r(28022),	-- Large Prismatic Shard,		TBC: Large Prismatic Shard
-r(32664),	-- ,		TBC: Runed Fel Iron Rod
-r(32665),	-- ,		TBC: Runed Adamantite Rod
-r(32667),	-- ,		TBC: Runed Eternium Rod
-r(33990),	-- Major Versatility,		TBC: Enchant Chest - Major Spirit
-r(33991),	-- Versatility Prime,		TBC: Enchant Chest - Restore Mana Prime
-r(33992),	-- Major Armor,		TBC: Enchant Chest - Major Resilience
-r(33993),	-- Blasting,		TBC: Enchant Gloves - Blasting
-r(33994),	-- Precise Strikes,		TBC: Enchant Gloves - Spell Strike
-r(33995),	-- Major Strength,		TBC: Enchant Gloves - Major Strength
-r(33996),	-- Assault,		TBC: Enchant Gloves - Assault
-r(33997),	-- Major Spellpower,		TBC: Enchant Gloves - Major Spellpower
-r(33999),	-- Major Healing,		TBC: Enchant Gloves - Major Healing
-r(34001),	-- Major Intellect,		TBC: Enchant Bracer - Major Intellect
-r(34002),	-- Lesser Assault,		TBC: Enchant Bracer - Assault
-r(34003),	-- PvP Power,		TBC: Enchant Cloak - Spell Penetration
-r(34004),	-- Greater Agility,		TBC: Enchant Cloak - Greater Agility
-r(34005),	-- ,		TBC: Enchant Cloak - Greater Arcane Resistance
-r(34006),	-- ,		TBC: Enchant Cloak - Greater Shadow Resistance
-r(34007),	-- Cat's Swiftness,		TBC: Enchant Boots - Cat's Swiftness
-r(34008),	-- Boar's Speed,		TBC: Enchant Boots - Boar's Speed
-r(34009),	-- Major Stamina,		TBC: Enchant Shield - Major Stamina
-r(34010),	-- Major Healing,		TBC: Enchant Weapon - Major Healing
-r(28027),	-- Prismatic Sphere,		TBC: Prismatic Sphere
-r(28028),	-- Void Sphere,		TBC: Void Sphere
 2.0.3.6299
 2.0.5.6320
 2.0.6.6337
@@ -252,15 +188,6 @@ r(28028),	-- Void Sphere,		TBC: Void Sphere
 2.4.1.8125
 2.4.2.8278
 2.4.3.8606
-r(42613),	-- ,		TBC: Nexus Transformation
-r(42615),	-- Small Prismatic Shard,		TBC: Small Prismatic Shard
-r(42620),	-- Greater Agility,		TBC: Enchant Weapon - Greater Agility
-r(42974),	-- Executioner,		TBC: Enchant Weapon - Executioner
-r(44383),	-- Armor,		TBC: Enchant Shield - Resilience
-r(45765),	-- Void Shatter,		TBC: Void Shatter
-r(46578),	-- Deathfrost,		TBC: Enchant Weapon - Deathfrost
-r(46594),	-- Dodge,		TBC: Enchant Chest - Defense
-r(47051),	-- Greater Dodge,		TBC: Enchant Cloak - Steelweave
 2.5.1.38043
 2.5.1.38061
 2.5.1.38093
@@ -436,7 +363,6 @@ r(62256),	-- Major Stamina
 r(62257),	-- Titanguard
 r(62948),	-- Greater Spellpower
 r(62959),	-- Spellpower
-r(63746),	-- Lesser Accuracy
 r(64441),	-- Blade Ward
 r(64579),	-- Blood Draining
 3.1.1.9806
@@ -457,75 +383,6 @@ r(64579),	-- Blood Draining
 r(69412),	-- Abyssal Shatter
 r(71692),	-- Angler
 4.0.1.12911
-r(28029),	-- Enchanting,		TBC: Enchanting
-r(27899),	-- Brawn,		TBC: Enchant Bracer - Brawn
-r(27905),	-- Stats,		TBC: Enchant Bracer - Stats
-r(27906),	-- Greater Dodge,		TBC: Enchant Bracer - Major Defense
-r(27911),	-- Superior Healing,		TBC: Enchant Bracer - Superior Healing
-r(27913),	-- Versatility Prime,		TBC: Enchant Bracer - Restore Mana Prime
-r(27914),	-- Fortitude,		TBC: Enchant Bracer - Fortitude
-r(27917),	-- Spellpower,		TBC: Enchant Bracer - Spellpower
-r(27920),	-- ,		TBC: Enchant Ring - Striking
-r(27924),	-- ,		TBC: Enchant Ring - Spellpower
-r(27926),	-- ,		TBC: Enchant Ring - Healing Power
-r(27927),	-- ,		TBC: Enchant Ring - Stats
-r(27944),	-- Lesser Dodge,		TBC: Enchant Shield - Tough Shield
-r(27945),	-- Intellect,		TBC: Enchant Shield - Intellect
-r(27946),	-- Parry,		TBC: Enchant Shield - Shield Block
-r(27947),	-- ,		TBC: Enchant Shield - Resistance
-r(27948),	-- Vitality,		TBC: Enchant Boots - Vitality
-r(27950),	-- Fortitude,		TBC: Enchant Boots - Fortitude
-r(27951),	-- Dexterity,		TBC: Enchant Boots - Dexterity
-r(27954),	-- Surefooted,		TBC: Enchant Boots - Surefooted
-r(27957),	-- Exceptional Health,		TBC: Enchant Chest - Exceptional Health
-r(27958),	-- Exceptional Mana,		TBC: Enchant Chest - Exceptional Mana
-r(27960),	-- Exceptional Stats,		TBC: Enchant Chest - Exceptional Stats
-r(27961),	-- Major Armor,		TBC: Enchant Cloak - Major Armor
-r(27962),	-- ,		TBC: Enchant Cloak - Major Resistance
-r(27967),	-- Major Striking,		TBC: Enchant Weapon - Major Striking
-r(27968),	-- Major Intellect,		TBC: Enchant Weapon - Major Intellect
-r(27972),	-- Potency,		TBC: Enchant Weapon - Potency
-r(27971),	-- Savagery,		TBC: Enchant 2H Weapon - Savagery
-r(27975),	-- Major Spellpower,		TBC: Enchant Weapon - Major Spellpower
-r(27977),	-- Major Agility,		TBC: Enchant 2H Weapon - Major Agility
-r(28004),	-- Battlemaster,		TBC: Enchant Weapon - Battlemaster
-r(28003),	-- Spellsurge,		TBC: Enchant Weapon - Spellsurge
-r(27984),	-- Mongoose,		TBC: Enchant Weapon - Mongoose
-r(27981),	-- Sunfire,		TBC: Enchant Weapon - Sunfire
-r(27982),	-- Soulfrost,		TBC: Enchant Weapon - Soulfrost
-r(28016),	-- Superior Mana Oil,		TBC: Superior Mana Oil
-r(28019),	-- Superior Wizard Oil,		TBC: Superior Wizard Oil
-r(28021),	-- Arcane Dust,		TBC: Arcane Dust
-r(28022),	-- Large Prismatic Shard,		TBC: Large Prismatic Shard
-r(32664),	-- ,		TBC: Runed Fel Iron Rod
-r(32665),	-- ,		TBC: Runed Adamantite Rod
-r(32667),	-- ,		TBC: Runed Eternium Rod
-r(33990),	-- Major Versatility,		TBC: Enchant Chest - Major Spirit
-r(33991),	-- Versatility Prime,		TBC: Enchant Chest - Restore Mana Prime
-r(33992),	-- Major Armor,		TBC: Enchant Chest - Major Resilience
-r(33993),	-- Blasting,		TBC: Enchant Gloves - Blasting
-r(33994),	-- Precise Strikes,		TBC: Enchant Gloves - Spell Strike
-r(33995),	-- Major Strength,		TBC: Enchant Gloves - Major Strength
-r(33996),	-- Assault,		TBC: Enchant Gloves - Assault
-r(33997),	-- Major Spellpower,		TBC: Enchant Gloves - Major Spellpower
-r(33999),	-- Major Healing,		TBC: Enchant Gloves - Major Healing
-r(34001),	-- Major Intellect,		TBC: Enchant Bracer - Major Intellect
-r(34002),	-- Lesser Assault,		TBC: Enchant Bracer - Assault
-r(34003),	-- PvP Power,		TBC: Enchant Cloak - Spell Penetration
-r(34004),	-- Greater Agility,		TBC: Enchant Cloak - Greater Agility
-r(34005),	-- ,		TBC: Enchant Cloak - Greater Arcane Resistance
-r(34006),	-- ,		TBC: Enchant Cloak - Greater Shadow Resistance
-r(34007),	-- Cat's Swiftness,		TBC: Enchant Boots - Cat's Swiftness
-r(34008),	-- Boar's Speed,		TBC: Enchant Boots - Boar's Speed
-r(34009),	-- Major Stamina,		TBC: Enchant Shield - Major Stamina
-r(34010),	-- Major Healing,		TBC: Enchant Weapon - Major Healing
-r(28027),	-- Prismatic Sphere,		TBC: Prismatic Sphere
-r(28028),	-- Void Sphere,		TBC: Void Sphere
-r(42613),	-- ,		TBC: Nexus Transformation
-r(42615),	-- Small Prismatic Shard,		TBC: Small Prismatic Shard
-r(42620),	-- Greater Agility,		TBC: Enchant Weapon - Greater Agility
-r(42974),	-- Executioner,		TBC: Enchant Weapon - Executioner
-r(44383),	-- Armor,		TBC: Enchant Shield - Resilience
 r(44483),	--
 r(44484),	-- Haste
 r(44488),	-- Precision
@@ -568,10 +425,6 @@ r(44633),	-- Exceptional Agility
 r(44635),	-- Greater Spellpower
 r(44645),	--
 r(44636),	--
-r(45765),	-- Void Shatter,		TBC: Void Shatter
-r(46578),	-- Deathfrost,		TBC: Enchant Weapon - Deathfrost
-r(46594),	-- Dodge,		TBC: Enchant Chest - Defense
-r(47051),	-- Greater Dodge,		TBC: Enchant Cloak - Steelweave
 r(47672),	-- Mighty Stamina
 r(47898),	-- Greater Speed
 r(47899),	-- Wisdom
@@ -602,7 +455,6 @@ r(62256),	-- Major Stamina
 r(62257),	-- Titanguard
 r(62948),	-- Greater Spellpower
 r(62959),	-- Spellpower
-r(63746),	-- Lesser Accuracy
 r(64441),	-- Blade Ward
 r(64579),	-- Blood Draining
 r(69412),	-- Abyssal Shatter
@@ -657,75 +509,6 @@ r(74255),	-- Greater Mastery
 r(74256),	-- Greater Speed
 r(74258),	-- Enchanting
 4.3.4.15595
-r(28029),	-- Enchanting,		TBC: Enchanting
-r(27899),	-- Brawn,		TBC: Enchant Bracer - Brawn
-r(27905),	-- Stats,		TBC: Enchant Bracer - Stats
-r(27906),	-- Greater Dodge,		TBC: Enchant Bracer - Major Defense
-r(27911),	-- Superior Healing,		TBC: Enchant Bracer - Superior Healing
-r(27913),	-- Versatility Prime,		TBC: Enchant Bracer - Restore Mana Prime
-r(27914),	-- Fortitude,		TBC: Enchant Bracer - Fortitude
-r(27917),	-- Spellpower,		TBC: Enchant Bracer - Spellpower
-r(27920),	-- ,		TBC: Enchant Ring - Striking
-r(27924),	-- ,		TBC: Enchant Ring - Spellpower
-r(27926),	-- ,		TBC: Enchant Ring - Healing Power
-r(27927),	-- ,		TBC: Enchant Ring - Stats
-r(27944),	-- Lesser Dodge,		TBC: Enchant Shield - Tough Shield
-r(27945),	-- Intellect,		TBC: Enchant Shield - Intellect
-r(27946),	-- Parry,		TBC: Enchant Shield - Shield Block
-r(27947),	-- ,		TBC: Enchant Shield - Resistance
-r(27948),	-- Vitality,		TBC: Enchant Boots - Vitality
-r(27950),	-- Fortitude,		TBC: Enchant Boots - Fortitude
-r(27951),	-- Dexterity,		TBC: Enchant Boots - Dexterity
-r(27954),	-- Surefooted,		TBC: Enchant Boots - Surefooted
-r(27957),	-- Exceptional Health,		TBC: Enchant Chest - Exceptional Health
-r(27958),	-- Exceptional Mana,		TBC: Enchant Chest - Exceptional Mana
-r(27960),	-- Exceptional Stats,		TBC: Enchant Chest - Exceptional Stats
-r(27961),	-- Major Armor,		TBC: Enchant Cloak - Major Armor
-r(27962),	-- ,		TBC: Enchant Cloak - Major Resistance
-r(27967),	-- Major Striking,		TBC: Enchant Weapon - Major Striking
-r(27968),	-- Major Intellect,		TBC: Enchant Weapon - Major Intellect
-r(27972),	-- Potency,		TBC: Enchant Weapon - Potency
-r(27971),	-- Savagery,		TBC: Enchant 2H Weapon - Savagery
-r(27975),	-- Major Spellpower,		TBC: Enchant Weapon - Major Spellpower
-r(27977),	-- Major Agility,		TBC: Enchant 2H Weapon - Major Agility
-r(28004),	-- Battlemaster,		TBC: Enchant Weapon - Battlemaster
-r(28003),	-- Spellsurge,		TBC: Enchant Weapon - Spellsurge
-r(27984),	-- Mongoose,		TBC: Enchant Weapon - Mongoose
-r(27981),	-- Sunfire,		TBC: Enchant Weapon - Sunfire
-r(27982),	-- Soulfrost,		TBC: Enchant Weapon - Soulfrost
-r(28016),	-- Superior Mana Oil,		TBC: Superior Mana Oil
-r(28019),	-- Superior Wizard Oil,		TBC: Superior Wizard Oil
-r(28021),	-- Arcane Dust,		TBC: Arcane Dust
-r(28022),	-- Large Prismatic Shard,		TBC: Large Prismatic Shard
-r(32664),	-- ,		TBC: Runed Fel Iron Rod
-r(32665),	-- ,		TBC: Runed Adamantite Rod
-r(32667),	-- ,		TBC: Runed Eternium Rod
-r(33990),	-- Major Versatility,		TBC: Enchant Chest - Major Spirit
-r(33991),	-- Versatility Prime,		TBC: Enchant Chest - Restore Mana Prime
-r(33992),	-- Major Armor,		TBC: Enchant Chest - Major Resilience
-r(33993),	-- Blasting,		TBC: Enchant Gloves - Blasting
-r(33994),	-- Precise Strikes,		TBC: Enchant Gloves - Spell Strike
-r(33995),	-- Major Strength,		TBC: Enchant Gloves - Major Strength
-r(33996),	-- Assault,		TBC: Enchant Gloves - Assault
-r(33997),	-- Major Spellpower,		TBC: Enchant Gloves - Major Spellpower
-r(33999),	-- Major Healing,		TBC: Enchant Gloves - Major Healing
-r(34001),	-- Major Intellect,		TBC: Enchant Bracer - Major Intellect
-r(34002),	-- Lesser Assault,		TBC: Enchant Bracer - Assault
-r(34003),	-- PvP Power,		TBC: Enchant Cloak - Spell Penetration
-r(34004),	-- Greater Agility,		TBC: Enchant Cloak - Greater Agility
-r(34005),	-- ,		TBC: Enchant Cloak - Greater Arcane Resistance
-r(34006),	-- ,		TBC: Enchant Cloak - Greater Shadow Resistance
-r(34007),	-- Cat's Swiftness,		TBC: Enchant Boots - Cat's Swiftness
-r(34008),	-- Boar's Speed,		TBC: Enchant Boots - Boar's Speed
-r(34009),	-- Major Stamina,		TBC: Enchant Shield - Major Stamina
-r(34010),	-- Major Healing,		TBC: Enchant Weapon - Major Healing
-r(28027),	-- Prismatic Sphere,		TBC: Prismatic Sphere
-r(28028),	-- Void Sphere,		TBC: Void Sphere
-r(42613),	-- ,		TBC: Nexus Transformation
-r(42615),	-- Small Prismatic Shard,		TBC: Small Prismatic Shard
-r(42620),	-- Greater Agility,		TBC: Enchant Weapon - Greater Agility
-r(42974),	-- Executioner,		TBC: Enchant Weapon - Executioner
-r(44383),	-- Armor,		TBC: Enchant Shield - Resilience
 r(44483),	--
 r(44484),	-- Haste
 r(44488),	-- Precision
@@ -768,10 +551,6 @@ r(44633),	-- Exceptional Agility
 r(44635),	-- Greater Spellpower
 r(44645),	--
 r(44636),	--
-r(45765),	-- Void Shatter,		TBC: Void Shatter
-r(46578),	-- Deathfrost,		TBC: Enchant Weapon - Deathfrost
-r(46594),	-- Dodge,		TBC: Enchant Chest - Defense
-r(47051),	-- Greater Dodge,		TBC: Enchant Cloak - Steelweave
 r(47672),	-- Mighty Stamina
 r(47898),	-- Greater Speed
 r(47899),	-- Wisdom
@@ -802,7 +581,6 @@ r(62256),	-- Major Stamina
 r(62257),	-- Titanguard
 r(62948),	-- Greater Spellpower
 r(62959),	-- Spellpower
-r(63746),	-- Lesser Accuracy
 r(64441),	-- Blade Ward
 r(64579),	-- Blood Draining
 r(69412),	-- Abyssal Shatter

@@ -181,14 +181,42 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 53.4, 49.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						r(7411),	-- Enchanting (Apprentice)
-						r(7412),	-- Enchanting (Journeyman)
-						r(7413),	-- Enchanting (Expert)
-						r(13920, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Enchanting (Artisan)
+						r(7411, {	-- Enchanting (Apprentice)
+							["timeline"]={ "removed 8.0.1" },
+							-- #if ANYCLASSIC
+							["collectible"] = false,
+							-- #endif
+						}),
+						r(7412, {	-- Enchanting (Journeyman)
+							["timeline"]={ "removed 8.0.1" },
+							-- #if ANYCLASSIC
+							["collectible"] = false,
+							-- #endif
+						}),
+						r(7413, {	-- Enchanting (Expert)
+							["timeline"]={ "removed 8.0.1" },
+							-- #if ANYCLASSIC
+							["collectible"] = false,
+							-- #endif
+						}),
+						r(13920, {	-- Enchanting (Artisan)
+							["timeline"]={ "removed 8.0.1" },
+							-- #if ANYCLASSIC
+							["collectible"] = false,
+							-- #endif
+						}),
+						r(13920, {	-- Enchanting (Artisan)
+							["timeline"]={ GODAN_TIMELINE, "removed 8.0.1" },
+							-- #if ANYCLASSIC
+							["collectible"] = false,
+							-- #endif
+						}),
+						r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
 						r(13262),	-- Disenchant
 						cat(690, {	-- Boot Enchantments
 							r(13935, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
 							r(20023, {["timeline"]={"added 2.3.0"}}),	-- Greater Agility
+							r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
 							r(13637, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Agility
 							r(13644, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
 							r(7867),	-- Minor Agility
@@ -219,7 +247,7 @@ root("Zones", m(KALIMDOR, {
 							r(13538),	-- Lesser Absorption
 							r(7748),	-- Lesser Health
 							r(13700, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stats
-							r(20028, {["timeline"]={"removed 2.3.0"}}),	-- Major Mana
+							r(20028, {["timeline"]={"added 2.3.0"}}),	-- Major Mana
 							r(13607),	-- Mana
 							r(7426),	-- Minor Absorption
 							r(7420),	-- Minor Health

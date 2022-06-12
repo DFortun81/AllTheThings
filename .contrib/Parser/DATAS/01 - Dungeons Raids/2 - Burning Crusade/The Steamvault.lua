@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	inst(261, {	-- The Steamvault
+	inst(261, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {
@@ -93,7 +93,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(24159, {	-- Design: Khorium Band of Frost
 					["cr"] = 17722,	-- Coilfang Sorceress
 				}),
-				i(22533, {	-- Formula: Enchant Bracer - Fortitude
+				i(22533, {	-- Formula: Enchant Bracer - Fortitude (RECIPE!)
 					["cr"] = 17803,	-- Coilfang Oracle
 				}),
 				i(24367, {	-- Orders from Lady Vashj
@@ -299,7 +299,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 		},
-	}),
+	})),
 })));
 -- #if AFTER WOD
 root("HiddenQuestTriggers", {

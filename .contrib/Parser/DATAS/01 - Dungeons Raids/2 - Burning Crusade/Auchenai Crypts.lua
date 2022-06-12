@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	inst(247, {	-- Auchenai Crypts
+	inst(247, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
 		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
 		["maps"] = {
@@ -123,7 +123,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 			}),
 			n(ZONE_DROPS, {
-				i(22544, {	-- Formula: Enchant Boots - Dexterity
+				i(22544, {	-- Formula: Enchant Boots - Dexterity (RECIPE!)
 					["cr"] = 18521,	-- Raging Skeleton
 				}),
 				i(23605, {	-- Plans: Felsteel Gloves
@@ -279,7 +279,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 		},
-	}),
+	})),
 })));
 -- #if AFTER WOD
 root("HiddenQuestTriggers", {

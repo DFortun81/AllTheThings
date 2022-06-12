@@ -73,7 +73,7 @@ local FELANNIA_JOHAN_GROUPS = {};
 bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
 root("Zones", {
-	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		m(HELLFIRE_PENINSULA, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
 			-- #if AFTER WRATH
@@ -378,8 +378,64 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				prof(FISHING, {
-					i(34867),	-- Monstrous Felblood Snapper
+				n(PROFESSIONS, {
+					prof(FISHING, {
+						i(34867),	-- Monstrous Felblood Snapper
+					}),
+					prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+						n(18753, {	-- Felannia <Enchanting Trainer>
+							["coord"] = { 52.5, 36.0, HELLFIRE_PENINSULA },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								r(28029, {	-- Enchanting (Master)
+									["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+									-- #if ANYCLASSIC
+									["collectible"] = false,
+									-- #endif
+								}),
+								r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
+								cat(682, {	-- Bracer Enchantments
+									r(27899),	-- Brawn
+									r(34002),	-- Lesser Assault
+									r(34001),	-- Major Intellect
+									r(27905),	-- Stats
+								}),
+								cat(683, {	-- Chest Enchantments
+									r(27957),	-- Exceptional Health
+									r(33990),	-- Major Versatility  / TBC: Major Spirit
+									r(33991),	-- Versatility Prime / TBC: Restore Mana Prime
+								}),
+								cat(684, {	-- Cloak Enchantments
+									r(34004),	-- Greater Agility
+									r(27961),	-- Major Armor
+								}),
+								cat(685, {	-- Glove Enchantments
+									r(33996),	-- Assault
+									r(33993),	-- Blasting
+									r(33995),	-- Major Strength
+								}),
+								cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+									r(217641),	-- Tome of Illusions: Outland
+								})),
+								cat(689, {	-- Other
+									r(28027),	-- Prismatic Sphere
+									r(28028),	-- Void Sphere
+								}),
+								cat(680, {	-- Reagents
+									r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
+									r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
+								}),
+								cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+									r(32664),	-- Runed Fel Iron Rod
+									r(32667),	-- Runed Eternium Rod
+								})),
+								cat(687, {	-- Shield Enchantments
+									r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
+									r(27944),	-- Lesser Dodge / TBC: Tough Shield
+								}),
+							},
+						}),
+					})),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls
@@ -3051,8 +3107,8 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35464)),	-- Dreadweave Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35465)),	-- Evoker's Silk Amice
 							i(25825),	-- Footman's Longsword
-							i(22531),	-- Formula: Enchant Bracer - Superior Healing
-							i(22547),	-- Formula: Enchant Chest - Exceptional Stats
+							i(22531),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
+							i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
 							i(33150, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(29166),	-- Hellforged Halberd
 							i(29156),	-- Honor's Call
@@ -3144,8 +3200,8 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35332)),	-- Dreadweave Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35343)),	-- Evoker's Silk Amice
 							i(25824),	-- Farseer's Band
-							i(24000),	-- Formula: Enchant Bracer - Superior Healing
-							i(24003),	-- Formula: Enchant Chest - Exceptional Stats
+							i(24000),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
+							i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
 							i(33151, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(25823),	-- Grunt's Waraxe
 							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
@@ -3234,7 +3290,9 @@ root("Zones", {
 						["coord"] = { 24.4, 38.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(25848),	-- Formula: Runed Adamantite Rod
+							i(25848, {	-- Formula: Runed Adamantite Rod
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+							}),
 						},
 					}),
 					n(18266, {	-- Warrant Officer Tracy Proudwell
@@ -3320,7 +3378,7 @@ root("Zones", {
 				}),
 			},
 		}),
-	})),
+	}))),
 });
 
 -- Add in the items that aren't locked by phase.

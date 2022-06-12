@@ -35,7 +35,7 @@ local KARYNNA_GROUPS = {
 		i(27705, {	-- Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(31616, {	-- Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -51,7 +51,7 @@ local KARYNNA_GROUPS = {
 		i(31618, {	-- Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(27881, {	-- Gladiator's Scaled Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -118,7 +118,7 @@ local KARYNNA_GROUPS = {
 		i(31411, {	-- Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(27708, {	-- Gladiator's Satin Hood
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -151,7 +151,7 @@ local KARYNNA_GROUPS = {
 		i(26001, {	-- Gladiator's Linked Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(27471, {	-- Gladiator's Mail Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -167,7 +167,7 @@ local KARYNNA_GROUPS = {
 		i(27472, {	-- Gladiator's Mail Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		i(31400, {	-- Gladiator's Ringmail Helm
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
 		}),
@@ -217,7 +217,7 @@ local KARYNNA_GROUPS = {
 		i(24555, {	-- Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
 		}),
-		
+
 		i(30187, {	-- Gladiator's Felweave Cowl
 			["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
 		}),
@@ -250,7 +250,7 @@ local KARYNNA_GROUPS = {
 		i(28128, {	-- Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(31376, {	-- Gladiator's Kodohide Helm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -266,7 +266,7 @@ local KARYNNA_GROUPS = {
 		i(31377, {	-- Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		i(28137, {	-- Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 		}),
@@ -500,7 +500,7 @@ local OLUS_GROUPS = {
 		i(31995, {	-- Merciless Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32022, {	-- Merciless Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -516,7 +516,7 @@ local OLUS_GROUPS = {
 		i(32023, {	-- Merciless Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32041, {	-- Merciless Gladiator's Scaled Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -583,7 +583,7 @@ local OLUS_GROUPS = {
 		i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(32035, {	-- Merciless Gladiator's Satin Hood
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
@@ -616,7 +616,7 @@ local OLUS_GROUPS = {
 		i(32007, {	-- Merciless Gladiator's Linked Leggings
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32011, {	-- Merciless Gladiator's Mail Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -632,7 +632,7 @@ local OLUS_GROUPS = {
 		i(32012, {	-- Merciless Gladiator's Mail Leggings
 			["cost"] = { { "i", 30245, 1, } },	-- 1x Leggings of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
-		
+
 		i(32031, {	-- Merciless Gladiator's Ringmail Helm
 			["cost"] = { { "i", 30242, 1, } },	-- 1x Helm of the Vanquished Champion [Paladin, Rogue, Shaman]
 		}),
@@ -682,7 +682,7 @@ local OLUS_GROUPS = {
 		i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 30247, 1, } },	-- 1x Leggings of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
-		
+
 		i(31980, {	-- Merciless Gladiator's Felweave Cowl
 			["cost"] = { { "i", 30244, 1, } },	-- 1x Helm of the Vanquished Hero [Hunter, Mage, Warlock]
 		}),
@@ -715,7 +715,7 @@ local OLUS_GROUPS = {
 		i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(31988, {	-- Merciless Gladiator's Kodohide Helm
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
@@ -731,7 +731,7 @@ local OLUS_GROUPS = {
 		i(31989, {	-- Merciless Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 30246, 1, } },	-- 1x Leggings of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
-		
+
 		i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 30243, 1, } },	-- 1x Helm of the Vanquished Defender [Warrior, Priest, Druid]
 		}),
@@ -785,7 +785,7 @@ local SORYN_GROUPS = {
 		i(33698, {	-- Vengeful Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(33724, {	-- Vengeful Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -801,7 +801,7 @@ local SORYN_GROUPS = {
 		i(33725, {	-- Vengeful Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(33751, {	-- Vengeful Gladiator's Scaled Helm
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -868,7 +868,7 @@ local SORYN_GROUPS = {
 		i(33719, {	-- Vengeful Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(33745, {	-- Vengeful Gladiator's Satin Hood
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -901,7 +901,7 @@ local SORYN_GROUPS = {
 		i(33709, {	-- Vengeful Gladiator's Linked Leggings
 			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
 		}),
-		
+
 		i(33713, {	-- Vengeful Gladiator's Mail Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
 		}),
@@ -917,7 +917,7 @@ local SORYN_GROUPS = {
 		i(33714, {	-- Vengeful Gladiator's Mail Leggings
 			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
 		}),
-		
+
 		i(33740, {	-- Vengeful Gladiator's Ringmail Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
 		}),
@@ -967,7 +967,7 @@ local SORYN_GROUPS = {
 		i(33678, {	-- Vengeful Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(33683, {	-- Vengeful Gladiator's Felweave Cowl
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -1000,7 +1000,7 @@ local SORYN_GROUPS = {
 		i(33673, {	-- Vengeful Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
 		}),
-		
+
 		i(33691, {	-- Vengeful Gladiator's Kodohide Helm
 			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
 		}),
@@ -1016,7 +1016,7 @@ local SORYN_GROUPS = {
 		i(33692, {	-- Vengeful Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
 		}),
-		
+
 		i(33768, {	-- Vengeful Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
 		}),
@@ -1067,7 +1067,7 @@ local SORYN_GROUPS = {
 		i(31995, {	-- Merciless Gladiator's Lamellar Legguards
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(32022, {	-- Merciless Gladiator's Ornamented Headcover
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -1083,7 +1083,7 @@ local SORYN_GROUPS = {
 		i(32023, {	-- Merciless Gladiator's Ornamented Legplates
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(32041, {	-- Merciless Gladiator's Scaled Helm
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -1150,7 +1150,7 @@ local SORYN_GROUPS = {
 		i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(32035, {	-- Merciless Gladiator's Satin Hood
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -1183,7 +1183,7 @@ local SORYN_GROUPS = {
 		i(32007, {	-- Merciless Gladiator's Linked Leggings
 			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
 		}),
-		
+
 		i(32011, {	-- Merciless Gladiator's Mail Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
 		}),
@@ -1199,7 +1199,7 @@ local SORYN_GROUPS = {
 		i(32012, {	-- Merciless Gladiator's Mail Leggings
 			["cost"] = { { "i", 31100, 1 }, },	-- Leggings of the Forgotten Protector
 		}),
-		
+
 		i(32031, {	-- Merciless Gladiator's Ringmail Helm
 			["cost"] = { { "i", 31095, 1 }, },	-- Helm of the Forgotten Protector
 		}),
@@ -1249,7 +1249,7 @@ local SORYN_GROUPS = {
 		i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
 			["cost"] = { { "i", 31098, 1 }, },	-- Leggings of the Forgotten Conqueror
 		}),
-		
+
 		i(31980, {	-- Merciless Gladiator's Felweave Cowl
 			["cost"] = { { "i", 31097, 1 }, },	-- Helm of the Forgotten Conqueror
 		}),
@@ -1282,7 +1282,7 @@ local SORYN_GROUPS = {
 		i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
 		}),
-		
+
 		i(31988, {	-- Merciless Gladiator's Kodohide Helm
 			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
 		}),
@@ -1298,7 +1298,7 @@ local SORYN_GROUPS = {
 		i(31989, {	-- Merciless Gladiator's Kodohide Legguards
 			["cost"] = { { "i", 31099, 1 }, },	-- Leggings of the Forgotten Vanquisher
 		}),
-		
+
 		i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
 			["cost"] = { { "i", 31096, 1 }, },	-- Helm of the Forgotten Vanquisher
 		}),
@@ -1317,7 +1317,7 @@ local SORYN_GROUPS = {
 	}),
 	-- #endif
 };
-root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
+root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 	m(ISLE_OF_QUELDANAS, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
 		-- #if AFTER WRATH
@@ -1873,8 +1873,8 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #endif
 						i(35708),	-- Design: Regal Talasite
 						i(35766),	-- Design: Steady Seaspray Emerald
-						i(35500),	-- Formula: Enchant Chest - Dodge
-						i(34872),	-- Formula: Void Shatter
+						i(35500),	-- Formula: Enchant Chest - Dodge / TBC: Formula: Enchant Chest - Defense (RECIPE!)
+						i(34872),	-- Formula: Void Shatter (RECIPE!)
 						i(29193, {	-- Glyph of the Gladiator
 							["timeline"] = { "removed 5.0.4" },
 						}),
@@ -2010,7 +2010,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #if BEFORE CATA
 						i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
 						-- #endif
-						
+
 						-- #if BEFORE 6.0.1
 						-- #if AFTER CATA
 						i(32227, {	-- Crimson Spinel
@@ -2456,7 +2456,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 			}),
 		},
 	}),
-})));
+}))));
 
 -- Remove the phase identifiers from the PvP Gear.
 for i,o in ipairs(KARYNNA_GROUPS) do o.u = nil; end

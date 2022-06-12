@@ -4,7 +4,7 @@
 local ASARNAN_MALIJ_GROUPS = {};
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NETHERSTORM, {
+		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Netherstorm is the northern-most zone in Outland. It is covered in magical currents, giving it an unnatural sci-fi look--except in the protected Eco-Domes, which are lush green. Goblins and Ethereals have made outposts here, as well as the Burning Legion and Kael'thas' blood elves, with numerous Mana Forges across the region. This region has numerous quests that grant Aldor or Scryer reputation.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_netherstorm_01",
@@ -2060,7 +2060,9 @@ root("Zones", {
 							i(29377, {	-- Ethereum Phase-Spear
 								["isLimited"] = true,
 							}),
-							i(78348),	-- Formula: Enchant Weapon - Executioner
+							i(78348, {	-- Formula: Enchant Weapon - Executioner (RECIPE!)
+								["timeline"] = { "added 4.3.0" },
+							}),
 							i(29371, {	-- Nexus-Claw
 								["isLimited"] = true,
 							}),
@@ -2993,7 +2995,7 @@ root("Zones", {
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
 							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
-							applyclassicphase(TBC_PHASE_THREE, i(22552)),	-- Formula: Enchant Weapon - Major Striking
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -4774,6 +4776,7 @@ root("Zones", {
 					}),
 					i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance
 						["cr"] = 18870,  -- Voidshrieker
+						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 						["cr"] = 20136,	-- Sunfury Researcher
@@ -4801,7 +4804,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

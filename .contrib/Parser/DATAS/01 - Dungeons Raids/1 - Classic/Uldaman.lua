@@ -692,14 +692,16 @@ root("Instances", tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(11073, {	-- Annora <Master Enchanter>
+			n(11073, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {	-- Annora <Master Enchanter>
 				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-				["requireSkill"] = ENCHANTING,
+				-- #if BEFORE 2.1.0
 				["groups"] = {
-					-- #if NOT ANYCLASSIC
-					-- This does not properly get marked in Classic, can't confirm on Retail.
-					r(13920, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Artisan)
-					-- #endif
+					r(13920, {	-- Enchanting (Artisan)
+						["timeline"]={ "removed 8.0.1" },
+						-- #if ANYCLASSIC
+						["collectible"] = false,
+						-- #endif
+					}),
 					cat(690, {	-- Boot Enchantments
 						r(13935),	-- Agility
 						r(13637),	-- Lesser Agility
@@ -756,7 +758,8 @@ root("Instances", tier(CLASSIC_TIER, {
 						r(13693),	-- Striking
 					}),
 				},
-			}),
+				-- #endif
+			})),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,
 				["groups"] = {

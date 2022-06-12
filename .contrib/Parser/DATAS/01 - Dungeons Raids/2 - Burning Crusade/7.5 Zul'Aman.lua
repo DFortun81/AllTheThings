@@ -7,7 +7,7 @@ local AMANI_HEX_STICK = i(33865, {	-- Amani Hex Stick
 	-- #endif
 });
 local BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
-local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner
+local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner (RECIPE!)
 local MOJO_PET = i(33993);	-- Mojo (PET!)
 local FOREST_FROG = n(24396, {	-- Forest Frog
 	["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
@@ -22,14 +22,14 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 		i(33932),	-- Amani Charm of the Witch Doctor
 	},
 });
-root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, bubbleDownSelf({ ["timeline"] = { "added 2.3.0", "removed 4.1.0" } }, {
 	inst(77, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(68, 30, 68),
-		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.1.0" } }, {
+		["groups"] = {
 			-- #if AFTER CATA
 			d(1, {	-- Normal (Legacy)
 			-- #endif
@@ -320,13 +320,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 			-- #if AFTER CATA
 			}),
 			-- #endif
-		}),
+		},
 	}),
-})));
+}))));
 
 -- These are still used in Retail and aren't removed from game.
 AMANI_HEX_STICK.timeline = nil;
-EXECUTIONER_RECIPE.timeline = nil;
+--EXECUTIONER_RECIPE.timeline = nil; (Another version of the recipe for retail?)
 FOREST_FROG.timeline = nil;
 -- also clean up the children
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end

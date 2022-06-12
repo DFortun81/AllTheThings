@@ -45,7 +45,7 @@ local OnTooltipForMaghar = [[function(t)
 end]];
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NAGRAND, {
+		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Nagrand is a peaceful lush zone in Outland with grassy areas and floating islands in the sky. It is home to the Kurenai and Mag'har factions. The Horde especially have an interesting time because the final questchain covers Thrall and his true identity. Other sidequests involve slaughtering more animals for Hemet Nesingwary and learning about demon hunters and fel dangers.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_nagrand_01",
@@ -1739,8 +1739,8 @@ root("Zones", {
 							-- #if BEFORE CATA
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
-							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
-							applyclassicphase(TBC_PHASE_THREE, i(22552)),	-- Formula: Enchant Weapon - Major Striking
+							i(28274),	-- Formula: Enchant Cloak - PvP Power / TBC: Formula: Enchant Cloak - Spell Penetration (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -2093,7 +2093,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

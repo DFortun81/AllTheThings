@@ -233,7 +233,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				i(138838, {	-- Illusion: Deathfrost
 					["timeline"] = { "added 7.0.3.22248" },
 				}),
-				applyclassicphase(TBC_PHASE_THREE, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
+				applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={"added 2.4.2"}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
 
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.

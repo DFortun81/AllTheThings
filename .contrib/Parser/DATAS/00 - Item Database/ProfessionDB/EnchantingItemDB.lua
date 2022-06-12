@@ -24,9 +24,6 @@ end
 -----------------
 -- PATCH 0.5.3 --
 -----------------
-i(0, 7411);			-- Enchanting (Apprentice)
-i(0, 7412);			-- Enchanting (Journeyman)
-i(0, 7413);			-- Enchanting (Expert)
 i(0, 7857);			-- Health
 i(0, 7421);			-- Minor Absorption
 i(0, 7867);			-- Minor Agility (Boot)
@@ -41,7 +38,7 @@ i(0, 7457);			-- Minor Stamina (Bracer)
 i(0, 7788);			-- Minor Striking
 i(0, 7748);			-- Lesser Health
 i(0, 7421);			-- Runed Copper Rod
--- Items
+-- ITEMS --
 i(6348, 7786);		-- Minor Beastslayer
 i(6342, 7443);		-- Minor Mana
 i(6347, 7782);		-- Minor Strength
@@ -50,6 +47,9 @@ i(6349, 7793);		-- Lesser Intellect (Wep)
 i(6346, 7776);		-- Lesser Mana
 i(6375, 7859);		-- Lesser Versatility / CLASSIC: Lesser Spirit (Bracer)
 -- REMOVED --
+i(0, 7411);			-- Enchanting (Apprentice) (8.0.1)
+i(0, 7412);			-- Enchanting (Journeyman) (8.0.1)
+i(0, 7413);			-- Enchanting (Expert) (8.0.1)
 i(0, 7861);			-- Lesser Fire Resistance (5.0.4)
 i(0, 7454);			-- Minor Resistance (5.0.4)
 i(0, 7861);			-- Runed Silver Rod (5.0.4)
@@ -71,7 +71,6 @@ i(0, 13935);		-- Agility (Boot)
 i(0, 13815);		-- Agility (Glove)
 i(0, 13635);		-- Defense
 i(0, 13262);		-- Disenchant
-i(0, 13920);		-- Enchanting (Artisan)
 i(0, 13746);		-- Greater Defense
 i(0, 13640);		-- Greater Health
 i(0, 13937);		-- Greater Impact
@@ -103,14 +102,14 @@ i(0, 13503);		-- Lesser Striking
 i(0, 13485);		-- Lesser Versatility / CLASSIC:Lesser Spirit (Shield)
 i(0, 13836);		-- Stamina (Boot)
 i(0, 13648);		-- Stamina (Bracer)
-i(0, 13941);		-- Stats
+i(0, 13941);		-- Stats (Chest)
 i(0, 13693);		-- Striking
 i(0, 13661);		-- Strength (Bracers)
 i(0, 13887);		-- Strength (Glove)
 i(0, 13858);		-- Superior Health
 i(0, 13917);		-- Superior Mana
 i(0, 13659);		-- Versatility / CLASSIC: Spirit (Shield)
--- Item
+-- ITEMS --
 i(11203, 13841);	-- Advanced Mining
 i(11208, 13915);	-- Demonslaying
 i(11223, 13931);	-- Dodge (Bracer)
@@ -138,6 +137,7 @@ i(11813, 15596);	-- Smoking Heart of the Mountain (CLASSIC-3.1.0)
 i(45050, 15596);	-- Smoking Heart of the Mountain (3.1.0+)
 i(11202, 13817);	-- Stamina (Shield)
 -- REMOVED --
+i(0, 13920);		-- Enchanting (Artisan) (8.0.1)
 i(0, 13657);		-- Fire Resistance (5.0.4)
 i(0, 13794);		-- Resistance (5.0.4)
 i(0, 13628);		-- Runed Golden Rod (5.0.4)
@@ -165,18 +165,18 @@ i(16253, 20025);	-- Greater Stats
 i(16244, 20013);	-- Greater Strength (Glove)
 i(16223, 20029);	-- Icy Chill
 i(16221, 20026);	-- Major Health
-i(16249, 20036);	-- Major Intellect
+i(16249, 20036);	-- Major Intellect (Wep)
 i(16242, 20028);	-- Major Mana
-i(16255, 20035);	-- Major Versatility / CLASSIC: Major Spirit
+i(16255, 20035);	-- Major Versatility / CLASSIC: Major Spirit (Wep)
 i(16224, 20015);	-- Superior Defense
 i(16251, 20011);	-- Superior Stamina
 i(16246, 20010);	-- Superior Strength
 i(16250, 20031);	-- Superior Striking
 i(16218, 20009);	-- Superior Versatility / CLASSIC: Superior Spirit
 i(16248, 20033);	-- Unholy
-i(16222, 20016);	-- Vitality / CLASSIC: Superior Spirit
+i(16222, 20016);	-- Vitality / CLASSIC: Superior Spirit (Shield)
 i(16220, 20024);	-- Versatility / CLASSIC: Spirit (Boot)
--- Removed --
+-- REMOVED --
 i(16216, 20014);	-- Greater Resistance (5.0.4)
 i(16254, 20032);	-- Lifestealing (4.0.3)
 i(16243, 20051);	-- Runed Arcanite Rod (5.0.4)
@@ -186,43 +186,172 @@ i(16247, 20030);	-- Superior Impact (6.0.1)
 --   CLASSIC   --
 -----------------
 -- The remaining recipes existed before 1.13.0 But there is no data about them in wow own db.
-i(19445, 23800);	-- Agility (1h-Wep)
-i(22392, 27837);	-- Agility (2H-Wep)
-i(19446, 23801);	-- Argent Versatility / CLASSIC: Mana Regeneration
-i(20757, 25130);	-- Brilliant Mana Oil
-i(20756, 25129);	-- Brilliant Wizard Oil
-i(20736, 25086);	-- Dodge (Cloak) (CLASSIC+)
+i(19445, 23800);	-- Agility (1h-Wep) (P3)
+i(22392, 27837);	-- Agility (2H-Wep) (P3)
+i(19446, 23801);	-- Argent Versatility / CLASSIC: Mana Regeneration (P3)
+i(20736, 25086);	-- Dodge (Cloak) (CLASSIC+) (P5)
 i(33148, 25086);	-- Dodge (Cloak) (2.2.0+)
-i(20728, 25074);	-- Frost Power
-i(20729, 25078);	-- Fire Power
-i(19447, 23802);	-- Healing Power (Bracer)
-i(20730, 25079);	-- Healing Power (Glove)
+i(20729, 25078);	-- Fire Power (P5)
+i(20728, 25074);	-- Frost Power (P5)
+i(19447, 23802);	-- Healing Power (Bracer) (P3)
+i(20730, 25079);	-- Healing Power (Glove) (P5)
 i(18260, 22750);	-- Healing Power (Wep)
-i(19449, 23804);	-- Mighty Intellect
-i(19448, 23803);	-- Mighty Versatility / CLASSIC: Mighty Spirit
+i(19449, 23804);	-- Mighty Intellect (P3)
+i(19448, 23803);	-- Mighty Versatility / CLASSIC: Mighty Spirit (P3)
 i(20752, 25125);	-- Minor Mana Oil
 i(20758, 25124);	-- Minor Wizard Oil
 i(20754, 25127);	-- Lesser Mana Oil
 i(20753, 25126);	-- Lesser Wizard Oil
-i(20727, 25073);	-- Shadow Power
-i(18259, 22749);	-- SpellPower
-i(20734, 25083);	-- Stealth (Cloak) (CLASSIC+)
-i(33149, 25083);	-- Stealth (Cloak) (2.2.0+)
-i(19444, 23799);	-- Strength (Wep)
-i(20735, 25084);	-- Subtlety (Cloak) (CLASSIC+)
-i(33150, 25084);	-- Subtlety (Cloak) (2.2.0+) (A)
-i(33151, 25084);	-- Subtlety (Cloak) (2.2.0+) (H)
-i(20731, 25080);	-- Superior Agility (Glove) (CLASSIC+)
-i(33152, 25080);	-- Superior Agility (Glove) (2.2.0+)
-i(20726, 25072);	-- Threat (Glove) (CLASSIC+)
-i(33153, 25072);	-- Threat (Glove) (2.2.0+)
+i(20727, 25073);	-- Shadow Power (P5)
+i(18259, 22749);	-- SpellPower (Wep)
+i(20734, 25083);	-- Stealth (CLASSIC+) (P5)
+i(33149, 25083);	-- Stealth (2.2.0+)
+i(19444, 23799);	-- Strength (Wep) (P3)
+i(20735, 25084);	-- Subtlety (CLASSIC+) (P5)
+i(33150, 25084);	-- Subtlety (2.2.0+) (A)
+i(33151, 25084);	-- Subtlety (2.2.0+) (H)
+i(20731, 25080);	-- Superior Agility (CLASSIC+) (P5)
+i(33152, 25080);	-- Superior Agility (2.2.0+)
+i(20726, 25072);	-- Threat (CLASSIC+) (P5)
+i(33153, 25072);	-- Threat (2.2.0+)
 i(17725, 21931);	-- Winter's Might
 i(20755, 25128);	-- Wizard Oil
--- Removed --
-i(20732, 25081);	-- Greater Fire Resistance (5.0.4)
-i(20733, 25082);	-- Greater Nature Resistance (5.0.4)
+-- REMOVED --
+i(20757, 25130);	-- Brilliant Mana Oil (4.1.0)
+i(20756, 25129);	-- Brilliant Wizard Oil (4.1.0)
+i(20732, 25081);	-- Greater Fire Resistance (5.0.4) (P5)
+i(20733, 25082);	-- Greater Nature Resistance (5.0.4) (P5)
 -- NYI --
 i(0, 22434);		-- Charged Scale of Onyxia
+
+-----------------
+-- PATCH 2.0.0 --
+-----------------
+i(0, 33996);		-- Assault
+i(0, 33993);		-- Blasting
+i(0, 27899);		-- Brawn
+i(0, 27957);		-- Exceptional Health
+i(0, 34004);		-- Greater Agility (Cloak)
+i(0, 34002);		-- Lesser Assault
+i(0, 27944);		-- Lesser Dodge / TBC: Tough Shield
+i(0, 27961);		-- Major Armor (Cloak)
+i(0, 34001);		-- Major Intellect (Bracer)
+i(0, 33995);		-- Major Strength
+i(0, 33990);		-- Major Versatility / TBC: Major Spirit (Chest)
+i(0, 28027);		-- Prismatic Sphere
+i(0, 27905);		-- Stats (Bracer)
+i(0, 33991);		-- Versatility Prime / TBC: Restore Mana Prime (Chest)
+i(0, 28028);		-- Void Sphere
+-- ITEMS --
+i(22557, 28004);	-- Battlemaster
+i(28280, 34008);	-- Boar's Speed
+i(35297, 34008);	-- Boar's Speed (2.4.0+)
+i(28279, 34007);	-- Cat's Swiftness
+i(35299, 34007);	-- Cat's Swiftness (2.4.0+)
+i(22544, 27951);	-- Dexterity
+i(22547, 27960);	-- Exceptional Stats (A)
+i(24003, 27960);	-- Exceptional Stats (H)
+i(22543, 27950);	-- Fortitude (Boot)
+i(22533, 27914);	-- Fortitude (Bracer)
+i(22530, 27906);	-- Greater Dodge / TBC: Major Defense (Bracer)
+i(22539, 27945);	-- Intellect (Shield)
+i(22565, 28022);	-- Large Prismatic Shard
+i(22556, 27977);	-- Major Agility (Wep)
+i(28270, 33992);	-- Major Armor / TBC: Major Resilience (Chest)
+i(28273, 33999);	-- Major Healing (Glove)
+i(28281, 34010);	-- Major Healing (Wep)
+i(22551, 27968);	-- Major Intellect (Wep)
+i(28272, 33997);	-- Major Spellpower (Glove)
+i(22555, 27975);	-- Major Spellpower (Wep)
+i(28282, 34009);	-- Major Stamina
+i(22559, 27984);	-- Mongoose
+i(22540, 27946);	-- Parry / TBC: Shield Block
+i(22553, 27972);	-- Potency
+i(28271, 33994);	-- Precise Strikes / TBC: Spell Strike
+i(28274, 34003);	-- PvP Power / TBC: Spell Penetration
+i(22554, 27971);	-- Savagery
+i(22561, 27982);	-- Soulfrost
+i(22534, 27917);	-- Spellpower (Bracer)
+i(22558, 28003);	-- Spellsurge
+i(22560, 27981);	-- Sunfire
+i(22531, 27911);	-- Superior Healing (A)
+i(24000, 27911);	-- Superior Healing (H)
+i(22562, 28016);	-- Superior Mana Oil
+i(22563, 28019);	-- Superior Wizard Oil
+i(22545, 27954);	-- Surefooted
+i(22532, 27913);	-- Versatility Prime / TBC: Restore Mana Prime (Bracer)
+i(22542, 27948);	-- Vitality (Boot)
+i(35298, 27948);	-- Vitality (2.4.0+) (Boot)
+-- REMOVED --
+i(0, 28029);		-- Enchanting (Master) (8.0.1)
+i(0, 32667);		-- Runed Eternium Rod (5.0.4)
+i(0, 32664);		-- Runed Fel Iron Rod (5.0.4)
+i(28276, 34005);	-- Greater Arcane Resistance (5.0.4)
+i(28277, 34006);	-- Greater Shadow Resistance (5.0.4)
+i(22537, 27926);	-- Healing Power (Ring) (6.0.2)
+i(22548, 27962);	-- Major Resistance (5.0.4)
+i(22541, 27947);	-- Resistance (Shield) (5.0.4)
+i(25848, 32665);	-- Runed Adamantite Rod (5.0.4)
+i(22536, 27924);	-- Spellpower (Ring) (6.0.2)
+i(22538, 27927);	-- Stats (P3) (6.0.2)
+-- #if ANYCLASSIC
+i(186683, 27927);	-- Stats (P3) [CLASSIC ONLY] (6.0.2)
+-- #endif
+i(22535, 27920);	-- Striking (6.0.2)
+-- NYI --
+i(22564, 28021);	-- Arcane Dust
+-- #if BEFORE 2.1.0
+i(22552, 27967);	-- Major Striking (Added later)
+-- #endif
+
+-----------------
+-- PATCH 2.1.0 --
+-----------------
+-- #if AFTER 2.1.0
+i(22552, 27967);	-- Major Striking (NYI Before)
+-- #endif
+
+-----------------
+-- PATCH 2.2.0 --
+-----------------
+i(0, 42615);		-- Small Prismatic Shard
+i(33165, 42620);	-- Greater Agility (Wep) (P3)
+-- REMOVED --
+i(42613);			-- Nexus Transformation (7.3.5)
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+i(0, 44383);		-- Armor / TBC: Resilience
+i(33307, 42974);	-- Executioner (P4)
+i(78348, 42974);	-- Executioner (4.3.0+) (P4)
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+i(35500, 46594);	-- Dodge / TBC: Defense (Cloak) (P5)
+i(35756, 47051);	-- Greater Dodge / TBC: Steelweave (Cloak) (P5)
+i(34872, 45765);	-- Void Shatter (P5)
+
+-----------------
+-- PATCH 2.4.2 --
+-----------------
+i(35498, 46578);	-- Deathfrost (P3)
+
+
+
+
+
+
+-- Wrath
+i(27958);	-- Exceptional Mana (added 2.0.0 But seems to belong to wrath?)
+
+
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+i(0, 63746);	-- Lesser Accuracy
 
 -----------------
 -- PATCH 8.0.1 --
@@ -324,7 +453,7 @@ i(162319, 255131);	-- Torrent of Elements [Rank 3]
 i(0, 255106);		-- 9.0 Blacksmithing - Modified Crafting Reagent 03
 i(0, 255107);		-- 9.0 Blacksmithing - Modified Crafting Reagent 04
 -- #if BEFORE 9.0.1
-i(0, 265105);		-- Enchanted Twilight Wand (Until 9.0.1)
+i(0, 265105);		-- Enchanted Twilight Wand (Added Later)
 -- #endif
 i(0, 269720);		-- Honorable Combatant's Salutary Scepter [Rank 1]
 i(0, 269721);		-- Honorable Combatant's Salutary Scepter [Rank 2]
@@ -410,6 +539,8 @@ i(0, 302695);		-- Disenchant (BFA/Kul Tiran?)
 i(0, 305936);		-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
 i(171153, 305937);	-- Uncanny Combatant's Sorcerous Scepter [Rank 2]
 i(171152, 305938);	-- Uncanny Combatant's Sorcerous Scepter [Rank 3]
+-- NYI --
+i(177964, 0);	-- Enchant Weapon - Force Multiplier
 
 -----------------
 -- PATCH 9.0.1 --

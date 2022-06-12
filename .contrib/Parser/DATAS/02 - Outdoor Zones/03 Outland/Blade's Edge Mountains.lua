@@ -41,7 +41,7 @@ local OnTooltipForOgrila = [[function(t)
 end]];
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(BLADES_EDGE_MOUNTAINS, {
+		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_bladesedgemtns_01",
@@ -2527,7 +2527,7 @@ root("Zones", {
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
-					i(22534, {	-- Formula: Enchant Bracer - Spellpower
+					i(22534, {	-- Formula: Enchant Bracer - Spellpower (RECIPE!)
 						["coords"] = {
 							{ 43.8, 70.6, BLADES_EDGE_MOUNTAINS },
 							{ 45.6, 79.4, BLADES_EDGE_MOUNTAINS },
@@ -2541,7 +2541,7 @@ root("Zones", {
 						},
 						["cr"] = 19952,	-- Bloodmaul Geomancer
 					}),
-					i(22555, {	-- Formula: Enchant Weapon - Major Spellpower
+					i(22555, {	-- Formula: Enchant Weapon - Major Spellpower (RECIPE!)
 						["crs"] = {
 							22243,	-- Bash'ir Arcanist
 							22241,	-- Bash'ir Raider
@@ -2598,6 +2598,6 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });

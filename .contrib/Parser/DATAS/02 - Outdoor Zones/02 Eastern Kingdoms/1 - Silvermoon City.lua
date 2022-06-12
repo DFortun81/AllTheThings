@@ -5,13 +5,13 @@ local REDEMPTION = recipe(7328);	-- Redemption
 local SUMMON_VOIDWALKER = recipe(697);	-- Summon Voidwalker
 local ANDRA_ZYANDREL_GROUPS, QUELIS_GROUPS = {}, {};
 local LYNA_GROUPS = {
-	i(22565, {	-- Formula: Large Prismatic Shard
+	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
 		["isLimited"] = true,
 	}),
-	i(22562, {	-- Formula: Superior Mana Oil
+	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
 	}),
-	i(22563, {	-- Formula: Superior Wizard Oil
+	i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
 		["isLimited"] = true,
 	}),
 };
@@ -31,7 +31,7 @@ local OnTooltipForCityFactionReputation = [[function(t)
 end]];
 -- #endif
 root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
-	m(SILVERMOON_CITY, {
+	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_bloodelf",
@@ -662,7 +662,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 -- Remove the phase requirement from Redemption.

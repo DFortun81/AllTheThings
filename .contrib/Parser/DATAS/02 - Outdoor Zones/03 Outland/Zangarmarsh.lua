@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(ZANGARMARSH, {
+		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Zangarmarsh is a leveling zone intended to be completed after Hellfire Peninsula. It is a surreal swamp, with neon giant mushrooms and hostile naga. The Cenarion Circle is investigating why wildlife has been dying, discovering that Lady Vashj is draining Coilfang Reservoir for her nefarious purposes. Players can also gain reputation with Sporeggar, a group of sporelings at war with ogres. Alliance players also further learn about lost ones--Draenei heavily corrupted by shadow magic--and begin gaining reputation with the Kurenai.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_zangarmarsh",
@@ -1358,7 +1358,7 @@ root("Zones", {
 							i(24429),	-- Expedition Flare
 							i(25835),	-- Explorer's Walking Stick
 							i(33149, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
-							i(28271),	-- Formula: Enchant Gloves - Spell Strike
+							i(28271),	-- Formula: Enchant Gloves - Precise Strikes / TBC: Formula: Enchant Gloves - Spell Strike (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
 							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
@@ -1591,7 +1591,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

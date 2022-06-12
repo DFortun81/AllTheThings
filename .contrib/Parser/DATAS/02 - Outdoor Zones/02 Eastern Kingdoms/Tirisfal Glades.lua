@@ -1273,8 +1273,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
 					["coord"] = { 83.26, 68.14, TIRISFAL_GLADES },
 					["groups"] = {
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-						i(19447),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						i(19442),	-- Formula: Powerful Anti-Venom
 						i(19216),	-- Pattern: Argent Boots
 						i(19217),	-- Pattern: Argent Shoulders

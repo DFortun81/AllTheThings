@@ -27,7 +27,7 @@ local OnTooltipForSkyguard = [[function(t)
 end]];
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(TEROKKAR_FOREST, {
+		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_terrokar",
@@ -1535,7 +1535,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
 							i(27699),	-- Recipe: Golden Fish Sticks
 							i(27700),	-- Recipe: Spicy Crawdad
@@ -1667,7 +1667,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

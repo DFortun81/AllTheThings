@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	inst(259, {	-- The Shattered Halls
+	inst(259, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Shattered Halls
 		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_SHATTERED_HALLS,
@@ -386,7 +386,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(22554, {	-- Formula: Enchant 2H Weapon - Savagery
+				i(22554, {	-- Formula: Enchant 2H Weapon - Savagery (RECIPE!)
 					["cr"] = 17465,	-- Shattered Hand Centurion
 				}),
 			}),
@@ -626,7 +626,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 -- #if AFTER WOD
 root("HiddenQuestTriggers", {

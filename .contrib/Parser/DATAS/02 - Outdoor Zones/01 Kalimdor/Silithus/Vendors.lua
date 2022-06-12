@@ -45,12 +45,12 @@ _.Zones =
 				n(15419,  {	-- Kania <Enchanting Supplies>
 					["coord"] = { 55.6, 37.2, SILITHUS },
 					["g"] = {
-						i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
 							["timeline"] = { "removed 5.0.4" },
-						}),
-						i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+						})),
+						applyclassicphase(PHASE_FIVE, i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
 							["timeline"] = { "removed 5.0.4" },
-						}),
+						})),
 						i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)

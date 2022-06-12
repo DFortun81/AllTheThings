@@ -12,7 +12,7 @@ local OnTooltipForNetherwing = [[function(t)
 end]];
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHADOWMOON_VALLEY, {
+		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_shadowmoon",
@@ -2090,8 +2090,8 @@ root("Zones", {
 					i(24158, {  -- Design: Khorium Band of Shadows
 						["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 					}),
-					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance
-						["timeline"] = { "removed 5.0.4.10000" },
+					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
+						["timeline"] = { "added 2.0.1", "removed 5.0.4.10000" },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)
@@ -2203,7 +2203,7 @@ root("Zones", {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 });
 

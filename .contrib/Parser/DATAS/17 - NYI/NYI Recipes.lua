@@ -34,13 +34,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(5641),	-- Recipe: Cowardly Flight Potion
 				i(2556),	-- Recipe: Elixir of Tongues
 				i(13500),	-- Recipe: Greater Holy Protection Potion
-			}),	
+			}),
 			tier(CATA_TIER, {
 				-- 4.0.3
 				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 4.0.3"} }, {
 					i(34481),	-- Recipe: Mad Alchemist's Potion
 				})),
-				
+
 				-- 4.3.0
 				tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 4.3.0"} }, {
 					i(71955),	-- Recipe: Transmute Deepholm Iolite
@@ -50,7 +50,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(71960),	-- Recipe: Transmute Queen's Garnet
 					i(71959),	-- Recipe: Transmute Shadow Spinel
 				})),
-			}),	
+			}),
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
@@ -71,12 +71,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
 					-- Recipe spells
 					r(251824),	-- REUSE ME - SCS
-					r(252365),	-- 
-					r(252366),	-- 
-					r(252367),	-- 
-					r(252373),	-- 
-					r(252374),	-- 
-					r(252375),	-- 
+					r(252365),	--
+					r(252366),	--
+					r(252367),	--
+					r(252373),	--
+					r(252374),	--
+					r(252375),	--
 				})),
 				-- 8.2.0
 				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
@@ -88,7 +88,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					r(298738),	-- Potion of Reconstitution
 					r(298740),	-- Potion of Reconstitution
 				})),
-			}),		
+			}),
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
@@ -105,20 +105,20 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					r(307148),	-- 9.0 Transmute: 07
 					r(307149),	-- 9.0 Transmute: 08
 					r(307105),	-- Alchemist's Pouch
-					r(307109),	-- 
-					r(307110),	-- 
-					r(307111),	-- 
-					r(307112),	-- 
+					r(307109),	--
+					r(307110),	--
+					r(307111),	--
+					r(307112),	--
 				})),
-				
+
 				-- 9.1.0
-				tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {					
+				tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
 					-- Recipe spells
-					r(354860),	-- 
+					r(354860),	--
 				})),
-				
+
 				-- TEST GROUP - REMOVE LATER -Darkal
-				n(P9xx, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {		
+				n(P9xx, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
 
 				})),
 			}),
@@ -224,7 +224,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(86553),	-- Master Cookbook
 					i(86554),	-- Grand Master Cookbook
 				})),
-				
+
 				-- 5.4.0
 				tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 					i(101631),	-- Recipe: Noodle Cart Kit
@@ -286,18 +286,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(137725),	-- Schematic: Sonic Environment Enhancer
 					i(137698),	-- Schematic: Tactical Headgun (Rank 2)
 				})),
-				
+
 				-- 7.1.5
 				tier(LEGION_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 7.1.5"} }, {
 					i(144343),	-- Schematic: Rechargeable Reaves Battery
 				})),
-				
+
 				-- 7.3.0
 				tier(LEGION_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
 					i(151714),	-- Schematic: Gravitational Reduction Slippers
 					i(151717),	-- Schematic: Wormhole Generator: Argus
 				})),
-			}),	
+			}),
 			tier(BFA_TIER, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
@@ -311,7 +311,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(162336),	-- Schematic: Neurological Immobilization Bomb
 					i(162740),	-- Schematic: Neurological Immobilization Bomb
 				})),
-				
+
 				-- 8.1.5
 				tier(BFA_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 8.1.5"} }, {
 					i(165843),	-- Schematic: Mechantula
@@ -336,9 +336,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				r(7439),	-- CLASSIC: Imbue Cloak - Minor Resistance / WRATH: The Art of Being a Water Terror: Water Terror Aura (Reused recipeID)
 				r(7448),	-- CLASSIC: Imbue Chest - Lesser Absorb / ???: Vile Like Fire!: Fire (Reused recipeID)
 				r(7451),	-- CLASSIC: Imbue Chest - Minor Spirit / ???: Zone Player Total - Horde (Reused recipeID)
+				--?
+				r(22434),	-- Charged Scale of Onyxia
 			}),
 			tier(TBC_TIER, {
+				-- 2.0.1
 				i(22564),	-- Formula: Arcane Dust
+				-- #if BEFORE 2.1.0
+				i(22552),	-- Formula: Enchant Weapon - Major Striking (Added Later)
+				-- #endif
 			}),
 			tier(MOP_TIER, {
 				-- 5.0.1
@@ -347,6 +353,21 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				})),
 			}),
 			tier(BFA_TIER, {
+				-- 8.0.1
+				r(255106),	-- 9.0 Blacksmithing - Modified Crafting Reagent 03
+				r(255107),	-- 9.0 Blacksmithing - Modified Crafting Reagent 04
+				-- #if BEFORE 9.0.1
+				r(265105),	-- Enchanted Twilight Wand (Added Later)
+				-- #endif
+				r(269720),	-- Honorable Combatant's Salutary Scepter [Rank 1]
+				r(269721),	-- Honorable Combatant's Salutary Scepter [Rank 2]
+				r(269722),	-- Honorable Combatant's Salutary Scepter [Rank 3]
+				r(255108),	-- REUSE ME (DNT)
+				r(265107),	-- Talanji's Salutary Scepter [Rank 1]
+				r(265108),	-- Talanji's Salutary Scepter [Rank 2]
+				r(265109),	-- Talanji's Salutary Scepter [Rank 2]
+				-- 8.1.0
+				r(286666),	-- Breath to Expulsom
 				-- 8.2.0
 				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 					i(168450),	-- Formula: Enchant Ring - Accord of Critical Strike (not used, vendors sell 169530 and 169604)
@@ -354,7 +375,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(168452),	-- Formula: Enchant Ring - Accord of Mastery (not used, vendors sell 169532 and 169606)
 					i(168453),	-- Formula: Enchant Ring - Accord of Versatility (not used, vendors sell 169533 and 169607)
 				})),
-				
+
 				-- 8.3.0
 				tier(BFA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 8.3.0"} }, {
 					i(177964),	-- Enchant Weapon - Force Multiplier
@@ -424,7 +445,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(141061),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 					i(141065),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 				})),
-				
+
 				-- 7.2.0
 				tier(LEGION_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
 					i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
@@ -482,24 +503,24 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(TBC_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 2.0.1"} }, {
 					i(24195),	-- Design: Brilliant Living Ruby
 				})),
-				
+
 				-- 2.1.0
 				tier(TBC_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 2.1.0"} }, {
 					i(32412),	-- Design: Relentless Earthstorm Diamond
 				})),
-				
+
 				-- 2.1.3
 				tier(TBC_TIER, 1.3, bubbleDownSelf({ ["timeline"] = {"created 2.1.3"} }, {
 					i(21958),	-- Design: Arcanite Sword Pendant
 					i(21959),	-- Design: Blood Crown
 					i(25888),	-- Primal Stone Statue
 				})),
-				
+
 				-- 2.3.0
 				tier(TBC_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 2.3.0"} }, {
 					i(34221),	-- Design: Chaotic Skyfire Diamond
 				})),
-				
+
 				-- 2.4.0
 				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
 					i(35533),	-- Design: Amulet of Flowing Life
@@ -526,7 +547,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
 					i(116080),	-- Recipe: Greater Taladite Amplifier
 				})),
-			}),	
+			}),
 		}),
 		prof(LEATHERWORKING, {
 			tier(CLASSIC_TIER, {
@@ -603,7 +624,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(162400),	-- Recipe: Mistscale Boots [Rank 3]
 					i(162401),	-- Recipe: Mistscale Greaves [Rank 3]
 				})),
-			
+
 				-- 8.1.0
 				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 8.1.0"} }, {
 					i(166312),	-- Recipe: Coarse Leather Barding [Rank 2]

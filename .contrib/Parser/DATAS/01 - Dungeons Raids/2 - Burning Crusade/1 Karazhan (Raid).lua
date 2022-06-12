@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { "removed 7.1.0.1233" };
-root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 	inst(745, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
 		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
@@ -646,7 +646,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						i(25903),	-- Design: Bracing Earthstorm Diamond
 						i(25902),	-- Design: Powerful Earthstorm Diamond
-						i(22535, {	-- Formula: Enchant Ring - Striking
+						i(22535, {	-- Formula: Enchant Ring - Striking (RECIPE!)
 							-- #if AFTER BFA
 							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",
 							["f"] = MISC,
@@ -656,7 +656,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(22545, {	-- Formula: Enchant Boots - Surefooted
+				i(22545, {	-- Formula: Enchant Boots - Surefooted (RECIPE!)
 					["cr"] = 16472,	-- Phantom Stagehand
 				}),
 				i(21903, {	-- Pattern: Soulcloth Shoulders
@@ -734,7 +734,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1554, {	-- Moroes
 				["creatureID"] = 15687,
 				["groups"] = {
-					i(22559),	-- Formula: Enchant Weapon - Mongoose
+					i(22559),	-- Formula: Enchant Weapon - Mongoose (RECIPE!)
 					i(138797, {	-- Illusion: Mongoose
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
@@ -918,7 +918,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1560, {	-- Terestian Illhoof
 				["creatureID"] = 15688,
 				["groups"] = {
-					i(22561),	-- Formula: Enchant Weapon - Soulfrost
+					i(22561),	-- Formula: Enchant Weapon - Soulfrost (RECIPE!)
 					i(138799, {	-- Illusion: Soulfrost
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
@@ -946,7 +946,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1559, {	-- Shade of Aran
 				["creatureID"] = 16524,
 				["groups"] = {
-					i(22560),	-- Formula: Enchant Weapon - Sunfire
+					i(22560),	-- Formula: Enchant Weapon - Sunfire (RECIPE!)
 					i(138798, {	-- Illusion: Sunfire
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
@@ -1041,4 +1041,4 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-})));
+}))));

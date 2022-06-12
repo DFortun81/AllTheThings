@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	inst(254, {	-- The Arcatraz
+	inst(254, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
 		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["maps"] = {
@@ -122,7 +122,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, {
 				i(29460),	-- Ethereum Prison Key
-				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
+				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility (RECIPE!)
 					["cr"] = 20880,	-- Eredar Deathbringer
 				}),
 				i(21905, {	-- Pattern: Arcanoweave Bracers
@@ -378,7 +378,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 -- #if AFTER WOD
 root("HiddenQuestTriggers", {

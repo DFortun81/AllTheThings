@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
+root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 	inst(249, {	-- Magisters' Terrace
 		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
 		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
@@ -107,9 +107,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35305),	-- Design: Runed Living Ruby [TBC] / Design: Brilliant Living Ruby / [CATA+]
 					-- #endif
 					i(35304),	-- Design: Solid Star of Elune
-					i(35297),	-- Formula: Enchant Boots - Boar's Speed
-					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness
-					i(35298),	-- Formula: Enchant Boots - Vitality
+					i(35297),	-- Formula: Enchant Boots - Boar's Speed (RECIPE!)
+					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (RECIPE!)
+					i(35298),	-- Formula: Enchant Boots - Vitality (RECIPE!)
 					i(35302),	-- Pattern: Cobrascale Gloves
 					i(35303),	-- Pattern: Gloves of the Living Touch
 					i(35301),	-- Pattern: Netherdrake Gloves
@@ -174,7 +174,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				e(532, {	-- Priestess Delrissa
 					["creatureID"] = 24560,
 					["groups"] = {
-						i(35756),	-- Formula: Enchant Cloak - Greater Dodge
+						i(35756),	-- Formula: Enchant Cloak - Greater Dodge / TBC: Formula: Enchant Cloak - Steelweave (RECIPE!)
 						i(34790),	-- Battle-Mace of the High Priestess
 						i(34788),	-- Duskhallow Mantle
 						i(34792),	-- Cloak of the Betrayed
@@ -296,7 +296,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					e(532, {	-- Priestess Delrissa
 						["creatureID"] = 24560,
 						["groups"] = {
-							i(35756),	-- Formula: Enchant Cloak - Greater Dodge
+							i(35756),	-- Formula: Enchant Cloak - Greater Dodge / TBC: Formula: Enchant Cloak - Steelweave (RECIPE!)
 							i(34790),	-- Battle-Mace of the High Priestess
 							i(34788),	-- Duskhallow Mantle
 							i(34792),	-- Cloak of the Betrayed
@@ -362,7 +362,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.

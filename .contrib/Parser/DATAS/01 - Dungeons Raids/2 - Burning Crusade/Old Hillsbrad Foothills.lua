@@ -5,7 +5,7 @@ local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop
 };
 root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
-	inst(251, {	-- Old Hillsbrad Foothills
+	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
@@ -111,7 +111,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			n(VENDORS, {
 				n(18672, THOMAS_YANCE_GROUPS),	-- Thomas Yance
 				n(18664, {	-- Aged Dalaran Wizard
-					i(22539),	-- Formula: Enchant Shield - Intellect
+					i(22539),	-- Formula: Enchant Shield - Intellect (RECIPE!)
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -342,7 +342,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}
 			}),
 		},
-	}),
+	})),
 })));
 
 -- Add the items we didn't want to mark with a phase

@@ -4,11 +4,31 @@
 -- Enchanting - Skill ID 333 / SPELL ID 7411
 root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	tier(CLASSIC_TIER, {
-		r(7411, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Apprentice)
-		r(7412, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Journeyman)
-		r(7413, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Expert)
-		r(13920, {["timeline"]={"removed 8.0.1"}}),	-- Enchanting (Artisan)
-		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting [NOT SOURCED]
+		r(7411, {	-- Enchanting (Apprentice)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(7412, {	-- Enchanting (Journeyman)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(7413, {	-- Enchanting (Expert)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(13920, {	-- Enchanting (Artisan)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
 		r(13262),	-- Disenchant
 		cat(690, {	-- Boot Enchantments
 			r(13935),	-- Agility
@@ -25,13 +45,13 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(20024),	-- Versatility / CLASSIC: Spirit
 		}),
 		cat(691, {	-- Bracer Enchantments
-			r(23801),	-- Argent Versatility / CLASSIC: Mana Regeneration
+			applyclassicphase(PHASE_THREE, r(23801)),	-- Argent Versatility / CLASSIC: Mana Regeneration
 			r(13931),	-- Dodge
 			r(20008),	-- Greater Intellect
 			r(13945),	-- Greater Stamina
 			r(13939),	-- Greater Strength
 			r(13846),	-- Greater Versatility / CLASSIC: Greater Spirit
-			r(23802),	-- Healing Power
+			applyclassicphase(PHASE_THREE, r(23802)),	-- Healing Power
 			r(13822),	-- Intellect
 			r(13646),	-- Lesser Dodge / CLASSIC: Lesser Deflection
 			r(13622),	-- Lesser Intellect
@@ -75,8 +95,8 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13635),	-- Defense
 			r(13657, {["timeline"]={"removed 5.0.4"}}),	-- Fire Resistance
 			r(13746),	-- Greater Defense
-			r(25081, {["timeline"]={"removed 5.0.4"}}),	-- Greater Fire Resistance
-			r(25082, {["timeline"]={"removed 5.0.4"}}),	-- Greater Nature Resistance
+			applyclassicphase(PHASE_FIVE, r(25081, {["timeline"]={"removed 5.0.4"}})),	-- Greater Fire Resistance
+			applyclassicphase(PHASE_FIVE, r(25082, {["timeline"]={"removed 5.0.4"}})),	-- Greater Nature Resistance
 			r(20014, {["timeline"]={"removed 5.0.4"}}),	-- Greater Resistance
 			r(13882),	-- Lesser Agility
 			r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
@@ -88,31 +108,31 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(13794, {["timeline"]={"removed 5.0.4"}}),	-- Resistance
 			r(20015),	-- Superior Defense
 			-- #if BEFORE BFA
-			r(25086),	-- Dodge
-			r(25083),	-- Stealth
-			r(25084),	-- Subtlety
+			applyclassicphase(PHASE_FIVE, r(25086)),	-- Dodge
+			applyclassicphase(PHASE_FIVE, r(25083)),	-- Stealth
+			applyclassicphase(PHASE_FIVE, r(25084)),	-- Subtlety
 			-- #endif
 		}),
 		cat(694, {	-- Glove Enchantments
 			r(13868, {["timeline"]={"removed 4.0.3"}}),	-- Advanced Herbalism
 			r(13841),	-- Advanced Mining
 			r(13815),	-- Agility
-			r(25078),	-- Fire Power
+			applyclassicphase(PHASE_FIVE, r(25078)),	-- Fire Power
 			r(13620),	-- Fishing
-			r(25074),	-- Frost Power
+			applyclassicphase(PHASE_FIVE, r(25074)),	-- Frost Power
 			r(20012),	-- Greater Agility
 			r(20013),	-- Greater Strength
-			r(25079),	-- Healing Power
+			applyclassicphase(PHASE_FIVE, r(25079)),	-- Healing Power
 			r(13617),	-- Herbalism
 			r(13612),	-- Mining
 			r(13948),	-- Minor Haste
 			r(13947),	-- Riding Skill
-			r(25073),	-- Shadow Power
+			applyclassicphase(PHASE_FIVE, r(25073)),	-- Shadow Power
 			r(13698),	-- Skinning
 			r(13887),	-- Strength
 			-- #if BEFORE BFA
-			r(25080),	-- Superior Agility
-			r(25072),	-- Threat
+			applyclassicphase(PHASE_FIVE, r(25080)),	-- Superior Agility
+			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 			-- #endif
 		}),
 		cat(706, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
@@ -161,8 +181,8 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(14809),	-- Lesser Mystic Wand
 		}),
 		cat(695, {	-- Weapon Enchantments
-			r(23800),	-- Agility (1H)
-			r(27837),	-- Agility (2H)
+			applyclassicphase(PHASE_THREE, r(23800)),	-- Agility (1H)
+			applyclassicphase(PHASE_THREE, r(27837)),	-- Agility (2H)
 			r(20034),	-- Crusader
 			r(13915),	-- Demonslaying
 			r(13898),	-- Fiery Weapon
@@ -180,13 +200,13 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(20032, {["timeline"]={"removed 4.0.3"}}),	-- Lifestealing
 			r(20036),	-- Major Intellect
 			r(20035),	-- Major Versatility / CLASSIC: Major Spirit
-			r(23804),	-- Mighty Intellect
-			r(23803),	-- Mighty Versatility / CLASSIC: Mighty Spirit
+			applyclassicphase(PHASE_THREE, r(23804)),	-- Mighty Intellect
+			applyclassicphase(PHASE_THREE, r(23803)),	-- Mighty Versatility / CLASSIC: Mighty Spirit
 			r(7786),	-- Minor Beastslayer
 			r(7745),	-- Minor Impact
 			r(7788),	-- Minor Striking
 			r(22749),	-- Spellpower
-			r(23799),	-- Strength
+			applyclassicphase(PHASE_THREE, r(23799)),	-- Strength
 			r(13693),	-- Striking
 			r(20030, {["timeline"]={"removed 6.0.1"}}),	-- Superior Impact
 			r(20031),	-- Superior Striking
@@ -194,22 +214,126 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(21931),	-- Winter's Might
 		}),
 	}),
-	tier(TBC_TIER, {
-		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting [NOT SOURCED]
-		cat(693, {	-- Cloak Enchantments
-			-- #if AFTER BFA
-			r(25086),	-- Dodge
-			r(25083),	-- Stealth
-			r(25084),	-- Subtlety
+	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		r(28029, {	-- Enchanting (Master)
+			["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
 			-- #endif
 		}),
-		cat(694, {	-- Glove Enchantments
+		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
+		cat(681, {	-- Boot Enchantments
+			r(34008),	-- Boar's Speed
+			r(34007),	-- Cat's Swiftness
+			r(27951),	-- Dexterity
+			r(27950),	-- Fortitude
+			r(27954),	-- Surefooted
+			r(27948),	-- Vitality
+		}),
+		cat(682, {	-- Bracer Enchantments
+			r(27899),	-- Brawn
+			r(27914),	-- Fortitude
+			r(27906),	-- Greater Dodge / TBC: Major Defense
+			r(34002),	-- Lesser Assault
+			r(34001),	-- Major Intellect
+			r(27917),	-- Spellpower
+			r(27905),	-- Stats
+			r(27911),	-- Superior Healing
+			r(27913),	-- Versatility Prime / TBC: Restore Mana Prime
+		}),
+		cat(683, {	-- Chest Enchantments
+			applyclassicphase(TBC_PHASE_FIVE, r(46594, {["timeline"]={"added 2.4.0"}})),	-- Dodge / TBC: Defense
+			r(27957),	-- Exceptional Health
+			r(27960),	-- Exceptional Stats
+			r(33992),	-- Major Armor / TBC:Major Resilience
+			r(33990),	-- Major Versatility / TBC: Major Spirit
+			r(33991),	-- Versatility Prime / TBC: Restore Mana Prime
+		}),
+		cat(684, {	-- Cloak Enchantments
+			r(34004),	-- Greater Agility
+			r(34005, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Greater Arcane Resistance
+			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={"added 2.4.0"}})),	-- Greater Dodge / TBC: Steelweave
+			r(34006, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Greater Shadow Resistance
+			r(27961),	-- Major Armor
+			r(27962, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Major Resistance
+			r(34003),	-- PvP Power / TBC: Spell Penetration
 			-- #if AFTER BFA
-			r(25080),	-- Superior Agility
-			r(25072),	-- Threat
+			applyclassicphase(PHASE_FIVE, r(25086)),	-- Dodge
+			applyclassicphase(PHASE_FIVE, r(25083)),	-- Stealth
+			applyclassicphase(PHASE_FIVE, r(25084)),	-- Subtlety
 			-- #endif
 		}),
-	}),
+		cat(685, {	-- Glove Enchantments
+			r(33996),	-- Assault
+			r(33993),	-- Blasting
+			r(33999),	-- Major Healing
+			r(33997),	-- Major Spellpower
+			r(33995),	-- Major Strength
+			r(33994),	-- Precise Strikes / TBC: Spell Strike
+			-- #if AFTER BFA
+			applyclassicphase(PHASE_FIVE, r(25080)),	-- Superior Agility
+			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
+			-- #endif
+		}),
+		cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+			r(217641),	-- Tome of Illusions: Outland
+		})),
+		cat(688, {	-- Oils
+			r(28016),	-- Superior Mana Oil
+			r(28019),	-- Superior Wizard Oil
+		}),
+		cat(689, {	-- Other
+			r(28027),	-- Prismatic Sphere
+			r(28028),	-- Void Sphere
+		}),
+		cat(680, {	-- Reagents
+			r(28022),	-- Large Prismatic Shard
+			r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
+			r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
+			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={"added 2.4.0"}})),	-- Void Shatter
+		}),
+		cat(445, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 6.0.2" } }, {	-- Ring Enchantments
+			r(27926),	-- Healing Power
+			r(27924),	-- Spellpower
+			applyclassicphase(TBC_PHASE_THREE, r(27927)),	-- Stats
+			r(27920),	-- Striking
+		})),
+		cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+			r(32665),	-- Runed Adamantite Rod
+			r(32664),	-- Runed Fel Iron Rod
+			r(32667),	-- Runed Eternium Rod
+		})),
+		cat(687, {	-- Shield Enchantments
+			r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
+			r(27945),	-- Intellect
+			r(27944),	-- Lesser Dodge / TBC: Tough Shield
+			r(34009),	-- Major Stamina
+			r(27946),	-- Parry / TBC: Shield Block
+			r(27947, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Resistance
+		}),
+		cat(686, {	-- Weapon Enchantments
+			r(28004),	-- Battlemaster
+			applyclassicphase(TBC_PHASE_FOUR, r(42974, {["timeline"]={"added 2.3.0"}})),	-- Executioner
+			applyclassicphase(TBC_PHASE_THREE, r(46578, {	-- Deathfrost
+				["timeline"]={ "added 2.4.2" },
+				-- #if ANYCLASSIC
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. MIDSUMMER_FIRE_FESTIVAL .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
+				-- #endif
+			})),
+			applyclassicphase(TBC_PHASE_THREE, r(42620, {["timeline"]={"added 2.2.0"}})),	-- Greater Agility
+			r(27977),	-- Major Agility
+			r(34010),	-- Major Healing
+			r(27968),	-- Major Intellect
+			r(27975),	-- Major Spellpower
+			applyclassicphase(TBC_PHASE_THREE, r(27967, {["timeline"]={"added 2.1.0"}})),	-- Major Striking
+			r(27984),	-- Mongoose
+			r(27972),	-- Potency
+			r(27971),	-- Savagery
+			r(27982),	-- Soulfrost
+			r(28003),	-- Spellsurge
+			r(27981),	-- Sunfire
+		}),
+	}))),
 	tier(WOTLK_TIER, {
 		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting [NOT SOURCED]
 	}),
@@ -581,7 +705,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 		r(302695),	-- Disenchant (BFA/Kul Tiran?)
 	--
 		r(324750),	-- Disenchant (SL)
-		--]]
+	--]]
 	n(DROPS, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
 			["requireSkill"] = ENCHANTING,
