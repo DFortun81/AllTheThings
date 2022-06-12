@@ -72,6 +72,7 @@ _.WorldDrops =
 					["f"] = MISC,
 					["g"] = {
 						recipe(142976),	-- Hardened Magnificent Hide
+						recipe(146923),	-- Accelerated Hardened Magnificent Hide
 					},
 				}),
 				i(95467),	-- Pattern: Magnificence of Leather

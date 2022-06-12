@@ -41,11 +41,6 @@ root("Zones", {
 					["questID"] = 50045,
 					["coord"] = { 76.8, 62.1, NAZMIR },
 				}),
-				o(282721, {	-- Treasure Chest
-					["questID"] = 50893,
-					["isDaily"] = true, -- unconfirmed
-					["coord"] = { 73.8, 48.6, NAZMIR },
-				}),
 				o(279299, {	-- Venomous Seal
 					["questID"] = 49889,
 					["coord"] = { 46.2, 82.9, NAZMIR },
@@ -55,6 +50,24 @@ root("Zones", {
 					["coord"] = { 35.5, 55.1, NAZMIR },
 				}),
 			}),
+			-- Daily Treasures
+			n(TREASURES, sharedData({["isDaily"] = true},{
+				o(276623, {	-- Treasure Chest
+					["questID"] = 50894,
+					["coord"] = { 34.0, 36.8, NAZMIR },
+				}),
+				o(282721, {	-- Treasure Chest
+					["questID"] = 50893,
+					["coords"] = {
+						{ 73.8, 48.6, NAZMIR },
+						{ 82.1, 48.2, NAZMIR },
+					},
+				}),
+				o(282723, {	-- Treasure Chest
+					["questID"] = 50895,
+					["coord"] = { 28.0, 81.8, NAZMIR },
+				}),
+			})),
 		}),
 	}),
 });

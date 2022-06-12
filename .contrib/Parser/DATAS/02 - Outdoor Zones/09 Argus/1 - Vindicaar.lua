@@ -467,6 +467,8 @@ root("Zones", {
 							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(153032),	-- Technique: Glyph of the Lightspawn
+						i(153023),	-- Lightforged Augment Runeforge
+						i(153247),	-- Boon of the Lightbearer
 					}),
 					n(127151, {	-- Toraan the Revered <Argussian Reach Emissary>
 						i(152669),	-- Argussian Reach Tabard

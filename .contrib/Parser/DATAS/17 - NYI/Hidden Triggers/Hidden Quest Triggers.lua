@@ -1879,7 +1879,6 @@ root("HiddenQuestTriggers", {
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
 		q(54879),	-- Opening a Darkshore chest
-		q(54880),	-- Opening a Darkshore chest
 		q(54881),	-- Opening a Darkshore chest
 		q(54909),	-- Opening a Darkshore chest
 		q(54910),	-- Opening a Darkshore chest
@@ -1944,7 +1943,6 @@ root("HiddenQuestTriggers", {
 
 		--	Nazmir
 		-- Chests
-		q(50895),	-- Nazmir repeatable random chest
 		q(49904),	-- Nazmir repeatable random chest
 		q(49916),	-- Nazmir repeatable random chest
 		q(50894),	-- Nazmir repeatable random chest
@@ -2048,18 +2046,13 @@ root("HiddenQuestTriggers", {
 
 		--	Zuldazar
 		-- Chests
-		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest
-		q(50711),	-- Zuldazar repeatable random chest
 		q(50712),	-- Zuldazar repeatable random chest
-		q(50715),	-- Zuldazar repeatable random chest
-		q(50716),	-- Zuldazar repeatable random chest
 		q(50719),	-- Zuldazar repeatable random chest
 		q(50720),	-- Zuldazar repeatable random chest
 		q(50721),	-- Zuldazar repeatable random chest
 		q(50722),	-- Zuldazar repeatable random chest
 		q(50723),	-- Zuldazar repeatable random chest
-		q(50724),	-- Zuldazar repeatable random chest
 		q(50726),	-- Zuldazar repeatable random chest
 		q(50727),	-- Zuldazar repeatable random chest
 		q(50728),	-- Zuldazar repeatable random chest

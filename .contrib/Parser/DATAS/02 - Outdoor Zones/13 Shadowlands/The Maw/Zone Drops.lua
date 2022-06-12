@@ -40,6 +40,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["cr"] = 177134,	-- Maldraxxi Defector
 			}),
 		--	Greens
+			i(175769),	-- Constellan Writ
 			i(182771, {	-- Flickering Eviscerator
 				["crs"] = {
 					170694,	-- Spectral Assassin
