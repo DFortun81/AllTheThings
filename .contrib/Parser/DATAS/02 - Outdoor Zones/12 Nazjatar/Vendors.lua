@@ -199,7 +199,6 @@ _.Zones =
 					i(169602, {	-- Recipe: Potion of Focused Resolve (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					un(NEVER_IMPLEMENTED, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
 					un(NEVER_IMPLEMENTED, i(170076)),	-- Recipe: Unagi Skewer
 					i(169274, {	-- Tabard of the Unshackled
 						["cost"] = 6250000,	-- 625g
@@ -978,9 +977,6 @@ _.Zones =
 					}),
 					i(169494, {	-- Recipe: Potion of Focused Resolve (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
-						["u"] = NEVER_IMPLEMENTED,
 					}),
 					i(168610, {	-- Tabard of the Waveblade Ankoan
 						["cost"] = 6250000,	-- 625g

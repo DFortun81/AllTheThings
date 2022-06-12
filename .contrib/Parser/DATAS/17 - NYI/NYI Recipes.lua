@@ -66,11 +66,60 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(113626),	-- Recipe: UNUSED
 				})),
 			}),
+			tier(BFA_TIER, {
+				-- 8.0.1
+				tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+					-- Recipe spells
+					r(251824),	-- REUSE ME - SCS
+					r(252365),	-- 
+					r(252366),	-- 
+					r(252367),	-- 
+					r(252373),	-- 
+					r(252374),	-- 
+					r(252375),	-- 
+				})),
+				-- 8.2.0
+				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
+					-- Recipe items
+					i(169493),	-- Recipe: Potion of Reconstitution (Rank 3)
+					i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
+					-- Recipe spells
+					r(298737),	-- Potion of Reconstitution
+					r(298738),	-- Potion of Reconstitution
+					r(298740),	-- Potion of Reconstitution
+				})),
+			}),		
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+					-- Recipe items
 					i(183868),	-- [DNT][REUSE ME] Recipe: Crafter's Mark III
 					i(182665),	-- Recipe: Sins to Virtue
+					-- Recipe spells
+					r(307106),	-- 9.0 Alchemy - Modified Crafting Reagent 02
+					r(307107),	-- 9.0 Alchemy - Modified Crafting Reagent 03
+					r(307108),	-- 9.0 Alchemy - Modified Crafting Reagent 04
+					r(307145),	-- 9.0 Transmute: 04
+					r(307146),	-- 9.0 Transmute: 05
+					r(307147),	-- 9.0 Transmute: 06
+					r(307148),	-- 9.0 Transmute: 07
+					r(307149),	-- 9.0 Transmute: 08
+					r(307105),	-- Alchemist's Pouch
+					r(307109),	-- 
+					r(307110),	-- 
+					r(307111),	-- 
+					r(307112),	-- 
+				})),
+				
+				-- 9.1.0
+				tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {					
+					-- Recipe spells
+					r(354860),	-- 
+				})),
+				
+				-- TEST GROUP - REMOVE LATER -Darkal
+				n(P9xx, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {		
+
 				})),
 			}),
 		}),
