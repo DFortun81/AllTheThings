@@ -18,7 +18,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake (MOUNT!)
 		})),
-		ach(14183),			-- Conspicuous Consumption
+		un(BLACK_MARKET, ach(14183)),			-- Conspicuous Consumption
 		un(REMOVED_FROM_GAME, ach(13958, {	-- Corrupted Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake (MOUNT!)
 		})),
