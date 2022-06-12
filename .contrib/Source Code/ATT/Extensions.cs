@@ -55,7 +55,7 @@ namespace ATT
             if (major.Length == 0) major = "0";
             var minor = s.Substring(len - 10, 2).TrimStart(leadingZeros);
             if (minor.Length == 0) minor = "0";
-            var patch = s.Substring(len - 7, 2).TrimStart(leadingZeros);
+            var patch = s.Substring(len - 8, 2).TrimStart(leadingZeros);
             if (patch.Length == 0) patch = "0";
             return long.Parse($"{major}{minor.PadLeft(2, '0')}{patch.PadLeft(2, '0')}");
         }
@@ -74,7 +74,7 @@ namespace ATT
             if (major.Length == 0) major = "0";
             var minor = s.Substring(len - 10, 2).TrimStart(leadingZeros);
             if (minor.Length == 0) minor = "0";
-            var patch = s.Substring(len - 7, 2).TrimStart(leadingZeros);
+            var patch = s.Substring(len - 8, 2).TrimStart(leadingZeros);
             if (patch.Length == 0) patch = "0";
             return $"{major}.{minor}.{patch}";
         }
