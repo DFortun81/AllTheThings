@@ -527,6 +527,7 @@ namespace ATT
                     case "mountID":
 #if ANYCLASSIC
                     case "petTypeID":
+                    case "b":
 #endif
                     case "speciesID":
                     case "objectiveID":
@@ -534,7 +535,6 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "f":
-                    case "b":
                     case "r":
                     case "ilvl":
                         var longval = Convert.ToInt64(value);
@@ -578,6 +578,10 @@ namespace ATT
                         break;
 
                     // Conditional Fields -- only merge if NOT Location Sourced data
+#if RETAIL
+                    // there are situations where the same Item is BoP in some places and BoE in others...
+                    case "b":
+#endif
                     case "u":
                         if (!ProcessingMergeData) break;
 
@@ -593,7 +597,6 @@ namespace ATT
                         else
                         {
                             item[field] = longval;
-                            LogDebug($"Merge {item["itemID"]}: {field} <== {longval}");
                         }
                         break;
                     case "timeline":

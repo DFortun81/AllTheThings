@@ -84,12 +84,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.7, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					i(188025),	-- Anthemic Links
 					i(188011),	-- Choral Sash
 					i(188033),	-- Harmonium Girdle
 					i(188017),	-- Staccato Belt
-				},
+				}),
 			}),
 			q(65771, {	-- Favor of the First Ones
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -115,7 +115,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(64794, {	-- Knowing is Half the Battle
 				["sourceQuests"] = {
-					64958,	-- Our Forward Scouts
+					64958,	-- The Forces Gather
 					65771,	-- Favor of the First Ones
 					65772,	-- Necessary Harvest
 				},
@@ -131,12 +131,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64796 },	-- Scour The Sands
 				["provider"] = { "n", 182046 },	-- Shandris Feathermoon
 				["coord"] = { 48, 44.9, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					i(188024),	-- Anthemic Shoulders
 					i(188037),	-- Choral Amice
 					i(188032),	-- Harmonium Spaulders
 					i(188036),	-- Staccato Mantle
-				},
+				}),
 			}),
 			q(64814, {	-- Battle for the Forge
 				["sourceQuests"] = { 64797 },	-- Harmony and Discord
@@ -280,7 +280,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 179611 },	-- Pelagos
 				["coord"] = { 34, 48, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					crit(3, {	-- Forming an Understanding
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
@@ -288,7 +288,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(188006),	-- Choral Vestments
 					i(188031),	-- Harmonium Legplates
 					i(188035),	-- Staccato Vest
-				},
+				}),
 			}),
 			-- End
 			q(65749, {	-- The Necessity Of Equipment
@@ -422,7 +422,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64843 },	-- Key Crafting
 				["provider"] = { "n", 184153 },	-- Elder Ara
 				["coord"] = { 47.3, 88.5, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					crit(4, {	-- Forging a New Path
 						["achievementID"] = 15259,	-- Secrets of the First Ones
 					}),
@@ -430,7 +430,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(188010),	-- Choral Leggings
 					i(188028),	-- Harmonium Breastplate
 					i(188016),	-- Staccato Leggings
-				},
+				}),
 			}),
 			-- End
 			q(65774, {	-- The Catalyst Awakens
@@ -589,12 +589,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64936 },	-- Searching High and Low
 				["provider"] = { "n", 184949 },	-- Popopoc
 				["coord"] = { 48, 34, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					i(188022),	-- Anthemic Coif
 					i(188009),	-- Choral Slippers
 					i(188029),	-- Harmonium Percussive Stompers
 					i(188013),	-- Staccato Boots
-				},
+				}),
 			}),
 			q(65237, {	-- Oracle, Heal Thyself
 				["sourceQuests"] = { 64937 },	-- You Light Up My Left
@@ -654,12 +654,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 				["provider"] = { "n", 180903 },	-- Firim
 				["coord"] = { 55.9, 29.9, ZERETH_MORTIS },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					i(188021),	-- Anthemic Gauntlets
 					i(188008),	-- Choral Handwraps
 					i(188030),	-- Harmonium Gauntlets
 					i(188014),	-- Staccato Grips
-				},
+				}),
 			}),
 			q(64727, {	-- The Infinite Circle
 				["sourceQuests"] = { 64722 },	-- Knocking On Death's Door
@@ -826,7 +826,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65350 },	-- Restore the Flow
 				["provider"] = { "o", 375283 },	-- Percolation Array
 				["coord"] = { 74.1, 69, 2028 },
-				["g"] = {
+				["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 					crit(3, {	--  A Return to Grace
 						["achievementID"] = 15515,	-- Path to Enlightenment
 					}),
@@ -834,12 +834,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(188012),	-- Choral Wraps
 					i(188034),	-- Harmonium Vambrace
 					i(188018),	-- Staccato Cuffs
-				},
+				}),
 			}),
 			-- Bufonid Daily Questline (During Chap 2)
 			q(65727, {	-- The Burrowed Bufonid
 				["sourceQuests"] = {
-					64958,	-- Our Forward Scouts
+					64958,	-- The Forces Gather
 					65771,	-- Favor of the First Ones
 					65772,	-- Necessary Harvest
 				},

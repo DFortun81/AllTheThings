@@ -1,3 +1,5 @@
+-- TODO: remove this file once all recipes are added to profession-specific DBs
+
 
 local Items = root("ItemDBConditional");
 local ProfessionID;
@@ -84,22 +86,6 @@ i(186991, 307144); -- Transmute: Stones to Ore
 -- #ENDIF
 
 -----------------
-ProfessionID = ARCHAEOLOGY;
------------------
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
 ProfessionID = BLACKSMITHING;
 -----------------
 -- #IF AFTER CLASSIC
@@ -161,31 +147,6 @@ i(187006, 354764); -- Recipe: Twilight Tea
 -- #ENDIF
 
 -----------------
-ProfessionID = ENCHANTING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(186992, 355184); -- Formula: Anima-ted Leash
-i(187826, 360013); -- Formula: Cosmic Protoweave
-i(187824, 360007); -- Formula: Magically Regulated Automa Core
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
 ProfessionID = ENGINEERING;
 -----------------
 -- #IF AFTER CLASSIC
@@ -201,50 +162,6 @@ i(187837, 360126); -- Schematic: Erratic Genesis Matrix
 i(183097, 331007); -- Schematic: PHA7-YNX
 i(187832, 360088); -- Schematic: Pure-Air Sail Extensions
 i(183858, 310535); -- Schematic: Wormhole Generator: Shadowlands
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = FISHING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = HERBALISM;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
@@ -467,12 +384,6 @@ i(186994, 355189); -- Design: Shaded Stone Statue
 -- #ENDIF
 
 -----------------
-ProfessionID = JUNKYARD_TINKERING;
------------------
--- #IF AFTER BFA
--- #ENDIF
-
------------------
 ProfessionID = LEATHERWORKING;
 -----------------
 -- #IF AFTER CLASSIC
@@ -488,50 +399,6 @@ i(187000, 355354); -- Pattern: Elusive Pet Treat
 i(183839, 308897); -- Pattern: Heavy Callous Hide
 i(183100, 324088); -- Pattern: Heavy Desolate Armor Kit
 i(186999, 354800); -- Pattern: Pallid Bone Flute
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = MINING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = SKINNING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF

@@ -934,6 +934,8 @@ namespace ATT
 
             CheckHeirloom(data);
 
+            VerifyListContentOrdering(data);
+
             // when consolidating data, check for duplicate objects (instead of when merging)
             foreach (string key in TypeUseCounts.Keys)
             {
@@ -955,6 +957,56 @@ namespace ATT
                 data.Remove(key);
 
             return true;
+        }
+
+        /// <summary>
+        /// Checks the data for any list-based content and attempts to order that content in a consistent way so that output remains identical for identical data
+        /// </summary>
+        /// <param name="data"></param>
+        private static void VerifyListContentOrdering(Dictionary<string, object> data)
+        {
+            foreach (KeyValuePair<string, object> entry in data)
+            {
+                // only certain fields are agnostic to the parsed order
+                switch (entry.Key)
+                {
+                    case "c":
+                    case "specs":
+                    case "races":
+                    case "sourceQuests":
+                    case "altAchievements":
+                    case "altQuests":
+                    case "customCollect":
+                    case "cost":
+                    case "difficulties":
+                    case "maps":
+                    case "qgs":
+                    case "crs":
+                    case "providers":
+                    case "coords":
+                        // is it a list of objects?
+                        if (entry.Value is List<object> valList)
+                        {
+                            AttemptSortingGenericList(valList);
+                        }
+                        break;
+
+                }
+            }
+        }
+
+        private static void AttemptSortingGenericList(List<object> list)
+        {
+            if ((list?.Count ?? 0) < 2)
+                return;
+
+            list.Sort(delegate (object a, object b)
+            {
+                unchecked
+                {
+                    return a.GetHashCode() - b.GetHashCode();
+                }
+            });
         }
 
         private static void IncrementTypeUseCount(string key, decimal id)

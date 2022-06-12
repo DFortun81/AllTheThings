@@ -13,7 +13,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			n(185587, {	-- Elder Rafiq
 				["coord"] = { 60.6, 51, ZERETH_MORTIS },
-				["g"] = sharedData({ ["modID"] = 28 }, {
+				["g"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
 					i(188054, {	-- Antecedent Drape
 						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
 					}),
