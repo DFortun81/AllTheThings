@@ -297,7 +297,9 @@ i(22538, 27927);	-- Stats (P3) (6.0.2)
 -- #if ANYCLASSIC
 i(186683, 27927);	-- Stats (P3) [CLASSIC ONLY] (6.0.2)
 -- #endif
-i(22535, 27920);	-- Striking (6.0.2)
+-- #if BEFORE 6.0.3
+i(22535, 27920);    -- Striking (6.0.2)
+-- #endif
 -- NYI --
 i(22564, 28021);	-- Arcane Dust
 -- #if BEFORE 3.0.1
