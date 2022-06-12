@@ -494,8 +494,8 @@ namespace ATT
                 {
                     case Objects.Filters.Recipe:
                         // switch any existing spellID to recipeID
-                        var item = Items.Get(data);
-                        if (item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
+                        var item = Items.GetNull(data);
+                        if (item != null && item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long itemID))
                         {
                             // remove the spellID if existing
                             item.Remove("spellID");

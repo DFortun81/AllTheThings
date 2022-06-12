@@ -66,6 +66,12 @@ namespace ATT
                     .Take(maximum)
                     .ToList();
 
+                // Sort the final set of replacements by their actual replacement key, to maintain identical export structure when re-parsing the same content
+                order.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
+                {
+                    return string.Compare(a.Key, b.Key);
+                });
+
                 Trace.WriteLine($"{order.Count} actual replacements");
 
                 // Determine all replacement relationships
