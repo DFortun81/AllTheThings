@@ -4417,17 +4417,28 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Nest the added objects
 			NestObjects(root, added);
 		end
-		if not root.g then root.g = {}; end
+
+		-- if not root.key then
+		-- 	app.PrintDebug("UNKNOWN ROOT GROUP",paramA,paramB)
+		-- 	app.PrintTable(root)
+		-- end
+
 		-- Single group which matches the root, then collapse it
 		-- This could only happen if a Thing is literally listed underneath itself...
-		if #root.g == 1 then
+		if root.g and #root.g == 1 then
 			local o = root.g[1];
-			-- print("Check Single",root.key,root[root.key],root[o.key],o.key,o[o.key],o[root.key])
-			-- Heroic Tusks of Mannoroth triggers this logic
-			if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
-				-- print("Single group")
-				root.g = nil;
-				MergeProperties(root, o, true);
+			-- if not o.key then
+			-- 	app.PrintDebug("UNKNOWN OBJECT GROUP",paramA,paramB)
+			-- 	app.PrintTable(o)
+			-- end
+			if o.key then
+				-- print("Check Single",root.key,root.key and root[root.key],o.key and root[o.key],o.key,o.key and o[o.key],root.key and o[root.key])
+				-- Heroic Tusks of Mannoroth triggers this logic
+				if (root[o.key] == o[o.key]) or (root[root.key] == o[root.key]) then
+					-- print("Single group")
+					root.g = nil;
+					MergeProperties(root, o, true);
+				end
 			end
 		end
 
