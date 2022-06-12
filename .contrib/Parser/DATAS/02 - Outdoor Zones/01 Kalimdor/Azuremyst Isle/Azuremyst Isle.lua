@@ -1436,6 +1436,7 @@ _.Zones =
 				n(RARES, {
 					n(17591, {	-- Blood Elf Bandit
 						["coords"] = {
+							{ 33.9, 18.9, AZUREMYST_ISLE },
 							{ 37.0, 20.8, AZUREMYST_ISLE },
 							{ 36.4, 32.4, AZUREMYST_ISLE },
 							{ 51.6, 18.4, AZUREMYST_ISLE },

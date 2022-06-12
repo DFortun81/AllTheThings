@@ -77,12 +77,13 @@ profession(ALCHEMY, {
 			},
 		}),
 		q(1581, {	-- Elixirs for the Bladeleafs
+			["description"] = "Available at Skill Level 20.",
 			["qg"] = 2083,	-- Syral Bladeleaf
 			["coord"] = { 55.8, 50.4, TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
-				{ "i", 2454, 4 },	-- Elixir of Lion's Strength
-				{ "i", 5997, 4 },	-- Elixir of Minor Defense
+				{ "i", 2454, 6 },	-- Elixir of Lion's Strength
+				{ "i", 5997, 2 },	-- Elixir of Minor Defense
 			},
 			["lvl"] = 4,
 		}),

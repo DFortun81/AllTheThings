@@ -304,10 +304,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(179043, {	-- Orixal <Helicid Prime>
-				["coords"] = {
-					{ 58.4, 83.1, ZERETH_MORTIS },
-					{ 56.6, 69, ZERETH_MORTIS },
-				},
+				["coord"] = { 56.6, 69, ZERETH_MORTIS },
 				["questID"] = 65582,
 				["g"] = {
 					crit(11, {	-- Orixal <Gastropod/Helicid Prime>

@@ -551,7 +551,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 59583 },	-- Welcome to Stormwind
 					["provider"] = { "n", 163095 },	-- Lindie Springstock
-					["coord"] = { 66.3, 78.2, STORMWIND_CITY },
+					["coord"] = { 70.1, 85.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1701, {	-- Fire Hardened Mail
@@ -859,7 +859,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 47.2, 61.8, THE_EXODAR },	-- Edirah
 						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
-						{ 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					},
 				}),
 				q(28258, {	-- Meet with Ander Germaine

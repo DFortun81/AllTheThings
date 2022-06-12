@@ -1312,6 +1312,10 @@ _.Zones =
 	})),
 };
 
+root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(BLOODMYST_ISLE, {
+	q(9750),	-- UNUSED Urgent Delivery
+})));
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(9695),	-- The Sun King's Command

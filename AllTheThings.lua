@@ -4741,7 +4741,7 @@ app.SetSkipPurchases = function(level)
 	app.SkipPurchases[-1] = level;
 end
 -- Determines searches required for costs using this group
-local function DeterminePurchaseGroups(group)
+local function DeterminePurchaseGroups(group, depth)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
 	local itemID = group.itemID;
 	local reqSkipLevel = itemID and app.SkipPurchases[itemID];
@@ -4755,15 +4755,21 @@ local function DeterminePurchaseGroups(group)
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
 		local groupHash = group.hash;
-		local clone, hash;
+		local clone, hash, includeDepth;
 		for _,o in ipairs(collectibles) do
 			hash = o.hash;
-			-- don't add copies of this group if it matches the 'cost' group, or has already been used
-			if hash ~= groupHash and not included[hash] then
-				clone = CreateObject(o);
-				-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
-				-- clone.indicatorIcon = "Interface_Vendor";
-				tinsert(groups, clone);
+			-- don't add copies of this group if it matches the 'cost' group, or has already been added at a lower depth
+			-- technically this allows something to become nested at a high depth, and then multiple times at lower depths...
+			-- but hopefully that's ok and is a bit better for visibility than to exclude things
+			if hash ~= groupHash then
+				includeDepth = included[hash];
+				if not includeDepth or includeDepth >= depth then
+					included[hash] = depth;
+					clone = CreateObject(o);
+					-- this logic shows the previous 'currency' icon next to Things which are nested as a cost... maybe too cluttered
+					-- clone.indicatorIcon = "Interface_Vendor";
+					tinsert(groups, clone);
+				end
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -4826,7 +4832,9 @@ local function DetermineCraftedGroups(group)
 	local groups = {};
 	local search;
 	for craftedItemID,_ in pairs(craftableItemIDs) do
+		-- never include crafted multiple times
 		if not included[craftedItemID] then
+			included[craftedItemID] = true;
 			-- Searches for a filter-matched crafted Item
 			search = app.SearchForObject("itemID",craftedItemID);
 			if search then
@@ -4859,29 +4867,14 @@ local function FillGroupsRecursive(group, depth)
 		if parent and parent.questID and parent.saved then return; end
 	end
 
+	-- increment depth if things are being nested
+	depth = (depth or 0) + 1;
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
 	groups = app.ArrayAppend(groups,
-		DeterminePurchaseGroups(group),
+		DeterminePurchaseGroups(group, depth),
 		DetermineCraftedGroups(group),
 		DetermineSymlinkGroups(group));
-
-	-- Prevent repeated nesting of anything dynamically nested
-	if groups then
-		-- increment depth if things are being nested
-		depth = (depth or 0) + 1;
-		-- block crafted items or currencies always, but allow other types to duplicate a few levels
-		if depth >= DuplicatePreventionLevel or group.currencyID then
-			for _,o in ipairs(groups) do
-				included[o.hash or ""] = depth;
-				included[o.itemID or 0] = depth;
-			end
-		else
-			for _,o in ipairs(groups) do
-				included[o.itemID or 0] = depth;
-			end
-		end
-	end
 
 	-- app.PrintDebug("MergeResults",group.hash,groups and #groups)
 	-- Adding the groups normally based on available-source priority
@@ -18686,8 +18679,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 					end
 
-					-- couldn't nest this thing using custom headers, try to use the key of the group to figure it out
-					if not nested and group then
+					-- couldn't nest this thing using a topheader header, try to use the key of the last nested group to figure out the topheader
+					if not topHeader and group then
 						groupKey = group.key;
 						typeHeaderID = nil;
 						-- determine the expected top header for this 'thing' based on its key

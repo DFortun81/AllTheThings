@@ -7,67 +7,67 @@ root("WorldEvents", n(-520, bubbleDown({ ["timeline"] = { "added 7.0.3.22248", "
 		["lvl"] = 98,
 		["groups"] = {
 			n(MAILBOX, {
-				["description"] = "This item came automatically in the mail box, in some cases even equipped, once the prepatch launched due class&ability changes.",
+				["description"] = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
 				["groups"] = {
 					i(140694, {	-- Brewmasher's Staff
-						["classes"] = { MONK },	-- BW
+						["description"] = "Given to Monks.",
 					}),
 					i(140715, {	-- Frost-Etched Runeblade
-						["classes"] = { DEATHKNIGHT },	-- Frost
+						["description"] = "Given to Death Knights.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 1,
-						["classes"] = { DRUID },	-- Tank
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 3,
-						["classes"] = { DRUID },	-- Tank
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 5,
-						["classes"] = { DRUID },	-- Tank
+						["description"] = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
 						["modID"] = 6,
-						["classes"] = { DRUID },	-- Tank
+						["description"] = "Given to Druids.",
 					}),
 					i(140712, {	-- Greataxe of Fury
-						["classes"] = { WARRIOR },	-- Fury
+						["description"] = "Given to Warriors.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 1,
-						["classes"] = { DRUID },	-- Cat
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 3,
-						["classes"] = { DRUID },	-- Cat
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 5,
-						["classes"] = { DRUID },	-- Cat
+						["description"] = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
 						["modID"] = 6,
-						["classes"] = { DRUID },	-- Cat
+						["description"] = "Given to Druids.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 1,
-						["classes"] = { HUNTER },	-- Survival
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 3,
-						["classes"] = { HUNTER },	-- Survival
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 5,
-						["classes"] = { HUNTER },	-- Survival
+						["description"] = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
 						["modID"] = 6,
-						["classes"] = { HUNTER },	-- Survival
+						["description"] = "Given to Hunters.",
 					}),
 					i(140696, {	-- Sword of the Singing Wind
-						["classes"] = { MONK },	-- WW
+						["description"] = "Given to Monks.",
 					}),
 				},
 			}),
