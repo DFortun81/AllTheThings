@@ -609,7 +609,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 						["provider"] = { "n", 113327 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
 						["isBreadcrumb"] = true,
-						["description"] = "After completing The Campaign Begins, return to Dalaran and this NPC will approach you within a few seconds.",
+						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
 					}),
 					q(43423, {	-- A Hero's Weapon
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
