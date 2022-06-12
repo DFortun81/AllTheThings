@@ -132,7 +132,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
-						["coord"] = { 53.0, 74.2, ORGRIMMAR },
+						["coord"] = { 53.0, 74.2, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							r(7411, {	-- Enchanting (Apprentice)
@@ -262,6 +262,71 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								r(13693, {["timeline"]={LUCAN_TIMELINE}}),	-- Striking
 							}),
 						},
+					}),
+					n(1317, {	-- Lucan Cordell <Enchanting Trainer>
+						["coord"] = { 53.0, 74.2, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
+							r(74258, {	-- Enchanting (Illustrious)
+								["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+								-- #if ANYCLASSIC
+								["collectible"] = false,
+								-- #endif
+							}),
+							r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting [NOT SOURCED]
+							cat(668, {	-- Armor Enchantments
+								r(74230),	-- Critical Strike
+								r(74201),	-- Critical Strike
+								r(74189),	-- Earthen Vitality
+								r(74212),	-- Exceptional Strength
+								r(74237),	-- Exceptional Versatility
+								r(74231),	-- Exceptional Versatility
+								r(74239),	-- Greater Haste
+								r(74220),	-- Greater Haste
+								r(74240),	-- Greater Intellect
+								r(74199),	-- Haste
+								r(74198),	-- Haste
+								r(74202),	-- Intellect
+								r(74192),	-- Lesser Power
+								r(74213),	-- Major Agility
+								r(74238),	-- Mastery
+								r(74132),	-- Mastery
+								r(74214),	-- Mighty Armor / CATA: Mighty Resilience
+								r(74191),	-- Mighty Stats
+								r(74232),	-- Precision
+								r(74236),	-- Precision
+								r(74234),	-- Protection
+								r(74193),	-- Speed
+								r(74200),	-- Stamina
+								r(74229),	-- Superior Dodge
+							}),
+							cat(703, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+								r(217645),	-- Tome of Illusions: Cataclysm
+								r(217649),	-- Tome of Illusions: Elemental Lords
+							})),
+							cat(707, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
+								r(104698),	-- Maelstrom Shatter
+							})),
+							cat(445, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 6.0.2" } }, {	-- Ring Enchantments
+								r(74216),	-- Agility
+								r(74218),	-- Greater Stamina
+								r(74217),	-- Intellect
+								r(74215),	-- Strength
+							})),
+							cat(670, {	-- Shield and Off-Hand Enchantments
+								r(74226),	-- Mastery
+								r(74207),	-- Protection
+								r(74235),	-- Superior Intellect
+							}),
+							cat(669, {	-- Weapon Enchantments
+								r(74197),	-- Avalanche
+								r(74211),	-- Elemental Slayer
+								r(74225),	-- Heartsong
+								r(74223),	-- Hurricane
+								r(74195),	-- Mending
+								r(95471),	-- Mighty Agility
+							}),
+						})),
 					}),
 				})),
 				prof(FISHING, {

@@ -345,6 +345,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- #if BEFORE 2.1.0
 				i(22552),	-- Formula: Enchant Weapon - Major Striking (Added Later)
 				-- #endif
+				i(22546, {	-- Formula: Enchant Chest - Exceptional Mana (Added Later but only the recipeID not the item)
+					-- #if AFTER 3.0.1
+					["spellID"] = 0,
+					-- #endif
+				}),
 			}),
 			tier(WOTLK_TIER, {
 				-- 3.0.1/2

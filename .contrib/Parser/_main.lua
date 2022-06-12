@@ -2350,7 +2350,7 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = {
 	}),
 };
 COMMON_CATACLYSM_ENCHANTING_RECIPES = {
-	i(67308, {	-- Formula: Enchanted Lantern
+	i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
 		["races"] = HORDE_ONLY,
 		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 		["timeline"] = { "added 4.0.3.13287" },
@@ -2358,7 +2358,7 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = {
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(67312, {	-- Formula: Magic Lamp
+	i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 		["races"] = ALLIANCE_ONLY,
 		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 		["timeline"] = { "added 4.0.3.13287" },
@@ -2366,87 +2366,94 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = {
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(64411, {	-- Formula: Enchant Boots - Assassin's Step
+	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74252,	-- Enchant Boots - Assassin's Step
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(64412, {	-- Formula: Enchant Boots - Lavawalker
+	i(64412, {	-- Formula: Enchant Boots - Lavawalker (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74253,	-- Enchant Boots - Lavawalker
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike
+	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74248,	-- Enchant Bracer - Greater Critical Strike
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(64413, {	-- Formula: Enchant Bracer - Greater Speed
+	i(64413, {	-- Formula: Enchant Bracer - Greater Speed (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74256,	-- Enchant Bracer - Greater Speed
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52740, {	-- Formula: Enchant Chest - Greater Stamina
+	i(52740, {	-- Formula: Enchant Chest - Greater Stamina (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74251,	-- Enchant Chest - Greater Stamina
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52739, {	-- Formula: Enchant Chest - Peerless Stats
+	i(52739, {	-- Formula: Enchant Chest - Peerless Stats (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74250,	-- Enchant Chest - Peerless Stats
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike
+	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74247,	-- Enchant Cloak - Greater Critical Strike
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery
+	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74255,	-- Enchant Gloves - Greater Mastery
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength
+	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74254,	-- Enchant Gloves - Mighty Strength
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52736, {	-- Formula: Enchant Weapon - Landslide
+	i(52736, {	-- Formula: Enchant Weapon - Landslide (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74246,	-- Enchant Weapon - Landslide
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52733, {	-- Formula: Enchant Weapon - Power Torrent
+	i(52733, {	-- Formula: Enchant Weapon - Power Torrent (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74242,	-- Enchant Weapon - Power Torrent
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),
-	i(52735, {	-- Formula: Enchant Weapon - Windwalk
+	i(52735, {	-- Formula: Enchant Weapon - Windwalk (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
 		["timeline"] = { "added 4.0.3.13287" },
 		["spellID"] = 74244,	-- Enchant Weapon - Windwalk
+		["requireSkill"] = ENCHANTING,
+		["f"] = RECIPES,
+	}),
+	i(65359, {	-- Formula: Runed Elementium Rod (RECIPE!)
+		["cost"] = { { "i", 52721, 1 }, },	-- 1x Heavenly Shard
+		["timeline"] = { "added 4.0.3.13287", "removed 5.0.4" },
+		["spellID"] = 92370,	-- Runed Elementium Rod
 		["requireSkill"] = ENCHANTING,
 		["f"] = RECIPES,
 	}),

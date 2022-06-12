@@ -294,64 +294,7 @@
 3.3.5.12213
 3.3.5.12340
 4.0.1.12911
-r(74132),	-- Mastery
-r(74189),	-- Earthen Vitality
-r(74191),	-- Mighty Stats
-r(74192),	-- Lesser Power
-r(74193),	-- Speed
-r(74195),	-- Mending
-r(74197),	-- Avalanche
-r(74198),	-- Haste
-r(74199),	-- Haste
-r(74200),	-- Stamina
-r(74201),	-- Critical Strike
-r(74202),	-- Intellect
-r(74207),	-- Protection
-r(74211),	-- Elemental Slayer
-r(74212),	-- Exceptional Strength
-r(74213),	-- Major Agility
-r(74214),	-- Mighty Armor
-r(74215),	--
-r(74216),	--
-r(74217),	--
-r(74218),	--
-r(74220),	-- Greater Haste
-r(74223),	-- Hurricane
-r(74225),	-- Heartsong
-r(74226),	-- Mastery
-r(74229),	-- Superior Dodge
-r(74230),	-- Critical Strike
-r(74231),	-- Exceptional Versatility
-r(74232),	-- Precision
-r(74234),	-- Protection
-r(74235),	-- Superior Intellect
-r(74236),	-- Precision
-r(74237),	-- Exceptional Versatility
-r(74238),	-- Mastery
-r(74239),	-- Greater Haste
-r(74240),	-- Greater Intellect
-r(74242),	-- Power Torrent
-r(74244),	-- Windwalk
-r(74246),	-- Landslide
-r(74247),	-- Greater Critical Strike
-r(74248),	-- Greater Critical Strike
-r(74250),	-- Peerless Stats
-r(74251),	-- Greater Stamina
-r(74252),	-- Assassin's Step
-r(74253),	-- Lavawalker
-r(74254),	-- Mighty Strength
-r(74255),	-- Greater Mastery
-r(74256),	-- Greater Speed
-r(74258),	-- Enchanting
-4.3.4.15595d
-r(92370),	--
-r(93841),	-- Enchanted Lantern
-r(93843),	-- Magic Lamp
-r(95471),	-- Mighty Agility
-r(96264),	-- Agility
-r(96262),	-- Mighty Intellect
-r(96261),	-- Major Strength
-r(104698),	-- Maelstrom Shatter
+4.3.4.15595
 5.0.3.15890
 r(103461),	--
 r(103462),	--

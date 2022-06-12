@@ -475,6 +475,72 @@ i(37346, 0);		-- Formula: Enchant Bracer - Expertise
 i(37337, 0);		-- Formula: Enchant Bracer - Greater Stats
 
 -----------------
+-- PATCH 4.0.3 --
+-----------------
+i(0, 74197);		-- Avalanche
+i(0, 74201);		-- Critical Strike
+i(0, 74230);		-- Critical Strike
+i(0, 74189);		-- Earthen Vitality
+i(0, 74211);		-- Elemental Slayer
+i(0, 74212);		-- Exceptional Strength
+i(0, 74237);		-- Exceptional Versatility
+i(0, 74231);		-- Exceptional Versatility
+i(0, 74220);		-- Greater Haste
+i(0, 74239);		-- Greater Haste
+i(0, 74240);		-- Greater Intellect
+i(0, 74199);		-- Haste
+i(0, 74198);		-- Haste
+i(0, 74225);		-- Heartsong
+i(0, 74223);		-- Hurricane
+i(0, 74202);		-- Intellect
+i(0, 74192);		-- Lesser Power
+i(0, 74213);		-- Major Agility
+i(0, 95471);		-- Mighty Agility
+i(0, 74132);		-- Mastery
+i(0, 74238);		-- Mastery
+i(0, 74226);		-- Mastery
+i(0, 74195);		-- Mending
+i(0, 74214);		-- Mighty Armor / CATA: Mighty Resilience
+i(0, 74191);		-- Mighty Stats
+i(0, 74232);		-- Precision
+i(0, 74236);		-- Precision
+i(0, 74207);		-- Protection
+i(0, 74234);		-- Protection
+i(0, 74193);		-- Speed
+i(0, 74200);		-- Stamina
+i(0, 74229);		-- Superior Dodge
+i(0, 74235);		-- Superior Intellect
+i(68787, 96264);	-- Agility
+i(64411, 74252);	-- Assassin's Step
+i(67308, 93841);	-- Enchanted Lantern
+i(52737, 74247);	-- Greater Critical Strike
+i(52738, 74248);	-- Greater Critical Strike
+i(64414, 74255);	-- Greater Mastery
+i(64413, 74256);	-- Greater Speed
+i(52740, 74251);	-- Greater Stamina
+i(52736, 74246);	-- Landslide
+i(64412, 74253);	-- Lavawalker
+i(67312, 93843);	-- Magic Lamp
+i(68788, 96261);	-- Major Strength
+i(68789, 96262);	-- Mighty Intellect
+i(64415, 74254);	-- Mighty Strength
+i(52739, 74250);	-- Peerless Stats
+i(52733, 74242);	-- Power Torrent
+i(52735, 74244);	-- Windwalk
+-- REMOVED --
+i(0, 74258);		-- Enchanting (Illustrious) (8.0.1)
+i(0, 74216);		-- Agility (Ring) (5.0.4)
+i(0, 74218);		-- Greater Stamina (Ring) (5.0.4)
+i(0, 74217);		-- Intellect (Ring) (5.0.4)
+i(0, 74215);		-- Strength (Ring) (5.0.4)
+i(65359, 92370);	-- Runed Elementium Rod (5.0.4)
+
+-----------------
+-- PATCH 4.3.0 --
+-----------------
+i(104698);		-- Maelstrom Shatter
+
+-----------------
 -- PATCH 8.0.1 --
 -----------------
 i(0, 264455);		-- Enchanting
