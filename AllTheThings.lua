@@ -16816,6 +16816,20 @@ local function UpdateWindow(self, force, got)
 		end
 	end
 end
+-- Allows a Window to set the root data object to itself and link the Window to the root data
+local function SetData(self, data)
+	-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
+	data.window = self;
+	self.data = data;
+end
+-- Allows a Window to build the groups hierarcy if it has .data
+local function BuildData(self)
+	local data = self.data;
+	if data then
+		-- app.PrintDebug("Window:BuildData",self.Suffix,data.text)
+		BuildGroups(data, data.g);
+	end
+end
 local backdrop = {
 	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -16844,6 +16858,8 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 		window.SetVisible = SetVisible;
 		window.StorePosition = StoreWindowPosition;
+		window.SetData = SetData;
+		window.BuildData = BuildData;
 
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
