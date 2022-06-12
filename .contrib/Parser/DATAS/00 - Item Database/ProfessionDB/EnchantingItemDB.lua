@@ -26,7 +26,6 @@ end
 -----------------
 i(0, 7857);			-- Health
 i(0, 7421);			-- Minor Absorption
-i(0, 7867);			-- Minor Agility (Boot)
 i(0, 7779);			-- Minor Agility (Bracer)
 i(0, 7428);			-- Minor Dodge / Minor Deflection
 i(0, 7418);			-- Minor Health (Bracers)
@@ -39,6 +38,7 @@ i(0, 7788);			-- Minor Striking
 i(0, 7748);			-- Lesser Health
 i(0, 7421);			-- Runed Copper Rod
 -- ITEMS --
+i(6377, 7867);		-- Minor Agility (Boot)
 i(6348, 7786);		-- Minor Beastslayer
 i(6342, 7443);		-- Minor Mana
 i(6347, 7782);		-- Minor Strength

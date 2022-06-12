@@ -126,7 +126,7 @@ _.Zones =
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6377, {	-- Formula: Enchant Boots - Minor Agility
+						i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

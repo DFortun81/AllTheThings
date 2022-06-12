@@ -219,7 +219,6 @@ root("Zones", m(KALIMDOR, {
 							r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
 							r(13637, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Agility
 							r(13644, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
-							r(7867),	-- Minor Agility
 							r(13890, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Speed
 							r(7863),	-- Minor Stamina
 							r(13836, {["timeline"]={GODAN_TIMELINE}}),	-- Stamina

@@ -1269,7 +1269,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(4836, {	-- Fireproof Orb
 							["isLimited"] = true,
 						}),
-						i(6377, {	-- Formula: Enchant Boots - Minor Agility
+						i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4828, {	-- Nightwind Belt
