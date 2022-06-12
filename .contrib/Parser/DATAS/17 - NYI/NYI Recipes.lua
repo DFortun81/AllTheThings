@@ -346,6 +346,33 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(22552),	-- Formula: Enchant Weapon - Major Striking (Added Later)
 				-- #endif
 			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.1/2
+				r(44612),	-- Greater Blasting
+				r(60618),	-- Runed Cobalt Rod
+				r(44497),	-- Unknown
+				r(44496),	-- Unknown
+				r(44516),	-- Unknown
+				r(44515),	-- Unknown
+				r(44558),	-- Unknown
+				r(44597),	-- Unknown
+				r(44613),	-- Unknown
+				r(44632),	-- Unknown
+				r(44634),	-- Unknown
+				r(44638),	-- Unknown
+				r(44637),	-- Unknown
+				r(47903),	-- Unknown
+				r(47908),	-- Unknown
+				-- 3.1.0
+				r(62257),	-- Titanguard
+				-- 3.2.2
+				i(37348),	-- Formula: Enchant Cloak - Haste
+				-- 3.3.3
+				i(37329),	-- Formula: Enchant Weapon - Exceptional Versatility
+				i(37346),	-- Formula: Enchant Bracer - Expertise
+				-- 3.3.5
+				i(37337),	-- Formula: Enchant Bracer - Greater Stats
+			}),
 			tier(MOP_TIER, {
 				-- 5.0.1
 				tier(MOP_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {

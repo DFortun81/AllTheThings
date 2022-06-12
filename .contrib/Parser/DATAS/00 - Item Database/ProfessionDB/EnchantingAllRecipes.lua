@@ -260,70 +260,10 @@
 2.5.4.43638
 2.5.4.43861
 3.0.1.8303
-r(44483),	--
-r(44484),	-- Haste
-r(44488),	-- Precision
-r(44489),	-- Dodge
-r(44492),	-- Mighty Health
-r(44494),	--
-r(44497),	--
-r(44496),	--
-r(44508),	-- Greater Versatility
-r(44500),	-- Superior Agility
-r(44506),	-- Gatherer
-r(44509),	-- Greater Versatility
-r(44510),	-- Exceptional Versatility
-r(44528),	-- Greater Fortitude
-r(44516),	--
-r(44515),	--
-r(44513),	-- Greater Assault
-r(44524),	-- Icebreaker
-r(44555),	-- Exceptional Intellect
-r(44556),	--
-r(44529),	-- Major Agility
-r(44575),	-- Greater Assault
-r(44558),	--
-r(44576),	-- Lifeward
-r(44584),	-- Greater Vitality
-r(44582),	-- Minor Power
-r(44589),	-- Superior Agility
-r(44588),	-- Exceptional Armor
-r(44590),	--
-r(44593),	-- Major Versatility
-r(44591),	-- Superior Dodge
-r(44612),	-- Greater Blasting
-r(44592),	-- Exceptional Spellpower
-r(44595),	-- Scourgebane
-r(44598),	-- Haste
-r(44596),	--
-r(44597),	--
-r(44613),	--
-r(44616),	-- Greater Stats
-r(44621),	-- Giant Slayer
-r(44623),	-- Super Stats
-r(44625),	-- Armsman
-r(44630),	-- Greater Savagery
-r(44629),	-- Exceptional Spellpower
-r(44631),	-- Shadow Armor
-r(44633),	-- Exceptional Agility
-r(44632),	--
-r(44634),	--
-r(44635),	-- Greater Spellpower
-r(44645),	--
-r(44638),	--
-r(44636),	--
-r(44637),	--
-r(47672),	-- Mighty Stamina
-r(47898),	-- Greater Speed
-r(47899),	-- Wisdom
-r(47901),	-- Tuskarr's Vitality
-r(47903),	--
-r(47908),	--
 3.0.1.8334
 3.0.1.8391
 3.0.1.8471
 3.0.1.8622
-r(51313),	-- Enchanting
 3.0.1.8634
 3.0.1.8681
 3.0.1.8714
@@ -331,7 +271,6 @@ r(51313),	-- Enchanting
 3.0.1.8788
 3.0.1.8820
 3.0.1.8874
-r(47766),	-- Greater Dodge
 3.0.1.8885
 3.0.2.9056
 3.0.3.9183
@@ -339,32 +278,6 @@ r(47766),	-- Greater Dodge
 3.0.8.9506
 3.0.9.9551
 3.1.0.9767
-r(60609),	-- Speed
-r(60616),	-- Assault
-r(60606),	-- Assault
-r(60621),	-- Greater Potency
-r(60623),	-- Icewalker
-r(60653),	-- Greater Intellect
-r(59636),	--
-r(60663),	-- Major Agility
-r(47900),	-- Super Health
-r(60668),	-- Crusher
-r(60619),	--
-r(60691),	-- Massacre
-r(60707),	-- Superior Potency
-r(60714),	-- Mighty Spellpower
-r(60692),	-- Powerful Stats
-r(60763),	-- Greater Assault
-r(59621),	-- Berserking
-r(59625),	-- Black Magic
-r(59619),	-- Accuracy
-r(60767),	-- Superior Spellpower
-r(62256),	-- Major Stamina
-r(62257),	-- Titanguard
-r(62948),	-- Greater Spellpower
-r(62959),	-- Spellpower
-r(64441),	-- Blade Ward
-r(64579),	-- Blood Draining
 3.1.1.9806
 3.1.1.9835
 3.1.2.9901
@@ -380,85 +293,7 @@ r(64579),	-- Blood Draining
 3.3.3.11723
 3.3.5.12213
 3.3.5.12340
-r(69412),	-- Abyssal Shatter
-r(71692),	-- Angler
 4.0.1.12911
-r(44483),	--
-r(44484),	-- Haste
-r(44488),	-- Precision
-r(44489),	-- Dodge
-r(44492),	-- Mighty Health
-r(44494),	--
-r(44508),	-- Greater Versatility
-r(44500),	-- Superior Agility
-r(44506),	-- Gatherer
-r(44509),	-- Greater Versatility
-r(44510),	-- Exceptional Versatility
-r(44528),	-- Greater Fortitude
-r(44513),	-- Greater Assault
-r(44524),	-- Icebreaker
-r(44555),	-- Exceptional Intellect
-r(44556),	--
-r(44529),	-- Major Agility
-r(44575),	-- Greater Assault
-r(44576),	-- Lifeward
-r(44584),	-- Greater Vitality
-r(44582),	-- Minor Power
-r(44589),	-- Superior Agility
-r(44588),	-- Exceptional Armor
-r(44590),	--
-r(44593),	-- Major Versatility
-r(44591),	-- Superior Dodge
-r(44612),	-- Greater Blasting
-r(44592),	-- Exceptional Spellpower
-r(44595),	-- Scourgebane
-r(44598),	-- Haste
-r(44596),	--
-r(44616),	-- Greater Stats
-r(44621),	-- Giant Slayer
-r(44623),	-- Super Stats
-r(44625),	-- Armsman
-r(44630),	-- Greater Savagery
-r(44629),	-- Exceptional Spellpower
-r(44631),	-- Shadow Armor
-r(44633),	-- Exceptional Agility
-r(44635),	-- Greater Spellpower
-r(44645),	--
-r(44636),	--
-r(47672),	-- Mighty Stamina
-r(47898),	-- Greater Speed
-r(47899),	-- Wisdom
-r(47901),	-- Tuskarr's Vitality
-r(51313),	-- Enchanting
-r(47766),	-- Greater Dodge
-r(60609),	-- Speed
-r(60616),	-- Assault
-r(60606),	-- Assault
-r(60621),	-- Greater Potency
-r(60623),	-- Icewalker
-r(60653),	-- Greater Intellect
-r(59636),	--
-r(60663),	-- Major Agility
-r(47900),	-- Super Health
-r(60668),	-- Crusher
-r(60619),	--
-r(60691),	-- Massacre
-r(60707),	-- Superior Potency
-r(60714),	-- Mighty Spellpower
-r(60692),	-- Powerful Stats
-r(60763),	-- Greater Assault
-r(59621),	-- Berserking
-r(59625),	-- Black Magic
-r(59619),	-- Accuracy
-r(60767),	-- Superior Spellpower
-r(62256),	-- Major Stamina
-r(62257),	-- Titanguard
-r(62948),	-- Greater Spellpower
-r(62959),	-- Spellpower
-r(64441),	-- Blade Ward
-r(64579),	-- Blood Draining
-r(69412),	-- Abyssal Shatter
-r(71692),	-- Angler
 r(74132),	-- Mastery
 r(74189),	-- Earthen Vitality
 r(74191),	-- Mighty Stats
@@ -508,132 +343,7 @@ r(74254),	-- Mighty Strength
 r(74255),	-- Greater Mastery
 r(74256),	-- Greater Speed
 r(74258),	-- Enchanting
-4.3.4.15595
-r(44483),	--
-r(44484),	-- Haste
-r(44488),	-- Precision
-r(44489),	-- Dodge
-r(44492),	-- Mighty Health
-r(44494),	--
-r(44508),	-- Greater Versatility
-r(44500),	-- Superior Agility
-r(44506),	-- Gatherer
-r(44509),	-- Greater Versatility
-r(44510),	-- Exceptional Versatility
-r(44528),	-- Greater Fortitude
-r(44513),	-- Greater Assault
-r(44524),	-- Icebreaker
-r(44555),	-- Exceptional Intellect
-r(44556),	--
-r(44529),	-- Major Agility
-r(44575),	-- Greater Assault
-r(44576),	-- Lifeward
-r(44584),	-- Greater Vitality
-r(44582),	-- Minor Power
-r(44589),	-- Superior Agility
-r(44588),	-- Exceptional Armor
-r(44590),	--
-r(44593),	-- Major Versatility
-r(44591),	-- Superior Dodge
-r(44612),	-- Greater Blasting
-r(44592),	-- Exceptional Spellpower
-r(44595),	-- Scourgebane
-r(44598),	-- Haste
-r(44596),	--
-r(44616),	-- Greater Stats
-r(44621),	-- Giant Slayer
-r(44623),	-- Super Stats
-r(44625),	-- Armsman
-r(44630),	-- Greater Savagery
-r(44629),	-- Exceptional Spellpower
-r(44631),	-- Shadow Armor
-r(44633),	-- Exceptional Agility
-r(44635),	-- Greater Spellpower
-r(44645),	--
-r(44636),	--
-r(47672),	-- Mighty Stamina
-r(47898),	-- Greater Speed
-r(47899),	-- Wisdom
-r(47901),	-- Tuskarr's Vitality
-r(51313),	-- Enchanting
-r(47766),	-- Greater Dodge
-r(60609),	-- Speed
-r(60616),	-- Assault
-r(60606),	-- Assault
-r(60621),	-- Greater Potency
-r(60623),	-- Icewalker
-r(60653),	-- Greater Intellect
-r(59636),	--
-r(60663),	-- Major Agility
-r(47900),	-- Super Health
-r(60668),	-- Crusher
-r(60619),	--
-r(60691),	-- Massacre
-r(60707),	-- Superior Potency
-r(60714),	-- Mighty Spellpower
-r(60692),	-- Powerful Stats
-r(60763),	-- Greater Assault
-r(59621),	-- Berserking
-r(59625),	-- Black Magic
-r(59619),	-- Accuracy
-r(60767),	-- Superior Spellpower
-r(62256),	-- Major Stamina
-r(62257),	-- Titanguard
-r(62948),	-- Greater Spellpower
-r(62959),	-- Spellpower
-r(64441),	-- Blade Ward
-r(64579),	-- Blood Draining
-r(69412),	-- Abyssal Shatter
-r(71692),	-- Angler
-r(74132),	-- Mastery
-r(74189),	-- Earthen Vitality
-r(74191),	-- Mighty Stats
-r(74192),	-- Lesser Power
-r(74193),	-- Speed
-r(74195),	-- Mending
-r(74197),	-- Avalanche
-r(74198),	-- Haste
-r(74199),	-- Haste
-r(74200),	-- Stamina
-r(74201),	-- Critical Strike
-r(74202),	-- Intellect
-r(74207),	-- Protection
-r(74211),	-- Elemental Slayer
-r(74212),	-- Exceptional Strength
-r(74213),	-- Major Agility
-r(74214),	-- Mighty Armor
-r(74215),	--
-r(74216),	--
-r(74217),	--
-r(74218),	--
-r(74220),	-- Greater Haste
-r(74223),	-- Hurricane
-r(74225),	-- Heartsong
-r(74226),	-- Mastery
-r(74229),	-- Superior Dodge
-r(74230),	-- Critical Strike
-r(74231),	-- Exceptional Versatility
-r(74232),	-- Precision
-r(74234),	-- Protection
-r(74235),	-- Superior Intellect
-r(74236),	-- Precision
-r(74237),	-- Exceptional Versatility
-r(74238),	-- Mastery
-r(74239),	-- Greater Haste
-r(74240),	-- Greater Intellect
-r(74242),	-- Power Torrent
-r(74244),	-- Windwalk
-r(74246),	-- Landslide
-r(74247),	-- Greater Critical Strike
-r(74248),	-- Greater Critical Strike
-r(74250),	-- Peerless Stats
-r(74251),	-- Greater Stamina
-r(74252),	-- Assassin's Step
-r(74253),	-- Lavawalker
-r(74254),	-- Mighty Strength
-r(74255),	-- Greater Mastery
-r(74256),	-- Greater Speed
-r(74258),	-- Enchanting
+4.3.4.15595d
 r(92370),	--
 r(93841),	-- Enchanted Lantern
 r(93843),	-- Magic Lamp

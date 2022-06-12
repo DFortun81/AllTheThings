@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
-	inst(759, {	-- Ulduar
+	inst(759, bubbleDownSelf({ ["timeline"] = { "added 3.1.0" } }, {	-- Ulduar
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
@@ -93,8 +93,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					},
 					["groups"] = {
 						i(45087),	-- Runed Orb
-						i(46027),	-- Formula: Enchant Weapon - Blade Ward
-						i(46348),	-- Formula: Enchant Weapon - Blood Draining
+						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
+						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
 						i(45100),	-- Pattern: Belt of Arctic Life
 						i(45094),	-- Pattern: Belt of Dragons
 						i(45096),	-- Pattern: Blue Belt of Chaos
@@ -871,7 +871,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45656),	-- Mantle of the Wayward Conqueror
 					i(45657),	-- Mantle of the Wayward Protector
 					i(45658),	-- Mantle of the Wayward Vanquisher
-					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 					i(138801),	-- Illusion: Blood Draining
 					i(142093),	-- Wriggling Darkness (PET!)
 					i(46016),	-- Abaddon
@@ -904,7 +903,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 			}),
 			-- #endif
 		},
-	}),
+	})),
 })));
 
 -- #if AFTER 4.0.1

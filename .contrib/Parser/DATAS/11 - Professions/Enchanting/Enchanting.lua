@@ -334,9 +334,112 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(27981),	-- Sunfire
 		}),
 	}))),
-	tier(WOTLK_TIER, {
-		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting [NOT SOURCED]
-	}),
+	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+		r(51313, {	-- Enchanting (Grand Master)
+			["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
+		cat(673, {	-- Boot Enchantments
+			r(60606, {["timeline"]={"added 3.1.0"}}),	-- Assault
+			r(60763, {["timeline"]={"added 3.1.0"}}),	-- Greater Assault
+			r(44528),	-- Greater Fortitude
+			r(44508),	-- Greater Versatility / WOTLK: Greater Spirit
+			r(44584),	-- Greater Vitality
+			r(60623, {["timeline"]={"added 3.1.0"}}),	-- Icewalker
+			r(44589),	-- Superior Agility
+			r(47901),	-- Tuskarr's Vitality
+		}),
+		cat(677, {	-- Bracer Enchantments
+			r(60616, {["timeline"]={"added 3.1.0"}}),	-- Assault / WOTLK: Striking
+			r(44555),	-- Exceptional Intellect
+			r(44575),	-- Greater Assault
+			r(44616),	-- Greater Stats
+			r(44635),	-- Greater Spellpower
+			r(44598),	-- Haste / WOTLK: Expertise
+			r(62256, {["timeline"]={"added 3.1.0"}}),	-- Major Stamina
+			r(44593),	-- Major Versatility / WOTLK: Major Spirit
+			r(60767, {["timeline"]={"added 3.1.0"}}),	-- Superior Spellpower
+		}),
+		cat(675, {	-- Chest Enchantments
+			r(27958),	-- Exceptional Mana
+			r(44588),	-- Exceptional Armor / WOTLK: Exceptional Resilience
+			r(47766),	-- Greater Dodge / WOTLK: Greater Defense
+			r(44509),	-- Greater Versatility / WOTLK: Greater Mana Restoration
+			r(44492),	-- Mighty Health
+			r(60692, {["timeline"]={"added 3.1.0"}}),	-- Powerful Stats
+			r(47900, {["timeline"]={"added 3.1.0"}}),	-- Super Health
+			r(44623),	-- Super Stats
+		}),
+		cat(676, {	-- Cloak Enchantments
+			r(47898),	-- Greater Speed
+			r(60663, {["timeline"]={"added 3.1.0"}}),	-- Major Agility
+			r(47672),	-- Mighty Stamina
+			r(44582),	-- Minor Power
+			r(44631),	-- Shadow Armor
+			r(60609, {["timeline"]={"added 3.1.0"}}),	-- Speed
+			r(44500),	-- Superior Agility
+			r(44596, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Arcane Resistance
+			r(44591),	-- Superior Dodge / WOTLK: Titanweave
+			r(44556, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Fire Resistance
+			r(44483, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Frost Resistance
+			r(44494, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Nature Resistance
+			r(44590, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Superior Shadow Resistance
+			r(47899),	-- Wisdom
+		}),
+		cat(674, {	-- Glove Enchantments
+			r(71692, {["timeline"]={"added 3.3.0"}}),	-- Angler
+			r(44625),	-- Armsman
+			r(60668, {["timeline"]={"added 3.1.0"}}),	-- Crusher
+			r(44592),	-- Exceptional Spellpower
+			r(44506),	-- Gatherer
+			r(44513),	-- Greater Assault
+			r(44484),	-- Haste / WOTLK: Expertise
+			r(44529),	-- Major Agility
+			r(44488),	-- Precision
+		}),
+		cat(672, bubbleDownSelf({ ["timeline"] = { "added 3.2.2"} }, {	-- Reagents
+			r(69412),	-- Abyssal Shatter
+		})),
+		cat(445, bubbleDownSelf({ ["timeline"] = { "added 3.0.2", "removed 6.0.2" } }, {	-- Ring Enchantments
+			r(44645),	-- Assault
+			r(44636),	-- Greater Spellpower
+			r(59636),	-- Stamina
+		})),
+		cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+			r(60619),	-- Runed Titanium Rod
+		})),
+		cat(704, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+			r(217644),	-- Tome of Illusions: Northrend
+		})),
+		cat(679, {	-- Shield Enchantments
+			r(44489),	-- Dodge / WOTLK: Defense
+			r(60653, {["timeline"]={"added 3.1.0"}}),	-- Greater Intellect
+		}),
+		cat(678, {	-- Weapon Enchantments
+			r(59619, {["timeline"]={"added 3.1.0"}}),	-- Accuracy
+			r(59621, {["timeline"]={"added 3.1.0"}}),	-- Berserking
+			r(59625, {["timeline"]={"added 3.1.0"}}),	-- Black Magic
+			r(64441, {["timeline"]={"added 3.1.0"}}),	-- Blade Ward
+			r(64579, {["timeline"]={"added 3.1.0"}}),	-- Blood Draining
+			r(44633),	-- Exceptional Agility
+			r(44629),	-- Exceptional Spellpower
+			r(44510),	-- Exceptional Versatility / WOTLK: Exceptional Spirit
+			r(44621),	-- Giant Slayer
+			r(60621, {["timeline"]={"added 3.1.0"}}),	-- Greater Potency
+			r(44630),	-- Greater Savagery
+			r(62948, {["timeline"]={"added 3.1.0"}}),	-- Greater Spellpower
+			r(44524),	-- Icebreaker
+			r(44576),	-- Lifeward
+			r(60691, {["timeline"]={"added 3.1.0"}}),	-- Massacre
+			r(60714, {["timeline"]={"added 3.1.0"}}),	-- Mighty Spellpower
+			r(44595),	-- Scourgebane
+			r(62959, {["timeline"]={"added 3.1.0"}}),	-- Spellpower
+			r(60707, {["timeline"]={"added 3.1.0"}}),	-- Superior Potency
+		}),
+	}))),
 	tier(CATA_TIER, {
 		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting [NOT SOURCED]
 	}),
@@ -693,7 +796,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(309623),	-- Sinful Revelation
 		}),
 	})),
-	--[[ Unsure About these
+	--[[  Unsure About these
 	-- Introduced in BFA
 		r(300381),	-- Disenchant (Vanilla)
 		r(300382),	-- Disenchant (TBC)

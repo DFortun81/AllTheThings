@@ -300,6 +300,9 @@ i(186683, 27927);	-- Stats (P3) [CLASSIC ONLY] (6.0.2)
 i(22535, 27920);	-- Striking (6.0.2)
 -- NYI --
 i(22564, 28021);	-- Arcane Dust
+-- #if BEFORE 3.0.1
+i(22546, 27958);	-- Exceptional Mana (Added Later)
+-- #endif
 -- #if BEFORE 2.1.0
 i(22552, 27967);	-- Major Striking (Added later)
 -- #endif
@@ -338,20 +341,136 @@ i(34872, 45765);	-- Void Shatter (P5)
 -----------------
 i(35498, 46578);	-- Deathfrost (P3)
 
-
-
-
-
-
--- Wrath
-i(27958);	-- Exceptional Mana (added 2.0.0 But seems to belong to wrath?)
-
-
+-----------------
+-- PATCH 3.0.1 --
+-----------------
+i(0, 44489);		-- Dodge Shield
+i(0, 44633);		-- Exceptional Agility
+i(0, 44555);		-- Exceptional Intellect
+i(0, 27958);		-- Exceptional Mana (Added 2.0.0) (RECIPE LEFT IN NYI)
+i(0, 44592);		-- Exceptional Spellpower (Glove)
+i(0, 44629);		-- Exceptional Spellpower (Wep)
+i(0, 44510);		-- Exceptional Versatility / WOTLK: Exceptional Spirit (Wep)
+i(0, 44506);		-- Gatherer Glove
+i(0, 44513);		-- Greater Assault (Glove)
+i(0, 47766);		-- Greater Dodge / WOTLK: Greater Defense
+i(0, 44528);		-- Greater Fortitude
+i(0, 44630);		-- Greater Savagery
+i(0, 44635);		-- Greater Spellpower
+i(0, 44616);		-- Greater Stats
+i(0, 44508);		-- Greater Versatility / WOTLK: Greater Spirit (Boot)
+i(0, 44509);		-- Greater Versatility / WOTLK: Greater Mana Restoration (Chest)
+i(0, 44584);		-- Greater Vitality
+i(0, 44598);		-- Haste / WOTLK: Expertise (Bracer)
+i(0, 44484);		-- Haste / WOTLK: Expertise (Glove))
+i(0, 44529);		-- Major Agility
+i(0, 44593);		-- Major Versatility / WOTLK: Major Spirit
+i(0, 44492);		-- Mighty Health chest
+i(0, 44582);		-- Minor Power
+i(0, 44488);		-- Precision Glove
+i(0, 44623);		-- Super Stats
+i(0, 44589);		-- Superior Agility (Boot)
+i(0, 44500);		-- Superior Agility (Cloak)
+i(44485, 44625);	-- Armsman
+i(37340, 44588);	-- Exceptional Armor / WOTLK: Exceptional Resilience
+i(37339, 44621);	-- Giant Slayer
+i(44484, 44575);	-- Greater Assault (Bracer)
+i(44472, 47898);	-- Greater Speed
+i(37344, 44524);	-- Icebreaker
+i(44471, 47672);	-- Mighty Stamina
+i(44494, 44576);	-- Lifeward
+i(44473, 44595);	-- Scourgebane
+i(37349, 44631);	-- Shadow Armor
+i(37347, 44591);	-- Superior Dodge / WOTLK: Titanweave
+i(44491, 47901);	-- Tuskarr's Vitality
+i(44488, 47899);	-- Wisdom
+-- REMOVED --
+i(0, 51313);		-- Enchanting (Grand Master) (8.0.1)
+i(0, 44645);		-- Assault (Ring) (6.0.2)
+i(0, 44636);		-- Greater Spellpower (Ring) (6.0.2)
+i(0, 60619);		-- Runed Titanium Rod (5.0.4)
+i(0, 59636);		-- Stamina (ring) (6.0.2)
+i(37330, 44596);	-- Superior Arcane Resistance (5.0.4)
+i(37331, 44556);	-- Superior Fire Resistance (5.0.4)
+i(37332, 44483);	-- Superior Frost Resistance (5.0.4)
+i(37333, 44494);	-- Superior Nature Resistance (5.0.4)
+i(37334, 44590);	-- Superior Shadow Resistance (5.0.4)
+-- NYI --
+i(0, 44612);	-- Greater Blasting
+i(0, 60618);	-- Runed Cobalt Rod
+i(0, 44497);	-- Unknown
+i(0, 44496);	-- Unknown
+i(0, 44516);	-- Unknown
+i(0, 44515);	-- Unknown
+i(0, 44558);	-- Unknown
+i(0, 44597);	-- Unknown
+i(0, 44613);	-- Unknown
+i(0, 44632);	-- Unknown
+i(0, 44634);	-- Unknown
+i(0, 44638);	-- Unknown
+i(0, 44637);	-- Unknown
+i(0, 47903);	-- Unknown
+i(0, 47908);	-- Unknown
 
 -----------------
 -- PATCH 3.1.0 --
 -----------------
-i(0, 63746);	-- Lesser Accuracy
+i(0, 60606);		-- Assault (Boot)
+i(0, 60616);		-- Assault / WOTLK: Striking (Bracer
+i(0, 60668);		-- Crusher
+i(0, 60653);		-- Greater Intellect
+i(0, 60621);		-- Greater Potency
+i(0, 60623);		-- Icewalker
+i(0, 63746);		-- Lesser Accuracy
+i(0, 60663);		-- Major Agility
+i(0, 62959);		-- Spellpower
+i(0, 60609);		-- Speed
+i(0, 47900);		-- Super Health
+i(44496, 59619);	-- Accuracy
+i(44492, 59621);	-- Berserking
+i(44495, 59625);	-- Black Magic
+i(46027, 64441);	-- Blade Ward
+i(46348, 64579);	-- Blood Draining
+i(44490, 60763);	-- Greater Assault
+i(45059, 62948);	-- Greater Spellpower
+i(44944, 62256);	-- Major Stamina
+i(44483, 60691);	-- Massacre
+i(44487, 60714);	-- Mighty Spellpower
+i(44489, 60692);	-- Powerful Stats
+i(44486, 60707);	-- Superior Potency
+i(44498, 60767);	-- Superior Spellpower
+-- NYI
+i(0, 62257);		-- Titanguard
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+i(37335, 0);		-- Formula: Enchant Cloak - Superior Agility
+
+-----------------
+-- PATCH 3.2.2 --
+-----------------
+i(0, 69412);		-- Abyssal Shatter
+-- NYI --
+i(37348, 0);		-- Formula: Enchant Cloak - Haste
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+i(50406, 71692);	-- Angler
+
+-----------------
+-- PATCH 3.3.3 --
+-----------------
+-- NYI --
+i(37329, 0);		-- Formula: Enchant Weapon - Exceptional Versatility
+i(37346, 0);		-- Formula: Enchant Bracer - Expertise
+
+-----------------
+-- PATCH 3.3.5 --
+-----------------
+-- NYI --
+i(37337, 0);		-- Formula: Enchant Bracer - Greater Stats
 
 -----------------
 -- PATCH 8.0.1 --
@@ -480,7 +599,7 @@ i(0, 286666);		-- Breath to Expulsom
 -----------------
 -- PATCH 8.1.5 --
 -----------------
-i(0, 284415);		-- Enchant Runic Power Core
+i(0, 284415);		-- Enchant Runic Power Core (Quest)
 i(168024, 287494);	-- Iwen's Enchanting Rod
 
 -----------------
