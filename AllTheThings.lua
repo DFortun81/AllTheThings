@@ -19450,8 +19450,8 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						else
 							SetRaidDifficultyID(difficultyID);
 						end
-						Callback(self.Update, self);
 					end
+					Callback(self.Update, self);
 				end);
 				return true;
 			end
@@ -19481,8 +19481,8 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						else
 							SetLegacyRaidDifficultyID(difficultyID);
 						end
-						Callback(self.Update, self);
 					end
+					Callback(self.Update, self);
 				end);
 				return true;
 			end
