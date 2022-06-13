@@ -14194,7 +14194,12 @@ local function DirectGroupUpdate(group)
 	if progChange ~= 0 or totalChange ~= 0 then
 		AdjustParentProgress(group, progChange, totalChange);
 	end
-	-- app.PrintDebug("DGU:",group.text,window and window.Suffix,progChange,totalChange)
+	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
+	local window = app.RecursiveFirstParentWithField(group, "window");
+	if window then
+		-- app.PrintDebug("DGU:Callback Update",window.Suffix)
+		DelayedCallback(window.Update, 0.5, window);
+	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
 
