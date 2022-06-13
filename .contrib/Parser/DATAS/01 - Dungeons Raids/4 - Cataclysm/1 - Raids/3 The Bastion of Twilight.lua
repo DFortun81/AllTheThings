@@ -105,6 +105,7 @@ _.Instances = { tier(CATA_TIER, {
 								["questID"] = 59032,
 								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
+								["ignoreBonus"] = true,
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
@@ -211,6 +212,7 @@ _.Instances = { tier(CATA_TIER, {
 								["questID"] = 59032,
 								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
+								["ignoreBonus"] = true,
 							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer

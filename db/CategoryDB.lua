@@ -285,7 +285,6 @@ select(2, ...).CategoryNames = {
 	[657] = "Armor Enchantments",
 	[658] = "Weapon Enchantments",
 	[659] = "Shield and Off-Hand Enchantments",
-	[661] = "Cataclysm Enchanting",
 	[668] = "Armor Enchantments",
 	[669] = "Weapon Enchantments",
 	[670] = "Shield and Off-Hand Enchantments",

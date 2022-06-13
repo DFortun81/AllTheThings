@@ -215,6 +215,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["questID"] = 59035,
 						--["questID"] = 59036,	-- secondary questID, sorted in HQTs
 						["timeline"] = { "added 8.3.0.33115" },
+						["ignoreBonus"] = true,
 					}),
 					i(122114, {	-- Void Collar (PET!)
 						["timeline"] = { "added 6.1.0.19445" },

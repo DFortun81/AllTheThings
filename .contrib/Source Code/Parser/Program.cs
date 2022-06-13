@@ -41,6 +41,7 @@ namespace ATT
 
                 Directory.CreateDirectory("../Debugging");
 
+                Framework.ProcessingMergeData = true;
                 do
                 {
                     Errored = false;
@@ -61,6 +62,7 @@ namespace ATT
                     }
                 }
                 while (Errored);
+                Framework.ProcessingMergeData = false;
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\_main.lua";

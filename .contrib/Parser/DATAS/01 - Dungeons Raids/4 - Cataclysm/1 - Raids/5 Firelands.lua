@@ -554,6 +554,7 @@ root("Instances", tier(CATA_TIER, {
 								["questID"] = 59029,
 								--["questID"] = 59030,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
+								["ignoreBonus"] = true,
 							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
@@ -852,6 +853,7 @@ root("Instances", tier(CATA_TIER, {
 								["questID"] = 59029,
 								--["questID"] = 59030,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
+								["ignoreBonus"] = true,
 							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
