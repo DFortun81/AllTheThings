@@ -215,7 +215,7 @@ _.Zones =
 				q(41666, {	-- Vantus Rune Work Order: Nythendra
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3]
+						i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3] (RECIPE!)
 					},
 				}),
 				q(43963),	-- Vampirates!
@@ -255,19 +255,19 @@ _.Zones =
 				q(41678, {	-- Work Order: Gunpack
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(137722),	-- Schematic: Gunpack [Rank 3]
+						i(137722),	-- Schematic: Gunpack [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41636, {	-- Work Order: Leystone Breastplate
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123939),	-- Recipe: Leystone Breastplate [Rank 3]
+						i(123939),	-- Recipe: Leystone Breastplate [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(137865),	-- Design: Queen's Opal Loop (Rank 3)
+						i(137865),	-- Design: Queen's Opal Loop [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41297, {	-- Work Order: Fjarnskaggl
@@ -279,13 +279,13 @@ _.Zones =
 				q(41648, {	-- Work Order: Silkweave Bracers
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
+						i(137961),	-- Pattern: Silkweave Bracers [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41660, {	-- Work Order: Skaggldrynk
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(127923),	-- Recipe: Skaggldrynk (Rank 2)
+						i(127923),	-- Recipe: Skaggldrynk [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41277, {	-- Work Order: Stormrays
@@ -297,13 +297,13 @@ _.Zones =
 				q(41642, {	-- Work Order: Warhide Footpads
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137880),	-- Recipe: Warhide Footpads (Rank 3)
+						i(137880),	-- Recipe: Warhide Footpads [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41672, {	-- Work Order: Word of Haste
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
+						i(128597),	-- Formula: Enchant Ring - Word of Haste [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41936),	-- You Have Been Challenged

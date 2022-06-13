@@ -430,9 +430,9 @@ _.Zones =
 						i(89537),	-- Cloak of the Silent Mountain
 						i(88881),	-- Fallen Sentinel Bracers
 						i(88744),	-- Fingers of the Loneliest Monk
-						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
-						i(84557),	-- Formula: Enchant Bracer - Greater Agility
-						i(84559),	-- Formula: Enchant Bracer - Super Intellect
+						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength (RECIPE!)
+						i(84557),	-- Formula: Enchant Bracer - Greater Agility (RECIPE!)
+						i(84559),	-- Formula: Enchant Bracer - Super Intellect (RECIPE!)
 						i(88749),	-- Gauntlets of Jade Sutras
 						i(88741),	-- Gloves of Red Feathers
 						i(88746),	-- Gloves of the Overwhelming Swarm
@@ -486,9 +486,9 @@ _.Zones =
 						i(89537),	-- Cloak of the Silent Mountain
 						i(88881),	-- Fallen Sentinel Bracers
 						i(88744),	-- Fingers of the Loneliest Monk
-						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength
-						i(84557),	-- Formula: Enchant Bracer - Greater Agility
-						i(84559),	-- Formula: Enchant Bracer - Super Intellect
+						i(84561),	-- Formula: Enchant Bracer - Exceptional Strength (RECIPE!)
+						i(84557),	-- Formula: Enchant Bracer - Greater Agility (RECIPE!)
+						i(84559),	-- Formula: Enchant Bracer - Super Intellect (RECIPE!)
 						i(88749),	-- Gauntlets of Jade Sutras
 						i(88741),	-- Gloves of Red Feathers
 						i(88746),	-- Gloves of the Overwhelming Swarm

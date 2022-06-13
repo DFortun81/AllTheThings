@@ -273,6 +273,9 @@ root("Zones", m(KALIMDOR, {
 							r(13948, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Haste
 							r(13887, {["timeline"]={GODAN_TIMELINE}}),	-- Strength
 						}),
+						cat(706, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+							r(217637),	-- Tome of Illusions: Azeroth
+						})),
 						cat(701, {	-- Reagents
 							r(17181, {["timeline"]={GODAN_TIMELINE}}),	-- Enchanted Leather
 							r(17180, {["timeline"]={GODAN_TIMELINE}}),	-- Enchanted Thorium Bar
@@ -319,7 +322,7 @@ root("Zones", m(KALIMDOR, {
 							["collectible"] = false,
 							-- #endif
 						}),
-						r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting [NOT SOURCED]
+						r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
 						cat(668, {	-- Armor Enchantments
 							r(74230),	-- Critical Strike
 							r(74201),	-- Critical Strike
@@ -348,7 +351,6 @@ root("Zones", m(KALIMDOR, {
 						}),
 						cat(703, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 							r(217645),	-- Tome of Illusions: Cataclysm
-							r(217649),	-- Tome of Illusions: Elemental Lords
 						})),
 						cat(707, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
 							r(104698),	-- Maelstrom Shatter

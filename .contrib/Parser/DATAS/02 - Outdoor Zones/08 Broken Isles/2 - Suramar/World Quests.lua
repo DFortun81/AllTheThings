@@ -192,7 +192,7 @@ _.Zones =
 				q(41667, {	-- Vantus Rune Work Order: Xavius
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
+						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41346, {	-- Velvety Stalker Hide
@@ -258,9 +258,9 @@ _.Zones =
 							i(141306),	-- Wisp in a Bottle (TOY!)
 						}),
 						n(109497, {	-- Small Treasure Chest
-							i(137823),	-- Design: Prophetic Band (Rank 2)
-							i(137892),	-- Recipe: Dreadleather Bindings (Rank 3)
-							i(137718),  -- Schematic: Ironsight Cranial Cannon (Rank 3)
+							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
+							i(137892),	-- Recipe: Dreadleather Bindings [Rank 3] (RECIPE!)
+							i(137718),  -- Schematic: Ironsight Cranial Cannon [Rank 3] (RECIPE!)
 						}),
 					},
 				}),
@@ -270,13 +270,13 @@ _.Zones =
 				q(41643, {	-- Work Order: Battlebound Leggings
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137909),	-- Recipe: Battlebound Leggings (Rank 3)
+						i(137909),	-- Recipe: Battlebound Leggings [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41679, {	-- Work Order: Deployable Bullet Dispenser
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(137719),	-- Schematic: Deployable Bullet Dispenser (Rank 3)
+						i(137719),	-- Schematic: Deployable Bullet Dispenser [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41314, {	-- Work Order: Felslate
@@ -285,13 +285,13 @@ _.Zones =
 				q(41637, {	-- Work Order: Leystone Pauldrons
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123938),	-- Recipe: Leystone Pauldrons (Rank 3)
+						i(123938),	-- Recipe: Leystone Pauldrons [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(137866),	-- Design: Queen's Opal Pendant (Rank 3)
+						i(137866),	-- Design: Queen's Opal Pendant [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41282, {	-- Work Order: Runescale Koi
@@ -300,13 +300,13 @@ _.Zones =
 				q(41649, {	-- Work Order: Silkweave Slippers
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(138014),	-- Pattern: Silkweave Slippers (Rank 3)
+						i(138014),	-- Pattern: Silkweave Slippers [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41661, {	-- Work Order: Skystep Potions
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(127924),	-- Recipe: Skystep Potion (Rank 2)
+						i(127924),	-- Recipe: Skystep Potion [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41302, {	-- Work Order: Starlight Roses
@@ -318,7 +318,7 @@ _.Zones =
 				q(41673, {	-- Work Order: Word of Mastery
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(128598),	-- Formula: Enchant Ring - Word of Mastery (Rank 3)
+						i(128598),	-- Formula: Enchant Ring - Word of Mastery [Rank 3] (RECIPE!)
 					},
 				}),
 			})),

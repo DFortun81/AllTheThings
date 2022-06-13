@@ -54,7 +54,7 @@ _.Zones =
 							i(139423, {	-- Croc Mojo
 								["cost"] = { { "c", 1149, 175 }, },	-- 175x Sightless Eye
 							}),
-							i(128625, {	-- Formula: Leylight Brazier
+							i(128625, {	-- Formula: Leylight Brazier (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
 							}),
 							i(138031, {	-- Portal Key: Abandoned Shack

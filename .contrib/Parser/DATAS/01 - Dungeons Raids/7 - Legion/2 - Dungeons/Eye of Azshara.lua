@@ -102,13 +102,13 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(96028, e(1492, {	-- Wrath of Azshara
 					ach(10780),	-- Eye of Azshara
-					i(137825),	-- Design: Dawnlight Band (Rank 2)
-					i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
-					i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
-					i(137877),	-- Recipe: Warhide Pants (Rank 3)
+					i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
+					i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
+					i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
+					i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
 					i(136705),	-- Technique: Aqual Mark
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+					i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134532),	-- Band of Fused Coral
 					i(134237),	-- Brinewashed Leather Boots
 					i(137378),	-- Bottled Hurricane
@@ -181,13 +181,13 @@ _.Instances = { tier(LEGION_TIER, {
 					})),
 					cr(96028, e(1492, {	-- Wrath of Azshara
 						ach(10781),	-- Heroic: Eye of Azshara
-						i(137825),	-- Design: Dawnlight Band (Rank 2)
-						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
-						i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
-						i(137877),	-- Recipe: Warhide Pants (Rank 3)
+						i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
+						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
+						i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
+						i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
 						i(136705),	-- Technique: Aqual Mark
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+						i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots
 						i(137378),	-- Bottled Hurricane
@@ -264,13 +264,13 @@ _.Instances = { tier(LEGION_TIER, {
 					cr(96028, e(1492, {	-- Wrath of Azshara
 						ach(10782),	-- Mythic: Eye of Azshara
 						ach(10458),	-- Ready for Raiding V
-						i(137825),	-- Design: Dawnlight Band (Rank 2)
-						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 2)
-						i(127929),	-- Recipe: Leytorrent Potion (Rank 2)
-						i(137877),	-- Recipe: Warhide Pants (Rank 3)
+						i(137825),	-- Design: Dawnlight Band [Rank 2] (RECIPE!)
+						i(141916),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 2] (RECIPE!)
+						i(127929),	-- Recipe: Leytorrent Potion [Rank 2] (RECIPE!)
+						i(137877),	-- Recipe: Warhide Pants [Rank 3] (RECIPE!)
 						i(136705),	-- Technique: Aqual Mark
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+						i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
+						--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134532),	-- Band of Fused Coral
 						i(134237),	-- Brinewashed Leather Boots
 						i(137378),	-- Bottled Hurricane

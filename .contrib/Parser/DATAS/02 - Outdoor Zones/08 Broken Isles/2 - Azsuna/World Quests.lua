@@ -224,7 +224,7 @@ _.Zones =
 				q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
+						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3] (RECIPE!)
 					},
 				}),
 				q(42636),	-- WANTED: Arcanist Shal'iman
@@ -258,19 +258,19 @@ _.Zones =
 				q(41651, {	-- Work Order: Azsunite Pendant
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(137843),	-- Design: Azsunite Pendant (Rank 3)
+						i(137843),	-- Design: Azsunite Pendant [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
+						i(137914),	-- Recipe: Battlebound Spaulders [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
+						i(137711),	-- Schematic: Blink-Trigger Headgun [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41267, {	-- Work Order: Cursed Queenfish
@@ -279,7 +279,7 @@ _.Zones =
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-							i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
+							i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41311, {	-- Work Order: Leystone
@@ -288,13 +288,13 @@ _.Zones =
 				q(41633, {	-- Work Order: Leystone Greaves (WQ)
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(123931),	-- Recipe: Leystone Greaves (Rank 3)
+						i(123931),	-- Recipe: Leystone Greaves [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
+						i(137963),	-- Pattern: Silkweave Epaulets [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41326, {	-- Work Order: Stormscales
@@ -303,7 +303,7 @@ _.Zones =
 				q(41669, {	-- Work Order: Word of Critical Strike
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
+						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike [Rank 3] (RECIPE!)
 					},
 				}),
 				q(44788),	-- Work Study: Bestiaries of Azsuna

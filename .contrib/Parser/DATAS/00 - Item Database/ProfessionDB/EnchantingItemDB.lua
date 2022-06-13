@@ -373,6 +373,7 @@ i(0, 44488);		-- Precision Glove
 i(0, 44623);		-- Super Stats
 i(0, 44589);		-- Superior Agility (Boot)
 i(0, 44500);		-- Superior Agility (Cloak)
+-- ITEMS --
 i(44485, 44625);	-- Armsman
 i(37340, 44588);	-- Exceptional Armor / WOTLK: Exceptional Resilience
 i(37339, 44621);	-- Giant Slayer
@@ -398,21 +399,21 @@ i(37332, 44483);	-- Superior Frost Resistance (5.0.4)
 i(37333, 44494);	-- Superior Nature Resistance (5.0.4)
 i(37334, 44590);	-- Superior Shadow Resistance (5.0.4)
 -- NYI --
-i(0, 44612);	-- Greater Blasting
-i(0, 60618);	-- Runed Cobalt Rod
-i(0, 44497);	-- Unknown
-i(0, 44496);	-- Unknown
-i(0, 44516);	-- Unknown
-i(0, 44515);	-- Unknown
-i(0, 44558);	-- Unknown
-i(0, 44597);	-- Unknown
-i(0, 44613);	-- Unknown
-i(0, 44632);	-- Unknown
-i(0, 44634);	-- Unknown
-i(0, 44638);	-- Unknown
-i(0, 44637);	-- Unknown
-i(0, 47903);	-- Unknown
-i(0, 47908);	-- Unknown
+i(0, 44612);		-- Greater Blasting
+i(0, 60618);		-- Runed Cobalt Rod
+i(0, 44497);		-- Unknown
+i(0, 44496);		-- Unknown
+i(0, 44516);		-- Unknown
+i(0, 44515);		-- Unknown
+i(0, 44558);		-- Unknown
+i(0, 44597);		-- Unknown
+i(0, 44613);		-- Unknown
+i(0, 44632);		-- Unknown
+i(0, 44634);		-- Unknown
+i(0, 44638);		-- Unknown
+i(0, 44637);		-- Unknown
+i(0, 47903);		-- Unknown
+i(0, 47908);		-- Unknown
 
 -----------------
 -- PATCH 3.1.0 --
@@ -428,6 +429,7 @@ i(0, 60663);		-- Major Agility
 i(0, 62959);		-- Spellpower
 i(0, 60609);		-- Speed
 i(0, 47900);		-- Super Health
+-- ITEMS --
 i(44496, 59619);	-- Accuracy
 i(44492, 59621);	-- Berserking
 i(44495, 59625);	-- Black Magic
@@ -441,7 +443,7 @@ i(44487, 60714);	-- Mighty Spellpower
 i(44489, 60692);	-- Powerful Stats
 i(44486, 60707);	-- Superior Potency
 i(44498, 60767);	-- Superior Spellpower
--- NYI
+-- NYI --
 i(0, 62257);		-- Titanguard
 
 -----------------
@@ -510,6 +512,7 @@ i(0, 74193);		-- Speed
 i(0, 74200);		-- Stamina
 i(0, 74229);		-- Superior Dodge
 i(0, 74235);		-- Superior Intellect
+-- ITEMS --
 i(68787, 96264);	-- Agility
 i(64411, 74252);	-- Assassin's Step
 i(67308, 93841);	-- Enchanted Lantern
@@ -538,7 +541,281 @@ i(65359, 92370);	-- Runed Elementium Rod (5.0.4)
 -----------------
 -- PATCH 4.3.0 --
 -----------------
-i(104698);		-- Maelstrom Shatter
+i(0, 104698);		-- Maelstrom Shatter
+
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+i(0, 104398);		-- Accuracy
+i(0, 104409);		-- Blurred Speed
+i(0, 104440);		-- Colossus
+i(0, 104430);		-- Elemental Force
+i(0, 116498);		-- Ethereal Shard
+i(0, 118238);		-- Ethereal Shatter
+i(0, 104395);		-- Glorious Stats
+i(0, 104407);		-- Greater Haste
+i(0, 104416);		-- Greater Haste
+i(0, 130758);		-- Greater Parry
+i(0, 104408);		-- Greater Precision
+i(0, 104401);		-- Greater Protection
+i(0, 104385);		-- Major Dodge
+i(0, 104445);		-- Major Intellect
+i(0, 104338);		-- Mastery
+i(0, 104393);		-- Mighty Versatility
+i(0, 118237);		-- Mysterious Diffusion
+i(0, 116497);		-- Mysterious Essence
+i(0, 104414);		-- Pandaren's Step
+i(0, 116499);		-- Sha Crystal
+i(0, 118239);		-- Sha Shatter
+i(0, 104392);		-- Super Armor / MOP: Super Resilience
+i(0, 104419);		-- Super Strength
+i(0, 104404);		-- Superior Critical Strike
+i(0, 104417);		-- Superior Haste
+i(0, 104403);		-- Superior Intellect
+i(0, 104420);		-- Superior Mastery
+i(0, 104397);		-- Superior Stamina
+i(0, 104425);		-- Windsong
+-- ITEMS --
+i(84584, 104434);	-- Dancing Steel
+i(84561, 104390);	-- Exceptional Strength
+i(84557, 104391);	-- Greater Agility
+i(84583, 104427);	-- Jade Spirit
+i(84580, 104442);	-- River's Song
+i(84559, 104389);	-- Super Intellect
+-- REMOVED --
+i(0, 110400);		-- Enchanting (Zen Master) (8.0.2)
+i(0, 103461);		-- Greater Agility (6.0.2)
+i(0, 103462);		-- Greater Intellect (6.0.2)
+i(0, 103463);		-- Greater Stamina (6.0.2)
+i(0, 103465);		-- Greater Strength (6.0.2)
+-- NYI --
+i(0, 110955);		-- Release Spirit
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+i(0, 158907);		-- Breath of Critical Strike (Ring)
+i(0, 158908);		-- Breath of Haste (Ring)
+i(0, 158909);		-- Breath of Mastery (Ring)
+i(0, 158911);		-- Breath of Versatility (Ring)
+i(0, 162948);		-- Enchanted Dust
+i(0, 158716);		-- Enchanting (Draenor Master)
+i(0, 173716);		-- Illusion: Agility
+i(0, 173717);		-- Illusion: Battlemaster
+i(0, 173718);		-- Illusion: Berserking
+i(0, 174979);		-- Illusion: Blood Draining
+i(0, 173720);		-- Illusion: Crusader
+i(0, 175076);		-- Illusion: Earthliving
+i(0, 173721);		-- Illusion: Elemental Force
+i(0, 173722);		-- Illusion: Executioner
+i(0, 173723);		-- Illusion: Fiery Weapon
+i(0, 175072);		-- Illusion: Flametongue
+i(0, 175071);		-- Illusion: Frostbrand
+i(0, 173719);		-- Illusion: Greater Spellpower
+i(0, 173724);		-- Illusion: Hidden
+i(0, 175070);		-- Illusion: Jade Spirit
+i(0, 173725);		-- Illusion: Landslide
+i(0, 173726);		-- Illusion: Lifestealing
+i(0, 175085);		-- Illusion: Mending
+i(0, 173727);		-- Illusion: Mongoose
+i(0, 173728);		-- Illusion: Poisoned
+i(0, 173729);		-- Illusion: Power Torrent
+i(0, 175086);		-- Illusion: River's Song
+i(0, 175078);		-- Illusion: Rockbiter
+i(0, 173730);		-- Illusion: Spellsurge
+i(0, 173731);		-- Illusion: Striking
+i(0, 173732);		-- Illusion: Unholy
+i(0, 175074);		-- Illusion: Windfury
+i(0, 169091);		-- Luminous Shard
+i(0, 159236);		-- Mark of the Shattered Hand
+i(0, 177355);		-- Remove Illusion
+i(0, 177043);		-- Secrets of Draenor Enchanting
+i(0, 169092);		-- Temporal Crystal
+-- ITEMS --
+i(118394, 158877);	-- Breath of Critical Strike (Cloak)
+i(118438, 158892);	-- Breath of Critical Strike (Neck)
+i(118429, 158878);	-- Breath of Haste (Cloak)
+i(118439, 158893);	-- Breath of Haste (Neck)
+i(118430, 158879);	-- Breath of Mastery (Cloak)
+i(118440, 158894);	-- Breath of Mastery (Neck)
+i(118432, 158881);	-- Breath of Versatility (Cloak)
+i(118442, 158896);	-- Breath of Versatility (Neck)
+i(118433, 158884);	-- Gift of Critical Strike (Cloak)
+i(118443, 158899);	-- Gift of Critical Strike (Neck)
+i(118453, 158914);	-- Gift of Critical Strike (Ring)
+i(118434, 158885);	-- Gift of Haste (Cloak)
+i(118444, 158900);	-- Gift of Haste (Neck)
+i(118454, 158915);	-- Gift of Haste (Ring)
+i(118435, 158886);	-- Gift of Mastery (Cloak)
+i(118445, 158901);	-- Gift of Mastery (Neck)
+i(118455, 158916);	-- Gift of Mastery (Ring)
+i(118437, 158889);	-- Gift of Versatility (Cloak)
+i(118447, 158903);	-- Gift of Versatility (Neck)
+i(118457, 158918);	-- Gift of Versatility (Ring)
+i(118463, 159674);	-- Mark of Blackrock
+i(118467, 173323);	-- Mark of Bleeding Hollow
+i(118462, 159673);	-- Mark of Shadowmoon
+i(118461, 159672);	-- Mark of the Frostwolf
+i(118458, 159235);	-- Mark of the Thunderlord
+i(118460, 159671);	-- Mark of Warsong
+-- REMOVED --
+i(0, 158910);		-- Breath of Multistrike (Ring)
+i(118431, 158880);	-- Breath of Multistrike (Cloak)
+i(118441, 158895);	-- Breath of Multistrike (Neck)
+i(118436, 158887);	-- Gift of Multistrike (Cloak)
+i(118446, 158902);	-- Gift of Multistrike (Neck)
+i(118456, 158917);	-- Gift of Multistrike (Ring)
+-- NYI --
+i(0, 181870);		-- Illusion: Holy Infusion
+i(0, 178241);		-- Temporal Crystal
+i(0, 158144);		-- Unknown
+i(0, 158882);		-- Unknown
+i(0, 158890);		-- Unknown
+i(0, 158891);		-- Unknown
+i(0, 158897);		-- Unknown
+i(0, 158904);		-- Unknown
+i(0, 158905);		-- Unknown
+i(0, 158912);		-- Unknown
+i(0, 158919);		-- Unknown
+--[[ These are kinda Weird
+i(0, 10000);		-- CLASSIC: Plans: Wicked Mithril Blade
+i(0, 10000);		-- CLASSIC: Plans: Wicked Mithril Blade
+i(0, 10000);		-- CLASSIC: Plans: Wicked Mithril Blade
+i(0, 10000);		-- CLASSIC: Plans: Wicked Mithril Blade
+i(0, 10000);		-- CLASSIC: Plans: Wicked Mithril Blade
+--]]
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+i(122711, 182129);	-- Temporal Binding
+
+-----------------
+-- PATCH 7.0.3 --
+-----------------
+i(0, 190870);		-- Binding of Critical Strike [Rank 1]
+i(0, 190871);		-- Binding of Haste [Rank 1]
+i(0, 190872);		-- Binding of Mastery [Rank 1]
+i(0, 190873);		-- Binding of Versatility [Rank 1]
+i(0, 190954);		-- Boon of the Scavenger
+i(0, 191076);		-- Enchanted Pen
+i(0, 228408);		-- Mark of the Ancient Priestess [Rank 1]
+i(0, 190892);		-- Mark of the Claw [Rank 1]
+i(0, 190893);		-- Mark of the Distant Army [Rank 1]
+i(0, 228402);		-- Mark of the Heavy Hide [Rank 1]
+i(0, 190894);		-- Mark of the Hidden Satyr [Rank 1]
+i(0, 228405);		-- Mark of the Trained Soldier [Rank 1]
+i(0, 217637);		-- Tome of Illusions: Azeroth
+i(0, 217645);		-- Tome of Illusions: Cataclysm
+i(0, 217649);		-- Tome of Illusions: Elemental Lords
+i(0, 217644);		-- Tome of Illusions: Northrend
+i(0, 217641);		-- Tome of Illusions: Outland
+i(0, 217650);		-- Tome of Illusions: Pandaria
+i(0, 190875);		-- Word of Agility [Rank 1]
+i(0, 190866);		-- Word of Critical Strike [Rank 1]
+i(0, 190867);		-- Word of Haste [Rank 1]
+i(0, 190876);		-- Word of Intellect [Rank 1]
+i(0, 190868);		-- Word of Mastery [Rank 1]
+i(0, 190874);		-- Word of Strength [Rank 1]
+i(0, 190869);		-- Word of Versatility [Rank 1]
+-- ITEMS --
+i(128574, 190878);	-- Binding of Agility [Rank 1]
+i(128591, 191004);	-- Binding of Agility [Rank 2]
+i(128608, 191021);	-- Binding of Agility [Rank 3]
+i(128583, 190996);	-- Binding of Critical Strike [Rank 2]
+i(128600, 191013);	-- Binding of Critical Strike [Rank 3]
+i(128584, 190997);	-- Binding of Haste [Rank 2]
+i(128601, 191014);	-- Binding of Haste [Rank 3]
+i(128575, 190879);	-- Binding of Intellect [Rank 1]
+i(128592, 191005);	-- Binding of Intellect [Rank 2]
+i(128609, 191022);	-- Binding of Intellect [Rank 3]
+i(128585, 190998);	-- Binding of Mastery [Rank 2]
+i(128602, 191015);	-- Binding of Mastery [Rank 3]
+i(128573, 190877);	-- Binding of Strength [Rank 1]
+i(128590, 191003);	-- Binding of Strength [Rank 2]
+i(128607, 191020);	-- Binding of Strength [Rank 3]
+i(128586, 190999);	-- Binding of Versatility [Rank 2]
+i(128603, 191016);	-- Binding of Versatility [Rank 3]
+i(128621, 191074);	-- Enchanted Cauldron
+i(128622, 191075);	-- Enchanted Torch
+i(136704, 209509);	-- Immaculate Fibril
+i(128617, 190988);	-- Legion Herbalism
+i(128618, 190989);	-- Legion Mining
+i(128619, 190990);	-- Legion Skinning
+i(128620, 190991);	-- Legion Surveying
+i(140634, 224199);	-- Ley Shatter
+i(128625, 191078);	-- Leylight Brazier
+i(141916, 228409);	-- Mark of the Ancient Priestess [Rank 2]
+i(141919, 228410);	-- Mark of the Ancient Priestess [Rank 3]
+i(128593, 191006);	-- Mark of the Claw [Rank 2]
+i(128610, 191023);	-- Mark of the Claw [Rank 3]
+i(128594, 191007);	-- Mark of the Distant Army [Rank 2]
+i(128611, 191024);	-- Mark of the Distant Army [Rank 3]
+i(141914, 228403);	-- Mark of the Heavy Hide [Rank 2]
+i(141917, 228404);	-- Mark of the Heavy Hide [Rank 3]
+i(128595, 191008);	-- Mark of the Hidden Satyr [Rank 2]
+i(128612, 191025);	-- Mark of the Hidden Satyr [Rank 3]
+i(141915, 228406);	-- Mark of the Trained Soldier [Rank 2]
+i(141918, 228407);	-- Mark of the Trained Soldier [Rank 3]
+i(136702, 209507);	-- Soul Fibril
+i(138882, 217655);	-- Tome of Illusions: Draenor
+i(138877, 217651);	-- Tome of Illusions: Secrets of the Shado-Pan
+i(128588, 191001);	-- Word of Agility [Rank 2]
+i(128605, 191018);	-- Word of Agility [Rank 3]
+i(128579, 190992);	-- Word of Critical Strike [Rank 2]
+i(128596, 191009);	-- Word of Critical Strike [Rank 3]
+i(128580, 190993);	-- Word of Haste [Rank 2]
+i(128597, 191010);	-- Word of Haste [Rank 3]
+i(128589, 191002);	-- Word of Intellect [Rank 2]
+i(128606, 191019);	-- Word of Intellect [Rank 3]
+i(128581, 190994);	-- Word of Mastery [Rank 2]
+i(128598, 191011);	-- Word of Mastery [Rank 3]
+i(128587, 191000);	-- Word of Strength [Rank 2]
+i(128604, 191017);	-- Word of Strength [Rank 3]
+i(128582, 190995);	-- Word of Versatility [Rank 2]
+i(128599, 191012);	-- Word of Versatility [Rank 3]
+-- REMOVED --
+i(0, 195096);		-- Enchanting (Legion Master)
+-- NYI --
+i(128566, 0);		-- Binding of Critical Strike [Rank 1]
+i(128567, 0);		-- Binding of Haste [Rank 1]
+i(128568, 0);		-- Binding of Mastery [Rank 1]
+i(128569, 0);		-- Binding of Versatility [Rank 1]
+i(128623, 0);		-- Enchanted Pen
+i(141913, 0);		-- Mark of the Ancient Priestess [Rank 1]
+i(128576, 0);		-- Mark of the Claw [Rank 1]
+i(128577, 0);		-- Mark of the Distant Army [Rank 1]
+i(141911, 0);		-- Mark of the Heavy Hide [Rank 1]
+i(128578, 0);		-- Mark of the Hidden Satyr [Rank 1]
+i(141912, 0);		-- Mark of the Trained Soldier [Rank 1]
+i(128571, 0);		-- Word of Agility [Rank 1]
+i(128562, 0);		-- Word of Critical Strike [Rank 1]
+i(128563, 0);		-- Word of Haste [Rank 1]
+i(128572, 0);		-- Word of Intellect [Rank 1]
+i(128564, 0);		-- Word of Mastery [Rank 1]
+i(128570, 0);		-- Word of Strength [Rank 1]
+i(128565, 0);		-- Word of Versatility [Rank 1]
+
+-----------------
+-- PATCH 7.1.5 --
+-----------------
+i(144317, 235698);	-- Mark of the Deadly [Rank 1]
+i(144318, 235702);	-- Mark of the Deadly [Rank 2]
+i(144319, 235706);	-- Mark of the Deadly [Rank 3]
+i(144308, 235695);	-- Mark of the Master [Rank 1]
+i(144309, 235699);	-- Mark of the Master [Rank 2]
+i(144310, 235703);	-- Mark of the Master [Rank 3]
+i(144314, 235697);	-- Mark of the Quick [Rank 1]
+i(144315, 235701);	-- Mark of the Quick [Rank 2]
+i(144316, 235705);	-- Mark of the Quick [Rank 3]
+i(144311, 235696);	-- Mark of the Versatile [Rank 1]
+i(144312, 235700);	-- Mark of the Versatile [Rank 2]
+i(144313, 235704);	-- Mark of the Versatile [Rank 3]
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+i(152658, 252106);	-- Chaos Shatter
 
 -----------------
 -- PATCH 8.0.1 --
@@ -605,6 +882,7 @@ i(0, 267458);		-- Zandalari Herbalism
 i(0, 267482);		-- Zandalari Mining
 i(0, 267486);		-- Zandalari Skinning
 i(0, 267490);		-- Zandalari Surveying
+-- ITEMS --
 i(162315, 255105);	-- Coastal Surge [Rank 3]
 i(162313, 268909);	-- Deadly Navigation [Rank 3] (A)
 i(162722, 268909);	-- Deadly Navigation [Rank 3] (H)
@@ -691,6 +969,7 @@ i(0, 298441);		-- Naga Hide [Rank 2]
 i(0, 294781);		-- Notorious Combatant's Sorcerous Scepter [Rank 1]
 i(0, 298438);		-- Oceanic Restoration [Rank 1]
 i(0, 298437);		-- Oceanic Restoration [Rank 2]
+-- ITEMS --
 i(169530, 298011);	-- Accord of Critical Strike [Rank 3] (A)
 i(169604, 298011);	-- Accord of Critical Strike [Rank 3] (H)
 i(169531, 298016);	-- Accord of Haste [Rank 3] (A)
@@ -710,7 +989,7 @@ i(168450, 298011);	-- Accord of Critical Strike [Rank 3]
 i(168451, 298016);	-- Accord of Haste [Rank 3]
 i(168452, 298002);	-- Accord of Mastery [Rank 3]
 i(168453, 297999);	-- Accord of Versatility [Rank 3]
--- Unkown --
+-- UNKNOWN --
 i(0, 300381);		-- Disenchant (Vanilla)
 i(0, 300382);		-- Disenchant (TBC)
 i(0, 302690);		-- Disenchant (WOTLK)
@@ -727,7 +1006,7 @@ i(0, 305936);		-- Uncanny Combatant's Sorcerous Scepter [Rank 1]
 i(171153, 305937);	-- Uncanny Combatant's Sorcerous Scepter [Rank 2]
 i(171152, 305938);	-- Uncanny Combatant's Sorcerous Scepter [Rank 3]
 -- NYI --
-i(177964, 0);	-- Enchant Weapon - Force Multiplier
+i(177964, 0);		-- Enchant Weapon - Force Multiplier
 
 -----------------
 -- PATCH 9.0.1 --
@@ -776,6 +1055,7 @@ i(0, 309618);		-- Tenet of Mastery
 i(0, 309619);		-- Tenet of Versatility
 i(0, 338121);		-- True Aim Spear (Quest)
 i(0, 338123);		-- Unbreakable Crystal (Quest)
+-- ITEMS --
 i(183096, 309644);	-- Sacred Shard
 -- NYI --
 i(0, 309628);		--	9.0 Enchanting - Modified Crafting Reagent 01
@@ -790,7 +1070,7 @@ i(0, 343682);		--	Crafter's Mark III
 i(0, 343681);		--	Crafter's Mark IV
 i(182666, 0);		--	Formula: Enchanted Elethium Bar
 i(183866, 0);		--	Formula: Crafter's Mark III / [DNT][REUSE ME] Formula: Crafter's Mark III
--- Unknown --
+-- UNKNOWN --
 i(0, 324750);		-- Disenchant (SL)
 
 -----------------

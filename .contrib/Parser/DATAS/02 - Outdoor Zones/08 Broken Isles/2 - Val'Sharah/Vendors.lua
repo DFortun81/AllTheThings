@@ -10,7 +10,7 @@ _.Zones =
 				n(93974, {	-- Leyweaver Erenyi
 					["coord"] = { 70.4, 46.6, VALSHARAH },
 					["g"] = {
-						i(127022, {	-- Pattern: Imbued Silkweave Cinch (Rank 1)
+						i(127022, {	-- Pattern: Imbued Silkweave Cinch [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
 					},
@@ -30,16 +30,16 @@ _.Zones =
 						i(140578, {	-- Dreamweaver Initiate's Tabard
 							["cost"] = 3000000,	-- 300g
 						}),
-						i(128608, {	-- Formula: Enchant Cloak - Binding of Agility (Rank 3)
+						i(128608, {	-- Formula: Enchant Cloak - Binding of Agility [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(128593, {	-- Formula: Enchant Neck - Mark of the Claw (Rank 2)
+						i(128593, {	-- Formula: Enchant Neck - Mark of the Claw [Rank 2] (RECIPE!)
 							["cost"] = 15000000,	-- 1,500g
 						}),
-						i(128601, {	-- Formula: Enchant Ring - Binding of Haste (Rank 3)
+						i(128601, {	-- Formula: Enchant Ring - Binding of Haste [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(128599, {	-- Formula: Enchant Ring - Word of Versatility (Rank 3)
+						i(128599, {	-- Formula: Enchant Ring - Word of Versatility [Rank 3] (RECIPE!)
 							["cost"] = 5500000,	-- 550g
 						}),
 						i(130232, {	-- Moonfeather Statue (TOY!)
@@ -54,16 +54,16 @@ _.Zones =
 						i(139605, {	-- Pendant of the Moon Temple
 							["cost"] = 10000000,	-- 1,000g
 						}),
-						i(137898, {	-- Recipe: Dreadleather Footpads (Rank 3)
+						i(137898, {	-- Recipe: Dreadleather Footpads [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137896, {	-- Recipe: Dreadleather Mask (Rank 3)
+						i(137896, {	-- Recipe: Dreadleather Mask [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137895, {	-- Recipe: Dreadleather Pants (Rank 3)
+						i(137895, {	-- Recipe: Dreadleather Pants [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137883, {	-- Recipe: Warhide Jerkin (Rank 3)
+						i(137883, {	-- Recipe: Warhide Jerkin [Rank 3] (RECIPE!)
 							["cost"] = 5500000,	-- 550g
 						}),
 						i(140652, {	-- Seed of Solar Fire - Druid Artifact Skin

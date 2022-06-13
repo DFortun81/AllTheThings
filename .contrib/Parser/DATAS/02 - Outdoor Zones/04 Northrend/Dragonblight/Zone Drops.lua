@@ -2,8 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(NORTHREND, {
-	m(DRAGONBLIGHT, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+root("Zones", m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
+	 m(DRAGONBLIGHT, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		n(ZONE_DROPS, {
 			i(50406, {	-- Formula: Enchant Gloves - Angler (RECIPE!)
 				["crs"] = {
@@ -24,4 +24,4 @@ root("Zones", m(NORTHREND, {
 			}),
 		}),
 	})),
-}));
+})));

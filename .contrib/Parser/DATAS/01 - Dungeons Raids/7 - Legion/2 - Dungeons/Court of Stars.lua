@@ -59,12 +59,12 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137492),	-- Flamewreath Spark
 				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
-					i(137856),	-- Design: Righteous Dawnlight Medallion (Rank 3)
-					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 2)
-					i(137929),	-- Recipe: Gravenscale Grips (Rank 3)
-					i(127926),	-- Recipe: Potion of Deadly Grace (Rank 2)
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
+					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
+					i(137929),	-- Recipe: Gravenscale Grips [Rank 3] (RECIPE!)
+					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
+					i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
 					i(137489),	-- Arcane-Bound Gale Chain
@@ -118,12 +118,12 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
 					ach(10816),	-- Mythic: Court of Stars
-					i(137856),	-- Design: Righteous Dawnlight Medallion (Rank 3)
-					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 2)
-					i(137929),	-- Recipe: Gravenscale Grips (Rank 3)
-					i(127926),	-- Recipe: Potion of Deadly Grace (Rank 2)
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
+					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
+					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
+					i(137929),	-- Recipe: Gravenscale Grips [Rank 3] (RECIPE!)
+					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
+					i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
+					--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
 					i(137489),	-- Arcane-Bound Gale Chain

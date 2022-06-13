@@ -3091,17 +3091,17 @@ _.Zones =
 						i(136782, {	-- Fireworks Instruction Manual
 							["spellID"] = 127933,	-- Fireworks
 						}),
-						i(137709),	-- Schematic: Auto-Hammer (Rank 2)
-						i(137705),	-- Schematic: Deployable Bullet Dispenser (Rank 2)
-						i(133673),	-- Schematic: Double-Barreled Cranial Cannon (Rank 1)
-						i(137710),	-- Schematic: Failure Detection Pylon (Rank 2)
-						i(137708),	-- Schematic: Gunpack (Rank 2)
+						i(137709),	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
+						i(137705),	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
+						i(133673),	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
+						i(137710),	-- Schematic: Failure Detection Pylon [Rank 2] (RECIPE!)
+						i(137708),	-- Schematic: Gunpack [Rank 2] (RECIPE!)
 						i(137691),	-- Schematic: Intra-Dalaran Wormhole Generator
-						i(133674),	-- Schematic: Ironsight Cranial Cannon (Rank 1)
-						i(137707),	-- Schematic: Pump-Action Bandage Gun (Rank 2)
+						i(133674),	-- Schematic: Ironsight Cranial Cannon [Rank 1] (RECIPE!)
+						i(137707),	-- Schematic: Pump-Action Bandage Gun [Rank 2] (RECIPE!)
 						i(141849),	-- Schematic: Reaves Module: Bling Mode
-						i(133672),	-- Schematic: Sawed-Off Cranial Cannon (Rank 1)
-						i(133671),	-- Schematic: Semi-Automagic Cranial Cannon (Rank 1)
+						i(133672),	-- Schematic: Sawed-Off Cranial Cannon [Rank 1] (RECIPE!)
+						i(133671),	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
 						i(23817, {	-- Schematic: Titanium Toolbox
 							["isLimited"] = true,
 						}),
@@ -3115,22 +3115,22 @@ _.Zones =
 						i(139494, {	-- Forgotten Formulas of the Broken Isles
 							["collectible"] = false,
 						}),
-						i(128591),	-- Formula: Enchant Cloak - Binding of Agility (Rank 2)
-						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect (Rank 2)
-						i(128590),	-- Formula: Enchant Cloak - Binding of Strength (Rank 2)
-						i(128588),	-- Formula: Enchant Cloak - Word of Agility (Rank 2)
-						i(128589),	-- Formula: Enchant Cloak - Word of Intellect (Rank 2)
-						i(128587),	-- Formula: Enchant Cloak - Word of Strength (Rank 2)
-						i(128583),	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 2)
-						i(128584),	-- Formula: Enchant Ring - Binding of Haste (Rank 2)
-						i(128585),	-- Formula: Enchant Ring - Binding of Mastery (Rank 2)
-						i(128586),	-- Formula: Enchant Ring - Binding of Versatility (Rank 2)
-						i(128579),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 2)
-						i(128580),	-- Formula: Enchant Ring - Word of Haste (Rank 2)
-						i(128581),	-- Formula: Enchant Ring - Word of Mastery (Rank 2)
-						i(128582),	-- Formula: Enchant Ring - Word of Versatility (Rank 2)
+						i(128591),	-- Formula: Enchant Cloak - Binding of Agility [Rank 2] (RECIPE!)
+						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect [Rank 2] (RECIPE!)
+						i(128590),	-- Formula: Enchant Cloak - Binding of Strength [Rank 2] (RECIPE!)
+						i(128588),	-- Formula: Enchant Cloak - Word of Agility [Rank 2] (RECIPE!)
+						i(128589),	-- Formula: Enchant Cloak - Word of Intellect [Rank 2] (RECIPE!)
+						i(128587),	-- Formula: Enchant Cloak - Word of Strength [Rank 2] (RECIPE!)
+						i(128583),	-- Formula: Enchant Ring - Binding of Critical Strike [Rank 2] (RECIPE!)
+						i(128584),	-- Formula: Enchant Ring - Binding of Haste [Rank 2] (RECIPE!)
+						i(128585),	-- Formula: Enchant Ring - Binding of Mastery [Rank 2] (RECIPE!)
+						i(128586),	-- Formula: Enchant Ring - Binding of Versatility [Rank 2] (RECIPE!)
+						i(128579),	-- Formula: Enchant Ring - Word of Critical Strike [Rank 2] (RECIPE!)
+						i(128580),	-- Formula: Enchant Ring - Word of Haste [Rank 2] (RECIPE!)
+						i(128581),	-- Formula: Enchant Ring - Word of Mastery [Rank 2] (RECIPE!)
+						i(128582),	-- Formula: Enchant Ring - Word of Versatility [Rank 2] (RECIPE!)
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(140634),	-- Formula: Ley Shatter
+						i(140634),	-- Formula: Ley Shatter (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
@@ -3140,37 +3140,37 @@ _.Zones =
 					["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
 					["coord"] = { 39.6, 34.5, LEGION_DALARAN },
 					["g"] = {
-						i(137809),	-- Design: Ancient Maelstrom Amulet (Rank 1)
-						i(137794),	-- Design: Azsunite Loop (Rank 1)
-						i(137797),	-- Design: Azsunite Pendant (Rank 1)
-						i(137802),	-- Design: Blessed Dawnlight Medallion (Rank 1)
+						i(137809),	-- Design: Ancient Maelstrom Amulet [Rank 1] (RECIPE!)
+						i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
+						i(137797),	-- Design: Azsunite Pendant [Rank 1] (RECIPE!)
+						i(137802),	-- Design: Blessed Dawnlight Medallion [Rank 1] (RECIPE!)
 						i(138451),	-- Design: Deadly Deep Amber
 						i(138454),	-- Design: Deadly Eye of Prophecy
-						i(137792),	-- Design: Deep Amber Loop (Rank 1)
-						i(137795),	-- Design: Deep Amber Pendant (Rank 1)
-						i(137812),	-- Design: Grim Furystone Gorget (Rank 1)
-						i(137808),	-- Design: Intrepid Necklace of Prophecy (Rank 1)
+						i(137792),	-- Design: Deep Amber Loop [Rank 1] (RECIPE!)
+						i(137795),	-- Design: Deep Amber Pendant [Rank 1] (RECIPE!)
+						i(137812),	-- Design: Grim Furystone Gorget [Rank 1] (RECIPE!)
+						i(137808),	-- Design: Intrepid Necklace of Prophecy [Rank 1] (RECIPE!)
 						i(138453),	-- Design: Masterful Queen's Opal
 						i(138456),	-- Design: Masterful Shadowruby
-						i(137859),	-- Design: Queen's Opal Loop (Rank 1)
-						i(137860),	-- Design: Queen's Opal Pendant (Rank 1)
+						i(137859),	-- Design: Queen's Opal Loop [Rank 1] (RECIPE!)
+						i(137860),	-- Design: Queen's Opal Pendant [Rank 1] (RECIPE!)
 						i(138452),	-- Design: Quick Azsunite
 						i(138455),	-- Design: Quick Dawnlight
-						i(137811),	-- Design: Raging Furystone Gorget (Rank 1)
-						i(137810),	-- Design: Righteous Dawnlight Medallion (Rank 1)
+						i(137811),	-- Design: Raging Furystone Gorget [Rank 1] (RECIPE!)
+						i(137810),	-- Design: Righteous Dawnlight Medallion [Rank 1] (RECIPE!)
 						i(137813),	-- Design: Saber's Eye
 						i(137815),	-- Design: Saber's Eye of Agility
 						i(137816),	-- Design: Saber's Eye of Intellect
 						i(137814),	-- Design: Saber's Eye of Strength
-						i(137861),	-- Design: Shadowruby Band (Rank 1)
-						i(137793),	-- Design: Skystone Loop (Rank 1)
-						i(137796),	-- Design: Skystone Pendant (Rank 1)
-						i(137801),	-- Design: Sorcerous Shadowruby Pendant (Rank 1)
-						i(137804),	-- Design: Subtle Shadowruby Pendant (Rank 1)
-						i(137807),	-- Design: Sylvan Maelstrom Amulet (Rank 1)
-						i(137805),	-- Design: Tranquil Necklace of Prophecy (Rank 1)
-						i(137803),	-- Design: Twisted Pandemonite Choker (Rank 1)
-						i(137806),	-- Design: Vindictive Pandemonite Choker (Rank 1)
+						i(137861),	-- Design: Shadowruby Band [Rank 1] (RECIPE!)
+						i(137793),	-- Design: Skystone Loop [Rank 1] (RECIPE!)
+						i(137796),	-- Design: Skystone Pendant [Rank 1] (RECIPE!)
+						i(137801),	-- Design: Sorcerous Shadowruby Pendant [Rank 1] (RECIPE!)
+						i(137804),	-- Design: Subtle Shadowruby Pendant [Rank 1] (RECIPE!)
+						i(137807),	-- Design: Sylvan Maelstrom Amulet [Rank 1] (RECIPE!)
+						i(137805),	-- Design: Tranquil Necklace of Prophecy [Rank 1] (RECIPE!)
+						i(137803),	-- Design: Twisted Pandemonite Choker [Rank 1] (RECIPE!)
+						i(137806),	-- Design: Vindictive Pandemonite Choker [Rank 1] (RECIPE!)
 					},
 				}),
 				n(93544,  {	-- Jang Quillpaw <Inscription Supplies>
@@ -3210,21 +3210,21 @@ _.Zones =
 				n(93524,  {	-- Lalla Brightweave <Tailoring Supplies>
 					["coord"] = { 36.1, 33.3, LEGION_DALARAN },
 					["g"] = {
-						i(137965),	-- Pattern: Imbued Silkweave Bracers (Rank 2)
-						i(137967),	-- Pattern: Imbued Silkweave Epaulets (Rank 2)
-						i(137970),	-- Pattern: Imbued Silkweave Gloves (Rank 2)
-						i(137969),	-- Pattern: Imbued Silkweave Hood (Rank 2)
-						i(137968),	-- Pattern: Imbued Silkweave Pantaloons (Rank 2)
-						i(137972),	-- Pattern: Imbued Silkweave Robe (Rank 2)
-						i(137971),	-- Pattern: Imbued Silkweave Slippers (Rank 2)
-						i(137953),	-- Pattern: Silkweave Bracers (Rank 2)
-						i(137957),	-- Pattern: Silkweave Hood (Rank 2)
-						i(137955),	-- Pattern: Silkweave Epaulets (Rank 2)
-						i(137958),	-- Pattern: Silkweave Gloves (Rank 2)
-						i(137956),	-- Pattern: Silkweave Pantaloons (Rank 2)
-						i(137960),	-- Pattern: Silkweave Robe (Rank 2)
+						i(137965),	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
+						i(137967),	-- Pattern: Imbued Silkweave Epaulets [Rank 2] (RECIPE!)
+						i(137970),	-- Pattern: Imbued Silkweave Gloves [Rank 2] (RECIPE!)
+						i(137969),	-- Pattern: Imbued Silkweave Hood [Rank 2] (RECIPE!)
+						i(137968),	-- Pattern: Imbued Silkweave Pantaloons [Rank 2] (RECIPE!)
+						i(137972),	-- Pattern: Imbued Silkweave Robe [Rank 2] (RECIPE!)
+						i(137971),	-- Pattern: Imbued Silkweave Slippers [Rank 2] (RECIPE!)
+						i(137953),	-- Pattern: Silkweave Bracers [Rank 2] (RECIPE!)
+						i(137957),	-- Pattern: Silkweave Hood [Rank 2] (RECIPE!)
+						i(137955),	-- Pattern: Silkweave Epaulets [Rank 2] (RECIPE!)
+						i(137958),	-- Pattern: Silkweave Gloves [Rank 2] (RECIPE!)
+						i(137956),	-- Pattern: Silkweave Pantaloons [Rank 2] (RECIPE!)
+						i(137960),	-- Pattern: Silkweave Robe [Rank 2] (RECIPE!)
 						i(138011),	-- Pattern: Silkweave Satchel
-						i(137959),	-- Pattern: Silkweave Slippers (Rank 2)
+						i(137959),	-- Pattern: Silkweave Slippers [Rank 2] (RECIPE!)
 					},
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
@@ -5389,27 +5389,27 @@ _.Zones =
 				n(92457,  {	-- Patricia Egan <Alchemy Supplier>
 					["coord"] = { 42.2, 32.3, LEGION_DALARAN },
 					["g"] = {
-						i(127898),	-- Recipe: Ancient Healing Potion (Rank 1)
-						i(127917),	-- Recipe: Ancient Healing Potion (Rank 2)
-						i(127899),	-- Recipe: Ancient Mana Potion (Rank 1)
-						i(127900),	-- Recipe: Ancient Rejuvenation Potion (Rank 1)
-						i(127903),	-- Recipe: Avalanche Elixir (Rank 1)
-						i(127901),	-- Recipe: Draught of Raw Magic (Rank 1)
-						i(127914),	-- Recipe: Flask of Ten Thousand Scars (Rank 1)
-						i(127913),	-- Recipe: Flask of the Countless Armies (Rank 1)
-						i(127912),	-- Recipe: Flask of the Seventh Demon (Rank 1)
-						i(127911),	-- Recipe: Flask of the Whispered Pact (Rank 1)
-						i(127906),	-- Recipe: Infernal Alchemist Stone (Rank 1)
-						i(127910),	-- Recipe: Leytorrent Potion (Rank 1)
-						i(127907),	-- Recipe: Potion of Deadly Grace (Rank 1)
-						i(127908),	-- Recipe: Potion of the Old War (Rank 1)
+						i(127898),	-- Recipe: Ancient Healing Potion [Rank 1] (RECIPE!)
+						i(127917),	-- Recipe: Ancient Healing Potion [Rank 2] (RECIPE!)
+						i(127899),	-- Recipe: Ancient Mana Potion [Rank 1] (RECIPE!)
+						i(127900),	-- Recipe: Ancient Rejuvenation Potion [Rank 1] (RECIPE!)
+						i(127903),	-- Recipe: Avalanche Elixir [Rank 1] (RECIPE!)
+						i(127901),	-- Recipe: Draught of Raw Magic [Rank 1] (RECIPE!)
+						i(127914),	-- Recipe: Flask of Ten Thousand Scars [Rank 1] (RECIPE!)
+						i(127913),	-- Recipe: Flask of the Countless Armies [Rank 1] (RECIPE!)
+						i(127912),	-- Recipe: Flask of the Seventh Demon [Rank 1] (RECIPE!)
+						i(127911),	-- Recipe: Flask of the Whispered Pact [Rank 1] (RECIPE!)
+						i(127906),	-- Recipe: Infernal Alchemist Stone [Rank 1] (RECIPE!)
+						i(127910),	-- Recipe: Leytorrent Potion [Rank 1] (RECIPE!)
+						i(127907),	-- Recipe: Potion of Deadly Grace [Rank 1] (RECIPE!)
+						i(127908),	-- Recipe: Potion of the Old War [Rank 1] (RECIPE!)
 						i(160664),	-- Recipe: Silvery Salve
-						i(127904),	-- Recipe: Skaggldrynk (Rank 1)
-						i(127905),	-- Recipe: Skystep Potion (Rank 1)
-						i(127915),	-- Recipe: Spirit Cauldron (Rank 1)
-						i(127902),	-- Recipe: Sylvan Elixir (Rank 1)
-						i(127909),	-- Recipe: Unbending Potion (Rank 1)
-						i(128209),	-- Recipe: Wild Transmutation (Rank 1)
+						i(127904),	-- Recipe: Skaggldrynk [Rank 1] (RECIPE!)
+						i(127905),	-- Recipe: Skystep Potion [Rank 1] (RECIPE!)
+						i(127915),	-- Recipe: Spirit Cauldron [Rank 1] (RECIPE!)
+						i(127902),	-- Recipe: Sylvan Elixir [Rank 1] (RECIPE!)
+						i(127909),	-- Recipe: Unbending Potion [Rank 1] (RECIPE!)
+						i(128209),	-- Recipe: Wild Transmutation [Rank 1] (RECIPE!)
 					},
 				}),
 				n(92195,  {	-- Professor Pallin <Inscription Trainer>
@@ -5427,27 +5427,27 @@ _.Zones =
 				n(93521,  {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
 					["coord"] = { 34.6, 28.6, LEGION_DALARAN },
 					["g"] = {
-						i(137884),	-- Recipe: Dreadleather Bindings (Rank 2)
-						i(137890),	-- Recipe: Dreadleather Footpads (Rank 2)
-						i(137889),	-- Recipe: Dreadleather Gloves (Rank 2)
-						i(137891),	-- Recipe: Dreadleather Jerkin (Rank 2)
-						i(137888),	-- Recipe: Dreadleather Mask (Rank 2)
-						i(137887),	-- Recipe: Dreadleather Pants (Rank 2)
-						i(137886),	-- Recipe: Dreadleather Shoulderguard (Rank 2)
-						i(142407),	-- Recipe: Drums of the Mountain (Rank 1)
+						i(137884),	-- Recipe: Dreadleather Bindings [Rank 2] (RECIPE!)
+						i(137890),	-- Recipe: Dreadleather Footpads [Rank 2] (RECIPE!)
+						i(137889),	-- Recipe: Dreadleather Gloves [Rank 2] (RECIPE!)
+						i(137891),	-- Recipe: Dreadleather Jerkin [Rank 2] (RECIPE!)
+						i(137888),	-- Recipe: Dreadleather Mask [Rank 2] (RECIPE!)
+						i(137887),	-- Recipe: Dreadleather Pants [Rank 2] (RECIPE!)
+						i(137886),	-- Recipe: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
+						i(142407),	-- Recipe: Drums of the Mountain [Rank 1] (RECIPE!)
 						i(141850, {	-- Recipe: Elderhorn Riding Harness
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 							["g"] = {
 								i(129962),	-- Great Northern Elderhorn (MOUNT!)
 							},
 						}),
-						i(137916),	-- Recipe: Gravenscale Armbands (Rank 2)
-						i(137921),	-- Recipe: Gravenscale Grips (Rank 2)
-						i(137923),	-- Recipe: Gravenscale Hauberk (Rank 2)
-						i(137919),	-- Recipe: Gravenscale Leggings (Rank 2)
-						i(137918),	-- Recipe: Gravenscale Spaulders (Rank 2)
-						i(137922),	-- Recipe: Gravenscale Treads (Rank 2)
-						i(137920),	-- Recipe: Gravenscale Warhelm (Rank 2)
+						i(137916),	-- Recipe: Gravenscale Armbands [Rank 2] (RECIPE!)
+						i(137921),	-- Recipe: Gravenscale Grips [Rank 2] (RECIPE!)
+						i(137923),	-- Recipe: Gravenscale Hauberk [Rank 2] (RECIPE!)
+						i(137919),	-- Recipe: Gravenscale Leggings [Rank 2] (RECIPE!)
+						i(137918),	-- Recipe: Gravenscale Spaulders [Rank 2] (RECIPE!)
+						i(137922),	-- Recipe: Gravenscale Treads [Rank 2] (RECIPE!)
+						i(137920),	-- Recipe: Gravenscale Warhelm [Rank 2] (RECIPE!)
 					},
 				}),
 				n(97342,  {	-- Salan Sunthread <Clothier>
@@ -6331,22 +6331,22 @@ _.Zones =
 				n(93526,  {	-- Tiffany Cartier <Jewelcrafting Supplies>
 					["coord"] = { 39.86, 34.77, LEGION_DALARAN },
 					["g"] = {
-						i(137834),	-- Design: Ancient Maelstrom Amulet (Rank 2)
-						i(137819),	-- Design: Azsunite Loop (Rank 2)
-						i(137822),	-- Design: Azsunite Pendant (Rank 2)
-						i(137827),	-- Design: Blessed Dawnlight Medallion (Rank 2)
-						i(137817),	-- Design: Deep Amber Loop (Rank 2)
-						i(137820),	-- Design: Deep Amber Pendant (Rank 2)
-						i(137837),	-- Design: Grim Furystone Gorget (Rank 2)
-						i(137833),	-- Design: Intrepid Necklace of Prophecy (Rank 2)
-						i(137862),	-- Design: Queen's Opal Loop (Rank 2)
-						i(137863),	-- Design: Queen's Opal Pendant (Rank 2)
-						i(137836),	-- Design: Raging Furystone Gorget (Rank 2)
-						i(137835),	-- Design: Righteous Dawnlight Medallion (Rank 2)
-						i(137818),	-- Design: Skystone Loop (Rank 2)
-						i(137821),	-- Design: Skystone Pendant (Rank 2)
-						i(137832),	-- Design: Sylvan Maelstrom Amulet (Rank 2)
-						i(137830),	-- Design: Tranquil Necklace of Prophecy (Rank 2)
+						i(137834),	-- Design: Ancient Maelstrom Amulet [Rank 2] (RECIPE!)
+						i(137819),	-- Design: Azsunite Loop [Rank 2] (RECIPE!)
+						i(137822),	-- Design: Azsunite Pendant [Rank 2] (RECIPE!)
+						i(137827),	-- Design: Blessed Dawnlight Medallion [Rank 2] (RECIPE!)
+						i(137817),	-- Design: Deep Amber Loop [Rank 2] (RECIPE!)
+						i(137820),	-- Design: Deep Amber Pendant [Rank 2] (RECIPE!)
+						i(137837),	-- Design: Grim Furystone Gorget [Rank 2] (RECIPE!)
+						i(137833),	-- Design: Intrepid Necklace of Prophecy [Rank 2] (RECIPE!)
+						i(137862),	-- Design: Queen's Opal Loop [Rank 2] (RECIPE!)
+						i(137863),	-- Design: Queen's Opal Pendant [Rank 2] (RECIPE!)
+						i(137836),	-- Design: Raging Furystone Gorget [Rank 2] (RECIPE!)
+						i(137835),	-- Design: Righteous Dawnlight Medallion [Rank 2] (RECIPE!)
+						i(137818),	-- Design: Skystone Loop [Rank 2] (RECIPE!)
+						i(137821),	-- Design: Skystone Pendant [Rank 2] (RECIPE!)
+						i(137832),	-- Design: Sylvan Maelstrom Amulet [Rank 2] (RECIPE!)
+						i(137830),	-- Design: Tranquil Necklace of Prophecy [Rank 2] (RECIPE!)
 					},
 				}),
 				n(98723,  {	-- Tiffy Trapspring <Exotic Pets and Accessories>
@@ -6903,22 +6903,22 @@ _.Zones =
 							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
 						}),
 						i(136702, {	-- Formula: Soul Fibril
-							["cost"] = { { "c", 1275, WARRIOR }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
 							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
 						}),
 						i(136699, {	-- Recipe: Flamespike
-							["cost"] = { { "c", 1275, WARRIOR }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137935, {	-- Recipe: Leather Love Seat
-							["cost"] = { { "c", 1275, WARRIOR }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
-							["cost"] = { { "c", 1275, WARRIOR }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(136706, {	-- Technique: Straszan Mark
-							["cost"] = { { "c", 1275, WARRIOR }, },	-- 1x Curious Coin
+							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 					},
 				}),

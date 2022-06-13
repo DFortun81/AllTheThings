@@ -2481,10 +2481,10 @@ _.Zones =
 						i(89074),	-- Cloak of the Dark Disciple
 						i(89523),	-- Etched Golden Loop
 						i(89337),	-- Firecracker Corona
-						i(84584),	-- Formula: Enchant Weapon - Dancing Steel
-						i(84583),	-- Formula: Enchant Weapon - Jade Spirit
-						i(84580),	-- Formula: Enchant Weapon - River's Song
-						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan
+						i(84584),	-- Formula: Enchant Weapon - Dancing Steel (RECIPE!)
+						i(84583),	-- Formula: Enchant Weapon - Jade Spirit (RECIPE!)
+						i(84580),	-- Formula: Enchant Weapon - River's Song (RECIPE!)
+						i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
 						i(89656),	-- Gauntlets of Restraint
 						i(89654),	-- Gloves of Forgotten Wisdom
 						i(93220),	-- Grand Commendation of the Shado-Pan

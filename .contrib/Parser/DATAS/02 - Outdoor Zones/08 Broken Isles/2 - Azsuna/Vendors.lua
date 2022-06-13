@@ -10,10 +10,10 @@ _.Zones =
 				n(107139, {	-- Enchantress Ilyana
 					["coord"] = { 46.8, 40.8, AZSUNA },
 					["g"] = {
-						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
-						i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
-						i(144314),	-- Formula: Enchant Neck - Mark of the Quick (Rank 1)
-						i(144311),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 1)
+						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 1] (RECIPE!)
+						i(144308),	-- Formula: Enchant Neck - Mark of the Master [Rank 1] (RECIPE!)
+						i(144314),	-- Formula: Enchant Neck - Mark of the Quick [Rank 1] (RECIPE!)
+						i(144311),	-- Formula: Enchant Neck - Mark of the Versatile [Rank 1] (RECIPE!)
 					},
 				}),
 				n(102196, {	-- Fargo Flintlocke
@@ -32,22 +32,22 @@ _.Zones =
 				n(107963, {	-- Kharmeera
 					["coord"] = { 47.2, 26.6, AZSUNA },
 					["crs"] = { 99420 },	-- Kharmeera (after completion of Quests)
-					["g"] = {
-						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility (Rank 1)
+					["g"] = sharedData({ ["sourceQuest"] = 39923 }, {	-- Down to the Core
+						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
 						}),
-						i(128575, {	-- Formula: Enchant Cloak - Binding of Intellect (Rank 1)
+						i(128575, {	-- Formula: Enchant Cloak - Binding of Intellect [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
 						}),
-						i(128573, {	-- Formula: Enchant Cloak - Binding of Strength (Rank 1)
+						i(128573, {	-- Formula: Enchant Cloak - Binding of Strength [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
 						}),
-					},
+					}),
 				}),
 				n(93973,  {	-- Leyweaver Phaxondus
 					["coord"] = { 29.0, 46.0, AZSUNA },
 					["g"] = {
-						i(127023, {	-- Pattern: Imbued Silkweave Epaulets (Rank 1)
+						i(127023, {	-- Pattern: Imbued Silkweave Epaulets [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
 					},
@@ -61,7 +61,7 @@ _.Zones =
 								i(140227),	-- Bloodhunter's Quarry
 							},
 						}),
-						i(137849, {	-- Design: Twisted Pandemonite Choker (Rank 3)
+						i(137849, {	-- Design: Twisted Pandemonite Choker [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(139607, {	-- Drape of the Patient Hunter
@@ -76,29 +76,29 @@ _.Zones =
 						i(142331, {	-- Recipe: Spiced Falcosaur Omelet
 							["cost"] = 10000000,	-- 1,000g
 						}),
-						i(137713, {	-- Schematic: Bolt-Action Headgun (Rank 3)
+						i(137713, {	-- Schematic: Bolt-Action Headgun [Rank 3] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
-						i(137714, {	-- Schematic: Reinforced Headgun (Rank 3)
+						i(137714, {	-- Schematic: Reinforced Headgun [Rank 3] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
-						i(137716, {	-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
+						i(137716, {	-- Schematic: Sawed-Off Cranial Cannon [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137715, {	-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
+						i(137715, {	-- Schematic: Semi-Automagic Cranial Cannon [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(130157, {	-- Syxsehnz Rod (TOY!)
 							["cost"] = 5000000,		-- 500g
 						}),
 						i(130191),	-- Trapped Treasure Chest Kit (TOY!)
-						i(137773, {	-- Vantus Rune Technique: Cenarius (Rank 3)
+						i(137773, {	-- Vantus Rune Technique: Cenarius [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(137777, {	-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
+						i(137777, {	-- Vantus Rune Technique: Spellblade Aluriel [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(137781, {	-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
+						i(137781, {	-- Vantus Rune Technique: Star Augur Etraeus [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(139603, {	-- Vault Patroller's Warboots
@@ -127,16 +127,16 @@ _.Zones =
 						i(139595, {	-- Once-Fashionable Nar'thalas Leggings
 							["cost"] = 50000000,	-- 5,000g
 						}),
-						i(137978, {	-- Pattern: Imbued Silkweave Gloves (Rank 3)
+						i(137978, {	-- Pattern: Imbued Silkweave Gloves [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137977, {	-- Pattern: Imbued Silkweave Hood (Rank 3)
+						i(137977, {	-- Pattern: Imbued Silkweave Hood [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137980, {	-- Pattern: Imbued Silkweave Robe (Rank 3)
+						i(137980, {	-- Pattern: Imbued Silkweave Robe [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(138015, {	-- Pattern: Silkweave Pantaloons (Rank 3)
+						i(138015, {	-- Pattern: Silkweave Pantaloons [Rank 3] (RECIPE!)
 							["cost"] = 5500000,	-- 550g
 						}),
 						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
@@ -148,16 +148,16 @@ _.Zones =
 						i(139631, {	-- Vainglorious Draught
 							["cost"] = 1500000,	-- 150g
 						}),
-						i(137779, {	-- Vantus Rune Technique: High Botanist Tel'arn (Rank 3)
+						i(137779, {	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(137780, {	-- Vantus Rune Technique: Krosus (Rank 3)
+						i(137780, {	-- Vantus Rune Technique: Krosus [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(137774, {	-- Vantus Rune Technique: Skorpyron (Rank 3)
+						i(137774, {	-- Vantus Rune Technique: Skorpyron [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(137776, {	-- Vantus Rune Technique: Trilliax (Rank 3)
+						i(137776, {	-- Vantus Rune Technique: Trilliax [Rank 3] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
 					},

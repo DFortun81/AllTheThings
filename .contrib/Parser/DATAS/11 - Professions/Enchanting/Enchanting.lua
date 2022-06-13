@@ -447,7 +447,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			["collectible"] = false,
 			-- #endif
 		}),
-		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting [NOT SOURCED]
+		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
 		cat(668, {	-- Armor Enchantments
 			r(96264),	-- Agility
 			r(74252),	-- Assassin's Step
@@ -527,15 +527,508 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(74244),	-- Windwalk
 		}),
 	}))),
-	tier(MOP_TIER, {
-		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting [NOT SOURCED]
-	}),
-	tier(WOD_TIER, {
-		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting [NOT SOURCED]
-	}),
-	tier(LEGION_TIER, {
-		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting [NOT SOURCED]
-	}),
+	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+		r(110400, {	-- Enchanting (Zen Master)
+			["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
+		cat(657, {	-- Armor Enchantments
+			r(104398),	-- Accuracy
+			r(104409),	-- Blurred Speed
+			r(104390),	-- Exceptional Strength
+			r(104395),	-- Glorious Stats
+			r(104391),	-- Greater Agility
+			r(103461, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Agility
+			r(104407),	-- Greater Haste
+			r(104416),	-- Greater Haste
+			r(103462, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Intellect
+			r(104408),	-- Greater Precision
+			r(104401),	-- Greater Protection
+			r(103463, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Stamina
+			r(103465, {["timeline"]={"added 5.0.4","removed 6.0.2"}}),	-- Greater Strength
+			r(104385),	-- Major Dodge
+			r(104338),	-- Mastery
+			r(104393),	-- Mighty Versatility
+			r(104414),	-- Pandaren's Step
+			r(104389),	-- Super Intellect
+			r(104392),	-- Super Armor / MOP: Super Resilience
+			r(104419),	-- Super Strength
+			r(104404),	-- Superior Critical Strike
+			r(104417),	-- Superior Haste
+			r(104403),	-- Superior Intellect
+			r(104420),	-- Superior Mastery
+			r(104397),	-- Superior Stamina
+		}),
+		cat(702, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+			r(217650),	-- Tome of Illusions: Pandaria
+			r(217651),	-- Tome of Illusions: Secrets of the Shado-Pan
+		})),
+		cat(654, {	-- Reagents
+			r(116498),	-- Ethereal Shard
+			r(118238),	-- Ethereal Shatter
+			r(118237),	-- Mysterious Diffusion
+			r(116497),	-- Mysterious Essence
+			r(116499),	-- Sha Crystal
+			r(118239),	-- Sha Shatter
+		}),
+		cat(659, {	-- Shield and Off-Hand Enchantments
+			r(130758),	-- Greater Parry
+			r(104445),	-- Major Intellect
+		}),
+		cat(658, {	-- Weapon Enchantments
+			r(104440),	-- Colossus
+			r(104434),	-- Dancing Steel
+			r(104430),	-- Elemental Force
+			r(104427),	-- Jade Spirit
+			r(104442),	-- River's Song
+			r(104425),	-- Windsong
+		}),
+	}))),
+	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+		r(158716, {	-- Enchanting (Draenor Master)
+			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
+		cat(349, {	-- Cloak
+			r(158877),	-- Breath of Critical Strike
+			r(158878),	-- Breath of Haste
+			r(158879),	-- Breath of Mastery
+			r(158880, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158881),	-- Breath of Versatility
+			r(158884),	-- Gift of Critical Strike
+			r(158885),	-- Gift of Haste
+			r(158886),	-- Gift of Mastery
+			r(158887, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158889),	-- Gift of Versatility
+		}),
+		cat(653, {	-- Illusions
+			["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
+			["g"] = {
+				r(217655),	-- Tome of Illusions: Draenor
+			},
+		}),
+		cat(399, sharedDataSelf({["u"] = 15},{	-- Illusions
+			r(173716),	-- Illusion: Agility
+			r(173717),	-- Illusion: Battlemaster
+			r(173718),	-- Illusion: Berserking
+			r(174979),	-- Illusion: Blood Draining
+			r(173720),	-- Illusion: Crusader
+			r(175076, {	-- Illusion: Earthliving
+				["classes"] = { SHAMAN },
+			}),
+			r(173721),	-- Illusion: Elemental Force
+			r(173722),	-- Illusion: Executioner
+			r(173723),	-- Illusion: Fiery Weapon
+			r(175072, {	-- Illusion: Flametongue
+				["classes"] = { SHAMAN },
+			}),
+			r(175071, {	-- Illusion: Frostbrand
+				["classes"] = { SHAMAN },
+			}),
+			r(173719),	-- Illusion: Greater Spellpower
+			r(173724),	-- Illusion: Hidden
+			r(175070),	-- Illusion: Jade Spirit
+			r(173725),	-- Illusion: Landslide
+			r(173726),	-- Illusion: Lifestealing
+			r(175085),	-- Illusion: Mending
+			r(173727),	-- Illusion: Mongoose
+			r(173728, {	-- Illusion: Poisoned
+				["classes"] = { ROGUE },
+			}),
+			r(173729),	-- Illusion: Power Torrent
+			r(175086),	-- Illusion: River's Song
+			r(175078, {	-- Illusion: Rockbiter
+				["classes"] = { SHAMAN },
+			}),
+			r(173730),	-- Illusion: Spellsurge
+			r(173731),	-- Illusion: Striking
+			r(173732),	-- Illusion: Unholy
+			r(175074, {	-- Illusion: Windfury
+				["classes"] = { SHAMAN },
+			}),
+		})),
+		cat(350, {	-- Neck
+			r(158892),	-- Breath of Critical Strike
+			r(158893),	-- Breath of Haste
+			r(158894),	-- Breath of Mastery
+			r(158895, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158896),	-- Breath of Versatility
+			r(158899),	-- Gift of Critical Strike
+			r(158900),	-- Gift of Haste
+			r(158901),	-- Gift of Mastery
+			r(158902, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158903),	-- Gift of Versatility
+		}),
+		cat(354, {	-- Other
+			r(162948),	-- Enchanted Dust
+		}),
+		cat(409, {	-- Reagents and Research
+			r(169091),	-- Luminous Shard
+			r(177043),	-- Secrets of Draenor Enchanting
+			r(182129, {["timeline"]={"added 6.1.0"}}),	-- Temporal Binding
+			r(169092),	-- Temporal Crystal
+		}),
+		cat(404, sharedData({["u"] = 15},{	-- Removal
+			recipe(177355),	-- Remove Illusion
+		})),
+		cat(351, {	-- Ring
+			r(158907),	-- Breath of Critical Strike
+			r(158908),	-- Breath of Haste
+			r(158909),	-- Breath of Mastery
+			r(158910, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+			r(158911),	-- Breath of Versatility
+			r(158914),	-- Gift of Critical Strike
+			r(158915),	-- Gift of Haste
+			r(158916),	-- Gift of Mastery
+			r(158917, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Gift of Multistrike
+			r(158918),	-- Gift of Versatility
+		}),
+		cat(352, {	-- Weapon
+			r(159674),	-- Mark of Blackrock
+			r(173323),	-- Mark of Bleeding Hollow
+			r(159673),	-- Mark of Shadowmoon
+			r(159672),	-- Mark of the Frostwolf
+			r(159236),	-- Mark of the Shattered Hand
+			r(159235),	-- Mark of the Thunderlord
+			r(159671),	-- Mark of Warsong
+		}),
+	}))),
+	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+		r(195096),	-- Enchanting (Legion Master)
+		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
+		cat(506, {	-- Disenchant
+			r(252106, {["timeline"]={"added 7.3.0"}}),	-- Chaos Shatter
+			r(224199),	-- Ley Shatter
+		}),
+		cat(445, {	-- Ring Enchantments
+			r(190870),	-- Binding of Critical Strike [Rank 1]
+			r(190996),	-- Binding of Critical Strike [Rank 2]
+			r(191013),	-- Binding of Critical Strike [Rank 3]
+			r(190871),	-- Binding of Haste [Rank 1]
+			r(190997),	-- Binding of Haste [Rank 2]
+			r(191014),	-- Binding of Haste [Rank 3]
+			r(190872),	-- Binding of Mastery [Rank 1]
+			r(190998),	-- Binding of Mastery [Rank 2]
+			r(191015),	-- Binding of Mastery [Rank 3]
+			r(190873),	-- Binding of Versatility [Rank 1]
+			r(190999),	-- Binding of Versatility [Rank 2]
+			r(191016),	-- Binding of Versatility [Rank 3]
+			r(190866),	-- Word of Critical Strike [Rank 1]
+			r(190992),	-- Word of Critical Strike [Rank 2]
+			r(191009),	-- Word of Critical Strike [Rank 3]
+			r(190867),	-- Word of Haste [Rank 1]
+			r(190993),	-- Word of Haste [Rank 2]
+			r(191010),	-- Word of Haste [Rank 3]
+			r(190868),	-- Word of Mastery [Rank 1]
+			r(190994),	-- Word of Mastery [Rank 2]
+			r(191011),	-- Word of Mastery [Rank 3]
+			r(190869),	-- Word of Versatility [Rank 1]
+			r(190995),	-- Word of Versatility [Rank 2]
+			r(191012),	-- Word of Versatility [Rank 3]
+		}),
+		cat(446, {	-- Cloak Enchantments
+			r(190878),	-- Binding of Agility [Rank 1]
+			r(191004),	-- Binding of Agility [Rank 2]
+			r(191021),	-- Binding of Agility [Rank 3]
+			r(190879),	-- Binding of Intellect [Rank 1]
+			r(191005),	-- Binding of Intellect [Rank 2]
+			r(191022),	-- Binding of Intellect [Rank 3]
+			r(190877),	-- Binding of Strength [Rank 1]
+			r(191003),	-- Binding of Strength [Rank 2]
+			r(191020),	-- Binding of Strength [Rank 3]
+			r(190875),	-- Word of Agility [Rank 1]
+			r(191001),	-- Word of Agility [Rank 2]
+			r(191018),	-- Word of Agility [Rank 3]
+			r(190876),	-- Word of Intellect [Rank 1]
+			r(191002),	-- Word of Intellect [Rank 2]
+			r(191019),	-- Word of Intellect [Rank 3]
+			r(190874),	-- Word of Strength [Rank 1]
+			r(191000),	-- Word of Strength [Rank 2]
+			r(191017),	-- Word of Strength [Rank 3]
+		}),
+		cat(444, {	-- Neck Enchantments
+			r(228408),	-- Mark of the Ancient Priestess [Rank 1]
+			r(228409),	-- Mark of the Ancient Priestess [Rank 2]
+			r(228410),	-- Mark of the Ancient Priestess [Rank 3]
+			r(190892),	-- Mark of the Claw [Rank 1]
+			r(191006),	-- Mark of the Claw [Rank 2]
+			r(191023),	-- Mark of the Claw [Rank 3]
+			r(235698, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 1]
+			r(235702, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 2]
+			r(235706, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Deadly [Rank 3]
+			r(190893),	-- Mark of the Distant Army [Rank 1]
+			r(191007),	-- Mark of the Distant Army [Rank 2]
+			r(191024),	-- Mark of the Distant Army [Rank 3]
+			r(228402),	-- Mark of the Heavy Hide [Rank 1]
+			r(228403),	-- Mark of the Heavy Hide [Rank 2]
+			r(228404),	-- Mark of the Heavy Hide [Rank 3]
+			r(190894),	-- Mark of the Hidden Satyr [Rank 1]
+			r(191008),	-- Mark of the Hidden Satyr [Rank 2]
+			r(191025),	-- Mark of the Hidden Satyr [Rank 3]
+			r(235695, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 1]
+			r(235699, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 2]
+			r(235703, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Master [Rank 3]
+			r(235697, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 1]
+			r(235701, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 2]
+			r(235705, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Quick [Rank 3]
+			r(228405),	-- Mark of the Trained Soldier [Rank 1]
+			r(228406),	-- Mark of the Trained Soldier [Rank 2]
+			r(228407),	-- Mark of the Trained Soldier [Rank 3]
+			r(235696, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 1]
+			r(235700, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 2]
+			r(235704, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 3]
+		}),
+		cat(447, {	-- Shoulder Enchantments
+			r(190954),	-- Boon of the Scavenger
+		}),
+		cat(448, {	-- Glove Enchantments
+			r(190988),	-- Legion Herbalism
+			r(190989),	-- Legion Mining
+			r(190990),	-- Legion Skinning
+			r(190991),	-- Legion Surveying
+		}),
+		cat(490, {	-- Relics
+			r(209509),	-- Immaculate Fibril
+			r(209507),	-- Soul Fibril
+		}),
+		cat(449, {	-- Toys, Pets, and Mounts
+			r(191074),	-- Enchanted Cauldron
+			r(191076),	-- Enchanted Pen
+			r(191075),	-- Enchanted Torch
+			r(191078),	-- Leylight Brazier
+		}),
+		n(QUESTS, {
+			q(39874, {	-- Some Enchanted Evening
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+				["g"] = {
+					r(195096),	-- Enchanting (Legion Master)
+					r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
+					r(190869),	-- Word of Versatility [Rank 1]
+				},
+			}),
+			q(39875, {	-- The Last Few
+				["sourceQuests"] = { 39874 },	-- Some Enchanted Evening
+				["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
+				["coord"] = { 38.6, 41.6, LEGION_DALARAN },
+				["cost"] = { { "i", 128540, 2 } },	-- 2x Enchant Ring - Word of Versatility
+			}),
+			q(39876, {	-- Helping the Hunters
+				["sourceQuests"] = { 39875 },	-- The Last Few
+				["provider"] = { "n", 93530 },	-- Ildine Sorrowspear
+				["coord"] = { 38.6, 41.6, LEGION_DALARAN },
+			}),
+			q(39877, {	-- In the Loop
+				["sourceQuests"] = { 39875 },	-- Helping the Hunters
+				["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
+				["coord"] = { 43.2, 43.6, AZSUNA },
+			}),
+			q(40048, {	-- Strings of the Puppet Masters
+				["sourceQuests"] = { 39876 },	-- Helping the Hunters
+				["provider"] = { "n", 90317 },	-- Jace Darkweaver <Illidari>
+				["coord"] = { 43.2, 43.6, AZSUNA },
+			}),
+			q(39905, {	-- Ringing True
+				["sourceQuests"] = {
+					39877,	-- In the Loop
+					40048,	-- Strings of the Puppet Masters
+				},
+				["provider"] = { "n", 90317 },	-- Jace Darkweaver
+				["coord"] = { 43.2, 43.6, AZSUNA },
+				["g"] = {
+					r(190866),	-- Word of Critical Strike [Rank 1]
+					r(190867),	-- Word of Haste [Rank 1]
+					r(190868),	-- Word of Mastery [Rank 1]
+				},
+			}),
+			q(39878, {	-- Thunder Struck
+				["sourceQuests"] = { 39905 },	-- Ringing True
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+			}),
+			q(39879, {	-- Strong Like the Earth
+				["sourceQuests"] = { 39878 },	-- Thunder Struck
+				["provider"] = { "n", 98017 },	-- Guron Twaintail
+				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
+			}),
+			q(39880, {	-- Waste Not
+				["sourceQuests"] = { 39878 },	-- Thunder Struck
+				["provider"] = { "n", 98017 },	-- Guron Twaintail
+				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
+				["g"] = {
+					i(137195),	-- Highmountain Armor
+				},
+			}),
+			q(39883, {	-- Cloaked in Tradition
+				["sourceQuests"] = {
+					39879,	-- Strong Like the Earth
+					39880,	-- Waste Not
+				},
+				["provider"] = { "n", 98017 },	-- Guron Twaintail
+				["coord"] = { 46.6, 60.4, HIGHMOUNTAIN },
+				["g"] = {
+					r(190875),	-- Word of Agility [Rank 1]
+					r(190876),	-- Word of Intellect [Rank 1]
+					r(190874),	-- Word of Strength [Rank 1]
+				},
+			}),
+			q(39881, {	-- Fey Enchantments
+				["sourceQuests"] = { 39883 },	-- Cloaked in Tradition
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+			}),
+			q(39884, {	-- No Longer Worthy
+				["sourceQuests"] = { 39881 },	-- Fey Enchantments
+				["provider"] = { "n", 98156 },	-- Nalamya
+				["coord"] = { 54.4, 57.6, VALSHARAH },
+			}),
+			q(39889, {	-- Led Astray
+				["sourceQuests"] = { 39881 },	-- Fey Enchantments
+				["provider"] = { "n", 98156 },	-- Nalamya
+				["coord"] = { 54.4, 57.6, VALSHARAH },
+			}),
+			q(39882, {	-- Darkheart Thicket: The Glamour Has Faded
+				["sourceQuests"] = {
+					39884,	-- No Longer Worthy
+					39889,	-- Led Astray
+				},
+				["provider"] = { "n", 98156 },	-- Nalamya
+				["maps"] = { 733, },	-- Darkheart Thicket
+				["coord"] = { 54.4, 57.6, VALSHARAH },
+				["g"] = {
+					r(190954),	-- Boon of the Scavenger
+				},
+			}),
+			q(39903, {	-- An Enchanting Home
+				["sourceQuests"] = { 39883 },	-- Cloaked in Tradition
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+			}),
+			q(40265, {	-- A Touch of Magic
+				["sourceQuests"] = { 39903 },	-- An Enchanting Home
+				["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+				["coord"] = { 39.4, 42.6, STORMHEIM },
+			}),
+			q(39904, {	-- Halls of Valor: Revenge of the Enchantress
+				["sourceQuests"] = { 40265 },	-- A Touch of Magic
+				["provider"] = { "n", 98367 },	-- Tigrid the Charmer
+				["coord"] = { 39.4, 42.6, STORMHEIM },
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
+				["g"] = {
+					r(191076),	-- Enchanted Pen
+				},
+			}),
+			q(39891, {	-- Cursed, But Convenient
+				["sourceQuests"] = { 39904 },	-- Halls of Valor: Revenge of the Enchantress
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+			}),
+			q(40169, {	-- Crossroads Rendezvous
+				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
+				["provider"] = { "n", 107139 },	-- Enchantress Ilanya
+				["coord"] = { 46.8, 40.8, AZSUNA },
+			}),
+			q(39916, {	-- Turnabout Betrayal
+				["sourceQuests"] = { 40169 },	-- Crossroads Rendezvous
+				["provider"] = { "n", 98675 },	-- Fallen Priestess
+				["coord"] = { 63.8, 30.2, AZSUNA },
+				["g"] = {
+					i(129751),	-- Dust of Foul Lies
+					i(137286),	-- Fel-Crusted Rune
+				},
+			}),
+			q(40130, {	-- Washed Clean
+				["sourceQuests"] = { 39916 },	-- Turnabout Betrayal
+				["provider"] = { "n", 98675 },	-- Fallen Priestess
+				["coord"] = { 63.8, 30.2, AZSUNA },
+			}),
+			q(39918, {	-- The Absent Priestess
+				["sourceQuests"] = { 40130 },	-- Washed Clean
+				["provider"] = { "n", 98698 },	-- Priestess Driana
+				["coord"] = { 36.4, 34.0, AZSUNA },
+				["g"] = {
+					r(228408),	-- Mark of the Ancient Priestess [Rank 1]
+					r(190894),	-- Mark of the Hidden Satyr [Rank 1]
+				},
+			}),
+			q(39910, {	-- The Druid's Debt
+				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
+				["provider"] = { "n", 98381 },	-- Merrus Dawnwind
+				["coord"] = { 46.8, 40.8, AZSUNA },
+				["g"] = {
+					r(190892),	-- Mark of the Claw [Rank 1]
+					r(228402),	-- Mark of the Heavy Hide [Rank 1]
+				},
+			}),
+			q(39906, {	-- Prepping For Battle
+				["sourceQuests"] = { 39891 },	-- Cursed, But Convenient
+				["provider"] = { "n", 98159 },	-- Alynblaze <The Sentinel>
+				["coord"] = { 46.8, 40.8, AZSUNA },
+				["cost"] = {
+					{ "i", 128545, 1 },	-- 1x Enchant Cloak - Word of Strength
+					{ "i", 128537, 1 },	-- 1x Enchant Ring - Word of Critical Strike
+					{ "i", 128539, 1 },	-- 1x Enchant Ring - Word of Mastery
+				},
+			}),
+			q(39914, {	-- Sentinel's Final Duty
+				["sourceQuests"] = { 39906 },	-- Prepping For Battle
+				["provider"] = { "n", 98159 },	-- Alynblaze
+				["coord"] = { 46.8, 40.8, AZSUNA },
+				["g"] = {
+					r(190893),	-- Mark of the Distant Army [Rank 1]
+					r(228405),	-- Mark of the Trained Soldier [Rank 1]
+				},
+			}),
+			q(39907, {	-- Elven Enchantments
+				["sourceQuests"] = {
+					39918,	-- The Absent Priestess
+					39910,	-- The Druid's Debt
+					39914,	-- Sentinel's Final Duty
+				},
+				["provider"] = { "n", 107139 },	-- Enchantress Ilanya
+				["coord"] = { 46.8, 40.8, AZSUNA },
+			}),
+			q(39920, {	-- On Azure Wings
+				["sourceQuests"] = { 39907 },	-- Elven Enchantments
+				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
+				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
+			}),
+			q(39921, {	-- Neltharion's Lair: Rod of Azure
+				["sourceQuests"] = { 39920 },	-- On Azure Wings
+				["provider"] = { "n", 99420 },	-- Kharmeera <Enchantress>
+				["maps"] = {
+					731,	-- Neltharion's Lair
+					324,	-- The Stonecore
+					477, 478, 479,	-- Scholomance
+				},
+				["coord"] = { 47.2, 26.4, AZSUNA },
+			}),
+			q(39923, {	-- Down to the Core
+				["sourceQuests"] = { 39921 },	-- Neltharion's Lair: Rod of Azure
+				["provider"] = { "n", 99420 },	-- Kharmeera
+				["coord"] = { 47.2, 26.4, AZSUNA },
+				["g"] = {
+					r(190870),	-- Binding of Critical Strike [Rank 1]
+					r(190871),	-- Binding of Haste [Rank 1]
+					r(190872),	-- Binding of Mastery [Rank 1]
+					r(190873),	-- Binding of Versatility [Rank 1]
+				},
+			}),
+			q(42971, {	-- Controlling the Elements
+				["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
+				["coord"] = { 56.4, 12.2, DEEPHOLM },
+				["g"] = {
+					r(217649),	-- Tome of Illusions: Elemental Lords
+				},
+			}),
+		})
+	}))),
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 		r(264473, {	-- Kul Tiran Enchanting
 			["races"] = ALLIANCE_ONLY
@@ -782,7 +1275,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["coord"] = { 63.0, 59.4, DRUSTVAR },
 				["sourceQuest"] = 53999,	-- Exhumed
 				["g"] = {
-					recipe(284415, {	-- Enchant Runic Power Core
+					r(284415, {	-- Enchant Runic Power Core
 						["u"] = 15,	-- Training
 					}),
 				},
@@ -798,7 +1291,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["provider"] = { "n", 152255 },	-- Sef Iwen
 				["coord"] = { 57.8, 80.8, DRUSTVAR },
 				["g"] = {
-					recipe(287494),	-- Iwen's Enchanting Rod
+					r(287494),	-- Iwen's Enchanting Rod
 				},
 			})),
 		}),
@@ -923,15 +1416,6 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				TALADOR,
 			},
 			["lvl"] = 90,
-		}),
-	}),
-	n(QUESTS, {
-		q(42971, {	-- Controlling the Elements
-			["provider"] = { "n", 42465 },	-- Therazane <The Stonemother>
-			["coord"] = { 56.4, 12.2, DEEPHOLM },
-			["g"] = {
-				sp(217762),	-- Formula: Tome of Illusions: Elemental Lords
-			},
 		}),
 	}),
 })));

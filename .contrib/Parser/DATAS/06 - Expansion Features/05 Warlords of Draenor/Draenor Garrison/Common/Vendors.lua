@@ -230,8 +230,9 @@ _.ExpansionFeatures =
 				n(91020, {	-- Enchantress Ismae <Dust Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122711, {	-- Formula: Temporal Binding
+						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
+							["timeline"] = { "added 6.1.0" },
 						}),
 						i(120945, {	-- Primal Spirit
 							["cost"] = {
@@ -470,8 +471,9 @@ _.ExpansionFeatures =
 				n(91029, {	-- Rath'thul Moonvale <Dust Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122711, {	-- Formula: Temporal Binding
+						i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
+							["timeline"] = { "added 6.1.0" },
 						}),
 						i(120945, {	-- Primal Spirit
 							["cost"] = {

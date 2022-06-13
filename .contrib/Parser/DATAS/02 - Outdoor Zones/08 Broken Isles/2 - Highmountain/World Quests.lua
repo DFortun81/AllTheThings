@@ -200,7 +200,7 @@ _.Zones =
 				q(41665, {	-- Vantus Rune Work Order: Ursoc
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
+						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41824),	-- WANTED: Arru
@@ -252,19 +252,19 @@ _.Zones =
 				q(41677, {	-- Work Order: Auto-Hammer
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(137723),	-- Schematic: Auto-Hammer (Rank 3)
+						i(137723),	-- Schematic: Auto-Hammer [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41659, {	-- Work Order: Avalanche Elixirs
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(127922),	-- Recipe: Avalanche Elixir (Rank 2)
+						i(127922),	-- Recipe: Avalanche Elixir [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41641, {	-- Work Order: Battlebound Armbands
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137908),	-- Recipe: Battlebound Armbands (Rank 3)
+						i(137908),	-- Recipe: Battlebound Armbands [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41223, {	-- Work Order: Foxflower
@@ -279,19 +279,19 @@ _.Zones =
 				q(41635, {	-- Work Order: Leystone Boots
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(137605),	-- Recipe: Leystone Boots (Rank 3)
+						i(137605),	-- Recipe: Leystone Boots [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41647, {	-- Work Order: Silkweave Robe
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(137964),	-- Pattern: Silkweave Robe (Rank 3)
+						i(137964),	-- Pattern: Silkweave Robe [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41653, {	-- Work Order: Skystone Pendant
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(137842),	-- Design: Skystone Pendant (Rank 3)
+						i(137842),	-- Design: Skystone Pendant [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41235, {	-- Work Order: Stonehide Leather
@@ -300,7 +300,7 @@ _.Zones =
 				q(41671, {	-- Work Order: Word of Strength
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(128604),	-- Formula: Enchant Cloak - Word of Strength (Rank 3)
+						i(128604),	-- Formula: Enchant Cloak - Word of Strength [Rank 3] (RECIPE!)
 					},
 				}),
 				q(46279),	-- Zargrom (Invasion WQ)

@@ -2349,115 +2349,181 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = {
 		["f"] = RECIPES,
 	}),
 };
-COMMON_CATACLYSM_ENCHANTING_RECIPES = {
+COMMON_CATACLYSM_ENCHANTING_RECIPES = sharedData({ ["timeline"] = { "added 4.0.3.13287" } }, {
 	i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
 		["races"] = HORDE_ONLY,
 		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 93841,	-- Enchanted Lantern
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 		["races"] = ALLIANCE_ONLY,
 		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 93843,	-- Magic Lamp
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74252,	-- Enchant Boots - Assassin's Step
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(64412, {	-- Formula: Enchant Boots - Lavawalker (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74253,	-- Enchant Boots - Lavawalker
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74248,	-- Enchant Bracer - Greater Critical Strike
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(64413, {	-- Formula: Enchant Bracer - Greater Speed (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74256,	-- Enchant Bracer - Greater Speed
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52740, {	-- Formula: Enchant Chest - Greater Stamina (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74251,	-- Enchant Chest - Greater Stamina
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52739, {	-- Formula: Enchant Chest - Peerless Stats (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74250,	-- Enchant Chest - Peerless Stats
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74247,	-- Enchant Cloak - Greater Critical Strike
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74255,	-- Enchant Gloves - Greater Mastery
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength (RECIPE!)
 		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74254,	-- Enchant Gloves - Mighty Strength
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52736, {	-- Formula: Enchant Weapon - Landslide (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74246,	-- Enchant Weapon - Landslide
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52733, {	-- Formula: Enchant Weapon - Power Torrent (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74242,	-- Enchant Weapon - Power Torrent
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(52735, {	-- Formula: Enchant Weapon - Windwalk (RECIPE!)
 		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
-		["timeline"] = { "added 4.0.3.13287" },
-		["spellID"] = 74244,	-- Enchant Weapon - Windwalk
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
 	i(65359, {	-- Formula: Runed Elementium Rod (RECIPE!)
 		["cost"] = { { "i", 52721, 1 }, },	-- 1x Heavenly Shard
-		["timeline"] = { "added 4.0.3.13287", "removed 5.0.4" },
-		["spellID"] = 92370,	-- Runed Elementium Rod
-		["requireSkill"] = ENCHANTING,
-		["f"] = RECIPES,
 	}),
-};
+});
+DRAENOR_ENCHANTING = i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {	-- Draenor Enchanting
+	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+	["g"] = {
+		r(158716, {	-- Enchanting (Draenor Master)
+			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			-- #if ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+		}),
+		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
+		r(158907),	-- Breath of Critical Strike
+		r(158908),	-- Breath of Haste
+		r(158909),	-- Breath of Mastery
+		r(158910, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Breath of Multistrike
+		r(158911),	-- Breath of Versatility
+		r(162948),	-- Enchanted Dust
+		r(169091),	-- Luminous Shard
+		r(177043),	-- Secrets of Draenor Enchanting
+		r(169092),	-- Temporal Crystal
+		r(159236),	-- Mark of the Shattered Hand
+	},
+}));
+COMMON_DRAENOR_ENCHANTING_RECIPES = bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	i(118394, {	-- Formula: Enchant Cloak - Breath of Critical Strike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118429, {	-- Formula: Enchant Cloak - Breath of Haste (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118430, {	-- Formula: Enchant Cloak - Breath of Mastery (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118431, {	-- Formula: Enchant Cloak - Breath of Multistrike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+	}),
+	i(118432, {	-- Formula: Enchant Cloak - Breath of Versatility (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118433, {	-- Formula: Enchant Cloak - Gift of Critical Strike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118434, {	-- Formula: Enchant Cloak - Gift of Haste (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118435, {	-- Formula: Enchant Cloak - Gift of Mastery (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118436, {	-- Formula: Enchant Cloak - Gift of Multistrike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+	}),
+	i(118437, {	-- Formula: Enchant Cloak - Gift of Versatility (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118438, {	-- Formula: Enchant Neck - Breath of Critical Strike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118439, {	-- Formula: Enchant Neck - Breath of Haste (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118440, {	-- Formula: Enchant Neck - Breath of Mastery (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118441, {	-- Formula: Enchant Neck - Breath of Multistrike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+	}),
+	i(118442, {	-- Formula: Enchant Neck - Breath of Versatility (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118443, {	-- Formula: Enchant Neck - Gift of Critical Strike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118444, {	-- Formula: Enchant Neck - Gift of Haste (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118445, {	-- Formula: Enchant Neck - Gift of Mastery (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118446, {	-- Formula: Enchant Neck - Gift of Multistrike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+	}),
+	i(118447, {	-- Formula: Enchant Neck - Gift of Versatility (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118453, {	-- Formula: Enchant Ring - Gift of Critical Strike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118454, {	-- Formula: Enchant Ring - Gift of Haste (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118455, {	-- Formula: Enchant Ring - Gift of Mastery (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118456, {	-- Formula: Enchant Ring - Gift of Multistrike (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
+	}),
+	i(118457, {	-- Formula: Enchant Ring - Gift of Versatility (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+	}),
+	i(118463, {	-- Formula: Enchant Weapon - Mark of Blackrock (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(118467, {	-- Formula: Enchant Weapon - Mark of Bleeding Hollow (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(118462, {	-- Formula: Enchant Weapon - Mark of Shadowmoon (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(118461, {	-- Formula: Enchant Weapon - Mark of the Frostwolf (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(118458, {	-- Formula: Enchant Weapon - Mark of the Thunderlord (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(118460, {	-- Formula: Enchant Weapon - Mark of Warsong (RECIPE!)
+		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+	}),
+	i(138882, {	-- Formula: Tome of Illusions: Draenor (RECIPE!)
+		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["timeline"] = { "added 7.0.3" },
+	}),
+});
 -- TODO: Add Engineering as well. cogwheels and stuff
 -- https://www.wowhead.com/npc=16657/feera
 -- TODO: Add Inscription as well. Inks and Pigments

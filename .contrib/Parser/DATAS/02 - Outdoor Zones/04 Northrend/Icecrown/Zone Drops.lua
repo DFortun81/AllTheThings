@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(NORTHREND, {
+root("Zones", m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 	m(ICECROWN, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {
 		n(ZONE_DROPS, {
 			i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
@@ -93,4 +93,4 @@ root("Zones", m(NORTHREND, {
 			}),
 		}),
 	})),
-}));
+})));

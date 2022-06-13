@@ -244,7 +244,7 @@ _.Zones =
 				q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
+						i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3] (RECIPE!)
 					},
 				}),
 				q(42077),	-- Waking Nightmares
@@ -285,7 +285,7 @@ _.Zones =
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
-						i(137838),	-- Design: Deep Amber Loop (Rank 3)
+						i(137838),	-- Design: Deep Amber Loop [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41292, {	-- Work Order: Dreamleaf
@@ -300,7 +300,7 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["groups"] = {
-						i(123936),	-- Recipe: Leystone Armguards (Rank 3)
+						i(123936),	-- Recipe: Leystone Armguards [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41272, {	-- Work Order: Mossgill Perch
@@ -309,13 +309,13 @@ _.Zones =
 				q(41676, {	-- Work Order: Pump-Action Bandage Gun
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
+						i(137721),	-- Schematic: Pump-Action Bandage Gun [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41646, {	-- Work Order: Silkweave Gloves
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
+						i(138012),	-- Pattern: Silkweave Gloves [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41338, {	-- Work Order: Stonehide Leather
@@ -324,19 +324,19 @@ _.Zones =
 				q(41658, {	-- Work Order: Sylvan Elixirs
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(127921),	-- Recipe: Sylvan Elixir (Rank 2)
+						i(127921),	-- Recipe: Sylvan Elixir [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41640, {	-- Work Order: Warhide Mask
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(137878),	-- Recipe: Warhide Mask (Rank 3)
+						i(137878),	-- Recipe: Warhide Mask [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41670, {	-- Work Order: Word of Agility
 					["requireSkill"] = ENCHANTING,
 					["g"] = {
-						i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
+						i(128605),	-- Formula: Enchant Cloak - Word of Agility [Rank 3] (RECIPE!)
 					},
 				}),
 				q(45927),	-- Zagmothar (Invasion WQ)

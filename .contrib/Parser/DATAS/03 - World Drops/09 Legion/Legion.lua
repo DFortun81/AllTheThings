@@ -74,8 +74,8 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {
-			i(142119),	-- Recipe: Potion of Prolonged Power (Rank 1)
-			i(127925),	-- Recipe: Infernal Alchemist Stone (Rank 2)
+			i(142119),	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)
+			i(127925),	-- Recipe: Infernal Alchemist Stone [Rank 2] (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(136709, {	-- Recipe: Demonsteel Stirrups
@@ -90,36 +90,36 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 			}),
 		}),
 		prof(ENCHANTING, {
-			i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 3)
-			i(128610),	-- Formula: Enchant Neck - Mark of the Claw (Rank 3)
-			i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 2)
+			i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 3] (RECIPE!)
+			i(128610),	-- Formula: Enchant Neck - Mark of the Claw [Rank 3] (RECIPE!)
+			i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 2] (RECIPE!)
 				["description"] = "Drops from bears in any Broken Isles zone.",
 			}),
-			i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 2)
+			i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 2] (RECIPE!)
 				["description"] = "Drops from PVP world quest mobs in any Broken Isles zone.",
 			}),
-			i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 3)
+			i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 3] (RECIPE!)
 		}),
 		prof(TAILORING, {
-			i(142077, {	-- Pattern: Imbued Silkweave Bag (Rank 2)
+			i(142077, {	-- Pattern: Imbued Silkweave Bag [Rank 2] (RECIPE!)
 				["description"] = "Drops from ghosts in any Broken Isles zone."
 			}),
-			i(138006, {	-- Pattern: Imbued Silkweave Cover (Rank 2)
+			i(138006, {	-- Pattern: Imbued Silkweave Cover [Rank 2] (RECIPE!)
 				["description"] = "Drops from furbolgs in any Broken Isles zone."
 			}),
-			i(138007),	-- Pattern: Imbued Silkweave Cover (Rank 3)
-			i(138009, {	-- Pattern: Imbued Silkweave Drape (Rank 2)
+			i(138007),	-- Pattern: Imbued Silkweave Cover [Rank 3] (RECIPE!)
+			i(138009, {	-- Pattern: Imbued Silkweave Drape [Rank 2] (RECIPE!)
 				["description"] = "Drops from harpies in any Broken Isles zone."
 			}),
-			i(138010),	-- Pattern: Imbued Silkweave Drape (Rank 3)
-			i(138003, {	-- Pattern: Imbued Silkweave Flourish (Rank 2)
+			i(138010),	-- Pattern: Imbued Silkweave Drape [Rank 3] (RECIPE!)
+			i(138003, {	-- Pattern: Imbued Silkweave Flourish [Rank 2] (RECIPE!)
 				["description"] = "Drops from murlocs in any Broken Isles zone."
 			}),
-			i(138004),	-- Pattern: Imbued Silkweave Flourish (Rank 3)
-			i(138000, {	-- Pattern: Imbued Silkweave Shade (Rank 2)
+			i(138004),	-- Pattern: Imbued Silkweave Flourish [Rank 3] (RECIPE!)
+			i(138000, {	-- Pattern: Imbued Silkweave Shade [Rank 2] (RECIPE!)
 				["description"] = "Drops from vrykul in any Broken Isles zone."
 			}),
-			i(138001),	-- Pattern: Imbued Silkweave Shade (Rank 3)
+			i(138001),	-- Pattern: Imbued Silkweave Shade [Rank 3] (RECIPE!)
 		}),
 	}),
 })));

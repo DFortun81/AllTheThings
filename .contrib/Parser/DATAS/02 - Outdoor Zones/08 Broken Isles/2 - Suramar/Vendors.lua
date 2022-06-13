@@ -71,16 +71,16 @@ _.Zones =
 						i(139979, {	-- Footpads of the Nightrunners
 							["cost"] = 5000000,	-- 500g
 						}),
-						i(128609, {	-- Formula: Enchant Cloak - Binding of Intellect (Rank 3)
+						i(128609, {	-- Formula: Enchant Cloak - Binding of Intellect [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(128600, {	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 3)
+						i(128600, {	-- Formula: Enchant Ring - Binding of Critical Strike [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(128602, {	-- Formula: Enchant Ring - Binding of Mastery (Rank 3)
+						i(128602, {	-- Formula: Enchant Ring - Binding of Mastery [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(128603, {	-- Formula: Enchant Ring - Binding of Versatility (Rank 3)
+						i(128603, {	-- Formula: Enchant Ring - Binding of Versatility [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
 						i(139692, {	-- Gauntlets of the Silver Hand
@@ -130,16 +130,16 @@ _.Zones =
 							["cost"] = 5000000,	-- 500g
 						}),
 						i(140575),	-- Nightfallen Tabard
-						i(137973, {	-- Pattern: Imbued Silkweave Bracers (Rank 2)
+						i(137973, {	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137976, {	-- Pattern: Imbued Silkweave Pantaloons (Rank 2)
+						i(137976, {	-- Pattern: Imbued Silkweave Pantaloons [Rank 2] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137979, {	-- Pattern: Imbued Silkweave Slippers (Rank 2)
+						i(137979, {	-- Pattern: Imbued Silkweave Slippers [Rank 2] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(142120, {	-- Recipe: Potion of Prolonged Power (Rank 2)
+						i(142120, {	-- Recipe: Potion of Prolonged Power [Rank 2] (RECIPE!)
 							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(140015, {	-- Scavenged Felsoul Sabaton
@@ -180,16 +180,16 @@ _.Zones =
 				n(93971,  {	-- Leyweaver Inondra
 					["coord"] = { 40.2, 69.6, SURAMAR },
 					["g"] = {
-						i(127277, {	-- Imbued Silkweave Cover (Rank 1)
+						i(127277, {	-- Imbued Silkweave Cover [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
-						i(127278, {	-- Imbued Silkweave Drape (Rank 1)
+						i(127278, {	-- Imbued Silkweave Drape [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
-						i(127280, {	-- Imbued Silkweave Flourish (Rank 1)
+						i(127280, {	-- Imbued Silkweave Flourish [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
-						i(127279, {	-- Imbued Silkweave Shade (Rank 1)
+						i(127279, {	-- Imbued Silkweave Shade [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
 					},
@@ -197,7 +197,7 @@ _.Zones =
 				n(93979,  {	-- Leyweaver Jorjana
 					["coord"] = { 49.4, 75.8, SURAMAR },
 					["g"] = {
-						i(127025, {	-- Imbued Silkweave Hood (Rank 1)
+						i(127025, {	-- Imbued Silkweave Hood [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
 					},
@@ -205,7 +205,7 @@ _.Zones =
 				n(112226, {	-- Markus Hjolbruk
 					["coord"] = { 71.6, 48.8, SURAMAR },
 					["g"] = {
-						i(133819),	-- Recipe: Koi-Scented Stormray (Rank 1)
+						i(133819),	-- Recipe: Koi-Scented Stormray [Rank 1] (RECIPE!)
 					},
 				}),
 				n(112059, {	-- Sasunne Dameuse <Souvenirs>
@@ -224,82 +224,82 @@ _.Zones =
 				n(98969,  {	-- Stalriss Dawnrunner <Leatherworking Trainer>
 					["coord"] = { 26.6, 71.6, SURAMAR },
 					["g"] = {
-						i(140637, {	-- Recipe: Dreadleather Belt (Rank 1)
+						i(140637, {	-- Recipe: Dreadleather Belt [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth
 							},
 						}),
-						i(140642, {	-- Recipe: Dreadleather Footpads (Rank 1)
+						i(140642, {	-- Recipe: Dreadleather Footpads [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(140641, {	-- Recipe: Dreadleather Gloves (Rank 1)
+						i(140641, {	-- Recipe: Dreadleather Gloves [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124113, 100 }, },	-- 100x Stonehide Leather
 						}),
-						i(140643, {	-- Recipe: Dreadleather Jerkin (Rank 1)
+						i(140643, {	-- Recipe: Dreadleather Jerkin [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(140640, {	-- Recipe: Dreadleather Mask (Rank 1)
+						i(140640, {	-- Recipe: Dreadleather Mask [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 130180, 5 },		-- 5x  Dawnlight
 							},
 						}),
-						i(140639, {	-- Recipe: Dreadleather Pants (Rank 1)
+						i(140639, {	-- Recipe: Dreadleather Pants [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(140638, {	-- Recipe: Dreadleather Shoulderguard (Rank 1)
+						i(140638, {	-- Recipe: Dreadleather Shoulderguard [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(140645, {	-- Recipe: Gravenscale Girdle (Rank 1)
+						i(140645, {	-- Recipe: Gravenscale Girdle [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth
 							},
 						}),
-						i(140649, {	-- Recipe: Gravenscale Grips (Rank 1)
+						i(140649, {	-- Recipe: Gravenscale Grips [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 							},
 						}),
-						i(140651, {	-- Recipe: Gravenscale Hauberk (Rank 1)
+						i(140651, {	-- Recipe: Gravenscale Hauberk [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(140647, {	-- Recipe: Gravenscale Leggings (Rank 1)
+						i(140647, {	-- Recipe: Gravenscale Leggings [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(140646, {	-- Recipe: Gravenscale Spaulders (Rank 1)
+						i(140646, {	-- Recipe: Gravenscale Spaulders [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(140650, {	-- Recipe: Gravenscale Treads (Rank 1)
+						i(140650, {	-- Recipe: Gravenscale Treads [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(140648, {	-- Recipe: Gravenscale Warhelm (Rank 1)
+						i(140648, {	-- Recipe: Gravenscale Warhelm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124115, 20 },	-- 20x Stormscale
 								{ "i", 130182, 5 },		-- 5x  Maelstrom Sapphire
@@ -322,49 +322,49 @@ _.Zones =
 				n(92265,  {	-- Urael <Nal'ryssa's Minion>
 					["coord"] = { 30.0, 53.2, SURAMAR },
 					["g"] = {
-						i(123920, {	-- Recipe: Demonsteel Armguards (Rank 1)
+						i(123920, {	-- Recipe: Demonsteel Armguards [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124115, 20 },	-- 20x Stormscale
 							},
 						}),
-						i(123926, {	-- Recipe: Demonsteel Boots (Rank 1)
+						i(123926, {	-- Recipe: Demonsteel Boots [Rank 1] (RECIPE!)
 								["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124438, 20 },	-- 20x Unbroken Claw
 							},
 						}),
-						i(123927, {	-- Recipe: Demonsteel Breastplate (Rank 1)
+						i(123927, {	-- Recipe: Demonsteel Breastplate [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 123918, 20 },	-- 20x Leystone Ore
 							},
 						}),
-						i(123925, {	-- Recipe: Demonsteel Gauntlets (Rank 1)
+						i(123925, {	-- Recipe: Demonsteel Gauntlets [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
 							},
 						}),
-						i(123923, {	-- Recipe: Demonsteel Greaves (Rank 1)
+						i(123923, {	-- Recipe: Demonsteel Greaves [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124437, 20 },	-- 20x Shal'dorei Silk
 							},
 						}),
-						i(123924, {	-- Recipe: Demonsteel Helm (Rank 1)
+						i(123924, {	-- Recipe: Demonsteel Helm [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 130179, 5 },		-- 5x Eye of Prophecy
 							},
 						}),
-						i(123922, {	-- Recipe: Demonsteel Pauldrons (Rank 1)
+						i(123922, {	-- Recipe: Demonsteel Pauldrons [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124440, 20 },	-- 20x Arkhana
 							},
 						}),
-						i(123921, {	-- Recipe: Demonsteel Waistguard (Rank 1)
+						i(123921, {	-- Recipe: Demonsteel Waistguard [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate
 								{ "i", 124439, 20 },	-- 20x Unbroken Tooth

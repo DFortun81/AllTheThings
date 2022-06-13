@@ -48,7 +48,7 @@ _.Zones =
 						["requireSkill"] = ALCHEMY,
 						["lvl"] = { 45 },
 						["g"] = {
-							i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
+							i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
 						},
 					}),
 				}),
@@ -58,7 +58,7 @@ _.Zones =
 						["requireSkill"] = BLACKSMITHING,
 						["lvl"] = { 45 },
 						["g"] = {
-							i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
+							i(137606),	-- Recipe: Leystone Gauntlets [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -69,7 +69,7 @@ _.Zones =
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
+							i(128606),	-- Formula: Enchant CLoak - Word of Intellect [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -80,7 +80,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 32725 },	-- Warmage Silva
 						["g"] = {
-							i(137724),	-- Schematic: Failure Detection Pylon (Rank 3)
+							i(137724),	-- Schematic: Failure Detection Pylon [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -119,7 +119,7 @@ _.Zones =
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(137840),	-- Design: Azsunite Loop (Rank 3)
+							i(137840),	-- Design: Azsunite Loop [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -130,7 +130,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 32725 },	-- Warmage Silva
 						["g"] = {
-							i(137879),	-- Recipe: Warhide Gloves (Rank 3)
+							i(137879),	-- Recipe: Warhide Gloves [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
@@ -140,7 +140,7 @@ _.Zones =
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(138013),	-- Pattern: Silkweave Hood (Rank 3)
+							i(138013),	-- Pattern: Silkweave Hood [Rank 3] (RECIPE!)
 						},
 					}),
 				}),
