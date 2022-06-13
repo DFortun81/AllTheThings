@@ -15153,13 +15153,10 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Insert the data group into the Raw Data table.
-		popout.data = group;
+		popout:SetData(group);
 		popout.data.hideText = true;
 		popout.data.visible = true;
-		popout.data.indent = 0;
-		popout.data.total = 0;
-		popout.data.progress = 0;
-		BuildGroups(popout.data, popout.data.g);
+		popout:BuildData();
 		-- always expand all groups on initial creation
 		ExpandGroupsRecursively(popout.data, true, true);
 		-- Adjust some update/refresh logic if this is a Quest Chain window
@@ -16821,11 +16818,13 @@ local function UpdateWindow(self, force, got)
 		end
 	end
 end
--- Allows a Window to set the root data object to itself and link the Window to the root data
+-- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
 local function SetData(self, data)
 	-- app.PrintDebug("Window:SetData",self.Suffix,data.text)
-	data.window = self;
 	self.data = data;
+	if data then
+		data.window = self;
+	end
 end
 -- Allows a Window to build the groups hierarcy if it has .data
 local function BuildData(self)
@@ -18168,7 +18167,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 			db.visible = true;
 			db.expanded = true;
 			db.back = 1;
-			self.data = db;
+			self:SetData(db);
 		end
 		self:BaseUpdate(true);
 	end
@@ -18178,7 +18177,7 @@ customWindowUpdates["AuctionData"] = function(self)
 		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;
 		self.shouldFullRefresh = false;
 		self.initialized = true;
-		self.data = {
+		self:SetData({
 			["text"] = "Auction Module",
 			["visible"] = true,
 			["back"] = 1,
@@ -18330,7 +18329,7 @@ customWindowUpdates["AuctionData"] = function(self)
 				},
 			},
 			["g"] = {}
-		};
+		});
 		for i,option in ipairs(self.data.options) do
 			tinsert(self.data.g, option);
 		end
@@ -18349,7 +18348,7 @@ end;
 customWindowUpdates["Bounty"] = function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
-		self.data = {
+		self:SetData({
 			['text'] = L["BOUNTY"],
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
 			["description"] = L["BOUNTY_DESC"],
@@ -18392,7 +18391,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 					}),
 				}),
 			},
-		};
+		});
 		BuildGroups(self.data, self.data.g);
 		self.rawData = {};
 		local function RefreshBounties()
@@ -18424,7 +18423,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
-			self.data = {
+			self:SetData({
 				['text'] = "Cosmic Infuser",
 				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp",
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
@@ -18443,7 +18442,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
-			};
+			});
 			local openMinilist = function(row, button)
 				-- logic to right-click to set the minilist to this mapID, for testing
 				if button == "RightButton" then
@@ -18759,34 +18758,30 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				-- Swap out the map data for the header.
-				self.data = header;
-				self.data.u = nil;
-				self.data.mapID = self.mapID;
-				self.data.visible = true;
-				setmetatable(self.data,
-					self.data.instanceID and app.BaseInstance
-					or self.data.classID and app.BaseCharacterClass
-					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
+				header.u = nil;
+				header.mapID = self.mapID;
+				header.visible = true;
+				setmetatable(header,
+					header.instanceID and app.BaseInstance
+					or header.classID and app.BaseCharacterClass
+					or header.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
 				-- Fill up the groups that need to be filled!
-				app.FillGroups(self.data);
+				app.FillGroups(header);
 
 				-- sort top level by name if not in an instance
-				if not GetRelativeValue(self.data, "instanceID") then
-					app.SortGroup(self.data, "name");
+				if not GetRelativeValue(header, "instanceID") then
+					app.SortGroup(header, "name");
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
-				app.SortGroup(self.data, "name", nil, true, "sort");
-
-				BuildGroups(self.data, self.data.g);
+				app.SortGroup(header, "name", nil, true, "sort");
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty
 				local difficultyID = select(3, GetInstanceInfo());
 				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-					if difficultyID and difficultyID > 0 and self.data.g then
-						for _,row in ipairs(self.data.g) do
+					if difficultyID and difficultyID > 0 and header.g then
+						for _,row in ipairs(header.g) do
 							if row.difficultyID or row.difficulties then
 								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
 									if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
@@ -18800,16 +18795,16 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 						-- No difficulty found to expand, so just expand everything in the list
 						if not expanded then
-							ExpandGroupsRecursively(self.data, true, true);
+							ExpandGroupsRecursively(header, true, true);
 							expanded = true;
 						end
 					end
 				end
 				-- app.PrintDebug("Warn:Difficulty")
 				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-					if difficultyID and difficultyID > 0 and self.data.g then
+					if difficultyID and difficultyID > 0 and header.g then
 						local missing, found, other;
-						for _,row in ipairs(self.data.g) do
+						for _,row in ipairs(header.g) do
 							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.difficulties)
 							if not found and not missing then
 								-- check group for the current difficulty for incomplete content
@@ -18835,6 +18830,10 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 					end
 				end
+
+				-- Swap out the map data for the header.
+				self:SetData(header);
+				self:BuildData();
 
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
@@ -18863,7 +18862,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					print("Path: ", mapPath);
 					app.report();
 				end
-				self.data = app.CreateMap(self.mapID, {
+				self:SetData(app.CreateMap(self.mapID, {
 					["text"] = L["MINI_LIST"] .. " [" .. self.mapID .. "]",
 					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
@@ -18881,8 +18880,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							["OnUpdate"] = app.AlwaysShowUpdate,
 						},
 					},
-				});
-				BuildGroups(self.data, self.data.g);
+				}));
+				self:BuildData();
 			end
 			-- Make sure to scroll to the top when being rebuilt
 			self.ScrollBar:SetValue(1);
@@ -19041,7 +19040,7 @@ customWindowUpdates["ItemFilter"] = function(self)
 			};
 
 			self.Reset = function()
-				self.data = actions;
+				self:SetData(actions);
 			end
 
 			-- Setup Event Handlers and register for events
@@ -19163,7 +19162,7 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 			db.visible = true;
 			db.expanded = true;
 			db.back = 1;
-			self.data = db;
+			self:SetData(db);
 		end
 		self:BaseUpdate(true);
 	end
@@ -19254,7 +19253,7 @@ customWindowUpdates["Harvester"] = function(self)
 					end
 				end
 			end
-			self.data = db;
+			self:SetData(db);
 			BuildGroups(db, db.g);
 			self.ScrollBar:SetValue(#db.g);
 			self.UpdateDone = function(self)
@@ -19296,7 +19295,7 @@ customWindowUpdates["Harvester"] = function(self)
 						-- reset the window so it can be used to harvest again without reloading
 						self.UpdateDone = nil;
 						self.initialized = nil;
-						self.data = nil;
+						self:SetData(nil);
 						return;
 					end
 				end
@@ -19390,14 +19389,10 @@ customWindowUpdates["SourceFinder"] = function(self)
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
 			db.visible = true;
 			db.expanded = true;
-			db.progress = 0;
-			db.total = 0;
 			db.back = 1;
-			self.data = db;
+			self:SetData(db);
 		end
-		self.data.progress = 0;
-		self.data.total = 0;
-		BuildGroups(self.data, self.data.g);
+		self:BuildData();
 		TopLevelUpdateGroup(self.data, self);
 		self:BaseUpdate(true);
 	end
@@ -19423,13 +19418,13 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
 			};
 			local switchDungeonDifficulty = function(row, button)
-				self.data = raidassistant;
+				self:SetData(raidassistant);
 				SetDungeonDifficultyID(row.ref.difficultyID);
 				Callback(self.Update, self);
 				return true;
 			end
 			local switchRaidDifficulty = function(row, button)
-				self.data = raidassistant;
+				self:SetData(raidassistant);
 				local myself = self;
 				local difficultyID = row.ref.difficultyID;
 				if not self.running then
@@ -19461,7 +19456,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				return true;
 			end
 			local switchLegacyRaidDifficulty = function(row, button)
-				self.data = raidassistant;
+				self:SetData(raidassistant);
 				local myself = self;
 				local difficultyID = row.ref.difficultyID;
 				if not self.legacyrunning then
@@ -19505,7 +19500,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						["description"] = L["LOOT_SPEC_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							self.data = lootspecialization;
+							self:SetData(lootspecialization);
 							Callback(self.Update, self);
 							return true;
 						end,
@@ -19525,7 +19520,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						["description"] = L["DUNGEON_DIFF_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							self.data = dungeondifficulty;
+							self:SetData(dungeondifficulty);
 							Callback(self.Update, self);
 							return true;
 						end,
@@ -19547,7 +19542,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-							self.data = raiddifficulty;
+							self:SetData(raiddifficulty);
 							Callback(self.Update, self);
 							return true;
 						end,
@@ -19570,7 +19565,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-							self.data = legacyraiddifficulty;
+							self:SetData(legacyraiddifficulty);
 							Callback(self.Update, self);
 							return true;
 						end,
@@ -19631,7 +19626,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 							if GroupFinderFrame:IsVisible() then
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
-							self.data = raidassistant;
+							self:SetData(raidassistant);
 							Callback(self.BaseUpdate, self, true);
 							return true;
 						end,
@@ -19649,7 +19644,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 							if GroupFinderFrame:IsVisible() then
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
-							self.data = raidassistant;
+							self:SetData(raidassistant);
 							Callback(self.BaseUpdate, self, true);
 							return true;
 						end,
@@ -19664,7 +19659,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
 				["description"] = L["LOOT_SPEC_DESC_2"],
 				['OnClick'] = function(row, button)
-					self.data = raidassistant;
+					self:SetData(raidassistant);
 					Callback(self.Update, self);
 					return true;
 				end,
@@ -19680,7 +19675,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 							["description"] = L["CURRENT_SPEC_DESC"],
 							['visible'] = true,
 							['OnClick'] = function(row, button)
-								self.data = raidassistant;
+								self:SetData(raidassistant);
 								SetLootSpecialization(row.ref.id);
 								Callback(self.Update, self);
 							end,
@@ -19694,7 +19689,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 								["description"] = description,
 								['visible'] = true,
 								['OnClick'] = function(row, button)
-									self.data = raidassistant;
+									self:SetData(raidassistant);
 									SetLootSpecialization(row.ref.id);
 									Callback(self.Update, self);
 								end,
@@ -19712,7 +19707,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
 				["description"] = L["DUNGEON_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
-					self.data = raidassistant;
+					self:SetData(raidassistant);
 					Callback(self.Update, self);
 					return true;
 				end,
@@ -19745,7 +19740,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
 				["description"] = L["RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
-					self.data = raidassistant;
+					self:SetData(raidassistant);
 					Callback(self.Update, self);
 					return true;
 				end,
@@ -19775,7 +19770,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
 				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
-					self.data = raidassistant;
+					self:SetData(raidassistant);
 					Callback(self.Update, self);
 					return true;
 				end,
@@ -19805,7 +19800,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					}),
 				},
 			};
-			self.data = raidassistant;
+			self:SetData(raidassistant);
 
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...) Callback(self.Update, self); end);
@@ -19837,7 +19832,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		-- Update the groups without forcing Debug Mode.
 		local visibilityFilter = app.VisibilityFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		BuildGroups(self.data, self.data.g);
+		self:BuildData();
 		self:BaseUpdate(true);
 		app.VisibilityFilter = visibilityFilter;
 	end
@@ -20086,7 +20081,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "AllTheThings");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20103,7 +20098,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Achievement");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20116,7 +20111,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Item");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20129,7 +20124,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Instance");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20142,7 +20137,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Dungeon");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20155,7 +20150,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Raid");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20168,7 +20163,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Mount");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20181,7 +20176,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20195,7 +20190,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Quest");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20208,7 +20203,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Toy");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20221,7 +20216,7 @@ customWindowUpdates["Random"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Zone");
-							self.data = mainHeader;
+							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
@@ -20245,7 +20240,7 @@ customWindowUpdates["Random"] = function(self)
 						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							self.data = filterHeader;
+							self:SetData(filterHeader);
 							self:Update(true);
 							return true;
 						end,
@@ -20255,7 +20250,7 @@ customWindowUpdates["Random"] = function(self)
 				},
 				['g'] = { },
 			};
-			self.data = mainHeader;
+			self:SetData(mainHeader);
 			self.Rebuild = function(self, no)
 				-- Rebuild all the datas
 				wipe(self.data.g);
@@ -20505,7 +20500,7 @@ customWindowUpdates["Sync"] = function(self)
 			};
 
 			self.Reset = function()
-				self.data = syncHeader;
+				self:SetData(syncHeader);
 				self:Update(true);
 			end
 			self:Reset();
@@ -20513,7 +20508,7 @@ customWindowUpdates["Sync"] = function(self)
 
 		-- Update the groups without forcing Debug Mode.
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		BuildGroups(self.data, self.data.g);
+		self:BuildData();
 		for i,g in ipairs(self.data.g) do
 			if g.OnUpdate then g.OnUpdate(g, self); end
 		end
@@ -20536,14 +20531,14 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- print("Quests - onlyMissing",onlyMissing)
 
 		-- info about the Window
-		self.data = {
+		self:SetData({
 			["text"] = L["QUESTS_CHECKBOX"],
 			["icon"] = app.asset("Interface_Quest_header"),
 			["description"] = L["QUESTS_DESC"].."\n\n1 - "..self.Limit,
 			["visible"] = true,
 			["expanded"] = true,
 			["indent"] = 0,
-		};
+		});
 
 		-- add a bunch of raw, delay-loaded quests in order into the window
 		local groupCount = self.Limit / self.PartitionSize - 1;
@@ -20595,7 +20590,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 			tinsert(g, partition);
 		end
 		self.data.g = g;
-		BuildGroups(self.data, self.data.g);
+		self:BuildData();
 	end
 	if self:IsVisible() then
 		self:BaseUpdate(force);
@@ -20622,7 +20617,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
-		self.data = {
+		self:SetData({
 			['text'] = L["PROFESSION_LIST"],
 			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
 			["description"] = L["PROFESSION_LIST_DESC"],
@@ -20631,7 +20626,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			["indent"] = 0,
 			['back'] = 1,
 			['g'] = { },
-		};
+		});
 		self.CacheRecipes = function(self)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
@@ -20766,7 +20761,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						-- only expand the list if this is the first time it is being generated
 						self.ExpandInfo = { Expand = true };
 					end
-					self.data = data;
+					self:SetData(data);
 					self.force = true
 				end
 				-- If something new was "learned", then refresh the data.
@@ -20985,13 +20980,14 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 	local C_AreaPoiInfo_GetAreaPOISecondsLeft = C_AreaPoiInfo.GetAreaPOISecondsLeft;
 	local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
 	local SecondsToTime = SecondsToTime;
-	local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo = GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
+	local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo =
+		  GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
 
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
-			self.data = {
+			local data = {
 				['text'] = L["WORLD_QUESTS"],
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
@@ -21013,8 +21009,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					},
 				},
 			};
+			self:SetData(data);
 			-- Build the initial heirarchy
-			BuildGroups(self.data, self.data.g);
+			self:BuildData();
 			local emissaryMapIDs = {
 				{ 619, 650 },	-- Broken Isles, Highmountain
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
@@ -21197,7 +21194,19 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Rebuild all World Quest data
 				-- print("Rebuild WQ Data")
 				self.retry = nil;
-				local temp = {};
+				-- Put a 'Clear World Quests' click first in the list
+				local temp = {{
+					['text'] = L["CLEAR_WORLD_QUESTS"],
+					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],
+					['hash'] = "funClearWorldQuests",
+					['OnClick'] = function(data, button)
+						Push(self, "WorldQuests-Clear", self.Clear);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				}};
+
 				-- options when refreshing the list
 				self.includeAll = app.MODE_DEBUG;
 				self.includeQuests = app.CollectibleQuests or app.CollectibleQuestsLocked;
@@ -21357,23 +21366,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					tinsert(temp, groupFinder);
 				end
 
-				-- Put a 'Clear World Quests' click at the bottom
-				MergeObject(temp, {
-					['text'] = L["CLEAR_WORLD_QUESTS"],
-					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
-					['description'] = L["CLEAR_WORLD_QUESTS_DESC"],
-					['hash'] = "funClearWorldQuests",
-					['OnClick'] = function(data, button)
-						Push(self, "WorldQuests-Clear", self.Clear);
-						return true;
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				});
-
 				-- put all the things into the window data, turning them into objects as well
 				NestObjects(self.data, temp, true);
 				-- Build the heirarchy
-				BuildGroups(self.data, self.data.g);
+				self:BuildData();
 				-- Force Update Callback
 				Callback(self.Update, self, true);
 			end
@@ -21493,7 +21489,7 @@ app.LoadDebugger = function()
 				[32642] = 1,	-- Mojodishu (Mammoth)
 				[32641] = 1,	-- Drix Blackwrench (Mammoth)
 			};
-			self.data = {
+			self:SetData({
 				['text'] = "Session History",
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 				["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
@@ -21549,7 +21545,7 @@ app.LoadDebugger = function()
 					},
 				},
 				['g'] = {},
-			};
+			});
 
 			local AddObject = function(info)
 				-- print("Debugger.AddObject")
@@ -21583,7 +21579,7 @@ app.LoadDebugger = function()
 
 				if info then
 					NestObject(self.data, CreateObject(info));
-					BuildGroups(self.data, self.data.g);
+					self:BuildData();
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
