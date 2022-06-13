@@ -15380,92 +15380,90 @@ local function Refresh(self)
 
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
-	if totalRowCount > 0 then
-		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 8;
-		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
+	if totalRowCount <= 0 then return; end
 
-		-- Ensure that the first row doesn't move out of position.
-		local row = rawget(container.rows, 1) or CreateRow(container);
-		SetRowData(self, row, rawget(rowData, 1));
-		local containerHeight = container:GetHeight();
+	-- Fill the remaining rows up to the (visible) row count.
+	local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 8;
+	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
+
+	-- Ensure that the first row doesn't move out of position.
+	local row = rawget(container.rows, 1) or CreateRow(container);
+	SetRowData(self, row, rawget(rowData, 1));
+	local containerHeight = container:GetHeight();
+	totalHeight = totalHeight + row:GetHeight();
+	current = current + 1;
+	rowCount = rowCount + 1;
+
+	for i=2,totalRowCount do
+		row = rawget(container.rows, i) or CreateRow(container);
+		SetRowData(self, row, rawget(rowData, current));
+		-- track the minimum indentation within the set of rows so they can be adjusted later
+		if row.indent and (not minIndent or row.indent < minIndent) then
+			minIndent = row.indent;
+			-- print("new minIndent",minIndent)
+		end
 		totalHeight = totalHeight + row:GetHeight();
-		current = current + 1;
-		rowCount = rowCount + 1;
-
-		for i=2,totalRowCount do
-			row = rawget(container.rows, i) or CreateRow(container);
-			SetRowData(self, row, rawget(rowData, current));
-			-- track the minimum indentation within the set of rows so they can be adjusted later
-			if row.indent and (not minIndent or row.indent < minIndent) then
-				minIndent = row.indent;
-				-- print("new minIndent",minIndent)
-			end
-			totalHeight = totalHeight + row:GetHeight();
-			if totalHeight > containerHeight then
-				break;
-			else
-				current = current + 1;
-				rowCount = rowCount + 1;
-			end
-		end
-
-		-- Readjust the indent of visible rows
-		-- if there's actually an indent to adjust on top row (due to possible indicator)
-		row = rawget(container.rows, 1);
-		if row.indent ~= windowPad then
-			AdjustRowIndent(row, row.indent - windowPad);
-			-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
-			windowPad = windowPad + 8;
+		if totalHeight > containerHeight then
+			break;
 		else
-			windowPad = windowPad + 4;
+			current = current + 1;
+			rowCount = rowCount + 1;
 		end
-		-- local headerAdjust = 0;
-		-- if startIndent ~= 8 then
-		-- 	-- header only adjust
-		-- 	headerAdjust = startIndent - 8;
-		-- 	print("header adjust",headerAdjust)
-		-- 	row = rawget(container.rows, 1);
-		-- 	AdjustRowIndent(row, headerAdjust);
-		-- end
-		-- adjust remaining rows to align on the left
-		if minIndent and minIndent ~= windowPad then
-			-- print("minIndent",minIndent,windowPad)
-			local adjust = minIndent - windowPad;
-			for i=2,rowCount do
-				row = rawget(container.rows, i);
-				AdjustRowIndent(row, adjust);
-			end
-		end
+	end
 
-		-- Hide the extra rows if any exist
-		for i=math.max(2, rowCount + 1),#container.rows do
-			row = rawget(container.rows, i);
-			ClearRowData(row);
-			row:Hide();
-		end
-
-		totalRowCount = totalRowCount + 1;
-		self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
-		self.ScrollBar:SetStepsPerPage(rowCount - 1);
-
-		-- If this window has an UpdateDone method which should process after the Refresh is complete
-		if self.UpdateDone then
-			-- print("Refresh-UpdateDone",self.Suffix)
-			Callback(self.UpdateDone, self);
-		-- If the rows need to be processed again, do so next update.
-		elseif self.processingLinks then
-			-- print("Refresh-processingLinks",self.Suffix)
-			Callback(self.Refresh, self);
-			self.processingLinks = nil;
-		-- If the data itself needs another update pass due to new rows being added dynamically
-		elseif self.doUpdate then
-			-- print("Refresh-doUpdate",self.Suffix)
-			Callback(self.Update, self, true);
-			self.doUpdate = nil;
-		end
+	-- Readjust the indent of visible rows
+	-- if there's actually an indent to adjust on top row (due to possible indicator)
+	row = rawget(container.rows, 1);
+	if row.indent ~= windowPad then
+		AdjustRowIndent(row, row.indent - windowPad);
+		-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
+		windowPad = windowPad + 8;
 	else
-		self:Hide();
+		windowPad = windowPad + 4;
+	end
+	-- local headerAdjust = 0;
+	-- if startIndent ~= 8 then
+	-- 	-- header only adjust
+	-- 	headerAdjust = startIndent - 8;
+	-- 	print("header adjust",headerAdjust)
+	-- 	row = rawget(container.rows, 1);
+	-- 	AdjustRowIndent(row, headerAdjust);
+	-- end
+	-- adjust remaining rows to align on the left
+	if minIndent and minIndent ~= windowPad then
+		-- print("minIndent",minIndent,windowPad)
+		local adjust = minIndent - windowPad;
+		for i=2,rowCount do
+			row = rawget(container.rows, i);
+			AdjustRowIndent(row, adjust);
+		end
+	end
+
+	-- Hide the extra rows if any exist
+	for i=math.max(2, rowCount + 1),#container.rows do
+		row = rawget(container.rows, i);
+		ClearRowData(row);
+		row:Hide();
+	end
+
+	totalRowCount = totalRowCount + 1;
+	self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
+	self.ScrollBar:SetStepsPerPage(rowCount - 1);
+
+	-- If this window has an UpdateDone method which should process after the Refresh is complete
+	if self.UpdateDone then
+		-- print("Refresh-UpdateDone",self.Suffix)
+		Callback(self.UpdateDone, self);
+	-- If the rows need to be processed again, do so next update.
+	elseif self.processingLinks then
+		-- print("Refresh-processingLinks",self.Suffix)
+		Callback(self.Refresh, self);
+		self.processingLinks = nil;
+	-- If the data itself needs another update pass due to new rows being added dynamically
+	elseif self.doUpdate then
+		-- print("Refresh-doUpdate",self.Suffix)
+		Callback(self.Update, self, true);
+		self.doUpdate = nil;
 	end
 end
 local function IsSelfOrChild(self, focus)
