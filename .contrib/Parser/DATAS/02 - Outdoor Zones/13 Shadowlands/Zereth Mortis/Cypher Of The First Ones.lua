@@ -515,17 +515,17 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
 							}),
 							i(187728, {	-- Ephemera Strand
-								["description"] = "Unique (30)",
-						}),
-							i(187728, {	-- Ephemera Strand
-								i(187787, {	-- Ephemera Orb
-									i(187890),	-- Anima-charged Yolk
-									i(187735),	-- Geordy (PET!)
-									i(188231),	-- Provis Cache Key
-									i(187866),	-- Accelerating Tendons
-									i(187867),	-- Evolved Exo-mucus
-									i(187865),	-- Spiked Protomesh
+								["description"] = "Possibly Unique (30)",
+								["g"] = {
+									i(187787, {	-- Ephemera Orb
+										i(187890),	-- Anima-charged Yolk
+										i(187735),	-- Geordy (PET!)
+										i(188231),	-- Provis Cache Key
+										i(187866),	-- Accelerating Tendons
+										i(187867),	-- Evolved Exo-mucus
+										i(187865),	-- Spiked Protomesh
 								}),
+								}
 							}),
 							i(187792, {	-- Kismetric Disc
 								["cost"] = {
