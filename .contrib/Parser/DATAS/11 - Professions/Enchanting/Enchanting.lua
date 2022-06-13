@@ -880,7 +880,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
-	-- [[  Unsure About these
+	--[[  Unsure About these
 	-- Introduced in BFA
 		r(300381),	-- Disenchant (Vanilla)
 		r(300382),	-- Disenchant (TBC)

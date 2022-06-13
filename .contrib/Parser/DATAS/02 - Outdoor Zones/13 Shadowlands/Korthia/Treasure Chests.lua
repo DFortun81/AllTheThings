@@ -76,11 +76,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o_repeated({	-- Invasive Mawshroom
 				-- Contains
-				i(186990),	-- Recipe: Blossom Burst
-				i(186988),	-- Recipe: Glory Burst
-				i(186989),	-- Recipe: Marrow Burst
-				i(186987),	-- Recipe: Torch Burst
-				i(186986),	-- Recipe: Widow Burst
+				i(186990),	-- Recipe: Blossom Burst (RECIPE!)
+				i(186988),	-- Recipe: Glory Burst (RECIPE!)
+				i(186989),	-- Recipe: Marrow Burst (RECIPE!)
+				i(186987),	-- Recipe: Torch Burst (RECIPE!)
+				i(186986),	-- Recipe: Widow Burst (RECIPE!)
 				i(187244),	-- Questionable Mawshrooms
 				i(187153),	-- Tasty Mawshroom
 				-- Objects

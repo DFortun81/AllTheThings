@@ -1,5 +1,8 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
 -- Alchemy - Skill ID 171 / Spell ID 2259
-profession(ALCHEMY, {
+root("Professions", prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 	n(DROPS, {	-- TODO: Add the drop locations
 		i(109558, {		-- A Treatise on the Alchemy of Draenor
 			["collectible"] = false,
@@ -267,4 +270,95 @@ profession(ALCHEMY, {
 			},
 		}),
 	}),
-});
+	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+		r(309822),	-- Shadowlands Alchemy
+		cat(1303, {	-- Anti-Venoms
+			r(307100),	-- Spiritual Anti-Venom
+		}),
+		cat(1295, {	-- Cauldrons
+			r(307087),	-- Eternal Cauldron
+		}),
+		cat(1296, {	-- Combat Potions
+			r(359870, {["timeline"] = { "added 9.2.0" }}),	-- Cosmic Healing Potion
+			r(307384),	-- Potion of Deathly Fixation
+			r(307383),	-- Potion of Divine Awakening
+			r(307381),	-- Potion of Empowered Exorcisms
+			r(307094),	-- Potion of Hardened Shadows
+			r(307382),	-- Potion of Phantom Fire
+			r(322301),	-- Potion of Sacrificial Anima
+			r(307093),	-- Potion of Spectral Agility
+			r(307096),	-- Potion of Spectral Intellect
+			r(307097),	-- Potion of Spectral Stamina
+			r(307098),	-- Potion of Spectral Strength
+			r(307095),	-- Potion of Spiritual Clarity
+			r(301578),	-- Spiritual Healing Potion
+			r(301683),	-- Spiritual Mana Potion
+			r(261423),	-- Spiritual Rejuvenation Potion
+		}),
+		cat(1298, {	-- Flasks
+			r(307101),	-- Spectral Flask of Power
+			r(307103),	-- Spectral Flask of Stamina
+		}),
+		cat(1299, {	-- Optional Reagents
+			r(343679),	-- Crafter's Mark I
+			r(343678),	-- Crafter's Mark II
+			r(343677, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark III
+			r(343676, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark of the Chained Isle
+			r(359666, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark IV
+			r(359673, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark of the First Ones
+			r(360014, {["timeline"] = { "added 9.2.0" }}),	-- Infusion: Corpse Purification
+			r(343675),	-- Novice Crafter's Mark
+			r(360318, {["timeline"] = { "added 9.2.0" }}),	-- Sustaining Armor Polish
+		}),
+		cat(1297, {	-- Oils and Extracts
+			r(307119),	-- Embalmer's Oil
+			r(307120),	-- Ground Death Blossom
+			r(307123),	-- Ground Marrowroot
+			r(307125),	-- Ground Nightshade
+			r(307124),	-- Ground Rising Glory
+			r(307121),	-- Ground Vigil's Torch
+			r(307122),	-- Ground Widowbloom
+			r(307118),	-- Shadowcore Oil
+		}),
+		cat(1517, sharedDataSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Other
+			r(354885),	-- Blossom Burst
+			r(354881),	-- Glory Burst
+			r(354880),	-- Marrow Burst
+			r(354884),	-- Torch Burst
+			r(354882),	-- Widow Burst
+		})),
+		cat(1525, sharedDataSelf({ ["u"] = 15 }, {	-- Quest Recipes
+			r(338204),	-- Bramblethorn Juice
+			r(338199),	-- Brutal Oil
+			r(338200),	-- Crushed Bones
+			r(338195),	-- Distilled Resolve
+			r(338198),	-- Draught of Grotesque Strength
+			r(338202),	-- Elixir of Humility
+			r(338194),	-- Flask of Measured Discipline
+			r(338191),	-- Liquid Sleep
+			r(338190),	-- Potion of Hibernal Rest
+			r(338192),	-- Powdered Dreamroot
+			r(338196),	-- Pulverized Breezebloom
+			r(338203),	-- Refined Submission
+		})),
+		cat(1300, {	-- Transmutation
+			r(307143),	-- Shadestone
+			r(307142),	-- Shadowghast Ingot
+			r(307144, {["timeline"] = { "added 9.1.0" }}),	-- Stones to Ore
+		}),
+		cat(1301, { -- Trinkets
+			r(307200),	-- Spiritual Alchemy Stone
+		}),
+		cat(1302, {	-- Utility Potions
+			r(295084),	-- Potion of Shaded Sight
+			r(256134),	-- Potion of Soul Purity
+			r(256133),	-- Potion of Specter Swiftness
+			r(261424),	-- Potion of the Hidden Spirit
+			r(344316),	-- Potion of the Psychopomp's Speed
+			r(342887),	-- Potion of Unhindered Passing
+		}),
+		cat(1517, {	-- Other
+			r(334413),	-- Red Noggin Candle
+		}),
+	}))),
+})));

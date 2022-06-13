@@ -647,7 +647,6 @@ select(2, ...).CategoryNames = {
 	[1289] = "Mounts Equipment",
 	[1290] = "Mount Equipment",
 	[1291] = "Robots",
-	[1294] = "Shadowlands Alchemy",
 	[1295] = "Cauldrons",
 	[1296] = "Combat Potions",
 	[1297] = "Oils and Extracts",

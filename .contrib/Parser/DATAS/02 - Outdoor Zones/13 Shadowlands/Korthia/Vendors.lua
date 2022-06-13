@@ -116,7 +116,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["cost"] = { { "c", 1931, 35 } },	-- 35x Catalogued Research
 					}),
 				--	Whites
-					i(186991, {	-- Transmute: Stones to Ore
+					i(186991, {	-- Transmute: Stones to Ore (RECIPE!)
 						["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 					}),
 					i(184665, {	-- Chronicle of Lost Memories

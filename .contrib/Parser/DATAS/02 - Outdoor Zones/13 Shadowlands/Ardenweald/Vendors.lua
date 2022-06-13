@@ -36,7 +36,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
 						["cost"] = 13500000,	-- 1,350g
 					}),
-					i(183106, {	-- Recipe: Eternal Cauldron
+					i(183106, {	-- Recipe: Eternal Cauldron (RECIPE!)
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183134, {	-- Illusion: Hunt's Favor

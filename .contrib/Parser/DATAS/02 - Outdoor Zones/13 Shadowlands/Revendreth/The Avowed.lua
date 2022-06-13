@@ -253,7 +253,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								i(182890, {	-- Rapid Recitation Quill (TOY!)
 									["cost"] = { { "c", 1816, 500 } },
 								}),
-								i(182660, {	-- Recipe: Shadestone
+								i(182660, {	-- Recipe: Shadestone (RECIPE!)
 									["cost"] = { { "c", 1816, 35 } },
 								}),
 								i(184219, {	-- Treatise on Sinstone Fragment Acquisition
@@ -287,7 +287,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 										}),
 									},
 								}),
-								i(180780, {	-- Recipe: Red Noggin Candle
+								i(180780, {	-- Recipe: Red Noggin Candle (RECIPE!)
 									["cost"] = { { "c", 1820, 10 } },	-- 10x Infused Ruby
 								}),
 							},

@@ -3225,8 +3225,8 @@ root("HiddenQuestTriggers", {
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
 		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(36145, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
 		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
 		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
 		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth

@@ -20,18 +20,146 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+-----------------
+-- PATCH 6.0.1 --	- NOT DONE -Darkal
+-----------------
+i(0, 168042);		-- Alchemical Catalyst
+i(0, 175865);		-- Draenic Invisibility Potion
+i(0, 175867);		-- Draenic Living Action Potion
+i(0, 175853);		-- Draenic Swiftness Potion
+i(0, 175866);		-- Draenic Water Breathing Elixir
+i(0, 175869);		-- Draenic Water Walking Elixir
+i(0, 175868);		-- Pure Rage Potion
+i(120132, 175880);	-- Secrets of Draenor Alchemy
+i(0, 162403);		-- Transmorphic Tincture
 
 -----------------
--- PATCH 8.0.1 --
+-- PATCH 6.0.3 --	- NOT DONE -Darkal
 -----------------
+i(0, 181650);		-- Stone of Fire
+i(0, 181648);		-- Stone of the Earth
+i(0, 181649);		-- Stone of the Waters
+i(0, 181647);		-- Stone of Wind
+i(0, 181643);		-- Transmute: Savage Blood
+i(0, 181637);		-- Transmute: Sorcerous Air to Earth
+i(0, 181633);		-- Transmute: Sorcerous Air to Fire
+i(0, 181636);		-- Transmute: Sorcerous Air to Water
+i(0, 181631);		-- Transmute: Sorcerous Earth to Air
+i(0, 181632);		-- Transmute: Sorcerous Earth to Fire
+i(0, 181635);		-- Transmute: Sorcerous Earth to Water
+i(0, 181627);		-- Transmute: Sorcerous Fire to Air
+i(0, 181625);		-- Transmute: Sorcerous Fire to Earth
+i(0, 181628);		-- Transmute: Sorcerous Fire to Water
+i(0, 181630);		-- Transmute: Sorcerous Water to Air
+i(0, 181629);		-- Transmute: Sorcerous Water to Earth
+i(0, 181634);		-- Transmute: Sorcerous Water to Fire
+
+-----------------
+-- PATCH 6.2.0 --
+-----------------
+-- REMOVED --
+i(128161, 188676);	-- Elemental Distillate
+i(128160, 188674);	-- Wildswater
+
+-----------------
+-- PATCH 7.0.1 --
+-----------------
+i(0, 195095);		-- Alchemy
+i(127898, 188297);	-- Ancient Healing Potion [Rank 1]
+i(127917, 188299);	-- Ancient Healing Potion [Rank 2]
+i(127935, 188300);	-- Ancient Healing Potion [Rank 3]
+i(127899, 188301);	-- Ancient Mana Potion [Rank 1]
+i(127918, 188302);	-- Ancient Mana Potion [Rank 2]
+i(127936, 188303);	-- Ancient Mana Potion [Rank 3]
+i(127900, 188304);	-- Ancient Rejuvenation Potion [Rank 1]
+i(127919, 188305);	-- Ancient Rejuvenation Potion [Rank 2]
+i(127937, 188306);	-- Ancient Rejuvenation Potion [Rank 3]
+i(127903, 188313);	-- Avalanche Elixir [Rank 1]
+i(127922, 188314);	-- Avalanche Elixir [Rank 2]
+i(127940, 188315);	-- Avalanche Elixir [Rank 3]
+i(127901, 188307);	-- Draught of Raw Magic [Rank 1]
+i(127920, 188308);	-- Draught of Raw Magic [Rank 2]
+i(127938, 188309);	-- Draught of Raw Magic [Rank 3]
+i(127913, 188343);	-- Flask of the Countless Armies [Rank 1]
+i(127932, 188344);	-- Flask of the Countless Armies [Rank 2]
+i(127950, 188345);	-- Flask of the Countless Armies [Rank 3]
+i(127912, 188340);	-- Flask of the Seventh Demon [Rank 1]
+i(127931, 188341);	-- Flask of the Seventh Demon [Rank 2]
+i(127949, 188342);	-- Flask of the Seventh Demon [Rank 3]
+i(127914, 188346);	-- Flask of Ten Thousand Scars [Rank 1]
+i(127933, 188347);	-- Flask of Ten Thousand Scars [Rank 2]
+i(127951, 188348);	-- Flask of Ten Thousand Scars [Rank 3]
+i(127911, 188337);	-- Flask of the Whispered Pact [Rank 1]
+i(127930, 188338);	-- Flask of the Whispered Pact [Rank 2]
+i(127948, 188339);	-- Flask of the Whispered Pact [Rank 3]
+i(127906, 188322);	-- Infernal Alchemist Stone [Rank 1]
+i(127925, 188323);	-- Infernal Alchemist Stone [Rank 2]
+i(127943, 188324);	-- Infernal Alchemist Stone [Rank 3]
+i(127910, 188334);	-- Leytorrent Potion [Rank 1]
+i(127929, 188335);	-- Leytorrent Potion [Rank 2]
+i(127947, 188336);	-- Leytorrent Potion [Rank 3]
+i(127907, 188325);	-- Potion of Deadly Grace [Rank 1]
+i(127926, 188326);	-- Potion of Deadly Grace [Rank 2]
+i(127944, 188327);	-- Potion of Deadly Grace [Rank 3]
+i(127908, 188328);	-- Potion of the Old War [Rank 1]
+i(127927, 188329);	-- Potion of the Old War [Rank 2]
+i(127945, 188330);	-- Potion of the Old War [Rank 3]
+i(127904, 188316);	-- Skaggldrynk [Rank 1]
+i(127923, 188317);	-- Skaggldrynk [Rank 2]
+i(127941, 188318);	-- Skaggldrynk [Rank 3]
+i(127905, 188319);	-- Skystep Potion [Rank 1]
+i(127924, 188320);	-- Skystep Potion [Rank 2]
+i(127942, 188321);	-- Skystep Potion [Rank 3]
+i(127915, 188349);	-- Spirit Cauldron [Rank 1]
+i(127934, 188350);	-- Spirit Cauldron [Rank 2]
+i(127952, 188351);	-- Spirit Cauldron [Rank 3]
+i(127902, 188310);	-- Sylvan Elixir [Rank 1]
+i(127921, 188311);	-- Sylvan Elixir [Rank 2]
+i(127939, 188312);	-- Sylvan Elixir [Rank 3]
+i(127909, 188331);	-- Unbending Potion [Rank 1]
+i(127928, 188332);	-- Unbending Potion [Rank 2]
+i(127946, 188333);	-- Unbending Potion [Rank 3]
+i(128209, 188800);	-- Wild Transmutation [Rank 1]
+i(128210, 188801);	-- Wild Transmutation [Rank 2]
+i(128211, 188802);	-- Wild Transmutation [Rank 3]
+
+-----------------
+-- PATCH 7.0.3 --
+-----------------
+i(0, 213257);		-- Transmute: Blood of Sargeras
+i(0, 213252);		-- Transmute: Cloth to Herbs
+i(0, 213249);		-- Transmute: Cloth to Skins
+i(0, 213254);		-- Transmute: Fish to Gems
+i(0, 213255);		-- Transmute: Meat to Pants
+i(0, 213256);		-- Transmute: Meat to Pet
+i(0, 213248);		-- Transmute: Ore to Cloth
+i(0, 213251);		-- Transmute: Ore to Herbs
+i(0, 213253);		-- Transmute: Skins to Herbs
+i(0, 213250);		-- Transmute: Skins to Ore
+i(142119, 229217);	-- Potion of Prolonged Power [Rank 1]
+i(142120, 229218);	-- Potion of Prolonged Power [Rank 2]
+i(142121, 229220);	-- Potion of Prolonged Power [Rank 3]
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+i(151706, 247694);	-- Astral Alchemist Stone [Rank 1]
+i(151707, 247695);	-- Astral Alchemist Stone [Rank 2]
+i(151708, 247696);	-- Astral Alchemist Stone [Rank 3]
+i(152616, 251646);	-- Astral Healing Potion [Rank 1]
+i(152617, 251651);	-- Astral Healing Potion [Rank 2]
+i(152618, 251658);	-- Astral Healing Potion [Rank 3]
+i(151657, 247619);	-- Lightblood Elixir [Rank 1]
+i(151658, 247620);	-- Lightblood Elixir [Rank 2]
+i(151659, 247622);	-- Lightblood Elixir [Rank 3]
+i(151703, 247688);	-- Tears of the Naaru [Rank 1]
+i(151704, 247690);	-- Tears of the Naaru [Rank 2]
+i(151705, 247691);	-- Tears of the Naaru [Rank 3]
+i(151710, 247701);	-- Transmute: Primal Sargerite
 -- NYI --
-i(0, 251824);		-- REUSE ME - SCS
-i(0, 252365);		-- Unknown
-i(0, 252366);		-- Unknown
-i(0, 252367);		-- Unknown
-i(0, 252373);		-- Unknown
-i(0, 252374);		-- Unknown
-i(0, 252375);		-- Unknown
+i(0, 251660);		-- Unknown
+i(0, 251661);		-- Unknown
+i(0, 251662);		-- Unknown
 
 -----------------
 -- PATCH 8.0.1 --
@@ -249,7 +377,7 @@ i(169601, 298740);	-- Recipe: Potion of Reconstitution [Rank 3]
 -----------------
 -- PATCH 8.3.0 --
 -----------------
-i(0, 307172);		-- Void Focus  (Multiple Recipes from this itemID:171312 depending on profession)
+i(0, 307172);		-- Void Focus (Multiple Recipes from this itemID:171312 depending on profession)
 i(171086, 305993);	-- Awakened Alchemist Stone
 i(171084, 305992);	-- Peerless Alchemist Stone
 i(171318, 305994);	-- Unbound Alchemist Stone
@@ -261,8 +389,6 @@ i(0, 338204);		-- Bramblethorn Juice
 i(0, 338199);		-- Brutal Oil
 i(0, 343679);		-- Crafter's Mark I
 i(0, 343678);		-- Crafter's Mark II (Multiple Recipes from this itemID:183870 depending on profession)
-i(0, 343677);		-- Crafter's Mark III (Multiple Recipes from this itemID:186598 depending on profession)
-i(0, 343676);		-- Crafter's Mark of the Chained Isle (Multiple Recipes from this itemID:186470 depending on profession)
 i(0, 338200);		-- Crushed Bones
 i(0, 338195);		-- Distilled Resolve
 i(0, 338198);		-- Draught of Grotesque Strength
@@ -311,7 +437,6 @@ i(0, 261423);		-- Spiritual Rejuvenation Potion
 i(183106, 307087);	-- Eternal Cauldron
 i(180780, 334413);	-- Red Noggin Candle
 i(182660, 307143);	-- Shadestone
-i(186991, 307144);	-- Stones to Ore
 -- NYI --
 i(0, 307106);		-- 9.0 Alchemy - Modified Crafting Reagent 02
 i(0, 307107);		-- 9.0 Alchemy - Modified Crafting Reagent 03
@@ -322,18 +447,27 @@ i(0, 307147);		-- 9.0 Transmute: 06
 i(0, 307148);		-- 9.0 Transmute: 07
 i(0, 307149);		-- 9.0 Transmute: 08
 i(0, 307105);		-- Alchemist's Pouch
+-- #if BEFORE 9.1.0
+i(0, 343677);		-- Crafter's Mark III
+i(0, 343676);		-- Crafter's Mark of the Chained Isle
+i(0, 307144);		-- Stones to Ore
+-- #endif
 i(0, 307109);		-- Unknown
 i(0, 307110);		-- Unknown
 i(0, 307111);		-- Unknown
 i(0, 307112);		-- Unknown
 i(183868, 0);		-- [DNT][REUSE ME] Recipe: Crafter's Mark III
 i(182665, 0);		-- Recipe: Sins to Virtue
+
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+i(0, 343677);		-- Crafter's Mark III (Multiple Recipes from this itemID:186598 depending on profession)
+i(0, 343676);		-- Crafter's Mark of the Chained Isle (Multiple Recipes from this itemID:186470 depending on profession)
 i(186990, 354885);	-- Blossom Burst
 i(186988, 354881);	-- Glory Burst
 i(186989, 354880);	-- Marrow Burst
+i(186991, 307144);	-- Stones to Ore
 i(186987, 354884);	-- Torch Burst
 i(186986, 354882);	-- Widow Burst
 -- NYI --
@@ -343,7 +477,7 @@ i(0, 354860);		-- Unknown
 -- PATCH 9.2.0 --
 -----------------
 i(0, 359870);		-- Cosmic Healing Potion
-i(187750, 359666);	-- Crafter's Mark IV
-i(187749, 359673);	-- Crafter's Mark of the First Ones
+i(0, 359666);		-- Crafter's Mark IV (Multiple Recipes from this itemID:187750 depending on profession)
+i(0, 359673);		-- Crafter's Mark of the First Ones (Multiple Recipes from this itemID:187749 depending on profession)
 i(187828, 360014);	-- Infusion: Corpse Purification
 i(187848, 360318);	-- Sustaining Armor Polish

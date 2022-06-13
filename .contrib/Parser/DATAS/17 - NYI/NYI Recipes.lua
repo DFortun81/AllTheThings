@@ -54,6 +54,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(WOD_TIER, {
 				-- 6.0.1
 				tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+					-- Recipe items
 					i(112052),	-- Recipe: Alchemical Catalyst - Arrowbloom
 					i(112049),	-- Recipe: Alchemical Catalyst - Fireweed
 					i(112050),	-- Recipe: Alchemical Catalyst - Flytrap
@@ -64,6 +65,15 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(112032),	-- Recipe: UNUSED
 					i(113625),	-- Recipe: UNUSED
 					i(113626),	-- Recipe: UNUSED
+				})),
+			}),
+			tier(LEGION_TIER, {
+				-- 7.3.0
+				tier(LEGION_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 7.3.0"} }, {
+					-- Recipe spells
+					r(251660),	-- Unknown
+					r(251661),	-- Unknown
+					r(251662),	-- Unknown
 				})),
 			}),
 			tier(BFA_TIER, {
@@ -78,6 +88,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					r(252374),	--
 					r(252375),	--
 				})),
+				
 				-- 8.2.0
 				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 					-- Recipe items
