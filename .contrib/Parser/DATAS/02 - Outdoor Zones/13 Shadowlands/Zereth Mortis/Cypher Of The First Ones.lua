@@ -515,6 +515,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 								["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
 							}),
 							i(187728, {	-- Ephemera Strand
+								["description"] = "Unique (30)",
+						}),
+							i(187728, {	-- Ephemera Strand
 								i(187787, {	-- Ephemera Orb
 									i(187890),	-- Anima-charged Yolk
 									i(187735),	-- Geordy (PET!)
