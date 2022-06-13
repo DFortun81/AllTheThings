@@ -82,6 +82,9 @@ settings.AUDIO_RAREFIND_TABLE = {
 settings.AUDIO_REMOVE_TABLE = {
 	app.asset("remove1.ogg"),
 };
+settings.AUDIO_REPORT_TABLE = {
+	app.asset("report1.ogg"),
+};
 
 -- Settings Class
 local GeneralSettingsBase = {

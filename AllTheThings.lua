@@ -1320,6 +1320,11 @@ function app:PlayRemoveSound()
 		app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
 	end
 end
+function app:PlayReportSound()
+	if app.Settings:GetTooltipSetting("Warn:Removed") or app.Settings:GetTooltipSetting("Celebrate") then
+		app:PlayAudio(app.Settings.AUDIO_REPORT_TABLE, "Report");
+	end
+end
 function app:PlayAudio(targetAudio, delay)
 	if targetAudio and type(targetAudio) == "table" then
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
@@ -2393,10 +2398,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		and app.ItemIsInGame(questRef)) then
 
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
-			if app.Settings:GetTooltipSetting("Warn:Removed")
-			or app.Settings:GetTooltipSetting("Celebrate") then
-				app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-			end
+			app:PlayReportSound();
 
 			local popupID = "quest-filter-" .. id;
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
@@ -2427,10 +2429,7 @@ local PrintQuestInfo = function(questID, new, info)
 		local chatMsg;
 		if not questRef or GetRelativeField(questRef, "text", L["UNSORTED_1"]) then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
-			if app.Settings:GetTooltipSetting("Warn:Removed")
-			or app.Settings:GetTooltipSetting("Celebrate") then
-				app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-			end
+			app:PlayReportSound();
 			-- Linkify the output
 			local popupID = "quest-" .. questID .. questChange;
 			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID);
@@ -2441,10 +2440,7 @@ local PrintQuestInfo = function(questID, new, info)
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
 			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				if app.Settings:GetTooltipSetting("Warn:Removed")
-				or app.Settings:GetTooltipSetting("Celebrate") then
-					app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-				end
+				app:PlayReportSound();
 				-- Linkify the output
 				local popupID = "quest-" .. questID .. questChange;
 				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID);
@@ -14222,13 +14218,11 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
+
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				if app.Settings:GetTooltipSetting("Warn:Removed")
-				or app.Settings:GetTooltipSetting("Celebrate") then
-					app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE, "Removed");
-				end
+				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
 			Callback(app.TakeScreenShot);
@@ -14273,8 +14267,11 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
-				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"],
-					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+
+				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+
+				-- Play a sound when a reportable error is found, if any sound setting is enabled
+				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
 			Callback(app.TakeScreenShot);
