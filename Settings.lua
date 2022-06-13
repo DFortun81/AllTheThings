@@ -1101,16 +1101,13 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
 		app.ItemSourceFilter = app.FilterItemSource;
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
-		app.ActiveItemRemovalHelper = app.CompletionistItemRemovalHelper;
 	else
 		if self:Get("MainOnly") and not self:Get("AccountMode") and not self:Get("DebugMode") then
 			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain;
 			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelperOnlyMain;
 		else
 			app.ItemSourceFilter = app.FilterItemSourceUnique;
 			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper;
-			app.ActiveItemRemovalHelper = app.UniqueModeItemRemovalHelper;
 		end
 	end
 	if self:Get("DebugMode") then
