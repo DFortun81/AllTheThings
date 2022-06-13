@@ -6382,8 +6382,6 @@ local function PopulateQuestObject(questObject)
 	local questID = questObject.questID;
 	-- Check for a Task-specific icon
 	local info = C_QuestLog.GetQuestTagInfo(questID);
-	-- Tell the server to populate this quest for the Client
-	C_QuestLog.RequestLoadQuestByID(questID);
 	-- TODO: eventually handle the reward population async via QUEST_DATA_LOAD_RESULT event trigger somehow
 
 	-- if info then
@@ -6442,6 +6440,7 @@ local function PopulateQuestObject(questObject)
 			questObject.repeatable = true;
 	end
 
+	-- Try populating quest rewards
 	app.TryPopulateQuestRewards(questObject);
 end
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
@@ -7555,69 +7554,155 @@ end)();
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
 (function()
-local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo =
-	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo;
+local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData =
+	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData;
 local IsSpellKnown,GetSpellInfo,math_floor =
 	  IsSpellKnown,GetSpellInfo,math.floor;
 
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
-local questRetries = {};
 local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if id then
 		local title = QuestUtils_GetQuestName(id);
 		if title and title ~= "" then
-			-- print("QuestUtils_GetQuestName",id,title)
-			rawset(questRetries, id, nil);
 			rawset(t, id, title);
 			return title
 		end
 
-		C_QuestLog_RequestLoadQuestByID(id);
-		QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-		QuestHarvester:SetHyperlink("quest:"..id);
-		title = AllTheThingsQuestHarvesterTextLeft1:GetText();
-		-- QuestHarvester:SetHyperlink("\124cffaaaaaa\124Hquest:".. id.."\124h[QUEST:".. id .. "]\124h\124r");
-		--	local title = AllTheThingsQuestHarvesterTextLeft1:GetText() or C_QuestLog.GetQuestInfo(id);
-		QuestHarvester:Hide()
-		if title and title ~= RETRIEVING_DATA then
-			-- working Quest Link Example from Wowhead
-			-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffffff00\124Hquest:48615:110\124h[War Never Changes]\124h\124r");
-			-- /script DEFAULT_CHAT_FRAME:AddMessage("\124cffff0000\124Hquest:48615\124h[VisibleText]\124h\124r");
-			-- QuestHarvester:SetHyperlink("\124cffffff00\124Hquest:".. id .."\124h[".. title .. "]\124h\124r");
-			rawset(questRetries, id, nil);
-			rawset(t, id, title);
-			return title
-		else
-			local retries = rawget(questRetries, id);
-			if retries and retries > 120 then
-				title = "Quest #" .. id .. "*";
-				rawset(questRetries, id, nil);
-				rawset(t, id, title);
-				return title;
-			else
-				rawset(questRetries, id, (retries or 0) + 1);
-			end
-			return RETRIEVING_DATA;
-		end
+		app.RequestLoadQuestByID(id);
+		return RETRIEVING_DATA;
 	end
 end});
+local QuestsRequested = {};
+local QuestsRequestQueue = {};
+local QuestsToPopulate = {};
+-- temp
+app.QuestsRequested = QuestsRequested;
+app.QuestsRequestQueue = QuestsRequestQueue;
+app.QuestsToPopulate = QuestsToPopulate;
+-- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
-	if success then
-		local title = QuestUtils_GetQuestName(questID);
-		if title and title ~= "" then
-			-- app.PrintDebug("Available QuestData",questID,title)
-			rawset(questRetries, questID, nil);
-			rawset(QuestTitleFromID, questID, title);
+	-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
+	QuestsRequested[questID] = nil;
+	-- Store the Quest title
+	if not rawget(QuestTitleFromID, questID) then
+		if success then
+			local title = QuestUtils_GetQuestName(questID);
+			if title and title ~= "" then
+				-- app.PrintDebug("Available QuestData",questID,title)
+				-- rawset(questRetries, questID, nil);
+				rawset(QuestTitleFromID, questID, title);
+				-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+				app:RefreshWindows();
+			end
+		else
+			-- this quest name cannot be populated by the server
+			-- app.PrintDebug("No Server QuestData",questID)
+			-- rawset(questRetries, questID, nil);
+			rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
 		end
-		-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
-		app:RefreshWindows();
-	else
-		-- this quest name cannot be populated by the server
-		-- app.PrintDebug("No Server QuestData",questID)
-		rawset(questRetries, questID, nil);
-		rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
 	end
+	-- see if this Quest is awaiting Reward population & Updates
+	local data = QuestsToPopulate[questID];
+	if data then
+		QuestsToPopulate[questID] = nil;
+		local retries = data.retries or 1;
+		-- app.PrintDebug("Populate QuestData",questID,data.retries,data)
+		-- app.PrintTable(data)
+		app.TryPopulateQuestRewards(data, retries > 10);
+		data.retries = retries + 1;
+		-- app.PrintDebug("Populated QuestData",questID)
+	end
+end
+-- Used as a callback to process Requested Quests, since we may need the frame to complete so that the initial quest groups are built properly
+-- prior to attempting to pass them updates
+local function CoroutineProcessRequestedQuests()
+	-- app.PrintDebug("CoroutineProcessRequestedQuests")
+	local perFrameThrottle = 0;
+	local i = 1;
+	local questID = QuestsRequestQueue[i];
+	while questID do
+		-- app.PrintDebug("Queue#",i,questID)
+		perFrameThrottle = perFrameThrottle + 1;
+		i = i + 1;
+		C_QuestLog_RequestLoadQuestByID(questID);
+		-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
+		if perFrameThrottle >= 25 then
+			perFrameThrottle = 0;
+			-- app.PrintDebug("Yield!")
+			coroutine.yield();
+		end
+		-- grab next quest from the queue
+		questID = QuestsRequestQueue[i];
+	end
+	-- reached the end of the queue
+	-- clear the queue
+	wipe(QuestsRequestQueue);
+	-- check if any quest requests were never received
+	-- local data;
+	-- for questID,waiting in pairs(QuestsRequested) do
+	-- 	if waiting then
+	-- 		app.PrintDebug("Never Received",questID)
+	-- 		-- force populate this quest since no API data received
+	-- 		-- see if this Quest is awaiting Reward population & Updates
+	-- 		data = QuestsToPopulate[questID];
+	-- 		if data then
+	-- 			QuestsToPopulate[questID] = nil;
+	-- 			app.PrintDebug("Force Populate QuestData",questID,data)
+	-- 			app.TryPopulateQuestRewards(data, true);
+	-- 		end
+	-- 	end
+	-- end
+	-- -- wipe the Quests Requested
+	-- wipe(QuestsRequested);
+	-- for questID,_ in pairs(QuestsRequested) do
+	-- 	-- app.PrintDebug("C_QuestLog_RequestLoadQuestByID",questID)
+	-- 	perFrameThrottle = perFrameThrottle + 1;
+	-- 	C_QuestLog_RequestLoadQuestByID(questID);
+	-- 	-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
+	-- 	if perFrameThrottle >= 50 then
+	-- 		app.PrintDebug("Yield!")
+	-- 		coroutine.yield();
+	-- 		perFrameThrottle = 0;
+	-- 	end
+	-- end
+	-- app.PrintDebug("CoroutineProcessRequestedQuests:Done")
+end
+-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
+-- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
+app.RequestLoadQuestByID = function(questID, data)
+	-- app.PrintTable(data)
+	-- only allow requests once per frame until received
+	if not QuestsRequested[questID] then
+		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
+		QuestsRequested[questID] = true;
+		QuestsToPopulate[questID] = data;
+		tinsert(QuestsRequestQueue, questID);
+		-- callback to process all requested quests next frame
+		StartCoroutine("CoroutineProcessRequestedQuests", CoroutineProcessRequestedQuests);
+	end
+	-- allow the request always if it's being used to fill data afterward so that logic always happens in the expected order
+	-- if data then
+		-- only need to call if we don't already have quest data
+		-- if HaveQuestData(questID) then
+		-- 	app.PrintDebug("HaveQuestData",questID)
+
+		-- else
+		-- 	app.PrintDebug("C_QuestLog_RequestLoadQuestByID",questID)
+		-- 	C_QuestLog_RequestLoadQuestByID(questID);
+		-- 	return true;
+		-- end
+	-- end
+	-- otherwise only make a new request if it is not already pending or completed
+	-- local pending = QuestsRequested[questID];
+	-- if pending ~= nil then
+	-- 	app.PrintDebug("Already",pending and "Requested" or "Completed",questID)
+	-- 	return true;
+	-- else
+	-- 	QuestsRequested[questID] = true;
+	-- 	C_QuestLog_RequestLoadQuestByID(questID);
+	-- 	return true;
+	-- end
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
@@ -7949,33 +8034,41 @@ local WorldQuestCurrencyItems = {
 	[163036] = true,	-- Polished Pet Charms
 	[116415] = true,	-- Shiny Pet Charms
 };
--- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 15 rendered frames)
-app.TryPopulateQuestRewards = function(questObject)
+-- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded. Can specify 'force' to skip attempting API population
+app.TryPopulateQuestRewards = function(questObject, force)
 	if not questObject or not questObject.questID then return; end
-	if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
+	-- if we've already requested data for this quest, then ignore making another request
+	if not force and not HaveQuestRewardData(questObject.questID) then
+		app.RequestLoadQuestByID(questObject.questID, questObject);
+		return;
+	end
+	-- if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
 
 	-- track how many attempts for retrieving reward data for both types (15 frames)
-	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
-	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
+	-- questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
+	-- questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
 
 	-- all sub-group data will be populated via this method, so any pre-existing stuff should be cleaned out on the initial setup
-	if questObject.missingItem == 15 and questObject.missingCurr == 15 then
-		questObject.g = nil;
-	end
+	-- if questObject.missingItem == 15 and questObject.missingCurr == 15 then
+		-- questObject.g = nil;
+	-- end
 
 	-- app.DEBUG_PRINT = questObject.questID == 61949 and 61949;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
-	-- print("TryPopulateQuestRewards",questObject.questID,questObject.missingItem,questObject.missingCurr)
-	if questObject.missingItem > 0 then
+	if not HaveQuestRewardData(questObject.questID) then
+		app.PrintDebug("TPQR",questObject.questID,"Data",HaveQuestData(questObject.questID),"RewardData",HaveQuestRewardData(questObject.questID),GetNumQuestLogRewards(questObject.questID),GetNumQuestLogRewardCurrencies(questObject.questID))
+	end
+	-- if questObject.missingItem > 0 then
 		-- Get reward info
 		local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
 		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 		-- numQuestRewards will often be 0 for fresh questID API calls...
 		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		GetQuestLogRewardInfo(1, questObject.questID);
+		-- GetQuestLogRewardInfo(1, questObject.questID);
 		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
 		for j=1,numQuestRewards,1 do
-			local _, _, _, _, _, itemID = GetQuestLogRewardInfo(j, questObject.questID);
+			-- app.PrintDebug("TPQR:REWARDINFO",questObject.questID,j,HaveQuestData(questObject.questID),GetQuestLogRewardInfo(j, questObject.questID))
+			local itemID = select(6, GetQuestLogRewardInfo(j, questObject.questID));
 			if itemID then
 				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
 
@@ -8031,7 +8124,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						end
 
 						-- at least one reward exists, so clear the missing data
-						questObject.missingItem = 0;
+						-- questObject.missingItem = 0;
 						-- don't let cached groups pollute potentially inaccurate raw Data
 						item.link = nil;
 						-- if app.DEBUG_PRINT then print("Final Item") app.PrintTable(item) end
@@ -8041,14 +8134,14 @@ app.TryPopulateQuestRewards = function(questObject)
 				end
 			end
 		end
-	end
+	-- end
 
 	-- Add info for currency rewards as containers for their respective collectibles
-	if questObject.missingCurr > 0 then
+	-- if questObject.missingCurr > 0 then
 		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
 		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
 		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		GetQuestLogRewardCurrencyInfo(1, questObject.questID);
+		-- GetQuestLogRewardCurrencyInfo(1, questObject.questID);
 		-- numCurrencies will often be 0 for fresh questID API calls...
 		local currencyID;
 		for j=1,numCurrencies,1 do
@@ -8074,17 +8167,25 @@ app.TryPopulateQuestRewards = function(questObject)
 						end
 					end
 				end
-				questObject.missingCurr = 0;
+				-- questObject.missingCurr = 0;
 				NestObject(questObject, item, true);
 			end
 		end
-	end
+	-- end
+
+	-- we already have the API data, so stop refreshing this quest
+	-- if HaveQuestData(questObject.questID) then
+	-- 	questObject.missingItem = 0;
+	-- 	questObject.missingCurr = 0;
+	-- end
 
 	-- done attempting to populate the quest object
-	if questObject.missingItem < 1 and questObject.missingCurr < 1 then
-		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:populated",questObject.questID) end
-		questObject.OnUpdate = nil;
-		questObject.doUpdate = true;
+	-- if questObject.missingItem < 1 and questObject.missingCurr < 1 then
+		-- app.PrintDebug("TPQR:populated",questObject.questID,questObject.g and #questObject.g,HaveQuestData(questObject.questID))
+		-- questObject.OnUpdate = nil;
+		-- questObject.doUpdate = true;
+		-- questObject.missingItem = nil;
+		-- questObject.missingCurr = nil;
 
 		-- Troublesome scenarios to test when changing this logic:
 		-- BFA emissaries
@@ -8182,10 +8283,11 @@ app.TryPopulateQuestRewards = function(questObject)
 			end
 		end
 		BuildGroups(questObject, questObject.g);
-	else
+		app.DirectGroupUpdate(questObject);
+	-- else
 		-- print("set questObject.doUpdate",questObject.questID)
-		questObject.doUpdate = true;
-	end
+		-- questObject.doUpdate = true;
+	-- end
 
 	-- app.DEBUG_PRINT = nil;
 end
@@ -14113,24 +14215,8 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		AdjustParentProgress(parent, progChange, totalChange);
 	end
 end
-local function UpdateParentProgress(group, change)
-	change = change or 1;
-	group.progress = group.progress + change;
-	-- print("new progress",group.progress,group.total,group.text)
-
-	-- Continue on to this object's parent
-	if group.parent and group.visible then
-		-- print("visible",group.text)
-		-- If this is a collected collectible, update the parent.
-		UpdateParentProgress(group.parent, change);
-		-- Set visibility for this group as well
-		SetGroupVisibility(group.parent, group);
-		-- print("visible?",group.visible,group.text)
-	end
-end
 app.UpdateGroup = UpdateGroup;
 app.UpdateGroups = UpdateGroups;
-app.UpdateParentProgress = UpdateParentProgress;
 app.SetThingVisibility = SetThingVisibility;
 app.SetGroupVisibility = SetGroupVisibility;
 -- For directly applying the full Update operation for the top-level data group within a window
@@ -15034,6 +15120,8 @@ function app:CreateMiniListForGroup(group)
 			self:RegisterEvent("QUEST_TURNED_IN");
 			self:RegisterEvent("QUEST_ACCEPTED");
 			self:RegisterEvent("QUEST_REMOVED");
+			-- Populate the Quest Rewards
+			app.TryPopulateQuestRewards(group)
 		end
 	end
 	popout:Toggle(true);
@@ -20951,12 +21039,13 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								-- or if it has time remaining
 								(questObject.timeRemaining or 0 > 0) then
 								-- if mapID == 1355 then
-								-- 	print("WQ",questObject.questID,questObject.parent);
+									-- app.PrintDebug("WQ",questObject.questID);
 								-- end
 								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
 								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
+						-- else app.PrintDebug("Skipped WQ",mapID,poi.mapID,poi.questId)
 						end
 					end
 				end
@@ -21202,15 +21291,17 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						end
 						NestObject(groupFinder, header);
 					end
-					tinsert(temp, groupFinder);
+					tinsert(temp, CreateObject(groupFinder));
 				end
 
 				-- put all the things into the window data, turning them into objects as well
-				NestObjects(self.data, temp, true);
+				-- NestObjects(self.data, temp, true);
+				NestObjects(self.data, temp);
 				-- Build the heirarchy
 				self:BuildData();
 				-- Force Update Callback
-				Callback(self.Update, self, true);
+				-- Callback(self.Update, self, true);
+				self:Update(true);
 			end
 		end
 
