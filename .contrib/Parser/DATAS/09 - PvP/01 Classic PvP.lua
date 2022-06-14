@@ -18,11 +18,14 @@ local function MarkOfWHOOOWHATNow(t)
 		end
 	end
 	-- #endif
+	-- #if NOT ANYCLASSIC
+	if t.itemID then t.u = ELITE_PVP_REQUIREMENT; end
+	-- #endif
 	return t;
 end
 root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 	["description"] = "In order to collect these, you need to have the original title associated with the gear.",
-	["groups"] = bubbleDown({ ["u"] = ELITE_PVP_REQUIREMENT },{
+	["groups"] = {
 		n(FACTION_HEADER_ALLIANCE, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -662,7 +665,7 @@ root("PVP", run(MarkOfWHOOOWHATNow, pvp(tier(CLASSIC_TIER, {
 				i(18427),	-- Sergeant's Cloak
 			},
 		}),
-	}),
+	},
 }))));
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

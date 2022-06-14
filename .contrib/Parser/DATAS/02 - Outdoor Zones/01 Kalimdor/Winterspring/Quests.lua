@@ -85,10 +85,6 @@ _.Zones =
 					["coord"] = { 59.7, 49.6, WINTERSPRING },
 					["sourceQuest"] = 28610,	-- Rubble Trouble
 				}),
-				q(4726,  {	-- Broodling Essence
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
-				}),
 				q(5055,  {	-- Brumeran of the Chillwind
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10303 },	-- Storm Shadowhoof
@@ -187,11 +183,6 @@ _.Zones =
 				q(28464, {	-- Falling to Corruption
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["coord"] = { 25.1, 58.4, WINTERSPRING },
-				}),
-				q(4808,  {	-- Felnok Steelspring
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
-					["sourceQuest"] = 4726,	-- Broodling Essence
 				}),
 				q(28632, {	-- Fresh From The Hills
 					["provider"] = { "n", 48965 },	-- Deez Rocksnitch

@@ -483,8 +483,6 @@ q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre'
 q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3789),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3790),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3823),	-- Extinguish the Firegut,		TBC: Extinguish the Firegut,		CLASSIC: Extinguish the Firegut
-q(3824),	-- Gor'tesh the Brute Lord,		TBC: Gor'tesh the Brute Lord,		CLASSIC: Gor'tesh the Brute Lord
 q(3841),	-- An Orphan Looking For a Home,		TBC: An Orphan Looking For a Home,		CLASSIC: An Orphan Looking For a Home
 q(3842),	-- A Short Incubation,		TBC: A Short Incubation,		CLASSIC: A Short Incubation
 q(3843),	-- The Newest Member of the Family,		TBC: The Newest Member of the Family,		CLASSIC: The Newest Member of the Family
@@ -503,7 +501,6 @@ q(4142),	-- A Visit to Gregan,		TBC: A Visit to Gregan,		CLASSIC: A Visit to Gre
 q(4144),	-- Bloodpetal Sprouts,		TBC: Bloodpetal Sprouts,		CLASSIC: Bloodpetal Sprouts
 q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from the Hive
 q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
-q(4283),	-- FIFTY! YEP!,		TBC: FIFTY! YEP!,		CLASSIC: FIFTY! YEP!
 q(4297),	-- Food for Baby,		TBC: Food for Baby,		CLASSIC: Food for Baby
 q(4298),	-- Becoming a Parent,		TBC: Becoming a Parent,		CLASSIC: Becoming a Parent
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
@@ -763,20 +760,11 @@ q(7487),	-- Attunement to the Core,		TBC: Attunement to the Core,		CLASSIC: Attu
 q(7521),	-- Thunderaan the Windseeker,		CLASSIC: Thunderaan the Windseeker
 q(7522),	-- Examine the Vessel,		CLASSIC: Examine the Vessel
 q(7561),	-- Rise, Thunderfury!,		CLASSIC: Rise, Thunderfury!
-q(7562),	-- Mor'zul Bloodbringer,		TBC: Mor'zul Bloodbringer,		CLASSIC: Mor'zul Bloodbringer
-q(7563),	-- Rage of Blood,		TBC: Rage of Blood,		CLASSIC: Rage of Blood
-q(7564),	-- Wildeyes,		TBC: Wildeyes,		CLASSIC: Wildeyes
 q(7601),	-- What Niby Commands,		TBC: What Niby Commands,		CLASSIC: What Niby Commands
 q(7602),	-- Flawless Fel Essence,		TBC: Flawless Fel Essence,		CLASSIC: Flawless Fel Essence
 q(7621),	-- A Warning,		TBC: A Warning,		CLASSIC: A Warning
-q(7623),	-- Lord Banehollow,		TBC: Lord Banehollow,		CLASSIC: Lord Banehollow
 q(7624),	-- Ulathek the Traitor,		TBC: Ulathek the Traitor,		CLASSIC: Ulathek the Traitor
 q(7625),	-- Xorothian Stardust,		TBC: Xorothian Stardust,		CLASSIC: Xorothian Stardust
-q(7626),	-- Bell of Dethmoora,		TBC: Bell of Dethmoora,		CLASSIC: Bell of Dethmoora
-q(7627),	-- Wheel of the Black March,		TBC: Wheel of the Black March,		CLASSIC: Wheel of the Black March
-q(7628),	-- Doomsday Candle,		TBC: Doomsday Candle,		CLASSIC: Doomsday Candle
-q(7629),	-- Imp Delivery,		TBC: Imp Delivery,		CLASSIC: Imp Delivery
-q(7630),	-- Arcanite,		TBC: Arcanite,		CLASSIC: Arcanite
 q(7637),	-- Emphasis on Sacrifice,		TBC: Emphasis on Sacrifice,		CLASSIC: Emphasis on Sacrifice
 q(7638),	-- Lord Grayson Shadowbreaker,		TBC: Lord Grayson Shadowbreaker,		CLASSIC: Lord Grayson Shadowbreaker
 q(7639),	-- To Show Due Judgment,		TBC: To Show Due Judgment,		CLASSIC: To Show Due Judgment

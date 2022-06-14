@@ -665,11 +665,17 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
 					["coord"] = { 3.02, 47.81, BADLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { BLASTED_LANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/10 Fractured Elemental Shard
 							["provider"] = { "i", 11266 },	-- Fractured Elemental Shard
+							["crs"] = {
+								7032,	-- Greater Obsidian Elemental
+								8981,	-- Malfunctioning Reaver
+								7039,	-- War Reaver
+							},
 						}),
 					},
 				}),
