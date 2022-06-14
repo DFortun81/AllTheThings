@@ -7,6 +7,23 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(RARES, {
+				n(SPECIAL, sharedData({["description"] = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."},{
+                    n(109028, { -- Horkus
+                        ["questID"] = 42825,
+                        ["coord"] = { 56.2, 59.6, AZSUNA },
+                        ["crs"] = { 109029 },    -- Horkus
+                    }),
+                }),
+                n(107657, {    -- Arcanist Shal'iman
+                    ["questID"] = 42505,
+                    ["coord"] = { 35.4, 33.8, AZSUNA },
+                    ["g"] = {
+                        crit(23, {    -- Arcanist Shal'iman
+                            ["achievementID"] = 11261,    -- Adventurer of Azsuna
+                        }),
+                        i(141868),    -- Shal'imanacles
+                    },
+                })),
 				n(107657, {	-- Arcanist Shal'iman
 					["questID"] = 42505,
 					["coord"] = { 35.4, 33.8, AZSUNA },

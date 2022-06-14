@@ -13,6 +13,16 @@ _.Zones =
 						["crs"] = { 109155 },	-- Malefica
 						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
 					}),
+				n(109059, { -- Dareer
+                        ["questID"] = 42826,
+                        ["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
+                        ["crs"] = { 109062 },    -- Dareer
+                    }),
+                    n(109159, { -- Holk the Wanderer
+                        ["questID"] = 42863,
+                        ["coord"] = { 39.6, 58.2, HIGHMOUNTAIN },
+                        ["crs"] = { 109161 },    -- Holk the Wanderer
+                    }),
 				})),
 				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
 					["description"] = "There are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest.",
