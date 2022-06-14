@@ -2145,12 +2145,20 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 					["coord"] = { 33.8, 36.4, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 				}),
 				q(38306, {	-- Mystery Notebook
 					["coord"] = { 40.9, 47.8, FROSTWALL },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 91072 },	-- Drix Bassbolter
 					["description"] = "Requires Garrison Rank 3.",
+					["timeline"] = {
+						"added 6.1.0.19480",
+						"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
+					},
 				}),
 				q(38408, {	-- New Goods
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle
