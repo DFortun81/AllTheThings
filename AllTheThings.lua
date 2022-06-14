@@ -4468,8 +4468,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
 		if method ~= app.EmptyFunction then
-			-- Append currency info to any orphan currency groups
-			app.BuildCurrencies(group);
 			-- Fill up the group
 			app.FillGroups(group);
 			-- Sort by the heirarchy of the group
@@ -5108,27 +5106,6 @@ app.BuildSourceParent = function(group)
 	end
 end
 end)();
--- check for orphaned currency groups and fill them with things purchased by that currency
-app.BuildCurrencies = function(group)
-	-- app.PrintDebug("BuildCurrencies",group.key,group[group.key])
-	if group and group.g and #group.g > 0 then
-		for i=1,#group.g do
-			local o = group.g[i];
-			if o then
-				-- this is an empty currency group
-				-- app.PrintDebug("check for currency",o.key,o[o.key])
-				if o.key and o.key == "currencyID" and (not o.g or #o.g == 0) then
-					-- app.PrintDebug("empty currency group",o.currencyID);
-					local currencyGroup = GetCachedSearchResults("currencyID:" .. tostring(o.currencyID), app.SearchForField, "currencyID", o.currencyID);
-					if currencyGroup then
-						-- app.PrintDebug("found currency",currencyGroup.currencyID,#currencyGroup.g);
-						group.g[i] = currencyGroup;
-					end
-				end
-			end
-		end
-	end
-end
 -- check if the group has a cost which includes the given parameters
 app.HasCost = function(group, idType, id)
 	if group.cost and type(group.cost) == "table" then
