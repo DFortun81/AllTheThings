@@ -7576,10 +7576,6 @@ end});
 local QuestsRequested = {};
 local QuestsRequestQueue = {};
 local QuestsToPopulate = {};
--- temp
-app.QuestsRequested = QuestsRequested;
-app.QuestsRequestQueue = QuestsRequestQueue;
-app.QuestsToPopulate = QuestsToPopulate;
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
@@ -7590,7 +7586,6 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 			local title = QuestUtils_GetQuestName(questID);
 			if title and title ~= "" then
 				-- app.PrintDebug("Available QuestData",questID,title)
-				-- rawset(questRetries, questID, nil);
 				rawset(QuestTitleFromID, questID, title);
 				-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
 				app:RefreshWindows();
@@ -7598,7 +7593,6 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		else
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
-			-- rawset(questRetries, questID, nil);
 			rawset(QuestTitleFromID, questID, "Quest #"..questID.."*");
 		end
 	end
@@ -7607,71 +7601,34 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	if data then
 		QuestsToPopulate[questID] = nil;
 		local retries = data.retries or 1;
-		-- app.PrintDebug("Populate QuestData",questID,data.retries,data)
-		-- app.PrintTable(data)
 		app.TryPopulateQuestRewards(data, retries > 10);
 		data.retries = retries + 1;
-		-- app.PrintDebug("Populated QuestData",questID)
 	end
 end
 -- Used as a callback to process Requested Quests, since we may need the frame to complete so that the initial quest groups are built properly
 -- prior to attempting to pass them updates
 local function CoroutineProcessRequestedQuests()
-	-- app.PrintDebug("CoroutineProcessRequestedQuests")
 	local perFrameThrottle = 0;
 	local i = 1;
 	local questID = QuestsRequestQueue[i];
 	while questID do
-		-- app.PrintDebug("Queue#",i,questID)
 		perFrameThrottle = perFrameThrottle + 1;
 		i = i + 1;
 		C_QuestLog_RequestLoadQuestByID(questID);
 		-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
 		if perFrameThrottle >= 25 then
 			perFrameThrottle = 0;
-			-- app.PrintDebug("Yield!")
 			coroutine.yield();
 		end
 		-- grab next quest from the queue
 		questID = QuestsRequestQueue[i];
 	end
-	-- reached the end of the queue
 	-- clear the queue
 	wipe(QuestsRequestQueue);
-	-- check if any quest requests were never received
-	-- local data;
-	-- for questID,waiting in pairs(QuestsRequested) do
-	-- 	if waiting then
-	-- 		app.PrintDebug("Never Received",questID)
-	-- 		-- force populate this quest since no API data received
-	-- 		-- see if this Quest is awaiting Reward population & Updates
-	-- 		data = QuestsToPopulate[questID];
-	-- 		if data then
-	-- 			QuestsToPopulate[questID] = nil;
-	-- 			app.PrintDebug("Force Populate QuestData",questID,data)
-	-- 			app.TryPopulateQuestRewards(data, true);
-	-- 		end
-	-- 	end
-	-- end
-	-- -- wipe the Quests Requested
-	-- wipe(QuestsRequested);
-	-- for questID,_ in pairs(QuestsRequested) do
-	-- 	-- app.PrintDebug("C_QuestLog_RequestLoadQuestByID",questID)
-	-- 	perFrameThrottle = perFrameThrottle + 1;
-	-- 	C_QuestLog_RequestLoadQuestByID(questID);
-	-- 	-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
-	-- 	if perFrameThrottle >= 50 then
-	-- 		app.PrintDebug("Yield!")
-	-- 		coroutine.yield();
-	-- 		perFrameThrottle = 0;
-	-- 	end
-	-- end
-	-- app.PrintDebug("CoroutineProcessRequestedQuests:Done")
 end
 -- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 -- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 app.RequestLoadQuestByID = function(questID, data)
-	-- app.PrintTable(data)
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
@@ -7681,28 +7638,6 @@ app.RequestLoadQuestByID = function(questID, data)
 		-- callback to process all requested quests next frame
 		StartCoroutine("CoroutineProcessRequestedQuests", CoroutineProcessRequestedQuests);
 	end
-	-- allow the request always if it's being used to fill data afterward so that logic always happens in the expected order
-	-- if data then
-		-- only need to call if we don't already have quest data
-		-- if HaveQuestData(questID) then
-		-- 	app.PrintDebug("HaveQuestData",questID)
-
-		-- else
-		-- 	app.PrintDebug("C_QuestLog_RequestLoadQuestByID",questID)
-		-- 	C_QuestLog_RequestLoadQuestByID(questID);
-		-- 	return true;
-		-- end
-	-- end
-	-- otherwise only make a new request if it is not already pending or completed
-	-- local pending = QuestsRequested[questID];
-	-- if pending ~= nil then
-	-- 	app.PrintDebug("Already",pending and "Requested" or "Completed",questID)
-	-- 	return true;
-	-- else
-	-- 	QuestsRequested[questID] = true;
-	-- 	C_QuestLog_RequestLoadQuestByID(questID);
-	-- 	return true;
-	-- end
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
 app.CollectibleAsQuest = function(t)
@@ -8036,260 +7971,181 @@ local WorldQuestCurrencyItems = {
 };
 -- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded. Can specify 'force' to skip attempting API population
 app.TryPopulateQuestRewards = function(questObject, force)
-	if not questObject or not questObject.questID then return; end
+	local questID = questObject and questObject.questID;
+	if not questID then return; end
 	-- if we've already requested data for this quest, then ignore making another request
-	if not force and not HaveQuestRewardData(questObject.questID) then
-		app.RequestLoadQuestByID(questObject.questID, questObject);
+	if not force and not HaveQuestRewardData(questID) then
+		app.RequestLoadQuestByID(questID, questObject);
 		return;
 	end
-	-- if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
 
-	-- track how many attempts for retrieving reward data for both types (15 frames)
-	-- questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 15;
-	-- questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 15;
-
-	-- all sub-group data will be populated via this method, so any pre-existing stuff should be cleaned out on the initial setup
-	-- if questObject.missingItem == 15 and questObject.missingCurr == 15 then
-		-- questObject.g = nil;
+	-- if not HaveQuestRewardData(questID) then
+	-- 	app.PrintDebug("TPQR",questID,"Data",HaveQuestData(questID),"RewardData",HaveQuestRewardData(questID),GetNumQuestLogRewards(questID),GetNumQuestLogRewardCurrencies(questID))
 	-- end
-
-	-- app.DEBUG_PRINT = questObject.questID == 61949 and 61949;
-	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
-	if not HaveQuestRewardData(questObject.questID) then
-		app.PrintDebug("TPQR",questObject.questID,"Data",HaveQuestData(questObject.questID),"RewardData",HaveQuestRewardData(questObject.questID),GetNumQuestLogRewards(questObject.questID),GetNumQuestLogRewardCurrencies(questObject.questID))
-	end
-	-- if questObject.missingItem > 0 then
-		-- Get reward info
-		local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
-		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-		-- numQuestRewards will often be 0 for fresh questID API calls...
-		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		-- GetQuestLogRewardInfo(1, questObject.questID);
-		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
-		for j=1,numQuestRewards,1 do
-			-- app.PrintDebug("TPQR:REWARDINFO",questObject.questID,j,HaveQuestData(questObject.questID),GetQuestLogRewardInfo(j, questObject.questID))
-			local itemID = select(6, GetQuestLogRewardInfo(j, questObject.questID));
-			if itemID then
-				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
-
-				QuestHarvester.AllTheThingsProcessing = true;
-				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-				local link = select(2, QuestHarvester:GetItem());
-				QuestHarvester.AllTheThingsProcessing = false;
-				QuestHarvester:Hide();
-				if link then
-					local item = {};
-					app.ImportRawLink(item, link);
-					-- if item.itemID == 137483 then
-					-- 	app.DEBUG_PRINT = item.itemID;
-					-- 	print("item.initial parse")
-					-- end
-					-- if app.DEBUG_PRINT then print("Parse Link", link) end
-					if item.itemID then
-						local search = SearchForLink(link);
-						-- search will either match through bonusID, modID, or itemID in that priority
-
-						-- put all the item information into a basic table
-						-- if app.DEBUG_PRINT then print("Base Item") app.PrintTable(item) end
-						-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
-						if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
-							item.collectibleAsCost = false;
-						end
-						if search then
-							-- if app.DEBUG_PRINT then print("Initial search",#search,link) end
-							-- find the specific item which the link represents (not sure all of this is necessary with improved search)
-							local exactItemID = GetGroupItemIDWithModID(item);
-							local subItems = {};
-							local refinedMatches = app.GroupBestMatchingItems(search, exactItemID);
-							if refinedMatches then
-								-- move from depth 3 to depth 1 to find the set of items which best matches for the root
-								for depth=3,1,-1 do
-									if refinedMatches[depth] then
-										-- if app.DEBUG_PRINT then print("refined",depth,#refinedMatches[depth]) end
-										for _,o in ipairs(refinedMatches[depth]) do
-											MergeProperties(item, o, true);
-											NestObjects(item, o.g);	-- no clone since item is cloned later
-										end
+	local numQuestRewards = GetNumQuestLogRewards(questID);
+	local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+	for j=1,numQuestRewards,1 do
+		-- app.PrintDebug("TPQR:REWARDINFO",questID,j,HaveQuestData(questID),GetQuestLogRewardInfo(j, questID))
+		local itemID = select(6, GetQuestLogRewardInfo(j, questID));
+		if itemID then
+			QuestHarvester.AllTheThingsProcessing = true;
+			QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+			QuestHarvester:SetQuestLogItem("reward", j, questID);
+			local link = select(2, QuestHarvester:GetItem());
+			QuestHarvester.AllTheThingsProcessing = false;
+			QuestHarvester:Hide();
+			if link then
+				local item = {};
+				app.ImportRawLink(item, link);
+				if item.itemID then
+					-- search will either match through bonusID, modID, or itemID in that priority
+					local search = SearchForLink(link);
+					-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
+					if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
+						item.collectibleAsCost = false;
+					end
+					if search then
+						-- find the specific item which the link represents (not sure all of this is necessary with improved search)
+						local exactItemID = GetGroupItemIDWithModID(item);
+						local subItems = {};
+						local refinedMatches = app.GroupBestMatchingItems(search, exactItemID);
+						if refinedMatches then
+							-- move from depth 3 to depth 1 to find the set of items which best matches for the root
+							for depth=3,1,-1 do
+								if refinedMatches[depth] then
+									for _,o in ipairs(refinedMatches[depth]) do
+										MergeProperties(item, o, true);
+										NestObjects(item, o.g);	-- no clone since item is cloned later
 									end
 								end
-								-- any matches with depth 0 will be nested
-								if refinedMatches[0] then
-									-- if app.DEBUG_PRINT then print("refined",0,#refinedMatches[0]) end
-									app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
-								end
 							end
-							-- then pull in any other sub-items which were not the item itself
-							NestObjects(item, subItems);	-- no clone since item is cloned later
+							-- any matches with depth 0 will be nested
+							if refinedMatches[0] then
+								app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
+							end
 						end
-
-						-- at least one reward exists, so clear the missing data
-						-- questObject.missingItem = 0;
-						-- don't let cached groups pollute potentially inaccurate raw Data
-						item.link = nil;
-						-- if app.DEBUG_PRINT then print("Final Item") app.PrintTable(item) end
-						NestObject(questObject, item, true);
+						-- then pull in any other sub-items which were not the item itself
+						NestObjects(item, subItems);	-- no clone since item is cloned later
 					end
-					-- if app.DEBUG_PRINT then app.DEBUG_PRINT = nil; end
+
+					-- don't let cached groups pollute potentially inaccurate raw Data
+					item.link = nil;
+					NestObject(questObject, item, true);
 				end
 			end
 		end
-	-- end
+	end
 
 	-- Add info for currency rewards as containers for their respective collectibles
-	-- if questObject.missingCurr > 0 then
-		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-		local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		-- GetQuestLogRewardCurrencyInfo(1, questObject.questID);
-		-- numCurrencies will often be 0 for fresh questID API calls...
-		local currencyID;
-		for j=1,numCurrencies,1 do
-			currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
-			if currencyID then
-				-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
+	local numCurrencies = GetNumQuestLogRewardCurrencies(questID);
+	local skipCollectibleCurrencies = not app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+	local currencyID, cachedCurrency;
+	for j=1,numCurrencies,1 do
+		currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questID));
+		if currencyID then
+			-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr) end
 
-				currencyID = tonumber(currencyID);
-				local item = { ["currencyID"] = currencyID };
-				-- block the group from being collectible as a cost if the option is not enabled
-				if skipCollectibleCurrencies then
-					item.collectibleAsCost = false;
-				end
-				_cache = SearchForField("currencyID", currencyID);
-				if _cache then
-					for _,data in ipairs(_cache) do
-						-- cache record is the item itself
-						if GroupMatchesParams(data, "currencyID", currencyID) then
-							MergeProperties(item, data);
-						-- cache record is associated with the item
-						else
-							NestObject(item, data);	-- no clone since item is cloned later
-						end
+			currencyID = tonumber(currencyID);
+			local item = { ["currencyID"] = currencyID };
+			-- block the group from being collectible as a cost if the option is not enabled
+			if skipCollectibleCurrencies then
+				item.collectibleAsCost = false;
+			end
+			cachedCurrency = SearchForField("currencyID", currencyID);
+			if cachedCurrency then
+				for _,data in ipairs(cachedCurrency) do
+					-- cache record is the item itself
+					if GroupMatchesParams(data, "currencyID", currencyID) then
+						MergeProperties(item, data);
+					-- cache record is associated with the item
+					else
+						NestObject(item, data);	-- no clone since item is cloned later
 					end
 				end
-				-- questObject.missingCurr = 0;
-				NestObject(questObject, item, true);
 			end
+			NestObject(questObject, item, true);
 		end
-	-- end
+	end
 
-	-- we already have the API data, so stop refreshing this quest
-	-- if HaveQuestData(questObject.questID) then
-	-- 	questObject.missingItem = 0;
-	-- 	questObject.missingCurr = 0;
-	-- end
+	-- Troublesome scenarios to test when changing this logic:
+	-- BFA emissaries
+	-- BFA Azerite armor caches
+	-- Argus Rare WQ's + Rare Alt quest
 
-	-- done attempting to populate the quest object
-	-- if questObject.missingItem < 1 and questObject.missingCurr < 1 then
-		-- app.PrintDebug("TPQR:populated",questObject.questID,questObject.g and #questObject.g,HaveQuestData(questObject.questID))
-		-- questObject.OnUpdate = nil;
-		-- questObject.doUpdate = true;
-		-- questObject.missingItem = nil;
-		-- questObject.missingCurr = nil;
-
-		-- Troublesome scenarios to test when changing this logic:
-		-- BFA emissaries
-		-- BFA Azerite armor caches
-		-- Argus Rare WQ's + Rare Alt quest
-
-		-- Finally ensure that any cached entries for the quest are copied into this version of the object
-		-- Needs to be SearchForField as non-quests can be pulled too
-		local cachedQuests = SearchForField("questID", questObject.questID);
-		if cachedQuests then
-			-- special care for API provided items
-			local apiItems = {};
-			if questObject.g then
-				for _,item in ipairs(questObject.g) do
-					if item.itemID then
-						apiItems[item.itemID] = item;
-					end
-				end
-			end
-			local nonItemNested = {};
-			-- merge in any DB data without replacing existing data
-			for _,data in ipairs(cachedQuests) do
-				-- only merge into the quest object properties from an object in cache with this questID
-				if data.questID and data.questID == questObject.questID then
-					MergeProperties(questObject, data, true);
-					-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
-					-- ref: quest 49675/58703
-					if data.u then questObject.u = data.u; end
-					-- merge in sourced things under this quest object
-					if data.g then
-						for _,o in ipairs(data.g) do
-							-- nest cached non-items
-							if not o.itemID then
-								-- if app.DEBUG_PRINT then print("nested-nonItem",o.hash) end
-								tinsert(nonItemNested, o);
-							-- cached items need to merge with corresponding API item based on simple itemID
-							elseif apiItems[o.itemID] then
-								-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
-								MergeProperties(apiItems[o.itemID], o, true);
-							--  if it is not a WQ or is a 'raid' (world boss)
-							elseif questObject.isRaid or not questObject.isWorldQuest then
-								-- otherwise just get nested
-								-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
-								tinsert(nonItemNested, o);
-							end
-						end
-					end
-				-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
-				elseif data.key ~= "questID" then
-					tinsert(nonItemNested, data);
-				end
-			end
-			-- Everything retrieved from API should not be related to another sourceParent
-			-- i.e. Threads of Fate Quest rewards which show up later under regular World Quests
-			for _,item in pairs(apiItems) do
-				item.sourceParent = nil;
-			end
-			NestObjects(questObject, nonItemNested, true);
-		end
-
-		-- Check for provider info
-		-- TODO: don't think this is necessary? it's trying to pull things listed under a creature when that creature is sourced under a 'Rares' header
-		-- if questObject.qgs and #questObject.qgs == 1 then
-		-- 	_cache = SearchForField("creatureID", questObject.qgs[1]);
-		-- 	if _cache then
-		-- 		for _,data in ipairs(_cache) do
-		-- 			if GetRelativeField(data, "headerID", -16) then	-- Rares only!
-		-- 				print("merge creature data",data.hash,"=>",questObject.questID)
-		-- 				MergeProperties(questObject, data, true);
-		-- 				NestObjects(questObject, data.g, true);
-		-- 			end
-		-- 		end
-		-- 	end
-		-- end
-
-		-- Build out purchases if specified
-		-- if app.Settings:GetTooltipSetting("WorldQuestsList:Currencies") then
-		-- 	FillPurchases(questObject);
-		-- end
-
-		-- Resolve all symbolic links now that the quest contains items
-		FillSymLinks(questObject, true);
-
-		-- Special logic for Torn Invitation... maybe can clean up sometime
-		if questObject.g and #questObject.g > 0 then
+	-- Finally ensure that any cached entries for the quest are copied into this version of the object
+	-- Needs to be SearchForField as non-quests can be pulled too
+	local cachedQuests = SearchForField("questID", questID);
+	if cachedQuests then
+		-- special care for API provided items
+		local apiItems = {};
+		if questObject.g then
 			for _,item in ipairs(questObject.g) do
-				if item.g then
-					for k,o in ipairs(item.g) do
-						if o.itemID == 140495 then	-- Torn Invitation
-							local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
-							NestObjects(o, searchResults, true);
+				if item.itemID then
+					apiItems[item.itemID] = item;
+				end
+			end
+		end
+		local nonItemNested = {};
+		-- merge in any DB data without replacing existing data
+		for _,data in ipairs(cachedQuests) do
+			-- only merge into the quest object properties from an object in cache with this questID
+			if data.questID and data.questID == questID then
+				MergeProperties(questObject, data, true);
+				-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
+				-- ref: quest 49675/58703
+				if data.u then questObject.u = data.u; end
+				-- merge in sourced things under this quest object
+				if data.g then
+					for _,o in ipairs(data.g) do
+						-- nest cached non-items
+						if not o.itemID then
+							-- if app.DEBUG_PRINT then print("nested-nonItem",o.hash) end
+							tinsert(nonItemNested, o);
+						-- cached items need to merge with corresponding API item based on simple itemID
+						elseif apiItems[o.itemID] then
+							-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
+							MergeProperties(apiItems[o.itemID], o, true);
+						--  if it is not a WQ or is a 'raid' (world boss)
+						elseif questObject.isRaid or not questObject.isWorldQuest then
+							-- otherwise just get nested
+							-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
+							tinsert(nonItemNested, o);
 						end
+					end
+				end
+			-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
+			elseif data.key ~= "questID" then
+				tinsert(nonItemNested, data);
+			end
+		end
+		-- Everything retrieved from API should not be related to another sourceParent
+		-- i.e. Threads of Fate Quest rewards which show up later under regular World Quests
+		for _,item in pairs(apiItems) do
+			item.sourceParent = nil;
+		end
+		NestObjects(questObject, nonItemNested, true);
+	end
+
+	-- Resolve all symbolic links now that the quest contains items
+	FillSymLinks(questObject, true);
+
+	-- Special logic for Torn Invitation... maybe can clean up sometime
+	if questObject.g and #questObject.g > 0 then
+		for _,item in ipairs(questObject.g) do
+			if item.g then
+				for k,o in ipairs(item.g) do
+					if o.itemID == 140495 then	-- Torn Invitation
+						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
+						NestObjects(o, searchResults, true);
 					end
 				end
 			end
 		end
-		BuildGroups(questObject, questObject.g);
-		app.DirectGroupUpdate(questObject);
-	-- else
-		-- print("set questObject.doUpdate",questObject.questID)
-		-- questObject.doUpdate = true;
-	-- end
+	end
 
-	-- app.DEBUG_PRINT = nil;
+	BuildGroups(questObject, questObject.g);
+	-- Update the group directly
+	app.DirectGroupUpdate(questObject);
 end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
