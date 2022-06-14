@@ -4735,7 +4735,6 @@ end
 (function()
 local included = {};
 local knownSkills;
-local DuplicatePreventionLevel = 5;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 app.SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
