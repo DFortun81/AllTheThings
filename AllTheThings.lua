@@ -6059,7 +6059,7 @@ local function SearchForMissingItemNames(group)
 end
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults)
-	app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
+	-- app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
 	if searchResults then
 		-- Update all the results within visible windows
 		local hashes = {};
@@ -6071,11 +6071,11 @@ local function UpdateSearchResults(searchResults)
 		end
 
 		-- loop through visible ATT windows and collect matching groups
-		app.PrintDebug("Checking Windows...")
+		-- app.PrintDebug("Checking Windows...")
 		for suffix,window in pairs(app.Windows) do
 			-- Collect matching groups from the updating groups from visible windows other than Main list
 			if window.Suffix ~= "Prime" and window:IsVisible() then
-				app.PrintDebug(window.Suffix)
+				-- app.PrintDebug(window.Suffix)
 				for _,result in ipairs(searchResults) do
 					SearchForSpecificGroups(found, window.data, hashes);
 				end
@@ -6084,12 +6084,12 @@ local function UpdateSearchResults(searchResults)
 
 		-- apply direct updates to all found groups
 		local Update = app.DirectGroupUpdate;
-		app.PrintDebug("Updating",#found,"groups")
+		-- app.PrintDebug("Updating",#found,"groups")
 		for _,o in ipairs(found) do
 			Update(o);
 		end
 	end
-	app.PrintDebug("UpdateSearchResults Done")
+	-- app.PrintDebug("UpdateSearchResults Done")
 end
 -- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
@@ -16553,7 +16553,7 @@ local function UpdateWindow(self, force, got)
 				-- app.PrintDebug("UpdateGroups",self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
-				-- app.PrintDebug("Done")
+				-- app.PrintDebugPrior("Done")
 			end
 
 			-- Should the groups in this window be expanded prior to processing the rows for display
@@ -16596,6 +16596,7 @@ local function UpdateWindow(self, force, got)
 			end
 
 			self:Refresh();
+			-- app.PrintDebugPrior("Update:Done")
 			return true;
 		else
 			local expireTime = self.ExpireTime;
@@ -16605,7 +16606,7 @@ local function UpdateWindow(self, force, got)
 				app.Windows[self.Suffix] = nil;
 			end
 		end
-		-- app.PrintDebug("Update:Done")
+		-- app.PrintDebugPrior("Update:None")
 	end
 end
 -- Allows a Window to set the root data object to itself and link the Window to the root data, if data exists
