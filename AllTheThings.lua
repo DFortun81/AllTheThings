@@ -5943,8 +5943,9 @@ local function SearchForSpecificGroups(found, group, hashes)
 		if hashes[group.hash] then
 			tinsert(found, group);
 		end
-		if group.g then
-			for _,o in ipairs(group.g) do
+		local g = group.g;
+		if g then
+			for _,o in ipairs(g) do
 				SearchForSpecificGroups(found, o, hashes);
 			end
 		end
@@ -6060,41 +6061,32 @@ end
 local function UpdateSearchResults(searchResults)
 	app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
 	if searchResults then
-		local minilistWindow = app:GetWindow("CurrentInstance");
-		local minilistVisible = minilistWindow:IsVisible();
-		-- Update all the results within the minilist as well (if visible)
-		local hashes = minilistVisible and {} or nil;
-		-- Ad-hoc update system only needs to pass along updates to the results if the Main list is open
-		local Update = (not app.Settings:GetTooltipSetting("Updates:AdHoc") or app:GetWindow("Prime"):IsVisible()) and app.DirectGroupUpdate or nil;
-		-- app.PrintDebug("Update?",Update,"Minilist?",hashes)
-
+		-- Update all the results within visible windows
+		local hashes = {};
+		local found = {};
 		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 		for _,result in ipairs(searchResults) do
-			if Update then
-				Update(result);
-			end
-			if hashes then
-				hashes[result.hash] = true;
+			hashes[result.hash] = true;
+			tinsert(found, result);
+		end
+
+		-- loop through visible ATT windows and collect matching groups
+		app.PrintDebug("Checking Windows...")
+		for suffix,window in pairs(app.Windows) do
+			-- Collect matching groups from the updating groups from visible windows other than Main list
+			if window.Suffix ~= "Prime" and window:IsVisible() then
+				app.PrintDebug(window.Suffix)
+				for _,result in ipairs(searchResults) do
+					SearchForSpecificGroups(found, window.data, hashes);
+				end
 			end
 		end
 
-		-- TODO: loop through other visible ATT windows and collect matching groups
-		if minilistVisible then
-			local minilistData = minilistWindow.data;
-			local found = {};
-			-- Collect matching groups from the updating groups from the minilist
-			-- if app.DEBUG_PRINT then
-			-- 	app.PrintTable(hashes)
-			-- end
-			for _,result in ipairs(searchResults) do
-				SearchForSpecificGroups(found, minilistData, hashes);
-			end
-			-- apply direct updates to all found groups
-			Update = app.DirectGroupUpdate;
-			app.PrintDebug("Updating",#found,"other groups")
-			for _,o in ipairs(found) do
-				Update(o);
-			end
+		-- apply direct updates to all found groups
+		local Update = app.DirectGroupUpdate;
+		app.PrintDebug("Updating",#found,"groups")
+		for _,o in ipairs(found) do
+			Update(o);
 		end
 	end
 	app.PrintDebug("UpdateSearchResults Done")
@@ -9233,9 +9225,8 @@ end
 
 app.events.NEW_PET_ADDED = function(petID)
 	local speciesID = select(1, C_PetJournal_GetPetInfoByPetID(petID));
-	-- print("NEW_PET_ADDED", petID, speciesID);
+	-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
-		-- print("not already learned pet")
 		rawset(CollectedSpeciesHelper, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
@@ -9247,12 +9238,13 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
 	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
 	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
-	-- print("PET_JOURNAL_PET_DELETED", petID,C_PetJournal.GetPetInfoByPetID(petID));
+	-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID);
 
 	-- Check against all of the collected species for a species that is no longer 1/X
 	local missing = {};
 	for speciesID,_ in pairs(CollectedSpeciesHelper) do
 		if C_PetJournal_GetNumCollectedInfo(speciesID) < 1 then
+			-- app.PrintDebug("Pet Missing",speciesID);
 			rawset(CollectedSpeciesHelper, speciesID, nil);
 			tinsert(missing, speciesID);
 		end
