@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
+root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 	prof(ALCHEMY, {
 		category(632, {	-- Cauldrons
 			i(32839),	-- Cauldron of Major Arcane Protection
@@ -565,7 +565,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
 		}))),
-		applyclassicphase(LEGION_PHASE_ONE, cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 			i(138789, {	-- Tome of Illusions: Outland
 				ill(5390),	-- Battlemaster
 				ill(2674),	-- Spellsurge
@@ -1416,7 +1416,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(24268),	-- Netherweave Net
 		}),
 	}),
-})));
+}))));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {

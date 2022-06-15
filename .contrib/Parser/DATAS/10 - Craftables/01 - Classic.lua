@@ -1042,7 +1042,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
 		}))),
-		applyclassicphase(LEGION_PHASE_ONE, filter(103, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 			i(138787, {	-- Tome of Illusions: Azeroth
 				ill(803),	-- Fiery Weapon
 				ill(1899),	-- Unholy Weapon

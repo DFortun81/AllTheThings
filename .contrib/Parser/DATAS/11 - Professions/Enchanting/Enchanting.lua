@@ -128,9 +128,9 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 			-- #endif
 		}),
-		cat(706, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(706, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217637),	-- Tome of Illusions: Azeroth
-		})),
+		}))),
 		cat(699, {	-- Oils
 			r(25130, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil
 			r(25129, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil
@@ -266,9 +266,9 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 			-- #endif
 		}),
-		cat(705, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(705, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217641),	-- Tome of Illusions: Outland
-		})),
+		}))),
 		cat(688, {	-- Oils
 			r(28016),	-- Superior Mana Oil
 			r(28019),	-- Superior Wizard Oil
@@ -400,9 +400,9 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
-		cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 			r(217644),	-- Tome of Illusions: Northrend
-		})),
+		}))),
 		cat(679, {	-- Shield Enchantments
 			r(44489),	-- Dodge / WOTLK: Defense
 			r(60653, {["timeline"]={"added 3.1.0"}}),	-- Greater Intellect
@@ -688,36 +688,6 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			["collectible"] = false,
 		}),
 		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
-		cat(506, {	-- Disenchant
-			r(252106, {["timeline"]={"added 7.3.0"}}),	-- Chaos Shatter
-			r(224199),	-- Ley Shatter
-		}),
-		cat(445, {	-- Ring Enchantments
-			r(190870),	-- Binding of Critical Strike [Rank 1]
-			r(190996),	-- Binding of Critical Strike [Rank 2]
-			r(191013),	-- Binding of Critical Strike [Rank 3]
-			r(190871),	-- Binding of Haste [Rank 1]
-			r(190997),	-- Binding of Haste [Rank 2]
-			r(191014),	-- Binding of Haste [Rank 3]
-			r(190872),	-- Binding of Mastery [Rank 1]
-			r(190998),	-- Binding of Mastery [Rank 2]
-			r(191015),	-- Binding of Mastery [Rank 3]
-			r(190873),	-- Binding of Versatility [Rank 1]
-			r(190999),	-- Binding of Versatility [Rank 2]
-			r(191016),	-- Binding of Versatility [Rank 3]
-			r(190866),	-- Word of Critical Strike [Rank 1]
-			r(190992),	-- Word of Critical Strike [Rank 2]
-			r(191009),	-- Word of Critical Strike [Rank 3]
-			r(190867),	-- Word of Haste [Rank 1]
-			r(190993),	-- Word of Haste [Rank 2]
-			r(191010),	-- Word of Haste [Rank 3]
-			r(190868),	-- Word of Mastery [Rank 1]
-			r(190994),	-- Word of Mastery [Rank 2]
-			r(191011),	-- Word of Mastery [Rank 3]
-			r(190869),	-- Word of Versatility [Rank 1]
-			r(190995),	-- Word of Versatility [Rank 2]
-			r(191012),	-- Word of Versatility [Rank 3]
-		}),
 		cat(446, {	-- Cloak Enchantments
 			r(190878),	-- Binding of Agility [Rank 1]
 			r(191004),	-- Binding of Agility [Rank 2]
@@ -737,6 +707,16 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(190874),	-- Word of Strength [Rank 1]
 			r(191000),	-- Word of Strength [Rank 2]
 			r(191017),	-- Word of Strength [Rank 3]
+		}),
+		cat(506, {	-- Disenchant
+			r(252106, {["timeline"]={"added 7.3.0"}}),	-- Chaos Shatter
+			r(224199),	-- Ley Shatter
+		}),
+		cat(448, {	-- Glove Enchantments
+			r(190988),	-- Legion Herbalism
+			r(190989),	-- Legion Mining
+			r(190990),	-- Legion Skinning
+			r(190991),	-- Legion Surveying
 		}),
 		cat(444, {	-- Neck Enchantments
 			r(228408),	-- Mark of the Ancient Priestess [Rank 1]
@@ -770,18 +750,38 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(235700, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 2]
 			r(235704, {["timeline"]={"added 7.1.5"}}),	-- Mark of the Versatile [Rank 3]
 		}),
-		cat(447, {	-- Shoulder Enchantments
-			r(190954),	-- Boon of the Scavenger
-		}),
-		cat(448, {	-- Glove Enchantments
-			r(190988),	-- Legion Herbalism
-			r(190989),	-- Legion Mining
-			r(190990),	-- Legion Skinning
-			r(190991),	-- Legion Surveying
-		}),
 		cat(490, {	-- Relics
 			r(209509),	-- Immaculate Fibril
 			r(209507),	-- Soul Fibril
+		}),
+		cat(445, {	-- Ring Enchantments
+			r(190870),	-- Binding of Critical Strike [Rank 1]
+			r(190996),	-- Binding of Critical Strike [Rank 2]
+			r(191013),	-- Binding of Critical Strike [Rank 3]
+			r(190871),	-- Binding of Haste [Rank 1]
+			r(190997),	-- Binding of Haste [Rank 2]
+			r(191014),	-- Binding of Haste [Rank 3]
+			r(190872),	-- Binding of Mastery [Rank 1]
+			r(190998),	-- Binding of Mastery [Rank 2]
+			r(191015),	-- Binding of Mastery [Rank 3]
+			r(190873),	-- Binding of Versatility [Rank 1]
+			r(190999),	-- Binding of Versatility [Rank 2]
+			r(191016),	-- Binding of Versatility [Rank 3]
+			r(190866),	-- Word of Critical Strike [Rank 1]
+			r(190992),	-- Word of Critical Strike [Rank 2]
+			r(191009),	-- Word of Critical Strike [Rank 3]
+			r(190867),	-- Word of Haste [Rank 1]
+			r(190993),	-- Word of Haste [Rank 2]
+			r(191010),	-- Word of Haste [Rank 3]
+			r(190868),	-- Word of Mastery [Rank 1]
+			r(190994),	-- Word of Mastery [Rank 2]
+			r(191011),	-- Word of Mastery [Rank 3]
+			r(190869),	-- Word of Versatility [Rank 1]
+			r(190995),	-- Word of Versatility [Rank 2]
+			r(191012),	-- Word of Versatility [Rank 3]
+		}),
+		cat(447, {	-- Shoulder Enchantments
+			r(190954),	-- Boon of the Scavenger
 		}),
 		cat(449, {	-- Toys, Pets, and Mounts
 			r(191074),	-- Enchanted Cauldron
@@ -1362,19 +1362,6 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(309623),	-- Sinful Revelation
 		}),
 	}))),
-	--[[  Unsure About these
-	-- Introduced in BFA
-		r(300381),	-- Disenchant (Vanilla)
-		r(300382),	-- Disenchant (TBC)
-		r(302690),	-- Disenchant (WOTLK)
-		r(302691),	-- Disenchant (Cata)
-		r(302692),	-- Disenchant (MoP)
-		r(302693),	-- Disenchant (WoD)
-		r(302694),	-- Disenchant (Legion)
-		r(302695),	-- Disenchant (BFA/Kul Tiran?)
-	--
-		r(324750),	-- Disenchant (SL)
-	--]]
 	n(DROPS, {
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
 			["requireSkill"] = ENCHANTING,

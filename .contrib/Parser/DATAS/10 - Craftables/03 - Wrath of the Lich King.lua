@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root("Craftables", tier(WOTLK_TIER, {
+root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 	prof(ALCHEMY, {
 		filter(53, {	-- Trinkets
 			i(44323),	-- Indestructible Alchemist Stone
@@ -257,13 +257,13 @@ root("Craftables", tier(WOTLK_TIER, {
 		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
 			i(44452),	-- Runed Titanium Rod
 		})),
-		cat(704, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {
 			i(138790, {	-- Tome of Illusions: Northrend
 				ill(5391),	-- Berserking
 				ill(5388),	-- Greater Spellpower
 				ill(1894),	-- Icy Chill
 			}),
-		})),
+		}))),
 		cat(679, {	-- Shield Enchantments
 			i(38954),	-- Shield Enchant - Dodge / WOTLK: Defense
 			i(44455, {["timeline"]={"added 3.1.0"}}),	-- Shield Enchant - Greater Intellect
@@ -717,9 +717,7 @@ root("Craftables", tier(WOTLK_TIER, {
 			i(47588),	-- Royal Moonshroud Bracers (horde)
 		}),
 	}),
-}));
-
--- The items never made it in.
+}))));
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(PROFESSIONS, {
 		prof(ENCHANTING, {
