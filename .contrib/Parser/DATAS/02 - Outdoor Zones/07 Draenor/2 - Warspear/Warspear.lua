@@ -2821,7 +2821,7 @@ _.Zones =
 						}),
 						n(86045, {	-- Ged'kah <Enchanting Recipes>
 							["coord"] = { 78.0, 53.7, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, DRAENOR_ENCHANTING),
+							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 						}),
 						n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
 							["coord"] = { 61.0, 27.4, WARSPEAR },

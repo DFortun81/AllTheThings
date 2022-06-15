@@ -182,37 +182,24 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						r(7411, {	-- Enchanting (Apprentice)
-							["timeline"]={ "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
 						}),
 						r(7412, {	-- Enchanting (Journeyman)
 							["timeline"]={ "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
 						}),
 						r(7413, {	-- Enchanting (Expert)
 							["timeline"]={ "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
-						}),
-						r(13920, {	-- Enchanting (Artisan)
-							["timeline"]={ "removed 8.0.1" },
-							-- #if ANYCLASSIC
-							["collectible"] = false,
-							-- #endif
 						}),
 						r(13920, {	-- Enchanting (Artisan)
 							["timeline"]={ GODAN_TIMELINE, "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
 						}),
 						r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
-						r(13262),	-- Disenchant
+						r(13262, {	-- Disenchant
+							["collectible"] = false,
+						}),
 						cat(690, {	-- Boot Enchantments
 							r(13935, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
 							r(20023, {["timeline"]={"added 2.3.0"}}),	-- Greater Agility
@@ -318,9 +305,7 @@ root("Zones", m(KALIMDOR, {
 					["g"] = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 						r(74258, {	-- Enchanting (Illustrious)
 							["timeline"]={ "added 4.0.3", "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
 						}),
 						r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
 						cat(668, {	-- Armor Enchantments

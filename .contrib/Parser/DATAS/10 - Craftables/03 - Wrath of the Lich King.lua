@@ -188,12 +188,106 @@ root("Craftables", tier(WOTLK_TIER, {
 		}),
 	}),
 	prof(ENCHANTING, {
-		filter(103, {	-- Illusions
+		spell(13262, {	-- Disenchant
+			i(34057),	-- Abyss Crystal
+			i(34052),	-- Dream Shard
+			i(34055),	-- Greater Cosmic Essence
+			i(34054),	-- Infinite Dust
+			i(34056),	-- Lesser Cosmic Essence
+			i(34053),	-- Small Dream Shard
+		}),
+		cat(673, {	-- Boot Enchantments
+			i(44449, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Assault
+			i(44469, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Greater Assault
+			i(38966),	-- Enchant Boots - Greater Fortitude
+			i(38961),	-- Enchant Boots - Greater Versatility / WOTLK: Greater Spirit
+			i(38974),	-- Enchant Boots - Greater Vitality
+			i(38986, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Icewalker
+			i(38976),	-- Enchant Boots - Superior Agility
+			i(39006),	-- Enchant Boots - Tuskarr's Vitality
+		}),
+		cat(677, {	-- Bracer Enchantments
+			i(38971, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Assault / WOTLK: Striking
+			i(38968),	-- Enchant Bracer - Exceptional Intellect
+			i(44815),	-- Enchant Bracer - Greater Assault
+			i(38997),	-- Enchant Bracer - Greater Spellpower
+			i(38987),	-- Enchant Bracer - Greater Stats
+			i(38984),	-- Enchant Bracer - Haste / WOTLK: Expertise
+			i(44947, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Major Stamina
+			i(38980),	-- Enchant Bracer - Major Versatility / WOTLK: Major Spirit
+			i(44470, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Superior Spellpower
+		}),
+		cat(675, {	-- Chest Enchantments
+			i(38975),	-- Enchant Chest - Exceptional Armor / WOTLK: Exceptional Resilience
+			i(38912),	-- Enchant Chest - Exceptional Mana
+			i(39002),	-- Enchant Chest - Greater Dodge / WOTLK: Greater Defense
+			i(38962),	-- Enchant Chest - Greater Versatility / WOTLK: Greater Mana Restoration
+			i(38955),	-- Enchant Chest - Mighty Health
+			i(44465, {["timeline"]={"added 3.1.0"}}),	-- Enchant Chest - Powerful Stats
+			i(39005, {["timeline"]={"added 3.1.0"}}),	-- Enchant Chest - Super Health
+			i(38989),	-- Enchant Chest - Super Stats
+		}),
+		cat(676, {	-- Cloak Enchantments
+			i(39003),	-- Enchant Cloak - Greater Speed
+			i(44457, {["timeline"]={"added 3.1.0"}}),	-- Enchant Cloak - Major Agility
+			i(39001),	-- Enchant Cloak - Mighty Stamina
+			i(38973),	-- Enchant Cloak - Minor Power
+			i(38993),	-- Enchant Cloak - Shadow Armor
+			i(44456, {["timeline"]={"added 3.1.0"}}),	-- Enchant Cloak - Speed
+			i(38959),	-- Enchant Cloak - Superior Agility
+			i(38982, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Arcane Resistance
+			i(38978),	-- Enchant Cloak - Superior Dodge / WOTLK: Titanweave
+			i(38969, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Fire Resistance
+			i(38950, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Frost Resistance
+			i(38956, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Nature Resistance
+			i(38977, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Shadow Resistance
+			i(39004),	-- Enchant Cloak - Wisdom
+		}),
+		cat(674, {	-- Glove Enchantments
+			i(50816, {["timeline"]={"added 3.3.0"}}),	-- Enchant Glove - Angler
+			i(38990),	-- Enchant Glove - Armsman
+			i(44458, {["timeline"]={"added 3.1.0"}}),	-- Enchant Glove - Crusher
+			i(38979),	-- Enchant Glove - Exceptional Spellpower
+			i(38960),	-- Enchant Glove - Gatherer
+			i(38964),	-- Enchant Glove - Greater Assault
+			i(38951),	-- Enchant Glove - Haste / WOTLK: Expertise
+			i(38967),	-- Enchant Glove - Major Agility
+			i(38953),	-- Enchant Glove - Precision
+		}),
+		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+			i(44452),	-- Runed Titanium Rod
+		})),
+		cat(704, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 			i(138790, {	-- Tome of Illusions: Northrend
 				ill(5391),	-- Berserking
 				ill(5388),	-- Greater Spellpower
 				ill(1894),	-- Icy Chill
 			}),
+		})),
+		cat(679, {	-- Shield Enchantments
+			i(38954),	-- Shield Enchant - Dodge / WOTLK: Defense
+			i(44455, {["timeline"]={"added 3.1.0"}}),	-- Shield Enchant - Greater Intellect
+		}),
+		cat(678, {	-- Weapon Enchantments
+			i(44497, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Accuracy
+			i(44493, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Berserking
+			i(43987, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Black Magic
+			i(46026, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon -  Blade Ward
+			i(46098, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Blood Draining
+			i(38995),	-- Enchant Weapon - Exceptional Agility
+			i(38991),	-- Enchant Weapon - Exceptional Spellpower
+			i(38963),	-- Enchant Weapon - Exceptional Versatility / WOTLK: Exceptional Spirit
+			i(38988),	-- Enchant Weapon - Giant Slayer
+			i(44453, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Greater Potency
+			i(38992),	-- Enchant 2H Weapon - Greater Savagery
+			i(45056, {["timeline"]={"added 3.1.0"}}),	-- Enchant Staff - Greater Spellpower
+			i(38965),	-- Enchant Weapon - Icebreaker
+			i(38972),	-- Enchant Weapon - Lifeward
+			i(44463, {["timeline"]={"added 3.1.0"}}),	-- Enchant 2H Weapon - Massacre
+			i(44467, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Mighty Spellpower
+			i(38981),	-- Enchant 2H Weapon - Scourgebane
+			i(45060, {["timeline"]={"added 3.1.0"}}),	-- Enchant Staff - Spellpower
+			i(44466, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Superior Potency
 		}),
 	}),
 	prof(ENGINEERING, {

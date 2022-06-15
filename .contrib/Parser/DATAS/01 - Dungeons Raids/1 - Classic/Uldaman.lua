@@ -698,9 +698,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 					r(13920, {	-- Enchanting (Artisan)
 						["timeline"]={ "removed 8.0.1" },
-						-- #if ANYCLASSIC
 						["collectible"] = false,
-						-- #endif
 					}),
 					cat(690, {	-- Boot Enchantments
 						r(13935),	-- Agility

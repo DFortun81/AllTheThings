@@ -1011,7 +1011,7 @@ _.Zones =
 						}),
 						n(87022, {	-- Bob <Enchanting Recipes>
 							["coord"] = { 56.9, 64.7, STORMSHIELD },
-							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, DRAENOR_ENCHANTING),
+							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
 							["coord"] = { 56.2, 20.0, STORMSHIELD },

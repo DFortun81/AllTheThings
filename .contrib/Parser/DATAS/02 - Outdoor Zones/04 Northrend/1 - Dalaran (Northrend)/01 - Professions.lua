@@ -11,9 +11,7 @@ root("Zones", m(NORTHREND, {
 					["g"] = {
 						r(51313, {	-- Enchanting (Grand Master)
 							["timeline"]={ "added 3.0.2", "removed 8.0.1" },
-							-- #if ANYCLASSIC
 							["collectible"] = false,
-							-- #endif
 						}),
 						r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
 						cat(673, {	-- Boot Enchantments

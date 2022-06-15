@@ -5,31 +5,24 @@
 root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	tier(CLASSIC_TIER, {
 		r(7411, {	-- Enchanting (Apprentice)
-			["timeline"]={ "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(7412, {	-- Enchanting (Journeyman)
 			["timeline"]={ "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(7413, {	-- Enchanting (Expert)
 			["timeline"]={ "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(13920, {	-- Enchanting (Artisan)
 			["timeline"]={ "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
-		r(13262),	-- Disenchant
+		r(13262, {	-- Disenchant
+			["collectible"] = false,
+		}),
 		cat(690, {	-- Boot Enchantments
 			r(13935),	-- Agility
 			r(20023),	-- Greater Agility
@@ -135,7 +128,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 			-- #endif
 		}),
-		cat(706, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		cat(706, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217637),	-- Tome of Illusions: Azeroth
 		})),
 		cat(699, {	-- Oils
@@ -217,9 +210,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		r(28029, {	-- Enchanting (Master)
 			["timeline"]={ "added 2.0.1", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
 		cat(681, {	-- Boot Enchantments
@@ -275,7 +266,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			applyclassicphase(PHASE_FIVE, r(25072)),	-- Threat
 			-- #endif
 		}),
-		cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+		cat(705, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217641),	-- Tome of Illusions: Outland
 		})),
 		cat(688, {	-- Oils
@@ -292,13 +283,13 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
 			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={"added 2.4.0"}})),	-- Void Shatter
 		}),
-		cat(445, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(27926),	-- Healing Power
 			r(27924),	-- Spellpower
 			applyclassicphase(TBC_PHASE_THREE, r(27927)),	-- Stats
 			r(27920),	-- Striking
 		})),
-		cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
 			r(32665),	-- Runed Adamantite Rod
 			r(32664),	-- Runed Fel Iron Rod
 			r(32667),	-- Runed Eternium Rod
@@ -337,9 +328,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		r(51313, {	-- Enchanting (Grand Master)
 			["timeline"]={ "added 3.0.2", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
 		cat(673, {	-- Boot Enchantments
@@ -356,16 +345,16 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(60616, {["timeline"]={"added 3.1.0"}}),	-- Assault / WOTLK: Striking
 			r(44555),	-- Exceptional Intellect
 			r(44575),	-- Greater Assault
-			r(44616),	-- Greater Stats
 			r(44635),	-- Greater Spellpower
+			r(44616),	-- Greater Stats
 			r(44598),	-- Haste / WOTLK: Expertise
 			r(62256, {["timeline"]={"added 3.1.0"}}),	-- Major Stamina
 			r(44593),	-- Major Versatility / WOTLK: Major Spirit
 			r(60767, {["timeline"]={"added 3.1.0"}}),	-- Superior Spellpower
 		}),
 		cat(675, {	-- Chest Enchantments
-			r(27958),	-- Exceptional Mana
 			r(44588),	-- Exceptional Armor / WOTLK: Exceptional Resilience
+			r(27958),	-- Exceptional Mana
 			r(47766),	-- Greater Dodge / WOTLK: Greater Defense
 			r(44509),	-- Greater Versatility / WOTLK: Greater Mana Restoration
 			r(44492),	-- Mighty Health
@@ -400,18 +389,18 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(44529),	-- Major Agility
 			r(44488),	-- Precision
 		}),
-		cat(672, bubbleDownSelf({ ["timeline"] = { "added 3.2.2"} }, {	-- Reagents
+		cat(672, sharedDataSelf({ ["timeline"] = { "added 3.2.2"} }, {	-- Reagents
 			r(69412),	-- Abyssal Shatter
 		})),
-		cat(445, bubbleDownSelf({ ["timeline"] = { "added 3.0.2", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { "added 3.0.2", "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(44645),	-- Assault
 			r(44636),	-- Greater Spellpower
 			r(59636),	-- Stamina
 		})),
-		cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
-		cat(704, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		cat(704, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 			r(217644),	-- Tome of Illusions: Northrend
 		})),
 		cat(679, {	-- Shield Enchantments
@@ -443,9 +432,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		r(74258, {	-- Enchanting (Illustrious)
 			["timeline"]={ "added 4.0.3", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
 		cat(668, {	-- Armor Enchantments
@@ -486,7 +473,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(74200),	-- Stamina
 			r(74229),	-- Superior Dodge
 		}),
-		cat(703, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		cat(703, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 			r(217645),	-- Tome of Illusions: Cataclysm
 			r(217649),	-- Tome of Illusions: Elemental Lords
 		})),
@@ -498,16 +485,16 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
-		cat(707, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
+		cat(707, sharedDataSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
 			r(104698),	-- Maelstrom Shatter
 		})),
-		cat(445, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 6.0.2" } }, {	-- Ring Enchantments
+		cat(445, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 6.0.2" } }, {	-- Ring Enchantments
 			r(74216),	-- Agility
 			r(74218),	-- Greater Stamina
 			r(74217),	-- Intellect
 			r(74215),	-- Strength
 		})),
-		cat(697, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 5.0.4" } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 5.0.4" } }, {	-- Rods
 			r(92370),	-- Runed Elementium Rod
 		})),
 		cat(670, {	-- Shield and Off-Hand Enchantments
@@ -530,9 +517,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
 		r(110400, {	-- Enchanting (Zen Master)
 			["timeline"]={ "added 5.0.4", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
 		cat(657, {	-- Armor Enchantments
@@ -562,7 +547,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 			r(104420),	-- Superior Mastery
 			r(104397),	-- Superior Stamina
 		}),
-		cat(702, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
+		cat(702, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
 			r(217650),	-- Tome of Illusions: Pandaria
 			r(217651),	-- Tome of Illusions: Secrets of the Shado-Pan
 		})),
@@ -590,9 +575,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
 		cat(349, {	-- Cloak
@@ -700,7 +683,10 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 		}),
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
-		r(195096),	-- Enchanting (Legion Master)
+		r(195096, {	-- Enchanting (Legion Master)
+			["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+			["collectible"] = false,
+		}),
 		r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
 		cat(506, {	-- Disenchant
 			r(252106, {["timeline"]={"added 7.3.0"}}),	-- Chaos Shatter
@@ -808,7 +794,10 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 				["coord"] = { 38.6, 40.8, LEGION_DALARAN },
 				["g"] = {
-					r(195096),	-- Enchanting (Legion Master)
+					r(195096, {	-- Enchanting (Legion Master)
+						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+						["collectible"] = false,
+					}),
 					r(264471, {["timeline"]={"added 8.0.1"}}),	-- Legion Enchanting
 					r(190869),	-- Word of Versatility [Rank 1]
 				},
@@ -1080,10 +1069,10 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["races"] = HORDE_ONLY
 			}),
 		}),
-		cat(1290, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {	-- Mount Equipment
+		cat(1290, sharedDataSelf({ ["timeline"] = { "added 8.2.0" } }, {	-- Mount Equipment
 			r(301412),	-- Light-Step Hoofplates
 		})),
-		cat(1237, bubbleDownSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
+		cat(1237, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Pets
 			r(285644),	-- Enchanted Tiki Mask
 		})),
 		cat(651, {	-- Ring Enchantments
@@ -1199,7 +1188,7 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["races"] = HORDE_ONLY
 			}),
 		}),
-		cat(1249, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
+		cat(1249, sharedDataSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Tools of the Trade
 			r(287494),	-- Iwen's Enchanting Rod
 		})),
 		n(QUESTS, {

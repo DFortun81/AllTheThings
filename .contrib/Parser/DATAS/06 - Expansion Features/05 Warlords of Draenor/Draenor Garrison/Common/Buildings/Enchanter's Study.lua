@@ -41,7 +41,7 @@ root("ExpansionFeatures", tier(WOD_TIER, {
 				n(VENDORS, {
 					n(77354, {	-- Ayada the White [Alliance]
 						["races"] = ALLIANCE_ONLY,
-						["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, DRAENOR_ENCHANTING),
+						["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 					}),
 					n(88611, {	-- Enchanting Follower
 						["description"] = "You have to build Level 3 Enchanter's Study and hire an enchanter there in order to use these spells.",
@@ -88,7 +88,7 @@ root("ExpansionFeatures", tier(WOD_TIER, {
 					}),
 					n(79821, {	-- Yukla Greenshadow [Horde]
 						["races"] = HORDE_ONLY,
-						["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, DRAENOR_ENCHANTING),
+						["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 					}),
 					un(NEVER_IMPLEMENTED, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
 				}),

@@ -911,16 +911,33 @@ root("Craftables", tier(CLASSIC_TIER, {
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
+			i(11176, {["timeline"]={"removed 7.3.5"}}),	-- Dream Dust
+			i(11082, {["timeline"]={"removed 7.3.5"}}),	-- Greater Astral Essence
 			i(16203),	-- Greater Eternal Essence
 			i(10939),	-- Greater Magic Essence
-			i(16204),	-- Illusion Dust
+			i(11135, {["timeline"]={"removed 7.3.5"}}),	-- Greater Mystic Essence
+			i(11175, {["timeline"]={"removed 7.3.5"}}),	-- Greater Nether Essence
+			i(16204),	-- Light Illusion Dust / CLASSIC: Illusion Dust
 			i(14344),	-- Large Brilliant Shard
+			i(11084, {["timeline"]={"removed 7.3.5"}}),	-- Large Glimmering Shard
+			i(11139, {["timeline"]={"removed 7.3.5"}}),	-- Large Glowing Shard
+			i(11178, {["timeline"]={"removed 7.3.5"}}),	-- Large Radiant Shard
+			i(10998, {["timeline"]={"removed 7.3.5"}}),	-- Lesser Astral Essence
 			i(16202),	-- Lesser Eternal Essence
 			i(10938),	-- Lesser Magic Essence
+			i(11134, {["timeline"]={"removed 7.3.5"}}),	-- Lesser Mystic Essence
+			i(11174, {["timeline"]={"removed 7.3.5"}}),	-- Lesser Nether Essence
+			applyclassicphase(PHASE_FIVE, i(20725, {["timeline"]={"removed 7.3.5"}})),	-- Nexus Crystal
+			i(156930, {["timeline"]={"added 7.3.5"}}),	-- Rich Illusion Dust
 			i(14343),	-- Small Brilliant Shard
+			i(10978, {["timeline"]={"removed 7.3.5"}}),	-- Small Glimmering Shard
+			i(11138, {["timeline"]={"removed 7.3.5"}}),	-- Small Glowing Shard
+			i(11177, {["timeline"]={"removed 7.3.5"}}),	-- Small Radiant Shard
+			i(11083, {["timeline"]={"removed 7.3.5"}}),	-- Soul Dust
 			i(10940),	-- Strange Dust
+			i(11137, {["timeline"]={"removed 7.3.5"}}),	-- Vision Dust
 		}),
-		cat(690, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
+		applyclassicphase(WRATH_PHASE_ONE, cat(690, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
 			i(38844),	-- Enchant Boots - Agility
 			i(38863),	-- Enchant Boots - Greater Agility
 			i(38862),	-- Enchant Boots - Greater Stamina
@@ -933,8 +950,8 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38785),	-- Enchant Boots - Minor Stamina
 			i(38830),	-- Enchant Boots - Stamina
 			i(38864),	-- Enchant Boots - Versatility / WRATH: Enchant Boots - Spirit
-		})),
-		cat(691, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bracer Enchantments
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(691, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bracer Enchantments
 			i(38881),	-- Enchant Bracer - Argent Versatility / WRATH: Enchant Bracer - Mana Regeneration
 			i(38842),	-- Enchant Bracer - Dodge
 			i(38852),	-- Enchant Bracer - Greater Intellect
@@ -960,8 +977,8 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38854),	-- Enchant Bracer - Superior Strength
 			i(38853),	-- Enchant Bracer - Superior Versatility / WRATH: Enchant Bracer - Superior Spirit
 			i(38809),	-- Enchant Bracer - Versatility / WRATH: Enchant Bracer - Spirit
-		})),
-		cat(692, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Chest Enchantments
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(692, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Chest Enchantments
 			i(38808),	-- Enchant Chest - Greater Health
 			i(38818),	-- Enchant Chest - Greater Mana
 			i(38865),	-- Enchant Chest - Greater Stats
@@ -980,8 +997,8 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38847),	-- Enchant Chest - Stats
 			i(38833),	-- Enchant Chest - Superior Health
 			i(38841),	-- Enchant Chest - Superior Mana
-		})),
-		cat(693, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(693, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
 			i(38806),	-- Enchant Cloak - Defense
 			i(38815, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Fire Resistance
 			i(38825),	-- Enchant Cloak - Greater Defense
@@ -1002,8 +1019,8 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38893),	-- Enchant Cloak - Stealth
 			i(38894),	-- Enchant Cloak - Subtlety
 			-- #endif
-		})),
-		cat(694, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(694, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
 			i(38834, {["timeline"]={"added 3.0.1","removed 4.0.3"}}),	-- Enchant Gloves - Advanced Herbalism
 			i(38831),	-- Enchant Gloves - Advanced Mining
 			i(38827),	-- Enchant Gloves - Agility
@@ -1024,7 +1041,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38890),	-- Enchant Gloves - Superior Agility
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
-		})),
+		}))),
 		applyclassicphase(LEGION_PHASE_ONE, filter(103, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			i(138787, {	-- Tome of Illusions: Azeroth
 				ill(803),	-- Fiery Weapon
@@ -1052,7 +1069,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(6339, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
 			i(11145, {["timeline"]={"removed 5.0.4"}}),	-- Runed Truesilver Rod
 		}),
-		cat(696, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Shield Enchantments
+		cat(696, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Shield Enchantments
 			i(38843, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Shield - Frost Resistance
 			i(38861),	-- Enchant Shield - Greater Stamina
 			i(38839),	-- Enchant Shield - Greater Versatility / WRATH: Enchant Shield - Greater Spirit
@@ -1074,7 +1091,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 		}),
-		cat(695, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
+		applyclassicphase(WRATH_PHASE_ONE, cat(695, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
 			i(38880),	-- Enchant Weapon - Agility
 			i(38896),	-- Enchant 2H Weapon - Agility
 			i(38873),	-- Enchant Weapon - Crusader
@@ -1106,7 +1123,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38870),	-- Enchant Weapon - Superior Striking
 			i(38872),	-- Enchant Weapon - Unholy Weapon
 			i(38876),	-- Enchant Weapon - Winter's Might
-		})),
+		}))),
 	}),
 	prof(ENGINEERING, {
 		prof(20219, {	-- Gnomish Engineering

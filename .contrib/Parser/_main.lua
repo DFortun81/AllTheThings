@@ -2403,9 +2403,7 @@ DRAENOR_ENCHANTING = i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" }
 	["g"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
-			-- #if ANYCLASSIC
 			["collectible"] = false,
-			-- #endif
 		}),
 		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
 		r(158907),	-- Breath of Critical Strike
@@ -2420,7 +2418,7 @@ DRAENOR_ENCHANTING = i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" }
 		r(159236),	-- Mark of the Shattered Hand
 	},
 }));
-COMMON_DRAENOR_ENCHANTING_RECIPES = bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+COMMON_DRAENOR_ENCHANTING_RECIPES = sharedData({ ["timeline"] = { "added 6.0.2" } }, {
 	i(118394, {	-- Formula: Enchant Cloak - Breath of Critical Strike (RECIPE!)
 		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
 	}),

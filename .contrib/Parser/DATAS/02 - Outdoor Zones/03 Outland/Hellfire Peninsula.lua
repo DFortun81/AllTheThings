@@ -394,9 +394,7 @@ root("Zones", {
 						["g"] = {
 							r(28029, {	-- Enchanting (Master)
 								["timeline"]={ "added 2.0.1", "removed 8.0.1" },
-								-- #if ANYCLASSIC
 								["collectible"] = false,
-								-- #endif
 							}),
 							r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
 							cat(682, {	-- Bracer Enchantments

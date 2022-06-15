@@ -21,9 +21,7 @@ root("Zones", m(PANDARIA, {
 				["g"] = {
 					r(110400, {	-- Enchanting (Zen Master)
 						["timeline"]={ "added 5.0.4", "removed 8.0.1" },
-						-- #if ANYCLASSIC
 						["collectible"] = false,
-						-- #endif
 					}),
 					r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
 					cat(657, {	-- Armor Enchantments

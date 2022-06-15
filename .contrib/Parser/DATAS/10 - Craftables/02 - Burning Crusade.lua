@@ -504,38 +504,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		i(27659),	-- Warp Burger
 	}),
 	prof(ENCHANTING, {
-		applyclassicphase(LEGION_PHASE_ONE, category(705, {	-- Illusions
-			i(138789, {	-- Tome of Illusions: Outland
-				ill(5390),	-- Battlemaster
-				ill(2674),	-- Spellsurge
-				ill(5864),	-- Netherflame
-			}),
-		})),
-		cat(693, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
-			-- #if AFTER BFA
-			i(38895),	-- Enchant Cloak - Dodge
-			i(38893),	-- Enchant Cloak - Stealth
-			i(38894),	-- Enchant Cloak - Subtlety
-			-- #endif
-		})),
-		cat(694, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
-			-- #if AFTER BFA
-			i(38890),	-- Enchant Gloves - Superior Agility
-			i(38885),	-- Enchant Gloves - Threat
-			-- #endif
-		})),
-		category(697, {	-- Rods
-			i(22462, {	-- Runed Adamantite Rod
-				["timeline"] = { "removed 5.0.4.10000" },
-			}),
-			i(22463, {	-- Runed Eternium Rod
-				["timeline"] = { "removed 5.0.4.10000" },
-			}),
-			i(22461, {	-- Runed Fel Iron Rod
-				["timeline"] = { "removed 5.0.4.10000" },
-			}),
-		}),
-		category(680, {	-- Reagents
+		spell(13262, {	-- Disenchant
 			i(22445),	-- Arcane Dust
 			i(22446),	-- Greater Planar Essence
 			i(22449),	-- Large Prismatic Shard
@@ -543,14 +512,104 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			i(22448),	-- Small Prismatic Shard
 			i(22450),	-- Void Crystal
 		}),
-		category(688, {	-- Oils
+		applyclassicphase(WRATH_PHASE_ONE, cat(681, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
+			i(38944),	-- Enchant Boots - Boar's Speed
+			i(38943),	-- Enchant Boots - Cat's Swiftness
+			i(37603),	-- Enchant Boots - Dexterity
+			i(38909),	-- Enchant Boots - Fortitude
+			i(38910),	-- Enchant Boots - Surefooted
+			i(38908),	-- Enchant Boots - Vitality
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(682, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bracer Enchantments
+			i(38897),	-- Enchant Bracer - Brawn
+			i(38902),	-- Enchant Bracer - Fortitude
+			i(38899),	-- Enchant Bracer - Greater Dodge / TBC: Major Defense
+			i(38938),	-- Enchant Bracer - Lesser Assault
+			i(38937),	-- Enchant Bracer - Major Intellect
+			i(38903),	-- Enchant Bracer - Spellpower
+			i(38898),	-- Enchant Bracer - Stats
+			i(38900),	-- Enchant Bracer - Superior Healing
+			i(38901),	-- Enchant Bracer - Versatility Prime / TBC: Restore Mana Prime
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(683, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Chest Enchantments
+			i(38999),	-- Enchant Chest - Dodge / TBC: Defense
+			i(38911),	-- Enchant Chest - Exceptional Health
+			i(38913),	-- Enchant Chest - Exceptional Stats
+			i(38930),	-- Enchant Chest - Major Armor / TBC:Major Resilience
+			i(38928),	-- Enchant Chest - Major Versatility / TBC: Major Spirit
+			i(38929),	-- Enchant Chest - Versatility Prime / TBC: Restore Mana Prime
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(684, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
+			i(38940),	-- Enchant Cloak - Greater Agility
+			i(38941, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Arcane Resistance
+			i(39000),	-- Enchant Cloak - Greater Dodge / TBC: Steelweave
+			i(38942, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Shadow Resistance
+			i(38914),	-- Enchant Cloak - Major Armor
+			i(38915, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Major Resistance
+			i(38939),	-- Enchant Cloak - Empowerment
+			-- #if AFTER BFA
+			i(38895),	-- Enchant Cloak - Dodge
+			i(38893),	-- Enchant Cloak - Stealth
+			i(38894),	-- Enchant Cloak - Subtlety
+			-- #endif
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(685, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
+			i(38934),	-- Enchant Gloves - Assault
+			i(38931),	-- Enchant Gloves - Blasting
+			i(38936),	-- Enchant Gloves - Major Healing
+			i(38935),	-- Enchant Gloves - Major Spellpower
+			i(38933),	-- Enchant Gloves - Major Strength
+			i(38932),	-- Enchant Gloves - Precise Strikes / TBC: Spell Strike
+			-- #if AFTER BFA
+			i(38890),	-- Enchant Gloves - Superior Agility
+			i(38885),	-- Enchant Gloves - Threat
+			-- #endif
+		}))),
+		applyclassicphase(LEGION_PHASE_ONE, cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
+			i(138789, {	-- Tome of Illusions: Outland
+				ill(5390),	-- Battlemaster
+				ill(2674),	-- Spellsurge
+				ill(5864),	-- Netherflame
+			}),
+		}))),
+		cat(688, {	-- Oils
 			i(22521),	-- Superior Mana Oil
 			i(22522),	-- Superior Wizard Oil
 		}),
-		category(689, {	-- Other
+		cat(689, {	-- Other
 			i(22460),	-- Prismatic Sphere
 			i(22459),	-- Void Sphere
 		}),
+		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
+			i(22462),	-- Runed Adamantite Rod
+			i(22463),	-- Runed Eternium Rod
+			i(22461),	-- Runed Fel Iron Rod
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, cat(687, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Shield Enchantments
+			i(38949),	-- Enchant Shield - Armor / TBC: Resilience
+			i(38905),	-- Enchant Shield - Intellect
+			i(38904),	-- Enchant Shield - Lesser Dodge / TBC: Tough Shield
+			i(38945),	-- Enchant Shield - Major Stamina
+			i(38906),	-- Enchant Shield - Parry / TBC: Shield Block
+			i(38907, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Shield - Resistance
+		}))),
+		applyclassicphase(WRATH_PHASE_ONE, cat(686, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
+			i(38927),	-- Enchant Weapon - Battlemaster
+			i(38948),	-- Enchant Weapon - Executioner
+			i(38998),	-- Enchant Weapon - Deathfrost
+			i(38947),	-- Enchant Weapon - Greater Agility
+			i(38922),	-- Enchant 2H Weapon - Major Agility
+			i(38946),	-- Enchant Weapon - Major Healing
+			i(38918),	-- Enchant Weapon - Major Intellect
+			i(38921),	-- Enchant Weapon - Major Spellpower
+			i(38917),	-- Enchant Weapon - Major Striking
+			i(38925),	-- Enchant Weapon - Mongoose
+			i(38920),	-- Enchant Weapon - Potency
+			i(38919),	-- Enchant 2H Weapon - Savagery
+			i(38924),	-- Enchant Weapon - Soulfrost
+			i(38926),	-- Enchant Weapon - Spellsurge
+			i(38923),	-- Enchant Weapon - Sunfire
+		}))),
 	}),
 	prof(ENGINEERING, {
 		prof(20219, {	-- Gnomish Engineering
