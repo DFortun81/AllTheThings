@@ -576,13 +576,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(736, {	-- The Star, the Hand and the Heart
-					["sourceQuests"] = { 728 },	-- To the Undercity for Yagyin's Digest
-					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
-					["coord"] = { 53.8, 54.4, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(446, {	-- Thule Ravenclaw
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["races"] = HORDE_ONLY,

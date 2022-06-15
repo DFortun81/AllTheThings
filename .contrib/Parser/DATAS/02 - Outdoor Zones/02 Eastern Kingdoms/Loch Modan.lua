@@ -1056,6 +1056,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(26131, {	-- Reinforcements for Loch Modan
+					["qg"] = 1959,	-- Mountaineer Barleybrew
+					["coord"] = { 41.8, 52.2, IRONFORGE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(301, {	-- Report to Ironforge
 					["providers"] = {
 						{ "n", 1105 },	-- Jern Hornhelm

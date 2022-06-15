@@ -645,6 +645,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6794)),	-- Tawny Gloves
 					},
 				}),
+				q(1453, {	-- Reclaimers' Business in Desolace
+					["qg"] = 5637,	-- Roetten Stonehammer
+					["coord"] = { 69.6, 21.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(14384, {	-- Rerouted!
 					["provider"] = { "n", 36410 },	-- Officer Jankie
 					["coord"] = { 54.25, 9.29, DESOLACE },

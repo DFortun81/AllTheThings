@@ -122,6 +122,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
+				q(762, {	-- An Ambassador of Evil
+					["qg"] = 2916,	-- Historian Karnik
+					["sourceQuest"] = 726,	-- Passing Word of a Threat
+					["coord"] = { 77.4, 11.6, IRONFORGE },
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(4987)),	-- Dwarf Captain's Sword
+					},
+				}),
 				q(27793, {	-- Ancient Protectors (A)
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
 					["coord"] = { 49.2, 36.9, BADLANDS },
@@ -419,6 +428,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
+				q(725, {	-- Passing Word of a Threat
+					["qg"] = 2916,	-- Historian Karnik
+					["coord"] = { 77.4, 11.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(726, {	-- Passing Word of a Threat
+					["qg"] = 2918,	-- Advisor Belgrum
+					["sourceQuest"] = 725,	-- Passing Word of a Threat
+					["coord"] = { 77.3, 9.7, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(705, {	-- Pearl Diving
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -637,6 +659,20 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.1, 42.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27895 },	-- Their Hunt Continues
+				}),
+				q(735, {	-- The Star, the Hand and the Heart
+					["qg"] = 2934,	-- Gerrig Bonegrip
+					["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
+					["coord"] = { 50.8, 6.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(736, {	-- The Star, the Hand and the Heart
+					["sourceQuests"] = { 728 },	-- To the Undercity for Yagyin's Digest
+					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
+					["coord"] = { 53.8, 54.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27827, {	-- The Swift, the Fierce, and the Stout
 					["provider"] = { "n", 46654 },	-- Rhea

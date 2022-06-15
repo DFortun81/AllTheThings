@@ -766,15 +766,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14045,	-- Find Baron Longshore
 				}),
-				q(1795,  {	-- The Binding
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 6251 },	-- Strahad Farsan
-					["lvl"] = 30,
+				q(1795, {	-- The Binding (Felhunter)
+					["qg"] = 6251,	-- Strahad Farsan
+					["sourceQuests"] = {
+						1804,	-- Tome of the Cabal (3/3 Alliance)
+						1805,	-- Tome of the Cabal (3/3 Horde)
+					},
+					["coord"] = { 62.6, 35.4, THE_BARRENS },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
-					["sourceQuest"] = 1804,	-- Tome of the Cabal
-					["g"] = {
-						i(22244),	-- Box of Souls
-						spell(691),	-- Summon Felhunter
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- Summoned Felhunter slain
+							["provider"] = { "n", 6268 },	-- Summoned Felhunter
+							["cost"] = { { "i", 6999, 1 } },	-- Tome of the Cabal
+						}),
+						-- #if BEFORE 4.0.3
+						recipe(691),	-- Summon Felhunter
+						-- #endif
+						i(22244, {	-- Box of Souls
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(4964,  {	-- The Completed Orb of Dar'Orahil
@@ -944,13 +956,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14066,	-- Investigate the Wreckage
 				}),
-				q(1758,  {	-- Tome of the Cabal
-					["u"] = REMOVED_FROM_GAME,
+				q(1758,  {	-- Tome of the Cabal (1/3 Alliance)
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
-					["lvl"] = 30,
+					["sourceQuest"] = 1798,	-- Seeking Strahad
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["sourceQuest"] = 1798,	-- Seeking Strahad
+					["lvl"] = 30,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1824,  {	-- Trial at the Field of Giants
 					["provider"] = { "n", 6394 },	-- Ruga Ragetotem

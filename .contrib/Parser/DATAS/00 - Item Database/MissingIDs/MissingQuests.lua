@@ -84,9 +84,6 @@ q(658),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints
 q(659),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
 q(660),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
 q(681),	-- Northfold Manor,		TBC: Northfold Manor,		CLASSIC: Northfold Manor
-q(683),	-- Sara Balloo's Plea,		TBC: Sara Balloo's Plea,		CLASSIC: Sara Balloo's Plea
-q(686),	-- A King's Tribute,		TBC: A King's Tribute,		CLASSIC: A King's Tribute
-q(689),	-- A King's Tribute,		TBC: A King's Tribute,		CLASSIC: A King's Tribute
 q(690),	-- Malin's Request,		TBC: Malin's Request,		CLASSIC: Malin's Request
 q(691),	-- Worth Its Weight in Gold,		TBC: Worth Its Weight in Gold,		CLASSIC: Worth Its Weight in Gold
 q(693),	-- Wand over Fist,		TBC: Wand over Fist,		CLASSIC: Wand over Fist
@@ -94,7 +91,6 @@ q(694),	-- Trelane's Defenses,		TBC: Trelane's Defenses,		CLASSIC: Trelane's Def
 q(695),	-- An Apprentice's Enchantment,		TBC: An Apprentice's Enchantment,		CLASSIC: An Apprentice's Enchantment
 q(696),	-- Attack on the Tower,		TBC: Attack on the Tower,		CLASSIC: Attack on the Tower
 q(706),	-- Fiery Blaze Enchantments,		TBC: Fiery Blaze Enchantments,		CLASSIC: Fiery Blaze Enchantments
-q(707),	-- Ironband Wants You!,		TBC: Ironband Wants You!,		CLASSIC: Ironband Wants You!
 q(708),	-- The Black Box,		TBC: The Black Box,		CLASSIC: The Black Box
 q(718),	-- Mirages,		TBC: Mirages,		CLASSIC: Mirages
 q(720),	-- A Sign of Hope,		TBC: A Sign of Hope,		CLASSIC: A Sign of Hope
@@ -165,8 +161,6 @@ q(1047),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
 q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(1057),	-- Reclaiming the Charred Vale,		TBC: Reclaiming the Charred Vale,		CLASSIC: Reclaiming the Charred Vale
 q(1061),	-- The Spirits of Stonetalon,		TBC: The Spirits of Stonetalon,		CLASSIC: The Spirits of Stonetalon
-q(1073),	-- Ineptitude + Chemicals = Fun,		TBC: Ineptitude + Chemicals = Fun,		CLASSIC: Ineptitude + Chemicals = Fun
-q(1074),	-- Ineptitude + Chemicals = Fun,		TBC: Ineptitude + Chemicals = Fun,		CLASSIC: Ineptitude + Chemicals = Fun
 q(1077),	-- Special Delivery for Gaxim,		TBC: Special Delivery for Gaxim,		CLASSIC: Special Delivery for Gaxim
 q(1082),	-- Update for Sentinel Thenysil,		TBC: Update for Sentinel Thenysil,		CLASSIC: Update for Sentinel Thenysil
 q(1084),	-- Wounded Ancients,		TBC: Wounded Ancients,		CLASSIC: Wounded Ancients
@@ -310,14 +304,11 @@ q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1665),	-- Bartleby's Mug,		TBC: Bartleby's Mug,		CLASSIC: Bartleby's Mug
 q(1666),	-- Marshal Haggard,		TBC: Marshal Haggard,		CLASSIC: Marshal Haggard
-q(1680),	-- Tormus Deepforge,		TBC: Tormus Deepforge,		CLASSIC: Tormus Deepforge
-q(1681),	-- Ironband's Compound,		TBC: Ironband's Compound,		CLASSIC: Ironband's Compound
 q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
 q(1689),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1712),	-- Cyclonian,		TBC: Cyclonian,		CLASSIC: Cyclonian
 q(1713),	-- The Summoning,		TBC: The Summoning,		CLASSIC: The Summoning
-q(1715),	-- The Slaughtered Lamb,		TBC: The Slaughtered Lamb,		CLASSIC: The Slaughtered Lamb
 q(1716),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1717),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
@@ -359,19 +350,16 @@ q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladesha
 q(2018),	-- Rokar's Test,		CLASSIC: Rokar's Test
 q(2019),	-- Tools of the Trade,		CLASSIC: Tools of the Trade
 q(2020),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(2041),	-- Speak with Shoni,		TBC: Speak with Shoni,		CLASSIC: Speak with Shoni
 q(2058),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2059),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's Revenge
 q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
 q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
 q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
-q(2238),	-- Simple Subterfugin',		TBC: Simple Subterfugin',		CLASSIC: Simple Subterfugin'
 q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
-q(2298),	-- Kingly Shakedown,		TBC: Kingly Shakedown,		CLASSIC: Kingly Shakedown
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2360),	-- Mathias and the Defias,		TBC: Mathias and the Defias,		CLASSIC: Mathias and the Defias
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
@@ -454,10 +442,6 @@ q(3422),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3423),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3424),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3425),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(3448),	-- Passing the Burden,		TBC: Passing the Burden,		CLASSIC: Passing the Burden
-q(3449),	-- Arcane Runes,		TBC: Arcane Runes,		CLASSIC: Arcane Runes
-q(3450),	-- An Easy Pickup,		TBC: An Easy Pickup,		CLASSIC: An Easy Pickup
-q(3451),	-- Signal for Pickup,		TBC: Signal for Pickup,		CLASSIC: Signal for Pickup
 q(3482),	-- <NYI> <TXT> The Pocked Black Box,		TBC: <NYI> <TXT> The Pocked Black Box,		CLASSIC: <NYI> <TXT> The Pocked Black Box
 q(3515),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3516),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -790,14 +774,6 @@ q(7794),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A 
 q(7795),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7799),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
 q(7800),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
-q(7802),	-- A Donation of Wool,		TBC: A Donation of Wool,		CLASSIC: A Donation of Wool
-q(7803),	-- A Donation of Silk,		TBC: A Donation of Silk,		CLASSIC: A Donation of Silk
-q(7804),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
-q(7805),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
-q(7807),	-- A Donation of Wool,		TBC: A Donation of Wool,		CLASSIC: A Donation of Wool
-q(7808),	-- A Donation of Silk,		TBC: A Donation of Silk,		CLASSIC: A Donation of Silk
-q(7809),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
-q(7811),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7869),	-- test quest - do not use,		CLASSIC: test quest - do not use
 q(7870),	-- test quest2 - do not use,		CLASSIC: test quest2 - do not use
 q(7871),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!

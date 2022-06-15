@@ -1005,34 +1005,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(28287, {	-- Meet with Farseer Umbrua
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { SHAMAN },
-					["isBreadcrumb"] = true,
-					["qgs"] = {
-						52292,	-- Droha
-						23127,	-- Farseer Javad
-					},
-					["coords"] = {
-						{ 43.8, 78.8, DARNASSUS },	-- Droha
-						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
-					},
-				}),
-				q(66390, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Missing Merchandise
-					["provider"] = { "n", 188342 },	-- Onnesa
-					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(191854),	-- Briny Seawater
-					},
-				})),
-				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
-					["repeatable"] = true,
-					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
-				}),
 				-- MORE BREADCRUMBS, PLEASE DONT PUT THEM EVERWHERE THEY CAN BE PICKED UP. USE MAPS.
 				q(27271, {	-- Journey to the Wizard's Sanctum
 					["isBreadcrumb"] = true,
@@ -1062,6 +1034,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
 						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+					},
+				}),
+				q(28259, {	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SHADOWLANDS+]
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+				}),
+				q(28287, {	-- Meet with Farseer Umbrua
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },	-- Droha
+						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
 					},
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
@@ -1158,6 +1151,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(9513),	-- Ley Staff	-- NOTE: Item still available
 					},
 				}),
+				q(66390, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Missing Merchandise
+					["provider"] = { "n", 188342 },	-- Onnesa
+					["coord"] = { 51.5, 70.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(191854),	-- Briny Seawater
+					},
+				})),
 				q(27038, {	-- Missing Parts
 					["provider"] = { "n", 44749 },	-- Supply Sergeant Graves
 					["coord"] = { 33.2, 39.4, STORMWIND_CITY },
@@ -1168,6 +1169,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						un(REMOVED_FROM_GAME, i(63926)),	-- Reconstructing Hauberk
 						un(REMOVED_FROM_GAME, i(63925)),	-- Scavenger Bracers
 					},
+				}),
+				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
+					["repeatable"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 50 },
 				}),
 				q(60125, {	-- Mists of Pandaria: To Pandaria!
 					["isBreadcrumb"] = true,

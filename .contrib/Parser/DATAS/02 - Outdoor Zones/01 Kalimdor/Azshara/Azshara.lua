@@ -927,14 +927,6 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 26.8, 76.9, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3461, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" } }, {	-- Return to Tymor
-					["provider"] = { "n", 8392 },	-- Pilot Xiggs Fuselighter
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(10707),	-- Steelsmith Greaves
-						i(10708),	-- Skullspell Orb
-					},
-				})),
 				q(3421, {	-- Return Trip
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
