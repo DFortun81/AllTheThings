@@ -741,7 +741,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(3824, {	-- Gor'tesh the Brute Lord
 					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3823,	-- Extinguish the Firegut
-					["cost"] = { 84.6, 68.6, BURNING_STEPPES },
+					["coord"] = { 84.6, 68.6, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
