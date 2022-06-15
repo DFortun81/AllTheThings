@@ -14145,8 +14145,8 @@ local function DirectGroupUpdate(group)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",window.Suffix)
-		DelayedCallback(window.Update, 0.5, window);
+		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.isQuestChain)
+		DelayedCallback(window.Update, 0.5, window, window.isQuestChain);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
