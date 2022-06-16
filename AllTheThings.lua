@@ -8250,8 +8250,8 @@ local function RefreshQuestCompletionState(questID)
 	end
 
 	-- update if any quests were even completed to ensure visible changes occur
-	if DirtyQuests.DIRTY then
-		local updateQuests = {};
+	if questID or DirtyQuests.DIRTY then
+		local updateQuests = { questID };
 		for questID,_ in pairs(DirtyQuests) do
 			tinsert(updateQuests, questID);
 			-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
@@ -14970,18 +14970,6 @@ function app:CreateMiniListForGroup(group)
 				app.CollectibleQuests = oldQuestCollection;
 				app.AccountWideQuests = oldQuestAccountWide;
 			end;
-			popout:SetScript("OnEvent", function(self, e, ...)
-				-- print("EVENT", e, ...)
-				if self:IsVisible() then
-					-- print("QUEST_LOG_UPDATE:questChainWindow")
-					self:Update(true);
-				end
-			end);
-			-- Register Events which should cause an update to the Quest popout
-			self:RegisterEvent("QUEST_LOG_UPDATE");
-			self:RegisterEvent("QUEST_TURNED_IN");
-			self:RegisterEvent("QUEST_ACCEPTED");
-			self:RegisterEvent("QUEST_REMOVED");
 			-- Populate the Quest Rewards
 			app.TryPopulateQuestRewards(group)
 		end
@@ -23273,6 +23261,7 @@ app.events.CRITERIA_UPDATE = function(...)
 	-- print("CRITERIA_UPDATE",...)
 	-- sometimes triggers many times at once but refresh quest info is a 1 sec callback threshold
 	app.RefreshQuestInfo();
+	app:RefreshWindows();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- print("QUEST_TURNED_IN")
@@ -23286,10 +23275,10 @@ end
 -- 	-- print("QUEST_FINISHED")
 -- 	app.RefreshQuestInfo();
 -- end
-app.events.QUEST_REMOVED = function()
-	-- print("QUEST_REMOVED")
-	-- simply soft update windows to remove any visible star markers
-	app:UpdateWindows();
+app.events.QUEST_REMOVED = function(questID)
+	-- app.PrintDebug("QUEST_REMOVED",questID)
+	-- Make sure windows refresh incase any show the removed quest
+	app:RefreshWindows();
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	-- print("QUEST_ACCEPTED",questID)
@@ -23313,8 +23302,8 @@ app.events.QUEST_ACCEPTED = function(questID)
 			-- Run this warning check after a small delay in case addons pick up quests before the turned in quest is registered as complete
 			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, title, questID);
 		end
-		-- Make sure windows update incase any show the picked up quest
-		app:UpdateWindows();
+		-- Make sure windows refresh incase any show the picked up quest
+		app:RefreshWindows();
 	end
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
