@@ -1,6 +1,8 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
+
 root("Craftables", tier(SL_TIER, applyclassicphase(SL_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
