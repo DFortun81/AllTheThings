@@ -126,6 +126,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = INSCRIPTION,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338234, {["u"]=15}),	-- Catalog of Sins
+					i(181959),	-- Catalog of Sins
+					r(338236, {["u"]=15}),	-- Prideful Ink
+					i(182060),	-- Prideful Ink
+					r(338235, {["u"]=15}),	-- Scroll of Calming Lyrics
+					i(182059),	-- Scroll of Castigation
+				},
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
 				["isWorldQuest"] = true,

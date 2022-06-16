@@ -220,7 +220,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					i(186494, {	-- Autumnal Wilderling (MOUNT!)
 						["cost"] = { { "c", ANIMA, 7500 } },
 					}),
-					i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT)
+					i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
 						["cost"] = {
 							{ "c", ANIMA, 100 },
 							{ "c", GRATEFUL, 40 },

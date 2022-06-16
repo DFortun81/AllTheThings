@@ -145,6 +145,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = INSCRIPTION,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					i(182202),	-- Borrowed Parchment
+					r(338228, {["u"]=15}),	-- Invocation of Duty
+					i(181957),	-- Invocation of Duty
+					r(338230, {["u"]=15}),	-- Opalescent Ink
+					i(182014),	-- Opalescent Ink
+					i(182015),	-- Opalescent Pigment
+					r(338229, {["u"]=15}),	-- Poem on Duty
+					i(182013),	-- Poem on Duty
+				},
 			}),
 			q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
 				["requireSkill"] = JEWELCRAFTING,

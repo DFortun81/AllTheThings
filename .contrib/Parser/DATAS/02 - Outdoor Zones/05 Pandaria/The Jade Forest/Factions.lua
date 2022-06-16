@@ -452,7 +452,7 @@ _.Zones =
 									i(83830),	-- Design: Sunstone Panther
 									i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
 									i(89796),	-- Order of the Cloud Serpent Tabard
-									i(85430, {	-- Azure Cloud Serpent (MOUNT)
+									i(85430, {	-- Azure Cloud Serpent (MOUNT!)
 										["cost"] = 30000000,	-- 3,000g
 									}),
 									i(85429, {	-- Golden Cloud Serpent (MOUNT!)

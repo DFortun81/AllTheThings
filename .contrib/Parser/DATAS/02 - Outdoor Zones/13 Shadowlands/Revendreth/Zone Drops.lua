@@ -223,7 +223,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			i(177799),	-- Stoneborn Shield
 			i(177810),	-- Stonebreaker Mace
 			i(180487),	-- Stonefist's Knuckle Cover
-			i(187930, {	-- Technique: Mark of the Regal Dredbat
+			i(187930, {	-- Technique: Mark of the Regal Dredbat (RECIPE!)
 				["description"] = "Drops from Evedweller bats in Dominance Keep.",
 				["timeline"] = { "added 9.1.5" },
 				["crs"] = {

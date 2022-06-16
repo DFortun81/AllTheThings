@@ -159,6 +159,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = INSCRIPTION,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338231, {["u"]=15}),	-- Litany of Might
+					i(181958),	-- Litany of Might
+					r(338233, {["u"]=15}),	-- Necrotic Ink
+					i(182036),	-- Necrotic Ink
+					r(338232, {["u"]=15}),	-- Scroll of Unyielding Strength
+					i(182035),	-- Scroll of Unyielding Strength
+				},
 			}),
 			q(61612, {	-- Jewelcrafting: Carved Crystal Ring
 				["requireSkill"] = JEWELCRAFTING,

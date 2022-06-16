@@ -88,6 +88,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = INSCRIPTION,
 				["isWorldQuest"] = true,
 				["lvl"] = { 60 },
+				["g"] = {
+					r(338227, {["u"]=15}),	-- Ardenberry Ink
+					i(181996),	-- Ardenberry Ink
+					r(338225, {["u"]=15}),	-- Hymnal of Respite
+					i(181397),	-- Hymnal of Respite
+					r(338226, {["u"]=15}),	-- Scroll of Calming Lyrics
+					i(181995),	-- Scroll of Calming Lyrics
+				},
 			}),
 			q(61303, {	-- It's Raining Sparkles
 				["isWorldQuest"] = true,

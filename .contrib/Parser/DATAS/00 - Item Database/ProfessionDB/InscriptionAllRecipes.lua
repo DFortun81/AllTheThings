@@ -1354,41 +1354,8 @@ r(306482),	-- Vantus Rune: Ny'alotha, the Waking City
 8.3.7.35435
 8.3.7.35662
 9.0.1.33978
-r(311424),	-- Codex of the Still Mind
-r(324037),	-- Darkmoon Card of Putrescence
-r(311688),	-- Soul Keeper's Column
-r(311418),	-- Mass Mill Nightshade
-r(311413),	-- Mass Mill Deathblossom
-r(324036),	-- Darkmoon Card of Repose
-r(324039),	-- Darkmoon Card of the Indomitable
-r(311425),	-- Tome of the Still Mind
-r(311408),	-- Newly Departed Codex
-r(311414),	-- Mass Mill Vigil's Torch
-r(311441),	-- Darkmoon Card of Death
-r(321029),	-- Tranquil Ink
-r(311690),	--
-r(324198),	-- Missive of Haste
-r(324197),	-- Missive of Critical Strike
-r(311687),	--
-r(324196),	-- Missive of Mastery
-r(311689),	-- Soul Keeper's Spire
-r(311417),	-- Mass Mill Rising Glory
-r(311415),	-- Mass Mill Widowbloom
-r(311407),	--
-r(311406),	-- Luminous Ink
-r(324195),	-- Missive of Versatility
-r(309805),	-- Shadowlands Inscription
-r(311405),	-- Umbral Ink
-r(324035),	-- Darkmoon Card of Voracity
-r(311453),	-- Vantus Rune: Castle Nathria
-r(311416),	-- Mass Mill Marrowroot
-r(311423),	-- Writ of Grave Robbing
 9.0.1.34003
 9.0.1.34081
-r(311412),	-- Contract: Court of Harvesters
-r(311410),	-- Contract: The Wild Hunt
-r(311411),	-- Contract: The Undying Army
-r(311409),	-- Contract: The Ascended
 9.0.1.34098
 9.0.1.34137
 9.0.1.34199
@@ -1399,24 +1366,11 @@ r(311409),	-- Contract: The Ascended
 9.0.1.34490
 9.0.1.34615
 9.0.1.34714
-r(334537),	-- Fae Revel Masque
 9.0.1.34821
 9.0.1.34902
 9.0.1.34972
 9.0.1.35078
 9.0.1.35167
-r(338226),	-- Scroll of Calming Lyrics
-r(338235),	-- Scroll of Castigation
-r(338236),	-- Prideful Ink
-r(338233),	-- Necrotic Ink
-r(338230),	-- Opalescent Ink
-r(338231),	-- Litany of Might
-r(338229),	-- Poem on Duty
-r(338225),	-- Hymnal of Respite
-r(338232),	-- Scroll of Unyielding Strength
-r(338227),	-- Ardenberry Ink
-r(338228),	-- Invocation of Duty
-r(338234),	-- Catalog of Sins
 9.0.1.35213
 9.0.1.35256
 9.0.1.35282
@@ -1426,16 +1380,8 @@ r(338234),	-- Catalog of Sins
 9.0.1.35522
 9.0.1.35598
 9.0.1.35679
-r(343686),	-- Novice Crafter's Mark
-r(343691),	-- Crafter's Mark I
-r(343687),	--
-r(343688),	--
-r(343689),	-- Crafter's Mark II
 9.0.1.35707
 9.0.1.35755
-r(344341),	-- Glyph of the Aerial Chameleon
-r(344340),	-- Glyph of the Aquatic Chameleon
-r(344335),	-- Glyph of the Swift Chameleon
 9.0.1.35789
 9.0.1.35828
 9.0.1.35853
@@ -1504,8 +1450,6 @@ r(344335),	-- Glyph of the Swift Chameleon
 9.1.0.38511
 9.1.0.38524
 9.1.0.38549
-r(354000),	-- Contract: Death's Advance
-r(354394),	-- Vantus Rune: Sanctum of Domination
 9.1.0.38600
 9.1.0.38627
 9.1.0.38709
@@ -1541,18 +1485,10 @@ r(354394),	-- Vantus Rune: Sanctum of Domination
 9.1.0.40593
 9.1.0.40725
 9.1.5.39977
-r(360539),	-- Mark of the Twilight Runestag
-r(360885),	-- Mark of the Midnight Runestag
-r(360899),	-- Mark of the Sable Ardenmoth
-r(360545),	-- Mark of the Shimmering Ardenmoth
-r(360880),	-- Mark of the Regal Dredbat
-r(360882),	-- Mark of the Duskwing Raven
-r(360542),	-- Mark of the Gloomstalker Dredbat
 9.1.5.40071
 9.1.5.40078
 9.1.5.40196
 9.1.5.40290
-r(362412),	-- Glyph of the Wild Mushroom
 9.1.5.40383
 9.1.5.40496
 9.1.5.40622
@@ -1573,16 +1509,11 @@ r(362412),	-- Glyph of the Wild Mushroom
 9.1.5.41793
 9.1.5.42010
 9.2.0.41089
-r(359890),	-- Vantus Rune: Sepulcher of the First Ones
-r(359786),	-- Contract: Enlightened Brokers
-r(359490),	-- Mass Mill First Flower
 9.2.0.41257
 9.2.0.41360
 9.2.0.41462
 9.2.0.41726
 9.2.0.41827
-r(367393),	-- Glyph of the Spectral Vulpine
-r(367389),	-- Glyph of the Spectral Lupine
 9.2.0.41962
 9.2.0.42069
 9.2.0.42174

@@ -685,10 +685,10 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			}),
 			r(304042),  -- Glyph of Dire Bees
 			r(309443),  -- Glyph of Lavish Servings
-			r(344341),  -- Glyph of the Aerial Chameleon
-			r(344340),  -- Glyph of the Aquatic Chameleon
+			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon*
+			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon*
 			r(225532),  -- Glyph of the Feral Chameleon
-			r(344335),  -- Glyph of the Swift Chameleon
+			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon*
 		}),
 		cat(1276, {	-- Blood Contracts
 			r(292320),	-- Blood Contract: Bloodguard
@@ -704,18 +704,69 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+		r(309805),	-- Shadowlands Inscription
+		cat(1409, {	-- Books & Scrolls
+			r(311424),	-- Codex of the Still Mind
+			r(311425),	-- Tome of the Still Mind
+			r(311423),	-- Writ of Grave Robbing
+		}),
+		cat(1411, {	-- Cards
+			r(311441),	-- Darkmoon Card of Death
+			r(324037),	-- Darkmoon Card of Putrescence
+			r(324036),	-- Darkmoon Card of Repose
+			r(324039),	-- Darkmoon Card of the Indomitable
+			r(324035),	-- Darkmoon Card of Voracity
+		}),
 		cat(1410, {	-- Contracts
-			r(354000),	-- Contract: Death's Advance
-			r(359786, {	-- Contract: The Enlightened
-				["timeline"] = { "added 9.2.0" },
-			}),
+			r(354000, {["timeline"]={"added 9.1.0"}}),	-- Contract: Death's Advance
+			r(311412),	-- Contract: Court of Harvesters
+			r(311409),	-- Contract: The Ascended
+			r(359786, {["timeline"]={"added 9.2.0"}}),	-- Contract: The Enlightened
+			r(311411),	-- Contract: The Undying Army
+			r(311410),	-- Contract: The Wild Hunt
 		}),
-		cat(1412, {	-- Mass Milling"
-			r(359490, {	-- Mass Mill First Flower
-				["timeline"] = { "added 9.2.0" },
-			}),
+		cat(786, sharedDataSelf({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
+			r(367389, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Lupine
+			r(367393, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Vulpine
+			r(362412),	-- Glyph of the Wild Mushroom
+			r(360882),	-- Mark of the Duskwing Raven
+			r(360542),	-- Mark of the Gloomstalker Dredbat
+			r(360885),	-- Mark of the Midnight Runestag
+			r(360880),	-- Mark of the Regal Dredbat
+			r(360899),	-- Mark of the Sable Ardenmoth
+			r(360545),	-- Mark of the Shimmering Ardenmoth
+			r(360539),	-- Mark of the Twilight Runestag
+		})),
+		cat(1519, {	-- Hats
+			r(334537),	-- Fae Revel Masque
 		}),
-		cat(1529, {	-- Quest Recipes
+		cat(1408, {	-- Ink
+			r(311406),	-- Luminous Ink
+			r(321029),	-- Tranquil Ink
+			r(311405),	-- Umbral Ink
+		}),
+		cat(1412, {	-- Mass Milling
+			r(311413),	-- Mass Mill Deathblossom
+			r(359490, {["timeline"]={"added 9.2.0"}}),	-- Mass Mill First Flower
+			r(311416),	-- Mass Mill Marrowroot
+			r(311418),	-- Mass Mill Nightshade
+			r(311417),	-- Mass Mill Rising Glory
+			r(311414),	-- Mass Mill Vigil's Torch
+			r(311415),	-- Mass Mill Widowbloom
+		}),
+		cat(1407, {	-- Off-Hands
+			r(311408),	-- Newly Departed Codex
+		}),
+		cat(1474, {	-- Optional Reagents
+			r(343691),	-- Crafter's Mark I
+			r(343689),	-- Crafter's Mark II
+			r(324197),	-- Missive of Critical Strike
+			r(324198),	-- Missive of Haste
+			r(324196),	-- Missive of Mastery
+			r(324195),	-- Missive of Versatility
+			r(343686),	-- Novice Crafter's Mark
+		}),
+		cat(1529, sharedDataSelf({ ["u"] = 15 }, {	-- Quest Recipes
 			r(338227),	-- Ardenberry Ink
 			r(338234),	-- Catalog of Sins
 			r(338225),	-- Hymnal of Respite
@@ -728,32 +779,15 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(338226),	-- Scroll of Calming Lyrics
 			r(338235),	-- Scroll of Castigation
 			r(338232),	-- Scroll of Unyielding Strength
-		}),
-		category(786, sharedData({ ["timeline"] = { "added 9.1.5" }},{	-- Glyphs
-			r(367389, {	-- Glyph of the Spectral Lupine
-				["timeline"] = { "added 9.2.0" },
-			}),
-			r(367393, {	-- Glyph of the Spectral Vulpine
-				["timeline"] = { "added 9.2.0" },
-			}),
-			r(362412),	-- Glyph of the Wild Mushroom
-			r(360542),	-- Mark of the Gloomstalker Dredbat
-			r(360885),	-- Mark of the Midnight Runestag
-			r(360880),	-- Mark of the Regal Dredbat
-			r(360899),	-- Mark of the Sable Ardenmoth
-			r(360545),	-- Mark of the Shimmering Ardenmoth
-			r(360539),	-- Mark of the Twilight Runestag
 		})),
-		category(1416, {	-- Vantus Runes
-			r(311453, {	-- Vantus Rune: Castle Nathria
-				["name"] = "Castle Nathria",
-			}),
-			r(354394, {	-- Vantus Rune: Sanctum of Domination
-				["name"] = "Sanctum of Domination",
-			}),
-			r(359890, {	-- Vantus Rune: Sepulcher of the First Ones
-				["timeline"] = { "added 9.2.0" },
-			}),
+		cat(1415, {	-- Staves
+			r(311688),	-- Soul Keeper's Column
+			r(311689),	-- Soul Keeper's Spire
+		}),
+		cat(1416, {	-- Vantus Runes
+			r(311453),	-- Vantus Rune: Castle Nathria
+			r(354394, {["timeline"]={"added 9.1.0"}}),	-- Vantus Rune: Sanctum of Domination
+			r(359890, {["timeline"]={"added 9.2.0"}}),	-- Vantus Rune: Sepulcher of the First Ones
 		}),
 	}))),
 	n(DISCOVERY, {

@@ -32,7 +32,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
 				["g"] = {
-					i(182082, {	-- Lurid Bloodtusk (MOUNT)
+					i(182082, {	-- Lurid Bloodtusk (MOUNT!)
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(183112, {	-- Animated Radius
@@ -54,7 +54,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
 						["cost"] = 13500000, -- 1,350g
 					}),
-					i(183104, {	-- Technique: Contract: The Undying Army
+					i(183104, {	-- Technique: Contract: The Undying Army (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves

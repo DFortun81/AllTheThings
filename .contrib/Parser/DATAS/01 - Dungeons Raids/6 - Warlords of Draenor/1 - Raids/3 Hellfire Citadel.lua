@@ -1841,7 +1841,7 @@ root("Instances", tier(WOD_TIER, {
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
 					un(REMOVED_FROM_GAME, ach(10045)),	-- Cutting Edge: The Black Gate
-					ig(123890),	-- Felsteel Annihilator (Mount)
+					ig(123890),	-- Felsteel Annihilator (MOUNT!)
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus
 					i(124372),	-- Gavel of the Eredar

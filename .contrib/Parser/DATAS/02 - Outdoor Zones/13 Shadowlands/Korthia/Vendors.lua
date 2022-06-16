@@ -529,7 +529,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 					}),
 				--	Greens
-					i(186724, {	-- Technique: Contract: Death's Advance
+					i(186724, {	-- Technique: Contract: Death's Advance (RECIPE!)
 						["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
 					}),
 				},

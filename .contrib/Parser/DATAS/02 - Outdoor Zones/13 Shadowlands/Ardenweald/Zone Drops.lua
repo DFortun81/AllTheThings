@@ -46,7 +46,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					160747,	-- Shimmerbough Ritualist
 				},
 			}),
-			i(187935, {	-- Technique: Mark of the Midnight Runestag
+			i(187935, {	-- Technique: Mark of the Midnight Runestag (RECIPE!)
 				["cr"] = 165907,	-- Runestag
 				["timeline"] = { "added 9.1.5" },
 			}),

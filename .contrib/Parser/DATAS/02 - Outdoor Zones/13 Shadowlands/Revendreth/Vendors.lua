@@ -126,7 +126,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183099, {	-- Design: Revitalizing Jewel Doublet
 						["cost"] = 13500000, -- 1,350g
 					}),
-					i(183102, {	-- Technique: Contract: Court of Harvesters
+					i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183245, {	-- Memory of Norgannon
@@ -210,7 +210,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(181799),	-- Extra Large Hat
 					i(182702),	-- Phial of Black Muck Dye
-					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat
+					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat (RECIPE!)
 						["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
 						["timeline"] = { "added 9.1.5" },
 					}),

@@ -75,7 +75,7 @@ _.Zones =
 						i(130170, {	-- Tear of the Green Aspect (TOY!)
 							["cost"] = 3000000,	-- 300g
 						}),
-						i(187932, {	-- Technique: Mark of the Duskwing Raven
+						i(187932, {	-- Technique: Mark of the Duskwing Raven (RECIPE!)
 							["cost"] = 5500000,	-- 550g
 							["timeline"] = { "added 9.1.5" },
 						}),

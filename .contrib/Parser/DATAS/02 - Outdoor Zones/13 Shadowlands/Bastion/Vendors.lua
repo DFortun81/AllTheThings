@@ -18,10 +18,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183097, {	-- Schematic: PHA7-YNX
 						-- ["cost"] = , -- TODO:
 					}),
-					i(183098, {	-- Technique: Codex of the Still Mind
+					i(183098, {	-- Technique: Codex of the Still Mind (RECIPE!)
 						-- ["cost"] = , -- TODO:
 					}),
-					i(183103, {	-- Technique: Contract: The Ascended
+					i(183103, {	-- Technique: Contract: The Ascended (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183243, {	-- Memory of the Arbiter's Judgment

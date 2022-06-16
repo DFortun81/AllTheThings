@@ -33,10 +33,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183097, {	-- Schematic: PHA7-YNX
 						-- ["cost"] = , -- TODO:
 					}),
-					i(183098, {	-- Technique: Codex of the Still Mind
+					i(183098, {	-- Technique: Codex of the Still Mind (RECIPE!)
 						-- ["cost"] = , -- TODO:
 					}),
-					i(183103, {	-- Technique: Contract: The Ascended
+					i(183103, {	-- Technique: Contract: The Ascended (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183243, {	-- Memory of the Arbiter's Judgment
@@ -187,7 +187,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
 				["coord"] = { 47.8, 77.9, ORIBOS },
 				["g"] = {
-					i(182082, {	-- Lurid Bloodtusk (MOUNT)
+					i(182082, {	-- Lurid Bloodtusk (MOUNT!)
 						["cost"] = 300000000, -- 30,000g
 					}),
 					i(183112, {	-- Animated Radius
@@ -209,7 +209,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
 						["cost"] = 13500000, -- 1,350g
 					}),
-					i(183104, {	-- Technique: Contract: The Undying Army
+					i(183104, {	-- Technique: Contract: The Undying Army (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(184741),	-- Apprentice Necromancer's Gloves
@@ -265,7 +265,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(183099, {	-- Design: Revitalizing Jewel Doublet
 						["cost"] = 13500000, -- 1,350g
 					}),
-					i(183102, {	-- Technique: Contract: Court of Harvesters
+					i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
 					i(183245, {	-- Memory of Norgannon
@@ -472,7 +472,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
 				["coord"] = { 47.0, 76.8, ORIBOS },
 				["g"] = {
-					i(180729, {	-- Duskflutter Ardenmoth (MOUNT)
+					i(180729, {	-- Duskflutter Ardenmoth (MOUNT!)
 						["cost"] = 300000000,	-- 30,000g
 					}),
 					i(178336, {	-- Tabard of the Wild Hunt
@@ -481,7 +481,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180641, {	-- Floofa
 						["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
 					}),
-					i(183093, {	-- Technique: Contract: The Wild Hunt
+					i(183093, {	-- Technique: Contract: The Wild Hunt (RECIPE!)
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183096, {	-- Formula: Sacred Shard (RECIPE!)

@@ -9,7 +9,7 @@ local GLIMMERDUSTS_GRAND_DESIGN = i(182451);
 local MIKAI_DEATHSCYTHE = i(179534);
 local DREAMERS_MENDING = i(182455);
 local MURMURS_IN_THE_DARK = i(182454);
-local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT)
+local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT!)
 	["description"] = "Available to purchase after defeating every rare at Star Lake Amphitheater",
 	["cost"] = { { "c", ANIMA, 5000 } },
 });

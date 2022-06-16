@@ -11,7 +11,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest (covenant)
 				},
 				["g"] = {
-					i(180729, {	-- Duskflutter Ardenmoth (MOUNT)
+					i(180729, {	-- Duskflutter Ardenmoth (MOUNT!)
 						["cost"] = 300000000,	-- 30,000g
 					}),
 					i(181309, {	-- Faewoven Pack
@@ -27,7 +27,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(182168, {	-- Crane Soul
 						["cost"] = { { "c", ANIMA, 1500 } },	-- Reservoir Anima
 					}),
-					i(183093, {	-- Technique: Contract: The Wild Hunt
+					i(183093, {	-- Technique: Contract: The Wild Hunt (RECIPE!)
 						["cost"] = 17650000,	-- 1,765g
 					}),
 					i(183096, {	-- Formula: Sacred Shard (RECIPE!)
@@ -54,7 +54,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184754),	-- Glitterwing Scarf
 					i(184752),	-- Gormscale Leggings
 					i(184753),	-- Tree-Scaler's Britches
-					i(187883, {	-- Technique: Mark of the Twilight Runestag
+					i(187883, {	-- Technique: Mark of the Twilight Runestag (RECIPE!)
 						["cost"] = 14120000,	-- 1,412g
 						["timeline"] = { "added 9.1.5" },
 					}),
@@ -70,14 +70,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(172634, {	-- Brightgleam
 				["coord"] = { 33.2, 51.6, ARDENWEALD },
 				["g"] = {
-					i(180782),	-- Technique: Fae Revel Masque
+					i(180782),	-- Technique: Fae Revel Masque (RECIPE!)
 				},
 			}),
 			n(165341, {	-- Droman Dawnblossom
 				["coord"] = { 38, 36.8, ARDENWEALD },
 				["g"] = {
-					recipe(360545, {	-- Mark of the Shimmering Ardenmoth
+					r(360545, {	-- Mark of the Shimmering Ardenmoth (RECIPE!)
 						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
+						["requireSkill"] = INSCRIPTION,
 						["cost"] = { { "i", 187943, 1}, },	-- 1x Fae Net
 						["timeline"] = { "added 9.1.5" },
 					}),
@@ -86,7 +87,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
 				["coord"] = { 43.0, 47.0, ARDENWEALD },
 				["g"] = {
-					i(180748, {	-- Silky Shimmermoth (MOUNT)
+					i(180748, {	-- Silky Shimmermoth (MOUNT!)
 						["cost"] = { { "c", ANIMA, 5000 } },
 					}),
 					i(175095, {	-- Book of Tickets
@@ -149,14 +150,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{ "c", GRATEFUL, 35 },
 						},
 					}),
-					i(187937, {	-- Technique: Mark of the Sable Ardenmoth
+					i(187937, {	-- Technique: Mark of the Sable Ardenmoth (RECIPE!)
 						["cost"] = {
 							{ "c", ANIMA, 1000 },
 							{ "c", GRATEFUL, 5 },
 						},
 						["timeline"] = { "added 9.1.5" },
 					}),
-					i(183053, {	-- Umbral Scythehorn (MOUNT)
+					i(183053, {	-- Umbral Scythehorn (MOUNT!)
 						["cost"] = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 5 },
@@ -169,7 +170,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
-						i(180415, {	-- Winterborn Runestag (MOUNT)
+						i(180415, {	-- Winterborn Runestag (MOUNT!)
 							["cost"] = {
 								{ "c", ANIMA, 5000 },
 								{ "c", GRATEFUL, 5 },

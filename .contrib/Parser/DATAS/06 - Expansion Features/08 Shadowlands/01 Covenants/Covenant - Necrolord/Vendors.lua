@@ -821,7 +821,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					{ 52.5, 41.2, SEAT_OF_THE_PRIMUS },
 				},
 				["g"] = {
-					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT)
+					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 						["cost"] = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 100 },

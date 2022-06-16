@@ -128,10 +128,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 									["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
 									["g"] = {
-										i(180724, {	-- Enchanted Winterborn Runestag (MOUNT)
+										i(180724, {	-- Enchanted Winterborn Runestag (MOUNT!)
 											["cost"] = { { "c", ANIMA, 5000 } },
 										}),
-										i(183801, {	-- Vibrant Flutterwing (MOUNT)
+										i(183801, {	-- Vibrant Flutterwing (MOUNT!)
 											["cost"] = { { "c", ANIMA, 5000 } },
 										}),
 										i(184118, {	-- Arsenal: Winterborn Weapons
