@@ -16811,7 +16811,6 @@ function app:GetDataCache()
 		return group;
 	end
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local primeWindow = app:GetWindow("Prime");
 	local allData = setmetatable({}, { __index = function(t, key)
 			if key == "title" then
 				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
@@ -16820,7 +16819,6 @@ function app:GetDataCache()
 			if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
 		end
 	});
-	primeWindow:SetData(allData);
 	allData.expanded = true;
 	allData.icon = app.asset("content");
 	allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
@@ -17323,8 +17321,9 @@ function app:GetDataCache()
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
-	BuildGroups(allData, allData.g);
-	app:GetWindow("Prime").data = allData;
+	local primeWindow = app:GetWindow("Prime");
+	primeWindow:SetData(allData);
+	primeWindow:BuildData();
 	CacheFields(allData);
 
 	-- Now build the hidden "Unsorted" Window's Data
@@ -17434,9 +17433,11 @@ function app:GetDataCache()
 		CacheFields(db);
 		app.ToggleCacheMaps();
 	end
-	BuildGroups(allData, allData.g);
-	app:GetWindow("Unsorted").data = allData;
+	local unsorted = app:GetWindow("Unsorted");
+	unsorted:SetData(allData);
+	unsorted:BuildData();
 
+	--[[
 	local buildCategoryEntry = function(self, headers, searchResults, inst)
 		local header = self;
 		for j,o in ipairs(searchResults) do
@@ -17571,6 +17572,7 @@ function app:GetDataCache()
 		tinsert(inst.parent.g, inst);
 		return inst;
 	end
+	-- ]]
 
 	-- Update Achievement data.
 	--[[
