@@ -21148,12 +21148,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 
 				-- put all the things into the window data, turning them into objects as well
-				-- NestObjects(self.data, temp, true);
 				NestObjects(self.data, temp);
 				-- Build the heirarchy
 				self:BuildData();
-				-- Force Update Callback
-				-- Callback(self.Update, self, true);
+				-- Force Update
 				self:Update(true);
 			end
 		end
