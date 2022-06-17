@@ -75,17 +75,17 @@ local FLAME_STEAL_REWARDS = {
 };
 
 local MERCHANT_GROUPS = {
-	i(116440, {	-- Burning Defender's Medallion (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+	i(116439, {	-- Blazing Cindercrawler (Pet)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 6.0.1.18594" },
-	}),
-	i(141649, {	-- Set of Matches (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
-		["timeline"] = { "added 7.1.0.22731" },
 	}),
 	i(34686, {	-- Brazier of Dancing Flames (TOY!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 2.4.0.7994" },
+	}),
+	i(116440, {	-- Burning Defender's Medallion (TOY!)
+		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["timeline"] = { "added 6.0.1.18594" },
 	}),
 	i(116435, {	-- Cozy Bonfire (TOY!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
@@ -95,9 +95,29 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
 		["timeline"] = { "added 8.1.5.29701" },
 	}),
-	i(116439, {	-- Blazing Cindercrawler (Pet)
+	i(188701, {	-- Fire Festival Batons (TOY!)
+		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
+		["timeline"] = { "added 9.2.0.00000" },
+	}),
+	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 6.0.1.18594" },
+		["timeline"] = { "added 4.3.0.15005" },
+	}),
+	i(188699, {	-- Insulated Dancing Insoles (TOY)
+		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
+		["timeline"] = { "added 9.2.0.00000" },
+	}),
+	i(141714, {	-- Igneous Flameling (Pet)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { "added 7.1.0.22731" },
+	}),
+	i(141649, {	-- Set of Matches (TOY!)
+		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["timeline"] = { "added 7.1.0.22731" },
+	}),
+	i(188695, {	-- Summer Cranial Skillet (TOY!)
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { "added 9.2.0.00000" },
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
@@ -105,14 +125,6 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 	}),
 	-- #endif
-	i(141714, {	-- Igneous Flameling (Pet)
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 7.1.0.22731" },
-	}),
-	i(74278, {	-- Helm of the Fire Festival
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { "added 4.3.0.15005" },
-	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
 	i(23324, {	-- Mantle of the Fire Festival
