@@ -138,6 +138,7 @@ _.Zones =
 				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
+					["descripton"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					["g"] = {
 						n(WEAPONS, {
 							i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
@@ -2266,6 +2267,7 @@ _.Zones =
 				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, TANARIS },
+					["descripton"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
