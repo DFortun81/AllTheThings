@@ -173,7 +173,7 @@ root("Zones", m(KALIMDOR, {
 							["provider"] = { "n", 38440 },	-- Tortunga
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 58.9, 23.1, ECHO_ISLES },
+								{ 58.9, 66.8, ECHO_ISLES },
 								-- #else
 								{ 69, 88.6, DUROTAR },
 								-- #endif

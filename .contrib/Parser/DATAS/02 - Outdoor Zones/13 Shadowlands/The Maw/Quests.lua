@@ -538,7 +538,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["maps"] = { 1648 },	-- pre-SL scenario
 			}),
 			q(62461, {	-- Stalking the Warrens
-			--	TODO: may also require 'rule 6 addendum,' not sure
 				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.8, 41.6, THE_MAW },

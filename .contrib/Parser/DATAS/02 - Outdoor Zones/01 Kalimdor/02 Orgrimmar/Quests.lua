@@ -589,7 +589,7 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 47571 },	-- Belloc Brightblade
-				["coord"] = { 48.9, 91.4, ORGRIMMAR },
+				["coord"] = { 49.1, 70.5, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(51443, {	-- Mission Statement (BfA version)

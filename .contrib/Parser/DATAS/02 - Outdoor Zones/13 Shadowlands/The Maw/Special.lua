@@ -11,6 +11,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(-909,  {	-- Hunt: Death Elementals
 				["isWeekly"] = true,
 				["questID"] = 63198,
+				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["crs"] = {
 					172962,	-- Tempered Stygia
 				},
@@ -23,6 +24,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(-910,  {	-- Hunt: Alpha Devourers
 				["isWeekly"] = true,
 				["questID"] = 63199,
+				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["crs"] = {
 					175851,	-- Alpha Anima Devourer
 				},
@@ -36,6 +38,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(-911,  {	-- Hunt: Shadehounds
 				["isWeekly"] = true,
 				["questID"] = 63180,
+				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["cr"] = 174861,	-- Gorged Shadehound
 				["g"] = {
 					n(174861, {	-- Gorged Shadehound
@@ -55,6 +58,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			n(-912,  {	-- Hunt: Winged Soul Eaters
 				["isWeekly"] = true,
 				["questID"] = 63194,
+				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["crs"] = {
 					-- TODO: another NPC is part of the final objective
 					173195,	-- Undying Soulbinder
