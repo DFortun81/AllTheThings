@@ -4514,10 +4514,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], color = app.Colors.SourceIgnored });
 			end
 		end
-		-- Ignored for Source/Progress
-		if group.sourceIgnored then
-			tinsert(info, { left = L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] });
-		end
 	end
 
 	-- delete sub-groups if there are none
@@ -4971,6 +4967,7 @@ app.ThingKeys = {
 	["speciesID"] = true,
 	["recipeID"] = true,
 	["spellID"] = true,
+	["illusionID"] = true,
 	["questID"] = true,
 	["objectID"] = true,
 	["encounterID"] = true,
@@ -16053,10 +16050,6 @@ RowOnEnter = function (self)
 			if reference.pvp then
 				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 			end
-			-- Ignored for Source/Progress
-			if reference.sourceIgnored then
-				GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
-			end
 			-- Has a symlink for additonal information
 			if reference.sym then
 				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
@@ -16065,6 +16058,10 @@ RowOnEnter = function (self)
 			GameTooltip.AttachComplete = true;
 		end
 
+		-- Ignored for Source/Progress
+		if reference.sourceIgnored then
+			GameTooltip:AddLine(L["DOES_NOT_CONTRIBUTE_TO_PROGRESS"], 1, 1, 1, 1, true);
+		end
 		-- Further conditional texts that can be displayed
 		if reference.timeRemaining then
 			GameTooltip:AddLine(reference.timeRemaining);
