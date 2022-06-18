@@ -21,7 +21,10 @@ _.Instances = { tier(CATA_TIER, {
 					},
 				}),
 				q(30096, {	-- Murozond
-					["sourceQuests"] = { 30095 },	-- The End Time
+					["sourceQuests"] = {
+						30094,	-- The End Time (Horde)
+						30095,	-- The End Time (Alliance)
+					},
 					["provider"] = { "n", 54751 },	-- Nozdormu
 					["g"] = {
 						i(72873),	-- Bronze Blaster
