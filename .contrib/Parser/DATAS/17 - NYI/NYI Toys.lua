@@ -94,12 +94,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(183810);	-- Shadowlands Mini: Grandmaster Vole (TOY!)
 			}),
 			tier(SL_TIER, 1.5, {
-				i(188701),	-- Fire Festival Batons (TOY!) (Midsummer)
-				i(188699),	-- Insulated Dancing Insoles (TOY!) (Midsummer)
 				i(187861),	-- Magical Seeds (TOY!)
 				i(187958),	-- Shrouded Banner of the Opportune (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
-				i(188695),	-- Summer Cranial Skillet (TOY!) (Midsummer)
 			}),
 			tier(SL_TIER, 2.0, {
 				i(190196),	-- Enlightened Hearthstone (TOY!)

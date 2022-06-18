@@ -994,6 +994,7 @@ i(187705);	-- Choofa's Call
 i(188698);	-- Eagger Basket
 i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
+i(188699);	-- Insulated Dancing Insoles
 i(187591);	-- Nightborne Guard's Vigilance
 i(187422);	-- Rockin' Rollin' Racer Customizer 19.9.3
 i(187896);	-- Scouting Map: A Stormstout's Guide to Pandaria
@@ -1007,15 +1008,14 @@ i(187875);	-- Scouting Map: United Fronts of the Broken Isles
 i(187840);	-- Sparkle Wings
 i(188694);	-- Spring Florist's Pouch
 i(187419);	-- Steward's First Feather
+i(188695);	-- Summer Cranial Skillet
 i(187512);	-- Tome of Small Sins
 i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
 -- NYI --
-i(188699);	-- Insulated Dancing Insoles
 i(187861);	-- Magical Seeds
 i(187958);	-- Shrouded Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
-i(188695);	-- Summer Cranial Skillet
 
 -----------------
 -- PATCH 9.2.0 --
