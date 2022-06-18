@@ -962,7 +962,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							["sourceQuests"] = { 44328 },	-- Owlcat Stone Activate [Hinterlands]
 						}),
 						n(113663, {	-- Ela'lothen <The Moonspirit>
-							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
+							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a description added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
 							["sourceQuests"] = { 44330, 44331, 44332 },	--
 							["g"] = {
 								i(139552, {	-- Feather of the Moonspirit
