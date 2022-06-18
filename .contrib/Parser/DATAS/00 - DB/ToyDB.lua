@@ -1013,7 +1013,7 @@ i(188680);	-- Winter Veil Chorus Book
 -- NYI --
 i(188699);	-- Insulated Dancing Insoles
 i(187861);	-- Magical Seeds
-i(187958);	-- PH - Banner of the Opportune
+i(187958);	-- Shrouded Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
 i(188695);	-- Summer Cranial Skillet
 
