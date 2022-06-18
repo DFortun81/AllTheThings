@@ -34,6 +34,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					}),
 				}),
 			}),
+			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },
@@ -57,6 +58,46 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 61440 },
 				}),
 			})),
+			-- #endif
+			-- #if ANYCLASSIC
+			n(EXPLORATION, {
+				exploration(345, "265:270:345:389"),	-- Agmond's End
+				exploration(338, "195:200:325:148"),	-- Angor Fortress
+				-- #if AFTER TBC
+				exploration(337, "256:256:17:310"),		-- Apocryphan's Rest [TBC]
+				-- #else
+				exploration(337, "255:205:17:310"),		-- Apocryphan's Rest [Classic]
+				-- #endif
+				exploration(342, "255:280:501:341"),	-- Camp Boff
+				-- #if AFTER TBC
+				exploration(344, "256:256:12:428"),		-- Camp Cagg [TBC]
+				-- #else
+				exploration(344, "255:220:12:428"),		-- Camp Cagg [Classic]
+				-- #endif
+				exploration(341, "220:220:551:48"),		-- Camp Kosh
+				exploration(1898, "245:205:498:209"),	-- Dustwind Gulch
+				exploration(346, "200:195:445:120"),	-- Hammertoe's Digsite
+				-- #if AFTER TBC
+				exploration(340, "256:256:0:148"),		-- Kargath [TBC]
+				-- #else
+				exploration(340, "240:255:0:148"),		-- Kargath [Classic]
+				-- #endif
+				exploration(339, "370:455:611:110"),	-- Lethlor Ravine
+				-- #if AFTER TBC
+				exploration(1879, "256:256:148:384"),	-- Mirage Flats [TBC]
+				-- #else
+				exploration(1879, "285:240:148:384"),	-- Mirage Flats [Classic]
+				-- #endif
+				exploration(1878, "270:275:159:199"),	-- The Dustbowl
+				exploration(1897, "245:205:389:7"),		-- The Maker's Terrace
+				exploration(1877, "230:230:349:256"),	-- Valley of Fangs
+				--[[
+				exploration(343, ""),	-- Camp Wurg
+				exploration(347, ""),	-- Dustbelch Grotto
+				exploration(1517, ""),	-- Uldaman
+				]]--
+			}),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
 					["coord"] = { 52.4, 50.6, BADLANDS },
@@ -877,35 +918,77 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
-				n(14224, {	-- 7:XT
+				n(14224, {	-- 7:XT <Long Distance Recovery Unit>
+					-- #if AFTER CATA
 					["coord"] = { 78.6, 31.6, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 24.0, 52.6, BADLANDS },
+						{ 12.8, 67.0, BADLANDS },
+						{ 19.4, 80.6, BADLANDS },
+						{ 29.0, 68.6, BADLANDS },
+						{ 55.4, 53.2, BADLANDS },
+						{ 58.4, 67.6, BADLANDS },
+						{ 55.4, 83.8, BADLANDS },
+					},
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
 				}),
 				n(2754, {	-- Anathemus
+					-- #if AFTER CATA
 					["coord"] = { 8.8, 67.0, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 48.0, 47.4, BADLANDS },
+						{ 58.0, 57.0, BADLANDS },
+						{ 52.0, 75.4, BADLANDS },
+						{ 37.6, 71.4, BADLANDS },
+						{ 17.0, 82.2, BADLANDS },
+						{ 11.8, 72.6, BADLANDS },
+						{ 25.6, 52.6, BADLANDS },
+						{ 35.4, 58.0, BADLANDS },
+						{ 43.0, 54.2, BADLANDS },
+					},
+					-- #endif
 				}),
 				n(2753, {	-- Barnabus
+					-- #if AFTER CATA
 					["coord"] = { 40.8, 58.8, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 57.2, 57.0, BADLANDS },
+						{ 54.0, 68.6, BADLANDS },
+						{ 46.2, 74.2, BADLANDS },
+						{ 38.2, 69.4, BADLANDS },
+					},
+					-- #endif
 				}),
-				n(2749, {	-- Barricade
+				-- #if AFTER CATA
+				n(2749, {	-- Barricade [CATA+] / Siege Golem
 					["coords"] = {
 						{ 9.60, 48.8, BADLANDS },
 						{ 27.2, 37.4, BADLANDS },
 					},
 				}),
+				-- #endif
 				n(51000, {	-- Blackshell the Impenetrable
 					["coord"] = { 72.2, 27.4, BADLANDS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(2850, {	-- Broken Tooth
+					-- #if AFTER CATA
 					["coord"] = { 22.6, 60.6, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 54.0, 16.6, BADLANDS },
+						{ 45.4, 36.8, BADLANDS },
+						{ 62.0, 32.8, BADLANDS },
+					},
+					-- #endif
 				}),
 				n(50728, {	-- Deathstrike
 					["coord"] = { 70.2, 53.8, BADLANDS },
-				}),
-				n(2719, {	-- Dustbelcher Lord
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(1521)),	-- Lumbering Ogre Axe
-					},
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(50726, {	-- Kalixx
 					["coord"] = { 32.0, 35.6, BADLANDS },
@@ -941,6 +1024,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(49918, {	-- Buckslappy <Engineering Supply Specialist>
 					["coord"] = { 91.0, 38.4, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
 						i(18649, {	-- Schematic: Blue Firework
 							["isLimited"] = true,
@@ -958,6 +1042,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				n(48060, {	-- "Chef" Overheat <Cooking Supplies>
 					["coord"] = { 65.0, 38.8, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -966,15 +1051,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(9179, {	-- Jazzrik <Blacksmithing Supplies>
+					["coord"] = { 42.4, 52.5, BADLANDS },
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
+					["groups"] = {
+						i(10858),	-- Plans: Solid Iron Maul
+					},
+					-- #endif
+				}),
 			}),
 			n(ZONE_DROPS, {
-				i(10822, {	-- Dark Whelpling (PET!)
-					["crs"] = {
-						46916,	-- Nyxondra's Broodling
-						46914,	-- Raging Whelp
-						2725,	-- Scalding Whelp
-					},
-				}),
 				i(9393, {	-- Beacon of Hope
 					["crs"] = {
 						4846,	-- Shadowforge Digger
@@ -982,12 +1069,37 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						4844,	-- Shadowforge Surveyor
 					},
 				}),
-				n(2740, {	-- Shadowforge Darkweaver	-- Coded this way to put the red text on item.
-					un(REMOVED_FROM_GAME, i(2621)),	-- Cowl of Necromancy
+				i(2621, {	-- Cowl of Necromancy
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 2740,	-- Shadowforge Darkweaver
+				}),
+				i(10822, {	-- Dark Whelpling (PET!)
+					-- #if AFTER CATA
+					["crs"] = {
+						46916,	-- Nyxondra's Broodling
+						46914,	-- Raging Whelp
+						2725,	-- Scalding Whelp
+					},
+					-- #else
+					["cr"] = 2725,	-- Scalding Whelp
+					-- #endif
 				}),
 				i(9386, {	-- Excavator's Brand
-					["crs"] = { 4846 },	-- Shadowforge Digger
+					["crs"] = {
+						4846,	-- Shadowforge Digger
+						4845,	-- Shadowforge Ruffian
+						4844,	-- Shadowforge Surveyor
+					},
 				}),
+				i(1521, {	-- Lumbering Ogre Axe
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 2719,	-- Dustbelcher Lord
+				}),
+				-- #if BEFORE 4.0.3
+				i(1993, {	-- Ogremind Ring
+					["cr"] = 2907,	-- Dustbelcher Mystic
+				}),
+				-- #endif
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = {
 						4846,	-- Shadowforge Digger
@@ -998,6 +1110,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(9384, {	-- Stonevault Shiv
 					["crs"] = {
 						4846,	-- Shadowforge Digger
+						4845,	-- Shadowforge Ruffian
 						4844,	-- Shadowforge Surveyor
 					},
 				}),
@@ -1005,14 +1118,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						4846,	-- Shadowforge Digger
 						4845,	-- Shadowforge Ruffian
+						4844,	-- Shadowforge Surveyor
 					},
 				}),
 				i(2624, {	-- Thinking Cap
-					["crs"] = { 2718 },	-- Dustbelcher Shaman
+					["cr"] = 2718,	-- Dustbelcher Shaman
 				}),
 				i(9428, {	-- Unearthed Bands
 					["crs"] = {
 						4846,	-- Shadowforge Digger
+						4845,	-- Shadowforge Ruffian
 						4844,	-- Shadowforge Surveyor
 					},
 				}),
