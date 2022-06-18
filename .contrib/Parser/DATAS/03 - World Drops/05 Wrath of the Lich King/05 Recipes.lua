@@ -85,7 +85,9 @@ _.WorldDrops =
 				i(41787),	-- Design: Thundering Skyflare Diamond
 			}),
 			prof(TAILORING, {
-				i(43876),	-- A Guide to Northern Cloth Scavenging
+				i(43876, {	-- A Guide to Northern Cloth Scavenging
+					["f"] = MISC,
+				}),
 				-- #if AFTER 8.0.1.10000
 				i(39152),	-- Manual: Heavy Frostweave Bandage
 				-- #endif
