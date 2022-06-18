@@ -8242,7 +8242,7 @@ local CustomCollectQuests = {
 	[65079] = 1,	-- Shadowlands - Covenant - Necrolord
 };
 local function RefreshQuestCompletionState(questID)
-	-- print("QuestRefresh",questID)
+	-- app.PrintDebug("RefreshQuestCompletionState",questID)
 	if questID then
 		CompletedQuests[questID] = true;
 	else
@@ -8265,6 +8265,7 @@ local function RefreshQuestCompletionState(questID)
 	app:RegisterEvent("CRITERIA_UPDATE");
 	wipe(DirtyQuests);
 	wipe(npcQuestsCache);
+	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 end
 app.RefreshQuestInfo = function(questID)
 	-- print("RefreshQuestInfo",questID)
@@ -15138,7 +15139,7 @@ local function SetRowData(self, row, data)
 end
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
-	-- print("Refresh:",self.Suffix)
+	-- app.PrintDebug("Refresh:",self.Suffix)
 	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	if self:GetHeight() < 40 then
 		self.CloseButton:Hide();
@@ -15239,6 +15240,7 @@ local function Refresh(self)
 		Callback(self.Update, self, true);
 		self.doUpdate = nil;
 	end
+	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
 end
 local function IsSelfOrChild(self, focus)
 	-- This function helps validate that the focus is within the local hierarchy.
