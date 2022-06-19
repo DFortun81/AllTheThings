@@ -3,35 +3,52 @@
 ---------------------------------------------------
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(BADLANDS, {
+		-- #if AFTER CATA
 		["lore"] = "Badlands is a scorched zone and the home of the Earthen, Dark Iron Dwarves, and Goblins in Fuselight-by-the-Sea. Formerly a short zone before Cataclysm, it now has two notable chains: The Day Deathwing Died, and the sad tale of the dragon Rhea.",
+		-- #else
+		["lore"] = "The Badlands is a region in Khaz Modan accessed via the Searing Gorge to the west and Loch Modan to the north.\n\nThe Badlands are a cracked desert of dry earth, scattered boulders, and winding canyons. Dark Iron dwarves clash with ogres and drakes, while Horde orcs man a fortress to keep watch on their renegade brethren in the eastern lands. Ironforge prospectors search this desolate land for Titan artifacts, inspired by the recently unearthed Uldaman — an immense ruin that held the first clues to the dwarves’ lofty origins. Stonevault troggs, released after millennia of slumber, slaughtered the explorers and viciously defend their stolen city.",
+		-- #endif
 		-- #if AFTER WRATH
-		["achievementID"] = 765,
+		["icon"] = "Interface\\Icons\\achievement_zone_badlands_01",
 		-- #endif
 		-- #if NOT ANYCLASSIC
 		["maps"] = { 16 },	-- Uldaman
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5444),	-- Ready, Set, Goat!
 				ach(4900, {	-- Badlands Quests
-					crit(1, {	-- Rhea
-						["sourceQuest"] = 27769,	-- Rhea Revealed
-					}),
-					crit(2, {	-- The Fate of a Dragonflight
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 27930,	-- Devastation
-					}),
-					crit(3, {	-- The Titans' Knowledge (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 27794,	-- Return to Blam (A)
-					}),
-					crit(3, {	-- The Titans' Knowledge (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 27888,	-- Return to Blam (H)
-					}),
-					crit(4, {	-- The Day that Deathwing Came
-						["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
-					}),
+					["timeline"] = { "added 4.0.3" },
+					["groups"] = {
+						crit(1, {	-- Rhea
+							["sourceQuest"] = 27769,	-- Rhea Revealed
+						}),
+						crit(2, {	-- The Fate of a Dragonflight
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 27930,	-- Devastation
+						}),
+						crit(3, {	-- The Titans' Knowledge (A)
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 27794,	-- Return to Blam (A)
+						}),
+						crit(3, {	-- The Titans' Knowledge (H)
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 27888,	-- Return to Blam (H)
+						}),
+						crit(4, {	-- The Day that Deathwing Came
+							["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
+						}),
+					},
+				}),
+				removeclassicphase(ach(765, {	-- Explore Badlands
+					-- #if BEFORE WRATH
+					["description"] = "Explore Badlands, revealing the covered areas of the world map.",
+					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
+					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
+					-- #endif
+				})),
+				ach(5444, {	-- Ready, Set, Goat!
+					["timeline"] = { "added 4.0.3" },
+					["cr"] = 46393,	-- Billy Goat
 				}),
 			}),
 			-- #if AFTER MOP
@@ -101,18 +118,35 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
 					["coord"] = { 52.4, 50.6, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["cr"] = 44408,	-- Selara <Flight Master>
+					["races"] = HORDE_ONLY,
 				}),
 				fp(634, {	-- Dragon's Mouth, Badlands
 					["coord"] = { 21.6, 57.6, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["cr"] = 44410,	-- Jake Badlands <Flight Master>
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(633, {	-- Dustwind Dig, Badlands
 					["coord"] = { 48.8, 36.2, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["cr"] = 44409,	-- Nancy Skybrew <Flight Master>
+					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(635, {	-- Fuselight, Badlands
 					["coord"] = { 64.2, 35.2, BADLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["cr"] = 44407,	-- Mixi Sweetride <Flight Master>
 				}),
-				fp(21, {	-- New Kargath, Badlands
+				fp(21, {	-- Kargath / New Kargath [CATA+], Badlands
+					["cr"] = 2861,	-- Gorrik <Wind Rider Master>
+					-- #if AFTER CATA
 					["coord"] = { 17.2, 40.2, BADLANDS },
+					-- #else
+					["coord"] = { 4.0, 44.8, BADLANDS },
+					-- #endif
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			n(QUESTS, {
@@ -992,33 +1026,80 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				n(50726, {	-- Kalixx
 					["coord"] = { 32.0, 35.6, BADLANDS },
+					["timeline"] = { "added 5.2.0.16408" },
 				}),
 				n(50731, {	-- Needlefang
 					["coord"] = { 50.8, 72.6, BADLANDS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				n(2752, {	-- Rumbler
+					-- #if AFTER CATA
 					["coord"] = { 16.0, 29.4, BADLANDS },
-				}),
-				n(2744, {	-- Shadowforge Commander
-					["coord"] = { 39.6, 24.6, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 3.4, 78.8, BADLANDS },
+						{ 15.6, 89.0, BADLANDS },
+					},
+					-- #endif
 				}),
 				n(51007, {	-- Serkett
 					["coord"] = { 26.8, 38.0, BADLANDS },
+					["timeline"] = { "added 5.2.0.16650" },
+				}),
+				n(2744, {	-- Shadowforge Commander
+					-- #if AFTER CATA
+					["coord"] = { 39.6, 24.6, BADLANDS },
+					-- #else
+					["coord"] = { 41.2, 26.2, BADLANDS },
+					-- #endif
 				}),
 				n(50838, {	-- Tabbs
 					["coord"] = { 58.6, 60.6, BADLANDS },
+					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				n(51021, {	-- Vorticus
 					["coord"] = { 23.2, 37.6, BADLANDS },
+					["timeline"] = { "added 5.1.0.16231" },
 				}),
+				-- #if BEFORE CATA
+				n(2749, {	-- Siege Golem / Barricade [CATA+]
+					["coords"] = {
+						{ 5.6, 59.8, BADLANDS },
+						{ 13.4, 65.4, BADLANDS },
+						{ 19.0, 60.0, BADLANDS },
+						{ 30.0, 61.0, BADLANDS },
+						{ 35.6, 43.6, BADLANDS },
+						{ 43.0, 39.0, BADLANDS },
+					},
+				}),
+				-- #endif
 				n(2751, {	-- War Golem
+					-- #if AFTER CATA
 					["coord"] = { 49.0, 25.4, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 47.8, 13.2, BADLANDS },
+						{ 52.0, 28.2, BADLANDS },
+						{ 45.6, 33.2, BADLANDS },
+					},
+					-- #endif
 				}),
 				n(2931, {	-- Zaricotl
+					-- #if AFTER CATA
 					["coord"] = { 56.6, 44.0, BADLANDS },
+					-- #else
+					["coords"] = {
+						{ 3.6, 44.2, BADLANDS },
+						{ 34.6, 53.8, BADLANDS },
+						{ 37.2, 68.0, BADLANDS },
+						{ 56.0, 57.4, BADLANDS },
+						{ 55.8, 64.6, BADLANDS },
+					},
+					-- #endif
 				}),
 				n(51018, {	-- Zormus
 					["coord"] = { 51.8, 34.2, BADLANDS },
+					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
 			n(VENDORS, {
@@ -1122,6 +1203,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2624, {	-- Thinking Cap
+					["timeline"] = { "removed 4.0.3", "added 8.0.0" },
 					["cr"] = 2718,	-- Dustbelcher Shaman
 				}),
 				i(9428, {	-- Unearthed Bands
