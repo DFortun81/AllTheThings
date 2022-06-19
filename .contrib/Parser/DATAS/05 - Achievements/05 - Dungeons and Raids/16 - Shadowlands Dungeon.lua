@@ -51,12 +51,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(14197),	-- Sanguine Depths
 			ach(14198),	-- Heroic: Sanguine Depths
 		}),
-		ach(15652, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: So'leah's Gambit
 		ach(14325, {	-- Mythic: Spires of Ascension
 			ach(14326),	-- Spires of Ascension
 			ach(14324),	-- Heroic: Spires of Ascension
 		}),
-		ach(15650, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: Streets of Wonder
 		ach(14368, {	-- Mythic: The Necrotic Wake
 			ach(14366),	-- The Necrotic Wake
 			ach(14367),	-- Heroic: The Necrotic Wake

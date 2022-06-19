@@ -14060,7 +14060,12 @@ local function UpdateGroup(parent, group, window)
 		if not group.sourceIgnored then
 			parent.total = (parent.total or 0) + group.total;
 			parent.progress = (parent.progress or 0) + group.progress;
-		-- else
+		else
+			-- source ignored group which is determined to be visible should ensure the parent is also visible
+			if group.visible then
+				parent.forceShow = true;
+				-- app.PrintDebug("Force Show Parent",parent.text,"via incomplete Source Ignored",group.text)
+			end
 			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
 		end
 	end

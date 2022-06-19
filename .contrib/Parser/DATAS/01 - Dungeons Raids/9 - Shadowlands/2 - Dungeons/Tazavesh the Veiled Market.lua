@@ -396,6 +396,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 					e(2451, {	-- So'azmi
 						["crs"] = { 175806 },	-- So'azmi
 						["g"] = {
+							ach(15650, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: Streets of Wonder
 							i(181707),	-- Diverted Energy
 							i(182449),	-- Resolute Barrier
 							i(182605),	-- Tactical Retreat
@@ -455,6 +456,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 								i(186637),	-- Tazavesh Gearglider (MOUNT!)
 							}),
 							ach(15177),	-- Tazavesh, the Veiled Market
+							ach(15652, {["timeline"] = { "added 9.2.5" }}),	-- Mythic: So'leah's Gambit
 							i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 							i(181838),	-- Charitable Soul
 							i(182304),	-- Divine Call

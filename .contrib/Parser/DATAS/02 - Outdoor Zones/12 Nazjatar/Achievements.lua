@@ -81,40 +81,34 @@ _.Zones =
 				ach(13635),		-- Tour of the Depths
 				ach(13690),		-- Nazjatarget Elminated
 				ach(13691),		-- I Thought You Said They'd Be Rare?
-				ach(13762, {	-- Aqua Team Murder Force (A)
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						ach(13744),	-- Seasoned: Bladesman Inowari
-						ach(13745),	-- Seasoned: Farseer Ori
-						ach(13743),	-- Seasoned: Hunter Akana
-						ach(13754),	-- Veteran: Bladesman Inowari
-						ach(13755),	-- Veteran: Farseer Ori
-						ach(13753),	-- Veteran: Hunter Akana
-						ach(13704, {	-- Nautical Battlefield Training
-							["description"] = "Requires hitting Rank 20 with each bodyguard.",
-						}),
-						ach(13759),	-- Battle-Scarred: Bladesman Inowari
-						ach(13760),	-- Battle-Scarred: Farseer Ori
-						ach(13758),	-- Battle-Scarred: Hunter Akana
-					},
-				}),
-				ach(13761, {	-- Aqua Team Murder Force (H)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						ach(13746),	-- Seasoned: Neri Sharpfin
-						ach(13747),	-- Seasoned: Poen Gillbrack
-						ach(13748),	-- Seasoned: Vim Brineheart
-						ach(13749),	-- Veteran: Neri Sharpfin
-						ach(13751),	-- Veteran: Poen Gillbrack
-						ach(13752),	-- Veteran: Vim Brineheart
-						ach(13645, {	-- Nautical Battlefield Training
-							["description"] = "Requires hitting Rank 20 with each bodyguard.",
-						}),
-						ach(13750),	-- Battle-Scarred: Neri Sharpfin
-						ach(13756),	-- Battle-Scarred: Poen Gillbrack
-						ach(13757),	-- Battle-Scarred: Vim Brineheart
-					},
-				}),
+				ach(13762, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{	-- Aqua Team Murder Force (A)
+					ach(13744),	-- Seasoned: Bladesman Inowari
+					ach(13745),	-- Seasoned: Farseer Ori
+					ach(13743),	-- Seasoned: Hunter Akana
+					ach(13754),	-- Veteran: Bladesman Inowari
+					ach(13755),	-- Veteran: Farseer Ori
+					ach(13753),	-- Veteran: Hunter Akana
+					ach(13704, {	-- Nautical Battlefield Training
+						["description"] = "Requires hitting Rank 20 with each bodyguard.",
+					}),
+					ach(13759),	-- Battle-Scarred: Bladesman Inowari
+					ach(13760),	-- Battle-Scarred: Farseer Ori
+					ach(13758),	-- Battle-Scarred: Hunter Akana
+				})),
+				ach(13761, bubbleDownSelf({["races"] = HORDE_ONLY},{	-- Aqua Team Murder Force (H)
+					ach(13746),	-- Seasoned: Neri Sharpfin
+					ach(13747),	-- Seasoned: Poen Gillbrack
+					ach(13748),	-- Seasoned: Vim Brineheart
+					ach(13749),	-- Veteran: Neri Sharpfin
+					ach(13751),	-- Veteran: Poen Gillbrack
+					ach(13752),	-- Veteran: Vim Brineheart
+					ach(13645, {	-- Nautical Battlefield Training
+						["description"] = "Requires hitting Rank 20 with each bodyguard.",
+					}),
+					ach(13750),	-- Battle-Scarred: Neri Sharpfin
+					ach(13756),	-- Battle-Scarred: Poen Gillbrack
+					ach(13757),	-- Battle-Scarred: Vim Brineheart
+				})),
 				ach(13549),		-- Trove Tracker
 				ach(13711),		-- A Fistful of Manapearls
 				ach(13722, {	-- Terror of the Tadpoles

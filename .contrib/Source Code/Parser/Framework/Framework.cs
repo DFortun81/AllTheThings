@@ -1485,17 +1485,18 @@ namespace ATT
                             ["sourceIgnored"] = true
                         };
                         // verify that random other stuff contained within Achievements is not duplicated.... (like Raid Encounters...)
-                        if (cloned.TryGetValue("g", out List<object> achGroups))
-                        {
-                            List<object> cleanedGroups = new List<object>();
-                            foreach (object achGroup in achGroups)
-                            {
-                                // something inside the achievement that contains its own things... don't duplicate that
-                                if (achGroup is Dictionary<string, object> groupInfo && !groupInfo.ContainsKey("g"))
-                                    cleanedGroups.Add(achGroup);
-                            }
-                            cloned["g"] = cleanedGroups;
-                        }
+                        cloned.Remove("g");
+                        //if (cloned.TryGetValue("g", out List<object> achGroups))
+                        //{
+                        //    List<object> cleanedGroups = new List<object>();
+                        //    foreach (object achGroup in achGroups)
+                        //    {
+                        //        // something inside the achievement that contains its own things... don't duplicate that
+                        //        if (achGroup is Dictionary<string, object> groupInfo && !groupInfo.ContainsKey("g"))
+                        //            cleanedGroups.Add(achGroup);
+                        //    }
+                        //    cloned["g"] = cleanedGroups;
+                        //}
                         DuplicateGroupListIntoObjects(groupIDs, cloned, type);
                         break;
                     case "objectiveID":

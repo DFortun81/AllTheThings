@@ -283,6 +283,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
+			n(ACHIEVEMENTS, {
+				ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
+					["sourceQuests"] = {
+						65788,	-- A Walk with Ghosts
+						65669,	-- Report to Greymane
+					},
+					["g"] = {
+						title(460),	-- <Name> of Lordaeron
+					},
+				})),
+			}),
 			n(ARTIFACTS, {
 				["lvl"] = 98,
 				["groups"] = {
