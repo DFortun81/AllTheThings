@@ -2355,7 +2355,7 @@ for key,value in pairs({
 	[276491] = "Cofre krokul perdido",	-- Lost Krokul Chest
 	[276513] = "Pezfango intacto",	-- Intact Mudfish
 	[276515] = "Caña de pescar",	-- Fishing Rod
-	[276623] = "Depósito de platino rico",	-- Treasure Chest
+	[276623] = "Arqueta",	-- Treasure Chest
 	[276735] = "Ofrenda de los elegidos",	-- Offerings of the Chosen
 	[276837] = "Roca de recetas",	-- Recipe Rock
 	[277199] = "Lista de encargos deteriorada",	-- Weathered Job List

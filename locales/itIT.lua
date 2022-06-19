@@ -2347,7 +2347,7 @@ for key,value in pairs({
 	[276491] = "Forziere del Krokul Perduto",	-- Lost Krokul Chest
 	[276513] = "Pescefango Intatto",	-- Intact Mudfish
 	[276515] = "Bastone da Pesca",	-- Fishing Rod
-	[276623] = "Deposito Ricco di Platino",	-- Treasure Chest
+	[276623] = "Cassa del Tesoro",	-- Treasure Chest
 	[276735] = "Offerte del Prescelto",	-- Offerings of the Chosen
 	[276837] = "Roccia con Ricetta",	-- Recipe Rock
 	[277199] = "Lista di Lavori Logora",	-- Weathered Job List

@@ -2352,7 +2352,7 @@ for key,value in pairs({
 	[276491] = "Verlorene Krokultruhe",	-- Lost Krokul Chest
 	[276513] = "Intakter Matschflosser",	-- Intact Mudfish
 	[276515] = "Angelrute",	-- Fishing Rod
-	[276623] = "Reiches Platinvorkommen",	-- Treasure Chest
+	[276623] = "Schatztruhe",	-- Treasure Chest
 	[276735] = "Opfergaben der Auserwählten",	-- Offerings of the Chosen
 	[276837] = "Rezeptstein",	-- Recipe Rock
 	[277199] = "Verwitterte Auftragsliste",	-- Weathered Job List

@@ -2351,7 +2351,7 @@ for key,value in pairs({
 	--TODO: [276491] = "Lost Krokul Chest",	-- Lost Krokul Chest
 	[276513] = "온전한 모래무지",	-- Intact Mudfish
 	[276515] = "낚싯대",	-- Fishing Rod
-	[276623] = "풍부한 백금 광맥",	-- Treasure Chest
+	[276623] = "보물 상자",	-- Treasure Chest
 	[276735] = "선택받은 자의 제물",	-- Offerings of the Chosen
 	[276837] = "요리법이 새겨진 바위",	-- Recipe Rock
 	[277199] = "풍파에 시달린 일자리 목록",	-- Weathered Job List

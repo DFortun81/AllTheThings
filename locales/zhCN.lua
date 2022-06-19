@@ -2351,7 +2351,7 @@ for key, value in pairs({
 	--TODO: [276491] = "Lost Krokul Chest",	-- Lost Krokul Chest
 	[276513] = "完整的泥鱼",	-- Intact Mudfish
 	[276515] = "钓鱼竿",	-- Fishing Rod
-	[276623] = "富白金矿脉",	-- Treasure Chest
+	[276623] = "宝箱",	-- Treasure Chest
 	[276735] = "天选者的贡品",	-- Offerings of the Chosen
 	[276837] = "配方石",	-- Recipe Rock
 	[277199] = "褪色的工作清单",	-- Weathered Job List

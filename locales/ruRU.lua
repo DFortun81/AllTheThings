@@ -2338,7 +2338,7 @@ for key,value in pairs({
 	[276491] = "Потерянный сундук крокула",	-- Lost Krokul Chest
 	[276513] = "Нетронутая ильница",	-- Intact Mudfish
 	[276515] = "Удочка",	-- Fishing Rod
-	[276623] = "Богатые залежи платины",	-- Treasure Chest
+	[276623] = "Сундук с сокровищами",	-- Treasure Chest
 	[276735] = "Подношения Избранных",	-- Offerings of the Chosen
 	[276837] = "Камень с рецептом",	-- Recipe Rock
 	[277199] = "Потрепанный плакат",	-- Weathered Job List
