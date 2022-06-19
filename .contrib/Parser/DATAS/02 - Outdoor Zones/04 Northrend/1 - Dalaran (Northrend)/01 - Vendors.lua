@@ -1842,7 +1842,9 @@ root("Zones", m(NORTHREND, {
 					i(42370),	-- Cerulean Filigreed Shiurt
 					i(42360),	-- Ebon Filigreed Doublet
 					i(42369),	-- Ebon Filigreed Shirt
-					i(53852),	-- Embroidered Shirt
+					i(53852, {	-- Embroidered Shirt
+						["cost"] = 10000000,	-- 1,000g
+					}),
 					i(42363),	-- Golden Filigreed Doublet
 					i(42373),	-- Golden Filigreed Shirt
 					i(42375),	-- Green Martial Shirt
@@ -2864,21 +2866,21 @@ root("Zones", m(NORTHREND, {
 					i(50242),	-- Dark Coven Leggings
 					i(50243),	-- Dark Coven Robe
 					i(50244),	-- Dark Coven Shoulderpads
-					i(47802),	-- Gul'dan's Gloves of Conquest
-					i(47801),	-- Gul'dan's Hood of Conquest
-					i(47800),	-- Gul'dan's Leggings of Conquest
-					i(47799),	-- Gul'dan's Robe of Conquest
-					i(47798),	-- Gul'dan's Shoulderpads of Conquest
-					i(47783),	-- Kel'Thuzad's Gloves of Conquest
-					i(47784),	-- Kel'Thuzad's Hood of Conquest
-					i(47785),	-- Kel'Thuzad's Leggings of Conquest
-					i(47786),	-- Kel'Thuzad's Robe of Conquest
-					i(47787),	-- Kel'Thuzad's Shoulderpads of Conquest
-					i(47752),	-- Khadgar's Gauntlets of Conquest
-					i(47748),	-- Khadgar's Hood of Conquest
-					i(47750),	-- Khadgar's Leggings of Conquest
-					i(47749),	-- Khadgar's Robe of Conquest
-					i(47751),	-- Khadgar's Shoulderpads of Conquest
+					h(i(47802)),	-- Gul'dan's Gloves of Conquest
+					h(i(47801)),	-- Gul'dan's Hood of Conquest
+					h(i(47800)),	-- Gul'dan's Leggings of Conquest
+					h(i(47799)),	-- Gul'dan's Robe of Conquest
+					h(i(47798)),	-- Gul'dan's Shoulderpads of Conquest
+					a(i(47783)),	-- Kel'Thuzad's Gloves of Conquest
+					a(i(47784)),	-- Kel'Thuzad's Hood of Conquest
+					a(i(47785)),	-- Kel'Thuzad's Leggings of Conquest
+					a(i(47786)),	-- Kel'Thuzad's Robe of Conquest
+					a(i(47787)),	-- Kel'Thuzad's Shoulderpads of Conquest
+					a(i(47752)),	-- Khadgar's Gauntlets of Conquest
+					a(i(47748)),	-- Khadgar's Hood of Conquest
+					a(i(47750)),	-- Khadgar's Leggings of Conquest
+					a(i(47749)),	-- Khadgar's Robe of Conquest
+					a(i(47751)),	-- Khadgar's Shoulderpads of Conquest
 					i(51159, {	-- Sanctified Bloodmage Gloves (N)
 						["cost"] = {
 							{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification (N)
@@ -3119,31 +3121,31 @@ root("Zones", m(NORTHREND, {
 							{ "i", 51205, 1 },	-- Sanctified Dark Coven Shoulderpads
 						},
 					}),
-					i(47773),	-- Sunstrider's Gauntlets of Conquest
-					i(47774),	-- Sunstrider's Hood of Conquest
-					i(47775),	-- Sunstrider's Leggings of Conquest
-					i(47776),	-- Sunstrider's Robe of Conquest
-					i(47777),	-- Sunstrider's Shoulderpads of Conquest
-					i(48073),	-- Velen's Circlet of Conquest
-					i(47914),	-- Velen's Cowl of Conquest
-					i(47982),	-- Velen's Gloves of Conquest
-					i(48072),	-- Velen's Handwraps of Conquest
-					i(47980),	-- Velen's Leggings of Conquest
-					i(48076),	-- Velen's Mantle of Conquest
-					i(48074),	-- Velen's Pants of Conquest
-					i(48075),	-- Velen's Raiments of Conquest
-					i(47936),	-- Velen's Robe of Conquest
-					i(47981),	-- Velen's Shoulderpads of Conquest
-					i(48098),	-- Zabra's Circlet of Conquest
-					i(48068),	-- Zabra's Cowl of Conquest
-					i(48067),	-- Zabra's Gloves of Conquest
-					i(48097),	-- Zabra's Handwraps of Conquest
-					i(48069),	-- Zabra's Leggings of Conquest
-					i(48101),	-- Zabra's Mantle of Conquest
-					i(48099),	-- Zabra's Pants of Conquest
-					i(48100),	-- Zabra's Raiments of Conquest
-					i(48070),	-- Zabra's Robe of Conquest
-					i(48071),	-- Zabra's Shoulderpads of Conquest
+					h(i(47773)),	-- Sunstrider's Gauntlets of Conquest
+					h(i(47774)),	-- Sunstrider's Hood of Conquest
+					h(i(47775)),	-- Sunstrider's Leggings of Conquest
+					h(i(47776)),	-- Sunstrider's Robe of Conquest
+					h(i(47777)),	-- Sunstrider's Shoulderpads of Conquest
+					a(i(48073)),	-- Velen's Circlet of Conquest
+					a(i(47914)),	-- Velen's Cowl of Conquest
+					a(i(47982)),	-- Velen's Gloves of Conquest
+					a(i(48072)),	-- Velen's Handwraps of Conquest
+					a(i(47980)),	-- Velen's Leggings of Conquest
+					a(i(48076)),	-- Velen's Mantle of Conquest
+					a(i(48074)),	-- Velen's Pants of Conquest
+					a(i(48075)),	-- Velen's Raiments of Conquest
+					a(i(47936)),	-- Velen's Robe of Conquest
+					a(i(47981)),	-- Velen's Shoulderpads of Conquest
+					h(i(48098)),	-- Zabra's Circlet of Conquest
+					h(i(48068)),	-- Zabra's Cowl of Conquest
+					h(i(48067)),	-- Zabra's Gloves of Conquest
+					h(i(48097)),	-- Zabra's Handwraps of Conquest
+					h(i(48069)),	-- Zabra's Leggings of Conquest
+					h(i(48101)),	-- Zabra's Mantle of Conquest
+					h(i(48099)),	-- Zabra's Pants of Conquest
+					h(i(48100)),	-- Zabra's Raiments of Conquest
+					h(i(48070)),	-- Zabra's Robe of Conquest
+					h(i(48071)),	-- Zabra's Shoulderpads of Conquest
 				},
 			}),
 			n(29703,  {	-- Sheddle Glossgleam <Cobbler>

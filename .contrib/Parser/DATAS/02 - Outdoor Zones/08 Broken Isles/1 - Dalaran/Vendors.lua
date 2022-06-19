@@ -2888,9 +2888,8 @@ _.Zones =
 				}),
 				n(97339,  {	-- Cho Ironpalm <Dagger & Fist Weapon Merchant>
 					["coord"] = { 53.1, 62.8, LEGION_DALARAN },
-					["g"] = {
-						i(40702),	-- Rolfsen's Ripper
-						i(40704),	-- Pride
+					["sym"] = {
+						{"sub", "common_vendor", 29499},	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 					},
 				}),
 				n(96484,  {	-- Clockwork Assistant <Jepetto's Companion>
@@ -2901,107 +2900,8 @@ _.Zones =
 				}),
 				n(96976,  {	-- Cloth Merchant <Cloth Armor Merchant>
 					["coord"] = { 37.3, 56.3, LEGION_DALARAN },
-					["g"] = {
-						i(50275),	-- Bloodmage Gloves
-						i(50276),	-- Bloodmage Hood
-						i(50277),	-- Bloodmage Leggings
-						i(50278),	-- Bloodmage Robe
-						i(50279),	-- Bloodmage Shoulderpads
-						i(50392),	-- Crimson Acolyte Cowl
-						i(50766),	-- Crimson Acolyte Gloves
-						i(50391),	-- Crimson Acolyte Handwraps
-						i(50765),	-- Crimson Acolyte Hood
-						i(50769),	-- Crimson Acolyte Leggings
-						i(50396),	-- Crimson Acolyte Mantle
-						i(50393),	-- Crimson Acolyte Pants
-						i(50394),	-- Crimson Acolyte Raiments
-						i(50768),	-- Crimson Acolyte Robe
-						i(50767),	-- Crimson Acolyte Shoulderpads
-						i(50240),	-- Dark Coven Gloves
-						i(50241),	-- Dark Coven Hood
-						i(50242),	-- Dark Coven Leggings
-						i(50243),	-- Dark Coven Robe
-						i(50244),	-- Dark Coven Shoulderpads
-						h(i(47802)),	-- Gul'dan's Gloves of Conquest
-						h(i(47801)),	-- Gul'dan's Hood of Conquest
-						h(i(47800)),	-- Gul'dan's Leggings of Conquest
-						h(i(47799)),	-- Gul'dan's Robe of Conquest
-						h(i(47798)),	-- Gul'dan's Shoulderpads of Conquest
-						a(i(47783)),	-- Kel'Thuzad's Gloves of Conquest
-						a(i(47784)),	-- Kel'Thuzad's Hood of Conquest
-						a(i(47785)),	-- Kel'Thuzad's Leggings of Conquest
-						a(i(47786)),	-- Kel'Thuzad's Robe of Conquest
-						a(i(47787)),	-- Kel'Thuzad's Shoulderpads of Conquest
-						a(i(47752)),	-- Khadgar's Gauntlets of Conquest
-						a(i(47748)),	-- Khadgar's Hood of Conquest
-						a(i(47750)),	-- Khadgar's Leggings of Conquest
-						a(i(47749)),	-- Khadgar's Robe of Conquest
-						a(i(47751)),	-- Khadgar's Shoulderpads of Conquest
-						i(51159),	-- Sanctified Bloodmage Gloves (N)
-						i(51280),	-- Sanctified Bloodmage Gloves (H)
-						i(51158),	-- Sanctified Bloodmage Hood (N)
-						i(51281),	-- Sanctified Bloodmage Hood (H)
-						i(51157),	-- Sanctified Bloodmage Leggings (N)
-						i(51282),	-- Sanctified Bloodmage Leggings (H)
-						i(51156),	-- Sanctified Bloodmage Robe (N)
-						i(51283),	-- Sanctified Bloodmage Robe (H)
-						i(51155),	-- Sanctified Bloodmage Shoulderpads (N)
-						i(51284),	-- Sanctified Bloodmage Shoulderpads (H)
-						i(51184),	-- Sanctified Crimson Acolyte Cowl (N)
-						i(51255),	-- Sanctified Crimson Acolyte Cowl (H)
-						i(51179),	-- Sanctified Crimson Acolyte Gloves (N)
-						i(51260),	-- Sanctified Crimson Acolyte Gloves (H)
-						i(51183),	-- Sanctified Crimson Acolyte Handwraps (N)
-						i(51256),	-- Sanctified Crimson Acolyte Handwraps (H)
-						i(51178),	-- Sanctified Crimson Acolyte Hood (N)
-						i(51261),	-- Sanctified Crimson Acolyte Hood (H)
-						i(51177),	-- Sanctified Crimson Acolyte Leggings (N)
-						i(51262),	-- Sanctified Crimson Acolyte Leggings (H)
-						i(51182),	-- Sanctified Crimson Acolyte Mantle (N)
-						i(51257),	-- Sanctified Crimson Acolyte Mantle (H)
-						i(51181),	-- Sanctified Crimson Acolyte Pants (N)
-						i(51258),	-- Sanctified Crimson Acolyte Pants (H)
-						i(51180),	-- Sanctified Crimson Acolyte Raiments (N)
-						i(51259),	-- Sanctified Crimson Acolyte Raiments (H)
-						i(51176),	-- Sanctified Crimson Acolyte Robe (N)
-						i(51263),	-- Sanctified Crimson Acolyte Robe (H)
-						i(51175),	-- Sanctified Crimson Acolyte Shoulderpads (N)
-						i(51264),	-- Sanctified Crimson Acolyte Shoulderpads (H)
-						i(51209),	-- Sanctified Dark Coven Gloves (N)
-						i(51230),	-- Sanctified Dark Coven Gloves (H)
-						i(51208),	-- Sanctified Dark Coven Hood (N)
-						i(51231),	-- Sanctified Dark Coven Hood (H)
-						i(51207),	-- Sanctified Dark Coven Leggings (N)
-						i(51232),	-- Sanctified Dark Coven Leggings (H)
-						i(51206),	-- Sanctified Dark Coven Robe (N)
-						i(51233),	-- Sanctified Dark Coven Robe (H)
-						i(51205),	-- Sanctified Dark Coven Shoulderpads (N)
-						i(51234),	-- Sanctified Dark Coven Shoulderpads (H)
-						h(i(47773)),	-- Sunstrider's Gauntlets of Conquest
-						h(i(47774)),	-- Sunstrider's Hood of Conquest
-						h(i(47775)),	-- Sunstrider's Leggings of Conquest
-						h(i(47776)),	-- Sunstrider's Robe of Conquest
-						h(i(47777)),	-- Sunstrider's Shoulderpads of Conquest
-						a(i(48073)),	-- Velen's Circlet of Conquest
-						a(i(47914)),	-- Velen's Cowl of Conquest
-						a(i(47982)),	-- Velen's Gloves of Conquest
-						a(i(48072)),	-- Velen's Handwraps of Conquest
-						a(i(47980)),	-- Velen's Leggings of Conquest
-						a(i(48076)),	-- Velen's Mantle of Conquest
-						a(i(48074)),	-- Velen's Pants of Conquest
-						a(i(48075)),	-- Velen's Raiments of Conquest
-						a(i(47936)),	-- Velen's Robe of Conquest
-						a(i(47981)),	-- Velen's Shoulderpads of Conquest
-						h(i(48098)),	-- Zabra's Circlet of Conquest
-						h(i(48068)),	-- Zabra's Cowl of Conquest
-						h(i(48067)),	-- Zabra's Gloves of Conquest
-						h(i(48097)),	-- Zabra's Handwraps of Conquest
-						h(i(48069)),	-- Zabra's Leggings of Conquest
-						h(i(48101)),	-- Zabra's Mantle of Conquest
-						h(i(48099)),	-- Zabra's Pants of Conquest
-						h(i(48100)),	-- Zabra's Raiments of Conquest
-						h(i(48070)),	-- Zabra's Robe of Conquest
-						h(i(48071)),	-- Zabra's Shoulderpads of Conquest
+					["sym"] = {
+						{"sub", "common_vendor", 35496},	-- Rueben Lauren <Cloth Armor Merchant>
 					},
 				}),
 				n(96812, {	-- Elizabeth Ross <Tabard Vendor>
@@ -5452,25 +5352,8 @@ _.Zones =
 				}),
 				n(97342,  {	-- Salan Sunthread <Clothier>
 					["coord"] = { 37.7, 55.6, LEGION_DALARAN },
-					["g"] = {
-						i(42365),	-- Amber Filigreed Doublet
-						i(42371),	-- Amber Filigreeed Shirt
-						i(42374),	-- Blue Martial Shirt
-						i(42361),	-- Cerulean Filigreed Doublet
-						i(42370),	-- Cerulean Filigreed Shirt
-						i(42360),	-- Ebon Filigreed Doublet
-						i(42369),	-- Ebon Filigreed Shirt
-						i(53852, {	-- Embroidered Shirt
-							["cost"] = 10000000,	-- 1,000g
-						}),
-						i(42363),	-- Golden Filigreed Doublet
-						i(42373),	-- Golden Filigreed Shirt
-						i(42375),	-- Green Martial Shirt
-						i(42377),	-- Purple Martial Shirt
-						i(42378),	-- Red Martial Shirt
-						i(42368),	-- Scarlet Filigreed Doublet
-						i(42372),	-- Scarlet Filigreed Shirt
-						i(42376),	-- Yellow Martial Shirt
+					["sym"] = {
+						{"sub", "common_vendor", 29491},	-- Karandonna <Clothier>
 					},
 				}),
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
@@ -6306,7 +6189,7 @@ _.Zones =
 					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
 					["g"] = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
-					--		["cost"] = 2500000000‬,	-- 250,000g
+					--		["cost"] = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
