@@ -22,16 +22,14 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					crit(9),	-- Shades of Despair
 					crit(10),	-- Krala, Wings of Woe
 				}),
-				ach(14847, {	-- Adventures: Protector of the Shadowlands
-					ach(14845),	-- Adventures: A Step in the Right Direction
-					ach(14846),	-- Adventures: Leaves in the Forest
-				}),
-				ach(14842, {	-- Adventures: Strength and Resilience
-					ach(14840),	-- Adventures: Learning the Ropes
-					ach(14841),	-- Adventures: Now You're Cooking
-				}),
-				ach(14839),		-- Bound to Adventure
-				ach(14834),		-- Bound with Purpose
+				ach(14845),	-- Adventures: A Step in the Right Direction
+				ach(14846),	-- Adventures: Leaves in the Forest
+				ach(14847),	-- Adventures: Protector of the Shadowlands
+				ach(14840),	-- Adventures: Learning the Ropes
+				ach(14841),	-- Adventures: Now You're Cooking
+				ach(14842),	-- Adventures: Strength and Resilience
+				ach(14839),	-- Bound to Adventure
+				ach(14834),	-- Bound with Purpose
 				ach(14627, {	-- Choosing Your Purpose
 					["maps"] = { ORIBOS },
 					["sourceQuests"] = {
@@ -54,9 +52,20 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				ach(14633),		-- Master Navigator
 				ach(14837),		-- Nexus of Bonds
 				ach(14777),		-- Restoration Expert
-				ach(15025, {	-- Sanctum Superior
-					ach(15023),	-- We Can Rebuild
-					ach(15024),	-- Denying the Drought
+				ach(15023),	-- We Can Rebuild
+				ach(15024),	-- Denying the Drought
+				ach(15025),	-- Sanctum Superior
+				ach(15649, {	-- Shadowlands Dilettante
+					["timeline"] = { "added 9.2.5"},
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {
+						{"select","achievementID",
+							14502,	-- Pursuing Loyalty
+							14723,	-- Be Our Guest
+							14752,	-- Things To Do When You're Dead
+							14775,	-- 	Mush Appreciated
+						},
+					},
 				}),
 				ach(14638),		-- The Anima Must Flow
 				ach(14836),		-- Unwavering Bond
