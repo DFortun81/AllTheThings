@@ -1017,3 +1017,12 @@ _.Instances = { tier(BFA_TIER, {
 		},
 	}),
 })};
+
+root("HiddenQuestTriggers", tier(BFA_TIER, {
+	inst(1180, {	-- Ny'alotha
+		q(58550),	-- Mythic: Prophet Skitra
+		q(58542),	-- Mythic: Vexiona
+		q(58546),	-- Mythic: Ra-den
+		q(58538),	-- Mythic: Il'gynoth
+	}),
+}));
