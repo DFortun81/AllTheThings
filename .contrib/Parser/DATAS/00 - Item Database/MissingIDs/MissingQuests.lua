@@ -90,18 +90,9 @@ q(693),	-- Wand over Fist,		TBC: Wand over Fist,		CLASSIC: Wand over Fist
 q(694),	-- Trelane's Defenses,		TBC: Trelane's Defenses,		CLASSIC: Trelane's Defenses
 q(695),	-- An Apprentice's Enchantment,		TBC: An Apprentice's Enchantment,		CLASSIC: An Apprentice's Enchantment
 q(696),	-- Attack on the Tower,		TBC: Attack on the Tower,		CLASSIC: Attack on the Tower
-q(706),	-- Fiery Blaze Enchantments,		TBC: Fiery Blaze Enchantments,		CLASSIC: Fiery Blaze Enchantments
-q(708),	-- The Black Box,		TBC: The Black Box,		CLASSIC: The Black Box
-q(718),	-- Mirages,		TBC: Mirages,		CLASSIC: Mirages
-q(720),	-- A Sign of Hope,		TBC: A Sign of Hope,		CLASSIC: A Sign of Hope
-q(721),	-- A Sign of Hope,		TBC: A Sign of Hope,		CLASSIC: A Sign of Hope
-q(722),	-- Amulet of Secrets,		TBC: Amulet of Secrets,		CLASSIC: Amulet of Secrets
-q(723),	-- Prospect of Faith,		TBC: Prospect of Faith,		CLASSIC: Prospect of Faith
-q(724),	-- Prospect of Faith,		TBC: Prospect of Faith,		CLASSIC: Prospect of Faith
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(732),	-- Tremors of the Earth,		TBC: Tremors of the Earth,		CLASSIC: Tremors of the Earth
 q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
 q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
 q(781),	-- Attack on Camp Narache,		TBC: Attack on Camp Narache,		CLASSIC: Attack on Camp Narache
@@ -221,7 +212,6 @@ q(1302),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
 q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1324),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1360),	-- Reclaimed Treasures,		TBC: Reclaimed Treasures,		CLASSIC: Reclaimed Treasures
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
 q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
 q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
@@ -851,7 +841,6 @@ q(9411),	-- <UNUSED>Infused Bandages,		TBC: <UNUSED>Infused Bandages,		CLASSIC: 
 q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge,		TBC: <UNUSED>Crystal Flake Throat Lozenge,		CLASSIC: <UNUSED>Crystal Flake Throat Lozenge
 q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge,		TBC: <UNUSED>Crystal Flake Throat Lozenge,		CLASSIC: <UNUSED>Crystal Flake Throat Lozenge
 q(9414),	-- <UNUSED>Infused Bandages,		TBC: <UNUSED>Infused Bandages,		CLASSIC: <UNUSED>Infused Bandages
-q(9429),	-- Travel to Darkshire,		TBC: Travel to Darkshire
 q(9432),	-- Travel to Astranaar,		TBC: Travel to Astranaar
 q(9435),	-- [DEPRECATED] Missing Crystals,		TBC: Missing Crystals
 q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering,		TBC: <NYI><TXT>Placeholder: A Worthy Offering

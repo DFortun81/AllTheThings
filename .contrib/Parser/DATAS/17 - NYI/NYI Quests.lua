@@ -173,6 +173,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(8489),	-- BETA An Intact Converter [Eversong Woods]
 			q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
 			q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
+			q(708, {	-- The Black Box [Badlands]
+				["provider"] = { "i", 4613 },	-- Corroded Black Box
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 30,
+			}),
 		}),
 	}),
 	tier(TBC_TIER, {

@@ -23,62 +23,6 @@ root("Professions", prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY },
 		}),
 	}),
 	n(QUESTS, {
-		q(2203, {	-- Badlands Reagent Run II
-			["qg"] = 6868,	-- Jarkal Mossmeld
-			["sourceQuest"] = 2202,	-- Uldaman Reagent Run
-			["coord"] = { 2.6, 46, BADLANDS },
-			["races"] = HORDE_ONLY,
-			["cost"] = {
-				{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
-			},
-			-- #if AFTER CATA
-			["u"] = REMOVED_FROM_GAME,
-			-- #endif
-			["lvl"] = 40,
-			["groups"] = {
-				i(7870, {	-- Thaumaturgy Vessel Lockbox
-					i(7866, {	-- Empty Thaumaturgy Vessel
-						["cr"] = 2726,	-- Scorched Guardian
-						["groups"] = {
-							i(7867),	-- Vessel of Dragon's Blood
-						},
-					}),
-				}),
-				recipe(11452, {	-- Restorative Potion
-					-- #if AFTER CATA
-					["u"] = REMOVED_FROM_GAME,
-					-- #endif
-				}),
-			},
-		}),
-		q(2501, {	-- Badlands Reagent Run II
-			["qg"] = 1470,	-- Ghak Healtouch
-			["sourceQuest"] = 2500,	-- Badlands Reagent Run
-			["coord"] = { 37.07, 49.38, LOCH_MODAN },
-			["races"] = ALLIANCE_ONLY,
-			["cost"] = {
-				{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
-			},
-			-- #if AFTER CATA
-			["u"] = REMOVED_FROM_GAME,
-			-- #endif
-			["lvl"] = 40,
-			["groups"] = {
-				i(7870, {	-- Thaumaturgy Vessel Lockbox
-					i(7866, {	-- Empty Thaumaturgy Vessel
-						["cr"] = 2726,	-- Scorched Guardian
-						["groups"] = {
-							i(7867),	-- Vessel of Dragon's Blood
-						},
-					}),
-				}),
-				recipe(11452, {	-- Restorative Potion
-					-- #if AFTER CATA
-					["u"] = REMOVED_FROM_GAME,
-					-- #endif
-				}),
-			},
-		}),
 		q(1581, {	-- Elixirs for the Bladeleafs
 			["description"] = "Available at Skill Level 20.",
 			["qg"] = 2083,	-- Syral Bladeleaf

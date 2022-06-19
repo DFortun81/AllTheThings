@@ -416,11 +416,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						un(REMOVED_FROM_GAME, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
-				q(2342, {	-- Reclaimed Treasures
-					["provider"] = { "n", 5651 },	-- Patrick Garrett
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1959, {	-- Report to Anastasia
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,

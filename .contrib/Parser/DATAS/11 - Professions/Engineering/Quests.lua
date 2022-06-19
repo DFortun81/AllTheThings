@@ -1,15 +1,5 @@
 profession(ENGINEERING, {
 	n(QUESTS, {
-		q(1559, {	-- Flash Bomb Recipe
-			["qg"] = 2817,	-- Rigglefuzz
-			["sourceQuest"] = 705,	-- Pearl Diving
-			["coord"] = { 42.39, 52.93, BADLANDS },
-			["timeline"] = { "removed 4.0.3.2000" },
-			["lvl"] = 30,
-			["groups"] = {
-				i(6672),	-- Schematic: Flash Bomb
-			},
-		}),
 		q(3630, {	-- Gnome Engineering
 			["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
 			["altQuests"] = {

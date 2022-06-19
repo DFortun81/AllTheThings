@@ -406,6 +406,30 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(2501, {	-- Badlands Reagent Run II
+					["qg"] = 1470,	-- Ghak Healtouch
+					["sourceQuest"] = 2500,	-- Badlands Reagent Run
+					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["timeline"] = { "removed 4.0.3" },
+					["requireSkill"] = ALCHEMY,
+					["maps"] = { BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/3 Vessel of Dragon's Blood
+							["provider"] = { "i", 7867 },	-- Vessel of Dragon's Blood
+							["cost"] = { { "i", 7866, 1 } },	-- Empty Thaumaturgy Vessel
+							["cr"] = 2726,	-- Scorched Guardian
+						}),
+						i(7870, {	-- Thaumaturgy Vessel Lockbox
+							i(7866),	-- Empty Thaumaturgy Vessel
+						}),
+						recipe(11452, {	-- Restorative Potion
+							["requireSkill"] = ALCHEMY,
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(1655, {	-- Bailor's Ore Shipment
 					["qg"] = 6241,	-- Bailor Stonehand
 					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
