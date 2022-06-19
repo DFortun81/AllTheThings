@@ -2397,6 +2397,7 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = sharedData({ ["timeline"] = { "added 4.0.3
 	}),
 	i(65359, {	-- Formula: Runed Elementium Rod (RECIPE!)
 		["cost"] = { { "i", 52721, 1 }, },	-- 1x Heavenly Shard
+		["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 	}),
 });
 DRAENOR_ENCHANTING = i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {	-- Draenor Enchanting
