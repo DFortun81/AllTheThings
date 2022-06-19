@@ -3618,7 +3618,9 @@ _.Zones =
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
 										recipe(169081),	-- War Paints
 										recipe(167950, {	-- Research: Warbinder's Ink
-											i(113992),	-- Scribe's Research Notes
+											i(113992, {	-- Scribe's Research Notes
+												["filterID"] = MISC,
+											}),
 										}),
 										recipe(175390),	-- Laughing Tarot
 										recipe(175389),	-- Ocean Tarot

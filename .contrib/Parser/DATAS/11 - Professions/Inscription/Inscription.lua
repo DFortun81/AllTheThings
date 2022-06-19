@@ -798,7 +798,10 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			["collectible"] = false,
 			["g"] = {
 				-- TODO: use this ItemID as 'cost' on Glyph recipes which can ONLY be learned from using it
-				i(113992),	-- Scribe's Research Notes
+				-- and clean this up it's listed like 6 other times for no reason
+				i(113992, {	-- Scribe's Research Notes
+					["filterID"] = MISC,
+				}),
 			},
 		}),
 		r(165466, {	-- Research: Blackfallow Ink
