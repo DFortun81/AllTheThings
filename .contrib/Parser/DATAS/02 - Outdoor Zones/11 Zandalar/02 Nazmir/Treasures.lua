@@ -52,7 +52,7 @@ root("Zones", {
 			}),
 			-- Daily Treasures
 			n(TREASURES, sharedData({["isDaily"] = true},{
-				o(276623, {	-- Treasure Chest
+				o(276623, {	-- Treasure Chest	--TODO: this id is wrong
 					["questID"] = 50894,
 					["coord"] = { 34.0, 36.8, NAZMIR },
 				}),

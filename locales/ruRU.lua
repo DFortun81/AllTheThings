@@ -954,7 +954,10 @@ for key,value in pairs({
 	[2704] = "Тайный склад взрывчатки",	-- Cache of Explosives
 	[2713] = "Розыск!",	-- Wanted Board
 	[2734] = "Отсыревший сундук",	-- Waterlogged Chest
+	[2868] = "Мятая карта",	-- Crumpled Map
+	[2875] = "Рассыпающийся дворфийский скелет",	-- Battered Dwarven Skeleton
 	[2908] = "Запечатанный ящик с припасами",	-- Sealed Supply Crate
+	[2933] = "Печать земли",	-- Seal of the Earth
 	[3189] = "План нападения на Долину Испытаний",	-- Attack Plan: Valley of Trials
 	[3190] = "План нападения на деревню Сен'джин",	-- Attack Plan: Sen'jin Village
 	[3192] = "План нападения на Оргриммар",	-- Attack Plan: Orgrimmar
@@ -986,6 +989,7 @@ for key,value in pairs({
 	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest
 	[125477] = "Подозрительная урна",	-- Conspicuous Urn
+	[126260] = "Древний сундук",	-- Ancient Chest
 	[131474] = "Диски Норганнона",	-- The Discs of Norgannon
 	[138492] = "Кристаллы Мизраэль",	-- Shards of Myzrael
 	[141979] = "Древнее сокровище",	-- Ancient Treasure
@@ -2334,6 +2338,7 @@ for key,value in pairs({
 	[276491] = "Потерянный сундук крокула",	-- Lost Krokul Chest
 	[276513] = "Нетронутая ильница",	-- Intact Mudfish
 	[276515] = "Удочка",	-- Fishing Rod
+	[276623] = "Сундук с сокровищами",	-- Treasure Chest
 	[276735] = "Подношения Избранных",	-- Offerings of the Chosen
 	[276837] = "Камень с рецептом",	-- Recipe Rock
 	[277199] = "Потрепанный плакат",	-- Weathered Job List
@@ -2344,6 +2349,7 @@ for key,value in pairs({
 	[277208] = "Сундук Скверны с Древнего берега",	-- Timeworn Fel Chest
 	[277327] = "Сундук с рунами авгари",	-- Augari-Runed Chest
 	[277333] = "Древний саркофаг",	-- Ancient Sarcophagus
+	[277336] = "Сундук с сокровищами",	-- Treasure Chest
 	[277340] = "Тайный сундук авгари",	-- Secret Augari Chest
 	[277342] = "Склад авгари",	-- Augari Goods
 	[277343] = "Давно утерянные сокровища авгари",	-- Long-Lost Augari Treasure
@@ -2362,10 +2368,14 @@ for key,value in pairs({
 	[278436] = "Сундук с места кораблекрушения",	-- Shipwrecked Chest
 	[278437] = "Подношение Бвонсамди",	-- Offering to Bwonsamdi
 	[278447] = "Копье отступника-охотника",	-- Faithless Trapper's Spear
+	[278461] = "Сундук с сокровищами",	-- Treasure Chest
+	[278462] = "Сундук с сокровищами",	-- Treasure Chest
 	[278570] = "Древний дневник",	-- Ancient Journal
 	[278577] = "Порванное донесение Орды",	-- Torn Horde Missive
 	[278669] = "Реестр Листопадной Бухты",	-- Fallhaven Ledger
 	[278675] = "Проклятое чучело",	-- Cursed Effigy
+	[278694] = "Сундук с сокровищами",	-- Treasure Chest
+	[278793] = "Сундук с сокровищами",	-- Treasure Chest
 	[279042] = "Тайник контрабандиста",	-- Smuggler's Stash
 	[279253] = "Счастливый сундук Счастливчика Горация",	-- Lucky Horace's Lucky Chest
 	[279260] = "\"Хитроумно\" замаскированный сундук",	-- Cleverly Disguised Chest
@@ -2415,6 +2425,7 @@ for key,value in pairs({
 	[282498] = "Пустынная флейта",	-- Desert Flute
 	[282666] = "Урна Агассу",	-- Urn of Agussu
 	[282721] = "Сундук с сокровищами",	-- Treasure Chest
+	[282723] = "Сундук с сокровищами",	-- Treasure Chest
 	[284426] = "Закопанная буровая машина",	-- Buried Mining Machine
 	[284448] = "Спрятанный сундук ученого",	-- Hidden Scholar's Chest
 	[284454] = "Сокровище Белой Акулы",	-- Da White Shark's Bounty
@@ -2598,6 +2609,7 @@ for key,value in pairs({
 	[316795] = "Большой костер Орды",	-- Horde Bonfire
 	[316796] = "Большой костер Орды",	-- Horde Bonfire
 	[316801] = "Большой костер Орды",	-- Horde Bonfire
+	[319222] = "Сундук Темных берегов",	-- Darkshore Cache
 	[322413] = "Сверкающий сундук",	-- Glimmering Chest
 	[322533] = "Фолиант стихий Мардиваса",	-- Mardivas's Tome of the Elements
 	[324407] = "Корни Бездны",	-- Void Roots

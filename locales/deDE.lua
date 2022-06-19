@@ -968,7 +968,10 @@ for key,value in pairs({
 	[2704] = "Sprengstofflager",	-- Cache of Explosives
 	[2713] = "Steckbriefbrett",	-- Wanted Board
 	[2734] = "Vollgelaufene Truhe",	-- Waterlogged Chest
+	[2868] = "Zerknitterte Karte",	-- Crumpled Map
+	[2875] = "Ramponiertes Zwergenskelett",	-- Battered Dwarven Skeleton
 	[2908] = "Versiegelte Vorratskiste",	-- Sealed Supply Crate
+	[2933] = "Siegel der Erde",	-- Seal of the Earth
 	[3189] = "Angriffsplan: Tal der Prüfungen",	-- Attack Plan: Valley of Trials
 	[3190] = "Angriffsplan: Sen'jin",	-- Attack Plan: Sen'jin Village
 	[3192] = "Angriffsplan: Orgrimmar",	-- Attack Plan: Orgrimmar
@@ -1000,6 +1003,7 @@ for key,value in pairs({
 	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest
 	[125477] = "Verdächtige Urne",	-- Conspicuous Urn
+	[126260] = "Uralte Truhe",	-- Ancient Chest
 	[131474] = "Die Scheiben von Norgannon",	-- The Discs of Norgannon
 	[138492] = "Splitter von Myzrael",	-- Shards of Myzrael
 	[141979] = "Antiker Schatz",	-- Ancient Treasure
@@ -2348,6 +2352,7 @@ for key,value in pairs({
 	[276491] = "Verlorene Krokultruhe",	-- Lost Krokul Chest
 	[276513] = "Intakter Matschflosser",	-- Intact Mudfish
 	[276515] = "Angelrute",	-- Fishing Rod
+	[276623] = "Schatztruhe",	-- Treasure Chest
 	[276735] = "Opfergaben der Auserwählten",	-- Offerings of the Chosen
 	[276837] = "Rezeptstein",	-- Recipe Rock
 	[277199] = "Verwitterte Auftragsliste",	-- Weathered Job List
@@ -2358,6 +2363,7 @@ for key,value in pairs({
 	[277208] = "Verwitterte Teufelstruhe",	-- Timeworn Fel Chest
 	[277327] = "Augarirunentruhe",	-- Augari-Runed Chest
 	[277333] = "Uralter Sarkophag",	-- Ancient Sarcophagus
+	[277336] = "Schatztruhe",	-- Treasure Chest
 	[277340] = "Geheime Augaritruhe",	-- Secret Augari Chest
 	[277342] = "Augaribesitztümer",	-- Augari Goods
 	[277343] = "Verschollener Augarischatz",	-- Long-Lost Augari Treasure
@@ -2376,10 +2382,14 @@ for key,value in pairs({
 	[278436] = "Angeschwemmte Truhe",	-- Shipwrecked Chest
 	[278437] = "Opfergabe für Bwonsamdi",	-- Offering to Bwonsamdi
 	[278447] = "Speer des treulosen Fallenstellers",	-- Faithless Trapper's Spear
+	[278461] = "Schatztruhe",	-- Treasure Chest
+	[278462] = "Schatztruhe",	-- Treasure Chest
 	[278570] = "Uraltes Tagebuch",	-- Ancient Journal
 	[278577] = "Zerrissenes Sendschreiben der Horde",	-- Torn Horde Missive
 	[278669] = "Geschäftsbuch von Fallhafen",	-- Fallhaven Ledger
 	[278675] = "Verfluchtes Bildnis",	-- Cursed Effigy
+	[278694] = "Schatztruhe",	-- Treasure Chest
+	[278793] = "Schatztruhe",	-- Treasure Chest
 	[279042] = "Schmugglervorrat",	-- Smuggler's Stash
 	[279253] = "Glückstruhe von Horace dem Glückspilz",	-- Lucky Horace's Lucky Chest
 	[279260] = "\"Genial\" getarnte Truhe",	-- Cleverly Disguised Chest
@@ -2429,6 +2439,7 @@ for key,value in pairs({
 	[282498] = "Wüstenflöte",	-- Desert Flute
 	[282666] = "Urne von Agussu",	-- Urn of Agussu
 	[282721] = "Schatztruhe",	-- Treasure Chest
+	[282723] = "Schatztruhe",	-- Treasure Chest
 	[284426] = "Vergrabene Abbaumaschine",	-- Buried Mining Machine
 	[284448] = "Versteckte Truhe eines Gelehrten",	-- Hidden Scholar's Chest
 	[284454] = "Beute der Haibraut",	-- Da White Shark's Bounty
@@ -2612,6 +2623,7 @@ for key,value in pairs({
 	[316795] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[316796] = "Freudenfeuer der Horde",	-- Horde Bonfire
 	[316801] = "Freudenfeuer der Horde",	-- Horde Bonfire
+	[319222] = "Dunkelküstenschatz",	-- Darkshore Cache
 	[322413] = "Glitzernde Truhe",	-- Glimmering Chest
 	[322533] = "Mardivas' Foliant der Elemente",	-- Mardivas's Tome of the Elements
 	[324407] = "Leerenwurzeln",	-- Void Roots

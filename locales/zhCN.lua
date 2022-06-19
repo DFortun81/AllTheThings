@@ -967,7 +967,10 @@ for key, value in pairs({
 	[2704] = "爆炸品",	-- Cache of Explosives	--TODO: This was taken from classic Wowhead
 	[2713] = "通缉板",	-- Wanted Board
 	[2734] = "浸水的箱子",	-- Waterlogged Chest
+	[2868] = "弄皱的地图",	-- Crumpled Map
+	[2875] = "残破的矮人骸骨",	-- Battered Dwarven Skeleton
 	[2908] = "密封的补给箱",	-- Sealed Supply Crate
+	[2933] = "大地封印",	-- Seal of the Earth	--TODO: This was taken from classic Wowhead
 	[3189] = "进攻计划：试炼谷",	-- Attack Plan: Valley of Trials
 	[3190] = "进攻计划：森金村",	-- Attack Plan: Sen'jin Village
 	[3192] = "进攻计划：奥格瑞玛",	-- Attack Plan: Orgrimmar
@@ -999,6 +1002,7 @@ for key, value in pairs({
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
 	[125477] = "显眼的石罐",	-- Conspicuous Urn
+	[126260] = "古代储物箱",	-- Ancient Chest
 	[131474] = "诺甘农圆盘",	-- The Discs of Norgannon
 	[138492] = "密斯莱尔水晶碎块",	-- Shards of Myzrael
 	[141979] = "古代宝藏",	-- Ancient Treasure
@@ -2347,6 +2351,7 @@ for key, value in pairs({
 	--TODO: [276491] = "Lost Krokul Chest",	-- Lost Krokul Chest
 	[276513] = "完整的泥鱼",	-- Intact Mudfish
 	[276515] = "钓鱼竿",	-- Fishing Rod
+	[276623] = "宝箱",	-- Treasure Chest
 	[276735] = "天选者的贡品",	-- Offerings of the Chosen
 	[276837] = "配方石",	-- Recipe Rock
 	[277199] = "褪色的工作清单",	-- Weathered Job List
@@ -2357,6 +2362,7 @@ for key, value in pairs({
 	[277208] = "历时久远的邪能宝箱",	-- Timeworn Fel Chest
 	[277327] = "奥古雷符文宝箱",	-- Augari-Runed Chest
 	[277333] = "古代石棺",	-- Ancient Sarcophagus
+	[277336] = "宝箱",	-- Treasure Chest
 	[277340] = "隐秘奥古雷宝箱",	-- Secret Augari Chest
 	[277342] = "奥古雷货物",	-- Augari Goods
 	[277343] = "失落已久的奥古雷宝藏",	-- Long-Lost Augari Treasure
@@ -2375,10 +2381,14 @@ for key, value in pairs({
 	[278436] = "沉船宝箱",	-- Shipwrecked Chest
 	--TODO: [278437] = "Offering to Bwonsamdi",	-- Offering to Bwonsamdi
 	[278447] = "无信诱捕者之矛",	-- Faithless Trapper's Spear
+	[278461] = "宝箱",	-- Treasure Chest
+	[278462] = "宝箱",	-- Treasure Chest
 	[278570] = "古代日志",	-- Ancient Journal
 	[278577] = "被撕碎的部落信函",	-- Torn Horde Missive
 	[278669] = "萧湾镇账本",	-- Fallhaven Ledger
 	[278675] = "被诅咒的雕像",	-- Cursed Effigy
+	[278694] = "宝箱",	-- Treasure Chest
+	[278793] = "宝箱",	-- Treasure Chest
 	[279042] = "走私者的藏品",	-- Smuggler's Stash
 	[279253] = "幸运的霍拉斯的幸运宝箱",	-- Lucky Horace's Lucky Chest
 	[279260] = "“精心”伪装的宝箱",	-- Cleverly Disguised Chest
@@ -2428,6 +2438,7 @@ for key, value in pairs({
 	[282498] = "沙漠之笛",	-- Desert Flute
 	--TODO: [282666] = "Urn of Agussu",	-- Urn of Agussu
 	[282721] = "宝箱",	-- Treasure Chest
+	[282723] = "宝箱",	-- Treasure Chest
 	[284426] = "埋藏的采矿机",	-- Buried Mining Machine
 	[284448] = "隐蔽的学者宝箱",	-- Hidden Scholar's Chest
 	[284454] = "大白鲨的财宝",	-- Da White Shark's Bounty
@@ -2611,6 +2622,7 @@ for key, value in pairs({
 	[316795] = "部落篝火",	-- Horde Bonfire
 	[316796] = "部落篝火",	-- Horde Bonfire
 	[316801] = "部落篝火",	-- Horde Bonfire
+	[319222] = "黑海岸宝箱",	-- Darkshore Cache
 	[322413] = "微光宝箱",	-- Glimmering Chest
 	[322533] = "马蒂瓦斯的元素宝典",	-- Mardivas's Tome of the Elements
 	[324407] = "虚空之根",	-- Void Roots

@@ -963,7 +963,10 @@ for key,value in pairs({
 	[2704] = "Cassa di Esplosivi",	-- Cache of Explosives
 	[2713] = "Bacheca dei Ricercati",	-- Wanted Board
 	[2734] = "Cassa Fradicia",	-- Waterlogged Chest
+	[2868] = "Mappa Sgualcita",	-- Crumpled Map
+	[2875] = "Scheletro Danneggiato di Nano",	-- Battered Dwarven Skeleton
 	[2908] = "Cassa di Rifornimenti Sigillata",	-- Sealed Supply Crate
+	[2933] = "Seal of the Earth",	-- Seal of the Earth	--TODO: This was taken from classic Wowhead
 	[3189] = "Piano d'Attacco: Valle delle Sfide",	-- Attack Plan: Valley of Trials
 	[3190] = "Piano d'Attacco: Villaggio di Sen'jin",	-- Attack Plan: Sen'jin Village
 	[3192] = "Piano d'Attacco: Orgrimmar",	-- Attack Plan: Orgrimmar
@@ -995,6 +998,7 @@ for key,value in pairs({
 	[113757] = "Scrigno di Forgiascura",	-- Shadowforge Cache
 	[123329] = "Cassa di Baelog",	-- Baelog's Chest
 	[125477] = "Urna Notevole",	-- Conspicuous Urn
+	[126260] = "Cassa Antica",	-- Ancient Chest
 	[131474] = "Dischi di Norgannon",	-- The Discs of Norgannon
 	[138492] = "Frammento di Myzrael",	-- Shards of Myzrael
 	[141979] = "Tesoro Antico",	-- Ancient Treasure
@@ -2343,6 +2347,7 @@ for key,value in pairs({
 	[276491] = "Forziere del Krokul Perduto",	-- Lost Krokul Chest
 	[276513] = "Pescefango Intatto",	-- Intact Mudfish
 	[276515] = "Bastone da Pesca",	-- Fishing Rod
+	[276623] = "Cassa del Tesoro",	-- Treasure Chest
 	[276735] = "Offerte del Prescelto",	-- Offerings of the Chosen
 	[276837] = "Roccia con Ricetta",	-- Recipe Rock
 	[277199] = "Lista di Lavori Logora",	-- Weathered Job List
@@ -2353,6 +2358,7 @@ for key,value in pairs({
 	[277208] = "Vilcassa Logora",	-- Timeworn Fel Chest
 	[277327] = "Cassa Runica degli Augari",	-- Augari-Runed Chest
 	[277333] = "Sarcofago Antico",	-- Ancient Sarcophagus
+	[277336] = "Cassa del Tesoro",	-- Treasure Chest
 	[277340] = "Cassa Segreta degli Augari",	-- Secret Augari Chest
 	[277342] = "Beni degli Augari",	-- Augari Goods
 	[277343] = "Tesoro degli Augari Perduto da Tempo",	-- Long-Lost Augari Treasure
@@ -2371,10 +2377,14 @@ for key,value in pairs({
 	[278436] = "Cassa Naufragata",	-- Shipwrecked Chest
 	[278437] = "Offerte per Bwonsamdi",	-- Offering to Bwonsamdi
 	[278447] = "Lancia del Bracconiere Senzafede",	-- Faithless Trapper's Spear
+	[278461] = "Cassa del Tesoro",	-- Treasure Chest
+	[278462] = "Cassa del Tesoro",	-- Treasure Chest
 	[278570] = "Diario Antico",	-- Ancient Journal
 	[278577] = "Missiva dell'Orda Strappata",	-- Torn Horde Missive
 	[278669] = "Libro Mastro di Malautunno",	-- Fallhaven Ledger
 	[278675] = "Effige Maledetta",	-- Cursed Effigy
+	[278694] = "Cassa del Tesoro",	-- Treasure Chest
+	[278793] = "Cassa del Tesoro",	-- Treasure Chest
 	[279042] = "Scorte del Contrabbandiere",	-- Smuggler's Stash
 	[279253] = "Cassa Fortunata di Horace il Fortunato",	-- Lucky Horace's Lucky Chest
 	[279260] = "Cassa Ben Camuffata",	-- Cleverly Disguised Chest
@@ -2424,6 +2434,7 @@ for key,value in pairs({
 	[282498] = "Flauto del Deserto",	-- Desert Flute
 	[282666] = "Urna di Agussu",	-- Urn of Agussu
 	[282721] = "Cassa del Tesoro",	-- Treasure Chest
+	[282723] = "Cassa del Tesoro",	-- Treasure Chest
 	[284426] = "Macchina da Estrazione Sepolta",	-- Buried Mining Machine
 	[284448] = "Cassa Nascosta dello Studioso",	-- Hidden Scholar's Chest
 	[284454] = "Bottino dello Squalo Bianco",	-- Da White Shark's Bounty
@@ -2607,6 +2618,7 @@ for key,value in pairs({
 	[316795] = "Falò dell'Orda",	-- Horde Bonfire
 	[316796] = "Falò dell'Orda",	-- Horde Bonfire
 	[316801] = "Falò dell'Orda",	-- Horde Bonfire
+	[319222] = "Cassa di Rivafosca",	-- Darkshore Cache
 	[322413] = "Cassa Luccicante",	-- Glimmering Chest
 	[322533] = "Tomo degli Elementi di Mardivas",	-- Mardivas's Tome of the Elements
 	[324407] = "Radici del Vuoto",	-- Void Roots

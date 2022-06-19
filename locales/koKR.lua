@@ -967,7 +967,10 @@ for key,value in pairs({
 	[2704] = "숨겨진 폭탄",	-- Cache of Explosives
 	[2713] = "현상 수배 전단",	-- Wanted Board
 	[2734] = "흠뻑 젖은 상자",	-- Waterlogged Chest
+	[2868] = "구겨진 지도",	-- Crumpled Map
+	[2875] = "훼손된 드워프 해골",	-- Battered Dwarven Skeleton
 	[2908] = "도장 찍힌 보급품 상자",	-- Sealed Supply Crate
+	[2933] = "대지의 봉인",	-- Seal of the Earth	--TODO: This was taken from classic Wowhead
 	[3189] = "공격 계획서: 시험의 골짜기",	-- Attack Plan: Valley of Trials
 	[3190] = "공격 계획서: 센진 마을",	-- Attack Plan: Sen'jin Village
 	[3192] = "공격 계획서: 오그리마",	-- Attack Plan: Orgrimmar
@@ -999,6 +1002,7 @@ for key,value in pairs({
 	[113757] = "어둠괴철로 금고",	-- Shadowforge Cache
 	[123329] = "밸로그의 궤짝",	-- Baelog's Chest
 	[125477] = "특이한 항아리",	-- Conspicuous Urn
+	[126260] = "고대 궤짝",	-- Ancient Chest
 	[131474] = "노르간논의 원반",	-- The Discs of Norgannon
 	[138492] = "미즈라엘의 결정",	-- Shards of Myzrael
 	[141979] = "고대의 보물",	-- Ancient Treasure
@@ -2347,6 +2351,7 @@ for key,value in pairs({
 	--TODO: [276491] = "Lost Krokul Chest",	-- Lost Krokul Chest
 	[276513] = "온전한 모래무지",	-- Intact Mudfish
 	[276515] = "낚싯대",	-- Fishing Rod
+	[276623] = "보물 상자",	-- Treasure Chest
 	[276735] = "선택받은 자의 제물",	-- Offerings of the Chosen
 	[276837] = "요리법이 새겨진 바위",	-- Recipe Rock
 	[277199] = "풍파에 시달린 일자리 목록",	-- Weathered Job List
@@ -2357,6 +2362,7 @@ for key,value in pairs({
 	--TODO: [277208] = "Timeworn Fel Chest",	-- Timeworn Fel Chest
 	--TODO: [277327] = "Augari-Runed Chest",	-- Augari-Runed Chest
 	[277333] = "고대 석관",	-- Ancient Sarcophagus
+	[277336] = "보물 상자",	-- Treasure Chest
 	[277340] = "비밀의 아우가리 상자",	-- Secret Augari Chest
 	[277342] = "아우가리 용품",	-- Augari Goods
 	--TODO: [277343] = "Long-Lost Augari Treasure",	-- Long-Lost Augari Treasure
@@ -2375,10 +2381,14 @@ for key,value in pairs({
 	[278436] = "난파당한 상자",	-- Shipwrecked Chest
 	[278437] = "브원삼디에게 바치는 제물",	-- Offering to Bwonsamdi
 	[278447] = "부정한 덫사냥꾼의 창",	-- Faithless Trapper's Spear
+	[278461] = "보물 상자",	-- Treasure Chest
+	[278462] = "보물 상자",	-- Treasure Chest
 	[278570] = "고대 일지",	-- Ancient Journal
 	[278577] = "찢어진 호드 서신",	-- Torn Horde Missive
 	[278669] = "낙엽의 안식처 장부",	-- Fallhaven Ledger
 	[278675] = "저주받은 입상",	-- Cursed Effigy
+	[278694] = "보물 상자",	-- Treasure Chest
+	[278793] = "보물 상자",	-- Treasure Chest
 	[279042] = "밀수업자의 보관함",	-- Smuggler's Stash
 	[279253] = "운 좋은 호러스의 행운 상자",	-- Lucky Horace's Lucky Chest
 	[279260] = "\"교묘하게\" 위장된 상자",	-- Cleverly Disguised Chest
@@ -2428,6 +2438,7 @@ for key,value in pairs({
 	[282498] = "사막 플루트",	-- Desert Flute
 	[282666] = "아구수의 단지",	-- Urn of Agussu
 	[282721] = "보물 상자",	-- Treasure Chest
+	[282723] = "보물 상자",	-- Treasure Chest
 	[284426] = "묻힌 채광 기계",	-- Buried Mining Machine
 	[284448] = "숨겨진 학자의 상자",	-- Hidden Scholar's Chest
 	[284454] = "하얀 상어의 선물",	-- Da White Shark's Bounty
@@ -2611,6 +2622,7 @@ for key,value in pairs({
 	[316795] = "호드 화톳불",	-- Horde Bonfire
 	[316796] = "호드 화톳불",	-- Horde Bonfire
 	[316801] = "호드 화톳불",	-- Horde Bonfire
+	[319222] = "어둠해안 보관함",	-- Darkshore Cache
 	[322413] = "희미하게 빛나는 상자",	-- Glimmering Chest
 	[322533] = "마디바스의 원소 비전",	-- Mardivas's Tome of the Elements
 	[324407] = "공허 뿌리",	-- Void Roots
