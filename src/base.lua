@@ -12,6 +12,7 @@ app.asset = function(path)
 end
 -- Consolidated debug-only print with preceding precise timestamp
 app.PrintDebug = function(...)
+	app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	if app.DEBUG_PRINT then print(GetTimePreciseSec(),...) end
 end
 -- Consolidated debug-only print with precise duration since last successful print
