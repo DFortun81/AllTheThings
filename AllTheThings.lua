@@ -19300,6 +19300,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['title'] = L["DUNGEON_DIFF"],
 						["description"] = L["DUNGEON_DIFF_DESC"],
 						['visible'] = true,
+						["trackable"] = false,
 						['OnClick'] = function(row, button)
 							self:SetData(dungeondifficulty);
 							Callback(self.Update, self);
@@ -19320,6 +19321,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['title'] = L["RAID_DIFF"],
 						["description"] = L["RAID_DIFF_DESC"],
 						['visible'] = true,
+						["trackable"] = false,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
@@ -19343,6 +19345,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['title'] = L["LEGACY_RAID_DIFF"],
 						["description"] = L["LEGACY_RAID_DIFF_DESC"],
 						['visible'] = true,
+						["trackable"] = false,
 						['OnClick'] = function(row, button)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
@@ -19376,7 +19379,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							-- make sure the indicator icon is allowed to show
-							row.ref.trackable = true;
 							if IsAltKeyDown() then
 								row.ref.saved = not row.ref.saved;
 								Callback(self.Update, self);
@@ -19386,6 +19388,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 							return true;
 						end,
 						['OnUpdate'] = function(data)
+							data.trackable = data.saved;
 							data.visible = not IsInGroup() or UnitIsGroupLeader("player");
 							if data.visible and data.saved then
 								if IsInInstance() or C_Scenario.IsInScenario() then
@@ -19459,6 +19462,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 								self:SetData(raidassistant);
 								SetLootSpecialization(row.ref.id);
 								Callback(self.Update, self);
+								return true;
 							end,
 						});
 						for i=1,numSpecializations,1 do
@@ -19473,6 +19477,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 									self:SetData(raidassistant);
 									SetLootSpecialization(row.ref.id);
 									Callback(self.Update, self);
+									return true;
 								end,
 							});
 						end
@@ -19493,6 +19498,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					return true;
 				end,
 				['visible'] = true,
+				["trackable"] = false,
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
@@ -19500,19 +19506,19 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['OnClick'] = switchDungeonDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
-						['back'] = 0.5,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(2, {
 						['OnClick'] = switchDungeonDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
-						['back'] = 0.5,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(23, {
 						['OnClick'] = switchDungeonDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
-						['back'] = 0.5,
+						["trackable"] = false,
 					})
 				},
 			};
@@ -19526,6 +19532,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					return true;
 				end,
 				['visible'] = true,
+				["trackable"] = false,
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
@@ -19533,16 +19540,19 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['OnClick'] = switchRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(15, {
 						['OnClick'] = switchRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(16, {
 						['OnClick'] = switchRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					})
 				},
 			};
@@ -19556,6 +19566,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					return true;
 				end,
 				['visible'] = true,
+				["trackable"] = false,
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
@@ -19563,21 +19574,25 @@ customWindowUpdates["RaidAssistant"] = function(self)
 						['OnClick'] = switchLegacyRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(5, {
 						['OnClick'] = switchLegacyRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(4, {
 						['OnClick'] = switchLegacyRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 					app.CreateDifficulty(6, {
 						['OnClick'] = switchLegacyRaidDifficulty,
 						["description"] = L["CLICK_TO_CHANGE"],
 						['visible'] = true,
+						["trackable"] = false,
 					}),
 				},
 			};
