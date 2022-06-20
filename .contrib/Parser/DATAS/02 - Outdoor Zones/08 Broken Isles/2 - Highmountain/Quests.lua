@@ -572,12 +572,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
+					["description"] = "Without using the Party Synch feature, you cannot complete both this quest and |cffffff00Rating Razik|r on the same character.",
+					["altQuests"] = { 39417 },	-- Rating Razik
 				}),
 				q(39417, {	-- Rating Razik
 					["sourceQuests"] = { 39656 },	-- Wolf Pack Attack
 					["isBreadcrumb"] = true,
 					["coord"] = { 57.6, 56.6, HIGHMOUNTAIN },
 					["provider"] = { "n", 96513 },	-- Razik Gazbolt
+					["altQuests"] = { 39386 },	-- Procuring a Prototype
+					["description"] = "Without using the Party Synch feature, you cannot complete both this quest and |cffffff00Procuring a Prototype|r on the same character.",
 				}),
 				q(39860, {	-- Rite of Blood
 					["sourceQuests"] = { 39455 },	-- Cave of the Blood Trial

@@ -819,6 +819,7 @@ root(ROOTS.Zones, m(KULTIRAS, {
 				["provider"] = { "n", 134720 },	-- Leo Shealds
 				["coord"] = { 43.0, 56.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["description"] = "Without using the Party Synch feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
 			}),
 			q(50504, {	-- Honey Glazed Sam
 				["sourceQuests"] = {
@@ -987,6 +988,7 @@ root(ROOTS.Zones, m(KULTIRAS, {
 				["provider"] = { "n", 131343 },	-- Williams
 				["coord"] = { 33.2, 45.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["description"] = "Without using the Party Synch feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
 			}),
 			q(50909, {	-- Never Outgunned
 				["sourceQuests"] = { 52067 },	-- Survivors
