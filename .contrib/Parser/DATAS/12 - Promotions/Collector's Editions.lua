@@ -120,7 +120,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(MOP_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
 		["timeline"] = { "added 5.0.1" },
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
@@ -140,7 +140,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(LEGION_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
 		["timeline"] = { "added 7.0.1" },
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
@@ -150,7 +150,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(BFA_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
 		["timeline"] = { "added 8.0.1" },
 		["groups"] = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
