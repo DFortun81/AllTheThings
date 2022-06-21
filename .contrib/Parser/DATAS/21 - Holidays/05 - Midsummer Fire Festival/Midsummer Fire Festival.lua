@@ -747,7 +747,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
 					}),
 					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
+						["coord"] = { 74.0, 9.50, KRASARANG_WILDS },
 					}),
 					crit(4, {	-- Kun-Lai Summit
 						["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
