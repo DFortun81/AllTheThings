@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collector's Edition
 	tier(CLASSIC_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
+		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
 				q(8547, {	-- Welcome! (Blood Elf)
@@ -93,7 +93,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(TBC_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			ach(665),	-- Collector's Edition: Netherwhelp
@@ -104,7 +104,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(WOTLK_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["timeline"] = { "added 3.0.1" },
 		["groups"] = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
@@ -112,7 +112,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(CATA_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["timeline"] = { "added 4.0.1" },
 		["groups"] = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
@@ -120,7 +120,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(MOP_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 5.0.1" },
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
@@ -130,7 +130,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(WOD_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Warlords of Draenor.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["timeline"] = { "added 6.0.1" },
 		["groups"] = {
 			ach(8917),	-- Collector's Edition: Dread Hatchling
@@ -140,7 +140,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(LEGION_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of Legion.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 7.0.1" },
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
@@ -150,7 +150,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(BFA_TIER, {
-		["description"] = "These rewards were made available to anyone that purchased a Collector's Edition of BFA.\n\nThe rewards can be be purchased from the in-game shop.",
+		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be be purchased from the in-game shop.",
 		["timeline"] = { "added 8.0.1" },
 		["groups"] = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
@@ -162,7 +162,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["description"] = "These rewards are available to anyone that purchases Shadowlands Heroic Edition.",
+		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["timeline"] = { "added 9.0.1" },
 		["groups"] = {
 			mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
@@ -197,7 +197,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 	})),
 	--[[
 	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["description"] = "These rewards are available to anyone that purchases Dragonflight Heroic/Epic Edition.",
+		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic/Epic Edition.",
 		["timeline"] = { "added 9.2.5" },
 		["groups"] = {
 
@@ -206,7 +206,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 	--]]
 	-- #if NOT ANYCLASSIC
 	n(-578, {	-- World of Warcraft 15th Anniversary Collector's Edition
-		["description"] = "These rewards were made available to anyone that purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",
+		["description"] = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",
 		["timeline"] = { "added 8.2.5.31958" },
 		["groups"] = {
 			a(mount(302361)),	-- Alabaster Stormtalon (MOUNT!)
@@ -215,7 +215,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 	}),
 	-- #endif
 	n(-579, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Dark Portal Pass
-		["description"] = "These rewards were made available to anyone that purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
+		["description"] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
 		["timeline"] = { "added 2.5.1" },
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -260,7 +260,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 
 	-- Other Blizzard Games
 	n(-566, {	-- Diablo III
-		["description"] = "These rewards were made available to anyone that purchased the original Diablo III Collector's Edition.",
+		["description"] = "These rewards were made available to anyone who purchased the original Diablo III Collector's Edition.",
 		["timeline"] = { "added 4.3.0.15005" },
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
@@ -269,7 +269,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 	}),
 
 	n(-575, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Diablo III: Reaper of Souls
-		["description"] = "These rewards are available to anyone that purchases the Diablo III: Reaper of Souls Collector's Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Diablo III: Reaper of Souls Collector's Edition.",
 		["timeline"] = { "added 5.4.2.17585" },
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
@@ -277,7 +277,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-568, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Overwatch: Origins
-		["description"] = "These rewards are available to anyone that purchases the Overwatch: Origins Collector's Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Overwatch: Origins Collector's Edition.",
 		["timeline"] = { "added 6.2.3.20716" },
 		["groups"] = {
 			ach(11064),	-- Collector's Edition: Baby Winston
@@ -285,7 +285,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-564, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Wings of Liberty
-		["description"] = "These rewards are available to anyone that purchases the Starcraft II: Wings of Liberty Collector's Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Starcraft II: Wings of Liberty Collector's Edition.",
 		["timeline"] = { "added 3.3.5.12340" },
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
@@ -293,7 +293,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-565, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Heart of the Swarm
-		["description"] = "These rewards are available to anyone that purchases the Starcraft II: Heart of the Swarm Collector's Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Starcraft II: Heart of the Swarm Collector's Edition.",
 		["timeline"] = { "added 5.0.4.15913" },
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling
@@ -301,7 +301,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-576, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Starcraft II: Legacy of the Void
-		["description"] = "These rewards are available to anyone that purchases the Starcraft II: Legacy of the Void Collector's Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Starcraft II: Legacy of the Void Collector's Edition.",
 		["timeline"] = { "added 6.2.2.20395" },
 		["groups"] = {
 			ach(10309),	-- Collector's Edition: Zeradar
@@ -309,7 +309,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	})),
 	n(-552, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Warcraft 3 Reforged Spoils of War Edition
-		["description"] = "These rewards are available to anyone that purchases the Warcraft 3 Reforged Spoils of War Edition.",
+		["description"] = "These rewards are available to anyone who purchases the Warcraft 3 Reforged Spoils of War Edition.",
 		["timeline"] = { "added 8.1.0.28724" },
 		["groups"] = {
 			ach(13196),	-- Meat Marauder
