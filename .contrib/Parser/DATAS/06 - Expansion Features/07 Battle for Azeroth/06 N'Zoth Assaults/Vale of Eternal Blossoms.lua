@@ -1024,7 +1024,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(174649, {	-- Rajani Warserpent (MOUNT!)
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
 							}),
-							i(172009, {	-- Recipe: Contract: Rajani
+							i(172009, {	-- Recipe: Contract: Rajani (RECIPE!)
 								["cost"] = 14000000,	-- 1,400g
 							}),
 							i(174480, {	-- Windfeather Quill

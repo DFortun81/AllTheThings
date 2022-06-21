@@ -86,7 +86,7 @@ _.Zones =
 						i(162705, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162755, {	-- Recipe: Contract: Voldunai (Rank 2)
+						i(162755, {	-- Recipe: Contract: Voldunai [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162698, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
@@ -107,7 +107,7 @@ _.Zones =
 						i(161502, {	-- Sash of the Scaled Devoted
 							["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
 						}),
-						i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)
+						i(162734, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162735, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3] (RECIPE!)

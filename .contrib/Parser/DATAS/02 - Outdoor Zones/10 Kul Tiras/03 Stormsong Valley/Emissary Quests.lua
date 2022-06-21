@@ -63,7 +63,9 @@ _.Zones =
 					["g"] = {
 						i(166294, {	-- Storm's Wake Supplies
 							i(166719),	-- Violet Abyssal Eel
-							i(166665),	-- Technique: Glyph of Storm's Wake
+							i(166665, {	-- Technique: Glyph of Storm's Wake (RECIPE!)
+								["timeline"] = { "added 8.1.0" },
+							}),
 						}),
 					},
 				}),

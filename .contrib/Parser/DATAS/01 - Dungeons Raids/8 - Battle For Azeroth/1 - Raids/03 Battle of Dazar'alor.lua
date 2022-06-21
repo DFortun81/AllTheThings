@@ -23,9 +23,9 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		["lvl"] = { 50 },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
-				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
-				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
-				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
+				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 1] (RECIPE!)
+				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
+				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 				i(165703),	-- Breath of Bwonsamdi
 			}),
 			d(17, bubbleDown({["modID"] = 4}, {	-- LFR
@@ -316,7 +316,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 									["achievementID"] = 13291,	-- Victory of Death
 								}),
 								i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
-								i(166582),	-- Technique: Glyph of the Tides
+								i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 								i(165604),	-- Daelin Proudmoore's Saber
 								i(165583),	-- Fogbreaker, Light of the Sea
 								i(165823),	-- Glaciercrest Helm
@@ -611,7 +611,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							["achievementID"] = 13291,	-- Victory of Death
 						}),
 						ach(13410),	-- Snow Fun Allowed
-						i(166582),	-- Technique: Glyph of the Tides
+						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -904,7 +904,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						}),
 						ach(13410),		-- Snow Fun Allowed
 						un(REMOVED_FROM_GAME, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
-						i(166582),	-- Technique: Glyph of the Tides
+						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -1230,7 +1230,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							},
 						})),
 						i(166705),	-- Glacial Tidestorm (MOUNT!)
-						i(166582),	-- Technique: Glyph of the Tides
+						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm

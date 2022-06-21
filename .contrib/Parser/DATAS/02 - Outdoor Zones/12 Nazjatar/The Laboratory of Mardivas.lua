@@ -104,7 +104,7 @@ _.Zones =
 							["achievementID"] = 13699,	-- Periodic Destruction
 						}),
 						i(170132),	-- Slicer of Omus
-						i(170166),	-- Technique: Glyph of Steaming Fury
+						i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 					},
 				}),
 				n(150856, {	-- Osgen <Shifter of Tides>
@@ -203,7 +203,7 @@ _.Zones =
 							["achievementID"] = 13699,	-- Periodic Destruction
 						}),
 						i(170127),	-- Pyroclastic Halberd
-						i(170166),	-- Technique: Glyph of Steaming Fury
+						i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 					},
 				}),
 				n(150848, {	-- Zomera

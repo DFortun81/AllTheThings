@@ -138,7 +138,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(794, {	-- Glyphs
 			r(148275),	-- Glyph of Angels
-			r(293801),	-- Glyph of Dalaran Brilliance
+			r(293801, {["timeline"]={"added 8.1.5"}}),	-- Glyph of Dalaran Brilliance*
 			r(112469),	-- Glyph of Fighting Pose
 			r(112464),	-- Glyph of Honor
 			r(56948),	-- Glyph of the Orca
@@ -542,165 +542,341 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+		cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
+			r(287271),	-- Aqueous Chromotography*
+			r(286649),	-- Sanguinated Chromotography*
+		})),
 		cat(1026, {	-- Inks
-			r(264777),	-- Crimson Ink
-			r(264776),	-- Ultramarine Ink
-			r(264778),	-- Viridescent Ink
-			r(298929),	-- Maroon Ink
+			r(264777),	-- Crimson Ink*
+			r(264776),	-- Ultramarine Ink*
+			r(264778),	-- Viridescent Ink*
+			r(298929, {["timeline"]={"added 8.2.0"}}),	-- Maroon Ink*
 		}),
 		cat(771, {	-- Books & Scrolls
-			r(256233),	-- Codex of the Quiet Mind
-			r(256234),	-- Codex of the Quiet Mind
-			r(264767),	-- War-Scroll of Battle Shout
-			r(256232),	-- Codex of the Quiet Mind
-			r(256236),	-- Tome of the Quiet Mind
-			r(256237),	-- Tome of the Quiet Mind
-			r(264769),	-- War-Scroll of Fortitude
-			r(264766),	-- War-Scroll of Intellect
-			r(269065),	-- Scroll of Unlocking
-			r(256235),	-- Tome of the Quiet Mind
+			r(256233),	-- Codex of the Quiet Mind [Rank 2]*
+			r(256234),	-- Codex of the Quiet Mind [Rank 3]*
+			r(264767),	-- War-Scroll of Battle Shout*
+			r(256232),	-- Codex of the Quiet Mind [Rank 1]*
+			r(256236),	-- Tome of the Quiet Mind [Rank 2]*
+			r(256237),	-- Tome of the Quiet Mind [Rank 3]*
+			r(264769),	-- War-Scroll of Fortitude*
+			r(264766),	-- War-Scroll of Intellect*
+			r(269065),	-- Scroll of Unlocking*
+			r(256235),	-- Tome of the Quiet Mind [Rank 1]*
 		}),
 		cat(772, {	-- Contracts
-			r(256299),	-- Contract: Champions of Azeroth
-			r(256289, {	-- Contract: Talanji's Expedition
+			r(284292, {	-- Contract: 7th Legion [Rank 1]*
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(284293, {	-- Contract: 7th Legion [Rank 2]*
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(284294, {	-- Contract: 7th Legion [Rank 3]*
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(299665, {	-- Contract: Ankoan*
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.2.0" },
+			}),
+			r(256297),	-- Contract: Champions of Azeroth [Rank 1]*
+			r(256298),	-- Contract: Champions of Azeroth [Rank 2]*
+			r(256299),	-- Contract: Champions of Azeroth [Rank 3]*
+			r(256278, {	-- Contract: Order of Embers [Rank 1]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256279, {	-- Contract: Order of Embers [Rank 2]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256280, {	-- Contract: Order of Embers [Rank 3]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256275, {	-- Contract: Proudmoore Admiralty [Rank 1]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256276, {	-- Contract: Proudmoore Admiralty [Rank 2]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256277, {	-- Contract: Proudmoore Admiralty [Rank 3]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(299672, {["timeline"]={"added 8.3.0"}}),	-- Contract: Rajani*
+			r(299671, {["timeline"]={"added 8.2.0"}}),	-- Contract: Rustbolt Resistance*
+			r(256281, {	-- Contract: Storm's Wake [Rank 1]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256282, {	-- Contract: Storm's Wake [Rank 2]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256283, {	-- Contract: Storm's Wake [Rank 3]*
+				["races"] = ALLIANCE_ONLY,
+			}),
+			r(256287, {	-- Contract: Talanji's Expedition [Rank 1]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256296),	-- Contract: Tortollan Seekers
-			r(256293, {	-- Contract: Voldunai
+			r(256288, {	-- Contract: Talanji's Expedition [Rank 2]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256286, {	-- Contract: Zandalari Empire
+			r(256289, {	-- Contract: Talanji's Expedition [Rank 3]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256298),	-- Contract: Champions of Azeroth
-			r(256288, {	-- Contract: Talanji's Expedition
+			r(284295, {	-- Contract: The Honorbound [Rank 1]*
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(284296, {	-- Contract: The Honorbound [Rank 2]*
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(284297, {	-- Contract: The Honorbound [Rank 3]*
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(256294),	-- Contract: Tortollan Seekers [Rank 1]*
+			r(256295),	-- Contract: Tortollan Seekers [Rank 2]*
+			r(256296),	-- Contract: Tortollan Seekers [Rank 3]*
+			r(299673, {["timeline"]={"added 8.3.0"}}),	-- Contract: Uldum Accord*
+			r(299668, {	-- Contract: Unshackled*
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.2.0" },
+			}),
+			r(256290, {	-- Contract: Voldunai [Rank 1]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256295),	-- Contract: Tortollan Seekers
-			r(256291, {	-- Contract: Voldunai
+			r(256291, {	-- Contract: Voldunai [Rank 2]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256285, {	-- Contract: Zandalari Empire
+			r(256293, {	-- Contract: Voldunai [Rank 3]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256297),	-- Contract: Champions of Azeroth
-			r(256287, {	-- Contract: Talanji's Expedition
+			r(256284, {	-- Contract: Zandalari Empire [Rank 1]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256294),	-- Contract: Tortollan Seekers
-			r(256290, {	-- Contract: Voldunai
+			r(256285, {	-- Contract: Zandalari Empire [Rank 2]*
 				["races"] = HORDE_ONLY,
 			}),
-			r(256284, {	-- Contract: Zandalari Empire
-				["races"] = HORDE_ONLY,
-			}),
-			r(284295, {	-- Contract: The Honorbound
-				["races"] = HORDE_ONLY,
-			}),
-			r(284296, {	-- Contract: The Honorbound
-				["races"] = HORDE_ONLY,
-			}),
-			r(284297, {	-- Contract: The Honorbound
-				["races"] = HORDE_ONLY,
-			}),
-			r(256278, {	-- Contract: Order of Embers
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256279, {	-- Contract: Order of Embers
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256280, {	-- Contract: Order of Embers
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256275, {	-- Contract: Proudmoore Admiralty
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256276, {	-- Contract: Proudmoore Admiralty
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256277, {	-- Contract: Proudmoore Admiralty
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256281, {	-- Contract: Storm's Wake
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256282, {	-- Contract: Storm's Wake
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(256283, {	-- Contract: Storm's Wake
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(284292, {	-- Contract: 7th Legion
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(284293, {	-- Contract: 7th Legion
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(284294, {	-- Contract: 7th Legion
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(299665, {	-- Contract: Ankoan
-				["races"] = ALLIANCE_ONLY,
-			}),
-			r(299668, {	-- Contract: Unshackled
+			r(256286, {	-- Contract: Zandalari Empire [Rank 3]*
 				["races"] = HORDE_ONLY,
 			}),
 		}),
 		cat(773, {	-- Cards
-			r(256245),	-- Darkmoon Card of War
-			r(256246),	-- Darkmoon Card of War
-			r(278527),	-- Darkmoon Card of War
+			r(278527),	-- Darkmoon Card of War [Rank 1]*
+			r(256245),	-- Darkmoon Card of War [Rank 2]*
+			r(256246),	-- Darkmoon Card of War [Rank 3]*
+			r(302190, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Mystical Bulwark*
+			r(302189, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Storms*
+			r(302188, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Sundering*
+			r(302187, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Swirling Tides*
 		}),
 		cat(774, {	-- Off-Hands
-			r(269742),	-- Honorable Combatant's Etched Vessel
-			r(256249),	-- Inscribed Vessel of Mysticism
-			r(256248),	-- Inscribed Vessel of Mysticism
-			r(269741),	-- Honorable Combatant's Etched Vessel
-			r(269740),	-- Honorable Combatant's Etched Vessel
-			r(256247),	-- Inscribed Vessel of Mysticism
+			r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]*
+			pvp(r(269741)),	-- Honorable Combatant's Etched Vessel [Rank 2]*
+			pvp(r(269742)),	-- Honorable Combatant's Etched Vessel [Rank 3]*
+			r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]*
+			r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]*
+			r(256249),	-- Inscribed Vessel of Mysticism [Rank 3]*
+			r(294790, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Etched Vessel [Rank 1]*
+			pvp(r(294791, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 2]*
+			pvp(r(294792, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 3]*
+			r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]*
+			pvp(r(282804, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 2]*
+			pvp(r(282805, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 3]*
+			r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]*
+			pvp(r(305953, {["timeline"]={"added 8.3.0"}})).	-- Uncanny Combatant's Etched Vessel [Rank 2]*
+			pvp(r(305954, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 3]*
 		}),
 		cat(775, {	-- Mass Milling
-			r(256219),	-- Mass Mill Akunda's Bite
-			r(256308),	-- Mass Mill Anchor Weed
-			r(256217),	-- Mass Mill Riverbud
-			r(256223),	-- Mass Mill Sea Stalk
-			r(256221),	-- Mass Mill Siren's Pollen
-			r(256218),	-- Mass Mill Star Moss
-			r(256220),	-- Mass Mill Winter's Kiss
+			r(256219),	-- Mass Mill Akunda's Bite*
+			r(256308),	-- Mass Mill Anchor Weed*
+			r(256217),	-- Mass Mill Riverbud*
+			r(256223),	-- Mass Mill Sea Stalk*
+			r(256221),	-- Mass Mill Siren's Pollen*
+			r(256218),	-- Mass Mill Star Moss*
+			r(256220),	-- Mass Mill Winter's Kiss*
+			r(298927, {["timeline"]={"added 8.2.0"}}),	-- Mass Mill Zin'anthid*
 		}),
 		cat(776, {	-- Vantus Runes
-			r(256303),	-- Vantus Rune: Uldir
-			r(256304),	-- Vantus Rune: Uldir
-			r(256305),	-- Vantus Rune: Uldir
-			r(285925),  -- Vantus Rune: Crucible of Storms Rank 1
-			r(285926),  -- Vantus Rune: Crucible of Storms Rank 2
-			r(285927),  -- Vantus Rune: Crucible of Storms Rank 3
+			r(285639, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 1]*
+			r(285640, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 2]*
+			r(285641, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 3]*
+			r(285925, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 1]*
+			r(285926, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 2]*
+			r(285927, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 3]*
+			r(306482, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 1]*
+			r(306483, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 2]*
+			r(306481, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 3]*
+			r(298625, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 1]*
+			r(298647, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 2]*
+			r(298648, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 3]*
+			r(256303),	-- Vantus Rune: Uldir [Rank 1]*
+			r(256304),	-- Vantus Rune: Uldir [Rank 2]*
+			r(256305),	-- Vantus Rune: Uldir [Rank 3]*
 		}),
 		cat(1130, {	-- Glyphs
-			r(276121),	-- Glyph of the Humble Flyer
-			r(276059),	-- Glyph of the Dolphin
-			r(276088),	-- Glyph of the Tideskipper
-			r(289356, {  -- Glyph of Storm's Wake
+			r(304042, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Dire Bees*
+			r(309443, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Lavish Servings*
+			r(304033, {["timeline"]={"added 8.2.0"}}),	-- Glyph of Steaming Fury*
+			r(289356, {  -- Glyph of Storm's Wake*
 				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0" },
 			}),
-			r(304042),  -- Glyph of Dire Bees
-			r(309443),  -- Glyph of Lavish Servings
 			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon*
 			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon*
-			r(225532),  -- Glyph of the Feral Chameleon
+			r(304036, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Cold Waves*
+			r(304030, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Dark Depths*
+			r(276059),	-- Glyph of the Dolphin*
+			r(276121),	-- Glyph of the Humble Flyer*
 			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon*
+			r(289313, {["timeline"]={"added 8.1.0"}}),	-- Glyph of the Tides*
+			r(276088),	-- Glyph of the Tideskipper*
+
+
+
+
+
+
+			r(225532),  -- Glyph of the Feral Chameleon
 		}),
-		cat(1276, {	-- Blood Contracts
-			r(292320),	-- Blood Contract: Bloodguard
-			r(292012),	-- Blood Contract: Bloodshed
-			r(292322),	-- Blood Contract: Oblivion
-			r(259665),	-- Blood Contract: Sacrifice
-		}),
+		cat(1276, sharedDataSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Blood Contracts
+			r(292320),	-- Blood Contract: Bloodguard*
+			r(292012),	-- Blood Contract: Bloodshed*
+			r(292322),	-- Blood Contract: Oblivion*
+			r(259665),	-- Blood Contract: Sacrifice*
+		})),
 		cat(1235, {	-- Follower Equipment
-			r(278422),	-- Crimson Ink Well
+			r(278422),	-- Crimson Ink Well*
 		}),
-		cat(1262, {	-- Tools of the Trade
-			r(256301),	-- Sanguine Feather Quill of Lana'thel
+		cat(1262, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Tools of the Trade
+			r(256301),	-- Sanguine Feather Quill of Lana'thel*
+		})),
+		n(DISCOVERY, {
+			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)
+				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
+				["timeline"]={ "added 8.2.5" },
+			}),
+		}),
+		n(QUESTS, {
+			q(54477, {	-- Inscribed Methods (A)
+				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+			}),
+			q(54478, {	-- Inscribed Methods (H)
+				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["coord"] = { 42.3, 39.7, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0", "removed 9.0.1" },	-- Might no be correct removed patch
+			}),
+			q(40537, { --Drawing Blood (A)
+				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
+				["sourceQuest"] = 54477,	-- Inscribed Methods
+				["provider"] = { "n", 130399 }, -- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49943, { --Drawing Blood (H)
+				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
+				["sourceQuest"] = 54478,	-- Inscribed Methods
+				["provider"] = { "n", 130901 }, -- Chronicler Grazzul
+				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49694, { -- Turn to Drust (A)
+				["sourceQuest"] = 40537,	-- Drawing Blood (A)
+				["provider"] = { "n", 130399 }, -- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49944, { -- Turn to Drust (H)
+				["sourceQuest"] = 49943,	-- Drawing Blood (H)
+				["provider"] = { "n", 130901 }, -- Chronicler Grazzul
+				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49873, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { --Sacrificial Writes
+				["sourceQuests"] = {
+					49694,	-- Turn to Drust (A)
+					49944,	-- Turn to Drust (H)
+				},
+				["provider"] = { "o", 279647 }, -- Tome of Sacrifice
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["g"] = {
+					r(259665), -- Blood Contract: Sacrifice
+				},
+			})),
+			q(49874, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- By the Book
+				["sourceQuest"] = 49873,	-- Sacrificial Writes
+				["provider"] = { "n", 131657 }, -- Bloodshed Compendium
+				["coord"] = { 20.7, 44, DRUSTVAR },
+				["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
+				["g"] = {
+					r(292012), -- Blood Contract: Bloodshed
+				},
+			})),
+			q(49876, { -- Lines in the Sand (A)
+				["sourceQuest"] = 49874,	-- By the Book
+				["provider"] = { "n", 131386 }, -- Kronah
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49946, { -- Lines in the Sand (H)
+				["sourceQuest"] = 49874,	-- By the Book
+				["provider"] = { "n", 131386 }, -- Kronah
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49877, { -- Temple of Sethraliss: Booking on a Favor
+				["sourceQuests"] = {
+					49876,	-- Lines in the Sand (A)
+					49946,	-- Lines in the Sand (H)
+				},
+				["provider"] = { "n", 150318 }, -- Veriss
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49879, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- Brush With Death
+				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
+				["provider"] = { "o", 279645 }, -- Tome of Oblivion
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["g"] = {
+					r(292322), -- Blood Contract: Oblivion
+				},
+			})),
+			q(49878, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { --Penning In Protection
+				["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
+				["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
+				["coord"] = { 27.6, 52.2, VOLDUN },
+				["g"] = {
+					r(292320), -- Blood Contract: Bloodguard
+				},
+			})),
+			q(49881, { -- The Final Verse
+				["sourceQuests"] = {
+					49878, -- Penning In Protection
+					49879, -- Brush With Death
+				},
+				["provider"] = { "n", 150318 }, -- Veriss
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["timeline"] = { "added 8.1.5" },
+			}),
+			q(49882, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" } }, { -- A Test of Quills
+				["sourceQuest"] = 49881,	-- The Final Verse
+				["provider"] = { "n", 131397 }, -- Miju
+				["coord"] = { 32.6, 86, ZULDAZAR },
+				["g"] = {
+					r(256301),	-- Sanguine Feather Quill of Lana'thel
+				},
+			})),
 		}),
 	}))),
 	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
@@ -791,9 +967,6 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	n(DISCOVERY, {
-		i(172450, {	-- Technique: Glyph of Lavish Servings
-			["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-		}),
 		r(167950, {	-- Research: Warbinder's Ink
 			["collectible"] = false,
 			["g"] = {

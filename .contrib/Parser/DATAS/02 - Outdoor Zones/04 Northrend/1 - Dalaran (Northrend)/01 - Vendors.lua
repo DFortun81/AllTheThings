@@ -807,8 +807,9 @@ root("Zones", m(NORTHREND, {
 						["spellID"] = 131784,	-- Illusion
 						["classes"] = { MAGE },
 					}),
-					i(167733, {	-- Technique: Glyph of Dalaran Brilliance
+					i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 						["isLimited"] = true,
+						["timeline"] = { "added 8.1.5" },
 					}),
 					i(44714, {	-- Tome of Dalaran Brilliance
 						["classes"] = { MAGE },

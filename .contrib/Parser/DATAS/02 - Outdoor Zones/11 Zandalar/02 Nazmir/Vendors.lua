@@ -79,7 +79,7 @@ _.Zones =
 						i(162703, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162754, {	-- Recipe: Contract: Talanji's Expedition (Rank 2)
+						i(162754, {	-- Recipe: Contract: Talanji's Expedition [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162697, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
@@ -100,7 +100,7 @@ _.Zones =
 						i(161774, {	-- Expedition Bloodswarmer (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
 						}),
-						i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals (Rank 2)
+						i(162732, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162733, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)

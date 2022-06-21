@@ -215,85 +215,70 @@ root("Zones", m(ZANDALAR, {
 					},
 				}),
 			}),
-			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION, ["lvl"] = 50 }, {
-				q(54478, {	-- Inscribed Methods
-					["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-					["coord"] = { 42.3, 39.7, DAZARALOR },
+			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
+				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
+					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				q(49943, { --Drawing Blood (H)
-					["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
-					["sourceQuest"] = 54478,	-- Inscribed Methods
-					["provider"] = { "n", 130901 }, -- Chronicler Grazzul
-					["coord"] = { 42.2, 39.6, DAZARALOR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(49944, { -- Turn to Drust (H)
-					["sourceQuest"] = 49943,	-- Drawing Blood (H)
-					["provider"] = { "n", 130901 }, -- Chronicler Grazzul
-					["coord"] = { 42.2, 39.6, DAZARALOR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(49873, { --Sacrificial Writes
-					["sourceQuest"] = 49944,	-- Turn to Drust (H)
-					["provider"] = { "o", 279647 }, -- Tome of Sacrifice
-					["coord"] = { 20.6, 44, DRUSTVAR },
 					["g"] = {
-						recipe(259665), -- Blood Contract: Sacrifice
-					},
-				}),
-				q(49874, { -- By the Book
-					["sourceQuest"] = 49873,	-- Sacrificial Writes
-					["provider"] = { "n", 131657 }, -- Bloodshed Compendium
-					["coord"] = { 20.7, 44, DRUSTVAR },
-					["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
-					["g"] = {
-						recipe(292012), -- Blood Contract: Bloodshed
-					},
-				}),
-				q(49946, { -- Lines in the Sand (H)
-					["sourceQuest"] = 49874,	-- By the Book
-					["provider"] = { "n", 131386 }, -- Kronah
-					["coord"] = { 20.6, 44, DRUSTVAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(49877, { -- Temple of Sethraliss: Booking on a Favor
-					["sourceQuest"] = 49946,	-- Lines in the Sand (H)
-					["provider"] = { "n", 150318 }, -- Veriss
-					["coord"] = { 27.6, 52.3, VOLDUN },
-					["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
-				}),
-				q(49879, { -- Brush With Death
-					["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
-					["provider"] = { "o", 279645 }, -- Tome of Oblivion
-					["coord"] = { 27.6, 52.3, VOLDUN },
-					["g"] = {
-						recipe(292322), -- Blood Contract: Oblivion
-					},
-				}),
-				q(49878, { --Penning In Protection
-					["sourceQuest"] = 49877,	-- Temple of Sethraliss: Booking on a Favor
-					["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
-					["coord"] = { 27.6, 52.2, VOLDUN },
-					["g"] = {
-						recipe(292320), -- Blood Contract: Bloodguard
-					},
-				}),
-				q(49881, { -- The Final Verse
-					["sourceQuests"] = {
-						49878, -- Penning In Protection
-						49879, -- Brush With Death
-					},
-					["provider"] = { "n", 150318 }, -- Veriss
-					["coord"] = { 27.6, 52.3, VOLDUN },
-				}),
-				q(49882, { -- A Test of Quills
-					["sourceQuest"] = 49881,	-- The Final Verse
-					["provider"] = { "n", 131397 }, -- Miju
-					["coord"] = { 32.6, 86, ZULDAZAR },
-					["g"] = {
-						recipe(256301),	-- Sanguine Feather Quill of Lana'thel
+						cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
+							r(287271),	-- Aqueous Chromotography
+							r(286649),	-- Sanguinated Chromotography
+						})),
+						cat(1026, {	-- Inks
+							r(264777),	-- Crimson Ink
+							r(264776),	-- Ultramarine Ink
+							r(264778),	-- Viridescent Ink
+						}),
+						cat(771, {	-- Books & Scrolls
+							r(256232),	-- Codex of the Quiet Mind [Rank 1]
+							r(256233),	-- Codex of the Quiet Mind [Rank 2]
+							r(269065),	-- Scroll of Unlocking
+							r(256235),	-- Tome of the Quiet Mind [Rank 1]
+							r(256236),	-- Tome of the Quiet Mind [Rank 2]
+							r(264767),	-- War-Scroll of Battle Shout
+							r(264769),	-- War-Scroll of Fortitude
+							r(264766),	-- War-Scroll of Intellect
+						}),
+						cat(772, {	-- Contracts
+							r(256297),	-- Contract: Champions of Azeroth [Rank 1]
+							r(256287, {	-- Contract: Talanji's Expedition [Rank 1]
+								["races"] = HORDE_ONLY,
+							}),
+							r(284295, {	-- Contract: The Honorbound [Rank 1]
+								["races"] = HORDE_ONLY,
+								["timeline"] = { "added 8.1.0" },
+							}),
+							r(256294),	-- Contract: Tortollan Seekers [Rank 1]
+							r(256290, {	-- Contract: Voldunai [Rank 1]
+								["races"] = HORDE_ONLY,
+							}),
+							r(256284, {	-- Contract: Zandalari Empire [Rank 1]
+								["races"] = HORDE_ONLY,
+							}),
+						}),
+						cat(773, {	-- Cards
+							r(278527),	-- Darkmoon Card of War [Rank 1]
+							r(256245),	-- Darkmoon Card of War [Rank 2]
+						}),
+						cat(774, {	-- Off-Hands
+							r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]
+							r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]
+							r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]
+							r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]
+							r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]
+						}),
+						cat(775, {	-- Mass Milling
+							r(256219),	-- Mass Mill Akunda's Bite
+							r(256308),	-- Mass Mill Anchor Weed
+							r(256217),	-- Mass Mill Riverbud
+							r(256223),	-- Mass Mill Sea Stalk
+							r(256221),	-- Mass Mill Siren's Pollen
+							r(256218),	-- Mass Mill Star Moss
+							r(256220),	-- Mass Mill Winter's Kiss
+						}),
+						cat(1235, {	-- Follower Equipment
+							r(278422),	-- Crimson Ink Well
+						}),
 					},
 				}),
 			})),

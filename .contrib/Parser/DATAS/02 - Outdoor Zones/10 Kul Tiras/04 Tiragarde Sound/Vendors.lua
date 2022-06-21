@@ -18,7 +18,7 @@ _.Zones =
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 					["coord"] = { 49.8, 36.8, TIRAGARDE_SOUND },
 					["g"] = {
-						i(162030),	-- Technique: Glyph of the Humble Flyer
+						i(162030),	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 					},
 				}),
 				n(128702, {	-- Roko <Wandering Merchant>

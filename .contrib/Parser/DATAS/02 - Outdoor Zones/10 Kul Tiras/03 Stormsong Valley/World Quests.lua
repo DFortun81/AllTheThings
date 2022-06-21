@@ -843,12 +843,12 @@ _.Zones =
 					["lvl"] = { 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52394, {	-- Work Order: Contract: Champions of Azeroth (Rank 3)
+				q(52394, {	-- Work Order: Contract: Champions of Azeroth
 					["lvl"] = { 50 },
 					["isWorldQuest"] = true,
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(162374),	-- Recipe: Contract: Champions of Azeroth (Rank 3)
+						i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52391, {	-- Work Order: Contract: Storm's Wake
@@ -857,16 +857,16 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(162364),	-- Recipe: Contract: Storm's Wake (Rank 3)
+						i(162364),	-- Recipe: Contract: Storm's Wake [Rank 3] (RECIPE!)
 					},
 				}),
-				q(52347, {	-- Work Order: Honey-Glazed Haunchs (Rank 3)
+				q(52347, {	-- Work Order: Honey-Glazed Haunchs
 					["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 					["lvl"] = { 50 },
 					["isWorldQuest"] = true,
 					["requireSkill"] = COOKING,
 					["g"] = {
-						i(162286),	-- Recipe: Honey-Glazed Haunchs (Rank 3)
+						i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52367, {	-- Work Order: Electroshock Mount Motivator
@@ -896,13 +896,13 @@ _.Zones =
 						i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 					},
 				}),
-				q(52344, {	-- Work Order: Kul Tiramisu (Rank 3)
+				q(52344, {	-- Work Order: Kul Tiramisu
 					["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 					["lvl"] = { 50 },
 					["isWorldQuest"] = true,
 					["requireSkill"] = COOKING,
 					["g"] = {
-						i(162285),	-- Recipe: Kul Tiramisu (Rank 3)
+						i(162285),	-- Recipe: Kul Tiramisu [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52400, {	-- Work Order: Kyanite
@@ -917,7 +917,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
+						i(162258),	-- Recipe: Lightfoot Potion [Rank 3] (RECIPE!)
 					},
 				}),
 				q(50996, {	-- Work Order: Mistscale
@@ -932,13 +932,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = HERBALISM,
 				}),
-				q(52346, {	-- Work Order: Sailor's Pie (Rank 3)
+				q(52346, {	-- Work Order: Sailor's Pie
 					["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 					["lvl"] = { 50 },
 					["isWorldQuest"] = true,
 					["requireSkill"] = COOKING,
 					["g"] = {
-						i(162295),	-- Recipe: Sailor's Pie (Rank 3)
+						i(162295),	-- Recipe: Sailor's Pie [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52404, {	-- Work Order: Solstone

@@ -283,7 +283,7 @@ root("Zones", {
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(162368),	-- Contract: Talanji's Expedition [Rank 3]
+						i(162368),	-- Contract: Talanji's Expedition [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51015, {	-- Work Order: Deep Sea Satin
@@ -335,7 +335,7 @@ root("Zones", {
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+						i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3] (RECIPE!)
 					},
 				}),
 				q(50489),	-- Xu'ba

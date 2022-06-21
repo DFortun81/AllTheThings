@@ -42,7 +42,7 @@ _.Zones =
 							}),
 							i(170469),	-- Memento of the Deeps (TOY!)
 							i(169198),	-- Royal Snapdragon (MOUNT!)
-							i(170169),	-- Technique: Glyph of the Cold Waves
+							i(170169),	-- Technique: Glyph of the Cold Waves (RECIPE!)
 						},
 					}),
 				},
@@ -83,7 +83,7 @@ _.Zones =
 							}),
 							i(170469),	-- Memento of the Deeps (TOY!)
 							i(169198),	-- Royal Snapdragon (MOUNT!)
-							i(170169),	-- Technique: Glyph of the Cold Waves
+							i(170169),	-- Technique: Glyph of the Cold Waves(RECIPE!)
 						},
 					}),
 				},

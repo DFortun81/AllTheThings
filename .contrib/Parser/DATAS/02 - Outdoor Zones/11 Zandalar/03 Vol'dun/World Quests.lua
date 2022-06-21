@@ -695,7 +695,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(162370),	-- Contract: Voldunai [Rank 3]
+						i(162370),	-- Contract: Voldunai [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
@@ -713,7 +713,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162331),	-- Schematic: F.R.I.E.D. [Rank 3]
+						i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52413, {	-- Work Order: Golden Beryl
@@ -761,7 +761,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+						i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51003, {	-- Work Order: Winter's Kiss

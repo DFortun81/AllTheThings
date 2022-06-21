@@ -207,9 +207,11 @@ _.Zones =
 						}),
 						i(171059, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
 						}),
 						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
 						}),
 					}),
 				}),
@@ -1413,9 +1415,11 @@ _.Zones =
 						}),
 						i(165306, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(165307, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(165308, {	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
@@ -2719,6 +2723,7 @@ _.Zones =
 						}),
 						i(166278, {	-- Recipe: Contract: 7th Legion [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(162306, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g

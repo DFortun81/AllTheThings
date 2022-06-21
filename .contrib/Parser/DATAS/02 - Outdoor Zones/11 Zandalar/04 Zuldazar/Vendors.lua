@@ -318,9 +318,11 @@ _.Zones =
 						}),
 						i(171059, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
 						}),
 						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.3.0" },
 						}),
 					}),
 				}),
@@ -345,7 +347,7 @@ _.Zones =
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 					["coord"] = { 76.2, 39.8, ZULDAZAR },
 					["g"] = {
-						i(162030),	-- Technique: Glyph of the Humble Flyer
+						i(162030),	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 					},
 				}),
 				n(142552, {	-- Ozgrom Ragefang <Profession Liason>
@@ -600,9 +602,11 @@ _.Zones =
 						}),
 						i(165306, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(165307, {	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3] (RECIPE!)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(165308, {	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2] (RECIPE!)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor

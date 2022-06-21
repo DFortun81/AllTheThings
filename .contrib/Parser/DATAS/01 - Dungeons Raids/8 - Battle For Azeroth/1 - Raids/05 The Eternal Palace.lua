@@ -94,9 +94,9 @@ _.Instances = { tier(BFA_TIER, {
 			})),
 			n(COMMON_BOSS_DROPS, {
 				i(169329),	-- Eternal Ornament
-				i(168625),	-- Vantus Rune Technique: The Eternal Palace (Rank 1)
-				i(168626),	-- Vantus Rune Technique: The Eternal Palace (Rank 2)
-				i(168627),	-- Vantus Rune Technique: The Eternal Palace (Rank 3)
+				i(168625),	-- Vantus Rune Technique: The Eternal Palace [Rank 1] (RECIPE!)
+				i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
+				i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
@@ -172,7 +172,7 @@ _.Instances = { tier(BFA_TIER, {
 								crit(3, {	-- Radiance of Azshara
 									["achievementID"] = 13718,	-- The Grand Reception
 								}),
-								i(170163),	-- Technique: Glyph of the Dark Depths
+								i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 								i(169694),	-- Aqueous Reliquary
 								i(168478),	-- Monstrosity's Shipbreaker
 								i(168475),	-- Bulwark of the Seaborn Avatar
@@ -399,7 +399,7 @@ _.Instances = { tier(BFA_TIER, {
 							["achievementID"] = 13718,	-- The Grand Reception
 						}),
 						ach(13767),	-- Fun Run
-						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
@@ -613,7 +613,7 @@ _.Instances = { tier(BFA_TIER, {
 							["achievementID"] = 13718,	-- The Grand Reception
 						}),
 						ach(13767),	-- Fun Run
-						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
@@ -832,7 +832,7 @@ _.Instances = { tier(BFA_TIER, {
 							["achievementID"] = 13718,	-- The Grand Reception
 						}),
 						ach(13767),	-- Fun Run
-						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar

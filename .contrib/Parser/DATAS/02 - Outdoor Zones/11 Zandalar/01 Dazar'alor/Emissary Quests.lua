@@ -43,7 +43,9 @@ _.Zones =
 					["g"] = {
 						i(166299, {	-- Honorbound Supplies
 							i(166879),	-- Rallying War Banner (TOY!)
-							i(166311),	-- Recipe: Contract: The Honorbound [Rank 3]
+							i(166311, {	-- Recipe: Contract: The Honorbound [Rank 3] (RECIPE!)
+								["timeline"] = { "added 8.1.0" },
+							}),
 						}),
 					},
 				}),

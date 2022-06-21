@@ -42,6 +42,33 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				}),
 			},
 		})),
+		prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
+			["crs"] = {
+				153811, -- Instructor Okanu <Profession Trainer> (A)
+				154393, -- Narv <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.2, NAZJATAR },
+				{ 49.2, 61.6, NAZJATAR },
+			},
+			["g"] = {
+				cat(773, {	-- Cards
+					r(302190),	-- Highborne Compendium of Mystical Bulwark
+					r(302189),	-- Highborne Compendium of Storms
+					r(302188),	-- Highborne Compendium of Sundering
+					r(302187),	-- Highborne Compendium of Swirling Tides
+				}),
+				cat(1026, {	-- Inks
+					r(298929),	-- Maroon Ink
+				}),
+				cat(775, {	-- Mass Milling
+					r(298927),	-- Mass Mill Zin'anthid
+				}),
+				cat(774, {	-- Off-Hands
+					r(294790),	-- Notorious Combatant's Etched Vessel [Rank 1]
+				}),
+			},
+		})),
 		prof(MINING, {
 			q(56103, {	-- Ounces of Osmenite (A)
 				["provider"] = { "i", 168939 },	-- Osmenite Shards

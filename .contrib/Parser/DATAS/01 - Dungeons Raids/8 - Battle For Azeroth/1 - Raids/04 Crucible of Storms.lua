@@ -20,9 +20,9 @@ _.Instances = { tier(BFA_TIER, {
 					145371,	-- Uu'nat, Harbinger of the Void
 				},
 				["g"] = {
-					i(165735),	-- Vantus Rune Technique: Crucible of Storms (Rank 1)
-					i(165736),	-- Vantus Rune Technique: Crucible of Storms (Rank 2)
-					i(165737),	-- Vantus Rune Technique: Crucible of Storms (Rank 3)
+					i(165735),	-- Vantus Rune Technique: Crucible of Storms [Rank 1] (RECIPE!)
+					i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
+					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				},
 			}),
 			d(17, {	-- LFR

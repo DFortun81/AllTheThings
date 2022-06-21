@@ -84,7 +84,9 @@ _.Zones =
 					["g"] = {
 						i(166300, {	-- 7th Legion Supplies
 							i(166879),	-- Rallying War Banner (TOY!)
-							i(166279),	-- Recipe: Contract: 7th Legion [Rank 3]
+							i(166279, {	-- Recipe: Contract: 7th Legion [Rank 3] (RECIPE!)
+								["timeline"] = { "added 8.1.0" },
+							}),
 						}),
 					},
 				}),

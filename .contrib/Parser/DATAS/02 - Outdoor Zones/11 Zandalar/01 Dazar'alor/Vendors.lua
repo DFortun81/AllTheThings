@@ -1001,7 +1001,7 @@ _.Zones =
 						i(162704, {	-- Recipe: Coastal Healing Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162753, {	-- Recipe: Contract: Zandalari Empire (Rank 2)
+						i(162753, {	-- Recipe: Contract: Zandalari Empire [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162696, {	-- Recipe: Flask of Endless Fathoms [Rank 3] (RECIPE!)
@@ -1016,7 +1016,7 @@ _.Zones =
 						i(161664, {	-- Spectral Pterrorwing (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
-						i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 2)
+						i(162730, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162731, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3] (RECIPE!)
@@ -1031,7 +1031,7 @@ _.Zones =
 						i(162741, {	-- Schematic: Organic Discombobulation Grenade [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166736, {	-- Schematic: Unstable Temporal Time Shifter (Rank 2)
+						i(166736, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(161500, {	-- Shadraspun Legwraps
@@ -1202,8 +1202,9 @@ _.Zones =
 						i(163319, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166310, {	-- Recipe: Contract: The Honorbound (Rank 2)
+						i(166310, {	-- Recipe: Contract: The Honorbound [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
+							["timeline"] = { "added 8.1.0" },
 						}),
 						i(162720, {	-- Recipe: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
@@ -1235,7 +1236,7 @@ _.Zones =
 						i(161537, {	-- Sabatons of the Renewed Warpath
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162728, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	(Rank 2)
+						i(162728, {	-- Schematic: AZ3-R1-T3 Synthetic Specs	[Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162729, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3] (RECIPE!)

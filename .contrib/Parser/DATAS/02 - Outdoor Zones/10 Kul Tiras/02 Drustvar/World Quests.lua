@@ -721,7 +721,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
 					["g"] = {
-						i(162362),	-- Contract: Order of Embers [Rank 3]
+						i(162362),	-- Contract: Order of Embers [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52414, {	-- Work Order: Drums of the Maelstrom
@@ -745,7 +745,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162331),	-- Schematic: F.R.I.E.D. [Rank 3]
+						i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52407, {	-- Work Order: Golden Beryl
@@ -792,7 +792,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+						i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 					},
 				}),
 				q(54711, {	-- Zillie Wunderwrench and Grizzwald (Faction Assault WQ)

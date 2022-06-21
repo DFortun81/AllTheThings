@@ -31,13 +31,13 @@ _.Zones =
 						i(161534, {	-- Legguards of Ai'twen's Resurgence
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(163026, {	-- Pattern: Embroidered Deep Sea Bag (Rank 2)
+						i(163026, {	-- Pattern: Embroidered Deep Sea Bag [Rank 2] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166806, {	-- Recipe: Boralus Blood Sausage (Rank 2)
+						i(166806, {	-- Recipe: Boralus Blood Sausage [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
-						i(162288, {	-- Recipe: Bountiful Captain's Feast (Rank 2)
+						i(162288, {	-- Recipe: Bountiful Captain's Feast [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162289, {	-- Recipe: Bountiful Captain's Feast [Rank 3] (RECIPE!)
@@ -46,10 +46,10 @@ _.Zones =
 						i(162358, {	-- Recipe: Codex of the Quiet Mind [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162373, {	-- Recipe: Contract: Champions of Azeroth (Rank 2)
+						i(162373, {	-- Recipe: Contract: Champions of Azeroth [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
-						i(162371, {	-- Recipe: Contract: Tortollan Seekers (Rank 2)
+						i(162371, {	-- Recipe: Contract: Tortollan Seekers [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162377, {	-- Recipe: Darkmoon Card of War [Rank 3] (RECIPE!)
@@ -67,7 +67,7 @@ _.Zones =
 						i(162352, {	-- Recipe: Inscribed Vessel of Mysticism [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(166263, {	-- Recipe: Sanguinated Feast (Rank 2)
+						i(166263, {	-- Recipe: Sanguinated Feast [Rank 2] (RECIPE!)
 							["cost"] = 19000000,	-- 1,900g
 						}),
 						i(162293, {	-- Recipe: Seasoned Loins [Rank 3] (RECIPE!)
@@ -230,7 +230,7 @@ _.Zones =
 						i(162255, {	-- Recipe: Coastal Healing Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162363, {	-- Recipe: Contract: Storm's Wake (Rank 2)
+						i(162363, {	-- Recipe: Contract: Storm's Wake [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162133, {	-- Recipe: Flask of Endless Fathoms	[Rank 3] (RECIPE!)
@@ -245,7 +245,7 @@ _.Zones =
 						i(161909, {	-- Stormsong Coastwatcher (MOUNT!)
 							["cost"] = 900000000,	-- 90,000g
 						}),
-						i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles (Rank 2)
+						i(162325, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162326, {	-- Schematic: AZ3-R1-T3 Gearspun Goggles [Rank 3] (RECIPE!)

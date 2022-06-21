@@ -46,9 +46,9 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 1)
-				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 2)
-				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
+				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 1] (RECIPE!)
+				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
+				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {

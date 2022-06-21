@@ -106,10 +106,10 @@ _.Instances = { tier(BFA_TIER, {
 					132998,	-- G'huun*
 				},
 				["g"] = {
-					i(162121),	-- Vantus Rune Technique: Uldir (Rank 1)
-					i(162124),	-- Vantus Rune Technique: Uldir (Rank 2)
-					i(162125),	-- Vantus Rune Technique: Uldir (Rank 3)
-					i(162521),	-- Recipe: Mystical Cauldron (Rank 3)
+					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
+					i(162124),	-- Vantus Rune Technique: Uldir [Rank 2] (RECIPE!)
+					i(162125),	-- Vantus Rune Technique: Uldir [Rank 3] (RECIPE!)
+					i(162521),	-- Recipe: Mystical Cauldron [Rank 3] (RECIPE!)
 				},
 			}),
 			d(17,  {	-- LFR

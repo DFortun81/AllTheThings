@@ -992,86 +992,14 @@ r(246982),	-- Glyph of Ember Shards
 7.3.5.26899
 7.3.5.26972
 8.0.1.25902
-r(256285),	-- Contract: Zandalari Empire
-r(256276),	-- Contract: Proudmoore Admiralty
-r(256277),	-- Contract: Proudmoore Admiralty
-r(256220),	-- Mass Mill Winter's Kiss
-r(264500),	-- Cataclysm Inscription
-r(256221),	-- Mass Mill Siren's Pollen
-r(256278),	-- Contract: Order of Embers
-r(256232),	-- Codex of the Quiet Mind
-r(256238),	--
-r(264504),	-- Draenor Inscription
-r(256283),	-- Contract: Storm's Wake
-r(256247),	-- Inscribed Vessel of Mysticism
-r(256294),	-- Contract: Tortollan Seekers
-r(264506),	-- Legion Inscription
-r(256234),	-- Codex of the Quiet Mind
-r(256245),	-- Darkmoon Card of War
-r(256237),	-- Tome of the Quiet Mind
-r(256297),	-- Contract: Champions of Azeroth
-r(256282),	-- Contract: Storm's Wake
-r(264496),	-- Outland Inscription
-r(256279),	-- Contract: Order of Embers
-r(256248),	-- Inscribed Vessel of Mysticism
-r(256303),	-- Vantus Rune: Uldir
-r(256289),	-- Contract: Talanji's Expedition
-r(256249),	-- Inscribed Vessel of Mysticism
-r(256295),	-- Contract: Tortollan Seekers
-r(256223),	-- Mass Mill Sea Stalk
-r(256299),	-- Contract: Champions of Azeroth
-r(256281),	-- Contract: Storm's Wake
-r(256287),	-- Contract: Talanji's Expedition
-r(256308),	-- Mass Mill Anchor Weed
-r(256305),	-- Vantus Rune: Uldir
-r(256288),	-- Contract: Talanji's Expedition
-r(256290),	-- Contract: Voldunai
-r(256286),	-- Contract: Zandalari Empire
-r(256293),	-- Contract: Voldunai
-r(256218),	-- Mass Mill Star Moss
-r(256298),	-- Contract: Champions of Azeroth
-r(256304),	-- Vantus Rune: Uldir
-r(256296),	-- Contract: Tortollan Seekers
-r(256219),	-- Mass Mill Akunda's Bite
-r(256241),	--
-r(256275),	-- Contract: Proudmoore Admiralty
-r(264508),	-- Kul Tiran Inscription
-r(256251),	--
-r(256217),	-- Mass Mill Riverbud
-r(256284),	-- Contract: Zandalari Empire
-r(264494),	-- Inscription
-r(256246),	-- Darkmoon Card of War
-r(264502),	-- Pandaria Inscription
-r(264498),	-- Northrend Inscription
-r(256252),	--
-r(256236),	-- Tome of the Quiet Mind
-r(256250),	--
-r(256280),	-- Contract: Order of Embers
-r(256291),	-- Contract: Voldunai
-r(256233),	-- Codex of the Quiet Mind
-r(256235),	-- Tome of the Quiet Mind
 8.0.1.25976
-r(264777),	-- Crimson Ink
-r(264778),	-- Viridescent Ink
-r(265809),	-- Zandalari Inscription
-r(264769),	-- War-Scroll of Fortitude
-r(264767),	-- War-Scroll of Battle Shout
-r(264766),	-- War-Scroll of Intellect
-r(264776),	-- Ultramarine Ink
 8.0.1.26010
 8.0.1.26032
 8.0.1.26095
 8.0.1.26131
 8.0.1.26141
 8.0.1.26175
-r(269065),	-- Scroll of Unlocking
 8.0.1.26231
-r(269746),	--
-r(269741),	-- Honorable Combatant's Etched Vessel
-r(269744),	--
-r(269740),	-- Honorable Combatant's Etched Vessel
-r(269745),	--
-r(269742),	-- Honorable Combatant's Etched Vessel
 8.0.1.26287
 8.0.1.26297
 8.0.1.26310
@@ -1081,9 +1009,6 @@ r(269742),	-- Honorable Combatant's Etched Vessel
 8.0.1.26476
 8.0.1.26491
 8.0.1.26522
-r(276059),	-- Glyph of the Dolphin
-r(276088),	-- Glyph of the Tideskipper
-r(276121),	-- Glyph of the Humble Flyer
 8.0.1.26530
 8.0.1.26557
 8.0.1.26567
@@ -1091,8 +1016,6 @@ r(276121),	-- Glyph of the Humble Flyer
 8.0.1.26604
 8.0.1.26610
 8.0.1.26624
-r(278527),	-- Darkmoon Card of War
-r(278422),	-- Crimson Ink Well
 8.0.1.26629
 8.0.1.26637
 8.0.1.26640
@@ -1144,30 +1067,14 @@ r(278422),	-- Crimson Ink Well
 8.0.1.27980
 8.0.1.28153
 8.1.0.27826
-r(285639),	-- Vantus Rune: Battle of Dazar'alor
-r(282804),	-- Sinister Combatant's Etched Vessel
-r(284296),	-- Contract: The Honorbound
-r(285640),	-- Vantus Rune: Battle of Dazar'alor
-r(284293),	-- Contract: 7th Legion
-r(282805),	-- Sinister Combatant's Etched Vessel
-r(284297),	-- Contract: The Honorbound
-r(284294),	-- Contract: 7th Legion
-r(284295),	-- Contract: The Honorbound
-r(282803),	-- Sinister Combatant's Etched Vessel
-r(284292),	-- Contract: 7th Legion
-r(285641),	-- Vantus Rune: Battle of Dazar'alor
 8.1.0.27934
 8.1.0.27985
-r(286649),	-- Sanguinated Chromotography
 8.1.0.28048
-r(287271),	-- Aqueous Chromotography
 8.1.0.28085
 8.1.0.28151
 8.1.0.28186
 8.1.0.28202
 8.1.0.28294
-r(289356),	-- Glyph of Storm's Wake
-r(289313),	-- Glyph of the Tides
 8.1.0.28366
 8.1.0.28440
 8.1.0.28485
@@ -1188,22 +1095,13 @@ r(289313),	-- Glyph of the Tides
 8.1.0.29600
 8.1.0.29621
 8.1.5.28938
-r(256301),	-- Sanguine Feather Quill of Lana'thel
-r(292012),	-- Blood Contract: Bloodshed
-r(259665),	-- Blood Contract: Sacrifice
-r(292322),	-- Blood Contract: Oblivion
-r(292320),	-- Blood Contract: Bloodguard
 8.1.5.29141
-r(293801),	-- Glyph of Dalaran Brilliance
 8.1.5.29220
 8.1.5.29281
 8.1.5.29310
 8.1.5.29352
 8.1.5.29385
 8.1.5.29418
-r(285925),	-- Vantus Rune: Crucible of Storms
-r(285927),	-- Vantus Rune: Crucible of Storms
-r(285926),	-- Vantus Rune: Crucible of Storms
 8.1.5.29484
 8.1.5.29495
 8.1.5.29558
@@ -1225,49 +1123,17 @@ r(285926),	-- Vantus Rune: Crucible of Storms
 8.1.5.30477
 8.1.5.30706
 8.2.0.30080
-r(299671),	-- Contract: Rustbolt Resistance
-r(298647),	-- Vantus Rune: The Eternal Palace
-r(299665),	-- Contract: Ankoan
-r(299667),	-- Contract: Ankoan
-r(298648),	-- Vantus Rune: The Eternal Palace
-r(294790),	-- Notorious Combatant's Etched Vessel
-r(298929),	-- Maroon Ink
-r(299673),	-- Contract: Uldum Accord
-r(298927),	-- Mass Mill Zin'anthid
-r(299666),	-- Contract: Ankoan
-r(298625),	-- Vantus Rune: The Eternal Palace
-r(299668),	-- Contract: Unshackled
-r(294791),	-- Notorious Combatant's Etched Vessel
-r(299669),	-- Contract: Unshackled
-r(299672),	-- Contract: Rajani
-r(294792),	-- Notorious Combatant's Etched Vessel
-r(299670),	-- Contract: Unshackled
 8.2.0.30093
 8.2.0.30096
 8.2.0.30108
 8.2.0.30123
 8.2.0.30168
-r(301999),	-- Milling
-r(302001),	-- Milling
 8.2.0.30170
 8.2.0.30203
 8.2.0.30262
-r(302188),	-- Highborne Compendium of Sundering
-r(302189),	-- Highborne Compendium of Storms
-r(302187),	-- Highborne Compendium of Swirling Tides
-r(302190),	-- Highborne Compendium of Mystical Bulwark
 8.2.0.30329
-r(302698),	-- Milling
-r(302704),	-- Milling
-r(302700),	-- Milling
-r(302701),	-- Milling
-r(302697),	-- Milling
-r(302703),	-- Milling
 8.2.0.30430
 8.2.0.30495
-r(304036),	-- Glyph of the Cold Waves
-r(304030),	-- Glyph of the Dark Depths
-r(304033),	-- Glyph of Steaming Fury
 8.2.0.30613
 8.2.0.30634
 8.2.0.30669
@@ -1283,9 +1149,7 @@ r(304033),	-- Glyph of Steaming Fury
 8.2.0.31429
 8.2.0.31478
 8.2.5.31337
-r(304042),	-- Glyph of Dire Bees
 8.2.5.31401
-r(309443),	-- Glyph of Lavish Servings
 8.2.5.31521
 8.2.5.31599
 8.2.5.31812
@@ -1310,13 +1174,7 @@ r(309443),	-- Glyph of Lavish Servings
 8.2.5.32750
 8.2.5.32978
 8.3.0.32044
-r(305954),	-- Uncanny Combatant's Etched Vessel
-r(305953),	-- Uncanny Combatant's Etched Vessel
-r(305952),	-- Uncanny Combatant's Etched Vessel
 8.3.0.32151
-r(306481),	-- Vantus Rune: Ny'alotha, the Waking City
-r(306483),	-- Vantus Rune: Ny'alotha, the Waking City
-r(306482),	-- Vantus Rune: Ny'alotha, the Waking City
 8.3.0.32203
 8.3.0.32218
 8.3.0.32272

@@ -306,7 +306,7 @@ root("Zones", m(ZANDALAR, {
 			q(52393, {	-- Work Order: Contract: Tortollan Seekers
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					i(162372),	-- Contract: Tortollan Seekers [Rank 3]
+					i(162372),	-- Contract: Tortollan Seekers [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52335, {	-- Work Order: Demitri's Draught of Deception
@@ -334,35 +334,35 @@ root("Zones", m(ZANDALAR, {
 			q(52349, {	-- Work Order: Loa Loaf
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162294),	-- Recipe: Loa Loaf [Rank 3]
+					i(162294),	-- Recipe: Loa Loaf [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162296),	-- Recipe: Mon'Dazi [Rank 3]
+					i(162296),	-- Recipe: Mon'Dazi [Rank 3] (RECIPE!)
 				},
 			}),
-			q(52345, {	-- Work Order: Ravenberry Tarts [Rank 3]
+			q(52345, {	-- Work Order: Ravenberry Tarts
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
+					i(162290),	-- Recipe: Ravenberry Tarts [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52420, {	-- Work Order: Shimmerscale Diving Suit
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
 			}),
-			q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
+			q(52351, {	-- Work Order: Spiced Snapper
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162297),	-- Recipe: Spiced Snapper [Rank 3]
+					i(162297),	-- Recipe: Spiced Snapper [Rank 3] (RECIPE!)
 				},
 			}),
-			q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
+			q(52350, {	-- Work Order: Swamp Fish 'n Chips
 				["requireSkill"] = COOKING,
 				["g"] = {
-					i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
+					i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50957, {	-- Wrath of Rezan

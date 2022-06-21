@@ -217,7 +217,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = TAILORING,
 					["g"] = {
-						i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3]
+						i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52395, {	-- Work Order: Contract: Zandalari Empire
@@ -226,7 +226,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
-						i(162366),	-- Recipe: Contract: Zandalari Empire [Rank 3]
+						i(162366),	-- Recipe: Contract: Zandalari Empire [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52374, {	-- Work Order: Crow's Nest Scope
@@ -235,7 +235,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162343),	-- Schematic: Crow's Nest Scope [Rank 3]
+						i(162343),	-- Schematic: Crow's Nest Scope [Rank 3] (RECIPE!)
 					},
 				}),
 				q(52373, {	-- Work Order: Electroshock Mount Motivator
@@ -271,7 +271,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(162321),	-- Schematic: Incendiary Ammunition [Rank 3]
+						i(162321),	-- Schematic: Incendiary Ammunition [Rank 3] (RECIPE!)
 					},
 				}),
 				q(51013, {	-- Work Order: Mistscale

@@ -35,9 +35,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(154183),	-- Boralus-Captain's Chain Boots
-						i(162028, {	-- Technique: Glyph of the Tideskipper
-							["spellID"] = 276088,
-						}),
+						i(162028),	-- Technique: Glyph of the Tideskipper (RECIPE!)
 						crit(18, {	-- Corrupted Pod
 							["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 						}),
@@ -167,7 +165,7 @@ _.Zones =
 					["g"] = {
 						i(172491),	-- Papi (PET!)
 						i(172492),	-- Sunsoaked Flitter (PET!)
-						i(170175),	-- Technique: Glyph of Dire Bees
+						i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
 					},
 				}),
 				n(154154, {	-- Honey Smasher

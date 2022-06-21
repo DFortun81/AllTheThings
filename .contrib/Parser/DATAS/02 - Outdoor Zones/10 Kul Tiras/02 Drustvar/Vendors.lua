@@ -90,7 +90,7 @@ _.Zones =
 						i(162256, {	-- Recipe: Coastal Rejuvenation Potion [Rank 3] (RECIPE!)
 							["cost"] = 14000000,	-- 1,400g
 						}),
-						i(162361, {	-- Recipe: Contract: Order of Embers (Rank 2)
+						i(162361, {	-- Recipe: Contract: Order of Embers [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162135, {	-- Recipe: Flask of the Undertow [Rank 3] (RECIPE!)
@@ -108,7 +108,7 @@ _.Zones =
 						i(161910, {	-- Smoky Charger (MOUNT!)
 							["cost"] = 125000000,	-- 12,500g
 						}),
-						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics (Rank 2)
+						i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2] (RECIPE!)
 							["cost"] = 11000000,	-- 1,100g
 						}),
 						i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3] (RECIPE!)
