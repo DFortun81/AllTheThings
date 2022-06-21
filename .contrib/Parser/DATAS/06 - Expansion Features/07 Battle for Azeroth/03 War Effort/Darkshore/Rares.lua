@@ -72,7 +72,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(149141, {	-- Burninator Mark V [A Only]
-						-- ["questID"] = 54451,	-- Burninator Mark V [Alliance]
 						["races"] = ALLIANCE_ONLY,
 						["cr"] = 148497,	-- When he spawns as a WQ
 						["questID"] = 54768,

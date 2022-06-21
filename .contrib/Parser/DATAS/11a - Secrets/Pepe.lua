@@ -81,6 +81,7 @@ root("Secrets", n(86470, {	-- Pepe
 				{ 33.9, 68.1, IRONFORGE },
 				{ 52.9, 77.4, ORGRIMMAR },
 			},
+			["timeline"] = { "created 8.3.0", "added 9.0.1" },
 			["u"] = FEAST_OF_WINTER_VEIL,
 		}),
 		i(186473, {	-- A Tiny Winter Staff

@@ -15,10 +15,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(106166),	-- Frostwolf Ringmail Armor	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(106147),	-- Forstwolf Stalwart Chestpiece	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
-				
+
 				-- PvP (probably from some Ensemble)
 				i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
-				
+
 				-- Other
 				i(163255, {	-- 7th Legionnaire's Treads
 					-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
@@ -33,7 +33,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
 				i(90331),	-- Face Smasher Warhammer	-- rewarded by some MoP quest probably (Jade Forest?)
 				i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
-				
+
 				-- PvP (probably from some Ensemble)
 				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
 				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
@@ -110,10 +110,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(53428),	--
 				q(53429),	--
 				q(53477),	--
-				q(53504),	--
-				q(53515),	--
-				q(53524),	--
-				q(53531),	--
 				q(53635),	--
 				q(53650),	--
 				-- 8.1.0
@@ -174,7 +170,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(57550),	--
 				-- 8.3.0
 				q(57830),	--
-				q(58550),	--
 				q(58576),	--
 				q(59038),	--
 				q(59040),	--

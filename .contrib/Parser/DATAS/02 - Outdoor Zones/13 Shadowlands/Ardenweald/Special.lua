@@ -7,7 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		n(SPECIAL, {
 			n(171206, {	-- Playful Vulpin
 				["description"] = "You need to find the Playful Vulpin five times and use the following emotes.\n\n 1. Playful Vulpin begins to dig curiously. |cFFFFFFFF/curious|r\n 2. Playful Vulpin wanders around unable to sit still. |cFFFFFFFF/sit|r\n 3. Playful Vulpin sings all alone. |cFFFFFFFF/sing|r\n 4. Playful Vulpin dances with joy. |cFFFFFFFF/dance|r\n 5. Playful Vulpin sits down lonely and sad. |cFFFFFFFF/pet|r\n\nIt only counts if the Playful Vulpin reacts to your emote and runs away.",
-			--	["questID"] = 61086,
+				["questID"] = 61086,
 				["coords"] = {
 					{ 32.0, 43.2, ARDENWEALD },
 					{ 33.0, 43.9, ARDENWEALD },
@@ -75,7 +75,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					n(168135, {	-- Night Mare
 						["description"] = "Take the |cff045ab3Dream Catcher|r behind Hibernal Hollow and use it at |cFFFFFFFF62.5, 51.6|r to phase to the Night Mare's realm.",
-					--	["questID"] = 60306,
+						["questID"] = 60306,
 						["isDaily"] = true,
 						["coord"] = { 62.5, 51.6, ARDENWEALD },
 						["g"] = {
@@ -98,7 +98,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{  28.1, 58.1, ARDENWEALD },	-- 5
 					{  27.5, 57.8, ARDENWEALD },	-- 6
 				},
-			--	["questID"] = 61192,
+				["questID"] = 61192,
 				["crs"] = { 171767 },	-- Shizgher
 				["g"] = {
 					i(180727),		-- Shimmermist Runner (MOUNT!)
@@ -121,9 +121,3 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		}),
 	}),
 })));
-
-root("HiddenQuestTriggers", {
-	q(61086),	-- Playful Vulpin Befriended
-	q(60306),	-- using the Dream Catcher for Night Mare
-	q(61192),	-- Shimmermist Runner tracking quest
-});

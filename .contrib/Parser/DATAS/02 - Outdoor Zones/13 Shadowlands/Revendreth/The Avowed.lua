@@ -163,7 +163,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							}),
 							n(159152, {	-- High Inquisitor Gabi
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-							--	["questID"] = 59887, – commenting because i don't think this is related to this inquisitor specifically - seems to be flagged permanently while all inquisitors are repeatable - if it is a "first time kill" quest it should be put in HQT, but since the other inquisitors did not have them idk if that's what it is.  hoping to get a more accurate report
 								["coord"] = { 75.2, 44.2, REVENDRETH },
 								["g"] = {
 									crit(6, {	-- High Inquisitor Gabi

@@ -278,8 +278,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						}),
 						q(57585, {	-- Call of the Void
 						}),
-						q(57620, {	-- Call of the Void
-						}),
 						q(58216, {	-- Consuming Maw
 							["coord"] = { 60.13, 45.58, 1527 },
 						}),

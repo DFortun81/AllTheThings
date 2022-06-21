@@ -103,17 +103,6 @@ _.Secrets =
 				["sourceQuest"] = 43760,	-- Step 11: Hungering Orb
 				["description"] = "|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF37.17, 71.82|r.  Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",
 			}),
-			-- n(111573, {	-- Kosumoth the Hungering
-			-- 	["questID"] = 43798,
-			-- 	["coord"] = { 46.9, 50.0, EYE_OF_AZSHARA },
-			-- 	["sourceQuest"] = 43761,	-- Step 12: Hungering Orb
-			-- 	["description"] = "You can now head to |cFFFFD700Eye of Azshara|r, the zone, and kill |cFFFFD700Kosumoth the Hungering|r when |cFFFFD700DANGER: Kosumoth the Hungering|r world quest is active to get your pet and mount.",
-			-- 	["isWeekly"] = true,
-			-- 	["g"] = {
-			-- 		i(140261),	-- Hungering Claw (PET!)
-			-- 		i(138201),	-- Fathom Dweller (MOUNT!)
-			-- 	},
-			-- }),
 		},
 	}),
 };

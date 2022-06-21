@@ -103,7 +103,6 @@ _.Instances = { tier(CATA_TIER, {
 							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59032,
-								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
 								["ignoreBonus"] = true,
 							}),
@@ -210,7 +209,6 @@ _.Instances = { tier(CATA_TIER, {
 							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
 								["races"] = { VULPERA },
 								["questID"] = 59032,
-								--["questID"] = 59033,	-- secondary questID, sorted in HQTs
 								["timeline"] = { "added 8.3.0.33115" },
 								["ignoreBonus"] = true,
 							}),

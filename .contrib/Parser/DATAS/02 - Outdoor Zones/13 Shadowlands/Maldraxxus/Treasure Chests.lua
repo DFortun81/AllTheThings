@@ -72,7 +72,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(345456, {		-- Chest of Eyes
 				["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
-			--	["questID"] = 59244,
+				["questID"] = 59244,
 				["coord"] = { 48.3, 16.3, MALDRAXXUS },
 				["g"] = {
 					crit(8, {	-- Chest of Eyes
@@ -112,7 +112,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(341424, {		-- Forgotten Mementos
 				["description"] = "Unlock the gate to the treasure by clicking the chain at |cFFFFFFFF25.8, 53.9|r.\n\nThe treasure will respawn about 5 minutes after being looted by another player.",
-			--	["questID"] = 58710,
+				["questID"] = 58710,
 				["coord"] = { 22.5, 30.5, MALDRAXXUS },
 				["g"] = {
 					crit(7, {	-- Forgotten Mementos
@@ -129,7 +129,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355947, {		-- Glutharn's Stash
 				["description"] = "In a cave behind the slime waterfall.",
-			--	["questID"] = 61484,
+				["questID"] = 61484,
 				["coord"] = { 72.1, 52.7, MALDRAXXUS },
 				["g"] = {
 					crit(10, {	-- Glutharn's Stash
@@ -138,7 +138,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			o(353380, {		-- Halis's Lunch Pail
-			--	["questID"] = 60730,
+				["questID"] = 60730,
 				["coord"] = { 30.7, 28.7, MALDRAXXUS },
 				["g"] = {
 					crit(3, {	-- Halis's Lunch Pail
@@ -150,7 +150,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 32.7, 21.2, MALDRAXXUS },
 				["g"] = {
 					i(180085, {	-- Kyrian Keepsake
-					--	["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
+						["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
 						["g"] = {
 							crit(2, {	-- Kyrian Keepsake
 								["achievementID"] = 14312,	-- Treasures of Maldraxxus
@@ -174,7 +174,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(351980, {		-- Misplaced Supplies
 				["description"] = "On top of the mushroom.",
-			--	["questID"] = 59245,	-- 60311 triggered for me on this treasure
+				["questID"] = 60311,
 				["coord"] = { 62.4, 59.9, MALDRAXXUS },
 				["g"] = {
 					crit(9, {	-- Misplaced Supplies
@@ -183,7 +183,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			o(347444, {		-- Ornate Bone Shield
-			--	["questID"] = 59358,
+				["questID"] = 59358,
 				["coord"] = { 47.2, 62.1, MALDRAXXUS },
 				["g"] = {
 					crit(1, {	-- Ornate Bone Shield
@@ -194,7 +194,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355886, {		-- Plaguefallen Chest
 				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
-			--	["questID"] = 61474,
+				["questID"] = 61474,
 				["coord"] = { 62.4, 76.5, MALDRAXXUS },
 				["lvl"] = { 60 },
 				["g"] = {
@@ -214,7 +214,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(345456, {		-- Ritualist's Cache
 				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
-			--	["questID"] = 61514,
+				["questID"] = 61514,
 				["coord"] = { 64.6, 24.8, MALDRAXXUS },
 				["g"] = {
 					crit(13, {	-- Ritualist's Cache
@@ -310,7 +310,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(345456, {		-- Runespeaker's Trove
 				["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
-			--	["questID"] = 61491,
+				["questID"] = 61491,
 				["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure
 				["cost"] = { { "i", 181777, 1 } },	-- Phaeton's Key
 				["cr"] = 170563,	-- Runespeaker Phaeton
@@ -383,7 +383,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355872, {		-- Stolen Jar
 				["description"] = "There are two caves - the treasure is in the lower one.",
-			--	["questID"] = 61451,
+				["questID"] = 61451,
 				["coord"] = { 65.6, 50.8, MALDRAXXUS },
 				["g"] = {
 					crit(5, {	-- Stolen Jar
@@ -409,7 +409,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					59917,	-- Kill Them, Of Course
 					58620,	-- Slaylines
 				},
-			--	["questID"] = 61470,
+				["questID"] = 61470,
 				["coord"] = { 42.3, 23.3, MALDRAXXUS },
 				["g"] = {
 					crit(6, {	-- Necro Tome
@@ -421,7 +421,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355865, {		-- Vat of Conspicuous Slime
 				["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
-			--	["questID"] = 61444,
+				["questID"] = 61444,
 				["coord"] = { 59.8, 79.0, MALDRAXXUS },
 				["g"] = {
 					crit(4, {	-- Vat of Conspicuous Slime
@@ -444,20 +444,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 
 root("HiddenQuestTriggers", {
 --	Treasures of Maldraxxus achievement
-	q(59244),	-- Chest of Eyes
 	q(58709),	-- Forgotten Mementos - clicking the chain
-	q(58710),	-- Forgotten Mementos - loot trigger
-	q(61484),	-- Glutharn's Stash
-	q(60730),	-- Halis's Lunch Pail
-	q(60587),	-- Kyrian Keepsake
-	q(59245),	-- Misplaced Supplies (?) - unsure if this is a 'first-time' questID and the other one is daily?
-	q(60311),	-- Misplaced Supplies (?) possible daily trigger?  but this is that one i got for the first time on an alt so the questID may have changed.  doesn't seem to have 100% uptime and i haven't been able to find it again on any character since opening it on my first alt today
-	q(59358),	-- Ornate Bone Shield
-	q(61474),	-- Plaguefallen Chest
-	q(61514),	-- Ritualist's Cache
-	q(61491),	-- Runespeaker's Trove
-	q(61451),	-- Stolen Jar
-	q(61470),	-- The Necronom-i-nom
-	q(61444),	-- Vat of Conspicuous Slime
+	q(59245),	-- Misplaced Supplies (daily trigger)
 	q(62582),	-- Using Cache of Spare Weapons
 });

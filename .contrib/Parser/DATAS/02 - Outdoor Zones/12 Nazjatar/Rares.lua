@@ -793,7 +793,6 @@ _.Zones =
 			}),
 			n(152568, {	-- Urduu
 				["questID"] = 56299,	-- triggered 56584 the first time i killed it, 56299 both times i killed it, and 57140 the second time i killed it — slumber
-			--	["questID"] = 56584,
 				["coords"] = {
 					{ 31.3, 29.4, 1355 },
 					{ 30.3, 35.9, 1355 },

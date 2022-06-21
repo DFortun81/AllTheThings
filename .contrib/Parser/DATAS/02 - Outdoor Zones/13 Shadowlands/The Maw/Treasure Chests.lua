@@ -89,7 +89,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369224, {	-- Jeweled Heart of Ezekiel
 				["description"] = "In a small cave.",
-			--	["questID"] = 64261,
+				["questID"] = 64261,
 				["coord"] = { 66.5, 62.2, THE_MAW },
 				["g"] = {
 					crit(8, {	-- Jeweled Heart
@@ -185,7 +185,3 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		}),
 	}),
 })));
-
-root("HiddenQuestTriggers", {
-	q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
-});

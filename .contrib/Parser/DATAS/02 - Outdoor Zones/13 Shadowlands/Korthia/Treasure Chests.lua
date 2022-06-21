@@ -9,11 +9,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			i(187216),	-- Soultwining Crescent
 			i(185962, {	-- Rune Chit
 			--	["sourceQuests"] = { 64506 },	-- What Must Be Found
-			--	["questID"] = 63892,	-- Diviner's Rune Chits
 			}),
 			o(369194, {	-- Anima Laden Egg
 				["description"] = "In a tree.",
-			--	["questID"] = 64244,
+				["questID"] = 64244,
 				["coord"] = { 29.5, 53.5, KORTHIA },
 				["g"] = {
 					crit(5, {	-- Anima Laden Egg
@@ -23,7 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369183, {	-- Dislodged Nest
 				["description"] = "Find and click one of the sparkling |cFFFFFFFFNoxious Moths|r in Mauler's Outlook.  There is a |cFFFFFFFFPrecarious Silk Nest|r stuck in the branches of a tree.  Use the Extra Action Button ability granted by the moth to ride a Shardhide into the tree to dislodge the nest.",
-			--	["questID"] = 64241,
+				["questID"] = 64241,
 				["coord"] = { 47.5, 29.2, KORTHIA },
 				["g"] = {
 					crit(4, {	-- Dislodged Nest
@@ -34,7 +33,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369204, {	-- Displaced Relic
 				["description"] = "The coordinates provided are for the start of the path to the treasure.  Walk and jump along the floating debris until you reach it.",
-			--	["questID"] = 64252,
+				["questID"] = 64252,
 				["coord"] = { 47.4, 78.3, KORTHIA },
 				["g"] = {
 					crit(6, {	-- Displaced Relic
@@ -45,7 +44,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369149, {	-- Forgotten Feather
 				["description"] = "Use a |cFFFFFFFFGoblin Glider|r at |cFFFFFFFF63.8, 28.9|r to access the island.",
-			--	["questID"] = 64234,
+				["questID"] = 64234,
 				["coord"] = { 68.9, 29.9, KORTHIA },
 				["g"] = {
 					crit(2, {	-- Forgotten Feather
@@ -55,7 +54,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			o(369148, {	-- Glittering Nest Material
-			--	["questID"] = 64222,
+				["questID"] = 64222,
 				["coord"] = { 38.3, 42.8, KORTHIA },
 				["g"] = {
 					crit(1, {	-- Glittering Nest Material
@@ -65,7 +64,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369225, {	-- Infested Vestige
 				["description"] = "At the back of the cave.",
-			--	["questID"] = 64264,
+				["questID"] = 64264,
 				["coord"] = { 40.1, 59.0, KORTHIA },
 				["g"] = {
 					crit(9, {	-- Infested Vestige
@@ -195,7 +194,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			o(369172, {	-- Lost Memento
-			--	["questID"] = 64238,
+				["questID"] = 64238,
 				["coord"] = { 52.9, 14.7, KORTHIA },
 				["g"] = {
 					crit(3, {	-- Lost Memento
@@ -300,7 +299,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			o(369232, {	-- Offering Box
 				["description"] = "To open the treasure, climb up the outside of the building and loot the |cFFFFFFFFSmall Offering Key|r at |cFFFFFFFF43.5 67.5|r.",
-			--	["questID"] = 64268,
+				["questID"] = 64268,
 				["coord"] = { 45.3, 67.1, KORTHIA },
 				["cost"] = { { "i", 187033, 1 } },	-- Small Offering Key
 				["g"] = {
@@ -451,16 +450,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 })));
 
 root("HiddenQuestTriggers", {
-	-- Treasures of Korthia achievement
-	q(64244),	-- Anima Laden Egg
-	q(64241),	-- Dislodged Nest
-	q(64252),	-- Displaced Relic
-	q(64234),	-- Forgotten Feather
-	q(64222),	-- Glittering Nest Material
-	q(64264),	-- Infested Vestige
-	q(64238),	-- Lost Memento
-	q(64268),	-- Offering Box
-
 	q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)

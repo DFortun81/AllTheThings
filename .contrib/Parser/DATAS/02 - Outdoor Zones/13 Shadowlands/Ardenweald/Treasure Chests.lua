@@ -6,7 +6,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ARDENWEALD, {
 		n(TREASURES, {
 			n(171156, {		-- Aerto <Grove Ranger>
-			--	["questID"] = 61072,
+				["questID"] = 61072,
 				["coord"] = { 55.9, 21.0, ARDENWEALD },
 				["g"] = {
 					crit(1, {	-- Aerto's Body
@@ -17,7 +17,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(354646, {		-- Ancient Cloudfeather Egg
 				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF50.6, 38.8|r.",
-			--	["questID"] = 61065,
+				["questID"] = 61065,
 				["coord"] = { 52.9, 37.2, ARDENWEALD },
 				["g"] = {
 					crit(3, {	-- Veilwing Egg
@@ -29,7 +29,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			o(355041, {		-- Cache of the Moon
 				["achievementID"] = 14313,	-- Treasures of Ardenweald
 				["description"] = "Combine the |cff1eff00Diary of the Night|r, |cff1eff00Gardener's Basket|r, |cff1eff00Gardener's Hammer|r, |cff1eff00Gardener's Flute|r, and |cff1eff00Gardener's Wand|r to create |cff0070ddTwinklestar's Gardening Toolkit|r.  Take the toolkit to Twinklestar at |cFFFFFFFF63.8, 37.5|r.  He will grant you the \"Moonsight\" buff, allowing you to see the treasure behind him.",
-			--	["questID"] = 61074,
+				["questID"] = 61074,
 				["coord"] = { 63.8, 37.5, ARDENWEALD },	-- Twinklestar & Treasure
 				["cost"] = { { "i", 180753, 1 } },	-- Twinklestar's Gardening Toolkit
 				["cr"] = 171349,	-- Twinklestar
@@ -67,7 +67,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355000, {		-- Cache of the Night
 				["description"] = "You need to dispel the barrier with |cff0070ddFae Dreamcatcher|r, which you create by combining |cff1eff00Enchanted Bough|r, and |cff1eff00Fae Ornament|r, and |cff1eff00Raw Dream Fibers|r.",
-			--	["questID"] = 61110,
+				["questID"] = 61110,
 				["coord"] = { 36.1, 65.2, ARDENWEALD },
 				["cost"] = { { "i", 180652, 1 } },	-- Fae Dreamcatcher
 				["g"] = {
@@ -104,7 +104,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 37.6, 61.5, ARDENWEALD },	-- Mushroom
 					{ 36.1, 65.2, ARDENWEALD },	-- Treasure
 				},
-			--	["questID"] = 61068,
+				["questID"] = 61068,
 				["g"] = {
 					crit(15, {	-- Darkreach Supplies
 						["achievementID"] = 14313,	-- Treasures of Ardenweald
@@ -155,7 +155,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(171484, {		-- Desiccated Moth
 				["description"] = "Collect Aromatic Flowers from |cFFFFFFFF31.7, 32.5|r, jump onto the tree with the Bounding Shroom at |cFFFFFFFF41.4, 31.6|r, and burn the flowers.",
-			--	["questID"] = 61147,
+				["questID"] = 61147,
 				["coords"] = {
 					{ 31.7, 32.5, ARDENWEALD },	-- Flowers
 					{ 41.4, 31.6, ARDENWEALD },	-- Mushroom
@@ -171,7 +171,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(354650, {		-- Dreamsong Heart
 				["description"] = "Use the Bounding Shroom at |cFFFFFFFF38.0, 36.2|r to get to the top of the tree.",
-			--	["questID"] = 61070,
+				["questID"] = 61070,
 				["coord"] = { 37.6, 37.0, ARDENWEALD },
 				["crs"] = { 174911 },	-- Bounding Shroom
 				["g"] = {
@@ -184,7 +184,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			o(354662, {		-- Elusive Faerie Cache
 				["description"] = "Use the Lamp at |cFFFFFFFF46.4, 70.1|r and open the chest while you have the debuff.",
 				["modelScale"] = 0.5,
-			--	["questID"] = 61175,
+				["questID"] = 61175,
 				["coords"] = {
 					{ 46.5, 70.1, ARDENWEALD },	-- Lamp
 					{ 44.8, 75.8, ARDENWEALD },	-- Treasure
@@ -263,7 +263,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(354652, {		-- Faerie Trove
 				["description"] = "Underneath the platform.",
-			--	["questID"] = 61073,
+				["questID"] = 61073,
 				["coord"] = { 49.7, 55.9, ARDENWEALD },
 				["g"] = {
 					crit(5, {	-- Faerie Trove
@@ -274,7 +274,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(355355, {		-- Harmonic Chest
 				["description"] = "You need two people to open the chest. One person needs to play the harp and one needs to play the drums.",
-			--	["questID"] = 61165,	-- loot trigger
+				["questID"] = 61165,	-- loot trigger
 				["coord"] = { 67.8, 34.6, ARDENWEALD },
 				["g"] = {
 					crit(6, {	-- Harmonic Chest
@@ -286,7 +286,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			o(354647, {		-- Hearty Dragon Plume
 				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF48.1, 39.0|r.\n\nFollow it up and to the left until you reach the beginning of the bridge at |cFFFFFFFF46.1, 39.1|r, and cross it to get to the ledge above the treasure.  Any class should be able to safely make it down to the treasure with two jumps (or by using a Goblin Glider), but you can also use the feather found at |cFFFFFFFF48.9, 41.0|r to slow fall.",
-			--	["questID"] = 61067,
+				["questID"] = 61067,
 				["coord"] = { 48.2, 39.2, ARDENWEALD },
 				["g"] = {
 					crit(7, {	-- Hearty Dragon Plume
@@ -496,17 +496,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 
 root("HiddenQuestTriggers", {
 	--	Treasures of Ardenweald achievement
-	q(61072),	-- Aerto's Body
 	q(61126),	-- Cache of the Moon - turning in the Twinklestar Gardening Tools
-	q(61074),	-- Cache of the Moon - loot trigger
-	q(61110),	-- Cache of the Night
-	q(61068),	-- Darkreach Supplies
-	q(61147),	-- Desiccated Moth
-	q(61070),	-- Dreamsong Heart
-	q(61175),	-- Elusive Faerie Cache
-	q(61073),	-- Faerie Trove
 	q(61170),	-- Harmonic Chest - unlock trigger
-	q(61165),	-- Harmonic Chest - loot trigger
-	q(61067),	-- Hearty Dragon Plume
-	q(61065),	-- Veilwing Egg
 });
