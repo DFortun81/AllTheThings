@@ -1957,5 +1957,10 @@ root("HiddenQuestTriggers", {
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 	}),
+	m(BLASTED_LANDS, {
+		q(66560, {	-- Changing time of zone from Present to Past through Zidormi
+			["timeline"] = { "added 9.2.5" },
+		}),
+	}),
 });
 -- #endif
