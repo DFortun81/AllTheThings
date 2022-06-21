@@ -390,11 +390,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(180453, {	-- She Had a Stone Heart
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 60889,	-- Favor: She Had a Stone Heart
-					["isDaily"] = true,
-				}),
+				i(180453),	-- She Had a Stone Heart
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {

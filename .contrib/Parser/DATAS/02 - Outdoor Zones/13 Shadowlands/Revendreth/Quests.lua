@@ -420,6 +420,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 				["provider"] = { "n", 157650 },	-- Theotar
 			}),
+			q(61432, {	-- Lost Journals
+				["provider"] = { "i", 180834 },	-- Renathal's Journal Pages
+				["repeatable"] = true,
+			}),
 			q(64091, {	-- Mal'appropriated
 				["sourceQuests"] = { 64092 },	-- Hunting Huln
 				["provider"] = { "n", 179327 },	-- Mal'Ganis
@@ -1030,6 +1034,62 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				}),
 			}),
 		}),
+		-- Random Zone Dailies
+		n(QUESTS, sharedData({
+				["isDaily"] = true,
+			},{
+			q(62184, {	-- A Crate of Sinvyr Ore
+				["provider"] = { "i", 182728 },	-- A Crate of Sinvyr Ore
+			}),
+			q(62183, {	-- A Leaking Box Marked Perishable
+				["provider"] = { "i", 182727 },	-- A Leaking Package
+			}),
+			q(62182, {	-- A Letter From Nadja
+				["provider"] = { "i", 182726 },	-- Nadja's Letter
+			}),
+		})),
+		-- Dailies that become available once unlocking the BMAH
+		n(QUESTS, sharedData({
+				["isDaily"] = true,
+				["sourceQuests"] = { 58062 },	-- A Very Special Guest
+			},{
+			q(58078, {	-- Favor: Bottle of Redelav Wine
+				["provider"] = { "i", 173718 },	-- Bottle of Redelav Wine
+			}),
+			q(58075, {	-- Favor: Dredger's Toolkit
+				["provider"] = { "i", 173715 },	-- Dredger's Toolkit
+			}),
+			q(58080, {	-- Favor: Glittering Primrose Necklace
+				["provider"] = { "i", 173720 },	-- Glittering Primrose Necklace
+			}),
+			q(58074, {	-- Favor: Ledger of Souls
+				["provider"] = { "i", 173712 },	-- Ledger of Souls
+			}),
+			q(58081, {	-- Favor: Love and Terror
+				["provider"] = { "i", 173721 },	-- Love and Terror
+			}),
+			q(58077, {	-- Favor: Perfected Hand Mirror
+				["provider"] = { "i", 173717 },	-- Perfected Hand Mirror
+			}),
+			q(58072, {	-- Favor: Petrified Stonefiend
+				["provider"] = { "i", 173710 },	-- Petrified Stonefiend
+			}),
+			q(58073, {	-- Favor: Portrait of the Sire
+				["provider"] = { "i", 173711 },	-- Portrait of the Sire
+			}),
+			q(60889, {	-- Favor: She Had a Stone Heart
+				["provider"] = { "i", 180453 },	-- She Had a Stone Heart
+			}),
+			q(58070, {	-- Favor: Soul Hunter's Blade
+				["provider"] = { "i", 173707 },	-- Soul Hunter's Blade
+			}),
+			q(58069, {	-- Favor: The Venthyr Diaries
+				["provider"] = { "i", 173705 },	-- The Venthyr Diaries
+			}),
+			q(58071, {	-- Favor: Vial of Dredger Muck
+				["provider"] = { "i", 173709 },	-- Vial of Dredger Muck
+			}),
+		})),
 	}),
 })));
 

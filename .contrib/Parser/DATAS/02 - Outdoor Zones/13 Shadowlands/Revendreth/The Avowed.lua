@@ -73,9 +73,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									159151,	-- Inquisitor Traian
 								},
 								["g"] = {
-									i(173721, {	-- Love and Terror
-										["questID"] = 58081,	-- Favor: Love and Terror
-									}),
+									i(173721),	-- Love and Terror
 									i(184214),	-- Chained Manacles
 									i(180493),	-- Inquisitor's Robes
 									i(184213),	-- Ritualist's Soles
@@ -140,9 +138,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									159153,	-- High Inquisitor Radu
 								},
 								["g"] = {
-									i(173721, {	-- Love and Terror
-										["questID"] = 58081,	-- Favor: Love and Terror
-									}),
+									i(173721),	-- Love and Terror
 									i(184211),	-- High Inquisitor's Banded Cincture
 									i(184212),	-- Intimidator Trainer's Cuffs
 									i(184214),	-- Chained Manacles
@@ -201,9 +197,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 									159156,	-- Grand Inquisitor Nicu
 								},
 								["g"] = {
-									i(173721, {	-- Love and Terror
-										["questID"] = 58081,	-- Favor: Love and Terror
-									}),
+									i(173721),	-- Love and Terror
 									i(177803),	-- Grand Inquisitor's Stave
 									i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
 								},

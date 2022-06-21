@@ -7,82 +7,23 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		n(ZONE_REWARDS, {
 			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 			["g"] = {
-				i(182728, {	-- A Crate of Sinvyr Ore
-					["questID"] = 62184,	-- A Crate of Sinvyr Ore
-					["isDaily"] = true,
-				}),
-				i(182727, {	-- A Leaking Package
-					["questID"] = 62183,	-- A Leaking Box Marked Perishable
-					["isDaily"] = true,
-				}),
-				i(173718, {	-- Bottle of Redelav Wine
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58078,	-- Favor: Bottle of Redelav Wine
-					["isDaily"] = true,
-				}),
-				i(173715, {	-- Dredger's Toolkit
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58075,	-- Favor: Dredger's Toolkit
-					["isDaily"] = true,
-				}),
-				i(173720, {	-- Glittering Primrose Necklace
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58080,	-- Favor: Glittering Primrose Necklace
-					["isDaily"] = true,
-				}),
-				i(173712, {	-- Ledger of Souls
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58074,
-					["isDaily"] = true,
-				}),
-				i(173721, {	-- Love and Terror
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58081,
-					["isDaily"] = true,
-				}),
-				i(182726, {	-- Nadja's Letter
-					["questID"] = 62182,	-- A Letter From Nadja
-					["isDaily"] = true,
-				}),
-				i(173717, {	-- Perfected Hand Mirror
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58077,	-- Favor: Perfected Hand Mirror
-					["isDaily"] = true,
-				}),
-				i(173710, {	-- Petrified Stonefiend
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58072,	-- Favor: Petrified Stonefiend
-					["isDaily"] = true,
-				}),
-				i(173711, {	-- Portrait of the Sire
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58073,	-- Favor: Portrait of the Sire
-					["isDaily"] = true,
-				}),
-				i(180834, {	-- Renathal's Journal Pages
-					["repeatable"] = true,
-					["questID"] = 61432,	-- Lost Journals
-				}),
-				i(180453, {	-- She Had a Stone Heart
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 60889,	-- Favor: She Had a Stone Heart
-					["isDaily"] = true,
-				}),
-				i(173707, {	-- Soul Hunter's Blade
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58070,
-					["isDaily"] = true,
-				}),
-				i(173705, {	-- The Venthyr Diaries
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
-					["questID"] = 58069,	-- Favor: The Venthyr Dairies
-					["isDaily"] = true,
-				}),
+				i(182728),	-- A Crate of Sinvyr Ore
+				i(182727),	-- A Leaking Package
+				i(173718),	-- Bottle of Redelav Wine
+				i(173715),	-- Dredger's Toolkit
+				i(173720),	-- Glittering Primrose Necklace
+				i(173712),	-- Ledger of Souls
+				i(173721),	-- Love and Terror
+				i(182726),	-- Nadja's Letter
+				i(173717),	-- Perfected Hand Mirror
+				i(173710),	-- Petrified Stonefiend
+				i(173711),	-- Portrait of the Sire
+				i(180834),	-- Renathal's Journal Pages
+				i(180453),	-- She Had a Stone Heart
+				i(173707),	-- Soul Hunter's Blade
+				i(173705),	-- The Venthyr Diaries
 				i(173709, {	-- Vial of Dredger Muck
-					["sourceQuests"] = { 58062 },	-- A Very Special Guest
 					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
-					["questID"] = 58071,	-- Favor: Vial of Dredger Muck
-					["isDaily"] = true,
 					["crs"] = {
 						160846,	-- Beleaguered Excavator
 						161490,	-- Blackbale Flunky
