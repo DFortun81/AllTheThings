@@ -605,6 +605,7 @@ select(2, ...).CategoryNames = {
 	[1239] = "Conversions",
 	[1240] = "Conversions",
 	[1241] = "Conversions",
+	[1242] = "Conversions",
 	[1243] = "Conversions",
 	[1244] = "Conversions",
 	[1245] = "Conversions",

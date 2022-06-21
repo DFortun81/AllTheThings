@@ -670,6 +670,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(302188, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Sundering*
 			r(302187, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Swirling Tides*
 		}),
+		--[[
 		cat(774, {	-- Off-Hands
 			r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]*
 			pvp(r(269741)),	-- Honorable Combatant's Etched Vessel [Rank 2]*
@@ -687,6 +688,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			pvp(r(305953, {["timeline"]={"added 8.3.0"}})).	-- Uncanny Combatant's Etched Vessel [Rank 2]*
 			pvp(r(305954, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 3]*
 		}),
+		--]]
 		cat(775, {	-- Mass Milling
 			r(256219),	-- Mass Mill Akunda's Bite*
 			r(256308),	-- Mass Mill Anchor Weed*

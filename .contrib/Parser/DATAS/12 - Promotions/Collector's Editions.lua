@@ -195,6 +195,15 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			}),
 		},
 	})),
+	--[[
+	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone that purchases Dragonflight Heroic/Epic Edition.",
+		["timeline"] = { "added 9.2.5" },
+		["groups"] = {
+
+		},
+	})),
+	--]]
 	-- #if NOT ANYCLASSIC
 	n(-578, {	-- World of Warcraft 15th Anniversary Collector's Edition
 		["description"] = "These rewards were made available to anyone that purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",

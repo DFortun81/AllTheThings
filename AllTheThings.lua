@@ -13122,6 +13122,11 @@ local tiers = {
 		["lore"] = L["SL_TIER_DESC"],
 		["lvl"] = 50,
 	},
+	{	-- Dragonflight
+		["icon"] = app.asset("Expansion_SL"),	-- TODO: Change asset
+		["lore"] = L["DF_TIER_DESC"],
+		["lvl"] = 60,
+	},
 };
 local function GetTierInfo(tierID, key)
 	if rawget(tiers, tierID) then

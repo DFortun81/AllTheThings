@@ -999,6 +999,7 @@ WOD_TIER = 6;
 LEGION_TIER = 7;
 BFA_TIER = 8;
 SL_TIER = 9;
+DF_TIER = 10;
 
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
