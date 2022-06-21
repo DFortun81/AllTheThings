@@ -1041,6 +1041,7 @@ i(190196);	-- Enlightened Hearthstone
 -----------------
 i(192099);  -- Earpieces of Tranquil Focus
 i(192485);	-- Stored Wisdom Device
+i(193588);	-- Timewalker's Hearthstone
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger

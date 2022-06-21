@@ -195,15 +195,30 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			}),
 		},
 	})),
-	--[[
-	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic/Epic Edition.",
+	n(-11000, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {	-- Temp Dragonflight
+		["name"] = "Dragonflight",	-- Just a placeholder since wow api cant call on DF yet.
+		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { "added 9.2.5" },
 		["groups"] = {
-
+			p(3177, {	-- Drakks (PET!)
+				["description"] = "This pet is available from all versions of Dragonflight but only available during pre-order and will be removed when Dragonflight start.",
+			}),
+			p(3175),	-- Murkastrasza (PET!)
+			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
+			n(REWARDS, {
+				["description"] = "The following additional rewards were only available if you purchased Dragonflight Epic Edition.",
+				["groups"] = {
+					i(193588),	-- Timewalker's Hearthstone (TOY!)
+					i(188257),	-- Azure Wings of Awakening
+					i(188258),	-- Bronze Wings of Awakening
+					i(188259),	-- Emerald Wings of Awakening
+					i(188260),	-- Ruby Wings of Awakening
+					i(188256),	-- Obsidian Wings of Awakening
+					i(193610),	-- Diadem of the Spell-Keeper
+				},
+			}),
 		},
 	})),
-	--]]
 	-- #if NOT ANYCLASSIC
 	n(-578, {	-- World of Warcraft 15th Anniversary Collector's Edition
 		["description"] = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition, but only for non-Classic realms.",

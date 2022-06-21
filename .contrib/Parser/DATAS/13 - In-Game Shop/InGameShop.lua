@@ -102,6 +102,9 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 			["u"] = REMOVED_FROM_GAME,
 		}),
 		i(49693),			-- Lil' K.T.
+		p(3249, {			-- Lil' Ursoc (PET!)
+			["timeline"] = { "added 9.2.5" },
+		}),
 		i(54847, {			-- Lil' XT
 			["u"] = REMOVED_FROM_GAME,
 		}),

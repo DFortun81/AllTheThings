@@ -1411,6 +1411,8 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "236373",														-- Covenant Assaults
+	-- DF Temp
+		[-11000] = "4191335",														-- Dragonflight
 	--	hopefully temp custom NPCs, these objects do not have data on wowhead atm
 		[-1433951] = "3854020",															-- Broken Mirror
 		[-1433952] = "3854020",															-- Broken Mirror
@@ -1966,6 +1968,7 @@ app.L = {
 	-- Shadowlands Achievement Headers
 	-- 9.1
 		[-10083] = "Covenant Assaults",											-- Covenant Assaults
+		[-11000] = "Dragonflight",												-- Dragonflight
 	--	hopefully temp objects, these currently do not have accessible object data on wowhead
 		[-1433951] = "Broken Mirror A-1",										-- Broken Mirror
 		[-1433952] = "Broken Mirror A-2",										-- Broken Mirror
