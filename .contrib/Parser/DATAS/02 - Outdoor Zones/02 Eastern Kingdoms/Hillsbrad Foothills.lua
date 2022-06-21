@@ -670,10 +670,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 				}),
-				q(9425, {	-- Report to Tarren Mill
-					["u"] = REMOVED_FROM_GAME,
+				applyclassicphase(TBC_PHASE_ONE, q(9425, {	-- Report to Tarren Mill
+					["qg"] = 16287,	-- Ambassador Sunsorrow
+					["coord"] = { 57.6, 90.8, UNDERCITY },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = { BLOODELF },
-				}),
+				})),
 				q(1067, {	-- Return to Thunder Bluff
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -846,11 +848,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-				}),
-				q(676, {	-- The Hammer May Fall
-					["provider"] = { "n", 2770 },	-- Tallow
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28484, {	-- The Heart of the Matter
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil

@@ -43,17 +43,20 @@ _.Zones =
 						28554,	-- Warchief's Command: Dustwallow Marsh!
 					},
 				}),
-				-- #if AFTER BFA
 				q(6625, {	-- Alliance Trauma
 					["qg"] = 5150,	-- Nissa Firestone
 					["coord"] = { 54.8, 58.6, IRONFORGE },
-					["description"] = "Needs a minimum of lvl 225 tailoring/first aid",
+					-- #if AFTER BFA
+					["description"] = "Needs a minimum of 225 skill in Tailoring.",
 					["requireSkill"] = TAILORING,
+					-- #else
+					["description"] = "Needs a minimum of 225 skill in First Aid.",
+					["requireSkill"] = FIRST_AID,
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 10, 35),
 				}),
-				-- #endif
 				q(27427, {	-- Arms of the Grimtotems
 					["provider"] = { "n", 23568 },	-- Captain Darill
 					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
@@ -1199,17 +1202,24 @@ _.Zones =
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE BFA
-					["requireSkill"] = FIRST_AID,
-					-- #else
+					-- #if AFTER BFA
 					["requireSkill"] = TAILORING,
+					-- #else
+					["requireSkill"] = FIRST_AID,
 					-- #endif
 					["lvl"] = lvlsquish(35, 15, 35),
-					["timeline"] = { "added 1.11.1.10958" },
 					["groups"] = {
-						objective(1, {
+						objective(1, {	-- 0/15 Patients Saved
 							["provider"] = { "i", 16991 },	-- Triage Bandage
+							["crs"] = {
+								12936,	-- Badly Injured Alliance Soldier
+								12937,	-- Critically Injured Alliance Soldier
+								12938,	-- Injured Alliance Soldier
+							},
 						}),
+						-- #if BEFORE 3.1.0
+						recipe(10846, { ["rank"] = 4 }),	-- First Aid (Artisan)
+						-- #endif
 						i(49193, {	-- Alliance Trauma Certification
 							["timeline"] = { "added 3.2.0.10192" },
 						}),

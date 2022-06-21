@@ -78,18 +78,6 @@ q(616),	-- The Haunted Isle,		TBC: The Haunted Isle,		CLASSIC: The Haunted Isle
 q(623),	-- Akiris by the Bundle,		TBC: Akiris by the Bundle,		CLASSIC: Akiris by the Bundle
 q(627),	-- Favor for Krazek,		TBC: Favor for Krazek,		CLASSIC: Favor for Krazek
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
-q(637),	-- Sully Balloo's Letter,		TBC: Sully Balloo's Letter,		CLASSIC: Sully Balloo's Letter
-q(657),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
-q(658),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
-q(659),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
-q(660),	-- Hints of a New Plague?,		TBC: Hints of a New Plague?,		CLASSIC: Hints of a New Plague?
-q(681),	-- Northfold Manor,		TBC: Northfold Manor,		CLASSIC: Northfold Manor
-q(690),	-- Malin's Request,		TBC: Malin's Request,		CLASSIC: Malin's Request
-q(691),	-- Worth Its Weight in Gold,		TBC: Worth Its Weight in Gold,		CLASSIC: Worth Its Weight in Gold
-q(693),	-- Wand over Fist,		TBC: Wand over Fist,		CLASSIC: Wand over Fist
-q(694),	-- Trelane's Defenses,		TBC: Trelane's Defenses,		CLASSIC: Trelane's Defenses
-q(695),	-- An Apprentice's Enchantment,		TBC: An Apprentice's Enchantment,		CLASSIC: An Apprentice's Enchantment
-q(696),	-- Attack on the Tower,		TBC: Attack on the Tower,		CLASSIC: Attack on the Tower
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
