@@ -168,9 +168,6 @@ i(180677);	-- Discarded Medal of Valor
 i(142264);	-- Drudge Fluid
 i(120257);	-- Drums of Fury
 i(142262);	-- Electrified Key
-i(166972);	-- Emergency Powerpack
-i(166973);	-- Emergency Repair Kit
-i(168222);	-- Encrypted Black Market Radio
 i(182200);	-- Engorged Blood Burrower
 i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments

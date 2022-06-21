@@ -79,7 +79,121 @@ _.Zones =
 					ach(13470),		-- Rest in Pistons
 					ach(13556),		-- Outside Influences
 					ach(13479, {	-- Junkyard Architect
-						ach(13478),		-- Junkyard Collector
+						crit(1, {	-- Scrap Grenade
+							["_quests"] = { 55101 },	-- Junkyard Tinkering and You
+						}),
+						crit(2, {	-- Scrap Trap
+							["_quests"] = { 55030 },	-- Blueprint: Scrap Trap
+						}),
+						crit(3, {	-- Hundred-Fathom Lure
+							["_quests"] = { 55055, }	-- Build a Bigger Fish Trap
+						}),
+						crit(4, {	-- Mechanocat Laser Pointer
+							["_quests"] = { 55056 },	-- Blueprint: Mechanocat Laser Pointer
+						}),
+						crit(5, {	-- Canned Minnows
+							["_quests"] = { 55057 },	-- Blueprint: Canned Minnows
+						}),
+						crit(6, {	-- Vaultbot Key
+							["_quests"] = { 55058 },	-- Blueprint: Vaultbot Key
+						}),
+						crit(7, {	-- Emergency Repair Kit
+							["_quests"] = { 55059 },	-- Blueprint: Emergency Repair Kit
+						}),
+						crit(8, {	-- Emergency Powerpack
+							["_quests"] = { 55060 },	-- Blueprint: Emergency Powerpack
+						}),
+						crit(9, {	-- Mechano-Treat
+							["_quests"] = { 55061 },	-- Blueprint: Mechano-Treat
+						}),
+						crit(10, {	-- Ultrasafe Transporter: Mechagon
+							["_quests"] = { 55062 },	-- Blueprint: Ultrasafe Transporter: Mechagon
+						}),
+						crit(11, {	-- G99.99 Landshark
+							["_quests"] = { 55063 },	-- Blueprint: G99.99 Landshark
+						}),
+						crit(12, {	-- Rustbolt Gramophone
+							["_quests"] = { 55064 },	-- Blueprint: Rustbolt Gramophone
+						}),
+						crit(13, {	-- Rustbolt Kegerator
+							["_quests"] = { 55065 },	-- Blueprint: Rustbolt Kegerator
+						}),
+						crit(14, {	-- Beastbot Powerpack
+							["_quests"] = { 55066 },	-- Blueprint: Beastbot Powerpack
+						}),
+						crit(15, {	-- BAWLD-371
+							["_quests"] = { 55068 },	-- Blueprint: BAWLD-371
+						}),
+						crit(16, {	-- Protocol Transference Device
+							["_quests"] = { 55069 },	-- Blueprint: Protocol Transference Device
+						}),
+						crit(17, {	-- Emergency Rocket Chicken
+							["_quests"] = { 55071 },	-- Blueprint: Emergency Rocket Chicken
+						}),
+						crit(18, {	-- Battle Box
+							["_quests"] = { 55072 },	-- Blueprint: Battle Box
+						}),
+						crit(19, {	-- Rustbolt Resistance Insignia
+							["_quests"] = { 55073 },	-- Blueprint: Rustbolt Resistance Insignia
+						}),
+						crit(20, {	-- Rustbolt Requisitions
+							["_quests"] = { 55074 },	-- Blueprint: Rustbolt Requisitions
+						}),
+						crit(21, {	-- Scrapmaster's Blowtorch
+							["_quests"] = { 56181 },	-- This One's On Me
+						}),
+						crit(22, {	-- Experimental Adventurer's Augment
+							["_quests"] = { 56087 },	-- Blueprint: Experimental Adventurer Augment
+						}),
+						crit(23, {	-- Advanced Adventurer Augment
+							["_quests"] = { 56145 },	-- Blueprint: Advanced Adventurer Augment
+						}),
+						crit(24, {	-- Extraordinary Adventurer Augment
+							["_quests"] = { 56165 },	-- Blueprint: Extraordinary Adventurer Augment
+						}),
+						crit(25, {	-- Holographic Digitalization Relay
+							["_quests"] = { 56086 },	-- Blueprint: Holographic Digitalization Relay
+						}),
+						crit(26, {	-- Personal Time Displayer
+							["_quests"] = { 55070 },	-- Blueprint: Personal Time Displacer
+						}),
+						crit(27, {	-- Orange Spraybot
+							["_quests"] = { 55075 },	-- Blueprint: Orange Spraybot
+						}),
+						crit(28, {	-- Green Spraybot
+							["_quests"] = { 55076 },	-- Blueprint: Green Spraybot
+						}),
+						crit(29, {	-- Blue Spraybot
+							["_quests"] = { 55077 },	-- Blueprint: Blue Spraybot
+						}),
+						crit(30, {	-- Utility Mechanoclaw
+							["_quests"] = { 55078 },	-- Blueprint: Utility Mechanoclaw
+						}),
+						crit(31, {	-- Microbot XD
+							["_quests"] = { 55079 },	-- Blueprint: Microbot XD
+						}),
+						crit(32, {	-- Anti-Gravity Pack
+							["_quests"] = { 55081 },	-- Blueprint: Anti-Gravity Pack
+						}),
+						crit(33, {	-- Rustbolt Pocket Turrent
+							["_quests"] = { 55082 },	-- Blueprint: Rustbolt Pocket Turret
+						}),
+						crit(34, {	-- Annoy-o-Tron Gang
+							["_quests"] = { 55083 },	-- Blueprint: Annoy-o-Tron Gang
+						}),
+						crit(35, {	-- Encrypted Black Market Radio
+							["_quests"] = { 55084 },	-- Blueprint: Encrypted Black Market Radio
+						}),
+						crit(36, {	-- Re-Procedurally Generated Punchcard
+							["_quests"] = { 55067 },	-- Blueprint: Re-Procedurally Generated Punchcard
+						}),
+						crit(37, {	-- S.P.A.R.E. Crate
+							["_quests"] = { 56740 },	-- S.P.A.R.E. Crates
+						}),
+					}),
+					ach(13478, {	-- Junkyard Collector
+						-- identical criteria as full achievement
+						["sym"] = {{"select","achievementID",13479}},	-- Junkyard Architect
 					}),
 					ach(13477),		-- Junkyard Apprentice
 					ach(13474),		-- Junkyard Machinist

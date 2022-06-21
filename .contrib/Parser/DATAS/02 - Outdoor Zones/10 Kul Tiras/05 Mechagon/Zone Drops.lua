@@ -8,15 +8,9 @@ _.Zones =
 		m(MECHAGON, {
 			n(ZONE_DROPS, {
 				i(168491, {	-- Blueprint: Personal Time Displacer
-					["questID"] = 55070,
 					["description"] = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
 					["crs"] = {
 						153991,	-- Clockwork Giant
-					},
-					["g"] = {
-						crit(26, {	-- Personal Time Displacer
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
 					},
 				}),
 				i(169593),	-- Large Storage Fragment

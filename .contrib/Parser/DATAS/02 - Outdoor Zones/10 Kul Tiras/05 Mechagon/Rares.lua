@@ -19,14 +19,7 @@ root("Zones", {
 								crit(25, {	-- Boilburn
 									["achievementID"] = 13470,	-- Rest in Pistons
 								}),
-								i(167042, {	-- Blueprint: Scrap Trap
-									["questID"] = 55030,
-									["g"] = {
-										crit(2, {	-- Scrap Trap
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(167042),	-- Blueprint: Scrap Trap
 								i(169691, {    -- Vinyl: Depths of Ulduar
 									["questID"] = 56518, -- Vinyl: Depths of Ulduar
 									["g"] = {
@@ -49,14 +42,7 @@ root("Zones", {
 								crit(34, {	-- Caustic Mechaslime
 									["achievementID"] = 13470,	-- Rest in Pistons
 								}),
-								i(169170, {	-- Blueprint: Utility Mechanoclaw
-									["questID"] = 55078, -- Blueprint: Utility Mechanoclaw
-									["g"] = {
-										crit(30, {	-- Utility Mechanoclaw
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(169170),	-- Blueprint: Utility Mechanoclaw
 							},
 						}),
 						n(150342, {	-- Earthbreaker Gulroc
@@ -68,14 +54,7 @@ root("Zones", {
 								crit(21, {	-- Earthbreaker Gulroc
 									["achievementID"] = 13470,	-- Rest in Pistons
 								}),
-								i(167042, {	-- Blueprint: Scrap Trap
-									["questID"] = 55030,
-									["g"] = {
-										crit(2, {	-- Scrap Trap
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(167042),	-- Blueprint: Scrap Trap
 							},
 						}),
 						n(153205, {	-- Gemicide
@@ -109,14 +88,7 @@ root("Zones", {
 								crit(33, {	-- Gorged Gear-Cruncher
 									["achievementID"] = 13470,	-- Rest in Pistons
 								}),
-								i(167846, {	-- Blueprint: Mechano-Treat
-									["questID"] = 55061,
-									["g"] = {
-										crit(9, {	-- Mechano-Treat
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(167846),	-- Blueprint: Mechano-Treat
 							},
 						}),
 						n(153206, {	-- Ol' Big Tusk
@@ -128,14 +100,7 @@ root("Zones", {
 								crit(22, {	-- Ol' Big Tusk
 									["achievementID"] = 13470,	-- Rest In Pistons
 								}),
-								i(167846, {	-- Blueprint: Mechano-Treat
-									["questID"] = 55061,
-									["g"] = {
-										crit(9, {	-- Mechano-Treat
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(167846),	-- Blueprint: Mechano-Treat
 								i(169691, {	-- Vinyl: Depths of Ulduar
 									["questID"] = 56518, -- Vinyl: Depths of Ulduar
 									["g"] = {
@@ -166,12 +131,6 @@ root("Zones", {
 				}),
 				i(168908, {	-- Blueprint: Experimental Adventurer Augment
 					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
-					["questID"] = 56087,
-					["g"] = {
-						crit(22, {	-- Experimental Adventurer Augment
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
 				}),
 				n(151934, {	-- Arachnoid Harvester
 					["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
@@ -188,21 +147,14 @@ root("Zones", {
 					["questID"] = 55546,
 					["isDaily"] = true,
 					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.  If you've time-traveled to the future, you must use a key to unlock it.",
-					["cost"] = { { "i", 167062, 1 } },	-- 1xArmored Vaultbot Key
+					["cost"] = { { "i", 167062, 1 } },	-- 1x Armored Vaultbot Key
 					["coords"] = {
 						{ 53.6, 46.4, MECHAGON },
 						{ 53.8, 49.4, MECHAGON },
 						{ 53.2, 49.7, MECHAGON },
 					},
 					["g"] = {
-						i(167843, {	-- Blueprint: Vaultbot Key
-							["questID"] = 55058,
-							["g"] = {
-								crit(6, {	-- Vaultbot Key
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(167843),	-- Blueprint: Vaultbot Key
 						i(167796, {	-- Paint Vial: Mechagon Gold
 							["questID"] = 55455,	-- Paint Vial: Mechagon Gold
 							["g"] = {
@@ -241,14 +193,7 @@ root("Zones", {
 							["achievementID"] = 13470,	-- Rest In Pistons
 						}),
 						i(169392),	-- Bonebiter
-						i(167846, {	-- Blueprint: Mechano-Treat
-							["questID"] = 55061,
-							["g"] = {
-								crit(9, {	-- Mechano-Treat
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+								i(167846),	-- Blueprint: Mechano-Treat
 					},
 				}),
 				n(152569, {	-- Crazed Trogg
@@ -273,30 +218,9 @@ root("Zones", {
 								}),
 							},
 						}),
-						i(169169, {	-- Blueprint: Blue Spraybot
-							["questID"] = 55077,
-							["g"] = {
-								crit(29, {	-- Blue Spraybot
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-						i(169168, {  -- Blueprint: Green Spraybot
-							["questID"] = 55076,
-							["g"] = {
-								crit(28, {	-- Green Spraybot
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
-						i(169167, {	-- Blueprint: Orange Spraybot
-							["questID"] = 55075,
-							["g"] = {
-								crit(27, {	-- Orange Spraybot
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(169169),	-- Blueprint: Blue Spraybot
+						i(169168),  -- Blueprint: Green Spraybot
+						i(169167),	-- Blueprint: Orange Spraybot
 						i(167793, {  -- Paint Vial: Overload Orange
 							["questID"] = 55457,
 							["g"] = {
@@ -318,14 +242,7 @@ root("Zones", {
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168804),	-- Powered Piscine Procurement Pole
-						i(167836, {	-- Blueprint: Canned Minnows
-							["questID"] = 55057,
-							["g"] = {
-								crit(5, {	-- Canned Minnows
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(167836),	-- Blueprint: Canned Minnows
 					},
 				}),
 				n(155060, {	-- Doppel Ganger
@@ -352,14 +269,7 @@ root("Zones", {
 						i(170470),	-- Reinforced Grease Deflector
 						i(170467),	-- Whirring Chainblade
 						i(170468),	-- Supervolt Zapper
-						i(169174, {	-- Blueprint: Rustbolt Pocket Turret
-							["questID"] = 55082,
-							["g"] = {
-								crit(33, {	-- Rustbolt Pocket Turret
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(169174),	-- Blueprint: Rustbolt Pocket Turret
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
@@ -370,14 +280,7 @@ root("Zones", {
 						crit(10, {	-- Foul Manifestation
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167871, {	-- Blueprint: G99.99 Landshark
-							["questID"] = 55063,
-							["g"] = {
-								crit(11, {	-- G99.99 Landshark
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(167871),	-- Blueprint: G99.99 Landshark
 					},
 				}),
 				n(151884, {	-- Fungarian Furor
@@ -409,14 +312,7 @@ root("Zones", {
 						crit(28, {	-- Gear Checker Cogstar
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167847, {	-- Blueprint: Ultrasafe Transporter: Mechagon
-							["questID"] = 55062,
-							["g"] = {
-								crit(10, {	-- Ultrasafe Transporter: Mechagon
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
 						i(170467),	-- Whirring Chainblade
 					},
 				}),
@@ -455,14 +351,7 @@ root("Zones", {
 						crit(19, {	-- Malfunctioning Beastbot
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(169173, {	-- Blueprint: Anti-Gravity Pack
-							["questID"] = 55081,
-							["g"] = {
-								crit(32, {	-- Anti-Gravity Pack
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(169173),	-- Blueprint: Anti-Gravity Pack
 						i(169382),	-- Lost Robogrip
 						i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
 							i(169843, {	-- Azeroth Mini: Cork Stuttguard
@@ -501,14 +390,7 @@ root("Zones", {
 						crit(1, {	-- Mechagonian Nullifier
 							["achievementID"] = 13470,	-- Rest In Pistons
 						}),
-						i(168490, {	-- Blueprint: Protocol Transference Device
-							["questID"] = 55069,	-- Blueprint: Protocol Transference Device
-							["g"] = {
-								crit(16, {	-- Protocol Transference Device
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168490),	-- Blueprint: Protocol Transference Device
 						i(169688, {	-- Vinyl: Gnomeragan Forever
 							["questID"] = 56515,
 							["g"] = {
@@ -538,14 +420,7 @@ root("Zones", {
 						crit(29, {	-- Mr. Fixthis
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168248, {	-- Blueprint: BAWLD-371
-							["questID"] = 55068,
-							["g"] = {
-								crit(15, {	-- BAWLD-371
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168248),	-- Blueprint: BAWLD-371
 						i(170467),	-- Whirring Chainblade
 					},
 				}),
@@ -558,14 +433,7 @@ root("Zones", {
 						crit(12, {	-- OOX-Avenger/MG
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168492, {	-- Blueprint: Emergency Rocket Chicken
-							["questID"] = 55071,
-							["g"] = {
-								crit(17, {	-- Emergency Rocket Chicken
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168492),	-- Blueprint: Emergency Rocket Chicken
 					},
 				}),
 				n(152764, {	-- Oxidized Leachbeast
@@ -639,14 +507,7 @@ root("Zones", {
 							["questID"] = 55794,	-- popped immediately upon death of final golems; shift+clicking to refresh afterwards also popped 55848.  this item was the only thing i received from HM rig.  it's possible that 55848 is the "item received" quest and that 55794 is the "rig done for the first time today" quest when hardmode is active (or vice versa!)... if we could isolate the non-hardmode "rig is done for the first time today" quest then we could maybe attach both with altQuests.  WHY IS QUEST TRACKING SO COMPLICATED.  @BLIZZARD ANSWER FOR YOUR CRIMES
 							["isDaily"] = true,
 							["g"] = {
-								i(168495, {	-- Blueprint: Rustbolt Requisitions
-									["questID"] = 55074,
-									["g"] = {
-										crit(20, {	-- Rustbolt Requisitions
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(168495),	-- Blueprint: Rustbolt Requisitions
 								i(169396),	-- Echoing Oozeling
 								i(169692, {    -- Vinyl: Triumph of Gnomeregan
 									["questID"] = 56519,    -- Triumph of Gnomeregan
@@ -668,22 +529,8 @@ root("Zones", {
 							["repeatable"] = true,
 							["questID"] = 55148,
 							["g"] = {
-								i(169167, {	-- Blueprint: Orange Spraybot
-									["questID"] = 55075,
-									["g"] = {
-										crit(27, {	-- Orange Spraybot
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-									["g"] = {
-										crit(36, {	-- Re-Procedurally Generated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(169167),	-- Blueprint: Orange Spraybot
+								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 								i(167795, {	-- Paint Vial: Copper Trim
 									["questID"] = 55456,	-- Paint Vial: Copper Trim
 									["g"] = {
@@ -726,30 +573,9 @@ root("Zones", {
 										}),
 									}),
 								}),
-								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-									["groups"] = {
-										crit(34, {	-- Annoy-o-Tron Gang
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(169167, {	-- Blueprint: Orange Spraybot
-									["questID"] = 55075,
-									["g"] = {
-										crit(27, {	-- Orange Spraybot
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-									["g"] = {
-										crit(36, {	-- Re-Procedurally Generated Punchcard
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
+								i(169175),	-- Blueprint: Annoy-o-Tron Gang
+								i(169167),	-- Blueprint: Orange Spraybot
+								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 								i(167795, {	-- Paint Vial: Copper Trim
 									["questID"] = 55456,	-- Paint Vial: Copper Trim
 									["g"] = {
@@ -794,14 +620,7 @@ root("Zones", {
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
 						i(168370),	-- Junkheap Drifter (MOUNT!)
-						i(169173, {	-- Blueprint: Anti-Gravity Pack
-							["questID"] = 55081,
-							["g"] = {
-								crit(32, {	-- Anti-Gravity Pack
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(169173),	-- Blueprint: Anti-Gravity Pack
 					},
 				}),
 				n(155583, {	-- Scrapclaw
@@ -812,14 +631,7 @@ root("Zones", {
 						crit(36, {	-- Scrapclaw
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168490, {	-- Blueprint: Protocol Transference Device
-							["questID"] = 55069,	-- Blueprint: Protocol Transference Device
-							["g"] = {
-								crit(16, {	-- Protocol Transference Device
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168490),	-- Blueprint: Protocol Transference Device
 						i(170470),	-- Reinforced Grease Deflector
 					},
 				}),
@@ -831,14 +643,7 @@ root("Zones", {
 						crit(16, {	-- Seaspit
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168063, {	-- Blueprint: Rustbolt Kegerator
-							["questID"] = 55065,	-- Rustbolt Kegerator
-							["g"] = {
-								crit(13, {	-- Rustbolt Kegerator
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168063),	-- Blueprint: Rustbolt Kegerator
 					},
 				}),
 				n(153000, {	-- Sparkqueen P'Emp
@@ -860,14 +665,7 @@ root("Zones", {
 						crit(27, {	-- Steel Singer Freza
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(168062, {	-- Blueprint: Rustbolt Gramophone
-							["questID"] = 55064,
-							["g"] = {
-								crit(12, {	-- Rustbolt Gramophone
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(168062),	-- Blueprint: Rustbolt Gramophone
 						i(169689, {    -- Vinyl: Mimiron's Brainstorm
 							["questID"] = 56516,    -- Vinyl: Mimiron's Brainstorm
 							["g"] = {
@@ -918,14 +716,7 @@ root("Zones", {
 						crit(2, {	-- The Scrap King
 							["achievementID"] = 13470,	-- Rest in Pistons
 						}),
-						i(167846, {	-- Blueprint: Mechano-Treat
-							["questID"] = 55061,
-							["g"] = {
-								crit(9, {	-- Mechano-Treat
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(167846),	-- Blueprint: Mechano-Treat
 						i(170467),	-- Whirring Chainblade
 					},
 				}),

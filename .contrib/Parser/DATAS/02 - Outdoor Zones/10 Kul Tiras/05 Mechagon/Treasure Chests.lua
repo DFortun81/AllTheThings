@@ -206,6 +206,12 @@ _.Zones =
 						["cost"] = { { "i", 169218, 1 } },	-- 1x Old Rusty Key
 					}),
 				}),
+				o(327548, {	-- Powerpack Blueprints
+					["coord"] = { 60.9, 41.5, MECHAGON },
+					["g"] = {
+						i(168219),	-- Blueprint: Beastbot Powerpack
+					},
+				}),
 			}),
 		}),
 	}),

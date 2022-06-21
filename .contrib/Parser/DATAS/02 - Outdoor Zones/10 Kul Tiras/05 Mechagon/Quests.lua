@@ -167,9 +167,6 @@ root("Zones", {
 					["requireSkill"] = FISHING,
 					["sourceQuest"] = 55339,	-- Tidying Up
 					["g"] = {
-						crit(3, {	-- Hundred-Fathom Lure
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
 						i(167649),	-- Hundred-Fathom Lure
 					},
 				}),
@@ -209,22 +206,8 @@ root("Zones", {
 							["achievementID"] = 13556,	-- Outside Influences
 						}),
 						i(169471, {	-- Cogfrenzy's Construction Toolkit
-							i(167845, {	-- Blueprint: Emergency Powerpack
-								["questID"] = 55060,
-								["g"] = {
-									crit(8, {	-- Emergency Powerpack
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
-							}),
-							i(167844, {	-- Blueprint: Emergency Repair Kit
-								["questID"] = 55059,
-								["g"] = {
-									crit(7, {	-- Emergency Repair Kit
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
-							}),
+							i(167845),	-- Blueprint: Emergency Powerpack
+							i(167844),	-- Blueprint: Emergency Repair Kit
 							i(169470),	-- Pressure Relief Valve
 						}),
 					},
@@ -286,22 +269,8 @@ root("Zones", {
 									["g"] = {
 										i(1934),	-- Hogger's Trousers
 										i(168631),	-- Metal Detector
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -320,22 +289,8 @@ root("Zones", {
 										i(6341),	-- Eerie Stable Lantern
 										i(1292),	-- Butcher's Cleaver
 										i(168631),	-- Metal Detector
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -360,22 +315,8 @@ root("Zones", {
 									["g"] = {
 										i(13353),	-- Book of the Dead
 										i(13348),	-- Demonshear
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -392,22 +333,8 @@ root("Zones", {
 									["isDaily"] = true,
 									["g"] = {
 										i(18507),	-- Boots of the Full Moon
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -430,22 +357,8 @@ root("Zones", {
 									["questID"] = 57388,
 									["isDaily"] = true,
 									["g"] = {
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -462,22 +375,8 @@ root("Zones", {
 									["isDaily"] = true,
 									["g"] = {
 										i(132558),	-- Bot Operator's Treads
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -501,22 +400,8 @@ root("Zones", {
 									["isDaily"] = true,
 									["g"] = {
 										i(16844),	-- Earthfury Epaulets
-										i(169169, {	-- Blueprint: Blue Spraybot (any)
-											["questID"] = 55077,
-											["g"] = {
-												crit(29, {	-- Blue Spraybot
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
-										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-											["g"] = {
-												crit(25, {	-- Holographic Digitalization Relay
-													["achievementID"] = 13479,	-- Junkyard Architect
-												}),
-											},
-										}),
+										i(169169),	-- Blueprint: Blue Spraybot
+										i(168906),	-- Blueprint: Holographic Digitalization Relay
 										i(168631),	-- Metal Detector
 										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
 											["questID"] = 56517,
@@ -627,11 +512,6 @@ root("Zones", {
 					["provider"] = { "n", 152295 },	-- Pascal
 					["coord"] = { 71.2, 32.3, MECHAGON },
 					["sourceQuest"] = 55736,	-- Welcome to the Resistance
-					["g"] = {
-						crit(1, {	-- Scrap Grenade
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
 				}),
 				q(55373, {	-- Knock 'Em Out The Box
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -777,14 +657,7 @@ root("Zones", {
 					["isDaily"] = true,	-- collection status for the quest resets over time
 					["coord"] = { 73.6, 34.3, MECHAGON },
 					["g"] = {
-						i(169176, {	-- Blueprint: Encrypted Black Market Radio
-							["questID"] = 55084,	-- Blueprint: Encrypted Black Market Radio
-							["g"] = {
-								crit(35, {	-- Encrypted Black Market Radio
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
-						}),
+						i(169176),	-- Blueprint: Encrypted Black Market Radio
 					},
 				}),
 				i(169864, {	-- Old Pirate Hat
@@ -819,19 +692,6 @@ root("Zones", {
 					["g"] = {
 						crit(21, {	-- Playtime's Over
 							["achievementID"] = 13556,	-- Outside Influences
-						}),
-					},
-				}),
-				o(327548, {	-- Powerpack Blueprints
-					["coord"] = { 60.9, 41.5, MECHAGON },
-					["g"] = {
-						i(168219, {	-- Blueprint: Beastbot Powerpack
-							["questID"] = 55066,
-							["g"] = {
-								crit(14, {	-- Beastbot Powerpack
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
 						}),
 					},
 				}),
@@ -922,22 +782,8 @@ root("Zones", {
 							["isDaily"] = true,
 							["g"] = {
 								i(168264, {	-- Recycling Requisition(Green)
-									i(169167, {	-- Blueprint: Orange Spraybot
-										["questID"] = 55075,
-										["g"] = {
-											crit(27, {	-- Orange Spraybot
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-										["g"] = {
-											crit(36, {	-- Re-Procedurally Generated Punchcard
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 									i(167795, {	-- Paint Vial: Copper Trim
 										["questID"] = 55456,	-- Paint Vial: Copper Trim
 										["g"] = {
@@ -976,30 +822,9 @@ root("Zones", {
 											}),
 										}),
 									}),
-									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-										["groups"] = {
-											crit(34, {	-- Annoy-o-Tron Gang
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(169167, {	-- Blueprint: Orange Spraybot
-										["questID"] = 55075,
-										["g"] = {
-											crit(27, {	-- Orange Spraybot
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-										["g"] = {
-											crit(36, {	-- Re-Procedurally Generated Punchcard
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
+									i(169175),	-- Blueprint: Annoy-o-Tron Gang
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 									i(167795, {	-- Paint Vial: Copper Trim
 										["questID"] = 55456,	-- Paint Vial: Copper Trim
 										["g"] = {
@@ -1028,22 +853,8 @@ root("Zones", {
 							["repeatable"] = true,
 							["g"] = {
 								i(168264, {	-- Recycling Requisition(Green)
-									i(169167, {	-- Blueprint: Orange Spraybot
-										["questID"] = 55075,
-										["g"] = {
-											crit(27, {	-- Orange Spraybot
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-										["g"] = {
-											crit(36, {	-- Re-Procedurally Generated Punchcard
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 									i(167795, {	-- Paint Vial: Copper Trim
 										crit(4, {	-- Copper Trim
 											["achievementID"] = 13513,	-- Available in Eight Colors
@@ -1079,30 +890,9 @@ root("Zones", {
 											}),
 										}),
 									}),
-									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-										["groups"] = {
-											crit(34, {	-- Annoy-o-Tron Gang
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(169167, {	-- Blueprint: Orange Spraybot
-										["questID"] = 55075,
-										["g"] = {
-											crit(27, {	-- Orange Spraybot
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
-										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
-										["g"] = {
-											crit(36, {	-- Re-Procedurally Generated Punchcard
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
+									i(169175),	-- Blueprint: Annoy-o-Tron Gang
+									i(169167),	-- Blueprint: Orange Spraybot
+									i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 									i(167795, {	-- Paint Vial: Copper Trim
 										["questID"] = 55456,	-- Paint Vial: Copper Trim
 										["g"] = {
@@ -1342,11 +1132,6 @@ root("Zones", {
 					["provider"] = { "n", 152295 },	-- Pascal
 					["coord"] = { 71.2, 32.3, MECHAGON },
 					["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
-					["g"] = {
-						crit(37, {	-- S.P.A.R.E. Crate
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
-					},
 				}),
 				i(168256, {	-- Night Elf Ring
 					["description"] = "You need to be on either \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
@@ -1453,10 +1238,7 @@ root("Zones", {
 					["coord"] = { 71.2, 32.5, MECHAGON },
 					["minReputation"] = { 2391, HONORED },
 					["g"] = {
-						spell(300122),	-- Scrapmaster's Blowtorch
-						crit(21, {	-- Scrapmaster's Blowtorch
-							["achievementID"] = 13479,	-- Junkyard Architect
-						}),
+						r(300122, {["u"]=15}),	-- Scrapmaster's Blowtorch
 					},
 				}),
 				q(55339, {	-- Tidying Up
@@ -1602,6 +1384,108 @@ root("Zones", {
 				q(55979, { -- Iteration is Key
 					["requireSkill"] = ENGINEERING,
 					["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
+				}),
+			}),
+			-- Blueprint turn ins
+			n(QUESTS, {
+				q(55030, {	-- Blueprint: Scrap Trap
+					["provider"] = { "i", 167042 },	-- Blueprint: Scrap Trap
+				}),
+				q(55056, {	-- Blueprint: Mechanocat Laser Pointer
+					["provider"] = { "i", 167787 },	-- Blueprint: Mechanocat Laser Pointer
+				}),
+				q(55057, {	-- Blueprint: Canned Minnows
+					["provider"] = { "i", 167836 },	-- Blueprint: Canned Minnows
+				}),
+				q(55058, {	-- Blueprint: Vaultbot Key
+					["provider"] = { "i", 167843 },	-- Blueprint: Vaultbot Key
+				}),
+				q(55059, {	-- Blueprint: Emergency Repair Kit
+					["provider"] = { "i", 167844 },	-- Blueprint: Emergency Repair Kit
+				}),
+				q(55060, {	-- Blueprint: Emergency Powerpack
+					["provider"] = { "i", 167845 },	-- Blueprint: Emergency Powerpack
+				}),
+				q(55061, {	-- Blueprint: Mechano-Treat
+					["provider"] = { "i", 167846 },	-- Blueprint: Mechano-Treat
+				}),
+				q(55062, {	-- Blueprint: Ultrasafe Transporter: Mechagon
+					["provider"] = { "i", 167847 },	-- Blueprint: Ultrasafe Transporter: Mechagon
+				}),
+				q(55063, {	-- Blueprint: G99.99 Landshark
+					["provider"] = { "i", 167871 },	-- Blueprint: G99.99 Landshark
+				}),
+				q(55064, {	-- Blueprint: Rustbolt Gramophone
+					["provider"] = { "i", 168062 },	-- Blueprint: Rustbolt Gramophone
+				}),
+				q(55065, {	-- Blueprint: Rustbolt Kegerator
+					["provider"] = { "i", 168063 },	-- Blueprint: Rustbolt Kegerator
+				}),
+				q(55066, {	-- Blueprint: Beastbot Powerpack
+					["provider"] = { "i", 168219 },	-- Blueprint: Beastbot Powerpack
+				}),
+				q(55068, {	-- Blueprint: BAWLD-371
+					["provider"] = { "i", 168248 },	-- Blueprint: BAWLD-371
+				}),
+				q(55069, {	-- Blueprint: Protocol Transference Device
+					["provider"] = { "i", 168490 },	-- Blueprint: Protocol Transference Device
+				}),
+				q(55071, {	-- Blueprint: Emergency Rocket Chicken
+					["provider"] = { "i", 168492 },	-- Blueprint: Emergency Rocket Chicken
+				}),
+				q(55072, {	-- Blueprint: Battle Box
+					["provider"] = { "i", 168493 },	-- Blueprint: Battle Box
+				}),
+				q(55073, {	-- Blueprint: Rustbolt Resistance Insignia
+					["provider"] = { "i", 168494 },	-- Blueprint: Rustbolt Resistance Insignia
+				}),
+				q(55074, {	-- Blueprint: Rustbolt Requisitions
+					["provider"] = { "i", 168495 },	-- Blueprint: Rustbolt Requisitions
+				}),
+				q(56145, {	-- Blueprint: Advanced Adventurer Augment
+					["provider"] = { "i", 169112 },	-- Blueprint: Advanced Adventurer Augment
+				}),
+				q(56165, {	-- Blueprint: Extraordinary Adventurer Augment
+					["provider"] = { "i", 169134 },	-- Blueprint: Extraordinary Adventurer Augment
+				}),
+				q(56086, {	-- Blueprint: Holographic Digitalization Relay
+					["provider"] = { "i", 168906 },	-- Blueprint: Holographic Digitalization Relay
+				}),
+				q(55075, {	-- Blueprint: Orange Spraybot
+					["provider"] = { "i", 169167 },	-- Blueprint: Orange Spraybot
+				}),
+				q(55076, {	-- Blueprint: Green Spraybot
+					["provider"] = { "i", 169168 },	-- Blueprint: Green Spraybot
+				}),
+				q(55077, {	-- Blueprint: Blue Spraybot
+					["provider"] = { "i", 169169 },	-- Blueprint: Blue Spraybot
+				}),
+				q(55078, {	-- Blueprint: Utility Mechanoclaw
+					["provider"] = { "i", 169170 },	-- Blueprint: Utility Mechanoclaw
+				}),
+				q(55079, {	-- Blueprint: Microbot XD
+					["provider"] = { "i", 169171 },	-- Blueprint: Microbot XD
+				}),
+				q(55081, {	-- Blueprint: Anti-Gravity Pack
+					["provider"] = { "i", 169173 },	-- Blueprint: Anti-Gravity Pack
+				}),
+				q(55083, {	-- Blueprint: Annoy-o-Tron Gang
+					["provider"] = { "i", 169175 },	-- Blueprint: Annoy-o-Tron Gang
+				}),
+				q(55084, {	-- Blueprint: Encrypted Black Market Radio
+					["provider"] = { "i", 169176 },	-- Blueprint: Encrypted Black Market Radio
+				}),
+				q(55067, {	-- Blueprint: Re-Procedurally Generated Punchcard
+					["provider"] = { "i", 168220 },	-- Blueprint: Re-Procedurally Generated Punchcard
+				}),
+				q(56087, {	-- Blueprint: Experimental Adventurer Augment
+					["provider"] = { "i", 168908 },	-- Blueprint: Experimental Adventurer Augment
+				}),
+				q(55082, {	-- Blueprint: Rustbolt Pocket Turret
+					["provider"] = { "i", 169174 },	-- Blueprint: Rustbolt Pocket Turret
+				}),
+				q(55070, {	-- Blueprint: Personal Time Displacer
+					["provider"] = { "i", 168491 },	-- Blueprint: Personal Time Displacer
 				}),
 			}),
 		}),

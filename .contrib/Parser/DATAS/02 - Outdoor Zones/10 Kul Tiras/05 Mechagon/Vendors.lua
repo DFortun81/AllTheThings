@@ -11,13 +11,7 @@ _.Zones =
 					["coord"] = { 63.3, 42.9, MECHAGON },
 					["g"] = {
 						i(167787, {	-- Blueprint: Mechanocat Laser Pointer
-							["questID"] = 55056,
 							["cost"] = 5000000,	-- 500g
-							["g"] = {
-								crit(4, {	-- Mechanocat Laser Pointer
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
 						}),
 						i(168327, {	-- Chain Ignitercoil
 							["cost"] = 350000000,	-- 35,000g
@@ -126,31 +120,13 @@ _.Zones =
 							},
 						}),
 						i(169112, {	-- Blueprint: Advanced Adventurer Augment
-							["questID"] = 56145,
 							["cost"] = 20480000,	-- 2,048g
-							["g"] = {
-								crit(23, {	-- Advanced Adventurer Augment
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
 						}),
 						i(168493, {	-- Blueprint: Battle Box
-							["questID"] = 55072,
 							["cost"] = 10240000,	-- 1,024g
-							["g"] = {
-								crit(18, {	-- Battle Box
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
 						}),
 						i(169134, {	-- Blueprint: Extraordinary Adventurer Augment
-							["questID"] = 56165,
 							["cost"] = 20480000,	-- 2,048g
-							["g"] = {
-								crit(24, {	-- Extraordinary Adventurer Augment
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
-							},
 						}),
 						i(167672),	-- Cyclotronic Blast
 						i(169380, {	-- Mustyfur Snooter (PET!)
