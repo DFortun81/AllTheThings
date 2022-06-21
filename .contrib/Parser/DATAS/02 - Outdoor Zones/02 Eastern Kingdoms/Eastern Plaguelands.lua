@@ -1775,3 +1775,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
+
+root("HiddenQuestTriggers", m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
+	m(EASTERN_PLAGUELANDS, {
+		q(27552),	-- Triggers on changing buffs at Fiona's Caravan
+		q(27553),	-- Triggers on changing buffs at Fiona's Caravan
+		q(27554),	-- Triggers on changing buffs at Fiona's Caravan
+	}),
+})));

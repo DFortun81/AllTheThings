@@ -884,16 +884,19 @@ root("PetBattles", petbattle({
 		q(31910, {	-- David Kosse
 			["provider"] = { "n", 66478 },	-- David Kosse
 			["coord"] = { 62.9, 54.5, THE_HINTERLANDS },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31911, {	-- Deiza Plaguehorn
 			["provider"] = { "n", 66512 },	-- Deiza Plaguehorn
 			["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31914, {	-- Durin Darkhammer
 			["provider"] = { "n", 66520 },	-- Durin Darkhammer
 			["coord"] = { 25.5, 47.4, BURNING_STEPPES },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31908, {	-- Elena Flutterfly
@@ -905,12 +908,14 @@ root("PetBattles", petbattle({
 		q(31850, {	-- Eric Davidson
 			["provider"] = { "n", 65655 },	-- Eric Davidson
 			["coord"] = { 19.8, 44.6, DUSKWOOD },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["sourceQuests"] = { 31726 },	-- Eric Davidson
 		}),
 		q(31913, {	-- Everessa
 			["provider"] = { "n", 66518 },	-- Everessa
 			["coord"] = { 76.8, 41.4, SWAMP_OF_SORROWS },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31916, {	-- Grand Master Lydia Accoste
@@ -952,6 +957,7 @@ root("PetBattles", petbattle({
 		q(31912, {	-- Kortas Darkhammer
 			["provider"] = { "n", 66515 },	-- Kortas Darkhammer
 			["coord"] = { 35.2, 27.7, SEARING_GORGE },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31781, {	-- Lindsay
@@ -978,6 +984,7 @@ root("PetBattles", petbattle({
 		q(31852, {	-- Steven Lisbane
 			["provider"] = { "n", 63194 },	-- Steven Lisbane
 			["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 		}),
 		q(31871, {	-- Traitor Gluk
