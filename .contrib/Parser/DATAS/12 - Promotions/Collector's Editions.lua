@@ -201,7 +201,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		["timeline"] = { "added 9.2.5" },
 		["groups"] = {
 			p(3177, {	-- Drakks (PET!)
-				["description"] = "This pet is available from all versions of Dragonflight but only available during pre-order and will be removed when Dragonflight start.",
+				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
 			}),
 			p(3175),	-- Murkastrasza (PET!)
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
