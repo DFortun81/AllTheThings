@@ -1,742 +1,611 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+---------------------------------------------------
 
-root("Zones", {
-	m(KULTIRAS, {
-		m(MECHAGON, {
-			n(RARES, {
-				-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
-				n(150306, {	-- Drill Rig
-					["description"] = "These rares are only available when the Drill Rig is an active construction project.  Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement.  Hover over each rare in the list to see its announcement.",
-					["g"] = {
-						n(153200, {	-- Boilburn
-							["questID"] = 55857, -- no second questID
-							["coord"] = { 51.1, 50.4, MECHAGON },
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(25, {	-- Boilburn
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(167042),	-- Blueprint: Scrap Trap
-								i(169691, {    -- Vinyl: Depths of Ulduar
-									["questID"] = 56518, -- Vinyl: Depths of Ulduar
-									["g"] = {
-										crit(5, {    -- Depths of Ulduar
-											["achievementID"] = 13686,    -- Junkyard Melomanic
-										}),
-									},
-								}),
-							},
-						}),
-						n(154739, {	-- Caustic Mechaslime
-							["questID"] = 56368,
-							["coords"] = {
-								{ 66.5, 58.9, MECHAGON },	-- Cave Entrance
-								--{ 51.3, 47.8, MECHAGON },
-							},
-							["isDaily"] = true,
-							["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(34, {	-- Caustic Mechaslime
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(169170),	-- Blueprint: Utility Mechanoclaw
-							},
-						}),
-						n(150342, {	-- Earthbreaker Gulroc
-							["questID"] = 55814,
-							["coord"] = { 63.9, 24.4, MECHAGON },
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(21, {	-- Earthbreaker Gulroc
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(167042),	-- Blueprint: Scrap Trap
-							},
-						}),
-						n(153205, {	-- Gemicide
-							["questID"] = 55855,
-							["coord"] = { 57.6, 69.2, MECHAGON },
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(23, {	-- Gemicide
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(169691, {    -- Vinyl: Depths of Ulduar
-									["questID"] = 56518, -- Vinyl: Depths of Ulduar
-									["g"] = {
-										crit(5, {    -- Depths of Ulduar
-											["achievementID"] = 13686,    -- Junkyard Melomanic
-										}),
-									},
-								}),
-							},
-						}),
-						n(154701, {	-- Gorged Gear-Cruncher
-							["questID"] = 56367,
-							["coords"] = {
-								{ 73.2, 54.2, MECHAGON },	-- Cave Entrance
-								--{ 51.3, 47.8, MECHAGON },
-							},
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(33, {	-- Gorged Gear-Cruncher
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(167846),	-- Blueprint: Mechano-Treat
-							},
-						}),
-						n(153206, {	-- Ol' Big Tusk
-							["questID"] = 55853,
-							["coord"] = { 55.6, 39.5, MECHAGON },
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(22, {	-- Ol' Big Tusk
-									["achievementID"] = 13470,	-- Rest In Pistons
-								}),
-								i(167846),	-- Blueprint: Mechano-Treat
-								i(169691, {	-- Vinyl: Depths of Ulduar
-									["questID"] = 56518, -- Vinyl: Depths of Ulduar
-									["g"] = {
-										crit(5, {    -- Depths of Ulduar
-											["achievementID"] = 13686,    -- Junkyard Melomanic
-										}),
-									},
-								}),
-								i(170466),  -- Junkyard Motivator
-							},
-						}),
-						n(152113, {	-- The Kleptoboss
-							["questID"] = 55858,
-							["coords"] = {
-								{ 68.0, 48.0, MECHAGON },	-- Cave Entrance
-								--{ 51.3, 47.8, MECHAGON },
-							},
-							["isDaily"] = true,
-							["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
-							["g"] = {
-								crit(26, {	-- The Kleptoboss
-									["achievementID"] = 13470,	-- Rest in Pistons
-								}),
-								i(169886),	-- Spraybot 0D
-							},
-						}),
-					},
-				}),
-				i(168908, {	-- Blueprint: Experimental Adventurer Augment
-					["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
-				}),
-				n(151934, {	-- Arachnoid Harvester
-					["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
-					["questID"] = 55512,
-					["isDaily"] = true,
-					["coord"] = { 52.6, 41.0, MECHAGON },
-					["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
-					["g"] = {
-						i(168823),	-- Rusty Mechanocrawler (MOUNT!)
-					},
-				}),
-				n(150394, {	-- Armored Vaultbot
-					["creatureID"] = 154968,	-- future ID
-					["questID"] = 55546,
-					["isDaily"] = true,
-					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.  If you've time-traveled to the future, you must use a key to unlock it.",
-					["cost"] = { { "i", 167062, 1 } },	-- 1x Armored Vaultbot Key
-					["coords"] = {
-						{ 53.6, 46.4, MECHAGON },
-						{ 53.8, 49.4, MECHAGON },
-						{ 53.2, 49.7, MECHAGON },
-					},
-					["g"] = {
-						i(167843),	-- Blueprint: Vaultbot Key
-						i(167796, {	-- Paint Vial: Mechagon Gold
-							["questID"] = 55455,	-- Paint Vial: Mechagon Gold
-							["g"] = {
-								crit(3, {	-- Mechagon Gold
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-						i(170072),	-- Armored Vaultbot (PET!)
-					},
-				}),
-				n(151308, {	-- Boggac Skullbash
-					["questID"] = 55539,
-					["coord"] = { 55.4, 25.9, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(14, {	-- Boggac Skullbash
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169688, {	-- Vinyl: Gnomeragan Forever
-							["questID"] = 56515,
-							["g"] = {
-								crit(2, {    -- Gnomeregan Forever
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							},
-						}),
-					},
-				}),
-				n(152001, {	-- Bonepicker
-					["questID"] = 55537,
-					["coord"] = { 65.8, 22.9, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(13, {	-- Bonepicker
-							["achievementID"] = 13470,	-- Rest In Pistons
-						}),
-						i(169392),	-- Bonebiter
-								i(167846),	-- Blueprint: Mechano-Treat
-					},
-				}),
-				n(152569, {	-- Crazed Trogg
-					["questID"] = 55812,
-					["coord"] = { 82.3, 21.0, MECHAGON },
-					["isDaily"] = true,
-					["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
-					["crs"] = {
-						149847,	-- Crazed Trogg
-						152570,	-- Crazed Trogg
-					},
-					["g"] = {
-						crit(20, {	-- Crazed Trogg
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169674),	-- Green Paint Filled Bladder
-						i(167792, {	-- Paint Vial: Fel Mint Green
-							["questID"] = 55452, -- Paint Vial: Fel Mint Green
-							["g"] = {
-								crit(2, {	-- Fel Mint Green
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-						i(169169),	-- Blueprint: Blue Spraybot
-						i(169168),  -- Blueprint: Green Spraybot
-						i(169167),	-- Blueprint: Orange Spraybot
-						i(167793, {  -- Paint Vial: Overload Orange
-							["questID"] = 55457,
-							["g"] = {
-								crit(7, {	-- Overload Orange
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-					},
-				}),
-				n(151569, {	-- Deepwater Maw
-					["creatureID"] = 151558,	-- Hundred-Fathom Lure
-					["questID"] = 55514,
-					["coord"] = { 35.3, 43.0, MECHAGON },
-					["isDaily"] = true,
-					["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
-					["g"] = {
-						crit(11, {	-- Deepwater Maw
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168804),	-- Powered Piscine Procurement Pole
-						i(167836),	-- Blueprint: Canned Minnows
-					},
-				}),
-				n(155060, {	-- Doppel Ganger
-					["description"] = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
-					["questID"] = 56419,
-					["coord"] = { 81.0, 20.2, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(35, {	-- The Doppel Gang
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168631),	-- Metal Detector
-					},
-				}),
-				n(154153, {	-- Enforcer KX-T57
-					["questID"] = 56207,
-					["coord"] = { 55.4, 55.0, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(31, {	-- Enforcer KX-T57
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(170466),	-- Junkyard Motivator
-						i(170470),	-- Reinforced Grease Deflector
-						i(170467),	-- Whirring Chainblade
-						i(170468),	-- Supervolt Zapper
-						i(169174),	-- Blueprint: Rustbolt Pocket Turret
-					},
-				}),
-				n(151202, {	-- Foul Manifestation
-					["questID"] = 55513,
-					["coord"] = { 65.7, 51.7, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(10, {	-- Foul Manifestation
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167871),	-- Blueprint: G99.99 Landshark
-					},
-				}),
-				n(151884, {	-- Fungarian Furor
-					["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497.  Clicking on that mushroom will spawn the rare.  If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
-					["questID"] = 55367,
-					["isDaily"] = true,
-					["coord"] = { 44.5, 41.1, MECHAGON },	-- center of quest area / area with mushrooms
-					["crs"] = { 135497 },	-- Mushroom that spawns the rare
-					["g"] = {
-						crit(9, {	-- Fungarian Furor
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169379),	-- Snowsoft Nibbler
-						i(167793, {  -- Paint Vial: Overload Orange
-							["questID"] = 55457,
-							["g"] = {
-								crit(7, {	-- Overload Orange
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-					},
-				}),
-				n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
-					["questID"] = 55852,
-					["isDaily"] = true,
-					["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
-					["g"] = {
-						crit(28, {	-- Gear Checker Cogstar
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
-						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(151684, {	-- Jawbreaker
-					["questID"] = 55399,
-					["coord"] = { 77.3, 44.8, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(4, {	-- Jawbreaker
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168752),	-- Omnipurpose Efficient Logic Board
-					},
-				}),
-				n(152007, {	-- Killsaw
-					["description"] = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
-					["questID"] = 55369,
-					["coords"] = {
-						{ 42.6, 48.7, MECHAGON },
-						{ 41.0, 28.0, MECHAGON },
-					},
-					["isDaily"] = true,
-					["g"] = {
-						crit(8, {	-- Killsaw
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167931),	-- Mechagonian Sawblades (TOY!)
-					},
-				}),
-				n(151933, {	-- Malfunctioning Beastbot
-					["questID"] = 55544,
-					["coord"] = { 60.7, 42.2, MECHAGON },
-					["isDaily"] = true,
-					["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
-					["g"] = {
-						crit(19, {	-- Malfunctioning Beastbot
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169173),	-- Blueprint: Anti-Gravity Pack
-						i(169382),	-- Lost Robogrip
-						i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-							i(169843, {	-- Azeroth Mini: Cork Stuttguard
-								crit(7, {	-- Cork Stuttguard
-									["achievementID"] = 13708,	-- Most Minis Wins
-								}),
+root(ROOTS.Zones, m(KULTIRAS, {
+	m(MECHAGON, {
+		n(RARES, {
+			-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
+			n(150306, {	-- Drill Rig
+				["description"] = "These rares are only available when the Drill Rig is an active construction project.  Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement.  Hover over each rare in the list to see its announcement.",
+				["g"] = {
+					n(153200, {	-- Boilburn
+						["questID"] = 55857, -- no second questID
+						["coord"] = { 51.1, 50.4, MECHAGON },
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(25, {	-- Boilburn
+								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-							i(169842, {	-- Azeroth Mini: Roadtrogg
-								crit(8, {	-- Roadtrogg
-									["achievementID"] = 13708,	-- Most Minis Wins
-								}),
+							i(167042),	-- Blueprint: Scrap Trap
+							i(169691),    -- Vinyl: Depths of Ulduar
+						},
+					}),
+					n(154739, {	-- Caustic Mechaslime
+						["questID"] = 56368,
+						["coords"] = {
+							{ 66.5, 58.9, MECHAGON },	-- Cave Entrance
+							--{ 51.3, 47.8, MECHAGON },
+						},
+						["isDaily"] = true,
+						["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(34, {	-- Caustic Mechaslime
+								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-							i(169840, {	-- Azeroth Mini: Gazlowe
-								crit(3, {	-- Gazlowe
-									["achievementID"] = 13708,	-- Most Minis Wins
-								}),
+							i(169170),	-- Blueprint: Utility Mechanoclaw
+						},
+					}),
+					n(150342, {	-- Earthbreaker Gulroc
+						["questID"] = 55814,
+						["coord"] = { 63.9, 24.4, MECHAGON },
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(21, {	-- Earthbreaker Gulroc
+								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-							i(169795, {	-- Azeroth Mini: Bondo Bigblock
-								crit(6, {	-- Bondo Bigblock
-									["achievementID"] = 13708,	-- Most Minis Wins
-								}),
+							i(167042),	-- Blueprint: Scrap Trap
+						},
+					}),
+					n(153205, {	-- Gemicide
+						["questID"] = 55855,
+						["coord"] = { 57.6, 69.2, MECHAGON },
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(23, {	-- Gemicide
+								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-							i(169849, {	-- Azeroth Mini: Naeno Megacrash
-								crit(9, {	-- Naeno Megacrash
-									["achievementID"] = 13708,	-- Most Minis Wins
-								}),
+							i(169691),    -- Vinyl: Depths of Ulduar
+						},
+					}),
+					n(154701, {	-- Gorged Gear-Cruncher
+						["questID"] = 56367,
+						["coords"] = {
+							{ 73.2, 54.2, MECHAGON },	-- Cave Entrance
+							--{ 51.3, 47.8, MECHAGON },
+						},
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(33, {	-- Gorged Gear-Cruncher
+								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-						}),
-					},
-				}),
-				n(151124, {	-- Mechagonian Nullifier
-					["questID"] = 55207,
-					["coord"] = { 56.9, 52.1, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(1, {	-- Mechagonian Nullifier
-							["achievementID"] = 13470,	-- Rest In Pistons
-						}),
-						i(168490),	-- Blueprint: Protocol Transference Device
-						i(169688, {	-- Vinyl: Gnomeragan Forever
-							["questID"] = 56515,
-							["g"] = {
-								crit(2, {    -- Gnomeregan Forever
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							},
-						}),
-					},
-				}),
-				n(151672, {	-- Mecharantula
-					["questID"] = 55386,
-					["coord"] = { 88.3, 20.6, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(3, {	-- Mecharantuala
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169393),	-- Arachnoid Skitterbot
-					},
-				}),
-				n(151627, {	-- Mr. Fixthis
-					["questID"] = 55859,
-					["coord"] = { 61.0, 61.4, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(29, {	-- Mr. Fixthis
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168248),	-- Blueprint: BAWLD-371
-						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(151296, {	-- OOX-Avenger/MG
-					["description"] = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active.  Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
-					["questID"] = 55515,
-					["coord"] = { 57.0, 39.8, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(12, {	-- OOX-Avenger/MG
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168492),	-- Blueprint: Emergency Rocket Chicken
-					},
-				}),
-				n(152764, {	-- Oxidized Leachbeast
-					["coord"] = { 55.8, 60.6, MECHAGON },
-					["questID"] = 55856,
-					["isDaily"] = true,
-					["g"] = {
-						crit(24, {	-- Oxidized Leachbeast
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(170273),	-- Oxidizied Refuse Remover
-						i(167794, {	-- Paint Vial: Lemonade Steel
-							["questID"] = 55454, -- Paint Vial: Lemonade Steel
-							["g"] = {
-								crit(5, {	-- Lemonade Steel
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-					},
-				}),
-				n(151702, {	-- Paol Pondwader
-					["questID"] = 55405,
-					["coord"] = { 23.0, 68.4, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(5, {	-- Paol Pondwader
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(170468),	-- Supervolt Zapper
-					},
-				}),
-				n(150448, {	-- Reclamaton Rig
-				--	TODO: figure out questIDs for:
-					--	hardmode rig (irradiated box of assorted parts)
-					--	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
-				--	verify that epic recycling requisition is daily.  possibly repeatable?
-				--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
-				--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
-					["modelScale"] = 4.2,
-					["creatureID"] = 150451,	-- Reclamation Rig (before being built)
-					["questID"] = 57132,	-- normal
-				--	["altQuests"] = { 55848 },	-- hardmode
-					["isDaily"] = true,	-- for some reason with the quests attached it won't reset after dailies
-					["coord"] = { 70.0, 61.5, MECHAGON },
-					["g"] = {
-						i(168394, {	-- Box of Assorted Parts
-							["questID"] = 55847,
-							["isDaily"] = true,
-							["g"] = {
-								i(169396),	-- Echoing Oozeling (PET!)
-								i(169850, {	-- Azeroth Mini Pack: Mechagon
-									i(169844),	-- Azeroth Mini: Overspark
-									i(169852),	-- Azeroth Mini: Blastatron
-									i(169851),	-- Azeroth Mini: Cogstar
-									i(169845),	-- Azeroth Mini: HK-8
-									i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
-								}),
-								i(169692, {    -- Vinyl: Triumph of Gnomeregan
-									["questID"] = 56519,    -- Triumph of Gnomeregan
-									["g"] = {
-										crit(6, {    -- Triumph of Gnomeregan
-											["achievementID"] = 13686,    -- Junkyard Melomanic
-										}),
-									},
-								}),
-							},
-						}),
-						i(168395, {	-- Irradiated Box of Assorted Parts
-							["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
-							["questID"] = 55794,	-- popped immediately upon death of final golems; shift+clicking to refresh afterwards also popped 55848.  this item was the only thing i received from HM rig.  it's possible that 55848 is the "item received" quest and that 55794 is the "rig done for the first time today" quest when hardmode is active (or vice versa!)... if we could isolate the non-hardmode "rig is done for the first time today" quest then we could maybe attach both with altQuests.  WHY IS QUEST TRACKING SO COMPLICATED.  @BLIZZARD ANSWER FOR YOUR CRIMES
-							["isDaily"] = true,
-							["g"] = {
-								i(168495),	-- Blueprint: Rustbolt Requisitions
-								i(169396),	-- Echoing Oozeling
-								i(169692, {    -- Vinyl: Triumph of Gnomeregan
-									["questID"] = 56519,    -- Triumph of Gnomeregan
-									["g"] = {
-										crit(6, {    -- Triumph of Gnomeregan
-											["achievementID"] = 13686,    -- Junkyard Melomanic
-										}),
-									},
-								}),
-							},
-						}),
-						i(169878, {	-- Irradiated Undercoat
-							["description"] = "This shirt can drop from mobs during the Reclamation Rig event.  Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes.  You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
-							["g"] = {
-								i(169879),	-- Melted Irradiated Undercoat (PET!)
-							},
-						}),
-						i(168264, {	-- Recycling Requisition(Green)
-							["repeatable"] = true,
-							["questID"] = 55148,
-							["g"] = {
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
-									},
-								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							},
-						}),
-						i(168266, {	-- Strange Recycling Requisiton(Epic)
-							["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
-							["isDaily"] = true,
-							["g"] = {
-								i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-									i(169843, {	-- Azeroth Mini: Cork Stuttguard
-										crit(7, {	-- Cork Stuttguard
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169842, {	-- Azeroth Mini: Roadtrogg
-										crit(8, {	-- Roadtrogg
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169840, {	-- Azeroth Mini: Gazlowe
-										crit(3, {	-- Gazlowe
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169795, {	-- Azeroth Mini: Bondo Bigblock
-										crit(6, {	-- Bondo Bigblock
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169849, {	-- Azeroth Mini: Naeno Megacrash
-										crit(9, {	-- Naeno Megacrash
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-								}),
-								i(169175),	-- Blueprint: Annoy-o-Tron Gang
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
-									},
-								}),
-								i(169689, {	-- Vinyl: Mimiron's Brainstorm
-									crit(3, {	-- Mimiron's Brainstorm
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								}),
-							},
-						}),
-					},
-				}),
-				n(150575, {	-- Rumblerocks
-					["questID"] = 55368,
-					["coord"] = { 39.9, 53.2, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(6, {	-- Rumblerocks
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168001, {	-- Paint Vial: Big-ol Bronze
-							["questID"] = 55517, -- Paint Vial: Big-ol Bronze
-							["g"] = {
-								crit(1, {	-- Big-ol Bronze
-									["achievementID"] = 13513,	-- Available in Eight Colors
-								}),
-							},
-						}),
-					},
-				}),
-				n(152182, {	-- Rustfeather
-					["questID"] = 55811,
-					["coord"] = { 65.6, 78.3, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(18, {	-- Rustfeather
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168370),	-- Junkheap Drifter (MOUNT!)
-						i(169173),	-- Blueprint: Anti-Gravity Pack
-					},
-				}),
-				n(155583, {	-- Scrapclaw
-					["questID"] = 56737,
-					["coord"] = { 82.3, 77.8, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(36, {	-- Scrapclaw
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168490),	-- Blueprint: Protocol Transference Device
-						i(170470),	-- Reinforced Grease Deflector
-					},
-				}),
-				n(150937, {	-- Seaspit
-					["questID"] = 55545,
-					["coord"] = { 19.3, 80.4, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(16, {	-- Seaspit
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168063),	-- Blueprint: Rustbolt Kegerator
-					},
-				}),
-				n(153000, {	-- Sparkqueen P'Emp
-					["description"] = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active.  When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
-					["questID"] = 55810,
-					["coord"] = { 83.8, 22.0, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(17, {	-- Sparkqueen P'Emp
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-					},
-				}),
-				n(153226, {	-- Steel Singer Freza
-					["questID"] = 55854,
-					["coord"] = { 25.1, 77.4, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(27, {	-- Steel Singer Freza
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168062),	-- Blueprint: Rustbolt Gramophone
-						i(169689, {    -- Vinyl: Mimiron's Brainstorm
-							["questID"] = 56516,    -- Vinyl: Mimiron's Brainstorm
-							["g"] = {
-								crit(3, {    -- Mimiron's Brainstorm
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							},
-						}),
-						i(169692, {    -- Vinyl: Triumph of Gnomeregan
-							["questID"] = 56519,    -- Triumph of Gnomeregan
-							["g"] = {
-								crit(6, {    -- Triumph of Gnomeregan
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							},
-						}),
-						i(169690, {    -- Vinyl: Battle of Gnomeregan
-							["questID"] = 56517,    -- Vinyl: Battle of Gnomeregan
-							["g"] = {
-								crit(4, {    -- Battle of Gnomeregan
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							},
-						}),
-					},
-				}),
-				n(154225, {	-- The Rusty Prince
-					["questID"] = 56182,
-					["coord"] = { 57.2, 58.6, MECHAGON },
-					["isDaily"] = true,
-					["description"] = "Does not spawn when the daily quest The Other Place is active, must use the Personal Time Displacer to access Alt Time.",
-					["g"] = {
-						crit(32, {	-- The Rusty Prince
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(169347),	-- Judgment of Mechagon (TOY!)
-						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(151625, {	-- The Scrap King
-					["questID"] = 55364,
-					["coord"] = { 72.3, 49.8, MECHAGON },
-					["isDaily"] = true,
-					["crs"] = {
-						151623,	-- The Scrap King (while mounted on goretusk)
-					},
-					["g"] = {
-						crit(2, {	-- The Scrap King
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(167846),	-- Blueprint: Mechano-Treat
-						i(170467),	-- Whirring Chainblade
-					},
-				}),
-				n(151940, {	-- Uncle T'Rogg
-					["questID"] = 55538,
-					["coord"] = { 57.3, 20.7, MECHAGON },
-					["isDaily"] = true,
-					["g"] = {
-						crit(15, {	-- Uncle T'Rogg
-							["achievementID"] = 13470,	-- Rest in Pistons
-						}),
-						i(168749),	-- Performant Effective Logic Board
-					},
-				}),
-				-- Shared Rares Drop
-				i(168327),	-- Chain Ignitercoil
+							i(167846),	-- Blueprint: Mechano-Treat
+						},
+					}),
+					n(153206, {	-- Ol' Big Tusk
+						["questID"] = 55853,
+						["coord"] = { 55.6, 39.5, MECHAGON },
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(22, {	-- Ol' Big Tusk
+								["achievementID"] = 13470,	-- Rest In Pistons
+							}),
+							i(167846),	-- Blueprint: Mechano-Treat
+							i(169691),    -- Vinyl: Depths of Ulduar
+							i(170466),  -- Junkyard Motivator
+						},
+					}),
+					n(152113, {	-- The Kleptoboss
+						["questID"] = 55858,
+						["coords"] = {
+							{ 68.0, 48.0, MECHAGON },	-- Cave Entrance
+							--{ 51.3, 47.8, MECHAGON },
+						},
+						["isDaily"] = true,
+						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
+						["g"] = {
+							crit(26, {	-- The Kleptoboss
+								["achievementID"] = 13470,	-- Rest in Pistons
+							}),
+							i(169886),	-- Spraybot 0D
+						},
+					}),
+				},
 			}),
+			i(168908, {	-- Blueprint: Experimental Adventurer Augment
+				["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
+			}),
+			n(151934, {	-- Arachnoid Harvester
+				["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
+				["questID"] = 55512,
+				["isDaily"] = true,
+				["coord"] = { 52.6, 41.0, MECHAGON },
+				["crs"] = { 154342 },	-- Arachnoid Harvester (alt-time)
+				["g"] = {
+					i(168823),	-- Rusty Mechanocrawler (MOUNT!)
+				},
+			}),
+			n(150394, {	-- Armored Vaultbot
+				["creatureID"] = 154968,	-- future ID
+				["questID"] = 55546,
+				["isDaily"] = true,
+				["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it, or use the |cFFFFD700Armored Vaultbot Key|r to unlock it BEFORE it is engaged in combat.  If you've time-traveled to the future, you must use a key to unlock it.",
+				["cost"] = { { "i", 167062, 1 } },	-- 1x Armored Vaultbot Key
+				["coords"] = {
+					{ 53.6, 46.4, MECHAGON },
+					{ 53.8, 49.4, MECHAGON },
+					{ 53.2, 49.7, MECHAGON },
+				},
+				["g"] = {
+					i(167843),	-- Blueprint: Vaultbot Key
+					i(167796),	-- Paint Vial: Mechagon Gold
+					i(170072),	-- Armored Vaultbot (PET!)
+				},
+			}),
+			n(151308, {	-- Boggac Skullbash
+				["questID"] = 55539,
+				["coord"] = { 55.4, 25.9, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(14, {	-- Boggac Skullbash
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169688),	-- Vinyl: Gnomeragan Forever
+				},
+			}),
+			n(152001, {	-- Bonepicker
+				["questID"] = 55537,
+				["coord"] = { 65.8, 22.9, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(13, {	-- Bonepicker
+						["achievementID"] = 13470,	-- Rest In Pistons
+					}),
+					i(169392),	-- Bonebiter
+							i(167846),	-- Blueprint: Mechano-Treat
+				},
+			}),
+			n(152569, {	-- Crazed Trogg
+				["questID"] = 55812,
+				["coord"] = { 82.3, 21.0, MECHAGON },
+				["isDaily"] = true,
+				["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
+				["crs"] = {
+					149847,	-- Crazed Trogg
+					152570,	-- Crazed Trogg
+				},
+				["g"] = {
+					crit(20, {	-- Crazed Trogg
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169674),	-- Green Paint Filled Bladder
+					i(167792),	-- Paint Vial: Fel Mint Green
+					i(169169),	-- Blueprint: Blue Spraybot
+					i(169168),  -- Blueprint: Green Spraybot
+					i(169167),	-- Blueprint: Orange Spraybot
+					i(167793),  -- Paint Vial: Overload Orange
+				},
+			}),
+			n(151569, {	-- Deepwater Maw
+				["creatureID"] = 151558,	-- Hundred-Fathom Lure
+				["questID"] = 55514,
+				["coord"] = { 35.3, 43.0, MECHAGON },
+				["isDaily"] = true,
+				["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
+				["g"] = {
+					crit(11, {	-- Deepwater Maw
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168804),	-- Powered Piscine Procurement Pole
+					i(167836),	-- Blueprint: Canned Minnows
+				},
+			}),
+			n(155060, {	-- Doppel Ganger
+				["description"] = "This rare only spawns when the |cFFFFD700Cogfrenzy's Construction Frenzy|r quest is active and requires three |cFF0070ddPressure Relief Valves|r to summon.",
+				["questID"] = 56419,
+				["coord"] = { 81.0, 20.2, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(35, {	-- The Doppel Gang
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168631),	-- Metal Detector
+				},
+			}),
+			n(154153, {	-- Enforcer KX-T57
+				["questID"] = 56207,
+				["coord"] = { 55.4, 55.0, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(31, {	-- Enforcer KX-T57
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(170466),	-- Junkyard Motivator
+					i(170470),	-- Reinforced Grease Deflector
+					i(170467),	-- Whirring Chainblade
+					i(170468),	-- Supervolt Zapper
+					i(169174),	-- Blueprint: Rustbolt Pocket Turret
+				},
+			}),
+			n(151202, {	-- Foul Manifestation
+				["questID"] = 55513,
+				["coord"] = { 65.7, 51.7, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(10, {	-- Foul Manifestation
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(167871),	-- Blueprint: G99.99 Landshark
+				},
+			}),
+			n(151884, {	-- Fungarian Furor
+				["description"] = "When the |cFFFFD700Aid From Nordrassil|r quest is active, fly around the quest area and look for a mushroom with the NPC ID 135497.  Clicking on that mushroom will spawn the rare.  If no mushroom with that ID is up, you'll need to click on some other ones to try to get the correct one to respawn.",
+				["questID"] = 55367,
+				["isDaily"] = true,
+				["coord"] = { 44.5, 41.1, MECHAGON },	-- center of quest area / area with mushrooms
+				["crs"] = { 135497 },	-- Mushroom that spawns the rare
+				["g"] = {
+					crit(9, {	-- Fungarian Furor
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169379),	-- Snowsoft Nibbler
+					i(167793),  -- Paint Vial: Overload Orange
+				},
+			}),
+			n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
+				["questID"] = 55852,
+				["isDaily"] = true,
+				["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
+				["g"] = {
+					crit(28, {	-- Gear Checker Cogstar
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
+					i(170467),	-- Whirring Chainblade
+				},
+			}),
+			n(151684, {	-- Jawbreaker
+				["questID"] = 55399,
+				["coord"] = { 77.3, 44.8, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(4, {	-- Jawbreaker
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168752),	-- Omnipurpose Efficient Logic Board
+				},
+			}),
+			n(152007, {	-- Killsaw
+				["description"] = "This rare doesn't spawn on days when the Venture Co. invades the Fleeting Forest.",
+				["questID"] = 55369,
+				["coords"] = {
+					{ 42.6, 48.7, MECHAGON },
+					{ 41.0, 28.0, MECHAGON },
+				},
+				["isDaily"] = true,
+				["g"] = {
+					crit(8, {	-- Killsaw
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(167931),	-- Mechagonian Sawblades (TOY!)
+				},
+			}),
+			n(151933, {	-- Malfunctioning Beastbot
+				["questID"] = 55544,
+				["coord"] = { 60.7, 42.2, MECHAGON },
+				["isDaily"] = true,
+				["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
+				["g"] = {
+					crit(19, {	-- Malfunctioning Beastbot
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169173),	-- Blueprint: Anti-Gravity Pack
+					i(169382),	-- Lost Robogrip
+					i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+						i(169843, {	-- Azeroth Mini: Cork Stuttguard
+							crit(7, {	-- Cork Stuttguard
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169842, {	-- Azeroth Mini: Roadtrogg
+							crit(8, {	-- Roadtrogg
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169840, {	-- Azeroth Mini: Gazlowe
+							crit(3, {	-- Gazlowe
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169795, {	-- Azeroth Mini: Bondo Bigblock
+							crit(6, {	-- Bondo Bigblock
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+						i(169849, {	-- Azeroth Mini: Naeno Megacrash
+							crit(9, {	-- Naeno Megacrash
+								["achievementID"] = 13708,	-- Most Minis Wins
+							}),
+						}),
+					}),
+				},
+			}),
+			n(151124, {	-- Mechagonian Nullifier
+				["questID"] = 55207,
+				["coord"] = { 56.9, 52.1, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(1, {	-- Mechagonian Nullifier
+						["achievementID"] = 13470,	-- Rest In Pistons
+					}),
+					i(168490),	-- Blueprint: Protocol Transference Device
+					i(169688),	-- Vinyl: Gnomeragan Forever
+				},
+			}),
+			n(151672, {	-- Mecharantula
+				["questID"] = 55386,
+				["coord"] = { 88.3, 20.6, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(3, {	-- Mecharantuala
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169393),	-- Arachnoid Skitterbot
+				},
+			}),
+			n(151627, {	-- Mr. Fixthis
+				["questID"] = 55859,
+				["coord"] = { 61.0, 61.4, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(29, {	-- Mr. Fixthis
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168248),	-- Blueprint: BAWLD-371
+					i(170467),	-- Whirring Chainblade
+				},
+			}),
+			n(151296, {	-- OOX-Avenger/MG
+				["description"] = "This rare only spawns when the |cFFFFD700My Chickens are Not for Eating!|r quest is active.  Finding and killing OOX-Fleetfoot/MG will spawn the rare, but you'll probably need a group to do it.",
+				["questID"] = 55515,
+				["coord"] = { 57.0, 39.8, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(12, {	-- OOX-Avenger/MG
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168492),	-- Blueprint: Emergency Rocket Chicken
+				},
+			}),
+			n(152764, {	-- Oxidized Leachbeast
+				["coord"] = { 55.8, 60.6, MECHAGON },
+				["questID"] = 55856,
+				["isDaily"] = true,
+				["g"] = {
+					crit(24, {	-- Oxidized Leachbeast
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(170273),	-- Oxidizied Refuse Remover
+					i(167794),	-- Paint Vial: Lemonade Steel
+				},
+			}),
+			n(151702, {	-- Paol Pondwader
+				["questID"] = 55405,
+				["coord"] = { 23.0, 68.4, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(5, {	-- Paol Pondwader
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(170468),	-- Supervolt Zapper
+				},
+			}),
+			n(150448, {	-- Reclamaton Rig
+			--	TODO: figure out questIDs for:
+				--	hardmode rig (irradiated box of assorted parts)
+				--	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
+			--	verify that epic recycling requisition is daily.  possibly repeatable?
+			--	if recycling requisitions are separate based on whether you get the items from the scrapyard or the reclamation rig, we should probably move the quests to the NYI file or something so that one doesn't check off the other!  (or mark them repeatable or whatever)
+			--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
+				["modelScale"] = 4.2,
+				["creatureID"] = 150451,	-- Reclamation Rig (before being built)
+				["questID"] = 57132,	-- normal
+			--	["altQuests"] = { 55848 },	-- hardmode
+				["isDaily"] = true,	-- for some reason with the quests attached it won't reset after dailies
+				["coord"] = { 70.0, 61.5, MECHAGON },
+				["g"] = {
+					i(168394, {	-- Box of Assorted Parts
+						["questID"] = 55847,
+						["isDaily"] = true,
+						["g"] = {
+							i(169396),	-- Echoing Oozeling (PET!)
+							i(169850, {	-- Azeroth Mini Pack: Mechagon
+								i(169844),	-- Azeroth Mini: Overspark
+								i(169852),	-- Azeroth Mini: Blastatron
+								i(169851),	-- Azeroth Mini: Cogstar
+								i(169845),	-- Azeroth Mini: HK-8
+								i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
+							}),
+							i(169692),	-- Vinyl: Triumph of Gnomeregan
+						},
+					}),
+					i(168395, {	-- Irradiated Box of Assorted Parts
+						["description"] = "During the Reclamation Rig event, use the Supercollider on each Irradiated Elemental to make them unstable.  If you complete the hardmode event correctly, you'll face three Unstable Irradiated Golems at the end of the encounter.",
+						["questID"] = 55794,	-- popped immediately upon death of final golems; shift+clicking to refresh afterwards also popped 55848.  this item was the only thing i received from HM rig.  it's possible that 55848 is the "item received" quest and that 55794 is the "rig done for the first time today" quest when hardmode is active (or vice versa!)... if we could isolate the non-hardmode "rig is done for the first time today" quest then we could maybe attach both with altQuests.  WHY IS QUEST TRACKING SO COMPLICATED.  @BLIZZARD ANSWER FOR YOUR CRIMES
+						["isDaily"] = true,
+						["g"] = {
+							i(168495),	-- Blueprint: Rustbolt Requisitions
+							i(169396),	-- Echoing Oozeling
+							i(169692),	-- Vinyl: Triumph of Gnomeregan
+						},
+					}),
+					i(169878, {	-- Irradiated Undercoat
+						["description"] = "This shirt can drop from mobs during the Reclamation Rig event.  Equip it, collect 100 Unstable Isotopes from attacking more of the event mobs, and then use the shirt to absorb the isotopes.  You can only absorb isotopes once every 24 hours, and you'll get the pet after you use all five of the shirt's charges.",
+						["g"] = {
+							i(169879),	-- Melted Irradiated Undercoat (PET!)
+						},
+					}),
+					i(168264, {	-- Recycling Requisition(Green)
+						["repeatable"] = true,
+						["questID"] = 55148,
+						["g"] = {
+							i(169167),	-- Blueprint: Orange Spraybot
+							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
+							i(167795),	-- Paint Vial: Copper Trim
+							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+						},
+					}),
+					i(168266, {	-- Strange Recycling Requisiton(Epic)
+						["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
+						["isDaily"] = true,
+						["g"] = {
+							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+								i(169843, {	-- Azeroth Mini: Cork Stuttguard
+									crit(7, {	-- Cork Stuttguard
+										["achievementID"] = 13708,	-- Most Minis Wins
+									}),
+								}),
+								i(169842, {	-- Azeroth Mini: Roadtrogg
+									crit(8, {	-- Roadtrogg
+										["achievementID"] = 13708,	-- Most Minis Wins
+									}),
+								}),
+								i(169840, {	-- Azeroth Mini: Gazlowe
+									crit(3, {	-- Gazlowe
+										["achievementID"] = 13708,	-- Most Minis Wins
+									}),
+								}),
+								i(169795, {	-- Azeroth Mini: Bondo Bigblock
+									crit(6, {	-- Bondo Bigblock
+										["achievementID"] = 13708,	-- Most Minis Wins
+									}),
+								}),
+								i(169849, {	-- Azeroth Mini: Naeno Megacrash
+									crit(9, {	-- Naeno Megacrash
+										["achievementID"] = 13708,	-- Most Minis Wins
+									}),
+								}),
+							}),
+							i(169175),	-- Blueprint: Annoy-o-Tron Gang
+							i(169167),	-- Blueprint: Orange Spraybot
+							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
+							i(167795),	-- Paint Vial: Copper Trim
+							i(169689),	-- Vinyl: Mimiron's Brainstorm
+						},
+					}),
+				},
+			}),
+			n(150575, {	-- Rumblerocks
+				["questID"] = 55368,
+				["coord"] = { 39.9, 53.2, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(6, {	-- Rumblerocks
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168001),	-- Paint Vial: Big-ol Bronze
+				},
+			}),
+			n(152182, {	-- Rustfeather
+				["questID"] = 55811,
+				["coord"] = { 65.6, 78.3, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(18, {	-- Rustfeather
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168370),	-- Junkheap Drifter (MOUNT!)
+					i(169173),	-- Blueprint: Anti-Gravity Pack
+				},
+			}),
+			n(155583, {	-- Scrapclaw
+				["questID"] = 56737,
+				["coord"] = { 82.3, 77.8, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(36, {	-- Scrapclaw
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168490),	-- Blueprint: Protocol Transference Device
+					i(170470),	-- Reinforced Grease Deflector
+				},
+			}),
+			n(150937, {	-- Seaspit
+				["questID"] = 55545,
+				["coord"] = { 19.3, 80.4, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(16, {	-- Seaspit
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168063),	-- Blueprint: Rustbolt Kegerator
+				},
+			}),
+			n(153000, {	-- Sparkqueen P'Emp
+				["description"] = "This rare only spawns when the |cFFFFD700Bugs, Lots of 'Em!|r quest is active.  When it spawns, Razak Ironsides will yell, \"|cFFff4040Wait till that bug gets close, then blow it to pieces!  I want nothing left.|r  Kill it before it gets close to Razak, or he'll kill it and you won't get loot or credit.",
+				["questID"] = 55810,
+				["coord"] = { 83.8, 22.0, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(17, {	-- Sparkqueen P'Emp
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+				},
+			}),
+			n(153226, {	-- Steel Singer Freza
+				["questID"] = 55854,
+				["coord"] = { 25.1, 77.4, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(27, {	-- Steel Singer Freza
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168062),	-- Blueprint: Rustbolt Gramophone
+					i(169689),	-- Vinyl: Mimiron's Brainstorm
+					i(169692),	-- Vinyl: Triumph of Gnomeregan
+					i(169690),	-- Vinyl: Battle of Gnomeregan
+				},
+			}),
+			n(154225, {	-- The Rusty Prince
+				["questID"] = 56182,
+				["coord"] = { 57.2, 58.6, MECHAGON },
+				["isDaily"] = true,
+				["description"] = "Does not spawn when the daily quest The Other Place is active, must use the Personal Time Displacer to access Alt Time.",
+				["g"] = {
+					crit(32, {	-- The Rusty Prince
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(169347),	-- Judgment of Mechagon (TOY!)
+					i(170467),	-- Whirring Chainblade
+				},
+			}),
+			n(151625, {	-- The Scrap King
+				["questID"] = 55364,
+				["coord"] = { 72.3, 49.8, MECHAGON },
+				["isDaily"] = true,
+				["crs"] = {
+					151623,	-- The Scrap King (while mounted on goretusk)
+				},
+				["g"] = {
+					crit(2, {	-- The Scrap King
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(167846),	-- Blueprint: Mechano-Treat
+					i(170467),	-- Whirring Chainblade
+				},
+			}),
+			n(151940, {	-- Uncle T'Rogg
+				["questID"] = 55538,
+				["coord"] = { 57.3, 20.7, MECHAGON },
+				["isDaily"] = true,
+				["g"] = {
+					crit(15, {	-- Uncle T'Rogg
+						["achievementID"] = 13470,	-- Rest in Pistons
+					}),
+					i(168749),	-- Performant Effective Logic Board
+				},
+			}),
+			-- Shared Rares Drop
+			i(168327),	-- Chain Ignitercoil
 		}),
 	}),
-});
+}));
 
 -- TODO: someone go out to mechagon and test stuff :P
 -- root("HiddenQuestTriggers", {

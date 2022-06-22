@@ -190,9 +190,7 @@ _.Instances = { tier(BFA_TIER, {
 								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
 									az(22, 1),	-- Vision of Perfection (Rank 1)
 								}),
-								i(169172, {	-- Blueprint: Perfectly Timed Differential
-									["questID"] = 55080,
-								}),
+								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
 								i(168749),	-- Performant Effective Logic Board
@@ -383,9 +381,7 @@ _.Instances = { tier(BFA_TIER, {
 								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
 									az(22, 1),	-- Vision of Perfection (Rank 1)
 								}),
-								i(169172, {	-- Blueprint: Perfectly Timed Differential
-									["questID"] = 55080,
-								}),
+								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
 								i(168749),	-- Performant Effective Logic Board

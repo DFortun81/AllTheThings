@@ -1606,16 +1606,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(12),	-- Zao, Calfling of Niuzao
 			crit(13),	-- Yu'la, Broodling of Yu'lon
 		}),
-		ach(13625, {	-- Mighty Minions of Mechagon
-			crit(1),	-- Gnomefeaster
-			crit(2),	-- Sputtertube
-			crit(3),	-- Goldenbot XD
-			crit(4),	-- Creakclank
-			crit(5),	-- CK-9 Micro-Oppression Unit
-			crit(6),	-- Unit 35
-			crit(7),	-- Unit 6
-			crit(8),	-- Unit 17
-		}),
 		ach(13626, {	-- Nautical Nuisances of Nazjatar
 			crit(1),	-- Prince Wiggletail
 			crit(2),	-- Chomp

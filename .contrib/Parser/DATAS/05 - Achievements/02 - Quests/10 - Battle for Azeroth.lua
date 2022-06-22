@@ -21,13 +21,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				["_quests"] = { 51173 },	-- Sandfishing
 			}),
 		})),
-		ach(13790, {	-- Armed for Action
-			crit(1),	-- Volatile Blaster
-			crit(2),	-- Ricket's Special Delivery
-			crit(3),	-- Lightning Zap 5000
-			crit(4),	-- Supercollider
-			crit(5),	-- Boltspitter
-		}),
 		ach(13050, {	-- Bless the Rains Down in Freehold
 			crit(1, {		-- Banana Hoard
 				["coord"] = { 76.1, 84.6, TIRAGARDE_SOUND },
@@ -184,21 +177,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(5),		-- Boon of Kimbul
 			crit(6),		-- Boon of Krag'wa
 		})),
-		ach(13791, {	-- Making the Mount
-			i(168827),		-- Scrapforged Mechaspider (MOUNT!)
-			crit(1),		-- Shop Project
-			crit(2),		-- Right Bot for the Job
-			crit(3),		-- Ready to Rumble
-			crit(4),		-- Knock 'Em Out The Box
-			crit(5),		-- A Little Leg Work
-			crit(6),		-- The Nuts and Bolts of It
-			crit(7),		-- Factory Refurbished
-			crit(8),		-- Grease the Wheels
-			crit(9),		-- Emission Free
-			crit(10),		-- Test Drive
-			crit(11),		-- Knock His Bot Off
-			crit(12),		-- Drive it Away Today
-		}),
 		ach(13512, {	-- Master Calligrapher
 			crit(1, {		-- Master of Calligraphy - Circle
 				["_quests"] = {
@@ -268,42 +246,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),	-- Carentan's Payment
 			crit(4),	-- A Bad Deal
 			crit(5),	-- The Long Con
-		})),
-		a(ach(13553, {	-- The Mechagonian Threat (A)
-			crit(1),		-- The Legend of Mechagon
-			crit(2),		-- Looking Inside
-			crit(3),		-- Let's Get It Started
-			crit(4),		-- You Must be This Height
-			crit(5),		-- Report to Gila
-			crit(6),		-- A Small Team
-			crit(7),		-- The Start of Something Bigger
-			crit(8),		-- Princely Visit
-			crit(9),		-- The Resistance Needs YOU!
-			crit(10),		-- Rescuing the Resistance
-			crit(11),		-- My Father's Armies
-			crit(12),		-- We Can Fix It
-			crit(13),		-- Drill Rig Construction
-			crit(14),		-- Send My Father a Message
-			crit(15),		-- Welcome to the Resistance
-			crit(16),		-- Operation: Mechagon - The Mechoriginator
-		})),
-		h(ach(13700, {	-- The Mechagonian Threat (H)
-			crit(1),		-- The Legend of Mechagon
-			crit(2),		-- A Quick Ear Hustle
-			crit(3),		-- This is Our Vault Now
-			crit(4),		-- Let's Get It Started
-			crit(5),		-- You Must be This Height
-			crit(6),		-- Machinations for Mechagon
-			crit(7),		-- Only the Best Will Do
-			crit(8),		-- To Mechagon!
-			crit(9),		-- Prospectus Bay
-			crit(10),		-- We Come in Peace... and Profit
-			crit(11),		-- The Resistance Needs YOU!
-			crit(12),		-- My Father's Armies
-			crit(13),		-- We Can Fix It
-			crit(14),		-- Drill Rig Construction
-			crit(15),		-- Send My Father a Message
-			crit(16),		-- Welcome to the Resistance
 		})),
 		h(ach(13263)),	-- The Shadow Hunter
 		ach(13046),		-- These Hills Sing

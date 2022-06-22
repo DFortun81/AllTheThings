@@ -298,13 +298,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(13),		-- Crabs
 			]]--
 		}),
-		ach(13473, {	-- Diversed Investments
-			crit(1),	-- Flame Turret
-			crit(2),	-- Drill Rig
-			crit(3),	-- Charging Station
-			crit(4),	-- Rustbolt Armory
-			crit(5),	-- Reclamation Rig
-		}),
 		ach(13064, {	-- Drust the Facts, Ma'am
 			crit(1),		-- Drust Stele: The Circle
 			crit(2),		-- Drust Stele: The Ritual
@@ -603,9 +596,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["_quests"] = { 57246, 56971 },	-- Eel Filet A/H
 			}),
 		}),
-		ach(13482, {	-- Head Financier of Mechagon
-			ach(13472),	-- Deep Pockets
-		}),
 		ach(13028),		-- Hoppin' Sad
 		ach(13691, {	-- I Thought You Said They'd Be Rare?
 			crit(1),	-- Alga the Eyeless
@@ -646,25 +636,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(36),	-- Urduu
 			crit(37),	-- Voice in the Deeps
 		}),
-		ach(13474),		-- Junkyard Machinist
-		ach(13686, {	-- Junkyard Melomaniac
-			crit(1),	-- Ode to Tinkertown
-			crit(2),	-- Gnomeregan Forever
-			crit(3),	-- Mimiron's Brainstorm
-			crit(4),	-- Battle of Gnomeregan
-			crit(5),	-- Depths of Ulduar
-			crit(6),	-- Triumph of Gnomeregan
-		}),
-		ach(13476, {	-- Junkyard Tinkerer
-			ach(13477, {	-- Junkyard Apprentice
-				ach(13475),	-- Junkyard Scavenger
-			}),
-		}),
-		ach(13555, {	-- Junkyard Tinkmaster
-			title(403),	-- Junkyard
-			crit(1),	-- Junkyard Tinkerer
-			crit(2),	-- Head Financier of Mechagon
-		}),
 		ach(13058),		-- Kul Tiran Up the Dance Floor
 		ach(13051, {	-- Legends of the Tidesages
 			crit(1),		-- Legends of the Tidesages - Part 1
@@ -675,19 +646,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),		-- Legends of the Tidesages - Part 6
 			crit(7),		-- Legends of the Tidesages - Part 7
 			crit(8),		-- Legends of the Tidesages - Part 8
-		}),
-		ach(13541, {	-- Mecha-Done
-			i(168329),	-- Mechacycle Model W (MOUNT!)
-			crit(1),	-- The Mechagonian Threat
-			crit(2),	-- Rest in Pisons
-			crit(3),	-- Outside Influences
-			crit(4),	-- Junkyard Architect
-			crit(5),	-- Junkyard Apprentice
-			crit(6),	-- Junkyard Machinist
-			crit(7),	-- Available in Eight Colors
-			crit(8),	-- Junkyard Melomanic
-			crit(9),	-- Making the Mount
-			crit(10),	-- Armed for Action
 		}),
 		ach(13707),		-- Mrrl's Secret Stash
 		ach(13027, {	-- Mushroom Harvest
@@ -760,40 +718,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(13713),		-- Nothing to Scry About
-		ach(13556, {	-- Outside Influences
-			crit(1),	-- Aid from Nordrassil
-			crit(2),	-- One Gnome's Trash
-			crit(3),	-- Clues Abound
-			crit(4),	-- A Historical Mess
-			crit(5),	-- A Growing Mystery
-			crit(6),	-- Time for Heroics
-			crit(7),	-- Strange Discovery
-			crit(8),	-- Deck 'Em
-			crit(9),	-- Bugs, Lots of 'Em!
-			crit(10),	-- Pirates? I hate Those Guys!
-			crit(11),	-- Rico's Rescue
-			crit(12),	-- The Other Place
-			crit(13),	-- The Final Act
-			crit(14),	-- Abduction Reduction
-			crit(15),	-- Aim High
-			crit(16),	-- Pirates, Sea Monsters, Robots
-			crit(17),	-- Go For The Gold
-			crit(18),	-- The Family jewels
-			crit(19),	-- Adapt, Improve, Overcome!
-			crit(20),	-- Toys for Destruction
-			crit(21),	-- Playtime's Over
-			crit(22),	-- Battle Tested
-			crit(23),	-- Be Kind, Rewind
-			crit(24),	-- My Chicken are Not For Eating!
-			crit(25),	-- Off-the-Books Brawlin'
-			crit(26),	-- Discs of Norgannon
-			crit(27),	-- Toys Like Us
-			crit(28),	-- Waste Not
-			crit(29),	-- Taking The Air Out
-			crit(30),	-- Unprofitable Ventures
-			crit(31),	-- A Direct Approach
-			crit(32),	-- Cogfrenzy's Construction Frenzy
-		}),
 		ach(13699, {	-- Periodic Destruction
 			crit(1),	-- Arcane Amalgamation
 			crit(2),	-- Watery Amalgamation
@@ -874,48 +798,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				["_quests"] = { 56003 },
 			}),
 		}),
-		ach(13470, {	-- Rest In Pistons
-			crit(1),	-- Mechagnoian Nullfier
-			crit(2),	-- The Scrap King
-			crit(3),	-- Mecharantuala
-			crit(4),	-- Jawbreaker
-			crit(5),	-- Paol Pondwader
-			crit(6),	-- Rumblerocks
-			crit(7, {	-- Arachnoid Harvester
-				["_npcs"] = { 151934, 154342 },
-			}),
-			crit(8),	-- Killsaw
-			crit(9),	-- Fungarian Furor
-			crit(10),	-- Foul Manifestations
-			crit(11),	-- Deepwater Maw
-			crit(12),	-- OOX-Avenger/MG
-			crit(13),	-- Bonepicker
-			crit(14),	-- Boggac Skullbash
-			crit(15),	-- Uncle T'Rogg
-			crit(16),	-- Seaspit
-			crit(17),	-- Sparkqueen P'Emp
-			crit(18),	-- Rustfeather
-			crit(19),	-- Malfunctioning Beasetbot
-			crit(20),	-- Crazed Trogg
-			crit(21),	-- Earthbreaker Gulroc
-			crit(22),	-- Ol' Big Tusk
-			crit(23),	-- Gemicide
-			crit(24),	-- Oxidized Leachbeast
-			crit(25),	-- Boilburn
-			crit(26),	-- The Kleptoboss
-			crit(27),	-- Steel Singer Freza
-			crit(28),	-- Gear Checker Cogstar
-			crit(29),	-- Mr. Fixthis
-			crit(30, {	-- Vaultbot
-				["_npcs"] = { 150394 }, 	-- Armored Vaultbot
-			}),
-			crit(31),	-- Enforcer KX-T57
-			crit(32),	-- The Rusty Prince
-			crit(33),	-- Gorged Gear-Cruncher
-			crit(34),	-- Caustic Mechaslime
-			crit(35),	-- The Doppel Gang
-			crit(36),	-- Scrapclaw
-		}),
 		ach(13087, {	-- Sausage Sampler
 			crit(1),		-- Fried Boar Sausage
 			crit(2),		-- Goldshire Farms Smoked Sausage
@@ -931,10 +813,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(4),		-- Shanty of Josephus
 			crit(5),		-- Shanty of the Black Sphere
 			crit(6),		-- Shanty of the Horse
-		}),
-		ach(13696, {	-- Scrappy's Best Friend
-			crit(1),	-- Revive Scrappy
-			crit(2),	-- Feed Scrappy
 		}),
 		ach(13765),	-- Subaquatic Support
 		ach(13722),	-- Terror of the Tadpoles
