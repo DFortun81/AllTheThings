@@ -1008,4 +1008,6 @@ _.HiddenQuestTriggers = {
 	q(54296),	-- Upgrade: Vulpera Hideaway completed
 	q(54238),	-- Upgrade: Zul'jan Ruins started
 	q(54297),	-- Upgrade: Zul'jan Ruins completed
+	-- Misc
+	q(54767),	-- Correctly answer 8 riddles from Rid'lah
 };

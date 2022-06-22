@@ -674,6 +674,8 @@ root("HiddenQuestTriggers", {
 			q(48449),	-- Shroud of Arcane Echoes/Warframe
 			q(48450),	-- Shroud of Arcane Echoes/Fel Heart
 			q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
+			-- Stay a while and Listen
+			q(49164),	-- Silgryn and Liadrin
 		}),
 	}),
 });

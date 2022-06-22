@@ -7,7 +7,11 @@ local EARTHEN_RING_ELDER_COORDS = {
 	{ 47.2, 37.6, ORGRIMMAR },
 	{ 64.8, 27.4, IRONFORGE },
 	{ 21.4, 24.4, THUNDER_BLUFF },
+	-- #if AFTER CATA
 	{ 62.2, 49.2, DARNASSUS },
+	-- #else
+	{ 56.2, 92.2, TELDRASSIL },
+	-- #endif
 	{ 67.0, 13.0, UNDERCITY },
 	{ 43.2, 25.8, THE_EXODAR },
 	{ 68.8, 42.6, SILVERMOON_CITY },
@@ -22,6 +26,32 @@ local FESTIVAL_FLAMEKEEPER_COORDS = {
 	{ 21.6, 26.2, THUNDER_BLUFF },
 	{ 62.1, 66.8, TIRISFAL_GLADES },
 	{ 46.2, 37.7, ORGRIMMAR },
+};
+
+local FESTIVAL_MASTER_FIRE_EATER_ID = 25975;	-- Master Fire Eater
+local FESTIVAL_MASTER_FIRE_EATER_COORDS = {
+	-- #if AFTER CATA
+	{ 49.8, 72.0, STORMWIND_CITY },
+	-- #elseif AFTER WRATH
+	{ 50.1, 72.6, STORMWIND_CITY },
+	-- #else
+	{ 50.1, 72.6, STORMWIND_CITY },
+	-- #endif
+	{ 65.2, 25.4, IRONFORGE },
+	-- #if AFTER CATA
+	{ 63.0, 47.6, DARNASSUS },
+	-- #else
+	{ 56.6, 92.0, TELDRASSIL },
+	-- #endif
+	{ 41.2, 24.4, THE_EXODAR },
+};
+
+local FESTIVAL_MASTER_FLAME_EATER_ID = 26113;	-- Master Flame Eater
+local FESTIVAL_MASTER_FLAME_EATER_COORDS = {
+	{ 46.6, 37.2, ORGRIMMAR },
+	{ 21.2, 26.2, THUNDER_BLUFF },
+	{ 68.6, 8.00, UNDERCITY },
+	{ 69.6, 42.4, SILVERMOON_CITY },
 };
 
 local FESTIVAL_LOREMASTER_ID = 16817;	-- Festival Loremaster
@@ -747,7 +777,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 47.2, 47.2, THE_JADE_FOREST },
 					}),
 					crit(3, {	-- Krasarang Wilds
-						["coord"] = { 77.8, 3.60, KRASARANG_WILDS },
+						["coord"] = { 74.0, 9.50, KRASARANG_WILDS },
 					}),
 					crit(4, {	-- Kun-Lai Summit
 						["coord"] = { 71.1, 90.9, KUN_LAI_SUMMIT },
@@ -1577,20 +1607,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["lvl"] = lvlsquish(16, 1, 1),
 			}),
 			q(11924, {	-- More Torch Catching (A)
-				["qg"] = 25975,	-- Master Fire Eater
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 				["sourceQuest"] = 11657,	-- Torch Catching (A)
-				["coords"] = {
-					-- #if AFTER CATA
-					{ 49.8, 72.0, STORMWIND_CITY },
-					-- #elseif AFTER WRATH
-					{ 50.1, 72.6, STORMWIND_CITY },
-					-- #else
-					{ 50.1, 72.6, STORMWIND_CITY },
-					-- #endif
-					{ 65.2, 25.4, IRONFORGE },
-					{ 63.0, 47.6, DARNASSUS },
-					{ 41.2, 24.4, THE_EXODAR },
-				},
+				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -1602,14 +1621,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11925, {	-- More Torch Catching (H)
-				["qg"] = 26113,	-- Master Flame Eater
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 				["sourceQuest"] = 11923,	-- Torch Catching (H)
-				["coords"] = {
-					{ 46.6, 37.2, ORGRIMMAR },
-					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, UNDERCITY },
-					{ 69.6, 42.4, SILVERMOON_CITY },
-				},
+				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -1621,14 +1635,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11921, {	-- More Torch Tossing (A)
-				["qg"] = 25975,	-- Master Fire Eater
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 				["sourceQuest"] = 11657,	-- Torch Catching (A)
-				["coords"] = {
-					{ 49.8, 72.0, STORMWIND_CITY },
-					{ 65.2, 25.4, IRONFORGE },
-					{ 63.0, 47.6, DARNASSUS },
-					{ 41.2, 24.4, THE_EXODAR },
-				},
+				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -1640,14 +1649,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11926, {	-- More Torch Tossing (H)
-				["qg"] = 26113,	-- Master Flame Eater
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 				["sourceQuest"] = 11923,	-- Torch Catching (H)
-				["coords"] = {
-					{ 46.6, 37.2, ORGRIMMAR },
-					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, UNDERCITY },
-					{ 69.6, 42.4, SILVERMOON_CITY },
-				},
+				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -1988,7 +1992,11 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				["maps"] = {
 					STORMWIND_CITY,
 					IRONFORGE,
+					-- #if AFTER CATA
 					DARNASSUS,
+					-- #else
+					TELDRASSIL,
+					-- #endif
 					THE_EXODAR,
 					TANARIS,
 					WINTERSPRING,
@@ -2057,14 +2065,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11657, {	-- Torch Catching (A)
-				["qg"] = 25975,	-- Master Fire Eater
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 				["sourceQuest"] = 11731,	-- Torch Tossing (A)
-				["coords"] = {
-					{ 49.8, 72.0, STORMWIND_CITY },
-					{ 65.2, 25.4, IRONFORGE },
-					{ 63.0, 47.6, DARNASSUS },
-					{ 41.2, 24.4, THE_EXODAR },
-				},
+				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2076,14 +2079,9 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11923, {	-- Torch Catching (H)
-				["qg"] = 26113,	-- Master Flame Eater
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 				["sourceQuest"] = 11922,	-- Torch Tossing (H)
-				["coords"] = {
-					{ 46.6, 37.2, ORGRIMMAR },
-					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, UNDERCITY },
-					{ 69.6, 42.4, SILVERMOON_CITY },
-				},
+				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -2095,13 +2093,8 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11731, {	-- Torch Tossing (A)
-				["qg"] = 25975,	-- Master Fire Eater
-				["coords"] = {
-					{ 49.8, 72.0, STORMWIND_CITY },
-					{ 65.2, 25.4, IRONFORGE },
-					{ 63.0, 47.6, DARNASSUS },
-					{ 41.2, 24.4, THE_EXODAR },
-				},
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
+				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2112,13 +2105,8 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				},
 			}),
 			q(11922, {	-- Torch Tossing (H)
-				["qg"] = 26113,	-- Master Flame Eater
-				["coords"] = {
-					{ 46.6, 37.2, ORGRIMMAR },
-					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, UNDERCITY },
-					{ 69.6, 42.4, SILVERMOON_CITY },
-				},
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
+				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 				["timeline"] = { "added 2.4.0.7994" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -3480,6 +3468,12 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 		}),
 	},
 }));
+
+root("HiddenQuestTriggers", {
+	m(COILFANG_RESERVOIR_SLAVE_PENS, {
+		q(11976),	-- Cross completes on completion of Shards of Ahune
+	}),
+});
 
 -- Remove the holiday flag.
 HUGE_SNOWBALL.u = nil;
