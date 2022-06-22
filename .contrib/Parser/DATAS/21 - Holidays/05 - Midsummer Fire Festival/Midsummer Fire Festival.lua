@@ -3469,5 +3469,11 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 	},
 }));
 
+root("HiddenQuestTriggers", {
+	m(COILFANG_RESERVOIR_SLAVE_PENS, {
+		q(11976),	-- Cross completes on completion of Shards of Ahune
+	}),
+});
+
 -- Remove the holiday flag.
 HUGE_SNOWBALL.u = nil;
