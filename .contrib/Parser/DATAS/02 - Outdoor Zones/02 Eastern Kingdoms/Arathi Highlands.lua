@@ -668,20 +668,32 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6623, {	-- Horde Trauma
-					-- #if AFTER CATA
-					["qg"] = 45540,	-- Krenk Choplimb
-					["coord"] = { 36.9, 87.5, ORGRIMMAR },
-					-- #else
-					["qg"] = 3373,	-- Arnok
-					["coord"] = { 34.0, 84.6, ORGRIMMAR },
-					-- #endif
-					-- #if AFTER BFA
-					["description"] = "Needs a minimum of 225 skill in Tailoring.",
-					["requireSkill"] = TAILORING,
-					-- #else
-					["description"] = "Needs a minimum of 225 skill in First Aid.",
-					["requireSkill"] = FIRST_AID,
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						45540,	-- Krenk Choplimb
+						-- #else
+						3373,	-- Arnok
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 36.9, 87.5, ORGRIMMAR },
+						-- #else
+						{ 34.0, 84.6, ORGRIMMAR },
+						-- #endif
+					},
+					["description"] =
+						-- #if AFTER BFA
+						"Needs a minimum of 225 skill in Tailoring.",
+						-- #else
+						"Needs a minimum of 225 skill in First Aid.",
+						-- #endif
+					["requireSkill"] =
+						-- #if AFTER BFA
+						TAILORING,
+						-- #else
+						FIRST_AID,
+						-- #endif
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 10, 35),
@@ -1622,7 +1634,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
 							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
-						}),	
+						}),
 						i(5743, {	-- Prismstone Ring
 							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
 						}),
