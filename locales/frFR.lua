@@ -56,7 +56,7 @@ local L = app.L;
 	--TODO: L.LEGION_TIER_DESC = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
 	--TODO: L.BFA_TIER_DESC = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
 	--TODO: L.SL_TIER_DESC = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
-	L.DF_TIER_DESC = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";	--TODO: First sentence
+	L.DF_TIER_DESC = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
 	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 	--TODO: L.SHARED_APPEARANCES_LABEL = "Shared Appearances";
 	--TODO: L.SHARED_APPEARANCES_LABEL_DESC = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.";
@@ -757,7 +757,7 @@ for key,value in pairs({
 	-- Misc
 		--TODO: [-493] = "Broken Mission Loot",						-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-519] = "Événements mondiaux",						-- World Events
+		[-519] = "Événements mondiaux",								-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
 		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",	-- Wrath of the Lich King: Zombie Infestation
 		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",		-- Cataclysm: Elemental Unrest
@@ -882,15 +882,15 @@ for key,value in pairs({
 			--TODO: [-5201] = "Class Hall Campaign",
 			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
 			--TODO: [-5203] = "Prestige Rewards",
-			[-5204] = "Apparence de Challenge",
-			[-5205] = "Apparence Cachée",
+			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
+			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 		-- Class Sets
 			--TODO: [-5350] = "Class Trial Item Sets",				-- Class Trial
 
 		--TODO: [-7776] = "Winter Revelers",						-- Winter Revelers (for Winter Veil)
 	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Visions de N'Zoth",
-		[-10072] = "Assaut de N'Zoth Assault",
+		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
+		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
 		[-10075] = "Assaut : Avancée amathet",						-- Assault: Amathet Advance
 		[-10076] = "Assaut : L’Empire noir",						-- Assault: The Black Empire
 		[-10077] = "Assaut : La guerre des clans",					-- Assault: The Warring Clans
@@ -2687,7 +2687,7 @@ for key,value in pairs({
 	[329805] = "Cristal étrange",	-- Strange Crystal
 	[329918] = "Trésors hurans",	-- Quilboar Treasures
 	[329919] = "Fournitures volées",	-- Stolen Supplies
-	[330168] = "Elémenbière contenu",	-- Contained Alemental
+	[330168] = "Elémenbière contenu",	-- Contained Alemental	--TODO: This was manually translated
 	[330169] = "Rouage navrebière",	-- Direbrew Cog
 	[330170] = "Totem hozen",	-- Hozen Totem
 	[330183] = "Coffret des Lamineurs",	-- Irontide Lockbox
