@@ -2,12 +2,12 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	inst(1031, {	-- Uldir
 		["isRaid"] = true,
 		["lvl"] = { 50 },
-		["mapID"] = 1148,	-- Ruin's Descent
 		["maps"] = {
+			1148,	-- Ruin's Descent
 			1149,	-- Hall of Sanitation
 			1150,	-- Ring of Containment
 			1151,	-- Archives of Eternity
@@ -15,10 +15,16 @@ _.Instances = { tier(BFA_TIER, {
 			1153,	-- Gallery of Failures
 			1154,	-- The Oblivion Door
 			1155,	-- The Festering Core
-			1381,	-- Neck Upgrade Quest #1 -- The Oblivion Door
-			1382,	-- Neck Upgrade Quest #2 -- The Oblivion Door
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(12806, {	-- Glory of the Uldir Raider
+					i(163216),	-- Bloodgorged Crawg (MOUNT!)
+				}),
+				ach(12521),	-- Halls of Containment
+				ach(12522),	-- Crimson Descent
+				ach(12523),	-- Heart of Corruption
+			}),
 			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
 					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
@@ -92,18 +98,17 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
-					-- * = verified in LFR
 					137119,	-- Taloc
-					135452,	-- MOTHER*
-					136429,	-- Chamber 01 (MOTHER)*
-					137022,	-- Chamber 02 (MOTHER)*
-					137023,	-- Chamber 03 (MOTHER)*
+					135452,	-- MOTHER
+					136429,	-- Chamber 01 (MOTHER)
+					137022,	-- Chamber 02 (MOTHER)
+					137023,	-- Chamber 03 (MOTHER)
 					134445,	-- Zek'voz <Herald of N'zoth>
 					134442,	-- Vectis
 					133298,	-- Fetid Devourer
-					138967,	-- Zul*
-					134546,	-- Mythrax the Unraveler*
-					132998,	-- G'huun*
+					138967,	-- Zul
+					134546,	-- Mythrax the Unraveler
+					132998,	-- G'huun
 				},
 				["g"] = {
 					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
@@ -124,6 +129,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
 				ach(12521, {	-- Halls of Containment
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -204,6 +210,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(12522, {	-- Crimson Descent
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -269,6 +276,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(12523, {	-- Heart of Corruption
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -330,9 +338,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(161074),	-- Crushproof Vambraces
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
-				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg (MOUNT!)
-				}),
 				e(2168, {	-- Taloc
 					["crs"] = {
 						137119,	-- Taloc
@@ -340,9 +345,6 @@ _.Instances = { tier(BFA_TIER, {
 						138530,	-- Volatile Droplet
 					},
 					["g"] = {
-						crit(1, {	-- Taloc
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12937),	-- Elevator Music
 						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
@@ -360,16 +362,12 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				e(2167, {	-- MOTHER
 					["crs"] = {
-						-- may have other NPCs that need to be added, have only confirmed LFR difficulty
 						135452,	-- MOTHER
 						136429,	-- Chamber 01 (MOTHER)
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
 					["g"] = {
-						crit(2, {	-- MOTHER
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12938),	-- Parental Controls
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
@@ -390,9 +388,6 @@ _.Instances = { tier(BFA_TIER, {
 						133492,	-- Corruption Corpuscle
 					},
 					["g"] = {
-						crit(2, {	-- Fetid Devourer
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12823),	-- Thrash Mouth - All Stars
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
@@ -411,9 +406,6 @@ _.Instances = { tier(BFA_TIER, {
 						134503,	-- Silithid Warrior
 					},
 					["g"] = {
-						crit(3, {	-- Zek'voz, Herald of N'zoth
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12828),	-- What's in the Box?
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
@@ -432,9 +424,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
 					["g"] = {
-						crit(1, {	-- Vectis
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12772),	--  Now We Got Bad Blood
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
@@ -452,9 +441,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
 					["g"] = {
-						crit(3, {	-- Zul, Reborn
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12830),	-- Edgelords
 						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
@@ -467,20 +453,16 @@ _.Instances = { tier(BFA_TIER, {
 						i(160720),	-- Armbands of Sacrosanct Acts
 						i(160723),	-- Imperious Vambraces
 						i(160724),	-- Cincture of Profane Deeds
-						{	-- Blood-Soaked Tome of Dark Whispers
-							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
-						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-							["questID"] = 54753,
+						i(166502, {	-- Blood-Soaked Tome of Dark Whispers
 							["classes"] = { HUNTER },
-						},
+							["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+							["questID"] = 54753,
+						}),
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
 					["g"] = {
-						crit(1, {	-- Mythrax the Unraveler
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
 						ach(12836),	-- Existential Crisis
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
@@ -501,9 +483,6 @@ _.Instances = { tier(BFA_TIER, {
 						138529,	-- Dark Young
 					},
 					["g"] = {
-						crit(2, {	-- G'huun
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
 						ach(12551),	-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
@@ -531,9 +510,6 @@ _.Instances = { tier(BFA_TIER, {
 					i(161074),	-- Crushproof Vambraces
 					i(161077),	-- Fluid-Resistant Specimen Handlers
 				}),
-				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg (MOUNT!)
-				}),
 				e(2168, {	-- Taloc
 					["crs"] = {
 						137119,	-- Taloc
@@ -541,10 +517,6 @@ _.Instances = { tier(BFA_TIER, {
 						138530,	-- Volatile Droplet
 					},
 					["g"] = {
-						crit(1, {	-- Taloc
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
-						ach(12937),	-- Elevator Music
 						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
@@ -561,17 +533,12 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				e(2167, {	-- MOTHER
 					["crs"] = {
-						-- may have other NPCs that need to be added, have only confirmed LFR difficulty
 						135452,	-- MOTHER
 						136429,	-- Chamber 01 (MOTHER)
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
 					["g"] = {
-						crit(2, {	-- MOTHER
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
-						ach(12938),	-- Parental Controls
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
 						i(160682),	-- Mother's Twin Gaze
@@ -591,10 +558,6 @@ _.Instances = { tier(BFA_TIER, {
 						133492,	-- Corruption Corpuscle
 					},
 					["g"] = {
-						crit(2, {	-- Fetid Devourer
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
-						ach(12823),	-- Thrash Mouth - All Stars
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
 						i(160616),	-- Horrific Amalgam's Hood
@@ -612,10 +575,6 @@ _.Instances = { tier(BFA_TIER, {
 						134503,	-- Silithid Warrior
 					},
 					["g"] = {
-						crit(3, {	-- Zek'voz, Herald of N'zoth
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
-						ach(12828),	-- What's in the Box?
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
 						i(160613),	-- Mantle of Contained Corruption
@@ -633,10 +592,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
 					["g"] = {
-						crit(1, {	-- Vectis
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
-						ach(12772),	--  Now We Got Bad Blood
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
 						i(160623),	-- Hood of Pestilent Ichor
@@ -653,10 +608,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
 					["g"] = {
-						crit(3, {	-- Zul, Reborn
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
-						ach(12830),	-- Edgelords
 						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
@@ -668,21 +619,16 @@ _.Instances = { tier(BFA_TIER, {
 						i(160720),	-- Armbands of Sacrosanct Acts
 						i(160723),	-- Imperious Vambraces
 						i(160724),	-- Cincture of Profane Deeds
-						{	-- Blood-Soaked Tome of Dark Whispers
-							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
-						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-							["questID"] = 54753,
+						i(166502, {	-- Blood-Soaked Tome of Dark Whispers
 							["classes"] = { HUNTER },
-						},
+							["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+							["questID"] = 54753,
+						}),
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
 					["g"] = {
-						crit(1, {	-- Mythrax the Unraveler
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
-						ach(12836),	-- Existential Crisis
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
 						i(160696),	-- Codex of Imminent Ruin
@@ -704,13 +650,9 @@ _.Instances = { tier(BFA_TIER, {
 						138529,	-- Dark Young
 					},
 					["g"] = {
-						crit(2, {	-- G'huun
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
 						ach(12536, {	-- Ahead of the Curve: G'huun
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 8.0.1", "removed 8.1.0" },
 						}),
-						ach(12551),		-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
 						i(160694),	-- Re-Origination Pulse Rifle
@@ -739,9 +681,6 @@ _.Instances = { tier(BFA_TIER, {
 						i(161077),	-- Fluid-Resistant Specimen Handlers
 					},
 				}),
-				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg (MOUNT!)
-				}),
 				e(2168, {	-- Taloc
 					["crs"] = {
 						137119,	-- Taloc
@@ -749,11 +688,7 @@ _.Instances = { tier(BFA_TIER, {
 						138530,	-- Volatile Droplet
 					},
 					["g"] = {
-						crit(1, {	-- Taloc
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12524),	-- Mythic: Taloc
-						ach(12937),	-- Elevator Music
 						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
@@ -770,18 +705,13 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 				e(2167, {	-- MOTHER
 					["crs"] = {
-						-- may have other NPCs that need to be added, have only confirmed LFR difficulty
 						135452,	-- MOTHER
 						136429,	-- Chamber 01 (MOTHER)
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
 					["g"] = {
-						crit(2, {	-- MOTHER
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12526),	-- Mythic: MOTHER
-						ach(12938),	-- Parental Controls
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
 						i(160682),	-- Mother's Twin Gaze
@@ -801,11 +731,7 @@ _.Instances = { tier(BFA_TIER, {
 						133492,	-- Corruption Corpuscle
 					},
 					["g"] = {
-						crit(2, {	-- Fetid Devourer
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12530),	-- Mythic: Fetid Devourer
-						ach(12823),	-- Thrash Mouth - All Stars
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
 						i(160616),	-- Horrific Amalgam's Hood
@@ -823,11 +749,7 @@ _.Instances = { tier(BFA_TIER, {
 						134503,	-- Silithid Warrior
 					},
 					["g"] = {
-						crit(3, {	-- Zek'voz, Herald of N'zoth
-							["achievementID"] = 12521,	-- Halls of Containment
-						}),
 						ach(12527),	-- Mythic: Zek'voz, Herald of N'zoth
-						ach(12828),	-- What's in the Box?
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
 						i(160613),	-- Mantle of Contained Corruption
@@ -845,11 +767,7 @@ _.Instances = { tier(BFA_TIER, {
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
 					["g"] = {
-						crit(1, {	-- Vectis
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12529),	-- Mythic: Vectis
-						ach(12772),	--  Now We Got Bad Blood
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
 						i(160623),	-- Hood of Pestilent Ichor
@@ -866,11 +784,7 @@ _.Instances = { tier(BFA_TIER, {
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
 					["g"] = {
-						crit(3, {	-- Zul, Reborn
-							["achievementID"] = 12522,	-- Crimson Descent
-						}),
 						ach(12531),	-- Mythic: Zul, Reborn
-						ach(12830),	-- Edgelords
 						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
@@ -882,22 +796,17 @@ _.Instances = { tier(BFA_TIER, {
 						i(160720),	-- Armbands of Sacrosanct Acts
 						i(160723),	-- Imperious Vambraces
 						i(160724),	-- Cincture of Profane Deeds
-						{	-- Blood-Soaked Tome of Dark Whispers
-							["itemID"] = 166502,	-- Blood-Soaked Tome of Dark Whispers
-						--	["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
-							["questID"] = 54753,
+						i(166502, {	-- Blood-Soaked Tome of Dark Whispers
 							["classes"] = { HUNTER },
-						},
+							["spellID"] = 288956,	-- Blood-Soaked Tome of Dark Whispers
+							["questID"] = 54753,
+						}),
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
 					["g"] = {
-						crit(1, {	-- Mythrax the Unraveler
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
 						ach(12532),	-- Mythic: Mythrax the Unraveler
-						ach(12836),	-- Existential Crisis
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
 						i(160696),	-- Codex of Imminent Ruin
@@ -917,26 +826,20 @@ _.Instances = { tier(BFA_TIER, {
 						138529,	-- Dark Young
 					},
 					["g"] = {
-						crit(2, {	-- G'huun
-							["achievementID"] = 12523,	-- Heart of Corruption
-						}),
-						ach(12536, {	-- Ahead of the Curve: G'huun
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						ach(12535, {	-- Cutting Edge: G'huun
-							["u"] = REMOVED_FROM_GAME,
+							["timeline"] = { "added 8.0.1", "removed 8.1.0" },
 						}),
 						ach(12533, {	-- Mythic: G'huun
 							title(381),	-- <Name> the Purifier
 						}),
-						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0", "removed 8.1" } }, {	-- Hall of Fame: G'huun (Alliance)
-							["races"] = ALLIANCE_ONLY,  -- Alliance races
+						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Alliance)
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
-						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0", "removed 8.1" } }, {	-- Hall of Fame: G'huun (Horde)
-							["races"] = HORDE_ONLY,  -- Horde races
+						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Horde)
+							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
@@ -959,8 +862,8 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+})));
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(BFA_TIER, {
 		inst(1031, {	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes
@@ -977,4 +880,4 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(166412),	-- Flaskzertauren's Plate Pauldrons
 		}),
 	}),
-});
+}));
