@@ -171,7 +171,7 @@ _.Secrets =
 					{ "i", 147455, 1 },	-- Water Stone
 				},
 			}),
-			o(9999915, {	-- Step 8: Stone Golem
+			o(9999915, {	-- Step 8: Stone Watcher
 				["description"] = "|cFFFFFFFFSTEP 8:|r Use the Dire Brew and walk past the Stone Watcher.",
 			}),
 			o(9999916, {	-- Step 9: Ethereal Barrier

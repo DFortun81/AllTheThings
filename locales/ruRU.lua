@@ -3161,7 +3161,7 @@ for key,value in pairs({
 	[9999912] = "|cFFFFFFFFШаг 5:|r Верный долгу дозорный",	-- |cFFFFFFFFStep 5:|r Diligent Watcher
 	[9999913] = "|cFFFFFFFFШаг 6:|r Барьер Зарослей",	-- |cFFFFFFFFStep 6:|r Vine Barrier
 	[9999914] = "|cFFFFFFFFШаг 7:|r Водный Барьер",	-- |cFFFFFFFFStep 7:|r Water Barrier
-	[9999915] = "|cFFFFFFFFШаг 8:|r Каменный Голем",	-- |cFFFFFFFFStep 8:|r Stone Golem
+	[9999915] = "|cFFFFFFFFШаг 8:|r Каменный страж",	-- |cFFFFFFFFStep 8:|r Stone Watcher
 	[9999916] = "|cFFFFFFFFШаг 9:|r Призрачный Барьер",	-- |cFFFFFFFFStep 9:|r Ethereal Barrier
 	[9999917] = "|cFFFFFFFFШаг 10:|r Странный Камень",	-- |cFFFFFFFFStep 10:|r Strange Stone
 	[9999918] = "|cFFFFFFFFШаг 11:|r Металлические Ворота",	-- |cFFFFFFFFStep 11:|r Metal Gate
