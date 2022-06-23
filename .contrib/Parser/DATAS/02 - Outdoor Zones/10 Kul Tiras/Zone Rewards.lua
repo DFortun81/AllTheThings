@@ -2,9 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones =
-{
-	m(KULTIRAS, {
+root("Zones", bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
+	m(KUL_TIRAS, {
 		n(ZONE_REWARDS, {
 			i(163857, {	-- Azerite Armor Cache
 				["sym"] = {
@@ -48,4 +47,4 @@ _.Zones =
 			i(158163),	-- First Mate's Spyglass
 		}),
 	}),
-};
+}));

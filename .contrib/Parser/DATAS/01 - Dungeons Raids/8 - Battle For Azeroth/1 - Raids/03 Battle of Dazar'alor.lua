@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
@@ -10,7 +10,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 			{ 38.8, 2.40, DAZARALOR },	-- Horde
 		},
 		["maps"] = {
-			--1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)
 			1352,	-- Port of Zandalar
 			1357,	-- The Zocalo
 			1353,	-- Halls of Opulence
@@ -22,6 +21,10 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		},
 		["lvl"] = { 50 },
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(13289),
+				ach(13286),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 1] (RECIPE!)
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
@@ -1248,9 +1251,9 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 			})),
 		},
 	}),
-}));
+})));
 
-root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+root("HiddenQuestTriggers", tier(BFA_TIER, {
 	inst(1176, {	-- Battle of Dazar'alor
 		q(55026),	-- Killing Opulence (H)
 		q(55027),	-- Killing Opulence (M)
