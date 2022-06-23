@@ -40,31 +40,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 			o_repeated({	-- Mechanized Chest
 				-- Contains
 				i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
-					i(169844, {	-- Azeroth Mini: Overspark
-						crit(4, {	-- Overspark
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
-					i(169852, {	-- Azeroth Mini: Blastatron
-						crit(12, {	-- Blastatron
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
-					i(169851, {	-- Azeroth Mini: Cogstar
-						crit(10, {	-- Cogstar
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
-					i(169845, {	-- Azeroth Mini: HK-8
-						crit(11, {	-- HK-8
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
-					i(169846, {	-- Azeroth Mini: King Mechagon
-						crit(13, {	-- King Mechagon
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
+					i(169844),	-- Azeroth Mini: Overspark
+					i(169852),	-- Azeroth Mini: Blastatron
+					i(169851),	-- Azeroth Mini: Cogstar
+					i(169845),	-- Azeroth Mini: HK-8
+					i(169846),	-- Azeroth Mini: King Mechagon
 				}),
 				i(168832),	-- Galvanic Oscillator
 				i(168327),	-- Chain Ignitercoil

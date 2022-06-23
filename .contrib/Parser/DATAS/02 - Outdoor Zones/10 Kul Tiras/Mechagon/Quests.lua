@@ -391,6 +391,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 70.7, 38.4, MECHAGON },
 				["isDaily"] = true,
 			}),
+			q(56116, {	-- Even More Recycling
+				["coords"] = {
+					{ 58.8, 59.2, MECHAGON },
+					{ 54.5, 56.4, MECHAGON },
+					{ 55.8, 62.7, MECHAGON },
+					{ 53.5, 61.5, MECHAGON },
+				},
+				["provider"] = { "o", 326027 },	-- Recyclerizer DX-82
+				["cost"] = { { "i", 168946, 1 } },	-- Bundle of Recyclable Parts
+				["sourceQuest"] = 55743,	-- More Recycling
+				["repeatable"] = true,
+				["sym"] = {
+					{"select","questID",55743},{"pop"},	-- Sub-groups from Quest 55743 (More Recycling)
+				},
+			}),
 			q(56168, {	-- Factory Refurbished
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
@@ -469,6 +484,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 70.8, 39.1, MECHAGON },
 				["isDaily"] = true,
 			}),
+			q(55743, {	-- More Recycling
+				["coords"] = {
+					{ 58.8, 59.2, MECHAGON },
+					{ 54.5, 56.4, MECHAGON },
+					{ 55.8, 62.7, MECHAGON },
+					{ 53.5, 61.5, MECHAGON },
+				},
+				["provider"] = { "o", 326027 },	-- Recyclerizer DX-82
+				["cost"] = { { "i", 168946, 1 } },	-- Bundle of Recyclable Parts
+				["isDaily"] = true,
+				["g"] = {
+					i(168264, {	-- Recycling Requisition(Green)
+						["sym"] = {{"fill"}},
+					}),
+					i(168266, {	-- Strange Recycling Requisiton(Epic)
+						["sym"] = {{"fill"}},
+					}),
+				},
+			}),
 			q(56523, {	-- My Chickens are Not for Eating!
 				["provider"] = { "n", 155254 },	-- Oglethorpe Obnoticus
 				["coord"] = { 72.7, 38.0, MECHAGON },
@@ -493,11 +527,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["minReputation"] = { 2391, EXALTED },
 				["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
 				["g"] = {
-					i(169876, {	-- Azeroth Mini: Sapphronetta
-						crit(14, {	-- Sapphronetta
-							["achievementID"] = 13708,	-- Most Minis Wins
-						}),
-					}),
+					i(169876),	-- Azeroth Mini: Sapphronetta
 				},
 			}),
 			q(56532, {	-- Nuke 'Em Norbit
@@ -683,111 +713,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 							{ "i", 168217, 30 },	-- 30x Hardened Springs
 							{ "i", 168216, 10 },	-- 10x Tempered Plating
 							{ "i", 168215, 5 },	-- 5x Machined Gear Assembly
-						},
-					}),
-					q(55743, {	-- More Recycling
-						["coords"] = {
-							{ 58.8, 59.2, MECHAGON },
-							{ 54.5, 56.4, MECHAGON },
-							{ 55.8, 62.7, MECHAGON },
-							{ 53.5, 61.5, MECHAGON },
-						},
-						["cost"] = { { "i", 168946, 1 }},	-- Bundle of Recyclable Parts
-						["isDaily"] = true,
-						["g"] = {
-							i(168264, {	-- Recycling Requisition(Green)
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-							i(168266, {	-- Strange Recycling Requisiton(Epic)
-								i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-									i(169843, {	-- Azeroth Mini: Cork Stuttguard
-										crit(7, {	-- Cork Stuttguard
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169842, {	-- Azeroth Mini: Roadtrogg
-										crit(8, {	-- Roadtrogg
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169840, {	-- Azeroth Mini: Gazlowe
-										crit(3, {	-- Gazlowe
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169795, {	-- Azeroth Mini: Bondo Bigblock
-										crit(6, {	-- Bondo Bigblock
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169849, {	-- Azeroth Mini: Naeno Megacrash
-										crit(9, {	-- Naeno Megacrash
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-								}),
-								i(169175),	-- Blueprint: Annoy-o-Tron Gang
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
-								i(169689),	-- Vinyl: Mimiron's Brainstorm
-							}),
-						},
-					}),
-					q(56116, {	-- Even More Recycling
-						["coords"] = {
-							{ 58.8, 59.2, MECHAGON },
-							{ 54.5, 56.4, MECHAGON },
-							{ 55.8, 62.7, MECHAGON },
-							{ 53.5, 61.5, MECHAGON },
-						},
-						["cost"] = { { "i", 168946, 1 }},	-- Bundle of Recyclable Parts
-						["sourceQuest"] = 55743,	-- More Recycling
-						["repeatable"] = true,
-						["g"] = {
-							i(168264, {	-- Recycling Requisition(Green)
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
-							}),
-							i(168266, {	-- Strange Recycling Requisiton(Epic)
-								i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-									i(169843, {	-- Azeroth Mini: Cork Stuttguard
-										crit(7, {	-- Cork Stuttguard
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169842, {	-- Azeroth Mini: Roadtrogg
-										crit(8, {	-- Roadtrogg
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169840, {	-- Azeroth Mini: Gazlowe
-										crit(3, {	-- Gazlowe
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169795, {	-- Azeroth Mini: Bondo Bigblock
-										crit(6, {	-- Bondo Bigblock
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-									i(169849, {	-- Azeroth Mini: Naeno Megacrash
-										crit(9, {	-- Naeno Megacrash
-											["achievementID"] = 13708,	-- Most Minis Wins
-										}),
-									}),
-								}),
-								i(169175),	-- Blueprint: Annoy-o-Tron Gang
-								i(169167),	-- Blueprint: Orange Spraybot
-								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795),	-- Paint Vial: Copper Trim
-								i(169689),	-- Vinyl: Mimiron's Brainstorm
-							}),
 						},
 					}),
 				},
@@ -1138,26 +1063,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 					}),
 					i(169838, {	-- Azeroth Mini: Starter Pack
 						i(169796),	-- Azeroth Mini Collection: Mechagon (TOY!)
-						i(169841, {	-- Azeroth Mini: Erazmin
-							crit(5, {	-- Prince Erazmin
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169794, {	-- Azeroth Mini: Izira Gearsworn
-							crit(1, {	-- Izira Gearsworn
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169844, {	-- Azeroth Mini: Overspark
-							crit(4, {	-- Overspark
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169797, {	-- Azeroth Mini: Wrenchbot
-							crit(2, {	-- Wrenchbot
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
+						i(169841),	-- Azeroth Mini: Erazmin
+						i(169794),	-- Azeroth Mini: Izira Gearsworn
+						i(169844),	-- Azeroth Mini: Overspark
+						i(169797),	-- Azeroth Mini: Wrenchbot
 					}),
 				},
 			}),

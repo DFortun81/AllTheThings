@@ -354,46 +354,114 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),	-- The Legend of Mechagon
-					crit(2),	-- Looking Inside
-					crit(3),	-- Let's Get it Started
-					crit(4),	-- You Must be This Height
-					crit(5),	-- Report to Gila
-					crit(6),	-- A Small Team
-					crit(7),	-- The Start of Something Bigger
-					crit(8),	-- Princely Visit
-					crit(9),	-- The Resistance Needs YOU!
-					crit(10),	-- Rescuing the Resistance
-					crit(11),	-- My Father's Armies
-					crit(12),	-- We Can Fix It
-					crit(13),	-- Drill Rig Construction
-					crit(14),	-- Send My Father a Message
-					crit(15),	-- Welcome to the Resistance
-					crit(16),	-- Operation: Mechagon - The Mechoriginator
+					crit(1, {	-- The Legend of Mechagon
+						["_quests"] = { 54088 },	-- The Legend of Mechagon
+					}),
+					crit(2, {	-- Looking Inside
+						["_quests"] = { 55040 },	-- Looking Inside
+					}),
+					crit(3, {	-- Let's Get it Started
+						["_quests"] = { 54945 },	-- Let's Get it Started
+					}),
+					crit(4, {	-- You Must be This Height
+						["_quests"] = { 54087 },	-- You Must be This Height
+					}),
+					crit(5, {	-- Report to Gila
+						["_quests"] = { 54946 },	-- Report to Gila
+					}),
+					crit(6, {	-- A Small Team
+						["_quests"] = { 54947 },	-- A Small Team
+					}),
+					crit(7, {	-- The Start of Something Bigger
+						["_quests"] = { 54992 },	-- The Start of Something Bigger
+					}),
+					crit(8, {	-- Princely Visit
+						["_quests"] = { 55645 },	-- Princely Visit
+					}),
+					crit(9, {	-- The Resistance Needs YOU!
+						["_quests"] = { 55729 },	-- The Resistance Needs YOU!
+					}),
+					crit(10, {	-- Rescuing the Resistance
+						["_quests"] = { 55730 },	-- Rescuing the Resistance
+					}),
+					crit(11, {	-- My Father's Armies
+						["_quests"] = { 55731 },	-- My Father's Armies
+					}),
+					crit(12, {	-- We Can Fix It
+						["_quests"] = { 55995 },	-- We Can Fix It
+					}),
+					crit(13, {	-- Drill Rig Construction
+						["_quests"] = { 55734 },	-- Drill Rig Construction
+					}),
+					crit(14, {	-- Send My Father a Message
+						["_quests"] = { 55096 },	-- Send My Father a Message
+					}),
+					crit(15, {	-- Welcome to the Resistance
+						["_quests"] = { 55736 },	-- Welcome to the Resistance
+					}),
+					crit(16, {	-- Operation: Mechagon - The Mechoriginator
+						["_quests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
+					}),
 				},
 			}),
 			ach(13700, {	-- The Mechagonian Threat (H)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),	-- The Legend of Mechagon
-					crit(2),	-- A Quick Ear Hustle
-					crit(3),	-- This is Our Vault Now
-					crit(4),	-- Let's Get it Started
-					crit(5),	-- You Must be This Height
-					crit(6),	-- Machinations for Mechagon
-					crit(7),	-- Only the Best Will Do
-					crit(8),	-- To Mechagon!
-					crit(9),	-- Prospectus Bay
-					crit(10),	-- We Come in Peace...and Profit
-					crit(11),	-- The Resistance Needs YOU!
-					crit(12),	-- Rescuing the Resistance
-					crit(13),	-- My Father's Armies
-					crit(14),	-- We Can Fix It
-					crit(15),	-- Drill Rig Construction
-					crit(16),	-- Send My Father a Message
-					crit(17),	-- Welcome to the Resistance
-					crit(18),	-- Operation: Mechagon - The Mechoriginator
+					crit(1, {	-- The Legend of Mechagon
+						["_quests"] = { 55646 },	-- The Legend of Mechagon
+					}),
+					crit(2, {	-- A Quick Ear Hustle
+						["_quests"] = { 55647 },	-- A Quick Ear Hustle
+					}),
+					crit(3, {	-- This is Our Vault Now
+						["_quests"] = { 55648 },	-- This is Our Vault Now
+					}),
+					crit(4, {	-- Let's Get it Started
+						["_quests"] = { 55630 },	-- Let's Get it Started
+					}),
+					crit(5, {	-- You Must be This Height
+						["_quests"] = { 55632 },	-- You Must be This Height
+					}),
+					crit(6, {	-- Machinations for Mechagon
+						["_quests"] = { 55649 },	-- Machinations for Mechagon
+					}),
+					crit(7, {	-- Only the Best Will Do
+						["_quests"] = { 55650 },	-- Only the Best Will Do
+					}),
+					crit(8, {	-- To Mechagon!
+						["_quests"] = { 55651 },	-- To Mechagon!
+					}),
+					crit(9, {	-- Prospectus Bay
+						["_quests"] = { 55652 },	-- Prospectus Bay
+					}),
+					crit(10, {	-- We Come in Peace... and Profit
+						["_quests"] = { 55685 },	-- We Come in Peace... and Profit
+					}),
+					crit(11, {	-- The Resistance Needs YOU!
+						["_quests"] = { 55729 },	-- The Resistance Needs YOU!
+					}),
+					crit(12, {	-- Rescuing the Resistance
+						["_quests"] = { 55730 },	-- Rescuing the Resistance
+					}),
+					crit(13, {	-- My Father's Armies
+						["_quests"] = { 55731 },	-- My Father's Armies
+					}),
+					crit(14, {	-- We Can Fix It
+						["_quests"] = { 55995 },	-- We Can Fix It
+					}),
+					crit(15, {	-- Drill Rig Construction
+						["_quests"] = { 55734 },	-- Drill Rig Construction
+					}),
+					crit(16, {	-- Send My Father a Message
+						["_quests"] = { 55096 },	-- Send My Father a Message
+					}),
+					crit(17, {	-- Welcome to the Resistance
+						["_quests"] = { 55736 },	-- Welcome to the Resistance
+					}),
+					crit(18, {	-- Operation: Mechagon - The Mechoriginator
+						["_quests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
+					}),
 				},
 			}),
 			petbattle(ach(13625, {	-- Mighty Minions of Mechagon
@@ -431,20 +499,48 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				}),
 			})),
 			ach(13708, {	-- Most Minis Wins
-				crit(1),	-- Izira Gearsworn
-				crit(2),	-- Wrenchbot
-				crit(3),	-- Gazlowe
-				crit(4),	-- Overspark
-				crit(5),	-- Prince Erazmin
-				crit(6),	-- Bondo Bigblock
-				crit(7),	-- Cork Stuttguard
-				crit(8),	-- Roadtrogg
-				crit(9),	-- Naeno Megacrash
-				crit(10),	-- Cogstar
-				crit(11),	-- HK-8
-				crit(12),	-- Blastatron
-				crit(13),	-- King Mechagon
-				crit(14),	-- Sapphronetta
+				crit(1, {	-- Izira Gearsworn
+					["provider"] = { "i", 169794 },	-- Azeroth Mini: Izira Gearsworn
+				}),
+				crit(2, {	-- Wrenchbot
+					["provider"] = { "i", 169797 },	-- Azeroth Mini: Wrenchbot
+				}),
+				crit(3, {	-- Gazlowe
+					["provider"] = { "i", 169840 },	-- Azeroth Mini: Gazlowe
+				}),
+				crit(4, {	-- Overspark
+					["provider"] = { "i", 169844 },	-- Azeroth Mini: Overspark
+				}),
+				crit(5, {	-- Prince Erazmin
+					["provider"] = { "i", 169841 },	-- Azeroth Mini: Erazmin
+				}),
+				crit(6, {	-- Bondo Bigblock
+					["provider"] = { "i", 169795 },	-- Azeroth Mini: Bondo Bigblock
+				}),
+				crit(7, {	-- Cork Stuttguard
+					["provider"] = { "i", 169843 },	-- Azeroth Mini: Cork Stuttguard
+				}),
+				crit(8, {	-- Roadtrogg
+					["provider"] = { "i", 169842 },	-- Azeroth Mini: Roadtrogg
+				}),
+				crit(9, {	-- Naeno Megacrash
+					["provider"] = { "i", 169849 },	-- Azeroth Mini: Naeno Megacrash
+				}),
+				crit(10, {	-- Cogstar
+					["provider"] = { "i", 169851 },	-- Azeroth Mini: Cogstar
+				}),
+				crit(11, {	-- HK-8
+					["provider"] = { "i", 169845 },	-- Azeroth Mini: HK-8
+				}),
+				crit(12, {	-- Blastatron
+					["provider"] = { "i", 169852 },	-- Azeroth Mini: Blastatron
+				}),
+				crit(13, {	-- King Mechagon
+					["provider"] = { "i", 169846 },	-- Azeroth Mini: King Mechagon
+				}),
+				crit(14, {	-- Sapphronetta
+					["provider"] = { "i", 169876 },	-- Azeroth Mini: Sapphronetta
+				}),
 			}),
 			ach(13696, {	-- Scrappy's Best Friend
 				["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",

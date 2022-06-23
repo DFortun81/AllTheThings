@@ -5,6 +5,9 @@
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(RARES, {
+			i(168908, {	-- Blueprint: Experimental Adventurer Augment
+				["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
+			}),
 			-- TODO:: See Hidden Quest Triggers.lua for remaining first kill id's needed
 			n(150306, {	-- Drill Rig
 				["description"] = "These rares are only available when the Drill Rig is an active construction project.  Speak to |Cff00991aWaren Gearheart|r |Cffffffff(73.0, 33.5)|r to see which construction projects are available.\r\rEach rare spawn is accompanied by a specific zonewide announcement.  Hover over each rare in the list to see its announcement.",
@@ -107,9 +110,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					}),
 				},
 			}),
-			i(168908, {	-- Blueprint: Experimental Adventurer Augment
-				["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
-			}),
 			n(151934, {	-- Arachnoid Harvester
 				["description"] = "Both versions of Arachnoid Harvester (the current timeline and alternate timeline) drop the same loot and share a daily lockout.  You can use a Personal Time Displacer to travel to the alternate timeline if Chromie is not in Rustbolt.",
 				["questID"] = 55512,
@@ -157,7 +157,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest In Pistons
 					}),
 					i(169392),	-- Bonebiter
-							i(167846),	-- Blueprint: Mechano-Treat
+					i(167846),	-- Blueprint: Mechano-Treat
 				},
 			}),
 			n(152569, {	-- Crazed Trogg
@@ -297,31 +297,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					i(169173),	-- Blueprint: Anti-Gravity Pack
 					i(169382),	-- Lost Robogrip
 					i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-						i(169843, {	-- Azeroth Mini: Cork Stuttguard
-							crit(7, {	-- Cork Stuttguard
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169842, {	-- Azeroth Mini: Roadtrogg
-							crit(8, {	-- Roadtrogg
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169840, {	-- Azeroth Mini: Gazlowe
-							crit(3, {	-- Gazlowe
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169795, {	-- Azeroth Mini: Bondo Bigblock
-							crit(6, {	-- Bondo Bigblock
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
-						i(169849, {	-- Azeroth Mini: Naeno Megacrash
-							crit(9, {	-- Naeno Megacrash
-								["achievementID"] = 13708,	-- Most Minis Wins
-							}),
-						}),
+						i(169843),	-- Azeroth Mini: Cork Stuttguard
+						i(169842),	-- Azeroth Mini: Roadtrogg
+						i(169840),	-- Azeroth Mini: Gazlowe
+						i(169795),	-- Azeroth Mini: Bondo Bigblock
+						i(169849),	-- Azeroth Mini: Naeno Megacrash
 					}),
 				},
 			}),
@@ -419,7 +399,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								i(169852),	-- Azeroth Mini: Blastatron
 								i(169851),	-- Azeroth Mini: Cogstar
 								i(169845),	-- Azeroth Mini: HK-8
-								i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
+								i(169846),	-- Azeroth Mini: King Mechagon
 							}),
 							i(169692),	-- Vinyl: Triumph of Gnomeregan
 						},
@@ -440,46 +420,32 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							i(169879),	-- Melted Irradiated Undercoat (PET!)
 						},
 					}),
-					i(168264, {	-- Recycling Requisition(Green)
+					i(168264, {	-- Recycling Requisition
 						["repeatable"] = true,
 						["questID"] = 55148,
 						["g"] = {
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 							i(167795),	-- Paint Vial: Copper Trim
-							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
+							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+								i(169843),	-- Azeroth Mini: Cork Stuttguard
+								i(169842),	-- Azeroth Mini: Roadtrogg
+								i(169840),	-- Azeroth Mini: Gazlowe
+								i(169795),	-- Azeroth Mini: Bondo Bigblock
+								i(169849),	-- Azeroth Mini: Naeno Megacrash
+							}),
 						},
 					}),
-					i(168266, {	-- Strange Recycling Requisiton(Epic)
+					i(168266, {	-- Strange Recycling Requisiton
 						["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
 						["isDaily"] = true,
 						["g"] = {
 							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-								i(169843, {	-- Azeroth Mini: Cork Stuttguard
-									crit(7, {	-- Cork Stuttguard
-										["achievementID"] = 13708,	-- Most Minis Wins
-									}),
-								}),
-								i(169842, {	-- Azeroth Mini: Roadtrogg
-									crit(8, {	-- Roadtrogg
-										["achievementID"] = 13708,	-- Most Minis Wins
-									}),
-								}),
-								i(169840, {	-- Azeroth Mini: Gazlowe
-									crit(3, {	-- Gazlowe
-										["achievementID"] = 13708,	-- Most Minis Wins
-									}),
-								}),
-								i(169795, {	-- Azeroth Mini: Bondo Bigblock
-									crit(6, {	-- Bondo Bigblock
-										["achievementID"] = 13708,	-- Most Minis Wins
-									}),
-								}),
-								i(169849, {	-- Azeroth Mini: Naeno Megacrash
-									crit(9, {	-- Naeno Megacrash
-										["achievementID"] = 13708,	-- Most Minis Wins
-									}),
-								}),
+								i(169843),	-- Azeroth Mini: Cork Stuttguard
+								i(169842),	-- Azeroth Mini: Roadtrogg
+								i(169840),	-- Azeroth Mini: Gazlowe
+								i(169795),	-- Azeroth Mini: Bondo Bigblock
+								i(169849),	-- Azeroth Mini: Naeno Megacrash
 							}),
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot
