@@ -15075,8 +15075,8 @@ local function SetRowData(self, row, data)
 			-- print("window.doUpdate",data.doUpdate,"=>",data.hash)
 			data.doUpdate = nil;
 			self.doUpdate = true;
-		else
-			data.reSource = nil;
+		-- else
+			-- data.reSource = nil;
 		-- WARNING: DEV ONLY END
 		end
 		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
