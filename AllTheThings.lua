@@ -16817,12 +16817,22 @@ function app:GetDataCache()
 		return group;
 	end
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local allData = setmetatable({}, { __index = function(t, key)
+	local allData = setmetatable({}, {
+		__index = function(t, key)
+			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
 				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
 			if key == "mb_title2" then return t.total == 0 and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "visible" then return true; end
+		end,
+		__newindex = function(t, key, val)
+			-- app.PrintDebug("Top-Root-Set",key,val)
+			if key == "visible" then
+				return;
+			end
+			rawset(t, key, val);
 		end
 	});
 	allData.expanded = true;
@@ -16831,7 +16841,6 @@ function app:GetDataCache()
 	allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 	allData.text = L["TITLE"];
 	allData.description = L["DESCRIPTION"];
-	allData.visible = true;
 	allData.font = "GameFontNormalLarge";
 	allData.progress = 0;
 	allData.total = 0;
