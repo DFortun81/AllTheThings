@@ -68,14 +68,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				}),
 				i(168832),	-- Galvanic Oscillator
 				i(168327),	-- Chain Ignitercoil
-				i(167790, {	-- Paint Vial: Fireball Red
-					["questID"] = 55451,	-- Paint Vial: Fireball Red
-					["g"] = {
-						crit(6, {	-- Fireball Red
-							["achievementID"] = 13513,	-- Available in Eight Colors
-						}),
-					},
-				}),
+				i(167790),	-- Paint Vial: Fireball Red
 				-- Objects
 				o(325659, {	-- Mechanized Chest
 					["questID"] = 55547,

@@ -124,7 +124,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					r(295290),	-- Scrap Grenade
 					r(291524),	-- Scrap Trap
 					r(300122, {["u"]=15}),	-- Scrapmaster's Blowtorch
-					r(298141),	-- Subroutine: Optimization (Might not be collectible)
+					r(298141, {["u"]=15}),	-- Subroutine: Optimization (Might not be collectible)
 					r(291987),	-- Ultrasafe Transporter: Mechagon
 					r(300269),	-- Utility Mechanoclaw
 					r(291788),	-- Vaultbot Key
@@ -133,11 +133,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					q(55534, {	-- Rustbolt Gramophone
 						["provider"] = { "i", 167069 },	-- Rustbolt Gramophone
 						["coord"] = { 71.4, 32.6, MECHAGON },
-						["g"] = {
-							crit(1, {    -- Ode to Tinkertown
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
 					}),
 					q(55535, {	-- The Tipsy Tinkerer
 						["provider"] = { "i", 168047 },	-- Rustbolt Kegerator

@@ -19,14 +19,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
 							i(167042),	-- Blueprint: Scrap Trap
-							i(169691, {    -- Vinyl: Depths of Ulduar
-								["questID"] = 56518, -- Vinyl: Depths of Ulduar
-								["g"] = {
-									crit(5, {    -- Depths of Ulduar
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								},
-							}),
+							i(169691),    -- Vinyl: Depths of Ulduar
 						},
 					}),
 					n(154739, {	-- Caustic Mechaslime
@@ -65,14 +58,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							crit(23, {	-- Gemicide
 								["achievementID"] = 13470,	-- Rest in Pistons
 							}),
-							i(169691, {    -- Vinyl: Depths of Ulduar
-								["questID"] = 56518, -- Vinyl: Depths of Ulduar
-								["g"] = {
-									crit(5, {    -- Depths of Ulduar
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								},
-							}),
+							i(169691),    -- Vinyl: Depths of Ulduar
 						},
 					}),
 					n(154701, {	-- Gorged Gear-Cruncher
@@ -100,14 +86,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								["achievementID"] = 13470,	-- Rest In Pistons
 							}),
 							i(167846),	-- Blueprint: Mechano-Treat
-							i(169691, {	-- Vinyl: Depths of Ulduar
-								["questID"] = 56518, -- Vinyl: Depths of Ulduar
-								["g"] = {
-									crit(5, {    -- Depths of Ulduar
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								},
-							}),
+							i(169691),    -- Vinyl: Depths of Ulduar
 							i(170466),  -- Junkyard Motivator
 						},
 					}),
@@ -154,14 +133,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				},
 				["g"] = {
 					i(167843),	-- Blueprint: Vaultbot Key
-					i(167796, {	-- Paint Vial: Mechagon Gold
-						["questID"] = 55455,	-- Paint Vial: Mechagon Gold
-						["g"] = {
-							crit(3, {	-- Mechagon Gold
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(167796),	-- Paint Vial: Mechagon Gold
 					i(170072),	-- Armored Vaultbot (PET!)
 				},
 			}),
@@ -173,14 +145,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					crit(14, {	-- Boggac Skullbash
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
-					i(169688, {	-- Vinyl: Gnomeragan Forever
-						["questID"] = 56515,
-						["g"] = {
-							crit(2, {    -- Gnomeregan Forever
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
-					}),
+					i(169688),	-- Vinyl: Gnomeragan Forever
 				},
 			}),
 			n(152001, {	-- Bonepicker
@@ -209,25 +174,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
 					i(169674),	-- Green Paint Filled Bladder
-					i(167792, {	-- Paint Vial: Fel Mint Green
-						["questID"] = 55452, -- Paint Vial: Fel Mint Green
-						["g"] = {
-							crit(2, {	-- Fel Mint Green
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(167792),	-- Paint Vial: Fel Mint Green
 					i(169169),	-- Blueprint: Blue Spraybot
 					i(169168),  -- Blueprint: Green Spraybot
 					i(169167),	-- Blueprint: Orange Spraybot
-					i(167793, {  -- Paint Vial: Overload Orange
-						["questID"] = 55457,
-						["g"] = {
-							crit(7, {	-- Overload Orange
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(167793),  -- Paint Vial: Overload Orange
 				},
 			}),
 			n(151569, {	-- Deepwater Maw
@@ -293,14 +244,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
 					i(169379),	-- Snowsoft Nibbler
-					i(167793, {  -- Paint Vial: Overload Orange
-						["questID"] = 55457,
-						["g"] = {
-							crit(7, {	-- Overload Orange
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(167793),  -- Paint Vial: Overload Orange
 				},
 			}),
 			n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
@@ -390,14 +334,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest In Pistons
 					}),
 					i(168490),	-- Blueprint: Protocol Transference Device
-					i(169688, {	-- Vinyl: Gnomeragan Forever
-						["questID"] = 56515,
-						["g"] = {
-							crit(2, {    -- Gnomeregan Forever
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
-					}),
+					i(169688),	-- Vinyl: Gnomeragan Forever
 				},
 			}),
 			n(151672, {	-- Mecharantula
@@ -444,14 +381,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
 					i(170273),	-- Oxidizied Refuse Remover
-					i(167794, {	-- Paint Vial: Lemonade Steel
-						["questID"] = 55454, -- Paint Vial: Lemonade Steel
-						["g"] = {
-							crit(5, {	-- Lemonade Steel
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(167794),	-- Paint Vial: Lemonade Steel
 				},
 			}),
 			n(151702, {	-- Paol Pondwader
@@ -491,14 +421,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								i(169845),	-- Azeroth Mini: HK-8
 								i(169846),	-- Azeroth Mini: King Mechagon *slumber note: this pack dropped from a mechanized chest for me and contained this mini
 							}),
-							i(169692, {    -- Vinyl: Triumph of Gnomeregan
-								["questID"] = 56519,    -- Triumph of Gnomeregan
-								["g"] = {
-									crit(6, {    -- Triumph of Gnomeregan
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								},
-							}),
+							i(169692),	-- Vinyl: Triumph of Gnomeregan
 						},
 					}),
 					i(168395, {	-- Irradiated Box of Assorted Parts
@@ -508,14 +431,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["g"] = {
 							i(168495),	-- Blueprint: Rustbolt Requisitions
 							i(169396),	-- Echoing Oozeling
-							i(169692, {    -- Vinyl: Triumph of Gnomeregan
-								["questID"] = 56519,    -- Triumph of Gnomeregan
-								["g"] = {
-									crit(6, {    -- Triumph of Gnomeregan
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								},
-							}),
+							i(169692),	-- Vinyl: Triumph of Gnomeregan
 						},
 					}),
 					i(169878, {	-- Irradiated Undercoat
@@ -530,14 +446,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["g"] = {
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-							i(167795, {	-- Paint Vial: Copper Trim
-								["questID"] = 55456,	-- Paint Vial: Copper Trim
-								["g"] = {
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
-									}),
-								},
-							}),
+							i(167795),	-- Paint Vial: Copper Trim
 							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 						},
 					}),
@@ -575,19 +484,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-							i(167795, {	-- Paint Vial: Copper Trim
-								["questID"] = 55456,	-- Paint Vial: Copper Trim
-								["g"] = {
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
-									}),
-								},
-							}),
-							i(169689, {	-- Vinyl: Mimiron's Brainstorm
-								crit(3, {	-- Mimiron's Brainstorm
-									["achievementID"] = 13686,    -- Junkyard Melomanic
-								}),
-							}),
+							i(167795),	-- Paint Vial: Copper Trim
+							i(169689),	-- Vinyl: Mimiron's Brainstorm
 						},
 					}),
 				},
@@ -600,14 +498,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					crit(6, {	-- Rumblerocks
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
-					i(168001, {	-- Paint Vial: Big-ol Bronze
-						["questID"] = 55517, -- Paint Vial: Big-ol Bronze
-						["g"] = {
-							crit(1, {	-- Big-ol Bronze
-								["achievementID"] = 13513,	-- Available in Eight Colors
-							}),
-						},
-					}),
+					i(168001),	-- Paint Vial: Big-ol Bronze
 				},
 			}),
 			n(152182, {	-- Rustfeather
@@ -665,30 +556,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13470,	-- Rest in Pistons
 					}),
 					i(168062),	-- Blueprint: Rustbolt Gramophone
-					i(169689, {    -- Vinyl: Mimiron's Brainstorm
-						["questID"] = 56516,    -- Vinyl: Mimiron's Brainstorm
-						["g"] = {
-							crit(3, {    -- Mimiron's Brainstorm
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
-					}),
-					i(169692, {    -- Vinyl: Triumph of Gnomeregan
-						["questID"] = 56519,    -- Triumph of Gnomeregan
-						["g"] = {
-							crit(6, {    -- Triumph of Gnomeregan
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
-					}),
-					i(169690, {    -- Vinyl: Battle of Gnomeregan
-						["questID"] = 56517,    -- Vinyl: Battle of Gnomeregan
-						["g"] = {
-							crit(4, {    -- Battle of Gnomeregan
-								["achievementID"] = 13686,    -- Junkyard Melomanic
-							}),
-						},
-					}),
+					i(169689),	-- Vinyl: Mimiron's Brainstorm
+					i(169692),	-- Vinyl: Triumph of Gnomeregan
+					i(169690),	-- Vinyl: Battle of Gnomeregan
 				},
 			}),
 			n(154225, {	-- The Rusty Prince

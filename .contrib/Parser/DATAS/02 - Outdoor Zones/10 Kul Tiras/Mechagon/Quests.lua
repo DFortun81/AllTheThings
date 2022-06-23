@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(QUESTS, {
 			--[[
@@ -49,11 +49,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 55373,	-- Knock 'Em Out The Box
-				["g"] = {
-					crit(5, {	-- A Little Leg Work
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56557, {	-- A Little Side Action
 				["provider"] = { "n", 155355 },	-- Usha Eyegouge
@@ -271,14 +266,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 							n(152923, {	-- Data Anomaly <Razorclaw the Butcher>
@@ -291,14 +279,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 						},
@@ -317,14 +298,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 							n(152922, {	-- Data Anomaly <Captain Kromcrush>
@@ -335,14 +309,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 						},
@@ -359,14 +326,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 							n(152983, {	-- Data Anomaly <Crowd Pummeler 9-60>
@@ -377,14 +337,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 						},
@@ -402,14 +355,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
 									i(168631),	-- Metal Detector
-									i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-										["questID"] = 56517,
-										["g"] = {
-											crit(4, {	-- Battle of Gnomeregan
-												["achievementID"] = 13686,	-- Junkyard Melomaniac
-											}),
-										},
-									}),
+									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 						},
@@ -432,9 +378,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55753,	-- Knock His Bot Off
 				["g"] = {
-					crit(12, {	-- Drive it Away Today
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
 					i(168827),	-- Scrapforged Mechaspider (MOUNT!)
 				},
 			}),
@@ -442,11 +385,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 54083,	-- Grease The Wheels
-				["g"] = {
-					crit(9, {	-- Emission Free
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(55213, {	-- Energy Cells for Everyone
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
@@ -457,11 +395,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 54922,	-- The Nuts and Bolts of it
-				["g"] = {
-					crit(7, {	-- Factory Refurbished
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(55707, {	-- First One's Free
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
@@ -481,11 +414,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 56168,	-- Factory Refurbished
-				["g"] = {
-					crit(8, {	-- Grease the Wheels
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56380, {	-- Grounded -- also popped 56330
 				["provider"] = { "n", 154906 },	-- Brian Pitchspark
@@ -516,20 +444,12 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 54929,	-- Ready to Rumble
-				["g"] = {
-					crit(4, {	-- Knock 'Em Out The Box
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(55753, {	-- Knock His Bot Off
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55696,	-- Test Drive
 				["g"] = {
-					crit(11, {	-- Knock His Bot Off
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
 					i(168305),	-- Powercore Schematics
 				},
 			}),
@@ -722,11 +642,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 54086,	-- Right Bot for the Job
-				["g"] = {
-					crit(3, {	-- Ready to Rumble
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56326, {	-- Ravenous Rescue
 				["provider"] = { "n", 154568 },	-- Pedram Mechanotrax
@@ -783,14 +698,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
-									},
-								}),
+								i(167795),	-- Paint Vial: Copper Trim
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
@@ -824,19 +732,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								i(169175),	-- Blueprint: Annoy-o-Tron Gang
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
-									},
-								}),
-								i(169689, {	-- Vinyl: Mimiron's Brainstorm
-									crit(3, {	-- Mimiron's Brainstorm
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								}),
+								i(167795),	-- Paint Vial: Copper Trim
+								i(169689),	-- Vinyl: Mimiron's Brainstorm
 							}),
 						},
 					}),
@@ -854,11 +751,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							i(168264, {	-- Recycling Requisition(Green)
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									crit(4, {	-- Copper Trim
-										["achievementID"] = 13513,	-- Available in Eight Colors
-									}),
-								}),
+								i(167795),	-- Paint Vial: Copper Trim
 								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							}),
 							i(168266, {	-- Strange Recycling Requisiton(Epic)
@@ -892,19 +785,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 								i(169175),	-- Blueprint: Annoy-o-Tron Gang
 								i(169167),	-- Blueprint: Orange Spraybot
 								i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
-								i(167795, {	-- Paint Vial: Copper Trim
-									["questID"] = 55456,	-- Paint Vial: Copper Trim
-									["g"] = {
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
-									},
-								}),
-								i(169689, {	-- Vinyl: Mimiron's Brainstorm
-									crit(3, {	-- Mimiron's Brainstorm
-										["achievementID"] = 13686,    -- Junkyard Melomanic
-									}),
-								}),
+								i(167795),	-- Paint Vial: Copper Trim
+								i(169689),	-- Vinyl: Mimiron's Brainstorm
 							}),
 						},
 					}),
@@ -929,11 +811,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 55608,	-- Shop Project
-				["g"] = {
-					crit(2, {	-- Right Bot for the Job
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56747, {	-- Rustbolt Requisitions: Akunda's Bite (A)
 				["isDaily"] = true,
@@ -1121,11 +998,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
-				["g"] = {
-					crit(1, {	-- Shop Project
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56740, {	-- S.P.A.R.E. Crates
 				["provider"] = { "n", 152295 },	-- Pascal
@@ -1167,11 +1039,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 56175,	-- Emission Free
-				["g"] = {
-					crit(10, {	-- Test Drive
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(56306, {	-- The Family Jewels
 				["provider"] = { "n", 154511 },	-- Sneaky Pete
@@ -1199,15 +1066,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 63.2, 43.0, MECHAGON },
 				["isDaily"] = true,
 			}),
-			q(54922, {	-- The Nuts and Bolts of it
+			q(54922, {	-- The Nuts and Bolts of It
 				["provider"] = { "n", 150573 },	-- 2r Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55697,	-- A Little Leg Work
-				["g"] = {
-					crit(6, {	-- The Nuts and Bolts of It
-						["achievementID"] = 13791,	-- Making the Mount
-					}),
-				},
 			}),
 			q(55816, {	-- The Other Place
 				["provider"] = { "n", 153993 },	-- Chromie
@@ -1275,9 +1137,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["achievementID"] = 13556,	-- Outside Influences
 					}),
 					i(169838, {	-- Azeroth Mini: Starter Pack
-						i(169796, {	-- Azeroth Mini Collection: Mechagon (TOY!)
-							["questID"] = 56426,
-						}),
+						i(169796),	-- Azeroth Mini Collection: Mechagon (TOY!)
 						i(169841, {	-- Azeroth Mini: Erazmin
 							crit(5, {	-- Prince Erazmin
 								["achievementID"] = 13708,	-- Most Minis Wins
@@ -1385,7 +1245,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
 			}),
 		}),
-		-- Blueprint turn ins
+		-- Blueprints
 		n(QUESTS, {
 			q(55030, {	-- Blueprint: Scrap Trap
 				["provider"] = { "i", 167042 },	-- Blueprint: Scrap Trap
@@ -1486,109 +1346,155 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 			q(55070, {	-- Blueprint: Personal Time Displacer
 				["provider"] = { "i", 168491 },	-- Blueprint: Personal Time Displacer
 			}),
+			q(55080, {	-- Blueprint: Perfectly Timed Differential
+				["provider"] = { "i", 169172 },	-- Blueprint: Perfectly Timed Differential
+			}),
+		}),
+		-- Paint Vials
+		n(QUESTS, {
+			q(55456, {	-- Paint Vial: Copper Trim
+				["provider"] = { "i", 167795 },	-- Paint Vial: Copper Trim
+			}),
+			q(55455, {	-- Paint Vial: Mechagon Gold
+				["provider"] = { "i", 167796 },	-- Paint Vial: Mechagon Gold
+			}),
+			q(55452, {	-- Paint Vial: Fel Mint Green
+				["provider"] = { "i", 167792 },	-- Paint Vial: Fel Mint Green
+			}),
+			q(55457, {	-- Paint Vial: Overload Orange
+				["provider"] = { "i", 167793 },	-- Paint Vial: Overload Orange
+			}),
+			q(55454, {	-- Paint Vial: Lemonade Steel
+				["provider"] = { "i", 167794 },	-- Paint Vial: Lemonade Steel
+			}),
+			q(55517, {	-- Paint Vial: Big-ol Bronze
+				["provider"] = { "i", 168001 },	-- Paint Vial: Big-ol Bronze
+			}),
+			q(55451, {	-- Paint Vial: Fireball Red
+				["provider"] = { "i", 167790 },	-- Paint Vial: Fireball Red
+			}),
+		}),
+		-- Vinyls
+		n(QUESTS, {
+			q(56516, {	-- Vinyl: Mimiron's Brainstorm
+				["provider"] = { "i", 169689 },	-- Vinyl: Mimiron's Brainstorm
+			}),
+			q(56517, {	-- Vinyl: Battle of Gnomeregan
+				["provider"] = { "i", 169690 },	-- Vinyl: Battle of Gnomeregan
+			}),
+			q(56515, {	-- Vinyl: Gnomeragan Forever
+				["provider"] = { "i", 169688 },	-- Vinyl: Gnomeragan Forever
+			}),
+			q(56518, {	-- Vinyl: Depths of Ulduar
+				["provider"] = { "i", 169691 },	-- Vinyl: Depths of Ulduar
+			}),
+			q(56519, {	-- Vinyl: Triumph of Gnomeregan
+				["provider"] = { "i", 169692 },	-- Vinyl: Triumph of Gnomeregan
+			}),
 		}),
 	}),
 })));
 
-root("HiddenQuestTriggers", {
-	m(KUL_TIRAS, {
-		m(MECHAGON, {	-- Mechagon
-			n(QUESTS, {
-				q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
-				q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
-				q(56662),	-- Triggered when completed "Real Ultimate Power"
-				--q(56252),	-- Paint Bottle:Electric blue?
-				q(55453),	-- happened after i handed in copper trim, which was also last item for my mecha-done achievement
-				q(56238),	-- Triggered in the alternative world
-				q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
-				q(56435),	-- Playing Ode to Tinkertown on the Gramophone
-				q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
-				--q(56742),	-- Blueprint: Black Market Radio?
-				q(56360, {["repeatable"]=true}),	-- triggered when completing 'Other Interests'
-				q(56743),	-- triggered when completing 'Other Interests'
-				--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
-				q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).
-				q(55902),	-- Building "Supercollider" (Spell ID: 292352) during "Toys for Destruction" (Quest ID: 54090)
-				q(56054),	-- triggered when turning in 55211 'Recharging Rustbolt' on Gnome Warrior
-			}),
+root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
+	m(MECHAGON, {
+		n(QUESTS, {
+			-- q(56426),	-- learning Azeroth Mini Collection: Mechagon (?)
+			q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
+			q(56427),	-- Popped up when looting and accepting Cracked Numeric Cylinder for the Discs of Norgannon summoning function
+			q(56662),	-- Triggered when completed "Real Ultimate Power"
+			--q(56252),	-- Paint Bottle:Electric blue?
+			q(55453),	-- happened after i handed in copper trim, which was also last item for my mecha-done achievement
+			q(56238),	-- Triggered in the alternative world
+			q(56208),	-- HQT triggered when completing 55103 (Ideas Can Come from Anywhere)
+			q(56435),	-- Playing Ode to Tinkertown on the Gramophone
+			q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
+			--q(56742),	-- Blueprint: Black Market Radio?
+			q(56360, {["repeatable"]=true}),	-- triggered when completing 'Other Interests'
+			q(56743),	-- triggered when completing 'Other Interests'
+			--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
+			q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).
+			q(55902),	-- Building "Supercollider" (Spell ID: 292352) during "Toys for Destruction" (Quest ID: 54090)
+			q(56054),	-- triggered when turning in 55211 'Recharging Rustbolt' on Gnome Warrior
 		}),
-	}),
-});
-
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(54084),	-- [DNT]
-		q(56191, {	-- Blueprint: TK32[DNT]
-			i(169177),	-- Blueprint: TK32[DNT]
-		}),
-		q(56192, {	-- Blueprint: TK33[DNT]
-			i(169178),	-- Blueprint: TK33[DNT]
-		}),
-		q(56193, {	-- Blueprint: TK34[DNT]
-			i(169179),	-- Blueprint: TK34[DNT]
-		}),
-		q(56194, {	-- Blueprint: TK35[DNT]
-			i(169180),	-- Blueprint: TK35[DNT]
-		}),
-		q(56195, {	-- Blueprint: TK36[DNT]
-			i(169181),	-- Blueprint: TK36[DNT]
-		}),
-		q(56196, {	-- Blueprint: TK37[DNT]
-			i(169182),	-- Blueprint: TK37[DNT]
-		}),
-		q(56197, {	-- Blueprint: TK38[DNT]
-			i(169183),	-- Blueprint: TK38[DNT]
-		}),
-		q(56198, {	-- Blueprint: TK39[DNT]
-			i(169184),	-- Blueprint: TK39[DNT]
-		}),
-		q(56199, {	-- Blueprint: TK40[DNT]
-			i(169185),	-- Blueprint: TK40[DNT]
-		}),
-		q(56200, {	-- Blueprint: TK41[DNT]
-			i(169186),	-- Blueprint: TK41[DNT]
-		}),
-		q(56201, {	-- Blueprint: TK42[DNT]
-			i(169187),	-- Blueprint: TK42[DNT]
-		}),
-		q(56202, {	-- Blueprint: TK43[DNT]
-			i(169188),	-- Blueprint: TK43[DNT]
-		}),
-		q(56203, {	-- Blueprint: TK44[DNT]
-			i(169189),	-- Blueprint: TK44[DNT]
-		}),
-		q(55742),	-- Bundle of Corroded Parts
-		q(56071),	-- De-Synced Vibro Blade
-		q(56072),	-- De-Synced Vibro Blade
-		q(55669, {	-- Encrypted Radio Receiver TBD
-			i(168221),	-- Encrypted Raido Receiver
-		}),
-		q(56097),	-- Grime-Coated Disc
-		q(55605),	-- NOT USED
-		q(55099),	-- TBD NOT USED
-		q(55100),	-- TBD NOT USED
-		q(55738),	-- TBD NOT USED
-		q(55740),	-- TBD NOT USED
-		q(55319),	-- Tonk the Terrible
-		q(55693),	-- UNusued
-		q(55320),	-- Vehicle: TK02[DNT]
-		q(55321),	-- Vehicle: TK03[DNT]
-		q(55322),	-- Vehicle: TK04[DNT]
-		q(55323),	-- Vehicle: TK05[DNT]
-		q(55324),	-- Vehicle: TK06[DNT]
-		q(55325),	-- Vehicle: TK07[DNT]
-		q(55326),	-- Vehicle: TK08[DNT]
-		q(55327),	-- Vehicle: TK09[DNT]
-		q(55328),	-- Vehicle: TK10[DNT]
-		q(55329),	-- Vehicle: TK11[DNT]
-		q(55330),	-- Vehicle: TK12[DNT]
-		q(55331),	-- Vehicle: TK13[DNT]
-		q(55332),	-- Vehicle: TK14[DNT]
-		q(55333),	-- Vehicle: TK15[DNT]
-		q(55334),	-- Vehicle: TK16[DNT]
-		q(55335),	-- Vehicle: TK17[DNT]
-		q(55336),	-- Vehicle: TK18[DNT]
-		q(55337),	-- Vehicle: TK19[DNT]
-		q(55338),	-- Vehicle: TK20[DNT]
 	}),
 }));
+
+root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, m(KUL_TIRAS, {
+	m(MECHAGON, {
+		n(QUESTS, {
+			q(54084),	-- [DNT]
+			q(56191, {	-- Blueprint: TK32[DNT]
+				i(169177),	-- Blueprint: TK32[DNT]
+			}),
+			q(56192, {	-- Blueprint: TK33[DNT]
+				i(169178),	-- Blueprint: TK33[DNT]
+			}),
+			q(56193, {	-- Blueprint: TK34[DNT]
+				i(169179),	-- Blueprint: TK34[DNT]
+			}),
+			q(56194, {	-- Blueprint: TK35[DNT]
+				i(169180),	-- Blueprint: TK35[DNT]
+			}),
+			q(56195, {	-- Blueprint: TK36[DNT]
+				i(169181),	-- Blueprint: TK36[DNT]
+			}),
+			q(56196, {	-- Blueprint: TK37[DNT]
+				i(169182),	-- Blueprint: TK37[DNT]
+			}),
+			q(56197, {	-- Blueprint: TK38[DNT]
+				i(169183),	-- Blueprint: TK38[DNT]
+			}),
+			q(56198, {	-- Blueprint: TK39[DNT]
+				i(169184),	-- Blueprint: TK39[DNT]
+			}),
+			q(56199, {	-- Blueprint: TK40[DNT]
+				i(169185),	-- Blueprint: TK40[DNT]
+			}),
+			q(56200, {	-- Blueprint: TK41[DNT]
+				i(169186),	-- Blueprint: TK41[DNT]
+			}),
+			q(56201, {	-- Blueprint: TK42[DNT]
+				i(169187),	-- Blueprint: TK42[DNT]
+			}),
+			q(56202, {	-- Blueprint: TK43[DNT]
+				i(169188),	-- Blueprint: TK43[DNT]
+			}),
+			q(56203, {	-- Blueprint: TK44[DNT]
+				i(169189),	-- Blueprint: TK44[DNT]
+			}),
+			q(55742),	-- Bundle of Corroded Parts
+			q(56071),	-- De-Synced Vibro Blade
+			q(56072),	-- De-Synced Vibro Blade
+			q(55669, {	-- Encrypted Radio Receiver TBD
+				i(168221),	-- Encrypted Raido Receiver
+			}),
+			q(56097),	-- Grime-Coated Disc
+			q(55605),	-- NOT USED
+			q(55099),	-- TBD NOT USED
+			q(55100),	-- TBD NOT USED
+			q(55738),	-- TBD NOT USED
+			q(55740),	-- TBD NOT USED
+			q(55319),	-- Tonk the Terrible
+			q(55693),	-- UNusued
+			q(55320),	-- Vehicle: TK02[DNT]
+			q(55321),	-- Vehicle: TK03[DNT]
+			q(55322),	-- Vehicle: TK04[DNT]
+			q(55323),	-- Vehicle: TK05[DNT]
+			q(55324),	-- Vehicle: TK06[DNT]
+			q(55325),	-- Vehicle: TK07[DNT]
+			q(55326),	-- Vehicle: TK08[DNT]
+			q(55327),	-- Vehicle: TK09[DNT]
+			q(55328),	-- Vehicle: TK10[DNT]
+			q(55329),	-- Vehicle: TK11[DNT]
+			q(55330),	-- Vehicle: TK12[DNT]
+			q(55331),	-- Vehicle: TK13[DNT]
+			q(55332),	-- Vehicle: TK14[DNT]
+			q(55333),	-- Vehicle: TK15[DNT]
+			q(55334),	-- Vehicle: TK16[DNT]
+			q(55335),	-- Vehicle: TK17[DNT]
+			q(55336),	-- Vehicle: TK18[DNT]
+			q(55337),	-- Vehicle: TK19[DNT]
+			q(55338),	-- Vehicle: TK20[DNT]
+		}),
+	}),
+})));
