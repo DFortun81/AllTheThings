@@ -1680,7 +1680,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 424,	-- Redridge Poacher
 				}),
 				i(2798, {	-- Rethban Ore
-					["timeline"] = { "removed 4.0.3" },
+				--	["timeline"] = { "removed 4.0.3" }, -- Not removed based on Discord Report 23.06.2022
 					["cr"] = 580,	-- Redridge Drudger
 				}),
 				i(1462, {	-- Ring of the Shadow
