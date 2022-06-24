@@ -389,12 +389,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						}),
 						o_repeated({	-- Mawsworn Cache
 							-- Contains
+							i(187240),	-- Field Warden's Watchful Eye
+							i(187026),	-- Field Warden's Torture Kit
+							i(187023),	-- Instructor's Mantle
 							i(186600),	-- Quartered Ancient Ring
 							i(187011),	-- Mawsworn Enforcer's Shoulder-Spires
+							i(187021),	-- Punisher's Spiked Mantle
 							i(187015),	-- Soulfeeder's Shoulderguards
-							i(187026),	-- Field Warden's Torture Kit
-							i(187240),	-- Field Warden's Watchful Eye
-							i(187023),	-- Instructor's Mantle
 							-- Objects
 							o(369141, {	-- Mawsworn Cache
 								["questID"] = 64209,

@@ -211,6 +211,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				i(187240),	-- Field Warden's Watchful Eye
 				i(187023),	-- Instructor's Mantle
 				i(187013),	-- Interceptor's Pauldrons
+				i(187011),	-- Mawsworn Enforcer's Shoulder-Spires
 				i(187022),	-- Mawsworn Lieutenant's Shoulderguards
 				i(187020),	-- Necrobinder's Shoulderpads
 				i(187024),	-- Necromancer's Mantle
