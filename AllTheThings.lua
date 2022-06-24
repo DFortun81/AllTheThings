@@ -7599,9 +7599,9 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	local data = QuestsToPopulate[questID];
 	if data then
 		QuestsToPopulate[questID] = nil;
-		local retries = data.retries or 1;
-		app.TryPopulateQuestRewards(data, retries > 10);
+		local retries = data.retries or 0;
 		data.retries = retries + 1;
+		app.TryPopulateQuestRewards(data, retries > 10);
 	end
 end
 -- Used as a callback to process Requested Quests, since we may need the frame to complete so that the initial quest groups are built properly
@@ -7978,6 +7978,7 @@ app.TryPopulateQuestRewards = function(questObject, force)
 		return;
 	end
 
+	questObject.retries = nil;
 	-- if not HaveQuestRewardData(questID) then
 	-- 	app.PrintDebug("TPQR",questID,"Data",HaveQuestData(questID),"RewardData",HaveQuestRewardData(questID),GetNumQuestLogRewards(questID),GetNumQuestLogRewardCurrencies(questID))
 	-- end
