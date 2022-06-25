@@ -883,7 +883,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187548),	-- Consumed Weapon Essence
 				i(186971),	-- Feeder's Hand
 				i(186203),	-- Glowing Devourer Stomach
-				i(187533),	-- Greater Phial of Serenity
 				i(187434),	-- Lightseed Sapling
 				i(187432),	-- Magifocus Heartwood
 				i(186715),	-- Research Report: Improved Alloys

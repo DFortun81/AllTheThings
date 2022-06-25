@@ -13,6 +13,7 @@ i(183726);	-- Gratitude of the Liberated
 i(181796);	-- Emergency Supplies Key
 i(190172);	-- Title Reward: Gauntlet Runner
 i(184412);	-- Title Reward: Spirestalker
+i(187533);	-- Greater Phial of Serenity (via maw assault)
 
 i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
 
