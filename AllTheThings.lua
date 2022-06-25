@@ -9358,7 +9358,7 @@ local function CacheInfo(t, field)
 	local specc_decimal = 1000 * (id - classID);
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
-		local text = select(2, GetSpecializationInfoForSpecID(specc));
+		local _, text, _, icon = GetSpecializationInfoForSpecID(specc);
 		--[[
 		if t.mapID then
 			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
@@ -9367,9 +9367,9 @@ local function CacheInfo(t, field)
 		end
 		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
-		rawset(t, "text", text);
+		-- rawset(t, "text", text);
 		_t.text = text;
-		_t.icon = select(4, GetSpecializationInfoForSpecID(specc));
+		_t.icon = icon;
 	else
 		local text = GetClassInfo(t.classID);
 		--[[
@@ -9380,7 +9380,7 @@ local function CacheInfo(t, field)
 		end
 		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
-		rawset(t, "text", text);
+		-- rawset(t, "text", text);
 		_t.text = text;
 		_t.icon = classIcons[t.classID]
 	end
@@ -9406,15 +9406,15 @@ local fields = {
 		-- return classIcons[t.classID];
 	end,
 	["c"] = function(t)
-		local c = { t.classID };
+		local c = { math_floor(t.classID) };
 		rawset(t, "c", c);
 		return c;
 	end,
 	["nmc"] = function(t)
-		return t.classID ~= app.ClassIndex;
+		return math_floor(t.classID) ~= app.ClassIndex;
 	end,
 	["classColors"] = function(t)
-		return RAID_CLASS_COLORS[select(2, GetClassInfo(t.classID))];
+		return RAID_CLASS_COLORS[select(2, GetClassInfo(math_floor(t.classID)))];
 	end,
 };
 app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
