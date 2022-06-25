@@ -1084,7 +1084,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 39.0, 84.2, THE_EXODAR },	-- Baatun
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
 				}),
 				q(28262, {	-- Meet with Lord Tony Romano

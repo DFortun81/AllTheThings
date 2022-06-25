@@ -605,7 +605,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coords"] = {
 						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
@@ -972,7 +972,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coords"] = {
 						{ 43.6, 78.4, THE_EXODAR },	-- Baatun
 						{ 43.6, 78.4, DARNASSUS },	-- Rukua
-						{ 51.0, 26.2, IRONFORGE },	-- Valgar Highforge
+						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PALADIN },
