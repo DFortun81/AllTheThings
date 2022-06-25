@@ -5489,6 +5489,9 @@ local _cache;
 (function()
 local currentMaps = {};
 local currentInstance;
+local delayedRawSets = {};
+local wipe, type =
+	  wipe, type;
 local fieldCache_g,fieldCache_f, fieldConverters;
 local function CacheField(group, field, value)
 	fieldCache_g = rawget(fieldCache, field);
@@ -5555,7 +5558,8 @@ local cacheMapID = function(group, mapID, coords)
 		currentMaps[mapID] = group;
 		CacheField(group, "mapID", mapID);
 	elseif not coords then
-		print("multi-nested map",mapID,group.key,group.key and group[group.key]);
+		local mapgroup = currentMaps[mapID];
+		print("Multi-nested map",mapID,"for",group.key,group.key and group[group.key],"under",mapgroup.key,mapgroup.key and mapgroup[mapgroup.key]);
 	end
 end
 local cacheObjectID = function(group, objectID)
@@ -5620,7 +5624,8 @@ fieldConverters = {
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
-			local modItemID = group.modItemID;
+			-- pulling .modItemID directly will cause a rawset on the group and break iteration while caching
+			local modItemID = GetGroupItemIDWithModID(group);
 			if (modItemID or value) ~= value then
 				CacheField(group, "itemID", modItemID);
 			end
@@ -5739,17 +5744,17 @@ fieldConverters = {
 	end,
 	["c"] = function(group, value)
 		if not containsValue(value, app.ClassIndex) then
-			rawset(group, "nmc", true); -- "Not My Class"
+			delayedRawSets["nmc"] = true; -- "Not My Class"
 		end
 	end,
 	["r"] = function(group, value)
 		if value ~= app.FactionID then
-			rawset(group, "nmr", true);	-- "Not My Race"
+			delayedRawSets["nmr"] = true; -- "Not My Race"
 		end
 	end,
 	["races"] = function(group, value)
 		if not containsValue(value, app.RaceIndex) then
-			rawset(group, "nmr", true);	-- "Not My Race"
+			delayedRawSets["nmr"] = true; -- "Not My Race"
 		end
 	end,
 };
@@ -5775,34 +5780,31 @@ local mapKeyUncachers = {
 	end,
 };
 CacheFields = function(group)
-	-- apparently any 'rawset' on group will break the pairs loop on the group, so we need to copy all the keys first
-	local keys, n, mapKeys, value, hasG = {}, 1;
-	for k,_ in pairs(group) do
-		if k == "g" then
-			hasG = true;
-		else
-			keys[n] = k;
-			n = n + 1;
-		end
-	end
+	local mapKeys;
+	local hasG = rawget(group, "g");
 	-- track if this group is a 'real' instance (instanceID + mapID/maps)
 	if not currentInstance and group.key == "instanceID" and (group.mapID or group.maps) then
 		currentInstance = group;
 	end
-	for _,k in ipairs(keys) do
+	-- cache any matching converter fields within the group
+	for k,value in pairs(group) do
 		_cache = rawget(fieldConverters, k);
 		if _cache then
-			value = rawget(group, k);
 			_cache(group, value);
 			if rawget(mapKeyUncachers, k) then
-				if not mapKeys then mapKeys = {}; end
-				mapKeys[k] = value;
+				if mapKeys then mapKeys[k] = value;
+				else mapKeys = { [k] = value }; end
 			end
 		end
 	end
+	-- any delayed rawsets following the iteration across the group
+	for k,value in pairs(delayedRawSets) do
+		rawset(group, k, value);
+	end
+	wipe(delayedRawSets);
 	-- do sub-groups last
 	if hasG then
-		for _,subgroup in ipairs(rawget(group, "g")) do
+		for _,subgroup in ipairs(hasG) do
 			CacheFields(subgroup);
 		end
 	end
@@ -5819,6 +5821,7 @@ CacheFields = function(group)
 end
 app.CacheFields = CacheFields;
 end)();
+
 local function SearchForFieldRecursively(group, field, value)
 	if group.g then
 		-- Go through the sub groups and determine if any of them have a response.
