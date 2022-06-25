@@ -472,7 +472,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["maps"] = { 731 },	-- Neltharion's Lair
 					}),
 					q(41772, {	-- Ascendant of Flames
-						["sourceQuests"] = { 42208 },	-- Return to the Firelands
+						["sourceQuests"] = { 
+							42208,	-- Return to the Firelands
+							42990,	-- Neltharion's Lair: The Earthen Amulet
+						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
 					}),
