@@ -247,8 +247,8 @@ root("Professions", prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY },
 			r(343679),	-- Crafter's Mark I
 			r(343678),	-- Crafter's Mark II
 			r(343677, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark III
-			r(343676, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark of the Chained Isle
 			r(359666, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark IV
+			r(343676, {["timeline"] = { "added 9.1.0" }}),	-- Crafter's Mark of the Chained Isle
 			r(359673, {["timeline"] = { "added 9.2.0" }}),	-- Crafter's Mark of the First Ones
 			r(360014, {["timeline"] = { "added 9.2.0" }}),	-- Infusion: Corpse Purification
 			r(343675),	-- Novice Crafter's Mark

@@ -1662,60 +1662,60 @@ root("HiddenQuestTriggers", {
 	q(61023),	-- Kalisthene | Loyalty - CONFIRMED
 
 	-- WISDOM DIFFICULTY KILL
-	q(61024),	-- Azaruux | Wisdom
-	q(61025),	-- Athanos | Wisdom
-	q(61026),	-- Mad Mortimer | Wisdom
-	q(61027),	-- Thran'tiok | Wisdom
-	q(61028),	-- Splinterbark | Wisdom
-	q(61029),	-- Craven Corinth | Wisdom
-	q(61030),	-- Nuuminuuru | Wisdom
-	q(61031),	-- Alderyn and Myn'ir | Wisdom
-	q(61032),	-- Echthra | Wisdom
-	q(61033),	-- Kalisthene | Wisdom
+	q(61024),	-- Azaruux | Wisdom - CONFIRMED
+	q(61025),	-- Athanos | Wisdom - CONFIRMED
+	q(61026),	-- Mad Mortimer | Wisdom - CONFIRMED
+	q(61027),	-- Thran'tiok | Wisdom - CONFIRMED
+	q(61028),	-- Splinterbark | Wisdom - CONFIRMED
+	q(61029),	-- Craven Corinth | Wisdom - CONFIRMED
+	q(61030),	-- Nuuminuuru | Wisdom - CONFIRMED
+	q(61031),	-- Alderyn and Myn'ir | Wisdom - CONFIRMED
+	q(61032),	-- Echthra | Wisdom - CONFIRMED
+	q(61033),	-- Kalisthene | Wisdom - CONFIRMED
 
 	-- HUMILITY DIFFICULTY KILL
-	q(63102),	-- Kalisthene | Humility | Pelagos
+	q(63102),	-- Kalisthene | Humility | Pelagos - CONFIRMED
 	q(63103),	-- Kalisthene | Humility | Kleia
 	q(63104),	-- Kalisthene | Humility | Mikanikos
-	q(63105),	-- Echthra | Humility | Pelagos
+	q(63105),	-- Echthra | Humility | Pelagos - CONFIRMED
 	q(63106),	-- Echthra | Humility | Kleia
 	q(63107),	-- Echthra | Humility | Mikanikos
-	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos
+	q(63108),	-- Alderyn and Myn'ir| Humility | Pelagos - CONFIRMED
 	q(63109),	-- Alderyn and Myn'ir| Humility | Kleia
 	q(63110),	-- Alderyn and Myn'ir| Humility | Mikanikos
-	q(63111),	-- Nuuminuuru | Humility | Pelagos
+	q(63111),	-- Nuuminuuru | Humility | Pelagos - CONFIRMED
 	q(63112),	-- Nuuminuuru | Humility | Kleia
 	q(63113),	-- Nuuminuuru | Humility | Mikanikos
-	q(63114),	-- Craven Corinth | Humility | Pelagos
+	q(63114),	-- Craven Corinth | Humility | Pelagos - CONFIRMED
 	q(63115),	-- Craven Corinth | Humility | Kleia
 	q(63116),	-- Craven Corinth | Humility | Mikanikos
-	q(63117),	-- Splinterbark | Humility | Pelagos
+	q(63117),	-- Splinterbark | Humility | Pelagos - CONFIRMED
 	q(63118),	-- Splinterbark | Humility | Kleia
 	q(63119),	-- Splinterbark | Humility | Mikanikos
-	q(63120),	-- Thran'tiok | Humility | Pelagos
+	q(63120),	-- Thran'tiok | Humility | Pelagos - CONFIRMED
 	q(63121),	-- Thran'tiok | Humility | Kleia
 	q(63122),	-- Thran'tiok | Humility | Mikanikos
-	q(63123),	-- Mad Mortimer | Humility | Pelagos
+	q(63123),	-- Mad Mortimer | Humility | Pelagos - CONFIRMED
 	q(63124),	-- Mad Mortimer | Humility | Kleia
 	q(63125),	-- Mad Mortimer | Humility | Mikanikos
-	q(63126),	-- Athanos | Humility | Pelagos
+	q(63126),	-- Athanos | Humility | Pelagos - CONFIRMED
 	q(63127),	-- Athanos | Humility | Kleia
 	q(63128),	-- Athanos | Humility | Mikanikos
-	q(63129),	-- Azaruux | Humility | Pelagos
+	q(63129),	-- Azaruux | Humility | Pelagos - CONFIRMED
 	q(63130),	-- Azaruux | Humility | Kleia
 	q(63131),	-- Azaruux | Humility | Mikanikos
 
-	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
-	q(61034),	-- Azaruux | Humility | no charms | no active braziers
-	q(61035),	-- Arthanos | Humility | no charms | no active braziers
-	q(61036),	-- Mad Mortimer | Humility | no charms | no active braziers
-	q(61037),	-- Thran'tiok | Humility | no charms | no active braziers
-	q(61038),	-- Splinterbark | Humility | no charms | no active braziers
-	q(61039),	-- Craven Corinth | Humility | no charms | no active braziers
-	q(61040),	-- Nuuminuuru | Humility | no charms | no active braziers.
-	q(61041),	-- Alderyn and Myn'ir | Humility | no charms | no active braziers
-	q(61042),	-- Echthra | Humility | no charms | no active braziers
-	q(61043),	-- Kalisthene | Humility | no charms | no active braziers
+	-- HUMILITY DIFFICULTY NO CHARMS
+	q(61034),	-- Azaruux | Humility | no charms - CONFIRMED
+	q(61035),	-- Arthanos | Humility | no charms - CONFIRMED
+	q(61036),	-- Mad Mortimer | Humility | - CONFIRMED
+	q(61037),	-- Thran'tiok | Humility | no charms - CONFIRMED
+	q(61038),	-- Splinterbark | Humility | no charms - CONFIRMED
+	q(61039),	-- Craven Corinth | Humility | no charms - CONFIRMED
+	q(61040),	-- Nuuminuuru | Humility | no charms | - CONFIRMED
+	q(61041),	-- Alderyn and Myn'ir | Humility | no charms - CONFIRMED
+	q(61042),	-- Echthra | Humility | no charms - CONFIRMED
+	q(61043),	-- Kalisthene | Humility | no charms - CONFIRMED
 
 	-- HUMILITY DIFFICULTY NO CHARMS, NO ACTIVE BRAZIERS (probably only for either charms or braziers)
 	q(63138),	-- Kalisthene | Humility | no charms | no active braziers
@@ -1746,16 +1746,16 @@ root("HiddenQuestTriggers", {
 	q(63083),	-- Loyalty | Spiritforged Aegis
 
 	-- HQTs for It's How You Wear It achievement
-	q(63084),	-- Humility | Herald's Footpads
-	q(63085),	-- Humility | Deep Echo Trident
-	q(63086),	-- Humility | Vial of Lichfrost
-	q(63087),	-- Humility | Phial of Serenity
-	q(63088),	-- Humility | Ring of Warding
-	q(63089),	-- Humility | Spiritforged Aegis
+	q(63084),	-- Humility | Herald's Footpads - CONFIRMED
+	q(63085),	-- Humility | Deep Echo Trident - CONFIRMED
+	q(63086),	-- Humility | Vial of Lichfrost - CONFIRMED
+	q(63087),	-- Humility | Phial of Serenity - CONFIRMED
+	q(63088),	-- Humility | Ring of Warding - CONFIRMED
+	q(63089),	-- Humility | Spiritforged Aegis - CONFIRMED
 
 	-- HQTs for Learning from the Masters achievement
 	q(63093),	-- Kalisthene | Wisdom | Kleia
-	q(63094),	-- Kalisthene | Wisdom | Pelagos
+	q(63094),	-- Kalisthene | Wisdom | Pelagos - CONFIRMED
 	q(63095),	-- Kalisthene | Wisdom | Mikanikos
 	q(63096),	-- Athanos | Wisdom | Kleia
 	q(63097),	-- Athanos | Courage | Pelagos

@@ -6191,7 +6191,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(66343),	--
 				-- 9.2.5.43057
 				-- 9.2.5.43254
-				q(66480),	--
 				-- 9.2.5.43412
 				q(66614),	-- Valinor, the Light of Eons
 				q(66615),	-- Nurgash Muchformed
