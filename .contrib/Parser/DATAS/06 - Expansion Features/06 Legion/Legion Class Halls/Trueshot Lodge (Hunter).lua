@@ -270,7 +270,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					}),
 					--
 					q(42519, {	-- Rise, Champions
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							40959, 	-- The Campaign Begins
 							44090,	-- Pledge of Loyalty
 						},
@@ -991,6 +991,7 @@ root("HiddenQuestTriggers", {
 	q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
 	q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
 	q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
+	q(66309),	-- After obtaining Dark Ranger's Ensemble
 });
 
 -- These quests never made it in.
