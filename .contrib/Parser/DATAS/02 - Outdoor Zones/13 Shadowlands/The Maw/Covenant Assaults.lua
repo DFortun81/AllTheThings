@@ -383,7 +383,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							},
 							["g"] = {
 								i(186573, {	-- Defense Map
-									["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.",
+									["description"] = "This item will start dropping during or after the quest |cFF349cffPutting A Plan Together|r.",
 								}),
 							},
 						}),
