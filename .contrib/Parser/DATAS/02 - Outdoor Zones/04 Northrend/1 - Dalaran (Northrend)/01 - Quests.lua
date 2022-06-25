@@ -95,6 +95,12 @@ _.Zones =
 				}),
 				q(13272, {	-- Cloth Scavenging (Neutral)
 					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
+					["altQuests"] = {
+						13268,	-- Cloth Scavenging (A, Howling Fjord)
+						13269,	-- Cloth Scavenging (H, Howling Fjord)
+						13265,	-- Cloth Scavenging (A, Borean Tundra)
+						13270,	-- Cloth Scavenging (H, Borean Tundra)
+					},
 					["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
 					["provider"] = { "n", 28699 },	-- Charles Worth
 					["requireSkill"] = TAILORING,

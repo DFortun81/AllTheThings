@@ -244,6 +244,10 @@ _.Zones =
 				}),
 				q(13265, {	-- Cloth Scavenging (A)
 					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+					["altQuests"] = {
+						13268,	-- Cloth Scavenging (A, Howling Fjord)
+						13272,	-- Cloth Scavenging (Neutral)
+					},
 					["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 					["provider"] = { "n", 27001 },	-- Darin Goodstitch
 					["races"] = ALLIANCE_ONLY,
