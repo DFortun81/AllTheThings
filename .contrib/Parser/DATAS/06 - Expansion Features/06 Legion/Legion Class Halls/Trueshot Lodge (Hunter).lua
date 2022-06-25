@@ -99,6 +99,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["altQuests"] = { 40952 },	-- Hunter to Hunter
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
 							["maps"] = { LEGION_DALARAN },
 						}),
 					}),
@@ -166,6 +167,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["altQuests"] = { 41009 },	-- Hunter to Hunter
 							["provider"] = { "n", 102570 },	-- Vereesa Windrunner
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
 							["maps"] = { LEGION_DALARAN },
 						}),
 					}),

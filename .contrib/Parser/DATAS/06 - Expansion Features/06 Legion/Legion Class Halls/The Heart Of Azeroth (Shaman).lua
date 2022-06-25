@@ -206,8 +206,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					-- Learn Mission Table & Research
 					q(44544, {	-- Call of the Earthen Ring
+						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
 						["provider"] = { "n", 114274 },	-- Mackay Firebeard
 						["maps"] = { LEGION_DALARAN },
+						["description"] = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
 						["isBreadcrumb"] = true,
 					}),
 					q(42188, {	-- Nobundo Awaits
