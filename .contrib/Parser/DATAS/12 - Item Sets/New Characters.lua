@@ -43,11 +43,25 @@ _.GearSets =
 					}),
 				},
 			}),
-			cl(WARLOCK ,{
+			cl(WARLOCK, sharedDataself({ ["classes"] = { WARLOCK } }, {
 				mount(5784, {	-- Felsteed (MOUNT!)
 					["description"] = "|cFF40bf40Received on reaching Level 10 as a Warlock.|r",
 				}),
-			}),
+				q(65425, {	-- Whatever You Sayaad (A)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 9.2.0" }
+				}),
+				q(65424, {	-- Whatever You Sayaad (H)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 74.6, 47.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 9.2.0" }
+				}),
+			})),
 			un(REMOVED_FROM_GAME, i(6125, {	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
 				["description"] = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
 			})),

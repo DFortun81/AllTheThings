@@ -1748,8 +1748,10 @@ _.Zones =
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 60.0, 34.6, AZSUNA },
 						["g"] = {
-							sp(186018),	-- Beginner's Silkweaving
-							recipe(185918),	-- Silkweave Bracers Rank 1
+							r(186763, {["u"]=15}),	-- Rune-Threaded Silkweave Robe
+							r(186764, {["u"]=15}),	-- Rune-Threaded Silkweave Bracers
+							r(185918),	-- Silkweave Bracers [Rank 1]
+							r(185925),	-- Silkweave Robe [Rank 1]
 						},
 					}),
 					q(38950, {	-- The Wayward Tailor
@@ -1772,7 +1774,9 @@ _.Zones =
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							sp(186019),	-- Intermediate Silkweaving
+							r(186799, {["u"]=15}),	-- Basic Slikweave Robe
+							r(186801, {["u"]=15}),	-- Embroidered Slikweave Robe
+							r(185935),	-- Silkweave Cinch [Rank 2]
 						},
 					}),
 					q(38954, {	-- Where's Lyndras?
@@ -1802,7 +1806,7 @@ _.Zones =
 						},
 					}),
 					q(38958, {	-- The Right Color
-						["sourceQuests"] = { 38957 },	-- Taking Inspiration
+						["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
 						["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
@@ -1810,12 +1814,18 @@ _.Zones =
 						},
 					}),
 					q(38959, {	-- Left Behind
-						["sourceQuests"] = { 38958 },	-- Taking Inspiration
+						["sourceQuests"] = {
+							38958,	-- The Right Color
+							38958,	-- Taking Inspiration
+						},
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 					}),
 					q(38960, {	-- Lining Them Up
-						["sourceQuests"] = { 38958 },	-- Taking Inspiration
+						["sourceQuests"] = {
+							38958,	-- The Right Color
+							38958,	-- Taking Inspiration
+						},
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 					}),
@@ -1827,6 +1837,9 @@ _.Zones =
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
+							r(187058, {["u"]=15}),	-- Slikweave Hood Lining
+							r(187059, {["u"]=15}),	-- Slikweave Hood: Outer Layer
+							r(187060, {["u"]=15}),	-- Handcrafted Slikweave Hood
 							recipe(185922),	-- Silkweave Hood (Rank 1)
 						},
 					}),
@@ -1897,19 +1910,20 @@ _.Zones =
 						["coord"] = { 40.4, 69.4, SURAMAR },
 					}),
 					q(38969, {	-- Master of Silkweave
-						["sourceQuests"] = { 38967 },	-- The Nightborne Connection
+						["sourceQuests"] = { 38962 },	-- The Path to Suramar City
 						["provider"] = { "n", 93971 },	-- Leyweaver Inondra
 						["coord"] = { 40.4, 69.4, SURAMAR },
-						["g"] = {
-							sp(186514),	-- Silkweave Set
-						},
 					}),
 					q(38970, {	-- The Queen's Grace Loom
-						["sourceQuests"] = { 38967 },	-- The Nightborne Connection
+						["sourceQuests"] = {
+							38969,	-- Proof of Loyalty
+							38969,	-- Master of Silkweave
+						},
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["coord"] = { 40.4, 69.4, SURAMAR },
 						["g"] = {
-							sp(186028),	-- Introduction to Imbued Silkweave
+							r(185962),	-- Imbued Silkweave
+							r(185926),	-- Imbued Silkweave Bracers [Rank 1]
 						},
 					}),
 					q(38971, {	-- Exotic Textiles
@@ -1917,7 +1931,7 @@ _.Zones =
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["coord"] = { 26.6, 71.4, SURAMAR },
 						["g"] = {
-							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
+							r(185931),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
 						},
 					}),
 					q(38974, {	-- Halls of Valor: The Right Question
@@ -1926,15 +1940,15 @@ _.Zones =
 						["coord"] = { 65.6, 56.2, STORMHEIM },
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						["g"] = {
-							i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+							r(185929),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
 						},
 					}),
 					q(38975, {	-- Inspire Me!
-						["sourceQuests"] = { 38974 },	-- Halls of Valor: The Right Question
+						["sourceQuests"] = { 38970 },	-- The Queen's Grace Loom
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["coord"] = { 40.2, 69.6, SURAMAR },
 						["g"] = {
-							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
+							r(185933),	-- Pattern: Imbued Silkwave Robes (Rank 1)
 						},
 					}),
 				}),
