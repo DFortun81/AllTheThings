@@ -812,12 +812,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 1497 },	-- Gunther Arcanus
 					["sourceQuest"] = 366,	-- Return the Book
 				}),
-				q(441, {	-- Raleigh and the Undercity
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 1499 },	-- Magistrate Sevren
-					["sourceQuest"] = 440,	-- The Engraved Ring
-				}),
 				q(24978, {	-- Reaping the Reapers
 					["provider"] = { "n", 1519 },	-- Deathguard Simmer
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
@@ -846,12 +840,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24988 },	-- The Chill of Death
 				}),
+				-- #if AFTER CATA
 				q(6323, {	-- Ride to the Undercity
-					["provider"] = { "n", 43124 },	-- Anette Williams
+					["qg"] = 43124,	-- Anette Williams
+					["sourceQuest"] = 6321,	-- Supplying Brill [CATA+] / Supplying the Sepulcher
 					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
-					["sourceQuest"] = 6321,	-- Supplying Brill
 					["races"] = { UNDEAD },
 				}),
+				-- #endif
 				q(5096, {	-- Scarlet Diversions
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -1059,6 +1055,20 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25046 },	-- A Daughter's Embrace
+				}),
+				q(9601, {	-- To The Bulwark
+					["qgs"] = {
+						16681,	-- Champion Bachi <Paladin Trainer>
+						20406,	-- Champion Cyssa Dawnrose <Paladin Trainer>
+					},
+					["coords"] = {
+						{ 92.0, 37.6, SILVERMOON_CITY },
+						{ 57.8, 90.8, UNDERCITY },
+					},
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(24976, {	-- Variety is the Spice of Death
 					["provider"] = { "n", 1518 },	-- Apothecary Johaan

@@ -383,8 +383,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6322, {	-- Michael Garrett
-					["sourceQuests"] = { 6323 },	-- Ride to the Undercity
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
+					["sourceQuest"] = 6323,	-- Ride to the Undercity
 					["coord"] = { 61.8, 42.0, UNDERCITY },
 					["races"] = { UNDEAD },
 				}),
@@ -570,11 +570,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 					},
-				}),
-				q(446, {	-- Thule Ravenclaw
-					["provider"] = { "n", 1498 },	-- Bethor Iceshard
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1164, {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
