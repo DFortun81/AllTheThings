@@ -956,9 +956,11 @@ for key,value in pairs({
 	[2555] = "Pergamino mohoso",	-- Musty Scroll
 	[2652] = "Cadáver de Ebenezer Herrumbra",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Piedra angular",	-- Keystone
+	[2689] = "Piedra de Vínculo Oeste",	-- Stone of West Binding
+	[2690] = "Piedra de Vínculo Exterior",	-- Stone of Outer Binding
+	[2691] = "Piedra de Vínculo Este",	-- Stone of East Binding
 	[2701] = "Fragmentos iridiscentes",	-- Iridescent Shards
 	[2702] = "Piedra de Vínculo Interior",	-- Stone of Inner Binding
-	[2703] = "Tumba de Aterratrols",	-- Trollbane's Tomb
 	[2704] = "Alijo de explosivos",	-- Cache of Explosives
 	[2713] = "Tablón de Se busca",	-- Wanted Board
 	[2734] = "Cofre encharcado",	-- Waterlogged Chest
@@ -993,6 +995,7 @@ for key,value in pairs({
 	[51708] = "Tierra de la tumba de Eliza",	-- Eliza's Grave Dirt
 	[91138] = "Martillo de Jordan",	-- Jordan's Hammer
 	[103821] = "Caja fuerte de Doan",	-- Doan's Strongbox
+	[112888] = "Estantería polvorienta",	-- Dusty Shelf
 	[112948] = "Caja fuerte de El Intrépido cerrada",	-- Intrepid's Locked Strongbox
 	[113757] = "Alijo de Forjatiniebla",	-- Shadowforge Cache
 	[123329] = "Cofre de Baelog",	-- Baelog's Chest

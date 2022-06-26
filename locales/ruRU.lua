@@ -939,9 +939,11 @@ for key,value in pairs({
 	[2555] = "Заплесневелый свиток",	-- Musty Scroll
 	[2652] = "Труп Эбенезера Ржавый Засов",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Краеугольный камень",	-- Keystone
+	[2689] = "Западный связывающий камень",	-- Stone of West Binding
+	[2690] = "Внешний связывающий камень",	-- Stone of Outer Binding
+	[2691] = "Восточный связывающий камень",	-- Stone of East Binding
 	[2701] = "Радужные осколки",	-- Iridescent Shards
 	[2702] = "Внутренний связывающий камень",	-- Stone of Inner Binding
-	[2703] = "Могила Троллебоя",	-- Trollbane's Tomb
 	[2704] = "Тайный склад взрывчатки",	-- Cache of Explosives
 	[2713] = "Розыск!",	-- Wanted Board
 	[2734] = "Отсыревший сундук",	-- Waterlogged Chest
@@ -976,6 +978,7 @@ for key,value in pairs({
 	[51708] = "Земля с могилы Элизы",	-- Eliza's Grave Dirt
 	[91138] = "Молот Джордана",	-- Jordan's Hammer
 	[103821] = "Сейф Доана",	-- Doan's Strongbox
+	[112888] = "Пыльная полка",	-- Dusty Shelf
 	[112948] = "Запертый сейф на \"Отважном\".",	-- Intrepid's Locked Strongbox
 	[113757] = "Тайник Тенегорна",	-- Shadowforge Cache
 	[123329] = "Сундук Бейлога",	-- Baelog's Chest

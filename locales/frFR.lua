@@ -951,9 +951,11 @@ for key,value in pairs({
 	[2555] = "Parchemin moisi",	-- Musty Scroll
 	[2652] = "Cadavre d'Ebenezer Bouclerouille",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Clé cruciale",	-- Keystone
+	[2689] = "Pierre de Lien occidentale",	-- Stone of West Binding
+	[2690] = "Pierre de Lien extérieure",	-- Stone of Outer Binding
+	[2691] = "Pierre de Lien orientale",	-- Stone of East Binding
 	[2701] = "Fragments iridescents",	-- Iridescent Shards
 	[2702] = "Pierre de Lien intérieure",	-- Stone of Inner Binding
-	[2703] = "Tombeau de Trollemort",	-- Trollbane's Tomb
 	[2704] = "Cache d'explosifs",	-- Cache of Explosives
 	[2713] = "Tableau des recherches",	-- Wanted Board
 	[2734] = "Coffre détrempé",	-- Waterlogged Chest
@@ -988,6 +990,7 @@ for key,value in pairs({
 	[51708] = "Boue du tombeau d'Eliza",	-- Eliza's Grave Dirt
 	[91138] = "Marteau de Jordan",	-- Jordan's Hammer
 	[103821] = "Coffre de Doan",	-- Doan's Strongbox
+	[112888] = "Étagère poussiéreuse",	-- Dusty Shelf
 	[112948] = "Coffre verrouillé de l'Intrépide",	-- Intrepid's Locked Strongbox
 	[113757] = "Cachette d'Ombreforge",	-- Shadowforge Cache
 	[123329] = "Coffre de Baelog",	-- Baelog's Chest

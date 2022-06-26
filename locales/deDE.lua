@@ -953,9 +953,11 @@ for key,value in pairs({
 	[2555] = "Modrige Rolle",	-- Musty Scroll
 	[2652] = "Ebenezer Rostlockes Leichnam",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Schlüsselstein",	-- Keystone
+	[2689] = "Stein der Westlichen Bindung",	-- Stone of West Binding
+	[2690] = "Stein der Äußeren Bindung",	-- Stone of Outer Binding
+	[2691] = "Stein der Östlichen Bindung",	-- Stone of East Binding
 	[2701] = "Regenbogenfarbene Splitter",	-- Iridescent Shards
 	[2702] = "Stein der Inneren Bindung",	-- Stone of Inner Binding
-	[2703] = "Trollbanns Grabmal",	-- Trollbane's Tomb
 	[2704] = "Sprengstofflager",	-- Cache of Explosives
 	[2713] = "Steckbriefbrett",	-- Wanted Board
 	[2734] = "Vollgelaufene Truhe",	-- Waterlogged Chest
@@ -990,6 +992,7 @@ for key,value in pairs({
 	[51708] = "Elizas Graberde",	-- Eliza's Grave Dirt
 	[91138] = "Jordans Hammer",	-- Jordan's Hammer
 	[103821] = "Doans Geldkassette",	-- Doan's Strongbox
+	[112888] = "Staubiges Regal",	-- Dusty Shelf
 	[112948] = "Verschlossene Geldkassette der 'Kühnheit'",	-- Intrepid's Locked Strongbox
 	[113757] = "Schattenschmiedecache",	-- Shadowforge Cache
 	[123329] = "Baelogs Truhe",	-- Baelog's Chest

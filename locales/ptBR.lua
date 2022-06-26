@@ -952,9 +952,11 @@ for key,value in pairs({
 	[2555] = "Pergaminho Mofado",	-- Musty Scroll
 	[2652] = "Cadáver de Ebenezer Rustlocke",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Pedra-chave",	-- Keystone
+	[2689] = "Pedra da União Ocidental",	-- Stone of West Binding
+	[2690] = "Pedra da União Externa",	-- Stone of Outer Binding
+	[2691] = "Pedra da União Oriental",	-- Stone of East Binding
 	[2701] = "Fragmentos Iridescentes",	-- Iridescent Shards
 	[2702] = "Pedra da União Interna",	-- Stone of Inner Binding
-	[2703] = "Tumba de Matatroll",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2704] = "Caixa de Explosivos",	-- Cache of Explosives
 	[2713] = "Quadro de Procurados",	-- Wanted Board
 	[2734] = "Baú Encharcado",	-- Waterlogged Chest
@@ -989,6 +991,7 @@ for key,value in pairs({
 	[51708] = "Terra da Cova de Eliza",	-- Eliza's Grave Dirt	--TODO: This was taken from classic Wowhead
 	[91138] = "Martelo de Jardel",	-- Jordan's Hammer
 	[103821] = "Caixa-forte de Doan",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
+	[112888] = "Prateleira Empoeirada",	-- Dusty Shelf
 	[112948] = "Cofre Trancado do Intrépido",	-- Intrepid's Locked Strongbox
 	[113757] = "Baú de Umbraforja",	-- Shadowforge Cache
 	[123329] = "Baú de Baelog",	-- Baelog's Chest

@@ -948,9 +948,11 @@ for key,value in pairs({
 	[2555] = "Pergamena Ammuffita",	-- Musty Scroll
 	[2652] = "Cadavere di Ebenezer Rustlocke",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "Pietra Angolare",	-- Keystone
+	[2689] = "Pietra del Vincolo Occidentale",	-- Stone of West Binding
+	[2690] = "Pietra del Vincolo Esterno",	-- Stone of Outer Binding
+	[2691] = "Pietra del Vincolo Orientale",	-- Stone of East Binding
 	[2701] = "Frammento Iridescente",	-- Iridescent Shards
 	[2702] = "Pietra del Vincolo Interno",	-- Stone of Inner Binding
-	[2703] = "Trollbane's Tomb",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2704] = "Cassa di Esplosivi",	-- Cache of Explosives
 	[2713] = "Bacheca dei Ricercati",	-- Wanted Board
 	[2734] = "Cassa Fradicia",	-- Waterlogged Chest
@@ -985,6 +987,7 @@ for key,value in pairs({
 	[51708] = "Eliza's Grave Dirt",	-- Eliza's Grave Dirt	--TODO: This was taken from classic Wowhead
 	[91138] = "Martello di Jordan",	-- Jordan's Hammer
 	[103821] = "Doan's Strongbox",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
+	[112888] = "Mensola Polverosa",	-- Dusty Shelf
 	[112948] = "Forziere Chiuso dell'Intrepida",	-- Intrepid's Locked Strongbox
 	[113757] = "Scrigno di Forgiascura",	-- Shadowforge Cache
 	[123329] = "Cassa di Baelog",	-- Baelog's Chest

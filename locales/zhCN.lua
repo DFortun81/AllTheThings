@@ -952,9 +952,11 @@ for key, value in pairs({
 	[2555] = "发霉的卷轴",	-- Musty Scroll
 	[2652] = "伊贝尼瑟的尸体",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "钥匙之石",	-- Keystone
+	[2689] = "西禁锢之石",	-- Stone of West Binding
+	[2690] = "外禁锢之石",	-- Stone of Outer Binding
+	[2691] = "东禁锢之石",	-- Stone of East Binding
 	[2701] = "虹光水晶碎块",	-- Iridescent Shards
 	[2702] = "内禁锢之石",	-- Stone of Inner Binding
-	[2703] = "托尔贝恩的墓室",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2704] = "爆炸品",	-- Cache of Explosives	--TODO: This was taken from classic Wowhead
 	[2713] = "通缉板",	-- Wanted Board
 	[2734] = "浸水的箱子",	-- Waterlogged Chest
@@ -989,6 +991,7 @@ for key, value in pairs({
 	[51708] = "伊莉莎的坟墓",	-- Eliza's Grave Dirt	--TODO: This was taken from classic Wowhead
 	[91138] = "乔丹的铁锤",	-- Jordan's Hammer
 	[103821] = "杜安的保险箱",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
+	[112888] = "布满灰尘的书架",	-- Dusty Shelf
 	[112948] = "保险箱",	-- Intrepid's Locked Strongbox
 	[113757] = "暗影熔炉地窖",	-- Shadowforge Cache
 	[123329] = "巴尔洛戈的箱子",	-- Baelog's Chest
