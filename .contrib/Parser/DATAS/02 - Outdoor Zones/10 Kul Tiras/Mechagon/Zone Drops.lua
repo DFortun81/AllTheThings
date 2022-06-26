@@ -11,9 +11,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					153991,	-- Clockwork Giant
 				},
 			}),
-			i(169593),	-- Large Storage Fragment
-			i(169594),	-- Rust Covered Disc
-			i(169595),	-- Scorched Data Disc
 			i(166846),	-- Spare Parts
 			i(166971),	-- Empty Energy Cell
 			i(166970),	-- Energy Cell

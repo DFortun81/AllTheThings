@@ -211,11 +211,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 73.1, 33.3, MECHAGON },
 				["sourceQuest"] = 55707,	-- First One's Free
 			}),
-			q(56421, {	-- Cracked Numeric Cylinder
-				["itemID"] = 169591,	-- Cracked Numeric Cylinder
-				["sourceQuest"] = 56410,	-- Discs of Norgannon
-				["isDaily"] = true,
-			}),
 			q(56049, {	-- Deck 'Em
 				["sourceQuests"] = { 55717 },	-- Time for Heroics
 				["provider"] = { "n", 153538 },	-- Adalin Halfheight
@@ -238,126 +233,115 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["isDaily"] = true,
 				["coord"] = { 72.0, 36.5, MECHAGON },
 				["g"] = {
-					i(169474, {	-- Corrupted Data Disc
-						n(152964, {	-- Data Anomaly <Lord Incendius>
-							i(11764),	-- Cinderhide Armsplints
-						}),
-						n(152976, {	-- Data Anomaly <Meathook>
-							i(37081),	-- Meathook's Slicer
-						}),
-						n(152969, {	-- Data Anomaly <Razorlash>
-							i(151451),	-- Strip-Thorn Gauntlets
-						}),
-						crit(26, {	-- Discs of Norgannon
-							["achievementID"] = 13556,	-- Outside Influences
-						}),
-					}),
-					i(169591, {	-- Cracked Numeric Cylinder
-						["description"] = "Dropped by trogg mobs.",
-						["questID"] = 56421,	-- Cracked Numeric Cylinder
+					q(56425, {	-- Scorched Data Disc
 						["isDaily"] = true,
-						["g"] = {
-							n(152958, {	-- Data Anomaly <Hogger>
-								["questID"] = 57385,
-								["isDaily"] = true,
-								["g"] = {
-									i(1934),	-- Hogger's Trousers
-									i(168631),	-- Metal Detector
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-							n(152923, {	-- Data Anomaly <Razorclaw the Butcher>
-								["questID"] = 57385,
-								["isDaily"] = true,
-								["g"] = {
-									i(6341),	-- Eerie Stable Lantern
-									i(1292),	-- Butcher's Cleaver
-									i(168631),	-- Metal Detector
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-						},
-					}),
-					i(169593, {	-- Large Storage Fragment
-						["description"] = "Dropped by mobs in Junkwatt Depot.  This appears to have a lower droprate than the other three discs.",
-						["questID"] = 56423,	-- Large Storage Fragment
-						["isDaily"] = true,
-						["g"] = {
-							n(152961, {	-- Data Anomaly <Balnazzar>
-								["questID"] = 57387,
-								["isDaily"] = true,
-								["g"] = {
-									i(13353),	-- Book of the Dead
-									i(13348),	-- Demonshear
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-							n(152922, {	-- Data Anomaly <Captain Kromcrush>
-								["questID"] = 57387,
-								["isDaily"] = true,
-								["g"] = {
-									i(18507),	-- Boots of the Full Moon
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-						},
-					}),
-					i(169594, {	-- Rust Covered Disc
-						["description"] = "Contained in Recycling Requisitions.",
-						["questID"] = 56424,	-- Rust Covered Disc
-						["isDaily"] = true,
-						["g"] = {
-							n(152979, {	-- Data Anomaly <Baron Kazum>
-								["questID"] = 57388,
-								["isDaily"] = true,
-								["g"] = {
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-							n(152983, {	-- Data Anomaly <Crowd Pummeler 9-60>
-								["questID"] = 57388,
-								["isDaily"] = true,
-								["g"] = {
-									i(132558),	-- Bot Operator's Treads
-									i(169169),	-- Blueprint: Blue Spraybot
-									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
-									i(169690),	-- Vinyl: Battle of Gnomeregan
-								},
-							}),
-						},
-					}),
-					i(169595, {	-- Scorched Data Disc
-						["description"] = "Contained in Recycling Requisitions.",
-						["questID"] = 56425,	-- Scorched Data Disc
-						["isDaily"] = true,
+						["provider"] = { "i", 169595 },	-- Scorched Data Disc
 						["g"] = {
 							n(153486, {	-- Data Anomaly <Baron Geddon>
 								["questID"] = 57389,
 								["isDaily"] = true,
+								["sym"] = {{"select","itemID",16844}},	-- Earthfury Epaulets
 								["g"] = {
-									i(16844),	-- Earthfury Epaulets
+									i(168631),	-- Metal Detector
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
 									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
 						},
 					}),
+					q(56421, {	-- Cracked Numeric Cylinder
+						["isDaily"] = true,
+						["provider"] = { "i", 169591 },	-- Cracked Numeric Cylinder
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								["questID"] = 57385,
+								["isDaily"] = true,
+								["g"] = {
+									n(152958, {	-- Data Anomaly <Hogger>
+										["sym"] = {{"select","itemID",1934}},	-- Hogger's Trousers
+									}),
+									n(152923, {	-- Data Anomaly <Razorclaw the Butcher>
+										["sym"] = {{"select","itemID",
+											6341,	-- Eerie Stable Lantern
+											1292,	-- Butcher's Cleaver
+											}},
+									}),
+									i(168631),	-- Metal Detector
+									i(169169),	-- Blueprint: Blue Spraybot
+									i(168906),	-- Blueprint: Holographic Digitalization Relay
+									i(169690),	-- Vinyl: Battle of Gnomeregan
+								},
+							}),
+						},
+					}),
+					q(56423, {	-- Large Storage Fragment
+						["isDaily"] = true,
+						["provider"] = { "i", 169593 },	-- Large Storage Fragment
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								["questID"] = 57387,
+								["isDaily"] = true,
+								["g"] = {
+									n(152961, {	-- Data Anomaly <Balnazzar>
+										["sym"] = {{"select","itemID",
+											13353,	-- Book of the Dead
+											13348,	-- Demonshear
+											}},
+									}),
+									n(152922, {	-- Data Anomaly <Captain Kromcrush>
+										["sym"] = {{"select","itemID",18507}},	-- Boots of the Full Moon
+									}),
+									i(168631),	-- Metal Detector
+									i(169169),	-- Blueprint: Blue Spraybot
+									i(168906),	-- Blueprint: Holographic Digitalization Relay
+									i(169690),	-- Vinyl: Battle of Gnomeregan
+								},
+							}),
+						},
+					}),
+					q(56424, {	-- Rust Covered Disc
+						["isDaily"] = true,
+						["provider"] = { "i", 169594 },	-- Rust Covered Disc
+						["g"] = {
+							n(COMMON_BOSS_DROPS, {
+								["questID"] = 57388,
+								["isDaily"] = true,
+								["g"] = {
+									n(152979),	-- Data Anomaly <Baron Kazum>
+									n(152983, {	-- Data Anomaly <Crowd Pummeler 9-60>
+										["sym"] = {{"select","itemID",132558}},	-- Bot Operator's Treads
+									}),
+									i(168631),	-- Metal Detector
+									i(169169),	-- Blueprint: Blue Spraybot
+									i(168906),	-- Blueprint: Holographic Digitalization Relay
+									i(169690),	-- Vinyl: Battle of Gnomeregan
+								},
+							}),
+						},
+					}),
+					n(152964, {	-- Data Anomaly <Lord Incendius>
+						["sym"] = {{"select","itemID",11764}},	-- Cinderhide Armsplints
+					}),
+					n(152976, {	-- Data Anomaly <Meathook>
+						["sym"] = {{"select","itemID",37081}},	-- Meathook's Slicer
+					}),
+					n(152969, {	-- Data Anomaly <Razorlash>
+						["sym"] = {{"select","itemID",151451}},	-- Strip-Thorn Gauntlets
+					}),
+					i(169591, {	-- Cracked Numeric Cylinder
+						["description"] = "Dropped by trogg mobs once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+					}),
+					i(169593, {	-- Large Storage Fragment
+						["description"] = "Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs.",
+					}),
+					i(169594, {	-- Rust Covered Disc
+						["description"] = "Contained in Recycling Requisitions (usually during 'Rainy' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+					}),
+					i(169595, {	-- Scorched Data Disc
+						["description"] = "Contained in Recycling Requisitions (usually during 'Sunny' weather) once '|cffffffffDiscs of Norgannon|r' has been completed the same day.",
+					}),
+					i(169474),	-- Corrupted Data Disc
 				},
 			}),
 			q(56328, {	-- Do Not Drink -- 56329 also popped. Possibly a daily?
@@ -465,11 +449,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["g"] = {
 					i(168305),	-- Powercore Schematics
 				},
-			}),
-			q(56423, {	-- Large Storage Fragment
-			--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only received this item on data anomaly day.  i think the first time i got it was from just looting a normal mob, the second time was from a blue box of assorted parts from the reclamation rig
-				["isDaily"] = true,
-				["itemID"] = 169593,	-- Large Storage Fragment
 			}),
 			q(56305, {	-- Let's Fish!
 				["provider"] = { "n", 151462 },	-- Danielle Anglers
@@ -890,15 +869,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 73.8, 26.0, MECHAGON },
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-			}),
-			q(56424, {	-- Rust Covered Disc
-			--	repeatable?  daily?  i picked it up right after doing the discs of norgannon quest and was able to summon another data anomaly.  both data anomalies i killed (on daily discs of norgannon quest + this) just awarded spare parts, so i'm not sure if there's a one-time loot lockout or if you could attempt to farm storage fragments and summon multiple data anomalies.  i've only received this item on data anomaly day.  received from a green recycling box from the reclamation rig
-				["isDaily"] = true,
-				["itemID"] = 169594,	-- Rust Covered Disc
-			}),
-			q(56425, {	-- Scorched Data Disc
-				["isDaily"] = true,
-				["itemID"] = 169595,	-- Scorched Data Disc
 			}),
 			q(56131, {	-- Security First
 				["description"] = "One-time completion per character.",

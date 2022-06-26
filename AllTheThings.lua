@@ -6,7 +6,6 @@
 
 local app = select(2, ...);
 local L = app.L;
-local window;
 
 -- Assign the FactionID.
 app.Faction = UnitFactionGroup("player");
@@ -21962,7 +21961,7 @@ app.OpenAuctionModule = function(self)
 		app.AuctionModuleTabID = tabID;
 
 		-- Create the movable Auction Data window.
-		window = app:GetWindow("AuctionData", AuctionHouseFrame);
+		local window = app:GetWindow("AuctionData", AuctionHouseFrame);
 		auctionFrame:SetScript("OnEvent", function(self, e, ...)
 			if e == "REPLICATE_ITEM_LIST_UPDATE" then
 				self:UnregisterEvent("REPLICATE_ITEM_LIST_UPDATE");
