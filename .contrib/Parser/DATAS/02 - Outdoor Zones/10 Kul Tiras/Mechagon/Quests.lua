@@ -15,20 +15,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 155188 },	-- Scrollsage Nola
 				["coord"] = { 72.2, 37.2, ZULDAZAR },
 				["isDaily"] = true,
-				["g"] = {
-					crit(31, {	-- A Direct Approach
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55688, {	-- A Growing Mystery
 				["description"] = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
 				["isDaily"] = true,
-				["g"] = {
-					crit(5, {	-- A Growing Mystery
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56373, {	-- A Gulper Ate The Rolly
 				["provider"] = { "n", 151462 },	-- Danielle Anglers
@@ -39,11 +29,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["description"] = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
 				["provider"] = { "n", 152633 },	-- Sir Finley Mrrgglton
 				["isDaily"] = true,
-				["g"] = {
-					crit(4, {	-- A Historical Mess
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55697, {	-- A Little Leg Work
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -66,42 +51,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 153373 },	-- Penny Clobberbottom
 				["coord"] = { 70.9, 37.6, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(14, {	-- Abduction Reduction
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56142, {	-- Adapt, Improve, Overcome!
 				["provider"] = { "n", 154214 },	-- Christy Punchcog
 				["coord"] = { 71.8, 35.8, MECHAGON },
 				["isDaily"] = true,
 				["description"] = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
-				["g"] = {
-					crit(19, {	-- Adapt, Improve, Overcome!
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55463, {	-- Aid from Nordrassil
 				["provider"] = { "n", 151936 },	-- Mylune
 				["coord"] = { 72.1, 37.2, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(1, {	-- Aid From Nordrassil
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55813, {	-- Aim High
 				["provider"] = { "n", 154568 },	-- Pedram Mechanotrax
 				["coord"] = { 62.1, 76.8, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(15, {	-- Aim High
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55210, {	-- Batteries Not Included
 				["provider"] = { "n", 150630 },	-- Flip Quickcharge
@@ -113,11 +78,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 69.7, 33.0, MECHAGON },
 				["isDaily"] = true,
 				["sourceQuest"] = 54090,	-- Toys For Destruction
-				["g"] = {
-					crit(22, {	-- Battle Tested
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56365, {	-- Be Kind, Rewind
 				--["provider"] = { "n",  }
@@ -127,11 +87,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				},
 				["isDaily"] = true,
 				--["sourceQuest"] =
-				["g"] = {
-					crit(23, {	-- Be Kind, Rewind
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56082, {	-- Bot Rampage
 			--	don't know if there are SQs or a reputation requirement.  i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
@@ -149,11 +104,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 152932 },	-- Razak Ironsides
 				["coord"] = { 75.8, 34.4, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(9, {	-- Bugs, Lots of 'Em!
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55055, {	-- Build a Bigger Fish Trap
 				["provider"] = { "n", 151462 },	-- Danielle Anglers
@@ -185,20 +135,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 152501 },	-- Elise Starseeker
 				["coord"] = { 70.4, 31.0, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(3, {	-- Clues Abound
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56405, {	-- Cogfrenzy's Construction Frenzy
 				["provider"] = { "n", 154967 },	-- Walton Cogfrenzy
 				["coord"] = { 73.4, 33.3, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(32, {	-- Cogfrenzy's Construction Frenzy
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
 					i(169471, {	-- Cogfrenzy's Construction Toolkit
 						i(167845),	-- Blueprint: Emergency Powerpack
 						i(167844),	-- Blueprint: Emergency Repair Kit
@@ -216,11 +158,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 153538 },	-- Adalin Halfheight
 				["isDaily"] = true,
 				["coord"] = { 75.2, 69.8, ZULDAZAR },
-				["g"] = {
-					crit(8, {	-- Deck 'Em
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55994, {	-- Do Not Drink — don't know if there are any SQs or if this is just up some days
 				["isDaily"] = true,
@@ -265,7 +202,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 										["sym"] = {{"select","itemID",
 											6341,	-- Eerie Stable Lantern
 											1292,	-- Butcher's Cleaver
-											}},
+										}},
 									}),
 									i(168631),	-- Metal Detector
 									i(169169),	-- Blueprint: Blue Spraybot
@@ -287,7 +224,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 										["sym"] = {{"select","itemID",
 											13353,	-- Book of the Dead
 											13348,	-- Demonshear
-											}},
+										}},
 									}),
 									n(152922, {	-- Data Anomaly <Captain Kromcrush>
 										["sym"] = {{"select","itemID",18507}},	-- Boots of the Full Moon
@@ -421,11 +358,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 154485 },	-- Short John Mithril
 				["coord"] = { 21.5, 81.9, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(17, {	-- Go For The Gold
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55103, {	-- Ideas Can Come from Anywhere
 				["provider"] = { "n", 152295 }, -- Pascal
@@ -485,9 +417,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 72.7, 38.0, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(24, {	-- My Chickens are Not for Eating!
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
 					i(169381, {	-- OOX-35/MG (pet)
 						["description"] = "When the quest \"My Chickens are Not for Eating!\" is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 					}),
@@ -517,31 +446,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 70.1, 30.7, MECHAGON },
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(25, {	-- Off-the-Books Brawlin'
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56552, {	-- Off-the-Books Brawlin' (H)
 				["provider"] = { "n", 155355 },	-- Usha Eyegouge
 				["coord"] = { 70.0, 31.0, MECHAGON },
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(25, {	-- Off-the-Books Brawlin'
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55575, {	-- One Gnome's Trash
 				["provider"] = { "n", 152499 },	-- Moxie Lockspinner
 				["coord"] = { 73.7, 34.3, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(2, {	-- One Gnome's Trash
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
 					i(168204, {	-- Small Metal Box
 						["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
 						["g"] = {
@@ -592,11 +508,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["g"] = {
 					q(56469, {	-- Pirates? I Hate Those Guys!
 						["isDaily"] = true,
-						["g"] = {
-							crit(10, {	-- Pirates? I Hate Those Guys!
-								["achievementID"] = 13556,	-- Outside Influencesw
-							}),
-						},
 					}),
 				},
 			}),
@@ -604,22 +515,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 154335 },	-- Dread Captain DeMeza
 				["coord"] = { 71.7, 38.8, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(16, {	-- Pirates, Sea Monsters, Robots
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55528, {	-- Playtime's Over
 				["provider"] = { "n", 151006 },	-- Rocket-Chief Fuselage
 				["coord"] = { 69.7, 33.0, MECHAGON },
 				["isDaily"] = true,
 				["sourceQuest"] = 54090,	-- Toys For Destruction
-				["g"] = {
-					crit(21, {	-- Playtime's Over
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55645, {	-- Princely Visit
 				["provider"] = { "n", 152484 },	-- Tinkmaster Overspark
@@ -703,11 +604,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 153324 },	-- Rico Bugsnapper
 				["coord"] = { 82.9, 23.3, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(11, {	-- Rico's Rescue
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(54086, {	-- Right Bot for the Job -- 55907 and 56100 also popped
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -903,11 +799,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["g"] = {
 					q(55718, {	-- Strange Discovery
 						["isDaily"] = true,
-						["g"] = {
-							crit(7, {	-- Strange Discovery
-								["achievementID"] = 13556,	-- Outside Influences
-							}),
-						},
 					}),
 				},
 			}),
@@ -922,11 +813,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 					{ 47.6, 36.8, MECHAGON },	-- Alliance
 					{ 42.6, 41.4, MECHAGON },	-- Horde
 				},
-				["g"] = {
-					crit(29, {	-- Taking the Air Out
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55696, {	-- Test Drive
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -937,22 +823,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 154511 },	-- Sneaky Pete
 				["coord"] = { 24.2, 75.3, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(18, {	-- The Family Jewels
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56053, {	-- The Final Act
 				["provider"] = { "n", 153982 },	-- Izira Gearsworn
 				["coord"] = { 72.7, 33.9, MECHAGON },
 				["isDaily"] = true,
 				["sourceQuests"] = { 56142 },	-- Adapt, Improve, Overcome!
-				["g"] = {
-					crit(13, {	-- The Final Act
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55695, {	-- That New Mount Smell
 				["provider"] = { "n", 152321 },	-- Cork Stuttguard
@@ -968,11 +844,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 153993 },	-- Chromie
 				["coord"] = { 70.2, 30.9, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(12, {	-- The Other Place
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56319, {	-- The Quickcharge Contract
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
@@ -1005,30 +876,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["description"] = "This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",
 				["provider"] = { "n", 152633 },	-- Sir Finley Mrrgglton
 				["isDaily"] = true,
-				["g"] = {
-					crit(6, {	-- Time for Heroics
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(54090, {	-- Toys For Destruction
 				["provider"] = { "n", 151006 },	-- Rocket-Chief Fuselage
 				["coord"] = { 69.7, 33.1, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(20, {	-- Toys For Destruction
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56572, {	-- Toys Like Us
 				["provider"] = { "n", 155450 },	-- Jepetto Joybuzz
 				["coord"] = { 70.2, 32.9, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(27, {	-- Toys Like Us
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
 					i(169838, {	-- Azeroth Mini: Starter Pack
 						i(169796),	-- Azeroth Mini Collection: Mechagon (TOY!)
 						i(169841),	-- Azeroth Mini: Erazmin
@@ -1050,11 +908,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 155187 },	-- Maokka
 				["coord"] = { 72.1, 37.1, ZULDAZAR },
 				["isDaily"] = true,
-				["g"] = {
-					crit(30, {	-- Unprofitable Ventures
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(56083, {	-- Unsafe Work Conditions
 				["provider"] = { "n", 150563 },	-- Skaggit
@@ -1085,11 +938,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 			--	["objectID"] = ,	-- not linked to quest
 				["coord"] = { 43.0, 41.1, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(28, {	-- Waste Not
-						["achievementID"] = 13556,	-- Outside Influences
-					}),
-				},
 			}),
 			q(55995, {	-- We Can Fix It
 				["provider"] = { "n", 150956 },	-- Broken Drill Rig

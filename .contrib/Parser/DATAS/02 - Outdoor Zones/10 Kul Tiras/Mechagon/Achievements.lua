@@ -275,38 +275,102 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				},
 			}),
 			ach(13556, {	-- Outside Influences
-				crit(1),	-- Aid from Nordrassil
-				crit(2),	-- One Gnome's Trash
-				crit(3),	-- Clues Abound
-				crit(4),	-- A Historical Mess
-				crit(5),	-- A Growing Mystery
-				crit(6),	-- Time for Heroics
-				crit(7),	-- Strange Discovery
-				crit(8),	-- Deck 'Em
-				crit(9),	-- Bugs, Lots of 'Em!
-				crit(10),	-- Pirates? I hate Those Guys!
-				crit(11),	-- Rico's Rescue
-				crit(12),	-- The Other Place
-				crit(13),	-- The Final Act
-				crit(14),	-- Abduction Reduction
-				crit(15),	-- Aim High
-				crit(16),	-- Pirates, Sea Monsters, Robots
-				crit(17),	-- Go For The Gold
-				crit(18),	-- The Family jewels
-				crit(19),	-- Adapt, Improve, Overcome!
-				crit(20),	-- Toys for Destruction
-				crit(21),	-- Playtime's Over
-				crit(22),	-- Battle Tested
-				crit(23),	-- Be Kind, Rewind
-				crit(24),	-- My Chicken are Not For Eating!
-				crit(25),	-- Off-the-Books Brawlin'
-				crit(26),	-- Discs of Norgannon
-				crit(27),	-- Toys Like Us
-				crit(28),	-- Waste Not
-				crit(29),	-- Taking The Air Out
-				crit(30),	-- Unprofitable Ventures
-				crit(31),	-- A Direct Approach
-				crit(32),	-- Cogfrenzy's Construction Frenzy
+				crit(1, {	-- Aid from Nordrassil
+					["_quests"] = { 55463 },	-- Aid from Nordrassil
+				}),
+				crit(2, {	-- One Gnome's Trash
+					["_quests"] = { 55575 },	-- One Gnome's Trash
+				}),
+				crit(3, {	-- Clues Abound
+					["_quests"] = { 55658 },	-- Clues Abound
+				}),
+				crit(4, {	-- A Historical Mess
+					["_quests"] = { 55672 },	-- A Historical Mess
+				}),
+				crit(5, {	-- A Growing Mystery
+					["_quests"] = { 55688 },	-- A Growing Mystery
+				}),
+				crit(6, {	-- Time for Heroics
+					["_quests"] = { 55717 },	-- Time for Heroics
+				}),
+				crit(7, {	-- Strange Discovery
+					["_quests"] = { 55718 },	-- Strange Discovery
+				}),
+				crit(8, {	-- Deck 'Em
+					["_quests"] = { 56049 },	-- Deck 'Em
+				}),
+				crit(9, {	-- Bugs, Lots of 'Em!
+					["_quests"] = { 55765 },	-- Bugs, Lots of 'Em!
+				}),
+				crit(10, {	-- Pirates? I hate Those Guys!
+					["_quests"] = { 56469 },	-- Pirates? I hate Those Guys!
+				}),
+				crit(11, {	-- Rico's Rescue
+					["_quests"] = { 55885 },	-- Rico's Rescue
+				}),
+				crit(12, {	-- The Other Place
+					["_quests"] = { 55816 },	-- The Other Place
+				}),
+				crit(13, {	-- The Final Act
+					["_quests"] = { 56053 },	-- The Final Act
+				}),
+				crit(14, {	-- Abduction Reduction
+					["_quests"] = { 55905 },	-- Abduction Reduction
+				}),
+				crit(15, {	-- Aim High
+					["_quests"] = { 55813 },	-- Aim High
+				}),
+				crit(16, {	-- Pirates, Sea Monsters, Robots
+					["_quests"] = { 56184 },	-- Pirates, Sea Monsters, Robots
+				}),
+				crit(17, {	-- Go For The Gold
+					["_quests"] = { 56301 },	-- Go For The Gold
+				}),
+				crit(18, {	-- The Family Jewels
+					["_quests"] = { 56306 },	-- The Family Jewels
+				}),
+				crit(19, {	-- Adapt, Improve, Overcome!
+					["_quests"] = { 56142 },	-- Adapt, Improve, Overcome!
+				}),
+				crit(20, {	-- Toys for Destruction
+					["_quests"] = { 54090 },	-- Toys for Destruction
+				}),
+				crit(21, {	-- Playtime's Over
+					["_quests"] = { 55528 },	-- Playtime's Over
+				}),
+				crit(22, {	-- Battle Tested
+					["_quests"] = { 56355 },	-- Battle Tested
+				}),
+				crit(23, {	-- Be Kind, Rewind
+					["_quests"] = { 56365 },	-- Be Kind, Rewind
+				}),
+				crit(24, {	-- My Chicken are Not For Eating!
+					["_quests"] = { 56523 },	-- My Chicken are Not For Eating!
+				}),
+				crit(25, {	-- Off-the-Books Brawlin'
+					["_quests"] = { 56558, 56552 },	-- Off-the-Books Brawlin' A/H
+				}),
+				crit(26, {	-- Discs of Norgannon
+					["_quests"] = { 56410 },	-- Discs of Norgannon
+				}),
+				crit(27, {	-- Toys Like Us
+					["_quests"] = { 56572 },	-- Toys Like Us
+				}),
+				crit(28, {	-- Waste Not
+					["_quests"] = { 56508 },	-- Waste Not
+				}),
+				crit(29, {	-- Taking The Air Out
+					["_quests"] = { 56501 },	-- Taking The Air Out
+				}),
+				crit(30, {	-- Unprofitable Ventures
+					["_quests"] = { 56471 },	-- Unprofitable Ventures
+				}),
+				crit(31, {	-- A Direct Approach
+					["_quests"] = { 56493 },	-- A Direct Approach
+				}),
+				crit(32, {	-- Cogfrenzy's Construction Frenzy
+					["_quests"] = { 56405 },	-- Cogfrenzy's Construction Frenzy
+				}),
 			}),
 			ach(13470, {	-- Rest In Pistons
 				crit(1),	-- Mechagnoian Nullfier
