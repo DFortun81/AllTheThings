@@ -3393,12 +3393,11 @@ root("Zones", m(NORTHREND, {
 					i(41571, {	-- Design: Turbid Dark Jade
 						["recipeID"] = 53924,
 						["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-						["timeline"] = { "added 4.0.3.0000" },
+						["timeline"] = { "added 4.0.3" },
 					}),
 					i(41573, {	-- Design: Turbid Dark Jade
 						["recipeID"] = 53924,
-						["timeline"] = { "added 3.0.2.8962" },
-						["timeline"] = { "removed 4.0.3.0000" },
+						["timeline"] = { "added 3.0.2.8962", "removed 4.0.3" },
 					}),
 					i(41688, {	-- Design: Veiled Twilight Opal
 						["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token

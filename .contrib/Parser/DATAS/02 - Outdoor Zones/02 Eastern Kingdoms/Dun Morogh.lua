@@ -2044,7 +2044,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["groups"] = {
-						objective(1, {	-- 0/1 
+						objective(1, {	-- 0/1
 							["provider"] = { "i", 15908 },	-- Taming Rod
 							["cr"] = 1196,	-- Ice Claw Bear
 						}),
@@ -2150,19 +2150,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 6,
 					["groups"] = {
 						i(57570, {	-- Gol'Bolar Miner's Belt
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(57568, {	-- Senator's Dignified Pants
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(57569, {	-- Stonehallow's Arm Bands
-							["timeline"] = { "removed 4.0.3.13287" },
+							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(131208, {	-- Senator's Handsome Leggings
-							["timeline"] = { "removed 7.0.3.22248" },
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(131209, {	-- Stonehallow's Pressed Cuffs
-							["timeline"] = { "removed 7.0.3.22248" },
+							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
 				}),

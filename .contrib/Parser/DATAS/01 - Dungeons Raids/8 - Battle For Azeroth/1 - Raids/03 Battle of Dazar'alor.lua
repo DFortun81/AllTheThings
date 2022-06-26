@@ -22,8 +22,8 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(13289),
-				ach(13286),
+				ach(13289),	-- Defense of Dazar'alor (H)
+				ach(13286),	-- Siege of Dazar'alor (A)
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 1] (RECIPE!)
