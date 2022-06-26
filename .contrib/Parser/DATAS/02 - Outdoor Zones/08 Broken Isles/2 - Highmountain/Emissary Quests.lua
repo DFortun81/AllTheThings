@@ -13,7 +13,7 @@ _.Zones =
 					["groups"] = {
 						i(157823, {	-- Highmountain Tribute
 							["sym"] = {
-								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind (Rank 3)
+								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"postprocess"},	-- Merge the results into one group per unique key
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", HIGHMOUNTAIN},
@@ -22,7 +22,7 @@ _.Zones =
 								{"pop"},
 							},
 							["groups"] = {
-								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 3)
+								i(144313),	-- Formula: Enchant Neck - Mark of the Versatile [Rank 3] (RECIPE!)
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(137561, {	-- Highmountain Tribute

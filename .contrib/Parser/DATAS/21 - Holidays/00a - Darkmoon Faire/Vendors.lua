@@ -925,16 +925,16 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 				i(112289, {	-- Six of War
 					["cost"] = { { "i", 113140, 1 }, },	-- War Joker
 				}),
-				i(137790, {	-- Technique: Darkmoon Card of the Legion (Rank 2)
+				i(137790, {	-- Technique: Darkmoon Card of the Legion [Rank 2] (RECIPE!)
 					["cost"] = { { "c", 515, 50 }, },	-- 50x Darkmoon Prize Ticket
 				}),
-				i(137791, {	-- Technique: Darkmoon Card of the Legion (Rank 3)
+				i(137791, {	-- Technique: Darkmoon Card of the Legion [Rank 3] (RECIPE!)
 					["cost"] = { { "c", 515, 250 }, },	-- 250x Darkmoon Prize Ticket
 				}),
-				i(137745, {	-- Technique: Propehcy Tarot (Rank 2)
+				i(137745, {	-- Technique: Propehcy Tarot [Rank 2] (RECIPE!)
 					["cost"] = { { "c", 515, 5 }, },	-- 5x Darkmoon Prize Ticket
 				}),
-				i(137746, {	-- Technique: Propehcy Tarot (Rank 3)
+				i(137746, {	-- Technique: Propehcy Tarot [Rank 3] (RECIPE!)
 					["cost"] = { { "c", 515, 35 }, },	-- 35x Darkmoon Prize Ticket
 				}),
 				i(112276, {	-- Three of Iron

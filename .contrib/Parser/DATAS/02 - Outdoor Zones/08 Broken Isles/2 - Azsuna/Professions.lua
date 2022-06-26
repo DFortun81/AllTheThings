@@ -190,8 +190,9 @@ _.Zones =
 						},
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
-					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
+					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3] (RECIPE!)
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
+						["timeline"] = { "added 7.1.0" },
 					}),
 				}),
 			}),

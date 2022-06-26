@@ -7,14 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(ZONE_DROPS, {
-				i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
-				i(141043),	-- Technique: Glyph of Arachnophobia
-				i(141035),	-- Technique: Glyph of Fel Wings
-				i(141032),	-- Technique: Glyph of the Chilled Shell
-				i(141039),	-- Technique: Glyph of the Doe
-				i(141049),	-- Technique: Glyph of the Hook
-				i(141064),	-- Technique: Glyph of the Shivarra
-				i(141051),	-- Technique: Glyph of the Trident
+				i(144318),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 2] (RECIPE!)
 				i(141290, {	-- Dreamgrove Sproutling
 					["bonusID"] = 1812,
 				}),

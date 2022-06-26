@@ -390,7 +390,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						e(1898, {	-- Kil'jaeden
 							["creatureID"] = 117269,	-- Kil'jaeden
 							["g"] = {
-								i(151539),	-- Technique: Glyph of Ember Shards
+								i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+									["timeline"] = { "added 7.2.5" },
+								}),
 								i(147034),	-- Shadow-Scarred Headcover
 								i(146988),	-- Gloves of Furtive Oppression
 								i(147048),	-- Vicegrip of the Unrepentant
@@ -726,7 +728,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11770),	-- Dark Souls
-						i(151539),	-- Technique: Glyph of Ember Shards
+						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+							["timeline"] = { "added 7.2.5" },
+						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant
@@ -1057,7 +1061,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
 						ach(11770),	-- Dark Souls
-						i(151539),	-- Technique: Glyph of Ember Shards
+						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+							["timeline"] = { "added 7.2.5" },
+						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant
@@ -1408,7 +1414,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							title(357),	-- %s the Darkener
 						}),
 						ach(11770),	-- Dark Souls
-						i(151539),	-- Technique: Glyph of Ember Shards
+						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+							["timeline"] = { "added 7.2.5" },
+						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant

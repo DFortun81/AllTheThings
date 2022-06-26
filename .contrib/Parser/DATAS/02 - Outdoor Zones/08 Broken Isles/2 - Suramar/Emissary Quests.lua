@@ -16,7 +16,7 @@ _.Zones =
 					["g"] = {
 						i(157826, {	-- Nightfallen Hoard
 							["sym"] = {
-								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind (Rank 3)
+								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"postprocess"},	-- Merge the results into one group per unique key
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", SURAMAR},

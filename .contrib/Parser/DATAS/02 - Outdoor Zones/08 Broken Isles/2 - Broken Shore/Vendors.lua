@@ -11,7 +11,9 @@ _.Zones =
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
 					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 					["g"] = {
-						i(147120),	-- Technique: Glyph of the Shadow Succubus
+						i(147120, {	-- Technique: Glyph of the Shadow Succubus
+							["timeline"] = { "added 7.2.0" },
+						}),
 					},
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
@@ -261,9 +263,11 @@ _.Zones =
 					}),
 					i(151541, {	-- Technique: Glyph of Floating Shards
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+						["timeline"] = { "added 7.2.5" },
 					}),
 					i(141067, {	-- Technique: Glyph of Wrathguard
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
+						["timeline"] = { "added 7.2.0" },
 					}),
 				}),
 			}),

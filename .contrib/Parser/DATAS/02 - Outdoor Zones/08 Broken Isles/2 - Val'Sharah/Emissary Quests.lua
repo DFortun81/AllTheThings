@@ -13,7 +13,7 @@ _.Zones =
 					["groups"] = {
 						i(157822, {	-- Dreamweaver Provisions
 							["sym"] = {
-								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind (Rank 3)
+								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 								{"postprocess"},	-- Merge the results into one group per unique key
 								{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 								{"select", "mapID", VALSHARAH},
@@ -22,7 +22,7 @@ _.Zones =
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
 							["groups"] = {
-								i(144319),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 3)
+								i(144319),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 3] (RECIPE!)
 								i(130167),	-- Thistleleaf Adventurer
 							},
 						}),

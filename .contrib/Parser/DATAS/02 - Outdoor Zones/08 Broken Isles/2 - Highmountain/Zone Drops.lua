@@ -7,17 +7,7 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(ZONE_DROPS, {
-				i(144312),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 2)
-				i(137729),	-- Technique: Codex of the Tranquil Mind
-				i(141043),	-- Technique: Glyph of Arachnophobia
-				i(141035),	-- Technique: Glyph of Fel Wings
-				i(141060),	-- Technique: Glyph of Pebbles
-				i(141054),	-- Technique: Glyph of Smolder
-				i(141032),	-- Technique: Glyph of the Chilled Shell
-				i(141039),	-- Technique: Glyph of the Doe
-				i(141049),	-- Technique: Glyph of the Hook
-				i(141064),	-- Technique: Glyph of the Shivarra
-				i(141051),	-- Technique: Glyph of the Trident
+				i(144312),	-- Formula: Enchant Neck - Mark of the Versatile [Rank 2] (RECIPE!)
 				i(121069, {	-- Brulwurm Scale
 					["bonusID"] = 1812,
 				}),

@@ -466,7 +466,7 @@ root("Zones", {
 						i(151747, {	-- Recipe: Lightweave Breeches (Rank 2)
 							["cost"] = 20000000,	-- 2,000g
 						}),
-						i(153032),	-- Technique: Glyph of the Lightspawn
+						i(153032),	-- Technique: Glyph of the Lightspawn (RECIPE!)
 						i(153023),	-- Lightforged Augment Runeforge
 						i(153247),	-- Boon of the Lightbearer
 					}),
@@ -510,7 +510,7 @@ root("Zones", {
 						i(152796, {	-- Umber Ruinstrider (MOUNT!)
 							["cost"] = 100000000,	-- 10,000g
 						}),
-						i(152725),	-- Technique: Mass Mill Astral Glory
+						i(152725),	-- Technique: Mass Mill Astral Glory (RECIPE!)
 					}),
 					n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 						["g"] = {

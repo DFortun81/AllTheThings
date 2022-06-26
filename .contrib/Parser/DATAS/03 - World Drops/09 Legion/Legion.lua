@@ -100,6 +100,18 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 			}),
 			i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 3] (RECIPE!)
 		}),
+		prof(INSCRIPTION, {
+			i(137729),	-- Technique: Codex of the Tranquil Mind [Rank 1] (RECIPE!)
+			i(141043),	-- Technique: Glyph of Arachnophobia (RECIPE!)
+			i(141035),	-- Technique: Glyph of Fel Wings (RECIPE!)
+			i(141060),	-- Technique: Glyph of Pebbles (RECIPE!)
+			i(141054),	-- Technique: Glyph of Smolder (RECIPE!)
+			i(141032),	-- Technique: Glyph of the Chilled Shell (RECIPE!)
+			i(141039),	-- Technique: Glyph of the Doe (RECIPE!)
+			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
+			i(141064),	-- Technique: Glyph of the Shivarra (RECIPE!)
+			i(141051),	-- Technique: Glyph of the Trident (RECIPE!)
+		}),
 		prof(TAILORING, {
 			i(142077, {	-- Pattern: Imbued Silkweave Bag [Rank 2] (RECIPE!)
 				["description"] = "Drops from ghosts in any Broken Isles zone."

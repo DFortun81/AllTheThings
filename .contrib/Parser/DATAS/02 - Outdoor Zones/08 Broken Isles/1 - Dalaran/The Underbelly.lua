@@ -27,7 +27,7 @@ _.Zones =
 								--["spellID"] = 210108,	-- Detection
 							}),
 							i(136927),	-- Scarlet Confessional Book (TOY!)
-							i(141056),	-- Technique: Glyph of Burnout
+							i(141056),	-- Technique: Glyph of Burnout (RECIPE!)
 							i(136972, {	-- Tome of Hex: Cockroach
 								["spellID"] = 211015,	-- Hex(Cockroach)
 								["f"] = RECIPES,
@@ -75,7 +75,7 @@ _.Zones =
 							i(138027, {	-- Portal Key: Sewer Guard Station
 								["cost"] = { { "c", 1149, 50 }, },	-- 50x Sightless Eye
 							}),
-							i(141058, {	-- Technique: Glyph of Critterhex
+							i(141058, {	-- Technique: Glyph of Critterhex (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 							}),
 						},
@@ -112,7 +112,7 @@ _.Zones =
 							i(139896, {	-- Skinning Technique: Legion Gutting
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(141066, {	-- Technique: Glyph of the Voidlord
+							i(141066, {	-- Technique: Glyph of the Voidlord (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
 						},
@@ -123,7 +123,7 @@ _.Zones =
 							i(137831, {	-- Design: Vindictive Pandemonite Choker (Rank 2)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(141038, {	-- Technique: Glyph of Shadow-Enemies
+							i(141038, {	-- Technique: Glyph of Shadow-Enemies (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
 						},
@@ -205,7 +205,7 @@ _.Zones =
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(141057, {	-- Technique: Glyph of Flash Bang
+							i(141057, {	-- Technique: Glyph of Flash Bang (RECIPE!)
 								["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 							}),
 							i(139426, {	-- Widowsister Contract

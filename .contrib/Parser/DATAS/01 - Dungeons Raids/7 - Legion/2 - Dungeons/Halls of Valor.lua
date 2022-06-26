@@ -116,8 +116,6 @@ _.Instances = { tier(LEGION_TIER, {
 					["creatureID"] = 95676,	-- Odyn
 					["g"] = {
 						ach(10786),	-- Halls of Valor
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134192),	-- Biornskin Bracer
 						i(136776),	-- Bjorn's Hunting Strap
 						i(134217),	-- Bonespeaker Gloves
@@ -216,8 +214,6 @@ _.Instances = { tier(LEGION_TIER, {
 							ach(10788),	-- Heroic: Halls of Valor
 							i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
 							i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
-							i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-							--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves
@@ -324,8 +320,6 @@ _.Instances = { tier(LEGION_TIER, {
 							i(137911),	-- Recipe: Battlebound Grips (Rank 3)
 							i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
 							i(137607),	-- Recipe: Leystone Helm (Rank 3)
-							i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-							--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves

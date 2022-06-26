@@ -3006,7 +3006,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
-						i(141047),	-- Technique: Glyph of the Goblin Anti-Grav Flare
+						i(141047),	-- Technique: Glyph of the Goblin Anti-Grav Flare (RECIPE!)
 					},
 				}),
 				n(93530,  {	-- Ildine Sorrowspear <Enchanting Supplies>
@@ -3076,26 +3076,26 @@ _.Zones =
 				n(93544,  {	-- Jang Quillpaw <Inscription Supplies>
 					["coord"] = { 41.4, 36.7, LEGION_DALARAN },
 					["g"] = {
-						i(141042),	-- Technique: Glyph of Autumnal Bloom
-						i(137733),	-- Technique: Glyph of Blackout
-						i(141030),	-- Technique: Glyph of Cracked Ice
-						i(137735),	-- Technique: Glyph of Crackling Crane Lightning
-						i(141900),	-- Technique: Glyph of Falling Thunder
-						i(137731),	-- Technique: Glyph of Fel Imp
-						i(141036),	-- Technique: Glyph of Fel-Enemies
-						i(137730),	-- Technique: Glyph of Ghostly Fade
-						i(141037),	-- Technique: Glyph of Mana Touched Souls
-						i(137732),	-- Technique: Glyph of Sparkles
-						i(137737),	-- Technique: Glyph of Stellar Flare
-						i(141068),	-- Technique: Glyph of the Blazing Savior
-						i(141033),	-- Technique: Glyph of the Crimson Shell
-						i(141046),	-- Technique: Glyph of the Dire Stable
-						i(141040),	-- Technique: Glyph of the Feral Chameleon
-						i(141062),	-- Technique: Glyph of the Inquisitor's Eye
-						i(137738),	-- Technique: Glyph of the Queen
-						i(137734),	-- Technique: Glyph of the Sentinel
-						i(137736),	-- Technique: Glyph of the Spectral Raptor
-						i(141055),	-- Technique: Glyph of Yu'lon's Grace
+						i(141042),	-- Technique: Glyph of Autumnal Bloom (RECIPE!)
+						i(137733),	-- Technique: Glyph of Blackout (RECIPE!)
+						i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
+						i(137735),	-- Technique: Glyph of Crackling Crane Lightning (RECIPE!)
+						i(141900),	-- Technique: Glyph of Falling Thunder (RECIPE!)
+						i(137731),	-- Technique: Glyph of Fel Imp (RECIPE!)
+						i(141036),	-- Technique: Glyph of Fel-Enemies (RECIPE!)
+						i(137730),	-- Technique: Glyph of Ghostly Fade (RECIPE!)
+						i(141037),	-- Technique: Glyph of Mana Touched Souls (RECIPE!)
+						i(137732),	-- Technique: Glyph of Sparkles (RECIPE!)
+						i(137737),	-- Technique: Glyph of Stellar Flare (RECIPE!)
+						i(141068),	-- Technique: Glyph of the Blazing Savior (RECIPE!)
+						i(141033),	-- Technique: Glyph of the Crimson Shell (RECIPE!)
+						i(141046),	-- Technique: Glyph of the Dire Stable (RECIPE!)
+						i(141040),	-- Technique: Glyph of the Feral Chameleon (RECIPE!)
+						i(141062),	-- Technique: Glyph of the Inquisitor's Eye (RECIPE!)
+						i(137738),	-- Technique: Glyph of the Queen (RECIPE!)
+						i(137734),	-- Technique: Glyph of the Sentinel (RECIPE!)
+						i(137736),	-- Technique: Glyph of the Spectral Raptor (RECIPE!)
+						i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
 					},
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
@@ -5315,7 +5315,7 @@ _.Zones =
 				n(92195,  {	-- Professor Pallin <Inscription Trainer>
 					["coord"] = { 41.5, 37.3, LEGION_DALARAN },
 					["g"] = {
-						i(137787),	-- Technique: Songs of Battle
+						i(137787),	-- Technique: Songs of Battle (RECIPE!)
 					},
 				}),
 				n(96978,  {	-- Rafael Langrom <Leather Armor Merchant>
@@ -6785,7 +6785,7 @@ _.Zones =
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
 							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
 						}),
-						i(136702, {	-- Formula: Soul Fibril
+						i(136702, {	-- Formula: Soul Fibril (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
@@ -6800,7 +6800,7 @@ _.Zones =
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
-						i(136706, {	-- Technique: Straszan Mark
+						i(136706, {	-- Technique: Straszan Mark (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 					},

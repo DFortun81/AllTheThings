@@ -2505,7 +2505,9 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 55.2, 55.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(140565),	-- Technique: Songs of the Horde
+					i(140565, {	-- Technique: Songs of the Horde
+						["timeline"] = { "added 7.0.3" },
+					}),
 				},
 			}),
 			n(3362,   {	-- Ogunaro Wolfrunner <Kennel Master>

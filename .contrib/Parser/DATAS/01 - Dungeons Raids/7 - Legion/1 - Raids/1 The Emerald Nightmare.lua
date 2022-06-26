@@ -118,7 +118,7 @@ _.Instances = { tier(LEGION_TIER, {
 							i(137008),	-- Stormfury Diamond
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-							ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption							},
+							ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 							i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 							i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 							i(139569, {	-- Claw of N'Zoth

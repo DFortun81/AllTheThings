@@ -232,9 +232,12 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						r(264508, {	-- Kul Tiran Inscription
+							["races"] = ALLIANCE_ONLY,
+						}),
 						cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
-							r(287271),	-- Aqueous Chromotography*
-							r(286649),	-- Sanguinated Chromotography*
+							r(287271),	-- Aqueous Chromotography
+							r(286649),	-- Sanguinated Chromotography
 						})),
 						cat(1026, {	-- Inks
 							r(264777),	-- Crimson Ink

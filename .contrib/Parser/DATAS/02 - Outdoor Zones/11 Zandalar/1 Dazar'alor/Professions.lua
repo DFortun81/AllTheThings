@@ -221,6 +221,9 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						r(265809, {	-- Zandalari Inscription
+							["races"] = HORDE_ONLY,
+						}),
 						cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
 							r(287271),	-- Aqueous Chromotography
 							r(286649),	-- Sanguinated Chromotography

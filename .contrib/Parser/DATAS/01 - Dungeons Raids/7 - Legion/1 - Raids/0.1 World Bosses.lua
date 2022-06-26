@@ -32,7 +32,9 @@ _.Instances = { tier(LEGION_TIER, {
 					crit(5, {	-- Ana-Mouz
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
-					i(137778),	-- Vantus Rune Technique: Tichondrius [Rank 3]
+					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
+						["timeline"] = { "added 7.1.0" },
+					}),
 					i(141448),	-- Imp Mother's Loincloth
 					i(141423),	-- Crop Top Chain Hauberk
 					i(141413),	-- Low-Cut Chestplate
@@ -129,7 +131,9 @@ _.Instances = { tier(LEGION_TIER, {
 					crit(7, {	-- Drugon the Frostblood
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
-					i(142108),	-- Vantus Rune Technique: Guarm [Rank 3]
+					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
+						["timeline"] = { "added 7.1.0" },
+					}),
 					i(141538),	-- Giant's Handkerchief
 					i(141433),	-- Assorted Dragonscale Bracers
 					i(141439),	-- Ettinbone Bracers
@@ -225,7 +229,9 @@ _.Instances = { tier(LEGION_TIER, {
 					crit(6, {	-- Levantus
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
-					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
+					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
+						["timeline"] = { "added 7.1.0" },
+					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -315,7 +321,9 @@ _.Instances = { tier(LEGION_TIER, {
 					crit(2, {	-- Nithogg
 						["achievementID"] = 11160,	-- Unleashed Monstrosities
 					}),
-					i(142107),	-- Vantus Rune Technique: Odyn [Rank 3]
+					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
+						["timeline"] = { "added 7.1.0" },
+					}),
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge
 					i(141418),	-- Helm of the Mountain Recluse

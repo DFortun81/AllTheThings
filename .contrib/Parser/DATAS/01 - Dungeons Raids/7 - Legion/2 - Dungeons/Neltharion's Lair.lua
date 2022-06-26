@@ -126,8 +126,6 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10795),	-- Neltharion's Lair
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 					i(137912),	-- Recipe: Battlebound Treads (Rank 3)
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -195,8 +193,6 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards
@@ -266,8 +262,6 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137854),	-- Design: Intrepid Necklace of Prophecy (Rank 3)
 						i(137864),	-- Design: Shadowruby Band (Rank 2)
 						i(127928),	-- Recipe: Unbending Potion (Rank 2)
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134166),	-- Bitestone Boots
 						i(134495),	-- Chain of the Underking
 						i(137353),	-- Charskin Legguards

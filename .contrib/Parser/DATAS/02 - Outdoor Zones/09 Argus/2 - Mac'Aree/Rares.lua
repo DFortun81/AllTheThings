@@ -16,7 +16,7 @@ _.Zones =
 						crit(38, {	-- Ataxon
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(153034),	-- Technique: Glyph of the Voidling
+						i(153034),	-- Technique: Glyph of the Voidling (RECIPE!)
 						i(153056),	-- Grasping Manifestation
 					},
 				}),

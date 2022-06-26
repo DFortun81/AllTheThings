@@ -317,8 +317,8 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(178497),	-- Warbinder's Ink
 		}),
 		cat(420, {	-- Tools
-			r(227562),	-- Codex of the Clear Mind
-			r(227561),	-- Tome of the Clear Mind
+			r(227562, {["timeline"]={"added 7.0.3"}}),	-- Codex of the Clear Mind*
+			r(227561, {["timeline"]={"added 7.0.3"}}),	-- Tome of the Clear Mind*
 			r(178550, {	-- Draenic Mortar
 				["u"] = 15, -- Not actually a temp training recipe but is only available to non-scribes who build the Scribe's Quarters so don't want this showing for scribes
 			}),
@@ -369,156 +369,14 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
-		cat(451, {	-- Cards
-			r(192855),	-- Prophecy Tarot
-			r(192856),	-- Prophecy Tarot
-			r(192890),	-- Darkmoon Card of the Legion
-			r(192854),	-- Prophecy Tarot
-			r(192859),	-- Darkmoon Card of the Legion
-			r(191659),	-- Darkmoon Card of the Legion
-		}),
-		cat(492, {	-- Mass Milling
-			r(247861),	-- Mass Mill Astral Glory
-			r(209664),	-- Mass Mill Felwort
-			r(209661),	-- Mass Mill Fjarnskaggl
-			r(209662),	-- Mass Mill Starlight Rose
-			r(210116),	-- Mass Mill Yseralline Seeds
-			r(209659),	-- Mass Mill Dreamleaf
-			r(209660),	-- Mass Mill Foxflower
-			r(209658),	-- Mass Mill Aethril
-		}),
-		cat(91, {	-- Glyphs
-			r(225535),	-- Glyph of Arachnophobia
-			r(225534),	-- Glyph of Autumnal Bloom
-			r(192841),	-- Glyph of Blackout
-			r(225548),	-- Glyph of Burnout
-			r(225522),	-- Glyph of Cracked Ice
-			r(192843),	-- Glyph of Crackling Crane Lightning
-			r(192850),	-- Glyph of Crackling Flames
-			r(232274),	-- Glyph of Crackling Ox Lightning
-			r(225550),	-- Glyph of Critterhex
-			r(254238),	-- Glyph of Dark Absolution
-			r(246982),	-- Glyph of Ember Shards
-			r(228381),	-- Glyph of Falling Thunder
-			r(192851),	-- Glyph of Fallow Wings
-			r(192839),	-- Glyph of Fel Imp
-			r(192849),	-- Glyph of Fel Touched Souls
-			r(225527),	-- Glyph of Fel Wings
-			r(225528),	-- Glyph of Fel-Enemies
-			r(246999),	-- Glyph of Fel-Touched Shards
-			r(225549),	-- Glyph of Flash Bang
-			r(225551, {	-- Glyph of Flickering
-				["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
-				["classes"] = { SHAMAN },
-			}),
-			r(246984),	-- Glyph of Floating Shards
-			r(192838),	-- Glyph of Ghostly Fade
-			r(225529),	-- Glyph of Mana Touched Souls
-			r(225536),	-- Glyph of Nesingwary's Nemeses
-			r(225552),	-- Glyph of Pebbles
-			r(225545),	-- Glyph of Polymorphic Proportions
-			r(225530),	-- Glyph of Shadow-Enemies
-			r(225546),	-- Glyph of Smolder
-			r(192840),	-- Glyph of Sparkles
-			r(192845),	-- Glyph of Stellar Flare
-			r(192852),	-- Glyph of Tattered Wings
-			r(225560),	-- Glyph of the Blazing Savior
-			r(225524),	-- Glyph of the Chilled Shell
-			r(225525),	-- Glyph of the Crimson Shell
-			r(225538),	-- Glyph of the Dire Stable
-			r(225531),	-- Glyph of the Doe
-			r(225532),	-- Glyph of the Feral Chameleon
-			r(225533),	-- Glyph of the Forest Path
-			r(225539),	-- Glyph of the Goblin Anti-Grav Flare
-			r(225540, {	-- Glyph of the Headhunter
-				["timeline"] = { "removed 8.0.2" },
-			}),
-			r(225541),	-- Glyph of the Hook
-			r(225554),	-- Glyph of the Inquisitor's Eye
-			r(254227),	-- Glyph of the Lightspawn
-			r(225555),	-- Glyph of the Observer
-			r(192846),	-- Glyph of the Queen
-			r(192842),	-- Glyph of the Sentinel
-			r(240272),	-- Glyph of the Shadow Succubus
-			r(225556),	-- Glyph of the Shivarra
-			r(192844),	-- Glyph of the Spectral Raptor
-			r(225543),	-- Glyph of the Trident
-			r(232275),	-- Glyph of the Trusted Steed
-			r(254231),	-- Glyph of the Voidling
-			r(225558),	-- Glyph of the Voidlord
-			r(233278),	-- Glyph of Twilight Bloom
-			r(225559),	-- Glyph of Wrathguard
-			r(225547),	-- Glyph of Yu'lon's Grace
-		}),
-		cat(453, {	-- Vantus Runes
-			r(247614),	-- Vantus Rune: Antorus, the Burning Throne
-			r(247615),	-- Vantus Rune: Antorus, the Burning Throne
-			r(247616),	-- Vantus Rune: Antorus, the Burning Throne
-			r(192814),	-- Vantus Rune: Cenarius
-			r(192866),	-- Vantus Rune: Cenarius
-			r(192897),	-- Vantus Rune: Cenarius
-			r(192816),	-- Vantus Rune: Chronomatic Anomaly
-			r(192868),	-- Vantus Rune: Chronomatic Anomaly
-			r(192899),	-- Vantus Rune: Chronomatic Anomaly
-			r(192811),	-- Vantus Rune: Dragons of Nightmare
-			r(192863),	-- Vantus Rune: Dragons of Nightmare
-			r(192894),	-- Vantus Rune: Dragons of Nightmare
-			r(192813),	-- Vantus Rune: Elerethe Renferal
-			r(192865),	-- Vantus Rune: Elerethe Renferal
-			r(192896),	-- Vantus Rune: Elerethe Renferal
-			r(192823),	-- Vantus Rune: Grand Magistrix Elisande
-			r(192875),	-- Vantus Rune: Grand Magistrix Elisande
-			r(192906),	-- Vantus Rune: Grand Magistrix Elisande
-			r(229178),	-- Vantus Rune: Guarm
-			r(229181),	-- Vantus Rune: Guarm
-			r(229184),	-- Vantus Rune: Guarm
-			r(192824),	-- Vantus Rune: Gul'dan
-			r(192876),	-- Vantus Rune: Gul'dan
-			r(192907),	-- Vantus Rune: Gul'dan
-			r(229179),	-- Vantus Rune: Helya
-			r(229182),	-- Vantus Rune: Helya
-			r(229185),	-- Vantus Rune: Helya
-			r(192820),	-- Vantus Rune: High Botanist Tel'arn
-			r(192872),	-- Vantus Rune: High Botanist Tel'arn
-			r(192903),	-- Vantus Rune: High Botanist Tel'arn
-			r(192810),	-- Vantus Rune: Il'gynoth, The Heart of Corruption
-			r(192862),	-- Vantus Rune: Il'gynoth, The Heart of Corruption
-			r(192893),	-- Vantus Rune: Il'gynoth, The Heart of Corruption
-			r(192821),	-- Vantus Rune: Krosus
-			r(192873),	-- Vantus Rune: Krosus
-			r(192904),	-- Vantus Rune: Krosus
-			r(192809),	-- Vantus Rune: Nythendra
-			r(192861),	-- Vantus Rune: Nythendra
-			r(192892),	-- Vantus Rune: Nythendra
-			r(229177),	-- Vantus Rune: Odyn
-			r(229180),	-- Vantus Rune: Odyn
-			r(229183),	-- Vantus Rune: Odyn
-			r(192815),	-- Vantus Rune: Skorpyron
-			r(192867),	-- Vantus Rune: Skorpyron
-			r(192898),	-- Vantus Rune: Skorpyron
-			r(192818),	-- Vantus Rune: Spellblade Aluriel
-			r(192870),	-- Vantus Rune: Spellblade Aluriel
-			r(192901),	-- Vantus Rune: Spellblade Aluriel
-			r(192822),	-- Vantus Rune: Star Augur Etraeus
-			r(192874),	-- Vantus Rune: Star Augur Etraeus
-			r(192905),	-- Vantus Rune: Star Augur Etraeuss
-			r(192819),	-- Vantus Rune: Tichondrius
-			r(192871),	-- Vantus Rune: Tichondrius
-			r(192902),	-- Vantus Rune: Tichondrius
-			r(238577),	-- Vantus Rune: Tomb of Sargeras
-			r(238578),	-- Vantus Rune: Tomb of Sargeras
-			r(238579),	-- Vantus Rune: Tomb of Sargeras
-			r(192817),	-- Vantus Rune: Trilliax
-			r(192869),	-- Vantus Rune: Trilliax
-			r(192900),	-- Vantus Rune: Trilliax
-			r(192808),	-- Vantus Rune: Ursoc
-			r(192860),	-- Vantus Rune: Ursoc
-			r(192891),	-- Vantus Rune: Ursoc
-			r(192812),	-- Vantus Rune: Xavius
-			r(192864),	-- Vantus Rune: Xavius
-			r(192895),	-- Vantus Rune: Xavius
-		}),
+		r(195115),	-- Inscription (Legion)
+		r(264506),	-- Legion Inscription
+		-- TIMELINE
 		cat(454, {	-- Books & Scrolls
+			r(226248),	-- Codex of the Tranquil Mind [Rank 1]
+			r(227239),	-- Codex of the Tranquil Mind [Rank 2]
+			r(227240),	-- Codex of the Tranquil Mind [Rank 3]
+			r(192802),	-- Scroll of Forgotten Knowledge
 			r(210653),	-- Songs of Battle
 			r(210654),	-- Songs of Peace
 			r(223941, {	-- Songs of the Alliance
@@ -528,230 +386,695 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["races"] = HORDE_ONLY,
 			}),
 			r(210656),	-- Songs of the Legion
-			r(222408),	-- Unwritten Legend
-			r(226248),	-- Codex of the Tranquil Mind (Rank 1)
-			r(227239),	-- Codex of the Tranquil Mind (Rank 2)
-			r(227240),	-- Codex of the Tranquil Mind (Rank 3)
-			r(192802),	-- Scroll of Forgotten Knowledge
-			r(227043),	-- Tome of the Tranquil Mind
 			r(192804),	-- Steamy Romance Novel Kit
+			r(227043),	-- Tome of the Tranquil Mind
+			r(222408),	-- Unwritten Legend
+		}),
+		cat(451, {	-- Cards
+			r(192854),	-- Prophecy Tarot [Rank 1]
+			r(192855, {["u"]=DARKMOON_FAIRE}),	-- Prophecy Tarot [Rank 2]
+			r(192856, {["u"]=DARKMOON_FAIRE}),	-- Prophecy Tarot [Rank 3]
+			r(191659),	-- Darkmoon Card of the Legion [Rank 1]
+			r(192859, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 2]
+			r(192890, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 3]
+		}),
+		cat(91, {	-- Glyphs
+			r(225535),	-- Glyph of Arachnophobia*
+			r(225534),	-- Glyph of Autumnal Bloom*
+			r(192841),	-- Glyph of Blackout*
+			r(225548),	-- Glyph of Burnout*
+			r(225522),	-- Glyph of Cracked Ice*
+			r(192843),	-- Glyph of Crackling Crane Lightning*
+			r(192850),	-- Glyph of Crackling Flames*
+			r(232274, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Crackling Ox Lightning*
+			r(225550),	-- Glyph of Critterhex*
+			r(254238, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Dark Absolution*
+			r(246982, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Ember Shards*
+			r(228381),	-- Glyph of Falling Thunder*
+			r(192851),	-- Glyph of Fallow Wings*
+			r(192839),	-- Glyph of Fel Imp*
+			r(192849),	-- Glyph of Fel Touched Souls*
+			r(225527),	-- Glyph of Fel Wings*
+			r(225528),	-- Glyph of Fel-Enemies*
+			r(246999, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Fel-Touched Shards*
+			r(225549),	-- Glyph of Flash Bang*
+			r(225551, {	-- Glyph of Flickering*
+				["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
+				["classes"] = { SHAMAN },
+			}),
+			r(246984, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Floating Shards*
+			r(192838),	-- Glyph of Ghostly Fade*
+			r(225529),	-- Glyph of Mana Touched Souls*
+			r(225536),	-- Glyph of Nesingwary's Nemeses*
+			r(225552),	-- Glyph of Pebbles*
+			r(225545),	-- Glyph of Polymorphic Proportions*
+			r(225530),	-- Glyph of Shadow-Enemies*
+			r(225546),	-- Glyph of Smolder*
+			r(192840),	-- Glyph of Sparkles*
+			r(192845),	-- Glyph of Stellar Flare*
+			r(192852),	-- Glyph of Tattered Wings*
+			r(225560),	-- Glyph of the Blazing Savior*
+			r(225524),	-- Glyph of the Chilled Shell*
+			r(225525),	-- Glyph of the Crimson Shell*
+			r(225538),	-- Glyph of the Dire Stable*
+			r(225531),	-- Glyph of the Doe*
+			r(225532),	-- Glyph of the Feral Chameleon*
+			r(225533),	-- Glyph of the Forest Path*
+			r(225539),	-- Glyph of the Goblin Anti-Grav Flare*
+			r(225541),	-- Glyph of the Hook*
+			r(225554),	-- Glyph of the Inquisitor's Eye*
+			r(254227, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Lightspawn*
+			r(225555),	-- Glyph of the Observer*
+			r(192846),	-- Glyph of the Queen*
+			r(192842),	-- Glyph of the Sentinel*
+			r(240272, {["timeline"]={"added 7.2.0"}}),	-- Glyph of the Shadow Succubus*
+			r(225556),	-- Glyph of the Shivarra*
+			r(192844),	-- Glyph of the Spectral Raptor*
+			r(225543),	-- Glyph of the Trident*
+			r(232275, {["timeline"]={"added 7.1.0"}}),	-- Glyph of the Trusted Steed*
+			r(254231, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Voidling*
+			r(225558),	-- Glyph of the Voidlord*
+			r(233278, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Twilight Bloom*
+			r(225559, {["timeline"]={"added 7.2.0"}}),	-- Glyph of Wrathguard*
+			r(225547),	-- Glyph of Yu'lon's Grace*
+		}),
+		cat(492, {	-- Mass Milling
+			r(209658),	-- Mass Mill Aethril
+			r(247861, {["timeline"]={"added 7.3.0"}}),	-- Mass Mill Astral Glory
+			r(209659),	-- Mass Mill Dreamleaf
+			r(209664),	-- Mass Mill Felwort
+			r(209661),	-- Mass Mill Fjarnskaggl
+			r(209660),	-- Mass Mill Foxflower
+			r(209662),	-- Mass Mill Starlight Rose
+			r(210116),	-- Mass Mill Yseralline Seeds
 		}),
 		cat(491, {	-- Relics
 			r(209510),	-- Aqual Mark
 			r(209511),	-- Straszan Mark
 		}),
+		cat(453, {	-- Vantus Runes
+			r(247614, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 1]
+			r(247615, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 2]
+			r(247616, {["timeline"]={"added 7.3.0"}}),	-- Vantus Rune: Antorus, the Burning Throne [Rank 3]
+			r(192814),	-- Vantus Rune: Cenarius [Rank 1]
+			r(192866),	-- Vantus Rune: Cenarius [Rank 2]
+			r(192897),	-- Vantus Rune: Cenarius [Rank 3]
+			r(192816, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 1]
+			r(192868, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 2]
+			r(192899, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Chronomatic Anomaly [Rank 3]
+			r(192811),	-- Vantus Rune: Dragons of Nightmare [Rank 1]
+			r(192863),	-- Vantus Rune: Dragons of Nightmare [Rank 2]
+			r(192894),	-- Vantus Rune: Dragons of Nightmare [Rank 3]
+			r(192813),	-- Vantus Rune: Elerethe Renferal [Rank 1]
+			r(192865),	-- Vantus Rune: Elerethe Renferal [Rank 2]
+			r(192896),	-- Vantus Rune: Elerethe Renferal [Rank 3]
+			r(192823, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 1]
+			r(192875, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 2]
+			r(192906, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Grand Magistrix Elisande [Rank 3]
+			r(229178, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 1]
+			r(229181, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 2]
+			r(229184, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Guarm [Rank 3]
+			r(192824, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 1]
+			r(192876, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 2]
+			r(192907, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Gul'dan [Rank 3]
+			r(229179, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 1]
+			r(229182, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 2]
+			r(229185, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Helya [Rank 3]
+			r(192820, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 1]
+			r(192872, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 2]
+			r(192903, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: High Botanist Tel'arn [Rank 3]
+			r(192810),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 1]
+			r(192862),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 2]
+			r(192893),	-- Vantus Rune: Il'gynoth, The Heart of Corruption [Rank 3]
+			r(192821, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 1]
+			r(192873, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 2]
+			r(192904, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Krosus [Rank 3]
+			r(192809),	-- Vantus Rune: Nythendra [Rank 1]
+			r(192861),	-- Vantus Rune: Nythendra [Rank 2]
+			r(192892),	-- Vantus Rune: Nythendra [Rank 3]
+			r(229177, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 1]
+			r(229180, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 2]
+			r(229183, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Odyn [Rank 3]
+			r(192815, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 1]
+			r(192867, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 2]
+			r(192898, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Skorpyron [Rank 3]
+			r(192818, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 1]
+			r(192870, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 2]
+			r(192901, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Spellblade Aluriel [Rank 3]
+			r(192822, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus [Rank 1]
+			r(192874, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus [Rank 2]
+			r(192905, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Star Augur Etraeus
+			r(192819, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 1]
+			r(192871, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 2]
+			r(192902, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Tichondrius [Rank 3]
+			r(238577, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 1]
+			r(238578, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 2]
+			r(238579, {["timeline"]={"added 7.2.5"}}),	-- Vantus Rune: Tomb of Sargeras [Rank 3]
+			r(192817, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 1]
+			r(192869, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 2]
+			r(192900, {["timeline"]={"added 7.1.0"}}),	-- Vantus Rune: Trilliax [Rank 3]
+			r(192808),	-- Vantus Rune: Ursoc [Rank 1]
+			r(192860),	-- Vantus Rune: Ursoc [Rank 2]
+			r(192891),	-- Vantus Rune: Ursoc [Rank 3]
+			r(192812),	-- Vantus Rune: Xavius [Rank 1]
+			r(192864),	-- Vantus Rune: Xavius [Rank 2]
+			r(192895),	-- Vantus Rune: Xavius [Rank 3]
+		}),
+		n(QUESTS, {
+			q(39847, {	-- Sign This
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["g"] = {
+					r(264506),	-- Legion Inscription
+				},
+			}),
+			q(39931, {	-- Smashing Herbs
+				["sourceQuests"] = { 39847 },	-- Sign This
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
+				["g"] = {
+					recipe(192969),	--
+					recipe(192975),	--
+					recipe(192970),	--
+					recipe(192971),	--
+					recipe(192972),	--
+					recipe(192973),	--
+					recipe(192974),	--
+					recipe(192976),	--
+					recipe(192978),	--
+					recipe(192979),	--
+					recipe(192980),	--
+					recipe(192981),	--
+				},]]--
+			}),
+			q(39932, {	-- Fish Ink
+				["sourceQuests"] = { 39931 },	-- Smashing Herbs
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39933, {	-- The Card Shark
+				["sourceQuests"] = { 39932 },	-- Fish Ink
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["g"] = {
+					r(192854),	-- Prophecy Tarot [Rank 1]
+				},
+			}),
+			q(40056, {	-- Our New Allies (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39934, {	-- Our New Allies (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(40057, {	-- The Price of Power (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["g"] = {
+					i(137741),	-- Technique: Glyph of Fel Touched Souls (RECIPE!)
+				},
+			}),
+			q(39935, {	-- The Price of Power (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["g"] = {
+					i(137741),	-- Technique: Glyph of Fel Touched Souls (RECIPE!)
+				},
+			}),
+			q(40058, {	-- Inscription of the Body (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+			}),
+			q(39936, {	-- Inscription of the Body (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+			}),
+			q(40059, {	-- Opposites Repel (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40058 },	-- Inscription of the Body (DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+			}),
+			q(39937, {	-- Opposites Repel (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+			}),
+			q(40060, {	-- Containing the Demon Within (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(137743),	-- Technique: Glyph of Fallow Wings (RECIPE!)
+				},
+			}),
+			q(39938, {	-- Containing the Demon Within (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
+				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(137743),	-- Technique: Glyph of Fallow Wings (RECIPE!)
+				},
+			}),
+			q(40061, {	-- To Know Your Enemy (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+			}),
+			q(39939, {	-- Scribal Knowledge (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
+				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+			}),
+			q(40063, {	-- Control is Key (DH)
+				["classes"] = { DEMONHUNTER },
+				["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 65.0, 25.8, AZSUNA },
+			}),
+			q(39941, {	-- Control is Key (non-DH)
+				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
+				["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+			}),
+			q(39940, {	-- Runes of Power
+				["sourceQuests"] = {
+					40063,	-- Control is Key (DH)
+					39941,	-- Control is Key (non-DH)
+				},
+				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+				["coord"] = { 43.2, 43.2, AZSUNA },
+				["g"] = {
+					i(137742),	-- Technique: Glyph of Crackling Flames (RECIPE!)
+				},
+			}),
+			q(39943, {	-- The Burdens of Hunting
+				["sourceQuests"] = {
+					40060,	-- Containing the Demon Within (DH)
+					39938,	-- Containing the Demon Within (non-DH)
+					39940,	-- Runes of Power
+					40063,	-- Control is Key (DH)
+					39941,	-- Control is Key (non-DH)
+				},
+				["providers"] = {
+					{ "n", 97734 },	-- Zaria Shadowheart
+					{ "n", 98026 },	-- Baric Stormrunner
+				},
+				["coords"] = {
+					{ 54.0, 15.4, AZSUNA },
+					{ 43.2, 43.2, AZSUNA },
+				},
+				["g"] = {
+					i(137744),	-- Technique: Glyph of Tattered Wings (RECIPE!)
+				},
+			}),
+			q(39944, {	-- Mysterious Messages
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39945, {	-- Runes Within the Ruins
+				["sourceQuests"] = { 39944 },	-- Mysterious Messages
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+			}),
+			q(39946, {	-- Right Tool for the Job
+				["sourceQuests"] = { 39945 },	-- Runes Within the Ruins
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+			}),
+			q(39947, {	-- Not So Complex?
+				["sourceQuests"] = { 39946 },	-- Right Tool for the Job
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+			}),
+			q(40052, {	-- Ancient Vrykul Mastered
+				["sourceQuests"] = { 39947 },	-- Not So Complex?
+				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+				["coord"] = { 69.2, 40.6, STORMHEIM },
+				["g"] = {
+					i(137728),	-- Technique: Scroll of Forgotten Knowledge (RECIPE!)
+				},
+			}),
+			q(39948, {	-- The Ink Flows
+				["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39949, {	-- Once a Scribe Like You
+				["sourceQuests"] = { 39948 },	-- The Ink Flows
+				["provider"] = { "n", 97359 },	-- Raethan
+				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+			}),
+			q(39950, {	-- An Odd Trinket
+				["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
+				["provider"] = { "n", 97359 },	-- Raethan
+				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+				["g"] = {
+					recipe(192855),	-- Prophecy Tarot (Rank 2)
+				},
+			}),
+			q(39954, {	-- Mass Milling Techniques
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["g"] = {
+					r(210116),	-- Mass Mill Yseralline Seeds
+				},
+			}),
+			q(39961, {	-- An Embarrassing Revelation
+				["sourceQuests"] = { 39933 },	-- The Card Shark
+				["provider"] = { "o", 244651 },	-- Steamy Romance Novel
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(39955, {	-- The Plot Thickens (A)
+				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+			}),
+			q(39959, {	-- The Plot Thickens (H)
+				["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
+			}),
+			q(39956, {	-- The Legacy Passed On (A)
+				["sourceQuest"] = 39955,	-- The Plot Thickens (A)
+				["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
+				["coord"] = { 77.2, 10.4, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					r(192804),	-- Steamy Romance Novel Kit
+				},
+			}),
+			q(39960, {	-- The Legacy Passed On (H)
+				["sourceQuests"] = { 39959 },	-- The Plot Thickens (H)
+				["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
+				["coord"] = { 77.8, 38.8, UNDERCITY },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					r(192804),	-- Steamy Romance Novel Kit
+				},
+			}),
+			q(39953, {	-- Halls of Valor: Vision of Valor
+				["sourceQuests"] = {
+					39955,	-- The Legacy Passed On (A)
+					39959,	-- The Plot Thickens (H)
+				},
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
+			}),
+			q(39957, {	-- Demon Ink
+				["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["g"] = {
+					r(191659),	-- Darkmoon Card of the Legion [Rank 1]
+				},
+			}),
+			q(39942, {	-- Aethrem Crystal
+				["provider"] = { "i", 136909 },	-- Aethrem Crystal
+				["description"] = "There is a chance of getting this quest when milling Aethril.",
+				["g"] = {
+					r(209658),	-- Mass Mill Aethril
+				},
+			}),
+			q(40062, {	-- Bulging Nightmare Pod
+				["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
+				["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
+				["g"] = {
+					r(209659),	-- Mass Mill Dreamleaf
+				},
+			}),
+			q(40065, {	-- Fjarnsk
+				["provider"] = { "i", 136916 },	-- Fjarnsk
+				["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
+				["g"] = {
+					r(209661),	-- Mass Mill Fjarnskaggl
+				},
+			}),
+			q(39951, {	-- Roseate Essence
+				["provider"] = { "i", 136917 },	-- Roseate Essence
+				["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
+				["g"] = {
+					r(209662),	-- Mass Mill Starlight Rose
+				},
+			}),
+			q(39952, {	-- Sallow Essence
+				["provider"] = { "i", 136918 },	-- Sallow Essence
+				["description"] = "There is a chance of getting this quest when milling Felwort.",
+				["g"] = {
+					r(209664),	-- Mass Mill Felwort
+				},
+			}),
+			q(40064, {	-- Woody Seed Cluster
+				["provider"] = { "i", 136915 },	-- Woody Seed Cluster
+				["description"] = "There is a chance of getting this quest when milling Foxflower.",
+				["g"] = {
+					r(209660),	-- Mass Mill Foxflower
+				},
+			}),
+			q(43929, bubbleDownSelf({ ["timeline"] = { "added 7.1.0" } }, {	-- Vantus Mastery
+				["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
+				["provider"] = { "n", 90417 },	-- Archmage Khadgar
+				["g"] = {
+					i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3]
+				},
+			})),
+		})
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+		r(264508, {	-- Kul Tiran Inscription
+			["races"] = ALLIANCE_ONLY,
+		}),
+		r(265809, {	-- Zandalari Inscription
+			["races"] = HORDE_ONLY,
+		}),
 		cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
-			r(287271),	-- Aqueous Chromotography*
-			r(286649),	-- Sanguinated Chromotography*
+			r(287271),	-- Aqueous Chromotography
+			r(286649),	-- Sanguinated Chromotography
 		})),
 		cat(1026, {	-- Inks
-			r(264777),	-- Crimson Ink*
-			r(264776),	-- Ultramarine Ink*
-			r(264778),	-- Viridescent Ink*
-			r(298929, {["timeline"]={"added 8.2.0"}}),	-- Maroon Ink*
+			r(264777),	-- Crimson Ink
+			r(264776),	-- Ultramarine Ink
+			r(264778),	-- Viridescent Ink
+			r(298929, {["timeline"]={"added 8.2.0"}}),	-- Maroon Ink
 		}),
 		cat(771, {	-- Books & Scrolls
-			r(256233),	-- Codex of the Quiet Mind [Rank 2]*
-			r(256234),	-- Codex of the Quiet Mind [Rank 3]*
-			r(264767),	-- War-Scroll of Battle Shout*
-			r(256232),	-- Codex of the Quiet Mind [Rank 1]*
-			r(256236),	-- Tome of the Quiet Mind [Rank 2]*
-			r(256237),	-- Tome of the Quiet Mind [Rank 3]*
-			r(264769),	-- War-Scroll of Fortitude*
-			r(264766),	-- War-Scroll of Intellect*
-			r(269065),	-- Scroll of Unlocking*
-			r(256235),	-- Tome of the Quiet Mind [Rank 1]*
+			r(256233),	-- Codex of the Quiet Mind [Rank 2]
+			r(256234),	-- Codex of the Quiet Mind [Rank 3]
+			r(264767),	-- War-Scroll of Battle Shout
+			r(256232),	-- Codex of the Quiet Mind [Rank 1]
+			r(256236),	-- Tome of the Quiet Mind [Rank 2]
+			r(256237),	-- Tome of the Quiet Mind [Rank 3]
+			r(264769),	-- War-Scroll of Fortitude
+			r(264766),	-- War-Scroll of Intellect
+			r(269065),	-- Scroll of Unlocking
+			r(256235),	-- Tome of the Quiet Mind [Rank 1]
 		}),
 		cat(772, {	-- Contracts
-			r(284292, {	-- Contract: 7th Legion [Rank 1]*
+			r(284292, {	-- Contract: 7th Legion [Rank 1]
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(284293, {	-- Contract: 7th Legion [Rank 2]*
+			r(284293, {	-- Contract: 7th Legion [Rank 2]
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(284294, {	-- Contract: 7th Legion [Rank 3]*
+			r(284294, {	-- Contract: 7th Legion [Rank 3]
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(299665, {	-- Contract: Ankoan*
+			r(299665, {	-- Contract: Ankoan
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.2.0" },
 			}),
-			r(256297),	-- Contract: Champions of Azeroth [Rank 1]*
-			r(256298),	-- Contract: Champions of Azeroth [Rank 2]*
-			r(256299),	-- Contract: Champions of Azeroth [Rank 3]*
-			r(256278, {	-- Contract: Order of Embers [Rank 1]*
+			r(256297),	-- Contract: Champions of Azeroth [Rank 1]
+			r(256298),	-- Contract: Champions of Azeroth [Rank 2]
+			r(256299),	-- Contract: Champions of Azeroth [Rank 3]
+			r(256278, {	-- Contract: Order of Embers [Rank 1]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256279, {	-- Contract: Order of Embers [Rank 2]*
+			r(256279, {	-- Contract: Order of Embers [Rank 2]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256280, {	-- Contract: Order of Embers [Rank 3]*
+			r(256280, {	-- Contract: Order of Embers [Rank 3]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256275, {	-- Contract: Proudmoore Admiralty [Rank 1]*
+			r(256275, {	-- Contract: Proudmoore Admiralty [Rank 1]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256276, {	-- Contract: Proudmoore Admiralty [Rank 2]*
+			r(256276, {	-- Contract: Proudmoore Admiralty [Rank 2]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256277, {	-- Contract: Proudmoore Admiralty [Rank 3]*
+			r(256277, {	-- Contract: Proudmoore Admiralty [Rank 3]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(299672, {["timeline"]={"added 8.3.0"}}),	-- Contract: Rajani*
-			r(299671, {["timeline"]={"added 8.2.0"}}),	-- Contract: Rustbolt Resistance*
-			r(256281, {	-- Contract: Storm's Wake [Rank 1]*
+			r(299672, {["timeline"]={"added 8.3.0"}}),	-- Contract: Rajani
+			r(299671, {["timeline"]={"added 8.2.0"}}),	-- Contract: Rustbolt Resistance
+			r(256281, {	-- Contract: Storm's Wake [Rank 1]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256282, {	-- Contract: Storm's Wake [Rank 2]*
+			r(256282, {	-- Contract: Storm's Wake [Rank 2]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256283, {	-- Contract: Storm's Wake [Rank 3]*
+			r(256283, {	-- Contract: Storm's Wake [Rank 3]
 				["races"] = ALLIANCE_ONLY,
 			}),
-			r(256287, {	-- Contract: Talanji's Expedition [Rank 1]*
+			r(256287, {	-- Contract: Talanji's Expedition [Rank 1]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256288, {	-- Contract: Talanji's Expedition [Rank 2]*
+			r(256288, {	-- Contract: Talanji's Expedition [Rank 2]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256289, {	-- Contract: Talanji's Expedition [Rank 3]*
+			r(256289, {	-- Contract: Talanji's Expedition [Rank 3]
 				["races"] = HORDE_ONLY,
 			}),
-			r(284295, {	-- Contract: The Honorbound [Rank 1]*
-				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 8.1.0" },
-			}),
-			r(284296, {	-- Contract: The Honorbound [Rank 2]*
+			r(284295, {	-- Contract: The Honorbound [Rank 1]
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(284297, {	-- Contract: The Honorbound [Rank 3]*
+			r(284296, {	-- Contract: The Honorbound [Rank 2]
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(256294),	-- Contract: Tortollan Seekers [Rank 1]*
-			r(256295),	-- Contract: Tortollan Seekers [Rank 2]*
-			r(256296),	-- Contract: Tortollan Seekers [Rank 3]*
-			r(299673, {["timeline"]={"added 8.3.0"}}),	-- Contract: Uldum Accord*
-			r(299668, {	-- Contract: Unshackled*
+			r(284297, {	-- Contract: The Honorbound [Rank 3]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 8.1.0" },
+			}),
+			r(256294),	-- Contract: Tortollan Seekers [Rank 1]
+			r(256295),	-- Contract: Tortollan Seekers [Rank 2]
+			r(256296),	-- Contract: Tortollan Seekers [Rank 3]
+			r(299673, {["timeline"]={"added 8.3.0"}}),	-- Contract: Uldum Accord
+			r(299668, {	-- Contract: Unshackled
 				["races"] = HORDE_ONLY,
 				["timeline"] = { "added 8.2.0" },
 			}),
-			r(256290, {	-- Contract: Voldunai [Rank 1]*
+			r(256290, {	-- Contract: Voldunai [Rank 1]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256291, {	-- Contract: Voldunai [Rank 2]*
+			r(256291, {	-- Contract: Voldunai [Rank 2]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256293, {	-- Contract: Voldunai [Rank 3]*
+			r(256293, {	-- Contract: Voldunai [Rank 3]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256284, {	-- Contract: Zandalari Empire [Rank 1]*
+			r(256284, {	-- Contract: Zandalari Empire [Rank 1]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256285, {	-- Contract: Zandalari Empire [Rank 2]*
+			r(256285, {	-- Contract: Zandalari Empire [Rank 2]
 				["races"] = HORDE_ONLY,
 			}),
-			r(256286, {	-- Contract: Zandalari Empire [Rank 3]*
+			r(256286, {	-- Contract: Zandalari Empire [Rank 3]
 				["races"] = HORDE_ONLY,
 			}),
 		}),
 		cat(773, {	-- Cards
-			r(278527),	-- Darkmoon Card of War [Rank 1]*
-			r(256245),	-- Darkmoon Card of War [Rank 2]*
-			r(256246),	-- Darkmoon Card of War [Rank 3]*
-			r(302190, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Mystical Bulwark*
-			r(302189, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Storms*
-			r(302188, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Sundering*
-			r(302187, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Swirling Tides*
+			r(278527),	-- Darkmoon Card of War [Rank 1]
+			r(256245),	-- Darkmoon Card of War [Rank 2]
+			r(256246),	-- Darkmoon Card of War [Rank 3]
+			r(302190, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Mystical Bulwark
+			r(302189, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Storms
+			r(302188, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Sundering
+			r(302187, {["timeline"]={"added 8.2.0"}}),	-- Highborne Compendium of Swirling Tides
 		}),
-		--[[
 		cat(774, {	-- Off-Hands
-			r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]*
-			pvp(r(269741)),	-- Honorable Combatant's Etched Vessel [Rank 2]*
-			pvp(r(269742)),	-- Honorable Combatant's Etched Vessel [Rank 3]*
-			r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]*
-			r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]*
-			r(256249),	-- Inscribed Vessel of Mysticism [Rank 3]*
-			r(294790, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Etched Vessel [Rank 1]*
-			pvp(r(294791, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 2]*
-			pvp(r(294792, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 3]*
-			r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]*
-			pvp(r(282804, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 2]*
-			pvp(r(282805, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 3]*
-			r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]*
-			pvp(r(305953, {["timeline"]={"added 8.3.0"}})).	-- Uncanny Combatant's Etched Vessel [Rank 2]*
-			pvp(r(305954, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 3]*
+			r(269740),	-- Honorable Combatant's Etched Vessel [Rank 1]
+			pvp(r(269741)),	-- Honorable Combatant's Etched Vessel [Rank 2]
+			pvp(r(269742)),	-- Honorable Combatant's Etched Vessel [Rank 3]
+			r(256247),	-- Inscribed Vessel of Mysticism [Rank 1]
+			r(256248),	-- Inscribed Vessel of Mysticism [Rank 2]
+			r(256249),	-- Inscribed Vessel of Mysticism [Rank 3]
+			r(294790, {["timeline"]={"added 8.2.0"}}),	-- Notorious Combatant's Etched Vessel [Rank 1]
+			pvp(r(294791, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 2]
+			pvp(r(294792, {["timeline"]={"added 8.2.0"}})),	-- Notorious Combatant's Etched Vessel [Rank 3]
+			r(282803, {["timeline"]={"added 8.1.0"}}),	-- Sinister Combatant's Etched Vessel [Rank 1]
+			pvp(r(282804, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 2]
+			pvp(r(282805, {["timeline"]={"added 8.1.0"}})),	-- Sinister Combatant's Etched Vessel [Rank 3]
+			r(305952, {["timeline"]={"added 8.3.0"}}),	-- Uncanny Combatant's Etched Vessel [Rank 1]
+			pvp(r(305953, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 2]
+			pvp(r(305954, {["timeline"]={"added 8.3.0"}})),	-- Uncanny Combatant's Etched Vessel [Rank 3]
 		}),
-		--]]
 		cat(775, {	-- Mass Milling
-			r(256219),	-- Mass Mill Akunda's Bite*
-			r(256308),	-- Mass Mill Anchor Weed*
-			r(256217),	-- Mass Mill Riverbud*
-			r(256223),	-- Mass Mill Sea Stalk*
-			r(256221),	-- Mass Mill Siren's Pollen*
-			r(256218),	-- Mass Mill Star Moss*
-			r(256220),	-- Mass Mill Winter's Kiss*
-			r(298927, {["timeline"]={"added 8.2.0"}}),	-- Mass Mill Zin'anthid*
+			r(256219),	-- Mass Mill Akunda's Bite
+			r(256308),	-- Mass Mill Anchor Weed
+			r(256217),	-- Mass Mill Riverbud
+			r(256223),	-- Mass Mill Sea Stalk
+			r(256221),	-- Mass Mill Siren's Pollen
+			r(256218),	-- Mass Mill Star Moss
+			r(256220),	-- Mass Mill Winter's Kiss
+			r(298927, {["timeline"]={"added 8.2.0"}}),	-- Mass Mill Zin'anthid
 		}),
 		cat(776, {	-- Vantus Runes
-			r(285639, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 1]*
-			r(285640, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 2]*
-			r(285641, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 3]*
-			r(285925, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 1]*
-			r(285926, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 2]*
-			r(285927, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 3]*
-			r(306482, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 1]*
-			r(306483, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 2]*
-			r(306481, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 3]*
-			r(298625, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 1]*
-			r(298647, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 2]*
-			r(298648, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 3]*
-			r(256303),	-- Vantus Rune: Uldir [Rank 1]*
-			r(256304),	-- Vantus Rune: Uldir [Rank 2]*
-			r(256305),	-- Vantus Rune: Uldir [Rank 3]*
+			r(285639, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 1]
+			r(285640, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 2]
+			r(285641, {["timeline"]={"added 8.1.0"}}),	-- Vantus Rune: Battle of Dazar'alor [Rank 3]
+			r(285925, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 1]
+			r(285926, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 2]
+			r(285927, {["timeline"]={"added 8.1.5"}}),  -- Vantus Rune: Crucible of Storms [Rank 3]
+			r(306482, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 1]
+			r(306483, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 2]
+			r(306481, {["timeline"]={"added 8.3.0"}}),	-- Vantus Rune: Ny'alotha, the Waking City [Rank 3]
+			r(298625, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 1]
+			r(298647, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 2]
+			r(298648, {["timeline"]={"added 8.2.0"}}),	-- Vantus Rune: The Eternal Palace [Rank 3]
+			r(256303),	-- Vantus Rune: Uldir [Rank 1]
+			r(256304),	-- Vantus Rune: Uldir [Rank 2]
+			r(256305),	-- Vantus Rune: Uldir [Rank 3]
 		}),
 		cat(1130, {	-- Glyphs
-			r(304042, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Dire Bees*
-			r(309443, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Lavish Servings*
-			r(304033, {["timeline"]={"added 8.2.0"}}),	-- Glyph of Steaming Fury*
-			r(289356, {  -- Glyph of Storm's Wake*
+			r(304042, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Dire Bees
+			r(309443, {["timeline"]={"added 8.2.5"}}),  -- Glyph of Lavish Servings
+			r(304033, {["timeline"]={"added 8.2.0"}}),	-- Glyph of Steaming Fury
+			r(289356, {  -- Glyph of Storm's Wake
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { "added 8.1.0" },
 			}),
-			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon*
-			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon*
-			r(304036, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Cold Waves*
-			r(304030, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Dark Depths*
-			r(276059),	-- Glyph of the Dolphin*
-			r(276121),	-- Glyph of the Humble Flyer*
-			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon*
-			r(289313, {["timeline"]={"added 8.1.0"}}),	-- Glyph of the Tides*
-			r(276088),	-- Glyph of the Tideskipper*
-
-
-
-
-
-
-			r(225532),  -- Glyph of the Feral Chameleon
+			r(344341, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aerial Chameleon
+			r(344340, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Aquatic Chameleon
+			r(304036, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Cold Waves
+			r(304030, {["timeline"]={"added 8.2.0"}}),	-- Glyph of the Dark Depths
+			r(276059),	-- Glyph of the Dolphin
+			r(276121),	-- Glyph of the Humble Flyer
+			r(344335, {["timeline"]={"added 9.0.2"}}),  -- Glyph of the Swift Chameleon
+			r(289313, {["timeline"]={"added 8.1.0"}}),	-- Glyph of the Tides
+			r(276088),	-- Glyph of the Tideskipper
 		}),
 		cat(1276, sharedDataSelf({ ["timeline"] = { "added 8.1.5" } }, {	-- Blood Contracts
-			r(292320),	-- Blood Contract: Bloodguard*
-			r(292012),	-- Blood Contract: Bloodshed*
-			r(292322),	-- Blood Contract: Oblivion*
-			r(259665),	-- Blood Contract: Sacrifice*
+			r(292320),	-- Blood Contract: Bloodguard
+			r(292012),	-- Blood Contract: Bloodshed
+			r(292322),	-- Blood Contract: Oblivion
+			r(259665),	-- Blood Contract: Sacrifice
 		})),
 		cat(1235, {	-- Follower Equipment
-			r(278422),	-- Crimson Ink Well*
+			r(278422),	-- Crimson Ink Well
 		}),
 		cat(1262, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Tools of the Trade
-			r(256301),	-- Sanguine Feather Quill of Lana'thel*
+			r(256301),	-- Sanguine Feather Quill of Lana'thel
 		})),
 		n(DISCOVERY, {
 			i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)

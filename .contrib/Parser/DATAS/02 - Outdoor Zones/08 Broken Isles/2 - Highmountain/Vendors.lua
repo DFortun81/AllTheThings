@@ -18,7 +18,7 @@ _.Zones =
 				n(94100,  {	-- Lucas Sigmund <Repairs>
 					["coord"] = { 39.9, 52.3, HIGHMOUNTAIN },
 					["g"] = {
-						i(141044),	-- Technique: Glyph of Nesingwary's Nemeses
+						i(141044),	-- Technique: Glyph of Nesingwary's Nemeses (RECIPE!)
 						i(141048, {	-- Technique: Glyph of the Headhunter
 							["u"] = REMOVED_FROM_GAME,
 						}),

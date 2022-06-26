@@ -86,9 +86,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137824),	-- Design: Maelstrom Band (Rank 2)
 					i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 					i(136700),	-- Schematic: "The Felic"
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-					i(140037),	-- Technique: Unwritten Legend
+					i(140037),	-- Technique: Unwritten Legend (RECIPE!)
 					i(134436),	-- Armbands of Slaughter
 					i(134482),	-- Cinch of Frozen Fear
 					i(134521),	-- Dread-Stricken Shoudlerguards
@@ -112,9 +110,7 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137824),	-- Design: Maelstrom Band (Rank 2)
 					i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 					i(136700),	-- Schematic: "The Felic"
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-					i(140037),	-- Technique: Unwritten Legend
+					i(140037),	-- Technique: Unwritten Legend (RECIPE!)
 					i(134466),	-- Begrudging Trudgers
 					i(137456),	-- Belt of Mighty Links
 					i(137459),	-- Chaos Talisman
@@ -210,66 +206,52 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137463),	-- Fealty of Nerub
 					})),
 					cr(102387, e(1697, {	-- Sael'orn
-						["sym"] = {{"select","itemID",
-							141591,	-- Technique: Codex of the Tranquil Mind (Rank 2)
-							141592,	-- Technique: Codex of the Tranquil Mind (Rank 3)	-- confirmed 2022-04-18
-						}},
-						["g"] = {
-							ach(10799),	-- Heroic: Assault on Violet Hold
-							i(137824),	-- Design: Maelstrom Band (Rank 2)
-							i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
-							i(136700),	-- Schematic: "The Felic"
-							i(140037),	-- Technique: Unwritten Legend
-							i(134436),	-- Armbands of Slaughter
-							i(134482),	-- Cinch of Frozen Fear
-							i(134521),	-- Dread-Stricken Shoudlerguards
-							i(134371),	-- Felbat Leather Gloves
-							i(137447),	-- Lair Matron's Spaulders
-							i(137450),	-- Leggings of Acidic Venom
-							i(134527),	-- Loop of Eightfold Eyes
-							i(134390),	-- Mardum Chain Vest
-							i(134393),	-- Netherwhisper Gloves
-							i(134357),	-- Portalguard Waistplate
-							i(137452),	-- Thrumming Gossamer
-							i(134541),	-- Tightweb Choker
-							i(137448),	-- Toxin-Stitched Footwraps
-							i(137451),	-- Vision of the Spider Queen
-							i(137449),	-- Wicked Broodmother's Chestguard
-							i(137474),	-- Loyalty of the Matriarch
-							i(137473),	-- Phase Spider Mandible
-						},
+						ach(10799),	-- Heroic: Assault on Violet Hold
+						i(137824),	-- Design: Maelstrom Band (Rank 2)
+						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
+						i(136700),	-- Schematic: "The Felic"
+						i(140037),	-- Technique: Unwritten Legend (RECIPE!)
+						i(134436),	-- Armbands of Slaughter
+						i(134482),	-- Cinch of Frozen Fear
+						i(134521),	-- Dread-Stricken Shoudlerguards
+						i(134371),	-- Felbat Leather Gloves
+						i(137447),	-- Lair Matron's Spaulders
+						i(137450),	-- Leggings of Acidic Venom
+						i(134527),	-- Loop of Eightfold Eyes
+						i(134390),	-- Mardum Chain Vest
+						i(134393),	-- Netherwhisper Gloves
+						i(134357),	-- Portalguard Waistplate
+						i(137452),	-- Thrumming Gossamer
+						i(134541),	-- Tightweb Choker
+						i(137448),	-- Toxin-Stitched Footwraps
+						i(137451),	-- Vision of the Spider Queen
+						i(137449),	-- Wicked Broodmother's Chestguard
+						i(137474),	-- Loyalty of the Matriarch
+						i(137473),	-- Phase Spider Mandible
 					})),
 					cr(102446, e(1711, {	-- Fel Lord Betrug
-						-- TODO: revise this potentially later possibly [_npcs] => [sym] in parser for Items.
-						-- True Source under Legion/Dungeons/Common Boss Drops? or just directly from Professions...
-						["sym"] = {{"select","itemID",
-							141591,	-- Technique: Codex of the Tranquil Mind (Rank 2)
-							141592,	-- Technique: Codex of the Tranquil Mind (Rank 3)	-- confirmed 2022-04-18
-						}},
-						["g"] = {
-							ach(10799),	-- Heroic: Assault on Violet Hold
-							i(137824),	-- Design: Maelstrom Band (Rank 2)
-							i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
-							i(136700),	-- Schematic: "The Felic"
-							i(140037),	-- Technique: Unwritten Legend
-							i(134466),	-- Begrudging Trudgers
-							i(137456),	-- Belt of Mighty Links
-							i(137459),	-- Chaos Talisman
-							i(137458),	-- Chaos-Forged Necklace
-							i(137457),	-- Chestplate of the Obstinate Conqueror
-							i(134368),	-- Felbat Leather Wristwraps
-							i(137454),	-- Footguards of Stayed Execution
-							i(134515),	-- Greaves of Ruinous Dominion
-							i(137453),	-- Legwraps of Rampant Turmoil
-							i(134389),	-- Mardum Chain Pauldrons
-							i(134395),	-- Netherwhisper Robes
-							i(134360),	-- Portalguard Shoulders
-							i(134407),	-- Rugged Marauder Cape
-							i(137455),	-- Spaulders of Tense Sinew
-							i(134446),	-- Vigilant Bondbreaker Headdress
-							i(137472),	-- Betrug's Vigor
-							i(137476),	-- Brand of Tyranny
-						},
+						ach(10799),	-- Heroic: Assault on Violet Hold
+						i(137824),	-- Design: Maelstrom Band (Rank 2)
+						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
+						i(136700),	-- Schematic: "The Felic"
+						i(140037),	-- Technique: Unwritten Legend (RECIPE!)
+						i(134466),	-- Begrudging Trudgers
+						i(137456),	-- Belt of Mighty Links
+						i(137459),	-- Chaos Talisman
+						i(137458),	-- Chaos-Forged Necklace
+						i(137457),	-- Chestplate of the Obstinate Conqueror
+						i(134368),	-- Felbat Leather Wristwraps
+						i(137454),	-- Footguards of Stayed Execution
+						i(134515),	-- Greaves of Ruinous Dominion
+						i(137453),	-- Legwraps of Rampant Turmoil
+						i(134389),	-- Mardum Chain Pauldrons
+						i(134395),	-- Netherwhisper Robes
+						i(134360),	-- Portalguard Shoulders
+						i(134407),	-- Rugged Marauder Cape
+						i(137455),	-- Spaulders of Tense Sinew
+						i(134446),	-- Vigilant Bondbreaker Headdress
+						i(137472),	-- Betrug's Vigor
+						i(137476),	-- Brand of Tyranny
 					})),
 				},
 			}),
@@ -355,9 +337,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137824),	-- Design: Maelstrom Band (Rank 2)
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-						i(140037),	-- Technique: Unwritten Legend
+						i(140037),	-- Technique: Unwritten Legend (RECIPE!)
 						i(134436),	-- Armbands of Slaughter
 						i(134482),	-- Cinch of Frozen Fear
 						i(134521),	-- Dread-Stricken Shoudlerguards
@@ -381,9 +361,7 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137824),	-- Design: Maelstrom Band (Rank 2)
 						i(137882),	-- Recipe: Warhide Shoulderguard (Rank 3)
 						i(136700),	-- Schematic: "The Felic"
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-						i(140037),	-- Technique: Unwritten Legend
+						i(140037),	-- Technique: Unwritten Legend (RECIPE!)
 						i(134466),	-- Begrudging Trudgers
 						i(137456),	-- Belt of Mighty Links
 						i(137459),	-- Chaos Talisman

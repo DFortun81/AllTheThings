@@ -44,7 +44,9 @@ _.Zones =
 						i(14483, {	-- Pattern: Felcloth Pants
 							["isLimited"] = true,
 						}),
-						i(141041),	-- Technique: Glyph of the Forest Path
+						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)
+							["timeline"] = { "added 7.0.3" },
+						}),
 						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
 							["spellID"] = 127757,	-- Charm Woodland Creature
 						}),

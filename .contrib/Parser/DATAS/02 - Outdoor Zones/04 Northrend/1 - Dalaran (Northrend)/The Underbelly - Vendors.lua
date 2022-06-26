@@ -645,7 +645,9 @@ _.Zones =
 								--["spellID"] = 210108,	-- Detection
 							}),
 							i(136927),	-- Scarlet Confessional Book (TOY!)
-							i(141056),	-- Technique: Glyph of Burnout
+							i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
+								["timeline"] = { "added 7.0.3" },
+							}),
 							i(136972, {	-- Tome of Hex: Cockroach
 								["spellID"] = 211015,	-- Hex(Cockroach)
 								["f"] = RECIPES,

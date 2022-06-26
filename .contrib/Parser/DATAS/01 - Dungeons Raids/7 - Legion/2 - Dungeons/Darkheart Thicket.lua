@@ -77,8 +77,6 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10783),	-- Darkheart Thicket
 					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
 					i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
-					i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
 					i(134405),	-- Cloak of Fading Echoes
@@ -148,8 +146,6 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
 						i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
-						i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes
@@ -222,8 +218,6 @@ _.Instances = { tier(LEGION_TIER, {
 						i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 						i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
 						i(137876),	-- Recipe: Warhide Bindings [Rank 3] (RECIPE!)
-						i(141591),	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(134448),	-- Ashen Satyr Leggings
 						i(137321),	-- Burning Sky Pauldrons
 						i(134405),	-- Cloak of Fading Echoes

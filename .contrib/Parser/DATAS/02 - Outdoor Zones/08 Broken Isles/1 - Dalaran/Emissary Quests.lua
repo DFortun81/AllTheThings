@@ -21,9 +21,7 @@ _.Zones =
 						i(152956),	-- Greater Army of the Light Insignia
 						i(152961),	-- Greater Argussian Reach Insignia
 						i(157828, {	-- Kirin Tor Chest
-							i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3)
-								["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. Only recently on the 01.10.2021 it was confirmed to drop from Nightbane (Mythic).",
-							}),
+							i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 							i(141349, {	-- Strange Humming Crystal
 								-- This is specifically listed here since it is the end result of a quest chain started from this item
 								-- this is so the limited-availability of the emissary cache shows the final outcome

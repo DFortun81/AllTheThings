@@ -28,7 +28,7 @@ _.Instances = { tier(LEGION_TIER, {
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["g"] = {
-						i(141053, {	-- Technique: Glyph of Polymorphic Proportions
+						i(141053, {	-- Technique: Glyph of Polymorphic Proportions (RECIPE!)
 							["description"] = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
 							["cr"] = 111057,	-- The Rat King
 						}),
@@ -94,8 +94,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard
@@ -178,8 +176,6 @@ _.Instances = { tier(LEGION_TIER, {
 					i(137897),	-- Recipe: Dreadleather Gloves (Rank 3)
 					i(127927),	-- Recipe: Potion of the Old War (Rank 2)
 					i(137712),	-- Schematic: Tactical Headgun (Rank 3)
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 					i(134267),	-- Arcane Defender's Breastplate
 					i(137416),	-- Chain of Causal Links
 					i(137419),	-- Chrono Shard

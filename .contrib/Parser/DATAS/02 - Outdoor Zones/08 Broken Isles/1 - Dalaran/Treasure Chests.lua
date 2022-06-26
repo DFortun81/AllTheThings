@@ -23,7 +23,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["coord"] = { 41.34, 36.05, 625 },
 					["g"] = {
-						i(141447),	-- Technique: Tome of the Tranquil Mind
+						i(141447),	-- Technique: Tome of the Tranquil Mind (RECIPE!)
 					},
 				}),
 				o(266851, {	-- Wand of Simulated Life

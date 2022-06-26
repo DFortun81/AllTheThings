@@ -2260,7 +2260,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.8, 74.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(140566),	-- Technique: Songs of the Alliance
+						i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
+							["timeline"] = { "added 7.0.3" },
+						}),
 					},
 				}),
 				n(5494, {	-- Catherine Leland

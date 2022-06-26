@@ -435,7 +435,7 @@ _.ExpansionFeatures =
 						i(122713, {	-- Technique: The Spirit of War
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind
+						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(122599, {	-- Tome of Sorcerous Elements
@@ -735,7 +735,7 @@ _.ExpansionFeatures =
 						i(122713, {	-- Technique: The Spirit of War
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind
+						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 						i(122599, {	-- Tome of Sorcerous Elements
@@ -887,7 +887,7 @@ _.ExpansionFeatures =
 							["questID"] = 40942,
 							["repeatable"] = true,
 						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind
+						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 					},
@@ -1011,7 +1011,7 @@ _.ExpansionFeatures =
 							["questID"] = 40941,
 							["repeatable"] = true,
 						}),
-						i(141642, {	-- Technique: Tome of the Clear Mind
+						i(141642, {	-- Technique: Tome of the Clear Mind (RECIPE!)
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
 						}),
 					},

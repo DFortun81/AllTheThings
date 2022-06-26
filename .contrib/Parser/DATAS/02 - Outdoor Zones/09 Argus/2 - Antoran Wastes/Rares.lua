@@ -119,7 +119,7 @@ root("Zones", {
 						crit(59, {	-- Inquisitor Vethroz
 							["achievementID"] = 12078,	-- Commander of Argus
 						}),
-						i(151543),	-- Technique: Glyph of Fel-Touched Shards
+						i(151543),	-- Technique: Glyph of Fel-Touched Shards (RECIPE!)
 					},
 				}),
 				n(126254, {	-- Lieutenant Xakaar

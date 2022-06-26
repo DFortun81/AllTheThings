@@ -8,21 +8,11 @@ _.Zones =
 		m(STORMHEIM, {
 			n(ZONE_DROPS, {
 				["groups"] = {
-					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
+					i(144309),	-- Formula: Enchant Neck - Mark of the Master [Rank 2] (RECIPE!)
 					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 						["crs"] = { 111393 },	-- Deathcaller Mystic
 					}),
 					i(136701),	-- Schematic: Shockinator
-					i(137729),	-- Technique: Codex of the Tranquil Mind
-					i(141043),	-- Technique: Glyph of Arachnophobia
-					i(141035),	-- Technique: Glyph of Fel Wings
-					i(141060),	-- Technique: Glyph of Pebbles
-					i(141054),	-- Technique: Glyph of Smolder
-					i(141032),	-- Technique: Glyph of the Chilled Shell
-					i(141039),	-- Technique: Glyph of the Doe
-					i(141049),	-- Technique: Glyph of the Hook
-					i(141064),	-- Technique: Glyph of the Shivarra
-					i(141051),	-- Technique: Glyph of the Trident
 					i(141287, {	-- Law of Strength
 						["bonusID"] = 1812,
 					}),

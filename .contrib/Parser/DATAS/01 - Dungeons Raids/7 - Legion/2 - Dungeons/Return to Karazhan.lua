@@ -131,8 +131,8 @@ _.Instances = { tier(LEGION_TIER, {
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["g"] = {
-					i(143615),	-- Technique: Glyph of Crackling Ox Lightning
-					i(143616),	-- Technique: Glyph of the Trusted Steed
+					i(143615),	-- Technique: Glyph of Crackling Ox Lightning (RECIPE!)
+					i(143616),	-- Technique: Glyph of the Trusted Steed (RECIPE!)
 				},
 				["crs"] = {
 					114284,	-- Opera Hall: Wikket
@@ -314,8 +314,6 @@ _.Instances = { tier(LEGION_TIER, {
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11929),	-- Heroic: Return to Karazhan
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds
@@ -487,9 +485,6 @@ _.Instances = { tier(LEGION_TIER, {
 						i(143526),	-- Searing Cinder
 						i(143529),	-- Star of Hollow Spite
 						i(143523),	-- Talisman of the Violet Eye
-						i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3)
-							["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. Only recently on the 01.10.2021 it was confirmed to drop from Nightbane (Mythic).",
-						}),
 					},
 				}),
 				e(1836,   {	-- The Curator
@@ -542,8 +537,6 @@ _.Instances = { tier(LEGION_TIER, {
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
-						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-						--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds

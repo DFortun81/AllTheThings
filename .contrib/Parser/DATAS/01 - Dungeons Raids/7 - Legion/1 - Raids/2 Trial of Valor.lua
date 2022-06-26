@@ -164,8 +164,8 @@ root("Instances", tier(LEGION_TIER, {
 					["g"] = {
 						cr(114263, e(1819, {	-- Odyn
 							ach(11394, crit(1)),	-- Trial of Valor / Odyn
-							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
-							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
+							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 							i(142540),	-- Mantle of the Victorious Dead
 							i(142431),	-- Gleaming Val'kyr Cuirass
 							i(142410),	-- Robes of Celestial Adornment
@@ -183,8 +183,8 @@ root("Instances", tier(LEGION_TIER, {
 						})),
 						cr(114323, e(1830, {	-- Guarm
 							ach(11394, crit(2)),	-- Trial of Valor / Guarm
-							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 							i(142412),	-- Windwhipped Sailcloth
 							i(142432),	-- Helbeast Skin Tunic
 							i(142423),	-- Bite-Resistant Wristclamps
@@ -201,8 +201,8 @@ root("Instances", tier(LEGION_TIER, {
 						})),
 						cr(114537, e(1829, {	-- Helya
 							ach(11394, crit(3)),	-- Trial of Valor / Helya
-							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
-							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
+							i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+							i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 							i(142428),	-- Sea Fan Pendant
 							i(142521),	-- Drape of the Unworthy
 							i(142433),	-- Corroded Val'kyr Chainmail
@@ -230,8 +230,8 @@ root("Instances", tier(LEGION_TIER, {
 				cr(114263, e(1819, {	-- Odyn
 					ach(11394, crit(1)),	-- Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -255,8 +255,8 @@ root("Instances", tier(LEGION_TIER, {
 					["g"] = {
 						ach(11394, crit(2)),	-- Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -275,8 +275,8 @@ root("Instances", tier(LEGION_TIER, {
 				cr(114537, e(1829, {	-- Helya
 					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail
@@ -369,8 +369,8 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11394, crit(1)),	-- Trial of Valor / Odyn
 					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -395,8 +395,8 @@ root("Instances", tier(LEGION_TIER, {
 						ach(11394, crit(2)),	-- Trial of Valor / Guarm
 						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -419,8 +419,8 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail
@@ -448,8 +448,8 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11396),	-- Mythic: Odyn
 					ach(11337),	-- You Runed Everything!
-					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
-					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
+					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 					i(142540),	-- Mantle of the Victorious Dead
 					i(142431),	-- Gleaming Val'kyr Cuirass
 					i(142410),	-- Robes of Celestial Adornment
@@ -475,8 +475,8 @@ root("Instances", tier(LEGION_TIER, {
 						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11397),	-- Mythic: Guarm
 						ach(11386),	-- Boneafide Tri Tip
-						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
-						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth
 						i(142432),	-- Helbeast Skin Tunic
 						i(142423),	-- Bite-Resistant Wristclamps
@@ -575,8 +575,8 @@ root("Instances", tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
-					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
+					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 					i(142428),	-- Sea Fan Pendant
 					i(142521),	-- Drape of the Unworthy
 					i(142433),	-- Corroded Val'kyr Chainmail

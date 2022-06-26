@@ -181,9 +181,7 @@ root("Instances", { tier(LEGION_TIER, {
 				})),
 				cr(122314, e(1982, {	-- L'ura
 					ach(12007),	-- Heroic: Seat of the Triumvirate
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-					i(153037),	-- Technique: Glyph of Dark Absolution
+					i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
 					i(151311),	-- Band of the Triumvirate
 					i(151302),	-- Cord of Unraveling Reality
 					i(151340),	-- Echo of L'ura
@@ -255,9 +253,7 @@ root("Instances", { tier(LEGION_TIER, {
 				cr(122314, e(1982, {	-- L'ura
 					ach(12009),	-- Darker Side
 					ach(12008),	-- Mythic: Seat of the Triumvirate
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					--i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3) [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-					i(153037),	-- Technique: Glyph of Dark Absolution
+					i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
 					i(151311),	-- Band of the Triumvirate
 					i(151302),	-- Cord of Unraveling Reality
 					i(151340),	-- Echo of L'ura

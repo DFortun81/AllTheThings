@@ -12,16 +12,6 @@ _.Zones =
 				}),
 				i(137841),	-- Design: Deep Amber Pendant (Rank 3)
 				i(136704),	-- Formula: Immaculate Fibril (RECIPE!)
-				i(137729),	-- Technique: Codex of the Tranquil Mind
-				i(141043),	-- Technique: Glyph of Arachnophobia
-				i(141035),	-- Technique: Glyph of Fel Wings
-				i(141060),	-- Technique: Glyph of Pebbles
-				i(141054),	-- Technique: Glyph of Smolder
-				i(141032),	-- Technique: Glyph of the Chilled Shell
-				i(141039),	-- Technique: Glyph of the Doe
-				i(141049),	-- Technique: Glyph of the Hook
-				i(141064),	-- Technique: Glyph of the Shivarra
-				i(141051),	-- Technique: Glyph of the Trident
 				i(139559, {	-- The Stars' Design
 					artifact(893),	-- Fire Mage Hidden Appearance
 				}),

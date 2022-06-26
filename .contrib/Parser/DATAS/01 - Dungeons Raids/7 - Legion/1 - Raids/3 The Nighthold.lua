@@ -88,8 +88,8 @@ _.Instances = { tier(LEGION_TIER, {
 					["g"] = {
 						cr(102263, e(1706, {	-- Skorpyron
 							ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
-							i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
-							i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
+							i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
+							i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 							i(140901),	-- Vintage Suramar Nobility Hat
 							i(140898),	-- Radiant String of Scorpid Eyes
 							i(140875),	-- Arcanochitin Hauberk
@@ -107,8 +107,8 @@ _.Instances = { tier(LEGION_TIER, {
 						})),
 						cr(104415, e(1725, {	-- Chronomatic Anomaly
 							ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
-							i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
-							i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
+							i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
+							i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 							i(138828),	-- Illusion: Chronos
 							i(140903),	-- Hood of Fading Opportunity
 							i(140894),	-- Zealous Timestone Pendant
@@ -127,8 +127,8 @@ _.Instances = { tier(LEGION_TIER, {
 						})),
 						cr(104288, e(1731, {	-- Trilliax
 							ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
-							i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
-							i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
+							i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
+							i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 							i(138375),	-- Cape of Second Sight
 							i(138373),	-- Cloak of Azj'Aqir
 							i(138367),	-- Cloak of Enveloped Dissonance
@@ -162,8 +162,8 @@ _.Instances = { tier(LEGION_TIER, {
 					["g"] = {
 						cr(104881, e(1751, {	-- Spellblade Aluriel
 							ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
-							i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
-							i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
+							i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
+							i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 							i(140866),	-- Nightborne Battle-Magus Hood
 							i(140877),	-- Captain's Parade Breastplate
 							i(140850),	-- Bracers of Harnessed Flame
@@ -182,8 +182,8 @@ _.Instances = { tier(LEGION_TIER, {
 						cr(103758, e(1732, {	-- Star Augur Etraeus
 							ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 							i(142078),	-- Pattern: Imbued Silkweave Bag (Rank 3)
-							i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
-							i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
+							i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
+							i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 							i(140900),	-- Brooch of the Astral Scryer
 							i(140864),	-- Mantle of the Torn Sky
 							i(140909),	-- Astromancer's Greatcloak
@@ -216,9 +216,9 @@ _.Instances = { tier(LEGION_TIER, {
 							},
 							["g"] = {
 								ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
-								i(143751),	-- Technique: Glyph of Twilight Bloom
-								i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-								i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+								i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
+								i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
+								i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
 								i(140881),	-- Eventide Casque
 								i(140883),	-- Shoulderguard of the Eclipse
 								i(140874),	-- Thistle-Proof Thorngrabbers
@@ -241,8 +241,8 @@ _.Instances = { tier(LEGION_TIER, {
 					["g"] = {
 						cr(103685, e(1762, {	-- Tichondrius
 							ach(10838, crit(2)),	-- Nightspire / Tichondrius
-							i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
-							i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
+							i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
+							i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 							i(138338),	-- Doomblade Spaulders
 							i(138361),	-- Dreadwyrm Shoulderguards
 							i(138347),	-- Eagletalon Spaulders
@@ -267,8 +267,8 @@ _.Instances = { tier(LEGION_TIER, {
 						})),
 						cr(101002, e(1713, {	-- Krosus
 							ach(10838, crit(1)),	-- Nightspire / Krosus
-							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
-							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
+							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
+							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 							i(140870),	-- Architect's Coif of Despair
 							i(140899),	-- Beleron's Choker of Misery
 							i(138350),	-- Breastplate of the Highlord
@@ -296,8 +296,8 @@ _.Instances = { tier(LEGION_TIER, {
 							crit(3, {	-- Elisande
 								["achievementID"] = 10838,	-- Nightspire
 							}),
-							i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
-							i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
+							i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
+							i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 							i(138332),	-- Doomblade Cowl
 							i(138355),	-- Dreadwyrm Crown
 							i(138342),	-- Eagletalon Cowl
@@ -328,8 +328,8 @@ _.Instances = { tier(LEGION_TIER, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(104154, e(1737, {	-- Gul'dan
-							i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
-							i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
+							i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
+							i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
 							i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 							i(143544),	-- Skull of Corruption (TOY!)
 							i(140917),	-- Netherbranded Shoulderpads
@@ -432,8 +432,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(102263, e(1706, {	-- Skorpyron
 					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10678),	-- Cage Rematch
-					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
-					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
+					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
+					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 					i(140901),	-- Vintage Suramar Nobility Hat
 					i(140898),	-- Radiant String of Scorpid Eyes
 					i(140875),	-- Arcanochitin Hauberk
@@ -452,8 +452,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
 					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
-					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
-					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
+					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
+					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 					i(138828),	-- Illusion: Chronos
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
@@ -473,8 +473,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104288, e(1731, {	-- Trilliax
 					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
-					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
-					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
+					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
+					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138375),	-- Cape of Second Sight
 						i(138373),	-- Cloak of Azj'Aqir
@@ -514,8 +514,8 @@ _.Instances = { tier(LEGION_TIER, {
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
-					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
+					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
+					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 					i(140866),	-- Nightborne Battle-Magus Hood
 					i(140877),	-- Captain's Parade Breastplate
 					i(140850),	-- Bracers of Harnessed Flame
@@ -535,8 +535,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10838, crit(2)),	-- Nightspire / Tichondrius
 					ach(10704),	-- Not For You
 					i(137687),	-- Recipe: Fel Core Hound Harness
-					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
-					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
+					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
+					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138323),	-- Pauldrons of Azj'Aqir
 						i(138362),	-- Pauldrons of the Highlord
@@ -568,8 +568,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(101002, e(1713, {	-- Krosus
 					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10575),	-- Burning Bridges
-					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
-					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
+					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
+					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138350),	-- Breastplate of the Highlord
 						i(138320),	-- Finery of Azj'Aqir
@@ -609,9 +609,9 @@ _.Instances = { tier(LEGION_TIER, {
 					["g"] = {
 						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10754),	-- Fruit of All Evil
-						i(143751),	-- Technique: Glyph of Twilight Bloom
-						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -631,8 +631,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					i(142078),	-- Pattern: Imbued Silkweave Bag
-					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
-					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
+					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
+					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
 						i(138377),	-- Gloves of Second Sight
@@ -665,8 +665,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(106643, e(1743, {	-- Elisande
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
-					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
+					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
+					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138314),	-- Eyes of Azj'Aqir
 						i(138356),	-- Helmet of the Highlord
@@ -701,8 +701,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
 					i(137574),	-- Felblaze Infernal (MOUNT!)
-					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
-					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
+					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
+					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 					i(143544),	-- Skull of Corruption (TOY!)
 					i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -806,8 +806,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(102263, e(1706, {	-- Skorpyron
 					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10678),	-- Cage Rematch
-					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
-					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
+					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
+					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 					i(140901),	-- Vintage Suramar Nobility Hat
 					i(140898),	-- Radiant String of Scorpid Eyes
 					i(140875),	-- Arcanochitin Hauberk
@@ -826,8 +826,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
 					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
-					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
-					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
+					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
+					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 					i(138828),	-- Illusion: Chronos
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
@@ -847,8 +847,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(104288, e(1731, {	-- Trilliax
 					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
-					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
-					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
+					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
+					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138375),	-- Cape of Second Sight
 						i(138373),	-- Cloak of Azj'Aqir
@@ -888,8 +888,8 @@ _.Instances = { tier(LEGION_TIER, {
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
-					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
+					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
+					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 					i(140866),	-- Nightborne Battle-Magus Hood
 					i(140877),	-- Captain's Parade Breastplate
 					i(140850),	-- Bracers of Harnessed Flame
@@ -909,8 +909,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10838, crit(2)),	-- Nightspire / Tichondrius
 					ach(10704),	-- Not For You
 					i(137687),	-- Recipe: Fel Core Hound Harness
-					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
-					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
+					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
+					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138323),	-- Pauldrons of Azj'Aqir
 						i(138362),	-- Pauldrons of the Highlord
@@ -942,8 +942,8 @@ _.Instances = { tier(LEGION_TIER, {
 				cr(101002, e(1713, {	-- Krosus
 					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10575),	-- Burning Bridges
-					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
-					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
+					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
+					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138350),	-- Breastplate of the Highlord
 						i(138320),	-- Finery of Azj'Aqir
@@ -983,9 +983,9 @@ _.Instances = { tier(LEGION_TIER, {
 					["g"] = {
 						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10754),	-- Fruit of All Evil
-						i(143751),	-- Technique: Glyph of Twilight Bloom
-						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -1005,8 +1005,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					i(142078),	-- Pattern: Imbued Silkweave Bag
-					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
-					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
+					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
+					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
 						i(138377),	-- Gloves of Second Sight
@@ -1041,8 +1041,8 @@ _.Instances = { tier(LEGION_TIER, {
 						["achievementID"] = 10838,	-- Nightspire
 					}),
 					ach(10699),	-- Infinitesimal
-					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
-					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
+					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
+					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138314),	-- Eyes of Azj'Aqir
 						i(138356),	-- Helmet of the Highlord
@@ -1080,8 +1080,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10696),	-- I've Got My Eyes On You
 					ach(10839),	-- Betrayer's Rise
 					i(137574),	-- Felblaze Infernal (MOUNT!)
-					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
-					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
+					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
+					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 					i(143544),	-- Skull of Corruption (TOY!)
 					i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1185,8 +1185,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10840),	-- Mythic: Skorpyron
 					ach(10678),	-- Cage Rematch
-					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
-					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
+					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
+					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 					i(140901),	-- Vintage Suramar Nobility Hat
 					i(140898),	-- Radiant String of Scorpid Eyes
 					i(140875),	-- Arcanochitin Hauberk
@@ -1206,8 +1206,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10842),	-- Mythic: Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
-					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
-					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
+					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
+					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
 					i(138828),	-- Illusion: Chronos
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
@@ -1228,8 +1228,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10843),	-- Mythic: Trilliax
 					ach(10742),	-- Gluten Free
-					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
-					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
+					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
+					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138375),	-- Cape of Second Sight
 						i(138373),	-- Cloak of Azj'Aqir
@@ -1270,8 +1270,8 @@ _.Instances = { tier(LEGION_TIER, {
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
-					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
+					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
+					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 					i(140866),	-- Nightborne Battle-Magus Hood
 					i(140877),	-- Captain's Parade Breastplate
 					i(140850),	-- Bracers of Harnessed Flame
@@ -1292,8 +1292,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10847),	-- Mythic: Tichondrius
 					ach(10704),	-- Not For You
 					i(137687),	-- Recipe: Fel Core Hound Harness
-					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
-					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
+					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
+					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 					i(143566, {	-- Shoulders of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138323),	-- Pauldrons of Azj'Aqir
 						i(138362),	-- Pauldrons of the Highlord
@@ -1326,8 +1326,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10848),	-- Mythic: Krosus
 					ach(10575),	-- Burning Bridges
-					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
-					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
+					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
+					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138350),	-- Breastplate of the Highlord
 						i(138320),	-- Finery of Azj'Aqir
@@ -1368,9 +1368,9 @@ _.Instances = { tier(LEGION_TIER, {
 						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10846),	-- Mythic: High Botanist Tel'arn
 						ach(10754),	-- Fruit of All Evil
-						i(143751),	-- Technique: Glyph of Twilight Bloom
-						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -1391,8 +1391,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10845),	-- Mythic: Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					i(142078),	-- Pattern: Imbued Silkweave Bag
-					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
-					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
+					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
+					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
 						i(138377),	-- Gloves of Second Sight
@@ -1426,8 +1426,8 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10849),	-- Mythic: Grand Magistrix Elisande
 					ach(10699),	-- Infinitesimal
-					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
-					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
+					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
+					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138314),	-- Eyes of Azj'Aqir
 						i(138356),	-- Helmet of the Highlord
@@ -1480,8 +1480,8 @@ _.Instances = { tier(LEGION_TIER, {
 						}),
 						i(137575),	-- Hellfire Infernal (MOUNT!)
 						i(137574),	-- Felblaze Infernal (MOUNT!)
-						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
-						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
+						i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
+						i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
 						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 						i(143544),	-- Skull of Corruption (TOY!)
 						i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]

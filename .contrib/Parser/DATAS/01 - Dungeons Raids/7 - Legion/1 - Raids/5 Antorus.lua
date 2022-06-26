@@ -61,9 +61,9 @@ root("Instances", tier(LEGION_TIER, {
 					124828,	-- Argus the Unmaker*
 				},
 				["g"] = {
-					i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 1]
-					i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2]
-					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3]
+					i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 1] (RECIPE!)
+					i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2] (RECIPE!)
+					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
 			}),
 			d(17, {	-- Looking For Raid

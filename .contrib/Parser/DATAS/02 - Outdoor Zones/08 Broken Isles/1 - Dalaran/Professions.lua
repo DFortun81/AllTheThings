@@ -352,19 +352,13 @@ _.Zones =
 						["provider"] = { "n", 97362 },	-- Dazzik "Proudmoore"
 						["repeatable"] = true,
 					}),
-					q(43929, {	-- Vantus Mastery
-						["provider"] = { "n", 90417 },	-- Archmage Khadgar
-						["g"] = {
-							i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
-						},
-					}),
 					n(WORLD_QUESTS, {
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["requireSkill"] = INSCRIPTION,
 							["g"] = {
-								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption (Rank 3)
+								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
 							},
 						}),
 					}),

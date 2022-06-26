@@ -625,11 +625,8 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 3.0.2.8905" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(137789, {	-- Technique: Songs of the Legion
-							["spellID"] = 210656,	-- Songs of the Legion
+						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
 							["timeline"] = { "added 7.0.3.21134" },
-							["requireSkill"] = INSCRIPTION,
-							["f"] = RECIPES,
 						}),
 					},
 				}),

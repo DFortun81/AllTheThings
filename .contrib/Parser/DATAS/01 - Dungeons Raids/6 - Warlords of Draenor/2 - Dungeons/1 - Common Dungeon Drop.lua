@@ -16,7 +16,7 @@ _.Instances = {
 		n(-23, {
 			["description"] = "tbd",
 			["g"] = {
-				i(141643, {	-- Technique: Codex of the Clear Mind
+				i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)
 					["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS },
 				}),
 				d(1, {	-- Normal
