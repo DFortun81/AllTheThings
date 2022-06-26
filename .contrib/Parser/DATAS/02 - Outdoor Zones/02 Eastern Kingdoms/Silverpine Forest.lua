@@ -1143,7 +1143,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(440, {	-- The Engraved Ring
 					["providers"] = {
-						{ "o", 1952 },	-- High Executor Hadrec
+						{ "n", 1952 },	-- High Executor Hadrec
 						{ "i", 3234 },	-- Deliah's Ring
 					},
 					["sourceQuest"] = 439,	-- Rot Hide Clues
