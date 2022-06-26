@@ -25,6 +25,28 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 				ach(12522),	-- Crimson Descent
 				ach(12523),	-- Heart of Corruption
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					137119,	-- Taloc
+					135452,	-- MOTHER
+					136429,	-- Chamber 01 (MOTHER)
+					137022,	-- Chamber 02 (MOTHER)
+					137023,	-- Chamber 03 (MOTHER)
+					134445,	-- Zek'voz <Herald of N'zoth>
+					134442,	-- Vectis
+					133298,	-- Fetid Devourer
+					138967,	-- Zul
+					134546,	-- Mythrax the Unraveler
+					132998,	-- G'huun
+				},
+				["g"] = {
+					i(162521),	-- Recipe: Mystical Cauldron [Rank 3] (RECIPE!)
+					i(162461),	-- Sanguicell
+					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
+					i(162124),	-- Vantus Rune Technique: Uldir [Rank 2] (RECIPE!)
+					i(162125),	-- Vantus Rune Technique: Uldir [Rank 3] (RECIPE!)
+				},
+			}),
 			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
 					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
@@ -95,27 +117,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 						}),
 					},
 				}),
-			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					137119,	-- Taloc
-					135452,	-- MOTHER
-					136429,	-- Chamber 01 (MOTHER)
-					137022,	-- Chamber 02 (MOTHER)
-					137023,	-- Chamber 03 (MOTHER)
-					134445,	-- Zek'voz <Herald of N'zoth>
-					134442,	-- Vectis
-					133298,	-- Fetid Devourer
-					138967,	-- Zul
-					134546,	-- Mythrax the Unraveler
-					132998,	-- G'huun
-				},
-				["g"] = {
-					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
-					i(162124),	-- Vantus Rune Technique: Uldir [Rank 2] (RECIPE!)
-					i(162125),	-- Vantus Rune Technique: Uldir [Rank 3] (RECIPE!)
-					i(162521),	-- Recipe: Mystical Cauldron [Rank 3] (RECIPE!)
-				},
 			}),
 			d(17,  {	-- LFR
 				n(ZONE_DROPS, {
@@ -834,12 +835,14 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 						}),
 						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
 						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,
+							["collectible"] = false,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},

@@ -164,12 +164,14 @@ root("ExpansionFeatures", {
 				["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				["provider"] = { "n", 146384 },	-- Xal'atath
 				["coord"] = { 53.0, 13.6, VOLDUN },
+				["maps"] = { 1363 },	-- Crucible of Storms (Scenario Map)
 			}),
 			q(53763, {	-- Twist the Knife
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53762 },	-- The Tempest Crown
 				["provider"] = { "n", 146384 },	-- Xal'atath
 				["coord"] = { 53.0, 13.6, VOLDUN },
+				["maps"] = { 1363 },	-- Crucible of Storms (Scenario Map)
 			}),
 			q(53760, {	-- Unintended Consequences [Non-Priest]
 				["sourceQuests"] = {

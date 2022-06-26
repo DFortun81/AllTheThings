@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, 1527 },	-- Uldum
@@ -25,6 +25,15 @@ _.Instances = { tier(BFA_TIER, {
 			--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(14146, {	-- Glory of the Ny'alotha Raider
+					i(174861),	-- Wriggling Parasite (MOUNT!)
+				}),
+				ach(14193),	-- Vision of Destiny
+				ach(14194),	-- Halls of Devotion
+				ach(14195),	-- Gift of Flesh
+				ach(14196),	-- The Waking Dream
+			}),
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
 					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
@@ -73,6 +82,7 @@ _.Instances = { tier(BFA_TIER, {
 					}),
 				}),
 				ach(14193, {	-- Vision of Destiny
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -81,6 +91,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2368, {	-- Wrathion, the Black Emperor
 							["crs"] = { 156818 },
 							["g"] = {
+								crit(1, {	-- Wrathion, the Black Emperor
+									["achievementID"] = 14193,	-- Vision of Destiny
+								}),
 								i(172185),	-- Destroyer's Shadowblade
 								i(172199),	-- Faralos, Empire's Dream
 								i(174105),	-- Mish'un, Blade of Tyrants
@@ -94,6 +107,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2365, {	-- Maut
 							["crs"] = { 156523 },
 							["g"] = {
+								crit(2, {	-- Maut
+									["achievementID"] = 14193,	-- Vision of Destiny
+								}),
 								i(172191),	-- An'zig Vra
 								i(172200),	-- Sk'shuul Vaz
 								i(174132),	-- Stygian Guise
@@ -104,12 +120,15 @@ _.Instances = { tier(BFA_TIER, {
 								i(174141),	-- Boots of Manifest Shadow
 								i(173944),	-- Forbidden Obsidian Claw
 								i(173940),	-- Sigil of Warding
-								i(174446),	-- Fractured Obsidian Claw (pet)
+								i(174446),	-- Fractured Obsidian Claw (PET!)
 							},
 						}),
 						e(2369, {	-- The Prophet Skitra
 							["crs"] = { 157238, 157620 },
 							["g"] = {
+								crit(3, {	-- The Prophet Skitra
+									["achievementID"] = 14193,	-- Vision of Destiny
+								}),
 								i(174279),	-- Encrypted Ny'alothan Text
 								i(172201),	-- Bloodstained Ritual Athame
 								i(172193),	-- Whispering Eldritch Bow
@@ -126,6 +145,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(14194, {	-- Halls of Devotion
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -134,6 +154,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2377, {	-- Dark Inquisitor Xanesh
 							["crs"] = { 160229, 156575 },
 							["g"] = {
+								crit(1, {	-- Dark Inquisitor Xanesh
+									["achievementID"] = 14194,	-- Halls of Devotion
+								}),
 								i(172196),	-- Vorzz Yoq'al
 								i(172190),	-- Uhnish Vwah
 								i(174169),	-- Gauntlets of Foul Inquisition
@@ -147,6 +170,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2370, {	-- Vexiona
 							["crs"] = { 157354 },
 							["g"] = {
+								crit(2, {	-- Vexiona
+									["achievementID"] = 14194,	-- Halls of Devotion
+								}),
 								i(174279),	-- Encrypted Ny'alothan Text
 								i(172194),	-- Gift of the Void
 								i(174148),	-- Helm of Deep Despair
@@ -162,6 +188,9 @@ _.Instances = { tier(BFA_TIER, {
 								157254,	-- Tek'ris
 							},
 							["g"] = {
+								crit(3, {	-- The Hivemind
+									["achievementID"] = 14194,	-- Halls of Devotion
+								}),
 								i(174448),	-- Aqir Hivespawn (PET!)
 								i(174449),	-- Ra'kim (PET!)
 								i(174106),	-- Qwor N'lyeth
@@ -177,7 +206,10 @@ _.Instances = { tier(BFA_TIER, {
 						e(2364, {	-- Ra-den the Despoiled
 							["crs"] = { 156866 },
 							["g"] = {
-								i(174447),	-- Void-Scarred Anubisath (pet)
+								crit(4, {	-- Ra-den the Despoiled
+									["achievementID"] = 14194,	-- Halls of Devotion
+								}),
+								i(174447),	-- Void-Scarred Anubisath (PET!)
 								i(174279),	-- Encrypted Ny'alothan Text
 								i(172228),	-- Shandai, Watcher of Cosmos
 								i(172197),	-- Unguent Caress
@@ -194,6 +226,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(14195, {	-- Gift of Flesh
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -202,6 +235,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2367, {	-- Shad'har the Insatiable
 							["crs"] = { 157231 },
 							["g"] = {
+								crit(1, {	-- Shad'har the Insatiable
+									["achievementID"] = 14195,	-- Gift of Flesh
+								}),
 								i(172186),	-- Warmace of Waking Nightmares
 								i(174107),	-- Insidious Writhing Longbow
 								i(174177),	-- Bracers of Phantom Pains
@@ -215,6 +251,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2373, {	-- Drest'agath
 							["crs"] = { 157602 },
 							["g"] = {
+								crit(2, {	-- Drest'agath
+									["achievementID"] = 14195,	-- Gift of Flesh
+								}),
 								i(172195),	-- Halsheth, Slumberer's Spear
 								i(172198),	-- Mar'kowa, the Mindpiercer
 								i(174146),	-- Gloves of Abyssal Authority
@@ -229,6 +268,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2374, {	-- Il'gynoth, Corruption Reborn
 							["crs"] = { 158328 },
 							["g"] = {
+								crit(3, {	-- Il'gynoth, Corruption Reborn
+									["achievementID"] = 14195,	-- Gift of Flesh
+								}),
 								i(174279),	-- Encrypted Ny'alothan Text
 								i(172189),	-- Eyestalk of Il'gynoth
 								i(172188),	-- Precipice of Oblivion
@@ -246,6 +288,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(14196, {	-- The Waking Dream
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -254,6 +297,9 @@ _.Instances = { tier(BFA_TIER, {
 						e(2366, {	-- Carapace of N'Zoth
 							["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 							["g"] = {
+								crit(1, {	-- Carapace of N'Zoth
+									["achievementID"] = 14196,	-- The Waking Dream
+								}),
 								i(174109),	-- Lurker's Piercing Gaze
 								i(172227),	-- Shard of the Black Empire
 								i(174108),	-- Shgla'yos, Astral Malignity
@@ -270,7 +316,10 @@ _.Instances = { tier(BFA_TIER, {
 						e(2375, {	-- N'Zoth, the Corruptor
 							["crs"] = { 158041 },
 							["g"] = {
-								i(174452),	-- Eye of Corruption (Pet)
+								crit(2, {	-- N'Zoth, the Corruptor
+									["achievementID"] = 14196,	-- The Waking Dream
+								}),
+								i(174452),	-- Eye of Corruption (PET!)
 								i(174279),	-- Encrypted Ny'alothan Text
 								i(172187),	-- Devastation's Hour
 								i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -288,11 +337,6 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(14, {	-- Normal
-				n(ACHIEVEMENTS, {
-					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite (MOUNT!)
-					}),
-				}),
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -342,7 +386,7 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14008),	-- Mana Sponge
-						i(174446),	-- Fractured Obsidian Claw (pet)
+						i(174446),	-- Fractured Obsidian Claw (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -451,7 +495,7 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(13999),	-- Clean up, Aisle 9
-						i(174447),	-- Void-Scarred Anubisath (pet)
+						i(174447),	-- Void-Scarred Anubisath (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
@@ -505,7 +549,7 @@ _.Instances = { tier(BFA_TIER, {
 					["g"] = {
 						ach(14148),	-- Peer Pressure
 						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (Pet)
+						i(174452),	-- Eye of Corruption (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -521,11 +565,6 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(15, {	-- Heroic
-				n(ACHIEVEMENTS, {
-					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite (MOUNT!)
-					}),
-				}),
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -560,7 +599,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = {
-						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade
 						i(172199),	-- Faralos, Empire's Dream
 						i(174105),	-- Mish'un, Blade of Tyrants
@@ -574,8 +612,7 @@ _.Instances = { tier(BFA_TIER, {
 				e(2365, {	-- Maut
 					["crs"] = { 156523 },
 					["g"] = {
-						ach(14008),	-- Mana Sponge
-						i(174446),	-- Fractured Obsidian Claw (pet)
+						i(174446),	-- Fractured Obsidian Claw (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -591,7 +628,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2369, {	-- The Prophet Skitra
 					["crs"] = { 157238, 157620 },
 					["g"] = {
-						ach(14037),	-- Phase 3: Prophet
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
@@ -608,7 +644,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2377, {	-- Dark Inquisitor Xanesh
 					["crs"] = { 160229, 156575 },
 					["g"] = {
-						ach(14024),	-- Buzzer Beater
 						i(172196),	-- Vorzz Yoq'al
 						i(172190),	-- Uhnish Vwah
 						i(174169),	-- Gauntlets of Foul Inquisition
@@ -625,7 +660,6 @@ _.Instances = { tier(BFA_TIER, {
 						157254,	-- Tek'ris
 					},
 					["g"] = {
-						ach(14023),	-- Realizing Your Potential
 						i(174448),	-- Aqir Hivespawn (PET!)
 						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
@@ -641,7 +675,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2367, {	-- Shad'har the Insatiable
 					["crs"] = { 157231 },
 					["g"] = {
-						ach(13990),	-- You Can Pet the Dog, But...
 						i(172186),	-- Warmace of Waking Nightmares
 						i(174107),	-- Insidious Writhing Longbow
 						i(174177),	-- Bracers of Phantom Pains
@@ -655,7 +688,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2373, {	-- Drest'agath
 					["crs"] = { 157602 },
 					["g"] = {
-						ach(14026),	-- Temper Tantrum
 						i(172195),	-- Halsheth, Slumberer's Spear
 						i(172198),	-- Mar'kowa, the Mindpiercer
 						i(174146),	-- Gloves of Abyssal Authority
@@ -670,7 +702,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2370, {	-- Vexiona
 					["crs"] = { 157354 },
 					["g"] = {
-						ach(14139),	-- Total Annihilation
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
@@ -683,8 +714,7 @@ _.Instances = { tier(BFA_TIER, {
 				e(2364, {	-- Ra-den the Despoiled
 					["crs"] = { 156866 },
 					["g"] = {
-						ach(13999),	-- Clean up, Aisle 9
-						i(174447),	-- Void-Scarred Anubisath (pet)
+						i(174447),	-- Void-Scarred Anubisath (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
@@ -701,7 +731,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2374, {	-- Il'gynoth, Corruption Reborn
 					["crs"] = { 158328 },
 					["g"] = {
-						ach(14038),	-- Bloody Mess
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
@@ -719,7 +748,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2366, {	-- Carapace of N'Zoth
 					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 					["g"] = {
-						ach(14147),	-- Cleansing Treatment
 						i(174109),	-- Lurker's Piercing Gaze
 						i(172227),	-- Shard of the Black Empire
 						i(174108),	-- Shgla'yos, Astral Malignity
@@ -736,12 +764,14 @@ _.Instances = { tier(BFA_TIER, {
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
-						})),
-						ach(14148),	-- Peer Pressure
+						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
+							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+						}),
+						i(174863, {	-- Spawn of Vexiona
+							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+						}),
 						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (Pet)
+						i(174452),	-- Eye of Corruption (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -757,11 +787,6 @@ _.Instances = { tier(BFA_TIER, {
 				}),
 			}),
 			d(16, {	-- Mythic
-				n(ACHIEVEMENTS, {
-					ach(14146, {	-- Glory of the Ny'alotha Raider
-						i(174861),	-- Wriggling Parasite (MOUNT!)
-					}),
-				}),
 				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
@@ -797,7 +822,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 156818 },
 					["g"] = {
 						ach(14041),	-- Mythic: Wrathion, the Black Emperor
-						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade
 						i(172199),	-- Faralos, Empire's Dream
 						i(174105),	-- Mish'un, Blade of Tyrants
@@ -812,8 +836,7 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14043),	-- Mythic: Maut
-						ach(14008),	-- Mana Sponge
-						i(174446),	-- Fractured Obsidian Claw (pet)
+						i(174446),	-- Fractured Obsidian Claw (PET!)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -830,7 +853,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 157620 },
 					["g"] = {
 						ach(14044),	-- Mythic: The Prophet Skitra
-						ach(14037),	-- Phase 3: Prophet
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
@@ -848,7 +870,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 160229, 156575 },
 					["g"] = {
 						ach(14045),	-- Mythic: Dark Inquisitor Xanesh
-						ach(14024),	-- Buzzer Beater
 						i(172196),	-- Vorzz Yoq'al
 						i(172190),	-- Uhnish Vwah
 						i(174169),	-- Gauntlets of Foul Inquisition
@@ -866,7 +887,6 @@ _.Instances = { tier(BFA_TIER, {
 					},
 					["g"] = {
 						ach(14046),	-- Mythic: The Hivemind
-						ach(14023),	-- Realizing Your Potential
 						i(174448),	-- Aqir Hivespawn (PET!)
 						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
@@ -883,7 +903,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 157231 },
 					["g"] = {
 						ach(14048),	-- Mythic: Shad'har the Insatiable
-						ach(13990),	-- You Can Pet the Dog, But...
 						i(172186),	-- Warmace of Waking Nightmares
 						i(174107),	-- Insidious Writhing Longbow
 						i(174177),	-- Bracers of Phantom Pains
@@ -898,7 +917,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 157602 },
 					["g"] = {
 						ach(14049),	-- Mythic: Drest'agath
-						ach(14026),	-- Temper Tantrum
 						i(172195),	-- Halsheth, Slumberer's Spear
 						i(172198),	-- Mar'kowa, the Mindpiercer
 						i(174146),	-- Gloves of Abyssal Authority
@@ -914,7 +932,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 157354 },
 					["g"] = {
 						ach(14050),	-- Mythic: Vexiona
-						ach(14139),	-- Total Annihilation
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
@@ -928,8 +945,7 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(14051),	-- Mythic: Ra-den the Despoiled
-						ach(13999),	-- Clean up, Aisle 9
-						i(174447),	-- Void-Scarred Anubisath (pet)
+						i(174447),	-- Void-Scarred Anubisath (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
@@ -947,7 +963,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 158328 },
 					["g"] = {
 						ach(14052),	-- Mythic: Il'gynoth, Corruption Reborn
-						ach(14038),	-- Bloody Mess
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
@@ -966,7 +981,6 @@ _.Instances = { tier(BFA_TIER, {
 					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 					["g"] = {
 						ach(14054),	-- Mythic: Carapace of N'Zoth
-						ach(14147),	-- Cleansing Treatment
 						i(174109),	-- Lurker's Piercing Gaze
 						i(172227),	-- Shard of the Black Empire
 						i(174108),	-- Shgla'yos, Astral Malignity
@@ -983,22 +997,29 @@ _.Instances = { tier(BFA_TIER, {
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							un(REMOVED_FROM_GAME, i(174863)),	-- Spawn of Vexiona
-						})),
-						un(REMOVED_FROM_GAME, ach(14069)),	-- Cutting Edge: N'Zoth, the Corruptor
+						ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
+							["timeline"] = { "added 8.3.0", "removed 9.0.1" },
+						}),
 						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 							title(417),	-- the Uncorrupted
 						}),
-						ach(14148),	-- Peer Pressure
-						i(173886, {	-- Bursting Void Droplet
-							["u"] = REMOVED_FROM_GAME,
+						ach(14071, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								az(37, 4),	-- The Formless Void (Rank 4)
+								title(416),	-- <Name>, Famed Slayer of N'Zoth
 							},
-						}),
+						})),
+						ach(14072, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(416),	-- <Name>, Famed Slayer of N'Zoth
+							},
+						})),
+						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Bursting Void Droplet
+							az(37, 4),	-- The Formless Void (Rank 4)
+						})),
 						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (Pet)
+						i(174452),	-- Eye of Corruption (PET!)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(174872),	-- Ny'alotha Allseer (MOUNT!)
 						i(172187),	-- Devastation's Hour
@@ -1016,7 +1037,7 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+})));
 
 root("HiddenQuestTriggers", tier(BFA_TIER, {
 	inst(1180, {	-- Ny'alotha

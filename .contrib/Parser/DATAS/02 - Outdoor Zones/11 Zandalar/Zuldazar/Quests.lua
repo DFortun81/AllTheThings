@@ -911,12 +911,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 79.2, 42.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(51520, {	-- Justice for the Fallen
-				["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
-				["coord"] = { 57.6, 63.0, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 51519 },	-- Spirit Call
-			}),
 			q(56205, {	--  Just Ptrust Me On This
 				["sourceQuests"] = { 50944 },	-- Down, But Not Out
 				["provider"] = { "n", 127377 },	-- Pa'Ku
@@ -1578,12 +1572,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 76.6, 48.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(51521, {	-- The True Leader of Zandalar
-				["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
-				["coord"] = { 57.6, 63.0, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 51520 },	-- Justice for the Fallen
-			}),
 			q(55247, {	-- The Trust You've Earned
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 				["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
@@ -1938,35 +1926,19 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 
 			--	unsorted
 			q(50954, {	-- Zandalar Forever!
+				["sourceQuests"] = {
+					47229,	-- Bulwark of Torcali
+					50087,	-- Ateena's Fall
+					50702,	-- Defeat Jakra'zet
+					49426,	-- The King's Gambit
+				},
+				["provider"] = { "n", 135890 },		-- King Rastakhan
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 135890 },		-- King Rastakhan
-				["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 				["maps"] = { 1181 },	-- Zandalar Scenario
-			}),
-			q(51513, {	-- Zalazane Returns
-				["minReputation"] = { 2103, REVERED },
-				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 120171 },	-- Rokhan
-				["coord"] = { 57.6, 62.4, ZULDAZAR },
-			}),
-			q(51516, {	-- Atal'Dazr: Ashes of a Warchief
-				["provider"] = { "n", 138138 },	-- Princess Telanji
-				["coord"] = { 43.7, 39.5, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
-			}),
-			q(51519, {	-- Spirit Call
-				["provider"] = { "n", 140724 },	-- Princess Telanji
-				["coord"] = { 57.6, 62.6, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 51518 },	-- The Lost Spirit
-			}),
-			q(52113, {	-- Vol'jin, Son of Sen'jin
-				["provider"] = { "n", 137878 },	-- Master Gadrin
-				["coord"] = { 45.5, 35.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 52114 },	-- Honoring a True Leader
+				["g"] = {
+					ach(12481),	-- The Final Seal
+				},
 			}),
 			q(54756, {	-- Garbage for the Garbage God
 				["races"] = HORDE_ONLY,

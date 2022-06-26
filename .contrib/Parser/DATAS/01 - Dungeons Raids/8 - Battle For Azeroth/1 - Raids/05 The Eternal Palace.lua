@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, {
 	inst(1179, {	-- The Eternal Palace
 		["isRaid"] = true,
-		["coord"] = { 50.5, 11.9, 1355 },
+		["coord"] = { 50.5, 11.9, NAZJATAR },
 		["maps"] = {
 			1512,
 			1513,
@@ -19,6 +19,14 @@ _.Instances = { tier(BFA_TIER, {
 		},
 		["lvl"] = { 50 },
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(13687, {	-- Glory of the Palace Raider
+					i(167171),	-- Azshari Bloatray (MOUNT!)
+				}),
+				ach(13718),	-- The Grand Reception
+				ach(13719),	-- Depths of the Devoted
+				ach(13725),	-- The Circle of Stars
+			}),
 			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
 					["classes"] = TANKS,
@@ -111,6 +119,7 @@ _.Instances = { tier(BFA_TIER, {
 					i(168602),	-- Cloak of Blessed Depths
 				}),
 				ach(13718, {	-- The Grand Reception
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -194,6 +203,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(13719, {	-- Depths of the Devoted
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -272,6 +282,7 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 				ach(13725, {	-- The Circle of Stars
+					["collectible"] = false,
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -309,7 +320,6 @@ _.Instances = { tier(BFA_TIER, {
 								i(168854),	-- Animated Elemental Heart
 								i(168941),	-- Vitality Redistribution Lattice
 								i(168275),	-- Anu-Azshara, Staff of the Eternal
-								--i(168895),	-- Mel'nalore, Javelin of Suramar?
 								i(168887),	-- Gloves of Incomparable Beauty
 								i(168888),	-- Handguards of the Highest-Born
 								i(168871),	-- Beloved Monarch's Waistwrap
@@ -337,15 +347,9 @@ _.Instances = { tier(BFA_TIER, {
 					i(169935),	-- Brutish Myrmidon's Vambraces
 					i(168602),	-- Cloak of Blessed Depths
 				}),
-				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray (MOUNT!)
-				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,	-- Abyssal Commander Sivara
 					["g"] = {
-						crit(1, {	-- Abyssal Commander Sivara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
 						ach(13684),	-- You and What Army?
 						i(168306),	-- Shiver Venom Lance
 						i(168276),	-- Claw of the Myrmidon
@@ -370,9 +374,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2347, {	-- Blackwater Behemoth
 					["creatureID"] = 150653,
 					["g"] = {
-						crit(2, {	-- Blackwater Behemoth
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
 						ach(13628),	-- Intro to Marine Biology
 						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
@@ -395,9 +396,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2353, {	-- Radiance of Azshara
 					["creatureID"] = 152364,
 					["g"] = {
-						crit(3, {	-- Radiance of Azshara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
 						ach(13767),	-- Fun Run
 						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
@@ -421,9 +419,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2354, {	-- Lady Ashvane
 					["creatureID"] = 152236,
 					["g"] = {
-						crit(1, {	-- Lady Ashvane
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
 						ach(13629),	-- Simple Geometry
 						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
@@ -444,9 +439,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2351, {	-- Orgozoa
 					["creatureID"] = 152128,
 					["g"] = {
-						crit(2, {	-- Orgozoa
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
 						ach(13724),	-- A Smack of Jellyfish
 						i(168274),	-- Aqua-Pulse Trident
 						i(168897),	-- Tentacle Crusher
@@ -471,9 +463,6 @@ _.Instances = { tier(BFA_TIER, {
 						152853,	-- Silivaz the Zealous
 					},
 					["g"] = {
-						crit(3, {	-- The Queen's Court
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
 						ach(13633),	-- If It Please the Court
 						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
@@ -494,9 +483,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 					["creatureID"] = 150859,
 					["g"] = {
-						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
-							["achievementID"] = 13725,	-- The Circle of Stars
-						}),
 						ach(13716),	-- Lactose Intolerant
 						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
@@ -516,16 +502,12 @@ _.Instances = { tier(BFA_TIER, {
 				e(2361, {	-- Queen Azshara
 					["creatureID"] = 152910,
 					["g"] = {
-						crit(2, {	-- Queen Azshara
-							["achievementID"] = 13725,	-- The Circle of Stars
-						}),
 						ach(13768),	-- The Best of Us
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168854),	-- Animated Elemental Heart
 						i(168941),	-- Vitality Redistribution Lattice
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -551,16 +533,9 @@ _.Instances = { tier(BFA_TIER, {
 					i(169935),	-- Brutish Myrmidon's Vambraces
 					i(168602),	-- Cloak of Blessed Depths
 				}),
-				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray (MOUNT!)
-				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,
 					["g"] = {
-						crit(1, {	-- Abyssal Commander Sivara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13684),	-- You and What Army?
 						i(168306),	-- Shiver Venom Lance
 						i(168276),	-- Claw of the Myrmidon
 						i(168901),	-- Royal Scaleguard's Battleaxe
@@ -584,10 +559,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2347, {	-- Blackwater Behemoth
 					["creatureID"] = 150653,
 					["g"] = {
-						crit(2, {	-- Blackwater Behemoth
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13628),	-- Intro to Marine Biology
 						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
@@ -609,10 +580,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2353, {	-- Radiance of Azshara
 					["creatureID"] = 152364,
 					["g"] = {
-						crit(3, {	-- Radiance of Azshara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13767),	-- Fun Run
 						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
@@ -635,10 +602,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2354, {	-- Lady Ashvane
 					["creatureID"] = 152236,
 					["g"] = {
-						crit(1, {	-- Lady Ashvane
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13629),	-- Simple Geometry
 						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
@@ -658,10 +621,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2351, {	-- Orgozoa
 					["creatureID"] = 152128,
 					["g"] = {
-						crit(2, {	-- Orgozoa
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13724),	-- A Smack of Jellyfish
 						i(168274),	-- Aqua-Pulse Trident
 						i(168897),	-- Tentacle Crusher
 						i(168893),	-- Hatchery Scraper
@@ -685,10 +644,6 @@ _.Instances = { tier(BFA_TIER, {
 						152853,	-- Silivaz the Zealous
 					},
 					["g"] = {
-						crit(3, {	-- The Queen's Court
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13633),	-- If It Please the Court
 						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
@@ -708,10 +663,6 @@ _.Instances = { tier(BFA_TIER, {
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 					["creatureID"] = 150859,
 					["g"] = {
-						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
-							["achievementID"] = 13725,	-- The Circle of Stars
-						}),
-						ach(13716),	-- Lactose Intolerant
 						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
@@ -731,17 +682,14 @@ _.Instances = { tier(BFA_TIER, {
 				e(2361, {	-- Queen Azshara
 					["creatureID"] = 152910,
 					["g"] = {
-						un(REMOVED_FROM_GAME, ach(13784)),	-- Ahead of the Curve: Queen Azshara
-						crit(2, {	-- Queen Azshara
-							["achievementID"] = 13725,	-- The Circle of Stars
+						ach(13784, {	-- Ahead of the Curve: Queen
+							["timeline"] = { "added 8.2.0", "removed 8.3.0" },
 						}),
-						ach(13768),	-- The Best of Us
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168942),	-- Mesh of Expanding Vitality
 						i(168855),	-- Pulsing Elemental Hearth
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -767,17 +715,10 @@ _.Instances = { tier(BFA_TIER, {
 					i(169935),	-- Brutish Myrmidon's Vambraces
 					i(168602),	-- Cloak of Blessed Depths
 				}),
-				ach(13687, {	-- Glory of the Palace Raider
-					i(167171),	-- Azshari Bloatray (MOUNT!)
-				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["creatureID"] = 151881,
 					["g"] = {
 						ach(13726),	-- Mythic: Abyssal Commander Sivara
-						crit(1, {	-- Abyssal Commander Sivara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13684),	-- You and What Army?
 						i(168306),	-- Shiver Venom Lance
 						i(168276),	-- Claw of the Myrmidon
 						i(168901),	-- Royal Scaleguard's Battleaxe
@@ -802,10 +743,6 @@ _.Instances = { tier(BFA_TIER, {
 					["creatureID"] = 150653,
 					["g"] = {
 						ach(13728),	-- Mythic: Blackwater Behemoth
-						crit(2, {	-- Blackwater Behemoth
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13628),	-- Intro to Marine Biology
 						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
@@ -828,10 +765,6 @@ _.Instances = { tier(BFA_TIER, {
 					["creatureID"] = 152364,
 					["g"] = {
 						ach(13727),	-- Mythic: Radiance of Azshara
-						crit(3, {	-- Radiance of Azshara
-							["achievementID"] = 13718,	-- The Grand Reception
-						}),
-						ach(13767),	-- Fun Run
 						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
@@ -855,10 +788,6 @@ _.Instances = { tier(BFA_TIER, {
 					["creatureID"] = 152236,
 					["g"] = {
 						ach(13729),	-- Mythic: Lady Ashvane
-						crit(1, {	-- Lady Ashvane
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13629),	-- Simple Geometry
 						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
@@ -879,10 +808,6 @@ _.Instances = { tier(BFA_TIER, {
 					["creatureID"] = 152128,
 					["g"] = {
 						ach(13730),	-- Mythic: Orgozoa
-						crit(2, {	-- Orgozoa
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13724),	-- A Smack of Jellyfish
 						i(168274),	-- Aqua-Pulse Trident
 						i(168897),	-- Tentacle Crusher
 						i(168893),	-- Hatchery Scraper
@@ -907,10 +832,6 @@ _.Instances = { tier(BFA_TIER, {
 					},
 					["g"] = {
 						ach(13731),	-- Mythic:The Queen's Court
-						crit(3, {	-- The Queen's Court
-							["achievementID"] = 13719,	-- Depths of the Devoted
-						}),
-						ach(13633),	-- If It Please the Court
 						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
@@ -931,10 +852,6 @@ _.Instances = { tier(BFA_TIER, {
 					["creatureID"] = 150859,
 					["g"] = {
 						ach(13732),	-- Mythic: Za'qul
-						crit(1, {	-- Za'qul, Harbinger of Ny'alotha
-							["achievementID"] = 13725,	-- The Circle of Stars
-						}),
-						ach(13716),	-- Lactose Intolerant
 						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
@@ -957,35 +874,41 @@ _.Instances = { tier(BFA_TIER, {
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal
 						}),
-						un(REMOVED_FROM_GAME, ach(13785)),	-- Cutting Edge: Queen Azshara
-						crit(2, {	-- Queen Azshara
-							["achievementID"] = 13725,	-- The Circle of Stars
+						ach(13785, {	-- Cutting Edge: Queen Azshara
+							["timeline"] = { "added 8.2.0", "removed 8.3.0" },
 						}),
-						ach(13768),	-- The Best of Us
-						i(168538, {	-- Dazzling Azerite Formation (Rank 4)
+						ach(13787, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {	-- Hall of Fame: Queen Azshara (A)
+							["collectible"] = false,
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								title(409),	-- <Name>, Famed Slayer of Azshara
+							},
+						})),
+						ach(13788, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {	-- Hall of Fame: Queen Azshara (H)
+							["collectible"] = false,
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(409),	-- <Name>, Famed Slayer of Azshara
+							},
+						})),
+						i(168538, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Dazzling Azerite Formation (Rank 4)
 							["classes"] = TANKS,
-							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
 							},
-						}),
-						i(168857, {	-- Sparkling Elemental Heart (Rank 4)
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								az(14, 4),	-- Condensed Life-Force (Rank 4)
-							},
-						}),
-						i(168944, {	-- Web of Unbridled Vitality (Rank 4)
+						})),
+						i(168857, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Sparkling Elemental Heart (Rank 4)
+							az(14, 4),	-- Condensed Life-Force (Rank 4)
+						})),
+						i(168944, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
-							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								az(21, 4),	-- Vitality Conduit (Rank 4)
 							},
-						}),
+						})),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
-						--i(168895),	-- Mel'nalore, Javelin of Suramar?
 						i(168887),	-- Gloves of Incomparable Beauty
 						i(168888),	-- Handguards of the Highest-Born
 						i(168871),	-- Beloved Monarch's Waistwrap
@@ -1001,7 +924,7 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+})));
 
 root("HiddenQuestTriggers", tier(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
@@ -1012,10 +935,10 @@ root("HiddenQuestTriggers", tier(BFA_TIER, {
 	}),
 }));
 
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(56836),	-- The Eternal Palace: Master's Call
 		q(56837),	-- The Eternal Palace: Master's Call
 		q(56838),	-- The Eternal Palace: Master's Call
 	}),
-});
+}));

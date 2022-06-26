@@ -611,7 +611,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 					i(137741),	-- Technique: Glyph of Fel Touched Souls (RECIPE!)
 				},
 			}),
-			q(40058, {	-- Inscription of the Body (DH)
+			q(40058, {	-- Defense Symbology (DH)
 				["classes"] = { DEMONHUNTER },
 				["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
 				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
@@ -625,7 +625,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			}),
 			q(40059, {	-- Opposites Repel (DH)
 				["classes"] = { DEMONHUNTER },
-				["sourceQuests"] = { 40058 },	-- Inscription of the Body (DH)
+				["sourceQuests"] = { 40058 },	--  Defense Symbology (DH)
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
 			}),
@@ -661,7 +661,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			}),
 			q(39939, {	-- Scribal Knowledge (non-DH)
 				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
-				["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
+				["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
 				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
 			}),
@@ -719,12 +719,15 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
 			q(39946, {	-- Right Tool for the Job
-				["sourceQuests"] = { 39945 },	-- Runes Within the Ruins
+				["sourceQuests"] = { 39944 },	-- Mysterious Messages
 				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
 			q(39947, {	-- Not So Complex?
-				["sourceQuests"] = { 39946 },	-- Right Tool for the Job
+				["sourceQuests"] = {
+					39945,	-- Runes Within the Ruins
+					39946,	-- Right Tool for the Job
+				},
 				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 			}),
@@ -751,7 +754,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 97359 },	-- Raethan
 				["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 				["g"] = {
-					recipe(192855),	-- Prophecy Tarot (Rank 2)
+					r(192855),	-- Prophecy Tarot [Rank 2]
 				},
 			}),
 			q(39954, {	-- Mass Milling Techniques
@@ -801,8 +804,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			}),
 			q(39953, {	-- Halls of Valor: Vision of Valor
 				["sourceQuests"] = {
-					39955,	-- The Legacy Passed On (A)
-					39959,	-- The Plot Thickens (H)
+					40052,	-- Ancient Vrykul Mastered
+					39950,	-- An Odd Trinket
+					39943,	-- The Burdens of Hunting
 				},
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },

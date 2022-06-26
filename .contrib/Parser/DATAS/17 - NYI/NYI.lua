@@ -225,7 +225,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 
 		i(192441),	-- Rhapsodic Pulverizer
 
-		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace?)
+		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
 
 		-- Winter Veil 2022
 		ach(15645),	-- To Catch Falling Stars

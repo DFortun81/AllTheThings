@@ -22,18 +22,6 @@ _.Instances = { tier(BFA_TIER, {
 					},
 				}),
 			}),
-			n(QUESTS, {
-				q(51517, {	-- You Owe Me a Spirit
-					["provider"] = { "n", 140405 },	-- Bwonsamdi
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51516 },	-- Atal'Dazar: Ashes of a Warchief
-					["g"] = {
-						crit(1, {	-- The Fallen Chieftain
-							["achievementID"] = 12719,
-						}),
-					},
-				}),
-			}),
 			n(WORLD_QUESTS, {
 				q(49888, {	-- Atal'Dazar: A Little Mojo
 					["isWorldQuest"] = true,

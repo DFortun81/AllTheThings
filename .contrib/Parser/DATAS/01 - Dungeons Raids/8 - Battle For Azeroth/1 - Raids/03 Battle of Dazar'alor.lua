@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }, {
 	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
@@ -22,16 +22,23 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 		["lvl"] = { 50 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(13289),	-- Defense of Dazar'alor (H)
+				ach(13315, {	-- Glory of the Dazar'alor Raider
+					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
+				}),
 				ach(13286),	-- Siege of Dazar'alor (A)
+				ach(13289),	-- Defense of Dazar'alor (H)
+				ach(13287),	-- Empire's Fall (A)
+				ach(13290),	-- Death's Bargain (H)
+				ach(13288),	-- Might of the Alliance (A)
+				ach(13291),	-- Victory or Death (H)
 			}),
 			n(COMMON_BOSS_DROPS, {
+				i(165703),	-- Breath of Bwonsamdi
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 1] (RECIPE!)
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
-				i(165703),	-- Breath of Bwonsamdi
 			}),
-			d(17, bubbleDown({["modID"] = 4}, {	-- LFR
+			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165564),	-- Last Stand Greatbelt
@@ -337,8 +344,8 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						}),
 					},
 				}),
-			})),
-			d(14, bubbleDown({["modID"] = 3}, {	-- Normal
+			}),
+			d(14, {	-- Normal
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -350,23 +357,12 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
 				}),
-				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
 					["g"] = {
-						crit(1, {	-- Champion of the Light (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(1, {	-- Champion of the Light (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
 						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
@@ -391,14 +387,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
 					["g"] = {
-						crit(3, {	-- Jadefire Masters (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(3, {	-- Jadefire Masters (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
 						ach(13431),	-- Hidden Dragon
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
@@ -421,14 +409,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						148117,	-- Grong the Revenant (H)
 					},
 					["g"] = {
-						crit(2, {	-- Grong, the Revenant (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(2, {	-- Grong, the Revenant (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
 						ach(13383),	-- Barrel of Monkeys
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
@@ -453,14 +433,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						145273,	-- The Hand of In'zashi
 					},
 					["g"] = {
-						crit(1, {	-- Opulence (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(1, {	-- Opulence (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
 						ach(13345),	-- Praise the Sunflower
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
@@ -486,14 +458,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						crit(2, {	-- Loa Council/Conclave of the Chosen (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(2, {	-- Loa Council/Conclave of the Chosen (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
 						ach(13325),	-- Walk the Dinosaur
 						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
 						i(165847),	-- Thundering Scale of Akunda (PET!)
@@ -520,14 +484,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146322,	-- Siegebreaker Roka
 					},
 					["g"] = {
-						crit(3, {	-- King Rastakhan (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(3, {	-- King Rastakhan (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
 						ach(13425),	-- We Got Spirit, How About You?
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
@@ -547,14 +503,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
-						crit(1, {	-- High Tinker Mekkatorque (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(1, {	-- High Tinker Mekkatorque (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
 						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
@@ -578,14 +526,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146251,	-- Sister Katherine
 					},
 					["g"] = {
-						crit(2, {	-- Stormwall Blockade (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(2, {	-- Stormwall Blockade (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
 						ach(13430),	-- De Lurker Be'loa
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
@@ -605,14 +545,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
-						crit(3, {	-- Jaina Proudmoore (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(3, {	-- Jaina Proudmoore (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
 						ach(13410),	-- Snow Fun Allowed
 						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
@@ -629,8 +561,8 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						i(165576),	-- Tidestorm Codex
 					},
 				}),
-			})),
-			d(15, bubbleDown({["modID"] = 5}, {	-- Heroic
+			}),
+			d(15, {	-- Heroic
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -642,24 +574,12 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
 				}),
-				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
 					["g"] = {
-						crit(1, {	-- Champion of the Light (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(1, {	-- Champion of the Light (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -683,15 +603,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
 					["g"] = {
-						crit(3, {	-- Jadefire Masters (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(3, {	-- Jadefire Masters (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13431),	-- Hidden Dragon
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -713,15 +624,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						148117,	-- Grong the Revenant (H)
 					},
 					["g"] = {
-						crit(2, {	-- Grong, the Revenant (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(2, {	-- Grong, the Revenant (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13383),	-- Barrel of Monkeys
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -745,15 +647,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						145273,	-- The Hand of In'zashi
 					},
 					["g"] = {
-						crit(1, {	-- Opulence (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(1, {	-- Opulence (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13345),	-- Praise the Sunflower
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -778,15 +671,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						crit(2, {	-- Loa Council/Conclave of the Chosen (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(2, {	-- Loa Council/Conclave of the Chosen (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13325),	-- Walk the Dinosaur
 						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
 						i(165847),	-- Thundering Scale of Akunda (PET!)
 						i(165594),	-- Akunda's Shocksplitter
@@ -812,15 +696,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146322,	-- Siegebreaker Roka
 					},
 					["g"] = {
-						crit(3, {	-- King Rastakhan (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(3, {	-- King Rastakhan (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13425),	-- We Got Spirit, How About You?
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -839,15 +714,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
-						crit(1, {	-- High Tinker Mekkatorque (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(1, {	-- High Tinker Mekkatorque (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
@@ -870,15 +736,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146251,	-- Sister Katherine
 					},
 					["g"] = {
-						crit(2, {	-- Stormwall Blockade (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(2, {	-- Stormwall Blockade (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13430),	-- De Lurker Be'loa
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -897,16 +754,9 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
-						crit(3, {	-- Jaina Proudmoore (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
+						ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
+							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
 						}),
-						crit(3, {	-- Jaina Proudmoore (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13410),		-- Snow Fun Allowed
-						un(REMOVED_FROM_GAME, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
 						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
@@ -922,8 +772,8 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						i(165576),	-- Tidestorm Codex
 					},
 				}),
-			})),
-			d(16, bubbleDown({["modID"] = 6}, {	-- Mythic
+			}),
+			d(16, {	-- Mythic
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
 					i(165518),	-- Warbeast Hide Cinch
@@ -935,24 +785,12 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 					i(165563),	-- Boots of the Dark Iron Raider
 					i(165925),	-- Drape of Valiant Defense
 				}),
-				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
 					["crs"] = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
 					["g"] = {
-						crit(1, {	-- Champion of the Light (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(1, {	-- Champion of the Light (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 						ach(13292),	-- Mythic: Champion of the Light
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
@@ -977,15 +815,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
 					["g"] = {
-						crit(3, {	-- Jadefire Masters (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(3, {	-- Jadefire Masters (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13431),		-- Hidden Dragon
 						ach(13298, {	-- Mythic: Jadefire Masters (A)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -1013,15 +842,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						148117,	-- Grong the Revenant (H)
 					},
 					["g"] = {
-						crit(2, {	-- Grong, the Revenant (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13286,	-- Siege of Dazar'alor
-						}),
-						crit(2, {	-- Grong, the Revenant (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13289,	-- Defense of Dazar'alor
-						}),
-						ach(13383),	-- Barrel of Monkeys
 						ach(13293),	-- Mythic: Grong
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
@@ -1046,15 +866,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						145273,	-- The Hand of In'zashi
 					},
 					["g"] = {
-						crit(1, {	-- Opulence (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(1, {	-- Opulence (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13345),	-- Praise the Sunflower
 						ach(13299),	-- Mythic: Opulence
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
@@ -1080,15 +891,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						144747,	-- Pa'ku's Aspect
 					},
 					["g"] = {
-						crit(2, {	-- Loa Council/Conclave of the Chosen (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(2, {	-- Loa Council/Conclave of the Chosen (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13325),	-- Walk the Dinosaur
 						ach(13300),	-- Mythic: Conclave of the Chosen
 						i(165846),	-- Enchanted Talon of Pa'ku (PET!)
 						i(165848),	-- Spawn of Krag'wa (PET!)
@@ -1116,15 +918,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146322,	-- Siegebreaker Roka
 					},
 					["g"] = {
-						crit(3, {	-- King Rastakhan (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13287,	-- Empire's Fall
-						}),
-						crit(3, {	-- King Rastakhan (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13290,	-- Death's Bargain
-						}),
-						ach(13425),	-- We Got Spirit, How About You?
 						ach(13311),	-- Mythic: King Rastakhan
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
@@ -1144,15 +937,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
-						crit(1, {	-- High Tinker Mekkatorque (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(1, {	-- High Tinker Mekkatorque (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13401),	-- I Got Next!
 						ach(13312),	-- Mythic: Mekkatorque
 						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
@@ -1176,15 +960,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						146251,	-- Sister Katherine
 					},
 					["g"] = {
-						crit(2, {	-- Stormwall Blockade (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(2, {	-- Stormwall Blockade (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13430),	-- De Lurker Be'loa
 						ach(13313),	-- Mythic: Stormwall Blockade
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
@@ -1204,30 +979,22 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
-						crit(3, {	-- Jaina Proudmoore (A)
-							["races"] = ALLIANCE_ONLY,
-							["achievementID"] = 13288,	-- Might of the Alliance
-						}),
-						crit(3, {	-- Jaina Proudmoore (H)
-							["races"] = HORDE_ONLY,
-							["achievementID"] = 13291,	-- Victory of Death
-						}),
-						ach(13410),		-- Snow Fun Allowed
 						ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 							title(386),	-- <Name>, Hero of Dazar'alor
 						}),
-						un(REMOVED_FROM_GAME, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
-						un(REMOVED_FROM_GAME, ach(13323)),	-- Cutting Edge: Lady Jaina Proudmoore
-						ach(13326, bubbleDownSelf({["timeline"] = { "added 8.1", "removed 8.2" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
-							["races"] = ALLIANCE_ONLY,  -- Alliance races
-							["u"] = REMOVED_FROM_GAME,
+						ach(13323, {	-- Cutting Edge: Lady Jaina Proudmoore
+							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
+						}),
+						ach(13326, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["collectible"] = false,
 							["g"] = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
 						})),
-						ach(13327, bubbleDownSelf({["timeline"] = { "added 8.1", "removed 8.2" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
-							["races"] = HORDE_ONLY,  -- Horde races
-							["u"] = REMOVED_FROM_GAME,
+						ach(13327, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+							["races"] = HORDE_ONLY,
+							["collectible"] = false,
 							["g"] = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor
 							},
@@ -1248,7 +1015,7 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 						i(165576),	-- Tidestorm Codex
 					},
 				}),
-			})),
+			}),
 		},
 	}),
 })));

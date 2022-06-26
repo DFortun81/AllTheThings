@@ -752,12 +752,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 141961 },	-- Lilian Voss
 			}),
-			q(51518, {	-- The Lost Spirit
-				["provider"] = { "n", 140907 },	-- Bwonsamdi
-				["coord"] = { 45.0, 19.8, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 51517 },	-- You Owe Me a Spirit
-			}),
 			q(53437, {	-- The MOTHERLODE!!: Raw Deal
 				["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 				["coord"] = { 58.4, 62.6, DAZARALOR },
