@@ -4774,8 +4774,10 @@ local function DeterminePurchaseGroups(group, depth)
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
 		-- mark this group as no-longer collectible as a cost since its cost collectibles have been determined
-		group.collectibleAsCost = false;
-		group.filledCost = true;
+		if #groups > 0 then
+			group.collectibleAsCost = false;
+			group.filledCost = true;
+		end
 		return groups;
 	end
 end
@@ -9359,28 +9361,12 @@ local function CacheInfo(t, field)
 	local specc = math_floor(specc_decimal + 0.00001);
 	if specc > 0 then
 		local _, text, _, icon = GetSpecializationInfoForSpecID(specc);
-		--[[
-		if t.mapID then
-			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
-		elseif t.maps then
-			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
-		end
-		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
-		-- rawset(t, "text", text);
 		_t.text = text;
 		_t.icon = icon;
 	else
 		local text = GetClassInfo(t.classID);
-		--[[
-		if t.mapID then
-			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
-		elseif t.maps then
-			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
-		end
-		--]]
 		text = "|c" .. t.classColors.colorStr .. text .. "|r";
-		-- rawset(t, "text", text);
 		_t.text = text;
 		_t.icon = classIcons[t.classID]
 	end
