@@ -394,7 +394,6 @@ local L = app.L;
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "在战斗中";
 		L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在战斗中呈现鼠标提示信息，请启用此选项。\n\n如果你正在同你的公会进行史诗/大秘境活动，你可能应该关闭这个设置以尽可能节省性能。\n\n当你在单刷时它可以很有用，可以立即知道你需要从首领那里得到什么。";
 		L.TOOLTIP_MOD_LABEL = "修饰";
-		L.TOOLTIP_MOD_NONE = "无";
 		L.TOOLTIP_SHOW_LABEL = "显示信息";
 		L.SHOW_COLLECTION_PROGRESS_CHECKBOX = "收藏进度";
 		L.SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "如果希望在鼠标提示的右上角看到收藏某个对象或完成某组对象的进度，请启用此选项。\n\n我们建议你保持此设置处于打开状态。";
