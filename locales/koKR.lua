@@ -952,9 +952,11 @@ for key,value in pairs({
 	[2555] = "곰팡이 슨 두루마리",	-- Musty Scroll
 	[2652] = "에벤에셀 러스트로크의 시체",	-- Ebenezer Rustlocke's Corpse
 	[2688] = "쐐기돌",	-- Keystone
+	[2689] = "서부 봉인석",	-- Stone of West Binding
+	[2690] = "외부 봉인석",	-- Stone of Outer Binding
+	[2691] = "동부 봉인석",	-- Stone of East Binding
 	[2701] = "오색 결정",	-- Iridescent Shards
 	[2702] = "내부 봉인석",	-- Stone of Inner Binding
-	[2703] = "트롤베인의 무덤",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2704] = "숨겨진 폭탄",	-- Cache of Explosives
 	[2713] = "현상 수배 전단",	-- Wanted Board
 	[2734] = "흠뻑 젖은 상자",	-- Waterlogged Chest
@@ -989,6 +991,7 @@ for key,value in pairs({
 	[51708] = "엘리자의 무덤",	-- Eliza's Grave Dirt	--TODO: This was taken from classic Wowhead
 	[91138] = "조던의 망치",	-- Jordan's Hammer
 	[103821] = "도안의 금고",	-- Doan's Strongbox	--TODO: This was taken from classic Wowhead
+	[112888] = "먼지투성이 선반",	-- Dusty Shelf
 	[112948] = "용감무쌍호의 잠긴 금고",	-- Intrepid's Locked Strongbox
 	[113757] = "어둠괴철로 금고",	-- Shadowforge Cache
 	[123329] = "밸로그의 궤짝",	-- Baelog's Chest
