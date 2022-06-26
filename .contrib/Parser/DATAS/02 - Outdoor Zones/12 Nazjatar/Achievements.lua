@@ -176,7 +176,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 					["coord"] = { 73.2, 31.7, NAZJATAR },
 				}),
 			}),
-			ach(NAZJATAR8, {	-- Waveblade Ankoan
+			ach(13558, {	-- Waveblade Ankoan
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(13559, {	-- The Unshackled
