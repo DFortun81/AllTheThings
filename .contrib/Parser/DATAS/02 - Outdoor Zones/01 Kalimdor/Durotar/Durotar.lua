@@ -187,13 +187,6 @@ root("Zones", m(KALIMDOR, {
 								}, ALL_CLASSES),
 							["sourceQuest"] = 24626,	-- Young and Vicious
 						}),
-						q(51514, {	-- Broken Bargain
-							["provider"] = { "n", 137878 },	-- Master Gadrin
-							["lvl"] = lvlsquish(120, 50, 120),
-							["coord"] = { 59.5, 51.5, ECHO_ISLES },
-							["sourceQuest"] = 51513,	-- Zalazane Returns
-							["timeline"] = { "added 8.0.1.27291" },
-						}),
 						q(24625, {	-- Consort of the Sea Witch
 							["provider"] = { "n", 37987 },	-- Tegashi
 							["coords"] = {
@@ -229,12 +222,6 @@ root("Zones", m(KALIMDOR, {
 								-- #endif
 								}, ALL_CLASSES),
 							["sourceQuest"] = 25064,	-- Moraya
-						}),
-						q(52114, {	-- Honoring a True Leader
-							["provider"] = { "n", 137878 },	-- Master Gadrin
-							["lvl"] = lvlsquish(120, 50, 120),
-							["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
-							["timeline"] = { "added 8.0.1.27291" },
 						}),
 						q(24624, {	-- Mercy for the Lost
 							["provider"] = { "n", 37987 },	-- Tegashi
@@ -706,13 +693,6 @@ root("Zones", m(KALIMDOR, {
 							["classes"] = { WARRIOR },
 							["sourceQuest"] = 24607,	-- The Rise of the Darkspear (Warrior)
 						}),
-						q(51533, {	-- The Glaive of Vol'jin
-							["provider"] = { "n", 120173 },	-- Zen'tarba
-							["lvl"] = lvlsquish(120, 50, 120),
-							["coord"] = { 59.2, 52.0, ECHO_ISLES },
-							["sourceQuest"] = 51513,	-- Zalazane Returns
-							["timeline"] = { "added 8.0.1.27291" },
-						}),
 						q(24764, {	-- The Rise of the Darkspear (Druid)
 							["provider"] = { "n", 37951 },	-- Jin'thala
 							["coords"] = {
@@ -806,16 +786,6 @@ root("Zones", m(KALIMDOR, {
 								-- #endif
 							},
 							["classes"] = { WARRIOR },
-						}),
-						q(51515, {	-- Vengeance for Vol'jin
-							["provider"] = { "n", 137878 },	-- Master Gadrin
-							["lvl"] = lvlsquish(120, 50, 120),
-							["coord"] = { 59.5, 51.5, ECHO_ISLES },
-							["sourceQuests"] = {
-								51514,	-- Broken Bargain
-								51533,	-- The Glaive of Vol'jin
-							},
-							["timeline"] = { "added 8.0.1.27291" },
 						}),
 						q(24626, {	-- Young and Vicious
 							["provider"] = { "n", 37969 },	-- Kijara
