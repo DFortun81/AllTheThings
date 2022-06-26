@@ -12,7 +12,7 @@ profession(HERBALISM, {
 		}),
 		n(DROPS, {
 			i(111350, {		-- A Compendium of the Herbs of Draenor
-				["collectible"] = false,
+				["filterID"] = MISC,
 				["description"] = "This can drop from any herb gathering node on Draenor.",
 			}),
 		}),

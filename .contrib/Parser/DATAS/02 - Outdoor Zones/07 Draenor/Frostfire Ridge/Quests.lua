@@ -102,8 +102,7 @@ _.Zones =
 					["g"] = {
 						i(109558, {		-- A Treatise on the Alchemy of Draenor
 							["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-							["collectible"] = false,
-							["spellID"] = 0,
+							["filterID"] = MISC,
 							["g"] = {
 								recipe(156587),	-- Alchemical Catalyst
 								recipe(156585),	-- Crescent Oil
@@ -168,7 +167,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(115358, {	-- Draenor Leatherworking
-							["collectible"] = false,
+							["filterID"] = MISC,
 							["g"] = {
 								recipe(171391),	-- Burnished Leather
 								i(116319),	-- Recipe: Journeying Helm
@@ -219,7 +218,7 @@ _.Zones =
 					["g"] = {
 						i(115503),	-- Blazing Diamond Pendant (TOY!)
 						i(115359, {	-- Draenor Jewelcrafting
-							["collectible"] = false,
+							["filterID"] = MISC,
 						}),
 						i(111814),	-- Gem Boutique, Level 1
 					},
@@ -233,7 +232,7 @@ _.Zones =
 					["g"] = {
 						i(115357, {	-- Draenor Tailoring
 							["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-							["collectible"] = false,
+							["filterID"] = MISC,
 							["g"] = {
 								recipe(168835),	-- Hexweave Cloth
 								recipe(176058),	-- Secrets of Draenor Tailoring
@@ -440,7 +439,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(115356, {	-- Draenor Blacksmithing
-							["collectible"] = false,
+							["filterID"] = MISC,
 						}),
 						i(111813),	-- The Forge, Level 1
 					},
@@ -702,7 +701,7 @@ _.Zones =
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
 						i(111923, {	-- Draenor Inscription
-							["collectible"] = false,
+							["filterID"] = MISC,
 							["g"] = {
 								i(120136),		-- Recipe: Secrets of Draenor Inscription
 								recipe(169081),	-- War Paints

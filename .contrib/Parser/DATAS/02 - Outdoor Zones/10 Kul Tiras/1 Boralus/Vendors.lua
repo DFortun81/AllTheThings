@@ -2680,7 +2680,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(166445, {	-- 7th Legion Scouting Map
-						["collectible"] = false,
+						["filterID"] = MISC,
 					}),
 					i(160536, {	-- 7th Legionnaire's Cloak
 						["cost"] = 11000000,	-- 1,100g

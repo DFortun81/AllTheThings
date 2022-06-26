@@ -280,7 +280,7 @@ _.Zones =
 							["coord"] = { 44.2, 37.8, STORMSHIELD },
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
 											i(116087),	-- Recipe: Glowing Blackrock Band
@@ -297,7 +297,7 @@ _.Zones =
 									},
 								}),
 								i(118723, {	-- Secret of Draenor Jewelcrafting
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(116096),	-- Recipe: Critical Strike Taladite
 										i(116093),	-- Recipe: Glowing Taladite Pendant
@@ -3649,7 +3649,7 @@ _.Zones =
 							["coord"] = { 62.0, 33.5, STORMSHIELD },
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
 										recipe(169081),	-- War Paints
@@ -3690,8 +3690,7 @@ _.Zones =
 							["g"] = {
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
 									["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-									["collectible"] = false,
-									["spellID"] = 0,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(156587),	-- Alchemical Catalyst
 										recipe(156585),	-- Crescent Oil
@@ -3713,7 +3712,7 @@ _.Zones =
 								i(112040),	-- Recipe: Draenic Strength Potion
 								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(112023),	-- Recipe: Draenic Philosopher's Stone
 										i(112045),	-- Recipe: Draenic Rejuvenation Potion
@@ -4315,7 +4314,7 @@ _.Zones =
 							["coord"] = { 49.0, 48.7, STORMSHIELD },
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(116727),		-- Recipe: Smoldering Breastplate
 										i(116726),		-- Recipe: Smoldering Helm
@@ -4325,7 +4324,7 @@ _.Zones =
 									},
 								}),
 								i(118720, {	-- Secret of Draenor Blacksmithing
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(119329),	-- Recipe: Soul of the Forge
 										i(120262),	-- Recipe: Steelforged Aegis
@@ -4365,10 +4364,10 @@ _.Zones =
 							["coord"] = { 47.9, 39.9, STORMSHIELD },
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
-									["collectible"] = false,
+									["filterID"] = MISC,
 								}),
 								i(119299, {	-- Secret of Draenor Engineering
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(118493),	-- Schematic: Didi's Delicate Assembly
 										i(118490),	-- Schematic: Blingtron 5000

@@ -3745,6 +3745,7 @@ root("Zones", m(KALIMDOR, {
 					}),
 					i(71949, {	-- Tome of Burning Jewels
 						["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+						["filterID"] = CONSUMABLES,
 						["sym"] = {
 							{"select","creatureID",57922},{"pop"},	-- this NPC
 							{"not","itemID",71949},				-- not this item

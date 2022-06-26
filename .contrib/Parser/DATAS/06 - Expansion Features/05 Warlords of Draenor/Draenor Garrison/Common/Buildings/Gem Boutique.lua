@@ -47,7 +47,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
 											i(116087),	-- Recipe: Glowing Blackrock Band
@@ -131,7 +131,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
 											i(116087),	-- Recipe: Glowing Blackrock Band

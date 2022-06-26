@@ -412,7 +412,7 @@ profession(MINING, {
 	-- TODO: This stuff needs timelines!
 	n(DROPS, {
 		i(111349, {		-- A Treatise on Mining in Draenor
-			["collectible"] = false,
+			["filterID"] = MISC,
 			["description"] = "This can drop from any ore gathering node on Draenor.",
 		}),
 		o(272768, {	-- Empyrium Deposit

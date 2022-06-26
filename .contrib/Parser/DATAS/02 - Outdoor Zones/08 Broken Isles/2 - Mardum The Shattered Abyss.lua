@@ -37,7 +37,7 @@ _.Zones =
 					q(39279, {	-- Assault on Mardum
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
 						["description"] = "This is a bonus objective.",
-						["collectible"] = false,
+						["collectible"] = false, -- TODO: check this
 					}),
 					q(40379, {	-- Enter the Illidari: Coilskar
 						["coord"] = { 33.9, 69.9, 672 },

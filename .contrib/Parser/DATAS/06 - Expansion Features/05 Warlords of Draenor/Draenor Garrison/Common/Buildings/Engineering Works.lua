@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(169080),	-- Gearspring Parts
 										recipe(162204),	-- Goblin Glider Kit
@@ -126,7 +126,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(111921, {	-- Draenor Engineering
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(169080),	-- Gearspring Parts
 										recipe(162204),	-- Goblin Glider Kit

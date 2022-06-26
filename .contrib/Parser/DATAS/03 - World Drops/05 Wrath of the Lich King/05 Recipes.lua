@@ -53,7 +53,7 @@ _.WorldDrops =
 			-- #endif
 			prof(INSCRIPTION, {
 				i(45912, {	-- Book of Glyph Mastery
-					["collectible"] = false,
+					["filterID"] = MISC,
 				}),
 			}),
 			prof(JEWELCRAFTING, {

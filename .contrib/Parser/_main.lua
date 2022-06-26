@@ -2404,6 +2404,7 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = sharedData({ ["timeline"] = { "added 4.0.3
 });
 DRAENOR_ENCHANTING = i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {	-- Draenor Enchanting
 	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+	["filterID"] = MISC,
 	["g"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },

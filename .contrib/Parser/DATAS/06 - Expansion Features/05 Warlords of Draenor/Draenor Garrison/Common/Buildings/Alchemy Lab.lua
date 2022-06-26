@@ -54,8 +54,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
-									["collectible"] = false,
-									["spellID"] = 0,
+									["filterID"] = MISC,
 									["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 									["g"] = {
 										recipe(156587),	-- Alchemical Catalyst
@@ -78,7 +77,7 @@ _.ExpansionFeatures =
 								i(112040),	-- Recipe: Draenic Strength Potion
 								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(112023),	-- Recipe: Draenic Philosopher's Stone
 										i(112045),	-- Recipe: Draenic Rejuvenation Potion
@@ -105,8 +104,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(109558, {		-- A Treatise on the Alchemy of Draenor
-									["collectible"] = false,
-									["spellID"] = 0,
+									["filterID"] = MISC,
 									["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
 									["g"] = {
 										recipe(156587),	-- Alchemical Catalyst
@@ -129,7 +127,7 @@ _.ExpansionFeatures =
 								i(112040),	-- Recipe: Draenic Strength Potion
 								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(112023),	-- Recipe: Draenic Philosopher's Stone
 										i(112045),	-- Recipe: Draenic Rejuvenation Potion

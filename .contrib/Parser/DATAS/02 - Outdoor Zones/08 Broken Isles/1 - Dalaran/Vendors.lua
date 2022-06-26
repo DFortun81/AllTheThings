@@ -3013,7 +3013,7 @@ _.Zones =
 					["coord"] = { 38.5, 41.2, LEGION_DALARAN },
 					["g"] = {
 						i(139494, {	-- Forgotten Formulas of the Broken Isles
-							["collectible"] = false,
+							["filterID"] = MISC,
 						}),
 						i(128591),	-- Formula: Enchant Cloak - Binding of Agility [Rank 2] (RECIPE!)
 						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect [Rank 2] (RECIPE!)

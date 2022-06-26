@@ -1185,7 +1185,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(166444, {	-- Honorbound Scouting Map
-						["collectible"] = false,
+						["filterID"] = MISC,
 					}),
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,

@@ -74,7 +74,7 @@ _.Zones =
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, MOONGLADE },
-					["collectible"] = false,
+					["isYearly"] = true,
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
 					["g"] = {
 						title(358, {	-- %s, Adventuring Instructor

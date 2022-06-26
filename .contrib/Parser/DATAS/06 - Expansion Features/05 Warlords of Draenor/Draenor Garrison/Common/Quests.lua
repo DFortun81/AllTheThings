@@ -1553,7 +1553,7 @@ _.ExpansionFeatures =
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(111921, {	-- Draenor Engineering
-							["collectible"] = false,
+							["filterID"] = MISC,
 						}),
 						i(109258),	-- Engineering Works, lvl 1
 					},

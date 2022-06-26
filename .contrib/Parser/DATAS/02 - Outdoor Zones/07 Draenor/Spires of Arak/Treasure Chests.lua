@@ -119,7 +119,7 @@ _.Zones =
 					["coord"] = { 68.4, 89.0, SPIRES_OF_ARAK },
 				}),
 				o(234704, {	-- Elixir of Shadow Sight
-					["collectible"] = false,	-- these reset.  i've collected every item you can get with the elixirs, so have nothing to use them on, but they still show up in ATT and even on the in-game treasure map.  if i re-collect them and delete them from my bags, they show up as a thing i need to collect again.  annoying!
+					["repeatable"] = true,
 					["questID"] = 36397,
 					["coord"] = { 43.8, 24.7, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
@@ -128,7 +128,7 @@ _.Zones =
 					},
 				}),
 				o(234736, {	-- Elixir of Shadow Sight
-					["collectible"] = false,
+					["repeatable"] = true,
 					["questID"] = 36401,
 					["coord"] = { 53.1, 84.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
@@ -137,7 +137,7 @@ _.Zones =
 					},
 				}),
 				o(234705, {	-- Elixir of Shadow Sight
-					["collectible"] = false,
+					["repeatable"] = true,
 					["questID"] = 36398,
 					["coord"] = { 69.2, 43.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
@@ -146,7 +146,7 @@ _.Zones =
 					},
 				}),
 				o(234703, {	-- Elixir of Shadow Sight
-					["collectible"] = false,
+					["repeatable"] = true,
 					["questID"] = 36395,
 					["coord"] = { 43.9, 15.0, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
@@ -155,7 +155,7 @@ _.Zones =
 					},
 				}),
 				o(234735, {	-- Elixir of Shadow Sight
-					["collectible"] = false,
+					["repeatable"] = true,
 					["questID"] = 36400,
 					["coord"] = { 55.6, 22.1, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
@@ -164,7 +164,7 @@ _.Zones =
 					},
 				}),
 				o(234734, {	-- Elixir of Shadow Sight
-					["collectible"] = false,
+					["repeatable"] = true,
 					["questID"] = 36399,
 					["coord"] = { 48.9, 62.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",

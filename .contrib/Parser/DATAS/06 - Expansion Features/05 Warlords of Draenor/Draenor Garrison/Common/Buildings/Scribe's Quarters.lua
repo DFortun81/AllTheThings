@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
 										recipe(169081),	-- War Paints
@@ -77,7 +77,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(120136),		-- Recipe: Secrets of Draenor Inscription
 										recipe(169081),	-- War Paints

@@ -667,7 +667,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				}),
 				ach(1023,  {	-- Flame Warden of Kalimdor (A)
 					crit(1,  {	-- Ashenvale
-						["coord"] = { 13.0, 47.0, ASHENVALE },
+						["coord"] = { 86.9, 41.9, ASHENVALE },
 					}),
 					crit(2,  {	-- Azuremyst Isle
 						["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },

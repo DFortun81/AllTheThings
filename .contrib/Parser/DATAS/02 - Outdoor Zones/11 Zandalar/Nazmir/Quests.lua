@@ -652,7 +652,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
 				["provider"] = { "n", 149823 },
 				["coord"] = { 47.6, 16.2, 1381 },
-				["maps"] = { 1381, 1382 },	-- Uldir (Scenario)
+				["maps"] = { 1382 },	-- Uldir (Scenario)
 				["timeline"] = {
 					"added 8.1.5.29701",
 					"removed 8.2",	-- Retired with the implementation of 8.2

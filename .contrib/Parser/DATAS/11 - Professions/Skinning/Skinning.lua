@@ -4,7 +4,7 @@ profession(SKINNING, {
 	-- TODO: This is not timelined
 	n(DROPS, {
 		i(111351, {		-- A Guide to Skinning in Draenor
-			["collectible"] = false,
+			["filterID"] = MISC,
 			["description"] = "This can drop from any Warlords of Draenor mob after skinning it.",
 		}),
 		n(103675, {	-- Felhide Gargantuan

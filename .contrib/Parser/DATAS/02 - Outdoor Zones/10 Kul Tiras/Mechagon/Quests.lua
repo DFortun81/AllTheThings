@@ -265,7 +265,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 									i(168631),	-- Metal Detector
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
 									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),
@@ -278,7 +277,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 									i(168631),	-- Metal Detector
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
-									i(168631),	-- Metal Detector
 									i(169690),	-- Vinyl: Battle of Gnomeregan
 								},
 							}),

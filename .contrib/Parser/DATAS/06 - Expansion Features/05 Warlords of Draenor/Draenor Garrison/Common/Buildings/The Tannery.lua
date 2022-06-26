@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(115358, {	-- Draenor Leatherworking
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(171391),	-- Burnished Leather
 										i(116319),	-- Recipe: Journeying Helm
@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(115358, {	-- Draenor Leatherworking
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(171391),	-- Burnished Leather
 										i(116319),	-- Recipe: Journeying Helm

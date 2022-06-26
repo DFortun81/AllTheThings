@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(116727),	-- Recipe: Smoldering Breastplate
 										i(116726),	-- Recipe: Smoldering Helm
@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(116727),	-- Recipe: Smoldering Breastplate
 										i(116726),	-- Recipe: Smoldering Helm

@@ -30,7 +30,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(168835),	-- Hexweave Cloth
 										recipe(176058),	-- Secrets of Draenor Tailoring
@@ -40,7 +40,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								i(118722, {	-- Secret of Draenor Tailoring
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										i(114863),	-- Pattern: Brilliant Hexweave Cloak
 										i(114866),	-- Pattern: Creeping Carpet
@@ -135,7 +135,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(115357, {	-- Draenor Tailoring
 									["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-									["collectible"] = false,
+									["filterID"] = MISC,
 									["g"] = {
 										recipe(168835),	-- Hexweave Cloth
 										recipe(176058),	-- Secrets of Draenor Tailoring
