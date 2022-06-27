@@ -5,6 +5,9 @@
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(RARES, {
+			--[[
+				R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
+			]]--
 			i(168908, {	-- Blueprint: Experimental Adventurer Augment
 				["description"] = "This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",
 			}),
@@ -18,9 +21,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(25, {	-- Boilburn
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(167042),	-- Blueprint: Scrap Trap
 							i(169691),    -- Vinyl: Depths of Ulduar
 						},
@@ -34,9 +34,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you this message in chat \"|cffe1780cDrill Rig DR-CC73...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(34, {	-- Caustic Mechaslime
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(169170),	-- Blueprint: Utility Mechanoclaw
 						},
 					}),
@@ -46,9 +43,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR35...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(21, {	-- Earthbreaker Gulroc
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(167042),	-- Blueprint: Scrap Trap
 						},
 					}),
@@ -58,9 +52,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(23, {	-- Gemicide
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(169691),    -- Vinyl: Depths of Ulduar
 						},
 					}),
@@ -73,9 +64,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC61...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(33, {	-- Gorged Gear-Cruncher
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(167846),	-- Blueprint: Mechano-Treat
 						},
 					}),
@@ -85,9 +73,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(22, {	-- Ol' Big Tusk
-								["achievementID"] = 13470,	-- Rest In Pistons
-							}),
 							i(167846),	-- Blueprint: Mechano-Treat
 							i(169691),    -- Vinyl: Depths of Ulduar
 							i(170466),  -- Junkyard Motivator
@@ -102,9 +87,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-CC88...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["g"] = {
-							crit(26, {	-- The Kleptoboss
-								["achievementID"] = 13470,	-- Rest in Pistons
-							}),
 							i(169886),	-- Spraybot 0D
 						},
 					}),
@@ -142,9 +124,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 55.4, 25.9, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(14, {	-- Boggac Skullbash
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169688),	-- Vinyl: Gnomeragan Forever
 				},
 			}),
@@ -153,9 +132,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 65.8, 22.9, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(13, {	-- Bonepicker
-						["achievementID"] = 13470,	-- Rest In Pistons
-					}),
 					i(169392),	-- Bonebiter
 					i(167846),	-- Blueprint: Mechano-Treat
 				},
@@ -170,9 +146,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					152570,	-- Crazed Trogg
 				},
 				["g"] = {
-					crit(20, {	-- Crazed Trogg
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169674),	-- Green Paint Filled Bladder
 					i(167792),	-- Paint Vial: Fel Mint Green
 					i(169169),	-- Blueprint: Blue Spraybot
@@ -188,9 +161,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["isDaily"] = true,
 				["description"] = "Must complete the |cFFFFD700Let's Fish!|r questline to spawn Deepwater Maw.  Summoning requires a |cffa335eeHundred-Fathom Lure|r.",
 				["g"] = {
-					crit(11, {	-- Deepwater Maw
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168804),	-- Powered Piscine Procurement Pole
 					i(167836),	-- Blueprint: Canned Minnows
 				},
@@ -201,9 +171,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 81.0, 20.2, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(35, {	-- The Doppel Gang
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168631),	-- Metal Detector
 				},
 			}),
@@ -212,9 +179,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 55.4, 55.0, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(31, {	-- Enforcer KX-T57
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(170466),	-- Junkyard Motivator
 					i(170470),	-- Reinforced Grease Deflector
 					i(170467),	-- Whirring Chainblade
@@ -227,9 +191,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 65.7, 51.7, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(10, {	-- Foul Manifestation
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(167871),	-- Blueprint: G99.99 Landshark
 				},
 			}),
@@ -240,9 +201,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 44.5, 41.1, MECHAGON },	-- center of quest area / area with mushrooms
 				["crs"] = { 135497 },	-- Mushroom that spawns the rare
 				["g"] = {
-					crit(9, {	-- Fungarian Furor
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169379),	-- Snowsoft Nibbler
 					i(167793),  -- Paint Vial: Overload Orange
 				},
@@ -252,9 +210,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["isDaily"] = true,
 				["description"] = "Random spawn when you kill |cFFFFD700Upgraded Sentries|r.",
 				["g"] = {
-					crit(28, {	-- Gear Checker Cogstar
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(167847),	-- Blueprint: Ultrasafe Transporter: Mechagon
 					i(170467),	-- Whirring Chainblade
 				},
@@ -264,9 +219,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 77.3, 44.8, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(4, {	-- Jawbreaker
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168752),	-- Omnipurpose Efficient Logic Board
 				},
 			}),
@@ -279,9 +231,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				},
 				["isDaily"] = true,
 				["g"] = {
-					crit(8, {	-- Killsaw
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(167931),	-- Mechagonian Sawblades (TOY!)
 				},
 			}),
@@ -291,9 +240,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["isDaily"] = true,
 				["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
 				["g"] = {
-					crit(19, {	-- Malfunctioning Beastbot
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169173),	-- Blueprint: Anti-Gravity Pack
 					i(169382),	-- Lost Robogrip
 					i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
@@ -310,9 +256,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 56.9, 52.1, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(1, {	-- Mechagonian Nullifier
-						["achievementID"] = 13470,	-- Rest In Pistons
-					}),
 					i(168490),	-- Blueprint: Protocol Transference Device
 					i(169688),	-- Vinyl: Gnomeragan Forever
 				},
@@ -322,9 +265,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 88.3, 20.6, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(3, {	-- Mecharantuala
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169393),	-- Arachnoid Skitterbot
 				},
 			}),
@@ -333,9 +273,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 61.0, 61.4, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(29, {	-- Mr. Fixthis
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168248),	-- Blueprint: BAWLD-371
 					i(170467),	-- Whirring Chainblade
 				},
@@ -346,9 +283,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 57.0, 39.8, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(12, {	-- OOX-Avenger/MG
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168492),	-- Blueprint: Emergency Rocket Chicken
 				},
 			}),
@@ -357,9 +291,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["questID"] = 55856,
 				["isDaily"] = true,
 				["g"] = {
-					crit(24, {	-- Oxidized Leachbeast
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(170273),	-- Oxidizied Refuse Remover
 					i(167794),	-- Paint Vial: Lemonade Steel
 				},
@@ -369,9 +300,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 23.0, 68.4, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(5, {	-- Paol Pondwader
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(170468),	-- Supervolt Zapper
 				},
 			}),
@@ -461,9 +389,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 39.9, 53.2, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(6, {	-- Rumblerocks
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168001),	-- Paint Vial: Big-ol Bronze
 				},
 			}),
@@ -472,9 +397,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 65.6, 78.3, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(18, {	-- Rustfeather
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168370),	-- Junkheap Drifter (MOUNT!)
 					i(169173),	-- Blueprint: Anti-Gravity Pack
 				},
@@ -484,9 +406,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 82.3, 77.8, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(36, {	-- Scrapclaw
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168490),	-- Blueprint: Protocol Transference Device
 					i(170470),	-- Reinforced Grease Deflector
 				},
@@ -496,9 +415,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 19.3, 80.4, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(16, {	-- Seaspit
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168063),	-- Blueprint: Rustbolt Kegerator
 				},
 			}),
@@ -507,20 +423,12 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["questID"] = 55810,
 				["coord"] = { 83.8, 22.0, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
-					crit(17, {	-- Sparkqueen P'Emp
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
-				},
 			}),
 			n(153226, {	-- Steel Singer Freza
 				["questID"] = 55854,
 				["coord"] = { 25.1, 77.4, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(27, {	-- Steel Singer Freza
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168062),	-- Blueprint: Rustbolt Gramophone
 					i(169689),	-- Vinyl: Mimiron's Brainstorm
 					i(169692),	-- Vinyl: Triumph of Gnomeregan
@@ -531,11 +439,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["questID"] = 56182,
 				["coord"] = { 57.2, 58.6, MECHAGON },
 				["isDaily"] = true,
-				["description"] = "Does not spawn when the daily quest The Other Place is active, must use the Personal Time Displacer to access Alt Time.",
+				["description"] = "Does not spawn when the daily quest |cFFFFD700The Other Place|r is active, must use the Personal Time Displacer to access Alt Time.",
 				["g"] = {
-					crit(32, {	-- The Rusty Prince
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(169347),	-- Judgment of Mechagon (TOY!)
 					i(170467),	-- Whirring Chainblade
 				},
@@ -548,9 +453,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					151623,	-- The Scrap King (while mounted on goretusk)
 				},
 				["g"] = {
-					crit(2, {	-- The Scrap King
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(167846),	-- Blueprint: Mechano-Treat
 					i(170467),	-- Whirring Chainblade
 				},
@@ -560,9 +462,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["coord"] = { 57.3, 20.7, MECHAGON },
 				["isDaily"] = true,
 				["g"] = {
-					crit(15, {	-- Uncle T'Rogg
-						["achievementID"] = 13470,	-- Rest in Pistons
-					}),
 					i(168749),	-- Performant Effective Logic Board
 				},
 			}),

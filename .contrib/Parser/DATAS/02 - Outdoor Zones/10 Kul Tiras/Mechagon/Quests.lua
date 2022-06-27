@@ -5,16 +5,20 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 	m(MECHAGON, {
 		n(QUESTS, {
-			--[[
-				55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
-
-				Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
-				R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
-			]]--
 			q(56493, {	-- A Direct Approach
 				["provider"] = { "n", 155188 },	-- Scrollsage Nola
-				["coord"] = { 72.2, 37.2, ZULDAZAR },
+				["coord"] = { 72.2, 37.2, MECHAGON },
 				["isDaily"] = true,
+				["g"] = {
+					i(169682, {	-- Venture Co. Rocket Box
+						["crs"] = {
+							155259,	-- Lifting Specialist Gogo
+							155263,	-- Problem Solver Skitz
+							155202,	-- Profit Maker Grifa
+							155201,	-- Share Stealer Wonka
+						},
+					}),
+				},
 			}),
 			q(55688, {	-- A Growing Mystery
 				["description"] = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
@@ -135,6 +139,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["provider"] = { "n", 152501 },	-- Elise Starseeker
 				["coord"] = { 70.4, 31.0, MECHAGON },
 				["isDaily"] = true,
+				["g"] = {
+					i(168256, {	-- Night Elf Ring
+						["description"] = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
+						["crs"] = { 152653 },	-- Toxic Lurker
+					}),
+					i(169864, {	-- Old Pirate Hat
+						["description"] = "You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item.",
+						["crs"] = { 150698 },	-- Congealed Oil
+					}),
+				},
 			}),
 			q(56405, {	-- Cogfrenzy's Construction Frenzy
 				["provider"] = { "n", 154967 },	-- Walton Cogfrenzy
@@ -157,7 +171,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["sourceQuests"] = { 55717 },	-- Time for Heroics
 				["provider"] = { "n", 153538 },	-- Adalin Halfheight
 				["isDaily"] = true,
-				["coord"] = { 75.2, 69.8, ZULDAZAR },
+				["coord"] = { 75.2, 69.8, MECHAGON },
 			}),
 			q(55994, {	-- Do Not Drink — don't know if there are any SQs or if this is just up some days
 				["isDaily"] = true,
@@ -418,7 +432,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["isDaily"] = true,
 				["g"] = {
 					i(169381, {	-- OOX-35/MG (pet)
-						["description"] = "When the quest \"My Chickens are Not for Eating!\" is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
+						["description"] = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 					}),
 				},
 			}),
@@ -502,14 +516,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 					i(169176),	-- Blueprint: Encrypted Black Market Radio
 				},
 			}),
-			i(169864, {	-- Old Pirate Hat
-				["description"] = "You need to be on either \"A Growing Mystery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
-				["crs"] = { 150698 },	-- Congealed Oil
-				["g"] = {
-					q(56469, {	-- Pirates? I Hate Those Guys!
-						["isDaily"] = true,
-					}),
-				},
+			q(56469, {	-- Pirates? I Hate Those Guys!
+				["provider"] = { "i", 169864 },	-- Old Pirate Hat
+				["isDaily"] = true,
 			}),
 			q(56184, {	-- Pirates, Sea Monsters, Robots
 				["provider"] = { "n", 154335 },	-- Dread Captain DeMeza
@@ -666,7 +675,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 			}),
 			q(56762, {	-- Rustbolt Requisitions: Great Sea Catfish (H)
 				["provider"] = { "n", 150563 },	-- Skaggit
-				["coord"] = { 73.8, 26.0, ZULDAZAR },
+				["coord"] = { 73.8, 26.0, MECHAGON },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
@@ -793,18 +802,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["coord"] = { 71.2, 32.3, MECHAGON },
 				["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
 			}),
-			i(168256, {	-- Night Elf Ring
-				["description"] = "You need to be on either \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
-				["crs"] = { 152653 },	-- Toxic Lurker
-				["g"] = {
-					q(55718, {	-- Strange Discovery
-						["isDaily"] = true,
-					}),
-				},
-			}),
-			q(56501, {	-- Taking the Air Out	— TODO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
+			q(55718, {	-- Strange Discovery
+				["provider"] = { "i", 168256, },	-- Night Elf Ring
 				["isDaily"] = true,
-				["itemID"] = 169682,	-- Venture Co. Rocket Box
+			}),
+			q(56501, {	-- Taking the Air Out
+				["description"] = "Only available during Unprofitable Ventures.",
+				["isDaily"] = true,
+				["provider"] = { "i", 169682 },	-- Venture Co. Rocket Box
 				["crs"] = {
 					155259,	-- Lifting Specialist Gogo <Venture Co.> (Horde)
 					155202,	-- Profit Maker Grifa <Venture Co.> (Alliance)
@@ -906,7 +911,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 			}),
 			q(56471, {	-- Unprofitable Ventures
 				["provider"] = { "n", 155187 },	-- Maokka
-				["coord"] = { 72.1, 37.1, ZULDAZAR },
+				["coord"] = { 72.1, 37.1, MECHAGON },
 				["isDaily"] = true,
 			}),
 			q(56083, {	-- Unsafe Work Conditions
@@ -915,13 +920,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
-			}),
-			i(169682, {	-- Venture Co. Rocket Box
-				["questID"] = 56501,	-- Taking The Air Out -- only available during "Unprofitable Ventures"? Is this also considered a daily, then?
-				["coord"] = { 42.8, 41.9, ZULDAZAR },
-				["crs"] = {
-					155259,	-- Lifting Specialist Gogo
-				},
 			}),
 			q(56335, {	-- Wanna Charge? Gotta Pay!
 				["coord"] = { 61.4, 37.5, MECHAGON },

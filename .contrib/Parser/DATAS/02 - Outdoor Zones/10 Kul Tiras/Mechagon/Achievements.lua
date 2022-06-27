@@ -373,46 +373,114 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				}),
 			}),
 			ach(13470, {	-- Rest In Pistons
-				crit(1),	-- Mechagnoian Nullfier
-				crit(2),	-- The Scrap King
-				crit(3),	-- Mecharantuala
-				crit(4),	-- Jawbreaker
-				crit(5),	-- Paol Pondwader
-				crit(6),	-- Rumblerocks
+				crit(1, {	-- Mechagnoian Nullfier
+					["_npcs"] = { 151124 },
+				}),
+				crit(2, {	-- The Scrap King
+					["_npcs"] = { 151625 },
+				}),
+				crit(3, {	-- Mecharantuala
+					["_npcs"] = { 151672 },
+				}),
+				crit(4, {	-- Jawbreaker
+					["_npcs"] = { 151684 },
+				}),
+				crit(5, {	-- Paol Pondwader
+					["_npcs"] = { 151702 },
+				}),
+				crit(6, {	-- Rumblerocks
+					["_npcs"] = { 150575 },
+				}),
 				crit(7, {	-- Arachnoid Harvester
 					["_npcs"] = { 151934, 154342 },
 				}),
-				crit(8),	-- Killsaw
-				crit(9),	-- Fungarian Furor
-				crit(10),	-- Foul Manifestations
-				crit(11),	-- Deepwater Maw
-				crit(12),	-- OOX-Avenger/MG
-				crit(13),	-- Bonepicker
-				crit(14),	-- Boggac Skullbash
-				crit(15),	-- Uncle T'Rogg
-				crit(16),	-- Seaspit
-				crit(17),	-- Sparkqueen P'Emp
-				crit(18),	-- Rustfeather
-				crit(19),	-- Malfunctioning Beasetbot
-				crit(20),	-- Crazed Trogg
-				crit(21),	-- Earthbreaker Gulroc
-				crit(22),	-- Ol' Big Tusk
-				crit(23),	-- Gemicide
-				crit(24),	-- Oxidized Leachbeast
-				crit(25),	-- Boilburn
-				crit(26),	-- The Kleptoboss
-				crit(27),	-- Steel Singer Freza
-				crit(28),	-- Gear Checker Cogstar
-				crit(29),	-- Mr. Fixthis
+				crit(8,	{	-- Killsaw
+					["_npcs"] = { 152007 },
+				}),
+				crit(9,	{	-- Fungarian Furor
+					["_npcs"] = { 151884 },
+				}),
+				crit(10, {	-- Foul Manifestations
+					["_npcs"] = { 151202 },
+				}),
+				crit(11, {	-- Deepwater Maw
+					["_npcs"] = { 151569 },
+				}),
+				crit(12, {	-- OOX-Avenger/MG
+					["_npcs"] = { 151296 },
+				}),
+				crit(13, {	-- Bonepicker
+					["_npcs"] = { 152001 },
+				}),
+				crit(14, {	-- Boggac Skullbash
+					["_npcs"] = { 151308 },
+				}),
+				crit(15, {	-- Uncle T'Rogg
+					["_npcs"] = { 151940 },
+				}),
+				crit(16, {	-- Seaspit
+					["_npcs"] = { 150937 },
+				}),
+				crit(17, {	-- Sparkqueen P'Emp
+					["_npcs"] = { 153000 },
+				}),
+				crit(18, {	-- Rustfeather
+					["_npcs"] = { 152182 },
+				}),
+				crit(19, {	-- Malfunctioning Beasetbot
+					["_npcs"] = { 151933 },
+				}),
+				crit(20, {	-- Crazed Trogg
+					["_npcs"] = { 152569 },
+				}),
+				crit(21, {	-- Earthbreaker Gulroc
+					["_npcs"] = { 150342 },
+				}),
+				crit(22, {	-- Ol' Big Tusk
+					["_npcs"] = { 153206 },
+				}),
+				crit(23, {	-- Gemicide
+					["_npcs"] = { 153205 },
+				}),
+				crit(24, {	-- Oxidized Leachbeast
+					["_npcs"] = { 152764 },
+				}),
+				crit(25, {	-- Boilburn
+					["_npcs"] = { 153200 },
+				}),
+				crit(26, {	-- The Kleptoboss
+					["_npcs"] = { 152113 },
+				}),
+				crit(27, {	-- Steel Singer Freza
+					["_npcs"] = { 153226 },
+				}),
+				crit(28, {	-- Gear Checker Cogstar
+					["_npcs"] = { 153228 },
+				}),
+				crit(29, {	-- Mr. Fixthis
+					["_npcs"] = { 151627 },
+				}),
 				crit(30, {	-- Vaultbot
 					["_npcs"] = { 150394 }, 	-- Armored Vaultbot
 				}),
-				crit(31),	-- Enforcer KX-T57
-				crit(32),	-- The Rusty Prince
-				crit(33),	-- Gorged Gear-Cruncher
-				crit(34),	-- Caustic Mechaslime
-				crit(35),	-- The Doppel Gang
-				crit(36),	-- Scrapclaw
+				crit(31, {	-- Enforcer KX-T57
+					["_npcs"] = { 154153 },
+				}),
+				crit(32, {	-- The Rusty Prince
+					["_npcs"] = { 154225 },
+				}),
+				crit(33, {	-- Gorged Gear-Cruncher
+					["_npcs"] = { 154701 },
+				}),
+				crit(34, {	-- Caustic Mechaslime
+					["_npcs"] = { 154739 },
+				}),
+				crit(35, {	-- The Doppel Gang
+					["_npcs"] = { 155060 },
+				}),
+				crit(36, {	-- Scrapclaw
+					["_npcs"] = { 155583 },
+				}),
 			}),
 			ach(13553, {	-- The Mechagonian Threat (A)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
@@ -607,11 +675,21 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				}),
 			}),
 			ach(13696, {	-- Scrappy's Best Friend
-				["description"] = "When you find Scrappy, use an |Cff0070ddEnergy Cell|r to revive him and then feed him two |CffffffffMechano-Treats|r.  He runs around after being revived, so if you can't find him try using a /tar macro in the general Rustbolt area.",
-				["coord"] = { 70.7, 36.3, MECHAGON },
+				["description"] = "When you find Scrappy, use an |cff0070ddEnergy Cell|r to revive him and then feed him a |CffffffffMechano-Treat|r.  He runs around after being revived by any player, so if you can't find him try using a /tar macro in the general Rustbolt area.",
+				["coords"] = {
+					{ 70.4, 30.8, MECHAGON },
+					{ 71.8, 34.2, MECHAGON },
+					{ 72.4, 38.8, MECHAGON },
+					{ 74.0, 36.8, MECHAGON },
+				},
+				["crs"] = { 150497 },	-- Scrappy
 				["g"] = {
-					crit(1),	-- Revive Scrappy
-					crit(2),	-- Feed Scrappy
+					crit(1, {	-- Revive Scrappy
+						["cost"] = { { "i", 166970, 1 } },	-- 1x Energy Cell
+					}),
+					crit(2, {	-- Feed Scrappy
+						["cost"] = { { "i", 167071, 1 } },	-- 1x Mechano-Treat
+					}),
 				},
 			}),
 			ach(13489, {	-- Secret Fish of Mechagon
