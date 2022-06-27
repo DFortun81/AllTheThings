@@ -1543,7 +1543,47 @@ root("Craftables", tier(CLASSIC_TIER, {
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
+		-- #if BEFORE WOD
+		spell(61288, {	-- Minor Inscription Research
+		-- Midnight Ink
+		r(58289, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Thorns
+		r(114295, {["timeline"]={"added 5.0.4","removed 7.0.3"}}),	-- Glyph of Grace
+		r(58296, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+		r(58298, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
+		r(58299, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Revive Pet
+		r(58299, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+		r(58300, {["timeline"]={"added 3.0.2","removed 4.0.1"}}),	-- Glyph of Possessed Strength
+		r(58303, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+		r(58308, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+		r(58310, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of the Penguin
+		r(58306, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+		}),
+		-- #else
+		spell(165461, {	-- Research: Celestial Ink
+			r(58308, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+		}),
+		spell(165456, {	-- Research: Lion's Ink
+			r(114295, {["timeline"]={"added 5.0.4","removed 7.0.3"}}),	-- Glyph of Grace
+			r(58299, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Revive Pet
+		}),
+		-- #endif
 		filter(111, {	-- Glyphs
+			i(43332, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Thorns / Glyph of Grace[MOP+]
+			-- #if BEFORE WOD
+			i(43335, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+			-- #endif
+			i(40906, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
+			i(43338, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Revive Pet
+			-- #if BEFORE WOD
+			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+			-- #endif
+			i(43354, {["timeline"]={"added 3.0.2","removed 4.0.1"}}),	-- Glyph of Possessed Strength
+			i(43339, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+			i(43364, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+			i(43361, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of the Penguin
+			-- #if BEFORE WOD
+			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+			-- #endif
 			i(89868, {	-- Glyph of the Cheetah
 				["questID"] = 62677,
 				["classes"] = { DRUID },

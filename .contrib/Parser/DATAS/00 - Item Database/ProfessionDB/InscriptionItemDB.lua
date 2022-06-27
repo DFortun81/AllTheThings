@@ -20,9 +20,716 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+
+i(0, 52739);	-- Enchanting Vellum / WRATH: Armor Vellum
+i(0, 53462);	-- Midnight Ink
+i(0, 51005);	-- Milling
+i(0, 61288);	-- Minor Inscription Research
+i(0, 52843);	-- Moonglow Ink
+i(0, 48114);	-- Scroll of Intellect
+i(0, 50598);	-- Scroll of Intellect II
+i(0, 48248);	-- Scroll of Recall
+i(0, 45382);	-- Scroll of Stamina
+i(0, 50612);	-- Scroll of Stamina II
+i(0, 48116);	-- Scroll of Versatility / WRATH: Scroll of Spirit
+i(0, 50605);	-- Scroll of Versatility II / WRATH: Scroll of Spirit II
+-- Minor Inscription Research
+-- Midnight Ink
+i(0, 58289);	-- Glyph of Thorns
+i(0, 58296);	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+i(0, 58298);	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
+i(0, 58299);	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+i(0, 58300);	-- Glyph of Possessed Strength
+i(0, 58303);	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+i(0, 58308);	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+i(0, 58310);	-- Glyph of the Penguin
+i(0, 58306);	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+
+-- REMOVED --
+i(0, 52738);	-- Ivory Ink (6.0.2)
+
+-- 3.1.0
+i(0, 58472);	-- Scroll of Agility
+i(0, 58484);	-- Scroll of Strength
+
+--3.0.1.8303
+i(0, 45358);	-- Inscription (Journeyman)
+i(0, 45360);	-- Inscription (Artisan)
+i(0, 45357);	-- Inscription (Apprenntice)
+i(0, 45361);	-- Inscription (Master)
+i(0, 45381);	-- Silver Quill NYI?
+i(0, 45383);	--
+i(0, 48121);	--
+i(0, 45363);	-- Inscription
+i(0, 48118);	--
+i(0, 45359);	-- Inscription
+i(0, 48247);	-- Mysterious Tarot
+i(0, 50600);	-- Scroll of Intellect IV
+i(0, 50604);	-- Scroll of Intellect VIII
+i(0, 50616);	-- Scroll of Stamina IV
+i(0, 50614);	-- Scroll of Stamina III
+i(0, 52175);	-- Decipher
+i(0, 50610);	-- Scroll of Versatility VII
+i(0, 52183);	--
+i(0, 50599);	-- Scroll of Intellect III
+i(0, 52840);	--
+i(0, 50617);	-- Scroll of Stamina V
+i(0, 50609);	-- Scroll of Versatility VI
+i(0, 50603);	-- Scroll of Intellect VII
+i(0, 50601);	-- Scroll of Intellect V
+i(0, 50608);	-- Scroll of Versatility V
+i(0, 50620);	-- Scroll of Stamina VIII
+i(0, 50611);	-- Scroll of Versatility VIII
+i(0, 50607);	-- Scroll of Versatility IV
+i(0, 50602);	-- Scroll of Intellect VI
+i(0, 50619);	-- Scroll of Stamina VII
+i(0, 50618);	-- Scroll of Stamina VI
+i(0, 50606);	-- Scroll of Versatility III
+--3.1.0.9767
+i(0, 57706);	-- Dawnstar Ink
+i(0, 56995);	--
+i(0, 57251);	--
+i(0, 64294);	--
+i(0, 57208);	--
+i(0, 58339);	--
+i(0, 58322);	--
+i(0, 57029);	--
+i(0, 58489);	-- Scroll of Strength VI
+i(0, 64309);	--
+i(0, 57271);	--
+i(0, 57268);	--
+i(0, 58346);	--
+i(0, 57202);	--
+i(0, 56957);	--
+i(0, 58342);	--
+i(0, 59490);	-- Book of Stars
+i(0, 57164);	--
+i(0, 58287);	-- Glyph of the Ursol Chameleon
+i(0, 61118);	-- Master's Inscription of the Crag
+i(0, 56998);	--
+i(0, 64318);	--
+i(0, 64248);	--
+i(0, 58341);	-- Glyph of Soulwell
+i(0, 56952);	--
+i(0, 58345);	-- Glyph of Gushing Wound
+i(0, 57159);	--
+i(0, 56994);	--
+i(0, 59494);	-- Manual of Clouds
+i(0, 57122);	--
+i(0, 56961);	--
+i(0, 56981);	--
+i(0, 57710);	-- Fiery Ink
+i(0, 58301);	-- Glyph of Lesser Proportion
+i(0, 57165);	--
+i(0, 57714);	-- Darkflame Ink
+i(0, 64317);	--
+i(0, 56955);	--
+i(0, 64315);	--
+i(0, 57704);	-- Lion's Ink
+i(0, 58473);	-- Scroll of Agility II
+i(0, 57158);	--
+i(0, 57265);	--
+i(0, 58313);	--
+i(0, 60337);	-- Scroll of Recall III
+i(0, 57194);	--
+i(0, 57115);	--
+i(0, 57707);	-- Jadefire Ink
+i(0, 59340);	--
+i(0, 64260);	-- Glyph of Disguise
+i(0, 64284);	--
+i(0, 58347);	-- Glyph of Mighty Victory
+i(0, 57196);	--
+i(0, 65245);	--
+i(0, 57006);	--
+i(0, 57119);	--
+i(0, 58343);	--
+i(0, 57246);	--
+i(0, 56976);	--
+i(0, 64262);	--
+i(0, 64305);	--
+i(0, 59315);	--
+i(0, 61677);	--
+i(0, 57152);	--
+i(0, 57233);	--
+i(0, 64273);	--
+i(0, 56956);	--
+i(0, 59498);	-- Faces of Doom
+i(0, 57184);	--
+i(0, 57237);	--
+i(0, 57020);	--
+i(0, 58476);	-- Scroll of Agility III
+i(0, 57009);	--
+i(0, 59502);	-- Darkmoon Card
+i(0, 57217);	--
+i(0, 57225);	--
+i(0, 58329);	--
+i(0, 57120);	--
+i(0, 64266);	--
+i(0, 59484);	-- Tome of Kings
+i(0, 57228);	--
+i(0, 58344);	--
+i(0, 59495);	-- Hellfire Tome
+i(0, 61120);	-- Master's Inscription of the Storm
+i(0, 57240);	--
+i(0, 57002);	--
+i(0, 57267);	--
+i(0, 64314);	--
+i(0, 57277);	--
+i(0, 57021);	--
+i(0, 58331);	--
+i(0, 58327);	--
+i(0, 64275);	--
+i(0, 57238);	--
+i(0, 56950);	--
+i(0, 57252);	--
+i(0, 58288);	--
+i(0, 59478);	-- Book of Survival
+i(0, 58317);	--
+i(0, 57224);	-- Glyph of Foul Menagerie
+i(0, 58325);	--
+i(0, 64278);	--
+i(0, 57713);	-- Ethereal Ink
+i(0, 59496);	-- Book of Clever Tricks
+i(0, 64298);	--
+i(0, 58485);	-- Scroll of Strength II
+i(0, 64281);	--
+i(0, 59486);	-- Royal Guide of Escape Routes
+i(0, 57272);	--
+i(0, 64252);	--
+i(0, 56946);	--
+i(0, 64251);	--
+i(0, 57112);	--
+i(0, 56971);	--
+i(0, 59503);	-- Greater Darkmoon Card
+i(0, 56947);	--
+i(0, 56945);	--
+i(0, 58311);	--
+i(0, 57207);	--
+i(0, 56943);	--
+i(0, 58315);	--
+i(0, 58333);	--
+i(0, 57259);	--
+i(0, 61117);	-- Master's Inscription of the Axe
+i(0, 64312);	--
+i(0, 57276);	--
+i(0, 59497);	-- Iron-bound Tome
+i(0, 57025);	--
+i(0, 58480);	-- Scroll of Agility V
+i(0, 64286);	--
+i(0, 57250);	--
+i(0, 64302);	--
+i(0, 57163);	--
+i(0, 57155);	--
+i(0, 57019);	--
+i(0, 64313);	--
+i(0, 64300);	--
+i(0, 56989);	--
+i(0, 64289);	--
+i(0, 64316);	--
+i(0, 56985);	--
+i(0, 56944);	--
+i(0, 56987);	--
+i(0, 57183);	--
+i(0, 57030);	--
+i(0, 57703);	-- Hunter's Ink
+i(0, 57261);	--
+i(0, 57130);	--
+i(0, 57253);	--
+i(0, 57008);	--
+i(0, 58326);	--
+i(0, 57127);	--
+i(0, 57715);	-- Ink of the Sea
+i(0, 57012);	--
+i(0, 57216);	--
+i(0, 64279);	--
+i(0, 57243);	--
+i(0, 57188);	--
+i(0, 62162);	--
+i(0, 64285);	--
+i(0, 64277);	--
+i(0, 57257);	--
+i(0, 57241);	--
+i(0, 57167);	--
+i(0, 56996);	--
+i(0, 57239);	--
+i(0, 57712);	-- Ink of the Sky
+i(0, 56959);	--
+i(0, 58336);	--
+i(0, 57244);	--
+i(0, 57036);	--
+i(0, 57245);	--
+i(0, 57199);	--
+i(0, 57209);	-- Glyph of the Geist
+i(0, 58478);	-- Scroll of Agility IV
+i(0, 57186);	--
+i(0, 58330);	--
+i(0, 59338);	--
+i(0, 56968);	--
+i(0, 57266);	--
+i(0, 57242);	--
+i(0, 64254);	--
+i(0, 56953);	--
+i(0, 56954);	--
+i(0, 57719);	--
+i(0, 57263);	-- Glyph of Felguard
+i(0, 57132);	--
+i(0, 58320);	-- Glyph of Shackle Undead
+i(0, 57258);	--
+i(0, 58565);	-- Mystic Tome
+i(0, 64261);	--
+i(0, 57187);	--
+i(0, 57035);	--
+i(0, 57215);	--
+i(0, 57028);	--
+i(0, 57156);	--
+i(0, 59499);	--
+i(0, 57125);	--
+i(0, 57157);	--
+i(0, 57153);	--
+i(0, 64259);	--
+i(0, 56988);	--
+i(0, 56984);	--
+i(0, 56997);	--
+i(0, 57227);	--
+i(0, 58316);	-- Glyph of Fire From the Heavens
+i(0, 56982);	--
+i(0, 64276);	--
+i(0, 64268);	--
+i(0, 64257);	--
+i(0, 57181);	--
+i(0, 64301);	--
+i(0, 56975);	--
+i(0, 58328);	--
+i(0, 59501);	--
+i(0, 57211);	--
+i(0, 56980);	--
+i(0, 59561);	--
+i(0, 57162);	--
+i(0, 57274);	--
+i(0, 59504);	-- Darkmoon Card of the North
+i(0, 64246);	--
+i(0, 57033);	--
+i(0, 64250);	-- Glyph of Crimson Banish
+i(0, 57114);	--
+i(0, 56990);	--
+i(0, 57126);	--
+i(0, 58483);	-- Scroll of Agility VIII
+i(0, 57235);	--
+i(0, 57133);	--
+i(0, 64311);	--
+i(0, 58318);	--
+i(0, 58491);	-- Scroll of Strength VIII
+i(0, 57010);	--
+i(0, 57032);	-- Glyph of the Luminous Charger
+i(0, 57034);	--
+i(0, 57117);	--
+i(0, 57201);	--
+i(0, 57709);	-- Celestial Ink
+i(0, 57222);	--
+i(0, 58490);	-- Scroll of Strength VII
+i(0, 57166);	--
+i(0, 59491);	-- Shadowy Tarot
+i(0, 64310);	--
+i(0, 57000);	--
+i(0, 64270);	--
+i(0, 57219);	--
+i(0, 64296);	--
+i(0, 57249);	--
+i(0, 64253);	--
+i(0, 59480);	-- Strange Tarot
+i(0, 58305);	--
+i(0, 58307);	--
+i(0, 57123);	--
+i(0, 57004);	--
+i(0, 58340);	--
+i(0, 56974);	--
+i(0, 57128);	--
+i(0, 57172);	--
+i(0, 57218);	--
+i(0, 56979);	--
+i(0, 56973);	--
+i(0, 57168);	--
+i(0, 64271);	--
+i(0, 57262);	--
+i(0, 59559);	--
+i(0, 57031);	--
+i(0, 57005);	--
+i(0, 64304);	--
+i(0, 57169);	--
+i(0, 57221);	--
+i(0, 59339);	--
+i(0, 57003);	--
+i(0, 57223);	--
+i(0, 59500);	--
+i(0, 59387);	-- Certificate of Ownership
+i(0, 59475);	-- Tome of the Dawn
+i(0, 57124);	--
+i(0, 57190);	--
+i(0, 58302);	--
+i(0, 58323);	--
+i(0, 64283);	--
+i(0, 58337);	--
+i(0, 57026);	--
+i(0, 57192);	--
+i(0, 58487);	-- Scroll of Strength IV
+i(0, 59489);	-- Fire Eater's Guide
+i(0, 57273);	--
+i(0, 57214);	--
+i(0, 58338);	--
+i(0, 64295);	--
+i(0, 64267);	--
+i(0, 57170);	--
+i(0, 64308);	--
+i(0, 57248);	--
+i(0, 57708);	-- Royal Ink
+i(0, 56972);	--
+i(0, 64274);	--
+i(0, 64291);	--
+i(0, 58312);	-- Glyph of Winged Vengeance
+i(0, 57197);	--
+i(0, 64288);	--
+i(0, 57213);	--
+i(0, 64256);	--
+i(0, 61177);	-- Northrend Inscription Research
+i(0, 56991);	--
+i(0, 56965);	-- Glyph of Stars
+i(0, 57011);	--
+i(0, 64258);	--
+i(0, 59560);	--
+i(0, 58482);	-- Scroll of Agility VII
+i(0, 57013);	--
+i(0, 57193);	--
+i(0, 57220);	--
+i(0, 57001);	--
+i(0, 58332);	-- Glyph of the Spectral Wolf
+i(0, 64280);	--
+i(0, 57260);	--
+i(0, 58486);	-- Scroll of Strength III
+i(0, 58324);	--
+i(0, 58319);	--
+i(0, 57116);	--
+i(0, 57234);	--
+i(0, 57023);	--
+i(0, 56948);	-- Glyph of the Orca
+i(0, 57027);	--
+i(0, 64053);	-- Twilight Tome
+i(0, 57185);	--
+i(0, 57151);	--
+i(0, 57232);	--
+i(0, 56986);	-- Glyph of Crittermorph
+i(0, 57230);	--
+i(0, 57711);	-- Shimmering Ink
+i(0, 57131);	--
+i(0, 56983);	--
+i(0, 58286);	--
+i(0, 57191);	--
+i(0, 64287);	--
+i(0, 58481);	-- Scroll of Agility VI
+i(0, 56999);	--
+i(0, 57716);	-- Snowfall Ink
+i(0, 64051);	-- Rituals of the Moon
+i(0, 56978);	--
+i(0, 57247);	--
+i(0, 58314);	--
+i(0, 57264);	--
+i(0, 61119);	-- Master's Inscription of the Pinnacle
+i(0, 58297);	--
+i(0, 57189);	--
+i(0, 57022);	--
+i(0, 59493);	-- Stormbound Tome
+i(0, 56963);	--
+i(0, 56958);	--
+i(0, 57270);	--
+i(0, 64307);	--
+i(0, 57160);	--
+i(0, 57154);	--
+i(0, 57198);	--
+i(0, 57229);	--
+i(0, 59487);	-- Arcane Tarot
+i(0, 60336);	-- Scroll of Recall II
+i(0, 57231);	--
+i(0, 59326);	--
+i(0, 57195);	--
+i(0, 57226);	--
+i(0, 64303);	--
+i(0, 56977);	--
+i(0, 57210);	--
+i(0, 64255);	--
+i(0, 64249);	--
+i(0, 64247);	--
+i(0, 64297);	--
+i(0, 58488);	-- Scroll of Strength V
+i(0, 57212);	--
+i(0, 57121);	--
+i(0, 57113);	--
+i(0, 57161);	--
+i(0, 64299);	--
+i(0, 58321);	--
+i(0, 57024);	--
+i(0, 57200);	--
+i(0, 57236);	--
+i(0, 56951);	--
+i(0, 57275);	--
+i(0, 56949);	--
+i(0, 57269);	--
+i(0, 56960);	-- Swiftmend??
+i(0, 57007);	--
+i(0, 64282);	--
+i(0, 57014);	--
+i(0, 59488);	--
+i(0, 57129);	--
+--3.3.5.12340
+i(0, 71101);	--
+i(0, 71015);	--
+i(0, 71102);	--
+i(0, 68166);	-- Glyph of Thunder Strike
+i(0, 69385);	-- Runescroll of Fortitude
+i(0, 67600);	--
+
+
+
+
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+i(0, 86643);	-- Battle Tome
+i(0, 86004);	-- Blackfallow Ink
+i(0, 86616);	-- Book of Blood
+i(0, 86615);	-- Darkmoon Card of Destruction
+i(0, 86642);	-- Divine Companion
+i(0, 86641);	-- Dungeoneering Guide
+i(0, 86403);	-- Felfire Inscription
+i(0, 89244);	-- Forged Documents (A)
+i(0, 86654);	-- Forged Documents (H)
+i(0, 86005);	-- Inferno Ink
+i(0, 86008);	-- Inscription (Cata)
+i(0, 86402);	-- Inscription of the Earth Prince
+i(0, 86648);	-- Key to the Planes
+i(0, 86401);	-- Lionsmane Inscription
+i(0, 86640);	-- Lord Rottington's Pressed Wisp Book
+i(0, 86609);	-- Mysterious Fortune Card
+i(0, 86652);	-- Rosethorn Staff
+i(0, 86649);	-- Runed Staff
+i(0, 85785);	-- Runescroll of Fortitude II
+i(0, 89370);	-- Scroll of Agility IX
+i(0, 89368);	-- Scroll of Intellect IX
+i(0, 89373);	-- Scroll of Protection IX
+i(0, 89372);	-- Scroll of Stamina IX
+i(0, 89369);	-- Scroll of Strength IX
+i(0, 89371);	-- Scroll of Versatility IX / CATA: Scroll of Spirit IX
+i(0, 86653);	-- Silver Inlaid Staff
+i(0, 86375);	-- Swiftsteel Inscription
+i(0, 92026);	-- Vanishing Powder
+i(65651, 86646);	-- Origami Beetle
+i(65650, 86645);	-- Origami Rock
+i(65649, 86644);	-- Origami Slime
+
+
+-----------------
+-- PATCH 4.3.0 --
+-----------------
+i(0, 107907);	-- Glyph of Shadow (Minor Inscription Research??) (4.3.0
+
+
+-- Taken from Twinstar
+-- 4.0.1
+i(68810, 89815);	-- Glyph of Colossus Smash (REMOVED?)
+--4.3.4.15595
+i(0, 99547);	-- Vicious Charm of Triumph
+i(0, 94404);	-- Glyph of Feral Charge
+i(0, 94711);	-- Glyph of Vanish
+i(0, 86647);	-- Etched Horn
+i(0, 96284);	-- Glyph of Dark Succor
+i(0, 89367);	-- Adventurer's Journal
+i(0, 94000);	-- Glyph of Living Bomb
+i(0, 86650);	-- Notched Jawbone
+i(0, 94405);	-- Glyph of Death Wish
+i(0, 94403);	-- Glyph of Faerie Fire
+i(0, 94402);	-- Glyph of Lacerate
+i(0, 99549);	-- Vicious Jawbone of Conquest
+i(0, 92027);	-- Dust of Disappearance
+i(0, 98398);	-- Glyph of Frost Armor
+i(0, 92579);	-- Glyph of Blind
+i(0, 95710);	-- Glyph of Armors
+i(0, 94406);	-- Glyph of Intercept
+i(0, 95825);	-- Glyph of the Long Word
+i(0, 94401);	-- Glyph of Tiger's Fury
+i(0, 101057);	-- Glyph of Unleashed Lightning
+i(0, 99548);	-- Vicious Eyeball of Dominance
+i(0, 95215);	-- Glyph of the Treant
+
+
+
+-----------------
+-- PATCH 5.0.3 --
+-----------------
+i(0, 127009);	-- Chi-ji Kite
+i(0, 127018);	-- Crane Wing Inscription
+i(0, 111830);	-- Darkmoon Card of Mists
+i(0, 111920);	-- Ghost Iron Staff
+i(0, 126995);	-- Greater Crane Wing Inscription
+i(0, 126994);	-- Greater Ox Horn Inscription
+i(0, 126996);	-- Greater Tiger Claw Inscription
+i(0, 126997);	-- Greater Tiger Fang Inscription
+i(0, 111645);	-- Ink of Dreams
+i(0, 111918);	-- Inscribed Crane Staff
+i(0, 111908);	-- Inscribed Fan
+i(0, 111909);	-- Inscribed Jade Fan
+i(0, 111910);	-- Inscribed Red Fan
+i(0, 111919);	-- Inscribed Serpent Staff
+i(0, 111921);	-- Inscribed Tiger Staff
+i(0, 110417);	-- Inscription (MoP)
+i(0, 126988);	-- Origami Crane
+i(0, 126989);	-- Origami Frog
+i(0, 127019);	-- Ox Horn Inscription
+i(0, 111917);	-- Rain Poppy Staff
+i(0, 112045);	-- Runescroll of Fortitude III
+i(0, 112996);	-- Scroll of Wisdom
+i(0, 127023);	-- Secret Crane Wing Inscription
+i(0, 127024);	-- Secret Ox Horn Inscription
+i(0, 127021);	-- Secret Tiger Claw Inscription
+i(0, 127020);	-- Secret Tiger Fang Inscription
+i(0, 111646);	-- Starlight Ink
+i(0, 127017);	-- Tiger Claw Inscription
+i(0, 127016);	-- Tiger Fang Inscription
+i(0, 127007);	-- Yu'lon Kite
+-- Scroll/Research?!
+i(0, 112469);	-- Glyph of Fighting Pose (Research: Ink of the Sea)
+i(0, 112464);	-- Glyph of Honor (Scroll of Wisdom)
+i(0, 123781);	-- Glyph of the Blazing Trail(Scroll of Wisdom)
+i(0, 112462);	-- Glyph of Crackling Tiger Lightning Research: Blackfallow Ink
+i(0, 112430);	-- Glyph of Burning Anger Research: Blackfallow Ink
+i(0, 131152);	-- Glyph of the Cheetah Research: Shimmering Ink
+i(0, 124466);	-- Glyph of the Heavens Research: Blackfallow Ink
+i(0, 126800);	-- Glyph of Shadowy Friends Research: Blackfallow Ink
+i(0, 112466);	-- Glyph of Rising Tiger Kick 	Research: Shimmering Ink
+i(0, 126696);	-- Glyph of the Val'kyr Research: Ink of Dreams
+i(0, 112429);	-- Glyph of Hawk Feast 	Research: Jadefire Ink
+
+
+-- Blackfallow
+--i(0, 57855);	-- Glyph of Charm Woodland Creature
+
+-- Lion
+i(0, 114295);	-- Glyph of Grace
+
+
+
+
+i(0, 130407);	-- Mystery of the Mists (removed`?)
+i(0, 127475);	-- Incarnadine Ink Removed?
+
+i(0, 127391);	-- Engraved Jade Disk (Quest?)
+i(0, 127481);	-- Inscribed Monument (quest`?)
+i(0, 127378);	-- Commissioned Painting Quest?
+i(0, 128922);	-- Portrait of Madam Goya (Quest?)
+
+-----------------
+-- PATCH 5.4.0 --
+-----------------
+i(104234, 148281);	-- Glyph of Spirit Raptors
+i(104219, 148266);	-- Glyph of the Skeleton
+i(104245, 148292);	-- Glyph of the Weaponmaster
+i(104223, 148270);	-- Glyph of the Unbound Elemental
+i(102534, 146638);	-- Crafted Malevolent Gladiator's Medallion of Tenacity
+i(104224, 148271);	-- Glyph of Evaporation
+i(104231, 148278);	-- Glyph of Inspired Hymns
+i(104235, 148282);	-- Glyph of Lingering Ancestors
+i(104229, 148276);	-- Glyph of the Sha
+i(104228, 148275);	-- Glyph of Angels
+i(104227, 148274);	-- Glyph of Pillar of Light
+
+
+
+-- 5.0.3.15890
+-- Need more research
+i(0, 124448);	--
+i(0, 124461);	--
+i(0, 112437);	--
+i(0, 112461);	--
+i(0, 126701);	--
+i(0, 127625);	--
+i(0, 112266);	--
+i(0, 112265);	--
+i(0, 124453);	--
+i(0, 112451);	--
+i(0, 112454);	--
+i(0, 112444);	--
+i(0, 124443);	--
+i(0, 126801);	--
+i(0, 124460);	--
+i(0, 124454);	--
+i(0, 126704);	--
+i(0, 112440);	--
+i(0, 124449);	--
+i(0, 124445);	--
+i(0, 124457);	--
+i(0, 124451);	--
+i(0, 112264);	--
+i(0, 58309);	--
+i(0, 112465);	--
+i(0, 124452);	--
+i(0, 112460);	--
+i(0, 112883);	--
+i(0, 112442);	--
+i(0, 124447);	--
+i(0, 124456);	--
+i(0, 112468);	--
+i(0, 57037);	--
+i(0, 110955);	--
+i(0, 126153);	--
+i(0, 112450);	--
+i(0, 124444);	--
+i(0, 124463);	--
+i(0, 112458);	--
+i(0, 124450);	--
+i(0, 112463);	--
+i(0, 124459);	--
+i(0, 122030);	--
+i(0, 119481);	--
+i(0, 124446);	--
+i(0, 124442);	--
+i(0, 124455);	--
+i(0, 126687);	--
+i(0, 112457);	--
+i(0, 122015);	--
+i(0, 112452);	--
+--6.0.1.18179
+-- if not all are 5.4.0 material?
+i(0, 148287);	--
+i(0, 148260);	--
+i(0, 148488);	--
+i(0, 148269);	--
+i(0, 148268);	--
+i(0, 148490);	--
+i(0, 135535);	--
+i(0, 148255);	--
+i(0, 132167);	--
+i(0, 148290);	--
+i(0, 148289);	--
+i(0, 148291);	--
+i(0, 148261);	--
+i(0, 148285);	--
+i(0, 148280);	--
+i(0, 148487);	--
+i(0, 148259);	--
+i(0, 148279);	--
+i(0, 148283);	--
+i(0, 148284);	--
+i(0, 135561);	--
+i(0, 148257);	--
+i(0, 148273);	--
+i(0, 148288);	--
+i(0, 148286);	--
+i(0, 148489);	--
+i(0, 148272);	--
+
+
 -----------------
 -- PATCH 6.0.1 --
 -----------------
+i(0, 158748);	-- Inscription (woD)
 i(118614, 166432);	-- Volatile Crystal
 i(0, 166669);	-- Card of Omens
 i(0, 178240);	-- War Paints
@@ -30,6 +737,13 @@ i(0, 169081);	-- War Paints
 i(0, 175389);	-- Ocean Tarot
 i(118607, 166359);	-- Etched-Blade Warstaff
 i(120136, 177045);	-- Secrets of Draenor Inscription
+
+
+-- Added
+i(0, 165466);	-- Research: Blackfallow Ink
+i(0, 165461);	-- Research: Celestial Ink
+i(0, 165467);	-- Research: Ink of Dreams
+i(0, 165456);	-- Research: Lion's Ink
 -----------------
 -- PATCH 6.1.0 --
 -----------------
@@ -48,7 +762,7 @@ i(127746, 187518);	-- Savage Weapon Crystal
 i(127741, 187519);	-- Savage Ensorcelled Tarot
 
 
------------------
+----------------- Not sorted yet
 i(0, 166366);	-- Weapon Crystal
 i(0, 166363);	-- Shadowtome
 i(0, 166356);	-- Crystalfire Spellstaff
@@ -62,11 +776,8 @@ i(0, 163294);	-- Darkmoon Card of Draenor
 i(0, 175390);	-- Laughing Tarot
 i(0, 176513);	-- Draenor Merchant Order
 
-i(0, 165461);	-- Research: Celestial Ink
+
 i(0, 167950);	-- Research: Warbinder's Ink
-i(0, 165467);	-- Research: Ink of Dreams
-i(0, 165456);	-- Research: Lion's Ink
-i(0, 165466);	-- Research: Blackfallow Ink
 i(0, 165465);	-- Research: Ink of the Sea
 i(0, 165463);	-- Research: Shimmering Ink
 i(0, 165464);	-- Research: Ethereal Ink
@@ -82,6 +793,10 @@ i(0, 182158);	-- Glyph of the Sun (6.1.0)
 -- PATCH 7.0.3 --
 -----------------
 i(0, 191659);	-- Darkmoon Card of the Legion [Rank 1]
+i(0, 192850);	-- Glyph of Crackling Flames
+i(0, 192851);	-- Glyph of Fallow Wings
+i(0, 192849);	-- Glyph of Fel Touched Souls
+i(0, 192852);	-- Glyph of Tattered Wings
 i(0, 209658);	-- Mass Mill Aethril
 i(0, 209659);	-- Mass Mill Dreamleaf
 i(0, 209664);	-- Mass Mill Felwort
@@ -90,6 +805,7 @@ i(0, 209660);	-- Mass Mill Foxflower
 i(0, 209662);	-- Mass Mill Starlight Rose
 i(0, 210116);	-- Mass Mill Yseralline Seeds
 i(0, 192854);	-- Prophecy Tarot [Rank 1]
+i(0, 192802);	-- Scroll of Forgotten Knowledge
 i(0, 192804);	-- Steamy Romance Novel Kit
 i(136705, 209510);	-- Aqual Mark
 i(141643, 227562);	-- Codex of the Clear Mind
@@ -104,12 +820,9 @@ i(137733, 192841);	-- Glyph of Blackout
 i(141056, 225548);	-- Glyph of Burnout
 i(141030, 225522);	-- Glyph of Cracked Ice
 i(137735, 192843);	-- Glyph of Crackling Crane Lightning
-i(137742, 192850);	-- Glyph of Crackling Flames
 i(141058, 225550);	-- Glyph of Critterhex
 i(141900, 228381);	-- Glyph of Falling Thunder
-i(137743, 192851);	-- Glyph of Fallow Wings
 i(137731, 192839);	-- Glyph of Fel Imp
-i(137741, 192849);	-- Glyph of Fel Touched Souls
 i(141035, 225527);	-- Glyph of Fel Wings
 i(141036, 225528);	-- Glyph of Fel-Enemies
 i(141057, 225549);	-- Glyph of Flash Bang
@@ -123,7 +836,6 @@ i(141038, 225530);	-- Glyph of Shadow-Enemies
 i(141054, 225546);	-- Glyph of Smolder
 i(137732, 192840);	-- Glyph of Sparkles
 i(137737, 192845);	-- Glyph of Stellar Flare
-i(137744, 192852);	-- Glyph of Tattered Wings
 i(141068, 225560);	-- Glyph of the Blazing Savior
 i(141032, 225524);	-- Glyph of the Chilled Shell
 i(141033, 225525);	-- Glyph of the Crimson Shell
@@ -144,7 +856,6 @@ i(141066, 225558);	-- Glyph of the Voidlord
 i(141055, 225547);	-- Glyph of Yu'lon's Grace
 i(137745, 192855);	-- Prophecy Tarot [Rank 2]
 i(137746, 192856);	-- Prophecy Tarot [Rank 3]
-i(137728, 192802);	-- Scroll of Forgotten Knowledge
 i(137787, 210653);	-- Songs of Battle
 i(137788, 210654);	-- Songs of Peace
 i(140566, 223941);	-- Songs of the Alliance
@@ -186,6 +897,12 @@ i(137740, 192848);	-- Glyph of the Wraith Walker (8.0.1)
 -- NYI --
 i(141061, 225553);	-- Glyph of the Abyssal
 i(141065, 225557);	-- Glyph of the Terrorguard
+
+i(137742, 0);	-- Glyph of Crackling Flames
+i(137743, 0);	-- Glyph of Fallow Wings
+i(137741, 0);	-- Glyph of Fel Touched Souls
+i(137744, 0);	-- Glyph of Tattered Wings
+i(137728, 0);	-- Scroll of Forgotten Knowledge
 i(0, 238374);	--
 i(0, 238365);	--
 i(0, 238380);	--

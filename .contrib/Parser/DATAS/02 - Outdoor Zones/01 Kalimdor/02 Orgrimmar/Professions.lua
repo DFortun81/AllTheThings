@@ -454,6 +454,56 @@ root("Zones", m(KALIMDOR, {
 				i(34486),	-- Old Crafty
 			}),
 			prof(INSCRIPTION, {
+				n(30706, {	-- Jo'mah <Inscription Trainer>
+					["coord"] = { 35.6, 69.2, ORGRIMMAR },
+					["g"] = {
+						r(51005),	-- Milling*
+						cat(104, {	-- Ink
+							r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink*
+							r(53462),	-- Midnight Ink*
+							r(52843),	-- Moonglow Ink*
+						}),
+						cat(108, {	-- Research
+							r(61288, {["timeline"]={"removed 6.0.2"}}),	-- Minor Inscription Research*
+							r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink*
+						}),
+						cat(107, {	-- Scrolls
+							r(58472, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Agility*
+							r(58473),	-- Scroll of Agility II
+							r(58476),	-- Scroll of Agility III
+							r(58478),	-- Scroll of Agility IV
+							r(58480),	-- Scroll of Agility V
+							r(48114),	-- Scroll of Intellect*
+							r(50598),	-- Scroll of Intellect II*
+							r(50599),	-- Scroll of Intellect III
+							r(50600),	-- Scroll of Intellect IV
+							r(50601),	-- Scroll of Intellect V
+							r(48248),	-- Scroll of Recall*
+							r(60336),	-- Scroll of Recall II
+							r(45382),	-- Scroll of Stamina*
+							r(50612),	-- Scroll of Stamina II*
+							r(50614),	-- Scroll of Stamina III
+							r(50616),	-- Scroll of Stamina IV
+							r(50617),	-- Scroll of Stamina V
+							r(50618),	-- Scroll of Stamina VI
+							r(58484, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Strength*
+							r(58485),	-- Scroll of Strength II
+							r(58486),	-- Scroll of Strength III
+							r(58487),	-- Scroll of Strength IV
+							r(58488),	-- Scroll of Strength V
+							r(48116),	-- Scroll of Versatility / WRATH: Scroll of Spirit*
+							r(50605),	-- Scroll of Versatility II / WRATH: Scroll of Spirit II*
+							r(50606),	-- Scroll of Versatility III
+							r(50607),	-- Scroll of Versatility IV
+							r(50608),	-- Scroll of Versatility V
+							r(50609),	-- Scroll of Versatility VI
+						}),
+						cat(114, {	-- Other
+							r(59387),	-- Certificate of Ownership
+							r(52739),	-- Enchanting Vellum / WRATH: Armor Vellum*
+						}),
+					},
+				}),
 				--[[
 				n(46716, {	-- Nerog <Inscription Trainer> "TEST"
 					["coord"] = { 55.1, 55.9, ORGRIMMAR },

@@ -308,6 +308,16 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- #if AFTER WOD
+		spell(165466, {	-- Research: Blackfallow Ink
+			r(58296, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+		}),
+		-- #endif
+		filter(111, {	-- Glyphs
+			-- #if AFTER WOD
+			i(43335, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+			-- #endif
+		}),
 		n(-491, {	-- Tarot Cards
 			sp(86615, {	-- Darkmoon Card of Destruction
 				i(61988, {["f"] = 55}),    -- Ace of embers

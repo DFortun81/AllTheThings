@@ -345,6 +345,18 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- #if AFTER WOD
+		spell(165467, {	-- Research: Ink of Dreams
+			r(58299, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+			r(58306, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+		}),
+		-- #endif
+		filter(111, {	-- Glyphs
+		-- #if AFTER WOD
+			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+		-- #endif
+		}),
 		n(-491, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
 				i(79299, {["f"] = 55}),    -- Ace of Crane

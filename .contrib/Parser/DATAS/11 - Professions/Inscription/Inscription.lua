@@ -4,10 +4,12 @@
 -- Inscription - Skill ID  / SPELL ID
 root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	applyclassicphase(WRATH_PHASE_ONE, tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+		r(51005),	-- Milling*
 		cat(108, {	-- Research
-			r(165461),	-- Research: Celestial Ink
+			r(61288, {["timeline"]={"removed 6.0.2"}}),	-- Minor Inscription Research*
+			r(165461, {["timeline"]={"added 6.0.2"}}),	-- Research: Celestial Ink*
 			r(165460),	-- Research: Jadefire Ink
-			r(165456),	-- Research: Lion's Ink
+			r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink*
 			r(165304),	-- Research: Midnight Ink
 			r(165564),	-- Research: Moonglow Ink
 			r(165463),	-- Research: Shimmering Ink
@@ -18,10 +20,11 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(57710),	-- Fiery Ink
 			r(57703),	-- Hunter's Ink
 			r(57712),	-- Ink of the Sky
+			r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink*
 			r(57707),	-- Jadefire Ink
 			r(57704),	-- Lion's Ink
-			r(53462),	-- Midnight Ink
-			r(52843),	-- Moonglow Ink
+			r(53462),	-- Midnight Ink*
+			r(52843),	-- Moonglow Ink*
 			r(57708),	-- Royal Ink
 			r(57711),	-- Shimmering Ink
 		}),
@@ -44,40 +47,63 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(59475),	-- Tome of the Dawn
 		}),
 		cat(107, {	-- Scrolls
-			r(58472),	-- Scroll of Agility
+			r(58472, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Agility*
 			r(58473),	-- Scroll of Agility II
 			r(58476),	-- Scroll of Agility III
 			r(58478),	-- Scroll of Agility IV
 			r(58480),	-- Scroll of Agility V
-			r(48114),	-- Scroll of Intellect
-			r(50598),	-- Scroll of Intellect II
+			r(48114),	-- Scroll of Intellect*
+			r(50598),	-- Scroll of Intellect II*
 			r(50599),	-- Scroll of Intellect III
 			r(50600),	-- Scroll of Intellect IV
 			r(50601),	-- Scroll of Intellect V
-			r(48248),	-- Scroll of Recall
+			r(48248),	-- Scroll of Recall*
 			r(60336),	-- Scroll of Recall II
-			r(45382),	-- Scroll of Stamina
-			r(50612),	-- Scroll of Stamina II
+			r(45382),	-- Scroll of Stamina*
+			r(50612),	-- Scroll of Stamina II*
 			r(50614),	-- Scroll of Stamina III
 			r(50616),	-- Scroll of Stamina IV
 			r(50617),	-- Scroll of Stamina V
 			r(50618),	-- Scroll of Stamina VI
-			r(58484),	-- Scroll of Strength
+			r(58484, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Strength*
 			r(58485),	-- Scroll of Strength II
 			r(58486),	-- Scroll of Strength III
 			r(58487),	-- Scroll of Strength IV
 			r(58488),	-- Scroll of Strength V
-			r(48116),	-- Scroll of Versatility
-			r(50605),	-- Scroll of Versatility II
+			r(48116),	-- Scroll of Versatility / WRATH: Scroll of Spirit*
+			r(50605),	-- Scroll of Versatility II / WRATH: Scroll of Spirit II*
 			r(50606),	-- Scroll of Versatility III
 			r(50607),	-- Scroll of Versatility IV
 			r(50608),	-- Scroll of Versatility V
 			r(50609),	-- Scroll of Versatility VI
 		}),
 		cat(105, {	-- Clear Mind
-			r(92026),	-- Vanishing Powder
+			r(92026, {["timeline"]={"added 4.0.3"}}),	-- Vanishing Powder*
 		}),
 		cat(1126, {	-- Glyphs
+			r(58289, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Thorns
+			r(114295, {["timeline"]={"added 5.0.4","removed 7.0.3"}}),	-- Glyph of Grace
+
+			r(58296, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+
+			r(58298, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
+
+
+			r(58299, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Revive Pet
+
+			r(58299, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
+
+			r(58300, {["timeline"]={"added 3.0.2","removed 4.0.1"}}),	-- Glyph of Possessed Strength
+
+			r(58303, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+
+			r(58308, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
+
+			r(58310, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of the Penguin
+
+			r(58306, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+
+
 			r(64250),	-- Glyph of Crimson Banish
 			r(148271),	-- Glyph of Evaporation
 			r(58316),	-- Glyph of Fire From the Heavens
@@ -105,7 +131,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(114, {	-- Other
 			r(59387),	-- Certificate of Ownership
-			r(52739),	-- Enchanting Vellum
+			r(52739),	-- Enchanting Vellum / WRATH: Armor Vellum*
 		}),
 	}))),
 	applyclassicphase(WRATH_PHASE_ONE, tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
@@ -175,6 +201,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+		r(86008);	-- Inscription (Cata)
 		cat(785, {	-- Inks
 			r(86004),	-- Blackfallow Ink
 			r(86005),	-- Inferno Ink
@@ -190,14 +217,14 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(68166),	-- Glyph of Thunder Strike
 		}),
 		cat(787, {	-- Scrolls & Research
-			r(165466),	-- Research: Blackfallow Ink
-			r(85785),	-- Runescroll of Fortitude II
-			r(89370),	-- Scroll of Agility IX
-			r(89368),	-- Scroll of Intellect IX
-			r(89373),	-- Scroll of Protection IX
-			r(89372),	-- Scroll of Stamina IX
-			r(89369),	-- Scroll of Strength IX
-			r(89371),	-- Scroll of Versatility IX
+			r(165466, {["timeline"]={"added 6.0.2"}}),	-- Research: Blackfallow Ink*
+			r(85785),	-- Runescroll of Fortitude II*
+			r(89370),	-- Scroll of Agility IX*
+			r(89368),	-- Scroll of Intellect IX*
+			r(89373),	-- Scroll of Protection IX*
+			r(89372),	-- Scroll of Stamina IX*
+			r(89369),	-- Scroll of Strength IX*
+			r(89371),	-- Scroll of Versatility IX / CATA: Scroll of Spirit IX*
 		}),
 		cat(788, {	-- Cards
 			r(86615),	-- Darkmoon Card of Destruction
@@ -229,9 +256,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			}),
 		}),
 		cat(792, {	-- Toys
-			r(86646),	-- Origami Beetle
-			r(86645),	-- Origami Rock
-			r(86644),	-- Origami Slime
+			r(86646),	-- Origami Beetle*
+			r(86645),	-- Origami Rock*
+			r(86644),	-- Origami Slime*
 		}),
 	}))),
 	applyclassicphase(MOP_PHASE_ONE, tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
@@ -270,7 +297,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		cat(781, {	-- Scrolls & Research
 			r(112045),	-- Runescroll of Fortitude III
 			r(112996),	-- Scroll of Wisdom
-			r(165467),	-- Research: Ink of Dreams
+			r(165467, {["timeline"]={"added 6.0.2"}}),	-- Research: Ink of Dreams*
 		}),
 		cat(119, {	-- Shoulder Inscription
 			r(126995),	-- Greater Crane Wing Inscription
@@ -369,9 +396,11 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
-		r(195115),	-- Inscription (Legion)
-		r(264506),	-- Legion Inscription
-		-- TIMELINE
+		r(195115, {	-- Inscription (Legion)
+			["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+			["collectible"] = false,
+		}),
+		r(264506, {["timeline"]={"added 8.0.1"}}),	-- Legion Inscription
 		cat(454, {	-- Books & Scrolls
 			r(226248),	-- Codex of the Tranquil Mind [Rank 1]
 			r(227239),	-- Codex of the Tranquil Mind [Rank 2]
@@ -392,71 +421,78 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(451, {	-- Cards
 			r(192854),	-- Prophecy Tarot [Rank 1]
-			r(192855, {["u"]=DARKMOON_FAIRE}),	-- Prophecy Tarot [Rank 2]
+			r(192855),	-- Prophecy Tarot [Rank 2]
 			r(192856, {["u"]=DARKMOON_FAIRE}),	-- Prophecy Tarot [Rank 3]
 			r(191659),	-- Darkmoon Card of the Legion [Rank 1]
 			r(192859, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 2]
 			r(192890, {["u"]=DARKMOON_FAIRE}),	-- Darkmoon Card of the Legion [Rank 3]
 		}),
 		cat(91, {	-- Glyphs
-			r(225535),	-- Glyph of Arachnophobia*
-			r(225534),	-- Glyph of Autumnal Bloom*
-			r(192841),	-- Glyph of Blackout*
-			r(225548),	-- Glyph of Burnout*
-			r(225522),	-- Glyph of Cracked Ice*
-			r(192843),	-- Glyph of Crackling Crane Lightning*
-			r(192850),	-- Glyph of Crackling Flames*
-			r(232274, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Crackling Ox Lightning*
-			r(225550),	-- Glyph of Critterhex*
-			r(254238, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Dark Absolution*
-			r(246982, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Ember Shards*
-			r(228381),	-- Glyph of Falling Thunder*
-			r(192851),	-- Glyph of Fallow Wings*
-			r(192839),	-- Glyph of Fel Imp*
-			r(192849),	-- Glyph of Fel Touched Souls*
-			r(225527),	-- Glyph of Fel Wings*
-			r(225528),	-- Glyph of Fel-Enemies*
-			r(246999, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Fel-Touched Shards*
-			r(225549),	-- Glyph of Flash Bang*
-			r(225551, {	-- Glyph of Flickering*
+			r(225535),	-- Glyph of Arachnophobia
+			r(225534),	-- Glyph of Autumnal Bloom
+			r(192841),	-- Glyph of Blackout
+			r(225548),	-- Glyph of Burnout
+			r(225522),	-- Glyph of Cracked Ice
+			r(192843),	-- Glyph of Crackling Crane Lightning
+			r(192850),	-- Glyph of Crackling Flames
+			r(232274, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Crackling Ox Lightning
+			r(225550),	-- Glyph of Critterhex
+			r(254238, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Dark Absolution
+			r(246982, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Ember Shards
+			r(228381),	-- Glyph of Falling Thunder
+			r(192851),	-- Glyph of Fallow Wings
+			r(192839),	-- Glyph of Fel Imp
+			r(192849),	-- Glyph of Fel Touched Souls
+			r(225527),	-- Glyph of Fel Wings
+			r(225528),	-- Glyph of Fel-Enemies
+			r(246999, {["timeline"]={"added 7.3.0"}}),	-- Glyph of Fel-Touched Shards
+			r(225549),	-- Glyph of Flash Bang
+			r(225551, {	-- Glyph of Flickering
 				["description"] = "Currently this Technique can only be learned by Shaman's.   We suggest submitting a bug report to Blizzard to have it usuable by all scribes like the other techniques.",
 				["classes"] = { SHAMAN },
 			}),
-			r(246984, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Floating Shards*
-			r(192838),	-- Glyph of Ghostly Fade*
-			r(225529),	-- Glyph of Mana Touched Souls*
-			r(225536),	-- Glyph of Nesingwary's Nemeses*
-			r(225552),	-- Glyph of Pebbles*
-			r(225545),	-- Glyph of Polymorphic Proportions*
-			r(225530),	-- Glyph of Shadow-Enemies*
-			r(225546),	-- Glyph of Smolder*
-			r(192840),	-- Glyph of Sparkles*
-			r(192845),	-- Glyph of Stellar Flare*
-			r(192852),	-- Glyph of Tattered Wings*
-			r(225560),	-- Glyph of the Blazing Savior*
-			r(225524),	-- Glyph of the Chilled Shell*
-			r(225525),	-- Glyph of the Crimson Shell*
-			r(225538),	-- Glyph of the Dire Stable*
-			r(225531),	-- Glyph of the Doe*
-			r(225532),	-- Glyph of the Feral Chameleon*
-			r(225533),	-- Glyph of the Forest Path*
-			r(225539),	-- Glyph of the Goblin Anti-Grav Flare*
-			r(225541),	-- Glyph of the Hook*
-			r(225554),	-- Glyph of the Inquisitor's Eye*
-			r(254227, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Lightspawn*
-			r(225555),	-- Glyph of the Observer*
-			r(192846),	-- Glyph of the Queen*
-			r(192842),	-- Glyph of the Sentinel*
-			r(240272, {["timeline"]={"added 7.2.0"}}),	-- Glyph of the Shadow Succubus*
-			r(225556),	-- Glyph of the Shivarra*
-			r(192844),	-- Glyph of the Spectral Raptor*
-			r(225543),	-- Glyph of the Trident*
-			r(232275, {["timeline"]={"added 7.1.0"}}),	-- Glyph of the Trusted Steed*
-			r(254231, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Voidling*
-			r(225558),	-- Glyph of the Voidlord*
-			r(233278, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Twilight Bloom*
-			r(225559, {["timeline"]={"added 7.2.0"}}),	-- Glyph of Wrathguard*
-			r(225547),	-- Glyph of Yu'lon's Grace*
+			r(246984, {["timeline"]={"added 7.2.5"}}),	-- Glyph of Floating Shards
+			r(192838),	-- Glyph of Ghostly Fade
+			r(225529),	-- Glyph of Mana Touched Souls
+			r(225536),	-- Glyph of Nesingwary's Nemeses
+			r(225552),	-- Glyph of Pebbles
+			r(225545),	-- Glyph of Polymorphic Proportions
+			r(225530),	-- Glyph of Shadow-Enemies
+			r(225546),	-- Glyph of Smolder
+			r(192840),	-- Glyph of Sparkles
+			r(192845),	-- Glyph of Stellar Flare
+			r(192852),	-- Glyph of Tattered Wings
+			r(225560),	-- Glyph of the Blazing Savior
+			r(225523, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Blood Wraith
+			r(225537, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Bullseye
+			r(225524),	-- Glyph of the Chilled Shell
+			r(225525),	-- Glyph of the Crimson Shell
+			r(225538),	-- Glyph of the Dire Stable
+			r(225531),	-- Glyph of the Doe
+			r(225532),	-- Glyph of the Feral Chameleon
+			r(225533),	-- Glyph of the Forest Path
+			r(225539),	-- Glyph of the Goblin Anti-Grav Flare
+			r(225540, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Headhunter
+			r(225541),	-- Glyph of the Hook
+			r(225554),	-- Glyph of the Inquisitor's Eye
+			r(254227, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Lightspawn
+			r(225555),	-- Glyph of the Observer
+			r(192846),	-- Glyph of the Queen
+			r(192842),	-- Glyph of the Sentinel
+			r(240272, {["timeline"]={"added 7.2.0"}}),	-- Glyph of the Shadow Succubus
+			r(225556),	-- Glyph of the Shivarra
+			r(225542, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Skullseye
+			r(192844),	-- Glyph of the Spectral Raptor
+			r(225543),	-- Glyph of the Trident
+			r(232275, {["timeline"]={"added 7.1.0"}}),	-- Glyph of the Trusted Steed
+			r(225526, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Unholy Wraith
+			r(254231, {["timeline"]={"added 7.3.0"}}),	-- Glyph of the Voidling
+			r(225558),	-- Glyph of the Voidlord
+			r(233278, {["timeline"]={"added 7.1.0"}}),	-- Glyph of Twilight Bloom
+			r(192848, {["timeline"]={"added 7.0.3","removed 8.0.1"}}),	-- Glyph of the Wraith Walker
+			r(225559, {["timeline"]={"added 7.2.0"}}),	-- Glyph of Wrathguard
+			r(225547),	-- Glyph of Yu'lon's Grace
+			r(360882, {["timeline"]={"added 9.1.5"}}),	-- Mark of the Duskwing Raven
 		}),
 		cat(492, {	-- Mass Milling
 			r(209658),	-- Mass Mill Aethril
@@ -545,28 +581,17 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 				["g"] = {
-					r(264506),	-- Legion Inscription
+					r(195115, {	-- Inscription (Legion)
+						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+						["collectible"] = false,
+					}),
+					r(264506, {["timeline"]={"added 8.0.1"}}),	-- Legion Inscription
 				},
 			}),
 			q(39931, {	-- Smashing Herbs
 				["sourceQuests"] = { 39847 },	-- Sign This
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-				--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
-				["g"] = {
-					recipe(192969),	--
-					recipe(192975),	--
-					recipe(192970),	--
-					recipe(192971),	--
-					recipe(192972),	--
-					recipe(192973),	--
-					recipe(192974),	--
-					recipe(192976),	--
-					recipe(192978),	--
-					recipe(192979),	--
-					recipe(192980),	--
-					recipe(192981),	--
-				},]]--
 			}),
 			q(39932, {	-- Fish Ink
 				["sourceQuests"] = { 39931 },	-- Smashing Herbs
@@ -599,7 +624,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
 				["g"] = {
-					i(137741),	-- Technique: Glyph of Fel Touched Souls (RECIPE!)
+					r(192849),	-- Glyph of Fel Touched Souls
 				},
 			}),
 			q(39935, {	-- The Price of Power (non-DH)
@@ -608,7 +633,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
 				["g"] = {
-					i(137741),	-- Technique: Glyph of Fel Touched Souls (RECIPE!)
+					r(192849),	-- Glyph of Fel Touched Souls
 				},
 			}),
 			q(40058, {	-- Defense Symbology (DH)
@@ -641,7 +666,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
 				["g"] = {
-					i(137743),	-- Technique: Glyph of Fallow Wings (RECIPE!)
+					r(192851),	-- Glyph of Fallow Wings
 				},
 			}),
 			q(39938, {	-- Containing the Demon Within (non-DH)
@@ -650,7 +675,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
 				["g"] = {
-					i(137743),	-- Technique: Glyph of Fallow Wings (RECIPE!)
+					r(192851),	-- Glyph of Fallow Wings
 				},
 			}),
 			q(40061, {	-- To Know Your Enemy (DH)
@@ -685,7 +710,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
 				["coord"] = { 43.2, 43.2, AZSUNA },
 				["g"] = {
-					i(137742),	-- Technique: Glyph of Crackling Flames (RECIPE!)
+					r(192850),	-- Glyph of Crackling Flames
 				},
 			}),
 			q(39943, {	-- The Burdens of Hunting
@@ -705,7 +730,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 					{ 43.2, 43.2, AZSUNA },
 				},
 				["g"] = {
-					i(137744),	-- Technique: Glyph of Tattered Wings (RECIPE!)
+					r(192852),	-- Glyph of Tattered Wings
 				},
 			}),
 			q(39944, {	-- Mysterious Messages
@@ -736,7 +761,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 				["coord"] = { 69.2, 40.6, STORMHEIM },
 				["g"] = {
-					i(137728),	-- Technique: Scroll of Forgotten Knowledge (RECIPE!)
+					r(192802),	-- Scroll of Forgotten Knowledge
 				},
 			}),
 			q(39948, {	-- The Ink Flows
@@ -1234,7 +1259,6 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(367389, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Lupine
 			r(367393, {["timeline"]={"added 9.2.0"}}),	-- Glyph of the Spectral Vulpine
 			r(362412),	-- Glyph of the Wild Mushroom
-			r(360882),	-- Mark of the Duskwing Raven
 			r(360542),	-- Mark of the Gloomstalker Dredbat
 			r(360885),	-- Mark of the Midnight Runestag
 			r(360880),	-- Mark of the Regal Dredbat
