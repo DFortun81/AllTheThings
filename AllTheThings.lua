@@ -7708,13 +7708,21 @@ app.GetQuestIndicator = function(t)
 		if C_QuestLog_IsOnQuest(t.questID) then
 			return (C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin")
 				or "Interface_Questin_grey";
-		elseif ATTAccountWideData.OneTimeQuests[t.questID] == false then
+		elseif ATTAccountWideData.OneTimeQuests[t.questID] ~= nil then
 			return "Interface_Quest_Arrow";
 		end
 	end
 end
 
 local criteriaFuncs = {
+    ["achID"] = function(v)
+        return app.CurrentCharacter.Achievements[v] or select(4, GetAchievementInfo(v));
+    end,
+	["label_achID"] = L["LOCK_CRITERIA_ACHIEVEMENT_LABEL"],
+    ["text_achID"] = function(v)
+        return select(2, GetAchievementInfo(v));
+    end,
+
     ["lvl"] = function(v)
         return app.Level >= v;
     end,

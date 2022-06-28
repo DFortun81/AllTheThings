@@ -236,6 +236,7 @@ app.L = {
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	["CURRENCY_NEEDED_TO_BUY"] = "Estimated amount needed to obtain remaining Things";
 	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
+	["LOCK_CRITERIA_ACHIEVEMENT_LABEL"] = "Completed Achievement";
 	["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
