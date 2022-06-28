@@ -16,12 +16,12 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(104, {	-- Ink
 			r(57709),	-- Celestial Ink
-			r(57706),	-- Dawnstar Ink
+			r(57706),	-- Dawnstar Ink*
 			r(57710),	-- Fiery Ink
 			r(57703),	-- Hunter's Ink*
 			r(57712),	-- Ink of the Sky
 			r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink*
-			r(57707),	-- Jadefire Ink
+			r(57707),	-- Jadefire Ink*
 			r(57704),	-- Lion's Ink*
 			r(53462),	-- Midnight Ink*
 			r(52843),	-- Moonglow Ink*
@@ -31,20 +31,20 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		cat(106, {	-- "Card"
 			r(59487),	-- Arcane Tarot
 			r(59502),	-- Darkmoon Card
-			r(48247),	-- Mysterious Tarot
+			r(48247),	-- Mysterious Tarot*
 			r(59491),	-- Shadowy Tarot
-			r(59480),	-- Strange Tarot
+			r(59480),	-- Strange Tarot*
 		}),
 		cat(103, {	-- Off-hand
 			r(59490),	-- Book of Stars
-			r(59478),	-- Book of Survival
+			r(59478),	-- Book of Survival*
 			r(59489),	-- Fire Eater's Guide
 			r(59494),	-- Manual of Clouds
-			r(58565),	-- Mystic Tome
+			r(58565),	-- Mystic Tome*
 			r(59486),	-- Royal Guide of Escape Routes
 			r(59493),	-- Stormbound Tome
 			r(59484),	-- Tome of Kings
-			r(59475),	-- Tome of the Dawn
+			r(59475),	-- Tome of the Dawn*
 		}),
 		cat(107, {	-- Scrolls
 			r(58472),	-- Scroll of Agility*
@@ -54,14 +54,14 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(58480),	-- Scroll of Agility V
 			r(48114),	-- Scroll of Intellect*
 			r(50598),	-- Scroll of Intellect II*
-			r(50599),	-- Scroll of Intellect III
+			r(50599),	-- Scroll of Intellect III*
 			r(50600),	-- Scroll of Intellect IV
 			r(50601),	-- Scroll of Intellect V
 			r(48248),	-- Scroll of Recall*
 			r(60336),	-- Scroll of Recall II
 			r(45382),	-- Scroll of Stamina*
 			r(50612),	-- Scroll of Stamina II*
-			r(50614),	-- Scroll of Stamina III
+			r(50614),	-- Scroll of Stamina III*
 			r(50616),	-- Scroll of Stamina IV
 			r(50617),	-- Scroll of Stamina V
 			r(50618),	-- Scroll of Stamina VI
@@ -72,7 +72,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(58488),	-- Scroll of Strength V
 			r(48116),	-- Scroll of Versatility / WRATH: Scroll of Spirit*
 			r(50605),	-- Scroll of Versatility II / WRATH: Scroll of Spirit II*
-			r(50606),	-- Scroll of Versatility III
+			r(50606),	-- Scroll of Versatility III  / WRATH: Scroll of Spirit III*
 			r(50607),	-- Scroll of Versatility IV
 			r(50608),	-- Scroll of Versatility V
 			r(50609),	-- Scroll of Versatility VI
@@ -179,6 +179,98 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(57246, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
 
 			r(57266, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
+
+			r(57029, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
+
+			r(57120, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
+
+			r(57184, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fade
+
+			r(57163, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Rending
+
+			r(57238, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
+
+			r(57265, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
+
+			r(56945, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Touch
+
+			r(56971, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
+
+			r(56997, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
+
+			r(57030, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
+
+			r(57121, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Expose Armor
+
+			r(57186, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
+
+			r(57157, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
+
+			r(57240, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
+
+			r(57262, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fear
+
+			r(58307, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
+
+			r(58324, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Distract
+
+			r(58328, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Vanish / Glyph of Poisons[CATA+]
+
+			r(58331, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Water Breathing / Glyph of Healing Storm[MOP+]
+
+			r(58340, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Kilrogg
+
+			r(56951, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
+
+			r(56973, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Blink
+
+			r(57005, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+
+			r(57031, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Divinity
+
+			r(57123, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
+
+			r(57188, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Inner Fire
+
+			r(57167, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
+
+			r(57245, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
+
+			r(57269, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
+
+			r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
+
+			r(57007, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
+
+			r(58287, {["timeline"]={"added 3.0.2"}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
+
+			r(58302, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Feign Death / Glyph of Fireworks[MOP+]
+
+			r(58316, {["timeline"]={"added 3.0.2"}}),	-- Glyph of the Wise / Glyph of Justice[CATA] / Glyph of Fire From the Heavens[MOP+]
+
+			r(58329, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Astral Recall
+
+			r(58330, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Renewed Life / Glyph of Far Sight[MOP+]
+
+			r(58333, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Walking / Glyph of Totemic Encirclement[MOP+]
+
+			r(58338, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Curse of Exhaustion
+
+			r(58339, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Enslave Demon
+
+			r(59315, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Dash
+
+			r(56974, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Evocation
+
+			r(57032, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Righteous Defense / Glyph of Righteousness[CATA] / Glyph of the Luminous Charger[MOP+]
+
+			r(57125, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Gouge
+
+			r(57197, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Renew
+
+			r(57249, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
+
+			r(57271, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Shadow Bolt
 
 			r(64250),	-- Glyph of Crimson Banish
 			r(148271),	-- Glyph of Evaporation

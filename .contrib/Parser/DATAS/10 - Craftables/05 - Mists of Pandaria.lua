@@ -350,6 +350,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			r(58299, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
 			r(58306, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
 			r(58288, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
+			r(57123, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
 		}),
 		-- #endif
 		filter(111, {	-- Glyphs
@@ -357,6 +358,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
 			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
 			i(43331, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
+			i(42964, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
 		-- #endif
 		}),
 		n(-491, {	-- Tarot Cards
