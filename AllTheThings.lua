@@ -994,7 +994,7 @@ end
 					local specializations = app.GetTradeSkillSpecialization(prof);
 					if specializations ~= nil then
 						for _,s in pairs(specializations) do
-							if s and IsSpellKnown(s) then
+							if s and app.IsSpellKnownHelper(s) then
 								cache[s] = true;
 							end
 						end
@@ -7559,8 +7559,8 @@ end)();
 (function()
 local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData =
 	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData;
-local IsSpellKnown,GetSpellInfo,math_floor =
-	  IsSpellKnown,GetSpellInfo,math.floor;
+local GetSpellInfo,math_floor =
+	  GetSpellInfo,math.floor;
 
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
@@ -7731,7 +7731,7 @@ local criteriaFuncs = {
     end,
 
     ["spellID"] = function(v)
-        return IsSpellKnown(v) or app.CurrentCharacter.Spells[v];
+        return app.IsSpellKnownHelper(v) or app.CurrentCharacter.Spells[v];
     end,
 	["label_spellID"] = L["LOCK_CRITERIA_SPELL_LABEL"],
     ["text_spellID"] = function(v)
@@ -12049,7 +12049,6 @@ local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
 local GetSpellInfo = GetSpellInfo;
 local GetSpellLink = GetSpellLink;
-local IsSpellKnown = IsSpellKnown;
 local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 	local allMountIDs = C_MountJournal_GetMountIDs();
 	if allMountIDs and #allMountIDs > 0 then
@@ -12129,7 +12128,7 @@ local mountFields = {
 	-- ["collectedAsCost"] = app.CollectedAsCost,
 	["collected"] = function(t)
 		if ATTAccountWideData.Spells[t.spellID] then return 1; end
-		if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
+		if app.IsSpellKnownHelper(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
@@ -12909,6 +12908,7 @@ local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
         return true;
     end
 end
+app.IsSpellKnownHelper = IsSpellKnownHelper;
 
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;
