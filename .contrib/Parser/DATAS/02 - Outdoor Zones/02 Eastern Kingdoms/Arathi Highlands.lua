@@ -684,9 +684,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["description"] =
 						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.",
+						"Needs a minimum of 225 skill in Tailoring.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
 						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
+						"Needs a minimum of 225 skill in First Aid.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
 						-- #endif
 					["requireSkill"] =
 						-- #if AFTER BFA
@@ -696,7 +696,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						-- #endif
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = lvlsquish(35, 10, 35),
+					["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
 				}),
 				q(26110, {	-- Just Like Old Times
 					["qg"] = 2712,	-- Quae
