@@ -459,17 +459,22 @@ root("Zones", m(KALIMDOR, {
 					["g"] = {
 						r(51005),	-- Milling*
 						cat(104, {	-- Ink
+							r(57703),	-- Hunter's Ink*
 							r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink*
+							r(165460, {["timeline"]={"added 6.0.2"}}),	-- Research: Jadefire Ink*
 							r(53462),	-- Midnight Ink*
 							r(52843),	-- Moonglow Ink*
+							r(57704),	-- Lion's Ink*
+							r(165463, {["timeline"]={"added 6.0.2"}}),	-- Research: Shimmering Ink*
 						}),
 						cat(108, {	-- Research
 							r(61288, {["timeline"]={"removed 6.0.2"}}),	-- Minor Inscription Research*
 							r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink*
+							r(165564, {["timeline"]={"added 6.0.2"}}),	-- Research: Moonglow Ink*
 						}),
 						cat(107, {	-- Scrolls
-							r(58472, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Agility*
-							r(58473),	-- Scroll of Agility II
+							r(58472),	-- Scroll of Agility*
+							r(58473),	-- Scroll of Agility II*
 							r(58476),	-- Scroll of Agility III
 							r(58478),	-- Scroll of Agility IV
 							r(58480),	-- Scroll of Agility V
@@ -486,8 +491,8 @@ root("Zones", m(KALIMDOR, {
 							r(50616),	-- Scroll of Stamina IV
 							r(50617),	-- Scroll of Stamina V
 							r(50618),	-- Scroll of Stamina VI
-							r(58484, {["timeline"]={"added 3.1.0"}}),	-- Scroll of Strength*
-							r(58485),	-- Scroll of Strength II
+							r(58484),	-- Scroll of Strength*
+							r(58485),	-- Scroll of Strength II*
 							r(58486),	-- Scroll of Strength III
 							r(58487),	-- Scroll of Strength IV
 							r(58488),	-- Scroll of Strength V
@@ -501,121 +506,37 @@ root("Zones", m(KALIMDOR, {
 						cat(114, {	-- Other
 							r(59387),	-- Certificate of Ownership
 							r(52739),	-- Enchanting Vellum / WRATH: Armor Vellum*
+							r(52840, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Weapon Vellum
+						}),
+						filter(111, {
+							r(56955, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rejuvenation
+							r(56976, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Nova
+							r(57004, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
+							r(57114, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Backstab / Glyph of Decoy[MOP+]
+							r(57194, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Power Word: Shield
+							r(56963, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
+							r(57239, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flame Shock
+							r(57259, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
+							r(56961, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Maul
+							r(48121, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Entangling Roots
+							r(67600, {["timeline"]={"added 3.2.0","removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
+							r(57119, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Evasion
+							r(57158, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Heroic Strike
+							r(57196, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Psychic Scream
+							r(57246, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
+							r(57266, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
+
+
+							-- #if BEFORE WOD
+							r(56978, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+							r(57009, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
+							r(57027, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
+							r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+							r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+							-- #endif
 						}),
 					},
 				}),
-				--[[
-				n(46716, {	-- Nerog <Inscription Trainer> "TEST"
-					["coord"] = { 55.1, 55.9, ORGRIMMAR },
-					["g"] = {
-						tier(CLASSIC_TIER, {
-							category(108, {	-- Research
-								recipe(165461),	-- Research: Celestial Ink
-								recipe(165460),	-- Research: Jadefire Ink
-								recipe(165456),	-- Research: Lion's Ink
-								recipe(165463),	-- Research: Shimmering Ink
-								recipe(165304),	-- Research: Midnight Ink
-								recipe(165564),	-- Research: Moonglow Ink
-							}),
-							category(104, {	-- Ink
-								recipe(57712),	-- Ink of the Sky
-								recipe(57711),	-- Shimmering Ink
-								recipe(57710),	-- Fiery Ink
-								recipe(57709),	-- Celestial Ink
-								recipe(57708),	-- Royal Ink
-								recipe(57707),	-- Jadefire Ink
-								recipe(57706),	-- Dawnstar Ink
-								recipe(57704),	-- Lion's Ink
-								recipe(57703),	-- Hunter's Ink
-								recipe(53462),	-- Midnight Ink
-								recipe(52843),	-- Moonglow Ink
-							}),
-							category(106, {	-- Card
-								recipe(59502),-- Darkmoon Card
-								recipe(59491),-- Shadowy Tarot
-								recipe(59487),-- Arcane Tarot
-								recipe(59480),-- Strange Tarot
-								recipe(48247),-- Mysterious Tarot
-							}),
-							category(103, {	-- Off-hand,
-								recipe(59494),	-- Manual of Clouds
-								recipe(59493),	-- Stormbound Tome
-								recipe(59490),	-- Book of Stars
-								recipe(59489),	-- Fire Eater's Guide
-								recipe(59486),	-- Royal Guide of Escape Routes
-								recipe(59484),	-- Tome of Kings
-								recipe(59478),	-- Book of Survival
-								recipe(59475),	-- Tome of the Dawn
-								recipe(58565),	-- Mystic Tome
-							}),
-							category(107, {	-- Scrolls,
-								recipe(50618),	-- Scroll of Stamina VI
-								recipe(50609),	-- Scroll of Versatility VI
-								recipe(58480),	-- Scroll of Agility V
-								recipe(58488),	-- Scroll of Strength V
-								recipe(50601),	-- Scroll of Intellect V
-								recipe(50608),	-- Scroll of Versatility V
-								recipe(50617),	-- Scroll of Stamina V
-								recipe(58478),	-- Scroll of Agility IV
-								recipe(58487),	-- Scroll of Strength IV
-								recipe(50600),	-- Scroll of Intellect IV
-								recipe(60336),	-- Scroll of Recall II
-								recipe(50607),	-- Scroll of Versatility IV
-								recipe(50616),	-- Scroll of Stamina IV
-								recipe(58476),	-- Scroll of Agility III
-								recipe(58486),	-- Scroll of Strength III
-								recipe(50599),	-- Scroll of Intellect III
-								recipe(50606),	-- Scroll of Versatility III
-								recipe(50614),	-- Scroll of Stamina III
-								recipe(58473),	-- Scroll of Agility II
-								recipe(58485),	-- Scroll of Strength II
-								recipe(50598),	-- Scroll of Intellect II
-								recipe(48248),	-- Scroll of Recall
-								recipe(50612),	-- Scroll of Stamina II
-								recipe(50605),	-- Scroll of Versatility II
-								recipe(58472),	-- Scroll of Agility
-								recipe(48114),	-- Scroll of Intellect
-								recipe(45382),	-- Scroll of Stamina
-								recipe(58484),	-- Scroll of Strength
-								recipe(48116),	-- Scroll of Versatility
-							}),
-							category(105, {	-- Clear Mind,
-								recipe(92026),	-- Vanishing Powder
-							}),
-							category(1126, {	-- Glyphs,
-								recipe(64250),	-- Glyph of Crimson Banish
-								recipe(148271),	-- Glyph of Evaporation
-								recipe(58316),	-- Glyph of Fire From the Heavens
-								recipe(57224),	-- Glyph of Foul Menagerie
-								recipe(58345),	-- Glyph of Gushing Wound
-								recipe(112429),	-- Glyph of Hawk Feast
-								recipe(148278),	-- Glyph of Inspired Hymns
-								recipe(148282),	-- Glyph of Lingering Ancestors
-								recipe(58347),	-- Glyph of Mighty Victory
-								recipe(112466),	-- Glyph of Rising Tiger Kick
-								recipe(58320),	-- Glyph of Shackle Undead
-								recipe(107907),	-- Glyph of Shadow
-								recipe(58341),	-- Glyph of Soulwell
-								recipe(148281),	-- Glyph of Spirit Raptors
-								recipe(56965),	-- Glyph of Stars
-								recipe(123781),	-- Glyph of the Blazing Trail
-								recipe(131152),	-- Glyph of the Cheetah
-								recipe(57209),	-- Glyph of the Geist
-								recipe(57032),	-- Glyph of the Luminous Charger
-								recipe(148266),	-- Glyph of the Skeleton
-								recipe(58332),	-- Glyph of the Spectral Wolf
-								recipe(148270),	-- Glyph of the Unbound Elemental
-								recipe(148292),	-- Glyph of the Weaponmaster
-								recipe(58312),	-- Glyph of Winged Vengeance
-							}),
-							category(114, {	-- Other,
-								recipe(59387),	-- Certificate of Ownership
-								recipe(52739),	-- Enchanting Vellum
-							}),
-						}),
-					},
-				}),
-				--]]
 				n(QUESTS, {
 					q(27686, {	-- Forged Documents
 						["provider"] = { "i", 63276 },	-- Forged Documents

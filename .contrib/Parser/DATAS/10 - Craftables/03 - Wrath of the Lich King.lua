@@ -334,11 +334,21 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- #if AFTER WOD
+		spell(165465, {	-- Research: Ink of the Sea
+			r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+			r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+		}),
+		-- #endif
 		filter(111, {	-- Glyphs
 			i(40919, {	-- Glyph of the Orca
 				["questID"] = 62673,
 				["classes"] = { DRUID },
 			}),
+			-- #if BEFORE WOD
+			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			-- #endif
 		}),
 		n(-491, {	-- Tarot Cards
 			sp(59504, {	-- Darkmoon Card of the North
