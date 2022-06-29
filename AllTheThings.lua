@@ -17027,7 +17027,7 @@ function app:GetDataCache()
 		db.g = app.Categories.BlackMarket;
 		db.expanded = false;
 		db.text = BLACK_MARKET_AUCTION_HOUSE;
-		db.icon = app.asset("Interface_Vendor"); -- Temporary
+		db.icon = app.asset("Category_Blackmarket");
 		tinsert(g, db);
 	end
 
