@@ -224,10 +224,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(15499, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Shadowlands Keystone Master: Season Three
 			i(187682),	-- Wastewarped Deathwalker (MOUNT!)
 		})),
-		ach(15500, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Keystone Hero: Tazavesh, the Veiled Market
-			crit(1),	-- Tazavesh: Streets of Wonder
-			crit(2),	-- Tazavesh: So'leah's Gambit
-		})),
 		ach(15506, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } })),	-- Shadowlands Keystone Hero: Season Three
 		ach(15688, {["timeline"] = { ADDED_SLS4 }}),	-- Shadowlands Keystone Explorer: Season Four
 		ach(15689, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Shadowlands Keystone Conqueror: Season Four
