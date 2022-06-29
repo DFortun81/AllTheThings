@@ -41,7 +41,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						gt(441, {	-- The Vault
 							n(98100, {	-- Taoshi
 								["coord"] = { 40.8, 76.8, THE_HALL_OF_SHADOWS },
-								["cost"] = { { "i", 94222, 1} },	-- 1xKey to the Palace of Lei Shen
+								["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
 								["maps"] = { 518 },	-- Thunder King's Citadel
 								["g"] = {
 									i(95497, {	-- Burial Trove Key

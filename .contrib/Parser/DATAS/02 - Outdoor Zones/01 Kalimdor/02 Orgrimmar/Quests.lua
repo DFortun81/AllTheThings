@@ -474,7 +474,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(28299, {	-- Meet with Kranosh
+			q(28299, {	-- Meet with Kazak Darkscream
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
 				["isBreadcrumb"] = true,
@@ -701,11 +701,23 @@ root("Zones", m(KALIMDOR, {
 					i(191408),	-- Explosive Pie
 				},
 			})),
-			q(28459, {	-- Stones of Binding
+			q(28459, {	-- Stones of Binding -- TODO: Move to BRD?
 				["sourceQuests"] = { 28299 },	-- Meet with Kranosh
-				["provider"] = { "n", 88705 },	-- Kranosh
+				["qgs"] = {
+					-- #IF AFTER SHADOWLANDS
+					168623,	-- Kazak Darkscream
+					-- #ELSE
+					88705,	-- Kranosh
+					-- #ENDIF
+				},
+				["coords"] = {
+					-- #IF AFTER SHADOWLANDS
+					{ 74.6, 47.4, ORGRIMMAR },
+					-- #ELSE
+					{ 49.0, 55.2, ORGRIMMAR },
+					-- #ENDIF
+				},
 				["classes"] = { WARLOCK },
-				["coord"] = { 49.0, 55.2, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(65627),	-- Horns of the Left Hand Path

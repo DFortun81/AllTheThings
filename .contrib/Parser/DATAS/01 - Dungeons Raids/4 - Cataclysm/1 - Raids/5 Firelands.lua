@@ -82,17 +82,7 @@ root("Instances", tier(CATA_TIER, {
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
 				["isRaid"] = true,
 				["lvl"] = 85,
-				["maps"] = {
-					TANARIS,
-					74,	-- Tanaris: Caverns of Time Entrance
-					CAVERNS_OF_TIME,
-					STORMWIND_CITY,
-					ORGRIMMAR,
-					86,		-- Orgrimmar: The Drag
-					300,	-- The Nexus (phased)
-					MOUNT_HYJAL,
-					BOREAN_TUNDRA,
-				},
+				-- TODO: coords for all these quests
 				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID }},{
 					a(q(29453, {	-- Your Time Has Come [A]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",

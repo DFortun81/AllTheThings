@@ -345,10 +345,10 @@ _.Zones =
 					["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 				}),
 				q(13099, {	-- Just Checkin'
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
+					["timeline"] = { "added 3.3.0.10772", "removed 4.3.0.14732" },
 				}),
-				q(29836, {	-- Just Checkin' -- aa
+				q(29836, {	-- Just Checkin'
 					["coord"] = { 59.9, 57.9, ZULDRAK },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 					["altQuests"] = { 29833 },	-- Unfinished Business
@@ -741,6 +741,7 @@ _.Zones =
 						i(39838),	-- Supple Belt of the Bloodletter
 						i(39796),	-- Boots of the Great Sacrifice
 						i(39798),	-- Ring of Ancestral Protectors
+						i(20390),	-- Candy Bar
 					},
 				}),
 				q(12796, {	-- The Magical Kingdom of Dalaran -- aa
