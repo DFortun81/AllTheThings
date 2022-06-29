@@ -402,6 +402,9 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						"removed 8.3",	-- (removed with 8.3)
 						"added 9.2",	-- Reported available again 2022-03-21
 					},
+					["g"] = {
+						i(170491),	-- Burnt Journal Page
+					},
 				}),
 				q(58634, {	-- Opening the Gateway
 					["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },

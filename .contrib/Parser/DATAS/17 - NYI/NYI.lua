@@ -633,7 +633,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(170488),	-- [DNT] Torn Journal Page #7
 				i(170484),	-- [DNT] Torn Journal Page #14
 				i(170487),	-- [DNT] Torn Journal Page #23
-				i(170491),	-- Burnt Journal Page
 				i(171372),	-- Alterac Valley Mark of Honor
 				i(169295),	-- Dormant Vision Stone
 				i(170197),	-- Shirakess Warning Sign
