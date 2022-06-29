@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -29,16 +30,25 @@ namespace ATT
                     if (versionString.Length == 11) return version;
                     return (version * 1000000) + 100000;  // Need to add 6 spaces for the build version ABBCC100000
                 }
-                return long.Parse(new StringBuilder().Append(Convert.ToString(arr[0]).Trim())
-                    .Append((arr.Length >= 2 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(2, '0'))
-                    .Append((arr.Length >= 3 ? Convert.ToString(arr[2]).Trim() : "").PadLeft(2, '0'))
-                    .Append((arr.Length >= 4 ? Convert.ToString(arr[1]).Trim() : "").PadLeft(6, '0')).ToString());
+
+                return long.Parse($"{arr.AsString(0)}{arr.AsString(1).PadLeft(2, '0')}{arr.AsString(2).PadLeft(2, '0')}{arr.AsString(3).PadLeft(6, '0')}");
             }
-            catch(Exception e)
+            catch
             {
-                Console.WriteLine(MiniJSON.Json.Serialize(arr));
-                throw e;
+                throw new InvalidDataException("Invalid 'Version': " + MiniJSON.Json.Serialize(arr));
             }
+        }
+
+        /// <summary>
+        /// Returns the string value of an object from the specified index of an Array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="arr"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public static string AsString<T>(this T[] arr, int i)
+        {
+            return (arr?.Length ?? 0) > i ? Convert.ToString(arr[i]) : string.Empty;
         }
 
         /// <summary>
