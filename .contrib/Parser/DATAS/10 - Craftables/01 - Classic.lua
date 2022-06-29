@@ -1774,7 +1774,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(42461, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
 			i(42908, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+]
-				-- #if AFTER SL
+				-- #if AFTER SHADOWLANDS
 				["questID"] = 62673,
 				["classes"] = { DRUID },
 				-- #endif
