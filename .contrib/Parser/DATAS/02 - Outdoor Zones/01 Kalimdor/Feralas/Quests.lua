@@ -83,6 +83,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
 				}),
+				q(3841, {	-- An Orphan Looking For a Home
+					["providers"] = {
+						{ "n", 7956 },	-- Kindal Moonweaver
+						{ "i", 11102 },	-- Unhatched Sprite Darter Egg
+					},
+					["sourceQuest"] = 2972,	-- Doling Justice (2/2)
+					["coord"] = { 65.8, 45.6, FERALAS },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
+				}),
 				q(25423, {	-- Ancient Suffering
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, FERALAS },

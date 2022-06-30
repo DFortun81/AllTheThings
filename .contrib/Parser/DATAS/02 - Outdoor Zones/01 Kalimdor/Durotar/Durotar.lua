@@ -2314,21 +2314,6 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(2937, {	-- Summoning Shadra
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["sourceQuest"] = 2936,	-- The Spider God
-					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
-					["groups"] = {
-						objective(1, {	-- 0/1 Shadra's Venom
-							["provider"] = { "i", 9324 },	-- Shadra's Venom
-							["cr"] = 2707,	-- Shadra <The Venom Queen>
-						}),
-						objective(2, {	-- 0/1 Gadrin's Parchment
-							["provider"] = { "i", 9323 },	-- Gadrin's Parchment
-						}),
-					},
-				}),
 				q(3090, {	-- Tainted Parchment
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 788,	-- Cutting Teeth

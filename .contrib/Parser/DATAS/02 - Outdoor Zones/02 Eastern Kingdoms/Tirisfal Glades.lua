@@ -914,13 +914,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
 					["sourceQuest"] = 5232,	-- Return to the Bulwark
 				}),
-				q(26920, {	-- The Battle for Andorhal
-					["provider"] = { "n", 10837 },	-- High Executor Derrington
-					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 35,
-					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
-				}),
 				q(65659, {	-- The Blight Congress
 					["sourceQuests"] = { 65658 },	-- This Land is Ours
 					["provider"] = { "n", 185513 },	-- Lilian Voss

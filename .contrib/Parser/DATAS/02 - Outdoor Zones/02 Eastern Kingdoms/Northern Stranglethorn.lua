@@ -1349,6 +1349,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(1997, {	-- Pressed Felt Robe
 					["crs"] = { 701 },	-- Bloodscalp Mystic
 				}),
+				i(9294, {	-- Recipe: Wildvine Potion
+					["description"] = "Can drop from any troll in Hinterlands or Stranglethorn Vale.",
+				}),
 				i(1624, {	-- Skullsplitter Helm
 					["crs"] = {
 						781,	-- Skullsplitter Headhunter
@@ -1360,6 +1363,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				i(1996, {	-- Voodoo Band
 					["crs"] = { 660 },	-- Bloodscalp Witch Doctor
+				}),
+				i(8153, {	-- Wildvine
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 			}),
 		},

@@ -50,6 +50,15 @@ _.Zones =
 					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
 					["sourceQuest"] = 893,	-- Weapons of Choice
 				}),
+				q(3842, {	-- A Short Incubation
+					["qg"] = 9238,	-- Quentin
+					["sourceQuest"] = 3841,	-- An Orphan Looking For a Home
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
+					["timeline"] = { "removed 4.0.3" },
+					["cost"] = { { "i", 3825, 2 } },	-- Elixir of Fortitude
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
+				}),
 				q(4821, {	-- Alien Egg
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -945,6 +954,18 @@ _.Zones =
 						i(63590),	-- Ghostcaller's Leggings
 						i(63591),	-- Alimony
 					},
+				}),
+				q(3843, {	-- The Newest Member of the Family
+					["providers"] = {
+						{ "n", 9238 },	-- Quentin
+						{ "i", 11471 },	-- Fragile Sprite Darter Egg
+					},
+					["sourceQuest"] = 3842,	-- A Short Incubation
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(27316, {	-- The Rattle of Bones
 					["coord"] = { 43.3, 43.4, THOUSAND_NEEDLES },

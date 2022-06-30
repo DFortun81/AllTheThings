@@ -647,17 +647,6 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(649,   {	-- Ripple Recovery
-				["provider"] = { "n", 6986 },	-- Dran Droffers
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(650,   {	-- Ripple Recovery
-				["sourceQuests"] = { 649 },	-- Ripple Recovery
-				["provider"] = { "n", 6987 },	-- Malton Droffers
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(3924,  {	-- Samophlange Manual
 				["provider"] = { "n", 9317 },	-- Rilli Greasygob
 				["coord"] = { 56.8, 56.4, ORGRIMMAR },

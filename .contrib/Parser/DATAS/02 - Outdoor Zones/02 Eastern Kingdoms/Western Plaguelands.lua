@@ -650,6 +650,41 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
 				}),
+				q(28749, {	-- The Battle for Andorhal (A)
+					["isBreadcrumb"] = true,
+					["coord"] = { 41.5, 74.2, THE_CAPE_OF_STRANGLETHORN },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 49635 },	-- War-Mage Erallier
+				}),
+				q(28505, {	-- The Battle for Andorhal (A)
+					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(28750, {	-- The Battle for Andorhal (H)
+					["provider"] = { "n", 49636 },	-- Arcanist Arman
+					["coord"] = { 41.7, 74.1, THE_CAPE_OF_STRANGLETHORN },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(28508, {	-- The Battle for Andorhal (H)
+					["qg"] = 42898,	-- Darkcleric Marnal
+					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(26920, {	-- The Battle for Andorhal
+					["provider"] = { "n", 10837 },	-- High Executor Derrington
+					["coord"] = { 83.2, 68.9, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
+					["lvl"] = 35,
+				}),
 				q(5721, {	-- The Battle of Darrowshire
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie

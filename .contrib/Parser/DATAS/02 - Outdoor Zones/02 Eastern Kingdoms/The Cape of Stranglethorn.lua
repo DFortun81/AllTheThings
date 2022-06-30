@@ -741,18 +741,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.4, 72.0, THE_CAPE_OF_STRANGLETHORN },
 					["provider"] = { "n", 2490 },	-- First Mate Crazz
 				}),
-				q(28749, {	-- The Battle for Andorhal (A)
-					["isBreadcrumb"] = true,
-					["coord"] = { 41.5, 74.2, THE_CAPE_OF_STRANGLETHORN },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 49635 },	-- War-Mage Erallier
-				}),
-				q(28750, {	-- The Battle for Andorhal (H)
-					["provider"] = { "n", 49636 },	-- Arcanist Arman
-					["coord"] = { 41.7, 74.1, THE_CAPE_OF_STRANGLETHORN },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(26609, {	-- The Bloodsail Buccaneers
 					["sourceQuests"] = {
 						26595,	-- Kill-Collect

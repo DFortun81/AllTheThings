@@ -216,16 +216,12 @@ q(1443),	-- <nyi> The Shakedown,		CLASSIC: <nyi> The Shakedown
 q(1447),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1448),	-- In Search of The Temple,		TBC: In Search of The Temple,		CLASSIC: In Search of The Temple
 q(1449),	-- To The Hinterlands,		TBC: To The Hinterlands,		CLASSIC: To The Hinterlands
-q(1450),	-- Gryphon Master Talonaxe,		TBC: Gryphon Master Talonaxe,		CLASSIC: Gryphon Master Talonaxe
-q(1451),	-- Rhapsody Shindigger,		TBC: Rhapsody Shindigger,		CLASSIC: Rhapsody Shindigger
-q(1452),	-- Rhapsody's Kalimdor Kocktail,		TBC: Rhapsody's Kalimdor Kocktail,		CLASSIC: Rhapsody's Kalimdor Kocktail
 q(1458),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1459),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1461),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1465),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
 q(1466),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
-q(1469),	-- Rhapsody's Tale,		TBC: Rhapsody's Tale,		CLASSIC: Rhapsody's Tale
 q(1470),	-- Piercing the Veil,		TBC: Piercing the Veil,		CLASSIC: Piercing the Veil
 q(1471),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1472),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
@@ -373,9 +369,7 @@ q(2867),	-- Return to Feathermoon Stronghold,		TBC: Return to Feathermoon Strong
 q(2868),	-- <TXT> The Shriveled Heart,		TBC: <TXT> The Shriveled Heart,		CLASSIC: <TXT> The Shriveled Heart
 q(2869),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
 q(2870),	-- Against Lord Shalzaru,		TBC: Against Lord Shalzaru,		CLASSIC: Against Lord Shalzaru
-q(2877),	-- Skulk Rock Clean-up,		TBC: Skulk Rock Clean-up,		CLASSIC: Skulk Rock Clean-up
 q(2879),	-- The Stave of Equinex,		TBC: The Stave of Equinex,		CLASSIC: The Stave of Equinex
-q(2880),	-- Troll Necklace Bounty,		TBC: Troll Necklace Bounty,		CLASSIC: Troll Necklace Bounty
 q(2939),	-- In Search of Knowledge,		TBC: In Search of Knowledge,		CLASSIC: In Search of Knowledge
 q(2940),	-- Feralas: A History,		TBC: Feralas: A History,		CLASSIC: Feralas: A History
 q(2941),	-- The Borrower,		TBC: The Borrower,		CLASSIC: The Borrower
@@ -389,9 +383,6 @@ q(2983),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(2984),	-- Call of Fire,		TBC: Call of Fire,		CLASSIC: Call of Fire
 q(2985),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(2986),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
-q(2988),	-- Witherbark Cages,		TBC: Witherbark Cages,		CLASSIC: Witherbark Cages
-q(2989),	-- The Altar of Zul,		TBC: The Altar of Zul,		CLASSIC: The Altar of Zul
-q(2990),	-- Thadius Grimshade,		TBC: Thadius Grimshade,		CLASSIC: Thadius Grimshade
 q(2996),	-- Seeking Strahad,		TBC: Seeking Strahad,		CLASSIC: Seeking Strahad
 q(2997),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(2998),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
@@ -445,9 +436,6 @@ q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre'
 q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3789),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3790),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3841),	-- An Orphan Looking For a Home,		TBC: An Orphan Looking For a Home,		CLASSIC: An Orphan Looking For a Home
-q(3842),	-- A Short Incubation,		TBC: A Short Incubation,		CLASSIC: A Short Incubation
-q(3843),	-- The Newest Member of the Family,		TBC: The Newest Member of the Family,		CLASSIC: The Newest Member of the Family
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
 q(4101),	-- [DEPRECATED]Cleansing Felwood,		TBC: Cleansing Felwood,		CLASSIC: Cleansing Felwood
@@ -463,8 +451,6 @@ q(4142),	-- A Visit to Gregan,		TBC: A Visit to Gregan,		CLASSIC: A Visit to Gre
 q(4144),	-- Bloodpetal Sprouts,		TBC: Bloodpetal Sprouts,		CLASSIC: Bloodpetal Sprouts
 q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from the Hive
 q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
-q(4297),	-- Food for Baby,		TBC: Food for Baby,		CLASSIC: Food for Baby
-q(4298),	-- Becoming a Parent,		TBC: Becoming a Parent,		CLASSIC: Becoming a Parent
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!!!,		CLASSIC: <NYI> <TXT> Get those Hyenas!!!
 q(4421),	-- [DEPRECATED]The Corruption of the Jadefire,		TBC: The Corruption of the Jadefire,		CLASSIC: The Corruption of the Jadefire
@@ -835,12 +821,7 @@ q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering,		TBC: <NYI><TXT>Placeholde
 q(9446),	-- Tomb of the Lightbringer,		TBC: Tomb of the Lightbringer
 q(9448),	-- [DEPRECATED]Mercy for the Cursed,		TBC: Mercy for the Cursed
 q(9460),	-- Combining Forces,		TBC: Combining Forces
-q(9469),	-- Featherbeard's Endorsement,		TBC: Featherbeard's Endorsement
-q(9470),	-- A Gesture of Goodwill,		TBC: A Gesture of Goodwill
-q(9471),	-- Preying on the Predators,		TBC: Preying on the Predators
 q(9474),	-- The Mark of the Lightbringer,		TBC: The Mark of the Lightbringer
-q(9475),	-- Reclaiming the Eggs,		TBC: Reclaiming the Eggs
-q(9476),	-- In Pursuit of Featherbeard,		TBC: In Pursuit of Featherbeard
 q(9484),	-- Taming the Beast,		TBC: Taming the Beast
 q(9485),	-- Taming the Beast,		TBC: Taming the Beast
 q(9486),	-- Taming the Beast,		TBC: Taming the Beast

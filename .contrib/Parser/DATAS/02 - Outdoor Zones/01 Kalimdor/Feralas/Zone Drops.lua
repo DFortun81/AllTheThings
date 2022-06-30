@@ -14,7 +14,9 @@ _.Zones =
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
+				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
+					-- #if AFTER CATA
 					["crs"] = {
 						5300,	-- Frayfeather Hippogryph
 						5304,	-- Frayfeather Stagwing
@@ -25,7 +27,13 @@ _.Zones =
 						5249,	-- Woodpaw Mogrel
 						5246,	-- Zukk'ash Worker
 					},
+					-- #else
+					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
+					["sourceQuest"] = 4298,	-- Becoming a Parent
+					["cr"] = 5278,	-- Sprite Darter
+					-- #endif
 				}),
+				-- #endif
 				-- #if AFTER CATA
 				i(8498, {	-- Emerald Whelping (PET!)
 					["cr"] = 39384,	-- Noxious Whelp

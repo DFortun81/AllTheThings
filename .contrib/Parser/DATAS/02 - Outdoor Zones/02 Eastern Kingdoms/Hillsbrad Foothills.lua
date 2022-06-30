@@ -252,12 +252,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 33.2, 73.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(2935, {	-- Consult Master Gadrin
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2216 },	-- Apothecary Lydon
-					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
-				}),
 				q(564, {	-- Costly Menace
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,

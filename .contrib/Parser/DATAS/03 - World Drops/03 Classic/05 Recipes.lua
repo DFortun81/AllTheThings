@@ -32,7 +32,6 @@ _.WorldDrops =
 				i(13488),	-- Recipe: Transmute Life to Earth
 				i(13486),	-- Recipe: Transmute Undeath to Water
 				i(13487),	-- Recipe: Transmute Water to Undeath
-				i(9294),	-- Recipe: Wildvine Potion
 			}),
 			prof(BLACKSMITHING, {
 				i(7992),	-- Plans: Blue Glittering Axe
