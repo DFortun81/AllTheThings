@@ -7983,7 +7983,12 @@ local WorldQuestCurrencyItems = {
 -- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded. Can specify 'force' to skip attempting API population
 app.TryPopulateQuestRewards = function(questObject, force)
 	local questID = questObject and questObject.questID;
-	if not questID then return; end
+	if not questID then
+		-- Update the group directly immediately since there's no quest to retrieve
+		-- app.PrintDebug("TPQR:No Quest")
+		app.DirectGroupUpdate(questObject);
+		return;
+	end
 	-- if we've already requested data for this quest, then ignore making another request
 	if not force and not HaveQuestRewardData(questID) then
 		app.RequestLoadQuestByID(questID, questObject);
@@ -14622,7 +14627,7 @@ function app:CreateMiniListForGroup(group)
 				self.ExpireTime = time() + 300;
 				-- print(popout.Suffix,"set to expire",time() + 10)
 			end
-			self:BaseUpdate(force or got, got)
+			self:BaseUpdate(force or got, got);
 		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
 		-- TODO: modify parser to include known sources for unsorted before commenting this back in
