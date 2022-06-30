@@ -147,6 +147,7 @@ root("Instances", tier(CATA_TIER, {
 					q(29194, {	-- Through a Glass, Darkly
 						["provider"] = { "n", 52835 },	-- Tarecgosa
 						["sourceQuests"] = { 29193 },	-- On a Wing and a Prayer
+						["maps"] = { 370 },				-- The Nexus (Scenario Map) 
 					}),
 					q(29225, {	-- Actionable Intelligence
 						["provider"] = { "n", 53567 },	-- Tarecgosa
