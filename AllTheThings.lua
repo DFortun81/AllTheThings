@@ -13995,10 +13995,10 @@ local function UpdateGroup(parent, group, window)
 
 		-- If this item is collectible, then mark it as such.
 		if group.collectible then
-			-- An item is a special case where it may have both an appearance and a set of items
-			progress = progress + (group.collected and 1 or 0);
 			total = total + 1;
-			-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total,group.__type) end
+			if group.collected then
+				progress = progress + 1;
+			end
 		end
 
 		-- Set the total/progress on the group
@@ -14006,20 +14006,20 @@ local function UpdateGroup(parent, group, window)
 		group.total = total;
 
 		-- Check if this is a group
-		if group.g then
+		local g = group.g;
+		if g then
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 
 			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-			if app.ItemBindFilter ~= app.NoFilter and app.ItemBindFilter(group) then
-				local oldItemBindFilter = app.ItemBindFilter;
-				app.ItemBindFilter = app.NoFilter;
+			local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
+			if ItemBindFilter ~= NoFilter and ItemBindFilter(group) then
+				app.ItemBindFilter = NoFilter;
 				-- Update the subgroups recursively...
-				UpdateGroups(group, group.g, window);
+				UpdateGroups(group, g, window);
 				-- reapply the previous BoE filter
-				app.ItemBindFilter = oldItemBindFilter;
+				app.ItemBindFilter = ItemBindFilter;
 			else
-				-- Update the subgroups recursively...
-				UpdateGroups(group, group.g, window);
+				UpdateGroups(group, g, window);
 			end
 
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
@@ -14123,11 +14123,11 @@ local function DirectGroupUpdate(group)
 	local ItemBindFilter = app.ItemBindFilter;
 	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
 		app.ItemBindFilter = app.NoFilter;
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 		-- reapply the previous BoE filter
 		app.ItemBindFilter = ItemBindFilter;
 	else
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 	end
 	if group.collectible then
 		group.total = group.total + 1;
@@ -14136,12 +14136,11 @@ local function DirectGroupUpdate(group)
 		end
 	end
 	if group.OnUpdate then group.OnUpdate(group); end
-	if parent then
-		if group.g then
-			SetGroupVisibility(parent, group);
-		else
-			SetThingVisibility(parent, group);
-		end
+	-- Set proper visibility for the updated group
+	if group.g then
+		SetGroupVisibility(parent, group);
+	else
+		SetThingVisibility(parent, group);
 	end
 	local progChange, totalChange = group.progress - prevProg, group.total - prevTotal;
 	-- Something to change
