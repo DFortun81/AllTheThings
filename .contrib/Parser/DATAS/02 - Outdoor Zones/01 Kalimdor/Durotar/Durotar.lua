@@ -2819,9 +2819,10 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 59.6, 59.0, DUROTAR },
 				}),
 			})),
-			n(VENDORS, bubbleDown({ ["races"] = HORDE_ONLY, ["timeline"] = { "added 1.11.1.7272" } }, {
+			n(VENDORS, {
 				n(3881,   {	-- Grimtak
 					["coord"] = { 50.8, 42.8, DUROTAR },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5483),	-- Recipe: Scorpid Surprise
 					},
@@ -2832,6 +2833,7 @@ root("Zones", m(KALIMDOR, {
 						{ 55.4, 11.2, DUROTAR },
 						{ 57.4, 62.2, ECHO_ISLES },
 					},
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' (TOY!)
@@ -2841,6 +2843,7 @@ root("Zones", m(KALIMDOR, {
 				})),
 				n(5942, {	-- Zansoa <Fishing Supplies>
 					["coord"] = { 57.4, 77.0, DUROTAR },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6326),	-- Recipe: Slitherskin Mackerel
@@ -2848,6 +2851,7 @@ root("Zones", m(KALIMDOR, {
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(8588),	-- Emerald Raptor (MOUNT!)
 						i(18788),	-- Swift Blue Raptor (MOUNT!)
@@ -2863,7 +2867,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				}),
-			})),
+			}),
 		},
 	}),
 }));
