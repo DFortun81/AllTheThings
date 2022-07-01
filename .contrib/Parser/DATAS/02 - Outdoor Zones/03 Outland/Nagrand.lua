@@ -6,6 +6,17 @@ local OnTooltipForConsortium = [[function(t)
 	if reputation < 42000 then
 		local isHuman = _.RaceIndex == 1;
 		local repPerTurnIn = isHuman and 275 or 250;
+		if not t.secrets then
+			local f = _.SearchForField("questID", 10971);
+			if f and #f > 0 then t.secrets = f[1]; end
+		end
+		if not t.secrets.collected then
+			GameTooltip:AddLine("Complete '" .. (t.secrets.text or RETRIEVING_DATA) .. "' in Netherstorm.", 1, 1, 1);
+		else
+			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
+			GameTooltip:AddDoubleLine("Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
+		
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
