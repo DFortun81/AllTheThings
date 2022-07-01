@@ -1,6 +1,71 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+-- CRIEVE NOTE: Dredgers at Honored in Retail? They go to Exalted in TBC Classic. (someone test this on Retail)
+local OnTooltipForSporeggar = [[function(t)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local isHuman = _.RaceIndex == 1;
+		if not t.plight then
+			local f = _.SearchForField("questID", 9739);
+			if f and #f > 0 then t.plight = f[1]; end
+		end
+		if not t.natenemies then
+			local f = _.SearchForField("questID", 9743);
+			if f and #f > 0 then t.natenemies = f[1]; end
+		end
+		if not t.plight.collected then GameTooltip:AddLine("Complete '" .. (t.plight.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
+		if not t.natenemies.collected then GameTooltip:AddLine("Complete '" .. (t.natenemies.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
+		
+		if reputation < ]] .. REVERED .. [[ then
+			local repPerKill = isHuman and 16.5 or 15;
+			local x, n = math.ceil((]] .. (REVERED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (REVERED - UNFRIENDLY) .. [[ / repPerKill);
+			GameTooltip:AddDoubleLine("Kill Bog Lords. (To Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
+		
+		local repPerKill = isHuman and 16.5 or 15;
+		local x, n = math.ceil((]] .. (EXALTED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (EXALTED - UNFRIENDLY) .. [[ / repPerKill);
+		GameTooltip:AddDoubleLine("Kill Dredgers & Lurkers.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		
+		if reputation < ]] .. FRIENDLY .. [[ then
+			local repPerTurnIn = isHuman and 275 or 250;
+			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("Turn in Spore Sacs (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			
+			-- #if AFTER CATA
+			local repPerTurnIn = isHuman and 275 or 250;
+			-- #else
+			local repPerTurnIn = isHuman and 825 or 750;
+			-- #endif
+			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("Turn in Tendrils (x6) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
+		
+		if reputation >= ]] .. NEUTRAL .. [[ then
+			if reputation < ]] .. FRIENDLY .. [[ then
+				local repPerTurnIn = isHuman and 275 or 250;
+				local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+				GameTooltip:AddDoubleLine("Turn in Glowcap (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			end
+			
+			-- #if AFTER CATA
+			local repPerTurnIn = isHuman and 275 or 250;
+			-- #else
+			local repPerTurnIn = isHuman and 825 or 750;
+			-- #endif
+			local x, n = math.ceil((]] .. EXALTED .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. EXALTED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("Turn in Fertile Spores (x6)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			
+			-- #if AFTER CATA
+			local repPerTurnIn = isHuman and 275 or 250;
+			-- #else
+			local repPerTurnIn = isHuman and 825 or 750;
+			-- #endif
+			local x, n = math.ceil((]] .. EXALTED .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. EXALTED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("Turn in Sanguine Hibiscus (x5)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
+	end
+end]];
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(ZANGARMARSH, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
@@ -233,6 +298,7 @@ root("Zones", {
 						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS, COILFANG_RESERVOIR_STEAMVAULT, COILFANG_RESERVOIR_UNDERBOG },
 					}),
 					faction(970, {	-- Sporeggar
+						["OnTooltip"] = OnTooltipForSporeggar,
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					}),
 				}),
@@ -506,6 +572,7 @@ root("Zones", {
 						["qg"] = 17925,	-- Gshaff
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
+						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
 					q(9729,  {	-- Fhwoor Smash!
@@ -677,7 +744,9 @@ root("Zones", {
 						["qg"] = 17925,	-- Gshaff
 						["sourceQuest"] = 9806,	-- Fertile Spores
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
+						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
@@ -765,6 +834,7 @@ root("Zones", {
 						["qg"] = 17856,	-- Gzhun'tt
 						["sourceQuest"] = 9726,	-- Now That We're Friends...
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
+						["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
 						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
@@ -1589,6 +1659,17 @@ root("Zones", {
 					i(29960, {	-- Captured Firefly
 						["cr"] = 20197,	-- Bogflare Needler
 					}),
+					i(24449, {	-- Fertile Spore
+						["crs"] = {
+							18281,	-- Boglash
+							18129,	-- Greater Sporebat
+							18134,	-- Fen Strider
+							18128,	-- Sporebat
+							18135,	-- Marsh Walker
+							18280,	-- Sporewing
+						},
+					}),
+					i(24401),	-- Unidentified Plant Parts
 				}),
 			},
 		})),

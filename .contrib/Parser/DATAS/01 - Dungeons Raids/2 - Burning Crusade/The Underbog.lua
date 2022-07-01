@@ -40,6 +40,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17856,	-- Gzhun'tt
 					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
+					["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { "removed 4.3.0.14732" },
 					["repeatable"] = true,
 					["cost"] = {
@@ -50,6 +51,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29692, {	-- Bring Me Another Shrubbery!
 					["qg"] = 54674,	-- T'shu
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
+					["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { "added 4.3.0.14732" },
 					["repeatable"] = true,
 					["cost"] = {
