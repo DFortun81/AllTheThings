@@ -45,7 +45,7 @@ root("Zones", {
 							10439,	-- Dimensius the All-Devouring
 						},
 						-- #elseif BEFORE WRATH
-						["description"] = "Complete 120 quests in Nagrand.",
+						["description"] = "Complete 120 quests in Netherstorm.",
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
