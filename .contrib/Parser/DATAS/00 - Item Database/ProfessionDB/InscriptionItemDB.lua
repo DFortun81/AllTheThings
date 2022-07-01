@@ -21,30 +21,56 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	end
 end
 
-
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+-----------------
+--   CLASSIC   --
+-----------------
+i(0, 59499);	-- Armor Vellum II
+i(0, 59487);	-- Arcane Tarot
+i(0, 59490);	-- Book of Stars
 i(0, 59478);	-- Book of Survival
+i(0, 57709);	-- Celestial Ink
+i(0, 59387);	-- Certificate of Ownership
+i(0, 59502);	-- Darkmoon Card
 i(0, 57706);	-- Dawnstar Ink
 i(0, 52739);	-- Enchanting Vellum / WRATH: Armor Vellum
+i(0, 57710);	-- Fiery Ink
+i(0, 59489);	-- Fire Eater's Guide
+i(0, 56994);	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
 i(0, 56968);	-- Glyph of Arcane Explosion
 i(0, 56971);	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
+i(0, 56995);	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 i(0, 56997);	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
 i(0, 57114);	-- Glyph of Backstab / Glyph of Decoy[MOP+]
+i(0, 57151);	-- Glyph of Barbaric Insults
 i(0, 56973);	-- Glyph of Blink
-i(0, 56995);	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+i(0, 57210);	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
+i(0, 57020);	-- Glyph of Cleansing / Glyph of Final Wrath[MOP+]
+i(0, 57154);	-- Glyph of Cleaving / Glyph of Hindering Strikes[MOP+]
+i(0, 57023);	-- Glyph of Consecration
 i(0, 57259);	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
+i(0, 57024);	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
+i(0, 57213);	-- Glyph of Death Grip
+i(0, 57000);	-- Glyph of Deterrence
+i(0, 57001);	-- Glyph of Disengage
 i(0, 57031);	-- Glyph of Divinity
-i(0, 57121);	-- Glyph of Expose Armor
-i(0, 57029);	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 i(0, 48121);	-- Glyph of Entangling Roots
 i(0, 57119);	-- Glyph of Evasion
 i(0, 57120);	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
 i(0, 56974);	-- Glyph of Evocation
-i(0, 57184);	-- Glyph of Fade
+i(0, 57156);	-- Glyph of Execution
+i(0, 57025);	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
+i(0, 57121);	-- Glyph of Expose Armor
 i(0, 57262);	-- Glyph of Fear
 i(0, 57238);	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
 i(0, 57239);	-- Glyph of Flame Shock
 i(0, 57240);	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
+i(0, 57002);	-- Glyph of Freezing Trap
 i(0, 56976);	-- Glyph of Frost Nova
+i(0, 57241);	-- Glyph of Frost Shock
+i(0, 57216);	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
 i(0, 57123);	-- Glyph of Garrote
 i(0, 57125);	-- Glyph of Gouge
 i(0, 57027);	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
@@ -53,119 +79,205 @@ i(0, 56945);	-- Glyph of Healing Touch
 i(0, 57265);	-- Glyph of Health Funnel
 i(0, 57266);	-- Glyph of Healthstone
 i(0, 57158);	-- Glyph of Heroic Strike
-
+i(0, 57029);	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 i(0, 57004);	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
-
+i(0, 56978);	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+i(0, 56979);	-- Glyph of Ice Block
+i(0, 56981);	-- Glyph of Icy Veins
 i(0, 57005);	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
 i(0, 57269);	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
-i(0, 57188);	-- Glyph of Inner Fire
 i(0, 56948);	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
 i(0, 57030);	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
+i(0, 57244);	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 i(0, 57245);	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
 i(0, 57246);	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
+i(0, 56985);	-- Glyph of Mana Gem
 i(0, 56961);	-- Glyph of Maul
+i(0, 57200);	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
 i(0, 56951);	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
 i(0, 57007);	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
-i(0, 57194);	-- Glyph of Power Word: Shield
-i(0, 57196);	-- Glyph of Psychic Scream
+i(0, 57161);	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
 i(0, 57162);	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
+i(0, 56953);	-- Glyph of Rebirth
 i(0, 56955);	-- Glyph of Rejuvenation
 i(0, 57163);	-- Glyph of Rending
-i(0, 57197);	-- Glyph of Renew
+i(0, 57165);	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
+i(0, 56956);	-- Glyph of Rip / Glyph of Prowl[MOP+]
+i(0, 57129);	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
+i(0, 56982);	-- Glyph of Scorch
+i(0, 57270);	-- Glyph of Searing Pain
 i(0, 57009);	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
 i(0, 57271);	-- Glyph of Shadow Bolt
+i(0, 57272);	-- Glyph of Shadowburn
+i(0, 57131);	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
+i(0, 57132);	-- Glyph of Slice and Dice / Glyph of Shiv[MOP+]
+i(0, 57274);	-- Glyph of Soulstone
+i(0, 56959);	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
 i(0, 57249);	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
 i(0, 57167);	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
+i(0, 57277);	-- Glyph of Voidwalker / Glyph of Falling Meteor[MOP+]
+i(0, 57251);	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
 i(0, 56963);	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
 i(0, 57703);	-- Hunter's Ink
+i(0, 57712);	-- Ink of the Sky
+i(0, 52738);	-- Ivory Ink (Removed 6.0.2)
 i(0, 57707);	-- Jadefire Ink
 i(0, 57704);	-- Lion's Ink
+i(0, 59494);	-- Manual of Clouds
 i(0, 53462);	-- Midnight Ink
 i(0, 51005);	-- Milling
 i(0, 61288);	-- Minor Inscription Research
 i(0, 52843);	-- Moonglow Ink
 i(0, 48247);	-- Mysterious Tarot
 i(0, 58565);	-- Mystic Tome
+i(0, 59486);	-- Royal Guide of Escape Routes
+i(0, 57708);	-- Royal Ink
 i(0, 58472);	-- Scroll of Agility
 i(0, 58473);	-- Scroll of Agility II
+i(0, 58476);	-- Scroll of Agility III
+i(0, 58478);	-- Scroll of Agility IV
+i(0, 58480);	-- Scroll of Agility V
 i(0, 48114);	-- Scroll of Intellect
 i(0, 50598);	-- Scroll of Intellect II
 i(0, 50599);	-- Scroll of Intellect III
+i(0, 50600);	-- Scroll of Intellect IV
+i(0, 50601);	-- Scroll of Intellect V
 i(0, 48248);	-- Scroll of Recall
+i(0, 60336);	-- Scroll of Recall II
 i(0, 45382);	-- Scroll of Stamina
 i(0, 50612);	-- Scroll of Stamina II
 i(0, 50614);	-- Scroll of Stamina III
+i(0, 50616);	-- Scroll of Stamina IV
+i(0, 50617);	-- Scroll of Stamina V
+i(0, 50618);	-- Scroll of Stamina VI
 i(0, 58484);	-- Scroll of Strength
 i(0, 58485);	-- Scroll of Strength II
+i(0, 58486);	-- Scroll of Strength III
+i(0, 58487);	-- Scroll of Strength IV
+i(0, 58488);	-- Scroll of Strength V
 i(0, 48116);	-- Scroll of Versatility / WRATH: Scroll of Spirit
 i(0, 50605);	-- Scroll of Versatility II / WRATH: Scroll of Spirit II
 i(0, 50606);	-- Scroll of Versatility III / WRATH: Scroll of Spirit III
+i(0, 50607);	-- Scroll of Versatility IV / WRATH: Scroll of Spirit IV
+i(0, 50608);	-- Scroll of Versatility V / WRATH: Scroll of Spirit V
+i(0, 50609);	-- Scroll of Versatility VI / WRATH: Scroll of Spirit VI
+i(0, 59491);	-- Shadowy Tarot
+i(0, 57711);	-- Shimmering Ink
+i(0, 59493);	-- Stormbound Tome
 i(0, 59480);	-- Strange Tarot
+i(0, 59484);	-- Tome of Kings
 i(0, 59475);	-- Tome of the Dawn
 i(0, 52840);	-- Weapon Vellum
+i(0, 59488);	-- Weapon Vellum II
 -- Minor Inscription Research
 -- Moonglow
 i(0, 58305);	-- Glyph of Fire Ward
 i(0, 58315);	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 i(0, 58332);	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph of the Spectral Wolf[MOP+]
 -- Midnight Ink
-i(0, 58289);	-- Glyph of Thorns
-i(0, 58296);	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
-i(0, 58298);	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
-i(0, 58299);	-- Glyph of Revive Pet / Glyph of Lesser Proportion[4.1.0+]
-i(0, 58300);	-- Glyph of Possessed Strength
 i(0, 58303);	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
+i(0, 58342);	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
+i(0, 58314);	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
+i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
+i(0, 58343);	-- Glyph of Bloodrage
+i(0, 58323);	-- Glyph of Blurred Speed
+i(0, 58344);	-- Glyph of Charge
+i(0, 58337);	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
+i(0, 58306);	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
+i(0, 58313);	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
+i(0, 58301);	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
+i(0, 58345);	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+i(0, 58326);	-- Glyph of Pick Pocket
+i(0, 58300);	-- Glyph of Possessed Strength
+i(0, 58299);	-- Glyph of Revive Pet
+i(0, 58298);	-- Glyph of Scare Beast / Glyph of Stampede[MOP+]
 i(0, 58308);	-- Glyph of Slow Fall / Glyph of Arcane Language[MOP+]
 i(0, 58310);	-- Glyph of the Penguin
-i(0, 58306);	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
-i(0, 58314);	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
-i(0, 58313);	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
-i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
-i(0, 58317);	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-i(0, 58318);	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-i(0, 58323);	-- Glyph of Blurred Speed
-i(0, 58326);	-- Glyph of Pick Pocket
-i(0, 58337);	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
+i(0, 58296);	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+i(0, 58289);	-- Glyph of Thorns
 i(0, 58346);	-- Glyph of Thunder Clap / Glyph of Unending Rage[MOP+]
-i(0, 58342);	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
-i(0, 58344);	-- Glyph of Charge
-i(0, 58343);	-- Glyph of Bloodrage
-i(0, 58345);	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
 -- Lion
 i(0, 58286);	-- Glyph of Aquatic Form
 i(0, 58311);	-- Glyph of Blessing of Kings / Glyph of Contemplation[MOP+]
-i(0, 58320);	-- Glyph of Shackle Undead
-i(0, 58325);	-- Glyph of Pick Lock
-i(0, 58336);	-- Glyph of Unending Breath
-i(0, 59326);	-- Glyph of Ghost Wolf
-i(0, 58288);	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
-i(0, 58307);	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
 i(0, 58324);	-- Glyph of Distract
+i(0, 58307);	-- Glyph of Frost Ward / Glyph of the Monkey[CATA+]
+i(0, 59326);	-- Glyph of Ghost Wolf
+i(0, 58340);	-- Glyph of Kilrogg
+i(0, 58325);	-- Glyph of Pick Lock
+i(0, 58288);	-- Glyph of Unburdened Rebirth / Glyph of Blooming[MOP+]
+i(0, 58336);	-- Glyph of Unending Breath
 i(0, 58328);	-- Glyph of Vanish / Glyph of Poisons[CATA+]
 i(0, 58331);	-- Glyph of Water Breathing / Glyph of Healing Storm[MOP+]
-i(0, 58340);	-- Glyph of Kilrogg
 -- Jadefire?
-i(0, 57022);	-- Glyph of Spiritual Attunement / Glyph of Divine Protection[CATA+]
-i(0, 58287);	-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
-i(0, 58302);	-- Glyph of Feign Death / Glyph of Fireworks[MOP+]
-i(0, 58316);	-- Glyph of the Wise / Glyph of Justice[CATA] / Glyph of Fire From the Heavens[MOP+]´
 i(0, 58329);	-- Glyph of Astral Recall
-i(0, 58330);	-- Glyph of Renewed Life / Glyph of Far Sight[MOP+]
-i(0, 58333);	-- Glyph of Water Walking / Glyph of Totemic Encirclement[MOP+]
+i(0, 58287);	-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
 i(0, 58338);	-- Glyph of Curse of Exhaustion
-i(0, 58339);	-- Glyph of Enslave Demon
 i(0, 59315);	-- Glyph of Dash
+i(0, 58339);	-- Glyph of Enslave Demon
+i(0, 58302);	-- Glyph of Feign Death / Glyph of Fireworks[MOP+]
+i(0, 58330);	-- Glyph of Renewed Life / Glyph of Far Sight[MOP+]
 i(0, 57032);	-- Glyph of Righteous Defense / Glyph of Righteousness[CATA] / Glyph of the Luminous Charger[MOP+]
--- ANNOYING
-i(0, 56978);	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
--- REMOVED --
-i(0, 52738);	-- Ivory Ink (6.0.2)
+i(0, 57022);	-- Glyph of Spiritual Attunement / Glyph of Divine Protection[CATA+]
+i(0, 58316);	-- Glyph of the Wise / Glyph of Justice[CATA] / Glyph of Fire From the Heavens[MOP+]
+i(0, 58333);	-- Glyph of Water Walking / Glyph of Totemic Encirclement[MOP+]
+-- Celestial
+i(0, 57242);	-- Glyph of Healing Stream Totem
+i(0, 58327);	-- Glyph of Safe Fall
+i(0, 58297);	-- Glyph of the Pack / Glyph of Aspect of the Pack[CATA+]
 
---3.1.0`?
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+i(0, 57219);	-- Glyph of Icy Touch
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+-- JADEFIRE
+i(0, 58319);	-- Glyph of Levitate
+--
+i(0, 57201);	-- Glyph of Smite
+i(0, 57194);	-- Glyph of Power Word: Shield
+i(0, 57196);	-- Glyph of Psychic Scream
+i(0, 57197);	-- Glyph of Renew
+i(0, 57188);	-- Glyph of Inner Fire
+i(0, 57184);	-- Glyph of Fade
 i(0, 57186);	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
+i(0, 57183);	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
+i(0, 64258);	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
+i(0, 64259);	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
+i(0, 64260);	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
+i(0, 64261);	-- Glyph of Earth Shield / Glyph of Deluge[MOP+]
+i(0, 64262);	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+i(0, 57185);	-- Glyph of Fear Ward
+i(0, 64266);	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
+i(0, 64267);	-- Glyph of Disease
+i(0, 57133);	-- Glyph of Sprint
+i(0, 58317);	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
+i(0, 58318);	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
+i(0, 58320);	-- Glyph of Shackle Undead
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+i(0, 67600);	-- Glyph of Claw / Glyph of Ferocious Bite
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+i(50166, 71101);	-- Glyph of Eternal Water / Glyph of Mana Shield[CATA-MOP] / Glyph of Counterspell[MOP+] (not sourced yet) https://www.wowhead.com/wotlk/spell=71101/glyph-of-eternal-water
+
+
+
 
 --weird?
 i(0, 58321);	-- Glyph of Shadow Protection / Glyph of Reflective Shield[MOP+]
+i(0, 56957);	-- Glyph of Shred
+
+
+
+
+
 
 --3.0.1.8303
 i(0, 45358);	-- Inscription (Journeyman)
@@ -177,25 +289,16 @@ i(0, 45383);	--
 i(0, 45363);	-- Inscription
 i(0, 48118);	--
 i(0, 45359);	-- Inscription
-i(0, 50600);	-- Scroll of Intellect IV
 i(0, 50604);	-- Scroll of Intellect VIII
-i(0, 50616);	-- Scroll of Stamina IV
 i(0, 52175);	-- Decipher
 i(0, 50610);	-- Scroll of Versatility VII
 i(0, 52183);	--
-i(0, 50617);	-- Scroll of Stamina V
-i(0, 50609);	-- Scroll of Versatility VI
 i(0, 50603);	-- Scroll of Intellect VII
-i(0, 50601);	-- Scroll of Intellect V
-i(0, 50608);	-- Scroll of Versatility V
 i(0, 50620);	-- Scroll of Stamina VIII
 i(0, 50611);	-- Scroll of Versatility VIII
-i(0, 50607);	-- Scroll of Versatility IV
 i(0, 50602);	-- Scroll of Intellect VI
 i(0, 50619);	-- Scroll of Stamina VII
-i(0, 50618);	-- Scroll of Stamina VI
 --3.1.0.9767
-i(0, 57251);	--
 i(0, 64294);	--
 i(0, 57208);	--
 i(0, 58322);	--
@@ -203,8 +306,6 @@ i(0, 58489);	-- Scroll of Strength VI
 i(0, 64309);	--
 i(0, 57268);	--
 i(0, 57202);	--
-i(0, 56957);	--
-i(0, 59490);	-- Book of Stars
 i(0, 57164);	--
 i(0, 61118);	-- Master's Inscription of the Crag
 i(0, 56998);	--
@@ -213,50 +314,33 @@ i(0, 64248);	--
 i(0, 58341);	-- Glyph of Soulwell
 i(0, 56952);	--
 i(0, 57159);	--
-i(0, 56994);	--
-i(0, 59494);	-- Manual of Clouds
 i(0, 57122);	--
-i(0, 56981);	--
-i(0, 57710);	-- Fiery Ink
 i(0, 58301);	-- Glyph of Lesser Proportion
-i(0, 57165);	--
 i(0, 57714);	-- Darkflame Ink
 i(0, 64317);	--
 i(0, 64315);	--
 i(0, 60337);	-- Scroll of Recall III
 i(0, 57115);	--
 i(0, 59340);	--
-i(0, 64260);	-- Glyph of Disguise
 i(0, 64284);	--
 i(0, 58347);	-- Glyph of Mighty Victory
 i(0, 65245);	--
 i(0, 57006);	--
-i(0, 64262);	--
 i(0, 64305);	--
 i(0, 61677);	--
 i(0, 57152);	--
 i(0, 57233);	--
 i(0, 64273);	--
-i(0, 56956);	--
 i(0, 59498);	-- Faces of Doom
 i(0, 57237);	--
-i(0, 57020);	--
-i(0, 58476);	-- Scroll of Agility III
-i(0, 59502);	-- Darkmoon Card
 i(0, 57217);	--
 i(0, 57225);	--
-
-i(0, 64266);	--
-i(0, 59484);	-- Tome of Kings
 i(0, 57228);	--
 i(0, 59495);	-- Hellfire Tome
 i(0, 61120);	-- Master's Inscription of the Storm
-i(0, 57002);	--
 i(0, 57267);	--
 i(0, 64314);	--
-i(0, 57277);	--
 i(0, 57021);	--
-i(0, 58327);	--
 i(0, 64275);	--
 i(0, 56950);	--
 i(0, 57252);	--
@@ -266,8 +350,6 @@ i(0, 57713);	-- Ethereal Ink
 i(0, 59496);	-- Book of Clever Tricks
 i(0, 64298);	--
 i(0, 64281);	--
-i(0, 59486);	-- Royal Guide of Escape Routes
-i(0, 57272);	--
 i(0, 64252);	--
 i(0, 56946);	--
 i(0, 64251);	--
@@ -280,8 +362,6 @@ i(0, 61117);	-- Master's Inscription of the Axe
 i(0, 64312);	--
 i(0, 57276);	--
 i(0, 59497);	-- Iron-bound Tome
-i(0, 57025);	--
-i(0, 58480);	-- Scroll of Agility V
 i(0, 64286);	--
 i(0, 57250);	--
 i(0, 64302);	--
@@ -292,10 +372,8 @@ i(0, 64300);	--
 i(0, 56989);	--
 i(0, 64289);	--
 i(0, 64316);	--
-i(0, 56985);	--
 i(0, 56944);	--
 i(0, 56987);	--
-i(0, 57183);	--
 i(0, 57261);	--
 i(0, 57130);	--
 i(0, 57253);	--
@@ -303,44 +381,30 @@ i(0, 57008);	--
 i(0, 57127);	--
 i(0, 57715);	-- Ink of the Sea
 i(0, 57012);	--
-i(0, 57216);	--
 i(0, 64279);	--
 i(0, 57243);	--
 i(0, 62162);	--
 i(0, 64285);	--
 i(0, 64277);	--
 i(0, 57257);	--
-i(0, 57241);	--
 i(0, 56996);	--
-i(0, 57712);	-- Ink of the Sky
-i(0, 56959);	--
-i(0, 57244);	--
 i(0, 57036);	--
 i(0, 57199);	--
 i(0, 57209);	-- Glyph of the Geist
-i(0, 58478);	-- Scroll of Agility IV
 i(0, 59338);	--
-i(0, 57242);	--
 i(0, 64254);	--
-i(0, 56953);	--
 i(0, 56954);	--
 i(0, 57719);	--
 i(0, 57263);	-- Glyph of Felguard
-i(0, 57132);	--
 i(0, 57258);	--
-i(0, 64261);	--
 i(0, 57187);	--
 i(0, 57035);	--
 i(0, 57215);	--
 i(0, 57028);	--
-i(0, 57156);	--
-i(0, 59499);	--
 i(0, 57153);	--
-i(0, 64259);	--
 i(0, 56988);	--
 i(0, 56984);	--
 i(0, 57227);	--
-i(0, 56982);	--
 i(0, 64276);	--
 i(0, 64268);	--
 i(0, 64257);	--
@@ -351,7 +415,6 @@ i(0, 59501);	--
 i(0, 57211);	--
 i(0, 56980);	--
 i(0, 59561);	--
-i(0, 57274);	--
 i(0, 59504);	-- Darkmoon Card of the North
 i(0, 64246);	--
 i(0, 57033);	--
@@ -360,28 +423,21 @@ i(0, 56990);	--
 i(0, 57126);	--
 i(0, 58483);	-- Scroll of Agility VIII
 i(0, 57235);	--
-i(0, 57133);	--
 i(0, 64311);	--
 i(0, 58491);	-- Scroll of Strength VIII
 i(0, 57010);	--
 i(0, 57034);	--
 i(0, 57117);	--
-i(0, 57201);	--
-i(0, 57709);	-- Celestial Ink
 i(0, 57222);	--
 i(0, 58490);	-- Scroll of Strength VII
 i(0, 57166);	--
-i(0, 59491);	-- Shadowy Tarot
 i(0, 64310);	--
-i(0, 57000);	--
 i(0, 64270);	--
-i(0, 57219);	--
 i(0, 64296);	--
 i(0, 64253);	--
 i(0, 57128);	--
 i(0, 57172);	--
 i(0, 57218);	--
-i(0, 56979);	--
 i(0, 57168);	--
 i(0, 64271);	--
 i(0, 59559);	--
@@ -392,54 +448,39 @@ i(0, 59339);	--
 i(0, 57003);	--
 i(0, 57223);	--
 i(0, 59500);	--
-i(0, 59387);	-- Certificate of Ownership
 i(0, 57124);	--
 i(0, 57190);	--
 i(0, 64283);	--
 i(0, 57026);	--
 i(0, 57192);	--
-i(0, 58487);	-- Scroll of Strength IV
-i(0, 59489);	-- Fire Eater's Guide
 i(0, 57273);	--
 i(0, 57214);	--
 i(0, 64295);	--
-i(0, 64267);	--
 i(0, 57170);	--
 i(0, 64308);	--
 i(0, 57248);	--
-i(0, 57708);	-- Royal Ink
 i(0, 56972);	--
 i(0, 64274);	--
 i(0, 64291);	--
 i(0, 64288);	--
-i(0, 57213);	--
 i(0, 64256);	--
 i(0, 61177);	-- Northrend Inscription Research
 i(0, 56991);	--
 i(0, 56965);	-- Glyph of Stars
 i(0, 57011);	--
-i(0, 64258);	--
 i(0, 59560);	--
 i(0, 58482);	-- Scroll of Agility VII
 i(0, 57013);	--
 i(0, 57193);	--
 i(0, 57220);	--
-i(0, 57001);	--
 i(0, 64280);	--
 i(0, 57260);	--
-i(0, 58486);	-- Scroll of Strength III
-i(0, 58319);	--
 i(0, 57116);	--
 i(0, 57234);	--
-i(0, 57023);	--
 i(0, 64053);	-- Twilight Tome
-i(0, 57185);	--
-i(0, 57151);	--
 i(0, 57232);	--
 i(0, 56986);	-- Glyph of Crittermorph
 i(0, 57230);	--
-i(0, 57711);	-- Shimmering Ink
-i(0, 57131);	--
 i(0, 56983);	--
 i(0, 57191);	--
 i(0, 64287);	--
@@ -450,59 +491,35 @@ i(0, 64051);	-- Rituals of the Moon
 i(0, 57247);	--
 i(0, 57264);	--
 i(0, 61119);	-- Master's Inscription of the Pinnacle
-i(0, 58297);	--
 i(0, 57189);	--
-i(0, 59493);	-- Stormbound Tome
 i(0, 56958);	--
-i(0, 57270);	--
 i(0, 64307);	--
 i(0, 57160);	--
-i(0, 57154);	--
 i(0, 57198);	--
 i(0, 57229);	--
-i(0, 59487);	-- Arcane Tarot
-i(0, 60336);	-- Scroll of Recall II
 i(0, 57231);	--
 i(0, 57195);	--
 i(0, 57226);	--
 i(0, 64303);	--
 i(0, 56977);	--
-i(0, 57210);	--
 i(0, 64255);	--
 i(0, 64249);	--
 i(0, 64247);	--
 i(0, 64297);	--
-i(0, 58488);	-- Scroll of Strength V
 i(0, 57212);	--
 i(0, 57113);	--
-i(0, 57161);	--
 i(0, 64299);	--
-i(0, 57024);	--
-i(0, 57200);	--
 i(0, 57236);	--
 i(0, 57275);	--
 i(0, 56949);	--
 i(0, 56960);	-- Swiftmend??
 i(0, 64282);	--
 i(0, 57014);	--
-i(0, 59488);	--
-i(0, 57129);	--
-
-
--- 3.2.0
-i(0, 67600);	-- Glyph of Claw / Glyph of Ferocious Bite
-
-
-
 --3.3.5.12340
-i(0, 71101);	--
 i(0, 71015);	--
 i(0, 71102);	--
 i(0, 68166);	-- Glyph of Thunder Strike
 i(0, 69385);	-- Runescroll of Fortitude
-
-
-
 
 
 -----------------
@@ -625,9 +642,6 @@ i(0, 112429);	-- Glyph of Hawk Feast 	Research: Jadefire Ink
 
 -- Blackfallow
 --i(0, 57855);	-- Glyph of Charm Woodland Creature
-
--- Lion
-i(0, 114295);	-- Glyph of Grace
 
 
 
