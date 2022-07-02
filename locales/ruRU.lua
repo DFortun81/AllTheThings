@@ -807,9 +807,8 @@ for key,value in pairs({
 		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-		-- SL Maldraxxus/Necrolord
-			[-921] = "Улучшения для Обители",						-- Sanctum Upgrades (Necrolord)
-			[-924] = "Транспортная Сеть",							-- Transport Network (Necrolord)
+		[-921] = "Улучшения для Обители",							-- Sanctum Upgrades
+		[-924] = "Транспортная Сеть",								-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "Формы души",									-- Soulshape Forms (Night Fae)
 			[-1002] = "Дух служения",								-- Dutiful Spirit

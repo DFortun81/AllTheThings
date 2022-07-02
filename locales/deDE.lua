@@ -824,9 +824,8 @@ for key,value in pairs({
 		[-913] = "Peiniger von Torghast",							-- Tormentors of Torghast
 		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		-- SL Maldraxxus/Necrolord
-			[-921] = "Sanktumaufwertungen",							-- Sanctum Upgrades (Necrolord)
-			[-924] = "Reisenetzwerk",								-- Transport Network (Necrolord)
+		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
+		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-1002] = "Pflichtbewusster Geist",						-- Dutiful Spirit

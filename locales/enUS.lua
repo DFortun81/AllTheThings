@@ -1833,10 +1833,10 @@ app.L = {
 		[-981] = GetSpellInfo(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
-		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades (Necrolord)
+		[-921] = "Sanctum Upgrades",											-- Sanctum Upgrades
 		[-922] = C_Map.GetAreaInfo(11465),										-- Theater of Pain
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
-		[-924] = "Transport Network",											-- Transport Network (Necrolord)
+		[-924] = "Transport Network",											-- Transport Network
 		[-925] = string.format(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
 		[-926] = string.format(COVENANT_SANCTUM_TIER, 5),						-- Tier 5
 		-- SL Ardenweald/Night Fae

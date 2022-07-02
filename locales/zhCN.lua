@@ -825,9 +825,8 @@ for key,value in pairs({
 		[-913] = "托加斯特的折磨者",										-- Tormentors of Torghast
 		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		-- SL Maldraxxus/Necrolord
-			[-921] = "圣所升级",										-- Sanctum Upgrades (Necrolord)
-			[-924] = "传送网络",										-- Transport Network (Necrolord)
+		[-921] = "圣所升级",											-- Sanctum Upgrades
+		[-924] = "传送网络",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 			[-936] = "灵魂变形形态",										-- Soulshape Forms (Night Fae)
 			[-1002] = "尽职精魂",										-- Dutiful Spirit
