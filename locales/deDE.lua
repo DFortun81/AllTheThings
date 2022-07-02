@@ -85,8 +85,8 @@ local L = app.L;
 	--TODO: L._MORE = " more";
 	--TODO: L._OTHER_SOURCES = " other sources";
 	--TODO: L.DURING_WQ_ONLY = "This can be completed when the world quest is active.";
-	--TODO: L.COMPLETED_DAILY = "This can be completed daily.";
-	--TODO: L.COMPLETED_WEEKLY = "This can be completed weekly.";
+	L.COMPLETED_DAILY = "Dies kann täglich abgeschlossen werden.";
+	L.COMPLETED_WEEKLY = "Dies kann wöchentlich abgeschlossen werden.";
 	--TODO: L.COMPLETED_MONTHLY = "This can be completed monthly.";
 	--TODO: L.COMPLETED_YEARLY = "This can be completed yearly.";
 	--TODO: L.COMPLETED_MULTIPLE = "This can be repeated multiple times.";
@@ -818,15 +818,15 @@ for key,value in pairs({
 		--TODO: [-903] = "Zone Rewards",							-- Zone Rewards
 		[-907] = "Tote Graumähne",									-- Dead Blanchy
 		[-909] = "Jagd: Todeselementare",							-- Hunt: Death Elementals
-		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
-		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
-		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
+		[-910] = "Jagd: Seelenfresser",								-- Hunt: Alpha Devourers
+		[-911] = "Jagd: Schemenhunde",								-- Hunt: Shadehounds
+		[-912] = "Jagd: Geflügelte Seelenfresser",					-- Hunt: Winged Soul Eaters
+		[-913] = "Peiniger von Torghast",							-- Tormentors of Torghast
 		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		-- SL Maldraxxus/Necrolord
-			--TODO: [-921] = "Sanctum Upgrades",					-- Sanctum Upgrades (Necrolord)
-			--TODO: [-924] = "Transport Network",					-- Transport Network (Necrolord)
+			[-921] = "Sanktumaufwertungen",							-- Sanctum Upgrades (Necrolord)
+			[-924] = "Reisenetzwerk",								-- Transport Network (Necrolord)
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-1002] = "Pflichtbewusster Geist",						-- Dutiful Spirit
