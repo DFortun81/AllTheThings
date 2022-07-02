@@ -863,15 +863,18 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 root(ROOTS.HiddenQuestTriggers, {
 	q(40514),	-- Warlock Order Hall - Revil convinced
 	q(40686),	-- Warlock Order Hall - Affliction chosen first
-	q(40687),	-- Destruction Chosen (first)
+	q(40687),	-- Warlock Order Hall - Destruction chosen first
+	q(40688),	-- Warlock Order Hall - Demonology chosen first
+	q(43981),	-- Warlock Order Hall - Affliction chosen second
+	q(43982),	-- Warlock Order Hall - Demonology chosen second
+	q(43983),	-- Warlock Order Hall - Destruction chosen second
+	q(40686),	-- Warlock Order Hall - Affliction chosen third
+	q(44389),	-- Warlock Order Hall - Destruction chosen third
+	q(44390),	-- Warlock Order Hall - Demonology chosen third
 	q(42084),	-- Selecting a Sixth: Kira
 	q(42085),	-- Selecting a Sixth: Lulubelle
 	q(42203),	-- Using Portal to Scenario during Dark Whispers (42125)
 	q(42205),	-- Using Portal to Scenario during Dark Whispers (42125)
-	q(40688),	-- Warlock Order Hall - Choosing demonology artifact first
-	q(43982),	-- Warlock Order Hall - Demonology chosen second
-	q(43981),	-- Warlock Order Hall - Aff chosen second
-	q(44389),	-- Warlock Order Hall - Affliction chosen third
 	q(44390),	-- Warlock Order Hall - Demo chosen third
 	q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
 	q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
