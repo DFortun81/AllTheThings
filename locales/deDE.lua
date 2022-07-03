@@ -1015,6 +1015,9 @@ for key,value in pairs({
 	[142696] = "Matrix-Prägograph 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Giftflasche",	-- Venom Bottle
 	[144063] = "Monolith von Equinex",	-- Equinex Monolith
+	[144066] = "Erster Käfig der Bleichborken",	-- First Witherbark Cage
+	[144067] = "Zweiter Käfig der Bleichborken",	-- Second Witherbark Cage
+	[144068] = "Dritter Käfig der Bleichborken",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFSchritt 1:|r Seite 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
 	[149036] = "Marvons Truhe",	-- Marvon's Chest
@@ -1073,6 +1076,7 @@ for key,value in pairs({
 	[179697] = "Arenaschatztruhe",	-- Arena Treasure Chest
 	[179827] = "Gesucht/Vermisst/Verloren & Gefunden",	-- Wanted/Missing/Lost & Found
 	[179832] = "Verziertes Kissen von Kissenquetscher",	-- Pillaclencher's Ornate Pillow
+	[179913] = "Zu den Waffen!",	-- Call to Arms!
 	[180229] = "Verwunschener Hoodoohaufen",	-- Jinxed Hoodoo Pile
 	[180248] = "Ein Schwarm Leckerfische",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1105,6 +1109,8 @@ for key,value in pairs({
 	[181150] = "Staubiges Tagebuch",	-- Dusty Journal
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Steckbrief",	-- Wanted Poster
+	[181643] = "Federbarts Überreste",	-- Featherbeard's Remains
+	[181649] = "Federbarts Tagebuch",	-- Featherbeard's Journal
 	[181672] = "Weidenmann",	-- Wickerman Effigy
 	[181698] = "Leerstein",	-- Voidstone
 	[181748] = "Blutkristall",	-- Blood Crystal

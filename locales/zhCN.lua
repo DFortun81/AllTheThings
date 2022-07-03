@@ -1014,6 +1014,9 @@ for key, value in pairs({
 	[142696] = "矩阵式打孔计算机3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "毒液瓶",	-- Venom Bottle	--TODO: This was taken from classic Wowhead
 	[144063] = "艾奎尼克斯石碑",	-- Equinex Monolith
+	[144066] = "第一只枯木牢笼",	-- First Witherbark Cage
+	[144067] = "第二只枯木牢笼",	-- Second Witherbark Cage
+	[144068] = "第三个枯木牢笼",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFF第1步:|r 第9页",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "明显的墓碑",	-- A Conspicuous Gravestone
 	[149036] = "玛尔冯的箱子",	-- Marvon's Chest
@@ -1072,6 +1075,7 @@ for key, value in pairs({
 	[179697] = "竞技场财宝箱",	-- Arena Treasure Chest
 	[179827] = "通缉/寻物/招领",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	--TODO: [179832] = "Pillaclencher's Ornate Pillow",	-- Pillaclencher's Ornate Pillow
+	[179913] = "作战公告！",	-- Call to Arms!	--TODO: This was taken from classic Wowhead
 	[180229] = "厄运巫毒堆",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	[180248] = "可口鱼",	-- School of Tastyfish	--TODO: This was taken from classic Wowhead
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1104,6 +1108,8 @@ for key, value in pairs({
 	[181150] = "布满灰尘的日记",	-- Dusty Journal
 	[181153] = "通缉布告：邪恶的克尔加什",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "通缉布告",	-- Wanted Poster
+	--TODO: [181643] = "Featherbeard's Remains",	-- Featherbeard's Remains
+	[181649] = "羽须的日记",	-- Featherbeard's Journal
 	[181672] = "稻草人",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
 	[181698] = "虚空石",	-- Voidstone	--TODO: This was taken from tbc Wowhead
 	[181748] = "血水晶",	-- Blood Crystal	--TODO: This was taken from tbc Wowhead
