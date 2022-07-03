@@ -1026,6 +1026,7 @@ namespace ATT
                 int removed = 0;
                 var index = 0;
                 long lastVersion = 0;
+                long addedPatch = 0;
                 long removedPatch = 0;
                 foreach (var entry in timeline)
                 {
@@ -1054,7 +1055,16 @@ namespace ATT
                                 }
                                 else
                                 {
-                                    if (CURRENT_RELEASE_VERSION >= version) removed = 0;
+                                    if (CURRENT_RELEASE_VERSION >= version)
+                                    {
+                                        removed = 0;
+                                        addedPatch = 0;
+                                    }
+                                    else if (removed == 4 || removed == 2)
+                                    {
+                                        // Mark the first patch this comes back on.
+                                        if (addedPatch == 0) addedPatch = version;
+                                    }
                                 }
                                 break;
                             }
@@ -1065,7 +1075,6 @@ namespace ATT
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
                                     if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
                                 }
                                 break;
                             }
@@ -1076,18 +1085,27 @@ namespace ATT
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
                                     if (removedPatch == 0) removedPatch = version;
-                                    if (removed != 1) removed = 6;
                                 }
                                 break;
                             }
                         case "blackmarket":
                             {
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 3;
+                                else if (removed == 4 || removed == 2)
+                                {
+                                    // Mark the first patch this comes back on.
+                                    if (addedPatch == 0) addedPatch = version;
+                                }
                                 break;
                             }
                         case "timewalking":
                             {
                                 if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                else if (removed == 4 || removed == 2)
+                                {
+                                    // Mark the first patch this comes back on.
+                                    if (addedPatch == 0) addedPatch = version;
+                                }
                                 break;
                             }
                     }
@@ -1099,8 +1117,6 @@ namespace ATT
                 {
                     // Never Implemented
                     case 1:
-                    // Never Implemented (after already being available previously)
-                    case 4:
                         data["u"] = 1;
                         break;
                     // Black Market
@@ -1111,14 +1127,24 @@ namespace ATT
                     case 5:
                         data["u"] = 1016;
                         break;
-                    // Future Unobtainable
-                    case 6:
-                        data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
-                        break;
+                    // Deleted
+                    case 4:
                     // Removed From Game
                     case 2:
                         data["u"] = 2;
                         break;
+                }
+
+                // Future Returning Item
+                if (addedPatch != 0)
+                {
+                    data["awp"] = addedPatch.ConvertToGameVersion(); // "Added With Patch"
+                }
+
+                // Future Unobtainable
+                if (removedPatch != 0)
+                {
+                    data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
                 }
             }
 

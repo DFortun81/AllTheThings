@@ -500,6 +500,7 @@ namespace ATT
                     case "name":
                     case "description":
                     case "rwp":
+                    case "awp":
                         {
                             item[field] = ATT.Export.ToString(value);
                             break;
