@@ -680,8 +680,8 @@ for key,value in pairs({
 		[-22] = "秘密",												-- Secrets
 		[-23] = "一般地下城掉落",											-- WoD Common Dungeon Drop
 		[-26] = "掉落",												-- Drops
-		[-27] = "下层",									-- Lower (Blackrock Spire)
-		[-28] = "上层",									-- Upper (Blackrock Spire)
+		[-27] = "下层",												-- Lower (Blackrock Spire)
+		[-28] = "上层",												-- Upper (Blackrock Spire)
 		[-41] = "疯狂宝箱",												-- Cache of Madness
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
@@ -714,7 +714,7 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 		[-218] = "鱼饵",												-- Coastal (for Fishing)
-	[-219] = "无来源",									-- Sourceless
+	[-219] = "无来源",													-- Sourceless
 	-- PvP
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
@@ -847,12 +847,12 @@ for key,value in pairs({
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
 	-- Temp Sets for Creation Catalyst
-		[-1006] = "随机团队备选",
-		[-1007] = "普通备选",
-		[-1008] = "英雄备选",
-		[-1009] = "史诗备选",
-		[-1010] = "角斗士备选",
-		[-1011] = "精锐备选",
+		[-1006] = "随机团队备选",											-- Raid Finder Alternative
+		[-1007] = "普通备选",											-- Normal Alternative
+		[-1008] = "英雄备选",											-- Heroic Alternative
+		[-1009] = "史诗备选",											-- Mythic Alternative
+		[-1010] = "角斗士备选",											-- Gladiator Alternative
+		[-1011] = "精锐备选",											-- Elite Alternative
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
