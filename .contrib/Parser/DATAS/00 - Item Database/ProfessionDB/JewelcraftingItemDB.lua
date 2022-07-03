@@ -20,3 +20,9 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+
+-- NOT ORGANIZED
+i(41564, 53879);	-- Design: Lucent Huge Citrine [WotLK]
+i(41565, 53879);	-- Design: Lucent Huge Citrine [Cata+]
+i(41571, 53924);	-- Design: Turbid Dark Jade [Cata+]
+i(41573, 53924);	-- Design: Turbid Dark Jade [WotLK]
