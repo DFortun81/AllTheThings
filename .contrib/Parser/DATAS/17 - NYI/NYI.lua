@@ -234,10 +234,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191925),	-- Falling Star Flinger (TOY!)
 		q(66507),	-- A Winter Veil Gift
 		q(66508),	-- A Gently Shaken Gift
-		-- Watch Twitch?
-		ach(15594, {	-- Fearless Spectator
-			title(459),	-- 	Fearless Spectator <Name>
-		}),
 	})),
 	tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 		n(QUESTS, {	-- Darkal Sort?

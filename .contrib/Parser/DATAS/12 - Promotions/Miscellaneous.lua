@@ -5,6 +5,18 @@ local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 	["timeline"] = { "added 9.0.5" },
 	["description"] = "Granted to players by logging in on character of at least level 20.",
 });
+local FEARLESS_SPECTATOR_ACH = ach(15594, {	-- Fearless Spectator
+	["timeline"] = { "added 9.2.5" },
+	["description"] = "All you need to do is create a Blizzard account and link it with your YouTube account , then sit back and earn the title as you watch the top dungeon-running and pvp teams battle for their respective championships across three amazing weekends!",
+});
+local FEARLESS_SPECTATOR_TITLE = title(459, {	-- 	Fearless Spectator <Name>
+	["timeline"] = { "added 9.2.5" },
+	["description"] = "All you need to do is create a Blizzard account and link it with your YouTube account , then sit back and earn the title as you watch the top dungeon-running and pvp teams battle for their respective championships across three amazing weekends!",
+});
+local JEWEL_OF_THE_FIRELORD = i(95474, {	-- Jewel of the Firelord
+	["timeline"] = { "added 9.2.5" },
+	["description"] = "Obtained through Prime Gaming.",
+});
 
 root("Promotions", filter(MISC, {
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
@@ -24,6 +36,8 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
+		FEARLESS_SPECTATOR_ACH,
+		FEARLESS_SPECTATOR_TITLE,
 		i(32465, {	-- Fortune Cookie (Lucky)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
@@ -32,6 +46,7 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
+		JEWEL_OF_THE_FIRELORD,
 		i(103632, {	-- Lucky Box of Greatness
 			["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
 			["timeline"] = { "added 5.4.0.17169" },
@@ -90,3 +105,6 @@ root("Promotions", filter(MISC, {
 	}),
 }));
 WANDERING_ANCIENT.u = nil;
+FEARLESS_SPECTATOR_ACH.u = nil;
+FEARLESS_SPECTATOR_TITLE.u = nil;
+JEWEL_OF_THE_FIRELORD.u = BLIZZARD_BALANCE;
