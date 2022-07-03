@@ -7,11 +7,11 @@ local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 });
 local FEARLESS_SPECTATOR_ACH = ach(15594, {	-- Fearless Spectator
 	["timeline"] = { "added 9.2.5" },
-	["description"] = "All you need to do is create a Blizzard account and link it with your YouTube account , then sit back and earn the title as you watch the top dungeon-running and pvp teams battle for their respective championships across three amazing weekends!",
+	["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. Just link your Battle.net account to your YouTube account and watch eligible streams.",
 });
 local FEARLESS_SPECTATOR_TITLE = title(459, {	-- 	Fearless Spectator <Name>
 	["timeline"] = { "added 9.2.5" },
-	["description"] = "All you need to do is create a Blizzard account and link it with your YouTube account , then sit back and earn the title as you watch the top dungeon-running and pvp teams battle for their respective championships across three amazing weekends!",
+	["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. Just link your Battle.net account to your YouTube account and watch eligible streams.",
 });
 local JEWEL_OF_THE_FIRELORD = i(95474, {	-- Jewel of the Firelord
 	["timeline"] = { "added 9.2.5" },
