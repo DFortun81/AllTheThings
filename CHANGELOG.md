@@ -1,24 +1,25 @@
 # AllTheThings
 
-## [SL-2.8.5](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.5) (2022-06-26)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.4...SL-2.8.5) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.8.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.6) (2022-07-03)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.5...SL-2.8.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Don't forget to collect new Midsummer Festival toys 🔥
 
-### Quest Logic Updates ⁉
+### Attempted fix to broken popout windows where they just refuse to update
 
-- Revamped `/attwq` Quest population to lag far less and pull in a more accurate assessment of available Quests.
-- Opening a popout for a Quest will attempt to populate any API rewards as well (i.e. a Daily Quest with variable rewards *should* pull accurate rewards if the quest is available).
-- Minilist (and other open ATT windows) will update their contents more reliably (requiring less forced updates from the user).
+This one is hard to replicate so please report any issues to our Discord.
 
 ### Notable changes:
 
-- Bits and pieces of French translation, thanks to @Machou! 🇫🇷
-- Minilist 'cost' groups (which are not filled due to duplicate filled content already being filled elsewhere in the Minilist) will remain visible as regular 'cost' items in the same way as in the Main list for visibility.
+- Bits and pieces of German translation, thanks to @tc-sanya! 🇩🇪
+- Updated 🇫🇷 and zhCN translation, thanks to @Machou and @adavak!
 - Various fixes for profession recipes.
-- Various zones synchronized with ATT Classic: Arathi Highlands, Silverpine Forest.
-- Various quest data updates (quite a lot!).
-- Mechagon reformatting.
-- Added all the goodies for buying Dragonflight 🐉
+- ATT now supports logic for considering content becoming 'locked' by completion of an Achievement.
+- Little arrows that indicate Account-Wide Quests will now also show for collected Quests when completed by a different Character.
+- Fixed repeating achievement criterias.
+- Updated BFA icon with slight bronze hue.
+- Added Black Market Icon, now with 100% more dice!
+- Cleaned up Mechagon even more.
+- Various zones synchronized with ATT Classic: The Hinterlands.
 - Other fixes.
