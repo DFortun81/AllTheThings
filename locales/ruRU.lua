@@ -393,7 +393,6 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.DISPLAY_IN_COMBAT_CHECKBOX = "В Бою";
 		L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите показывать информацию в подсказках во время боя.\n\nЕсли Вы рейдите с Вашей Эпохальной/Эпохальной+ гильдией, Вы, возможно, должны отключить эту настройку, чтобы снизить нагрузку на систему.\n\nОпция может быть полезна, когда Вы проходите старый контент, чтобы сразу знать, что Вам нужно с босса.";
 		L.TOOLTIP_MOD_LABEL = "Модификатор";
-		L.TOOLTIP_MOD_NONE = "Нет";
 		L.TOOLTIP_MOD_SHIFT = "Shift";
 		L.TOOLTIP_MOD_CTRL = "Ctrl";
 		L.TOOLTIP_MOD_ALT = "Alt";

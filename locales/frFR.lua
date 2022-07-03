@@ -15,11 +15,11 @@ local L = app.L;
 	--TODO: L.COLLECTED_STRING = " Collected";
 	L.PROVIDERS = "Fournisseur(s)";
 	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
-	--TODO: L.CONTAINS = "Contains:";
+	L.CONTAINS = "Contient :";
 	L.FACTIONS = "Factions";
 	L.COORDINATES_STRING = "Coordonnées";
 	--TODO: L.FLIGHT_PATHS = "Flight Paths";
-	--TODO: L.KNOWN_BY = "Known by ";
+	L.KNOWN_BY = "Connu par ";
 	--TODO: L.REQUIRES = "Requires";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
@@ -48,14 +48,14 @@ local L = app.L;
 	--TODO: L.SELFIE_DESC = "Take a selfie using your ";
 	--TODO: L.SELFIE_DESC_2 = " with |cffff8000";
 	--TODO: L.CLASSIC_TIER_DESC = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
-	--TODO: L.TBC_TIER_DESC = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
-	--TODO: L.WOTLK_TIER_DESC = "Wrath of the Lich King is the second expansion. The majority of the expansion content takes place in Northrend & centers around the plans of the Lich King. Content highlights include the increase of the level cap from 70 to 80, the introduction of the death knight Hero class, & new PvP/World PvP content.";
-	--TODO: L.CATA_TIER_DESC = "Cataclysm is the third expansion. Set primarily in a dramatically reforged Kalimdor & Eastern Kingdoms on the world of Azeroth, the expansion follows the return of Deathwing, who causes a new Sundering as he makes his cataclysmic re-entrance into the world from Deepholm. Cataclysm returns players to the two continents of Azeroth for most of their campaigning, opening new zones such as Mount Hyjal, the sunken world of Vashj'ir, Deepholm, Uldum and the Twilight Highlands. It includes two new playable races, the worgen & the goblins. The expansion increases level cap to 85, adds the ability to fly in Kalimdor & Eastern Kingdoms, introduces Archaeology & reforging, & restructures the world itself.";
-	--TODO: L.MOP_TIER_DESC = "Mists of Pandaria is the fourth expansion pack. The expansion refocuses primarily on the war between the Alliance & Horde, in the wake of the accidental rediscovery of Pandaria. Adventurers rediscover the ancient pandaren people, whose wisdom will help guide them to new destinies; the Pandaren Empire's ancient enemy, the mantid; and their legendary oppressors, the enigmatic mogu. The land changes over time & the conflict between Varian Wrynn & Garrosh Hellscream escalates. As civil war wracks the Horde, the Alliance & forces in the Horde opposed to Hellscream's violent uprising join forces to take the battle directly to Hellscream & his Sha-touched allies in Orgrimmar.";
-	--TODO: L.WOD_TIER_DESC = "Warlords of Draenor is the fifth expansion. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.";
-	--TODO: L.LEGION_TIER_DESC = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
-	--TODO: L.BFA_TIER_DESC = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
-	--TODO: L.SL_TIER_DESC = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
+	L.TBC_TIER_DESC = "The Burning Crusade est la 1ère extension. La \"Burning Crusade\" qui a donné son nom à cette première extension de World of Warcraft fait référence à la \"Croisade ardente\" de la Légion Ardente qui cherche à ravager Azeroth. Cette extension permet aux joueurs d'emprunter la Porte des Ténèbres pour affronter la Légion sur d'autres plans d'existence.";
+	L.WOTLK_TIER_DESC = "Wrath of the Lich King est la 2ème extension. Dans les rudes et froides terres du Nord... Le roi-liche Arthas a déclenché des événements qui pourraient conduire à l’extinction de toute vie sur Azeroth. Face aux armées de morts-vivants et à la puissante nécromancie de la peste qui menacent de déferler sur le continent, seuls les héros les plus puissants pourront s’opposer à la volonté du roi-liche et mettre un terme à son règne de terreur pour toujours.";
+	L.CATA_TIER_DESC = "Cataclysm est la 3ème extension. Pendant que l’attention de la Horde et l’Alliance était tournée vers le Norfendre, un mal ancestral sommeillait dans le Tréfonds, le domaine de la terre dans le plan élémentaire. Caché dans un sanctuaire isolé, Aile de mort, l’Aspect dragon corrompu, a patienté le temps que cicatrisent ses blessures subies lors de sa dernière bataille contre Azeroth, nourrissant sa haine envers les créatures inférieures qui peuplent la surface du monde... et attendant son heure pour refaçonner le monde dans un déferlement de lave brûlante. Mais bientôt, Aile de mort le Destructeur reviendra en Azeroth, et sa brusque émergence du Tréfonds va alors morceler le monde, laissant une blessure béante sur les continents. Tandis que la Horde et l’Alliance se précipitent à l’épicentre du Cataclysme, les royaumes d’Azeroth sont témoins des forces sismiques en action, début d’une guerre des éléments, et de l’émergence de héros inattendus qui vont se soulever pour protéger leur monde balafré et brisé d’une dévastation totale.";
+	L.MOP_TIER_DESC = "Mists of Pandaria est la 4ème extension. À peine esquissée par Chris Metzen dans le cadre de la cérémonie d'ouverture de la BlizzCon 2011, Mists of Pandaria se veut la quatrième extension de World of Warcraft et promet une nouvelle race jouable (les pandarens accessible à la fois pour la Horde et pour l'Alliance) et leur contrée de Pandaria, un niveau maximum rehaussé (on pourra atteindre le niveau 90), de nouveaux mécanismes de talents mais aussi un système de familiers de combat.";
+	L.WOD_TIER_DESC = "Warlords of Draenor est la 5ème extension. En plus d'explorer de nouvelles contrées, Warlords of Draenor intègre plusieurs mises à jour de gameplay, parmi lesquelles on trouve les \"fiefs\". Les joueurs peuvent prendre le contrôle de petite cité (comptant quelques bâtiments stratégiques) qu'il faudra faire évoluer et améliorer au fil du temps et des ressources qu'on y investit. Ces fiefs sont par ailleurs peuplés de PNJ ayant tous un rôle à tenir dans ces cités de joueurs.";
+	L.LEGION_TIER_DESC = "Legion est la 6ème extension. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";	--TODO:
+	L.BFA_TIER_DESC = "Battle for Azeroth est la 7ème extension. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";	--TODO:
+	L.SL_TIER_DESC = "Shadowlands est la 8ème extension. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";	--TODO:
 	L.DF_TIER_DESC = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
 	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 	--TODO: L.SHARED_APPEARANCES_LABEL = "Shared Appearances";
@@ -246,19 +246,19 @@ local L = app.L;
 
 	-- General tab
 		-- Mode Title
-			--TODO: L.MODE = "Mode";
-			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
-			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
-			--TODO: L.TITLE_DEBUG = "Debug ";
-			--TODO: L.TITLE_ACCOUNT = "|cff00AB00Account|R ";
-			--TODO: L.TITLE_MAIN_ONLY = " (Main Only)";
+			L.MODE = "Mode";
+			L.TITLE_COMPLETIONIST = "Complétionniste ";
+			L.TITLE_UNIQUE_APPEARANCE = "Unique ";
+			L.TITLE_DEBUG = "Debug ";
+			L.TITLE_ACCOUNT = "|cff00AB00Compte|R ";
+			L.TITLE_MAIN_ONLY = " (Joueur principal seulement)";
 			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
-			--TODO: L.TITLE_ONLY = " Only ";
-			--TODO: L.TITLE_INSANE = "|cffADD8E6Insane|R ";
+			L.TITLE_ONLY = " Seulement ";
+			L.TITLE_INSANE = "|cffADD8E6Insensé|R ";
 			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
-			--TODO: L.TITLE_LEVEL = "Level ";
-			--TODO: L.TITLE_SOLO = "Solo ";
-			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
+			L.TITLE_LEVEL = "Niveau ";
+			L.TITLE_SOLO = "Solo ";
+			L._BETA_LABEL = " |cff4AA7FF[Bêta]|R";
 
 		--TODO: L.GENERAL_LABEL = "General";
 		--TODO: L.MERCH_BUTTON_LABEL = "Merch";
@@ -376,25 +376,24 @@ local L = app.L;
 		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
-		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
-		--TODO: L.SEASONAL_LABEL = "Seasonal";
-		--TODO: L.SEASONAL_ALL = "|cffECBC21Show All Seasonal";
-		--TODO: L.UNOBTAINABLE_LABEL = "Unobtainable";
-		--TODO: L.UNOBTAINABLE_ALL = "|cffECBC21Show All Unobtainable";
-		--TODO: L.NO_CHANCE_ALL = "|cffECBC21Show All \"No Chance\"";
-		--TODO: L.HIGH_CHANCE_ALL = "|cffECBC21Show All \"High Chance\"";
+		L.UNOBTAINABLES_TAB = "Inaccessibles";
+		L.SEASONAL_LABEL = "Saisonnier";
+		L.SEASONAL_ALL = "|cffECBC21Tous les saisonniers";
+		L.UNOBTAINABLE_LABEL = "Inaccessible";
+		L.UNOBTAINABLE_ALL = "|cffECBC21Afficher tous les inaccessibles";
+		L.NO_CHANCE_ALL = "|cffECBC21Afficher tous les \"Aucune Chance\"";
+		L.HIGH_CHANCE_ALL = "|cffECBC21Afficher tous les \"Grande Chance\"";
 
 	-- Interface tab
-		--TODO: L.TOOLTIP_LABEL = "Tooltips";
+		L.TOOLTIP_LABEL = "Info-bulles";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
 		--TODO: L.ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
-		--TODO: L.TOOLTIP_MOD_LABEL = "Modifier";
-		--TODO: L.TOOLTIP_MOD_NONE = "None";
-		--TODO: L.TOOLTIP_MOD_SHIFT = "Shift";
-		--TODO: L.TOOLTIP_MOD_CTRL = "Ctrl";
-		--TODO: L.TOOLTIP_MOD_ALT = "Alt";
+		L.TOOLTIP_MOD_LABEL = "Modifier";
+		L.TOOLTIP_MOD_SHIFT = "Maj";
+		L.TOOLTIP_MOD_CTRL = "Ctrl";
+		L.TOOLTIP_MOD_ALT = "Alt";
 		--TODO: L.TOOLTIP_SHOW_LABEL = "Shown Information";
 		--TODO: L.SHOW_COLLECTION_PROGRESS_CHECKBOX = "Collection Progress";
 		--TODO: L.SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
@@ -420,7 +419,7 @@ local L = app.L;
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
 		--TODO: L.PROFESSION_CHECKBOX = "Professions";
 		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
-		--TODO: L.LEVELREQ_CHECKBOX = "Levels";
+		L.LEVELREQ_CHECKBOX = "Niveaux";
 		--TODO: L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
 		--TODO: L.CLASSES_CHECKBOX = "Classes";
 		--TODO: L.CLASSES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of class requirements in the tooltip.";
@@ -461,7 +460,7 @@ local L = app.L;
 		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
 
 	-- Features tab
-		--TODO: L.MINIMAP_LABEL = "Minimap Button";
+		L.MINIMAP_LABEL = "Bouton de la mini-carte.";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
 		--TODO: L.REPORTING_LABEL = "Reporting";
 		--TODO: L.ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
@@ -501,9 +500,9 @@ local L = app.L;
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
-		--TODO: L.PROFILES_TAB = "Profiles";
-		--TODO: L.PROFILE = "Profile";
-		--TODO: L.PROFILE_INITIALIZE = "Initialize Profiles";
+		L.PROFILES_TAB = "Profiles";	--TODO: probably incorrect, remove this comment if it's correct
+		L.PROFILE = "Profile";	--TODO: probably incorrect, remove this comment if it's correct
+		L.PROFILE_INITIALIZE = "Initialiser les profils";
 		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
 		--TODO: L.PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
 		--TODO: L.PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
@@ -534,7 +533,7 @@ local L = app.L;
 		--TODO: L.CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
 
 	-- About tab
-		--TODO: L.ABOUT = "About";
+		L.ABOUT = "À Propos";
 		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
 		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
@@ -574,8 +573,8 @@ local L = app.L;
 		--TODO: L.LOCKOUT = "Lockout";
 		--TODO: L.SHARED = "Shared";
 		--TODO: L.SPLIT = "Per Difficulty";
-		--TODO: L.REQUIRES_LEVEL = "Requires Level";
-		--TODO: L.SECRETS_HEADER = "Secrets";
+		L.REQUIRES_LEVEL = "Niveau requis";
+		L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
@@ -603,32 +602,32 @@ for key,value in pairs({
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
-		--TODO: ["The Burning Crusade"] = "BC",
-		--TODO: ["Burning Crusade"] = "BC",
-		--TODO: ["The BC"] = "BC",
-		--TODO: ["Wrath of the Lich King"] = "WotLK",
-		--TODO: ["Cataclysm"] = "Cata",
-		--TODO: ["Mists of Pandaria"] = "MoP",
-		--TODO: ["Warlords of Draenor"] = "WoD",
-		--TODO: ["Battle for Azeroth"] = "BFA",
-		--TODO: ["The Shadowlands"] = "SL",
-		--TODO: ["Shadowlands"] = "SL",
-		--TODO: ["Player vs Player"] = "PvP",
+		["The Burning Crusade"] = "BC",	--TODO: recheck this key
+		["Burning Crusade"] = "BC",	--TODO: recheck this key
+		["The BC"] = "BC",	--TODO: recheck this key
+		["Wrath of the Lich King"] = "WotLK",	--TODO: recheck this key
+		["Cataclysm"] = "Cata",	--TODO: recheck this key
+		["Mists of Pandaria"] = "MoP",	--TODO: recheck this key
+		["Warlords of Draenor"] = "WoD",	--TODO: recheck this key
+		["Battle for Azeroth"] = "BFA",	--TODO: recheck this key
+		["The Shadowlands"] = "SL",	--TODO: recheck this key
+		["Shadowlands"] = "SL",	--TODO: recheck this key
+		["Player vs Player"] = "JcJ",	--TODO: recheck this key
 		--TODO: ["Raid Finder"] = "LFR",
 		--TODO: ["Looking For Raid"] = "LFR",
-		--TODO: ["Normal"] = "N",
-		--TODO: ["Heroic"] = "H",
-		--TODO: ["Mythic"] = "M",
+		["Normal"] = "N",	--TODO: recheck this key
+		["Heroic"] = "H",	--TODO: recheck this key
+		["Mythic"] = "M",	--TODO: recheck this key
 		["Ny’alotha, la cité en éveil"] = "Ny’alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 		["Tazavesh, le marché dissimulé"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
-		--TODO: ["10 Player"] = "10M",
-		--TODO: ["10 Player (Heroic)"] = "10M (H)",
-		--TODO: ["25 Player"] = "25M",
-		--TODO: ["25 Player (Heroic)"] = "25M (H)",
+		["10 Player"] = "10J",	--TODO: recheck this key
+		["10 Player (Heroic)"] = "10J (H)",	--TODO: recheck this key
+		["25 Player"] = "25J",	--TODO: recheck this key
+		["25 Player (Heroic)"] = "25J (H)",	--TODO: recheck this key
 		--TODO: ["Emissary Quests"] = "Emissary",
 		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		--TODO: ["WoW Anniversary"] = "Anniversary",
-		--TODO: ["Covenant:"] = "Cov:",
+		["WoW Anniversary"] = "Anniversaire",	--TODO: recheck this key
+		["Covenant:"] = "Cov :",	--TODO: recheck this key
 })
 do a[key] = value; end
 
