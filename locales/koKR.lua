@@ -1014,6 +1014,9 @@ for key,value in pairs({
 	[142696] = "행렬 천공기록기 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "독약병",	-- Venom Bottle
 	[144063] = "에퀴넥스 비석탑",	-- Equinex Monolith
+	[144066] = "첫번째 마른나무껍질 우리",	-- First Witherbark Cage
+	[144067] = "두번째 마른나무껍질 우리",	-- Second Witherbark Cage
+	[144068] = "세번째 마른나무껍질 우리",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFStep 1:|r 9쪽",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "눈에 띄는 묘비",	-- A Conspicuous Gravestone
 	[149036] = "마본의 궤짝",	-- Marvon's Chest
@@ -1072,6 +1075,7 @@ for key,value in pairs({
 	[179697] = "투기장 보물상자",	-- Arena Treasure Chest
 	[179827] = "구인광고/분실물센터/지명수배",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "하녀 필라클렌처의 화려한 베개",	-- Pillaclencher's Ornate Pillow
+	[179913] = "전장으로!",	-- Call to Arms!	--TODO: This was taken from classic Wowhead
 	[180229] = "불길한 흑마술 더미",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	[180248] = "맛둥어 떼",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1104,6 +1108,8 @@ for key,value in pairs({
 	[181150] = "먼지투성이 일지",	-- Dusty Journal
 	[181153] = "현상 수배 전단: 사악한 켈가쉬",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "현상 수배 전단",	-- Wanted Poster
+	[181643] = "페더비어드의 유골",	-- Featherbeard's Remains	--TODO: This was taken from tbc Wowhead
+	[181649] = "페더비어드의 일지",	-- Featherbeard's Journal
 	[181672] = "밀짚인형",	-- Wickerman Effigy	--TODO: This was taken from tbc Wowhead
 	[181698] = "공허의 돌",	-- Voidstone
 	[181748] = "핏빛 수정",	-- Blood Crystal

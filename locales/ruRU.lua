@@ -1001,6 +1001,9 @@ for key,value in pairs({
 	[142696] = "Матричный перфограф 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Флакон с ядом",	-- Venom Bottle
 	[144063] = "Монолит Равноденствия",	-- Equinex Monolith
+	[144066] = "Первая клетка племени Сухокожих",	-- First Witherbark Cage
+	[144067] = "Вторая клетка племени Сухокожих",	-- Second Witherbark Cage
+	[144068] = "Третья клетка племени Сухокожих",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFШаг 1:|r Страница 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Подозрительное надгробие",	-- A Conspicuous Gravestone
 	[149036] = "Сундук Марвона",	-- Marvon's Chest
@@ -1059,6 +1062,7 @@ for key,value in pairs({
 	[179697] = "Сундук с сокровищами арены",	-- Arena Treasure Chest
 	[179827] = "Розыск/Пропал без вести/Найден",	-- Wanted/Missing/Lost & Found
 	[179832] = "Вышитая подушка Крепких Тисков",	-- Pillaclencher's Ornate Pillow
+	[179913] = "К оружию!",	-- Call to Arms!
 	[180229] = "Груда зачарованных худу",	-- Jinxed Hoodoo Pile
 	[180248] = "Косяк вкуснорыбы",	-- School of Tastyfish
 	[180327] = "Жаровня Безумия",	-- Brazier of Madness
@@ -1091,6 +1095,8 @@ for key,value in pairs({
 	[181150] = "Пыльный дневник",	-- Dusty Journal
 	[181153] = "Плакат: \"Разыскивается\": Кел'гаш Коварный",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Плакат \"Разыскивается\"",	-- Wanted Poster
+	[181643] = "Останки Пероборода",	-- Featherbeard's Remains
+	[181649] = "Дневник Пероборода",	-- Featherbeard's Journal
 	[181672] = "Фигурка Плетеного человека",	-- Wickerman Effigy
 	[181698] = "Камень Бездны",	-- Voidstone
 	[181748] = "Кровавый кристалл",	-- Blood Crystal

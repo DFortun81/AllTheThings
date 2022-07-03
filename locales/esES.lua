@@ -1018,6 +1018,9 @@ for key,value in pairs({
 	[142696] = "Perforágrafo Matriz 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Botella de veneno",	-- Venom Bottle
 	[144063] = "Monolito de Equinex",	-- Equinex Monolith
+	[144066] = "Primera jaula Secacorteza",	-- First Witherbark Cage
+	[144067] = "Segunda jaula Secacorteza",	-- Second Witherbark Cage
+	[144068] = "Tercera jaula Secacorteza",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFStep 1:|r Página 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Una lápida llamativa",	-- A Conspicuous Gravestone
 	[149036] = "Cofre de Marvon",	-- Marvon's Chest
@@ -1076,6 +1079,7 @@ for key,value in pairs({
 	[179697] = "Arqueta de la arena",	-- Arena Treasure Chest
 	[179827] = "Se busca/Desaparecido/Objetos perdidos",	-- Wanted/Missing/Lost & Found
 	[179832] = "Almohada ornamentada de Pilaprieta",	-- Pillaclencher's Ornate Pillow
+	[179913] = "¡A las armas!",	-- Call to Arms!
 	[180229] = "Montón hudú maldito",	-- Jinxed Hoodoo Pile
 	[180248] = "Banco de pezricos",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1108,6 +1112,8 @@ for key,value in pairs({
 	[181150] = "Diario polvoriento",	-- Dusty Journal
 	[181153] = "Cartel de Se busca: Kel'gash el Malvado",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Cartel de Se busca",	-- Wanted Poster
+	[181643] = "Restos de Barbapluma",	-- Featherbeard's Remains
+	[181649] = "Diario de Barbapluma",	-- Featherbeard's Journal
 	[181672] = "Efigie del Hombre de Mimbre",	-- Wickerman Effigy
 	[181698] = "Piedra del Vacío",	-- Voidstone
 	[181748] = "Cristal de sangre",	-- Blood Crystal

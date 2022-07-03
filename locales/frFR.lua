@@ -1013,6 +1013,9 @@ for key,value in pairs({
 	[142696] = "Matrice d'encodage 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Bouteille de venin",	-- Venom Bottle
 	[144063] = "Monolithe d'Equinex",	-- Equinex Monolith
+	[144066] = "Première cage de Fanécorce",	-- First Witherbark Cage
+	[144067] = "Deuxième cage de Fanécorce",	-- Second Witherbark Cage
+	[144068] = "Troisième cage de Fanécorce",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFStep 1:|r Page 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Une tombe ostentatoire",	-- A Conspicuous Gravestone
 	[149036] = "Coffre de Marvon",	-- Marvon's Chest
@@ -1071,6 +1074,7 @@ for key,value in pairs({
 	[179697] = "Coffre au trésor de l'arène",	-- Arena Treasure Chest
 	[179827] = "Avis de recherche / Disparu / Trouvé & Perdu",	-- Wanted/Missing/Lost & Found
 	[179832] = "Oreiller brodé de Pincetaie",	-- Pillaclencher's Ornate Pillow
+	[179913] = "Aux armes !",	-- Call to Arms!
 	[180229] = "Pile de déchets",	-- Jinxed Hoodoo Pile
 	[180248] = "Banc de courbines",	-- School of Tastyfish
 	[180327] = "Brasero de la Folie",	-- Brazier of Madness
@@ -1103,6 +1107,8 @@ for key,value in pairs({
 	[181150] = "Journal poussiéreux",	-- Dusty Journal
 	[181153] = "Avis de recherche : Kel'gash le Malfaisant",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Avis de recherche",	-- Wanted Poster
+	[181643] = "Cadavre de Barbe-de-plumes",	-- Featherbeard's Remains
+	[181649] = "Journal de Barbe-de-plumes",	-- Featherbeard's Journal
 	[181672] = "Effigie de l'homme d'osier",	-- Wickerman Effigy
 	[181698] = "Pierre de Vide",	-- Voidstone
 	[181748] = "Cristal de sang",	-- Blood Crystal

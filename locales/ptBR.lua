@@ -1014,6 +1014,9 @@ for key,value in pairs({
 	[142696] = "Matriz Perfuradora 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Garrafa de Peçonha",	-- Venom Bottle
 	[144063] = "Monolito de Equinex",	-- Equinex Monolith
+	[144066] = "Primeira Jaula Cascasseca",	-- First Witherbark Cage
+	[144067] = "Segunda Jaula Cascasseca",	-- Second Witherbark Cage
+	[144068] = "Terceira Jaula Cascasseca",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFStep 1:|r Página 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Lápide Evidente",	-- A Conspicuous Gravestone
 	[149036] = "Baú do Marlon",	-- Marvon's Chest
@@ -1072,6 +1075,7 @@ for key,value in pairs({
 	[179697] = "Baú do Tesouro da Arena",	-- Arena Treasure Chest
 	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
+	[179913] = "Chamado às armas!",	-- Call to Arms!	--TODO: This was taken from classic Wowhead
 	[180229] = "Amontoado de Mandingas Azarentas",	-- Jinxed Hoodoo Pile	--TODO: This was taken from classic Wowhead
 	[180248] = "Cardume de Papas-finas",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1104,6 +1108,8 @@ for key,value in pairs({
 	[181150] = "Diário Empoeirado",	-- Dusty Journal
 	[181153] = "Cartaz de Procura-se: Kel'gash, o Perverso",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Cartaz de Procura-se",	-- Wanted Poster
+	[181643] = "Restos Mortais de Barbapena",	-- Featherbeard's Remains	--TODO: This was taken from tbc Wowhead
+	[181649] = "Diário de Barbapena",	-- Featherbeard's Journal
 	[181672] = "Efígie do Homem de Palha",	-- Wickerman Effigy
 	[181698] = "Pedra do Caos",	-- Voidstone
 	[181748] = "Cristal de Sangue",	-- Blood Crystal
