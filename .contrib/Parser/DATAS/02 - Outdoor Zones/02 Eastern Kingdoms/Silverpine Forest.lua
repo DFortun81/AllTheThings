@@ -1557,7 +1557,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
-							["timeline"] = { "removed 4.0.3" },
+							-- #if BEFORE WRATH
+							-- #if AFTER TBC
+							["description"] = "This item was possibly converted into a (unconfirmed) world drop with TBC and no longer drops from Snarlmane exclusively. It returns to being an exclusive drop from him with Wrath.",
+							-- #else
+							["description"] = "This item possibly gets converted into a (unconfirmed) world drop with TBC and no longer drops from Snarlmane exclusively. It returns to being an exclusive drop from him with Wrath.",
+							-- #endif
+							-- #endif
+							["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3" },
 						}),
 					},
 				}),
