@@ -500,8 +500,8 @@ local L = app.L;
 		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
-		L.PROFILES_TAB = "Profiles";
-		L.PROFILE = "Profile";
+		L.PROFILES_TAB = "Profiles";	--TODO: probably incorrect, remove this comment if it's correct
+		L.PROFILE = "Profile";	--TODO: probably incorrect, remove this comment if it's correct
 		L.PROFILE_INITIALIZE = "Initialiser les profils";
 		--TODO: L.PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
 		--TODO: L.PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
@@ -602,32 +602,32 @@ for key,value in pairs({
 		--TODO: ["Expansion Pre"] = "Pre",
 		--TODO: ["Expansion Features"] = "EF",
 		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
-		["The Burning Crusade"] = "BC",
-		["Burning Crusade"] = "BC",
-		["The BC"] = "BC",
-		["Wrath of the Lich King"] = "WotLK",
-		["Cataclysm"] = "Cata",
-		["Mists of Pandaria"] = "MoP",
-		["Warlords of Draenor"] = "WoD",
-		["Battle for Azeroth"] = "BFA",
-		["The Shadowlands"] = "SL",
-		["Shadowlands"] = "SL",
-		["Player vs Player"] = "JcJ",
+		["The Burning Crusade"] = "BC",	--TODO: recheck this key
+		["Burning Crusade"] = "BC",	--TODO: recheck this key
+		["The BC"] = "BC",	--TODO: recheck this key
+		["Wrath of the Lich King"] = "WotLK",	--TODO: recheck this key
+		["Cataclysm"] = "Cata",	--TODO: recheck this key
+		["Mists of Pandaria"] = "MoP",	--TODO: recheck this key
+		["Warlords of Draenor"] = "WoD",	--TODO: recheck this key
+		["Battle for Azeroth"] = "BFA",	--TODO: recheck this key
+		["The Shadowlands"] = "SL",	--TODO: recheck this key
+		["Shadowlands"] = "SL",	--TODO: recheck this key
+		["Player vs Player"] = "JcJ",	--TODO: recheck this key
 		--TODO: ["Raid Finder"] = "LFR",
 		--TODO: ["Looking For Raid"] = "LFR",
-		["Normal"] = "N",
-		["Heroic"] = "H",
-		["Mythic"] = "M",
+		["Normal"] = "N",	--TODO: recheck this key
+		["Heroic"] = "H",	--TODO: recheck this key
+		["Mythic"] = "M",	--TODO: recheck this key
 		["Ny’alotha, la cité en éveil"] = "Ny’alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 		["Tazavesh, le marché dissimulé"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
-		["10 Player"] = "10J",
-		["10 Player (Heroic)"] = "10J (H)",
-		["25 Player"] = "25J",
-		["25 Player (Heroic)"] = "25J (H)",
+		["10 Player"] = "10J",	--TODO: recheck this key
+		["10 Player (Heroic)"] = "10J (H)",	--TODO: recheck this key
+		["25 Player"] = "25J",	--TODO: recheck this key
+		["25 Player (Heroic)"] = "25J (H)",	--TODO: recheck this key
 		--TODO: ["Emissary Quests"] = "Emissary",
 		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		["WoW Anniversary"] = "Anniversaire",
-		["Covenant:"] = "Cov :",
+		["WoW Anniversary"] = "Anniversaire",	--TODO: recheck this key
+		["Covenant:"] = "Cov :",	--TODO: recheck this key
 })
 do a[key] = value; end
 
