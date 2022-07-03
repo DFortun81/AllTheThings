@@ -5,6 +5,13 @@
 root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 	m(VOLDUN, {
 		n(ZONE_DROPS, {
+			i(158909, {	-- Beastbreaker Cage Key
+				["coords"] = {
+					{ 48.2, 39.6, VOLDUN },
+					{ 49.1, 38.3, VOLDUN },	-- Cave entrance
+				},
+				["crs"] = { 130603 },	-- Beastbreaker Hakid
+			}),
 			i(163576, {	-- Captured Dune Scavenger (MOUNT!)
 				["crs"] = {
 					134429,	-- Diamondback Warbringer

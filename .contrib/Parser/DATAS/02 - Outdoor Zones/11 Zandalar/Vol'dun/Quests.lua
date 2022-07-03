@@ -183,7 +183,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "i", 158909 },	-- Beastbreaker Cage Key
 				["coord"] = { 49.1, 38.3, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["cr"] = 130603,	-- Beastbreaker Hakid
 			}),
 			q(47581, {	-- Blessing of Kimbul
 				["sourceQuests"] = { 47965 },	-- The Ruined Temple
@@ -468,7 +467,9 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coords"] = {
 					{ 49.8, 74.6, VOLDUN },	-- Zul'Ahjin
 					{ 49.8, 76.6, VOLDUN },
+					{ 47.4, 72.7, VOLDUN },	-- Scepter of Prescience
 				},
+				["crs"] = { 134245 },	-- Scepter of Prescience
 				["races"] = HORDE_ONLY,
 			}),
 			q(49040, {	-- Fond Farewells

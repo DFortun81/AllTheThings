@@ -149,7 +149,7 @@ _.Zones =
 					["provider"] = { "n", 96254 },	-- Havi
 				}),
 				q(38342, {	-- Another Way (Alliance)
-					["sourceQuests"] = { 38410 },	-- Impalement Insurance
+					["sourceQuests"] = { 38410 },	-- Impalement Insurance (A)
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 46.2, 70.3, STORMHEIM },
 					["provider"] = { "n", 91553 },	-- Commander Lorna Crowley <Gilneas Brigade>
@@ -158,7 +158,7 @@ _.Zones =
 					["provider"] = { "n", 92573 },	-- Dread-Rider Cullen
 					["races"] = HORDE_ONLY,
 					["coord"] = { 47.0, 71.7, STORMHEIM },
-					["sourceQuests"] = { 38410 },	-- Impalement Insurance
+					["sourceQuests"] = { 38615 },	-- Impalement Insurance (H)
 				}),
 				q(38053, {	-- Assault and Battery
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit

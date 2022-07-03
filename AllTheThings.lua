@@ -48,8 +48,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, sformat
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, string.format;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, sformat
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, string.format;
 local ATTAccountWideData;
 local ALLIANCE_ONLY = {
 	1,
@@ -7986,6 +7986,7 @@ app.TryPopulateQuestRewards = function(questObject, force)
 	if not questID then
 		-- Update the group directly immediately since there's no quest to retrieve
 		-- app.PrintDebug("TPQR:No Quest")
+		questObject.retries = nil;
 		app.DirectGroupUpdate(questObject);
 		return;
 	end
@@ -8200,6 +8201,7 @@ app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 	return true;
 end
+local UpdateQuestIDs = {};
 local function QueryCompletedQuests()
 	local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 	-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
@@ -8255,6 +8257,7 @@ local CustomCollectQuests = {
 local function RefreshQuestCompletionState(questID)
 	-- app.PrintDebug("RefreshQuestCompletionState",questID)
 	if questID then
+		questID = tonumber(questID);
 		CompletedQuests[questID] = true;
 	else
 		QueryCompletedQuests();
@@ -8262,15 +8265,20 @@ local function RefreshQuestCompletionState(questID)
 
 	-- update if any quests were even completed to ensure visible changes occur
 	if questID or DirtyQuests.DIRTY then
-		local updateQuests = { questID };
+		DirtyQuests.DIRTY = nil;
+		-- make sure to update the incoming questID if it isn't marked after the refresh, somehow
+		if not DirtyQuests[questID] then
+			tinsert(UpdateQuestIDs, questID);
+		end
 		for questID,_ in pairs(DirtyQuests) do
-			tinsert(updateQuests, questID);
+			tinsert(UpdateQuestIDs, questID);
 			-- Certain quests being completed should trigger a refresh of the Custom Collect status of the character (i.e. Covenant Switches, Threads of Fate, etc.)
 			if CustomCollectQuests[questID] then
 				Callback(app.RefreshCustomCollectibility);
 			end
 		end
-		UpdateRawIDs("questID", updateQuests);
+		UpdateRawIDs("questID", UpdateQuestIDs);
+		wipe(UpdateQuestIDs);
 	end
 	-- re-register the criteria update event
 	app:RegisterEvent("CRITERIA_UPDATE");

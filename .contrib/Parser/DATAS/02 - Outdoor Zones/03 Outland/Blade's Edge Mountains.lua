@@ -887,14 +887,24 @@ root("Zones", {
 						["qg"] = 22940,	-- Grok
 						["sourceQuest"] = 10984,	-- Speak with the Ogre
 						["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
+						-- #IF ANYCLASSIC
+						-- maybe this is true in classic? in Retail was unable to pick up any quest from Mog'dorg until completing this
 						["isBreadcrumb"] = true,
+						-- #ENDIF
 						["lvl"] = lvlsquish(70, 20, 70),
+						-- cross-completes with 10989
+						["altQuests"] = { 10989, }	-- Mog'dorg the Wizened
 					}),
 					q(10989, {	-- Mog'dorg the Wizened
 						["qg"] = 22995,	-- Chort
 						["coord"] = { 55.4, 45.2, BLADES_EDGE_MOUNTAINS },
+						-- #IF ANYCLASSIC
+						-- maybe this is true in classic? in Retail was unable to pick up any quest from Mog'dorg until completing this
 						["isBreadcrumb"] = true,
+						-- #ENDIF
 						["lvl"] = lvlsquish(70, 20, 70),
+						-- cross-completes with 10983
+						["altQuests"] = { 10983, }	-- Mog'dorg the Wizened
 					}),
 					q(10860, {	-- Mok'Nathal Treats
 						["qg"] = 21088,	-- Matron Varah

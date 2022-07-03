@@ -680,6 +680,14 @@ _.Zones =
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						40890,	-- The Tears of Elune
+						45420,	-- The Nighthold: The Eye of Aman'Thul
+					},
+					["lockCriteria"] = { 3,
+						"questID", 42454,	-- The Hammer of Khaz'goroth
+						"questID", 43349,	-- The Aegis of Aggramar
+						"questID", 42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						"questID", 40890,	-- The Tears of Elune
+						"questID", 45420,	-- The Nighthold: The Eye of Aman'Thul
 					},
 				}),
 				q(45906, {	-- Jarod's Gift
@@ -760,6 +768,14 @@ _.Zones =
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						40890,	-- The Tears of Elune
+						45420,	-- The Nighthold: The Eye of Aman'Thul
+					},
+					["lockCriteria"] = { 5,
+						"questID", 42454,	-- The Hammer of Khaz'goroth
+						"questID", 43349,	-- The Aegis of Aggramar
+						"questID", 42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						"questID", 40890,	-- The Tears of Elune
+						"questID", 45420,	-- The Nighthold: The Eye of Aman'Thul
 					},
 				}),
 				q(45185, {	-- Message from the Shadows
@@ -817,13 +833,21 @@ _.Zones =
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
+					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
 					["sourceQuests"] = {
 						42454,	-- The Hammer of Khaz'goroth
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						40890,	-- The Tears of Elune
+						45420,	-- The Nighthold: The Eye of Aman'Thul
 					},
-					["description"] = "This quest is automatically offered after you find your first Pillar of Creation & may only be completed if you accept the Quest 'Stormheim' from Archmage Landon at 30.40 in Stormheim during Party Sync.",
+					["lockCriteria"] = { 2,
+						"questID", 42454,	-- The Hammer of Khaz'goroth
+						"questID", 43349,	-- The Aegis of Aggramar
+						"questID", 42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						"questID", 40890,	-- The Tears of Elune
+						"questID", 45420,	-- The Nighthold: The Eye of Aman'Thul
+					},
 				}),
 				q(48375, {	-- Primal Obliterum
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
@@ -913,6 +937,14 @@ _.Zones =
 						43349,	-- The Aegis of Aggramar
 						42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						40890,	-- The Tears of Elune
+						45420,	-- The Nighthold: The Eye of Aman'Thul
+					},
+					["lockCriteria"] = { 4,
+						"questID", 42454,	-- The Hammer of Khaz'goroth
+						"questID", 43349,	-- The Aegis of Aggramar
+						"questID", 42213,	-- Eye of Azshara: The Tidestone of Golganneth
+						"questID", 40890,	-- The Tears of Elune
+						"questID", 45420,	-- The Nighthold: The Eye of Aman'Thul
 					},
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor

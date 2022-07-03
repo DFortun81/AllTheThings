@@ -1411,6 +1411,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 124,	-- Riverpaw Brute
 				}),
 				i(1357, {	-- Captain Sander's Treasure Map
+					["coords"] = {
+						-- various common map locations where 'crs' may be found
+						{ 28.8, 72.8, WESTFALL },
+						{ 33.0, 83.6, WESTFALL },
+						{ 34.6, 85.4, WESTFALL },
+						{ 44.2, 9.6, WESTFALL },
+						{ 50.8, 10.6, WESTFALL },
+						{ 53.6, 11.6, WESTFALL },
+						{ 55.8, 8.0, WESTFALL },
+						{ 56.0, 9.8, WESTFALL },
+						{ 56.6, 9.2, WESTFALL },
+					},
 					["crs"] = {
 						126,	-- Murloc Coastrunner
 						458,	-- Murloc Hunter
