@@ -716,14 +716,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 					["g"] = {
-						i(106166),	-- Frostwolf Ringmail Armor
-						i(106142),	-- Frostwolf Scout's Tunic
-						i(106147),	-- Forstwolf Stalwart Chestpiece
-						i(106163),	-- Frostwolf Wind-Talker Robe
 						i(106153),	-- Karabor Honor Guard Chestplate
 						i(107314),	-- Karabor Sage Robe
 						i(106143),	-- Karabor Skirmisher Vest
 						i(106176),	-- Rangari Initiate Vest
+						i(106166, {	-- Frostwolf Ringmail Armor
+							["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
+						}),
+						i(106142, {	-- Frostwolf Scout's Tunic
+							["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
+						}),
+						i(106147, {	-- Forstwolf Stalwart Chestpiece
+							["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
+						}),
+						i(106163, {	-- Frostwolf Wind-Talker Robe
+							["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
+						}),
 					},
 				}),
 				q(33084, {	-- The Big Haul

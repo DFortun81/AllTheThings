@@ -979,10 +979,18 @@ _.Zones =
 						i(106134),	-- Frostwolf Scout's Armwraps
 						i(106145),	-- Frostwolf Stalwart Bracers
 						i(106158),	-- Frostwolf Wind-Talker Cuffs
-						i(106155),	-- Karabor Honor Guard Wristwraps - confirmed 14/10/21
-						i(106165),	-- Karabor Sage Wristwraps - confirmed 14/10/21
-						i(106144),	-- Karabor Skirmisher Wristwraps - confirmed 14/10/21
-						i(106178),	-- Rangari Initiate Wristwraps - confirmed 14/10/21
+						i(106155, {	-- Karabor Honor Guard Wristwraps
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(106165, {	-- Karabor Sage Wristwraps
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(106144, {	-- Karabor Skirmisher Wristwraps
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
+						i(106178, {	-- Rangari Initiate Wristwraps
+							["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
+						}),
 					},
 				}),
 				q(33526, {	-- These Colors Don't Run
