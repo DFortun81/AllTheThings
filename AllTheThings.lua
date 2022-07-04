@@ -302,6 +302,70 @@ local containsValue = function(dict, value)
 	end
 end
 
+-- Iterative Function Runner
+do
+local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+local QueueIndex = 1;
+
+-- maybe a coroutine directly which can be restarted without needing to be re-created?
+local FunctionRunnerCoroutine = function()
+	local i, perFrame = 1, Config.PerFrame;
+	local params;
+	local func = FunctionQueue[i];
+	while func do
+		perFrame = perFrame - 1;
+		params = ParameterBucketQueue[i];
+		if params then
+			app.PrintDebug("FunctionRunnerCoroutine.Run",i,params)
+			func(unpack(params));
+		else
+			app.PrintDebug("FunctionRunnerCoroutine.Run",i,ParameterSingleQueue[i])
+			func(ParameterSingleQueue[i]);
+		end
+		app.PrintDebug("FunctionRunnerCoroutine.Done",i)
+		if perFrame <= 0 then
+			app.PrintDebug("FunctionRunnerCoroutine.Yield")
+			coroutine.yield();
+			perFrame = Config.PerFrame;
+		end
+		i = i + 1;
+		func = FunctionQueue[i];
+	end
+	-- when done with all functions in the queue, reset the queue index and clear the queues of data
+	QueueIndex = 1;
+	wipe(FunctionQueue);
+	wipe(ParameterBucketQueue);
+	wipe(ParameterSingleQueue);
+	app.PrintDebug("FunctionRunnerCoroutine.End")
+end
+
+-- Provides a utility which will process a given number of functions each frame in a queue
+local FunctionRunner = {
+	-- Adds a function to be run with any necessary parameters
+	["Run"] = function(func, ...)
+		if type(func) ~= "function" then
+			error("Must be a 'function' type!")
+		end
+		FunctionQueue[QueueIndex] = func;
+		app.PrintDebug("FunctionRunner.Add",QueueIndex,...)
+		local arrs = select("#", ...);
+		if arrs == 1 then
+			ParameterSingleQueue[QueueIndex] = ...;
+		elseif arrs > 1 then
+			ParameterBucketQueue[QueueIndex] = { ... };
+		end
+		QueueIndex = QueueIndex + 1;
+		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
+	end,
+	-- Defines how many functions will be executed per frame
+	["SetPerFrame"] = function(count)
+		Config.PerFrame = math.max(1, tonumber(count) or 1);
+	end,
+};
+
+app.FunctionRunner = FunctionRunner;
+end
+
 -- Sorting Logic
 (function()
 local defaultComparison = function(a,b)
