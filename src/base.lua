@@ -26,7 +26,7 @@ app.PrintDebugPrior = function(...)
 		app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
 end
---[[] Performance Tracking section
+--[[ Performance Tracking section ]]
 (function()
 	app.__perf = {};
 	app.PrintPerf = function()
@@ -58,7 +58,7 @@ end
 		app.print("Cleared Performance Stats");
 	end
 end)(); --]]
--- app.DEBUG_PRINT = true;
+app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};

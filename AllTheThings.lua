@@ -143,7 +143,7 @@ app.PrintTable = function(t,depth)
 		print(p,tostring(t),"RECURSIVE");
 	end
 end
---[[
+--[[]]
 app.PrintMemoryUsage = function(...)
 	-- update memory value for ATT
 	UpdateAddOnMemoryUsage();
@@ -8027,7 +8027,7 @@ app.TryPopulateQuestRewards = function(questObject, force)
 	local questID = questObject and questObject.questID;
 	if not questID then
 		-- Update the group directly immediately since there's no quest to retrieve
-		-- app.PrintDebug("TPQR:No Quest")
+		app.PrintDebug("TPQR:No Quest")
 		questObject.retries = nil;
 		app.DirectGroupUpdate(questObject);
 		return;
@@ -8318,6 +8318,10 @@ local function RefreshQuestCompletionState(questID)
 			if CustomCollectQuests[questID] then
 				Callback(app.RefreshCustomCollectibility);
 			end
+		end
+		if app.DEBUG_PRINT then
+			app.PrintDebug("Update Quests")
+			app.PrintTable(UpdateQuestIDs)
 		end
 		UpdateRawIDs("questID", UpdateQuestIDs);
 		wipe(UpdateQuestIDs);
@@ -14108,7 +14112,7 @@ UpdateGroups = function(parent, g, window)
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then
-					-- print("update-doUpdate",group.doUpdate,"=>",group.hash)
+					app.PrintDebug("update-doUpdate",group.doUpdate,"=>",group.hash)
 					window.doUpdate = true;
 				end
 			else
@@ -14200,7 +14204,7 @@ local function DirectGroupUpdate(group)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.isQuestChain)
+		app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain);
 	end
 end
@@ -14671,10 +14675,11 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
+			-- app.PrintDebug("Update.ExpireTime", self.Suffix, force, got)
 			-- mark the popout to expire after 5 min from now if it is visible
 			if self:IsVisible() then
 				self.ExpireTime = time() + 300;
-				-- print(popout.Suffix,"set to expire",time() + 10)
+				app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
 			self:BaseUpdate(force or got, got);
 		end
@@ -15011,6 +15016,7 @@ function app:CreateMiniListForGroup(group)
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
+				-- app.PrintDebug("Update.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.AccountWideQuests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
@@ -15021,6 +15027,7 @@ function app:CreateMiniListForGroup(group)
 			end;
 			local oldRefresh = popout.Refresh;
 			popout.Refresh = function(self, ...)
+				-- app.PrintDebug("Refresh.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.AccountWideQuests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
@@ -16592,17 +16599,17 @@ local function UpdateWindow(self, force, got)
 			end
 			force = (force or self.HasPendingUpdate) and self:IsVisible();
 		end
-		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
+		app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				-- app.PrintDebug("UpdateGroups",self.Suffix)
+				app.PrintDebug("UpdateGroups",self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
-				-- app.PrintDebugPrior("Done")
+				app.PrintDebugPrior("Done")
 			end
 
 			-- Should the groups in this window be expanded prior to processing the rows for display
@@ -16651,7 +16658,7 @@ local function UpdateWindow(self, force, got)
 			local expireTime = self.ExpireTime;
 			-- print("check ExpireTime",self.Suffix,expireTime)
 			if expireTime and expireTime > 0 and expireTime < time() then
-				-- print("window is expired, removing from window cache")
+				app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
 				app.Windows[self.Suffix] = nil;
 			end
 		end
@@ -16898,7 +16905,7 @@ function app:GetDataCache()
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
-			-- app.PrintDebug("Top-Root-Set",key,val)
+			app.PrintDebug("Top-Root-Set",key,val)
 			if key == "visible" then
 				return;
 			end
@@ -17406,10 +17413,16 @@ function app:GetDataCache()
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
+	app.PrintMemoryUsage("Prime.Data Ready")
 	local primeWindow = app:GetWindow("Prime");
 	primeWindow:SetData(allData);
+	app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
+	app.PrintMemoryUsage()
+	app.PrintDebug("Begin Cache Prime")
 	CacheFields(allData);
+	app.PrintDebugPrior("Ended Cache Prime")
+	app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	allData = {};
@@ -17840,12 +17853,16 @@ function app:GetDataCache()
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
 
-		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
+	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
+	app.PrintDebug("Finished app.GetDataCache")
+	app.PrintMemoryUsage()
 	app.GetDataCache = function()
+		app.PrintDebug("Cached GetDataCache")
 		return app:GetWindow("Prime").data;
 	end
 	return allData;
 end
+end	-- Dynamic/Main Data
 
 -- Collection Window Creation
 app._RefreshData = function()
