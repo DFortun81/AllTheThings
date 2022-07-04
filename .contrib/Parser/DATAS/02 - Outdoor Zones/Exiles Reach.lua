@@ -1010,6 +1010,9 @@ _.Zones =
 				n(156676, {	-- Ogre Overseer
 					["coord"] = { 60.5, 60.0, 1409 },
 					["questID"] = 56051,
+					["groups"] = {
+						i(11847),	-- Battered Cloak
+					},
 				}),
 				n(156986, {	-- Ogre Taskmaster
 					["coords"] = {

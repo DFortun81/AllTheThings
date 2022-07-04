@@ -992,6 +992,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(65688),	-- Yetimus Maximus
 					},
 				}),
+				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
+					["qg"] = 44640,	-- High Warlord Cromush
+					["altQuests"] = { 27746 },	-- Empire of Dirt
+					["coords"] = {
+						{ 57.3, 10.1, SILVERPINE_FOREST },	-- Forsaken High Command
+						{ 44.8, 40.7, SILVERPINE_FOREST },	-- The Sepulcher
+						{ 52.2, 66.3, SILVERPINE_FOREST },	-- The Forsaken Front
+						{ 45.3, 84.3, SILVERPINE_FOREST },	-- The Battlefront
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 			}),
 			n(RARES, {
 				n(50335, {	-- Alitus

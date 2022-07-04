@@ -145,6 +145,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131630),	-- Treads of Renewed Growth
 					},
 				}),
+				q(5901, {	-- A Plague Upon Thee
+					["qg"] = 11615,	-- Mickey Levine
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(5902, {	-- A Plague Upon Thee
+					["qg"] = 11615,	-- Mickey Levine
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(6390, {	-- A Plague Upon Thee
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -197,6 +207,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131656),	-- Chillwind Breeches
 					},
 				}),
+				q(5098, {	-- All Along the Watchtowers
+					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27171, {	-- Ambushed!
 					["coord"] = { 53.7, 80.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -239,6 +255,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						27202,	-- Brother Against Brother
 						27201,	-- Val'kyr Incursion
+					},
+				}),
+				q(5405, {	-- Argent Dawn Commission
+					["qg"] = 10839,	-- Argent Officer Garush
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
 					},
 				}),
 				q(5401, {	-- Argent Dawn Commission
@@ -354,10 +378,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131623),	-- Ravensun Gloves
 					},
 				}),
+				q(5406, {	-- Corruptor's Scourgestones
+					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.18, 68.45, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+					},
+				}),
 				q(4972, {	-- Counting Out Time
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
 					["sourceQuest"] = 4971,	-- A Matter of Time
+				}),
+				q(9444, {	-- Defiling Uther's Tomb
+					["qg"] = 17099,	-- Mehlar Dawnblade
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27054, {	-- Desperate Acts
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
@@ -368,6 +406,38 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27156,	-- It's About Time!
+				}),
+				q(26933, {	-- Foes Before Hoes
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 26931,	-- Foxes and Hounds
+					["coord"] = { 83.3, 69.8, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+				}),
+				q(26931, {	-- Foxes and Hounds
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["coord"] = { 83.3, 69.8, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						i(62161, {	-- Bullmastiff Vest
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(62163, {	-- Fox Hunter's Rifle
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(62162, {	-- Territorial Helm
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(131622, {	-- Whitetail Fox Tunic
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(62160, {	-- Vandis' Band
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
 				}),
 				q(27053, {	-- Gahrron's Withering Cauldron
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
@@ -411,6 +481,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
+				q(5403, {	-- Invader's Scourgestones [H]
+					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.18, 68.45, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+					},
+				}),
 				q(27683, {	-- Into the Woods
 					["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 					["providers"] = {
@@ -427,6 +506,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(27156, {	-- It's About Time!
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
+				}),
+				q(26934, {	-- Latent Disease
+					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 26930,	-- After the Crusade
+					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(27000, {	-- Learning the Ropes
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
@@ -454,6 +541,23 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						un(REMOVED_FROM_GAME, i(13475)),	-- Dalson Family Wedding Ring
 					},
 				}),
+				q(26936, {	-- Lower the Boom
+					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuests"] = {
+						26930,	-- After the Crusade
+						26933,	-- Foes Before Hoes
+						26978,	-- Who Needs Cauldrons?
+					},
+					["coord"] = { 83.3, 69.0, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+				}),
+				q(5504, {	-- Mantles of the Dawn
+					["qg"] = 10856,	-- Argent Quartermaster Hasana
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(5507, {	-- Mantles of the Dawn
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
@@ -472,6 +576,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131632),	-- Dusty Gahrron Chainmail
 					},
 				}),
+				q(5408, {	-- Minion's Scourgestones
+					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.18, 68.45, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						i(12844, {	-- Argent Dawn Valor Token
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
 				q(5402, {	-- Minion's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
@@ -479,6 +594,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+					},
+				}),
+				q(5237, {	-- Mission Accomplished!
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(15799)),	-- Heroic Commendation Medal
+						un(REMOVED_FROM_GAME, i(15800)),	-- Intrepid Shortsword
+						un(REMOVED_FROM_GAME, i(15801)),	-- Valiant Shortsword
 					},
 				}),
 				q(5238, {	-- Mission Accomplished!
@@ -499,6 +623,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 26999,	-- A New Era for the Plaguelands
 					["isBreadcrumb"] = true,	-- for "Learning the Ropes"
+				}),
+				q(10590, {	-- Prove Your Hatred
+					["qg"] = 17099,	-- Mehlar Dawnblade
+					["sourceQuest"] = 9601,	-- To The Bulwark
+					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
+					["maps"] = { UNDERCITY },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(27011, {	-- Redpine Thievery
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
@@ -532,6 +667,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.5, 58.5, WESTERN_PLAGUELANDS },
 					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
+				}),
+				q(5096, {	-- Scarlet Diversions
+					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuests"] = {
+						5093,	-- A Call to Arms: The Plaguelands!
+						5094,	-- A Call to Arms: The Plaguelands!
+						5095,	-- A Call to Arms: The Plaguelands!
+					},
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27162, {	-- Scholomancer (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
@@ -589,6 +734,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						28749,	-- The Battle for Andorhal (War-Mage Erallier, STV)
 					},
 				}),
+				q(26979, {	-- Strange New Faces
+					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 26936,	-- Lower the Boom
+					["coord"] = { 83.3, 69.0, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+				}),
 				q(27055, {	-- Students of Krastinov
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
@@ -632,6 +785,30 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27002,	-- An Audience With the Highlord
+				}),
+				q(5231, {	-- Target: Dalson's Tears
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5230,	-- Return to the Bulwark
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(5229, {	-- Target: Felstone Field
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5228,	-- The Scourge Cauldrons
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(5235, {	-- Target: Gahrron's Withering
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5234,	-- Return to the Bulwark
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(5233, {	-- Target: Writhing Haunt
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5232,	-- Return to the Bulwark
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27170, {	-- The Abandoned Crypt
 					["provider"] = { "n", 1854 },	-- High Priest Thel'danis
@@ -749,6 +926,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27174,	-- Combat Training
 					["isBreadcrumb"] = true,
 				}),
+				q(26952, {	-- The Menders' Stead
+					["qg"] = 10839,	-- Argent Officer Garush
+					["sourceQuest"] = 26933,	-- Foes before Hoes
+					["coord"] = { 83.1, 68.4, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
+					["lvl"] = 35,
+				}),
+				q(27150, {	-- The Menders' Stead
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27175, {	-- The Menders' Stead
 					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
 					["coord"] = { 42.9, 83.5, WESTERN_PLAGUELANDS },
@@ -769,6 +961,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(62223),	-- Dagger of Andorhal
 						i(131641),	-- Andorhal Chain Leggings
 					},
+				}),
+				q(5228, {	-- The Scourge Cauldrons
+					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(9443, {	-- The So-Called Mark of the Lightbringer
+					["qg"] = 17099,	-- Mehlar Dawnblade
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4984, {	-- The Wildlife Suffers Too
 					["u"] = REMOVED_FROM_GAME,
@@ -810,6 +1013,20 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						27167,	-- A Mighty Hunger
 						27166,	-- Go Fletch!
 					},
+				}),
+				q(9601, {	-- To The Bulwark
+					["qgs"] = {
+						16681,	-- Champion Bachi <Paladin Trainer>
+						20406,	-- Champion Cyssa Dawnrose <Paladin Trainer>
+					},
+					["coords"] = {
+						{ 92.0, 37.6, SILVERMOON_CITY },
+						{ 57.8, 90.8, UNDERCITY },
+					},
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(27013, {	-- Too Close for Comfort
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
@@ -917,6 +1134,32 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.6, 52.0, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26979,	-- Strange New Faces
+				}),
+				q(26978, {	-- Who Needs Cauldrons?
+					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 26934,	-- Latent Disease
+					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						i(62171),	-- Cloak of the Salted Earth
+						i(62169),	-- Dithering Belt
+						i(62170),	-- Plague Cauldron Lid
+					},
+				}),
+				q(10592, {	-- Wisdom of the Banshee Queen
+					["providers"] = {
+						{ "n", 17099 },	-- Mehlar Dawnblade
+						{ "i", 30700 },	-- Scourgestone Fragments
+					},
+					["sourceQuest"] = 10590,	-- Prove Your Hatred
+					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["maps"] = { UNDERCITY },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(26953, {	-- Zen'Kiki, the Druid
 					["provider"] = { "n", 44456 },	-- Adrine Towhide

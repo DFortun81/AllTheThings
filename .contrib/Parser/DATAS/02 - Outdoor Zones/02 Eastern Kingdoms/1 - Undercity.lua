@@ -356,6 +356,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 8403 },	-- Jeremiah Payson
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(1478, {	-- Halgar's Summons
+					["qg"] = 5724,	-- Ageron Kargal
+					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
+					["altQuests"] = { 1506 },	-- Gan'rul's Summons
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["lvl"] = 10,
+				}),
 				q(243, {	-- Into the Field
 					["sourceQuests"] = { 238 },	-- Errand for Apothecary Zinge
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
@@ -419,12 +428,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(1959, {	-- Report to Anastasia
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(366, {	-- Return the Book
-					["sourceQuests"] = { 357 },	-- The Lich's Identity
-					["provider"] = { "n", 1498 },	-- Bethor Iceshard
-					["races"] = { ORC, UNDEAD, TROLL },
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6324, {	-- Return to Morris
@@ -539,12 +542,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(5049, {	-- The Jeremiah Blues
 					["sourceQuests"] = { 5023 },	-- Better Late Than Never
 					["provider"] = { "n", 10781 },	-- Royal Overseer Bauhaus
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(357, {	-- The Lich's Identity
-					["sourceQuests"] = { 405 },	-- The Prodigal Lich
-					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),

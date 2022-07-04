@@ -30,7 +30,6 @@ q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speakin
 q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
 q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(363),	-- Rude Awakening,		TBC: Rude Awakening,		CLASSIC: Rude Awakening
 q(389),	-- Bazil Thredd,		TBC: Bazil Thredd,		CLASSIC: Bazil Thredd
 q(392),	-- The Curious Visitor,		TBC: The Curious Visitor,		CLASSIC: The Curious Visitor
 q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the Past
@@ -222,12 +221,10 @@ q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1461),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1465),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
 q(1466),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
-q(1470),	-- Piercing the Veil,		TBC: Piercing the Veil,		CLASSIC: Piercing the Veil
 q(1471),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1472),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1473),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
 q(1476),	-- Hearts of the Pure,		TBC: Hearts of the Pure,		CLASSIC: Hearts of the Pure
-q(1478),	-- Halgar's Summons,		TBC: Halgar's Summons,		CLASSIC: Halgar's Summons
 q(1498),	-- Path of Defense,		TBC: Path of Defense,		CLASSIC: Path of Defense
 q(1501),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
 q(1502),	-- Thun'grim Firegaze,		TBC: Thun'grim Firegaze,		CLASSIC: Thun'grim Firegaze
@@ -303,11 +300,6 @@ q(1799),	-- Fragments of the Orb of Orahil,		TBC: Fragments of the Orb of Orahil
 q(1801),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1803),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1805),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
-q(1818),	-- Speak with Dillinger,		TBC: Speak with Dillinger,		CLASSIC: Speak with Dillinger
-q(1819),	-- Ulag the Cleaver,		TBC: Ulag the Cleaver,		CLASSIC: Ulag the Cleaver
-q(1820),	-- Speak with Coleman,		TBC: Speak with Coleman,		CLASSIC: Speak with Coleman
-q(1821),	-- Agamand Heirlooms,		TBC: Agamand Heirlooms,		CLASSIC: Agamand Heirlooms
-q(1881),	-- Speak with Anastasia,		TBC: Speak with Anastasia,		CLASSIC: Speak with Anastasia
 q(1885),	-- Mennet Carkad,		TBC: Mennet Carkad,		CLASSIC: Mennet Carkad
 q(1886),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
 q(1898),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
@@ -568,7 +560,6 @@ q(5644),	-- Devouring Plague,		TBC: Devouring Plague,		CLASSIC: Devouring Plague
 q(5645),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5646),	-- Devouring Plague,		TBC: Devouring Plague,		CLASSIC: Devouring Plague
 q(5647),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
-q(5651),	-- In Favor of Darkness,		TBC: In Favor of Darkness,		CLASSIC: In Favor of Darkness
 q(5652),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5653),	-- <NYI> Hex of Weakness,		CLASSIC: <NYI> Hex of Weakness
 q(5654),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
