@@ -5643,6 +5643,9 @@ fieldConverters = {
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
+	["otherQuestData"] = function(group, value)
+		CacheFields(value);
+	end,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
@@ -8192,8 +8195,25 @@ app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 app.CreateQuestWithFactionData = function(t)
-	local questData = app.FactionID == Enum.FlightPathFaction.Horde and t.hqd or t.aqd;
+	local questData, otherQuestData;
+	if app.FactionID == Enum.FlightPathFaction.Horde then
+		questData = t.hqd;
+		otherQuestData = t.aqd;
+		otherQuestData.r = Enum.FlightPathFaction.Alliance;
+	else
+		questData = t.aqd;
+		otherQuestData = t.hqd;
+		otherQuestData.r = Enum.FlightPathFaction.Horde;
+	end
+	
+	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
+	--for key,value in pairs(t) do otherQuestData[key] = value; end
+	setmetatable(otherQuestData, { __index = t });
+	rawset(t, "otherQuestData", otherQuestData);
+	
+	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
+	rawset(t, "r", app.FactionID);
 	return setmetatable(t, app.BaseQuest);
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
