@@ -301,6 +301,11 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+local indexOf = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return i; end
+	end
+end
 
 -- Sorting Logic
 (function()
@@ -8207,14 +8212,42 @@ app.CreateQuestWithFactionData = function(t)
 	end
 	
 	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
-	--for key,value in pairs(t) do otherQuestData[key] = value; end
-	setmetatable(otherQuestData, { __index = t });
-	rawset(t, "otherQuestData", otherQuestData);
 	
 	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
 	rawset(t, "r", app.FactionID);
-	return setmetatable(t, app.BaseQuest);
+	local original = setmetatable(t, app.BaseQuest);
+	if not otherQuestData.questID or otherQuestData.questID == original.questID then
+		setmetatable(otherQuestData, { __index = t });
+		rawset(t, "otherQuestData", otherQuestData);
+		return original;
+	else
+		setmetatable(otherQuestData, app.BaseQuest);
+		for key,value in pairs(t) do
+			if not rawget(otherQuestData, key) then
+				rawset(otherQuestData, key, value);
+			end
+		end
+		print("Returning ", original.questID, otherQuestData.questID);
+		local oldOnUpdate = original.OnUpdate;
+		original.OnUpdate = function(t)
+			otherQuestData.parent = t.parent;
+			CacheFields(otherQuestData);
+			local index = indexOf(t.parent.g, t);
+			if index then
+				tinsert(t.parent.g, index + 1, otherQuestData);
+			else
+				tinsert(t.parent.g, otherQuestData);
+			end
+			if oldOnUpdate then
+				t.OnUpdate = oldOnUpdate;
+				return oldOnUpdate(t);
+			else
+				t.OnUpdate = nil;
+			end
+		end
+		return original;
+	end
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
