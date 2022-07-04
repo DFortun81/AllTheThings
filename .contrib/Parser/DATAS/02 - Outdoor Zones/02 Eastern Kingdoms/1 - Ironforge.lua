@@ -107,14 +107,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(54, {	-- Gnomeregan Exiles
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Male",
+					-- #else
 					["icon"] = asset("Achievement_Character_Gnome_Male"),
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(47, {	-- Ironforge
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
+					-- #else
 					["icon"] = asset("Achievement_Character_Dwarf_Male"),
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
