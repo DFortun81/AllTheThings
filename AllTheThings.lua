@@ -7641,7 +7641,6 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local QuestsRequested = {};
-local QuestsRequestQueue = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
@@ -7672,38 +7671,17 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		app.TryPopulateQuestRewards(data, retries > 10);
 	end
 end
--- Used as a callback to process Requested Quests, since we may need the frame to complete so that the initial quest groups are built properly
--- prior to attempting to pass them updates
-local function CoroutineProcessRequestedQuests()
-	local perFrameThrottle = 0;
-	local i = 1;
-	local questID = QuestsRequestQueue[i];
-	while questID do
-		perFrameThrottle = perFrameThrottle + 1;
-		i = i + 1;
-		C_QuestLog_RequestLoadQuestByID(questID);
-		-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
-		if perFrameThrottle >= 25 then
-			perFrameThrottle = 0;
-			coroutine.yield();
-		end
-		-- grab next quest from the queue
-		questID = QuestsRequestQueue[i];
-	end
-	-- clear the queue
-	wipe(QuestsRequestQueue);
-end
 -- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 -- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 app.RequestLoadQuestByID = function(questID, data)
+	-- requests for quest information may process at 20 per frame
+	app.FunctionRunner.SetPerFrame(20);
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
 		QuestsToPopulate[questID] = data;
-		tinsert(QuestsRequestQueue, questID);
-		-- callback to process all requested quests next frame
-		StartCoroutine("CoroutineProcessRequestedQuests", CoroutineProcessRequestedQuests);
+		app.FunctionRunner.Run(C_QuestLog_RequestLoadQuestByID, questID);
 	end
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
