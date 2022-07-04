@@ -16792,11 +16792,11 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 end)();
 
+do	-- Dynamic/Main Data
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
-app.DynamicCategory_Simple = function(self)
-	self.OnUpdate = nil;
+local DynamicCategory_Simple = function(self)
 	if fieldCache[self.dynamic] then
 		local rootATT = app:GetWindow("Prime").data;
 		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
@@ -16836,15 +16836,16 @@ app.DynamicCategory_Simple = function(self)
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected
 		app.CacheFields(self);
+		-- run a direct update on itself after being populated
+		app.FunctionRunner.Run(app.DirectGroupUpdate, self);
 	else
-		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
+		app.print("Failed to build Simple Dynamic Category for:",self.dynamic);
 	end
 end
 
 -- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
-app.DynamicCategory_Nested = function(self)
-	self.OnUpdate = nil;
+local DynamicCategory_Nested = function(self)
 	-- dynamic groups are ignored for the source tooltips
 	self.sourceIgnored = true;
 	-- change the text color of the dynamic group to help indicate it is not included in the window total
@@ -16857,18 +16858,32 @@ app.DynamicCategory_Nested = function(self)
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected
 	app.CacheFields(self);
+	-- run a direct update on itself after being populated
+	app.FunctionRunner.Run(app.DirectGroupUpdate, self);
 end
 function app:GetDataCache()
+	app.PrintDebug("Start app.GetDataCache")
+	app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
-	-- copy the function which will handle the desired Dynamic style for this session
-	app.FillDynamicGroup = (dynamicSetting == 2 and app.DynamicCategory_Nested) or
-						   (dynamicSetting == 1 and app.DynamicCategory_Simple) or nil;
+	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
+					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
+	-- filling the dynamic group will be handled by the FunctionRunner so that many groups can be handled simultaneously and spread over multiple game frames automatically to reduce lag spikes
+	local DynamicOnUpdate = function(self)
+		self.OnUpdate = nil;
+		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
+		app.FunctionRunner.SetPerFrame(1);
+		-- run a direct update on itself after being populated if the Filler exists
+		if Filler then
+			app.FunctionRunner.Run(Filler, self);
+		end
+	end
+
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
 		group.dynamic_value = value;
-		group.OnUpdate = app.FillDynamicGroup;
+		group.OnUpdate = DynamicOnUpdate;
 		return group;
 	end
 	-- Update the Row Data by filtering raw data (this function only runs once)
