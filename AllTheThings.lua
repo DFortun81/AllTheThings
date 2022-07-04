@@ -8228,7 +8228,6 @@ app.CreateQuestWithFactionData = function(t)
 				rawset(otherQuestData, key, value);
 			end
 		end
-		print("Returning ", original.questID, otherQuestData.questID);
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
 			otherQuestData.parent = t.parent;
