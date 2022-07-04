@@ -74,37 +74,38 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					q(5803, {	-- Araj's Scarab [Alliance]
-						["qg"] = 11056,	-- Alchemist Arbington
-						["sourceQuest"] = 5801,	-- Fire Plume Forged [Alliance]
-						["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
+					{	-- Araj's Scarab
+						["allianceQuestData"] = q(5803, {	-- Araj's Scarab [A]
+							["qg"] = 11056,	-- Alchemist Arbington
+							["sourceQuest"] = 5801,	-- Fire Plume Forged [Alliance]
+							["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
+						}),
+						["hordeQuestData"] = q(5804, {	-- Araj's Scarab [H]
+							["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
+							["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+							["maps"] = { WESTERN_PLAGUELANDS },
+						}),
 						["timeline"] = { "removed 4.0.3" },
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 55,
 						["groups"] = {
 							objective(1, {	-- 0/1 Araj's Scarab
 								["provider"] = { "i", 14610 },	-- Araj's Scarab
+								["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
+								["cr"] = 1852,	-- Araj the Summoner
 							}),
 						},
-					}),
-					q(5804, {	-- Araj's Scarab [Horde]
-						["qg"] = 11057,	-- Apothecary Dithers
-						["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
-						["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+					},
+					{	-- Barov Family Fortune
+						["allianceQuestData"] = q(5343, {	-- Barov Family Fortune [A]
+							["qg"] = 11023,	-- Weldon Barov <House of Barov>
+							["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
+						}),
+						["hordeQuestData"] = q(5341, {	-- Barov Family Fortune [H]
+							["qg"] = 11022,	-- Alexi Barov <House of Barov>
+							["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
+							["maps"] = { WESTERN_PLAGUELANDS },
+						}),
 						["timeline"] = { "removed 4.0.3" },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 55,
-						["groups"] = {
-							objective(1, {	-- 0/1 Araj's Scarab
-								["provider"] = { "i", 14610 },	-- Araj's Scarab
-							}),
-						},
-					}),
-					q(5343, {	-- Barov Family Fortune [Alliance]
-						["qg"] = 11023,	-- Weldon Barov <House of Barov>
-						["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
-						["timeline"] = { "removed 4.0.3" },
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 52,
 						["groups"] = {
 							objective(1, {	-- 0/1 The Deed to Brill
@@ -120,28 +121,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
 							}),
 						},
-					}),
-					q(5341, {	-- Barov Family Fortune [Horde]
-						["qg"] = 11022,	-- Alexi Barov <House of Barov>
-						["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 52,
-						["groups"] = {
-							objective(1, {	-- 0/1 The Deed to Brill
-								["provider"] = { "i", 13471 },	-- The Deed to Brill
-							}),
-							objective(2, {	-- 0/1 The Deed to Caer Darrow
-								["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
-							}),
-							objective(3, {	-- 0/1 The Deed to Southshore
-								["provider"] = { "i", 13450 },	-- The Deed to Southshore
-							}),
-							objective(4, {	-- 0/1 The Deed to Tarren Mill
-								["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
-							}),
-						},
-					}),
+					},
 					q(27143, {	-- Barov Family Fortune [CATA]
 						["qg"] = 45109,	-- Weldon Barov <House of Barov>
 						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
@@ -233,13 +213,17 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					q(5801, {	-- Fire Plume Forged [Alliance]
+					{	-- Fire Plume Forged
+						["allianceQuestData"] = q(5801, {	-- Fire Plume Forged [A]
+							["sourceQuest"] = 5538,	-- Mold Rhymes With... [Alliance]
+						}),
+						["hordeQuestData"] = q(5802, {	-- Fire Plume Forged [H]
+							["sourceQuest"] = 5514,	-- Mold Rhymes With... [Horde]
+						}),
 						["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
-						["sourceQuest"] = 5538,	-- Mold Rhymes With... [Alliance]
 						["coord"] = { 51.5, 28.8, TANARIS },
 						["timeline"] = { "removed 4.0.3" },
 						["maps"] = { UNGORO_CRATER },
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 55,
 						["groups"] = {
 							objective(1, {	-- 0/1 Unfinished Skeleton Key
@@ -251,26 +235,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								},
 							}),
 						},
-					}),
-					q(5802, {	-- Fire Plume Forged [Horde]
-						["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
-						["sourceQuest"] = 5514,	-- Mold Rhymes With... [Horde]
-						["coord"] = { 51.5, 28.8, TANARIS },
-						["timeline"] = { "removed 4.0.3" },
-						["maps"] = { UNGORO_CRATER },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 55,
-						["groups"] = {
-							objective(1, {	-- 0/1 Unfinished Skeleton Key
-								["provider"] = { "i", 14645 },	-- Unfinished Skeleton Key
-								["coord"] = { 49.6, 47.6, UNGORO_CRATER },
-								["cost"] = {
-									{ "i", 14644, 1 },	-- Skeleton Key Mold
-									{ "i", 12359, 2 },	-- Thorium Bar
-								},
-							}),
-						},
-					}),
+					},
 					q(5582, {	-- Healthy Dragon Scale
 						["provider"] = { "i", 13920 },	-- Healthy Dragon Scale
 						["sourceQuest"] = 5529,	-- Plagued Hatchlings
@@ -376,30 +341,25 @@ root("Instances", tier(CLASSIC_TIER, {
 						["maps"] = { STRATHOLME },
 						["lvl"] = 57,
 					}),
-					q(5538, {	-- Mold Rhymes With... [Alliance]
-						["qg"] = 11056,	-- Alchemist Arbington
-						["sourceQuest"] = 5537,	-- Skeletal Fragments [Alliance]
-						["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+					{	-- Mold Rhymes With...
+						["allianceQuestData"] = q(5538, {	-- Mold Rhymes With... [A]
+							["qg"] = 11056,	-- Alchemist Arbington
+							["sourceQuest"] = 5537,	-- Skeletal Fragments [Alliance]
+							["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+						}),
+						["hordeQuestData"] = q(5514, {	-- Mold Rhymes With... [H]
+							["qg"] = 11057,	-- Apothecary Dithers
+							["sourceQuest"] = 964,	-- Skeletal Fragments [Horde]
+							["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+							["maps"] = { WESTERN_PLAGUELANDS },
+						}),
 						["timeline"] = { "removed 4.0.3" },
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = {
 							{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
 							{ "g", 150000 },	-- 15g
 						},
 						["lvl"] = 55,
-					}),
-					q(5514, {	-- Mold Rhymes With... [Horde]
-						["qg"] = 11057,	-- Apothecary Dithers
-						["sourceQuest"] = 964,	-- Skeletal Fragments [Horde]
-						["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
-						["races"] = HORDE_ONLY,
-						["cost"] = {
-							{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
-							{ "g", 150000 },	-- 15g
-						},
-						["lvl"] = 55,
-					}),
+					},
 					q(5529, {	-- Plagued Hatchlings
 						["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 						["coord"] = { 81.47, 59.66, EASTERN_PLAGUELANDS },
@@ -462,33 +422,34 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					q(5537, {	-- Skeletal Fragments [Alliance]
-						["qg"] = 11056,	-- Alchemist Arbington
-						["sourceQuest"] = 5533,	-- Scholomance [Alliance]
-						["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+					{	-- Skeletal Fragments
+						["allianceQuestData"] = q(5537, {	-- Skeletal Fragments [A]
+							["qg"] = 11056,	-- Alchemist Arbington
+							["sourceQuest"] = 5533,	-- Scholomance [Alliance]
+							["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+						}),
+						["hordeQuestData"] = q(964, {	-- Skeletal Fragments [H]
+							["qg"] = 11057,	-- Apothecary Dithers
+							["sourceQuest"] = 838,	-- Scholomance [Horde]
+							["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+							["maps"] = { WESTERN_PLAGUELANDS },
+						}),
 						["timeline"] = { "removed 4.0.3" },
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 55,
 						["groups"] = {
 							objective(1, {	-- 0/15 Skeletal Fragments
 								["provider"] = { "i", 14619 },	-- Skeletal Fragments
+								["crs"] = {
+									1789,	-- Skeletal Acolyte
+									1787,	-- Skeletal Executioner
+									1783,	-- Skeletal Flayer
+									1784,	-- Skeletal Sorcerer
+									1785,	-- Skeletal Terror
+									1788,	-- Skeletal Warlord
+								},
 							}),
 						},
-					}),
-					q(964, {	-- Skeletal Fragments [Horde]
-						["qg"] = 11057,	-- Apothecary Dithers
-						["sourceQuest"] = 838,	-- Scholomance [Horde]
-						["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
-						["maps"] = { WESTERN_PLAGUELANDS },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 55,
-						["groups"] = {
-							objective(1, {	-- 0/15 Skeletal Fragments
-								["provider"] = { "i", 14619 },	-- Skeletal Fragments
-							}),
-						},
-					}),
+					},
 					q(5465, {	-- Soulbound Keepsake
 						["providers"] = {
 							{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
@@ -571,32 +532,26 @@ root("Instances", tier(CLASSIC_TIER, {
 							}),
 						},
 					}),
-					q(5505, {	-- The Key to Scholomance [Alliance]
-						["qg"] = 10838,	-- Commander Ashlam Valorfist
-						["sourceQuest"] = 5803,	-- Araj's Scarab
-						["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+					{	-- The Key to Scholomance
+						["allianceQuestData"] = q(5505, {	-- The Key to Scholomance [A]
+							["qg"] = 10838,	-- Commander Ashlam Valorfist
+							["sourceQuest"] = 5803,	-- Araj's Scarab
+							["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+						}),
+						["hordeQuestData"] = q(5511, {	-- The Key to Scholomance [H]
+							["qg"] = 10837,	-- High Executor Derrington
+							["sourceQuest"] = 5804,	-- Araj's Scarab
+							["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+							["maps"] = { WESTERN_PLAGUELANDS },
+						}),
 						["timeline"] = { "removed 4.0.3" },
-						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 55,
 						["groups"] = {
 							i(13704, {	-- Skeleton Key
 								["timeline"] = { "deleted 4.0.3" },
 							}),
 						},
-					}),
-					q(5511, {	-- The Key to Scholomance [Horde]
-						["qg"] = 10837,	-- High Executor Derrington
-						["sourceQuest"] = 5804,	-- Araj's Scarab
-						["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
-						["timeline"] = { "removed 4.0.3" },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 55,
-						["groups"] = {
-							i(13704, {	-- Skeleton Key
-								["timeline"] = { "deleted 4.0.3" },
-							}),
-						},
-					}),
+					},
 					q(5344, {	-- The Last Barov [Alliance]
 						["qg"] = 11023,	-- Weldon Barov <House of Barov>
 						["sourceQuest"] = 5343,	-- Barov Family Fortune [Alliance]

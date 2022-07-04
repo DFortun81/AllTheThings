@@ -528,14 +528,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131670),	-- Cinch of Good Will
 					},
 				}),
-				q(4971, {	-- A Matter of Time
-					["provider"] = { "n", 10667 },	-- Chromie
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(15813)),	-- Gold Link Belt
-						un(REMOVED_FROM_GAME, i(15812)),	-- Orchid Amice
-					},
-				}),
 				q(27386, {	-- A Strange Historian
 					["sourceQuests"] = { 27385 },	-- "Little Pamela"
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
@@ -596,6 +588,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 27463 },	-- A Boyhood Dream
 					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 43.3, 87.2, LIGHTS_HOPE_CHAPEL },
+				}),
+				q(5503, {	-- Argent Dawn Commission
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
+					},
 				}),
 				q(27618, {	-- Argent Upheaval
 					["sourceQuests"] = {
@@ -713,9 +712,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(5508, {	-- Corruptor's Scourgestones
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["coord"] = { 75.76, 53.81, EASTERN_PLAGUELANDS },
-					["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 4.0.3
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						i(12844, {	-- Argent Dawn Valor Token
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27531, {	-- Counter-Plague Research
@@ -980,9 +981,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(5509, {	-- Invader's Scourgestones
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
-					["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 4.0.3
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						i(12844, {	-- Argent Dawn Valor Token
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27487, {	-- Ix'lar the Underlord
@@ -1067,9 +1070,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(5510, {	-- Minion's Scourgestones
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
-					["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 4.0.3
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token	-- Removed in Patch 4.0.3
+						i(12844, {	-- Argent Dawn Valor Token
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27489, {	-- Nobody to Blame but Myself
@@ -1284,6 +1289,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						45868,	-- Karthis Darkrune
 						45867,	-- Omasum Blighthoof
 					},
+				}),
+				q(5721, {	-- The Battle of Darrowshire
+					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 5941,	-- Return to Chromie
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27390, {	-- The Battle of Darrowshire
 					["sourceQuests"] = {
@@ -1540,6 +1550,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(50813, {	-- Fene-mal
 					["coord"] = { 49.6, 43.2, EASTERN_PLAGUELANDS },
 				}),
+				-- #if AFTER CATA
 				n(1843, {	-- Foreman Jerris
 					["coord"] = { 55.2, 68.6, EASTERN_PLAGUELANDS },
 				}),
@@ -1549,6 +1560,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(12836),	-- Plans: Frostguard
 					},
 				}),
+				-- #endif
 				n(10825, {	-- Gish the Unmoving
 					["coord"] = { 25.8, 68.0, EASTERN_PLAGUELANDS },
 				}),

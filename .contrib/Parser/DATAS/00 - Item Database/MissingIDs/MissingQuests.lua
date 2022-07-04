@@ -489,12 +489,6 @@ q(4967),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil
 q(4968),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
 q(4969),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
 q(4976),	-- Returning the Cleansed Orb,		TBC: Returning the Cleansed Orb,		CLASSIC: Returning the Cleansed Orb
-q(5048),	-- Good Natured Emma,		TBC: Good Natured Emma,		CLASSIC: Good Natured Emma
-q(5066),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!,		CLASSIC: A Call to Arms: The Plaguelands!
-q(5090),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!,		CLASSIC: A Call to Arms: The Plaguelands!
-q(5091),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!,		CLASSIC: A Call to Arms: The Plaguelands!
-q(5092),	-- Clear the Way,		TBC: Clear the Way,		CLASSIC: Clear the Way
-q(5097),	-- All Along the Watchtowers,		TBC: All Along the Watchtowers,		CLASSIC: All Along the Watchtowers
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!,		TBC: Lee's Ultimate Test Quest... of Doom!,		CLASSIC: Lee's Ultimate Test Quest... of Doom!
 q(5141),	-- Dragonscale Leatherworking,		TBC: Dragonscale Leatherworking,		CLASSIC: Dragonscale Leatherworking
 q(5143),	-- Tribal Leatherworking,		TBC: Tribal Leatherworking,		CLASSIC: Tribal Leatherworking
@@ -507,15 +501,6 @@ q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
 q(5208),	-- <NYI> <TXT> The Blessing of Evil,		TBC: <NYI> <TXT> The Blessing of Evil,		CLASSIC: <NYI> <TXT> The Blessing of Evil
 q(5209),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5215),	-- The Scourge Cauldrons,		TBC: The Scourge Cauldrons,		CLASSIC: The Scourge Cauldrons
-q(5216),	-- Target: Felstone Field,		TBC: Target: Felstone Field,		CLASSIC: Target: Felstone Field
-q(5217),	-- Return to Chillwind Camp,		TBC: Return to Chillwind Camp,		CLASSIC: Return to Chillwind Camp
-q(5219),	-- Target: Dalson's Tears,		TBC: Target: Dalson's Tears,		CLASSIC: Target: Dalson's Tears
-q(5220),	-- Return to Chillwind Camp,		TBC: Return to Chillwind Camp,		CLASSIC: Return to Chillwind Camp
-q(5222),	-- Target: Writhing Haunt,		TBC: Target: Writhing Haunt,		CLASSIC: Target: Writhing Haunt
-q(5223),	-- Return to Chillwind Camp,		TBC: Return to Chillwind Camp,		CLASSIC: Return to Chillwind Camp
-q(5225),	-- Target: Gahrron's Withering,		TBC: Target: Gahrron's Withering,		CLASSIC: Target: Gahrron's Withering
-q(5226),	-- Return to Chillwind Camp,		TBC: Return to Chillwind Camp,		CLASSIC: Return to Chillwind Camp
 q(5244),	-- [DEPRECATED]The Ruins of Kel'Theril,		TBC: The Ruins of Kel'Theril,		CLASSIC: The Ruins of Kel'Theril
 q(5245),	-- [DEPRECATED]Troubled Spirits of Kel'Theril,		TBC: Troubled Spirits of Kel'Theril,		CLASSIC: Troubled Spirits of Kel'Theril
 q(5246),	-- Fragments of the Past,		TBC: Fragments of the Past,		CLASSIC: Fragments of the Past
@@ -531,11 +516,8 @@ q(5304),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5506),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5512),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5516),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5517),	-- Chromatic Mantle of the Dawn,		TBC: Chromatic Mantle of the Dawn,		CLASSIC: Chromatic Mantle of the Dawn
 q(5520),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5521),	-- Chromatic Mantle of the Dawn,		TBC: Chromatic Mantle of the Dawn,		CLASSIC: Chromatic Mantle of the Dawn
 q(5523),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5524),	-- Chromatic Mantle of the Dawn,		TBC: Chromatic Mantle of the Dawn,		CLASSIC: Chromatic Mantle of the Dawn
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
 q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
@@ -621,8 +603,6 @@ q(5709),	-- <NYI> Flirting With Darkness,		CLASSIC: <NYI> Flirting With Darkness
 q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Robe
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
-q(5903),	-- A Plague Upon Thee,		TBC: A Plague Upon Thee,		CLASSIC: A Plague Upon Thee
-q(5904),	-- A Plague Upon Thee,		TBC: A Plague Upon Thee,		CLASSIC: A Plague Upon Thee
 q(5921),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
 q(5922),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
 q(5923),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
@@ -673,10 +653,8 @@ q(6182),	-- The First and the Last,		TBC: The First and the Last,		CLASSIC: The 
 q(6183),	-- Honor the Dead,		TBC: Honor the Dead,		CLASSIC: Honor the Dead
 q(6184),	-- Flint Shadowmore,		TBC: Flint Shadowmore,		CLASSIC: Flint Shadowmore
 q(6185),	-- The Eastern Plagues,		TBC: The Eastern Plagues,		CLASSIC: The Eastern Plagues
-q(6186),	-- The Blightcaller Cometh,		TBC: The Blightcaller Cometh,		CLASSIC: The Blightcaller Cometh
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
-q(6389),	-- A Plague Upon Thee,		TBC: A Plague Upon Thee,		CLASSIC: A Plague Upon Thee
 q(6542),	-- Report to Kadrak,		TBC: Report to Kadrak,		CLASSIC: Report to Kadrak
 q(6603),	-- Trouble in Winterspring!,		TBC: Trouble in Winterspring!,		CLASSIC: Trouble in Winterspring!
 q(6604),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
@@ -771,9 +749,6 @@ q(8371),	-- Concerted Efforts,		TBC: Concerted Efforts,		CLASSIC: Concerted Effo
 q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
 q(8412),	-- [DEPRECATED] Spirit Totem,		TBC: Spirit Totem,		CLASSIC: Spirit Totem
-q(8414),	-- Dispelling Evil,		TBC: Dispelling Evil,		CLASSIC: Dispelling Evil
-q(8415),	-- Chillwind Camp,		TBC: Chillwind Camp,		CLASSIC: Chillwind Point
-q(8416),	-- Inert Scourgestones,		TBC: Inert Scourgestones,		CLASSIC: Inert Scourgestones
 q(8419),	-- An Imp's Request,		TBC: An Imp's Request,		CLASSIC: An Imp's Request
 q(8420),	-- Hot and Itchy,		TBC: Hot and Itchy,		CLASSIC: Hot and Itchy
 q(8421),	-- The Wrong Stuff,		TBC: The Wrong Stuff,		CLASSIC: The Wrong Stuff
@@ -809,10 +784,8 @@ q(9414),	-- <UNUSED>Infused Bandages,		TBC: <UNUSED>Infused Bandages,		CLASSIC: 
 q(9432),	-- Travel to Astranaar,		TBC: Travel to Astranaar
 q(9435),	-- [DEPRECATED] Missing Crystals,		TBC: Missing Crystals
 q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering,		TBC: <NYI><TXT>Placeholder: A Worthy Offering
-q(9446),	-- Tomb of the Lightbringer,		TBC: Tomb of the Lightbringer
 q(9448),	-- [DEPRECATED]Mercy for the Cursed,		TBC: Mercy for the Cursed
 q(9460),	-- Combining Forces,		TBC: Combining Forces
-q(9474),	-- The Mark of the Lightbringer,		TBC: The Mark of the Lightbringer
 q(9484),	-- Taming the Beast,		TBC: Taming the Beast
 q(9485),	-- Taming the Beast,		TBC: Taming the Beast
 q(9486),	-- Taming the Beast,		TBC: Taming the Beast
@@ -883,8 +856,6 @@ q(10292),	-- More Power!,		TBC: More Power!
 q(10352),	-- A Donation of Wool,		TBC: A Donation of Wool
 q(10354),	-- A Donation of Silk,		TBC: A Donation of Silk
 q(10364),	-- Caedmos,		TBC: Caedmos
-q(10373),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!
-q(10374),	-- A Call to Arms: The Plaguelands!,		TBC: A Call to Arms: The Plaguelands!
 q(10376),	-- Symbol of Hope
 q(10377),	-- Nothing to Fear,		TBC: Nothing to Fear
 q(10378),	-- Consume Magic
