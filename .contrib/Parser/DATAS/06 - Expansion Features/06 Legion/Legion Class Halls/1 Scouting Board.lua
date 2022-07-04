@@ -138,7 +138,6 @@ root("ExpansionFeatures", {
 								un(REMOVED_FROM_GAME, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
 							})),
 							q(39731, {	-- The Tranquil Forest
-								["sourceQuests"] = { 44545 },	-- Pressing the Assault
 								["lvl"] = 98,
 								["isBreadcrumb"] = true,
 							}),

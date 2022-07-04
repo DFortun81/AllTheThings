@@ -14697,6 +14697,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
 					};
 				else
 					appearanceGroup = {
@@ -14704,6 +14705,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
 					};
 				end
 				-- add the group showing the Appearance information for this popout
@@ -14768,8 +14770,8 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 					-- add the group showing the related Set information for this popout
-					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g }) }
-					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g })) end
+					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["sourceIgnored"] = true, ["g"] = g })) end
 				end
 			end
 		end
@@ -14809,8 +14811,8 @@ function app:CreateMiniListForGroup(group)
 			end
 
 			-- Show Quest Prereqs
-			local gTop;
 			if root.sourceQuests then
+				local gTop;
 				if app.Settings:GetTooltipSetting("QuestChain:Nested") then
 					-- clean out the sub-groups of the root since it will be listed at the top of the popout
 					root.g = nil;
@@ -14950,6 +14952,7 @@ function app:CreateMiniListForGroup(group)
 					["g"] = gTop or g,
 					["hideText"] = true,
 					["OnUpdate"] = app.AlwaysShowUpdate,
+					["sourceIgnored"] = true,
 				};
 				NestObject(group, questChainHeader);
 			end
@@ -14985,7 +14988,8 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestAccountWide;
 			end;
 			-- Populate the Quest Rewards
-			app.TryPopulateQuestRewards(group)
+			-- think this causes quest popouts to somehow break...
+			-- app.TryPopulateQuestRewards(group)
 		end
 	end
 	popout:Toggle(true);
@@ -20377,11 +20381,11 @@ customWindowUpdates["quests"] = function(self, force, got)
 			if onlyCached then
 				overrides.visible = function(o, key)
 					return o._missing and HaveQuestData(o.questID);
-				end;
+				end
 			else
 				overrides.visible = function(o, key)
 					return o._missing;
-				end;
+				end
 			end
 			overrides.doUpdate = function(o, key)
 				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
@@ -20389,7 +20393,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 					-- print("doUpdate override",o.hash)
 					return true;
 				end
-			end;
+			end
 		end
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
