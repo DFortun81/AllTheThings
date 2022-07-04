@@ -522,7 +522,6 @@ _.Zones =
 				q(34685, {	-- As the Smoke Rises
 					["provider"] = { "n", 79573 },	-- Kalaam
 					["coord"] = { 69.4, 21.4, TALADOR },
-					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						34711,	-- Due Cause to Celebrate (arcane sanctum)

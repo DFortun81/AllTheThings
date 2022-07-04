@@ -908,7 +908,7 @@ root("HiddenQuestTriggers", {
 		q(31530),	-- Mission: The Hozen Dozen - completed with quest 31529
 		q(31806, { ["_drop"] = { "g" }, }), -- Test Quest - completed with quest 31802
 		q(31877),	-- The Inkmasters of the Arboretum - completed with quest 31876
-		q(32105),	-- Pristine Monument Ledger - completed with quest 31805
+		q(32105, { ["_drop"] = { "g" }, }), -- Pristine Monument Ledger - completed with quest 31805
 		q(32107),	-- Flying Tiger Gourami - completed with quest 31443
 		q(32125),	-- Don't Try So Hard - DEPRECATED - completed with quest 32235
 		q(32196),	-- A Kind of Magic - DEPRECATED - completed with quest 32143
