@@ -10,10 +10,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(ARMOR, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 				-- Quests / Rares ?
 				i(160378),	-- Stormchaser Clutch
-				i(106163),	-- Frostwolf Wind-Talker Robe	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106142),	-- Frostwolf Scout's Tunic	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106166),	-- Frostwolf Ringmail Armor	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106147),	-- Forstwolf Stalwart Chestpiece	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
 
 				-- PvP (probably from some Ensemble)
