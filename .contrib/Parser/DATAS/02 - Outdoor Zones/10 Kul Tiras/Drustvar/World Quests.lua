@@ -55,11 +55,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 				["lvl"] = { 50 },
 			}),
-			q(50986, {	-- Work Order: Sea Stalk
-				["isWorldQuest"] = true,
-				["lvl"] = { 50 },
-				["races"] = ALLIANCE_ONLY,
-			}),
 ]]--
 			q(53701, {	-- A Drust Cause (Faction Assault WQ)
 				["lvl"] = 110,
@@ -772,6 +767,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = JEWELCRAFTING,
+			}),
+			q(50986, {	-- Work Order: Sea Stalk
+				["isWorldQuest"] = true,
+				["lvl"] = { 50 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50985, {	-- Work Order: Siren's Pollen
 				["isWorldQuest"] = true,

@@ -1568,6 +1568,10 @@ root("Craftables", tier(CLASSIC_TIER, {
 		}),
 		-- #endif
 		filter(111, {	-- Glyphs
+
+
+
+
 			i(43332, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Thorns / Glyph of Grace[MOP+]
 			-- #if BEFORE WOD
 			i(43335, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]

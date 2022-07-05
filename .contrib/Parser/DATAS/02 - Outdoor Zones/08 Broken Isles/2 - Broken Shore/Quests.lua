@@ -504,3 +504,6 @@ _.Zones =
 		}),
 	}),
 };
+root("HiddenQuestTriggers", {
+	q(47590),	-- Tier 3 Mob Daily Bonus (DNT) (Daily Kill)
+});

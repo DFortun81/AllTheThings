@@ -1256,7 +1256,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["g"] = {
 								n(REWARDS, {
 									title(439,	{	-- <Name> the Ascended (TITLE!)
-										["description"] = "Might require all of Humility?",
+										["description"] = "Finish all fights on Humility Difficulty.",
 									}),
 									n(171873, {	-- Athanos
 										n(HUMILITY, {

@@ -99,7 +99,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(50768),	--
-				q(50986),	-- Work Order: Sea Stalk
 				q(51692),	--
 				q(52402),	-- Work Order: Viridium
 				q(52934),	--
@@ -136,7 +135,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55238),	--
 				-- 8.2.0
 				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
-				q(54867),	--
 				q(54966),	--
 				q(54967),	--
 				q(54968),	--
@@ -214,7 +212,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191910),	-- Confounding Antique Cypher
 		i(191911),	-- Cosmic Creation Impetus
 		i(191927),	-- Sacred Creation Impetus
-		i(191734),	-- Motion Sick Peon's Magical Elixir
+		-- i(191734),	-- Motion Sick Peon's Magical Elixir
 		i(192438),	-- Cache of Fated Treasures (Heroic)
 		i(192437),	-- Cache of Fated Treasures (Normal)
 		i(192466),	-- Puzzling Cartel Dinar

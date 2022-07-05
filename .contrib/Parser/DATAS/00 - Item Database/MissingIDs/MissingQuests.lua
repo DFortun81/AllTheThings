@@ -827,7 +827,6 @@ q(9679),	-- <NYI>Return to Knight-Lord Bloodvalor
 q(9712),	-- The Thalassian Warhorse,		TBC: The Thalassian Warhorse
 q(9713),	-- Glowcap Harvesting Enabling Flag
 q(9745),	-- <DEPRECATED>Suppressing the Flame
-q(9750),	-- UNUSED Urgent Delivery,		TBC: UNUSED Urgent Delivery
 q(9754),	--
 q(9755),	--
 q(9757),	-- Seek Huntress Kella Nightbow,		TBC: Seek Huntress Kella Nightbow
@@ -2055,7 +2054,6 @@ q(44020),	--
 q(44065),	-- Protection Chosen
 q(44068),	-- Shaman Has Given Doomhammer to Oracle
 q(44069),	-- Shaman Has Given Sharas'dal to Oracle
-q(44079),	-- Druids of the Scythe - 1
 q(44085),	-- Affliction Chosen
 q(44086),	-- Destruction Chosen
 q(44088),	-- Demonology Chosen
@@ -2451,7 +2449,6 @@ q(47215),	-- Tracking Quest
 q(47256),	-- Tracking Quest
 q(47265),	--
 q(47417),	--
-q(47590),	-- Tier 3 Mob Daily Bonus (DNT)
 q(47626),	--
 q(47655),	--
 q(47658),	-- DNT

@@ -396,6 +396,10 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(58327, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
 			r(58315, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 			-- #endif
+			-- #if BEFORE WOD
+			r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
+			r(57215, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Death's Embrace
+			-- #endif
 		}),
 		cat(801, {	-- Cards
 			r(59503),	-- Greater Darkmoon Card
@@ -411,6 +415,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(59495),	-- Hellfire Tome
 		}),
 		n(DISCOVERY, {
+			spell(61288, {	-- Minor Inscription Research
+				r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
+			}),
 			spell(165464, {	-- Research: Ethereal Ink [NOT SOURCED]
 				r(58286, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
 				r(57265, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
@@ -434,6 +441,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			-- #if AFTER WOD
 			r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 			r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
 			-- #endif
 		}),
@@ -471,6 +479,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			spell(165465, {	-- Research: Ink of the Sea
 				r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 				r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+				r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 				r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
 			}),
 		}),

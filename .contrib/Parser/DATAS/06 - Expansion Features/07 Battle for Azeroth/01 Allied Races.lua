@@ -1702,4 +1702,5 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 root("HiddenQuestTriggers", {
 	q(54868),	-- During Heritage for Taurens in the End
 	q(54869),	-- Starting Heritage for Taurens.
+	q(54867),	-- Triggered when doing "When Spirits Whisper" Tauren Heritage
 });

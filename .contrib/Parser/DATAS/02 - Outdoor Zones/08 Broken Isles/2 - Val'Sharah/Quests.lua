@@ -754,6 +754,7 @@ _.HiddenQuestTriggers = {
 				q(38666),	-- entering the burning house during 38644	(The Farmsteads)
 				q(45490),	-- Lytheron
 				q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
+				q(44079),	-- Druids of the Scythe - 1 (Killing Feral Worgen 112820)
 			}),
 		}),
 	}),
