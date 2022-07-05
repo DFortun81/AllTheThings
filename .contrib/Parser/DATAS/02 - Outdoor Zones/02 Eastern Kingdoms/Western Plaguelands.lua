@@ -173,14 +173,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
+				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
 					["qg"] = 20722,	-- Herald Bran'daan
 					["coord"] = { 55.4, 47.2, THE_EXODAR },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
-				})),
+				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },
@@ -205,14 +205,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
-				applyclassicphase(TBC_PHASE_ONE, q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
+				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 					["qg"] = 20724,	-- Herald Amorlin
 					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
 					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
-				})),
+				}),
 				q(26954, {	-- A Different Approach
 					["qg"] = 44456,	-- Adrine Towhide
 					["sourceQuest"] = 26953,	-- Zen'kiki, the Druid

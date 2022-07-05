@@ -1515,6 +1515,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
 							["provider"] = { "i", 22228 },	-- Brilliant Sword of Zealotry
+							["cr"] = 9448,	-- Scarlet Praetorian
 						}),
 					},
 				}),
@@ -1736,6 +1737,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
 							["provider"] = { "i", 22228 },	-- Brilliant Sword of Zealotry
+							["cr"] = 9448,	-- Scarlet Praetorian
 						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance

@@ -151,6 +151,7 @@ _.ObjectNames = {
 	[176631] = "Menethil's Gift",
 	[177289] = "Scourge Cauldron",
 	[177491] = "Termite Barrel",
+	[177667] = "Torn Scroll",
 	[177787] = "Rackmore's Log",
 	[177904] = "Wanted Poster: Besseleth",
 	[177964] = "Fathom Stone",

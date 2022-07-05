@@ -503,8 +503,6 @@ q(5208),	-- <NYI> <TXT> The Blessing of Evil,		TBC: <NYI> <TXT> The Blessing of 
 q(5209),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5244),	-- [DEPRECATED]The Ruins of Kel'Theril,		TBC: The Ruins of Kel'Theril,		CLASSIC: The Ruins of Kel'Theril
 q(5245),	-- [DEPRECATED]Troubled Spirits of Kel'Theril,		TBC: Troubled Spirits of Kel'Theril,		CLASSIC: Troubled Spirits of Kel'Theril
-q(5246),	-- Fragments of the Past,		TBC: Fragments of the Past,		CLASSIC: Fragments of the Past
-q(5247),	-- Fragments of the Past,		TBC: Fragments of the Past,		CLASSIC: Fragments of the Past
 q(5249),	-- [DEPRECATED]To Winterspring!,		TBC: To Winterspring!,		CLASSIC: To Winterspring!
 q(5250),	-- Starfall,		TBC: Starfall,		CLASSIC: Starfall
 q(5283),	-- The Art of the Armorsmith,		TBC: The Art of the Armorsmith,		CLASSIC: The Art of the Armorsmith
@@ -643,11 +641,6 @@ q(6127),	-- The Principal Source,		TBC: The Principal Source,		CLASSIC: The Prin
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
 q(6130),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
 q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
-q(6144),	-- The Call to Command,		TBC: The Call to Command,		CLASSIC: The Call to Command
-q(6145),	-- The Crimson Courier,		TBC: The Crimson Courier,		CLASSIC: The Crimson Courier
-q(6146),	-- Nathanos' Ruse,		TBC: Nathanos' Ruse,		CLASSIC: Nathanos' Ruse
-q(6147),	-- Return to Nathanos,		TBC: Return to Nathanos,		CLASSIC: Return to Nathanos
-q(6148),	-- The Scarlet Oracle, Demetria,		TBC: The Scarlet Oracle, Demetria,		CLASSIC: The Scarlet Oracle, Demetria
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6182),	-- The First and the Last,		TBC: The First and the Last,		CLASSIC: The First and the Last
 q(6183),	-- Honor the Dead,		TBC: Honor the Dead,		CLASSIC: Honor the Dead
@@ -764,7 +757,6 @@ q(9031),	-- <TXT>Anthion's Parting Words,		CLASSIC: <TXT>Anthion's Parting Words
 q(9051),	-- Toxic Test,		TBC: Toxic Test,		CLASSIC: Toxic Test
 q(9052),	-- Bloodpetal Poison,		TBC: Bloodpetal Poison,		CLASSIC: Bloodpetal Poison
 q(9063),	-- Torwa Pathfinder,		TBC: Torwa Pathfinder,		CLASSIC: Torwa Pathfinder
-q(9136),	-- Savage Flora,		TBC: Savage Flora,		CLASSIC: Savage Flora
 q(9168),	-- Heart of Deatholme,		TBC: Heart of Deatholme
 q(9306),	-- <DEPRECATED>Speak with Vindicator Aldar
 q(9307),	-- <DEPRECATED>Compassion

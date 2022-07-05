@@ -1190,12 +1190,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ "n", 29611 },	-- King Varian Wrynn
 					},
 					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(16996)),	-- Gorewood Bow
-						un(REMOVED_FROM_GAME, i(16998)),	-- Sacred Protector
-						un(REMOVED_FROM_GAME, i(16997)),	-- Stormrager
+						i(16996, {	-- Gorewood Bow
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(16997, {	-- Stormrager
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(16998, {	-- Sacred Protector
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(334, {	-- Package for Thurman

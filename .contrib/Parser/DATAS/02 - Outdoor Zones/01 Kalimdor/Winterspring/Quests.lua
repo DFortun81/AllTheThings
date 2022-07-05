@@ -554,11 +554,6 @@ _.Zones =
 						i(67209),	-- Winterfall Belt
 					},
 				}),
-				q(5248,  {	-- Tormented By the Past
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 10304 },	-- Aurora Skycaller
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5086,  {	-- Toxic Horrors
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
