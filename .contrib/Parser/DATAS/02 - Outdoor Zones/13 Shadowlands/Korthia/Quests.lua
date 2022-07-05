@@ -935,7 +935,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
-
+			--[[ These are only commented out until they are found on live severs // Braghe
 		--	9.1.0 PTR Data
 			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -1014,6 +1014,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.4, 21.4, KORTHIA },
 			}),
+			--]]
 		}),
 	}),
 })));

@@ -1113,7 +1113,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			--
 
-
+			--[[ Unconfirmed out commented until confirmation
 			q(65268, {	-- Bzzzzt!
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
@@ -1155,6 +1155,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
+			--]]
 		})),
 	}),
 })));
