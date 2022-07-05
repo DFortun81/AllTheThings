@@ -967,12 +967,18 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["sourceQuests"] = { 40058 },	--  Defense Symbology (DH)
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(129105),	-- Ley Dust
+				},
 			}),
 			q(39937, {	-- Opposites Repel (non-DH)
 				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 				["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(129105),	-- Ley Dust
+				},
 			}),
 			q(40060, {	-- Containing the Demon Within (DH)
 				["classes"] = { DEMONHUNTER },
@@ -1155,7 +1161,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
 				["g"] = {
+					i(129204),	-- Vial of Felsoul Blood
 					r(191659),	-- Darkmoon Card of the Legion [Rank 1]
 				},
 			}),

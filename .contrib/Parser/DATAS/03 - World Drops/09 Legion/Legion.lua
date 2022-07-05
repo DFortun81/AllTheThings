@@ -29,19 +29,6 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 			i(141579),	-- Welded Hardskin Helmet
 		}),
 		filter(CLOAKS, {
-			i(121012),	-- Azurewing Defender's Drape
-			i(121067, {	-- Thunder Totem Cloak
-				["bonusID"] = 1812,
-			}),
-			i(121122, {	-- Stormwing Drape
-				["bonusID"] = 1812,
-			}),
-			i(121177, {	-- Vale Walker's Cloak
-				["bonusID"] = 1812,
-			}),
-			i(121232, {	-- Nightfallen Outcast's Cloak
-				["bonusID"] = 1812,
-			}),
 			i(141589),	-- Treia's Handcrafted Shroud
 			i(141590),	-- Cloak of the Martayl Oceanstrider
 			i(134246, {	-- Herringbone Drape

@@ -182,6 +182,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
+			o(335655, {		-- Oonar's Arm
+				["description"] = "Requires 1xStrength of Blood, 1xPotion of Unusual Strength, 2xBattle Hardened(WQ:A Few Bumps Along the Way), 4xEdible Redcap",
+				["coord"] = { 51.9, 48.2, MALDRAXXUS },
+				["cost"] = {
+					{ "i", 182163, 1 },	-- 1x Strength of Blood
+					{ "i", 180771, 1 },	-- 1x Potion of Unusual Strength
+				},
+				["g"] = {
+					ach(14626),	-- Harvester of Sorrow
+					i(181164),	-- Oonar's Arm (PET!)
+					i(180273),	-- Sorrowbane
+				},
+			}),
 			o(347444, {		-- Ornate Bone Shield
 				["questID"] = 59358,
 				["coord"] = { 47.2, 62.1, MALDRAXXUS },

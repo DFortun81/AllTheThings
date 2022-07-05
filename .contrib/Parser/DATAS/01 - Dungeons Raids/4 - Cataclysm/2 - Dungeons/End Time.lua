@@ -25,7 +25,10 @@ _.Instances = { tier(CATA_TIER, {
 						30094,	-- The End Time (Horde)
 						30095,	-- The End Time (Alliance)
 					},
-					["provider"] = { "n", 54751 },	-- Nozdormu
+					["providers"] = {
+						{ "n", 54751 },	-- Nozdormu
+						{ "n", 54476 },	-- Nozdormu
+					},
 					["g"] = {
 						i(72873),	-- Bronze Blaster
 						i(76152),	-- Cowl of Destiny

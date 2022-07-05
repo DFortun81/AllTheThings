@@ -107,6 +107,45 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
+					i(194118, {	-- Cosmic Equipment Chest
+						["timeline"] = { "added 9.2.5" },
+						["cost"] = {
+							{ "c", 1602, 375 },	-- 375xConquest
+						},
+						["sym"] = {
+							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", SEASON_COSMIC },	-- Cosmic Gladiator: Shadowlands Season 3
+							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"pop"},								-- Discard the Header and acquire all of the children.
+						},
+					}),
+					i(194334, {	-- Encrypted Equipment Chest
+					["timeline"] = { "added 9.2.5" },
+						["cost"] = {
+							{ "c", 1191, 500 },	-- 500xValor
+						},
+						["sym"] = {
+							-- Dungeons
+							{"select", "instanceID", 1188},			-- De Other Side
+							{"select", "instanceID", 1185},			-- Halls of Atonement
+							{"select", "instanceID", 1184},			-- Mists of Tirna Scithe
+							{"select", "instanceID", 1182},			-- Necrotic Wake
+							{"select", "instanceID", 1183},			-- Plaguefall
+							{"select", "instanceID", 1189},			-- Sanguine Depths
+							{"select", "instanceID", 1186},			-- Spires of Ascension
+							{"select", "instanceID", 1194},			-- Tazavesh, the Veiled Market
+							{"select", "instanceID", 1187},			-- Theater of Pain
+
+							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
+							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+							{"is", "itemID"},						-- Only Items!
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
 					i(188198, {	-- Travlers Anima Cache
 						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
 						["cost"] = {

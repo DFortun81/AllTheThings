@@ -876,6 +876,10 @@ root("Professions", prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANT
 				["sourceQuests"] = { 39881 },	-- Fey Enchantments
 				["provider"] = { "n", 98156 },	-- Nalamya
 				["coord"] = { 54.4, 57.6, VALSHARAH },
+				["g"] = {
+					i(137213),	-- Raven Dust
+					i(137221),	-- Enchanted Raven Sigil
+				},
 			}),
 			q(39889, {	-- Led Astray
 				["sourceQuests"] = { 39881 },	-- Fey Enchantments

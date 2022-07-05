@@ -875,6 +875,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.2, 21.2, KORTHIA },
 			}),
+			q(64430, {	-- Spill the Tea
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 179218 },	-- Theotar
+				["isDaily"] = true,
+				["coord"] = { 61.6, 25.7, KORTHIA },
+			}),
 			q(64070, {	-- Staying Scrappy
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
@@ -892,6 +898,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178794 },	-- General Draven
 				["isDaily"] = true,
 				["coord"] = { 61.5, 25.2, KORTHIA },
+			}),
+			q(64089, {	-- Teas and Tinctures
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 179218 },	-- Theotar
+				["isDaily"] = true,
+				["coord"] = { 61.6, 25.7, KORTHIA },
 			}),
 			q(64101, {	-- The Proper Procedures
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -995,18 +1007,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178839 },	-- Dreamweaver
 				["isDaily"] = true,
 				["coord"] = { 61.4, 21.4, KORTHIA },
-			}),
-			q(64430, {	-- Spill the Tea
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 179218 },	-- Theotar
-				["isDaily"] = true,
-				["coord"] = { 61.6, 25.7, KORTHIA },
-			}),
-			q(64089, {	-- Teas and Tinctures
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 179218 },	-- Theotar
-				["isDaily"] = true,
-				["coord"] = { 61.6, 25.7, KORTHIA },
 			}),
 			q(64104, {	-- Think of the Critters
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
