@@ -666,13 +666,16 @@ _.Zones =
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12934,	-- The Amphitheater of Anguish: From Beyond!
 				}),
-				q(12932, {	-- The Amphitheater of Anguish: Yggdras! -- aa
+				q(12932, {	-- The Amphitheater of Anguish: Yggdras!
 					["coord"] = { 48.4, 56.3, ZULDRAK },
 					["provider"] = { "n", 30007 },	-- Gurgthock
 					["sourceQuest"] = 12974,	-- The Champion's Call
 				}),
-				q(12954, {	-- The Amphitheater of Anguish: Yggdras! (NYI - duplicate?)
-					["u"] = NEVER_IMPLEMENTED,
+				q(12954, {	-- The Amphitheater of Anguish: Yggdras!
+					["coord"] = { 48.4, 56.3, ZULDRAK },
+					["provider"] = { "n", 30007 },	-- Gurgthock
+					["sourceQuest"] = 12974,	-- The Champion's Call
+					["description"] = "You will get this version if you did |cFFFFD700The Ring of Blood|r questline in Nagrand before.",
 				}),
 				q(12565, {	-- The Blessing of Zim'Abwa -- aa
 					["coord"] = { 40.5, 65.6, ZULDRAK },
