@@ -1308,6 +1308,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { 529, HONORED },	-- Argent Dawn
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
@@ -1342,6 +1343,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { 529, REVERED },	-- Argent Dawn
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
@@ -1376,6 +1378,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["timeline"] = { "removed 4.0.3" },
 					["repeatable"] = true,
@@ -2134,6 +2137,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["maxReputation"] = { 529, HONORED },	-- Argent Dawn
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
@@ -2166,6 +2170,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["maxReputation"] = { 529, REVERED },	-- Argent Dawn
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
@@ -2198,6 +2203,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { "removed 4.0.3" },
