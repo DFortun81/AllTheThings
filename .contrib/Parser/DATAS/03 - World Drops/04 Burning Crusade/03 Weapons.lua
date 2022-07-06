@@ -283,9 +283,10 @@ _.WorldDrops =
 				i(25142),	-- Telaari Longblade
 				i(25143),	-- Silver Hand Blade
 				i(25144),	-- Skettis Curved Blade
-				un(REMOVED_FROM_GAME, i(25145, {	-- Wisdom Blade
+				i(25145, {	-- Wisdom Blade
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-				})),
+					["timeline"] = { "created 2.0.1", "added 7.0.1", "removed 8.0.1" },
+				}),
 				i(25146),	-- Light-Etched Longsword
 				i(25147),	-- Skystrider Katana
 				i(25148),	-- Bone Collector Sword
@@ -304,7 +305,10 @@ _.WorldDrops =
 				i(25156),	-- Royal Crusader Sword
 				i(25157),	-- Serpentlord Claymore
 				i(25158),	-- Skeletal Broadsword
-				un(REMOVED_FROM_GAME, i(25159)),	-- Thunderstrike Falchion [Removed from Game - Crates Only!]
+				i(25159, {	-- Thunderstrike Falchion
+					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+					["timeline"] = { "created 2.0.1", "added 7.0.1", "removed 8.0.1" },
+				}),
 				i(25160),	-- Vengeance Blade
 				i(25161),	-- Dragon Wing Blade
 				i(25162),	-- Darkened Broadsword
