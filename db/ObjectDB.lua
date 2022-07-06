@@ -1798,6 +1798,7 @@ _.ObjectNames = {
 	[332576] = "Crystalline Cat Figurine",
 	[332704] = "Corrupted Chest",
 	[334216] = "Black Empire Cache",
+	[335655] = "Oonar's Arm",
 	[336415] = "Discarded Scroll",
 	[337237] = "Lost Vault",
 	[337241] = "Stashed Equipment",
