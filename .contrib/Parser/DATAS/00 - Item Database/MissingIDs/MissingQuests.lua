@@ -1959,8 +1959,6 @@ q(42804),	-- Invasion: Azshara
 q(42807),	-- Demon Commander
 q(42822),	-- The Banner of the Ebon Blade
 q(42826),	-- Highmountain Hidden Demon 01
-q(42858),	-- Stormheim Hidden Demon 01
-q(42863),	-- Highmoutain Hidden Demon 03
 q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
 q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
 q(42923),	--

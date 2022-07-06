@@ -1216,9 +1216,6 @@ root("HiddenQuestTriggers", {
 		q(40627),	-- Triggers after looting heart for Halls of Valor: Odyn's Blessing (40615) in the Balance of Power questline
 		q(43529),	-- Triggered when turning in Preparing to Move (43898) in the Balance of Power questline
 
-		-- demon hunter hidden demons - maybe add this to the zone maps?
-		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
-
 		-- Suramar - Withered Training
 		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
 		q(43120),	-- 7.0 Suramar Collapse Scenario - Treasure 07 - Focus Attacks 01
