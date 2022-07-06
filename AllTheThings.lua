@@ -16814,6 +16814,23 @@ local function CollectThings(things, group)
 	end
 end
 
+local RecursiveParentMapping = {};
+-- Recurses upwards in the group hierarchy until finding the group with the specified value in the specified field. The
+-- set of groups crossed while searching will all have their mapping value set to the found group.
+-- While recursing, the mapping will be checked first if the current group has already been mapped, and return that mapping instead
+local function RecursiveParentMapper(group, field, value)
+	if not group then return; end
+	-- is this group already mapped?
+	local mapped = RecursiveParentMapping[group];
+	if mapped then return mapped; end
+	-- is this group the one for the mapping, or recurse to the parent
+	mapped = (group[field] == value and group) or RecursiveParentMapper(group.parent, field, value);
+	if mapped then
+		RecursiveParentMapping[group] = mapped;
+		return mapped;
+	end
+end
+
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
@@ -16821,7 +16838,6 @@ local DynamicCategory_Simple = function(self)
 	local dynamicCache = fieldCache[self.dynamic];
 	if dynamicCache then -- professionID
 		local rootATT = app:GetWindow("Prime").data;
-		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
 		local top, topText, thing;
 		local topHeaders, dynamicValue = {}, self.dynamic_value;
 		if dynamicValue then -- 164 (blacksmithing)
@@ -16832,7 +16848,7 @@ local DynamicCategory_Simple = function(self)
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] then
 						-- find the top-level parent of the Thing
-						top = RecursiveFirstParentWithFieldValue(source, "parent", rootATT);
+						top = RecursiveParentMapper(source, "parent", rootATT);
 						-- create/match the expected top header
 						topText = top and top.text;
 						if topText then
@@ -16873,9 +16889,10 @@ local DynamicCategory_Simple = function(self)
 		else
 			for id,sources in pairs(dynamicCache) do
 				-- find the top-level parent of the Thing
-				top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
-				if top then
-					topText = top.text;
+				top = RecursiveParentMapper(sources[1], "parent", rootATT);
+				-- create/match the expected top header
+				topText = top and top.text;
+				if topText then
 					-- store a copy of this top header if we dont have it
 					if not topHeaders[topText] then
 						topHeaders[topText] = CreateObject(top, true);
@@ -17997,6 +18014,7 @@ function app:RefreshData(lazy, got, manual)
 	end
 end
 function app:BuildSearchResponse(groups, field, value, clear)
+	-- TODO: have a different mapping that is built associating the Source groups to the already-cloned group
 	if groups then
 		local t, response, v;
 		local includeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
