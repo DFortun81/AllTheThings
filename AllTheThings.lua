@@ -316,15 +316,15 @@ local FunctionRunnerCoroutine = function()
 		perFrame = perFrame - 1;
 		params = ParameterBucketQueue[i];
 		if params then
-			app.PrintDebug("FunctionRunnerCoroutine.Run",i,params)
+			app.PrintDebug("FRC.Run.N",i,params)
 			func(unpack(params));
 		else
-			app.PrintDebug("FunctionRunnerCoroutine.Run",i,ParameterSingleQueue[i])
+			app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
 			func(ParameterSingleQueue[i]);
 		end
-		app.PrintDebug("FunctionRunnerCoroutine.Done",i)
+		-- app.PrintDebug("FRC.Done",i)
 		if perFrame <= 0 then
-			app.PrintDebug("FunctionRunnerCoroutine.Yield")
+			app.PrintDebug("FRC.Yield")
 			coroutine.yield();
 			perFrame = Config.PerFrame;
 		end
@@ -336,7 +336,7 @@ local FunctionRunnerCoroutine = function()
 	wipe(FunctionQueue);
 	wipe(ParameterBucketQueue);
 	wipe(ParameterSingleQueue);
-	app.PrintDebug("FunctionRunnerCoroutine.End")
+	app.PrintDebug("FRC.End")
 end
 
 -- Provides a utility which will process a given number of functions each frame in a queue
@@ -347,7 +347,7 @@ local FunctionRunner = {
 			error("Must be a 'function' type!")
 		end
 		FunctionQueue[QueueIndex] = func;
-		app.PrintDebug("FunctionRunner.Add",QueueIndex,...)
+		-- app.PrintDebug("FR.Add",QueueIndex,...)
 		local arrs = select("#", ...);
 		if arrs == 1 then
 			ParameterSingleQueue[QueueIndex] = ...;
@@ -1026,6 +1026,7 @@ end
 		[2533] = 197,	-- Kul Tiran Tailoring [8.0.1]
 		[2759] = 197,	-- Shadowlands Tailoring [9.0.1]
 	};
+	app.ProfessionMaps = tradeSkillMap;
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
 	end
@@ -16800,35 +16801,97 @@ end
 end)();
 
 do	-- Dynamic/Main Data
+-- Pulls all nested Things from within the group into the 'things' array
+local function CollectThings(things, group)
+	if group.g then
+		local thingKeys = app.ThingKeys;
+		for _,o in ipairs(group.g) do
+			if thingKeys[o.key] then
+				tinsert(things, o);
+			end
+			CollectThings(things, o);
+		end
+	end
+end
+
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
 local DynamicCategory_Simple = function(self)
-	if fieldCache[self.dynamic] then
+	local dynamicCache = fieldCache[self.dynamic];
+	if dynamicCache then -- professionID
 		local rootATT = app:GetWindow("Prime").data;
 		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
 		local top, topText, thing;
-		local topHeaders = {};
-		for id,sources in pairs(fieldCache[self.dynamic]) do
-			-- find the top-level parent of the Thing
-			top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
-			if top then
-				topText = top.text;
-				-- store a copy of this top header if we dont have it
-				if not topHeaders[topText] then
-					topHeaders[topText] = CreateObject(top, true);
-					-- print("create topHeader",self.dynamic,"==>")
-					-- app.PrintTable(topHeaders[topText])
+		local topHeaders, dynamicValue = {}, self.dynamic_value;
+		if dynamicValue then -- 164 (blacksmithing)
+			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
+			if dynamicValueCache then -- professionID = 164
+				app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
+				for _,source in pairs(dynamicValueCache) do
+					-- only pull in actual 'Things' to the simple dynamic group
+					if thingKeys[source.key] then
+						-- find the top-level parent of the Thing
+						top = RecursiveFirstParentWithFieldValue(source, "parent", rootATT);
+						-- create/match the expected top header
+						topText = top and top.text;
+						if topText then
+							-- store a copy of this top header if we dont have it
+							if not topHeaders[topText] then
+								-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
+								-- app.PrintTable(topHeaders[topText])
+								topHeaders[topText] = CreateObject(top, true);
+							end
+							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+							-- remove it from being considered a cost within the dynamic category
+							thing = CreateObject(source, true);
+							thing.collectibleAsCost = false;
+							NestObject(topHeaders[topText], thing);
+							-- not 100% sure this is necessary to have?
+							-- else
+							-- 	local subThings = {};
+							-- 	-- store a copy of this top header if we dont have it
+							-- 	-- recursively pull in the Things under the non-Thing tagged with the dynamic key/value
+							-- 	CollectThings(subThings, source);
+							-- 	if #subThings > 0 then
+							-- 		-- clone the Things without nested content
+							-- 		local clonedThings = {};
+							-- 		for _,o in ipairs(subThings) do
+							-- 			thing = CreateObject(o, true);
+							-- 			thing.collectibleAsCost = false;
+							-- 			tinsert(clonedThings, thing);
+							-- 		end
+							-- 		-- app.PrintDebug("Collected",#clonedThings,"under",source.hash)
+							-- 		NestObjects(topHeaders[topText], clonedThings);
+							-- 	end
+						end
+					end
 				end
-				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-				-- remove it from being considered a cost within the dynamic category
-				thing = app.MergedObject(sources, true)
-				thing.collectibleAsCost = false;
-				NestObject(topHeaders[topText], thing);
+				app.PrintDebugPrior("Complete")
+				-- dynamic groups for Things within a specific Value of a Type are expected to be collected under a Header of the Type itself
+			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
+		else
+			for id,sources in pairs(dynamicCache) do
+				-- find the top-level parent of the Thing
+				top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
+				if top then
+					topText = top.text;
+					-- store a copy of this top header if we dont have it
+					if not topHeaders[topText] then
+						topHeaders[topText] = CreateObject(top, true);
+						-- print("create topHeader",self.dynamic,"==>")
+						-- app.PrintTable(topHeaders[topText])
+					end
+					-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+					-- remove it from being considered a cost within the dynamic category
+					thing = app.MergedObject(sources, true);
+					thing.collectibleAsCost = false;
+					NestObject(topHeaders[topText], thing);
+				end
 			end
+			-- dynamic groups for general Types are ignored for the source tooltips
+			self.sourceIgnored = true;
 		end
-		-- dynamic groups are ignored for the source tooltips
-		self.sourceIgnored = true;
 		-- change the text color of the dynamic group to help indicate it is not included in the window total
 		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 		-- sort all of the Things by name in each top header and put it under the dynamic group
@@ -16841,20 +16904,18 @@ local DynamicCategory_Simple = function(self)
 		BuildGroups(self, self.g);
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
-		-- make sure these things are cached so they can be updated when collected
-		app.CacheFields(self);
+		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+		app.FunctionRunner.Run(app.CacheFields, self);
 		-- run a direct update on itself after being populated
-		app.FunctionRunner.Run(app.DirectGroupUpdate, self);
-	else
-		app.print("Failed to build Simple Dynamic Category for:",self.dynamic);
-	end
+		app.DirectGroupUpdate(self);
+	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
 end
 
 -- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
 local DynamicCategory_Nested = function(self)
-	-- dynamic groups are ignored for the source tooltips
-	self.sourceIgnored = true;
+	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
+	self.sourceIgnored = not self.dynamic_value;
 	-- change the text color of the dynamic group to help indicate it is not included in the window total
 	self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	-- pull out all Things which should go into this category based on field & value
@@ -16863,11 +16924,12 @@ local DynamicCategory_Nested = function(self)
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
-	-- make sure these things are cached so they can be updated when collected
-	app.CacheFields(self);
+	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+	app.FunctionRunner.Run(app.CacheFields, self);
 	-- run a direct update on itself after being populated
-	app.FunctionRunner.Run(app.DirectGroupUpdate, self);
+	app.DirectGroupUpdate(self);
 end
+
 function app:GetDataCache()
 	app.PrintDebug("Start app.GetDataCache")
 	app.PrintMemoryUsage()
@@ -17167,6 +17229,27 @@ function app:GetDataCache()
 		db.name = db.text;
 		db.icon = app.asset("Category_Mounts");
 		tinsert(g, DynamicCategory(db, "mountID"));
+
+		-- Professions - Dynamic
+		db = {};
+		db.name = TRADE_SKILLS;
+		db.text = Colorize(db.name, app.Colors.SourceIgnored);
+		db.icon = app.asset("Category_Professions");
+		db.sourceIgnored = true;
+		tinsert(g, db);
+		-- don't generate Nested Dynamic professions currently... too slow
+		if dynamicSetting ~= 2 then
+			local dynProfs = {};
+			for _,profID in pairs(app.ProfessionMaps) do
+				if not dynProfs[profID] then
+					dynProfs[profID] = true;
+					NestObject(db, DynamicCategory(app.CreateProfession(profID), "professionID", profID));
+				end
+			end
+			-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
+			app.SortGroupDelayed(db, "name");
+			BuildGroups(db, db.g);
+		end
 
 		-- Titles - Dynamic
 		db = {};
