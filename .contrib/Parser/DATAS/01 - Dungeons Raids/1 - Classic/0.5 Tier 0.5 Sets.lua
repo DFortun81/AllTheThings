@@ -6,42 +6,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lore"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 		["groups"] = {
 			cl(DRUID, {
-				q(8905,	{	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8905, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8913, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 16714, 1 },	-- Wildheart Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22108),	-- Feralheart Bracers
 					},
-				}),
-				q(8913,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
-					["classes"] = { DRUID },
-					["cost"] = {
-						{ "i", 16714, 1 },	-- Wildheart Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22108),	-- Feralheart Bracers
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8951),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9016),	-- Anthion's Parting Words [H]
@@ -110,42 +109,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(HUNTER, {
-				q(8906,	{	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE, STRATHOLME },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8906, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8914, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22011),	-- Beastmaster's Bindings
 					},
-				}),
-				q(8914, {	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, BLACKROCK_SPIRE, STRATHOLME },
-					["classes"] = { HUNTER },
-					["cost"] = {
-						{ "i", 16681, 1 },	-- Beaststalker's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22011),	-- Beastmaster's Bindings
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8952),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9017),	-- Anthion's Parting Words [H]
@@ -214,42 +212,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(MAGE, {
-				q(8907, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8907, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8915, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 16683, 1 },	-- Magister's Bindings
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22063),	-- Sorcerer's Bindings
 					},
-				}),
-				q(8915,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
-					["classes"] = { MAGE },
-					["cost"] = {
-						{ "i", 16683, 1 },	-- Magister's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22063),	-- Sorcerer's Bindings
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8953),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9018),	-- Anthion's Parting Words [H]
@@ -318,42 +315,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(PALADIN, {
-				q(8908, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8908, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(10493, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22088),	-- Soulforge Bracers
 					},
-				}),
-				q(10493, {	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
-					["classes"] = { PALADIN },
-					["cost"] = {
-						{ "i", 16722, 1 },	-- Lightforge Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22088),	-- Soulforge Bracers
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8954),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(10497),	-- Anthion's Parting Words [H]
@@ -422,42 +418,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(PRIEST, {
-				q(8909, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, STRATHOLME },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8909, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8916, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 16697, 1 },	-- Devout Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22079),	-- Virtuous Bracers
 					},
-				}),
-				q(8916, {	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, STRATHOLME },
-					["classes"] = { PRIEST },
-					["cost"] = {
-						{ "i", 16697, 1 },	-- Devout Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22079),	-- Virtuous Bracers
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8955),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9019),	-- Anthion's Parting Words [H]
@@ -527,42 +522,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(ROGUE, {
-				q(8910, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8910, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8917, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22004),	-- Darkmantle Bracers
 					},
-				}),
-				q(8917,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
-					["classes"] = { ROGUE },
-					["cost"] = {
-						{ "i", 16710, 1 },	-- Shadowcraft Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22004),	-- Darkmantle Bracers
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8956),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9020),	-- Anthion's Parting Words [H]
@@ -632,43 +626,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(SHAMAN, {
-				q(10492, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
-					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(10492, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8918, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
 					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22095),	-- Bindings of The Five Thunders
 					},
-				}),
-				q(8918,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
-					["classes"] = { SHAMAN },
-					["cost"] = {
-						{ "i", 16671, 1 },	-- Bindings of Elements
-						{ "g", 200000 },	-- 20g
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22095),	-- Bindings of The Five Thunders
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(10496),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(8957),	-- Anthion's Parting Words [H]
@@ -737,42 +729,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(WARLOCK, {
-				q(8911, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8911, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8919, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
+					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(22071),	-- Deathmist Bracers
 					},
-				}),
-				q(8919,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
-					["cost"] = {
-						{ "i", 16703, 1 },	-- Dreadmist Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(22071),	-- Deathmist Bracers
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8958),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9021),	-- Anthion's Parting Words [H]
@@ -841,42 +832,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			cl(WARRIOR, {
-				q(8912, {	-- An Earnest Proposition [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
+				{	-- An Earnest Proposition
+					["allianceQuestData"] = q(8912, {	-- An Earnest Proposition [A]
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+						["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Winterspring Blood Sample
+								["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
+							}),
+						},
+						-- #endif
+					}),
+					["hordeQuestData"] = q(8920, {	-- An Earnest Proposition [H]
+						["qg"] = 16012,	-- Mokvar
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+						["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							objective(1, {	-- 0/15 Silithus Venom Sample
+								["provider"] = { "i", 22381 },	-- Silithus Venom Sample
+							}),
+						},
+						-- #endif
+					}),
+					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 16735, 1 },	-- Bracers of Valor
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
-						objective(1, {	-- 0/15 Winterspring Blood Sample
-							["provider"] = { "i", 21928 },	-- Winterspring Blood Sample
-						}),
 						i(21996),	-- Bracers of Heroism
 					},
-				}),
-				q(8920,	{	-- An Earnest Proposition [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { SILITHUS, BLACKROCK_SPIRE },
-					["cost"] = {
-						{ "i", 16735, 1 },	-- Bracers of Valor
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						objective(1, {	-- 0/15 Silithus Venom Sample
-							["provider"] = { "i", 22381 },	-- Silithus Venom Sample
-						}),
-						i(21996),	-- Bracers of Heroism
-					},
-				}),
+				},
 				{	-- Anthion's Parting Words
 					["allianceQuestData"] = q(8959),	-- Anthion's Parting Words [A]
 					["hordeQuestData"] = q(9022),	-- Anthion's Parting Words [H]
@@ -971,48 +961,46 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 					["lvl"] = 58,
 				}),
-				q(8922, {	-- A Supernatural Device [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["sourceQuests"] = {
-						8905,	-- An Earnest Proposition [DRUID]
-						8906,	-- An Earnest Proposition [HUNTER]
-						8907,	-- An Earnest Proposition [MAGE]
-						8908,	-- An Earnest Proposition [PALADIN]
-						8909,	-- An Earnest Proposition [PRIEST]
-						8910,	-- An Earnest Proposition [ROGUE]
-						10492,	-- An Earnest Proposition [SHAMAN]
-						8911,	-- An Earnest Proposition [WARLOCK]
-						8912,	-- An Earnest Proposition [WARRIOR]
-					},
-					["coord"] = { 43.5, 52.6, IRONFORGE },
+				{	-- A Supernatural Device
+					["allianceQuestData"] = q(8922, {	-- A Supernatural Device [A]
+						["providers"] = {
+							{ "n", 16013 },	-- Deliana
+							{ "i", 21985 },	-- Sealed Blood Container
+						},
+						["sourceQuests"] = {
+							8905,	-- An Earnest Proposition [DRUID]
+							8906,	-- An Earnest Proposition [HUNTER]
+							8907,	-- An Earnest Proposition [MAGE]
+							8908,	-- An Earnest Proposition [PALADIN]
+							8909,	-- An Earnest Proposition [PRIEST]
+							8910,	-- An Earnest Proposition [ROGUE]
+							10492,	-- An Earnest Proposition [SHAMAN]
+							8911,	-- An Earnest Proposition [WARLOCK]
+							8912,	-- An Earnest Proposition [WARRIOR]
+						},
+						["coord"] = { 43.5, 52.6, IRONFORGE },
+					}),
+					["hordeQuestData"] = q(8923, {	-- A Supernatural Device [H]
+						["providers"] = {
+							{ "n", 16012 },	-- Mokvar
+							{ "i", 22382 },	-- Sealed Venom Container
+						},
+						["sourceQuests"] = {
+							8913,	-- An Earnest Proposition [DRUID]
+							8914,	-- An Earnest Proposition [HUNTER]
+							8915,	-- An Earnest Proposition [MAGE]
+							10493,	-- An Earnest Proposition [PALADIN]
+							8916,	-- An Earnest Proposition [PRIEST]
+							8917,	-- An Earnest Proposition [ROGUE]
+							8918,	-- An Earnest Proposition [SHAMAN]
+							8919,	-- An Earnest Proposition [WARLOCK]
+							8920,	-- An Earnest Proposition [WARRIOR]
+						},
+						["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					}),
 					["maps"] = { TANARIS },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 21985, 1 },	-- Sealed Blood Container
-					},
 					["lvl"] = 58,
-				}),
-				q(8923, {	-- A Supernatural Device [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuests"] = {
-						8913,	-- An Earnest Proposition [DRUID]
-						8914,	-- An Earnest Proposition [HUNTER]
-						8915,	-- An Earnest Proposition [MAGE]
-						10493,	-- An Earnest Proposition [PALADIN]
-						8916,	-- An Earnest Proposition [PRIEST]
-						8917,	-- An Earnest Proposition [ROGUE]
-						8918,	-- An Earnest Proposition [SHAMAN]
-						8919,	-- An Earnest Proposition [WARLOCK]
-						8920,	-- An Earnest Proposition [WARRIOR]
-					},
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { TANARIS },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 22382, 1 },	-- Sealed Venom Container
-					},
-					["lvl"] = 58,
-				}),
+				},
 				q(8948, {	-- Anthion's Old Friend
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
@@ -1053,64 +1041,53 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					},
 					["lvl"] = 58,
 				}),
-				q(8997, {	-- Back to the Beginning [ALLIANCE]
+				{	-- Back to the Beginning
+					["allianceQuestData"] = q(8997, {	-- Back to the Beginning [A]
+						["maps"] = { BLACKROCK_MOUNTAIN, IRONFORGE },
+					}),
+					["hordeQuestData"] = q(8998, {	-- Back to the Beginning [H]
+						["maps"] = { BLACKROCK_MOUNTAIN, ORGRIMMAR },
+					}),
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8996,	-- Return to Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-				}),
-				q(8998, {	-- Back to the Beginning [HORDE]
-					["qg"] = 16033,	-- Bodley
-					["sourceQuest"] = 8996,	-- Return to Bodley
-					["maps"] = { BLACKROCK_MOUNTAIN, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-				}),
-				q(8960, {	-- Bodley's Unfortunate Fate [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["sourceQuests"] = {
-						8951,	-- Anthion's Parting Words [ALLIANCE]
-						8952,	-- Anthion's Parting Words [ALLIANCE]
-						8953,	-- Anthion's Parting Words [ALLIANCE]
-						8954,	-- Anthion's Parting Words [ALLIANCE]
-						8955,	-- Anthion's Parting Words [ALLIANCE]
-						8956,	-- Anthion's Parting Words [ALLIANCE]
-						8958,	-- Anthion's Parting Words [ALLIANCE]
-						8959,	-- Anthion's Parting Words [ALLIANCE]
-						10496,	-- Anthion's Parting Words [ALLIANCE]
-					},
-					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
-					["coord"] = { 43.53, 52.64, IRONFORGE },
+				},
+				{	-- Bodley's Unfortunate Fate
+					["allianceQuestData"] = q(8960, {	-- Bodley's Unfortunate Fate [A]
+						["qg"] = 16013,	-- Deliana
+						["sourceQuests"] = {
+							8951,	-- Anthion's Parting Words [ALLIANCE]
+							8952,	-- Anthion's Parting Words [ALLIANCE]
+							8953,	-- Anthion's Parting Words [ALLIANCE]
+							8954,	-- Anthion's Parting Words [ALLIANCE]
+							8955,	-- Anthion's Parting Words [ALLIANCE]
+							8956,	-- Anthion's Parting Words [ALLIANCE]
+							8958,	-- Anthion's Parting Words [ALLIANCE]
+							8959,	-- Anthion's Parting Words [ALLIANCE]
+							10496,	-- Anthion's Parting Words [ALLIANCE]
+						},
+						["coord"] = { 43.53, 52.64, IRONFORGE },
+					}),
+					["hordeQuestData"] = q(9032, {	-- Bodley's Unfortunate Fate [H]
+						["qg"] = 16012,	-- Mokvar
+						["sourceQuests"] = {
+							9016,	-- Anthion's Parting Words [HORDE]
+							9017,	-- Anthion's Parting Words [HORDE]
+							9018,	-- Anthion's Parting Words [HORDE]
+							9019,	-- Anthion's Parting Words [HORDE]
+							9020,	-- Anthion's Parting Words [HORDE]
+							8957,	-- Anthion's Parting Words [HORDE]
+							9021,	-- Anthion's Parting Words [HORDE]
+							9022,	-- Anthion's Parting Words [HORDE]
+							10497,	-- Anthion's Parting Words [HORDE]
+						},
+						["coord"] = { 34.95, 38.29, ORGRIMMAR },
+					}),
 					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
-					["lvl"] = 58,
-				}),
-				q(9032, {	-- Bodley's Unfortunate Fate [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuests"] = {
-						9016,	-- Anthion's Parting Words [HORDE]
-						9017,	-- Anthion's Parting Words [HORDE]
-						9018,	-- Anthion's Parting Words [HORDE]
-						9019,	-- Anthion's Parting Words [HORDE]
-						9020,	-- Anthion's Parting Words [HORDE]
-						8957,	-- Anthion's Parting Words [HORDE]
-						9021,	-- Anthion's Parting Words [HORDE]
-						9022,	-- Anthion's Parting Words [HORDE]
-						10497,	-- Anthion's Parting Words [HORDE]
-					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
-					["coord"] = { 34.95, 38.29, ORGRIMMAR },
-					["maps"] = { BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
-				}),
+				},
 				q(8962, {	-- Components of Importance [WARRIOR, MAGE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
@@ -1276,48 +1253,41 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						}),
 					},
 				}),
-				q(8929, {	-- In Search of Anthion [ALLIANCE]
-					["qg"] = 16013,	-- Deliana
-					["sourceQuests"] = {
-						8926,	-- Just Compensation [ALLIANCE]
-						8931,	-- Just Compensation [ALLIANCE]
-						8932,	-- Just Compensation [ALLIANCE]
-						8933,	-- Just Compensation [ALLIANCE]
-						8934,	-- Just Compensation [ALLIANCE]
-						8935,	-- Just Compensation [ALLIANCE]
-						8936,	-- Just Compensation [ALLIANCE]
-						8937,	-- Just Compensation [ALLIANCE]
-						10494,	-- Just Compensation [ALLIANCE]
-					},
-					["coord"] = { 43.53, 52.64, IRONFORGE },
+				{	-- In Search of Anthion
+					["allianceQuestData"] = q(8929, {	-- In Search of Anthion [A]
+						["qg"] = 16013,	-- Deliana
+						["sourceQuests"] = {
+							8926,	-- Just Compensation [ALLIANCE]
+							8931,	-- Just Compensation [ALLIANCE]
+							8932,	-- Just Compensation [ALLIANCE]
+							8933,	-- Just Compensation [ALLIANCE]
+							8934,	-- Just Compensation [ALLIANCE]
+							8935,	-- Just Compensation [ALLIANCE]
+							8936,	-- Just Compensation [ALLIANCE]
+							8937,	-- Just Compensation [ALLIANCE]
+							10494,	-- Just Compensation [ALLIANCE]
+						},
+						["coord"] = { 43.53, 52.64, IRONFORGE },
+					}),
+					["hordeQuestData"] = q(8930, {	-- In Search of Anthion [H]
+						["qg"] = 16012,	-- Mokvar
+						["sourceQuests"] = {
+							8927,	-- Just Compensation [HORDE]
+							8938,	-- Just Compensation [HORDE]
+							8939,	-- Just Compensation [HORDE]
+							8940,	-- Just Compensation [HORDE]
+							8941,	-- Just Compensation [HORDE]
+							8942,	-- Just Compensation [HORDE]
+							8943,	-- Just Compensation [HORDE]
+							8944,	-- Just Compensation [HORDE]
+							10495,	-- Just Compensation [HORDE]
+						},
+						["coord"] = { 34.95, 38.29, ORGRIMMAR },
+					}),
 					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
-				}),
-				q(8930, {	-- In Search of Anthion [HORDE]
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuests"] = {
-						8927,	-- Just Compensation [HORDE]
-						8938,	-- Just Compensation [HORDE]
-						8939,	-- Just Compensation [HORDE]
-						8940,	-- Just Compensation [HORDE]
-						8941,	-- Just Compensation [HORDE]
-						8942,	-- Just Compensation [HORDE]
-						8943,	-- Just Compensation [HORDE]
-						8944,	-- Just Compensation [HORDE]
-						10495,	-- Just Compensation [HORDE]
-					},
-					["coord"] = { 34.95, 38.29, ORGRIMMAR },
-					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
-					["lvl"] = 58,
-				}),
+				},
 				q(8995, {	-- Mea Culpa, Lord Valthalak
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8994,	-- Final Preparations
@@ -1420,28 +1390,19 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						i(22344),	-- Brazier of Invocation: User's Manual
 					},
 				}),
-				q(8977, {	-- Return to Deliana
+				{	-- Return to Deliana / Return to Mokvar
+					["allianceQuestData"] = q(8977, {	-- Return to Deliana [A]
+						["maps"] = { IRONFORGE },
+					}),
+					["hordeQuestData"] = q(8978, {	-- Return to Mokvar [H]
+						["maps"] = { ORGRIMMAR },
+					}),
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
+					["cost"] = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 					["lvl"] = 58,
-				}),
-				q(8978, {	-- Return to Mokvar
-					["qg"] = 16014,	-- Mux Manascrambler
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
-					["lvl"] = 58,
-				}),
+				},
 				q(9015, {	-- The Challenge
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
