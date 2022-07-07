@@ -16953,25 +16953,101 @@ function app:GetDataCache()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
 					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
-	-- filling the dynamic group will be handled by the FunctionRunner so that many groups can be handled simultaneously and spread over multiple game frames automatically to reduce lag spikes
-	local DynamicOnUpdate = function(self)
-		self.OnUpdate = nil;
-		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
-		app.FunctionRunner.SetPerFrame(1);
-		-- run a direct update on itself after being populated if the Filler exists
-		if Filler then
-			app.FunctionRunner.Run(Filler, self);
-		end
-	end
 
 	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
 	local function DynamicCategory(group, field, value)
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
 		group.dynamic_value = value;
-		group.OnUpdate = DynamicOnUpdate;
+		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
+		app.FunctionRunner.SetPerFrame(1);
+		-- run a direct update on itself after being populated if the Filler exists
+		if Filler then
+			app.FunctionRunner.Run(Filler, group);
+		end
 		return group;
 	end
+
+	-- Adds all the Dynamic groups into the provided groups (g)
+	local function AddDynamicGroups(primeData)
+		local g = primeData.g;
+		-- Battle Pets - Dynamic
+		local db = {};
+		db.text = AUCTION_CATEGORY_BATTLE_PETS;
+		db.name = db.text;
+		db.icon = app.asset("Category_PetJournal");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "speciesID"));
+
+		-- Factions (Dynamic)
+		--[[
+		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
+		local factionsCategory = {};
+		factionsCategory.g = {};
+		factionsCategory.factions = {};
+		factionsCategory.expanded = false;
+		factionsCategory.icon = app.asset("Category_Factions");
+		factionsCategory.text = L["FACTIONS"];
+		tinsert(g, factionsCategory);
+		]]--
+
+		-- Illusions - Dynamic
+		db = {};
+		db.text = L["FILTER_ID_TYPES"][103];
+		db.name = db.text;
+		db.icon = 132853;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "illusionID"));
+
+		-- Mounts - Dynamic
+		db = {};
+		db.text = MOUNTS;
+		db.name = db.text;
+		db.icon = app.asset("Category_Mounts");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "mountID"));
+
+		-- Professions - Dynamic
+		db = {};
+		db.name = TRADE_SKILLS;
+		db.text = Colorize(db.name, app.Colors.SourceIgnored);
+		db.icon = app.asset("Category_Professions");
+		db.parent = primeData;
+		db.sourceIgnored = true;
+		tinsert(g, db);
+		if dynamicSetting ~= 2 then
+			local dynProfs = {};
+			for _,profID in pairs(app.ProfessionMaps) do
+				if not dynProfs[profID] then
+					dynProfs[profID] = true;
+					NestObject(db, DynamicCategory(app.CreateProfession(profID), "professionID", profID));
+				end
+			end
+			-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
+			app.SortGroupDelayed(db, "name");
+			BuildGroups(db, db.g);
+		end
+
+		-- Titles - Dynamic
+		db = {};
+		db.icon = app.asset("Category_Titles");
+		db.text = PAPERDOLL_SIDEBAR_TITLES;
+		db.name = db.text;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "titleID"));
+
+		-- Toys - Dynamic
+		db = {};
+		db.icon = app.asset("Category_ToyBox");
+		db.f = 102;
+		db.text = TOY_BOX;
+		db.name = db.text;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "toyID"));
+
+		-- TODO: add an OnEnd function for the FunctionRunner to print 'done creating Dynamic groups'
+	end
+
 	-- Update the Row Data by filtering raw data (this function only runs once)
 	local allData = setmetatable({}, {
 		__index = function(t, key)
@@ -17211,79 +17287,6 @@ function app:GetDataCache()
 	db.name = L["FLIGHT_PATHS"];
 	tinsert(g, flightPathsCategory);
 
-	-- Dynamic Categories
-	if dynamicSetting > 0 then
-
-		-- Battle Pets - Dynamic
-		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS;
-		db.name = db.text;
-		db.icon = app.asset("Category_PetJournal");
-		tinsert(g, DynamicCategory(db, "speciesID"));
-
-		-- Factions (Dynamic)
-		--[[
-		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
-		local factionsCategory = {};
-		factionsCategory.g = {};
-		factionsCategory.factions = {};
-		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = L["FACTIONS"];
-		tinsert(g, factionsCategory);
-		]]--
-
-		-- Illusions - Dynamic
-		db = {};
-		db.text = L["FILTER_ID_TYPES"][103];
-		db.name = db.text;
-		db.icon = 132853;
-		tinsert(g, DynamicCategory(db, "illusionID"));
-
-		-- Mounts - Dynamic
-		db = {};
-		db.text = MOUNTS;
-		db.name = db.text;
-		db.icon = app.asset("Category_Mounts");
-		tinsert(g, DynamicCategory(db, "mountID"));
-
-		-- Professions - Dynamic
-		db = {};
-		db.name = TRADE_SKILLS;
-		db.text = Colorize(db.name, app.Colors.SourceIgnored);
-		db.icon = app.asset("Category_Professions");
-		db.sourceIgnored = true;
-		tinsert(g, db);
-		-- don't generate Nested Dynamic professions currently... too slow
-		if dynamicSetting ~= 2 then
-			local dynProfs = {};
-			for _,profID in pairs(app.ProfessionMaps) do
-				if not dynProfs[profID] then
-					dynProfs[profID] = true;
-					NestObject(db, DynamicCategory(app.CreateProfession(profID), "professionID", profID));
-				end
-			end
-			-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
-			app.SortGroupDelayed(db, "name");
-			BuildGroups(db, db.g);
-		end
-
-		-- Titles - Dynamic
-		db = {};
-		db.icon = app.asset("Category_Titles");
-		db.text = PAPERDOLL_SIDEBAR_TITLES;
-		db.name = db.text;
-		tinsert(g, DynamicCategory(db, "titleID"));
-
-		-- Toys - Dynamic
-		db = {};
-		db.icon = app.asset("Category_ToyBox");
-		db.f = 102;
-		db.text = TOY_BOX;
-		db.name = db.text;
-		tinsert(g, DynamicCategory(db, "toyID"));
-	end
-
 	--[[
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
@@ -17510,6 +17513,24 @@ function app:GetDataCache()
 			end
 		end
 	}));
+
+	-- Create Dynamic Groups Button
+	tinsert(g, {
+		["text"] = "Click to Create Dynamic Groups",
+		["description"] = "Create Dynamic Groups",
+		["OnUpdate"] = app.AlwaysShowUpdate,
+		["OnClick"] = function(row, button)
+			local ref = row.ref;
+			ref.OnClick = nil;
+			ref.OnUpdate = nil;
+			ref.visible = nil;
+			local primeData = ref.parent;
+			if primeData then
+				app.print("Creating Dynamic Groups...");
+				AddDynamicGroups(primeData);
+			end
+		end,
+	});
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
