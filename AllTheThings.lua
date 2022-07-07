@@ -8320,10 +8320,10 @@ local function RefreshQuestCompletionState(questID)
 				Callback(app.RefreshCustomCollectibility);
 			end
 		end
-		if app.DEBUG_PRINT then
-			app.PrintDebug("Update Quests")
-			app.PrintTable(UpdateQuestIDs)
-		end
+		-- if app.DEBUG_PRINT then
+		-- 	app.PrintDebug("Update Quests")
+		-- 	app.PrintTable(UpdateQuestIDs)
+		-- end
 		UpdateRawIDs("questID", UpdateQuestIDs);
 		wipe(UpdateQuestIDs);
 	end
@@ -14205,7 +14205,7 @@ local function DirectGroupUpdate(group)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
-		app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
+		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain);
 	end
 end
@@ -16600,17 +16600,17 @@ local function UpdateWindow(self, force, got)
 			end
 			force = (force or self.HasPendingUpdate) and self:IsVisible();
 		end
-		app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
+		-- app.PrintDebug("Update:",self.Suffix, force and "FORCE", self:IsVisible() and "VISIBLE");
 		if force or self:IsVisible() then
 			if self.rowData then wipe(self.rowData);
 			else self.rowData = {}; end
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				app.PrintDebug("UpdateGroups",self.Suffix)
+				-- app.PrintDebug("UpdateGroups",self.Suffix)
 				TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
-				app.PrintDebugPrior("Done")
+				-- app.PrintDebugPrior("Done")
 			end
 
 			-- Should the groups in this window be expanded prior to processing the rows for display
@@ -16659,7 +16659,7 @@ local function UpdateWindow(self, force, got)
 			local expireTime = self.ExpireTime;
 			-- print("check ExpireTime",self.Suffix,expireTime)
 			if expireTime and expireTime > 0 and expireTime < time() then
-				app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
+				-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
 				app.Windows[self.Suffix] = nil;
 			end
 		end
@@ -16984,7 +16984,7 @@ function app:GetDataCache()
 			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
-			app.PrintDebug("Top-Root-Set",key,val)
+			-- app.PrintDebug("Top-Root-Set",key,val)
 			if key == "visible" then
 				return;
 			end
