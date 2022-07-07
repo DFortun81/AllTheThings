@@ -468,6 +468,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 380,	-- Night Web's Hollow
 							["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
