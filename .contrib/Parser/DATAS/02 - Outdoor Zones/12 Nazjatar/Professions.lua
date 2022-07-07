@@ -4,7 +4,7 @@
 
 root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(PROFESSIONS, {
-		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+		prof(ENCHANTING, {
 			["crs"] = {
 				153811, -- Instructor Okanu <Profession Trainer> (A)
 				154393, -- Narv <Profession Trainer> (H)
@@ -13,35 +13,8 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				{ 38.0, 53.2, NAZJATAR },
 				{ 49.2, 61.6, NAZJATAR },
 			},
-			["g"] = {
-				cat(1290, {	-- Mount Equipment
-					r(301412),	-- Light-Step Hoofplates
-				}),
-				cat(651, {	-- Ring Enchantments
-					r(298009),	-- Accord of Critical Strike [Rank 1]
-					r(298010),	-- Accord of Critical Strike [Rank 2]
-					r(297989),	-- Accord of Haste [Rank 1]
-					r(297994),	-- Accord of Haste [Rank 2]
-					r(297995),	-- Accord of Mastery [Rank 1]
-					r(298001),	-- Accord of Mastery [Rank 2]
-					r(297993),	-- Accord of Versatility [Rank 1]
-					r(297991),	-- Accord of Versatility [Rank 2]
-				}),
-				cat(1097, {	-- Wands
-					r(294781),	-- Notorious Combatant's Sorcerous Scepter [Rank 1]
-				}),
-				cat(652, {	-- Weapon Enchantments
-					r(298440),	-- Force Multiplier [Rank 1]
-					r(298439),	-- Force Multiplier [Rank 2]
-					r(298433),	-- Machinist's Brilliance [Rank 1]
-					r(300769),	-- Machinist's Brilliance [Rank 2]
-					r(298442),	-- Naga Hide [Rank 1]
-					r(298441),	-- Naga Hide [Rank 2]
-					r(298438),	-- Oceanic Restoration [Rank 1]
-					r(298437),	-- Oceanic Restoration [Rank 2]
-				}),
-			},
-		})),
+			["g"] = NAZJATAR_ENCHANTING,
+		}),
 		prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 			["crs"] = {
 				153811, -- Instructor Okanu <Profession Trainer> (A)
