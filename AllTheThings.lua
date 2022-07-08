@@ -7613,6 +7613,7 @@ app.CollectibleAsCost = function(t)
 			-- Found something collectible for t, make sure t is actually obtainable as well
 			-- Make sure this thing can actually be collectible via hierarchy
 			if GetRelativeValue(t, "altcollected") then
+				-- literally have not seen this message in months, maybe is pointless...
 				app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
 				return;
 			end
@@ -8035,7 +8036,7 @@ app.TryPopulateQuestRewards = function(questObject, force)
 	local questID = questObject and questObject.questID;
 	if not questID then
 		-- Update the group directly immediately since there's no quest to retrieve
-		app.PrintDebug("TPQR:No Quest")
+		-- app.PrintDebug("TPQR:No Quest")
 		questObject.retries = nil;
 		app.DirectGroupUpdate(questObject);
 		return;
@@ -14120,6 +14121,7 @@ UpdateGroups = function(parent, g, window)
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then
+					-- this will be irrelevant once DGU is used as needed
 					app.PrintDebug("update-doUpdate",group.doUpdate,"=>",group.hash)
 					window.doUpdate = true;
 				end
@@ -14687,7 +14689,7 @@ function app:CreateMiniListForGroup(group)
 			-- mark the popout to expire after 5 min from now if it is visible
 			if self:IsVisible() then
 				self.ExpireTime = time() + 300;
-				app.PrintDebug("Expire Refreshed",popout.Suffix)
+				-- app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
 			self:BaseUpdate(force or got, got);
 		end
