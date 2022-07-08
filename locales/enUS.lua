@@ -1181,7 +1181,7 @@ app.L = {
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
-		[-580] = app.asset("Category_Promo"),												-- Shadowlands Seasonal Promotions
+		[-580] = app.asset("Expansion_SL"),													-- Shadowlands Seasonal Promotions
 		[-581] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
 		[-582] = "Interface\\Icons\\inv_misc_mdi_banner02",									-- Mythic Dungeon International: Season 3
 	-- PvP Headers
