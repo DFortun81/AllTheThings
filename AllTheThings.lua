@@ -18064,7 +18064,7 @@ local function BuildSearchResponseByField(groups, field, clear)
 					if t then tinsert(t, clone);
 					else t = { clone }; end
 				end
-			elseif group.g then
+			else
 				response = BuildSearchResponseByField(group.g, field, clear);
 				if response then
 					local groupCopy = {};
