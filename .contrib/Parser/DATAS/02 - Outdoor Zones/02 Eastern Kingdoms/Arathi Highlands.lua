@@ -349,7 +349,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
 					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
 					["timeline"] = { "removed 4.0.3" },
-					["isYearly"] = true,
 					["lvl"] = 30,
 				}),
 				q(667, {	-- Death From Below
