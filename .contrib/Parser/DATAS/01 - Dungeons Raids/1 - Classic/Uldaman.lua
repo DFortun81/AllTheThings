@@ -692,12 +692,12 @@ root("Instances", tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(11073, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {	-- Annora <Master Enchanter>
+			n(11073, {	-- Annora <Master Enchanter>
 				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
 				-- #if BEFORE 2.1.0
 				["groups"] = EXPERT_ARTISAN_ENCHANTING,
 				-- #endif
-			})),
+			}),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,
 				["groups"] = {

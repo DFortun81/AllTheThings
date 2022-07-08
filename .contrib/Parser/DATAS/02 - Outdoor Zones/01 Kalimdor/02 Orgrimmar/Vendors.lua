@@ -2325,6 +2325,11 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 53.2, 48.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+					i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
+						["races"] = HORDE_ONLY,
+						["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+						["timeline"] = { "added 4.0.3" },
+					}),
 					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 						["isLimited"] = true,
 					}),

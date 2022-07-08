@@ -1510,7 +1510,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 60.8, 44.2, IRONFORGE },
 					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3346} }, -- Kithas <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -206,9 +206,7 @@ _.Zones =
 				n(4228,  {	-- Vaean <Enchanting Supplies>
 					["coord"] = { 56.6, 31.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
-					},
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
 					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
