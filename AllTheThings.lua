@@ -16850,7 +16850,7 @@ local DynamicCategory_Simple = function(self)
 		if dynamicValue then -- 164 (blacksmithing)
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then -- professionID = 164
-				app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
+				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
 				for _,source in pairs(dynamicValueCache) do
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] then
@@ -16890,7 +16890,7 @@ local DynamicCategory_Simple = function(self)
 						end
 					end
 				end
-				app.PrintDebugPrior("Complete")
+				-- app.PrintDebugPrior("Complete")
 				-- dynamic groups for Things within a specific Value of a Type are expected to be collected under a Header of the Type itself
 			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
 		else
@@ -16943,7 +16943,7 @@ local DynamicCategory_Nested = function(self)
 	-- change the text color of the dynamic group to help indicate it is not included in the window total
 	self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	-- pull out all Things which should go into this category based on field & value
-	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
+	self.g = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, true);
 	-- reset indents and such
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
@@ -17029,7 +17029,7 @@ function app:GetDataCache()
 			for _,profID in pairs(app.ProfessionMaps) do
 				if not dynProfs[profID] then
 					dynProfs[profID] = true;
-					NestObject(db, DynamicCategory(app.CreateProfession(profID), "professionID", profID));
+					NestObject(db, DynamicCategory(app.CreateProfession(profID), dynamicSetting == 2 and "requireSkill" or "professionID", profID));
 				end
 			end
 			-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
@@ -18044,33 +18044,36 @@ function app:RefreshData(lazy, got, manual)
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
 	end
 end
-function app:BuildSearchResponse(groups, field, value, clear)
-	-- TODO: have a different mapping that is built associating the Source groups to the already-cloned group
+
+do -- Search Response Logic
+local IncludeUnavailableRecipes, IgnoreBoEFilter;
+-- Set some logic which is used during recursion without needing to set it on every recurse
+local function SetRescursiveFilters()
+	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
+	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+end
+-- Collects a cloned hierarchy of groups which simply have the field defined
+local function BuildSearchResponseByField(groups, field, clear)
 	if groups then
-		local t, response, v;
-		local includeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
-		local ignoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+		local t, response, clone;
 		for _,group in ipairs(groups) do
-			v = group[field];
-			if v and (not value or
-				(v == value or
-					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then
+			if group[field] then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if includeUnavailableRecipes or not group.spellID or ignoreBoEFilter(group) then
-					local clone = clear and CreateObject(group, true) or CreateObject(group);
+				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+					clone = clear and CreateObject(group, true) or CreateObject(group);
 					if t then tinsert(t, clone);
 					else t = { clone }; end
 				end
 			elseif group.g then
-				response = app:BuildSearchResponse(group.g, field, value, clear);
+				response = BuildSearchResponseByField(group.g, field, clear);
 				if response then
 					local groupCopy = {};
 					-- copy direct group values only
 					MergeProperties(groupCopy, group);
 					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
-					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
-					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
+					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+					groupCopy.collectible = false;
 					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
 					groupCopy.sym = nil;
 					groupCopy.sourceParent = nil;
@@ -18081,6 +18084,55 @@ function app:BuildSearchResponse(groups, field, value, clear)
 		end
 		return t;
 	end
+end
+-- Collects a cloned hierarchy of groups which have the field defined with the required value
+local function BuildSearchResponseByFieldValue(groups, field, value, clear)
+	if groups then
+		local t, response, v, clone;
+		for _,group in ipairs(groups) do
+			v = group[field];
+			if v and (v == value or
+					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+					clone = clear and CreateObject(group, true) or CreateObject(group);
+					if t then tinsert(t, clone);
+					else t = { clone }; end
+				end
+			else
+				response = BuildSearchResponseByFieldValue(group.g, field, value, clear);
+				if response then
+					local groupCopy = {};
+					-- copy direct group values only
+					MergeProperties(groupCopy, group);
+					-- no need to clone response, since it is already cloned above
+					groupCopy.g = response;
+					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+					groupCopy.collectible = false;
+					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+					groupCopy.sym = nil;
+					groupCopy.sourceParent = nil;
+					if t then tinsert(t, groupCopy);
+					else t = { groupCopy }; end
+				end
+			end
+		end
+		return t;
+	end
+end
+-- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
+-- should additionally clear their contents when being cloned
+function app:BuildSearchResponse(groups, field, value, clear)
+	if groups then
+		-- app.PrintDebug("BSR:",field,value,clear)
+		SetRescursiveFilters();
+		if value then
+			return BuildSearchResponseByFieldValue(groups, field, value, clear);
+		else
+			return BuildSearchResponseByField(groups, field, clear);
+		end
+	end
+end
 end
 
 -- Store the Custom Windows Update functions which are required by specific Windows
