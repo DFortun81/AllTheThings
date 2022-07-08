@@ -316,27 +316,30 @@ local FunctionRunnerCoroutine = function()
 		perFrame = perFrame - 1;
 		params = ParameterBucketQueue[i];
 		if params then
-			app.PrintDebug("FRC.Run.N",i,params)
+			-- app.PrintDebug("FRC.Run.N",i,params)
 			func(unpack(params));
 		else
-			app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
+			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
 			func(ParameterSingleQueue[i]);
 		end
 		-- app.PrintDebug("FRC.Done",i)
 		if perFrame <= 0 then
-			app.PrintDebug("FRC.Yield")
+			-- app.PrintDebug("FRC.Yield")
 			coroutine.yield();
 			perFrame = Config.PerFrame;
 		end
 		i = i + 1;
 		func = FunctionQueue[i];
 	end
+	-- Run the OnEnd function if it exists
+	local OnEnd = FunctionQueue[0];
+	if OnEnd then OnEnd(); end
 	-- when done with all functions in the queue, reset the queue index and clear the queues of data
 	QueueIndex = 1;
+	-- app.PrintDebug("FRC.End")
 	wipe(FunctionQueue);
 	wipe(ParameterBucketQueue);
 	wipe(ParameterSingleQueue);
-	app.PrintDebug("FRC.End")
 end
 
 -- Provides a utility which will process a given number of functions each frame in a queue
@@ -360,6 +363,10 @@ local FunctionRunner = {
 	-- Defines how many functions will be executed per frame
 	["SetPerFrame"] = function(count)
 		Config.PerFrame = math.max(1, tonumber(count) or 1);
+	end,
+	-- Set a function to be run once the queue is empty. This function takes no parameters.
+	["OnEnd"] = function(func)
+		FunctionQueue[0] = func;
 	end,
 };
 
@@ -16971,6 +16978,8 @@ function app:GetDataCache()
 	-- Adds all the Dynamic groups into the provided groups (g)
 	local function AddDynamicGroups(primeData)
 		local g = primeData.g;
+		app.print("Loading Dynamic Groups...");
+
 		-- Battle Pets - Dynamic
 		local db = {};
 		db.text = AUCTION_CATEGORY_BATTLE_PETS;
@@ -17045,7 +17054,8 @@ function app:GetDataCache()
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "toyID"));
 
-		-- TODO: add an OnEnd function for the FunctionRunner to print 'done creating Dynamic groups'
+		-- add an OnEnd function for the FunctionRunner to print being done
+		app.FunctionRunner.OnEnd(function() app.print("Dynamic Groups Loaded"); end);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
@@ -17518,6 +17528,7 @@ function app:GetDataCache()
 	tinsert(g, {
 		["text"] = "Click to Create Dynamic Groups",
 		["description"] = "Create Dynamic Groups",
+		["icon"] = 4200123,	-- misc-rnrgreengobutton
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		["OnClick"] = function(row, button)
 			local ref = row.ref;
@@ -17526,7 +17537,6 @@ function app:GetDataCache()
 			ref.visible = nil;
 			local primeData = ref.parent;
 			if primeData then
-				app.print("Creating Dynamic Groups...");
 				AddDynamicGroups(primeData);
 			end
 		end,
