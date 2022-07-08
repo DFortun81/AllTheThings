@@ -16943,7 +16943,7 @@ local DynamicCategory_Nested = function(self)
 	-- change the text color of the dynamic group to help indicate it is not included in the window total
 	self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	-- pull out all Things which should go into this category based on field & value
-	self.g = app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, true);
+	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, true));
 	-- reset indents and such
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
@@ -17024,18 +17024,18 @@ function app:GetDataCache()
 		db.parent = primeData;
 		db.sourceIgnored = true;
 		tinsert(g, db);
-		if dynamicSetting ~= 2 then
-			local dynProfs = {};
-			for _,profID in pairs(app.ProfessionMaps) do
-				if not dynProfs[profID] then
-					dynProfs[profID] = true;
-					NestObject(db, DynamicCategory(app.CreateProfession(profID), dynamicSetting == 2 and "requireSkill" or "professionID", profID));
-				end
+		local prof;
+		local dynProfs = {};
+		for _,profID in pairs(app.ProfessionMaps) do
+			if not dynProfs[profID] then
+				dynProfs[profID] = true;
+				prof = app.CreateProfession(profID);
+				prof.parent = db;
+				NestObject(db, DynamicCategory(prof, dynamicSetting == 2 and "requireSkill" or "professionID", profID));
 			end
-			-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
-			app.SortGroupDelayed(db, "name");
-			BuildGroups(db, db.g);
 		end
+		-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
+		app.SortGroupDelayed(db, "name");
 
 		-- Titles - Dynamic
 		db = {};
@@ -17988,7 +17988,7 @@ function app:GetDataCache()
 	app.PrintDebug("Finished app.GetDataCache")
 	app.PrintMemoryUsage()
 	app.GetDataCache = function()
-		app.PrintDebug("Cached GetDataCache")
+		-- app.PrintDebug("Cached GetDataCache")
 		return app:GetWindow("Prime").data;
 	end
 	return allData;
