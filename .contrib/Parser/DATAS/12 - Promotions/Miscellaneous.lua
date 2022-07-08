@@ -1,22 +1,6 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
-	["timeline"] = { "added 9.0.5" },
-	["description"] = "Granted to players by logging in on character of at least level 20.",
-});
-local FEARLESS_SPECTATOR_ACH = ach(15594, {	-- Fearless Spectator
-	["timeline"] = { "added 9.2.5" },
-	["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. Just link your Battle.net account to your YouTube account and watch eligible streams.",
-});
-local FEARLESS_SPECTATOR_TITLE = title(459, {	-- 	Fearless Spectator <Name>
-	["timeline"] = { "added 9.2.5" },
-	["description"] = "Granted to players who watch MDI Global Finals, AWC Grand Finals or AWC Cross-Region Tournament for 2 total hours in July 2022. Just link your Battle.net account to your YouTube account and watch eligible streams.",
-});
-local JEWEL_OF_THE_FIRELORD = i(95474, {	-- Jewel of the Firelord
-	["timeline"] = { "added 9.2.5" },
-	["description"] = "Obtained through Prime Gaming.",
-});
 
 root("Promotions", filter(MISC, {
 	["description"] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
@@ -36,8 +20,6 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
-		FEARLESS_SPECTATOR_ACH,
-		FEARLESS_SPECTATOR_TITLE,
 		i(32465, {	-- Fortune Cookie (Lucky)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
@@ -46,7 +28,6 @@ root("Promotions", filter(MISC, {
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
-		JEWEL_OF_THE_FIRELORD,
 		i(103632, {	-- Lucky Box of Greatness
 			["description"] = "Reward from the Azeroth Academy Mentor Recruitment Promotion (China Only)",
 			["timeline"] = { "added 5.4.0.17169" },
@@ -94,7 +75,6 @@ root("Promotions", filter(MISC, {
 			["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 			["timeline"] = { "added 3.0.1" },
 		}),
-		WANDERING_ANCIENT,
 		ach(9496, {	-- Warlord's Deathwheel
 			["timeline"] = { "added 6.0.2.18888" },
 		}),
@@ -104,7 +84,3 @@ root("Promotions", filter(MISC, {
 		}),
 	}),
 }));
-WANDERING_ANCIENT.u = nil;
-FEARLESS_SPECTATOR_ACH.u = nil;
-FEARLESS_SPECTATOR_TITLE.u = nil;
-JEWEL_OF_THE_FIRELORD.u = BLIZZARD_BALANCE;

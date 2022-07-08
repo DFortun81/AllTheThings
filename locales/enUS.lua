@@ -1181,8 +1181,9 @@ app.L = {
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
 		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
-		[-580] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
-		[-581] = "Interface\\Icons\\inv_misc_mdi_banner02",									-- Mythic Dungeon International: Season 3
+		[-580] = app.asset("Category_Promo"),												-- Shadowlands Seasonal Promotions
+		[-581] = "Interface\\Icons\\inv_misc_mdi_banner01",									-- The Great Push: Season 2
+		[-582] = "Interface\\Icons\\inv_misc_mdi_banner02",									-- Mythic Dungeon International: Season 3
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1710,8 +1711,9 @@ app.L = {
 		[-577] = "Warcraft Movie",												-- Warcraft Movie
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
-		[-580] = "The Great Push: Season 2",									-- The Great Push: Season 2
-		[-581] = "Mythic Dungeon International: Season 3",						-- Mythic Dungeon International: Season 3
+		[-580] = "Shadowlands Seasonal Promotion",								-- Shadowlands Seasonal Promotion
+		[-581] = "The Great Push: Season 2",									-- The Great Push: Season 2
+		[-582] = "Mythic Dungeon International: Season 3",						-- Mythic Dungeon International: Season 3
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
