@@ -13,12 +13,14 @@ root("Promotions", filter(MISC, {
 			["description"] = "Granted to players that attach an authenticator to their account.",
 			["timeline"] = { "added 3.3.0.10958" },
 		})),
-		ach(3896, {	-- Onyx Panther
-			["timeline"] = { "added 4.0.3.13287" },
-		}),
 		i(48527, {	-- Enchanted Onyx (Onyx Panther)
 			["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
-			["timeline"] = { "added 4.0.3.13287" },
+			["timeline"] = { "added 3.2.2.13287" },
+			["g"] = {
+				ach(3896, {	-- Onyx Panther
+					["timeline"] = { "added 3.2.2.13287" },
+				}),
+			},
 		}),
 		i(32465, {	-- Fortune Cookie (Lucky)
 			["description"] = "Reward from the 2007 Korean Worldwide Invitational (Korea Only)",
