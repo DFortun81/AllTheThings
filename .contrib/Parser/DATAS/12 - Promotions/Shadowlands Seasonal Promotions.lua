@@ -27,7 +27,7 @@ local WANDERING_ANCIENT = mount(348162, {	-- Wandering Ancient (MOUNT!)
 });
 
 root("Promotions",  --[[bubbleDown({ ["u"] = REMOVED_FROM_GAME },--]] {
-	n(-580, {	-- Shadowlands Seasonal Promotion
+	n(-580, {	-- Shadowlands Seasonal Promotions
 		["groups"] = {
 			CROWN_OF_THE_ETERNAL_WINTER,
 			FEARLESS_SPECTATOR_ACH,
