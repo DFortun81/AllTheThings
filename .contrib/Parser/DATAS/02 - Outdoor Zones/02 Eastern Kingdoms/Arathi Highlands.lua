@@ -1994,15 +1994,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						2780,	-- Caretaker Nevlin
 						2781,	-- Caretaker Weston
 					},
-					-- #if BEFORE WRATH
-					-- #if AFTER TBC
-					["description"] = "This item is only naturally accessible to Horde players and was possibly converted into a (unconfirmed) world drop with TBC and no longer drops from the Caretakers exclusively. It returns to being an exclusive drop from him with Wrath.",
-					-- #else
-					["description"] = "This item is only naturally accessible to Horde players and possibly gets converted into a (unconfirmed) world drop with TBC and no longer drops from the Caretakers exclusively. It might return to being an exclusive drop from them with Wrath.",
-					-- #endif
+					-- #if BEFORE 4.0.3
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {

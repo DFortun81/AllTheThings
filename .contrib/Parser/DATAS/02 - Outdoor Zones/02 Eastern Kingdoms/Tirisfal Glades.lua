@@ -2018,14 +2018,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4303, {	-- Cranial Thumper
-							-- #if BEFORE WRATH
-							-- #if AFTER TBC
-							["description"] = "This item was possibly converted into a (unconfirmed) world drop with TBC and no longer drops from Deeb or The Rake exclusively. It returns to being an exclusive drop from Deeb with Wrath.",
-							-- #else
-							["description"] = "This item possibly gets converted into a (unconfirmed) world drop with TBC and no longer drops from Deeb or The Rake exclusively. It returns to being an exclusive drop from Deeb with Wrath.",
-							-- #endif
-							-- #endif
-							["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
@@ -2318,15 +2311,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 1535,	-- Scarlet Warrior
 				}),
 				i(3330, {	-- Dargol's Hauberk
-					-- #if BEFORE WRATH
-					-- #if AFTER TBC
-					["description"] = "This item was possibly converted into a (unconfirmed) world drop with TBC and no longer drops from Captain Dargol exclusively. It returns to being an exclusive drop from him with Wrath.",
-					-- #else
-					["description"] = "This item possibly gets converted into a (unconfirmed) world drop with TBC and no longer drops from Captain Dargol exclusively. It returns to being an exclusive drop from him with Wrath.",
-					-- #endif
-					-- #endif
 					["coord"] = { 52.6, 26.2, TIRISFAL_GLADES },
-					["timeline"] = { "removed 2.0.1", "added 3.0.1", "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1658,	-- Captain Dargol
 				}),
 				i(3335, {	-- Farmer's Broom
