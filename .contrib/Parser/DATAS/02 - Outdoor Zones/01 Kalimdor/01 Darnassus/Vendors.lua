@@ -75,7 +75,7 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 					["groups"] = {
-						i(12162, {	-- Plans: Hardened Iron Shortsword
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

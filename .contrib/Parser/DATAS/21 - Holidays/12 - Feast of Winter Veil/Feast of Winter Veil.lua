@@ -765,7 +765,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 					i(17722),	-- Pattern: Gloves of the Greatfather
 					i(17724),	-- Pattern: Green Holiday Shirt
-					i(17706),	-- Plans: Edge of Winter
+					i(17706),	-- Plans: Edge of Winter (RECIPE!)
 					i(17709),	-- Recipe: Elixir of Frost Power
 					i(17720),	-- Schematic: Snowmaster 9000
 					i(21325),	-- Mechanical Greench
@@ -1688,7 +1688,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				-- #endif
 				i(17722),	-- Pattern: Gloves of the Greatfather
 				i(17724),	-- Pattern: Green Holiday Shirt
-				i(17706),	-- Plans: Edge of Winter
+				i(17706),	-- Plans: Edge of Winter (RECIPE!)
 				i(17709),	-- Recipe: Elixir of Frost Power
 				i(17720),	-- Schematic: Snowmaster 9000
 			}),

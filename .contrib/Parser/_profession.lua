@@ -1,6 +1,164 @@
+local OTHER = 114;
+-------------------
+-- BLACKSMITHING --
+-------------------
+APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+	r(2018, {	-- Blacksmithing (Apprentice)
+		["collectible"] = false,
+	}),
+	r(3100, {	-- Blacksmithing (Journeyman)
+		["timeline"]={ "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	r(3538, {	-- Blacksmithing (Expert)
+		["timeline"]={ "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	n(ARMOR, {
+		r(2661),	-- Copper Chain Belt
+		r(3319),	-- Copper Chain Boots
+		r(2663),	-- Copper Bracers
+		r(2662),	-- Copper Chain Pants
+		r(7223),	-- Golden Scale Bracers
+		r(3501),	-- Green Iron Bracers
+		r(3508),	-- Green Iron Hauberk
+		r(3502),	-- Green Iron Helm
+		r(3506),	-- Green Iron Leggings
+		r(9928),	-- Heavy Mithril Gauntlet
+		r(9926),	-- Heavy Mithril Shoulder
+		r(2672),	-- Patterned Bronze Bracers
+		r(7817),	-- Rough Bronze Boots
+		r(2670),	-- Rough Bronze Cuirass
+		r(2668),	-- Rough Bronze Leggings
+		r(3328),	-- Rough Bronze Shoulders
+		r(12260),	-- Rough Copper Vest
+		r(2666),	-- Runed Copper Belt
+		r(2664),	-- Runed Copper Bracers
+		r(3323),	-- Runed Copper Gauntlets
+		r(3324),	-- Runed Copper Pants
+		r(9931),	-- Mithril Scale Pants
+		r(2675),	-- Shining Silver Breastplate
+		r(3331),	-- Silvered Bronze Boots
+		r(3333),	-- Silvered Bronze Gauntlets
+		r(9916),	-- Steel Breastplate
+		r(9935),	-- Steel Plate Helm
+	}),
+	n(MISC, {
+		r(3326),	-- Coarse Grinding Stone
+		r(2665),	-- Coarse Sharpening Stone
+		r(3116),	-- Coarse Weightstone
+		r(14379, {["timeline"]={"removed 5.0.4"}}),	-- Golden Rod
+		r(19667),	-- Golden Skeleton Key
+		r(3337),	-- Heavy Grinding Stone
+		r(2674),	-- Heavy Sharpening Stone
+		r(3117),	-- Heavy Weightstone
+		r(8768),	-- Iron Buckle
+		r(7818, {["timeline"]={"removed 5.0.4"}}),	-- Silver Rod
+		r(19666),	-- Silver Skeleton Key
+		r(3320),	-- Rough Grinding Stone
+		r(2660),	-- Rough Sharpening Stone
+		r(3115),	-- Rough Weightstone
+		r(9920),	-- Solid Grinding Stone
+		r(9918),	-- Solid Sharpening Stone
+		r(9921),	-- Solid Weightstone
+		r(14380, {["timeline"]={"removed 5.0.4"}}),	-- Truesilver Rod
+		r(19668),	-- Truesilver Skeleton Key
+	}),
+	n(WEAPONS, {
+		r(2738),	-- Copper Axe
+		r(3491),	-- Big Bronze Knife
+		r(2741),	-- Bronze Axe
+		r(9987),	-- Bronze Battle Axe
+		r(9986),	-- Bronze Greatsword
+		r(2740),	-- Bronze Mace
+		r(2742),	-- Bronze Shortsword
+		r(9985),	-- Bronze Warhammer
+		r(3293),	-- Copper Battle Axe
+		r(9983),	-- Copper Claymore
+		r(8880),	-- Copper Dagger
+		r(2737),	-- Copper Mace
+		r(2739),	-- Copper Shortsword
+		r(3296),	-- Heavy Bronze Mace
+		r(3292),	-- Heavy Copper Broadsword
+		r(7408),	-- Heavy Copper Maul
+		r(9993),	-- Heavy Mithril Axe
+		r(6517),	-- Pearl-handled Dagger
+		r(3294),	-- Thick War Axe
+	}),
+});
+ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+	r(9785, {	-- Blacksmithing (Artisan)
+		["timeline"]={ "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	n(ARMOR, {
+		r(9968),	-- Heavy Mithril Boots
+		r(9959),	-- Heavy Mithril Breastplate
+		-- #if AFTER CATA
+		r(16647),	-- Imperial Plate Belt
+		r(16657),	-- Imperial Plate Boots
+		r(16649),	-- Imperial Plate Bracers
+		r(16663),	-- Imperial Plate Chest
+		r(16658),	-- Imperial Plate Helm
+		r(16730),	-- Imperial Plate Leggings
+		r(16646),	-- Imperial Plate Shoulders
+		-- #endif
+		r(9961),	-- Mithril Coif
+	}),
+	n(WEAPONS, {
+		r(10001),	-- Big Black Mace
+	}),
+	cat(OTHER, {	-- Materials
+		r(20201, {["timeline"]={"removed 5.0.4"}}),	-- Arcanite Rod
+		r(19669),	-- Arcanite Skeleton Key
+		r(16639),	-- Dense Grinding Stone
+		r(16641),	-- Dense Sharpening Stone
+		r(16640),	-- Dense Weightstone
+	}),
+});
+WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+	r(9787, {	-- Weaponsmith
+		["timeline"]={ "removed 4.0.3" },
+		["collectible"] = false,
+	}),
+	r(17041, {	-- Master Axesmith
+		["timeline"]={ "removed 4.0.3" },
+		["collectible"] = false,
+	}),
+	r(17039, {	-- Master Swordsmith
+		["timeline"]={ "removed 4.0.3" },
+		["collectible"] = false,
+	}),
+	r(17040, {	-- Master Hammersmith
+		["timeline"]={ "removed 4.0.3" },
+		["collectible"] = false,
+	}),
+	r(10003, {["timeline"]={"removed 4.0.3"}}),	-- The Shatterer
+	r(10007, {["timeline"]={"removed 4.0.3"}}),	-- Phantom Blade
+	r(10011, {["timeline"]={"removed 4.0.3"}}),	-- Blight
+	r(10015, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champio
+});
+ARMORSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+	r(9788, {	-- Armorsmith
+		["timeline"]={ "removed 4.0.3" },
+		["collectible"] = false,
+	}),
+	r(9974, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Breastplate
+	r(9954, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Gauntlets
+});
+CLASSIC_BLACKSMITHING = appendGroups(APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING,
+-- #if AFTER 2.1.0
+ARTISAN_BLACKSMITHING
+-- #endif
+);
+----------------
+-- ENCHANTING --
+----------------
 local WEAPON_ENCHANTMENTS = 652;
 local ARMOR_ENCHANTMENTS = 657;
-local OTHER = 114;
+local HEAVENLY_SHARD = 52721;
+local MAELSTORM_CRYSTAL = 52722
+local SECRET_OF_DRAENOR_ENCHANTING = 119293;
 APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
 	r(7411, {	-- Enchanting (Apprentice)
 		["collectible"] = false,
@@ -257,52 +415,44 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"
 	}),
 }));
 COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 4.0.3" } }, {
-	i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
-		["races"] = HORDE_ONLY,
-		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-	}),
-	i(67312, {	-- Formula: Magic Lamp (RECIPE!)
-		["races"] = ALLIANCE_ONLY,
-		["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-	}),
 	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(64412, {	-- Formula: Enchant Boots - Lavawalker (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(52738, {	-- Formula: Enchant Bracer - Greater Critical Strike (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(64413, {	-- Formula: Enchant Bracer - Greater Speed (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(52740, {	-- Formula: Enchant Chest - Greater Stamina (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(52739, {	-- Formula: Enchant Chest - Peerless Stats (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(52737, {	-- Formula: Enchant Cloak - Greater Critical Strike (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(64414, {	-- Formula: Enchant Gloves - Greater Mastery (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(64415, {	-- Formula: Enchant Gloves - Mighty Strength (RECIPE!)
-		["cost"] = { { "i", 52721, 5 }, },	-- 5x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
 	i(52736, {	-- Formula: Enchant Weapon - Landslide (RECIPE!)
-		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
 	}),
 	i(52733, {	-- Formula: Enchant Weapon - Power Torrent (RECIPE!)
-		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
 	}),
 	i(52735, {	-- Formula: Enchant Weapon - Windwalk (RECIPE!)
-		["cost"] = { { "i", 52722, 5 }, },	-- 5x Maelstrom Crystal
+		["cost"] = { { "i", MAELSTORM_CRYSTAL, 5 } },
 	}),
 	i(65359, {	-- Formula: Runed Elementium Rod (RECIPE!)
-		["cost"] = { { "i", 52721, 1 }, },	-- 1x Heavenly Shard
+		["cost"] = { { "i", HEAVENLY_SHARD, 1 } },
 		["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 	}),
 }));
@@ -336,9 +486,6 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["requireSkill"] 
 		r(104420),	-- Superior Mastery
 		r(104397),	-- Superior Stamina
 	}),
-	cat(702, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
-
-	})),
 	cat(OTHER, {
 		r(116498),	-- Ethereal Shard
 		r(118238),	-- Ethereal Shatter
@@ -379,105 +526,105 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 })));
 COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 6.0.2" } }, {
 	i(118394, {	-- Formula: Enchant Cloak - Breath of Critical Strike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118429, {	-- Formula: Enchant Cloak - Breath of Haste (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118430, {	-- Formula: Enchant Cloak - Breath of Mastery (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118431, {	-- Formula: Enchant Cloak - Breath of Multistrike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
 	}),
 	i(118432, {	-- Formula: Enchant Cloak - Breath of Versatility (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118433, {	-- Formula: Enchant Cloak - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118434, {	-- Formula: Enchant Cloak - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118435, {	-- Formula: Enchant Cloak - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118436, {	-- Formula: Enchant Cloak - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
 	}),
 	i(118437, {	-- Formula: Enchant Cloak - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118438, {	-- Formula: Enchant Neck - Breath of Critical Strike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118439, {	-- Formula: Enchant Neck - Breath of Haste (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118440, {	-- Formula: Enchant Neck - Breath of Mastery (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118441, {	-- Formula: Enchant Neck - Breath of Multistrike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
 	}),
 	i(118442, {	-- Formula: Enchant Neck - Breath of Versatility (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118443, {	-- Formula: Enchant Neck - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118444, {	-- Formula: Enchant Neck - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118445, {	-- Formula: Enchant Neck - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118446, {	-- Formula: Enchant Neck - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
 	}),
 	i(118447, {	-- Formula: Enchant Neck - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118453, {	-- Formula: Enchant Ring - Gift of Critical Strike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118454, {	-- Formula: Enchant Ring - Gift of Haste (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118455, {	-- Formula: Enchant Ring - Gift of Mastery (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118456, {	-- Formula: Enchant Ring - Gift of Multistrike (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 6.0.2", "removed 7.0.3" },
 	}),
 	i(118457, {	-- Formula: Enchant Ring - Gift of Versatility (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
 	i(118463, {	-- Formula: Enchant Weapon - Mark of Blackrock (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(118467, {	-- Formula: Enchant Weapon - Mark of Bleeding Hollow (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(118462, {	-- Formula: Enchant Weapon - Mark of Shadowmoon (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(118461, {	-- Formula: Enchant Weapon - Mark of the Frostwolf (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(118458, {	-- Formula: Enchant Weapon - Mark of the Thunderlord (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(118460, {	-- Formula: Enchant Weapon - Mark of Warsong (RECIPE!)
-		["cost"] = { { "i", 119293, 5 }, },	-- 5x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 5 } },
 	}),
 	i(138882, {	-- Formula: Tome of Illusions: Draenor (RECIPE!)
-		["cost"] = { { "i", 119293, 1 }, },	-- 1x Secret of Draenor Enchanting
+		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 		["timeline"] = { "added 7.0.3" },
 	}),
 }));
@@ -610,5 +757,193 @@ SL_ENCHANTING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["requireSkill"] = 
 		r(309621),	-- Eternal Grace
 		r(309620),	-- Lightless Force
 		r(309623),	-- Sinful Revelation
+	}),
+}));
+
+-----------------
+-- INSCRIPTION --
+-----------------
+local GLYPHS = 111;
+local SCROLLS = 107;
+CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = INSCRIPTION, ["timeline"] = { "added 3.0.2" } }, {
+	r(51005, {	-- Milling
+		["collectible"] = false,
+	}),
+	cat(OTHER, {
+		r(59487),	-- Arcane Tarot
+		r(52739),	-- Armor Vellum / Enchanting Vellum[CATA+]
+		r(59499, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Armor Vellum II
+		r(59490),	-- Book of Stars
+		r(59478),	-- Book of Survival
+		r(57709),	-- Celestial Ink
+		r(59387),	-- Certificate of Ownership
+		r(59502),	-- Darkmoon Card
+		r(57706),	-- Dawnstar Ink
+		r(57710),	-- Fiery Ink
+		r(59489),	-- Fire Eater's Guide
+		r(57703),	-- Hunter's Ink
+		r(57712),	-- Ink of the Sky
+		r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink
+		r(57707),	-- Jadefire Ink
+		r(57704),	-- Lion's Ink
+		r(59494),	-- Manual of Clouds
+		r(53462),	-- Midnight Ink
+		r(61288, {["timeline"]={"removed 6.0.2"}}),	-- Minor Inscription Research
+		r(52843),	-- Moonglow Ink
+		r(48247),	-- Mysterious Tarot
+		r(58565),	-- Mystic Tome
+		r(165461, {["timeline"]={"added 6.0.2"}}),	-- Research: Celestial Ink
+		r(165460, {["timeline"]={"added 6.0.2"}}),	-- Research: Jadefire Ink
+		r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink
+		r(165304, {["timeline"]={"added 6.0.2"}}),	-- Research: Midnight Ink
+		r(165564, {["timeline"]={"added 6.0.2"}}),	-- Research: Moonglow Ink
+		r(165463, {["timeline"]={"added 6.0.2"}}),	-- Research: Shimmering Ink
+		r(59486),	-- Royal Guide of Escape Routes
+		r(57708),	-- Royal Ink
+		r(59491),	-- Shadowy Tarot
+		r(57711),	-- Shimmering Ink
+		r(59493),	-- Stormbound Tome
+		r(59480),	-- Strange Tarot
+		r(59484),	-- Tome of Kings
+		r(59475),	-- Tome of the Dawn
+		r(92026, {["timeline"]={"added 4.0.3"}}),	-- Vanishing Powder
+		r(52840, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Weapon Vellum
+		r(59488, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Weapon Vellum II
+	}),
+	filter(GLYPHS, {
+		r(56971, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
+		r(56997, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
+		r(57114, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Backstab / Glyph of Decoy[MOP+]
+		r(57151, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Barbaric Insults
+		r(56973, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Blink
+		r(57020, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Cleansing / Glyph of Final Wrath[MOP+]
+		r(57154, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Cleaving / Glyph of Hindering Strikes[MOP+]
+		r(57023, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Consecration
+		r(57259, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
+		r(57024, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
+		r(57213, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
+		r(57031, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Divinity
+		r(48121, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Entangling Roots
+		r(57119, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Evasion
+		r(57120, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
+		r(56974, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Evocation
+		r(57156, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Execution
+		r(57025, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
+		r(57121, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Expose Armor
+		r(57262, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fear
+		r(57239, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flame Shock
+		r(56976, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Nova
+		r(57241, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Shock
+		r(57216, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
+		r(57125, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Gouge
+		r(57157, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
+		r(56945, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Touch
+		r(57266, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
+		r(57158, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Heroic Strike
+		r(57029, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
+		r(57004, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
+		r(56981, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Icy Veins
+		r(57269, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
+		r(57030, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
+		r(57244, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
+		r(57245, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
+		r(57246, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
+		r(56985, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
+		r(56961, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Maul
+		r(57200, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
+		r(56951, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
+		r(57161, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
+		r(57162, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
+		r(56953, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rebirth
+		r(56955, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rejuvenation
+		r(57163, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Rending
+		r(57165, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
+		r(56956, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
+		r(56982, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Scorch
+		r(57270, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Searing Pain
+		r(57271, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Shadow Bolt
+		r(57272, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Shadowburn
+		r(57131, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
+		r(57132, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slice and Dice / Glyph of Shiv[MOP+]
+		r(57274, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Soulstone
+		r(57167, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
+		r(57277, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Voidwalker / Glyph of Falling Meteor[MOP+]
+		r(56963, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
+		-- not done
+		r(57194, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Power Word: Shield
+		r(67600, {["timeline"]={"added 3.2.0","removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
+		r(57196, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Psychic Scream
+		r(57184, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Fade
+		r(57186, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
+		r(57188, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Inner Fire
+		r(57197, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Renew
+		r(57201, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Smite
+		r(57183, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
+		r(64261, {["timeline"]={"added 3.1.0","removed 8.1.0"}}),	-- Glyph of Earth Shield / Glyph of Deluge[MOP+]
+		r(57185, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fear Ward
+		r(64266, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
+		r(64267, {["timeline"]={"added 3.1.0","removed 4.0.3"}}),	-- Glyph of Disease
+		r(57133, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Sprint
+		-- #if BEFORE WOD
+		-- These Recipes changed from trainer to Research (and expansion) with WoD revamp
+		r(56994, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
+		r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
+		r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+		r(57210, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
+		r(57000, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Deterrence
+		r(57001, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Disengage
+		r(57238, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
+		r(57240, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
+		r(57002, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Freezing Trap
+		r(57123, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
+		r(57027, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
+		r(57265, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
+		r(56978, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+		r(56979, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Block
+		r(57005, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+		r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
+		r(57007, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
+		r(57129, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
+		r(57009, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
+		r(56959, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
+		r(57249, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
+		r(57251, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
+		-- Not done
+		r(64258, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
+		r(64259, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
+		r(64262, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+		r(57219, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
+		-- #endif
+	}),
+	cat(SCROLLS, {
+		r(58472),	-- Scroll of Agility
+		r(58473),	-- Scroll of Agility II
+		r(58476),	-- Scroll of Agility III
+		r(58478),	-- Scroll of Agility IV
+		r(58480),	-- Scroll of Agility V
+		r(48114),	-- Scroll of Intellect
+		r(50598),	-- Scroll of Intellect II
+		r(50599),	-- Scroll of Intellect III
+		r(50600),	-- Scroll of Intellect IV
+		r(50601),	-- Scroll of Intellect V
+		r(48248),	-- Scroll of Recall
+		r(60336),	-- Scroll of Recall II
+		r(45382),	-- Scroll of Stamina
+		r(50612),	-- Scroll of Stamina II
+		r(50614),	-- Scroll of Stamina III
+		r(50616),	-- Scroll of Stamina IV
+		r(50617),	-- Scroll of Stamina V
+		r(50618),	-- Scroll of Stamina VI
+		r(58484),	-- Scroll of Strength
+		r(58485),	-- Scroll of Strength II
+		r(58486),	-- Scroll of Strength III
+		r(58487),	-- Scroll of Strength IV
+		r(58488),	-- Scroll of Strength V
+		r(48116),	-- Scroll of Versatility / WRATH: Scroll of Spirit
+		r(50605),	-- Scroll of Versatility II / WRATH: Scroll of Spirit II
+		r(50606),	-- Scroll of Versatility III / WRATH: Scroll of Spirit III
+		r(50607),	-- Scroll of Versatility IV  / WRATH: Scroll of Spirit IV
+		r(50608),	-- Scroll of Versatility V  / WRATH: Scroll of Spirit V
+		r(50609),	-- Scroll of Versatility VI / WRATH: Scroll of Spirit VI
 	}),
 }));

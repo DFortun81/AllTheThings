@@ -1546,7 +1546,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(1844, {	-- Foreman Marcrid
 					["coord"] = { 53.8, 68.4, EASTERN_PLAGUELANDS },
 					["groups"] = {
-						i(12836),	-- Plans: Frostguard
+						i(12836),	-- Plans: Frostguard (RECIPE!)
 					},
 				}),
 				n(10825, {	-- Gish the Unmoving
@@ -1664,8 +1664,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(19217),	-- Pattern: Argent Shoulders
 						i(19328),	-- Pattern: Dawn Treaders
 						i(19329),	-- Pattern: Golden Mantle of the Dawn
-						i(19203),	-- Plans: Girdle of the Dawn
-						i(19205),	-- Plans: Gloves of the Dawn
+						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
 						i(18173),	-- Shadow Mantle of the Dawn
 						i(136928),	-- Thaumaturgist's Orb (TOY!)

@@ -1384,7 +1384,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.1.5.23360" },
 					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
 					["groups"] = {
-						i(142358, {	-- Plans: Blazing Rapier
+						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
 							["timeline"] = { "added 7.1.5.23360" },
 						}),
 					},

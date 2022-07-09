@@ -55,7 +55,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					["lvl"] = lvlsquish(60, 20, 60),
 					["groups"] = {
-						i(18592),	-- Plans: Sulfuron Hammer
+						i(18592),	-- Plans: Sulfuron Hammer (RECIPE!)
 					},
 				}),
 				q(4264, {	-- A Crumpled Up Note
@@ -1351,46 +1351,46 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(17023, {	-- Pattern: Molten Helm
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
-					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty
+					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19209, {	-- Plans: Blackfury
+					applyclassicphase(PHASE_THREE, i(19209, {	-- Plans: Blackfury (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19211, {	-- Plans: Blackguard
+					applyclassicphase(PHASE_THREE, i(19211, {	-- Plans: Blackguard (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					applyclassicphase(PHASE_FOUR, i(20040, {	-- Plans: Dark Iron Boots
+					applyclassicphase(PHASE_FOUR, i(20040, {	-- Plans: Dark Iron Boots (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					i(17051, {	-- Plans: Dark Iron Bracers
+					i(17051, {	-- Plans: Dark Iron Bracers (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
-					i(17060, {	-- Plans: Dark Iron Destroyer
+					i(17060, {	-- Plans: Dark Iron Destroyer (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
-					applyclassicphase(PHASE_THREE, i(19207, {	-- Plans: Dark Iron Gauntlets
+					applyclassicphase(PHASE_THREE, i(19207, {	-- Plans: Dark Iron Gauntlets (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19206, {	-- Plans: Dark Iron Helm
+					applyclassicphase(PHASE_THREE, i(19206, {	-- Plans: Dark Iron Helm (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					i(17052, {	-- Plans: Dark Iron Leggings
+					i(17052, {	-- Plans: Dark Iron Leggings (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					}),
-					i(17059, {	-- Plans: Dark Iron Reaver
+					i(17059, {	-- Plans: Dark Iron Reaver (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
-					applyclassicphase(PHASE_THREE, i(19210, {	-- Plans: Ebon Hand
+					applyclassicphase(PHASE_THREE, i(19210, {	-- Plans: Ebon Hand (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					i(17049, {	-- Plans: Fiery Chain Girdle
+					i(17049, {	-- Plans: Fiery Chain Girdle (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
-					i(17053, {	-- Plans: Fiery Chain Shoulders
+					i(17053, {	-- Plans: Fiery Chain Shoulders (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					}),
-					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall
+					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
 					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire
@@ -1428,15 +1428,15 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(15770, {	-- Pattern: Black Dragonscale Shoulders
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
-				i(11614, { 	-- Plans: Dark Iron Mail
+				i(11614, { 	-- Plans: Dark Iron Mail (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
-				i(11615, { 	-- Plans: Dark Iron Shoulders
+				i(11615, { 	-- Plans: Dark Iron Shoulders (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
-				i(11611, {	-- Plans: Dark Iron Sunderer
+				i(11611, {	-- Plans: Dark Iron Sunderer (RECIPE!)
 					["crs"] = {
 						9554,	-- Hammered Patron
 						10043,	-- Ribbly's Crony
@@ -1598,7 +1598,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							applyclassicphase(PHASE_FIVE, i(22257)),	-- Bloodclot Band
 						}),
 						n(9028, {	-- Grizzle
-							i(11610),	-- Plans: Dark Iron Pulverizer
+							i(11610),	-- Plans: Dark Iron Pulverizer (RECIPE!)
 							i(11702),	-- Grizzle's Skinner
 							i(11722),	-- Dregmetal Spaulders
 							i(11703),	-- Stonewall Girdle
@@ -1801,7 +1801,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["description"]	= "Speak to him to start the encounter.",
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
-						i(11612),	-- Plans: Dark Iron Plate
+						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 						i(2663, {	-- Ribbly's Bandolier
 							["timeline"] = { "removed 4.0.1" },
 						}),

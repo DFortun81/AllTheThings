@@ -356,7 +356,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18264, {	-- Plans: Elemental Sharpening Stone
+				i(18264, {	-- Plans: Elemental Sharpening Stone (RECIPE!)
 					["crs"]	= {
 						12118,	-- Lucifron
 						11982,	-- Magmadar

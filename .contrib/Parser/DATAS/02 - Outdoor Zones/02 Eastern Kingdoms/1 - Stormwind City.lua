@@ -1,8 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local LUCAN_TIMELINE = "added 2.1.0";
-
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(STORMWIND_CITY, {
 		["lore"] = "Stormwind City is the capital city of the Alliance. It is located in the northwestern part of Elwynn Forest. Formerly ruled by the young child king Anduin Wrynn (with the help of Highlord Bolvar Fordragon, the former regent, and Lady Katrana Prestor), it is now ruled over by King Varian Wrynn who returned during the time of the Lich King. King Varian Wrynn died valiantly when the Legion attacked and his son has taken over now.",
@@ -30,6 +28,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			n(PROFESSIONS, {
 				prof(BLACKSMITHING, {
+					n(5511, {	-- Therum Deepforge <Expert Blacksmith>
+						["coord"] = { 57.0, 16.6, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = CLASSIC_BLACKSMITHING,
+					}),
 					n(QUESTS, {
 						q(2759, {	-- In Search of Galvan
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
@@ -43,17 +46,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia
 							},
 						}),
-						q(2758, {	-- The Origins of Smithing
+						q(2758, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Origins of Smithing
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
 							["coord"] = { 56.0, 16.0, STORMWIND_CITY },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
-							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(9367)),	-- Plans: Golden Scale Gauntlets
+								i(9367),	-- Plans: Golden Scale Gauntlets
 							},
-						}),
+						})),
 					}),
 				}),
 				prof(COOKING, {
@@ -3542,7 +3544,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 					["groups"] = {
-						i(12162, {	-- Plans: Hardened Iron Shortsword
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

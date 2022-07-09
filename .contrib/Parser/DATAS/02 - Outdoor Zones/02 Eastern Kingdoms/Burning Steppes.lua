@@ -1543,7 +1543,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.1.5.23038" },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
-						i(142346, {	-- Plans: Bleakwood Hew
+						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
 							["timeline"] = { "added 7.1.5.23360" },
 						}),
 					},
@@ -1737,7 +1737,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
-						i(12828, {	-- Plans: Volcanic Hammer
+						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
 							["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 						}),
 					},
@@ -1771,7 +1771,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.9, 44.6, BURNING_STEPPES },
 					["timeline"] = { "added 7.1.5.23038" },
 					["groups"]	= {
-						i(142346, {	-- Plans: Bleakwood Hew
+						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
 							["timeline"] = { "added 7.1.5.23360" },
 						}),
 					},

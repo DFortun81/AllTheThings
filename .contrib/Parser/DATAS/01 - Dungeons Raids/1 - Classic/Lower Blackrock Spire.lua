@@ -350,7 +350,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					["lvl"] = 55,
 					["groups"] = {
-						i(12699, {	-- Plans: Fiery Plate Gauntlets
+						i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(12631, {	-- Fiery Plate Gauntlets
@@ -766,7 +766,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						objective(2, {	-- 0/1 Unforged Rune Covered Breastplate
 							["provider"] = { "i", 12806 },	-- Unforged Rune Covered Breastplate
 						}),
-						i(12696, {	-- Plans: Demon Forged Breastplate
+						i(12696, {	-- Plans: Demon Forged Breastplate (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(9224),	-- Elixir of Demonslaying
@@ -1391,7 +1391,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					["description"] = "This is a rare that is not always present.",
 					["groups"] = {
-						i(12838),	-- Plans: Arcanite Reaper
+						i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
 						i(12621),	-- Demonfork
 						i(12637),	-- Backusarian Gauntlets
 						i(12634),	-- Chiselbrand Girdle
@@ -1457,7 +1457,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["creatureID"] = 9736,	-- Quartermaster Zigris
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, i(21955)),	-- Design: Black Diamond Crab
-						i(12835),	-- Plans: Annihilator
+						i(12835),	-- Plans: Annihilator (RECIPE!)
 						-- #if AFTER 4.0.3
 						i(12264),	-- Worg Carrier (PET!)
 						-- #endif
@@ -1712,11 +1712,11 @@ root("Instances", tier(CLASSIC_TIER, {
 								-- #endif
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(12834, {	-- Plans: Arcanite Champion
+							i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
 								["timeline"] = { "removed 6.0.2" },
 							}),
-							i(12728),	-- Plans: Invulnerable Mail [Also available as a world drop.]
-							i(12837, {	-- Plans: Masterwork Stormhammer
+							i(12728),	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+							i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 								["timeline"] = { "removed 6.0.2" },
 							}),
 							i(18048, { 	-- Mastersmith's Hammer

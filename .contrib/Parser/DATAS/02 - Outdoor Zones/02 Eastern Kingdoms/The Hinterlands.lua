@@ -570,7 +570,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						i(131536, {-- Stormfeather Treads
 							["timeline"] = { "added 7.0.3.22248" },
-						}),	
+						}),
 					},
 				}),
 				q(1450, {	-- Gryphon Master Talonaxe
@@ -1878,7 +1878,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7995, {	-- Plans: Mithril Scale Bracers
+						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

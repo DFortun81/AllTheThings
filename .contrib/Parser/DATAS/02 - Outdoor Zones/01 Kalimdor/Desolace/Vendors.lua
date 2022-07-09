@@ -45,7 +45,7 @@ _.Zones =
 					["coord"] = { 55.8, 56.6, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(10858, {	-- Plans: Solid Iron Maul
+						i(10858, {	-- Plans: Solid Iron Maul (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

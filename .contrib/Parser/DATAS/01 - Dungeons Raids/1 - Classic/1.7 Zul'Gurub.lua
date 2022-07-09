@@ -940,12 +940,12 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						i(19771),	-- Pattern: Primal Batskin Bracers
 						i(19770),	-- Pattern: Primal Batskin Gloves
 						i(19769),	-- Pattern: Primal Batskin Jerkin
-						i(19776),	-- Plans: Bloodsoul Breastplate
-						i(19778),	-- Plans: Bloodsoul Gauntlets
-						i(19777),	-- Plans: Bloodsoul Shoulders
-						i(19779),	-- Plans: Darksoul Breastplate
-						i(19780),	-- Plans: Darksoul Leggings
-						i(19781),	-- Plans: Darksoul Shoulders
+						i(19776),	-- Plans: Bloodsoul Breastplate (RECIPE!)
+						i(19778),	-- Plans: Bloodsoul Gauntlets (RECIPE!)
+						i(19777),	-- Plans: Bloodsoul Shoulders (RECIPE!)
+						i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
+						i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
+						i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
 						i(20012),	-- Recipe: Greater Dreamless Sleep Potion
 						i(20013),	-- Recipe: Living Action Potion
 						i(20011),	-- Recipe: Mageblood Potion

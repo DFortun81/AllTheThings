@@ -117,12 +117,9 @@ _.Zones =
 						{ 29.6, 44.8, DUSTWALLOW_MARSH },
 					},
 				}),
-				n(4368,   {	-- Strashaz Myrmidon
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(12718)),	-- Plans: Runic Breastplate
-					},
-				}),
+				n(4368, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Strashaz Myrmidon
+					i(12718),	-- Plans: Runic Breastplate (RECIPE!)
+				})),
 				n(50901,  {	-- Teromak
 					["coords"] = {
 						{ 41.8, 43.2, DUSTWALLOW_MARSH },

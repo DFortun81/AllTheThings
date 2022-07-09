@@ -810,7 +810,6 @@ q(9432),	-- Travel to Astranaar,		TBC: Travel to Astranaar
 q(9435),	-- [DEPRECATED] Missing Crystals,		TBC: Missing Crystals
 q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering,		TBC: <NYI><TXT>Placeholder: A Worthy Offering
 q(9446),	-- Tomb of the Lightbringer,		TBC: Tomb of the Lightbringer
-q(9448),	-- [DEPRECATED]Mercy for the Cursed,		TBC: Mercy for the Cursed
 q(9460),	-- Combining Forces,		TBC: Combining Forces
 q(9474),	-- The Mark of the Lightbringer,		TBC: The Mark of the Lightbringer
 q(9484),	-- Taming the Beast,		TBC: Taming the Beast
@@ -862,7 +861,6 @@ q(9679),	-- <NYI>Return to Knight-Lord Bloodvalor
 q(9712),	-- The Thalassian Warhorse,		TBC: The Thalassian Warhorse
 q(9713),	-- Glowcap Harvesting Enabling Flag
 q(9745),	-- <DEPRECATED>Suppressing the Flame
-q(9750),	-- UNUSED Urgent Delivery,		TBC: UNUSED Urgent Delivery
 q(9754),	--
 q(9755),	--
 q(9757),	-- Seek Huntress Kella Nightbow,		TBC: Seek Huntress Kella Nightbow
@@ -988,7 +986,6 @@ q(11589),	-- REUSE
 q(11874),	-- Upper Deck Promo - Rocket Mount
 q(11934),	-- Unlocking Your Potential [PH]
 q(11974),	-- [ph] Now, When I Grow Up...
-q(11976),	-- Ice Shards,		TBC: Ice Shards
 q(11992),	-- Navigation Charts (Deprecated)
 q(11994),	-- Juno's Flag Tester
 q(12001),	-- zzOLDHunting Tarot: Lesser Beasts
@@ -1321,9 +1318,6 @@ q(27250),	-- REUSE - BAD COPY
 q(27307),	-- The Elements Cry Out
 q(27308),	-- The Elements Cry Out
 q(27543),	-- [TEMP PH] What We Have Done
-q(27552),	-- [FLAG] EPL Zone Buff - Flag 1
-q(27553),	-- [FLAG] EPL Zone Buff - Flag 2
-q(27554),	-- [FLAG] EPL Zone Buff - Flag 3
 q(27678),	-- The Platinum Discs
 q(27723),	-- Kyle's Test Quest
 q(27819),	-- TEST - RVM
@@ -1431,11 +1425,7 @@ q(29671),	-- The Black Morass
 q(29853),	-- Champion of the King
 q(30119),	-- Well of Eternity RP Tracker
 q(30173),	-- War Pigs!
-q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
-q(30982),	-- Animal Control
-q(30997),	-- Animal Control
 6.0.1.18179
-q(32832),	-- Taran Zhu and Dezco Scene
 7.3.0.24473
 q(8971),	-- REUSE,		TBC: REUSE,		CLASSIC: REUSE
 q(9065),	-- The Pattymac Special,		TBC: The "Chow" Quest (123)aa,		CLASSIC: The "Chow" Quest (123)aa
@@ -1450,7 +1440,6 @@ q(37527),	--
 q(37529),	--
 q(37532),	-- [UNUSED]Rolling With the Tidestone
 q(37643),	--
-q(37805),	-- Goblin Looted
 q(37846),	--
 q(37854),	--
 q(37929),	--
@@ -1624,7 +1613,6 @@ q(39291),	--
 q(39298),	--
 q(39319),	--
 q(39320),	--
-q(39564),	-- Vignette: Murktide Alpha
 q(39715),	-- Menacing Grumplings
 q(39747),	--
 q(39754),	--
@@ -1996,9 +1984,6 @@ q(42794),	--
 q(42804),	-- Invasion: Azshara
 q(42807),	-- Demon Commander
 q(42822),	-- The Banner of the Ebon Blade
-q(42826),	-- Highmountain Hidden Demon 01
-q(42858),	-- Stormheim Hidden Demon 01
-q(42863),	-- Highmoutain Hidden Demon 03
 q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
 q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
 q(42923),	--
@@ -2079,7 +2064,6 @@ q(43931),	--
 q(43940),	-- Holy Chosen
 q(43956),	-- Lysanis Shadesoul
 q(43967),	-- Unholy Chosen
-q(43983),	-- Destruction Chosen
 q(43990),	-- ZZZNOTUSEDZZZ
 q(43997),	-- Short-Supply Reward
 q(43998),	-- Short-Supply Reward
@@ -2312,7 +2296,6 @@ q(45421),	-- Vignette: Dirge of Asgrim
 q(45422),	-- Edict of the God-King
 q(45427),	-- Short-Supply Reward
 q(45428),	-- Short-Supply Reward
-q(45492),	-- Marblub the Massive
 q(45508),	-- Durguth
 q(45509),	-- Xavrix
 q(45514),	-- Ala'washte

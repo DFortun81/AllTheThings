@@ -99,12 +99,12 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(7363),	-- Pattern: Pilferer's Gloves
 					i(4350),	-- Pattern: Spider Silk Slippers
 					i(6390),	-- Pattern: Stylish Blue Shirt
-					i(3611),	-- Plans: Green Iron Boots
-					i(6044),	-- Plans: Iron Shield Spike
-					i(3608),	-- Plans: Mighty Iron Hammer
-					i(5578),	-- Plans: Silvered Bronze Breastplate
-					i(10424),	-- Plans: Silvered Bronze Leggings
-					i(2882),	-- Plans: Silvered Bronze Shoulders
+					i(3611),	-- Plans: Green Iron Boots (RECIPE!)
+					i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
+					i(3608),	-- Plans: Mighty Iron Hammer (RECIPE!)
+					i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
+					i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
+					i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 					i(12007),	-- Prairie Ring
 					i(3396),	-- Recipe: Elixir of Lesser Agility
 					i(12008),	-- Savannah Ring
@@ -139,14 +139,14 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(15755),	-- Pattern: Chimeric Vest
 					i(15743),	-- Pattern: Heavy Scorpid Belt
 					i(14499),	-- Pattern: Mooncloth Bag
-					i(12689),	-- Plans: Radiant Breastplate
-					i(12695),	-- Plans: Radiant Gloves
-					i(12683),	-- Plans: Thorium Belt
-					i(12693),	-- Plans: Thorium Boots
-					i(12684),	-- Plans: Thorium Bracers
-					i(12694),	-- Plans: Thorium Helm
-					i(12704),	-- Plans: Thorium Leggings
-					i(12691),	-- Plans: Wildthorn Mail
+					i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
+					i(12695),	-- Plans: Radiant Gloves (RECIPE!)
+					i(12683),	-- Plans: Thorium Belt (RECIPE!)
+					i(12693),	-- Plans: Thorium Boots (RECIPE!)
+					i(12684),	-- Plans: Thorium Bracers (RECIPE!)
+					i(12694),	-- Plans: Thorium Helm (RECIPE!)
+					i(12704),	-- Plans: Thorium Leggings (RECIPE!)
+					i(12691),	-- Plans: Wildthorn Mail (RECIPE!)
 					i(2163),	-- Shadowblade
 					i(12044),	-- Arctic Pendant
 					i(12014),	-- Arctic Ring
@@ -177,11 +177,11 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(5774),	-- Pattern: Green Silk Pack
 					i(7450),	-- Pattern: Green Whelp Armor
 					i(4299),	-- Pattern: Guardian Armor
-					i(3867),	-- Plans: Golden Iron Destroyer
-					i(3872),	-- Plans: Golden Scale Leggings
-					i(3611),	-- Plans: Green Iron Boots
-					i(3870),	-- Plans: Green Iron Shoulders
-					i(6045),	-- Plans: Iron Counterweight
+					i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
+					i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
+					i(3611),	-- Plans: Green Iron Boots (RECIPE!)
+					i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
+					i(6045),	-- Plans: Iron Counterweight (RECIPE!)
 					i(3830),	-- Recipe: Elixir of Fortitude
 					i(10601),	-- Schematic: Bright-Eye Goggles
 					i(4416),	-- Schematic: Goblin Land Mine
@@ -266,10 +266,10 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(10320),	-- Pattern: Red Mageweave Headband
 					i(10302),	-- Pattern: Red Mageweave Pants
 					i(10315),	-- Pattern: Red Mageweave Shoulders
-					i(7993),	-- Plans: Dazzling Mithril Rapier
-					i(7990),	-- Plans: Heavy Mithril Helm
-					i(7989),	-- Plans: Mithril Spurs
-					i(12683),	-- Plans: Thorium Belt
+					i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
+					i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
+					i(7989),	-- Plans: Mithril Spurs (RECIPE!)
+					i(12683),	-- Plans: Thorium Belt (RECIPE!)
 					i(9295),	-- Recipe: Invisibility Potion
 					i(3395),	-- Recipe: Limited Invulnerability Potion
 				}),
@@ -285,11 +285,11 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(10300),	-- Pattern: Red Mageweave Vest
 					i(8385),	-- Pattern: Turtle Scale Gloves
 					i(10301),	-- Pattern: White Bandit Mask
-					i(7992),	-- Plans: Blue Glittering Axe
-					i(7975),	-- Plans: Heavy Mithril Pants
-					i(7976),	-- Plans: Mithril Shield Spike
-					i(3874),	-- Plans: Polished Steel Boots
-					i(8029),	-- Plans: Wicked Mithril Blade
+					i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
+					i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
+					i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
+					i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
+					i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 					i(9295),	-- Recipe: Invisibility Potion
 					i(10603),	-- Schematic: Catseye Ultra Goggles
 					i(10606),	-- Schematic: Parachute Cloak
@@ -305,8 +305,8 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(4353),	-- Pattern: Spider Belt
 					i(8385),	-- Pattern: Turtle Scale Gloves
 					i(10301),	-- Pattern: White Bandit Mask
-					i(3874),	-- Plans: Polished Steel Boots
-					i(3869),	-- Plans: Shadow Crescent Axe
+					i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
+					i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
 					i(3830),	-- Recipe: Elixir of Fortitude
 					i(3831),	-- Recipe: Major Troll's Blood Elixir
 					i(10601),	-- Schematic: Bright-Eye Goggles
@@ -330,14 +330,14 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 						i(15755),	-- Prismatic Pendant
 						i(15743),	-- Quicksilver Pendant
 						i(14499),	-- Quicksilver Ring
-						i(12689),	-- Ring Of The Heavens
+						i(12056),	-- Ring Of The Heavens
 						-- #if BEFORE MOP
 						i(34622, {	-- Spinesever
 							["timeline"] = { "removed 5.0.4.10000" },
 						}),
 						-- #endif
-						i(12695),	-- Swamp Pendant
-						i(12683),	-- Vermilion Necklace
+						i(12045),	-- Swamp Pendant
+						i(12027),	-- Vermilion Necklace
 					},
 				}),
 				i(16884, {	-- Sturdy Junkbox
@@ -364,8 +364,8 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 					i(10320),	-- Pattern: Red Mageweave Headband
 					i(8385),	-- Pattern: Turtle Scale Gloves
 					i(10301),	-- Pattern: White Bandit Mask
-					i(7990),	-- Plans: Heavy Mithril Helm
-					i(8029),	-- Plans: Wicked Mithril Blade
+					i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
+					i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 					i(9298),	-- Recipe: Elixir of Giants
 					i(9295),	-- Recipe: Invisibility Potion
 					i(3395),	-- Recipe: Limited Invulnerability Potion

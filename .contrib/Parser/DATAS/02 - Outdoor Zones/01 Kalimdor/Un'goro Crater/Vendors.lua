@@ -10,17 +10,17 @@ _.Zones =
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 					["coord"] = { 43.4, 41.6, UNGORO_CRATER },
 					["g"] = {
-						i(12719),	-- Plans: Runic Plate Leggings
-						i(12714),	-- Plans: Runic Plate Helm
-						i(12706),	-- Plans: Runic Plate Shoulders
-						i(12707),	-- Plans: Runic Plate Boots
+						i(12707),	-- Plans: Runic Plate Boots (RECIPE!)
+						i(12714),	-- Plans: Runic Plate Helm (RECIPE!)
+						i(12719),	-- Plans: Runic Plate Leggings (RECIPE!)
+						i(12706),	-- Plans: Runic Plate Shoulders (RECIPE!)
 					},
 				}),
 				n(115923, {	-- Ko'Zan <Courier>
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
 					["g"] = {
-						i(142383),	-- Plans: Darkspear
+						i(142383),	-- Plans: Darkspear (RECIPE!)
 					},
 				}),
 				n(12959, {	-- Nergal <General Goods>

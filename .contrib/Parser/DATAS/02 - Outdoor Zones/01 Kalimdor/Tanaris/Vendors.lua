@@ -1466,7 +1466,7 @@ _.Zones =
 				n(5411,   {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 					["coord"] = { 51.2, 30.2, TANARIS },
 					["g"] = {
-						i(6047, {	-- Plans: Golden Scale Coif
+						i(6047, {	-- Plans: Golden Scale Coif (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

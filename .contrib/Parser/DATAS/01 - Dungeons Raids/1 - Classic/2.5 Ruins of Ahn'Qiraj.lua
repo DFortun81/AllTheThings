@@ -888,8 +888,8 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			n(15471, {	-- Lieutenant General Andorov
 				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 				["groups"] = {
-					i(22219),	-- Plans: Jagged Obsidian Shield
-					i(22221),	-- Plans: Obsidian Mail Tunic
+					i(22219),	-- Plans: Jagged Obsidian Shield (RECIPE!)
+					i(22221),	-- Plans: Obsidian Mail Tunic (RECIPE!)
 				},
 			}),
 			e(1538, {	-- General Rajaxx
@@ -965,7 +965,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21476),	-- Obsidian Scaled Leggings
 					i(21477),	-- Ring of Fury
 					i(21473),	-- Eye of Moam
-					i(22220),	-- Plans: Black Grasp of the Destroyer
+					i(22220),	-- Plans: Black Grasp of the Destroyer (RECIPE!)
 				},
 			}),
 			e(1542, {	-- Ossirian the Unscarred
