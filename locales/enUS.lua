@@ -1711,7 +1711,7 @@ app.L = {
 		[-577] = "Warcraft Movie",												-- Warcraft Movie
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
-		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotion
+		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotions
 		[-581] = "The Great Push: Season 2",									-- The Great Push: Season 2
 		[-582] = "Mythic Dungeon International: Season 3",						-- Mythic Dungeon International: Season 3
 	-- PvP Header

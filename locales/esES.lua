@@ -770,7 +770,8 @@ for key,value in pairs({
 		[-542] = "La apertura del Portal Oscuro",					-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "Pase para el Portal Oscuro",						-- Dark Portal Pass
-		[-580] = "The Great Push: Temporada 2",						-- The Great Push: Season 2
+		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-581] = "The Great Push: Temporada 2",						-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)

@@ -772,7 +772,8 @@ for key,value in pairs({
 		[-576] = "星际争霸II：虚空之遗",										-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
-		[-580] = "极限冲层：第二季",										-- The Great Push: Season 2
+		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
