@@ -2835,6 +2835,7 @@ MergeObject = function(g, t, index, newCreate)
 					return o;
 				end
 			end
+		-- else app.PrintDebug("NO Hash for MergeObject",t.text)
 		end
 		if index then
 			tinsert(g, index, newCreate and CreateObject(t) or t);
@@ -2845,8 +2846,9 @@ MergeObject = function(g, t, index, newCreate)
 end
 NestObject = function(p, t, newCreate, index)
 	if p and t then
-		if p.g then
-			MergeObject(p.g, t, index, newCreate);
+		local g = p.g;
+		if g then
+			MergeObject(g, t, index, newCreate);
 		elseif newCreate then
 			p.g = { CreateObject(t) };
 		else
@@ -2908,8 +2910,9 @@ MergeObjects = function(g, g2, newCreate)
 end
 NestObjects = function(p, g, newCreate)
 	if not g then return; end
-	if p.g then
-		MergeObjects(p.g, g, newCreate);
+	local pg = p.g;
+	if pg then
+		MergeObjects(pg, g, newCreate);
 	elseif #g > 0 then
 		p.g = {};
 		MergeObjects(p.g, g, newCreate);
@@ -5603,6 +5606,8 @@ fieldCache["mountID"] = {};
 fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
+-- identical cache as professionID
+fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
 fieldCache["questID"] = {};
 fieldCache["runeforgePowerID"] = {};
 fieldCache["s"] = {};
@@ -16918,8 +16923,10 @@ local DynamicCategory_Simple = function(self)
 			-- dynamic groups for general Types are ignored for the source tooltips
 			self.sourceIgnored = true;
 		end
-		-- change the text color of the dynamic group to help indicate it is not included in the window total
-		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+		-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
+		if self.sourceIgnored then
+			self.text = Colorize(self.text, app.Colors.SourceIgnored);
+		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		for _,header in pairs(topHeaders) do
 			-- delay-sort the groups in each categorized header
@@ -16942,8 +16949,10 @@ end
 local DynamicCategory_Nested = function(self)
 	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
 	self.sourceIgnored = not self.dynamic_value;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total
-	self.text = Colorize(self.text, app.Colors.SourceIgnored);
+	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
+	if self.sourceIgnored then
+		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+	end
 	-- pull out all Things which should go into this category based on field & value
 	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, true));
 	-- reset indents and such
@@ -17033,7 +17042,7 @@ function app:GetDataCache()
 				dynProfs[profID] = true;
 				prof = app.CreateProfession(profID);
 				prof.parent = db;
-				NestObject(db, DynamicCategory(prof, dynamicSetting == 2 and "requireSkill" or "professionID", profID));
+				NestObject(db, DynamicCategory(prof, "professionID", profID));
 			end
 		end
 		-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
@@ -18122,12 +18131,110 @@ local function BuildSearchResponseByFieldValue(groups, field, value, clear)
 		return t;
 	end
 end
+local MainRoot, UnsortedRoot;
+local ClonedHierarchyGroups = {};
+local ClonedHierarachyMapping = {};
+-- Finds existing clone of the parent group, or clones the group into the proper clone hierarchy
+local function MatchOrCloneParentInHierarchy(group)
+	if group then
+		-- already cloned group, return the clone
+		local groupCopy = ClonedHierarachyMapping[group];
+		if groupCopy then return groupCopy; end
+
+		-- new cloned parent
+		groupCopy = {};
+		-- copy direct group values only
+		MergeProperties(groupCopy, group);
+		-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+		groupCopy.collectible = false;
+		-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+		groupCopy.sym = nil;
+		groupCopy.sourceParent = nil;
+		-- always a parent, so it will have a .g
+		groupCopy.g = {};
+		ClonedHierarachyMapping[group] = groupCopy;
+
+		-- is this a top-level group?
+		local parent = group.parent;
+		if parent == MainRoot then
+			-- app.PrintDebug("Added top cloned parent",groupCopy.text)
+			tinsert(ClonedHierarchyGroups, groupCopy);
+			return groupCopy;
+		elseif parent == UnsortedRoot then
+			-- app.PrintDebug("Don't capture Unsorted",groupCopy.text)
+			-- don't collect the unsorted content into the cloned groups
+			return groupCopy;
+		else
+			-- need to clone and attach this group to its cloned parent
+			local clonedParent = MatchOrCloneParentInHierarchy(parent);
+			-- if not clonedParent then
+			-- 	app.PrintDebug("Null Cloned Parent?",group.text,group.parent and group.parent.text)
+			-- end
+			NestObject(clonedParent, groupCopy);
+			-- tinsert(clonedParent.g, groupCopy);
+			return groupCopy;
+		end
+	end
+end
+-- Creates a cloned hierarchy of the cached groups which match a particular key and value
+local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear)
+	if cacheContainer then
+		MainRoot = app:GetDataCache();
+		UnsortedRoot = app:GetWindow("Unsorted").data;
+		wipe(ClonedHierarchyGroups);
+		wipe(ClonedHierarachyMapping);
+		local parent, thing;
+		if value then
+			local sources = cacheContainer[value];
+			-- for each source of each Thing with the value
+			for _,source in ipairs(sources) do
+				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+				if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
+					-- find/clone the expected parent group in hierachy
+					parent = MatchOrCloneParentInHierarchy(source.parent);
+					-- clone the Thing into the cloned parent
+					thing = clear and CreateObject(source, true) or CreateObject(source);
+					-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
+					thing.sym = nil;
+					thing.sourceParent = nil;
+					-- need to map the cloned Thing also since it may end up being a parent of another Thing
+					ClonedHierarachyMapping[source] = thing;
+					NestObject(parent, thing);
+				end
+			end
+		else
+			for id,sources in pairs(cacheContainer) do
+				-- for each source of each Thing
+				for _,source in ipairs(sources) do
+					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+					if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
+						-- find/clone the expected parent group in hierachy
+						parent = MatchOrCloneParentInHierarchy(source.parent);
+						-- clone the Thing into the cloned parent
+						thing = clear and CreateObject(source, true) or CreateObject(source);
+						-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
+						thing.sym = nil;
+						thing.sourceParent = nil;
+						-- need to map the cloned Thing also since it may end up being a parent of another Thing
+						ClonedHierarachyMapping[source] = thing;
+						NestObject(parent, thing);
+					end
+				end
+			end
+		end
+		return ClonedHierarchyGroups;
+	end
+end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
 function app:BuildSearchResponse(groups, field, value, clear)
 	if groups then
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
+		local cacheContainer = SearchForFieldContainer(field);
+		if cacheContainer then
+			return BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear);
+		end
 		if value then
 			return BuildSearchResponseByFieldValue(groups, field, value, clear);
 		else
@@ -18135,7 +18242,7 @@ function app:BuildSearchResponse(groups, field, value, clear)
 		end
 	end
 end
-end
+end -- Search Response Logic
 
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()
