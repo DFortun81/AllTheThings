@@ -17011,6 +17011,14 @@ function app:GetDataCache()
 		tinsert(g, factionsCategory);
 		]]--
 
+		-- Flight Paths (Dynamic)
+		db = {};
+		db.text = L["FLIGHT_PATHS"];
+		db.name = db.text;
+		db.icon = app.asset("Category_FlightPaths");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "flightPathID"));
+
 		-- Illusions - Dynamic
 		db = {};
 		db.text = L["FILTER_ID_TYPES"][103];
@@ -17296,17 +17304,6 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_Factions");
 		tinsert(g, db);
 	end
-
-	-- Flight Paths (Dynamic)
-	-- TODO: ugh re-do this again
-	local flightPathsCategory = {};
-	flightPathsCategory.g = {};
-	flightPathsCategory.fps = {};
-	flightPathsCategory.expanded = false;
-	flightPathsCategory.icon = app.asset("Category_FlightPaths");
-	flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], app.Colors.SourceIgnored);
-	db.name = L["FLIGHT_PATHS"];
-	tinsert(g, flightPathsCategory);
 
 	--[[
 	-- Never Implemented
