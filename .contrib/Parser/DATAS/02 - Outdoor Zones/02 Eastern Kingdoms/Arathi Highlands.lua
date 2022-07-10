@@ -106,6 +106,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				fp(601, {	-- Galen's Fall, Arathi
 					["cr"] = 43104,	-- Rhoda Bowers <Bat Handler>
 					["coord"] = { 13.4, 34.8, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(17, {	-- Hammerfall, Arathi
