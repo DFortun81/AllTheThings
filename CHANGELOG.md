@@ -1,25 +1,19 @@
 # AllTheThings
 
-## [SL-2.8.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.6) (2022-07-03)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.5...SL-2.8.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.8.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.7) (2022-07-10)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.6...SL-2.8.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Don't forget to collect new Midsummer Festival toys 🔥
+### Fearless Spectator
+Watch Global Finals for AWC and MDI to get new title and achievement. This is a time limited event. More info [here](https://worldofwarcraft.com/en-us/news/23823096/watch-the-mdi-awc-shadowlands-global-finals-and-earn-the-fearless-spectator-title).
 
-### Attempted fix to broken popout windows where they just refuse to update
-
-This one is hard to replicate so please report any issues to our Discord.
 
 ### Notable changes:
 
-- Bits and pieces of German translation, thanks to @tc-sanya! 🇩🇪
-- Updated 🇫🇷 and zhCN translation, thanks to @Machou and @adavak!
-- Various fixes for profession recipes.
-- ATT now supports logic for considering content becoming 'locked' by completion of an Achievement.
-- Little arrows that indicate Account-Wide Quests will now also show for collected Quests when completed by a different Character.
-- Fixed repeating achievement criterias.
-- Updated BFA icon with slight bronze hue.
-- Added Black Market Icon, now with 100% more dice!
-- Cleaned up Mechagon even more.
-- Various zones synchronized with ATT Classic: The Hinterlands.
+- Another paltry attempt at fixing the quest chain popout window issue... *sigh*
+- Collection count on popped out Things should be more accurate now.
+- Icons 🎨 by @Dead-Serious:
+  - Updated Item Sets icon to match the ingame transmog icon.
+  - Icon for Illusions uses the ingame upgrade icon now.
+- Various zones synchronized with ATT Classic: Tirisfal Glades, Western Plaguelands, Eastern Plaguelands.
 - Other fixes.
