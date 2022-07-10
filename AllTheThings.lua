@@ -16815,19 +16815,6 @@ end
 end)();
 
 do	-- Dynamic/Main Data
--- Pulls all nested Things from within the group into the 'things' array
-local function CollectThings(things, group)
-	if group.g then
-		local thingKeys = app.ThingKeys;
-		for _,o in ipairs(group.g) do
-			if thingKeys[o.key] then
-				tinsert(things, o);
-			end
-			CollectThings(things, o);
-		end
-	end
-end
-
 local RecursiveParentMapping = {};
 -- Recurses upwards in the group hierarchy until finding the group with the specified value in the specified field. The
 -- set of groups crossed while searching will all have their mapping value set to the found group.
@@ -16850,13 +16837,13 @@ end
 -- NOTE: Content must be cached using the dynamic 'field'
 local DynamicCategory_Simple = function(self)
 	local dynamicCache = fieldCache[self.dynamic];
-	if dynamicCache then -- professionID
+	if dynamicCache then
 		local rootATT = app:GetWindow("Prime").data;
 		local top, topText, thing;
-		local topHeaders, dynamicValue = {}, self.dynamic_value;
-		if dynamicValue then -- 164 (blacksmithing)
+		local topHeaders, dynamicValue, clearSubgroups = {}, self.dynamic_value, not self.dynamic_withsubgroups;
+		if dynamicValue then
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
-			if dynamicValueCache then -- professionID = 164
+			if dynamicValueCache then
 				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
 				for _,source in pairs(dynamicValueCache) do
 					-- only pull in actual 'Things' to the simple dynamic group
@@ -16874,26 +16861,9 @@ local DynamicCategory_Simple = function(self)
 							end
 							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 							-- remove it from being considered a cost within the dynamic category
-							thing = CreateObject(source, true);
+							thing = CreateObject(source, clearSubgroups);
 							thing.collectibleAsCost = false;
 							NestObject(topHeaders[topText], thing);
-							-- not 100% sure this is necessary to have?
-							-- else
-							-- 	local subThings = {};
-							-- 	-- store a copy of this top header if we dont have it
-							-- 	-- recursively pull in the Things under the non-Thing tagged with the dynamic key/value
-							-- 	CollectThings(subThings, source);
-							-- 	if #subThings > 0 then
-							-- 		-- clone the Things without nested content
-							-- 		local clonedThings = {};
-							-- 		for _,o in ipairs(subThings) do
-							-- 			thing = CreateObject(o, true);
-							-- 			thing.collectibleAsCost = false;
-							-- 			tinsert(clonedThings, thing);
-							-- 		end
-							-- 		-- app.PrintDebug("Collected",#clonedThings,"under",source.hash)
-							-- 		NestObjects(topHeaders[topText], clonedThings);
-							-- 	end
 						end
 					end
 				end
@@ -16915,7 +16885,7 @@ local DynamicCategory_Simple = function(self)
 					end
 					-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 					-- remove it from being considered a cost within the dynamic category
-					thing = app.MergedObject(sources, true);
+					thing = app.MergedObject(sources, clearSubgroups);
 					thing.collectibleAsCost = false;
 					NestObject(topHeaders[topText], thing);
 				end
@@ -16954,7 +16924,7 @@ local DynamicCategory_Nested = function(self)
 		self.text = Colorize(self.text, app.Colors.SourceIgnored);
 	end
 	-- pull out all Things which should go into this category based on field & value
-	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, true));
+	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups));
 	-- reset indents and such
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
@@ -16972,7 +16942,7 @@ function app:GetDataCache()
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
 					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
 
-	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
+	-- Adds a Dynamic Category Filler function to the Function Runner which will fill the provided group using the field and value
 	local function DynamicCategory(group, field, value)
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
@@ -16984,6 +16954,21 @@ function app:GetDataCache()
 			app.FunctionRunner.Run(Filler, group);
 		end
 		return group;
+	end
+
+	-- Nests Dynamic categories created with the Creator function within the Dynamic Category based on the field used to cache groups.
+	-- Can indicate to keep sub-group Things if desired.
+	local function NestDynamicValueCategories(dynamicCategory, Creator, field, keepSubGroups)
+		local cat;
+		local cache = fieldCache[field];
+		for id,_ in pairs(cache) do
+			cat = Creator(id);
+			cat.parent = dynamicCategory;
+			cat.dynamic_withsubgroups = keepSubGroups;
+			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
+		end
+		-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
+		app.SortGroupDelayed(dynamicCategory, "name");
 	end
 
 	-- Adds all the Dynamic groups into the provided groups (g)
@@ -16999,17 +16984,21 @@ function app:GetDataCache()
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "speciesID"));
 
+		-- Conduits - Dynamic
+		-- local db = app.CreateNPC(-981);
+		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
+		-- db.parent = primeData;
+		-- tinsert(g, DynamicCategory(db, "conduitID"));
+
 		-- Factions (Dynamic)
-		--[[
-		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
-		local factionsCategory = {};
-		factionsCategory.g = {};
-		factionsCategory.factions = {};
-		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = L["FACTIONS"];
-		tinsert(g, factionsCategory);
-		]]--
+		db = {};
+		db.name = L["FACTIONS"];
+		db.text = Colorize(db.name, app.Colors.SourceIgnored);
+		db.icon = app.asset("Category_Factions");
+		db.parent = primeData;
+		db.sourceIgnored = true;
+		tinsert(g, db);
+		NestDynamicValueCategories(db, app.CreateFaction, "factionID", true);
 
 		-- Flight Paths (Dynamic)
 		db = {};
@@ -17043,18 +17032,13 @@ function app:GetDataCache()
 		db.parent = primeData;
 		db.sourceIgnored = true;
 		tinsert(g, db);
-		local prof;
-		local dynProfs = {};
-		for _,profID in pairs(app.ProfessionMaps) do
-			if not dynProfs[profID] then
-				dynProfs[profID] = true;
-				prof = app.CreateProfession(profID);
-				prof.parent = db;
-				NestObject(db, DynamicCategory(prof, "professionID", profID));
-			end
-		end
-		-- Make sure the Profession group is sorted when opened since order isn't guaranteed by the table
-		app.SortGroupDelayed(db, "name");
+		NestDynamicValueCategories(db, app.CreateProfession, "professionID");
+
+		-- Runeforge Powers - Dynamic
+		-- local db = app.CreateNPC(-364);
+		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
+		-- db.parent = primeData;
+		-- tinsert(g, DynamicCategory(db, "runeforgePowerID"));
 
 		-- Titles - Dynamic
 		db = {};
