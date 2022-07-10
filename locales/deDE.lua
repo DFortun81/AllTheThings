@@ -938,8 +938,10 @@ for key,value in pairs({
 	[269] = "Bewachtes Fass mit Donnerbräu Lager",	-- Guarded Thunder Ale Barrel
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
 	[711] = "GESUCHT!",	-- Wanted!
+	[1557] = "Lilliths Esstisch",	-- Lillith's Dinner Table
 	[1561] = "Versiegelte Kiste",	-- Sealed Crate
 	[1585] = "Sprengladung",	-- Explosive Charge
+	[1586] = "Kiste mit Kerzen",	-- Crate of Candles
 	[1593] = "Boot mit Leichen",	-- Corpse Laden Boat
 	[1599] = "Flaches Grab",	-- Shallow Grave
 	[1609] = "Katapult des Drachenmals",	-- Dragonmaw Catapult
@@ -1046,6 +1048,8 @@ for key,value in pairs({
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175524] = "Geheimnisvoller roter Kristall",	-- Mysterious Red Crystal
 	[175894] = "Janices Paket",	-- Janice's Parcel
+	[175924] = "Verschlossener Schrank",	-- Locked Cabinet
+	[175925] = "Plumpsklo",	-- Outhouse
 	[175926] = "Frau Dalsons Tagebuch",	-- Mrs. Dalson's Diary
 	[175965] = "Frostraunens Balsamierungsflüssigkeit",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Menschliche Überreste",	-- Human Remains
@@ -1064,6 +1068,7 @@ for key,value in pairs({
 	[176631] = "Menethils Geschenk",	-- Menethil's Gift
 	[177289] = "Geißelkessel",	-- Scourge Cauldron
 	[177491] = "Termitenfass",	-- Termite Barrel
+	[177667] = "Zerrissene Rolle",	-- Torn Scroll
 	[177787] = "Rackmores Logbuch",	-- Rackmore's Log
 	[177904] = "Steckbrief: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Tiefenstein",	-- Fathom Stone
@@ -2704,6 +2709,7 @@ for key,value in pairs({
 	[332576] = "Kristallkatzenstatuette",	-- Crystalline Cat Figurine
 	[332704] = "Verderbte Truhe",	-- Corrupted Chest
 	[334216] = "Truhe des Schwarzen Imperiums",	-- Black Empire Cache
+	[335655] = "Oonars Arm",	-- Oonar's Arm
 	[336415] = "Weggeworfene Schriftrolle",	-- Discarded Scroll
 	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
 	[337241] = "Verstaute Ausrüstung",	-- Stashed Equipment

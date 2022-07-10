@@ -932,8 +932,10 @@ for key,value in pairs({
 	[269] = "Barile Custodito di Birra del Tuono",	-- Guarded Thunder Ale Barrel
 	[270] = "Unguarded Thunder Ale Barrel",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "Wanted!",	-- Wanted!	--TODO: This was taken from classic Wowhead
+	[1557] = "Tavolo da Pranzo di Lillith",	-- Lillith's Dinner Table
 	[1561] = "Cassa Sigillata",	-- Sealed Crate
 	[1585] = "Explosive Charge",	-- Explosive Charge	--TODO: This was taken from classic Wowhead
+	[1586] = "Cassa di Candele",	-- Crate of Candles
 	[1593] = "Corpse Laden Boat",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "Shallow Grave",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "Catapulta delle Fauci di Drago",	-- Dragonmaw Catapult
@@ -1040,6 +1042,8 @@ for key,value in pairs({
 	[175320] = "WANTED: Murkdeep!",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "Mysterious Red Crystal",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "Janice's Parcel",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
+	[175924] = "Locked Cabinet",	-- Locked Cabinet	--TODO: This was taken from classic Wowhead
+	[175925] = "Latrina",	-- Outhouse
 	[175926] = "Mrs. Dalson's Diary",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
 	[175965] = "Frostwhisper's Embalming Fluid",	-- Frostwhisper's Embalming Fluid	--TODO: This was taken from classic Wowhead
 	[176090] = "Resti di Umanoide",	-- Human Remains
@@ -1058,6 +1062,7 @@ for key,value in pairs({
 	[176631] = "Dono di Menethil",	-- Menethil's Gift
 	[177289] = "Scourge Cauldron",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "Termite Barrel",	-- Termite Barrel	--TODO: This was taken from classic Wowhead
+	[177667] = "Pergamena Strappata",	-- Torn Scroll
 	[177787] = "Diario di Rackmore",	-- Rackmore's Log
 	[177904] = "Wanted Poster: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "Pietra Profonda",	-- Fathom Stone
@@ -2698,6 +2703,7 @@ for key,value in pairs({
 	[332576] = "Statuetta Felina Cristallina",	-- Crystalline Cat Figurine
 	[332704] = "Cassa Corrotta",	-- Corrupted Chest
 	[334216] = "Cassa dell'Impero Nero",	-- Black Empire Cache
+	[335655] = "Braccio di Oonar",	-- Oonar's Arm
 	[336415] = "Pergamena Scartata",	-- Discarded Scroll
 	[337237] = "Segrete Perdute",	-- Lost Vault
 	[337241] = "Equipaggiamento Nascosto",	-- Stashed Equipment

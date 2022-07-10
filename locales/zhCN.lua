@@ -937,8 +937,10 @@ for key, value in pairs({
 	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
+	[1557] = "莉莉丝的餐桌",	-- Lillith's Dinner Table
 	[1561] = "密封的箱子",	-- Sealed Crate
 	[1585] = "爆炸品",	-- Explosive Charge	--TODO: This was taken from classic Wowhead
+	[1586] = "蜡烛箱",	-- Crate of Candles
 	[1593] = "运尸船",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1609] = "龙喉投石车",	-- Dragonmaw Catapult
@@ -1045,6 +1047,8 @@ for key, value in pairs({
 	[175320] = "通缉：莫克迪普！",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "神秘的红色水晶",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "詹妮丝的包裹",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
+	[175924] = "锁住的柜橱",	-- Locked Cabinet	--TODO: This was taken from classic Wowhead
+	[175925] = "厕所",	-- Outhouse
 	[175926] = "达尔松夫人的日记",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
 	[175965] = "莱斯·霜语的防腐液",	-- Frostwhisper's Embalming Fluid	--TODO: This was taken from classic Wowhead
 	[176090] = "人类遗骸",	-- Human Remains
@@ -1063,6 +1067,7 @@ for key, value in pairs({
 	[176631] = "米奈希尔的礼物",	-- Menethil's Gift
 	[177289] = "瘟疫之锅",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "白蚁桶",	-- Termite Barrel	--TODO: This was taken from classic Wowhead
+	[177667] = "破损的卷轴",	-- Torn Scroll
 	[177787] = "拉克摩尔的日志",	-- Rackmore's Log	--TODO: This was taken from classic Wowhead
 	[177904] = "通缉：贝瑟莱斯",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "深渊之石",	-- Fathom Stone
@@ -2703,6 +2708,7 @@ for key, value in pairs({
 	[332576] = "水晶猫咪雕像",	-- Crystalline Cat Figurine
 	[332704] = "腐化宝箱",	-- Corrupted Chest	--TODO: This was manually translated
 	[334216] = "黑暗帝国宝箱",	-- Black Empire Cache
+	[335655] = "乌纳尔的手臂",	-- Oonar's Arm
 	[336415] = "丢弃的卷轴",	-- Discarded Scroll
 	[337237] = "失落宝物",	-- Lost Vault
 	[337241] = "贮藏的装备",	-- Stashed Equipment

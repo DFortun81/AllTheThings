@@ -937,8 +937,10 @@ for key,value in pairs({
 	[269] = "Barril de Cerveja do Trovão Protegido",	-- Guarded Thunder Ale Barrel
 	[270] = "Barril de Cerveja do Trovão Desprotegido",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "Procura-se!",	-- Wanted!	--TODO: This was taken from classic Wowhead
+	[1557] = "Mesa de Jantar da Lillith",	-- Lillith's Dinner Table
 	[1561] = "Caixote Selado",	-- Sealed Crate
 	[1585] = "Carga Explosiva",	-- Explosive Charge	--TODO: This was taken from classic Wowhead
+	[1586] = "Caixote de Velas",	-- Crate of Candles
 	[1593] = "Barco Cheio de Cadáveres",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "Cova Rasa",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "Catapulta da Presa do Dragão",	-- Dragonmaw Catapult
@@ -1045,6 +1047,8 @@ for key,value in pairs({
 	[175320] = "PROCURA-SE: Lodofundo!",	-- WANTED: Murkdeep!	--TODO: This was taken from classic Wowhead
 	[175524] = "Cristal Vermelho Misterioso",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "Embrulho da Janice",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
+	[175924] = "Armário Trancado",	-- Locked Cabinet	--TODO: This was taken from classic Wowhead
+	[175925] = "Casinha",	-- Outhouse
 	[175926] = "Diário da Sra. Dalson",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
 	[175965] = "Fluido de Embalsamamento de Friomúrmuro",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Restos Humanos",	-- Human Remains
@@ -1063,6 +1067,7 @@ for key,value in pairs({
 	[176631] = "Dádiva de Menethil",	-- Menethil's Gift
 	[177289] = "Caldeirão do Flagelo",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "Barril de Cupins",	-- Termite Barrel	--TODO: This was taken from classic Wowhead
+	[177667] = "Pergaminho Rasgado",	-- Torn Scroll
 	[177787] = "Diário de Rodovalho",	-- Rackmore's Log
 	[177904] = "Pôster de Procura-se: Besseleth",	-- Wanted Poster: Besseleth	--TODO: This was taken from classic Wowhead
 	[177964] = "Pedra das Profundezas",	-- Fathom Stone
@@ -2703,6 +2708,7 @@ for key,value in pairs({
 	[332576] = "Estatueta de Gato Cristalina",	-- Crystalline Cat Figurine
 	[332704] = "Baú Corrompido",	-- Corrupted Chest
 	[334216] = "Depósito do Império Negro",	-- Black Empire Cache
+	[335655] = "Braço de Oonar",	-- Oonar's Arm
 	[336415] = "Pergaminho Descartado",	-- Discarded Scroll
 	[337237] = "Cofre Perdido",	-- Lost Vault
 	[337241] = "Equipamento Escondido",	-- Stashed Equipment

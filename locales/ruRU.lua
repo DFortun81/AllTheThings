@@ -924,8 +924,10 @@ for key,value in pairs({
 	[269] = "Охраняемая бочка Громового эля",	-- Guarded Thunder Ale Barrel
 	[270] = "Неохраняемая бочка Громового эля",	-- Unguarded Thunder Ale Barrel
 	[711] = "Розыск!",	-- Wanted!
+	[1557] = "Обеденный стол Лилит",	-- Lillith's Dinner Table
 	[1561] = "Запечатанный ящик",	-- Sealed Crate
 	[1585] = "Взрывчатка",	-- Explosive Charge
+	[1586] = "Ящик со свечами",	-- Crate of Candles
 	[1593] = "Корабль с трупами",	-- Corpse Laden Boat
 	[1599] = "Неглубокая могила",	-- Shallow Grave
 	[1609] = "Катапульта клана Драконьей Пасти",	-- Dragonmaw Catapult
@@ -1032,6 +1034,8 @@ for key,value in pairs({
 	[175320] = "Разыскивается: Глубомрак!",	-- WANTED: Murkdeep!
 	[175524] = "Таинственный красный кристалл",	-- Mysterious Red Crystal
 	[175894] = "Посылка Дженис",	-- Janice's Parcel
+	[175924] = "Запертый шкаф",	-- Locked Cabinet
+	[175925] = "Туалет",	-- Outhouse
 	[175926] = "Дневник миссис Далсон",	-- Mrs. Dalson's Diary
 	[175965] = "Бальзамировочный состав Ледяного Шепота",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Человеческие останки",	-- Human Remains
@@ -1050,6 +1054,7 @@ for key,value in pairs({
 	[176631] = "Дар Менетила",	-- Menethil's Gift
 	[177289] = "Котел Плети",	-- Scourge Cauldron
 	[177491] = "Термитная бочка",	-- Termite Barrel
+	[177667] = "Разорванный свиток",	-- Torn Scroll
 	[177787] = "Записи Ракмора",	-- Rackmore's Log
 	[177904] = "Плакат: \"Разыскивается\": Бесселет",	-- Wanted Poster: Besseleth
 	[177964] = "Глубинный Камень",	-- Fathom Stone
@@ -2690,6 +2695,7 @@ for key,value in pairs({
 	[332576] = "Кристальная статуэтка кошки",	-- Crystalline Cat Figurine
 	[332704] = "Зараженный сундук",	-- Corrupted Chest
 	[334216] = "Тайник Темной Империи",	-- Black Empire Cache
+	[335655] = "Рука Унара",	-- Oonar's Arm
 	[336415] = "Выброшенный свиток",	-- Discarded Scroll
 	[337237] = "Утерянное хранилище",	-- Lost Vault
 	[337241] = "Сложенное снаряжение",	-- Stashed Equipment
