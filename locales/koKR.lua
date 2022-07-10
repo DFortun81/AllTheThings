@@ -937,8 +937,10 @@ for key,value in pairs({
 	[269] = "야벤이 지키고 있는 썬더브루 맥주통",	-- Guarded Thunder Ale Barrel
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
+	[1557] = "릴리스의 제단",	-- Lillith's Dinner Table
 	[1561] = "봉인된 함",	-- Sealed Crate
 	[1585] = "폭발물",	-- Explosive Charge	--TODO: This was taken from classic Wowhead
+	[1586] = "양초 상자",	-- Crate of Candles
 	[1593] = "시체 더미 나룻배",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "얕은 무덤",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "용아귀 투석기",	-- Dragonmaw Catapult
@@ -1045,6 +1047,8 @@ for key,value in pairs({
 	[175320] = "현상 수배: 먹구렁!",	-- WANTED: Murkdeep!
 	[175524] = "신비한 붉은 수정",	-- Mysterious Red Crystal	--TODO: This was taken from classic Wowhead
 	[175894] = "재니스의 소포",	-- Janice's Parcel	--TODO: This was taken from classic Wowhead
+	[175924] = "잠긴 사물함",	-- Locked Cabinet	--TODO: This was taken from classic Wowhead
+	[175925] = "간이화장실",	-- Outhouse
 	[175926] = "달슨 부인의 일기",	-- Mrs. Dalson's Diary	--TODO: This was taken from classic Wowhead
 	[175965] = "프로스트위스퍼의 불변의 영액",	-- Frostwhisper's Embalming Fluid
 	[176090] = "인간 해골",	-- Human Remains
@@ -1063,6 +1067,7 @@ for key,value in pairs({
 	[176631] = "메네실의 선물",	-- Menethil's Gift
 	[177289] = "스컬지 가마솥",	-- Scourge Cauldron	--TODO: This was taken from classic Wowhead
 	[177491] = "흰개미 통",	-- Termite Barrel	--TODO: This was taken from classic Wowhead
+	[177667] = "찢어진 두루마리",	-- Torn Scroll
 	[177787] = "랙모어의 기록",	-- Rackmore's Log
 	[177904] = "현상 수배: 베스셀레스",	-- Wanted Poster: Besseleth
 	[177964] = "심연의 돌",	-- Fathom Stone
@@ -2703,6 +2708,7 @@ for key,value in pairs({
 	[332576] = "수정 호랑이 조각상",	-- Crystalline Cat Figurine
 	[332704] = "타락의 상자",	-- Corrupted Chest
 	[334216] = "검은 제국 보관함",	-- Black Empire Cache
+	[335655] = "오오나의 팔",	-- Oonar's Arm
 	[336415] = "버려진 두루마리",	-- Discarded Scroll
 	[337237] = "잃어버린 금고",	-- Lost Vault
 	[337241] = "장비 보관함",	-- Stashed Equipment

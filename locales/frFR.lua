@@ -936,8 +936,10 @@ for key,value in pairs({
 	[269] = "Tonneau de Tonneblonde gardé",	-- Guarded Thunder Ale Barrel
 	[270] = "Tonneau de Tonneblonde non gardé",	-- Unguarded Thunder Ale Barrel
 	[711] = "Avis de recherche !",	-- Wanted!
+	[1557] = "Table de dîner de Lillith",	-- Lillith's Dinner Table
 	[1561] = "Caisse scellée",	-- Sealed Crate
 	[1585] = "Charge explosive",	-- Explosive Charge
+	[1586] = "Caisse de bougies",	-- Crate of Candles
 	[1593] = "Bateau chargé de cadavres",	-- Corpse Laden Boat
 	[1599] = "Tombe peu profonde",	-- Shallow Grave
 	[1609] = "Catapulte des Gueules-de-dragon",	-- Dragonmaw Catapult
@@ -1044,6 +1046,8 @@ for key,value in pairs({
 	[175320] = "AVIS DE RECHERCHE : Fondeboue !",	-- WANTED: Murkdeep!
 	[175524] = "Mystérieux cristal rouge",	-- Mysterious Red Crystal
 	[175894] = "Colis de Janice",	-- Janice's Parcel
+	[175924] = "Cabinet verrouillé",	-- Locked Cabinet
+	[175925] = "Toilettes",	-- Outhouse
 	[175926] = "Journal de Mme Dalson",	-- Mrs. Dalson's Diary
 	[175965] = "Fluide d’embaumement de Murmegivre",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Cadavres humains",	-- Human Remains
@@ -1062,6 +1066,7 @@ for key,value in pairs({
 	[176631] = "Don de Menethil",	-- Menethil's Gift
 	[177289] = "Chaudron du Fléau",	-- Scourge Cauldron
 	[177491] = "Tonneau de termites",	-- Termite Barrel
+	[177667] = "Parchemin déchiré",	-- Torn Scroll
 	[177787] = "Journal de Rackmore",	-- Rackmore's Log
 	[177904] = "Avis de recherche : Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Pierre de la Brasse",	-- Fathom Stone
@@ -2702,6 +2707,7 @@ for key,value in pairs({
 	[332576] = "Figurine de chat en cristal",	-- Crystalline Cat Figurine
 	[332704] = "Coffre corrompu",	-- Corrupted Chest
 	[334216] = "Cache de l’Empire noir",	-- Black Empire Cache
+	[335655] = "Bras d’Oonar",	-- Oonar's Arm
 	[336415] = "Parchemin abandonné",	-- Discarded Scroll
 	[337237] = "Caveau perdu",	-- Lost Vault
 	[337241] = "Réserve d’équipement",	-- Stashed Equipment
