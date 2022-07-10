@@ -5652,6 +5652,9 @@ end
 local cacheQuestID = function(group, questID)
 	CacheField(group, "questID", questID);
 end
+local cacheFactionID = function(group, id)
+	CacheField(group, "factionID", id);
+end
 
 fieldConverters = {
 	-- Simple Converters
@@ -5674,9 +5677,7 @@ fieldConverters = {
 	["encounterID"] = function(group, value)
 		CacheField(group, "encounterID", value);
 	end,
-	["factionID"] = function(group, value)
-		CacheField(group, "factionID", value);
-	end,
+	["factionID"] = cacheFactionID,
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
 	end,
@@ -5785,6 +5786,12 @@ fieldConverters = {
 		for _,mapID in ipairs(value) do
 			cacheMapID(group, mapID);
 		end
+	end,
+	["maxReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
+	end,
+	["minReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
 	end,
 	["nextQuests"] = function(group, value)
 		for _,questID in ipairs(value) do
