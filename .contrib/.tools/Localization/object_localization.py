@@ -7,8 +7,9 @@ import fileinput
 import logging
 import re
 import sys
+from collections.abc import Coroutine
 from enum import Enum
-from typing import Coroutine, NamedTuple
+from typing import NamedTuple
 
 from aiohttp.client import ClientSession
 from bs4 import BeautifulSoup
@@ -44,7 +45,7 @@ async def get_localized_obj_name_flavor(
     obj_id: int,
     lang_code: LangCode = LangCode.ENGLISH,
     game_flavor: GameFlavor = GameFlavor.RETAIL,
-):
+) -> str:
     url = "https://"
     if lang_code != LangCode.ENGLISH:
         url += f"{lang_code.value}."
@@ -98,7 +99,7 @@ async def get_localized_obj_name(
     return localized_obj_name, game_flavor
 
 
-def get_todo_lines(lines: list[str]):
+def get_todo_lines(lines: list[str]) -> dict[int, int]:
     todo_dict: dict[int, int] = {}
     for ind, line in enumerate(lines):
         if "ObjectNames" in line:
@@ -129,7 +130,7 @@ async def attach_line_ind(
 
 async def get_localized_names(
     session: ClientSession, todo_dict: dict[int, int], lang_code: LangCode
-):
+) -> dict[int, tuple[str, GameFlavor]]:
     localized_dict: dict[int, tuple[str, GameFlavor]] = {}
     localized_objects = await asyncio.gather(
         *[
@@ -154,7 +155,7 @@ async def localize_objects(
     filename: str,
     lang_code: LangCode,
     original_obj_names: dict[int, str] = {},
-):
+) -> dict[int, str]:
     logging.info(f"Starting {lang_code}!")
     file = open(filename)
     lines = file.readlines()
@@ -191,7 +192,7 @@ async def localize_objects(
     return original_obj_names
 
 
-def sort_objects(filename: str):
+def sort_objects(filename: str) -> None:
     file = open(filename)
     lines = file.readlines()
     lines_copy = lines.copy()
@@ -255,7 +256,7 @@ class ObjectsInfo(NamedTuple):
     last_line: int
 
 
-async def get_objects_info(session: ClientSession, filename: str):
+async def get_objects_info(session: ClientSession, filename: str) -> ObjectsInfo:
     sort_objects(filename)
     file = open(filename)
     lines = file.readlines()
@@ -315,7 +316,7 @@ async def get_objects_info(session: ClientSession, filename: str):
 
 async def get_new_object_line(
     session: ClientSession, obj_id: int, obj_name: str, lang_code: LangCode
-):
+) -> str:
     logging.info(f"New object {obj_id}: {obj_name}")
 
     localized_obj_name, game_flavor = await get_localized_obj_name(
@@ -341,7 +342,7 @@ async def get_new_object_line(
 
 async def sync_objects(
     session: ClientSession, objects: list[Object], filename: str, lang_code: LangCode
-):
+) -> None:
     logging.info(f"Syncing {lang_code}!")
     localized_objects, first_obj_line, last_obj_line = await get_objects_info(
         session, filename
