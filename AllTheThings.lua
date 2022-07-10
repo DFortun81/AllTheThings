@@ -17926,59 +17926,59 @@ function app:GetDataCache()
 	]]--
 
 	-- Update Flight Path data.
-	if flightPathsCategory and dynamicSetting > 0 then
-		flightPathsCategory.OnUpdate = function(self)
-			-- no longer need to run this logic once the dynamic group has been filled
-			self.OnUpdate = nil;
-			for i,_ in pairs(fieldCache["flightPathID"]) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(fp, key, value); end
-					end
-					self.fps[i] = fp;
-					fp.g = nil;
-					fp.maps = nil;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
-					else
-						fp.parent = flightPathsCategory_NYI;
-						tinsert(flightPathsCategory_NYI.g, fp);
-					end
-					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
-					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
-				end
-			end
-			-- will only run once per session and return true the first time it is called
-			if app.CacheFlightPathData() then
-				for i,_ in pairs(app.FlightPathDB) do
-					if not self.fps[i] then
-						local fp = app.CreateFlightPath(tonumber(i));
-						self.fps[i] = fp;
-						if not fp.u or fp.u ~= 1 then
-							app.print("Flight Path needs Source!",i,fp.name)
-							fp.parent = self;
-							tinsert(self.g, fp);
-						else
-							fp.parent = flightPathsCategory_NYI;
-							tinsert(flightPathsCategory_NYI.g, fp);
-						end
-					end
-				end
-			end
-			-- reset indents and such
-			BuildGroups(flightPathsCategory, flightPathsCategory.g);
-			-- delay-sort the top level groups
-			flightPathsCategory.sort = true;
-			app.SortGroupDelayed(flightPathsCategory, "name");
-			flightPathsCategory.sort = nil;
-			-- dynamic groups are ignored for the source tooltips
-			flightPathsCategory.sourceIgnored = true;
-			-- make sure these things are cached so they can be updated when collected
-			CacheFields(flightPathsCategory);
-		end;
-	end
+	-- if flightPathsCategory and dynamicSetting > 0 then
+	-- 	flightPathsCategory.OnUpdate = function(self)
+	-- 		-- no longer need to run this logic once the dynamic group has been filled
+	-- 		self.OnUpdate = nil;
+	-- 		for i,_ in pairs(fieldCache["flightPathID"]) do
+	-- 			if not self.fps[i] then
+	-- 				local fp = app.CreateFlightPath(tonumber(i));
+	-- 				for j,o in ipairs(_) do
+	-- 					for key,value in pairs(o) do rawset(fp, key, value); end
+	-- 				end
+	-- 				self.fps[i] = fp;
+	-- 				fp.g = nil;
+	-- 				fp.maps = nil;
+	-- 				if not fp.u or fp.u ~= 1 then
+	-- 					fp.parent = self;
+	-- 					tinsert(self.g, fp);
+	-- 				else
+	-- 					fp.parent = flightPathsCategory_NYI;
+	-- 					tinsert(flightPathsCategory_NYI.g, fp);
+	-- 				end
+	-- 				-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
+	-- 				if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
+	-- 			end
+	-- 		end
+	-- 		-- will only run once per session and return true the first time it is called
+	-- 		if app.CacheFlightPathData() then
+	-- 			for i,_ in pairs(app.FlightPathDB) do
+	-- 				if not self.fps[i] then
+	-- 					local fp = app.CreateFlightPath(tonumber(i));
+	-- 					self.fps[i] = fp;
+	-- 					if not fp.u or fp.u ~= 1 then
+	-- 						app.print("Flight Path needs Source!",i,fp.name)
+	-- 						fp.parent = self;
+	-- 						tinsert(self.g, fp);
+	-- 					else
+	-- 						fp.parent = flightPathsCategory_NYI;
+	-- 						tinsert(flightPathsCategory_NYI.g, fp);
+	-- 					end
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 		-- reset indents and such
+	-- 		BuildGroups(flightPathsCategory, flightPathsCategory.g);
+	-- 		-- delay-sort the top level groups
+	-- 		flightPathsCategory.sort = true;
+	-- 		app.SortGroupDelayed(flightPathsCategory, "name");
+	-- 		flightPathsCategory.sort = nil;
+	-- 		-- dynamic groups are ignored for the source tooltips
+	-- 		flightPathsCategory.sourceIgnored = true;
+	-- 		-- make sure these things are cached so they can be updated when collected
+	-- 		CacheFields(flightPathsCategory);
+	-- 	end;
+	-- end
 
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
