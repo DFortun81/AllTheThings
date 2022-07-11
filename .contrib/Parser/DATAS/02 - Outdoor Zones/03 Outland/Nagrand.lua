@@ -16,7 +16,7 @@ local OnTooltipForConsortium = [[function(t)
 			local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		end
-		
+
 		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
 		GameTooltip:AddDoubleLine("Turn in Obsidian Warbeads.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		GameTooltip:AddDoubleLine(" ", (x * 10) .. " Beads to go!", 1, 1, 1);
@@ -2071,10 +2071,10 @@ root("Zones", {
 					i(26045, {	-- Halaa Battle Token
 						["description"] = "Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nAs a Level 70, your target must be Level 65+",
 					}),
-					i(23608, {	-- Plans: Khorium Belt
+					i(23608, {	-- Plans: Khorium Belt (RECIPE!)
 						["cr"] = 18203,	-- Murkblood Raider
 					}),
-					i(23611, {	-- Plans: Ragesteel Gloves
+					i(23611, {	-- Plans: Ragesteel Gloves (RECIPE!)
 						["cr"] = 17136,	-- Boulderfist Warrior
 					}),
 					i(22923, {	-- Recipe: Major Arcane Protection Potion

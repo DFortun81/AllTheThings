@@ -670,6 +670,18 @@ root("Zones", {
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
 					}),
 				}),
+				n(PROFESSIONS, {
+					prof(BLACKSMITHING, {
+						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>
+							["coord"] = { 69.6, 43.6, SHATTRATH_CITY },
+							["g"] = TBC_WEAPONSMITHING,
+						}),
+						n(20125, {	-- Zula Slagfury <Armorsmith Trainer>
+							["coord"] = { 69.8, 42.6, SHATTRATH_CITY },
+							["g"] = TBC_ARMORSMITHING,
+						}),
+					}),
+				}),
 				n(QUESTS, {
 					q(10552, {	-- Allegiance to the Scryers
 						["qg"] = 18166,	-- Archmage Khadgar
@@ -1135,31 +1147,27 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
-					q(44863, {	-- Clearing the Air
+					q(44863, bubbleDownSelf({ ["timeline"] = { "created 7.0.3", "added 7.1.5" } }, {	-- Clearing the Air
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
-						["timeline"] = {
-							"created 7.0.3.21655",
-							"added 7.1.5.23038"
-						},
 						["requireSkill"] = BLACKSMITHING,
 						["groups"] = {
-							i(142279),	-- Plans: Windforged Rapier
-							i(142283),	-- Plans: Skyforged Great Axe
-							i(142282),	-- Plans: Stormforged Axe
+							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
+							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
+							i(142282),	-- Plans: Stormforged Axe (RECIPE!)
 						},
-					}),
-					q(41160, {	-- Earth to Earth
+					})),
+					q(41160, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {	-- Earth to Earth
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 						["timeline"] = { "added 7.0.3.21655" },
 						["requireSkill"] = BLACKSMITHING,
 						["groups"] = {
-							i(142284),	-- Plans: Stoneforged Claymore
-							i(142287),	-- Plans: Great Earthforged Hammer
-							i(142286),	-- Plans: Lavaforged Warhammer
+							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
+							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
+							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
 						},
-					}),
+					})),
 					q(10169, {	-- Losing Gracefully
 						["qg"] = 19485,	-- Magister Falris
 						["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
@@ -1485,20 +1493,21 @@ root("Zones", {
 						["coord"] = { 64.0, 71.8, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(23591, {	-- Plans: Adamantite Cleaver
+							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23592, {	-- Plans: Adamantite Dagger
+							i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23590, {	-- Plans: Adamantite Maul
+							i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23593, {	-- Plans: Adamantite Rapier
+							i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(25846, {	-- Plans: Adamantite Rod
+							i(25846, {	-- Plans: Adamantite Rod (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
 						},
 					}),
@@ -2032,14 +2041,14 @@ root("Zones", {
 						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.",
 						["coord"] = { 64.2, 71.4, SHATTRATH_CITY },
 						["timeline"] = { "added 7.1.0.22908" },
-						["groups"] = {
-							i(142287),	-- Plans: Great Earthforged Hammer
-							i(142286),	-- Plans: Lavaforged Warhammer
-							i(142283),	-- Plans: Skyforged Great Axe
-							i(142284),	-- Plans: Stoneforged Claymore
-							i(142282),	-- Plans: Stormforged Axe
-							i(142279),	-- Plans: Windforged Rapier
-						},
+						["groups"] = sharedData({ ["timeline"] = { "added 7.1.5"} }, {
+							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
+							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
+							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
+							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
+							i(142282),	-- Plans: Stormforged Axe (RECIPE!)
+							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
+						}),
 					}),
 					n(19663, {	-- Madame Ruby <Enchanting Supplies>
 						["coord"] = { 63.6, 70.0, SHATTRATH_CITY },
@@ -2328,10 +2337,10 @@ root("Zones", {
 							i(24295),	-- Pattern: Golden Spellthread
 							i(24293),	-- Pattern: Silver Spellthread
 							i(25721),	-- Pattern: Vindicator's Armor Kit
-							i(23601),	-- Plans: Flamebane Bracers
-							i(23604),	-- Plans: Flamebane Breastplate
-							i(23603),	-- Plans: Flamebane Gloves
-							i(23602),	-- Plans: Flamebane Helm
+							i(23601),	-- Plans: Flamebane Bracers (RECIPE!)
+							i(23604),	-- Plans: Flamebane Breastplate (RECIPE!)
+							i(23603),	-- Plans: Flamebane Gloves (RECIPE!)
+							i(23602),	-- Plans: Flamebane Helm (RECIPE!)
 							i(29124),	-- Vindicator's Brand
 							i(29127),	-- Vindicator's Hauberk
 						},
@@ -2365,10 +2374,10 @@ root("Zones", {
 							i(25722),	-- Pattern: Magister's Armor Kit
 							i(24292),	-- Pattern: Mystic Spellthread
 							i(24294),	-- Pattern: Runic Spellthread
-							i(23597),	-- Plans: Enchanted Adamantite Belt
-							i(23598),	-- Plans: Enchanted Adamantite Boots
-							i(23599),	-- Plans: Enchanted Adamantite Breastplate
-							i(23600),	-- Plans: Enchanted Adamantite Leggings
+							i(23597),	-- Plans: Enchanted Adamantite Belt (RECIPE!)
+							i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
+							i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
+							i(23600),	-- Plans: Enchanted Adamantite Leggings (RECIPE!)
 							i(22908),	-- Recipe: Elixir of Major Firepower
 							i(29125),	-- Retainer's Blade
 							i(29131),	-- Retainer's Leggings

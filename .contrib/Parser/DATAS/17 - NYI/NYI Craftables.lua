@@ -21,6 +21,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(12772);	-- Inlaid Thorium Hammer
 				i(12779);	-- Rune Edge
 				i(12764);	-- Thorium Greatsword
+				-- #if BEFORE TBC
+				i(12625),	-- Dawnbringer Shoulders
 				-- #if BEFORE 7.1.5
 				i(12769),	-- Bleakwood Hew
 				i(12802),	-- Darkspear

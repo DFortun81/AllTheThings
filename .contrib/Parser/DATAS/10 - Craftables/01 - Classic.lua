@@ -355,7 +355,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(12624);	-- Wildthorn Mail
 			-- #endif
 		}),
-		n(MISC, {
+		filter(MISC, {
 			i(16206, {["timeline"]={"removed 5.0.4"}}),	-- Arcanite Rod
 			i(15872);	-- Arcanite Skeleton Key
 			i(3478);	-- Coarse Grinding Stone
@@ -408,12 +408,14 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(3490);	-- Deadly Bronze Poniard
 			i(7947);	-- Ebon Shiv
 			i(17704);	-- Edge of Winter
+			applyclassicphase(TBC_PHASE_ONE, i(29203, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Enchanted Thorium Blades
 			i(3854);	-- Frost Tiger Blade
 			i(12259);	-- Glinting Steel Dagger
 			i(3852);	-- Golden Iron Destroyer
 			i(3849);	-- Hardened Iron Shortsword
 			i(3491);	-- Heavy Bronze Mace
 			i(3487);	-- Heavy Copper Broadsword
+			applyclassicphase(TBC_PHASE_ONE, i(33791, {["timeline"]={"added 2.3.0"}})),	-- Heavy Copper Longsword
 			i(6214);	-- Heavy Copper Maul
 			i(7941);	-- Heavy Mithril Axe
 			i(12775);	-- Huge Thorium Battleaxe
@@ -432,11 +434,13 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(3856);	-- Shadow Crescent Axe
 			i(3851);	-- Solid Iron Maul
 			i(17193);	-- Sulfuron Hammer
+			applyclassicphase(TBC_PHASE_ONE, i(29201, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Thick Bronze Darts
 			i(3489);	-- Thick War Axe
 			i(12792, {	-- Volcanic Hammer
 				["timeline"] = { "added 1.0.0", "removed 4.0.3" },	-- NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 			}),
 			i(7943);	-- Wicked Mithril Blade
+			applyclassicphase(TBC_PHASE_ONE, i(29202, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 			-- #if AFTER TBC
 			i(12798);	-- Annihilator
 			i(12790, {["timeline"]={"removed 4.0.3","added 7.1.5"}}),	-- Arcanite Champion
@@ -466,6 +470,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(7954, {["timeline"]={"removed 4.0.3"}}),	-- The Shatterer
 			i(7960, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champion
 			-- #endif
+			-- #if AFTER CATA
+			i(30071, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Light Earthforged Blade
+			-- #endif
 			-- #if AFTER 7.1.5
 			i(12769, {	-- Bleakwood Hew
 				["timeline"] = { "created 1.11.1.5462", "added 7.1.5.23360" },
@@ -474,40 +481,6 @@ root("Craftables", tier(CLASSIC_TIER, {
 				["timeline"] = { "created 1.11.1.5462", "added 7.1.5.23360" },
 			}),
 			-- #endif
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(33791, {	-- Heavy Copper Longsword (This is added in TBC dunno why it had no tag?)
-				["timeline"] = { "added 2.3.0" },
-			}),
-			-- #if AFTER TBC
-			i(30071, {	-- Light Earthforged Blade
-				["timeline"] = {
-					"added 2.0.1.6180",
-					"removed 4.0.1.13287",
-					"added 7.1.5.23360",
-				},
-			}),
-			-- #endif
-		}),
-		filter(THROWN, {
-			applyclassicphase(TBC_PHASE_ONE, i(29203, {	-- Enchanted Thorium Blades
-				["timeline"] = {
-					"added 2.0.1.10000",
-					"removed 5.0.4.10000"
-				},
-			})),
-			applyclassicphase(TBC_PHASE_ONE, i(29201, {	-- Thick Bronze Darts
-				["timeline"] = {
-					"added 2.0.1.10000",
-					"removed 5.0.4.10000"
-				},
-			})),
-			applyclassicphase(TBC_PHASE_ONE, i(29202, {	-- Whirling Steel Axes
-				["timeline"] = {
-					"added 2.0.1.10000",
-					"removed 5.0.4.10000"
-				},
-			})),
 		}),
 		category(220, {	-- Chest
 			i(163964, {	-- Barbaric Iron Hauberk

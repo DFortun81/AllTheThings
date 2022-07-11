@@ -4787,13 +4787,13 @@ root("Zones", {
 					i(21911, {	-- Pattern: Spellfire Bag
 						["cr"] = 20134,	-- Sunfury Arcanist
 					}),
-					i(23639, {	-- Plans: Greater Ward of Shielding
+					i(23639, {	-- Plans: Greater Ward of Shielding (RECIPE!)
 						["crs"] = {
 							18856,	-- Arcane Annihilator
 							18853,	-- Sunfury Bloodwarder
 						},
 					}),
-					i(23610, {	-- Plans: Khorium Boots
+					i(23610, {	-- Plans: Khorium Boots (RECIPE!)
 						["cr"] = 18873,	-- Disembodied Protector
 					}),
 					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker

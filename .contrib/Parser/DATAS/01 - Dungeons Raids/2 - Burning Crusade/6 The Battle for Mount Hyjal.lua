@@ -981,8 +981,8 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32736),	-- Plans: Swiftsteel Bracers
-					i(32739),	-- Plans: Dawnsteel Shoulders
+					i(32736),	-- Plans: Swiftsteel Bracers (RECIPE!)
+					i(32739),	-- Plans: Dawnsteel Shoulders (RECIPE!)
 					i(32609),	-- Boots of the Divine Light
 					i(32592),	-- Chestguard of Relentless Storms
 					i(32591),	-- Choker of Serrated Blades

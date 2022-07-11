@@ -64,10 +64,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				}),
 				i(35204),	-- Pattern: Sunfire Handwraps
 				i(35206),	-- Pattern: Sunfire Robe
-				i(35209),	-- Plans: Hard Khorium Battlefists
-				i(35211),	-- Plans: Hard Khorium Battleplate
-				i(35210),	-- Plans: Sunblessed Breastplate
-				i(35208),	-- Plans: Sunblessed Gauntlets
+				i(35209),	-- Plans: Hard Khorium Battlefists (RECIPE!)
+				i(35211),	-- Plans: Hard Khorium Battleplate (RECIPE!)
+				i(35210),	-- Plans: Sunblessed Breastplate (RECIPE!)
+				i(35208),	-- Plans: Sunblessed Gauntlets (RECIPE!)
 				i(35186),	-- Schematic: Annihilator Holo-Gogs
 				i(35196),	-- Schematic: Hard Khorium Goggles
 				i(35190),	-- Schematic: Hyper-Magnified Moon Specs

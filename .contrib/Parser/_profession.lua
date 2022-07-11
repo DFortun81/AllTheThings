@@ -83,7 +83,9 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLA
 		r(7408),	-- Heavy Copper Maul
 		r(9993),	-- Heavy Mithril Axe
 		r(6517),	-- Pearl-handled Dagger
+		applyclassicphase(TBC_PHASE_ONE, r(34979, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Thick Bronze Darts
 		r(3294),	-- Thick War Axe
+		applyclassicphase(TBC_PHASE_ONE, r(34981, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 	}),
 });
 ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
@@ -107,6 +109,7 @@ ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	}),
 	n(WEAPONS, {
 		r(10001),	-- Big Black Mace
+		applyclassicphase(TBC_PHASE_ONE, r(34981, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 	}),
 	cat(OTHER, {	-- Materials
 		r(20201, {["timeline"]={"removed 5.0.4"}}),	-- Arcanite Rod
@@ -149,8 +152,82 @@ ARMORSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 CLASSIC_BLACKSMITHING = appendGroups(APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING,
 -- #if AFTER 2.1.0
 ARTISAN_BLACKSMITHING
+-- #else
+	{}
 -- #endif
 );
+TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+	r(29844, {	-- Blacksmithing (Master)
+		["timeline"]={ "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	n(ARMOR, {
+		r(29553),	-- Fel Iron Chain Bracers
+		r(29551),	-- Fel Iron Chain Coif
+		r(29552),	-- Fel Iron Chain Gloves
+		r(29556),	-- Fel Iron Chain Tunic
+		r(29550),	-- Fel Iron Breastplate
+		r(29547),	-- Fel Iron Plate Belt
+		r(29548),	-- Fel Iron Plate Boots
+		r(29545),	-- Fel Iron Plate Gloves
+		r(29549),	-- Fel Iron Plate Pants
+	}),
+	n(MISC, {
+		r(32655, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Fel Iron Rod
+		r(29654),	-- Fel Sharpening Stone
+		r(34607),	-- Fel Weightstone
+		r(32284),	-- Lesser Rune of Warding
+	}),
+	n(WEAPONS, {
+		r(29565),	-- Fel Iron Greatsword
+		r(29558),	-- Fel Iron Hammer
+		r(29557),	-- Fel Iron Hatchet
+		r(34983, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Felsteel Whisper Knives
+	}),
+}));
+TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+	r(34533, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Breastplate of Kings
+	r(34534, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of Kings
+	r(36257, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of the Ancient Kings
+	r(36122, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Earthforged Leggings
+	r(36256, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Embrace of the Twisting Nether
+	r(36129, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Heavy Earthforged Breastplate
+	r(34529, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+	r(36130, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormforged Hauberk
+	r(34530, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+	r(36124, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Windforged Leggings
+}));
+TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+	r(34542, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Black Planar Edge
+	r(36258, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazefury
+	r(34537, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazeguard
+	r(36261, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bloodmoon
+	r(34548, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Deep Thunder
+	r(34546, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonmaw
+	r(36262, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonstrike
+	r(34545, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Drakefist Hammer
+	r(34535, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Fireguard
+	r(36128, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Emberforged Hammer
+	r(36126, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Skyforged Axe
+	r(34538, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Blade
+	r(34540, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Champion
+	r(36259, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Executioner
+	r(34543, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lunar Crescent
+	r(34544, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Mooncleaver
+	r(36263, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormherald
+	r(34541, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- The Planar Edge
+	r(34547, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Thunder
+	r(36260, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Wicked Edge of the Planes
+	-- #if BEFORE 7.1.5
+	r(36137, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Great Earthforged Hammer
+	r(36136, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Lavaforged Warhammer
+	r(36125, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Light Earthforged Blade
+	r(36135, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Skyforged Great Axe
+	r(36133, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stoneforged Claymore
+	r(36134, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stormforged Axe
+	r(36131, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Windforged Rapier
+	-- #endif
+}));
 ----------------
 -- ENCHANTING --
 ----------------
@@ -171,26 +248,19 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING },
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264455, {["timeline"]={"added 8.0.1"}})),	-- Enchanting
 	r(13262, {	-- Disenchant
 		["collectible"] = false,
 	}),
 	cat(ARMOR_ENCHANTMENTS, {
-		r(20023, {["timeline"]={"added 2.3.0"}}),	-- Greater Agility[Boot]
-		r(20012, {["timeline"]={"removed 2.3.0"}}),	-- Greater Agility[Glove]
-		r(20008, {["timeline"]={"added 2.3.0"}}),	-- Greater Intellect
-		r(20014, {["timeline"]={"added 2.3.0", "removed 5.0.4"}}),	-- Greater Resistance
-		r(20013, {["timeline"]={"removed 2.3.0"}}),	-- Greater Strength
 		r(7857),	-- Health
 		r(13538),	-- Lesser Absorption
-		r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
-		r(13646, {["timeline"]={"added 4.1.0"}}),	-- Lesser Dodge
+		applyclassicphase(WRATH_PHASE_ONE, r(63746, {["timeline"]={"added 3.1.0"}})),	-- Lesser Accuracy
 		r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
 		r(7748),	-- Lesser Health
 		r(13622),	-- Lesser Intellect
 		r(13421),	-- Lesser Protection
 		r(13501),	-- Lesser Stamina
-		r(20028, {["timeline"]={"added 2.3.0"}}),	-- Major Mana
 		r(13607),	-- Mana
 		r(7426),	-- Minor Absorption
 		r(7779),	-- Minor Agility
@@ -202,6 +272,17 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING },
 		r(7863),	-- Minor Stamina[Boot]
 		r(7457),	-- Minor Stamina[Bracer]
 		r(13626),	-- Minor Stats
+		-- #if AFTER 2.3.0
+		r(20023),	-- Greater Agility[Boot]
+		r(20012),	-- Greater Agility[Glove]
+		r(20008),	-- Greater Intellect
+		r(20014, {["timeline"]={"removed 5.0.4"}}),	-- Greater Resistance
+		r(20013),	-- Greater Strength
+		r(20028),	-- Major Mana
+		-- #endif
+		-- #if AFTER 4.1.0
+		r(13646),	-- Lesser Dodge
+		-- #endif
 	}),
 	cat(OTHER, {
 		r(14807),	-- Greater Magic Wand
@@ -209,7 +290,7 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING },
 		r(7421),	-- Runed Copper Rod
 		r(13628, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
 		r(7795, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
-		r(217637, {["timeline"]={"added 7.0.3"}}),	-- Tome of Illusions: Azeroth
+		applyclassicphase(LEGION_PHASE_ONE, r(217637, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Azeroth
 	}),
 	cat(WEAPON_ENCHANTMENTS, {
 		r(13529),	-- Lesser Impact
@@ -218,7 +299,9 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING },
 		r(7745),	-- Minor Impact
 		r(13378),	-- Minor Stamina
 		r(7788),	-- Minor Striking
-		r(20016, {["timeline"]={"removed 2.3.0"}}),	-- Superior Spirit / Vitality[LEGION+]
+		-- #if AFTER 2.3.0
+		r(20016),	-- Superior Spirit / Vitality[LEGION+]
+		-- #endif
 	}),
 });
 EXPERT_ARTISAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
@@ -271,6 +354,8 @@ EXPERT_ARTISAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
 CLASSIC_ENCHANTING = appendGroups(APPRENTICE_JOURNEYMAN_ENCHANTING,
 -- #if AFTER 2.1.0
 EXPERT_ARTISAN_ENCHANTING
+-- #else
+	{}
 -- #endif
 );
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 2.0.1" } }, {
@@ -278,7 +363,7 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] 
 		["timeline"]={ "added 2.0.1", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264460, {["timeline"]={"added 8.0.1"}})),	-- Outland Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(33996),	-- Assault
 		r(33993),	-- Blasting
@@ -298,7 +383,7 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] 
 		r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
 		r(28027),	-- Prismatic Sphere
 		r(32664, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Runed Fel Iron Rod
-		r(217641, {["timeline"]={"added 7.0.3"}}),	-- Tome of Illusions: Outland
+		applyclassicphase(LEGION_PHASE_ONE, r(217641, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Outland
 		r(28028),	-- Void Sphere
 	}),
 	cat(WEAPON_ENCHANTMENTS, {
@@ -311,7 +396,7 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkil
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264462, {["timeline"]={"added 8.0.1"}})),	-- Northrend Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(60606, {["timeline"]={"added 3.1.0"}}),	-- Assault[Boot]
 		r(44645, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Assault[Ring]
@@ -349,7 +434,7 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkil
 	cat(OTHER, {
 		r(69412, {["timeline"]={"added 3.2.2"}}),	-- Abyssal Shatter
 		r(60619, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Runed Titanium Rod
-		r(217644, {["timeline"]={"added 7.0.3"}}),	-- Tome of Illusions: Northrend
+		applyclassicphase(LEGION_PHASE_ONE, r(217644, {["timeline"]={"added 7.0.3"}})),	-- Tome of Illusions: Northrend
 	}),
 	cat(WEAPON_ENCHANTMENTS, {
 		r(44489),	-- Defense / Dodge[CATA+]

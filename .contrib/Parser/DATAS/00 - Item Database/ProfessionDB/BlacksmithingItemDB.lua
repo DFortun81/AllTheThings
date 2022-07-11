@@ -343,18 +343,171 @@ i(22705, 0);	-- Icebane Bracers
 i(22703, 0);	-- Icebane Breastplate
 i(22704, 0);	-- Icebane Gauntlets
 
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+i(0, 29844);	-- Blacksmithing (Master)
+i(0, 29553);	-- Fel Iron Chain Bracers
+i(0, 29551);	-- Fel Iron Chain Coif
+i(0, 29552);	-- Fel Iron Chain Gloves
+i(0, 29556);	-- Fel Iron Chain Tunic
+i(0, 29550);	-- Fel Iron Breastplate
+i(0, 29565);	-- Fel Iron Greatsword
+i(0, 29558);	-- Fel Iron Hammer
+i(0, 29557);	-- Fel Iron Hatchet
+i(0, 29547);	-- Fel Iron Plate Belt
+i(0, 29548);	-- Fel Iron Plate Boots
+i(0, 29545);	-- Fel Iron Plate Gloves
+i(0, 29549);	-- Fel Iron Plate Pants
+i(0, 29654);	-- Fel Sharpening Stone
+i(0, 34607);	-- Fel Weightstone
+i(0, 32284);	-- Lesser Rune of Warding
+-- ITEMS --
+i(23596, 29606);	-- Adamantite Breastplate
+i(23591, 29568);	-- Adamantite Cleaver
+i(23592, 29569);	-- Adamantite Dagger
+i(23590, 29566);	-- Adamantite Maul
+i(23594, 29603);	-- Adamantite Plate Bracers
+i(23595, 29605);	-- Adamantite Plate Gloves
+i(23593, 29571);	-- Adamantite Rapier
+i(23618, 29656);	-- Adamantite Sharpening Stone
+i(28632, 34608);	-- Adamantite Weightstone
+i(23626, 29669);	-- Black Felsteel Bracers
+i(23628, 29672);	-- Blessed Bracers
+i(23627, 29671);	-- Bracers of the Green Fortress
+-- #if AFTER TBC
+i(12698, 16660);	-- Dawnbringer Shoulders (Created in Classic)
+-- #endif
+i(23636, 29699);	-- Dirge
+i(23617, 29649);	-- Earthpeace Breastplate
+i(23597, 29608);	-- Enchanted Adamantite Belt
+i(23598, 29611);	-- Enchanted Adamantite Boots
+i(23599, 29610);	-- Enchanted Adamantite Breastplate
+i(23600, 29613);	-- Enchanted Adamantite Leggings
+i(23635, 29698);	-- Eternium Runed Blade
+i(23631, 29694);	-- Fel Edged Battleaxe
+i(23634, 29697);	-- Fel Hardened Maul
+i(23620, 29658);	-- Felfury Gauntlets
+i(23605, 29619);	-- Felsteel Gloves
+i(23607, 29621);	-- Felsteel Helm
+i(23606, 29620);	-- Felsteel Leggings
+i(23629, 29692);	-- Felsteel Longblade
+i(23632, 29695);	-- Felsteel Reaper
+i(23619, 29657);	-- Felsteel Shield Spike[A]
+i(24002, 29657);	-- Felsteel Shield Spike[H]
+i(23601, 29614);	-- Flamebane Bracers
+i(23604, 29617);	-- Flamebane Breastplate
+i(23603, 29616);	-- Flamebane Gloves
+i(23602, 29615);	-- Flamebane Helm
+i(23621, 29622);	-- Gauntlets of the Iron Tower
+i(25526, 32285);	-- Greater Rune of Warding
+i(23639, 29729);	-- Greater Ward of Shielding
+i(23637, 29700);	-- Hand of Eternity
+i(23624, 29664);	-- Helm of the Stalwart Defender
+i(23608, 29628);	-- Khorium Belt
+i(23610, 29630);	-- Khorium Boots
+i(23630, 29693);	-- Khorium Champion
+i(23609, 29629);	-- Khorium Pants
+i(23638, 29728);	-- Lesser Ward of Shielding
+i(23625, 29668);	-- Oathkeeper's Helm
+i(23613, 29645);	-- Ragesteel Breastplate
+i(23611, 29642);	-- Ragesteel Gloves
+i(23612, 29643);	-- Ragesteel Helm
+i(23633, 29696);	-- Runic Hammer
+i(23622, 29662);	-- Steelgrip Gauntlets
+i(23623, 29663);	-- Storm Helm
+i(23615, 29648);	-- Swiftsteel Gloves
+-- SPECIAL --
+-- Armor --
+i(0, 34533);	-- Breastplate of Kings
+i(0, 34534);	-- Bulwark of Kings
+i(0, 34529);	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+i(0, 34530);	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+-- Weapon --
+i(0, 34542);	-- Black Planar Edge
+i(0, 34537);	-- Blazeguard
+i(0, 34548);	-- Deep Thunder
+i(0, 34546);	-- Dragonmaw
+i(0, 34545);	-- Drakefist Hammer
+i(0, 34535);	-- Fireguard
+i(0, 34538);	-- Lionheart Blade
+i(0, 34540);	-- Lionheart Champion
+i(0, 34543);	-- Lunar Crescent
+i(0, 34544);	-- Mooncleaver
+i(0, 34541);	-- The Planar Edge
+i(0, 34547);	-- Thunder
+-- REMOVED --
+i(25846, 32656);	-- Adamantite Rod
+i(0, 34982);	-- Enchanted Thorium Blades
+i(25847, 32657);	-- Eternium Rod
+i(0, 32655);	-- Fel Iron Rod
+i(0, 34983);	-- Felsteel Whisper Knives
+i(0, 34979);	-- Thick Bronze Darts
+i(0, 34981);	-- Whirling Steel Axes
 
-
--- TBC 2.0.1
-i(12698, 16660);	-- Dawnbringer Shoulders (Added in TBC)
-
-
-
-
-
-
-
-
+-----------------
+-- PATCH 2.4.3 --
+-----------------
+i(33186, 42688);	-- Adamantite Weapon Chain
+i(35296, 42688);	-- Adamantite Weapon Chain
+i(30321, 36389);	-- Belt of the Guardian
+i(30323, 36391);	-- Boots of the Protecto
+i(32738, 41134);	-- Dawnsteel Bracers
+i(32739, 41135);	-- Dawnsteel Shoulders
+i(33954, 43846);	-- Hammer of Righteous Might
+i(35209, 46141);	-- Hard Khorium Battlefists
+i(35211, 46144);	-- Hard Khorium Battleplate
+i(33792, 43549);	-- Heavy Copper Longsword
+i(31393, 38477);	-- Iceguard Breastplate
+i(31395, 38479);	-- Iceguard Helm
+i(31394, 38478);	-- Iceguard Leggings
+i(33174, 42662);	-- Ragesteel Shoulders
+i(30322, 36390);	-- Red Belt of Battle
+i(30324, 36392);	-- Red Havoc Boots
+i(32442, 40034);	-- Shadesteel Bracers
+i(32444, 40036);	-- Shadesteel Girdle
+i(32443, 40035);	-- Shadesteel Greaves
+i(32441, 40033);	-- Shadesteel Sabots
+i(35210, 46142);	-- Sunblessed Breastplate
+i(35208, 46140);	-- Sunblessed Gauntlets
+i(32736, 41132);	-- Swiftsteel Bracers
+i(32737, 41133);	-- Swiftsteel Shoulders
+i(31390, 38473);	-- Wildguard Breastplate
+i(31392, 38476);	-- Wildguard Helm
+i(31391, 38475);	-- Wildguard Leggings
+-- SPECIAL --
+-- ARMOR --
+i(0, 36257);	-- Bulwark of the Ancient Kings
+i(0, 36122);	-- Earthforged Leggings
+i(0, 36256);	-- Embrace of the Twisting Nether
+i(0, 36129);	-- Heavy Earthforged Breastplate
+i(0, 36130);	-- Stormforged Hauberk
+i(0, 36124);	-- Windforged Leggings
+-- WEAPONS --
+i(0, 36258);	-- Blazefury
+i(0, 36261);	-- Bloodmoon
+i(0, 36262);	-- Dragonstrike
+i(142287, 36137);	-- Great Earthforged Hammer
+i(142286, 36136);	-- Lavaforged Warhammer
+i(142402, 36125);	-- Light Earthforged Blade
+i(0, 36128);	-- Light Emberforged Hammer
+i(0, 36126);	-- Light Skyforged Axe
+i(0, 36259);	-- Lionheart Executioner
+i(142283, 36135);	-- Skyforged Great Axe
+i(142284, 36133);	-- Stoneforged Claymore
+i(142282, 36134);	-- Stormforged Axe
+i(0, 36263);	-- Stormherald
+i(0, 36260);	-- Wicked Edge of the Planes
+i(142279, 36131);	-- Windforged Rapier
+-- NYI --
+i(35529, 0);	-- Dawnsteel Bracers
+i(35530, 0);	-- Dawnsteel Shoulders
+i(35553, 0);	-- Hard Khorium Battlefists
+i(35554, 0);	-- Hard Khorium Battleplate
+i(35555, 0);	-- Sunblessed Breastplate
+i(35556, 0);	-- Sunblessed Gauntlets
+i(35531, 0);	-- Swiftsteel Bracers
+i(35532, 0);	-- Swiftsteel Shoulders
 
 
 i(0, 280659);	-- 9.0 Blacksmithing - Crafted Reagent 07

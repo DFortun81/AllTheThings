@@ -160,16 +160,23 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(22705),	-- Plans: Icebane Bracers (RECIPE!)
 				i(22703),	-- Plans: Icebane Breastplate (RECIPE!)
 				i(22704),	-- Plans: Icebane Gauntlets (RECIPE!)
+				-- #if BEFORE TBC
+				i(12698),	-- Dawnbringer Shoulders (Added in TBC)
+				-- #endif
 			}),
 			tier(TBC_TIER, {
 				-- 2.4.0
 				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
-					i(66102),	-- Plans: Elementium Shield Spike
-					i(35529),	-- Plans: Dawnsteel Bracers
-					i(35530),	-- Plans: Dawnsteel Shoulders
-					i(35532),	-- Plans: Swiftsteel Shoulders
-					i(35531),	-- Plans: Swiftsteel Bracers
-					i(35555),	-- Plans: Sunblessed Breastplate
+					-- i(66102),	-- Plans: Elementium Shield Spike WIERD?! Commented /B
+					i(35529),	-- Plans: Dawnsteel Bracers (RECIPE!)
+					i(35530),	-- Plans: Dawnsteel Shoulders (RECIPE!)
+					i(35553),	-- Hard Khorium Battlefists (RECIPE!)
+					i(35554),	-- Hard Khorium Battleplate (RECIPE!)
+					i(35555),	-- Sunblessed Breastplate (RECIPE!)
+					i(35556),	-- Sunblessed Gauntlets (RECIPE!)
+					i(35532),	-- Plans: Swiftsteel Shoulders (RECIPE!)
+					i(35531),	-- Plans: Swiftsteel Bracers (RECIPE!)
+
 				})),
 			}),
 			tier(CATA_TIER, {

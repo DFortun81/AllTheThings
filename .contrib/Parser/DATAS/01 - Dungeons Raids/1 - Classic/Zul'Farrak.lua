@@ -251,7 +251,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(142402, {	-- Plans: Light Earthforged Blade
+				i(142402, {	-- Plans: Light Earthforged Blade (RECIPE!)
 					["timeline"] = { "added 7.1.5.23360" },
 				}),
 				i(9243),	-- Shriveled Troll Heart

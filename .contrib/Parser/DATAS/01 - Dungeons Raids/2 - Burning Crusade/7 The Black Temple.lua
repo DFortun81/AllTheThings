@@ -167,10 +167,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32442),	-- Plans: Shadesteel Bracers
-					i(32444),	-- Plans: Shadesteel Girdle
-					i(32443),	-- Plans: Shadesteel Greaves
-					i(32441),	-- Plans: Shadesteel Sabots
+					i(32442),	-- Plans: Shadesteel Bracers (RECIPE!)
+					i(32444),	-- Plans: Shadesteel Girdle (RECIPE!)
+					i(32443),	-- Plans: Shadesteel Greaves (RECIPE!)
+					i(32441),	-- Plans: Shadesteel Sabots (RECIPE!)
 					i(32490, {	-- Ashtongue Talisman of Acumen
 						["classes"] = { PRIEST },
 					}),
@@ -223,8 +223,8 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["f"] = RECIPES,
 				}),
 				i(32753),	-- Pattern: Swiftheal Mantle
-				i(32738),	-- Plans: Dawnsteel Bracers
-				i(32737),	-- Plans: Swiftsteel Shoulders
+				i(32738),	-- Plans: Dawnsteel Bracers (RECIPE!)
+				i(32737),	-- Plans: Swiftsteel Shoulders (RECIPE!)
 				-- #if BEFORE WRATH
 				-- This is going to sound crazy, but apparently during TBC, some of the trash drops from Hyjal dropped from Black Temple.
 				-- This was changed after the Wrath Prepatch.

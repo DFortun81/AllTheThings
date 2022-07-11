@@ -12,17 +12,6 @@ profession(BLACKSMITHING, {
 						},
 					}
 				},
-				{	-- Weapons
-					["categoryID"] = 227--[[Weapons]],
-					["g"] = {
-						{	-- Light Earthforged Blade
-							["recipeID"] = 36125--[[Light Earthforged Blade]]
-						},
-						{	-- Heavy Copper Longsword
-							["recipeID"] = 43549--[[Heavy Copper Longsword]]
-						},
-					}
-				},
 			},
 		},
 	}),

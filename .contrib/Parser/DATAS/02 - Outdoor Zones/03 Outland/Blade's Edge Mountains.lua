@@ -2563,7 +2563,7 @@ root("Zones", {
 							{ "i", 31121, 5 },	-- Costume Scraps
 						},
 					}),
-					i(23612, {	-- Plans: Ragesteel Helm
+					i(23612, {	-- Plans: Ragesteel Helm (RECIPE!)
 						["coords"] = {
 							{ 72.8, 40.6, BLADES_EDGE_MOUNTAINS },
 							{ 72.8, 41.6, BLADES_EDGE_MOUNTAINS },

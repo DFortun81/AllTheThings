@@ -636,9 +636,9 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				n(16388, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
 					["groups"] = {
-						i(31395),	-- Plans: Iceguard Helm
-						i(31393),	-- Plans: Iceguard Breastplate
-						i(31394),	-- Plans: Iceguard Leggings
+						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
+						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
+						i(31394),	-- Plans: Iceguard Leggings (RECIPE!)
 					},
 				}),
 				n(17518, {	-- Ythyar

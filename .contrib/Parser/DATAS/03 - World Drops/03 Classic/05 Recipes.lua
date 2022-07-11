@@ -36,7 +36,7 @@ _.WorldDrops =
 			prof(BLACKSMITHING, {
 				i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 				i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
-				i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
+				applyclassicphase(TBC_PHASE_ONE, i(12698, {["timeline"]={"added 2.0.1"}})),	-- Plans: Dawnbringer Shoulders (RECIPE!)
 				i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 				i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
 				i(3868),	-- Plans: Frost Tiger Blade (RECIPE!)

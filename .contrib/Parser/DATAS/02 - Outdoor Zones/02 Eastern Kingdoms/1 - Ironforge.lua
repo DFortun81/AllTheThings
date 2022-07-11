@@ -865,6 +865,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						i(33792, {	-- Plans: Heavy Copper Longsword
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+							["timeline"] = { "added 2.3.0" },
 						}),
 						-- #else
 						i(3609),	-- Plans: Copper Chain Vest (RECIPE!)

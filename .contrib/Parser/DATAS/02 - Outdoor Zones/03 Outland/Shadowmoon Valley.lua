@@ -2061,13 +2061,13 @@ root("Zones", {
 						["coord"] = { 29.2, 31.0, SHADOWMOON_VALLEY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(23596, {	-- Plans: Adamantite Breastplate
+							i(23596, {	-- Plans: Adamantite Breastplate (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23594, {	-- Plans: Adamantite Plate Bracers
+							i(23594, {	-- Plans: Adamantite Plate Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23595, {	-- Plans: Adamantite Plate Gloves
+							i(23595, {	-- Plans: Adamantite Plate Gloves (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2076,8 +2076,10 @@ root("Zones", {
 						["coord"] = { 36.8, 55.0, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(25847),	-- Plans: Eternium Rod
-							i(23638, {	-- Plans: Lesser Ward of Shielding
+							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+							}),
+							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2111,22 +2113,23 @@ root("Zones", {
 						["minReputation"] = { 1015, NEUTRAL },	-- Netherwing, Neutral.
 						["cr"] = 23267,	-- Arvoar the Rapacious
 					})),
-					i(23609, {	-- Plans: Khorium Pants
+					i(23609, {	-- Plans: Khorium Pants (RECIPE!)
 						["crs"] = { 20878 },	-- Deathforge Guardian
 					}),
-					i(23613, {	-- Plans: Ragesteel Breastplate
+					i(23613, {	-- Plans: Ragesteel Breastplate (RECIPE!)
 						["crs"] = {
 							21454,	-- Ashtongue Warrior
 							23324,	-- Crazed Murkblood Miner
 						},
 					}),
-					i(33174, {	-- Plans: Ragesteel Shoulders
+					i(33174, {	-- Plans: Ragesteel Shoulders (RECIPE!)
 						["crs"] = {
 							21060,	-- Enraged Air Spirit
 							21050,	-- Enraged Earth Spirit
 							21061,	-- Enraged Fire Spirit
 							21059,	-- Enraged Water Spirit
 						},
+						["timeline"] = { "added 2.2.0" },
 					}),
 					i(31239, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },

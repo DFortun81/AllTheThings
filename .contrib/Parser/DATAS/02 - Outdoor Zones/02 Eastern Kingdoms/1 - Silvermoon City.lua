@@ -513,16 +513,16 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3356 } }, -- Sumi <Blacksmithing Supplies>
 					-- #endif
 					["groups"] = {
-						i(23591, {	-- Plans: Adamantite Cleaver
+						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23592, {	-- Plans: Adamantite Dagger
+						i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23590, {	-- Plans: Adamantite Maul
+						i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23593, {	-- Plans: Adamantite Rapier
+						i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

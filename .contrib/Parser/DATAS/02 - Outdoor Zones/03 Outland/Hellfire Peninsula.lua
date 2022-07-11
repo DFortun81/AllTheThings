@@ -379,6 +379,17 @@ root("Zones", {
 					}),
 				}),
 				n(PROFESSIONS, {
+					prof(BLACKSMITHING, {
+						["crs"] = {
+							16823,	-- Humphry <Blacksmithing Trainer> (A)
+							16583,	-- Rohok <Blacksmithing Trainer> (H)
+						},
+						["coords"] = {
+							{ 56.8, 63.8, HELLFIRE_PENINSULA },
+							{ 53.2, 38.2, HELLFIRE_PENINSULA },
+						},
+						["g"] = TBC_BLACKSMITHING,
+					}),
 					prof(FISHING, {
 						i(34867),	-- Monstrous Felblood Snapper
 					}),
@@ -3095,7 +3106,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
 							})),
-							i(23619),	-- Plans: Felsteel Shield Spike
+							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(22905),	-- Recipe: Elixir of Major Agility
 							i(25870),	-- Recipe: Transmute Skyfire Diamond
 							i(29169),	-- Ring of Convalescence
@@ -3188,7 +3199,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
 							})),
-							i(24002),	-- Plans: Felsteel Shield Spike
+							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(24001),	-- Recipe: Elixir of Major Agility
 							i(29232),	-- Recipe: Transmute Skyfire Diamond
 							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
@@ -3213,8 +3224,10 @@ root("Zones", {
 						["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(25847),	-- Plans: Eternium Rod
-							i(23638, {	-- Plans: Lesser Ward of Shielding
+							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+							}),
+							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
