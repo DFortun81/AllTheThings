@@ -159,52 +159,52 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 		}),
 		-- #endif
 		n(ARMOR, {
-			i(23507);	-- Adamantite Breastplate
-			i(23506);	-- Adamantite Plate Bracers
-			i(23508);	-- Adamantite Plate Gloves
+			i(23507),	-- Adamantite Breastplate
+			i(23506),	-- Adamantite Plate Bracers
+			i(23508),	-- Adamantite Plate Gloves
 			applyclassicphase(TBC_PHASE_TWO, i(30034, {["timeline"]={"added 2.1.0"}})),	-- Belt of the Guardian
-			i(23537);	-- Black Felsteel Bracers
-			i(23539);	-- Blessed Bracers
+			i(23537),	-- Black Felsteel Bracers
+			i(23539),	-- Blessed Bracers
 			applyclassicphase(TBC_PHASE_TWO, i(30033, {["timeline"]={"added 2.1.0"}})),	-- Boots of the Protecto
-			i(23538);	-- Bracers of the Green Fortress
+			i(23538),	-- Bracers of the Green Fortress
 			applyclassicphase(TBC_PHASE_THREE, i(32571, {["timeline"]={"added 2.1.0"}})),	-- Dawnsteel Bracers
 			applyclassicphase(TBC_PHASE_THREE, i(32573, {["timeline"]={"added 2.1.0"}})),	-- Dawnsteel Shoulders
-			i(23527);	-- Earthpeace Breastplate
-			i(23510);	-- Enchanted Adamantite Belt
-			i(23511);	-- Enchanted Adamantite Boots
-			i(23509);	-- Enchanted Adamantite Breastplate
-			i(23512);	-- Enchanted Adamantite Leggings
-			i(23494);	-- Fel Iron Chain Bracers
-			i(23493);	-- Fel Iron Chain Coif
-			i(23491);	-- Fel Iron Chain Gloves
-			i(23490);	-- Fel Iron Chain Tunic
-			i(23489);	-- Fel Iron Breastplate
-			i(23484);	-- Fel Iron Plate Belt
-			i(23487);	-- Fel Iron Plate Boots
-			i(23482);	-- Fel Iron Plate Gloves
-			i(23488);	-- Fel Iron Plate Pants
-			i(23531);	-- Felfury Gauntlets
-			i(23517);	-- Felsteel Gloves
-			i(23519);	-- Felsteel Helm
-			i(23518);	-- Felsteel Leggings
-			i(23515);	-- Flamebane Bracers
-			i(23513);	-- Flamebane Breastplate
-			i(23514);	-- Flamebane Gloves
-			i(23516);	-- Flamebane Helm
-			i(23532);	-- Gauntlets of the Iron Tower
+			i(23527),	-- Earthpeace Breastplate
+			i(23510),	-- Enchanted Adamantite Belt
+			i(23511),	-- Enchanted Adamantite Boots
+			i(23509),	-- Enchanted Adamantite Breastplate
+			i(23512),	-- Enchanted Adamantite Leggings
+			i(23494),	-- Fel Iron Chain Bracers
+			i(23493),	-- Fel Iron Chain Coif
+			i(23491),	-- Fel Iron Chain Gloves
+			i(23490),	-- Fel Iron Chain Tunic
+			i(23489),	-- Fel Iron Breastplate
+			i(23484),	-- Fel Iron Plate Belt
+			i(23487),	-- Fel Iron Plate Boots
+			i(23482),	-- Fel Iron Plate Gloves
+			i(23488),	-- Fel Iron Plate Pants
+			i(23531),	-- Felfury Gauntlets
+			i(23517),	-- Felsteel Gloves
+			i(23519),	-- Felsteel Helm
+			i(23518),	-- Felsteel Leggings
+			i(23515),	-- Flamebane Bracers
+			i(23513),	-- Flamebane Breastplate
+			i(23514),	-- Flamebane Gloves
+			i(23516),	-- Flamebane Helm
+			i(23532),	-- Gauntlets of the Iron Tower
 			applyclassicphase(TBC_PHASE_FIVE, i(34378, {["timeline"]={"added 2.4.0"}})),	-- Hard Khorium Battlefists
 			applyclassicphase(TBC_PHASE_FIVE, i(34377, {["timeline"]={"added 2.4.0"}})),	-- Hard Khorium Battleplate
-			i(23535);	-- Helm of the Stalwart Defender
+			i(23535),	-- Helm of the Stalwart Defender
 			i(31369),	-- Iceguard Breastplate
 			i(31371),	-- Iceguard Helm
 			i(31370),	-- Iceguard Leggings
-			i(23524);	-- Khorium Belt
-			i(23525);	-- Khorium Boots
-			i(23523);	-- Khorium Pants
-			i(23536);	-- Oathkeeper's Helm
-			i(23522);	-- Ragesteel Breastplate
-			i(23520);	-- Ragesteel Gloves
-			i(23521);	-- Ragesteel Helm
+			i(23524),	-- Khorium Belt
+			i(23525),	-- Khorium Boots
+			i(23523),	-- Khorium Pants
+			i(23536),	-- Oathkeeper's Helm
+			i(23522),	-- Ragesteel Breastplate
+			i(23520),	-- Ragesteel Gloves
+			i(23521),	-- Ragesteel Helm
 			i(33173, {["timeline"]={"added 2.2.0"}}),	-- Ragesteel Shoulders
 			applyclassicphase(TBC_PHASE_TWO, i(30032, {["timeline"]={"added 2.1.0"}})),	-- Red Belt of Battle
 			applyclassicphase(TBC_PHASE_TWO, i(30031, {["timeline"]={"added 2.1.0"}})),	-- Red Havoc Boots
@@ -212,12 +212,12 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			applyclassicphase(TBC_PHASE_THREE, i(32401, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Girdle
 			applyclassicphase(TBC_PHASE_THREE, i(32404, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Greaves
 			applyclassicphase(TBC_PHASE_THREE, i(32402, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Sabots
-			i(23533);	-- Steelgrip Gauntlets
-			i(23534);	-- Storm Helm
+			i(23533),	-- Steelgrip Gauntlets
+			i(23534),	-- Storm Helm
 			applyclassicphase(TBC_PHASE_FIVE, i(34379, {["timeline"]={"added 2.4.0"}})),	-- Sunblessed Breastplate
 			applyclassicphase(TBC_PHASE_FIVE, i(34380, {["timeline"]={"added 2.4.0"}})),	-- Sunblessed Gauntlets
 			applyclassicphase(TBC_PHASE_THREE, i(32568, {["timeline"]={"added 2.1.0"}})),	-- Swiftsteel Bracers
-			i(23526);	-- Swiftsteel Gloves
+			i(23526),	-- Swiftsteel Gloves
 			applyclassicphase(TBC_PHASE_THREE, i(32570, {["timeline"]={"added 2.1.0"}})),	-- Swiftsteel Shoulders
 			i(31364),	-- Wildguard Breastplate
 			i(31368),	-- Wildguard Helm
@@ -238,37 +238,37 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 		filter(MISC, {
 			i(33185, {["timeline"]={"added 2.3.0"}}),	-- Adamantite Weapon Chain
 			i(25844, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Adamantite Rod
-			i(23529);	-- Adamantite Sharpening Stone
-			i(28421);	-- Adamantite Weightstone
+			i(23529),	-- Adamantite Sharpening Stone
+			i(28421),	-- Adamantite Weightstone
 			i(25845, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Eternium Rod
 			i(25843, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Fel Iron Rod
-			i(23528);	-- Fel Sharpening Stone
-			i(28420);	-- Fel Weightstone
-			i(23530);	-- Felsteel Shield Spike
-			i(25521);	-- Greater Rune of Warding
-			i(23576);	-- Greater Ward of Shielding
-			i(23559);	-- Lesser Rune of Warding
-			i(23575);	-- Lesser Ward of Shielding
+			i(23528),	-- Fel Sharpening Stone
+			i(28420),	-- Fel Weightstone
+			i(23530),	-- Felsteel Shield Spike
+			i(25521),	-- Greater Rune of Warding
+			i(23576),	-- Greater Ward of Shielding
+			i(23559),	-- Lesser Rune of Warding
+			i(23575),	-- Lesser Ward of Shielding
 		}),
 		n(WEAPONS, {
-			i(23503);	-- Adamantite Cleaver
-			i(23504);	-- Adamantite Dagger
-			i(23502);	-- Adamantite Maul
-			i(23505);	-- Adamantite Rapier
-			i(23555);	-- Dirge
-			i(23554);	-- Eternium Runed Blade
-			i(23542);	-- Fel Edged Battleaxe
-			i(23546);	-- Fel Hardened Maul
-			i(23499);	-- Fel Iron Greatsword
-			i(23498);	-- Fel Iron Hammer
-			i(23497);	-- Fel Iron Hatchet
-			i(23540);	-- Felsteel Longblade
-			i(23543);	-- Felsteel Reaper
+			i(23503),	-- Adamantite Cleaver
+			i(23504),	-- Adamantite Dagger
+			i(23502),	-- Adamantite Maul
+			i(23505),	-- Adamantite Rapier
+			i(23555),	-- Dirge
+			i(23554),	-- Eternium Runed Blade
+			i(23542),	-- Fel Edged Battleaxe
+			i(23546),	-- Fel Hardened Maul
+			i(23499),	-- Fel Iron Greatsword
+			i(23498),	-- Fel Iron Hammer
+			i(23497),	-- Fel Iron Hatchet
+			i(23540),	-- Felsteel Longblade
+			i(23543),	-- Felsteel Reaper
 			i(29204, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Felsteel Whisper Knives
 			i(32854, {["timeline"]={"added 2.3.0"}}),	-- Hammer of Righteous Might
-			i(23556);	-- Hand of Eternity
-			i(23541);	-- Khorium Champion
-			i(23544);	-- Runic Hammer
+			i(23556),	-- Hand of Eternity
+			i(23541),	-- Khorium Champion
+			i(23544),	-- Runic Hammer
 			-- #if AFTER CATA
 			i(28432, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Black Planar Edge
 			i(28427, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazefury
