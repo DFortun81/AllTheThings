@@ -248,16 +248,16 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3356 } }, -- Sumi <Blacksmithing Supplies>
 					-- #endif
 					["groups"] = {
-						i(23591, {	-- Plans: Adamantite Cleaver
+						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23592, {	-- Plans: Adamantite Dagger
+						i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23590, {	-- Plans: Adamantite Maul
+						i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23593, {	-- Plans: Adamantite Rapier
+						i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -287,7 +287,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
 					-- #endif
 					["groups"] = EGOMIS_GROUPS,
 				}),

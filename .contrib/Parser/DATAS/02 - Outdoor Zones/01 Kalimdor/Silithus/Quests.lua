@@ -325,9 +325,9 @@ _.Zones =
 							i(20547),	-- Pattern: Runed Stygian Boots
 							i(20548),	-- Pattern: Runed Stygian Belt
 							i(20546),	-- Pattern: Runed Stygian Leggings
-							i(20554),	-- Plans: Darkrune Breastplate
-							i(20553),	-- Plans: Darkrune Gauntlets
-							i(20555),	-- Plans: Darkrune Helm
+							applyclassicphase(PHASE_FOUR, i(20554)),	-- Plans: Darkrune Breastplate (RECIPE!)
+							applyclassicphase(PHASE_FOUR, i(20553)),	-- Plans: Darkrune Gauntlets (RECIPE!)
+							applyclassicphase(PHASE_FOUR, i(20555)),	-- Plans: Darkrune Helm (RECIPE!)
 						}),
 					},
 				}),

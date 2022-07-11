@@ -43,7 +43,7 @@ _.Zones =
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 					["groups"] = {
-						i(12162, {	-- Plans: Hardened Iron Shortsword
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -83,11 +83,11 @@ _.Zones =
 				n(15176,  {	-- Vargus <Blacksmith>
 					["coord"] = { 55.0, 36.5, SILITHUS },
 					["g"] = {
-						i(22766),	-- Plans: Ironvine Breastplate
-						i(22767),	-- Plans: Ironvine Gloves
-						i(22768),	-- Plans: Ironvine Belt
-						i(22209),	-- Plans: Heavy Obsidian Belt
-						i(22214),	-- Plans: Light Obsidian Belt
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22766)),	-- Plans: Ironvine Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
+						applyclassicphase(PHASE_FIVE, i(22209)),	-- Plans: Heavy Obsidian Belt (RECIPE!)
+						applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
 					},
 				}),
 				n(12956,  {	-- Zannok Hidepiercer <Leatherworking Supplies>

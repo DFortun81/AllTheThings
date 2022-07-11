@@ -1866,7 +1866,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(10858),	-- Plans: Solid Iron Maul
+						i(10858),	-- Plans: Solid Iron Maul (RECIPE!)
 					},
 					-- #endif
 				}),

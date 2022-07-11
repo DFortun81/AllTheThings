@@ -26,7 +26,7 @@ app.PrintDebugPrior = function(...)
 		app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
 end
---[[] Performance Tracking section
+--[[ Performance Tracking section ]
 (function()
 	app.__perf = {};
 	app.PrintPerf = function()

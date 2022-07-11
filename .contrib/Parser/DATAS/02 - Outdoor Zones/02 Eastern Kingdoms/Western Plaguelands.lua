@@ -2368,7 +2368,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
-						i(12719),	-- Plans: Runic Plate Leggings
+						i(12719),	-- Plans: Runic Plate Leggings (RECIPE!)
 					},
 				}),
 				n(1851, {	-- The Husk
@@ -2469,8 +2469,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(19217),	-- Pattern: Argent Shoulders
 						i(19328),	-- Pattern: Dawn Treaders
 						i(19329),	-- Pattern: Golden Mantle of the Dawn
-						i(19203),	-- Plans: Girdle of the Dawn
-						i(19205),	-- Plans: Gloves of the Dawn
+						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
 					},
 				}),
@@ -2508,10 +2508,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 13544, 1 } },	-- Spectral Essence
 					-- #endif
 					["groups"] = {
-						i(8030),	-- Plans: Ebon Shiv
-						i(12823),	-- Plans: Huge Thorium Battleaxe
-						i(12819),	-- Plans: Ornate Thorium Handaxe
-						i(12703),	-- Plans: Storm Gauntlets
+						i(8030),	-- Plans: Ebon Shiv (RECIPE!)
+						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
+						i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
+						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air
 					},

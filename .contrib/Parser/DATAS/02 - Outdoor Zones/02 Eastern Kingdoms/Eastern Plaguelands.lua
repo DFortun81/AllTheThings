@@ -1742,7 +1742,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(62995, {-- Underlord's Mandible
 							["timeline"] = { "added 4.0.3.13277" },
-						}),	
+						}),
 						i(62994, {	-- Rash Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2558,7 +2558,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(22638, {	-- Shadow Guard
 							["timeline"] = { "removed 4.0.3" },
-						}),	
+						}),
 					},
 				})),
 				q(27448, {	-- The Trek Continues
@@ -2894,7 +2894,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(1844, {	-- Foreman Marcrid
 					["coord"] = { 53.8, 68.4, EASTERN_PLAGUELANDS },
 					["groups"] = {
-						i(12836),	-- Plans: Frostguard
+						i(12836),	-- Plans: Frostguard (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -3196,15 +3196,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["spellID"] = 121183,	-- Contemplation
 							["classes"] = { PALADIN },
 						}),
-						i(19447), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-						i(19446), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19447)), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19446)), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 						i(19442), 	-- Formula: Powerful Anti-Venom
 						i(19216), 	-- Pattern: Argent Boots
 						i(19217), 	-- Pattern: Argent Shoulders
 						i(19328), 	-- Pattern: Dawn Treaders
 						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
+						applyclassicphase(PHASE_THREE, i(19203)), 	-- Plans: Girdle of the Dawn (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19205)), 	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
 						i(136928, {	-- Thaumaturgist's Orb (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
@@ -3227,12 +3227,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 38.9, 36.1, EASTERN_PLAGUELANDS },
 						{ 44.9, 32.9, EASTERN_PLAGUELANDS },
 						{ 49.1, 35.5, EASTERN_PLAGUELANDS },
-						
+
 						-- Blackwood Lake
 						{ 47.5, 40.8, EASTERN_PLAGUELANDS },
 						{ 50.3, 45.5, EASTERN_PLAGUELANDS },
 						{ 53.5, 50.7, EASTERN_PLAGUELANDS },
-						
+
 						-- Light's Hope
 						{ 66.1, 53.1, EASTERN_PLAGUELANDS },
 						{ 73.8, 51.1, EASTERN_PLAGUELANDS },
@@ -3242,19 +3242,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 78.5, 57.5, EASTERN_PLAGUELANDS },
 						{ 80.5, 59.6, EASTERN_PLAGUELANDS },
 						{ 78.7, 67.3, EASTERN_PLAGUELANDS },
-						
+
 						-- Tirion's House
 						{ 7.1, 50.7, EASTERN_PLAGUELANDS },
 						{ 8.1, 54.4, EASTERN_PLAGUELANDS },
 						{ 14.2, 64.7, EASTERN_PLAGUELANDS },
 						{ 20.0, 60.9, EASTERN_PLAGUELANDS },
 						{ 20.5, 66.9, EASTERN_PLAGUELANDS },
-						
+
 						-- Crypt
 						{ 22.1, 85.0, EASTERN_PLAGUELANDS },
 						{ 24.3, 88.2, EASTERN_PLAGUELANDS },
 						{ 28.8, 85.9, EASTERN_PLAGUELANDS },
-						
+
 						-- Nathanos's House
 						{ 31.5, 73.9, EASTERN_PLAGUELANDS },
 						{ 27.3, 64.0, EASTERN_PLAGUELANDS },
@@ -3272,11 +3272,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 35.9, 75.8, EASTERN_PLAGUELANDS },
 						{ 24.5, 76.9, EASTERN_PLAGUELANDS },
 						{ 34.0, 80.2, EASTERN_PLAGUELANDS },
-						
+
 						-- Mushroom Kingdom
 						{ 40.0, 49.9, EASTERN_PLAGUELANDS },
 						{ 38.5, 54.0, EASTERN_PLAGUELANDS },
-						
+
 						-- The Infectis Scar
 						{ 41.5, 65.7, EASTERN_PLAGUELANDS },
 						{ 46.3, 64.0, EASTERN_PLAGUELANDS },
@@ -3297,7 +3297,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 61.8, 70.2, EASTERN_PLAGUELANDS },
 						{ 63.6, 67.7, EASTERN_PLAGUELANDS },
 						{ 67.6, 66.8, EASTERN_PLAGUELANDS },
-						
+
 						-- Lake Mereldar
 						{ 56.5, 76.1, EASTERN_PLAGUELANDS },
 						{ 57.8, 76.2, EASTERN_PLAGUELANDS },
@@ -3306,7 +3306,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ 57.1, 81.9, EASTERN_PLAGUELANDS },
 						{ 59.2, 80.8, EASTERN_PLAGUELANDS },
 						{ 64.7, 81.0, EASTERN_PLAGUELANDS },
-						
+
 						-- Tyr's Hand
 						{ 68.2, 70.6, EASTERN_PLAGUELANDS },
 						{ 70.7, 69.5, EASTERN_PLAGUELANDS },

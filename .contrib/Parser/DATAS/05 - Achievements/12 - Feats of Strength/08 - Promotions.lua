@@ -64,6 +64,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(411)),		-- Murky
 		un(REMOVED_FROM_GAME, ach(11294)),		-- Murloc Battlemasters
 		un(REMOVED_FROM_GAME, ach(412)),		-- Murloc Costume
+		un(REMOVED_FROM_GAME, ach(14904)),		-- Netherwhelp Online
 		un(REMOVED_FROM_GAME, ach(3896)),		-- Onyx Panther (Korea only)
 		ach(10537, bubbleDownSelf({		-- Patron of War
 			["u"] = REMOVED_FROM_GAME,}, {

@@ -379,10 +379,21 @@ root("Zones", {
 					}),
 				}),
 				n(PROFESSIONS, {
+					prof(BLACKSMITHING, {
+						["crs"] = {
+							16823,	-- Humphry <Blacksmithing Trainer> (A)
+							16583,	-- Rohok <Blacksmithing Trainer> (H)
+						},
+						["coords"] = {
+							{ 56.8, 63.8, HELLFIRE_PENINSULA },
+							{ 53.2, 38.2, HELLFIRE_PENINSULA },
+						},
+						["g"] = TBC_BLACKSMITHING,
+					}),
 					prof(FISHING, {
 						i(34867),	-- Monstrous Felblood Snapper
 					}),
-					prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+					prof(ENCHANTING, {
 						["crs"] = {
 							18773,	-- Johan Barnes <Enchanting Trainer> (A)
 							18753,	-- Felannia <Enchanting Trainer> (H)
@@ -391,52 +402,8 @@ root("Zones", {
 							{ 53.6, 66.0, HELLFIRE_PENINSULA },
 							{ 52.5, 36.0, HELLFIRE_PENINSULA },
 						},
-						["g"] = {
-							r(28029, {	-- Enchanting (Master)
-								["timeline"]={ "added 2.0.1", "removed 8.0.1" },
-								["collectible"] = false,
-							}),
-							r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
-							cat(682, {	-- Bracer Enchantments
-								r(27899),	-- Brawn
-								r(34002),	-- Lesser Assault
-								r(34001),	-- Major Intellect
-								r(27905),	-- Stats
-							}),
-							cat(683, {	-- Chest Enchantments
-								r(27957),	-- Exceptional Health
-								r(33990),	-- Major Versatility  / TBC: Major Spirit
-								r(33991),	-- Versatility Prime / TBC: Restore Mana Prime
-							}),
-							cat(684, {	-- Cloak Enchantments
-								r(34004),	-- Greater Agility
-								r(27961),	-- Major Armor
-							}),
-							cat(685, {	-- Glove Enchantments
-								r(33996),	-- Assault
-								r(33993),	-- Blasting
-								r(33995),	-- Major Strength
-							}),
-							cat(705, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
-								r(217641),	-- Tome of Illusions: Outland
-							})),
-							cat(689, {	-- Other
-								r(28027),	-- Prismatic Sphere
-								r(28028),	-- Void Sphere
-							}),
-							cat(680, {	-- Reagents
-								r(42615, {["timeline"]={"added 2.2.0"}}),	-- Small Prismatic Shard
-								r(42613, {["timeline"]={"added 2.2.0","removed 7.3.5"}}),	-- Nexus Transformation
-							}),
-							cat(697, bubbleDownSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
-								r(32664),	-- Runed Fel Iron Rod
-							})),
-							cat(687, {	-- Shield Enchantments
-								r(44383, {["timeline"]={"added 2.3.0"}}),	-- Armor / TBC: Resilience
-								r(27944),	-- Lesser Dodge / TBC: Tough Shield
-							}),
-						},
-					})),
+						["g"] = TBC_ENCHANTING,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls
@@ -3139,7 +3106,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
 							})),
-							i(23619),	-- Plans: Felsteel Shield Spike
+							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(22905),	-- Recipe: Elixir of Major Agility
 							i(25870),	-- Recipe: Transmute Skyfire Diamond
 							i(29169),	-- Ring of Convalescence
@@ -3232,7 +3199,7 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
 								["timeline"] = { "removed 4.0.1.10000" },
 							})),
-							i(24002),	-- Plans: Felsteel Shield Spike
+							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(24001),	-- Recipe: Elixir of Major Agility
 							i(29232),	-- Recipe: Transmute Skyfire Diamond
 							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
@@ -3257,8 +3224,10 @@ root("Zones", {
 						["coord"] = { 53.2, 38.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(25847),	-- Plans: Eternium Rod
-							i(23638, {	-- Plans: Lesser Ward of Shielding
+							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
+								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+							}),
+							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

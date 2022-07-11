@@ -1293,7 +1293,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1543, {	-- The Prophet Skeram
 				["creatureID"] = 15263,
 				["groups"] = {
-					i(22222),	-- Plans: Thick Obisidan Breastplate
+					i(22222),	-- Plans: Thick Obisidan Breastplate (RECIPE!)
 					i(21703),	-- Hammer of Ji'zhi
 					i(21128),	-- Staff of the Qiraji Prophets
 					i(21702),	-- Amulet of Foul Warding

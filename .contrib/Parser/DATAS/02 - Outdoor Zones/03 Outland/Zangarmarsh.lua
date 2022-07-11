@@ -16,22 +16,22 @@ local OnTooltipForSporeggar = [[function(t)
 		end
 		if not t.plight.collected then GameTooltip:AddLine("Complete '" .. (t.plight.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
 		if not t.natenemies.collected then GameTooltip:AddLine("Complete '" .. (t.natenemies.text or RETRIEVING_DATA) .. "'.", 1, 1, 1); end
-		
+
 		if reputation < ]] .. REVERED .. [[ then
 			local repPerKill = isHuman and 16.5 or 15;
 			local x, n = math.ceil((]] .. (REVERED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (REVERED - UNFRIENDLY) .. [[ / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Bog Lords. (To Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		end
-		
+
 		local repPerKill = isHuman and 16.5 or 15;
 		local x, n = math.ceil((]] .. (EXALTED - UNFRIENDLY) .. [[ - (reputation - ]] .. UNFRIENDLY .. [[)) / repPerKill), math.ceil(]] .. (EXALTED - UNFRIENDLY) .. [[ / repPerKill);
 		GameTooltip:AddDoubleLine("Kill Dredgers & Lurkers.", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		
+
 		if reputation < ]] .. FRIENDLY .. [[ then
 			local repPerTurnIn = isHuman and 275 or 250;
 			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Turn in Spore Sacs (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			-- #if AFTER CATA
 			local repPerTurnIn = isHuman and 275 or 250;
 			-- #else
@@ -40,14 +40,14 @@ local OnTooltipForSporeggar = [[function(t)
 			local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Turn in Tendrils (x6) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		end
-		
+
 		if reputation >= ]] .. NEUTRAL .. [[ then
 			if reputation < ]] .. FRIENDLY .. [[ then
 				local repPerTurnIn = isHuman and 275 or 250;
 				local x, n = math.ceil((]] .. FRIENDLY .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
 				GameTooltip:AddDoubleLine("Turn in Glowcap (x10) (To Friendly)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 			end
-			
+
 			-- #if AFTER CATA
 			local repPerTurnIn = isHuman and 275 or 250;
 			-- #else
@@ -55,7 +55,7 @@ local OnTooltipForSporeggar = [[function(t)
 			-- #endif
 			local x, n = math.ceil((]] .. EXALTED .. [[ - t.reputation) / repPerTurnIn), math.ceil(]] .. EXALTED .. [[ / repPerTurnIn);
 			GameTooltip:AddDoubleLine("Turn in Fertile Spores (x6)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			
+
 			-- #if AFTER CATA
 			local repPerTurnIn = isHuman and 275 or 250;
 			-- #else
@@ -1437,12 +1437,12 @@ root("Zones", {
 							i(25736),	-- Pattern: Heavy Clefthoof Leggings
 							i(25735),	-- Pattern: Heavy Clefthoof Vest
 							i(29721),	-- Pattern: Nethercleft Leg Armor
-							i(23618),	-- Plans: Adamantite Sharpening Stone
-							i(28632),	-- Plans: Adamantite Weightstone
-							i(25526),	-- Plans: Greater Rune of Warding
-							i(31390),	-- Plans: Wildguard Breastplate
-							i(31392),	-- Plans: Wildguard Helm
-							i(31391),	-- Plans: Wildguard Leggings
+							i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
+							i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)
+							i(25526),	-- Plans: Greater Rune of Warding (RECIPE!)
+							i(31390),	-- Plans: Wildguard Breastplate (RECIPE!)
+							i(31392),	-- Plans: Wildguard Helm (RECIPE!)
+							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
 							i(25836),	-- Preserver's Cudgel
 							i(32070),	-- Recipe: Earthen Elixir
 							i(31356),	-- Recipe: Flask of Distilled Wisdom
@@ -1540,13 +1540,13 @@ root("Zones", {
 						["coord"] = { 68.6, 50.2, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(23596, {	-- Plans: Adamantite Breastplate
+							i(23596, {	-- Plans: Adamantite Breastplate (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23594, {	-- Plans: Adamantite Plate Bracers
+							i(23594, {	-- Plans: Adamantite Plate Bracers (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23595, {	-- Plans: Adamantite Plate Gloves
+							i(23595, {	-- Plans: Adamantite Plate Gloves (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

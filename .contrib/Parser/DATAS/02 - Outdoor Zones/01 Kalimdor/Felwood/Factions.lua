@@ -91,8 +91,8 @@ _.Zones =
 									i(20253),	-- Pattern: Warbear Harness (BoP version)
 									i(20254),	-- Pattern: Warbear Woolies
 									i(19215),	-- Pattern: Wisdom of the Timbermaw
-									i(19202),	-- Plans: Heavy Timbermaw Belt
-									i(19204),	-- Plans: Heavy Timbermaw Boots
+									applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+									applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 									i(13484),	-- Recipe: Transmute Earth to Water
 									i(66888),	-- Stave of Fur and Claw Toy (TOY!)
 								},

@@ -2,6 +2,8 @@
 --     F A C T I O N S     M O D U L E     --
 ---------------------------------------------
 
+
+-- TODO: should eventually just be Dynamic because Factions should all be Sourced by Primary Location, not Type
 _.Factions =
 {
 	faction(1168),	-- Guild

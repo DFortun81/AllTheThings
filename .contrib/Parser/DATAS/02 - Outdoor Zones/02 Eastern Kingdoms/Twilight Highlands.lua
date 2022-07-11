@@ -2281,6 +2281,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
 					},
 				}),
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
@@ -2370,6 +2371,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
 					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>

@@ -1459,7 +1459,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7995, {	-- Plans: Mithril Scale Bracers
+						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

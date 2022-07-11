@@ -448,7 +448,7 @@ _.Zones =
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						i(142383),	-- Plans: Darkspear
+						i(142383),	-- Plans: Darkspear (RECIPE!)
 					},
 				}),
 				q(13905, {	-- Searing Roc Feathers

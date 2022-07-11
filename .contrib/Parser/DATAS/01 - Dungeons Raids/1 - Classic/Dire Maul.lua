@@ -285,7 +285,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 					},
 					["groups"] = {
-						i(12727, {	-- Plans: Enchanted Thorium Breastplate
+						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -311,7 +311,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					["lvl"] = 50,
 					["groups"] = {
-						i(12726, {	-- Plans: Enchanted Thorium Leggings
+						i(12726, {	-- Plans: Enchanted Thorium Leggings (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -337,7 +337,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					["lvl"] = 50,
 					["groups"] = {
-						i(12725, {	-- Plans: Enchanted Thorium Helm
+						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},

@@ -1,12 +1,25 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local GODAN_TIMELINE = "added 2.1.0";
-
 root("Zones", m(KALIMDOR, {
 	m(ORGRIMMAR, {
 		n(PROFESSIONS, {
 			prof(BLACKSMITHING, {
+				n(11178, {	-- Borgosh Corebender <Weaponsmith>
+					["coord"] = { 79.6, 23.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = WEAPONSMITHING,
+				}),
+				n(11177, {	-- Okothos Ironrager <Armorsmith>
+					["coord"] = { 79.8, 23.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = ARMORSMITHING,
+				}),
+				n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
+					["coord"] = { 76.4, 34.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["g"] = CLASSIC_BLACKSMITHING,
+				}),
 				n(QUESTS, {
 					q(2751, {	-- Barbaric Battlements
 						["provider"] = { "n", 7790 },	-- Orokk Omosh
@@ -15,7 +28,7 @@ root("Zones", m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = 32,
 						["g"] = {
-							i(7979),	-- Plans: Barbaric Iron Breastplate
+							i(7979),	-- Plans: Barbaric Iron Breastplate (RECIPE!)
 						},
 					}),
 					q(2757, {	-- Booty Bay or Bust!
@@ -26,7 +39,7 @@ root("Zones", m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia
+							un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia (RECIPE!)
 						},
 					}),
 					q(2754, {	-- Horns of Frenzy
@@ -42,7 +55,7 @@ root("Zones", m(KALIMDOR, {
 							{ "i", 3483, 2 },	-- Silvered Bronze Gauntlets
 						},
 						["g"] = {
-							i(7980),	-- Plans: Barbaric Iron Helm
+							i(7980),	-- Plans: Barbaric Iron Helm (RECIPE!)
 						},
 					}),
 					q(2755, {	-- Joys of Omosh
@@ -52,20 +65,19 @@ root("Zones", m(KALIMDOR, {
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(7982),	-- Plans: Barbaric Iron Gloves
+							i(7982),	-- Plans: Barbaric Iron Gloves (RECIPE!)
 						},
 					}),
-					q(2756, {	-- The Old Ways
+					q(2756, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Old Ways
 						["provider"] = { "n", 7792 },	-- Aturk the Anvil
 						["coord"] = { 75.6, 36.8, ORGRIMMAR },
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 40,
-						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
-							un(REMOVED_FROM_GAME, i(7994)),	-- Plans: Orcish War Leggings
+							i(7994),	-- Plans: Orcish War Leggings (RECIPE!)
 						},
-					}),
+					})),
 					q(2752, {	-- On Iron Pauldrons
 						["provider"] = { "n", 7790 },	-- Orokk Omosh
 						["coord"] = { 76.8, 37.7, ORGRIMMAR },
@@ -74,7 +86,7 @@ root("Zones", m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = 32,
 						["g"] = {
-							i(7978),	-- Plans: Barbaric Iron Shoulders
+							i(7978),	-- Plans: Barbaric Iron Shoulders (RECIPE!)
 						},
 					}),
 					q(2753, {	-- Trampled Under Foot
@@ -84,7 +96,7 @@ root("Zones", m(KALIMDOR, {
 						["coord"] = { 76.8, 37.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(7981),	-- Plans: Barbaric Iron Boots
+							i(7981),	-- Plans: Barbaric Iron Boots (RECIPE!)
 						},
 					}),
 				}),
@@ -176,192 +188,17 @@ root("Zones", m(KALIMDOR, {
 					}),
 				}),
 			}),
-			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+			prof(ENCHANTING, {
 				n(3345, {	-- Godan <Enchanting Trainer>
 					["coord"] = { 53.4, 49.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						r(7411, {	-- Enchanting (Apprentice)
-							["collectible"] = false,
-						}),
-						r(7412, {	-- Enchanting (Journeyman)
-							["timeline"]={ "removed 8.0.1" },
-							["collectible"] = false,
-						}),
-						r(7413, {	-- Enchanting (Expert)
-							["timeline"]={ "removed 8.0.1" },
-							["collectible"] = false,
-						}),
-						r(13920, {	-- Enchanting (Artisan)
-							["timeline"]={ GODAN_TIMELINE, "removed 8.0.1" },
-							["collectible"] = false,
-						}),
-						r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
-						r(13262, {	-- Disenchant
-							["collectible"] = false,
-						}),
-						cat(690, {	-- Boot Enchantments
-							r(13935, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
-							r(20023, {["timeline"]={"added 2.3.0"}}),	-- Greater Agility
-							r(63746, {["timeline"]={"added 3.1.0"}}),	-- Lesser Accuracy
-							r(13637, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Agility
-							r(13644, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
-							r(13890, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Speed
-							r(7863),	-- Minor Stamina
-							r(13836, {["timeline"]={GODAN_TIMELINE}}),	-- Stamina
-						}),
-						cat(691, {	-- Bracer Enchantments
-							r(20008, {["timeline"]={"added 2.3.0"}}),	-- Greater Intellect
-							r(13939, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Strength
-							r(13822, {["timeline"]={GODAN_TIMELINE}}),	-- Intellect
-							r(7779),	-- Minor Agility
-							r(7428),	-- Minor Dodge / CLASSIC: Minor Deflection
-							r(7418),	-- Minor Health
-							r(7457),	-- Minor Stamina
-							r(13646, {["timeline"]={"added 4.1.0"}}),	-- Lesser Dodge
-							r(13622),	-- Lesser Intellect
-							r(13501),	-- Lesser Stamina
-							r(13648, {["timeline"]={GODAN_TIMELINE}}),	-- Stamina
-							r(13661, {["timeline"]={GODAN_TIMELINE}}),	-- Strength
-							r(13642, {["timeline"]={"added 4.1.0"}}),	-- Versatility / CLASSIC: Spirit
-
-						}),
-						cat(692, {	-- Chest Enchantments
-							r(13640, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Health
-							r(13663, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Mana
-							r(7857),	-- Health
-							r(13538),	-- Lesser Absorption
-							r(7748),	-- Lesser Health
-							r(13700, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stats
-							r(20028, {["timeline"]={"added 2.3.0"}}),	-- Major Mana
-							r(13607),	-- Mana
-							r(7426),	-- Minor Absorption
-							r(7420),	-- Minor Health
-							r(13626),	-- Minor Stats
-							r(13941, {["timeline"]={GODAN_TIMELINE}}),	-- Stats
-							r(13858, {["timeline"]={GODAN_TIMELINE}}),	-- Superior Health
-							r(13917, {["timeline"]={GODAN_TIMELINE}}),	-- Superior Mana
-						}),
-						cat(693, {	-- Cloak Enchantments
-							r(13635, {["timeline"]={GODAN_TIMELINE}}),	-- Defense
-							r(13657, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Fire Resistance
-							r(13746, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Defense
-							r(20014, {["timeline"]={"added 2.3.0", "removed 5.0.4"}}),	-- Greater Resistance
-							r(7861, {["timeline"]={"removed 5.0.4"}}),	-- Lesser Fire Resistance
-							r(13421),	-- Lesser Protection
-							r(7771),	-- Minor Protection
-							r(7454, {["timeline"]={"removed 5.0.4"}}),	-- Minor Resistance
-							r(13794, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Resistance
-						}),
-						cat(694, {	-- Glove Enchantments
-							r(13815, {["timeline"]={GODAN_TIMELINE}}),	-- Agility
-							r(20012, {["timeline"]={"removed 2.3.0"}}),	-- Greater Agility
-							r(20013, {["timeline"]={"removed 2.3.0"}}),	-- Greater Strength
-							r(13948, {["timeline"]={GODAN_TIMELINE}}),	-- Minor Haste
-							r(13887, {["timeline"]={GODAN_TIMELINE}}),	-- Strength
-						}),
-						cat(706, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
-							r(217637),	-- Tome of Illusions: Azeroth
-						})),
-						cat(701, {	-- Reagents
-							r(17181, {["timeline"]={GODAN_TIMELINE}}),	-- Enchanted Leather
-							r(17180, {["timeline"]={GODAN_TIMELINE}}),	-- Enchanted Thorium Bar
-						}),
-						cat(697, {	-- Rods
-							r(7421),	-- Runed Copper Rod
-							r(13628, {["timeline"]={"removed 5.0.4"}}),	-- Runed Gold Rod
-							r(7795, {["timeline"]={"removed 5.0.4"}}),	-- Runed Silver Rod
-							r(13702, {["timeline"]={GODAN_TIMELINE,"removed 5.0.4"}}),	-- Runed Truesilver Rod
-						}),
-						cat(696, {	-- Shield Enchantments
-							r(13905, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Versatility / CLASSIC: Greater Spirit
-							r(13631, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Stamina
-							r(13485),	-- Lesser Versatility / CLASSIC:Lesser Spirit
-							r(13378),	-- Minor Stamina
-							r(20016, {["timeline"]={"removed 2.3.0"}}),	-- Vitality / Superior Spirit
-							r(13659, {["timeline"]={GODAN_TIMELINE}}),	-- Versatility / CLASSIC: Spirit
-						}),
-						cat(698, {	-- Wands
-							r(14807),	-- Greater Magic Wand
-							r(14810, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Mystic Wand
-							r(14293),	-- Lesser Magic Wand
-							r(14809, {["timeline"]={GODAN_TIMELINE}}),	-- Lesser Mystic Wand
-						}),
-						cat(695, {	-- Weapon Enchantments
-							r(13937, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Impact
-							r(13943, {["timeline"]={GODAN_TIMELINE}}),	-- Greater Striking
-							r(13695, {["timeline"]={GODAN_TIMELINE}}),	-- Impact
-							r(13529),	-- Lesser Impact
-							r(13503),	-- Lesser Striking
-							r(7745),	-- Minor Impact
-							r(7788),	-- Minor Striking
-							r(13693, {["timeline"]={GODAN_TIMELINE}}),	-- Striking
-						}),
-					},
+					["g"] = appendGroups(CLASSIC_ENCHANTING,
+						-- #if AFTER CATA
+						CATA_ENCHANTING
+						-- #endif
+					),
 				}),
-				n(3345, {	-- Godan <Enchanting Trainer>
-					["coord"] = { 53.4, 49.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
-						r(74258, {	-- Enchanting (Illustrious)
-							["timeline"]={ "added 4.0.3", "removed 8.0.1" },
-							["collectible"] = false,
-						}),
-						r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
-						cat(668, {	-- Armor Enchantments
-							r(74230),	-- Critical Strike
-							r(74201),	-- Critical Strike
-							r(74189),	-- Earthen Vitality
-							r(74212),	-- Exceptional Strength
-							r(74237),	-- Exceptional Versatility
-							r(74231),	-- Exceptional Versatility
-							r(74239),	-- Greater Haste
-							r(74220),	-- Greater Haste
-							r(74240),	-- Greater Intellect
-							r(74199),	-- Haste
-							r(74198),	-- Haste
-							r(74202),	-- Intellect
-							r(74192),	-- Lesser Power
-							r(74213),	-- Major Agility
-							r(74238),	-- Mastery
-							r(74132),	-- Mastery
-							r(74214),	-- Mighty Armor / CATA: Mighty Resilience
-							r(74191),	-- Mighty Stats
-							r(74232),	-- Precision
-							r(74236),	-- Precision
-							r(74234),	-- Protection
-							r(74193),	-- Speed
-							r(74200),	-- Stamina
-							r(74229),	-- Superior Dodge
-						}),
-						cat(703, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {	-- Illusions
-							r(217645),	-- Tome of Illusions: Cataclysm
-						})),
-						cat(707, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" } }, {	-- Reagents
-							r(104698),	-- Maelstrom Shatter
-						})),
-						cat(445, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 6.0.2" } }, {	-- Ring Enchantments
-							r(74216),	-- Agility
-							r(74218),	-- Greater Stamina
-							r(74217),	-- Intellect
-							r(74215),	-- Strength
-						})),
-						cat(670, {	-- Shield and Off-Hand Enchantments
-							r(74226),	-- Mastery
-							r(74207),	-- Protection
-							r(74235),	-- Superior Intellect
-						}),
-						cat(669, {	-- Weapon Enchantments
-							r(74197),	-- Avalanche
-							r(74211),	-- Elemental Slayer
-							r(74225),	-- Heartsong
-							r(74223),	-- Hurricane
-							r(74195),	-- Mending
-							r(95471),	-- Mighty Agility
-						}),
-					})),
-				}),
-			})),
+			}),
 			prof(FISHING, {
 				n(ACHIEVEMENTS, {
 					ach(5477, {	-- Fish or Cut Bait: Orgrimmar
@@ -456,199 +293,8 @@ root("Zones", m(KALIMDOR, {
 			prof(INSCRIPTION, {
 				n(30706, {	-- Jo'mah <Inscription Trainer>
 					["coord"] = { 35.6, 69.2, ORGRIMMAR },
-					["g"] = {
-						r(51005, {	-- Milling
-							["collectible"] = false,
-						}),
-						cat(106, {	-- Card
-							r(59487),	-- Arcane Tarot
-							r(59502),	-- Darkmoon Card
-							r(48247),	-- Mysterious Tarot
-							r(59491),	-- Shadowy Tarot
-							r(59480),	-- Strange Tarot
-						}),
-						cat(105, {	-- Clear Mind
-							r(92026, {["timeline"]={"added 4.0.3"}}),	-- Vanishing Powder
-						}),
-						filter(111, {
-							r(56971, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana[MOP]
-							r(56997, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Aspect of the Monkey / Glyph of Mending[3.1.0+]
-							r(57114, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Backstab / Glyph of Decoy[MOP+]
-							r(57151, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Barbaric Insults
-							r(56973, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Blink
-							r(57020, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Cleansing / Glyph of Final Wrath[MOP+]
-							r(57154, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Cleaving / Glyph of Hindering Strikes[MOP+]
-							r(57023, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Consecration
-							r(57259, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Corruption / Glyph of Siphon Life[MOP+]
-							r(57024, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath[MOP+]
-							r(57213, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Death Grip
-							r(57031, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Divinity
-							r(48121, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Entangling Roots
-							r(57119, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Evasion
-							r(57120, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
-							r(56974, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Evocation
-							r(57156, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Execution
-							r(57025, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
-							r(57121, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Expose Armor
-							r(57262, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Fear
-							r(57239, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flame Shock
-							r(56976, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Nova
-							r(57241, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Shock
-							r(57216, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
-							r(57125, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Gouge
-							r(57157, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Hamstring
-							r(56945, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Healing Touch
-							r(57266, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Healthstone
-							r(57158, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Heroic Strike
-							r(57029, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
-							r(57004, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
-							r(56981, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Icy Veins
-							r(57269, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Imp / Glyph of Imp Swarm[MOP+]
-							r(57030, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
-							r(57244, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
-							r(57245, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
-							r(57246, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-							r(56985, {["timeline"]={"added 3.0.2","removed 4.0.3","added 5.0.4","removed 6.0.2"}}),	-- Glyph of Mana Gem
-							r(56961, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Maul
-							r(57200, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
-							r(56951, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
-							r(57161, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
-							r(57162, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
-							r(56953, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rebirth
-							r(56955, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rejuvenation
-							r(57163, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Rending
-							r(57165, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
-							r(56956, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
-							r(56982, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Scorch
-							r(57270, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Glyph of Searing Pain
-							r(57271, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Shadow Bolt
-							r(57272, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Glyph of Shadowburn
-							r(57131, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
-							r(57132, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Slice and Dice / Glyph of Shiv[MOP+]
-							r(57274, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Soulstone
-							r(57167, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice[MOP+]
-							r(57277, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Voidwalker / Glyph of Falling Meteor[MOP+]
-							r(56963, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Glyph of Wrath / Glyph of Nature's Grasp[MOP+]
-							-- not done
-							r(57194, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Power Word: Shield
-							r(67600, {["timeline"]={"added 3.2.0","removed 6.0.2"}}),	-- Glyph of Claw / Glyph of Ferocious Bite
-							r(57196, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Psychic Scream
-							r(57184, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Fade
-							r(57186, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum[MOP+]
-							r(57188, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Inner Fire
-							r(57197, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Renew
-							r(57201, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Smite
-							r(57183, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dispel Magic / Glyph of Purify[MOP+]
-							r(64261, {["timeline"]={"added 3.1.0","removed 8.1.0"}}),	-- Glyph of Earth Shield / Glyph of Deluge[MOP+]
-							r(57185, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fear Ward
-							r(64266, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Dark Death / Glyph of Death Coil[CATA+]
-							r(64267, {["timeline"]={"added 3.1.0","removed 4.0.3"}}),	-- Glyph of Disease
-							r(57133, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Sprint
-							-- #if BEFORE WOD
-							-- These Recipes changed from trainer to Research (and expansion) with WoD revamp
-							r(56994, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
-							r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
-							r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
-							r(57210, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
-							r(57000, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Deterrence
-							r(57001, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Disengage
-							r(57238, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova[3.3.0+]
-							r(57240, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear[MOP+]
-							r(57002, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Freezing Trap
-							r(57123, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Garrote
-							r(57027, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
-							r(57265, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
-							r(56978, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
-							r(56979, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Block
-							r(57005, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-							r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
-							r(57007, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot[CATA] / Glyph of No Escape[MOP+]
-							r(57129, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
-							r(57009, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
-							r(56959, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Starfire / Glyph of the Moonbeast[5.0.4-5.4.0] / Glyph of Guided Stars[5.4.0-6.1.0] / Glyph of Untamed Stars[6.1.0+]
-							r(57249, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
-							r(57251, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Water Mastery / Glyph of Water Shield[CATA+]
-							-- Not done
-							r(64258, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
-							r(64259, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Pain Suppression / Glyph of Desperation[4.0.6-5.2.0] / Glyph of Binding Heal[5.2.0+]
-							r(64262, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
-							r(57219, {["timeline"]={"added 3.0.8","removed 7.0.3"}}),	-- Glyph of Icy Touch
-							-- #endif
-						}),
-						cat(104, {	-- Ink
-							r(57709),	-- Celestial Ink
-							r(57706),	-- Dawnstar Ink
-							r(57710),	-- Fiery Ink
-							r(57703),	-- Hunter's Ink
-							r(57712),	-- Ink of the Sky
-							r(52738, {["timeline"]={"removed 6.0.2"}}),	-- Ivory Ink
-							r(57707),	-- Jadefire Ink
-							r(57704),	-- Lion's Ink
-							r(53462),	-- Midnight Ink
-							r(52843),	-- Moonglow Ink
-							r(57708),	-- Royal Ink
-							r(57711),	-- Shimmering Ink
-						}),
-						cat(103, {	-- Off-hand
-							r(59490),	-- Book of Stars
-							r(59478),	-- Book of Survival
-							r(59489),	-- Fire Eater's Guide
-							r(59494),	-- Manual of Clouds
-							r(58565),	-- Mystic Tome
-							r(59486),	-- Royal Guide of Escape Routes
-							r(59493),	-- Stormbound Tome
-							r(59484),	-- Tome of Kings
-							r(59475),	-- Tome of the Dawn
-						}),
-						cat(114, {	-- Other
-							r(59499, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Armor Vellum II
-							r(59387),	-- Certificate of Ownership
-							r(52739),	-- Enchanting Vellum / WRATH: Armor Vellum
-							r(52840, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Weapon Vellum
-							r(59488, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Weapon Vellum II
-
-						}),
-						cat(108, {	-- Research
-							r(61288, {["timeline"]={"removed 6.0.2"}}),	-- Minor Inscription Research
-							r(165461, {["timeline"]={"added 6.0.2"}}),	-- Research: Celestial Ink
-							r(165460, {["timeline"]={"added 6.0.2"}}),	-- Research: Jadefire Ink
-							r(165456, {["timeline"]={"added 6.0.2"}}),	-- Research: Lion's Ink
-							r(165304, {["timeline"]={"added 6.0.2"}}),	-- Research: Midnight Ink
-							r(165564, {["timeline"]={"added 6.0.2"}}),	-- Research: Moonglow Ink
-							r(165463, {["timeline"]={"added 6.0.2"}}),	-- Research: Shimmering Ink
-						}),
-						cat(107, {	-- Scrolls
-							r(58472),	-- Scroll of Agility
-							r(58473),	-- Scroll of Agility II
-							r(58476),	-- Scroll of Agility III
-							r(58478),	-- Scroll of Agility IV
-							r(58480),	-- Scroll of Agility V
-							r(48114),	-- Scroll of Intellect
-							r(50598),	-- Scroll of Intellect II
-							r(50599),	-- Scroll of Intellect III
-							r(50600),	-- Scroll of Intellect IV
-							r(50601),	-- Scroll of Intellect V
-							r(48248),	-- Scroll of Recall
-							r(60336),	-- Scroll of Recall II
-							r(45382),	-- Scroll of Stamina
-							r(50612),	-- Scroll of Stamina II
-							r(50614),	-- Scroll of Stamina III
-							r(50616),	-- Scroll of Stamina IV
-							r(50617),	-- Scroll of Stamina V
-							r(50618),	-- Scroll of Stamina VI
-							r(58484),	-- Scroll of Strength
-							r(58485),	-- Scroll of Strength II
-							r(58486),	-- Scroll of Strength III
-							r(58487),	-- Scroll of Strength IV
-							r(58488),	-- Scroll of Strength V
-							r(48116),	-- Scroll of Versatility / WRATH: Scroll of Spirit
-							r(50605),	-- Scroll of Versatility II / WRATH: Scroll of Spirit II
-							r(50606),	-- Scroll of Versatility III / WRATH: Scroll of Spirit III
-							r(50607),	-- Scroll of Versatility IV  / WRATH: Scroll of Spirit IV
-							r(50608),	-- Scroll of Versatility V  / WRATH: Scroll of Spirit V
-							r(50609),	-- Scroll of Versatility VI / WRATH: Scroll of Spirit VI
-						}),
-					},
+					["races"] = HORDE_ONLY,
+					["g"] = CLASSIC_INSCRIPTION,
 				}),
 				n(QUESTS, {
 					q(27686, {	-- Forged Documents

@@ -154,9 +154,9 @@ _.Instances = { tier(LEGION_TIER, {
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
 					["g"] = {
-						i(31395),	-- Plans: Iceguard Helm
-						i(31393),	-- Plans: Iceguard Breastplate
-						i(31394),	-- Plans: Iceguard Leggings
+						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
+						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
+						i(31394),	-- Plans: Iceguard Leggings (RECIPE!)
 					},
 				}),
 			}),

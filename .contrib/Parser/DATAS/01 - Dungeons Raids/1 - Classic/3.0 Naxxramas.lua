@@ -1906,18 +1906,15 @@ applyclassicphase(PHASE_SIX,
 										["itemID"] = 22687,	-- Pattern: Glacial Wrists
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 									},
-									{
-										["itemID"] = 22705,	-- Pattern: Icebane Bracers
+									r(28244, {	-- Icebane Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22703,	-- Pattern: Icebane Breastplate
+									}),
+									r(28242, {	-- Icebane Breastplate (RECIPE!)
 										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22704,	-- Pattern: Icebane Gauntlets
+									}),
+									r(28243, {	-- Icebane Gauntlets (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
+									}),
 									{
 										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.

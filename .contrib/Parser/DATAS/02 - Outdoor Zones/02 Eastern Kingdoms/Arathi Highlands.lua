@@ -1866,7 +1866,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(10858, {	-- Plans: Solid Iron Maul
+						i(10858, {	-- Plans: Solid Iron Maul (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

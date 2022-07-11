@@ -14,26 +14,26 @@ root("WorldDrops", tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1
 			i(22903),	-- Recipe: Insane Strength Potion
 		}),
 		prof(BLACKSMITHING, {
-			i(33186),	-- Plans: Adamantite Weapon Chain (BoE version)
-			i(23626),	-- Plans: Black Felsteel Bracers
-			i(23628),	-- Plans: Blessed Bracers
-			i(23627),	-- Plans: Bracers of the Green Fortress
-			i(23636),	-- Plans: Dirge
-			i(23635),	-- Plans: Eternium Runed Blade
-			i(23631),	-- Plans: Fel Edged Battleaxe
-			i(23634),	-- Plans: Fel Hardened Maul
-			i(23620),	-- Plans: Felfury Gauntlets
-			i(23629),	-- Plans: Felsteel Longblade
-			i(23632),	-- Plans: Felsteel Reaper
-			i(23621),	-- Plans: Gauntlets of the Iron Tower
-			i(33954),	-- Plans: Hammer of Righteous Might
-			i(23637),	-- Plans: Hand of Eternity
-			i(23624),	-- Plans: Helm of the Stalwart Defender
-			i(23630),	-- Plans: Khorium Champion
-			i(23625),	-- Plans: Oathkeeper's Helm
-			i(23633),	-- Plans: Runic Hammer
-			i(23622),	-- Plans: Steelgrip Gauntlets
-			i(23623),	-- Plans: Storm Helm
+			i(33186, {["timeline"]={"added 2.3.0"}}),	-- Plans: Adamantite Weapon Chain (BoE version)
+			i(23626),	-- Plans: Black Felsteel Bracers (RECIPE!)
+			i(23628),	-- Plans: Blessed Bracers (RECIPE!)
+			i(23627),	-- Plans: Bracers of the Green Fortress (RECIPE!)
+			i(23636),	-- Plans: Dirge (RECIPE!)
+			i(23635),	-- Plans: Eternium Runed Blade (RECIPE!)
+			i(23631),	-- Plans: Fel Edged Battleaxe (RECIPE!)
+			i(23634),	-- Plans: Fel Hardened Maul (RECIPE!)
+			i(23620),	-- Plans: Felfury Gauntlets (RECIPE!)
+			i(23629),	-- Plans: Felsteel Longblade (RECIPE!)
+			i(23632),	-- Plans: Felsteel Reaper (RECIPE!)
+			i(23621),	-- Plans: Gauntlets of the Iron Tower (RECIPE!)
+			i(33954, {["timeline"]={"added 2.3.0"}}),	-- Plans: Hammer of Righteous Might
+			i(23637),	-- Plans: Hand of Eternity (RECIPE!)
+			i(23624),	-- Plans: Helm of the Stalwart Defender (RECIPE!)
+			i(23630),	-- Plans: Khorium Champion (RECIPE!)
+			i(23625),	-- Plans: Oathkeeper's Helm (RECIPE!)
+			i(23633),	-- Plans: Runic Hammer (RECIPE!)
+			i(23622),	-- Plans: Steelgrip Gauntlets (RECIPE!)
+			i(23623),	-- Plans: Storm Helm (RECIPE!)
 		}),
 		prof(ENCHANTING, {
 			i(28280),	-- Formula: Enchant Boots - Boar's Speed (BoE version) (RECIPE!)

@@ -469,7 +469,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 					-- #endif
 				}),
-				i(142337, {	-- Plans: Blight
+				i(142337, {	-- Plans: Blight (RECIPE!)
 					["timeline"] = { "added 7.1.5.23360" },
 				}),
 				i(18743),	-- Gracious Cape
@@ -727,17 +727,16 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(13351, {	-- Crimson Hammersmith's Apron
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(12827, {	-- Plans: Serenity
+							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 								["timeline"] = { "removed 2.0.1", "added 3.0.1" },
-								["requireSkill"] = BLACKSMITHING,
 							}),
 						},
 					}),
 					e(446, {	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["creatureID"] = 10997,	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["groups"] = {
-							i(12839),	-- Plans: Heartseeker
+							i(12839),	-- Plans: Heartseeker (RECIPE!)
 							applyclassicphase(PHASE_FIVE, i(22406)),	-- Redemption
 							applyclassicphase(PHASE_FIVE, i(22404)),	-- Willey's Back Scratcher
 							i(13380),	-- Willey's Portable Howitzer
@@ -880,7 +879,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 2.0.1" },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
-						i(74274, {	-- Plans: Phantom Blade
+						i(74274, {	-- Plans: Phantom Blade (RECIPE!)
 							["timeline"] = { "added 4.3.0.15005" },
 							["crs"] = {
 								10463,	-- Shrieking Banshee
@@ -931,7 +930,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(13350, {	-- Insignia of the Black Guard
 								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(12830, {	-- Plans: Corruption
+							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
 								["timeline"] = { "removed 2.0.1", "added 3.0.1" },
 							}),
@@ -961,7 +960,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					e(453, {	-- Maleki the Pallid
 						["creatureID"] = 10438,	-- Maleki the Pallid
 						["groups"] = {
-							i(12833),	-- Plans: Hammer of the Titans
+							i(12833),	-- Plans: Hammer of the Titans (RECIPE!)
 							i(18737),	-- Bone Slicing Hatchet
 							i(13524),	-- Skull of Burning Shadows
 							i(18734),	-- Pale Moon Cloak

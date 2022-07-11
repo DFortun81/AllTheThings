@@ -21,16 +21,15 @@ _.Zones =
 						i(56858),	-- Goblin Treat Tin
 					},
 				}),
-				q(2771,  {	-- A Good Head On Your Shoulders
+				q(2771, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- A Good Head On Your Shoulders
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(7987)),	-- Plans: Ornate Mithril Helm
+						i(7987),	-- Plans: Ornate Mithril Helm (RECIPE!)
 					},
-				}),
+				})),
 				q(3913,  {	-- A Grave Situation
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9299 },	-- Gaeriyan
@@ -347,76 +346,55 @@ _.Zones =
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, TANARIS },
 				}),
-				q(7653,  {	-- Imperial Plate Belt
-					["u"] = REMOVED_FROM_GAME,
+				q(7653, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Belt
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12688, {	-- Plans: Imperial Plate Belt
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12688),	-- Plans: Imperial Plate Belt (RECIPE!)
 					},
-				}),
-				q(7654,  {	-- Imperial Plate Boots
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7654, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Boots
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12700, {	-- Plans: Imperial Plate Boots
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12700),	-- Plans: Imperial Plate Boots (RECIPE!)
 					},
-				}),
-				q(7655,  {	-- Imperial Plate Bracer
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7655, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Bracer
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12690, {	-- Plans: Imperial Plate Bracers
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12690),	-- Plans: Imperial Plate Bracers (RECIPE!)
 					},
-				}),
-				q(7656,  {	-- Imperial Plate Chest
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7656, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Chest
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12705, {	-- Plans: Imperial Plate Chest
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12705),	-- Plans: Imperial Plate Chest (RECIPE!)
 					},
-				}),
-				q(7657,  {	-- Imperial Plate Helm
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7657, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Helm
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12701, {	-- Plans: Imperial Plate Helm
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12701),	-- Plans: Imperial Plate Helm (RECIPE!)
 					},
-				}),
-				q(7658,  {	-- Imperial Plate Leggings
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7658, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Leggings
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12715, {	-- Plans: Imperial Plate Leggings
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12715),	-- Plans: Imperial Plate Leggings (RECIPE!)
 					},
-				}),
-				q(7659,  {	-- Imperial Plate Shoulders
-					["u"] = REMOVED_FROM_GAME,
+				})),
+				q(7659, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Imperial Plate Shoulders
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12687, {	-- Plans: Imperial Plate Shoulders
-							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-						})),
+						i(12687),	-- Plans: Imperial Plate Shoulders (RECIPE!)
 					},
-				}),
+				})),
 				q(2606, {	-- In Good Taste
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
@@ -810,16 +788,15 @@ _.Zones =
 						i(56902),	-- Rosy Tablet Belt
 					},
 				}),
-				q(2773,  {	-- The Mithril Kid
+				q(2773, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Mithril Kid
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(7986)),	-- Plans: Ornate Mithril Breastplate
+						i(7986),	-- Plans: Ornate Mithril Breastplate (RECIPE!)
 					},
-				}),
+				})),
 				q(10,    {	-- The Scrimshank Redemption
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
@@ -860,16 +837,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(2772,  {	-- The World At Your Feet
+				q(2772, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The World At Your Feet
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(7988)),	-- Plans: Ornate Mithril Boots
+						i(7988),	-- Plans: Ornate Mithril Boots (RECIPE!)
 					},
-				}),
+				})),
 				q(3362, {	-- Thistleshrub Valley
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

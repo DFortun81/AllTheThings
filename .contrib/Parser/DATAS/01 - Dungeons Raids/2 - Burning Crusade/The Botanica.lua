@@ -105,7 +105,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(28318),	-- Obsidian Clodstompers
 						i(28315),	-- Stormreaver Warblades
-						i(23617),	-- Plans: Earthpeace Breastplate
+						i(23617),	-- Plans: Earthpeace Breastplate (RECIPE!)
 						i(31744),	-- Botanist's Field Guide
 					},
 				}),
@@ -236,7 +236,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(28318),	-- Obsidian Clodstompers
 							i(28315),	-- Stormreaver Warblades
-							i(23617),	-- Plans: Earthpeace Breastplate
+							i(23617),	-- Plans: Earthpeace Breastplate (RECIPE!)
 							i(31744),	-- Botanist's Field Guide
 						},
 					}),

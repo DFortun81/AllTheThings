@@ -127,6 +127,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
+						["coord"] = { 29.0, 75.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_BLACKSMITHING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(26602, {	-- A Dish Best Served Huge
 					["sourceQuests"] = { 26600 },	-- A Giant's Feast
@@ -1080,7 +1090,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
 						}),
-						i(12162, {	-- Plans: Hardened Iron Shortsword
+						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1202,7 +1212,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,
 						}),
-						i(12163, {	-- Plans: Moonsteel Broadsword
+						i(12163, {	-- Plans: Moonsteel Broadsword (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12252, {	-- Staff of Protection

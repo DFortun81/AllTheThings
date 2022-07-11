@@ -129,38 +129,59 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			applyclassicphase(TBC_PHASE_ONE, prof(FISHING, {
-				i(34864),	-- Baby Crocolisk
-				i(67414, {	-- Bag of Shiny Things
-					["description"] = "Fishing Daily Quest Reward",
-					["timeline"] = { "added 4.0.1.12984" },
-					["cr"] = 5161,	-- Grimnur Stonebrand
-					["groups"] = {
-						i(44983),	-- Strand Crawler
-						i(33820),	-- Weather-Beaten Fishing Hat
-						i(45991),	-- Bone Fishing Pole
-						i(45992),	-- Jeweled Fishing Pole
-						i(67410),	-- Very Unlucky Rock
-					},
-				}),
-				i(122204, {	-- Music Roll: Cold Mountain
-					["timeline"] = { "added 6.1.0.19480" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(34484, {	-- Old Ironjaw
-					-- #if BEFORE WRATH
-					["description"] = "Keep this in your bank until Achievements are added otherwise you'll need to fish it up again. Fair warning!",
-					-- #elseif BEFORE LEGION
-					["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
-					-- #endif
-				}),
-			})),
 			n(FLIGHT_PATHS, {
 				fp(6, {	-- Ironforge, Dun Morogh
 					["cr"] = 1573,	-- Gryth Thurden <Gryphon Master>
 					["coord"] = { 55.6, 48.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
+			}),
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>
+						["coord"] = { 52.6, 40.8, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING,
+						-- #endif
+					}),
+					n(5164, {	-- Grumnus Steelshaper <Armor Crafter>
+						["coord"] = { 50.2, 42.6, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = ARMORSMITHING,
+					}),
+					n(11146, {	-- Ironus Coldsteel <Special Weapon Crafter>
+						["coord"] = { 50.8, 43.0, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = WEAPONSMITHING,
+					}),
+				}),
+				applyclassicphase(TBC_PHASE_ONE, prof(FISHING, {
+					i(34864),	-- Baby Crocolisk
+					i(67414, {	-- Bag of Shiny Things
+						["description"] = "Fishing Daily Quest Reward",
+						["timeline"] = { "added 4.0.1.12984" },
+						["cr"] = 5161,	-- Grimnur Stonebrand
+						["groups"] = {
+							i(44983),	-- Strand Crawler
+							i(33820),	-- Weather-Beaten Fishing Hat
+							i(45991),	-- Bone Fishing Pole
+							i(45992),	-- Jeweled Fishing Pole
+							i(67410),	-- Very Unlucky Rock
+						},
+					}),
+					i(122204, {	-- Music Roll: Cold Mountain
+						["timeline"] = { "added 6.1.0.19480" },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(34484, {	-- Old Ironjaw
+						-- #if BEFORE WRATH
+						["description"] = "Keep this in your bank until Achievements are added otherwise you'll need to fish it up again. Fair warning!",
+						-- #elseif BEFORE LEGION
+						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
+						-- #endif
+					}),
+				})),
 			}),
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity
@@ -498,7 +519,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6735, {	-- Plans: Ironforge Breastplate
+						i(6735, {	-- Plans: Ironforge Breastplate (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
 						}),
 					},
@@ -852,9 +873,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						-- #if AFTER TBC
 						i(33792, {	-- Plans: Heavy Copper Longsword
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+							["timeline"] = { "added 2.3.0" },
 						}),
 						-- #else
-						i(3609),	-- Plans: Copper Chain Vest
+						i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -1518,7 +1540,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 60.8, 44.2, IRONFORGE },
 					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3346} }, -- Kithas <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

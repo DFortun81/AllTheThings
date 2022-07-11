@@ -72,10 +72,10 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30321),	-- Plans: Belt of the Guardian
-				i(30323),	-- Plans: Boots of the Protector
-				i(30322),	-- Plans: Red Belt of Battle
-				i(30324),	-- Plans: Red Havoc Boots
+				i(30321),	-- Plans: Belt of the Guardian (RECIPE!)
+				i(30323),	-- Plans: Boots of the Protector (RECIPE!)
+				i(30322),	-- Plans: Red Belt of Battle (RECIPE!)
+				i(30324),	-- Plans: Red Havoc Boots (RECIPE!)
 				i(30022),	-- Pendant of the Perilous
 				-- #if BEFORE MOP
 				i(30025, {	-- Serpentshrine Shuriken

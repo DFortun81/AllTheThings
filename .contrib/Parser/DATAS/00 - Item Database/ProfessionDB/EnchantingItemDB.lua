@@ -364,8 +364,8 @@ i(0, 44508);		-- Greater Versatility / WOTLK: Greater Spirit (Boot)
 i(0, 44509);		-- Greater Versatility / WOTLK: Greater Mana Restoration (Chest)
 i(0, 44584);		-- Greater Vitality
 i(0, 44598);		-- Haste / WOTLK: Expertise (Bracer)
-i(0, 44484);		-- Haste / WOTLK: Expertise (Glove))
-i(0, 44529);		-- Major Agility
+i(0, 44484);		-- Haste / WOTLK: Expertise (Glove)
+i(0, 44529);		-- Major Agility[Glove]
 i(0, 44593);		-- Major Versatility / WOTLK: Major Spirit
 i(0, 44492);		-- Mighty Health chest
 i(0, 44582);		-- Minor Power
@@ -425,7 +425,7 @@ i(0, 60653);		-- Greater Intellect
 i(0, 60621);		-- Greater Potency
 i(0, 60623);		-- Icewalker
 i(0, 63746);		-- Lesser Accuracy
-i(0, 60663);		-- Major Agility
+i(0, 60663);		-- Major Agility[Cloak]
 i(0, 62959);		-- Spellpower
 i(0, 60609);		-- Speed
 i(0, 47900);		-- Super Health

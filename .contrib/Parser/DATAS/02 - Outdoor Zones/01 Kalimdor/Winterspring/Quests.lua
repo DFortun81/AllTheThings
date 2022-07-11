@@ -65,7 +65,7 @@ _.Zones =
 					["coord"] = { 60.2, 50.2, WINTERSPRING },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["g"] = {
-						i(142357),	-- Plans: Dawn's Edge
+						i(142357),	-- Plans: Dawn's Edge (RECIPE!)
 					},
 				}),
 				q(28857, {	-- Blasted Lands: The Other Side of the World
@@ -120,16 +120,12 @@ _.Zones =
 						i(67197),	-- Rocksnitch Helmet
 					},
 				}),
-				q(5307,  {	-- Corruption
-					["u"] = REMOVED_FROM_GAME,
+				q(5307, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Corruption
 					["provider"] = { "n", 11193 },	-- Seril Scourgebane
 					["g"] = {
-						i(12825, {	-- Plans: Blazing Rapier
-							["spellID"] = 0,	-- This is now available via 142358, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						i(12825),	-- Plans: Blazing Rapier (RECIPE!)
 					},
-				}),
+				})),
 				q(28831, {	-- Damn You, Frostilicus
 					["provider"] = { "n", 50263 },	-- Jadrag the Slicer
 					["coord"] = { 61.8, 74.6, WINTERSPRING },
@@ -385,16 +381,12 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11629 },	-- Jessica Redpath
 				}),
-				q(5306,  {	-- Snakestone of the Shadow Huntress
-					["u"] = REMOVED_FROM_GAME,
+				q(5306, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Snakestone of the Shadow Huntress
 					["provider"] = { "n", 11192 },	-- Kilram
 					["g"] = {
-						i(12821, {	-- Plans: Dawn's Edge
-							["spellID"] = 0,	-- This is now available via 142357, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						i(12821),	-- Plans: Dawn's Edge (RECIPE!)
 					},
-				}),
+				})),
 				q(28707, {	-- Spray it Again
 					["provider"] = { "n", 49399 },	-- Remma Curtainfire
 					["coord"] = { 45.6, 41.5, WINTERSPRING },
@@ -447,14 +439,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15789)),	-- Deep River Cloak
 					},
 				}),
-				q(5305,  {	-- Sweet Serenity
-					["u"] = REMOVED_FROM_GAME,
+				q(5305, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Sweet Serenity
 					["provider"] = { "n", 11191 },	-- Lilith the Lithe
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(12824)),	-- Plans: Enchanted Battlehammer
+						i(12824),	-- Plans: Enchanted Battlehammer (RECIPE!)
 					},
-				}),
+				})),
 				q(28841, {	-- The Arcane Storm Within
 					["provider"] = { "n", 10929 },	-- Haleh
 					["coord"] = { 58.0, 63.7, WINTERSPRING },

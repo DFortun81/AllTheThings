@@ -692,72 +692,12 @@ root("Instances", tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(11073, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {	-- Annora <Master Enchanter>
+			n(11073, {	-- Annora <Master Enchanter>
 				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
 				-- #if BEFORE 2.1.0
-				["groups"] = {
-					r(13920, {	-- Enchanting (Artisan)
-						["timeline"]={ "removed 8.0.1" },
-						["collectible"] = false,
-					}),
-					cat(690, {	-- Boot Enchantments
-						r(13935),	-- Agility
-						r(13637),	-- Lesser Agility
-						r(13644),	-- Lesser Stamina
-						r(13890),	-- Minor Speed
-						r(13836),	-- Stamina
-					}),
-					cat(691, {	-- Bracer Enchantments
-						r(13939),	-- Greater Strength
-						r(13822),	-- Intellect
-						r(13648),	-- Stamina
-						r(13661),	-- Strength
-						r(13642),	-- Versatility / CLASSIC: Spirit
-					}),
-					cat(692, {	-- Chest Enchantments
-						r(13640),	-- Greater Health
-						r(13663),	-- Greater Mana
-						r(13700),	-- Lesser Stats
-						r(13941),	-- Stats
-						r(13858),	-- Superior Health
-						r(13917),	-- Superior Mana
-					}),
-					cat(693, {	-- Cloak Enchantments
-						r(13635),	-- Defense
-						r(13657, {["timeline"]={"removed 5.0.4"}}),	-- Fire Resistance
-						r(13746),	-- Greater Defense
-						r(13794, {["timeline"]={"removed 5.0.4"}}),	-- Resistance
-					}),
-					cat(694, {	-- Glove Enchantments
-						r(13815),	-- Agility
-						r(13948),	-- Minor Haste
-						r(13887),	-- Strength
-					}),
-					cat(701, {	-- Reagents
-						r(17181),	-- Enchanted Leather
-						r(17180),	-- Enchanted Thorium Bar
-					}),
-					cat(697, {	-- Rods
-						r(13702),	-- Runed Truesilver Rod
-					}),
-					cat(696, {	-- Shield Enchantments
-						r(13905),	-- Greater Versatility / CLASSIC: Greater Spirit
-						r(13631),	-- Lesser Stamina
-						r(13659),	-- Versatility / CLASSIC: Spirit
-					}),
-					cat(698, {	-- Wands
-						r(14810),	-- Greater Mystic Wand
-						r(14809),	-- Lesser Mystic Wand
-					}),
-					cat(695, {	-- Weapon Enchantments
-						r(13937),	-- Greater Impact
-						r(13943),	-- Greater Striking
-						r(13695),	-- Impact
-						r(13693),	-- Striking
-					}),
-				},
+				["groups"] = EXPERT_ARTISAN_ENCHANTING,
 				-- #endif
-			})),
+			}),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,
 				["groups"] = {

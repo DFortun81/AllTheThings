@@ -143,7 +143,7 @@ app.PrintTable = function(t,depth)
 		print(p,tostring(t),"RECURSIVE");
 	end
 end
---[[
+--[[]]
 app.PrintMemoryUsage = function(...)
 	-- update memory value for ATT
 	UpdateAddOnMemoryUsage();
@@ -305,6 +305,77 @@ local indexOf = function(arr, value)
 	for i,value2 in ipairs(arr) do
 		if value2 == value then return i; end
 	end
+end
+
+-- Iterative Function Runner
+do
+local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+local QueueIndex = 1;
+
+-- maybe a coroutine directly which can be restarted without needing to be re-created?
+local FunctionRunnerCoroutine = function()
+	local i, perFrame = 1, Config.PerFrame;
+	local params;
+	local func = FunctionQueue[i];
+	while func do
+		perFrame = perFrame - 1;
+		params = ParameterBucketQueue[i];
+		if params then
+			-- app.PrintDebug("FRC.Run.N",i,params)
+			func(unpack(params));
+		else
+			-- app.PrintDebug("FRC.Run.1",i,ParameterSingleQueue[i])
+			func(ParameterSingleQueue[i]);
+		end
+		-- app.PrintDebug("FRC.Done",i)
+		if perFrame <= 0 then
+			-- app.PrintDebug("FRC.Yield")
+			coroutine.yield();
+			perFrame = Config.PerFrame;
+		end
+		i = i + 1;
+		func = FunctionQueue[i];
+	end
+	-- Run the OnEnd function if it exists
+	local OnEnd = FunctionQueue[0];
+	if OnEnd then OnEnd(); end
+	-- when done with all functions in the queue, reset the queue index and clear the queues of data
+	QueueIndex = 1;
+	-- app.PrintDebug("FRC.End")
+	wipe(FunctionQueue);
+	wipe(ParameterBucketQueue);
+	wipe(ParameterSingleQueue);
+end
+
+-- Provides a utility which will process a given number of functions each frame in a queue
+local FunctionRunner = {
+	-- Adds a function to be run with any necessary parameters
+	["Run"] = function(func, ...)
+		if type(func) ~= "function" then
+			error("Must be a 'function' type!")
+		end
+		FunctionQueue[QueueIndex] = func;
+		-- app.PrintDebug("FR.Add",QueueIndex,...)
+		local arrs = select("#", ...);
+		if arrs == 1 then
+			ParameterSingleQueue[QueueIndex] = ...;
+		elseif arrs > 1 then
+			ParameterBucketQueue[QueueIndex] = { ... };
+		end
+		QueueIndex = QueueIndex + 1;
+		StartCoroutine("FunctionRunnerCoroutine", FunctionRunnerCoroutine);
+	end,
+	-- Defines how many functions will be executed per frame
+	["SetPerFrame"] = function(count)
+		Config.PerFrame = math.max(1, tonumber(count) or 1);
+	end,
+	-- Set a function to be run once the queue is empty. This function takes no parameters.
+	["OnEnd"] = function(func)
+		FunctionQueue[0] = func;
+	end,
+};
+
+app.FunctionRunner = FunctionRunner;
 end
 
 -- Sorting Logic
@@ -1704,6 +1775,9 @@ app.MergeSkipFields = {
 	["expanded"] = true,
 	["indent"] = true,
 	["g"] = true,
+	["progress"] = true,
+	["total"] = true,
+	["visible"] = true,
 	-- 1 -> only when cloning
 	["modItemID"] = 1,
 	["u"] = 1,
@@ -2768,6 +2842,7 @@ MergeObject = function(g, t, index, newCreate)
 					return o;
 				end
 			end
+		-- else app.PrintDebug("NO Hash for MergeObject",t.text)
 		end
 		if index then
 			tinsert(g, index, newCreate and CreateObject(t) or t);
@@ -2778,8 +2853,9 @@ MergeObject = function(g, t, index, newCreate)
 end
 NestObject = function(p, t, newCreate, index)
 	if p and t then
-		if p.g then
-			MergeObject(p.g, t, index, newCreate);
+		local g = p.g;
+		if g then
+			MergeObject(g, t, index, newCreate);
 		elseif newCreate then
 			p.g = { CreateObject(t) };
 		else
@@ -2841,8 +2917,9 @@ MergeObjects = function(g, g2, newCreate)
 end
 NestObjects = function(p, g, newCreate)
 	if not g then return; end
-	if p.g then
-		MergeObjects(p.g, g, newCreate);
+	local pg = p.g;
+	if pg then
+		MergeObjects(pg, g, newCreate);
 	elseif #g > 0 then
 		p.g = {};
 		MergeObjects(p.g, g, newCreate);
@@ -5536,6 +5613,8 @@ fieldCache["mountID"] = {};
 fieldCache["nextQuests"] = {};
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
+-- identical cache as professionID
+fieldCache["requireSkill"] = rawget(fieldCache, "professionID");
 fieldCache["questID"] = {};
 fieldCache["runeforgePowerID"] = {};
 fieldCache["s"] = {};
@@ -5580,6 +5659,9 @@ end
 local cacheQuestID = function(group, questID)
 	CacheField(group, "questID", questID);
 end
+local cacheFactionID = function(group, id)
+	CacheField(group, "factionID", id);
+end
 
 fieldConverters = {
 	-- Simple Converters
@@ -5602,9 +5684,7 @@ fieldConverters = {
 	["encounterID"] = function(group, value)
 		CacheField(group, "encounterID", value);
 	end,
-	["factionID"] = function(group, value)
-		CacheField(group, "factionID", value);
-	end,
+	["factionID"] = cacheFactionID,
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
 	end,
@@ -5716,6 +5796,12 @@ fieldConverters = {
 		for _,mapID in ipairs(value) do
 			cacheMapID(group, mapID);
 		end
+	end,
+	["maxReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
+	end,
+	["minReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
 	end,
 	["nextQuests"] = function(group, value)
 		for _,questID in ipairs(value) do
@@ -7549,6 +7635,7 @@ app.CollectibleAsCost = function(t)
 			-- Found something collectible for t, make sure t is actually obtainable as well
 			-- Make sure this thing can actually be collectible via hierarchy
 			if GetRelativeValue(t, "altcollected") then
+				-- literally have not seen this message in months, maybe is pointless...
 				app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
 				return;
 			end
@@ -7585,7 +7672,6 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local QuestsRequested = {};
-local QuestsRequestQueue = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
@@ -7616,38 +7702,17 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		app.TryPopulateQuestRewards(data, retries > 10);
 	end
 end
--- Used as a callback to process Requested Quests, since we may need the frame to complete so that the initial quest groups are built properly
--- prior to attempting to pass them updates
-local function CoroutineProcessRequestedQuests()
-	local perFrameThrottle = 0;
-	local i = 1;
-	local questID = QuestsRequestQueue[i];
-	while questID do
-		perFrameThrottle = perFrameThrottle + 1;
-		i = i + 1;
-		C_QuestLog_RequestLoadQuestByID(questID);
-		-- seems to be a limit on retrieval of new quest data per game frame? hmmmm
-		if perFrameThrottle >= 25 then
-			perFrameThrottle = 0;
-			coroutine.yield();
-		end
-		-- grab next quest from the queue
-		questID = QuestsRequestQueue[i];
-	end
-	-- clear the queue
-	wipe(QuestsRequestQueue);
-end
 -- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 -- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 app.RequestLoadQuestByID = function(questID, data)
+	-- requests for quest information may process at 20 per frame
+	app.FunctionRunner.SetPerFrame(20);
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
 		QuestsToPopulate[questID] = data;
-		tinsert(QuestsRequestQueue, questID);
-		-- callback to process all requested quests next frame
-		StartCoroutine("CoroutineProcessRequestedQuests", CoroutineProcessRequestedQuests);
+		app.FunctionRunner.Run(C_QuestLog_RequestLoadQuestByID, questID);
 	end
 end
 -- consolidated representation of whether a Thing can be collectible via QuestID
@@ -8210,9 +8275,9 @@ app.CreateQuestWithFactionData = function(t)
 		otherQuestData = t.hqd;
 		otherQuestData.r = Enum.FlightPathFaction.Horde;
 	end
-	
+
 	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
-	
+
 	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
 	rawset(t, "r", app.FactionID);
@@ -8329,6 +8394,10 @@ local function RefreshQuestCompletionState(questID)
 				Callback(app.RefreshCustomCollectibility);
 			end
 		end
+		-- if app.DEBUG_PRINT then
+		-- 	app.PrintDebug("Update Quests")
+		-- 	app.PrintTable(UpdateQuestIDs)
+		-- end
 		UpdateRawIDs("questID", UpdateQuestIDs);
 		wipe(UpdateQuestIDs);
 	end
@@ -14118,7 +14187,8 @@ UpdateGroups = function(parent, g, window)
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then
-					-- print("update-doUpdate",group.doUpdate,"=>",group.hash)
+					-- this will be irrelevant once DGU is used as needed
+					app.PrintDebug("update-doUpdate",group.doUpdate,"=>",group.hash)
 					window.doUpdate = true;
 				end
 			else
@@ -14210,7 +14280,7 @@ local function DirectGroupUpdate(group)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.isQuestChain)
+		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain);
 	end
 end
@@ -14681,10 +14751,11 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
+			-- app.PrintDebug("Update.ExpireTime", self.Suffix, force, got)
 			-- mark the popout to expire after 5 min from now if it is visible
 			if self:IsVisible() then
 				self.ExpireTime = time() + 300;
-				-- print(popout.Suffix,"set to expire",time() + 10)
+				-- app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
 			self:BaseUpdate(force or got, got);
 		end
@@ -15021,6 +15092,7 @@ function app:CreateMiniListForGroup(group)
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
+				-- app.PrintDebug("Update.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.AccountWideQuests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
@@ -15031,6 +15103,7 @@ function app:CreateMiniListForGroup(group)
 			end;
 			local oldRefresh = popout.Refresh;
 			popout.Refresh = function(self, ...)
+				-- app.PrintDebug("Refresh.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.AccountWideQuests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
@@ -16661,7 +16734,7 @@ local function UpdateWindow(self, force, got)
 			local expireTime = self.ExpireTime;
 			-- print("check ExpireTime",self.Suffix,expireTime)
 			if expireTime and expireTime > 0 and expireTime < time() then
-				-- print("window is expired, removing from window cache")
+				-- app.PrintDebug(self.Suffix,"window is expired, removing from window cache")
 				app.Windows[self.Suffix] = nil;
 			end
 		end
@@ -16802,38 +16875,89 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 end)();
 
+do	-- Dynamic/Main Data
+local RecursiveParentMapping = {};
+-- Recurses upwards in the group hierarchy until finding the group with the specified value in the specified field. The
+-- set of groups crossed while searching will all have their mapping value set to the found group.
+-- While recursing, the mapping will be checked first if the current group has already been mapped, and return that mapping instead
+local function RecursiveParentMapper(group, field, value)
+	if not group then return; end
+	-- is this group already mapped?
+	local mapped = RecursiveParentMapping[group];
+	if mapped then return mapped; end
+	-- is this group the one for the mapping, or recurse to the parent
+	mapped = (group[field] == value and group) or RecursiveParentMapper(group.parent, field, value);
+	if mapped then
+		RecursiveParentMapping[group] = mapped;
+		return mapped;
+	end
+end
+
 -- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
-app.DynamicCategory_Simple = function(self)
-	self.OnUpdate = nil;
-	if fieldCache[self.dynamic] then
+local DynamicCategory_Simple = function(self)
+	local dynamicCache = fieldCache[self.dynamic];
+	if dynamicCache then
 		local rootATT = app:GetWindow("Prime").data;
-		local RecursiveFirstParentWithFieldValue = app.RecursiveFirstParentWithFieldValue;
 		local top, topText, thing;
-		local topHeaders = {};
-		for id,sources in pairs(fieldCache[self.dynamic]) do
-			-- find the top-level parent of the Thing
-			top = RecursiveFirstParentWithFieldValue(sources[1], "parent", rootATT);
-			if top then
-				topText = top.text;
-				-- store a copy of this top header if we dont have it
-				if not topHeaders[topText] then
-					topHeaders[topText] = CreateObject(top, true);
-					-- print("create topHeader",self.dynamic,"==>")
-					-- app.PrintTable(topHeaders[topText])
+		local topHeaders, dynamicValue, clearSubgroups = {}, self.dynamic_value, not self.dynamic_withsubgroups;
+		if dynamicValue then
+			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
+			if dynamicValueCache then
+				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
+				for _,source in pairs(dynamicValueCache) do
+					-- only pull in actual 'Things' to the simple dynamic group
+					if thingKeys[source.key] then
+						-- find the top-level parent of the Thing
+						top = RecursiveParentMapper(source, "parent", rootATT);
+						-- create/match the expected top header
+						topText = top and top.text;
+						if topText then
+							-- store a copy of this top header if we dont have it
+							if not topHeaders[topText] then
+								-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
+								-- app.PrintTable(topHeaders[topText])
+								topHeaders[topText] = CreateObject(top, true);
+							end
+							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+							-- remove it from being considered a cost within the dynamic category
+							thing = CreateObject(source, clearSubgroups);
+							thing.collectibleAsCost = false;
+							NestObject(topHeaders[topText], thing);
+						end
+					end
 				end
-				-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-				-- remove it from being considered a cost within the dynamic category
-				thing = app.MergedObject(sources, true)
-				thing.collectibleAsCost = false;
-				NestObject(topHeaders[topText], thing);
+				-- app.PrintDebugPrior("Complete")
+				-- dynamic groups for Things within a specific Value of a Type are expected to be collected under a Header of the Type itself
+			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
+		else
+			for id,sources in pairs(dynamicCache) do
+				-- find the top-level parent of the Thing
+				top = RecursiveParentMapper(sources[1], "parent", rootATT);
+				-- create/match the expected top header
+				topText = top and top.text;
+				if topText then
+					-- store a copy of this top header if we dont have it
+					if not topHeaders[topText] then
+						topHeaders[topText] = CreateObject(top, true);
+						-- print("create topHeader",self.dynamic,"==>")
+						-- app.PrintTable(topHeaders[topText])
+					end
+					-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+					-- remove it from being considered a cost within the dynamic category
+					thing = app.MergedObject(sources, clearSubgroups);
+					thing.collectibleAsCost = false;
+					NestObject(topHeaders[topText], thing);
+				end
 			end
+			-- dynamic groups for general Types are ignored for the source tooltips
+			self.sourceIgnored = true;
 		end
-		-- dynamic groups are ignored for the source tooltips
-		self.sourceIgnored = true;
-		-- change the text color of the dynamic group to help indicate it is not included in the window total
-		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+		-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
+		if self.sourceIgnored then
+			self.text = Colorize(self.text, app.Colors.SourceIgnored);
+		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		for _,header in pairs(topHeaders) do
 			-- delay-sort the groups in each categorized header
@@ -16844,43 +16968,171 @@ app.DynamicCategory_Simple = function(self)
 		BuildGroups(self, self.g);
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
-		-- make sure these things are cached so they can be updated when collected
-		app.CacheFields(self);
-	else
-		app.print("Failed to build Simple Dynamic Category for:",self.dynamic)
-	end
+		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+		app.FunctionRunner.Run(app.CacheFields, self);
+		-- run a direct update on itself after being populated
+		app.DirectGroupUpdate(self);
+	else app.print("Failed to build Simple Dynamic Category: No cached data for key",self.dynamic) end
 end
 
 -- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
-app.DynamicCategory_Nested = function(self)
-	self.OnUpdate = nil;
-	-- dynamic groups are ignored for the source tooltips
-	self.sourceIgnored = true;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total
-	self.text = Colorize(self.text, app.Colors.SourceIgnored);
+local DynamicCategory_Nested = function(self)
+	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
+	self.sourceIgnored = not self.dynamic_value;
+	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
+	if self.sourceIgnored then
+		self.text = Colorize(self.text, app.Colors.SourceIgnored);
+	end
 	-- pull out all Things which should go into this category based on field & value
-	self.g = app:BuildSearchResponse(app:GetWindow("Prime").data.g, self.dynamic, self.dynamic_value, true);
+	NestObjects(self, app:BuildSearchResponse(app:GetDataCache().g, self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups));
 	-- reset indents and such
 	BuildGroups(self, self.g);
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
-	-- make sure these things are cached so they can be updated when collected
-	app.CacheFields(self);
+	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
+	app.FunctionRunner.Run(app.CacheFields, self);
+	-- run a direct update on itself after being populated
+	app.DirectGroupUpdate(self);
 end
+
 function app:GetDataCache()
+	-- app.PrintDebug("Start app.GetDataCache")
+	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
-	-- copy the function which will handle the desired Dynamic style for this session
-	app.FillDynamicGroup = (dynamicSetting == 2 and app.DynamicCategory_Nested) or
-						   (dynamicSetting == 1 and app.DynamicCategory_Simple) or nil;
-	-- Attaches a dynamic OnUpdate to the category which auto-populates itself using the provided field and optional value when first receiving an Update to itself
+	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
+					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
+
+	-- Adds a Dynamic Category Filler function to the Function Runner which will fill the provided group using the field and value
 	local function DynamicCategory(group, field, value)
 		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 		group.dynamic = field;
 		group.dynamic_value = value;
-		group.OnUpdate = app.FillDynamicGroup;
+		-- only perform dynamic update logic on 1 group per frame to reduce unnecessary lag
+		app.FunctionRunner.SetPerFrame(1);
+		-- run a direct update on itself after being populated if the Filler exists
+		if Filler then
+			app.FunctionRunner.Run(Filler, group);
+		end
 		return group;
 	end
+
+	-- Nests Dynamic categories created based on the field used to cache groups.
+	-- Can indicate to keep sub-group Things if desired.
+	local function NestDynamicValueCategories(dynamicCategory, field, keepSubGroups)
+		local cat;
+		local SearchForObject = app.SearchForObject;
+		local cache = fieldCache[field];
+		for id,_ in pairs(cache) do
+			-- create a cloned version of the cached object, or create a new object from the Creator
+			cat = CreateObject(SearchForObject(field, id) or { [field] = id }, true);
+			cat.parent = dynamicCategory;
+			cat.dynamic_withsubgroups = keepSubGroups;
+			-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
+			cat.maps = nil;
+			cat.sourceParent = nil;
+			cat.symlink = nil;
+			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
+		end
+		-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
+		app.SortGroupDelayed(dynamicCategory, "name");
+	end
+
+	-- Adds all the Dynamic groups into the provided groups (g)
+	local function AddDynamicGroups(primeData)
+		local g = primeData.g;
+		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
+		app.ToggleCacheMaps(true);
+		app.print("Loading Dynamic Groups...");
+
+		-- Battle Pets - Dynamic
+		local db = {};
+		db.text = AUCTION_CATEGORY_BATTLE_PETS;
+		db.name = db.text;
+		db.icon = app.asset("Category_PetJournal");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "speciesID"));
+
+		-- Conduits - Dynamic
+		-- local db = app.CreateNPC(-981);
+		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
+		-- db.parent = primeData;
+		-- tinsert(g, DynamicCategory(db, "conduitID"));
+
+		-- Factions (Dynamic)
+		db = {};
+		db.name = L["FACTIONS"];
+		db.text = Colorize(db.name, app.Colors.SourceIgnored);
+		db.icon = app.asset("Category_Factions");
+		db.parent = primeData;
+		db.sourceIgnored = true;
+		tinsert(g, db);
+		NestDynamicValueCategories(db, "factionID", true);
+
+		-- Flight Paths (Dynamic)
+		db = {};
+		db.text = L["FLIGHT_PATHS"];
+		db.name = db.text;
+		db.icon = app.asset("Category_FlightPaths");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "flightPathID"));
+
+		-- Illusions - Dynamic
+		db = {};
+		db.text = L["FILTER_ID_TYPES"][103];
+		db.name = db.text;
+		db.icon = 132853;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "illusionID"));
+
+		-- Mounts - Dynamic
+		db = {};
+		db.text = MOUNTS;
+		db.name = db.text;
+		db.icon = app.asset("Category_Mounts");
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "mountID"));
+
+		-- Professions - Dynamic
+		db = {};
+		db.name = TRADE_SKILLS;
+		db.text = Colorize(db.name, app.Colors.SourceIgnored);
+		db.icon = app.asset("Category_Professions");
+		db.parent = primeData;
+		db.sourceIgnored = true;
+		tinsert(g, db);
+		NestDynamicValueCategories(db, "professionID");
+
+		-- Runeforge Powers - Dynamic
+		-- local db = app.CreateNPC(-364);
+		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
+		-- db.parent = primeData;
+		-- tinsert(g, DynamicCategory(db, "runeforgePowerID"));
+
+		-- Titles - Dynamic
+		db = {};
+		db.icon = app.asset("Category_Titles");
+		db.text = PAPERDOLL_SIDEBAR_TITLES;
+		db.name = db.text;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "titleID"));
+
+		-- Toys - Dynamic
+		db = {};
+		db.icon = app.asset("Category_ToyBox");
+		db.f = 102;
+		db.text = TOY_BOX;
+		db.name = db.text;
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "toyID"));
+
+		-- add an OnEnd function for the FunctionRunner to print being done
+		app.FunctionRunner.OnEnd(function()
+			app.ToggleCacheMaps();
+			app.print("Dynamic Groups Loaded");
+		end);
+	end
+
 	-- Update the Row Data by filtering raw data (this function only runs once)
 	local allData = setmetatable({}, {
 		__index = function(t, key)
@@ -17107,69 +17359,6 @@ function app:GetDataCache()
 		db.text = L["FACTIONS"];
 		db.icon = app.asset("Category_Factions");
 		tinsert(g, db);
-	end
-
-	-- Flight Paths (Dynamic)
-	-- TODO: ugh re-do this again
-	local flightPathsCategory = {};
-	flightPathsCategory.g = {};
-	flightPathsCategory.fps = {};
-	flightPathsCategory.expanded = false;
-	flightPathsCategory.icon = app.asset("Category_FlightPaths");
-	flightPathsCategory.text = Colorize(L["FLIGHT_PATHS"], app.Colors.SourceIgnored);
-	db.name = L["FLIGHT_PATHS"];
-	tinsert(g, flightPathsCategory);
-
-	-- Dynamic Categories
-	if dynamicSetting > 0 then
-
-		-- Battle Pets - Dynamic
-		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS;
-		db.name = db.text;
-		db.icon = app.asset("Category_PetJournal");
-		tinsert(g, DynamicCategory(db, "speciesID"));
-
-		-- Factions (Dynamic)
-		--[[
-		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
-		local factionsCategory = {};
-		factionsCategory.g = {};
-		factionsCategory.factions = {};
-		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = L["FACTIONS"];
-		tinsert(g, factionsCategory);
-		]]--
-
-		-- Illusions - Dynamic
-		db = {};
-		db.text = L["FILTER_ID_TYPES"][103];
-		db.name = db.text;
-		db.icon = app.asset("Category_Illusions");
-		tinsert(g, DynamicCategory(db, "illusionID"));
-
-		-- Mounts - Dynamic
-		db = {};
-		db.text = MOUNTS;
-		db.name = db.text;
-		db.icon = app.asset("Category_Mounts");
-		tinsert(g, DynamicCategory(db, "mountID"));
-
-		-- Titles - Dynamic
-		db = {};
-		db.icon = app.asset("Category_Titles");
-		db.text = PAPERDOLL_SIDEBAR_TITLES;
-		db.name = db.text;
-		tinsert(g, DynamicCategory(db, "titleID"));
-
-		-- Toys - Dynamic
-		db = {};
-		db.icon = app.asset("Category_ToyBox");
-		db.f = 102;
-		db.text = TOY_BOX;
-		db.name = db.text;
-		tinsert(g, DynamicCategory(db, "toyID"));
 	end
 
 	--[[
@@ -17399,12 +17588,36 @@ function app:GetDataCache()
 		end
 	}));
 
+	-- Create Dynamic Groups Button
+	tinsert(g, {
+		["text"] = "Click to Create Dynamic Groups",
+		["description"] = "Create Dynamic Groups",
+		["icon"] = 4200123,	-- misc-rnrgreengobutton
+		["OnUpdate"] = app.AlwaysShowUpdate,
+		["OnClick"] = function(row, button)
+			local ref = row.ref;
+			ref.OnClick = nil;
+			ref.OnUpdate = nil;
+			ref.visible = nil;
+			local primeData = ref.parent;
+			if primeData then
+				AddDynamicGroups(primeData);
+			end
+		end,
+	});
+
 	-- The Main Window's Data
 	app.refreshDataForce = true;
+	-- app.PrintMemoryUsage("Prime.Data Ready")
 	local primeWindow = app:GetWindow("Prime");
 	primeWindow:SetData(allData);
+	-- app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
+	-- app.PrintMemoryUsage()
+	-- app.PrintDebug("Begin Cache Prime")
 	CacheFields(allData);
+	-- app.PrintDebugPrior("Ended Cache Prime")
+	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	allData = {};
@@ -17778,69 +17991,73 @@ function app:GetDataCache()
 	]]--
 
 	-- Update Flight Path data.
-	if flightPathsCategory and dynamicSetting > 0 then
-		flightPathsCategory.OnUpdate = function(self)
-			-- no longer need to run this logic once the dynamic group has been filled
-			self.OnUpdate = nil;
-			for i,_ in pairs(fieldCache["flightPathID"]) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(fp, key, value); end
-					end
-					self.fps[i] = fp;
-					fp.g = nil;
-					fp.maps = nil;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
-					else
-						fp.parent = flightPathsCategory_NYI;
-						tinsert(flightPathsCategory_NYI.g, fp);
-					end
-					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
-					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
-				end
-			end
-			-- will only run once per session and return true the first time it is called
-			if app.CacheFlightPathData() then
-				for i,_ in pairs(app.FlightPathDB) do
-					if not self.fps[i] then
-						local fp = app.CreateFlightPath(tonumber(i));
-						self.fps[i] = fp;
-						if not fp.u or fp.u ~= 1 then
-							app.print("Flight Path needs Source!",i,fp.name)
-							fp.parent = self;
-							tinsert(self.g, fp);
-						else
-							fp.parent = flightPathsCategory_NYI;
-							tinsert(flightPathsCategory_NYI.g, fp);
-						end
-					end
-				end
-			end
-			-- reset indents and such
-			BuildGroups(flightPathsCategory, flightPathsCategory.g);
-			-- delay-sort the top level groups
-			flightPathsCategory.sort = true;
-			app.SortGroupDelayed(flightPathsCategory, "name");
-			flightPathsCategory.sort = nil;
-			-- dynamic groups are ignored for the source tooltips
-			flightPathsCategory.sourceIgnored = true;
-			-- make sure these things are cached so they can be updated when collected
-			CacheFields(flightPathsCategory);
-		end;
-	end
+	-- if flightPathsCategory and dynamicSetting > 0 then
+	-- 	flightPathsCategory.OnUpdate = function(self)
+	-- 		-- no longer need to run this logic once the dynamic group has been filled
+	-- 		self.OnUpdate = nil;
+	-- 		for i,_ in pairs(fieldCache["flightPathID"]) do
+	-- 			if not self.fps[i] then
+	-- 				local fp = app.CreateFlightPath(tonumber(i));
+	-- 				for j,o in ipairs(_) do
+	-- 					for key,value in pairs(o) do rawset(fp, key, value); end
+	-- 				end
+	-- 				self.fps[i] = fp;
+	-- 				fp.g = nil;
+	-- 				fp.maps = nil;
+	-- 				if not fp.u or fp.u ~= 1 then
+	-- 					fp.parent = self;
+	-- 					tinsert(self.g, fp);
+	-- 				else
+	-- 					fp.parent = flightPathsCategory_NYI;
+	-- 					tinsert(flightPathsCategory_NYI.g, fp);
+	-- 				end
+	-- 				-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
+	-- 				if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
+	-- 			end
+	-- 		end
+	-- 		-- will only run once per session and return true the first time it is called
+	-- 		if app.CacheFlightPathData() then
+	-- 			for i,_ in pairs(app.FlightPathDB) do
+	-- 				if not self.fps[i] then
+	-- 					local fp = app.CreateFlightPath(tonumber(i));
+	-- 					self.fps[i] = fp;
+	-- 					if not fp.u or fp.u ~= 1 then
+	-- 						app.print("Flight Path needs Source!",i,fp.name)
+	-- 						fp.parent = self;
+	-- 						tinsert(self.g, fp);
+	-- 					else
+	-- 						fp.parent = flightPathsCategory_NYI;
+	-- 						tinsert(flightPathsCategory_NYI.g, fp);
+	-- 					end
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 		-- reset indents and such
+	-- 		BuildGroups(flightPathsCategory, flightPathsCategory.g);
+	-- 		-- delay-sort the top level groups
+	-- 		flightPathsCategory.sort = true;
+	-- 		app.SortGroupDelayed(flightPathsCategory, "name");
+	-- 		flightPathsCategory.sort = nil;
+	-- 		-- dynamic groups are ignored for the source tooltips
+	-- 		flightPathsCategory.sourceIgnored = true;
+	-- 		-- make sure these things are cached so they can be updated when collected
+	-- 		CacheFields(flightPathsCategory);
+	-- 	end;
+	-- end
 
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
 
-		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
+	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
+	-- app.PrintDebug("Finished app.GetDataCache")
+	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
+		-- app.PrintDebug("Cached GetDataCache")
 		return app:GetWindow("Prime").data;
 	end
 	return allData;
 end
+end	-- Dynamic/Main Data
 
 -- Collection Window Creation
 app._RefreshData = function()
@@ -17891,32 +18108,36 @@ function app:RefreshData(lazy, got, manual)
 		AfterCombatOrDelayedCallback(app._RefreshData, 0.5);
 	end
 end
-function app:BuildSearchResponse(groups, field, value, clear)
+
+do -- Search Response Logic
+local IncludeUnavailableRecipes, IgnoreBoEFilter;
+-- Set some logic which is used during recursion without needing to set it on every recurse
+local function SetRescursiveFilters()
+	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
+	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+end
+-- Collects a cloned hierarchy of groups which simply have the field defined
+local function BuildSearchResponseByField(groups, field, clear)
 	if groups then
-		local t, response, v;
-		local includeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
-		local ignoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+		local t, response, clone;
 		for _,group in ipairs(groups) do
-			v = group[field];
-			if v and (not value or
-				(v == value or
-					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value))) then
+			if group[field] then
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
-				if includeUnavailableRecipes or not group.spellID or ignoreBoEFilter(group) then
-					local clone = clear and CreateObject(group, true) or CreateObject(group);
+				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+					clone = clear and CreateObject(group, true) or CreateObject(group);
 					if t then tinsert(t, clone);
 					else t = { clone }; end
 				end
-			elseif group.g then
-				response = app:BuildSearchResponse(group.g, field, value, clear);
+			else
+				response = BuildSearchResponseByField(group.g, field, clear);
 				if response then
 					local groupCopy = {};
 					-- copy direct group values only
 					MergeProperties(groupCopy, group);
 					-- no need to clone response, since it is already cloned above
 					groupCopy.g = response;
-					-- if the group itself does not meet the field/value expectation, force it to be uncollectible
-					if not groupCopy[field] or groupCopy[field] ~= value then groupCopy.collectible = false; end
+					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+					groupCopy.collectible = false;
 					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
 					groupCopy.sym = nil;
 					groupCopy.sourceParent = nil;
@@ -17928,6 +18149,153 @@ function app:BuildSearchResponse(groups, field, value, clear)
 		return t;
 	end
 end
+-- Collects a cloned hierarchy of groups which have the field defined with the required value
+local function BuildSearchResponseByFieldValue(groups, field, value, clear)
+	if groups then
+		local t, response, v, clone;
+		for _,group in ipairs(groups) do
+			v = group[field];
+			if v and (v == value or
+					(field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+				if IncludeUnavailableRecipes or not group.spellID or IgnoreBoEFilter(group) then
+					clone = clear and CreateObject(group, true) or CreateObject(group);
+					if t then tinsert(t, clone);
+					else t = { clone }; end
+				end
+			else
+				response = BuildSearchResponseByFieldValue(group.g, field, value, clear);
+				if response then
+					local groupCopy = {};
+					-- copy direct group values only
+					MergeProperties(groupCopy, group);
+					-- no need to clone response, since it is already cloned above
+					groupCopy.g = response;
+					-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+					groupCopy.collectible = false;
+					-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+					groupCopy.sym = nil;
+					groupCopy.sourceParent = nil;
+					if t then tinsert(t, groupCopy);
+					else t = { groupCopy }; end
+				end
+			end
+		end
+		return t;
+	end
+end
+local MainRoot, UnsortedRoot;
+local ClonedHierarchyGroups = {};
+local ClonedHierarachyMapping = {};
+-- Finds existing clone of the parent group, or clones the group into the proper clone hierarchy
+local function MatchOrCloneParentInHierarchy(group)
+	if group then
+		-- already cloned group, return the clone
+		local groupCopy = ClonedHierarachyMapping[group];
+		if groupCopy then return groupCopy; end
+
+		-- new cloned parent
+		groupCopy = {};
+		-- copy direct group values only
+		MergeProperties(groupCopy, group);
+		-- the group itself does not meet the field/value expectation, so force it to be uncollectible
+		groupCopy.collectible = false;
+		-- don't copy in any extra data for the header group which can pull things into groups, or reference other groups
+		groupCopy.sym = nil;
+		groupCopy.sourceParent = nil;
+		-- always a parent, so it will have a .g
+		groupCopy.g = {};
+		ClonedHierarachyMapping[group] = groupCopy;
+
+		-- is this a top-level group?
+		local parent = group.parent;
+		if parent == MainRoot then
+			-- app.PrintDebug("Added top cloned parent",groupCopy.text)
+			tinsert(ClonedHierarchyGroups, groupCopy);
+			return groupCopy;
+		elseif parent == UnsortedRoot then
+			-- app.PrintDebug("Don't capture Unsorted",groupCopy.text)
+			-- don't collect the unsorted content into the cloned groups
+			return groupCopy;
+		else
+			-- need to clone and attach this group to its cloned parent
+			local clonedParent = MatchOrCloneParentInHierarchy(parent);
+			-- if not clonedParent then
+			-- 	app.PrintDebug("Null Cloned Parent?",group.text,group.parent and group.parent.text)
+			-- end
+			NestObject(clonedParent, groupCopy);
+			-- tinsert(clonedParent.g, groupCopy);
+			return groupCopy;
+		end
+	end
+end
+-- Creates a cloned hierarchy of the cached groups which match a particular key and value
+local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear)
+	if cacheContainer then
+		MainRoot = app:GetDataCache();
+		UnsortedRoot = app:GetWindow("Unsorted").data;
+		wipe(ClonedHierarchyGroups);
+		wipe(ClonedHierarachyMapping);
+		local parent, thing;
+		if value then
+			local sources = cacheContainer[value];
+			-- for each source of each Thing with the value
+			for _,source in ipairs(sources) do
+				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+				if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
+					-- find/clone the expected parent group in hierachy
+					parent = MatchOrCloneParentInHierarchy(source.parent);
+					-- clone the Thing into the cloned parent
+					thing = clear and CreateObject(source, true) or CreateObject(source);
+					-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
+					thing.sym = nil;
+					thing.sourceParent = nil;
+					-- need to map the cloned Thing also since it may end up being a parent of another Thing
+					ClonedHierarachyMapping[source] = thing;
+					NestObject(parent, thing);
+				end
+			end
+		else
+			for id,sources in pairs(cacheContainer) do
+				-- for each source of each Thing
+				for _,source in ipairs(sources) do
+					-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
+					if IncludeUnavailableRecipes or not source.spellID or IgnoreBoEFilter(source) then
+						-- find/clone the expected parent group in hierachy
+						parent = MatchOrCloneParentInHierarchy(source.parent);
+						-- clone the Thing into the cloned parent
+						thing = clear and CreateObject(source, true) or CreateObject(source);
+						-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
+						thing.sym = nil;
+						thing.sourceParent = nil;
+						-- need to map the cloned Thing also since it may end up being a parent of another Thing
+						ClonedHierarachyMapping[source] = thing;
+						NestObject(parent, thing);
+					end
+				end
+			end
+		end
+		return ClonedHierarchyGroups;
+	end
+end
+-- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
+-- should additionally clear their contents when being cloned
+function app:BuildSearchResponse(groups, field, value, clear)
+	if groups then
+		-- app.PrintDebug("BSR:",field,value,clear)
+		SetRescursiveFilters();
+		local cacheContainer = SearchForFieldContainer(field);
+		if cacheContainer then
+			return BuildSearchResponseViaCachedGroups(cacheContainer, field, value, clear);
+		end
+		if value then
+			return BuildSearchResponseByFieldValue(groups, field, value, clear);
+		else
+			return BuildSearchResponseByField(groups, field, clear);
+		end
+	end
+end
+end -- Search Response Logic
 
 -- Store the Custom Windows Update functions which are required by specific Windows
 (function()

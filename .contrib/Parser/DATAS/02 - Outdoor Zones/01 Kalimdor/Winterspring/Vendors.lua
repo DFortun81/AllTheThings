@@ -10,7 +10,7 @@ _.Zones =
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>
 					["coord"] = { 58.0, 63.8, WINTERSPRING },
 					["g"] = {
-						i(12836, {	-- Plans: Frostguard
+						i(12836, {	-- Plans: Frostguard (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -68,7 +68,7 @@ _.Zones =
 					["description"] = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths'.",
 					["coord"] = { 60.2, 50.2, WINTERSPRING },
 					["g"] = {
-						i(142357),	-- Plans: Dawn's Edge
+						i(142357),	-- Plans: Dawn's Edge (RECIPE!)
 					},
 				}),
 				n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>

@@ -88,7 +88,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					r(252374),	--
 					r(252375),	--
 				})),
-				
+
 				-- 8.2.0
 				tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 8.2.0"} }, {
 					-- Recipe items
@@ -137,26 +137,46 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		prof(BLACKSMITHING, {
 			-- Classic
 			tier(CLASSIC_TIER, {
-				i(12817),	-- Plans: Bleakwood Hew
-				i(12831),	-- Plans: Blood Talon
-				i(12832),	-- Plans: Darkspear
-				i(12818),	-- Plans: Inlaid Thorium Hammer
-				i(6734),	-- Plans: Ironforge Chain
-				i(6736),	-- Plans: Ironforge Gauntlets
-				i(7977),	-- Plans: Mithril Scale Gloves
-				i(5577),	-- Plans: Rough Bronze Bracers
-				i(12826),	-- Plans: Rune Edge
-				i(12816),	-- Plans: Thorium Greatsword
+				-----------------
+				-- PATCH 0.5.3 --
+				-----------------
+				--0.5.3
+				i(5577),	-- Plans: Rough Bronze Bracers (RECIPE!)
+				r(6470),	-- Tiny Bronze Key (RECIPE!)
+				r(6471),	-- Tiny Iron Key (RECIPE!)
+				-- 0.5.5
+				i(6734),	-- Plans: Ironforge Chain (RECIPE!)
+				i(6736),	-- Plans: Ironforge Gauntlets (RECIPE!)
+				-- 0.7.0
+				i(7977),	-- Plans: Mithril Scale Gloves (RECIPE!)
+				-- 1.0.0
+				i(12831),	-- Plans: Blood Talon (RECIPE!)
+				i(12818),	-- Plans: Inlaid Thorium Hammer (RECIPE!)
+				i(12826),	-- Plans: Rune Edge (RECIPE!)
+				i(12816),	-- Plans: Thorium Greatsword (RECIPE!)
+				i(12817),	-- Plans: Bleakwood Hew (RECIPE!)
+				i(12832),	-- Plans: Darkspear (RECIPE!)
+				-- ??
+				i(22705),	-- Plans: Icebane Bracers (RECIPE!)
+				i(22703),	-- Plans: Icebane Breastplate (RECIPE!)
+				i(22704),	-- Plans: Icebane Gauntlets (RECIPE!)
+				-- #if BEFORE TBC
+				i(12698),	-- Dawnbringer Shoulders (Added in TBC)
+				-- #endif
 			}),
 			tier(TBC_TIER, {
 				-- 2.4.0
 				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 2.4.0"} }, {
-					i(66102),	-- Plans: Elementium Shield Spike
-					i(35529),	-- Plans: Dawnsteel Bracers
-					i(35530),	-- Plans: Dawnsteel Shoulders
-					i(35532),	-- Plans: Swiftsteel Shoulders
-					i(35531),	-- Plans: Swiftsteel Bracers
-					i(35555),	-- Plans: Sunblessed Breastplate
+					-- i(66102),	-- Plans: Elementium Shield Spike WIERD?! Commented /B
+					i(35529),	-- Plans: Dawnsteel Bracers (RECIPE!)
+					i(35530),	-- Plans: Dawnsteel Shoulders (RECIPE!)
+					i(35553),	-- Hard Khorium Battlefists (RECIPE!)
+					i(35554),	-- Hard Khorium Battleplate (RECIPE!)
+					i(35555),	-- Sunblessed Breastplate (RECIPE!)
+					i(35556),	-- Sunblessed Gauntlets (RECIPE!)
+					i(35532),	-- Plans: Swiftsteel Shoulders (RECIPE!)
+					i(35531),	-- Plans: Swiftsteel Bracers (RECIPE!)
+
 				})),
 			}),
 			tier(CATA_TIER, {

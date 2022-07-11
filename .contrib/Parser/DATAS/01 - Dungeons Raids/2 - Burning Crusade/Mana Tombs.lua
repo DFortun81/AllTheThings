@@ -170,7 +170,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(22543, {	-- Formula: Enchant Boots - Fortitude (RECIPE!)
 					["cr"] = 18317,	-- Ethereal Priest
 				}),
-				i(23615, {	-- Plans: Swiftsteel Gloves
+				i(23615, {	-- Plans: Swiftsteel Gloves (RECIPE!)
 					["cr"] = 18314,	-- Nexus Stalker
 				}),
 			}),

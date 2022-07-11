@@ -770,16 +770,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 				}),
-				q(2761, {	-- Smelt On, Smelt Off
+				q(2761, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- Smelt On, Smelt Off
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, NORTHERN_STRANGLETHORN },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(7983)),	-- Plans: Ornate Mithril Pants
+						i(7983),	-- Plans: Ornate Mithril Pants
 					},
-				}),
+				})),
 				q(26344, {	-- Some Assembly Required
 					["provider"] = { "n", 2495 },	-- Drizzlik
 					["coord"] = { 43.6, 23.4, NORTHERN_STRANGLETHORN },
@@ -874,16 +874,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(131590),	-- Salt-Cured Mantle
 					},
 				}),
-				q(2763, {	-- The Art of the Imbue
-					["u"] = REMOVED_FROM_GAME,
+				q(2763, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Art of the Imbue
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, NORTHERN_STRANGLETHORN },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(7985)),	-- Plans: Ornate Mithril Shoulders
+						i(7985),	-- Plans: Ornate Mithril Shoulders (RECIPE!)
 					},
-				}),
+				})),
 				q(615, {	-- The Captain's Cutlass
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -941,16 +940,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
-				q(2762, {	-- The Great Silver Deceiver
-					["u"] = REMOVED_FROM_GAME,
+				q(2762, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3" } }, {	-- The Great Silver Deceiver
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, NORTHERN_STRANGLETHORN },
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(7984)),	-- Plans: Ornate Mithril Gloves
+						i(7984),	-- Plans: Ornate Mithril Gloves (RECIPE!)
 					},
-				}),
+				})),
 				q(338, {	-- The Green Hills of Stranglethorn
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
@@ -1255,7 +1253,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(12250, {	-- Midnight Axe
 							["isLimited"] = true,
 						}),
-						i(12164, {	-- Plans: Massive Iron Axe
+						i(12164, {	-- Plans: Massive Iron Axe (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1290,7 +1288,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
 						}),
-						i(12164, {	-- Plans: Massive Iron Axe
+						i(12164, {	-- Plans: Massive Iron Axe (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
