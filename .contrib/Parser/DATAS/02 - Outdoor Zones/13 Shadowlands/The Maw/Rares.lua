@@ -86,6 +86,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60788,
 				["isDaily"] = true,
 				["coord"] = { 19.6, 42.0, THE_MAW },
+				["description"] = "Requires 3 players to summon.",
 				["g"] = {
 					i(184106),	-- Gimble
 					i(182327),	-- Dominion Etching: Loss
@@ -236,6 +237,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60666,
 				["isDaily"] = true,
 				["coord"] = { 42.2, 21.0, THE_MAW },
+				["description"] = "Requires 3 players to summon.",
 				["g"] = {
 					i(184105),	-- Gyre
 					i(182328),	-- Dominion Etching: Grief
@@ -512,6 +514,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["questID"] = 60789,
 				["isDaily"] = true,
 				["coord"] = { 28.6, 12.6, THE_MAW },
+				["description"] = "Requires 3 players to summon.",
 				["g"] = {
 					i(184107),	-- Borogove Cloak
 					i(182326),	-- Dominion Etching: Pain
