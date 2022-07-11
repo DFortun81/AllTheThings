@@ -1908,12 +1908,15 @@ applyclassicphase(PHASE_SIX,
 									},
 									r(28244, {	-- Icebane Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["requireSkill"] = BLACKSMITHING,
 									}),
 									r(28242, {	-- Icebane Breastplate (RECIPE!)
 										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+										["requireSkill"] = BLACKSMITHING,
 									}),
 									r(28243, {	-- Icebane Gauntlets (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["requireSkill"] = BLACKSMITHING,
 									}),
 									{
 										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
