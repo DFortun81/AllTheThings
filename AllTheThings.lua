@@ -1038,7 +1038,6 @@ end
 		[2533] = 197,	-- Kul Tiran Tailoring [8.0.1]
 		[2759] = 197,	-- Shadowlands Tailoring [9.0.1]
 	};
-	app.ProfessionMaps = tradeSkillMap;
 	app.GetBaseTradeSkillID = function(skillID)
 		return tradeSkillMap[skillID] or skillID;
 	end
@@ -16998,8 +16997,8 @@ local DynamicCategory_Nested = function(self)
 end
 
 function app:GetDataCache()
-	app.PrintDebug("Start app.GetDataCache")
-	app.PrintMemoryUsage()
+	-- app.PrintDebug("Start app.GetDataCache")
+	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
 					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
@@ -17609,16 +17608,16 @@ function app:GetDataCache()
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
-	app.PrintMemoryUsage("Prime.Data Ready")
+	-- app.PrintMemoryUsage("Prime.Data Ready")
 	local primeWindow = app:GetWindow("Prime");
 	primeWindow:SetData(allData);
-	app.PrintMemoryUsage("Prime Window Data Set")
+	-- app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
-	app.PrintMemoryUsage()
-	app.PrintDebug("Begin Cache Prime")
+	-- app.PrintMemoryUsage()
+	-- app.PrintDebug("Begin Cache Prime")
 	CacheFields(allData);
-	app.PrintDebugPrior("Ended Cache Prime")
-	app.PrintMemoryUsage()
+	-- app.PrintDebugPrior("Ended Cache Prime")
+	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	allData = {};
@@ -18050,8 +18049,8 @@ function app:GetDataCache()
 	app.CacheHeirlooms();
 
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
-	app.PrintDebug("Finished app.GetDataCache")
-	app.PrintMemoryUsage()
+	-- app.PrintDebug("Finished app.GetDataCache")
+	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
 		-- app.PrintDebug("Cached GetDataCache")
 		return app:GetWindow("Prime").data;
