@@ -1269,16 +1269,18 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									},
 								}),
 								q(61130, {	-- RSVP: Sika
-								--	available for me after Week 5 Ember Court (1,708 Friendly, not sure if that matters)
 									["provider"] = { "n", 166577 },	-- Sika
 									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 52.7, 82.6, BASTION },
 									["g"] = {
 										i(176125),	-- RSVP: Sika
+										i(180965),	-- Adonas's Promissory Note
+										i(180967),	-- Ikaran's Promissory Note
+										i(180966),	-- Leda's Promissory Note
+										i(180968),	-- Sophone's Promissory Note
 									},
 								}),
 								q(60916, {	-- RSVP: Stonehead
-								--	was available for me after doing Week 2 Ember Court
 									["provider"] = { "n", 157199 },	-- Stonehead
 									["isDaily"] = true,
 									["coord"] = { 38.9, 66.0, REVENDRETH },
@@ -2382,6 +2384,7 @@ root("HiddenQuestTriggers", {
 
 			q(61930),	-- Triggered after Restock: Medic's Tent
 			q(61936),	-- Triggered after Restock: Surveillance
+			q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
 			--q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
 			q(59691),	-- "The Party Herald"
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)

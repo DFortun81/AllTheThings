@@ -210,6 +210,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 					i(181799),	-- Extra Large Hat
 					i(182702),	-- Phial of Black Muck Dye
+					i(182163),	-- Strength of Blood
 					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat (RECIPE!)
 						["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
 						["timeline"] = { "added 9.1.5" },

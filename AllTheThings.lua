@@ -301,6 +301,11 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+local indexOf = function(arr, value)
+	for i,value2 in ipairs(arr) do
+		if value2 == value then return i; end
+	end
+end
 
 -- Iterative Function Runner
 do
@@ -5721,6 +5726,9 @@ fieldConverters = {
 	["questID"] = cacheQuestID,
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
+	["otherQuestData"] = function(group, value)
+		CacheFields(value);
+	end,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
@@ -8255,9 +8263,53 @@ app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 app.CreateQuestWithFactionData = function(t)
-	local questData = app.FactionID == Enum.FlightPathFaction.Horde and t.hqd or t.aqd;
+	local questData, otherQuestData;
+	if app.FactionID == Enum.FlightPathFaction.Horde then
+		questData = t.hqd;
+		otherQuestData = t.aqd;
+		otherQuestData.r = Enum.FlightPathFaction.Alliance;
+	else
+		questData = t.aqd;
+		otherQuestData = t.hqd;
+		otherQuestData.r = Enum.FlightPathFaction.Horde;
+	end
+
+	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
+
+	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
-	return setmetatable(t, app.BaseQuest);
+	rawset(t, "r", app.FactionID);
+	local original = setmetatable(t, app.BaseQuest);
+	if not otherQuestData.questID or otherQuestData.questID == original.questID then
+		setmetatable(otherQuestData, { __index = t });
+		rawset(t, "otherQuestData", otherQuestData);
+		return original;
+	else
+		setmetatable(otherQuestData, app.BaseQuest);
+		for key,value in pairs(t) do
+			if not rawget(otherQuestData, key) then
+				rawset(otherQuestData, key, value);
+			end
+		end
+		local oldOnUpdate = original.OnUpdate;
+		original.OnUpdate = function(t)
+			otherQuestData.parent = t.parent;
+			CacheFields(otherQuestData);
+			local index = indexOf(t.parent.g, t);
+			if index then
+				tinsert(t.parent.g, index + 1, otherQuestData);
+			else
+				tinsert(t.parent.g, otherQuestData);
+			end
+			if oldOnUpdate then
+				t.OnUpdate = oldOnUpdate;
+				return oldOnUpdate(t);
+			else
+				t.OnUpdate = nil;
+			end
+		end
+		return original;
+	end
 end
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)

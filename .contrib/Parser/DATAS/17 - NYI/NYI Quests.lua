@@ -3538,7 +3538,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(50946),	--
 				-- 8.0.1.26095
 				q(50971),	--
-				q(50999),	-- Work Order: Riverbud
 				q(51078),	-- Azerite Madness
 				-- 8.0.1.26131
 				q(51141),	--
@@ -5521,7 +5520,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61932),	--
 				q(61934),	--
 				q(61938),	--
-				q(61940),	--
 				q(61941),	--
 				q(61964, { ["name"] = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
 				-- 9.0.1.35282

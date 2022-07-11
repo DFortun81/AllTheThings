@@ -59,12 +59,35 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14525,	-- Stoma the Ancient
 					["sourceQuest"] = 7633,	-- An Introduction
 					["coord"] = { 47, 24.48, FELWOOD },
+					-- #if AFTER WRATH
+					["maps"] = { BURNING_STEPPES },
+					-- #endif
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 30, 60),
-					["cost"] = {
-						{ "i", 18705, 1 },	-- Mature Black Dragon Sinew
-					},
+					-- #if BEFORE WRATH
+					["cost"] = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
+					-- #endif
 					["groups"] = {
+						-- #if AFTER WRATH
+						objective(1, {	-- 0/1 Mature Black Dragon Sinew
+							["provider"] = { "i", 18705 },	-- Mature Black Dragon Sinew
+							["crs"] = {
+								7047,	-- Black Broodling
+								7040,	-- Black Dragonspawn
+								7044,	-- Black Drake
+								7041,	-- Black Wyrmkin
+								7049,	-- Flamescale Broodling
+								7042,	-- Flamescale Dragonspawn
+								7043,	-- Flamescale Wyrmkin
+								8976,	-- Hematos
+								10184,	-- Onyxia (Normal)
+								36538,	-- Onyxia (Heroic)
+								7048,	-- Scalding Broodling
+								7045,	-- Scalding Drake
+								7046,	-- Searscale Drake
+							},
+						}),
+						-- #endif
 						i(18724),	-- Enchanted Black Dragon Sinew
 					},
 				})),
@@ -315,10 +338,13 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(18422, {	-- Head of Onyxia (H)
 							["races"] = HORDE_ONLY,
 						}),
+						-- #if BEFORE WRATH
 						i(18705, {	-- Mature Black Dragon Sinew
+							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { HUNTER },
 							["lvl"] = 60,
 						}),
+						-- #endif
 						i(17966),	-- Onyxia Hide Backpack (Bag)
 						i(17068),	-- Deathbringer
 						i(17075),	-- Vis'kag the Bloodletter

@@ -10,10 +10,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			n(ARMOR, bubbleDownSelf({ ["description"] =  "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 				-- Quests / Rares ?
 				i(160378),	-- Stormchaser Clutch
-				i(106163),	-- Frostwolf Wind-Talker Robe	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106142),	-- Frostwolf Scout's Tunic	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106166),	-- Frostwolf Ringmail Armor	-- rewarded by some WoD quest (Frostfire Ridge?)
-				i(106147),	-- Forstwolf Stalwart Chestpiece	-- rewarded by some WoD quest (Frostfire Ridge?)
 				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
 
 				-- PvP (probably from some Ensemble)
@@ -103,7 +99,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(50768),	--
-				q(50986),	-- Work Order: Sea Stalk
 				q(51692),	--
 				q(52402),	-- Work Order: Viridium
 				q(52934),	--
@@ -140,7 +135,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55238),	--
 				-- 8.2.0
 				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
-				q(54867),	--
 				q(54966),	--
 				q(54967),	--
 				q(54968),	--
@@ -218,7 +212,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191910),	-- Confounding Antique Cypher
 		i(191911),	-- Cosmic Creation Impetus
 		i(191927),	-- Sacred Creation Impetus
-		i(191734),	-- Motion Sick Peon's Magical Elixir
+		-- i(191734),	-- Motion Sick Peon's Magical Elixir
 		i(192438),	-- Cache of Fated Treasures (Heroic)
 		i(192437),	-- Cache of Fated Treasures (Normal)
 		i(192466),	-- Puzzling Cartel Dinar
@@ -932,14 +926,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 root("NeverImplemented", {
 	-- Maps that don't have any data but still exist in game
 	n(-24, {	-- Maps
-		m(465),		-- Le Glas
-		m(516),		-- Isle of Thunder (One of last initial scenaraio)
 		m(843),		-- Shado-Pan Showdown
-		m(892),		-- Azuremyst Isle (Argus Opening)
-		m(893),		-- Azuremyst Isle (Argus Opening)
-		m(889),		-- Arcatraz - scenario map
-		m(890),		-- Arcatraz - scenario map
-		m(1338),	-- Darkshore (Tyrande's Ascension scenario)
 		m(1335),	-- Cooking: Impossible
 	}),
 });

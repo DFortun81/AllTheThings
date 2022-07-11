@@ -278,7 +278,11 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 			}),
-			q(52421, {
+			q(50999, {	-- Work Order: Riverbud
+				["isWorldQuest"] = true,
+				["races"] = HORDE_ONLY,
+			}),
+			q(52421, {	-- Work Order: Shimmerscale Diving Helmet
 				["requireSkill"] = LEATHERWORKING,
 				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,

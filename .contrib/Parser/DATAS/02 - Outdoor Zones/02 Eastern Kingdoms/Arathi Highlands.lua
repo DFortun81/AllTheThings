@@ -106,6 +106,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				fp(601, {	-- Galen's Fall, Arathi
 					["cr"] = 43104,	-- Rhoda Bowers <Bat Handler>
 					["coord"] = { 13.4, 34.8, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(17, {	-- Hammerfall, Arathi
@@ -349,7 +350,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
 					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
 					["timeline"] = { "removed 4.0.3" },
-					["isYearly"] = true,
 					["lvl"] = 30,
 				}),
 				q(667, {	-- Death From Below
@@ -1998,6 +1998,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
+					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				i(1993, {	-- Ogremind Ring

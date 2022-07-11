@@ -38,25 +38,25 @@ root("Promotions", {
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
 
-		-- Chinese & Taiwan Only
+		-- Chinese & Taiwan Servers only until 5.4.1
 		ach(3636, {	-- Jade Tiger
 			["description"] = "Chinese & Taiwan Only",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
 		i(46894, {	-- Enchanted Jade (Jade Tiger)
-			["description"] = "Chinese & Taiwan Only",
+			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
 		i(49664, {	-- Enchanted Purple Jade (Zipao Tiger)
-			["description"] = "Chinese & Taiwan Only",
+			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
 			["timeline"] = { "added 4.0.3.13287" },
 		}),
 		i(34518, {	-- Golden Pig Coin
-			["description"] = "Chinese & Taiwan Only",
+			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
 			["timeline"] = { "added 2.3.0" },
 		}),
 		i(34519, {	-- Silver Pig Coin
-			["description"] = "Chinese & Taiwan Only",
+			["description"] = "Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",
 			["timeline"] = { "added 2.3.0" },
 		}),
 	})),

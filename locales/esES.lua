@@ -770,7 +770,8 @@ for key,value in pairs({
 		[-542] = "La apertura del Portal Oscuro",					-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "Pase para el Portal Oscuro",						-- Dark Portal Pass
-		[-580] = "The Great Push: Temporada 2",						-- The Great Push: Season 2
+		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-581] = "The Great Push: Temporada 2",						-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -940,8 +941,10 @@ for key,value in pairs({
 	[269] = "Barrica de Cerveza del Trueno custodiado",	-- Guarded Thunder Ale Barrel
 	[270] = "Barrica de Cerveza del Trueno sin vigilar",	-- Unguarded Thunder Ale Barrel
 	[711] = "¡Se busca!",	-- Wanted!
+	[1557] = "Mesa de cena de Lillith",	-- Lillith's Dinner Table
 	[1561] = "Cajón sellado",	-- Sealed Crate
 	[1585] = "Carga explosiva",	-- Explosive Charge
+	[1586] = "Cajón de velas",	-- Crate of Candles
 	[1593] = "Barco cargado de cadáveres",	-- Corpse Laden Boat
 	[1599] = "Tumba poco profunda",	-- Shallow Grave
 	[1609] = "Catapulta Faucedraco",	-- Dragonmaw Catapult
@@ -1048,6 +1051,8 @@ for key,value in pairs({
 	[175320] = "SE BUSCA: ¡Viscoso!",	-- WANTED: Murkdeep!
 	[175524] = "Cristal rojo misterioso",	-- Mysterious Red Crystal
 	[175894] = "Paquete de Janice",	-- Janice's Parcel
+	[175924] = "Armario cerrado",	-- Locked Cabinet
+	[175925] = "Letrina",	-- Outhouse
 	[175926] = "Diario de la señora Dalson",	-- Mrs. Dalson's Diary
 	[175965] = "Líquido de embalsamar de Murmuhielo",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Restos humanos",	-- Human Remains
@@ -1066,6 +1071,7 @@ for key,value in pairs({
 	[176631] = "Obsequio de Menethil",	-- Menethil's Gift
 	[177289] = "Caldera de la Plaga",	-- Scourge Cauldron
 	[177491] = "Barrica de termitas",	-- Termite Barrel
+	[177667] = "Pergamino roto",	-- Torn Scroll
 	[177787] = "Cuaderno de bitácora de Masatormento",	-- Rackmore's Log
 	[177904] = "Cartel de Se busca: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Piedra de las profundidades",	-- Fathom Stone
@@ -2706,6 +2712,7 @@ for key,value in pairs({
 	[332576] = "Figurilla de gato cristalina",	-- Crystalline Cat Figurine
 	[332704] = "Cofre corrupto",	-- Corrupted Chest
 	[334216] = "Alijo del Imperio Negro",	-- Black Empire Cache
+	[335655] = "Brazo de Oonar",	-- Oonar's Arm
 	[336415] = "Pergamino desechado",	-- Discarded Scroll
 	[337237] = "Cámara perdida",	-- Lost Vault
 	[337241] = "Equipamiento oculto",	-- Stashed Equipment

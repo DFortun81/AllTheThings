@@ -272,6 +272,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 								crit(1, {	-- Dead On Their Feet
 									["achievementID"] = 15032,	-- Breaking Their Hold
 								}),
+								i(184876),	-- Cohesion Crystal
 							},
 						}),
 						q(63664, {	-- Get to the Point

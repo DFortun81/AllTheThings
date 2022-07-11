@@ -351,11 +351,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5050, {	-- Good Luck Charm
-					["sourceQuests"] = { 5049 },	-- The Jeremiah Blues
-					["provider"] = { "n", 8403 },	-- Jeremiah Payson
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(1478, {	-- Halgar's Summons
 					["qg"] = 5724,	-- Ageron Kargal
 					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
@@ -536,12 +531,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(495, {	-- The Crown of Will
 					["provider"] = { "n", 2227 },	-- Sharlindra
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(5049, {	-- The Jeremiah Blues
-					["sourceQuests"] = { 5023 },	-- Better Late Than Never
-					["provider"] = { "n", 10781 },	-- Royal Overseer Bauhaus
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),

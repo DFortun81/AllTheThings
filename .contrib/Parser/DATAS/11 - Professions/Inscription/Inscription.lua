@@ -396,6 +396,10 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(58327, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
 			r(58315, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
 			-- #endif
+			-- #if BEFORE WOD
+			r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
+			r(57215, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Death's Embrace
+			-- #endif
 		}),
 		cat(801, {	-- Cards
 			r(59503),	-- Greater Darkmoon Card
@@ -411,6 +415,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(59495),	-- Hellfire Tome
 		}),
 		n(DISCOVERY, {
+			spell(61288, {	-- Minor Inscription Research
+				r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
+			}),
 			spell(165464, {	-- Research: Ethereal Ink [NOT SOURCED]
 				r(58286, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
 				r(57265, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Health Funnel
@@ -434,6 +441,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			-- #if AFTER WOD
 			r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 			r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
 			-- #endif
 		}),
@@ -471,6 +479,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			spell(165465, {	-- Research: Ink of the Sea
 				r(56968, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 				r(56995, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+				r(57229, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 				r(56948, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+]
 			}),
 		}),
@@ -958,12 +967,18 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["sourceQuests"] = { 40058 },	--  Defense Symbology (DH)
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(129105),	-- Ley Dust
+				},
 			}),
 			q(39937, {	-- Opposites Repel (non-DH)
 				["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 				["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
 				["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
 				["coord"] = { 54.0, 15.4, AZSUNA },
+				["g"] = {
+					i(129105),	-- Ley Dust
+				},
 			}),
 			q(40060, {	-- Containing the Demon Within (DH)
 				["classes"] = { DEMONHUNTER },
@@ -1146,7 +1161,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 				["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 				["provider"] = { "n", 92195 },	-- Professor Pallin
 				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+				["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
 				["g"] = {
+					i(129204),	-- Vial of Felsoul Blood
 					r(191659),	-- Darkmoon Card of the Legion [Rank 1]
 				},
 			}),

@@ -376,8 +376,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus
-				["coords"] = { 
-					{ 55.4, 47.1, ZERETH_MORTIS },
+				["coords"] = {
+					{ 53, 47.6, ZERETH_MORTIS },
 					{ 53.4, 47.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65574,
