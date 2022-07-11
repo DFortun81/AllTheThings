@@ -6796,7 +6796,6 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Harvest Title Collections
-		-- TODO: once profiles and re-calculating account-wide data exist, can redesign this
 		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then
@@ -6820,6 +6819,17 @@ local function RefreshCollections()
 					rawset(charSpells, spellID, nil);
 				end
 			end
+		end
+		coroutine.yield();
+
+		-- Refresh Factions
+		local Search = app.SearchForObject;
+		local faction;
+		wipe(app.CurrentCharacter.Factions);
+		for factionID,_ in pairs(fieldCache["factionID"]) do
+			faction = Search("factionID", factionID);
+			-- simply reference the .saved property of each known Faction to re-calculate the character value
+			if faction and faction.saved then end
 		end
 		coroutine.yield();
 
@@ -10093,20 +10103,8 @@ local fields = {
 		return false;
 	end,
 	["collected"] = function(t)
-		local factionID = t.factionID;
-		if app.CurrentCharacter.Factions[factionID] then return 1; end
-		if t.standing >= t.maxstanding then
-			app.CurrentCharacter.Factions[factionID] = 1;
-			ATTAccountWideData.Factions[factionID] = 1;
-			return 1;
-		end
-		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
-		if friendID and not nextFriendThreshold then
-			app.CurrentCharacter.Factions[factionID] = 1;
-			ATTAccountWideData.Factions[factionID] = 1;
-			return 1;
-		end
-		if app.AccountWideReputations and ATTAccountWideData.Factions[factionID] then return 2; end
+		if t.saved then return 1; end
+		if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
@@ -10124,17 +10122,17 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		local factionID = t.factionID;
-		if app.CurrentCharacter.Factions[factionID] then return 1; end
+		if app.CurrentCharacter.Factions[factionID] then return true; end
 		if t.standing >= t.maxstanding then
 			app.CurrentCharacter.Factions[factionID] = 1;
 			ATTAccountWideData.Factions[factionID] = 1;
-			return 1;
+			return true;
 		end
 		local friendID, _, _, _, _, _, _, _, nextFriendThreshold = GetFriendshipReputation(factionID);
 		if friendID and not nextFriendThreshold then
 			app.CurrentCharacter.Factions[factionID] = 1;
 			ATTAccountWideData.Factions[factionID] = 1;
-			return 1;
+			return true;
 		end
 	end,
 	["title"] = function(t)
