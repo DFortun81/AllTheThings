@@ -1776,6 +1776,9 @@ app.MergeSkipFields = {
 	["expanded"] = true,
 	["indent"] = true,
 	["g"] = true,
+	["progress"] = true,
+	["total"] = true,
+	["visible"] = true,
 	-- 1 -> only when cloning
 	["modItemID"] = 1,
 	["u"] = 1,
@@ -17015,15 +17018,21 @@ function app:GetDataCache()
 		return group;
 	end
 
-	-- Nests Dynamic categories created with the Creator function within the Dynamic Category based on the field used to cache groups.
+	-- Nests Dynamic categories created based on the field used to cache groups.
 	-- Can indicate to keep sub-group Things if desired.
-	local function NestDynamicValueCategories(dynamicCategory, Creator, field, keepSubGroups)
+	local function NestDynamicValueCategories(dynamicCategory, field, keepSubGroups)
 		local cat;
+		local SearchForObject = app.SearchForObject;
 		local cache = fieldCache[field];
 		for id,_ in pairs(cache) do
-			cat = Creator(id);
+			-- create a cloned version of the cached object, or create a new object from the Creator
+			cat = CreateObject(SearchForObject(field, id) or { [field] = id }, true);
 			cat.parent = dynamicCategory;
 			cat.dynamic_withsubgroups = keepSubGroups;
+			-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
+			cat.maps = nil;
+			cat.sourceParent = nil;
+			cat.symlink = nil;
 			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
 		end
 		-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
@@ -17033,6 +17042,8 @@ function app:GetDataCache()
 	-- Adds all the Dynamic groups into the provided groups (g)
 	local function AddDynamicGroups(primeData)
 		local g = primeData.g;
+		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
+		app.ToggleCacheMaps(true);
 		app.print("Loading Dynamic Groups...");
 
 		-- Battle Pets - Dynamic
@@ -17057,7 +17068,7 @@ function app:GetDataCache()
 		db.parent = primeData;
 		db.sourceIgnored = true;
 		tinsert(g, db);
-		NestDynamicValueCategories(db, app.CreateFaction, "factionID", true);
+		NestDynamicValueCategories(db, "factionID", true);
 
 		-- Flight Paths (Dynamic)
 		db = {};
@@ -17091,7 +17102,7 @@ function app:GetDataCache()
 		db.parent = primeData;
 		db.sourceIgnored = true;
 		tinsert(g, db);
-		NestDynamicValueCategories(db, app.CreateProfession, "professionID");
+		NestDynamicValueCategories(db, "professionID");
 
 		-- Runeforge Powers - Dynamic
 		-- local db = app.CreateNPC(-364);
@@ -17117,7 +17128,10 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "toyID"));
 
 		-- add an OnEnd function for the FunctionRunner to print being done
-		app.FunctionRunner.OnEnd(function() app.print("Dynamic Groups Loaded"); end);
+		app.FunctionRunner.OnEnd(function()
+			app.ToggleCacheMaps();
+			app.print("Dynamic Groups Loaded");
+		end);
 	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
