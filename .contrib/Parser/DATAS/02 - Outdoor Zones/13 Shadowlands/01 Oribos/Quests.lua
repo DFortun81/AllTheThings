@@ -672,13 +672,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 
 			-- Skip Quests
-			q(62801, {	-- The Call of Fate
-				-- TODO: how does this even get completed?
-				-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
-				["sourceQuests"] = { 59770 },	-- Stand as One
-				["isBreadcrumb"] = true,
-				["lockCriteria"] = { 1, "lvl", 60 },
-			}),
 			q(62704, {	-- The Threads of Fate
 				-- Completing this Quest is what actually flags the character as a skip character (62713) if they chose that option
 				-- choosing the story option completes 62704 and picks up 60129 (stranger in an even stranger land) + 63771 (fate's reminder)
@@ -1322,6 +1315,15 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(179617),	-- Oribos Quest Leather Cloak
 				i(179618),	-- Oribos Quest Mail Cloak
 				i(179619),	-- Oribos Quest Plate Cloak
+			}),
+		}),
+		n(QUESTS, {
+			q(62801, {	-- The Call of Fate
+				-- TODO: how does this even get completed? maybe someone will report it
+				-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
+				["sourceQuests"] = { 59770 },	-- Stand as One
+				["isBreadcrumb"] = true,
+				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 		}),
 	}),

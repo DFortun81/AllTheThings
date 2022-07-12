@@ -60,6 +60,10 @@ _.Zones =
 						}),
 					},
 				}),
+				n(104481,  {	-- Ala'washte
+					["questID"] = 45514,
+					["coord"] = { 28.4, 53.8, HIGHMOUNTAIN },
+				}),
 				n(98299,  {	-- Bodash the Hoarder
 					["questID"] = 40084,
 					["coord"] = { 36.6, 16.6, HIGHMOUNTAIN },

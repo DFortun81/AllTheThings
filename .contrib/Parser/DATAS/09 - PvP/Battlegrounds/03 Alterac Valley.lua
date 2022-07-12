@@ -33,7 +33,7 @@ local OnTooltipForAlteracValley = [[function(t)
 		end
 	end
 end]];
-local REMOVED_WITH_ANNIVERSARY_15 = { "removed 8.2.5.31958" };
+local REMOVED_WITH_ANNIVERSARY_15 = { "removed 8.2.5.31958" };	-- TODO: potentially all of these things added back?
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
@@ -317,7 +317,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 65.6, 55.1, ALTERAC_MOUNTAINS },
 					-- #endif
-					["timeline"] = REMOVED_WITH_ANNIVERSARY_15,	-- NOTE: May have been added back with 9.1?
+					["timeline"] = { "removed 8.2.5.31958", "added 9.1" },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6982, {	-- Coldtooth Supplies (Alliance)

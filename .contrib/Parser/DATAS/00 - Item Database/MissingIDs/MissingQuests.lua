@@ -2261,7 +2261,6 @@ q(45427),	-- Short-Supply Reward
 q(45428),	-- Short-Supply Reward
 q(45508),	-- Durguth
 q(45509),	-- Xavrix
-q(45514),	-- Ala'washte
 q(45517),	-- Brinebeard the Risen
 q(45519),	--
 q(45521),	--

@@ -280,6 +280,18 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					}),
 				}),
+				prof(INSCRIPTION, {
+					n(QUESTS, {
+						q(27675, {	-- Forged Documents
+							["provider"] = { "i", 62056 },	-- Forged Documents
+							["requireSkill"] = INSCRIPTION,
+							["isDaily"] = true,
+							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(28393, {	-- A Dangerous Alliance
