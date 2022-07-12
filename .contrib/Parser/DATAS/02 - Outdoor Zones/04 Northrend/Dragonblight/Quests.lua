@@ -1124,10 +1124,13 @@ _.Zones =
 					},
 				}),
 				q(12112, {	-- Stiff Negotiations
+					["isBreadcrumb"] = true,
 					["coord"] = { 54.5, 23.6, DRAGONBLIGHT },
 					["provider"] = { "n", 26647 },	-- Narf
-					["sourceQuest"] = 12052,	-- Harp on This!
-					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						12052,	-- Harp on This!
+						12050,	-- Lumber Hack
+					},
 				}),
 				q(12044, {	-- Stocking Up
 					["coord"] = { 55.0, 23.4, DRAGONBLIGHT },

@@ -58,7 +58,6 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 156932 },	-- Ralia Dreamchaster
 							["sourceQuests"] = {
-								55882,	-- Message to Base [A]
 								55639,	-- Who Lurks in the Pit [A]
 							},
 						}),
@@ -67,7 +66,6 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							--["provider"] = { "n",  },	--
 							["sourceQuests"] = {
-								59947,	-- Message to Base [H]
 								59949,	-- Who Lurks in the Pit [H]
 							},
 						}),

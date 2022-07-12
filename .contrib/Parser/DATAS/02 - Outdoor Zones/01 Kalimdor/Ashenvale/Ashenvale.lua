@@ -1443,6 +1443,9 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 7, 21),
 					["timeline"] = { "added 1.11.1.10958" },
+					-- #IF AFTER 4.0.3.13277
+					["sourceQuest"] = 26449,	-- Never Again! [Horde]
+					-- #ENDIF
 					["groups"] = {
 						objective(1, {	-- 0/16 Satyr Horns
 							["provider"] = { "i", 5481 },	-- Satyr Horns

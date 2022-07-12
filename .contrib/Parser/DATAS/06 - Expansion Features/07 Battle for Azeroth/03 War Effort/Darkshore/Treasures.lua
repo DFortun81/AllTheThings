@@ -14,4 +14,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			})),
 		}),
 	}),
-}));;
+}));
+
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	n(-10057, {	-- War Effort
+		m(DARKSHORE, {
+			q(54908),	-- Opening Darkshore Cache 60.8,22.2 (TODO: move to actual object above)
+		}),
+	}),
+}));

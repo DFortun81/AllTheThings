@@ -650,7 +650,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16231,	-- Dame Auriferous
 					["sourceQuest"] = 9138,	-- Suncrown Village
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
+					-- #IF BEFORE BFA
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
+					-- #ENDIF
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 1, 11),
 					["groups"] = {
@@ -941,7 +943,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(9151, {	-- The Sanctum of the Sun
 					["qg"] = 16199,	-- Magister Darenis
 					["sourceQuests"] = {
+						-- #IF BEFORE BFA
 						9169,	-- Deactivate An'owyn
+						-- #ENDIF
 						9140,	-- Windrunner Village
 					},
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },

@@ -2693,29 +2693,6 @@ profession(COOKING, {
 	}),
 	-- #endif
 	n(QUESTS, {
-		q(384, {	-- Beer Basted Boar Ribs
-			["qg"] = 1267,	-- Ragnar Thunderbrew
-			["requireSkill"] = COOKING,
-			["races"] = ALLIANCE_ONLY,
-			-- #if AFTER CATA
-			["coord"] = { 53.9, 50.6, DUN_MOROGH },
-			["cost"] = {
-				{ "i", 2894, 1 },	-- Rhapsody Malt
-				{ "i", 60496, 4 },	-- Tender Boar Ribs
-			},
-			-- #else
-			["coord"] = { 46.8, 52.4, DUN_MOROGH },
-			["cost"] = {
-				{ "i", 2894, 1 },	-- Rhapsody Malt
-				{ "i", 2886, 6 },	-- Crag Boar Rib
-			},
-			-- #endif
-			["lvl"] = 5,
-			["groups"] = {
-				i(2888),	-- Beer Basted Boar Ribs
-				i(2889),	-- Recipe: Beer Basted Boar Ribs
-			},
-		}),
 		q(6610, {	-- Clamlette Surprise
 			-- #if AFTER CATA
 			["qg"] = 40589,	-- Dirge Quikcleave

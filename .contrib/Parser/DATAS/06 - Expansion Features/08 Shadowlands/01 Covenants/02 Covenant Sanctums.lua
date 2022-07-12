@@ -212,6 +212,15 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					i(187880),	-- Goat Soul
 					i(187862),	-- Snake Soul
 				}),
+			}),
+			-- Calling Boxes
+			n(COVENANT_CALLINGS, sharedData({
+					["sym"] = {
+						{ "select", "headerID", COVENANT_SANCTUMS },{"pop"}, -- Covenant Sanctum groups
+						{ "where", "headerID", COVENANT_CALLINGS },{"pop"},	-- Covenant Callings groups
+						{ "where", "headerID", -11 },	-- Common Box Drops
+					},
+				},{
 				-- Rare Quality Calling Rewards / Zone
 				i(181475, {	-- Bounty of the Grovewardens / Ardenweald
 					["description"] = "Rewarded by completing a Calling based in Ardenweald.",
@@ -301,7 +310,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 						}),
 					},
 				}),
-			}),
+			})),
 			n(QUESTS, {
 			--	LIVE DATA
 				q(63586, {	-- Compassion in Devotion
