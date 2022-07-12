@@ -17062,6 +17062,16 @@ function app:GetDataCache()
 		app.ToggleCacheMaps(true);
 		app.print("Loading Dynamic Groups...");
 
+		-- Artifacts (Dynamic)
+		local db = app.CreateNPC(-10067);
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "artifactID"));
+
+		-- Azerite Essences (Dynamic)
+		local db = app.CreateNPC(-852);
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
+
 		-- Battle Pets - Dynamic
 		local db = {};
 		db.text = AUCTION_CATEGORY_BATTLE_PETS;
@@ -17093,6 +17103,11 @@ function app:GetDataCache()
 		db.icon = app.asset("Category_FlightPaths");
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "flightPathID"));
+
+		-- Followers (Dynamic)
+		local db = app.CreateNPC(-101);
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "followerID"));
 
 		-- Illusions - Dynamic
 		db = {};
