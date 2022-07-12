@@ -425,22 +425,29 @@ settings.SetWindowFromProfile = function(suffix)
 			end
 		end
 		if points then
-			window:ClearAllPoints();
-			for _,point in ipairs(points) do
-				if point.Point then
-					window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
-					-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+			-- only allow setting positions for Windows which are inherently movable
+			if window:IsMovable() then
+				window:ClearAllPoints();
+				for _,point in ipairs(points) do
+					if point.Point then
+						window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y);
+						-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
+					end
 				end
+				if points.Width then
+					window:SetWidth(points.Width);
+					-- print("SetWidth",suffix,points.Width)
+				end
+				if points.Height then
+					window:SetHeight(points.Height);
+					-- print("SetHeight",suffix,points.Height)
+				end
+				window.isLocked = points.Locked;
+			else
+				-- if positions were stored accidentally for un-movable windows, clear them
+				app.print("Removed Anchors for un-movable ATT window",suffix)
+				RawSettings.Windows[suffix] = nil;
 			end
-			if points.Width then
-				window:SetWidth(points.Width);
-				-- print("SetWidth",suffix,points.Width)
-			end
-			if points.Height then
-				window:SetHeight(points.Height);
-				-- print("SetHeight",suffix,points.Height)
-			end
-			window.isLocked = points.Locked;
 		end
 	end
 end

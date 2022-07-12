@@ -15682,8 +15682,8 @@ local function RowOnClick(self, button)
 				window:Update();
 			else
 				-- Allow the First Frame to move the parent.
-				-- Toggle lock/unlock by holding Alt when clicking the header of a Window
-				if IsAltKeyDown() then
+				-- Toggle lock/unlock by holding Alt when clicking the header of a Window if it is movable
+				if IsAltKeyDown() and window:IsMovable() then
 					local locked = not window.isLocked;
 					window.isLocked = locked;
 					window:StorePosition();
