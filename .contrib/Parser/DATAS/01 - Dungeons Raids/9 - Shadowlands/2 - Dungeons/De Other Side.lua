@@ -134,6 +134,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					["crs"] = { 166608 },	--	Mueh'zala
 					["g"] = {
 						ach(14373),	-- De Other Side
+						i(182178),	-- Raptor Soul (Soulshape!)
 						i(179353),	-- Harness of Twisted Whims
 						i(179354),	-- Reality-Shatter Vambraces
 						i(179351),	-- Mueh'zala's Hexthread Sarong

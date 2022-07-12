@@ -706,7 +706,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 60.0, 63.0, UNGORO_CRATER },
 					}),
 					crit(14, {	-- Winterspring
-						["coord"] = { 62.0, 35.0, WINTERSPRING },
+						["coord"] = { 61.2, 47.2, WINTERSPRING },
 					}),
 				}),
 				ach(13341, {	-- Flame Warden of Kul Tiras (A)
@@ -754,7 +754,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 						["coord"] = { 62.0, 58.0, HELLFIRE_PENINSULA },
 					}),
 					crit(3, {	-- Nagrand
-						["coord"] = { 51.0, 34.0, NAGRAND },
+						["coord"] = { 49.6, 69.5, NAGRAND },
 					}),
 					crit(4, {	-- Netherstorm
 						["coord"] = { 31.0, 63.0, NETHERSTORM },

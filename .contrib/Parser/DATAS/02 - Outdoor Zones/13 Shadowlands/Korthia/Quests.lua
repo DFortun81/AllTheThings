@@ -799,6 +799,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 60.7, 27.9, KORTHIA },
 			}),
+			q(64040, {	-- Once More, With Healing
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 179194 },	-- Kleia
+				["isDaily"] = true,
+				["coord"] = { 61.6, 24.1, KORTHIA },
+			}),
 			q(64017, {	-- Oozing with Character (Bloop)
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -978,12 +984,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(64040, {	-- Once More, With Healing
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 179194 },	-- Kleia
-				["isDaily"] = true,
-				["coord"] = { 61.6, 24.1, KORTHIA },
 			}),
 			q(65146, {	-- Relic Hunter
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir

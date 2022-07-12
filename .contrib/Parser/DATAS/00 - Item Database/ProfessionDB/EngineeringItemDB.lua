@@ -20,3 +20,8 @@ local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 		Items[itemID] = item;
 	end
 end
+
+-- TEMP
+-- #IF NOT ANYCLASSIC
+i(11827, 15633);	-- Schematic: Lil' Smoky
+-- #ENDIF

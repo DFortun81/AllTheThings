@@ -928,10 +928,22 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 
 root("HiddenQuestTriggers", tier(BFA_TIER, {
 	inst(1179, {	-- The Eternal Palace
-		q(56948),	-- creating rank 1 essence from Aqueous Reliquaries
-		q(56949),	-- creating rank 2 essence from Aqueous Reliquaries
+		q(56948),	-- creating rank 1 Condensed Life-Force from Aqueous Reliquaries
+		q(56949),	-- creating rank 2 Condensed Life-Force from Aqueous Reliquaries
 		q(56525),	-- Killing heroic Azshara
 		q(56967),	-- Mythic: The Queen's Court
+
+		q(55754),	-- Abyssal Commander Sivara HC LootID
+		q(55757),	-- Blackwater Behemoth HC LootID
+		q(55755),	-- Radiance of Azshara HC LootID
+		q(55758),	-- Lady Ashvane HC LootID
+		q(55756),	-- Orgozoa HC LootID
+		q(55760),	-- Queen's Court HC LootID
+		q(55759),	-- Za'qul post-encounter RP
+		q(56527),	-- Queen Azshara killed (LFR)
+		q(56526),	-- Queen Azshara killed (Normal)
+		q(55761),	-- Queen Azshara killed (Heroic)
+		q(56524),	-- Queen Azshara killed (Mythic)
 	}),
 }));
 

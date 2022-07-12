@@ -7833,7 +7833,7 @@ local criteriaFuncs = {
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-        local standing = select(3, GetFactionInfoByID(factionID)) or 1;
+        local standing = app.GetCurrentFactionStandings(factionID);
 		-- app.PrintDebug(sformat("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
@@ -7842,8 +7842,8 @@ local criteriaFuncs = {
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
-		local name, _, standing = GetFactionInfoByID(factionID);
-        return sformat(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetFactionStandingText(lockStanding), name, app.GetFactionStandingText(standing));
+		local name = GetFactionInfoByID(factionID);
+        return sformat(L["LOCK_CRITERIA_FACTION_FORMAT"], app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
     end,
 };
 app.QuestLockCriteriaFunctions = criteriaFuncs;
@@ -9911,7 +9911,7 @@ end)();
 
 -- Faction Lib
 (function()
-local GetFriendshipReputation = GetFriendshipReputation;
+local GetFriendshipReputation, GetFriendshipReputationRanks = GetFriendshipReputation, GetFriendshipReputationRanks;
 local StandingByID = {
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
@@ -10017,8 +10017,23 @@ app.GetFactionStanding = function(reputationPoints)
 	end
 	return 1, 0
 end
-app.GetFactionStandingText = function(standingID)
-	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
+local function GetCurrentFactionStandings(factionID)
+	local standing, maxStanding = 0, 8;
+	local friend = GetFriendshipReputation(factionID);
+	if friend then
+		standing, maxStanding = GetFriendshipReputationRanks(factionID);
+	else
+		standing = select(3, GetFactionInfoByID(factionID));
+	end
+	return standing or 1, maxStanding;
+end
+app.GetCurrentFactionStandings = GetCurrentFactionStandings;
+-- Returns StandingText or Requested Standing
+app.GetCurrentFactionStandingText = function(factionID, requestedStanding)
+	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
+	local friendStandingText = select(7, GetFriendshipReputation(factionID));
+	-- friend factions are shifted up 2 to match regular factions at exalted
+	return app.ColorizeStandingText(standing + (friendStandingText and 2 or 0), friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = strtrim(replevel);
@@ -10136,10 +10151,10 @@ local fields = {
 		end
 	end,
 	["title"] = function(t)
+		local title = app.GetCurrentFactionStandingText(t.factionID);
 		if t.isFriend then
 			local reputation = t.reputation;
 			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
-			local title = select(7, GetFriendshipReputation(t.factionID));
 			if ceiling then
 				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 				if reputation < 42000 then
@@ -10150,7 +10165,6 @@ local fields = {
 		else
 			local reputation = t.reputation;
 			local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
-			local title = _G["FACTION_STANDING_LABEL" .. t.standing];
 			if ceiling then
 				title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 				if reputation < 42000 then
@@ -10177,13 +10191,15 @@ local fields = {
 		return ma and m and (ma - m);
 	end,
 	["standing"] = function(t)
-		return select(3, GetFactionInfoByID(t.factionID)) or 1;
+		return select(1, GetCurrentFactionStandings(t.factionID));
 	end,
 	["maxstanding"] = function(t)
 		if t.minReputation and t.minReputation[1] == t.factionID then
 			return app.GetFactionStanding(t.minReputation[2]);
 		end
-		return 8;
+		local _, maxStanding = GetCurrentFactionStandings(t.factionID);
+		rawset(t, "maxStanding", maxStanding);
+		return maxStanding;
 	end,
 	["sortProgress"] = function(t)
 		return ((t.reputation or -42000) + 42000) / 84000;
@@ -15865,29 +15881,32 @@ RowOnEnter = function (self)
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
-			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
+			local factionID = reference.minReputation[1];
+			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MINUMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
+			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
 			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
-			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
+			local factionID = reference.maxReputation[1];
+			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MAXIMUM_STANDING"]
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. L["_WITH_"] .. factionName .. "."
+			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, standingId) .. L["_WITH_"] .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
 			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
 			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
-			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
+			local factionID = reference.minReputation[1];
+			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MIN_MAX_STANDING"]
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. L["_AND"]
+			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, minStandingId) .. L["_AND"]
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. L["_WITH_"] .. factionName .. ".";
+			msg = msg .. " " .. app.GetCurrentFactionStandingText(factionID, maxStandingId) .. L["_WITH_"] .. factionName .. ".";
 			GameTooltip:AddLine(msg);
 		end
 		if reference.followerID and app.Settings:GetTooltipSetting("followerID") then GameTooltip:AddDoubleLine(L["FOLLOWER_ID"], tostring(reference.followerID)); end

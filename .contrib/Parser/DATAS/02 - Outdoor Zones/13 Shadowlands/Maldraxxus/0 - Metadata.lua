@@ -10,7 +10,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			1649,	-- Etheric Vault
 			1650,	-- Sightless Hold
 			1651,	-- The Molten Forge
-			1652,	-- Vault of Souls
+			-- 1652,	-- Vault of Souls
 			-- 1717,	-- Chill's Reach (scenario)
 		},
 	}),

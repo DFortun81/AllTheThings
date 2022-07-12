@@ -697,9 +697,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 10, 35),
+					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
+					["timeline"] = { "removed 7.3.5" },
 					-- #if AFTER 7.3.5
-					["DisablePartySync"] = true,
-					["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
+					-- ["DisablePartySync"] = true,
+					-- ["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
 					-- #endif
 				}),
 				q(26110, {	-- Just Like Old Times

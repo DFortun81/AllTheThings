@@ -1014,6 +1014,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					i(189436),	-- Schematic: Violent Poultrid
 				},
 			}),
+			q(65363, {	-- Dangerous State
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
@@ -1076,6 +1082,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
+			q(65269, {	-- Obvious Plant
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
 			q(65264, {	-- Operation: Relocation
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
@@ -1120,17 +1131,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
 			q(64964, {	-- Choose Your Fighter
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			q(65363, {	-- Dangerous State
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 184434 },	-- Mai Ber
-				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
-			}),
-			q(65269, {	-- Obvious Plant
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },

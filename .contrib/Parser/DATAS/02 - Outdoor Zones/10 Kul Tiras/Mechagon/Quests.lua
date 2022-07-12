@@ -1185,6 +1185,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, m(KUL_TIR
 			q(56203, {	-- Blueprint: TK44[DNT]
 				i(169189),	-- Blueprint: TK44[DNT]
 			}),
+			q(56333),	-- triggered after turning in 'Your First Charge is Free!' (56320)
 			q(55742),	-- Bundle of Corroded Parts
 			q(56071),	-- De-Synced Vibro Blade
 			q(56072),	-- De-Synced Vibro Blade

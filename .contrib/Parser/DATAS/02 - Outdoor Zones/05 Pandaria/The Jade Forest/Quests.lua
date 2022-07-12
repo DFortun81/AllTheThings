@@ -190,7 +190,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30065, {	-- Arrows of Fortune
-					["u"] = REMOVED_FROM_GAME,
+					-- maybe not required?
+					["sourceQuests"] = {
+						31376,	-- Attack At The Temple of the Jade Serpent (A)
+						31377,	-- Attack At The Temple of the Jade Serpent (H)
+					},
 					["provider"] = { "n", 57324 },	-- Elder Sage Tai-Feng
 					["coord"] = { 53.8, 61.8, THE_JADE_FOREST },
 					["isDaily"] = true,

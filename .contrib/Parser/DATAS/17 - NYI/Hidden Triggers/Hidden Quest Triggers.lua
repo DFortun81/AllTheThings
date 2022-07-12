@@ -2271,18 +2271,6 @@ root("HiddenQuestTriggers", {
 		q(55024),	-- LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
 		q(55025),	-- triggered after killing Conclave on normal
 
-		--	Eternal Palace
-		q(55754),	-- Abyssal Commander Sivara HC LootID
-		q(55757),	-- Blackwater Behemoth HC LootID
-		q(55755),	-- Radiance of Azshara HC LootID
-		q(55758),	-- Lady Ashvane HC LootID
-		q(55756),	-- Orgozoa HC LootID
-		q(55760),	-- Queen's Court HC LootID
-		q(55759),	-- Za'qul post-encounter RP
-		q(56527),	-- Queen Azshara killed (LFR)
-		q(56526),	-- Queen Azshara killed (Normal)
-		q(55761),	-- Queen Azshara HC LootID
-
 		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
 		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID
 		q(56962),	-- Radiance of Azshara Aqueous Reliquary NHC? LootID

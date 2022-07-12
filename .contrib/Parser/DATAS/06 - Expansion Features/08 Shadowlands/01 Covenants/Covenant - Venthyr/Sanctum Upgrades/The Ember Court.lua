@@ -180,73 +180,73 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								-- Tier 1
 								q(65132, {	-- Friend of a Friend: Choofa
 									["qg"] = 168449,
-									["lockCriteria"] = { 1, "factionID", 2454.8 },	-- Choofa / Exalted
+									["lockCriteria"] = { 1, "factionID", 2454.6 },	-- Choofa / Best Friend
 								}),
 								q(65134, {	-- Friend of a Friend: Cryptkeeper Kassir
 									["qg"] = 168450,
-									["lockCriteria"] = { 1, "factionID", 2455.8 },	-- Cryptkeeper Kassir / Exalted
+									["lockCriteria"] = { 1, "factionID", 2455.6 },	-- Cryptkeeper Kassir / Best Friend
 								}),
 								q(65138, {	-- Friend of a Friend: Plague Deviser Marileth
 									["qg"] = 171852,
-									["lockCriteria"] = { 1, "factionID", 2461.8 },	-- Plague Deviser Marileth / Exalted
+									["lockCriteria"] = { 1, "factionID", 2461.6 },	-- Plague Deviser Marileth / Best Friend
 								}),
 								q(65140, {	-- Friend of a Friend: Sika
 									["qg"] = 171854,
-									["lockCriteria"] = { 1, "factionID", 2459.8 },	-- Sika / Exalted
+									["lockCriteria"] = { 1, "factionID", 2459.6 },	-- Sika / Best Friend
 								}),
 
 								-- Tier 2
 								q(65135, {	-- Friend of a Friend: Droman Aliothe
 									["qg"] = 171847,
-									["lockCriteria"] = { 1, "factionID", 2456.8 },	-- Droman Aliothe / Exalted
+									["lockCriteria"] = { 1, "factionID", 2456.6 },	-- Droman Aliothe / Best Friend
 								}),
 								q(65136, {	-- Friend of a Friend: Grandmaster Vole
 									["qg"] = 171848,
-									["lockCriteria"] = { 1, "factionID", 2457.8 },	-- Grandmaster Vole / Exalted
+									["lockCriteria"] = { 1, "factionID", 2457.6 },	-- Grandmaster Vole / Best Friend
 								}),
 								q(65137, {	-- Friend of a Friend: Kleia & Pelagos
 									["qg"] = 171851, -- Pelagos -- TODO: maybe either?
-									["lockCriteria"] = { 1, "factionID", 2458.8 },	-- Kleia & Pelagos / Exalted
+									["lockCriteria"] = { 1, "factionID", 2458.6 },	-- Kleia & Pelagos / Best Friend
 								}),
 								q(65141, {	-- Friend of a Friend: Stonehead
 									["qg"] = 171856,
-									["lockCriteria"] = { 1, "factionID", 2460.8 },	-- Stonehead / Exalted
+									["lockCriteria"] = { 1, "factionID", 2460.6 },	-- Stonehead / Best Friend
 								}),
 
 								-- Tier 3
 								q(65128, {	-- Friend of a Friend: Alexandros Mograine
 									["qg"] = 171833,
-									["lockCriteria"] = { 1, "factionID", 2450.8 },	-- Alexandros Mograine / Exalted
+									["lockCriteria"] = { 1, "factionID", 2450.6 },	-- Alexandros Mograine / Best Friend
 								}),
 								q(65129, {	-- Friend of a Friend: Hunt-Captain Korayn
 									["qg"] = 171836,
-									["lockCriteria"] = { 1, "factionID", 2451.8 },	-- Hunt-Captain Korayn / Exalted
+									["lockCriteria"] = { 1, "factionID", 2451.6 },	-- Hunt-Captain Korayn / Best Friend
 								}),
 								q(65130, {	-- Friend of a Friend: Polemarch Adrestes
 									["qg"] = 168447,
-									["lockCriteria"] = { 1, "factionID", 2452.8 },	-- Polemarch Adrestes / Exalted
+									["lockCriteria"] = { 1, "factionID", 2452.6 },	-- Polemarch Adrestes / Best Friend
 								}),
 								q(65131, {	-- Friend of a Friend: Rendle & Cudgelface
 									["qg"] = 171839,	-- Rendle -- TODO: maybe either?
-									["lockCriteria"] = { 1, "factionID", 2453.8 },	-- Rendle & Cudgelface / Exalted
+									["lockCriteria"] = { 1, "factionID", 2453.6 },	-- Rendle & Cudgelface / Best Friend
 								}),
 
 								-- Tier 4
 								q(65121, {	-- Friend of a Friend: Baroness Vashj
 									["qg"] = 168444,
-									["lockCriteria"] = { 1, "factionID", 2446.8 },	-- Baroness Vashj / Exalted
+									["lockCriteria"] = { 1, "factionID", 2446.6 },	-- Baroness Vashj / Best Friend
 								}),
 								q(65123, {	-- Friend of a Friend: Lady Moonberry
 									["qg"] = 171830,
-									["lockCriteria"] = { 1, "factionID", 2447.8 },	-- Lady Moonberry / Exalted
+									["lockCriteria"] = { 1, "factionID", 2447.6 },	-- Lady Moonberry / Best Friend
 								}),
 								q(65124, {	-- Friend of a Friend: Mikanikos
 									["qg"] = 171831,
-									["lockCriteria"] = { 1, "factionID", 2448.8 },	-- Mikanikos / Exalted
+									["lockCriteria"] = { 1, "factionID", 2448.6 },	-- Mikanikos / Best Friend
 								}),
 								q(65126, {	-- Friend of a Friend: The Countess
 									["qg"] = 165269,
-									["lockCriteria"] = { 1, "factionID", 2449.8 },	-- The Countess / Exalted
+									["lockCriteria"] = { 1, "factionID", 2449.6 },	-- The Countess / Best Friend
 								}),
 							})),
 						}),
@@ -1468,6 +1468,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["sourceQuests"] = { 61764 },	-- Dredging up a Name
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
 									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 184446, 1 } },	-- 1x Vial of Blue Muck Dye
 								}),
 								q(61763, {	-- Dredging Up an Assistant
 									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
@@ -1574,6 +1575,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											["achievementID"] = 14683,	-- Dredger Style
 										}),
 									},
+								}),
+								q(64509, {	-- Stylish Cover
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["cost"] = { { "i", 187256, 1 } },	-- Hips' Spare Fedora
 								}),
 								q(62176, {	-- The Spikey Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant

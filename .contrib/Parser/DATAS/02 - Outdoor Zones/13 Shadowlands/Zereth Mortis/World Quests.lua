@@ -10,9 +10,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65232, {	-- Annelid-ilation
 				["coord"] = { 57.2, 66.5, ZERETH_MORTIS },
 			}),
-			--q(65119, {	-- Automa Ops
-			--	["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
-			--}),
+			q(65119, {	-- Automa Ops
+				["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
+			}),
 			--q(65117, {	-- Bad Samples
 			--	["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
 			--}),
@@ -75,9 +75,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65407, {	-- Pattern Recognition
 				["coord"] = { 52.4, 57.1, ZERETH_MORTIS },
 			}),
-			--q(65414, {	-- Perplexing Problem
-			--	["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
-			--}),
+			q(65414, {	-- Perplexing Problem
+				["coord"] = { 63.1, 36.5, ZERETH_MORTIS },
+			}),
 			q(65415, {	-- Perplexing Problem
 				["coord"] = { 47.6, 39.0, ZERETH_MORTIS },
 			}),
@@ -93,9 +93,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65404, {	-- Puzzling It Out
 				["coord"] = { 59.1, 36.7, ZERETH_MORTIS },
 			}),
-			--q(65410, {	-- Puzzling Situation
-			--	["coord"] = { 55.7, 50, ZERETH_MORTIS },
-			--}),
+			q(65410, {	-- Puzzling Situation
+				["coord"] = { 55.7, 50, ZERETH_MORTIS },
+			}),
 			q(65411, {	-- Puzzling Situation
 				["coord"] = { 35.2, 59.1, ZERETH_MORTIS },
 			}),

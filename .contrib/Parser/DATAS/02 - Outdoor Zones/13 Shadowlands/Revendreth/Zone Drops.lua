@@ -243,6 +243,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			--]]
 			}),
+			i(184446, {	-- Vial of Blue Muck Dye
+				["description"] = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
+			}),
 			i(179334),	-- Wingblade Staff
 		}),
 	}),

@@ -72,7 +72,7 @@ root("Secrets", n(86470, {	-- Pepe
 		}),
 		i(161443, {	-- A Tiny Voodoo Mask
 			["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
-			["coord"] = { 38.98, 15.80, THE_GREAT_SEAL },
+			["coord"] = { 38.98, 15.80, DAZARALOR },
 			["description"] = "Located inside the |cFFFFD700Hot House|r.",
 		}),
 		i(174865, {	-- A Tiny Winter Hat (Pepe)

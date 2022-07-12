@@ -225,7 +225,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(180855),	-- Competitor's Signet
 				},
 			}),
-			o(345456, {		-- Ritualist's Cache
+			o(355980, {		-- Ritualist's Cache
 				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
 				["questID"] = 61514,
 				["coord"] = { 64.6, 24.8, MALDRAXXUS },
@@ -321,7 +321,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					}),
 				},
 			}),
-			o(345456, {		-- Runespeaker's Trove
+			o(356535, {		-- Runespeaker's Trove
 				["description"] = "You need |cFFFFFFFFPhaeton's Key|r from Runespeaker Phaeton at |cFFFFFFFF37.8, 70.1|r to open the chest. ",
 				["questID"] = 61491,
 				["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure

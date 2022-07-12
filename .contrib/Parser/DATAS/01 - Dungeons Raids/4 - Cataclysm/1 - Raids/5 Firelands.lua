@@ -147,7 +147,7 @@ root("Instances", tier(CATA_TIER, {
 					q(29194, {	-- Through a Glass, Darkly
 						["provider"] = { "n", 52835 },	-- Tarecgosa
 						["sourceQuests"] = { 29193 },	-- On a Wing and a Prayer
-						["maps"] = { 370 },				-- The Nexus (Scenario Map) 
+						["maps"] = { 370 },				-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
 						["provider"] = { "n", 53567 },	-- Tarecgosa
@@ -225,7 +225,8 @@ root("Instances", tier(CATA_TIER, {
 						["sourceQuests"] = { 29240 },	-- Emergency Extraction
 					}),
 					q(29270, {	-- Time Grows Short
-						["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
+						-- If someone wants to re-write this description to be 'accurate' for current content, feel free
+						-- ["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
 						["provider"] = { "n", 53210 },	-- Kalecgos
 						["sourceQuests"] = { 29269 },	-- At One
 						["g"] = {

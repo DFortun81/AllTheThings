@@ -144,7 +144,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(54974),	--
 				q(56065),	--
 				q(56127),	--
-				q(56333),	--
 				q(56478),	--
 				q(56601),	--
 				q(56607),	--
@@ -158,7 +157,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56745),	--
 				q(56766),	--
 				q(56844),	--
-				q(56949),	--
 				q(57144),	--
 				-- 8.2.5
 				q(57550),	--
@@ -848,7 +846,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(184119),	-- Spare Heart
 				i(184124),	-- Spare Stomach
 				-- i(184412),	-- Title Reward: Spirestalker
-				i(184446),	-- Vial of Blue Muck Dye
 			}),
 			tier(SL_TIER, 0.5, {
 				i(185717),	-- Slumbering Spirit

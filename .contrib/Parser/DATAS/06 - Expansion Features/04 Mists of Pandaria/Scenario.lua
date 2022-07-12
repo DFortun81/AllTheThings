@@ -96,6 +96,11 @@ _.ExpansionFeatures =
 						n(ACHIEVEMENTS, {
 							ach(7271),	-- Arena of Annihilation
 							ach(7273),	-- Beat the Heat
+							ach(7272, {	-- In the Eye of the Tiger
+								crit(1),	-- Kill Cloudbender Kobo
+								crit(2),	-- Kill Maki Waterblade
+								crit(3),	-- Kill Satay Byu
+							}),
 						}),
 					},
 				}),
@@ -105,11 +110,6 @@ _.ExpansionFeatures =
 						n(ACHIEVEMENTS, {
 							ach(8016),	-- Assault on Zan'vess
 							ach(8017),	-- For the Swarm
-							ach(7272, {	-- In the Eye of the Tiger
-								crit(1),	-- Kill Cloudbender Kobo
-								crit(2),	-- Kill Maki Waterblade
-								crit(3),	-- Kill Satay Byu
-							}),
 						}),
 					},
 				}),
