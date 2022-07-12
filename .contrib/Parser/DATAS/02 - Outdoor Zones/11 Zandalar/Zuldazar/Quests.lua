@@ -940,7 +940,10 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51111, {	-- King or Prey
-				["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
+				["sourceQuests"] = {
+					47528,	-- Mistress of Lies
+					47741,	-- To Sacrifice a Loa
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 124915 },	-- King Rastakhan
 				["coord"] = { 71.0, 29.8, ZULDAZAR },
@@ -1701,6 +1704,13 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162453),	-- Shazraka's Curse Ring
 				},
 			}),
+			q(55504, {	-- Wayshrines of Zuldazar
+				["sourceQuests"] = { 55462 },	-- The Wanderer's Call
+				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
+				["races"] = HORDE_ONLY,
+				["coord"] = { 68.2, 29.6, ZULDAZAR },
+				["lvl"] = 120,
+			}),
 			q(51990, {	-- Wings for the Kraal
 				["sourceQuests"] = {
 					47311,	-- Headbutting 101
@@ -1747,6 +1757,16 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 71.4, 49.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
+			}),
+			q(50433, {	-- Zanchuli Disbanded
+				["isBreadcrumb"] = true,
+				["coord"] = { 48.6, 26.8, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 122760 },	-- Wardruid Loti
+				["sourceQuests"] = {
+					47528,	-- Mistress of Lies
+					47741,	-- To Sacrifice a Loa
+				},
 			}),
 			q(49493, {	-- Zul's Ethical Dilemma
 				["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
@@ -1899,13 +1919,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 51.6, 45.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(55504, {	-- Wayshrines of Zuldazar
-				["sourceQuests"] = { 55462 },	-- The Wanderer's Call
-				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
-				["races"] = HORDE_ONLY,
-				["coord"] = { 68.2, 29.6, ZULDAZAR },
-				["lvl"] = 120,
-			}),
 			q(49769, {	-- Wreckage of the Cataclysm
 				["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
 			}),
@@ -1915,14 +1928,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
 			}),
-			q(50433, {	-- Zanchuli Disbanded
-				["isBreadcrumb"] = true,
-				["coord"] = { 48.6, 26.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 122760 },	-- Wardruid Loti
-				["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
-			}),
-
 
 			--	unsorted
 			q(50954, {	-- Zandalar Forever!
