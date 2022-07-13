@@ -992,7 +992,6 @@ i(187176);	-- Vesper of Harmony
 i(187913);	-- Apprentice Slimemancer's Boots
 i(187705);	-- Choofa's Call
 i(188698);	-- Eagger Basket
-i(187957);	-- Encrypted Banner of the Opportune
 i(188701);	-- Fire Festival Batons
 i(188699);	-- Insulated Dancing Insoles
 i(187591);	-- Nightborne Guard's Vigilance
@@ -1014,14 +1013,20 @@ i(187834);	-- Tormented Banner of the Opportune
 i(188680);	-- Winter Veil Chorus Book
 -- NYI --
 i(187861);	-- Magical Seeds
-i(187958);	-- Shrouded Banner of the Opportune
 i(187959);	-- PH - Banner of the Opportune
+-- #if BEFORE 9.2.0
+i(187957);	-- Encrypted Banner of the Opportune
+-- #endif
+-- #if BEFORE 9.2.7
+i(187958);	-- Shrouded Banner of the Opportune
+-- #endif
 
 -----------------
 -- PATCH 9.2.0 --
 -----------------
 i(190237);	-- Broker Translocation Matrix
 i(190853);	-- Bushel of Mysterious Fruit
+i(187957);	-- Encrypted Banner of the Opportune
 i(187689);	-- Dance Dance Darkmoon
 i(188952);	-- Dominated Hearthstone
 i(190754);	-- Firim's Specimen Container

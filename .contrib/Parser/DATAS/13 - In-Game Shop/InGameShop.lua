@@ -44,6 +44,7 @@ root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
 		mount(308087),		-- Lucky Yun (MOUNT!)
 		i(147901),			-- Luminous Starseeker (MOUNT!)
 		i(122469),			-- Mystic Runesaber (MOUNT!)
+		mount(367676),		-- Nether-Gorged Greatwyrm (MOUNT!)
 		mount(347812),		-- Sapphire Skyblazer (MOUNT!)
 		i(153539, {			-- Seabraid Stallion (MOUNT!)
 			["races"] = ALLIANCE_ONLY,

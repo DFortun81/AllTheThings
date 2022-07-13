@@ -95,8 +95,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			tier(SL_TIER, 1.5, {
 				i(187861),	-- Magical Seeds (TOY!)
-				i(187958),	-- Shrouded Banner of the Opportune (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
+				-- #if BEFORE 9.2.0
+				i(187957);	-- Encrypted Banner of the Opportune (TOY!)
+				-- #endif
+				-- #if BEFORE 9.2.7
+				i(187958),	-- Shrouded Banner of the Opportune (TOY!)
+				-- #endif
 			}),
 			tier(SL_TIER, 2.0, {
 				i(190196),	-- Enlightened Hearthstone (TOY!)
