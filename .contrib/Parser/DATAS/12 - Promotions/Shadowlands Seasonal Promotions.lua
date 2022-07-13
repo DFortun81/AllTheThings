@@ -31,7 +31,7 @@ root("Promotions", {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(187958, {-- Shrouded Banner of the Opportune (TOY!)
-				["description"] = "The Great Push: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Shrouded Banner of the Opportune to use in-game!\nSign-ups close ?? ?? ?? and The Proving Grounds are on ??? (US).",
+				["description"] = "The Great Push: SL Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Shrouded Banner of the Opportune to use in-game!\nSign-ups close 5 Aug 2022 and The Proving Grounds start on 10 Aug (US).",
 			}),
 			i(187834, {		-- Tormented Banner of the Opportune (TOY!)
 				["description"] = "The Great Push: SL Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tormented Banner of the Opportune to use in-game!\nSign-ups close 29 Nov 2021 and The Proving Grounds are on 3-5 Dec (US).",
