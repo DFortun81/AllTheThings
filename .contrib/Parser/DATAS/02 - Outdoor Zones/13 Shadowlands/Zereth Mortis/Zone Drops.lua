@@ -227,7 +227,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189163),	-- Glimmer of Motion
 			i(189164),	-- Glimmer of Multiplicity
 			i(189165),	-- Glimmer of Predation
-			i(189166),	-- Glimmer of Renewal
+			i(189166, {	-- Glimmer of Renewal
+				["crs"] = {
+					182322,	-- Carnivorous Overgrowth
+					182217,	-- Carnivorous Overgrowth
+				},
+				["coords"] = {
+					{ 45.0, 73.8, ZERETH_MORTIS },
+					{ 48.6, 76.2, ZERETH_MORTIS },
+					{ 45.2, 87.8, ZERETH_MORTIS },
+					{ 47.4, 90.6, ZERETH_MORTIS },
+					{ 53.6, 90.0, ZERETH_MORTIS },
+					{ 49.2, 83.0, ZERETH_MORTIS },
+				},
+			}),
 			i(189169, {	-- Glimmer of Survival
 				["crs"] = {
 					183884,	-- Climbing Brambles
@@ -239,6 +252,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					{ 49.2, 83.0, ZERETH_MORTIS },
 					{ 49.2, 77.0, ZERETH_MORTIS },
 					{ 51.0, 84.8, ZERETH_MORTIS },
+					{ 49.5, 91.5, ZERETH_MORTIS },
 				},
 			}),
 			i(189170, {	-- Glimmer of Vigilance
