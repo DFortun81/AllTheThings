@@ -228,19 +228,36 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189164),	-- Glimmer of Multiplicity
 			i(189165),	-- Glimmer of Predation
 			i(189166),	-- Glimmer of Renewal
-			i(189169),	-- Glimmer of Survival
-			i(189170),	-- Glimmer of Vigilance
-			-- Mount Protoform
-			i(189176, {	-- Protoform Sentience Crown
-				["description"] = "Drops from Automas.",
-			}),
-			i(189180, {	-- Wind's Infinite Call
+			i(189169, {	-- Glimmer of Survival
 				["crs"] = {
-					182096,	-- Enhanced Avian
-					183674,	-- Enhanced Avian
+					183884,	-- Climbing Brambles
+					182326,	-- Creeping Brambles
+					182215,	-- Creeping Brambles
+				},
+				["coords"] = {
+					{ 44.0, 80.6, ZERETH_MORTIS },
+					{ 49.2, 83.0, ZERETH_MORTIS },
+					{ 49.2, 77.0, ZERETH_MORTIS },
+					{ 51.0, 84.8, ZERETH_MORTIS },
 				},
 			}),
+			i(189170, {	-- Glimmer of Vigilance
+			--	["description"] = "Drops from Vine-Choked Protectors & Overgrown Drifter", -- No description due translations?
+				["crs"] = {
+					182350,	-- Vine-Choked Protector
+					182364,	-- Overgrown Drifter
+				},
+				["coords"] = {
+					{ 45.4, 85.6, ZERETH_MORTIS },
+					{ 44.0, 88.6, ZERETH_MORTIS },
+					{ 50.8, 86.2, ZERETH_MORTIS },
+					{ 49.8, 90.6, ZERETH_MORTIS },
+					{ 50.8, 94.0, ZERETH_MORTIS },
+				},
+			}),
+			-- Mount Protoform
 			i(189173, {	-- Eternal Ragepearl
+				["description"] = "Most mobs in the desert drop those, top right of Zereth Mortis.",
 				["crs"] = {
 					183225,	-- Cliff Reclaimer
 					184268,	-- Discordant Sentry
@@ -250,6 +267,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					182430,	-- Fettered Gunner
 					182392,	-- Fettered Warden
 					183227,	-- Lost Rubble
+				},
+			}),
+			i(189176, {	-- Protoform Sentience Crown
+				["description"] = "Drops from Automas, very easy to farm during the Dangerous State Daily.",
+			}),
+			i(189180, {	-- Wind's Infinite Call
+				["crs"] = {
+					182096,	-- Enhanced Avian
+					183674,	-- Enhanced Avian
+				},
+				["coords"] = {
+					{ 77.2, 46.6, ZERETH_MORTIS },
+					{ 77.6, 59.0, ZERETH_MORTIS },
+					{ 51.2, 62.8, ZERETH_MORTIS },
+					{ 45.6, 64.0, ZERETH_MORTIS },
 				},
 			}),
 		}),
