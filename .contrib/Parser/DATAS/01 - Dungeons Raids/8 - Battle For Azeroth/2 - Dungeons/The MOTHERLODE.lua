@@ -11,6 +11,16 @@ _.Instances = { tier(BFA_TIER, {
 		["maps"] = { 1010 },	-- The Motherlode
 		["lvl"] = 110,
 		["g"] = {
+			n(VENDORS, {
+				n(140319, {	-- Hobart Grapplehammer
+					["description"] = "In the building directly at the end of the first road after entering the dungeon.",
+					["g"] = {
+						i(161131, {	-- Barely Stable Azerite Reactor
+							["cost"] = { { "g", 300000000 } },	-- 30k gold
+						}),
+					},
+				}),
+			}),
 			n(WORLD_QUESTS, {
 				q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
 					["lvl"] = 120,
@@ -25,7 +35,36 @@ _.Instances = { tier(BFA_TIER, {
 					["isWorldQuest"] = true,
 				}),
 			}),
+			n(ZONE_DROPS, sharedData({
+				["crs"] = {
+					136643,	-- Azerite Extractor
+					129214,	-- Coin-Operated Crowd Pummeler
+					130485,	-- Mechanized Peacekeeper
+					136139,	-- Mechanized Peacekeeper
+					133463,	-- Venture Co. War Machine
+					132713,	-- Mogul Razdunk
+				},
+				["requireSkill"] = ENGINEERING,
+			},{
+				i(161136, {	-- Azerite Forged Protection Plating
+					["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
+				}),
+				i(161137, {	-- Blast-Fired Electric Servomotor
+					["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+				}),
+				i(161132, {	-- Crush Resistant Stabilizer
+					["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
+				}),
+			})),
 			n(ZONE_DROPS, {
+				i(161138, {	-- Azerite Inspir-A-Geneering Elixir
+					["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+					["requireSkill"] = ENGINEERING,
+					["crs"] = {
+						133430,	-- Venture Co. Mastermind
+						140902,	-- Vog'rish, the Ascended
+					},
+				}),
 				i(168144, {	-- Extremely Precise Vial
 					["crs"] = {
 						133432,	-- Venture Co. Alchemist
@@ -92,7 +131,15 @@ _.Instances = { tier(BFA_TIER, {
 						i(158307),	-- Shrapnel-Dampening Chestguard
 						i(159298),	-- Venture Co. Plenipotentiary Vest
 						i(159611),	-- Razdunk's Big Red Button
-						i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
+						i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
+							["ignoreBonus"] = true,
+						}),
+						i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
+							["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
+							["requireSkill"] = ENGINEERING,
+							["ignoreBonus"] = true,
+							["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
+						}),
 					}),
 				}),
 			}),
@@ -156,7 +203,15 @@ _.Instances = { tier(BFA_TIER, {
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
-							i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
+							i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
+								["ignoreBonus"] = true,
+							}),
+							i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
+								["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
+								["requireSkill"] = ENGINEERING,
+								["ignoreBonus"] = true,
+								["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
+							}),
 						},
 					}),
 				},
@@ -228,7 +283,15 @@ _.Instances = { tier(BFA_TIER, {
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
-							i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
+							i(163708, {	-- Ironfoe (Dark Iron Dwarf Quest Item)
+								["ignoreBonus"] = true,
+							}),
+							i(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
+								["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
+								["requireSkill"] = ENGINEERING,
+								["ignoreBonus"] = true,
+								["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
+							}),
 						},
 					}),
 				},
