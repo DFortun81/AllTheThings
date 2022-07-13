@@ -90,8 +90,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Wrath|x86'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_wrath_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;WRATH;CRIEVE;ANYCLASSIC</DefineConstants>
+    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
+    <DefineConstants>TRACE;WRATH;CRIEVE;ANYCLASSIC;CLASSICBETA</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -146,6 +146,38 @@
   </Target>
   <Target Name="RenameTBCExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'TBC'">
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for TBC.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameWRATHExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'WRATH'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Wrath.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameCATAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'CATA'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Cata.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameMOPExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'MOP'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for MOP.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameWODExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'WOD'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for WOD.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameLEGIONExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'LEGION'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Legion.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameBFAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'BFA'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for BFA.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameSHADOWLANDSExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'SHADOWLANDS'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Shadowlands.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
+  </Target>
+  <Target Name="RenameDRAGONFLIGHTExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'DRAGONFLIGHT'">
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Dragonflight.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
   <ItemGroup>

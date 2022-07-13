@@ -103,7 +103,6 @@ _.WorldDrops =
 				i(15243),	-- Deadly Kris
 				i(15246),	-- Demon Blade
 				i(4088),	-- Dreadblade
-				un(REMOVED_FROM_GAME, i(3336)),	-- Flesh Piercer (Originally a World Drop)
 				i(2164),	-- Gut Ripper
 				i(15242),	-- Honed Stiletto
 				i(3184),	-- Hook Dagger

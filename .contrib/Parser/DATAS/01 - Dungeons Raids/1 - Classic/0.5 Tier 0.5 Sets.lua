@@ -1363,6 +1363,11 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Soul Ashes of the Banished
 							["provider"] = { "i", 22229 },	-- Soul Ashes of the Banished
+							["crs"] = {
+								7071,	-- Cursed Paladin
+								7072,	-- Cursed Justicar
+								7075,	-- Writhing Mage
+							},
 						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance

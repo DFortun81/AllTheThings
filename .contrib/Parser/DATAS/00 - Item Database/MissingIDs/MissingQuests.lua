@@ -45,23 +45,12 @@ q(459),	-- Demonic Thieves,		TBC: The Woodland Protector,		CLASSIC: The Woodland
 q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(500),	-- [DEPRECATED] Crushridge Bounty,		TBC: Crushridge Bounty,		CLASSIC: Crushridge Bounty
-q(510),	-- [DEPRECATED] Foreboding Plans,		TBC: Foreboding Plans,		CLASSIC: Foreboding Plans
-q(511),	-- [DEPRECATED] Encrypted Letter,		TBC: Encrypted Letter,		CLASSIC: Encrypted Letter
-q(512),	-- [DEPRECATED] Noble Deaths,		TBC: Noble Deaths,		CLASSIC: Noble Deaths
-q(514),	-- [DEPRECATED] Letter to Stormpike,		TBC: Letter to Stormpike,		CLASSIC: Letter to Stormpike
-q(522),	-- [DEPRECATED] Assassin's Contract,		TBC: Assassin's Contract,		CLASSIC: Assassin's Contract
-q(523),	-- [DEPRECATED] Baron's Demise,		TBC: Baron's Demise,		CLASSIC: Baron's Demise
-q(525),	-- Further Mysteries,		TBC: Further Mysteries,		CLASSIC: Further Mysteries
 q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(536),	-- [DEPRECATED] Down the Coast,		TBC: Down the Coast,		CLASSIC: Down the Coast
-q(537),	-- [DEPRECATED] Dark Council,		TBC: Dark Council,		CLASSIC: Dark Council
 q(538),	-- Southshore,		TBC: Southshore,		CLASSIC: Southshore
 q(540),	-- [DEPRECATED] Preserving Knowledge,		TBC: Preserving Knowledge,		CLASSIC: Preserving Knowledge
 q(542),	-- [DEPRECATED] Return to Milton,		TBC: Return to Milton,		CLASSIC: Return to Milton
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloodstone Pendant,		CLASSIC: <NYI> <TXT> Bloodstone Pendant
-q(551),	-- [DEPRECATED] The Ensorcelled Parchment,		TBC: The Ensorcelled Parchment,		CLASSIC: The Ensorcelled Parchment
-q(554),	-- [DEPRECATED] Stormpike's Deciphering,		TBC: Stormpike's Deciphering,		CLASSIC: Stormpike's Deciphering
 q(559),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
 q(560),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
 q(561),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
@@ -278,8 +267,6 @@ q(1666),	-- Marshal Haggard,		TBC: Marshal Haggard,		CLASSIC: Marshal Haggard
 q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
 q(1689),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
-q(1712),	-- Cyclonian,		TBC: Cyclonian,		CLASSIC: Cyclonian
-q(1713),	-- The Summoning,		TBC: The Summoning,		CLASSIC: The Summoning
 q(1716),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1717),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
@@ -653,7 +640,6 @@ q(6603),	-- Trouble in Winterspring!,		TBC: Trouble in Winterspring!,		CLASSIC: 
 q(6604),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
 q(6605),	-- A Strange One,		TBC: A Strange One,		CLASSIC: A Strange One
 q(6606),	-- A Little Luck,		TBC: A Little Luck,		CLASSIC: A Little Luck
-q(6681),	-- The Manor, Ravenholdt,		TBC: The Manor, Ravenholdt,		CLASSIC: The Manor, Ravenholdt
 q(6702),	-- [DEPRECATED] <TXT> SF, RFK, GNOMER, BF,		CLASSIC: [DEPRECATED] <TXT> SF, RFK, GNOMER, BF
 q(6704),	-- [DEPRECATED] <TXT> SM, RFD, ULD,		CLASSIC: [DEPRECATED] <TXT> SM, RFD, ULD
 q(6706),	-- [DEPRECATED] <TXT> ZUL, ST, MAR,		CLASSIC: [DEPRECATED] <TXT> ZUL, ST, MAR
@@ -719,9 +705,6 @@ q(8160),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines,		CLASSIC: 
 q(8161),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines,		CLASSIC: Cut Arathor Supply Lines
 q(8162),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines,		CLASSIC: Cut Arathor Supply Lines
 q(8230),	-- Collin's Test Quest,		CLASSIC: Collin's Test Quest
-q(8233),	-- A Simple Request,		TBC: A Simple Request,		CLASSIC: A Simple Request
-q(8234),	-- Sealed Azure Bag,		TBC: Sealed Azure Bag,		CLASSIC: Sealed Azure Bag
-q(8235),	-- Encoded Fragments,		TBC: Encoded Fragments,		CLASSIC: Encoded Fragments
 q(8247),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8248),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8254),	-- Cenarion Aid,		TBC: Cenarion Aid,		CLASSIC: Cenarion Aid
@@ -741,7 +724,6 @@ q(8344),	-- Windows to the Source,		TBC: Windows to the Source,		CLASSIC: Window
 q(8371),	-- Concerted Efforts,		TBC: Concerted Efforts,		CLASSIC: Concerted Efforts
 q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
-q(8412),	-- [DEPRECATED] Spirit Totem,		TBC: Spirit Totem,		CLASSIC: Spirit Totem
 q(8419),	-- An Imp's Request,		TBC: An Imp's Request,		CLASSIC: An Imp's Request
 q(8420),	-- Hot and Itchy,		TBC: Hot and Itchy,		CLASSIC: Hot and Itchy
 q(8421),	-- The Wrong Stuff,		TBC: The Wrong Stuff,		CLASSIC: The Wrong Stuff
