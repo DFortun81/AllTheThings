@@ -10448,11 +10448,8 @@ end)();
 
 -- Follower Lib
 (function()
-local C_Garrison_GetFollowerInfo = C_Garrison.GetFollowerInfo;
-local C_Garrison_GetFollowerLink = C_Garrison.GetFollowerLink;
-local C_Garrison_GetFollowerLinkByID = C_Garrison.GetFollowerLinkByID;
-local C_Garrison_IsFollowerCollected = C_Garrison.IsFollowerCollected;
-
+local C_Garrison_GetFollowerInfo,C_Garrison_GetFollowerLinkByID,C_Garrison_IsFollowerCollected =
+	  C_Garrison.GetFollowerInfo,C_Garrison.GetFollowerLinkByID,C_Garrison.IsFollowerCollected;
 local cache = app.CreateCache("followerID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -10465,6 +10462,7 @@ local function CacheInfo(t, field)
 		_t.title = info.className;
 		_t.displayID = info.displayIDs and info.displayIDs[1] and info.displayIDs[1].id;
 	end
+	_t.link = C_Garrison_GetFollowerLinkByID(id);
 	if field then return _t[field]; end
 end
 local fields = {
@@ -10490,11 +10488,7 @@ local fields = {
 		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 	["link"] = function(t)
-		if app.CurrentCharacter.Followers[t.followerID] then
-			return C_Garrison_GetFollowerLink(t.followerID);
-		else
-			return C_Garrison_GetFollowerLinkByID(t.followerID);
-		end
+		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["description"] = function(t)
 		return L["FOLLOWERS_COLLECTION_DESC"];
@@ -10502,14 +10496,19 @@ local fields = {
 	["collectible"] = function(t)
 		return app.CollectibleFollowers;
 	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
-		if app.CurrentCharacter.Followers[t.followerID] then return 1; end
-		if C_Garrison_IsFollowerCollected(t.followerID) then
-			app.CurrentCharacter.Followers[t.followerID] = 1;
-			ATTAccountWideData.Followers[t.followerID] = 1;
-			return 1;
-		end
+		if t.saved then return 1; end
 		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
+	end,
+	["saved"] = function(t)
+		local followerID = t.followerID;
+		if app.CurrentCharacter.Followers[followerID] then return true; end
+		if C_Garrison_IsFollowerCollected(followerID) then
+			app.CurrentCharacter.Followers[followerID] = 1;
+			ATTAccountWideData.Followers[followerID] = 1;
+			return true;
+		end
 	end,
 };
 app.BaseFollower = app.BaseObjectFields(fields, "BaseFollower");
