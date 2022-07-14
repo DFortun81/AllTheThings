@@ -238,7 +238,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 					},
 				},
 				-- #else
-				i(44956),	-- Goblin's Guide to Elementium
+				i(44956, {	-- Goblin's Guide to Elementium
+					["recipeID"] = 22967,	-- Smelt Elementium
+					["requireSkill"] = MINING,
+				}),
 				-- #endif
 			}),
 			e(1533,  {	-- Ebonroc
