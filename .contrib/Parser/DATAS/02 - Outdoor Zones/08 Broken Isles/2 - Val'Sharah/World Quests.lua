@@ -58,12 +58,15 @@ _.Zones =
 				q(42075),	-- Botanical Backlash
 				q(41484, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41486, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41487, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41336, {	-- Bristly Musken Hide
 					["requireSkill"] = SKINNING,

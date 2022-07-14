@@ -25,14 +25,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["sourceQuests"] = { 47189 },	-- A Nation Divided
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(12740, {	-- Full of Scrap!
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					ach(12741),	-- Giving a Scrap
-					ach(12738),	-- Holy Scrap!
-					ach(12739),	-- Scraptastic!
-				},
-			}),
 			ach(12593, {	-- Kul Tourist
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {

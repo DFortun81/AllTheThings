@@ -31,12 +31,15 @@ _.Zones =
 				}),
 				q(41481, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41482, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41483, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41529, {	-- Bushy Aethril
 					["requireSkill"] = HERBALISM,

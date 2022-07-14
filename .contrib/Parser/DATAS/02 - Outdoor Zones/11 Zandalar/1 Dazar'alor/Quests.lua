@@ -343,6 +343,9 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 44.9, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
+				["g"] = {
+					h(ach(13056)),	-- Giving a Scrap (H)
+				},
 			}),
 			q(49122, {	-- A Port in Peril
 				["sourceQuests"] = {

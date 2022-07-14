@@ -23,12 +23,15 @@ _.Zones =
 				}),
 				q(41208, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41209, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41210, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41706),	-- Briny Waters
 				q(41233, {	-- Bristled Bear Skin

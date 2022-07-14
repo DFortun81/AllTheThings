@@ -1145,6 +1145,7 @@ root("HiddenQuestTriggers", {
 	q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 	q(44871),	-- 7.1 World - 850 - Special - Moroes 1
 	q(44872),	-- 7.1 World - 850 - Special - Moroes 2
+	q(43720),	-- picking up 'Scroll of Teleport: Ravenholdt (itemid 139590) in the Uncrowned Vault'
 });
 
 -- These quests never made it in.

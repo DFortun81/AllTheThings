@@ -18,14 +18,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			ach(12758, {	-- Baiting the Enemy
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(12740, {	-- Full of Scrap!
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					ach(13056),	-- Giving a Scrap
-					ach(12738),	-- Holy Scrap!
-					ach(12739),	-- Scraptastic!
-				},
-			}),
 			ach(12614, {	-- Loa Expectations
 			--	NEEDS CONFIRMATION: for gonk/pa'ku, do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 				["description"] = "The best place to get this is in the \"Council Chambers\", where all six shrines are in one room.  Head to the coordinates provided and enter the building.  Turn left and go upstairs.  There are shrines around the perimeter of the room for each loa.",

@@ -1111,6 +1111,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
+			q(65364, {	-- Super Jiro
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 184434 },	-- Mai Ber
+				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
 			q(64854, {	-- Trappings of Success
 				["description"] = "Has Containment Trap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1148,12 +1154,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["g"] = {
 					i(189449),	-- Jiro Scan
 				},
-			}),
-			q(65364, {	-- Super Jiro
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 184434 },	-- Mai Ber
-				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
 			--]]
 		})),

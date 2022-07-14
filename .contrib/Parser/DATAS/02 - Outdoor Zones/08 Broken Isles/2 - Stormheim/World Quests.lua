@@ -29,12 +29,15 @@ _.Zones =
 				}),
 				q(41490, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41489, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41488, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41938),	-- Brothers of Skovald
 				q(46011),	-- Colossal Infernal (Invasion wq)

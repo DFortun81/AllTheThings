@@ -17,12 +17,15 @@ _.Zones =
 				q(45068),	-- Barrels o' Fun
 				q(41493, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41492, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41491, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,
+					["sym"] = {{"select","npcID",93237}},	-- Select the WQ NPC
 				}),
 				q(41447, {	-- Burning Felslate Deposits
 					["requireSkill"] = MINING,

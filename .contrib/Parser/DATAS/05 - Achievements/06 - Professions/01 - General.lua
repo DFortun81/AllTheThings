@@ -12,10 +12,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 			h(i(116249)),	-- Frostwall Mines, Level 3 [Blueprints]
 		}),
 		ach(9087),		-- Draenor Master of All
-		ach(12740, {	-- Full of Scrap!
-			ach(12739),		-- Scraptastic!
-			ach(12738),		-- Holy Scrap!
-		}),
 		ach(10587),	-- Hot Swapper
 		ach(9071, {		-- Inspector Gagetzan
 			i(114002, {	-- Encoded Message

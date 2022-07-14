@@ -598,7 +598,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 77.1, 16.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					a(ach(12741)),	-- Giving a Scrap
+					a(ach(12741)),	-- Giving a Scrap (A)
 				},
 			}),
 			q(52762, {	-- A Local Guide
