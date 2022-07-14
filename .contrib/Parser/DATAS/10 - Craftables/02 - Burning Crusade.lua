@@ -441,7 +441,9 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 					i(23841),	-- Gnomish Flame Turret
 					i(23835),	-- Gnomish Poultryizer
 					i(23825),	-- Nigh-Invulnerability Belt
-					i(30544),	-- Ultrasafe Transporter: Toshley's Station (TOY!)
+					i(30544, {	-- Ultrasafe Transporter: Toshley's Station (TOY!)
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
 				}),
 				category(185, {	-- Goggles
 					i(23829),	-- Gnomish Battle Goggles
@@ -453,7 +455,9 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
 			["groups"] = {
 				category(188, {	-- Devices
-					i(30542),	-- Dimensional Ripper - Area 52 (TOY!)
+					i(30542, {	-- Dimensional Ripper - Area 52 (TOY!)
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
 					i(23836),	-- Goblin Rocket Launcher
 				}),
 				category(185, {	-- Goggles
