@@ -131,31 +131,31 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			ach(1798),		-- Sous Chef (1798)
 			ach(1801),		-- Captain Rumsey's Lager
 			ach(1800, {		-- The Outland Gourmet
-				crit(1),		-- Delicious Chocolate Cake
-				crit(2),		-- Blackened Trout
-				crit(3),		-- Buzzard Bites
-				crit(4),		-- Clam Bar
-				crit(5),		-- Feltail Delight
-				crit(6),		-- Ravager Dog
-				crit(7),		-- Stormchops
-				crit(8),		-- Blackened Sporefish
-				crit(9),		-- Blackened Basilisk
-				crit(10),		-- Grilled Mudfish
-				crit(11),		-- Poached Bluefish
-				crit(12),		-- Broiled Bloodfin
-				crit(13),		-- Golden Fish Sticks
-				crit(14),		-- Kibler's Bits
-				crit(15),		-- Roasted Clefthoof
-				crit(16),		-- Talbuk Steak
-				crit(17),		-- Warp Burger
-				crit(18),		-- Crunchy Serpent
-				crit(19),		-- Mok'Nathal Shortribs
-				crit(20),		-- Fisherman's Feast
-				crit(21),		-- Hot Buttered Trout
-				crit(22),		-- Skullfish Soup
-				crit(23),		-- Spicy Crawdad
-				crit(24),		-- Spicy Hot Talbuk
-				crit(25),		-- Stewed Trout
+				crit(1, { ["cost"] = { { "i", 33924, 1 } } } ),		-- Delicious Chocolate Cake
+				crit(2, { ["cost"] = { { "i", 27661, 1 } } } ),		-- Blackened Trout
+				crit(3, { ["cost"] = { { "i", 27651, 1 } } } ),		-- Buzzard Bites
+				crit(4, { ["cost"] = { { "i", 30155, 1 } } } ),		-- Clam Bar
+				crit(5, { ["cost"] = { { "i", 27662, 1 } } } ),		-- Feltail Delight
+				crit(6, { ["cost"] = { { "i", 27655, 1 } } } ),		-- Ravager Dog
+				crit(7, { ["cost"] = { { "i", 33866, 1 } } } ),		-- Stormchops
+				crit(8, { ["cost"] = { { "i", 27663, 1 } } } ),		-- Blackened Sporefish
+				crit(9, { ["cost"] = { { "i", 27657, 1 } } } ),		-- Blackened Basilisk
+				crit(10, { ["cost"] = { { "i", 27664, 1 } } } ),	-- Grilled Mudfish
+				crit(11, { ["cost"] = { { "i", 27665, 1 } } } ),	-- Poached Bluefish
+				crit(12, { ["cost"] = { { "i", 33867, 1 } } } ),	-- Broiled Bloodfin
+				crit(13, { ["cost"] = { { "i", 27666, 1 } } } ),	-- Golden Fish Sticks
+				crit(14, { ["cost"] = { { "i", 33874, 1 } } } ),	-- Kibler's Bits
+				crit(15, { ["cost"] = { { "i", 27658, 1 } } } ),	-- Roasted Clefthoof
+				crit(16, { ["cost"] = { { "i", 27660, 1 } } } ),	-- Talbuk Steak
+				crit(17, { ["cost"] = { { "i", 27659, 1 } } } ),	-- Warp Burger
+				crit(18, { ["cost"] = { { "i", 31673, 1 } } } ),	-- Crunchy Serpent
+				crit(19, { ["cost"] = { { "i", 31672, 1 } } } ),	-- Mok'Nathal Shortribs
+				crit(20, { ["cost"] = { { "i", 33052, 1 } } } ),	-- Fisherman's Feast
+				crit(21, { ["cost"] = { { "i", 33053, 1 } } } ),	-- Hot Buttered Trout
+				crit(22, { ["cost"] = { { "i", 33825, 1 } } } ),	-- Skullfish Soup
+				crit(23, { ["cost"] = { { "i", 27667, 1 } } } ),	-- Spicy Crawdad
+				crit(24, { ["cost"] = { { "i", 33872, 1 } } } ),	-- Spicy Hot Talbuk
+				crit(25, { ["cost"] = { { "i", 33048, 1 } } } ),	-- Stewed Trout
 			}),
 		}),
 		ach(7328,  {	-- Ironpaw Chef(240)
@@ -247,164 +247,164 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(124),		-- Outland Cook
 		ach(14332),		-- Shadowlands Cook
 		ach(5473,  {	-- The Cataclysmic Gourmet (30)
-			crit(1),		-- Baked Rockfish
-			crit(2),		-- Basilisk Liverdog
-			crit(3),		-- Beer-Basted Crocolisk
-			crit(4),		-- Blackbelly Sushi
-			crit(5),		-- Blackened Surprise
-			crit(6),		-- Broiled Dragon Feast
-			crit(7),		-- Broiled Mountain Trout
-			crit(8),		-- Chocolate Cookie
-			crit(9),		-- Crocolisk Au Gratin
-			crit(10),		-- Darkbrew Lager
-			crit(11),		-- Delicious Sagefish Tail
-			crit(12),		-- Feathered Lure
-			crit(13),		-- Fish Fry
-			crit(14),		-- Fortune Cookie
-			crit(15),		-- Grilled Dragon
-			crit(16),		-- Hearty Seafood Soup
-			crit(17),		-- Highland Spirits
-			crit(18),		-- Lavascale Fillet
-			crit(19),		-- Lavascale Minestrone
-			crit(20),		-- Lightly Fried Lurker
-			crit(21),		-- Lurker Lunch
-			crit(22),		-- Mushroom Sauce Mudfish
-			crit(23),		-- Pickled Guppy
-			crit(24),		-- Salted Eye
-			crit(25),		-- Seafood Magnifique Feast
-			crit(26),		-- Seasoned Crab
-			crit(27),		-- Severed Sagefish Head
-			crit(28),		-- Skewered Eel
-			crit(29),		-- South Island Iced Tea
-			crit(30),		-- Starfire Espresso
-			crit(31),		-- Tender Baked Turtle
-			crit(32),		-- Whitecrest Gumbo
+			crit(1, { ["cost"] = { { "i", 62661, 1 } } } ),		-- Baked Rockfish
+			crit(2, { ["cost"] = { { "i", 62665, 1 } } } ),		-- Basilisk Liverdog
+			crit(3, { ["cost"] = { { "i", 62670, 1 } } } ),		-- Beer-Basted Crocolisk
+			crit(4, { ["cost"] = { { "i", 62668, 1 } } } ),		-- Blackbelly Sushi
+			crit(5, { ["cost"] = { { "i", 62676, 1 } } } ),		-- Blackened Surprise
+			crit(6, { ["cost"] = { { "i", 62289, 1 } } } ),		-- Broiled Dragon Feast
+			crit(7, { ["cost"] = { { "i", 62655, 1 } } } ),		-- Broiled Mountain Trout
+			crit(8, { ["cost"] = { { "i", 62680, 1 } } } ),		-- Chocolate Cookie
+			crit(9, { ["cost"] = { { "i", 62664, 1 } } } ),		-- Crocolisk Au Gratin
+			crit(10, { ["cost"] = { { "i", 62790, 1 } } } ),	-- Darkbrew Lager
+			crit(11, { ["cost"] = { { "i", 62666, 1 } } } ),	-- Delicious Sagefish Tail
+			crit(12, { ["cost"] = { { "i", 62673, 1 } } } ),	-- Feathered Lure
+			crit(13, { ["cost"] = { { "i", 62677, 1 } } } ),	-- Fish Fry
+			crit(14, { ["cost"] = { { "i", 62649, 1 } } } ),	-- Fortune Cookie
+			crit(15, { ["cost"] = { { "i", 62662, 1 } } } ),	-- Grilled Dragon
+			crit(16, { ["cost"] = { { "i", 62659, 1 } } } ),	-- Hearty Seafood Soup
+			crit(17, { ["cost"] = { { "i", 62674, 1 } } } ),	-- Highland Spirits
+			crit(18, { ["cost"] = { { "i", 62654, 1 } } } ),	-- Lavascale Fillet
+			crit(19, { ["cost"] = { { "i", 62663, 1 } } } ),	-- Lavascale Minestrone
+			crit(20, { ["cost"] = { { "i", 62651, 1 } } } ),	-- Lightly Fried Lurker
+			crit(21, { ["cost"] = { { "i", 62657, 1 } } } ),	-- Lurker Lunch
+			crit(22, { ["cost"] = { { "i", 62667, 1 } } } ),	-- Mushroom Sauce Mudfish
+			crit(23, { ["cost"] = { { "i", 62660, 1 } } } ),	-- Pickled Guppy
+			crit(24, { ["cost"] = { { "i", 62653, 1 } } } ),	-- Salted Eye
+			crit(25, { ["cost"] = { { "i", 62290, 1 } } } ),	-- Seafood Magnifique Feast
+			crit(26, { ["cost"] = { { "i", 62652, 1 } } } ),	-- Seasoned Crab
+			crit(27, { ["cost"] = { { "i", 62671, 1 } } } ),	-- Severed Sagefish Head
+			crit(28, { ["cost"] = { { "i", 62669, 1 } } } ),	-- Skewered Eel
+			crit(29, { ["cost"] = { { "i", 62672, 1 } } } ),	-- South Island Iced Tea
+			crit(30, { ["cost"] = { { "i", 62675, 1 } } } ),	-- Starfire Espresso
+			crit(31, { ["cost"] = { { "i", 62658, 1 } } } ),	-- Tender Baked Turtle
+			crit(32, { ["cost"] = { { "i", 62656, 1 } } } ),	-- Whitecrest Gumbo
 			ach(5472),		-- The Cataclysmic Gourmet (15)
 		}),
 		ach(9501,  {	-- The Draenor Gourmet
-			crit(1),		-- Blackrock Barbecue
-			crit(2),		-- Blackrock Ham
-			crit(3),		-- Braised Riverbeast
-			crit(4),		-- Calamari Crepes
-			crit(5),		-- Clefthoof Sausages
-			crit(6),		-- Fat Sleeper Cakes
-			crit(7),		-- Feast of Blood
-			crit(8),		-- Feast of the Waters
-			crit(9),		-- Fiery Calamari
-			crit(10),		-- Frosty Stew
-			crit(11),		-- Gorgrond Chowder
-			crit(12),		-- Grilled Gulper
-			crit(13),		-- Grilled Saberfish
-			crit(14),		-- Hearty Elekk Steak
-			crit(15),		-- Pan-Seared Talbuk
-			crit(16),		-- Rylak Crepes
-			crit(17),		-- Saberfish Broth
-			crit(18),		-- Skulker Chowder
-			crit(19),		-- Sleeper Surprise
-			crit(20),		-- Steamed Scorpion
-			crit(21),		-- Sturgeon Stew
-			crit(22),		-- Talador Surf and Turf
+			crit(1, { ["cost"] = { { "i", 111449, 1 } } } ),		-- Blackrock Barbecue
+			crit(2, { ["cost"] = { { "i", 111433, 1 } } } ),		-- Blackrock Ham
+			crit(3, { ["cost"] = { { "i", 111436, 1 } } } ),		-- Braised Riverbeast
+			crit(4, { ["cost"] = { { "i", 111453, 1 } } } ),		-- Calamari Crepes
+			crit(5, { ["cost"] = { { "i", 111438, 1 } } } ),		-- Clefthoof Sausages
+			crit(6, { ["cost"] = { { "i", 111444, 1 } } } ),		-- Fat Sleeper Cakes
+			crit(7, { ["cost"] = { { "i", 111457, 1 } } } ),		-- Feast of Blood
+			crit(8, { ["cost"] = { { "i", 111458, 1 } } } ),		-- Feast of the Waters
+			crit(9, { ["cost"] = { { "i", 111445, 1 } } } ),		-- Fiery Calamari
+			crit(10, { ["cost"] = { { "i", 111450, 1 } } } ),		-- Frosty Stew
+			crit(11, { ["cost"] = { { "i", 111454, 1 } } } ),		-- Gorgrond Chowder
+			crit(12, { ["cost"] = { { "i", 111441, 1 } } } ),		-- Grilled Gulper
+			crit(13, { ["cost"] = { { "i", 111456, 1 } } } ),		-- Grilled Saberfish
+			crit(14, { ["cost"] = { { "i", 111431, 1 } } } ),		-- Hearty Elekk Steak
+			crit(15, { ["cost"] = { { "i", 111434, 1 } } } ),		-- Pan-Seared Talbuk
+			crit(16, { ["cost"] = { { "i", 111437, 1 } } } ),		-- Rylak Crepes
+			crit(17, { ["cost"] = { { "i", 111455, 1 } } } ),		-- Saberfish Broth
+			crit(18, { ["cost"] = { { "i", 111446, 1 } } } ),		-- Skulker Chowder
+			crit(19, { ["cost"] = { { "i", 111452, 1 } } } ),		-- Sleeper Surprise
+			crit(20, { ["cost"] = { { "i", 111439, 1 } } } ),		-- Steamed Scorpion
+			crit(21, { ["cost"] = { { "i", 111442, 1 } } } ),		-- Sturgeon Stew
+			crit(22, { ["cost"] = { { "i", 111447, 1 } } } ),		-- Talador Surf and Turf
 		}),
 		ach(12744, {	-- The Kul Tiran Menu
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				crit(1),	-- Bountiful Captain's Feast
-				crit(2),	-- Galley Banquet
-				crit(3),	-- Grilled Catfish
-				crit(4),	-- Honey-Glazed Haunches
-				crit(5),	-- Kul Tiramisu
-				crit(6),	-- Loa Loaf
-				crit(7),	-- Mon'Dazi
-				crit(8),	-- Ravenberry Tarts
-				crit(9),	-- Sailor's Pie
-				crit(10),	-- Seasoned Loins
-				crit(11),	-- Spiced Snapper
-				crit(12),	-- Swamp Fish 'n Chips
+				crit(1, { ["cost"] = { { "i", 156526, 1 } } } ),	-- Bountiful Captain's Feast
+				crit(2, { ["cost"] = { { "i", 156525, 1 } } } ),	-- Galley Banquet
+				crit(3, { ["cost"] = { { "i", 154889, 1 } } } ),	-- Grilled Catfish
+				crit(4, { ["cost"] = { { "i", 154882, 1 } } } ),	-- Honey-Glazed Haunches
+				crit(5, { ["cost"] = { { "i", 154881, 1 } } } ),	-- Kul Tiramisu
+				crit(6, { ["cost"] = { { "i", 154887, 1 } } } ),	-- Loa Loaf
+				crit(7, { ["cost"] = { { "i", 154885, 1 } } } ),	-- Mon'Dazi
+				crit(8, { ["cost"] = { { "i", 154883, 1 } } } ),	-- Ravenberry Tarts
+				crit(9, { ["cost"] = { { "i", 154888, 1 } } } ),	-- Sailor's Pie
+				crit(10, { ["cost"] = { { "i", 154891, 1 } } } ),	-- Seasoned Loins
+				crit(11, { ["cost"] = { { "i", 154886, 1 } } } ),	-- Spiced Snapper
+				crit(12, { ["cost"] = { { "i", 154884, 1 } } } ),	-- Swamp Fish 'n Chips
 			},
 		}),
 		ach(10762, {	-- The Legion Menu
-			crit(1),		-- Salt and Pepper Shank
-			crit(2),		-- Deep-Fried Mossgill
-			crit(3),		-- Pickled Stormray
-			crit(4),		-- Faronaar Fizz
-			crit(5),		-- Spiced Rib Roast
-			crit(6),		-- Leybeque Ribs
-			crit(7),		-- Suramar Surf and Turf
-			crit(8),		-- Barracuda Mrglgagh
-			crit(9),		-- Koi-Scented Stormray
-			crit(10),		-- Drogbar-Style Salmon
-			crit(11),		-- The Hungry Magister
-			crit(12),		-- Azshari Salad
-			crit(13),		-- Nightborne Delicacy Platter
-			crit(14),		-- Seed-Battered Fish Plate
-			crit(15),		-- Fishbrul Special
-			crit(16),		-- Dried Mackerel Strips
-			crit(17),		-- Bear Tartare
-			crit(18),		-- Fighter Chow
-			crit(19),		-- Hearty Feast
-			crit(20),		-- Lavish Suramar Feast
-			crit(21),		-- Crispy Bacon
+			crit(1, { ["cost"] = { { "i", 133557, 1 } } } ),		-- Salt and Pepper Shank
+			crit(2, { ["cost"] = { { "i", 133561, 1 } } } ),		-- Deep-Fried Mossgill
+			crit(3, { ["cost"] = { { "i", 133562, 1 } } } ),		-- Pickled Stormray
+			crit(4, { ["cost"] = { { "i", 133563, 1 } } } ),		-- Faronaar Fizz
+			crit(5, { ["cost"] = { { "i", 133564, 1 } } } ),		-- Spiced Rib Roast
+			crit(6, { ["cost"] = { { "i", 133565, 1 } } } ),		-- Leybeque Ribs
+			crit(7, { ["cost"] = { { "i", 133566, 1 } } } ),		-- Suramar Surf and Turf
+			crit(8, { ["cost"] = { { "i", 133567, 1 } } } ),		-- Barracuda Mrglgagh
+			crit(9, { ["cost"] = { { "i", 133568, 1 } } } ),		-- Koi-Scented Stormray
+			crit(10, { ["cost"] = { { "i", 133569, 1 } } } ),		-- Drogbar-Style Salmon
+			crit(11, { ["cost"] = { { "i", 133570, 1 } } } ),		-- The Hungry Magister
+			crit(12, { ["cost"] = { { "i", 133571, 1 } } } ),		-- Azshari Salad
+			crit(13, { ["cost"] = { { "i", 133572, 1 } } } ),		-- Nightborne Delicacy Platter
+			crit(14, { ["cost"] = { { "i", 133573, 1 } } } ),		-- Seed-Battered Fish Plate
+			crit(15, { ["cost"] = { { "i", 133574, 1 } } } ),		-- Fishbrul Special
+			crit(16, { ["cost"] = { { "i", 133575, 1 } } } ),		-- Dried Mackerel Strips
+			crit(17, { ["cost"] = { { "i", 133576, 1 } } } ),		-- Bear Tartare
+			crit(18, { ["cost"] = { { "i", 133577, 1 } } } ),		-- Fighter Chow
+			crit(19, { ["cost"] = { { "i", 133578, 1 } } } ),		-- Hearty Feast
+			crit(20, { ["cost"] = { { "i", 133579, 1 } } } ),		-- Lavish Suramar Feast
+			crit(21, { ["cost"] = { { "i", 133681, 1 } } } ),		-- Crispy Bacon
 		}),
 		ach(7327,  {	-- The Pandaren Gourmet (30
-			crit(1),		-- Black Pepper Ribs and Shrimp
-			crit(2),		-- Blanched Needle Mushrooms
-			crit(3),		-- Boiled Silkworm Pupa
-			crit(4),		-- Braised Turtle
-			crit(5),		-- Charbroiled Tiger Steak
-			crit(6),		-- Chun Tian Spring Rolls
-			crit(7),		-- Dried Needle Mushrooms
-			crit(8),		-- Dried Peaches
-			crit(9),		-- Eternal Blossom Fish
-			crit(10),		-- Fire Spirit Salmon
-			crit(11),		-- Fish Cake
-			crit(12),		-- Ginseng Tea
-			crit(13),		-- Golden Carp Consomme
-			crit(14),		-- Green Curry Fish
-			crit(15),		-- Jade Witch Brew
-			crit(16),		-- Krasarang Fritters
-			crit(17),		-- Mad Brewer's Breakfast
-			crit(18),		-- Mogu Fish Stew
-			crit(19),		-- Peach Pie
-			crit(20),		-- Pearl Milk Tea
-			crit(21),		-- Perfectly Cooked Instant Noodles
-			crit(22),		-- Pounded Rice Cake
-			crit(23),		-- Red Bean Bun
-			crit(24),		-- Rice Pudding
-			crit(25),		-- Roasted Barley Tea
-			crit(26),		-- Sauteed Carrots
-			crit(27),		-- Sea Mist Rice Noodles
-			crit(28),		-- Shrimp Dumplings
-			crit(29),		-- Skewered Peanut Chicken
-			crit(30),		-- Sliced Peaches
-			crit(31),		-- Spicy Salmon
-			crit(32),		-- Spicy Vegetable Chips
-			crit(33),		-- Steamed Crab Surprise
-			crit(34),		-- Swirling Mist Soup
-			crit(35),		-- Tangy Yogurt
-			crit(36),		-- Toasted Fish Jerky
-			crit(37),		-- Twin Fish Platter
-			crit(38),		-- Valley Stir Fry
-			crit(39),		-- Viseclaw Soup
-			crit(40),		-- Wildfowl Ginseng Soup
-			crit(41),		-- Wildfowl Roast
-			crit(42),		-- Yak Cheese Curds
+			crit(1, { ["cost"] = { { "i", 74646, 1 } } } ),			-- Black Pepper Ribs and Shrimp
+			crit(2, { ["cost"] = { { "i", 81412, 1 } } } ),			-- Blanched Needle Mushrooms
+			crit(3, { ["cost"] = { { "i", 81405, 1 } } } ),			-- Boiled Silkworm Pupa
+			crit(4, { ["cost"] = { { "i", 74649, 1 } } } ),			-- Braised Turtle
+			crit(5, { ["cost"] = { { "i", 74642, 1 } } } ),			-- Charbroiled Tiger Steak
+			crit(6, { ["cost"] = { { "i", 74656, 1 } } } ),			-- Chun Tian Spring Rolls
+			crit(7, { ["cost"] = { { "i", 81404, 1 } } } ),			-- Dried Needle Mushrooms
+			crit(8, { ["cost"] = { { "i", 81403, 1 } } } ),			-- Dried Peaches
+			crit(9, { ["cost"] = { { "i", 74645, 1 } } } ),			-- Eternal Blossom Fish
+			crit(10, { ["cost"] = { { "i", 74652, 1 } } } ),		-- Fire Spirit Salmon
+			crit(11, { ["cost"] = { { "i", 74641, 1 } } } ),		-- Fish Cake
+			crit(12, { ["cost"] = { { "i", 75026, 1 } } } ),		-- Ginseng Tea
+			crit(13, { ["cost"] = { { "i", 74636, 1 } } } ),		-- Golden Carp Consomme
+			crit(14, { ["cost"] = { { "i", 81410, 1 } } } ),		-- Green Curry Fish
+			crit(15, { ["cost"] = { { "i", 75037, 1 } } } ),		-- Jade Witch Brew
+			crit(16, { ["cost"] = { { "i", 85504, 1 } } } ),		-- Krasarang Fritters
+			crit(17, { ["cost"] = { { "i", 75038, 1 } } } ),		-- Mad Brewer's Breakfast
+			crit(18, { ["cost"] = { { "i", 74650, 1 } } } ),		-- Mogu Fish Stew
+			crit(19, { ["cost"] = { { "i", 81411, 1 } } } ),		-- Peach Pie
+			crit(20, { ["cost"] = { { "i", 81414, 1 } } } ),		-- Pearl Milk Tea
+			crit(21, { ["cost"] = { { "i", 86026, 1 } } } ),		-- Perfectly Cooked Instant Noodles
+			crit(22, { ["cost"] = { { "i", 81400, 1 } } } ),		-- Pounded Rice Cake
+			crit(23, { ["cost"] = { { "i", 81408, 1 } } } ),		-- Red Bean Bun
+			crit(24, { ["cost"] = { { "i", 86069, 1 } } } ),		-- Rice Pudding
+			crit(25, { ["cost"] = { { "i", 81406, 1 } } } ),		-- Roasted Barley Tea
+			crit(26, { ["cost"] = { { "i", 74643, 1 } } } ),		-- Sauteed Carrots
+			crit(27, { ["cost"] = { { "i", 74648, 1 } } } ),		-- Sea Mist Rice Noodles
+			crit(28, { ["cost"] = { { "i", 74651, 1 } } } ),		-- Shrimp Dumplings
+			crit(29, { ["cost"] = { { "i", 81413, 1 } } } ),		-- Skewered Peanut Chicken
+			crit(30, { ["cost"] = { { "i", 86057, 1 } } } ),		-- Sliced Peaches
+			crit(31, { ["cost"] = { { "i", 86073, 1 } } } ),		-- Spicy Salmon
+			crit(32, { ["cost"] = { { "i", 86074, 1 } } } ),		-- Spicy Vegetable Chips
+			crit(33, { ["cost"] = { { "i", 74653, 1 } } } ),		-- Steamed Crab Surprise
+			crit(34, { ["cost"] = { { "i", 74644, 1 } } } ),		-- Swirling Mist Soup
+			crit(35, { ["cost"] = { { "i", 81409, 1 } } } ),		-- Tangy Yogurt
+			crit(36, { ["cost"] = { { "i", 81402, 1 } } } ),		-- Toasted Fish Jerky
+			crit(37, { ["cost"] = { { "i", 74655, 1 } } } ),		-- Twin Fish Platter
+			crit(38, { ["cost"] = { { "i", 74647, 1 } } } ),		-- Valley Stir Fry
+			crit(39, { ["cost"] = { { "i", 85501, 1 } } } ),		-- Viseclaw Soup
+			crit(40, { ["cost"] = { { "i", 86070, 1 } } } ),		-- Wildfowl Ginseng Soup
+			crit(41, { ["cost"] = { { "i", 74654, 1 } } } ),		-- Wildfowl Roast
+			crit(42, { ["cost"] = { { "i", 81401, 1 } } } ),		-- Yak Cheese Curds
 			ach(7326),		-- The Pandaren Gourmet (15)
 		}),
 		ach(12746, {	-- The Zandalari Menu
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(1),	-- Bountiful Captain's Feast
-				crit(2),	-- Galley Banquet
-				crit(3),	-- Grilled Catfish
-				crit(4),	-- Honey-Glazed Haunches
-				crit(5),	-- Kul Tiramisu
-				crit(6),	-- Loa Loaf
-				crit(7),	-- Mon'Dazi
-				crit(8),	-- Ravenberry Tarts
-				crit(9),	-- Sailor's Pie
-				crit(10),	-- Seasoned Loins
-				crit(11),	-- Spiced Snapper
-				crit(12),	-- Swamp Fish 'n Chips
+				crit(1, { ["cost"] = { { "i", 156526, 1 } } } ),	-- Bountiful Captain's Feast
+				crit(2, { ["cost"] = { { "i", 156525, 1 } } } ),	-- Galley Banquet
+				crit(3, { ["cost"] = { { "i", 154889, 1 } } } ),	-- Grilled Catfish
+				crit(4, { ["cost"] = { { "i", 154882, 1 } } } ),	-- Honey-Glazed Haunches
+				crit(5, { ["cost"] = { { "i", 154881, 1 } } } ),	-- Kul Tiramisu
+				crit(6, { ["cost"] = { { "i", 154887, 1 } } } ),	-- Loa Loaf
+				crit(7, { ["cost"] = { { "i", 154885, 1 } } } ),	-- Mon'Dazi
+				crit(8, { ["cost"] = { { "i", 154883, 1 } } } ),	-- Ravenberry Tarts
+				crit(9, { ["cost"] = { { "i", 154888, 1 } } } ),	-- Sailor's Pie
+				crit(10, { ["cost"] = { { "i", 154891, 1 } } } ),	-- Seasoned Loins
+				crit(11, { ["cost"] = { { "i", 154886, 1 } } } ),	-- Spiced Snapper
+				crit(12, { ["cost"] = { { "i", 154884, 1 } } } ),	-- Swamp Fish 'n Chips
 			},
 		}),
 		ach(5779),		-- You'll Feel Right as Rain
