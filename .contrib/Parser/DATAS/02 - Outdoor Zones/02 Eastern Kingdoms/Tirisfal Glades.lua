@@ -1417,7 +1417,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(24998, {	-- Maggot Eye
