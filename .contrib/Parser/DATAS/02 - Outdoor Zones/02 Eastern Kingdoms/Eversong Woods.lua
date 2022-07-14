@@ -807,12 +807,18 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3472, "256:256:669:228"),	-- Azurebreeze Coast [TBC]
+				-- #if AFTER WRATH
+				exploration(3532),	-- Dawning Lane [WRATH]
+				-- #endif
 				exploration(3480, "256:256:605:253"),	-- Duskwither Grounds [TBC]
 				exploration(3481, { ["timeline"] = { "created 2.0.1" } }),	-- Duskwither Spire [TBC] [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable. Maybe Horde Only?]
 				exploration(3467, "256:256:460:373"),	-- East Sanctum [TBC]
 				exploration(3558, "128:256:580:399"),	-- Elrendar Falls [TBC]
 				exploration(3462, "256:256:386:386"),	-- Fairbreeze Village [TBC]
 				exploration(3464, "256:128:524:359"),	-- Farstrider Retreat [TBC]
+				-- #if AFTER WRATH
+				exploration(3534),	-- Feth's Way [WRATH]
+				-- #endif
 				exploration(3460, "128:253:183:415"),	-- Golden Strand [TBC]
 				exploration(3912, "256:128:243:469"),	-- Goldenbough Pass [TBC]
 				exploration(3513),	-- Lake Elrendar (Ghostlands) [TBC]
@@ -823,6 +829,9 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3914, "256:174:464:494"),	-- Runestone Shan'dor [TBC]
 				exploration(3468, "256:256:324:384"),	-- Saltheril's Haven [TBC]
 				exploration(3487, "512:512:440:87"),	-- Silvermoon City [TBC]
+				-- #if AFTER WRATH
+				exploration(3531),	-- Skulking Row [WRATH]
+				-- #endif
 				exploration(3470, "256:256:474:314"),	-- Stillwhisper Pond [TBC]
 				exploration(3461, "256:128:231:404"),	-- Sunsail Anchorage [TBC]
 				exploration(3431, "512:512:195:5"),		-- Sunstrider Isle [TBC]

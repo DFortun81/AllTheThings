@@ -285,6 +285,9 @@ root("Zones", {
 					exploration(3858, "256:256:478:19"),	-- Razorthorn Shelf
 					exploration(3887, "128:256:316:268"),	-- Refugee Caravan
 					exploration(3893, "256:256:310:345"),	-- Ring of Observance
+					-- #if AFTER WRATH
+					exploration(3958),	-- Sha'tari Base Camp [NOTE: This might not be completable either...?]
+					-- #endif
 					exploration(3957, { ["timeline"] = { "created 2.0.1" } }),	-- Sha'tari Outpost [NOTE: Only Crieve could complete this, using Exploration Restoration, but not reliably achievable.]
 					exploration(3888, "256:256:245:289"),	-- Shadow Tomb
 					exploration(3703, "512:512:104:4"),		-- Shattrath City
