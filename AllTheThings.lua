@@ -9511,6 +9511,7 @@ local classIcons = {
 	[10] = "Interface\\Icons\\ClassIcon_Monk",
 	[11] = "Interface\\Icons\\ClassIcon_Druid",
 	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
+	[13] = "Interface\\Icons\\ClassIcon_Evoker",
 };
 local GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
@@ -13295,7 +13296,7 @@ local tiers = {
 		["lvl"] = 50,
 	},
 	{	-- Dragonflight
-		["icon"] = app.asset("Expansion_SL"),	-- TODO: Change asset
+		["icon"] = app.asset("Expansion_DF"),
 		["lore"] = L["DF_TIER_DESC"],
 		["lvl"] = 60,
 	},
