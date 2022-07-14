@@ -868,8 +868,12 @@ root("Craftables", tier(CLASSIC_TIER, {
 					i(10720),	-- Gnomish Net-o-Matic Projector
 					i(10724),	-- Gnomish Rocket Boots
 					i(10716),	-- Gnomish Shrink Ray
-					i(18986),	-- Ultrasafe Transporter: Gadgetzan (TOY!)
-					i(18660),	-- World Enlarger (TOY!)
+					i(18986, {	-- Ultrasafe Transporter: Gadgetzan (TOY!)
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
+					i(18660, {	-- World Enlarger (TOY!)
+						["requireSkill"] = 20219,	-- Gnomish Engineering (BOP - Required)
+					}),
 				}),
 				category(185, {	-- Goggles
 					i(10545, {	-- Gnomish Goggles
@@ -894,7 +898,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				category(188, {	-- Devices
-					i(18984),	-- Dimensional Ripper - Everlook (TOY!)
+					i(18984, {	-- Dimensional Ripper - Everlook (TOY!)
+						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
+					}),
 					i(10543, {	-- Goblin Construction Helmet
 						["requireSkill"] = 20222,	-- Goblin Engineering (BOP - Required)
 					}),
