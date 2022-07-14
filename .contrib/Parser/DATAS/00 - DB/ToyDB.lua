@@ -1050,3 +1050,27 @@ i(193588);	-- Timewalker's Hearthstone
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
+
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+-- NOT SOURCED YET
+i(192495);	-- Malfunctioning Stealthman 54 [Enginnering?]
+i(193032);	-- Jeweled Offering [JC?]
+i(193033);	-- Convergent Prism [JC?]
+i(193478);	-- Tuskarr Bean Bag [LW?]
+i(193476);	-- Gnoll Tent [LW?]
+i(197719);	-- Artisan's Sign [LW?]
+-- Vendor
+i(197961);	-- Whelps on Strings
+-- Achievements
+i(197986);	-- Murglasses
+i(198428);	-- Tuskarr Dinghy [Fishing?]
+-- Quest
+i(198039);	-- Rock of Appreciation
+i(198090);	-- Jar of Excess Slime
+-- Rewnown
+i(198402);	-- Maruuk Cooking Pot
+-- Rare Drop
+i(198409);	-- Personal Shell
