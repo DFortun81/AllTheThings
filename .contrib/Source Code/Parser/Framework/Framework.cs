@@ -2831,6 +2831,49 @@ namespace ATT
                             }
                         }
                         break;
+                    case "RecipeDB":
+                        {
+                            // The format of the RecipeDB is a dictionary of RecipeID -> Values.
+                            if (pair.Value is Dictionary<long, object> recipeDB)
+                            {
+                                foreach (var recipeValuePair in recipeDB)
+                                {
+                                    if (recipeValuePair.Value is Dictionary<string, object> recipe)
+                                    {
+                                        recipe["recipeID"] = recipeValuePair.Key;
+                                        Objects.Merge(recipe);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("RecipeDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(recipeValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else if (pair.Value is List<object> recipes)
+                            {
+                                foreach (var o in recipes)
+                                {
+                                    if (o is Dictionary<string, object> recipe)
+                                    {
+                                        Objects.Merge(recipe);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
                     case "ItemMountDB":
                         {
                             // The format of the Item Mount DB is a dictionary of item ID -> Spell ID.
