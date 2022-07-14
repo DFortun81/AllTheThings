@@ -10,7 +10,7 @@ _.Zones =
 				i(48116, {	-- Gundrak Hatchling
 					["crs"] = { 29334 },	-- Gundrak Raptor
 				}),
-				i(41120, {	-- Plans: Reinforced Cobalt Legplates
+				i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
 					["crs"] = { 29235 },	-- Gundrak Savage
 				}),
 			}),

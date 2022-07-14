@@ -509,6 +509,269 @@ i(35556, 0);	-- Sunblessed Gauntlets
 i(35531, 0);	-- Swiftsteel Bracers
 i(35532, 0);	-- Swiftsteel Shoulders
 
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+i(0, 51300);	-- Blacksmithing (Grand Master)
+i(0, 59436);	-- Brilliant Saronite Belt
+i(0, 55057);	-- Brilliant Saronite Boots
+i(0, 59438);	-- Brilliant Saronite Bracers
+i(0, 55058);	-- Brilliant Saronite Breastplate
+i(0, 55056);	-- Brilliant Saronite Gauntlets
+i(0, 59441);	-- Brilliant Saronite Helm
+i(0, 55055);	-- Brilliant Saronite Legplates
+i(0, 59440);	-- Brilliant Saronite Pauldrons
+i(0, 55374);	-- Brilliant Titansteel Helm
+i(0, 55377);	-- Brilliant Titansteel Treads
+i(0, 52568);	-- Cobalt Belt
+i(0, 52569);	-- Cobalt Boots
+i(0, 55834);	-- Cobalt Bracers
+i(0, 52570);	-- Cobalt Chestpiece
+i(0, 55835);	-- Cobalt Gauntlets
+i(0, 52571);	-- Cobalt Helm
+i(0, 52567);	-- Cobalt Legplates
+i(0, 52572);	-- Cobalt Shoulders
+i(0, 59405);	-- Cobalt Skeleton Key
+i(0, 55201);	-- Cobalt Tenderizer
+i(0, 54550);	-- Cobalt Triangle Shield
+i(0, 56280);	-- Cudgel of Saronite Justice
+i(0, 55301);	-- Daunting Handguards
+i(0, 55303);	-- Daunting Legplates
+i(0, 55656);	-- Eternal Belt Buckle
+i(0, 55203);	-- Forged Cobalt Claymore
+i(0, 55182);	-- Furious Saronite Beatstick
+i(0, 55302);	-- Helm of Command
+i(0, 55174);	-- Honed Cobalt Cleaver
+i(0, 54949);	-- Horned Cobalt Helm
+i(0, 61008);	-- Icebane Chestguard
+i(0, 61009);	-- Icebane Girdle
+i(0, 61010);	-- Icebane Treads
+i(0, 55204);	-- Notched Cobalt War Axe
+i(0, 56549);	-- Ornate Saronite Bracers
+i(0, 56553);	-- Ornate Saronite Gauntlets
+i(0, 56555);	-- Ornate Saronite Hauberk
+i(0, 56554);	-- Ornate Saronite Legplates
+i(0, 56550);	-- Ornate Saronite Pauldrons
+i(0, 56556);	-- Ornate Saronite Skullshield
+i(0, 56551);	-- Ornate Saronite Waistguard
+i(0, 56552);	-- Ornate Saronite Walkers
+i(0, 55300);	-- Righteous Gauntlets
+i(0, 55304);	-- Righteous Greaves
+i(0, 55179);	-- Saronite Ambusher
+i(0, 55014);	-- Saronite Bulwark
+i(0, 54557);	-- Saronite Defender
+i(0, 55013);	-- Saronite Protector
+i(0, 55181);	-- Saronite Shiv
+i(0, 59442);	-- Saronite Spellblade
+i(0, 55177);	-- Savage Cobalt Slicer
+i(0, 55305);	-- Savage Saronite Bracers
+i(0, 55309);	-- Savage Saronite Gauntlets
+i(0, 55311);	-- Savage Saronite Hauberk
+i(0, 55310);	-- Savage Saronite Legplates
+i(0, 55306);	-- Savage Saronite Pauldrons
+i(0, 55312);	-- Savage Saronite Skullshield
+i(0, 55307);	-- Savage Saronite Waistguard
+i(0, 55308);	-- Savage Saronite Walkers
+i(0, 54946);	-- Spiked Cobalt Belt
+i(0, 54918);	-- Spiked Cobalt Boots
+i(0, 54948);	-- Spiked Cobalt Bracers
+i(0, 54944);	-- Spiked Cobalt Chestpiece
+i(0, 54945);	-- Spiked Cobalt Gauntlets
+i(0, 54917);	-- Spiked Cobalt Helm
+i(0, 54947);	-- Spiked Cobalt Legplates
+i(0, 54941);	-- Spiked Cobalt Shoulders
+i(0, 55372);	-- Spiked Titansteel Helm
+i(0, 55375);	-- Spiked Titansteel Treads
+i(0, 55200);	-- Sturdy Cobalt Quickblade
+i(0, 54551);	-- Tempered Saronite Belt
+i(0, 54552);	-- Tempered Saronite Boots
+i(0, 55017);	-- Tempered Saronite Bracers
+i(0, 54553);	-- Tempered Saronite Breastplate
+i(0, 55015);	-- Tempered Saronite Gauntlets
+i(0, 54555);	-- Tempered Saronite Helm
+i(0, 54554);	-- Tempered Saronite Legplates
+i(0, 54556);	-- Tempered Saronite Shoulders
+i(0, 55373);	-- Tempered Titansteel Helm
+i(0, 55376);	-- Tempered Titansteel Treads
+i(0, 56357);	-- Titanium Shield Spike
+i(0, 59406);	-- Titanium Skeleton Key
+i(0, 55839);	-- Titanium Weapon Chain
+i(0, 55370);	-- Titansteel Bonecrusher
+i(0, 55369);	-- Titansteel Destroyer
+i(0, 55371);	-- Titansteel Guardian
+i(0, 56234);	-- Titansteel Shanker
+i(0, 56400);	-- Titansteel Shield Wall
+i(0, 55298);	-- Vengeance Bindings
+i(41122, 54981);	-- Reinforced Cobalt Chestpiece
+i(41123, 54979);	-- Reinforced Cobalt Helm
+i(41120, 54980);	-- Reinforced Cobalt Legplates
+i(41124, 54978);	-- Reinforced Cobalt Shoulders
+--Special?
+-- ARMOR --
+i(0, 55186);	-- Chestplate of Conquest
+i(0, 55187);	-- Legplates of Conquest
+-- WEAPON --
+i(0, 55183);	-- Corroded Saronite Edge
+i(0, 55184);	-- Corroded Saronite Woundbringer
+i(0, 55185);	-- Saronite Mindcrusher
+-- REMOVED --
+i(0, 55206);	-- Deadly Saronite Dirk
+i(0, 55628);	-- Socket Bracer
+i(0, 55641);	-- Socket Gloves
+i(0, 55202);	-- Sure-fire Shuriken
+i(0, 55732);	-- Titanium Rod
+-- NYI --
+i(0, 55730);	-- Cobalt Rod
+i(0, 50465);	-- Socket One-Handed Weapon
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+i(44937, 62202);	-- Titanium Plating[A]
+i(44938, 62202);	-- Titanium Plating[H]
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+i(0, 63182);	-- Titansteel Spellblade
+i(45089, 63188);	-- Battlelord's Plate Boots
+i(45088, 63187);	-- Belt of the Titans
+i(45092, 63191);	-- Indestructible Plate Girdle
+i(45090, 63189);	-- Plate Girdle of Righteousness
+i(45093, 63192);	-- Spiked Deathdealers
+i(45091, 63190);	-- Treads of Destiny
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+i(47622, 67091);	-- Breastplate of the White Knight [A]
+i(47640, 67130);	-- Breastplate of the White Knight [H]
+i(47623, 67092);	-- Saronite Swordbreakers [A]
+i(47641, 67131);	-- Saronite Swordbreakers [H]
+i(47627, 67096);	-- Sunforged Bracers [A]
+i(47642, 67135);	-- Sunforged Bracers [H]
+i(47626, 67095);	-- Sunforged Breastplate [A]
+i(47643, 67134);	-- Sunforged Breastplate [H]
+i(47624, 67093);	-- Titanium Razorplate [A]
+i(47644, 67132);	-- Titanium Razorplate [H]
+i(47625, 67094);	-- Titanium Spikeguards [A]
+i(47645, 67133);	-- Titanium Spikeguards [H]
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+i(49974, 70568);	-- Boots of Kingly Upheaval
+i(49972, 70566);	-- Hellfrozen Bonegrinders
+i(49971, 70565);	-- Legplates of Painful Death
+i(49973, 70567);	-- Pillars of Might
+i(49970, 70563);	-- Protectors of Life
+i(49969, 70562);	-- Puresteel Legplates
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+i(0, 76666);	-- Blacksmithing (Illustrious)
+i(0, 76434);	-- Cold-Forged Shank
+i(0, 76433);	-- Decapitator's Razor
+i(0, 76441);	-- Elementium Shield Spike
+i(0, 76435);	-- Fire-Etched Dagger
+i(0, 76178);	-- Folded Obsidium
+i(0, 76181);	-- Hardened Obsidium Belt
+i(0, 76182);	-- Hardened Obsidium Boots
+i(0, 76179);	-- Hardened Obsidium Bracers
+i(0, 76261);	-- Hardened Obsidium Breastplate
+i(0, 76180);	-- Hardened Obsidium Gauntlets
+i(0, 76260);	-- Hardened Obsidium Helm
+i(0, 76259);	-- Hardened Obsidium Legguards
+i(0, 76291);	-- Hardened Obsidium Shield
+i(0, 76258);	-- Hardened Obsidium Shoulders
+i(0, 76436);	-- Lifeforce Hammer
+i(0, 76474);	-- Obsidium Bladespear
+i(0, 76437);	-- Obsidium Executioner
+i(0, 76438);	-- Obsidium Skeleton Key
+i(0, 76264);	-- Redsteel Belt
+i(0, 76265);	-- Redsteel Boots
+i(0, 76262);	-- Redsteel Bracers
+i(0, 76270);	-- Redsteel Breastplate
+i(0, 76263);	-- Redsteel Gauntlets
+i(0, 76269);	-- Redsteel Helm
+i(0, 76267);	-- Redsteel Legguards
+i(0, 76266);	-- Redsteel Shoulders
+i(0, 76283);	-- Stormforged Belt
+i(0, 76285);	-- Stormforged Boots
+i(0, 76280);	-- Stormforged Bracers
+i(0, 76289);	-- Stormforged Breastplate
+i(0, 76281);	-- Stormforged Gauntlets
+i(0, 76288);	-- Stormforged Helm
+i(0, 76287);	-- Stormforged Legguards
+i(0, 76293);	-- Stormforged Shield
+i(0, 76286);	-- Stormforged Shoulders
+i(66100, 76439);	-- Ebonsteel Belt Buckle
+i(66113, 76452);	-- Elementium Bonesplitter
+i(66106, 76445);	-- Elementium Deathplate
+i(66115, 76454);	-- Elementium Earthguard
+i(66107, 76446);	-- Elementium Girdle of Pain
+i(66111, 76450);	-- Elementium Hammer
+i(66112, 76451);	-- Elementium Poleaxe
+i(66114, 76453);	-- Elementium Shank
+i(66110, 76449);	-- Elementium Spellblade
+i(66116, 76455);	-- Elementium Stormshield
+i(66105, 76444);	-- Hardened Elementium Girdle
+i(66104, 76443);	-- Hardened Elementium Hauberk
+i(66109, 76448);	-- Light Elementium Belt
+i(66108, 76447);	-- Light Elementium Chestguard
+i(66101, 76440);	-- Pyrium Shield Spike
+i(66103, 76442);	-- Pyrium Weapon Chain
+i(66127, 76467);	-- Vicious Ornate Pyrium Belt
+i(66128, 76468);	-- Vicious Ornate Pyrium Boots
+i(66125, 76465);	-- Vicious Ornate Pyrium Bracers
+i(66132, 76472);	-- Vicious Ornate Pyrium Breastplate
+i(66126, 76466);	-- Vicious Ornate Pyrium Gauntlets
+i(66131, 76471);	-- Vicious Ornate Pyrium Helm
+i(66130, 76470);	-- Vicious Ornate Pyrium Legguards
+i(66129, 76469);	-- Vicious Ornate Pyrium Shoulders
+i(66119, 76458);	-- Vicious Pyrium Belt
+i(66120, 76459);	-- Vicious Pyrium Boots
+i(66117, 76456);	-- Vicious Pyrium Bracers
+i(66124, 76464);	-- Vicious Pyrium Breastplate
+i(66118, 76457);	-- Vicious Pyrium Gauntlets
+i(66123, 76463);	-- Vicious Pyrium Helm
+i(66122, 76462);	-- Vicious Pyrium Legguards
+i(66121, 76461);	-- Vicious Pyrium Shoulders
+-- NYI --
+i(0, 85531);	-- Unknown
+
+
+-----------------
+-- PATCH 4.3.4 --
+-----------------
+i(0, 99454);	-- Emberforged Elementium Boots
+i(0, 99452);	-- Warboots of Mighty Lords
+i(0, 101928);	-- Foundations of Courage
+i(0, 99658);	-- Masterwork Elementium Deathblade
+i(0, 99660);	-- Witch-Hunter's Harvester
+i(0, 99654);	-- Lightforged Elementium Hammer
+i(0, 99453);	-- Mirrored Boots
+i(0, 101925);	-- Unstoppable Destroyer's Legplates
+i(0, 99656);	-- Pyrium Spellward
+i(0, 94718);	-- Elementium Gutslicer
+i(0, 94732);	-- Forged Elementium Mindcrusher
+i(0, 99440);	-- Eternal Elementium Handguards
+i(0, 99652);	-- Brainsplinter
+i(0, 101924);	-- Pyrium Legplates of Purified Evil
+i(0, 101929);	-- Soul Redeemer Bracers
+i(0, 99655);	-- Elementium-Edged Scalper
+i(0, 99653);	-- Masterwork Elementium Spellblade
+i(0, 99441);	-- Holy Flame Gauntlets
+i(0, 99439);	-- Fists of Fury
+i(0, 101931);	-- Bracers of Destructive Strength
+i(0, 101932);	-- Titanguard Wristplates
+i(0, 99657);	-- Unbreakable Guardian
+i(0, 92375);	--
+
+
+
+
 
 i(0, 280659);	-- 9.0 Blacksmithing - Crafted Reagent 07
 i(0, 322596);	--

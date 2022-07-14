@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
 	inst(758, {	-- Icecrown Citadel
 		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
@@ -51,22 +51,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						i(49956, {	-- Pattern: Sandals of Consecration
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49974, {	-- Plans: Boots of Kingly Upheaval
+						i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49972, {	-- Plans: Hellfrozen Bonegrinders
+						i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49971, {	-- Plans: Legplates of Painful Death
+						i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49973, {	-- Plans: Pillars of Might
+						i(49973, {	-- Plans: Pillars of Might (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49970, {	-- Plans: Protectors of Life
+						i(49970, {	-- Plans: Protectors of Life (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
-						i(49969, {	-- Plans: Puresteel Legplates
+						i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
 					}),
@@ -3893,7 +3893,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 			}),
 		},
 	}),
-})));
+}))));
 
 -- #if AFTER WRATH
 root("HiddenQuestTriggers", {

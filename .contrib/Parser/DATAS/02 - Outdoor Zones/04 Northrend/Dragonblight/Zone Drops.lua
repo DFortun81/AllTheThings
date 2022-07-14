@@ -13,7 +13,7 @@ root("Zones", m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				},
 				["timeline"] = { "added 3.3.0" },
 			}),
-			i(41124, {	-- Plans: Reinforced Cobalt Shoulders
+			i(41124, {	-- Plans: Reinforced Cobalt Shoulders (RECIPE!)
 				["crs"] = { 27333 },	-- Onslaught Mason
 			}),
 			i(120137, {	-- Tome of Polymorph: Polar Bear Cub

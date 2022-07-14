@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
+root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	inst(757, {	-- Trial of the Crusader
 		["mapID"] = TRIAL_OF_THE_CRUSADER,
 		["maps"] = { 173 },
@@ -75,18 +75,42 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
 					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]
 					h(i(47636)),	-- Pattern: Royal Moonshroud Robe [Horde]
-					i(47622),		-- Plans: Breastplate of the White Knight [Alliance]
-					i(47640),		-- Plans: Breastplate of the White Knight [Horde]
-					i(47623),		-- Plans: Saronite Swordbreakers [Alliance]
-					i(47641),		-- Plans: Saronite Swordbreakers [Horde]
-					i(47627),		-- Plans: Sunforged Bracers [Alliance]
-					i(47642),		-- Plans: Sunforged Bracers [Horde]
-					i(47626),		-- Plans: Sunforged Breastplate [Alliance]
-					i(47643),		-- Plans: Sunforged Breastplate [Horde]
-					i(47624),		-- Plans: Titanium Razorplate [Alliance]
-					i(47644),		-- Plans: Titanium Razorplate [Horde]
-					i(47625),		-- Plans: Titanium Spikeguards [Alliance]
-					i(47645),		-- Plans: Titanium Spikeguards [Horde]
+					i(47622, {	-- Plans: Breastplate of the White Knight [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47640, {	-- Plans: Breastplate of the White Knight [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47623, {	-- Plans: Saronite Swordbreakers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47641, {	-- Plans: Saronite Swordbreakers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47627, {	-- Plans: Sunforged Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47642, {	-- Plans: Sunforged Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47626, {	-- Plans: Sunforged Breastplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47643, {	-- Plans: Sunforged Breastplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47624, {	-- Plans: Titanium Razorplate [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47644, {	-- Plans: Titanium Razorplate [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47625, {	-- Plans: Titanium Spikeguards [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47645, {	-- Plans: Titanium Spikeguards [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 				},
 			}),
 			d(3, {	-- 10-Player
@@ -1297,7 +1321,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 			})),
 		},
 	}),
-})));
+}))));
 
 -- #if AFTER 4.0.1
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

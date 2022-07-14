@@ -21,7 +21,9 @@ _.Zones =
 						i(38455),	-- Hammer of hte Alliance Vanguard
 						i(38463),	-- Lordaeron's Resolve
 						i(38459),	-- Orb of the Eastern Kingdons
-						i(44937),	-- Plans: Titanium Plating
+						i(44937, {	-- Plans: Titanium Plating[A] (RECIPE!)
+							["timeline"] = { "added 3.0.8" },
+						}),
 						i(38457),	-- Sawed-Off Hand Cannon
 						i(44503),	-- Schematic: Mekgineer's Chopper
 						i(38453),	-- Shield of the Lion-Hearted
@@ -35,7 +37,9 @@ _.Zones =
 						i(38452),	-- Bulwark of the Warchief
 						i(38460),	-- Charged Wand of the Cleft
 						i(38458),	-- Darkspear Orb
-						i(44938),	-- Plans: Titanium Plating
+						i(44938, {	-- Plans: Titanium Plating[H] (RECIPE!)
+							["timeline"] = { "added 3.0.8" },
+						}),
 						i(44502),	-- Schematic: Mechano-Hog
 						i(38456),	-- Sin'dorei Recurve Bow
 						i(38454),	-- Warsong Punisher

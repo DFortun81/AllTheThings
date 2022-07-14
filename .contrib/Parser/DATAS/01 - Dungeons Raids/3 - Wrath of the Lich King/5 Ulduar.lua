@@ -107,12 +107,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45102),	-- Pattern: Sash of Ancient Power
 						i(45105),	-- Pattern: Savior's Slippers
 						i(45103),	-- Pattern: Spellslinger's Slippers
-						i(45089),	-- Plans: Battlelord's Plate Boots
-						i(45088),	-- Plans: Belt of the Titans
-						i(45092),	-- Plans: Indestructible Plate Girdle
-						i(45090),	-- Plans: Plate Girdle of Righteousness
-						i(45093),	-- Plans: Spiked Deathdealers
-						i(45091),	-- Plans: Treads of Destiny
+						i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
+						i(45088),	-- Plans: Belt of the Titans (RECIPE!)
+						i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
+						i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
+						i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
+						i(45091),	-- Plans: Treads of Destiny (RECIPE!)
 					},
 				}),
 				n(QUESTS, {
@@ -250,12 +250,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								i(45102),	-- Pattern: Sash of Ancient Power
 								i(45105),	-- Pattern: Savior's Slippers
 								i(45103),	-- Pattern: Spellslinger's Slippers
-								i(45089),	-- Plans: Battlelord's Plate Boots
-								i(45088),	-- Plans: Belt of the Titans
-								i(45092),	-- Plans: Indestructible Plate Girdle
-								i(45090),	-- Plans: Plate Girdle of Righteousness
-								i(45093),	-- Plans: Spiked Deathdealers
-								i(45091),	-- Plans: Treads of Destiny
+								i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
+								i(45088),	-- Plans: Belt of the Titans (RECIPE!)
+								i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
+								i(45090),	-- Plans: Plate Girdle of Righteousness (RECIPE!)
+								i(45093),	-- Plans: Spiked Deathdealers (RECIPE!)
+								i(45091),	-- Plans: Treads of Destiny (RECIPE!)
 							}),
 						},
 					}),

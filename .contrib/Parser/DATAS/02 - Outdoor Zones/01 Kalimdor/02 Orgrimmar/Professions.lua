@@ -8,12 +8,12 @@ root("Zones", m(KALIMDOR, {
 				n(11178, {	-- Borgosh Corebender <Weaponsmith>
 					["coord"] = { 79.6, 23.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = WEAPONSMITHING,
+					["g"] = CLASSIC_WEAPONSMITHING,
 				}),
 				n(11177, {	-- Okothos Ironrager <Armorsmith>
 					["coord"] = { 79.8, 23.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = ARMORSMITHING,
+					["g"] = CLASSIC_ARMORSMITHING,
 				}),
 				n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 					["coord"] = { 76.4, 34.4, ORGRIMMAR },

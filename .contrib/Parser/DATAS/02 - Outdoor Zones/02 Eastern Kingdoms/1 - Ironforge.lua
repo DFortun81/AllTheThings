@@ -148,12 +148,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					n(5164, {	-- Grumnus Steelshaper <Armor Crafter>
 						["coord"] = { 50.2, 42.6, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = ARMORSMITHING,
+						["g"] = CLASSIC_ARMORSMITHING,
 					}),
 					n(11146, {	-- Ironus Coldsteel <Special Weapon Crafter>
 						["coord"] = { 50.8, 43.0, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = WEAPONSMITHING,
+						["g"] = CLASSIC_WEAPONSMITHING,
 					}),
 				}),
 				applyclassicphase(TBC_PHASE_ONE, prof(FISHING, {

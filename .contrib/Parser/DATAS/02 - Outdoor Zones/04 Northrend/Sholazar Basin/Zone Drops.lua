@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(SHOLAZAR_BASIN, {
 			n(ZONE_DROPS, {
-				i(41122, {	-- Plans: Reinforced Cobalt Chestpiece
+				i(41122, {	-- Plans: Reinforced Cobalt Chestpiece (RECIPE!)
 					["crs"] = { 28123 },	-- Venture Co. Excavator
 				}),
 			}),

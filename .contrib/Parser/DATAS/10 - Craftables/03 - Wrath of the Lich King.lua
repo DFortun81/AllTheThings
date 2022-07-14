@@ -10,181 +10,195 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		f(55, {		-- Consumables
+		-- #if BEFORE CATA
+		prof(9788, {	-- Armorsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
+			["groups"] = {
+				i(41189, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
+				i(41190, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
+			},
+		}),
+		prof(9787, {	-- Weaponsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
+			["groups"] = {
+				i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
+				i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
+				import(41188),	-- Saronite Mindcrusher
+			},
+		}),
+		-- #endif
+		n(ARMOR, {
+			i(45559, {["timeline"]={"added 3.1.0"}}),	-- Battlelord's Plate Boots
+			i(45550, {["timeline"]={"added 3.1.0"}}),	-- Belt of the Titans
+			i(49907, {["timeline"]={"added 3.3.0"}}),	-- Boots of Kingly Upheaval
+			i(47591, {	-- Breastplate of the White Knight [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47592, {	-- Breastplate of the White Knight [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(43860),	-- Brilliant Saronite Belt
+			i(41128),	-- Brilliant Saronite Boots
+			i(43864),	-- Brilliant Saronite Bracers
+			i(41129),	-- Brilliant Saronite Breastplate
+			i(41127),	-- Brilliant Saronite Gauntlets
+			i(43870),	-- Brilliant Saronite Helm
+			i(41126),	-- Brilliant Saronite Legplates
+			i(43865),	-- Brilliant Saronite Pauldrons
+			i(41388),	-- Brilliant Titansteel Helm
+			i(41394),	-- Brilliant Titansteel Treads
+			i(39087),	-- Cobalt Belt
+			i(39088),	-- Cobalt Boots
+			i(41974),	-- Cobalt Bracers
+			i(39085),	-- Cobalt Chestpiece
+			i(41975),	-- Cobalt Gauntlets
+			i(39084),	-- Cobalt Helm
+			i(39086),	-- Cobalt Legplates
+			i(39083),	-- Cobalt Shoulders
+			i(41357),	-- Daunting Handguards
+			i(41345),	-- Daunting Legplates
+			i(49906, {["timeline"]={"added 3.3.0"}}),	-- Hellfrozen Bonegrinders
+			i(41344),	-- Helm of Command
+			i(40955),	-- Horned Cobalt Helm
+			i(43586),	-- Icebane Chestguard
+			i(43587),	-- Icebane Girdle
+			i(43588),	-- Icebane Treads
+			i(45551, {["timeline"]={"added 3.1.0"}}),	-- Indestructible Plate Girdle
+			i(49903, {["timeline"]={"added 3.3.0"}}),	-- Legplates of Painful Death
+			i(42723),	-- Ornate Saronite Bracers
+			i(42724),	-- Ornate Saronite Gauntlets
+			i(42725),	-- Ornate Saronite Hauberk
+			i(42726),	-- Ornate Saronite Legplates
+			i(42727),	-- Ornate Saronite Pauldrons
+			i(42728),	-- Ornate Saronite Skullshield
+			i(42729),	-- Ornate Saronite Waistguard
+			i(42730),	-- Ornate Saronite Walkers
+			i(49904, {["timeline"]={"added 3.3.0"}}),	-- Pillars of Might
+			i(45552, {["timeline"]={"added 3.1.0"}}),	-- Plate Girdle of Righteousness
+			i(49905, {["timeline"]={"added 3.3.0"}}),	-- Protectors of Life
+			i(49902, {["timeline"]={"added 3.3.0"}}),	-- Puresteel Legplates
+			i(40959),	-- Reinforced Cobalt Chestpiece
+			i(40957),	-- Reinforced Cobalt Helm
+			i(40958),	-- Reinforced Cobalt Legplates
+			i(40956),	-- Reinforced Cobalt Shoulders
+			i(41356),	-- Righteous Gauntlets
+			i(41346),	-- Righteous Greaves
+			i(47570, {	-- Saronite Swordbreakers [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47571, {	-- Saronite Swordbreakers [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(41354),	-- Savage Saronite Bracers
+			i(41349),	-- Savage Saronite Gauntlets
+			i(41353),	-- Savage Saronite Hauberk
+			i(41347),	-- Savage Saronite Legplates
+			i(41351),	-- Savage Saronite Pauldrons
+			i(41350),	-- Savage Saronite Skullshield
+			i(41352),	-- Savage Saronite Waistguard
+			i(41348),	-- Savage Saronite Walkers
+			i(40953),	-- Spiked Cobalt Belt
+			i(40949),	-- Spiked Cobalt Boots
+			i(40954),	-- Spiked Cobalt Bracers
+			i(40951),	-- Spiked Cobalt Chestpiece
+			i(40952),	-- Spiked Cobalt Gauntlets
+			i(40942),	-- Spiked Cobalt Helm
+			i(40943),	-- Spiked Cobalt Legplates
+			i(40950),	-- Spiked Cobalt Shoulders
+			i(45560, {["timeline"]={"added 3.1.0"}}),	-- Spiked Deathdealers
+			i(41386),	-- Spiked Titansteel Helm
+			i(41391),	-- Spiked Titansteel Treads
+			i(47574, {	-- Sunforged Bracers [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47575, {	-- Sunforged Bracers [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47593, {	-- Sunforged Breastplate [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47594, {	-- Sunforged Breastplate [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(40669),	-- Tempered Saronite Belt
+			i(40671),	-- Tempered Saronite Boots
+			i(41116),	-- Tempered Saronite Bracers
+			i(40672),	-- Tempered Saronite Breastplate
+			i(41114),	-- Tempered Saronite Gauntlets
+			i(40673),	-- Tempered Saronite Helm
+			i(40674),	-- Tempered Saronite Legplates
+			i(40675),	-- Tempered Saronite Shoulders
+			i(41387),	-- Tempered Titansteel Helm
+			i(41392),	-- Tempered Titansteel Treads
+			i(47589, {	-- Titanium Razorplate [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47590, {	-- Titanium Razorplate [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47572, {	-- Titanium Spikeguards [A]
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(47573, {	-- Titanium Spikeguards [H]
+				["races"] = HORDE_ONLY,
+				["timeline"] = { "added 3.2.0" },
+			}),
+			i(45561, {["timeline"]={"added 3.1.0"}}),	-- Treads of Destiny
+			i(41355),	-- Vengeance Bindings
+			-- #if AFTER CATA
+			i(41189, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
+			i(41190, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
+			-- #endif
+		}),
+		filter(MISC, {
+			i(43854),	-- Cobalt Skeleton Key
 			i(41611),	-- Eternal Belt Buckle
-			i(41976),	-- Titanium Weapon Chain
+			i(44693, {["timeline"]={"added 3.0.8"}}),	-- Titanium Plating
+			i(41745, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Titanium Rod
 			i(42500),	-- Titanium Shield Spike
-			i(44936),	-- Titanium Plating
+			i(43853),	-- Titanium Skeleton Key
+			i(41976),	-- Titanium Weapon Chain
 		}),
-		filter(DAGGERS, {
-			i(41183),	-- Saronite Ambusher
-			i(41184),	-- Saronite Shiv
-			i(42435),	-- Titansteel Shanker
-			i(45085),	-- Titansteel Spellblade
-		}),
-		filter(ONE_HANDED_AXES, {
-			i(41243),	-- Notched Cobalt War Axe
-		}),
-		filter(TWO_HANDED_AXES, {
-			i(41181),	-- Honed Cobalt Cleaver
-		}),
-		filter(ONE_HANDED_MACES, {
+		n(WEAPONS, {
 			i(41240),	-- Cobalt Tenderizer
-			i(42443),	-- Cudgel of Saronite Justice
-			i(41185),	-- Furious Saronite Beatstick
-			i(41383),	-- Titansteel Bonecrusher
-			i(41384),	-- Titansteel Guardian
-		}),
-		filter(TWO_HANDED_MACES, {
-			i(41188),	-- Saronite Mindcrusher
-			i(41257),	-- Titansteel Destroyer
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(41186, {	-- Corroded Saronite Edge
-				["timeline"] = {
-					"added 3.0.1.8770",
-					"removed 4.0.1.13287",
-				},
-			}),
-			i(41187, {	-- Corroded Saronite Woundbringer
-				["timeline"] = {
-					"added 3.0.1.8770",
-					"removed 4.0.1.13287",
-				},
-			}),
-			i(43871),	-- Saronite Spellblade
-			i(41182),	-- Savage Cobalt Slicer
-			i(41239),	-- Sturdy Cobalt Quickblade
-		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(41242),	-- Forged Cobalt Claymore
-		}),
-		filter(SHIELDS, {
 			i(40668),	-- Cobalt Triangle Shield
+			i(42443),	-- Cudgel of Saronite Justice
+			i(41245, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Deadly Saronite Dirk
+			i(41242),	-- Forged Cobalt Claymore
+			i(41185),	-- Furious Saronite Beatstick
+			i(41181),	-- Honed Cobalt Cleaver
+			i(41243),	-- Notched Cobalt War Axe
+			i(41183),	-- Saronite Ambusher
 			i(41113),	-- Saronite Bulwark
 			i(40670),	-- Saronite Defender
 			i(41117),	-- Saronite Protector
+			i(41184),	-- Saronite Shiv
+			i(43871),	-- Saronite Spellblade
+			i(41182),	-- Savage Cobalt Slicer
+			i(41239),	-- Sturdy Cobalt Quickblade
+			i(41241, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Sure-fire Shuriken
+			i(41383),	-- Titansteel Bonecrusher
+			i(41257),	-- Titansteel Destroyer
+			i(41384),	-- Titansteel Guardian
+			i(42435),	-- Titansteel Shanker
 			i(42508),	-- Titansteel Shield Wall
-		}),
-		n(HEAD, {
-			i(43870),	-- Brilliant Saronite Helm
-			i(41388),	-- Brilliant Titansteel Helm
-			i(39084),	-- Cobalt Helm
-			i(41344),	-- Helm of Command
-			i(40955),	-- Horned Cobalt Helm
-			i(42728),	-- Ornate Saronite Skullshield
-			i(40957),	-- Reinforced Cobalt Helm
-			i(41350),	-- Savage Saronite Skullshield
-			i(40942),	-- Spiked Cobalt Helm
-			i(41386),	-- Spiked Titansteel Helm
-			i(40673),	-- Tempered Saronite Helm
-			i(41387),	-- Tempered Titansteel Helm
-		}),
-		n(SHOULDER, {
-			i(43865),	-- Brilliant Saronite Pauldrons
-			i(39083),	-- Cobalt Shoulders
-			i(42727),	-- Ornate Saronite Pauldrons
-			i(40956),	-- Reinforced Cobalt Shoulders
-			i(41351),	-- Savage Saronite Pauldrons
-			i(40950),	-- Spiked Cobalt Shoulders
-			i(40675),	-- Tempered Saronite Shoulders
-		}),
-		n(CHEST, {
-			i(47591),	-- Breastplate of the White Knight
-			i(47592),	-- Breastplate of the White Knight
-			i(41129),	-- Brilliant Saronite Breastplate
-			i(41189, {	-- Chestplate of Conquest
-				["timeline"] = {
-					"added 3.0.1.8770",
-					"removed 4.0.1.13287",
-				},
-			}),
-			i(39085),	-- Cobalt Chestpiece
-			i(43586),	-- Icebane Chestguard
-			i(42725),	-- Ornate Saronite Hauberk
-			i(40959),	-- Reinforced Cobalt Chestpiece
-			i(41353),	-- Savage Saronite Hauberk
-			i(40951),	-- Spiked Cobalt Chestpiece
-			i(47593),	-- Sunforged Breastplate
-			i(47594),	-- Sunforged Breastplate
-			i(40672),	-- Tempered Saronite Breastplate
-			i(47589),	-- Titanium Razorplate
-			i(47590),	-- Titanium Razorplate
-		}),
-		n(HANDS, {
-			i(41127),	-- Brilliant Saronite Gauntlets
-			i(41975),	-- Cobalt Gauntlets
-			i(41357),	-- Daunting Handguards
-			i(42724),	-- Ornate Saronite Gauntlets
-			i(41356),	-- Righteous Gauntlets
-			i(41349),	-- Savage Saronite Gauntlets
-			i(40952),	-- Spiked Cobalt Gauntlets
-			i(41114),	-- Tempered Saronite Gauntlets
-		}),
-		n(WRIST, {
-			i(43864),	-- Brilliant Saronite Bracers
-			i(41974),	-- Cobalt Bracers
-			i(42723),	-- Ornate Saronite Bracers
-			i(47570),	-- Saronite Swordbreakers
-			i(47571),	-- Saronite Swordbreakers
-			i(41354),	-- Savage Saronite Bracers
-			i(40954),	-- Spiked Cobalt Bracers
-			i(47574),	-- Sunforged Bracers
-			i(47575),	-- Sunforged Bracers
-			i(41116),	-- Tempered Saronite Bracers
-			i(47572),	-- Titanium Spikeguards
-			i(47573),	-- Titanium Spikeguards
-			i(41355),	-- Vengeance Bindings
-		}),
-		n(WAIST, {
-			i(45550),	-- Belt of the Titans
-			i(43860),	-- Brilliant Saronite Belt
-			i(39087),	-- Cobalt Belt
-			i(43587),	-- Icebane Girdle
-			i(45551),	-- Indestructible Plate Girdle
-			i(42729),	-- Ornate Saronite Waistguard
-			i(45552),	-- Plate Girdle of Righteousness
-			i(41352),	-- Savage Saronite Waistguard
-			i(40953),	-- Spiked Cobalt Belt
-			i(40669),	-- Tempered Saronite Belt
-		}),
-		n(LEGS, {
-			i(41126),	-- Brilliant Saronite Legplates
-			i(39086),	-- Cobalt Legplates
-			i(41345),	-- Daunting Legplates
-			i(43588),	-- Icebane Treads
-			i(41190, {	-- Legplates of Conquest
-				["timeline"] = {
-					"added 3.0.1.8770",
-					"removed 4.0.1.13287",
-				},
-			}),
-			i(49903),	-- Legplates of Painful Death
-			i(42726),	-- Ornate Saronite Legplates
-			i(49904),	-- Pillars of Might
-			i(49902),	-- Puresteel Legplates
-			i(40958),	-- Reinforced Cobalt Legplates
-			i(41346),	-- Righteous Greaves
-			i(41347),	-- Savage Saronite Legplates
-			i(40943),	-- Spiked Cobalt Legplates
-			i(40674),	-- Tempered Saronite Legplates
-		}),
-		n(FEET, {
-			i(45559),	-- Battlelord's Plate Boots
-			i(49907),	-- Boots of Kingly Upheaval
-			i(41128),	-- Brilliant Saronite Boots
-			i(41394),	-- Brilliant Titansteel Treads
-			i(39088),	-- Cobalt Boots
-			i(49906),	-- Hellfrozen Bonegrinders
-			i(42730),	-- Ornate Saronite Walkers
-			i(49905),	-- Protectors of Life
-			i(41348),	-- Savage Saronite Walkers
-			i(40949),	-- Spiked Cobalt Boots
-			i(45560),	-- Spiked Deathdealers
-			i(41391),	-- Spiked Titansteel Treads
-			i(40671),	-- Tempered Saronite Boot
-			i(41392),	-- Tempered Titansteel Treads
-			i(45561),	-- Treads of Destiny
+			i(45085, {["timeline"]={"added 3.1.0"}}),	-- Titansteel Spellblade
+			-- #if AFTER CATA
+			i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
+			i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
+			i(41188),	-- Saronite Mindcrusher
+			-- #endif
 		}),
 	}),
 	prof(ENCHANTING, {

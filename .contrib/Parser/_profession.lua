@@ -2,6 +2,9 @@ local OTHER = 114;
 -------------------
 -- BLACKSMITHING --
 -------------------
+local ELEMENTIUM_BAR = 52186;
+local HARDENED_ELEMENTIUM_BAR = 53039;
+local PYRIUM = 51950;
 APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	r(2018, {	-- Blacksmithing (Apprentice)
 		["collectible"] = false,
@@ -119,7 +122,7 @@ ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 		r(16640),	-- Dense Weightstone
 	}),
 });
-WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+CLASSIC_WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	r(9787, {	-- Weaponsmith
 		["timeline"]={ "removed 4.0.3" },
 		["collectible"] = false,
@@ -141,7 +144,7 @@ WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	r(10011, {["timeline"]={"removed 4.0.3"}}),	-- Blight
 	r(10015, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champio
 });
-ARMORSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+CLASSIC_ARMORSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	r(9788, {	-- Armorsmith
 		["timeline"]={ "removed 4.0.3" },
 		["collectible"] = false,
@@ -227,6 +230,278 @@ TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkil
 	r(36134, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stormforged Axe
 	r(36131, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Windforged Rapier
 	-- #endif
+}));
+WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+	r(51300, {	-- Blacksmithing (Grand Master)
+		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	n(ARMOR, {
+		r(59436),	-- Brilliant Saronite Belt
+		r(55057),	-- Brilliant Saronite Boots
+		r(59438),	-- Brilliant Saronite Bracers
+		r(55058),	-- Brilliant Saronite Breastplate
+		r(55056),	-- Brilliant Saronite Gauntlets
+		r(59441),	-- Brilliant Saronite Helm
+		r(55055),	-- Brilliant Saronite Legplates
+		r(59440),	-- Brilliant Saronite Pauldrons
+		r(55374),	-- Brilliant Titansteel Helm
+		r(55377),	-- Brilliant Titansteel Treads
+		r(52568),	-- Cobalt Belt
+		r(52569),	-- Cobalt Boots
+		r(55834),	-- Cobalt Bracers
+		r(52570),	-- Cobalt Chestpiece
+		r(55835),	-- Cobalt Gauntlets
+		r(52571),	-- Cobalt Helm
+		r(52567),	-- Cobalt Legplates
+		r(52572),	-- Cobalt Shoulders
+		r(55301),	-- Daunting Handguards
+		r(55303),	-- Daunting Legplates
+		r(55302),	-- Helm of Command
+		r(54949),	-- Horned Cobalt Helm
+		r(61008),	-- Icebane Chestguard
+		r(61009),	-- Icebane Girdle
+		r(61010),	-- Icebane Treads
+		r(56549),	-- Ornate Saronite Bracers
+		r(56553),	-- Ornate Saronite Gauntlets
+		r(56555),	-- Ornate Saronite Hauberk
+		r(56554),	-- Ornate Saronite Legplates
+		r(56550),	-- Ornate Saronite Pauldrons
+		r(56556),	-- Ornate Saronite Skullshield
+		r(56551),	-- Ornate Saronite Waistguard
+		r(56552),	-- Ornate Saronite Walkers
+		r(55300),	-- Righteous Gauntlets
+		r(55304),	-- Righteous Greaves
+		r(55305),	-- Savage Saronite Bracers
+		r(55309),	-- Savage Saronite Gauntlets
+		r(55311),	-- Savage Saronite Hauberk
+		r(55310),	-- Savage Saronite Legplates
+		r(55306),	-- Savage Saronite Pauldrons
+		r(55312),	-- Savage Saronite Skullshield
+		r(55307),	-- Savage Saronite Waistguard
+		r(55308),	-- Savage Saronite Walkers
+		r(54946),	-- Spiked Cobalt Belt
+		r(54918),	-- Spiked Cobalt Boots
+		r(54948),	-- Spiked Cobalt Bracers
+		r(54944),	-- Spiked Cobalt Chestpiece
+		r(54945),	-- Spiked Cobalt Gauntlets
+		r(54917),	-- Spiked Cobalt Helm
+		r(54947),	-- Spiked Cobalt Legplates
+		r(54941),	-- Spiked Cobalt Shoulders
+		r(55372),	-- Spiked Titansteel Helm
+		r(55375),	-- Spiked Titansteel Treads
+		r(54551),	-- Tempered Saronite Belt
+		r(54552),	-- Tempered Saronite Boots
+		r(55017),	-- Tempered Saronite Bracers
+		r(54553),	-- Tempered Saronite Breastplate
+		r(55015),	-- Tempered Saronite Gauntlets
+		r(54555),	-- Tempered Saronite Helm
+		r(54554),	-- Tempered Saronite Legplates
+		r(54556),	-- Tempered Saronite Shoulders
+		r(55373),	-- Tempered Titansteel Helm
+		r(55376),	-- Tempered Titansteel Treads
+		r(55298),	-- Vengeance Bindings
+	}),
+	filter(MISC, {
+		r(59405),	-- Cobalt Skeleton Key
+		r(55656),	-- Eternal Belt Buckle
+		r(55628, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Socket Bracer
+		r(55641, {["timeline"]={"added 3.0.2","removed 6.0.2"}}),	-- Socket Gloves
+		r(55732, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Titanium Rod
+		r(56357),	-- Titanium Shield Spike
+		r(59406),	-- Titanium Skeleton Key
+		r(55839),	-- Titanium Weapon Chain
+	}),
+	n(WEAPONS, {
+		r(55201),	-- Cobalt Tenderizer
+		r(54550),	-- Cobalt Triangle Shield
+		r(56280),	-- Cudgel of Saronite Justice
+		r(55206, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Deadly Saronite Dirk
+		r(55203),	-- Forged Cobalt Claymore
+		r(55182),	-- Furious Saronite Beatstick
+		r(55174),	-- Honed Cobalt Cleaver
+		r(55204),	-- Notched Cobalt War Axe
+		r(55179),	-- Saronite Ambusher
+		r(55014),	-- Saronite Bulwark
+		r(54557),	-- Saronite Defender
+		r(55013),	-- Saronite Protector
+		r(55181),	-- Saronite Shiv
+		r(59442),	-- Saronite Spellblade
+		r(55177),	-- Savage Cobalt Slicer
+		r(55200),	-- Sturdy Cobalt Quickblade
+		r(55202, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Sure-fire Shuriken
+		r(55370),	-- Titansteel Bonecrusher
+		r(55369),	-- Titansteel Destroyer
+		r(55371),	-- Titansteel Guardian
+		r(56234),	-- Titansteel Shanker
+		r(56400),	-- Titansteel Shield Wall
+		r(63182, {["timeline"]={"added 3.1.0"}}),		-- Titansteel Spellblade
+		-- #if AFTER CATA
+		r(55185),	-- Saronite Mindcrusher
+		-- #endif
+	}),
+}));
+WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+	r(55186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
+	r(55187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
+}));
+WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+	r(55183, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
+	r(55184, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
+	-- #if BEFORE CATA
+	r(55185),	-- Saronite Mindcrusher
+	-- #endif
+}));
+CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 4.0.3" } }, {
+	r(76666, {	-- Blacksmithing (Illustrious)
+		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	n(ARMOR, {
+		r(76181),	-- Hardened Obsidium Belt
+		r(76182),	-- Hardened Obsidium Boots
+		r(76179),	-- Hardened Obsidium Bracers
+		r(76261),	-- Hardened Obsidium Breastplate
+		r(76180),	-- Hardened Obsidium Gauntlets
+		r(76260),	-- Hardened Obsidium Helm
+		r(76259),	-- Hardened Obsidium Legguards
+		r(76258),	-- Hardened Obsidium Shoulders
+		r(76264),	-- Redsteel Belt
+		r(76265),	-- Redsteel Boots
+		r(76262),	-- Redsteel Bracers
+		r(76270),	-- Redsteel Breastplate
+		r(76263),	-- Redsteel Gauntlets
+		r(76269),	-- Redsteel Helm
+		r(76267),	-- Redsteel Legguards
+		r(76266),	-- Redsteel Shoulders
+		r(76283),	-- Stormforged Belt
+		r(76285),	-- Stormforged Boots
+		r(76280),	-- Stormforged Bracers
+		r(76289),	-- Stormforged Breastplate
+		r(76281),	-- Stormforged Gauntlets
+		r(76288),	-- Stormforged Helm
+		r(76287),	-- Stormforged Legguards
+		r(76286),	-- Stormforged Shoulders
+	}),
+	filter(MISC, {
+		r(76441),	-- Elementium Shield Spike
+		r(76178),	-- Folded Obsidium
+		r(76438),	-- Obsidium Skeleton Key
+	}),
+	n(WEAPONS, {
+		r(76434),	-- Cold-Forged Shank
+		r(76433),	-- Decapitator's Razor
+		r(76435),	-- Fire-Etched Dagger
+		r(76291),	-- Hardened Obsidium Shield
+		r(76436),	-- Lifeforce Hammer
+		r(76474),	-- Obsidium Bladespear
+		r(76437),	-- Obsidium Executioner
+		r(76293),	-- Stormforged Shield
+	}),
+}));
+COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 4.0.3" } }, {
+	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66113, {	-- Plans: Elementium Bonesplitter (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66106, {	-- Plans: Elementium Deathplate (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66115, {	-- Plans: Elementium Earthguard (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66107, {	-- Plans: Elementium Girdle of Pain (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(67603, {	-- Plans: Elementium Gutslicer (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66111, {	-- Plans: Elementium Hammer (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66112, {	-- Plans: Elementium Poleaxe (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66114, {	-- Plans: Elementium Shank (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66110, {	-- Plans: Elementium Spellblade (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66116, {	-- Plans: Elementium Stormshield (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(67606, {	-- Plans: Forged Elementium Mindcrusher (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66105, {	-- Plans: Hardened Elementium Girdle (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66104, {	-- Plans: Hardened Elementium Hauberk (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66109, {	-- Plans: Light Elementium Belt (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66108, {	-- Plans: Light Elementium Chestguard (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66101, {	-- Plans: Pyrium Shield Spike (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66103, {	-- Plans: Pyrium Weapon Chain (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66127, {	-- Plans: Vicious Ornate Pyrium Belt (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66128, {	-- Plans: Vicious Ornate Pyrium Boots (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66131, {	-- Plans: Vicious Ornate Pyrium Helm (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66119, {	-- Plans: Vicious Pyrium Belt (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66120, {	-- Plans: Vicious Pyrium Boots (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
+	i(66117, {	-- Plans: Vicious Pyrium Bracers (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66124, {	-- Plans: Vicious Pyrium Breastplate (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66118, {	-- Plans: Vicious Pyrium Gauntlets (RECIPE!)
+		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+	}),
+	i(66123, {	-- Plans: Vicious Pyrium Helm (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66122, {	-- Plans: Vicious Pyrium Legguards (RECIPE!)
+		["cost"] = { { "i", PYRIUM, 5 } },
+	}),
+	i(66121, {	-- Plans: Vicious Pyrium Shoulders (RECIPE!)
+		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+	}),
 }));
 ----------------
 -- ENCHANTING --

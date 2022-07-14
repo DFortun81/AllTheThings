@@ -7,7 +7,7 @@ _.Zones =
 	m(NORTHREND, {
 		m(GRIZZLY_HILLS, {
 			n(ZONE_DROPS, {
-				i(41123, {	-- Plans: Reinforced Cobalt Helm
+				i(41123, {	-- Plans: Reinforced Cobalt Helm (RECIPE!)
 					["crs"] = { 26270 },	-- Iron Rune-Shaper
 				}),
 				i(46108, {	-- Technique: Rituals of the New Moon
