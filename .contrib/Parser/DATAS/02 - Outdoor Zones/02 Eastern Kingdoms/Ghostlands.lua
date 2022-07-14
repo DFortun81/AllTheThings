@@ -26,6 +26,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				})),
 				ach(4908, {	-- Ghostlands Quests
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Citizens of Tranquillien

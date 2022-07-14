@@ -11,6 +11,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4926, {	-- Bloodmyst Isle Quests
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- The Triumvirate's First, Boros
