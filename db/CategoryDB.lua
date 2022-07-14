@@ -197,7 +197,6 @@ select(2, ...).CategoryNames = {
 	[574] = "Equipment Mods",
 	[575] = "Skeleton Keys",
 	[577] = "Northrend Plans",
-	[579] = "Armor",
 	[584] = "Outland Plans",
 	[590] = "Blackmithing Plans",
 	[592] = "Zandalari Alchemy",
