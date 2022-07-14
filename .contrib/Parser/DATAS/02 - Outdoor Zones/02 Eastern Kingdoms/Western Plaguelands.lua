@@ -147,6 +147,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.4, 52.2, WESTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if BEFORE 4.0.3.13277
+				fp(383, {	-- Thondroril River, Western Plaguelands
+					["cr"] = 37888,	-- Frax Bucketdrop <Flight Master>
+					["coord"] = { 69.3, 49.7, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 3.3.0.10522" },
+				}),
+				-- #endif
 			}),
 			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]

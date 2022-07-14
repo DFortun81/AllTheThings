@@ -704,11 +704,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.4, 27.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if AFTER 4.0.3.13277
 				fp(383, {	-- Thondroril River, Eastern Plaguelands
 					["cr"] = 37888,	-- Frax Bucketdrop <Flight Master>
 					["coord"] = { 10.0, 65.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { "added 3.3.0.10522" },
 				}),
+				-- #endif
 			}),
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
