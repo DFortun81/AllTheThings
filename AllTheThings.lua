@@ -3454,7 +3454,7 @@ ResolveSymbolicLink = function(o)
 	end
 	if o and o.sym then
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
-		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, table.remove;
+		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, tremove;
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
 			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
@@ -3816,6 +3816,21 @@ ResolveSymbolicLink = function(o)
 			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
 		end
 	end
+end
+
+local function ResolveSymlinkGroupAsync(group)
+	-- app.PrintDebug("RSGa",group.hash)
+	local groups = ResolveSymbolicLink(group);
+	if groups then
+		PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
+		group.sym = nil;
+		BuildGroups(group, group.g);
+		app.DirectGroupUpdate(group);
+	end
+end
+-- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
+app.FillSymlinkAsync = function(o)
+	app.FunctionRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end)();
 local function BuildContainsInfo(item, entries, indent, layer)
@@ -4807,7 +4822,7 @@ end
 -- Auto-Expansion logic
 (function()
 local included = {};
-local knownSkills;
+local knownSkills, isInWindow;
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 app.SkipPurchases = {
 	[-1] = 0,	-- Whether to skip certain cost items
@@ -4930,13 +4945,19 @@ local function DetermineCraftedGroups(group)
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
 	return groups;
 end
-local function DetermineSymlinkGroups(group, depth)
+local function DetermineSymlinkGroups(group)
 	if group.sym then
-		local groups = ResolveSymbolicLink(group);
-		-- make sure this group doesn't waste time getting resolved again somehow
-		group.sym = nil;
-		-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
-		return groups;
+		-- app.PrintDebug("DSG",group.hash);
+		-- groups which are being filled in a Window can be done async
+		if isInWindow then
+			app.FillSymlinkAsync(group);
+		else
+			local groups = ResolveSymbolicLink(group);
+			-- make sure this group doesn't waste time getting resolved again somehow
+			group.sym = nil;
+			-- app.PrintDebug("DetermineSymlinkGroups",group.hash,groups and #groups);
+			return groups;
+		end
 	end
 end
 local function FillGroupsRecursive(group, depth)
@@ -4983,6 +5004,11 @@ app.FillGroups = function(group)
 	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
 	-- Get tradeskill cache
 	knownSkills = app.GetTradeSkillCache();
+	-- Check if this group is inside a Window or not
+	isInWindow = app.RecursiveFirstParentWithField(group, "window") and true;
+	-- app.PrintDebug("isInWindow",isInWindow)
+	-- 5 resolves per frame
+	app.FunctionRunner.SetPerFrame(5);
 
 	-- Fill the group with all nestable content
 	FillGroupsRecursive(group);
@@ -14252,7 +14278,8 @@ local function TopLevelUpdateGroup(group, window)
 	if group.OnUpdate then group.OnUpdate(group); end
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
--- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy
+-- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
+-- then triggering a 1/2 second delayed soft-update of the Window containing the group if any
 local function DirectGroupUpdate(group)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	local parent = rawget(group, "parent");
