@@ -1467,7 +1467,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 39.2, 14.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),

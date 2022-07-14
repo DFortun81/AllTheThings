@@ -5637,6 +5637,8 @@ fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
 fieldCache["mountID"] = {};
 fieldCache["nextQuests"] = {};
+-- identical cache as creatureID (probably deprecate creatureID use eventually)
+fieldCache["npcID"] = rawget(fieldCache, "creatureID");
 fieldCache["objectID"] = {};
 fieldCache["professionID"] = {};
 -- identical cache as professionID
