@@ -9727,8 +9727,8 @@ local OnUpdateForDeathTrackerLib = function(t)
 		if stat == "--" then stat = "0"; end
 		local deaths = tonumber(stat);
 		if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
-			app.CurrentCharacter.Deaths = deaths;
 			ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + (deaths - app.CurrentCharacter.Deaths);
+			app.CurrentCharacter.Deaths = deaths;
 		end
 		t.parent.progress = t.parent.progress + t.progress;
 		t.parent.total = t.parent.total + t.total;
