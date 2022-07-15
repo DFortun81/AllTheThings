@@ -1774,7 +1774,7 @@ root("Zones", {
 										{"select", "itemID", 35143 },	-- Guardian's Mail Sabatons
 										{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
 										{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
-										{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+										{"select", "itemID", 35147 },   -- Guardian's Ringmail Sabatons
 										{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
 									},
 								}),

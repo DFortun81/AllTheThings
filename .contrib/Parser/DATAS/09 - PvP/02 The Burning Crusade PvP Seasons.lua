@@ -445,7 +445,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(28128, {	-- Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(31376, {	-- Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -461,7 +461,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31377, {	-- Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(28137, {	-- Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -572,7 +572,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(27705, {	-- Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(31616, {	-- Gladiator's Ornamented Headcover
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -588,7 +588,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31618, {	-- Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(27881, {	-- Gladiator's Scaled Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -632,7 +632,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31411, {	-- Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(27708, {	-- Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -714,7 +714,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(26001, {	-- Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(27471, {	-- Gladiator's Mail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -730,7 +730,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(27472, {	-- Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(31400, {	-- Gladiator's Ringmail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -777,7 +777,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(24555, {	-- Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(30187, {	-- Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1385,7 +1385,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31969, {	-- Merciless Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(31988, {	-- Merciless Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1401,7 +1401,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31989, {	-- Merciless Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(32057, {	-- Merciless Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1507,7 +1507,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31995, {	-- Merciless Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(32022, {	-- Merciless Gladiator's Ornamented Headcover
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1523,7 +1523,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32023, {	-- Merciless Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(32041, {	-- Merciless Gladiator's Scaled Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1567,7 +1567,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32017, {	-- Merciless Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(32035, {	-- Merciless Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1645,7 +1645,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32008, {	-- Merciless Gladiator's Linked Spaulders
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
-				
+
 				i(32011, {	-- Merciless Gladiator's Mail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1661,7 +1661,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(32012, {	-- Merciless Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(32031, {	-- Merciless Gladiator's Ringmail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -1705,7 +1705,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(31975, {	-- Merciless Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(31980, {	-- Merciless Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2125,7 +2125,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33673, {	-- Vengeful Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33691, {	-- Vengeful Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2141,7 +2141,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33692, {	-- Vengeful Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33768, {	-- Vengeful Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2247,7 +2247,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33698, {	-- Vengeful Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33724, {	-- Vengeful Gladiator's Ornamented Headcover
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2263,7 +2263,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33725, {	-- Vengeful Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33751, {	-- Vengeful Gladiator's Scaled Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2307,7 +2307,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33719, {	-- Vengeful Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33745, {	-- Vengeful Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2385,7 +2385,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33709, {	-- Vengeful Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33713, {	-- Vengeful Gladiator's Mail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2401,7 +2401,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33714, {	-- Vengeful Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33740, {	-- Vengeful Gladiator's Ringmail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2445,7 +2445,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33678, {	-- Vengeful Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(33683, {	-- Vengeful Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2916,7 +2916,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35000, {	-- Brutal Gladiator's Dragonhide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35023, {	-- Brutal Gladiator's Kodohide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -2932,7 +2932,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35024, {	-- Brutal Gladiator's Kodohide Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35112, {	-- Brutal Gladiator's Wyrmhide Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3038,7 +3038,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35030, {	-- Brutal Gladiator's Lamellar Legguards
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35061, {	-- Brutal Gladiator's Ornamented Headcover
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3054,7 +3054,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35062, {	-- Brutal Gladiator's Ornamented Legplates
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35090, {	-- Brutal Gladiator's Scaled Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3098,7 +3098,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35055, {	-- Brutal Gladiator's Mooncloth Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35084, {	-- Brutal Gladiator's Satin Hood
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3157,7 +3157,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 35143 },	-- Guardian's Mail Sabatons
 						{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
 						{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
-						{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+						{"select", "itemID", 35147 },   -- Guardian's Ringmail Sabatons
 						{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
 					},
 				}),
@@ -3176,7 +3176,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35045, {	-- Brutal Gladiator's Linked Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35050, {	-- Brutal Gladiator's Mail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3192,7 +3192,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35051, {	-- Brutal Gladiator's Mail Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35079, {	-- Brutal Gladiator's Ringmail Helm
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
@@ -3236,7 +3236,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(35005, {	-- Brutal Gladiator's Dreadweave Leggings
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
-				
+
 				i(35010, {	-- Brutal Gladiator's Felweave Cowl
 					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
