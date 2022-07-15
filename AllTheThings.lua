@@ -1815,12 +1815,24 @@ app.SourceSpecificFields = {
 			-- print("new:",new)
 		return new;
 	end,
+-- Returns the 'highest' Removed with Patch value from the provided set of `rwp` values
+	["rwp"] = function(...)
+		local vals, max = {...}, -1;
+		for _,rwp in pairs(vals) do
+			-- missing rwp value means NOT removed
+			if not rwp then return; end
+			-- track the highest rwp value, which is the furthest-future patch
+			if rwp > max then
+				max = rwp;
+			end
+		end
+		-- print("max:",max)
+		return max;
+	end,
 -- Simple boolean
 	["pvp"] = true,
 	["pb"] = true,
 	["requireSkill"] = true,
-	-- Only show 'Removed with Patch' if all Sources of a Thing are marked with 'rwp'
-	["rwp"] = true,
 };
 -- Merges the properties of the t group into the g group, making sure not to alter the filterability of the group.
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
@@ -1871,18 +1883,21 @@ local MergeProperties = function(g, t, noReplace, clone)
 				g[k] = t[k];
 			end
 		else
+			local gk, tk;
 			for k,f in pairs(app.SourceSpecificFields) do
 				-- existing is set
-				if g[k] then
+				gk = g[k];
+				if gk then
+					tk = t[k];
 					-- no value on merger
-					if not t[k] then
-						-- print("remove",k,g[k],t[k])
+					if not tk then
+						-- print("remove",k,gk,tk)
 						g[k] = nil;
 					elseif f and type(f) == "function" then
 						-- two different values with a compare function
-						-- print("compare",k,g[k],t[k])
-						g[k] = f(g[k], t[k]);
-						-- print("result",g[k])
+						-- print("compare",k,gk,tk)
+						g[k] = f(gk, tk);
+						-- print("result",gk)
 					end
 				end
 			end

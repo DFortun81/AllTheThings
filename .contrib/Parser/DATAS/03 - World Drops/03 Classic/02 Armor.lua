@@ -399,7 +399,6 @@ _.WorldDrops =
 				un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 				i(12005),	-- Granite Ring
 				i(11997),	-- Greenstone Circle
-				un(REMOVED_FROM_GAME, i(18674)),	-- Hardened Stone Band
 				i(5001),	-- Heart Ring
 				i(11973),	-- Hematite Link
 				i(18701),	-- Innervating Band
