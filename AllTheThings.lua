@@ -1819,6 +1819,8 @@ app.SourceSpecificFields = {
 	["pvp"] = true,
 	["pb"] = true,
 	["requireSkill"] = true,
+	-- Only show 'Removed with Patch' if all Sources of a Thing are marked with 'rwp'
+	["rwp"] = true,
 };
 -- Merges the properties of the t group into the g group, making sure not to alter the filterability of the group.
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
