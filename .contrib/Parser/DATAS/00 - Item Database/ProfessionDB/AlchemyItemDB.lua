@@ -506,7 +506,7 @@ i(191453, 370554);	-- Breezy Potion of Draconic Vigor
 i(191591, 370730);	-- Brood Salt
 i(191544, 370673);	-- Cauldron of the Pooka
 i(191439, 370476);	-- Charged Phial of Alacrity
-i(191441, 370483);	-- Crystaline Phial Perception
+i(191441, 370483);	-- Crystaline Phial of Perception
 i(191448, 370536);	-- Delicate Suspension of Spores
 i(191452, 370551);	-- Elemental Potion of Power
 i(191450, 370543);	-- Elemental Potion of Ultimate Power

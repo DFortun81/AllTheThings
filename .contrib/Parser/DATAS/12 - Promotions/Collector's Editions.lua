@@ -161,7 +161,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 			i(153541),	-- Tottle
 		},
 	}),
-	tier(SL_TIER, {
+	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["timeline"] = { "added 9.0.1" },
 		["groups"] = {
@@ -194,7 +194,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 				},
 			}),
 		},
-	}),
+	})),
 	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { "added 9.2.5" },

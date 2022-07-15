@@ -25,6 +25,4 @@ end
 ------------------
 -- PATCH 10.0.0 --
 ------------------
-i(0, 366252);	-- Herb Gathering
-i(0, 377984);	-- Heart in a Bottle
-i(0, 382582);	-- Opening
+i(0, 366253);	-- Dragon Isles Fishing
