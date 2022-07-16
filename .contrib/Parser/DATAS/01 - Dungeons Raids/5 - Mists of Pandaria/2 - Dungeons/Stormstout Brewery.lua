@@ -127,11 +127,15 @@ _.Instances = { tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(81077)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
 					})),
 					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
-						ach(6456),	-- Heroic: Stormstout Brewery
 						crit(6, {	-- Yan-Zhu the Uncasked
 							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
+							["cost"] = {
+								{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
+								{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
+								{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
+							},
 						}),
+						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6457),	-- Stormstout Brewery
 						i(144124),	-- Wort Stirring Rod
 						i(144085),	-- Gao's Keg Tapper

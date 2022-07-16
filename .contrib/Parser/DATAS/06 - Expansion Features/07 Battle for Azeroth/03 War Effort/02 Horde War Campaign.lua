@@ -57,7 +57,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-						ach(13924, {	-- The Fourth War
+						h(ach(13924, {	-- The Fourth War
 							["sourceQuests"] = {
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal
@@ -67,7 +67,7 @@ _.ExpansionFeatures =
 								crit(2),	-- Tides of Vengeance
 								title(412),	-- Veteran of the Fourth War
 							},
-						}),
+						})),
 					}),
 					n(REWARDS, {
 						["description"] = "You'll be offered these rewards at the end of your first foothold.",

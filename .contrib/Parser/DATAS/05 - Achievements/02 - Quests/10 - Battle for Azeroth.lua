@@ -237,9 +237,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Turning the Tide
 		})),
 		ach(14157),		-- The Corruptor's End
-		h(ach(13924, {	-- The Fourth War
-			title(412),		-- Veteran of the Fourth War, <Name>
-		})),
 		a(ach(13049, {	-- The Long Con
 			crit(1),	-- Aged to Perfection
 			crit(2),	-- Trixie Business

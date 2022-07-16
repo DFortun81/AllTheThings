@@ -22,7 +22,19 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 								["cost"] = { { "i", 172957, 50 } },	-- 50x Atonement Crypt Key
 								["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 							}),
-							ach(14276),		-- It's Always Sinny in Revendreth
+							ach(14276, {	-- It's Always Sinny in Revendreth
+								-- TODO: fix
+								-- crit(1),		-- Inquisitor Otilia
+								-- crit(2),		-- Inquisitor Petre
+								-- crit(3),		-- Inquisitor Sorin
+								-- crit(4),		-- Inquisitor Traian
+								-- crit(5),		-- High Inquisitor Dacian
+								-- crit(6),		-- High Inquisitor Gabi
+								-- crit(7),		-- High Inquisitor Magda
+								-- crit(8),		-- High Inquisitor Radu
+								-- crit(9),		-- Grand Inquisitor Aurica
+								-- crit(10),		-- Grand Inquisitor Nicu
+							}),
 						}),
 					}),
 					n(QUESTS, {

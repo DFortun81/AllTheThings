@@ -131,7 +131,11 @@ _.Instances = { tier(MOP_TIER, {
 					cr(56732, e(658, {	-- Liu Flameheart
 						crit(2, {	-- Liu Flameheart
 							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
+							["cost"] = {
+								{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
+								{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
+								{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
+							},
 						}),
 						i(144090),	-- Firebelcher Hand Cannon
 						i(143971),	-- Serpentstrike Shoulderpads

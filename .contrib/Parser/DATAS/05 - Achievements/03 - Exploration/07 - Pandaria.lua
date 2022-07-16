@@ -156,13 +156,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),	-- Firestorm Egg
 			crit(7),	-- Fiery Altar of Ordos
 		}),
-		ach(8721, {	-- Fire-Watcher
-			title(251),	-- Fire-Watcher
-			ach(8720),	-- Kilnmaster
-			ach(8719),	-- Blazebinder
-			ach(8718),	-- Oathguard
-			ach(8717),	-- Candlekeeper
-		}),
 		ach(6846, {	-- Fish Tales
 			crit(1),	-- Watersmithing (Jade Forest)
 			crit(2, {	-- Waterspeakers

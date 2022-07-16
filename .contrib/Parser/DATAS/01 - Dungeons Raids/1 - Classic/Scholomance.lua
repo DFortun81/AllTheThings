@@ -1278,6 +1278,19 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(88350),	-- Leggings of Unleashed Anguish
 					},
 				}),
+				n(59613, {	-- Professor Slate <Potions Master>
+					["timeline"] = { "added 5.0.4" },
+					["g"] = bubbleDown({["ignoreBonus"] = true},{
+						i(85580, {	-- Empty Polyformic Acid Vial
+							["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+							["g"] = {
+								i(85589),	-- Nearly Full Vial of Polyformic Acid
+								i(85592),	-- Half Full Vial of Polyformic Acid
+								i(85593),	-- Nearly Empty Vial of Polyformic Acid
+							},
+						}),
+					}),
+				}),
 				e(684, {	-- Darkmaster Gandling
 					["creatureID"] = 59080,
 					["timeline"] = { "added 5.0.4" },
@@ -1488,6 +1501,19 @@ root("Instances", tier(CLASSIC_TIER, {
 								["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
 							}),
 						},
+					}),
+					n(59613, {	-- Professor Slate <Potions Master>
+						["timeline"] = { "added 5.0.4" },
+						["g"] = bubbleDown({["ignoreBonus"] = true},{
+							i(85580, {	-- Empty Polyformic Acid Vial
+								["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+								["g"] = {
+									i(85589),	-- Nearly Full Vial of Polyformic Acid
+									i(85592),	-- Half Full Vial of Polyformic Acid
+									i(85593),	-- Nearly Empty Vial of Polyformic Acid
+								},
+							}),
+						}),
 					}),
 					e(684, {	-- Darkmaster Gandling
 						["creatureID"] = 59080,	-- Darkmaster Gandling
