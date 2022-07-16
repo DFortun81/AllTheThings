@@ -6222,7 +6222,7 @@ local function UpdateSearchResults(searchResults)
 		local Update = app.DirectGroupUpdate;
 		-- app.PrintDebug("Updating",#found,"groups")
 		for _,o in ipairs(found) do
-			Update(o);
+			Update(o, true);
 		end
 	end
 	-- app.PrintDebug("UpdateSearchResults Done")
@@ -14298,8 +14298,9 @@ local function TopLevelUpdateGroup(group, window)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 -- For directly applying the full Update operation at the specified group, and propagating the difference upwards in the parent hierarchy,
--- then triggering a 1/2 second delayed soft-update of the Window containing the group if any
-local function DirectGroupUpdate(group)
+-- then triggering a 1/2 second delayed soft-update of the Window containing the group if any. 'got' indicates that this group was 'gotten'
+-- and was the cause for the update
+local function DirectGroupUpdate(group, got)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	local parent = rawget(group, "parent");
 	if parent and not app.RecursiveGroupRequirementsFilter(group) then
@@ -14340,7 +14341,7 @@ local function DirectGroupUpdate(group)
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
-		DelayedCallback(window.Update, 0.5, window, window.isQuestChain);
+		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
