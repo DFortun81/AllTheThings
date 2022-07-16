@@ -108,9 +108,7 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 				itemcrit(154924, 12765, 4),	-- Jagged Blade of the Drust
 				itemcrit(154925, 12765, 5),	-- Ritual Fetish
 				itemcrit(160741, 12765, 6),	-- Soul Coffer
-				n(QUESTS, sharedData({
-					["requireSkill"] = ARCHAEOLOGY,
-				},{
+				n(QUESTS, {
 					q(51951, {	-- Pristine Ancient Runebound Tome
 						["provider"] = { "i", 154927 },	-- Pristine Ancient Runebound Tome
 					}),
@@ -129,7 +127,7 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 					q(51955, {	-- Pristine Soul Coffer
 						["provider"] = { "i", 160742 },	-- Pristine Soul Coffer
 					}),
-				})),
+				}),
 			}),
 			currency(1534, {	-- Zandalari
 				-- Solves
@@ -142,9 +140,7 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 				itemcrit(154916, 12765, 10),	-- High Apothecary's Hood
 				itemcrit(154915, 12765, 9),	-- Rezan Idol
 				itemcrit(154914, 12765, 8),	-- Urn of Passage
-				n(QUESTS, sharedData({
-					["requireSkill"] = ARCHAEOLOGY,
-				},{
+				n(QUESTS, {
 					q(51926, {	-- Pristine Akun'Jar Vase
 						["provider"] = { "i", 154931 },	-- Pristine Akun'Jar Vase
 					}),
@@ -163,7 +159,7 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 					q(51929, {	-- Pristine Urn of Passage
 						["provider"] = { "i", 154932 },	-- Pristine Urn of Passage
 					}),
-				})),
+				}),
 			}),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {

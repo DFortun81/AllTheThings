@@ -265,9 +265,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				itemcrit(114200, 9415, 4),	-- Solar Orb
 				itemcrit(114201, 9415, 5),	-- Sundial
 				itemcrit(114202, 9415, 6),	-- Talonpriest Mask
-				n(QUESTS, sharedData({
-					["requireSkill"] = ARCHAEOLOGY,
-				},{
+				n(QUESTS, {
 					q(36778, {	-- Pristine Apexis Crystal
 						["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
 					}),
@@ -298,7 +296,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					q(36776, {	-- Pristine Talonpriest Mask
 						["provider"] = { "i", 114220 },	-- Pristine Talonpriest Mask
 					}),
-				})),
+				}),
 			}),
 			currency(821,  {	-- Draenor Clans
 				-- Solves
@@ -323,9 +321,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					itemcrit(114151, 9413, 17),	-- Warsong Ceremonial Pike
 					itemcrit(114159, 9413, 18),	-- Weighted Chopping Axe
 					itemcrit(114145, 9413, 19),	-- Wolfskin Snowshoes
-				n(QUESTS, sharedData({
-					["requireSkill"] = ARCHAEOLOGY,
-				},{
+				n(QUESTS, {
 					q(36756, {	-- Pristine Ancestral Talisman
 						["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
 					}),
@@ -383,7 +379,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					q(36744, {	-- Pristine Wolfskin Snowshoes
 						["provider"] = { "i", 114146 },	-- Pristine Wolfskin Snowshoes
 					}),
-				})),
+				}),
 			}),
 			currency(828,  {	-- Ogre
 				-- Solve
@@ -399,9 +395,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				itemcrit(114192, 9414, 8),	-- Stone Dentures
 				itemcrit(114183, 9414, 9),	-- Stone Manacles
 				itemcrit(114181, 9414, 10),	-- Stonemaul Succession Stone
-				n(QUESTS, sharedData({
-					["requireSkill"] = ARCHAEOLOGY,
-				},{
+				n(QUESTS, {
 					q(36767, {	-- Pristine Eye of Har'guun
 						["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
 					}),
@@ -432,7 +426,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					q(36761, {	-- Pristine Stonemaul Succession Stone
 						["provider"] = { "i", 114182 },	-- Pristine Stonemaul Succession Stone
 					}),
-				})),
+				}),
 			}),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {

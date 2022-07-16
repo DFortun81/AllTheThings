@@ -205,29 +205,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 					}),
 					q(40360, {	-- Pristine Flayed-Skin Chronicle
-						["lvl"] = 98,
 						["provider"] = { "i", 130932 },	-- Pristine Flayed-Skin Chronicle
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40363, {	-- Pristine Houndstooth Hauberk
-						["requireSkill"] = ARCHAEOLOGY,
 						["provider"] = { "i", 130935 },	-- Pristine Houndstooth Hauberk
-						["lvl"] = 98,
 					}),
 					q(40359, {	-- Pristine Imp's Cup
-						["lvl"] = 98,
 						["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40361, {	-- Pristine Malformed Abyssal
-						["lvl"] = 98,
 						["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40362, {	-- Pristine Orb of Inner Chaos
-						["lvl"] = 98,
 						["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 				}),
 			}),
@@ -334,29 +324,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 					}),
 					q(40350, {	-- Pristine Inert Leystone Charm
-						["lvl"] = 98,
 						["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40353, {	-- Pristine Nobleman's Letter Opener
-						["lvl"] = 98,
 						["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40352, {	-- Pristine Pre-War Highborne Tapestry
-						["lvl"] = 98,
 						["provider"] = { "i", 130924 },	-- Pristine
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40351, {	-- Pristine Quietwine Vial
-						["lvl"] = 98,
 						["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40349, {	-- Pristine Violetglass Vessel
-						["lvl"] = 98,
 						["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 				}),
 			}),
@@ -411,29 +391,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 					}),
 					q(40357, {	-- Pristine Drogbar Gem-Roller
-						["lvl"] = 98,
 						["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40356, {	-- Pristine Hand-Smoothed Pyrestone
-						["lvl"] = 98,
 						["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40355, {	-- Pristine Moosebone Fish-Hook
-						["lvl"] = 98,
 						["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40358, {	-- Pristine Stonewood Bow
-						["lvl"] = 98,
 						["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 					q(40354, {	-- Pristine Trailhead Drum
-						["lvl"] = 98,
 						["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
-						["requireSkill"] = ARCHAEOLOGY,
 					}),
 				}),
 			}),
