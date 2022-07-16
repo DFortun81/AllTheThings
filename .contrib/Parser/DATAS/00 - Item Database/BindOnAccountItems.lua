@@ -171,3 +171,20 @@ i(102264);	-- Timeless Plate Boot
 i(104345);	-- Timeless Lavalliere
 i(102291);	-- Timeless Signet
 i(104347);	-- Timeless Curio
+
+-- Archaeology Solves
+i(64489);	-- Staff of Sorcerer-Thane Thaurissan
+i(69764);	-- Extinct Turtle Shell
+i(64643);	-- Queen Azshara's Dressing Gown
+i(64644);	-- Headdress of the First Shaman
+i(64885);	-- Scimitar of the Sirocco
+i(64880);	-- Staff of Ammunae
+i(64377);	-- Zin'rokh; Destroyer of Worlds
+i(64460);	-- Nifflevar Bearded Axe
+i(95391);	-- Mantid Sky Reaver
+i(95392);	-- Sonic Pulse Generator
+i(89685);	-- Spear of Xuen
+i(89684);	-- Umbrella of Chi-Ji
+i(117382);	-- Beakbreaker of Terokk
+i(116985);	-- Headdress of the First Shaman
+i(117384);	-- Warmaul of the Warmaul Chieftain
