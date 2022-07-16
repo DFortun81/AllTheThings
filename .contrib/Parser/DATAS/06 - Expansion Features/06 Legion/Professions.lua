@@ -96,7 +96,53 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				ach(10602),		-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
 				ach(10601),		-- Surveying the Land
 			}),
-			ach(10605),	-- Handle With Care
+			ach(10605, {	-- Handle With Care
+				crit(1, {	-- Imp's Cup
+					["provider"] = { "i", 130916 },	-- Imp's Cup
+				}),
+				crit(2, {	-- Flayed-Skin Chronicle
+					["provider"] = { "i", 130917 },	-- Flayed-Skin Chronicle
+				}),
+				crit(3, {	-- Malformed Abyssal
+					["provider"] = { "i", 130918 },	-- Malformed Abyssal
+				}),
+				crit(4, {	-- Orb of Inner Chaos
+					["provider"] = { "i", 130919 },	-- Orb of Inner Chaos
+				}),
+				crit(5, {	-- Houndstooth Hauberk
+					["provider"] = { "i", 130920 },	-- Houndstooth Hauberk
+				}),
+				crit(6, {	-- Violetglass Vessel
+					["provider"] = { "i", 130906 },	-- Violetglass Vessel
+				}),
+				crit(7, {	-- Inert Leystone Charm
+					["provider"] = { "i", 130907 },	-- Inert Leystone Charm
+				}),
+				crit(8, {	-- Quietwine Vial
+					["provider"] = { "i", 130908 },	-- Quietwine Vial
+				}),
+				crit(9, {	-- Pre-War Highborne Tapestry
+					["provider"] = { "i", 130909 },	-- Pre-War Highborne Tapestry
+				}),
+				crit(10, {	-- Nobleman's Letter Opener
+					["provider"] = { "i", 130910 },	-- Nobleman's Letter Opener
+				}),
+				crit(11, {	-- Trailhead Drum
+					["provider"] = { "i", 130911 },	-- Trailhead Drum
+				}),
+				crit(12, {	-- Moosebone Fish-Hook
+					["provider"] = { "i", 130912 },	-- Moosebone Fish-Hook
+				}),
+				crit(13, {	-- Hand-Smoothed Pyrestone
+					["provider"] = { "i", 130913 },	-- Hand-Smoothed Pyrestone
+				}),
+				crit(14, {	-- Drogbar Gem-Roller
+					["provider"] = { "i", 130914 },	-- Drogbar Gem-Roller
+				}),
+				crit(15, {	-- Stonewood Bow
+					["provider"] = { "i", 130915 },	-- Stonewood Bow
+				}),
+			}),
 			ach(10609, {	-- No Stone Unturned (250)
 				title(333),		-- the Groundbreaker
 				ach(10608),		-- Sifting Through the Sand (100)
@@ -108,11 +154,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			}),
 			currency(1174, {	-- Demonic
 				-- Solves
-				itemcrit(130917, 10605, 2),	-- Flayed-Skin Chronicle
-				itemcrit(130920, 10605, 5),	-- Houndstooth Hauberk
-				itemcrit(130916, 10605, 1),	-- Imp's Cup
-				itemcrit(130918, 10605, 3),	-- Malformed Abyssal
-				itemcrit(130919, 10605, 4),	-- Orb of Inner Chaos
+				i(130917),	-- Flayed-Skin Chronicle
+				i(130920),	-- Houndstooth Hauberk
+				i(130916),	-- Imp's Cup
+				i(130918),	-- Malformed Abyssal
+				i(130919),	-- Orb of Inner Chaos
 				n(QUESTS, {
 					-- Crystalline Eye of Undravius
 					q(41157, {	-- Corrupted Studies
@@ -223,11 +269,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			}),
 			currency(1172, {	-- Highborne
 				-- Solves
-				itemcrit(130907, 10605, 7),	-- Inert Leystone Charm
-				itemcrit(130910, 10605, 10),	-- Nobleman's Letter Opener
-				itemcrit(130909, 10605, 9),	-- Pre-War Highborne Tapestry
-				itemcrit(130908, 10605, 8),	-- Quietwine Vial
-				itemcrit(130906, 10605, 6),	-- Violetglass Vessel
+				i(130907),	-- Inert Leystone Charm
+				i(130910),	-- Nobleman's Letter Opener
+				i(130909),	-- Pre-War Highborne Tapestry
+				i(130908),	-- Quietwine Vial
+				i(130906),	-- Violetglass Vessel
 				prof(INSCRIPTION, {
 					i(137782, {	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
@@ -342,11 +388,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 			}),
 			currency(1173, {	-- Highmountain Tauren
 				-- Solves
-				itemcrit(130914, 10605, 14),	-- Drogbar Gem-Roller
-				itemcrit(130913, 10605, 13),	-- Hand-Smoothed Pyrestone
-				itemcrit(130912, 10605, 12),	-- Moosebone Fish-Hook
-				itemcrit(130915, 10605, 15),	-- Stonewood Bow
-				itemcrit(130911, 10605, 11),	-- Trailhead Drum
+				i(130914),	-- Drogbar Gem-Roller
+				i(130913),	-- Hand-Smoothed Pyrestone
+				i(130912),	-- Moosebone Fish-Hook
+				i(130915),	-- Stonewood Bow
+				i(130911),	-- Trailhead Drum
 				n(QUESTS, {
 					-- Spirit of Eche'ro
 					q(41193, {	-- Laying to Rest
@@ -406,6 +452,24 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
 					}),
 				}),
+			}),
+			i(164625, {	-- Crate of Demon Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 1174, }	-- Demon Archaeology Fragment
+				},
+			}),
+			i(164626, {	-- Crate of Highborne Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 1172, }	-- Highborne Archaeology Fragment
+				},
+			}),
+			i(164627, {	-- Crate of Highmountain Tauren Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 1173, }	-- Highmountain Tauren Archaeology Fragment
+				},
 			}),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
@@ -1012,5 +1076,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				}),
 			}),
 		})),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, {
+			q(41805),	-- Key of Kalyndras tracking quest
+		}),
 	}),
 })));

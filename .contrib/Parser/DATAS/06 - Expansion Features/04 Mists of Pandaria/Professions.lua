@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "added 5.0.1" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(6837),	-- Zen Master Archaeologist
@@ -475,6 +475,24 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 						["provider"] = { "i", 89179 },	-- Pristine Walking Cane
 					}),
 				}),
+			}),
+			i(117388, {	-- Crate of Mantid Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 754, }	-- Mantid Archaeology Fragment
+				},
+			}),
+			i(117387, {	-- Crate of Mogu Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 677, }	-- Mogu Archaeology Fragment
+				},
+			}),
+			i(117386, {	-- Crate of Pandaren Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 676, }	-- Pandaren Archaeology Fragment
+				},
 			}),
 		})),
 	}),

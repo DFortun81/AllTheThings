@@ -11,7 +11,44 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 			ach(12761, {	-- Zandalari Archaeologist
 				["races"] = HORDE_ONLY,
 			}),
-			ach(12765),	-- Exotic Discoveries
+			ach(12765, {	-- Exotic Discoveries
+				crit(1, {	-- Ceremonial Bonesaw
+					["provider"] = { "i", 154921 },	-- Ceremonial Bonesaw
+				}),
+				crit(2, {	-- Ancient Runebound Tome
+					["provider"] = { "i", 154922 },	-- Ancient Runebound Tome
+				}),
+				crit(3, {	-- Disembowling Sickle
+					["provider"] = { "i", 154923 },	-- Disembowling Sickle
+				}),
+				crit(4, {	-- Jagged Blade of the Drust
+					["provider"] = { "i", 154924 },	-- Jagged Blade of the Drust
+				}),
+				crit(5, {	-- Ritual Fetish
+					["provider"] = { "i", 154925 },	-- Ritual Fetish
+				}),
+				crit(6, {	-- Soul Coffer
+					["provider"] = { "i", 160741 },	-- Soul Coffer
+				}),
+				crit(7, {	-- Akun'Jar Vase
+					["provider"] = { "i", 154913 },	-- Akun'Jar Vase
+				}),
+				crit(8, {	-- Urn of Passage
+					["provider"] = { "i", 154914 },	-- Urn of Passage
+				}),
+				crit(9, {	-- Rezan Idol
+					["provider"] = { "i", 154915 },	-- Rezan Idol
+				}),
+				crit(10, {	-- High Apothecary's Hood
+					["provider"] = { "i", 154916 },	-- High Apothecary's Hood
+				}),
+				crit(11, {	-- Bwonsamdi Voodoo Mask
+					["provider"] = { "i", 154917 },	-- Bwonsamdi Voodoo Mask
+				}),
+				crit(12, {	-- Blowgun of the Sethra
+					["provider"] = { "i", 160743 },	-- Blowgun of the Sethra
+				}),
+			}),
 			ach(12770, {	-- Lengthy Legwork
 				ach(12769),		-- Light Travel
 			}),
@@ -102,12 +139,12 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 				i(160751),	-- Dance of the Dead (TOY!)
 				i(160833),	-- Fetish of the Tormented Mind
 				i(161089),	-- Restored Revenant
-				itemcrit(154922, 12765, 2),	-- Ancient Runebound Tome
-				itemcrit(154921, 12765, 1),	-- Ceremonial Bonesaw
-				itemcrit(154923, 12765, 3),	-- Disembowling Sickle
-				itemcrit(154924, 12765, 4),	-- Jagged Blade of the Drust
-				itemcrit(154925, 12765, 5),	-- Ritual Fetish
-				itemcrit(160741, 12765, 6),	-- Soul Coffer
+				i(154922),	-- Ancient Runebound Tome
+				i(154921),	-- Ceremonial Bonesaw
+				i(154923),	-- Disembowling Sickle
+				i(154924),	-- Jagged Blade of the Drust
+				i(154925),	-- Ritual Fetish
+				i(160741),	-- Soul Coffer
 				n(QUESTS, {
 					q(51951, {	-- Pristine Ancient Runebound Tome
 						["provider"] = { "i", 154927 },	-- Pristine Ancient Runebound Tome
@@ -134,12 +171,12 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 				i(160740),	-- Croak Crock (TOY!)
 				i(161080),	-- Intact Direhorn Egg
 				i(160753),	-- Sanguinating Totem
-				itemcrit(154913, 12765, 7),	-- Akun'Jar Vase
-				itemcrit(160743, 12765, 12),	-- Blowgun of the Sethra
-				itemcrit(154917, 12765, 11),	-- Bwonsamdi Voodoo Mask
-				itemcrit(154916, 12765, 10),	-- High Apothecary's Hood
-				itemcrit(154915, 12765, 9),	-- Rezan Idol
-				itemcrit(154914, 12765, 8),	-- Urn of Passage
+				i(154913),	-- Akun'Jar Vase
+				i(160743),	-- Blowgun of the Sethra
+				i(154917),	-- Bwonsamdi Voodoo Mask
+				i(154916),	-- High Apothecary's Hood
+				i(154915),	-- Rezan Idol
+				i(154914),	-- Urn of Passage
 				n(QUESTS, {
 					q(51926, {	-- Pristine Akun'Jar Vase
 						["provider"] = { "i", 154931 },	-- Pristine Akun'Jar Vase
@@ -160,6 +197,18 @@ root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.
 						["provider"] = { "i", 154932 },	-- Pristine Urn of Passage
 					}),
 				}),
+			}),
+			i(183834, {	-- Crate of Drust Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 1535, }	-- Drust Archaeology Fragment
+				},
+			}),
+			i(183835, {	-- Crate of Zandalari Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 1534, }	-- Zandalari Archaeology Fragment
+				},
 			}),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {

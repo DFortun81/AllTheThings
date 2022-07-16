@@ -6,10 +6,130 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(9409),	-- Draenor Archaeologist
-			ach(9414),	-- Ogre Observer
-			ach(9415),	-- Secrets of Skettis
-			ach(9413),	-- Strength and Honor
-			ach(9412,  {	-- Arakkoa Archivist
+			ach(9414, {	-- Ogre Observer
+				crit(1, {	-- Eye of Har'gunn the Blind
+					["provider"] = { "i", 114191 },	-- Eye of Har'gunn the Blind
+				}),
+				crit(2, {	-- Gladiator's Shield
+					["provider"] = { "i", 114189 },	-- Gladiator's Shield
+				}),
+				crit(3, {	-- Imperial Decree Stele
+					["provider"] = { "i", 114194 },	-- Imperial Decree Stele
+				}),
+				crit(4, {	-- Mortar and Pestle
+					["provider"] = { "i", 114190 },	-- Mortar and Pestle
+				}),
+				crit(5, {	-- Ogre Figurine
+					["provider"] = { "i", 114185 },	-- Ogre Figurine
+				}),
+				crit(6, {	-- Pictogram Carving
+					["provider"] = { "i", 114187 },	-- Pictogram Carving
+				}),
+				crit(7, {	-- Rylak Riding Harness
+					["provider"] = { "i", 114193 },	-- Rylak Riding Harness
+				}),
+				crit(8, {	-- Stone Dentures
+					["provider"] = { "i", 114192 },	-- Stone Dentures
+				}),
+				crit(9, {	-- Stone Manacles
+					["provider"] = { "i", 114183 },	-- Stone Manacles
+				}),
+				crit(10, {	-- Stonemaul Succession Stone
+					["provider"] = { "i", 114181 },	-- Stonemaul Succession Stone
+				}),
+			}),
+			ach(9415, {	-- Secrets of Skettis
+				crit(1, {	-- Dreamcatcher
+					["provider"] = { "i", 114197 },	-- Dreamcatcher
+				}),
+				crit(2, {	-- Burial Urn
+					["provider"] = { "i", 114198 },	-- Burial Urn
+				}),
+				crit(3, {	-- Decree Scrolls
+					["provider"] = { "i", 114199 },	-- Decree Scrolls
+				}),
+				crit(4, {	-- Solar Orb
+					["provider"] = { "i", 114200 },	-- Solar Orb
+				}),
+				crit(5, {	-- Sundial
+					["provider"] = { "i", 114201 },	-- Sundial
+				}),
+				crit(6, {	-- Talonpriest Mask
+					["provider"] = { "i", 114202 },	-- Talonpriest Mask
+				}),
+				crit(7, {	-- Outcast Dreamcatcher
+					["provider"] = { "i", 114203 },	-- Outcast Dreamcatcher
+				}),
+				crit(8, {	-- Apexis Crystal
+					["provider"] = { "i", 114204 },	-- Apexis Crystal
+				}),
+				crit(9, {	-- Apexis Hieroglyph
+					["provider"] = { "i", 114205 },	-- Apexis Hieroglyph
+				}),
+				crit(10, {	-- Apexis Scroll
+					["provider"] = { "i", 114206 },	-- Apexis Scroll
+				}),
+			}),
+			ach(9413, {	-- Strength and Honor
+				crit(1, {	-- Ancestral Talisman
+					["provider"] = { "i", 114171 },	-- Ancestral Talisman
+				}),
+				crit(2, {	-- Barbed Fishing Hook
+					["provider"] = { "i", 114163 },	-- Barbed Fishing Hook
+				}),
+				crit(3, {	-- Blackrock Razor
+					["provider"] = { "i", 114157 },	-- Blackrock Razor
+				}),
+				crit(4, {	-- Calcified Eye in a Jar
+					["provider"] = { "i", 114165 },	-- Calcified Eye in a Jar
+				}),
+				crit(5, {	-- Ceremonial Tattoo Needles
+					["provider"] = { "i", 114167 },	-- Ceremonial Tattoo Needles
+				}),
+				crit(6, {	-- Cracked Ivory Idol
+					["provider"] = { "i", 114169 },	-- Cracked Ivory Idol
+				}),
+				crit(7, {	-- Doomsday Prophecy
+					["provider"] = { "i", 114177 },	-- Doomsday Prophecy
+				}),
+				crit(8, {	-- Elemental Bellows
+					["provider"] = { "i", 114155 },	-- Elemental Bellows
+				}),
+				crit(9, {	-- Fang-Scarred Frostwolf Axe
+					["provider"] = { "i", 114141 },	-- Fang-Scarred Frostwolf Axe
+				}),
+				crit(10, {	-- Flask of Blazegrease
+					["provider"] = { "i", 114173 },	-- Flask of Blazegrease
+				}),
+				crit(11, {	-- Frostwolf Ancestry Scrimshaw
+					["provider"] = { "i", 114143 },	-- Frostwolf Ancestry Scrimshaw
+				}),
+				crit(12, {	-- Gronn-Tooth Necklace
+					["provider"] = { "i", 114175 },	-- Gronn-Tooth Necklace
+				}),
+				crit(13, {	-- Hooked Dagger
+					["provider"] = { "i", 114161 },	-- Hooked Dagger
+				}),
+				crit(14, {	-- Metalworker's Hammer
+					["provider"] = { "i", 114153 },	-- Metalworker's Hammer
+				}),
+				crit(15, {	-- Screaming Bullroarer
+					["provider"] = { "i", 114149 },	-- Screaming Bullroarer
+				}),
+				crit(16, {	-- Warsinger's Drums
+					["provider"] = { "i", 114147 },	-- Warsinger's Drums
+				}),
+				crit(17, {	-- Warsong Ceremonial Pike
+					["provider"] = { "i", 114151 },	-- Warsong Ceremonial Pike
+				}),
+				crit(18, {	-- Weighted Chopping Axe
+					["provider"] = { "i", 114159 },	-- Weighted Chopping Axe
+				}),
+				crit(19, {	-- Wolfskin Snowshoes
+					["provider"] = { "i", 114145 },	-- Wolfskin Snowshoes
+				}),
+			}),
+			ach(9412, {	-- Arakkoa Archivist
 				crit(1, {	-- Pristine Dreamcatcher
 					["_quests"] = { 36771 },
 				}),
@@ -41,7 +161,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					["_quests"] = { 36780 },
 				}),
 			}),
-			ach(9419,  {	-- Draenor Curator
+			ach(9419, {	-- Draenor Curator
 				crit(1, {	-- Pristine Dreamcatcher
 					["_quests"] = { 36771 },
 				}),
@@ -160,7 +280,7 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					["_quests"] = { 36770 },
 				}),
 			}),
-			ach(9411,  {	-- Highmaul Historian
+			ach(9411, {	-- Highmaul Historian
 				crit(1, { -- Pristine Stonemaul Succession Stone
 					["_quests"] = { 36761 },
 				}),
@@ -192,7 +312,8 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					["_quests"] = { 36770 },
 				}),
 			}),
-			ach(9410,  {	-- Unite the Clans
+			ach(9422),	-- The Search For Fact, Not Truth (30)
+			ach(9410, {	-- Unite the Clans
 				crit(1, {	-- Pristine Fang-Scarred Frostwolf Axe
 					["_quests"] = { 36725 },
 				}),
@@ -251,20 +372,20 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					["_quests"] = { 36760 },
 				}),
 			}),
-			currency(829,  {	-- Arakkoa
+			currency(829, {	-- Arakkoa
 				-- Solves
 				i(117354),	-- Ancient Nest Guardian
 				i(117382),	-- Beakbreaker of Terokk
-				itemcrit(114204, 9415, 8),	-- Apexis Crystal
-				itemcrit(114205, 9415, 9),	-- Apexis Hieroglyph
-				itemcrit(114206, 9415, 10),	-- Apexis Scroll
-				itemcrit(114198, 9415, 2),	-- Burial Urn
-				itemcrit(114199, 9415, 3),	-- Decree Scrolls
-				itemcrit(114197, 9415, 1),	-- Dreamcatcher
-				itemcrit(114203, 9415, 7),	-- Outcast Dreamcatcher
-				itemcrit(114200, 9415, 4),	-- Solar Orb
-				itemcrit(114201, 9415, 5),	-- Sundial
-				itemcrit(114202, 9415, 6),	-- Talonpriest Mask
+				i(114204),	-- Apexis Crystal
+				i(114205),	-- Apexis Hieroglyph
+				i(114206),	-- Apexis Scroll
+				i(114198),	-- Burial Urn
+				i(114199),	-- Decree Scrolls
+				i(114197),	-- Dreamcatcher
+				i(114203),	-- Outcast Dreamcatcher
+				i(114200),	-- Solar Orb
+				i(114201),	-- Sundial
+				i(114202),	-- Talonpriest Mask
 				n(QUESTS, {
 					q(36778, {	-- Pristine Apexis Crystal
 						["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
@@ -298,29 +419,29 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					}),
 				}),
 			}),
-			currency(821,  {	-- Draenor Clans
+			currency(821, {	-- Draenor Clans
 				-- Solves
 					i(117380),	-- Frostwolf Ghostpup
 					i(116985),	-- Headdress of the First Shaman
-					itemcrit(114171, 9413, 1),	-- Ancestral Talisman
-					itemcrit(114163, 9413, 2),	-- Barbed Fishing Hook
-					itemcrit(114157, 9413, 3),	-- Blackrock Razor
-					itemcrit(114165, 9413, 4),	-- Calcified Eye in a Jar
-					itemcrit(114167, 9413, 5),	-- Ceremonial Tattoo Needles
-					itemcrit(114169, 9413, 6),	-- Cracked Ivory Idol
-					itemcrit(114177, 9413, 7),	-- Doomsday Prophecy
-					itemcrit(114155, 9413, 8),	-- Elemental Bellows
-					itemcrit(114141, 9413, 9),	-- Fang-Scarred Frostwolf Axe
-					itemcrit(114173, 9413, 10),	-- Flask of Blazegrease
-					itemcrit(114143, 9413, 11),	-- Frostwolf Ancestry Scrimshaw
-					itemcrit(114175, 9413, 12),	-- Gronn-Tooth Necklace
-					itemcrit(114161, 9413, 13),	-- Hooked Dagger
-					itemcrit(114153, 9413, 14),	-- Metalworker's Hammer
-					itemcrit(114149, 9413, 15),	-- Screaming Bullroarer
-					itemcrit(114147, 9413, 16),	-- Warsinger's Drums
-					itemcrit(114151, 9413, 17),	-- Warsong Ceremonial Pike
-					itemcrit(114159, 9413, 18),	-- Weighted Chopping Axe
-					itemcrit(114145, 9413, 19),	-- Wolfskin Snowshoes
+					i(114171),	-- Ancestral Talisman
+					i(114163),	-- Barbed Fishing Hook
+					i(114157),	-- Blackrock Razor
+					i(114165),	-- Calcified Eye in a Jar
+					i(114167),	-- Ceremonial Tattoo Needles
+					i(114169),	-- Cracked Ivory Idol
+					i(114177),	-- Doomsday Prophecy
+					i(114155),	-- Elemental Bellows
+					i(114141),	-- Fang-Scarred Frostwolf Axe
+					i(114173),	-- Flask of Blazegrease
+					i(114143),	-- Frostwolf Ancestry Scrimshaw
+					i(114175),	-- Gronn-Tooth Necklace
+					i(114161),	-- Hooked Dagger
+					i(114153),	-- Metalworker's Hammer
+					i(114149),	-- Screaming Bullroarer
+					i(114147),	-- Warsinger's Drums
+					i(114151),	-- Warsong Ceremonial Pike
+					i(114159),	-- Weighted Chopping Axe
+					i(114145),	-- Wolfskin Snowshoes
 				n(QUESTS, {
 					q(36756, {	-- Pristine Ancestral Talisman
 						["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
@@ -381,20 +502,20 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					}),
 				}),
 			}),
-			currency(828,  {	-- Ogre
+			currency(828, {	-- Ogre
 				-- Solve
 				i(117385),	-- Sorcerer-King Toe Ring
 				i(117384),	-- Warmaul of the Warmaul Chieftain
-				itemcrit(114191, 9414, 1),	-- Eye of Har'gunn the Blind
-				itemcrit(114189, 9414, 2),	-- Gladiator's Shield
-				itemcrit(114194, 9414, 3),	-- Imperial Decree Stele
-				itemcrit(114190, 9414, 4),	-- Mortar and Pestle
-				itemcrit(114185, 9414, 5),	-- Ogre Figurine
-				itemcrit(114187, 9414, 6),	-- Pictogram Carving
-				itemcrit(114193, 9414, 7),	-- Rylak Riding Harness
-				itemcrit(114192, 9414, 8),	-- Stone Dentures
-				itemcrit(114183, 9414, 9),	-- Stone Manacles
-				itemcrit(114181, 9414, 10),	-- Stonemaul Succession Stone
+				i(114191),	-- Eye of Har'gunn the Blind
+				i(114189),	-- Gladiator's Shield
+				i(114194),	-- Imperial Decree Stele
+				i(114190),	-- Mortar and Pestle
+				i(114185),	-- Ogre Figurine
+				i(114187),	-- Pictogram Carving
+				i(114193),	-- Rylak Riding Harness
+				i(114192),	-- Stone Dentures
+				i(114183),	-- Stone Manacles
+				i(114181),	-- Stonemaul Succession Stone
 				n(QUESTS, {
 					q(36767, {	-- Pristine Eye of Har'guun
 						["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
@@ -428,6 +549,24 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 					}),
 				}),
 			}),
+			i(142113, {	-- Crate of Arakkoa Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 829, }	-- Arakkoa Archaeology Fragment
+				},
+			}),
+			i(142114, {	-- Crate of Draenor Clans Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 821, }	-- Draenor Clans Archaeology Fragment
+				},
+			}),
+			i(142115, {	-- Crate of Ogre Archaeology Fragments
+				["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
+				["g"] = {
+					{ ["currencyID"] = 828, }	-- Ogre Archaeology Fragment
+				},
+			}),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(36308, {	-- Enchanted Highmaul Bracer (A)
@@ -457,5 +596,15 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				},
 			}),
 		})),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.2" } }, {
+	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, {
+			q(33823),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #1
+			q(33824),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #2
+			q(33825),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #3
+		}),
 	}),
 })));
