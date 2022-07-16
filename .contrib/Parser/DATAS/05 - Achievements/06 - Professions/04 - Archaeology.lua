@@ -4,35 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["requireSkill"] = ARCHAEOLOGY },{
 	achcat(ACHIEVEMENT_CATEGORY_ARCHAEOLOGY, {
-		ach(10603, {	-- A Keen Eye
-			crit(1),		-- Corrupted Studies
-			crit(2),		-- A Beacon of Hope
-			crit(3),		-- Neltharion's Lair: Misdirected
-			crit(4),		-- Sifting Through the Rubble
-			crit(5),		-- The Gates of Valor
-			crit(6),		-- What Once Was Lost
-			crit(7),		-- The Apocalypse Bringer
-			crit(8),		-- Uncovering the Orb of Sciallax
-			crit(9),		-- Drogbar Deception
-			crit(10),		-- Dark Secrets
-			crit(11),		-- The Keys to Success
-			crit(12),		-- Darkheart Thicket: Through the Fog
-			crit(13),		-- Laying to Rest
-			ach(10602),		-- This Side Up
-			ach(10601),		-- Surveying the Land
-		}),
-		ach(9412,  {	-- Arakkoa Archivist
-			crit(1),		-- Pristine Dreamcatcher
-			crit(2),		-- Pristine Burial Urn
-			crit(3),		-- Pristine Decree Scrolls
-			crit(4),		-- Pristine Solar Orb
-			crit(5),		-- Pristine Sundial
-			crit(6),		-- Pristine Talonpriest Mask
-			crit(7),		-- Pristine Outcast Dreamcatcher
-			crit(8),		-- Pristine Apexis Crystal
-			crit(9),		-- Pristine Apexis Hieroglyph
-			crit(10),		-- Pristine Apexis Scroll
-		}),
 		ach(5193,  {	-- Blue Streak
 			crit(1),		-- Notched Sword of Tunadil the Redeemer
 			crit(2),		-- Dented Shield of Horuz Killcrow
@@ -131,47 +102,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(1),		-- Edicts of the Thunder King
 			crit(2),		-- Worn Monument Ledger
 		}),
-		ach(9419,  {	-- Draenor Curator
-			crit(1),		-- Pristine Dreamcatcher
-			crit(2),		-- Pristine Burial Urn
-			crit(3),		-- Pristine Decree Scrolls
-			crit(4),		-- Pristine Solar Orb
-			crit(5),		-- Pristine Sundial
-			crit(6),		-- Pristine Talonpriest Mask
-			crit(7),		-- Pristine Outcast Dreamcatcher
-			crit(8),		-- Pristine Apexis Crystal
-			crit(9),		-- Pristine Apexis Hieroglyph
-			crit(10),		-- Pristine Apexis Scroll
-			crit(11),		-- Pristine Fang-Scarred Frostwolf Axe
-			crit(12),		-- Pristine Frostwolf Ancestry Scrimshaw
-			crit(13),		-- Pristine Wolfskin Snowshoes
-			crit(14),		-- Pristine Warsinger's Drums
-			crit(15),		-- Pristine Screaming Bullroarer
-			crit(16),		-- Pristine Warsong Ceremonial Pike
-			crit(17),		-- Pristine Metalworker's Hammer
-			crit(18),		-- Pristine Elemental Bellows
-			crit(19),		-- Pristine Blackrock Razor
-			crit(20),		-- Pristine Weighted Chopping Axe
-			crit(21),		-- Pristine Hooked Dagger
-			crit(22),		-- Pristine Barbed Fishing Hook
-			crit(23),		-- Pristine Calcified Eye In A Jar
-			crit(24),		-- Pristine Ceremonial Tattoo Needles
-			crit(25),		-- Pristine Ancestral Talisman
-			crit(26),		-- Pristine Cracked Ivory Idol
-			crit(27),		-- Pristine Flask of Blazegrease
-			crit(28),		-- Pristine Gronn-Tooth Necklace
-			crit(29),		-- Pristine Doomsday Prophecy
-			crit(30),		-- Pristine Stonemaul Succession Stone
-			crit(31),		-- Pristine Stone Manacles
-			crit(32),		-- Pristine Ogre Figurine
-			crit(33),		-- Pristine Pictogram Carving
-			crit(34),		-- Pristine Gladiator's Shield
-			crit(35),		-- Pristine Mortar and Pestle
-			crit(36),		-- Pristine Eye of Har'guun the Blind
-			crit(37),		-- Pristine Stone Dentures
-			crit(38),		-- Pristine Rylak Riding Harness
-			crit(39),		-- Pristine Imperial Decree Stele
-		}),
 		ach(12765, {	-- Exotic Discoveries
 			crit(1),		-- Ceremonial Bonesaw
 			crit(2),		-- Ancient Runebound Tome
@@ -185,35 +115,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(10),		-- High Apothecary's Hood
 			crit(11),		-- Bwonsamdi Voodoo Mask
 			crit(12),		-- Blowgun of the Sethra
-		}),
-		ach(10605, {	-- Handle With Care
-			crit(1),		-- Imp's Cup
-			crit(2),		-- Flayed-Skin Chronicle
-			crit(3),		-- Malformed Abyssal
-			crit(4),		-- Orb of Inner Chaos
-			crit(5),		-- Houndstooth Hauberk
-			crit(6),		-- Violetglass Vessel
-			crit(7),		-- Inert Leystone Charm
-			crit(8),		-- Quietwine Vial
-			crit(9),		-- Pre-War Highborne Tapestry
-			crit(10),		-- Nobleman's Letter Opener
-			crit(11),		-- Trailhead Drum
-			crit(12),		-- Moosebone Fish-Hook
-			crit(13),		-- Hand-Smoothed Pyrestone
-			crit(14),		-- Drogbar Gem-Roller
-			crit(15),		-- Stonewood Bow
-		}),
-		ach(9411,  {	-- Highmaul Historian
-			crit(1),		-- Pristine Stonemaul Succession Stone
-			crit(2),		-- Pristine Stone Manacles
-			crit(3),		-- Pristine Ogre Figurine
-			crit(4),		-- Pristine Pictogram Carving
-			crit(5),		-- Pristine Gladiator's Shield
-			crit(6),		-- Pristine Mortar and Pestle
-			crit(7),		-- Pristine Eye of Har'guun the Blind
-			crit(8),		-- Pristine Stone Dentures
-			crit(9),		-- Pristine Rylak Riding Harness
-			crit(10),		-- Pristine Imperial Decree Stele
 		}),
 		ach(8219,  {	-- History of the Mantid
 			crit(1),		-- Pristine Banner of the Mantid Empire
@@ -271,64 +172,15 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 				crit(12),	-- Pristine Blowgun of the Sethrak
 			},
 		}),
-		ach(10600, {	-- Legion Archaeologist
-			ach(9409),		-- Draenor Archaeologist
-			ach(6837),		-- Zen Master Archaeologist
-			ach(4923),		-- Illustrious Grand Master Archaeologist
-			ach(4922),		-- Grand Master Archaeologist
-			ach(4921),		-- Master Archaeologist
-			ach(4920),		-- Artisan Archaeologist
-			ach(4919),		-- Expert Archaeologist
-			ach(4857),		-- Journeyman Archaeologist
-		}),
-		ach(10604, {	-- Legion Curator
-			crit(1),		-- Pristine Imp's Cup
-			crit(2),		-- Pristine Flayed-Skin Chronicle
-			crit(3),		-- Pristine Malformed Abyssal
-			crit(4),		-- Pristine Orb of Inner Chaos
-			crit(5),		-- Pristine Houndstooth Hauberk
-			crit(6),		-- Pristine Violetglass Vessel
-			crit(7),		-- Pristine Inert Leystone Charm
-			crit(8),		-- Pristine Quietwine Vial
-			crit(9),		-- Pristine Pre-War Highborne Tapestry
-			crit(10),		-- Pristine Nobleman's Letter Opener
-			crit(11),		-- Pristine Trailhead Drum
-			crit(12),		-- Pristine Moosebone Fish-Hook
-			crit(13),		-- Pristine Hand-Smoothed Pyrestone
-			crit(14),		-- Pristine Drogbar Gem-Roller
-			crit(15),		-- Pristine Stonewood Bow
-		}),
+		ach(6837),		-- Zen Master Archaeologist
+		ach(4923),		-- Illustrious Grand Master Archaeologist
+		ach(4922),		-- Grand Master Archaeologist
+		ach(4921),		-- Master Archaeologist
+		ach(4920),		-- Artisan Archaeologist
+		ach(4919),		-- Expert Archaeologist
+		ach(4857),		-- Journeyman Archaeologist
 		ach(12770, {	-- Lengthy Legwork
 			ach(12769),		-- Light Travel
-		}),
-		ach(10609, {	-- No Stone Unturned (250)
-			title(333),		-- the Groundbreaker
-			ach(10608),		-- Sifting Through the Sand (100)
-			ach(10607),		-- Getting Your Hands Dirty (50
-		}),
-		ach(9414,  {	-- Ogre Observer
-			crit(1),		-- Eye of Har'gunn the Blind
-			crit(2),		-- Gladiator's Shield
-			crit(3),		-- Imperial Decree Stele
-			crit(4),		-- Mortar and Pestle
-			crit(5),		-- Ogre Figurine
-			crit(6),		-- Pictogram Carving
-			crit(7),		-- Rylak Riding Harness
-			crit(8),		-- Stone Dentures
-			crit(9),		-- Stone Manacles
-			crit(10),		-- Stonemaul Succession Stone
-		}),
-		ach(9415,  {	-- Secrets of Skettis
-			crit(1),		-- Dreamcatcher
-			crit(2),		-- Burial Urn
-			crit(3),		-- Decree Scrolls
-			crit(4),		-- Solar Orb
-			crit(5),		-- Sundial
-			crit(6),		-- Talonpriest Mask
-			crit(7),		-- Outcast Dreamcatche
-			crit(8),		-- Apexis Crystal
-			crit(9),		-- Apexis Hieroglyph
-			crit(10),		-- Apexis Scroll
 		}),
 		ach(4858,  {	-- Seven Scepters
 			crit(1),		-- Scepter of Charlga Razorflank
@@ -342,27 +194,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(7336,  {	-- Stone Servants
 			crit(1),		-- Terracotta Arm
 			crit(2),		-- Quilen Statuette
-		}),
-		ach(9413,  {	-- Strength and Honor
-			crit(1),		-- Ancestral Talisman
-			crit(2),		-- Barbed Fishing Hook
-			crit(3),		-- Blackrock Razor
-			crit(4),		-- Calcified Eye In a Jar
-			crit(5),		-- Ceremonial Tattoo Needles
-			crit(6),		-- Cracked Ivory Idol
-			crit(7),		-- Doomsday Prophecy
-			crit(8),		-- Elemental Bellows
-			crit(9),		-- Fang-Scarred Frostwolf Axe
-			crit(10),		-- Flask of Blazegrease
-			crit(11),		-- Frostwolf Ancestry Scrimshaw
-			crit(12),		-- Gronn-Tooth Necklace
-			crit(13),		-- Hooked Dagger
-			crit(14),		-- Metalworker's Hammer
-			crit(15),		-- Screaming Bullroarer
-			crit(16),		-- Warsinger's Drums
-			crit(17),		-- Warsong Ceremonial Pike
-			crit(18),		-- Weighted Chopping Axe
-			crit(19),		-- Wolfskin Snowshoes
 		}),
 		ach(7335,  {	-- Symbols of Strength
 			crit(1),		-- Iron Amulet
@@ -383,7 +214,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(2),		-- Gold-Inlaid Figurine
 			crit(3),		-- Apothecary Tins
 		}),
-		ach(10606),		-- The Dwarven Dream
 		ach(7333,  {	-- The Four Celestials
 			crit(1),		-- Pearl of Yu'lon
 			crit(2),		-- Standard of Niuzao
@@ -442,27 +272,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(4),		-- Chest of Tiny Glass Animals
 			crit(5),		-- Cracked Crystal Vial
 			crit(6),		-- Silver Scroll Case
-		}),
-		ach(9410,  {	-- Unite the Clans
-			crit(1),		-- Pristine Fang-Scarred Frostwolf Axe
-			crit(2),		-- Pristine Frostwolf Ancestry Scrimshaw
-			crit(3),		-- Pristine Wolfskin Snowshoes
-			crit(4),		-- Pristine Warsinger's Drums
-			crit(5),		-- Pristine Screaming Bullroarer
-			crit(6),		-- Pristine Warsong Ceremonial Pike
-			crit(7),		-- Pristine Metalworker's Hammer
-			crit(8),		-- Pristine Elemental Bellows
-			crit(9),		-- Pristine Blackrock Razor
-			crit(10),		-- Pristine Weighted Chopping Axe
-			crit(11),		-- Pristine Hooked Dagger
-			crit(12),		-- Pristine Barbed Fishing Hook
-			crit(13),		-- Pristine Calcified Eye In A Jar
-			crit(14),		-- Pristine Ceremonial Tattoo Needles
-			crit(15),		-- Pristine Ancestral Talisman
-			crit(16),		-- Pristine Cracked Ivory Idol
-			crit(17),		-- Pristine Flask of Blazegrease
-			crit(18),		-- Pristine Gronn-Tooth Necklace
-			crit(19),		-- Pristine Doomsday Prophecy
 		}),
 		ach(12761, {	-- Zandalari Archaeologist
 			["races"] = HORDE_ONLY,

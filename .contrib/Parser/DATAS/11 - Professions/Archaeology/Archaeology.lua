@@ -1,320 +1,901 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
+			-- 	["_quests"] = { QUEST },
+			-- }),
+
+-- Special function to create a Criteria for an Achievement which is associated with an Item
+local function iac(itemID, achID, critID, t)
+	local crit = crit(critID, t);
+	crit.achievementID = achID;
+	crit.itemID = itemID;
+	return crit;
+end
+
 profession(ARCHAEOLOGY, {
-	currency(829,  {	-- Arakkoa
-		filter(BATTLE_PETS, {
-			i(117354),	-- Ancient Nest Guardian
+	tier(WOD_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(9409),	-- Draenor Archaeologist
+			ach(9414),	-- Ogre Observer
+			ach(9415),	-- Secrets of Skettis
+			ach(9413),	-- Strength and Honor
+			ach(9412,  {	-- Arakkoa Archivist
+				crit(1, {	-- Pristine Dreamcatcher
+					["_quests"] = { 36771 },
+				}),
+				crit(2, {	-- Pristine Burial Urn
+					["_quests"] = { 36772 },
+				}),
+				crit(3, {	-- Pristine Decree Scrolls
+					["_quests"] = { 36773 },
+				}),
+				crit(4, {	-- Pristine Solar Orb
+					["_quests"] = { 36774 },
+				}),
+				crit(5, {	-- Pristine Sundial
+					["_quests"] = { 36775 },
+				}),
+				crit(6, {	-- Pristine Talonpriest Mask
+					["_quests"] = { 36776 },
+				}),
+				crit(7, {	-- Pristine Outcast Dreamcatcher
+					["_quests"] = { 36777 },
+				}),
+				crit(8, {	-- Pristine Apexis Crystal
+					["_quests"] = { 36778 },
+				}),
+				crit(9, {	-- Pristine Apexis Hieroglyph
+					["_quests"] = { 36779 },
+				}),
+				crit(10, {	-- Pristine Apexis Scroll
+					["_quests"] = { 36780 },
+				}),
+			}),
+			ach(9419,  {	-- Draenor Curator
+				crit(1, {	-- Pristine Dreamcatcher
+					["_quests"] = { 36771 },
+				}),
+				crit(2, {	-- Pristine Burial Urn
+					["_quests"] = { 36772 },
+				}),
+				crit(3, {	-- Pristine Decree Scrolls
+					["_quests"] = { 36773 },
+				}),
+				crit(4, {	-- Pristine Solar Orb
+					["_quests"] = { 36774 },
+				}),
+				crit(5, {	-- Pristine Sundial
+					["_quests"] = { 36775 },
+				}),
+				crit(6, {	-- Pristine Talonpriest Mask
+					["_quests"] = { 36776 },
+				}),
+				crit(7, {	-- Pristine Outcast Dreamcatcher
+					["_quests"] = { 36777 },
+				}),
+				crit(8, {	-- Pristine Apexis Crystal
+					["_quests"] = { 36778 },
+				}),
+				crit(9, {	-- Pristine Apexis Hieroglyph
+					["_quests"] = { 36779 },
+				}),
+				crit(10, { -- Pristine Apexis Scroll
+					["_quests"] = { 36780 },
+				}),
+				crit(11, { -- Pristine Fang-Scarred Frostwolf Axe
+					["_quests"] = { 36725 },
+				}),
+				crit(12, { -- Pristine Frostwolf Ancestry Scrimshaw
+					["_quests"] = { 36743 },
+				}),
+				crit(13, { -- Pristine Wolfskin Snowshoes
+					["_quests"] = { 36744 },
+				}),
+				crit(14, { -- Pristine Warsinger's Drums
+					["_quests"] = { 36745 },
+				}),
+				crit(15, { -- Pristine Screaming Bullroarer
+					["_quests"] = { 36746 },
+				}),
+				crit(16, { -- Pristine Warsong Ceremonial Pike
+					["_quests"] = { 36747 },
+				}),
+				crit(17, { -- Pristine Metalworker's Hammer
+					["_quests"] = { 36748 },
+				}),
+				crit(18, { -- Pristine Elemental Bellows
+					["_quests"] = { 36749 },
+				}),
+				crit(19, { -- Pristine Blackrock Razor
+					["_quests"] = { 36750 },
+				}),
+				crit(20, { -- Pristine Weighted Chopping Axe
+					["_quests"] = { 36751 },
+				}),
+				crit(21, { -- Pristine Hooked Dagger
+					["_quests"] = { 36752 },
+				}),
+				crit(22, { -- Pristine Barbed Fishing Hook
+					["_quests"] = { 36753 },
+				}),
+				crit(23, { -- Pristine Calcified Eye In A Jar
+					["_quests"] = { 36754 },
+				}),
+				crit(24, { -- Pristine Ceremonial Tattoo Needles
+					["_quests"] = { 36755 },
+				}),
+				crit(25, { -- Pristine Ancestral Talisman
+					["_quests"] = { 36756 },
+				}),
+				crit(26, { -- Pristine Cracked Ivory Idol
+					["_quests"] = { 36757 },
+				}),
+				crit(27, { -- Pristine Flask of Blazegrease
+					["_quests"] = { 36758 },
+				}),
+				crit(28, { -- Pristine Gronn-Tooth Necklace
+					["_quests"] = { 36759 },
+				}),
+				crit(29, { -- Pristine Doomsday Prophecy
+					["_quests"] = { 36760 },
+				}),
+				crit(30, { -- Pristine Stonemaul Succession Stone
+					["_quests"] = { 36761 },
+				}),
+				crit(31, { -- Pristine Stone Manacles
+					["_quests"] = { 36762 },
+				}),
+				crit(32, { -- Pristine Ogre Figurine
+					["_quests"] = { 36763 },
+				}),
+				crit(33, { -- Pristine Pictogram Carving
+					["_quests"] = { 36764 },
+				}),
+				crit(34, { -- Pristine Gladiator's Shield
+					["_quests"] = { 36765 },
+				}),
+				crit(35, { -- Pristine Mortar and Pestle
+					["_quests"] = { 36766 },
+				}),
+				crit(36, { -- Pristine Eye of Har'guun the Blind
+					["_quests"] = { 36767 },
+				}),
+				crit(37, { -- Pristine Stone Dentures
+					["_quests"] = { 36768 },
+				}),
+				crit(38, { -- Pristine Rylak Riding Harness
+					["_quests"] = { 36769 },
+				}),
+				crit(39, { -- Pristine Imperial Decree Stele
+					["_quests"] = { 36770 },
+				}),
+			}),
+			ach(9411,  {	-- Highmaul Historian
+				crit(1, { -- Pristine Stonemaul Succession Stone
+					["_quests"] = { 36761 },
+				}),
+				crit(2, { -- Pristine Stone Manacles
+					["_quests"] = { 36762 },
+				}),
+				crit(3, { -- Pristine Ogre Figurine
+					["_quests"] = { 36763 },
+				}),
+				crit(4, { -- Pristine Pictogram Carving
+					["_quests"] = { 36764 },
+				}),
+				crit(5, { -- Pristine Gladiator's Shield
+					["_quests"] = { 36765 },
+				}),
+				crit(6, { -- Pristine Mortar and Pestle
+					["_quests"] = { 36766 },
+				}),
+				crit(7, { -- Pristine Eye of Har'guun the Blind
+					["_quests"] = { 36767 },
+				}),
+				crit(8, { -- Pristine Stone Dentures
+					["_quests"] = { 36768 },
+				}),
+				crit(9, { -- Pristine Rylak Riding Harness
+					["_quests"] = { 36769 },
+				}),
+				crit(10, {	-- Pristine Imperial Decree Stele
+					["_quests"] = { 36770 },
+				}),
+			}),
+			ach(9410,  {	-- Unite the Clans
+				crit(1, {	-- Pristine Fang-Scarred Frostwolf Axe
+					["_quests"] = { 36725 },
+				}),
+				crit(2, {	-- Pristine Frostwolf Ancestry Scrimshaw
+					["_quests"] = { 36743 },
+				}),
+				crit(3, {	-- Pristine Wolfskin Snowshoes
+					["_quests"] = { 36744 },
+				}),
+				crit(4, {	-- Pristine Warsinger's Drums
+					["_quests"] = { 36745 },
+				}),
+				crit(5, {	-- Pristine Screaming Bullroarer
+					["_quests"] = { 36746 },
+				}),
+				crit(6, {	-- Pristine Warsong Ceremonial Pike
+					["_quests"] = { 36747 },
+				}),
+				crit(7, {	-- Pristine Metalworker's Hammer
+					["_quests"] = { 36748 },
+				}),
+				crit(8, {	-- Pristine Elemental Bellows
+					["_quests"] = { 36749 },
+				}),
+				crit(9, {	-- Pristine Blackrock Razor
+					["_quests"] = { 36750 },
+				}),
+				crit(10, {	-- Pristine Weighted Chopping Axe
+					["_quests"] = { 36751 },
+				}),
+				crit(11, {	-- Pristine Hooked Dagger
+					["_quests"] = { 36752 },
+				}),
+				crit(12, {	-- Pristine Barbed Fishing Hook
+					["_quests"] = { 36753 },
+				}),
+				crit(13, {	-- Pristine Calcified Eye In A Jar
+					["_quests"] = { 36754 },
+				}),
+				crit(14, {	-- Pristine Ceremonial Tattoo Needles
+					["_quests"] = { 36755 },
+				}),
+				crit(15, {	-- Pristine Ancestral Talisman
+					["_quests"] = { 36756 },
+				}),
+				crit(16, {	-- Pristine Cracked Ivory Idol
+					["_quests"] = { 36757 },
+				}),
+				crit(17, {	-- Pristine Flask of Blazegrease
+					["_quests"] = { 36758 },
+				}),
+				crit(18, {	-- Pristine Gronn-Tooth Necklace
+					["_quests"] = { 36759 },
+				}),
+				crit(19, {	-- Pristine Doomsday Prophecy
+					["_quests"] = { 36760 },
+				}),
+			}),
 		}),
-		filter(MISC, {
-			i(114204),	-- Apexis Crystal
-			i(114205),	-- Apexis Hieroglyph
-			i(114206),	-- Apexis Scroll
-			i(114198),	-- Burial Urn
-			i(114199),	-- Decree Scrolls
-			i(114197),	-- Dreamcatcher
-			i(114203),	-- Outcast Dreamcatcher
-			i(114200),	-- Solar Orb
-			i(114201),	-- Sundial
-			i(114202),	-- Talonpriest Mask
-		}),
-		n(QUESTS, {
-			q(36778, {	-- Pristine Apexis Crystal
-				["lvl"] = 100,
-				["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
+		currency(829,  {	-- Arakkoa
+			n(QUESTS, sharedData({
 				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(8, {	-- Pristine Apexis Crystal
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(8, {	-- Pristine Apexis Crystal
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36779, {	-- Pristine Apexis Heiroglyph
-				["lvl"] = 100,
-				["provider"] = { "i", 114223 },	-- Pristine Apexis Heiroglyph
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(9, {	-- Pristine Apexis Heiroglyph
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(9, {	-- Pristine Apexis Heiroglyph
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36780, {	-- Pristine Apexis Scroll
-				["lvl"] = 100,
-				["provider"] = { "i", 114224 },	-- Pristine Apexis Scroll
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(10, {	-- Pristine Apexis Scroll
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(10, {	-- Pristine Apexis Scroll
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36772, {	-- Pristine Burial Urn
-				["lvl"] = 100,
-				["provider"] = { "i", 114216 },	-- Pristine Burial Urn
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(2, {	-- Pristine Burial Urn
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(2, {	-- Pristine Burial Urn
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36773, {	-- Pristine Decree Scrolls
-				["lvl"] = 100,
-				["provider"] = { "i", 114217 },	-- Pristine Decree Scrolls
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(3, {	-- Pristine Decree Scrolls
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(3, {	-- Pristine Decree Scrolls
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36771, {	-- Pristine Dreamcatcher
-				["lvl"] = 100,
-				["provider"] = { "i", 114215 },	-- Pristine Dreamcatcher
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(1, {	-- Pristine Dreamcatcher
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(1, {	-- Pristine Dreamcatcher
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36777, {	-- Pristine Outcast Dreamcatcher
-				["lvl"] = 100,
-				["provider"] = { "i", 114221 },	-- Pristine Outcast Dreamcatcher
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(7, {	-- Pristine Outcast Dreamcatcher
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(7, {	-- Pristine Outcast Dreamcatcher
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36774, {	-- Pristine Solar Orb
-				["lvl"] = 100,
-				["provider"] = { "i", 114218 },	-- Pristine Solar Orb
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(4, {	-- Pristine Solar Orb
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(4, {	-- Pristine Solar Orb
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36775, {	-- Pristine Sundial
-				["lvl"] = 100,
-				["provider"] = { "i", 114219 },	-- Pristine Sundial
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(5, {	-- Pristine Sundial
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(5, {	-- Pristine Sundial
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
-			}),
-			q(36776, {	-- Pristine Talonpriest Mask
-				["lvl"] = 100,
-				["provider"] = { "i", 114220 },	-- Pristine Talonpriest Mask
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(6, {	-- Pristine Talonpriest Mask
-						["achievementID"] = 9412,	-- Arakkoa Archivist
-					}),
-					crit(6, {	-- Pristine Talonpriest Mask
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-				},
+			},{
+				q(36778, {	-- Pristine Apexis Crystal
+					["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
+				}),
+				q(36779, {	-- Pristine Apexis Hieroglyph
+					["provider"] = { "i", 114223 },	-- Pristine Apexis Hieroglyph
+				}),
+				q(36780, {	-- Pristine Apexis Scroll
+					["provider"] = { "i", 114224 },	-- Pristine Apexis Scroll
+				}),
+				q(36772, {	-- Pristine Burial Urn
+					["provider"] = { "i", 114216 },	-- Pristine Burial Urn
+				}),
+				q(36773, {	-- Pristine Decree Scrolls
+					["provider"] = { "i", 114217 },	-- Pristine Decree Scrolls
+				}),
+				q(36771, {	-- Pristine Dreamcatcher
+					["provider"] = { "i", 114215 },	-- Pristine Dreamcatcher
+				}),
+				q(36777, {	-- Pristine Outcast Dreamcatcher
+					["provider"] = { "i", 114221 },	-- Pristine Outcast Dreamcatcher
+				}),
+				q(36774, {	-- Pristine Solar Orb
+					["provider"] = { "i", 114218 },	-- Pristine Solar Orb
+				}),
+				q(36775, {	-- Pristine Sundial
+					["provider"] = { "i", 114219 },	-- Pristine Sundial
+				}),
+				q(36776, {	-- Pristine Talonpriest Mask
+					["provider"] = { "i", 114220 },	-- Pristine Talonpriest Mask
+				}),
+			})),
+			n(REWARDS, {
+				iac(114197, 9415, 1),	-- Dreamcatcher
+				iac(114198, 9415, 2),	-- Burial Urn
+				iac(114199, 9415, 3),	-- Decree Scrolls
+				iac(114200, 9415, 4),	-- Solar Orb
+				iac(114201, 9415, 5),	-- Sundial
+				iac(114202, 9415, 6),	-- Talonpriest Mask
+				iac(114203, 9415, 7),	-- Outcast Dreamcatcher
+				iac(114204, 9415, 8),	-- Apexis Crystal
+				iac(114205, 9415, 9),	-- Apexis Hieroglyph
+				iac(114206, 9415, 10),	-- Apexis Scroll
+				i(117354),	-- Ancient Nest Guardian
+				i(117382),	-- Beakbreaker of Terokk
 			}),
 		}),
-		n(WEAPONS, {
-			i(117382),	-- Beakbreaker of Terokk
+		currency(821,  {	-- Draenor Clans
+			n(QUESTS, sharedData({
+				["requireSkill"] = ARCHAEOLOGY,
+			},{
+				q(36756, {	-- Pristine Ancestral Talisman
+					["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
+				}),
+				q(36753, {	-- Pristine Barbed Fishing Hook
+					["provider"] = { "i", 114164 },	-- Pristine Barbed Fishing Hook
+				}),
+				q(36750, {	-- Pristine Blackrock Razor
+					["provider"] = { "i", 114158 },	-- Pristine Blackrock Razor
+				}),
+				q(36754, {	-- Pristine Calcified Eye In A Jar
+					["provider"] = { "i", 114166 },	-- Pristine Calcified Eye In A Jar
+				}),
+				q(36755, {	-- Pristine Ceremonial Tattoo Needles
+					["provider"] = { "i", 114168 },	-- Pristine Ceremonial Tattoo Needles
+				}),
+				q(36757, {	-- Pristine Cracked Ivory Idol
+					["provider"] = { "i", 114170 },	-- Pristine Cracked Ivory Idol
+				}),
+				q(36760, {	-- Pristine Doomsday Prophecy
+					["provider"] = { "i", 114178 },	-- Pristine Doomsday Prophecy
+				}),
+				q(36749, {	-- Pristine Elemental Bellows
+					["provider"] = { "i", 114156 },	-- Pristine Elemental Bellows
+				}),
+				q(36725, {	-- Pristine Fang-Scarred Frostwolf Axe
+					["provider"] = { "i", 114142 },	-- Pristine Fang-Scarred Frostwolf Axe
+				}),
+				q(36758, {	-- Pristine Flask of Blazegrease
+					["provider"] = { "i", 114174 },	-- Pristine Flask of Blazegrease
+				}),
+				q(36743, {	-- Pristine Frostwolf Ancestry Scrimshaw
+					["provider"] = { "i", 114144 },	-- Pristine Frostwolf Ancestry Scrimshaw
+				}),
+				q(36759, {	-- Pristine Gronn-Tooth Necklace
+					["provider"] = { "i", 114176 },	-- Pristine Gronn-Tooth Necklace
+				}),
+				q(36752, {	-- Pristine Hooked Dagger
+					["provider"] = { "i", 114162 },	-- Pristine Hooked Dagger
+				}),
+				q(36748, {	-- Pristine Metalworker's Hammer
+					["provider"] = { "i", 114154 },	-- Pristine Metalworker's Hammer
+				}),
+				q(36746, {	-- Pristine Screaming Bullroarer
+					["provider"] = { "i", 114150 },	-- Pristine Screaming Bullroarer
+				}),
+				q(36745, {	-- Pristine Warsinger's Drums
+					["provider"] = { "i", 114148 },	-- Pristine Warsinger's Drums
+				}),
+				q(36747, {	-- Pristine Warsong Ceremonial Pike
+					["provider"] = { "i", 114152 },	-- Pristine Warsong Ceremonial Pike
+				}),
+				q(36751, {	-- Pristine Weighted Chopping Axe
+					["provider"] = { "i", 114160 },	-- Pristine Weighted Chopping Axe
+				}),
+				q(36744, {	-- Pristine Wolfskin Snowshoes
+					["provider"] = { "i", 114146 },	-- Pristine Wolfskin Snowshoes
+				}),
+			})),
+			n(REWARDS, {
+				iac(114171, 9413, 1),	-- Ancestral Talisman
+				iac(114163, 9413, 2),	-- Barbed Fishing Hook
+				iac(114157, 9413, 3),	-- Blackrock Razor
+				iac(114165, 9413, 4),	-- Calcified Eye in a Jar
+				iac(114167, 9413, 5),	-- Ceremonial Tattoo Needles
+				iac(114169, 9413, 6),	-- Cracked Ivory Idol
+				iac(114177, 9413, 7),	-- Doomsday Prophecy
+				iac(114155, 9413, 8),	-- Elemental Bellows
+				iac(114141, 9413, 9),	-- Fang-Scarred Frostwolf Axe
+				iac(114173, 9413, 10),	-- Flask of Blazegrease
+				iac(114143, 9413, 11),	-- Frostwolf Ancestry Scrimshaw
+				iac(114175, 9413, 12),	-- Gronn-Tooth Necklace
+				iac(114161, 9413, 13),	-- Hooked Dagger
+				iac(114153, 9413, 14),	-- Metalworker's Hammer
+				iac(114149, 9413, 15),	-- Screaming Bullroarer
+				iac(114147, 9413, 16),	-- Warsinger's Drums
+				iac(114151, 9413, 17),	-- Warsong Ceremonial Pike
+				iac(114159, 9413, 18),	-- Weighted Chopping Axe
+				iac(114145, 9413, 19),	-- Wolfskin Snowshoes
+				i(117380),	-- Frostwolf Ghostpup
+				i(116985),	-- Headdress of the First Shaman
+			}),
+		}),
+		currency(828,  {	-- Ogre
+			n(QUESTS, sharedData({
+				["requireSkill"] = ARCHAEOLOGY,
+			},{
+				q(36767, {	-- Pristine Eye of Har'guun
+					["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
+				}),
+				q(36765, {	-- Pristine Gladiator's Shield
+					["provider"] = { "i", 114208 },	-- Pristine Gladiator's Shield
+				}),
+				q(36770, {	-- Pristine Imperial Decree Stele
+					["provider"] = { "i", 114213 },	-- Pristine Imperial Decree Stele
+				}),
+				q(36766, {	-- Pristine Mortar and Pestle
+					["provider"] = { "i", 114209 },	-- Pristine Mortar and Pestle
+				}),
+				q(36763, {	-- Pristine Ogre Figurine
+					["provider"] = { "i", 114186 },	-- Pristine Ogre Figurine
+				}),
+				q(36764, {	-- Pristine Pictogram Carving
+					["provider"] = { "i", 114188 },	-- Pristine Pictogram Carving
+				}),
+				q(36769, {	-- Pristine Rylak Riding Harness
+					["provider"] = { "i", 114212 },	-- Pristine Rylak Riding Harness
+				}),
+				q(36768, {	-- Pristine Stone Dentures
+					["provider"] = { "i", 114211 },	-- Pristine Stone Dentures
+				}),
+				q(36762, {	-- Pristine Stone Manacles
+					["provider"] = { "i", 114184 },	-- Pristine Stone Manacles
+				}),
+				q(36761, {	-- Pristine Stonemaul Succession Stone
+					["provider"] = { "i", 114182 },	-- Pristine Stonemaul Succession Stone
+				}),
+			})),
+			n(REWARDS, {
+				iac(114191, 9414, 1),	-- Eye of Har'gunn the Blind
+				iac(114189, 9414, 2),	-- Gladiator's Shield
+				iac(114194, 9414, 3),	-- Imperial Decree Stele
+				iac(114190, 9414, 4),	-- Mortar and Pestle
+				iac(114185, 9414, 5),	-- Ogre Figurine
+				iac(114187, 9414, 6),	-- Pictogram Carving
+				iac(114193, 9414, 7),	-- Rylak Riding Harness
+				iac(114192, 9414, 8),	-- Stone Dentures
+				iac(114183, 9414, 9),	-- Stone Manacles
+				iac(114181, 9414, 10),	-- Stonemaul Succession Stone
+				i(117385),	-- Sorcerer-King Toe Ring
+				i(117384),	-- Warmaul of the Warmaul Chieftain
+			}),
 		}),
 	}),
-	currency(1174, {	-- Demonic
-		filter(MISC, {
-			i(130917),	-- Flayed-Skin Chronicle
-			i(130920),	-- Houndstooth Hauberk
-			i(130916),	-- Imp's Cup
-			i(130918),	-- Malformed Abyssal
-			i(130919),	-- Orb of Inner Chaos
+	tier(LEGION_TIER, {
+		n(ACHIEVEMENTS, {
+			ach(10600),	-- Legion Archaeologist
+			ach(10604, {	-- Legion Curator
+				crit(1, {	-- Pristine Imp's Cup
+					["_quests"] = { 40359 },
+				}),
+				crit(2, {	-- Pristine Flayed-Skin Chronicle
+					["_quests"] = { 40360 },
+				}),
+				crit(3, {	-- Pristine Malformed Abyssal
+					["_quests"] = { 40361 },
+				}),
+				crit(4, {	-- Pristine Orb of Inner Chaos
+					["_quests"] = { 40362 },
+				}),
+				crit(5, {	-- Pristine Houndstooth Hauberk
+					["_quests"] = { 40363 },
+				}),
+				crit(6, {	-- Pristine Violetglass Vessel
+					["_quests"] = { 40349 },
+				}),
+				crit(7, {	-- Pristine Inert Leystone Charm
+					["_quests"] = { 40350 },
+				}),
+				crit(8, {	-- Pristine Quietwine Vial
+					["_quests"] = { 40351 },
+				}),
+				crit(9, {	-- Pristine Pre-War Highborne Tapestry
+					["_quests"] = { 40352 },
+				}),
+				crit(10, {	-- Pristine Nobleman's Letter Opener
+					["_quests"] = { 40353 },
+				}),
+				crit(11, {	-- Pristine Trailhead Drum
+					["_quests"] = { 40354 },
+				}),
+				crit(12, {	-- Pristine Moosebone Fish-Hook
+					["_quests"] = { 40355 },
+				}),
+				crit(13, {	-- Pristine Hand-Smoothed Pyrestone
+					["_quests"] = { 40356 },
+				}),
+				crit(14, {	-- Pristine Drogbar Gem-Roller
+					["_quests"] = { 40357 },
+				}),
+				crit(15, {	-- Pristine Stonewood Bow
+					["_quests"] = { 40358 },
+				}),
+			}),
+			ach(10603, {	-- A Keen Eye
+				crit(1),		-- Corrupted Studies
+				crit(2),		-- A Beacon of Hope
+				crit(3),		-- Neltharion's Lair: Misdirected
+				crit(4),		-- Sifting Through the Rubble
+				crit(5),		-- The Gates of Valor
+				crit(6),		-- What Once Was Lost
+				crit(7),		-- The Apocalypse Bringer
+				crit(8),		-- Uncovering the Orb of Sciallax
+				crit(9),		-- Drogbar Deception
+				crit(10),		-- Dark Secrets
+				crit(11),		-- The Keys to Success
+				crit(12),		-- Darkheart Thicket: Through the Fog
+				crit(13),		-- Laying to Rest
+				ach(10602),		-- This Side Up
+				ach(10601),		-- Surveying the Land
+			}),
+			ach(10605),	-- Handle With Care
+			ach(10609, {	-- No Stone Unturned (250)
+				title(333),		-- the Groundbreaker
+				ach(10608),		-- Sifting Through the Sand (100)
+				ach(10607),		-- Getting Your Hands Dirty (50
+			}),
 		}),
-		n(QUESTS, {
-			-- Crystalline Eye of Undravius
-			q(41157, {	-- Corrupted Studies
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 52.2, 52.6, STORMHEIM },
-				["sourceQuest"] = 40857,	-- Bits and Pieces
-				["g"] = {
-					i(136362, {	-- Ancient War Remnants
-						i(131724),	-- Crystalline Eye of Undravius (TOY!)
-						crit(1, {	-- Crystalline Eye of Undravius
+		currency(1174, {	-- Demonic
+			n(QUESTS, {
+				-- Crystalline Eye of Undravius
+				q(41157, {	-- Corrupted Studies
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 52.2, 52.6, STORMHEIM },
+					["sourceQuest"] = 40857,	-- Bits and Pieces
+					["g"] = {
+						i(136362, {	-- Ancient War Remnants
+							i(131724),	-- Crystalline Eye of Undravius (TOY!)
+							crit(1, {	-- Crystalline Eye of Undravius
+								["achievementID"] = 10603,	-- A Keen Eye
+							}),
+						}),
+						i(146328),	-- Petrified Wyrmtongue
+					},
+				}),
+				-- Imp Generator
+				q(41159, {	-- Process of Elimination
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 52.2, 52.6, STORMHEIM },
+					["sourceQuest"] = 41158,	-- Fragments of the Fjords
+				}),
+				q(41802, {	-- The Gates of Valor
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 52.2, 52.6, STORMHEIM },
+					["sourceQuest"] = 41159,	-- Process of Elimination
+					["g"] = {
+						i(131735),	-- Imp Generator
+						crit(5, {	-- Imp Generator
 							["achievementID"] = 10603,	-- A Keen Eye
 						}),
-					}),
-					i(146328),	-- Petrified Wyrmtongue
-				},
+					},
+				}),
+				-- Wyrmy Tunkins
+				q(41162, {	-- And Into the Fel Fire
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 39.0, 38.6, AZSUNA },
+					["sourceQuest"] = 41161,	-- Out of the Frying Pan
+				}),
+				q(41163, {	-- The Apocalypse Bringer
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 39.0, 38.6, AZSUNA },
+					["sourceQuest"] = 41162,	-- And Into the Fel Fire
+					["g"] = {
+						i(136922),	-- Wyrmy Tunkins
+						crit(7, {	-- Wyrmy Tunkins
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Blood of Young Mannoroth
+				q(41165, {	-- Deciphering Demonology
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 27.0, 70.0, SURAMAR },
+					["sourceQuest"] = 41164,	-- One Step Closer
+				}),
+				q(41166, {	-- Dark Secrets
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 27.0, 70.0, SURAMAR },
+					["sourceQuest"] = 41165,	-- Deciphering Demonology
+					["g"] = {
+						i(131743),	-- Blood of Young Mannoroth
+						crit(10, {	-- Blood of Young Mannoroth
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Purple Hills of Eredath
+				q(41168, {	-- The Purple Hills of Eredath
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 61.8, 87.9, VALSHARAH },
+					["sourceQuest"] = 41167,	-- Fel Fragments
+				}),
+				q(41169, {	-- Darkheart Thicket: Through the Fog
+					["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+					["isWeekly"] = true,
+					["coord"] = { 61.8, 87.9, VALSHARAH },
+					["sourceQuest"] = 41168,	-- The Purple Hills of Eredath
+					["g"] = {
+						i(131732),	-- Purple Hills of Eredath
+						crit(12, {	-- Purple Hills of Eredath
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				--
+				q(41170, {	-- The Relic Renewed
+					["sourceQuests"] = {	-- Hidden Tracking quests used, as the other quests reset weekly.
+						41871,	-- Darkheart Thicket: Through the Fog
+						41870,	-- Dark Secrets
+						41869,	-- The Apocalypse Bringer
+						41868,	-- The Gates of Valor
+						41867,	-- Corrupted Studies
+					},
+					["g"] = {
+						ach(10606),	-- The Dwarven Dream
+					},
+				}),
+				q(40360, {	-- Pristine Flayed-Skin Chronicle
+					["lvl"] = 98,
+					["provider"] = { "i", 130932 },	-- Pristine Flayed-Skin Chronicle
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40363, {	-- Pristine Houndstooth Hauberk
+					["requireSkill"] = ARCHAEOLOGY,
+					["provider"] = { "i", 130935 },	-- Pristine Houndstooth Hauberk
+					["lvl"] = 98,
+				}),
+				q(40359, {	-- Pristine Imp's Cup
+					["lvl"] = 98,
+					["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40361, {	-- Pristine Malformed Abyssal
+					["lvl"] = 98,
+					["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40362, {	-- Pristine Orb of Inner Chaos
+					["lvl"] = 98,
+					["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
 			}),
-			-- Imp Generator
-			q(41159, {	-- Process of Elimination
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 52.2, 52.6, STORMHEIM },
-				["sourceQuest"] = 41158,	-- Fragments of the Fjords
+			n(REWARDS, {
+				iac(130917, 10605, 2),	-- Flayed-Skin Chronicle
+				iac(130920, 10605, 5),	-- Houndstooth Hauberk
+				iac(130916, 10605, 1),	-- Imp's Cup
+				iac(130918, 10605, 3),	-- Malformed Abyssal
+				iac(130919, 10605, 4),	-- Orb of Inner Chaos
 			}),
-			q(41802, {	-- The Gates of Valor
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 52.2, 52.6, STORMHEIM },
-				["sourceQuest"] = 41159,	-- Process of Elimination
-				["g"] = {
-					i(131735),	-- Imp Generator
-					crit(5, {	-- Imp Generator
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
+		}),
+		currency(1172, {	-- Highborne
+			prof(INSCRIPTION, {
+				i(137782, {	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+					["timeline"] = { "added 7.1.0" },
+				}),
 			}),
-			-- Wyrmy Tunkins
-			q(41162, {	-- And Into the Fel Fire
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 39.0, 38.6, AZSUNA },
-				["sourceQuest"] = 41161,	-- Out of the Frying Pan
+			n(QUESTS, {
+				-- Key of Kalyndras
+				q(41178, {	-- Explosive Results
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.8, 81.6, VALSHARAH },
+					["sourceQuest"] = 41177,	-- Goblin Archaeology
+				}),
+				q(41179, {	-- What Once Was Lost
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.8, 81.6, VALSHARAH },
+					["sourceQuest"] = 41178,
+					["g"] = {
+						i(136383, {	-- Ravencrest Cache
+							i(131745),	-- Key of Kalyndras
+							crit(6, {	-- Key of Kalyndras
+								["achievementID"] = 10603,	-- A Keen Eye
+							}),
+						}),
+					},
+				}),
+				-- Key to Nar'thalas Academy
+				q(41184, {	-- Tried and True
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, AZSUNA },
+					["sourceQuest"] = 41183,	-- Academic Exploration
+				}),
+				q(41185, {	-- The Keys to Success
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, AZSUNA },
+					["sourceQuest"] = 41184,
+					["g"] = {
+						i(131744, {	-- Key to Nar'thalas Academy
+							title(348),	-- Headmaster / Headmistress
+						}),
+						crit(11, {	-- Key to Nar'thalas Academy
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Crown Jewels of Suramar
+				q(41175, {	-- Fit for an Elven Queen
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, SURAMAR },
+					["sourceQuest"] = 41174,	-- Worth Its Weight
+				}),
+				q(41176, {	-- Sifting Through the Rubble
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, SURAMAR },
+					["sourceQuest"] = 41175,	-- Fit for an Elven Queen
+					["g"] = {
+						i(131740),	-- Crown Jewels of Suramar
+						crit(4, {	-- Crown Jewels of Suramar
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Starlight Beacon
+				q(41172, {	-- Echoes of My Ancestors
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 47.4, 42.6, AZSUNA },
+					["sourceQuest"] = 41171,	-- The Reliquary Calls
+				}),
+				q(41173, {	-- A Beacon of Hope
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 47.4, 42.6, AZSUNA },
+					["sourceQuest"] = 41172,	-- Echoes of My Ancestors
+					["g"] = {
+						i(131717),	-- Starlight Beacon
+						crit(2, {	-- Starlight Beacon
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Shard of Sciallax
+				q(41181, {	-- Narrowing Down
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, SURAMAR },
+					["sourceQuest"] = 41180,	-- Unspeakable Power
+				}),
+				q(41182, {	-- Uncovering the Orb of Sciallax
+					["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+					["isWeekly"] = true,
+					["coord"] = { 38.2, 90.0, SURAMAR },
+					["sourceQuest"] = 41181,	-- Narrowing Down
+					["g"] = {
+						i(134076),	-- Crystallized Shard of Sciallax
+						i(134079),	-- Ardent Shard of Sciallax
+						i(134081),	-- Adamant Shard of Sciallax
+						i(131731),	-- Glinting Shard of Sciallax
+						i(134077),	-- Glowing Shard of Sciallax
+						i(134078),	-- Dark Shard of Sciallax
+						crit(8, {	-- Shard of Sciallax
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				q(40350, {	-- Pristine Inert Leystone Charm
+					["lvl"] = 98,
+					["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40353, {	-- Pristine Nobleman's Letter Opener
+					["lvl"] = 98,
+					["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40352, {	-- Pristine Pre-War Highborne Tapestry
+					["lvl"] = 98,
+					["provider"] = { "i", 130924 },	-- Pristine
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40351, {	-- Pristine Quietwine Vial
+					["lvl"] = 98,
+					["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40349, {	-- Pristine Violetglass Vessel
+					["lvl"] = 98,
+					["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
 			}),
-			q(41163, {	-- The Apocalypse Bringer
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 39.0, 38.6, AZSUNA },
-				["sourceQuest"] = 41162,	-- And Into the Fel Fire
-				["g"] = {
-					i(136922),	-- Wyrmy Tunkins
-					crit(7, {	-- Wyrmy Tunkins
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
+			n(REWARDS, {
+				iac(130907, 10605, 7),	-- Inert Leystone Charm
+				iac(130910, 10605, 10),	-- Nobleman's Letter Opener
+				iac(130909, 10605, 9),	-- Pre-War Highborne Tapestry
+				iac(130908, 10605, 8),	-- Quietwine Vial
+				iac(130906, 10605, 6),	-- Violetglass Vessel
 			}),
-			-- Blood of Young Mannoroth
-			q(41165, {	-- Deciphering Demonology
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 27.0, 70.0, SURAMAR },
-				["sourceQuest"] = 41164,	-- One Step Closer
+		}),
+		currency(1173, {	-- Highmountain Tauren
+			-- TODO: Listing this item here makes it uncollectable, why?
+			-- prof(JEWELCRAFTING, {
+			-- 	i(137867),	-- Design: Shadowruby Band (Rank 3)
+			-- }),
+			n(QUESTS, {
+				-- Spirit of Eche'ro
+				q(41193, {	-- Laying to Rest
+					["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+					["isWeekly"] = true,
+					["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+					["sourceQuest"] = 41192,	-- The Right Path
+					["g"] = {
+						i(131734),	-- Spirit of Eche'ro (MOUNT!)
+						crit(13, {	-- Spirit of Eche'ro
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Spear of Rethu
+				q(41187, {	-- Surveying Student
+					["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+					["isWeekly"] = true,
+					["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+					["sourceQuest"] = 41186,	-- History of Highmountain
+				}),
+				q(41188, {	-- Neltharion's Lair: Misdirected
+					["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+					["isWeekly"] = true,
+					["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+					["sourceQuest"] = 41187,	-- Surveying Student
+					["g"] = {
+						i(131733),	-- Spear of Rethu
+						crit(3, {	-- Spear of Rethu
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				-- Prizerock Neckband
+				q(41190, {	-- Crystal Eyes
+					["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+					["isWeekly"] = true,
+					["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
+					["sourceQuest"] = 41189,	-- A New Lead
+				}),
+				q(41191, {	-- Drogbar Deception
+					["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+					["isWeekly"] = true,
+					["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
+					["sourceQuest"] = 41190,	-- Crystal Eyes
+					["g"] = {
+						i(131736),	-- Prizerock Neckband
+						crit(9, {	-- Prizerock Neckband
+							["achievementID"] = 10603,	-- A Keen Eye
+						}),
+					},
+				}),
+				q(40357, {	-- Pristine Drogbar Gem-Roller
+					["lvl"] = 98,
+					["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40356, {	-- Pristine Hand-Smoothed Pyrestone
+					["lvl"] = 98,
+					["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40355, {	-- Pristine Moosebone Fish-Hook
+					["lvl"] = 98,
+					["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40358, {	-- Pristine Stonewood Bow
+					["lvl"] = 98,
+					["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
+				q(40354, {	-- Pristine Trailhead Drum
+					["lvl"] = 98,
+					["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
+					["requireSkill"] = ARCHAEOLOGY,
+				}),
 			}),
-			q(41166, {	-- Dark Secrets
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 27.0, 70.0, SURAMAR },
-				["sourceQuest"] = 41165,	-- Deciphering Demonology
-				["g"] = {
-					i(131743),	-- Blood of Young Mannoroth
-					crit(10, {	-- Blood of Young Mannoroth
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Purple Hills of Eredath
-			q(41168, {	-- The Purple Hills of Eredath
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 61.8, 87.9, VALSHARAH },
-				["sourceQuest"] = 41167,	-- Fel Fragments
-			}),
-			q(41169, {	-- Darkheart Thicket: Through the Fog
-				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
-				["isWeekly"] = true,
-				["coord"] = { 61.8, 87.9, VALSHARAH },
-				["sourceQuest"] = 41168,	-- The Purple Hills of Eredath
-				["g"] = {
-					i(131732),	-- Purple Hills of Eredath
-					crit(12, {	-- Purple Hills of Eredath
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			--
-			q(41170, {	-- The Relic Renewed
-				["sourceQuests"] = {	-- Hidden Tracking quests used, as the other quests reset weekly.
-					41871,	-- Darkheart Thicket: Through the Fog
-					41870,	-- Dark Secrets
-					41869,	-- The Apocalypse Bringer
-					41868,	-- The Gates of Valor
-					41867,	-- Corrupted Studies
-				},
-				["g"] = {
-					ach(10606),	-- The Dwarven Dream
-				},
-			}),
-			q(40360, {	-- Pristine Flayed Skin Chronicle
-				["lvl"] = 98,
-				["provider"] = { "i", 130932 },	-- Pristine Flayed Skin Chronicle
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(2, {	-- Pristine Flayed Skin Chronicle
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40363, {	-- Pristine Houndstooth Hauberk
-				["requireSkill"] = ARCHAEOLOGY,
-				["provider"] = { "i", 130935 },	-- Pristine Houndstooth Hauberk
-				["lvl"] = 98,
-				["g"] = {
-					crit(5, {	-- Pristine Houndstooth Hauberk
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40359, {	-- Pristine Imp's Cup
-				["lvl"] = 98,
-				["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(1, {	-- Pristine Imp's Cup
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40361, {	-- Pristine Malformed Abyssal
-				["lvl"] = 98,
-				["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(3, {	-- Pristine Malformed Abyssal
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40362, {	-- Pristine Orb of Inner Chaos
-				["lvl"] = 98,
-				["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(4, {	-- Pristine Malformed Abyssal
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
+			n(REWARDS, {
+				iac(130914, 10605, 14),	-- Drogbar Gem-Roller
+				iac(130913, 10605, 13),	-- Hand-Smoothed Pyrestone
+				iac(130912, 10605, 12),	-- Moosebone Fish-Hook
+				iac(130915, 10605, 15),	-- Stonewood Bow
+				iac(130911, 10605, 11),	-- Trailhead Drum
 			}),
 		}),
 	}),
@@ -332,286 +913,6 @@ profession(ARCHAEOLOGY, {
 		}),
 		filter(TOYS, {
 			i(64456),	-- Arrival of the Naaru (TOY!)
-		}),
-	}),
-	currency(821,  {	-- Draenor Clans
-		n(ARMOR, {
-			i(116985),	-- Headdress of the First Shaman
-		}),
-		filter(BATTLE_PETS, {
-			sp(172466, {	-- Ancient Frostwolf Fang
-				i(117380),	-- Frostwolf Ghostpup
-			}),
-		}),
-		filter(MISC, {
-			i(114171),	-- Ancestral Talisman
-			i(114163),	-- Barbed Fishing Hook
-			i(114157),	-- Blackrock Razor
-			i(114165),	-- Calcified Eye in a Jar
-			i(114167),	-- Ceremonial Tattoo Needles
-			i(114169),	-- Cracked Ivory Idol
-			i(114177),	-- Doomsday Prophecy
-			i(114155),	-- Elemental Bellows
-			i(114141),	-- Fang-Scarred Frostwolf Axe
-			i(114173),	-- Flask of Blazegrease
-			i(114143),	-- Frostwolf Ancestry Scrimshaw
-			i(114175),	-- Gronn-Tooth Necklace
-			i(114161),	-- Hooked Dagger
-			i(114153),	-- Metalworker's Hammer
-			i(114149),	-- Screaming Bullroarer
-			i(114147),	-- Warsinger's Drums
-			i(114151),	-- Warsong Ceremonial Pike
-			i(114159),	-- Weighted Chopping Axe
-			i(114145),	-- Wolfskin Snowshoes
-		}),
-		n(QUESTS, {
-			q(36756, {	-- Pristine Ancestral Talisman
-				["lvl"] = 100,
-				["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(25, {	-- Pristine Ancestral Talisman
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(15, {	-- Pristine Ancestral Talisman
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36753, {	-- Pristine Barbed Fishing Hook
-				["lvl"] = 100,
-				["provider"] = { "i", 114164 },	-- Pristine Barbed Fishing Hook
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(22, {	-- Pristine Barbed Fishing Hook
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(12, {	-- Pristine Barbed Fishing Hook
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36750, {	-- Pristine Blackrock Razor
-				["lvl"] = 100,
-				["provider"] = { "i", 114158 },	-- Pristine Blackrock Razor
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(19, {	-- Pristine Blackrock Razor
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(9, {	-- Pristine Blackrock Razor
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36754, {	-- Pristine Calcified Eye In A Jar
-				["lvl"] = 100,
-				["provider"] = { "i", 114166 },	-- Pristine Calcified Eye In A Jar
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(23, {	-- Pristine Calcified Eye In A Jar
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(13, {	-- Pristine Calcified Eye In A Jar
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36755, {	-- Pristine Ceremonial Tattoo Needles
-				["lvl"] = 100,
-				["provider"] = { "i", 114168 },	-- Pristine Ceremonial Tattoo Needles
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(24, {	-- Pristine Ceremonial Tattoo Needles
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(14, {	-- Pristine Ceremonial Tattoo Needles
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36757, {	-- Pristine Cracked Ivory Idol
-				["lvl"] = 100,
-				["provider"] = { "i", 114170 },	-- Pristine Cracked Ivory Idol
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(26, {	-- Pristine Cracked Ivory Idol
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(16, {	-- Pristine Cracked Ivory Idol
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36760, {	-- Pristine Doomsday Prophecy
-				["lvl"] = 100,
-				["provider"] = { "i", 114178 },	-- Pristine Doomsday Prophecy
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(29, {	-- Pristine Doomsday Prophecy
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(19, {	-- Pristine Doomsday Prophecy
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36749, {	-- Pristine Elemental Bellows
-				["lvl"] = 100,
-				["provider"] = { "i", 114156 },	-- Pristine Elemental Bellows
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(18, {	-- Pristine Elemental Bellows
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(8, {	-- Pristine Elemental Bellows
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36725, {	-- Pristine Fang-Scarred Frostwolf Axe
-				["lvl"] = 100,
-				["provider"] = { "i", 114142 },	-- Pristine Fang-Scarred Frostwolf Axe
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(11, {	-- Pristine Fang-Scarred Frostwolf Axe
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(1, {	-- Pristine Fang-Scarred Frostwolf Axe
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36758, {	-- Pristine Flask of Blazegrease
-				["lvl"] = 100,
-				["provider"] = { "i", 114174 },	-- Pristine Flask of Blazegrease
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(27, {	-- Pristine Flask of Blazegrease
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(17, {	-- Pristine Flask of Blazegrease
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36743, {	-- Pristine Frostwolf Ancestry Scrimshaw
-				["lvl"] = 100,
-				["provider"] = { "i", 114144 },	-- Pristine Frostwolf Ancestry Scrimshaw
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(12, {	-- Pristine Frostwolf Ancestry Scrimshaw
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(2, {	-- Pristine Frostwolf Ancestry Scrimshaw
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36759, {	-- Pristine Gronn-Tooth Necklace
-				["lvl"] = 100,
-				["provider"] = { "i", 114176 },	-- Pristine Gronn-Tooth Necklace
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(28, {	-- Pristine Gronn-Tooth Necklace
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(18, {	-- Pristine Gronn-Tooth Necklace
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36752, {	-- Pristine Hooked Dagger
-				["lvl"] = 100,
-				["provider"] = { "i", 114162 },	-- Pristine Hooked Dagger
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(21, {	-- Pristine Hooked Dagger
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(11, {	-- Pristine Hooked Dagger
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36748, {	-- Pristine Metalworker's Hammer
-				["lvl"] = 100,
-				["provider"] = { "i", 114154 },	-- Pristine Metalworker's Hammer
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(17, {	-- Pristine Metalworker's Hammer
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(7, {	-- Pristine Metalworker's Hammer
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36746, {	-- Pristine Screaming Bullroarer
-				["lvl"] = 100,
-				["provider"] = { "i", 114150 },	-- Pristine Screaming Bullroarer
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(15, {	-- Pristine Screaming Bullroarer
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(5, {	-- Pristine Screaming Bullroarer
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36745, {	-- Pristine Warsinger's Drums
-				["lvl"] = 100,
-				["provider"] = { "i", 114148 },	-- Pristine Warsinger's Drums
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(14, {	-- Pristine Warsinger's Drums
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(4, {	-- Pristine Warsinger's Drums
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36747, {	-- Pristine Warsong Ceremonial Pike
-				["lvl"] = 100,
-				["provider"] = { "i", 114152 },	-- Pristine Warsong Ceremonial Pike
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(16, {	-- Pristine Warsong Ceremonial Pike
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(6, {	-- Pristine Warsong Ceremonial Pike
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36751, {	-- Pristine Weighted Chopping Axe
-				["lvl"] = 100,
-				["provider"] = { "i", 114160 },	-- Pristine Weighted Chopping Axe
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(20, {	-- Pristine Weighted Chopping Axe
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(10, {	-- Pristine Weighted Chopping Axe
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
-			q(36744, {	-- Pristine Wolfskin Snowshoes
-				["lvl"] = 100,
-				["provider"] = { "i", 114146 },	-- Pristine Wolfskin Snowshoes
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(13, {	-- Pristine Wolfskin Snowshoes
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(3, {	-- Pristine Wolfskin Snowshoes
-						["achievementID"] = 9410,	-- Unite the Clans
-					}),
-				},
-			}),
 		}),
 	}),
 	currency(1535, {	-- Drust
@@ -793,292 +1094,6 @@ profession(ARCHAEOLOGY, {
 		}),
 		filter(TOYS, {
 			i(69776),	-- Ancient Amber (TOY!)
-		}),
-	}),
-	currency(1172, {	-- Highborne
-		prof(INSCRIPTION, {
-			i(137782, {	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
-				["timeline"] = { "added 7.1.0" },
-			}),
-		}),
-		filter(MISC, {
-			i(130907),	-- Inert Leystone Charm
-			i(130910),	-- Nobleman's Letter Opener
-			i(130909),	-- Pre-War Highborne Tapestry
-			i(130908),	-- Quietwine Vial
-			i(130906),	-- Violetglass Vessel
-		}),
-		n(QUESTS, {
-			-- Key of Kalyndras
-			q(41178, {	-- Explosive Results
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.8, 81.6, VALSHARAH },
-				["sourceQuest"] = 41177,	-- Goblin Archaeology
-			}),
-			q(41179, {	-- What Once Was Lost
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.8, 81.6, VALSHARAH },
-				["sourceQuest"] = 41178,
-				["g"] = {
-					i(136383, {	-- Ravencrest Cache
-						i(131745),	-- Key of Kalyndras
-						crit(6, {	-- Key of Kalyndras
-							["achievementID"] = 10603,	-- A Keen Eye
-						}),
-					}),
-				},
-			}),
-			-- Key to Nar'thalas Academy
-			q(41184, {	-- Tried and True
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, AZSUNA },
-				["sourceQuest"] = 41183,	-- Academic Exploration
-			}),
-			q(41185, {	-- The Keys to Success
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, AZSUNA },
-				["sourceQuest"] = 41184,
-				["g"] = {
-					i(131744, {	-- Key to Nar'thalas Academy
-						title(348),	-- Headmaster / Headmistress
-					}),
-					crit(11, {	-- Key to Nar'thalas Academy
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Crown Jewels of Suramar
-			q(41175, {	-- Fit for an Elven Queen
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, SURAMAR },
-				["sourceQuest"] = 41174,	-- Worth Its Weight
-			}),
-			q(41176, {	-- Sifting Through the Rubble
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, SURAMAR },
-				["sourceQuest"] = 41175,	-- Fit for an Elven Queen
-				["g"] = {
-					i(131740),	-- Crown Jewels of Suramar
-					crit(4, {	-- Crown Jewels of Suramar
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Starlight Beacon
-			q(41172, {	-- Echoes of My Ancestors
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 47.4, 42.6, AZSUNA },
-				["sourceQuest"] = 41171,	-- The Reliquary Calls
-			}),
-			q(41173, {	-- A Beacon of Hope
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 47.4, 42.6, AZSUNA },
-				["sourceQuest"] = 41172,	-- Echoes of My Ancestors
-				["g"] = {
-					i(131717),	-- Starlight Beacon
-					crit(2, {	-- Starlight Beacon
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Shard of Sciallax
-			q(41181, {	-- Narrowing Down
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, SURAMAR },
-				["sourceQuest"] = 41180,	-- Unspeakable Power
-			}),
-			q(41182, {	-- Uncovering the Orb of Sciallax
-				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
-				["isWeekly"] = true,
-				["coord"] = { 38.2, 90.0, SURAMAR },
-				["sourceQuest"] = 41181,	-- Narrowing Down
-				["g"] = {
-					i(134076),	-- Crystallized Shard of Sciallax
-					i(134079),	-- Ardent Shard of Sciallax
-					i(134081),	-- Adamant Shard of Sciallax
-					i(131731),	-- Glinting Shard of Sciallax
-					i(134077),	-- Glowing Shard of Sciallax
-					i(134078),	-- Dark Shard of Sciallax
-					crit(8, {	-- Shard of Sciallax
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			q(40350, {	-- Pristine Inert Leystone Charm
-				["lvl"] = 98,
-				["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(7, {	-- Pristine Inert Leystone Charm)
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40353, {	-- Pristine Nobleman's Letter Opener
-				["lvl"] = 98,
-				["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(10, {	-- Pristine Nobleman's Letter Opener)
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40352, {	-- Pristine Pre-War Highborne Tapestry
-				["lvl"] = 98,
-				["provider"] = { "i", 130924 },	-- Pristine
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(9, {	-- Pristine Pre-War Highborne Tapestry)
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40351, {	-- Pristine Quietwine Vial
-				["lvl"] = 98,
-				["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(8, {	-- Pristine Quietwine Vial)
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40349, {	-- Pristine Violetglass Vessel
-				["lvl"] = 98,
-				["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(6, {	-- Pristine Violetglass Vessel)
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-		}),
-	}),
-	currency(1173, {	-- Highmountain Tauren
-		-- TODO: Listing this item here makes it uncollectable, why?
-		-- prof(JEWELCRAFTING, {
-		-- 	i(137867),	-- Design: Shadowruby Band (Rank 3)
-		-- }),
-		filter(MISC, {
-			i(130914),	-- Drogbar Gem-Roller
-			i(130913),	-- Hand-Smoothed Pyrestone
-			i(130912),	-- Moosebone Fish-Hook
-			i(130915),	-- Stonewood Bow
-			i(130911),	-- Trailhead Drum
-		}),
-		n(QUESTS, {
-			-- Spirit of Eche'ro
-			q(41193, {	-- Laying to Rest
-				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-				["sourceQuest"] = 41192,	-- The Right Path
-				["g"] = {
-					i(131734),	-- Spirit of Eche'ro (MOUNT!)
-					crit(13, {	-- Spirit of Eche'ro
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Spear of Rethu
-			q(41187, {	-- Surveying Student
-				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-				["sourceQuest"] = 41186,	-- History of Highmountain
-			}),
-			q(41188, {	-- Neltharion's Lair: Misdirected
-				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-				["sourceQuest"] = 41187,	-- Surveying Student
-				["g"] = {
-					i(131733),	-- Spear of Rethu
-					crit(3, {	-- Spear of Rethu
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			-- Prizerock Neckband
-			q(41190, {	-- Crystal Eyes
-				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
-				["sourceQuest"] = 41189,	-- A New Lead
-			}),
-			q(41191, {	-- Drogbar Deception
-				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
-				["isWeekly"] = true,
-				["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
-				["sourceQuest"] = 41190,	-- Crystal Eyes
-				["g"] = {
-					i(131736),	-- Prizerock Neckband
-					crit(9, {	-- Prizerock Neckband
-						["achievementID"] = 10603,	-- A Keen Eye
-					}),
-				},
-			}),
-			q(40357, {	-- Pristine Drogbar Gem-Roller
-				["lvl"] = 98,
-				["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(14, {	-- Pristine Drogbar Gem-Roller
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40356, {	-- Pristine Hand-Smoothed Pyrestone
-				["lvl"] = 98,
-				["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(13, {	-- Pristine Hand-Smoothed Pyrestone
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40355, {	-- Pristine Moosebone Fish-Hook
-				["lvl"] = 98,
-				["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(12, {	-- Pristine Moosebone Fish-Hook
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40358, {	-- Pristine Stonewood Bow
-				["lvl"] = 98,
-				["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(15, {	-- Pristine Stonewood Bow
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
-			q(40354, {	-- Pristine Trailhead Drum
-				["lvl"] = 98,
-				["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(11, {	-- Pristine Trailhead Drum
-						["achievementID"] = 10604,	-- Legion Curator
-					}),
-				},
-			}),
 		}),
 	}),
 	currency(754,  {	-- Mantid
@@ -1349,158 +1364,6 @@ profession(ARCHAEOLOGY, {
 		}),
 		n(-386, {	-- Trinket
 			i(64645),	-- Tyrande's Favorite Doll
-		}),
-	}),
-	currency(828,  {	-- Ogre
-		filter(MISC, {
-			i(114191),	-- Eye of Har'gunn the Blind
-			i(114189),	-- Gladiator's Shield
-			i(114194),	-- Imperial Decree Stele
-			i(114190),	-- Mortar and Pestle
-			i(114185),	-- Ogre Figurine
-			i(114187),	-- Pictogram Carving
-			i(114193),	-- Rylak Riding Harness
-			i(114192),	-- Stone Dentures
-			i(114183),	-- Stone Manacles
-			i(114181),	-- Stonemaul Succession Stone
-		}),
-		n(NECK, {
-			i(117385),	-- Sorcerer-King Toe Ring
-		}),
-		n(QUESTS, {
-			q(36767, {	-- Pristine Eye of Har'guun
-				["lvl"] = 100,
-				["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(36, {	-- Pristine Eye of Har'guun
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(7, {	-- Pristine Eye of Har'guun
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36765, {	-- Pristine Gladiator's Shield
-				["lvl"] = 100,
-				["provider"] = { "i", 114208 },	-- Pristine Gladiator's Shield
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(34, {	-- Pristine Gladiator's Shield
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(5, {	-- Pristine Gladiator's Shield
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36770, {	-- Pristine Imperial Decree Stele
-				["lvl"] = 100,
-				["provider"] = { "i", 114213 },	-- Pristine Imperial Decree Stele
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(39, {	-- Pristine Imperial Decree Stele
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(10, {	-- Pristine Imperial Decree Stele
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36766, {	-- Pristine Mortar and Pestle
-				["lvl"] = 100,
-				["provider"] = { "i", 114209 },	-- Pristine Mortar and Pestle
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(35, {	-- Pristine Mortar and Pestle
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(6, {	-- Pristine Mortar and Pestle
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36763, {	-- Pristine Ogre Figurine
-				["lvl"] = 100,
-				["provider"] = { "i", 114186 },	-- Pristine Ogre Figurine
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(32, {	-- Pristine Ogre Figurine
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(3, {	-- Pristine Ogre Figurine
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36764, {	-- Pristine Pictogram Carving
-				["lvl"] = 100,
-				["provider"] = { "i", 114188 },	-- Pristine Pictogram Carving
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(33, {	-- Pristine Pictogram Carving
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(4, {	-- Pristine Pictogram Carving
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36769, {	-- Pristine Rylak Riding Harness
-				["lvl"] = 100,
-				["provider"] = { "i", 114212 },	-- Pristine Rylak Riding Harness
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(38, {	-- Pristine Rylak Riding Harness
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(9, {	-- Pristine Rylak Riding Harness
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36768, {	-- Pristine Stone Dentures
-				["lvl"] = 100,
-				["provider"] = { "i", 114211 },	-- Pristine Stone Dentures
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(37, {	-- Pristine Stone Dentures
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(8, {	-- Pristine Stone Dentures
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36762, {	-- Pristine Stone Manacles
-				["lvl"] = 100,
-				["provider"] = { "i", 114184 },	-- Pristine Stone Manacles
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(31, {	-- Pristine Stone Manacles
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(2, {	-- Pristine Stone Manacles
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-			q(36761, {	-- Pristine Stonemaul Succession Stone
-				["lvl"] = 100,
-				["provider"] = { "i", 114182 },	-- Pristine Stonemaul Succession Stone
-				["requireSkill"] = ARCHAEOLOGY,
-				["g"] = {
-					crit(30, {	-- Pristine Stonemaul Succession Stone
-						["achievementID"] = 9419,	-- Draenor Curator
-					}),
-					crit(1, {	-- Pristine Stonemaul Succession Stone
-						["achievementID"] = 9411,	-- Highmaul Historian
-					}),
-				},
-			}),
-		}),
-		n(WEAPONS, {
-			i(117384),	-- Warmaul of the Warmaul Chieftain
 		}),
 	}),
 	currency(397,  {	-- Orc
