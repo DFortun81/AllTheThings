@@ -65,8 +65,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				-- 6.1.0
 				q(37805),	-- Goblin Looted
-				-- 6.2.0
-				q(39564),	-- Vignette: Murktide Alpha
 				-- 7.3.0
 				q(48546),	-- Tracking Quest
 				q(49006),	--

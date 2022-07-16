@@ -765,6 +765,7 @@ root("HiddenQuestTriggers", {
 		q(38234),	-- Tracking Event: Inscribed Ruin Found - triggers during quest "Get a Clue" (questID 38213), clue #3
 		q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
 		q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
+		q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer
 	}),
 	tier(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
