@@ -4,6 +4,440 @@
 
 root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
+			ach(10600),	-- Legion Archaeologist
+			ach(10604, {	-- Legion Curator
+				crit(1, {	-- Pristine Imp's Cup
+					["_quests"] = { 40359 },
+				}),
+				crit(2, {	-- Pristine Flayed-Skin Chronicle
+					["_quests"] = { 40360 },
+				}),
+				crit(3, {	-- Pristine Malformed Abyssal
+					["_quests"] = { 40361 },
+				}),
+				crit(4, {	-- Pristine Orb of Inner Chaos
+					["_quests"] = { 40362 },
+				}),
+				crit(5, {	-- Pristine Houndstooth Hauberk
+					["_quests"] = { 40363 },
+				}),
+				crit(6, {	-- Pristine Violetglass Vessel
+					["_quests"] = { 40349 },
+				}),
+				crit(7, {	-- Pristine Inert Leystone Charm
+					["_quests"] = { 40350 },
+				}),
+				crit(8, {	-- Pristine Quietwine Vial
+					["_quests"] = { 40351 },
+				}),
+				crit(9, {	-- Pristine Pre-War Highborne Tapestry
+					["_quests"] = { 40352 },
+				}),
+				crit(10, {	-- Pristine Nobleman's Letter Opener
+					["_quests"] = { 40353 },
+				}),
+				crit(11, {	-- Pristine Trailhead Drum
+					["_quests"] = { 40354 },
+				}),
+				crit(12, {	-- Pristine Moosebone Fish-Hook
+					["_quests"] = { 40355 },
+				}),
+				crit(13, {	-- Pristine Hand-Smoothed Pyrestone
+					["_quests"] = { 40356 },
+				}),
+				crit(14, {	-- Pristine Drogbar Gem-Roller
+					["_quests"] = { 40357 },
+				}),
+				crit(15, {	-- Pristine Stonewood Bow
+					["_quests"] = { 40358 },
+				}),
+			}),
+			ach(10603, {	-- A Keen Eye
+				crit(1, {	-- Corrupted Studies
+					["_quests"] = { 41157 },
+				}),
+				crit(2, {	-- A Beacon of Hope
+					["_quests"] = { 41173 },
+				}),
+				crit(3, {	-- Neltharion's Lair: Misdirected
+					["_quests"] = { 41188 },
+				}),
+				crit(4, {	-- Sifting Through the Rubble
+					["_quests"] = { 41176 },
+				}),
+				crit(5, {	-- The Gates of Valor
+					["_quests"] = { 41802 },
+				}),
+				crit(6, {	-- What Once Was Lost
+					["_quests"] = { 41179 },
+				}),
+				crit(7, {	-- The Apocalypse Bringer
+					["_quests"] = { 41163 },
+				}),
+				crit(8, {	-- Uncovering the Orb of Sciallax
+					["_quests"] = { 41182 },
+				}),
+				crit(9, {	-- Drogbar Deception
+					["_quests"] = { 41191 },
+				}),
+				crit(10, {	-- Dark Secrets
+					["_quests"] = { 41166 },
+				}),
+				crit(11, {	-- The Keys to Success
+					["_quests"] = { 41185 },
+				}),
+				crit(12, {	-- Darkheart Thicket: Through the Fog
+					["_quests"] = { 41169 },
+				}),
+				crit(13, {	-- Laying to Rest
+					["_quests"] = { 41193 },
+				}),
+				ach(10602),		-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
+				ach(10601),		-- Surveying the Land
+			}),
+			ach(10605),	-- Handle With Care
+			ach(10609, {	-- No Stone Unturned (250)
+				title(333),		-- the Groundbreaker
+				ach(10608),		-- Sifting Through the Sand (100)
+				ach(10607),		-- Getting Your Hands Dirty (50
+			}),
+			i(137867, {	-- Design: Shadowruby Band (Rank 3)
+				["description"] = "Can drop from digsites via Archaeology.",
+				["requireSkill"] = JEWELCRAFTING,
+			}),
+			currency(1174, {	-- Demonic
+				-- Solves
+				itemcrit(130917, 10605, 2),	-- Flayed-Skin Chronicle
+				itemcrit(130920, 10605, 5),	-- Houndstooth Hauberk
+				itemcrit(130916, 10605, 1),	-- Imp's Cup
+				itemcrit(130918, 10605, 3),	-- Malformed Abyssal
+				itemcrit(130919, 10605, 4),	-- Orb of Inner Chaos
+				n(QUESTS, {
+					-- Crystalline Eye of Undravius
+					q(41157, {	-- Corrupted Studies
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 52.2, 52.6, STORMHEIM },
+						["sourceQuest"] = 40857,	-- Bits and Pieces
+						["g"] = {
+							i(136362, {	-- Ancient War Remnants
+								i(131724),	-- Crystalline Eye of Undravius (TOY!)
+							}),
+							i(146328),	-- Petrified Wyrmtongue
+						},
+					}),
+					-- Imp Generator
+					q(41159, {	-- Process of Elimination
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 52.2, 52.6, STORMHEIM },
+						["sourceQuest"] = 41158,	-- Fragments of the Fjords
+					}),
+					q(41802, {	-- The Gates of Valor
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 52.2, 52.6, STORMHEIM },
+						["sourceQuest"] = 41159,	-- Process of Elimination
+						["g"] = {
+							i(131735),	-- Imp Generator
+						},
+					}),
+					-- Wyrmy Tunkins
+					q(41162, {	-- And Into the Fel Fire
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 39.0, 38.6, AZSUNA },
+						["sourceQuest"] = 41161,	-- Out of the Frying Pan
+					}),
+					q(41163, {	-- The Apocalypse Bringer
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 39.0, 38.6, AZSUNA },
+						["sourceQuest"] = 41162,	-- And Into the Fel Fire
+						["g"] = {
+							i(136922),	-- Wyrmy Tunkins
+						},
+					}),
+					-- Blood of Young Mannoroth
+					q(41165, {	-- Deciphering Demonology
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 27.0, 70.0, SURAMAR },
+						["sourceQuest"] = 41164,	-- One Step Closer
+					}),
+					q(41166, {	-- Dark Secrets
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 27.0, 70.0, SURAMAR },
+						["sourceQuest"] = 41165,	-- Deciphering Demonology
+						["g"] = {
+							i(131743),	-- Blood of Young Mannoroth
+						},
+					}),
+					-- Purple Hills of Eredath
+					q(41168, {	-- The Purple Hills of Eredath
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 61.8, 87.9, VALSHARAH },
+						["sourceQuest"] = 41167,	-- Fel Fragments
+					}),
+					q(41169, {	-- Darkheart Thicket: Through the Fog
+						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
+						["isWeekly"] = true,
+						["coord"] = { 61.8, 87.9, VALSHARAH },
+						["sourceQuest"] = 41168,	-- The Purple Hills of Eredath
+						["g"] = {
+							i(131732),	-- Purple Hills of Eredath
+						},
+					}),
+					--
+					q(41170, {	-- The Relic Renewed
+						["sourceQuests"] = {	-- Hidden Tracking quests used, as the other quests reset weekly.
+							41871,	-- Darkheart Thicket: Through the Fog
+							41870,	-- Dark Secrets
+							41869,	-- The Apocalypse Bringer
+							41868,	-- The Gates of Valor
+							41867,	-- Corrupted Studies
+						},
+						["g"] = {
+							ach(10606),	-- The Dwarven Dream
+						},
+					}),
+					q(40360, {	-- Pristine Flayed-Skin Chronicle
+						["lvl"] = 98,
+						["provider"] = { "i", 130932 },	-- Pristine Flayed-Skin Chronicle
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40363, {	-- Pristine Houndstooth Hauberk
+						["requireSkill"] = ARCHAEOLOGY,
+						["provider"] = { "i", 130935 },	-- Pristine Houndstooth Hauberk
+						["lvl"] = 98,
+					}),
+					q(40359, {	-- Pristine Imp's Cup
+						["lvl"] = 98,
+						["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40361, {	-- Pristine Malformed Abyssal
+						["lvl"] = 98,
+						["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40362, {	-- Pristine Orb of Inner Chaos
+						["lvl"] = 98,
+						["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+				}),
+			}),
+			currency(1172, {	-- Highborne
+				-- Solves
+				itemcrit(130907, 10605, 7),	-- Inert Leystone Charm
+				itemcrit(130910, 10605, 10),	-- Nobleman's Letter Opener
+				itemcrit(130909, 10605, 9),	-- Pre-War Highborne Tapestry
+				itemcrit(130908, 10605, 8),	-- Quietwine Vial
+				itemcrit(130906, 10605, 6),	-- Violetglass Vessel
+				prof(INSCRIPTION, {
+					i(137782, {	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+						["timeline"] = { "added 7.1.0" },
+					}),
+				}),
+				n(QUESTS, {
+					-- Key of Kalyndras
+					q(41178, {	-- Explosive Results
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.8, 81.6, VALSHARAH },
+						["sourceQuest"] = 41177,	-- Goblin Archaeology
+					}),
+					q(41179, {	-- What Once Was Lost
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.8, 81.6, VALSHARAH },
+						["sourceQuest"] = 41178,
+						["g"] = {
+							i(136383, {	-- Ravencrest Cache
+								i(131745),	-- Key of Kalyndras
+							}),
+						},
+					}),
+					-- Key to Nar'thalas Academy
+					q(41184, {	-- Tried and True
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, AZSUNA },
+						["sourceQuest"] = 41183,	-- Academic Exploration
+					}),
+					q(41185, {	-- The Keys to Success
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, AZSUNA },
+						["sourceQuest"] = 41184,
+						["g"] = {
+							i(131744, {	-- Key to Nar'thalas Academy
+								title(348),	-- Headmaster / Headmistress
+							}),
+						},
+					}),
+					-- Crown Jewels of Suramar
+					q(41175, {	-- Fit for an Elven Queen
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, SURAMAR },
+						["sourceQuest"] = 41174,	-- Worth Its Weight
+					}),
+					q(41176, {	-- Sifting Through the Rubble
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, SURAMAR },
+						["sourceQuest"] = 41175,	-- Fit for an Elven Queen
+						["g"] = {
+							i(131740),	-- Crown Jewels of Suramar
+						},
+					}),
+					-- Starlight Beacon
+					q(41172, {	-- Echoes of My Ancestors
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 47.4, 42.6, AZSUNA },
+						["sourceQuest"] = 41171,	-- The Reliquary Calls
+					}),
+					q(41173, {	-- A Beacon of Hope
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 47.4, 42.6, AZSUNA },
+						["sourceQuest"] = 41172,	-- Echoes of My Ancestors
+						["g"] = {
+							i(131717),	-- Starlight Beacon
+						},
+					}),
+					-- Shard of Sciallax
+					q(41181, {	-- Narrowing Down
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, SURAMAR },
+						["sourceQuest"] = 41180,	-- Unspeakable Power
+					}),
+					q(41182, {	-- Uncovering the Orb of Sciallax
+						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
+						["isWeekly"] = true,
+						["coord"] = { 38.2, 90.0, SURAMAR },
+						["sourceQuest"] = 41181,	-- Narrowing Down
+						["g"] = {
+							i(134076),	-- Crystallized Shard of Sciallax
+							i(134079),	-- Ardent Shard of Sciallax
+							i(134081),	-- Adamant Shard of Sciallax
+							i(131731),	-- Glinting Shard of Sciallax
+							i(134077),	-- Glowing Shard of Sciallax
+							i(134078),	-- Dark Shard of Sciallax
+						},
+					}),
+					q(40350, {	-- Pristine Inert Leystone Charm
+						["lvl"] = 98,
+						["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40353, {	-- Pristine Nobleman's Letter Opener
+						["lvl"] = 98,
+						["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40352, {	-- Pristine Pre-War Highborne Tapestry
+						["lvl"] = 98,
+						["provider"] = { "i", 130924 },	-- Pristine
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40351, {	-- Pristine Quietwine Vial
+						["lvl"] = 98,
+						["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40349, {	-- Pristine Violetglass Vessel
+						["lvl"] = 98,
+						["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+				}),
+			}),
+			currency(1173, {	-- Highmountain Tauren
+				-- Solves
+				itemcrit(130914, 10605, 14),	-- Drogbar Gem-Roller
+				itemcrit(130913, 10605, 13),	-- Hand-Smoothed Pyrestone
+				itemcrit(130912, 10605, 12),	-- Moosebone Fish-Hook
+				itemcrit(130915, 10605, 15),	-- Stonewood Bow
+				itemcrit(130911, 10605, 11),	-- Trailhead Drum
+				n(QUESTS, {
+					-- Spirit of Eche'ro
+					q(41193, {	-- Laying to Rest
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+						["isWeekly"] = true,
+						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["sourceQuest"] = 41192,	-- The Right Path
+						["g"] = {
+							i(131734),	-- Spirit of Eche'ro (MOUNT!)
+						},
+					}),
+					-- Spear of Rethu
+					q(41187, {	-- Surveying Student
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+						["isWeekly"] = true,
+						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["sourceQuest"] = 41186,	-- History of Highmountain
+					}),
+					q(41188, {	-- Neltharion's Lair: Misdirected
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+						["isWeekly"] = true,
+						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["sourceQuest"] = 41187,	-- Surveying Student
+						["g"] = {
+							i(131733),	-- Spear of Rethu
+						},
+					}),
+					-- Prizerock Neckband
+					q(41190, {	-- Crystal Eyes
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+						["isWeekly"] = true,
+						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
+						["sourceQuest"] = 41189,	-- A New Lead
+					}),
+					q(41191, {	-- Drogbar Deception
+						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
+						["isWeekly"] = true,
+						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },	-- 46.9, 60.2, 750 },	-- Thunder Totem ?
+						["sourceQuest"] = 41190,	-- Crystal Eyes
+						["g"] = {
+							i(131736),	-- Prizerock Neckband
+						},
+					}),
+					q(40357, {	-- Pristine Drogbar Gem-Roller
+						["lvl"] = 98,
+						["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40356, {	-- Pristine Hand-Smoothed Pyrestone
+						["lvl"] = 98,
+						["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40355, {	-- Pristine Moosebone Fish-Hook
+						["lvl"] = 98,
+						["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40358, {	-- Pristine Stonewood Bow
+						["lvl"] = 98,
+						["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+					q(40354, {	-- Pristine Trailhead Drum
+						["lvl"] = 98,
+						["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
+						["requireSkill"] = ARCHAEOLOGY,
+					}),
+				}),
+			}),
+		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(39874, {	-- Some Enchanted Evening
 				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis

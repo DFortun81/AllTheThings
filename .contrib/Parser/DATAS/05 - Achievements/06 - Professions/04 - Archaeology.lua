@@ -102,20 +102,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(1),		-- Edicts of the Thunder King
 			crit(2),		-- Worn Monument Ledger
 		}),
-		ach(12765, {	-- Exotic Discoveries
-			crit(1),		-- Ceremonial Bonesaw
-			crit(2),		-- Ancient Runebound Tome
-			crit(3),		-- Disembowling Sickle
-			crit(4),		-- Jagged Blade of the Drust
-			crit(5),		-- Ritual Fetish
-			crit(6),		-- Soul Coffer
-			crit(7),		-- Akun'Jar Vase
-			crit(8),		-- Urn of Passage
-			crit(9),		-- Rezan Idol
-			crit(10),		-- High Apothecary's Hood
-			crit(11),		-- Bwonsamdi Voodoo Mask
-			crit(12),		-- Blowgun of the Sethra
-		}),
 		ach(8219,  {	-- History of the Mantid
 			crit(1),		-- Pristine Banner of the Mantid Empire
 			crit(2),		-- Pristine Ancient Sap Feeder
@@ -152,26 +138,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(6),		-- Spiked Gauntlets of Anvilrage
 			crit(7),		-- Warmaul of Burningeye
 		}),
-		ach(12760, {	-- Kul Tiran Archaeologist
-			["races"] = ALLIANCE_ONLY,
-		}),
-		ach(12762, {	-- Kul Tiran Curator
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				crit(1),	-- Pristine Ceremonial Bonesaw
-				crit(2),	-- Pristine Ancient Runebound Tome
-				crit(3),	-- Pristine Disembowling Sickle
-				crit(4),	-- Pristine Jagged Blade of the Drust
-				crit(5),	-- Pristine Ritual Fetish
-				crit(6),	-- Pristine Soul Coffer
-				crit(7),	-- Pristine Akun'Jar Vase
-				crit(8),	-- Pristine Urn of Passage
-				crit(9),	-- Pristine Rezan Idol
-				crit(10),	-- Pristine High Apothecary's Hood
-				crit(11),	-- Pristine Bwonsamdi Voodoo Mask
-				crit(12),	-- Pristine Blowgun of the Sethrak
-			},
-		}),
 		ach(6837),		-- Zen Master Archaeologist
 		ach(4923),		-- Illustrious Grand Master Archaeologist
 		ach(4922),		-- Grand Master Archaeologist
@@ -179,9 +145,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(4920),		-- Artisan Archaeologist
 		ach(4919),		-- Expert Archaeologist
 		ach(4857),		-- Journeyman Archaeologist
-		ach(12770, {	-- Lengthy Legwork
-			ach(12769),		-- Light Travel
-		}),
 		ach(4858,  {	-- Seven Scepters
 			crit(1),		-- Scepter of Charlga Razorflank
 			crit(2),		-- Atal'ai Scepter
@@ -272,26 +235,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(4),		-- Chest of Tiny Glass Animals
 			crit(5),		-- Cracked Crystal Vial
 			crit(6),		-- Silver Scroll Case
-		}),
-		ach(12761, {	-- Zandalari Archaeologist
-			["races"] = HORDE_ONLY,
-		}),
-		ach(12764, {	-- Zandalari Curator
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				crit(1),	-- Pristine Ceremonial Bonesaw
-				crit(2),	-- Pristine Ancient Runebound Tome
-				crit(3),	-- Pristine Disembowling Sickle
-				crit(4),	-- Pristine Jagged Blade of the Drust
-				crit(5),	-- Pristine Ritual Fetish
-				crit(6),	-- Pristine Soul Coffer
-				crit(7),	-- Pristine Akun'Jar Vase
-				crit(8),	-- Pristine Urn of Passage
-				crit(9),	-- Pristine Rezan Idol
-				crit(10),	-- Pristine High Apothecary's Hood
-				crit(11),	-- Pristine Bwonsamdi Voodoo Mask
-				crit(12),	-- Pristine Blowgun of the Sethrak
-			},
 		}),
 	}),
 })));

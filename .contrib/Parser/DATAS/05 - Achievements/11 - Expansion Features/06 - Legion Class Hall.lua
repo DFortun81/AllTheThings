@@ -109,7 +109,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 				}),
 				ach(11144),		-- Power Realized
 				ach(10853),		-- Part of History
-				ach(10602),		-- This Side Up
 			}),
 			ach(10748, {		-- Fighting with Style: Valorous
 				ach(10459),		-- Improving on History

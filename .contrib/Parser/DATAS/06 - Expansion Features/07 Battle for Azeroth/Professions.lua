@@ -4,6 +4,168 @@
 
 root("ExpansionFeatures", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
+			ach(12760, {	-- Kul Tiran Archaeologist
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(12761, {	-- Zandalari Archaeologist
+				["races"] = HORDE_ONLY,
+			}),
+			ach(12765),	-- Exotic Discoveries
+			ach(12770, {	-- Lengthy Legwork
+				ach(12769),		-- Light Travel
+			}),
+			ach(12762, {	-- Kul Tiran Curator
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(1, {	-- Pristine Ceremonial Bonesaw
+						["_quests"] = { 51950 },
+					}),
+					crit(2, {	-- Pristine Ancient Runebound Tome
+						["_quests"] = { 51951 },
+					}),
+					crit(3, {	-- Pristine Disembowling Sickle
+						["_quests"] = { 51952 },
+					}),
+					crit(4, {	-- Pristine Jagged Blade of the Drust
+						["_quests"] = { 51953 },
+					}),
+					crit(5, {	-- Pristine Ritual Fetish
+						["_quests"] = { 51954 },
+					}),
+					crit(6, {	-- Pristine Soul Coffer
+						["_quests"] = { 51955 },
+					}),
+					crit(7, {	-- Pristine Akun'Jar Vase
+						["_quests"] = { 51926 },
+					}),
+					crit(8, {	-- Pristine Urn of Passage
+						["_quests"] = { 51929 },
+					}),
+					crit(9, {	-- Pristine Rezan Idol
+						["_quests"] = { 51932 },
+					}),
+					crit(10, {	-- Pristine High Apothecary's Hood
+						["_quests"] = { 51934 },
+					}),
+					crit(11, {	-- Pristine Bwonsamdi Voodoo Mask
+						["_quests"] = { 51936 },
+					}),
+					crit(12, {	-- Pristine Blowgun of the Sethrak
+						["_quests"] = { 51937 },
+					}),
+				},
+			}),
+			ach(12764, {	-- Zandalari Curator
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1, {	-- Pristine Ceremonial Bonesaw
+						["_quests"] = { 51950 },
+					}),
+					crit(2, {	-- Pristine Ancient Runebound Tome
+						["_quests"] = { 51951 },
+					}),
+					crit(3, {	-- Pristine Disembowling Sickle
+						["_quests"] = { 51952 },
+					}),
+					crit(4, {	-- Pristine Jagged Blade of the Drust
+						["_quests"] = { 51953 },
+					}),
+					crit(5, {	-- Pristine Ritual Fetish
+						["_quests"] = { 51954 },
+					}),
+					crit(6, {	-- Pristine Soul Coffer
+						["_quests"] = { 51955 },
+					}),
+					crit(7, {	-- Pristine Akun'Jar Vase
+						["_quests"] = { 51926 },
+					}),
+					crit(8, {	-- Pristine Urn of Passage
+						["_quests"] = { 51929 },
+					}),
+					crit(9, {	-- Pristine Rezan Idol
+						["_quests"] = { 51932 },
+					}),
+					crit(10, {	-- Pristine High Apothecary's Hood
+						["_quests"] = { 51934 },
+					}),
+					crit(11, {	-- Pristine Bwonsamdi Voodoo Mask
+						["_quests"] = { 51936 },
+					}),
+					crit(12, {	-- Pristine Blowgun of the Sethrak
+						["_quests"] = { 51937 },
+					}),
+				},
+			}),
+			currency(1535, {	-- Drust
+				-- Solves
+				i(160751),	-- Dance of the Dead (TOY!)
+				i(160833),	-- Fetish of the Tormented Mind
+				i(161089),	-- Restored Revenant
+				itemcrit(154922, 12765, 2),	-- Ancient Runebound Tome
+				itemcrit(154921, 12765, 1),	-- Ceremonial Bonesaw
+				itemcrit(154923, 12765, 3),	-- Disembowling Sickle
+				itemcrit(154924, 12765, 4),	-- Jagged Blade of the Drust
+				itemcrit(154925, 12765, 5),	-- Ritual Fetish
+				itemcrit(160741, 12765, 6),	-- Soul Coffer
+				n(QUESTS, sharedData({
+					["requireSkill"] = ARCHAEOLOGY,
+				},{
+					q(51951, {	-- Pristine Ancient Runebound Tome
+						["provider"] = { "i", 154927 },	-- Pristine Ancient Runebound Tome
+					}),
+					q(51950, {	-- Pristine Ceremonial Bonesaw
+						["provider"] = { "i", 154926 },	-- Pristine Ceremonial Bonesaw
+					}),
+					q(51952, {	-- Pristine Disembowling Sickle
+						["provider"] = { "i", 154928 },	-- Pristine Disembowling Sickle
+					}),
+					q(51953, {	-- Pristine Jagged Blade of the Drust
+						["provider"] = { "i", 154929 },	-- Pristine Jagged Blade of the Drust
+					}),
+					q(51954, {	-- Pristine Ritual Fetish
+						["provider"] = { "i", 154930 },	-- Pristine Ritual Fetish
+					}),
+					q(51955, {	-- Pristine Soul Coffer
+						["provider"] = { "i", 160742 },	-- Pristine Soul Coffer
+					}),
+				})),
+			}),
+			currency(1534, {	-- Zandalari
+				-- Solves
+				i(160740),	-- Croak Crock (TOY!)
+				i(161080),	-- Intact Direhorn Egg
+				i(160753),	-- Sanguinating Totem
+				itemcrit(154913, 12765, 7),	-- Akun'Jar Vase
+				itemcrit(160743, 12765, 12),	-- Blowgun of the Sethra
+				itemcrit(154917, 12765, 11),	-- Bwonsamdi Voodoo Mask
+				itemcrit(154916, 12765, 10),	-- High Apothecary's Hood
+				itemcrit(154915, 12765, 9),	-- Rezan Idol
+				itemcrit(154914, 12765, 8),	-- Urn of Passage
+				n(QUESTS, sharedData({
+					["requireSkill"] = ARCHAEOLOGY,
+				},{
+					q(51926, {	-- Pristine Akun'Jar Vase
+						["provider"] = { "i", 154931 },	-- Pristine Akun'Jar Vase
+					}),
+					q(51937, {	-- Pristine Blowgun of the Sethrak
+						["provider"] = { "i", 160744 },	-- Pristine Blowgun of the Sethrak
+					}),
+					q(51936, {	-- Pristine Bwonsamdi Voodoo Mask
+						["provider"] = { "i", 154935 },	-- Pristine Bwonsamdi Voodoo Mask
+					}),
+					q(51934, {	-- Pristine High Apothecary's Hood
+						["provider"] = { "i", 154934 },	-- Pristine High Apothecary's Hood
+					}),
+					q(51932, {	-- Pristine Rezan Idol
+						["provider"] = { "i", 154933 },	-- Pristine Rezan Idol
+					}),
+					q(51929, {	-- Pristine Urn of Passage
+						["provider"] = { "i", 154932 },	-- Pristine Urn of Passage
+					}),
+				})),
+			}),
+		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(54473, {	-- Enchanted Formulae (A)
 				["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>

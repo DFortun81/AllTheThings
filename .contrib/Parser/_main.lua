@@ -2063,6 +2063,13 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 	t.criteriaID = criteriaID;
 	return t;
 end
+-- Special function to create a Criteria for an Achievement which is associated with an Item
+itemcrit = function(itemID, achID, critID, t)
+	local crit = crit(critID, t);
+	crit.achievementID = achID;
+	crit.itemID = itemID;
+	return crit;
+end
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;

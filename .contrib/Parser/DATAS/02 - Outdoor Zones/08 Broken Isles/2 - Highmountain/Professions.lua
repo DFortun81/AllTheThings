@@ -164,11 +164,6 @@ _.Zones =
 					}),
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(JEWELCRAFTING, {	-- Technically Archaeology, but we can only use 1 filter atm.
-					i(137867, {	-- Design: Shadowruby Band (Rank 3)
-						["description"] = "Can drop from digsites via Archaeology.",
-					}),
-				}),
 				prof(SKINNING, {
 					i(139893, {	-- Skinning Technique: Unbroken Tooth
 						["requireSkill"] = SKINNING,

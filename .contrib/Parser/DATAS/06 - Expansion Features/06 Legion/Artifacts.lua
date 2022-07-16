@@ -24,16 +24,6 @@ _.PVP =
 	}),
 };
 local thisSideUpAch = {};
-_.Achievements =
-{
-	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
-		achcat(ACHIEVEMENT_CATEGORY_ARCHAEOLOGY, bubbleDown({ ["requireSkill"] = ARCHAEOLOGY },{
-			ach(10603, {	-- A Keen Eye
-				ach(10602, {["groups"] = thisSideUpAch}),		-- This Side Up
-			}),
-		})),
-	}),
-};
 local oldcl = cl;
 local prestige = {};
 local thisSideUp = {};
@@ -2428,3 +2418,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+
+-- Fill certain Artifacts into the Arch Achievement which is needed to earn them
+-- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
+root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, {
+			ach(10603, {	-- A Keen Eye
+				ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
+			}),
+		}),
+	}),
+})));
