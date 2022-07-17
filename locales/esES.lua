@@ -950,7 +950,11 @@ for key,value in pairs({
 	[1599] = "Tumba poco profunda",	-- Shallow Grave
 	[1609] = "Catapulta Faucedraco",	-- Dragonmaw Catapult
 	[1627] = "Cajón de Dalaran",	-- Dalaran Crate
+	[1738] = "Documentos de Hermandad",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Documentos del Sindicato",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Documentos de la Hermandad",	-- Syndicate Documents
 	[1763] = "SE BUSCA",	-- WANTED
+	[1765] = "Cofre de madera gastado",	-- Worn Wooden Chest
 	[2059] = "Un cadáver de enano",	-- A Dwarven Corpse
 	[2076] = "Caldera burbujeante",	-- Bubbling Cauldron
 	[2083] = "Correspondencia de los Velasangre",	-- Bloodsail Correspondence
@@ -2878,6 +2882,9 @@ for key,value in pairs({
 	[354856] = "Cajón cubierto de baba",	-- Slime-Coated Crate
 	[354911] = "Semilla de ánima hinchada",	-- Swollen Anima Seed
 	[355000] = "Alijo de la noche",	-- Cache of the Night
+	[355019] = "Seda de sueño sin refinar",	-- Raw Dream Silk
+	[355020] = "Rama encantada",	-- Enchanted Bough
+	[355021] = "Ornamento de sílfide",	-- Fae Ornament
 	[355035] = "Arca rúnica de los Elegidos",	-- Treasure: House of the Chosen
 	[355037] = "Arca vincularrunas",	-- Runebound Coffer
 	[355038] = "Arca vincularrunas",	-- Runebound Coffer
@@ -2899,6 +2906,8 @@ for key,value in pairs({
 	[355880] = "El Necronomi-ñam",	-- The Necronom-i-nom
 	[355886] = "Cofre bajapestado",	-- Plaguefallen Chest
 	[355947] = "Alijo de Glutharn",	-- Glutharn's Stash
+	[355980] = "Alijo de ritualista",	-- Ritualist's Cache
+	[356535] = "Tesoro de hablarrunas",	-- Runespeaker's Trove
 	[356555] = "Collar de Eurydea",	-- Eurydea's Necklace
 	[356693] = "Tributo exorbitante de la baronesa Vashj",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tributo exorbitante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute

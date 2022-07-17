@@ -935,7 +935,11 @@ for key,value in pairs({
 	[1599] = "Неглубокая могила",	-- Shallow Grave
 	[1609] = "Катапульта клана Драконьей Пасти",	-- Dragonmaw Catapult
 	[1627] = "Ящик из Даларана",	-- Dalaran Crate
+	[1738] = "Документы Синдиката",	-- Syndicate Documents
+	[1739] = "Документы Синдиката",	-- Syndicate Documents
+	[1740] = "Документы Синдиката",	-- Syndicate Documents
 	[1763] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
+	[1765] = "Подержанный деревянный сундук",	-- Worn Wooden Chest
 	[2059] = "Труп дворфа",	-- A Dwarven Corpse
 	[2076] = "Бурлящий котел",	-- Bubbling Cauldron
 	[2083] = "Переписка Кровавого Паруса",	-- Bloodsail Correspondence
@@ -2863,6 +2867,9 @@ for key,value in pairs({
 	[354856] = "Покрытый слизью ящик",	-- Slime-Coated Crate
 	[354911] = "Набухшее анимасемя",	-- Swollen Anima Seed
 	[355000] = "Тайник ночи",	-- Cache of the Night
+	[355019] = "Необработанный шелк грез",	-- Raw Dream Silk
+	[355020] = "Зачарованная ветвь",	-- Enchanted Bough
+	[355021] = "Украшение ночного народца",	-- Fae Ornament
 	[355035] = "Рунический сундук дома Избранных",	-- Treasure: House of the Chosen
 	[355037] = "Зачарованный рунами ящик",	-- Runebound Coffer
 	[355038] = "Зачарованный рунами ящик",	-- Runebound Coffer
@@ -2884,6 +2891,8 @@ for key,value in pairs({
 	[355880] = "\"Некроном-и-ном\"",	-- The Necronom-i-nom
 	[355886] = "Сундук чумных трупов",	-- Plaguefallen Chest
 	[355947] = "Тайник Глутарна",	-- Glutharn's Stash
+	[355980] = "Тайник ритуалиста",	-- Ritualist's Cache
+	[356535] = "Клад заклинателя рун",	-- Runespeaker's Trove
 	[356555] = "Ожерелье Эвридии",	-- Eurydea's Necklace
 	[356693] = "Экстравагантные дары баронессы Вайш",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Экстравагантные дары Александроса Могрейна",	-- Alexandros Mograine's Extravagant Tribute

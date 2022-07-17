@@ -946,7 +946,11 @@ for key,value in pairs({
 	[1599] = "얕은 무덤",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "용아귀 투석기",	-- Dragonmaw Catapult
 	[1627] = "달라란 상자",	-- Dalaran Crate
+	[1738] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "비밀결사대 문서",	-- Syndicate Documents
 	[1763] = "현상수배!",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "낡은 나무 궤짝",	-- Worn Wooden Chest
 	[2059] = "드워프 시체",	-- A Dwarven Corpse
 	[2076] = "끓고 있는 가마솥",	-- Bubbling Cauldron
 	[2083] = "붉은해적단 통신문",	-- Bloodsail Correspondence
@@ -2874,6 +2878,9 @@ for key,value in pairs({
 	[354856] = "점액으로 뒤덮인 상자",	-- Slime-Coated Crate
 	[354911] = "부풀어 오른 령 씨앗",	-- Swollen Anima Seed
 	[355000] = "밤의 보관함",	-- Cache of the Night
+	[355019] = "생 꿈결 명주",	-- Raw Dream Silk
+	[355020] = "마력 깃든 나뭇가지",	-- Enchanted Bough
+	[355021] = "페이 장식품",	-- Fae Ornament
 	[355035] = "선택받은 룬궤짝",	-- Treasure: House of the Chosen
 	[355037] = "룬결속 함",	-- Runebound Coffer
 	[355038] = "룬결속 함",	-- Runebound Coffer
@@ -2895,6 +2902,8 @@ for key,value in pairs({
 	[355880] = "수리수리마싯수리의 서",	-- The Necronom-i-nom
 	[355886] = "역병 몰락자 상자",	-- Plaguefallen Chest
 	[355947] = "글루사른의 보관함",	-- Glutharn's Stash
+	[355980] = "의식술사의 보관함",	-- Ritualist's Cache
+	[356535] = "룬예언자의 보물",	-- Runespeaker's Trove
 	[356555] = "유리디아의 목걸이",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "알렉산드로스 모그레인의 호화로운 공물",	-- Alexandros Mograine's Extravagant Tribute
