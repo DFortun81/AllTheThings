@@ -354,6 +354,9 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.DYNAMIC_CATEGORY_NESTED = "Вложенные";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Генерировать Динамические Категории на основе точного Источника. Это приводит к повторам Штучек, которые имеют несколько Источников.";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Требует Перезагрузки интерфейса|r";
+		L.DYNAMIC_CATEGORY_LOADING = "Динамические Категории загружаются...";
+		L.DYNAMIC_CATEGORY_READY = "Динамические Категории загрузились";
+		L.CLICK_TO_CREATE_FORMAT = "Нажмите, чтобы создать %s";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Отслеживать на весь аккаунт|R\n\nДостижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";

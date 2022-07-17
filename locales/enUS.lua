@@ -398,6 +398,8 @@ app.L = {
 	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
 	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Requires Reload|r";
+	["DYNAMIC_CATEGORY_LOADING"] = L["DYNAMIC_CATEGORY_LABEL"].." "..LFG_LIST_LOADING;	-- Dynamic Categories Loading...
+	["DYNAMIC_CATEGORY_READY"] = L["DYNAMIC_CATEGORY_LABEL"].." "..READY;	-- Dynamic Groups Ready
 	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 
 	-- Account Wide Checkboxes
