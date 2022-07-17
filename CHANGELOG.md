@@ -10,7 +10,7 @@ Watch Global Finals for AWC and MDI to get new title and achievement. This is a 
 ### Huge rewrite of internal logic
 We will now spread more heavy processing across multiple game frames instead of trying to do everything momentarily which resulted in game stutters. This is mainly utilized by Dynamic Categories (especially Simple ones but Nested too).
 - Added a Dynamic Professions category which populates iteratively to avoid having a super gigantic lag spike at the end of loading the Main list.
-- Added chat notification for Loading/Loaded of Dynamic Groups (not localized yet).
+- Added chat notification for Loading/Loaded of Dynamic Groups.
 - Some professions updated to work properly as Dynamic Categories (it is an ongoing process).
 - Existing Flight Paths category now acts as a proper Dynamic Group.
 - Added Dynamic groups for Artifacts, Azerite Essences & Followers.
