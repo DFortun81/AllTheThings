@@ -17107,7 +17107,7 @@ function app:GetDataCache()
 		local g = primeData.g;
 		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
 		app.ToggleCacheMaps(true);
-		app.print(L["DYNAMIC_CATEGORY_LOADING"]);
+		app.print(sformat(L["LOADING_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 
 		-- Artifacts (Dynamic)
 		local db = app.CreateNPC(-10067);
@@ -17208,7 +17208,7 @@ function app:GetDataCache()
 		-- add an OnEnd function for the FunctionRunner to print being done
 		app.FunctionRunner.OnEnd(function()
 			app.ToggleCacheMaps();
-			app.print(L["DYNAMIC_CATEGORY_READY"]);
+			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
 	end
 
