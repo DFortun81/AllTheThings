@@ -12252,8 +12252,9 @@ local GetSpellLink = GetSpellLink;
 local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 	local allMountIDs = C_MountJournal_GetMountIDs();
 	if allMountIDs and #allMountIDs > 0 then
+		local spellID;
 		for i,mountID in ipairs(allMountIDs) do
-			local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
+			spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
 			if spellID then rawset(t, spellID, mountID); end
 		end
 		setmetatable(t, nil);

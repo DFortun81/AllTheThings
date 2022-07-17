@@ -57,9 +57,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 		})),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 }, ["description"] = "Requires Cachial" }, {
-			--q(65406, {	-- Connecting It All
-			--	["coord"] = { 65.7, 41, ZERETH_MORTIS },
-			--}),
+			q(65406, {	-- Connecting It All
+				["coord"] = { 65.7, 41, ZERETH_MORTIS },
+			}),
 			q(65417, {	-- Connecting It All
 				["coord"] = { 55, 48, ZERETH_MORTIS },
 			}),

@@ -1077,6 +1077,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
+			q(65362, {	-- Not of the Body
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["g"] = {
+					i(189449),	-- Jiro Scan
+				},
+			}),
 			q(65072, {	-- Not Safe For Work
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
@@ -1145,15 +1154,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65362, {	-- Not of the Body
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-				["g"] = {
-					i(189449),	-- Jiro Scan
-				},
 			}),
 			--]]
 		})),

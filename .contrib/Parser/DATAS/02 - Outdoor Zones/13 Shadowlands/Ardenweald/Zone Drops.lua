@@ -31,6 +31,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			i(175550),	-- Eventide Sabatons
 			i(175546),	-- Eventide Vest
 			i(175573),	-- Eventide Wristwraps
+			i(180652, {	-- Fae Dreamcatcher
+				["description"] = "Used to dispel the barrier at |cFFFFFFFF36.1, 65.2|r.",
+				["cost"] = {
+					{ "i", 180656, 1 },	-- Enchanted Bough
+					{ "i", 180654, 1 },	-- Fae Ornament
+					{ "i", 180655, 1 },	-- Raw Dream Fibers
+				},
+			}),
 			i(187429),	-- Petrified Sylvan Antlers
 			i(175568),	-- Shimmerbough Cord
 			i(175554),	-- Shimmerbough Gloves

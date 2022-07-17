@@ -71,26 +71,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 36.1, 65.2, ARDENWEALD },
 				["cost"] = { { "i", 180652, 1 } },	-- Fae Dreamcatcher
 				["g"] = {
-					i(180656, {	-- Enchanted Bough
-						["description"] = "Under the platform with the big chair.",
-						["coord"] = { 42.4, 46.7, ARDENWEALD },
-					}),
-					i(180654, {	-- Fae Ornament
-						["description"] = "On the tree platform.",
-						["coord"] = { 51.5, 61.6, ARDENWEALD },
-					}),
-					i(180655, {	-- Raw Dream Fibers
-						["description"] = "Hanging silk fibers at the back of the platform.",
-						["coord"] = { 36.9, 29.8, ARDENWEALD },
-					}),
-					i(180652, {	-- Fae Dreamcatcher
-						["description"] = "Used to dispel the barrier at |cFFFFFFFF36.1, 65.2|r.",
-						["cost"] = {
-							{ "i", 180656, 1 },	-- Enchanted Bough
-							{ "i", 180654, 1 },	-- Fae Ornament
-							{ "i", 180655, 1 },	-- Raw Dream Fibers
-						},
-					}),
 					crit(14, {	-- Cache of the Night
 						["achievementID"] = 14313,	-- Treasures of Ardenweald
 					}),
@@ -198,6 +178,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(184490),	-- Fae Pipes (TOY!)
 				},
 			}),
+			o(355020, {	-- Enchanted Bough
+				["description"] = "Under the platform with the big chair.",
+				["coord"] = { 42.4, 46.7, ARDENWEALD },
+				-- ["questID"] = TODO,
+				["g"] = {
+					i(180656),	-- Enchanted Bough
+				},
+			}),
 			o(353233, {		-- Enchanted Chest
 				["questID"] = 60664,
 				["isDaily"] = true,
@@ -227,6 +215,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(187943),	-- Fae Net
 				},
 			})),
+			o(355021, {	-- Fae Ornament
+				["description"] = "On the tree platform.",
+				["coord"] = { 51.5, 61.6, ARDENWEALD },
+				-- ["questID"] = TODO,
+				["g"] = {
+					i(180654),	-- Fae Ornament
+				},
+			}),
 			o_repeated({	-- Faerie Stash
 			--	Rewards
 			--	Objects
@@ -468,6 +464,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						}),
 					}),
 				}),
+			}),
+			o(355019, {	-- Raw Dream Silk
+				["description"] = "Hanging silk fibers at the back of the platform.",
+				["coord"] = { 36.9, 29.8, ARDENWEALD },
+				-- ["questID"] = TODO,
+				["g"] = {
+					i(180655),	-- Raw Dream Fibers
+				},
 			}),
 			o(354911, {		-- Swollen Anima Seed
 				["coord"] = { 76.6, 29.7, ARDENWEALD },

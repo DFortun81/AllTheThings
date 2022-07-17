@@ -840,7 +840,13 @@ root("Zones", m(KALIMDOR, {
 								{ 43.4, 67.4, DUROTAR },
 								-- #endif
 							},
-							["sourceQuest"] = 25131,	-- Vile Familiars
+							["sourceQuests"] = {
+								-- TODO: not 100% on whether Vile Familiars is still required in Retail?
+								25131,	-- Vile Familiars
+								-- #IF AFTER 6.0.2.18833
+								37446,	-- Lazy Peons
+								-- #ENDIF
+							},
 						}),
 						q(31156, {	-- Calligraphed Parchment
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },

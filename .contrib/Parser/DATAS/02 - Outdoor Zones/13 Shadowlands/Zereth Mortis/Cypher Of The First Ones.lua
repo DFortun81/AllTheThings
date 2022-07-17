@@ -664,4 +664,16 @@ root("HiddenQuestTriggers", {
 	q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
 	q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
 	q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
+	-- Pocopoc Costumes Applied
+	q(66059),	-- Chef's Hat
+	q(66060),	-- Crown of Flowers
+	q(66061),	-- Pirate Hat
+	q(66062),	-- Safari Hat
+	q(66063),	-- Dapper
+	q(66064),	-- Tricorne Hat
+	q(66065),	-- Witch Hat
+	q(66066),	-- Candle
+	q(66067),	-- Pepe
+	q(66068),	-- Princess Hat
+	q(66069),	-- No Costume
 });
