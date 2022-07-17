@@ -587,6 +587,19 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(191471),	-- Writhebark
 		i(191472),	-- Writhebark
 	}),
+	prof(INSCRIPTION, {
+		i(191234),	-- Mixing Rod I (WIP)
+		i(191231),	-- Mixing Rod II (WIP)
+		i(191233),	-- Rolling Pin I (WIP)
+		i(191232),	-- Rolling Pin II (WIP)
+		i(197718),	-- Scroll of Sales
+
+		--i(0, 377985);	-- Heart in a Bottle
+		--i(0, 382583);	-- Opening
+	}),
+	prof(JEWELCRAFTING, {
+		i(194545),	-- Prismatic Ore
+	}),
 	prof(MINING, {
 		i(188658),	-- Draconium Ore
 		i(189143),	-- Draconium Ore
@@ -599,7 +612,14 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(190395),	-- Tyrivite Ore
 		i(190396),	-- Tyrivite Ore
 	}),
-	prof(JEWELCRAFTING, {
-		i(194545),	-- Prismatic Ore
+	prof(SKINNING, {
+		i(198401),	-- Aileron Seamoth Lure
+		i(193896),	-- Cerulean Spinefish Lure
+		i(193906),	-- Elusive Creature Bait
+		i(198403),	-- Islefin Dorado Lure
+		i(198404),	-- Pheromone Emitter
+		i(193893),	-- Scalebelly Mackerel Lure
+		i(193895),	-- Temporal Dragonhead Lure
+		i(193894),	-- Thousandbite Piranha Lure
 	}),
 }))));
