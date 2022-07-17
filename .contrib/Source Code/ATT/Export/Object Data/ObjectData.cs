@@ -171,9 +171,9 @@ namespace ATT
                 }
                 if (data.TryGetValue("bonusID", out objRef))
                 {
-                    // Bonus ID <1 is default, so we don't need to write it.
+                    // Bonus ID 0 is default, so we don't need to write it.
                     // Additionally, there must be an itemID for the bonusID to be present.
-                    if (ignoreBonus || Convert.ToInt64(objRef) < 2 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
+                    if (ignoreBonus || Convert.ToInt64(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("bonusID");
                 }
                 if (data.TryGetValue("modID", out objRef))
                 {

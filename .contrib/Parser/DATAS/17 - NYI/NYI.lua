@@ -494,6 +494,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(137279),	-- Nightfallen Vendor List
 				i(134008),	-- Simple Rosary of Light
 				i(137282),	-- Valarjar Vendor List
+				i(139603, { -- Vault Patroller's Warboots
+					["bonusID"] = 1,
+				}),
 				i(137278),	-- Wardens Vendor List
 			}),
 			tier(LEGION_TIER, 2.0, {
