@@ -945,7 +945,11 @@ for key,value in pairs({
 	[1599] = "Tombe peu profonde",	-- Shallow Grave
 	[1609] = "Catapulte des Gueules-de-dragon",	-- Dragonmaw Catapult
 	[1627] = "Caisse de Dalaran",	-- Dalaran Crate
+	[1738] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Documents du Syndicat",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Documents du Syndicat",	-- Syndicate Documents
 	[1763] = "AVIS DE RECHERCHE",	-- WANTED
+	[1765] = "Coffre en bois usé",	-- Worn Wooden Chest
 	[2059] = "Un cadavre de Nain",	-- A Dwarven Corpse
 	[2076] = "Chaudron bouillonnant",	-- Bubbling Cauldron
 	[2083] = "Correspondance de la Voile sanglante",	-- Bloodsail Correspondence
@@ -2873,6 +2877,9 @@ for key,value in pairs({
 	[354856] = "Caisse couverte de vase",	-- Slime-Coated Crate
 	[354911] = "Graine d’anima gonflée",	-- Swollen Anima Seed
 	[355000] = "Cache de la Nuit",	-- Cache of the Night
+	[355019] = "Soie onirique brute",	-- Raw Dream Silk
+	[355020] = "Rameau enchanté",	-- Enchanted Bough
+	[355021] = "Ornement faë",	-- Fae Ornament
 	[355035] = "Malle runique des Élus",	-- Treasure: House of the Chosen
 	[355037] = "Malle runeliée",	-- Runebound Coffer
 	[355038] = "Malle runeliée",	-- Runebound Coffer
@@ -2894,6 +2901,8 @@ for key,value in pairs({
 	[355880] = "Le Nécronom-i-miam",	-- The Necronom-i-nom
 	[355886] = "Coffre de la peste",	-- Plaguefallen Chest
 	[355947] = "Planque de Glutharn",	-- Glutharn's Stash
+	[355980] = "Cache du ritualiste",	-- Ritualist's Cache
+	[356535] = "Trésor du parle-runes",	-- Runespeaker's Trove
 	[356555] = "Collier d’Eurydéa",	-- Eurydea's Necklace
 	[356693] = "Tribut extravagant de la baronne Vashj",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tribut extravagant d’Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute

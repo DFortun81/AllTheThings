@@ -941,7 +941,11 @@ for key,value in pairs({
 	[1599] = "Shallow Grave",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "Catapulta delle Fauci di Drago",	-- Dragonmaw Catapult
 	[1627] = "Cassa di Dalaran",	-- Dalaran Crate
+	[1738] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Documenti della Lega dei Tagliagole",	-- Syndicate Documents
 	[1763] = "WANTED",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "Cassa di Legno Consumata",	-- Worn Wooden Chest
 	[2059] = "Cadavere di un Nano",	-- A Dwarven Corpse
 	[2076] = "Calderone Ribollente",	-- Bubbling Cauldron
 	[2083] = "Corrispondenza dei Velerosse",	-- Bloodsail Correspondence
@@ -2869,6 +2873,9 @@ for key,value in pairs({
 	[354856] = "Cassa Coperta di Poltiglia",	-- Slime-Coated Crate
 	[354911] = "Seme dell'Animum Rigonfio",	-- Swollen Anima Seed
 	[355000] = "Scrigno della Notte",	-- Cache of the Night
+	[355019] = "Seta Onirica Grezza",	-- Raw Dream Silk
+	[355020] = "Ramo Incantato",	-- Enchanted Bough
+	[355021] = "Ornamento dei Silfi",	-- Fae Ornament
 	[355035] = "Scrigno Runico Prescelto",	-- Treasure: House of the Chosen
 	[355037] = "Scrigno Runico",	-- Runebound Coffer
 	[355038] = "Scrigno Runico",	-- Runebound Coffer
@@ -2890,6 +2897,8 @@ for key,value in pairs({
 	[355880] = "Necronom-i-nom",	-- The Necronom-i-nom
 	[355886] = "Cassa del Caduto della Piaga",	-- Plaguefallen Chest
 	[355947] = "Cassa di Glutharn",	-- Glutharn's Stash
+	[355980] = "Scrigno del Ritualista",	-- Ritualist's Cache
+	[356535] = "Collezione dell'Oratore Runico",	-- Runespeaker's Trove
 	[356555] = "La Collana di Eurydea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tributo Smodato di Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute

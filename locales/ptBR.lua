@@ -946,7 +946,11 @@ for key,value in pairs({
 	[1599] = "Cova Rasa",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1609] = "Catapulta da Presa do Dragão",	-- Dragonmaw Catapult
 	[1627] = "Caixote de Dalaran",	-- Dalaran Crate
+	[1738] = "Documentos da Camarilha",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Documentos da Camarilha",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Documentos da Camarilha",	-- Syndicate Documents
 	[1763] = "PROCURA-SE",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "Baú de Madeira Gasto",	-- Worn Wooden Chest
 	[2059] = "Cadáver Enânico",	-- A Dwarven Corpse
 	[2076] = "Caldeirão Borbulhante",	-- Bubbling Cauldron
 	[2083] = "Correspondência dos Vela Sangrenta",	-- Bloodsail Correspondence
@@ -2874,6 +2878,9 @@ for key,value in pairs({
 	[354856] = "Caixote Coberto de Visgo",	-- Slime-Coated Crate
 	[354911] = "Semente de Ânima Inchada",	-- Swollen Anima Seed
 	[355000] = "Baú da Noite",	-- Cache of the Night
+	[355019] = "Seda Onírica Bruta",	-- Raw Dream Silk
+	[355020] = "Ramo Encantado",	-- Enchanted Bough
+	[355021] = "Ornamento Feério",	-- Fae Ornament
 	[355035] = "Cofre Rúnico Escolhido",	-- Treasure: House of the Chosen
 	[355037] = "Cofre Rúnico",	-- Runebound Coffer
 	[355038] = "Cofre Rúnico",	-- Runebound Coffer
@@ -2895,6 +2902,8 @@ for key,value in pairs({
 	[355880] = "O Necronomi-nham",	-- The Necronom-i-nom
 	[355886] = "Baú Empesteado",	-- Plaguefallen Chest
 	[355947] = "Esconderijo de Glutharn",	-- Glutharn's Stash
+	[355980] = "Baú do Ritualista",	-- Ritualist's Cache
+	[356535] = "Tesouro do Voz-das-Runas",	-- Runespeaker's Trove
 	[356555] = "Colar de Eurídea",	-- Eurydea's Necklace
 	[356693] = "Tributo Extravagante da Baronesa Vashj",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Tributo Extravagante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute

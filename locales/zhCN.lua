@@ -946,7 +946,11 @@ for key, value in pairs({
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1609] = "龙喉投石车",	-- Dragonmaw Catapult
 	[1627] = "达拉然板条箱",	-- Dalaran Crate
+	[1738] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "辛迪加文档",	-- Syndicate Documents
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron
 	[2083] = "血帆海盗的信件",	-- Bloodsail Correspondence
@@ -2874,6 +2878,9 @@ for key, value in pairs({
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
 	[354911] = "鼓胀的心能之种",	-- Swollen Anima Seed
 	[355000] = "魅夜宝箱",	-- Cache of the Night	--TODO: This was manually translated
+	[355019] = "梦境原料纤丝",	-- Raw Dream Silk
+	[355020] = "魔化虬枝",	-- Enchanted Bough
+	[355021] = "法夜装饰品",	-- Fae Ornament
 	[355035] = "魂选符文宝匣",	-- Treasure: House of the Chosen
 	[355037] = "符文之缚宝匣",	-- Runebound Coffer
 	[355038] = "符文之缚宝匣",	-- Runebound Coffer
@@ -2895,6 +2902,8 @@ for key, value in pairs({
 	[355880] = "通灵馍典",	-- The Necronom-i-nom
 	[355886] = "凋殇者宝箱",	-- Plaguefallen Chest
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
+	[355980] = "祭师的箱子",	-- Ritualist's Cache
+	[356535] = "符语者的宝藏",	-- Runespeaker's Trove
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
 	[356693] = "瓦丝琪女男爵的奢华礼品",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
