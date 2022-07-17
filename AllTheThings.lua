@@ -17107,7 +17107,7 @@ function app:GetDataCache()
 		local g = primeData.g;
 		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
 		app.ToggleCacheMaps(true);
-		app.print("Loading Dynamic Groups...");
+		app.print(L["DYNAMIC_CATEGORY_LABEL"],LFG_LIST_LOADING);
 
 		-- Artifacts (Dynamic)
 		local db = app.CreateNPC(-10067);
@@ -17208,7 +17208,7 @@ function app:GetDataCache()
 		-- add an OnEnd function for the FunctionRunner to print being done
 		app.FunctionRunner.OnEnd(function()
 			app.ToggleCacheMaps();
-			app.print("Dynamic Groups Loaded");
+			app.print(L["DYNAMIC_CATEGORY_LABEL"],READY);
 		end);
 	end
 
@@ -17668,22 +17668,24 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	tinsert(g, {
-		["text"] = "Click to Create Dynamic Groups",
-		["description"] = "Create Dynamic Groups",
-		["icon"] = 4200123,	-- misc-rnrgreengobutton
-		["OnUpdate"] = app.AlwaysShowUpdate,
-		["OnClick"] = function(row, button)
-			local ref = row.ref;
-			ref.OnClick = nil;
-			ref.OnUpdate = nil;
-			ref.visible = nil;
-			local primeData = ref.parent;
-			if primeData then
-				AddDynamicGroups(primeData);
-			end
-		end,
-	});
+	if dynamicSetting > 0 then
+		tinsert(g, {
+			["text"] = sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]);
+			["description"] = dynamicSetting == 1 and L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] or L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"],
+			["icon"] = 4200123,	-- misc-rnrgreengobutton
+			["OnUpdate"] = app.AlwaysShowUpdate,
+			["OnClick"] = function(row, button)
+				local ref = row.ref;
+				ref.OnClick = nil;
+				ref.OnUpdate = nil;
+				ref.visible = nil;
+				local primeData = ref.parent;
+				if primeData then
+					AddDynamicGroups(primeData);
+				end
+			end,
+		});
+	end
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;

@@ -398,6 +398,7 @@ app.L = {
 	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
 	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Requires Reload|r";
+	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 
 	-- Account Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
