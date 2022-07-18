@@ -18320,6 +18320,7 @@ local function BuildSearchResponseViaCachedGroups(cacheContainer, field, value, 
 		local parent, thing;
 		if value then
 			local sources = cacheContainer[value];
+			if not sources then return ClonedHierarchyGroups; end
 			-- for each source of each Thing with the value
 			for _,source in ipairs(sources) do
 				-- some recipes are faction locked and cannot be learned by the current character, so don't include them if specified
