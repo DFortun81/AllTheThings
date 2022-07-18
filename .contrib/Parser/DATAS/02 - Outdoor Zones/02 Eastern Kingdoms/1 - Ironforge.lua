@@ -156,18 +156,30 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["g"] = CLASSIC_WEAPONSMITHING,
 					}),
 				}),
-				applyclassicphase(TBC_PHASE_ONE, prof(FISHING, {
-					i(34864),	-- Baby Crocolisk
+				prof(FISHING, {
+					i(34864, {	-- Baby Crocolisk
+						["timeline"] = { "added 2.4.0.7897" },
+					}),
 					i(67414, {	-- Bag of Shiny Things
 						["description"] = "Fishing Daily Quest Reward",
 						["timeline"] = { "added 4.0.1.12984" },
 						["cr"] = 5161,	-- Grimnur Stonebrand
 						["groups"] = {
-							i(44983),	-- Strand Crawler
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
+							i(44983, {	-- Strand Crawler
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(33820, {	-- Weather-Beaten Fishing Hat
+								["timeline"] = { "added 2.4.0.7897" },
+							}),
+							i(45991, {	-- Bone Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(45992, {	-- Jeweled Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(67410, {	-- Very Unlucky Rock
+								["timeline"] = { "added 4.0.1.12984" },
+							}),
 						},
 					}),
 					i(122204, {	-- Music Roll: Cold Mountain
@@ -181,7 +193,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
 						-- #endif
 					}),
-				})),
+				}),
 			}),
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity

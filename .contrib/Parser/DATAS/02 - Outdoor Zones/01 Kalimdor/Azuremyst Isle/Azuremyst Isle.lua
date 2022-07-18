@@ -10,7 +10,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			99,		-- Stillpine Hold
 		},
 		-- #if AFTER WRATH
-		["achievementID"] = 860,
+		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
 		-- #endif
 		["groups"] = {
 			m(AMMEN_VALE, {
