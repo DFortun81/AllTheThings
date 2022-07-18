@@ -77,9 +77,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						recipe(343683, {	-- Crafter's Mark II
 							["requireSkill"] = ENCHANTING,
 						}),
-						recipe(343689, {	-- Crafter's Mark II
-							["requireSkill"] = INSCRIPTION,
-						}),
+						recipe(343689),	-- Crafter's Mark II [INSCRIPTION]
 					},
 				}),
 				i(184621, {	-- Ritual Prism of Fortune

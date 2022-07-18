@@ -1610,7 +1610,6 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 		cat(1474, {	-- Optional Reagents
 			r(343691),	-- Crafter's Mark I
-			r(343689),	-- Crafter's Mark II
 			r(324197),	-- Missive of Critical Strike
 			r(324198),	-- Missive of Haste
 			r(324196),	-- Missive of Mastery

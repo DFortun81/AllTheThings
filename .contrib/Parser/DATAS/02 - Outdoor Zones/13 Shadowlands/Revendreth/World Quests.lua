@@ -25,7 +25,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			q(60655, {	-- A Stolen Stone Fiend
 				["isWorldQuest"] = true,
-				["description"] = "Getting the pet from the WQ is currently a little buggy.\n\nAfter you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is intended to open the cage next to Penkle, giving you the pet.  Currently, it does not.  Keep the key in your bags, and next time the WQ is active, immediately head back to the cage at |cFFFFFFFF45.2, 47.8|r and open it.",
+				["description"] = "After you initially defeat Edgar the Collector at the end of the quest, go behind the building and speak to a dredger named Penkle to get a |cFFFFFFFFCage Key|r.\n\nThe key is used to open the cage next to Penkle, which gives the pet.",
 				["crs"] = { 170189 },	-- Penkle
 				["lvl"] = { 60 },
 				["g"] = {
