@@ -17120,9 +17120,10 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "artifactID"));
 
 		-- Azerite Essences (Dynamic)
-		local db = app.CreateNPC(-852);
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
+		-- TODO: needs to properly utilize cached essences including 'rank'
+		-- local db = app.CreateNPC(-852);
+		-- db.parent = primeData;
+		-- tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
 
 		-- Battle Pets - Dynamic
 		local db = {};
