@@ -355,7 +355,7 @@ local L = app.L;
 		L.DYNAMIC_CATEGORY_NESTED = "嵌套";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";
-		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
+		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
@@ -773,7 +773,7 @@ for key,value in pairs({
 		[-576] = "星际争霸II：虚空之遗",										-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
-		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-580] = "暗影国度季节性促销",			-- Shadowlands Seasonal Promotions
 		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
@@ -3249,7 +3249,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Arbitrary Filters
