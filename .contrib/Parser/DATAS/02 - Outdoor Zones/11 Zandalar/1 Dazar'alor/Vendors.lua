@@ -1309,27 +1309,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(5, 4),	-- Essence of the Focusing Iris (Rank 4)
-						},
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(7, 4),	-- Anima of Life and Death (Rank 4)
-						},
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = HEALERS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(20, 4),	-- Life-Binder's Invocation (Rank 4)
-						},
 					}),
 					-- This Gear need symlink someday
 					i(174630),	-- Relinquished Azerite Spaulders

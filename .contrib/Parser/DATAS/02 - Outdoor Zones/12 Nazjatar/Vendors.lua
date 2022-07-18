@@ -163,9 +163,6 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 					["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
-					},
 				}),
 				i(171151, {	-- Conch of Wa'mundi
 					["cost"] = 65000000,	-- 6,500g
@@ -234,9 +231,6 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 					["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
 					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(15, 4),	-- Ripple in Space (Rank 4)
-					},
 				}),
 				i(169275, {	-- Alliance War Banner (TOY!)
 					["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
@@ -473,9 +467,6 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
 					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(15, 4),	-- Ripple in Space (Rank 4)
-					},
 				}),
 				i(169357, {	-- Chitterspine Devourer (PET!)
 					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
@@ -942,9 +933,6 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 					["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
-					},
 				}),
 				i(163073, {	-- Conch of Wa'mundi
 					["cost"] = 65000000,	-- 6,500g

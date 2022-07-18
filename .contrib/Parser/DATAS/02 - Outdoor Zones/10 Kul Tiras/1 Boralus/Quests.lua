@@ -30,9 +30,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 						["u"] = REMOVED_FROM_GAME,	-- Removed // Old PvP Elite/Gladiator
-						["g"] = {
-							az(32, 4),	-- Conflict and Strife (Rank 4)
-						},
 					}),
 				}),
 				q(54978, {	-- Against Overwhelming Odds

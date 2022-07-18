@@ -893,18 +893,11 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 						})),
 						i(168538, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Dazzling Azerite Formation (Rank 4)
 							["classes"] = TANKS,
-							["g"] = {
-								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
-							},
 						})),
 						i(168857, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Sparkling Elemental Heart (Rank 4)
-							az(14, 4),	-- Condensed Life-Force (Rank 4)
 						})),
 						i(168944, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
-							["g"] = {
-								az(21, 4),	-- Vitality Conduit (Rank 4)
-							},
 						})),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary

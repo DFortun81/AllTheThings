@@ -90,9 +90,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						},
 					}),
 					i(170150, {	-- Map to the Last Worldvein
-						un(REMOVED_FROM_GAME, i(168618, {	-- Brilliant Worldvein (Rank 4)
-							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						})),
+						un(REMOVED_FROM_GAME, i(168618)),	-- Brilliant Worldvein (Rank 4)
 					}),
 				},
 			}),
@@ -137,9 +135,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						},
 					}),
 					i(170149, {	-- Map to the Last Worldvein
-						un(REMOVED_FROM_GAME, i(168618, {	-- Brilliant Worldvein (Rank 4)
-							az(4, 4),	-- Worldvein Resonance (Rank 4)
-						})),
+						un(REMOVED_FROM_GAME, i(168618)),	-- Brilliant Worldvein (Rank 4)
 					}),
 				},
 			}),

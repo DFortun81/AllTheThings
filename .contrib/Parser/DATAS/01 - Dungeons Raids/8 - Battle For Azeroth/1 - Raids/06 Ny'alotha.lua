@@ -1016,7 +1016,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 							},
 						})),
 						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Bursting Void Droplet
-							az(37, 4),	-- The Formless Void (Rank 4)
 						})),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (PET!)

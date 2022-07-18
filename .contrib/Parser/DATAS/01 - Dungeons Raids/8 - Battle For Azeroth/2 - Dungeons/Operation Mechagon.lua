@@ -224,9 +224,6 @@ _.Instances = { tier(BFA_TIER, {
 						["g"] = {
 							i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									az(22, 4),	-- Vision of Perfection (Rank 4)
-								},
 							}),
 						},
 					}),

@@ -2393,9 +2393,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(18, 4),	-- Artifice of Time (Rank 4)
-						},
 					}),
 					i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
@@ -2422,9 +2419,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(23, 4),	-- Blood of the Enemy (Rank 4)
-						},
 					}),
 					i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
@@ -2455,9 +2449,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(3, 4),	-- Sphere of Suppression (Rank 4)
-						},
 					}),
 				},
 			}),
@@ -2625,27 +2616,18 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(5, 4),	-- Essence of the Focusing Iris (Rank 4)
-						},
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(7, 4),	-- Anima of Life and Death (Rank 4)
-						},
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = HEALERS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(20, 4),	-- Life-Binder's Invocation (Rank 4)
-						},
 					}),
 					-- This Gear need symlink someday
 					i(174630),	-- Relinquished Azerite Spaulders

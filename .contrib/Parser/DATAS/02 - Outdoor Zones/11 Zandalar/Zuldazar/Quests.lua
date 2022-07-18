@@ -51,9 +51,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
 							["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 							["u"] = REMOVED_FROM_GAME,	-- PvP Elite/Gladiator
-							["g"] = {
-								az(32, 4),	-- Conflict and Strife (Rank 4)
-							},
 						}),
 					}),
 					q(52958, {	-- Call to Arms: Drustvar
