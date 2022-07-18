@@ -2842,6 +2842,10 @@ local function CreateHash(t)
 			-- Some recipes teach the same spell, so need to differentiate by their itemID as well
 			hash = hash .. ":" .. t.itemID;
 		end
+		if t.rank then
+			hash = hash .. "." .. t.rank;
+			-- app.PrintDebug("hash.rank",hash)
+		end
 		rawset(t, "hash", hash);
 		return hash;
 	end
@@ -17002,22 +17006,24 @@ local DynamicCategory_Simple = function(self)
 			else app.print("Failed to build Simple Dynamic Category: No data cached for key & value",self.dynamic,self.dynamic_value); end
 		else
 			for id,sources in pairs(dynamicCache) do
-				-- find the top-level parent of the Thing
-				top = RecursiveParentMapper(sources[1], "parent", rootATT);
-				-- create/match the expected top header
-				topText = top and top.text;
-				if topText then
-					-- store a copy of this top header if we dont have it
-					if not topHeaders[topText] then
-						topHeaders[topText] = CreateObject(top, true);
-						-- print("create topHeader",self.dynamic,"==>")
-						-- app.PrintTable(topHeaders[topText])
+				for _,source in pairs(sources) do
+					-- find the top-level parent of the Thing
+					top = RecursiveParentMapper(source, "parent", rootATT);
+					-- create/match the expected top header
+					topText = top and top.text;
+					if topText then
+						-- store a copy of this top header if we dont have it
+						if not topHeaders[topText] then
+							-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
+							-- app.PrintTable(topHeaders[topText])
+							topHeaders[topText] = CreateObject(top, true);
+						end
+						-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
+						-- remove it from being considered a cost within the dynamic category
+						thing = CreateObject(source, clearSubgroups);
+						thing.collectibleAsCost = false;
+						NestObject(topHeaders[topText], thing);
 					end
-					-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-					-- remove it from being considered a cost within the dynamic category
-					thing = app.MergedObject(sources, clearSubgroups);
-					thing.collectibleAsCost = false;
-					NestObject(topHeaders[topText], thing);
 				end
 			end
 			-- dynamic groups for general Types are ignored for the source tooltips
@@ -17121,9 +17127,9 @@ function app:GetDataCache()
 
 		-- Azerite Essences (Dynamic)
 		-- TODO: needs to properly utilize cached essences including 'rank'
-		-- local db = app.CreateNPC(-852);
-		-- db.parent = primeData;
-		-- tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
+		local db = app.CreateNPC(-852);
+		db.parent = primeData;
+		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
 
 		-- Battle Pets - Dynamic
 		local db = {};
