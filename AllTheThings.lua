@@ -3842,6 +3842,10 @@ local function ResolveSymlinkGroupAsync(group)
 		PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 		group.sym = nil;
 		BuildGroups(group, group.g);
+		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
+		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
+		-- on the initial pass due to the async nature
+		app.FillGroups(group);
 		app.DirectGroupUpdate(group);
 	end
 end
@@ -4964,11 +4968,12 @@ local function DetermineCraftedGroups(group)
 end
 local function DetermineSymlinkGroups(group)
 	if group.sym then
-		-- app.PrintDebug("DSG",group.hash);
 		-- groups which are being filled in a Window can be done async
 		if isInWindow then
+			-- app.PrintDebug("DSG-Async",group.hash);
 			app.FillSymlinkAsync(group);
 		else
+			-- app.PrintDebug("DSG-Now",group.hash);
 			local groups = ResolveSymbolicLink(group);
 			-- make sure this group doesn't waste time getting resolved again somehow
 			group.sym = nil;
@@ -14777,6 +14782,7 @@ function app:CreateMiniListForGroup(group)
 	if group.questID or group.sourceQuests then popout = nil; end
 	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
 	if not popout then
+		popout = app:GetWindow(suffix);
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
@@ -14787,6 +14793,8 @@ function app:CreateMiniListForGroup(group)
 
 		-- clone/search initially so as to not let popout operations modify the source data
 		group = CreateObject(group);
+		-- Insert the data group into the Raw Data table.
+		popout:SetData(group);
 
 		-- being a search result means it has already received certain processing
 		if not group.isBaseSearchResult then
@@ -14809,7 +14817,6 @@ function app:CreateMiniListForGroup(group)
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		app.BuildCost(group);
 
-		popout = app:GetWindow(suffix);
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
 			-- app.PrintDebug("Update.ExpireTime", self.Suffix, force, got)
@@ -15142,8 +15149,6 @@ function app:CreateMiniListForGroup(group)
 			end
 		end
 
-		-- Insert the data group into the Raw Data table.
-		popout:SetData(group);
 		popout.data.hideText = true;
 		popout.data.visible = true;
 		popout:BuildData();
@@ -19076,6 +19081,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					or header.classID and app.BaseCharacterClass
 					or header.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
+				-- Swap out the map data for the header.
+				self:SetData(header);
 				-- Fill up the groups that need to be filled!
 				app.FillGroups(header);
 
@@ -19141,8 +19148,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				-- Swap out the map data for the header.
-				self:SetData(header);
 				self:BuildData();
 
 				-- check to expand groups after they have been built and updated
