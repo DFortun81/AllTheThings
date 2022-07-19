@@ -21658,6 +21658,17 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					MergeObject(temp, mapObject);
 				end
 
+				local OnUpdateForLFGHeader = function(group)
+					local meetLevelrange = app.FilterGroupsByLevel(group);
+					if meetLevelrange or app.MODE_DEBUG_OR_ACCOUNT then
+						-- default logic for available LFG category/Debug/Account
+						return false;
+					else
+						group.visible = nil;
+						return true;
+					end
+				end
+
 				-- Get the LFG Rewards Available at this level
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
@@ -21665,14 +21676,14 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, trackable = false, g = {} };
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
-						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));
-						-- print("NormInfo",dungeonID,GetLFGDungeonInfo(dungeonID))
-						-- print("DungeonAppearsInRandomLFD(dungeonID)",DungeonAppearsInRandomLFD(dungeonID)); -- useless
+						-- app.PrintDebug("RandInfo",index,GetLFGRandomDungeonInfo(index));
+						-- app.PrintDebug("NormInfo",dungeonID,GetLFGDungeonInfo(dungeonID))
+						-- app.PrintDebug("DungeonAppearsInRandomLFD(dungeonID)",DungeonAppearsInRandomLFD(dungeonID)); -- useless
 						local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel = GetLFGDungeonInfo(dungeonID);
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, g = {}};
+						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader, g = {}};
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
 						elseif isTimeWalker then
