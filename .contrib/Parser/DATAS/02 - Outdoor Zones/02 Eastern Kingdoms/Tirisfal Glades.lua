@@ -1602,16 +1602,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = { UNDEAD },
 				}),
 				-- #endif
-				q(1881, {	-- Speak with Anastasia
-					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
-					["altQuests"] = { 1883 },	-- Speak with Un'thuwa
-					["coord"] = { 61.8, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { UNDEAD, TROLL },
-					["classes"] = { MAGE },
-					["isBreadcrumb"] = true,
-					["lvl"] = 10,
-				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver

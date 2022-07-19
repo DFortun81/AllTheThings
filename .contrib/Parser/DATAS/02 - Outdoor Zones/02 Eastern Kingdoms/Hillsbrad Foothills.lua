@@ -733,6 +733,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(515, {	-- Elixir of Agony
+					["qg"] = 2055,	-- Master Apothecary Faranell
+					["coord"] = { 48.6, 69.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(3749)),	-- High Apothecary Cloak
+						un(REMOVED_FROM_GAME, i(3747)),	-- Meditative Sash
+					},
+				}),
 				q(517, {	-- Elixir of Agony
 					["qg"] = 2216,	-- Apothecary Lydon
 					["sourceQuest"] = 515,	-- Elixir of Agony
@@ -1393,6 +1403,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cr"] = 47789,	-- Clerk Horrace Whitesteed
 					["races"] = HORDE_ONLY,
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
+				}),
+				q(495, {	-- The Crown of Will
+					["qg"] = 2227,	-- Sharlindra
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(518, {	-- The Crown of Will
 					["qg"] = 2278,	-- Melisara

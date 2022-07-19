@@ -2393,6 +2393,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
 				}),
+				q(5961, {	-- The Champion of the Banshee Queen
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["coord"] = { 57.8, 91.8, UNDERCITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				}),
 				q(27619, {	-- The Commander
 					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks

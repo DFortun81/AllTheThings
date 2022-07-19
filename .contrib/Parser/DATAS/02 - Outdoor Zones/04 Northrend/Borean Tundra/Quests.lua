@@ -648,12 +648,6 @@ _.Zones =
 					["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 					["sourceQuest"] = 11864,	-- A Mission Statement
 				}),
-				q(13257, {	-- Herald of War
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 25256 },	-- High Overlord Saurfang
-					["sourceQuest"] = 13242,	-- Darkness Stirs
-				}),
 				q(11660, {	-- Horn of the Ancient Mariner
 					["provider"] = { "n", 25476 },	-- Waltor of Pal'ea
 					["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },

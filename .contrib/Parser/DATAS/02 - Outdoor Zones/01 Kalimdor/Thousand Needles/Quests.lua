@@ -927,6 +927,17 @@ _.Zones =
 						28139,	-- Codemaster's Code
 					},
 				}),
+				q(1394, {	-- Final Passage
+					["qg"] = 4488,	-- Parqual Fintallas
+					["sourceQuest"] = 6628,	-- Test of Lore
+					["coord"] = { 57.6, 65.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(6806)),	-- Dancing Flame
+						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
+					},
+				}),
 				q(28045, {	-- The Greatest Flavor in the World!
 					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
@@ -1024,6 +1035,13 @@ _.Zones =
 					["sourceQuest"] = 1151,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(6628, {	-- Test of Lore
+					["qg"] = 4488,	-- Parqual Fintallas
+					["sourceQuest"] = 1160,	-- Test of Lore
+					["coord"] = { 57.6, 65.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1151,  {	-- Test of Strength

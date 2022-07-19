@@ -224,6 +224,15 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.6, 23.7, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
+				q(3564, {	-- Andron's Payment to Jediga
+					["qg"] = 6522,	-- Andron Gant
+					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
+					["coord"] = { 54.8, 76.3, UNDERCITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { AZSHARA },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
+				}),
 				q(14468, {	-- Another Warm Body
 					["sourceQuests"] = {
 						14197,	-- A Quota to Meet

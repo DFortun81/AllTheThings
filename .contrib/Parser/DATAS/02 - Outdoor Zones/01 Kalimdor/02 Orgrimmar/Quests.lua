@@ -44,12 +44,6 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(13266, {	-- A Life Without Regret
-				["sourceQuests"] = { 13257 },	-- Herald of War
-				["provider"] = { "n", 31412 },	-- Thrall
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(50341, {	-- A Recent Discovery
 				["sourceQuests"] = { 49977 },	-- Summons to Orgrimmar
 				["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
@@ -117,11 +111,6 @@ root("Zones", m(KALIMDOR, {
 				["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 				["coord"] = { 70.9, 49.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-			}),
-			q(936,   {	-- Assisting Arch Druid Runetotem
-				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(40976, {	-- Audience with the Warchief
 				["provider"] = { "n", 97296 },	-- Archmage Khadgar
@@ -239,16 +228,6 @@ root("Zones", m(KALIMDOR, {
 					i(119326),	-- Ring of Pardons
 					i(119327),	-- Durak's Downfall
 				},
-			}),
-			q(26865, {	-- Enemies Below
-				["provider"] = { "n", 39605 },	-- Garrosh Hellscream
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(31034, {	-- Enemies Below
-				["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-				["coord"] = { 48.6, 71.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
 			}),
 			q(60344, {	-- Finding Your Way (H)
 				["customCollect"] = "NPE",	-- New Player Experience
@@ -738,13 +717,69 @@ root("Zones", m(KALIMDOR, {
 				},
 				["races"] = HORDE_ONLY,
 			}),
-			q(1513,  {	-- The Binding
-				["provider"] = { "n", 5875 },	-- Gan'rul Bloodeye
+			-- #if ANYCLASSIC
+			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 65610,	-- Wish You Were Here
+				["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
 				["classes"] = { WARLOCK },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Incubus slain
+						["provider"] = { "n", 185335 },	-- Summoned Incubus
+						["cost"] = { { "i", 190187, 1 } },	-- Withered Scarf
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(713),	-- Summon Incubus
+					-- #endif
+					i(22243, {	-- Small Soul Pouch
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				},
+			}),
+			-- #endif
+			q(1513, {	-- The Binding (Succubus) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 1512,	-- Love's Gift
+				["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
+				["classes"] = { WARLOCK },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Succubus slain
+						["provider"] = { "n", 5677 },	-- Summoned Succubus
+						["cost"] = { { "i", 6626, 1 } },	-- Dogran's Pendant
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(712),	-- Summon Succubus
+					-- #endif
+					i(22243, {	-- Small Soul Pouch
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				},
+			}),
+			q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 1501,	-- Creature of the Void [Orgrimmar]
+				["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = { ORC, TROLL, UNDEAD },
+				["classes"] = { WARLOCK },
+				["lvl"] = 10,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Voidwalker slain
+						["provider"] = { "n", 5676 },	-- Summoned Voidwalker
+						["cost"] = { { "i", 7464, 1 } },	-- Glyphs of Summoning
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(697),	-- Summon Voidwalker
+					-- #endif
 				},
 			}),
 			q(29440, {	-- The Call of the World-Shaman

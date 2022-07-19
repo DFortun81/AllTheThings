@@ -307,9 +307,10 @@ _.Zones =
 					["provider"] = { "n", 27255 },	-- Nishera the Garden Keeper
 				}),
 				q(13242, {	-- Darkness Stirs
+					["provider"] = { "n", 31333 },	-- Alexstrasza the Life-Binder
+					["sourceQuest"] = 12500,	-- Return To Angrathar [Horde]
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 31333 },	-- Alexstrasza the Life-Binder
 				}),
 				q(12372, {	-- Defending Wyrmrest Temple
 					["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
@@ -1192,6 +1193,70 @@ _.Zones =
 					["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 					["provider"] = { "n", 26245 },	-- Tua'kea
 					["sourceQuest"] = 12011,	-- Signs of Big Watery Trouble
+				}),
+				q(13347, {	-- Reborn From The Ashes
+					["sourceQuest"] = 12499,	-- Return To Angrathar [Alliance]
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13369, {	-- Fate, Up Against Your Will
+					["sourceQuest"] = 13347,	-- Reborn From The Ashes
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13370, {	-- A Royal Coup
+					["sourceQuest"] = 13369,	-- Fate, Up Against Your Will
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13371, {	-- The Killing Time
+					["sourceQuest"] = 13370,	-- A Royal Coup
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13377, {	-- The Battle for the Undercity (A)
+					["qg"] = 32376,	-- Broll Bearmantle
+					["sourceQuest"] = 13371,	-- The Killing Time
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
+						un(REMOVED_FROM_GAME, i(44591)),	-- Wrynn's Leggings of Foresight
+						un(REMOVED_FROM_GAME, i(44592)),	-- Wrynn's Leggings of Valor
+						un(REMOVED_FROM_GAME, i(44593)),	-- Wrynn's Leggings of Wisdom
+						un(REMOVED_FROM_GAME, i(44594)),	-- Wrynn's Legguards of Brutality
+						un(REMOVED_FROM_GAME, i(44595)),	-- Wrynn's Legguards of Heroism
+						un(REMOVED_FROM_GAME, i(44596)),	-- Wrynn's Legplates of Carnage
+					},
+				}),
+				
+				q(13257, {	-- Herald of War
+					["qg"] = 25256,	-- High Overlord Saurfang
+					["sourceQuest"] = 13242,	-- Darkness Stirs
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { BOREAN_TUNDRA },
+					["races"] = HORDE_ONLY,
+				}),
+				q(13266, {	-- A Life Without Regret
+					["qg"] = 31412,	-- Thrall
+					["sourceQuest"] = 13257,	-- Herald of War
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(13267, {	-- The Battle for the Undercity (H)
+					["qg"] = 31649,	-- Vol'jin
+					["sourceQuest"] = 13266,	-- A Life Without Regret
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
+						un(REMOVED_FROM_GAME, i(44590)),	-- Warchief's Leggings of Foresight
+						un(REMOVED_FROM_GAME, i(44348)),	-- Warchief's Leggings of Valor
+						un(REMOVED_FROM_GAME, i(44346)),	-- Warchief's Leggings of Wisdom
+						un(REMOVED_FROM_GAME, i(44583)),	-- Warchief's Legguards of Brutality
+						un(REMOVED_FROM_GAME, i(44347)),	-- Warchief's Legguards of Heroism
+						un(REMOVED_FROM_GAME, i(44349)),	-- Warchief's Legplates of Carnage
+					},
 				}),
 				q(12263, {	-- The Best of Intentions
 					["coord"] = { 35.2, 30.0, DRAGONBLIGHT },

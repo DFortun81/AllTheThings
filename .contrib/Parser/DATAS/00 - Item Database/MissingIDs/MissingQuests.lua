@@ -210,14 +210,8 @@ q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1461),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1465),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel's Search
 q(1466),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
-q(1471),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
-q(1472),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
-q(1473),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
-q(1476),	-- Hearts of the Pure,		TBC: Hearts of the Pure,		CLASSIC: Hearts of the Pure
 q(1498),	-- Path of Defense,		TBC: Path of Defense,		CLASSIC: Path of Defense
-q(1501),	-- Creature of the Void,		TBC: Creature of the Void,		CLASSIC: Creature of the Void
 q(1502),	-- Thun'grim Firegaze,		TBC: Thun'grim Firegaze,		CLASSIC: Thun'grim Firegaze
-q(1504),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1505),	-- Veteran Uzzek,		TBC: Veteran Uzzek,		CLASSIC: Veteran Uzzek
 q(1507),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1508),	-- Blind Cazul,		TBC: Blind Cazul,		CLASSIC: Blind Cazul
@@ -266,7 +260,6 @@ q(1665),	-- Bartleby's Mug,		TBC: Bartleby's Mug,		CLASSIC: Bartleby's Mug
 q(1666),	-- Marshal Haggard,		TBC: Marshal Haggard,		CLASSIC: Marshal Haggard
 q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
-q(1689),	-- The Binding,		TBC: The Binding,		CLASSIC: The Binding
 q(1716),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1717),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
@@ -287,18 +280,11 @@ q(1799),	-- Fragments of the Orb of Orahil,		TBC: Fragments of the Orb of Orahil
 q(1801),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1803),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1805),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
-q(1885),	-- Mennet Carkad,		TBC: Mennet Carkad,		CLASSIC: Mennet Carkad
-q(1886),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
-q(1898),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
-q(1899),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
 q(1919),	-- Report to Jennea,		TBC: Report to Jennea,		CLASSIC: Report to Jennea
 q(1920),	-- Investigate the Blue Recluse,		TBC: Investigate the Blue Recluse,		CLASSIC: Investigate the Blue Recluse
 q(1921),	-- Gathering Materials,		TBC: Gathering Materials,		CLASSIC: Gathering Materials
 q(1943),	-- Speak with Deino,		TBC: Speak with Deino,		CLASSIC: Speak with Deino
 q(1963),	-- The Shattered Hand,		TBC: The Shattered Hand,		CLASSIC: The Shattered Hand
-q(1978),	-- The Deathstalkers,		TBC: The Deathstalkers,		CLASSIC: The Deathstalkers
-q(1998),	-- Fenwick Thatros,		TBC: Fenwick Thatros,		CLASSIC: Fenwick Thatros
-q(1999),	-- Tools of the Trade,		TBC: Tools of the Trade,		CLASSIC: Tools of the Trade
 q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladeshadow
 q(2018),	-- Rokar's Test,		CLASSIC: Rokar's Test
 q(2019),	-- Tools of the Trade,		CLASSIC: Tools of the Trade
@@ -533,12 +519,7 @@ q(5654),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5655),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5656),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5657),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
-q(5658),	-- Touch of Weakness,		TBC: Touch of Weakness,		CLASSIC: Touch of Weakness
 q(5659),	-- <NYI> Touch of Weakness,		CLASSIC: <NYI> Touch of Weakness
-q(5660),	-- Touch of Weakness,		TBC: Touch of Weakness,		CLASSIC: Touch of Weakness
-q(5661),	-- Touch of Weakness,		TBC: Touch of Weakness,		CLASSIC: Touch of Weakness
-q(5662),	-- Touch of Weakness,		TBC: Touch of Weakness,		CLASSIC: Touch of Weakness
-q(5663),	-- Touch of Weakness,		TBC: Touch of Weakness,		CLASSIC: Touch of Weakness
 q(5664),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5665),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5666),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -994,10 +975,7 @@ q(13256),	-- Proof of Demise: Cyanigosa
 q(13299),	-- ZZOLDWisp Cloak
 q(13303),	-- The Panchurian Candidate
 q(13317),	-- ----
-q(13347),	-- Reborn From The Ashes
-q(13369),	-- Fate, Up Against Your Will
-q(13370),	-- A Royal Coup
-q(13371),	-- The Killing Time
+
 q(13378),	-- Chief Engineer Copperclaw
 q(13404),	-- Static Shock Troops: the Bombardment
 q(13405),	-- Call to Arms: Strand of the Ancients

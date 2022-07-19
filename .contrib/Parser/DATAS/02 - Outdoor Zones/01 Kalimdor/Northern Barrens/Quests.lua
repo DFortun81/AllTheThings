@@ -985,15 +985,6 @@ _.Zones =
 					["lvl"] = 20,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1841,  {	-- Velora Nitely and the Brutal Legguards
-					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
-					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
-					["sourceQuest"] = 1838,	-- Brutal Armor
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(851,   {	-- Verog the Dervish
 					["provider"] = { "n", 34638 },	-- Shoe
 					["coord"] = { 55.2, 78.3, NORTHERN_BARRENS },

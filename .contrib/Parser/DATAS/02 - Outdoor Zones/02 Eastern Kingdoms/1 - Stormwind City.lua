@@ -1226,13 +1226,66 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 22.4, 32.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1739, {	-- The Binding
-					["provider"] = { "n", 6122 },	-- Gakin the Darkbinder
+				-- #if ANYCLASSIC
+				q(65603, {	-- The Binding (Incubus) [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 65602,	-- What Is Love?
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["lvl"] = 20,
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
+						objective(1, {	-- 0/1 Summoned Incubus slain
+							["provider"] = { "n", 185335 },	-- Summoned Incubus
+							["cost"] = { { "i", 190186, 1 } },	-- Wooden Figurine
+						}),
+						-- #if BEFORE 4.0.3
+						recipe(713),	-- Summon Incubus
+						-- #endif
+						i(22243, {	-- Small Soul Pouch
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				-- #endif
+				q(1739, {	-- The Binding (Succubus) [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1738,	-- Heartswood
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Summoned Succubus slain
+							["provider"] = { "n", 5677 },	-- Summoned Succubus
+							["cost"] = { { "i", 6913, 1 } },	-- Heartswood Core
+						}),
+						-- #if BEFORE 4.0.3
+						recipe(712),	-- Summon Succubus
+						-- #endif
+						i(22243, {	-- Small Soul Pouch
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(1689, {	-- The Binding (Voidwalker) [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1688,	-- Surena Caledon
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Summoned Voidwalker slain
+							["provider"] = { "n", 5676 },	-- Summoned Voidwalker
+							["cost"] = { { "i", 6928, 1 } },	-- Bloodstone Choker
+						}),
+						-- #if BEFORE 4.0.3
+						recipe(697),	-- Summon Voidwalker
+						-- #endif
 					},
 				}),
 				q(29439, {	-- The Call of the World-Shaman
