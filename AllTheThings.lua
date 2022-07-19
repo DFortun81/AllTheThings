@@ -5130,14 +5130,14 @@ app.BuildSourceParent = function(group)
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		local groupHash = group.hash;
-		app.PrintDebug("Found Source things",#things)
+		-- app.PrintDebug("Found Source things",#things)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
 			if thing.hash == groupHash then
 				parent = thing.parent;
 				while parent do
-					app.PrintDebug("parent",parent.text,parent.key)
+					-- app.PrintDebug("parent",parent.text,parent.key)
 					parentKey = parent.key;
 					if parentKey and parent[parentKey] then
 						-- only show certain types of parents as sources.. typically 'Game World Things'
@@ -14850,7 +14850,7 @@ function app:CreateMiniListForGroup(group)
 			-- print(group.__type)
 			-- app.PrintGroup(group)
 			-- source without an item, try to generate the valid item link for it
-			if not group.itemID then
+			if not group.itemID and not group.artifactID then
 				app.ImportRawLink(group, app.DetermineItemLink(group.s));
 				-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Havrest, add harvest, parse)
 				app.SaveHarvestSource(group);

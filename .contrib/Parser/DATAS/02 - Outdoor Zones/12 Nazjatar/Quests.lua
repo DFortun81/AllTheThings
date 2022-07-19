@@ -20,9 +20,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["g"] = {
-				i(168846, {	-- Pearl of Lucid Dreams (Rank 1)
-					az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
-				}),
+				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
 		q(56561, {	-- A Curious Discovery (A)
@@ -757,9 +755,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55869,	-- Clearing Out the Cache
 			["g"] = {
-				i(168847, {	-- Pearl of Manifest Ambitions (Rank 2)
-					az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
-				}),
+				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
 		q(56235, {	-- Down Into Nazjatar
@@ -768,9 +764,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
 			["g"] = {
-				i(168846, {	-- Pearl of Lucid Dreams (Rank 1)
-					az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
-				}),
+				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
 		q(56433, {	-- Drowning the Alliance
@@ -779,9 +773,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55481,	-- Scouting the Palace
 			["g"] = {
-				i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
-					az(15, 1),	-- Ripple in Space (Rank 1)
-				}),
+				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
 		}),
 		q(56128, {	-- Drowning the Horde
@@ -790,9 +782,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 57010,	-- Harnessing the Power
 			["g"] = {
-				i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
-					az(15, 1),	-- Ripple in Space (Rank 1)
-				}),
+				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
 		}),
 		q(56001, {	-- Drunk Angry Murlocs
@@ -969,9 +959,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55937,	-- Clearing Out the Cache
 			["g"] = {
-				i(168847, {	-- Pearl of Manifest Ambitions (Rank 2)
-					az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
-				}),
+				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
 		q(56806, {	-- Friends Through Eternity

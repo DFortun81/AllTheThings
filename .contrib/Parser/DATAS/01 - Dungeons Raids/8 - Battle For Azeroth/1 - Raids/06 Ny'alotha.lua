@@ -37,21 +37,12 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
 					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 1),	-- The Formless Void (Rank 1)
-					},
 				}),
 				i(173884, {	-- Burgeoning Void Droplet (Rank 2)
 					["cost"] = { { "i", 174279, 30 } },	-- 30x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 2),	-- The Formless Void (Rank 2)
-					},
 				}),
 				i(173885, {	-- Volatile Void Droplet (Rank 3)
 					["cost"] = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 3),	-- The Formless Void (Rank 3)
-					},
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {

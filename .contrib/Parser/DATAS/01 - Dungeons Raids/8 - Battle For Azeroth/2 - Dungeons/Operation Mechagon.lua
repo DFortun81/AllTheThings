@@ -24,9 +24,6 @@ _.Instances = { tier(BFA_TIER, {
 			n(AZERITE_ESSENCES, {
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
 					["cost"] = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
-					["g"] = {
-						az(22, 3),	-- Vision of Perfection (Rank 3)
-					},
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -187,9 +184,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 							["g"] = {
 							--	i(169378),	-- Golden Snorf
-								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
-									az(22, 1),	-- Vision of Perfection (Rank 1)
-								}),
+								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
@@ -375,9 +370,7 @@ _.Instances = { tier(BFA_TIER, {
 									i(168830),	-- Aerial Unit R-21/X (MOUNT!)
 								}),
 								i(169378),	-- Golden Snorf
-								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
-									az(22, 1),	-- Vision of Perfection (Rank 1)
-								}),
+								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board

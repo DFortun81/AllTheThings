@@ -30,22 +30,13 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					n(AZERITE_ESSENCES, {
 						i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
 							["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
-							["g"] = {
-								az(32, 1),	-- Conflict and Strife (Rank 1)
-							},
 						}),
 						i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
 							["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
-							["g"] = {
-								az(32, 2),	-- Conflict and Strife (Rank 2)
-							},
 						}),
 						i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
 							["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
 							["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
-							["g"] = {
-								az(32, 3),	-- Conflict and Strife (Rank 3)
-							},
 						}),
 						i(169899, {	-- Polished Skull Trophy (Rank 4)
 							["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
@@ -249,21 +240,9 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["races"] = HORDE_ONLY,
 						["coord"] = { 51.6, 58.2, ZANDALAR },
 						["g"] = {
-							i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
-								["classes"] = HEALERS,
-								["g"] = {
-									az(18, 1),	-- Artifice of Time (Rank 1)
-								},
-							}),
-							i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
-								az(23, 1),	-- Blood of the Enemy (Rank 1)
-							}),
-							i(168578, {	-- Sphere of Suppressed Force (Rank 1)
-								["classes"] = TANKS,
-								["g"] = {
-									az(3, 1),	-- Sphere of Suppression (Rank 1)
-								},
-							}),
+							i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+							i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+							i(168578),	-- Sphere of Suppressed Force (Rank 1)
 						},
 					}),
 					q(53053, {	-- To The Mugambala!

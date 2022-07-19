@@ -29,64 +29,31 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(2, 1),	-- Azeroth's Undying Gift (Rank 1)
-					},
 				}),
 				i(168536, {	-- Recrystallizing Azerite Formation (Rank 2)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(2, 2),	-- Azeroth's Undying Gift (Rank 2)
-					},
 				}),
 				i(168537, {	-- Tempered Azerite Formation (Rank 3)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(2, 3),	-- Azeroth's Undying Gift (Rank 3)
-					},
 				}),
 				i(168854, {	-- Animated Elemental Heart (Rank 1)
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(14, 1),	-- Condensed Life-Force (Rank 1)
-					},
 				}),
 				i(168855, {	-- Pulsing Elemental Heart (Rank 2)
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(14, 2),	-- Condensed Life-Force (Rank 2)
-					},
 				}),
 				i(168856, {	-- Resonating Elemental Heart (Rank 3)
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(14, 3),	-- Condensed Life-Force (Rank 3)
-					},
 				}),
 				i(168941, {	-- Vitality Redistribution Lattice (Rank 1)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(21, 1),	-- Vitality Conduit (Rank 1)
-					},
 				}),
 				i(168942, {	-- Mesh of Expanding Vitality (Rank 2)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(21, 2),	-- Vitality Conduit (Rank 2)
-					},
 				}),
 				i(168943, {	-- Grid of Bursting Vitality (Rank 3)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(21, 3),	-- Vitality Conduit (Rank 3)
-					},
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {

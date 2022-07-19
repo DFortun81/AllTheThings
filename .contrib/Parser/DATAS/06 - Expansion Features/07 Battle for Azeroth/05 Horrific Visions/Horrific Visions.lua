@@ -69,24 +69,13 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 			}),
 			n(AZERITE_ESSENCES, {
 				i(173310, {	-- Manual of Unbalanced Tactics (Rank 3)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
-					["g"] = {
-						az(34, 3),	-- Strength of the Warden (Rank 3)
-					},
 				}),
 				i(173290, {	-- Quickening Azerite Geode (Rank 3)
 					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
-					["g"] = {
-						az(36, 3),	-- Spark of Inspiration (Rank 3)
-					},
 				}),
 				i(168938, {	-- Ward of Mutual Aid (Rank 3)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
-					["g"] = {
-						az(16, 3),	-- Unwavering Ward (Rank 3)
-					},
 				}),
 			}),
 			n(QUESTS, {
@@ -226,27 +215,15 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					}),
 					n(-10082, {	-- Lost Area
 						o(332704, {	-- Corrupted Chest
-							i(173289, {	-- Pulsing Azerite Geode (Rank 2)
-								az(36, 2),	-- Spark of Inspiration (Rank 2)
-							}),
-							i(168937, {	-- Ward of Reciprocation (Rank 2)
-								["classes"] = HEALERS,
-								["g"] = {
-									az(16, 2),	-- Unwavering Ward (Rank 2)
-								},
-							}),
-							i(173309, {	-- Water Dancer's Technique (Rank 2)
-								["classes"] = TANKS,
-								["g"] = {
-									az(34, 2),	-- Strength of the Warden (Rank 2)
-								},
-							}),
+							i(173289),	-- Pulsing Azerite Geode (Rank 2)
+							i(168937),	-- Ward of Reciprocation (Rank 2)
+							i(173309),	-- Water Dancer's Technique (Rank 2)
 						}),
 						n(155098, {	-- Rexxar
 							["description"] = "Defeat Rexxar and his creatures in the Valley of Honor.",
 							["g"] = {
 								i(174457),	-- C'Thuffer (PET!) - rexxar
-								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 								i(174855, {	-- Bow of Calamity
 									["description"] = "Has only been received on a Hunter character (so far).\nCan be traded to party members within the same Vision.",
 								}),
@@ -254,21 +231,9 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						}),
 					}),
 					n(152089, {	-- Thrall
-						i(173308, {	-- Mark of Boistrous Duty (Rank 1)
-							["classes"] = TANKS,
-							["g"] = {
-								az(34, 1),	-- Strength of the Warden (Rank 1)
-							},
-						}),
-						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
-							az(36, 1),	-- Spark of Inspiration (Rank 1)
-						}),
-						i(168936, {	-- Ward of Unwavering Hope (Rank 1)
-							["classes"] = HEALERS,
-							["g"] = {
-								az(16, 1),	-- Unwavering Ward (Rank 1)
-							},
-						}),
+						i(173308),	-- Mark of Boistrous Duty (Rank 1)
+						i(173288),	-- Overflowing Azerite Geode (Rank 1)
+						i(168936),	-- Ward of Unwavering Hope (Rank 1)
 						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
 						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
 						i(174287),	-- Sparks of Unwavering Strength
@@ -322,53 +287,29 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					}),
 					n(-10082, {	-- Lost Area
 						o(332704, {	-- Corrupted Chest
-							i(173289, {	-- Pulsing Azerite Geode (Rank 2)
-								az(36, 2),	-- Spark of Inspiration (Rank 2)
-							}),
-							i(168937, {	-- Ward of Reciprocation (Rank 2)
-								["classes"] = HEALERS,
-								["g"] = {
-									az(16, 2),	-- Unwavering Ward (Rank 2)
-								},
-							}),
-							i(173309, {	-- Water Dancer's Technique (Rank 2)
-								["classes"] = TANKS,
-								["g"] = {
-									az(34, 2),	-- Strength of the Warden (Rank 2)
-								},
-							}),
+							i(173289),	-- Pulsing Azerite Geode (Rank 2)
+							i(168937),	-- Ward of Reciprocation (Rank 2)
+							i(173309),	-- Water Dancer's Technique (Rank 2)
 						}),
 						n(158157, {	-- Overlord Mathias Shaw
 							["description"] = "Assist Valeera with some Defias Company downsizing in Old Town.",
 							["g"] = {
 								i(174932),	-- Illusion: Void Edge -- Valeera
-								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 							},
 						}),
 						n(158035, {	-- Magister Umbric
 							["description"] = "Stop Magister Umbric's assault in the Mage Quarter.",
 							["g"] = {
 								i(174458),	-- Void-scarred Hare (PET!) -- Umbric
-								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 							},
 						}),
 					}),
 					n(152718, {	-- Alleria Windrunner
-						i(173308, {	-- Mark of Boistrous Duty (Rank 1)
-							["classes"] = TANKS,
-							["g"] = {
-								az(34, 1),	-- Strength of the Warden (Rank 1)
-							},
-						}),
-						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
-							az(36, 1),	-- Spark of Inspiration (Rank 1)
-						}),
-						i(168936, {	-- Ward of Unwavering Hope (Rank 1)
-							["classes"] = HEALERS,
-							["g"] = {
-								az(16, 1),	-- Unwavering Ward (Rank 1)
-							},
-						}),
+						i(173308),	-- Mark of Boistrous Duty (Rank 1)
+						i(173288),	-- Overflowing Azerite Geode (Rank 1)
+						i(168936),	-- Ward of Unwavering Hope (Rank 1)
 						i(174461),	-- Swirling Black Bottle (PET!)
 						i(174459),	-- Voidwoven Cat Collar (PET!)
 						i(174287),	-- Sparks of Unwavering Strength

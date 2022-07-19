@@ -7,9 +7,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 		n(AZERITE_ESSENCES, {
 			i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
 				i(169693, {	-- Zem'Lans Lost Treasure Map
-					i(168616, {	-- Stalwart Worldvein (Rank 2)
-						az(4, 2),	-- Worldvein Resonance (Rank 2)
-					}),
+					i(168616),	-- Stalwart Worldvein (Rank 2)
 				}),
 			}),
 		}),
@@ -55,9 +53,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				["coord"] = { 66.6, 35.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168615, {	-- Volatile Worldvein (Rank 1)
-						az(4, 1),	-- Worldvein Resonance (Rank 1)
-					}),
+					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169764, {	-- Worldvein Intelligence Reports
@@ -83,9 +79,6 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						["g"] = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
 								["modID"] = 14,
-								["g"] = {
-									az(4, 3),	-- Worldvein Resonance (Rank 3)
-								},
 							}),
 						},
 					}),
@@ -100,9 +93,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 44.60, 95.40, THE_GREAT_SEAL },
 				["g"] = {
-					i(168615, {	-- Volatile Worldvein (Rank 1)
-						az(4, 1),	-- Worldvein Resonance (Rank 1)
-					}),
+					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169765, {	-- Worldvein Intelligence Reports
@@ -128,9 +119,6 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						["g"] = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
 								["modID"] = 14,
-								["g"] = {
-									az(4, 3),	-- Worldvein Resonance (Rank 3)
-								},
 							}),
 						},
 					}),

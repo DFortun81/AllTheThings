@@ -929,18 +929,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 154418 },	-- Ra-den
 						["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
 						["g"] = {
-							i(168573, {	-- Death-Resistant Leaf (Rank 1)
-								["classes"] = TANKS,
-								["g"] = {
-									az(33, 1),	-- Touch of the Everlasting (Rank 1)
-								},
-							}),
-							i(168436, {	-- Focused Star Point (Rank 1)
-								["classes"] = HEALERS,
-								["g"] = {
-									az(24, 1),	-- Spirit of Preservation (Rank 1)
-								},
-							}),
+							i(168573),	-- Death-Resistant Leaf (Rank 1)
+							i(168436),	-- Focused Star Point (Rank 1)
 						},
 					}),
 					q(56541, {	-- The Engine of Nalak'sha
@@ -988,32 +978,16 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["coord"] = { 44.5, 75.4, 1530 },
 						["g"] = {
 							i(168573, {	-- Death-Resistant Leaf (Rank 1)
-								["classes"] = TANKS,
-								["g"] = {
-									az(33, 1),	-- Touch of the Everlasting (Rank 1)
-								},
+								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
 							}),
 							i(168436, {	-- Focused Star Point (Rank 1)
 								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
-								["g"] = {
-									az(24, 1),	-- Spirit of Preservation (Rank 1)
-								},
 							}),
 							i(168440, {	-- Gleaming Star Shard (Rank 3)
-								["classes"] = HEALERS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(24, 3),	-- Spirit of Preservation (Rank 3)
-								},
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
-								["classes"] = TANKS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(33, 3, {	-- Touch of the Everlasting (Rank 3)
-										["classes"] = TANKS,
-									}),
-								},
 							}),
 							i(174649, {	-- Rajani Warserpent (MOUNT!)
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale

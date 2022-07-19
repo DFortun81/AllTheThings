@@ -1332,9 +1332,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 						["g"] = {
-							i(173280, {	-- Token of Death's Door (Rank 1)
-								az(35, 1),	-- Breath of the Dying (Rank 1)
-							}),
+							i(173280),	-- Token of Death's Door (Rank 1)
 						},
 					}),
 					q(56209, {	-- The Halls of Origination
@@ -1451,9 +1449,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["g"] = {
 							i(173282, {	-- Token of Death's Glee (Rank 3)
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(35, 3),	-- Breath of the Dying (Rank 3)
-								},
 							}),
 							i(174925, {	-- Void Tendril Pet Leash
 								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento

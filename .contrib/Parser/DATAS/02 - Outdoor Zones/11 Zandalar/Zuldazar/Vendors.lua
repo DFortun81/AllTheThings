@@ -1544,27 +1544,15 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 					i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(18, 1),	-- Artifice of Time (Rank 1)
-						},
 					}),
 					i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(18, 2),	-- Artifice of Time [Rank 2]
-						},
 					}),
 					i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(18, 3),	-- Artifice of Time [Rank 3]
-						},
 					}),
 					i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
@@ -1575,23 +1563,14 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(23, 1),	-- Blood of the Enemy (Rank 1)
-						},
 					}),
 					i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(23, 2),	-- Blood of the Enemy [Rank 2]
-						},
 					}),
 					i(168444, {	-- Churning Blood of the Conquered [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(23, 3),	-- Blood of the Enemy [Rank 3]
-						},
 					}),
 					i(168814, {	-- Animated Blood of the Decimated (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
@@ -1600,27 +1579,15 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 					i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(3, 1),	-- Sphere of Suppression (Rank 1)
-						},
 					}),
 					i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(3, 2),	-- Sphere of Suppression [Rank 2]
-						},
 					}),
 					i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(3, 3),	-- Sphere of Suppression [Rank 3]
-						},
 					}),
 					i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
