@@ -5104,6 +5104,8 @@ app.ThingKeys = {
 	["objectID"] = true,
 	["encounterID"] = true,
 	["artifactID"] = true,
+	["azeriteEssenceID"] = true,
+	["followerID"] = true,
 	["achievementID"] = true,	-- special handling
 };
 local SpecificSources = {
@@ -5127,69 +5129,72 @@ app.BuildSourceParent = function(group)
 	local keyValue = group[groupKey];
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
-		-- app.PrintDebug("Found Source things",#things)
+		local groupHash = group.hash;
+		app.PrintDebug("Found Source things",#things)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
-			parent = thing.parent;
-			while parent do
-				-- print("parent",parent.text,parent.key)
-				parentKey = parent.key;
-				if parentKey and parent[parentKey] then
-					-- only show certain types of parents as sources.. typically 'Game World Things'
-					-- or if the parent is directly tied to an NPC
-					if thingKeys[parentKey] or parent.npcID or parent.creatureID then
-						-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
-						if groupKey == "achievementID" then
-							parent._keepSource = keyValue;
-							if parents then tinsert(parents, parent);
-							else parents = { parent }; end
-						else
-							if parents then tinsert(parents, parent);
-							else parents = { parent }; end
+			if thing.hash == groupHash then
+				parent = thing.parent;
+				while parent do
+					app.PrintDebug("parent",parent.text,parent.key)
+					parentKey = parent.key;
+					if parentKey and parent[parentKey] then
+						-- only show certain types of parents as sources.. typically 'Game World Things'
+						-- or if the parent is directly tied to an NPC
+						if thingKeys[parentKey] or parent.npcID or parent.creatureID then
+							-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
+							if groupKey == "achievementID" then
+								parent._keepSource = keyValue;
+								if parents then tinsert(parents, parent);
+								else parents = { parent }; end
+							else
+								if parents then tinsert(parents, parent);
+								else parents = { parent }; end
+							end
+							break;
 						end
-						break;
+						-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
 					end
-					-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
+					-- move to the next parent if the current parent is not a valid 'Thing'
+					parent = parent.parent;
 				end
-				-- move to the next parent if the current parent is not a valid 'Thing'
-				parent = parent.parent;
-			end
-			-- Things tagged with an npcID should show that NPC as a Source
-			if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
-				local parentNPC = app.SearchForObject("creatureID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
-				if parents then tinsert(parents, parentNPC);
-				else parents = { parentNPC }; end
-			end
-			-- Things tagged with many npcIDs should show all those NPCs as a Source
-			if thing.crs then
-				-- app.PrintDebug("thing.crs",#thing.crs)
-				if not parents then parents = {}; end
-				local parentNPC;
-				for _,npcID in ipairs(thing.crs) do
-					parentNPC = app.SearchForObject("creatureID", npcID) or {["npcID"] = npcID};
-					tinsert(parents, parentNPC);
+				-- Things tagged with an npcID should show that NPC as a Source
+				if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
+					local parentNPC = app.SearchForObject("creatureID", thing.npcID or thing.creatureID) or {["npcID"] = thing.npcID or thing.creatureID};
+					if parents then tinsert(parents, parentNPC);
+					else parents = { parentNPC }; end
 				end
-			end
-			-- Things tagged with providers should show the providers as a Source
-			if thing.providers then
-				local type, id;
-				for _,p in ipairs(thing.providers) do
-					type, id = p[1], p[2];
-					-- app.PrintDebug("Root Provider",type,id);
-					local pRef = (type == "i" and app.SearchForObject("itemID", id))
-							or   (type == "o" and app.SearchForObject("objectID", id))
-							or   (type == "n" and app.SearchForObject("npcID", id));
-					if pRef then
-						pRef = CreateObject(pRef);
-						if parents then tinsert(parents, pRef);
-						else parents = { pRef }; end
-					else
-						pRef = (type == "i" and app.CreateItem(id))
-							or   (type == "o" and app.CreateObject(id))
-							or   (type == "n" and app.CreateNPC(id));
-						if parents then tinsert(parents, pRef);
-						else parents = { pRef }; end
+				-- Things tagged with many npcIDs should show all those NPCs as a Source
+				if thing.crs then
+					-- app.PrintDebug("thing.crs",#thing.crs)
+					if not parents then parents = {}; end
+					local parentNPC;
+					for _,npcID in ipairs(thing.crs) do
+						parentNPC = app.SearchForObject("creatureID", npcID) or {["npcID"] = npcID};
+						tinsert(parents, parentNPC);
+					end
+				end
+				-- Things tagged with providers should show the providers as a Source
+				if thing.providers then
+					local type, id;
+					for _,p in ipairs(thing.providers) do
+						type, id = p[1], p[2];
+						-- app.PrintDebug("Root Provider",type,id);
+						local pRef = (type == "i" and app.SearchForObject("itemID", id))
+								or   (type == "o" and app.SearchForObject("objectID", id))
+								or   (type == "n" and app.SearchForObject("npcID", id));
+						if pRef then
+							pRef = CreateObject(pRef);
+							if parents then tinsert(parents, pRef);
+							else parents = { pRef }; end
+						else
+							pRef = (type == "i" and app.CreateItem(id))
+								or   (type == "o" and app.CreateObject(id))
+								or   (type == "n" and app.CreateNPC(id));
+							if parents then tinsert(parents, pRef);
+							else parents = { pRef }; end
+						end
 					end
 				end
 			end
@@ -12050,7 +12055,7 @@ end
 
 -- Imports the raw information from the rawlink into the specified group
 app.ImportRawLink = function(group, rawlink)
-	rawlink = string.match(rawlink, "item[%-?%d:]+");
+	rawlink = rawlink and string.match(rawlink, "item[%-?%d:]+");
 	if rawlink and group then
 		group.rawlink = rawlink;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
@@ -17126,7 +17131,6 @@ function app:GetDataCache()
 		tinsert(g, DynamicCategory(db, "artifactID"));
 
 		-- Azerite Essences (Dynamic)
-		-- TODO: needs to properly utilize cached essences including 'rank'
 		local db = app.CreateNPC(-852);
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));

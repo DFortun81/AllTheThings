@@ -346,6 +346,7 @@ root("HiddenQuestTriggers", {
 		q(46355),	-- Cataclysmic Gladiator's Chain Armor (Hunter)
 		q(46356),	-- Vindictive Combatant's Dragonhide Armor (Druid - Alliance)
 		q(46357),	-- Vindictive Combatant's Dragonhide Armor (Druid - Horde)
+		q(46358),	-- Vindictive Combatant's Dreadplate Armor (Death Knight - Alliance)
 		q(46359),	-- Vindictive Combatant's Dreadplate Armor (Death Knight - Horde)
 		q(46361),	-- Vindictive Combatant's Ironskin Armor (Monk - Alliance)
 		q(46362),	-- Vindictive Combatant's Ironskin Armor (Monk - Horde)
