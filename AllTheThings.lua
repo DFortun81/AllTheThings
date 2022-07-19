@@ -7992,7 +7992,7 @@ local questFields = {
 	end,
 	["description"] = function(t)
 		-- Provide a fall-back description as to collectibility of a Quest due to granting reputation
-		if app.CollectibleReputations and t.maxReputation and t.collectibleAsReputation then
+		if app.CollectibleReputations and t.maxReputation then
 			local factionID = t.maxReputation[1];
 			return L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
 		end
@@ -8323,9 +8323,11 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 	end
 end
 
-local fields = RawCloneData(questFields);
-fields.collectible = questFields.collectibleAsReputation;
-fields.collected = questFields.collectedAsReputation;
+-- Quest with Reputation
+local fields = RawCloneData(questFields, {
+	["collectible"] = questFields.collectibleAsReputation,
+	["collected"] = questFields.collectedAsReputation,
+});
 app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
 	if t and rawget(t, "maxReputation") then
@@ -8587,8 +8589,6 @@ end
 
 -- Vignette Lib
 (function()
--- Vignettes copy Quest fields
-local fields = RawCloneData(questFields);
 local function BuildTextFromNPCIDs(t, npcIDs)
 	if not npcIDs or #npcIDs == 0 then app.report("Invalid Vignette! "..(t.hash or "[NOHASH]")) end
 	local retry, name;
@@ -8608,17 +8608,20 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 	rawset(t, "name", name);
 	return name;
 end
--- Custom Vignette fields
-fields.name = function(t)
-	if t.qgs or t.crs then
-		return BuildTextFromNPCIDs(t, t.qgs or t.crs);
-	elseif t.qg or t.creatureID then
-		return BuildTextFromNPCIDs(t, { t.qg or t.creatureID });
-	end
-	return BuildTextFromNPCIDs(t);
-end;
-fields.icon = function(t) return "Interface\\Icons\\INV_Misc_Head_Dragon_Black"; end;
-fields.isVignette = app.ReturnTrue;
+local fields = RawCloneData(questFields, {
+	["name"] = function(t)
+		if t.qgs or t.crs then
+			return BuildTextFromNPCIDs(t, t.qgs or t.crs);
+		elseif t.qg or t.creatureID then
+			return BuildTextFromNPCIDs(t, { t.qg or t.creatureID });
+		end
+		return BuildTextFromNPCIDs(t);
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
+	end,
+	["isVignette"] = app.ReturnTrue,
+});
 app.BaseVignette = app.BaseObjectFields(fields, "BaseVignette");
 app.CreateVignette = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
@@ -9366,7 +9369,9 @@ local function CacheInfo(t, field)
 		_t.petTypeID = petType;
 		_t.lore = tooltipDescription;
 		_t.displayID = creatureDisplayID;
-		_t.text = "|cff0070dd"..speciesName.."|r";
+		if not t.itemID then
+			_t.text = "|cff0070dd"..speciesName.."|r";
+		end
 		if field then return _t[field]; end
 	end
 end
@@ -9374,7 +9379,6 @@ local function default_link(t)
 	if t.itemID then
 		return select(2, GetItemInfo(t.itemID));
 	end
-	return t.text;
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
@@ -9404,7 +9408,7 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		return cache.GetCachedField(t, "text", CacheInfo);
+		return t.link or cache.GetCachedField(t, "text", CacheInfo);
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo);
