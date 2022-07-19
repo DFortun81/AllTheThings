@@ -1020,6 +1020,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
+			q(65226, {	-- Fleet-footed and Fastidious
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
@@ -1149,11 +1154,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			q(65226, {	-- Fleet-footed and Fastidious
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			--]]
 		})),

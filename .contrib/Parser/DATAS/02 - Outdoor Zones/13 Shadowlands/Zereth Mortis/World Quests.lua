@@ -13,9 +13,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65119, {	-- Automa Ops
 				["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
 			}),
-			--q(65117, {	-- Bad Samples
-			--	["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
-			--}),
+			q(65117, {	-- Bad Samples
+				["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
+			}),
 			q(65230, {	-- Bot-Any
 				["coord"] = { 47.4, 80.3, ZERETH_MORTIS },
 			}),
