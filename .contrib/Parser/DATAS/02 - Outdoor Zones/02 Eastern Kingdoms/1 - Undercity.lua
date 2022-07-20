@@ -342,6 +342,34 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
+				q(5679, {	-- Devouring Plague [Undercity]
+					["qgs"] = {
+						4606,	-- Aelthalyste
+						6018,	-- Ur'kyo <Priest Trainer>
+						3044,	-- Miles Welsh <Priest Trainer>
+					},
+					["coords"] = {
+						{ 49.01, 18.32, UNDERCITY },
+						{ 35.6, 87.6, ORGRIMMAR },
+						{ 26.0, 15.8, THUNDER_BLUFF },
+					},
+					["altQuests"] = {
+						5646,	-- Devouring Plague [Orgrimmar]
+						5644,	-- Devouring Plague [Thunder Bluff]
+					},
+					["timeline"] = { "removed 3.0.2" },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 20,
+					-- #if BEFORE 3.0.2
+					["groups"] = {
+						{
+							["recipeID"] = 2944,	-- Devouring Plague (Rank 1)
+							["rank"] = 1,
+						},
+					},
+					-- #endif
+				}),
 				q(1846, {	-- Dragonmaw Shinbones
 					["qg"] = 6411,	-- Velora Nitely
 					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
@@ -1064,22 +1092,23 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(5658, {	-- Touch of Weakness [Undercity]
+				q(5679, {	-- Touch of Weakness [Undercity]
 					["qgs"] = {
-						3706,	-- Tai'jin <Priest Trainer>
 						4606,	-- Aelthalyste
+						3706,	-- Tai'jin <Priest Trainer>
 						11407,	-- Var'jun
 						6018,	-- Ur'kyo <Priest Trainer>
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
 					["coords"] = {
-						{ 54.2, 42.8, DUROTAR },
 						{ 49.01, 18.32, UNDERCITY },
+						{ 54.2, 42.8, DUROTAR },
 						{ 47.0, 58.8, MULGORE },
 						{ 35.6, 87.6, ORGRIMMAR },
 						{ 26.0, 15.8, THUNDER_BLUFF },
 					},
 					["altQuests"] = {
+						5658,	-- Touch of Weakness [Undercity]
 						5659,	-- Touch of Weakness (NYI)
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]

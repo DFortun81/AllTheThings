@@ -509,9 +509,7 @@ q(5640),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
 q(5641),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5642),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5643),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
-q(5644),	-- Devouring Plague,		TBC: Devouring Plague,		CLASSIC: Devouring Plague
 q(5645),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
-q(5646),	-- Devouring Plague,		TBC: Devouring Plague,		CLASSIC: Devouring Plague
 q(5647),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5652),	-- Hex of Weakness,		TBC: Hex of Weakness,		CLASSIC: Hex of Weakness
 q(5653),	-- <NYI> Hex of Weakness,		CLASSIC: <NYI> Hex of Weakness
@@ -535,7 +533,6 @@ q(5675),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5676),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
 q(5677),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
 q(5678),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
-q(5679),	-- Devouring Plague,		TBC: Devouring Plague,		CLASSIC: Devouring Plague
 q(5680),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5681),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5682),	-- <UNUSED>,		CLASSIC: <UNUSED>
