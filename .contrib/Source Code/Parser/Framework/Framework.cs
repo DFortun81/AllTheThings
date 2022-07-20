@@ -702,6 +702,12 @@ namespace ATT
                 data.Remove("_npcs");
                 cloned = true;
             }
+            if (data.TryGetValue("_objects", out object objects))
+            {
+                DuplicateDataIntoGroups(data, objects, "objectID");
+                data.Remove("_objects");
+                cloned = true;
+            }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
@@ -2660,6 +2666,7 @@ namespace ATT
                 case "_drop":
                 case "_npcs":
                 case "_quests":
+                case "_objects":
                 case "_text":
                 case "_type":
 

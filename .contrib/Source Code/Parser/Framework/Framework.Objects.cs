@@ -1929,6 +1929,7 @@ namespace ATT
                     case "_quests":
                     case "_items":
                     case "_npcs":
+                    case "_objects":
                         if (value is List<object> idList)
                         {
                             item[field] = idList;
