@@ -305,11 +305,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 5,	-- Hive Queen slain
 							},
 							i(69817, {	-- Hive Queen's Honeycomb
-								["g"] = {
-									i(52987),	-- Twilight Jasmine
-									i(52328),	-- Volatile Air
-									i(52329),	-- Volatile Life
-								},
 							}),
 						},
 					}),
@@ -319,7 +314,6 @@ _.Instances = { tier(CATA_TIER, {
 								["achievementID"] = 5744,	-- Gurubashi Headhunter
 								["criteriaID"] = 8,			-- Tor-Tun slain
 							},
-							i(52327),	-- Volatile Earth
 						},
 					}),
 					cr(52155, e(175, {	-- High Priest Venoxis
@@ -337,12 +331,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 3,	-- Kaulema slain
 							},
 							i(69818, {	-- Giant Sack
-								["g"] = {
-									i(52185),	-- Elementium Ore
-									i(52182),	-- Jasper
-									i(52180),	-- Nightstone
-									i(52178),	-- Zephyrite
-								},
 							}),
 						},
 					}),
@@ -362,12 +350,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 4,	-- Mor'Lek slain
 							},
 							i(69818, {	-- Giant Sack
-								["g"] = {
-									i(52185),	-- Elementium Ore
-									i(52182),	-- Jasper
-									i(52180),	-- Nightstone
-									i(52178),	-- Zephyrite
-								},
 							}),
 						},
 					}),
@@ -514,17 +496,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 7,	-- Gurubashi Master Chef slain
 							},
 							i(69822, {	-- Master Chef's Groceries
-								["g"] = {
-									i(62783),	-- Basilisk "Liver"
-									i(62791),	-- Blood Shrimp
-									i(62784),	-- Crocolisk Tail
-									i(62785),	-- Delicate Wing
-									i(62782),	-- Dragon Flank
-									i(62781),	-- Giant Turtle Tongue
-									i(62779),	-- Monstrous Claw
-									i(62780),	-- Snake Eye
-									i(62778),	-- Toughened Flesh
-								},
 							}),
 						},
 					}),
@@ -551,12 +522,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 1,			-- Gub slain
 							},
 							i(69823, {	-- Gub's Catch
-								["g"] = {
-									i(53071),	-- Algaefin Rockfish
-									i(53072),	-- Deepsea Sagefish
-									i(53070),	-- Fathom Eel
-									i(53068),	-- Lavascale Catfish
-								},
 							}),
 						},
 					}),
@@ -567,9 +532,6 @@ _.Instances = { tier(CATA_TIER, {
 								["criteriaID"] = 6,			-- Lost Offspring of Gahz'ranka slain
 							},
 							i(70719, {	-- Water-Filled Gills
-								["g"] = {
-									i(52326),	-- Volatile Water
-								},
 							}),
 						},
 					}),

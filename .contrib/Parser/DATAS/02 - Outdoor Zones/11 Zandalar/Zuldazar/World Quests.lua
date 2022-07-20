@@ -54,18 +54,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					ach(13439, {	-- Boxing Match (A)
+					pvp(ach(13439, {	-- Boxing Match (A)
 						["races"] = ALLIANCE_ONLY,
-					}),
+					})),
 				},
 			}),
 			q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					ach(13438, {	-- Boxing Match (H)
+					pvp(ach(13438, {	-- Boxing Match (H)
 						["races"] = HORDE_ONLY,
-					}),
+					})),
 				},
 			}),
 			q(50854),	-- Crimsonclaw
