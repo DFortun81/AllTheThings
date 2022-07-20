@@ -4,15 +4,6 @@
 
 root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(ACHIEVEMENTS, {
-		ach(13623, {	-- Fighting on Two Fronts
-			["collectible"] = false,
-			["g"] = {
-				crit(1),	-- Acquire Nazjatar Battle Commendations
-				crit(3),	-- Kill players in Nazjatar
-				crit(4),	-- Loot 5 War Supply Chests in Nazjatar
-			},
-			["pvp"] = true,
-		}),
 		petbattle(ach(13715, {	-- From the Belly of the Jelly
 			["filterID"] = BATTLE_PETS,
 		})),

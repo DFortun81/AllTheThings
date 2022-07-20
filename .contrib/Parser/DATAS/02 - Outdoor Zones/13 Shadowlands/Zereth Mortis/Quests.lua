@@ -999,6 +999,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
 			}),
+			q(65268, {	-- Bzzzzt!
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(64964, {	-- Choose Your Fighter
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
 			q(65326, {	-- Circle of Strife
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
@@ -1142,20 +1152,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
-			--
-
-			--[[ Unconfirmed out commented until confirmation
-			q(65268, {	-- Bzzzzt!
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			q(64964, {	-- Choose Your Fighter
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			--]]
 		})),
 	}),
 })));

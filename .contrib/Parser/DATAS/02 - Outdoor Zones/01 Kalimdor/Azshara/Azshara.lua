@@ -229,7 +229,6 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					["coord"] = { 54.8, 76.3, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { AZSHARA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),

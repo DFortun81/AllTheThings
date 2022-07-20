@@ -18,5 +18,37 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				{ "i", 122674, 1 },	-- S.E.L.F.I.E. Camera MkII
 			},
 		}),
+		pvp(o(327652, {	-- War Supply Chest (A)
+			["description"] = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
+			["races"] = ALLIANCE_ONLY,
+			["coords"] = {
+				{ 33.4, 38.8, NAZJATAR, },
+				{ 40.9, 47.9, NAZJATAR, },
+				{ 45.4, 70.5, NAZJATAR, },
+				{ 47.3, 51.8, NAZJATAR, },
+				{ 47.8, 46.5, NAZJATAR, },
+				{ 59.3, 37.5, NAZJATAR, },
+				{ 77.0, 36.7, NAZJATAR, },
+			},
+			["g"] = {
+				i(168802),	-- Nazjatar Battle Commendation
+			},
+		})),
+		pvp(o(327650, {	-- War Supply Chest (H)
+			["description"] = "Spawns randomly somewhere in the sky and parachutes downwards to the ground.",
+			["races"] = HORDE_ONLY,
+			["coords"] = {
+				{ 33.4, 38.8, NAZJATAR, },
+				{ 40.9, 47.9, NAZJATAR, },
+				{ 45.4, 70.5, NAZJATAR, },
+				{ 47.3, 51.8, NAZJATAR, },
+				{ 47.8, 46.5, NAZJATAR, },
+				{ 59.3, 37.5, NAZJATAR, },
+				{ 77.0, 36.7, NAZJATAR, },
+			},
+			["g"] = {
+				i(168802),	-- Nazjatar Battle Commendation
+			},
+		})),
 	}),
 })));

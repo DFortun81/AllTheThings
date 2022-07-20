@@ -78,12 +78,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(14511),	-- Tour of Duty: Ardenweald
 		}),
 		--]]
-		ach(13623, {	-- Fighting on Two Fronts
-			crit(1),	-- Acquire Nazjatar Battle Commendations
-			crit(2),	-- Kill Players in Mechagon
-			crit(3),	-- Kill Players in Nazjatar
-			crit(4),	-- Loot 5 War Supply Chests in Nazjatar
-		}),
 		ach(11474, {	-- Free For All, More For Me
 			a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 			h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
@@ -146,31 +140,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			}),
 			crit(4, {	-- State of Decay
 				["_quests"] = { 60231 },	-- State of Decay
-			}),
-		}),
-		ach(12861, {	-- Master of Duels
-			title(383),		-- Contender
-			ach(12863, {	-- Dueling Master
-				i(163055),		-- Dueler's Tabard
-				ach(12860),		-- Contender
-				ach(12858),		-- Slugfest
-				ach(12857),		-- Trial by Combat
-				ach(12856),		-- The First Rule of Dueler's Guild
-			}),
-			ach(12859),		-- Prize Fighter
-			ach(12862, {	-- Thirty Six and Two
-				crit(1),		-- Death Knight
-				crit(2),		-- Demon Hunter
-				crit(3),		-- Druid
-				crit(4),		-- Hunter
-				crit(5),		-- Mage
-				crit(6),		-- Monk
-				crit(7),		-- Paladin
-				crit(8),		-- Priest
-				crit(9),		-- Rogue
-				crit(10),		-- Shaman
-				crit(11),		-- Warlock
-				crit(12),		-- Warrior
 			}),
 		}),
 		ach(14511),		-- Tour of Duty: Ardenweald

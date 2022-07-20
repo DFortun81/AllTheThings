@@ -337,18 +337,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					["coord"] = { 71.24, 21.84, ZULDAZAR },
 				}),
 			}),
-			ach(12861, {	-- Master of Duels
-				title(383),		-- Contender
-				ach(12863, {		-- Dueling Master
-					i(163055),		-- Dueler's Tabard
-					ach(12860),		-- Contender
-					ach(12858),		-- Slugfest
-					ach(12857),		-- Trial by Combat
-					ach(12856),		-- The First Rule of Dueler's Guild
-				}),
-				ach(12859),		-- Prize Fighter
-				ach(12862),		-- Thirty Six and Two
-			}),
 			ach(12481, {	-- The Final Seal
 				["sourceQuests"] = { 50954 },	-- Zandalar Forever!
 				["races"] = HORDE_ONLY,

@@ -767,7 +767,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
-		q(56433, {	-- Drowning the Alliance
+		pvp(q(56433, {	-- Drowning the Alliance
 			["provider"] = { "n", 154652 },	-- Dazzerian
 			["coord"] = { 48.8, 60.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
@@ -775,8 +775,8 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["g"] = {
 				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
-		}),
-		q(56128, {	-- Drowning the Horde
+		})),
+		pvp(q(56128, {	-- Drowning the Horde
 			["provider"] = { "n", 154653 },	-- Tomas Riogain
 			["coord"] = { 38.1, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -784,7 +784,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["g"] = {
 				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
-		}),
+		})),
 		q(56001, {	-- Drunk Angry Murlocs
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade

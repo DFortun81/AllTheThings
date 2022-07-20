@@ -56,12 +56,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				crit(4),	-- Rustbolt Armory
 				crit(5),	-- Reclamation Rig
 			}),
-			ach(13623, {	-- Fighting on Two Fronts
-				["collectible"] = false,
-				["g"] = {
-					crit(2),	-- Kill Players in Mechagon
-				},
-			}),
 			ach(13482),	-- Head Financier of Mechagon
 			ach(13555, {	-- Junkyard Tinkmaster
 				-- Meta Achievement should symlink the contained Achievements from Source
