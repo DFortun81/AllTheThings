@@ -4,14 +4,40 @@
 
 _.Instances = { tier(CATA_TIER, {
 	inst(76, {	-- Zul'Gurub
-		["maps"] = {
-			ZULGURUB,
-		},
+		["mapID"] = ZULGURUB,
 		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["g"] = {
 			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["g"] = {
+					n(ACHIEVEMENTS, {
+						ach(5744, {	-- Gurubashi Headhunter
+							crit(1, {	-- Gub
+								["_npcs"] = { 52440 },	-- Gub
+							}),
+							crit(2, {	-- Mortaxx
+								["_npcs"] = { 52438 },	-- Mortaxx
+							}),
+							crit(3, {	-- Kaulema
+								["_npcs"] = { 52422 },	-- Kaulema
+							}),
+							crit(4, {	-- Mor'Lek
+								["_npcs"] = { 52405 },	-- Mor'Lek
+							}),
+							crit(5, {	-- Hive Queen
+								["_npcs"] = { 52442 },	-- Florawing Hive Queen
+							}),
+							crit(6, {	-- Lost Offspring
+								["_npcs"] = { 52418 },	-- Lost Offspring of Gahz'ranka
+							}),
+							crit(7, {	-- Gurubashi Master Chef
+								["_npcs"] = { 52392 },	-- Gurubashi Master Chef
+							}),
+							crit(8, {	-- Tor-Tun
+								["_npcs"] = { 52414 },	-- Tor-Tun
+							}),
+						}),
+					}),
 					n(ZONE_DROPS, {
 						i(69803, {	-- Gurubashi Punisher
 							["crs"] = {
@@ -296,26 +322,14 @@ _.Instances = { tier(CATA_TIER, {
 							["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						}),
 					}),
-					n(52442, {			-- Florawing Hive Queen
+					n(52442, {	-- Florawing Hive Queen
 						["questID"] = 53809,	-- KillID
 						["isDaily"] = true,
 						["g"] = {
-							{	-- Hive Queen Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 5,	-- Hive Queen slain
-							},
-							i(69817, {	-- Hive Queen's Honeycomb
-							}),
+							i(69817),	-- Hive Queen's Honeycomb
 						},
 					}),
-					n(52414, {			-- Tor-Tun
-						["g"] = {
-							{	-- Tor-Tun Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 8,			-- Tor-Tun slain
-							},
-						},
-					}),
+					n(52414),	-- Tor-Tun
 					cr(52155, e(175, {	-- High Priest Venoxis
 						ach(5743),	-- It's Not Easy Being Green
 						i(69603),	-- Breastplate of Serenity
@@ -324,15 +338,8 @@ _.Instances = { tier(CATA_TIER, {
 						i(69601),	-- Serpentine Leggings
 						i(69602),	-- Signet of Venoxis
 					})),
-					n(52422, {			-- Kaulema
-						["g"] = {
-							{	-- Kaulema Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 3,	-- Kaulema slain
-							},
-							i(69818, {	-- Giant Sack
-							}),
-						},
+					n(52422, {	-- Kaulema
+						i(69818),	-- Giant Sack
 					}),
 					cr(52151, e(176, {	-- Bloodlord Mandokir
 						ach(5762),	-- Ohganot So Fast!
@@ -343,15 +350,8 @@ _.Instances = { tier(CATA_TIER, {
 						i(69606),	-- Hakkari Loa Drape
 						i(69608),	-- Deathcharged Wristguards
 					})),
-					n(52405, {			-- Mor'Lek
-						["g"] = {
-							{	-- Mor'Lek Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 4,	-- Mor'Lek slain
-							},
-							i(69818, {	-- Giant Sack
-							}),
-						},
+					n(52405, {	-- Mor'Lek
+						i(69818),	-- Giant Sack
 					}),
 					n(-41,   {			-- Cache of Madness (Requires 225 Archeology)
 						--[[ encounter IDs if we're ever able to use an array for them:
@@ -480,24 +480,11 @@ _.Instances = { tier(CATA_TIER, {
 							}),
 						},
 					}),
-					n(52438, {			-- Mortaxx
-						["g"] = {
-							{	-- Mortaxx Slain
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 2,			-- Mortaxx slain
-							},
-							i(52722),	-- Maelstrom Crystal
-						},
+					n(52438, {	-- Mortaxx
+						i(52722),	-- Maelstrom Crystal
 					}),
-					n(52392, {			-- Gurubashi Master Chef
-						["g"] = {
-							{	-- Gurubashi Master Chef Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 7,	-- Gurubashi Master Chef slain
-							},
-							i(69822, {	-- Master Chef's Groceries
-							}),
-						},
+					n(52392, {	-- Gurubashi Master Chef
+						i(69822),	-- Master Chef's Groceries
 					}),
 					cr(52059, e(181, {	-- High Priestess Kilnara
 						ach(5765),	-- Here, Kitty Kitty...
@@ -515,25 +502,11 @@ _.Instances = { tier(CATA_TIER, {
 						i(69619),	-- Bone Plate Handguards
 						i(69615),	-- Zombie Walker Legguards
 					})),
-					n(52440, {			-- Gub
-						["g"] = {
-							{	-- Gub Slain (Gurubashi Headhunter)
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 1,			-- Gub slain
-							},
-							i(69823, {	-- Gub's Catch
-							}),
-						},
+					n(52440, {	-- Gub
+						i(69823),	-- Gub's Catch
 					}),
-					n(52418, {			-- Lost Offspring of Gahz'ranka
-						["g"] = {
-							{	-- Lost Offspring of Gahz'ranka Slain
-								["achievementID"] = 5744,	-- Gurubashi Headhunter
-								["criteriaID"] = 6,			-- Lost Offspring of Gahz'ranka slain
-							},
-							i(70719, {	-- Water-Filled Gills
-							}),
-						},
+					n(52418, {	-- Lost Offspring of Gahz'ranka
+						i(70719),	-- Water-Filled Gills
 					}),
 					cr(52148, e(185, {	-- Jin'do the Godbreaker
 						ach(5768),	-- Heroic: Zul'Gurub
