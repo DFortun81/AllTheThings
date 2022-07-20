@@ -647,7 +647,6 @@ i(191120),	-- Extra-shiny Gorloc Scale
 i(191121),	-- Abalone-Inlaid Key
 i(191122),	-- Fullsails Supply Chest Key
 i(191124),	-- Bloody Key
-i(191126),	-- Obsidian Whelpling
 i(191127),	-- Medallion of a Fallen Friend
 i(191131),	-- Oathstone Fragment
 i(191134),	-- Versatile Longnet
@@ -911,7 +910,6 @@ i(191834),	-- Obsidian Dracthyr Battlegear Belt
 i(191835),	-- Obsidian Dracthyr Battlegear Bracers
 i(191836),	-- Obsidian Dracthyr Battlegear Cover
 i(191837),	-- Earthen Charm
-i(191838),	-- [PH] Blue Lava Mammoth
 i(191839),	-- Fragrant Bloom
 i(191840),	-- Mudfin Pouch
 i(191842),	--
@@ -958,7 +956,6 @@ i(191909),	--
 i(191912),	-- Fleeting Elemental Potion of Ultimate Power
 i(191913),	-- Fleeting Elemental Potion of Ultimate Power
 i(191914),	-- Fleeting Elemental Potion of Ultimate Power
-i(191915),	-- [PH] Brown Shaggy Rabbit
 i(191916),	-- [DNT] Engraved Spyglass
 i(191917),	-- Suspiciously Fuzzy Drink
 i(191918),	-- Suspiciously Fuzzy Drink
@@ -967,17 +964,11 @@ i(191920),	--
 i(191923),	-- [DNT] Worn Key
 i(191924),	-- Alvi's Spyglass
 i(191928),	-- Brena's Totem
-i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
-i(191930),	-- [PH] Blue Baby Phoenix
 i(191931),	--
-i(191932),	-- Violet Violence
 i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
 i(191935),	--
-i(191936),	-- Secretive Frogduck
 i(191938),	-- Congealing Essence
-i(191941),	-- Crystalline Mini-Monster
 i(191942),	-- Belloc's Hat
-i(191946),	-- Mister Muskoxeles
 i(191947),	-- Parachutes
 i(191951),	-- Lost Banana
 i(191952),	-- Ley Scepter
@@ -1059,7 +1050,6 @@ i(192046),	--
 i(192047),	--
 i(192048),	--
 i(192049),	--
-i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
 i(192054),	-- Medallion of a Fallen Friend
 i(192055),	-- Dragon Isles Artifact
 i(192057),	--
@@ -1195,7 +1185,6 @@ i(192447),	--
 i(192448),	--
 i(192453),	-- Waywatcher Spyglass
 i(192454),	-- Elemental Essence
-i(192459),	-- Jean's Lucky Fish
 i(192460),	--
 i(192462),	--
 i(192464),	-- Darkmoon Deck: Ysera
@@ -1214,7 +1203,6 @@ i(192479),	-- Elemental Focus
 i(192480),	-- Fragmented Record Rubbing
 i(192482),	-- Timewalker Staff
 i(192493),	-- Mote of Primal Energy
-i(192495),	-- Malfunctioning Stealthman 54
 i(192496),	-- Exhumed Hunter's Spear
 i(192497),	--
 i(192498),	--
@@ -1309,7 +1297,6 @@ i(192596),	-- 10.0 Poor Item Template - <Descriptor> Chain Gauntlets
 i(192597),	-- 10.0 Poor Item Template - <Descriptor> Chain Helm
 i(192598),	-- 10.0 Poor Item Template - <Descriptor> Chain Clasp
 i(192600),	-- [DNT][PH] Meat
-i(192601),	-- [PH] Orange Lava Mammoth
 i(192602),	-- Staff Fragment
 i(192603),	-- River Whelk
 i(192604),	--
@@ -1424,10 +1411,8 @@ i(192743),	-- Wild Bushfruit
 i(192745),	-- The Titanic Comedy
 i(192746),	--
 i(192747),	-- Broken Branch
-i(192748),	-- [PH] Moose Bull Brown
 i(192749),	-- Chrono Crystal
 i(192750),	-- Black Iron Javelin
-i(192751),	-- [PH] Moose Bull Dark
 i(192752),	-- Staff Headpiece
 i(192753),	-- The Scales of Wrath
 i(192754),	-- Dracuixote
@@ -1437,36 +1422,14 @@ i(192757),	-- Pride and Protodrakes
 i(192758),	-- Coil of Heavy Rope
 i(192759),	-- Pristine Stonesworn Spear
 i(192760),	--
-i(192761),	-- [PH] Dragonfly Black
-i(192762),	-- [PH] Dragonfly Blue
-i(192764),	-- [PH] Dragonfly Green
-i(192765),	-- [PH] Dragonfly Yellow
-i(192766),	-- [PH] Dragonfly Orange
 i(192767),	-- Bag of Ore
 i(192769),	-- Cracked Spear
-i(192770),	-- [PH] Moose Bull Black
-i(192771),	-- [PH] Water Salamander Blue
-i(192772),	-- [PH] Water Salamander Green
-i(192773),	-- [PH] Water Salamander Orange
-i(192774),	-- [PH] Water Salamander Pink
-i(192775),	-- [PH] Water Salamander Purple
 i(192776),	--
-i(192777),	-- [PH] Lava Snail Orange
-i(192778),	-- [PH] Lava Slug Orange
-i(192779),	-- [PH] Lava Slug Red
-i(192780),	-- [PH] Lava Snail Orange
-i(192781),	-- [PH] Lava Slug Blue
-i(192782),	-- [PH] Lava Slug Yellow
 i(192783),	-- Nokhud Vanguard Orders
-i(192784),	-- [PH] Lava Snail Red
-i(192785),	-- [PH] Lava Snail Blue
-i(192786),	-- [PH] Lava Snail Yellow
-i(192787),	-- [PH] Mammoth V2 Dark
 i(192788),	-- [PH] Mammoth V2 Blue
 i(192789),	-- [PH] Mammoth V2 Gray
 i(192790),	-- [PH] Mammoth V2 Green
 i(192791),	-- [PH] Mammoth V2 Orange
-i(192792),	-- PH Thunder Lizard Green
 i(192793),	-- PH Thunder Lizard Black
 i(192794),	-- PH Thunder Lizard Blue
 i(192795),	-- Rejuvenating Draught
@@ -1474,7 +1437,6 @@ i(192796),	-- PH Thunder Lizard Light
 i(192797),	-- Gral's Discarded Tooth
 i(192798),	--
 i(192799),	-- PH Thunder Lizard Brown
-i(192800),	-- PH Primal Tallstrider Blue
 i(192801),	-- PH Primal Tallstrider White
 i(192802),	-- PH Primal Tallstrider Black
 i(192803),	-- PH Primal Tallstrider Red
@@ -1696,8 +1658,6 @@ i(193026),	--
 i(193029),	-- Projection Prism
 i(193030),	-- Projection Prism
 i(193031),	-- Projection Prism
-i(193032),	-- Jeweled Offering
-i(193033),	-- Convergent Prism
 i(193034),	-- Ludicrously Luxurious Lucky Loop
 i(193035),	-- Bold-Print Bifocals
 i(193036),	-- Scribe's Magnifying Glass T1 (DNT)
@@ -1721,13 +1681,9 @@ i(193059),	-- Raidu the Rabbit
 i(193060),	-- Ongke the Otter
 i(193061),	-- Dumen the Duckling
 i(193062),	-- Baichek the Beaver
-i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
 i(193064),	-- Smoke Diffuser
-i(193066),	-- [PH] Chestnut Flying Squirrel
 i(193067),	-- Acadia's Tools
-i(193068),	-- [PH] Gold Flying Squirrel
 i(193069),	-- Climber's Pack
-i(193071),	-- [PH] Pistachio Flying Squirrel
 i(193201),	-- Key Framing
 i(193202),	-- Thunderspine Scale
 i(193205),	-- Large Ribs
@@ -1750,7 +1706,6 @@ i(193221),	-- Frostfire Reagent
 i(193222),	-- Lustrous Scales
 i(193223),	-- Lustrous Scales
 i(193224),	-- Lustrous Scales
-i(193225),	-- [PH] Purple Baby River Otter
 i(193226),	-- Stonecrust Hide
 i(193227),	-- Stonecrust Hide
 i(193228),	-- Stonecrust Hide
@@ -1760,7 +1715,6 @@ i(193231),	-- Mireslush Hide
 i(193232),	-- Deathchill Hide
 i(193233),	-- Deathchill Hide
 i(193234),	-- Deathchill Hide
-i(193235),	-- [PH] Red Baby River Otter
 i(193236),	-- Bloodsoaked Hide
 i(193237),	-- Bloodsoaked Hide
 i(193238),	-- Bloodsoaked Hide
@@ -1801,8 +1755,6 @@ i(193357),	--
 i(193358),	--
 i(193359),	--
 i(193361),	-- Incomplete Hunting Necklace
-i(193363),	-- [PH] Orange Baby Mammoth
-i(193364),	-- [PH] Yellow Baby Mammoth
 i(193365),	-- Basic Potion Alchemical Experimentation
 i(193366),	-- Advanced Phial Alchemical Experimentation
 i(193367),	-- Advanced Potion Alchemical Experimentation
@@ -1811,14 +1763,10 @@ i(193369),	-- Finely-Ground Gemstones
 i(193370),	-- Finely-Ground Gemstones
 i(193371),	-- "Rhinestone" Sunglasses
 i(193372),	--
-i(193373),	-- [PH] Orange Baby Phoenix
-i(193374),	-- [PH] Red Baby Phoenix
 i(193375),	--
 i(193376),	-- Adenedal's Tidy Purse
-i(193377),	-- [PH] Yellow Baby Phoenix
 i(193378),	-- Elemental Harmony
 i(193379),	-- Elemental Harmony
-i(193380),	-- [PH] Pink Baby Salamander
 i(193382),	--
 i(193383),	-- Bonewrought Crossbow
 i(193384),	--
@@ -1866,7 +1814,6 @@ i(193425),	-- Red Flame Brushed Chain
 i(193426),	-- Red Flame Brushed Legguards
 i(193427),	-- Red Flame Brushed Handguards
 i(193428),	-- Red Flame Brushed Cuffs
-i(193429),	-- [PH] Orange Baby Salamander
 i(193430),	-- [PH] Hidden Sentinel's Boots
 i(193431),	-- [PH] Hidden Sentinel's Chestpiece
 i(193432),	-- [PH] Hidden Sentinel's Mask
@@ -1908,15 +1855,12 @@ i(193468),	-- Fang Adornments
 i(193469),	-- Ball of Toxic Gunk
 i(193470),	-- Feral Hide Drums
 i(193475),	-- Masterwork Riding Crop
-i(193476),	-- Gnoll Tent
 i(193477),	-- Battle Scarred Scale
-i(193478),	-- Tuskarr Bean Bag
 i(193479),	--
 i(193480),	--
 i(193481),	-- Emblazoned Verdant Staff
 i(193482),	--
 i(193483),	-- Balakar's Head
-i(193484),	-- [PH] Brown Baby Duck
 i(193485),	--
 i(193486),	--
 i(193487),	--
@@ -1994,8 +1938,6 @@ i(193567),	-- Reinforced Armor Kit
 i(193568),	-- Engraved Spearhead
 i(193569),	--
 i(193570),	--
-i(193571),	-- [PH] Mallard Baby Duck
-i(193572),	-- [PH] Mech Baby Duck
 i(193573),	--
 i(193574),	--
 i(193575),	--
@@ -2008,7 +1950,6 @@ i(193581),	--
 i(193582),	--
 i(193583),	--
 i(193584),	--
-i(193587),	-- [PH] Yellow Duck
 i(193590),	--
 i(193591),	--
 i(193592),	--
@@ -2024,13 +1965,9 @@ i(193601),	-- The Black Locus
 i(193611),	-- Ancient Horn Ring
 i(193612),	-- Blacksmith's Apron
 i(193613),	-- Master Blacksmith's Flame Resistant Apron
-i(193614),	-- [PH] Blue Baby Thunder Lizard
 i(193615),	-- Jeweler's Tool Apron
 i(193616),	-- Master Jeweler's Tool Holster
 i(193617),	--
-i(193618),	-- [PH] Green Baby Thunder Lizard
-i(193619),	-- Yipper
-i(193620),	-- [PH] Yellow Baby Fox Wyvern
 i(193621),	--
 i(193624),	-- Fireproof Gear
 i(193625),	-- Neltharus Forge Crystal
@@ -2241,10 +2178,7 @@ i(193830),	--
 i(193831),	--
 i(193832),	--
 i(193833),	--
-i(193834),	-- [PH] Black Woodpecker
-i(193835),	-- [PH] Red Woodpecker
 i(193836),	-- Stolen Tools
-i(193837),	-- [PH] Blue Baby Primal Beaver
 i(193838),	--
 i(193839),	-- Explosive Ash
 i(193840),	-- Bag of Enchanted Winds
@@ -2257,19 +2191,11 @@ i(193846),	--
 i(193847),	--
 i(193848),	--
 i(193849),	-- Emptied Satchel
-i(193850),	-- [PH] Yellow Baby Primal Beaver
-i(193851),	-- [PH] Purple Lionfish
-i(193852),	-- [PH] Blue Lionfish
-i(193853),	-- [PH] Green Lionfish
-i(193854),	-- [PH] Blue Baby Vorquin
-i(193855),	-- [PH] Bronze Baby Vorquin
 i(193856),	-- Flowery's Rake
 i(193858),	--
 i(193859),	-- Twice-Burnt Potato
 i(193860),	-- Snapped Wand
 i(193861),	-- Blue Magic Wand
-i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
-i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
 i(193864),	-- Magma Core
 i(193865),	-- Fuzzy Legs
 i(193867),	-- Enchanted Relics
@@ -2290,11 +2216,6 @@ i(193881),	-- Recipe: Scale Rein Grips
 i(193882),	-- Recipe: Acidic Hailstone Treads
 i(193883),	-- Recipe: Venom-Seeped Stompers
 i(193884),	-- Recipe: Basran's Protectors
-i(193885),	-- Jeweled Amber Whelpling
-i(193886),	-- Jeweled Sapphire Whelpling
-i(193887),	-- Jeweled Ruby Whelpling
-i(193888),	-- Jeweled Emerald Whelpling
-i(193889),	-- Jeweled Onyx Whelpling
 i(193890),	-- Diced Meat
 i(193891),	-- Experimental Substance
 i(193892),	-- Wish's Whistle
@@ -2308,7 +2229,6 @@ i(193903),	-- Watcher Power Core
 i(193904),	-- Phoenix Feather Quill
 i(193905),	-- Iskaaran Trading Ledger
 i(193907),	-- Chipped Tyrstone
-i(193908),	-- [PH] Blue Crystal Porcupine
 i(193909),	-- Ancient Gem Fragments
 i(193910),	-- Molted Dragon Scales
 i(193913),	-- Preserved Animal Parts
@@ -2383,7 +2303,6 @@ i(194030),	-- Moose Flank
 i(194031),	-- Stormtouched Shards
 i(194032),	-- Chaos Ysemerald
 i(194033),	-- Waterlogged Card
-i(194034),	-- Renewed Proto-Drake
 i(194035),	-- Glittering Diamonds
 i(194036),	-- Exquisite Necklace
 i(194037),	-- Heavy Chest
@@ -2447,13 +2366,11 @@ i(194094),	-- Tallstrider Beak
 i(194095),	-- Hunting Trophy
 i(194096),	--
 i(194097),	-- Hunter's Fabulous Treasure
-i(194098),	-- Lord Basilton
 i(194099),	-- Cunning Hunter's Horn
 i(194100),	--
 i(194102),	-- Cranial Excavator
 i(194103),	-- Decay Sample
 i(194105),	-- Whelpling Formula
-i(194106),	-- Highland Drake
 i(194107),	--
 i(194108),	-- Mighty Hunter's Horn
 i(194109),	-- Verdant Dracthyr's Band
@@ -2678,7 +2595,6 @@ i(194516),	-- Aged Journal
 i(194517),	-- Broken Texts
 i(194519),	-- Osoria's Assistance
 i(194520),	-- Scroll of Timewalker Knowledge
-i(194521),	-- Cliffside Wylderdrake
 i(194522),	-- Blue Winglord's Staff
 i(194523),	-- Blue Winglord's Chain
 i(194524),	-- Blue Winglord's Boots
@@ -2701,7 +2617,6 @@ i(194540),	-- Nokhud Armorer's Notes
 i(194544),	-- Earthwarden's Flame Blade
 i(194546),	-- Baskilan Report
 i(194548),	-- Primal Molten Core
-i(194549),	-- Windborne Velocidrake
 i(194550),	-- Tuesday Ingredient
 i(194551),	-- Spicy Lava Spice
 i(194552),	-- Glimmering Ramblekelp Bulb
@@ -2836,7 +2751,6 @@ i(194701),	-- Ominous Conch
 i(194702),	-- Draconic Treatise on Leatherworking
 i(194703),	-- Draconic Treatise on Jewelcrafting
 i(194704),	-- Draconic Treatise on Herbalism
-i(194705),	-- Highland Drake
 i(194706),	-- [DEPRECATED]Illusionary Key
 i(194707),	-- Myridian Report
 i(194708),	-- Draconic Treatise on Mining
@@ -2853,7 +2767,6 @@ i(194718),	-- Premium Salamander Feed
 i(194719),	-- [DEPRECATED]Illusionary Coin
 i(194720),	-- Lost Draconic Hourglass
 i(194721),	-- Cracked Hourglass
-i(194722),	-- Carrier Yeti
 i(194723),	-- Kalu'ak Figurine
 i(194724),	-- Kalu'ak Figurine
 i(194725),	-- Kalu'ak Figurine
@@ -3251,7 +3164,6 @@ i(197714),	--
 i(197715),	--
 i(197716),	--
 i(197717),	--
-i(197719),	-- Artisan's Sign
 i(197723),	--
 i(197725),	-- Deathrip's Curled Claw
 i(197727),	-- Mystical Water Vial
@@ -3398,7 +3310,6 @@ i(197956),	-- Empowered Shortsword of Insight
 i(197957),	-- Timeless Watcher's Saber
 i(197959),	-- Dragonforged Armor
 i(197960),	-- Bag of Bakar Biscuits
-i(197961),	-- Whelps on Strings
 i(197964),	-- [PH] Recipe: Hidden Sentinel's Mask
 i(197965),	-- [PH] Recipe: Hidden Sentinel's Chestpiece
 i(197966),	-- [PH] Recipe: Hidden Sentinel's Trousers
@@ -3420,7 +3331,6 @@ i(197982),	-- Recipe: Finished Prototype Explorer's Barding
 i(197983),	-- Drakmoss Clump
 i(197984),	-- Recipe: Wisp of Tyr
 i(197985),	-- Recipe: Essence of Tyr
-i(197986),	-- Murglasses
 i(197988),	--
 i(197989),	-- Water Ordained Signet
 i(197990),	-- Solemn Seashell String
@@ -3469,7 +3379,6 @@ i(198034),	--
 i(198035),	--
 i(198036),	--
 i(198037),	-- Brimming Arcanocrystal
-i(198039),	-- Rock of Appreciation
 i(198040),	--
 i(198041),	-- Titanicium Fabric Cutters Left Blade
 i(198042),	--
@@ -3513,7 +3422,6 @@ i(198086),	-- Darkmoon Deck: Inferno
 i(198087),	-- Darkmoon Deck: Awakened Chill
 i(198088),	-- Darkmoon Deck: Refreshing Dance
 i(198089),	-- Darkmoon Deck: Watcher
-i(198090),	-- Jar of Excess Slime
 i(198091),	-- Slightly Used Recrafted Armor
 i(198110),	--
 i(198133),	-- Golden Expedition Compass
@@ -3569,7 +3477,6 @@ i(198349),	-- Dragonscale Supplies
 i(198350),	-- [DNT] Fresh Fish Steak
 i(198351),	-- Ancient Mana Gem
 i(198352),	-- Sigil of Storms
-i(198353),	-- Shiverweb Egg
 i(198354),	-- The Black Locus
 i(198356),	-- Honey Snack
 i(198357),	-- Rock of Aegis
@@ -3614,12 +3521,10 @@ i(198395),	-- Dull Spined Clam
 i(198397),	-- Rainbow Pearl
 i(198398),	-- Primal Proto-Whelp Scale
 i(198400),	-- Roscha's Lucky Horseshoe
-i(198402),	-- Maruuk Cooking Pot
 i(198405),	--
 i(198406),	--
 i(198407),	-- Azure Arcanic Amplifier
 i(198408),	-- Timewalker Notes
-i(198409),	-- Personal Shell
 i(198410),	-- Timewalker Staff
 i(198411),	-- Skaara's Preparedness
 i(198412),	-- Serene Pigment
@@ -3637,7 +3542,6 @@ i(198423),	-- Shimmering Pigment
 i(198424),	-- Refine Dragon Isles Hides
 i(198425),	-- Refine Dragon Isles Leather
 i(198426),	-- Refine Dragon Isles Scales
-i(198428),	-- Tuskarr Dinghy
 i(198429),	-- Typhoon Bringer
 i(198430),	-- Time Capsule
 i(198431),	-- Jetscale Sigil

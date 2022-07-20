@@ -367,6 +367,123 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
 			i(198107),	-- Recipe: Zesty Water (RECIPE!)
 		}),
+		filter(PETS, {
+			i(193889),	-- Jeweled Onyx Whelpling
+			i(191126),	-- Obsidian Whelpling
+			i(191915),	-- [PH] Brown Shaggy Rabbit
+			i(191930),	-- [PH] Blue Baby Phoenix
+			i(191932),	-- Violet Violence
+			i(191936),	-- Secretive Frogduck
+			i(191941),	-- Crystalline Mini-Monster
+			i(191946),	-- Mister Muskoxeles
+			i(193620),	-- [PH] Yellow Baby Fox Wyvern
+			i(193852),	-- [PH] Blue Lionfish
+			i(192459),	-- Jean's Lucky Fish
+			i(193066),	-- [PH] Chestnut Flying Squirrel
+			i(193068),	-- [PH] Gold Flying Squirrel
+			i(193071),	-- [PH] Pistachio Flying Squirrel
+			i(193225),	-- [PH] Purple Baby River Otter
+			i(193235),	-- [PH] Red Baby River Otter
+			i(193363),	-- [PH] Orange Baby Mammoth
+			i(193364),	-- [PH] Yellow Baby Mammoth
+			i(193373),	-- [PH] Orange Baby Phoenix
+			i(193374),	-- [PH] Red Baby Phoenix
+			i(193377),	-- [PH] Yellow Baby Phoenix
+			i(193429),	-- [PH] Orange Baby Salamander
+			i(193380),	-- [PH] Pink Baby Salamander
+			i(193484),	-- [PH] Brown Baby Duck
+			i(193571),	-- [PH] Mallard Baby Duck
+			i(193572),	-- [PH] Mech Baby Duck
+			i(193587),	-- [PH] Yellow Duck
+			i(193614),	-- [PH] Blue Baby Thunder Lizard
+			i(193618),	-- [PH] Green Baby Thunder Lizard
+			i(193619),	-- Yipper
+			i(193834),	-- [PH] Black Woodpecker
+			i(193835),	-- [PH] Red Woodpecker
+			i(193837),	-- [PH] Blue Baby Primal Beaver
+			i(193850),	-- [PH] Yellow Baby Primal Beaver
+			i(193853),	-- [PH] Green Lionfish
+			i(193851),	-- [PH] Purple Lionfish
+			i(193854),	-- [PH] Blue Baby Vorquin
+			i(193855),	-- [PH] Bronze Baby Vorquin
+			i(193886),	-- Jeweled Sapphire Whelpling
+			i(193885),	-- Jeweled Amber Whelpling
+			i(193887),	-- Jeweled Ruby Whelpling
+			i(193888),	-- Jeweled Emerald Whelpling
+			i(194098),	-- Lord Basilton
+			i(198353),	-- Shiverweb Egg
+			i(193908),	-- [PH] Blue Crystal Porcupine
+			i(192050),	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
+			i(193863),	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
+			i(193063),	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
+			i(193862),	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
+			i(191929),	-- zzOld - [PH] White Flying Squirrel (REUSE)
+		}),
+		filter(TOYS, {
+			i(192495),	-- Malfunctioning Stealthman 54
+			i(193032),	-- Jeweled Offering
+			i(193033),	-- Convergent Prism
+			i(193478),	-- Tuskarr Bean Bag
+			i(193476),	-- Gnoll Tent
+			i(197719),	-- Artisan's Sign
+			i(197961),	-- Whelps on Strings
+			i(197986),	-- Murglasses
+			i(198428),	-- Tuskarr Dinghy
+			i(198039),	-- Rock of Appreciation
+			i(198090),	-- Jar of Excess Slime
+			i(198402),	-- Maruuk Cooking Pot
+			i(198409),	-- Personal Shell
+		}),
+		filter(MOUNTS, {
+			i(194106),	-- Highland Drake
+			i(194705),	-- Highland Drake
+			i(194034),	-- Renewed Proto-Drake
+			i(194549),	-- Windborne Velocidrake
+			i(194521),	-- Cliffside Wylderdrake
+			i(194722),	-- Carrier Yeti
+			i(192766),	-- [PH] Dragonfly Orange
+			i(192761),	-- [PH] Dragonfly Black
+			i(192762),	-- [PH] Dragonfly Blue
+			i(192764),	-- [PH] Dragonfly Green
+			i(192765),	-- [PH] Dragonfly Yellow
+			i(192770),	-- [PH] Moose Bull Black
+			i(192777),	-- [PH] Lava Snail Orange
+			i(192780),	-- [PH] Lava Snail Orange
+			i(192778),	-- [PH] Lava Slug Orange
+			i(192787),	-- [PH] Mammoth V2 Dark
+			i(192792),	-- PH Thunder Lizard Green
+			i(192800),	-- PH Primal Tallstrider Blue
+			i(192771),	-- [PH] Water Salamander Blue
+			i(191838),	-- [PH] Blue Lava Mammoth
+			
+			i(192748),	-- [PH] Moose Bull Brown
+			i(192601),	-- [PH] Orange Lava Mammoth
+			i(192751),	-- [PH] Moose Bull Dark
+			i(192772),	-- [PH] Water Salamander Green
+			i(192773),	-- [PH] Water Salamander Orange
+			i(192774),	-- [PH] Water Salamander Pink
+			i(192775),	-- [PH] Water Salamander Purple
+			i(192779),	-- [PH] Lava Slug Red
+			i(192781),	-- [PH] Lava Slug Blue
+			i(192782),	-- [PH] Lava Slug Yellow
+			i(192784),	-- [PH] Lava Snail Red
+			i(192785),	-- [PH] Lava Snail Blue
+			i(192786),	-- [PH] Lava Snail Yellow
+			i(192789, 374172);	-- [PH] Mammoth V2 Gray
+			i(192788, 374181);	-- [PH] Mammoth V2 Blue
+			i(192790, 374194);	-- [PH] Mammoth V2 Green
+			i(192791, 374196);	-- [PH] Mammoth V2 Orange
+			i(192793, 374200);	-- PH Thunder Lizard Black
+			i(192794, 374201);	-- PH Thunder Lizard Blue
+			i(192796, 374204);	-- PH Thunder Lizard Light
+			i(192799, 374247);	-- PH Thunder Lizard Brown
+			i(192801, 374255);	-- PH Primal Tallstrider White
+			i(192802, 374258);	-- PH Primal Tallstrider Black
+			i(192803, 374259);	-- PH Primal Tallstrider Red
+			i(192804, 374263);	-- PH Primal Tallstrider Green
+			i(192806, 374275);	-- PH Lava Mammoth Red
+			i(192807, 374278);	-- PH Lava Mammoth Yellow
+		}),
 	}),
 	tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 		i(191425),	-- Choral Amice

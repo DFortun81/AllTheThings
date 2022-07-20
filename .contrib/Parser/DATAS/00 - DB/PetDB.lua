@@ -1090,6 +1090,128 @@ pet(191039, 3247);	-- Pocopoc Traveler
 3246
 --
 p(3177, {	-- Drakks (PET!)
-p(3175),	-- Murkastrasza (PET!)
+p(3175);	-- Murkastrasza (PET!)
 p(3249, {			-- Lil' Ursoc
 --]]
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+-- NOT SOURCED YET
+pet(193889, 3256);	-- Jeweled Onyx Whelpling
+pet(191126, 3256);	-- Jeweled Onyx Whelpling / Obsidian Whelpling
+pet(0, 3257);	-- Test Beetle
+pet(191915, 3259);	-- [PH] Brown Shaggy Rabbit
+pet(0, 3260);	-- [PH] White Flying Squirrel
+pet(191930, 3261);	-- [PH] Blue Baby Phoenix
+pet(191932, 3262);	-- Violet Violence
+pet(191936, 3263);	-- Secretive Frogduck
+pet(191941, 3264);	-- Crystalline Mini-Monster
+pet(191946, 3265);	-- Mister Muskoxeles
+pet(0, 3266);	-- [PH] Black Baby Slyvern
+pet(193620, 3267);	-- [PH] Yellow Baby Slyvern
+pet(0, 3268);	-- Swog
+pet(193852, 3269);	-- [PH] Blue Frillfish
+pet(192459, 3270);	-- Jean's Lucky Fish
+pet(0, 3272);	-- Pricklefury Hare
+pet(0, 3273);	-- Magma Slug
+pet(191886, 3274);	-- Alvin the Anvil
+pet(193066, 3275);	-- [PH] Chestnut Flying Squirrel
+pet(0, 3276);	-- [PH] Dark Chocolate Flying Squirrel
+pet(193068, 3277);	-- [PH] Gold Flying Squirrel
+pet(193071, 3278);	-- [PH] Pistachio Flying Squirrel
+pet(0, 3279);	-- [PH] Silver Flying Squirrel
+pet(0, 3280);	-- [PH] Walnut Flying Squirrel
+pet(0, 3281);	-- Scruffy Ottuk
+pet(0, 3282);	-- Swoglet
+pet(0, 3283);	-- Snowlemental
+pet(193225, 3284);	-- [PH] Purple Baby Ottuk
+pet(193235, 3285);	-- [PH] Red Baby Ottuk
+pet(0, 3286);	-- [PH] Blue Baby Mammoth
+pet(0, 3287);	-- [PH] Grey Baby Mammoth
+pet(0, 3288);	-- [PH] Dark Baby Mammoth
+pet(0, 3289);	-- [PH] Green Baby Mammoth
+pet(193363, 3290);	-- [PH] Orange Baby Mammoth
+pet(193364, 3291);	-- [PH] Yellow Baby Mammoth
+pet(193373, 3292);	-- [PH] Orange Baby Phoenix
+pet(193374, 3293);	-- [PH] Red Baby Phoenix
+pet(193377, 3294);	-- [PH] Yellow Baby Phoenix
+pet(0, 3295);	-- Igneoid
+pet(0, 3296);	-- Palamanther
+pet(193429, 3297);	-- [PH] Orange Baby Salamanther
+pet(193380, 3298);	-- [PH] Pink Baby Water Salamanther
+pet(0, 3299);	-- [PH] Purple Baby Salamanther
+pet(0, 3300);	-- Ironbeak Duck
+pet(0, 3301);	-- Wild Duckling
+pet(193484, 3302);	-- [PH] Brown Baby Duck
+pet(193571, 3303);	-- [PH] Mallard Baby Duck
+pet(193572, 3306);	-- [PH] Mech Baby Duck
+pet(0, 3307);	-- [PH] White Baby Duck
+pet(0, 3308);	-- [PH] Yellow Baby Duck
+pet(0, 3309);	-- [PH] Green Duck
+pet(0, 3310);	-- [PH] Brown Duck
+pet(0, 3311);	-- [PH] White Duck
+pet(193587, 3312);	-- [PH] Yellow Duck
+pet(0, 3313);	-- [PH] Black Baby Thunder Lizard
+pet(193614, 3314);	-- [PH] Blue Baby Thunder Lizard
+pet(0, 3316);	-- [PH] Brown Baby Thunder Lizard
+pet(193618, 3317);	-- [PH] Green Baby Thunder Lizard
+pet(0, 3318);	-- [PH] Light Baby Thunder Lizard
+pet(0, 3320);	-- [PH] White Baby Slyvern
+pet(193834, 3321);	-- [PH] Black Woodpecker
+pet(0, 3322);	-- [PH] Blue Woodpecker
+pet(193835, 3323);	-- [PH] Red Woodpecker
+pet(0, 3325);	-- [PH] White Woodpecker
+pet(193837, 3326);	-- [PH] Blue Baby Timbertooth
+pet(0, 3327);	-- [PH] Brown Baby Timbertooth
+pet(0, 3328);	-- [PH] Dark Baby Timbertooth
+pet(0, 3329);	-- [PH] Light Baby Timbertooth
+pet(193850, 3330);	-- [PH] Yellow Baby Timbertooth
+pet(193853, 3331);	-- [PH] Green Fillfish
+pet(193851, 3332);	-- [PH] Purple Frillfish
+pet(193854, 3333);	-- [PH] Blue Baby Vorquin
+pet(193855, 3334);	-- [PH] Bronze Baby Vorquin
+pet(0, 3335);	-- [PH] Pale Baby Vorquin
+pet(0, 3336);	-- Vorquin Runt
+pet(0, 3338);	-- [PH] Blue Crystalspine
+pet(0, 3339);	-- [PH] Black Dragon Whelp
+pet(0, 3340);	-- [PH] Blue Dragon Whelp
+pet(0, 3341);	-- [PH] Red Dragon Whelp
+pet(0, 3342);	-- Spyragos
+pet(0, 3343);	-- [PH] Bronze Dragon Whelp
+pet(193886, 3344);	-- Jeweled Sapphire Whelpling
+pet(193885, 3345);	-- Jeweled Amber Whelpling
+pet(193887, 3346);	-- Jeweled Ruby Whelpling
+pet(193888, 3347);	-- Jeweled Emerald Whelpling
+pet(0, 3348);	-- [PH] Black Gem Dragon Whelp
+pet(194098, 3350);	-- Lord Basilton
+pet(0, 3351);	-- [PH] Black Primal Bear Cub
+pet(0, 3352);	-- [PH] Red Primal Bear Cub
+pet(0, 3353);	-- [PH] Black Baby Turtle
+pet(0, 3354);	-- [PH]Green Baby Turtle
+pet(0, 3355);	-- [PH] Orange Baby Turtle
+pet(0, 3356);	-- [PH] White Baby Turtle
+pet(0, 3357);	-- [PH] Navy Blue Crystalspine
+pet(0, 3358);	-- [PH] Red Crystalspine
+pet(0, 3359);	-- [PH] White Primal Bear Cub
+pet(0, 3360);	-- [PH] Teal Baby Turtle
+pet(0, 3361);	-- [PH] Bling Crab (Diamond)
+pet(0, 3362);	-- [PH] Bling Crab (Sapphire)
+pet(0, 3363);	-- [PH] Bling Crab (Truesilver)
+pet(0, 3364);	-- [PH] Striped Light Ferret
+pet(0, 3365);	-- [PH] Pink Frog
+pet(0, 3366);	-- Kindlet
+pet(0, 3367);	-- Emberling
+pet(198353, 3368);	-- Shiverweb Broodling
+
+pet(193908);	-- [PH] Blue Crystal Porcupine
+
+pet(192050);	-- zzOld - [PH] Black Baby Fox Wyvern [REUSE]
+pet(193863);	-- zzOld - [PH] Dark Baby Vorquin (REUSE)
+pet(193063);	-- zzOld - [PH] Dark Shaggy Rabbit (REUSE)
+pet(193862);	-- zzOld - [PH] Pale Baby Vorquin (REUSE)
+pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
+
+
+-- Quests
+pet(193619, 3319);	-- Yipper [Quests?]
