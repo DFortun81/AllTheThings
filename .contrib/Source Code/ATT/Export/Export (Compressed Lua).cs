@@ -238,7 +238,8 @@ namespace ATT
 
                     // Cache the structure, mark it, then write it to the builder.
                     var structure = subbuilder.ToString();
-                    /*if (maxValue < 40)*/ MarkStructure(structure);
+                    /*if (maxValue < 40)*/
+                    MarkStructure(structure);
                     builder.Append(structure);
                 }
                 else
@@ -321,18 +322,15 @@ namespace ATT
             // Export all of the Categories
             var builder = new StringBuilder();
             builder.AppendLine("_.Categories={};");
-            builder.Append("local l={};");
-            int categoryCount = 0;
             foreach (var pair in categories)
             {
-                if (categoryCount++ > 0) builder.Append("l={};");
-                builder.Append("_.Categories.").Append(pair.Key).AppendLine("=l;");
+                builder.Append("_.Categories.").Append(pair.Key).AppendLine("={");
                 foreach (var group in pair.Value)
                 {
-                    builder.Append("tinsert(l,");
                     ExportCompressedLua(builder, group);
-                    builder.AppendLine(");");
+                    builder.Append(",");
                 }
+                builder.Remove(builder.Length - 1, 1).AppendLine("};");
             }
 
             // Simplify the structure of the string and then export to the builder.
