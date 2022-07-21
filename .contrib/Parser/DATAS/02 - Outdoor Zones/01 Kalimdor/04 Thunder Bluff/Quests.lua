@@ -94,12 +94,6 @@ _.Zones =
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1065,  {	-- Journey to Tarren Mill
-					["sourceQuests"] = { 1064 },	-- Forsaken Aid
-					["provider"] = { "n", 3419 },	-- Apothecary Zamah
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(769,   {	-- Kodo Hide Bag
 					["requireSkill"] = LEATHERWORKING,
 					["provider"] = { "n", 3050 },	-- Veren Tallstrider

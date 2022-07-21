@@ -46,15 +46,7 @@ q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(536),	-- [DEPRECATED] Down the Coast,		TBC: Down the Coast,		CLASSIC: Down the Coast
-q(538),	-- Southshore,		TBC: Southshore,		CLASSIC: Southshore
-q(540),	-- [DEPRECATED] Preserving Knowledge,		TBC: Preserving Knowledge,		CLASSIC: Preserving Knowledge
-q(542),	-- [DEPRECATED] Return to Milton,		TBC: Return to Milton,		CLASSIC: Return to Milton
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloodstone Pendant,		CLASSIC: <NYI> <TXT> Bloodstone Pendant
-q(559),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
-q(560),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
-q(561),	-- [DEPRECATED] Farren's Proof,		TBC: Farren's Proof,		CLASSIC: Farren's Proof
-q(563),	-- [DEPRECATED] Reassignment,		TBC: Reassignment,		CLASSIC: Reassignment
 q(574),	-- Special Forces,		TBC: Special Forces,		CLASSIC: Special Forces
 q(578),	-- The Stone of the Tides,		TBC: The Stone of the Tides,		CLASSIC: The Stone of the Tides
 q(601),	-- Water Elementals,		TBC: Water Elementals,		CLASSIC: Water Elementals
@@ -309,7 +301,6 @@ q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
 q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
 q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
-q(2480),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
 q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
 q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
@@ -734,7 +725,6 @@ q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge,		TBC: <UNUSED>Crystal Flake Th
 q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge,		TBC: <UNUSED>Crystal Flake Throat Lozenge,		CLASSIC: <UNUSED>Crystal Flake Throat Lozenge
 q(9414),	-- <UNUSED>Infused Bandages,		TBC: <UNUSED>Infused Bandages,		CLASSIC: <UNUSED>Infused Bandages
 q(9432),	-- Travel to Astranaar,		TBC: Travel to Astranaar
-q(9435),	-- [DEPRECATED] Missing Crystals,		TBC: Missing Crystals
 q(9445),	-- <NYI><TXT>Placeholder: A Worthy Offering,		TBC: <NYI><TXT>Placeholder: A Worthy Offering
 q(9446),	-- Tomb of the Lightbringer,		TBC: Tomb of the Lightbringer
 q(9460),	-- Combining Forces,		TBC: Combining Forces

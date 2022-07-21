@@ -88,6 +88,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29339),	-- Short-Supply Reward
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
+			q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta) [Hillsbrad Foothills]
+				["timeline"] = { "created 4.0.1.12984" },
+			}),
 		}),
 		tier(LEGION_TIER, {	-- These Quests might be ingame, very unlikely however.
 			q(45536),	-- 2v2 Weekly Quest UI
