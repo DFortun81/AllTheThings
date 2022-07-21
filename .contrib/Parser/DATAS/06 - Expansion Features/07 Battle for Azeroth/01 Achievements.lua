@@ -4,6 +4,11 @@
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
+		ach(13703, {	-- Battlefield Master
+			-- TODO: do we maps this into every bg/brawl/island exp map?
+			ach(13701),	-- Battlefield Brawler
+			ach(13702),	-- Battlefield Tactician
+		}),
 		pvp(ach(13623, {	-- Fighting on Two Fronts
 			crit(1, {	-- Acquire Nazjatar Battle Commendations
 				["cost"] = { { "i", 168802, 25 } },
