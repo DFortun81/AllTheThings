@@ -118,23 +118,5 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			crit(3),	-- Ashmaul Burial Grounds
 			crit(4),	-- Amphitheater of Annihilation
 		}),
-		ach(9473, {		-- Vol'jin's Spear
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				title(285, {	-- , Spear of Vol'jin
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-			},
-		}),
-		ach(9474, {		-- Wrynn's Vanguard
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				title(286, {	-- , Sword of Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-			},
-		}),
 	}),
 })));

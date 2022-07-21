@@ -49,7 +49,6 @@ _.Factions =
 			faction(1731),	-- Councils of Exarchs
 			faction(1847),	-- Hand of The Prophet
 			faction(1710),	-- Sha'tari Defense
-			faction(1682),	-- Wyrnn's Vanguard
 			faction(1738),	-- Defender Illona
 			faction(1733),	-- Delvar Ironfist
 		})),
@@ -102,7 +101,6 @@ _.Factions =
 			faction(1445),	-- Frostwolf Orcs
 			faction(1708),	-- Laughing Skull Orcs
 			faction(1848),	-- Vol'jin's Headhunters
-			faction(1681),	-- Vol'jin's Spear
 			faction(1740),	-- Aeda Brightdawn
 			faction(1739),	-- Vivianne
 		})),

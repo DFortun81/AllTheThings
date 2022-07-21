@@ -186,20 +186,22 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					crit(3),	-- Ashmaul Burial Grounds
 					crit(4),	-- Amphitheater of Annihilation
 				}),
-				ach(9473, {	-- Vol'jin's Spear
+			}),
+			n(FACTIONS, {
+				faction(1681, sharedDataSelf({ -- Vol'jin's Spear
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(285),	-- <Name>, Spear of Vol'jin
-						faction(1681),	-- Vol'jin's Spear
-					},
-				}),
-				ach(9474, {	-- Wrynn's Vanguard
+				},{
+					ach(9473, {	-- Vol'jin's Spear
+						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
+					}),
+				})),
+				faction(1682, sharedDataSelf({ -- Wyrnn's Vanguard
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(286),	-- <Name>, Sword of Wrynn
-						faction(1682),	-- Wyrnn's Vanguard
-					},
-				}),
+				},{
+					ach(9474, {	-- Wrynn's Vanguard
+						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn
+					}),
+				})),
 			}),
 			n(QUESTS, {
 				q(35264, {	-- A Bunch of Artifact Fragments (A)
