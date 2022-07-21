@@ -1109,7 +1109,23 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			}),
 			d(16, {	-- Mythic
 				n(ACHIEVEMENTS, {
-					ach(14718),	-- Mythic: Castle Nathria
+					ach(14718, {	-- Mythic: Castle Nathria
+						-- Meta Achievement
+						["sym"] = {
+							{"select","achievementID",
+								14359,	-- Mythic: Artificer Xy'mox
+								14358,	-- Mythic: Hungering Destroyer
+								14357,	-- Mythic: Huntsman Altimor
+								14361,	-- Mythic: Lady Inerva Darkvein
+								14356,	-- Mythic: Shriekwing
+								14365,	-- Mythic: Sire Denathrius
+								14363,	-- Mythic: Sludgefist
+								14364,	-- Mythic: Stone Legion Generals
+								14360,	-- Mythic: Sun King's Salvation
+								14362,	-- Mythic: The Council of Blood
+							},
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]

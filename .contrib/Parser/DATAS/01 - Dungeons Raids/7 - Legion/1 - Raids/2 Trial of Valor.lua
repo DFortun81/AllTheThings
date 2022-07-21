@@ -296,6 +296,12 @@ root("Instances", tier(LEGION_TIER, {
 				}))
 			}),
 			d(15,  {	-- Heroic
+				ach(11426, {	-- Heroic: Trial of Valor
+					-- TODO: _encounters support maybe
+					crit(1),		-- Odyn
+					crit(2),		-- Guarm
+					crit(3),		-- Helya
+				}),
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),

@@ -13,25 +13,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
 				["coord"] = { 31.0, 65.5, SURAMAR },
-				["maps"] = {	-- all Suramar maps
-					681,	-- The Arcway Vaults #1
-					682,	-- Felsoul Hold
-					683,	-- The Arcway Vaults #2
-					684,	-- Shattered Locus (Floor #1)
-					685,	-- Shattered Locus (Floor #2)
-					686,	-- Elor'shan
-					687,	-- Kel'balor
-					688,	-- Ley Station Anora
-					689,	-- Ley Station Moonfall
-					690,	-- Ley Station Aethenar
-					691,	-- Nyell's Workshop
-					798,	-- The Arcway
-				},
 				["creatureID"] = 109943,	-- Ana-Mouz
 				["g"] = {
-					crit(5, {	-- Ana-Mouz
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
 					}),
@@ -51,9 +34,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
 				["creatureID"] = 121124,	-- Apocron
 				["g"] = {
-					crit(4, {	-- Apocron
-						["achievementID"] = 11786,	-- Terrors of the Shore
-					}),
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
@@ -71,9 +51,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
 				["creatureID"] = 117239,	-- Brutallus
 				["g"] = {
-					crit(1, {	-- Brutallus
-						["achievementID"] = 11786,	-- Terrors of the Shore
-					}),
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
 					i(147742),	-- Violent Zealot's Shoulderpads
@@ -92,9 +69,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["coord"] = { 37.7, 83.6, AZSUNA },
 				["creatureID"] = 109331,	-- Calamir
 				["g"] = {
-					crit(9, {	-- Calamir
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
@@ -110,27 +84,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
 				["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
-				["maps"] = {	-- all Highmountain maps
-					651,	-- Bitestone Enclave
-					652,	-- Thunder Totem
-					653,	-- Cave of the Blood Trial
-					654,	-- Mucksnout Den
-					655,	-- Lifespring Cavern
-					656,	-- Lifespring Cavern
-					657,	-- Path of Huln (Floor 1)
-					658,	-- Path of Huln (Floor 2)
-					659,	-- Stonedark Grotto
-					660,	-- Feltotem Caverns
-					750,	-- Thunder Totem
-					826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
-					869,	-- Highmountain (Legion Invasion Ship 1)
-					870,	-- Highmountain (Legion Invasion Ship 2)
-				},
 				["creatureID"] = 110378,	-- Drugon the Frostblood
 				["g"] = {
-					crit(7, {	-- Drugon the Frostblood
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
 					}),
@@ -148,27 +103,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isRaid"] = true,
 				["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
-				["maps"] = {	-- all Highmountain maps
-					651,	-- Bitestone Enclave
-					652,	-- Thunder Totem
-					653,	-- Cave of the Blood Trial
-					654,	-- Mucksnout Den
-					655,	-- Lifespring Cavern
-					656,	-- Lifespring Cavern
-					657,	-- Path of Huln (Floor 1)
-					658,	-- Path of Huln (Floor 2)
-					659,	-- Stonedark Grotto
-					660,	-- Feltotem Caverns
-					750,	-- Thunder Totem
-					826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
-					869,	-- Highmountain (Legion Invasion Ship 1)
-					870,	-- Highmountain (Legion Invasion Ship 2)
-				},
 				["creatureID"] = 99929,	-- Flotsam
 				["g"] = {
-					crit(4, {	-- Flotsam
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -186,24 +122,9 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isRaid"] = true,
 				["coord"] = { 24.6, 69.6, VALSHARAH },
-				["maps"] = {	-- all Val'sharah maps
-					642,	-- Darkpens
-					643,	-- Sleeper's Barrow
-					644,	-- Sleeper's Barrow #2
-					758,	-- Gloaming Reef
-					868,	-- Val'sharah (Legion Invasion)
-				},
 				["creatureID"] = 108879,	-- Humongris
 				["g"] = {
-					crit(3, {	-- Humongris
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
-					i(139895, {	-- Skinning Technique: Legion Butchery
-						["collectible"] = false,
-						["g"] = {
-							recipe(194173),	-- Legion Butchery
-						},
-					}),
+					i(139895),	-- Skinning Technique: Legion Butchery
 					i(141540),	-- Coerced Wizard's Cloak
 					i(141445),	-- Mantle of the Aspiring Spellgiant
 					i(141416),	-- Padawsen's Squished Pauldrons
@@ -218,17 +139,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
 				["coord"] = { 43.0, 67.6, AZSUNA },
-				["maps"] = {	-- all Azsuna maps
-					631,	-- Nar'thalas Academy
-					632,	-- Oceanus Cove
-					633,	-- Temple of a Thousand Lights
-					867,	-- Azsuna Invasion Map
-				},
 				["creatureID"] = 108829,	-- Levantus
 				["g"] = {
-					crit(6, {	-- Levantus
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
 					}),
@@ -251,9 +163,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
 				["creatureID"] = 117303,	-- Malificus
 				["g"] = {
-					crit(2, {	-- Malificus
-						["achievementID"] = 11786,	-- Terrors of the Shore
-					}),
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
 					i(147733),	-- Doomsayer's Ritualistic Vestment
@@ -271,25 +180,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
 				["coord"] = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
-				["maps"] = {	-- all Suramar maps
-					SURAMAR,
-					681,	-- The Arcway Vaults #1
-					682,	-- Felsoul Hold
-					683,	-- The Arcway Vaults #2
-					684,	-- Shattered Locus (Floor #1)
-					686,	-- Elor'shan
-					687,	-- Kel'balor
-					688,	-- Ley Station Anora
-					689,	-- Ley Station Moonfall
-					690,	-- Ley Station Aethenar
-					691,	-- Nyell's Workshop
-					798,	-- The Arcway
-				},
 				["creatureID"] = 110321,	-- Na'zak the Fiend
 				["g"] = {
-					crit(1, {	-- Na'zak the Fiend
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(142121),	-- Recipe: Potion of Prolonged Power [Rank 3]
 					i(141425),	-- Avalanche Resistant Legplates
 					i(141417),	-- Desiccated Leather Pants
@@ -305,22 +197,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
 				["coord"] = { 46.6, 30.0, STORMHEIM },
-				["maps"] = {	-- all Stormheim maps
-					635,	-- Shield's Rest
-					636,	-- Stormscale Cavern
-					637,	-- Thorignir Refuge
-					638,	-- Thorignir Refuge
-					639,	-- Aggramar's Vault
-					640,	-- Vault of Eyir
-					671,	-- The Cove of Nashal (used in introductory scenario)
-					865,	-- Stormheim (Legion Invasion)
-					866,	-- Stormheim (Legion Invasion)
-				},
 				["creatureID"] = 107544,	-- Nithogg
 				["g"] = {
-					crit(2, {	-- Nithogg
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
 						["timeline"] = { "added 7.1.0" },
 					}),
@@ -339,18 +217,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isRaid"] = true,
 				["coord"] = { 55.6, 43.2, VALSHARAH },
-				["maps"] = {	-- all Val'sharah maps
-					642,	-- Darkpens
-					643,	-- Sleeper's Barrow
-					644,	-- Sleeper's Barrow #2
-					758,	-- Gloaming Reef
-					868,	-- Val'sharah (Legion Invasion)
-				},
 				["creatureID"] = 108678,	-- Shar'thos
 				["g"] = {
-					crit(10, {	-- Shar'thos
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
 					i(141542),	-- Despoiled Dreamthread Cloak
@@ -368,9 +236,6 @@ _.Instances = { tier(LEGION_TIER, {
 				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
 				["creatureID"] = 117470,	-- Si'vash
 				["g"] = {
-					crit(3, {	-- Si'vash
-						["achievementID"] = 11786,	-- Terrors of the Shore
-					}),
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
 					i(147737),	-- Shorebreaker Robes
@@ -387,26 +252,12 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isRaid"] = true,
 				["coord"] = { 78.2, 8.60, STORMHEIM },
-				["maps"] = {	-- all Stormheim maps
-					635,	-- Shield's Rest
-					636,	-- Stormscale Cavern
-					637,	-- Thorignir Refuge
-					638,	-- Thorignir Refuge
-					639,	-- Aggramar's Vault
-					640,	-- Vault of Eyir
-					671,	-- The Cove of Nashal (used in introductory scenario)
-					865,	-- Stormheim (Legion Invasion)
-					866,	-- Stormheim (Legion Invasion)
-				},
 				["crs"] = {
 					106981,	-- Captain Hring
 					106982,	-- Reaver Jdorn
 					106984,	-- Soultrapper Mevra
 				},
 				["g"] = {
-					crit(8, {	-- The Soultakers
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 						["sourceQuest"] = 38990,	-- The Call of Icecrown
 					}),
@@ -424,17 +275,8 @@ _.Instances = { tier(LEGION_TIER, {
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,
 				["coord"] = { 52.6, 80.8, AZSUNA },
-				["maps"] = {	-- all Azsuna maps
-					631,	-- Nar'thalas Academy
-					632,	-- Oceanus Cove
-					633,	-- Temple of a Thousand Lights
-					867,	-- Azsuna Invasion Map
-				},
 				["creatureID"] = 112350,	-- Withered J'im
 				["g"] = {
-					crit(11, {	-- Withered J'im
-						["achievementID"] = 11160,	-- Unleashed Monstrosities
-					}),
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
 					i(141459),	-- Manacrystal-Adorned Helmet
@@ -443,6 +285,55 @@ _.Instances = { tier(LEGION_TIER, {
 					i(141492),	-- Dingy Suramar Mercantile Signet
 					i(141482),	-- Unstable Arcanocrystal
 				},
+			}),
+			ach(11786, {	-- Terrors of the Shore
+				crit(1, { -- Brutallus
+					["_npcs"] = { 117239 },
+				}),
+				crit(2, { -- Malificus
+					["_npcs"] = { 117303 },
+				}),
+				crit(3, { -- Si'vash
+					["_npcs"] = { 117470 },
+				}),
+				crit(4, { -- Apocron
+					["_npcs"] = { 121124 },
+				}),
+			}),
+			ach(11160, {	-- Unleashed Monstrosities
+				crit(1, { -- Na'zak the Fiend
+					["_npcs"] = { 110321 },
+				}),
+				crit(2, { -- Nithogg
+					["_npcs"] = { 107544 },
+				}),
+				crit(3, { -- Humongris
+					["_npcs"] = { 108879 },
+				}),
+				crit(4, { -- Flotsam
+					["_npcs"] = { 99929 },
+				}),
+				crit(5, { -- Ana-Mouz
+					["_npcs"] = { 109943 },
+				}),
+				crit(6, { -- Levantus
+					["_npcs"] = { 108829 },
+				}),
+				crit(7, { -- Drugon the Frostblood
+					["_npcs"] = { 110378 },
+				}),
+				crit(8, { -- The Soultakers
+					["_quests"] = { 42269 },
+				}),
+				crit(9, { -- Calamir
+					["_npcs"] = { 109331 },
+				}),
+				crit(10, { -- Shar'thos
+					["_npcs"] = { 108678 },
+				}),
+				crit(11, { -- Withered J'im
+					["_npcs"] = { 112350 },
+				}),
 			}),
 		},
 	}),

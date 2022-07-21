@@ -75,22 +75,22 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 					["description"] = "Reach Exalted reputation with the Nightfallen.",
 				}),
 			}),
-			ach(11136, {		-- An Epic Campaign
+			ach(11136, {	-- An Epic Campaign
 				ach(11135),	-- A Heroic Campaign
 				ach(10994),	-- A Glorious Campaign
 			}),
-			ach(11171),			-- Arsenal of Power
-			ach(11222, {		-- Champions of Power
-				ach(11221),		-- Champions Rise
-				ach(11220),		-- Roster of Champions
+			ach(11171),	-- Arsenal of Power
+			ach(11222, {	-- Champions of Power
+				ach(11221),	-- Champions Rise
+				ach(11220),	-- Roster of Champions
 			}),
-			ach(10461, {		-- Fighting with Style: Classic
-				crit(1),		-- Recover one of the Pillars of Creation
-				crit(2),		-- Complete the quest, "Light's Charge"
-				crit(3),		-- Complete the first order campaign effort
+			ach(10461, {	-- Fighting with Style: Classic
+				crit(1),	-- Recover one of the Pillars of Creation
+				crit(2),	-- Complete the quest, "Light's Charge"
+				crit(3),	-- Complete the first order campaign effort
 			}),
-			ach(10750),			-- Fighting with Style: Hidden
-			ach(10747, {		-- Fighting with Style: Upgraded
+			ach(10750),	-- Fighting with Style: Hidden
+			ach(10747, {	-- Fighting with Style: Upgraded
 				ach(10746, {	-- Forged for Battle
 					["sourceQuests"] = {
 						43407,	-- A Hero's Weapon (Death Knight)
@@ -107,46 +107,52 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {
 						43425,	-- A Hero's Weapon (Warrior)
 					},
 				}),
-				ach(11144),		-- Power Realized
-				ach(10853),		-- Part of History
+				ach(11144),	-- Power Realized
+				ach(10853),	-- Part of History
 			}),
-			ach(10748, {		-- Fighting with Style: Valorous
-				ach(10459),		-- Improving on History
-				ach(11160),		-- Unleashed Monstrosities
-				ach(11162),		-- Keystone Master
-				ach(11163),		-- Glory of the Legion Hero
+			ach(10748, {	-- Fighting with Style: Valorous
+	-- Meta Achievement
+				["sym"] = {
+					{"select","achievementID",
+						10459,	-- Improving on History
+						11160,	-- Unleashed Monstrosities
+						11162,	-- Keystone Master
+						11163,	-- Glory of the Legion Hero
+					},
+				},
 			}),
 			ach(10749, {	-- Fighting with Style: War-torn (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),		-- Honor Level 10
-					crit(2),		-- Honor Level 30
-					crit(3),		-- Honor Level 50
-					crit(4),		-- Honor Level 80
+					crit(1),	-- Honor Level 10
+					crit(2),	-- Honor Level 30
+					crit(3),	-- Honor Level 50
+					crit(4),	-- Honor Level 80
 				},
 			}),
 			ach(11173, {	-- Fighting with Style: War-torn (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),		-- Honor Level 10
-					crit(2),		-- Honor Level 30
-					crit(3),		-- Honor Level 50
-					crit(4),		-- Honor Level 80
+					crit(1),	-- Honor Level 10
+					crit(2),	-- Honor Level 30
+					crit(3),	-- Honor Level 50
+					crit(4),	-- Honor Level 80
 				},
 			}),
-			ach(10460),			-- Hidden Potential
-			ach(11213, {		-- Lead a Legion (100)
-				ach(11212),		-- Raise an Army (20)
-				ach(10706),		-- Training the Troops (5)
+			ach(10460),	-- Hidden Potential
+			ach(10459),	-- Improving on History
+			ach(11213, {	-- Lead a Legion (100)
+				ach(11212),	-- Raise an Army (20)
+				ach(10706),	-- Training the Troops (5)
 			}),
-			ach(11223),			-- Legendary Research
+			ach(11223),	-- Legendary Research
 			un(NEVER_IMPLEMENTED, ach(11339)),	-- Legion's Bane — Appears this was not introduced but still showing on WoWhead, flagging as NYI and leaving here to be safe
-			ach(11217, {		-- Many Many Missions, Handle It! (500)
-				ach(11216),		-- So Many Missions (100)
-				ach(11215),		-- Quite a Few Missions (50)
-				ach(11214),		-- Many Missions (10)
+			ach(11217, {	-- Many Many Missions, Handle It! (500)
+				ach(11216),	-- So Many Missions (100)
+				ach(11215),	-- Quite a Few Missions (50)
+				ach(11214),	-- Many Missions (10)
 			}),
-			ach(11219),			-- Need Backup
+			ach(11219),	-- Need Backup
 		},
 	}),
 }));

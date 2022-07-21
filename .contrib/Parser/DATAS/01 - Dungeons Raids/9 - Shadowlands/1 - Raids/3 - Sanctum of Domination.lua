@@ -489,6 +489,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 			}),
 			d(14, {	-- Normal
+				ach(15126, {	-- Sanctum of Domination
+					-- TODO: _encounters support
+					-- crit(1),	-- The Tarragrue
+					-- crit(2),	-- The Eye of the Jailer
+					-- crit(3),	-- The Nine
+					-- crit(4),	-- Remnant of Ner'zhul
+					-- crit(5),	-- Soulrender Dormazain
+					-- crit(6),	-- Painsmith Raznal
+					-- crit(7),	-- Guardian of the First Ones
+					-- crit(8),	-- Fatescribe Roh-Kalo
+					-- crit(9),	-- Kel'Thuzad
+					-- crit(10),	-- Sylvanas Windrunner
+				}),
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
@@ -750,6 +763,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 			}),
 			d(15, {	-- Heroic
+				ach(15127, {	-- Heroic: Sanctum of Domination
+					-- TODO: _encounters support
+					-- crit(1),	-- The Tarragrue
+					-- crit(2),	-- The Eye of the Jailer
+					-- crit(3),	-- The Nine
+					-- crit(4),	-- Soulrender Dormazain
+					-- crit(5),	-- Remnant of Ner'zhul
+					-- crit(6),	-- Painsmith Raznal
+					-- crit(7),	-- Guardian of the First Ones
+					-- crit(8),	-- Fatescribe Roh-Kalo
+					-- crit(9),	-- Kel'Thuzad
+					-- crit(10),	-- Sylvanas Windrunner
+				}),
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
@@ -1016,6 +1042,23 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				}),
 			}),
 			d(16, {	-- Mythic
+				ach(15128, {	-- Mythic: Sanctum of Domination
+					-- Meta Achievement
+					["sym"] = {
+						{"select","achievementID",
+							15112,	-- Mythic: The Tarragrue
+							15113,	-- Mythic: The Eye of the Jailer
+							15114,	-- Mythic: The Nine
+							15116,	-- Mythic: Soulrender Dormazain
+							15115,	-- Mythic: Remnant of Ner'zhul
+							15117,	-- Mythic: Painsmith Raznal
+							15118,	-- Mythic: Guardian of the First Ones
+							15119,	-- Mythic: Fatescribe Roh-Kalo
+							15120,	-- Mythic: Kel'Thuzad
+							15121,	-- Mythic: Sylvanas Windrunner
+						},
+					},
+				}),
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon

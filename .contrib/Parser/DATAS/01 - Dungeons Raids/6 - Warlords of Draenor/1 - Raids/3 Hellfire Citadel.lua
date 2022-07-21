@@ -1420,6 +1420,7 @@ root("Instances", tier(WOD_TIER, {
 					})),
 				}),
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
+					ach(10027),	-- Mythic: Hellfire Assault
 					i(124365),	-- Blackfuse Company Utility Knife
 					i(124370),	-- Felfire Munitions Launcher
 					i(124356),	-- Smoldercore Bulwark
@@ -1441,6 +1442,7 @@ root("Instances", tier(WOD_TIER, {
 					i(124231),	-- Flickering Felspark
 				})),
 				cr(90284, e(1425, {	-- Iron Reaver
+					ach(10032),	-- Mythic: Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 					}),
@@ -1462,6 +1464,33 @@ root("Instances", tier(WOD_TIER, {
 					i(124227),	-- Iron Reaver Piston
 				})),
 				cr(90435, e(1392, {	-- Kormrok
+					ach(10033),	-- Mythic: Kormrok
+					i(124162),	-- Deathrattle Mask (Warlock)
+					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
+					i(124161),	-- Pious Cowl (Priest)
+					i(139627),	-- Ferroleather Hood (Demon Hunter)
+					i(124297),	-- Crown of the Living Mountain (Shaman)
+					i(124334),	-- Faceguard of Iron Wrath (Warrior)
+					i(124296),	-- Hood of the Savage Hunt (Hunter)
+					i(124262),	-- Mask of the Hurricane's Eye (Monk)
+					i(124160),	-- Cowl of the Arcanic Conclave (Mage)
+					i(124332),	-- Demongaze Helm (Death Knight)
+					i(124263),	-- Felblade Hood (Rogue)
+					i(124261),	-- Oathclaw Helm (Druid)
+					i(124377),	-- Rune Infused Spear
+					i(124358),	-- Runeaxe of the Breaker
+					i(124363),	-- Runic Magnaron Tooth
+					i(124341),	-- Fel-Inscribed Shoulderplates
+					i(124304),	-- Rugged Stoneshaped Pauldrons
+					i(124211),	-- Glowing Firestone
+					i(124217),	-- Shadowgorged Iron Choker
+					i(124139),	-- Polymorphic Cloak of Absorption
+					i(124243),	-- Tunic of Reformative Runes
+					i(124151),	-- Craggy Gloves of Grasping
+					i(124180),	-- Sludge-Soaked Waistband
+					i(124187),	-- Pit-Extracted Stone Signet
+					i(124239),	-- Imbued Stone Sigil
+					i(124235),	-- Rumbling Pebble
 					un(REMOVED_FROM_GAME, i(127956, {	-- Helm of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1392 },	-- This encounter
@@ -1489,32 +1518,6 @@ root("Instances", tier(WOD_TIER, {
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					i(124162),	-- Deathrattle Mask (Warlock)
-					i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
-					i(124161),	-- Pious Cowl (Priest)
-					i(139627),	-- Ferroleather Hood (Demon Hunter)
-					i(124297),	-- Crown of the Living Mountain (Shaman)
-					i(124334),	-- Faceguard of Iron Wrath (Warrior)
-					i(124296),	-- Hood of the Savage Hunt (Hunter)
-					i(124262),	-- Mask of the Hurricane's Eye (Monk)
-					i(124160),	-- Cowl of the Arcanic Conclave (Mage)
-					i(124332),	-- Demongaze Helm (Death Knight)
-					i(124263),	-- Felblade Hood (Rogue)
-					i(124261),	-- Oathclaw Helm (Druid)
-					i(124377),	-- Rune Infused Spear
-					i(124358),	-- Runeaxe of the Breaker
-					i(124363),	-- Runic Magnaron Tooth
-					i(124341),	-- Fel-Inscribed Shoulderplates
-					i(124304),	-- Rugged Stoneshaped Pauldrons
-					i(124211),	-- Glowing Firestone
-					i(124217),	-- Shadowgorged Iron Choker
-					i(124139),	-- Polymorphic Cloak of Absorption
-					i(124243),	-- Tunic of Reformative Runes
-					i(124151),	-- Craggy Gloves of Grasping
-					i(124180),	-- Sludge-Soaked Waistband
-					i(124187),	-- Pit-Extracted Stone Signet
-					i(124239),	-- Imbued Stone Sigil
-					i(124235),	-- Rumbling Pebble
 				})),
 				e(1432, {	-- Hellfire High Council
 					["crs"] = {
@@ -1523,6 +1526,7 @@ root("Instances", tier(WOD_TIER, {
 						92146,	-- Gurtogg Bloodboil
 					},
 					["g"] = {
+						ach(10034),	-- Mythic: Hellfire High Council
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword
 						i(124383),	-- Mindbender's Flameblade
@@ -1543,6 +1547,7 @@ root("Instances", tier(WOD_TIER, {
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
+					ach(10035),	-- Mythic: Kilrogg Deadeye
 					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
@@ -1563,6 +1568,32 @@ root("Instances", tier(WOD_TIER, {
 					i(124240),	-- Warlord's Unseeing Eye
 				})),
 				cr(90199, e(1372, {	-- Gorefiend
+					ach(10253),	-- Mythic: Gorefiend
+					i(124167),	-- Deathrattle Leggings (Warlock)
+					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
+					i(124166),	-- Pious Leggings (Priest)
+					i(139628),	-- Ferroleather Leggings (Demon Hunter)
+					i(124302),	-- Leggings of the Living Mountain (Shaman)
+					i(124301),	-- Leggings of the Savage Hunt (Hunter)
+					i(124340),	-- Legplates of Iron Wrath (Warrior)
+					i(124268),	-- Legwraps of the Hurricane's Eye (Monk)
+					i(124338),	-- Demongaze Legplates (Death Knight)
+					i(124269),	-- Felblade Leggings (Rogue)
+					i(124267),	-- Oathclaw Leggings (Druid)
+					i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
+					i(124380),	-- Spur of the Great Devourer
+					i(124359),	-- Voracious Souleater
+					i(124205),	-- Gibbering Madness
+					i(124157),	-- Cowl of a Thousand Hungers
+					i(124342),	-- Soulgorged Pauldrons
+					i(124391),	-- Choker of Forbidden Indulgence
+					i(124140),	-- Cloak of Insatiable Greed
+					i(124146),	-- Drape of Gluttony
+					i(124244),	-- Chestguard of Gnawing Desire
+					i(124290),	-- Mitts of Eternal Famishment
+					i(124348),	-- Ravenous Girdle
+					i(124188),	-- Serrated Demontooth Ring
+					i(124236),	-- Unending Hunger
 					un(REMOVED_FROM_GAME, i(127955, {	-- Leggings of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1372 },	-- This encounter
@@ -1590,33 +1621,9 @@ root("Instances", tier(WOD_TIER, {
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					i(124167),	-- Deathrattle Leggings (Warlock)
-					i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
-					i(124166),	-- Pious Leggings (Priest)
-					i(139628),	-- Ferroleather Leggings (Demon Hunter)
-					i(124302),	-- Leggings of the Living Mountain (Shaman)
-					i(124301),	-- Leggings of the Savage Hunt (Hunter)
-					i(124340),	-- Legplates of Iron Wrath (Warrior)
-					i(124268),	-- Legwraps of the Hurricane's Eye (Monk)
-					i(124338),	-- Demongaze Legplates (Death Knight)
-					i(124269),	-- Felblade Leggings (Rogue)
-					i(124267),	-- Oathclaw Leggings (Druid)
-					i(124165),	-- Pantaloons of the Arcanic Conclave (Mage)
-					i(124380),	-- Spur of the Great Devourer
-					i(124359),	-- Voracious Souleater
-					i(124205),	-- Gibbering Madness
-					i(124157),	-- Cowl of a Thousand Hungers
-					i(124342),	-- Soulgorged Pauldrons
-					i(124391),	-- Choker of Forbidden Indulgence
-					i(124140),	-- Cloak of Insatiable Greed
-					i(124146),	-- Drape of Gluttony
-					i(124244),	-- Chestguard of Gnawing Desire
-					i(124290),	-- Mitts of Eternal Famishment
-					i(124348),	-- Ravenous Girdle
-					i(124188),	-- Serrated Demontooth Ring
-					i(124236),	-- Unending Hunger
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
+					ach(10037),	-- Mythic: Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
 						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
@@ -1643,6 +1650,33 @@ root("Instances", tier(WOD_TIER, {
 					i(124229),	-- Unblinking Gaze of Sethe
 				})),
 				cr(92330, e(1427, {	-- Socrethar the Eternal
+					ach(10040),	-- Mythic: Socrethar the Eternal
+					i(124156),	-- Deathrattle Gloves (Warlock)
+					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
+					i(124155),	-- Pious Handwraps (Priest)
+					i(139626),	-- Ferroleather Gloves (Demon Hunter)
+					i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
+					i(124329),	-- Gauntlets of Iron Wrath (Warrior)
+					i(124293),	-- Gauntlets of the Living Mountain (Shaman)
+					i(124292),	-- Gloves of the Savage Hunt (Hunter)
+					i(124327),	-- Demongaze Gauntlets (Death Knight)
+					i(124257),	-- Felblade Gloves (Rogue)
+					i(124154),	-- Gloves of the Arcanic Conclave (Mage)
+					i(124255),	-- Oathclaw Gauntlets (Druid)
+					i(124386),	-- Felstricken Sha'tari Crystalsword
+					i(124384),	-- Saber of Twisted Virtue
+					i(124362),	-- Felcrystal Impaler
+					i(124357),	-- Soulwarped Tower Shield
+					i(124331),	-- Casque of Foul Concentration
+					i(124221),	-- Contained Fel Orb Locket
+					i(124141),	-- Drape of Beckoned Souls
+					i(124143),	-- Soulbinder's Greatcloak
+					i(124245),	-- Tunic of the Soulbinder
+					i(124313),	-- Chain Wristguards of the Stricken
+					i(124185),	-- Pristine Man'ari Cuffs
+					i(124191),	-- Seal of the Traitorous Councilor
+					i(124233),	-- Demonic Phylactery
+					i(124225),	-- Soul Capacitor
 					un(REMOVED_FROM_GAME, i(127954, {	-- Gauntlets of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1427 },	-- This encounter
@@ -1670,34 +1704,9 @@ root("Instances", tier(WOD_TIER, {
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					i(124156),	-- Deathrattle Gloves (Warlock)
-					i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
-					i(124155),	-- Pious Handwraps (Priest)
-					i(139626),	-- Ferroleather Gloves (Demon Hunter)
-					i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
-					i(124329),	-- Gauntlets of Iron Wrath (Warrior)
-					i(124293),	-- Gauntlets of the Living Mountain (Shaman)
-					i(124292),	-- Gloves of the Savage Hunt (Hunter)
-					i(124327),	-- Demongaze Gauntlets (Death Knight)
-					i(124257),	-- Felblade Gloves (Rogue)
-					i(124154),	-- Gloves of the Arcanic Conclave (Mage)
-					i(124255),	-- Oathclaw Gauntlets (Druid)
-					i(124386),	-- Felstricken Sha'tari Crystalsword
-					i(124384),	-- Saber of Twisted Virtue
-					i(124362),	-- Felcrystal Impaler
-					i(124357),	-- Soulwarped Tower Shield
-					i(124331),	-- Casque of Foul Concentration
-					i(124221),	-- Contained Fel Orb Locket
-					i(124141),	-- Drape of Beckoned Souls
-					i(124143),	-- Soulbinder's Greatcloak
-					i(124245),	-- Tunic of the Soulbinder
-					i(124313),	-- Chain Wristguards of the Stricken
-					i(124185),	-- Pristine Man'ari Cuffs
-					i(124191),	-- Seal of the Traitorous Councilor
-					i(124233),	-- Demonic Phylactery
-					i(124225),	-- Soul Capacitor
 				})),
 				cr(90269, e(1394, {	-- Tyrant Velhari
+					ach(10041),	-- Mythic: Tyrant Velhari
 					i(124375),	-- Maul of Tyranny
 					i(124376),	-- Warhammer of Arrogance
 					i(124355),	-- Fallen Defender of Argus
@@ -1715,6 +1724,7 @@ root("Instances", tier(WOD_TIER, {
 					i(124242),	-- Tyrant's Decree
 				})),
 				cr(89890, e(1391, {	-- Fel Lord Zakuun
+					ach(10038),	-- Mythic: Fel Lord Zakuun
 					i(124360),	-- Hellrender
 					i(124368),	-- Demonblade Eviscerator
 					i(124369),	-- Mindscythe of the Legion
@@ -1732,6 +1742,31 @@ root("Instances", tier(WOD_TIER, {
 					i(124237),	-- Discordant Chorus
 				})),
 				cr(93068, e(1447, {	-- Xhul'horac
+					ach(10039),	-- Mythic: Xhul'horac
+					i(124179),	-- Deathrattle Shoulderpads (Warlock)
+					i(124178),	-- Pious Mantle (Priest)
+					i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
+					i(139629),	-- Ferroleather Spaulders (Demon Hunter)
+					i(124273),	-- Mantle of the Hurricane's Eye (Monk)
+					i(124346),	-- Pauldrons of Iron Wrath (Warrior)
+					i(124308),	-- Pauldrons of the Living Mountain (Shaman)
+					i(124307),	-- Pauldrons of the Savage Hunt (Hunter)
+					i(124344),	-- Demongaze Pauldrons (Death Knight)
+					i(124274),	-- Felblade Spaulders (Rogue)
+					i(124177),	-- Mantle of the Arcanic Conclave (Mage)
+					i(124272),	-- Oathclaw Mantle (Druid)
+					i(124381),	-- Voidcore Greatstaff
+					i(124374),	-- Fiendsbreath Warmace
+					i(124371),	-- Hammer of Wicked Infusion
+					i(124158),	-- Countenance of the Revenant
+					i(124260),	-- Hood of Unknowable Secrets
+					i(124295),	-- Sinister Felborne Helmet
+					i(124212),	-- Vial of Immiscible Liquid
+					i(124147),	-- Void Lord's Wizened Cloak
+					i(124353),	-- Breach-Scarred Wristplates
+					i(124199),	-- Loop of Beckoned Shadows
+					i(124189),	-- Portal Key Signet
+					i(124234),	-- Unstable Felshadow Emulsion
 					un(REMOVED_FROM_GAME, i(127957, {	-- Shoulders of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1447 },	-- This encounter
@@ -1759,32 +1794,34 @@ root("Instances", tier(WOD_TIER, {
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					i(124179),	-- Deathrattle Shoulderpads (Warlock)
-					i(124178),	-- Pious Mantle (Priest)
-					i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
-					i(139629),	-- Ferroleather Spaulders (Demon Hunter)
-					i(124273),	-- Mantle of the Hurricane's Eye (Monk)
-					i(124346),	-- Pauldrons of Iron Wrath (Warrior)
-					i(124308),	-- Pauldrons of the Living Mountain (Shaman)
-					i(124307),	-- Pauldrons of the Savage Hunt (Hunter)
-					i(124344),	-- Demongaze Pauldrons (Death Knight)
-					i(124274),	-- Felblade Spaulders (Rogue)
-					i(124177),	-- Mantle of the Arcanic Conclave (Mage)
-					i(124272),	-- Oathclaw Mantle (Druid)
-					i(124381),	-- Voidcore Greatstaff
-					i(124374),	-- Fiendsbreath Warmace
-					i(124371),	-- Hammer of Wicked Infusion
-					i(124158),	-- Countenance of the Revenant
-					i(124260),	-- Hood of Unknowable Secrets
-					i(124295),	-- Sinister Felborne Helmet
-					i(124212),	-- Vial of Immiscible Liquid
-					i(124147),	-- Void Lord's Wizened Cloak
-					i(124353),	-- Breach-Scarred Wristplates
-					i(124199),	-- Loop of Beckoned Shadows
-					i(124189),	-- Portal Key Signet
-					i(124234),	-- Unstable Felshadow Emulsion
 				})),
 				cr(91349, e(1395, {	-- Mannoroth
+					ach(10042),	-- Mythic: Mannoroth
+					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
+					i(124173),	-- Deathrattle Robe (Warlock)
+					i(124172),	-- Pious Raiment (Priest)
+					i(139625),	-- Ferroleather Chestguard (Demon Hunter)
+					i(124319),	-- Breastplate of Iron Wrath (Warrior)
+					i(124284),	-- Hauberk of the Savage Hunt (Hunter)
+					i(124247),	-- Robe of the Hurricane's Eye (Monk)
+					i(124303),	-- Robe of the Living Mountain (Shaman)
+					i(124317),	-- Demongaze Chestplate (Death Knight)
+					i(124248),	-- Felblade Chestguard (Rogue)
+					i(124246),	-- Oathclaw Vestment (Druid)
+					i(124171),	-- Robe of the Arcanic Conclave (Mage)
+					i(124378),	-- Xu'tenash, Glaive of Ruin
+					i(124367),	-- Fang of the Pit
+					i(124361),	-- Cursed Demonbone Longbow
+					i(124206),	-- Thumping Demonheart Fetish
+					i(124215),	-- Locket of Unholy Reconstitution
+					i(124135),	-- Cloak of Tangible Dread
+					i(124314),	-- Bracers of Fel Empowerment
+					i(124349),	-- Annihilan's Waistplate
+					i(124266),	-- Empowered Demonskin Kilt
+					i(124164),	-- Leggings of the Iron Summoner
+					i(124204),	-- Mannoroth's Calcified Eye
+					i(124238),	-- Empty Drinking Horn
+					i(124230),	-- Prophecy of Fear
 					un(REMOVED_FROM_GAME, i(127953, {	-- Chest of Hellfire's Conqueror
 						["sym"] = {
 							{ "select", "encounterID", 1395 },	-- This encounter
@@ -1812,35 +1849,13 @@ root("Instances", tier(WOD_TIER, {
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
-					i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
-					i(124173),	-- Deathrattle Robe (Warlock)
-					i(124172),	-- Pious Raiment (Priest)
-					i(139625),	-- Ferroleather Chestguard (Demon Hunter)
-					i(124319),	-- Breastplate of Iron Wrath (Warrior)
-					i(124284),	-- Hauberk of the Savage Hunt (Hunter)
-					i(124247),	-- Robe of the Hurricane's Eye (Monk)
-					i(124303),	-- Robe of the Living Mountain (Shaman)
-					i(124317),	-- Demongaze Chestplate (Death Knight)
-					i(124248),	-- Felblade Chestguard (Rogue)
-					i(124246),	-- Oathclaw Vestment (Druid)
-					i(124171),	-- Robe of the Arcanic Conclave (Mage)
-					i(124378),	-- Xu'tenash, Glaive of Ruin
-					i(124367),	-- Fang of the Pit
-					i(124361),	-- Cursed Demonbone Longbow
-					i(124206),	-- Thumping Demonheart Fetish
-					i(124215),	-- Locket of Unholy Reconstitution
-					i(124135),	-- Cloak of Tangible Dread
-					i(124314),	-- Bracers of Fel Empowerment
-					i(124349),	-- Annihilan's Waistplate
-					i(124266),	-- Empowered Demonskin Kilt
-					i(124164),	-- Leggings of the Iron Summoner
-					i(124204),	-- Mannoroth's Calcified Eye
-					i(124238),	-- Empty Drinking Horn
-					i(124230),	-- Prophecy of Fear
 				})),
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
 					un(REMOVED_FROM_GAME, ach(10045)),	-- Cutting Edge: The Black Gate
+					ach(10043, {	-- Mythic: Archimonde
+						title(319),		-- , Defiler's End
+					}),
 					ig(123890),	-- Felsteel Annihilator (MOUNT!)
 					i(124389),	-- Calamity's Edge
 					i(124382),	-- Edict of Argus

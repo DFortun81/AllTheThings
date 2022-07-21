@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(WOD_TIER, {
+root(ROOTS.Instances, tier(WOD_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 100,
@@ -12,14 +12,6 @@ _.Instances = { tier(WOD_TIER, {
 				["questID"] = 37460,
 				["isRaid"] = true,
 				["coord"] = { 44.1, 39.9, GORGROND },
-				["maps"] = {	-- all Gorgrond maps
-					544,	-- Moira's Reach
-					545,	-- Moira's Reach
-					546,	-- Fissure of Fury
-					547,	-- Fissure of Fury
-					548,    -- Cragplume Cauldron
-					549,	-- Cragplume Cauldron
-				},
 				["crs"] = {
 					81252,	-- Drov the Ruiner
 					87437,	-- Drov the Ruiner
@@ -47,7 +39,6 @@ _.Instances = { tier(WOD_TIER, {
 				},
 			}),
 			e(1262, {	-- Rukhmar
-				["achievementID"] = 9425,
 				["isWeekly"] = true,
 				["questID"] = 37464,
 				["isRaid"] = true,
@@ -57,6 +48,7 @@ _.Instances = { tier(WOD_TIER, {
 					83746,	-- Rukhmar (Crieve)
 				},
 				["g"] = {
+					ach(9425),	-- So Grossly Incandescent
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
 						["collectible"] = false,
 						["g"] = {
@@ -115,14 +107,6 @@ _.Instances = { tier(WOD_TIER, {
 				["questID"] = 37462,
 				["isRaid"] = true,
 				["coord"] = { 47.0, 86.7, GORGROND },
-				["maps"] = {	-- all Gorgrond maps
-					544,	-- Moira's Reach
-					545,	-- Moira's Reach
-					546,	-- Fissure of Fury
-					547,	-- Fissure of Fury
-					548,    -- Cragplume Cauldron
-					549,	-- Cragplume Cauldron
-				},
 				["creatureID"] = 81535,	-- Tarlna the Ageless
 				["g"] = {
 					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
@@ -145,14 +129,23 @@ _.Instances = { tier(WOD_TIER, {
 					i(115432),	-- Waistplate of Bladed Force
 				},
 			}),
+			ach(9423, {	-- Goliaths of Gorgrond
+				crit(1, { -- Tarlna the Ageless
+					["_quests"] = { 37462 },
+				}),
+				crit(2, { -- Drov the Ruiner
+					["_quests"] = { 37460 },
+				}),
+			}),
 		},
 	}),
-})};
-root("HiddenQuestTriggers", {
-	tier(WOD_TIER, {
+}));
+
+root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
+	n(WORLD_BOSSES, {
 		q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
 		q(37675),	-- Short-Supply Reward - Tarlna the Ageless bonus roll & Drov the Ruiner bonus roll
 		q(37673),	-- Short-Supply Reward - Drov the Ruiner bonus roll
 		q(37672),	-- Short-Supply Reward - Rukhmar bonus roll
 	}),
-});
+}));

@@ -791,6 +791,7 @@ _.Instances = { tier(LEGION_TIER, {
 					ach(10555, {	-- Buggy Fight
 						["crs"] = { 105097 },	-- Glow Bug
 					}),
+					ach(10821),	-- Mythic: Nythendra
 					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
@@ -812,6 +813,7 @@ _.Instances = { tier(LEGION_TIER, {
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
+					ach(10823),	-- Mythic: Il'gynoth
 					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)

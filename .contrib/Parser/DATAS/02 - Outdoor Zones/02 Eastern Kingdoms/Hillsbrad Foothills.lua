@@ -895,7 +895,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 513,	-- Elixir of Agony (2/5)
 					["coord"] = { 48.89, 69.21, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["cost"] = { { "i", 3388, 1 } },	-- Strong Troll's Blood Potion
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
