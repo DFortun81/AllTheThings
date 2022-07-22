@@ -15442,9 +15442,18 @@ local function Refresh(self)
 		row:Hide();
 	end
 
-	totalRowCount = totalRowCount + 1;
-	self.ScrollBar:SetMinMaxValues(1, math.max(1, totalRowCount - rowCount));
-	self.ScrollBar:SetStepsPerPage(rowCount - 1);
+	-- Every possible row is visible
+	if totalRowCount - rowCount < 1 then
+		-- app.PrintDebug("Hide scrollbar")
+		self.ScrollBar:SetMinMaxValues(1, 1);
+		self.ScrollBar:SetStepsPerPage(0);
+		self.ScrollBar:Hide();
+	else
+		-- self.ScrollBar:Show();
+		totalRowCount = totalRowCount + 1;
+		self.ScrollBar:SetMinMaxValues(1, totalRowCount - rowCount);
+		self.ScrollBar:SetStepsPerPage(rowCount - 1);
+	end
 
 	-- If this window has an UpdateDone method which should process after the Refresh is complete
 	if self.UpdateDone then
@@ -16922,7 +16931,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-		scrollbar.back:SetColorTexture(0,0,0,0.4)
+		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
 		scrollbar.back:SetAllPoints(scrollbar);
 		scrollbar:SetMinMaxValues(1, 1);
 		scrollbar:SetValueStep(1);
