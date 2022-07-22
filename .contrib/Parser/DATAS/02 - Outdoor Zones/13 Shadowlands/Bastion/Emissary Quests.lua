@@ -8,6 +8,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(61097, {	-- Supplies from The Ascended
 				["provider"] = { "n", 160470 },	-- Adjutant Nikos
 				["coord"] = { 52.2, 47.0, BASTION },
+				["minReputation"] = { 2407, 8 },	-- The Ascended, Exalted
 				["repeatable"] = true,
 				["lvl"] = { 60 },
 				["g"] = {
@@ -20,6 +21,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						}),
 					}),
 				},
+			}),
+		}),
+		n(FACTIONS, {
+			faction(2407, {	-- The Ascended
+				ach(14335),	-- The Ascended
 			}),
 		}),
 	}),

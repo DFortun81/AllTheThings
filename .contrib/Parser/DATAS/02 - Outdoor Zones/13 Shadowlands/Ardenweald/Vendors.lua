@@ -10,6 +10,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					{ 48.4, 50.4, ARDENWEALD },
 					{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest (covenant)
 				},
+				["minReputation"] = { 2465, 5 },	-- The Wild Hunt, Friendly
 				["g"] = {
 					i(180729, {	-- Duskflutter Ardenmoth (MOUNT!)
 						["cost"] = 300000000,	-- 30,000g

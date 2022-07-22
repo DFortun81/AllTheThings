@@ -7,6 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
 				["coord"] = { 61.6, 21.7, KORTHIA },
+				["minReputation"] = { 2472, 1 },	-- The Archivist's Codex, Tier 1
 				["g"] = {
 					i(186648, {	-- Soaring Razorwing (MOUNT!)
 						["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
@@ -153,6 +154,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				["coord"] = { 63.5, 23.3, KORTHIA },
+				["minReputation"] = { 2470, 5 },	-- Death's Advance, Friendly
 				["g"] = {
 					i(186647, {	-- Amber Shardhide (MOUNT!)
 						["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia

@@ -7,9 +7,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		n(EMISSARY_QUESTS, {
 			q(61098, {	-- Supplies from The Wild Hunt
 				["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
-				["lvl"] = { 60 },
 				["coord"] = { 48.4, 50.4, ARDENWEALD },
+				["minReputation"] = { 2465, 8 },	-- The Wild Hunt, Exalted
 				["repeatable"] = true,
+				["lvl"] = { 60 },
 				["g"] = {
 					i(180649, {	-- Wild Hunt Supplies
 						i(180635),	-- Hungry Burrower
@@ -18,6 +19,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(185054, {["timeline"] = {"added 9.1.5"}}),	-- Mammoth Soul
 					}),
 				},
+			}),
+		}),
+		n(FACTIONS, {
+			faction(2465, {	-- The Wild Hunt
+				ach(14337),	-- The Wild Hunt
 			}),
 		}),
 	}),

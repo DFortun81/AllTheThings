@@ -237,11 +237,7 @@ _.Factions =
 	}),
 	tier(SL_TIER, {
 		--faction(2480),	-- Automa (NYI)
-		faction(2413),	-- Court of Harvesters
 		faction(2464),	-- Court of Night
-		faction(2470, {	-- Death's Advance
-			["timeline"] = { "added 9.1.0.38312" },
-		}),
 		faction(2463, {	-- Marasmius
 			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
 			["crs"] = { 167455 },	-- Marasmius
@@ -250,10 +246,6 @@ _.Factions =
 		faction(2462, {	-- Stitchmasters
 			["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
 		}),
-		faction(2472, {	-- The Archivist's Codex
-			["timeline"] = { "added 9.1.0.38312" },
-		}),
-		faction(2407),	-- The Ascended
 		faction(2439),	-- The Avowed
 		faction(2445, {	-- The Ember Court (Venthyr)
 			["customCollect"] = { "SL_COV_VEN" },
@@ -281,10 +273,6 @@ _.Factions =
 				faction(2449),	-- The Countess
 			}),
 		}),
-		faction(2478),	-- The Enlightened
-		faction(2410),	-- The Undying Army
-		faction(2465),	-- The Wild Hunt
-		faction(2432),	-- Ve'nari
 		-- faction(2414),	-- Shadowlands (idk what this is)
 	}),
 };
