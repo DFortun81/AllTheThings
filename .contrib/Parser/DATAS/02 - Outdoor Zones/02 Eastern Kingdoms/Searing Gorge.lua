@@ -1332,7 +1332,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(18944, {	-- Incendosaur Scale
-					["timeline"] = { "removed 4.0.3.10000" },
 					["cr"] = 9318,	-- Incendosaur
 				}),
 				i(142359, {	-- Lava Oil

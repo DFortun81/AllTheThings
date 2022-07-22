@@ -557,12 +557,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),	-- Soulkeeper's Burden
 			crit(7),	-- Explore The Maw
 		})),
-		ach(14770, {	-- What We Ride in the Shadows
-			crit(1),		-- Old Gate
-			crit(2),		-- Hole in the Wall
-			crit(3),		-- Dominance Gate Battlements
-			crit(4),		-- Darkhaven
-		}),
 		ach(14768, {	-- What is that Melody?
 			crit(1),		-- Hymn of Purity
 			crit(2),		-- Hymn of Courage

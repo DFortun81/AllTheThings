@@ -208,6 +208,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(77983),	-- Indomitable Pride
 							i(77979),	-- Vial of Shadows
 							i(77981),	-- Windward Heart
+							currency(614),	-- Mote of Darkness
 						},
 					}),
 					ach(6106, {	-- Siege of Wyrmrest Temple

@@ -949,6 +949,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 						["sourceQuest"] = 56539,	-- Finding the Rajani
 					}),
+					-- These are 'accepted' in order to cause the map to show the current Assault area, and can be clicked in chat
+					q(57564, {	-- Mantid Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57728},{"pop"}},	-- Assault: The Endless Swarm
+					}),
+					q(57563, {	-- Mogu Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57008},{"pop"}},	-- Assault: The Warring Clans
+					}),
+					q(57567, {	-- N'Zoth Assault Tracker (Vale)
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",56064},{"pop"}},	-- Assault: The Black Empire
+					}),
 				}),
 				n(RARES, {
 					n(157468, {	-- Tisiphon

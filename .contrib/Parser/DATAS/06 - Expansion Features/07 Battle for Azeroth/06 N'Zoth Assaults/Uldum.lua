@@ -1353,6 +1353,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 						["sourceQuest"] = 56209,	-- The Halls of Origination
 					}),
+					-- These are 'accepted' in order to cause the map to show the current Assault area, and can be clicked in chat
+					q(57562, {	-- Amathet Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",55350},{"pop"}},	-- Assault: Amathet Advance
+					}),
+					q(57565, {	-- Aqir Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",56308},{"pop"}},	-- Assault: Aqir Unearthed
+					}),
+					q(57566, {	-- N'Zoth Assault Tracker (Uldum)
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57157},{"pop"}},	-- Assault: The Black Empire
+					}),
 				}),
 				n(RARES, sharedData({
 					["isDaily"] = true,

@@ -452,33 +452,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					},
 				}),
 			})),
-			n(QUESTS, {
-				-- These are 'accepted' in order to cause the map to show the current Assault area, and can be clicked in chat
-				q(57562, {	-- Amathet Assault Tracker
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",55350},{"pop"}},	-- Assault: Amathet Advance
-				}),
-				q(57565, {	-- Aqir Assault Tracker
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",56308},{"pop"}},	-- Assault: Aqir Unearthed
-				}),
-				q(57564, {	-- Mantid Assault Tracker
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",57728},{"pop"}},	-- Assault: The Endless Swarm
-				}),
-				q(57563, {	-- Mogu Assault Tracker
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",57008},{"pop"}},	-- Assault: The Warring Clans
-				}),
-				q(57567, {	-- N'Zoth Assault Tracker (Vale)
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",56064},{"pop"}},	-- Assault: The Black Empire
-				}),
-				q(57566, {	-- N'Zoth Assault Tracker (Uldum)
-					["isWeekly"] = true,
-					["sym"] = {{"select","questID",57157},{"pop"}},	-- Assault: The Black Empire
-				}),
-			}),
 			n(ZONE_DROPS, {
 				i(174365),	-- Design: Unbound Leviathan's Eye Loop
 				i(174368),	-- Pattern: Unsettling Cragscale Boots

@@ -139,7 +139,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["coord"] = { 60.3, 62.6, REVENDRETH }
 					}),
 					crit(2, {	-- Hole in the Wall
-						["coord"] = { 41.2, 47.2, REVENDRETH },
+						["coords"] = {
+							{ 44.0, 56.4, REVENDRETH },
+							{ 55.0, 62.2, REVENDRETH },
+						},
 					}),
 					crit(3, {	-- Dominance Gate Battlements
 						["coord"] = { 41.2, 47.2, REVENDRETH },
