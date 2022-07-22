@@ -17116,6 +17116,10 @@ function app:GetDataCache()
 			cat.maps = nil;
 			cat.sourceParent = nil;
 			cat.symlink = nil;
+			-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
+			if not cat.collectible then
+				cat.u = nil;
+			end
 			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
 		end
 		-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
