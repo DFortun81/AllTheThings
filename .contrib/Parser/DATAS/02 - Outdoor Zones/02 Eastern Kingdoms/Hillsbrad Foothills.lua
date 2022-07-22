@@ -651,6 +651,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(2, {	-- 0/30 Bloodscalp Tusk
 							["provider"] = { "i", 3901 },	-- Bloodscalp Tusk
+							["crs"] = {
+								694,	-- Bloodscalp Axe Thrower
+								699,	-- Bloodscalp Beastmaster
+								597,	-- Bloodscalp Berserker
+								671,	-- Bloodscalp Headhunter
+								595,	-- Bloodscalp Hunter
+								701,	-- Bloodscalp Mystic
+								702,	-- Bloodscalp Scavenger
+								588,	-- Bloodscalp Scout
+								697,	-- Bloodscalp Shaman
+								587,	-- Bloodscalp Warrior
+								660,	-- Bloodscalp Witch Doctor
+							},
 						}),
 						objective(3, {	-- 0/1 Essence of the Exile
 							["provider"] = { "i", 6851 },	-- Essence of the Exile

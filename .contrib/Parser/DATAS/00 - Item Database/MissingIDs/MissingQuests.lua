@@ -10,12 +10,8 @@ q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(198),	-- Supplies to Private Thorsen,		TBC: Supplies to Private Thorsen,		CLASSIC: Supplies to Private Thorsen
-q(200),	-- Bookie Herod,		TBC: Bookie Herod,		CLASSIC: Bookie Herod
-q(203),	-- The Second Rebellion,		TBC: The Second Rebellion,		CLASSIC: The Second Rebellion
 q(205),	-- Troll Witchery,		TBC: Troll Witchery,		CLASSIC: Troll Witchery
 q(207),	-- Kurzen's Mystery,		TBC: Kurzen's Mystery,		CLASSIC: Kurzen's Mystery
-q(210),	-- Krazek's Cookery,		TBC: Krazek's Cookery,		CLASSIC: Krazek's Cookery
 q(212),	-- A Meal Served Cold,		TBC: A Meal Served Cold,		CLASSIC: A Meal Served Cold
 q(215),	-- Jungle Secrets,		TBC: Jungle Secrets,		CLASSIC: Jungle Secrets
 q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -24,13 +20,10 @@ q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(329),	-- The Spy Revealed!,		TBC: The Spy Revealed!,		CLASSIC: The Spy Revealed!
-q(330),	-- Patrol Schedules,		TBC: Patrol Schedules,		CLASSIC: Patrol Schedules
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
 q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
 q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(389),	-- Bazil Thredd,		TBC: Bazil Thredd,		CLASSIC: Bazil Thredd
 q(392),	-- The Curious Visitor,		TBC: The Curious Visitor,		CLASSIC: The Curious Visitor
 q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the Past
 q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Head of the Beast
@@ -47,16 +40,9 @@ q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloodstone Pendant,		CLASSIC: <NYI> <TXT> Bloodstone Pendant
-q(574),	-- Special Forces,		TBC: Special Forces,		CLASSIC: Special Forces
 q(578),	-- The Stone of the Tides,		TBC: The Stone of the Tides,		CLASSIC: The Stone of the Tides
 q(601),	-- Water Elementals,		TBC: Water Elementals,		CLASSIC: Water Elementals
-q(602),	-- Magical Analysis,		TBC: Magical Analysis,		CLASSIC: Magical Analysis
-q(603),	-- Ansirem's Key,		TBC: Ansirem's Key,		CLASSIC: Ansirem's Key
-q(610),	-- "Pretty Boy" Duncan,		TBC: "Pretty Boy" Duncan,		CLASSIC: "Pretty Boy" Duncan
 q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(616),	-- The Haunted Isle,		TBC: The Haunted Isle,		CLASSIC: The Haunted Isle
-q(623),	-- Akiris by the Bundle,		TBC: Akiris by the Bundle,		CLASSIC: Akiris by the Bundle
-q(627),	-- Favor for Krazek,		TBC: Favor for Krazek,		CLASSIC: Favor for Krazek
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?

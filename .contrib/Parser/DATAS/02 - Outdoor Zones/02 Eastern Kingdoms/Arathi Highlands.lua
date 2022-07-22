@@ -1449,6 +1449,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				q(638, {	-- Trollbane
+					["qg"] = 2497,	-- Nimboya
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 32,
+				}),
 				q(693, {	-- Wand over Fist
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 691,	-- Worth Its Weight in Gold

@@ -495,6 +495,12 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
+				q(1261, {	-- Marg Speaks
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
+					["sourceQuest"] = 1240,	-- The Troll Witchdoctor
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(27183, {	-- Marsh Frog Legs
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },

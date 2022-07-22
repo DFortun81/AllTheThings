@@ -36,6 +36,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(24818),	-- A Change of Heart
 		}),
 		tier(CATA_TIER, { -- These Quests might be ingame, very unlikely however.
+			q(26764, {	-- A New Low (Northern Stranglethorn)
+				["timeline"] = { "created 4.0.3.13277" },
+			}),
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28071),	-- Adventurers Wanted: Blackrock Spire
@@ -77,10 +80,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(28006),	-- Adventurers Wanted: Wailing Caverns
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
+			q(26704),	-- BETA REUSE (The Cape of Stranglethorn)
+			q(26718, {	-- Breadcrumb to Badlands (The Cape of Stranglethorn)
+				["timeline"] = { "created 4.0.3.13277" },
+			}),
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
 			q(29183),	-- Daily Tier 2 Heroic (Nth)
+			q(1127),	-- Fool's Stout
+			q(26839, {	-- Get Away From It All! (The Cape of Stranglethorn)
+				["timeline"] = { "created 4.0.3.13277" },	-- Replaced by "It's You!!"?
+			}),
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
@@ -88,6 +99,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29339),	-- Short-Supply Reward
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
+			q(26837, {	-- The Explorers' League Digsite (The Cape of Stranglethorn)
+				["timeline"] = { "created 4.0.3.13277" },	-- was replaced To the Cape! "To the Cape!"
+			}),
+			q(26412, {	-- The Mosh'Ogg Bounty (NYI - dupe) (Northern Stranglethorn)
+				["timeline"] = { "created 4.0.3.13277" },
+			}),
 			q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta) [Hillsbrad Foothills]
 				["timeline"] = { "created 4.0.1.12984" },
 			}),

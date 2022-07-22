@@ -88,7 +88,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(68, {	-- Undercity
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Male",
+					-- #else
 					["icon"] = asset("Achievement_Character_Undead_Male"),
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif

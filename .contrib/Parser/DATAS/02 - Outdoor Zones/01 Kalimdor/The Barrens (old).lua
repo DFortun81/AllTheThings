@@ -61,11 +61,6 @@ _.Zones = {
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
 					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 				}),
-				q(1180,  {	-- Goblin Sponsorship
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3391 },	-- Gazlowe
-					["sourceQuest"] = 1178,	-- Goblin Sponsorship
-				}),
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

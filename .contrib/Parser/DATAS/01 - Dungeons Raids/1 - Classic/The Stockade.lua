@@ -15,6 +15,14 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lvl"] = 15,
 		["groups"] = {
 			n(QUESTS, {
+				q(389, {	-- Bazil Thredd
+					["qg"] = 1646,	-- Baros Alexston
+					["sourceQuest"] = 373,	-- The Unsent Letter
+					["coord"] = { 49, 30.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.1.12984" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+				}),
 				q(27737, {	-- By Fire Be Saved!
 					["qg"] = 46410,	-- Nurse Lillian
 					["timeline"] = { "added 4.0.3.13277" },
