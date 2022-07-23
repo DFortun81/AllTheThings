@@ -6232,42 +6232,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(64855),	--
 			q(64856),	--
 			q(64859),	--
-			q(64863),	-- Arcane Guardians
-			q(64864),	-- Awaken, Dracthyr
-			q(64865),	-- Gear Up
-			q(64866),	-- Into the Cauldron
-			q(64871),	-- The Dragon at the Door
-			q(64872),	-- The Fire Within
-			q(64873),	-- Stretch Your Wings
 			q(64971),	--
 			q(64981),	--
-			q(65036),	-- Train Like We Fight
 			q(65041),	-- Memories of Scoroxia
 			q(65042),	-- Dragons!
-			q(65045),	-- Stormsunder Crater
-			q(65046),	-- The Primalists
-			q(65049),	-- Tangle with the Tarasek
-			q(65050),	-- Conjured Army
 			q(65051),	-- Who We Were
-			q(65052),	-- The Ebon Scales
-			q(65057),	-- Rally to Emberthal
-			q(65060),	-- Caldera of the Menders
-			q(65063),	-- Into the Hive
 			q(65065),	-- The Tuskarr
-			q(65071),	-- Halp!
-			q(65073),	-- Crafting an Antidote
-			q(65074),	-- Easy Prey
-			q(65075),	-- The Healing Wings
 			q(65083),	--
-			q(65084),	-- The Froststone Vault
 			q(65085),	-- Primalist Rage
 			q(65086),	-- Second Thoughts
-			q(65087),	-- There's a Prize Inside
-			q(65097),	-- Run!
-			q(65098),	-- The Consequence of Courage
 			q(65099),	-- Neltharion's Final Command
-			q(65100),	-- Final Orders
-			q(65101),	--
 			q(65106),	-- [TEMP] Intro Cinematic
 			q(65118),	--
 			q(65120),	--
@@ -6275,13 +6249,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65267),	-- Smash 'Em to Feathereens
 			q(65279),	-- By Royal Decree
 			q(65283),	-- Zip Line Treasure
-			q(65286),	-- Draconic Connections
 			q(65287),	--
 			q(65296),	--
 			q(65302),	-- Keys to the Kingdom
 			q(65304),	--
 			q(65306),	-- Rot Rancher
-			q(65307),	-- Mercy First
 			q(65313),	--
 			q(65365),	--
 			q(65369),	--
@@ -6292,14 +6264,8 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65421),	--
 			q(65422),	-- Treasure Hunting Ain't Easy
 			q(65428),	--
-			q(65435),	-- The Dragon Isles Await
-			q(65436),	-- The Dragon Isles Await
-			q(65437),	-- Alexstrasza's Invitation
 			q(65438),	-- Awesome Quest Start
-			q(65439),	-- Whispers in the Winds
 			q(65442),	--
-			q(65443),	-- Expeditionary Coordination
-			q(65444),	-- To the Dragon Isles!
 			q(65446),	--
 			q(65451),	--
 			q(65452),	--
@@ -6320,8 +6286,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65596),	--
 			q(65599),	--
 			q(65608),	--
-			q(65613),	--
-			q(65615),	-- Arcane Intrusion
 			q(65639),	-- Tarasek
 			q(65642),	--
 			q(65646),	--
@@ -6334,17 +6298,11 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65676),	--
 			q(65677),	--
 			q(65678),	--
-			q(65686),	-- To the Azure Span
 			q(65687),	-- A Show of Force
-			q(65688),	-- Meeting Kalecgos
-			q(65689),	-- The Many Images of Kalecgos
 			q(65690),	-- Wings in Need
 			q(65691),	--
 			q(65692),	--
 			q(65696),	--
-			q(65701),	-- Preservation or Devastation
-			q(65702),	-- Driven Mad
-			q(65709),	-- Arcane Pruning
 			q(65710),	--
 			q(65711),	--
 			q(65712),	--
@@ -6362,8 +6320,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65738),	--
 			q(65740),	--
 			q(65750),	-- Eight-Legged Menace
-			q(65751),	-- Platform Adjustments
-			q(65752),	-- Arcane Annoyances
 			q(65758),	-- Grungir the Explorer
 			q(65759),	--
 			q(65760),	--
@@ -6408,34 +6364,13 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65835),	--
 			q(65836),	--
 			q(65837),	--
-			q(65838),	-- Breaching the Brackenhide
 			q(65840),	--
-			q(65841),	-- Stop the Spread
 			q(65842),	--
 			q(65843),	--
-			q(65844),	-- Cut Out the Rot
-			q(65845),	-- Echoes of the Fallen
-			q(65846),	-- Ley Litter
-			q(65847),	-- Realignment
-			q(65848),	-- Tome-tal Devastation
-			q(65849),	-- To Iskaara
-			q(65850),	-- The Cycle of the Sea
 			q(65851),	--
-			q(65852),	-- Straight to the Top
 			q(65853),	--
-			q(65854),	-- Reclaiming the Oathstone
-			q(65855),	-- Aiding Azure Span
 			q(65863),	--
-			q(65864),	-- Catch the Caravan
 			q(65865),	-- They've Got Us Pinned Down!
-			q(65866),	-- Snap the Traps
-			q(65867),	-- Howling in the Big Tree Hills
-			q(65868),	-- Those Aren't for Chewing
-			q(65869),	-- Another Ambush
-			q(65870),	-- Supplies!
-			q(65871),	-- Gnoll Way Out
-			q(65872),	-- Ill Gnolls With Ill Intent
-			q(65873),	-- Leader of the Shadepaw Pack
 			q(65874),	-- A Rotten Revelation
 			q(65875),	--
 			q(65876),	-- Shiverweb Silk
@@ -6472,7 +6407,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(65908),	--
 			q(65909),	--
 			q(65910),	--
-			q(65911),	-- Azure Alignment
 			q(65912),	--
 			q(65913),	-- Listen to the Land
 			q(65914),	-- Mammoths Matter
@@ -6559,7 +6493,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66023),	--
 			q(66024),	--
 			q(66025),	--
-			q(66026),	-- Urgent Action Required
 			q(66027),	-- Calling the Blue Dragons
 			q(66028),	--
 			q(66029),	--
@@ -6660,12 +6593,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66155),	-- Ruriq's River Rapids Ride
 			q(66157),	--
 			q(66158),	--
-			q(66159),	-- A Message Most Dire
 			q(66161),	--
 			q(66162),	-- Cataloging Wildlife
-			q(66163),	-- Nowhere to Hide
 			q(66164),	-- Fishy Fingers
-			q(66166),	-- Eyes and Ears
 			q(66167),	--
 			q(66168),	--
 			q(66169),	--
@@ -6693,34 +6623,23 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66207),	--
 			q(66208),	--
 			q(66209),	--
-			q(66210),	-- Gather the Family
-			q(66211),	-- Brackenhide Hollow: To the Source
-			q(66212),	-- [NYI] Fishing: Aileron Seamoth
-			q(66213),	-- The Weave of a Tale
 			q(66214),	--
 			q(66215),	--
 			q(66216),	--
-			q(66217),	-- WANTED: Krojek the Shoreprowler
-			q(66218),	-- Scampering Scamps
 			q(66219),	--
 			q(66220),	--
 			q(66221),	--
 			q(66222),	--
-			q(66223),	-- Can We Keep It?
 			q(66224),	--
 			q(66225),	--
 			q(66226),	--
-			q(66227),	-- Some Good Fishing
-			q(66228),	-- Camp Antonidas
 			q(66229),	--
 			q(66230),	-- A Sketchy Request
 			q(66232),	-- Afront 'Till A Salt
 			q(66233),	--
 			q(66234),	--
 			q(66236),	--
-			q(66237),	-- Spiritual Allies
 			q(66238),	--
-			q(66239),	-- Spreading Decay
 			q(66240),	--
 			q(66241),	--
 			q(66242),	--
@@ -6775,7 +6694,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66320),	--
 			q(66321),	--
 			q(66322),	--
-			q(66324),	-- Never Forgotten
 			q(66325),	--
 			q(66326),	--
 			q(66327),	--
@@ -6878,7 +6796,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66455),	--
 			q(66456),	--
 			q(66457),	--
-			q(66458),	-- Legacy of Tyr: Secrets of the Past
 			q(66459),	-- The Field of Ferocity: Terror of the Swamp!
 			q(66460),	--
 			q(66461),	--
@@ -6907,28 +6824,22 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66485),	--
 			q(66486),	--
 			q(66487),	--
-			q(66488),	-- WANTED: Frigellus
-			q(66489),	-- Setting the Defense
 			q(66490),	-- Dragons!
 			q(66491),	--
 			q(66492),	--
-			q(66493),	-- Send It!
 			q(66494),	--
 			q(66495),	--
 			q(66496),	--
 			q(66497),	--
 			q(66498),	--
 			q(66499),	--
-			q(66500),	-- Ways of Seeing
 			q(66502),	--
-			q(66503),	-- For The Love of Others
 			q(66504),	--
 			q(66505),	--
 			q(66506),	--
 			q(66509),	-- Paranoid 1
 			q(66510),	--
 			q(66512),	--
-			q(66513),	-- Ground Leave
 			q(66514),	--
 			q(66515),	--
 			q(66516),	--
@@ -6938,7 +6849,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66520),	-- Stolen Weapon Mold
 			q(66521),	-- Stolen Valdrakken Weapon
 			q(66522),	-- Draconium Blade Sharpener
-			q(66523),	-- Tending the Forge
 			q(66524),	-- Amateur Protography
 			q(66525),	--
 			q(66526),	--
@@ -6949,7 +6859,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66531),	--
 			q(66532),	--
 			q(66533),	--
-			q(66534),	-- Ground Leave
 			q(66535),	--
 			q(66536),	--
 			q(66537),	--
@@ -6972,7 +6881,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66555),	-- Bear With Me
 			q(66556),	-- Ice Cave Ya Got There
 			q(66557),	-- Academic Aquaintances
-			q(66558),	-- Rowie
 			q(66559),	-- Back To Camp
 			q(66561),	--
 			q(66562),	--
@@ -6990,20 +6898,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66574),	--
 			q(66575),	-- Item as Questgiver: Vial
 			q(66576),	--
-			q(66577),	-- Alexstrasza's Invitation
 			q(66580),	--
 			q(66581),	--
 			q(66582),	--
 			q(66583),	--
 			q(66585),	--
-			q(66586),	-- Legacy of Tyr: Secrets of the Past
 			q(66587),	--
 			q(66588),	--
-			q(66589),	-- Expeditionary Coordination
 			q(66591),	--
 			q(66592),	--
 			q(66595),	--
-			q(66596),	-- Whispers in the Winds
 			q(66597),	--
 			q(66598),	--
 			q(66599),	--
@@ -7062,7 +6966,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66668),	--
 			q(66669),	--
 			q(66670),	--
-			q(66671),	-- Path to Nowhere
 			q(66672),	--
 			q(66674),	--
 			q(66675),	--
@@ -7085,7 +6988,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(66692),	-- Waking Shores - Race 01 - Advanced
 			q(66697),	--
 			q(66698),	-- Counting Argali
-			q(66699),	-- Ask the Locals
 			q(66700),	--
 			q(66701),	--
 			q(66702),	--
@@ -7377,10 +7279,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67030),	--
 			q(67031),	-- Azure Span - The Vakthros Ascent
 			q(67032),	-- Azure Span - The Vakthros Ascent - Advanced
-			q(67033),	-- Assemble the Defenses
 			q(67034),	-- Of Wind and Water
-			q(67035),	-- Preservation of Knowledge
-			q(67036),	-- Wrath of the Kirin Tor
 			q(67037),	--
 			q(67039),	-- An Amazing Journey
 			q(67040),	--
@@ -7458,9 +7357,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67171),	--
 			q(67172),	--
 			q(67173),	-- Thieving Gnolls
-			q(67174),	-- Arcane Detection
-			q(67175),	-- How To Stop An Exploding Toy Boat
-			q(67177),	-- WANTED: Gorger
 			q(67178),	--
 			q(67220),	--
 			q(67221),	--
@@ -7481,7 +7377,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(67566),	-- Azure Span - Central Circuit - Advanced
 			q(67605),	-- Thundering Plains
 			q(67606),	--
-			q(67700),	-- To the Dragon Isles!
 			q(67717),	-- Web-Queen Ashkaz
 			q(67718),	--
 			q(67724),	-- The Fending Flames
@@ -7571,7 +7466,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69901),	--
 			q(69902),	--
 			q(69903),	--
-			q(69904),	-- Suspiciously Quiet
 			q(69905),	--
 			q(69906),	--
 			q(69907),	--
@@ -7607,7 +7501,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69940),	--
 			q(69941),	--
 			q(69942),	--
-			q(69944),	-- The Expedition Gathers
 			q(69945),	--
 			q(69946),	--
 			q(69947),	--
@@ -7643,7 +7536,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(69978),	--
 			q(69979),	--
 			q(69980),	-- Seavine: Fisherman Tinnak's Gift
-			q(69981),	-- Customer Satisfaction
 			q(69982),	--
 			q(69983),	--
 			q(69984),	--
@@ -7703,17 +7595,12 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70040),	--
 			q(70041),	-- The Storm-Eater's Fury
 			q(70042),	--
-			q(70044),	-- The Scalecommander's Request
-			q(70045),	-- The Scalecommander's Request
 			q(70046),	--
 			q(70047),	--
 			q(70048),	--
 			q(70049),	--
-			q(70050),	-- The Expedition Gathers
 			q(70051),	-- Thaldraszus - Cliffside Circuit
 			q(70052),	-- Thaldraszus - Cliffside Circuit - Advanced
-			q(70053),	-- Lessons From Our Past
-			q(70054),	-- Lessons From Our Past
 			q(70055),	--
 			q(70056),	--
 			q(70057),	--
@@ -7785,7 +7672,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(70124),	--
 			q(70125),	--
 			q(70126),	--
-			q(70129),	-- Toejam the Terrible
 			q(70130),	--
 			q(70131),	--
 			q(70132),	-- A Long Time Ago

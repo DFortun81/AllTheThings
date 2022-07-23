@@ -258,7 +258,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 				--},
 			}),
-			q(66513, {	-- Ground Leave
+			q(66513, {	-- Ground Leave [A]
 				["sourceQuests"] = { 65286 },	-- Draconic Connections
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
@@ -267,10 +267,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 				--},
 			}),
-			-- Ground Leave leads into Aspectral invitation
-			-- This Quest Is actually after BC to Dragon Isle Intro
-			q(64864, {	-- An Iconic, Draconic, Look
-				["sourceQuests"] = { 66577 },	-- Aspectral Invitation
+			q(65101, {	-- An Iconic, Draconic, Look
+				["sourceQuests"] = { 66577 },	-- Alexstrasza's Invitation [A]
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
 				["races"] = { DRACTHYR_ALLIANCE },
@@ -288,7 +286,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 				--},
 			}),
-			q(66534, {	-- Ground Leave
+			q(66534, {	-- Ground Leave [H]
 				["sourceQuests"] = { 66237 },	-- Spiritual Allies
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
@@ -297,10 +295,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 				--},
 			}),
-			-- Ground Leave leads into Aspectral invitation
-			-- This Quest Is actually after BC to Dragon Isle Intro
 			q(65613, {	-- An Iconic, Draconic, Look
-				["sourceQuests"] = { 65437 },	-- Aspectral Invitation
+				["sourceQuests"] = { 65437 },	-- Alexstrasza's Invitation [H]
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
 				["races"] = { DRACTHYR_HORDE },
