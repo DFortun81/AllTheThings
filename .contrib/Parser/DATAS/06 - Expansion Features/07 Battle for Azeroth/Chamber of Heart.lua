@@ -101,9 +101,16 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					["coord"] = { 48.1, 72.2, REPAIRED_CHAMBER_OF_HEART },
 					["sourceQuest"] = 55533,	-- MOTHER Knows Best
 				}),
+				q(52946, {	-- A Dying World
+					["qg"] = 142930,	-- Halford Wyrmbane
+					["sourceQuest"] = 51795,	-- The Battle for Lordaeron
+					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
+					["timeline"] = { "added 8.0.1.27291", "removed 9.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53028, {	-- A Dying World
 					--	originally removed, then hotfixed back in for 50 characters
-					--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance, but it looks like that one was permanently removed.
+					--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
 					--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 					["providers"] = {
 						{ "n", 154464 },	-- Earthen Guardian (Alliance)
