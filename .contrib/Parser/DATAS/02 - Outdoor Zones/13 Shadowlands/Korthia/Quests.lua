@@ -212,6 +212,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
+			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178800 },	-- Voitha
+				["isDaily"] = true,
+				["coord"] = { 61.7, 23.7, KORTHIA },
+			}),
 			q(64314, {	-- Covenants Renewed
 				["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -943,12 +949,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			--[[ These are only commented out until they are found on live severs // Braghe
 		--	9.1.0 PTR Data
-			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178800 },	-- Voitha
-				["isDaily"] = true,
-				["coord"] = { 61.7, 23.7, KORTHIA },
-			}),
 			q(63785, {	-- Continued Efforts: Seeker's Quorum
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
