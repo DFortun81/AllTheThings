@@ -938,6 +938,8 @@ for key,value in pairs({
 	[261] = "Beschädigte Kiste",	-- Damaged Crate
 	[269] = "Bewachtes Fass mit Donnerbräu Lager",	-- Guarded Thunder Ale Barrel
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
+	[287] = "Buchmacher Herods Aufzeichnungen",	-- Bookie Herod's Records
+	[288] = "Buchmacher Herods Geldkassette",	-- Bookie Herod's Strongbox
 	[711] = "GESUCHT!",	-- Wanted!
 	[1557] = "Lilliths Esstisch",	-- Lillith's Dinner Table
 	[1561] = "Versiegelte Kiste",	-- Sealed Crate
@@ -952,9 +954,11 @@ for key,value in pairs({
 	[1740] = "Dokumente des Syndikats",	-- Syndicate Documents
 	[1763] = "GESUCHT",	-- WANTED
 	[1765] = "Abgenutzte Holztruhe",	-- Worn Wooden Chest
+	[2008] = "Gefährlich!",	-- Wanted Poster
 	[2059] = "Eine Zwergenleiche",	-- A Dwarven Corpse
 	[2076] = "Blubbernder Kessel",	-- Bubbling Cauldron
 	[2083] = "Blutsegelkorrespondenz",	-- Bloodsail Correspondence
+	[2289] = "Unbrauchbares Rettungsboot",	-- Ruined Lifeboat
 	[2553] = "Eine glitschige Rolle",	-- A Soggy Scroll
 	[2555] = "Modrige Rolle",	-- Musty Scroll
 	[2652] = "Ebenezer Rostlockes Leichnam",	-- Ebenezer Rustlocke's Corpse
@@ -2689,6 +2693,8 @@ for key,value in pairs({
 	[327592] = "Verzaubertes Schloss",	-- Enchanted Lock
 	[327596] = "Zerbrochener abyssischer Fokus",	-- Broken Abyssal Focus
 	[327597] = "Alte rostige Truhe",	-- Old Rusty Chest
+	[327650] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
+	[327652] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
 	[327669] = "Maßvoller Bierlementar",	-- Contained Alemental
 	[328343] = "Düsterbräuzahnrad",	-- Direbrew Cog
 	[328413] = "Totem der Ho-zen",	-- Hozen Totem

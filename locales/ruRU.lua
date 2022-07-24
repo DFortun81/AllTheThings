@@ -926,6 +926,8 @@ for key,value in pairs({
 	[261] = "Поврежденный ящик",	-- Damaged Crate
 	[269] = "Охраняемая бочка Громового эля",	-- Guarded Thunder Ale Barrel
 	[270] = "Неохраняемая бочка Громового эля",	-- Unguarded Thunder Ale Barrel
+	[287] = "Записи букмекера Ирода",	-- Bookie Herod's Records
+	[288] = "Сейф букмекера Ирода",	-- Bookie Herod's Strongbox
 	[711] = "Розыск!",	-- Wanted!
 	[1557] = "Обеденный стол Лилит",	-- Lillith's Dinner Table
 	[1561] = "Запечатанный ящик",	-- Sealed Crate
@@ -940,9 +942,11 @@ for key,value in pairs({
 	[1740] = "Документы Синдиката",	-- Syndicate Documents
 	[1763] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
 	[1765] = "Подержанный деревянный сундук",	-- Worn Wooden Chest
+	[2008] = "ОПАСНО!",	-- Wanted Poster
 	[2059] = "Труп дворфа",	-- A Dwarven Corpse
 	[2076] = "Бурлящий котел",	-- Bubbling Cauldron
 	[2083] = "Переписка Кровавого Паруса",	-- Bloodsail Correspondence
+	[2289] = "Разбитая спасательная шлюпка",	-- Ruined Lifeboat
 	[2553] = "Промокший свиток",	-- A Soggy Scroll
 	[2555] = "Заплесневелый свиток",	-- Musty Scroll
 	[2652] = "Труп Эбенезера Ржавый Засов",	-- Ebenezer Rustlocke's Corpse
@@ -2677,6 +2681,8 @@ for key,value in pairs({
 	[327592] = "Зачарованный замок",	-- Enchanted Lock
 	[327596] = "Расколотый глубинный кристалл",	-- Broken Abyssal Focus
 	[327597] = "Старый ржавый сундук",	-- Old Rusty Chest
+	[327650] = "Сундук с военными припасами",	-- War Supply Chest
+	[327652] = "Сундук с военными припасами",	-- War Supply Chest
 	[327669] = "Заключенный хмелементаль",	-- Contained Alemental
 	[328343] = "Шестеренка Худовара",	-- Direbrew Cog
 	[328413] = "Тотем хозенов",	-- Hozen Totem

@@ -941,6 +941,8 @@ for key,value in pairs({
 	[261] = "Cajón dañado",	-- Damaged Crate
 	[269] = "Barrica de Cerveza del Trueno custodiado",	-- Guarded Thunder Ale Barrel
 	[270] = "Barrica de Cerveza del Trueno sin vigilar",	-- Unguarded Thunder Ale Barrel
+	[287] = "Documentos del corredor Herod",	-- Bookie Herod's Records
+	[288] = "Caja fuerte del corredor Herod",	-- Bookie Herod's Strongbox
 	[711] = "¡Se busca!",	-- Wanted!
 	[1557] = "Mesa de cena de Lillith",	-- Lillith's Dinner Table
 	[1561] = "Cajón sellado",	-- Sealed Crate
@@ -955,9 +957,11 @@ for key,value in pairs({
 	[1740] = "Documentos de la Hermandad",	-- Syndicate Documents
 	[1763] = "SE BUSCA",	-- WANTED
 	[1765] = "Cofre de madera gastado",	-- Worn Wooden Chest
+	[2008] = "¡Peligro!",	-- Wanted Poster
 	[2059] = "Un cadáver de enano",	-- A Dwarven Corpse
 	[2076] = "Caldera burbujeante",	-- Bubbling Cauldron
 	[2083] = "Correspondencia de los Velasangre",	-- Bloodsail Correspondence
+	[2289] = "Bote salvavidas inservible",	-- Ruined Lifeboat
 	[2553] = "Un viejo pergamino",	-- A Soggy Scroll
 	[2555] = "Pergamino mohoso",	-- Musty Scroll
 	[2652] = "Cadáver de Ebenezer Herrumbra",	-- Ebenezer Rustlocke's Corpse
@@ -2692,6 +2696,8 @@ for key,value in pairs({
 	[327592] = "Cerrojo encantado",	-- Enchanted Lock
 	[327596] = "Enfoque abisal roto",	-- Broken Abyssal Focus
 	[327597] = "Viejo cofre oxidado",	-- Old Rusty Chest
+	[327650] = "Cofre de suministros de guerra",	-- War Supply Chest
+	[327652] = "Cofre de suministros de guerra",	-- War Supply Chest
 	[327669] = "Elemental de cerveza contenido",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem

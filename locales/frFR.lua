@@ -936,6 +936,8 @@ for key,value in pairs({
 	[261] = "Caisse endommagée",	-- Damaged Crate
 	[269] = "Tonneau de Tonneblonde gardé",	-- Guarded Thunder Ale Barrel
 	[270] = "Tonneau de Tonneblonde non gardé",	-- Unguarded Thunder Ale Barrel
+	[287] = "Archives d'Hérode la Paperasse",	-- Bookie Herod's Records
+	[288] = "Coffre-fort d'Hérode la Paperasse",	-- Bookie Herod's Strongbox
 	[711] = "Avis de recherche !",	-- Wanted!
 	[1557] = "Table de dîner de Lillith",	-- Lillith's Dinner Table
 	[1561] = "Caisse scellée",	-- Sealed Crate
@@ -950,9 +952,11 @@ for key,value in pairs({
 	[1740] = "Documents du Syndicat",	-- Syndicate Documents
 	[1763] = "AVIS DE RECHERCHE",	-- WANTED
 	[1765] = "Coffre en bois usé",	-- Worn Wooden Chest
+	[2008] = "Dangereux !",	-- Wanted Poster
 	[2059] = "Un cadavre de Nain",	-- A Dwarven Corpse
 	[2076] = "Chaudron bouillonnant",	-- Bubbling Cauldron
 	[2083] = "Correspondance de la Voile sanglante",	-- Bloodsail Correspondence
+	[2289] = "Canot de sauvetage abîmé",	-- Ruined Lifeboat
 	[2553] = "Un parchemin trempé",	-- A Soggy Scroll
 	[2555] = "Parchemin moisi",	-- Musty Scroll
 	[2652] = "Cadavre d'Ebenezer Bouclerouille",	-- Ebenezer Rustlocke's Corpse
@@ -2687,6 +2691,8 @@ for key,value in pairs({
 	[327592] = "Verrou enchanté",	-- Enchanted Lock
 	[327596] = "Focalisateur abyssal endommagé",	-- Broken Abyssal Focus
 	[327597] = "Vieux coffre rouillé",	-- Old Rusty Chest
+	[327650] = "Coffre de fournitures de guerre",	-- War Supply Chest
+	[327652] = "Coffre de fournitures de guerre",	-- War Supply Chest
 	[327669] = "Elémenbière contenu",	-- Contained Alemental
 	[328343] = "Rouage navrebière",	-- Direbrew Cog
 	[328413] = "Totem hozen",	-- Hozen Totem

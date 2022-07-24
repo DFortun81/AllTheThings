@@ -932,6 +932,8 @@ for key,value in pairs({
 	[261] = "Cassa Danneggiata",	-- Damaged Crate
 	[269] = "Barile Custodito di Birra del Tuono",	-- Guarded Thunder Ale Barrel
 	[270] = "Unguarded Thunder Ale Barrel",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "Bookie Herod's Records",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "Bookie Herod's Strongbox",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "Wanted!",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "Tavolo da Pranzo di Lillith",	-- Lillith's Dinner Table
 	[1561] = "Cassa Sigillata",	-- Sealed Crate
@@ -946,9 +948,11 @@ for key,value in pairs({
 	[1740] = "Documenti della Lega dei Tagliagole",	-- Syndicate Documents
 	[1763] = "WANTED",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "Cassa di Legno Consumata",	-- Worn Wooden Chest
+	[2008] = "Dangerous!",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadavere di un Nano",	-- A Dwarven Corpse
 	[2076] = "Calderone Ribollente",	-- Bubbling Cauldron
 	[2083] = "Corrispondenza dei Velerosse",	-- Bloodsail Correspondence
+	[2289] = "Scialuppa di Salvataggio Rovinata",	-- Ruined Lifeboat
 	[2553] = "Pergamena Zuppa",	-- A Soggy Scroll
 	[2555] = "Pergamena Ammuffita",	-- Musty Scroll
 	[2652] = "Cadavere di Ebenezer Rustlocke",	-- Ebenezer Rustlocke's Corpse
@@ -2683,6 +2687,8 @@ for key,value in pairs({
 	[327592] = "Lucchetto Incantato",	-- Enchanted Lock
 	[327596] = "Focus Abissale Rotto",	-- Broken Abyssal Focus
 	[327597] = "Vecchia Cassa Arrugginita",	-- Old Rusty Chest
+	[327650] = "Cassa di Rifornimenti da Guerra",	-- War Supply Chest
+	[327652] = "Cassa di Rifornimenti da Guerra",	-- War Supply Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
