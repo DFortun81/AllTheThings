@@ -942,7 +942,7 @@ for key,value in pairs({
 	[1740] = "Документы Синдиката",	-- Syndicate Documents
 	[1763] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
 	[1765] = "Подержанный деревянный сундук",	-- Worn Wooden Chest
-	[2008] = "ОПАСНО!",	-- Wanted Poster
+	[2008] = "ОПАСНО!",	-- Dangerous!
 	[2059] = "Труп дворфа",	-- A Dwarven Corpse
 	[2076] = "Бурлящий котел",	-- Bubbling Cauldron
 	[2083] = "Переписка Кровавого Паруса",	-- Bloodsail Correspondence

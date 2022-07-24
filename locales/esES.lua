@@ -957,7 +957,7 @@ for key,value in pairs({
 	[1740] = "Documentos de la Hermandad",	-- Syndicate Documents
 	[1763] = "SE BUSCA",	-- WANTED
 	[1765] = "Cofre de madera gastado",	-- Worn Wooden Chest
-	[2008] = "¡Peligro!",	-- Wanted Poster
+	[2008] = "¡Peligro!",	-- Dangerous!
 	[2059] = "Un cadáver de enano",	-- A Dwarven Corpse
 	[2076] = "Caldera burbujeante",	-- Bubbling Cauldron
 	[2083] = "Correspondencia de los Velasangre",	-- Bloodsail Correspondence
