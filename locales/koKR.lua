@@ -937,6 +937,8 @@ for key,value in pairs({
 	[261] = "부서진 상자",	-- Damaged Crate
 	[269] = "야벤이 지키고 있는 썬더브루 맥주통",	-- Guarded Thunder Ale Barrel
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "사서 헤로드의 기록",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "사서 헤로드의 금고",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
 	[1557] = "릴리스의 제단",	-- Lillith's Dinner Table
 	[1561] = "봉인된 함",	-- Sealed Crate
@@ -951,9 +953,11 @@ for key,value in pairs({
 	[1740] = "비밀결사대 문서",	-- Syndicate Documents
 	[1763] = "현상수배!",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "낡은 나무 궤짝",	-- Worn Wooden Chest
+	[2008] = "위험!",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[2059] = "드워프 시체",	-- A Dwarven Corpse
 	[2076] = "끓고 있는 가마솥",	-- Bubbling Cauldron
 	[2083] = "붉은해적단 통신문",	-- Bloodsail Correspondence
+	[2289] = "난파된 구명정",	-- Ruined Lifeboat
 	[2553] = "젖은 두루마리",	-- A Soggy Scroll
 	[2555] = "곰팡이 슨 두루마리",	-- Musty Scroll
 	[2652] = "에벤에셀 러스트로크의 시체",	-- Ebenezer Rustlocke's Corpse
@@ -2688,6 +2692,8 @@ for key,value in pairs({
 	[327592] = "마법 자물쇠",	-- Enchanted Lock
 	[327596] = "부서진 심연 집중",	-- Broken Abyssal Focus
 	[327597] = "낡고 녹슨 상자",	-- Old Rusty Chest
+	[327650] = "전쟁 보급품 상자",	-- War Supply Chest
+	[327652] = "전쟁 보급품 상자",	-- War Supply Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem

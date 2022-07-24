@@ -937,6 +937,8 @@ for key, value in pairs({
 	[261] = "破损的箱子",	-- Damaged Crate
 	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "书呆子赫罗德的档案",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "书呆子赫罗德的保险箱",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "莉莉丝的餐桌",	-- Lillith's Dinner Table
 	[1561] = "密封的箱子",	-- Sealed Crate
@@ -951,9 +953,11 @@ for key, value in pairs({
 	[1740] = "辛迪加文档",	-- Syndicate Documents
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
+	[2008] = "危险！",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron
 	[2083] = "血帆海盗的信件",	-- Bloodsail Correspondence
+	[2289] = "破损的救生艇",	-- Ruined Lifeboat
 	[2553] = "浸水的卷轴",	-- A Soggy Scroll
 	[2555] = "发霉的卷轴",	-- Musty Scroll
 	[2652] = "伊贝尼瑟的尸体",	-- Ebenezer Rustlocke's Corpse
@@ -2688,6 +2692,8 @@ for key, value in pairs({
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
 	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
+	[327650] = "战争补给箱",	-- War Supply Chest
+	[327652] = "战争补给箱",	-- War Supply Chest	--TODO: This was manually translated
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem

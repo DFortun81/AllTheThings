@@ -937,6 +937,8 @@ for key,value in pairs({
 	[261] = "Caixote Danificado",	-- Damaged Crate
 	[269] = "Barril de Cerveja do Trovão Protegido",	-- Guarded Thunder Ale Barrel
 	[270] = "Barril de Cerveja do Trovão Desprotegido",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "Registros do Contador Herodes",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "Cofre do Contador Herodes",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "Procura-se!",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "Mesa de Jantar da Lillith",	-- Lillith's Dinner Table
 	[1561] = "Caixote Selado",	-- Sealed Crate
@@ -951,9 +953,11 @@ for key,value in pairs({
 	[1740] = "Documentos da Camarilha",	-- Syndicate Documents
 	[1763] = "PROCURA-SE",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "Baú de Madeira Gasto",	-- Worn Wooden Chest
+	[2008] = "Perigo!",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadáver Enânico",	-- A Dwarven Corpse
 	[2076] = "Caldeirão Borbulhante",	-- Bubbling Cauldron
 	[2083] = "Correspondência dos Vela Sangrenta",	-- Bloodsail Correspondence
+	[2289] = "Bote Salva-vidas Arruinado",	-- Ruined Lifeboat
 	[2553] = "Pergaminho Encharcado",	-- A Soggy Scroll
 	[2555] = "Pergaminho Mofado",	-- Musty Scroll
 	[2652] = "Cadáver de Ebenezer Rustlocke",	-- Ebenezer Rustlocke's Corpse
@@ -2688,6 +2692,8 @@ for key,value in pairs({
 	[327592] = "Fechadura Encantada",	-- Enchanted Lock
 	[327596] = "Foco Abissal Partido",	-- Broken Abyssal Focus
 	[327597] = "Baú Enferrujado Antigo",	-- Old Rusty Chest
+	[327650] = "Baú de Suprimentos de Guerra",	-- War Supply Chest
+	[327652] = "Baú de Suprimentos de Guerra",	-- War Supply Chest
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
