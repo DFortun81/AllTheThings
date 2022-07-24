@@ -1,31 +1,26 @@
 # AllTheThings
 
-## [SL-2.8.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.8) (2022-07-17)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.7...SL-2.8.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.8.9](https://github.com/DFortun81/AllTheThings/tree/SL-2.8.9) (2022-07-24)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.8.8...SL-2.8.9) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Fearless Spectator
 Watch Global Finals for AWC and MDI to get new title and achievement. This is a time limited event. More info [here](https://worldofwarcraft.com/en-us/news/23823096/watch-the-mdi-awc-shadowlands-global-finals-and-earn-the-fearless-spectator-title).
 
-### Huge rewrite of internal logic
-We will now spread more heavy processing across multiple game frames instead of trying to do everything momentarily which resulted in game stutters. This is mainly utilized by Dynamic Categories (especially Simple ones but Nested too).
-- Added a Dynamic Professions category which populates iteratively to avoid having a super gigantic lag spike at the end of loading the Main list.
-- Added chat notification for Loading/Loaded of Dynamic Groups.
-- Some professions updated to work properly as Dynamic Categories (it is an ongoing process).
-- Existing Flight Paths category now acts as a proper Dynamic Group.
-- Added Dynamic groups for Artifacts, Azerite Essences & Followers.
-- Removed Dynamic Conduits/Runeforge Powers for now.
-
 
 ### Notable changes:
 
-- Factions are now re-cached when refreshing.
-- Fixed some Faction standing logic to work consistently between regular Factions and Friendships, and use Faction standing colors/standings more accurately.
-- Can no longer lock ATT windows which aren't already movable (i.e. locking TradeSkill window accidentally, which apparently causes other issues).
-- Non-movable ATT windows will clear their stored position when loading if they for some reason have a position stored.
-- 100% completion of an ATT window fanfare works again 🎉
+- Fixed a Lua bug when opening a Profession window which has no corresponding content sourced in ATT.
+- Minilist/popouts will fill in properly now (Creation Catalyst class groupings, etc).
+- Fixed Dynamic Azerite Essences to work properly with multiple ranks per essence.
+- Fixed Simple Dynamic categories to take into account that some Things have multiple sources.
+- Azerite Essences and Followers now show their 'Source(s)' when popped out via right-click/command search.
+- Fixed Followers loading crashing the game for now (but they don't have fancy Model tooltips until the root issue can be addressed).
+- Battle Pets learned from Items will now show as the Item in ATT lists and tooltips while those caught in open world will remain as the current blue text.
+- The 'Group Finder' header in `/attwq` will now only show categories which meet the level range for your current character, unless in Account/Debug modes.
+- Fixed unobtainable Things slipping through filters and appearing in Dynamic Categories.
+- Adjusted the background of the Retail ATT window scrollbar to match the Settings scrollbars and give better indication that there is a scrollframe available.
+- Testing out hiding the scrollbar of a Retail ATT window if there's not enough visible rows to require any scrolling.
 - Lots of achievements updated to the current standards of representation.
-- Symlinked a lot of Rare-specific World Quests with their specific Rare (Will probably do this to more WQs like this in the future for better visibility to available Rares in `/attwq`).
-- Shared N'Zoth Assault content will now show up properly in respective zones.
-- Various zones synchronized with ATT Classic: Alterac Mountains.
+- Various zones synchronized with ATT Classic: Undercity, Hillsbrad Foothills, Stranglethorn Vale.
 - Other fixes.
