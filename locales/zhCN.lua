@@ -2693,7 +2693,7 @@ for key, value in pairs({
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
 	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
 	[327650] = "战争补给箱",	-- War Supply Chest
-	--TODO: [327652] = "War Supply Chest",	-- War Supply Chest
+	[327652] = "战争补给箱",	-- War Supply Chest	--TODO: This was manually translated
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
