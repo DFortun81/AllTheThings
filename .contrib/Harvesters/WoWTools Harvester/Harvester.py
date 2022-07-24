@@ -1,0 +1,154 @@
+### Tool Harvesters and Generating Missing with name
+import os
+import re
+import csv
+import requests
+import time
+from bs4 import BeautifulSoup
+
+profession_dict = {
+    "Alchemy": 171,
+    "Blacksmithing": 164,
+    "Cooking": 185,
+    "Enchanting": 333,
+    "Engineering": 202,
+    "Herbalism": 182,
+    "Fishing": 356,
+    "Inscription": 773,
+    "Jewelcrafting": 755,
+    "Leatherworking": 165,
+    "Mining": 186,
+    "Skinning": 393,
+    "Tailoring": 197,
+}
+
+thing_list = [
+    "Achievements",
+    "Factions",
+    "Flight Paths",
+    "Followers",
+    "Illusions",
+    "Mounts",
+    "Pets",
+    "Quests",
+    #"Recipes",
+    "Titles",
+    "Toys",
+    "Transmog",
+]
+
+### IMPORTANT!!! Use time.sleep() to not lag other users
+### IMPORTANT!!! Adding Recipes Module later
+### IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
+
+# This function is to make list sorted
+def bubble_sort(nums):
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(len(nums) - 1):
+            if nums[i] > nums[i + 1]:
+                nums[i], nums[i + 1] = nums[i + 1], nums[i]
+                swapped = True
+
+# This function takes the input(Latest Build ex. "10.0.0.44500") and add it to all the BuildList files at the end.
+def add_latest_build(build):
+    data_folder = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\"
+    for thing in thing_list:
+        path = data_folder + "BuildList "+ thing + ".txt"
+        with open(path, "a") as build_list:
+            build_list.write(build+"\n")
+
+# This function takes the inputs(thing from thing_list, build ex. "10.0.0.44500"). Creates a csv file and from that csv file only choose specific columns of information(usually useful IDs) and writes them in a new file.
+def get_tools_IDs(thing, build):
+    if thing == "Achievements":
+        thing_url = "achievement"
+    elif thing == "Factions":
+        thing_url = "faction"
+    elif thing == "Flight Paths":
+        thing_url = "taxinodes"
+    elif thing == "Followers":
+        thing_url = "garrfollower"
+    elif thing == "Illusions":
+        thing_url = "transmogillusion"
+    elif thing == "Mounts":
+        thing_url = "mount"
+    elif thing == "Pets":
+        thing_url = "battlepetspecies"
+    elif thing == "Quests":
+        thing_url = "questv2"
+    #elif thing == "Recipes":
+        #thing_url = "skilllineability"
+    elif thing == "Titles":
+        thing_url = "chartitles"
+    elif thing == "Toys":
+        thing_url = "toy"
+    elif thing == "Transmog":
+        thing_url = "itemmodifiedappearance"
+    url = "https://wow.tools/dbc/api/export/?name={thing_url}&build={build}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
+    }
+    csv_name = thing + ".csv"
+    txt_name = thing + "Tools" + ".txt"
+    request = requests.get(url, headers=headers)
+    with open(csv_name,"wb") as csv_file:
+        csv_file.write(request.content)
+    with open(csv_name, "r") as csv_file, open(txt_name, "w") as txt_file:
+        reader = csv.DictReader(csv_file)
+        for row in reader:
+            if thing == "Illusions":
+                txt_file.write(row["SpellItemEnchantmentID"]+"\n")
+            elif thing == "Mounts":
+                txt_file.write(row["SourceSpellID"]+"\n")
+            elif thing == "Titles":
+                txt_file.write(row["Mask_ID"]+"\n")
+            elif thing == "Toys":
+                txt_file.write(row["ItemID"]+"\n")
+            #elif thing == "Recipes:"
+            else: #"Achievements", "Factions", "Flight Paths", "Followers", "Pets", "Quests", "Transmog":
+                txt_file.write(row["ID"]+"\n")
+    return txt_name
+
+# This function takes the input(thing from thing_list) as searches in Categories.lua for every ID responding to that thing and adds them in a file.
+def get_categories_IDs(thing):
+    path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\db\\Categories.lua"
+    txt_name = thing + "ATT" + ".txt"
+    with open(path, "r") as categories_file, open(txt_name, "w") as txt_file:
+        for line in categories_file.readlines():
+            line = line.split(",")
+            for ID in line:
+                try:
+                    if thing == "Achievements" and ID.find("ach(") != -1:
+                        ID = re.sub("[^0-9^.]", "", ID)
+                        txt_file.write(ID+"\n")
+                    #elif thing == "Factions" and
+                    #elif thing == "Flight Paths" and
+                    #elif thing == "Followers" and
+                    #elif thing == "Illusions" and
+                    #elif thing == "Mounts" and
+                    #elif thing == "Pets" and
+                    elif thing == "Quests" and (ID.find("q(") != -1 or ID.find("questID") != -1):
+                        ID = re.sub("[^0-9^.]", "", ID)
+                        txt_file.write(ID+"\n")
+                    #elif thing == "Titles", and
+                    #elif thing == "Toys", and
+                    #elif thing == "Transmog", and
+                except:
+                    continue
+    return txt_name
+
+# This function takes the input(thing from thing_list) and create a raw file that only contains build and ID and are only suppose to be regenerated ca:1 per year. From these files we build our "missing"-files
+def create_raw_file(thing):
+    difference_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
+    build_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\BuildList {thing}.txt"
+    with open(difference_path, "a") as difference_file, open(build_path, "r") as build_file:
+
+# This function takes the input(Latest Build ex. "10.0.0.44500") and generate the difference between this and latest build in Build List file then add the new data to raw files.
+#def add_latest_data(build):
+
+# This function takes the input(thing from thing_list) and will calculate the difference between raw files and categories.lua(what actually is in ATT at the moment). Furthermoore it will add this different to "missing"-file.
+#def create_missing_file(thing):
+
+# This function takes the input(thing from thing_list) and will try to give the thing a name. (Might need more information in the raw file since wowhead doesnt have everything)
+#def get_name(thing):
