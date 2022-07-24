@@ -953,7 +953,7 @@ for key, value in pairs({
 	[1740] = "辛迪加文档",	-- Syndicate Documents
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
-	[2008] = "危险！",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
+	[2008] = "危险！",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron
 	[2083] = "血帆海盗的信件",	-- Bloodsail Correspondence

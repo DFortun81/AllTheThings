@@ -953,7 +953,7 @@ for key,value in pairs({
 	[1740] = "Documentos da Camarilha",	-- Syndicate Documents
 	[1763] = "PROCURA-SE",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "Baú de Madeira Gasto",	-- Worn Wooden Chest
-	[2008] = "Perigo!",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
+	[2008] = "Perigo!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadáver Enânico",	-- A Dwarven Corpse
 	[2076] = "Caldeirão Borbulhante",	-- Bubbling Cauldron
 	[2083] = "Correspondência dos Vela Sangrenta",	-- Bloodsail Correspondence

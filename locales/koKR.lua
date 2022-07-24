@@ -953,7 +953,7 @@ for key,value in pairs({
 	[1740] = "비밀결사대 문서",	-- Syndicate Documents
 	[1763] = "현상수배!",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "낡은 나무 궤짝",	-- Worn Wooden Chest
-	[2008] = "위험!",	-- Wanted Poster	--TODO: This was taken from classic Wowhead
+	[2008] = "위험!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "드워프 시체",	-- A Dwarven Corpse
 	[2076] = "끓고 있는 가마솥",	-- Bubbling Cauldron
 	[2083] = "붉은해적단 통신문",	-- Bloodsail Correspondence
