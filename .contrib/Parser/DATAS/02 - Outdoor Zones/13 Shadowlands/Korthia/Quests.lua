@@ -799,6 +799,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
+			q(63959, {	-- Observational Records
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178844 },	-- Ta'nasi
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
 			q(64103, {	-- Old Tricks Work Best
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178808 },	-- Baroness Draka
@@ -978,12 +984,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178805 },	-- Emeni
 				["isDaily"] = true,
 				["coord"] = { 59.9, 27.0, KORTHIA },
-			}),
-			q(63959, {	-- Observational Records
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(65146, {	-- Relic Hunter
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir

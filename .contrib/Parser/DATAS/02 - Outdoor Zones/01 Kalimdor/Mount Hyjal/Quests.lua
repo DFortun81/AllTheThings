@@ -879,6 +879,7 @@ _.Zones =
 					["sourceQuests"] = {
 						25310,	-- The Greater of Two Evils
 						25311,	-- Twilight Territory
+						25308,	-- Seeds of Discord
 					},
 				}),
 				q(25309, {	-- Spiritual Training: Mercy is for the Weak
