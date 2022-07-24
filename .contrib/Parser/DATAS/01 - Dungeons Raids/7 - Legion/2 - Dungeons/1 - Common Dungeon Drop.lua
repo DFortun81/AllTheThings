@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root("Instances", tier(LEGION_TIER, {
-	n(-23, {
+	n(-23, {	-- WoD Common Dungeon Drop
 		i(141591, {	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
 			["crs"] = {
 				102387,	-- Sael'orn
@@ -24,13 +24,14 @@ root("Instances", tier(LEGION_TIER, {
 				120793,	-- Mephistroth
 				-- #if AFTER 7.3.0
 				122314,	-- L'ura
+				124729,	-- L'ura
 				-- #endif
 				-- #endif
 				-- #endif
 			},
 		}),
 		i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3) (RECIPE!)
-			["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. Only recently on the 01.10.2021 it was confirmed to drop from Nightbane (Mythic) and on the 18.04.2022 it was confirmed to drop from Violet Hold Heroic.",
+			["description"] = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
 		-- [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
 			["crs"] = {
 				102387,	-- Sael'orn confirmed 2022-04-18
@@ -51,7 +52,8 @@ root("Instances", tier(LEGION_TIER, {
 				-- #if AFTER 7.2.0
 				--120793,	-- Mephistroth
 				-- #if AFTER 7.3.0
-				--122314,	-- L'ura
+				122314,	-- L'ura confirmed 2022-07-22
+				124729,	-- L'ura
 				-- #endif
 				-- #endif
 				-- #endif

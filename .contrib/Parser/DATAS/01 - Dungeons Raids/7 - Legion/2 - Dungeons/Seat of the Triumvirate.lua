@@ -180,21 +180,24 @@ root("Instances", { tier(LEGION_TIER, {
 					i(151288),	-- Void-Resistant Seedpod
 				})),
 				cr(122314, e(1982, {	-- L'ura
-					ach(12007),	-- Heroic: Seat of the Triumvirate
-					i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
-					i(151311),	-- Band of the Triumvirate
-					i(151302),	-- Cord of Unraveling Reality
-					i(151340),	-- Echo of L'ura
-					i(151301),	-- Slippers of Growing Despair
-					i(151324),	-- Helm of Shadowy Descent
-					i(151339),	-- Legplates of Ultimate Sacrifice
-					i(151319),	-- Twilight's Edge Spaulders
-					i(151328),	-- Vambraces of Lost Hope
-					i(151313),	-- Vest of the Void's Embrace
-					i(151322),	-- Void-Touched Grips
-					i(151289),	-- Badge of the Fallen Vindicator
-					i(151296),	-- Blood of the Vanquished
-					i(151292),	-- Sanctified Eredar Lock
+					["crs"] = { 124729 },	-- L'ura
+					["g"] = {
+						ach(12007),	-- Heroic: Seat of the Triumvirate
+						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
+						i(151311),	-- Band of the Triumvirate
+						i(151302),	-- Cord of Unraveling Reality
+						i(151340),	-- Echo of L'ura
+						i(151301),	-- Slippers of Growing Despair
+						i(151324),	-- Helm of Shadowy Descent
+						i(151339),	-- Legplates of Ultimate Sacrifice
+						i(151319),	-- Twilight's Edge Spaulders
+						i(151328),	-- Vambraces of Lost Hope
+						i(151313),	-- Vest of the Void's Embrace
+						i(151322),	-- Void-Touched Grips
+						i(151289),	-- Badge of the Fallen Vindicator
+						i(151296),	-- Blood of the Vanquished
+						i(151292),	-- Sanctified Eredar Lock
+					},
 				})),
 			}),
 			d(23, {	-- Mythic
