@@ -2648,6 +2648,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						1791,	-- Slavering Ghoul
 					},
 					-- #endif
+					["timeline"] = { "removed 4.0.3" }, --
 				}),
 				-- #if BEFORE 4.0.3
 				i(13496, {	-- Recipe: Greater Nature Protection Potion
