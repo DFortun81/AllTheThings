@@ -138,7 +138,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = appendGroups(CLASSIC_ENCHANTING,
 							-- #if AFTER CATA
-							CATA_ENCHANTING,
+							CATA_ENCHANTING
 							-- #else
 							{}
 							-- #endif
