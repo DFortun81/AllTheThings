@@ -13,11 +13,27 @@ required-dependencies:
 
 optional-dependencies:
 
+embedded-libraries:
+  - CallbackHandler-1.0
+  - LibDataBroker-1.1
+  - LibStub
+
 license-output: LICENSE.txt
 
 tools-used:
-    - data-tools
 
 #manual-changelog:
 # filename: CHANGELOG.md
 # markup-type: markdown
+
+plain-copy:
+  - assets/*
+  - db/*
+  - lib/*
+  - locales/*
+  - src/*
+  - AllTheThings.lua
+  - Bindings.xml
+  - CHANGELOG.md
+  - LICENSE.TXT
+  - Settings.lua
