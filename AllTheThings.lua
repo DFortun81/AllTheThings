@@ -4777,24 +4777,45 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- If the item is a recipe, then show which characters know this recipe.
-	-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
-	if topLevelSearch and group.spellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-		local knownBy = {};
-		for guid,character in pairs(ATTCharacterData) do
-			if character.Spells and character.Spells[group.spellID] then
-				tinsert(knownBy, character);
-			end
-		end
-		if #knownBy > 0 then
-			app.Sort(knownBy, function(a, b) return (a.name or "") < (b.name or ""); end);
-			local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
-			tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
-		end
-	end
-
 	-- Check if finally leaving the top-level search
 	if topLevelSearch then
+
+		-- If the item is a recipe, then show which characters know this recipe.
+		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		local groupSpellID = group.spellID;
+		if groupSpellID and group.filterID ~= 100 and group.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+			local knownBy = {};
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Spells and character.Spells[groupSpellID] then
+					tinsert(knownBy, character);
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, app.SortDefaults.Name);
+				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			end
+		end
+
+		-- If the result has a QuestID, then show which characters have this QuestID.
+		-- app.PrintDebug(topLevelSearch,group.spellID,group.filterID,group.collectible)
+		local groupQuestID = group.questID;
+		if groupQuestID and app.Settings:GetTooltipSetting("KnownBy") then
+			local knownBy = {};
+			local charQuests;
+			for guid,character in pairs(ATTCharacterData) do
+				charQuests = character.Quests;
+				if charQuests and charQuests[groupQuestID] then
+					tinsert(knownBy, character);
+				end
+			end
+			if #knownBy > 0 then
+				app.Sort(knownBy, app.SortDefaults.Name);
+				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+			end
+		end
+
 		group.isBaseSearchResult = true;
 		app.InitialCachedSearch = nil;
 

@@ -330,10 +330,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 						i(17686, {	-- Master Hunter's Bow
-							["timeline"] = { "added 1.2.0", "removed 4.0.3", "added 5.0.4" },	-- NOTE: Confirm this made a comeback? WoWHead and WoWPedia both show this unavailable.
+							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
 						}),
 						i(17687, {	-- Master Hunter's Rifle
-							["timeline"] = { "added 1.2.0", "removed 4.0.3" },
+							["timeline"] = { "added 1.2.0" },
 						}),
 						i(4110, {	-- Master Hunter's Bow
 							["timeline"] = { "removed 1.2.0" },
