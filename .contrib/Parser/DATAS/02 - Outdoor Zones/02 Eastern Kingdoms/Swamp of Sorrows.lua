@@ -133,7 +133,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 				}),
-				q(8417, {	-- A Troubled Spirit
+				applyclassicphase(PHASE_FOUR, q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
 						["qgs"] = {
 							7315,	-- Darnath Bladesinger <Warrior Trainer> (Darnassus)
@@ -168,7 +168,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
-				}),
+				})),
 				q(27849, {	-- Assault on Stonard
 					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
@@ -1167,7 +1167,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(8424, {	-- War on the Shadowsworn
+				applyclassicphase(PHASE_FOUR, q(8424, {	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
@@ -1186,8 +1186,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 6005 },	-- Shadowsworn Thug
 						}),
 					},
-				}),
-				q(8423, {	-- Warrior Kinship
+				})),
+				applyclassicphase(PHASE_FOUR, q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
@@ -1200,7 +1200,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 5993 },	-- Helboar
 						}),
 					},
-				}),
+				})),
 				q(27857, {	-- We're Under Attack!
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuests"] = {

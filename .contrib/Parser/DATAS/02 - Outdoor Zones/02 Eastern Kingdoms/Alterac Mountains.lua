@@ -70,7 +70,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
-				q(8233, {	-- A Simple Request
+				applyclassicphase(PHASE_FOUR, q(8233, {	-- A Simple Request
 					["allianceQuestData"] = {
 						["qgs"] = {
 							4163,	-- Syurna <Rogue Trainer>
@@ -96,7 +96,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
-				}),
+				})),
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
@@ -212,7 +212,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(8235, {	-- Encoded Fragments
+				applyclassicphase(PHASE_FOUR, q(8235, {	-- Encoded Fragments
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -228,7 +228,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
+				})),
 				q(511, {	-- Encrypted Letter
 					["providers"] = {
 						{ "o", 1738 },	-- Syndicate Documents
@@ -344,7 +344,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(8234, {	-- Sealed Azure Bag
+				applyclassicphase(PHASE_FOUR, q(8234, {	-- Sealed Azure Bag
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
@@ -359,8 +359,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 6188,	-- Timbermaw Shaman
 						}),
 					},
-				}),
-				q(8412, {	-- Spirit Totem
+				})),
+				applyclassicphase(PHASE_FOUR, q(8412, {	-- Spirit Totem
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
@@ -388,7 +388,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
+				})),
 				q(554, {	-- Stormpike's Deciphering
 					["providers"] = {
 						{ "n", 2277 },	-- Loremaster Dibbs

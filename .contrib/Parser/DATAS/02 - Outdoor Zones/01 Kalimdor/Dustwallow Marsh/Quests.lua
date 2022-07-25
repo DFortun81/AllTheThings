@@ -298,6 +298,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
+				q(1271, {	-- Feast at the Blue Recluse
+					["qg"] = 1141,	-- Angus Stern
+					["sourceQuest"] = 1222,	-- Stinky's Escape
+					["coord"] = { 51.7, 93.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(1177,  {	-- Hungry!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet

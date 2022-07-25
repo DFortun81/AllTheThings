@@ -236,7 +236,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
-				q(8233, {	-- A Simple Request (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR, q(8233, {	-- A Simple Request (Alterac Mountains)
 					["allianceQuestData"] = {
 						["qgs"] = {
 							4163,	-- Syurna <Rogue Trainer>
@@ -262,7 +262,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
 					["lvl"] = 50,
-				}),
+				})),
 				-- #endif
 				q(28587, {	-- Aid of the Frostwolf
 					["qg"] = 48545,	-- High Warlord Cromush
@@ -1048,7 +1048,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 19,
 				}),
 				-- #if AFTER CATA
-				q(8235, {	-- Encoded Fragments (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR, q(8235, {	-- Encoded Fragments (Alterac Mountains)
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -1064,7 +1064,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
+				})),
 				q(511, {	-- Encrypted Letter (Alterac Mountains)
 					["providers"] = {
 						{ "o", 1738 },	-- Syndicate Documents
@@ -1760,7 +1760,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["lvl"] = 13,
 				}),
 				-- #if AFTER CATA
-				q(8234, {	-- Sealed Azure Bag	(Alterac Mountains)
+				applyclassicphase(PHASE_FOUR, q(8234, {	-- Sealed Azure Bag	(Alterac Mountains)
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
@@ -1775,7 +1775,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["cr"] = 6188,	-- Timbermaw Shaman
 						}),
 					},
-				}),
+				})),
 				-- #endif
 				q(28636, {	-- Silence of the Dwarves
 					["qg"] = 49240,	-- Captain Ironhill's Ghost
@@ -1854,7 +1854,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if AFTER CATA
-				q(8412, {	-- Spirit Totem (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR, q(8412, {	-- Spirit Totem (Alterac Mountains)
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
@@ -1882,7 +1882,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
-				}),
+				})),
 				-- #endif
 				q(28489, {	-- Stagwiches
 					["qg"] = 2397,	-- Derak Nightfall

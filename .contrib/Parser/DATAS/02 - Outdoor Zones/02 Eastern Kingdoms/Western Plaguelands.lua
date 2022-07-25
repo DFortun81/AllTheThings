@@ -650,7 +650,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8415, {	-- Chillwind Camp
+				applyclassicphase(PHASE_FOUR, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 					["qgs"] = {
 						5149,	-- Brandur Ironhammer <Paladin Trainer>
 						928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -664,7 +664,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
-				}),
+				})),
 				{	-- Chromatic Mantle of the Dawn
 					["allianceQuestData"] = q(5521, {	-- Chromatic Mantle of the Dawn [A]
 						["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
@@ -846,16 +846,16 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(8414, {	-- Dispelling Evil
+				applyclassicphase(PHASE_FOUR, q(8414, {	-- Dispelling Evil
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["sourceQuest"] = 8415,	-- Chillwind Point
+					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-				}),
+				})),
 				q(27157, {	-- Drudges... <Sigh>
 					["qg"] = 45157,	-- Lieutenant Myner
 					["sourceQuest"] = 27156,	-- It's About Time!
@@ -1000,7 +1000,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 48.5, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(8416, {	-- Inert Scourgestones
+				applyclassicphase(PHASE_FOUR, q(8416, {	-- Inert Scourgestones
 					["providers"] = {
 						{ "n", 1854 },	-- High Priest Thel'danis
 						{ "i", 20612 },	-- Inert Scourgestone
@@ -1011,7 +1011,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-				}),
+				})),
 				{	-- Invader's Scourgestones
 					["allianceQuestData"] = q(5403, {	-- Invader's Scourgestones [A]
 						["qg"] = 10840,	-- Argent Officer Pureheart

@@ -894,7 +894,6 @@ root("HiddenQuestTriggers", {
 		q(30817),	-- The Healing of Shen-zin Su - completed with quest 29799
 		q(30818),	-- A New Fate - completed with quest 29800
 		q(30936),	-- UNUSED - completed with quest 30884
-		q(30988),	-- The Alliance Way - completed with quest 31013
 		q(31016),	-- The Lorewalkers - completed with quest 31367 & 31368
 		q(31033),	-- Adventurers Wanted: Ragefire Chasm - completed with quest 31034 & 31036 & 31037
 		q(31035),	-- Enemies Below - completed with quest 26865 & 26866 & 26867

@@ -310,14 +310,14 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
-				q(40717, {	-- Calling of the Council
+				q(40717, {	-- Calling of the Council [A]
 					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 					["races"] = ALLIANCE_ONLY,
 					-- ["coord"] = { },
 				}),
-				q(40718, {	-- Calling of the Council
+				q(40718, {	-- Calling of the Council [H]
 					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant

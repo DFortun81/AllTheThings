@@ -362,14 +362,14 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 13.8, 64.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8153, {	-- Courser Antlers
+				applyclassicphase(PHASE_FOUR, q(8153, {	-- Courser Antlers
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(14146, {	-- Defend the Gates!
 					["sourceQuests"] = { 14135 },	-- Up a Tree
 					["races"] = HORDE_ONLY,
@@ -1128,7 +1128,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["model"] = 198793,
 				}),
-				q(8151, {	-- The Hunter's Charm
+				applyclassicphase(PHASE_FOUR, q(8151, {	-- The Hunter's Charm
 					["qgs"] = {
 						4205,	-- Dorion <Hunter Trainer>
 						5116,	-- Olmin Burningbeard <Hunter Trainer>
@@ -1147,7 +1147,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(8256, {	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
@@ -1340,14 +1340,14 @@ root("Zones", m(KALIMDOR, {
 						i(131340, {["timeline"] = {"added 7.0.3.22248"}}),	-- Capacitance Bands
 					},
 				}),
-				q(8231, {	-- Wavethrashing
+				applyclassicphase(PHASE_FOUR, q(8231, {	-- Wavethrashing
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(26294, {	-- Weapons of Mass Dysfunction
 					["sourceQuests"] = { 26293 },	-- Machines of War
 					["provider"] = { "n", 42672 },	-- Foreman Glibbs

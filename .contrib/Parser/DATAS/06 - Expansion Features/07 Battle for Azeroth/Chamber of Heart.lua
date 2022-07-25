@@ -378,12 +378,13 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 				}),
 				q(58506, {	-- Network Diagnostics
-					["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 					["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 					["sourceQuests"] = {
 						58502,	-- Where the Heart Is (A)
 						58583,	-- Where the Heart Is (H)
 					},
+					["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
+					["timeline"] = { "added 8.3.0.33062" },
 				}),
 				q(55393, {	-- Null the Void
 					["provider"] = { "n", 151693 },	-- Merithra of the Dream

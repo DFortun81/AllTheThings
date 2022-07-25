@@ -134,9 +134,12 @@ root("Zones", m(KALIMDOR, {
 			q(29401, {	-- Blown Away
 				["provider"] = { "n", 54004 },	-- Jaga
 				["coord"] = { 48.1, 46.8, ORGRIMMAR },
+				["timeline"] = { "added 4.2.0.14133" },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(72045),	-- Horde Balloon
+					i(72045, {	-- Horde Balloon
+						["timeline"] = { "added 4.2.0.14133" },
+					}),
 				},
 			}),
 			q(4300,  {	-- Bone-Bladed Weapons

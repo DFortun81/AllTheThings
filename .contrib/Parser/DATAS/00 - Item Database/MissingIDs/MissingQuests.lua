@@ -10,10 +10,6 @@ q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(100),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(137),	-- <NYI> <TXT> Stormwind Commendation,		TBC: <NYI> <TXT> Stormwind Commendation,		CLASSIC: <NYI> <TXT> Stormwind Commendation
-q(205),	-- Troll Witchery,		TBC: Troll Witchery,		CLASSIC: Troll Witchery
-q(207),	-- Kurzen's Mystery,		TBC: Kurzen's Mystery,		CLASSIC: Kurzen's Mystery
-q(212),	-- A Meal Served Cold,		TBC: A Meal Served Cold,		CLASSIC: A Meal Served Cold
-q(215),	-- Jungle Secrets,		TBC: Jungle Secrets,		CLASSIC: Jungle Secrets
 q(220),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -21,13 +17,11 @@ q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
-q(344),	-- Brother Paxton,		TBC: Brother Paxton,		CLASSIC: Brother Paxton
 q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(392),	-- The Curious Visitor,		TBC: The Curious Visitor,		CLASSIC: The Curious Visitor
 q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the Past
 q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Head of the Beast
-q(395),	-- Brotherhood's End,		TBC: Brotherhood's End,		CLASSIC: Brotherhood's End
 q(399),	-- Humble Beginnings,		TBC: Humble Beginnings,		CLASSIC: Humble Beginnings
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
@@ -40,8 +34,6 @@ q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(534),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloodstone Pendant,		CLASSIC: <NYI> <TXT> Bloodstone Pendant
-q(578),	-- The Stone of the Tides,		TBC: The Stone of the Tides,		CLASSIC: The Stone of the Tides
-q(601),	-- Water Elementals,		TBC: Water Elementals,		CLASSIC: Water Elementals
 q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
@@ -220,8 +212,6 @@ q(1537),	-- <NYI> Call of Air,		TBC: <NYI> Call of Air,		CLASSIC: <NYI> Call of 
 q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1579),	-- Gaffer Jacks,		TBC: Gaffer Jacks,		CLASSIC: Gaffer Jacks
 q(1580),	-- Electropellers,		TBC: Electropellers,		CLASSIC: Electropellers
-q(1638),	-- A Warrior's Training,		TBC: A Warrior's Training,		CLASSIC: A Warrior's Training
-q(1640),	-- Beat Bartleby,		TBC: Beat Bartleby,		CLASSIC: Beat Bartleby
 q(1642),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1643),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1644),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
@@ -234,11 +224,8 @@ q(1661),	-- The Tome of Nobility,		TBC: The Tome of Nobility,		CLASSIC: The Tome
 q(1662),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1665),	-- Bartleby's Mug,		TBC: Bartleby's Mug,		CLASSIC: Bartleby's Mug
-q(1666),	-- Marshal Haggard,		TBC: Marshal Haggard,		CLASSIC: Marshal Haggard
 q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
-q(1716),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of Souls
 q(1717),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
 q(1719),	-- The Affray,		TBC: The Affray,		CLASSIC: The Affray
@@ -476,13 +463,6 @@ q(5630),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5631),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5632),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5633),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5634),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5635),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5636),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5637),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5638),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5639),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
-q(5640),	-- Desperate Prayer,		TBC: Desperate Prayer,		CLASSIC: Desperate Prayer
 q(5641),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5642),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5643),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
@@ -507,9 +487,6 @@ q(5672),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5673),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5674),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5675),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5676),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
-q(5677),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
-q(5678),	-- Arcane Feedback,		TBC: Arcane Feedback,		CLASSIC: Arcane Feedback
 q(5680),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5681),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5682),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -635,10 +612,6 @@ q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>,		CLASSIC: Praise from th
 q(7788),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(7789),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
 q(7790),	-- The Written Word,		TBC: REUSE,		CLASSIC: REUSE
-q(7791),	-- A Donation of Wool,		TBC: A Donation of Wool,		CLASSIC: A Donation of Wool
-q(7793),	-- A Donation of Silk,		TBC: A Donation of Silk,		CLASSIC: A Donation of Silk
-q(7794),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
-q(7795),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7799),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
 q(7800),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7869),	-- test quest - do not use,		CLASSIC: test quest - do not use
@@ -662,7 +635,6 @@ q(8162),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines,		CLASSIC: 
 q(8230),	-- Collin's Test Quest,		CLASSIC: Collin's Test Quest
 q(8247),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(8248),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(8254),	-- Cenarion Aid,		TBC: Cenarion Aid,		CLASSIC: Cenarion Aid
 q(8266),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
 q(8268),	-- Ribbons of Sacrifice,		TBC: Ribbons of Sacrifice,		CLASSIC: Ribbons of Sacrifice
 q(8275),	-- Taking Back Silithus,		TBC: Taking Back Silithus,		CLASSIC: Taking Back Silithus
@@ -1187,10 +1159,6 @@ q(26945),	-- Learning New Techniques
 q(26946),	-- A Rogue's Advantage
 q(26947),	-- A Woodsman's Training
 q(26948),	-- Moonfire
-q(26960),	-- My Son, the Prince
-q(26975),	-- Rallying the Fleet
-q(26977),	-- Twilight Investigation
-q(26997),	-- The Usual Suspects
 q(27014),	-- Hallowed Note
 q(27015),	-- Consecrated Note
 q(27020),	-- The First Lesson
@@ -1199,15 +1167,10 @@ q(27022),	-- Extinguishing the Idol
 q(27023),	-- The Way of the Sunwalkers
 q(27027),	-- Primal Strike
 q(27029),	-- Cure the Scourge
-q(27044),	-- Peasant Problems
 q(27052),	-- Lingering Twilight
-q(27060),	-- Unholy Cow
-q(27064),	-- He's Holding Out on Us
 q(27066),	-- Learning the Word
 q(27067),	-- Moonfire
-q(27072),	-- The Old Barracks
 q(27081),	-- [DEPRECATED]Trusting the Traitor
-q(27092),	-- Cataclysm in the Catacombs
 q(27137),	-- Earth Girls Aren't So Easy
 q(27138),	-- Earth Girls Aren't So Easy
 q(27149),	-- School of the Damned
@@ -1235,7 +1198,6 @@ q(28642),	-- Shy-Rotam
 q(28648),	-- Frak's Wild Ride
 q(28739),	-- Night Elf Class Skill Tracker Quest
 q(28754),	-- Battle of Life and Death
-q(28807),	-- Expert Opinion
 q(28835),	-- Necessary Refreshment (Backup Groundspawn Quest)
 q(28844),	-- [DEPRECATED] Hyena Harvest
 q(28851),	-- [DEPRECATED] Sullah's Sideshow

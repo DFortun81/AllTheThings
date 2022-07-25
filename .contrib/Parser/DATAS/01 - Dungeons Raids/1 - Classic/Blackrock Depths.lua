@@ -500,6 +500,59 @@ root("Instances", tier(CLASSIC_TIER, {
 					["cost"] = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
 					["repeatable"] = true,
 				}),
+				q(28401, {	-- Slaves of the Firelord
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164945,	-- Mulric Boldrock
+						-- #else
+						20407,	-- Farseer Umbrua
+						-- #endif
+					},
+					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 78.2, 70.9, STORMWIND_CITY },
+						-- #else
+						{ 64.6, 33.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(65640, {	-- Mask of the Farseer
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65622, {	-- Headcover of the Farseer
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28399, {	-- Stones of Binding
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164942,	-- Evelyn Thorn
+						-- #else
+						461,	-- Demisette Cloyce
+						-- #endif
+					},
+					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.5, 69.9, STORMWIND_CITY },
+						-- #else
+						{ 39.4, 84.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(65621, {	-- Horns of Justified Sins
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
 				q(6402, {	-- Stormwind Rendezvous
 					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4322,	-- Jail Break!
@@ -514,6 +567,31 @@ root("Instances", tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+				}),
+				q(28406, {	-- The Dark Iron Army
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						13283,	-- Lord Tony Romano
+						-- #else
+						164946,	-- Veruca Darkstream
+						-- #endif
+					},
+					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 78.7, 70.6, STORMWIND_CITY },
+						-- #else
+						{ 79.6, 60.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["groups"] = {
+						i(65624, {	-- SI:7 Special Issue Facemask
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
 				}),
 				q(6501, {	-- The Dragon's Eye
 					["providers"] = {
@@ -560,6 +638,31 @@ root("Instances", tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 3.0.2" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+				}),
+				q(28394, {	-- The Golem Lord's Creations
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164960,	-- Dalgrun Steelpine <Hunter Trainer>
+						-- #else
+						44247,	-- Wulf Hansreim
+						-- #endif
+					},
+					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 71.2, STORMWIND_CITY },
+						-- #else
+						{ 79.0, 71.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(65619, {	-- Helm of the Crown
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
 				}),
 				q(4286, {	-- The Good Stuff
 					["qg"] = 9177,	-- Oralius
@@ -658,6 +761,25 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 						i(12543, {	-- Songstone of Ironforge
 							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(28398, {	-- The Pyromancer's Grimoire
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164955,	-- Frazzle Frostfingers
+						-- #else
+						331,	-- Maginor Dumas
+						-- #endif
+					},
+					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas
+					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["groups"] = {
+						i(65620, {	-- Hood of the Royal Wizard
+							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
 				}),
@@ -840,6 +962,47 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
+				q(28405, {	-- Weapons of Darkness
+					["qgs"] = {
+						-- #if AFTER SHADOWLANDS
+						164952,	-- Ezul'aan <Paladin Trainer>
+						-- #else
+						928,	-- Lord Grayson Shadowbreaker
+						-- #endif
+					},
+					["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 79.2, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 52.6, 45.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(65623, {	-- Helm of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65641, {	-- Faceguard of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65646, {	-- Headguard of the Order
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						-- You get these when completing the quest
+						i(141976, {	-- Headguard of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(141977, {	-- Faceguard of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(141978, {	-- Helm of the Order
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
 				q(3982, {	-- What Is Going On? (1/2)
 					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["sourceQuest"] = 3981,	-- Commander Gor'shak
@@ -861,8 +1024,37 @@ root("Instances", tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				}),
-
-				q(28457, {	-- A Dangerous Alliance
+				
+				q(28393, {	-- A Dangerous Alliance [A]
+					["qgs"] = {
+						-- #if BEFORE SHADOWLANDS
+						914,	-- Ander Germaine
+						-- #else
+						164939,	-- Signilda Hardforge <Warrior Trainer>
+						-- #endif
+					},
+					["sourceQuest"] = 28258,	-- Meet with Ander Germaine
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 80.2, 70.2, STORMWIND_CITY },
+						-- #else
+						{ 79.4, 69.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(50, 20, 50),
+					["groups"] = {
+						i(65618, {	-- Faceguard of the Crown
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65639, {	-- Headguard of the Crown
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+					},
+				}),
+				q(28457, {	-- A Dangerous Alliance [H]
 					["qg"] = 168596,	-- Gormok Ogrefist
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
 					["coord"] = { 73.6, 45.6, ORGRIMMAR },
@@ -871,8 +1063,12 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(50, 20, 50),
 					["groups"] = {
-						i(65625),	-- Faceguard of the Horde
-						i(65642),	-- Headguard of the Horde
+						i(65625, {	-- Faceguard of the Horde
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						i(65642, {	-- Headguard of the Horde
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
 					},
 				}),
 				-- #if AFTER SHADOWLANDS
@@ -1207,7 +1403,31 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(65636),	-- Crown of the Shadow-Walker
 					},
 				}),
-
+				q(28328, {	-- Twilight Scheming [Alliance]
+					-- #if ANYCLASSIC
+					["qg"] = 376,	-- High Priestess Laurena
+					["coord"] = { 49.6, 44.8, STORMWIND_CITY },
+					-- #else
+					["qg"] = 164949,	-- Patrice Lancaster
+					["coord"] = { 78.9, 69.8, STORMWIND_CITY },
+					-- #endif
+					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { PRIEST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(65616, {	-- Crown of the Hallowed
+							["timeline"] = { "added 4.0.3.13277" },
+						}),
+						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
+						-- Crieve note: The following items are still sourceless on WoWHead, so it's quite possible the intent was to make versions for Allied Races, but Blizzard realized that'd be dumb and smacked the intern that was doing the dumb.
+					--	i(141979),	-- Crown of the Hallowed
+					--	i(141980),	-- Crown of the Hallowed
+					--	i(141981),	-- Crown of the Hallowed
+					--	i(141982),	-- Crown of the Hallowed
+					},
+				}),
+				
 				q(27569, {	-- Dark Iron Tacticians
 					["qg"] = 45894,	-- Prospector Seymour
 					["sourceQuest"] = 27568,	-- Infilitrating Shadowforge City [Alliance]

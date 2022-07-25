@@ -313,6 +313,22 @@ root("Instances", tier(CLASSIC_TIER, {
 					},
 				}),
 				-- #endif
+				q(27225, {	-- A Summons from Ander Germaine
+					["qgs"] = {
+						4087,	-- Arias'ta Bladesinger
+						17120,	-- Behomat
+					},
+					["coords"] = {
+						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(20, 8, 20),
+				}),
 				q(27403, {	-- A True Sunwalker
 					["qg"] = 44725,	-- Sunwalker Atohmo
 					["sourceQuest"] = 27304,	-- Follow the Sun [CATA] / Meet with Avaros Dawnglaive [Tauren] [SL+]

@@ -2221,10 +2221,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(28596, {	-- Welcome to Highbank!
-					["sourceQuests"] = { 28832 },	-- Twilight Shores
+					["provider"] = { "n", 49022 },	-- Lieutenant Fawkes
+					["sourceQuest"] = 28832,	-- Twilight Shores (2/2)
 					["coord"] = { 80.9, 79.4, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 49022 },	-- Lieutenant Fawkes
 				}),
 				q(27641, {	-- While Meeting The Family
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die
