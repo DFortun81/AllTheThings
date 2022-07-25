@@ -15529,7 +15529,7 @@ local StoreWindowPosition = function(self)
 			-- print("removing stored window",self.Suffix)
 			local key = app.Settings:GetProfile();
 			local profile = AllTheThingsProfiles.Profiles[key];
-			if profile.Windows then
+			if profile and profile.Windows then
 				profile.Windows[self.Suffix] = nil;
 			end
 		end
