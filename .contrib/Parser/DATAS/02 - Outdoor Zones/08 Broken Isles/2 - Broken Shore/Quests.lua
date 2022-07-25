@@ -214,11 +214,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(47045, {	-- Further Progress
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(46501, {	-- Grave Robbin'
 				["sourceQuests"] = { 46499 },	-- Spiders, Huh?
@@ -452,6 +454,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 			}),
 			q(46774, {	-- The Nether Disruptor
+				["sourceQuest"] = 46245,	-- Begin Construction
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["g"] = {
 					i(147451),	-- Armorcrafter's Commendation
@@ -485,6 +488,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(46845, {	-- Vengeance Point
 				["sourceQuests"] = { 46832 },	-- Aalgen Point
