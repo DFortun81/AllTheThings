@@ -764,6 +764,7 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
 				o = objFunc(unpack(params));
+				rawset(t, "__o", o);
 			end
 
 			-- override for the object
@@ -783,12 +784,12 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 		-- transfer field sets to the underlying object
 		__newindex = function(t, key, val)
 			if o then
-				o[key] = val;
+				rawset(o, key, val);
 			end
 		end,
 	};
 	-- data is just an empty table with a loader metatable
-	local dlo = setmetatable({}, loader);
+	local dlo = setmetatable({__dlo=true}, loader);
 	return dlo;
 end
 app.SetDataMember = SetDataMember;
@@ -1836,7 +1837,7 @@ app.SourceSpecificFields = {
 };
 -- Merges the properties of the t group into the g group, making sure not to alter the filterability of the group.
 -- Additionally can specify that the object is being cloned so as to skip special merge restrictions
-local MergeProperties = function(g, t, noReplace, clone)
+local function MergeProperties(g, t, noReplace, clone)
 	if g and t then
 		local skips = app.MergeSkipFields;
 		if noReplace then
@@ -1910,9 +1911,7 @@ local MergeProperties = function(g, t, noReplace, clone)
 end
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
--- CreateObject(t, rootOnly)
-local CreateObject;
-CreateObject = function(t, rootOnly)
+local function CreateObject(t, rootOnly)
 	if not t then return {}; end
 
 	-- already an object, so need to create a new instance of the same data
@@ -1923,7 +1922,7 @@ CreateObject = function(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		s.g = t.g;
 		t = s;
-		-- if app.DEBUG_PRINT then print("Merge done",s.key,s[s.key], t, s); end
+		-- app.PrintDebug("Merge done",s.key,s[s.key], t, s);
 	-- is it an array of raw datas which needs to be turned into ana rray of usable objects
 	elseif t[1] then
 		local s = {};
@@ -1999,13 +1998,14 @@ CreateObject = function(t, rootOnly)
 			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
 			if rootOnly then
 				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
-				-- print("rootOnly copy of",t.text)
+				-- app.PrintDebug("rootOnly copy of",t.text)
 				local s = {};
 				for k,v in pairs(t) do
 					s[k] = v;
 				end
 				t = s;
 			else
+				-- app.PrintDebug("metatable copy of",t.text)
 				t = setmetatable({}, { __index = t });
 			end
 		end
@@ -2029,14 +2029,6 @@ CreateObject = function(t, rootOnly)
 
 	return t;
 end
--- Clones the data within the group without any sub-groups
--- local function CloneDataShallow(data)
--- 	local clone = {};
--- 	if data then
--- 		clone = setmetatable(clone, getmetatable(data));
--- 	end
--- 	return clone;
--- end
 -- Clones the data and attempts to create all sub-groups into cloned objects as well
 local function CloneData(data)
 	return CreateObject(data);
@@ -15609,6 +15601,11 @@ local function RowOnClick(self, button)
 				end
 			else
 				if self.index > 0 then
+					if reference.__dlo then
+						-- clone the underlying object of the DLO and create a popout of that instead of the DLO itself
+						app:CreateMiniListForGroup(reference.__o);
+						return;
+					end
 					app:CreateMiniListForGroup(reference);
 				else
 					app.Settings:Open();
