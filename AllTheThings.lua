@@ -8349,34 +8349,37 @@ app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 app.CreateQuestWithFactionData = function(t)
-	local questData, otherQuestData;
+	local questData, otherQuestData, otherFaction;
 	if app.FactionID == Enum.FlightPathFaction.Horde then
 		questData = t.hqd;
 		otherQuestData = t.aqd;
-		otherQuestData.r = Enum.FlightPathFaction.Alliance;
+		otherFaction = Enum.FlightPathFaction.Alliance;
 	else
 		questData = t.aqd;
 		otherQuestData = t.hqd;
-		otherQuestData.r = Enum.FlightPathFaction.Horde;
+		otherFaction = Enum.FlightPathFaction.Horde;
 	end
 
 	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
 
 	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
-	rawset(t, "r", app.FactionID);
 	local original = setmetatable(t, app.BaseQuest);
 	if not otherQuestData.questID or otherQuestData.questID == original.questID then
+		-- Situations where a single quest has faction-specific data
 		setmetatable(otherQuestData, { __index = t });
 		rawset(t, "otherQuestData", otherQuestData);
 		return original;
 	else
+		-- Situations where for some reason two different quests have been merged together as one quest and need to be split apart to be useful
 		setmetatable(otherQuestData, app.BaseQuest);
 		for key,value in pairs(t) do
 			if not rawget(otherQuestData, key) then
 				rawset(otherQuestData, key, value);
 			end
 		end
+		rawset(t, "r", app.FactionID);
+		rawset(otherQuestData, "r", otherFaction);
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
 			CacheFields(otherQuestData);

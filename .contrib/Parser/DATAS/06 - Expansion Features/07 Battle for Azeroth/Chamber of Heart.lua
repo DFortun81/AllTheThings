@@ -344,7 +344,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				q(57374, {	-- Into the Darkest Depths
 					["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 					["provider"] = { "n", 155496 },	-- Wrathion
-					["sourceQuest"] = 57373,	-- Descending Into Madness
+					["sourceQuest"] = 58634,	-- Opening the Gateway
 					["g"] = {
 						currency(1719),	-- Corrupted Memento
 					},

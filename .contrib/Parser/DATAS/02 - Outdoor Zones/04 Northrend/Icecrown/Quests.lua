@@ -1086,10 +1086,19 @@ _.Zones =
 				q(13168, {	-- Parting Gifts
 					["coord"] = { 44.0, 24.5, ICECROWN },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
-					["sourceQuests"] = {
-						-- TODO: need to verify this. May also require some progress in the shadow vault
-						13392,	-- Return to the Surface (A)
-						13282,	-- Return to the Surface (H)
+					["allianceQuestData"] = {
+						["sourceQuests"] = {
+							-- TODO: need to verify this. May also require some progress in the shadow vault
+							13392,	-- Return to the Surface (A)
+							13389,	-- A Short Fuse (A)
+						},
+					},
+					["hordeQuestData"] = {
+						["sourceQuests"] = {
+							-- TODO: need to verify this. May also require some progress in the shadow vault
+							13282,	-- Return to the Surface (H)
+							13263,	-- A Short Fuse (H)
+						},
 					},
 				}),
 				q(13287, {	-- Poke and Prod (A)
