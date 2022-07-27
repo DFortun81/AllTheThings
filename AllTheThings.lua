@@ -8379,13 +8379,18 @@ app.CreateQuestWithFactionData = function(t)
 		end
 		local oldOnUpdate = original.OnUpdate;
 		original.OnUpdate = function(t)
-			otherQuestData.parent = t.parent;
 			CacheFields(otherQuestData);
-			local index = indexOf(t.parent.g, t);
-			if index then
-				tinsert(t.parent.g, index + 1, otherQuestData);
-			else
-				tinsert(t.parent.g, otherQuestData);
+			local parent = t.parent;
+			-- not sure why the parent might not exist sometimes when the group does an OnUpdate...
+			if parent then
+				otherQuestData.parent = parent;
+				local index = indexOf(parent.g, t);
+				if index then
+					tinsert(parent.g, index + 1, otherQuestData);
+				else
+					tinsert(parent.g, otherQuestData);
+				end
+			else app.PrintDebug("OnUpdate: No parent",t.hash)
 			end
 			if oldOnUpdate then
 				t.OnUpdate = oldOnUpdate;
