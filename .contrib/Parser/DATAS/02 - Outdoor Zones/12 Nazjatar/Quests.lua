@@ -2663,6 +2663,7 @@ root("HiddenQuestTriggers", {
 	q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
 	q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
 	q(56698),	-- "As a wee sprog. I was told that the Shirakess created our nightmares. I thought that was a myth... until I saw this place for myself."
+	q(56699),	-- (got this randomly in nazjatar)
 --	Vim
 	q(56665),	-- "It's brave to sacrifice yourself to save others.  It's craven to sacrifice others to serve yourself.  And Azshara is anything but brave."
 	q(56672),	-- "One person's pride destroyed so many lives."

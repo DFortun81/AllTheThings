@@ -801,6 +801,7 @@ root("HiddenQuestTriggers", {
 	q(44371),	-- Holy Chosen
 	q(43688),	-- Unlocking the Walking in the Shadows quest
 	q(43666),	-- Using Heart of Corruption
+	q(46081),	-- completion of 'Leather to Legendary' (46074)
 });
 
 -- These quests never made it in.

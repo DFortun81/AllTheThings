@@ -360,6 +360,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					q(42818, {	-- The Scarlet Assault
 						["sourceQuest"] = 43899, -- Steeds of the Damned
+						-- ["sourceQuest"] = 43572, -- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.1, 50.5, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),

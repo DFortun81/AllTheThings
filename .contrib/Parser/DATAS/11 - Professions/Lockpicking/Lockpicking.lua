@@ -8,15 +8,15 @@ root(ROOTS.Professions, prof(LOCKPICKING, {
 	-- This makes it ignore the profession requirement.
 	["OnUpdate"] = [[function(t) t.DontEnforceSkillRequirements = true; end]],
 	["groups"] = {
+		-- #if BEFORE WRATH
 		recipe(1804, {	-- Pick Lock
-			-- #if BEFORE WRATH
 			["cost"] = { { "i", 5060, 1 } },	-- Thieves' Tools
-			-- #endif
 			["classes"] = { ROGUE },
 		}),
 		recipe(921, {	-- Pick Pocket
 			["classes"] = { ROGUE },
 		}),
+		-- #endif
 		n(-165, {	-- Junkboxes
 			["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 			["groups"] = {

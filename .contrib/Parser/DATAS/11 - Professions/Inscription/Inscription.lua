@@ -485,7 +485,9 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 		}),
 	}))),
 	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
-		r(86008);	-- Inscription (Cata)
+		r(86008, {	-- Inscription (Cata)
+			["collectible"] = false,	-- the profession itself is not a recipe
+		});
 		cat(785, {	-- Inks
 			r(86004),	-- Blackfallow Ink
 			r(86005),	-- Inferno Ink
@@ -712,7 +714,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 	applyclassicphase(LEGION_PHASE_ONE, tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
 		r(195115, {	-- Inscription (Legion)
 			["timeline"]={ "added 7.0.3", "removed 8.0.1" },
-			["collectible"] = false,
+			["collectible"] = false,	-- the profession itself is not a recipe
 		}),
 		r(264506, {["timeline"]={"added 8.0.1"}}),	-- Legion Inscription
 		cat(454, {	-- Books & Scrolls
@@ -1221,9 +1223,11 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
 		r(264508, {	-- Kul Tiran Inscription
 			["races"] = ALLIANCE_ONLY,
+			["collectible"] = false,	-- the profession itself is not a recipe
 		}),
 		r(265809, {	-- Zandalari Inscription
 			["races"] = HORDE_ONLY,
+			["collectible"] = false,	-- the profession itself is not a recipe
 		}),
 		cat(1242, sharedDataSelf({ ["timeline"] = { "added 8.1.0" } }, {	-- Conversions
 			r(287271),	-- Aqueous Chromotography
@@ -1555,8 +1559,10 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			})),
 		}),
 	}))),
-	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
-		r(309805),	-- Shadowlands Inscription
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+		r(309805, {	-- Shadowlands Inscription
+			["collectible"] = false,	-- the profession itself is not a recipe
+		}),
 		cat(1409, {	-- Books & Scrolls
 			r(311424),	-- Codex of the Still Mind
 			r(311425),	-- Tome of the Still Mind

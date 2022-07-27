@@ -1844,9 +1844,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["questID"] = 39615,
 					}),
 					i(128668, {	-- Festive Outfits
+						["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.\n\nThis may also not be the correct QuestID for this Item unlock.",
 						["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 						["timeline"] = { "added 6.2.2.20395" },
-						["questID"] = 39671,
+						["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
+						["repeatable"] = true,
 					}),
 					i(128666, {	-- Imported Trees
 						["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies

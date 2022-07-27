@@ -3,7 +3,7 @@
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
 
-root("Craftables", tier(SL_TIER, applyclassicphase(SL_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle

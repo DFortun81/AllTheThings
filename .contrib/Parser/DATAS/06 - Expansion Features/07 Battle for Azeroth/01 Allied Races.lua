@@ -1699,8 +1699,14 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 	}),
 }));
 
-root("HiddenQuestTriggers", {
-	q(54868),	-- During Heritage for Taurens in the End
-	q(54869),	-- Starting Heritage for Taurens.
-	q(54867),	-- Triggered when doing "When Spirits Whisper" Tauren Heritage
-});
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	n(-254, {	-- Allied Races
+		q(54868),	-- During Heritage for Taurens in the End
+		q(54869),	-- Starting Heritage for Taurens.
+		q(54867),	-- Triggered when doing "When Spirits Whisper" Tauren Heritage
+		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
+		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
+		q(53468),	-- Turned in "The Call for Allies" (49930) Orgrimmar
+		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
+	}),
+}));

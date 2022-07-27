@@ -89,7 +89,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49815),	--
 				q(50312),	--
 				-- BFA
-				q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde | something concerning Highmountain Tauren Warrior / Orgrimmar / 37.9, 80.9
 				-- 8.0.1
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",
@@ -147,7 +146,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56607),	--
 				q(56618),	--
 				q(56667),	--
-				q(56699),	--
 				q(56702),	--
 				q(56704),	--
 				q(56742),	--

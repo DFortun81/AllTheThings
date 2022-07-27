@@ -4,36 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_SHADOWLANDS_QUESTS, {
-		ach(14672, {	-- A Bit of This, A Bit of That
-			["altQuests"] = { 60475 },	-- We'll Workshop It
-			["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies, and talking to all 6 NPCs.",
-			["g"] = {
-				crit(1, {	-- Faerie Pomander
-					["crs"] = { 158345 },	-- Lady of the Falls
-					["coord"] = { 51.1, 33.9, ARDENWEALD },
-				}),
-				crit(2, {	-- Slumberweb
-					["crs"] = { 165704 },	-- Elder Gwenna
-					["coord"] = { 50.4, 33.0, ARDENWEALD },
-				}),
-				crit(3, {	-- Vorkai War Paint
-					["crs"] = { 158519 },	-- Sorcha
-					["coord"] = { 51.1, 33.7, ARDENWEALD },
-				}),
-				crit(4, {	-- Gorm Whisperer
-					["crs"] = { 165382 },	-- Gormsmith Cavina
-					["coord"] = { 51.6, 34.0, ARDENWEALD },
-				}),
-				crit(5, {	-- Tirnenn Resilience
-					["crs"] = { 165705 },	-- Groonoomcrooek
-					["coord"] = { 51.8, 32.0, ARDENWEALD },
-				}),
-				crit(6, {	-- Finnan's Luck
-					["crs"] = { 165703 },	-- Elder Finnan
-					["coord"] = { 51.7, 34.0, ARDENWEALD },
-				}),
-			},
-		}),
 		ach(15064, {	-- Breaking The Chains
 			i(186654),	-- Hand of Salaranga (MOUNT!)
 			ach(14961, {	-- Chains of Domination
@@ -161,9 +131,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(28),	-- Zelnithop
 			}),
 		}),
-		ach(14762, {	-- Breaking the Stratus Fear
-			["altQuests"] = { 60858 },	-- Flight School: Up and Away!
-		}),
 		ach(15032, {	-- Breaking Their Hold
 			crit(1),	-- Dead On Their Feet
 			crit(2),	-- Here's an Axe, Get to Work!
@@ -175,9 +142,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(8),	-- Splash Damage
 			crit(9),	-- Get to the Point
 			crit(10),	-- Somebody Feed Kevin
-		}),
-		ach(14772, {	-- Caught in a Bat Romance
-			["altQuests"] = { 60602 },	-- Secret Service
 		}),
 		ach(14790),		-- Covenant Campaign
 		ach(15647, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Dead Men Tell Some Tales
@@ -272,17 +236,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(6),		-- Revelations of the Light
 			}),
 		}),
-		ach(14766, {	-- Parasoling
-			["altQuests"] = { 59718 },	-- Parasol Peril
-			["g"] = {
-				i(182695),	-- Weathered Purple Parasol (TOY!)
-			},
-		}),
 		ach(15515, {	-- Path to Enlightenment
 			["timeline"] = { "added 9.2.0" }
-		}),
-		ach(14765, {	-- Ramparts Racer
-			["altQuests"] = { 59643 },	-- It's Race Day in the Ramparts!
 		}),
 		ach(15036, {	-- Rooting Out The Evil
 			crit(1),	-- Clean Out the Crucible
@@ -299,10 +254,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(15259, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Secrets of the First Ones
 			ach(15518),	-- A Means to an End
 		})),
-		ach(14671, {	-- Something's Not Quite Right....
-			["altQuests"] = { 60739 },	-- Tough Crowd
-			["crs"] = { 170080 },	-- Audience Member / Exposed Boggart
-		}),
 		ach(15033, {	-- Taking the Tremaculum
 			crit(1),	-- Terrorizing the Tremaculum
 			crit(2),	-- Weapons of the Tremaculum

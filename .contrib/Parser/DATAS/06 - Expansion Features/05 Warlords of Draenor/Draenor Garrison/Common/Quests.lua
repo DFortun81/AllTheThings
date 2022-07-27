@@ -2649,7 +2649,8 @@ root("HiddenQuestTriggers", {
 		q(36877),	-- Tracking Quest: Tormmok — assigned Tormmok as a bodyguard/wingman
 		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
 		q(38348),	-- Unlock "Silvermoon" - triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar", appears to be a duplicate ID
-		q(39610),	-- Winter Veil Active - triggers after using any Feast of Winter Veil decoration
+		q(39609),	-- Hallow's End decorations active
+		q(39610),	-- Winter Veil decorations active
 		q(37670),	-- [Deprecated] Tracking Quest - Hide Old Baros / Thorn / Brightstone - after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn" (questID 36160)
 	}),
 });

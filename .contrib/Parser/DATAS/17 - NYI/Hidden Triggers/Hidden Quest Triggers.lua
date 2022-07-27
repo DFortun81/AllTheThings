@@ -835,7 +835,6 @@ root("HiddenQuestTriggers", {
 		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
 		q(47466),	-- Bonus roll on Emeriss during anniversary event
 		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
-		q(39609),	-- Hallow's End Active, triggered when I applied Creepy Crawlers garrison decoration
 		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
 
 		-- Trial of Style
@@ -1554,8 +1553,6 @@ root("HiddenQuestTriggers", {
 		q(50225),	-- first kill of Ogmot the Mad
 		q(50465),	-- triggered with #49950, "Blood Purification"
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
-		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
-		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
 		q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
 		q(51242),	-- Vol'dun - Alliance - planted the Alliance banner
 		q(51396),	-- Vol'dun - Alliance - watched Vorrik place the first keystone on the pedestal in the Sanctuary of the Devoted
@@ -1570,7 +1567,6 @@ root("HiddenQuestTriggers", {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
-		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		-- 58013 triggered randomly during a Black Empire assault in uldum

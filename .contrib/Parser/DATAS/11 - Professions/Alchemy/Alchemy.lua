@@ -213,7 +213,7 @@ root("Professions", prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY },
 			},
 		}),
 	}),
-	applyclassicphase(SL_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 		r(309822),	-- Shadowlands Alchemy
 		cat(1303, {	-- Anti-Venoms
 			r(307100),	-- Spiritual Anti-Venom
