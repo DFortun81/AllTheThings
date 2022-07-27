@@ -1683,7 +1683,6 @@ root("Zones", {
 							}),
 							i(136938, {	-- Tome of Hex: Compy
 								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 210873,	-- Hex (Compy)
 								["classes"] = { SHAMAN },
 								["f"] = RECIPES,
 							}),

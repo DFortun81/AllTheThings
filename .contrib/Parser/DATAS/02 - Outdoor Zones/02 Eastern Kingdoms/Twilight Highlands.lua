@@ -292,7 +292,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["model"] = 219405,
 						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
-								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
 							}),
@@ -302,7 +301,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["model"] = 219405,
 						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
-								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
 							}),

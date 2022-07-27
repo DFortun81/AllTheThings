@@ -476,7 +476,6 @@ root("Instances", tier(CLASSIC_TIER, {
 				}),
 				-- #endif
 				i(120138, {	-- Tome of Polymorph: Monkey
-					["spellID"] = 161354,	-- Polymorph (Monkey)
 					["timeline"] = { "added 6.0.2.18816" },
 					["classes"] = { MAGE },
 					["f"] = RECIPES,

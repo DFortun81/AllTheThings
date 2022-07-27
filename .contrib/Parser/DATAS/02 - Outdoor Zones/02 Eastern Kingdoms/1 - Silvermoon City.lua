@@ -638,13 +638,11 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
-							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["spellID"] = 32455,	-- Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0.10000"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,

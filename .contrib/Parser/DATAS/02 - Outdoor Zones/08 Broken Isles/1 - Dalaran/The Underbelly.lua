@@ -29,7 +29,6 @@ _.Zones =
 							i(136927),	-- Scarlet Confessional Book (TOY!)
 							i(141056),	-- Technique: Glyph of Burnout (RECIPE!)
 							i(136972, {	-- Tome of Hex: Cockroach
-								["spellID"] = 211015,	-- Hex(Cockroach)
 								["f"] = RECIPES,
 							}),
 						},

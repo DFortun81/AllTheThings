@@ -908,11 +908,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136781, {	-- Pet Training Manual: Fetch
-								["spellID"] = 125050,	-- Fetch
 								["f"] = RECIPES,
 							}),
 							i(136780, {	-- Pet Training Manual: Play Dead
-								["spellID"] = 209997,	-- Play Dead
 								["f"] = RECIPES,
 							}),
 							i(139712, {	-- Spaulders of the Unseen Path

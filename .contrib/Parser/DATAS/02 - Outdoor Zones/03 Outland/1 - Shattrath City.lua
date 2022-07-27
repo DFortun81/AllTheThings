@@ -1716,7 +1716,6 @@ root("Zones", {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
-								["spellID"] = 32455,	-- Heavy Knothide Leather
 								["timeline"] = { "removed 3.2.0.10000"},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,

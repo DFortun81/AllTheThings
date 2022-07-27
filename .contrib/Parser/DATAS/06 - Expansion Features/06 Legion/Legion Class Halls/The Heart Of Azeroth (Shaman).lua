@@ -474,7 +474,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["maps"] = { 731 },	-- Neltharion's Lair
 					}),
 					q(41772, {	-- Ascendant of Flames
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42208,	-- Return to the Firelands
 							42990,	-- Neltharion's Lair: The Earthen Amulet
 						},
@@ -786,7 +786,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(136934),	-- Raging Elemental Stone (TOY!)
 							i(136935),	-- Tadpole Cloudseeder (TOY!)
 							i(136938, {	-- Tome of Hex: Compy
-								["spellID"] = 210873,	-- Hex(Compy)
 								["f"] = RECIPES,
 							}),
 							i(136937),	-- Vol'jin's Serpent Totem (TOY!)

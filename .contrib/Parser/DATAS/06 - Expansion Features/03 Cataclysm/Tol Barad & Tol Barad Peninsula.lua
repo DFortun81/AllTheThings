@@ -450,7 +450,6 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 							{ "o", 202780 },	-- Fathom Eel Swarm
 							{ "o", 207724 },	-- Shipwreck Debris
 						},
-						["spellID"] = 28271,	-- Polymorph (Turtle)
 						["classes"] = { MAGE },
 						["f"] = RECIPES,
 					}),
