@@ -1217,7 +1217,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				},
 			}),
 			q(47918, {	-- To Serve Krag'wa
-				["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
+				["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.4, 56.6, NAZMIR },

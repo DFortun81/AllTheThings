@@ -119,7 +119,10 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51364, {	-- An Explosive Exit
-				["sourceQuests"] = { 49677 },	-- Plans for Attack
+				["sourceQuests"] = {
+					47327,	-- Answering Their Attacks
+					49677,	-- Plans for Attack
+				},
 				["provider"] = { "n", 130474 },	-- Reckless Vulpera (Nisha)
 				["coord"] = { 60.9, 32.6, VOLDUN },
 				["races"] = HORDE_ONLY,
@@ -845,7 +848,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			q(49677, {	-- Plans for Attack
 				-- no coords for this one. you pick it up from Nisha anywhere in the Abandoned Burrows
 				["sourceQuests"] = {
-					47327,	-- Answering Their Attacks
 					49676,	-- Dressed for Battle
 				},
 				["provider"] = { "n", 130474 },	-- Reckless Vulpera (Nisha)
@@ -1461,7 +1463,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["sourceQuests"] = {
 					49141,	-- Diplomacy and Dominance
 					50748,	-- Don't Drop It... Yes
-					49002,	-- Forced Grounding
 				},
 				["provider"] = { "n", 135110 },	-- Vorrik
 				["coord"] = { 47.1, 39.1, VOLDUN },	-- Rakjan's Peak
