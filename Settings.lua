@@ -4695,7 +4695,8 @@ function tab:InitializeSyncWindow()
 	end
 	syncWindow.CloseButton:Disable();
 	syncWindow:SetClampedToScreen(false);
-	syncWindow:SetUserPlaced(false);
+	pcall(syncWindow.SetUserPlaced, syncWindow, false);
+	-- syncWindow:SetUserPlaced(false);
 	syncWindow:SetToplevel(false);
 	syncWindow:SetMovable(false);
 	syncWindow:SetResizable(false);
