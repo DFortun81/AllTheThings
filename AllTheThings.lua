@@ -3917,6 +3917,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- Clean results which are cached under 'Source Ignored' content since they've been copied from another Source and we don't care about them in search results
 	group = app.CleanSourceIgnoredGroups(group);
+	-- app.PrintDebug("Removed Source Ignored",#group)
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -3948,7 +3949,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
 		group = regroup;
 	elseif paramA == "azeriteEssenceID" then
 		local regroup = {};
@@ -4557,13 +4557,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group.sourceParent = nil;
 		group.parent = nil;
 
-		-- print(group.g and #group.g,"Merge total");
-		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
-		-- print("Group Type",group.__type)
+		-- app.PrintDebug(group.g and #group.g,"Merge total");
+		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
+		-- app.PrintDebug("Group Type",group.__type)
 
 		-- Special cases
-		-- Don't show nested criteria of achievements
-		if group.g and group.key == "achievementID" then
+		-- Don't show nested criteria of achievements (unless loading popout/row content)
+		if group.g and group.key == "achievementID" and app.SetSkipPurchases() < 2 then
 			local noCrits = {};
 			-- print("achieve group",#group.g)
 			for i=1,#group.g do
@@ -4869,10 +4869,14 @@ app.SkipPurchases = {
 	[23247] = 1,	-- Burning Blossom
 	[49927] = 1,	-- Love Token
 }
--- Allows for toggling whether the SkipPurchases should be used or not
+-- Allows for toggling whether the SkipPurchases should be used or not; call with no value to return the current value
 app.SetSkipPurchases = function(level)
-	-- print("SkipPurchases exclusion",level)
-	app.SkipPurchases[-1] = level;
+	if level then
+		-- print("SkipPurchases exclusion",level)
+		app.SkipPurchases[-1] = level;
+	else
+		return app.SkipPurchases[-1];
+	end
 end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, depth)
@@ -5143,7 +5147,7 @@ app.BuildSourceParent = function(group)
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
 	if things then
 		local groupHash = group.hash;
-		-- app.PrintDebug("Found Source things",#things)
+		-- app.PrintDebug("Found Source things",#things,groupHash)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
@@ -14817,8 +14821,8 @@ function app:CreateMiniListForGroup(group)
 	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
 	if not popout then
 		popout = app:GetWindow(suffix);
-		-- make a search for this group if it is an item/currency and not already a container for things
-		if not group.g and (group.itemID or group.currencyID) then
+		-- make a search for this group if it is an item/currency/achievement and not already a container for things
+		if not group.g and (group.itemID or group.currencyID or group.achievementID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			app.SetSkipPurchases(2);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);

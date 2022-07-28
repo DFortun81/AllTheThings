@@ -14,6 +14,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					167526,	-- Nurgash Muckformed
 					167527,	-- Oranomonos the Everbranching
 					167524,	-- Valinor, the Light of Eons
+					182466,	-- Antros
 				},
 				["g"] = {
 					i(181770),	-- Bone Marrow Hops
@@ -76,6 +77,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				["isRaid"] = true,
 				["questID"] = 65143,	-- (WQ)
 				["coord"] = { 48, 5, ZERETH_MORTIS },
+				["sym"] = {
+					{"select","itemID",187882},	-- Alpaca Soul
+				},
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
