@@ -308,6 +308,10 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 				["questID"] = 62675,
 				["classes"] = { DRUID },
 			}),
+			i(187933, {	-- Mark of the Duskwing Raven
+				["questID"] = 65058,
+				["classes"] = { DRUID },
+			}),
 		}),
 		n(-491, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion

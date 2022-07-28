@@ -246,10 +246,6 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 				["questID"] = 64987,
 				["classes"] = { DRUID },
 			}),
-			i(187933, {	-- Mark of the Duskwing Raven
-				["questID"] = 65058,
-				["classes"] = { DRUID },
-			}),
 			i(187931, {	-- Mark of the Regal Dredbat
 				["questID"] = 65059,
 				["classes"] = { DRUID },
