@@ -1,6 +1,11 @@
 local Items = root("ItemDBConditional");
 local Recipes = root("RecipeDB");
 local ProfessionID = BLACKSMITHING;
+local ARMORSMITIH = 9788;
+local WEAPONSMITH = 9787;
+local MASTER_AXESMITH = 17041;
+local MASTER_HAMMERSMITH = 17040;
+local MASTER_SWORDSMITH = 17039;
 local i = function(itemID, recipeID, unobtainStatus, requireSkill)
 	if Items[itemID] then
 		print("Duplicate Recipe Item Defined!",itemID,recipeID);
@@ -173,15 +178,12 @@ i(7989, 9964);	-- Mithril Spurs
 i(8028, 10009);	-- Runed Mithril Hammer
 i(8029, 9997);	-- Wicked Mithril Blade
 -- #if BEFORE TBC
-local ProfessionID = 9788;	-- Armorsmith
-i(0, 9974);	-- Truesilver Breastplate
-i(0, 9954);	-- Truesilver Gauntlets
-local ProfessionID = 9787;	-- Weaponsmith
-i(142337, 10011);	-- Blight
-i(74274, 10007);	-- Phantom Blade
-i(0, 10003);	-- The Shatterer (4.0.3) Removed?
-i(0, 10015);	-- Truesilver Champion (4.0.3)
-local ProfessionID = BLACKSMITHING;
+i(0, 9974, nil, ARMORSMITIH);	-- Truesilver Breastplate
+i(0, 9954, nil, ARMORSMITIH);	-- Truesilver Gauntlets
+i(142337, 10011, nil, WEAPONSMITH);	-- Blight
+i(74274, 10007, nil, WEAPONSMITH);	-- Phantom Blade
+i(0, 10003, nil, WEAPONSMITH);	-- The Shatterer (4.0.3) Removed?
+i(0, 10015, nil, WEAPONSMITH);	-- Truesilver Champion (4.0.3)
 -- #else
 -- Armorsmith
 i(0, 9974);	-- Truesilver Breastplate
@@ -219,12 +221,9 @@ i(11614, 15293);	-- Dark Iron Mail
 i(11615, 15295);	-- Dark Iron Shoulders
 i(10713, 11454);	-- Inlaid Mithril Cylinder
 -- #if BEFORE TBC
-local ProfessionID = 9788;	-- Armorsmith
-i(11612, 15296);	-- Dark Iron Plate
-local ProfessionID = 9787;	-- Weaponsmith
-i(11610, 15292);	-- Dark Iron Pulverizer
-i(11611, 15294);	-- Dark Iron Sunderer
-local ProfessionID = BLACKSMITHING
+i(11612, 15296, nil, ARMORSMITIH);	-- Dark Iron Plate
+i(11610, 15292, nil, WEAPONSMITH);	-- Dark Iron Pulverizer
+i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
 -- #else
 -- Armorsmith
 i(11612, 15296);	-- Dark Iron Plate
@@ -279,36 +278,30 @@ i(0, 17041);	-- Master Axesmith
 i(0, 17039);	-- Master Swordsmith
 i(0, 17040);	-- Master Hammersmith
 -- #if BEFORE TBC
-local ProfessionID = 9788;	-- Armorsmith
-i(12696, 16667);	-- Demon Forged Breastplate (4.0.3)
-i(12727, 16745);	-- Enchanted Thorium Breastplate (4.0.3)
-i(12725, 16742);	-- Enchanted Thorium Helm (4.0.3)
-i(12726, 16744);	-- Enchanted Thorium Leggings (4.0.3)
-i(12699, 16655);	-- Fiery Plate Gauntlets (4.0.3)
-i(12716, 16728);	-- Helm of the Great Chief
-i(12728, 16746);	-- Invulnerable Mail
-i(12717, 16729);	-- Lionheart Helm
-i(12703, 16661);	-- Storm Gauntlets
-i(12720, 16741);	-- Stronghold Gauntlets
-i(12711, 16724);	-- Whitesoul Helm
-i(12691, 16650);	-- Wildthorn Mail
-local ProfessionID = 17041;	-- Master Axesmith
-i(12835, 16991);	-- Annihilator
-i(12838, 16994);	-- Arcanite Reaper
-i(12821, 16970);	-- Dawn's Edge[CLASSIC-CATA]
-local ProfessionID = 17040;	-- Master Hammersmith
-i(12824, 16973);	-- Enchanted Battlehammer (4.0.3)
-i(12833, 16988);	-- Hammer of the Titans
-i(12837, 16993);	-- Masterwork Stormhammer (6.0.2)
-i(12827, 16983);	-- Serenity
-local ProfessionID = 17039;	-- Master Swordsmith
-i(12834, 16990);	-- Arcanite Champion
-i(12825, 16978);	-- Blazing Rapier[CLASSIC-CATA]
-i(12830, 16985);	-- Corruption
-i(12836, 16992);	-- Frostguard
-local ProfessionID = 9787;	-- Weaponsmith
-i(12839, 16995);	-- Heartseeker
-local ProfessionID = BLACKSMITHING
+i(12696, 16667, nil, ARMORSMITIH);	-- Demon Forged Breastplate (4.0.3)
+i(12727, 16745, nil, ARMORSMITIH);	-- Enchanted Thorium Breastplate (4.0.3)
+i(12725, 16742, nil, ARMORSMITIH);	-- Enchanted Thorium Helm (4.0.3)
+i(12726, 16744, nil, ARMORSMITIH);	-- Enchanted Thorium Leggings (4.0.3)
+i(12699, 16655, nil, ARMORSMITIH);	-- Fiery Plate Gauntlets (4.0.3)
+i(12716, 16728, nil, ARMORSMITIH);	-- Helm of the Great Chief
+i(12728, 16746, nil, ARMORSMITIH);	-- Invulnerable Mail
+i(12717, 16729, nil, ARMORSMITIH);	-- Lionheart Helm
+i(12703, 16661, nil, ARMORSMITIH);	-- Storm Gauntlets
+i(12720, 16741, nil, ARMORSMITIH);	-- Stronghold Gauntlets
+i(12711, 16724, nil, ARMORSMITIH);	-- Whitesoul Helm
+i(12691, 16650, nil, ARMORSMITIH);	-- Wildthorn Mail
+i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
+i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reaper
+i(12821, 16970, nil, MASTER_AXESMITH);	-- Dawn's Edge[CLASSIC-CATA]
+i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer (4.0.3)
+i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
+i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer (6.0.2)
+i(12827, 16983, nil, MASTER_HAMMERSMITH);	-- Serenity
+i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcanite Champion
+i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier[CLASSIC-CATA]
+i(12830, 16985, nil, MASTER_SWORDSMITH);	-- Corruption
+i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguard
+i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 -- #else
 -- Armorsmith
 i(12696, 16667);	-- Demon Forged Breastplate (4.0.3)
@@ -363,16 +356,12 @@ i(0, 19667);	-- Golden Skeleton Key
 i(0, 19666);	-- Silver Skeleton Key
 i(0, 19668);	-- Truesilver Skeleton Key
 -- #if BEFORE TBC
-local ProfessionID = 9788;	-- Armorsmith
-i(17051, 20874);	-- Dark Iron Bracers
-i(17052, 20876);	-- Dark Iron Leggings
-i(17049, 20872);	-- Fiery Chain Girdle
-i(17053, 20873);	-- Fiery Chain Shoulders
-local ProfessionID = 17041;	-- Master Axesmith
-i(17060, 20897);	-- Dark Iron Destroyer
-local ProfessionID = 17039;	-- Master Swordsmith
-i(17059, 20890);	-- Dark Iron Reaver
-local ProfessionID = BLACKSMITHING;
+i(17051, 20874, nil, ARMORSMITIH);	-- Dark Iron Bracers
+i(17052, 20876, nil, ARMORSMITIH);	-- Dark Iron Leggings
+i(17049, 20872, nil, ARMORSMITIH);	-- Fiery Chain Girdle
+i(17053, 20873, nil, ARMORSMITIH);	-- Fiery Chain Shoulders
+i(17060, 20897, nil, MASTER_AXESMITH);	-- Dark Iron Destroyer
+i(17059, 20890, nil, MASTER_SWORDSMITH);	-- Dark Iron Reaver
 -- #else
 -- Armorsmith
 i(17051, 20874);	-- Dark Iron Bracers
@@ -408,23 +397,17 @@ i(22221, 27590);	-- Obsidian Mail Tunic
 i(18592, 21161);	-- Sulfuron Hammer
 i(22222, 27587);	-- Thick Obsidian Breastplate
 -- #if BEFORE TBC
-local ProfessionID = 9788;	-- Armorsmith
-i(20040, 24399);	-- Dark Iron Boots
-i(19207, 23637);	-- Dark Iron Gauntlets
-i(19206, 23636);	-- Dark Iron Helm
-i(22388, 27829);	-- Titanic Leggings
-local ProfessionID = 17041;	-- Master Axesmith
-i(19212, 23653);	-- Nightfall
-local ProfessionID = 17040;	-- Master Hammersmith
-i(19210, 23650);	-- Ebon Hand
-i(22390, 27830);	-- Persuader
-local ProfessionID = 17039;	-- Master Swordsmith
-i(19211, 23652);	-- Blackguard
-i(22389, 27832);	-- Sageblade
-local ProfessionID = 9787;	-- Weaponsmith
-i(19208, 23638);	-- Black Amnesty
-i(19209, 23639);	-- Blackfury
-local ProfessionID = BLACKSMITHING
+i(20040, 24399, nil, ARMORSMITIH);	-- Dark Iron Boots
+i(19207, 23637, nil, ARMORSMITIH);	-- Dark Iron Gauntlets
+i(19206, 23636, nil, ARMORSMITIH);	-- Dark Iron Helm
+i(22388, 27829, nil, ARMORSMITIH);	-- Titanic Leggings
+i(19212, 23653, nil, MASTER_AXESMITH);	-- Nightfall
+i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
+i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
+i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
+i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
+i(19208, 23638, nil, WEAPONSMITH);	-- Black Amnesty
+i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 -- #else
 -- Armorsmith
 i(20040, 24399);	-- Dark Iron Boots
@@ -533,27 +516,22 @@ i(23622, 29662);	-- Steelgrip Gauntlets
 i(23623, 29663);	-- Storm Helm
 i(23615, 29648);	-- Swiftsteel Gloves
 -- #if BEFORE CATA
-local ProfessionID = 9788;	-- Armorsmith
-i(0, 34533);	-- Breastplate of Kings
-i(0, 34534);	-- Bulwark of Kings
-i(0, 34529);	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-i(0, 34530);	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-local ProfessionID = 17041;	-- Master Axesmith
-i(0, 34542);	-- Black Planar Edge
-i(0, 34543);	-- Lunar Crescent
-i(0, 34544);	-- Mooncleaver
-i(0, 34541);	-- The Planar Edge
-local ProfessionID = 17040;	-- Master Hammersmith
-i(0, 34548);	-- Deep Thunder
-i(0, 34546);	-- Dragonmaw
-i(0, 34545);	-- Drakefist Hammer
-i(0, 34547);	-- Thunder
-local ProfessionID = 17039;	-- Master Swordsmith
-i(0, 34537);	-- Blazeguard
-i(0, 34535);	-- Fireguard
-i(0, 34538);	-- Lionheart Blade
-i(0, 34540);	-- Lionheart Champion
-local ProfessionID = BLACKSMITHING;
+i(0, 34533, nil, ARMORSMITIH);	-- Breastplate of Kings
+i(0, 34534, nil, ARMORSMITIH);	-- Bulwark of Kings
+i(0, 34529, nil, ARMORSMITIH);	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+i(0, 34530, nil, ARMORSMITIH);	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+i(0, 34542, nil, MASTER_AXESMITH);	-- Black Planar Edge
+i(0, 34543, nil, MASTER_AXESMITH);	-- Lunar Crescent
+i(0, 34544, nil, MASTER_AXESMITH);	-- Mooncleaver
+i(0, 34541, nil, MASTER_AXESMITH);	-- The Planar Edge
+i(0, 34548, nil, MASTER_HAMMERSMITH);	-- Deep Thunder
+i(0, 34546, nil, MASTER_HAMMERSMITH);	-- Dragonmaw
+i(0, 34545, nil, MASTER_HAMMERSMITH);	-- Drakefist Hammer
+i(0, 34547, nil, MASTER_HAMMERSMITH);	-- Thunder
+i(0, 34537, nil, MASTER_SWORDSMITH);	-- Blazeguard
+i(0, 34535, nil, MASTER_SWORDSMITH);	-- Fireguard
+i(0, 34538, nil, MASTER_SWORDSMITH);	-- Lionheart Blade
+i(0, 34540, nil, MASTER_SWORDSMITH);	-- Lionheart Champion
 -- #else
 -- Armorsmith
 i(0, 34533);	-- Breastplate of Kings
@@ -616,33 +594,27 @@ i(31390, 38473);	-- Wildguard Breastplate
 i(31392, 38476);	-- Wildguard Helm
 i(31391, 38475);	-- Wildguard Leggings
 -- #if BEFORE CATA
-local ProfessionID = 9788;	-- Armorsmith
-i(0, 36257);	-- Bulwark of the Ancient Kings
-i(0, 36122);	-- Earthforged Leggings
-i(0, 36256);	-- Embrace of the Twisting Nether
-i(0, 36129);	-- Heavy Earthforged Breastplate
-i(0, 36130);	-- Stormforged Hauberk
-i(0, 36124);	-- Windforged Leggings
-local ProfessionID = 17041;	-- Master Axesmith
-i(0, 36261);	-- Bloodmoon
-i(142283, 36135);	-- Skyforged Great Axe
-i(142282, 36134);	-- Stormforged Axe
-i(0, 36260);	-- Wicked Edge of the Planes
-local ProfessionID = 17040;	-- Master Hammersmith
-i(0, 36262);	-- Dragonstrike
-i(142287, 36137);	-- Great Earthforged Hammer
-i(142286, 36136);	-- Lavaforged Warhammer
-i(0, 36263);	-- Stormherald
-local ProfessionID = 17039;	-- Master Swordsmith
-i(0, 36258);	-- Blazefury
-i(0, 36259);	-- Lionheart Executioner
-i(142284, 36133);	-- Stoneforged Claymore
-i(142279, 36131);	-- Windforged Rapier
-local ProfessionID = 9787;	-- Weaponsmith
-i(142402, 36125);	-- Light Earthforged Blade
-i(0, 36128);	-- Light Emberforged Hammer
-i(0, 36126);	-- Light Skyforged Axe
-local ProfessionID = BLACKSMITHING;
+i(0, 36257, nil, ARMORSMITIH);	-- Bulwark of the Ancient Kings
+i(0, 36122, nil, ARMORSMITIH);	-- Earthforged Leggings
+i(0, 36256, nil, ARMORSMITIH);	-- Embrace of the Twisting Nether
+i(0, 36129, nil, ARMORSMITIH);	-- Heavy Earthforged Breastplate
+i(0, 36130, nil, ARMORSMITIH);	-- Stormforged Hauberk
+i(0, 36124, nil, ARMORSMITIH);	-- Windforged Leggings
+i(0, 36261, nil, MASTER_AXESMITH);	-- Bloodmoon
+i(142283, 36135, nil, MASTER_AXESMITH);	-- Skyforged Great Axe
+i(142282, 36134, nil, MASTER_AXESMITH);	-- Stormforged Axe
+i(0, 36260, nil, MASTER_AXESMITH);	-- Wicked Edge of the Planes
+i(0, 36262, nil, MASTER_HAMMERSMITH);	-- Dragonstrike
+i(142287, 36137, nil, MASTER_HAMMERSMITH);	-- Great Earthforged Hammer
+i(142286, 36136, nil, MASTER_HAMMERSMITH);	-- Lavaforged Warhammer
+i(0, 36263, nil, MASTER_HAMMERSMITH);	-- Stormherald
+i(0, 36258, nil, MASTER_SWORDSMITH);	-- Blazefury
+i(0, 36259, nil, MASTER_SWORDSMITH);	-- Lionheart Executioner
+i(142284, 36133, nil, MASTER_SWORDSMITH);	-- Stoneforged Claymore
+i(142279, 36131, nil, MASTER_SWORDSMITH);	-- Windforged Rapier
+i(142402, 36125, nil, WEAPONSMITH);	-- Light Earthforged Blade
+i(0, 36128, nil, WEAPONSMITH);	-- Light Emberforged Hammer
+i(0, 36126, nil, WEAPONSMITH);	-- Light Skyforged Axe
 -- #else
 -- Armorsmith
 i(0, 36257);	-- Bulwark of the Ancient Kings
@@ -779,14 +751,11 @@ i(41123, 54979);	-- Reinforced Cobalt Helm
 i(41120, 54980);	-- Reinforced Cobalt Legplates
 i(41124, 54978);	-- Reinforced Cobalt Shoulders
 -- #if BEFORE CATA
-local ProfessionID = 9788;	-- Armorsmithing
-i(0, 55186);	-- Chestplate of Conquest
-i(0, 55187);	-- Legplates of Conquest
-local ProfessionID = 9787;	-- Weaponsmithing
-i(0, 55183);	-- Corroded Saronite Edge
-i(0, 55184);	-- Corroded Saronite Woundbringer
-i(0, 55185);	-- Saronite Mindcrusher
-local ProfessionID = BLACKSMITHING;
+i(0, 55186, nil, ARMORSMITIH);	-- Chestplate of Conquest
+i(0, 55187, nil, ARMORSMITIH);	-- Legplates of Conquest
+i(0, 55183, nil, WEAPONSMITH);	-- Corroded Saronite Edge
+i(0, 55184, nil, WEAPONSMITH);	-- Corroded Saronite Woundbringer
+i(0, 55185, nil, WEAPONSMITH);	-- Saronite Mindcrusher
 -- #else
 -- Armorsmithing
 i(0, 55186);	-- Chestplate of Conquest
