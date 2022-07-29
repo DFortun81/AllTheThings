@@ -1373,6 +1373,7 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
+-- Appends a common groups set into the groups for this object
 appendGroups = function(common, groups)
 	if not groups then groups = {}; end
 	if common then
@@ -1381,6 +1382,24 @@ appendGroups = function(common, groups)
 		end
 	end
 	return groups;
+end
+-- Appends together multiple sets of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
+appendAllGroups = function(...)
+	local arrs = select("#", ...);
+	if arrs > 0 then
+		local g = {};
+		local i, select, a = #g + 1, select;
+		for n=1,arrs do
+			a = select(n, ...);
+			if a then
+				for ai=1,#a do
+					g[i] = a[ai];
+					i = i + 1;
+				end
+			end
+		end
+		return g;
+	end
 end
 -- Simply applies keys from 'data' into 't' where each key does not already exist
 applyData = function(data, t)

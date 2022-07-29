@@ -16,6 +16,7 @@ end
 i(137642);	-- Mark of Honor
 i(163036);	-- Polished Pet Charm
 i(116415);	-- Shiny Pet Charm
+i(190189);	-- Sandworn Relic	(became BoA 2022-07-29)
 
 -- SL Tokens
 i(187187);	-- Korthian Armaments
