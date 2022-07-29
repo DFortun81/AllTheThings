@@ -172,15 +172,28 @@ i(7976, 9939);	-- Mithril Shield Spike
 i(7989, 9964);	-- Mithril Spurs
 i(8028, 10009);	-- Runed Mithril Hammer
 i(8029, 9997);	-- Wicked Mithril Blade
--- SPECIAL --
-i(0, 9788);	-- Armorsmith
+-- #if BEFORE TBC
+local ProfessionID = 9788;	-- Armorsmith
 i(0, 9974);	-- Truesilver Breastplate
 i(0, 9954);	-- Truesilver Gauntlets
-i(0, 9787);	-- Weaponsmith
-i(0, 10003);	-- The Shatterer (4.0.3) Removed?
-i(74274, 10007);	-- Phantom Blade
+local ProfessionID = 9787;	-- Weaponsmith
 i(142337, 10011);	-- Blight
+i(74274, 10007);	-- Phantom Blade
+i(0, 10003);	-- The Shatterer (4.0.3) Removed?
 i(0, 10015);	-- Truesilver Champion (4.0.3)
+local ProfessionID = BLACKSMITHING;
+-- #else
+-- Armorsmith
+i(0, 9974);	-- Truesilver Breastplate
+i(0, 9954);	-- Truesilver Gauntlets
+-- Weaponsmith
+i(142337, 10011);	-- Blight
+i(74274, 10007);	-- Phantom Blade
+i(0, 10003);	-- The Shatterer (4.0.3) Removed?
+i(0, 10015);	-- Truesilver Champion (4.0.3)
+-- #endif
+i(0, 9788);	-- Armorsmith
+i(0, 9787);	-- Weaponsmith
 -- REMOVED --
 i(9367, 11643);	-- Golden Scale Gauntlets (4.0.3)
 i(7994, 9957);	-- Orcish War Leggings (4.0.3?)
@@ -203,11 +216,22 @@ i(10424, 12259);	-- Silvered Bronze Leggings
 -- PATCH 0.9.0 --
 -----------------
 i(11614, 15293);	-- Dark Iron Mail
-i(11612, 15296);	-- Dark Iron Plate
-i(11610, 15292);	-- Dark Iron Pulverizer
 i(11615, 15295);	-- Dark Iron Shoulders
-i(11611, 15294);	-- Dark Iron Sunderer
 i(10713, 11454);	-- Inlaid Mithril Cylinder
+-- #if BEFORE TBC
+local ProfessionID = 9788;	-- Armorsmith
+i(11612, 15296);	-- Dark Iron Plate
+local ProfessionID = 9787;	-- Weaponsmith
+i(11610, 15292);	-- Dark Iron Pulverizer
+i(11611, 15294);	-- Dark Iron Sunderer
+local ProfessionID = BLACKSMITHING
+-- #else
+-- Armorsmith
+i(11612, 15296);	-- Dark Iron Plate
+-- Weaponsmith
+i(11610, 15292);	-- Dark Iron Pulverizer
+i(11611, 15294);	-- Dark Iron Sunderer
+-- #endif
 -- REMOVED --
 i(0, 14379);	-- Golden Rod (5.0.4)
 i(0, 14380);	-- Truesilver Rod (5.0.4)
@@ -220,20 +244,10 @@ i(0, 16641);	-- Dense Sharpening Stone
 i(0, 16640);	-- Dense Weightstone
 i(0, 15972);	-- Glinting Steel Dagger
 -- ITEMS --
-i(12835, 16991);	-- Annihilator
-i(12834, 16990);	-- Arcanite Champion
-i(12838, 16994);	-- Arcanite Reaper
-i(12825, 16978);	-- Blazing Rapier[CLASSIC-CATA]
 i(142358, 16978);	-- Blazing Rapier[7.1.5+]
 i(142346, 16965);	-- Bleakwood Hew
-i(12830, 16985);	-- Corruption
 i(142383, 16987);	-- Darkspear
-i(12821, 16970);	-- Dawn's Edge[CLASSIC-CATA]
 i(142357, 16970);	-- Dawn's Edge[7.1.5+]
-i(12836, 16992);	-- Frostguard
-i(12833, 16988);	-- Hammer of the Titans
-i(12839, 16995);	-- Heartseeker
-i(12716, 16728);	-- Helm of the Great Chief
 i(12823, 16971);	-- Huge Thorium Battleaxe
 i(12688, 16647);	-- Imperial Plate Belt
 i(12700, 16657);	-- Imperial Plate Boots
@@ -242,8 +256,6 @@ i(12705, 16663);	-- Imperial Plate Chest
 i(12701, 16658);	-- Imperial Plate Helm
 i(12715, 16730);	-- Imperial Plate Leggings
 i(12687, 16646);	-- Imperial Plate Shoulders
-i(12728, 16746);	-- Invulnerable Mail
-i(12717, 16729);	-- Lionheart Helm
 i(12819, 16969);	-- Ornate Thorium Handaxe
 i(12685, 16645);	-- Radiant Belt
 i(12697, 16656);	-- Radiant Boots
@@ -256,9 +268,6 @@ i(12714, 16726);	-- Runic Plate Helm
 i(12719, 16732);	-- Runic Plate Leggings
 i(12706, 16664);	-- Runic Plate Shoulders
 i(12261, 15973);	-- Searing Golden Blade
-i(12827, 16983);	-- Serenity
-i(12703, 16661);	-- Storm Gauntlets
-i(12720, 16741);	-- Stronghold Gauntlets
 i(12682, 16642);	-- Thorium Armor
 i(12683, 16643);	-- Thorium Belt
 i(12693, 16652);	-- Thorium Boots
@@ -266,20 +275,72 @@ i(12684, 16644);	-- Thorium Bracers
 i(12694, 16653);	-- Thorium Helm
 i(12704, 16662);	-- Thorium Leggings
 i(12692, 16651);	-- Thorium Shield Spike
-i(12711, 16724);	-- Whitesoul Helm
-i(12691, 16650);	-- Wildthorn Mail
--- SPECIAL --
 i(0, 17041);	-- Master Axesmith
 i(0, 17039);	-- Master Swordsmith
 i(0, 17040);	-- Master Hammersmith
--- REMOVED --
+-- #if BEFORE TBC
+local ProfessionID = 9788;	-- Armorsmith
 i(12696, 16667);	-- Demon Forged Breastplate (4.0.3)
-i(12824, 16973);	-- Enchanted Battlehammer (4.0.3)
 i(12727, 16745);	-- Enchanted Thorium Breastplate (4.0.3)
 i(12725, 16742);	-- Enchanted Thorium Helm (4.0.3)
 i(12726, 16744);	-- Enchanted Thorium Leggings (4.0.3)
 i(12699, 16655);	-- Fiery Plate Gauntlets (4.0.3)
+i(12716, 16728);	-- Helm of the Great Chief
+i(12728, 16746);	-- Invulnerable Mail
+i(12717, 16729);	-- Lionheart Helm
+i(12703, 16661);	-- Storm Gauntlets
+i(12720, 16741);	-- Stronghold Gauntlets
+i(12711, 16724);	-- Whitesoul Helm
+i(12691, 16650);	-- Wildthorn Mail
+local ProfessionID = 17041;	-- Master Axesmith
+i(12835, 16991);	-- Annihilator
+i(12838, 16994);	-- Arcanite Reaper
+i(12821, 16970);	-- Dawn's Edge[CLASSIC-CATA]
+local ProfessionID = 17040;	-- Master Hammersmith
+i(12824, 16973);	-- Enchanted Battlehammer (4.0.3)
+i(12833, 16988);	-- Hammer of the Titans
 i(12837, 16993);	-- Masterwork Stormhammer (6.0.2)
+i(12827, 16983);	-- Serenity
+local ProfessionID = 17039;	-- Master Swordsmith
+i(12834, 16990);	-- Arcanite Champion
+i(12825, 16978);	-- Blazing Rapier[CLASSIC-CATA]
+i(12830, 16985);	-- Corruption
+i(12836, 16992);	-- Frostguard
+local ProfessionID = 9787;	-- Weaponsmith
+i(12839, 16995);	-- Heartseeker
+local ProfessionID = BLACKSMITHING
+-- #else
+-- Armorsmith
+i(12696, 16667);	-- Demon Forged Breastplate (4.0.3)
+i(12727, 16745);	-- Enchanted Thorium Breastplate (4.0.3)
+i(12725, 16742);	-- Enchanted Thorium Helm (4.0.3)
+i(12726, 16744);	-- Enchanted Thorium Leggings (4.0.3)
+i(12699, 16655);	-- Fiery Plate Gauntlets (4.0.3)
+i(12716, 16728);	-- Helm of the Great Chief
+i(12728, 16746);	-- Invulnerable Mail
+i(12717, 16729);	-- Lionheart Helm
+i(12703, 16661);	-- Storm Gauntlets
+i(12720, 16741);	-- Stronghold Gauntlets
+i(12711, 16724);	-- Whitesoul Helm
+i(12691, 16650);	-- Wildthorn Mail
+-- Master Axesmith
+i(12835, 16991);	-- Annihilator
+i(12838, 16994);	-- Arcanite Reaper
+i(12821, 16970);	-- Dawn's Edge[CLASSIC-CATA]
+-- Master Hammersmith
+i(12824, 16973);	-- Enchanted Battlehammer (4.0.3)
+i(12833, 16988);	-- Hammer of the Titans
+i(12837, 16993);	-- Masterwork Stormhammer (6.0.2)
+i(12827, 16983);	-- Serenity
+-- Master Swordsmith
+i(12834, 16990);	-- Arcanite Champion
+i(12825, 16978);	-- Blazing Rapier[CLASSIC-CATA]
+i(12830, 16985);	-- Corruption
+i(12836, 16992);	-- Frostguard
+-- Weaponsmith
+i(12839, 16995);	-- Heartseeker
+-- #endif
+-- REMOVED --
 i(12718, 16731);	-- Runic Breastplate (4.0.3)
 i(12828, 16984);	-- Volcanic Hammer (Unknown)
 -- NYI --
@@ -301,28 +362,36 @@ i(0, 19669);	-- Arcanite Skeleton Key
 i(0, 19667);	-- Golden Skeleton Key
 i(0, 19666);	-- Silver Skeleton Key
 i(0, 19668);	-- Truesilver Skeleton Key
--- ITEMS --
+-- #if BEFORE TBC
+local ProfessionID = 9788;	-- Armorsmith
 i(17051, 20874);	-- Dark Iron Bracers
-i(17060, 20897);	-- Dark Iron Destroyer
 i(17052, 20876);	-- Dark Iron Leggings
-i(17059, 20890);	-- Dark Iron Reaver
 i(17049, 20872);	-- Fiery Chain Girdle
 i(17053, 20873);	-- Fiery Chain Shoulders
+local ProfessionID = 17041;	-- Master Axesmith
+i(17060, 20897);	-- Dark Iron Destroyer
+local ProfessionID = 17039;	-- Master Swordsmith
+i(17059, 20890);	-- Dark Iron Reaver
+local ProfessionID = BLACKSMITHING;
+-- #else
+-- Armorsmith
+i(17051, 20874);	-- Dark Iron Bracers
+i(17052, 20876);	-- Dark Iron Leggings
+i(17049, 20872);	-- Fiery Chain Girdle
+i(17053, 20873);	-- Fiery Chain Shoulders
+-- Master Axesmith
+i(17060, 20897);	-- Dark Iron Destroyer
+-- Master Swordsmith
+i(17059, 20890);	-- Dark Iron Reaver
+-- #endif
 
 ------------------
 -- PATCH 1.13.0 --
 ------------------
-i(19208, 23638);	-- Black Amnesty
 i(22220, 27589);	-- Black Grasp of the Destroyer
-i(19209, 23639);	-- Blackfury
-i(19211, 23652);	-- Blackguard
-i(20040, 24399);	-- Dark Iron Boots
-i(19207, 23637);	-- Dark Iron Gauntlets
-i(19206, 23636);	-- Dark Iron Helm
 i(20554, 24914);	-- Darkrune Breastplate
 i(20553, 24912);	-- Darkrune Gauntlets
 i(20555, 24913);	-- Darkrune Helm
-i(19210, 23650);	-- Ebon Hand
 i(17706, 21913);	-- Edge of Winter
 i(18264, 22757);	-- Elemental Sharpening Stone
 i(19203, 23632);	-- Girdle of the Dawn
@@ -335,13 +404,45 @@ i(22209, 27585);	-- Heavy Obsidian Belt
 i(19202, 23628);	-- Heavy Timbermaw Belt
 i(19204, 23629);	-- Heavy Timbermaw Boots
 i(22214, 27588);	-- Light Obsidian Belt
-i(19212, 23653);	-- Nightfall
 i(22221, 27590);	-- Obsidian Mail Tunic
-i(22390, 27830);	-- Persuader
-i(22389, 27832);	-- Sageblade
 i(18592, 21161);	-- Sulfuron Hammer
 i(22222, 27587);	-- Thick Obsidian Breastplate
+-- #if BEFORE TBC
+local ProfessionID = 9788;	-- Armorsmith
+i(20040, 24399);	-- Dark Iron Boots
+i(19207, 23637);	-- Dark Iron Gauntlets
+i(19206, 23636);	-- Dark Iron Helm
 i(22388, 27829);	-- Titanic Leggings
+local ProfessionID = 17041;	-- Master Axesmith
+i(19212, 23653);	-- Nightfall
+local ProfessionID = 17040;	-- Master Hammersmith
+i(19210, 23650);	-- Ebon Hand
+i(22390, 27830);	-- Persuader
+local ProfessionID = 17039;	-- Master Swordsmith
+i(19211, 23652);	-- Blackguard
+i(22389, 27832);	-- Sageblade
+local ProfessionID = 9787;	-- Weaponsmith
+i(19208, 23638);	-- Black Amnesty
+i(19209, 23639);	-- Blackfury
+local ProfessionID = BLACKSMITHING
+-- #else
+-- Armorsmith
+i(20040, 24399);	-- Dark Iron Boots
+i(19207, 23637);	-- Dark Iron Gauntlets
+i(19206, 23636);	-- Dark Iron Helm
+i(22388, 27829);	-- Titanic Leggings
+-- Master Axesmith
+i(19212, 23653);	-- Nightfall
+-- Master Hammersmith
+i(19210, 23650);	-- Ebon Hand
+i(22390, 27830);	-- Persuader
+-- Master Swordsmith
+i(19211, 23652);	-- Blackguard
+i(22389, 27832);	-- Sageblade
+-- Weaponsmith
+i(19208, 23638);	-- Black Amnesty
+i(19209, 23639);	-- Blackfury
+-- #endif
 -- REMOVED ----------------
 i(0, 28244);	-- Icebane Bracers (3.0.2)
 i(0, 28242);	-- Icebane Breastplate (3.0.2)
@@ -431,25 +532,50 @@ i(23633, 29696);	-- Runic Hammer
 i(23622, 29662);	-- Steelgrip Gauntlets
 i(23623, 29663);	-- Storm Helm
 i(23615, 29648);	-- Swiftsteel Gloves
--- SPECIAL --
--- Armor --
+-- #if BEFORE CATA
+local ProfessionID = 9788;	-- Armorsmith
 i(0, 34533);	-- Breastplate of Kings
 i(0, 34534);	-- Bulwark of Kings
 i(0, 34529);	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
 i(0, 34530);	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
--- Weapon --
+local ProfessionID = 17041;	-- Master Axesmith
 i(0, 34542);	-- Black Planar Edge
-i(0, 34537);	-- Blazeguard
-i(0, 34548);	-- Deep Thunder
-i(0, 34546);	-- Dragonmaw
-i(0, 34545);	-- Drakefist Hammer
-i(0, 34535);	-- Fireguard
-i(0, 34538);	-- Lionheart Blade
-i(0, 34540);	-- Lionheart Champion
 i(0, 34543);	-- Lunar Crescent
 i(0, 34544);	-- Mooncleaver
 i(0, 34541);	-- The Planar Edge
+local ProfessionID = 17040;	-- Master Hammersmith
+i(0, 34548);	-- Deep Thunder
+i(0, 34546);	-- Dragonmaw
+i(0, 34545);	-- Drakefist Hammer
 i(0, 34547);	-- Thunder
+local ProfessionID = 17039;	-- Master Swordsmith
+i(0, 34537);	-- Blazeguard
+i(0, 34535);	-- Fireguard
+i(0, 34538);	-- Lionheart Blade
+i(0, 34540);	-- Lionheart Champion
+local ProfessionID = BLACKSMITHING;
+-- #else
+-- Armorsmith
+i(0, 34533);	-- Breastplate of Kings
+i(0, 34534);	-- Bulwark of Kings
+i(0, 34529);	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+i(0, 34530);	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+-- Master Axesmith
+i(0, 34542);	-- Black Planar Edge
+i(0, 34543);	-- Lunar Crescent
+i(0, 34544);	-- Mooncleaver
+i(0, 34541);	-- The Planar Edge
+-- Master Hammersmith
+i(0, 34548);	-- Deep Thunder
+i(0, 34546);	-- Dragonmaw
+i(0, 34545);	-- Drakefist Hammer
+i(0, 34547);	-- Thunder
+-- Master Swordsmith
+i(0, 34537);	-- Blazeguard
+i(0, 34535);	-- Fireguard
+i(0, 34538);	-- Lionheart Blade
+i(0, 34540);	-- Lionheart Champion
+-- #endif
 -- REMOVED --
 i(25846, 32656);	-- Adamantite Rod
 i(0, 34982);	-- Enchanted Thorium Blades
@@ -489,30 +615,62 @@ i(32737, 41133);	-- Swiftsteel Shoulders
 i(31390, 38473);	-- Wildguard Breastplate
 i(31392, 38476);	-- Wildguard Helm
 i(31391, 38475);	-- Wildguard Leggings
--- SPECIAL --
--- ARMOR --
+-- #if BEFORE CATA
+local ProfessionID = 9788;	-- Armorsmith
 i(0, 36257);	-- Bulwark of the Ancient Kings
 i(0, 36122);	-- Earthforged Leggings
 i(0, 36256);	-- Embrace of the Twisting Nether
 i(0, 36129);	-- Heavy Earthforged Breastplate
 i(0, 36130);	-- Stormforged Hauberk
 i(0, 36124);	-- Windforged Leggings
--- WEAPONS --
-i(0, 36258);	-- Blazefury
+local ProfessionID = 17041;	-- Master Axesmith
 i(0, 36261);	-- Bloodmoon
+i(142283, 36135);	-- Skyforged Great Axe
+i(142282, 36134);	-- Stormforged Axe
+i(0, 36260);	-- Wicked Edge of the Planes
+local ProfessionID = 17040;	-- Master Hammersmith
 i(0, 36262);	-- Dragonstrike
 i(142287, 36137);	-- Great Earthforged Hammer
 i(142286, 36136);	-- Lavaforged Warhammer
+i(0, 36263);	-- Stormherald
+local ProfessionID = 17039;	-- Master Swordsmith
+i(0, 36258);	-- Blazefury
+i(0, 36259);	-- Lionheart Executioner
+i(142284, 36133);	-- Stoneforged Claymore
+i(142279, 36131);	-- Windforged Rapier
+local ProfessionID = 9787;	-- Weaponsmith
 i(142402, 36125);	-- Light Earthforged Blade
 i(0, 36128);	-- Light Emberforged Hammer
 i(0, 36126);	-- Light Skyforged Axe
-i(0, 36259);	-- Lionheart Executioner
+local ProfessionID = BLACKSMITHING;
+-- #else
+-- Armorsmith
+i(0, 36257);	-- Bulwark of the Ancient Kings
+i(0, 36122);	-- Earthforged Leggings
+i(0, 36256);	-- Embrace of the Twisting Nether
+i(0, 36129);	-- Heavy Earthforged Breastplate
+i(0, 36130);	-- Stormforged Hauberk
+i(0, 36124);	-- Windforged Leggings
+-- Master Axesmith
+i(0, 36261);	-- Bloodmoon
 i(142283, 36135);	-- Skyforged Great Axe
-i(142284, 36133);	-- Stoneforged Claymore
 i(142282, 36134);	-- Stormforged Axe
-i(0, 36263);	-- Stormherald
 i(0, 36260);	-- Wicked Edge of the Planes
+-- Master Hammersmith
+i(0, 36262);	-- Dragonstrike
+i(142287, 36137);	-- Great Earthforged Hammer
+i(142286, 36136);	-- Lavaforged Warhammer
+i(0, 36263);	-- Stormherald
+-- Master Swordsmith
+i(0, 36258);	-- Blazefury
+i(0, 36259);	-- Lionheart Executioner
+i(142284, 36133);	-- Stoneforged Claymore
 i(142279, 36131);	-- Windforged Rapier
+-- Weaponsmith
+i(142402, 36125);	-- Light Earthforged Blade
+i(0, 36128);	-- Light Emberforged Hammer
+i(0, 36126);	-- Light Skyforged Axe
+-- #endif
 -- NYI --
 i(35529, 0);	-- Dawnsteel Bracers
 i(35530, 0);	-- Dawnsteel Shoulders
@@ -620,14 +778,24 @@ i(41122, 54981);	-- Reinforced Cobalt Chestpiece
 i(41123, 54979);	-- Reinforced Cobalt Helm
 i(41120, 54980);	-- Reinforced Cobalt Legplates
 i(41124, 54978);	-- Reinforced Cobalt Shoulders
---Special?
--- ARMOR --
+-- #if BEFORE CATA
+local ProfessionID = 9788;	-- Armorsmithing
 i(0, 55186);	-- Chestplate of Conquest
 i(0, 55187);	-- Legplates of Conquest
--- WEAPON --
+local ProfessionID = 9787;	-- Weaponsmithing
 i(0, 55183);	-- Corroded Saronite Edge
 i(0, 55184);	-- Corroded Saronite Woundbringer
 i(0, 55185);	-- Saronite Mindcrusher
+local ProfessionID = BLACKSMITHING;
+-- #else
+-- Armorsmithing
+i(0, 55186);	-- Chestplate of Conquest
+i(0, 55187);	-- Legplates of Conquest
+-- Weaponsmithing
+i(0, 55183);	-- Corroded Saronite Edge
+i(0, 55184);	-- Corroded Saronite Woundbringer
+i(0, 55185);	-- Saronite Mindcrusher
+-- #endif
 -- REMOVED --
 i(0, 55206);	-- Deadly Saronite Dirk
 i(0, 55628);	-- Socket Bracer
