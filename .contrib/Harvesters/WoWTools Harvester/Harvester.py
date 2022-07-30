@@ -89,34 +89,23 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
     return thing_list
 
 
-# This function takes the input(thing from thing_list) as searches in Categories.lua for every ID responding to that thing and adds them in a file.
-def get_categories_ids(thing):
-    path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\db\\Categories.lua"
-    categories_list = []
-    with open(path) as categories_file:
+def get_categories_ids(thing: Things) -> list[str]:
+    """Get the IDs of a thing from Categories.lua."""
+    thing2prefix: dict[Things, str | tuple[str, ...]] = {
+        Things.Achievements: "ach(",
+        Things.Quests: ("q(", "questID"),
+        Things.Toys: "toy(",
+    }
+    categories_path = Path("..", "..", "..", "db", "Categories.lua")
+    categories_list = list[str]()
+    with open(categories_path) as categories_file:
         for line in categories_file.readlines():
-            line = line.split(",")
-            for id in line:
+            words = line.split(",")
+            for word in words:
                 try:
-                    if thing == "Achievements" and id.find("ach(") != -1:
-                        id = re.sub("[^0-9^.]", "", id)
+                    if word.startswith(thing2prefix[thing]):
+                        id = re.sub("[^0-9^.]", "", word)
                         categories_list.append(id + "\n")
-                    # elif thing == "Factions" and
-                    # elif thing == "Flight Paths" and
-                    # elif thing == "Followers" and
-                    # elif thing == "Illusions" and
-                    # elif thing == "Mounts" and
-                    # elif thing == "Pets" and
-                    elif thing == "Quests" and (
-                        id.find("q(") != -1 or id.find("questID") != -1
-                    ):
-                        id = re.sub("[^0-9^.]", "", id)
-                        categories_list.append(id + "\n")
-                    # elif thing == "Titles", and
-                    elif thing == "Toys" and id.find("toy(") != -1:
-                        id = re.sub("[^0-9^.]", "", id)
-                        categories_list.append(id + "\n")
-                    # elif thing == "Transmog", and
                 except BaseException as err:
                     # What exceptions do you want to catch?
                     print(f"Unexpected {err=}, {type(err)=}")
