@@ -90,38 +90,38 @@ def get_tools_IDs(thing, build):
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
     }
     csv_name = thing + ".csv"
-    txt_name = thing + "Tools" + ".txt"
+    tools_list = []
     request = requests.get(url, headers=headers)
     with open(csv_name,"wb") as csv_file:
         csv_file.write(request.content)
-    with open(csv_name, "r") as csv_file, open(txt_name, "w") as txt_file:
+    with open(csv_name, "r") as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             if thing == "Illusions":
-                txt_file.write(row["SpellItemEnchantmentID"]+"\n")
+                tools_list.append(row["SpellItemEnchantmentID"]+"\n")
             elif thing == "Mounts":
-                txt_file.write(row["SourceSpellID"]+"\n")
+                tools_list.append(row["SourceSpellID"]+"\n")
             elif thing == "Titles":
-                txt_file.write(row["Mask_ID"]+"\n")
+                tools_list.append(row["Mask_ID"]+"\n")
             elif thing == "Toys":
-                txt_file.write(row["ItemID"]+"\n")
+                tools_list.append(row["ItemID"]+"\n")
             #elif thing == "Recipes:"
             else: #"Achievements", "Factions", "Flight Paths", "Followers", "Pets", "Quests", "Transmog":
-                txt_file.write(row["ID"]+"\n")
-    return txt_name
+                tools_list.append(row["ID"]+"\n")
+    return tools_list
 
 # This function takes the input(thing from thing_list) as searches in Categories.lua for every ID responding to that thing and adds them in a file.
 def get_categories_IDs(thing):
     path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\db\\Categories.lua"
-    txt_name = thing + "ATT" + ".txt"
-    with open(path, "r") as categories_file, open(txt_name, "w") as txt_file:
+    categories_list = []
+    with open(path, "r") as categories_file:
         for line in categories_file.readlines():
             line = line.split(",")
             for ID in line:
                 try:
                     if thing == "Achievements" and ID.find("ach(") != -1:
                         ID = re.sub("[^0-9^.]", "", ID)
-                        txt_file.write(ID+"\n")
+                        categories_list.append(ID+"\n")
                     #elif thing == "Factions" and
                     #elif thing == "Flight Paths" and
                     #elif thing == "Followers" and
@@ -130,25 +130,85 @@ def get_categories_IDs(thing):
                     #elif thing == "Pets" and
                     elif thing == "Quests" and (ID.find("q(") != -1 or ID.find("questID") != -1):
                         ID = re.sub("[^0-9^.]", "", ID)
-                        txt_file.write(ID+"\n")
+                        categories_list.append(ID+"\n")
                     #elif thing == "Titles", and
-                    #elif thing == "Toys", and
+                    elif thing == "Toys" and ID.find("toy(") != -1:
+                        ID = re.sub("[^0-9^.]", "", ID)
+                        categories_list.append(ID+"\n")
                     #elif thing == "Transmog", and
                 except:
                     continue
-    return txt_name
+    return categories_list
 
 # This function takes the input(thing from thing_list) and create a raw file that only contains build and ID and are only suppose to be regenerated ca:1 per year. From these files we build our "missing"-files
 def create_raw_file(thing):
-    difference_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
+    raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     build_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\BuildList {thing}.txt"
-    with open(difference_path, "a") as difference_file, open(build_path, "r") as build_file:
+    with open(build_path, "r") as build_file:
+        build_list = build_file.readlines()
+        for build in build_list:
+            tools_list = get_tools_IDs(thing, build)
+            with open(raw_path, "r+") as raw_file:
+                raw_file.write(build+"\n")
+                old_lines = raw_file.readlines()
+                difference = list(set(tools_list)-set(old_lines))
+                bubble_sort(difference)
+                for line in difference:
+                    raw_file.write(line+"\n")
+
 
 # This function takes the input(Latest Build ex. "10.0.0.44500") and generate the difference between this and latest build in Build List file then add the new data to raw files.
 #def add_latest_data(build):
 
 # This function takes the input(thing from thing_list) and will calculate the difference between raw files and categories.lua(what actually is in ATT at the moment). Furthermoore it will add this different to "missing"-file.
-#def create_missing_file(thing):
+def create_missing_file(thing):
+    raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
+    missing_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - Item Database\\MissingIDs\\Missing{thing}.txt"
+    categories_list = get_categories_IDs(thing)
+    with open(raw_path, "r") as raw_file, open(missing_path, "w") as missing_file:
+        raw_lines = raw_file.readlines()
+        difference = list(set(raw_lines)-set(categories_list))
+        for line in difference:
+            missing_file.write(line+"\n")
+        ###Extra Searches here
+        #if thing == "Achievements":
+        #Nothing?
+        #elif thing == "Factions":
+        #Nothing?
+        #elif thing == "Flight Paths":
+        #Maybe need to check Flight Paths file?
+        #elif thing == "Followers":
+        #Nothing?
+        #elif thing == "Illusions":
+        #There is an Illusions file?
+        #elif thing == "Mounts":
+        #Checking Mount.lua
+        #elif thing == "Pets":
+        #Checking Pet.lua
+        #elif thing == "Quests":
+        #Nothing?
+        #elif thing == "Recipes":
+        #Checking the Profession DBs
+        #elif thing == "Titles":
+        #Nothing?
+        if thing == "Toys":
+            toy_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - DB\\ToyDB.lua"
+            toy_list = []
+            with open(toy_path, "r") as toy_file:
+                toy_lines = toy_file.readlines()
+                for toy_line in toy_lines:
+                    toy_line = toy_line.split(";")[0]
+                    if toy_line.find("i(") != -1:
+                        toy_line = re.sub('[^0-9]','', toy_line)
+                        toy_list.append(toy_line)
+            difference = list(set(raw_lines)-set(toy_list))
+            bubble_sort(difference)
+            missing_file.write("\n\n\n\n"+"Missing in ToyDB.lua")
+            for line in difference:
+                missing_file.write(line+"\n")
+        #Checking Toy.lua
+        #elif thing == "Transmog":
+        #Nothing?
 
 # This function takes the input(thing from thing_list) and will try to give the thing a name. (Might need more information in the raw file since wowhead doesnt have everything)
 #def get_name(thing):
