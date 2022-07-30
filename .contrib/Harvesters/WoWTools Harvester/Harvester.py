@@ -1,11 +1,8 @@
-### Tool Harvesters and Generating Missing with name
+# Tool Harvesters and Generating Missing with name
 import csv
-import os
 import re
-import time
 
 import requests
-from bs4 import BeautifulSoup
 
 profession_dict = {
     "Alchemy": 171,
@@ -38,9 +35,10 @@ thing_list = [
     "Transmog",
 ]
 
-### IMPORTANT!!! Use time.sleep() to not lag other users
-### IMPORTANT!!! Adding Recipes Module later
-### IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
+# IMPORTANT!!! Use time.sleep() to not lag other users
+# IMPORTANT!!! Adding Recipes Module later
+# IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
+
 
 # This function is to make list sorted
 def bubble_sort(nums):
@@ -63,7 +61,7 @@ def add_latest_build(build):
 
 
 # This function takes the inputs(thing from thing_list, build ex. "10.0.0.44500"). Creates a csv file and from that csv file only choose specific columns of information(usually useful IDs) and writes them in a new file.
-def get_tools_IDs(thing, build):
+def get_tools_ids(thing, build):
     if thing == "Achievements":
         thing_url = "achievement"
     elif thing == "Factions":
@@ -88,7 +86,7 @@ def get_tools_IDs(thing, build):
         thing_url = "toy"
     elif thing == "Transmog":
         thing_url = "itemmodifiedappearance"
-    url = "https://wow.tools/dbc/api/export/?name={thing_url}&build={build}"
+    url = f"https://wow.tools/dbc/api/export/?name={thing_url}&build={build}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
     }
@@ -115,17 +113,17 @@ def get_tools_IDs(thing, build):
 
 
 # This function takes the input(thing from thing_list) as searches in Categories.lua for every ID responding to that thing and adds them in a file.
-def get_categories_IDs(thing):
+def get_categories_ids(thing):
     path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\db\\Categories.lua"
     categories_list = []
     with open(path) as categories_file:
         for line in categories_file.readlines():
             line = line.split(",")
-            for ID in line:
+            for id in line:
                 try:
-                    if thing == "Achievements" and ID.find("ach(") != -1:
-                        ID = re.sub("[^0-9^.]", "", ID)
-                        categories_list.append(ID + "\n")
+                    if thing == "Achievements" and id.find("ach(") != -1:
+                        id = re.sub("[^0-9^.]", "", id)
+                        categories_list.append(id + "\n")
                     # elif thing == "Factions" and
                     # elif thing == "Flight Paths" and
                     # elif thing == "Followers" and
@@ -133,16 +131,18 @@ def get_categories_IDs(thing):
                     # elif thing == "Mounts" and
                     # elif thing == "Pets" and
                     elif thing == "Quests" and (
-                        ID.find("q(") != -1 or ID.find("questID") != -1
+                        id.find("q(") != -1 or id.find("questID") != -1
                     ):
-                        ID = re.sub("[^0-9^.]", "", ID)
-                        categories_list.append(ID + "\n")
+                        id = re.sub("[^0-9^.]", "", id)
+                        categories_list.append(id + "\n")
                     # elif thing == "Titles", and
-                    elif thing == "Toys" and ID.find("toy(") != -1:
-                        ID = re.sub("[^0-9^.]", "", ID)
-                        categories_list.append(ID + "\n")
+                    elif thing == "Toys" and id.find("toy(") != -1:
+                        id = re.sub("[^0-9^.]", "", id)
+                        categories_list.append(id + "\n")
                     # elif thing == "Transmog", and
-                except:
+                except BaseException as err:
+                    # What exceptions do you want to catch?
+                    print(f"Unexpected {err=}, {type(err)=}")
                     continue
     return categories_list
 
@@ -154,7 +154,7 @@ def create_raw_file(thing):
     with open(build_path) as build_file:
         build_list = build_file.readlines()
         for build in build_list:
-            tools_list = get_tools_IDs(thing, build)
+            tools_list = get_tools_ids(thing, build)
             with open(raw_path, "r+") as raw_file:
                 raw_file.write(build + "\n")
                 old_lines = raw_file.readlines()
@@ -171,13 +171,13 @@ def create_raw_file(thing):
 def create_missing_file(thing):
     raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     missing_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - Item Database\\MissingIDs\\Missing{thing}.txt"
-    categories_list = get_categories_IDs(thing)
+    categories_list = get_categories_ids(thing)
     with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
         raw_lines = raw_file.readlines()
         difference = list(set(raw_lines) - set(categories_list))
         for line in difference:
             missing_file.write(line + "\n")
-        ###Extra Searches here
+        # Extra Searches here
         # if thing == "Achievements":
         # Nothing?
         # elif thing == "Factions":
