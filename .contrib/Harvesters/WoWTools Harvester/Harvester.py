@@ -6,6 +6,8 @@ from pathlib import Path
 
 import requests
 
+DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
+
 profession_dict = {
     "Alchemy": 171,
     "Blacksmithing": 164,
@@ -45,9 +47,8 @@ class Things(Enum):
 
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
-    data_folder = "BuildLists"
     for thing in Things:
-        with open(Path(data_folder, f"BuildList{thing.name}.txt"), "a") as build_list:
+        with open(Path("BuildLists", f"BuildList{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
 
@@ -99,7 +100,7 @@ def get_categories_ids(thing: Things) -> list[str]:
     categories_path = Path("..", "..", "..", "db", "Categories.lua")
     categories_list = list[str]()
     with open(categories_path) as categories_file:
-        for line in categories_file.readlines():
+        for line in categories_file:
             words = line.split(",")
             for word in words:
                 try:
@@ -107,7 +108,7 @@ def get_categories_ids(thing: Things) -> list[str]:
                         id = re.sub("[^0-9^.]", "", word)
                         categories_list.append(id + "\n")
                 except BaseException as err:
-                    # What exceptions do you want to catch?
+                    # TODO: What exceptions do you want to catch?
                     print(f"Unexpected {err=}, {type(err)=}")
                     continue
     return categories_list
@@ -118,28 +119,35 @@ def create_raw_file(thing: Things) -> None:
     raw_path = Path("Backups", f"Raw{thing.name}.txt")
     builds_path = Path("BuildLists", f"BuildList{thing.name}.txt")
     with open(builds_path) as builds_file:
-        build_list = builds_file.readlines()
-        for build in build_list:
+        for build in builds_file:
             thing_list = get_thing_ids(thing, build)
             with open(raw_path, "r+") as raw_file:
                 raw_file.write(build + "\n")
                 old_lines = raw_file.readlines()
-                # this only finds new Things, not removed Things
+                # TODO: this only finds new Things, not removed Things
                 difference = sorted(set(thing_list) - set(old_lines))
                 for line in difference:
                     raw_file.write(line + "\n")
 
 
-# This function takes the input(Latest Build ex. "10.0.0.44500") and generate the difference between this and latest build in Build List file then add the new data to raw files.
-# def add_latest_data(build):
+def add_latest_data(build: str) -> None:
+    """Add the latest data to the raw files."""
+    raise NotImplementedError
 
-# This function takes the input(thing from Things) and will calculate the difference between raw files and categories.lua(what actually is in ATT at the moment). Furthermoore it will add this different to "missing"-file.
-def create_missing_file(thing):
-    raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
-    missing_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - Item Database\\MissingIDs\\Missing{thing}.txt"
+
+def create_missing_file(thing: Things) -> None:
+    """Create a missing file for a thing using difference between Categories.lua and raw file."""
+    raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    missing_path = Path(
+        DATAS_FOLDER,
+        "00 - Item Database",
+        "MissingIDs",
+        f"Missing{thing.name}.txt",
+    )
     categories_list = get_categories_ids(thing)
     with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
         raw_lines = raw_file.readlines()
+        # TODO: this only finds new Things, not removed Things
         difference = list(set(raw_lines) - set(categories_list))
         for line in difference:
             missing_file.write(line + "\n")
@@ -164,18 +172,17 @@ def create_missing_file(thing):
         # Checking the Profession DBs
         # elif thing == "Titles":
         # Nothing?
-        if thing == "Toys":
-            toy_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - DB\\ToyDB.lua"
-            toy_list = []
+        if thing == Things.Toys:
+            toy_path = Path(DATAS_FOLDER, "00 - DB", "ToyDB.lua")
+            toy_list = list[str]()
             with open(toy_path) as toy_file:
-                toy_lines = toy_file.readlines()
-                for toy_line in toy_lines:
+                for toy_line in toy_file:
                     toy_line = toy_line.split(";")[0]
-                    if toy_line.find("i(") != -1:
+                    if toy_line.startswith("i("):
                         toy_line = re.sub("[^0-9]", "", toy_line)
                         toy_list.append(toy_line)
-            difference = list(set(raw_lines) - set(toy_list))
-            difference.sort()
+            # TODO: this only finds new Toys, not removed Toys
+            difference = sorted(set(raw_lines) - set(toy_list))
             missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua")
             for line in difference:
                 missing_file.write(line + "\n")
@@ -184,5 +191,8 @@ def create_missing_file(thing):
         # Nothing?
 
 
-# This function takes the input(thing from thing_list) and will try to give the thing a name. (Might need more information in the raw file since wowhead doesnt have everything)
-# def get_name(thing):
+def get_name(thing: Things) -> None:
+    """Get the name of a thing from Wowhead."""
+    # TODO: Should this accept type of Thing and its ID?
+    # TODO: Should it return the name?
+    raise NotImplementedError
