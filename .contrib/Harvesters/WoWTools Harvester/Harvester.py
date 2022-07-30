@@ -40,11 +40,6 @@ class Things(Enum):
     Transmog = auto()
 
 
-# IMPORTANT!!! Use time.sleep() to not lag other users
-# IMPORTANT!!! Adding Recipes Module later
-# IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
-
-
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
