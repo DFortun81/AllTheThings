@@ -40,17 +40,6 @@ thing_list = [
 # IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
 
 
-# This function is to make list sorted
-def bubble_sort(nums):
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range(len(nums) - 1):
-            if nums[i] > nums[i + 1]:
-                nums[i], nums[i + 1] = nums[i + 1], nums[i]
-                swapped = True
-
-
 # This function takes the input(Latest Build ex. "10.0.0.44500") and add it to all the BuildList files at the end.
 def add_latest_build(build):
     data_folder = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\"
@@ -159,7 +148,7 @@ def create_raw_file(thing):
                 raw_file.write(build + "\n")
                 old_lines = raw_file.readlines()
                 difference = list(set(tools_list) - set(old_lines))
-                bubble_sort(difference)
+                difference.sort()
                 for line in difference:
                     raw_file.write(line + "\n")
 
@@ -209,7 +198,7 @@ def create_missing_file(thing):
                         toy_line = re.sub("[^0-9]", "", toy_line)
                         toy_list.append(toy_line)
             difference = list(set(raw_lines) - set(toy_list))
-            bubble_sort(difference)
+            difference.sort()
             missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua")
             for line in difference:
                 missing_file.write(line + "\n")
