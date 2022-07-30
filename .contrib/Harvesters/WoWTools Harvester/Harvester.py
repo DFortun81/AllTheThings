@@ -113,19 +113,19 @@ def get_categories_ids(thing: Things) -> list[str]:
     return categories_list
 
 
-# This function takes the input(thing from Things) and create a raw file that only contains build and ID and are only suppose to be regenerated ca:1 per year. From these files we build our "missing"-files
-def create_raw_file(thing):
-    raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
-    build_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\BuildList {thing}.txt"
-    with open(build_path) as build_file:
-        build_list = build_file.readlines()
+def create_raw_file(thing: Things) -> None:
+    """Create a raw file for a thing."""
+    raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    builds_path = Path("BuildLists", f"BuildList{thing.name}.txt")
+    with open(builds_path) as builds_file:
+        build_list = builds_file.readlines()
         for build in build_list:
-            tools_list = get_thing_ids(thing, build)
+            thing_list = get_thing_ids(thing, build)
             with open(raw_path, "r+") as raw_file:
                 raw_file.write(build + "\n")
                 old_lines = raw_file.readlines()
-                difference = list(set(tools_list) - set(old_lines))
-                difference.sort()
+                # this only finds new Things, not removed Things
+                difference = sorted(set(thing_list) - set(old_lines))
                 for line in difference:
                     raw_file.write(line + "\n")
 
