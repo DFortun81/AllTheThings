@@ -1,6 +1,7 @@
 # Tool Harvesters and Generating Missing with name
 import csv
 import re
+from pathlib import Path
 
 import requests
 
@@ -40,12 +41,11 @@ thing_list = [
 # IMPORTANT!!! add TRY-EXCEPT for security if anything is bad
 
 
-# This function takes the input(Latest Build ex. "10.0.0.44500") and add it to all the BuildList files at the end.
-def add_latest_build(build):
-    data_folder = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\"
+def add_latest_build(build: str) -> None:
+    """Append the latest build to all the BuildList files."""
+    data_folder = "BuildLists"
     for thing in thing_list:
-        path = data_folder + "BuildList " + thing + ".txt"
-        with open(path, "a") as build_list:
+        with open(Path(data_folder, f"BuildList{thing}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
 
