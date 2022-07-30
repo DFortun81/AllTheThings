@@ -1,9 +1,10 @@
 ### Tool Harvesters and Generating Missing with name
+import csv
 import os
 import re
-import csv
-import requests
 import time
+
+import requests
 from bs4 import BeautifulSoup
 
 profession_dict = {
