@@ -1,6 +1,7 @@
 # Tool Harvesters and Generating Missing with name
 import csv
 import re
+from enum import Enum, auto
 from pathlib import Path
 
 import requests
@@ -21,20 +22,21 @@ profession_dict = {
     "Tailoring": 197,
 }
 
-thing_list = [
-    "Achievements",
-    "Factions",
-    "Flight Paths",
-    "Followers",
-    "Illusions",
-    "Mounts",
-    "Pets",
-    "Quests",
-    # "Recipes",
-    "Titles",
-    "Toys",
-    "Transmog",
-]
+
+class Things(Enum):
+    Achievements = auto()
+    Factions = auto()
+    FlightPaths = auto()
+    Followers = auto()
+    Illusions = auto()
+    Mounts = auto()
+    Pets = auto()
+    Quests = auto()
+    Titles = auto()
+    Toys = auto()
+    Transmog = auto()
+    Recipes = auto()
+
 
 # IMPORTANT!!! Use time.sleep() to not lag other users
 # IMPORTANT!!! Adding Recipes Module later
@@ -44,8 +46,8 @@ thing_list = [
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     data_folder = "BuildLists"
-    for thing in thing_list:
-        with open(Path(data_folder, f"BuildList{thing}.txt"), "a") as build_list:
+    for thing in Things:
+        with open(Path(data_folder, f"BuildList{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
 
