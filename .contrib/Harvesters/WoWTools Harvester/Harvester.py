@@ -32,10 +32,10 @@ class Things(Enum):
     Mounts = auto()
     Pets = auto()
     Quests = auto()
+    Recipes = auto()
     Titles = auto()
     Toys = auto()
     Transmog = auto()
-    Recipes = auto()
 
 
 # IMPORTANT!!! Use time.sleep() to not lag other users
@@ -51,56 +51,42 @@ def add_latest_build(build: str) -> None:
             build_list.write(build + "\n")
 
 
-# This function takes the inputs(thing from thing_list, build ex. "10.0.0.44500"). Creates a csv file and from that csv file only choose specific columns of information(usually useful IDs) and writes them in a new file.
-def get_tools_ids(thing, build):
-    if thing == "Achievements":
-        thing_url = "achievement"
-    elif thing == "Factions":
-        thing_url = "faction"
-    elif thing == "Flight Paths":
-        thing_url = "taxinodes"
-    elif thing == "Followers":
-        thing_url = "garrfollower"
-    elif thing == "Illusions":
-        thing_url = "transmogillusion"
-    elif thing == "Mounts":
-        thing_url = "mount"
-    elif thing == "Pets":
-        thing_url = "battlepetspecies"
-    elif thing == "Quests":
-        thing_url = "questv2"
-    # elif thing == "Recipes":
-    # thing_url = "skilllineability"
-    elif thing == "Titles":
-        thing_url = "chartitles"
-    elif thing == "Toys":
-        thing_url = "toy"
-    elif thing == "Transmog":
-        thing_url = "itemmodifiedappearance"
-    url = f"https://wow.tools/dbc/api/export/?name={thing_url}&build={build}"
+def get_thing_ids(thing: Things, build: str) -> list[str]:
+    """Get the IDs of a thing from a build."""
+    thing2table = {
+        Things.Achievements: "achievement",
+        Things.Factions: "faction",
+        Things.FlightPaths: "taxinodes",
+        Things.Followers: "garrfollower",
+        Things.Illusions: "transmogillusion",
+        Things.Mounts: "mount",
+        Things.Pets: "battlepetspecies",
+        Things.Quests: "questv2",
+        Things.Recipes: "skilllineability",
+        Things.Titles: "chartitles",
+        Things.Toys: "toy",
+        Things.Transmog: "itemmodifiedappearance",
+    }
+    url = f"https://wow.tools/dbc/api/export/?name={thing2table[thing]}&build={build}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
     }
-    csv_name = thing + ".csv"
-    tools_list = []
+    thing_list = list[str]()
     request = requests.get(url, headers=headers)
-    with open(csv_name, "wb") as csv_file:
-        csv_file.write(request.content)
-    with open(csv_name) as csv_file:
-        reader = csv.DictReader(csv_file)
-        for row in reader:
-            if thing == "Illusions":
-                tools_list.append(row["SpellItemEnchantmentID"] + "\n")
-            elif thing == "Mounts":
-                tools_list.append(row["SourceSpellID"] + "\n")
-            elif thing == "Titles":
-                tools_list.append(row["Mask_ID"] + "\n")
-            elif thing == "Toys":
-                tools_list.append(row["ItemID"] + "\n")
-            # elif thing == "Recipes:"
-            else:  # "Achievements", "Factions", "Flight Paths", "Followers", "Pets", "Quests", "Transmog":
-                tools_list.append(row["ID"] + "\n")
-    return tools_list
+    reader = csv.DictReader(request.content.decode("utf-8").splitlines())
+    for row in reader:
+        match thing:
+            case Things.Illusions:
+                thing_list.append(row["SpellItemEnchantmentID"] + "\n")
+            case Things.Mounts:
+                thing_list.append(row["SourceSpellID"] + "\n")
+            case Things.Titles:
+                thing_list.append(row["Mask_ID"] + "\n")
+            case Things.Toys:
+                thing_list.append(row["ItemID"] + "\n")
+            case _:
+                thing_list.append(row["ID"] + "\n")
+    return thing_list
 
 
 # This function takes the input(thing from thing_list) as searches in Categories.lua for every ID responding to that thing and adds them in a file.
@@ -138,14 +124,14 @@ def get_categories_ids(thing):
     return categories_list
 
 
-# This function takes the input(thing from thing_list) and create a raw file that only contains build and ID and are only suppose to be regenerated ca:1 per year. From these files we build our "missing"-files
+# This function takes the input(thing from Things) and create a raw file that only contains build and ID and are only suppose to be regenerated ca:1 per year. From these files we build our "missing"-files
 def create_raw_file(thing):
     raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     build_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\BuildList {thing}.txt"
     with open(build_path) as build_file:
         build_list = build_file.readlines()
         for build in build_list:
-            tools_list = get_tools_ids(thing, build)
+            tools_list = get_thing_ids(thing, build)
             with open(raw_path, "r+") as raw_file:
                 raw_file.write(build + "\n")
                 old_lines = raw_file.readlines()
@@ -158,7 +144,7 @@ def create_raw_file(thing):
 # This function takes the input(Latest Build ex. "10.0.0.44500") and generate the difference between this and latest build in Build List file then add the new data to raw files.
 # def add_latest_data(build):
 
-# This function takes the input(thing from thing_list) and will calculate the difference between raw files and categories.lua(what actually is in ATT at the moment). Furthermoore it will add this different to "missing"-file.
+# This function takes the input(thing from Things) and will calculate the difference between raw files and categories.lua(what actually is in ATT at the moment). Furthermoore it will add this different to "missing"-file.
 def create_missing_file(thing):
     raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     missing_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - Item Database\\MissingIDs\\Missing{thing}.txt"
