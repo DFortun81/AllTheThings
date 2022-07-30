@@ -97,7 +97,7 @@ def get_tools_IDs(thing, build):
     request = requests.get(url, headers=headers)
     with open(csv_name, "wb") as csv_file:
         csv_file.write(request.content)
-    with open(csv_name, "r") as csv_file:
+    with open(csv_name) as csv_file:
         reader = csv.DictReader(csv_file)
         for row in reader:
             if thing == "Illusions":
@@ -118,7 +118,7 @@ def get_tools_IDs(thing, build):
 def get_categories_IDs(thing):
     path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\db\\Categories.lua"
     categories_list = []
-    with open(path, "r") as categories_file:
+    with open(path) as categories_file:
         for line in categories_file.readlines():
             line = line.split(",")
             for ID in line:
@@ -151,7 +151,7 @@ def get_categories_IDs(thing):
 def create_raw_file(thing):
     raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     build_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\BuildLists\\BuildList {thing}.txt"
-    with open(build_path, "r") as build_file:
+    with open(build_path) as build_file:
         build_list = build_file.readlines()
         for build in build_list:
             tools_list = get_tools_IDs(thing, build)
@@ -172,7 +172,7 @@ def create_missing_file(thing):
     raw_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Harvesters\\WoWToolsHarvester\\Backups\\Raw{thing}.txt"
     missing_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - Item Database\\MissingIDs\\Missing{thing}.txt"
     categories_list = get_categories_IDs(thing)
-    with open(raw_path, "r") as raw_file, open(missing_path, "w") as missing_file:
+    with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
         raw_lines = raw_file.readlines()
         difference = list(set(raw_lines) - set(categories_list))
         for line in difference:
@@ -201,7 +201,7 @@ def create_missing_file(thing):
         if thing == "Toys":
             toy_path = "C:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\00 - DB\\ToyDB.lua"
             toy_list = []
-            with open(toy_path, "r") as toy_file:
+            with open(toy_path) as toy_file:
                 toy_lines = toy_file.readlines()
                 for toy_line in toy_lines:
                     toy_line = toy_line.split(";")[0]
