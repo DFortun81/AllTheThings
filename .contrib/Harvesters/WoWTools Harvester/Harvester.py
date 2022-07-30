@@ -98,14 +98,9 @@ def get_categories_ids(thing: Things) -> list[str]:
         for line in categories_file:
             words = line.split(",")
             for word in words:
-                try:
-                    if word.startswith(thing2prefix[thing]):
-                        id = re.sub("[^0-9^.]", "", word)
-                        categories_list.append(id + "\n")
-                except BaseException as err:
-                    # TODO: What exceptions do you want to catch?
-                    print(f"Unexpected {err=}, {type(err)=}")
-                    continue
+                if word.startswith(thing2prefix[thing]):
+                    id = re.sub("[^0-9^.]", "", word)
+                    categories_list.append(id + "\n")
     return categories_list
 
 
