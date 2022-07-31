@@ -1400,6 +1400,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						48590,	-- My Head and Shoulders
 					},
 				}),
+				q(50080),	-- Raiding the Raiders
 				q(48852, {	-- Stopping Zardax
 					["sourceQuests"] = {
 						48825,	-- Power Denied
