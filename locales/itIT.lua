@@ -1159,7 +1159,7 @@ for key,value in pairs({
 	[186585] = "Rotolo di Pelle di Drago",	-- Dragonskin Scroll
 	--TODO: [186881] = "Dark Iron Sabotage Plans",	-- Dark Iron Sabotage Plans
 	[186887] = "Grande Jack Lanterna",	-- Large Jack-o'-Lantern
-	--TODO: [187072] = "Razorthorn Root",	-- Razorthorn Root
+	[187072] = "Razorthorn Root",	-- Razorthorn Root	--TODO: This was taken from tbc Wowhead
 	[187236] = "Regalo di Grande Inverno",	-- Winter Veil Gift
 	[187273] = "Impronta di Zoccolo Sospetta",	-- Suspicious Hoofprint
 	[187333] = "Cespuglio di Baccasangue",	-- Bloodberry Bush
