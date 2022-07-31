@@ -74,6 +74,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(164377),	-- Regenerating Banana Bunch (TOY!)
 				i(164371),	-- Yaungol Oil Stove (TOY!)
 				i(163566);	-- Vulpera Battle Banner (TOY!)
+				i(163565);	-- Vulpera Scrapper's Armor (TOY!)
 				i(163206);	-- Weary Spirit Binding (TOY!)
 			}),
 			tier(BFA_TIER, 1.0, {

@@ -767,7 +767,6 @@ i(162643);	-- Toy Armor Set (A)
 i(162642);	-- Toy Armor Set (H)
 i(163828);	-- Toy Siege Tower
 i(163829);	-- Toy War Machine
-i(163565);	-- Vulpera Scrapper's Armor
 i(163924);	-- Whiskerwax Candle
 i(163745);	-- Witherbark Gong
 i(164371);	-- Yaungol Oil Stove
@@ -776,6 +775,7 @@ i(156649);	-- Zandalari Effigy Amulet
 i(164372);	-- Jinyu Light Globe
 i(164377);	-- Regenerating Banana Bunch
 i(163566);	-- Vulpera Battle Banner
+i(163565);	-- Vulpera Scrapper's Armor
 i(163206);	-- Weary Spirit Binding
 
 -----------------

@@ -97,7 +97,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				q(50768),	--
 				q(51692),	--
-				q(52402),	-- Work Order: Viridium
 				q(52934),	--
 				q(53428),	--
 				q(53429),	--

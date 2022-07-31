@@ -23,11 +23,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 				["lvl"] = { 50 },
 			}),
-			q(52402, {	-- Work Order: Viridium
-				["isWorldQuest"] = true,
-				["lvl"] = { 50 },
-				["races"] = ALLIANCE_ONLY,
-			}),
 			]]--
 			q(52180, {	-- A Brennadam Shame
 				["lvl"] = { 50 },
@@ -858,15 +853,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162364),	-- Recipe: Contract: Storm's Wake [Rank 3] (RECIPE!)
 				},
 			}),
-			q(52347, {	-- Work Order: Honey-Glazed Haunchs
-				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
-				["lvl"] = { 50 },
-				["isWorldQuest"] = true,
-				["requireSkill"] = COOKING,
-				["g"] = {
-					i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3] (RECIPE!)
-				},
-			}),
 			q(52367, {	-- Work Order: Electroshock Mount Motivator
 				["lvl"] = { 50 },
 				["races"] = ALLIANCE_ONLY,
@@ -894,6 +880,16 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 				},
 			}),
+			q(52347, {	-- Work Order: Honey-Glazed Haunchs
+				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
+				["lvl"] = { 50 },
+				["isWorldQuest"] = true,
+				["requireSkill"] = COOKING,
+				["g"] = {
+					i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3] (RECIPE!)
+				},
+			}),
+
 			q(52344, {	-- Work Order: Kul Tiramisu
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 				["lvl"] = { 50 },
@@ -959,6 +955,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = { 50 },
+			}),
+			q(52402, {	-- Work Order: Viridium
+				["isWorldQuest"] = true,
+				["lvl"] = { 50 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52352, {	-- Zeritarj
 				["lvl"] = { 50 },
