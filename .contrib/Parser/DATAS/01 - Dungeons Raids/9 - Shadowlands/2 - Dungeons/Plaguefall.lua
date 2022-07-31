@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-SLIME_SERPENT_DESC = "Requires solo kill of the last 2 bosses in either heroic or mythic Plaguefall."
+SLIME_SERPENT_DESC = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall."
 
 root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	inst(1183, {	-- Plaguefall
