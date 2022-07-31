@@ -803,6 +803,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62867, {	-- Return Lost Souls (10)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -810,6 +811,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62868, {	-- Return Lost Souls (15)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -817,6 +819,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 164738 },	-- Tenaval
 				["isWeekly"] = true,
 				["coord"] = { 46.0, 28.1, SINFALL_REACHES },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62869, {	-- Return Lost Souls (20)
 				-- ["sourceQuests"] = {  },	-- TODO
