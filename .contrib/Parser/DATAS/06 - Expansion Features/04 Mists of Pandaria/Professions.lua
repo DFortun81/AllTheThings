@@ -495,5 +495,24 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 				},
 			}),
 		})),
+		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
+			n(QUESTS, {
+				q(32621, {	-- Lightning Steel
+					["provider"] = { "i", 94721 },	-- Strange Metal Ingot
+					["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
+					["g"] = {
+						i(94553, {	-- Notes on Lightning Steel
+							i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
+							i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
+							i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
+							i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
+							i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
+							i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
+							i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
+						}),
+					},
+				}),
+			}),
+		})),
 	}),
 })));

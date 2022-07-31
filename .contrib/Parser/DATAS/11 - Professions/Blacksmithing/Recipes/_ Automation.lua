@@ -2664,38 +2664,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143255",
 							["recipeID"] = 143255
 						},
-						{
-							["name"] = "Folded Ghost Iron",
-							["hash"] = "recipeID126869",
-							["recipeID"] = 126869
-						},
-						{
-							["name"] = "Lightning Steel Ingot",
-							["hash"] = "recipeID138646",
-							["recipeID"] = 138646
-						}
-					}
-				},
-				{
-					["name"] = "Equipment Mods",
-					["categoryID"] = 557,
-					["hash"] = "categoryID557",
-					["g"] = {
-						{
-							["name"] = "Ghost Iron Shield Spike",
-							["hash"] = "recipeID131928",
-							["recipeID"] = 131928
-						},
-						{
-							["name"] = "Living Steel Belt Buckle",
-							["hash"] = "recipeID122632",
-							["recipeID"] = 122632
-						},
-						{
-							["name"] = "Living Steel Weapon Chain",
-							["hash"] = "recipeID131929",
-							["recipeID"] = 131929
-						}
 					}
 				},
 				{
@@ -2703,36 +2671,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 554,
 					["hash"] = "categoryID554",
 					["g"] = {
-						{
-							["name"] = "Contender's Revenant Helm",
-							["hash"] = "recipeID122616",
-							["recipeID"] = 122616
-						},
-						{
-							["name"] = "Contender's Spirit Helm",
-							["hash"] = "recipeID122624",
-							["recipeID"] = 122624
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Dreadplate Helm",
-							["hash"] = "recipeID140844",
-							["recipeID"] = 140844
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Ornamented Headcover",
-							["hash"] = "recipeID137784",
-							["recipeID"] = 137784
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Plate Helm",
-							["hash"] = "recipeID137795",
-							["recipeID"] = 137795
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Scaled Helm",
-							["hash"] = "recipeID137773",
-							["recipeID"] = 137773
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Dreadplate Helm",
 							["hash"] = "recipeID143165",
@@ -2753,51 +2691,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143170",
 							["recipeID"] = 143170
 						},
-						{
-							["name"] = "Ghost-Forged Helm",
-							["hash"] = "recipeID122576",
-							["recipeID"] = 122576
-						},
-						{
-							["name"] = "Haunted Steel Greathelm",
-							["hash"] = "recipeID137769",
-							["recipeID"] = 137769
-						},
-						{
-							["name"] = "Haunted Steel Headcover",
-							["hash"] = "recipeID137767",
-							["recipeID"] = 137767
-						},
-						{
-							["name"] = "Haunted Steel Headguard",
-							["hash"] = "recipeID137771",
-							["recipeID"] = 137771
-						},
-						{
-							["name"] = "Lightsteel Helm",
-							["hash"] = "recipeID122584",
-							["recipeID"] = 122584
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Helm",
-							["hash"] = "recipeID122600",
-							["recipeID"] = 122600
-						},
-						{
-							["name"] = "Masterwork Lightsteel Helm",
-							["hash"] = "recipeID122608",
-							["recipeID"] = 122608
-						},
-						{
-							["name"] = "Masterwork Spiritguard Helm",
-							["hash"] = "recipeID122592",
-							["recipeID"] = 122592
-						},
-						{
-							["name"] = "Spiritguard Helm",
-							["hash"] = "recipeID122568",
-							["recipeID"] = 122568
-						}
 					}
 				},
 				{
@@ -2805,36 +2698,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 555,
 					["hash"] = "categoryID555",
 					["g"] = {
-						{
-							["name"] = "Contender's Revenant Shoulders",
-							["hash"] = "recipeID122617",
-							["recipeID"] = 122617
-						},
-						{
-							["name"] = "Contender's Spirit Shoulders",
-							["hash"] = "recipeID122625",
-							["recipeID"] = 122625
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Dreadplate Shoulders",
-							["hash"] = "recipeID140842",
-							["recipeID"] = 140842
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Ornamented Spaulders",
-							["hash"] = "recipeID137786",
-							["recipeID"] = 137786
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Plate Shoulders",
-							["hash"] = "recipeID137797",
-							["recipeID"] = 137797
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Scaled Shoulders",
-							["hash"] = "recipeID137775",
-							["recipeID"] = 137775
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Dreadplate Shoulders",
 							["hash"] = "recipeID143167",
@@ -2855,36 +2718,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143172",
 							["recipeID"] = 143172
 						},
-						{
-							["name"] = "Ghost-Forged Shoulders",
-							["hash"] = "recipeID122577",
-							["recipeID"] = 122577
-						},
-						{
-							["name"] = "Lightsteel Shoulders",
-							["hash"] = "recipeID122585",
-							["recipeID"] = 122585
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Shoulders",
-							["hash"] = "recipeID122601",
-							["recipeID"] = 122601
-						},
-						{
-							["name"] = "Masterwork Lightsteel Shoulders",
-							["hash"] = "recipeID122609",
-							["recipeID"] = 122609
-						},
-						{
-							["name"] = "Masterwork Spiritguard Shoulders",
-							["hash"] = "recipeID122593",
-							["recipeID"] = 122593
-						},
-						{
-							["name"] = "Spiritguard Shoulders",
-							["hash"] = "recipeID122569",
-							["recipeID"] = 122569
-						}
 					}
 				},
 				{
@@ -2892,46 +2725,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 559,
 					["hash"] = "categoryID559",
 					["g"] = {
-						{
-							["name"] = "Breastplate of Ancient Steel",
-							["hash"] = "recipeID122653",
-							["recipeID"] = 122653
-						},
-						{
-							["name"] = "Chestplate of Limitless Faith",
-							["hash"] = "recipeID126854",
-							["recipeID"] = 126854
-						},
-						{
-							["name"] = "Contender's Revenant Breastplate",
-							["hash"] = "recipeID122618",
-							["recipeID"] = 122618
-						},
-						{
-							["name"] = "Contender's Spirit Breastplate",
-							["hash"] = "recipeID122626",
-							["recipeID"] = 122626
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Dreadplate Chestpiece",
-							["hash"] = "recipeID140846",
-							["recipeID"] = 140846
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Ornamented Chestguard",
-							["hash"] = "recipeID137782",
-							["recipeID"] = 137782
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Plate Chestpiece",
-							["hash"] = "recipeID137793",
-							["recipeID"] = 137793
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Scaled Chestpiece",
-							["hash"] = "recipeID140841",
-							["recipeID"] = 140841
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Dreadplate Chestpiece",
 							["hash"] = "recipeID143163",
@@ -2952,56 +2745,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143168",
 							["recipeID"] = 143168
 						},
-						{
-							["name"] = "Ghost Reaver's Breastplate",
-							["hash"] = "recipeID122649",
-							["recipeID"] = 122649
-						},
-						{
-							["name"] = "Ghost-Forged Breastplate",
-							["hash"] = "recipeID122578",
-							["recipeID"] = 122578
-						},
-						{
-							["name"] = "Lightsteel Breastplate",
-							["hash"] = "recipeID122586",
-							["recipeID"] = 122586
-						},
-						{
-							["name"] = "Living Steel Breastplate",
-							["hash"] = "recipeID122651",
-							["recipeID"] = 122651
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Breastplate",
-							["hash"] = "recipeID122602",
-							["recipeID"] = 122602
-						},
-						{
-							["name"] = "Masterwork Lightsteel Breastplate",
-							["hash"] = "recipeID122610",
-							["recipeID"] = 122610
-						},
-						{
-							["name"] = "Masterwork Spiritguard Breastplate",
-							["hash"] = "recipeID122594",
-							["recipeID"] = 122594
-						},
-						{
-							["name"] = "Ornate Battleplate of the Master",
-							["hash"] = "recipeID126852",
-							["recipeID"] = 126852
-						},
-						{
-							["name"] = "Spiritguard Breastplate",
-							["hash"] = "recipeID122570",
-							["recipeID"] = 122570
-						},
-						{
-							["name"] = "Unyielding Bloodplate",
-							["hash"] = "recipeID126850",
-							["recipeID"] = 126850
-						}
 					}
 				},
 				{
@@ -3009,41 +2752,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 560,
 					["hash"] = "categoryID560",
 					["g"] = {
-						{
-							["name"] = "Bloodforged Warfists",
-							["hash"] = "recipeID126853",
-							["recipeID"] = 126853
-						},
-						{
-							["name"] = "Contender's Revenant Gauntlets",
-							["hash"] = "recipeID122619",
-							["recipeID"] = 122619
-						},
-						{
-							["name"] = "Contender's Spirit Gauntlets",
-							["hash"] = "recipeID122627",
-							["recipeID"] = 122627
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Dreadplate Gauntlets",
-							["hash"] = "recipeID140845",
-							["recipeID"] = 140845
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Ornamented Gloves",
-							["hash"] = "recipeID137783",
-							["recipeID"] = 137783
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Plate Gauntlets",
-							["hash"] = "recipeID137794",
-							["recipeID"] = 137794
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Scaled Gauntlets",
-							["hash"] = "recipeID137772",
-							["recipeID"] = 137772
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Dreadplate Gauntlets",
 							["hash"] = "recipeID143164",
@@ -3064,61 +2772,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143169",
 							["recipeID"] = 143169
 						},
-						{
-							["name"] = "Gauntlets of Ancient Steel",
-							["hash"] = "recipeID122654",
-							["recipeID"] = 122654
-						},
-						{
-							["name"] = "Gauntlets of Battle Command",
-							["hash"] = "recipeID126851",
-							["recipeID"] = 126851
-						},
-						{
-							["name"] = "Gauntlets of Unbound Devotion",
-							["hash"] = "recipeID126855",
-							["recipeID"] = 126855
-						},
-						{
-							["name"] = "Ghost Reaver's Gauntlets",
-							["hash"] = "recipeID122650",
-							["recipeID"] = 122650
-						},
-						{
-							["name"] = "Ghost-Forged Gauntlets",
-							["hash"] = "recipeID122579",
-							["recipeID"] = 122579
-						},
-						{
-							["name"] = "Lightsteel Gauntlets",
-							["hash"] = "recipeID122587",
-							["recipeID"] = 122587
-						},
-						{
-							["name"] = "Living Steel Gauntlets",
-							["hash"] = "recipeID122652",
-							["recipeID"] = 122652
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Gauntlets",
-							["hash"] = "recipeID122603",
-							["recipeID"] = 122603
-						},
-						{
-							["name"] = "Masterwork Lightsteel Gauntlets",
-							["hash"] = "recipeID122611",
-							["recipeID"] = 122611
-						},
-						{
-							["name"] = "Masterwork Spiritguard Gauntlets",
-							["hash"] = "recipeID122595",
-							["recipeID"] = 122595
-						},
-						{
-							["name"] = "Spiritguard Gauntlets",
-							["hash"] = "recipeID122571",
-							["recipeID"] = 122571
-						}
 					}
 				},
 				{
@@ -3126,36 +2779,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 561,
 					["hash"] = "categoryID561",
 					["g"] = {
-						{
-							["name"] = "Contender's Revenant Bracers",
-							["hash"] = "recipeID122621",
-							["recipeID"] = 122621
-						},
-						{
-							["name"] = "Contender's Spirit Bracers",
-							["hash"] = "recipeID122629",
-							["recipeID"] = 122629
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Armplates of Alacrity",
-							["hash"] = "recipeID137792",
-							["recipeID"] = 137792
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Armplates of Proficiency",
-							["hash"] = "recipeID137791",
-							["recipeID"] = 137791
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Bracers of Meditation",
-							["hash"] = "recipeID137781",
-							["recipeID"] = 137781
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Bracers of Prowess",
-							["hash"] = "recipeID137780",
-							["recipeID"] = 137780
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Armplates of Alacrity",
 							["hash"] = "recipeID143189",
@@ -3176,36 +2799,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143177",
 							["recipeID"] = 143177
 						},
-						{
-							["name"] = "Ghost-Forged Bracers",
-							["hash"] = "recipeID122581",
-							["recipeID"] = 122581
-						},
-						{
-							["name"] = "Lightsteel Bracers",
-							["hash"] = "recipeID122589",
-							["recipeID"] = 122589
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Bracers",
-							["hash"] = "recipeID122605",
-							["recipeID"] = 122605
-						},
-						{
-							["name"] = "Masterwork Lightsteel Bracers",
-							["hash"] = "recipeID122613",
-							["recipeID"] = 122613
-						},
-						{
-							["name"] = "Masterwork Spiritguard Bracers",
-							["hash"] = "recipeID122597",
-							["recipeID"] = 122597
-						},
-						{
-							["name"] = "Spiritguard Bracers",
-							["hash"] = "recipeID122573",
-							["recipeID"] = 122573
-						}
 					}
 				},
 				{
@@ -3222,36 +2815,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Blessed Trillium Belt",
 							["hash"] = "recipeID142963",
 							["recipeID"] = 142963
-						},
-						{
-							["name"] = "Contender's Revenant Belt",
-							["hash"] = "recipeID122623",
-							["recipeID"] = 122623
-						},
-						{
-							["name"] = "Contender's Spirit Belt",
-							["hash"] = "recipeID122631",
-							["recipeID"] = 122631
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Clasp of Cruelty",
-							["hash"] = "recipeID137776",
-							["recipeID"] = 137776
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Clasp of Meditation",
-							["hash"] = "recipeID137777",
-							["recipeID"] = 137777
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Girdle of Accuracy",
-							["hash"] = "recipeID137787",
-							["recipeID"] = 137787
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Girdle of Prowess",
-							["hash"] = "recipeID137788",
-							["recipeID"] = 137788
 						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Clasp of Cruelty",
@@ -3274,40 +2837,10 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 143185
 						},
 						{
-							["name"] = "Ghost-Forged Belt",
-							["hash"] = "recipeID122583",
-							["recipeID"] = 122583
-						},
-						{
-							["name"] = "Lightsteel Belt",
-							["hash"] = "recipeID122591",
-							["recipeID"] = 122591
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Belt",
-							["hash"] = "recipeID122607",
-							["recipeID"] = 122607
-						},
-						{
-							["name"] = "Masterwork Lightsteel Belt",
-							["hash"] = "recipeID122615",
-							["recipeID"] = 122615
-						},
-						{
-							["name"] = "Masterwork Spiritguard Belt",
-							["hash"] = "recipeID122599",
-							["recipeID"] = 122599
-						},
-						{
 							["name"] = "Protector's Trillium Waistguard",
 							["hash"] = "recipeID142967",
 							["recipeID"] = 142967
 						},
-						{
-							["name"] = "Spiritguard Belt",
-							["hash"] = "recipeID122575",
-							["recipeID"] = 122575
-						}
 					}
 				},
 				{
@@ -3324,36 +2857,6 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Blessed Trillium Greaves",
 							["hash"] = "recipeID142954",
 							["recipeID"] = 142954
-						},
-						{
-							["name"] = "Contender's Revenant Legplates",
-							["hash"] = "recipeID122620",
-							["recipeID"] = 122620
-						},
-						{
-							["name"] = "Contender's Spirit Legplates",
-							["hash"] = "recipeID122628",
-							["recipeID"] = 122628
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Dreadplate Legguards",
-							["hash"] = "recipeID140843",
-							["recipeID"] = 140843
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Ornamented Legplates",
-							["hash"] = "recipeID137785",
-							["recipeID"] = 137785
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Plate Legguards",
-							["hash"] = "recipeID137796",
-							["recipeID"] = 137796
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Scaled Legguards",
-							["hash"] = "recipeID137774",
-							["recipeID"] = 137774
 						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Dreadplate Legguards",
@@ -3376,40 +2879,10 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 143171
 						},
 						{
-							["name"] = "Ghost-Forged Legplates",
-							["hash"] = "recipeID122580",
-							["recipeID"] = 122580
-						},
-						{
-							["name"] = "Lightsteel Legplates",
-							["hash"] = "recipeID122588",
-							["recipeID"] = 122588
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Legplates",
-							["hash"] = "recipeID122604",
-							["recipeID"] = 122604
-						},
-						{
-							["name"] = "Masterwork Lightsteel Legplates",
-							["hash"] = "recipeID122612",
-							["recipeID"] = 122612
-						},
-						{
-							["name"] = "Masterwork Spiritguard Legplates",
-							["hash"] = "recipeID122596",
-							["recipeID"] = 122596
-						},
-						{
 							["name"] = "Protector's Trillium Legguards",
 							["hash"] = "recipeID142958",
 							["recipeID"] = 142958
 						},
-						{
-							["name"] = "Spiritguard Legplates",
-							["hash"] = "recipeID122572",
-							["recipeID"] = 122572
-						}
 					}
 				},
 				{
@@ -3417,36 +2890,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 564,
 					["hash"] = "categoryID564",
 					["g"] = {
-						{
-							["name"] = "Contender's Revenant Boots",
-							["hash"] = "recipeID122622",
-							["recipeID"] = 122622
-						},
-						{
-							["name"] = "Contender's Spirit Boots",
-							["hash"] = "recipeID122630",
-							["recipeID"] = 122630
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Greaves of Alacrity",
-							["hash"] = "recipeID137778",
-							["recipeID"] = 137778
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Greaves of Meditation",
-							["hash"] = "recipeID137779",
-							["recipeID"] = 137779
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Warboots of Alacrity",
-							["hash"] = "recipeID137790",
-							["recipeID"] = 137790
-						},
-						{
-							["name"] = "Crafted Dreadful Gladiator's Warboots of Cruelty",
-							["hash"] = "recipeID137789",
-							["recipeID"] = 137789
-						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Greaves of Alacrity",
 							["hash"] = "recipeID143175",
@@ -3467,51 +2910,6 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143186",
 							["recipeID"] = 143186
 						},
-						{
-							["name"] = "Ghost-Forged Boots",
-							["hash"] = "recipeID122582",
-							["recipeID"] = 122582
-						},
-						{
-							["name"] = "Haunted Steel Greaves",
-							["hash"] = "recipeID137766",
-							["recipeID"] = 137766
-						},
-						{
-							["name"] = "Haunted Steel Treads",
-							["hash"] = "recipeID137768",
-							["recipeID"] = 137768
-						},
-						{
-							["name"] = "Haunted Steel Warboots",
-							["hash"] = "recipeID137770",
-							["recipeID"] = 137770
-						},
-						{
-							["name"] = "Lightsteel Boots",
-							["hash"] = "recipeID122590",
-							["recipeID"] = 122590
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Boots",
-							["hash"] = "recipeID122606",
-							["recipeID"] = 122606
-						},
-						{
-							["name"] = "Masterwork Lightsteel Boots",
-							["hash"] = "recipeID122614",
-							["recipeID"] = 122614
-						},
-						{
-							["name"] = "Masterwork Spiritguard Boots",
-							["hash"] = "recipeID122598",
-							["recipeID"] = 122598
-						},
-						{
-							["name"] = "Spiritguard Boots",
-							["hash"] = "recipeID122574",
-							["recipeID"] = 122574
-						}
 					}
 				},
 				{
@@ -3534,187 +2932,8 @@ profession(164, {	-- Blacksmithing
 							["hash"] = "recipeID143197",
 							["recipeID"] = 143197
 						},
-						{
-							["name"] = "Lightsteel Shield",
-							["hash"] = "recipeID122635",
-							["recipeID"] = 122635
-						},
-						{
-							["name"] = "Masterwork Lightsteel Shield",
-							["hash"] = "recipeID122642",
-							["recipeID"] = 122642
-						},
-						{
-							["name"] = "Masterwork Spiritguard Shield",
-							["hash"] = "recipeID122643",
-							["recipeID"] = 122643
-						},
-						{
-							["name"] = "Spiritguard Shield",
-							["hash"] = "recipeID122636",
-							["recipeID"] = 122636
-						}
 					}
 				},
-				{
-					["name"] = "Weapons",
-					["categoryID"] = 566,
-					["hash"] = "categoryID566",
-					["g"] = {
-						{
-							["name"] = "Black Planar Edge, Reborn",
-							["hash"] = "recipeID138878",
-							["recipeID"] = 138878
-						},
-						{
-							["name"] = "Blazefury, Reborn",
-							["hash"] = "recipeID138892",
-							["recipeID"] = 138892
-						},
-						{
-							["name"] = "Blazeguard, Reborn",
-							["hash"] = "recipeID138890",
-							["recipeID"] = 138890
-						},
-						{
-							["name"] = "Bloodmoon, Reborn",
-							["hash"] = "recipeID138881",
-							["recipeID"] = 138881
-						},
-						{
-							["name"] = "Deep Thunder, Reborn",
-							["hash"] = "recipeID138884",
-							["recipeID"] = 138884
-						},
-						{
-							["name"] = "Dragonmaw, Reborn",
-							["hash"] = "recipeID138885",
-							["recipeID"] = 138885
-						},
-						{
-							["name"] = "Dragonstrike, Reborn",
-							["hash"] = "recipeID138886",
-							["recipeID"] = 138886
-						},
-						{
-							["name"] = "Drakefist Hammer, Reborn",
-							["hash"] = "recipeID138882",
-							["recipeID"] = 138882
-						},
-						{
-							["name"] = "Fireguard, Reborn",
-							["hash"] = "recipeID138888",
-							["recipeID"] = 138888
-						},
-						{
-							["name"] = "Forgewire Axe",
-							["hash"] = "recipeID122637",
-							["recipeID"] = 122637
-						},
-						{
-							["name"] = "Ghost Shard",
-							["hash"] = "recipeID122641",
-							["recipeID"] = 122641
-						},
-						{
-							["name"] = "Ghost-Forged Blade",
-							["hash"] = "recipeID122638",
-							["recipeID"] = 122638
-						},
-						{
-							["name"] = "Lionheart Blade, Reborn",
-							["hash"] = "recipeID138889",
-							["recipeID"] = 138889
-						},
-						{
-							["name"] = "Lionheart Champion, Reborn",
-							["hash"] = "recipeID138891",
-							["recipeID"] = 138891
-						},
-						{
-							["name"] = "Lionheart Executioner, Reborn",
-							["hash"] = "recipeID138893",
-							["recipeID"] = 138893
-						},
-						{
-							["name"] = "Lunar Crescent, Reborn",
-							["hash"] = "recipeID138877",
-							["recipeID"] = 138877
-						},
-						{
-							["name"] = "Masterwork Forgewire Axe",
-							["hash"] = "recipeID122644",
-							["recipeID"] = 122644
-						},
-						{
-							["name"] = "Masterwork Ghost Shard",
-							["hash"] = "recipeID122648",
-							["recipeID"] = 122648
-						},
-						{
-							["name"] = "Masterwork Ghost-Forged Blade",
-							["hash"] = "recipeID122645",
-							["recipeID"] = 122645
-						},
-						{
-							["name"] = "Masterwork Phantasmal Hammer",
-							["hash"] = "recipeID122646",
-							["recipeID"] = 122646
-						},
-						{
-							["name"] = "Masterwork Spiritblade Decimator",
-							["hash"] = "recipeID122647",
-							["recipeID"] = 122647
-						},
-						{
-							["name"] = "Mooncleaver, Reborn",
-							["hash"] = "recipeID138879",
-							["recipeID"] = 138879
-						},
-						{
-							["name"] = "Phantasmal Hammer",
-							["hash"] = "recipeID122639",
-							["recipeID"] = 122639
-						},
-						{
-							["name"] = "Spiritblade Decimator",
-							["hash"] = "recipeID122640",
-							["recipeID"] = 122640
-						},
-						{
-							["name"] = "Stormherald, Reborn",
-							["hash"] = "recipeID138887",
-							["recipeID"] = 138887
-						},
-						{
-							["name"] = "The Planar Edge, Reborn",
-							["hash"] = "recipeID138876",
-							["recipeID"] = 138876
-						},
-						{
-							["name"] = "Thunder, Reborn",
-							["hash"] = "recipeID138883",
-							["recipeID"] = 138883
-						},
-						{
-							["name"] = "Wicked Edge of the Planes, Reborn",
-							["hash"] = "recipeID138880",
-							["recipeID"] = 138880
-						}
-					}
-				},
-				{
-					["name"] = "Skeleton Keys",
-					["categoryID"] = 567,
-					["hash"] = "categoryID567",
-					["g"] = {
-						{
-							["name"] = "Ghostly Skeleton Key",
-							["hash"] = "recipeID122633",
-							["recipeID"] = 122633
-						}
-					}
-				}
 			}
 		},
 		{
@@ -3754,493 +2973,6 @@ profession(164, {	-- Blacksmithing
 						}
 					}
 				},
-				{
-					["name"] = "Materials",
-					["categoryID"] = 572,
-					["hash"] = "categoryID572",
-					["g"] = {
-						{
-							["name"] = "Folded Obsidium",
-							["hash"] = "recipeID76178",
-							["recipeID"] = 76178
-						}
-					}
-				},
-				{
-					["name"] = "Equipment Mods",
-					["categoryID"] = 574,
-					["hash"] = "categoryID574",
-					["g"] = {
-						{
-							["name"] = "Ebonsteel Belt Buckle",
-							["hash"] = "recipeID76439",
-							["recipeID"] = 76439
-						},
-						{
-							["name"] = "Elementium Shield Spike",
-							["hash"] = "recipeID76441",
-							["recipeID"] = 76441
-						},
-						{
-							["name"] = "Pyrium Shield Spike",
-							["hash"] = "recipeID76440",
-							["recipeID"] = 76440
-						},
-						{
-							["name"] = "Pyrium Weapon Chain",
-							["hash"] = "recipeID76442",
-							["recipeID"] = 76442
-						}
-					}
-				},
-				{
-					["name"] = "Armor",
-					["categoryID"] = 570,
-					["hash"] = "categoryID570",
-					["g"] = {
-						{
-							["name"] = "Bracers of Destructive Strength",
-							["hash"] = "recipeID101931",
-							["recipeID"] = 101931
-						},
-						{
-							["name"] = "Elementium Deathplate",
-							["hash"] = "recipeID76445",
-							["recipeID"] = 76445
-						},
-						{
-							["name"] = "Elementium Girdle of Pain",
-							["hash"] = "recipeID76446",
-							["recipeID"] = 76446
-						},
-						{
-							["name"] = "Emberforged Elementium Boots",
-							["hash"] = "recipeID99454",
-							["recipeID"] = 99454
-						},
-						{
-							["name"] = "Eternal Elementium Handguards",
-							["hash"] = "recipeID99440",
-							["recipeID"] = 99440
-						},
-						{
-							["name"] = "Fists of Fury",
-							["hash"] = "recipeID99439",
-							["recipeID"] = 99439
-						},
-						{
-							["name"] = "Foundations of Courage",
-							["hash"] = "recipeID101928",
-							["recipeID"] = 101928
-						},
-						{
-							["name"] = "Hardened Elementium Girdle",
-							["hash"] = "recipeID76444",
-							["recipeID"] = 76444
-						},
-						{
-							["name"] = "Hardened Elementium Hauberk",
-							["hash"] = "recipeID76443",
-							["recipeID"] = 76443
-						},
-						{
-							["name"] = "Hardened Obsidium Belt",
-							["hash"] = "recipeID76181",
-							["recipeID"] = 76181
-						},
-						{
-							["name"] = "Hardened Obsidium Boots",
-							["hash"] = "recipeID76182",
-							["recipeID"] = 76182
-						},
-						{
-							["name"] = "Hardened Obsidium Bracers",
-							["hash"] = "recipeID76179",
-							["recipeID"] = 76179
-						},
-						{
-							["name"] = "Hardened Obsidium Breastplate",
-							["hash"] = "recipeID76261",
-							["recipeID"] = 76261
-						},
-						{
-							["name"] = "Hardened Obsidium Gauntlets",
-							["hash"] = "recipeID76180",
-							["recipeID"] = 76180
-						},
-						{
-							["name"] = "Hardened Obsidium Helm",
-							["hash"] = "recipeID76260",
-							["recipeID"] = 76260
-						},
-						{
-							["name"] = "Hardened Obsidium Legguards",
-							["hash"] = "recipeID76259",
-							["recipeID"] = 76259
-						},
-						{
-							["name"] = "Hardened Obsidium Shoulders",
-							["hash"] = "recipeID76258",
-							["recipeID"] = 76258
-						},
-						{
-							["name"] = "Holy Flame Gauntlets",
-							["hash"] = "recipeID99441",
-							["recipeID"] = 99441
-						},
-						{
-							["name"] = "Light Elementium Belt",
-							["hash"] = "recipeID76448",
-							["recipeID"] = 76448
-						},
-						{
-							["name"] = "Light Elementium Chestguard",
-							["hash"] = "recipeID76447",
-							["recipeID"] = 76447
-						},
-						{
-							["name"] = "Mirrored Boots",
-							["hash"] = "recipeID99453",
-							["recipeID"] = 99453
-						},
-						{
-							["name"] = "Pyrium Legplates of Purified Evil",
-							["hash"] = "recipeID101924",
-							["recipeID"] = 101924
-						},
-						{
-							["name"] = "Redsteel Belt",
-							["hash"] = "recipeID76264",
-							["recipeID"] = 76264
-						},
-						{
-							["name"] = "Redsteel Boots",
-							["hash"] = "recipeID76265",
-							["recipeID"] = 76265
-						},
-						{
-							["name"] = "Redsteel Bracers",
-							["hash"] = "recipeID76262",
-							["recipeID"] = 76262
-						},
-						{
-							["name"] = "Redsteel Breastplate",
-							["hash"] = "recipeID76270",
-							["recipeID"] = 76270
-						},
-						{
-							["name"] = "Redsteel Gauntlets",
-							["hash"] = "recipeID76263",
-							["recipeID"] = 76263
-						},
-						{
-							["name"] = "Redsteel Helm",
-							["hash"] = "recipeID76269",
-							["recipeID"] = 76269
-						},
-						{
-							["name"] = "Redsteel Legguards",
-							["hash"] = "recipeID76267",
-							["recipeID"] = 76267
-						},
-						{
-							["name"] = "Redsteel Shoulders",
-							["hash"] = "recipeID76266",
-							["recipeID"] = 76266
-						},
-						{
-							["name"] = "Soul Redeemer Bracers",
-							["hash"] = "recipeID101929",
-							["recipeID"] = 101929
-						},
-						{
-							["name"] = "Stormforged Belt",
-							["hash"] = "recipeID76283",
-							["recipeID"] = 76283
-						},
-						{
-							["name"] = "Stormforged Boots",
-							["hash"] = "recipeID76285",
-							["recipeID"] = 76285
-						},
-						{
-							["name"] = "Stormforged Bracers",
-							["hash"] = "recipeID76280",
-							["recipeID"] = 76280
-						},
-						{
-							["name"] = "Stormforged Breastplate",
-							["hash"] = "recipeID76289",
-							["recipeID"] = 76289
-						},
-						{
-							["name"] = "Stormforged Gauntlets",
-							["hash"] = "recipeID76281",
-							["recipeID"] = 76281
-						},
-						{
-							["name"] = "Stormforged Helm",
-							["hash"] = "recipeID76288",
-							["recipeID"] = 76288
-						},
-						{
-							["name"] = "Stormforged Legguards",
-							["hash"] = "recipeID76287",
-							["recipeID"] = 76287
-						},
-						{
-							["name"] = "Stormforged Shoulders",
-							["hash"] = "recipeID76286",
-							["recipeID"] = 76286
-						},
-						{
-							["name"] = "Titanguard Wristplates",
-							["hash"] = "recipeID101932",
-							["recipeID"] = 101932
-						},
-						{
-							["name"] = "Unstoppable Destroyer's Legplates",
-							["hash"] = "recipeID101925",
-							["recipeID"] = 101925
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Belt",
-							["hash"] = "recipeID76467",
-							["recipeID"] = 76467
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Boots",
-							["hash"] = "recipeID76468",
-							["recipeID"] = 76468
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Bracers",
-							["hash"] = "recipeID76465",
-							["recipeID"] = 76465
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Breastplate",
-							["hash"] = "recipeID76472",
-							["recipeID"] = 76472
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Gauntlets",
-							["hash"] = "recipeID76466",
-							["recipeID"] = 76466
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Helm",
-							["hash"] = "recipeID76471",
-							["recipeID"] = 76471
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Legguards",
-							["hash"] = "recipeID76470",
-							["recipeID"] = 76470
-						},
-						{
-							["name"] = "Vicious Ornate Pyrium Shoulders",
-							["hash"] = "recipeID76469",
-							["recipeID"] = 76469
-						},
-						{
-							["name"] = "Vicious Pyrium Belt",
-							["hash"] = "recipeID76458",
-							["recipeID"] = 76458
-						},
-						{
-							["name"] = "Vicious Pyrium Boots",
-							["hash"] = "recipeID76459",
-							["recipeID"] = 76459
-						},
-						{
-							["name"] = "Vicious Pyrium Bracers",
-							["hash"] = "recipeID76456",
-							["recipeID"] = 76456
-						},
-						{
-							["name"] = "Vicious Pyrium Breastplate",
-							["hash"] = "recipeID76464",
-							["recipeID"] = 76464
-						},
-						{
-							["name"] = "Vicious Pyrium Gauntlets",
-							["hash"] = "recipeID76457",
-							["recipeID"] = 76457
-						},
-						{
-							["name"] = "Vicious Pyrium Helm",
-							["hash"] = "recipeID76463",
-							["recipeID"] = 76463
-						},
-						{
-							["name"] = "Vicious Pyrium Legguards",
-							["hash"] = "recipeID76462",
-							["recipeID"] = 76462
-						},
-						{
-							["name"] = "Vicious Pyrium Shoulders",
-							["hash"] = "recipeID76461",
-							["recipeID"] = 76461
-						},
-						{
-							["name"] = "Warboots of Mighty Lords",
-							["hash"] = "recipeID99452",
-							["recipeID"] = 99452
-						}
-					}
-				},
-				{
-					["name"] = "Shields",
-					["categoryID"] = 573,
-					["hash"] = "categoryID573",
-					["g"] = {
-						{
-							["name"] = "Elementium Earthguard",
-							["hash"] = "recipeID76454",
-							["recipeID"] = 76454
-						},
-						{
-							["name"] = "Elementium Stormshield",
-							["hash"] = "recipeID76455",
-							["recipeID"] = 76455
-						},
-						{
-							["name"] = "Hardened Obsidium Shield",
-							["hash"] = "recipeID76291",
-							["recipeID"] = 76291
-						},
-						{
-							["name"] = "Stormforged Shield",
-							["hash"] = "recipeID76293",
-							["recipeID"] = 76293
-						}
-					}
-				},
-				{
-					["name"] = "Weapons",
-					["categoryID"] = 571,
-					["hash"] = "categoryID571",
-					["g"] = {
-						{
-							["name"] = "Brainsplinter",
-							["hash"] = "recipeID99652",
-							["recipeID"] = 99652
-						},
-						{
-							["name"] = "Cold-Forged Shank",
-							["hash"] = "recipeID76434",
-							["recipeID"] = 76434
-						},
-						{
-							["name"] = "Decapitator's Razor",
-							["hash"] = "recipeID76433",
-							["recipeID"] = 76433
-						},
-						{
-							["name"] = "Elementium Bonesplitter",
-							["hash"] = "recipeID76452",
-							["recipeID"] = 76452
-						},
-						{
-							["name"] = "Elementium Gutslicer",
-							["hash"] = "recipeID94718",
-							["recipeID"] = 94718
-						},
-						{
-							["name"] = "Elementium Hammer",
-							["hash"] = "recipeID76450",
-							["recipeID"] = 76450
-						},
-						{
-							["name"] = "Elementium Poleaxe",
-							["hash"] = "recipeID76451",
-							["recipeID"] = 76451
-						},
-						{
-							["name"] = "Elementium Shank",
-							["hash"] = "recipeID76453",
-							["recipeID"] = 76453
-						},
-						{
-							["name"] = "Elementium Spellblade",
-							["hash"] = "recipeID76449",
-							["recipeID"] = 76449
-						},
-						{
-							["name"] = "Elementium-Edged Scalper",
-							["hash"] = "recipeID99655",
-							["recipeID"] = 99655
-						},
-						{
-							["name"] = "Fire-Etched Dagger",
-							["hash"] = "recipeID76435",
-							["recipeID"] = 76435
-						},
-						{
-							["name"] = "Forged Elementium Mindcrusher",
-							["hash"] = "recipeID94732",
-							["recipeID"] = 94732
-						},
-						{
-							["name"] = "Lifeforce Hammer",
-							["hash"] = "recipeID76436",
-							["recipeID"] = 76436
-						},
-						{
-							["name"] = "Lightforged Elementium Hammer",
-							["hash"] = "recipeID99654",
-							["recipeID"] = 99654
-						},
-						{
-							["name"] = "Masterwork Elementium Deathblade",
-							["hash"] = "recipeID99658",
-							["recipeID"] = 99658
-						},
-						{
-							["name"] = "Masterwork Elementium Spellblade",
-							["hash"] = "recipeID99653",
-							["recipeID"] = 99653
-						},
-						{
-							["name"] = "Obsidium Bladespear",
-							["hash"] = "recipeID76474",
-							["recipeID"] = 76474
-						},
-						{
-							["name"] = "Obsidium Executioner",
-							["hash"] = "recipeID76437",
-							["recipeID"] = 76437
-						},
-						{
-							["name"] = "Pyrium Spellward",
-							["hash"] = "recipeID99656",
-							["recipeID"] = 99656
-						},
-						{
-							["name"] = "Unbreakable Guardian",
-							["hash"] = "recipeID99657",
-							["recipeID"] = 99657
-						},
-						{
-							["name"] = "Witch-Hunter's Harvester",
-							["hash"] = "recipeID99660",
-							["recipeID"] = 99660
-						}
-					}
-				},
-				{
-					["name"] = "Skeleton Keys",
-					["categoryID"] = 575,
-					["hash"] = "categoryID575",
-					["g"] = {
-						{
-							["name"] = "Obsidium Skeleton Key",
-							["hash"] = "recipeID76438",
-							["recipeID"] = 76438
-						}
-					}
-				}
 			}
 		},
 		{

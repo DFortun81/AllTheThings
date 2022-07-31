@@ -1,4 +1,5 @@
 local OTHER = 114;
+local SPIRIT_OF_HARMONY = 76061;
 -------------------
 -- BLACKSMITHING --
 -------------------
@@ -384,6 +385,7 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(76286),	-- Stormforged Shoulders
 	}),
 	filter(MISC, {
+		r(92375, {["timeline"]={"added 4.0.3","removed 5.0.4"}}),	-- Elementium Rod
 		r(76441),	-- Elementium Shield Spike
 		r(76178),	-- Folded Obsidium
 		r(76438),	-- Obsidium Skeleton Key
@@ -502,6 +504,82 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbl
 	i(66121, {	-- Plans: Vicious Pyrium Shoulders (RECIPE!)
 		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
 	}),
+}));
+MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
+	r(110396),	-- Blacksmithing (Zen Master)
+	n(ARMOR, {
+		r(122583),	-- Ghost-Forged Belt
+		r(122638),	-- Ghost-Forged Blade
+		r(122582),	-- Ghost-Forged Boots
+		r(122581),	-- Ghost-Forged Bracers
+		r(122578),	-- Ghost-Forged Breastplate
+		r(122579),	-- Ghost-Forged Gauntlets
+		r(122576),	-- Ghost-Forged Helm
+		r(122580),	-- Ghost-Forged Legplates
+		r(122577),	-- Ghost-Forged Shoulders
+	}),
+	filter(MISC, {
+		r(126869),	-- Folded Ghost Iron [Unsure when actually added.. But it was NYI than in BFA added? It does nothing as far as material]
+		r(122633),	-- Ghostly Skeleton Key
+		r(139753, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Decorative Spoons
+		r(139756, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Barrel
+		r(139763, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Bells
+		r(139762, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Bowls
+		r(139764, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Crate
+		r(139761, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Cups
+		r(140166, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Frames
+		r(139750, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Hook
+		r(139748, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Ladle
+		r(139755, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Needles
+		r(140167, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pans
+		r(140165, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Picks
+		r(139745, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pins
+		r(139749, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Poker
+		r(139760, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pot
+		r(139757, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Saw
+		r(139754, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Spade
+		r(139751, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Spatulas
+		r(140168, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Statue
+		r(139759, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Wire
+		r(139747, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Wok
+		r(139746, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Simple Eating Utensils
+	}),
+	n(WEAPONS, {
+		r(122637),	-- Forgewire Axe
+		r(122641),	-- Ghost Shard
+		r(122635),	-- Lightsteel Shield
+		r(122639),	-- Phantasmal Hammer
+		r(122640),	-- Spiritblade Decimator
+		r(122636),	-- Spiritguard Shield
+	})
+}));
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = { { "i", SPIRIT_OF_HARMONY, 1 }, }, ["timeline"] = { "added 5.0.4" } }, {
+	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
+	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
+	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)
+	i(84161),	-- Plans: Contender's Revenant Breastplate (RECIPE!)
+	i(84162),	-- Plans: Contender's Revenant Gauntlets (RECIPE!)
+	i(84163),	-- Plans: Contender's Revenant Helm (RECIPE!)
+	i(84164),	-- Plans: Contender's Revenant Legplates (RECIPE!)
+	i(84165),	-- Plans: Contender's Revenant Shoulders (RECIPE!)
+	i(84166),	-- Plans: Contender's Spirit Belt (RECIPE!)
+	i(84167),	-- Plans: Contender's Spirit Boots (RECIPE!)
+	i(84168),	-- Plans: Contender's Spirit Bracers (RECIPE!)
+	i(84169),	-- Plans: Contender's Spirit Breastplate (RECIPE!)
+	i(84170),	-- Plans: Contender's Spirit Gauntlets (RECIPE!)
+	i(84171),	-- Plans: Contender's Spirit Helm (RECIPE!)
+	i(84172),	-- Plans: Contender's Spirit Legplates (RECIPE!)
+	i(84173),	-- Plans: Contender's Spirit Shoulders (RECIPE!)
+	i(84208),	-- Plans: Masterwork Lightsteel Shield (RECIPE!)
+	i(84219),	-- Plans: Masterwork Spiritguard Belt (RECIPE!)
+	i(84220),	-- Plans: Masterwork Spiritguard Boots (RECIPE!)
+	i(84221),	-- Plans: Masterwork Spiritguard Bracers (RECIPE!)
+	i(84222),	-- Plans: Masterwork Spiritguard Breastplate (RECIPE!)
+	i(84223),	-- Plans: Masterwork Spiritguard Gauntlets (RECIPE!)
+	i(84224),	-- Plans: Masterwork Spiritguard Helm (RECIPE!)
+	i(84225),	-- Plans: Masterwork Spiritguard Legplates (RECIPE!)
+	i(84226),	-- Plans: Masterwork Spiritguard Shield (RECIPE!)
+	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
 }));
 ----------------
 -- ENCHANTING --

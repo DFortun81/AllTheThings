@@ -64,6 +64,13 @@ _.Zones =
 						i(94124),	-- Sunreaver Micro-Sentry (PET!)
 					},
 				}),
+				n(69461, {	-- Itoka <Master of the Forge>
+					-- ["questID"] = ,
+					["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
+					["g"] = {
+						i(94721),	-- Strange Metal Ingot
+					},
+				}),
 				n(69996, {	-- Ku'lai the Skyclaw
 					["isWeekly"] = true,
 					["questID"] = 32610,

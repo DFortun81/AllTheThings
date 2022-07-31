@@ -862,11 +862,13 @@ i(66113, 76452);	-- Elementium Bonesplitter
 i(66106, 76445);	-- Elementium Deathplate
 i(66115, 76454);	-- Elementium Earthguard
 i(66107, 76446);	-- Elementium Girdle of Pain
+i(67603, 94718);	-- Elementium Gutslicer
 i(66111, 76450);	-- Elementium Hammer
 i(66112, 76451);	-- Elementium Poleaxe
 i(66114, 76453);	-- Elementium Shank
 i(66110, 76449);	-- Elementium Spellblade
 i(66116, 76455);	-- Elementium Stormshield
+i(67606, 94732);	-- Forged Elementium Mindcrusher
 i(66105, 76444);	-- Hardened Elementium Girdle
 i(66104, 76443);	-- Hardened Elementium Hauberk
 i(66109, 76448);	-- Light Elementium Belt
@@ -889,36 +891,529 @@ i(66118, 76457);	-- Vicious Pyrium Gauntlets
 i(66123, 76463);	-- Vicious Pyrium Helm
 i(66122, 76462);	-- Vicious Pyrium Legguards
 i(66121, 76461);	-- Vicious Pyrium Shoulders
+i(0, 92375);	-- Elementium Rod
+--NYI --
+i(66134, 0);	-- Plans: Elementium Rod
 -- NYI --
 i(0, 85531);	-- Unknown
 
+-----------------
+-- PATCH 4.2.0 --
+-----------------
+i(70166, 99652);	-- Brainsplinter
+i(70169, 99655);	-- Elementium-Edged Scalper
+i(69970, 99454);	-- Emberforged Elementium Boots
+i(69958, 99440);	-- Eternal Elementium Handguards
+i(69957, 99439);	-- Fists of Fury
+i(69959, 99441);	-- Holy Flame Gauntlets
+i(70168, 99654);	-- Lightforged Elementium Hammer
+i(70172, 99658);	-- Masterwork Elementium Deathblade
+i(70167, 99653);	-- Masterwork Elementium Spellblade
+i(69969, 99453);	-- Mirrored Boots
+i(70170, 99656);	-- Pyrium Spellward
+i(70171, 99657);	-- Unbreakable Guardian
+i(69968, 99452);	-- Warboots of Mighty Lords
+i(70173, 99660);	-- Witch-Hunter's Harvester
 
 -----------------
--- PATCH 4.3.4 --
+-- PATCH 4.3.0 --
 -----------------
-i(0, 99454);	-- Emberforged Elementium Boots
-i(0, 99452);	-- Warboots of Mighty Lords
-i(0, 101928);	-- Foundations of Courage
-i(0, 99658);	-- Masterwork Elementium Deathblade
-i(0, 99660);	-- Witch-Hunter's Harvester
-i(0, 99654);	-- Lightforged Elementium Hammer
-i(0, 99453);	-- Mirrored Boots
-i(0, 101925);	-- Unstoppable Destroyer's Legplates
-i(0, 99656);	-- Pyrium Spellward
-i(0, 94718);	-- Elementium Gutslicer
-i(0, 94732);	-- Forged Elementium Mindcrusher
-i(0, 99440);	-- Eternal Elementium Handguards
-i(0, 99652);	-- Brainsplinter
-i(0, 101924);	-- Pyrium Legplates of Purified Evil
-i(0, 101929);	-- Soul Redeemer Bracers
-i(0, 99655);	-- Elementium-Edged Scalper
-i(0, 99653);	-- Masterwork Elementium Spellblade
-i(0, 99441);	-- Holy Flame Gauntlets
-i(0, 99439);	-- Fists of Fury
-i(0, 101931);	-- Bracers of Destructive Strength
-i(0, 101932);	-- Titanguard Wristplates
-i(0, 99657);	-- Unbreakable Guardian
-i(0, 92375);	--
+i(72015, 101931);	-- Bracers of Destructive Strength
+i(72013, 101928);	-- Foundations of Courage
+i(72001, 101924);	-- Pyrium Legplates of Purified Evil
+i(72014, 101929);	-- Soul Redeemer Bracers
+i(72016, 101932);	-- Titanguard Wristplates
+i(72012, 101925);	-- Unstoppable Destroyer's Legplates
+
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+i(0, 110396);	-- Blacksmithing (ZEN)
+i(0, 122637);	-- Forgewire Axe
+i(0, 122641);	-- Ghost Shard
+i(0, 122583);	-- Ghost-Forged Belt
+i(0, 122638);	-- Ghost-Forged Blade
+i(0, 122582);	-- Ghost-Forged Boots
+i(0, 122581);	-- Ghost-Forged Bracers
+i(0, 122578);	-- Ghost-Forged Breastplate
+i(0, 122579);	-- Ghost-Forged Gauntlets
+i(0, 122576);	-- Ghost-Forged Helm
+i(0, 122580);	-- Ghost-Forged Legplates
+i(0, 122577);	-- Ghost-Forged Shoulders
+i(0, 122633);	-- Ghostly Skeleton Key
+i(0, 122635);	-- Lightsteel Shield
+i(0, 122639);	-- Phantasmal Hammer
+i(0, 122640);	-- Spiritblade Decimator
+i(0, 122636);	-- Spiritguard Shield
+i(87411, 126853);	-- Bloodforged Warfists
+i(83791, 122653);	-- Breastplate of Ancient Steel
+i(87412, 126854);	-- Chestplate of Limitless Faith
+i(84158, 122623);	-- Contender's Revenant Belt
+i(84159, 122622);	-- Contender's Revenant Boots
+i(84160, 122621);	-- Contender's Revenant Bracers
+i(84161, 122618);	-- Contender's Revenant Breastplate
+i(84162, 122619);	-- Contender's Revenant Gauntlets
+i(84163, 122616);	-- Contender's Revenant Helm
+i(84164, 122620);	-- Contender's Revenant Legplates
+i(84165, 122617);	-- Contender's Revenant Shoulders
+i(84166, 122631);	-- Contender's Spirit Belt
+i(84167, 122630);	-- Contender's Spirit Boots
+i(84168, 122629);	-- Contender's Spirit Bracers
+i(84169, 122626);	-- Contender's Spirit Breastplate
+i(84170, 122627);	-- Contender's Spirit Gauntlets
+i(84171, 122624);	-- Contender's Spirit Helm
+i(84172, 122628);	-- Contender's Spirit Legplates
+i(84173, 122625);	-- Contender's Spirit Shoulders
+i(83792, 122654);	-- Gauntlets of Ancient Steel
+i(87409, 126851);	-- Gauntlets of Battle Command
+i(87413, 126855);	-- Gauntlets of Unbound Devotion
+i(90531, 131928);	-- Ghost Iron Shield Spike
+i(83787, 122649);	-- Ghost Reaver's Breastplate
+i(83788, 122650);	-- Ghost Reaver's Gauntlets
+i(84196, 122632);	-- Living Steel Belt Buckle
+i(83789, 122651);	-- Living Steel Breastplate
+i(83790, 122652);	-- Living Steel Gauntlets
+i(90532, 131929);	-- Living Steel Weapon Chain
+i(87410, 126852);	-- Ornate Battleplate of the Master
+i(84197, 122644);	-- Masterwork Forgewire Axe
+i(84198, 122648);	-- Masterwork Ghost Shard
+i(84200, 122645);	-- Masterwork Ghost-Forged Blade
+i(84208, 122642);	-- Masterwork Lightsteel Shield
+i(84217, 122646);	-- Masterwork Phantasmal Hammer
+i(84218, 122647);	-- Masterwork Spiritblade Decimator
+i(84219, 122599);	-- Masterwork Spiritguard Belt
+i(84220, 122598);	-- Masterwork Spiritguard Boots
+i(84221, 122597);	-- Masterwork Spiritguard Bracers
+i(84222, 122594);	-- Masterwork Spiritguard Breastplate
+i(84223, 122595);	-- Masterwork Spiritguard Gauntlets
+i(84224, 122592);	-- Masterwork Spiritguard Helm
+i(84225, 122596);	-- Masterwork Spiritguard Legplates
+i(84226, 122643);	-- Masterwork Spiritguard Shield
+i(84227, 122593);	-- Masterwork Spiritguard Shoulders
+i(87408, 126850);	-- Unyielding Bloodplate
+
+i(0, 126867);	--
+i(0, 113263);	--
+i(0, 126864);	--
+i(0, 110955);	--
+i(0, 114112);	--
+i(0, 126866);	--
+
+i(0, 126869);	-- Folded Ghost Iron
+
+-- NYI --
+i(0, 122591);	-- Lightsteel Belt
+i(0, 122590);	-- Lightsteel Boots
+i(0, 122589);	-- Lightsteel Bracers
+i(0, 122586);	-- Lightsteel Breastplate
+i(0, 122587);	-- Lightsteel Gauntlets
+i(0, 122584);	-- Lightsteel Helm
+i(0, 122588);	-- Lightsteel Legplates
+i(0, 122585);	-- Lightsteel Shoulders
+i(0, 122607);	-- Masterwork Ghost-Forged Belt
+i(0, 122606);	-- Masterwork Ghost-Forged Boots
+i(0, 122605);	-- Masterwork Ghost-Forged Bracers
+i(0, 122602);	-- Masterwork Ghost-Forged Breastplate
+i(0, 122603);	-- Masterwork Ghost-Forged Gauntlets
+i(0, 122600);	-- Masterwork Ghost-Forged Helm
+i(0, 122604);	-- Masterwork Ghost-Forged Legplates
+i(0, 122601);	-- Masterwork Ghost-Forged Shoulders
+i(0, 122615);	-- Masterwork Lightsteel Belt
+i(0, 122614);	-- Masterwork Lightsteel Boots
+i(0, 122613);	-- Masterwork Lightsteel Bracers
+i(0, 122610);	-- Masterwork Lightsteel Breastplate
+i(0, 122611);	-- Masterwork Lightsteel Gauntlets
+i(0, 122608);	-- Masterwork Lightsteel Helm
+i(0, 122612);	-- Masterwork Lightsteel Legplates
+i(0, 122609);	-- Masterwork Lightsteel Shoulders
+i(0, 122575);	-- Spiritguard Belt
+i(0, 122574);	-- Spiritguard Boots
+i(0, 122573);	-- Spiritguard Bracers
+i(0, 122570);	-- Spiritguard Breastplate
+i(0, 122571);	-- Spiritguard Gauntlets
+i(0, 122568);	-- Spiritguard Helm
+i(0, 122572);	-- Spiritguard Legplates
+i(0, 122569);	-- Spiritguard Shoulders
+
+
+-----------------
+-- PATCH 5.2.0 --
+-----------------
+i(0, 137792);	-- Crafted Dreadful Gladiator's Armplates of Alacrity
+i(0, 137791);	-- Crafted Dreadful Gladiator's Armplates of Proficiency
+i(0, 137781);	-- Crafted Dreadful Gladiator's Bracers of Meditation
+i(0, 137780);	-- Crafted Dreadful Gladiator's Bracers of Prowess
+i(0, 137776);	-- Crafted Dreadful Gladiator's Clasp of Cruelty
+i(0, 137777);	-- Crafted Dreadful Gladiator's Clasp of Meditation
+i(0, 140846);	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+i(0, 140845);	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+i(0, 140844);	-- Crafted Dreadful Gladiator's Dreadplate Helm
+i(0, 140843);	-- Crafted Dreadful Gladiator's Dreadplate Legguards
+i(0, 140842);	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
+i(0, 137787);	-- Crafted Dreadful Gladiator's Girdle of Accuracy
+i(0, 137788);	-- Crafted Dreadful Gladiator's Girdle of Prowess
+i(0, 137778);	-- Crafted Dreadful Gladiator's Greaves of Alacrity
+i(0, 137779);	-- Crafted Dreadful Gladiator's Greaves of Meditation
+i(0, 137782);	-- Crafted Dreadful Gladiator's Ornamented Chestguard
+i(0, 137783);	-- Crafted Dreadful Gladiator's Ornamented Gloves
+i(0, 137784);	-- Crafted Dreadful Gladiator's Ornamented Headcover
+i(0, 137785);	-- Crafted Dreadful Gladiator's Ornamented Legplates
+i(0, 137786);	-- Crafted Dreadful Gladiator's Ornamented Spaulders
+i(0, 137793);	-- Crafted Dreadful Gladiator's Plate Chestpiece
+i(0, 137794);	-- Crafted Dreadful Gladiator's Plate Gauntlets
+i(0, 137795);	-- Crafted Dreadful Gladiator's Plate Helm
+i(0, 137796);	-- Crafted Dreadful Gladiator's Plate Legguards
+i(0, 137797);	-- Crafted Dreadful Gladiator's Plate Shoulders
+i(0, 140841);	-- Crafted Dreadful Gladiator's Scaled Chestpiece
+i(0, 137772);	-- Crafted Dreadful Gladiator's Scaled Gauntlets
+i(0, 137773);	-- Crafted Dreadful Gladiator's Scaled Helm
+i(0, 137774);	-- Crafted Dreadful Gladiator's Scaled Legguards
+i(0, 137775);	-- Crafted Dreadful Gladiator's Scaled Shoulders
+i(0, 137790);	-- Crafted Dreadful Gladiator's Warboots of Alacrity
+i(0, 137789);	-- Crafted Dreadful Gladiator's Warboots of Cruelty
+--
+i(0, 139753);	-- Training Project: Decorative Spoons
+i(0, 139756);	-- Training Project: Ghost Iron Barrel
+i(0, 139763);	-- Training Project: Ghost Iron Bells
+i(0, 139762);	-- Training Project: Ghost Iron Bowls
+i(0, 139764);	-- Training Project: Ghost Iron Crate
+i(0, 139761);	-- Training Project: Ghost Iron Cups
+i(0, 140166);	-- Training Project: Ghost Iron Frames
+i(0, 139750);	-- Training Project: Ghost Iron Hook
+i(0, 139748);	-- Training Project: Ghost Iron Ladle
+i(0, 139755);	-- Training Project: Ghost Iron Needles
+i(0, 140167);	-- Training Project: Ghost Iron Pans
+i(0, 140165);	-- Training Project: Ghost Iron Picks
+i(0, 139745);	-- Training Project: Ghost Iron Pins
+i(0, 139749);	-- Training Project: Ghost Iron Poker
+i(0, 139760);	-- Training Project: Ghost Iron Pot
+i(0, 139757);	-- Training Project: Ghost Iron Saw
+i(0, 139754);	-- Training Project: Ghost Iron Spade
+i(0, 139751);	-- Training Project: Ghost Iron Spatulas
+i(0, 140168);	-- Training Project: Ghost Iron Statue
+i(0, 139759);	-- Training Project: Ghost Iron Wire
+i(0, 139747);	-- Training Project: Ghost Iron Wok
+i(0, 139746);	-- Training Project: Simple Eating Utensils
+
+i(94552, 138646);	-- Lightning Steel Ingot
+i(0, 137766);	-- Haunted Steel Greaves
+i(0, 137769);	-- Haunted Steel Greathelm
+i(0, 137767);	-- Haunted Steel Headcover
+i(0, 137771);	-- Haunted Steel Headguard
+i(0, 137768);	-- Haunted Steel Treads
+i(0, 137770);	-- Haunted Steel Warboots
+
+
+i(94572, 138888);	-- Fireguard, Reborn
+i(0, 138890);	-- Blazeguard, Reborn
+i(0, 138892);	-- Blazefury, Reborn
+
+i(94570, 138876);	-- The Planar Edge, Reborn
+i(0, 138878);	-- Black Planar Edge, Reborn
+i(0, 138880);	-- Wicked Edge of the Planes, Reborn
+
+i(94568, 138882);	-- Drakefist Hammer, Reborn
+i(0, 138885);	-- Dragonmaw, Reborn
+i(0, 138886);	-- Dragonstrike, Reborn
+
+i(94571, 138889);	-- Lionheart Blade, Reborn
+i(0, 138891);	-- Lionheart Champion, Reborn
+i(0, 138893);	-- Lionheart Executioner, Reborn
+
+i(94569, 138877);	-- Lunar Crescent, Reborn
+i(0, 138879);	-- Mooncleaver, Reborn
+i(0, 138881);	-- Bloodmoon, Reborn
+
+i(94567, 138883);	-- Thunder, Reborn
+i(0, 138884);	-- Deep Thunder, Reborn
+i(0, 138887);	-- Stormherald, Reborn
+
+
+
+-----------------
+-- PATCH 5.4.0 --
+-----------------
+i(0, 143189);	-- Crafted Malevolent Gladiator's Armplates of Alacrity
+i(0, 143188);	-- Crafted Malevolent Gladiator's Armplates of Proficiency
+i(0, 143195);	-- Crafted Malevolent Gladiator's Barrier
+i(0, 143178);	-- Crafted Malevolent Gladiator's Bracers of Meditation
+i(0, 143177);	-- Crafted Malevolent Gladiator's Bracers of Prowess
+i(0, 143173);	-- Crafted Malevolent Gladiator's Clasp of Cruelty
+i(0, 143174);	-- Crafted Malevolent Gladiator's Clasp of Meditation
+i(0, 143163);	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+i(0, 143164);	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+i(0, 143165);	-- Crafted Malevolent Gladiator's Dreadplate Helm
+i(0, 143166);	-- Crafted Malevolent Gladiator's Dreadplate Legguards
+i(0, 143167);	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
+i(0, 143184);	-- Crafted Malevolent Gladiator's Girdle of Accuracy
+i(0, 143185);	-- Crafted Malevolent Gladiator's Girdle of Prowess
+i(0, 143175);	-- Crafted Malevolent Gladiator's Greaves of Alacrity
+i(0, 143176);	-- Crafted Malevolent Gladiator's Greaves of Meditation
+i(0, 143179);	-- Crafted Malevolent Gladiator's Ornamented Chestguard
+i(0, 143181);	-- Crafted Malevolent Gladiator's Ornamented Headcover
+i(0, 143180);	-- Crafted Malevolent Gladiator's Ornamented Gloves
+i(0, 143182);	-- Crafted Malevolent Gladiator's Ornamented Legplates
+i(0, 143183);	-- Crafted Malevolent Gladiator's Ornamented Spaulders
+i(0, 143190);	-- Crafted Malevolent Gladiator's Plate Chestpiece
+i(0, 143191);	-- Crafted Malevolent Gladiator's Plate Gauntlets
+i(0, 143192);	-- Crafted Malevolent Gladiator's Plate Helm
+i(0, 143193);	-- Crafted Malevolent Gladiator's Plate Legguards
+i(0, 143194);	-- Crafted Malevolent Gladiator's Plate Shoulders
+i(0, 143196);	-- Crafted Malevolent Gladiator's Redoubt
+i(0, 143168);	-- Crafted Malevolent Gladiator's Scaled Chestpiece
+i(0, 143169);	-- Crafted Malevolent Gladiator's Scaled Gauntlets
+i(0, 143170);	-- Crafted Malevolent Gladiator's Scaled Helm
+i(0, 143171);	-- Crafted Malevolent Gladiator's Scaled Legguards
+i(0, 143172);	-- Crafted Malevolent Gladiator's Scaled Shoulders
+i(0, 143197);	-- Crafted Malevolent Gladiator's Shield Wall
+i(0, 143187);	-- Crafted Malevolent Gladiator's Warboots of Alacrity
+i(0, 143186);	-- Crafted Malevolent Gladiator's Warboots of Cruelty
+
+i(0, 146921);	-- Accelerated Balanced Trillium Ingot [Item Gives multiple Recipes]
+i(0, 143255);	-- Balanced Trillium Ingot [Item Gives multiple Recipes]
+i(0, 142959);	-- Avenger's Trillium Legplates
+i(0, 142968);	-- Avenger's Trillium Waistplate
+i(0, 142963);	-- Blessed Trillium Belt
+i(0, 142954);	-- Blessed Trillium Greaves
+i(0, 142958);	-- Protector's Trillium Legguards
+i(0, 142967);	-- Protector's Trillium Waistguard
+
+
+
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+i(0, 158737);	-- Blacksmithing
+i(0, 153771);	-- Blackrock Crucible
+
+
+
+
+i(0, 153627);	-- Draenic Steel War Axe
+i(0, 153612);	-- Draenic Steel Wristwraps
+i(0, 153631);	-- Draenic Steel Bulwark
+i(0, 153605);	-- Draenic Steel Chestplate
+i(0, 153609);	-- Draenic Steel Legguards
+i(0, 153607);	-- Draenic Steel Gauntlets
+i(0, 153628);	-- Draenic Steel Sword
+i(0, 153611);	-- Draenic Steel Girdle
+i(0, 153629);	-- Draenic Steel Dagger
+i(0, 153606);	-- Draenic Steel Warboots
+i(0, 153630);	-- Draenic Steel Mace
+i(0, 153610);	-- Draenic Steel Shoulders
+i(0, 153608);	-- Draenic Steel Helm
+
+
+
+i(0, 153660);	-- Peerless Draenic Steel Legguards
+i(0, 153666);	-- Peerless Draenic Steel Dagger
+i(0, 153667);	-- Peerless Draenic Steel Mace
+i(0, 153657);	-- Peerless Draenic Steel Warboots
+i(0, 153668);	-- Peerless Draenic Steel Bulwark
+i(0, 153661);	-- Peerless Draenic Steel Shoulders
+i(0, 153656);	-- Peerless Draenic Steel Chestplate
+i(0, 153664);	-- Peerless Draenic Steel War Axe
+i(0, 153659);	-- Peerless Draenic Steel Helm
+i(0, 153665);	-- Peerless Draenic Steel Sword
+i(0, 153663);	-- Peerless Draenic Steel Wristwraps
+i(0, 153658);	-- Peerless Draenic Steel Gauntlets
+i(0, 153649);	-- Hardened Draenic Steel Girdle
+i(0, 153646);	-- Hardened Draenic Steel Helm
+i(0, 153648);	-- Hardened Draenic Steel Shoulders
+i(0, 153653);	-- Hardened Draenic Steel Dagger
+i(0, 153644);	-- Hardened Draenic Steel Warboots
+i(0, 153652);	-- Hardened Draenic Steel Sword
+i(0, 153651);	-- Hardened Draenic Steel War Axe
+i(0, 153655);	-- Hardened Draenic Steel Bulwark
+i(0, 153645);	-- Hardened Draenic Steel Gauntlets
+i(0, 153647);	-- Hardened Draenic Steel Legguards
+i(0, 153650);	-- Hardened Draenic Steel Wristwraps
+i(0, 153654);	-- Hardened Draenic Steel Mace
+i(0, 153643);	-- Hardened Draenic Steel Chestplate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 7.3.0.24473
+i(0, 176090);	-- Secrets of Draenor Blacksmithing
+i(0, 184336);	-- Red-Hot Leystone Bar
+i(0, 184344);	-- Handmade Leystone Boots
+i(0, 182948);	-- Demonsteel Helm
+i(0, 184313);	-- Hard Leystone Ingots
+i(0, 184405);	-- Brimstone-Covered Armguards
+i(0, 247710);	-- Empyrial Breastplate
+i(0, 239415);	-- Rethu's Incessant Courage
+i(0, 184184);	-- Dull Hard Leystone Armguards
+i(0, 184183);	-- Heated Hard Leystone Bar
+i(0, 182934);	-- Leystone Boots
+i(0, 178245);	-- Steelforged Aegis
+i(0, 183280);	-- Heated Leystone Bar
+i(0, 184343);	-- Leystone Neckplate
+i(0, 182972);	-- Leystone Pauldrons
+i(0, 184408);	-- Masterwork Leystone Armguards
+i(0, 182966);	-- Leystone Helm
+i(0, 182983);	-- Demonsteel Waistguard
+i(0, 182979);	-- Demonsteel Gauntlets
+i(0, 182980);	-- Demonsteel Boots
+i(0, 171695);	-- Steelforged Saber
+i(0, 171699);	-- Truesteel Grinder
+i(0, 182973);	-- Leystone Breastplate
+i(0, 182964);	-- Leystone Pauldrons
+i(0, 187490);	-- Mighty Steelforged Essence
+i(0, 171705);	-- Truesteel Armguards
+i(0, 178243);	-- Steelforged Axe
+i(0, 182974);	-- Demonsteel Armguards
+i(0, 247700);	-- Felslate Anchor
+i(0, 171691);	-- Smoldering Helm
+i(0, 191929);	-- Leystone Helm
+i(0, 195097);	-- Blacksmithing
+i(0, 182944);	-- Demonsteel Armguards
+i(0, 171701);	-- Truesteel Helm
+i(0, 177169);	-- Soul of the Forge
+i(0, 184219);	-- Scrapmetal Handguard
+i(0, 182967);	-- Leystone Gauntlets
+i(0, 183279);	-- Leystone Bar
+i(0, 171708);	-- Truesteel Essence
+i(0, 187515);	-- Savage Truesteel Essence
+i(0, 182933);	-- Leystone Gauntlets
+i(0, 247713);	-- Empyrial Breastplate
+i(0, 184182);	-- Hard Leystone Bar
+i(0, 182976);	-- Demonsteel Pauldrons
+i(0, 209496);	-- Terrorspike
+i(0, 187491);	-- Mighty Truesteel Essence
+i(0, 187514);	-- Savage Steelforged Essence
+i(0, 182982);	-- Demonsteel Armguards
+i(0, 171692);	-- Smoldering Breastplate
+i(0, 182971);	-- Leystone Waistguard
+i(0, 213916);	-- Fel Core Hound Harness
+i(0, 171690);	-- Truesteel Ingot
+i(0, 182965);	-- Leystone Greaves
+i(0, 184309);	-- Hard Leystone Bar
+i(0, 182930);	-- Leystone Pauldrons
+i(0, 182975);	-- Demonsteel Waistguard
+i(0, 182951);	-- Demonsteel Breastplate
+i(0, 171702);	-- Truesteel Greaves
+i(0, 248870);	-- Empyrial Breastplate
+i(0, 182968);	-- Leystone Boots
+i(0, 184220);	-- Scrapmetal Cuffplate
+i(0, 184404);	-- Molten Brimstone
+i(0, 209497);	-- Gleaming Iron Spike
+i(0, 183281);	-- Leystone Cuffplate
+i(0, 171700);	-- Truesteel Pauldrons
+i(0, 184337);	-- Leystone Shinplate
+i(0, 171652);	-- Upgrade Weapon
+i(0, 184215);	-- Medium Heated Scrap Metal
+i(0, 184345);	-- Handmade Leystone Helm
+i(0, 182928);	-- Leystone Armguards
+i(0, 182950);	-- Demonsteel Boots
+i(0, 171706);	-- Truesteel Boots
+i(0, 182947);	-- Demonsteel Greaves
+i(0, 182978);	-- Demonsteel Helm
+i(0, 182969);	-- Leystone Breastplate
+i(0, 182977);	-- Demonsteel Greaves
+i(0, 182932);	-- Leystone Helm
+i(0, 209499);	-- Flamespike
+i(0, 184341);	-- Leystone Faceguard
+i(0, 248864);	-- Empyrial Rivets
+i(0, 173355);	-- Truesteel Reshaper
+i(0, 184403);	-- Engraved Leystone Armguards
+i(0, 171718);	-- Truesteel Ingot
+i(0, 183283);	-- Leystone Fingerguard
+i(0, 209564);	-- Demonsteel Stirrups
+i(0, 182116);	-- Riddle of Truesteel
+i(0, 248869);	-- Empyrial Back Plate
+i(0, 182929);	-- Leystone Waistguard
+i(0, 182986);	-- Demonsteel Helm
+i(0, 184314);	-- Heated Hard Leystone Ingot
+i(0, 182988);	-- Demonsteel Boots
+i(0, 184442);	-- Demonsteel Bar
+i(0, 184315);	-- Hard Leystone Nail
+i(0, 182945);	-- Demonsteel Waistguard
+i(0, 171653);	-- Upgrade Weapon
+i(0, 184218);	-- Scrapmetal Palmplate
+i(0, 171697);	-- Steelforged Hammer
+i(0, 182970);	-- Leystone Armguards
+i(0, 182987);	-- Demonsteel Gauntlets
+i(0, 182949);	-- Demonsteel Gauntlets
+i(0, 171707);	-- Truesteel Waistguard
+i(0, 182946);	-- Demonsteel Pauldrons
+i(0, 184181);	-- Leystone Slag
+i(0, 184216);	-- Large Heated Scrap Metal
+i(0, 183562);	-- Handcrafted Leystone Gauntlets
+i(0, 184214);	-- Small Heated Scrap Metal
+i(0, 184407);	-- Brimstone-Crusted Armguards
+i(0, 184217);	-- Scrapmetal Fingerplates
+i(0, 182999);	-- Leystone Hoofplates
+i(0, 182935);	-- Leystone Breastplate
+i(0, 171696);	-- Steelforged Dagger
+i(0, 171710);	-- Steelforged Essence
+i(0, 182962);	-- Leystone Armguards
+i(0, 171704);	-- Truesteel Breastplate
+i(0, 184310);	-- Leystone Shards
+i(0, 171694);	-- Steelforged Greataxe
+i(0, 183278);	-- Leystone Slag
+i(0, 182931);	-- Leystone Greaves
+i(0, 182989);	-- Demonsteel Breastplate
+i(0, 247714);	-- Empyrial Breastplate
+i(0, 191930);	-- Leystone Gauntlets
+i(0, 191928);	-- Leystone Boots
+i(0, 191931);	-- Leystone Greaves
+i(0, 248867);	-- Empyrial Chest Plate
+i(0, 182981);	-- Demonsteel Breastplate
+i(0, 182985);	-- Demonsteel Greaves
+i(0, 184338);	-- Leystone Heelguard
+i(0, 184312);	-- Lumps of Leystone Slag
+i(0, 171698);	-- Steelforged Shield
+i(0, 182984);	-- Demonsteel Pauldrons
+i(0, 184308);	-- Leystone Slag
+i(0, 171703);	-- Truesteel Gauntlets
+i(0, 184339);	-- Leystone Footguard
+i(0, 184340);	-- Leystone Soleplate
+i(0, 184342);	-- Leystone Dome
+i(0, 209498);	-- Consecrated Spike
+i(0, 171693);	-- Smoldering Greaves
+i(0, 182963);	-- Leystone Waistguard
+i(0, 184185);	-- Hard Leystone Armguards
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

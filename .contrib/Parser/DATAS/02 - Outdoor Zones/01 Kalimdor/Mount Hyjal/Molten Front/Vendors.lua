@@ -32,14 +32,14 @@ _.Zones =
 							i(70114),	-- Fireplume Girdle
 							i(70116),	-- Gauntlets of Living Obsidium
 							i(70119),	-- Meteorite Ring
-							i(70166),	-- Plans: Brainsplinter
-							i(70169),	-- Plans: Elementium-Edged Scalper
-							i(70168),	-- Plans: Lightforged Elementium Hammer
-							i(70172),	-- Plans: Masterwork Elementium Deathblade
-							i(70167),	-- Plans: Masterwork Elementium Spellblade
-							i(70170),	-- Plans: Pyrium Spellward
-							i(70171),	-- Plans: Unbreakable Guardian
-							i(70173),	-- Plans: Witch-Hunter's Harvester
+							i(70166),	-- Plans: Brainsplinter (RECIPE!)
+							i(70169),	-- Plans: Elementium-Edged Scalper (RECIPE!)
+							i(70168),	-- Plans: Lightforged Elementium Hammer (RECIPE!)
+							i(70172),	-- Plans: Masterwork Elementium Deathblade (RECIPE!)
+							i(70167),	-- Plans: Masterwork Elementium Spellblade (RECIPE!)
+							i(70170),	-- Plans: Pyrium Spellward (RECIPE!)
+							i(70171),	-- Plans: Unbreakable Guardian (RECIPE!)
+							i(70173),	-- Plans: Witch-Hunter's Harvester (RECIPE!)
 							i(70121),	-- Ricket's Gun Show
 							i(70144),	-- Ricket's Magnetic Fireball
 							i(70120),	-- Rickety Belt

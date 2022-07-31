@@ -220,12 +220,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86283),	-- Pattern: Raiment of Blood and Bone
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						},
 					}),
 					cr(60583, e(683, {	-- Protectors of the Endless
@@ -371,12 +371,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86283),	-- Pattern: Raiment of Blood and Bone
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						},
 					}),
 					cr(60583, e(683, {	-- Protectors of the Endless

@@ -352,12 +352,12 @@ root("Instances", tier(CATA_TIER, {
 					i(69961),	-- Pattern: Gloves of Unforgiving Flame
 					i(69963),	-- Pattern: Heavenly Gloves of the Moon
 					i(69973),	-- Pattern: Treads of the Craft
-					i(69970),	-- Plans: Emberforged Elementium Boots
-					i(69969),	-- Plans: Mirrored Boots
-					i(69968),	-- Plans: Warboots of Mighty Lords
-					i(69958),	-- Plans: Eternal Elementium Handguards
-					i(69957),	-- Plans: Fists of Fury
-					i(69959),	-- Plans: Holy Flame Gauntlets
+					i(69970),	-- Plans: Emberforged Elementium Boots (RECIPE!)
+					i(69969),	-- Plans: Mirrored Boots (RECIPE!)
+					i(69968),	-- Plans: Warboots of Mighty Lords (RECIPE!)
+					i(69958),	-- Plans: Eternal Elementium Handguards (RECIPE!)
+					i(69957),	-- Plans: Fists of Fury (RECIPE!)
+					i(69959),	-- Plans: Holy Flame Gauntlets (RECIPE!)
 					i(68972),	-- Apparatus of Khaz'goroth
 					i(71359),	-- Chelley's Sterilized Scalpel
 					i(70929),	-- Firebound Gorget
