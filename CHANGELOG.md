@@ -6,7 +6,7 @@
 
 ### __"Completed By" checkbox__ ⚙
 
-Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip (including Repeatable quests) (will probably need to adjust logic for those will a bajillion characters and such).
+Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip (including Repeatable quests) (will probably need to adjust logic for those with a bajillion characters and such). You can find new setting in ATT Settings -> Interface -> Tooltips -> Shown Information (it's at the bottom of the tab).
 
 ### Notable changes:
 
