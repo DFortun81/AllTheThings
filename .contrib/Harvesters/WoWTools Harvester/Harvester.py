@@ -43,7 +43,7 @@ class Things(Enum):
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
-        with open(Path("BuildLists", f"BuildList{thing.name}.txt"), "a") as build_list:
+        with open(Path("BuildLists", f"{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
 
@@ -107,7 +107,7 @@ def get_categories_ids(thing: Things) -> list[str]:
 def create_raw_file(thing: Things) -> None:
     """Create a raw file for a thing."""
     raw_path = Path("Backups", f"Raw{thing.name}.txt")
-    builds_path = Path("BuildLists", f"BuildList{thing.name}.txt")
+    builds_path = Path("BuildLists", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
         for build in builds_file:
             thing_list = get_thing_ids(thing, build)
