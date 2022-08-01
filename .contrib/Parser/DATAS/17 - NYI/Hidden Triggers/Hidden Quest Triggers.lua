@@ -64,7 +64,6 @@ root("HiddenQuestTriggers", {
 		--q(63389),	-- Person in Errors doesnt really remember
 		--q(63390), -- Person in Errors doesnt really remember
 		--q(63391), -- Person in Errors doesnt really remember
-		--q(62688),	-- Popped taking portal to Oribos
 		--q(55628),	-- Killing Paol Pondwader(Second ID?) / 'A Sound Defense' Quest / after killing (Rare) Beehemoth in Stormsong Valley / triggering this, am doing WQ "Too Much To Bear" / Trig Sound and doing Azerite Mining WQ
 		--q(54324),	-- Triggered in BfA
 		--q(54317),	-- BfA Alliance Stormsong "Invasion"
@@ -1602,11 +1601,6 @@ root("HiddenQuestTriggers", {
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
-		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
-		q(62688),	-- Crafted Converging Lens of the Focusing Iris (Rank 1) from Focused Life Anima
-		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
-		q(57036),	-- triggered when completing a +7 mythic and looting Magnifying Lens of the Focusing Iris (Rank 2)
-		q(57034),	-- triggered when completing a +7 mythic and looting Replicating Seed of Abundance (Rank 2)
 		q(53123),	-- triggered when turning in #53121, "Siege of Boralus," while on Horde War Campaign
 		q(52193),	-- triggered when turning in #52186, "The Bulk of the Guard," while on Horde War Campaign
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen

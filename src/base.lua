@@ -15,11 +15,12 @@ app.PrintDebug = function(...)
 	app.DEBUG_PRINT_LAST = GetTimePreciseSec();
 	if app.DEBUG_PRINT then print(GetTimePreciseSec(),...) end
 end
--- Consolidated debug-only print with precise duration since last successful print
+-- Consolidated debug-only print with precise frame duration since last successful print
 app.PrintDebugPrior = function(...)
 	if app.DEBUG_PRINT then
 		if app.DEBUG_PRINT_LAST then
-			print(GetTimePreciseSec() - app.DEBUG_PRINT_LAST,...)
+			local frames = math.ceil((GetTimePreciseSec() - app.DEBUG_PRINT_LAST) / 0.000166666) / 100;
+			print("@60",frames,...)
 		else
 			print(0,...)
 		end
