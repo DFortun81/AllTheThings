@@ -89,8 +89,17 @@ def get_categories_ids(thing: Things) -> list[str]:
     """Get the IDs of a thing from Categories.lua."""
     thing2prefix: dict[Things, str | tuple[str, ...]] = {
         Things.Achievements: "ach(",
+        Things.Factions: "faction(",
+        Things.FlightPaths: "fp(",
+        Things.Followers: "follower(",
+        Things.Illusions: "ill(",
+        Things.Mounts: "mnt(",
+        Things.Pets: "p(",
         Things.Quests: ("q(", "questID"),
+        Things.Recipes: "r(",
+        Things.Titles: "title(",
         Things.Toys: "toy(",
+        Things.Transmog: "s(",
     }
     categories_path = Path("..", "..", "..", "db", "Categories.lua")
     categories_list = list[str]()
@@ -101,7 +110,7 @@ def get_categories_ids(thing: Things) -> list[str]:
                 if word.startswith(thing2prefix[thing]):
                     id = re.sub("[^0-9^.]", "", word)
                     categories_list.append(id + "\n")
-    return categories_list
+    return sorted(categories_list, key=lambda x: float(x))
 
 
 def create_raw_file(thing: Things) -> None:
@@ -143,27 +152,28 @@ def create_missing_file(thing: Things) -> None:
         for line in difference:
             missing_file.write(line)
         # Extra Searches here
-        # if thing == "Achievements":
-        # Nothing?
-        # elif thing == "Factions":
-        # Nothing?
         # elif thing == "Flight Paths":
         # Maybe need to check Flight Paths file?
-        # elif thing == "Followers":
-        # Nothing?
         # elif thing == "Illusions":
         # There is an Illusions file?
-        # elif thing == "Mounts":
-        # Checking Mount.lua
+        if thing == Things.Mounts:
+            mount_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
+            mount_list = list[str]()
+            with open(mount_path) as mount_file:
+                for mount_line in mount_file:
+                    mount_line = mount_line.split(";")[0].split(",")[1]
+                    mount_line = re.sub("[^0-9]", "", mount_line)
+                    mount_list.append(mount_line + "\n")
+            # TODO: this only finds new Mounts, not removed Mounts
+            difference = sorted(set(raw_lines) - set(mount_list), key=raw_lines.index)
+            missing_file.write("\n\n\n\n" + "Missing in MountDB.lua\n\n")
+            for line in difference:
+                missing_file.write(line)
         # elif thing == "Pets":
         # Checking Pet.lua
-        # elif thing == "Quests":
-        # Nothing?
         # elif thing == "Recipes":
         # Checking the Profession DBs
-        # elif thing == "Titles":
-        # Nothing?
-        if thing == Things.Toys:
+        elif thing == Things.Toys:
             toy_path = Path(DATAS_FOLDER, "00 - DB", "ToyDB.lua")
             toy_list = list[str]()
             with open(toy_path) as toy_file:
@@ -171,15 +181,12 @@ def create_missing_file(thing: Things) -> None:
                     toy_line = toy_line.split(";")[0]
                     if toy_line.startswith("i("):
                         toy_line = re.sub("[^0-9]", "", toy_line)
-                        toy_list.append(toy_line)
+                        toy_list.append(toy_line + "\n")
             # TODO: this only finds new Toys, not removed Toys
-            difference = sorted(set(raw_lines) - set(toy_list))
-            missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua")
+            difference = sorted(set(raw_lines) - set(toy_list), key=raw_lines.index)
+            missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua\n\n")
             for line in difference:
-                missing_file.write(line + "\n")
-        # Checking Toy.lua
-        # elif thing == "Transmog":
-        # Nothing?
+                missing_file.write(line)
 
 
 def get_name(thing: Things) -> None:
