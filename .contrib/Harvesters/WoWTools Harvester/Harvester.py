@@ -111,13 +111,14 @@ def create_raw_file(thing: Things) -> None:
     with open(builds_path) as builds_file:
         for build in builds_file:
             thing_list = get_thing_ids(thing, build)
+            thing_list = get_thing_ids(thing, build.strip())
             with open(raw_path, "r+") as raw_file:
-                raw_file.write(build + "\n")
+                raw_file.write(build)
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines))
+                difference = sorted(set(thing_list) - set(old_lines), key=lambda x: float(x))
                 for line in difference:
-                    raw_file.write(line + "\n")
+                    raw_file.write(line)
 
 
 def add_latest_data(build: str) -> None:
