@@ -107,10 +107,10 @@ def get_categories_ids(thing: Things) -> list[str]:
         for line in categories_file:
             words = line.split(",")
             for word in words:
-                if word.startswith(thing2prefix[thing]):
+                if any(prefix in word for prefix in thing2prefix[thing]):
                     id = re.sub("[^0-9^.]", "", word)
                     categories_list.append(id + "\n")
-    return sorted(categories_list, key=lambda x: float(x))
+    return categories_list
 
 
 def create_raw_file(thing: Things) -> None:
@@ -119,15 +119,13 @@ def create_raw_file(thing: Things) -> None:
     builds_path = Path("BuildLists", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
         for build in builds_file:
-            thing_list = get_thing_ids(thing, build)
             thing_list = get_thing_ids(thing, build.strip())
             with open(raw_path, "r+") as raw_file:
                 raw_file.write(build)
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines), key=lambda x: float(x))
-                for line in difference:
-                    raw_file.write(line)
+                difference = sorted(set(thing_list) - set(old_lines), key=float)
+                raw_file.writelines(difference)
 
 
 def add_latest_data(build: str) -> None:
@@ -149,8 +147,7 @@ def create_missing_file(thing: Things) -> None:
         raw_lines = raw_file.readlines()
         # TODO: this only finds new Things, not removed Things
         difference = sorted(set(raw_lines) - set(categories_list), key=raw_lines.index)
-        for line in difference:
-            missing_file.write(line)
+        missing_file.writelines(difference)
         # Extra Searches here
         # elif thing == "Flight Paths":
         # Maybe need to check Flight Paths file?
@@ -167,8 +164,7 @@ def create_missing_file(thing: Things) -> None:
             # TODO: this only finds new Mounts, not removed Mounts
             difference = sorted(set(raw_lines) - set(mount_list), key=raw_lines.index)
             missing_file.write("\n\n\n\n" + "Missing in MountDB.lua\n\n")
-            for line in difference:
-                missing_file.write(line)
+            missing_file.writelines(difference)
         # elif thing == "Pets":
         # Checking Pet.lua
         # elif thing == "Recipes":
@@ -185,8 +181,7 @@ def create_missing_file(thing: Things) -> None:
             # TODO: this only finds new Toys, not removed Toys
             difference = sorted(set(raw_lines) - set(toy_list), key=raw_lines.index)
             missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua\n\n")
-            for line in difference:
-                missing_file.write(line)
+            missing_file.writelines(difference)
 
 
 def get_name(thing: Things) -> None:
