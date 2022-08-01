@@ -1400,7 +1400,10 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						48590,	-- My Head and Shoulders
 					},
 				}),
-				q(50080),	-- Raiding the Raiders
+				q(50080, {	-- Raiding the Raiders
+					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
+					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
+				}),
 				q(48852, {	-- Stopping Zardax
 					["sourceQuests"] = {
 						48825,	-- Power Denied
