@@ -8347,11 +8347,24 @@ local fields = RawCloneData(questFields, {
 });
 app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
-	if t and rawget(t, "maxReputation") then
-		return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+	if t then
+		-- extract specific faction data
+		local aqd = rawget(t, "aqd");
+		if aqd then
+			-- Apply the faction specific quest data to this object.
+			if app.FactionID == Enum.FlightPathFaction.Horde then
+				for key,value in pairs(t.hqd) do t[key] = value; end
+			else
+				for key,value in pairs(aqd) do t[key] = value; end
+			end
+		end
+		if rawget(t, "maxReputation") then
+			return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+		end
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+--[[ Not used in Retail anymore
 app.CreateQuestWithFactionData = function(t)
 	local questData, otherQuestData, otherFaction;
 	if app.FactionID == Enum.FlightPathFaction.Horde then
@@ -8363,8 +8376,6 @@ app.CreateQuestWithFactionData = function(t)
 		otherQuestData = t.hqd;
 		otherFaction = Enum.FlightPathFaction.Horde;
 	end
-
-	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
 
 	-- Apply the faction specific quest data to this object.
 	for key,value in pairs(questData) do t[key] = value; end
@@ -8409,6 +8420,7 @@ app.CreateQuestWithFactionData = function(t)
 		return original;
 	end
 end
+--]]
 -- Causes a group to remain visible if it is replayable, regardless of collection status
 app.ShowIfReplayableQuest = function(data)
 	data.visible = C_QuestLog_IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
