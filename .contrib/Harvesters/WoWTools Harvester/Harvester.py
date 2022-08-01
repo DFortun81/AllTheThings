@@ -9,7 +9,10 @@ import requests
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
 
 profession_dict = {
+    "Abominable Stitching": 2787,
     "Alchemy": 171,
+    "Archaeology": 794,
+    "Ascension Crafting": 2791,
     "Blacksmithing": 164,
     "Cooking": 185,
     "Enchanting": 333,
@@ -18,9 +21,13 @@ profession_dict = {
     "Fishing": 356,
     "Inscription": 773,
     "Jewelcrafting": 755,
+    "Junkyard Tinkering": 2720,
     "Leatherworking": 165,
     "Mining": 186,
+    "Protoform Synthesis": 2819,
+    "Runeforging": 960,
     "Skinning": 393,
+    "Soul Cyphering": 2777,
     "Tailoring": 197,
 }
 
@@ -76,6 +83,8 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
                 thing_list.append(row["SpellItemEnchantmentID"] + "\n")
             case Things.Mounts:
                 thing_list.append(row["SourceSpellID"] + "\n")
+            case Things.Recipes:
+                thing_list.append(row["SkillLine"] + "," + row["Spell"] + "\n")
             case Things.Titles:
                 thing_list.append(row["Mask_ID"] + "\n")
             case Things.Toys:
@@ -126,6 +135,29 @@ def create_raw_file(thing: Things) -> None:
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(set(thing_list) - set(old_lines), key=float)
                 raw_file.writelines(difference)
+
+def create_raw_file_recipes() -> None:
+    """Create a raw file for recipes."""
+    raw_path_dict = {}
+    builds_path = Path("BuildLists", f"Recipes.txt")
+    """This part is to generate a path to each profession"""
+    for key in profession_dict:
+        raw_path_dict[key] = Path("Backups", f"Raw{key}.txt")
+    with open(builds_path) as builds_file:
+        for build in builds_file:
+            thing_list = get_thing_ids(Things.Recipes, build.strip())
+            """For each profession we will open a file"""
+            for key in profession_dict:
+                with open(raw_path_dict[key], "r+") as raw_file:
+                    raw_file.write(build)
+                    old_lines = raw_file.readlines()
+                    new_lines = []
+                    """We got the thing list with each line in the form skillLine,Spell. We only want the SpellIDs for the current SkillLineID we are looking at"""
+                    for line in thing_list:
+                        if int(line.split(",")[0]) == profession_dict[key]:
+                            new_lines.append(line.split(",")[1] + "\n")
+                    difference = sorted(set(new_lines) - set(old_lines), key=float)
+                    raw_file.writelines(difference)
 
 
 def add_latest_data(build: str) -> None:
