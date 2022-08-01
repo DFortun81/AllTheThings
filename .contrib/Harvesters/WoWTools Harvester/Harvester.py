@@ -139,9 +139,9 @@ def create_missing_file(thing: Things) -> None:
     with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
         raw_lines = raw_file.readlines()
         # TODO: this only finds new Things, not removed Things
-        difference = list(set(raw_lines) - set(categories_list))
+        difference = sorted(set(raw_lines) - set(categories_list), key=raw_lines.index)
         for line in difference:
-            missing_file.write(line + "\n")
+            missing_file.write(line)
         # Extra Searches here
         # if thing == "Achievements":
         # Nothing?
