@@ -274,12 +274,9 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80827 },	-- Haephest
-					["g"] = {
-						i(115356, {	-- Draenor Blacksmithing
-							["filterID"] = MISC,
-						}),
+					["g"] = appendGroups(DRAENOR_BLACKSMITHING, {
 						i(111813),	-- The Forge, Level 1
-					},
+					}),
 				}),
 				q(34582, {	-- Finding a Foothold
 					["sourceQuests"] = {

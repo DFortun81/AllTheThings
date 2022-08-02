@@ -437,12 +437,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36230,	-- The Restless Spirit
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
-						i(115356, {	-- Draenor Blacksmithing
-							["filterID"] = MISC,
-						}),
+					["g"] = appendGroups(DRAENOR_BLACKSMITHING, {
 						i(111813),	-- The Forge, Level 1
-					},
+					}),
 				}),
 				q(33955, {	-- Missing Pack
 					["provider"] = { "n", 76941 },	-- Kar'lak

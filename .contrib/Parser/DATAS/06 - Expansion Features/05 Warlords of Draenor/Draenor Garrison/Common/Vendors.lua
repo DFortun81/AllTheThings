@@ -19,9 +19,10 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },	-- 5x Sumptuous Fur
 							},
 						}),
-						i(127725, {	-- Recipe: Mighty Steelforged Essence
+						i(127725, {	-- Recipe: Mighty Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127726, {	-- Recipe: Mighty Taladite Amplifier
@@ -29,21 +30,24 @@ _.ExpansionFeatures =
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127727, {	-- Recipe: Mighty Truesteel Essence
+						i(127727, {	-- Recipe: Mighty Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
 						i(122714, {	-- Recipe: Primal Gemcutting
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(122705, {	-- Recipe: Riddle of Truesteel
+						i(122705, {	-- Recipe: Riddle of Truesteel (RECIPE!)
+							["timeline"] = { "added 6.1.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(127743, {	-- Recipe: Savage Steelforged Essence
+						i(127743, {	-- Recipe: Savage Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127744, {	-- Recipe: Savage Taladite Amplifier
@@ -51,9 +55,10 @@ _.ExpansionFeatures =
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127745, {	-- Recipe: Savage Truesteel Essence
+						i(127745, {	-- Recipe: Savage Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127729, {	-- Schematic: Advanced Muzzlesprocket
@@ -1242,9 +1247,10 @@ _.ExpansionFeatures =
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127725, {	-- Recipe: Mighty Steelforged Essence
+						i(127725, {	-- Recipe: Mighty Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127726, {	-- Recipe: Mighty Taladite Amplifier
@@ -1252,21 +1258,24 @@ _.ExpansionFeatures =
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127727, {	-- Recipe: Mighty Truesteel Essence
+						i(127727, {	-- Recipe: Mighty Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						un(REMOVED_FROM_GAME, i(122551)),	-- Recipe: Powerful Taladite Amplifier
 						i(122714, {	-- Recipe: Primal Gemcutting
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(122705, {	-- Recipe: Riddle of Truesteel
+						i(122705, {	-- Recipe: Riddle of Truesteel (RECIPE!)
+							["timeline"] = { "added 6.1.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
-						i(127743, {	-- Recipe: Savage Steelforged Essence
+						i(127743, {	-- Recipe: Savage Steelforged Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
 						i(127744, {	-- Recipe: Savage Taladite Amplifier
@@ -1274,9 +1283,10 @@ _.ExpansionFeatures =
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
 						}),
-						i(127745, {	-- Recipe: Savage Truesteel Essence
+						i(127745, {	-- Recipe: Savage Truesteel Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+							["timeline"] = { "added 6.2.0" },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127729, {	-- Schematic: Advanced Muzzlesprocket

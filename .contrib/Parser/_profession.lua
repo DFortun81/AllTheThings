@@ -6,6 +6,7 @@ local SPIRIT_OF_HARMONY = 76061;
 local ELEMENTIUM_BAR = 52186;
 local HARDENED_ELEMENTIUM_BAR = 53039;
 local PYRIUM = 51950;
+local SECRET_OF_DRAENOR_BLACKSMITHING = 118720;
 APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 	r(2018, {	-- Blacksmithing (Apprentice)
 		["collectible"] = false,
@@ -580,6 +581,88 @@ COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({
 	i(84225),	-- Plans: Masterwork Spiritguard Legplates (RECIPE!)
 	i(84226),	-- Plans: Masterwork Spiritguard Shield (RECIPE!)
 	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
+}));
+DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at the The Forge for 100 gold.",
+	["filterID"] = MISC,
+	["g"] = {
+		r(158737, {	-- Enchanting (Draenor Master)
+			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			["collectible"] = false,
+		}),
+		r(171692),	-- Smoldering Breastplate
+		r(171693),	-- Smoldering Greaves
+		r(171691),	-- Smoldering Helm
+		r(176090),	-- Secrets of Draenor Blacksmithing
+		r(171690),	-- Truesteel Ingot
+	},
+})));
+COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
+	-- Missing Essences?
+	i(119329, {	-- Recipe: Soul of the Forge (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(120262, {	-- Recipe: Steelforged Aegis (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(120260, {	-- Recipe: Steelforged Axe (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116731, {	-- Recipe: Steelforged Dagger (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116729, {	-- Recipe: Steelforged Greataxe (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116732, {	-- Recipe: Steelforged Hammer (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116730, {	-- Recipe: Steelforged Saber (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116733, {	-- Recipe: Steelforged Shield (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116740, {	-- Recipe: Truesteel Armguards (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116741, {	-- Recipe: Truesteel Boots (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116739, {	-- Recipe: Truesteel Breastplate (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116738, {	-- Recipe: Truesteel Gauntlets (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116737, {	-- Recipe: Truesteel Greaves (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116734, {	-- Recipe: Truesteel Grinder (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116736, {	-- Recipe: Truesteel Helm (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116735, {	-- Recipe: Truesteel Pauldrons (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(118044, {	-- Recipe: Truesteel Reshaper (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116742, {	-- Recipe: Truesteel Waistguard (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116743, {	-- Recipe: Truesteel Essence (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
+	}),
+	i(116745, {	-- Recipe: Steelforged Essence (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
+	}),
 }));
 ----------------
 -- ENCHANTING --
