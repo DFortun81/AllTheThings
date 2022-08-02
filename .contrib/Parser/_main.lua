@@ -1081,7 +1081,7 @@ SHADOWLANDS_PHASE_ONE = 90;
 -- #endif
 
 -- TEMPORARY SHADOWLANDS TIMELINE (BLIZZARD DECIDE TO BREAK UP 9.2.5 and Season 4 Release)
-ADDED_SLS4 = "added 9.3.0";
+ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.3.0";
 
 -- Holiday Filters

@@ -146,13 +146,13 @@ def create_raw_file_recipes() -> None:
             for profession in profession_dict:
                 with open(raw_path_dict[profession], "r+") as raw_file:
                     raw_file.write(build)
-                    old_lines = raw_file.readlines()
                     new_lines = list[str]()
                     # We got the recipe list with each line in the form skillLine,Spell. We only want the SpellIDs for the current SkillLineID we are looking at
                     for line in recipe_list:
                         skill_line, spell = line.split(",")
                         if int(skill_line) == profession_dict[profession]:
                             new_lines.append(spell + "\n")
+                    old_lines = raw_file.readlines()
                     difference = sorted(set(new_lines) - set(old_lines), key=float)
                     raw_file.writelines(difference)
 
