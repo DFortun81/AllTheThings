@@ -86,15 +86,15 @@ def get_existing_ids(thing: Things) -> list[str]:
         Things.Transmog: "s(",
     }
     categories_path = Path("..", "..", "..", "db", "Categories.lua")
-    existings_ids = list[str]()
+    existing_ids = list[str]()
     with open(categories_path) as categories_file:
         for line in categories_file:
             words = line.split(",")
             for word in words:
                 if any(prefix in word for prefix in thing2prefix[thing]):
                     id = re.sub("[^0-9^.]", "", word)
-                    existings_ids.append(id + "\n")
-    return existings_ids
+                    existing_ids.append(id + "\n")
+    return existing_ids
 
 
 def create_raw_file(thing: Things) -> None:
