@@ -10,4 +10,6 @@ New seasonal achievements, titles and mounts.
 
 ### Notable changes:
 
+- Shadowlands Season 3 content marked as removed.
+- Blacksmithing adjustments.
 - Other fixes.
