@@ -6,31 +6,6 @@ from pathlib import Path
 
 import requests
 
-DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
-
-profession_dict = {
-    "Abominable Stitching": 2787,
-    "Alchemy": 171,
-    "Archaeology": 794,
-    "Ascension Crafting": 2791,
-    "Blacksmithing": 164,
-    "Cooking": 185,
-    "Enchanting": 333,
-    "Engineering": 202,
-    "Herbalism": 182,
-    "Fishing": 356,
-    "Inscription": 773,
-    "Jewelcrafting": 755,
-    "Junkyard Tinkering": 2720,
-    "Leatherworking": 165,
-    "Mining": 186,
-    "Protoform Synthesis": 2819,
-    "Runeforging": 960,
-    "Skinning": 393,
-    "Soul Cyphering": 2777,
-    "Tailoring": 197,
-}
-
 
 class Things(Enum):
     Achievements = auto()
@@ -94,7 +69,7 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
     return thing_list
 
 
-def get_categories_ids(thing: Things) -> list[str]:
+def get_existing_ids(thing: Things) -> list[str]:
     """Get the IDs of a thing from Categories.lua."""
     thing2prefix: dict[Things, str | tuple[str, ...]] = {
         Things.Achievements: "ach(",
@@ -111,15 +86,15 @@ def get_categories_ids(thing: Things) -> list[str]:
         Things.Transmog: "s(",
     }
     categories_path = Path("..", "..", "..", "db", "Categories.lua")
-    categories_list = list[str]()
+    existings_ids = list[str]()
     with open(categories_path) as categories_file:
         for line in categories_file:
             words = line.split(",")
             for word in words:
                 if any(prefix in word for prefix in thing2prefix[thing]):
                     id = re.sub("[^0-9^.]", "", word)
-                    categories_list.append(id + "\n")
-    return categories_list
+                    existings_ids.append(id + "\n")
+    return existings_ids
 
 
 def create_raw_file(thing: Things) -> None:
@@ -136,26 +111,48 @@ def create_raw_file(thing: Things) -> None:
                 difference = sorted(set(thing_list) - set(old_lines), key=float)
                 raw_file.writelines(difference)
 
+
 def create_raw_file_recipes() -> None:
-    """Create a raw file for recipes."""
-    raw_path_dict = {}
-    builds_path = Path("BuildLists", f"Recipes.txt")
-    """This part is to generate a path to each profession"""
-    for key in profession_dict:
-        raw_path_dict[key] = Path("Backups", f"Raw{key}.txt")
-    with open(builds_path) as builds_file:
+    """Create raw files for recipes."""
+    profession_dict = {
+        "Abominable Stitching": 2787,
+        "Alchemy": 171,
+        "Archaeology": 794,
+        "Ascension Crafting": 2791,
+        "Blacksmithing": 164,
+        "Cooking": 185,
+        "Enchanting": 333,
+        "Engineering": 202,
+        "Herbalism": 182,
+        "Fishing": 356,
+        "Inscription": 773,
+        "Jewelcrafting": 755,
+        "Junkyard Tinkering": 2720,
+        "Leatherworking": 165,
+        "Mining": 186,
+        "Protoform Synthesis": 2819,
+        "Runeforging": 960,
+        "Skinning": 393,
+        "Soul Cyphering": 2777,
+        "Tailoring": 197,
+    }
+    raw_path_dict = {
+        profession: Path("Backups", f"Raw{profession}.txt")
+        for profession in profession_dict
+    }
+    with open(Path("BuildLists", "Recipes.txt")) as builds_file:
         for build in builds_file:
-            thing_list = get_thing_ids(Things.Recipes, build.strip())
-            """For each profession we will open a file"""
-            for key in profession_dict:
-                with open(raw_path_dict[key], "r+") as raw_file:
+            recipe_list = get_thing_ids(Things.Recipes, build.strip())
+            for profession in profession_dict:
+                with open(raw_path_dict[profession], "r+") as raw_file:
                     raw_file.write(build)
                     old_lines = raw_file.readlines()
-                    new_lines = []
-                    """We got the thing list with each line in the form skillLine,Spell. We only want the SpellIDs for the current SkillLineID we are looking at"""
-                    for line in thing_list:
-                        if int(line.split(",")[0]) == profession_dict[key]:
-                            new_lines.append(line.split(",")[1] + "\n")
+                    new_lines = list[str]()
+                    # We got the recipe list with each line in the form skillLine,Spell. We only want the SpellIDs for the current SkillLineID we are looking at
+                    for line in recipe_list:
+                        skill_line, spell = line.split(",")
+                        if int(skill_line) == profession_dict[profession]:
+                            new_lines.append(spell + "\n")
                     difference = sorted(set(new_lines) - set(old_lines), key=float)
                     raw_file.writelines(difference)
 
@@ -168,17 +165,19 @@ def add_latest_data(build: str) -> None:
 def create_missing_file(thing: Things) -> None:
     """Create a missing file for a thing using difference between Categories.lua and raw file."""
     raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    datas_folder = Path("..", "..", "Parser", "DATAS")
     missing_path = Path(
-        DATAS_FOLDER,
+        datas_folder,
         "00 - Item Database",
         "MissingIDs",
         f"Missing{thing.name}.txt",
     )
-    categories_list = get_categories_ids(thing)
     with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
         raw_lines = raw_file.readlines()
         # TODO: this only finds new Things, not removed Things
-        difference = sorted(set(raw_lines) - set(categories_list), key=raw_lines.index)
+        difference = sorted(
+            set(raw_lines) - set(get_existing_ids(thing)), key=raw_lines.index
+        )
         missing_file.writelines(difference)
         # Extra Searches here
         # elif thing == "Flight Paths":
@@ -186,7 +185,7 @@ def create_missing_file(thing: Things) -> None:
         # elif thing == "Illusions":
         # There is an Illusions file?
         if thing == Things.Mounts:
-            mount_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
+            mount_path = Path(datas_folder, "00 - DB", "MountDB.lua")
             mount_list = list[str]()
             with open(mount_path) as mount_file:
                 for mount_line in mount_file:
@@ -202,7 +201,7 @@ def create_missing_file(thing: Things) -> None:
         # elif thing == "Recipes":
         # Checking the Profession DBs
         elif thing == Things.Toys:
-            toy_path = Path(DATAS_FOLDER, "00 - DB", "ToyDB.lua")
+            toy_path = Path(datas_folder, "00 - DB", "ToyDB.lua")
             toy_list = list[str]()
             with open(toy_path) as toy_file:
                 for toy_line in toy_file:
