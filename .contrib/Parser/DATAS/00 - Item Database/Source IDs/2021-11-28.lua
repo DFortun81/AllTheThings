@@ -35973,6 +35973,7 @@ Harvest({
 		["mods"] = {
 			[0] = 494,
 		},
+		["description"] = "These drop from Defias mobs after finishing the Westfall Questline as Alliance.",
 	},
 	[32991] = {
 		["mods"] = {
@@ -353150,6 +353151,7 @@ Harvest({
 		["mods"] = {
 			[0] = 107,
 		},
+		["description"] = "These drop from Defias mobs after finishing the Westfall Questline as Alliance.",
 	},
 	[29057] = {
 		["mods"] = {
