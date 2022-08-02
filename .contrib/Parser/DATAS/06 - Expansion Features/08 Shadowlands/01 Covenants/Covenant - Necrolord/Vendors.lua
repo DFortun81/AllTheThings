@@ -816,10 +816,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			n(172176, {	-- Su Zettai <Renown Quartermaster>
-				["coords"] = {
-					{ 50.68, 71.38, MALDRAXXUS },
-					{ 52.5, 41.2, SEAT_OF_THE_PRIMUS },
-				},
+				["coord"] = { 52.5, 41.2, SEAT_OF_THE_PRIMUS },
 				["g"] = {
 					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 						["cost"] = {
