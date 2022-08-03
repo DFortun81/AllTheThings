@@ -1403,10 +1403,50 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		inst(1190, {	-- Castle Nathria
-			i(184873),	-- Soul Igniter (Test)
-		}),
+
+root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
+	inst(1190, {	-- Castle Nathria
+		q(60680),	-- LFR 'The Leeching Vaults' Completed
+
+		q(62949),	-- First kill of Sire Denthrius / First full clear ??
+
+		q(62871),	-- Shriekwing
+		q(62872),	-- Huntsman Altimor
+		q(62873),	-- Sun King's Salvation
+		q(62874),	-- Artificer Xy'mox
+		q(62875),	-- Hungering Destroyer
+		q(62876),	-- The Council of Blood
+		q(62877),	-- Lady Inerva Darkvein
+		q(62878),	-- Sludgefist
+		q(62879),	-- Stone Legion Generals
+		q(62880),	-- Sire Denthrius
+
+		-- Fated (All difficulties)
+		q(70451),	-- Shriekwing
+		q(70452),	-- Shriekwing
+		q(70453),	-- Huntsman Altimor
+		q(70454),	-- Huntsman Altimor
+		q(70455),	-- Sun King's Salvation
+		q(70456),	-- Sun King's Salvation
+		q(70457),	-- Artificer Xy'mox
+		q(70458),	-- Artificer Xy'mox
+		q(70459),	-- Hungering Destroyer
+		q(70460),	-- Hungering Destroyer
+		q(70461),	-- The Council of Blood
+		q(70462),	-- The Council of Blood
+		q(70463),	-- Lady Inerva Darkvein
+		q(70464),	-- Lady Inerva Darkvein
+		q(70465),	-- Sludgefist
+		q(70466),	-- Sludgefist
+		q(70467),	-- Stone Legion Generals
+		q(70468),	-- Stone Legion Generals
+		q(70469),	-- Sire Denthrius
+		q(70470),	-- Sire Denthrius
 	}),
 }));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
+	inst(1190, {	-- Castle Nathria
+		i(184873),	-- Soul Igniter (Test)
+	}),
+})));

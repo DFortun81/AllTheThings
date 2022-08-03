@@ -3053,22 +3053,6 @@ root("HiddenQuestTriggers", {
 		q(62658),	-- Shadowlands Dungeon Reward Quest
 		q(62079),	-- received weekly Mythic+ keystone
 
-		-- Castle Nathria
-		q(60680),	-- LFR 'The Leeching Vaults' Completed
-
-		q(62949),	-- First kill of Sire Denthrius / First full clear ??
-
-		q(62871),	-- Shriekwing
-		q(62872),	-- Huntsman Altimor
-		q(62873),	-- Sun King's Salvation
-		q(62874),	-- Artificer Xy'mox
-		q(62875),	-- Hungering Destroyer
-		q(62876),	-- The Council of Blood
-		q(62877),	-- Lady Inerva Darkvein
-		q(62878),	-- Sludgefist
-		q(62879),	-- Stone Legion Generals
-		q(62880),	-- Sire Denthrius
-
 		-- 9.1 PTR
 		q(63820),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
 		q(64077),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
