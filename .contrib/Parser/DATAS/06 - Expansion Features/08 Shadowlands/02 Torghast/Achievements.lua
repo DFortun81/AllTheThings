@@ -156,60 +156,79 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 			ach(14498, {	-- Gatekeepers of Torghast
 				crit(1,  {		-- Dark Aspirant Corrus
 					["crs"] = { 156239 },	-- Dark Aspirant Corrus
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 				crit(2,  {		-- Arch-Suppressor Laguas
 					["crs"] = { 171422 },	-- Arch-Suppressor Laguas
+					["description"] = "This boss can be found in The Soulforges and The Upper Reaches.",
 				}),
 				crit(3,  {		-- Goxul the Devourer
 					["crs"] = { 170418 },	-- Goxul the Devourer
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(4,  {		-- Observer Zelgar
 					["crs"] = { 169859 },	-- Observer Zelgar <The Third Eye>
+					["description"] = "This boss can be found in The Soulforges.",
 				}),
 				crit(5,  {		-- Custodian Thonar
 					["crs"] = { 153165 },	-- Custodian Thonar
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(6,  {		-- Warden Skoldus
 					["crs"] = { 151329 },	-- Warden Skoldus
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(7,  {		-- Writhing Soulmass
 					["crs"] = { 156015 },	-- Writhing Soulmass
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(8,  {		-- Kosarus the Fallen
 					["crs"] = { 153451 },	-- Kosarus the Fallen
+					["description"] = "This boss can be found in Skoldus Hall.",
 				}),
 				crit(9,  {		-- The Grand Malleare
 					["crs"] = { 159755 },	-- The Grand Malleare
+					["description"] = "This boss can be found in The Soulforges.",
 				}),
 				crit(10, {		-- Gherus the Chained
 					["crs"] = { 155945 },	-- Gherus the Chained
+					["description"] = "This boss can be found in Skoldus Hall, The Upper Reaches, and Fracture Chambers.",
 				}),
 				crit(11, {		-- Cellblock Sentinel
 					["crs"] = { 151331 },	-- Cellblock Sentinel
+					["description"] = "This boss can be found in Skoldus Hall and The Soulforges.",
 				}),
 				crit(12, {		-- Warden of Souls
 					["crs"] = { 152995 },	-- Warden of Souls
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(13, {		-- Binder Baritas
 					["crs"] = { 153011 },	-- Binder Baritas
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(14, {		-- Maw of the Maw
 					["crs"] = { 153382 },	-- Maw of the Maw
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(15, {		-- Synod
 					["crs"] = { 159190 },	-- Synod
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(16, {		-- Patrician Cromwell
 					["crs"] = { 157122 },	-- Patrician Cromwell
+					["description"] = "This boss can be found in The Upper Reaches.",
 				}),
 				crit(17, {		-- Watchers of Death
 					["crs"] = { 153174 },	-- Watchers of Death
+					["description"] = "This boss can be found in Mort'regar.",
 				}),
 				crit(18, {		-- Elder Longbranch
 					["crs"] = { 155251 },	-- Elder Longbranch
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 				crit(19, {		-- Decayspeaker
 					["crs"] = { 155250 },	-- Decayspeaker
+					["description"] = "This boss can be found in Coldheart Interstitia.",
 				}),
 			}),
 			ach(15075, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Infiltrators
