@@ -200,14 +200,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
 		i(193263),	-- Add Keystone Affix: Shrouded
 
-		i(191926),	-- Confounding Ancient Cypher
-		i(191910),	-- Confounding Antique Cypher
-		i(191911),	-- Cosmic Creation Impetus
-		i(191927),	-- Sacred Creation Impetus
 		-- i(191734),	-- Motion Sick Peon's Magical Elixir
 		i(192438),	-- Cache of Fated Treasures (Heroic)
 		i(192437),	-- Cache of Fated Treasures (Normal)
-		i(192466),	-- Puzzling Cartel Dinar
 
 		i(192441),	-- Rhapsodic Pulverizer
 

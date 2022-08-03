@@ -4277,7 +4277,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56512),	--
 				q(56513),	--
 				q(56514),	--
-				q(56524),	--
 				q(56531),	--
 				q(56545),	--
 				q(56546),	--
@@ -4341,7 +4340,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56898),	--
 				q(56902),	--
 				-- 8.2.0.30495
-				q(56967),	--
 				-- 8.2.0.30613
 				q(57012),	--
 				q(57013),	--
@@ -6196,13 +6194,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.5.43057
 				-- 9.2.5.43254
 				-- 9.2.5.43412
-				q(66614),	-- Valinor, the Light of Eons
-				q(66615),	-- Nurgash Muchformed
-				q(66616),	-- Oranomonos the Everbranching
-				q(66617),	-- Mortanis
-				q(66618),	-- Mor'geth
-				q(66619),	-- Antros
-				q(66648),	-- Crossing Fate
 				q(66649),	--
 				q(66650),	--
 				q(66661),	-- It's Just a Coin, What Could it Cost?

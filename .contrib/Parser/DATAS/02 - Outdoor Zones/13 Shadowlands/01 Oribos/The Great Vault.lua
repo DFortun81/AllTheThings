@@ -7,7 +7,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 		o(353484, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
 			["g"] = {
-				i(187219),	-- Attendant's Token of Merit
+				i(187219, {	-- Attendant's Token of Merit
+					["timeline"] = { REMOVED_SLS4 },
+				}),
+				i(199202, {	-- Attendant's Token of Merit
+					["timeline"] = { ADDED_SLS4 },
+				}),
 				inst(1190, {	-- Castle Nathria
 					["timeline"] = { "added 9.0.2", "removed 9.1.0", ADDED_SLS4 },
 					["sym"] = {

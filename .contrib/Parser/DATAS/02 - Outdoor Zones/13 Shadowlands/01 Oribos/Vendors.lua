@@ -2,6 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- SLS4
+
 root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 	m(ORIBOS, {
 		n(VENDORS, {
@@ -417,33 +419,37 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(191302, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Bottled Night Sky
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
 					i(187503, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Bundle of Archived Research
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1931),	-- Cataloged Research
 						},
 					})),
 					i(191300, {	-- Certified Vouchsafe
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["timeline"] = { "added 9.2.0" }
 					}),
 					i(191030, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Cosmic Flux Parcel
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(2009),	-- Cosmic Flux
 						},
 					})),
 					i(191297, {	-- Ephemera-Infused Mesh
 						["cost"] = { { "i", 187219, 6 } },	-- 6x Attendant's Token of Merit
-						["timeline"] = { "added 9.2.0" }
+						["timeline"] = { "added 9.2.0", REMOVED_SLS4 },
+					}),
+					i(199112, {	-- Fated Matter Fractalizer
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
+						["timeline"] = { ADDED_SLS4 },
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { "added 9.1.0" } }, {	-- Korthite Crystal Geode
-						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
@@ -455,11 +461,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					})),
 					i(191303, {	-- Overflowing Chest of Riches
-						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["timeline"] = { "added 9.2.0" }
 					}),
 					i(187707, {	-- Progentior Essentia
-						["cost"] = { { "i", 187219, 3 } },	-- 3x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },	-- 3x Attendant's Token of Merit
 						["timeline"] = { "added 9.2.0" }
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
@@ -484,27 +490,27 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(187221, {	-- Soul Ash Cache
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["timeline"] = { "added 9.1.0" },
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, {	-- Stygic Singularity
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["timeline"] = { "added 9.1.0" },
 						["g"] = {
 							currency(1767),	-- Stygia
 						},
 					}),
 					i(191301, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Treatise on Patterns in the Purpose
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 						["g"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
 					i(191299, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Tribute of the Enlightened
-						["cost"] = { { "i", 187219, 1 } },	-- 1x Attendant's Token of Merit
+						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },	-- 1x Attendant's Token of Merit
 					})),
 				},
 			})),

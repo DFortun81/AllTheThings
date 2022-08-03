@@ -578,9 +578,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 83,
 						}),
@@ -811,9 +810,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 82,
 						}),
@@ -1079,10 +1077,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 84,
 						}),
@@ -1375,10 +1372,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							title(432),	-- Sinbreaker <Name>
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 85,
 						}),
