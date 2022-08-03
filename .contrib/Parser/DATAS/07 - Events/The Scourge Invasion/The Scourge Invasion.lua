@@ -6,7 +6,7 @@ local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION =    i(13444);	-- Major Mana Potion
 
 root("WorldEvents", n(-540, -- The Scourge Invasion
-	applyclassicphase(PHASE_SIX_SCOURGE_INVASION, bubbleDown({ ["timeline"] = { "removed 2.0.1" } }, {
+	applyclassicphase(PHASE_SIX_SCOURGE_INVASION, bubbleDown({ ["timeline"] = { "removed 3.0.1" } }, {
 		["description"] = "The Scourge Invasion was a world event in Patch 1.11 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 		["maps"] = {
 			AZSHARA,
@@ -27,6 +27,108 @@ root("WorldEvents", n(-540, -- The Scourge Invasion
 				})),
 			}),
 			n(QUESTS, {
+				-- Scourge Invasion (Wrath Quests) -- TODO: Move these!
+				applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { DWARF },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12753, {	-- A Desperate Alliance
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { NIGHTELF },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12775, {	-- A Desperate Alliance
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { HUMAN },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12777, {	-- A Desperate Alliance
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { DRAENEI },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12808, {	-- A Desperate Alliance
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { GNOME },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12773, {	-- Darnassus
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { NIGHTELF },
+					["qg"] = 29087,	-- Bishop Lazaril
+					["sourceQuest"] = 12753,	-- A Desperate Alliance
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12783, {	-- Desperate Research
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { TROLL },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12752, {	-- Desperate Research
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { UNDEAD },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12782, {	-- Desperate Research
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { BLOODELF },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12784, {	-- Desperate Research
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { TAUREN },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12811, {	-- Desperate Research
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { ORC },
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12771, {	-- Ironforge (Dwarf)
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { DWARF },
+					["qg"] = 29087,	-- Bishop Lazaril
+					["sourceQuest"] = 12753,	-- A Desperate Alliance
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12809, {	-- Ironforge (Gnome)
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { GNOME },
+					["qg"] = 29087,	-- Bishop Lazaril
+					["sourceQuest"] = 12808,	-- A Desperate Alliance
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12785, {	-- Orgrimmar (Troll)
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { TROLL },
+					["qg"] = 28318,	-- Grand Apothecary Putress
+					["sourceQuest"] = 12783,	-- Desperate Research
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12812, {	-- Orgrimmar (Orc)
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { ORC },
+					["qg"] = 28318,	-- Grand Apothecary Putress
+					["sourceQuest"] = 12811,	-- Desperate Research
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12788, {	-- Silvermoon
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { BLOODELF },
+					["qg"] = 28318,	-- Grand Apothecary Putress
+					["sourceQuest"] = 12782,	-- Desperate Research
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12774, {	-- Stormwind
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { HUMAN },
+					["qg"] = 29087,	-- Bishop Lazaril
+					["sourceQuest"] = 12775,	-- A Desperate Alliance
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12776, {	-- The Exodar
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { DRAENEI },
+					["qg"] = 29087,	-- Bishop Lazaril
+					["sourceQuest"] = 12777,	-- A Desperate Alliance
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12787, {	-- The Undercity
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { UNDEAD },
+					["qg"] = 28318,	-- Grand Apothecary Putress
+					["sourceQuest"] = 12752,	-- Desperate Research
+				})),
+				applyclassicphase(WRATH_PHASE_ONE, q(12786, {	-- Thunder Bluff
+					["timeline"] = { "added 3.0.2", "removed 3.1.0" },
+					["races"] = { TAUREN },
+					["qg"] = 28318,	-- Grand Apothecary Putress
+					["sourceQuest"] = 12784,	-- Desperate Research
+				})),
+			
 				q(9094, {	-- Argent Dawn Gloves
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
