@@ -1259,6 +1259,7 @@ root("HiddenQuestTriggers", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 
 		q(65614),	-- Stay a while and listen with Arbiter Pelagos
 		q(66316),	-- Stay a while and listen with Bolvar(9.2.5)
 		q(66313),	-- Stay a while and listen with Proundmoore
+		q(70704),	-- Tracking quest for Vessel of Profound Possibilities
 	}),
 })));
 
