@@ -60,6 +60,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14769, {	-- Bat!
 			["crs"] = { 161015 },	-- Dredbat Statue
+			["description"] = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
 			["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 				{ 21.7, 50.2, REVENDRETH },
 				{ 25.1, 37.5, REVENDRETH },

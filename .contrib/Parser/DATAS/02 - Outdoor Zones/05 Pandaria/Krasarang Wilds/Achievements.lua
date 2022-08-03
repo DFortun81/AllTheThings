@@ -46,7 +46,7 @@ _.Zones =
 							["coord"] = { 43.7, 92.3, KRASARANG_WILDS },
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
-							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.\nThis chest is personal loot and based on your current Spec, NOT your Loot Spec.",
+							["description"] = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest is personal loot and based on your current spec, NOT your Loot Spec.",
 							["g"] = {
 								i(86122, {	-- Plankwalking Greaves
 									["description"] = "Only lootable while in a Strength DPS Spec.",
@@ -141,7 +141,8 @@ _.Zones =
 					["g"] = {
 						o(213750, {	-- Saurok Stone Tablet
 							["questID"] = 31408,
-							["description"] = "Located in a cave at (71,9)",
+							["coord"] = { 71.0, 9.0, KRASARANG_WILDS },
+							["description"] = "Located at the back of the cave, to the right of the junk pile.",
 							["g"] = {
 								i(86220),	-- Saurok Stone Tablet
 							},
