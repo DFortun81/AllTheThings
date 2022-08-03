@@ -104,8 +104,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					-- Artifact
 					q(40684, {	-- The Tome of Blighted Implements
-						["sourceQuests"] = { 40729 },	-- The New Blood
+						["sourceQuests"] = { 
+								40729,	-- The New Blood 
+								40712,	-- The Power Possessed
+								41156,	-- The Power Possessed
+							},	
 						["provider"] = { "n", 101097 },	-- Calydus
+						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain the breadcrumb quests.",
 						["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
 					}),
 					q(43984, {	-- The Tome Opens Again
@@ -175,14 +180,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							},
 						}),
 						q(40712, {	-- The Power Possessed (Good)
-							["description"] = "Obtainable if you are good to Revil Kost",
+							["description"] = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 						q(41156, {	-- The Power Possessed (Bad)
-							["description"] = "Obtainable if you attack Revil Kost",
+							["description"] = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
@@ -254,8 +259,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Introduction
 					q(40731, {	-- The Heart of the Dreadscar
 						["sourceQuests"] = {
-							40712,	-- The Power Possessed (Good)
-							41156,	-- The Power Possessed (Bad)
 							42125,	-- Dark Whispers
 							43254,	-- Ritual Ruination
 						},

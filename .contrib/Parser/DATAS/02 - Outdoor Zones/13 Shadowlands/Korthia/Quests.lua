@@ -953,6 +953,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
+			q(63965, {	-- Slitherwing Egg Rescue
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["isDaily"] = true,
+				["coord"] = { 61.4, 21.4, KORTHIA },
+		}),
+			q(64104, {	-- Think of the Critters
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["isDaily"] = true,
+				["coord"] = { 61.4, 21.4, KORTHIA },
+		}),
 			--[[ These are only commented out until they are found on live severs // Braghe
 		--	9.1.0 PTR Data
 			q(63785, {	-- Continued Efforts: Seeker's Quorum
@@ -1001,18 +1013,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(63965, {	-- Slitherwing Egg Rescue
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
-			}),
-			q(64104, {	-- Think of the Critters
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
 			}),
 			--]]
 		}),

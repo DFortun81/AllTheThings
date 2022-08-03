@@ -197,6 +197,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
+						["timeline"] = { "added 7.0.1", "removed 8.0.1" },
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
