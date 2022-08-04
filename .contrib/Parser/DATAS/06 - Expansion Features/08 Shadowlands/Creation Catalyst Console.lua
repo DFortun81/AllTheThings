@@ -70,7 +70,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 		["sourceQuest"] = 64842,	-- Flora Frenzy (technically the console was interactible after completing this quest, possibly earlier)
 		["g"] = {
 			d(17, {	-- LFR
-				["description"] = "Items of 249 item level or lower will take the LFR appearance.",
+				["description"] = "Items of 249 item level or lower will take the LFR appearance.\nSeason 4 (speculated): 275 item level or lower.",
 				["g"] = bubbleDown({ ["modID"] = 4 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 4),
@@ -183,7 +183,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(14, {	-- Normal
-				["description"] = "Items between 252 and 262 item level will take the Normal appearance.",
+				["description"] = "Items between 252 and 262 item level will take the Normal appearance.\nSeason 4 (speculated): between item level 278 and 288.",
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 3),
@@ -296,7 +296,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(15, {	-- Heroic
-				["description"] = "Items between 265 and 275 item level will take the Heroic appearance.",
+				["description"] = "Items between 265 and 275 item level will take the Heroic appearance.\nSeason 4 (speculated): between item level 291 and 301.",
 				["g"] = bubbleDown({ ["modID"] = 5 }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 5),
@@ -409,7 +409,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				}),
 			}),
 			d(16, {	-- Mythic
-				["description"] = "Items at 278 item level or above will take the Mythic Appearance.",
+				["description"] = "Items at 278 item level or above will take the Mythic Appearance.\nSeason 4 (speculated): item level 304 and higher.",
 				["g"] = bubbleDown({ ["modID"] = 6  }, {
 					cl(DEATHKNIGHT, {
 						["sym"] = SymRaid(DEATHKNIGHT, 6),
