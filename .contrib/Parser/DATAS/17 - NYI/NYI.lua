@@ -199,8 +199,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
 		i(193263),	-- Add Keystone Affix: Shrouded
-
-		-- i(191734),	-- Motion Sick Peon's Magical Elixir
 		i(192438),	-- Cache of Fated Treasures (Heroic)
 		i(192437),	-- Cache of Fated Treasures (Normal)
 

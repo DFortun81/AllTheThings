@@ -19,6 +19,7 @@ i(174969);	-- Alpaca Saddlebag (Vulpera Backpack)
 
 i(181781);	-- Almost Empty Amontillado Cask
 i(183596);	-- Broken Artifact
+i(191734);	-- Motion Sick Peon's Magical Elixir
 
 -- Tailoring
 i(184480);	-- Lightless Silk Pouch
