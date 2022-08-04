@@ -207,6 +207,17 @@ _.Instances = { tier(LEGION_TIER, {
 					i(124025),	-- Ancient Vrykul Hammer
 				})),
 			}),
+			-- #if AFTER 9.2.5
+			n(VENDORS, {
+				n(188142, {	-- Motion Sick Peon's Soul <Junior Accessibility Advocate>
+					["g"] = {
+						i(191734, {	-- Motion Sick Peon's Magical Elixir
+							["timeline"] = { ADDED_SLS4 },
+						}),
+					},
+				}),
+			}),
+			-- #endif
 		},
 	}),
 })};

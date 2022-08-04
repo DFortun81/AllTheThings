@@ -869,13 +869,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187515),	-- Theotar's Bottomless Teapot
 				i(187433),	-- Windcrystal Chimes
 			}),
+			tier(SL_TIER, 1.5, {
+				i(189534),	-- Add Keystone Affix: Infernal
+				i(187610),	-- Court of Farondis Insignia
+				i(189524),	-- Set Keystone Level: 31
+				i(189525),	-- Set Keystone Level: 32
+				i(189526),	-- Set Keystone Level: 33
+				i(189527),	-- Set Keystone Level: 34
+				i(189528),	-- Set Keystone Level: 35
+			}),
 			tier(SL_TIER, 2.0, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+				i(190938),	-- Add Keystone Affix: Encrypted
 				i(190654),	-- Cache of Sepulcher Treasures
 				i(188796),	-- Cypher Test Item
 				i(190823),	-- Firim's Mysterious Cache
 				i(190383),	-- Progenitor Essentia Lattice
+				i(189546),	-- Set Keystone Map: Tazavesh: So'leah's Gambit
+				i(189545),	-- Set Keystone Map: Tazavesh: Streets of Wonder
 				-- i(190172),	-- Title Reward: Gauntlet Runner
 			}),
 			n(P9xx, {
@@ -905,6 +917,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			tier(SL_TIER, 2.0, {
 				i(188200),	-- Engraved Stone
+				i(191634),	-- Memory of Unity
+				i(191635),	-- Memory of Unity
+				i(191636),	-- Memory of Unity
+				i(191637),	-- Memory of Unity
+				i(191638),	-- Memory of Unity
+				i(191639),	-- Memory of Unity
+				i(191640),	-- Memory of Unity
+				i(191641),	-- Memory of Unity
+				i(191642),	-- Memory of Unity
+				i(191643),	-- Memory of Unity
+				i(191644),	-- Memory of Unity
+				i(191645),	-- Memory of Unity
 				i(185484),	-- Nathrezim Documents
 			}),
 		}),

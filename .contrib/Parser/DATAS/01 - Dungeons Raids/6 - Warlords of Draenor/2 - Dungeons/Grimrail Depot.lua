@@ -168,6 +168,17 @@ _.Instances = { tier(WOD_TIER, {
 				},
 			}),
 			-- #endif
+			-- #if AFTER 9.2.5
+			n(VENDORS, {
+				n(188112, {	-- Motion Sick Peon <Junior Accessibility Advocate>
+					["g"] = {
+						i(191734, {	-- Motion Sick Peon's Magical Elixir
+							["timeline"] = { ADDED_SLS4 },
+						}),
+					},
+				}),
+			}),
+			-- #endif
 		},
 	}),
 })};
