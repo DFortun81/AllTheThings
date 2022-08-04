@@ -192,7 +192,6 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 				q(12616, {	-- Chamber of Secrets
 					["qg"] = 16285,	-- Argent Emissary <The Argent Dawn>
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 70,
 					["groups"] = {
 						i(40354, {	-- Monster Slayer's Kit
