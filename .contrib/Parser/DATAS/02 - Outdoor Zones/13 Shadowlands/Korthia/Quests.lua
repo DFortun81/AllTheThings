@@ -751,6 +751,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186693),	-- Gold Filled Wheelbarrow
 				},
 			}),
+			q(64015, {	-- Into the Meat Grinder
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178805 },	-- Emeni
+				["isDaily"] = true,
+				["coord"] = { 60.1, 27.5, KORTHIA },
+			}),
 			q(64065, {	-- Local Reagents
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -768,6 +774,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178799 },	-- Arios Riftbearer
 				["isDaily"] = true,
 				["coord"] = { 61.5, 23.5, KORTHIA },
+			}),
+			q(63937, {	-- Nasty, Big, Pointy Teeth
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178805 },	-- Emeni
+				["isDaily"] = true,
+				["coord"] = { 59.9, 27.0, KORTHIA },
 			}),
 			q(63776, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -984,18 +996,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179194 },	-- Kleia
 				["isDaily"] = true,
 				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			q(64015, {	-- Into the Meat Grinder
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
-				["coord"] = { 60.1, 27.5, KORTHIA },
-			}),
-			q(63937, {	-- Nasty, Big, Pointy Teeth
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
-				["coord"] = { 59.9, 27.0, KORTHIA },
 			}),
 			q(65146, {	-- Relic Hunter
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
