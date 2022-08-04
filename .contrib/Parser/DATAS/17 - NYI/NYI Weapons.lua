@@ -411,6 +411,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		tier(SL_TIER, {
 			tier(SL_TIER, 2.0, {
 				i(189996),	-- Elegantly Balanced Axe
+				i(188133),	-- Owen Test
 			}),
 		}),
 	}),

@@ -1528,6 +1528,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			filter(MAIL, {
 				tier(SL_TIER, 0.1, {
+					i(183993),	-- Ye Olde Test Chestguard
+					i(183994),	-- Ye Olde Test Chestguard
+					i(183999),	-- Ye Olde Test Chestguard
+					i(184000),	-- Ye Olde Test Chestguard
+					i(184003),	-- Ye Olde Test Chestguard
+					i(184005),	-- Ye Olde Test Chestguard
+					i(184006),	-- Ye Olde Test Chestguard
+					i(184008),	-- Ye Olde Test Chestguard
+					i(184009),	-- Ye Olde Test Chestguard
+					i(184012),	-- Ye Olde Test Chestguard
 					i(178304),	-- unused
 				}),
 				tier(SL_TIER, 2.0, {
@@ -1647,8 +1657,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(SL_TIER, 1.5, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
-				-- tier(SL_TIER, 2.0, {
-				-- }),
 			}),
 			n(LEGENDARIES, {
 				-- Stupid Things?
