@@ -48,8 +48,8 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 49977 },	-- Summons to Orgrimmar
 				["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
 				["coord"] = { 49.8, 75.6, ORGRIMMAR },
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(62568, {	-- Adventurers Wanted: Chromie's Call
 				["isBreadcrumb"] = true,
@@ -695,8 +695,8 @@ root("Zones", m(KALIMDOR, {
 				},
 			}),
 			q(49977, {	-- Summons to Orgrimmar
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(8276,  {	-- Taking Back Silithus
 				["provider"] = { "n", 15188 },	-- Cenarion Emissary Blackhoof
@@ -1079,8 +1079,8 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 50341 },	-- A Recent Discovery
 				["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
 				["coord"] = { 49.8, 75.6, ORGRIMMAR },
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(7660, {	-- Wolf Swapping - Arctic Wolf
 				["qg"] = 3362,	-- Ogunaro Wolfrunner

@@ -22,7 +22,6 @@ q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(392),	-- The Curious Visitor,		TBC: The Curious Visitor,		CLASSIC: The Curious Visitor
 q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the Past
 q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Head of the Beast
-q(399),	-- Humble Beginnings,		TBC: Humble Beginnings,		CLASSIC: Humble Beginnings
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
@@ -172,8 +171,6 @@ q(1439),	-- Search for Tyranis,		TBC: Search for Tyranis,		CLASSIC: Search for T
 q(1441),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1443),	-- <nyi> The Shakedown,		CLASSIC: <nyi> The Shakedown
 q(1447),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1448),	-- In Search of The Temple,		TBC: In Search of The Temple,		CLASSIC: In Search of The Temple
-q(1449),	-- To The Hinterlands,		TBC: To The Hinterlands,		CLASSIC: To The Hinterlands
 q(1458),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1459),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -212,33 +209,23 @@ q(1537),	-- <NYI> Call of Air,		TBC: <NYI> Call of Air,		CLASSIC: <NYI> Call of 
 q(1538),	-- <NYI> Call of Air,		CLASSIC: <NYI> Call of Air
 q(1579),	-- Gaffer Jacks,		TBC: Gaffer Jacks,		CLASSIC: Gaffer Jacks
 q(1580),	-- Electropellers,		TBC: Electropellers,		CLASSIC: Electropellers
-q(1642),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1643),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1644),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1646),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1647),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1648),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1659),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1660),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1661),	-- The Tome of Nobility,		TBC: The Tome of Nobility,		CLASSIC: The Tome of Nobility
 q(1662),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1685),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
-q(1717),	-- Gakin's Summons,		TBC: Gakin's Summons,		CLASSIC: Gakin's Summons
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
 q(1719),	-- The Affray,		TBC: The Affray,		CLASSIC: The Affray
 q(1738),	-- Heartswood,		TBC: Heartswood,		CLASSIC: Heartswood
 q(1778),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1779),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1780),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1781),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1783),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1784),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1785),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1787),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
-q(1788),	-- The Tome of Divinity,		TBC: The Tome of Divinity,		CLASSIC: The Tome of Divinity
 q(1791),	-- The Windwatcher,		TBC: The Windwatcher,		CLASSIC: The Windwatcher
 q(1796),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(1799),	-- Fragments of the Orb of Orahil,		TBC: Fragments of the Orb of Orahil,		CLASSIC: Fragments of the Orb of Orahil
@@ -247,7 +234,6 @@ q(1803),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Ca
 q(1805),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1919),	-- Report to Jennea,		TBC: Report to Jennea,		CLASSIC: Report to Jennea
 q(1920),	-- Investigate the Blue Recluse,		TBC: Investigate the Blue Recluse,		CLASSIC: Investigate the Blue Recluse
-q(1921),	-- Gathering Materials,		TBC: Gathering Materials,		CLASSIC: Gathering Materials
 q(1943),	-- Speak with Deino,		TBC: Speak with Deino,		CLASSIC: Speak with Deino
 q(1963),	-- The Shattered Hand,		TBC: The Shattered Hand,		CLASSIC: The Shattered Hand
 q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladeshadow
@@ -277,10 +263,6 @@ q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's A
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
 q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
 q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
-q(2607),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
-q(2608),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
-q(2609),	-- The Touch of Zanzil,		TBC: The Touch of Zanzil,		CLASSIC: The Touch of Zanzil
-q(2745),	-- Infiltrating the Castle,		TBC: Infiltrating the Castle,		CLASSIC: Infiltrating the Castle
 q(2746),	-- Items of Some Consequence,		TBC: Items of Some Consequence,		CLASSIC: Items of Some Consequence
 q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
@@ -385,8 +367,6 @@ q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!
 q(4421),	-- [DEPRECATED]The Corruption of the Jadefire,		TBC: The Corruption of the Jadefire,		CLASSIC: The Corruption of the Jadefire
 q(4441),	-- [DEPRECATED]Felbound Ancients,		TBC: Felbound Ancients,		CLASSIC: Felbound Ancients
 q(4442),	-- [DEPRECATED]Purified!,		TBC: Purified!,		CLASSIC: Purified!
-q(4485),	-- The Tome of Nobility,		TBC: The Tome of Nobility,		CLASSIC: The Tome of Nobility
-q(4486),	-- The Tome of Nobility,		TBC: The Tome of Nobility,		CLASSIC: The Tome of Nobility
 q(4487),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4488),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4489),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
@@ -561,10 +541,6 @@ q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering th
 q(6130),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
 q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
-q(6182),	-- The First and the Last,		TBC: The First and the Last,		CLASSIC: The First and the Last
-q(6183),	-- Honor the Dead,		TBC: Honor the Dead,		CLASSIC: Honor the Dead
-q(6184),	-- Flint Shadowmore,		TBC: Flint Shadowmore,		CLASSIC: Flint Shadowmore
-q(6185),	-- The Eastern Plagues,		TBC: The Eastern Plagues,		CLASSIC: The Eastern Plagues
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
 q(6542),	-- Report to Kadrak,		TBC: Report to Kadrak,		CLASSIC: Report to Kadrak

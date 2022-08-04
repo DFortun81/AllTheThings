@@ -99,6 +99,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(29339),	-- Short-Supply Reward
 			q(29340),	-- Short-Supply Reward
 			q(29341),	-- Short-Supply Reward
+			q(29158, {	-- The Zandalar Representative (initially) / The Darkspear Representative
+				["timeline"] = { "created 4.1.0" },	-- Never made it out of 4.1.0 test realms
+			}),
 			q(26837, {	-- The Explorers' League Digsite (The Cape of Stranglethorn)
 				["timeline"] = { "created 4.0.3.13277" },	-- was replaced To the Cape! "To the Cape!"
 			}),
