@@ -1160,6 +1160,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
+					["timeline"] = { "removed 4.0.3" },
 					["isBreadcrumb"] = true,
 					["lvl"] = 26,
 				}),
