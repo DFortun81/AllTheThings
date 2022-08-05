@@ -654,6 +654,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["isBreadcrumb"] = true,
 							["lvl"] = 5,
 						}),
 						q(345, {	-- Ink Supplies

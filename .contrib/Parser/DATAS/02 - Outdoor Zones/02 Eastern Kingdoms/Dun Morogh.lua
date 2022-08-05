@@ -1587,6 +1587,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
 					["classes"] = { PRIEST },
+					["isBreadcrumb"] = true,
 					["lvl"] = 5,
 				}),
 				q(25932, {	-- It's Raid Night Every Night
