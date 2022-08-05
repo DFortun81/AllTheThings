@@ -802,6 +802,7 @@ root("HiddenQuestTriggers", {
 	q(43688),	-- Unlocking the Walking in the Shadows quest
 	q(43666),	-- Using Heart of Corruption
 	q(46081),	-- completion of 'Leather to Legendary' (46074)
+	q(44065),	-- Protection chosen as the second artifact weapon
 });
 
 -- These quests never made it in.
