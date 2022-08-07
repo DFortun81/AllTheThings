@@ -98,7 +98,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			})),
 			q(66619, {	-- Antros (Fated)
-				["coord"] = { 48, 5, ZERETH_MORTIS },
 				["creatureID"] = 182466,	-- Antros
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
@@ -127,7 +126,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			})),
 			q(66618, {	-- Mor'geth (Fated)
-				["coord"] = { 69.1, 44.2, THE_MAW },
 				["creatureID"] = 178958,	-- Mor'geth
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
@@ -157,7 +155,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			}),
 			q(66617, {	-- Mortanis (Fated)
-				["coord"] = { 32.1, 67.3, MALDRAXXUS },
 				["creatureID"] = 167525,	-- Mortanis
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
@@ -187,7 +184,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			}),
 			q(66615, {	-- Nurgash Muckfromed (Fated)
-				["coord"] = { 27.2, 14.9, REVENDRETH },
 				["creatureID"] = 167526,	-- Nurgash Muckformed
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
@@ -217,7 +213,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			}),
 			q(66616, {	-- Oranomonos the Everbranching (Fated)
-				["coord"] = { 20.2, 63.6, ARDENWEALD },
 				["creatureID"] = 167527,	-- Oranomonos the Everbranching
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
@@ -247,7 +242,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 				}),
 			}),
 			q(66614, {	-- Valinor, the Light of Eons (Fated)
-				["coord"] = { 26.3, 22.4, BASTION },
 				["creatureID"] = 167524,	-- Valinor, the Light of Eons
 				["timeline"] = { ADDED_SLS4 },
 				["sym"] = {
