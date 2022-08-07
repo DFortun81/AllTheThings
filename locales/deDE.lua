@@ -56,7 +56,7 @@ local L = app.L;
 	--TODO: L.LEGION_TIER_DESC = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
 	--TODO: L.BFA_TIER_DESC = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
 	--TODO: L.SL_TIER_DESC = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
-	L.DF_TIER_DESC = "Dragonflight ist die neunte Erweiterung. Die Drachenschwärme von Azeroth sind zurück und folgen dem Ruf, die Dracheninseln, ihre angestammte Heimat, zu verteidigen. Erfüllt von elementarer Macht und Azeroths Lebensenergie erwachen die Inseln erneut, und es liegt an euch, ihre urzeitlichen Wunder zu erforschen und lang vergessene Geheimnisse ans Licht zu bringen.";	--TODO: First sentence
+	L.DF_TIER_DESC = "Dragonflight ist die neunte Erweiterung. Die Drachenschwärme von Azeroth sind zurück und folgen dem Ruf, die Dracheninseln, ihre angestammte Heimat, zu verteidigen. Erfüllt von elementarer Macht und Azeroths Lebensenergie erwachen die Inseln erneut, und es liegt an euch, ihre urzeitlichen Wunder zu erforschen und lang vergessene Geheimnisse ans Licht zu bringen.";
 	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 	--TODO: L.SHARED_APPEARANCES_LABEL = "Shared Appearances";
 	--TODO: L.SHARED_APPEARANCES_LABEL_DESC = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.";
@@ -353,6 +353,7 @@ local L = app.L;
 		--TODO: L.DYNAMIC_CATEGORY_NESTED = "Nested";
 		--TODO: L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requires Reload|r";
+		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 
 	-- Account Wide Checkboxes
 		--TODO: L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -393,7 +394,6 @@ local L = app.L;
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
 		--TODO: L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
 		--TODO: L.TOOLTIP_MOD_LABEL = "Modifier";
-		--TODO: L.TOOLTIP_MOD_NONE = "None";
 		--TODO: L.TOOLTIP_MOD_SHIFT = "Shift";
 		--TODO: L.TOOLTIP_MOD_CTRL = "Ctrl";
 		--TODO: L.TOOLTIP_MOD_ALT = "Alt";
@@ -409,7 +409,9 @@ local L = app.L;
 		--TODO: L.LORE_CHECKBOX = "Lore";
 		--TODO: L.LORE_CHECKBOX_TOOLTIP = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
 		--TODO: L.KNOWN_BY_CHECKBOX = "Known By";
-		--TODO: L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.";
+		--TODO: L.KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
+		--TODO: L.COMPLETED_BY_CHECKBOX = "Completed By";
+		--TODO: L.COMPLETED_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
 		--TODO: L.SHOW_MODELS_CHECKBOX = "Model Preview";
 		--TODO: L.SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 		--TODO: L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
@@ -768,7 +770,8 @@ for key,value in pairs({
 		[-542] = "Die Öffnung des Dunklen Portals",					-- The Opening of the Dark Portal
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "Pass zum Dunklen Portal",							-- Dark Portal Pass
-		[-580] = "The Great Push: Saison 2",						-- The Great Push: Season 2
+		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-581] = "The Great Push: Saison 2",						-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)
@@ -824,9 +827,8 @@ for key,value in pairs({
 		[-913] = "Peiniger von Torghast",							-- Tormentors of Torghast
 		[-977] = "Maelie die Wanderin",								-- Maelie the Wanderer
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		-- SL Maldraxxus/Necrolord
-			[-921] = "Sanktumaufwertungen",							-- Sanctum Upgrades (Necrolord)
-			[-924] = "Reisenetzwerk",								-- Transport Network (Necrolord)
+		[-921] = "Sanktumaufwertungen",								-- Sanctum Upgrades
+		[-924] = "Reisenetzwerk",									-- Transport Network
 		-- SL Ardenweald/Night Fae
 			--TODO: [-936] = "Soulshape Forms",						-- Soulshape Forms (Night Fae)
 			[-1002] = "Pflichtbewusster Geist",						-- Dutiful Spirit
@@ -938,17 +940,27 @@ for key,value in pairs({
 	[261] = "Beschädigte Kiste",	-- Damaged Crate
 	[269] = "Bewachtes Fass mit Donnerbräu Lager",	-- Guarded Thunder Ale Barrel
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
+	[287] = "Buchmacher Herods Aufzeichnungen",	-- Bookie Herod's Records
+	[288] = "Buchmacher Herods Geldkassette",	-- Bookie Herod's Strongbox
 	[711] = "GESUCHT!",	-- Wanted!
+	[1557] = "Lilliths Esstisch",	-- Lillith's Dinner Table
 	[1561] = "Versiegelte Kiste",	-- Sealed Crate
 	[1585] = "Sprengladung",	-- Explosive Charge
+	[1586] = "Kiste mit Kerzen",	-- Crate of Candles
 	[1593] = "Boot mit Leichen",	-- Corpse Laden Boat
 	[1599] = "Flaches Grab",	-- Shallow Grave
 	[1609] = "Katapult des Drachenmals",	-- Dragonmaw Catapult
 	[1627] = "Kiste aus Dalaran",	-- Dalaran Crate
+	[1738] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "Dokumente des Syndikats",	-- Syndicate Documents
 	[1763] = "GESUCHT",	-- WANTED
+	[1765] = "Abgenutzte Holztruhe",	-- Worn Wooden Chest
+	[2008] = "Gefährlich!",	-- Dangerous!
 	[2059] = "Eine Zwergenleiche",	-- A Dwarven Corpse
 	[2076] = "Blubbernder Kessel",	-- Bubbling Cauldron
 	[2083] = "Blutsegelkorrespondenz",	-- Bloodsail Correspondence
+	[2289] = "Unbrauchbares Rettungsboot",	-- Ruined Lifeboat
 	[2553] = "Eine glitschige Rolle",	-- A Soggy Scroll
 	[2555] = "Modrige Rolle",	-- Musty Scroll
 	[2652] = "Ebenezer Rostlockes Leichnam",	-- Ebenezer Rustlocke's Corpse
@@ -1017,6 +1029,9 @@ for key,value in pairs({
 	[142696] = "Matrix-Prägograph 3005-D",	-- Matrix Punchograph 3005-D
 	[142702] = "Giftflasche",	-- Venom Bottle
 	[144063] = "Monolith von Equinex",	-- Equinex Monolith
+	[144066] = "Erster Käfig der Bleichborken",	-- First Witherbark Cage
+	[144067] = "Zweiter Käfig der Bleichborken",	-- Second Witherbark Cage
+	[144068] = "Dritter Käfig der Bleichborken",	-- Third Witherbark Cage
 	[148502] = "|cFFFFFFFFSchritt 1:|r Seite 9",	-- |cFFFFFFFFStep 1:|r Page 9
 	[148504] = "Ein verdächtiger Grabstein",	-- A Conspicuous Gravestone
 	[149036] = "Marvons Truhe",	-- Marvon's Chest
@@ -1044,6 +1059,8 @@ for key,value in pairs({
 	[175320] = "GESUCHT: Gurgelbacke!",	-- WANTED: Murkdeep!
 	[175524] = "Geheimnisvoller roter Kristall",	-- Mysterious Red Crystal
 	[175894] = "Janices Paket",	-- Janice's Parcel
+	[175924] = "Verschlossener Schrank",	-- Locked Cabinet
+	[175925] = "Plumpsklo",	-- Outhouse
 	[175926] = "Frau Dalsons Tagebuch",	-- Mrs. Dalson's Diary
 	[175965] = "Frostraunens Balsamierungsflüssigkeit",	-- Frostwhisper's Embalming Fluid
 	[176090] = "Menschliche Überreste",	-- Human Remains
@@ -1062,6 +1079,7 @@ for key,value in pairs({
 	[176631] = "Menethils Geschenk",	-- Menethil's Gift
 	[177289] = "Geißelkessel",	-- Scourge Cauldron
 	[177491] = "Termitenfass",	-- Termite Barrel
+	[177667] = "Zerrissene Rolle",	-- Torn Scroll
 	[177787] = "Rackmores Logbuch",	-- Rackmore's Log
 	[177904] = "Steckbrief: Besseleth",	-- Wanted Poster: Besseleth
 	[177964] = "Tiefenstein",	-- Fathom Stone
@@ -1075,6 +1093,7 @@ for key,value in pairs({
 	[179697] = "Arenaschatztruhe",	-- Arena Treasure Chest
 	[179827] = "Gesucht/Vermisst/Verloren & Gefunden",	-- Wanted/Missing/Lost & Found
 	[179832] = "Verziertes Kissen von Kissenquetscher",	-- Pillaclencher's Ornate Pillow
+	[179913] = "Zu den Waffen!",	-- Call to Arms!
 	[180229] = "Verwunschener Hoodoohaufen",	-- Jinxed Hoodoo Pile
 	[180248] = "Ein Schwarm Leckerfische",	-- School of Tastyfish
 	--TODO: [180327] = "Brazier of Madness",	-- Brazier of Madness
@@ -1107,6 +1126,8 @@ for key,value in pairs({
 	[181150] = "Staubiges Tagebuch",	-- Dusty Journal
 	[181153] = "Gesucht: Kel'gash der Boshafte",	-- Wanted Poster: Kel'gash the Wicked
 	[181638] = "Steckbrief",	-- Wanted Poster
+	[181643] = "Federbarts Überreste",	-- Featherbeard's Remains
+	[181649] = "Federbarts Tagebuch",	-- Featherbeard's Journal
 	[181672] = "Weidenmann",	-- Wickerman Effigy
 	[181698] = "Leerstein",	-- Voidstone
 	[181748] = "Blutkristall",	-- Blood Crystal
@@ -2674,6 +2695,8 @@ for key,value in pairs({
 	[327592] = "Verzaubertes Schloss",	-- Enchanted Lock
 	[327596] = "Zerbrochener abyssischer Fokus",	-- Broken Abyssal Focus
 	[327597] = "Alte rostige Truhe",	-- Old Rusty Chest
+	[327650] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
+	[327652] = "Kiste mit Kriegsvorräten",	-- War Supply Chest
 	[327669] = "Maßvoller Bierlementar",	-- Contained Alemental
 	[328343] = "Düsterbräuzahnrad",	-- Direbrew Cog
 	[328413] = "Totem der Ho-zen",	-- Hozen Totem
@@ -2699,6 +2722,7 @@ for key,value in pairs({
 	[332576] = "Kristallkatzenstatuette",	-- Crystalline Cat Figurine
 	[332704] = "Verderbte Truhe",	-- Corrupted Chest
 	[334216] = "Truhe des Schwarzen Imperiums",	-- Black Empire Cache
+	[335655] = "Oonars Arm",	-- Oonar's Arm
 	[336415] = "Weggeworfene Schriftrolle",	-- Discarded Scroll
 	[337237] = "Verlorene Schatztruhe",	-- Lost Vault
 	[337241] = "Verstaute Ausrüstung",	-- Stashed Equipment
@@ -2863,6 +2887,9 @@ for key,value in pairs({
 	[354856] = "Schleimbedeckte Kiste",	-- Slime-Coated Crate
 	[354911] = "Aufgequollener Animasamen",	-- Swollen Anima Seed
 	[355000] = "Truhe der Nacht",	-- Cache of the Night
+	[355019] = "Rohe Traumseide",	-- Raw Dream Silk
+	[355020] = "Verzauberter Zweig",	-- Enchanted Bough
+	[355021] = "Faeornament",	-- Fae Ornament
 	[355035] = "Runenlade der Auserwählten",	-- Treasure: House of the Chosen
 	[355037] = "Runengebundene Lade",	-- Runebound Coffer
 	[355038] = "Runengebundene Lade",	-- Runebound Coffer
@@ -2884,6 +2911,8 @@ for key,value in pairs({
 	[355880] = "Das Necro-mjam-nicon",	-- The Necronom-i-nom
 	[355886] = "Seuchensturztruhe",	-- Plaguefallen Chest
 	[355947] = "Glutherns Vorrat",	-- Glutharn's Stash
+	[355980] = "Truhe des Ritualisten",	-- Ritualist's Cache
+	[356535] = "Schatz des Runensprechers",	-- Runespeaker's Trove
 	[356555] = "Eurydeas Halskette",	-- Eurydea's Necklace
 	[356693] = "Baronin Vashjs extravaganter Tribut",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "Alexandros Mograines extravaganter Tribut",	-- Alexandros Mograine's Extravagant Tribute
