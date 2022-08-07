@@ -507,7 +507,9 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbl
 	}),
 }));
 MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
-	r(110396),	-- Blacksmithing (Zen Master)
+	r(110396, {	-- Blacksmithing (Zen Master)
+		["collectible"] = false,
+	}),
 	n(ARMOR, {
 		r(122583),	-- Ghost-Forged Belt
 		r(122638),	-- Ghost-Forged Blade
@@ -586,7 +588,7 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at the The Forge for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
-		r(158737, {	-- Enchanting (Draenor Master)
+		r(158737, {	-- Blacksmithing (Draenor Master)
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
 		}),
