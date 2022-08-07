@@ -2016,18 +2016,6 @@ profession(164, {	-- Blacksmithing
 					}
 				},
 				{
-					["name"] = "Reagents",
-					["categoryID"] = 429,
-					["hash"] = "categoryID429",
-					["g"] = {
-						{
-							["name"] = "Demonsteel Bar",
-							["hash"] = "recipeID184442",
-							["recipeID"] = 184442
-						}
-					}
-				},
-				{
 					["name"] = "Relics",
 					["categoryID"] = 488,
 					["hash"] = "categoryID488",
@@ -2059,158 +2047,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 427,
 					["hash"] = "categoryID427",
 					["g"] = {
-						{
-							["name"] = "Demonsteel Armguards",
-							["hash"] = "recipeID182944",
-							["nextRecipeID"] = 182974,
-							["recipeID"] = 182944
-						},
-						{
-							["name"] = "Demonsteel Armguards",
-							["hash"] = "recipeID182974",
-							["nextRecipeID"] = 182982,
-							["previousRecipeID"] = 182944,
-							["recipeID"] = 182974
-						},
-						{
-							["name"] = "Demonsteel Armguards",
-							["hash"] = "recipeID182982",
-							["previousRecipeID"] = 182974,
-							["recipeID"] = 182982
-						},
-						{
-							["name"] = "Demonsteel Boots",
-							["hash"] = "recipeID182950",
-							["nextRecipeID"] = 182980,
-							["recipeID"] = 182950
-						},
-						{
-							["name"] = "Demonsteel Boots",
-							["hash"] = "recipeID182980",
-							["nextRecipeID"] = 182988,
-							["previousRecipeID"] = 182950,
-							["recipeID"] = 182980
-						},
-						{
-							["name"] = "Demonsteel Boots",
-							["hash"] = "recipeID182988",
-							["previousRecipeID"] = 182980,
-							["recipeID"] = 182988
-						},
-						{
-							["name"] = "Demonsteel Breastplate",
-							["hash"] = "recipeID182951",
-							["nextRecipeID"] = 182981,
-							["recipeID"] = 182951
-						},
-						{
-							["name"] = "Demonsteel Breastplate",
-							["hash"] = "recipeID182981",
-							["nextRecipeID"] = 182989,
-							["previousRecipeID"] = 182951,
-							["recipeID"] = 182981
-						},
-						{
-							["name"] = "Demonsteel Breastplate",
-							["hash"] = "recipeID182989",
-							["previousRecipeID"] = 182981,
-							["recipeID"] = 182989
-						},
-						{
-							["name"] = "Demonsteel Gauntlets",
-							["hash"] = "recipeID182949",
-							["nextRecipeID"] = 182979,
-							["recipeID"] = 182949
-						},
-						{
-							["name"] = "Demonsteel Gauntlets",
-							["hash"] = "recipeID182979",
-							["nextRecipeID"] = 182987,
-							["previousRecipeID"] = 182949,
-							["recipeID"] = 182979
-						},
-						{
-							["name"] = "Demonsteel Gauntlets",
-							["hash"] = "recipeID182987",
-							["previousRecipeID"] = 182979,
-							["recipeID"] = 182987
-						},
-						{
-							["name"] = "Demonsteel Greaves",
-							["hash"] = "recipeID182947",
-							["nextRecipeID"] = 182977,
-							["recipeID"] = 182947
-						},
-						{
-							["name"] = "Demonsteel Greaves",
-							["hash"] = "recipeID182977",
-							["nextRecipeID"] = 182985,
-							["previousRecipeID"] = 182947,
-							["recipeID"] = 182977
-						},
-						{
-							["name"] = "Demonsteel Greaves",
-							["hash"] = "recipeID182985",
-							["previousRecipeID"] = 182977,
-							["recipeID"] = 182985
-						},
-						{
-							["name"] = "Demonsteel Helm",
-							["hash"] = "recipeID182948",
-							["nextRecipeID"] = 182978,
-							["recipeID"] = 182948
-						},
-						{
-							["name"] = "Demonsteel Helm",
-							["hash"] = "recipeID182978",
-							["nextRecipeID"] = 182986,
-							["previousRecipeID"] = 182948,
-							["recipeID"] = 182978
-						},
-						{
-							["name"] = "Demonsteel Helm",
-							["hash"] = "recipeID182986",
-							["previousRecipeID"] = 182978,
-							["recipeID"] = 182986
-						},
-						{
-							["name"] = "Demonsteel Pauldrons",
-							["hash"] = "recipeID182946",
-							["nextRecipeID"] = 182976,
-							["recipeID"] = 182946
-						},
-						{
-							["name"] = "Demonsteel Pauldrons",
-							["hash"] = "recipeID182976",
-							["nextRecipeID"] = 182984,
-							["previousRecipeID"] = 182946,
-							["recipeID"] = 182976
-						},
-						{
-							["name"] = "Demonsteel Pauldrons",
-							["hash"] = "recipeID182984",
-							["previousRecipeID"] = 182976,
-							["recipeID"] = 182984
-						},
-						{
-							["name"] = "Demonsteel Waistguard",
-							["hash"] = "recipeID182945",
-							["nextRecipeID"] = 182975,
-							["recipeID"] = 182945
-						},
-						{
-							["name"] = "Demonsteel Waistguard",
-							["hash"] = "recipeID182975",
-							["nextRecipeID"] = 182983,
-							["previousRecipeID"] = 182945,
-							["recipeID"] = 182975
-						},
-						{
-							["name"] = "Demonsteel Waistguard",
-							["hash"] = "recipeID182983",
-							["previousRecipeID"] = 182975,
-							["recipeID"] = 182983
-						},
 						{
 							["name"] = "Empyrial Breastplate",
 							["hash"] = "recipeID247710",
@@ -2394,11 +2230,6 @@ profession(164, {	-- Blacksmithing
 					["categoryID"] = 428,
 					["hash"] = "categoryID428",
 					["g"] = {
-						{
-							["name"] = "Demonsteel Stirrups",
-							["hash"] = "recipeID209564",
-							["recipeID"] = 209564
-						},
 						{
 							["name"] = "Fel Core Hound Harness",
 							["hash"] = "recipeID213916",

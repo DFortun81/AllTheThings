@@ -472,6 +472,370 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				},
 			}),
 		})),
+		prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
+			q(38499, {	-- Strange New Ores
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(195097, {	-- Blacksmithing (Legion Master)
+						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
+						["collectible"] = false,
+					}),
+					r(264446, {["timeline"]={"added 8.0.1"}}),	-- Legion Blacksmithing
+				},
+			}),
+			q(39681, {	-- The Properties of Leystone
+				["sourceQuest"] = 38499,	-- Strange New Ores
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(182928),	-- Leystone Armguards [Rank 1] (RECIPE!)
+					r(182929),	-- Leystone Waistguard [Rank 1] (RECIPE!)
+				},
+			}),
+			q(38502, {	-- The Methods of the Nightfallen
+				["sourceQuest"] = 39681,	-- The Properties of Leystone
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+			}),
+			q(38501, {	-- Hatecoil Hammerwork
+				["sourceQuest"] = 39681,	-- The Properties of Leystone
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(182935),	-- Leystone Breastplate [Rank 1] (RECIPE!)
+					r(182930),	-- Leystone Pauldrons [Rank 1] (RECIPE!)
+				},
+			}),
+			q(38505, {	-- Engineers: Not COMPLETELY Useless
+				["sourceQuests"] = {
+					38501,	-- Hatecoil Hammerwork
+					38502,	-- The Methods of the Nightfallen
+				},
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+			}),
+			q(38506, {	-- Chicken Scratch
+				["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
+				["provider"] = { "n", 92194 },	-- Timofey Oshenko
+				["coord"] = { 38.4, 27.4, LEGION_DALARAN },
+			}),
+			q(38507, {	-- Secrets of Leysmithing
+				["sourceQuest"] = 38506,	-- Chicken Scratch
+				["provider"] = { "n", 92195 },	-- Professor Pallin
+				["coord"] = { 41.6, 37.2, LEGION_DALARAN },
+			}),
+			q(38515, {	-- Nature Provides
+				["sourceQuest"] = 38507,	-- Secrets of Leysmithing
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["cost"] = { { "i", 124103,	 10 }, },	-- 10xFoxflower
+			}),
+			q(38500, {	-- Leysmithing Mastery
+				["sourceQuest"] = 38515,	-- Nature Provides
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(182934),	-- Leystone Boots [Rank 1] (RECIPE!)
+					r(182933),	-- Leystone Gauntlets [Rank 1] (RECIPE!)
+					r(182931),	-- Leystone Greaves [Rank 1] (RECIPE!)
+					r(182932),	-- Leystone Helm [Rank 1] (RECIPE!)
+					r(183562, {["u"]=TRAINING}),	-- Handcrafted Leystone Gauntlets
+					r(183280, {["u"]=TRAINING}),	-- Heated Leystone Bar
+					r(183279, {["u"]=TRAINING}),	-- Leystone Bar
+					r(183281, {["u"]=TRAINING}),	-- Leystone Cuffplate
+					r(183283, {["u"]=TRAINING}),	-- Leystone Fingerguard
+				},
+			}),
+			q(38563, {	-- Flower-Pickers and Potion-Quaffers
+				["sourceQuest"] = 38500,	-- Leysmithing Mastery
+				["provider"] = { "n", 97261 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+			}),
+			q(38513, {	-- The Highmountain Smiths
+				["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["isBreadcrumb"] = true,
+			}),
+			q(38514, {	-- You Are Not Worthy
+				["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["cost"] = {
+					{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
+				},
+			}),
+			q(39699, {	-- Ironhorn Leysmithing
+				["sourceQuests"] = { 38514 },	-- You Are Not Worthy
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["g"] = {
+					r(184216, {["u"]=TRAINING}),	-- Large Heated Scrap Metal
+					r(184215, {["u"]=TRAINING}),	-- Medium Heated Scrap Metal
+					r(184214, {["u"]=TRAINING}),	-- Small Heated Scrap Metal
+					r(184220, {["u"]=TRAINING}),	-- Scrapmetal Cuffplate
+					r(184217, {["u"]=TRAINING}),	-- Scrapmetal Fingerplates
+					r(184219, {["u"]=TRAINING}),	-- Scrapmetal Handguard
+					r(184218, {["u"]=TRAINING}),	-- Scrapmetal Palmplate
+					i(123933),	-- Recipe: Leystone Gauntlets [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38519, {	-- Grayheft
+				["sourceQuests"] = { 39699 },	-- Ironhorn Leysmithing
+				["provider"] = { "n", 92245 },	-- Thala Steeltotem
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["g"] = {
+					r(182967),	-- Leystone Gauntlets [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38518, {	-- From One Master to Another
+				["sourceQuests"] = { 38519 },	-- Grayheft
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["isBreadcrumb"] = true,
+			}),
+			q(38522, {	-- Not Just Weapons and Armor
+				["sourceQuest"] = 38518,	-- From One Master to Another
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(184309, {["u"]=TRAINING}),	-- Hard Leystone Bar
+					r(184313, {["u"]=TRAINING}),	-- Hard Leystone Ingots
+					r(184315, {["u"]=TRAINING}),	-- Hard Leystone Nail
+					r(184314, {["u"]=TRAINING}),	-- Heated Hard Leystone Ingot
+					r(184310, {["u"]=TRAINING}),	-- Leystone Shards
+					r(184308, {["u"]=TRAINING}),	-- Leystone Slag
+					r(184312, {["u"]=TRAINING}),	-- Lumps of Leystone Slag
+				},
+			}),
+			q(38523, {	-- Leystone Hoofplates
+				["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(182999),	-- Leystone Hoofplates (RECIPE!)
+				},
+			}),
+			q(39702, {	-- Legend of Black Rook Hold
+				["sourceQuest"] = 38523,	-- Leystone Hoofplates
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["isBreadcrumb"] = true,
+			}),
+			q(39680, {	-- Between the Hammer...
+				["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
+				["provider"] = { "n", 96763 },	-- Saris Swifthammer
+				["coord"] = { 40.0, 54.8, VALSHARAH },
+				["groups"] = {
+					i(123929),	-- Recipe: Leystone Waistguard [Rank 2] (RECIPE!)
+				},
+			}),
+			q(39726, {	-- ...And the Anvil
+				["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
+				["provider"] = { "n", 96763 },	-- Saris Swifthammer
+				["coord"] = { 40.0, 54.8, VALSHARAH },
+			}),
+			q(39729, {	-- The Knowledge of Black Rook
+				["sourceQuests"] = {
+					39680,	-- Between the Hammer...
+					39726,	--  ...And the Anvil
+				},
+				["provider"] = { "n", 96763 },	-- Saris Swifthammer
+				["coord"] = { 40.0, 54.8, VALSHARAH },
+				["isBreadcrumb"] = true,
+			}),
+			q(38564, {	-- A Sweet Bargain
+				["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+			}),
+			q(44449, {	-- Advanced Quenching
+				["sourceQuest"] = 38564,	-- A Sweet Bargain
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(182969),	-- Leystone Breastplate [Rank 2] (RECIPE!)
+					r(184184, {["u"]=TRAINING}),	-- Dull Hard Leystone Armguards
+					r(184185, {["u"]=TRAINING}),	-- Hard Leystone Armguards
+					r(184182, {["u"]=TRAINING}),	-- Hard Leystone Bar
+					r(184183, {["u"]=TRAINING}),	-- Heated Hard Leystone Bar
+					r(184181, {["u"]=TRAINING}),	-- Leystone Slag
+				},
+			}),
+			q(38524, {	-- Felsmith Nal'ryssa
+				["sourceQuest"] = 44449,	-- Advanced Quenching
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["isBreadcrumb"] = true,
+			}),
+			q(38525, {	-- Part of the Team
+				["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+				["coord"] = { 30.0, 53.4, SURAMAR },
+			}),
+			q(38526, {	-- Smith Under Fire
+				["sourceQuest"] = 38525,	-- Part of the Team
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+				["coord"] = { 30.0, 53.4, SURAMAR },
+				["g"] = {
+					r(182968),	-- Leystone Boots [Rank 2] (RECIPE!)
+					r(184344, {["u"]=TRAINING}),	-- Handmade Leystone Boots
+					r(184339, {["u"]=TRAINING}),	-- Leystone Footguard
+					r(184338, {["u"]=TRAINING}),	-- Leystone Heelguard
+					r(184337, {["u"]=TRAINING}),	-- Leystone Shinplate
+					r(184340, {["u"]=TRAINING}),	-- Leystone Soleplate
+					r(184336, {["u"]=TRAINING}),	-- Red-Hot Leystone Bar
+				},
+			}),
+			q(38527, {	-- Nal'ryssa's Technique
+				["sourceQuest"] = 38526,	-- Smith Under Fire
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+				["coord"] = { 30.0, 53.4, SURAMAR },
+				["cost"] = {
+					{ "i", 123918, 60 },	-- 60xLeystone Ore
+					{ "i", 123919, 60 },	-- 60xFelslate
+				},
+			}),
+			q(38528, {	-- Leystone's Potential
+				["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+				["coord"] = { 30.0, 53.4, SURAMAR },
+				["g"] = {
+					r(182962),	-- Leystone Armguards [Rank 2] (RECIPE!)
+					r(184405, {["u"]=TRAINING}),	-- Brimstone-Covered Armguards
+					r(184407, {["u"]=TRAINING}),	-- Brimstone-Crusted Armguards
+					r(184403, {["u"]=TRAINING}),	-- Engraved Leystone Armguards
+					r(184408, {["u"]=TRAINING}),	-- Masterwork Leystone Armguards
+					r(184404, {["u"]=TRAINING}),	-- Molten Brimstone
+				},
+			}),
+			q(38530, {	-- The Firmament Stone
+				["sourceQuest"] = 38528,	-- Leystone's Potential
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+				["coord"] = { 30.0, 53.4, SURAMAR },
+				["isBreadcrumb"] = true,
+			}),
+			q(38531, {	-- Leystone Mastery
+				["sourceQuest"] = 38530,	-- The Firmament Stone
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["cost"] = {
+					{ "i", 123898, 1 },	-- 1xLeystone Armguards
+					{ "i", 123892, 1 },	-- 1xLeystone Boots
+					{ "i", 123891, 1 },	-- 1xLeystone Breastplate
+					{ "i", 123893, 1 },	-- 1xLeystone Gauntlets
+					{ "i", 123895, 1 },	-- 1xLeystone Greaves
+					{ "i", 123894, 1 },	-- 1xLeystone Helm
+					{ "i", 123896, 1 },	-- 1xLeystone Pauldrons
+					{ "i", 123897, 1 },	-- 1xLeystone Waistguard
+					{ "i", 123898, 1 },	-- 1xLeystone Armguards
+					{ "i", 123898, 1 },	-- 1xLeystone Armguards
+				},
+				["g"] = {
+					r(182966),	-- Leystone Helm [Rank 2] (RECIPE!)
+					r(182964),	-- Leystone Pauldrons [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38532, {	-- Maw of Souls: Hammered By The Storm
+				["description"] = "Remember to loot Heyla to obtain Terrorspike.",
+				["sourceQuests"] = { 38530 },	-- The Firmament Stone
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
+				["maps"] = { 706, 707, 708 },	-- Maw of Souls
+				["g"] = {
+					i(136696),	-- Recipe: Terrorspike (RECIPE!)
+				},
+			}),
+			q(38559, {	-- Worthy of the Stone
+				["sourceQuests"] = {
+					38531,	-- Leystone Mastery
+					38532,	-- Maw of Souls: Hammered By The Storm
+				},
+				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
+				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN }
+			}),
+			q(38833, {	-- The Art of Demonsteel
+				["sourceQuests"] = { 38559 },	-- Worthy of the Stone
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					r(184442),	-- Demonsteel Bar
+				},
+			}),
+			q(38533, {	-- Tribal Knowledge
+				["sourceQuests"] = { 38833 },	-- The Art of Demonsteel
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123920),	-- Recipe: Demonsteel Armguards [Rank 1] (RECIPE!)
+				},
+			}),
+			q(38534, {	-- Demonsteel Armguards
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123940),	-- Recipe: Demonsteel Armguards [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38538, {	-- Demonsteel Boots
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123946),	-- Recipe: Demonsteel Boots [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38542, {	-- Demonsteel Breastplate
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123947),	-- Recipe: Demonsteel Breastplate [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38539, {	-- Demonsteel Gauntlets
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123945),	-- Recipe: Demonsteel Gauntlets [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38541, {	-- Demonsteel Greaves
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123943),	-- Recipe: Demonsteel Greaves [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38540, {	-- Demonsteel Helm
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123944),	-- Recipe: Demonsteel Helm [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38537, {	-- Demonsteel Pauldrons
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123942),	-- Recipe: Demonsteel Pauldrons [Rank 2] (RECIPE!)
+				},
+			}),
+			q(38536, {	-- Demonsteel Waistguard
+				["description"] = "Create one Rank 1 of this item.",
+				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
+				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["g"] = {
+					i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2] (RECIPE!)
+				},
+			}),
+		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(39874, {	-- Some Enchanted Evening
 				["provider"] = { "n", 93531 },	-- Enchanter Nalthanis

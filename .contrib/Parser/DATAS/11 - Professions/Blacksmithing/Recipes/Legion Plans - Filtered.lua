@@ -4,14 +4,6 @@ profession(BLACKSMITHING, {
 		{	-- Legion Plans
 			["categoryID"] = 426--[[Legion Plans]],
 			["g"] = {
-				{	-- Reagents
-					["categoryID"] = 429--[[Reagents]],
-					["g"] = {
-						{	-- Demonsteel Bar
-							["recipeID"] = 184442--[[Demonsteel Bar]]
-						}
-					}
-				},
 				{	-- Relics
 					["categoryID"] = 488--[[Relics]],
 					["g"] = {
@@ -43,79 +35,6 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Empyrial Breastplate [Rank 3]
 							["recipeID"] = 247714--[[Empyrial Breastplate]]
-						},
-						{	-- Demonsteel Armguards [Rank 3]
-							["recipeID"] = 182982--[[Demonsteel Armguards]]
-						},
-						{	-- Demonsteel Boots [Rank 3]
-							["recipeID"] = 182988--[[Demonsteel Boots]]
-						},
-						{	-- Demonsteel Breastplate [Rank 3]
-							["recipeID"] = 182989--[[Demonsteel Breastplate]]
-						},
-						{	-- Demonsteel Gauntlets [Rank 3]
-							["recipeID"] = 182987--[[Demonsteel Gauntlets]]
-						},
-						{	-- Demonsteel Greaves [Rank 3]
-							["recipeID"] = 182985--[[Demonsteel Greaves]]
-						},
-						{	-- Demonsteel Helm [Rank 3]
-							["recipeID"] = 182986--[[Demonsteel Helm]]
-						},
-						{	-- Demonsteel Pauldrons [Rank 3]
-							["recipeID"] = 182984,
-							["u"] = REMOVED_FROM_GAME,	-- rank 3 used to drop from RBG wins but not available after Legion
-						},
-						{	-- Demonsteel Waistguard [Rank 3]
-							["recipeID"] = 182983--[[Demonsteel Waistguard]]
-						},
-						{	-- Demonsteel Armguards [Rank 2]
-							["recipeID"] = 182974--[[Demonsteel Armguards]]
-						},
-						{	-- Demonsteel Boots [Rank 2]
-							["recipeID"] = 182980--[[Demonsteel Boots]]
-						},
-						{	-- Demonsteel Breastplate [Rank 2]
-							["recipeID"] = 182981--[[Demonsteel Breastplate]]
-						},
-						{	-- Demonsteel Gauntlets [Rank 2]
-							["recipeID"] = 182979--[[Demonsteel Gauntlets]]
-						},
-						{	-- Demonsteel Greaves [Rank 2]
-							["recipeID"] = 182977--[[Demonsteel Greaves]]
-						},
-						{	-- Demonsteel Helm [Rank 2]
-							["recipeID"] = 182978--[[Demonsteel Helm]]
-						},
-						{	-- Demonsteel Pauldrons [Rank 2]
-							["recipeID"] = 182976--[[Demonsteel Pauldrons]]
-						},
-						{	-- Demonsteel Waistguard [Rank 2]
-							["recipeID"] = 182975--[[Demonsteel Waistguard]]
-						},
-						{	-- Demonsteel Armguards [Rank 1]
-							["recipeID"] = 182944--[[Demonsteel Armguards]]
-						},
-						{	-- Demonsteel Boots [Rank 1]
-							["recipeID"] = 182950--[[Demonsteel Boots]]
-						},
-						{	-- Demonsteel Breastplate [Rank 1]
-							["recipeID"] = 182951--[[Demonsteel Breastplate]]
-						},
-						{	-- Demonsteel Gauntlets [Rank 1]
-							["recipeID"] = 182949--[[Demonsteel Gauntlets]]
-						},
-						{	-- Demonsteel Greaves [Rank 1]
-							["recipeID"] = 182947--[[Demonsteel Greaves]]
-						},
-						{	-- Demonsteel Helm [Rank 1]
-							["recipeID"] = 182948--[[Demonsteel Helm]]
-						},
-						{	-- Demonsteel Pauldrons [Rank 1]
-							["recipeID"] = 182946--[[Demonsteel Pauldrons]]
-						},
-						{	-- Demonsteel Waistguard [Rank 1]
-							["recipeID"] = 182945--[[Demonsteel Waistguard]]
 						},
 						{	-- Leystone Gauntlets [Rank 3]
 							["recipeID"] = 191930--[[Leystone Gauntlets]]
@@ -196,9 +115,6 @@ profession(BLACKSMITHING, {
 					["g"] = {
 						{	-- Fel Core Hound Harness
 							["recipeID"] = 213916--[[Fel Core Hound Harness]]
-						},
-						{	-- Demonsteel Stirrups
-							["recipeID"] = 209564--[[Demonsteel Stirrups]]
 						},
 						{	-- Felslate Anchor
 							["recipeID"] = 247700--[[Felslate Anchor]]

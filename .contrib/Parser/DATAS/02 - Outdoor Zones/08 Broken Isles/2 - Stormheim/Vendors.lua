@@ -61,28 +61,28 @@ root("Zones", m(BROKEN_ISLES, {
 					i(139598, {	-- Legplates of Forgotten Myth
 						["cost"] = 50000000,	-- 5,000g
 					}),
-					i(137915, {	-- Recipe: Battlebound Hauberk (Rank 3)
+					i(137915, {	-- Recipe: Battlebound Hauberk [Rank 3] (RECIPE!)
 						["cost"] = 5500000,	-- 550g
 					}),
-					i(137910, {	-- Recipe: Battlebound Warhelm (Rank 3)
+					i(137910, {	-- Recipe: Battlebound Warhelm [Rank 3] (RECIPE!)
 						["cost"] = 5500000,	-- 550g
 					}),
 					i(136698, {	-- Recipe: Consecrated Spike
 						["cost"] = 5500000,	-- 550g
 					}),
-					i(123954, {	-- Recipe: Demonsteel Boots (Rank 3)
+					i(123954, {	-- Recipe: Demonsteel Boots [Rank 3] (RECIPE!)
 						["cost"] = 30000000,	-- 3,000g
 					}),
-					i(123951, {	-- Recipe: Demonsteel Greaves (Rank 3)
+					i(123951, {	-- Recipe: Demonsteel Greaves [Rank 3] (RECIPE!)
 						["cost"] = 30000000,	-- 3,000g
 					}),
-					i(123952, {	-- Recipe: Demonsteel Helm (Rank 3)
+					i(123952, {	-- Recipe: Demonsteel Helm [Rank 3] (RECIPE!)
 						["cost"] = 30000000,	-- 3,000g
 					}),
-					i(137927, {	-- Recipe: Gravenscale Leggings (Rank 3)
+					i(137927, {	-- Recipe: Gravenscale Leggings [Rank 3] (RECIPE!)
 						["cost"] = 30000000,	-- 3,000g
 					}),
-					i(137928, {	-- Recipe: Gravenscale Warhelm (Rank 3)
+					i(137928, {	-- Recipe: Gravenscale Warhelm [Rank 3] (RECIPE!)
 						["cost"] = 30000000,	-- 3,000g
 					}),
 					i(140656, {	-- Rod of the Ascended - Priest Artifact Appearance item

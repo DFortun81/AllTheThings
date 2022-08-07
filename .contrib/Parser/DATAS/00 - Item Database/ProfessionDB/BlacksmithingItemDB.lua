@@ -1278,450 +1278,559 @@ i(127745, 187515);	-- Savage Truesteel Essence
 -----------------
 -- PATCH 7.0.3 --
 -----------------
-
-i(0, 182974);	-- Demonsteel Armguards
-i(0, 182944);	-- Demonsteel Armguards
-i(0, 182982);	-- Demonsteel Armguards
-i(0, 184442);	-- Demonsteel Bar
-i(0, 182988);	-- Demonsteel Boots
-i(0, 182950);	-- Demonsteel Boots
-i(0, 182980);	-- Demonsteel Boots
-i(0, 182981);	-- Demonsteel Breastplate
-i(0, 182989);	-- Demonsteel Breastplate
-i(0, 182951);	-- Demonsteel Breastplate
-i(0, 182987);	-- Demonsteel Gauntlets
-i(0, 182949);	-- Demonsteel Gauntlets
-i(0, 182979);	-- Demonsteel Gauntlets
-i(0, 182985);	-- Demonsteel Greaves
-i(0, 182977);	-- Demonsteel Greaves
-i(0, 182947);	-- Demonsteel Greaves
-i(0, 182948);	-- Demonsteel Helm
-i(0, 182978);	-- Demonsteel Helm
-i(0, 182986);	-- Demonsteel Helm
-i(0, 182984);	-- Demonsteel Pauldrons
-i(0, 182946);	-- Demonsteel Pauldrons
-i(0, 182976);	-- Demonsteel Pauldrons
-i(0, 209564);	-- Demonsteel Stirrups
-i(0, 182945);	-- Demonsteel Waistguard
-i(0, 182975);	-- Demonsteel Waistguard
-i(0, 182983);	-- Demonsteel Waistguard
-
-
-i(0, 182928);	-- Leystone Armguards
-i(0, 182970);	-- Leystone Armguards
-i(0, 182962);	-- Leystone Armguards
-i(0, 183279);	-- Leystone Bar
-i(0, 191928);	-- Leystone Boots
-i(0, 182934);	-- Leystone Boots
-i(0, 182968);	-- Leystone Boots
-i(0, 182935);	-- Leystone Breastplate
-i(0, 182969);	-- Leystone Breastplate
-i(0, 182973);	-- Leystone Breastplate
-i(0, 183281);	-- Leystone Cuffplate
-i(0, 184342);	-- Leystone Dome
-i(0, 184341);	-- Leystone Faceguard
-i(0, 183283);	-- Leystone Fingerguard
-i(0, 184339);	-- Leystone Footguard
-i(0, 191930);	-- Leystone Gauntlets
-i(0, 182933);	-- Leystone Gauntlets
-i(0, 182967);	-- Leystone Gauntlets
-i(0, 182931);	-- Leystone Greaves
-i(0, 191931);	-- Leystone Greaves
-i(0, 182965);	-- Leystone Greaves
-i(0, 184338);	-- Leystone Heelguard
-i(0, 182932);	-- Leystone Helm
-i(0, 182966);	-- Leystone Helm
-i(0, 191929);	-- Leystone Helm
-i(0, 182999);	-- Leystone Hoofplates
-i(0, 184343);	-- Leystone Neckplate
-i(0, 182930);	-- Leystone Pauldrons
-i(0, 182972);	-- Leystone Pauldrons
-i(0, 182964);	-- Leystone Pauldrons
-i(0, 184310);	-- Leystone Shards
-i(0, 184337);	-- Leystone Shinplate
-i(0, 183278);	-- Leystone Slag
-i(0, 184181);	-- Leystone Slag
-i(0, 184308);	-- Leystone Slag
-i(0, 184340);	-- Leystone Soleplate
-i(0, 182963);	-- Leystone Waistguard
-i(0, 182929);	-- Leystone Waistguard
-i(0, 182971);	-- Leystone Waistguard
-
-
-i(0, 184336);	-- Red-Hot Leystone Bar
-i(0, 184344);	-- Handmade Leystone Boots
-i(0, 184313);	-- Hard Leystone Ingots
-i(0, 184405);	-- Brimstone-Covered Armguards
-i(0, 247710);	-- Empyrial Breastplate
-i(0, 239415);	-- Rethu's Incessant Courage
-i(0, 184184);	-- Dull Hard Leystone Armguards
-i(0, 184183);	-- Heated Hard Leystone Bar
-i(0, 183280);	-- Heated Leystone Bar
-i(0, 184408);	-- Masterwork Leystone Armguards
-i(0, 247700);	-- Felslate Anchor
 i(0, 195097);	-- Blacksmithing (Legion)
-i(0, 184219);	-- Scrapmetal Handguard
-i(0, 247713);	-- Empyrial Breastplate
-i(0, 184182);	-- Hard Leystone Bar
-i(0, 209496);	-- Terrorspike
-i(0, 213916);	-- Fel Core Hound Harness
-i(0, 184309);	-- Hard Leystone Bar
-i(0, 248870);	-- Empyrial Breastplate
-i(0, 184220);	-- Scrapmetal Cuffplate
-i(0, 184404);	-- Molten Brimstone
-i(0, 209497);	-- Gleaming Iron Spike
-i(0, 171652);	-- Upgrade Weapon
-i(0, 184215);	-- Medium Heated Scrap Metal
-i(0, 184345);	-- Handmade Leystone Helm
-i(0, 209499);	-- Flamespike
-i(0, 248864);	-- Empyrial Rivets
+
+i(123920, 182944);	-- Demonsteel Armguards [Rank 1]
+i(123940, 182974);	-- Demonsteel Armguards [Rank 2]
+i(123948, 182982);	-- Demonsteel Armguards [Rank 3]
+i(0, 184442);	-- Demonsteel Bar
+i(123926, 182950);	-- Demonsteel Boots [Rank 1]
+i(123946, 182980);	-- Demonsteel Boots [Rank 2]
+i(123954, 182988);	-- Demonsteel Boots [Rank 3]
+i(123927, 182951);	-- Demonsteel Breastplate [Rank 1]
+i(123947, 182981);	-- Demonsteel Breastplate [Rank 2]
+i(123955, 182989);	-- Demonsteel Breastplate [Rank 3]
+i(123925, 182949);	-- Demonsteel Gauntlets [Rank 1]
+i(123945, 182979);	-- Demonsteel Gauntlets [Rank 2]
+i(123953, 182987);	-- Demonsteel Gauntlets [Rank 3]
+i(123923, 182947);	-- Demonsteel Greaves [Rank 1]
+i(123943, 182977);	-- Demonsteel Greaves [Rank 2]
+i(123951, 182985);	-- Demonsteel Greaves [Rank 3]
+i(123924, 182948);	-- Demonsteel Helm [Rank 1]
+i(123944, 182978);	-- Demonsteel Helm [Rank 2]
+i(123952, 182986);	-- Demonsteel Helm [Rank 3]
+i(123922, 182946);	-- Demonsteel Pauldrons [Rank 1]
+i(123942, 182976);	-- Demonsteel Pauldrons [Rank 2]
+i(123950, 182984);	-- Demonsteel Pauldrons [Rank 3]
+i(136709, 209564);	-- Demonsteel Stirrups
+i(123921, 182945);	-- Demonsteel Waistguard [Rank 1]
+i(123941, 182975);	-- Demonsteel Waistguard [Rank 2]
+i(123949, 182983);	-- Demonsteel Waistguard [Rank 3]
+
+
+i(0, 182928);	-- Leystone Armguards [Rank 1]
+i(123928, 182962);	-- Leystone Armguards [Rank 2]
+i(123936, 182970);	-- Leystone Armguards [Rank 3]
+i(0, 182934);	-- Leystone Boots [Rank 1]
+i(123934, 182968);	-- Leystone Boots [Rank 2]
+i(137605, 191928);	-- Leystone Boots [Rank 3]
+i(0, 182935);	-- Leystone Breastplate [Rank 1]
+i(123935, 182969);	-- Leystone Breastplate [Rank 2]
+i(123939, 182973);	-- Leystone Breastplate [Rank 3]
+i(0, 182933);	-- Leystone Gauntlets [Rank 1]
+i(123933, 182967);	-- Leystone Gauntlets [Rank 2]
+i(137606, 191930);	-- Leystone Gauntlets [Rank 3]
+i(0, 182931);	-- Leystone Greaves [Rank 1]
+i(137680, 182965);	-- Leystone Greaves [Rank 2]
+i(123931, 191931);	-- Leystone Greaves [Rank 3]
+i(0, 182932);	-- Leystone Helm [Rank 1]
+i(123932, 182966);	-- Leystone Helm [Rank 2]
+i(137607, 191929);	-- Leystone Helm [Rank 3]
+i(0, 182999);	-- Leystone Hoofplates
+i(0, 182930);	-- Leystone Pauldrons [Rank 1]
+i(123930, 182964);	-- Leystone Pauldrons [Rank 2]
+i(123938, 182972);	-- Leystone Pauldrons [Rank 3]
+i(0, 182929);	-- Leystone Waistguard [Rank 1]
+i(123929, 182963);	-- Leystone Waistguard [Rank 2]
+i(123937, 182971);	-- Leystone Waistguard [Rank 3]
+
+
+
+
+-- NYI --
+i(124462, 0);	-- Demonsteel Bar
+i(123899, 0);	-- Leystone Armguards [Rank 1]
+i(123905, 0);	-- Leystone Boots [Rank 1]
+i(123906, 0);	-- Leystone Breastplate [Rank 1]
+i(123904, 0);	-- Leystone Gauntlets [Rank 1]
+i(123902, 0);	-- Leystone Greaves [Rank 1]
+i(123903, 0);	-- Leystone Helm [Rank 1]
+i(123957, 0);	-- Leystone Hoofplates
+i(123901, 0);	-- Leystone Pauldrons [Rank 1]
+i(123900, 0);	-- Leystone Waistguard [Rank 1]
+
+-- QUest
+
+i(0, 184407);	-- Brimstone-Crusted Armguards
+i(0, 184405);	-- Brimstone-Covered Armguards
 i(0, 184403);	-- Engraved Leystone Armguards
-i(0, 248869);	-- Empyrial Back Plate
-i(0, 184314);	-- Heated Hard Leystone Ingot
-i(0, 184315);	-- Hard Leystone Nail
-i(0, 171653);	-- Upgrade Weapon
+i(0, 184408);	-- Masterwork Leystone Armguards
+i(0, 184404);	-- Molten Brimstone
+
+i(0, 183279);	-- Leystone Bar
+i(0, 183281);	-- Leystone Cuffplate
+i(0, 183562);	-- Handcrafted Leystone Gauntlets
+i(0, 183280);	-- Heated Leystone Bar
+i(0, 183283);	-- Leystone Fingerguard
+
+i(0, 184339);	-- Leystone Footguard
+i(0, 184338);	-- Leystone Heelguard
+i(0, 184344);	-- Handmade Leystone Boots
+i(0, 184340);	-- Leystone Soleplate
+i(0, 184337);	-- Leystone Shinplate
+i(0, 184336);	-- Red-Hot Leystone Bar
+
+i(0, 184217);	-- Scrapmetal Fingerplates
+i(0, 184219);	-- Scrapmetal Handguard
+i(0, 184220);	-- Scrapmetal Cuffplate
 i(0, 184218);	-- Scrapmetal Palmplate
 i(0, 184216);	-- Large Heated Scrap Metal
-i(0, 183562);	-- Handcrafted Leystone Gauntlets
 i(0, 184214);	-- Small Heated Scrap Metal
-i(0, 184407);	-- Brimstone-Crusted Armguards
-i(0, 184217);	-- Scrapmetal Fingerplates
-i(0, 247714);	-- Empyrial Breastplate
-i(0, 248867);	-- Empyrial Chest Plate
+i(0, 184215);	-- Medium Heated Scrap Metal
+
+i(0, 184313);	-- Hard Leystone Ingots
+i(0, 184315);	-- Hard Leystone Nail
+i(0, 184314);	-- Heated Hard Leystone Ingot
+i(0, 184310);	-- Leystone Shards
 i(0, 184312);	-- Lumps of Leystone Slag
-i(0, 209498);	-- Consecrated Spike
+i(0, 184309);	-- Hard Leystone Bar
+i(0, 184308);	-- Leystone Slag
+
+i(0, 184184);	-- Dull Hard Leystone Armguards
 i(0, 184185);	-- Hard Leystone Armguards
+i(0, 184182);	-- Hard Leystone Bar
+i(0, 184183);	-- Heated Hard Leystone Bar
+i(0, 184181);	-- Leystone Slag
 
 
 
 
 
 
+
+
+i(136696, 209496);	-- Terrorspike
+i(137687, 213916);	-- Fel Core Hound Harness
+
+i(136697, 209497);	-- Gleaming Iron Spike
+
+
+i(136699, 209499);	-- Flamespike
+
+
+
+
+i(136698, 209498);	-- Consecrated Spike
+
+-- Quest(NYI)
+i(0, 184342);	-- Leystone Dome
+i(0, 184341);	-- Leystone Faceguard
+i(0, 184343);	-- Leystone Neckplate
+i(0, 183278);	-- Leystone Slag
+i(0, 184345);	-- Handmade Leystone Helm
+-- nyi
+i(0, 171652);	-- Upgrade Weapon
+i(0, 171653);	-- Upgrade Weapon
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+i(0, 239415);	-- Rethu's Incessant Courage
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+i(151711, 247710);	-- Empyrial Breastplate [Rank 1]
+i(151712, 247713);	-- Empyrial Breastplate [Rank 2]
+i(151713, 247714);	-- Empyrial Breastplate [Rank 3]
+i(151709, 247700);	-- Felslate Anchor
+
+
+i(0, 248870);	-- Empyrial Breastplate Quest?
+i(0, 248864);	-- Empyrial Rivets
+i(0, 248869);	-- Empyrial Back Plate
+i(0, 248867);	-- Empyrial Chest Plate
 -----------------
 -- PATCH 8.0.1 --
 -----------------
-i(0, 253145);	-- Khaz'gorian Smithing Hammer
-i(0, 264446);	-- Legion Blacksmithing
-i(0, 253156);	-- Stormsteel Dagger
-i(0, 253144);	-- Honorable Combatant's Spellblade
-i(0, 253151);	-- Precision Attitude Adjuster
-i(0, 253129);	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
-i(0, 264438);	-- Northrend Blacksmithing
-i(0, 253174);	-- Monel-Hardened Greaves
-i(0, 253186);	-- Stormsteel Legguards
-i(0, 253171);	-- Monel-Hardened Helm
-i(0, 264442);	-- Pandaria Blacksmithing
-i(0, 253122);	-- Magnetic Discombobulator
-i(0, 253168);	-- Monel-Hardened Gauntlets
-i(0, 253113);	-- Monel-Hardened Shield
-i(0, 253159);	-- Stormsteel Spear
-i(0, 253116);	-- Stormsteel Shield
-i(0, 253180);	-- Monel-Hardened Waistguard
-i(0, 253125);	-- Monel-Hardened Cutlass
-i(0, 253187);	-- Imbued Stormsteel Legguards
-i(0, 253162);	-- Monel-Hardened Breastplate
-i(0, 253158);	-- Stormsteel Dagger
-i(0, 253138);	-- Monel-Hardened Shanker
-i(0, 253110);	-- Monel-Hardened Hoofplates
-i(0, 253149);	-- Honorable Combatant's Spellblade
-i(0, 253153);	--
-i(0, 253192);	-- Emblazoned Stormsteel Girdle
-i(0, 253188);	-- Emblazoned Stormsteel Legguards
-i(0, 253165);	-- Monel-Hardened Boots
-i(0, 253119);	-- Reinforced Girdle
-i(0, 253135);	-- Monel-Hardened Claymore
-i(0, 253118);	-- Stormsteel Shield
-i(0, 264440);	-- Cataclysm Blacksmithing
-i(0, 253152);	-- Precision Attitude Adjuster
-i(0, 253150);	-- Precision Attitude Adjuster
-i(0, 253190);	-- Stormsteel Girdle
-i(0, 253160);	-- Stormsteel Spear
-i(0, 253177);	-- Monel-Hardened Pauldrons
-i(0, 253161);	-- Stormsteel Spear
 i(0, 264434);	-- Blacksmithing
-i(0, 253191);	-- Imbued Stormsteel Girdle
-i(0, 253112);	-- Monel-Hardened Stirrups
-i(0, 253117);	-- Stormsteel Shield
-i(0, 264448);	-- Kul Tiran Blacksmithing
-i(0, 253132);	-- Monel-Hardened Deckpounder
-i(0, 253155);	--
 i(0, 264436);	-- Outland Blacksmithing
-i(0, 253157);	-- Stormsteel Dagger
+i(0, 264438);	-- Northrend Blacksmithing
+i(0, 264440);	-- Cataclysm Blacksmithing
+i(0, 264442);	-- Pandaria Blacksmithing
 i(0, 264444);	-- Draenor Blacksmithing
-i(0, 253141);	-- Monel-Hardened Polearm
-i(0, 253154);	--
-i(0, 253183);	-- Monel-Hardened Armguards
-i(0, 253148);	--
-i(0, 265939);	-- 9.0 Blacksmithing - Crafted Reagent 06
+i(0, 264446);	-- Legion Blacksmithing
 i(0, 265803);	-- Zandalari Blacksmithing
-i(0, 265937);	-- Monelite Reinforced Chassis
-i(0, 265938);	-- 9.0 Blacksmithing - Crafted Reagent 05
-i(0, 269446);	-- Honorable Combatant's Plate Greaves
-i(0, 269451);	-- Honorable Combatant's Plate Armguards
-i(0, 269460);	-- Honorable Combatant's Shield
-i(0, 269465);	-- Honorable Combatant's Cutlass
-i(0, 269479);	-- Honorable Combatant's Polearm
-i(0, 269422);	-- Honorable Combatant's Plate Gauntlets
-i(0, 269468);	--
-i(0, 269448);	-- Honorable Combatant's Plate Waistguard
-i(0, 269459);	-- Honorable Combatant's Shield
-i(0, 269470);	-- Honorable Combatant's Deckpounder
-i(0, 269476);	-- Honorable Combatant's Shanker
-i(0, 269452);	-- Honorable Combatant's Plate Armguards
-i(0, 269471);	-- Honorable Combatant's Deckpounder
-i(0, 269447);	-- Honorable Combatant's Plate Greaves
-i(0, 269466);	-- Honorable Combatant's Cutlass
-i(0, 269444);	-- Honorable Combatant's Plate Greaves
-i(0, 269458);	-- Honorable Combatant's Shield
-i(0, 269449);	-- Honorable Combatant's Plate Waistguard
-i(0, 269478);	-- Honorable Combatant's Shanker
-i(0, 269463);	--
-i(0, 269421);	-- Honorable Combatant's Plate Gauntlets
-i(0, 269475);	--
-i(0, 269469);	--
-i(0, 269424);	-- Honorable Combatant's Plate Boots
-i(0, 269477);	-- Honorable Combatant's Shanker
-i(0, 269453);	-- Honorable Combatant's Plate Armguards
-i(0, 269450);	-- Honorable Combatant's Plate Waistguard
-i(0, 269461);	--
-i(0, 269464);	-- Honorable Combatant's Cutlass
-i(0, 269472);	-- Honorable Combatant's Deckpounder
-i(0, 269426);	-- Honorable Combatant's Plate Boots
-i(0, 269474);	--
-i(0, 269423);	-- Honorable Combatant's Plate Gauntlets
-i(0, 269481);	-- Honorable Combatant's Polearm
-i(0, 269480);	-- Honorable Combatant's Polearm
-i(0, 269462);	--
-i(0, 269473);	--
+i(0, 264448);	-- Kul Tiran Blacksmithing
+
+i(0, 253183);	-- Monel-Hardened Armguards
+i(0, 253165);	-- Monel-Hardened Boots
+i(0, 253162);	-- Monel-Hardened Breastplate
+i(0, 253135);	-- Monel-Hardened Claymore
+i(0, 253125);	-- Monel-Hardened Cutlass
+i(0, 253132);	-- Monel-Hardened Deckpounder
+i(0, 253168);	-- Monel-Hardened Gauntlets
+i(0, 253174);	-- Monel-Hardened Greaves
+i(0, 253171);	-- Monel-Hardened Helm
+i(0, 253110);	-- Monel-Hardened Hoofplates
+i(0, 253177);	-- Monel-Hardened Pauldrons
+i(0, 253141);	-- Monel-Hardened Polearm
+i(0, 253138);	-- Monel-Hardened Shanker
+i(0, 253113);	-- Monel-Hardened Shield
+i(0, 253112);	-- Monel-Hardened Stirrups
+i(0, 253180);	-- Monel-Hardened Waistguard
+
+
+i(0, 253156);	-- Stormsteel Dagger [Rank 1]
+i(0, 253157);	-- Stormsteel Dagger [Rank 2]
+i(162275, 253158);	-- Stormsteel Dagger [Rank 3] (A)
+i(162707, 253158);	-- Stormsteel Dagger [Rank 3] (H)
+i(0, 278131);	-- Stormsteel Saber [Rank 1]
+i(0, 278132);	-- Stormsteel Saber [Rank 2]
+i(162670, 278133);	-- Stormsteel Saber [Rank 3] (A)
+i(162774, 278133);	-- Stormsteel Saber [Rank 3] (H)
+i(0, 253116);	-- Stormsteel Shield [Rank 1]
+i(0, 253117);	-- Stormsteel Shield [Rank 2]
+i(162261, 253118);	-- Stormsteel Shield [Rank 3] (A)
+i(162706, 253118);	-- Stormsteel Shield [Rank 3] (H)
+i(0, 253159);	-- Stormsteel Spear [Rank 1]
+i(0, 253160);	-- Stormsteel Spear [Rank 2]
+i(162276, 253161);	-- Stormsteel Spear [Rank 3] (A)
+i(162708, 253161);	-- Stormsteel Spear [Rank 3] (H)
+
+i(0, 253190);	-- Stormsteel Girdle
+i(0, 253186);	-- Stormsteel Legguards
+i(162497, 253191);	-- Imbued Stormsteel Girdle
+i(162495, 253187);	-- Imbued Stormsteel Legguards
+i(162498, 253192);	-- Emblazoned Stormsteel Girdle
+i(162496, 253188);	-- Emblazoned Stormsteel Legguards
+
 i(0, 269064);	-- Monelite Skeleton Key
-i(0, 269467);	--
-i(0, 269425);	-- Honorable Combatant's Plate Boots
-i(0, 278132);	-- Stormsteel Saber
 i(0, 278416);	-- Magnetic Mining Pick
 i(0, 278415);	-- Storm Silver Spurs
-i(0, 278133);	-- Stormsteel Saber
-i(0, 278131);	-- Stormsteel Saber
-i(0, 256786);	-- Honorable Combatant's Spellblade
 i(0, 278417);	-- Platinum Whetstone
 
+i(0, 269464);	-- Honorable Combatant's Cutlass [Rank 1]
+i(162277, 269465);	-- Honorable Combatant's Cutlass [Rank 2]
+i(162278, 269466);	-- Honorable Combatant's Cutlass [Rank 3]
+i(0, 269470);	-- Honorable Combatant's Deckpounder [Rank 1]
+i(162279, 269471);	-- Honorable Combatant's Deckpounder [Rank 2]
+i(162280, 269472);	-- Honorable Combatant's Deckpounder [Rank 3]
+i(0, 269451);	-- Honorable Combatant's Plate Armguards [Rank 1]
+i(162271, 269452);	-- Honorable Combatant's Plate Armguards [Rank 2]
+i(162272, 269453);	-- Honorable Combatant's Plate Armguards [Rank 3]
+i(0, 269424);	-- Honorable Combatant's Plate Boots [Rank 1]
+i(162262, 269425);	-- Honorable Combatant's Plate Boots [Rank 2]
+i(162263, 269426);	-- Honorable Combatant's Plate Boots [Rank 3]
+i(0, 269421);	-- Honorable Combatant's Plate Gauntlets [Rank 1]
+i(162265, 269422);	-- Honorable Combatant's Plate Gauntlets [Rank 2]
+i(162266, 269423);	-- Honorable Combatant's Plate Gauntlets [Rank 3]
+i(0, 269444);	-- Honorable Combatant's Plate Greaves [Rank 1]
+i(162267, 269446);	-- Honorable Combatant's Plate Greaves [Rank 2]
+i(162268, 269447);	-- Honorable Combatant's Plate Greaves [Rank 3]
+i(0, 269448);	-- Honorable Combatant's Plate Waistguard [Rank 1]
+i(162269, 269449);	-- Honorable Combatant's Plate Waistguard [Rank 2]
+i(162270, 269450);	-- Honorable Combatant's Plate Waistguard [Rank 3]
+i(0, 269479);	-- Honorable Combatant's Polearm [Rank 1]
+i(162283, 269480);	-- Honorable Combatant's Polearm [Rank 2]
+i(162284, 269481);	-- Honorable Combatant's Polearm [Rank 3]
+i(0, 269476);	-- Honorable Combatant's Shanker [Rank 1]
+i(162282, 269478);	-- Honorable Combatant's Shanker [Rank 3]
+i(162281, 269477);	-- Honorable Combatant's Shanker [Rank 2]
+i(0, 269458);	-- Honorable Combatant's Shield [Rank 1]
+i(162273, 269459);	-- Honorable Combatant's Shield [Rank 2]
+i(162274, 269460);	-- Honorable Combatant's Shield [Rank 3]
+i(0, 256786);	-- Honorable Combatant's Spellblade [Rank 1]
+i(162668, 253149);	-- Honorable Combatant's Spellblade [Rank 2]
+i(162669, 253144);	-- Honorable Combatant's Spellblade [Rank 3]
 
 
 
-
+-- UNKNOWN --
+i(0, 253153);	--
+i(0, 253155);	--
+i(0, 253154);	--
+i(0, 253148);	--
+i(0, 269468);	--
+i(0, 269463);	--
+i(0, 269475);	--
+i(0, 269469);	--
+i(0, 269461);	--
+i(0, 269474);	--
+i(0, 269462);	--
+i(0, 269473);	--
+i(0, 269467);	--
+-- NYI --
+i(0, 253129);	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
+i(0, 265939);	-- 9.0 Blacksmithing - Crafted Reagent 06
+i(0, 265938);	-- 9.0 Blacksmithing - Crafted Reagent 05
+-- Enginnering??
+i(0, 253151);	-- Precision Attitude Adjuster
+i(0, 253152);	-- Precision Attitude Adjuster
+i(0, 253150);	-- Precision Attitude Adjuster
+i(0, 253122);	-- Magnetic Discombobulator
+-- SL??
+i(182670, 253119);	-- Reinforced Girdle
 
 -----------------
 -- PATCH 8.1.0 --
 -----------------
-i(0, 283237);	-- Sinister Combatant's Plate Armguards
-i(0, 283251);	-- Sinister Combatant's Plate Boots
-i(0, 282860);	-- Sinister Combatant's Polearm
-i(0, 282869);	-- Sinister Combatant's Deckpounder
-i(0, 283239);	-- Sinister Combatant's Plate Waistguard
-i(0, 282859);	-- Sinister Combatant's Polearm
-i(0, 282879);	-- Sinister Combatant's Shield
-i(0, 283242);	-- Sinister Combatant's Plate Greaves
-i(0, 283244);	-- Sinister Combatant's Plate Greaves
-i(0, 282878);	-- Sinister Combatant's Shield
-i(0, 283249);	-- Sinister Combatant's Plate Boots
-i(0, 282866);	-- Sinister Combatant's Spellblade
-i(0, 283240);	-- Sinister Combatant's Plate Waistguard
-i(0, 282889);	-- Sinister Combatant's Plate Armguards
-i(0, 283250);	-- Sinister Combatant's Plate Boots
-i(0, 283247);	-- Sinister Combatant's Plate Gauntlets
-i(0, 282864);	-- Sinister Combatant's Shanker
-i(0, 283245);	-- Sinister Combatant's Plate Gauntlets
-i(0, 282865);	-- Sinister Combatant's Spellblade
-i(0, 282876);	-- Sinister Combatant's Shield
-i(0, 282872);	-- Sinister Combatant's Cutlass
-i(0, 283241);	-- Sinister Combatant's Plate Waistguard
-i(0, 282871);	-- Sinister Combatant's Cutlass
-i(0, 283238);	-- Sinister Combatant's Plate Armguards
-i(0, 282868);	-- Sinister Combatant's Deckpounder
-i(0, 283248);	-- Sinister Combatant's Plate Gauntlets
-i(0, 282870);	-- Sinister Combatant's Deckpounder
-i(0, 282862);	-- Sinister Combatant's Shanker
-i(0, 282863);	-- Sinister Combatant's Shanker
-i(0, 282861);	-- Sinister Combatant's Polearm
-i(0, 283243);	-- Sinister Combatant's Plate Greaves
-i(0, 282873);	-- Sinister Combatant's Cutlass
-i(0, 282867);	-- Sinister Combatant's Spellblade
+i(0, 287235);	-- Aqueous Reconstruction
 i(0, 285081);	-- Enhanced Stormsteel Girdle
 i(0, 285082);	-- Enhanced Stormsteel Legguards
-i(0, 285098);	-- Tempered Stormsteel Legguards
 i(0, 285089);	-- Fortified Stormsteel Girdle
 i(0, 285090);	-- Fortified Stormsteel Legguards
+i(0, 286015);	-- Monel-Hardened Hoofplates [Rank 2]
+i(0, 286016);	-- Monel-Hardened Hoofplates [Rank 3]
+
 i(0, 286631);	-- Sanguinated Reconstruction
+i(0, 282872);	-- Sinister Combatant's Cutlass
+i(0, 282871);	-- Sinister Combatant's Cutlass
+i(0, 282873);	-- Sinister Combatant's Cutlass
+i(0, 282869);	-- Sinister Combatant's Deckpounder
+i(0, 282868);	-- Sinister Combatant's Deckpounder
+i(0, 282870);	-- Sinister Combatant's Deckpounder
+i(0, 283237);	-- Sinister Combatant's Plate Armguards
+i(0, 282889);	-- Sinister Combatant's Plate Armguards
+i(0, 283238);	-- Sinister Combatant's Plate Armguards
+i(0, 283251);	-- Sinister Combatant's Plate Boots
+i(0, 283249);	-- Sinister Combatant's Plate Boots
+i(0, 283250);	-- Sinister Combatant's Plate Boots
+i(0, 283247);	-- Sinister Combatant's Plate Gauntlets
+i(0, 283245);	-- Sinister Combatant's Plate Gauntlets
+i(0, 283248);	-- Sinister Combatant's Plate Gauntlets
+i(0, 283242);	-- Sinister Combatant's Plate Greaves
+i(0, 283244);	-- Sinister Combatant's Plate Greaves
+i(0, 283243);	-- Sinister Combatant's Plate Greaves
+i(0, 283239);	-- Sinister Combatant's Plate Waistguard
+i(0, 283240);	-- Sinister Combatant's Plate Waistguard
+i(0, 283241);	-- Sinister Combatant's Plate Waistguard
+i(0, 282860);	-- Sinister Combatant's Polearm
+i(0, 282859);	-- Sinister Combatant's Polearm
+i(0, 282861);	-- Sinister Combatant's Polearm
+i(0, 282864);	-- Sinister Combatant's Shanker
+i(0, 282862);	-- Sinister Combatant's Shanker
+i(0, 282863);	-- Sinister Combatant's Shanker
+i(0, 282879);	-- Sinister Combatant's Shield
+i(0, 282878);	-- Sinister Combatant's Shield
+i(0, 282876);	-- Sinister Combatant's Shield
+i(0, 282866);	-- Sinister Combatant's Spellblade
+i(0, 282865);	-- Sinister Combatant's Spellblade
+i(0, 282867);	-- Sinister Combatant's Spellblade
 i(0, 285097);	-- Tempered Stormsteel Girdle
-i(0, 286015);	-- Monel-Hardened Hoofplates
-i(0, 287235);	-- Aqueous Reconstruction
-i(0, 286016);	-- Monel-Hardened Hoofplates
+i(0, 285098);	-- Tempered Stormsteel Legguards
 
 
-
-
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+i(168022, 253145);	-- Khaz'gorian Smithing Hammer
 
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-i(0, 298998);	-- Osmenite Legguards
-i(0, 294774);	-- Notorious Combatant's Spellblade
-i(0, 294770);	-- Notorious Combatant's Deckpounder
-i(0, 294779);	-- Notorious Combatant's Polearm
-i(0, 294769);	-- Notorious Combatant's Deckpounder
-i(0, 299001);	-- Osmenite Girdle
-i(0, 294778);	-- Notorious Combatant's Polearm
-i(0, 294765);	-- Notorious Combatant's Plate Armguards
-i(0, 294772);	-- Notorious Combatant's Spellblade
-i(0, 294754);	-- Notorious Combatant's Plate Greaves
-i(0, 294753);	-- Notorious Combatant's Plate Gauntlets
-i(0, 299002);	-- Reinforced Osmenite Girdle
-i(0, 294750);	-- Notorious Combatant's Plate Boots
-i(0, 298999);	-- Reinforced Osmenite Legguards
-i(0, 294752);	-- Notorious Combatant's Plate Gauntlets
-i(0, 294780);	-- Notorious Combatant's Polearm
-i(0, 294764);	-- Notorious Combatant's Plate Armguards
-i(0, 294748);	-- Notorious Combatant's Plate Boots
+i(0, 299003);	-- Banded Osmenite Girdle
 i(0, 299000);	-- Banded Osmenite Legguards
+i(0, 301413);	-- Inflatable Mount Shoes
+i(169529, 265937);	-- Monelite Reinforced Chassis
+i(0, 294766);	-- Notorious Combatant's Cutlass
+i(0, 294767);	-- Notorious Combatant's Cutlass
+i(0, 294768);	-- Notorious Combatant's Cutlass
+i(0, 294770);	-- Notorious Combatant's Deckpounder
+i(0, 294769);	-- Notorious Combatant's Deckpounder
+i(0, 294771);	-- Notorious Combatant's Deckpounder
+i(0, 294779);	-- Notorious Combatant's Polearm
+i(0, 294778);	-- Notorious Combatant's Polearm
+i(0, 294780);	-- Notorious Combatant's Polearm
+i(0, 294765);	-- Notorious Combatant's Plate Armguards
+i(0, 294764);	-- Notorious Combatant's Plate Armguards
+i(0, 294763);	-- Notorious Combatant's Plate Armguards
+i(0, 294750);	-- Notorious Combatant's Plate Boots
+i(0, 294748);	-- Notorious Combatant's Plate Boots
+i(0, 294749);	-- Notorious Combatant's Plate Boots
+i(0, 294753);	-- Notorious Combatant's Plate Gauntlets
+i(0, 294752);	-- Notorious Combatant's Plate Gauntlets
+i(0, 294751);	-- Notorious Combatant's Plate Gauntlets
+i(0, 294754);	-- Notorious Combatant's Plate Greaves
+i(0, 294756);	-- Notorious Combatant's Plate Greaves
+i(0, 294755);	-- Notorious Combatant's Plate Greaves
 i(0, 294762);	-- Notorious Combatant's Plate Waistguard
+i(0, 294761);	-- Notorious Combatant's Plate Waistguard
+i(0, 294760);	-- Notorious Combatant's Plate Waistguard
 i(0, 294775);	-- Notorious Combatant's Shanker
 i(0, 294776);	-- Notorious Combatant's Shanker
-i(0, 294761);	-- Notorious Combatant's Plate Waistguard
-i(0, 299003);	-- Banded Osmenite Girdle
-i(0, 294773);	-- Notorious Combatant's Spellblade
-i(0, 294766);	-- Notorious Combatant's Cutlass
-i(0, 294760);	-- Notorious Combatant's Plate Waistguard
-i(0, 294771);	-- Notorious Combatant's Deckpounder
-i(0, 294758);	-- Notorious Combatant's Shield
-i(0, 294749);	-- Notorious Combatant's Plate Boots
-i(0, 294757);	-- Notorious Combatant's Shield
 i(0, 294777);	-- Notorious Combatant's Shanker
-i(0, 294767);	-- Notorious Combatant's Cutlass
+i(0, 294758);	-- Notorious Combatant's Shield
+i(0, 294757);	-- Notorious Combatant's Shield
 i(0, 294759);	-- Notorious Combatant's Shield
-i(0, 294756);	-- Notorious Combatant's Plate Greaves
-i(0, 294751);	-- Notorious Combatant's Plate Gauntlets
-i(0, 294768);	-- Notorious Combatant's Cutlass
-i(0, 294763);	-- Notorious Combatant's Plate Armguards
-i(0, 294755);	-- Notorious Combatant's Plate Greaves
-
-i(0, 301413);	-- Inflatable Mount Shoes
-
+i(0, 294774);	-- Notorious Combatant's Spellblade
+i(0, 294772);	-- Notorious Combatant's Spellblade
+i(0, 294773);	-- Notorious Combatant's Spellblade
+i(0, 299001);	-- Osmenite Girdle
+i(0, 298998);	-- Osmenite Legguards
+i(0, 299002);	-- Reinforced Osmenite Girdle
+i(0, 298999);	-- Reinforced Osmenite Legguards
 -----------------
 -- PATCH 8.3.0 --
 -----------------
-i(0, 304315);	-- Uncanny Combatant's Plate Waistguard
-i(0, 306080);	-- Uncanny Combatant's Plate Waistguard
-i(0, 305851);	-- Uncanny Combatant's Deckpounder
-i(0, 305843);	-- Unsettling Osmenite Legguards
-i(0, 307221);	-- Void Focus
-i(0, 305849);	-- Uncanny Combatant's Spellblade
+i(0, 305838);	-- Eldritch Osmenite Girdle
+i(0, 305841);	-- Eldritch Osmenite Legguards
+i(0, 305839);	-- Maddening Osmenite Girdle
+i(0, 305842);	-- Maddening Osmenite Legguards
 i(0, 304318);	-- Uncanny Combatant's Cutlass
-i(0, 305846);	-- Uncanny Combatant's Shanker
+i(0, 305853);	-- Uncanny Combatant's Cutlass
+i(0, 305852);	-- Uncanny Combatant's Cutlass
+i(0, 305851);	-- Uncanny Combatant's Deckpounder
+i(0, 305850);	-- Uncanny Combatant's Deckpounder
+i(0, 304320);	-- Uncanny Combatant's Deckpounder
+i(0, 306078);	-- Uncanny Combatant's Plate Armguards
+i(0, 306079);	-- Uncanny Combatant's Plate Armguards
+i(0, 304317);	-- Uncanny Combatant's Plate Armguards
+i(0, 306086);	-- Uncanny Combatant's Plate Boots
+i(0, 306087);	-- Uncanny Combatant's Plate Boots
+i(0, 304307);	-- Uncanny Combatant's Plate Boots
 i(0, 306084);	-- Uncanny Combatant's Plate Gauntlets
 i(0, 306085);	-- Uncanny Combatant's Plate Gauntlets
+i(0, 304308);	-- Uncanny Combatant's Plate Gauntlets
+i(0, 306082);	-- Uncanny Combatant's Plate Greaves
+i(0, 304312);	-- Uncanny Combatant's Plate Greaves
+i(0, 306083);	-- Uncanny Combatant's Plate Greaves
+i(0, 304315);	-- Uncanny Combatant's Plate Waistguard
+i(0, 306080);	-- Uncanny Combatant's Plate Waistguard
 i(0, 306081);	-- Uncanny Combatant's Plate Waistguard
 i(0, 305844);	-- Uncanny Combatant's Polearm
-i(0, 305853);	-- Uncanny Combatant's Cutlass
-i(0, 305847);	-- Uncanny Combatant's Shanker
-i(0, 306310);	-- Uncanny Combatant's Shield
-i(0, 305839);	-- Maddening Osmenite Girdle
-i(0, 306082);	-- Uncanny Combatant's Plate Greaves
-i(0, 306078);	-- Uncanny Combatant's Plate Armguards
-i(0, 306086);	-- Uncanny Combatant's Plate Boots
-i(0, 306312);	-- Uncanny Combatant's Shield
-i(0, 305850);	-- Uncanny Combatant's Deckpounder
-i(0, 306079);	-- Uncanny Combatant's Plate Armguards
-i(0, 306087);	-- Uncanny Combatant's Plate Boots
-i(0, 304308);	-- Uncanny Combatant's Plate Gauntlets
-i(0, 304317);	-- Uncanny Combatant's Plate Armguards
-i(0, 304314);	-- Uncanny Combatant's Shield
-i(0, 304312);	-- Uncanny Combatant's Plate Greaves
 i(0, 304324);	-- Uncanny Combatant's Polearm
-i(0, 304320);	-- Uncanny Combatant's Deckpounder
-i(0, 305840);	-- Unsettling Osmenite Girdle
-i(0, 304322);	-- Uncanny Combatant's Spellblade
-i(0, 306083);	-- Uncanny Combatant's Plate Greaves
 i(0, 305845);	-- Uncanny Combatant's Polearm
-i(0, 305841);	-- Eldritch Osmenite Legguards
-i(0, 305852);	-- Uncanny Combatant's Cutlass
-i(0, 304307);	-- Uncanny Combatant's Plate Boots
-i(0, 305842);	-- Maddening Osmenite Legguards
-i(0, 305848);	-- Uncanny Combatant's Spellblade
-i(0, 305838);	-- Eldritch Osmenite Girdle
+i(0, 305846);	-- Uncanny Combatant's Shanker
+i(0, 305847);	-- Uncanny Combatant's Shanker
 i(0, 304323);	-- Uncanny Combatant's Shanker
+i(0, 306310);	-- Uncanny Combatant's Shield
+i(0, 306312);	-- Uncanny Combatant's Shield
+i(0, 304314);	-- Uncanny Combatant's Shield
+i(0, 305849);	-- Uncanny Combatant's Spellblade
+i(0, 304322);	-- Uncanny Combatant's Spellblade
+i(0, 305848);	-- Uncanny Combatant's Spellblade
+i(0, 305840);	-- Unsettling Osmenite Girdle
+i(0, 305843);	-- Unsettling Osmenite Legguards
+i(0, 307221);	-- Void Focus
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+i(0, 309827);	-- Shadowlands Blacksmithing
+
+i(0, 307670);	-- Ceremonious Armguards
+i(0, 307672);	-- Ceremonious Axe
+i(0, 307679);	-- Ceremonious Blade
+i(0, 307663);	-- Ceremonious Breastplate
+i(0, 307678);	-- Ceremonious Claymore
+i(0, 307665);	-- Ceremonious Gauntlets
+i(0, 307667);	-- Ceremonious Greaves
+i(0, 307666);	-- Ceremonious Helm
+i(0, 307674);	-- Ceremonious Mace
+i(0, 307668);	-- Ceremonious Pauldrons
+i(0, 307675);	-- Ceremonious Rapier
+i(0, 307676);	-- Ceremonious Reaper
+i(0, 307664);	-- Ceremonious Sabatons
+i(0, 307680);	-- Ceremonious Shanker
+i(0, 307671);	-- Ceremonious Shield
+i(0, 307677);	-- Ceremonious Smasher
+i(0, 307681);	-- Ceremonious Spear
+i(0, 307669);	-- Ceremonious Waistguard
+i(0, 307682);	-- Ceremonious Warglaive
+
+i(0, 307721);	-- Laestrite Skeleton Key
+i(0, 307718);	-- Shaded Sharpening Stone
+i(0, 307720);	-- Shaded Weightstone
+i(0, 307717);	-- Porous Sharpening Stone
+i(0, 307719);	-- Porous Weightstone
+
+i(0, 307611);	-- Shadowghast Ingot
 
 
-i(0, 280659);	-- 9.0 Blacksmithing - Crafted Reagent 07
-i(0, 322596);	--
+i(0, 307705);	-- Shadowghast Armguards
+i(0, 332006);	-- Shadowghast Armguards
+i(0, 332041);	-- Shadowghast Armguards
+i(0, 338976);	-- Shadowghast Armguards
+i(0, 307712);	-- Shadowghast Breastplate
+i(0, 332048);	-- Shadowghast Breastplate
+i(0, 332013);	-- Shadowghast Breastplate
+i(0, 338968);	-- Shadowghast Breastplate
+i(0, 307710);	-- Shadowghast Gauntlets
+i(0, 332011);	-- Shadowghast Gauntlets
+i(0, 332046);	-- Shadowghast Gauntlets
+i(0, 338970);	-- Shadowghast Gauntlets
 i(0, 307708);	-- Shadowghast Greaves
+i(0, 332009);	-- Shadowghast Greaves
+i(0, 332044);	-- Shadowghast Greaves
+i(0, 338972);	-- Shadowghast Greaves
+i(0, 307709);	-- Shadowghast Helm
+i(0, 332010);	-- Shadowghast Helm
+i(0, 332045);	-- Shadowghast Helm
+i(0, 338971);	-- Shadowghast Helm
+i(0, 307707);	-- Shadowghast Pauldrons
+i(0, 332008);	-- Shadowghast Pauldrons
+i(0, 332043);	-- Shadowghast Pauldrons
+i(0, 338974);	-- Shadowghast Pauldrons
+i(0, 307711);	-- Shadowghast Sabatons
+i(0, 332012);	-- Shadowghast Sabatons
+i(0, 332047);	-- Shadowghast Sabatons
+i(0, 338969);	-- Shadowghast Sabatons
+i(0, 307706);	-- Shadowghast Waistguard
+i(0, 332042);	-- Shadowghast Waistguard
+i(0, 332007);	-- Shadowghast Waistguard
+i(0, 338975);	-- Shadowghast Waistguard
+
+
+
+i(0, 322595);	-- Shadowsteel Armguards
+i(0, 322587);	-- Shadowsteel Breastplate
+i(0, 322589);	-- Shadowsteel Gauntlets
+i(0, 322591);	-- Shadowsteel Greaves
+i(0, 322590);	-- Shadowsteel Helm
+i(0, 322593);	-- Shadowsteel Pauldrons
+i(0, 322588);	-- Shadowsteel Sabatons
+i(0, 322594);	-- Shadowsteel Waistguard
+
+
+--nnyi--
+i(0, 280659);	-- 9.0 Blacksmithing - Crafted Reagent 07
+i(0, 255107);	-- 9.0 Blacksmithing - Modified Crafting Reagent 04
+i(0, 307650);	-- 9.0 Blacksmithing - Crafted Reagent 04
+i(0, 255106);	-- 9.0 Blacksmithing - Modified Crafting Reagent 03
+i(0, 280657);	-- 9.0 Blacksmithing - Crafted Reagent 08
+i(0, 307649);	-- 9.0 Blacksmithing - Crafted Reagent 03
+--unknown
+i(0, 322596);	--
 i(0, 307694);	--
 i(0, 255108);	--
 i(0, 307704);	--
 i(0, 322632);	--
-i(0, 255107);	-- 9.0 Blacksmithing - Modified Crafting Reagent 04
 i(0, 251824);	--
 i(0, 322637);	--
 i(0, 322635);	--
 i(0, 307689);	--
-i(0, 307648);	-- Elethium Setting
-i(0, 307666);	-- Ceremonious Helm
 i(0, 322625);	--
-i(0, 309827);	-- Shadowlands Blacksmithing
 i(0, 307686);	--
 i(0, 307683);	--
-i(0, 322588);	-- Shadowsteel Sabatons
-i(0, 307710);	-- Shadowghast Gauntlets
 i(0, 307691);	--
 i(0, 307703);	--
-i(0, 307717);	-- Porous Sharpening Stone
-i(0, 307650);	-- 9.0 Blacksmithing - Crafted Reagent 04
-i(0, 307719);	-- Porous Weightstone
-i(0, 307664);	-- Ceremonious Sabatons
 i(0, 307699);	--
 i(0, 322641);	--
-i(0, 307672);	-- Ceremonious Axe
 i(0, 322620);	--
 i(0, 307701);	--
 i(0, 322592);	--
 i(0, 307700);	--
-i(0, 307678);	-- Ceremonious Claymore
 i(0, 322631);	--
-i(0, 322590);	-- Shadowsteel Helm
 i(0, 322624);	--
-i(0, 307706);	-- Shadowghast Waistguard
 i(0, 322623);	--
 i(0, 322639);	--
 i(0, 307697);	--
-i(0, 307667);	-- Ceremonious Greaves
 i(0, 322598);	--
-i(0, 307671);	-- Ceremonious Shield
-i(0, 322591);	-- Shadowsteel Greaves
 i(0, 322627);	--
 i(0, 322618);	--
 i(0, 322611);	--
 i(0, 322630);	--
 i(0, 322616);	--
 i(0, 322636);	--
-i(0, 307676);	-- Ceremonious Reaper
-i(0, 307674);	-- Ceremonious Mace
 i(0, 322604);	--
 i(0, 322640);	--
-i(0, 307721);	-- Laestrite Skeleton Key
-i(0, 307665);	-- Ceremonious Gauntlets
-i(0, 307663);	-- Ceremonious Breastplate
 i(0, 322634);	--
 i(0, 322607);	--
-i(0, 307670);	-- Ceremonious Armguards
-i(0, 307720);	-- Shaded Weightstone
 i(0, 322626);	--
-i(0, 307677);	-- Ceremonious Smasher
 i(0, 307702);	--
 i(0, 322609);	--
-i(0, 322593);	-- Shadowsteel Pauldrons
 i(0, 322622);	--
 i(0, 322610);	--
 i(0, 322638);	--
-i(0, 322595);	-- Shadowsteel Armguards
-i(0, 307718);	-- Shaded Sharpening Stone
 i(0, 322602);	--
 i(0, 307695);	--
 i(0, 322599);	--
@@ -1731,45 +1840,26 @@ i(0, 322633);	--
 i(0, 307696);	--
 i(0, 322615);	--
 i(0, 307688);	--
-i(0, 322587);	-- Shadowsteel Breastplate
-i(0, 307611);	-- Shadowghast Ingot
 i(0, 322621);	--
-i(0, 307705);	-- Shadowghast Armguards
 i(0, 322601);	--
 i(0, 322608);	--
-i(0, 255106);	-- 9.0 Blacksmithing - Modified Crafting Reagent 03
 i(0, 322619);	--
 i(0, 322646);	--
 i(0, 322606);	--
 i(0, 307684);	--
-i(0, 322589);	-- Shadowsteel Gauntlets
-i(0, 307675);	-- Ceremonious Rapier
-i(0, 307711);	-- Shadowghast Sabatons
 i(0, 322643);	--
 i(0, 322613);	--
-i(0, 307707);	-- Shadowghast Pauldrons
 i(0, 322603);	--
 i(0, 322605);	--
 i(0, 322600);	--
 i(0, 307685);	--
-i(0, 307668);	-- Ceremonious Pauldrons
 i(0, 322645);	--
-i(0, 307712);	-- Shadowghast Breastplate
-i(0, 280657);	-- 9.0 Blacksmithing - Crafted Reagent 08
 i(0, 307658);	--
-i(0, 322594);	-- Shadowsteel Waistguard
 i(0, 255149);	--
-i(0, 307649);	-- 9.0 Blacksmithing - Crafted Reagent 03
-i(0, 307681);	-- Ceremonious Spear
 i(0, 322597);	--
-i(0, 307669);	-- Ceremonious Waistguard
-i(0, 307679);	-- Ceremonious Blade
-i(0, 307709);	-- Shadowghast Helm
 i(0, 322628);	--
 i(0, 307692);	--
-i(0, 307680);	-- Ceremonious Shanker
 i(0, 322612);	--
-i(0, 307682);	-- Ceremonious Warglaive
 i(0, 322644);	--
 i(0, 330166);	-- Relic of the Past III
 i(0, 330155);	-- Relic of the Past II
@@ -1811,22 +1901,6 @@ i(0, 330146);	-- Relic of the Past III
 i(0, 330168);	-- Relic of the Past V
 i(0, 330178);	-- Relic of the Past V
 i(0, 330160);	-- Relic of the Past II
-i(0, 332008);	-- Shadowghast Pauldrons
-i(0, 332006);	-- Shadowghast Armguards
-i(0, 332042);	-- Shadowghast Waistguard
-i(0, 332009);	-- Shadowghast Greaves
-i(0, 332012);	-- Shadowghast Sabatons
-i(0, 332047);	-- Shadowghast Sabatons
-i(0, 332044);	-- Shadowghast Greaves
-i(0, 332048);	-- Shadowghast Breastplate
-i(0, 332043);	-- Shadowghast Pauldrons
-i(0, 332010);	-- Shadowghast Helm
-i(0, 332041);	-- Shadowghast Armguards
-i(0, 332013);	-- Shadowghast Breastplate
-i(0, 332011);	-- Shadowghast Gauntlets
-i(0, 332007);	-- Shadowghast Waistguard
-i(0, 332045);	-- Shadowghast Helm
-i(0, 332046);	-- Shadowghast Gauntlets
 i(0, 338094);	-- Prideful Manacles
 i(0, 337619);	-- Polished Kyrian Shield
 i(0, 337374);	-- Molten Phaedrum
@@ -1840,24 +1914,20 @@ i(0, 338095);	-- Tempered Manacle Chains
 i(0, 338097);	-- Binding Cuffs
 i(0, 338090);	-- Hardened Heavy Razor
 i(0, 337426);	-- Unrefined Arrowheads
-i(0, 338969);	-- Shadowghast Sabatons
-i(0, 338976);	-- Shadowghast Armguards
-i(0, 338970);	-- Shadowghast Gauntlets
-i(0, 338974);	-- Shadowghast Pauldrons
-i(0, 338975);	-- Shadowghast Waistguard
-i(0, 338971);	-- Shadowghast Helm
-i(0, 338968);	-- Shadowghast Breastplate
-i(0, 338972);	-- Shadowghast Greaves
 i(0, 343188);	-- Crafter's Mark of the Chained Isle
 i(0, 343185);	-- Crafter's Mark II
 i(0, 343186);	-- Crafter's Mark III
 i(0, 343184);	-- Crafter's Mark I
 i(0, 343662);	-- Novice Crafter's Mark
-
--- 9.1.0.38312
+i(0, 307648);	-- Elethium Setting
+-----------------
+-- PATCH 9.1.0 --
+-----------------
 i(0, 352439);	-- Vestige of Origins
 
--- 9.2.0.41089
+-----------------
+-- PATCH 9.2.0 --
+-----------------
 i(0, 359665);	-- Crafter's Mark IV
 i(0, 359671);	-- Crafter's Mark of the First Ones
 i(0, 359700);	-- Vestige of the Eternal
