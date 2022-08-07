@@ -764,7 +764,13 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
 				o = objFunc(unpack(params));
+				-- parent of the underlying object should correspond to the hierarchical parent of t (dlo)
+				-- local dloParent = rawget(t, "parent");
+				-- app.PrintDebug("DLO:Loaded-parent:",dloParent,dloParent and dloParent.hash)
+				rawset(o, "parent", rawget(t, "parent"));
 				rawset(t, "__o", o);
+				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
+				if overrides.OnLoad then overrides.OnLoad(o); end
 			end
 
 			-- override for the object
@@ -781,10 +787,15 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 				return o[key];
 			end
 		end,
-		-- transfer field sets to the underlying object
+		-- transfer field sets to the underlying object if the field does not have an override for the object
 		__newindex = function(t, key, val)
 			if o then
-				rawset(o, key, val);
+				if not overrides[key] then
+					-- app.PrintDebug("DLO:__newindex:",o.hash,key,val)
+					rawset(o, key, val);
+				end
+			elseif key == "parent" then
+				rawset(t, key, val);
 			end
 		end,
 	};
@@ -14299,12 +14310,6 @@ UpdateGroups = function(parent, g, window)
 					group.progress = nil;
 					UpdateGroups(group, group.g, window);
 				end
-				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
-				if window and group.doUpdate then
-					-- this will be irrelevant once DGU is used as needed
-					app.PrintDebug("update-doUpdate",group.doUpdate,"=>",group.hash)
-					window.doUpdate = true;
-				end
 			else
 				UpdateGroup(parent, group, window);
 			end
@@ -15324,11 +15329,6 @@ local function SetRowData(self, row, data)
 				data.reSource = nil;
 				data.parent.total = data.parent.total - 1;
 			end
-		-- an individual row can define whether the window should refresh again after it is displayed
-		elseif data.doUpdate then
-			-- print("window.doUpdate",data.doUpdate,"=>",data.hash)
-			data.doUpdate = nil;
-			self.doUpdate = true;
 		-- else
 			-- data.reSource = nil;
 		-- WARNING: DEV ONLY END
@@ -15501,11 +15501,6 @@ local function Refresh(self)
 		-- print("Refresh-processingLinks",self.Suffix)
 		Callback(self.Refresh, self);
 		self.processingLinks = nil;
-	-- If the data itself needs another update pass due to new rows being added dynamically
-	elseif self.doUpdate then
-		-- print("Refresh-doUpdate",self.Suffix)
-		Callback(self.Update, self, true);
-		self.doUpdate = nil;
 	end
 	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
 end
@@ -20924,6 +20919,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 		self.Limit = 70000;
 		force = true;
 		local HaveQuestData = HaveQuestData;
+		local DGU, Run, SetPerFrame = app.DirectGroupUpdate, app.FunctionRunner.Run, app.FunctionRunner.SetPerFrame;
 
 		-- custom params for initialization
 		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
@@ -20953,6 +20949,11 @@ customWindowUpdates["quests"] = function(self, force, got)
 					return "#"..o.questID..": "..o.text;
 				end
 			end,
+			OnLoad = function(self)
+				-- app.PrintDebug("DGU-OnLoad:",self.hash)
+				SetPerFrame(20);
+				Run(DGU, self);
+			end,
 		};
 		if onlyMissing then
 			if onlyCached then
@@ -20962,13 +20963,6 @@ customWindowUpdates["quests"] = function(self, force, got)
 			else
 				overrides.visible = function(o, key)
 					return o._missing;
-				end
-			end
-			overrides.doUpdate = function(o, key)
-				-- trigger a repeat update to the holding window after the DLO is loaded into the window and is not missing in DB
-				if not o._missing then
-					-- print("doUpdate override",o.hash)
-					return true;
 				end
 			end
 		end
