@@ -703,6 +703,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
+				q(26370, {	-- Return to Sentinel Hill
+					["qgs"] = {	-- TODO: Find quest giver lists like this and use timelines.
+						1750,	-- Grand Admiral Jes-Tereth
+						29611,	-- King Varian Wrynn
+						107574,	-- Anduin Wrynn
+					},
+					["sourceQuest"] = 26322,	-- Rise of the Brotherhood
+					["coord"] = { 85.6, 32.7, STORMWIND_CITY },
+					["timeline"] = { "added 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(26322, {	-- Rise of the Brotherhood
 					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26320,	-- A Vision of the Past

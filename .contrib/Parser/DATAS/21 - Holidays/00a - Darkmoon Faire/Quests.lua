@@ -879,6 +879,22 @@ root("Holidays", m(407, bubbleDown({ ["u"] = DARKMOON_FAIRE }, {	-- Darkmoon Isl
 			["coord"] = { 51.9, 60.9, 407 },
 			["lvl"] = 10,
 		}),
+		q(7905, {	-- The Darkmoon Faire
+			["qg"] = 54334,	-- Darkmoon Faire Mystic Mage
+			["coord"] = { 62.2, 73.0, STORMWIND_CITY },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				currency(515),	-- Darkmoon Prize Ticket
+			},
+		}),
+		q(7926,  {	-- The Darkmoon Faire
+			["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
+			["coord"] = { 48.0, 62.0, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				currency(515),	-- Darkmoon Prize Ticket
+			},
+		}),
 		q(29457, {	-- The Enemy's Insignia
 			["isMonthly"] = true,
 			["provider"] = { "i", 71952 },	-- Captured Insignia

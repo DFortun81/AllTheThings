@@ -92,6 +92,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(26839, {	-- Get Away From It All! (The Cape of Stranglethorn)
 				["timeline"] = { "created 4.0.3.13277" },	-- Replaced by "It's You!!"?
 			}),
+			q(14481, {	-- Into The Abyss
+				["timeline"] = { "created 4.0.3.13277" },	-- did not make it out of beta
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st

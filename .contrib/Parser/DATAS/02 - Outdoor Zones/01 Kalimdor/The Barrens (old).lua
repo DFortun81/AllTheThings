@@ -158,6 +158,14 @@ _.Zones = {
 					["provider"] = { "o", 4141 },	-- Control Panel
 					["sourceQuest"] = 900,	-- Samophlange
 				}),
+				q(1798, {	-- Seeking Strahad (Stormwind)
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["coord"] = { 39.6, 84.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(1068,  {	-- Shredding Machines
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

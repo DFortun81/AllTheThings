@@ -16,14 +16,8 @@ q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
 q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
-q(343),	-- Speaking of Fortitude,		TBC: Speaking of Fortitude,		CLASSIC: Speaking of Fortitude
-q(350),	-- Look to an Old Friend,		TBC: Look to an Old Friend,		CLASSIC: Look to an Old Friend
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(392),	-- The Curious Visitor,		TBC: The Curious Visitor,		CLASSIC: The Curious Visitor
-q(393),	-- Shadow of the Past,		TBC: Shadow of the Past,		CLASSIC: Shadow of the Past
-q(394),	-- The Head of the Beast,		TBC: The Head of the Beast,		CLASSIC: The Head of the Beast
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(434),	-- The Attack!,		TBC: The Attack!,		CLASSIC: The Attack!
 q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
 q(458),	-- The Woodland Protector,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
@@ -115,21 +109,10 @@ q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind,		TBC: <NYI> <TXT> speak to
 q(1179),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(1219),	-- [DEPRECATED]The Orc Report,		TBC: The Orc Report,		CLASSIC: The Orc Report
 q(1220),	-- [DEPRECATED]Captain Vimes,		TBC: Captain Vimes,		CLASSIC: Captain Vimes
-q(1241),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1242),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1243),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1244),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1245),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1246),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1247),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1248),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1252),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
 q(1253),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1259),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
 q(1260),	-- [DEPRECATED]Morgan Stern,		TBC: Morgan Stern,		CLASSIC: Morgan Stern
-q(1265),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1266),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
-q(1274),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1277),	-- <nyi> <TXT> The Centaur Hoofprints,		TBC: <nyi> <TXT> The Centaur Hoofprints,		CLASSIC: <nyi> <TXT> The Centaur Hoofprints
 q(1278),	-- <nyi> <TXT> The Grim Totem Clan,		TBC: <nyi> <TXT> The Grim Totem Clan,		CLASSIC: <nyi> <TXT> The Grim Totem Clan
 q(1279),	-- <nyi> <TXT>The Centaur Hoofprints,		TBC: <nyi> <TXT>The Centaur Hoofprints,		CLASSIC: <nyi> <TXT>The Centaur Hoofprints
@@ -156,7 +139,6 @@ q(1301),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
 q(1302),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
 q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
-q(1324),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
 q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
 q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
@@ -170,7 +152,6 @@ q(1438),	-- Vahlarriel's Search,		TBC: Vahlarriel's Search,		CLASSIC: Vahlarriel
 q(1439),	-- Search for Tyranis,		TBC: Search for Tyranis,		CLASSIC: Search for Tyranis
 q(1441),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1443),	-- <nyi> The Shakedown,		CLASSIC: <nyi> The Shakedown
-q(1447),	-- The Missing Diplomat,		TBC: The Missing Diplomat,		CLASSIC: The Missing Diplomat
 q(1458),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1459),	-- Reagents for Reclaimers Inc.,		TBC: Reagents for Reclaimers Inc.,		CLASSIC: Reagents for Reclaimers Inc.
 q(1460),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -217,7 +198,6 @@ q(1660),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1662),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1663),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(1664),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(1688),	-- Surena Caledon,		TBC: Surena Caledon,		CLASSIC: Surena Caledon
 q(1718),	-- The Islander,		TBC: The Islander,		CLASSIC: The Islander
 q(1719),	-- The Affray,		TBC: The Affray,		CLASSIC: The Affray
 q(1738),	-- Heartswood,		TBC: Heartswood,		CLASSIC: Heartswood
@@ -232,8 +212,6 @@ q(1799),	-- Fragments of the Orb of Orahil,		TBC: Fragments of the Orb of Orahil
 q(1801),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1803),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
 q(1805),	-- Tome of the Cabal,		TBC: Tome of the Cabal,		CLASSIC: Tome of the Cabal
-q(1919),	-- Report to Jennea,		TBC: Report to Jennea,		CLASSIC: Report to Jennea
-q(1920),	-- Investigate the Blue Recluse,		TBC: Investigate the Blue Recluse,		CLASSIC: Investigate the Blue Recluse
 q(1943),	-- Speak with Deino,		TBC: Speak with Deino,		CLASSIC: Speak with Deino
 q(1963),	-- The Shattered Hand,		TBC: The Shattered Hand,		CLASSIC: The Shattered Hand
 q(2000),	-- Rokar Bladeshadow,		TBC: Rokar Bladeshadow,		CLASSIC: Rokar Bladeshadow
@@ -249,9 +227,7 @@ q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC
 q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
 q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
 q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
-q(2281),	-- Redridge Rendezvous,		TBC: Redridge Rendezvous,		CLASSIC: Redridge Rendezvous
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
-q(2360),	-- Mathias and the Defias,		TBC: Mathias and the Defias,		CLASSIC: Mathias and the Defias
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
 q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
 q(2381),	-- Plundering the Plunderers,		TBC: Plundering the Plunderers,		CLASSIC: Plundering the Plunderers
@@ -263,7 +239,6 @@ q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's A
 q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
 q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
 q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
-q(2746),	-- Items of Some Consequence,		TBC: Items of Some Consequence,		CLASSIC: Items of Some Consequence
 q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
 q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
@@ -340,7 +315,6 @@ q(3661),	-- Favored of Elune?,		TBC: Favored of Elune?,		CLASSIC: Favored of Elu
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
 q(3763),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3764),	-- Un'Goro Soil,		TBC: Un'Goro Soil,		CLASSIC: Un'Goro Soil
-q(3765),	-- The Corruption Abroad,		TBC: The Corruption Abroad,		CLASSIC: The Corruption Abroad
 q(3781),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
 q(3785),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
 q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request

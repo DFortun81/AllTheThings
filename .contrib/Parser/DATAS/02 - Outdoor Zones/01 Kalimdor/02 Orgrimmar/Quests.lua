@@ -542,13 +542,6 @@ root("Zones", m(KALIMDOR, {
 					{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 				},
 			}),
-			q(28296, {	-- Meetup with the Caravan
-				["sourceQuests"] = { 28293 },	-- That's No Pyramid!
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 47571 },	-- Belloc Brightblade
-				["coord"] = { 49.1, 70.5, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-			}),
 			q(51443, {	-- Mission Statement (BfA version)
 				-- available to a level 47, pre-9.0 character during patch 9.0
 			--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
@@ -800,20 +793,6 @@ root("Zones", m(KALIMDOR, {
 				["groups"] = {
 					i(65629),	-- Facemask of the Shattered Hand
 				},
-			}),
-			q(7926,  {	-- The Darkmoon Faire
-				["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
-				["coord"] = { 48.0, 62.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					currency(515),	-- Darkmoon Prize Ticket
-				},
-			}),
-			q(30094, {	-- The End Time
-				["provider"] = { "n", 52382 },	-- Ziradormi
-				["coord"] = { 48.8, 70.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
 			}),
 			q(28805, {	-- The Eye of the Storm
 				["sourceQuests"] = { 28790 },	-- A Personal Summons

@@ -715,6 +715,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				}),
+				q(27241, {	-- Return to Jaina
+					["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					["sourceQuest"] = 27240,	-- Proof of Treachery
+					["coord"] = { 85.6, 32.9, STORMWIND_CITY },
+					["timeline"] = { "added 3.0.2" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(11204, {	-- Return to Krog
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4943 },	-- Mosarn
@@ -1094,12 +1101,41 @@ _.Zones =
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 					["races"] = HORDE_ONLY,
 				}),
-				q(1267,  {	-- The Missing Diplomat
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 4967 },	-- Archmage Tervosh
+				q(1265, {	-- The Missing Diplomat (14/17)
+					["qg"] = 4964,	-- Commander Samaul
+					["sourceQuest"] = 1264,	-- The Missing Diplomat (13/17)
+					["coord"] = { 68.0, 48.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(6757)),	-- Jaina's Signet Ring
+					["lvl"] = 28,
+				}),
+				q(1266, {	-- The Missing Diplomat (15/17)
+					["qg"] = 4967,	-- Archmage Tervosh
+					["sourceQuest"] = 1265,	-- The Missing Diplomat (14/17)
+					["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
+				}),
+				q(1324, {	-- The Missing Diplomat (16/17)
+					["qg"] = 4966,	-- Private Hendel
+					["sourceQuest"] = 1266,	-- The Missing Diplomat (15/17)
+					["coord"] = { 45.2, 24.6, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
+				}),
+				q(1267, {	-- The Missing Diplomat (17/17)
+					["qg"] = 4968,	-- Lady Jaina Proudmoore
+					["sourceQuest"] = 1324,	-- The Missing Diplomat (16/17)
+					["coord"] = { 45.2, 24.2, DUSTWALLOW_MARSH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
+					["groups"] = {
+						i(6757, {	-- Jaina's Signet Ring
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(27246, {	-- The Orc Report

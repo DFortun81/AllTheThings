@@ -421,6 +421,285 @@ root("Instances", tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
+				-- Crieve NOTE: If a Blizzard Dev ever reads this, please know that this is why I have trust issues.
+				-- #if BEFORE SHADOWLANDS
+				q(28258, {	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
+					["qgs"] = {
+						17120,	-- Behomat
+						4087,	-- Arias'ta Bladesinger
+					},
+					["coords"] = {
+						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
+						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+					},
+					["timeline"] = { "added 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28260, {	-- Meet with Dalgrun Steelpine [SL+] / Meet with Wulf Hansreim
+					["qgs"] = {
+						17122,	-- Vord
+						5115,	-- Daera Brightspear
+						4138,	-- Jeen'ra Nightrunner
+					},
+					["coords"] = {
+						{ 47.2, 88.4, THE_EXODAR },	-- Vord
+						{ 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
+						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				q(28259, {	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, IRONFORGE },
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #if AFTER SHADOWLANDS
+				q(28268, {	-- Meet with Ezul'aan [SL+] / Meet with Lord Grayson Shadowbreaker
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 39.0, 84.2, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28287, {	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },	-- Droha
+						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28263, {	-- Meet with Frazzle Frostfingers [SL+] / Meet with Maginor Dumas
+					["qgs"] = {
+						16749,	-- Edirah
+						50690,	-- Tarelvir
+						5146,	-- Nittlebur Sparkfizzle
+					},
+					["coords"] = {
+						{ 26.2, 6.2, THE_EXODAR },	-- Edirah
+						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
+						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28285, {	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
+					["qgs"] = {
+						11401,	-- Priestess Alathea
+						11406,	-- High Priest Rohan
+						16756,	-- Caedmos
+					},
+					["coords"] = {
+						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28268, {	-- Meet with Lord Grayson Shadowbreaker / Meet with Ezul'aan [SL+]
+					["qgs"] = {
+						16761,	-- Baatun
+						35281,	-- Rukua
+						5147,	-- Valgar Highforge
+					},
+					["coords"] = {
+						{ 39.0, 84.2, THE_EXODAR },	-- Baatun
+						{ 43.6, 78.4, DARNASSUS },	-- Rukua
+						{ 23.6, 5.6, IRONFORGE },	-- Valgar Highforge
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28262, {	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
+					["qgs"] = {
+						4214,	-- Erion Shadewhisper
+						5165,	-- Hulfdan Blackbeard
+					},
+					["coords"] = {
+						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
+						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28263, {	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
+					["qgs"] = {
+						16749,	-- Edirah
+						50690,	-- Tarelvir
+						5146,	-- Nittlebur Sparkfizzle
+					},
+					["coords"] = {
+						{ 26.2, 6.2, THE_EXODAR },	-- Edirah
+						{ 37.6, 80.0, DARNASSUS },	-- Tarelvir
+						{ 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28287, {	-- Meet with Mulric Boldrock [SL+] / Meet with Farseer Umbrua
+					["qgs"] = {
+						52292,	-- Droha
+						23127,	-- Farseer Javad
+					},
+					["coords"] = {
+						{ 43.8, 78.8, DARNASSUS },	-- Droha
+						{ 55.2, 29.0, IRONFORGE },	-- Farseer Javad
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28285, {	-- Meet with Patrice Lancaster [SL+] / Meet with High Priestess Laurena
+					["qgs"] = {
+						11401,	-- Priestess Alathea
+						11406,	-- High Priest Rohan
+						16756,	-- Caedmos
+					},
+					["coords"] = {
+						{ 43.4, 79.2, DARNASSUS },	-- Priestess Alathea
+						{ 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
+						{ 38.5, 50.9, THE_EXODAR },	-- Caedmos
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28258, {	-- Meet with Signilda Hardforge [SL+] / Meet with Ander Germaine
+					["qgs"] = {
+						17120,	-- Behomat
+						4087,	-- Arias'ta Bladesinger
+					},
+					["coords"] = {
+						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
+						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+					},
+					["timeline"] = { "added 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if AFTER SHADOWLANDS
+				q(28262, {	-- Meet with Veruca Darkstream [SL+] / Meet with Lord Tony Romano
+					["qgs"] = {
+						4214,	-- Erion Shadewhisper
+						5165,	-- Hulfdan Blackbeard
+					},
+					["coords"] = {
+						{ 40.0, 39.6, DARNASSUS },	-- Erion Shadewhisper
+						{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
+				-- #if BEFORE SHADOWLANDS
+				q(28260, {	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
+					["qgs"] = {
+						17122,	-- Vord
+						5115,	-- Daera Brightspear
+						4138,	-- Jeen'ra Nightrunner
+					},
+					["coords"] = {
+						{ 47.2, 88.4, THE_EXODAR },	-- Vord
+						{ 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
+						{ 43.4, 26.0, DARNASSUS },	-- Jeen'ra Nightrunner
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(50, 50, 20),
+				}),
+				-- #endif
 				q(4132, {	-- Operation: Death to Angerforge
 					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["sourceQuest"] = 4121,	-- Precarious Predicament
@@ -508,7 +787,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						20407,	-- Farseer Umbrua
 						-- #endif
 					},
-					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua
+					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
 						{ 78.2, 70.9, STORMWIND_CITY },
@@ -536,7 +815,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						461,	-- Demisette Cloyce
 						-- #endif
 					},
-					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce
+					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
 						{ 79.5, 69.9, STORMWIND_CITY },
@@ -576,7 +855,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						164946,	-- Veruca Darkstream
 						-- #endif
 					},
-					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano
+					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
 						{ 78.7, 70.6, STORMWIND_CITY },
@@ -647,7 +926,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						44247,	-- Wulf Hansreim
 						-- #endif
 					},
-					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim
+					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
 						{ 79.2, 71.2, STORMWIND_CITY },
@@ -772,7 +1051,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						331,	-- Maginor Dumas
 						-- #endif
 					},
-					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas
+					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
 					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -1033,7 +1312,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						164939,	-- Signilda Hardforge <Warrior Trainer>
 						-- #endif
 					},
-					["sourceQuest"] = 28258,	-- Meet with Ander Germaine
+					["sourceQuest"] = 28258,	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["coords"] = {
 						-- #if AFTER SHADOWLANDS
 						{ 80.2, 70.2, STORMWIND_CITY },
@@ -1411,7 +1690,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 164949,	-- Patrice Lancaster
 					["coord"] = { 78.9, 69.8, STORMWIND_CITY },
 					-- #endif
-					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena
+					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["timeline"] = { "added 4.0.3.13277" },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
