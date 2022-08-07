@@ -2474,6 +2474,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		"class:"..app.ClassIndex.." ("..app.Class..")",
 		"lvl:"..app.Level,
 		"u:"..tostring(questRef and questRef.u),
+		"sq:"..app.SourceQuestString(questRef or id),
 		"cov:"..(covData and covData.name or "N/A");
 		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
@@ -2493,7 +2494,8 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 		and app.ClassRequirementFilter(questRef)
 		and app.RaceRequirementFilter(questRef)
 		and app.RequireCustomCollectFilter(questRef)
-		and app.ItemIsInGame(questRef)) then
+		and app.ItemIsInGame(questRef)
+		and not questRef.missingPrequisites) then
 
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
@@ -2705,6 +2707,32 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 			return 2;
 		end
 	end
+end
+-- Generate a simple sourcequest completion string for a questRef
+app.SourceQuestString = function(quest)
+	if quest then
+		if type(quest) == "string" or type(quest) == "number" then
+			quest = app.SearchForObject("questID",tonumber(quest));
+		end
+	end
+	if quest then
+		if quest.missingPrequisites or quest.prereqs then
+			local info = {};
+			for sq,c in pairs(quest.prereqs) do
+				tinsert(info, sq);
+				tinsert(info, c)
+			end
+			return app.TableConcat(info, nil, nil, ":");
+		elseif quest.sourceQuests then
+			local info = {};
+			for _,sq in ipairs(quest.sourceQuests) do
+				tinsert(info, sq);
+				tinsert(info, IsQuestFlaggedCompleted(sq) and "1" or "0")
+			end
+			return app.TableConcat(info, nil, nil, ":");
+		end
+	end
+	return "?";
 end
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
@@ -8137,6 +8165,31 @@ local questFields = {
 					end
 				end
 			end
+		end
+	end,
+	["missingPrequisites"] = function(t)
+		if t.sourceQuests and #t.sourceQuests > 0 then
+			local sq, missing;
+			local prereqs = rawget(t, "prereqs") or {};
+			rawset(t, "prereqs", prereqs);
+			wipe(prereqs);
+			for _,sourceQuestID in ipairs(t.sourceQuests) do
+				if not IsQuestFlaggedCompleted(sourceQuestID) then
+					sq = app.SearchForObject("questID", sourceQuestID);
+					if sq then
+						prereqs[sourceQuestID] = "N"
+							..(sq.isBreadcrumb and "B" or "")
+							..(sq.locked and "L" or "")
+							..(sq.altcollected and "A" or "");
+						if not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
+							missing = true;
+						end
+					end
+				else
+					prereqs[sourceQuestID] = "C";
+				end
+			end
+			return missing;
 		end
 	end,
 	["locked"] = LockedAsQuest,
