@@ -237,14 +237,6 @@ root("Zones", {
 							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)
 						},
 					}),
-					q(48055, {	-- Empyrial Strength
-						["provider"] = { "n", 125341 },	-- Khamir
-						["requireSkill"] = BLACKSMITHING,
-						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-						["g"] = {
-							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
-						},
-					}),
 					q(49143, {	-- Essence of the Light Mother
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["provider"] = { "n", 126307 },	-- Prophet Velen

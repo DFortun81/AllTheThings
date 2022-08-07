@@ -11,21 +11,6 @@ profession(164, {	-- Blacksmithing
 			["hash"] = "categoryID424",
 			["g"] = {
 				{
-					["name"] = "Brimstone-Covered Armguards",
-					["hash"] = "recipeID184405",
-					["recipeID"] = 184405
-				},
-				{
-					["name"] = "Brimstone-Crusted Armguards",
-					["hash"] = "recipeID184407",
-					["recipeID"] = 184407
-				},
-				{
-					["name"] = "Dull Hard Leystone Armguards",
-					["hash"] = "recipeID184184",
-					["recipeID"] = 184184
-				},
-				{
 					["name"] = "Empyrial Back Plate",
 					["hash"] = "recipeID248869",
 					["recipeID"] = 248869
@@ -46,79 +31,9 @@ profession(164, {	-- Blacksmithing
 					["recipeID"] = 248864
 				},
 				{
-					["name"] = "Engraved Leystone Armguards",
-					["hash"] = "recipeID184403",
-					["recipeID"] = 184403
-				},
-				{
-					["name"] = "Handcrafted Leystone Gauntlets",
-					["hash"] = "recipeID183562",
-					["recipeID"] = 183562
-				},
-				{
-					["name"] = "Handmade Leystone Boots",
-					["hash"] = "recipeID184344",
-					["recipeID"] = 184344
-				},
-				{
 					["name"] = "Handmade Leystone Helm",
 					["hash"] = "recipeID184345",
 					["recipeID"] = 184345
-				},
-				{
-					["name"] = "Hard Leystone Armguards",
-					["hash"] = "recipeID184185",
-					["recipeID"] = 184185
-				},
-				{
-					["name"] = "Hard Leystone Bar",
-					["hash"] = "recipeID184182",
-					["recipeID"] = 184182
-				},
-				{
-					["name"] = "Hard Leystone Bar",
-					["hash"] = "recipeID184309",
-					["recipeID"] = 184309
-				},
-				{
-					["name"] = "Hard Leystone Ingots",
-					["hash"] = "recipeID184313",
-					["recipeID"] = 184313
-				},
-				{
-					["name"] = "Hard Leystone Nail",
-					["hash"] = "recipeID184315",
-					["recipeID"] = 184315
-				},
-				{
-					["name"] = "Heated Hard Leystone Bar",
-					["hash"] = "recipeID184183",
-					["recipeID"] = 184183
-				},
-				{
-					["name"] = "Heated Hard Leystone Ingot",
-					["hash"] = "recipeID184314",
-					["recipeID"] = 184314
-				},
-				{
-					["name"] = "Heated Leystone Bar",
-					["hash"] = "recipeID183280",
-					["recipeID"] = 183280
-				},
-				{
-					["name"] = "Large Heated Scrap Metal",
-					["hash"] = "recipeID184216",
-					["recipeID"] = 184216
-				},
-				{
-					["name"] = "Leystone Bar",
-					["hash"] = "recipeID183279",
-					["recipeID"] = 183279
-				},
-				{
-					["name"] = "Leystone Cuffplate",
-					["hash"] = "recipeID183281",
-					["recipeID"] = 183281
 				},
 				{
 					["name"] = "Leystone Dome",
@@ -131,105 +46,15 @@ profession(164, {	-- Blacksmithing
 					["recipeID"] = 184341
 				},
 				{
-					["name"] = "Leystone Fingerguard",
-					["hash"] = "recipeID183283",
-					["recipeID"] = 183283
-				},
-				{
-					["name"] = "Leystone Footguard",
-					["hash"] = "recipeID184339",
-					["recipeID"] = 184339
-				},
-				{
-					["name"] = "Leystone Heelguard",
-					["hash"] = "recipeID184338",
-					["recipeID"] = 184338
-				},
-				{
 					["name"] = "Leystone Neckplate",
 					["hash"] = "recipeID184343",
 					["recipeID"] = 184343
-				},
-				{
-					["name"] = "Leystone Shards",
-					["hash"] = "recipeID184310",
-					["recipeID"] = 184310
-				},
-				{
-					["name"] = "Leystone Shinplate",
-					["hash"] = "recipeID184337",
-					["recipeID"] = 184337
-				},
-				{
-					["name"] = "Leystone Slag",
-					["hash"] = "recipeID184181",
-					["recipeID"] = 184181
 				},
 				{
 					["name"] = "Leystone Slag",
 					["hash"] = "recipeID183278",
 					["recipeID"] = 183278
 				},
-				{
-					["name"] = "Leystone Slag",
-					["hash"] = "recipeID184308",
-					["recipeID"] = 184308
-				},
-				{
-					["name"] = "Leystone Soleplate",
-					["hash"] = "recipeID184340",
-					["recipeID"] = 184340
-				},
-				{
-					["name"] = "Lumps of Leystone Slag",
-					["hash"] = "recipeID184312",
-					["recipeID"] = 184312
-				},
-				{
-					["name"] = "Masterwork Leystone Armguards",
-					["hash"] = "recipeID184408",
-					["recipeID"] = 184408
-				},
-				{
-					["name"] = "Medium Heated Scrap Metal",
-					["hash"] = "recipeID184215",
-					["recipeID"] = 184215
-				},
-				{
-					["name"] = "Molten Brimstone",
-					["hash"] = "recipeID184404",
-					["recipeID"] = 184404
-				},
-				{
-					["name"] = "Red-Hot Leystone Bar",
-					["hash"] = "recipeID184336",
-					["recipeID"] = 184336
-				},
-				{
-					["name"] = "Scrapmetal Cuffplate",
-					["hash"] = "recipeID184220",
-					["recipeID"] = 184220
-				},
-				{
-					["name"] = "Scrapmetal Fingerplates",
-					["hash"] = "recipeID184217",
-					["recipeID"] = 184217
-				},
-				{
-					["name"] = "Scrapmetal Handguard",
-					["hash"] = "recipeID184219",
-					["recipeID"] = 184219
-				},
-				{
-					["name"] = "Scrapmetal Palmplate",
-					["hash"] = "recipeID184218",
-					["recipeID"] = 184218
-				},
-				{
-					["name"] = "Small Heated Scrap Metal",
-					["hash"] = "recipeID184214",
-					["recipeID"] = 184214
-				}
 			}
 		},
 		{
@@ -2016,33 +1841,6 @@ profession(164, {	-- Blacksmithing
 					}
 				},
 				{
-					["name"] = "Relics",
-					["categoryID"] = 488,
-					["hash"] = "categoryID488",
-					["g"] = {
-						{
-							["name"] = "Consecrated Spike",
-							["hash"] = "recipeID209498",
-							["recipeID"] = 209498
-						},
-						{
-							["name"] = "Flamespike",
-							["hash"] = "recipeID209499",
-							["recipeID"] = 209499
-						},
-						{
-							["name"] = "Gleaming Iron Spike",
-							["hash"] = "recipeID209497",
-							["recipeID"] = 209497
-						},
-						{
-							["name"] = "Terrorspike",
-							["hash"] = "recipeID209496",
-							["recipeID"] = 209496
-						}
-					}
-				},
-				{
 					["name"] = "Armor",
 					["categoryID"] = 427,
 					["hash"] = "categoryID427",
@@ -2066,163 +1864,6 @@ profession(164, {	-- Blacksmithing
 							["previousRecipeID"] = 247713,
 							["recipeID"] = 247714
 						},
-						{
-							["name"] = "Leystone Armguards",
-							["hash"] = "recipeID182928",
-							["nextRecipeID"] = 182962,
-							["recipeID"] = 182928
-						},
-						{
-							["name"] = "Leystone Armguards",
-							["hash"] = "recipeID182962",
-							["nextRecipeID"] = 182970,
-							["previousRecipeID"] = 182928,
-							["recipeID"] = 182962
-						},
-						{
-							["name"] = "Leystone Armguards",
-							["hash"] = "recipeID182970",
-							["previousRecipeID"] = 182962,
-							["recipeID"] = 182970
-						},
-						{
-							["name"] = "Leystone Boots",
-							["hash"] = "recipeID182934",
-							["nextRecipeID"] = 182968,
-							["recipeID"] = 182934
-						},
-						{
-							["name"] = "Leystone Boots",
-							["hash"] = "recipeID182968",
-							["nextRecipeID"] = 191928,
-							["previousRecipeID"] = 182934,
-							["recipeID"] = 182968
-						},
-						{
-							["name"] = "Leystone Boots",
-							["hash"] = "recipeID191928",
-							["previousRecipeID"] = 182968,
-							["recipeID"] = 191928
-						},
-						{
-							["name"] = "Leystone Breastplate",
-							["hash"] = "recipeID182935",
-							["nextRecipeID"] = 182969,
-							["recipeID"] = 182935
-						},
-						{
-							["name"] = "Leystone Breastplate",
-							["hash"] = "recipeID182969",
-							["nextRecipeID"] = 182973,
-							["previousRecipeID"] = 182935,
-							["recipeID"] = 182969
-						},
-						{
-							["name"] = "Leystone Breastplate",
-							["hash"] = "recipeID182973",
-							["previousRecipeID"] = 182969,
-							["recipeID"] = 182973
-						},
-						{
-							["name"] = "Leystone Gauntlets",
-							["hash"] = "recipeID182933",
-							["nextRecipeID"] = 182967,
-							["recipeID"] = 182933
-						},
-						{
-							["name"] = "Leystone Gauntlets",
-							["hash"] = "recipeID182967",
-							["nextRecipeID"] = 191930,
-							["previousRecipeID"] = 182933,
-							["recipeID"] = 182967
-						},
-						{
-							["name"] = "Leystone Gauntlets",
-							["hash"] = "recipeID191930",
-							["previousRecipeID"] = 182967,
-							["recipeID"] = 191930
-						},
-						{
-							["name"] = "Leystone Greaves",
-							["hash"] = "recipeID182931",
-							["nextRecipeID"] = 182965,
-							["recipeID"] = 182931
-						},
-						{
-							["name"] = "Leystone Greaves",
-							["hash"] = "recipeID182965",
-							["nextRecipeID"] = 191931,
-							["previousRecipeID"] = 182931,
-							["recipeID"] = 182965
-						},
-						{
-							["name"] = "Leystone Greaves",
-							["hash"] = "recipeID191931",
-							["previousRecipeID"] = 182965,
-							["recipeID"] = 191931
-						},
-						{
-							["name"] = "Leystone Helm",
-							["hash"] = "recipeID182932",
-							["nextRecipeID"] = 182966,
-							["recipeID"] = 182932
-						},
-						{
-							["name"] = "Leystone Helm",
-							["hash"] = "recipeID182966",
-							["nextRecipeID"] = 191929,
-							["previousRecipeID"] = 182932,
-							["recipeID"] = 182966
-						},
-						{
-							["name"] = "Leystone Helm",
-							["hash"] = "recipeID191929",
-							["previousRecipeID"] = 182966,
-							["recipeID"] = 191929
-						},
-						{
-							["name"] = "Leystone Pauldrons",
-							["hash"] = "recipeID182930",
-							["nextRecipeID"] = 182964,
-							["recipeID"] = 182930
-						},
-						{
-							["name"] = "Leystone Pauldrons",
-							["hash"] = "recipeID182964",
-							["nextRecipeID"] = 182972,
-							["previousRecipeID"] = 182930,
-							["recipeID"] = 182964
-						},
-						{
-							["name"] = "Leystone Pauldrons",
-							["hash"] = "recipeID182972",
-							["previousRecipeID"] = 182964,
-							["recipeID"] = 182972
-						},
-						{
-							["name"] = "Leystone Waistguard",
-							["hash"] = "recipeID182929",
-							["nextRecipeID"] = 182963,
-							["recipeID"] = 182929
-						},
-						{
-							["name"] = "Leystone Waistguard",
-							["hash"] = "recipeID182963",
-							["nextRecipeID"] = 182971,
-							["previousRecipeID"] = 182929,
-							["recipeID"] = 182963
-						},
-						{
-							["name"] = "Leystone Waistguard",
-							["hash"] = "recipeID182971",
-							["previousRecipeID"] = 182963,
-							["recipeID"] = 182971
-						},
-						{
-							["name"] = "Rethu's Incessant Courage",
-							["hash"] = "recipeID239415",
-							["recipeID"] = 239415
-						}
 					}
 				},
 				{
@@ -2231,20 +1872,10 @@ profession(164, {	-- Blacksmithing
 					["hash"] = "categoryID428",
 					["g"] = {
 						{
-							["name"] = "Fel Core Hound Harness",
-							["hash"] = "recipeID213916",
-							["recipeID"] = 213916
-						},
-						{
 							["name"] = "Felslate Anchor",
 							["hash"] = "recipeID247700",
 							["recipeID"] = 247700
 						},
-						{
-							["name"] = "Leystone Hoofplates",
-							["hash"] = "recipeID182999",
-							["recipeID"] = 182999
-						}
 					}
 				}
 			}

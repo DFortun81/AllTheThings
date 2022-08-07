@@ -3036,6 +3036,19 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
+				n(92184, {	-- Imindril Spearsong <Blacksmithing Vendor>
+					["coord"] = { 46.2, 27.2, LEGION_DALARAN },
+					["g"] = {
+						i(123928),	-- Leystone Armguards [Rank 2] (RECIPE!)
+						i(123934),	-- Leystone Boots [Rank 2] (RECIPE!)
+						i(123935),	-- Leystone Breastplate [Rank 2] (RECIPE!)
+						i(123933),	-- Leystone Gauntlets [Rank 2] (RECIPE!)
+						i(137680),	-- Leystone Greaves [Rank 2] (RECIPE!)
+						i(123932),	-- Leystone Helm [Rank 2] (RECIPE!)
+						i(123930),	-- Leystone Pauldrons [Rank 2] (RECIPE!)
+						i(123929),	-- Leystone Waistguard [Rank 2] (RECIPE!)
+					},
+				}),
 				n(100500, {	-- Jabrul <Jewelcrafting Master>
 					["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
 					["coord"] = { 39.6, 34.5, LEGION_DALARAN },
@@ -6791,7 +6804,7 @@ _.Zones =
 						i(141862, {	-- Mote of Light (TOY!)
 							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
 						}),
-						i(136699, {	-- Recipe: Flamespike
+						i(136699, {	-- Recipe: Flamespike (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137935, {	-- Recipe: Leather Love Seat

@@ -67,7 +67,7 @@ root("Zones", m(BROKEN_ISLES, {
 					i(137910, {	-- Recipe: Battlebound Warhelm [Rank 3] (RECIPE!)
 						["cost"] = 5500000,	-- 550g
 					}),
-					i(136698, {	-- Recipe: Consecrated Spike
+					i(136698, {	-- Recipe: Consecrated Spike (RECIPE!)
 						["cost"] = 5500000,	-- 550g
 					}),
 					i(123954, {	-- Recipe: Demonsteel Boots [Rank 3] (RECIPE!)

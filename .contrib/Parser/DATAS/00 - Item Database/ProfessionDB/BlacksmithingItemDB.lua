@@ -1279,11 +1279,21 @@ i(127745, 187515);	-- Savage Truesteel Essence
 -- PATCH 7.0.3 --
 -----------------
 i(0, 195097);	-- Blacksmithing (Legion)
-
-i(123920, 182944);	-- Demonsteel Armguards [Rank 1]
+i(0, 182944);	-- Demonsteel Armguards [Rank 1]
+i(0, 184442);	-- Demonsteel Bar
+i(0, 182933);	-- Leystone Gauntlets [Rank 1]
+i(0, 182931);	-- Leystone Greaves [Rank 1]
+i(0, 182932);	-- Leystone Helm [Rank 1]
+i(0, 182999);	-- Leystone Hoofplates
+i(0, 182930);	-- Leystone Pauldrons [Rank 1]
+i(0, 182929);	-- Leystone Waistguard [Rank 1]
+i(0, 182928);	-- Leystone Armguards [Rank 1]
+i(0, 182934);	-- Leystone Boots [Rank 1]
+i(0, 182935);	-- Leystone Breastplate [Rank 1]
+-- ITEMS --
+i(136698, 209498);	-- Consecrated Spike
 i(123940, 182974);	-- Demonsteel Armguards [Rank 2]
 i(123948, 182982);	-- Demonsteel Armguards [Rank 3]
-i(0, 184442);	-- Demonsteel Bar
 i(123926, 182950);	-- Demonsteel Boots [Rank 1]
 i(123946, 182980);	-- Demonsteel Boots [Rank 2]
 i(123954, 182988);	-- Demonsteel Boots [Rank 3]
@@ -1306,38 +1316,64 @@ i(136709, 209564);	-- Demonsteel Stirrups
 i(123921, 182945);	-- Demonsteel Waistguard [Rank 1]
 i(123941, 182975);	-- Demonsteel Waistguard [Rank 2]
 i(123949, 182983);	-- Demonsteel Waistguard [Rank 3]
-
-
-i(0, 182928);	-- Leystone Armguards [Rank 1]
+i(136699, 209499);	-- Flamespike
+i(136697, 209497);	-- Gleaming Iron Spike
 i(123928, 182962);	-- Leystone Armguards [Rank 2]
 i(123936, 182970);	-- Leystone Armguards [Rank 3]
-i(0, 182934);	-- Leystone Boots [Rank 1]
 i(123934, 182968);	-- Leystone Boots [Rank 2]
 i(137605, 191928);	-- Leystone Boots [Rank 3]
-i(0, 182935);	-- Leystone Breastplate [Rank 1]
 i(123935, 182969);	-- Leystone Breastplate [Rank 2]
 i(123939, 182973);	-- Leystone Breastplate [Rank 3]
-i(0, 182933);	-- Leystone Gauntlets [Rank 1]
 i(123933, 182967);	-- Leystone Gauntlets [Rank 2]
 i(137606, 191930);	-- Leystone Gauntlets [Rank 3]
-i(0, 182931);	-- Leystone Greaves [Rank 1]
 i(137680, 182965);	-- Leystone Greaves [Rank 2]
 i(123931, 191931);	-- Leystone Greaves [Rank 3]
-i(0, 182932);	-- Leystone Helm [Rank 1]
 i(123932, 182966);	-- Leystone Helm [Rank 2]
 i(137607, 191929);	-- Leystone Helm [Rank 3]
-i(0, 182999);	-- Leystone Hoofplates
-i(0, 182930);	-- Leystone Pauldrons [Rank 1]
 i(123930, 182964);	-- Leystone Pauldrons [Rank 2]
 i(123938, 182972);	-- Leystone Pauldrons [Rank 3]
-i(0, 182929);	-- Leystone Waistguard [Rank 1]
 i(123929, 182963);	-- Leystone Waistguard [Rank 2]
 i(123937, 182971);	-- Leystone Waistguard [Rank 3]
-
-
-
-
+i(136696, 209496);	-- Terrorspike
+-- TRAINING --
+i(0, 184405);	-- Brimstone-Covered Armguards
+i(0, 184407);	-- Brimstone-Crusted Armguards
+i(0, 184184);	-- Dull Hard Leystone Armguards
+i(0, 184403);	-- Engraved Leystone Armguards
+i(0, 183562);	-- Handcrafted Leystone Gauntlets
+i(0, 184344);	-- Handmade Leystone Boots
+i(0, 184185);	-- Hard Leystone Armguards
+i(0, 184182);	-- Hard Leystone Bar
+i(0, 184309);	-- Hard Leystone Bar
+i(0, 184313);	-- Hard Leystone Ingots
+i(0, 184315);	-- Hard Leystone Nail
+i(0, 184183);	-- Heated Hard Leystone Bar
+i(0, 184314);	-- Heated Hard Leystone Ingot
+i(0, 183280);	-- Heated Leystone Bar
+i(0, 184216);	-- Large Heated Scrap Metal
+i(0, 183279);	-- Leystone Bar
+i(0, 183281);	-- Leystone Cuffplate
+i(0, 183283);	-- Leystone Fingerguard
+i(0, 184339);	-- Leystone Footguard
+i(0, 184338);	-- Leystone Heelguard
+i(0, 184310);	-- Leystone Shards
+i(0, 184337);	-- Leystone Shinplate
+i(0, 184308);	-- Leystone Slag
+i(0, 184181);	-- Leystone Slag
+i(0, 184340);	-- Leystone Soleplate
+i(0, 184312);	-- Lumps of Leystone Slag
+i(0, 184408);	-- Masterwork Leystone Armguards
+i(0, 184215);	-- Medium Heated Scrap Metal
+i(0, 184404);	-- Molten Brimstone
+i(0, 184336);	-- Red-Hot Leystone Bar
+i(0, 184217);	-- Scrapmetal Fingerplates
+i(0, 184219);	-- Scrapmetal Handguard
+i(0, 184220);	-- Scrapmetal Cuffplate
+i(0, 184218);	-- Scrapmetal Palmplate
+i(0, 184214);	-- Small Heated Scrap Metal
 -- NYI --
+-- Items --
+i(123920, 0);	-- Demonsteel Armguards [Rank 1]
 i(124462, 0);	-- Demonsteel Bar
 i(123899, 0);	-- Leystone Armguards [Rank 1]
 i(123905, 0);	-- Leystone Boots [Rank 1]
@@ -1348,96 +1384,41 @@ i(123903, 0);	-- Leystone Helm [Rank 1]
 i(123957, 0);	-- Leystone Hoofplates
 i(123901, 0);	-- Leystone Pauldrons [Rank 1]
 i(123900, 0);	-- Leystone Waistguard [Rank 1]
-
--- QUest
-
-i(0, 184407);	-- Brimstone-Crusted Armguards
-i(0, 184405);	-- Brimstone-Covered Armguards
-i(0, 184403);	-- Engraved Leystone Armguards
-i(0, 184408);	-- Masterwork Leystone Armguards
-i(0, 184404);	-- Molten Brimstone
-
-i(0, 183279);	-- Leystone Bar
-i(0, 183281);	-- Leystone Cuffplate
-i(0, 183562);	-- Handcrafted Leystone Gauntlets
-i(0, 183280);	-- Heated Leystone Bar
-i(0, 183283);	-- Leystone Fingerguard
-
-i(0, 184339);	-- Leystone Footguard
-i(0, 184338);	-- Leystone Heelguard
-i(0, 184344);	-- Handmade Leystone Boots
-i(0, 184340);	-- Leystone Soleplate
-i(0, 184337);	-- Leystone Shinplate
-i(0, 184336);	-- Red-Hot Leystone Bar
-
-i(0, 184217);	-- Scrapmetal Fingerplates
-i(0, 184219);	-- Scrapmetal Handguard
-i(0, 184220);	-- Scrapmetal Cuffplate
-i(0, 184218);	-- Scrapmetal Palmplate
-i(0, 184216);	-- Large Heated Scrap Metal
-i(0, 184214);	-- Small Heated Scrap Metal
-i(0, 184215);	-- Medium Heated Scrap Metal
-
-i(0, 184313);	-- Hard Leystone Ingots
-i(0, 184315);	-- Hard Leystone Nail
-i(0, 184314);	-- Heated Hard Leystone Ingot
-i(0, 184310);	-- Leystone Shards
-i(0, 184312);	-- Lumps of Leystone Slag
-i(0, 184309);	-- Hard Leystone Bar
-i(0, 184308);	-- Leystone Slag
-
-i(0, 184184);	-- Dull Hard Leystone Armguards
-i(0, 184185);	-- Hard Leystone Armguards
-i(0, 184182);	-- Hard Leystone Bar
-i(0, 184183);	-- Heated Hard Leystone Bar
-i(0, 184181);	-- Leystone Slag
-
-
-
-
-
-
-
-
-i(136696, 209496);	-- Terrorspike
-i(137687, 213916);	-- Fel Core Hound Harness
-
-i(136697, 209497);	-- Gleaming Iron Spike
-
-
-i(136699, 209499);	-- Flamespike
-
-
-
-
-i(136698, 209498);	-- Consecrated Spike
-
--- Quest(NYI)
+-- Training --
+i(0, 184345);	-- Handmade Leystone Helm
 i(0, 184342);	-- Leystone Dome
 i(0, 184341);	-- Leystone Faceguard
 i(0, 184343);	-- Leystone Neckplate
 i(0, 183278);	-- Leystone Slag
-i(0, 184345);	-- Handmade Leystone Helm
--- nyi
 i(0, 171652);	-- Upgrade Weapon
 i(0, 171653);	-- Upgrade Weapon
+
+-----------------
+-- PATCH 7.1.0 --
+-----------------
+i(137687, 213916);	-- Fel Core Hound Harness (added in start but nighthold not opened until later)
+
 -----------------
 -- PATCH 7.2.0 --
 -----------------
 i(0, 239415);	-- Rethu's Incessant Courage
+
 -----------------
 -- PATCH 7.3.0 --
 -----------------
-i(151711, 247710);	-- Empyrial Breastplate [Rank 1]
+i(0, 247700);	-- Felslate Anchor
+i(0, 247710);	-- Empyrial Breastplate [Rank 1]
+-- ITEMS --
 i(151712, 247713);	-- Empyrial Breastplate [Rank 2]
 i(151713, 247714);	-- Empyrial Breastplate [Rank 3]
-i(151709, 247700);	-- Felslate Anchor
-
-
-i(0, 248870);	-- Empyrial Breastplate Quest?
+-- NYI --
+i(151711, 0);	-- Empyrial Breastplate [Rank 1]
+i(151709, 0);	-- Felslate Anchor
+i(0, 248870);	-- Empyrial Breastplate
 i(0, 248864);	-- Empyrial Rivets
 i(0, 248869);	-- Empyrial Back Plate
 i(0, 248867);	-- Empyrial Chest Plate
+
 -----------------
 -- PATCH 8.0.1 --
 -----------------

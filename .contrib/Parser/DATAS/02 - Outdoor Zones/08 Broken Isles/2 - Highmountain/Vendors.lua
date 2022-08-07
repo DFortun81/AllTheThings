@@ -75,7 +75,7 @@ _.Zones =
 						i(142409, {	-- Recipe: Drums of the Mountain [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(136697, {	-- Recipe: Gleaming Iron Spike
+						i(136697, {	-- Recipe: Gleaming Iron Spike (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
 						i(140576),	-- Tabard of the Hightmountain Tribe

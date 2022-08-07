@@ -481,7 +481,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["timeline"]={ "added 7.0.3", "removed 8.0.1" },
 						["collectible"] = false,
 					}),
-					r(264446, {["timeline"]={"added 8.0.1"}}),	-- Legion Blacksmithing
+					applyclassicphase(BFA_PHASE_ONE, r(264446, {["timeline"]={"added 8.0.1"}})),	-- Legion Blacksmithing
 				},
 			}),
 			q(39681, {	-- The Properties of Leystone
@@ -743,9 +743,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 				["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
 				["maps"] = { 706, 707, 708 },	-- Maw of Souls
-				["g"] = {
-					i(136696),	-- Recipe: Terrorspike (RECIPE!)
-				},
 			}),
 			q(38559, {	-- Worthy of the Stone
 				["sourceQuests"] = {
@@ -768,73 +765,123 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
 				["g"] = {
-					i(123920),	-- Recipe: Demonsteel Armguards [Rank 1] (RECIPE!)
+					r(182944),	-- Demonsteel Armguards [Rank 1] (RECIPE!)
 				},
 			}),
 			q(38534, {	-- Demonsteel Armguards
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123917, 1 } },	-- 1xDemonsteel Armguards
 				["g"] = {
 					i(123940),	-- Recipe: Demonsteel Armguards [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38538, {	-- Demonsteel Boots
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123911, 1 } },	-- 1xDemonsteel Boots
 				["g"] = {
 					i(123946),	-- Recipe: Demonsteel Boots [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38542, {	-- Demonsteel Breastplate
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123910, 1 } },	-- 1xDemonsteel Breastplate
 				["g"] = {
 					i(123947),	-- Recipe: Demonsteel Breastplate [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38539, {	-- Demonsteel Gauntlets
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123912, 1 } },	-- 1xDemonsteel Gauntlets
 				["g"] = {
 					i(123945),	-- Recipe: Demonsteel Gauntlets [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38541, {	-- Demonsteel Greaves
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123914, 1 } },	-- 1xDemonsteel Greaves
 				["g"] = {
 					i(123943),	-- Recipe: Demonsteel Greaves [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38540, {	-- Demonsteel Helm
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123913, 1 } },	-- 1xDemonsteel Helm
 				["g"] = {
 					i(123944),	-- Recipe: Demonsteel Helm [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38537, {	-- Demonsteel Pauldrons
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123915, 1 } },	-- 1xDemonsteel Pauldrons
 				["g"] = {
 					i(123942),	-- Recipe: Demonsteel Pauldrons [Rank 2] (RECIPE!)
 				},
 			}),
 			q(38536, {	-- Demonsteel Waistguard
 				["description"] = "Create one Rank 1 of this item.",
+				["sourceQuests"] = { 38533 },	-- Tribal Knowledge
 				["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
 				["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
+				["cost"] = { {"i", 123916, 1 } },	-- 1xDemonsteel Waistguard
 				["g"] = {
 					i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2] (RECIPE!)
 				},
 			}),
+			q(48055, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Empyrial Strength
+				["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+				["provider"] = { "n", 125341 },	-- Khamir
+				--["coord"] = { X, Y, MAP },
+				["cost"] = {
+					{ "i", 151564, 42 },	-- 42xEmpyrium
+					{ "i", 151568, 2 },		-- 2xPrimal Sargerite
+				},
+				["g"] = {
+					r(247710),	-- Empyrial Breastplate [Rank 1] (RECIPE!)
+					r(248870, {["u"]=TRAINING}),	-- Empyrial Breastplate
+					r(248864, {["u"]=TRAINING}),	-- Empyrial Rivets
+					r(248869, {["u"]=TRAINING}),	-- Empyrial Back Plate
+					r(248867, {["u"]=TRAINING}),	-- Empyrial Chest Plate
+				},
+			})),
+			q(48053, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Weigh Anchor
+				["sourceQuests"] = { 38499 },	-- Strange New Ores
+				["provider"] = { "n", 92183 },	-- Alard Schmied
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					r(247700),	-- Felslate Anchor
+				},
+			})),
+			q(48054, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Weigh Anchor
+				["sourceQuests"] = { 38499 },	-- Strange New Ores
+				["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
+				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					r(247700),	-- Felslate Anchor
+				},
+			})),
 		})),
 		prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 			q(39874, {	-- Some Enchanted Evening

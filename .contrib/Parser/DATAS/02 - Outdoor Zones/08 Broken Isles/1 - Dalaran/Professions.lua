@@ -269,21 +269,10 @@ _.Zones =
 					}),
 				}),
 				prof(BLACKSMITHING, {
-				-- Later
-					q(48053, {	-- Weigh Anchor
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 38499,	-- Strange New Ores
+					n(92183, {	-- Alard Schmied
+						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(151709),	-- Recipe: Felslate Anchor
-						},
-					}),
-					q(48054, {	-- Weigh Anchor
-						["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 38499,	-- Strange New Ores
-						["g"] = {
-							i(151709),	-- Recipe: Felslate Anchor
+							r(239415, {["timeline"]={"added 7.2.0"}}),	-- Rethu's Incessant Courage
 						},
 					}),
 				}),

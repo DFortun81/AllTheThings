@@ -19,6 +19,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264434, {["timeline"]={"added 8.0.1"}})),	-- Blacksmithing
 	n(ARMOR, {
 		r(2661),	-- Copper Chain Belt
 		r(3319),	-- Copper Chain Boots
@@ -166,6 +167,7 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264436, {["timeline"]={"added 8.0.1"}})),	-- Outland Blacksmithing
 	n(ARMOR, {
 		r(29553),	-- Fel Iron Chain Bracers
 		r(29551),	-- Fel Iron Chain Coif
@@ -238,6 +240,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264438, {["timeline"]={"added 8.0.1"}})),	-- Northrend Blacksmithing
 	n(ARMOR, {
 		r(59436),	-- Brilliant Saronite Belt
 		r(55057),	-- Brilliant Saronite Boots
@@ -318,7 +321,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(55201),	-- Cobalt Tenderizer
 		r(54550),	-- Cobalt Triangle Shield
 		r(56280),	-- Cudgel of Saronite Justice
-		r(55206, {["timeline"]={"added 3.0.2"}}),	-- Deadly Saronite Dirk
+		r(55206),	-- Deadly Saronite Dirk
 		r(55203),	-- Forged Cobalt Claymore
 		r(55182),	-- Furious Saronite Beatstick
 		r(55174),	-- Honed Cobalt Cleaver
@@ -359,6 +362,7 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264440, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Blacksmithing
 	n(ARMOR, {
 		r(76181),	-- Hardened Obsidium Belt
 		r(76182),	-- Hardened Obsidium Boots
@@ -508,8 +512,10 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbl
 }));
 MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
 	r(110396, {	-- Blacksmithing (Zen Master)
+		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264442, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Blacksmithing
 	n(ARMOR, {
 		r(122583),	-- Ghost-Forged Belt
 		r(122638),	-- Ghost-Forged Blade
@@ -592,6 +598,7 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
 		}),
+		applyclassicphase(BFA_PHASE_ONE, r(264444, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		r(171692),	-- Smoldering Breastplate
 		r(171693),	-- Smoldering Greaves
 		r(171691),	-- Smoldering Helm
@@ -890,7 +897,7 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = 
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(74216, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Agility
 		r(74201),	-- Critical Strike[Bracer]
@@ -984,7 +991,7 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(104398),	-- Accuracy
 		r(104409),	-- Blurred Speed
@@ -1034,7 +1041,7 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
 		}),
-		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
+		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		r(158907),	-- Breath of Critical Strike
 		r(158908),	-- Breath of Haste
 		r(158909),	-- Breath of Mastery
