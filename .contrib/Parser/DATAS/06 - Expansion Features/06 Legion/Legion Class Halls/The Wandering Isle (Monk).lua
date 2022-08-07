@@ -763,6 +763,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							}),
 							i(136800, {	-- Meditation Manual: Zen Flight
 								["spellID"] = 125883,	-- Zen Flight
+								["f"] = RECIPES,
 							}),
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
