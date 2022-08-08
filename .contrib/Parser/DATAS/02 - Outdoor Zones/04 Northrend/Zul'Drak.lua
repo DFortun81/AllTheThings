@@ -12,16 +12,17 @@ root("Zones", {
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(18, {	-- Gutretch
 								["coord"] = { 13.2, 66.8, ZULDRAK },
 								["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
 							}),
 						},
 					})),
+					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Betrayal
 								["sourceQuest"] = 12713,	-- Betrayal
 							}),
@@ -29,7 +30,7 @@ root("Zones", {
 					}),
 					ach(1576, {	-- Of Blood and Anguish
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- The Champion of Anguish
 								["sourceQuest"] = 12948,	-- The Champion of Anguish
 							}),
@@ -129,7 +130,7 @@ root("Zones", {
 						["coord"] = { 58.2, 72.0, ZULDRAK },
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["sourceQuest"] = 12583,	-- Crashed Sprayer
-						["g"] = {
+						["groups"] = {
 							i(39806),	-- Blade of Diligence
 							i(39822),	-- Knife of the Dutybound
 							i(39824),	-- Cleaver of Diligence
@@ -142,7 +143,7 @@ root("Zones", {
 						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["sourceQuest"] = 12646,	-- My Prophet, My Enemy
-						["g"] = {
+						["groups"] = {
 							i(39789),	-- Bloodbinder's Shoulderpads
 							i(39858),	-- Drape of the Bloodletter
 							i(39825),	-- Belt of the Bloodbinder
@@ -158,7 +159,7 @@ root("Zones", {
 						["coord"] = { 40.4, 48.1, ZULDRAK },
 						["qg"] = 28056,	-- Sergeant Stackhammer
 						["sourceQuest"] = 12505,	-- New Orders for Sergeant Stackhammer
-						["g"] = {
+						["groups"] = {
 							i(39771),	-- Embattled Legwraps
 							i(39834),	-- Embattled Jerkin
 							i(39780),	-- Valiant Belt of Battle
@@ -174,7 +175,7 @@ root("Zones", {
 						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12676,	-- Sabotage
-						["g"] = {
+						["groups"] = {
 							i(39655),	-- Betrayer's Choker
 							i(39653),	-- Choker of Betrayal
 							i(39652),	-- Choker of the Betrayer
@@ -212,7 +213,7 @@ root("Zones", {
 						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["qg"] = 28480,	-- Element-Tamer Dagoda
 						["sourceQuest"] = 12640,	-- Sealing the Rifts
-						["g"] = {
+						["groups"] = {
 							i(39777),	-- Band of Misty Mojo
 							i(39836),	-- Supple Mantle of the Bloodletter
 							i(39788),	-- Leggings of the Ritual
@@ -223,7 +224,7 @@ root("Zones", {
 						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12628,	-- To Speak With Har'koa
-						["g"] = {
+						["groups"] = {
 							i(39787),	-- Soothsayer's Handwraps
 							i(39856),	-- Bloodletter's Pants
 							i(39821),	-- Spiritist's Focus
@@ -234,7 +235,7 @@ root("Zones", {
 						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["qg"] = 28045,	-- Captain Arnath
 						["sourceQuest"] = 12799,	-- Siphoning the Spirits
-						["g"] = {
+						["groups"] = {
 							i(39804),	-- Braided Bat Sinew
 							i(39867),	-- Bat Fur Mitts
 							i(39854),	-- Huntsman's Jerkin
@@ -257,10 +258,10 @@ root("Zones", {
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["isDaily"] = true,
 						["qg"] = 28039,	-- Commander Kunz
-						["g"] = {
+						["groups"] = {
 							i(43556, {	-- Patroller's Pack
 								["description"] = "Small chance to contain listed items.",
-								["g"] = {
+								["groups"] = {
 									i(36335),	-- Grizzlemaw Helm
 									i(36003),	-- Icemist Sash
 									i(36128),	-- Muradin Pants
@@ -273,7 +274,7 @@ root("Zones", {
 						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12729,	-- The Gods Have Spoken
-						["g"] = {
+						["groups"] = {
 							i(41890),	-- Robe of the Conquered Prophet
 							i(41891),	-- Intricate Zandalari Tunic
 							i(41905),	-- Chestguard of Rampaging Fury
@@ -343,7 +344,7 @@ root("Zones", {
 						["qg"] = 28589,	-- Gristlegut
 						["sourceQuest"] = 12643,	-- Silver Lining
 						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.",
-						["g"] = {
+						["groups"] = {
 							i(39812),	-- Soiled Trousers
 							i(39876),	-- Aged Abomination Tripe
 							i(39880),	-- Redigested Mail Scraps
@@ -369,7 +370,7 @@ root("Zones", {
 					q(13098, {	-- For Posterity
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 30676,	-- Chronicler Bah'Kini
-						["g"] = {
+						["groups"] = {
 							i(43177),	-- Voodoo Signet
 							i(43178),	-- Ring of Foul Mojo
 							i(43179),	-- Solid Platinum Band
@@ -379,7 +380,7 @@ root("Zones", {
 					q(13096, {	-- Gal'darah Must Pay
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 30671,	-- Tol'mar
-						["g"] = {
+						["groups"] = {
 							i(43164),	-- Sly Mojo Sash
 							i(43165),	-- Strange Voodoo Belt
 							i(43167),	-- Ranger's Belt of the Fallen Empire
@@ -405,7 +406,7 @@ root("Zones", {
 						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12668,	-- Foundation for Revenge
-						["g"] = {
+						["groups"] = {
 							i(39791),	-- Soothsayer's Wristwraps
 							i(39859),	-- Bloodletter's Skullcap
 							i(39839),	-- Ritualistic Shoulderguards
@@ -416,7 +417,7 @@ root("Zones", {
 						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
-						["g"] = {
+						["groups"] = {
 							i(39797),	-- Bloodbinder's Hood
 							i(39863),	-- Supple Vest of the Bloodbinder
 							i(39848),	-- Neckcharm of the Bloodletter
@@ -443,7 +444,7 @@ root("Zones", {
 							12648,	-- Dressing Down (Available if you DON'T complete "Cleansing Drak'Tharon")
 							12649,	-- Suit Up! (Available if you DO complete "Cleansing Drak'Tharon")
 						},
-						["g"] = {
+						["groups"] = {
 							i(39809),	-- Sandals of Spying
 							i(39869),	-- Double-Agent's Wristwraps
 							i(39866),	-- Gauntlets of the Secret Agent
@@ -480,7 +481,7 @@ root("Zones", {
 					q(12512, {	-- Leave No One Behind -- aa
 						["coord"] = { 58.6, 72.4, ZULDRAK },
 						["qg"] = 28125,	-- Dr. Rogers
-						["g"] = {
+						["groups"] = {
 							i(39807),	-- Rescuer's Cloak
 							i(39868),	-- Ravager's Skullcap
 							i(39857),	-- Rescuer's Binding
@@ -501,7 +502,7 @@ root("Zones", {
 						["coord"] = { 58.0, 72.0, ZULDRAK },
 						["qg"] = 28283,	-- Sergeant Moonshard
 						["sourceQuest"] = 12552,	-- Death to the Necromagi
-						["g"] = {
+						["groups"] = {
 							i(43160),	-- Leggings of Fastidious Decapitation
 							i(43161),	-- Legguards of Solemn Revenge
 							i(43162),	-- Ceremonial Pike Leggings
@@ -542,7 +543,7 @@ root("Zones", {
 					q(13111, {	-- One of a Kind
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 30676,	-- Chronicler Bah'Kini
-						["g"] = {
+						["groups"] = {
 							i(43171),	-- Fur-Lined Moccasins
 							i(43172),	-- Rhino Hide Kneeboots
 							i(43173),	-- Scaled Boots of Fallen Hope
@@ -564,7 +565,7 @@ root("Zones", {
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
-						["g"] = {
+						["groups"] = {
 							i(39800),	-- Pantaloons of the Dutybound
 							i(39864),	-- Belt of Service
 							i(39850),	-- Wristguards of Service
@@ -575,7 +576,7 @@ root("Zones", {
 					q(12740, {	-- Parachutes for the Argent Crusade -- aa
 						["coord"] = { 39.4, 66.9, ZULDRAK },
 						["qg"] = 28059,	-- Commander Falstaav
-						["g"] = {
+						["groups"] = {
 							i(39779),	-- Crusader's Ripcord
 							i(39840),	-- Rescuer's Ripcord
 							i(39799),	-- Rescuer's Chestguard
@@ -592,7 +593,7 @@ root("Zones", {
 						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12507,	-- Strange Mojo
-						["g"] = {
+						["groups"] = {
 							i(39781),	-- Bloodbinder's Raiment
 							i(39842),	-- Bloodletter's Boots
 							i(39803),	-- Gauntlets of the Great Sacrifice
@@ -608,7 +609,7 @@ root("Zones", {
 						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12552,	-- Death to the Necromagi
-						["g"] = {
+						["groups"] = {
 							i(39773),	-- Soothsayer's Shoulderpads
 							i(39837),	-- Gloves of Swift Death
 							i(39795),	-- Boots of the Altar
@@ -619,7 +620,7 @@ root("Zones", {
 						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12712,	-- The Key of Warlord Zol'Maz
-						["g"] = {
+						["groups"] = {
 							i(39794),	-- Bloodbinder's Gloves
 							i(39862),	-- Supple Vest of the Bloodletter
 							i(39846),	-- Bloodletter's Headgear
@@ -642,7 +643,7 @@ root("Zones", {
 						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12677,	-- Hazardous Materials
-						["g"] = {
+						["groups"] = {
 							i(39811),	-- Badge of the Infiltrator
 							i(39873),	-- Skins of Subterfuge
 							i(39875),	-- Shoulderguards of Subterfuge
@@ -693,7 +694,7 @@ root("Zones", {
 						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
-						["g"] = {
+						["groups"] = {
 							i(39810),	-- Cords of Duplicity
 							i(39871),	-- Subtle Boots of the Infiltrator
 							i(39872),	-- Helm of Subtle Whispers
@@ -715,7 +716,7 @@ root("Zones", {
 						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["qg"] = 28045,	-- Captain Arnath
 						["sourceQuest"] = 12799,	-- Siphoning the Spirits
-						["g"] = {
+						["groups"] = {
 							i(39865),	-- Knuckle of Victory
 							i(39852),	-- Victorious Spellblade
 							i(39853),	-- Thorny Bough of the Light
@@ -752,7 +753,7 @@ root("Zones", {
 						["coord"] = { 25.2, 63.9, ZULDRAK },
 						["qg"] = 29689,	-- Crusader MacKellar
 						["sourceQuest"] = 12894,	-- Crusader Forward Camp
-						["g"] = {
+						["groups"] = {
 							i(39886),	-- Greenhealer's Gauntlets
 							i(39816),	-- Medic's Hood
 							i(39890),	-- Purifier's Pantaloons
@@ -808,7 +809,7 @@ root("Zones", {
 						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12936,	-- The Amphitheater of Anguish: Korrak the Bloodrager!
-						["g"] = {
+						["groups"] = {
 							i(41815),	-- Icier Barbed Spear
 							i(41821),	-- Chilly Slobberknocker
 							i(41825),	-- Wodin's Second-Best Shanker
@@ -831,7 +832,7 @@ root("Zones", {
 						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["qg"] = 28480,	-- Element-Tamer Dagoda
 						["sourceQuest"] = 12622,	-- The Leaders at Jin'Alai
-						["g"] = {
+						["groups"] = {
 							i(39772),	-- Bloodbinder's Wrist Wraps
 							i(39835),	-- Supple Bloodbinder's Helm
 							i(39783),	-- Bloodbinder's Gauntlets
@@ -852,7 +853,7 @@ root("Zones", {
 						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuest"] = 12623,	-- To the Witch Doctor
-						["g"] = {
+						["groups"] = {
 							i(39775),	-- Soothsayer's Sandals
 							i(39838),	-- Supple Belt of the Bloodletter
 							i(39796),	-- Boots of the Great Sacrifice
@@ -860,16 +861,11 @@ root("Zones", {
 							i(20390),	-- Candy Bar
 						},
 					}),
-					q(12796, {	-- The Magical Kingdom of Dalaran -- aa
-						["coord"] = { 40.6, 66.9, ZULDRAK },
-						["qg"] = 29169,	-- Magister Teronus III
-						["isBreadcrumb"] = true,
-					}),
 					q(12919, {	-- The Storm King's Vengeance
 						["coord"] = { 19.7, 56.3, ZULDRAK },
 						["qg"] = 29647,	-- Gymer
 						["sourceQuest"] = 12916,	-- Our Only Hope
-						["g"] = {
+						["groups"] = {
 							i(41826),	-- Grips of the Giant-Rider
 							i(41829),	-- Horns of Electrified Terror
 							i(41844),	-- Bracers of Vengeful Flight
@@ -880,7 +876,7 @@ root("Zones", {
 					q(12859, {	-- This Just In: Fire Still Hot! -- aa
 						["coord"] = { 32.0, 75.5, ZULDRAK },
 						["qg"] = 29733,	-- Elder Shaman Moky
-						["g"] = {
+						["groups"] = {
 							i(41755, {	-- The Fire Extinguisher
 								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 							}),
@@ -906,7 +902,7 @@ root("Zones", {
 						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12514,	-- Mushroom Mixer
-						["g"] = {
+						["groups"] = {
 							i(39785),	-- Soothsayer's Garb
 							i(39843),	-- Supple Wristguards
 							i(39815),	-- Bloodbinder's Links
@@ -998,7 +994,7 @@ root("Zones", {
 					q(12861, {	-- Trolls Is Gone Crazy! -- aa
 						["coord"] = { 32.1, 75.6, ZULDRAK },
 						["qg"] = 29690,	-- Chief Rageclaw
-						["g"] = {
+						["groups"] = {
 							i(41760),	-- Emancipator's Robes
 							i(41761),	-- Wristguard of Healing Fingers
 							i(41762),	-- Freedom-Path Treads
@@ -1020,7 +1016,7 @@ root("Zones", {
 						["coord"] = { 32.2, 75.6, ZULDRAK },
 						["model"] = 199475,
 						["provider"] = { "o", 191728 },	-- Wanted!
-						["g"] = {
+						["groups"] = {
 							i(41987),	-- Staff of the Sorrowful Chieftain
 							i(44734),	-- Hammer of Quiet Mourning
 							i(44735),	-- Crescent of Brooding Fury
@@ -1031,7 +1027,7 @@ root("Zones", {
 						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
-						["g"] = {
+						["groups"] = {
 							i(39770),	-- Soothsayer's Hood
 							i(39833),	-- Supple Bloodbinder's Boots
 							i(39776),	-- Bloodbinder's Shoulderguards
@@ -1049,7 +1045,7 @@ root("Zones", {
 						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12684,	-- Blood of a Dead God
-						["g"] = {
+						["groups"] = {
 							i(39844),	-- Ritualistic Shield
 							i(39861),	-- Supple Bloodbinder's Leggings
 							i(39793),	-- Neckcharm of Mighty Mojo
@@ -1078,7 +1074,7 @@ root("Zones", {
 							{ 77.6, 70.0, ZULDRAK },
 							{ 67.8, 78.8, ZULDRAK },
 						},
-						["g"] = {
+						["groups"] = {
 							i(46324),	-- Gondria's Spectral Claw
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
@@ -1094,7 +1090,7 @@ root("Zones", {
 							{ 24.8, 76.8, ZULDRAK },
 							{ 21.2, 79.8, ZULDRAK },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(17, {	-- Griegen
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1112,7 +1108,7 @@ root("Zones", {
 							{ 71.8, 23.8, ZULDRAK },
 							{ 82.0, 35.0, ZULDRAK },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(18, {	-- Terror Spinner
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1146,7 +1142,7 @@ root("Zones", {
 							{ 24.6, 82.6, ZULDRAK },
 							{ 21.2, 82.6, ZULDRAK },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(16, {	-- Zul'drak Sentinel
 								["achievementID"] = 2257,	-- Frostbitten
 							}),

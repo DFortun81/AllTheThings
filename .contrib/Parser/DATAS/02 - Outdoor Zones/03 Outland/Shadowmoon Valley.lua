@@ -30,13 +30,11 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
+					explorationAch(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],

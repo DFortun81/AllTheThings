@@ -86,13 +86,11 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(863, {	-- Explore Zangarmarsh
+					explorationAch(863, {	-- Explore Zangarmarsh
 						-- #if BEFORE WRATH
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					removeclassicphase(ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA

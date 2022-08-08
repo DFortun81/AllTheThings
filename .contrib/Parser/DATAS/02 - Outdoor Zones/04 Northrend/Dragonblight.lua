@@ -12,17 +12,17 @@ root("Zones", {
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(30, {	-- Okrut Dragonwaste
 								["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 								["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
 							}),
 						},
 					})),
-					ach(1265),	-- Explore Dragonblight
+					explorationAch(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- The Warden's Task
 								["sourceQuest"] = 12169,	-- The High Cultist
 							}),
@@ -61,7 +61,7 @@ root("Zones", {
 					}),
 					ach(1359, {	-- Might of Dragonblight (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- The Taunka
 								["sourceQuest"] = 12008,	-- Agmar's Hammer
 							}),
@@ -196,7 +196,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27316,	-- Inquisitor Hallard
 						["sourceQuest"] = 12320,	-- Understanding the Language of Death
-						["g"] = {
+						["groups"] = {
 							i(37950),	-- Highseas Wristwraps
 							i(37993),	-- Glade Wanderer Boots
 							i(38037),	-- Westwind Shoulderguards
@@ -237,7 +237,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26379,	-- Overlord Agmar
 						["sourceQuest"] = 12069,	-- Return of the High Chief
-						["g"] = {
+						["groups"] = {
 							i(38293),	-- Suntouched Flowers
 							i(38002),	-- Honorborn Cloak
 							i(38106),	-- Petrified Bone Footguards
@@ -266,7 +266,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12065,	-- The Focus on the Beach
-						["g"] = {
+						["groups"] = {
 							i(37942),	-- Kirin Tor Initiate's Sandals
 							i(37985),	-- Violet Stalker Shoulderpads
 							i(38029),	-- Azurehunter Handguards
@@ -278,7 +278,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12066,	-- The Focus on the Beach
-						["g"] = {
+						["groups"] = {
 							i(37942),	-- Kirin Tor Initiate's Sandals
 							i(37985),	-- Violet Stalker Shoulderpads
 							i(38029),	-- Azurehunter Handguards
@@ -335,7 +335,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26574,	-- Valnok Windrager
 						["sourceQuest"] = 12071,	-- Attack by Air!
-						["g"] = {
+						["groups"] = {
 							i(37957),	-- Wastewind Bracers
 							i(37999),	-- Glade Wanderer Bracers
 							i(38103),	-- Petrified Bone Chestguard
@@ -358,7 +358,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27320,	-- Deathguard Molder
 						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths
-						["g"] = {
+						["groups"] = {
 							i(37949),	-- Saboteur's Wrap
 							i(37992),	-- Ritual Neckguard
 							i(38284),	-- Siegemaster's Torch Ring
@@ -369,7 +369,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27319,	-- Yord "Calamity" Icebeard
 						["sourceQuest"] = 12326,	-- Steamtank Surprise
-						["g"] = {
+						["groups"] = {
 							i(37959),	-- Wastewind Pauldrons
 							i(38001),	-- Snowfall Reaver Pauldrons
 							i(38044),	-- Anub'ar-Husk Shoulderguards
@@ -381,7 +381,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26978,	-- Duane
 						["sourceQuest"] = 12142,	-- Pest Control
-						["g"] = {
+						["groups"] = {
 							i(37965),	-- Wyrmward Cover
 							i(38007),	-- Canyon Runner's Vest
 							i(38049),	-- Wyrmchaser's Waistguard
@@ -393,7 +393,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26979,	-- Kontokanis
 						["sourceQuest"] = 12144,	-- Pest Control
-						["g"] = {
+						["groups"] = {
 							i(37965),	-- Wyrmward Cover
 							i(38007),	-- Canyon Runner's Vest
 							i(38049),	-- Wyrmchaser's Waistguard
@@ -405,7 +405,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26733,	-- Banthok Icemist
 						["sourceQuest"] = 12063,	-- Strength of Icemist
-						["g"] = {
+						["groups"] = {
 							i(37959),	-- Wastewind Pauldrons
 							i(38001),	-- Snowfall Reaver Pauldrons
 							i(38044),	-- Anub'ar-Husk Shoulderguards
@@ -423,7 +423,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27844,	-- Legion Commander Tyralion
 						["sourceQuest"] = 12466,	-- Chasing Icestorm: The 7th Legion Front
-						["g"] = {
+						["groups"] = {
 							i(37958),	-- Wastewind Headcover
 							i(38000),	-- Snowfall Reaver Breastplate
 							i(38043),	-- Anub'ar-Husk Leggings
@@ -442,7 +442,7 @@ root("Zones", {
 						["modelScale"] = 9.8,
 						["provider"] = { "o", 188419 },	--	Elder Mana'loa
 						["sourceQuest"] = 12031,	-- Freedom for the Lingering
-						["g"] = {
+						["groups"] = {
 							i(38148),	-- Chilled Headsmasher
 							i(38150),	-- Imported Ironshod Crossbow
 							i(38128),	-- Staff of the Spiked Beast
@@ -494,7 +494,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["sourceQuest"] = 12283,	-- The Trull Will Out
-						["g"] = {
+						["groups"] = {
 							i(38536),	-- Bindings of the Forceful Vanquisher
 							i(38537),	-- Cuffs of the Decapitator
 							i(38535),	-- Wristguards of the Remorseful
@@ -516,7 +516,7 @@ root("Zones", {
 						["coord"] = { 24.1, 60.0, DRAGONBLIGHT },
 						["qg"] = 26501,	-- Ethenial Moonshadow
 						["sourceQuest"] = 12006,	-- Avenge this Atrocity!
-						["g"] = {
+						["groups"] = {
 							i(37941),	-- Fading Handwraps
 							i(37984),	-- Deathtouched Boots
 							i(38092),	-- Crystalplate Pauldrons
@@ -540,7 +540,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["sourceQuest"] = 12240,	-- A Means to an End
-						["g"] = {
+						["groups"] = {
 							i(37950),	-- Highseas Wristwraps
 							i(37993),	-- Glade Wanderer Boots
 							i(38037),	-- Westwind Shoulderguards
@@ -580,7 +580,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27314,	-- Zelig the Visionary
 						["sourceQuest"] = 12475,	-- What Secrets Men Hide
-						["g"] = {
+						["groups"] = {
 							i(38530),	-- Wrap of Vigorous Destruction
 							i(38532),	-- Belt of Vengeful Purification
 							i(38531),	-- Links of Righteous Persecution
@@ -591,7 +591,7 @@ root("Zones", {
 						["coord"] = { 75.9, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27267,	-- Quartermaster Bartlett
-						["g"] = {
+						["groups"] = {
 							i(38181),	-- Warblade of the Forgotten Footman
 							i(37986),	-- Hood of the Forgotten Rifleman
 							i(38030),	-- Chestpiece of the Forgotten Captain
@@ -628,7 +628,7 @@ root("Zones", {
 						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["qg"] = 26647,	-- Narf
 						["sourceQuest"] = 12047,	-- Something That Doesn't Melt
-						["g"] = {
+						["groups"] = {
 							i(37947),	-- Miraculous Waistwarming Band
 							i(37990),	-- Narf's Explosiveproof Strand
 							i(38034),	-- Serrated Chain Links
@@ -665,7 +665,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27314,	-- Zelig the Visionary
 						["sourceQuest"] = 12251,	-- Return to the High Commander
-						["g"] = {
+						["groups"] = {
 							i(37938),	-- Visionary's Robes
 							i(38025),	-- Guiding Gloves of the Seer
 							i(38086),	-- Vigilant Skullcap
@@ -747,7 +747,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27412,	-- Slinkin the Demo-gnome
 						["sourceQuest"] = 12276,	-- The Search for Slinkin
-						["g"] = {
+						["groups"] = {
 							i(38293),	-- Suntouched Flowers
 							i(38002),	-- Honorborn Cloak
 							i(38106),	-- Petrified Bone Footguards
@@ -768,7 +768,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["sourceQuest"] = 12206,	-- Blighted Last Rites
-						["g"] = {
+						["groups"] = {
 							i(37971),	-- Sash of the Nibbling Plague
 							i(38014),	-- Vermin-Handler's Gauntlets
 							i(38057),	-- Rodent-Proof Headguard
@@ -779,7 +779,7 @@ root("Zones", {
 						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["qg"] = 26660,	-- Xink
 						["sourceQuest"] = 12047,	-- Something That Doesn't Melt
-						["g"] = {
+						["groups"] = {
 							i(38197),	-- Mounted Boneshredder
 							i(38141),	-- Coldwind Scratching Pole
 							i(38143),	-- Composite Harpyspine Staff
@@ -803,7 +803,7 @@ root("Zones", {
 						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["qg"] = 26245,	-- Tua'kea
 						["sourceQuest"] = 12016,	-- The Bait
-						["g"] = {
+						["groups"] = {
 							i(37936),	-- Fisherman's Earwarmer
 							i(37980),	-- Moa'ki Thresherhide Tunic
 							i(38023),	-- Sharkdiver's Leggings
@@ -834,7 +834,7 @@ root("Zones", {
 							12174,	-- High Commander Halford Wyrmbane (Dragonblight)
 							12298,	-- High Commander Halford Wyrmbane (Howling Fjord)
 						},
-						["g"] = {
+						["groups"] = {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38177),	-- Siege Captain's Gun
 							i(38135),	-- Mace of the Fallen Raven Priest
@@ -845,7 +845,7 @@ root("Zones", {
 					q(12470, {	-- Mystery of the Infinite
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["qg"] = 27856,	-- Chromie
-						["g"] = {
+						["groups"] = {
 							i(38173),	-- Dagger of the Returning Past
 							i(38174),	-- Time-Bending Smasher
 							i(38133),	-- Timeshattered Spire
@@ -856,7 +856,7 @@ root("Zones", {
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["qg"] = 27856,	-- Chromie
 						["sourceQuest"] = 12470,	-- Mystery of the Infinite
-						["g"] = {
+						["groups"] = {
 							i(38763),	-- Futuresight Rune
 							i(38765),	-- Rune of Infinite Power
 							i(38764),	-- Rune of Finite Variation
@@ -887,7 +887,7 @@ root("Zones", {
 						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12265,	-- Defining the Defilers
-						["g"] = {
+						["groups"] = {
 							i(37944),	-- High Priest Forith's Robes
 							i(38095),	-- Legplates of the Conquered Knight
 							i(37988),	-- Lord Prestor's Drape
@@ -930,7 +930,7 @@ root("Zones", {
 						["coord"] = { 59.5, 53.3, DRAGONBLIGHT },
 						["qg"] = 26949,	-- Torastrasza
 						["sourceQuest"] = 12497,	-- Galakrond and the Scourge
-						["g"] = {
+						["groups"] = {
 							i(38010),	-- Scourgeslayer Cover
 							i(38053),	-- Wyrmfire Links
 							i(38114),	-- Chestplate of the Ruby Champion
@@ -956,7 +956,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27347,	-- Orik Trueheart
 						["sourceQuest"] = 12301,	-- The Truth Shall Set Us Free
-						["g"] = {
+						["groups"] = {
 							i(38181),	-- Warblade of the Forgotten Footman
 							i(37986),	-- Hood of the Forgotten Rifleman
 							i(38030),	-- Chestpiece of the Forgotten Captain
@@ -1000,7 +1000,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12000,	-- Rifle the Bodies
-						["g"] = {
+						["groups"] = {
 							i(37943),	-- Kirin Tor Initiate's Cowl
 							i(37987),	-- Violet Stalker Bracers
 							i(38031),	-- Azurehunter Legguards
@@ -1012,7 +1012,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 11999,	-- Rifle the Bodies
-						["g"] = {
+						["groups"] = {
 							i(37943),	-- Kirin Tor Initiate's Cowl
 							i(37987),	-- Violet Stalker Bracers
 							i(38031),	-- Azurehunter Legguards
@@ -1023,7 +1023,7 @@ root("Zones", {
 						["coord"] = { 14.2, 49.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26180,	-- Blood Guard Roh'kill
-						["g"] = {
+						["groups"] = {
 							i(37964),	-- Spiderwarder Braces
 							i(38006),	-- Glade Wanderer Belt
 							i(38048),	-- Breastplate of Sizzling Chitin
@@ -1047,7 +1047,7 @@ root("Zones", {
 						["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
 						["qg"] = 26473,	-- Ko'char the Unbreakable
 						["sourceQuest"] = 12077,	-- Apply This Twice A Day
-						["g"] = {
+						["groups"] = {
 							i(37945),	-- Thin Jormungar Legwraps
 							i(37989),	-- Rattlebore Slayer Leggings
 							i(38033),	-- Ice Heart Chestguard
@@ -1128,7 +1128,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27317,	-- Gryphon Commander Urik
 						["sourceQuest"] = 12237,	-- Flight of the Wintergarde Defender
-						["g"] = {
+						["groups"] = {
 							i(37956),	-- Frontrunner's Blessed Handwraps
 							i(37998),	-- Snowfall Reaver Boots
 							i(38041),	-- Westwind Waistband
@@ -1157,7 +1157,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26859,	-- Rokhan
 						["sourceQuest"] = 12095,	-- To Dragon's Fall
-						["g"] = {
+						["groups"] = {
 							i(38530),	-- Wrap of Vigorous Destruction
 							i(38532),	-- Belt of Vengeful Purification
 							i(38531),	-- Links of Righteous Persecution
@@ -1175,7 +1175,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26564,	-- Borus Ironbender
 						["sourceQuest"] = 12039,	-- Black Blood of Yogg-Saron
-						["g"] = {
+						["groups"] = {
 							i(37961),	-- Wastewind Leggings
 							i(38003),	-- Snowfall Reaver Leggings
 							i(38045),	-- Anub'ar-Husk Helm
@@ -1218,7 +1218,7 @@ root("Zones", {
 						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
 						["qg"] = 26194,	-- Elder Ko'nani
 						["sourceQuest"] = 11958,	-- Let Nothing Go To Waste
-						["g"] = {
+						["groups"] = {
 							i(38026),	-- Sharkdiver's Bracers
 							i(38087),	-- Sea Rusted Gauntlets
 							i(37939),	-- Baleen Braided Collar
@@ -1239,7 +1239,7 @@ root("Zones", {
 						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["qg"] = 26661,	-- Zivlix
 						["sourceQuest"] = 12046,	-- Soft Packaging
-						["g"] = {
+						["groups"] = {
 							i(37948),	-- Refractive Shoulderpads
 							i(37991),	-- Hyper-Amplified Natural Leather Vest
 							i(38035),	-- Tightened Chainmesh Boots
@@ -1281,7 +1281,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27157,	-- Duke August Foehammer
 						["sourceQuest"] = 12325,	-- Into Hostile Territory
-						["g"] = {
+						["groups"] = {
 							i(37949),	-- Saboteur's Wrap
 							i(37992),	-- Ritual Neckguard
 							i(38284),	-- Siegemaster's Torch Ring
@@ -1317,7 +1317,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26837,	-- Sarendryana
 						["sourceQuest"] = 12065,	-- The Focus on the Beach
-						["g"] = {
+						["groups"] = {
 							i(37966),	-- Bracers of Nature's Fury
 							i(38008),	-- Lothalar Woodwalker Belt
 							i(38051),	-- Star's Rest Treads
@@ -1329,7 +1329,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26854,	-- Earthwarden Grife
 						["sourceQuest"] = 12066,	-- The Focus on the Beach
-						["g"] = {
+						["groups"] = {
 							i(37966),	-- Bracers of Nature's Fury
 							i(38008),	-- Lothalar Woodwalker Belt
 							i(38051),	-- Star's Rest Treads
@@ -1345,7 +1345,7 @@ root("Zones", {
 						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
 						["qg"] = 27785,	-- Lord Itharius
 						["sourceQuest"] = 12458,	-- Seeds of the Lashers
-						["g"] = {
+						["groups"] = {
 							i(37940),	-- Mantle of Itharius
 							i(37983),	-- Gloves of the Emerald Stalker
 							i(38027),	-- Verdant Hunter's Guise
@@ -1447,7 +1447,7 @@ root("Zones", {
 						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
 						["qg"] = 28228,	-- Crusader Valus
 						["sourceQuest"] = 12542,	-- The Call of The Crusade
-						["g"] = {
+						["groups"] = {
 							i(38190),	-- Scourgeslayer's Shank
 							i(38188),	-- Claw of the Undead Ravager
 							i(38198),	-- Joint-Severing Quickblade
@@ -1468,7 +1468,7 @@ root("Zones", {
 						["sourceQuests"] = {
 							12271,	-- The Rod of Compulsion
 						},
-						["g"] = {
+						["groups"] = {
 							i(37968),	-- Robe of Calcified Tears
 							i(38011),	-- Torturer's Fleshwoven Leggings
 							i(38054),	-- Paingiver Wristguards
@@ -1480,7 +1480,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26873,	-- Mage-Commander Evenstar
 						["sourceQuest"] = 12098,	-- Search Indu'le Village
-						["g"] = {
+						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
 							i(38129),	-- Staff of the Ley Mender
@@ -1493,7 +1493,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26873,	-- Mage-Commander Evenstar
 						["sourceQuest"] = 12106,	-- Search Indu'le Village
-						["g"] = {
+						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
 							i(38129),	-- Staff of the Ley Mender
@@ -1506,7 +1506,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27155,	-- Commander Lynore Windstryke
 						["sourceQuest"] = 12251,	-- Return to the High Commander
-						["g"] = {
+						["groups"] = {
 							i(37954),	-- Wastewind Cinch
 							i(37996),	-- Snowfall Reaver Gloves
 							i(38040),	-- Iceshear Bindings
@@ -1558,7 +1558,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						["sourceQuest"] = 12218,	-- Spread the Good Word
-						["g"] = {
+						["groups"] = {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38177),	-- Siege Captain's Gun
 							i(38135),	-- Mace of the Fallen Raven Priest
@@ -1574,7 +1574,7 @@ root("Zones", {
 							12189,	-- Imbeciles Abound!
 							12182,	-- To Venomspite!
 						},
-						["g"] = {
+						["groups"] = {
 							i(37963),	-- Wastewind Handwraps
 							i(38005),	-- Spiritfury Bands
 							i(38047),	-- Belt of Ghostly Essence
@@ -1592,7 +1592,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26973,	-- Warden Jodi Moonsong
 						["sourceQuest"] = 12168,	-- The Favor of Zangus
-						["g"] = {
+						["groups"] = {
 							i(37961),	-- Wastewind Leggings
 							i(38003),	-- Snowfall Reaver Leggings
 							i(38045),	-- Anub'ar-Husk Helm
@@ -1620,7 +1620,7 @@ root("Zones", {
 							12072,	-- Blightbeasts be Damned!
 							12221,	-- The Forsaken Blight
 						},
-						["g"] = {
+						["groups"] = {
 							i(38541),	-- Implacable Zombie Crushers
 							i(38543),	-- Reinforced Traveler's Boots
 							i(38540),	-- Sandals of Chaos Resolution
@@ -1637,7 +1637,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26653,	-- Kilix the Unraveler
 						["sourceQuest"] = 12040,	-- An Enemy in Arthas
-						["g"] = {
+						["groups"] = {
 							i(37954),	-- Wastewind Cinch
 							i(37996),	-- Snowfall Reaver Gloves
 							i(38040),	-- Iceshear Bindings
@@ -1649,7 +1649,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["sourceQuest"] = 12036,	-- From the Depths of Azjol-Nerub
-						["g"] = {
+						["groups"] = {
 							i(37956),	-- Frontrunner's Blessed Handwraps
 							i(37998),	-- Snowfall Reaver Boots
 							i(38041),	-- Westwind Waistband
@@ -1667,7 +1667,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27318,	-- Cavalier Durkon
 						["sourceQuest"] = 12309,	-- Find Durkon!
-						["g"] = {
+						["groups"] = {
 							i(37953),	-- Wastewind Garments
 							i(37995),	-- Snowfall Reaver Hood
 							i(38039),	-- Iceshear Pauldrons
@@ -1694,7 +1694,7 @@ root("Zones", {
 						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 						["qg"] = 27255,	-- Nishera the Garden Keeper
 						["sourceQuest"] = 12454,	-- Cycle of Life
-						["g"] = {
+						["groups"] = {
 							i(37937),	-- Alystros' Plume Cinch
 							i(37981),	-- Ancient Dreamer's Leggings
 							i(38024),	-- Verdant Linked Boots
@@ -1760,7 +1760,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuest"] = 12132,	-- The Power to Destroy
-						["g"] = {
+						["groups"] = {
 							i(37958),	-- Wastewind Headcover
 							i(38000),	-- Snowfall Reaver Breastplate
 							i(38043),	-- Anub'ar-Husk Leggings
@@ -1784,7 +1784,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12417,	-- Return to the Earth
-						["g"] = {
+						["groups"] = {
 							i(37962),	-- Treads of the Charred Canyon
 							i(38004),	-- Scourgeslayer Belt
 							i(38046),	-- Wyrmfire Gloves
@@ -1796,7 +1796,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12449,	-- Return to the Earth
-						["g"] = {
+						["groups"] = {
 							i(37962),	-- Treads of the Charred Canyon
 							i(38004),	-- Scourgeslayer Belt
 							i(38046),	-- Wyrmfire Gloves
@@ -1824,7 +1824,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12473,	-- An End And A Beginning
-						["g"] = {
+						["groups"] = {
 							i(38541),	-- Implacable Zombie Crushers
 							i(38543),	-- Reinforced Traveler's Boots
 							i(38540),	-- Sandals of Chaos Resolution
@@ -1843,7 +1843,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["sourceQuest"] = 12245,	-- No Mercy for the Captured
-						["g"] = {
+						["groups"] = {
 							i(37953),	-- Wastewind Garments
 							i(37995),	-- Snowfall Reaver Hood
 							i(38039),	-- Iceshear Pauldrons
@@ -1881,7 +1881,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["model"] = 199476,
 						["provider"] = { "o", 188418 },	-- Wanted!
-						["g"] = {
+						["groups"] = {
 							i(37970),	-- Feathers of the Dragon Wastes
 							i(38013),	-- Lothalar Woodwalker Shoulders
 							i(38056),	-- Ridgehunter Chestguard
@@ -1893,7 +1893,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["model"] = 199476,
 						["provider"] = { "o", 188418 },	-- Wanted!
-						["g"] = {
+						["groups"] = {
 							i(37969),	-- Chaos Mender Cloak
 							i(38012),	-- Lothalar Woodwalker Bracers
 							i(38055),	-- Ridgehunter Gauntlets
@@ -1906,7 +1906,7 @@ root("Zones", {
 						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
-						["g"] = {
+						["groups"] = {
 							i(38171),	-- Battleworn Magnataur Crusher
 							i(38172),	-- Crossbow of the Hardened Ranger
 							i(38132),	-- Moonrest Garden Stave
@@ -1921,7 +1921,7 @@ root("Zones", {
 						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
-						["g"] = {
+						["groups"] = {
 							i(37957),	-- Wastewind Bracers
 							i(37999),	-- Glade Wanderer Bracers
 							i(38103),	-- Petrified Bone Chestguard
@@ -1933,7 +1933,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["model"] = 199476,
 						["provider"] = { "o", 188418 },	-- Wanted!
-						["g"] = {
+						["groups"] = {
 							i(38195),	-- Magister's Bane
 							i(38194),	-- Mageslayer Rifle
 							i(38137),	-- Endurance of the Spell Warder
@@ -1948,7 +1948,7 @@ root("Zones", {
 						["model"] = 199476,
 						["provider"] = { "o", 190020 },	-- Wanted!
 						["sourceQuest"] = 12251,	-- Return to the High Commander
-						["g"] = {
+						["groups"] = {
 							i(38115),	-- Sabatons of the Enforcer
 							i(38054),	-- Paingiver Wristguards
 							i(38529),	-- Robe of the Justicebringer
@@ -1964,7 +1964,7 @@ root("Zones", {
 						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["qg"] = 26983,	-- Aurastrasza
 						["sourceQuest"] = 12150,	-- Reclusive Runemaster
-						["g"] = {
+						["groups"] = {
 							i(38156),	-- Battered Magnataur Dualblade
 							i(38157),	-- Longbow of the Ruby Rider
 							i(38155),	-- Shortblade of the Ruby Ally
@@ -1984,7 +1984,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26504,	-- Soar Hawkfury
 						["sourceQuest"] = 12104,	-- Return to Soar
-						["g"] = {
+						["groups"] = {
 							i(38171),	-- Battleworn Magnataur Crusher
 							i(38172),	-- Crossbow of the Hardened Ranger
 							i(38132),	-- Moonrest Garden Stave
@@ -2029,7 +2029,7 @@ root("Zones", {
 							{ 30.6, 58.6, DRAGONBLIGHT },
 							{ 33.2, 56.8, DRAGONBLIGHT },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(11, {	-- Crazed Indu'le Survivor
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2048,7 +2048,7 @@ root("Zones", {
 							{ 72.0, 74.0, DRAGONBLIGHT },
 							{ 69.2, 75.6, DRAGONBLIGHT },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(12, {	-- Scarlet Highlord Daion
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2075,7 +2075,7 @@ root("Zones", {
 							{ 69.6, 54.2, DRAGONBLIGHT },
 							{ 68.0, 58.8, DRAGONBLIGHT },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(10, {	-- Tukemuth
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2088,7 +2088,7 @@ root("Zones", {
 					n(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
 						["coord"] = { 36.2, 46.6, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -2098,7 +2098,7 @@ root("Zones", {
 					n(27030, {	-- Bradley Towns <Reagents & Enchanting Supplies>
 						["coord"] = { 76.8, 62.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -2107,7 +2107,7 @@ root("Zones", {
 					}),
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
-						["g"] = {
+						["groups"] = {
 							i(44200),	-- Ancestral Sinew Wristguards
 							i(44197),	-- Bracers of Accorded Courtesy
 							i(44198),	-- Breastplate of the Solemn Council
@@ -2133,7 +2133,7 @@ root("Zones", {
 					n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
 						["coord"] = { 28.8, 55.8, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -2142,7 +2142,7 @@ root("Zones", {
 					}),
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
 						["coord"] = { 48.6, 75.6, DRAGONBLIGHT },
-						["g"] = {
+						["groups"] = {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
 							i(41574),	-- Design: Defender's Shadow Crystal

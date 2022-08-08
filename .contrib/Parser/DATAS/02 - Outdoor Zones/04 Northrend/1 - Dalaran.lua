@@ -20,7 +20,7 @@ root("Zones", {
 					n(QUESTS, {
 						q(13571, {	-- Fletcher's Lost and Found
 							["qg"] = 32516,	-- Washed-Up Mage
-							["g"] = {
+							["groups"] = {
 								recipe(53056),	-- Kungaloosh
 							},
 						}),
@@ -35,7 +35,7 @@ root("Zones", {
 						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
 							["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -664,7 +664,7 @@ root("Zones", {
 						n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 							["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(136803, {	-- Dirty Tricks, Vol 1: Detection
 									--["spellID"] = 210108,	-- Detection
 								}),
@@ -679,14 +679,14 @@ root("Zones", {
 						}),
 						n(29537, {	-- Darahir <Reagents & Magical Goods>
 							["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(39973),	-- Ghostly Skull (PET!)
 							},
 						}),
 						n(69321, {	-- Herwin Steampop <Deadly Gladiator>
 							["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1314,7 +1314,7 @@ root("Zones", {
 						}),
 						n(29538, {	-- Hexil Garrot <Tools of the Trade>
 							["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(40739),	-- Bands of the Great Tree
 								i(50994),	-- Belt of Petrified Ivy
 								i(45830),	-- Belt of the Living Thicket
@@ -1340,7 +1340,7 @@ root("Zones", {
 						n(69318, {	-- Kylo Kelwin <Furious Gladiator>
 							["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1972,7 +1972,7 @@ root("Zones", {
 						}),
 						n(34087, {	-- Trapjaw Rix Season <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 							--[[	-- Items are commented out to reduce bloat.
 								un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
 								n(WEAPONS, {
@@ -2009,7 +2009,7 @@ root("Zones", {
 						}),
 						n(34092, {	-- Trapjaw Rix Season <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 							--[[	-- Items are commented out to reduce bloat.
 								un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
 								n(WEAPONS, {
@@ -2047,7 +2047,7 @@ root("Zones", {
 						}),
 						n(34095, {	-- Trapjaw Rix Season <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 							--[[	-- Items are commented out to reduce bloat.
 								un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 								un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
@@ -2084,7 +2084,7 @@ root("Zones", {
 						n(40212, {	-- Trapjaw Rix <Savage Gladiator>
 							["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2531,7 +2531,7 @@ root("Zones", {
 						n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator>
 							["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3174,7 +3174,7 @@ root("Zones", {
 						n(69973, {	-- Zom Bocom <Relentless Gladiator>
 							["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
 							["itemID"] = 137642,	-- Mark of Honor
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3815,7 +3815,7 @@ root("Zones", {
 				n(ACHIEVEMENTS, {
 					ach(1956, {	-- Higher Learning
 						["description"] = "The books you find may not be the ones you are looking for, but the book respawn timer will not start until the current book has been 'read'. Spawn timer for the books seems to be between 3 and 4 hours.|nThe best time to hunt books is right after a server restart.|nBook Spawn Locations:|nThe Schools of Arcane Magic - Introduction: First floor of the teleportation room of the Violet Gate near a bookcase.|nThe Schools of Arcane Magic - Abjuration: The floor of the Dalran Visitors Center next to a small book covered table.|nThe Schools of Arcane Magic - Conjuration: First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.|nThe Schools of Arcane Magic - Divination: Between the two bookcases on the south side of the second floor of the Violet Citadel.|nThe Schools of Arcane Magic - Enchantment: On a box on the upper balcony of The Threads of Fate.|nThe Schools of Arcane Magic - Illusion: On a box in the corner of the Violet Hold near Archmage Timear.|nThe Schools of Arcane Magic - Necromancy: Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.|nThe Schools of Arcane Magic - Transmutation: First floor of the Legerdemain Lounge in the bookcase nearest the stove.|r",
-						["g"] = {
+						["groups"] = {
 							i(44738),	-- Kirin Tor Familiar Pet
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
 								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
@@ -3827,7 +3827,7 @@ root("Zones", {
 				n(FACTIONS, {
 					faction(1090, {	-- Kirin Tor
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 								i(44182),	-- Boots of Twinkling Stars
 								i(41718),	-- Design: Brilliant Scarlet Ruby
@@ -3850,11 +3850,11 @@ root("Zones", {
 					faction(1094, {	-- The Silver Covenant
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\inv_banner_02",
-						["g"] = {
+						["groups"] = {
 							n(31579, {	-- Arcanist Adurin <Legacy Justice Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 37.2, 54.5, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(40736),	-- Armguard of the Tower Archer
 									i(40719),	-- Band of Channeled Magic
 									i(40739),	-- Bands of the Great Tree
@@ -4017,7 +4017,7 @@ root("Zones", {
 							n(33964, {	-- Arcanist Firael <Legacy Justice Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 38.7, 55.1, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(45827),	-- Belt of the Ardent Marksman
 									i(45830),	-- Belt of the Living Thicket
 									i(45824),	-- Belt of the Singing Blade
@@ -4184,7 +4184,7 @@ root("Zones", {
 							n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 36.9, 55.0, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(40693),	-- Beadwork Belt of Shamanic Vision
 									i(40679),	-- Chained Military Gorget
 								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
@@ -4346,7 +4346,7 @@ root("Zones", {
 							n(35494, {	-- Arcanist Miluria <Legacy Justice Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 37.9, 54.3, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(47732),	-- Band of the Invoker
 									i(47729),	-- Bloodshed Band
 									i(47658),	-- Brimstone Igniter
@@ -4461,7 +4461,7 @@ root("Zones", {
 							n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 38.3, 54.4, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(50993),	-- Band of the Night Raven
 									i(50996),	-- Belt of Omission
 									i(50994),	-- Belt of Petrified Ivy
@@ -4584,7 +4584,7 @@ root("Zones", {
 							n(31032, {	-- Derek Odds <Cooking Supplies>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(134020, {	-- Chef's Hat (TOY!)
 										["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 									}),
@@ -4669,12 +4669,12 @@ root("Zones", {
 								["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									q(13103, {	-- Cheese for Glowergold
 										["qg"] = 28705,	-- Katherine Lee
 										["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(4, {	-- Cheese for Glowergold
 												["achievementID"] = 1782,	-- Our Daily Bread
 												["races"] = ALLIANCE_ONLY,
@@ -4685,7 +4685,7 @@ root("Zones", {
 										["qg"] = 28705,	-- Katherine Lee
 										["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(2, {	-- Convention at the Legerdemain
 												["achievementID"] = 1782,	-- Our Daily Bread
 												["races"] = ALLIANCE_ONLY,
@@ -4696,7 +4696,7 @@ root("Zones", {
 										["qg"] = 28705,	-- Katherine Lee
 										["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(1, {	-- Infused Mushroom Meatloaf
 												["achievementID"] = 1782,	-- Our Daily Bread
 												["races"] = ALLIANCE_ONLY,
@@ -4707,7 +4707,7 @@ root("Zones", {
 										["qg"] = 28705,	-- Katherine Lee
 										["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(5, {	-- Mustard Dogs!
 												["achievementID"] = 1782,	-- Our Daily Bread
 												["races"] = ALLIANCE_ONLY,
@@ -4718,7 +4718,7 @@ root("Zones", {
 										["qg"] = 28705,	-- Katherine Lee
 										["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(3, {	-- Sewer Stew
 												["achievementID"] = 1782,	-- Our Daily Bread
 												["races"] = ALLIANCE_ONLY,
@@ -4732,17 +4732,17 @@ root("Zones", {
 					faction(1124, {	-- The Sunreavers
 						["races"] = HORDE_ONLY,
 						["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
-						["g"] = {
+						["groups"] = {
 							n(29631, {	-- Awilo Longomba
 								["description"] = "All dailies offered by this questgiver award at least one Epicurean's Award and a Small Spice Bag, which can contain the recipes for Captain Rumsey's Lager, Delicious Chocolate Cake, and Stormchops.",
 								["races"] = HORDE_ONLY,
 								["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									q(13115, {	-- Cheese for Glowergold
 										["qg"] = 29631,	-- Awilo Longomba
 										["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(4, {	-- Cheese for Glowergold
 												["achievementID"] = 1783,	-- Our Daily Bread
 												["races"] = HORDE_ONLY,
@@ -4753,7 +4753,7 @@ root("Zones", {
 										["qg"] = 29631,	-- Awilo Longomba
 										["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(2, {	-- Convention at the Legerdemain
 												["achievementID"] = 1783,	-- Our Daily Bread
 												["races"] = HORDE_ONLY,
@@ -4764,7 +4764,7 @@ root("Zones", {
 										["qg"] = 29631,	-- Awilo Longomba
 										["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(1, {	-- Infused Mushroom Meatloaf
 												["achievementID"] = 1783,	-- Our Daily Bread
 												["races"] = HORDE_ONLY,
@@ -4775,7 +4775,7 @@ root("Zones", {
 										["qg"] = 29631,	-- Awilo Longomba
 										["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(5, {	-- Mustard Dogs!
 												["achievementID"] = 1783,	-- Our Daily Bread
 												["races"] = HORDE_ONLY,
@@ -4786,7 +4786,7 @@ root("Zones", {
 										["qg"] = 29631,	-- Awilo Longomba
 										["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											crit(3, {	-- Sewer Stew
 												["achievementID"] = 1783,	-- Our Daily Bread
 												["races"] = HORDE_ONLY,
@@ -4798,7 +4798,7 @@ root("Zones", {
 							n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 65.9, 22.9, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(50993),	-- Band of the Night Raven
 									i(50996),	-- Belt of Omission
 									i(50994),	-- Belt of Petrified Ivy
@@ -4921,7 +4921,7 @@ root("Zones", {
 							n(31581, {	-- Magister Brasael <Legacy Justice Quartermaster>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 66.1, 23.4, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(40736),	-- Armguard of the Tower Archer
 									i(40719),	-- Band of Channeled Magic
 									i(40739),	-- Bands of the Great Tree
@@ -5084,7 +5084,7 @@ root("Zones", {
 							n(33963, {	-- Magister Sarien <Legacy Justice Quartermaster>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 65.7, 24.4, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(45827),	-- Belt of the Ardent Marksman
 									i(45830),	-- Belt of the Living Thicket
 									i(45824),	-- Belt of the Singing Blade
@@ -5251,7 +5251,7 @@ root("Zones", {
 							n(31582, {	-- Magistrix Lambriesse <Legacy Justice Quartermaster>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 65.6, 22.7, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(40693),	-- Beadwork Belt of Shamanic Vision
 									i(40679),	-- Chained Military Gorget
 								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
@@ -5413,7 +5413,7 @@ root("Zones", {
 							n(35495, {	-- Magistrix Vesara <Legacy Justice Quartermaster>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 65.0, 23.0, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(47732),	-- Band of the Invoker
 									i(47729),	-- Bloodshed Band
 									i(47658),	-- Brimstone Igniter
@@ -5528,7 +5528,7 @@ root("Zones", {
 							n(31031, {	-- Misensi <Cooking Supplies>
 								["races"] = HORDE_ONLY,
 								["coord"] = { 70.0, 38.6, NORTHREND_DALARAN },
-								["g"] = {
+								["groups"] = {
 									i(134020, {	-- Chef's Hat (TOY!)
 										["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 									}),
@@ -5621,21 +5621,21 @@ root("Zones", {
 					prof(BLACKSMITHING, {
 						n(28694, {	-- Alard Schmied <Blacksmithing Trainer>
 							["coord"] = { 45.8, 27.4, NORTHREND_DALARAN },
-							["g"] = WRATH_BLACKSMITHING,
+							["groups"] = WRATH_BLACKSMITHING,
 						}),
 						n(29505, {	-- Imindril Spearsong <Blacksmithing Trainer>
 							["coord"] = { 45.6, 28.6, NORTHREND_DALARAN },
-							["g"] = WRATH_WEAPONSMITHING,
+							["groups"] = WRATH_WEAPONSMITHING,
 						}),
 						n(29506, {	-- Orland Schaeffer <Blacksmithing Trainer>
 							["coord"] = { 45.0, 28.0, NORTHREND_DALARAN },
-							["g"] = WRATH_ARMORSMITHING,
+							["groups"] = WRATH_ARMORSMITHING,
 						}),
 					}),
 					prof(ENCHANTING, {
 						n(28693, {	-- Enchanter Nalthanis <Enchanting Trainer>
 							["coord"] = { 39.4, 41.2, NORTHREND_DALARAN },
-							["g"] = WRATH_ENCHANTING,
+							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
 				}),
@@ -5685,7 +5685,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(46007, {	-- Bag of Fishing Treasures
 								["sym"] = { { "fill" } },	-- fill the content
 							}),
@@ -5699,7 +5699,7 @@ root("Zones", {
 						["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
 						["repeatable"] = true,
 						["requireSkill"] = ALCHEMY,
-						["g"] = {
+						["groups"] = {
 							recipe(66659),	-- Transmute: Cardinal Ruby
 						},
 					}),
@@ -5714,7 +5714,7 @@ root("Zones", {
 						["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
 						["qg"] = 28699,	-- Charles Worth
 						["requireSkill"] = TAILORING,
-						["g"] = {
+						["groups"] = {
 							spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
 						},
 					}),
@@ -5722,7 +5722,7 @@ root("Zones", {
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 31080,	-- Warden Alturas
 						["sourceQuest"] = 13158,	-- Discretion is Key
-						["g"] = {
+						["groups"] = {
 							i(44342),	-- Tattooed Deerskin Leggings
 							i(44343),	-- Conferred Pantaloons
 							i(44344),	-- Labyrinthine Legguards
@@ -5734,7 +5734,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(46007, {	-- Bag of Fishing Treasures
 								["sym"] = { { "fill" } },	-- fill the content
 							}),
@@ -5748,7 +5748,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(46007, {	-- Bag of Fishing Treasures
 								["sym"] = { { "fill" } },	-- fill the content
 							}),
@@ -5770,7 +5770,7 @@ root("Zones", {
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -5843,7 +5843,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(46007, {	-- Bag of Fishing Treasures
 								["sym"] = { { "fill" } },	-- fill the content
 							}),
@@ -5858,7 +5858,6 @@ root("Zones", {
 					}),
 					--]]
 					q(12790, {	-- Learning to Leave and Return: the Magical Way
-						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["qg"] = 29156,	-- Archmage Celindra
 						["sourceQuests"] = {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
@@ -5866,6 +5865,8 @@ root("Zones", {
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
 							39210,	-- The Magical Kingdom of Dalaran (Crystalsong Forest)
 						},
+						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
+						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(24589, {	-- Lord Jaraxxus Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
@@ -5989,7 +5990,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -5998,7 +5999,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6007,7 +6008,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6016,7 +6017,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6025,7 +6026,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6034,7 +6035,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28701,	-- Timothy Jones
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6049,7 +6050,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28742,	-- Marcia Chase
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(46007, {	-- Bag of Fishing Treasures
 								["sym"] = { { "fill" } },	-- fill the content
 							}),
@@ -6059,8 +6060,6 @@ root("Zones", {
 						},
 					}),
 					q(12794, {	-- The Magical Kingdom of Dalaran (A)
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
 						["providers"] = {
 							{ "n", 23729 },	-- Baron Ulrik von Stromhearth
 							{ "n", 26673 },	-- Image of Archmage Modera
@@ -6073,10 +6072,10 @@ root("Zones", {
 							{ 58.8, 62.8, HOWLING_FJORD },
 							{ 32.0, 59.8, GRIZZLY_HILLS },
 						},
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(12791, {	-- The Magical Kingdom of Dalaran (H)
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
 						["providers"] = {
 							{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
 							{ "n", 29160 },	-- Magistrix Phaelista
@@ -6089,6 +6088,18 @@ root("Zones", {
 							{ 38.0, 46.2, DRAGONBLIGHT },	-- Image of Archmage Aethas Sunreaver
 							{ 76.8, 63.2, DRAGONBLIGHT },	-- Magister Tyr'ganal
 						},
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(12796, {	-- The Magical Kingdom of Dalaran (Zul'Drak)
+						["qg"] = 29169,	-- Magister Teronus III
+						["coord"] = { 40.6, 66.9, ZULDRAK },
+						["isBreadcrumb"] = true,
+					}),
+					q(39210, {	-- The Magical Kingdom of Dalaran
+						["u"] = REMOVED_FROM_GAME, -- this version doesn't appear to exist anymore
+						["maps"] = { CRYSTALSONG_FOREST },
+						["isBreadcrumb"] = true,
 					}),
 					--[[
 					q(32409, {	-- The Kirin Tor's True Colors
@@ -6109,7 +6120,7 @@ root("Zones", {
 						["qg"] = 28701,	-- Timothy Jones
 						["repeatable"] = true,
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
@@ -6123,7 +6134,7 @@ root("Zones", {
 						["provider"] = { "i", 48681 },	-- Waterlogged Recipe
 						["repeatable"] = true,
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							currency(81),	-- Epicurean's Award 5x
 						},
 					}),
@@ -6156,7 +6167,7 @@ root("Zones", {
 					i(46007, {	-- Bag of Fishing Treasures
 						["description"] = "Fishing Daily Quest Reward",
 						["crs"] = { 28742 },	-- Marcia Chase
-						["g"] = {
+						["groups"] = {
 							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass (TOY!)
@@ -6190,7 +6201,7 @@ root("Zones", {
 					}),
 					n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(21895),	-- Pattern: Primal Mooncloth
 							i(21919),	-- Pattern: Primal Mooncloth Bag
 							i(21916),	-- Pattern: Primal Mooncloth Belt
@@ -6200,28 +6211,28 @@ root("Zones", {
 					}),
 					n(29628,  {	-- Angelique Butler <First Aid Supplies>
 						["coord"] = { 37.0, 37.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(44694),	-- Antiseptic-Soaked Dressing
 							i(44693),	-- Wound Dressing
 						},
 					}),
 					n(28990,  {	-- Anthony Durain <Shield Merchant>
 						["coord"] = { 46.8, 27.6, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40701),	-- Crygil's Discarded Plate Panel
 							i(40700),	-- Protective Barricade of the Light
 						},
 					}),
 					n(29499,  {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 						["coord"] = { 53.5, 62.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40704),	-- Pride
 							i(40702),	-- Rolfsen's Ripper
 						},
 					}),
 					n(32515,  {	-- Braeg Stoutbeard
 						["coord"] = { 37.33, 28.69, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(44128, {	-- Arctic Fur
 								["cost"] = { { "i", 38425, 10 }, },	-- 10x Heavy Borean Leather
 							}),
@@ -6373,7 +6384,7 @@ root("Zones", {
 					}),
 					n(29523,  {	-- Bragund Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.2, 72.8, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40736),	-- Armguard of the Tower Archer
 							i(50993),	-- Band of the Night Raven
 							i(40693),	-- Beadwork Belt of Shamanic Vision
@@ -6636,7 +6647,7 @@ root("Zones", {
 					}),
 					n(28951,  {	-- Breanni <Pet Supplies>
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
 							i(46398),	-- Cat Carrier (Calico Cat) (PET!)
 							i(129826),	-- Nursery Spider (PET!)
@@ -6647,7 +6658,7 @@ root("Zones", {
 					}),
 					n(28722,  {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(136782, {	-- Fireworks Instruction Manual
 								["spellID"] = 127933,	-- Fireworks
 							}),
@@ -6659,7 +6670,7 @@ root("Zones", {
 					n(28699,  {	-- Charles Worth <Tailoring Trainer>
 						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
 						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							ach(41, {	-- Loremaster of Northrend
 								recipe(56017, {	-- Deathchill Cloak
 									["requireSkill"] = TAILORING,
@@ -6674,7 +6685,7 @@ root("Zones", {
 					}),
 					n(29716,  {	-- Clockwork Assistant <Jepetto's Companion>
 						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(54436),	-- Blue Clockwork Rocket Bot (PET!)
 							i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 							i(192099, {["timeline"]={"added 9.2.5"}}),  -- Earpieces of Tranquil Focus (TOY!)
@@ -6690,7 +6701,7 @@ root("Zones", {
 					}),
 					n(29528,  {	-- Debbi Moore <Trinkets & Charms>
 						["coord"] = { 49.7, 55.5, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(50356),	-- Corroded Skeleton Key
 							i(47735),	-- Glyph of Indomitability
 							i(50355),	-- Herkuml War Token
@@ -6707,7 +6718,7 @@ root("Zones", {
 					}),
 					n(34252,  {	-- Dubin Clay <Plate Armor Merchant>
 						["coord"] = { 46.2, 27.2, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(46154, {	-- Conqueror's Aegis Battleplate
 								["cost"] = { { "i", 45632, 1 }, },	-- Breastplate of the Wayward Conqueror
 							}),
@@ -6957,7 +6968,7 @@ root("Zones", {
 					}),
 					n(28715,  {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran
 								["isLimited"] = true,
 								["spellID"] = 120146,	-- Ancient Portal: Dalaran
@@ -6985,7 +6996,7 @@ root("Zones", {
 							i(44714, {	-- Tome of Dalaran Brilliance
 								["classes"] = { MAGE },
 								["u"] = REMOVED_FROM_GAME,	-- removed in 7.0.3
-								["g"] = {
+								["groups"] = {
 									i(44602),	-- Magic Consumed Book
 								},
 							}),
@@ -6999,7 +7010,7 @@ root("Zones", {
 					}),
 					n(28776, {	-- Elizabeth Ross <Tabard Vendor>
 						["coord"] = { 51.8, 55.8, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(31779),	-- Aldor Tabard
 							i(31804),	-- Cenarion Expedition Tabard
 							i(36941, {	-- Competitor's Tabard
@@ -7107,7 +7118,7 @@ root("Zones", {
 					}),
 					n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(47556, {	-- Crusader Orb
 								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
 							}),
@@ -7142,7 +7153,7 @@ root("Zones", {
 					}),
 					n(28997,  {	-- Griselda Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(45824),	-- Belt of the Singing Blade
 							i(45833),	-- Bladebreaker Gauntlets
 							i(40742),	-- Bladed Steelboots
@@ -7384,7 +7395,7 @@ root("Zones", {
 					}),
 					n(32172,  {	-- Harold Winston <Jewelry Vendor>
 						["coord"] = { 40.2, 34.3, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							ach(2084, {	-- Ring of the Kirin Tor
 								["providers"] = {
 									{ "i", 40586 },	-- Band of the Kirin Tor
@@ -7461,7 +7472,7 @@ root("Zones", {
 					}),
 					n(35498,  {	-- Horace Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.6, 27.1, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(48386),	-- Hellscream's Battleplate of Conquest
 							i(48456),	-- Hellscream's Breastplate of Conquest
 							i(48387),	-- Hellscream's Gauntlets of Conquest
@@ -7991,7 +8002,7 @@ root("Zones", {
 					}),
 					n(28714,  {	-- Ildine Sorrowspear
 						["coord"] = { 38.78, 41.56, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -8006,7 +8017,7 @@ root("Zones", {
 					}),
 					n(29491,  {	-- Karandonna <Clothier>
 						["coord"] = { 44.4, 48.9, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(42365),	-- Amber Filigreed Doublet
 							i(42371),	-- Amber Filigreeed Shirt
 							i(42374),	-- Blue Martial Shirt
@@ -8030,7 +8041,7 @@ root("Zones", {
 					n(35826,  {	-- Kaye Toogie
 						["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
+						["groups"] = {
 							i(16054),	-- Schematic: Arcanite Dragonling
 							i(13311),	-- Schematic: Mechanical Dragonling
 							i(10609),	-- Schematic: Mithril Mechanical Dragonling
@@ -8038,7 +8049,7 @@ root("Zones", {
 					}),
 					n(29511,  {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(24316),	-- Pattern: Spellcloth
 							i(21911),	-- Pattern: Spellfire Bag
 							i(21908),	-- Pattern: Spellfire Belt
@@ -8048,7 +8059,7 @@ root("Zones", {
 					}),
 					n(29510,  {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(21915),	-- Pattern: Ebon Shadowbag
 							i(21914),	-- Pattern: Frozen Shadoweave Boots
 							i(21912),	-- Pattern: Frozen Shadoweave Shoulders
@@ -8058,7 +8069,7 @@ root("Zones", {
 					}),
 					n(35500,  {	-- Matilda Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.7, 73.0, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
 							i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
 							i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
@@ -8363,7 +8374,7 @@ root("Zones", {
 					}),
 					n(32216,  {	-- Mei Francis <Exotic Mounts>
 						["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							ach(2076, {	-- Armored Brown Bear
 								["providers"] = {
 									{ "i", 44225 },	-- Armored Brown Bear (A) (MOUNT!)
@@ -8432,7 +8443,7 @@ root("Zones", {
 					}),
 					n(29495,  {	-- Norvin Alderman <Cloaks>
 						["coord"] = { 44.7, 48.9, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40724),	-- Cloak of Kea Feathers
 							i(40723),	-- Disguise of the Kumiho
 							i(50468),	-- Drape of the Violet Tower
@@ -8446,14 +8457,14 @@ root("Zones", {
 					}),
 					n(29527,  {	-- Orton Bennet <Offhand Offerings>
 						["coord"] = { 51.9, 55.1, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40699),	-- Handbook of Obscure Remedies
 							i(40698),	-- Ward of the Violet Citadel
 						},
 					}),
 					n(28995,  {	-- Paldesse <Cloth Armor Merchant>
 						["coord"] = { 43.8, 49.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(50996),	-- Belt of Omission
 							i(50997),	-- Circle of Ossus
 							i(46172, {	-- Conqueror's Circlet of Sanctification
@@ -8712,7 +8723,7 @@ root("Zones", {
 					}),
 					n(35497,  {	-- Rafael Langrom <Leather Armor Merchant>
 						["coord"] = { 51.2, 71.5, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							h(i(48243)),	-- Garona's Breastplate of Conquest
 							h(i(48244)),	-- Garona's Gauntlets of Conquest
 							h(i(48245)),	-- Garona's Helmet of Conquest
@@ -9017,7 +9028,7 @@ root("Zones", {
 					}),
 					n(35496,  {	-- Rueben Lauren <Cloth Armor Merchant>
 						["coord"] = { 44.1, 48.9, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(50275),	-- Bloodmage Gloves
 							i(50276),	-- Bloodmage Hood
 							i(50277),	-- Bloodmage Leggings
@@ -9322,7 +9333,7 @@ root("Zones", {
 					}),
 					n(29703,  {	-- Sheddle Glossgleam <Cobbler>
 						["coord"] = { 45.0, 46.5, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40742),	-- Bladed Steelboots
 							i(40748),	-- Boots of Captain Ellis
 							i(40743),	-- Kyzoc's Ground Stompers
@@ -9336,7 +9347,7 @@ root("Zones", {
 					}),
 					n(28721,  {	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(42298, {	-- Design: Bold Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
@@ -9583,7 +9594,7 @@ root("Zones", {
 					}),
 					n(28701,  {	-- Timothy Jones <Jewelcrafting Trainer>
 						["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(47010, {	-- Design: Accurate Dreadstone
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),
@@ -9807,13 +9818,13 @@ root("Zones", {
 					}),
 					n(28991,  {	-- Valaden Silverblade <Sword Merchant>
 						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40703),	-- Grasscutter
 						},
 					}),
 					n(28992,  {	-- Valerie Langrom <Leather Armor Merchant>
 						["coord"] = { 51.6, 72.4, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(40739),	-- Bands of the Great Tree
 							i(50994),	-- Belt of Petrified Ivy
 							i(45830),	-- Belt of the Living Thicket
@@ -10076,7 +10087,7 @@ root("Zones", {
 					}),
 					n(32514,  {	-- Vanessa Sellers
 						["coord"] = { 38.4, 41.1, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(44483, {	-- Formula: Enchant 2H Weapon - Massacre (RECIPE!)
 								["cost"] = { { "i", 34052, 10 }, },	-- 10x Dream Shard
 								["timeline"] = { "added 3.1.0" },
@@ -10164,7 +10175,7 @@ root("Zones", {
 					}),
 					n(28994,  {	-- Wanda Chanter
 						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(47658),	-- Brimstone Igniter
 						},
 					}),

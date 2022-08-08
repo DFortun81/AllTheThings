@@ -28,14 +28,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(760, {	-- Explore Alterac Mountains
+				explorationAch(760, {	-- Explore Alterac Mountains
 					-- #if BEFORE WRATH
 					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
-				})),
+				}),
 			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {

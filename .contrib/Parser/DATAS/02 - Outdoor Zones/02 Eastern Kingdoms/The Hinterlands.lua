@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(773, {	-- Explore The Hinterlands
+				explorationAch(773, {	-- Explore The Hinterlands
 					-- #if BEFORE WRATH
 					["description"] = "Explore The Hinterlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {

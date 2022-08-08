@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(778, {	-- Explore Duskwood
+				explorationAch(778, {	-- Explore Duskwood
 					-- #if BEFORE WRATH
 					["description"] = "Explore Duskwood, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4907, {	-- Duskwood Quests
 					["timeline"] = { "added 4.0.3", "deleted 5.0.4" },
 					["races"] = ALLIANCE_ONLY,

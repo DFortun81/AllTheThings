@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(782, {	-- Explore Swamp of Sorrows
+				explorationAch(782, {	-- Explore Swamp of Sorrows
 					-- #if BEFORE WRATH
 					["description"] = "Explore Swamp of Sorrows, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {

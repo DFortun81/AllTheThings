@@ -13,13 +13,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(770, {	-- Explore Western Plaguelands
+				explorationAch(770, {	-- Explore Western Plaguelands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Western Plaguelands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {

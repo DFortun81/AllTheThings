@@ -12,14 +12,14 @@ root("Zones", {
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Beegle Blastfuse
 								["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 								["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
 							}),
 						},
 					})),
-					ach(1263),	-- Explore Howling Fjord
+					explorationAch(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl? [TODO: Move to Howling Fjord]
 						["coords"] = {
 							{ 69.6, 65.8, HOWLING_FJORD },
@@ -34,7 +34,7 @@ root("Zones", {
 					}),
 					ach(34, {	-- I've Toured the Fjord (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- The Ill-Equipped Port
 								["sourceQuests"] = {
 									11291,	-- To Westguard Keep!
@@ -88,7 +88,7 @@ root("Zones", {
 					}),
 					ach(1356, {	-- I've Toured the Fjord (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Visitors from the Keep
 								["sourceQuest"] = 11234,	-- Report to Anselm
 							}),
@@ -219,7 +219,7 @@ root("Zones", {
 					prof(FISHING, {
 						o(192049, {	-- Fangtooth Herring School
 							["model"] = 219405,
-							["g"] = {
+							["groups"] = {
 								i(44703, {	-- Dark Herring
 									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 								}),
@@ -238,7 +238,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24027,	-- Sergeant Gorth
 						["sourceQuest"] = 11295,	-- The Offensive Begins
-						["g"] = {
+						["groups"] = {
 							i(35868),	-- Grounded Pants
 							i(35869),	-- Hex-Linked Stronghelm
 							i(35870),	-- Stoneground Cleaver
@@ -272,7 +272,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["sourceQuest"] = 11304,	-- New Agamand
-						["g"] = {
+						["groups"] = {
 							i(35851),	-- Acid-Etched Knuckles
 							i(35849),	-- Featherweight Claymore
 							i(35852),	-- Fullered Coldsteel Dagger
@@ -295,7 +295,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24458,	-- Lydell
 						["sourceQuest"] = 11303,	-- The Ambush
-						["g"] = {
+						["groups"] = {
 							i(35889),	-- Bone-Inlaid Bracers
 							i(35888),	-- Embossed Ermine Girdle
 							i(35890),	-- Magdun Spaulders
@@ -315,7 +315,7 @@ root("Zones", {
 							11246,	-- Gruesome, But Necessary
 							11247,	-- Burn Skorn, Burn!
 						},
-						["g"] = {
+						["groups"] = {
 							i(35909),	-- Sun-Fired Striders
 							i(35910),	-- Shaleground Bracers
 							i(35904),	-- Puissance-Infused Pendant
@@ -327,7 +327,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24261,	-- Ulfang
 						["sourceQuest"] = 11416,	-- Eyes of the Eagle
-						["g"] = {
+						["groups"] = {
 							i(35913),	-- Gholamweave Leggings
 							i(35915),	-- Darksteel Ringmail Greaves
 							i(35916),	-- Worgblood Berserker's Hauberk
@@ -339,7 +339,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24261,	-- Ulfang
 						["sourceQuest"] = 11417,	-- Eyes of the Eagle
-						["g"] = {
+						["groups"] = {
 							i(35913),	-- Gholamweave Leggings
 							i(35915),	-- Darksteel Ringmail Greaves
 							i(35916),	-- Worgblood Berserker's Hauberk
@@ -351,7 +351,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24037,	-- Captain Harker
 						["sourceQuest"] = 11229,	-- The Windrunner Fleet
-						["g"] = {
+						["groups"] = {
 							i(35815),	-- Bone-Threaded Harness
 							i(35814),	-- Benevolent Hood
 							i(35817),	-- Nerubian Inner Husk
@@ -379,7 +379,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23975,	-- Thoralius the Wise
 						["sourceQuest"] = 11343,	-- The Echo of Ymiron
-						["g"] = {
+						["groups"] = {
 							i(35832),	-- Blauvelt's Special Occasion Gloves
 							i(35834),	-- Nimblefinger Scaled Gloves
 							i(35835),	-- Antique Reinforced Legguards
@@ -407,7 +407,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24027,	-- Sergeant Gorth
 						["sourceQuest"] = 11282,	-- A Lesson in Fear
-						["g"] = {
+						["groups"] = {
 							i(35820),	-- Deacon's Wraps
 							i(35818),	-- Stretch-Hide Spaulders
 							i(35821),	-- Streamlined Stompers
@@ -424,7 +424,7 @@ root("Zones", {
 						["coord"] = { 25.9, 24.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 24218,	-- Apothecary Grick
-						["g"] = {
+						["groups"] = {
 							i(35864),	-- Fizznik's Patented Earwarmer
 							i(35863),	-- Earth-Infused Leggings
 							i(35866),	-- Master Artilleryman Boots
@@ -442,7 +442,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23833,	-- Explorer Jaren
 						["sourceQuest"] = 11395,	-- It's a Scourge Device
-						["g"] = {
+						["groups"] = {
 							i(35932),	-- Earthbinder's Regenerating Band
 							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
@@ -454,7 +454,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24359,	-- Apothecary Anastasia
 						["sourceQuest"] = 11398,	-- It's a Scourge Device
-						["g"] = {
+						["groups"] = {
 							i(35932),	-- Earthbinder's Regenerating Band
 							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
@@ -563,7 +563,7 @@ root("Zones", {
 						["coord"] = { 62.5, 16.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24139,	-- Gil Grisert
-						["g"] = {
+						["groups"] = {
 							i(35926),	-- Artfully Tooled Leggings
 							i(35927),	-- Songscale Breastplate
 							i(35928),	-- Cold-Forged Bronze Legplates
@@ -575,7 +575,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24157,	-- Plaguebringer Tillinghast
 						["sourceQuest"] = 11279,	-- Green Eggs and Whelps
-						["g"] = {
+						["groups"] = {
 							i(35871),	-- Indigo Robe of Replenishment
 							i(35873),	-- Interlinked Chain Girdle
 							i(35875),	-- Beneficent Skullcap
@@ -587,7 +587,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23546,	-- Vice Admiral Kellar
 						["sourceQuest"] = 11255,	-- Prisoners of Wyrmskull
-						["g"] = {
+						["groups"] = {
 							i(35814),	-- Benevolent Hood
 							i(35816),	-- Blood-Stained Chain Leggings
 							i(35815),	-- Bone-Threaded Harness
@@ -638,7 +638,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["sourceQuest"] = 11306,	-- Apply Heat and Stir
-						["g"] = {
+						["groups"] = {
 							i(35857),	-- Munificent Bulwark
 							i(35858),	-- Tome of Alacrity
 						},
@@ -751,7 +751,7 @@ root("Zones", {
 						["coord"] = { 48.3, 11.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 24127,	-- Ahota Whitefrost
-						["g"] = {
+						["groups"] = {
 							i(35926),	-- Artfully Tooled Leggings
 							i(35927),	-- Songscale Breastplate
 							i(35928),	-- Cold-Forged Bronze Legplates
@@ -784,7 +784,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["sourceQuest"] = 11176,	-- See to the Operations
-						["g"] = {
+						["groups"] = {
 							i(35912),	-- Crackling Cloak
 							i(35911),	-- Unsparing Band
 							i(35936),	-- Worg Tooth Talisman
@@ -801,7 +801,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24038,	-- Father Levariol
 						["sourceQuest"] = 11231,	-- Of Keys and Cages
-						["g"] = {
+						["groups"] = {
 							i(35884),	-- Regal Pantaloons
 							i(35887),	-- Loam-Stained Greaves
 							i(35885),	-- Tribal Chestguard
@@ -852,7 +852,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24634,	-- Lieutenant Icehammer
 						["sourceQuest"] = 11430,	-- Harpoon Master Yavus
-						["g"] = {
+						["groups"] = {
 							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35842),	-- Azure Chain Hauberk
 							i(35843),	-- Ramshorn-Inlaid Shoulders
@@ -906,7 +906,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 23778,	-- Dark Ranger Lyana
 						["sourceQuest"] = 11232,	-- Guide Our Sights
-						["g"] = {
+						["groups"] = {
 							i(35807),	-- Bramblethorn Greatstaff
 							i(35808),	-- Coldstone Cutlass
 							i(35812),	-- Cragthumper
@@ -920,7 +920,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23976,	-- Sapper Steelring
 						["sourceQuest"] = 11218,	-- Danger! Explosives!
-						["g"] = {
+						["groups"] = {
 							i(35917),	-- Wrathwrought Shoulderpads
 							i(35919),	-- Whispersteel Handguards
 							i(35920),	-- Feather-Lined Shoulderpads
@@ -943,7 +943,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24807,	-- Walt
 						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
-						["g"] = {
+						["groups"] = {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
@@ -1006,7 +1006,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24123,	-- Nokoma Snowseer
 						["sourceQuest"] = 11275,	-- Making the Horn
-						["g"] = {
+						["groups"] = {
 							i(35937),	-- Braxley's Backyard Moonshine
 							i(35929),	-- Gholamcloth Wrap
 							i(35931),	-- Appointed Scalemail Leggings
@@ -1017,7 +1017,7 @@ root("Zones", {
 						["coord"] = { 44.4, 57.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 11199,	-- Report to Scout Knowles
-						["g"] = {
+						["groups"] = {
 							i(35889),	-- Bone-Inlaid Bracers
 							i(35888),	-- Embossed Ermine Girdle
 							i(35890),	-- Magdun Spaulders
@@ -1040,7 +1040,7 @@ root("Zones", {
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 11331,	-- You Tell Him ...Hic!
-						["g"] = {
+						["groups"] = {
 							i(35893),	-- Coldstone-Inlaid Waistguard
 							i(35892),	-- Flamebinder Handwraps
 							i(35894),	-- Purestrike Bracers
@@ -1081,7 +1081,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23749,	-- Captain Adams
 						["sourceQuest"] = 11235,	-- Dealing With Gjalerbron
-						["g"] = {
+						["groups"] = {
 							i(35938),	-- Drape of Munificence
 							i(35878),	-- Dusk-Linked Leggings
 							i(35879),	-- Gold-Plated Coldsteel Girdle
@@ -1093,7 +1093,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24129,	-- Chieftain Ashtotem
 						["sourceQuest"] = 11263,	-- Dealing With Gjalerbron
-						["g"] = {
+						["groups"] = {
 							i(35938),	-- Drape of Munificence
 							i(35878),	-- Dusk-Linked Leggings
 							i(35879),	-- Gold-Plated Coldsteel Girdle
@@ -1114,7 +1114,7 @@ root("Zones", {
 							11494,	-- Lightning Infused Relics
 							11495,	-- The Delicate Sound of Thunder
 						},
-						["g"] = {
+						["groups"] = {
 							i(35857),	-- Munificent Bulwark
 							i(35858),	-- Tome of Alacrity
 						},
@@ -1125,7 +1125,7 @@ root("Zones", {
 						["qg"] = 26905,	-- Brom Brewbaster
 						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
 						["requireSkill"] = COOKING,
-						["g"] = {
+						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
@@ -1135,7 +1135,7 @@ root("Zones", {
 						["qg"] = 26953,	-- Thomas Kolichio
 						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
 						["requireSkill"] = COOKING,
-						["g"] = {
+						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
@@ -1190,7 +1190,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["sourceQuest"] = 11308,	-- Time for Cleanup
-						["g"] = {
+						["groups"] = {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
@@ -1200,7 +1200,7 @@ root("Zones", {
 						["coord"] = { 62.6, 16.7, HOWLING_FJORD },
 						["qg"] = 24131,	-- Trapper Jethan
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(35864),	-- Fizznik's Patented Earwarmer
 							i(35863),	-- Earth-Infused Leggings
 							i(35866),	-- Master Artilleryman Boots
@@ -1243,7 +1243,7 @@ root("Zones", {
 						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
 						["qg"] = 23546,	-- Vice Admiral Keller
 						["sourceQuest"] = 11243,	-- If Valgarde Falls...
-						["g"] = {
+						["groups"] = {
 							i(35809),	-- Earthspike
 							i(35811),	-- Elekk-Horn Crossbow
 							i(35810),	-- Pacifying Pummeler
@@ -1256,7 +1256,7 @@ root("Zones", {
 						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
 						["qg"] = 23804,	-- Orfus of Kamagua
 						["sourceQuest"] = 11568,	-- A Return to Resting
-						["g"] = {
+						["groups"] = {
 							i(36871),	-- Fury of the Encroaching Storm
 							i(36874),	-- Horn of the Herald
 							i(36872),	-- Mender of the Oncoming Dawn
@@ -1270,7 +1270,7 @@ root("Zones", {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 56.9, 53.7, HOWLING_FJORD },	-- NPC
 						},
-						["g"] = {
+						["groups"] = {
 							i(35820),	-- Deacon's Wraps
 							i(35818),	-- Stretch-Hide Spaulders
 							i(35821),	-- Streamlined Stompers
@@ -1281,7 +1281,7 @@ root("Zones", {
 						["coord"] = { 31.2, 24.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 24209,	-- Longrunner Skycloud
-						["g"] = {
+						["groups"] = {
 							i(35896),	-- Icestriker Bands
 							i(35898),	-- Reinforced Tuskhide Hauberk
 							i(35899),	-- Bloodbinder's Girdle
@@ -1291,7 +1291,7 @@ root("Zones", {
 					q(11182, {	-- Root Causes
 						["coord"] = { 41.2, 49.4, HOWLING_FJORD },
 						["qg"] = 23870,	-- Ember Clutch Ancient
-						["g"] = {
+						["groups"] = {
 							i(35921),	-- Flint-Reinforced Spaulders
 							i(35922),	-- Dark Iron Signet
 							i(35923),	-- Cold-Iron Armbands
@@ -1302,7 +1302,7 @@ root("Zones", {
 						["qg"] = 24227,	-- Engineer Feknut
 						["coord"] = { 30.1, 28.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(35896),	-- Icestriker Bands
 							i(35898),	-- Reinforced Tuskhide Hauberk
 							i(35899),	-- Bloodbinder's Girdle
@@ -1327,7 +1327,7 @@ root("Zones", {
 							11314,	-- The Fallen Sisters
 							11315,	-- Wild Vines
 						},
-						["g"] = {
+						["groups"] = {
 							i(39074),	-- Drape of Distilled Hatred
 							i(39072),	-- Blacksoul Protector's Hauberk
 							i(39073),	-- Root of the Everlasting
@@ -1343,7 +1343,7 @@ root("Zones", {
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 24252,	-- "Hacksaw" Jenny
-						["g"] = {
+						["groups"] = {
 							i(35893),	-- Coldstone-Inlaid Waistguard
 							i(35892),	-- Flamebinder Handwraps
 							i(35894),	-- Purestrike Bracers
@@ -1442,7 +1442,7 @@ root("Zones", {
 							23668,	-- Winterskorn Rune-Caster
 							23669,	-- Winterskorn Oracle
 						},
-						["g"] = {
+						["groups"] = {
 							i(35900),	-- Supple Doeskin Moccasins
 							i(35902),	-- Shock-Bound Spaulders
 							i(35903),	-- Onyx Grips
@@ -1464,7 +1464,7 @@ root("Zones", {
 							23668,	-- Winterskorn Rune-Caster
 							23669,	-- Winterskorn Oracle
 						},
-						["g"] = {
+						["groups"] = {
 							i(35900),	-- Supple Doeskin Moccasins
 							i(35902),	-- Shock-Bound Spaulders
 							i(35903),	-- Onyx Grips
@@ -1500,7 +1500,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24126,	-- Apothecary Lysander
 						["sourceQuest"] = 11168,	-- Spiking the Mix
-						["g"] = {
+						["groups"] = {
 							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35842),	-- Azure Chain Hauberk
 							i(35843),	-- Ramshorn-Inlaid Shoulders
@@ -1526,7 +1526,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24186,	-- Sage Mistwalker
 						["sourceQuest"] = 11287,	-- Find Sage Mistwalker
-						["g"] = {
+						["groups"] = {
 							i(35912),	-- Crackling Cloak
 							i(35911),	-- Unsparing Band
 							i(35936),	-- Worg Tooth Talisman
@@ -1569,7 +1569,7 @@ root("Zones", {
 							11257,	-- Gruesome, But Necessary
 							11259,	-- Towers of Certain Doom
 						},
-						["g"] = {
+						["groups"] = {
 							i(35909),	-- Sun-Fired Striders
 							i(35910),	-- Shaleground Bracers
 							i(35904),	-- Puissance-Infused Pendant
@@ -1586,7 +1586,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24807,	-- Walt
 						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
-						["g"] = {
+						["groups"] = {
 							i(35851),	-- Acid-Etched Knuckles
 							i(35849),	-- Featherweight Claymore
 							i(35852),	-- Fullered Coldsteel Dagger
@@ -1651,7 +1651,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23888,	-- Mage-Lieutenant Malister
 						["sourceQuest"] = 11237,	-- Gjalerbron Attack Plans
-						["g"] = {
+						["groups"] = {
 							i(35880),	-- Earthwell Footwraps
 							i(35882),	-- Magispike Helm
 							i(35883),	-- Silversteel Gauntlets
@@ -1663,7 +1663,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24032,	-- Celea Frozenmane
 						["sourceQuest"] = 11266,	-- Gjalerbron Attack Plans
-						["g"] = {
+						["groups"] = {
 							i(35880),	-- Earthwell Footwraps
 							i(35882),	-- Magispike Helm
 							i(35883),	-- Silversteel Gauntlets
@@ -1692,7 +1692,7 @@ root("Zones", {
 						["coord"] = { 35.4, 79.4, HOWLING_FJORD },
 						["qg"] = 24741,	-- Annie Bonn
 						["sourceQuest"] = 11480,	-- Meet Number Two
-						["g"] = {
+						["groups"] = {
 							i(38257),	-- Strike of the Seas
 							i(38258),	-- Sailor's Knotted Charm
 							i(38259),	-- First Mate's Pocketwatch
@@ -1719,7 +1719,7 @@ root("Zones", {
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 24126,	-- Apothecary Lysander
-						["g"] = {
+						["groups"] = {
 							i(35832),	-- Blauvelt's Special Occasion Gloves
 							i(35834),	-- Nimblefinger Scaled Gloves
 							i(35835),	-- Antique Reinforced Legguards
@@ -1800,7 +1800,7 @@ root("Zones", {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 59.3, 55.4, HOWLING_FJORD },	-- NPC
 						},
-						["g"] = {
+						["groups"] = {
 							i(35829),	-- Coldspike Longbow
 							i(35823),	-- Ice-Rimed Dagger
 							i(35827),	-- Regal Sceptre
@@ -1829,7 +1829,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24135,	-- Greatmother Ankha
 						["sourceQuest"] = 11265,	-- Of Keys and Cages
-						["g"] = {
+						["groups"] = {
 							i(35884),	-- Regal Pantaloons
 							i(35887),	-- Loam-Stained Greaves
 							i(35885),	-- Tribal Chestguard
@@ -1852,7 +1852,7 @@ root("Zones", {
 						["qg"] = 24176,	-- Foreman Colbey
 						["coord"] = { 60.1, 15.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(35937),	-- Braxley's Backyard Moonshine
 							i(35929),	-- Gholamcloth Wrap
 							i(35931),	-- Appointed Scalemail Leggings
@@ -1864,7 +1864,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 24750,	-- Hidalgo the Master Falconer
 						["sourceQuest"] = 11468,	-- Falcon Versus Hawk
-						["g"] = {
+						["groups"] = {
 							i(35860),	-- Flexible Leather Footwraps
 							i(35859),	-- Fire-Purifying Tunic
 							i(35861),	-- Inescapable Girdle
@@ -1913,7 +1913,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 23784,	-- Apothecary Hanes
 						["sourceQuest"] = 11232,	-- Guide Our Sights
-						["g"] = {
+						["groups"] = {
 							i(35829),	-- Coldspike Longbow
 							i(35827),	-- Regal Sceptre
 							i(35830),	-- Worn Vrykul Smasher
@@ -1927,7 +1927,7 @@ root("Zones", {
 						["qg"] = 24810,	-- Anuniaq
 						["sourceQuest"] = 11458,	-- Avenge Iskaal
 						["isBreadcrumb"] = true,
-						["g"] = {
+						["groups"] = {
 							i(37283),	-- Wandering Healer's Kilt
 							i(37566),	-- Durable Worghide Cape
 							i(37546),	-- Choker of the Northern Wind
@@ -1948,7 +1948,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23888,	-- Mage-Lieutenant Malister
 						["sourceQuest"] = 11187,	-- Mage-Lieutenant Malister
-						["g"] = {
+						["groups"] = {
 							i(35871),	-- Indigo Robe of Replenishment
 							i(35873),	-- Interlinked Chain Girdle
 							i(35875),	-- Beneficent Skullcap
@@ -1965,7 +1965,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["sourceQuest"] = 11309,	-- Parts for the Job
-						["g"] = {
+						["groups"] = {
 							i(35860),	-- Flexible Leather Footwraps
 							i(35859),	-- Fire-Purifying Tunic
 							i(35861),	-- Inescapable Girdle
@@ -2034,7 +2034,7 @@ root("Zones", {
 							{ 32.0, 75.8, HOWLING_FJORD },
 							{ 33.2, 80.2, HOWLING_FJORD },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(9, {	-- King Ping
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2053,7 +2053,7 @@ root("Zones", {
 							{ 68.6, 16.8, HOWLING_FJORD },
 							{ 71.6, 13.6, HOWLING_FJORD },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Perobas the Bloodthirster
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2078,7 +2078,7 @@ root("Zones", {
 							{ 70.6, 56.8, HOWLING_FJORD },
 							{ 69.4, 58.2, HOWLING_FJORD },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- Vigdis the War Maiden
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2090,14 +2090,14 @@ root("Zones", {
 				n(VENDORS, {
 					n(24539, {	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.8, HOWLING_FJORD },
-						["g"] = {
+						["groups"] = {
 							i(6097),	-- Acolyte's Shirt
 						},
 					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of hte Alliance Vanguard
 							i(38463),	-- Lordaeron's Resolve
@@ -2114,7 +2114,7 @@ root("Zones", {
 					n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
@@ -2131,7 +2131,7 @@ root("Zones", {
 					n(24028, {	-- Talu Frosthoof <Bowyer>
 						["coord"] = { 48.2, 11.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(11307, {	-- Massive Longbow
 								["isLimited"] = true,
 							}),
@@ -2142,7 +2142,7 @@ root("Zones", {
 					}),
 					n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
 						["coord"] = { 25.4, 58.6, HOWLING_FJORD },
-						["g"] = {
+						["groups"] = {
 							i(44059),	-- Cuttlefish Scale Breastplate
 							i(44060),	-- Cuttlefish Tooth Ringmail
 							i(41574),	-- Design: Defender's Shadow Crystal

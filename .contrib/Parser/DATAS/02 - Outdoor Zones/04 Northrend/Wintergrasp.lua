@@ -35,7 +35,7 @@ root("Zones", {
 					ach(2080),	-- Black War Mammoth
 					ach(1737, {	-- Destruction Derby (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1),	-- Wintergrasp Catapult
 							crit(2),	-- Wintergrasp Demolisher
 							crit(3),	-- Wintergrasp Siege Engine
@@ -44,7 +44,7 @@ root("Zones", {
 					}),
 					ach(2476, {	-- Destruction Derby (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1),	-- Wintergrasp Catapult
 							crit(2),	-- Wintergrasp Demolisher
 							crit(3),	-- Wintergrasp Siege Engine
@@ -269,12 +269,12 @@ root("Zones", {
 				}),
 				n(VENDORS, {
 					["description"] = "These vendors will only show if your faction controls Wintergrasp.",
-					["g"] = {
+					["groups"] = {
 						n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.8, 17.4, WINTERGRASP },
 							["races"] = HORDE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(41742, {	-- Design: Enigmatic Skyflare Diamond
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -447,7 +447,7 @@ root("Zones", {
 								--------------------------------------------------------------------------
 								i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 									["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-									["g"] = {
+									["groups"] = {
 										ach(2080),		-- Black War Mammoth
 									},
 								}),
@@ -577,7 +577,7 @@ root("Zones", {
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(41742, {	-- Design: Enigmatic Skyflare Diamond
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -651,7 +651,7 @@ root("Zones", {
 								}),
 								i(43956, {	-- Black War Mammoth (A) (MOUNT!)
 									["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-									["g"] = {
+									["groups"] = {
 										ach(2080),		-- Black War Mammoth
 									},
 								}),
@@ -795,7 +795,7 @@ root("Zones", {
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(48974, {	-- Titan-Forged Armwraps of Dominance
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -898,7 +898,7 @@ root("Zones", {
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.8, 17.6, WINTERGRASP },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(41742, {	-- Design: Enigmatic Skyflare Diamond
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -976,10 +976,10 @@ root("Zones", {
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = HORDE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 									["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-									["g"] = {
+									["groups"] = {
 										ach(2080),		-- Black War Mammoth
 									},
 								}),
@@ -1173,7 +1173,7 @@ root("Zones", {
 						n(31101, {	-- Hoodoo Master Fu'jin
 							["coord"] = { 51.6, 21.0, WINTERGRASP },
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(44067, {	-- Inscription of Triumph
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -1185,7 +1185,7 @@ root("Zones", {
 						n(31051, {	-- Sorceress Kaylana
 							["coord"] = { 48.4, 21.08, WINTERGRASP },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(44067, {	-- Inscription of Triumph
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),

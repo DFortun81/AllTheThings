@@ -45,13 +45,11 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(861, {	-- Explore Bloodmyst Isle
+				explorationAch(861, {	-- Explore Bloodmyst Isle
 					-- #if BEFORE WRATH
 					["description"] = "Explore Bloodmyst Isle, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

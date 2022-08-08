@@ -673,13 +673,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(768, {	-- Explore Tirisfal Glades
+				explorationAch(768, {	-- Explore Tirisfal Glades
 					-- #if BEFORE WRATH
 					["description"] = "Explore Tirisfal Glades, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
 					["sourceQuests"] = {
 						65788,	-- A Walk with Ghosts

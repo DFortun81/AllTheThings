@@ -8,10 +8,10 @@ root("Zones", {
 			["achievementID"] = 1266,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1266),	-- Explore Grizzly Hills
+					explorationAch(1266),	-- Explore Grizzly Hills
 					ach(37, {	-- Fo' Grizzle My Shizzle (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Ursoc, the Bear God
 								["sourceQuest"] = 12249,	-- Ursoc, the Bear God
 							}),
@@ -34,7 +34,7 @@ root("Zones", {
 					}),
 					ach(1357, {	-- Fo' Grizzle My Shizzle (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Ursoc, the Bear God
 								["sourceQuest"] = 12236,	-- Ursoc, the Bear God
 							}),
@@ -66,7 +66,7 @@ root("Zones", {
 					}),
 					ach(1596, {	-- Guru of Drakuru
 						["collectible"] = false,
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Cleansing Drak'Tharon
 								["sourceQuest"] = 12238,	-- Cleansing Drak'Tharon
 							}),
@@ -131,7 +131,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["sourceQuest"] = 12175,	-- Gray Worg Hides
-						["g"] = {
+						["groups"] = {
 							i(38735),	-- Specially Treated Robes
 							i(39034),	-- Bearskin Helm
 							i(39064),	-- Hide-Lined Chestguard
@@ -152,7 +152,7 @@ root("Zones", {
 							12219,	-- The Failed World Tree
 							12220,	-- A Dark Influence
 						},
-						["g"] = {
+						["groups"] = {
 							i(38726),	-- Instigator's Gloves
 							i(39025),	-- Shackles of Sanity
 							i(39053),	-- Helm of the Furbolg Purifier
@@ -167,7 +167,7 @@ root("Zones", {
 							12213,	-- The Darkness Beneath
 							12207,	-- Vordassil's Fall
 						},
-						["g"] = {
+						["groups"] = {
 							i(38726),	-- Instigator's Gloves
 							i(39025),	-- Shackles of Sanity
 							i(39053),	-- Helm of the Furbolg Purifier
@@ -204,7 +204,7 @@ root("Zones", {
 						["qg"] = 27495,	-- Barblefink
 						["repeatable"] = true,
 						["sourceQuest"] = 12443,	-- Seeking Solvent
-						["g"] = {
+						["groups"] = {
 							i(37664),	-- Element 115 -- TODO: this isn't a reward. add item to a parser blacklist later
 						},
 					}),
@@ -238,7 +238,7 @@ root("Zones", {
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12329,	-- Fate and Coincidence
-						["g"] = {
+						["groups"] = {
 							i(38748),	-- Seal of the Slumbering Wolf
 							i(38744),	-- Solstice Signet
 							i(38752),	-- Tatiana's Pendant
@@ -249,7 +249,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
-						["g"] = {
+						["groups"] = {
 							i(38733),	-- Raiment of the Caged Beast
 							i(39031),	-- Boots of Internal Strife
 							i(39059),	-- Wristguard of the Tormented Soul
@@ -268,7 +268,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27120,	-- Raider Captain Kronn
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Grizzled Veteran (Blackriver Brawl)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -279,7 +279,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27783,	-- Scout Captain Carter
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Grizzled Veteran (Blackriver Skirmish)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -290,7 +290,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27227,	-- Prospector Rokar
 						["sourceQuest"] = 12198,	-- ... Or Maybe We Don't
-						["g"] = {
+						["groups"] = {
 							i(38711),	-- Grounded Gloves
 							i(39015),	-- Crackpot Spaulders
 							i(39044),	-- Short-Circuiting Boots
@@ -327,7 +327,7 @@ root("Zones", {
 						["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
 						["qg"] = 26787,	-- Image of Drakuru
 						["sourceQuest"] = 12068,	-- Voices From the Dust
-						["g"] = {
+						["groups"] = {
 							i(40755),	-- Enticing Sabatons
 							i(40757),	-- Shackles of Dark Whispers
 							i(40756),	-- Shoulders of the Seducer
@@ -345,7 +345,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27532,	-- General Khazgar
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Grizzled Veteran (Crush Captain Brightwater!)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -379,7 +379,7 @@ root("Zones", {
 						["cr"] = 27546,	-- Silverbrook Hunter
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 36940 },	-- Mikhail's Journal
-						["g"] = {
+						["groups"] = {
 							i(38734),	-- Abandoned Hood
 							i(39033),	-- Discarded Miner's Jerkin
 							i(39060),	-- Patched Trapper Pauldrons
@@ -400,7 +400,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["sourceQuest"] = 12226,	-- Just Passing Through
-						["g"] = {
+						["groups"] = {
 							i(38745),	-- Fetid Loop
 							i(38746),	-- Rancid Signet
 							i(38747),	-- Mildly Tarnished Ring
@@ -411,7 +411,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27520,	-- Baron Freeman
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Grizzled Veteran (Down With Captain Zorna!)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -421,7 +421,7 @@ root("Zones", {
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12116,	-- It Takes Guts...
-						["g"] = {
+						["groups"] = {
 							i(38730),	-- Bell-Ringer's Shoulderpads
 							i(39029),	-- Waistguard of Expedient Procurement
 							i(39057),	-- Polished Staghorn Helm
@@ -432,7 +432,7 @@ root("Zones", {
 						["coord"] = { 69.4, 17.4, GRIZZLY_HILLS },
 						["qg"] = 26814,	-- Harrison Jones
 						["description"] = "Inside the |cFFFFD700Drakil'jin Ruins|r.",
-						["g"] = {
+						["groups"] = {
 							i(38729),	-- Sandals of Quick Escape
 							i(39028),	-- Coiled Leather Gauntlets
 							i(39056),	-- Whip-Stitched Wristguards
@@ -450,7 +450,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27499,	-- Caged Prisoner
 						["sourceQuest"] = 12302,	-- Words of Warning
-						["g"] = {
+						["groups"] = {
 							i(38733),	-- Raiment of the Caged Beast
 							i(39031),	-- Boots of Internal Strife
 							i(39059),	-- Wristguard of the Tormented Soul
@@ -466,7 +466,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
-						["g"] = {
+						["groups"] = {
 							i(38760),	-- Insignia of Bloody Fire
 							i(38761),	-- Mendicant's Charm
 							i(38762),	-- Talon of Hatred
@@ -484,7 +484,7 @@ root("Zones", {
 							12210,	-- Troll Season! (A)
 							12208,	-- Good Troll Hunting (H)
 						},
-						["g"] = {
+						["groups"] = {
 							i(39116),	-- Grinder of Reverse Emancipation
 							i(39131),	-- Warbling Crossbow
 							i(39142),	-- Mace of Helotry
@@ -502,7 +502,7 @@ root("Zones", {
 						["coord"] = { 79.7, 33.5, GRIZZLY_HILLS },
 						["qg"] = 26420,	-- Gavrock
 						["sourceQuest"] = 12094,	-- Latent Power
-						["g"] = {
+						["groups"] = {
 							i(39117),	-- Liberator's Blade
 							i(39109),	-- Branch of the Roaming Spirit
 							i(39120),	-- Spire of Soaring Rumination
@@ -538,7 +538,7 @@ root("Zones", {
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27037,	-- Hidetrader Jun'ik
-						["g"] = {
+						["groups"] = {
 							i(38734),	-- Abandoned Hood
 							i(39033),	-- Discarded Miner's Jerkin
 							i(39060),	-- Patched Trapper Pauldrons
@@ -563,7 +563,7 @@ root("Zones", {
 						["coord"] = { 64.9, 43.4, GRIZZLY_HILLS },
 						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12411,	-- A Sister's Pledge
-						["g"] = {
+						["groups"] = {
 							i(39170),	-- Furred Worgslayer Spaulders
 							i(39171),	-- Fangsever Shoulderguards
 							i(39169),	-- Keen Razorfang Spaulders
@@ -581,7 +581,7 @@ root("Zones", {
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 						["qg"] = 26260,	-- Kurun
 						["sourceQuest"] = 12070,	-- Rallying the Troops
-						["g"] = {
+						["groups"] = {
 							i(38715),	-- Forge-Scarred Sandals
 							i(39019),	-- Iron-Shatter Leggings
 							i(39048),	-- Flame-Tested Chestguard
@@ -596,7 +596,7 @@ root("Zones", {
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12137,	-- Chill Out, Mon
-						["g"] = {
+						["groups"] = {
 							i(39114),	-- Axe of the Warlord's Demise
 							i(39125),	-- Beaked Dagger
 							i(39127),	-- Serrated Cold-Iron Slicer
@@ -622,7 +622,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27451,	-- Commander Bargok
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Grizzled Veteran (Keep 'Em on Their Heels)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -633,7 +633,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27562,	-- Lieutenant Stuart
-						["g"] = {
+						["groups"] = {
 							crit(6, {	-- Grizzled Veteran (Keep Them at Bay!)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -644,7 +644,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27563,	-- Centurion Kaggrum
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- Grizzled Veteran (Keep Them at Bay)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -655,7 +655,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27468,	-- Sergeant Hartsman
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- Grizzled Veteran (Kick 'Em While They're Down)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -671,7 +671,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27484,	-- Rheanna
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Grizzled Veteran (Life or Death)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -685,7 +685,7 @@ root("Zones", {
 							12511,	-- The Hills Have Us
 							39207,	-- Hero's Call: Grizzly Hills!
 						},
-						["g"] = {
+						["groups"] = {
 							i(38732),	-- Bramble-Proof Leggings
 							i(39030),	-- Patchhide Pants
 							i(39058),	-- Legguards of Swift Pursuit
@@ -710,7 +710,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27422,	-- Lurz
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Grizzled Veteran (Making Repairs)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -736,7 +736,7 @@ root("Zones", {
 						["coord"] = { 49.2, 34.1, GRIZZLY_HILLS },
 						["qg"] = 26588,	-- Emily
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(38714),	-- Path-Cutter's Cord
 							i(39018),	-- Boots of Safe Travel
 							i(39047),	-- Legguards of Unerring Navigation
@@ -748,7 +748,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuest"] = 12259,	-- The Thane of Voldrune
-						["g"] = {
+						["groups"] = {
 							i(38732),	-- Bramble-Proof Leggings
 							i(39030),	-- Patchhide Pants
 							i(39058),	-- Legguards of Swift Pursuit
@@ -771,7 +771,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27486,	-- Sergei
 						["sourceQuest"] = 12295,	-- An Exercise in Diplomacy
-						["g"] = {
+						["groups"] = {
 							i(38760),	-- Mendicant's Charm
 							i(38761),	-- Talon of Hatred
 							i(38762),	-- Insignia of Bloody Fire
@@ -793,7 +793,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27464,	-- Aumana
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- Grizzled Veteran (Overwhelmed!)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -804,7 +804,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27416,	-- Pipthwack
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Grizzled Veteran (Pieces Parts)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -821,7 +821,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26885,	-- Mountaineer Kilian
 						["sourceQuest"] = 12184,	-- Cultivating an Image
-						["g"] = {
+						["groups"] = {
 							i(38713),	-- Spaulders of Foresight
 							i(39017),	-- Belt of Keen Hearing
 							i(39046),	-- Shoulderpads of Imminent Disaster
@@ -865,7 +865,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27759,	-- Commander Howser
-						["g"] = {
+						["groups"] = {
 							crit(9, {	-- Grizzled Veteran (Riding the Red Rocket)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -876,7 +876,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27708,	-- General Gorlok
-						["g"] = {
+						["groups"] = {
 							crit(6, {	-- Grizzled Veteran (Riding the Red Rocket)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -906,7 +906,7 @@ root("Zones", {
 							12161,	-- Ruuna the Blind (A)
 							12425,	-- Ruuna the Blind (H)
 						},
-						["g"] = {
+						["groups"] = {
 							i(38727),	-- Foreseer's Girdle
 							i(39026),	-- Pauldrons of the Prophet
 							i(39054),	-- Gossamer-Stained Grips
@@ -922,7 +922,7 @@ root("Zones", {
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12329,	-- Fate and Coincidence
-						["g"] = {
+						["groups"] = {
 							i(39011),	-- Bloody Bulwark
 							i(39010),	-- Wolfslayer's Crest
 							i(38755),	-- Scepter of Passionate Reprisal
@@ -943,7 +943,7 @@ root("Zones", {
 						["coord"] = { 16.6, 48.2, GRIZZLY_HILLS },
 						["qg"] = 26604,	-- Mack Fearsen
 						["sourceQuest"] = 12029,	-- Seared Scourge
-						["g"] = {
+						["groups"] = {
 							i(39649),	-- Kurzel's Angst
 							i(39648),	-- Kurzel's Rage
 							i(39650),	-- Kurzel's Warband
@@ -996,7 +996,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27423,	-- Grekk
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Grizzled Veteran (Shred the Alliance)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -1007,7 +1007,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27371,	-- Synipus
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Grizzled Veteran (Shredder Repair)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -1018,7 +1018,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27602,	-- Sergeant Downey
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- Grizzled Veteran (Smoke 'Em Out)
 								["achievementID"] = 2016,	-- Grizzled Veteran
 							}),
@@ -1029,7 +1029,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 27606,	-- Stone Guard Ragetotem
-						["g"] = {
+						["groups"] = {
 							crit(9, {	-- Grizzled Veteran (Smoke 'Em Out)
 								["achievementID"] = 2017,	-- Grizzled Veteran
 							}),
@@ -1045,7 +1045,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26932,	-- Petrov
 						["sourceQuest"] = 12158,	-- Hollowstone Mine
-						["g"] = {
+						["groups"] = {
 							i(38735),	-- Specially Treated Robes
 							i(39034),	-- Bearskin Helm
 							i(39064),	-- Hide-Lined Chestguard
@@ -1057,7 +1057,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26514,	-- Surveyor Orlond
 						["sourceQuest"] = 12010,	-- The Fate of Orlond
-						["g"] = {
+						["groups"] = {
 							i(38717),	-- Dusty Miner's Leggings
 							i(39021),	-- Ectoplasm Stained Wristguards
 							i(39050),	-- Ghostridden Waistguard
@@ -1068,7 +1068,7 @@ root("Zones", {
 						["coord"] = { 16.4, 47.8, GRIZZLY_HILLS },
 						["qg"] = 26423,	-- Drakuru
 						["sourceQuest"] = 11990,	-- Vial of Visions
-						["g"] = {
+						["groups"] = {
 							i(38716),	-- Ethereal Hood
 							i(39020),	-- Drakuru's Ghastly Helm
 							i(39049),	-- Helm of Spirit Links
@@ -1153,7 +1153,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuest"] = 12430,	-- The Conquest Pit: Death Is Likely
-						["g"] = {
+						["groups"] = {
 							i(39181),	-- Grips of Torrential Power
 							i(39183),	-- Shining Buckle Gauntlets
 							i(39182),	-- Handguards of Deluded Might
@@ -1195,7 +1195,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuest"] = 12310,	-- A Swift Response
-						["g"] = {
+						["groups"] = {
 							i(38719),	-- Robe of Expurgation
 							i(39023),	-- Wax-Coated Chestguard
 							i(39052),	-- Acid-Resistant Hauberk
@@ -1218,7 +1218,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
-						["g"] = {
+						["groups"] = {
 							i(38711),	-- Grounded Gloves
 							i(39015),	-- Crackpot Spaulders
 							i(39044),	-- Short-Circuiting Boots
@@ -1248,7 +1248,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26361,	-- Torthen Deepdig
 						["sourceQuest"] = 11988,	-- The Runic Keystone
-						["g"] = {
+						["groups"] = {
 							i(38710),	-- Wayfinder's Bracers
 							i(39013),	-- Discoverer's Mitts
 							i(39043),	-- Trailbreaker's Spaulders
@@ -1260,7 +1260,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 26584,	-- Sage Paluna
 						["sourceQuest"] = 12054,	-- Deciphering the Journal
-						["g"] = {
+						["groups"] = {
 							i(38710),	-- Wayfinder's Bracers
 							i(39013),	-- Discoverer's Mitts
 							i(39043),	-- Trailbreaker's Spaulders
@@ -1275,7 +1275,7 @@ root("Zones", {
 							12222,	-- Secrets of the Flamebinders
 							12223,	-- Thinning the Ranks
 						},
-						["g"] = {
+						["groups"] = {
 							i(38712),	-- Headbinder's Crown
 							i(39016),	-- Tunic of the Rectified Thane
 							i(39045),	-- Legguards of Refuted Feudalism
@@ -1291,7 +1291,7 @@ root("Zones", {
 							12257,	-- A Show of Strength
 							12256,	-- The Flamebinders' Secrets
 						},
-						["g"] = {
+						["groups"] = {
 							i(38712),	-- Headbinder's Crown
 							i(39016),	-- Tunic of the Rectified Thane
 							i(39045),	-- Legguards of Refuted Feudalism
@@ -1312,7 +1312,7 @@ root("Zones", {
 					q(12114, {	-- Therapy
 						["coord"] = { 73.7, 34.0, GRIZZLY_HILLS },
 						["qg"] = 26884,	-- Harkor
-						["g"] = {
+						["groups"] = {
 							i(38728),	-- Kilt of Peaceful Reclamation
 							i(39027),	-- Leggings of Anger Management
 							i(39055),	-- Handguards of Extermination
@@ -1351,7 +1351,7 @@ root("Zones", {
 							12248,	-- Vordrassil's Sapling
 							12250,	-- Vordrassil's Seeds
 						},
-						["g"] = {
+						["groups"] = {
 							i(39176),	-- Kilt of Deific Torment
 							i(39177),	-- Pants of Purified Wind
 							i(39178),	-- Greaves of Sanctified Dissolution
@@ -1368,7 +1368,7 @@ root("Zones", {
 							12241,	-- Destroy the Sapling
 							12242,	-- Vordrassil's Seeds
 						},
-						["g"] = {
+						["groups"] = {
 							i(39176),	-- Kilt of Deific Torment
 							i(39177),	-- Pants of Purified Wind
 							i(39178),	-- Greaves of Sanctified Dissolution
@@ -1386,7 +1386,7 @@ root("Zones", {
 						["coord"] = { 44.9, 28.3, GRIZZLY_HILLS },
 						["qg"] = 26701,	-- Image of Drakuru
 						["sourceQuest"] = 12802,	-- My Heart is in Your Hands
-						["g"] = {
+						["groups"] = {
 							i(38718),	-- Wispy Shoulderpads
 							i(39022),	-- Helm of Rising Smoke
 							i(39051),	-- Plane-Shifted Boots
@@ -1399,7 +1399,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuest"] = 12413,	-- Attack on Silverbrook
-						["g"] = {
+						["groups"] = {
 							i(38719),	-- Robe of Expurgation
 							i(39023),	-- Wax-Coated Chestguard
 							i(39052),	-- Acid-Resistant Hauberk
@@ -1423,7 +1423,7 @@ root("Zones", {
 							12246,	-- A Possible Link
 							12247,	-- Children of Ursoc
 						},
-						["g"] = {
+						["groups"] = {
 							i(38753),	-- Hoarder's Necklace
 							i(38743),	-- Ring of the Tender
 							i(38757),	-- Drape of the Possessive Soul
@@ -1437,7 +1437,7 @@ root("Zones", {
 							12229,	-- A Possible Link
 							12231,	-- The Bear God's Offpsring
 						},
-						["g"] = {
+						["groups"] = {
 							i(38753),	-- Hoarder's Necklace
 							i(38743),	-- Band of the Tender
 							i(38757),	-- Drape of the Possessive Soul
@@ -1465,7 +1465,7 @@ root("Zones", {
 						["coord"] = { 25.6, 33.3, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27545,	-- Katja
-						["g"] = {
+						["groups"] = {
 							i(39062),	-- Herbalist's Pauldrons
 							i(39105),	-- Girdle of Growing Vines
 							i(38756),	-- Drape of Horticultural Sanitization
@@ -1483,7 +1483,7 @@ root("Zones", {
 					n(38453, {	-- Arcturis
 						["description"] = "This is a highly sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 						["coord"] = { 31.2, 55.4, GRIZZLY_HILLS },
-						["g"] = {
+						["groups"] = {
 							i(51958),	-- Pristine Glowbear Pelt
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
@@ -1510,7 +1510,7 @@ root("Zones", {
 							{ 21.8, 71.6, GRIZZLY_HILLS },
 							{ 22.6, 73.6, GRIZZLY_HILLS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(13, {	-- Grocklar
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1524,7 +1524,7 @@ root("Zones", {
 							{ 34.8, 48.6, GRIZZLY_HILLS },
 							{ 40.0, 50.4, GRIZZLY_HILLS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(14, {	-- Seething Hate
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1545,7 +1545,7 @@ root("Zones", {
 							{ 71.6, 35.0, GRIZZLY_HILLS },
 							{ 75.2, 38.8, GRIZZLY_HILLS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(15, {	-- Syreian the Bonecarver
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1556,11 +1556,11 @@ root("Zones", {
 				}),
 				n(VENDORS, {
 					["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.",
-					["g"] = {
+					["groups"] = {
 						n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.4, GRIZZLY_HILLS },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(38358, {	-- Arcane Revitalizer
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -1584,7 +1584,7 @@ root("Zones", {
 						n(26868, {	-- Provisioner Lorkran <General Goods>
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(21219),	-- Recipe: Sagefish Delight
 								i(21099),	-- Recipe: Smoked Sagefish
 							},
@@ -1592,7 +1592,7 @@ root("Zones", {
 						n(27730, {	-- Purkom <Venture Coin Vendor>
 							["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
-							["g"] = pvp({
+							["groups"] = pvp({
 								i(38358, {	-- Arcane Revitalizer
 									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 								}),
@@ -1615,7 +1615,7 @@ root("Zones", {
 						}),
 						n(91632, {	-- Remington Brode <Traveling Lumberjack>
 							["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
-							["g"] = {
+							["groups"] = {
 								i(122236, {	-- Music Roll: Totems of the Grizzlemaw
 									["timeline"] = { "added 6.1.0.19480" },
 								}),

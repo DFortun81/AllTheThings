@@ -82,13 +82,11 @@ root("Zones", {
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(866, {	-- Explore Nagrand
+					explorationAch(866, {	-- Explore Nagrand
 						-- #if BEFORE WRATH
 						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					removeclassicphase(ach(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE 3.0.1

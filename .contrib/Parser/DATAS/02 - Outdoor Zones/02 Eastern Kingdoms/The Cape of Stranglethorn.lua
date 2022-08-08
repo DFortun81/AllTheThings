@@ -46,12 +46,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				ach(4995, {	-- Explore the Cape of Stranglethorn
+				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
 					["timeline"] = { "added 4.0.3" },
 					-- #if BEFORE WRATH
 					["description"] = "Explore The Cape of Stranglethorn, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
 				}),
 			}),

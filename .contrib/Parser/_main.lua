@@ -1751,6 +1751,21 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
 end
+explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
+	t = struct("achievementID", id, t or {});
+	-- #if ANYCLASSIC
+	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
+	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #endif
+	return t;
+end
+explorationBatch = function(data)
+	local groups = {};
+	for maphash,explorationID in pairs(data) do
+		table.insert(groups, exploration(explorationID, maphash));
+	end
+	return groups;
+end
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end

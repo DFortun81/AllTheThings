@@ -8,7 +8,7 @@ root("Zones", {
 			["achievementID"] = 1269,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1269),	-- Explore The Storm Peaks
+					explorationAch(1269),	-- Explore The Storm Peaks
 					ach(1428),	-- Mine Sweeper
 					ach(38, {	-- The Summit of Storm Peaks
 						-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct
@@ -107,10 +107,10 @@ root("Zones", {
 				n(FACTIONS, {
 					faction(1119, {	-- The Sons of Hodir
 						["crs"] = { 30105 },	-- King Jokkum
-						["g"] = {
+						["groups"] = {
 							n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
 								["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
-								["g"] = {
+								["groups"] = {
 									i(44193),	-- Broken Stalactite
 									i(41720),	-- Design: Smooth Autumn's Glow
 									i(41817, {	-- Design: Smooth Autumn's Glow
@@ -274,7 +274,7 @@ root("Zones", {
 					i(44751, {	-- Hyldnir Spoils
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
-						["g"] = {
+						["groups"] = {
 							i(43962),	-- White Polar Bear (MOUNT!)
 						},
 					}),
@@ -300,7 +300,7 @@ root("Zones", {
 						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["sourceQuest"] = 12826,	-- Slightly Unstable
-						["g"] = {
+						["groups"] = {
 							i(42787),	-- Ironwool Bindings
 							i(42800),	-- Gale-Wind Guard
 							i(42829),	-- Plated Skullguard
@@ -347,7 +347,7 @@ root("Zones", {
 							12836,	-- Expression of Gratitude
 							12827,	-- Reclaimed Rations
 						},
-						["g"] = {
+						["groups"] = {
 							i(42785),	-- Mammoth Sinew Cinch
 							i(42798),	-- Mammoth Hide Galoshes
 							i(42810),	-- Wooly Cowl
@@ -393,7 +393,7 @@ root("Zones", {
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["sourceQuest"] = 13061,	-- Into the Pit
-						["g"] = {
+						["groups"] = {
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),
@@ -413,7 +413,7 @@ root("Zones", {
 							{ 43.6, 74.6, THE_STORM_PEAKS },
 							{ 43.4, 75.2, THE_STORM_PEAKS },
 						},
-						["g"] = {
+						["groups"] = {
 							i(42799),	-- Snowblind Butcher
 							i(42828),	-- Garm's Ward
 							i(42786),	-- Daschal's Serrated Blade
@@ -440,7 +440,7 @@ root("Zones", {
 							13049,	-- The Hero's Arms
 							13048,	-- Where Time Went Wrong
 						},
-						["g"] = {
+						["groups"] = {
 							i(43186),	-- Iceshrieker's Touch
 							i(43185),	-- Wand of Chilled Renewal
 						},
@@ -476,7 +476,7 @@ root("Zones", {
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["sourceQuest"] = 12971,	-- Taking on All Challengers
-						["g"] = {
+						["groups"] = {
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),
@@ -484,7 +484,7 @@ root("Zones", {
 						["qg"] = 29432,	-- Gino
 						["coord"] = { 50.0, 81.7, THE_STORM_PEAKS },
 						["sourceQuest"] = 12823,	-- A Flawless Plan
-						["g"] = {
+						["groups"] = {
 							i(42790),	-- K3 Surgeon's Gloves
 							i(42803),	-- Buckshot-Proof Battlesurgeon's Protector
 							i(42815),	-- Mammoth Mukluks
@@ -500,7 +500,7 @@ root("Zones", {
 					q(13109, {	-- Diametrically Opposed
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 30105,	-- King Jokkum
-						["g"] = {
+						["groups"] = {
 							i(43193),	-- Lightning Infused Mantle
 							i(43194),	-- Charred Leather Shoulderguards
 							i(43195),	-- Stormforged Shoulders
@@ -512,7 +512,7 @@ root("Zones", {
 						["qg"] = 29885,	-- Mildred the Cruel
 						["coord"] = { 44.4, 68.9, THE_STORM_PEAKS },
 						["sourceQuest"] = 12905,	-- Mildred the Cruel
-						["g"] = {
+						["groups"] = {
 							i(42843),	-- Mildred's Cowl
 							i(42867),	-- Cured Proto-Drake Leggings
 							i(42889),	-- Mildred's Grasp
@@ -529,7 +529,7 @@ root("Zones", {
 						["coord"] = { 36.4, 49.0, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 						["qg"] = 30247,	-- Blood Guard Lorga
-						["g"] = {
+						["groups"] = {
 							i(42788),	-- Frosthowl Cinch
 							i(42801),	-- Nomadic Bracers
 							i(42813),	-- Chestplate of the Northern Ranger
@@ -563,7 +563,7 @@ root("Zones", {
 						["coord"] = { 39.2, 59.6, THE_STORM_PEAKS },	-- approximate, as NPC patrols a short path back and forth
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12877,	-- The Lonesome Watcher
-						["g"] = {
+						["groups"] = {
 							i(42791),	-- Ring of Order
 							i(42804),	-- spiked Iceclimber's Boots
 							i(42816),	-- Cuffs of Invention
@@ -575,7 +575,7 @@ root("Zones", {
 						["coord"] = { 30.2, 74.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12873,	-- The Frostborn King
-						["g"] = {
+						["groups"] = {
 							i(42788),	-- Frosthowl Cinch
 							i(42801),	-- Nomadic Bracers
 							i(42813),	-- Chestplate of the Northern Ranger
@@ -601,7 +601,7 @@ root("Zones", {
 							12956,	-- A Spark of Hope
 							12915,	-- Mending Fences
 						},
-						["g"] = {
+						["groups"] = {
 							i(42792),	-- Vestments of Dun Niffelem
 							i(42805),	-- Njormeld's Pauldrons
 							i(42817),	-- Reforged Chain Leggings
@@ -613,7 +613,7 @@ root("Zones", {
 						["qg"] = 29579,	-- Brann Bronzebeard
 						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuest"] = 13274,	-- The Core's Keeper
-						["g"] = {
+						["groups"] = {
 							i(43189),	-- Amberglow Signet
 							i(43190),	-- Iceforged Battle Ring
 							i(43191),	-- Jagged Ice Band
@@ -675,7 +675,7 @@ root("Zones", {
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 57.9, THE_STORM_PEAKS },
 						["sourceQuest"] = 13051,	-- Territorial Trespass
-						["g"] = {
+						["groups"] = {
 							i(42793),	-- Locket of Snowcrest
 							i(42806),	-- Storm-Weathered Cuffs
 							i(42818),	-- Stormstalker's Clutch
@@ -702,7 +702,7 @@ root("Zones", {
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12863,	-- Offering Thanks
-						["g"] = {
+						["groups"] = {
 							i(42789),	-- Boots of the Howling Winds
 							i(42802),	-- Hardened Whipping Belt
 							i(42814),	-- Broken Chastity Belt
@@ -714,7 +714,7 @@ root("Zones", {
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["sourceQuest"] = 12906,	-- Discipline
-						["g"] = {
+						["groups"] = {
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),
@@ -722,7 +722,7 @@ root("Zones", {
 						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.8, THE_STORM_PEAKS },
 						["sourceQuest"] = 13063,	-- Deemed Worthy
-						["g"] = {
+						["groups"] = {
 							i(42845),	-- Brunnhildar Runed Ring
 							i(42869),	-- Yeti Hide Mantle
 							i(42891),	-- Brunnhildar Snowkickers
@@ -768,7 +768,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13415,	-- The Library Console
-						["g"] = {
+						["groups"] = {
 							i(42794),	-- Hardened Vine of the Mauler
 							i(42824),	-- Maker's Edge
 							i(42819),	-- Maker's Touch
@@ -782,7 +782,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13416,	-- The Library Console
-						["g"] = {
+						["groups"] = {
 							i(42794),	-- Hardened Vine of the Mauler
 							i(42824),	-- Maker's Edge
 							i(42819),	-- Maker's Touch
@@ -799,7 +799,7 @@ root("Zones", {
 						["qg"] = 29997,	-- Iva the Vengeful
 						["coord"] = { 48.3, 72.1, THE_STORM_PEAKS },
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
-						["g"] = {
+						["groups"] = {
 							i(42849),	-- Flowing Valkyrion Robes
 							i(42862),	-- Hyldnir Painbringer
 							i(42883),	-- Iva's Boots
@@ -906,7 +906,7 @@ root("Zones", {
 						["coord"] = { 29.1, 74.9, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12866,	-- Stemming the Aggressors
-						["g"] = {
+						["groups"] = {
 							i(43185),	-- Wand of Chilled Renewal
 							i(43186),	-- Iceshrieker's Touch
 						},
@@ -964,7 +964,7 @@ root("Zones", {
 						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 						["sourceQuest"] = 12970,	-- The Hyldsmeet
-						["g"] = {
+						["groups"] = {
 							i(43204),	-- Hyldnir Runeweaver's Garb
 							i(42890),	-- Proto-Scale Pants
 							i(42879),	-- Crown of Hyldnir
@@ -975,7 +975,7 @@ root("Zones", {
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 57.9, THE_STORM_PEAKS },
 						["sourceQuest"] = 13050,	-- Veranus
-						["g"] = {
+						["groups"] = {
 							i(42859),	-- Thorim's Crusher
 							i(42857),	-- Thorim's Riding Crop
 							i(42858),	-- Crossbow of the Storms
@@ -988,7 +988,7 @@ root("Zones", {
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["sourceQuest"] = 12925,	-- Aberrations
-						["g"] = {
+						["groups"] = {
 							i(44751),	-- Hyldnir Spoils
 						},
 					}),
@@ -1006,7 +1006,7 @@ root("Zones", {
 						["coord"] = { 39.5, 56.3, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12880,	-- The Master Explorer
-						["g"] = {
+						["groups"] = {
 							i(43192),	-- Ring of the Northern Winds
 							i(43191),	-- Jagged Ice Band
 							i(43189),	-- Amberglow Signet
@@ -1036,7 +1036,7 @@ root("Zones", {
 						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["sourceQuest"] = 13062,	-- Lok'lira's Parting Gift
-						["g"] = {
+						["groups"] = {
 							i(42841),	-- Leggings of the Frozen Wastes
 							i(42865),	-- Frost Hardened Bracers
 							i(42887),	-- Pauldrons of the Ascent
@@ -1051,7 +1051,7 @@ root("Zones", {
 							--12928,	-- Norgannon's Shell (H)
 							13057,	-- The Terrace of the Makers (Probably)
 						},
-						["g"] = {
+						["groups"] = {
 							i(42847),	-- Terrace Gazer's Gloves
 							i(42871),	-- Bracer of Tarbash
 							i(42893),	-- Shoulders of Earthen Might
@@ -1089,7 +1089,7 @@ root("Zones", {
 							12957,	-- Slaves of the Stormforged (probably required)
 							12964,	-- The Dark Ore (definitely required)
 						},
-						["g"] = {
+						["groups"] = {
 							i(42795),	-- Leggings of Renewed Hope
 							i(42820),	-- Mantle of Bouldercrag
 							i(42827),	-- Rockshaper's Resolve
@@ -1125,7 +1125,7 @@ root("Zones", {
 						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 						["sourceQuest"] = 12998,	-- The Heart of the Storm
-						["g"] = {
+						["groups"] = {
 							i(43200),	-- Snowdrift Pantaloons
 							i(43201),	-- Leggings of Heightened Renewal
 							i(43202),	-- Jormungar Hide Legguards
@@ -1182,7 +1182,7 @@ root("Zones", {
 						["coord"] = { 37.6, 46.4, THE_STORM_PEAKS },
 						["requireSkill"] = ENGINEERING,
 						["sourceQuest"] = 12888,	-- SCRAP-E
-						["g"] = {
+						["groups"] = {
 							recipe(55252),	-- Schematic: Scrapbot Construction Kit
 						},
 					}),
@@ -1193,7 +1193,7 @@ root("Zones", {
 							13005,	-- The Earthen Oath (probably required)
 							13035,	-- Loken's Lackeys (definitely required)
 						},
-						["g"] = {
+						["groups"] = {
 							i(43210),	-- Globes of the Servant
 							i(43211),	-- rough Climber's Gloves
 							i(43212),	-- Gauntlets of the Windreacher
@@ -1220,7 +1220,7 @@ root("Zones", {
 						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 						["sourceQuest"] = 12900,	-- Making a Harness
-						["g"] = {
+						["groups"] = {
 							i(42846),	-- Jormungar Galoshes
 							i(42870),	-- Hibernal Chestguard
 							i(42895),	-- Scaled Jormungar Protector
@@ -1249,7 +1249,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 30469,	-- Tracker Val'zij
 						["sourceQuest"] = 13055,	-- Cave Medicine
-						["g"] = {
+						["groups"] = {
 							i(42789),	-- Boots of the Howling Winds
 							i(42802),	-- Hardened Whipping Belt
 							i(42814),	-- Broken Chastity Belt
@@ -1259,7 +1259,7 @@ root("Zones", {
 					q(12843, {	-- They Took Our Men!
 						["qg"] = 29473,	-- Gretchen Fizzlespark
 						["coord"] = { 41.1, 86.1, THE_STORM_PEAKS },
-						["g"] = {
+						["groups"] = {
 							i(42842),	-- Fur-Lined Shoulder Warmers
 							i(42866),	-- Fur-Lined Mittens
 							i(42888),	-- Summit Bracers
@@ -1271,7 +1271,7 @@ root("Zones", {
 						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 						["sourceQuest"] = 12980,	-- The Armor's Secrets
-						["g"] = {
+						["groups"] = {
 							i(42796),	-- Lantern of Enchanted Flame
 							i(42809),	-- Bloodied Leather Gloves
 							i(42821),	-- Belt of the Stormforged
@@ -1289,7 +1289,7 @@ root("Zones", {
 						["model"] = 195533,
 						["provider"] = { "o", 192072 },	-- Harpoon Crate
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
-						["g"] = {
+						["groups"] = {
 							i(42850),	-- Flamebringer's Crown
 							i(42884),	-- Steel-Tipped Snowboots
 							i(42896),	-- Valkyrion Tracker's Chestguard
@@ -1304,7 +1304,7 @@ root("Zones", {
 					q(13108, {	-- Whatever it Takes!
 						["u"] = REMOVED_FROM_GAME,
 						["qg"] = 30105,	-- King Jokkum
-						["g"] = {
+						["groups"] = {
 							i(42844),	-- Robes of Lightning
 							i(43207),	-- Hardened Tongue Tunic
 							i(43208),	-- Lightningbringer's Hauberk
@@ -1370,7 +1370,7 @@ root("Zones", {
 							{ 37.8, 58.6, THE_STORM_PEAKS },
 							{ 68.2, 47.6, THE_STORM_PEAKS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(22, {	-- Dirkee
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1386,7 +1386,7 @@ root("Zones", {
 							{ 30.2, 64.6, THE_STORM_PEAKS },
 							{ 46.2, 64.8, THE_STORM_PEAKS },
 						},
-						["g"] = {
+						["groups"] = {
 							i(49227),	-- Skoll's Fang
 							i(44663),	-- Abandoned Adventurer's Satchel
 						},
@@ -1399,7 +1399,7 @@ root("Zones", {
 							{ 35.0, 76.0, THE_STORM_PEAKS },	-- Waterfall
 							{ 52.0, 34.0, THE_STORM_PEAKS },	-- Ulduar Ravine
 						},
-						["g"] = {
+						["groups"] = {
 							i(44168),	-- Time-Lost Proto-Drake (MOUNT!)
 							i(44682),	-- Time-Forward Talisman
 							i(44663),	-- Abandoned Adventurer's Satchel
@@ -1413,7 +1413,7 @@ root("Zones", {
 							{ 35.0, 76.0, THE_STORM_PEAKS },	-- Waterfall
 							{ 52.0, 34.0, THE_STORM_PEAKS },	-- Ulduar Ravine
 						},
-						["g"] = {
+						["groups"] = {
 							crit(21, {	-- Vyragosa
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -1425,7 +1425,7 @@ root("Zones", {
 				n(VENDORS, {
 					n(30464, {	-- "Honest" Max <Slightly Used Flying Mounts>
 						["coord"] = { 40.6, 84.6, THE_STORM_PEAKS },
-						["g"] = {
+						["groups"] = {
 							i(44221, {	-- Loaned Gryphon (MOUNT!)
 								["collectible"] = false,
 								["races"] = ALLIANCE_ONLY,
@@ -1439,7 +1439,7 @@ root("Zones", {
 					n(30472, {	-- Olut Alegut
 						["coord"] = { 37.0, 49.6, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(43499, {	-- Iron Boot Flask (TOY!)
 								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 							}),
@@ -1448,7 +1448,7 @@ root("Zones", {
 					n(29744, {	-- Rork Sharpchin
 						["coord"] = { 28.8, 74.0, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(43462, {	-- Airy Pale Ale
 								["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
 							}),
@@ -1468,7 +1468,7 @@ root("Zones", {
 					}),
 					n(30006, {	-- Warsmith Sigfinna
 						["coord"] = { 47.4, 70.4, THE_STORM_PEAKS },
-						["g"] = {
+						["groups"] = {
 							i(41752),	-- Brunnhildar Axe
 							i(41746),	-- Brunnhildar Bow
 							i(43601),	-- Brunnhildar Great Axe

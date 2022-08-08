@@ -1113,13 +1113,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(627, {	-- Explore Dun Morogh
+				explorationAch(627, {	-- Explore Dun Morogh
 					-- #if BEFORE WRATH
 					["description"] = "Explore Dun Morogh, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

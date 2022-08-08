@@ -58,12 +58,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				ach(4866, {	-- Explore Twilight Highlands
+				explorationAch(4866, {	-- Explore Twilight Highlands
 					["timeline"] = { "added 4.0.3" },
 					-- #if BEFORE WRATH
 					["description"] = "Explore Twilight Highlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
 				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)

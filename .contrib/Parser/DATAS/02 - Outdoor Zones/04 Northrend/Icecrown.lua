@@ -13,14 +13,14 @@ root("Zones", {
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(23, {	-- Major Payne
 								["coord"] = { 77.4, 19.6, ICECROWN },
 								["cr"] = 66675,	-- Major Payne
 							}),
 						},
 					})),
-					ach(1270),	-- Explore Icecrown
+					explorationAch(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
 						crit(1, {	-- Crusader Bridenbrad
 							["sourceQuest"] = 13083,	-- Light Within the Darkness
@@ -96,7 +96,7 @@ root("Zones", {
 						}),
 						n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 							["coord"] = { 87.6, 75.6, ICECROWN },
-							["g"] = {
+							["groups"] = {
 								i(44244),	-- Argent Skeleton Crusher
 								i(44248),	-- Battle Mender's Helm
 								i(44297),	-- Boots of the Neverending Path
@@ -118,7 +118,7 @@ root("Zones", {
 					faction(1098, {	-- Knights of the Ebon Blade
 						n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 							["coord"] = { 43.4, 20.6, ICECROWN },
-							["g"] = {
+							["groups"] = {
 								i(44302),	-- Belt of Dark Mending
 								i(44242),	-- Dark Soldier Cape
 								i(44303),	-- Darkheart Chestguard
@@ -308,7 +308,7 @@ root("Zones", {
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13137,	-- Not-So-Honorable Combat
-						["g"] = {
+						["groups"] = {
 							i(44028),	-- Vengance Shiv
 							i(44029),	-- Quickblade of Cold Return
 							i(44022),	-- The Witching Grimoire
@@ -321,7 +321,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13294,	-- Against the Giants
-						["g"] = {
+						["groups"] = {
 							i(44386),	-- Newt-Eye Ring
 							i(44387),	-- Bat-Wool Signet
 							i(44388),	-- Frog-Toe Band
@@ -332,7 +332,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13277,	-- Against the Giants
-						["g"] = {
+						["groups"] = {
 							i(44386),	-- Newt-Eye Ring
 							i(44387),	-- Bat-Wool Signet
 							i(44388),	-- Frog-Toe Band
@@ -357,7 +357,7 @@ root("Zones", {
 						["coord"] = { 30.7, 28.9, ICECROWN },
 						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13218,	-- Battle at Valhalas: Thane Deathblow
-						["g"] = {
+						["groups"] = {
 							i(44382),	-- Robes of Refrained Celebration
 							i(44383),	-- Battleplate of Unheard Ovation
 							i(44384),	-- Chestguard of Unwanted Success
@@ -445,7 +445,7 @@ root("Zones", {
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13290,	-- Your Attention, Please
-						["g"] = {
+						["groups"] = {
 							i(38736),	-- Smuggler's Bracers
 							i(39035),	-- Glacier-Walker's Mukluks
 							i(39065),	-- Skycaptain's Belt
@@ -460,7 +460,7 @@ root("Zones", {
 							13134,	-- Spill Their BLood
 							13140,	-- The Runesmiths of Malykriss
 						},
-						["g"] = {
+						["groups"] = {
 							i(43880),	-- Fair Touch of the Crusader
 							i(43893),	-- Olakin's Enchanted Torch
 						},
@@ -493,7 +493,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13315,	-- Sneak Preview
-						["g"] = {
+						["groups"] = {
 							i(43882),	-- Cultist's Cowl
 							i(43891),	-- Jhaeqon's Tunic
 							i(43931),	-- Savryn's Muddy Boots
@@ -509,7 +509,7 @@ root("Zones", {
 							-- TODO:: confirm below:
 							13278,	-- Coprous the Defiled
 						},
-						["g"] = {
+						["groups"] = {
 							i(43882),	-- Cultist's Cowl
 							i(43891),	-- Jhaeqon's Tunic
 							i(43931),	-- Savryn's Muddy Boots
@@ -533,7 +533,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13348,	-- Futility
-						["g"] = {
+						["groups"] = {
 							i(39115),	-- Axe of Bloodstained Ice
 							i(39135),	-- Wyrmstalker's Bow
 							i(39136),	-- Reanimator's Hacker
@@ -545,7 +545,7 @@ root("Zones", {
 						["coord"] = { 43.4, 24.5, ICECROWN },
 						["qg"] = 30216,	-- Vile
 						["sourceQuest"] = 12951,	-- Let the Baron Know
-						["g"] = {
+						["groups"] = {
 							i(43928),	-- Bow of Bone and Sinew
 							i(43911),	-- Vile's Poker
 							i(43929),	-- Vile's Uglystick
@@ -577,7 +577,7 @@ root("Zones", {
 						["coord"] = { 86.0, 75.7, ICECROWN },
 						["qg"] = 30224,	-- Crusader Lord Dalfors
 						["sourceQuest"] = 13036,	-- Honor Above All Else
-						["g"] = {
+						["groups"] = {
 							i(43828),	-- Touch of Light
 							i(43841),	-- Argent Girdle
 							i(43829),	-- Crusader's Locket
@@ -594,7 +594,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 32408,	-- Matthias Lehner
 						["sourceQuest"] = 13393,	-- Field Repairs
-						["g"] = {
+						["groups"] = {
 							i(43881),	-- Demolisher Driver's Dustcoat
 							i(43892),	-- Refurbished Demolisher Gear Belt
 							i(43932),	-- Drivetrain Chain Leggings
@@ -607,7 +607,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 32408,	-- Mathias Lehner
 						["sourceQuest"] = 13304,	-- Field Repairs
-						["g"] = {
+						["groups"] = {
 							i(43881),	-- Demolisher Driver's Dustcoat
 							i(43892),	-- Refurbished Demolisher Gear Belt
 							i(43932),	-- Drivetrain Chain Leggings
@@ -645,7 +645,7 @@ root("Zones", {
 						["coord"] = { 43.1, 21.0, ICECROWN },
 						["qg"] = 30218,	-- Vaelen the Flayed
 						["sourceQuest"] = 13085,	-- Vaelen Has Returned
-						["g"] = {
+						["groups"] = {
 							i(43859),	-- Shadow Vault Cowl
 							i(43844),	-- Ebon Pauldrons
 							i(43935),	-- Links of the Battlemender
@@ -656,7 +656,7 @@ root("Zones", {
 						["coord"] = { 43.4, 25.0, ICECROWN },
 						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12938,	-- The Duke
-						["g"] = {
+						["groups"] = {
 							i(43843),	-- Iron Coffin Lid
 							i(43946),	-- Chestplate of the Glacial Crusader
 							i(43913),	-- Efrem's Bracers
@@ -669,7 +669,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 31440,	-- Sergeant Kregga
 						["sourceQuest"] = 13258,	-- Opportunity
-						["g"] = {
+						["groups"] = {
 							i(38737),	-- Shock-Proof Head Protector
 							i(39036),	-- Hulking Horror Tunic
 							i(39070),	-- Gloves of the Mad Bomber
@@ -709,7 +709,7 @@ root("Zones", {
 						["coord"] = { 44.1, 24.6, ICECROWN },
 						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuest"] = 12891,	-- I Have an Idea, But First...
-						["g"] = {
+						["groups"] = {
 							i(43849),	-- Chain of the Sovereign
 							i(43925),	-- Shadow Vault Shawl
 							i(43874),	-- Lady Nightswood's Engagement Ring
@@ -876,7 +876,7 @@ root("Zones", {
 						["coord"] = { 19.5, 48.1, ICECROWN },
 						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12839,	-- The Grand (Admiral's) Plan
-						["g"] = {
+						["groups"] = {
 							i(43883),	-- Arete's Command
 							i(43920),	-- Growler's Intimidation
 							i(43919),	-- Curved Assassin's Dagger
@@ -969,7 +969,7 @@ root("Zones", {
 							13152,	-- A Visit to the Doctor
 							13211,	-- By Fire Be Purged
 						},
-						["g"] = {
+						["groups"] = {
 							i(38739),	-- Fleshwerk Shackles
 							i(39038),	-- Fleshwerk Wristguards
 							i(39068),	-- Flesh-Scaled Bracers
@@ -1045,7 +1045,7 @@ root("Zones", {
 						["coord"] = { 79.7, 30.8, ICECROWN },
 						["provider"] = { "o", 192833 },	-- Bridenbrad's Possessions
 						["sourceQuest"] = 13082,	-- The Boon of A'day
-						["g"] = {
+						["groups"] = {
 							i(44018),	-- Bridenbrad's Sash
 							i(44041),	-- Belt of the Never-Forgotten
 							i(44042),	-- Chained Belt of Remembrance
@@ -1075,7 +1075,7 @@ root("Zones", {
 							13224,	-- Orgrim's Hammer (H)
 							13225,	-- The Skybreaker (A)
 						},
-						["g"] = {
+						["groups"] = {
 							i(44021),	-- The Darkspeaker's Footpads
 							i(44024),	-- The Darkspeaker's Treads
 							i(44030),	-- The Darkspeaker's Sabatons
@@ -1130,7 +1130,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13345,	-- Need More Info
-						["g"] = {
+						["groups"] = {
 							i(44394),	-- Encrusted Zombie Finger
 							i(44393),	-- Polished Zombie Exterminator
 							i(44395),	-- Touch of Unlife
@@ -1148,7 +1148,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13366,	-- Need More Info
-						["g"] = {
+						["groups"] = {
 							i(44393),	-- Polished Zombie Exterminator
 							i(44394),	-- Encrusted Zombie Finger
 							i(44395),	-- Touch of Unlife
@@ -1166,7 +1166,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13318,	-- Drag and Drop
-						["g"] = {
+						["groups"] = {
 							i(39372),	-- Mantle of the Dark Messenger
 							i(39414),	-- Gilly's Strangulation Gauntlets
 							i(39443),	-- Chain Gloves of the Demonic Minion
@@ -1186,7 +1186,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13352,	-- Drag and Drop
-						["g"] = {
+						["groups"] = {
 							i(39372),	-- Mantle of the Dark Messenger
 							i(39414),	-- Gilly's Strangulation Gauntlets
 							i(39443),	-- Chain Gloves of the Demonic Minion
@@ -1205,7 +1205,7 @@ root("Zones", {
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13133,	-- Find the Ancient Hero
-						["g"] = {
+						["groups"] = {
 							i(44016),	-- Wristguard of the Bone Witch
 							i(44036),	-- Njorndar Furywraps
 							i(44037),	-- Iskalder's Fate
@@ -1262,7 +1262,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13286,	-- All the Help We Can Get.
-						["g"] = {
+						["groups"] = {
 							i(43903),	-- Ring of the Fallen Shadow Adept
 							i(43889),	-- Hulking Abomination Hide Cloak
 							i(43884),	-- Amulet of the Malefic Necromancer
@@ -1273,7 +1273,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13260,	-- Takes One to Know One
-						["g"] = {
+						["groups"] = {
 							i(43903),	-- Ring of the Fallen Shadow Adept
 							i(43889),	-- Hulking Abomination Hide Cloak
 							i(43884),	-- Amulet of the Malefic Necromancer
@@ -1326,7 +1326,7 @@ root("Zones", {
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13320,	-- Cannot Reproduce
-						["g"] = {
+						["groups"] = {
 							i(39134),	-- Bow of Regression
 							i(39144),	-- Twisted Hooligan Whacker
 							i(39143),	-- Writhing Mace
@@ -1345,7 +1345,7 @@ root("Zones", {
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13355,	-- Cannot Reproduce
-						["g"] = {
+						["groups"] = {
 							i(39134),	-- Bow of Regression
 							i(39144),	-- Twisted Hooligan Whacker
 							i(39143),	-- Writhing Mace
@@ -1375,7 +1375,7 @@ root("Zones", {
 						["coord"] = { 36.1, 33.0, ICECROWN },
 						["qg"] = 30406,	-- Bethod Feigr
 						["sourceQuest"] = 12999,	-- The Bone Witch
-						["g"] = {
+						["groups"] = {
 							i(43862),	-- Mantle of the Underhalls
 							i(43908),	-- Boots of the Fallen Thane
 							i(43978),	-- Circlet of Suffering
@@ -1398,7 +1398,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 31444,	-- Captain Kendall
 						["sourceQuest"] = 13386,	-- Exploiting an Opening
-						["g"] = {
+						["groups"] = {
 							i(38737),	-- Shock-Proof Head Protector
 							i(39036),	-- Hulking Horror Tunic
 							i(39070),	-- Gloves of the Mad Bomber
@@ -1413,7 +1413,7 @@ root("Zones", {
 							13171,	-- From Whence They Came
 							13170,	-- Honor is for the Weak
 						},
-						["g"] = {
+						["groups"] = {
 							i(43872),	-- Weeping Mantle
 							i(43905),	-- Fur-Lined Helm
 							i(43976),	-- Chain Gloves of the Quarry
@@ -1431,7 +1431,7 @@ root("Zones", {
 						["coord"] = { 44.6, 20.3, ICECROWN },
 						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuest"] = 12939,	-- Honor Challenge
-						["g"] = {
+						["groups"] = {
 							i(43945),	-- Blackened Breastplate of the Vault
 							i(43912),	-- Vest of Jotunheim
 							i(43980),	-- Thane's Restraints
@@ -1461,7 +1461,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13396,	-- Futility
-						["g"] = {
+						["groups"] = {
 							i(39115),	-- Axe of Bloodstained Ice
 							i(39135),	-- Wyrmstalker's Bow
 							i(39136),	-- Reanimator's Hacker
@@ -1528,7 +1528,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13287,	-- Poke and Prod
-						["g"] = {
+						["groups"] = {
 							i(39814),	-- Slippers of the Broken Front
 							i(39881),	-- Mantle of Reanimation
 							i(39887),	-- Geist Stalker Leggings
@@ -1548,7 +1548,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13237,	-- Poke and Prod
-						["g"] = {
+						["groups"] = {
 							i(39814),	-- Slippers of the Broken Front
 							i(39881),	-- Mantle of Reanimation
 							i(39887),	-- Geist Stalker Leggings
@@ -1567,7 +1567,7 @@ root("Zones", {
 						["coord"] = { 9.5, 47.3, ICECROWN },
 						["qg"] = 29560,	-- Lord-Commander Arete
 						["sourceQuest"] = 12847,	-- Second Chances
-						["g"] = {
+						["groups"] = {
 							i(44034),	-- Amulet of the Crusade
 							i(44017),	-- Emeline's Locket
 							i(44035),	-- Reinforced Titanium Neckguard
@@ -1581,7 +1581,7 @@ root("Zones", {
 							13118,	-- The Purging Of Scourgeholme
 							13122,	-- The Scourgestone
 						},
-						["g"] = {
+						["groups"] = {
 							i(43839),	-- Leiah's Footpads
 							i(43840),	-- Sixen's Skullcap
 							i(43830),	-- Cobalt's Shoulderguards
@@ -1592,7 +1592,7 @@ root("Zones", {
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13043,	-- The Sum is Greater than the Parts
-						["g"] = {
+						["groups"] = {
 							i(43863),	-- Pantaloons of the Water Magi
 							i(43907),	-- Spear-Sisters Mantle
 							i(43977),	-- Links of the Sleep-Watcher
@@ -1642,7 +1642,7 @@ root("Zones", {
 						["coord"] = { 82.8, 72.7, ICECROWN },
 						["qg"] = 30683,	-- Father Gustav
 						["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
-						["g"] = {
+						["groups"] = {
 							i(44019),	-- The Argent Skullcap
 							i(44044),	-- Tirion's Headwrap
 							i(44045),	-- Crusader's Coif
@@ -1666,7 +1666,7 @@ root("Zones", {
 							13162,	-- The Rider of Frost
 							13161,	-- The Rider of the Unholy
 						},
-						["g"] = {
+						["groups"] = {
 							i(44027),	-- Bloodbane Shroud
 							i(44025),	-- Bloodbane Cloak
 							i(44020),	-- Bloodbane's Fall
@@ -1677,7 +1677,7 @@ root("Zones", {
 						["coord"] = { 35.3, 66.3, ICECROWN },
 						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13220,	-- Putting Olakin Back Together Again
-						["g"] = {
+						["groups"] = {
 							i(44378),	-- Mantle of the Flesh Giant
 							i(44379),	-- Shoulderpads of Fleshworks
 							i(44380),	-- Giant Champion's Spaulders
@@ -1707,7 +1707,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13399,	-- Time for Answers
-						["g"] = {
+						["groups"] = {
 							i(38741),	-- Gloves of Tormented Recollection
 							i(39040),	-- Gloves of Troubled Memory
 							i(39066),	-- Leggings of the Turning Point
@@ -1719,7 +1719,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13360,	-- Time for Answers
-						["g"] = {
+						["groups"] = {
 							i(38741),	-- Gloves of Tormented Recollection
 							i(39040),	-- Gloves of Troubled Memory
 							i(39066),	-- Leggings of the Turning Point
@@ -1748,7 +1748,7 @@ root("Zones", {
 						["coord"] = { 85.6, 76.0, ICECROWN },
 						["qg"] = 30657,	-- Siegemaster Fezzik
 						["sourceQuest"] = 13070,	-- A Cold Front Approaches
-						["g"] = {
+						["groups"] = {
 							i(44013),	-- Cannoneer's Fuselighter
 							i(44015),	-- Cannoneer's Morale
 							i(44014),	-- Fezzik's Pocketwatch
@@ -1769,7 +1769,7 @@ root("Zones", {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
-						["g"] = {
+						["groups"] = {
 							i(43833),	-- Blade of Echoes
 							i(43832),	-- The Argent Resolve
 							i(43835),	-- Hand of Gustav
@@ -1784,7 +1784,7 @@ root("Zones", {
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
-						["g"] = {
+						["groups"] = {
 							i(43877),	-- Blood-Forged Circle
 							i(43896),	-- Grotesque Butcher's Pants
 							i(43937),	-- Blood-Stalker's Cover
@@ -1799,7 +1799,7 @@ root("Zones", {
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
-						["g"] = {
+						["groups"] = {
 							i(43899),	-- Sapph's Cleaver
 							i(43897),	-- Frost Climber's Hatchet
 							i(43898),	-- Ice Quick Edge
@@ -1814,7 +1814,7 @@ root("Zones", {
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
-						["g"] = {
+						["groups"] = {
 							i(43904),	-- Discarded Slaughterhouse Gloves
 							i(43948),	-- Blood-Encrusted Boots
 							i(43940),	-- Plated Legs of the Unholy
@@ -1839,7 +1839,7 @@ root("Zones", {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 12896,	-- If He Cannot Be Turned
-						["g"] = {
+						["groups"] = {
 							i(43838),	-- Chuchu's Tiny Box of Horrors
 							i(43837),	-- Softly Glowing Orb
 							i(43836),	-- Thorny Rose Brooch
@@ -1850,7 +1850,7 @@ root("Zones", {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 12897,	-- If He Cannot Be Turned
-						["g"] = {
+						["groups"] = {
 							i(43838),	-- Chuchu's Tiny Box of Horrors
 							i(43837),	-- Softly Glowing Orb
 							i(43836),	-- Thorny Rose Brooch
@@ -1876,7 +1876,7 @@ root("Zones", {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
-						["g"] = {
+						["groups"] = {
 							i(43855),	-- Adepts Wristwraps
 							i(43914),	-- Girdle of Reprieve
 							i(43982),	-- Architect's Spaulders
@@ -1893,7 +1893,7 @@ root("Zones", {
 						["coord"] = { 34.0, 36.3, ICECROWN },
 						["provider"] = { "i", 42772 },	-- Dr. Terrible's "Building a Better Flesh Giant"
 						["sourceQuest"] = 12999,	-- The Bone Witch
-						["g"] = {
+						["groups"] = {
 							i(43861),	-- Bone Witch's Drape
 							i(43909),	-- Belt of Njorndar
 							i(43979),	-- Glaciel Ranger's Leggings
@@ -1909,7 +1909,7 @@ root("Zones", {
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13143,	-- New Recruit
-						["g"] = {
+						["groups"] = {
 							i(43866),	-- Lithe Stalker's Cord
 							i(43906),	-- Cunning Leather Tunic
 							i(43934),	-- Enchanted Bracelets of the Scout
@@ -1943,7 +1943,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13390,	-- A Voice in the Dark
-						["g"] = {
+						["groups"] = {
 							i(43885),	-- Scourgehammer
 							i(43918),	-- Shooter's Glory
 							i(43915),	-- Pilot's Knife
@@ -1957,7 +1957,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13271,	-- A Voice in the Dark
-						["g"] = {
+						["groups"] = {
 							i(43885),	-- Scourgehammer
 							i(43918),	-- Shooter's Glory
 							i(43915),	-- Pilot's Knife
@@ -1976,7 +1976,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13402,	-- Tirion's Help
-						["g"] = {
+						["groups"] = {
 							i(44745),	-- Blade of the Empty Void
 							i(44746),	-- Knife of the Tarnished Soul
 							i(44747),	-- Hammer of Wrenching Charge
@@ -1988,7 +1988,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13363,	-- Argent Aid
-						["g"] = {
+						["groups"] = {
 							i(44745),	-- Blade of the Empty Void
 							i(44747),	-- Hammer of Wrenching Change
 							i(44746),	-- Knife of the Tarnished Soul
@@ -2044,7 +2044,7 @@ root("Zones", {
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13238,	-- Sky-Reaver Korm Blackscar
-						["g"] = {
+						["groups"] = {
 							i(38736),	-- Smuggler's Bracers
 							i(39035),	-- Glacier-Walker's Mukluks
 							i(39065),	-- Skycaptain's Belt
@@ -2088,7 +2088,7 @@ root("Zones", {
 						["coord"] = { 19.5, 48.1, ICECROWN },
 						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12810,	-- Blood in the Water
-						["g"] = {
+						["groups"] = {
 							i(43879),	-- Gryphon Rider's Bracers
 							i(43894),	-- Gryphon Hide Moccasins
 							i(43933),	-- Gauntlets of Urgency
@@ -2109,7 +2109,7 @@ root("Zones", {
 							{ 48.6, 80.2, ICECROWN },
 							{ 71.8, 37.8, ICECROWN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- High Thane Jorfus
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2123,7 +2123,7 @@ root("Zones", {
 							{ 56.0, 53.2, ICECROWN },
 							{ 59.6, 59.2, ICECROWN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Hildana Deathstealer
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -2142,7 +2142,7 @@ root("Zones", {
 							{ 43.8, 57.8, ICECROWN },
 							{ 46.8, 65.2, ICECROWN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(23, {	-- Putridus the Ancient
 								["achievementID"] = 2257,	-- Frostbitten
 							}),

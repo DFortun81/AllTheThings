@@ -514,13 +514,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(771, {	-- Explore Eastern Plaguelands
+				explorationAch(771, {	-- Explore Eastern Plaguelands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Eastern Plaguelands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(5442, {	-- Full Caravan
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {

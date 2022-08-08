@@ -1325,13 +1325,11 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(868, {	-- Explore Isle of Quel'Danas
+				explorationAch(868, {	-- Explore Isle of Quel'Danas
 					-- #if BEFORE WRATH
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				removeclassicphase(ach(897, {	-- You're So Offensive
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],

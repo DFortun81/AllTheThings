@@ -5,21 +5,23 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(CRYSTALSONG_FOREST, {
 			["lore"] = "Crystalsong Forest is a tranquil forest in the center of Northrend, from which Dalaran floats above. Originally intended to be the site of the Argent Tournament, it is a peaceful zone with hardly any quests.",
-			["achievementID"] = 1457,
+			["icon"] = "Interface\\Icons\\achievement_zone_crystalsong_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
+					-- #if AFTER 6.0.2
 					petbattle(ach(9069, {	-- An Awfully Big Adventure
 						["timeline"] = { "added 6.0.2" },
 						["collectible"] = false,
 						["filterID"] = BATTLE_PETS,
-						["g"] = {
+						["groups"] = {
 							crit(27, {	-- Nearly Headless Jacob
 								["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 								["cr"] = 66636,	-- Nearly Headless Jacob <Master Pet Tamer>
 							}),
 						},
 					})),
-					ach(1457),	-- Explore Crystalsong Forest
+					-- #endif
+					explorationAch(1457),	-- Explore Crystalsong Forest
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -37,18 +39,28 @@ root("Zones", {
 					}),
 				})),
 				-- #endif
+				-- #if ANYCLASSIC
+				n(EXPLORATION, {
+					exploration(4553),	-- Forlorn Woods
+					exploration(4558),	-- Sunreaver's Command
+					exploration(4555),	-- The Azure Front
+					exploration(4552),	-- The Decrepit Flow
+					exploration(4549),	-- The Great Tree
+					exploration(4557),	-- The Unbound Thicket
+					exploration(4556),	-- Violet Stand
+					exploration(4559),	-- Windrunner's Overlook
+				}),
+				-- #endif
 				n(FLIGHT_PATHS, {
 					fp(337, {	-- Sunreaver's Command
+						["cr"] = 30269,	-- Skymaster Baeric <Dragonhawk Master>
 						["coord"] = { 78.4, 50.2, CRYSTALSONG_FOREST },
+						["races"] = HORDE_ONLY,
 					}),
 					fp(336, {	-- Windrunner's Overlook
+						["cr"] = 30271,	-- Galendror Whitewing <Hippogryph Master>
 						["coord"] = { 72.0, 80.8, CRYSTALSONG_FOREST },
-					}),
-				}),
-				n(QUESTS, {
-					q(39210, {	-- The Magical Kingdom of Dalaran
-						["u"] = REMOVED_FROM_GAME, -- this version doesn't appear to exist anymore
-						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},

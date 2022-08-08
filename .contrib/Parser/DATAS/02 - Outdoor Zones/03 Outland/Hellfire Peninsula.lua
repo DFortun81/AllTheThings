@@ -92,13 +92,11 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(862, {	-- Explore Hellfire Peninsula
+					explorationAch(862, {	-- Explore Hellfire Peninsula
 						-- #if BEFORE WRATH
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					removeclassicphase(ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC

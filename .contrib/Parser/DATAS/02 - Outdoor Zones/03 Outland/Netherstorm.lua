@@ -11,13 +11,11 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					removeclassicphase(ach(843, {	-- Explore Netherstorm
+					explorationAch(843, {	-- Explore Netherstorm
 						-- #if BEFORE WRATH
 						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					removeclassicphase(ach(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA

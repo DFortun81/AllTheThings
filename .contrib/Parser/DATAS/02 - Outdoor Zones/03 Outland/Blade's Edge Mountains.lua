@@ -56,13 +56,11 @@ root("Zones", {
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(865, {	-- Explore Blade's Edge Mountains
+					explorationAch(865, {	-- Explore Blade's Edge Mountains
 						-- #if BEFORE WRATH
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					removeclassicphase(ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA

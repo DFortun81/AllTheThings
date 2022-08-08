@@ -8,7 +8,7 @@ root("Zones", {
 			["achievementID"] = 1268,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(1268),	-- Explore Sholazar Basin
+					explorationAch(1268),	-- Explore Sholazar Basin
 					ach(961),	-- Honorary Frenzyheart
 					ach(39, {	-- Into the Basin
 						crit(1, {	-- Hunting Bigger Game
@@ -82,7 +82,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- A Hero's Headgear
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -93,7 +93,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Chicken Party!
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -110,7 +110,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Kartak's Rampage
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -121,7 +121,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- Rejek: First Blood
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -137,7 +137,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Secret Strength of the Frenzyheart
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -148,7 +148,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(6, {	-- Strength of the Tempest
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -159,7 +159,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- The Heartblood's Strength
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -170,7 +170,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Tools of War
 								["achievementID"] = 961,	-- Honorary Frenzyheart
 							}),
@@ -183,7 +183,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(7, {	-- A Cleansing Song
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -194,7 +194,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Appeasing the Great Rain Stone
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -211,7 +211,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(3, {	-- Mastery of the Crystals
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -222,7 +222,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(4, {	-- Power of the Great Ones
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -238,7 +238,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(8, {	-- Song of Fecundity
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -249,7 +249,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(5, {	-- Song of Reflection
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -260,7 +260,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(6, {	-- Song of Wind and Water
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -271,7 +271,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["g"] = {
+						["groups"] = {
 							crit(2, {	-- Will of the Titans
 								["achievementID"] = 962,	-- Savior of the Oracles
 							}),
@@ -285,7 +285,7 @@ root("Zones", {
 							12579,	-- Lifeblood of the Mosswalker Shrine
 							12580,	-- The Mosswalker Savior
 						},
-						["g"] = {
+						["groups"] = {
 							i(39475),	-- Artruis' Focus Stone
 							i(39485),	-- Blood-Infused Pendant
 							i(39483),	-- Choker of Binding
@@ -316,7 +316,7 @@ root("Zones", {
 					q(12691, {  -- A Timeworn Coffer
 						["coord"] = { 80.4, 55.8, SHOLAZAR_BASIN },
 						["provider"] = { "o", 190768 },	-- Timeworn Coffer
-						["g"] = {
+						["groups"] = {
 							i(39348),	-- Aged Watcher's Legwraps
 							i(39402),	-- Binding of the Ancient Keeper
 							i(39438),	-- Rockhandler's Gloves
@@ -340,7 +340,7 @@ root("Zones", {
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12803,	-- Force of Nature
-						["g"] = {
+						["groups"] = {
 							i(39363),	-- Binding of Purified Corpses
 							i(39406),	-- Splattered Zombie Wristguards
 							i(39439),	-- Skeleton Smashers
@@ -374,7 +374,7 @@ root("Zones", {
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12560,	-- Crocolisk Mastery: The Plan
-						["g"] = {
+						["groups"] = {
 							i(39331),	-- Tooth-Marked Girdle
 							i(39374),	-- Crocscale Moccasins
 							i(39461),	-- Muck-Stained Carapace
@@ -411,7 +411,7 @@ root("Zones", {
 						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 						["qg"] = 28031,	-- Buck Cantwell
 						["sourceQuest"] = 12550,	-- Dreadsaber Mastery: Stalking the Prey
-						["g"] = {
+						["groups"] = {
 							i(39323),	-- Scrap-Hide Spaulders
 							i(39375),	-- Dreadsaber Tooth Shoulderpads
 							i(39429),	-- Pauldrons of Swift Replenishment
@@ -432,7 +432,7 @@ root("Zones", {
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12608,	-- Cultist Incursion
-						["g"] = {
+						["groups"] = {
 							i(39365),	-- Lifewarden's Raiment
 							i(39385),	-- Helm of the Ancient Horn
 							i(39441),	-- Treads of Bound Life
@@ -446,7 +446,7 @@ root("Zones", {
 							12534,	-- The Sapphire Queen
 							12533,	-- The Wasp Hunter's Apprentice
 						},
-						["g"] = {
+						["groups"] = {
 							i(39337),	-- Stained Coop Warmer
 							i(39383),	-- Egg-Warming Boots
 							i(39435),	-- Straw-Lined Leggings
@@ -467,7 +467,7 @@ root("Zones", {
 						["coord"] = { 56.6, 62.4, SHOLAZAR_BASIN },
 						["qg"] = 28217,	-- Injured Rainspeaker Oracle
 						["sourceQuest"] = 12540,	-- Just Following Orders
-						["g"] = {
+						["groups"] = {
 							i(39335),	-- Leggings of Mending Fronds
 							i(39378),	-- Ragged Leaf Grips
 							i(39432),	-- Belt of Misconceptions
@@ -517,7 +517,7 @@ root("Zones", {
 					q(12624, {  -- It Could Be Anywhere!
 						["coord"] = { 26.8, 58.9, SHOLAZAR_BASIN },
 						["qg"] = 28497,	-- Chad
-						["g"] = {
+						["groups"] = {
 							i(39479),	-- Cloak of Renewed Hope
 							i(39446),	-- Pauldrons of Resolution
 							i(39466),	-- Boots of Dominance
@@ -556,7 +556,7 @@ root("Zones", {
 						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 						["qg"] = 28216,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12536,	-- A Rough Ride
-						["g"] = {
+						["groups"] = {
 							i(39347),	-- Gloves of the Crackling Storm
 							i(39400),	-- Static-Dispersing Shoulderpads
 							i(39437),	-- Belt of Trapped Lightning
@@ -575,7 +575,7 @@ root("Zones", {
 						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12571,	-- Make the Bad Snake Go Away
-						["g"] = {
+						["groups"] = {
 							i(39672),	-- Drape of the Offered Branch
 							i(39674),	-- Cloak of the Buzzing Swarm
 							i(39673),	-- Lightning Beetle's Cape
@@ -608,7 +608,7 @@ root("Zones", {
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuest"] = 12607,	-- A Mammoth Undertaking
-						["g"] = {
+						["groups"] = {
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun
 							i(39488),	-- Nesingwary Brush Burner
@@ -633,7 +633,7 @@ root("Zones", {
 							12605,	-- Securing the Bait
 							12603,	-- Sharpening Your Talons
 						},
-						["g"] = {
+						["groups"] = {
 							i(39368),	-- Field Researcher's Boots
 							i(39413),	-- Hydrafang Breeches
 							i(39445),	-- Roc Hunter's Bracer
@@ -644,7 +644,7 @@ root("Zones", {
 						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12797,	-- Back Through the Waygate
-						["g"] = {
+						["groups"] = {
 							i(40290),	-- Gaze of the Punishing Construct
 							i(40291),	-- Helm of the Avenging Protector
 							i(40292),	-- Headguard of Vast Destruction
@@ -664,7 +664,7 @@ root("Zones", {
 						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12561,	-- An Issue of Trust
-						["g"] = {
+						["groups"] = {
 							i(39367),	-- Cowl of the Purifier
 							i(39412),	-- Scourgebane Treads
 							i(39444),	-- Keeper's Touch
@@ -681,7 +681,7 @@ root("Zones", {
 						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuest"] = 12544,	-- The Bones of Nozroon
-						["g"] = {
+						["groups"] = {
 							i(39333),	-- Nimblefoot Moccasins
 							i(39377),	-- Toenail Belt
 							i(39431),	-- Shaved Rhinohorn Chestguard
@@ -740,7 +740,7 @@ root("Zones", {
 						["coord"] = { 47.4, 9.2, UNGORO_CRATER },
 						["qg"] = 28092,	-- The Etymidian
 						["sourceQuest"] = 12548,	-- The Etymidian
-						["g"] = {
+						["groups"] = {
 							i(39366),	-- Spaulders of the Runeseeker
 							i(39411),	-- Legguards of Guided Travel
 							i(39442),	-- Seeing-Eye Belt
@@ -776,7 +776,7 @@ root("Zones", {
 						["coord"] = { 27.0, 59.9, SHOLAZAR_BASIN },
 						["qg"] = 28328,	-- Drostan
 						["sourceQuest"] = 12589,	-- Kick, What Kick?
-						["g"] = {
+						["groups"] = {
 							i(39330),	-- Fingers of Dextrous Decimation
 							i(39373),	-- Bracers of Rapid Death
 							i(39428),	-- Faceguard of Flawless Aim
@@ -795,7 +795,7 @@ root("Zones", {
 						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 						["qg"] = 28114,	-- Mistcaller Soo-gan
 						["sourceQuest"] = 12574,	-- Back So Soon?
-						["g"] = {
+						["groups"] = {
 							i(39336),	-- Bracers of Prompt Reclamation
 							i(39380),	-- Legguards of the Aggressive Emissary
 							i(39433),	-- Clear Earthen Scalemail
@@ -824,7 +824,7 @@ root("Zones", {
 							12529,	-- The Ape Hunter's Slave
 							12530,	-- Tormenting the Softknuckles
 						},
-						["g"] = {
+						["groups"] = {
 							i(39346),	-- Chitin-Reinforced Hood
 							i(39387),	-- Stinger-Proof Chestguard
 							i(39436),	-- Insect-Filtering Faceguard
@@ -876,7 +876,7 @@ root("Zones", {
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12524,	-- Venture Co. Misadventure
-						["g"] = {
+						["groups"] = {
 							i(39332),	-- Ogre-Crushing Wristguards
 							i(39376),	-- Bracers of the Rejuvenated Forest
 							i(39430),	-- Spitelinked Bracers
@@ -898,7 +898,7 @@ root("Zones", {
 							{ 57.6, 65.4, SHOLAZAR_BASIN },
 							{ 57.8, 66.4, SHOLAZAR_BASIN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(19, {	-- Aotona
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -947,7 +947,7 @@ root("Zones", {
 							{ 66.0, 78.8, SHOLAZAR_BASIN },
 							{ 66.8, 78.6, SHOLAZAR_BASIN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20, {	-- King Krush
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -968,7 +968,7 @@ root("Zones", {
 							{ 66.6, 78.8, SHOLAZAR_BASIN },
 							{ 71.0, 71.6, SHOLAZAR_BASIN },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(1, {	-- Loque'nahak
 								["achievementID"] = 2257,	-- Frostbitten
 							}),
@@ -981,7 +981,7 @@ root("Zones", {
 				n(VENDORS, {
 					n(31910, {	-- Geen <Oracles Quartermaster>
 						["coord"] = { 54.6, 56.1, SHOLAZAR_BASIN },
-						["g"] = {
+						["groups"] = {
 							i(41724),	-- Design: Misty Forest Emerald
 							i(41781, {	-- Design: Misty Forest Emerald
 								["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
@@ -1011,7 +1011,7 @@ root("Zones", {
 					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 						["classes"] = { HUNTER },
 						["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
-						["g"] = {
+						["groups"] = {
 							i(136855),	-- Hunter's Call (TOY!)
 							i(136781, {	-- Pet Training Manual: Fetch
 								["f"] = RECIPES,
@@ -1026,7 +1026,7 @@ root("Zones", {
 					}),
 					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 						["coord"] = { 55.1, 69.0, SHOLAZAR_BASIN },
-						["g"] = {
+						["groups"] = {
 							i(44117),	-- Azure Strappy Pants
 							i(41723),	-- Design: Jagged Forest Emerald
 							i(41561),	-- Design: Reckless Huge Citrine
