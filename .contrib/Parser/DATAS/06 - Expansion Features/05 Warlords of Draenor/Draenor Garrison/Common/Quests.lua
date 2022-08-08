@@ -2490,7 +2490,7 @@ _.ExpansionFeatures =
 					["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 				}),
 				q(40417, {	-- To Tanaan! -- no idea how to get this one
-					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 					["races"] = HORDE_ONLY,
 					["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
 				}),

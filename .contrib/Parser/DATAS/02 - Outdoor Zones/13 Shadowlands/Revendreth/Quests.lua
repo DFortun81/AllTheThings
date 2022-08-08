@@ -11,6 +11,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 60.7, 62.5, REVENDRETH },
 			}),
 			q(64963, {	-- A Defector's Request
+				-- estimated based on current campaign progress when received on alts
+				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "i", 187822 },	-- A Defector's Request
 				["timeline"] = { "added 9.1.5" },
 			}),

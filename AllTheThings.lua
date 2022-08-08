@@ -2489,7 +2489,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
 		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		if not (app.FilterCharacterTraits(questRef)
+		if not (app.CurrentCharacterFilters(questRef)
 			and app.ItemIsInGame(questRef)
 			and not questRef.missingPrequisites) then
 
@@ -8173,7 +8173,7 @@ local questFields = {
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					sq = app.SearchForObject("questID", sourceQuestID);
 					if sq then
-						filter = app.FilterCharacterTraits(sq);
+						filter = app.CurrentCharacterFilters(sq);
 						prereqs[sourceQuestID] = "N"
 							..(sq.isBreadcrumb and "B" or "")
 							..(sq.locked and "L" or "")
@@ -13672,17 +13672,17 @@ end
 end)();
 
 -- Filtering
--- TODO: localize these functions but allow for app. referencing
+do
 -- Meaning "Don't display." - Returns false
-app.Filter = app.ReturnFalse;
+local Filter = app.ReturnFalse;
 -- Meaning "Display as expected" - Returns true
-app.NoFilter = app.ReturnTrue;
+local NoFilter = app.ReturnTrue;
 -- Whether the group has a binding designation, which means it basically cannot be moved to another Character
-function app.IsBoP(group)
+local function IsBoP(group)
 	-- 1 = BoP, 4 = Quest Item... probably don't need that?
 	return group.b == 1;-- or group.b == 4;
 end
-function app.FilterGroupsByLevel(group)
+local function FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
 	local lvl = group.lvl;
 	if lvl then
@@ -13706,22 +13706,15 @@ function app.FilterGroupsByLevel(group)
 	-- no level requirement on the group, have to include it
 	return true;
 end
-function app.FilterGroupsByCompletion(group)
+local function FilterGroupsByCompletion(group)
 	return group.total and (group.progress or 0) < group.total;
 end
 -- returns whether this is a Character-transferable Thing/Item
-function app.FilterItemBind(item)
-	return item.itemID and not app.IsBoP(item);
-end
--- Represents filters which check the requirements concerning the current Character
-function app.FilterCharacterTraits(item)
-	return app.RequiredSkillFilter(item)
-		and app.ClassRequirementFilter(item)
-		and app.RaceRequirementFilter(item)
-		and app.RequireCustomCollectFilter(item);
+local function FilterItemBind(item)
+	return item.itemID and not IsBoP(item);
 end
 -- Represents filters which should be applied during Updates to groups
-function app.FilterItemClass(item)
+local function FilterItemClass(item)
 	-- check Account trait filters
 	if app.UnobtainableItemFilter(item)
 		and app.SeasonalItemFilter(item)
@@ -13733,11 +13726,14 @@ function app.FilterItemClass(item)
 		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.FilterCharacterTraits(item);
+			and app.RequiredSkillFilter(item)
+			and app.ClassRequirementFilter(item)
+			and app.RaceRequirementFilter(item)
+			and app.RequireCustomCollectFilter(item);
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
-function app.FilterItemClass_IgnoreBoEFilter(item)
+local function FilterItemClass_IgnoreBoEFilter(item)
 	-- check Account trait filters
 	if app.UnobtainableItemFilter(item)
 		and app.SeasonalItemFilter(item)
@@ -13747,23 +13743,26 @@ function app.FilterItemClass_IgnoreBoEFilter(item)
 		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.FilterCharacterTraits(item);
+			and app.RequiredSkillFilter(item)
+			and app.ClassRequirementFilter(item)
+			and app.RaceRequirementFilter(item)
+			and app.RequireCustomCollectFilter(item);
 	end
 end
-function app.FilterItemClass_RequireClasses(item)
+local function FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
-function app.FilterItemClass_RequireItemFilter(item)
+local function FilterItemClass_RequireItemFilter(item)
 	if item.f then
 		return app.Settings:GetFilter(item.f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_RequireRaces(item)
+local function FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
-function app.FilterItemClass_RequireRacesCurrentFaction(item)
+local function FilterItemClass_RequireRacesCurrentFaction(item)
 	if item.nmr then
 		if item.r then
 			if item.r == app.FactionID then
@@ -13785,49 +13784,49 @@ function app.FilterItemClass_RequireRacesCurrentFaction(item)
 		return true;
 	end
 end
-function app.FilterItemClass_SeasonalItem(item)
+local function FilterItemClass_SeasonalItem(item)
 	-- specifically match on false for being disabled as a filter
 	if item.u and app.Settings:GetValue("Seasonal", item.u) == false then
 		return false;
 	end
 	return true;
 end
-function app.ItemIsInGame(item)
+local function ItemIsInGame(item)
 	return not item.u or item.u > 2;
 end
-function app.FilterItemClass_UnobtainableItem(item)
+local function FilterItemClass_UnobtainableItem(item)
 	-- specifically match on false for being disabled as a filter
 	if item.u and app.Settings:GetValue("Unobtainable", item.u) == false then
 		return false;
 	end
 	return true;
 end
-function app.FilterItemClass_RequireBinding(item)
-	return not item.itemID or app.IsBoP(item);
+local function FilterItemClass_RequireBinding(item)
+	return not item.itemID or IsBoP(item);
 end
-function app.FilterItemClass_PvP(item)
+local function FilterItemClass_PvP(item)
 	if item.pvp then
 		return false;
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_PetBattles(item)
+local function FilterItemClass_PetBattles(item)
 	if item.pb then
 		return false;
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_RequiredSkill(item)
+local function FilterItemClass_RequiredSkill(item)
 	local requireSkill = item.requireSkill;
-	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or app.IsBoP(item)) then
+	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or IsBoP(item)) then
 		return app.GetTradeSkillCache()[requireSkill];
 	else
 		return true;
 	end
 end
-function app.FilterItemClass_RequireFaction(item)
+local function FilterItemClass_RequireFaction(item)
 	local minReputation = item.minReputation;
 	if minReputation and app.IsFactionExclusive(minReputation[1]) then
 		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
@@ -13840,7 +13839,7 @@ function app.FilterItemClass_RequireFaction(item)
 		return true;
 	end
 end
-function app.FilterItemClass_CustomCollect(item)
+local function FilterItemClass_CustomCollect(item)
 	local customCollect = item.customCollect;
 	if customCollect then
 		local customCollects = app.CurrentCharacter.CustomCollects;
@@ -13852,10 +13851,17 @@ function app.FilterItemClass_CustomCollect(item)
 	end
 	return true;
 end
-function app.FilterItemSource(sourceInfo)
+-- Represents current Character filtering for the Item (regardless of user-enabled filters)
+local function CurrentCharacterFilters(item)
+	return FilterItemClass_RequiredSkill(item)
+		and FilterItemClass_RequireClasses(item)
+		and FilterItemClass_RequireRaces(item)
+		and FilterItemClass_CustomCollect(item);
+end
+local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
 end
-function app.FilterItemSourceUnique(sourceInfo, allSources)
+local function FilterItemSourceUnique(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
@@ -13938,7 +13944,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 		return false;
 	end
 end
-function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
+local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
 		return true;
@@ -13960,7 +13966,7 @@ function app.FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
 	-- Find this source in ATT
 	local knownItem = SearchForSourceIDQuickly(knownSourceID);
 	if knownItem then
@@ -14068,12 +14074,41 @@ function app.MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterO
 		-- app.DEBUG_PRINT = nil;
 	end
 end
-function app.FilterItemTrackable(group)
+local function FilterItemTrackable(group)
 	return group.trackable;
 end
-function app.ObjectVisibilityFilter(group)
+local function ObjectVisibilityFilter(group)
 	return group.visible;
 end
+app.CurrentCharacterFilters = CurrentCharacterFilters;
+app.FilterItemSourceUnique = FilterItemSourceUnique;
+app.FilterItemSourceUniqueOnlyMain = FilterItemSourceUniqueOnlyMain;
+app.MarkUniqueCollectedSourcesBySource = MarkUniqueCollectedSourcesBySource;
+app.FilterItemTrackable = FilterItemTrackable;
+app.ObjectVisibilityFilter = ObjectVisibilityFilter;
+app.FilterItemSource = FilterItemSource;
+app.FilterItemClass_CustomCollect = FilterItemClass_CustomCollect;
+app.FilterItemClass_RequireFaction = FilterItemClass_RequireFaction;
+app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
+app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
+app.FilterItemClass_PvP = FilterItemClass_PvP;
+app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
+app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
+app.ItemIsInGame = ItemIsInGame;
+app.FilterItemClass_SeasonalItem = FilterItemClass_SeasonalItem;
+app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
+app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
+app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
+app.FilterItemClass_RequireClasses = FilterItemClass_RequireClasses;
+app.FilterItemClass_IgnoreBoEFilter = FilterItemClass_IgnoreBoEFilter;
+app.FilterItemClass = FilterItemClass;
+app.FilterItemBind = FilterItemBind;
+app.FilterGroupsByCompletion = FilterGroupsByCompletion;
+app.FilterGroupsByLevel = FilterGroupsByLevel;
+app.IsBoP = IsBoP;
+app.NoFilter = NoFilter;
+app.Filter = Filter;
+end	-- Filtering
 
 -- Default Filter Settings (changed in app.Startup and in the Options Menu)
 app.VisibilityFilter = app.ObjectVisibilityFilter;
