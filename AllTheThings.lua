@@ -8165,7 +8165,7 @@ local questFields = {
 	end,
 	["missingPrequisites"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
-			local sq, missing, filter;
+			local sq, missing, filter, onQuest;
 			local prereqs = rawget(t, "prereqs") or {};
 			rawset(t, "prereqs", prereqs);
 			wipe(prereqs);
@@ -8174,13 +8174,16 @@ local questFields = {
 					sq = app.SearchForObject("questID", sourceQuestID);
 					if sq then
 						filter = app.CurrentCharacterFilters(sq);
+						onQuest = C_QuestLog_IsOnQuest(sourceQuestID);
 						prereqs[sourceQuestID] = "N"
+							..(onQuest and "O" or "")
 							..(sq.isBreadcrumb and "B" or "")
 							..(sq.locked and "L" or "")
 							..(sq.altcollected and "A" or "")
 							..(not filter and "F" or "");
-						-- missing: meets current character filters, non-breadcrumb, non-locked
-						if filter and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
+						-- missing: meets current character filters, non-breadcrumb, non-locked, not currently on the quest
+						-- TODO: account for future addition of optional amount of source quests being complete
+						if filter and not onQuest and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
 							missing = true;
 						end
 					end
@@ -14454,7 +14457,7 @@ local function DirectGroupUpdate(group, got)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	local parent = rawget(group, "parent");
 	if parent and not app.RecursiveGroupRequirementsFilter(group) then
-		-- app.PrintDebug("DGU:Filtered",group.text,group.parent.text)
+		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent.text)
 		return;
 	end
 	local prevTotal, prevProg = group.total or 0, group.progress or 0;
@@ -14490,7 +14493,7 @@ local function DirectGroupUpdate(group, got)
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.RecursiveFirstParentWithField(group, "window");
 	if window then
-		-- app.PrintDebug("DGU:Callback Update",window.Suffix,window.Update,window.isQuestChain)
+		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);
 	end
 end

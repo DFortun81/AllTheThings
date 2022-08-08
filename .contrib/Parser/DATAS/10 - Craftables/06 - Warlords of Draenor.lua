@@ -42,6 +42,7 @@ local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
 		["bonusID"] = 525,
+		["description"] = "The upgraded versions of this Item are *still* not available, but they share the same SourceID as this base Item so they will appear as available in ATT.",
 		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },},{
 			i(id, {	-- Upgrade 1 2/6
 				["bonusID"] = 558,
