@@ -134,18 +134,19 @@ _.Zones =
 					["sourceQuest"] = 25661,	-- With a Little Help...
 				}),
 				q(25561, {	-- Circle the Wagons... er, Boats
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(25562, {	-- Circle the Wagons... er, Boats
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 40487 },	-- Razzeric
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats
 					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 					["g"] = {
 						i(63550),	-- Speedbarge Leggings
 						i(63551),	-- Smooching Gloves
@@ -157,6 +158,7 @@ _.Zones =
 				q(25543, {	-- Circle the Wagons... er, Boats
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing
+					["timeline"] = { "added 4.0.3" },
 					["g"] = {
 						i(63554),	-- Speedbarge Leggings
 						i(63555),	-- Pirate Sinker's Gloves
