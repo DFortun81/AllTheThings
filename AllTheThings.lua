@@ -2489,13 +2489,9 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange)
 	if questRef and questRef.questID then
 		-- print("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		-- TODO: change filtering technique so we can do app.CharacterFilter(questRef) to bypass any Account filtering active
-		if not (app.RequiredSkillFilter(questRef)
-		and app.ClassRequirementFilter(questRef)
-		and app.RaceRequirementFilter(questRef)
-		and app.RequireCustomCollectFilter(questRef)
-		and app.ItemIsInGame(questRef)
-		and not questRef.missingPrequisites) then
+		if not (app.FilterCharacterTraits(questRef)
+			and app.ItemIsInGame(questRef)
+			and not questRef.missingPrequisites) then
 
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app:PlayReportSound();
@@ -8169,7 +8165,7 @@ local questFields = {
 	end,
 	["missingPrequisites"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
-			local sq, missing;
+			local sq, missing, filter;
 			local prereqs = rawget(t, "prereqs") or {};
 			rawset(t, "prereqs", prereqs);
 			wipe(prereqs);
@@ -8177,11 +8173,14 @@ local questFields = {
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
 					sq = app.SearchForObject("questID", sourceQuestID);
 					if sq then
+						filter = app.FilterCharacterTraits(sq);
 						prereqs[sourceQuestID] = "N"
 							..(sq.isBreadcrumb and "B" or "")
 							..(sq.locked and "L" or "")
-							..(sq.altcollected and "A" or "");
-						if not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
+							..(sq.altcollected and "A" or "")
+							..(not filter and "F" or "");
+						-- missing: meets current character filters, non-breadcrumb, non-locked
+						if filter and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
 							missing = true;
 						end
 					end
@@ -13673,6 +13672,7 @@ end
 end)();
 
 -- Filtering
+-- TODO: localize these functions but allow for app. referencing
 -- Meaning "Don't display." - Returns false
 app.Filter = app.ReturnFalse;
 -- Meaning "Display as expected" - Returns true
@@ -13713,6 +13713,13 @@ end
 function app.FilterItemBind(item)
 	return item.itemID and not app.IsBoP(item);
 end
+-- Represents filters which check the requirements concerning the current Character
+function app.FilterCharacterTraits(item)
+	return app.RequiredSkillFilter(item)
+		and app.ClassRequirementFilter(item)
+		and app.RaceRequirementFilter(item)
+		and app.RequireCustomCollectFilter(item);
+end
 -- Represents filters which should be applied during Updates to groups
 function app.FilterItemClass(item)
 	-- check Account trait filters
@@ -13726,10 +13733,7 @@ function app.FilterItemClass(item)
 		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
-			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.RequireCustomCollectFilter(item);
+			and app.FilterCharacterTraits(item);
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
@@ -13743,10 +13747,7 @@ function app.FilterItemClass_IgnoreBoEFilter(item)
 		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
-			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.RequireCustomCollectFilter(item);
+			and app.FilterCharacterTraits(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
