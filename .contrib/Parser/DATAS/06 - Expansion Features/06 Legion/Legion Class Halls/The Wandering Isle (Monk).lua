@@ -271,9 +271,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41729, {	-- Slowing the Spread
-						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["sourceQuests"] = { 41905 },	-- Report from Tian Monastery
 						["provider"] = { "n", 104745 },	-- Instructor Myang
 						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
+						["description"] = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
 					}),
 					q(41730, {	-- Desperate Strike
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
