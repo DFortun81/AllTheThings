@@ -10,6 +10,32 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(4532, {	-- Fall of the Lich King (10 player)
+					-- Meta Achievement
+					["sym"] = {
+						{"select","achievementID",
+							4531,	-- Storming the Citadel (10 player)
+							4528,	-- The Plagueworks (10 player)
+							4529,	-- The Crimson Hall (10 player)
+							4527,	-- The Frostwing Halls (10 player)
+							4530,	-- The Frozen Throne (10 player)
+						},
+					},
+				}),
+				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
+					-- Meta Achievement
+					["sym"] = {
+						{"select","achievementID",
+							4628,	-- Heroic: Storming the Citadel (10 player)
+							4629,	-- Heroic: The Plagueworks (10 player)
+							4630,	-- Heroic: The Crimson Hall (10 player)
+							4631,	-- Heroic: The Frostwing Halls (10 player)
+							4583,	-- Bane of the Fallen King
+						},
+					},
+				}),
+			}),
 			faction(1156, {	-- The Ashen Verdict
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
 				["groups"] = {

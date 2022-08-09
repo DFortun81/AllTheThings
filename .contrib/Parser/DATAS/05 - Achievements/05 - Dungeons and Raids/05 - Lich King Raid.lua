@@ -261,56 +261,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		{	-- Heartbreaker
 			["achievementID"] = 12330,	-- Heartbreaker
 		},
-		{	-- Heroic: Fall of the Lich King (10 player)
-			["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-			["g"] = {
-				{	-- Heroic: Storming the Citadel (10 player)
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-					["criteriaID"] = 1,	-- Heroic: Storming the Citadel (10 player
-				},
-				{	-- Heroic: The Plagueworks (10 player)
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-					["criteriaID"] = 2,	-- Heroic: The Plagueworks (10 player
-				},
-				{	-- Heroic: The Crimson Hall (10 player)
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-					["criteriaID"] = 3,	-- Heroic: The Crimson Hall (10 player
-				},
-				{	-- Heroic: The Frostwing Halls (10 player)
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-					["criteriaID"] = 4,	-- Heroic: The Frostwing Halls (10 player
-				},
-				{	-- Heroic: Fall of the Lich King (10 player)
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-					["criteriaID"] = 5,	-- Bane of the Fallen King
-				},
-				{	-- Fall of the Lich King (10 player)
-					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-					["g"] = {
-						{	-- Fall of the Lich King (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							["criteriaID"] = 1,	-- Storming the Citadel (10 player)
-						},
-						{	-- Fall of the Lich King (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							["criteriaID"] = 2,	-- The Plagueworks (10 player)
-						},
-						{	-- Fall of the Lich King (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							["criteriaID"] = 3,	-- The Crimson Hall (10 player)
-						},
-						{	-- Fall of the Lich King (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							["criteriaID"] = 4,	-- The Frostwing Halls (10 player)
-						},
-						{	-- Fall of the Lich King (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							["criteriaID"] = 5,	-- The Frozen Throne (10 player)
-						},
-					},
-				},
-			},
-		},
 		{	-- Heroic: Fall of the Lich King (25 player)
 			["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
 			["g"] = {
@@ -995,23 +945,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		{	-- Take Out Those Turret
 			["achievementID"] = 12315,	-- Take Out Those Turret
 		},
-		{	-- The Antechamber of Ulduar
-			["achievementID"] = 12302,	-- The Antechamber of Ulduar
-			["g"] = {
-				{	-- The Antechamber of Ulduar: Assembly of Iron
-					["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					["criteriaID"] = 1,		-- Assembly of Iron
-				},
-				{	-- The Antechamber of Ulduar: Auriaya
-					["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					["criteriaID"] = 3,		-- Auriaya
-				},
-				{	-- The Antechamber of Ulduar: Kologarn
-					["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					["criteriaID"] = 2,		-- Kologarn
-				},
-			},
-		},
 		{	-- The Arachnid Quarter (10 player)
 			["achievementID"] = 562,	-- The Arachnid Quarter (10 player)
 			["g"] = {
@@ -1210,19 +1143,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				},
 			},
 		},
-		{	-- The Descent into Madness
-			["achievementID"] = 12310,	-- The Descent into Madness
-			["g"] = {
-				{	-- The Descent into Madness: General Vezax
-					["achievementID"] = 12310,	-- The Descent into Madness
-					["criteriaID"] = 1,		-- General Vezax
-				},
-				{	-- The Descent into Madness: Yogg-Saron
-					["achievementID"] = 12310,	-- The Descent into Madness
-					["criteriaID"] = 2,		-- Yogg-Saron
-				},
-			},
-		},
 		{	-- The Fall of Naxxramas (10 player)
 			["achievementID"] = 576,	-- The Fall of Naxxramas (10 player)
 			["g"] = {
@@ -1286,27 +1206,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		},
 		{	-- The Hundred Club (25 player)
 			["achievementID"] = 2147,	-- The Hundred Club (25 player)
-		},
-		{	-- The Keepers of Ulduar
-			["achievementID"] = 12309,	-- The Keepers of Ulduar
-			["g"] = {
-				{	-- The Keepers of Ulduar: Freya
-					["achievementID"] = 12309,	-- The Keepers of Ulduar
-					["criteriaID"] = 3,		-- Freya
-				},
-				{	-- The Keepers of Ulduar: Hodir
-					["achievementID"] = 12309,	-- The Keepers of Ulduar
-					["criteriaID"] = 1,		-- Hodir
-				},
-				{	-- The Keepers of Ulduar: Mimiron
-					["achievementID"] = 12309,	-- The Keepers of Ulduar
-					["criteriaID"] = 4,		-- Mimiron
-				},
-				{	-- The Keepers of Ulduar: Thorim
-					["achievementID"] = 12309,	-- The Keepers of Ulduar
-					["criteriaID"] = 2,		-- Thorim
-				},
-			},
 		},
 		{	-- The Light of Dawn
 			["achievementID"] = 4584,	-- The Light of Dawn
@@ -1403,48 +1302,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		},
 		{	-- The Safety Dance (25 player)
 			["achievementID"] = 2139,	-- The Safety Dance (25 player)
-		},
-		{	-- The Secrets of Ulduar
-			["achievementID"] = 12311,	-- The Secrets of Ulduar
-			["g"] = {
-				{	-- The Siege of Ulduar
-					["achievementID"] = 12311,	-- The Secrets of Ulduar
-					["criteriaID"] = 1,	-- The Siege of Ulduar
-				},
-				{	-- The Antechamber of Ulduar
-					["achievementID"] = 12311,	-- The Secrets of Ulduar
-					["criteriaID"] = 2,	-- The Antechamber of Ulduar
-				},
-				{	-- The Keepers of Ulduar
-					["achievementID"] = 12311,	-- The Secrets of Ulduar
-					["criteriaID"] = 3,	-- The Keepers of Ulduar
-				},
-				{	-- The Descent into Madness
-					["achievementID"] = 12311,	-- The Secrets of Ulduar
-					["criteriaID"] = 4,	-- The Descent into Madness
-				},
-			},
-		},
-		{	-- The Siege of Ulduar
-			["achievementID"] = 12297,	-- The Siege of Ulduar
-			["g"] = {
-				{	-- The Siege of Ulduar: Flame Leviathan
-					["achievementID"] = 12297,	-- The Siege of Ulduar
-					["criteriaID"] = 1,		-- Flame Leviathan
-				},
-				{	-- The Siege of Ulduar: Ignis the Furnace Master
-					["achievementID"] = 12297,	-- The Siege of Ulduar
-					["criteriaID"] = 3,		-- Ignis the Furnace Master
-				},
-				{	-- The Siege of Ulduar: Razorscale
-					["achievementID"] = 12297,	-- The Siege of Ulduar
-					["criteriaID"] = 2,		-- Razorscale
-				},
-				{	-- The Siege of Ulduar: XT-002 Deconstructor
-					["achievementID"] = 12297,	-- The Siege of Ulduar
-					["criteriaID"] = 4,		-- XT-002 Deconstructor
-				},
-			},
 		},
 		{	-- The Spellweaver's Downfall (10 player)
 			["achievementID"] = 622,	-- The Spellweaver's Downfall (10 player)
