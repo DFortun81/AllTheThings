@@ -159,3 +159,7 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(53801),	-- The Battle for Darkshore (Heroic, Horde)
+};
