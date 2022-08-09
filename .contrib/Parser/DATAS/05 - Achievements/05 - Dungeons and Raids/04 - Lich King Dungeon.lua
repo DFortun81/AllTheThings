@@ -304,18 +304,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				crit(4),	-- Ingvar the Plunderer
 			}),
 		}),
-		ach(499,  {	-- Heroic: Utgarde Pinnacle
-			crit(1),	-- Svala Sorrowgrave
-			crit(2),	-- Gortok Palehoof
-			crit(3),	-- Skadi the Ruthless
-			crit(4),	-- King Ymiron
-			ach(488, {	-- Utgarde Pinnacle
-				crit(1),	-- Svala Sorrowgrave
-				crit(2),	-- Gortok Palehoof
-				crit(3),	-- Skadi the Ruthless
-				crit(4),	-- King Ymiron
-			}),
-		}),
 		ach(3804),	-- I've Had Worse
 		ach(2036),	-- Intense Cold
 		ach(2157),	-- King's Bane
