@@ -162,4 +162,5 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(53801),	-- The Battle for Darkshore (Heroic, Horde)
+	q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 };
