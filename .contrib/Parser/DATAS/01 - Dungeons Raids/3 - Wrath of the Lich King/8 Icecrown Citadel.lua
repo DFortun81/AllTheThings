@@ -2589,7 +2589,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 			}),
 			d(3,  {	-- 10-Player (Normal)
 				n(-393, {	-- Storming the Citadel
-					ach(4531),	-- Storming the Citadel (10 player)
+					ach(4531, {	-- Storming the Citadel (10 player)
+						-- crit(1, {	-- Lord Marrowgar
+						-- 	["_encounter"] = { 1624, 3 },
+						-- }),
+						-- crit(2, {	-- Lady Deathwhisper
+						-- 	["_encounter"] = { 1625, 3 },
+						-- }),
+						-- crit(3, {	-- Icecrown Gunship Battle
+						-- 	["_encounter"] = { 1626, 3 },
+						-- }),
+						-- crit(4, {	-- Deathbringer Saurfang
+						-- 	["_encounter"] = { 1628, 3 },
+						-- }),
+					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
@@ -2691,7 +2704,17 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 				}),
 				n(-394, {	-- The Plagueworks
-					ach(4528),	-- The Plagueworks (10 player)
+					ach(4528, {	-- The Plagueworks (10 player)
+						-- crit(1, {	-- Festergut
+						-- 	-- ["_encounter"] = { 1629, 3 },
+						-- }),
+						-- crit(2, {	-- Rotface
+						-- 	-- ["_encounter"] = { 1630, 3 },
+						-- }),
+						-- crit(3, {	-- Professor Putricide
+						-- 	-- ["_encounter"] = { 1631, 3 },
+						-- }),
+					}),
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
 					}),
@@ -2760,7 +2783,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 				}),
 				n(-395, {	-- The Crimson Hall
-					ach(4529),	-- The Crimson Hall (10 player)
+					ach(4529, {	-- The Crimson Hall (10 player)
+						-- crit(1, {	-- Blood Prince Council
+						-- 	["_encounter"] = { 1632, 3 },
+						-- }),
+						-- crit(2, {	-- Blood-Queen Lana'thel
+						-- 	["_encounter"] = { 1633, 3 },
+						-- }),
+					}),
 					e(1632,  {	-- Blood Prince Council
 						["crs"] = {
 							37972,	-- Prince Keleseth
@@ -2812,7 +2842,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 				}),
 				n(-396, {	-- The Frostwing Halls
-					ach(4527),	-- The Frostwing Halls (10 player)
+					ach(4527, {	-- The Frostwing Halls (10 player)
+						-- crit(1, {	-- Valithria Dreamwalker
+						-- 	["_encounter"] = { 1634, 3 },
+						-- }),
+						-- crit(2, {	-- Sindragosa
+						-- 	["_encounter"] = { 1635, 3 },
+						-- }),
+					}),
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
@@ -2859,9 +2896,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1636,  {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
 						["groups"] = {
-							crit(5, {	-- The Frozen Throne (10 player)
-								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-							}),
 							ach(4601),	-- Been Waiting a Long Time for This (10 player)
 							ach(4581),	-- Neck-Deep in Vile (10 player)
 							ach(4530, {	-- The Frozen Throne (10 player)
@@ -2909,7 +2943,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					},
 				}),
 				n(-393, {	-- Storming the Citadel
-					ach(4628),	-- Heroic: Storming the Citadel (10 player)
+					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
+						-- crit(1, {	-- Lord Marrowgar
+						-- 	["_encounter"] = { 1624, 5 },
+						-- }),
+						-- crit(2, {	-- Lady Deathwhisper
+						-- 	["_encounter"] = { 1625, 5 },
+						-- }),
+						-- crit(3, {	-- Icecrown Gunship Battle
+						-- 	["_encounter"] = { 1626, 5 },
+						-- }),
+						-- crit(4, {	-- Deathbringer Saurfang
+						-- 	["_encounter"] = { 1628, 5 },
+						-- }),
+					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {

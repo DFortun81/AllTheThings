@@ -999,7 +999,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,
-									--["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
