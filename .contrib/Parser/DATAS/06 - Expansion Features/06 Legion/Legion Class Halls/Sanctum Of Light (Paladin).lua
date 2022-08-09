@@ -346,7 +346,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					--
 					q(43486, {	-- Cracking the Codex
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["sourceQuests"] = {
+							42851,	-- Champion: Vindicator Boros
+							42852,	-- Champion: Justicar Julia Celeste
+						},
 						["provider"] = { "n", 90251 },	-- Aponi Brightmane
 						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 					}),
