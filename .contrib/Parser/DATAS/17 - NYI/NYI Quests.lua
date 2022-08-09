@@ -3768,17 +3768,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 8.1.0
 			tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { "created 8.1.0" } }, {
 				-- Unsorted
-				q(53801, {
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(166370, { -- Sentinel Equipment Cache
-							["b"] = 1,
-							["ilvl"] = 59,
-							["q"] = 3,
-						})
-					}
-				}),
 				q(53987, {
 					["description"] = "Category: |cFFf09f26Horde War Campaign|r",
 					["lvl"] = 50,

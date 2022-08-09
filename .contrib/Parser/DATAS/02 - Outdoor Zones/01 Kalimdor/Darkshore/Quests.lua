@@ -615,6 +615,18 @@ _.Zones =
 						i(131316),	-- Armguards of the Ancient Grove
 					},
 				}),
+				q(53801, {	-- The Battle for Darkshore
+					["lvl"] = 50,
+					["coord"] = { 50.7, 11.7, DARKSHORE },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(166370, { -- Sentinel Equipment Cache
+							["b"] = 1,
+							["ilvl"] = 59,
+							["q"] = 3,
+						})
+					}
+				}),
 				q(13544, {	-- The Bear's Blessing
 					["provider"] = { "n", 32967 },	-- Elder Brolg
 					["coord"] = { 43.5, 81.0, DARKSHORE },
