@@ -3225,6 +3225,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 							["spellID"] = 121183,	-- Contemplation
 							["classes"] = { PALADIN },
+							["f"] = RECIPES,
 						}),
 						applyclassicphase(PHASE_THREE, i(19447)), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19446)), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
