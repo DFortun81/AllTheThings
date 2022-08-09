@@ -670,6 +670,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
+										{"sub", "common_wod_dungeon_drop", 1, FEET},
 										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
 										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
@@ -793,7 +794,9 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
+										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
+										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
@@ -847,6 +850,7 @@ _.ExpansionFeatures =
 								i(119040, {	-- Cache of Mingled Treasures
 									["sym"] = {
 										{"sub", "common_wod_dungeon_drop", 1, HANDS},
+										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
@@ -899,6 +903,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, HANDS},
 										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
+										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
 										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
