@@ -62,7 +62,6 @@ root("Zones", {
 					faction(1104, {	-- Frenzyheart Tribe
 						
 					}),
-					faction(952),	-- Mercenary of Sholazar
 					faction(1105, {	-- The Oracles
 						
 					}),
