@@ -1811,7 +1811,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					},
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11496, {	-- The Sanctum Wards (Removed completion of Phase 1)
-					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
