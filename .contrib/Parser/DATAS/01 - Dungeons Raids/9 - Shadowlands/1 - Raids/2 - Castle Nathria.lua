@@ -392,6 +392,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			n(WORLD_QUESTS, {
 				q(66693, {	-- Tempting Fate: Castle Nathria
 					["isWorldQuest"] = true,
+					["timeline"] = { ADDED_SLS4 },
 				}),
 			}),
 			n(ZONE_DROPS, {
