@@ -1648,7 +1648,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 12954 },	-- Davil's Libram
 							["coord"] = { 42.4, 18.9, WESTERN_PLAGUELANDS },
 						}),
-						objective(1, {	-- 0/1 Redpath's Shield
+						objective(2, {	-- 0/1 Redpath's Shield
 							["provider"] = { "i", 12955 },	-- Redpath's Shield
 							["coord"] = { 63.7, 57.2, WESTERN_PLAGUELANDS },
 						}),
