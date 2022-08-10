@@ -359,6 +359,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
+					["isWorldQuest"] = true,
+				}),
+			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps

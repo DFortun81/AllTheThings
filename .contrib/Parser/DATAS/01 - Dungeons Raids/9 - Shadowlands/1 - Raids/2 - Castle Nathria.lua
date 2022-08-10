@@ -389,6 +389,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				q(66693, {	-- Tempting Fate: Castle Nathria
+					["isWorldQuest"] = true,
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
