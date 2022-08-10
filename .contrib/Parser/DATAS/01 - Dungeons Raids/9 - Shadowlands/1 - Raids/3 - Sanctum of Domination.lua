@@ -1340,6 +1340,9 @@ root("HiddenQuestTriggers", {
 	q(64684),	-- Stygian Ember from Bonesteel (Heroic)
 	q(64618),	-- Bonesteel (Mythic)
 	q(64685),	-- Bonesteel (Mythic)
+	q(70491),	-- Bonesteel - Fated - Rep/Flux
+	q(70492),	-- Bonesteel - Fated - Rep/Flux
+	q(70725),	-- Bonesteel - Fated - ?
 
 	q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
 	q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
@@ -1349,6 +1352,9 @@ root("HiddenQuestTriggers", {
 	q(64681),	-- Stygian Ember from Soulember (Heroic)
 	q(64615),	-- Soulember (Mythic)
 	q(64682),	-- Soulember (Mythic)
+	q(70499),	-- Soulember - Fated - Rep/Flux
+	q(70500),	-- Soulember - Fated - Rep/Flux
+	q(70729),	-- Soulember - Fated - ?
 
 	q(64602),	-- Stygian Ember from Hollowsoul [176879] (Normal / Heroic)
 	q(64610),	-- Stygian Ember from Hollowsoul (Normal / Heroic)
@@ -1357,6 +1363,9 @@ root("HiddenQuestTriggers", {
 	q(64678),	-- Stygian Ember from Hollowsoul (Heroic)
 	q(64612),	-- Hollowsoul (Mythic)
 	q(64679),	-- Hollowsoul (Mythic)
+	q(70495),	-- Hollowsoul - Fated - Rep/Flux
+	q(70496),	-- Hollowsoul - Fated - Rep/Flux
+	q(70727),	-- Hollowsoul - Fated - ?
 
 	q(64676),	-- Borr-Gahn (LFR)
 	q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
@@ -1366,6 +1375,9 @@ root("HiddenQuestTriggers", {
 	q(64690),	-- Stygian Ember from Borr-Gahn (Heroic)
 	q(64624),	-- Borr-Gahn (Mythic)
 	q(64691),	-- Borr-Gahn (Mythic)
+	q(70493),	-- Borr-Gahn - Fated - Rep/Flux
+	q(70494),	-- Borr-Gahn - Fated - Rep/Flux
+	q(70726),	-- Borr-Gahn - Fated - ?
 
 	q(64675),	-- Stygian Ember from Screamspike (LFR)
 	q(64605),	-- Stygian Ember from Screamspike (Normal / Heroic)
@@ -1375,6 +1387,9 @@ root("HiddenQuestTriggers", {
 	q(64687),	-- Stygian Ember from Screamspike (Heroic)
 	q(64621),	-- Screamspike (Mythic)
 	q(64688),	-- Screamspike (Mythic)
+	q(70497),	-- Screamspike - Fated - Rep/Flux
+	q(70498),	-- Screamspike - Fated - Rep/Flux
+	q(70728),	-- Screamspike - Fated - ?
 
 	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
@@ -1382,6 +1397,8 @@ root("HiddenQuestTriggers", {
 	q(64629),	-- The Tarragrue (Heroic-Week 2)
 	q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64329),	-- The Tarragrue (Mythic)
+	q(70471),	-- The Tarragrue - Fated - Rep/Flux
+	q(70472),	-- The Tarragrue - Fated - Rep/Flux
 
 	q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
@@ -1389,6 +1406,8 @@ root("HiddenQuestTriggers", {
 	q(64333),	-- Eye of the Jailer (Mythic)
 	q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+	q(70473),	-- Eye of the Jailer - Fated - Rep/Flux
+	q(70474),	-- Eye of the Jailer - Fated - Rep/Flux
 
 	q(64334),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
 	q(64474),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
@@ -1396,6 +1415,8 @@ root("HiddenQuestTriggers", {
 	q(64631),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
 	q(64658),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
 	q(64476),	-- The Nine (Mythic)
+	q(70475),	-- The Nine - Fated - Rep/Flux
+	q(70476),	-- The Nine - Fated - Rep/Flux
 
 	q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 	q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
@@ -1403,6 +1424,8 @@ root("HiddenQuestTriggers", {
 	q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 	q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 	q(64484),	-- Soulrender Dormazain (Mythic)
+	q(70479),	-- Soulrender Dormazain - Fated - Rep/Flux
+	q(70480),	-- Soulrender Dormazain - Fated - Rep/Flux
 
 	q(64608),	-- Garrosh cinematic (Normal / Heroic)
 
@@ -1412,6 +1435,8 @@ root("HiddenQuestTriggers", {
 	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 	q(64480),	-- Remnant of Ner'zhul (Mythic)
+	q(70477),	-- Remnant of Ner'zhul - Fated - Rep/Flux
+	q(70478),	-- Remnant of Ner'zhul - Fated - Rep/Flux
 
 	q(64672),	-- Painsmith Raznal (LFR)/LFR Wing 2 Completed
 	q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
@@ -1420,6 +1445,8 @@ root("HiddenQuestTriggers", {
 	q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 	q(64488),	-- Painsmith Raznal (Mythic)
+	q(70481),	-- Painsmith Raznal - Fated - Rep/Flux
+	q(70482),	-- Painsmith Raznal - Fated - Rep/Flux
 
 	q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
@@ -1427,6 +1454,8 @@ root("HiddenQuestTriggers", {
 	q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 	q(64492),	-- Guardian of the First Ones (Mythic)
+	q(70483),	-- Guardian of the First Ones - Fated - Rep/Flux
+	q(70484),	-- Guardian of the First Ones - Fated - Rep/Flux
 
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
@@ -1434,6 +1463,8 @@ root("HiddenQuestTriggers", {
 	q(64496),	-- Fatescribe Roh-Kalo (Mythic)
 	q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+	q(70485),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
+	q(70486),	-- Fatescribe Roh-Kalo - Fated - Rep/Flux
 
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
@@ -1441,6 +1472,8 @@ root("HiddenQuestTriggers", {
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
 	q(64500),	-- Kel'Thuzad (Mythic)
+	q(70487),	-- Kel'Thuzad - Fated - Rep/Flux
+	q(70488),	-- Kel'Thuzad - Fated - Rep/Flux
 
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
@@ -1448,6 +1481,8 @@ root("HiddenQuestTriggers", {
 	q(64665),	-- Sylvanas Windrunner (Normal)?
 	q(64503),	-- Sylvanas Windrunner (Heroic)
 	q(64504),	-- Sylvanas Windrunner (Mythic)
+	q(70489),	-- Sylvanas Windrunner - Fated - Rep/Flux
+	q(70490),	-- Sylvanas Windrunner - Fated - Rep/Flux
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 });
