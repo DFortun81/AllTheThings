@@ -1050,6 +1050,7 @@ _.Zones =
 					q(38939, {	-- Assault on Skold-Ashil
 						["coord"] = { 60.0, 63.8, STORMHEIM },
 						["races"] = HORDE_ONLY,
+						["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 					}),
 					q(38374, {	-- Assault the Drekirjar
 						["coord"] = { 43.2, 69.4, STORMHEIM },
