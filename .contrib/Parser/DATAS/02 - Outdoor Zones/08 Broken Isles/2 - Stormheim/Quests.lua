@@ -1056,6 +1056,7 @@ _.Zones =
 					}),
 					q(39998, {	-- Drive Back the Tideskorn
 						["coord"] = { 69.2, 68.0, STORMHEIM },
+						["sourceQuests"] = { 40002 },	-- A Familiar Fate
 					}),
 					q(40111, {	-- Rout the Bilgefin Invaders
 						["coord"] = { 81.0, 61.4, STORMHEIM },
