@@ -2901,7 +2901,7 @@ local insane_color = "|cffADD8E6"
 local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
 local previousCheckbox = CustomCollectFilterExplainLabel;
 local xInitalOffset, yInitialOffset, inital = -2, -2, true;
-for i,cc in ipairs({"NPE","SL_SKIP","HOA","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
+for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 	local filterID = "CC:" .. cc;
 	local reason = customCollects[cc];
 	local text = reason["icon"].." "..insane_color..reason["text"].."|r"
