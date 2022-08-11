@@ -14607,46 +14607,11 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 	end
 end
 
-(function()
--- receives a key and a function which returns the value to be set for
--- that key based on the current value and current character
-local function SetCustomCollectibility(key, func)
-	-- print("SetCustomCollectibility",key);
-	local result = func();
-	if result ~= nil then
-		-- app.PrintDebug("SetCustomCollectibility",key,result);
-		app.CurrentCharacter.CustomCollects[key] = result;
-	else
-		-- failed attempt to set the CC, try next frame
-		-- print("Failed")
-		Callback(SetCustomCollectibility, key, func);
-	end
-end
--- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
-app.CheckCustomCollects = function(t)
-	-- no customCollect, or Account/Debug mode then disregard
-	if app.MODE_DEBUG_OR_ACCOUNT or not t.customCollect then return true; end
-	for _,c in ipairs(t.customCollect) do
-		if not app.CurrentCharacter.CustomCollects[c] then
-			return false;
-		end
-	end
-	return true;
-end
--- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
-app.RefreshCustomCollectibility = function()
-	-- print("RefreshCustomCollectibility",app.IsReady)
-	if not app.IsReady then
-		Callback(app.RefreshCustomCollectibility);
-		return;
-	end
-
-	-- clear existing custom collects
-	wipe(app.CurrentCharacter.CustomCollects);
-
-	-- do one-time per character custom visibility check(s)
-	-- Exile's Reach (New Player Experience)
-	SetCustomCollectibility("NPE", function()
+-- Custom Collectibility
+do
+local SLCovenantId;
+local CCFuncs = {
+	["NPE"] = function()
 		-- settings override
 		if app.Settings:Get("CC:NPE") then return true; end
 		-- needs mapID to check this
@@ -14668,44 +14633,100 @@ app.RefreshCustomCollectibility = function()
 		end
 		-- otherwise character is not NPE
 		return false;
-	end);
-	-- Shadowlands Skip
-	SetCustomCollectibility("SL_SKIP", function()
+	end,
+	["SL_SKIP"] = function()
 		-- settings override
 		if app.Settings:Get("CC:SL_SKIP") then return true; end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713) or false;
-	end);
-
-	local SLCovenantId = C_Covenants.GetActiveCovenantID();
-	-- print("Current Covenant",SLCovenantId);
-	-- Show all Covenants if not yet selected
-	-- Shadowlands Covenant: Kyrian
-	SetCustomCollectibility("SL_COV_KYR", function()
+	end,
+	["HOA"] = function()
+		-- settings override
+		if app.Settings:Get("CC:HOA") then return true; end
+		-- check if quest #51211 is completed. Rewards the HoA to the player and permanently switches all possible Azerite rewards
+		return IsQuestFlaggedCompleted(51211) or false;
+	end,
+	["SL_COV_KYR"] = function()
 		-- settings override
 		if app.Settings:Get("CC:SL_COV_KYR") then return true; end
 		return SLCovenantId == 1 or SLCovenantId == 0;
-	end);
-	-- Shadowlands Covenant: Venthyr
-	SetCustomCollectibility("SL_COV_VEN", function()
+	end,
+	["SL_COV_VEN"] = function()
 		-- settings override
 		if app.Settings:Get("CC:SL_COV_VEN") then return true; end
 		return SLCovenantId == 2 or SLCovenantId == 0;
-	end);
-	-- Shadowlands Covenant: Night Fae
-	SetCustomCollectibility("SL_COV_NFA", function()
+	end,
+	["SL_COV_NFA"] = function()
 		-- settings override
 		if app.Settings:Get("CC:SL_COV_NFA") then return true; end
 		return SLCovenantId == 3 or SLCovenantId == 0;
-	end);
-	-- Shadowlands Covenant: Necrolord
-	SetCustomCollectibility("SL_COV_NEC", function()
+	end,
+	["SL_COV_NEC"] = function()
 		-- settings override
 		if app.Settings:Get("CC:SL_COV_NEC") then return true; end
 		return SLCovenantId == 4 or SLCovenantId == 0;
-	end);
+	end,
+};
+
+-- receives a key and a function which returns the value to be set for
+-- that key based on the current value and current character
+local function SetCustomCollectibility(key, func)
+	-- print("SetCustomCollectibility",key);
+	func = func or CCFuncs[key];
+	local result = func();
+	if result ~= nil then
+		-- app.PrintDebug("SetCustomCollectibility",key,result);
+		app.CurrentCharacter.CustomCollects[key] = result;
+	else
+		-- failed attempt to set the CC, try next frame
+		-- app.PrintDebug("SetCustomCollectibility-Fail",key);
+		Callback(SetCustomCollectibility, key, func);
+	end
 end
-end)();
+-- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
+app.CheckCustomCollects = function(t)
+	-- no customCollect, or Account/Debug mode then disregard
+	if app.MODE_DEBUG_OR_ACCOUNT or not t.customCollect then return true; end
+	local cc = app.CurrentCharacter.CustomCollects;
+	for _,c in ipairs(t.customCollect) do
+		if not cc[c] then
+			return false;
+		end
+	end
+	return true;
+end
+-- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
+app.RefreshCustomCollectibility = function()
+	-- print("RefreshCustomCollectibility",app.IsReady)
+	if not app.IsReady then
+		Callback(app.RefreshCustomCollectibility);
+		return;
+	end
+
+	-- clear existing custom collects
+	wipe(app.CurrentCharacter.CustomCollects);
+
+	-- do one-time per character custom visibility check(s)
+	-- Exile's Reach (New Player Experience)
+	SetCustomCollectibility("NPE");
+	-- Shadowlands Skip
+	SetCustomCollectibility("SL_SKIP");
+	-- Heart of Azeroth
+	SetCustomCollectibility("HOA");
+
+	-- print("Current Covenant",SLCovenantId);
+	-- Show all Covenants if not yet selected
+	SLCovenantId = C_Covenants.GetActiveCovenantID();
+	-- Shadowlands Covenant: Kyrian
+	SetCustomCollectibility("SL_COV_KYR");
+	-- Shadowlands Covenant: Venthyr
+	SetCustomCollectibility("SL_COV_VEN");
+	-- Shadowlands Covenant: Night Fae
+	SetCustomCollectibility("SL_COV_NFA");
+	-- Shadowlands Covenant: Necrolord
+	SetCustomCollectibility("SL_COV_NEC");
+end
+end	-- Custom Collectibility
 
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then

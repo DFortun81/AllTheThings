@@ -2936,6 +2936,26 @@ end);
 SL_SKIP_CheckBox:SetATTTooltip(reason["desc"]);
 SL_SKIP_CheckBox:SetPoint("TOPLEFT", NPE_CheckBox, "BOTTOMLEFT", 0, 4);
 
+reason = L["CUSTOM_COLLECTS_REASONS"]["HOA"]
+text = reason["icon"].." "..reason["text"]
+local HOA_CheckBox = child:CreateCheckBox(text,
+function(self)
+	self:SetChecked(settings:Get("CC:HOA"));
+	if settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("CC:HOA", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+HOA_CheckBox:SetATTTooltip(reason["desc"]);
+HOA_CheckBox:SetPoint("TOPLEFT", SL_SKIP_CheckBox, "BOTTOMLEFT", 0, 4);
+
 local insane_color = "|cffADD8E6"
 reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
@@ -2955,7 +2975,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
-SL_COV_KYR_CheckBox:SetPoint("TOPLEFT", SL_SKIP_CheckBox, "BOTTOMLEFT", 0, 4);
+SL_COV_KYR_CheckBox:SetPoint("TOPLEFT", HOA_CheckBox, "BOTTOMLEFT", 0, 4);
 
 reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"]
 text = reason["icon"].." "..insane_color..reason["text"].."|r"
