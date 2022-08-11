@@ -2896,173 +2896,40 @@ CustomCollectFilterExplainLabel.OnRefresh = function(self)
 	end
 end;
 
-local reason = L["CUSTOM_COLLECTS_REASONS"]["NPE"]
-local text = reason["icon"].." "..reason["text"]
-local NPE_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:NPE"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:NPE", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-NPE_CheckBox:SetATTTooltip(reason["desc"]);
-NPE_CheckBox:SetPoint("TOPLEFT", CustomCollectFilterExplainLabel, "BOTTOMLEFT", -2, -2);
-
-reason = L["CUSTOM_COLLECTS_REASONS"]["SL_SKIP"]
-text = reason["icon"].." "..reason["text"]
-local SL_SKIP_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:SL_SKIP"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:SL_SKIP", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SL_SKIP_CheckBox:SetATTTooltip(reason["desc"]);
-SL_SKIP_CheckBox:SetPoint("TOPLEFT", NPE_CheckBox, "BOTTOMLEFT", 0, 4);
-
-reason = L["CUSTOM_COLLECTS_REASONS"]["HOA"]
-text = reason["icon"].." "..reason["text"]
-local HOA_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:HOA"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:HOA", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-HOA_CheckBox:SetATTTooltip(reason["desc"]);
-HOA_CheckBox:SetPoint("TOPLEFT", SL_SKIP_CheckBox, "BOTTOMLEFT", 0, 4);
-
+-- Custom Collect Toggles
 local insane_color = "|cffADD8E6"
-reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_KYR"]
-text = reason["icon"].." "..insane_color..reason["text"].."|r"
-local SL_COV_KYR_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:SL_COV_KYR"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
+local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
+local previousCheckbox = CustomCollectFilterExplainLabel;
+local xInitalOffset, yInitialOffset, inital = -2, -2, true;
+for i,cc in ipairs({"NPE","SL_SKIP","HOA","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
+	local filterID = "CC:" .. cc;
+	local reason = customCollects[cc];
+	local text = reason["icon"].." "..insane_color..reason["text"].."|r"
+	ccCheckbox = child:CreateCheckBox(text,
+	function(self)
+		self:SetChecked(settings:Get(filterID));
+		if settings:Get("AccountMode") then
+			self:Disable();
+			self:SetAlpha(0.2);
+		else
+			self:Enable();
+			self:SetAlpha(1);
+		end
+	end,
+	function(self)
+		settings:Set(filterID, self:GetChecked());
+		settings:UpdateMode(1);
+	end);
+	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
+	if inital then
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
+		inital = nil;
 	else
-		self:Enable();
-		self:SetAlpha(1);
+		ccCheckbox:SetPoint("TOPLEFT", previousCheckbox, "BOTTOMLEFT", 0, 4);
 	end
-end,
-function(self)
-	settings:Set("CC:SL_COV_KYR", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SL_COV_KYR_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
-SL_COV_KYR_CheckBox:SetPoint("TOPLEFT", HOA_CheckBox, "BOTTOMLEFT", 0, 4);
-
-reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NEC"]
-text = reason["icon"].." "..insane_color..reason["text"].."|r"
-local SL_COV_NEC_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:SL_COV_NEC"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:SL_COV_NEC", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SL_COV_NEC_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
-SL_COV_NEC_CheckBox:SetPoint("TOPLEFT", SL_COV_KYR_CheckBox, "BOTTOMLEFT", 0, 4);
-
-reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_NFA"]
-text = reason["icon"].." "..insane_color..reason["text"].."|r"
-local SL_COV_NFA_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:SL_COV_NFA"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:SL_COV_NFA", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SL_COV_NFA_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
-SL_COV_NFA_CheckBox:SetPoint("TOPLEFT", SL_COV_NEC_CheckBox, "BOTTOMLEFT", 0, 4);
-
-reason = L["CUSTOM_COLLECTS_REASONS"]["SL_COV_VEN"]
-text = reason["icon"].." "..insane_color..reason["text"].."|r"
-local SL_COV_VEN_CheckBox = child:CreateCheckBox(text,
-function(self)
-	self:SetChecked(settings:Get("CC:SL_COV_VEN"));
-	if settings:Get("AccountMode") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("CC:SL_COV_VEN", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-SL_COV_VEN_CheckBox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
-SL_COV_VEN_CheckBox:SetPoint("TOPLEFT", SL_COV_NFA_CheckBox, "BOTTOMLEFT", 0, 4);
-
--- local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
--- local customLabels = L["CUSTOM_COLLECTS_REASONS"];
--- local previousCheckbox = CustomCollectFilterExplainLabel;
--- local xInitalOffset, yInitialOffset, inital = -2, -2, true;
--- for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
--- 	local filterID = "CC:" .. cc;
--- 	local ccInfo = customCollects[cc];
--- 	local ccLabel = customLabels[cc];
--- 	ccCheckbox = child:CreateCheckBox(ccLabel[1],
--- 	function(self)
--- 		self:SetChecked(settings:GetFilter(filterID));
--- 	end,
--- 	function(self)
--- 		settings:SetFilter(filterID, self:GetChecked());
--- 	end);
--- 	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], ccInfo[1]));
--- 	if inital then
--- 		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
--- 		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
--- 		inital = nil;
--- 	else
--- 		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", 0, 0);
--- 		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, 4);
--- 	end
--- 	previousCheckbox = ccCheckbox;
--- end
+	previousCheckbox = ccCheckbox;
+end
 
 local SeasonalFiltersLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 SeasonalFiltersLabel:SetText(L["SEASONAL_LABEL"]);
