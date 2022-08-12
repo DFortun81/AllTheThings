@@ -1197,22 +1197,6 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ShowTrackableThings = app.Filter;
 		end
 
-		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
-		app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
-		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
-		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
-		app.AccountWideFollowers = self:Get("AccountWide:Followers");
-		app.AccountWideConduits = self:Get("AccountWide:Conduits");
-		app.AccountWideIllusions = self:Get("AccountWide:Illusions");
-		app.AccountWideMounts = self:Get("AccountWide:Mounts");
-		app.AccountWideMusicRollsAndSelfieFilters = self:Get("AccountWide:MusicRollsAndSelfieFilters");
-		app.AccountWideQuests = self:Get("AccountWide:Quests");
-		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
-		app.AccountWideReputations = self:Get("AccountWide:Reputations");
-		app.AccountWideTitles = self:Get("AccountWide:Titles");
-		app.AccountWideToys = self:Get("AccountWide:Toys");
-		app.AccountWideTransmog = self:Get("AccountWide:Transmog");
-
 		app.CollectibleAchievements = self:Get("Thing:Achievements");
 		app.CollectibleAzeriteEssences = self:Get("Thing:AzeriteEssences");
 		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
@@ -1245,6 +1229,23 @@ settings.UpdateMode = function(self, doRefresh)
 			else
 				app.RaceRequirementFilter = app.NoFilter;
 			end
+
+			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
+			app.AccountWideAchievements = true;
+			app.AccountWideAzeriteEssences = true;
+			app.AccountWideBattlePets = true;
+			app.AccountWideFlightPaths = true;
+			app.AccountWideFollowers = true;
+			app.AccountWideConduits = true;
+			app.AccountWideIllusions = true;
+			app.AccountWideMounts = true;
+			app.AccountWideMusicRollsAndSelfieFilters = true;
+			app.AccountWideQuests = true;
+			app.AccountWideRecipes = true;
+			app.AccountWideReputations = true;
+			app.AccountWideTitles = true;
+			app.AccountWideToys = true;
+			app.AccountWideTransmog = true;
 		else
 			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
@@ -1252,6 +1253,22 @@ settings.UpdateMode = function(self, doRefresh)
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 			app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
+
+			app.AccountWideAchievements = self:Get("AccountWide:Achievements");
+			app.AccountWideAzeriteEssences = self:Get("AccountWide:AzeriteEssences");
+			app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
+			app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
+			app.AccountWideFollowers = self:Get("AccountWide:Followers");
+			app.AccountWideConduits = self:Get("AccountWide:Conduits");
+			app.AccountWideIllusions = self:Get("AccountWide:Illusions");
+			app.AccountWideMounts = self:Get("AccountWide:Mounts");
+			app.AccountWideMusicRollsAndSelfieFilters = self:Get("AccountWide:MusicRollsAndSelfieFilters");
+			app.AccountWideQuests = self:Get("AccountWide:Quests");
+			app.AccountWideRecipes = self:Get("AccountWide:Recipes");
+			app.AccountWideReputations = self:Get("AccountWide:Reputations");
+			app.AccountWideTitles = self:Get("AccountWide:Titles");
+			app.AccountWideToys = self:Get("AccountWide:Toys");
+			app.AccountWideTransmog = self:Get("AccountWide:Transmog");
 
 			app.MODE_ACCOUNT = nil;
 		end
@@ -1269,7 +1286,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.CollectedItemVisibilityFilter = app.Filter;
 	end
-	if self:Get("AccountWide:Achievements") then
+	if app.AccountWideAchievements then
 		app.AchievementFilter = 4;
 	else
 		app.AchievementFilter = 13;
@@ -1735,8 +1752,8 @@ end;
 
 local AchievementsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Achievements"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Achievements"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Achievements") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1790,8 +1807,8 @@ FlightPathsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4
 
 local FlightPathsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:FlightPaths"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:FlightPaths") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:FlightPaths"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:FlightPaths") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1827,8 +1844,8 @@ FollowersCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FollowersAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Followers"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Followers") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Followers"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Followers") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1883,9 +1900,9 @@ QuestsLockedCheckBox:SetPoint("LEFT", QuestsCheckBox.Text, "RIGHT", 4, 0);
 
 local QuestsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Quests"));
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Quests"));
 	-- only requries Quests enabled. seems weird to enable Locked Quests with Account-Wide when you'd prefer to use another character to get those Locked Quests...
-	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Quests") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1921,8 +1938,8 @@ RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local RecipesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Recipes"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Recipes") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Recipes"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Recipes") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1958,8 +1975,8 @@ ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ReputationsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Reputations"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Reputations") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Reputations"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Reputations") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1995,8 +2012,8 @@ TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local TitlesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Titles"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Titles") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Titles"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Titles") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2029,8 +2046,8 @@ end;
 
 local MusicRollsAndSelfieFiltersAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:MusicRollsAndSelfieFilters"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:MusicRollsAndSelfieFilters") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:MusicRollsAndSelfieFilters"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:MusicRollsAndSelfieFilters") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2084,8 +2101,8 @@ AzeriteEssencesCheckBox:SetPoint("TOPLEFT", MusicRollsAndSelfieFiltersCheckBox, 
 
 local AzeriteEssencesAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:AzeriteEssences"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:AzeriteEssences") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:AzeriteEssences"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:AzeriteEssences") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2121,8 +2138,8 @@ SoulbindConduitsCheckBox:SetPoint("TOPLEFT", AzeriteEssencesCheckBox, "BOTTOMLEF
 
 local SoulbindConduitsAccountWideCheckBox = child:CreateCheckBox("",
 function(self)
-	self:SetChecked(settings:Get("AccountWide:Conduits"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Conduits") then
+	self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get("AccountWide:Conduits"));
+	if app.MODE_DEBUG_OR_ACCOUNT or not settings:Get("Thing:Conduits") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
