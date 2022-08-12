@@ -3297,6 +3297,6 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。" },
-	--TODO: ["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "When receiving the Heart of Azeroth, a Character permanently alters various potential Item rewards within the BFA Expansion." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "获得艾泽拉斯之心时，角色会永久性更改《争霸艾泽拉斯》资料片中的各种潜在的物品奖励。" },
 })
 do a[key] = value; end
