@@ -181,6 +181,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },
@@ -233,47 +234,59 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 62904 },
 				}),
 			})),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
+					["cr"] = 47156,	-- Bramok Gorewing <Wind Rider Master>
 					["coord"] = { 54.0, 42.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(656, {	-- Crushblow, Twilight Highlands
+					["cr"] = 47116,	-- Tokrog <Wind Rider Master>
 					["coord"] = { 45.6, 76.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(661, {	-- Dragonmaw Port, Twilight Highlands
+					["cr"] = 47174,	-- Gorthul <Dragonmaw Flight Master>
 					["coord"] = { 73.8, 52.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(664, {	-- Firebeard's Patrol, Twilight Highlands
+					["cr"] = 47147,	-- Farstad Stonegrip <Gryphon Master>
 					["coord"] = { 60.4, 57.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(662, {	-- Highbank, Twilight Highlands
+					["cr"] = 47119,	-- Glenn Arbuckle <Gryphon Master>
 					["coord"] = { 81.6, 77.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(666, {	-- Kirthaven, Twilight Highlands
+					["cr"] = 47155,	-- Shaina Talonheart <Gryphon Master>
 					["coord"] = { 56.6, 15.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(657, {	-- The Gullet, Twilight Highlands
+					["cr"] = 47133,	-- San'shigo <Wind Rider Master>
 					["coord"] = { 36.8, 38.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(660, {	-- The Krazzworks, Twilight Highlands
+					["cr"] = 47061,	-- Harpo Boltknuckle <Flight Master>
 					["coord"] = { 75.4, 18.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(665, {	-- Thundermar, Twilight Highlands
+					["cr"] = 47154,	-- Doran Talonheart <Gryphon Master>
 					["coord"] = { 48.4, 28.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(658, {	-- Vermillion Redoubt, Twilight Highlands
+					["cr"] = 47121,	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 					["coord"] = { 28.4, 24.8, TWILIGHT_HIGHLANDS },
 				}),
 				fp(663, {	-- Victor's Point, Twilight Highlands
+					["cr"] = 47118,	-- Desmond Chadsworth <Gryphon Master>
 					["coord"] = { 43.8, 57.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1992,9 +2005,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.5, 48.5, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 48046 },	-- Ella Forgehammer
-				}),
-				q(28236, {	-- The Lost Brother
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27812, {	-- The Loyalty of Clan Mullan
 					["sourceQuests"] = {

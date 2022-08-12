@@ -869,6 +869,7 @@ root("HiddenQuestTriggers", {
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
 		q(27862),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
+		q(28236),	-- The Lost Brother - completed with quest 28233
 		q(29039),	-- Hunting Practice - completed with quest 29038
 		q(29051),	-- Cub's First Toy - completed with quest 29040
 		q(29052),	-- A Cub's Cravings - completed with quest 29035

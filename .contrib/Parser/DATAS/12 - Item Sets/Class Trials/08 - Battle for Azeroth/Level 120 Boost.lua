@@ -109,6 +109,22 @@ root("GearSets", n(CLASS_TRIAL, {
 						i(170634),	-- Trailseeker Idol of Rage
 						i(170637),	-- Trailseeker Stone of Rage
 					}),
+					cl(HUNTER, SURVIVAL, {
+						i(170639),	-- Trailseeker Spear
+						i(170802),	-- Trailseeker Helm
+						i(170804),	-- Trailseeker Spaulders
+						i(170632),	-- Trailseeker Cloak of Rage
+						i(170799),	-- Trailseeker Vest
+						i(170806),	-- Trailseeker Bracers
+						i(170801),	-- Trailseeker Gauntlets
+						i(170805),	-- Trailseeker Belt
+						i(170803),	-- Trailseeker Legguards
+						i(170800),	-- Trailseeker Greaves
+						i(170635),	-- Trailseeker Band of Onslaught
+						i(170636),	-- Trailseeker Ring of Onslaught
+						i(170634),	-- Trailseeker Idol of Rage
+						i(170637),	-- Trailseeker Stone of Rage
+					}),
 				}),
 				cl(MAGE, {
 					cl(MAGE, FROST, {
