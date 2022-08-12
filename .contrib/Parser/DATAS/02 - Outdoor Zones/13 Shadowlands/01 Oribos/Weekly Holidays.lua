@@ -106,7 +106,7 @@ root("Zones", m(SHADOWLANDS, {
 					},
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (H)
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { "added 9.2.0", },
 					["sym"] = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -115,7 +115,28 @@ root("Zones", m(SHADOWLANDS, {
 						{"is", "encounterID" },					-- Only Encounter Headers
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
+						-- TODO: fix this to include Anima orbs from CN... i got one
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+					},
+				}),
+				i(192438, {	-- Cache of Fated Treasures (Heroic)
+					["timeline"] = { ADDED_SLS4 },
+					["modID"] = 11,
+					["bonusID"] = 8157,
+					["sym"] = {
+						{"select", "instanceID"
+							,1190			-- Castle Nathria
+							,1193			-- Sanctum of Domination
+							,1195			-- Sepulcher of the First Ones
+						},
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
+						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
+						{"is", "encounterID" },					-- Only Encounter Headers
+						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
+						{"is", "itemID"},						-- Only Items!
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						{"modID",95},	-- Fated Heroic ModID (modID might not be accurate for all )
 					},
 				}),
 			}),

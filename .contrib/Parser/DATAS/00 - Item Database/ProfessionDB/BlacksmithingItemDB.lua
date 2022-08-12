@@ -1279,7 +1279,6 @@ i(127745, 187515);	-- Savage Truesteel Essence
 -- PATCH 7.0.3 --
 -----------------
 i(0, 195097);	-- Blacksmithing (Legion)
-i(0, 182944);	-- Demonsteel Armguards [Rank 1]
 i(0, 184442);	-- Demonsteel Bar
 i(0, 182933);	-- Leystone Gauntlets [Rank 1]
 i(0, 182931);	-- Leystone Greaves [Rank 1]
@@ -1292,6 +1291,7 @@ i(0, 182934);	-- Leystone Boots [Rank 1]
 i(0, 182935);	-- Leystone Breastplate [Rank 1]
 -- ITEMS --
 i(136698, 209498);	-- Consecrated Spike
+i(123920, 182944);	-- Demonsteel Armguards [Rank 1]
 i(123940, 182974);	-- Demonsteel Armguards [Rank 2]
 i(123948, 182982);	-- Demonsteel Armguards [Rank 3]
 i(123926, 182950);	-- Demonsteel Boots [Rank 1]
@@ -1373,7 +1373,6 @@ i(0, 184218);	-- Scrapmetal Palmplate
 i(0, 184214);	-- Small Heated Scrap Metal
 -- NYI --
 -- Items --
-i(123920, 0);	-- Demonsteel Armguards [Rank 1]
 i(124462, 0);	-- Demonsteel Bar
 i(123899, 0);	-- Leystone Armguards [Rank 1]
 i(123905, 0);	-- Leystone Boots [Rank 1]

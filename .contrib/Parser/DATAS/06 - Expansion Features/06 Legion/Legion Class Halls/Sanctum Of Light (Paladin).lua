@@ -722,7 +722,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136801, {	-- Divine Tome: Contemplation
-								["spellID"] = 121183,	-- Contemplation
 								["f"] = RECIPES,
 							}),
 							i(139692, {	-- Gauntlets of the Silver Hand

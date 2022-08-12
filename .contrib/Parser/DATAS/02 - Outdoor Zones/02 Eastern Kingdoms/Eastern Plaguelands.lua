@@ -3223,7 +3223,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						i(136801, {	-- Divine Tome: Contemplation (Paladin)
 							["timeline"] = { "added 7.0.3.22248" },
-							["spellID"] = 121183,	-- Contemplation
 							["classes"] = { PALADIN },
 							["f"] = RECIPES,
 						}),
