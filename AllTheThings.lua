@@ -13845,7 +13845,7 @@ end
 local function FilterItemClass_CustomCollect(item)
 	local customCollect = item.customCollect;
 	if customCollect then
-		local customCollects = app.CurrentCharacter.CustomCollects;
+		local customCollects = app.ActiveCustomCollects;
 		for _,c in ipairs(customCollect) do
 			if not customCollects[c] then
 				return false;
@@ -14612,8 +14612,6 @@ do
 local SLCovenantId;
 local CCFuncs = {
 	["NPE"] = function()
-		-- settings override
-		if app.Settings:Get("CC:NPE") then return true; end
 		-- needs mapID to check this
 		if not app.GetCurrentMapID() then return; end
 		-- print("first check");
@@ -14635,35 +14633,27 @@ local CCFuncs = {
 		return false;
 	end,
 	["SL_SKIP"] = function()
-		-- settings override
-		if app.Settings:Get("CC:SL_SKIP") then return true; end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713) or false;
 	end,
 	["HOA"] = function()
-		-- settings override
-		if app.Settings:Get("CC:HOA") then return true; end
 		-- check if quest #51211 is completed. Rewards the HoA to the player and permanently switches all possible Azerite rewards
-		return IsQuestFlaggedCompleted(51211) or false;
+		local hoa = IsQuestFlaggedCompleted(51211) or false;
+		-- also store the opposite of HOA for easy checks on Azewrong gear
+		app.CurrentCharacter.CustomCollects["~HOA"] = not hoa;
+		app.ActiveCustomCollects["~HOA"] = not hoa;
+		return hoa;
 	end,
 	["SL_COV_KYR"] = function()
-		-- settings override
-		if app.Settings:Get("CC:SL_COV_KYR") then return true; end
 		return SLCovenantId == 1 or SLCovenantId == 0;
 	end,
 	["SL_COV_VEN"] = function()
-		-- settings override
-		if app.Settings:Get("CC:SL_COV_VEN") then return true; end
 		return SLCovenantId == 2 or SLCovenantId == 0;
 	end,
 	["SL_COV_NFA"] = function()
-		-- settings override
-		if app.Settings:Get("CC:SL_COV_NFA") then return true; end
 		return SLCovenantId == 3 or SLCovenantId == 0;
 	end,
 	["SL_COV_NEC"] = function()
-		-- settings override
-		if app.Settings:Get("CC:SL_COV_NEC") then return true; end
 		return SLCovenantId == 4 or SLCovenantId == 0;
 	end,
 };
@@ -14677,6 +14667,7 @@ local function SetCustomCollectibility(key, func)
 	if result ~= nil then
 		-- app.PrintDebug("SetCustomCollectibility",key,result);
 		app.CurrentCharacter.CustomCollects[key] = result;
+		app.ActiveCustomCollects[key] = result or app.Settings:Get("CC:"..key);
 	else
 		-- failed attempt to set the CC, try next frame
 		-- app.PrintDebug("SetCustomCollectibility-Fail",key);
@@ -14687,7 +14678,7 @@ end
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
 	if app.MODE_DEBUG_OR_ACCOUNT or not t.customCollect then return true; end
-	local cc = app.CurrentCharacter.CustomCollects;
+	local cc = app.ActiveCustomCollects;
 	for _,c in ipairs(t.customCollect) do
 		if not cc[c] then
 			return false;
@@ -14704,7 +14695,7 @@ app.RefreshCustomCollectibility = function()
 	end
 
 	-- clear existing custom collects
-	wipe(app.CurrentCharacter.CustomCollects);
+	wipe(app.ActiveCustomCollects);
 
 	-- do one-time per character custom visibility check(s)
 	-- Exile's Reach (New Player Experience)
@@ -16570,7 +16561,7 @@ RowOnEnter = function (self)
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
 				local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or"[MISSING_LOCALE_KEY]");
-				if not app.CurrentCharacter.CustomCollects[c] then
+				if not app.ActiveCustomCollects[c] then
 					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
 				else
 					GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");
@@ -22848,6 +22839,7 @@ app.Startup = function()
 	app.GUID = UnitGUID("player");
 	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
+	app.ActiveCustomCollects = {};
 
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
@@ -23811,7 +23803,6 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 			if cmd == "?" then		-- Query Request
 				local response;
 				if a then
-					b = tonumber(b);
 					if a == "a" then
 						response = "a";
 						for i=3,#args,1 do

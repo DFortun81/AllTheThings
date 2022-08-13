@@ -2631,7 +2631,7 @@ ItemFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, ItemFiltersLabel);
 ItemFiltersLabel:SetPoint("TOPLEFT", child, "TOPLEFT", 10, -8);
 ItemFiltersLabel.OnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -2646,7 +2646,7 @@ ItemFiltersExplainLabel:SetText(L["ITEM_EXPLAIN_LABEL"]);
 ItemFiltersExplainLabel:Show();
 table.insert(settings.MostRecentTab.objects, ItemFiltersExplainLabel);
 ItemFiltersExplainLabel.OnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -2660,7 +2660,7 @@ local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked());
 end;
 local ItemFilterOnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -2744,7 +2744,7 @@ f:SetScript("OnClick", function(self)
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable();
 	else
 		self:Enable();
@@ -2768,7 +2768,7 @@ f:SetScript("OnClick", function(self)
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
-	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable();
 	else
 		self:Enable();
@@ -2792,7 +2792,7 @@ f:SetScript("OnClick", function(self)
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:Disable();
 	else
 		self:Enable();
@@ -2891,7 +2891,7 @@ CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"]);
 CustomCollectFilterLabel:Show();
 table.insert(settings.MostRecentTab.objects, CustomCollectFilterLabel);
 CustomCollectFilterLabel.OnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -2906,7 +2906,7 @@ CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"]);
 CustomCollectFilterExplainLabel:Show();
 table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
 CustomCollectFilterExplainLabel.OnRefresh = function(self)
-	if settings:Get("AccountMode") then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		self:SetAlpha(0.2);
 	else
 		self:SetAlpha(1);
@@ -2918,15 +2918,18 @@ local insane_color = "|cffADD8E6"
 local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
 local previousCheckbox = CustomCollectFilterExplainLabel;
 local xInitalOffset, yInitialOffset, inital = -2, -2, true;
-for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
+-- Insane Required first
+for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 	local filterID = "CC:" .. cc;
 	local reason = customCollects[cc];
 	local text = reason["icon"].." "..insane_color..reason["text"].."|r"
 	ccCheckbox = child:CreateCheckBox(text,
 	function(self)
-		self:SetChecked(settings:Get(filterID));
-		if settings:Get("AccountMode") then
-			self:Disable();
+		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+		self:SetChecked(automatic or settings:Get(filterID));
+		if automatic then
+			-- self:Disable();
 			self:SetAlpha(0.2);
 		else
 			self:Enable();
@@ -2934,6 +2937,52 @@ for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_C
 		end
 	end,
 	function(self)
+		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+		-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
+		if automatic then
+			self:SetChecked(true);
+			return;
+		end
+		settings:Set(filterID, self:GetChecked());
+		settings:UpdateMode(1);
+	end);
+	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], text));
+	if inital then
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
+		inital = nil;
+	else
+		ccCheckbox:SetPoint("TOPLEFT", previousCheckbox, "BOTTOMLEFT", 0, 4);
+	end
+	previousCheckbox = ccCheckbox;
+end
+-- Non-Insane Required after
+for i,cc in ipairs({"NPE","SL_SKIP"}) do
+	local filterID = "CC:" .. cc;
+	local reason = customCollects[cc];
+	local text = reason["icon"].." "..reason["text"];
+	ccCheckbox = child:CreateCheckBox(text,
+	function(self)
+		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+		self:SetChecked(automatic or settings:Get(filterID));
+		if automatic then
+			-- self:Disable();
+			self:SetAlpha(0.2);
+		else
+			self:Enable();
+			self:SetAlpha(1);
+		end
+	end,
+	function(self)
+		local automatic = app and (app.MODE_DEBUG_OR_ACCOUNT
+			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
+		-- prevent toggling automatic filter without requiring it to be disabled (TODO add this logic as part of the checkbox itself somehow instead of manually?)
+		if automatic then
+			self:SetChecked(true);
+			return;
+		end
 		settings:Set(filterID, self:GetChecked());
 		settings:UpdateMode(1);
 	end);
