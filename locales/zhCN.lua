@@ -370,13 +370,13 @@ local L = app.L;
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
 	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF，即使该选项被禁用。|r";
+		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF。|r";
 		L.CLASS_DEFAULTS_BUTTON = "职业默认";
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
 		L.ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
 		L.CUSTOM_FILTERS_LABEL = "自动过滤";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF这些过滤是根据你当前的角色自动应用的，但可以通过勾选来覆盖，让你看到你的角色目前不能收藏的其他东西。\n在战网或调试模式下无论如何选择，这些过滤都不会被启用。|r";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF这些过滤是根据你当前的角色自动应用的，但可以通过勾选来覆盖，让你看到你的角色目前不能收藏的其他东西。\n在战网或调试模式下无论如何选择，这些过滤都不会被启用。|r";	-- |cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF.|r
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Unobtainables tab
@@ -3297,6 +3297,7 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。" },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "获得艾泽拉斯之心时，角色会永久性更改《争霸艾泽拉斯》资料片中的各种潜在的物品奖励。" },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end

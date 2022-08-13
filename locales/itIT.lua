@@ -368,13 +368,13 @@ local L = app.L;
 		--TODO: L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00Track Account-wide|R\n\nMost titles are tracked account wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- Filters tab
-		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
+		--TODO: L.ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 		--TODO: L.CLASS_DEFAULTS_BUTTON = "Class Defaults";
 		--TODO: L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
 		--TODO: L.ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
 		--TODO: L.UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
 		--TODO: L.CUSTOM_FILTERS_LABEL = "Automated";
-		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
@@ -3282,6 +3282,7 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "When receiving the Heart of Azeroth, a Character permanently alters various potential Item rewards within the BFA Expansion." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
 })
 do a[key] = value; end
