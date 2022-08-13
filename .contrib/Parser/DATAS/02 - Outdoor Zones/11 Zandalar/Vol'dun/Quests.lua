@@ -350,27 +350,22 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 55.63, 36.23, 1009 },	-- The Blood Font (Vol'dun)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155396),	-- Exiled Veteran's Helm
-								i(161158),	-- Exiled Veteran's Spaulders
-								i(155397),	-- Lastwind Hood
-								i(161161),	-- Lastwind Shoulderpads
-								i(155398),	-- Resilient Outcast's Coif
-								i(161159),	-- Resilient Outcast's Spaulders
-								i(155399),	-- Scorching Sands Mask
-								i(161160),	-- Scorching Sands Shoulderspads
-							},
-					}),
-					i(175310),	-- Exiled Veteran's Helm (no azerite version)
-					i(175346),	-- Exiled Veteran's Spaulders (no azerite version)
-					i(175311),	-- Lastwind Hood (no azerite version)
-					i(175349),	-- Lastwind Shoulderpads (no azerite version)
-					i(175312),	-- Resilient Outcast's Coif (no azerite version)
-					i(175347),	-- Resilient Outcast's Spaulders (no azerite version)
-					i(175313),	-- Scorching Sands Mask (no azerite version)
-					i(175348),	-- Scorching Sands Shoulderspads (no azerite version)
+					azeriteItem(155396),	-- Exiled Veteran's Helm
+					azeriteItem(161158),	-- Exiled Veteran's Spaulders
+					azeriteItem(155397),	-- Lastwind Hood
+					azeriteItem(161161),	-- Lastwind Shoulderpads
+					azeriteItem(155398),	-- Resilient Outcast's Coif
+					azeriteItem(161159),	-- Resilient Outcast's Spaulders
+					azeriteItem(155399),	-- Scorching Sands Mask
+					azeriteItem(161160),	-- Scorching Sands Shoulderspads
+					azewrongItem(175310),	-- Exiled Veteran's Helm (no azerite version)
+					azewrongItem(175346),	-- Exiled Veteran's Spaulders (no azerite version)
+					azewrongItem(175311),	-- Lastwind Hood (no azerite version)
+					azewrongItem(175349),	-- Lastwind Shoulderpads (no azerite version)
+					azewrongItem(175312),	-- Resilient Outcast's Coif (no azerite version)
+					azewrongItem(175347),	-- Resilient Outcast's Spaulders (no azerite version)
+					azewrongItem(175313),	-- Scorching Sands Mask (no azerite version)
+					azewrongItem(175348),	-- Scorching Sands Shoulderspads (no azerite version)
 				},
 			}),
 			q(49141, {	-- Diplomacy and Dominance
@@ -428,27 +423,22 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 52.2, 79.8, VOLDUN },	-- Valley of Sorrows
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155404),	-- Lastwind Robes
-								i(155407),	-- Lastwind Mantle
-								i(155386),	-- Resilient Outcast's Hauberk
-								i(155408),	-- Resilient Outcasat's Shoulderguards
-								i(155385),	-- Exiled Veteran's Cuirass
-								i(155406),	-- Exiled Veteran's Pauldrons
-								i(155387),	-- Scorching Sands Wraps
-								i(155405),	-- Scorching Sands Shoulderguards
-							},
-					}),
-					i(175373),	-- Lastwind Robes (no azerite item)
-					i(175340),	-- Lastwind Mantle (no azerite item)
-					i(175371),	-- Resilient Outcast's Hauberk (no azerite item)
-					i(175341),	-- Resilient Outcasat's Shoulderguards (no azerite item)
-					i(175370),	-- Exiled Veteran's Cuirass (no azerite item)
-					i(175339),	-- Exiled Veteran's Pauldrons (no azerite item)
-					i(175372),	-- Scorching Sands Wraps (no azerite item)
-					i(175338),	-- Scorching Sands Shoulderguards (no azerite item)
+					azeriteItem(155404),	-- Lastwind Robes
+					azeriteItem(155407),	-- Lastwind Mantle
+					azeriteItem(155386),	-- Resilient Outcast's Hauberk
+					azeriteItem(155408),	-- Resilient Outcasat's Shoulderguards
+					azeriteItem(155385),	-- Exiled Veteran's Cuirass
+					azeriteItem(155406),	-- Exiled Veteran's Pauldrons
+					azeriteItem(155387),	-- Scorching Sands Wraps
+					azeriteItem(155405),	-- Scorching Sands Shoulderguards
+					azewrongItem(175373),	-- Lastwind Robes (no azerite item)
+					azewrongItem(175340),	-- Lastwind Mantle (no azerite item)
+					azewrongItem(175371),	-- Resilient Outcast's Hauberk (no azerite item)
+					azewrongItem(175341),	-- Resilient Outcasat's Shoulderguards (no azerite item)
+					azewrongItem(175370),	-- Exiled Veteran's Cuirass (no azerite item)
+					azewrongItem(175339),	-- Exiled Veteran's Pauldrons (no azerite item)
+					azewrongItem(175372),	-- Scorching Sands Wraps (no azerite item)
+					azewrongItem(175338),	-- Scorching Sands Shoulderguards (no azerite item)
 				},
 			}),
 			q(51062, {	-- Escaping Zem'lan

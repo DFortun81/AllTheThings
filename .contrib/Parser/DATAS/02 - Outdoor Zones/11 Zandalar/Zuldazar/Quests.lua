@@ -1408,20 +1408,14 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["_drop"] = { "g" },
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(163863),	-- Bartered Vrykul Cowl
-							i(163864),	-- Bartered Vrykul Facemask
-							i(163862),	-- Bartered Vrykul Hood
-							i(163865),	-- Bartered Vrykul Warhelm
-						},
-					}),
-				--	azewrong
-					i(180028),	-- Bartered Vrykul Cowl
-					i(180029),	-- Bartered Vrykul Facemask
-					i(180027),	-- Bartered Vrykul Hood
-					i(180030),	-- Bartered Vrykul Warhelm
+					azeriteItem(163863),	-- Bartered Vrykul Cowl
+					azeriteItem(163864),	-- Bartered Vrykul Facemask
+					azeriteItem(163862),	-- Bartered Vrykul Hood
+					azeriteItem(163865),	-- Bartered Vrykul Warhelm
+					azewrongItem(180028),	-- Bartered Vrykul Cowl
+					azewrongItem(180029),	-- Bartered Vrykul Facemask
+					azewrongItem(180027),	-- Bartered Vrykul Hood
+					azewrongItem(180030),	-- Bartered Vrykul Warhelm
 				},
 				["maps"] = {
 					NAZMIR,
@@ -1483,28 +1477,22 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 49.6, 64.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155250),	-- Rastari Helm
-								i(155260),	-- Rastari Pauldrons
-								i(155252),	-- Torcalin Coif
-								i(155262),	-- Torcalin Spaulders
-								i(155253),	-- Jambani Hood
-								i(155259),	-- Jambani Shoulderpads
-								i(155251),	-- Zanchuli Cowl
-								i(155261),	-- Zanchuli Mantle
-							},
-					}),
-					-- NO NECK Gear
-					i(175283),	-- Rastari Helm
-					i(175287),	-- Rastari Pauldrons
-					i(175284),	-- Torcalin Coif
-					i(175289),	-- Torcalin Spaulders
-					i(175285),	-- Jambani Hood
-					i(175286),	-- Jambani Shoulderpads
-					i(175278),	-- Zanchuli Cowl
-					i(175288),	-- Zanchuli Mantle
+					azeriteItem(155250),	-- Rastari Helm
+					azeriteItem(155260),	-- Rastari Pauldrons
+					azeriteItem(155252),	-- Torcalin Coif
+					azeriteItem(155262),	-- Torcalin Spaulders
+					azeriteItem(155253),	-- Jambani Hood
+					azeriteItem(155259),	-- Jambani Shoulderpads
+					azeriteItem(155251),	-- Zanchuli Cowl
+					azeriteItem(155261),	-- Zanchuli Mantle
+					azewrongItem(175283),	-- Rastari Helm
+					azewrongItem(175287),	-- Rastari Pauldrons
+					azewrongItem(175284),	-- Torcalin Coif
+					azewrongItem(175289),	-- Torcalin Spaulders
+					azewrongItem(175285),	-- Jambani Hood
+					azewrongItem(175286),	-- Jambani Shoulderpads
+					azewrongItem(175278),	-- Zanchuli Cowl
+					azewrongItem(175288),	-- Zanchuli Mantle
 				--	i(175317),	-- Sea Raider's Helmet // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 				--	i(175319),	-- Sea Raider's Spaulders  // Alliance apperance // Sourced under Proudmoore's Parley/Alliance Quest
 				},
@@ -1838,28 +1826,22 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 43.6, 39.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155239),	-- Rastari Breastplate
-								i(161143),	-- Rastari Helmet
-								i(161141),	-- Torcalin Headguard
-								i(155240),	-- Torcalin Chainmail
-								i(161140),	-- Jambani Mask
-								i(155241),	-- Jambani Jerkin
-								i(161142),	-- Zanchuli Crest
-								i(155258),	-- Zanchuli Raiment
-							},
-					}),
-					-- NO NECK Gear
-					i(175291),	-- Torcalin Headguard
-					i(175281),	-- Torcalin Chainmail
-					i(175290),	-- Jambani Mask
-					i(175282),	-- Jambani Jerkin
-					i(175292),	-- Zanchuli Crest
-					i(175366),	-- Zanchuli Raiment
-					i(175293),	-- Rastari Helmet
-					i(175280),	-- Rastari Breastplate
+					azeriteItem(155239),	-- Rastari Breastplate
+					azeriteItem(161143),	-- Rastari Helmet
+					azeriteItem(161141),	-- Torcalin Headguard
+					azeriteItem(155240),	-- Torcalin Chainmail
+					azeriteItem(161140),	-- Jambani Mask
+					azeriteItem(155241),	-- Jambani Jerkin
+					azeriteItem(161142),	-- Zanchuli Crest
+					azeriteItem(155258),	-- Zanchuli Raiment
+					azewrongItem(175291),	-- Torcalin Headguard
+					azewrongItem(175281),	-- Torcalin Chainmail
+					azewrongItem(175290),	-- Jambani Mask
+					azewrongItem(175282),	-- Jambani Jerkin
+					azewrongItem(175292),	-- Zanchuli Crest
+					azewrongItem(175366),	-- Zanchuli Raiment
+					azewrongItem(175293),	-- Rastari Helmet
+					azewrongItem(175280),	-- Rastari Breastplate
 				--	i(175294),	-- Sea Raider's Greathelm // Alliance appearance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
 				--	i(175354),	-- Sea Raider's Breastplate // Alliance apperance // Listed under Tirisgarde Fairwind's "Friends" (Alliance Quest Reward)
 				},

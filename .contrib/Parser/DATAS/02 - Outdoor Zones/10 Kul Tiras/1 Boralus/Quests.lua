@@ -687,27 +687,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 48.2, 80.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(155034),	-- Freebooter Cowl
-							i(155022),	-- Freebooter Tunic
-							i(155039),	-- Navigator's Robes
-							i(155032),	-- Navigator's Circlet
-							i(155021),	-- Outrigger Chainmail
-							i(155033),	-- Outrigger Helm
-							i(155031),	-- Sea Raider's Greathelm
-							i(155020),	-- Sea Raider's Breastplate
-						},
-					}),
-					i(175297),	-- Freebooter Cowl (no azerite version)
-					i(175356),	-- Freebooter Tunic (no azerite version)
-					i(175357),	-- Navigator's Robes (no azerite version)
-					i(175295),	-- Navigator's Circlet (no azerite version)
-					i(175355),	-- Outrigger Chainmail (no azerite version)
-					i(175296),	-- Outrigger Helm (no azerite version)
-					i(175294),	-- Sea Raider's Greathelm (no azerite version)
-					i(175354),	-- Sea Raider's Breastplate (no azerite version)
+					azeriteItem(155034),	-- Freebooter Cowl
+					azeriteItem(155022),	-- Freebooter Tunic
+					azeriteItem(155039),	-- Navigator's Robes
+					azeriteItem(155032),	-- Navigator's Circlet
+					azeriteItem(155021),	-- Outrigger Chainmail
+					azeriteItem(155033),	-- Outrigger Helm
+					azeriteItem(155031),	-- Sea Raider's Greathelm
+					azeriteItem(155020),	-- Sea Raider's Breastplate
+					azewrongItem(175297),	-- Freebooter Cowl (no azerite version)
+					azewrongItem(175356),	-- Freebooter Tunic (no azerite version)
+					azewrongItem(175357),	-- Navigator's Robes (no azerite version)
+					azewrongItem(175295),	-- Navigator's Circlet (no azerite version)
+					azewrongItem(175355),	-- Outrigger Chainmail (no azerite version)
+					azewrongItem(175296),	-- Outrigger Helm (no azerite version)
+					azewrongItem(175294),	-- Sea Raider's Greathelm (no azerite version)
+					azewrongItem(175354),	-- Sea Raider's Breastplate (no azerite version)
 				},
 			}),
 			q(57324, {	-- Sail With the Tide

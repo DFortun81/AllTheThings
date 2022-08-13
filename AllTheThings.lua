@@ -3503,6 +3503,7 @@ ResolveSymbolicLink = function(o)
 	if o and o.sym then
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
 		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, tremove;
+		local newModID;
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
 			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
@@ -3749,23 +3750,9 @@ ResolveSymbolicLink = function(o)
 					end
 				end
 			elseif cmd == "modID" then
-				local modID = sym[2];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.itemID then
-						s.modID = modID;
-					end
-				end
+				newModID = sym[2];
 			elseif cmd == "myModID" then
-				local modID = o.modID;
-				if modID then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID then
-							s.modID = modID;
-						end
-					end
-				end
+				newModID = o.modID;
 			elseif cmd == "sub" then
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
@@ -3854,6 +3841,9 @@ ResolveSymbolicLink = function(o)
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			for _,s in ipairs(cloned) do
+				if newModID and s.itemID then
+					s.modID = newModID;
+				end
 				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
 				s.sourceParent = nil;
 				s.parent = nil;
@@ -14641,8 +14631,9 @@ local CCFuncs = {
 		local hoa = IsQuestFlaggedCompleted(51211) or false;
 		-- also store the opposite of HOA for easy checks on Azewrong gear
 		app.CurrentCharacter.CustomCollects["~HOA"] = not hoa;
-		app.ActiveCustomCollects["~HOA"] = not hoa;
-		return hoa;
+		-- for now, always assume both HoA qualifications are true so they do not filter
+		app.ActiveCustomCollects["~HOA"] = true; -- not hoa;
+		return true; -- hoa;
 	end,
 	["SL_COV_KYR"] = function()
 		return SLCovenantId == 1 or SLCovenantId == 0;
@@ -16560,8 +16551,8 @@ RowOnEnter = function (self)
 			local requires = L["REQUIRES"];
 			for i,c in ipairs(reference.customCollect) do
 				customCollectEx = L["CUSTOM_COLLECTS_REASONS"][c];
-				local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or"[MISSING_LOCALE_KEY]");
-				if not app.ActiveCustomCollects[c] then
+				local icon_color_str = (customCollectEx["icon"].." |c"..customCollectEx["color"]..customCollectEx["text"] or "[MISSING_LOCALE_KEY]");
+				if not app.CurrentCharacter.CustomCollects[c] then
 					GameTooltip:AddDoubleLine("|cffc20000" .. requires .. ":|r " .. icon_color_str, customCollectEx["desc"] or "");
 				else
 					GameTooltip:AddDoubleLine(requires .. ": " .. icon_color_str, customCollectEx["desc"] or "");

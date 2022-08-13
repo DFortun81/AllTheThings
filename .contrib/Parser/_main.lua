@@ -1688,6 +1688,16 @@ az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	end
 end
 azeriteEssence = az;									-- Create a AZERITE ESSENCE Object. (alternative shortcut)
+azeriteItem = function(id, t)							-- Create an Item which is marked as having obtained the Heart of Azeroth
+	t = i(id, t);
+	t.customCollect = { "HOA" };
+	return t;
+end
+azewrongItem = function(id, t)							-- Create an Item which is marked as having not obtained the Heart of Azeroth
+	t = i(id, t);
+	t.customCollect = { "~HOA" };
+	return t;
+end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
 end

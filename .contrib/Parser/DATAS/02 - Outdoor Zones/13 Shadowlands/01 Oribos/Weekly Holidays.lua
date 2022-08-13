@@ -115,7 +115,6 @@ root("Zones", m(SHADOWLANDS, {
 						{"is", "encounterID" },					-- Only Encounter Headers
 						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 						{"is", "itemID"},						-- Only Items!
-						-- TODO: fix this to include Anima orbs from CN... i got one
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
 				}),
@@ -131,12 +130,18 @@ root("Zones", m(SHADOWLANDS, {
 						},
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is", "encounterID" },					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
+						{"extract", "itemID"},						-- All nested Items
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						{"modID",95},	-- Fated Heroic ModID (modID might not be accurate for all )
+						{"select", "itemID"						-- Include Anima Spherules
+							-- only need 1 of each, will expand in tooltip to see possible rewards
+							,183899	-- Zenith Anima Spherule
+							,183897	-- Mystic Anima Spherule
+							,183896	-- Abominable Anima Spherule
+							,183895	-- Apogee Anima Bead
+							,183889	-- Thaumaturgic Anima Bead
+							,183891	-- Venerated Anima Spherule
+						},
+						{"modID",91},	-- Fated Heroic ModID
 					},
 				}),
 			}),
