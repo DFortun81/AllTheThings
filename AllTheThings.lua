@@ -20831,6 +20831,14 @@ customWindowUpdates["Sync"] = function(self)
 			local function OnTooltipForCharacter(t)
 				local character = ATTCharacterData[t.unit];
 				if character then
+					-- last login info
+					local login = character.lastPlayed;
+					if login then
+						local d = C_DateAndTime.GetCalendarTimeFromEpoch(login * 1e6);
+						GameTooltip:AddDoubleLine(PLAYED, sformat("%d-%02d-%02d %02d:%02d", d.year, d.month, d.monthDay, d.hour, d.minute), 0.8, 0.8, 0.8);
+					else
+						GameTooltip:AddDoubleLine(PLAYED, NEVER, 0.8, 0.8, 0.8);
+					end
 					local total = 0;
 					for i,field in ipairs({ "Achievements", "Buildings", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "Spells", "Titles", "Quests" }) do
 						local values = character[field];
