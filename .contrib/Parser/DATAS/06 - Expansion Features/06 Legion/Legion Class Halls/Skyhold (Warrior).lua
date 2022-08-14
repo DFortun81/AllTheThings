@@ -189,13 +189,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Start Legion Zone
 					q(39214, {	-- The Eye of Odyn
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							39192,	-- The Forge of Odyn
-							--#else
+							-- #ELSE
 							41105,	-- The Sword of Kings
 							40043,	-- The Hunter of Heroes
 							39191,	-- Legacy of the Icebreaker
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 100622 },	-- Danica the Reclaimer
 						["coord"] = { 59.6, 83.7, SKYHOLD },
@@ -442,11 +442,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(46173, {	-- Tactical Planning
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43425,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							45987,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },

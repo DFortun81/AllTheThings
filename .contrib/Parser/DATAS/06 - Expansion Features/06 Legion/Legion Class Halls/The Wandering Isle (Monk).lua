@@ -549,11 +549,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(45440, {	-- A Brewing Situation
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43359,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							46025,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["coord"] = { 51.4, 48.6, THE_WANDERING_ISLE },

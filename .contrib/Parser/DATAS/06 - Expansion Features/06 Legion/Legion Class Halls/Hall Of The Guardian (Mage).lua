@@ -598,11 +598,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["description"] = "Granted immediately upon return to the order hall.",
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43415,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							45998,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["timeline"] = { "added 7.2.0" },
 					}),

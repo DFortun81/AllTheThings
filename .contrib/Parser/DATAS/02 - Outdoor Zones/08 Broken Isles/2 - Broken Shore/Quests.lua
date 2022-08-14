@@ -123,11 +123,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(47137, {	-- Champions of Legionfall
 				["sourceQuests"] = {
-					--#if AFTER 9.1.5
+					-- #IF AFTER 9.1.5
 					46734,	-- Assault on Broken Shore
-					--#else
+					-- #ELSE
 					46247,	-- Defending Broken Isles
-					--#endif
+					-- #ENDIF
 				},
 				["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 				["provider"] = { "n", 116576 },	-- Maiev Shadowsong

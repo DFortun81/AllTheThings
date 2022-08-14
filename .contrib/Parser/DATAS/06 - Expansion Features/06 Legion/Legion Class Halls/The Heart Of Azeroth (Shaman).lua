@@ -195,11 +195,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Start Legion Zone
 					q(41510, {	-- Azeroth Needs You
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							40276,	-- The Maelstrom Beckons
-							--#else
+							-- #ELSE
 							40225,	-- A Ring Reforged
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 29.0, 69.1, THE_HEART_Of_AZEROTH },
@@ -548,11 +548,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(45652, {	-- A "Humble" Request
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43418,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							--,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },

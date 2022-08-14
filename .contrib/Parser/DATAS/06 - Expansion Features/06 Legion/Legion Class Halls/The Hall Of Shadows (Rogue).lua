@@ -256,11 +256,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Start Legion Zone
 					q(40996, {	-- Delegation
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							40995,	-- Injection of Power
-							--#else
+							-- #ELSE
 							40950,	-- Honoring Success
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },

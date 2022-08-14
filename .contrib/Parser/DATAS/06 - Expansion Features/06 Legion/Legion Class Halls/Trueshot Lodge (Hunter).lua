@@ -254,11 +254,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					-- Choose Legion Zone
 					q(40958, {	-- Tactical Matters
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							41047,	-- Infused with Power
-							--#else
+							-- #ELSE
 							40955,	-- Oath of Service
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
@@ -641,11 +641,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					-- 7.2.0
 					q(45551, {	-- Devastating Effects
 						["sourceQuests"] = {
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43423,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							46023,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 							47137,	-- Champions of Legionfall
 						},
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon

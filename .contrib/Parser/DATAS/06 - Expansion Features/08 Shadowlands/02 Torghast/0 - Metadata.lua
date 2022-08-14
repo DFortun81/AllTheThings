@@ -8,7 +8,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 		["icon"] = 3642306,
 		["maps"] = {
 			-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
-			--#if AFTER 9.1.0
+			-- #IF AFTER 9.1.0
 			1962,	-- Adamant Vaults
 			1963,	-- Adamant Vaults - Floor 6
 			1964,	-- Adamant Vaults - Floor 6
@@ -29,7 +29,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 			1987,	-- Mort'regar - Layer 10, Floor 1
 			1981,	-- Soulforges - Layer 12, Some floor
 			1986,	-- Uknown floor(Probably Mort-regar)
-			--#endif
+			-- #ENDIF
 			--
 			1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 			--
