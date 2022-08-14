@@ -22834,10 +22834,11 @@ app.Startup = function()
 	-- 1 = unknown, 2 = male, 3 = female
 	app.Gender = UnitSex("player");
 	local name, realm = UnitName("player");
+	realm = realm or GetRealmName();
 	local className = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
-	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
+	app.Me = "|c"..RAID_CLASS_COLORS[class].colorStr..name.."-"..realm.."|r";
+	app.ClassName = "|c"..RAID_CLASS_COLORS[class].colorStr..className.."|r";
 	app.ActiveCustomCollects = {};
 
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
@@ -23115,6 +23116,35 @@ app.InitDataCoroutine = function()
 	local accountWideData = LocalizeGlobal("ATTAccountWideData");
 	local characterData = LocalizeGlobal("ATTCharacterData");
 	local currentCharacter = characterData[app.GUID];
+
+	-- Clean up other matching Characters with identical Name-Realm but differing GUID
+	-- TODO: comment in at a later point to clean up duplicated character data when verified working as expected
+	-- Callback(function()
+	-- 	local myGUID = app.GUID;
+	-- 	local myName, myRealm = currentCharacter.name, currentCharacter.realm;
+	-- 	local otherName, otherRealm;
+	-- 	local toClean;
+	-- 	for guid,character in pairs(characterData) do
+	-- 		-- simple check on name/realm first
+	-- 		otherName = character.name;
+	-- 		otherRealm = character.realm;
+	-- 		if guid ~= myGUID then
+	-- 			if otherName == myName and otherRealm == myRealm then
+	-- 				if toClean then tinsert(toClean, guid)
+	-- 				else toClean = { guid }; end
+	-- 			elseif character.text:match(myName.."-"..myRealm) then
+	-- 				if toClean then tinsert(toClean, guid)
+	-- 				else toClean = { guid }; end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- 	if toClean then
+	-- 		for _,guid in ipairs(toClean) do
+	-- 			-- characterData[guid] = nil;
+	-- 			-- app.print("Removed non-existent duplicate character:",guid)
+	-- 		end
+	-- 	end
+	-- end);
 
 	-- Harvest the Spell IDs for Conversion.
 	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
