@@ -2374,7 +2374,7 @@ for key,value in pairs({
 	[277205] = "고대 군단 전쟁 보관함",	-- Ancient Legion War Cache
 	[277206] = "지옥결속 상자",	-- Fel-Bound Chest
 	--TODO: [277207] = "Legion Treasure Hoard",	-- Legion Treasure Hoard
-	--TODO: [277208] = "Timeworn Fel Chest",	-- Timeworn Fel Chest
+	[277208] = "시간에 바랜 지옥 상자",	-- Timeworn Fel Chest
 	--TODO: [277327] = "Augari-Runed Chest",	-- Augari-Runed Chest
 	[277333] = "고대 석관",	-- Ancient Sarcophagus
 	[277336] = "보물 상자",	-- Treasure Chest
