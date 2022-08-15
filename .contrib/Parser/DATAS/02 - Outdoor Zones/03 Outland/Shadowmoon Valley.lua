@@ -653,7 +653,12 @@ root("Zones", {
 					}),
 					q(10634, {	-- Divination: Gorefiend's Armor
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -665,7 +670,12 @@ root("Zones", {
 					}),
 					q(10635, {	-- Divination: Gorefiend's Cloak
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -677,7 +687,12 @@ root("Zones", {
 					}),
 					q(10636, {	-- Divination: Gorefiend's Truncheon
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
