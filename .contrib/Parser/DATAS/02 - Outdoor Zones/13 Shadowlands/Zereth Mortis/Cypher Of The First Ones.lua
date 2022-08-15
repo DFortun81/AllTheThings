@@ -64,10 +64,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "n", 181397 },	-- Cypher Console
 					["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 				}),
-				--
 				q(65700, {	-- Core Control
 					["description"] = "Requires Dealic Understanding.",
-					["sourceQuests"] = { 65433 },	-- Further Research: Trebalim
+					["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				}),

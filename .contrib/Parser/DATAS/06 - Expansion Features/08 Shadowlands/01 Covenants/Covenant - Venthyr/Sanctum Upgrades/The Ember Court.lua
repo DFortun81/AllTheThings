@@ -2401,6 +2401,7 @@ root("HiddenQuestTriggers", {
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
+			q(61533),	-- Looting Decree: The Countess's Favor
 			q(61535),	-- Triggered after ending Ember Court early and looting Mikanikos' Tribute
 
 	-- Misc
