@@ -1270,14 +1270,14 @@ root("Craftables", tier(CLASSIC_TIER, {
 	prof(INSCRIPTION, {
 		-- #if BEFORE WOD
 		spell(61288, {	-- Minor Inscription Research
-		-- Midnight
-		r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-		r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-		-- Lion
-		r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
-		-- Jadefire
-		r(58319, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Levitate
-		-- Celestial
+			-- Midnight
+			r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
+			r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
+			-- Lion
+			r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
+			-- Jadefire
+			r(58319, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Levitate
+			-- Celestial
 		}),
 		-- #else
 		spell(165461, {	-- Research: Celestial Ink
