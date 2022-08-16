@@ -383,6 +383,7 @@ profession(HERBALISM, {
 				["sourceQuests"] = { 40038 },	-- Insane Ramblings
 				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["coord"] = { 42.9, 33.8, LEGION_DALARAN },
+				["cost"] = { { "i", 129158, 20 } },	-- Starlight Rosedust
 				["g"] = {
 					recipe(193306),	-- Starlight Rose [Rank 3]
 				},
