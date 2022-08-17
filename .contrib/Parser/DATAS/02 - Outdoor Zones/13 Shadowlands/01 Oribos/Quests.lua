@@ -285,6 +285,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.5, ORIBOS },
 			}),
+			q(66661, {	-- It's Just a Coin, What Could it Cost?
+				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
+				["sourceQuest"] = 66648,	-- Crossing Fate
+			}),
 			q(60338, {	-- Journey to Ardenweald
 				["sourceQuests"] = { 61715 },	-- Request of the Highlord
 				["provider"] = { "n", 159478 },	-- Tal-Inara

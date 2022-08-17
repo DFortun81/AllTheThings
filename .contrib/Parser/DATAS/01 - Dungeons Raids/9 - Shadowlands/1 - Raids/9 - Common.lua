@@ -182,5 +182,73 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				}),
 			},
 		}),
+		q(66649, {	-- Turning the Wheel
+			["sourceQuest"] = 66648,	-- Crossing Fate
+			["maps"] = {
+				-- Castle Nathria
+				1735,	-- The Grand Walk
+				1744,	-- The Purloined Stores
+				1745,	-- Halls of the Faithful
+				1746,	-- Pride's Prison
+				1747,	-- Nightcloak Sanctum
+				1748,	-- The Observatorium
+				1750,	-- Feast of Arrogance
+				-- Sanctum of Domination
+				1998,	-- Tower of the Damned
+				1999,	-- Shadowsteel Foundry
+				2000,	-- The Torment Chambers
+				2001,	-- Crown of Gorgoa
+				2002,	-- Pinnacle of Domination
+				2003,	-- ??
+				2004,	-- The Crucible
+				-- Sepulcher of the First Ones
+				2047,	-- Immortal Hearth
+				2048,	-- Genesis Cradle
+				2049,	-- The Endless Foundry
+				2050,	-- Domination's Grasp
+				2051,	-- Heart of Eternity
+				2052,	-- The Grand Design
+				2061,	-- Ephemeral Plains
+			},
+			["g"] = {
+				i(192466, {	-- Puzzling Cartel Dinar
+					["bonusID"] = 3407,	-- "Priceless"
+				}),
+			},
+		}),
+		q(66650, {	-- Fate's Finale
+			["sourceQuest"] = 66649,	-- Turning the Wheel
+			["maps"] = {
+				-- Castle Nathria
+				1735,	-- The Grand Walk
+				1744,	-- The Purloined Stores
+				1745,	-- Halls of the Faithful
+				1746,	-- Pride's Prison
+				1747,	-- Nightcloak Sanctum
+				1748,	-- The Observatorium
+				1750,	-- Feast of Arrogance
+				-- Sanctum of Domination
+				1998,	-- Tower of the Damned
+				1999,	-- Shadowsteel Foundry
+				2000,	-- The Torment Chambers
+				2001,	-- Crown of Gorgoa
+				2002,	-- Pinnacle of Domination
+				2003,	-- ??
+				2004,	-- The Crucible
+				-- Sepulcher of the First Ones
+				2047,	-- Immortal Hearth
+				2048,	-- Genesis Cradle
+				2049,	-- The Endless Foundry
+				2050,	-- Domination's Grasp
+				2051,	-- Heart of Eternity
+				2052,	-- The Grand Design
+				2061,	-- Ephemeral Plains
+			},
+			["g"] = {
+				i(192466, {	-- Puzzling Cartel Dinar
+					["bonusID"] = 3407,	-- "Priceless"
+				}),
+			},
+		}),
 	})),
 }));

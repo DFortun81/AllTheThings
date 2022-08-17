@@ -6186,9 +6186,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.2.5.43057
 				-- 9.2.5.43254
 				-- 9.2.5.43412
-				q(66649),	--
-				q(66650),	--
-				q(66661),	-- It's Just a Coin, What Could it Cost?
 				-- 9.2.5.43519
 				q(66696),	-- Tempting Fate: Fate of the Shadowlands
 				-- 9.2.5.43630
