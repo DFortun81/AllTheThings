@@ -1930,6 +1930,7 @@ namespace ATT
                     case "_items":
                     case "_npcs":
                     case "_objects":
+                    case "_encounter":
                         if (value is List<object> idList)
                         {
                             item[field] = idList;

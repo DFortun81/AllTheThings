@@ -225,6 +225,16 @@ namespace ATT
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
 
         /// <summary>
+        /// Represents the group which set the NestedDifficultyID
+        /// </summary>
+        private static object DifficultyRoot { get; set; }
+
+        /// <summary>
+        /// Represents the nested DifficultyID currently being processed
+        /// </summary>
+        private static long NestedDifficultyID { get; set; }
+
+        /// <summary>
         /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
         /// </summary>
         private static readonly string[] HeirarchicalConsolidationFields = new string[]
@@ -407,6 +417,7 @@ namespace ATT
                 var previousParent = CurrentParentGroup;
                 if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
+                var previousDifficultyRoot = DifficultyRoot;
 
                 Process(groups, modID, minLevel);
 
@@ -415,6 +426,7 @@ namespace ATT
                     ConsolidateHeirarchicalFields(data, groups);
 
                 CurrentParentGroup = previousParent;
+                DifficultyRoot = previousDifficultyRoot;
             }
 
             if (!MergeItemData)
@@ -641,8 +653,7 @@ namespace ATT
                         {
                             quest_qgs.Add(providerItems[1]);
                             providers.RemoveAt(p);
-                            if (DebugMode)
-                                Trace.WriteLine($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
+                            LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
                         }
                     }
 
@@ -708,10 +719,26 @@ namespace ATT
                 data.Remove("_objects");
                 cloned = true;
             }
+            if (data.TryGetValue("_encounter", out object encounterData))
+            {
+                var encounterListData = Objects.CompressToList(encounterData);
+                decimal encounterHash = Convert.ToDecimal(encounterListData[0])
+                    + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
+                DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
+                data.Remove("_encounter");
+                cloned = true;
+            }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
+
+            // Track the hierarchy of difficultyID
+            if (data.TryGetValue("difficultyID", out long d))
+            {
+                DifficultyRoot = data;
+                NestedDifficultyID = d;
+            }
 
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
@@ -751,6 +778,10 @@ namespace ATT
             if (data.TryGetValue("s", out f))
             {
                 if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION) data.Remove("s");
+            }
+            if (data.TryGetValue("encounterID", out f))
+            {
+                data["_encounterHash"] = f + NestedDifficultyID / 100M;
             }
 
             minLevel = LevelConsolidation(data, minLevel);
@@ -2667,6 +2698,7 @@ namespace ATT
                 case "_npcs":
                 case "_quests":
                 case "_objects":
+                case "_encounter":
                 case "_text":
                 case "_type":
 
