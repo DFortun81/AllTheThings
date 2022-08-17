@@ -9,6 +9,30 @@ root("Instances", tier(LEGION_TIER, {
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(11394, {	-- Trial of Valor
+					crit(1, { -- Odyn
+						["_encounter"] = { 1819, 17 },
+					}),
+					crit(2, { -- Guarm
+						["_encounter"] = { 1830, 17 },
+					}),
+					crit(3, { -- Helya
+						["_encounter"] = { 1829, 17 },
+					}),
+				}),
+				ach(11426, {	-- Heroic: Trial of Valor
+					crit(1, { -- Odyn
+						["_encounter"] = { 1819, 15 },
+					}),
+					crit(2, { -- Guarm
+						["_encounter"] = { 1830, 15 },
+					}),
+					crit(3, { -- Helya
+						["_encounter"] = { 1829, 15 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(44868, {	-- Trial of Valor: Odyn's Judgment
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
@@ -163,7 +187,6 @@ root("Instances", tier(LEGION_TIER, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(114263, e(1819, {	-- Odyn
-							ach(11394, crit(1)),	-- Trial of Valor / Odyn
 							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
 							i(142540),	-- Mantle of the Victorious Dead
@@ -182,7 +205,6 @@ root("Instances", tier(LEGION_TIER, {
 							i(142511),	-- Unforged Titansteel
 						})),
 						cr(114323, e(1830, {	-- Guarm
-							ach(11394, crit(2)),	-- Trial of Valor / Guarm
 							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 							i(142412),	-- Windwhipped Sailcloth
@@ -200,7 +222,6 @@ root("Instances", tier(LEGION_TIER, {
 							i(142516),	-- Sizzling Fang
 						})),
 						cr(114537, e(1829, {	-- Helya
-							ach(11394, crit(3)),	-- Trial of Valor / Helya
 							i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 							i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
 							i(142428),	-- Sea Fan Pendant
@@ -228,7 +249,6 @@ root("Instances", tier(LEGION_TIER, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
@@ -253,7 +273,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
@@ -273,7 +292,6 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
@@ -296,12 +314,6 @@ root("Instances", tier(LEGION_TIER, {
 				}))
 			}),
 			d(15,  {	-- Heroic
-				ach(11426, {	-- Heroic: Trial of Valor
-					-- TODO: _encounters support maybe
-					crit(1),		-- Odyn
-					crit(2),		-- Guarm
-					crit(3),		-- Helya
-				}),
 				n(ZONE_DROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -372,8 +384,6 @@ root("Instances", tier(LEGION_TIER, {
 					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
-					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
@@ -398,8 +408,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
-						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
@@ -422,8 +430,6 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
-					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
@@ -450,8 +456,6 @@ root("Instances", tier(LEGION_TIER, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
-					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11396),	-- Mythic: Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
@@ -477,8 +481,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
-						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11397),	-- Mythic: Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
@@ -505,8 +507,6 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11580, {	-- Cutting Edge: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
-					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11398),	-- Mythic: Helya
 					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya

@@ -124,15 +124,6 @@ _.Instances = { tier(MOP_TIER, {
 							61444,	-- Ming the Cunning
 						},
 						["g"] = {
-							-- TODO: use _encounters once supported
-							crit(4, {	-- Trial of the King
-								["achievementID"] = 6715,	-- Polyformic Acid Science
-								["cost"] = {
-									{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
-									{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
-									{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
-								},
-							}),
 							i(144020),	-- Crest of the Clan Lords
 							i(144021),	-- Meteoric Greathelm
 							i(144144),	-- Whirling Dervish Choker

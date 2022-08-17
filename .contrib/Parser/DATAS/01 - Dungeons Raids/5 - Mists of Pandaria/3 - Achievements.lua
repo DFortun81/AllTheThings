@@ -11,25 +11,24 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 				{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
 			},
 		},{
-			-- TODO: add support for _encounters with modID/difficultyID
-			-- crit(1, {	-- Commander Ri'mok
-			-- 	["_npcs"] = { 56636 },
-			-- }),
-			-- crit(2, {	-- Liu Flameheart
-			-- 	["_npcs"] = { 56732 },
-			-- }),
-			-- crit(3, {	-- Gu Cloudstrike
-			-- 	["_npcs"] = { 56747 },
-			-- }),
-			-- crit(4, {	-- Trial of the King
-			-- 	["_npc"] = { 61444 },	-- Ming the Cunning
-			-- }),
-			-- crit(5, {	-- Vizier Jin'bak
-			-- 	["_npcs"] = { 61567 },
-			-- }),
-			-- crit(6, {	-- Yan-Zhu the Uncasked
-			-- 	["_npcs"] = { 59479 },
-			-- }),
+			crit(1, {	-- Commander Ri'mok
+				["_encounter"] = { 676, 2 },
+			}),
+			crit(2, {	-- Liu Flameheart
+				["_encounter"] = { 658, 2 },
+			}),
+			crit(3, {	-- Gu Cloudstrike
+				["_encounter"] = { 673, 2 },
+			}),
+			crit(4, {	-- Trial of the King
+				["_encounter"] = { 708, 2 },
+			}),
+			crit(5, {	-- Vizier Jin'bak
+				["_encounter"] = { 693, 2 },
+			}),
+			crit(6, {	-- Yan-Zhu the Uncasked
+				["_encounter"] = { 670, 2 },
+			}),
 		})),
 	}),
 }));

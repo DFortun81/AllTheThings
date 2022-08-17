@@ -83,14 +83,6 @@ _.Instances = { tier(MOP_TIER, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(61567, e(693, {	-- Vizier Jin'bak
-						crit(5, {	-- Vizier Jin'bak
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["cost"] = {
-								{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
-								{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
-								{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
-							},
-						}),
 						i(144022),	-- Hood of Viridian Residue
 						i(144162),	-- Engraved Amber Pendant
 						i(144163),	-- Girdle of Soothing Detonation

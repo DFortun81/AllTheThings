@@ -97,14 +97,6 @@ _.Instances = { tier(MOP_TIER, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(56747, e(673, {	-- Gu Cloudstrike
-						crit(3, {	-- Gu Cloudstrike
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["cost"] = {
-								{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
-								{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
-								{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
-							},
-						}),
 						i(144127),	-- Cloudstrike Pendant
 						i(143961),	-- Azure Serpent Chestguard
 						i(144126),	-- Star Summoner Bracers
