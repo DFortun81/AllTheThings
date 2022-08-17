@@ -12,84 +12,84 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(3917, {	-- Call of the Crusade (10 player)
-					-- crit(1, {	-- Northrend Beasts
-					-- 	["_encounter"] = { 1618, 3 },
-					-- }),
-					-- crit(2, {	-- Lord Jaraxxus
-					-- 	["_encounter"] = { 1619, 3 },
-					-- }),
-					-- crit(3, {	-- Champions of the Alliance
-					-- 	["_encounter"] = { 1620, 3 },
-					-- }),
-					-- crit(3, {	-- Champions of the Horde
-					-- 	["_encounter"] = { 1621, 3 },
-					-- }),
-					-- crit(4, {	-- Twin Val'kyr
-					-- 	["_encounter"] = { 1622, 3 },
-					-- }),
-					-- crit(5, {	-- Anub'arak
-					-- 	["_encounter"] = { 1623, 3 },
-					-- }),
+					crit(1, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 3 },
+					}),
+					crit(2, {	-- Lord Jaraxxus
+						["_encounter"] = { 1619, 3 },
+					}),
+					crit(3, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 3 },
+					}),
+					crit(3, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 3 },
+					}),
+					crit(4, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 3 },
+					}),
+					crit(5, {	-- Anub'arak
+						["_encounter"] = { 1623, 3 },
+					}),
 				}),
 				ach(3918, {	-- Call of the Grand Crusade (10 player)
-					-- crit(1, {	-- Northrend Beasts
-					-- 	["_encounter"] = { 1618, 5 },
-					-- }),
-					-- crit(2, {	-- Lord Jaraxxus
-					-- 	["_encounter"] = { 1619, 5 },
-					-- }),
-					-- crit(3, {	-- Champions of the Alliance
-					-- 	["_encounter"] = { 1620, 5 },
-					-- }),
-					-- crit(3, {	-- Champions of the Horde
-					-- 	["_encounter"] = { 1621, 5 },
-					-- }),
-					-- crit(4, {	-- Twin Val'kyr
-					-- 	["_encounter"] = { 1622, 5 },
-					-- }),
-					-- crit(5, {	-- Anub'arak
-					-- 	["_encounter"] = { 1623, 5 },
-					-- }),
+					crit(1, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 5 },
+					}),
+					crit(2, {	-- Lord Jaraxxus
+						["_encounter"] = { 1619, 5 },
+					}),
+					crit(3, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 5 },
+					}),
+					crit(3, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 5 },
+					}),
+					crit(4, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 5 },
+					}),
+					crit(5, {	-- Anub'arak
+						["_encounter"] = { 1623, 5 },
+					}),
 				}),
 				ach(3916, {	-- Call of the Crusade (25 player)
-					-- crit(1, {	-- Northrend Beasts
-					-- 	["_encounter"] = { 1618, 4 },
-					-- }),
-					-- crit(2, {	-- Lord Jaraxxus
-					-- 	["_encounter"] = { 1619, 4 },
-					-- }),
-					-- crit(3, {	-- Champions of the Alliance
-					-- 	["_encounter"] = { 1620, 4 },
-					-- }),
-					-- crit(3, {	-- Champions of the Horde
-					-- 	["_encounter"] = { 1621, 4 },
-					-- }),
-					-- crit(4, {	-- Twin Val'kyr
-					-- 	["_encounter"] = { 1622, 4 },
-					-- }),
-					-- crit(5, {	-- Anub'arak
-					-- 	["_encounter"] = { 1623, 4 },
-					-- }),
+					crit(1, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 4 },
+					}),
+					crit(2, {	-- Lord Jaraxxus
+						["_encounter"] = { 1619, 4 },
+					}),
+					crit(3, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 4 },
+					}),
+					crit(3, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 4 },
+					}),
+					crit(4, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 4 },
+					}),
+					crit(5, {	-- Anub'arak
+						["_encounter"] = { 1623, 4 },
+					}),
 				}),
 				ach(3812, {	-- Call of the Grand Crusade (25 player)
-					-- crit(1, {	-- Northrend Beasts
-					-- 	["_encounter"] = { 1618, 6 },
-					-- }),
-					-- crit(2, {	-- Lord Jaraxxus
-					-- 	["_encounter"] = { 1619, 6 },
-					-- }),
-					-- crit(3, {	-- Champions of the Alliance
-					-- 	["_encounter"] = { 1620, 6 },
-					-- }),
-					-- crit(3, {	-- Champions of the Horde
-					-- 	["_encounter"] = { 1621, 6 },
-					-- }),
-					-- crit(4, {	-- Twin Val'kyr
-					-- 	["_encounter"] = { 1622, 6 },
-					-- }),
-					-- crit(5, {	-- Anub'arak
-					-- 	["_encounter"] = { 1623, 6 },
-					-- }),
+					crit(1, {	-- Northrend Beasts
+						["_encounter"] = { 1618, 6 },
+					}),
+					crit(2, {	-- Lord Jaraxxus
+						["_encounter"] = { 1619, 6 },
+					}),
+					crit(3, {	-- Champions of the Alliance
+						["_encounter"] = { 1620, 6 },
+					}),
+					crit(3, {	-- Champions of the Horde
+						["_encounter"] = { 1621, 6 },
+					}),
+					crit(4, {	-- Twin Val'kyr
+						["_encounter"] = { 1622, 6 },
+					}),
+					crit(5, {	-- Anub'arak
+						["_encounter"] = { 1623, 6 },
+					}),
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -204,10 +204,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
-						},
 						ach(3936),		-- Not One, But Two Jormungars (10 player)
 						ach(3797),		-- Upper Back Pain (10 player)
 						i(142083),		-- Giant Worm Egg (PET!)
@@ -241,10 +237,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
-						},
 						ach(3996),		-- Three Sixty Pain Spike (10 player)
 						a(i(47676)),	-- Dirk of the Night Watch
 						h(i(47871)),	-- Orcish Deathblade
@@ -293,10 +285,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34465,	-- Velanaa
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47874),	-- Sunreaver Disciple's Blade
 						i(47876),	-- Sunreaver Champion's Faceplate
@@ -329,10 +317,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34441,	-- Vivienne Blackwhisper
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47724),	-- Blade of the Silver Disciple
 						i(47717),	-- Faceplate of the Silver Champion
@@ -352,10 +336,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
-						},
 						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(47884)),	-- Edge of Agony
 						a(i(47743)),	-- Enlightenment
@@ -388,10 +368,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
-							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
-						},
 						ach(3800),		-- The Traitor King (10 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						h(i(47911)),	-- Anguish
@@ -485,10 +461,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
-						},
 						ach(3936),		-- Not One, But Two Jormungars (10 player)
 						ach(3797),		-- Upper Back Pain (10 player)
 						i(142083),		-- Giant Worm Egg (PET!)
@@ -522,10 +494,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
-						},
 						ach(3996),		-- Three Sixty Pain Spike (10 player)
 						a(i(47938)),	-- Dirk of the Night Watch
 						h(i(48010)),	-- Orcish Deathblade
@@ -574,10 +542,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34465,	-- Velanaa
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(48013),	-- Sunreaver Disciple's Blade
 						i(48015),	-- Sunreaver Champion's Faceplate
@@ -610,10 +574,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34441,	-- Vivienne Blackwhisper
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47941),	-- Blade of the Silver Disciple
 						i(47943),	-- Faceplate of the Silver Champion
@@ -633,10 +593,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
-						},
 						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(48023)),	-- Edge of Agony
 						a(i(47960)),	-- Enlightenment
@@ -669,10 +625,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
-							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
-						},
 						ach(3800),		-- The Traitor King (10 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						h(i(48056)),	-- Anguish
@@ -767,10 +719,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
-						},
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
 						i(142083),		-- Giant Worm Egg (PET!)
@@ -810,10 +758,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
-						},
 						ach(3997),		-- Three Sixty Pain Spike (25 player)
 						h(i(47266)),	-- Blood Fury
 						a(i(46996)),	-- Lionhead Slasher
@@ -866,10 +810,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34465,	-- Velanaa
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
 						i(47291),	-- Shroud of Displacement
@@ -906,10 +846,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34441,	-- Vivienne Blackwhisper
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity
 						i(47089),	-- Cloak of Displacement
@@ -933,10 +869,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
-						},
 						ach(3815),		-- Salt and Pepper (25 player)
 						a(i(47114)),	-- Lupine Longstaff
 						h(i(47302)),	-- Twin's Pact
@@ -973,10 +905,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
-							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
-						},
 						ach(3816),		-- The Traitor King (25 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						a(i(47233)),	-- Archon Glaive
@@ -1075,10 +1003,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
-						},
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
 						i(142083),		-- Giant Worm Egg (PET!)
@@ -1118,10 +1042,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
-						},
 						ach(3997),		-- Three Sixty Pain Spike (25 player)
 						h(i(47427)),	-- Blood Fury
 						a(i(47001)),	-- Lionhead Slasher
@@ -1174,10 +1094,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34465,	-- Velanaa
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						i(47446),	-- Dual-Blade Butcher
 						i(47448),	-- Bastion of Resolve
 						i(47452),	-- Shroud of Displacement
@@ -1214,10 +1130,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34441,	-- Vivienne Blackwhisper
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,			-- Defeat the Faction Champions
-						},
 						i(47078),	-- Justicebringer
 						i(47085),	-- Bastion of Purity
 						i(47095),	-- Cloak of Displacement
@@ -1241,10 +1153,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34497,	-- Fjola Lightbane
 					},
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
-						},
 						ach(3815),		-- Salt and Pepper (25 player)
 						h(i(47463)),	-- Twin's Pact
 						a(i(47130)),	-- Lupine Longstaff
@@ -1281,10 +1189,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
-							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
-						},
 						ach(3816),		-- The Traitor King (25 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						a(i(47239)),	-- Archon Glaive

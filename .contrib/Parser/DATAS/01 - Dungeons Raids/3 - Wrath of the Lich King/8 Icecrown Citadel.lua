@@ -2614,25 +2614,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 			d(3,  {	-- 10-Player (Normal)
 				n(-393, {	-- Storming the Citadel
 					ach(4531, {	-- Storming the Citadel (10 player)
-						-- crit(1, {	-- Lord Marrowgar
-						-- 	["_encounter"] = { 1624, 3 },
-						-- }),
-						-- crit(2, {	-- Lady Deathwhisper
-						-- 	["_encounter"] = { 1625, 3 },
-						-- }),
-						-- crit(3, {	-- Icecrown Gunship Battle
-						-- 	["_encounter"] = { 1626, 3 },
-						-- }),
-						-- crit(4, {	-- Deathbringer Saurfang
-						-- 	["_encounter"] = { 1628, 3 },
-						-- }),
+						crit(1, {	-- Lord Marrowgar
+							["_encounter"] = { 1624, 3 },
+						}),
+						crit(2, {	-- Lady Deathwhisper
+							["_encounter"] = { 1625, 3 },
+						}),
+						crit(3, {	-- Icecrown Gunship Battle
+							["_encounter"] = { 1626, 3 },
+						}),
+						crit(4, {	-- Deathbringer Saurfang
+							["_encounter"] = { 1628, 3 },
+						}),
 					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
-							crit(1, {	-- Lord Marrowgar
-								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-							}),
 							ach(4534),	-- Boned (10 player)
 							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i(50761),	-- Citadel Enforcer's Claymore
@@ -2652,9 +2649,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
-							crit(2, {	-- Lady Deathwhisper
-								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-							}),
 							ach(4535),	-- Full House (10 player)
 							i(50776),	-- Njordar Bone Bow
 							i(50781),	-- Scourgelord's Baton
@@ -2676,9 +2670,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							36948,	-- Muradin Bronzebeard
 						},
 						["groups"] = {
-							crit(3, {	-- Claim victory in the Gunship Battle
-								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-							}),
 							ach(4536),	-- I'm on a Boat (10 player)
 							i(50787),	-- Frost Giant's Cleaver
 							i(50793),	-- Midnight Sun
@@ -2697,9 +2688,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
-							crit(4, {	-- The Deathbringer
-								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-							}),
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50805),	-- Mag'hari Chieftain's Staff
@@ -2729,15 +2717,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-394, {	-- The Plagueworks
 					ach(4528, {	-- The Plagueworks (10 player)
-						-- crit(1, {	-- Festergut
-						-- 	-- ["_encounter"] = { 1629, 3 },
-						-- }),
-						-- crit(2, {	-- Rotface
-						-- 	-- ["_encounter"] = { 1630, 3 },
-						-- }),
-						-- crit(3, {	-- Professor Putricide
-						-- 	-- ["_encounter"] = { 1631, 3 },
-						-- }),
+						crit(1, {	-- Festergut
+							["_encounter"] = { 1629, 3 },
+						}),
+						crit(2, {	-- Rotface
+							["_encounter"] = { 1630, 3 },
+						}),
+						crit(3, {	-- Professor Putricide
+							["_encounter"] = { 1631, 3 },
+						}),
 					}),
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
@@ -2745,9 +2733,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
-							crit(1, {	-- Festergut
-								["achievementID"] = 4528,	-- The Plagueworks (10 player)
-							}),
 							ach(4577),	-- Flu Shot Shortage (10 player)
 							i(50966),	-- Abracadaver
 							i(50810),	-- Gutbuster
@@ -2766,9 +2751,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
-							crit(2, {	-- Rotface
-								["achievementID"] = 4528,	-- The Plagueworks (10 player)
-							}),
 							ach(4538),	-- Dances with Oozes (10 player)
 							i(50998),	-- Shaft of Glacial Ice
 							i(51003),	-- Abomination Knuckles
@@ -2786,9 +2768,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
-							crit(3, {	-- Professor Putricide
-								["achievementID"] = 4528,	-- The Plagueworks (10 player)
-							}),
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(51011),	-- Flesh-Carving Scalpel
@@ -2808,12 +2787,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-395, {	-- The Crimson Hall
 					ach(4529, {	-- The Crimson Hall (10 player)
-						-- crit(1, {	-- Blood Prince Council
-						-- 	["_encounter"] = { 1632, 3 },
-						-- }),
-						-- crit(2, {	-- Blood-Queen Lana'thel
-						-- 	["_encounter"] = { 1633, 3 },
-						-- }),
+						crit(1, {	-- Blood Prince Council
+							["_encounter"] = { 1632, 3 },
+						}),
+						crit(2, {	-- Blood-Queen Lana'thel
+							["_encounter"] = { 1633, 3 },
+						}),
 					}),
 					e(1632,  {	-- Blood Prince Council
 						["crs"] = {
@@ -2822,9 +2801,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							37970,	-- Prince Valanar
 						},
 						["groups"] = {
-							crit(1, {	-- Defeat the Blood Prince Council
-								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
-							}),
 							ach(4582),	-- The Orb Whisperer (10 player)
 							i(51022),	-- Hersir's Greatspear
 							i(51021),	-- Soulbreaker
@@ -2843,9 +2819,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
-							crit(2, {	-- Defeat Blood-Queen Lana'thel
-								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
-							}),
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
 								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
@@ -2867,19 +2840,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-396, {	-- The Frostwing Halls
 					ach(4527, {	-- The Frostwing Halls (10 player)
-						-- crit(1, {	-- Valithria Dreamwalker
-						-- 	["_encounter"] = { 1634, 3 },
-						-- }),
-						-- crit(2, {	-- Sindragosa
-						-- 	["_encounter"] = { 1635, 3 },
-						-- }),
+						crit(1, {	-- Valithria Dreamwalker
+							["_encounter"] = { 1634, 3 },
+						}),
+						crit(2, {	-- Sindragosa
+							["_encounter"] = { 1635, 3 },
+						}),
 					}),
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
-							crit(1, {	-- Rescue Valithria Dreamwalker
-								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
-							}),
 							ach(4579),	-- Portal Jockey (10 player)
 							i(51562),	-- Oxheart
 							i(51582),	-- Sister Svalna's Aether Staff
@@ -2898,9 +2868,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
-							crit(2, {	-- Sindragosa
-								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
-							}),
 							ach(4580),	-- All You Can Eat (10 player)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(51788),	-- Bleak Coldarra Carver
@@ -2968,25 +2935,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
-						-- crit(1, {	-- Lord Marrowgar
-						-- 	["_encounter"] = { 1624, 5 },
-						-- }),
-						-- crit(2, {	-- Lady Deathwhisper
-						-- 	["_encounter"] = { 1625, 5 },
-						-- }),
-						-- crit(3, {	-- Icecrown Gunship Battle
-						-- 	["_encounter"] = { 1626, 5 },
-						-- }),
-						-- crit(4, {	-- Deathbringer Saurfang
-						-- 	["_encounter"] = { 1628, 5 },
-						-- }),
+						crit(1, {	-- Lord Marrowgar
+							["_encounter"] = { 1624, 5 },
+						}),
+						crit(2, {	-- Lady Deathwhisper
+							["_encounter"] = { 1625, 5 },
+						}),
+						crit(3, {	-- Icecrown Gunship Battle
+							["_encounter"] = { 1626, 5 },
+						}),
+						crit(4, {	-- Deathbringer Saurfang
+							["_encounter"] = { 1628, 5 },
+						}),
 					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
-							crit(1, {	-- Lord Marrowgar
-								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-							}),
 							ach(4534),	-- Boned (10 player)
 							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i(51936),	-- Citadel Enforcer's Claymore
@@ -3006,9 +2970,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
-							crit(2, {	-- Lady Deathwhisper
-								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-							}),
 							ach(4535),	-- Full House (10 player)
 							i(51927),	-- Njordar Bone Bow
 							i(51922),	-- Scourgelord's Baton
@@ -3030,9 +2991,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							36948,	-- Muradin Bronzebeard
 						},
 						["groups"] = {
-							crit(3, {	-- Claim victory in the Gunship Battle
-								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-							}),
 							ach(4536),	-- I'm on a Boat (10 player)
 							i(51916),	-- Frost Giant's Cleaver
 							i(51910),	-- Midnight Sun
@@ -3051,9 +3009,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
-							crit(4, {	-- The Deathbringer
-								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-							}),
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3086,15 +3041,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-394, {	-- The Plagueworks
 					ach(4629, {	-- Heroic: The Plagueworks (10 player)
-						-- crit(1, {	-- Festergut
-						-- 	-- ["_encounter"] = { 1629, 5 },
-						-- }),
-						-- crit(2, {	-- Rotface
-						-- 	-- ["_encounter"] = { 1630, 5 },
-						-- }),
-						-- crit(3, {	-- Professor Putricide
-						-- 	-- ["_encounter"] = { 1631, 5 },
-						-- }),
+						crit(1, {	-- Festergut
+							["_encounter"] = { 1629, 5 },
+						}),
+						crit(2, {	-- Rotface
+							["_encounter"] = { 1630, 5 },
+						}),
+						crit(3, {	-- Professor Putricide
+							["_encounter"] = { 1631, 5 },
+						}),
 					}),
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
@@ -3102,9 +3057,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1629,  {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
-							crit(1, {	-- Festergut
-								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-							}),
 							ach(4577),	-- Flu Shot Shortage (10 player)
 							i(51887),	-- Abracadaver
 							i(51893),	-- Gutbuster
@@ -3123,9 +3075,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1630,  {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
-							crit(2, {	-- Rotface
-								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-							}),
 							ach(4538),	-- Dances with Oozes (10 player)
 							i(51881),	-- Shaft of Glacial Ice
 							i(51876),	-- Abomination Knuckles
@@ -3143,9 +3092,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
-							crit(3, {	-- Professor Putricide
-								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-							}),
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3168,12 +3114,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-395, {	-- The Crimson Hall
 					ach(4630, {	-- Heroic: The Crimson Hall (10 player)
-						-- crit(1, {	-- Blood Prince Council
-						-- 	["_encounter"] = { 1632, 5 },
-						-- }),
-						-- crit(2, {	-- Blood-Queen Lana'thel
-						-- 	["_encounter"] = { 1633, 5 },
-						-- }),
+						crit(1, {	-- Blood Prince Council
+							["_encounter"] = { 1632, 5 },
+						}),
+						crit(2, {	-- Blood-Queen Lana'thel
+							["_encounter"] = { 1633, 5 },
+						}),
 					}),
 					e(1632,  {	-- Blood Prince Council
 						["crs"] = {
@@ -3182,9 +3128,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							37970,	-- Prince Valanar
 						},
 						["groups"] = {
-							crit(1, {	-- Defeat the Blood Prince Council
-								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
-							}),
 							ach(4582),	-- The Orb Whisperer (10 player)
 							i(51857),	-- Hersir's Greatspear
 							i(51858),	-- Soulbreaker
@@ -3203,9 +3146,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
-							crit(2, {	-- Defeat Blood-Queen Lana'thel
-								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
-							}),
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
 								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
@@ -3230,19 +3170,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-396, {	-- The Frostwing Halls
 					ach(4631, {	-- Heroic: The Frostwing Halls (10 player)
-						-- crit(1, {	-- Valithria Dreamwalker
-						-- 	["_encounter"] = { 1634, 5 },
-						-- }),
-						-- crit(2, {	-- Sindragosa
-						-- 	["_encounter"] = { 1635, 5 },
-						-- }),
+						crit(1, {	-- Valithria Dreamwalker
+							["_encounter"] = { 1634, 5 },
+						}),
+						crit(2, {	-- Sindragosa
+							["_encounter"] = { 1635, 5 },
+						}),
 					}),
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
-							crit(1, {	-- Rescue Valithria Dreamwalker
-								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
-							}),
 							ach(4579),	-- Portal Jockey (10 player)
 							i(51833),	-- Oxheart
 							i(51828),	-- Sister Svalna's Aether Staff
@@ -3261,9 +3198,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
-							crit(2, {	-- Sindragosa
-								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
-							}),
 							ach(4580),	-- All You Can Eat (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3337,25 +3271,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4604, {	-- Storming the Citadel (25 player)
-						-- crit(1, {	-- Lord Marrowgar
-						-- 	["_encounter"] = { 1624, 4 },
-						-- }),
-						-- crit(2, {	-- Lady Deathwhisper
-						-- 	["_encounter"] = { 1625, 4 },
-						-- }),
-						-- crit(3, {	-- Icecrown Gunship Battle
-						-- 	["_encounter"] = { 1626, 4 },
-						-- }),
-						-- crit(4, {	-- Deathbringer Saurfang
-						-- 	["_encounter"] = { 1628, 4 },
-						-- }),
+						crit(1, {	-- Lord Marrowgar
+							["_encounter"] = { 1624, 4 },
+						}),
+						crit(2, {	-- Lady Deathwhisper
+							["_encounter"] = { 1625, 4 },
+						}),
+						crit(3, {	-- Icecrown Gunship Battle
+							["_encounter"] = { 1626, 4 },
+						}),
+						crit(4, {	-- Deathbringer Saurfang
+							["_encounter"] = { 1628, 4 },
+						}),
 					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
-							crit(1, {	-- Lord Marrowgar
-								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-							}),
 							ach(4610),	-- Boned (25 player)
 							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i(50415),	-- Bryntroll, the Bone Arbiter
@@ -3378,9 +3309,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
-							crit(2, {	-- Lady Deathwhisper
-								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-							}),
 							ach(4611),	-- Full House (25 player)
 							i(49992),	-- Nibelung
 							i(49982),	-- Heartpierce
@@ -3405,9 +3333,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							36948,	-- Muradin Bronzebeard
 						},
 						["groups"] = {
-							crit(3, {	-- Claim victory in the Gunship Battle
-								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-							}),
 							ach(4612),	-- I'm on a Boat (25 player)
 							i(50411),	-- Scourgeborne Waraxe
 							i(50006),	-- Corp'rethar Ceremonial Crown
@@ -3429,9 +3354,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
-							crit(4, {	-- The Deathbringer
-								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-							}),
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3457,15 +3379,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-394, {	-- The Plagueworks
 					ach(4605, {	-- The Plagueworks (25 player)
-						-- crit(1, {	-- Festergut
-						-- 	-- ["_encounter"] = { 1629, 4 },
-						-- }),
-						-- crit(2, {	-- Rotface
-						-- 	-- ["_encounter"] = { 1630, 4 },
-						-- }),
-						-- crit(3, {	-- Professor Putricide
-						-- 	-- ["_encounter"] = { 1631, 4 },
-						-- }),
+						crit(1, {	-- Festergut
+							["_encounter"] = { 1629, 4 },
+						}),
+						crit(2, {	-- Rotface
+							["_encounter"] = { 1630, 4 },
+						}),
+						crit(3, {	-- Professor Putricide
+							["_encounter"] = { 1631, 4 },
+						}),
 					}),
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
@@ -3476,9 +3398,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-							crit(1, {	-- Festergut
-								["achievementID"] = 4605,	-- The Plagueworks (25 player)
 							}),
 							ach(4615),	-- Flu Shot Shortage (25 player)
 							i(50040),	-- Distant Land
@@ -3506,9 +3425,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
-							crit(2, {	-- Rotface
-								["achievementID"] = 4605,	-- The Plagueworks (25 player)
-							}),
 							ach(4614),	-- Dances with Oozes (25 player)
 							i(50016),	-- Rib Spreader
 							i(50028),	-- Trauma
@@ -3530,9 +3446,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
-							crit(3, {	-- Professor Putricide
-								["achievementID"] = 4605,	-- The Plagueworks (25 player)
-							}),
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3548,12 +3461,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-395, {	-- The Crimson Hall
 					ach(4606, {	-- The Crimson Hall (25 player)
-						-- crit(1, {	-- Blood Prince Council
-						-- 	["_encounter"] = { 1632, 4 },
-						-- }),
-						-- crit(2, {	-- Blood-Queen Lana'thel
-						-- 	["_encounter"] = { 1633, 4 },
-						-- }),
+						crit(1, {	-- Blood Prince Council
+							["_encounter"] = { 1632, 4 },
+						}),
+						crit(2, {	-- Blood-Queen Lana'thel
+							["_encounter"] = { 1633, 4 },
+						}),
 					}),
 					e(1632,  {	-- Blood Prince Council
 						["crs"] = {
@@ -3562,9 +3475,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							37970,	-- Prince Valanar
 						},
 						["groups"] = {
-							crit(1, {	-- Defeat the Blood Prince Council
-								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
-							}),
 							ach(4617),	-- The Orb Whisperer (25 player)
 							i(49919),	-- Cryptmaker
 							i(50184),	-- Keleseth's Seducer
@@ -3586,9 +3496,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
-							crit(2, {	-- Defeat Blood-Queen Lana'thel
-								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
-							}),
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
 								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
@@ -3607,19 +3514,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-396, {	-- The Frostwing Halls
 					ach(4607, {	-- The Frostwing Halls (25 player)
-						-- crit(1, {	-- Valithria Dreamwalker
-						-- 	["_encounter"] = { 1634, 4 },
-						-- }),
-						-- crit(2, {	-- Sindragosa
-						-- 	["_encounter"] = { 1635, 4 },
-						-- }),
+						crit(1, {	-- Valithria Dreamwalker
+							["_encounter"] = { 1634, 4 },
+						}),
+						crit(2, {	-- Sindragosa
+							["_encounter"] = { 1635, 4 },
+						}),
 					}),
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
-							crit(1, {	-- Rescue Valithria Dreamwalker
-								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
-							}),
 							ach(4619),	-- Portal Jockey (25 player)
 							i(138832),	-- Illusion: Earthliving
 							i(50183),	-- Lungbreaker
@@ -3642,9 +3546,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
-							crit(2, {	-- Sindragosa
-								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
-							}),
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3711,25 +3612,22 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
-						-- crit(1, {	-- Lord Marrowgar
-						-- 	["_encounter"] = { 1624, 6 },
-						-- }),
-						-- crit(2, {	-- Lady Deathwhisper
-						-- 	["_encounter"] = { 1625, 6 },
-						-- }),
-						-- crit(3, {	-- Icecrown Gunship Battle
-						-- 	["_encounter"] = { 1626, 6 },
-						-- }),
-						-- crit(4, {	-- Deathbringer Saurfang
-						-- 	["_encounter"] = { 1628, 6 },
-						-- }),
+						crit(1, {	-- Lord Marrowgar
+							["_encounter"] = { 1624, 6 },
+						}),
+						crit(2, {	-- Lady Deathwhisper
+							["_encounter"] = { 1625, 6 },
+						}),
+						crit(3, {	-- Icecrown Gunship Battle
+							["_encounter"] = { 1626, 6 },
+						}),
+						crit(4, {	-- Deathbringer Saurfang
+							["_encounter"] = { 1628, 6 },
+						}),
 					}),
 					e(1624,  {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
-							crit(1, {	-- Lord Marrowgar
-								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-							}),
 							ach(4610),	-- Boned (25 player)
 							i(142094),	-- Fragment of Frozen Bone (PET!)
 							i(50709),	-- Bryntroll, the Bone Arbiter
@@ -3752,9 +3650,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1625,  {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
-							crit(2, {	-- Lady Deathwhisper
-								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-							}),
 							ach(4611),	-- Full House (25 player)
 							i(50648),	-- Nibelung
 							i(50641),	-- Heartpierce
@@ -3779,9 +3674,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							36948,	-- Muradin Bronzebeard
 						},
 						["groups"] = {
-							crit(3, {	-- Claim victory in the Gunship Battle
-								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-							}),
 							ach(4612),	-- I'm on a Boat (25 player)
 							i(50654),	-- Scourgeborne Waraxe
 							i(50661),	-- Corp'rethar Ceremonial Crown
@@ -3803,9 +3695,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1628,  {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
-							crit(4, {	-- The Deathbringer
-								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-							}),
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
@@ -3834,15 +3723,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-394, {	-- The Plagueworks
 					ach(4633, {	-- Heroic: The Plagueworks (25 player)
-						-- crit(1, {	-- Festergut
-						-- 	-- ["_encounter"] = { 1629, 6 },
-						-- }),
-						-- crit(2, {	-- Rotface
-						-- 	-- ["_encounter"] = { 1630, 6 },
-						-- }),
-						-- crit(3, {	-- Professor Putricide
-						-- 	-- ["_encounter"] = { 1631, 6 },
-						-- }),
+						crit(1, {	-- Festergut
+							["_encounter"] = { 1629, 6 },
+						}),
+						crit(2, {	-- Rotface
+							["_encounter"] = { 1630, 6 },
+						}),
+						crit(3, {	-- Professor Putricide
+							["_encounter"] = { 1631, 6 },
+						}),
 					}),
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
@@ -3853,9 +3742,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50226, {	-- Festergut's Acidic Blood
 								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-							}),
-							crit(1, {	-- Festergut
-								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
 							}),
 							ach(4615),	-- Flu Shot Shortage (25 player)
 							i(50695),	-- Distant Land
@@ -3883,9 +3769,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
 								["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 							}),
-							crit(2, {	-- Rotface
-								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
-							}),
 							ach(4614),	-- Dances with Oozes (25 player)
 							i(50676),	-- Rib Spreader
 							i(50685),	-- Trauma
@@ -3907,9 +3790,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1631,  {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
-							crit(3, {	-- Professor Putricide
-								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
-							}),
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
@@ -3928,12 +3808,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-395, {	-- The Crimson Hall
 					ach(4634, {	-- Heroic: The Crimson Hall (25 player)
-						-- crit(1, {	-- Blood Prince Council
-						-- 	["_encounter"] = { 1632, 6 },
-						-- }),
-						-- crit(2, {	-- Blood-Queen Lana'thel
-						-- 	["_encounter"] = { 1633, 6 },
-						-- }),
+						crit(1, {	-- Blood Prince Council
+							["_encounter"] = { 1632, 6 },
+						}),
+						crit(2, {	-- Blood-Queen Lana'thel
+							["_encounter"] = { 1633, 6 },
+						}),
 					}),
 					e(1632,  {	-- Blood Prince Council
 						["crs"] = {
@@ -3942,9 +3822,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							37970,	-- Prince Valanar
 						},
 						["groups"] = {
-							crit(1, {	-- Defeat the Blood Prince Council
-								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
-							}),
 							ach(4617),	-- The Orb Whisperer (25 player)
 							i(50603),	-- Cryptmaker
 							i(50710),	-- Keleseth's Seducer
@@ -3966,9 +3843,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1633,  {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
-							crit(2, {	-- Defeat Blood-Queen Lana'thel
-								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
-							}),
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
 								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
@@ -3990,19 +3864,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				}),
 				n(-396, {	-- The Frostwing Halls
 					ach(4635, {	-- Heroic: The Frostwing Halls (25 player)
-						-- crit(1, {	-- Valithria Dreamwalker
-						-- 	["_encounter"] = { 1634, 6 },
-						-- }),
-						-- crit(2, {	-- Sindragosa
-						-- 	["_encounter"] = { 1635, 6 },
-						-- }),
+						crit(1, {	-- Valithria Dreamwalker
+							["_encounter"] = { 1634, 6 },
+						}),
+						crit(2, {	-- Sindragosa
+							["_encounter"] = { 1635, 6 },
+						}),
 					}),
 					e(1634,  {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
-							crit(1, {	-- Rescue Valithria Dreamwalker
-								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
-							}),
 							ach(4619),	-- Portal Jockey (25 player)
 							i(138832),	-- Illusion: Earthliving
 							i(50621),	-- Lungbreaker
@@ -4025,9 +3896,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					e(1635,  {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
-							crit(2, {	-- Sindragosa
-								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
-							}),
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
