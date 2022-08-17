@@ -10,6 +10,88 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(3917, {	-- Call of the Crusade (10 player)
+					-- crit(1, {	-- Northrend Beasts
+					-- 	["_encounter"] = { 1618, 3 },
+					-- }),
+					-- crit(2, {	-- Lord Jaraxxus
+					-- 	["_encounter"] = { 1619, 3 },
+					-- }),
+					-- crit(3, {	-- Champions of the Alliance
+					-- 	["_encounter"] = { 1620, 3 },
+					-- }),
+					-- crit(3, {	-- Champions of the Horde
+					-- 	["_encounter"] = { 1621, 3 },
+					-- }),
+					-- crit(4, {	-- Twin Val'kyr
+					-- 	["_encounter"] = { 1622, 3 },
+					-- }),
+					-- crit(5, {	-- Anub'arak
+					-- 	["_encounter"] = { 1623, 3 },
+					-- }),
+				}),
+				ach(3918, {	-- Call of the Grand Crusade (10 player)
+					-- crit(1, {	-- Northrend Beasts
+					-- 	["_encounter"] = { 1618, 5 },
+					-- }),
+					-- crit(2, {	-- Lord Jaraxxus
+					-- 	["_encounter"] = { 1619, 5 },
+					-- }),
+					-- crit(3, {	-- Champions of the Alliance
+					-- 	["_encounter"] = { 1620, 5 },
+					-- }),
+					-- crit(3, {	-- Champions of the Horde
+					-- 	["_encounter"] = { 1621, 5 },
+					-- }),
+					-- crit(4, {	-- Twin Val'kyr
+					-- 	["_encounter"] = { 1622, 5 },
+					-- }),
+					-- crit(5, {	-- Anub'arak
+					-- 	["_encounter"] = { 1623, 5 },
+					-- }),
+				}),
+				ach(3916, {	-- Call of the Crusade (25 player)
+					-- crit(1, {	-- Northrend Beasts
+					-- 	["_encounter"] = { 1618, 4 },
+					-- }),
+					-- crit(2, {	-- Lord Jaraxxus
+					-- 	["_encounter"] = { 1619, 4 },
+					-- }),
+					-- crit(3, {	-- Champions of the Alliance
+					-- 	["_encounter"] = { 1620, 4 },
+					-- }),
+					-- crit(3, {	-- Champions of the Horde
+					-- 	["_encounter"] = { 1621, 4 },
+					-- }),
+					-- crit(4, {	-- Twin Val'kyr
+					-- 	["_encounter"] = { 1622, 4 },
+					-- }),
+					-- crit(5, {	-- Anub'arak
+					-- 	["_encounter"] = { 1623, 4 },
+					-- }),
+				}),
+				ach(3812, {	-- Call of the Grand Crusade (25 player)
+					-- crit(1, {	-- Northrend Beasts
+					-- 	["_encounter"] = { 1618, 6 },
+					-- }),
+					-- crit(2, {	-- Lord Jaraxxus
+					-- 	["_encounter"] = { 1619, 6 },
+					-- }),
+					-- crit(3, {	-- Champions of the Alliance
+					-- 	["_encounter"] = { 1620, 6 },
+					-- }),
+					-- crit(3, {	-- Champions of the Horde
+					-- 	["_encounter"] = { 1621, 6 },
+					-- }),
+					-- crit(4, {	-- Twin Val'kyr
+					-- 	["_encounter"] = { 1622, 6 },
+					-- }),
+					-- crit(5, {	-- Anub'arak
+					-- 	["_encounter"] = { 1623, 6 },
+					-- }),
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					34796,	-- Gormok
