@@ -875,6 +875,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.3, 21.3, KORTHIA },
 			}),
+			q(65146, {	-- Relic Hunter
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { "added 9.1.5" },
+			}),
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
@@ -996,11 +1001,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179194 },	-- Kleia
 				["isDaily"] = true,
 				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			q(65146, {	-- Relic Hunter
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
 			}),
 			q(63954, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
