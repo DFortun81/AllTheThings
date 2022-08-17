@@ -118,6 +118,32 @@ root("Zones", m(SHADOWLANDS, {
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
 				}),
+				i(192437, {	-- Cache of Fated Treasures (Normal)
+					["timeline"] = { ADDED_SLS4 },
+					["modID"] = 11,
+					["bonusID"] = 8157,
+					["sym"] = {
+						{"select", "instanceID"
+							,1190			-- Castle Nathria
+							,1193			-- Sanctum of Domination
+							,1195			-- Sepulcher of the First Ones
+						},
+						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
+						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
+						{"extract", "itemID"},						-- All nested Items
+						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						{"select", "itemID"						-- Include Anima Spherules
+							-- only need 1 of each, will expand in tooltip to see possible rewards
+							,183899	-- Zenith Anima Spherule
+							,183897	-- Mystic Anima Spherule
+							,183896	-- Abominable Anima Spherule
+							,183895	-- Apogee Anima Bead
+							,183889	-- Thaumaturgic Anima Bead
+							,183891	-- Venerated Anima Spherule
+						},
+						{"modID",89},	-- Fated ModID
+					},
+				}),
 				i(192438, {	-- Cache of Fated Treasures (Heroic)
 					["timeline"] = { ADDED_SLS4 },
 					["modID"] = 11,
