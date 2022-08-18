@@ -623,6 +623,7 @@ settings.GetShortModeString = function(self)
 end
 -- Returns true if something is being hidden/filtered and removing Insane status
 settings.NonInsane = function(self)
+	local ccs = app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects;
 	return
 	-- Hiding BoE's
 	self:Get("Hide:BoEs")
@@ -634,10 +635,11 @@ settings.NonInsane = function(self)
 	or self:GetValue("Seasonal", "DoFiltering")
 	-- Non-Account Mode with Covenants filtered
 	or (not self:Get("AccountMode")
-		and (not self:Get("CC:SL_COV_KYR")
-			or not self:Get("CC:SL_COV_NEC")
-			or not self:Get("CC:SL_COV_NFA")
-			or not self:Get("CC:SL_COV_VEN")));
+		-- TODO: maybe track custom collect filters through a different Get method for easier logic
+		and (not (ccs["SL_COV_KYR"] or self:Get("CC:SL_COV_KYR"))
+			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))
+			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))
+			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))));
 end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting];
@@ -2929,7 +2931,6 @@ for i,cc in ipairs({"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
 		self:SetChecked(automatic or settings:Get(filterID));
 		if automatic then
-			-- self:Disable();
 			self:SetAlpha(0.2);
 		else
 			self:Enable();
@@ -2968,7 +2969,6 @@ for i,cc in ipairs({"NPE","SL_SKIP"}) do
 			or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]));
 		self:SetChecked(automatic or settings:Get(filterID));
 		if automatic then
-			-- self:Disable();
 			self:SetAlpha(0.2);
 		else
 			self:Enable();
