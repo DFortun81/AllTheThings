@@ -678,7 +678,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			e(1552, {	-- Servant's Quarters
 				["description"] = "The following rares are repeatable if you don't kill any other bosses in raid. Reset the raid after killing. Only one will be active at a time.",
-				-- #if BEFORE WRATH
+				-- #if BEFORE CATA
 				["npcID"] = RARES,
 				-- #endif
 				["groups"] = {
