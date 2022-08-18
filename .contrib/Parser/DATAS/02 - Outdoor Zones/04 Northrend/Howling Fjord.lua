@@ -255,18 +255,6 @@ root("Zones", {
 							11567,	-- The Ancient Armor of the Kvaldir
 						},
 					}),
-					q(11272, {	-- A Score to Settle (Note: the version in the dungeon is a different ID so this needs to stay)
-						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["qg"] = 23780,	-- High Executor Anselm
-						["sourceQuest"] = 11234,	-- Report to Anselm
-						["groups"] = {
-							i(39679),	-- Runecaster's Bracers
-							i(39680),	-- Vambraces of the Vengeance Bringer
-							i(39678),	-- Vendetta Bindings
-							i(39676),	-- Wraps of the San'layn
-						},
-					}),
 					q(11305, {	-- A Tailor-Made Formula
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -654,12 +642,6 @@ root("Zones", {
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
 						["sourceQuest"] = 11509,	-- Street "Cred"
-					}),
-					q(11251, {	-- Fresh Legs
-						["qg"] = 24106,	-- Scout Valory
-						["coord"] = { 55.9, 55.7, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
 					}),
 					q(11464, {	-- Gambling Debt
 						["qg"] = 24541,	-- Taruk

@@ -779,7 +779,6 @@ q(11209),	-- [DEPRECATED]Nat's Bargain,		TBC: Nat's Bargain
 q(11210),	-- [DEPRECATED]Oh, It's Real,		TBC: Oh, It's Real
 q(11222),	-- [DEPRECATED]Proof of Treachery,		TBC: Warn Bolvar!
 q(11226),	-- Upper Deck Promo - Spectral Tiger Mount
-q(11252),	-- Into Utgarde!
 q(11335),	-- Call to Arms: Arathi Basin,		TBC: Call to Arms: Arathi Basin
 q(11336),	-- Call to Arms: Alterac Valley,		TBC: Call to Arms: Alterac Valley
 q(11337),	-- Call to Arms: Eye of the Storm,		TBC: Call to Arms: Eye of the Storm
