@@ -833,10 +833,11 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 133050 },	-- Princes Talanji
 			}),
 			q(47513, {	-- Vol'dun
+			-- TODO: noting this as I changed the pre-req from 52131 since it flagged an error message; see note on that quest. If anyone can get 52131 to pop, might need to readjust this.
 				["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 135775 },	-- Scouting Map
-				["sourceQuest"] = 52131,	-- We Need Each Other
+				["sourceQuest"] = 46931,	-- Speaker of the Horde
 			}),
 			q(47520, {	-- Walls Have Ears
 				["sourceQuests"] = {
