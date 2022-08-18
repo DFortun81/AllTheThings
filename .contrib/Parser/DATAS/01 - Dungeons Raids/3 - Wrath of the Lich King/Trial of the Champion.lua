@@ -6,6 +6,112 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 		["mapID"] = TRIAL_OF_THE_CHAMPION,
 		["lvl"] = 65,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				a(ach(4296, {	-- Trial of the Champion (A)
+					crit(1, { -- Mokra the Skullcrusher
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(2, { -- Deathstalker Visceri
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(3, { -- Runok Wildmane
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(4, { -- Eressea Dawnsinger
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(5, { -- Zul'tore
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(6, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, 1 },
+					}),
+					crit(7, { -- Eadric the Pure
+						["_encounter"] = { 635, 1 },
+					}),
+					crit(8, { -- The Black Knight
+						["_encounter"] = { 637, 1 },
+					}),
+				})),
+				a(ach(4298, {	-- Heroic: Trial of the Champion (A)
+					crit(1, { -- Mokra the Skullcrusher
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(2, { -- Deathstalker Visceri
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(3, { -- Runok Wildmane
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(4, { -- Eressea Dawnsinger
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(5, { -- Zul'tore
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(6, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, 2 },
+					}),
+					crit(7, { -- Eadric the Pure
+						["_encounter"] = { 635, 2 },
+					}),
+					crit(8, { -- The Black Knight
+						["_encounter"] = { 637, 2 },
+					}),
+				})),
+				h(ach(3778, {	-- Trial of the Champion (H)
+					crit(1, { -- Marshal Jacob Alerius
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(2, { -- Lana Stouthammer
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(3, { -- Colosos
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(4, { -- Ambrose Boltspark
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(5, { -- Jaelyne Evensong
+						["_encounter"] = { 634, 1 },
+					}),
+					crit(6, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, 1 },
+					}),
+					crit(7, { -- Eadric the Pure
+						["_encounter"] = { 635, 1 },
+					}),
+					crit(8, { -- The Black Knight
+						["_encounter"] = { 637, 1 },
+					}),
+				})),
+				h(ach(4297, {	-- Heroic: Trial of the Champion (H)
+					crit(1, { -- Marshal Jacob Alerius
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(2, { -- Lana Stouthammer
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(3, { -- Colosos
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(4, { -- Ambrose Boltspark
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(5, { -- Jaelyne Evensong
+						["_encounter"] = { 634, 2 },
+					}),
+					crit(6, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, 2 },
+					}),
+					crit(7, { -- Eadric the Pure
+						["_encounter"] = { 635, 2 },
+					}),
+					crit(8, { -- The Black Knight
+						["_encounter"] = { 637, 2 },
+					}),
+				})),
+			}),
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					["provider"] = { "n", 34996 },	-- Highlord Tirion Fordring
@@ -26,46 +132,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 						35617,	-- Deathstalker Visceri
 					},
 					["groups"] = {
-						crit(1, {	-- Mokra the Skullcrusher
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(1, {	-- Marshal Jacob Alerius
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
-						crit(2, {	-- Deathstalker Visceri
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(2, {	-- Lana Stouthammer
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
-						crit(3, {	-- Runok Wildmane
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(3, {	-- Colosos
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
-						crit(4, {	-- Eressea Dawnsinger
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(4, {	-- Ambrose Boltspark
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
-						crit(5, {	-- Zul'tore
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(5, {	-- Jaelyne Evensong
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
 						i(47493),	-- Edge of Ruin
 						i(47172),	-- Helm of the Bested Gallant
 						i(47250),	-- Pauldrons of the Deafening Gale
@@ -89,14 +155,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				e(635, {	-- Eadric the Pure
 					["creatureID"] = 35119,	-- Eadric the Pure
 					["groups"] = {
-						crit(7, {	-- Eadric the Pure (A)
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(7, {	-- Eadric the Pure (H)
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
 						i(47508),	-- Aledar's Battlestar
 						i(47509),	-- Mariel's Sorrow
 						i(47500),	-- Peacekeeper Blade
@@ -126,14 +184,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				e(636, {	-- Argent Confessor Paletress
 					["creatureID"] = 34928,	-- Argent Confessor Paletress
 					["groups"] = {
-						crit(6, {	-- Argent Confessor Paletress (A)
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(6, {	-- Argent Confessor Paletress
-							["achievementID"] = 3778,	-- Trial of the Champion (H)
-							["races"] = HORDE_ONLY,
-						}),
 						i(47522),	-- Marrowstrike
 						i(47500),	-- Peacekeeper Blade
 						i(47217),	-- Gaze of the Somber Keeper
@@ -163,14 +213,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				e(637, {	-- The Black Knight
 					["creatureID"] = 35451,	-- The Black Knight
 					["groups"] = {
-						crit(8, {	-- The Black Knight (A)
-							["achievementID"] = 4296,	-- Trial of the Champion (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(8, {	-- The Black Knight (H)
-							["achievementID"] = 3778,	-- Trial of the Champion
-							["races"] = HORDE_ONLY,
-						}),
 						i(49682),		-- Black Knight's Rondel
 						i(47569),		-- Spectral Kris
 						i(47568),		-- True-Aim Long Rifle
@@ -217,46 +259,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 							35617,	-- Deathstalker Visceri
 						},
 						["groups"] = {
-							crit(1, {	-- Mokra the Skullcrusher
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(1, {	-- Marshal Jacob Alerius
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
-							crit(2, {	-- Deathstalker Visceri
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(2, {	-- Lana Stouthammer
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
-							crit(3, {	-- Runok Wildmane
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(3, {	-- Colosos
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
-							crit(4, {	-- Eressea Dawnsinger
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(4, {	-- Ambrose Boltspark
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
-							crit(5, {	-- Zul'tore
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(5, {	-- Jaelyne Evensong
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
 							i(47493),		-- Edge of Ruin
 							i(47172),		-- Helm of the Bested Gallant
 							i(47250),		-- Pauldrons of the Deafening Gale
@@ -281,14 +283,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					e(635, {	-- Eadric the Pure
 						["creatureID"] = 35119,	-- Eadric the Pure
 						["groups"] = {
-							crit(7, {	-- Eadric the Pure (A)
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(7, {	-- Eadric the Pure (H)
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
 							ach(3803),		-- The Faceroller
 							i(47508),		-- Aledar's Battlestar
 							i(47509),		-- Mariel's Sorrow
@@ -320,14 +314,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					e(636, {	-- Argent Confessor Paletress
 						["creatureID"] = 34928,	-- Argent Confessor Paletress
 						["groups"] = {
-							crit(6, {	-- Argent Confessor Paletress (A)
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(6, {	-- Argent Confessor Paletress (H)
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
 							ach(3802, {	-- Argent Confessor
 								crit(1,	 {	-- Hogger
 									["cr"] = 34942,	-- Memory of Hogger
@@ -435,14 +421,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					e(637, {	-- The Black Knight
 						["creatureID"] = 35451,	-- The Black Knight
 						["groups"] = {
-							crit(8, {	-- The Black Knight (A)
-								["achievementID"] = 4298,	-- Heroic: Trial of the Champion (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(8, {	-- The Black Knight (H)
-								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
-								["races"] = HORDE_ONLY,
-							}),
 							ach(3804),	-- I've Had Worse
 							i(49682),		-- Black Knight's Rondel
 							i(47569),		-- Spectral Kris

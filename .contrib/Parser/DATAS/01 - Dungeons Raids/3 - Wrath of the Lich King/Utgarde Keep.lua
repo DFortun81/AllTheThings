@@ -7,6 +7,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["maps"] = { 134, 135 },
 		["lvl"] = 57,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(477, {	-- Utgarde Keep
+					crit(1, { -- Prince Keleseth
+						["_encounter"] = { 638, 1 },
+					}),
+					crit(2, { -- Skarvald the Constructor
+						["_encounter"] = { 639, 1 },
+					}),
+					crit(3, { -- Dalronn the Controller
+						["_encounter"] = { 639, 1 },
+					}),
+					crit(4, { -- Ingvar the Plunderer
+						["_encounter"] = { 640, 1 },
+					}),
+				}),
+				ach(489,  {	-- Heroic: Utgarde Keep
+					crit(1, { -- Prince Keleseth
+						["_encounter"] = { 638, 2 },
+					}),
+					crit(2, { -- Skarvald the Constructor
+						["_encounter"] = { 639, 2 },
+					}),
+					crit(3, { -- Dalronn the Controller
+						["_encounter"] = { 639, 2 },
+					}),
+					crit(4, { -- Ingvar the Plunderer
+						["_encounter"] = { 640, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(30112,{	-- A Score to Settle
 					["races"] = HORDE_ONLY,
@@ -107,10 +137,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
-					{	-- Utgarde Keep: Prince Keleseth
-							["achievementID"] = 477,	-- Utgarde Keep
-							["criteriaID"] = 1,	-- Prince Keleseth
-						},
 					i(37179),	-- Infantry Assault Blade
 					i(35570),	-- Keleseth's Blade of Evocation
 					i(37177),	-- Wand of the San'layn
@@ -120,14 +146,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37178),	-- Strategist's Belt
 				})),
 				cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-					{	-- Utgarde Keep: Dalronn the Controller
-						["achievementID"] = 477,	-- Utgarde Keep
-						["criteriaID"] = 3,	-- Dalronn the Controller
-					},
-					{	-- Utgarde Keep: Skarvald the Constructor
-						["achievementID"] = 477,	-- Utgarde Keep
-						["criteriaID"] = 2,	-- Skarvald the Constructor
-					},
 					i(35573),	-- Arm Blade of Augelmir
 					i(37181),	-- Dagger of Betrayal
 					i(157555),	-- Constructor's Worklight
@@ -138,10 +156,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37183),	-- Bindings of the Tunneler
 				})),
 				cr(23954, e(640, {	-- Ingvar the Plunderer
-					{	-- Utgarde Keep: Ingvar the Plunderer
-						["achievementID"] = 477,	-- Utgarde Keep
-						["criteriaID"] = 4,	-- Ingvar the Plunderer
-					},
 					i(37190),	-- Enraged Feral Staff
 					i(35576),	-- Ingvar's Monolithic Cleaver
 					i(37191),	-- Drake-Mounted Crossbow
@@ -212,13 +226,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
-						{	-- On The Rocks
-							["achievementID"] = 1919,	-- On The Rocks
-						},
-						{	-- Heroic: Utgarde Keep: Prince Keleseth
-							["achievementID"] = 489,	-- Heroic: Utgarde Keep
-							["criteriaID"] = 1,	-- Prince Keleseth
-						},
+						ach(1919),	-- On The Rocks
 						i(37179),	-- Infantry Assault Blade
 						i(35570),	-- Keleseth's Blade of Evocation
 						i(37177),	-- Wand of the San'layn
@@ -228,14 +236,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37178),	-- Strategist's Belt
 					})),
 					cr(24200, e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-						{	-- Heroic: Utgarde Keep: Dalronn the Controller
-							["achievementID"] = 489,	-- Heroic: Utgarde Keep
-							["criteriaID"] = 3,	-- Dalronn the Controller
-						},
-						{	-- Heroic: Utgarde Keep: Skarvald the Constructor
-							["achievementID"] = 489,	-- Heroic: Utgarde Keep
-							["criteriaID"] = 2,	-- Skarvald the Constructor
-						},
 						i(35573),	-- Arm Blade of Augelmir
 						i(37181),	-- Dagger of Betrayal
 						i(157555),	-- Constructor's Worklight
@@ -249,10 +249,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						{	-- Champion of the Frozen Wastes
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 10,		-- Ingvar the Plunderer slain
-						},
-						{	-- Heroic: Utgarde Keep: Ingvar the Plunderer
-							["achievementID"] = 489,	-- Heroic: Utgarde Keep
-							["criteriaID"] = 4,	-- Ingvar the Plunderer
 						},
 						i(41793),	-- Design: Fierce Monarch Topaz
 						i(37190),	-- Enraged Feral Staff

@@ -7,6 +7,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["maps"] = { 143, 144, 145, 146 },
 		["lvl"] = 65,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(487, {	-- The Oculus
+					crit(1, { -- Drakos the Interrogator
+						["_encounter"] = { 622, 1 },
+					}),
+					crit(2, { -- Mage-Lord Urom
+						["_encounter"] = { 624, 1 },
+					}),
+					crit(3, { -- Varos Cloudstrider
+						["_encounter"] = { 623, 1 },
+					}),
+					crit(4, { -- Ley-Guardian Eregos
+						["_encounter"] = { 625, 1 },
+					}),
+				}),
+				ach(498,  {	-- Heroic: The Oculus
+					crit(1, { -- Drakos the Interrogator
+						["_encounter"] = { 622, 2 },
+					}),
+					crit(2, { -- Mage-Lord Urom
+						["_encounter"] = { 624, 2 },
+					}),
+					crit(3, { -- Varos Cloudstrider
+						["_encounter"] = { 623, 2 },
+					}),
+					crit(4, { -- Ley-Guardian Eregos
+						["_encounter"] = { 625, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(13124, {	-- The Struggle Persists
 					["provider"] = { "n", 26117 },	-- Raelorasz
@@ -97,10 +127,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				}),
 				cr(27654, e(622, {	-- Drakos the Interrogator
-					{	-- The Oculus: Drakos the Interrogator
-						["achievementID"] = 487,	-- The Oculus
-						["criteriaID"] = 1,	-- Drakos the Interrogator
-					},
 					i(157562),	-- Rod of Aggressive Questioning
 					i(36944),	-- Lifeblade of Belgaristrasz
 					i(37255),	-- The Interrogator
@@ -112,10 +138,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37257),	-- Band of Torture
 				})),
 				cr(27447, e(623, {	-- Varos Cloudstrider
-					{	-- The Oculus: Varos Cloudstrider
-						["achievementID"] = 487,	-- The Oculus
-						["criteriaID"] = 3,	-- Varos Cloudstrider
-					},
 					i(37260),	-- Cloudstrider's Waraxe
 					i(36948),	-- Horned Helm of Varos
 					i(36947),	-- Centrifuge Core Cloak
@@ -126,10 +148,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37263),	-- Legplates of the Oculus Guardian
 				})),
 				cr(27655, e(624, {	-- Mage-Lord Urom
-					{	-- The Oculus: Mage-Lord Urom
-						["achievementID"] = 487,	-- The Oculus
-						["criteriaID"] = 2,	-- Mage-Lord Urom
-					},
 					i(36953),	-- Spaulders of Skillful Maneuvers
 					i(37288),	-- Catalytic Bands
 					i(36951),	-- Sidestepping Handguards
@@ -140,10 +158,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37264),	-- Pendulum of Telluric Currents
 				})),
 				cr(27656, e(625, {	-- Ley-Guardian Eregos
-					{	-- The Oculus: Ley-Guardian Eregos
-						["achievementID"] = 487,	-- The Oculus
-						["criteriaID"] = 4,	-- Ley-Guardian Eregos
-					},
 					i(41798),	-- Design: Bracing Earthsiege Diamond
 					i(36975),	-- Malygos' Favor
 					i(37360),	-- Staff of Draconic Combat
@@ -226,10 +240,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					}),
 					cr(27654, e(622, {	-- Drakos the Interrogator
-						{	-- Heroic: The Oculus: Drakos the Interrogator
-							["achievementID"] = 498,	-- Heroic: The Oculus
-							["criteriaID"] = 1,	-- Drakos the Interrogator
-						},
 						i(157562),	-- Rod of Aggressive Questioning
 						i(36944),	-- Lifeblade of Belgaristrasz
 						i(37255),	-- The Interrogator
@@ -241,10 +251,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37257),	-- Band of Torture
 					})),
 					cr(27447, e(623, {	-- Varos Cloudstrider
-						{	-- Heroic: The Oculus: Varos Cloudstrider
-							["achievementID"] = 498,	-- Heroic: The Oculus
-							["criteriaID"] = 3,	-- Varos Cloudstrider
-						},
 						i(37260),	-- Cloudstrider's Waraxe
 						i(36948),	-- Horned Helm of Varos
 						i(36947),	-- Centrifuge Core Cloak
@@ -255,10 +261,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37263),	-- Legplates of the Oculus Guardian
 					})),
 					cr(27655, e(624, {	-- Mage-Lord Urom
-						{	-- Heroic: The Oculus: Mage-Lord Urom
-							["achievementID"] = 498,	-- Heroic: The Oculus
-							["criteriaID"] = 2,	-- Mage-Lord Urom
-						},
 						i(36953),	-- Spaulders of Skillful Maneuvers
 						i(37288),	-- Catalytic Bands
 						i(36951),	-- Sidestepping Handguards
@@ -269,43 +271,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37264),	-- Pendulum of Telluric Currents
 					})),
 					cr(27656, e(625, {	-- Ley-Guardian Eregos
-						{	-- Amber Void
-							["achievementID"] = 2046,	-- Amber Void
-						},
-						{	-- Emerald Void
-							["achievementID"] = 2045,	-- Emerald Void
-						},
-						{	-- Experienced Drake Rider
-							["achievementID"] = 1871,	-- Experienced Drake Rider
-							["groups"] = {
-								{	-- Amber Drake
-									["achievementID"] = 1871,	-- Experienced Drake Rider
-									["criteriaID"] = 1,	-- Amber Drake
-								},
-								{	-- Emerald Drake
-									["achievementID"] = 1871,	-- Experienced Drake Rider
-									["criteriaID"] = 2,	-- Emerald Drake
-								},
-								{	-- Ruby Drake
-									["achievementID"] = 1871,	-- Experienced Drake Rider
-									["criteriaID"] = 3,	-- Ruby Drake
-								},
-							},
-						},
+						ach(2046),	-- Amber Void
+						ach(2045),	-- Emerald Void
+						ach(1871, {	-- Experienced Drake Rider
+							-- TODO: could add coords here on the NPCs that give teh different drakes?
+							crit(1),	-- Amber Drake
+							crit(2),	-- Emerald Drake
+							crit(3),	-- Ruby Drake
+						}),
 						{	-- Champion of the Frozen Wastes
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 9,			-- Ley-Guardian Eregos slain
 						},
-						{	-- Heroic: The Oculus: Ley-Guardian Eregos
-							["achievementID"] = 498,	-- Heroic: The Oculus
-							["criteriaID"] = 4,	-- Ley-Guardian Eregos
-						},
-						{	-- Make It Count
-							["achievementID"] = 1868,	-- Make It Count
-						},
-						{	-- Ruby Void
-							["achievementID"] = 2044,	-- Ruby Void
-						},
+						ach(1868),	-- Make It Count
+						ach(2044),	-- Ruby Void
 						i(41798),	-- Design: Bracing Earthsiege Diamond
 						i(36975),	-- Malygos' Favor
 						i(37360),	-- Staff of Draconic Combat

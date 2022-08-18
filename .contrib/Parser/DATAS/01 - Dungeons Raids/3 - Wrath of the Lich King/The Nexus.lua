@@ -6,6 +6,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["mapID"] = THE_NEXUS,
 		["lvl"] = 59,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(478, {	-- The Nexus
+					crit(1, { -- Grand Magus Telestra
+						["_encounter"] = { 618, 1 },
+					}),
+					crit(2, { -- Anomalus
+						["_encounter"] = { 619, 1 },
+					}),
+					crit(3, { -- Ormorok the Tree-Shaper
+						["_encounter"] = { 620, 1 },
+					}),
+					crit(4, { -- Keristrasza
+						["_encounter"] = { 621, 1 },
+					}),
+				}),
+				ach(490,  {	-- Heroic: The Nexus
+					crit(1, { -- Grand Magus Telestra
+						["_encounter"] = { 618, 1 },
+					}),
+					crit(2, { -- Anomalus
+						["_encounter"] = { 619, 1 },
+					}),
+					crit(3, { -- Ormorok the Tree-Shaper
+						["_encounter"] = { 620, 1 },
+					}),
+					crit(4, { -- Keristrasza
+						["_encounter"] = { 621, 1 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(13094,{	-- Have They No Shame?
 					["races"] = ALLIANCE_ONLY,
@@ -57,10 +87,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			d(1, {	-- Normal
 				cr(26731, e(618, {	-- Grand Magus Telestra
-					{	-- The Nexus: Grand Magus Telestra
-						["achievementID"] = 478,	-- The Nexus
-						["criteriaID"] = 1,	-- Grand Magus Telestra
-					},
 					i(35617),	-- Wand of Shimmering Scales
 					i(37134),	-- Telestra's Journal
 					i(37135),	-- Arcane-Shielded Helm
@@ -70,10 +96,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(35605),	-- Belt of Draconic Runes
 				})),
 				cr(26763, e(619, {	-- Anomalus
-					{	-- The Nexus: Anomalus
-						["achievementID"] = 478,	-- The Nexus
-						["criteriaID"] = 2,	-- Anomalus
-					},
 					i(35598),	--	 Tome of the Lore Keepers
 					i(37149),	-- Helm of Anomalus
 					i(37141),	-- Amulet of Dazzling Light
@@ -83,10 +105,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37150),	-- Rift Striders
 				})),
 				cr(26794, e(620, {	-- Ormorok the Tree-Shaper
-					{	-- The Nexus: Ormorok the Tree-Shaper
-						["achievementID"] = 478,	-- The Nexus
-						["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
-					},
 					i(35601),	-- Drakonid Arm Blade
 					i(35602),	-- Chiseled Stalagmite Pauldrons
 					i(37153),	-- Gloves of the Crystal Gardener
@@ -97,10 +115,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37151),	-- Band of Frosted Thorns
 				})),
 				cr(26723, e(621, {	-- Keristrasza
-					{	-- The Nexus: Keristrasza
-						["achievementID"] = 478,	-- The Nexus
-						["criteriaID"] = 4,	-- Keristrasza
-					},
 					i(35595),	-- Glacier Sharpened Vileblade
 					i(37169),	-- War Mace of Unrequited Love
 					i(37162),	-- Bulwark of the Noble Protector
@@ -131,10 +145,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37730),	-- Cleric's Linen Shoes
 					}))),
 					cr(26731, e(618, {	-- Grand Magus Telestra
-						{	-- Heroic: The Nexus: Grand Magus Telestra
-							["achievementID"] = 490,	-- Heroic: The Nexus
-							["criteriaID"] = 1,	-- Grand Magus Telestra
-						},
 						ach(2150),	-- Split Personality
 						i(35617),	-- Wand of Shimmering Scales
 						i(37134),	-- Telestra's Journal
@@ -146,10 +156,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					})),
 					cr(26763, e(619, {	-- Anomalus
 						ach(2037),	-- Chaos Theory
-						{	-- Heroic: The Nexus: Anomalus
-							["achievementID"] = 490,	-- Heroic: The Nexus
-							["criteriaID"] = 2,	-- Anomalus
-						},
 						i(35598),	-- Tome of the Lore Keepers
 						i(37149),	-- Helm of Anomalus
 						i(37141),	-- Amulet of Dazzling Light
@@ -159,10 +165,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37150),	-- Rift Striders
 					})),
 					cr(26794, e(620, {	-- Ormorok the Tree-Shaper
-						{	-- Heroic: The Nexus: Ormorok the Tree-Shaper
-							["achievementID"] = 490,	-- Heroic: The Nexus
-							["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
-						},
 						i(35601),	-- Drakonid Arm Blade
 						i(35602),	-- Chiseled Stalagmite Pauldrons
 						i(37153),	-- Gloves of the Crystal Gardener
@@ -176,10 +178,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						{	-- Champion of the Frozen Wastes
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 6,			-- Keristrasza slain
-						},
-						{	-- Heroic: The Nexus: Keristrasza
-							["achievementID"] = 490,	-- Heroic: The Nexus
-							["criteriaID"] = 4,	-- Keristrasza
 						},
 						ach(2036),	-- Intense Cold
 						i(35595),	-- Glacier Sharpened Vileblade

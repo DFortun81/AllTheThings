@@ -8,6 +8,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["maps"] = { 158, 159 },
 		["lvl"] = lvlsquish(72, 60, 15),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(480, { -- Azjol-Nerub
+					crit(1, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { 585, 1 },
+					}),
+					crit(2, {	-- Hadronox
+						["_encounter"] = { 586, 1 },
+					}),
+					crit(3, {
+						["_encounter"] = { 587, 1 },
+					}),
+				}),
+				ach(491, { -- Heroic: Azjol-Nerub
+					crit(1, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { 585, 2 },
+					}),
+					crit(2, {	-- Hadronox
+						["_encounter"] = { 586, 2 },
+					}),
+					crit(3, {
+						["_encounter"] = { 587, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(13167, {	-- Death to the Traitor King
 					["qg"] = 26653,	-- Kilix the Unraveler
@@ -75,9 +99,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 			}),
 			d(1, {	-- Normal
-				n(ACHIEVEMENTS, {
-					ach(480),	-- Azjol-Nerub
-				}),
 				n(ZONE_DROPS, {
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
@@ -113,9 +134,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				e(585, {	-- Krik'thir the Gatewatcher
 					["creatureID"] = 28684,	-- Krik'thir the Gatewatcher
 					["groups"] = {
-						ach(480, {	-- Azjol-Nerub: Krik'thir the Gatewatcher
-							["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
-						}),
 						i(35655),	-- Cobweb Machete
 						i(37216),	-- Facade Shield of Glyphs
 						i(157582),	-- Nerubian Mantle
@@ -132,9 +150,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				e(586, {	-- Hadronox
 					["creatureID"] = 28921,	-- Hadronox
 					["groups"] = {
-						ach(480, {	-- Azjol-Nerub: Hadronox
-							["criteriaID"] = 2,	-- Hadronox slain
-						}),
 						i(35658),	-- Life-Staff of the Web Lair
 						i(35660),	-- Spinneret Epaulets
 						i(37222),	-- Egg Sac Robes
@@ -146,9 +161,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				cr(29120, e(587, {	-- Anub'arak
-					crit(3, {	-- Anub'arak slain
-						["achievementID"] = 480,	-- Azjol-Nerub
-					}),
 					i(37235),	-- Crypt Lord's Deft Blade
 					i(37238),	-- Rod of the Fallen Monarch
 					i(37237),	-- Chitin Shell Greathelm
@@ -166,7 +178,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					ach(491),	-- Heroic: Azjol-Nerub
 					n(ZONE_DROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
@@ -222,9 +233,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								28731,	-- Watcher Silthik
 							},
 						}),
-						crit(1, {	-- Krik'thir the Gatewatcher slain
-							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-						}),
 						i(35655),	-- Cobweb Machete
 						i(37216),	-- Facade Shield of Glyphs
 						i(157582),	-- Nerubian Mantle
@@ -239,9 +247,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					})),
 					cr(28921, e(586, {	-- Hadronox
 						ach(1297),	-- Hadronox Denied
-						crit(2, {	-- Hadronox slain
-							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-						}),
 						i(35658),	-- Life-Staff of the Web Lair
 						i(35660),	-- Spinneret Epaulets
 						i(37222),	-- Egg Sac Robes
@@ -253,9 +258,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					})),
 					cr(29120, e(587, {	-- Anub'arak
 						ach(1860),	-- Gotta Go!
-						crit(3, {	-- Anub'arak slain
-							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-						}),
 						crit(4, {	-- Anub'arak slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						}),

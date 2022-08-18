@@ -7,6 +7,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 78,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(4518, {	-- The Halls of Reflection
+					crit(1, { -- Falric
+						["_encounter"] = { 601, 1 },
+					}),
+					crit(2, { -- Marwyn
+						["_encounter"] = { 602, 1 },
+					}),
+					crit(3, { -- Survive the encounter with the Lich King
+						["_encounter"] = { 603, 1 },
+					}),
+				}),
+				ach(4521, {	-- Heroic: The Halls of Reflection
+					crit(1, { -- Falric
+						["_encounter"] = { 601, 2 },
+					}),
+					crit(2, { -- Marwyn
+						["_encounter"] = { 602, 2 },
+					}),
+					crit(3, { -- Survive the encounter with the Lich King
+						["_encounter"] = { 603, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(24500, {	-- Wrath of the Lich King
 					["provider"] = { "n", 37582 },	-- Archmage Koreln <Kirin Tor>
@@ -18,7 +42,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				ach(4518),	-- The Halls of Reflection
 				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
@@ -47,10 +70,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					}),
 				}),
 				cr(38112, e(601, {	-- Falric
-					{
-						["achievementID"] = 4518,	-- The Halls of Reflection
-						["criteriaID"] = 1,	-- Falric slain
-					},
 					i(50290),	-- Falric's Wrist-Chopper
 					i(49827),	-- Ghoulslicer
 					i(50291),	-- Soulsplinter
@@ -65,10 +84,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(50295),	-- Spiked Toestompers
 				})),
 				cr(38113, e(602, {	-- Marwyn
-					{
-						["achievementID"] = 4518,	-- The Halls of Reflection
-						["criteriaID"] = 2,	-- Marwyn slain
-					},
 					i(50296),	-- Orca-Hunter's Harpoon
 					i(49833),	-- Splintered Icecrown Parapet
 					i(49835),	-- Splintered Door of the Citadel
@@ -83,10 +98,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(50260),	-- Ephemeral Snowflake
 				})),
 				cr(36954, e(603, {	-- Escape from Arthas
-					{
-						["achievementID"] = 4518,	-- The Halls of Reflection
-						["criteriaID"] = 3,	--	Survive the encounter with the Lich King
-					},
 					i(49839),	-- Mourning Malice
 					i(50303),	-- Black Icicle
 					i(49845),	-- Bone Golem Scapula
@@ -116,7 +127,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					ach(4521),	-- Heroic: The Halls of Reflection
 					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
@@ -147,10 +157,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						}),
 					}),
 					cr(38112, e(601, {	-- Falric
-						{
-							["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
-							["criteriaID"] = 1,	-- Falric slain
-						},
 						i(50290),	-- Falric's Wrist-Chopper
 						i(49827),	-- Ghoulslicer
 						i(50291),	-- Soulsplinter
@@ -165,10 +171,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						i(50295),	-- Spiked Toestompers
 					})),
 					cr(38113, e(602, {	-- Marwyn
-						{
-							["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
-							["criteriaID"] = 2,	-- Marwyn slain
-						},
 						i(50296),	-- Orca-Hunter's Harpoon
 						i(49833),	-- Splintered Icecrown Parapet
 						i(49835),	-- Splintered Door of the Citadel
@@ -184,10 +186,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					})),
 					cr(36954, e(603, {	-- Escape from Arthas
 						ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
-						{
-							["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
-							["criteriaID"] = 3,	--	Survive the encounter with the Lich King
-						},
 						i(49839),	-- Mourning Malice
 						i(50303),	-- Black Icicle
 						i(49845),	-- Bone Golem Scapula

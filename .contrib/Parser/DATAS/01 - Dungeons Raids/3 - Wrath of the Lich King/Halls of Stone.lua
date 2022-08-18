@@ -6,6 +6,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["mapID"] = HALLS_OF_STONE,
 		["lvl"] = 64,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(485, {	-- Halls of Stone
+					crit(1, { -- Maiden of Grief
+						["_encounter"] = { 605, 1 },
+					}),
+					crit(2, { -- Tribunal of Ages
+						["_encounter"] = { 606, 1 },
+					}),
+					crit(3, { -- Krystallus
+						["_encounter"] = { 604, 1 },
+					}),
+					crit(4, { -- Sjonnir the Ironshaper
+						["_encounter"] = { 607, 1 },
+					}),
+				}),
+				ach(496,  {	-- Heroic: Halls of Stone
+					crit(1, { -- Maiden of Grief
+						["_encounter"] = { 605, 2 },
+					}),
+					crit(2, { -- Sjonnir the Ironshaper
+						["_encounter"] = { 607, 2 },
+					}),
+					crit(3, { -- Tribunal of Ages
+						["_encounter"] = { 606, 2 },
+					}),
+					crit(4, { -- Krystallus
+						["_encounter"] = { 604, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(29850, {	-- Corrupt Constructs
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
@@ -72,10 +102,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				}),
 				cr(27977, e(604, {	-- Krystallus
-					{	-- Halls of Stone: Krystallus
-						["achievementID"] = 485,	-- Halls of Stone
-						["criteriaID"] = 3,	-- Krystallus
-					},
 					i(37649),	-- Quarry Chisel
 					i(35670),	-- Brann's Lost Mining Helmet
 					i(35672),	-- Hollow Geode Helm
@@ -85,10 +111,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37651),	-- The Prospector's Prize
 				})),
 				cr(27975, e(605, {	-- Maiden of Grief
-					{	-- Halls of Stone: Maiden of Grief
-						["achievementID"] = 485,	-- Halls of Stone
-						["criteriaID"] = 1,	-- Maiden of Grief
-					},
 					i(38618),	-- Hammer of Grief
 					i(38613),	-- Chain of Fiery Orbs
 					i(38614),	-- Embrace of Sorrow
@@ -98,10 +120,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(38617),	-- Woeful Band
 				})),
 				cr(28234, e(606, {	-- Tribunal of Ages
-					{	-- Halls of Stone: Tribunal of Ages
-						["achievementID"] = 485,	-- Halls of Stone
-						["criteriaID"] = 2,	-- Tribunal of Ages
-					},
 					i(37653),	-- Sword of Justice
 					i(37655),	-- Mantle of the Tribunal
 					i(35677),	-- Cosmos Vestments
@@ -112,10 +130,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37654),	-- Sabaton of the Ages
 				})),
 				cr(27978, e(607, {	-- Sjonnir The Ironshaper
-					{	-- Halls of Stone: Sjonnir The Ironshaper
-						["achievementID"] = 485,	-- Halls of Stone
-						["criteriaID"] = 4,	-- Sjonnir The Ironshaper
-					},
 					i(37667),	-- The Fleshshaper
 					i(35679),	-- Static Cowl
 					i(35680),	-- Amulet of Wills
@@ -181,10 +195,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(42780),	-- Relics of Ulduar
 					}),
 					cr(27977, e(604, {	-- Krystallus
-						{	-- Heroic: Halls of Stone: Krystallus
-							["achievementID"] = 496,	-- Heroic: Halls of Stone
-							["criteriaID"] = 4,	-- Krystallus
-						},
 						i(37649),	-- Quarry Chisel
 						i(35670),	-- Brann's Lost Mining Helmet
 						i(35672),	-- Hollow Geode Helm
@@ -194,13 +204,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37651),	-- The Prospector's Prize
 					})),
 					cr(27975, e(605, {	-- Maiden of Grief
-						{	-- Good Grief
-							["achievementID"] = 1866,	-- Good Grief
-						},
-						{	-- Heroic: Halls of Stone: Maiden of Grief
-							["achievementID"] = 496,	-- Heroic: Halls of Stone
-							["criteriaID"] = 1,	-- Maiden of Grief
-						},
+						ach(1866),	-- Good Grief
 						i(38618),	-- Hammer of Grief
 						i(38613),	-- Chain of Fiery Orbs
 						i(38614),	-- Embrace of Sorrow
@@ -210,13 +214,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(38617),	-- Woeful Band
 					})),
 					cr(28234, e(606, {	-- Tribunal of Ages
-						{	-- Brann Spankin' New
-							["achievementID"] = 2154,	-- Brann Spankin' New
-						},
-						{	-- Heroic: Halls of Stone: Tribunal of Ages
-							["achievementID"] = 496,	-- Heroic: Halls of Stone
-							["criteriaID"] = 3,	-- Tribunal of Ages
-						},
+						ach(2154),	-- Brann Spankin' New
 						i(37653),	-- Sword of Justice
 						i(37655),	-- Mantle of the Tribunal
 						i(35677),	-- Cosmos Vestments
@@ -227,17 +225,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37654),	-- Sabaton of the Ages
 					})),
 					cr(27978, e(607, {	-- Sjonnir The Ironshaper
-						{	-- Abuse the Ooze
-							["achievementID"] = 2155,	-- Abuse the Ooze
-						},
 						{	-- Champion of the Frozen Wastes
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 5,			-- Sjonnir The Ironshaper slain
 						},
-						{	-- Heroic: Halls of Stone: Sjonnir The Ironshaper
-							["achievementID"] = 496,	-- Heroic: Halls of Stone
-							["criteriaID"] = 2,	-- Sjonnir The Ironshaper
-						},
+						ach(2155),	-- Abuse the Ooze
 						i(37667),	-- The Fleshshaper
 						i(35679),	-- Static Cowl
 						i(35680),	-- Amulet of Wills

@@ -7,6 +7,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
 		["lvl"] = 62,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(1865, {	-- Lockdown!
+					crit(1, { -- Xevozz
+						["_encounter"] = { 629, 1 },
+					}),
+					crit(2, { -- Levanthor
+						["_encounter"] = { 630, 1 },
+					}),
+					crit(3, { -- Ichoron
+						["_encounter"] = { 628, 1 },
+					}),
+					crit(4, { -- Zuramat the Obliterator
+						["_encounter"] = { 631, 1 },
+					}),
+					crit(5, { -- Erekem
+						["_encounter"] = { 626, 1 },
+					}),
+					crit(6, { -- Moragg
+						["_encounter"] = { 627, 1 },
+					}),
+				}),
+				ach(483),	-- The Violet Hold
+				ach(494),	-- Heroic: The Violet Hold
+			}),
 			n(QUESTS, {
 				q(29830,{	-- Containment
 					["provider"] = { "n", 30658 },	-- Lieutenant Sinclari

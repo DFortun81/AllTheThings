@@ -7,6 +7,24 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 75,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(4516, {	-- The Forge of Souls
+					crit(1, { -- Bronjahm
+						["_encounter"] = { 615, 1 },
+					}),
+					crit(2, { -- Devourer of Souls
+						["_encounter"] = { 616, 1 },
+					}),
+				}),
+				ach(4519, {	-- Heroic: The Forge of Souls
+					crit(1, { -- Bronjahm
+						["_encounter"] = { 615, 2 },
+					}),
+					crit(2, { -- Devourer of Souls
+						["_encounter"] = { 616, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(24499, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
@@ -30,7 +48,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				ach(4516),	-- The Forge of Souls
 				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
@@ -71,10 +88,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					}),
 				}),
 				cr(36497, e(615, {	-- Brojahm
-					{
-						["achievementID"] = 4516,	-- The Forge of Souls
-						["criteriaID"] = 1,	-- Brojahm slain
-					},
 					i(50316),	-- Papa's Brand New Bag
 					i(50317),	-- Papa's New Bag
 					i(49783),	-- Lucky Old Sun
@@ -90,10 +103,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(49784),	-- Minister's Number One Legplates
 				})),
 				cr(36502, e(616, {	-- Devourer of Souls
-					{
-						["achievementID"] = 4516,	-- The Forge of Souls
-						["criteriaID"] = 2,	-- Devourer of Souls slain
-					},
 					i(49790),	-- Blood Boil Lancet
 					i(49793),	-- Tower of the Mouldering Corpse
 					i(50203),	-- Blood Weeper
@@ -123,7 +132,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					ach(4519),	-- Heroic: The Forge of Souls
 					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
@@ -151,10 +159,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						}),
 					}),
 					cr(36497, e(615, {	-- Brojahm
-						{
-							["achievementID"] = 4519,	-- Heroic: The Forge of Souls
-							["criteriaID"] = 1,	-- Brojahm slain
-						},
 						ach(4522),	-- Soul Power
 						i(50316),	-- Papa's Brand New Bag
 						i(50317),	-- Papa's New Bag
@@ -171,13 +175,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						i(49784),	-- Minister's Number One Legplates
 					})),
 					cr(36502, e(616, {	-- Devourer of Souls
-						{
-							["achievementID"] = 4519,	-- Heroic: The Forge of Souls
-							["criteriaID"] = 2,	-- Devourer of Souls slain
-						},
-						{	-- Three Faced
-							["achievementID"] = 4523,	-- Three Faced
-						},
+						ach(4523),	-- Three Faced
 						i(49790),	-- Blood Boil Lancet
 						i(49793),	-- Tower of the Mouldering Corpse
 						i(50203),	-- Blood Weeper

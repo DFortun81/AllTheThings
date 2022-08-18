@@ -11,6 +11,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["maps"] = { 131 },
 		["lvl"] = 65,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(479, {	-- The Culling of Stratholme
+					crit(1, { -- Meathook
+						["_encounter"] = { 611, 1 },
+					}),
+					crit(2, { -- Chrono-Lord Epoch
+						["_encounter"] = { 613, 1 },
+					}),
+					crit(3, { -- Salramm the Fleshcrafter
+						["_encounter"] = { 612, 1 },
+					}),
+					crit(4, { -- Mal'Ganis
+						["_encounter"] = { 614, 1 },
+					}),
+				}),
+				ach(500,  {	-- Heroic: The Culling of Stratholme
+					crit(1, { -- Meathook
+						["_encounter"] = { 611, 2 },
+					}),
+					crit(2, { -- Chrono-Lord Epoch
+						["_encounter"] = { 613, 2 },
+					}),
+					crit(3, { -- Salramm the Fleshcrafter
+						["_encounter"] = { 612, 2 },
+					}),
+					crit(4, { -- Mal'Ganis
+						["_encounter"] = { 614, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(13149, {	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
@@ -97,9 +127,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			d(1,   {	-- Normal
 				cr(26529, e(611, {	-- Meathook
-					crit(1, {	-- Meathook
-						["achievementID"] = 479,	-- The Culling of Stratholme
-					}),
 					i(37081),	-- Meathook's Slicer
 					i(37679),	-- Spaulders of the Abomination
 					i(37678),	-- Bile-Cured Gloves
@@ -110,9 +137,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37079),	-- Enchanted Wire Stitching
 				})),
 				cr(26530, e(612, {	-- Salramm the Fleshcrafter
-					crit(3, {	-- Salramm the Fleshcrafter
-						["achievementID"] = 479,	-- The Culling of Stratholme
-					}),
 					i(37681),	-- Gavel of the Fleshcrafter
 					i(37086),	-- Tome of Salramm
 					i(37684),	-- Forgotten Shadow Hood
@@ -124,9 +148,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(157563),	-- Freshly Sewn Leggings
 				})),
 				cr(26532, e(613, {	-- Chrono-Lord Epoch
-					crit(2, {	-- Chrono-Lord Epoch
-						["achievementID"] = 479,	-- The Culling of Stratholme
-					}),
 					i(37099),	-- Sempiternal Staff
 					i(37096),	-- Necklace of the Chrono-Lord
 					i(37686),	-- Cracked Epoch Grasps
@@ -137,9 +158,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(37685),	-- Mobius Band
 				})),
 				cr(26533, e(614, {	-- Mal'Ganis
-					crit(4, {	-- Mal'Ganis
-						["achievementID"] = 479,	-- The Culling of Stratholme
-					}),
 					i(37108),	-- Dreadlord's Blade
 					i(37112),	-- Beguiling Scepter
 					i(37693),	-- Greed
@@ -163,9 +181,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				["lvl"] = 80,
 				["groups"] = {
 					cr(26529, e(611, {	-- Meathook
-						crit(1, {	-- Meathook
-							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-						}),
 						i(37081),	-- Meathook's Slicer
 						i(37679),	-- Spaulders of the Abomination
 						i(37678),	-- Bile-Cured Gloves
@@ -179,9 +194,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
 					}),
 					cr(26530, e(612, {	-- Salramm the Fleshcrafter
-						crit(3, {	-- Salramm the Fleshcrafter
-							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-						}),
 						i(37681),	-- Gavel of the Fleshcrafter
 						i(37086),	-- Tome of Salramm
 						i(37684),	-- Forgotten Shadow Hood
@@ -193,9 +205,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(157563),	-- Freshly Sewn Leggings
 					})),
 					cr(26532, e(613, {	-- Chrono-Lord Epoch
-						crit(2, {	-- Chrono-Lord Epoch
-							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
-						}),
 						i(37099),	-- Sempiternal Staff
 						i(37096),	-- Necklace of the Chrono-Lord
 						i(37686),	-- Cracked Epoch Grasps
@@ -212,9 +221,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					cr(26533, e(614, {	-- Mal'Ganis
 						crit(12, {	-- Mal'Ganis slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-						}),
-						crit(4, {	-- Mal'Ganis
-							["achievementID"] = 500,	-- Heroic: The Culling of Stratholme
 						}),
 						i(37108),	-- Dreadlord's Blade
 						i(37112),	-- Beguiling Scepter

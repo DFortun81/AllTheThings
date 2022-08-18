@@ -7,6 +7,30 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 		["coord"] = { 52.3, 89.3, ICECROWN },
 		["lvl"] = 78,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(4517, {	-- The Pit of Saron
+					crit(1, { -- Forgemaster Garfrost
+						["_encounter"] = { 608, 1 },
+					}),
+					crit(2, { -- Ick and Krick
+						["_encounter"] = { 609, 1 },
+					}),
+					crit(3, { -- Scourgelord Tyrannus and Rimefang
+						["_encounter"] = { 610, 1 },
+					}),
+				}),
+				ach(4520, {	-- Heroic: The Pit of Saron
+					crit(1, { -- Forgemaster Garfrost
+						["_encounter"] = { 608, 2 },
+					}),
+					crit(2, { -- Ick and Krick
+						["_encounter"] = { 609, 2 },
+					}),
+					crit(3, { -- Scourgelord Tyrannus and Rimefang
+						["_encounter"] = { 610, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(24710, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24498,	-- The Path to the Citadel
@@ -40,7 +64,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 				}),
 			}),
 			d(1,   {	-- Normal
-				ach(4517),	-- The Pit of Saron
 				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
@@ -91,10 +114,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					}),
 				}),
 				cr(36494, e(608, {	-- Forgemaster Garfrost
-					{	-- Forgemaster Garfrost slain (The Pit of Saron)
-						["achievementID"] = 4517,	-- The Pit of Saron
-						["criteriaID"] = 1,	-- Forgemaster Garfrost slain
-					},
 					i(49802),	-- Garfrost's Two-Ton Hammer
 					i(49801),	-- Unspeakable Secret
 					i(50227),	-- Surgeon's Needle
@@ -109,10 +128,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(49803),	-- Ring of Carnelian and Bone
 				})),
 				cr(36476, e(609, {	-- Ick and Krick
-					{	-- Ick and Krick slain (The Pit of Saron)
-						["achievementID"] = 4517,	-- The Pit of Saron
-						["criteriaID"] = 2,	-- Ick and Krick slain
-					},
 					i(49807),	-- Krick's Beetle Stabber
 					i(50262),	-- Felglacier Bolter
 					i(50266),	-- Ancient Polar Bear Hide
@@ -127,10 +142,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(50235),	-- Ick's Rotting Thumb
 				})),
 				cr(36658, e(610, {	-- Scourgelord Tyrannus
-					{	-- Scourgelord Tyrannus slain (The Pit of Saron)
-						["achievementID"] = 4517,	-- The Pit of Saron
-						["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
-					},
 					i(50273),	-- Engraved Gargoyle Femur
 					i(50267),	-- Tyrannical Beheader
 					i(50268),	-- Rimefang's Claw
@@ -160,7 +171,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					ach(4520),	-- Heroic: The Pit of Saron
 					n(ZONE_DROPS, {
 						["groups"] = {
 							i(50379),	-- Battered Hilt (Alliance)
@@ -186,10 +196,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					}),
 					cr(36494, e(608, {	-- Forgemaster Garfrost
 						ach(4524),	-- Doesn't Go to Eleven
-						{	-- Forgemaster Garfrost slain (Heroic: The Pit of Saron)
-							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
-							["criteriaID"] = 1,	-- Forgemaster Garfrost slain
-						},
 						i(49802),	-- Garfrost's Two-Ton Hammer
 						i(49801),	-- Unspeakable Secret
 						i(50227),	-- Surgeon's Needle
@@ -204,10 +210,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 						i(49803),	-- Ring of Carnelian and Bone
 					})),
 					cr(36476, e(609, {	-- Ick and Krick
-						{	-- Ick and Krick slain (Heroic: The Pit of Saron)
-							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
-							["criteriaID"] = 2,	-- Ick and Krick slain
-						},
 						i(49807),	-- Krick's Beetle Stabber
 						i(50262),	-- Felglacier Bolter
 						i(50266),	-- Ancient Polar Bear Hide
@@ -223,10 +225,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					})),
 					ach(4525),	-- Don't Look Up
 					cr(36658, e(610, {	-- Scourgelord Tyrannus
-						{	-- Scourgelord Tyrannus slain (Heroic: The Pit of Saron)
-							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
-							["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
-						},
 						i(50273),	-- Engraved Gargoyle Femur
 						i(50267),	-- Tyrannical Beheader
 						i(50268),	-- Rimefang's Claw

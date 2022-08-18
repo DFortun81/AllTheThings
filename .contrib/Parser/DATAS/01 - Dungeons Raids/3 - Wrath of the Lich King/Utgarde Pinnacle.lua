@@ -9,8 +9,34 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(499),	-- Heroic: Utgarde Pinnacle
-				ach(488),	-- Utgarde Pinnacle
+				ach(488, { -- Utgarde Pinnacle
+					crit(1, { -- Skadi the Ruthless
+						["_encounter"] = { 643, 1 },
+					}),
+					crit(2, { -- Svala Sorrowgrave
+						["_encounter"] = { 641, 1 },
+					}),
+					crit(3, { -- Gortok Palehoof
+						["_encounter"] = { 642, 1 },
+					}),
+					crit(4, { -- King Ymiron
+						["_encounter"] = { 644, 1 },
+					}),
+				}),
+				ach(499, { -- Heroic: Utgarde Pinnacle
+					crit(1, { -- Svala Sorrowgrave
+						["_encounter"] = { 641, 2 },
+					}),
+					crit(2, { -- Gortok Palehoof
+						["_encounter"] = { 642, 2 },
+					}),
+					crit(3, { -- Skadi the Ruthless
+						["_encounter"] = { 643, 2 },
+					}),
+					crit(4, { -- King Ymiron
+						["_encounter"] = { 644, 2 },
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(13131, {	-- Junk in My Trunk
@@ -138,10 +164,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						29281,	-- Svala Sorrowgrave useless form
 					},
 					["groups"] = {
-						{	-- Utgarde Pinnacle: Svala Sorrowgrave
-							["achievementID"] = 488,	-- Utgarde Pinnacle
-							["criteriaID"] = 2,	-- Svala Sorrowgrave
-						},
 						i(37037),	-- Ritualistic Arthame
 						i(37038),	-- Brazier Igniter
 						-- #if AFTER 7.3.5
@@ -159,10 +181,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				e(642, {	-- Gortok Palehoof
 					["creatureID"] = 26687,	-- Gortok Palehoof
 					["groups"] = {
-						{	-- Utgarde Pinnacle: Gortok Palehoof
-							["achievementID"] = 488,	-- Utgarde Pinnacle
-							["criteriaID"] = 3,	-- Gortok Palehoof
-						},
 						i(37050),	-- Trophy Gatherer
 						i(37051),	-- Seal of Valgarde
 						-- #if AFTER 7.3.5
@@ -180,10 +198,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				e(643, {	-- Skadi the Ruthless
 					["creatureID"] = 26693,	-- Skadi the Ruthless
 					["groups"] = {
-						{	-- Utgarde Pinnacle: Skadi the Ruthless
-							["achievementID"] = 488,	-- Utgarde Pinnacle
-							["criteriaID"] = 1,	-- Skadi the Ruthless
-						},
 						-- #if AFTER 7.3.5
 						i(37384),	-- Staff of Wayward Principles (7.3.5 - Used to be only Heroic Mode)
 						i(37377),	-- Netherbreath Spellblade (7.3.5 - Used to be only Heroic Mode)
@@ -204,10 +218,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				e(644, {	-- King Ymiron
 					["creatureID"] = 26861,	-- King Ymiron
 					["groups"] = {
-						{	-- Utgarde Pinnacle: King Ymiron
-							["achievementID"] = 488,	-- Utgarde Pinnacle
-							["criteriaID"] = 4,	-- King Ymiron
-						},
 						i(41797),	-- Design: Austere Earthsiege Diamond
 						i(37060),	-- Jeweled Coronation Sword
 						-- #if AFTER 7.3.5
@@ -242,13 +252,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(641, {	-- Svala Sorrowgrave
 						["creatureID"] = 26668,	-- Svala Sorrowgrave
 						["groups"] = {
-							{	-- Heroic: Utgarde Pinnacle: Svala Sorrowgrave
-								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
-								["criteriaID"] = 1,	-- Svala Sorrowgrave
-							},
-							{	-- The Incredible Hulk
-								["achievementID"] = 2043,	-- The Incredible Hulk
-							},
+							ach(2043),	-- The Incredible Hulk
 							-- #if AFTER 7.3.5
 							i(37037),	-- Ritualistic Arthame (7.3.5 - Used to be only Normal Mode)
 							i(37038),	-- Brazier Igniter (7.3.5 - Used to be only Normal Mode)
@@ -266,10 +270,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(642, {	-- Gortok Palehoof
 						["creatureID"] = 26687,	-- Gortok Palehoof
 						["groups"] = {
-							{	-- Heroic: Utgarde Pinnacle: Gortok Palehoof
-								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
-								["criteriaID"] = 2,	-- Gortok Palehoof
-							},
 							-- #if AFTER 7.3.5
 							i(37050),	-- Trophy Gatherer (7.3.5 - Used to be only Normal Mode)
 							i(37051),	-- Seal of Valgarde (7.3.5 - Used to be only Normal Mode)
@@ -287,16 +287,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(643, {	-- Skadi the Ruthless
 						["creatureID"] = 26693,	-- Skadi the Ruthless
 						["groups"] = {
-							{	-- Lodi Dodi We Loves the Skadi
-								["achievementID"] = 1873,	-- Lodi Dodi We Loves the Skadi
-							},
-							{	-- My Girl Loves to Skadi All the Time
-								["achievementID"] = 2156,	-- My Girl Loves to Skadi All the Time
-							},
-							{	-- Heroic: Utgarde Pinnacle: Skadi the Ruthless
-								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
-								["criteriaID"] = 3,	-- Skadi the Ruthless
-							},
+							ach(1873),	-- Lodi Dodi We Loves the Skadi
+							ach(2156),	-- My Girl Loves to Skadi All the Time
 							i(44151),	-- Blue Proto-Drake (MOUNT!)
 							i(37384),	-- Staff of Wayward Principles
 							i(37377),	-- Netherbreath Spellblade
@@ -318,16 +310,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(644, {	-- King Ymiron
 						["creatureID"] = 26861,	-- King Ymiron
 						["groups"] = {
-							{	-- King's Bane
-								["achievementID"] = 2157,	-- King's Bane
-							},
+							ach(2157),	-- King's Bane
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 								["criteriaID"] = 11,		-- King Ymiron slain
-							},
-							{	-- Heroic: Utgarde Pinnacle: King Ymiron
-								["achievementID"] = 499,	-- Heroic: Utgarde Pinnacle
-								["criteriaID"] = 4,	-- King Ymiron
 							},
 							i(41797),	-- Design: Austere Earthsiege Diamond (7.3.5 - Used to be only Normal Mode)
 							-- #if AFTER 7.3.5
