@@ -10,30 +10,37 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(488, { -- Utgarde Pinnacle
-					crit(1, { -- Skadi the Ruthless
+					crit(5463, { -- Skadi the Ruthless
 						["_encounter"] = { 643, 1 },
 					}),
-					crit(2, { -- Svala Sorrowgrave
+					crit(5465, { -- Svala Sorrowgrave
 						["_encounter"] = { 641, 1 },
 					}),
-					crit(3, { -- Gortok Palehoof
+					crit(5466, { -- Gortok Palehoof
 						["_encounter"] = { 642, 1 },
 					}),
-					crit(4, { -- King Ymiron
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
+					crit(5631, { -- King Ymiron
 						["_encounter"] = { 644, 1 },
 					}),
+					-- #else
+					crit(5464, { -- King Ymiron
+						["_encounter"] = { 644, 1 },
+					}),
+					-- #endif
 				}),
 				ach(499, { -- Heroic: Utgarde Pinnacle
-					crit(1, { -- Svala Sorrowgrave
+					crit(6864, { -- Svala Sorrowgrave
 						["_encounter"] = { 641, 2 },
 					}),
-					crit(2, { -- Gortok Palehoof
+					crit(6865, { -- Gortok Palehoof
 						["_encounter"] = { 642, 2 },
 					}),
-					crit(3, { -- Skadi the Ruthless
+					crit(6863, { -- Skadi the Ruthless
 						["_encounter"] = { 643, 2 },
 					}),
-					crit(4, { -- King Ymiron
+					crit(5618, { -- King Ymiron
 						["_encounter"] = { 644, 2 },
 					}),
 				}),

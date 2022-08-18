@@ -8871,10 +8871,15 @@ local criteriaFields = {
 		if t.encounterID then
 			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
-		if t.achievementID then
-			local m = GetAchievementNumCriteria(t.achievementID);
-			if m and t.criteriaID <= m then
-				return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
+		local achievementID = t.achievementID;
+		if achievementID then
+			local criteriaID = t.criteriaID;
+			if criteriaID then
+				if criteriaID <= GetAchievementNumCriteria(achievementID) then
+					return GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+				elseif criteriaID > 50 then
+					return GetAchievementCriteriaInfoByID(achievementID, criteriaID);
+				end
 			end
 		end
 		return L["WRONG_FACTION"];
@@ -8934,8 +8939,13 @@ local criteriaFields = {
 		local achievementID = t.achievementID;
 		if achievementID then
 			if app.CurrentCharacter.Achievements[achievementID] then return true; end
-			if t.criteriaID and t.criteriaID <= (GetAchievementNumCriteria(achievementID) or -1) then
-				return select(3, GetAchievementCriteriaInfo(achievementID, t.criteriaID, true));
+			local criteriaID = t.criteriaID;
+			if criteriaID then
+				if criteriaID <= GetAchievementNumCriteria(achievementID) then
+					return GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+				elseif criteriaID > 50 then
+					return GetAchievementCriteriaInfoByID(achievementID, criteriaID);
+				end
 			end
 		end
 	end,
@@ -8987,8 +8997,8 @@ harvesterFields.text = function(t)
 			if totalCriteria > 0 then
 				local criteria = {};
 				for criteriaID=totalCriteria,1,-1 do
-					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString = GetAchievementCriteriaInfo(achievementID, criteriaID);
-					local crit = { ["criteriaID"] = criteriaID };
+					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID);
+					local crit = { ["criteriaID"] = criteriaID, ["criteriaUID"] = criteriaUID };
 					if criteriaString ~= nil and criteriaString ~= "" then
 						crit.name = criteriaString;
 					end
