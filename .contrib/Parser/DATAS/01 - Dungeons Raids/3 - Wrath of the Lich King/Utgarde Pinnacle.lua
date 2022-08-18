@@ -89,82 +89,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				{	-- Bands of Fading Light
-					["itemID"] = 37590,	-- Bands of Fading Light
-					["crs"] = {
-						26672,	-- Bloodthirsty Tundra Wolf
-						26550,	-- Dragonflayer Deathseeker
-						26553,	-- Dragonflayer Fanatic
-						26554,	-- Dragonflayer Seer
-						26555,	-- Scourge Hulk
-						26696,	-- Ymirjar Berserker
-						26694,	-- Ymirjar Dusk Shaman
-						28368,	-- Ymirjar Necromancer
-						26669,	-- Ymirjar Savage
-					},
-				},
-				{	-- Berserker's Sabatons
-					["itemID"] = 37068,	-- Berserker's Sabatons
-					["crs"] = {
-						26672,	-- Bloodthirsty Tundra Wolf
-						26550,	-- Dragonflayer Deathseeker
-						26553,	-- Dragonflayer Fanatic
-						26554,	-- Dragonflayer Seer
-						26555,	-- Scourge Hulk
-						26696,	-- Ymirjar Berserker
-						26694,	-- Ymirjar Dusk Shaman
-						26670,	-- Ymirjar Flesh Hunter
-						28368,	-- Ymirjar Necromancer
-						26669,	-- Ymirjar Savage
-					},
-				},
-				{	-- Dragonflayer Seer's Bindings
-					["itemID"] = 37069,	-- Dragonflayer Seer's Bindings
-					["crs"] = {
-						26672,	-- Bloodthirsty Tundra Wolf
-						26550,	-- Dragonflayer Deathseeker
-						26553,	-- Dragonflayer Fanatic
-						26554,	-- Dragonflayer Seer
-						26555,	-- Scourge Hulk
-						26696,	-- Ymirjar Berserker
-						26694,	-- Ymirjar Dusk Shaman
-						26670,	-- Ymirjar Flesh Hunter
-						28368,	-- Ymirjar Necromancer
-						26669,	-- Ymirjar Savage
-					},
-				},
-				{	-- Tundra Wolf Boots
-					["itemID"] = 37070,	-- Tundra Wolf Boots
-					["crs"] = {
-						26672,	-- Bloodthirsty Tundra Wolf
-						26550,	-- Dragonflayer Deathseeker
-						26553,	-- Dragonflayer Fanatic
-						26554,	-- Dragonflayer Seer
-						26555,	-- Scourge Hulk
-						26696,	-- Ymirjar Berserker
-						26694,	-- Ymirjar Dusk Shaman
-						26670,	-- Ymirjar Flesh Hunter
-						28368,	-- Ymirjar Necromancer
-						26669,	-- Ymirjar Savage
-					},
-				},
-				{	-- Ymirjar Physician's Robe
-					["itemID"] = 37587,	-- Ymirjar Physician's Robe
-					["crs"] = {
-						26672,	-- Bloodthirsty Tundra Wolf
-						26550,	-- Dragonflayer Deathseeker
-						26553,	-- Dragonflayer Fanatic
-						26554,	-- Dragonflayer Seer
-						26555,	-- Scourge Hulk
-						26696,	-- Ymirjar Berserker
-						26694,	-- Ymirjar Dusk Shaman
-						28368,	-- Ymirjar Necromancer
-						26669,	-- Ymirjar Savage
-					},
-				},
-				i(37372),	-- Harpoon
+				-- #if AFTER 7.3.5
+				i(37590),	-- Bands of Fading Light
+				i(37068),	-- Berserker's Sabatons
+				i(37069),	-- Dragonflayer Seer's Bindings
+				i(37070),	-- Tundra Wolf Boots
+				i(37587),	-- Ymirjar Physician's Robe
+				-- #endif
+				i(37372, {	-- Harpoon
+					["description"] = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
+					["cr"] = 26692,	-- Ymirjar Harpooner
+				}),
 			}),
 			d(1, {	-- Normal
+				-- #if BEFORE 7.3.5
+				n(ZONE_DROPS, {
+					i(37068),	-- Berserker's Sabatons
+					i(37069),	-- Dragonflayer Seer's Bindings
+					i(37070),	-- Tundra Wolf Boots
+				}),
+				-- #endif
 				e(641, {	-- Svala Sorrowgrave
 					["crs"] = {
 						26668,	-- Svala Sorrowgrave
@@ -256,6 +200,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			d(2, {	-- Heroic
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
+					-- #if BEFORE 7.3.5
+					n(ZONE_DROPS, {
+						i(37590),	-- Bands of Fading Light
+						i(37587),	-- Ymirjar Physician's Robe
+					}),
+					-- #endif
 					e(641, {	-- Svala Sorrowgrave
 						["creatureID"] = 26668,	-- Svala Sorrowgrave
 						["groups"] = {
@@ -320,7 +270,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							ach(2157),	-- King's Bane
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 11,		-- King Ymiron slain
+								["criteriaID"] = 5618,		-- King Ymiron slain [index 11 in retail]
 							},
 							i(41797),	-- Design: Austere Earthsiege Diamond (7.3.5 - Used to be only Normal Mode)
 							-- #if AFTER 7.3.5
