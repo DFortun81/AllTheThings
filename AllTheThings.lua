@@ -2585,6 +2585,18 @@ end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
+-- Calls the Blizz API to specifically check & cache whether a questID is completed if not already cached as completed
+local IsQuestFlaggedCompletedForce = function(questID)
+	if questID then
+		if CompletedQuests[questID] then
+			return true;
+		end
+		if C_QuestLog.IsQuestFlaggedCompleted(questID) then
+			CompletedQuests[questID] = true;
+			return true;
+		end
+	end
+end
 -- Returns true if any provided questID is currently completed for the current character
 local IsAnyQuestFlaggedCompleted = function(quests)
 	if quests then
@@ -8154,7 +8166,7 @@ local questFields = {
 			rawset(t, "prereqs", prereqs);
 			wipe(prereqs);
 			for _,sourceQuestID in ipairs(t.sourceQuests) do
-				if not IsQuestFlaggedCompleted(sourceQuestID) then
+				if not IsQuestFlaggedCompletedForce(sourceQuestID) then
 					sq = app.SearchForObject("questID", sourceQuestID);
 					if sq then
 						filter = app.CurrentCharacterFilters(sq);
