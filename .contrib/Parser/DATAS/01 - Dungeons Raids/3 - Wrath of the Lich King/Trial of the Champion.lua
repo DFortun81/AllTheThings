@@ -41,9 +41,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(12545, { -- Deathstalker Visceri
 						["_encounter"] = { 634, 2 },
 					}),
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(12312, { -- Runok Wildmane
 						["_encounter"] = { 634, 2 },
 					}),
+					-- #else
+					crit(12320, { -- Runok Wildmane
+						["_encounter"] = { 634, 2 },
+					}),
+					-- #endif
 					crit(12543, { -- Eressea Dawnsinger
 						["_encounter"] = { 634, 2 },
 					}),
@@ -93,9 +100,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(12545, { -- Lana Stouthammer
 						["_encounter"] = { 634, 2 },
 					}),
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(12312, { -- Colosos
 						["_encounter"] = { 634, 2 },
 					}),
+					-- #else
+					crit(12320, { -- Colosos
+						["_encounter"] = { 634, 2 },
+					}),
+					-- #endif
 					crit(12543, { -- Ambrose Boltspark
 						["_encounter"] = { 634, 2 },
 					}),
