@@ -1106,8 +1106,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 				}),
-				q(28143, {	-- To the Withering (didn't encounter this version in game)
-					["u"] = NEVER_IMPLEMENTED,
+				q(28143, {	-- To the Withering
+					-- (confirmed 2022-08-18, alliance, 51)
+					["coord"] = { 30.4, 49.3, THOUSAND_NEEDLES },
 					["sourceQuest"] = 28140,	-- The Elder Crone
 				}),
 				q(28142, {	-- To the Withering
