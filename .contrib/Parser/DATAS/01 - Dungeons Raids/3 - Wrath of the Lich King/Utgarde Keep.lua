@@ -254,6 +254,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37196),	-- Runecaster's Mantle
 						i(37197),	-- Tattered Castle Drape
 					}),
+					-- #if BEFORE CATA
+					n(COMMON_BOSS_DROPS, {
+						currency(101, {	-- Emblem of Heroism
+							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+						}),
+					}),
+					-- #endif
 					e(638, {	-- Prince Keleseth <The San'layn>
 						["creatureID"] = 23953,	-- Prince Keleseth <The San'layn>
 						["groups"] = {

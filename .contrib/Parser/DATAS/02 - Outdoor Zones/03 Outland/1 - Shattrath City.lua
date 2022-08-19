@@ -591,6 +591,13 @@ local MADAME_RUBY_GROUPS = {
 	}),
 };
 local ZURII_YURIAL_GROUPS = {};
+-- #if AFTER CATA
+local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
+-- #elseif AFTER WRATH
+local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
+-- #else
+local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
+-- #endif
 root("Zones", {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
@@ -2307,45 +2314,24 @@ root("Zones", {
 							-- #endif
 
 							-- #if BEFORE 6.0.1
-							-- #if AFTER CATA
 							i(32227, {	-- Crimson Spinel
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
 							i(32228, {	-- Empyrean Sapphire
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
 							i(32229, {	-- Lionseye
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
 							i(32231, {	-- Pyrestone
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
 							i(32249, {	-- Seaspray Emerald
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
 							i(32230, {	-- Shadowsong Amethyst
-								["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+								["cost"] = EPIC_GEM_COSTS,
 							}),
-							-- #else
-							i(32227, {	-- Crimson Spinel
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							i(32228, {	-- Empyrean Sapphire
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							i(32229, {	-- Lionseye
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							i(32231, {	-- Pyrestone
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							i(32249, {	-- Seaspray Emerald
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							i(32230, {	-- Shadowsong Amethyst
-								["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-							}),
-							-- #endif
 							-- #endif
 						},
 					})),

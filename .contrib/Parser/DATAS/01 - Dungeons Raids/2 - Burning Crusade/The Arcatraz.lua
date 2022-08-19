@@ -261,7 +261,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							i(29434),	-- Badge of Justice
+							BADGE_OF_JUSTICE,
 							-- #endif
 							i(30582),	-- Deadly Fire Opal
 							i(30581),	-- Durable Fire Opal

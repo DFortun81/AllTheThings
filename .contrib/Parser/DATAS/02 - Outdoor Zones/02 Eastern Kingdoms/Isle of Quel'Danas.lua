@@ -1317,6 +1317,13 @@ local SORYN_GROUPS = {
 	}),
 	-- #endif
 };
+-- #if AFTER CATA
+local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
+-- #elseif AFTER WRATH
+local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
+-- #else
+local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
+-- #endif
 root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
@@ -2009,45 +2016,24 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #endif
 
 						-- #if BEFORE 6.0.1
-						-- #if AFTER CATA
 						i(32227, {	-- Crimson Spinel
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32228, {	-- Empyrean Sapphire
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32229, {	-- Lionseye
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32231, {	-- Pyrestone
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32249, {	-- Seaspray Emerald
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32230, {	-- Shadowsong Amethyst
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
-						-- #else
-						i(32227, {	-- Crimson Spinel
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32228, {	-- Empyrean Sapphire
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32229, {	-- Lionseye
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32231, {	-- Pyrestone
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32249, {	-- Seaspray Emerald
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32230, {	-- Shadowsong Amethyst
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						-- #endif
 						-- #endif
 					},
 				})),

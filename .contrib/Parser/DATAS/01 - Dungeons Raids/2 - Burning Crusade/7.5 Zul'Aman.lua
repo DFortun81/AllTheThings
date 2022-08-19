@@ -6,7 +6,6 @@ local AMANI_HEX_STICK = i(33865, {	-- Amani Hex Stick
 	["description"] = "WARNING: This will despawn if you leave the instance!",
 	-- #endif
 });
-local BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
 local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner (RECIPE!)
 local MOJO_PET = i(33993);	-- Mojo (PET!)
 local FOREST_FROG = n(24396, {	-- Forest Frog

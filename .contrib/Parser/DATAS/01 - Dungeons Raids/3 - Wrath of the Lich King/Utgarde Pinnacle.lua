@@ -206,6 +206,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37587),	-- Ymirjar Physician's Robe
 					}),
 					-- #endif
+					-- #if BEFORE CATA
+					n(COMMON_BOSS_DROPS, {
+						currency(101, {	-- Emblem of Heroism
+							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+						}),
+					}),
+					-- #endif
 					e(641, {	-- Svala Sorrowgrave
 						["creatureID"] = 26668,	-- Svala Sorrowgrave
 						["groups"] = {

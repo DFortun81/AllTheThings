@@ -2162,6 +2162,13 @@ function Artifacts(things)
 	end
 end
 
+-- Currencies
+-- #if AFTER WRATH
+BADGE_OF_JUSTICE = currency(42);	-- Badge of Justice
+-- #else
+BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
+-- #endif
+
 -- Giant Copy+Paste Sections that need a better solution at some point, but for now, this is the best I've got.
 -- I'm thinking a "World Vendors" section. Stable Master, Cataclysm Blacksmithing Supplies, etc fit into this category.
 -- Use maps to link them. You know, like a sensible person that hates pointless duplication.
