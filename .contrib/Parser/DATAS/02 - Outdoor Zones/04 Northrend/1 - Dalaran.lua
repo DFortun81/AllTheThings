@@ -5718,17 +5718,6 @@ root("Zones", {
 							spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
 						},
 					}),
-					q(13159, {	-- Containment
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 31080,	-- Warden Alturas
-						["sourceQuest"] = 13158,	-- Discretion is Key
-						["groups"] = {
-							i(44342),	-- Tattooed Deerskin Leggings
-							i(44343),	-- Conferred Pantaloons
-							i(44344),	-- Labyrinthine Legguards
-							i(44345),	-- Dalaran Warden's Legplates
-						},
-					}),
 					q(13834, {	-- Dangerously Delicious
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
 						["isDaily"] = true,
@@ -5756,15 +5745,6 @@ root("Zones", {
 								["achievementID"] = 3217,	-- Chasing Marcia
 							}),
 						},
-					}),
-					q(13158, {	-- Discretion is Key
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 16128,	-- Rhonin
-					}),
-					q(29829, {	-- Discretion is Key
-						["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
-						["qg"] = 16128,	-- Rhonin
-						["isBreadcrumb"] = true,
 					}),
 					q(13041, {	-- Finish the Shipment
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
@@ -5957,6 +5937,19 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["qg"] = 31085,	-- Sky-Reaver Klum
 						["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
+					}),
+					-- TODO: Add all of this guy's quests and objectives.
+					-- https://www.wowhead.com/wotlk/npc=20735/archmage-landalock
+					q(13256, {	-- Proof of Demise: Cyanigosa
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["timeline"] = { "removed 4.0.1" },
+						["maps"] = { THE_VIOLET_HOLD_WRATH },
+						["groups"] = {
+							objective(1, {	-- 0/1 Head of Cyanigosa
+								["provider"] = { "i", 43823 },	-- Head of Cyanigosa
+							}),
+						},
 					}),
 					applyclassicphase(WRATH_PHASE_TWO, q(24586, {	-- Razorscale Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock

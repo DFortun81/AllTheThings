@@ -5,36 +5,57 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(283, {	-- The Violet Hold (Wrath)
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
-		["lvl"] = 62,
+		["lvl"] = lvlsquish(75, 75, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
-					crit(1, { -- Xevozz
-						["_encounter"] = { 629, 1 },
+					crit(7137, { -- Xevozz
+						["_encounter"] = { 629, 2 },
 					}),
-					crit(2, { -- Levanthor
-						["_encounter"] = { 630, 1 },
+					crit(7138, { -- Levanthor
+						["_encounter"] = { 630, 2 },
 					}),
-					crit(3, { -- Ichoron
-						["_encounter"] = { 628, 1 },
+					crit(7139, { -- Ichoron
+						["_encounter"] = { 628, 2 },
 					}),
-					crit(4, { -- Zuramat the Obliterator
-						["_encounter"] = { 631, 1 },
+					crit(7140, { -- Zuramat the Obliterator
+						["_encounter"] = { 631, 2 },
 					}),
-					crit(5, { -- Erekem
-						["_encounter"] = { 626, 1 },
+					crit(7141, { -- Erekem
+						["_encounter"] = { 626, 2 },
 					}),
-					crit(6, { -- Moragg
-						["_encounter"] = { 627, 1 },
+					crit(7142, { -- Moragg
+						["_encounter"] = { 627, 2 },
 					}),
 				}),
-				ach(483),	-- The Violet Hold
-				ach(494),	-- Heroic: The Violet Hold
 			}),
 			n(QUESTS, {
-				q(29830,{	-- Containment
-					["provider"] = { "n", 30658 },	-- Lieutenant Sinclari
+				q(13159, {	-- Containment
+					["qg"] = 31080,	-- Warden Alturas
+					["sourceQuest"] = 13158,	-- Discretion is Key
+					["coord"] = { 61.2, 63.2, NORTHREND_DALARAN },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["lvl"] = lvlsquish(75, 75, 15),
+					["groups"] = {
+						objective(1, {	-- 0/1 Cyanigosa slain
+							["provider"] = { "n", 31134 },	-- Cyanigosa
+						}),
+						-- #if BEFORE 4.0.3
+						i(42482, {	-- The Violet Hold Key
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						-- #endif
+						i(44343),	-- Conferred Pantaloons
+						i(44345),	-- Dalaran Warden's Legplates
+						i(44344),	-- Labyrinthine Legguards
+						i(44342),	-- Tattooed Deerskin Leggings
+					},
+				}),
+				q(29830, {	-- Containment
+					["qg"] = 30658,	-- Lieutenant Sinclari
 					["sourceQuest"] = 29829,	-- Discretion is Key
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(75, 75, 15),
 					["groups"] = {
 						i(44343),	-- Conferred Pantaloons
 						i(44345),	-- Dalaran Warden's Legplates
@@ -42,286 +63,326 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(44342),	-- Tattooed Deerskin Leggings
 					},
 				}),
-			}),
-			d(1,   {	-- Normal
-				n(ZONE_DROPS, {
-					i(35654, {	-- Bindings of the Bastille
-						["crs"] = {
-							30666,	-- Azure Captain
-							30668,	-- Azure Raider
-							30667,	-- Azure Sorceror
-							32191,	-- Azure Stalker
-							30892,	-- Portal Guardian
-							30660,	-- Portal Guardian
-							30695,	-- Portal Keeper
-							30893,	-- Portal Keeper
-						},
-					}),
-					i(35653, {	-- Girdle of the Mystical Prison
-						["crs"] = {
-							30666,	-- Azure Captain
-							30668,	-- Azure Raider
-							30667,	-- Azure Sorceror
-							32191,	-- Azure Stalker
-							30892,	-- Portal Guardian
-							30660,	-- Portal Guardian
-							30695,	-- Portal Keeper
-							30893,	-- Portal Keeper
-						},
-					}),
-					i(35652, {	-- Incessant Torch
-						["crs"] = {
-							30666,	-- Azure Captain
-							30668,	-- Azure Raider
-							30667,	-- Azure Sorceror
-							32191,	-- Azure Stalker
-							30892,	-- Portal Guardian
-							30660,	-- Portal Guardian
-							30695,	-- Portal Keeper
-							30893,	-- Portal Keeper
-						},
-					}),
+				q(13158, {	-- Discretion is Key
+					["qg"] = 16128,	-- Rhonin
+					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(75, 75, 15),
 				}),
-				cr(29315, e(626, {	-- Erekem
-					i(43407),	-- Stormstrike Mace
-					i(157583),	-- Protector's Buckler
-					i(43406),	-- Cloak of the Gushing Wound
-					i(43363),	-- Screeching Cape
-					i(43375),	-- Trousers of the Arrakoa
-					i(157567),	-- Bodyguard's Treads
-					i(43405),	-- Sabatons of Erekem
-				})),
-				cr(29316, e(627, {	-- Moragg
-					i(43409),	-- Saliva Corroded Pike
-					i(43387),	-- Shoulderplates of the Beholder
-					i(43410),	-- Moragg's Chestguard
-					i(157566),	-- Vest of the Observant
-					i(43382),	-- Band of Eyes
-					i(43408),	-- Solitaire of Reflecting Doom
-				})),
-				cr(29313, e(628, {	-- Ichoron
-					i(35643),	-- Spaulders of Ichoron
-					i(43401),	-- Water-Drenched Robe
-					i(37862),	-- Gauntlets of the Water Revenant
-					i(35647),	-- Handguards of Rapid Pursuit
-					i(157569),	-- Chain Leggings of the Tide
-					i(37869),	-- Globule Signet
-				})),
-				cr(29266, e(629, {	-- Xevozz
-					i(35642),	-- Riot Shield
-					i(157575),	-- Crystal of Ensnared Power
-					i(37861),	-- Necklace of Arcane Spheres
-					i(157571),	-- Gauntlets of Stuttering Reality
-					i(37868),	-- Girdle of the Ethereal
-					i(35644),	-- Xevozz's Belt
-					i(37867),	-- Footwraps of Teleportation
-				})),
-				cr(29312, e(630, {	-- Levanthor
-					i(37871),	-- The Key
-					i(35645),	-- Poison Warden's Shotgun
-					i(157570),	-- Helm of Cauterization
-					i(157572),	-- Pauldrons of the Great Tide
-					i(35646),	-- Lava Burn Gloves
-					i(37870),	-- Twin-Headed Boots
-					i(37872),	-- Levanthor's Talisman
-				})),
-				cr(29314, e(631, {	-- Zuramat the Obliterator
-					i(157568),	-- Helm of Dire Vision
-					i(43403),	-- Shroud of Darkness
-					i(43358),	-- Pendant of Shadow Beams
-					i(43404),	-- Zuramat's Necklace
-					i(43353),	-- Void Sentry Legplates
-					i(43402),	-- The Obliterator Greaves
-				})),
-				cr(31134, e(632, {	-- Cyanigosa
-					ach(483),	-- The Violet Hold
-					i(35649),	-- Jailer's Baton
-					i(37883),	-- Staff of Trickery
-					i(37875),	-- Spaulders of the Violet Hold
-					i(37884),	-- Azure Cloth Bindings
-					i(150845),	-- Bracers of Ley-Line Eradication
-					i(37874),	-- Gauntlets of Capture
-					i(37886),	-- Handgrips of the Savage Emmisary
-					i(35651),	-- Plate Claws of the Dragon
-					i(43500),	-- Bolstered Legplates
-					i(37876),	-- Cyanigosa's Leggings
-					i(35650),	-- Boots of the Portal Guardian
-					i(37873),	-- Mark of the War Prisoner
-				})),
+				q(29829, {	-- Discretion is Key
+					["qg"] = 16128,	-- Rhonin
+					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
+					["timeline"] = { "added 4.3.0.14732" },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(75, 75, 15),
+				}),
 			}),
-			d(2,   {	-- Heroic
-				["lvl"] = 80,
-				["groups"] = {
-					n(ZONE_DROPS, {
-						i(35654, {	-- Bindings of the Bastille
-							["crs"] = {
-								30666,	-- Azure Captain
-								30668,	-- Azure Raider
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
+			d(1, {	-- Normal
+				n(ZONE_DROPS, {
+					i(35654),	-- Bindings of the Bastille
+					i(35653),	-- Girdle of the Mystical Prison
+					i(35652),	-- Incessant Torch
+				}),
+				e(626, {	-- Erekem
+					["creatureID"] = 29315,	-- Erekem
+					["groups"] = {
+						-- #if AFTER 7.3.5
+						i(43407),	-- Stormstrike Mace (7.3.5 - Used to be only Heroic Mode)
+						i(157583, {	-- Protector's Buckler
+							["timeline"] = { "added 7.3.5.25744" },
 						}),
-						i(37891, {	-- Cast Iron Shackles
-							["crs"] = {
-								30666,	-- Azure Captain
-								30668,	-- Azure Raider
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
-						}),
-						i(37890, {	-- Chain Gang Legguards
-							["crs"] = {
-								30666,	-- Azure Captain
-								30668,	-- Azure Raider
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
-						}),
-						i(35653, {	-- Girdle of the Mystical Prison
-							["crs"] = {
-								30666,	-- Azure Captain
-								30668,	-- Azure Raider
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
-						}),
-						i(35652, {	-- Incessant Torch
-							["crs"] = {
-								30666,	-- Azure Captain
-								30668,	-- Azure Raider
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
-						}),
-						i(37889, {	-- Prison Manifest
-							["crs"] = {
-								30666,	-- Azure Captain
-								30667,	-- Azure Sorceror
-								32191,	-- Azure Stalker
-								30892,	-- Portal Guardian
-								30660,	-- Portal Guardian
-								30695,	-- Portal Keeper
-								30893,	-- Portal Keeper
-							},
-						}),
-					}),
-					cr(29315, e(626, {	-- Erekem
-						{	-- Erekem (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 5,	-- Erekem
-						},
-						i(43407),	-- Stormstrike Mace
-						i(157583),	-- Protector's Buckler
-						i(43406),	-- Cloak of the Gushing Wound
+						i(43406),	-- Cloak of the Gushing Wound (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(43363),	-- Screeching Cape
 						i(43375),	-- Trousers of the Arrakoa
-						i(157567),	-- Bodyguard's Treads
-						i(43405),	-- Sabatons of Erekem
-					})),
-					cr(29316, e(627, {	-- Moragg
-						{	-- Moragg (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 6,	-- Moragg
-						},
-						i(43409),	-- Saliva Corroded Pike
+						-- #if AFTER 7.3.5
+						i(157567, {	-- Bodyguard's Treads
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(43405),	-- Sabatons of Erekem (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(627, {	-- Moragg
+					["creatureID"] = 29316,	-- Moragg
+					["groups"] = {
+						-- #if AFTER 7.3.5
+						i(43409),	-- Saliva Corroded Pike (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(43387),	-- Shoulderplates of the Beholder
-						i(43410),	-- Moragg's Chestguard
-						i(157566),	-- Vest of the Observant
+						-- #if AFTER 7.3.5
+						i(43410),	-- Moragg's Chestguard (7.3.5 - Used to be only Heroic Mode)
+						i(157566, {	-- Vest of the Observant
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						-- #endif
 						i(43382),	-- Band of Eyes
-						i(43408),	-- Solitaire of Reflecting Doom
-					})),
-					cr(29313, e(628, {	-- Ichoron
-						ach(2041),	-- Dehydration
-						{			-- Ichoron (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 3,	-- Ichoron
-						},
+						-- #if AFTER 7.3.5
+						i(43408),	-- Solitaire of Reflecting Doom (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(628, {	-- Ichoron
+					["creatureID"] = 29313,	-- Ichoron
+					["groups"] = {
 						i(35643),	-- Spaulders of Ichoron
-						i(43401),	-- Water-Drenched Robe
-						i(37862),	-- Gauntlets of the Water Revenant
+						-- #if AFTER 7.3.5
+						i(43401),	-- Water-Drenched Robe (7.3.5 - Used to be only Heroic Mode)
+						i(37862),	-- Gauntlets of the Water Revenant (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35647),	-- Handguards of Rapid Pursuit
-						i(157569),	-- Chain Leggings of the Tide
-						i(37869),	-- Globule Signet
-					})),
-					cr(29266, e(629, {	-- Xevozz
-						{	-- Xevozz (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 1,	-- Xevozz
-						},
+						-- #if AFTER 7.3.5
+						i(157569, {	-- Chain Leggings of the Tide
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(37869),	-- Globule Signet (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(629, {	-- Xevozz
+					["creatureID"] = 29266,	-- Xevozz
+					["groups"] = {
 						i(35642),	-- Riot Shield
-						i(157575),	-- Crystal of Ensnared Power
-						i(37861),	-- Necklace of Arcane Spheres
-						i(157571),	-- Gauntlets of Stuttering Reality
-						i(37868),	-- Girdle of the Ethereal
+						-- #if AFTER 7.3.5
+						i(157575, {	-- Crystal of Ensnared Power
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(37861),	-- Necklace of Arcane Spheres (7.3.5 - Used to be only Heroic Mode)
+						i(157571, {	-- Gauntlets of Stuttering Reality
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(37868),	-- Girdle of the Ethereal (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35644),	-- Xevozz's Belt
-						i(37867),	-- Footwraps of Teleportation
-					})),
-					cr(29312, e(630, {	-- Levanthor
-						{	-- Levanthor (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 2,	-- Levanthor
-						},
-						i(37871),	-- The Key
+						-- #if AFTER 7.3.5
+						i(37867),	-- Footwraps of Teleportation (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(630, {	-- Levanthor
+					["creatureID"] = 29312,	-- Levanthor
+					["groups"] = {
+						-- #if AFTER 7.3.5
+						i(37871),	-- The Key (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35645),	-- Poison Warden's Shotgun
-						i(157570),	-- Helm of Cauterization
-						i(157572),	-- Pauldrons of the Great Tide
+						i(157570, {	-- Helm of Cauterization
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(157572, {	-- Pauldrons of the Great Tide
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
 						i(35646),	-- Lava Burn Gloves
-						i(37870),	-- Twin-Headed Boots
-						i(37872),	-- Levanthor's Talisman
-					})),
-					cr(29314, e(631, {	-- Zuramat the Obliterator
-						ach(2153),	-- A Void Dance
-						{			-- Zuramat the Obliterator (Lockdown!)
-							["achievementID"] = 1865,	-- Lockdown!
-							["criteriaID"] = 4,	-- Zuramat the Obliterator
-						},
-						i(157568),	-- Helm of Dire Vision
-						i(43403),	-- Shroud of Darkness
+						-- #if AFTER 7.3.5
+						i(37870),	-- Twin-Headed Boots (7.3.5 - Used to be only Heroic Mode)
+						i(37872),	-- Levanthor's Talisman (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(631, {	-- Zuramat the Obliterator
+					["creatureID"] = 29314,	-- Zuramat the Obliterator
+					["groups"] = {
+						-- #if AFTER 7.3.5
+						i(157568, {	-- Helm of Dire Vision
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(43403),	-- Shroud of Darkness (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(43358),	-- Pendant of Shadow Beams
-						i(43404),	-- Zuramat's Necklace
+						-- #if AFTER 7.3.5
+						i(43404),	-- Zuramat's Necklace (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(43353),	-- Void Sentry Legplates
-						i(43402),	-- The Obliterator Greaves
-					})),
-					cr(31134, e(632, {	-- Cyanigosa
-						{			-- Cyanigosa slain (Champion of the Frozen Wastes)
-							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-							["criteriaID"] = 14,		-- Cyanigosa slain
-						},
-						ach(1816),	-- Defenseless
-						ach(494),	-- Heroic: The Violet Hold
+						-- #if AFTER 7.3.5
+						i(43402),	-- The Obliterator Greaves (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(632, {	-- Cyanigosa
+					["creatureID"] = 31134,	-- Cyanigosa
+					["groups"] = {
+						ach(483),	-- The Violet Hold
 						i(35649),	-- Jailer's Baton
-						i(37883),	-- Staff of Trickery
-						i(37875),	-- Spaulders of the Violet Hold
-						i(37884),	-- Azure Cloth Bindings
-						i(150845),	-- Bracers of Ley-Line Eradication
-						i(37874),	-- Gauntlets of Capture
-						i(37886),	-- Handgrips of the Savage Emmisary
+						-- #if AFTER 7.3.5
+						i(37883),	-- Staff of Trickery (7.3.5 - Used to be only Heroic Mode)
+						i(37875),	-- Spaulders of the Violet Hold (7.3.5 - Used to be only Heroic Mode)
+						i(37884),	-- Azure Cloth Bindings (7.3.5 - Used to be only Heroic Mode)
+						i(150845, {	-- Bracers of Ley-Line Eradication
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(37874),	-- Gauntlets of Capture (7.3.5 - Used to be only Heroic Mode)
+						i(37886),	-- Handgrips of the Savage Emmisary (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35651),	-- Plate Claws of the Dragon
-						i(43500),	-- Bolstered Legplates
-						i(37876),	-- Cyanigosa's Leggings
+						-- #if AFTER 7.3.5
+						i(43500),	-- Bolstered Legplates (7.3.5 - Used to be only Heroic Mode)
+						i(37876),	-- Cyanigosa's Leggings (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35650),	-- Boots of the Portal Guardian
-						i(37873),	-- Mark of the War Prisoner
-					})),
+						-- #if AFTER 7.3.5
+						i(37873),	-- Mark of the War Prisoner (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					n(ZONE_DROPS, {
+						-- #if AFTER 7.3.5
+						i(35654),	-- Bindings of the Bastille (7.3.5 - Used to be only Normal Mode)
+						-- #endif
+						i(37891),	-- Cast Iron Shackles
+						i(37890),	-- Chain Gang Legguards
+						-- #if AFTER 7.3.5
+						i(35653),	-- Girdle of the Mystical Prison (7.3.5 - Used to be only Heroic Mode)
+						i(35652),	-- Incessant Torch (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(37889),	-- Prison Manifest
+					}),
+					e(626, {	-- Erekem
+						["creatureID"] = 29315,	-- Erekem
+						["groups"] = {
+							i(43407),	-- Stormstrike Mace
+							i(157583, {	-- Protector's Buckler
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(43406),	-- Cloak of the Gushing Wound
+							-- #if AFTER 7.3.5
+							i(43363),	-- Screeching Cape (7.3.5 - Used to be only Normal Mode)
+							i(43375),	-- Trousers of the Arrakoa (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(157567, {	-- Bodyguard's Treads
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(43405),	-- Sabatons of Erekem
+						},
+					}),
+					e(627, {	-- Moragg
+						["creatureID"] = 29316,	-- Moragg
+						["groups"] = {
+							i(43409),	-- Saliva Corroded Pike
+							-- #if AFTER 7.3.5
+							i(43387),	-- Shoulderplates of the Beholder (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43410),	-- Moragg's Chestguard
+							i(157566, {	-- Vest of the Observant
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							-- #if AFTER 7.3.5
+							i(43382),	-- Band of Eyes (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43408),	-- Solitaire of Reflecting Doom
+						},
+					}),
+					e(628, {	-- Ichoron
+						["creatureID"] = 29313,	-- Ichoron
+						["groups"] = {
+							-- #if AFTER 7.3.5
+							i(35643),	-- Spaulders of Ichoron (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43401),	-- Water-Drenched Robe
+							i(37862),	-- Gauntlets of the Water Revenant
+							-- #if AFTER 7.3.5
+							i(35647),	-- Handguards of Rapid Pursuit (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(157569, {	-- Chain Leggings of the Tide
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37869),	-- Globule Signet
+						},
+					}),
+					e(629, {	-- Xevozz
+						["creatureID"] = 29266,	-- Xevozz
+						["groups"] = {
+							-- #if AFTER 7.3.5
+							i(35642),	-- Riot Shield (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(157575, {	-- Crystal of Ensnared Power
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37861),	-- Necklace of Arcane Spheres
+							i(157571, {	-- Gauntlets of Stuttering Reality
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37868),	-- Girdle of the Ethereal
+							-- #if AFTER 7.3.5
+							i(35644),	-- Xevozz's Belt (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37867),	-- Footwraps of Teleportation
+						},
+					}),
+					e(630, {	-- Levanthor
+						["creatureID"] = 29312,	-- Levanthor
+						["groups"] = {
+							i(37871),	-- The Key
+							-- #if AFTER 7.3.5
+							i(35645),	-- Poison Warden's Shotgun (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(157570, {	-- Helm of Cauterization
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(157572, {	-- Pauldrons of the Great Tide
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							-- #if AFTER 7.3.5
+							i(35646),	-- Lava Burn Gloves (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37870),	-- Twin-Headed Boots
+							i(37872),	-- Levanthor's Talisman
+						},
+					}),
+					e(631, {	-- Zuramat the Obliterator
+						["creatureID"] = 29314,	-- Zuramat the Obliterator
+						["groups"] = {
+							ach(2153),	-- A Void Dance
+							i(157568, {	-- Helm of Dire Vision
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(43403),	-- Shroud of Darkness
+							-- #if AFTER 7.3.5
+							i(43358),	-- Pendant of Shadow Beams (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43404),	-- Zuramat's Necklace
+							-- #if AFTER 7.3.5
+							i(43353),	-- Void Sentry Legplates (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43402),	-- The Obliterator Greaves
+						},
+					}),
+					e(632, {	-- Cyanigosa
+						["creatureID"] = 31134,	-- Cyanigosa
+						["groups"] = {
+							ach(494),	-- Heroic: The Violet Hold
+							ach(1816),	-- Defenseless
+							{	-- Cyanigosa slain (Champion of the Frozen Wastes)
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 5613,		-- Cyanigosa slain
+							},
+							-- #if AFTER 7.3.5
+							i(35649),	-- Jailer's Baton (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37883),	-- Staff of Trickery
+							i(37875),	-- Spaulders of the Violet Hold
+							i(37884),	-- Azure Cloth Bindings
+							i(150845, {	-- Bracers of Ley-Line Eradication
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37874),	-- Gauntlets of Capture
+							i(37886),	-- Handgrips of the Savage Emmisary
+							-- #if AFTER 7.3.5
+							i(35651),	-- Plate Claws of the Dragon (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(43500),	-- Bolstered Legplates
+							i(37876),	-- Cyanigosa's Leggings
+							-- #if AFTER 7.3.5
+							i(35650),	-- Boots of the Portal Guardian (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37873),	-- Mark of the War Prisoner
+							i(43823),	-- Head of Cyanigosa
+						},
+					}),
 				},
 			}),
 		},
