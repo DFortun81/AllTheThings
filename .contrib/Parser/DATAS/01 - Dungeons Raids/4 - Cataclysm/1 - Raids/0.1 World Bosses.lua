@@ -6,8 +6,11 @@ _.Instances = { tier(CATA_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 85,
-		["g"] = {
+		["g"] = sharedData({
+			["isRaid"] = true,
+		},{
 			n(COMMON_BOSS_DROPS, {
+				["isRaid"] = false,
 				["crs"] = {
 					50063,	-- Akma'hat
 					50056,	-- Garr
@@ -37,11 +40,11 @@ _.Instances = { tier(CATA_TIER, {
 				},
 			}),
 			n(50063, {	-- Akma'hat
-				["maps"] = {	-- all Uldum maps
-					ULDUM,
-					716,	-- Skywall
-					737,	-- The Vortex Pinnacle
-					857,	-- Throne of the Four Winds
+				["coord"] = { 38.0, 60.6, ULDUM },
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",CATA_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
 				},
 				["g"] = {
 					i(69877),	-- Belt of a Thousand Gaping Mouths
@@ -49,10 +52,14 @@ _.Instances = { tier(CATA_TIER, {
 				},
 			}),
 			n(50056, {	-- Garr
-				["maps"] = {	-- all Mount Hyjal maps
-					MOUNT_HYJAL,
-					738,	-- Firelands
-					760,	-- Malorne's Nightmare
+				["coords"] = {
+					{ 37.6, 73.4, MOUNT_HYJAL },
+					{ 40.4, 81.8, MOUNT_HYJAL },
+				},
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",CATA_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
 				},
 				["g"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
@@ -60,26 +67,59 @@ _.Instances = { tier(CATA_TIER, {
 				},
 			}),
 			n(50089, {	-- Julak-Doom
-				["maps"] = { TWILIGHT_HIGHLANDS },
+				["coords"] = {
+					{ 51.0, 7.6, TWILIGHT_HIGHLANDS },
+					{ 52.2, 10.6, TWILIGHT_HIGHLANDS },
+					{ 56.6, 11.0, TWILIGHT_HIGHLANDS },
+					{ 57.2, 7.8, TWILIGHT_HIGHLANDS },
+					{ 59.8, 6.8, TWILIGHT_HIGHLANDS },
+				},
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",CATA_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
 				},
 			}),
 			n(50009, {	-- Mobus
-				["maps"] = { 204 },	-- Vashj'ir (Abyssal Depths)
+				["coords"] = {	-- Vashj'ir (Abyssal Depths)
+					{ 63.4, 32.6, 204 },
+					{ 65.8, 20.4, 204 },
+					{ 71.8, 18.4, 204 },
+					{ 75.6, 36.6, 204 },
+					{ 77.0, 25.4, 204 },
+				},
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",CATA_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = {
 					i(69843),	-- Mobus's Dripping Halberd
 					un(REMOVED_FROM_GAME, i(67153)),	-- Mobus's Vile Halberd [Replaced with 69843]
 				},
 			}),
 			n(50061, {	-- Xariona
-				["maps"] = { DEEPHOLM },
+				["coords"] = {
+					{ 40.6, 52.4, DEEPHOLM },
+					{ 45.4, 39.0, DEEPHOLM },
+					{ 45.4, 63.8, DEEPHOLM },
+					{ 56.6, 42.6, DEEPHOLM },
+					{ 57.2, 59.0, DEEPHOLM },
+				},
+				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
+					{"select","tierID",CATA_TIER},{"pop"},
+					{"where","headerID",WORLD_BOSSES},{"pop"},
+					{"where","headerID",COMMON_BOSS_DROPS},
+				},
 				["g"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets
 					un(REMOVED_FROM_GAME, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
 				},
 			}),
-		},
+		}),
 	}),
 })};
