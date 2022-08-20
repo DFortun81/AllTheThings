@@ -41,14 +41,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(38462, {	-- Breaching the Barrier
-					["provider"] = { "n", 92055 },	-- Oronok Torn-heart
-					["coord"] = { 47.2, 70.4, TANAAN_JUNGLE },
-					["sourceQuests"] = {
-						38561,	-- Garrison Campaign: The Warlock (A)
-						38458,	-- Garrison Campaign: The Warlock (H)
-					},
-				}),
 				q(39313, {	-- Bring the Reinforcements
 					["provider"] = { "n", 90963 },	-- Angar Steelbellow
 					["coord"] = { 58.1, 58.6, TANAAN_JUNGLE },
@@ -87,16 +79,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 38577,	-- The Battle for the West
 				}),
-				q(38223, {	-- Dark Ascension
-					["provider"] = { "o", 240317 },	-- Iskar's Tome of Shadows
-					["coord"] = { 16.1, 44.3, TANAAN_JUNGLE },
-					["sourceQuest"] = 38213,	-- Get a Clue
-					["g"] = {
-						i(124557, {	-- Baleful Girdle
-							["sym"] = { { "fill" } },
-						}),
-					},
-				}),
 				q(39519, {	-- Demonslayer of Tanaan
 					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
 					["coord"] = { 59.6, 45.9, TANAAN_JUNGLE },
@@ -121,76 +103,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(38270, {	-- Finding the Killer
-					["sourceQuests"] = { 38453, 38560 },
-					["provider"] = { "n", 91299 },	-- Ariok
-					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
-				}),
-				q(38271, {	-- Following the Bloody Path
-					["sourceQuest"] = 38270,
-					["provider"] = { "n", 91348 },	-- Ariok
-					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
-				}),
-				q(38267, {	-- Friends Above (A)
-					["provider"] = { "n", 91290 },	-- Reshad
-					["coord"] = { 57.4, 58.8, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 37687,	-- Garrison Campaign: In the Shadows (A)
-				}),
-				q(38269, {	-- Friends Above (H)
-					["provider"] = { "n", 91292 },	-- Reshad
-					["coord"] = { 60.4, 46.2, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 37688,	-- Garrison Campaign: In the Shadows (H)
-				}),
-				q(37687, {	-- Garrison Campaign: In the Shadows (A)
-					["provider"] = { "n", 91290 },	-- Reshad
-					["coord"] = { 57.4, 58.8, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(37688, {	-- Garrison Campaign: In the Shadows (H)
-					["provider"] = { "n", 91292 },	-- Reshad
-					["coord"] = { 60.4, 46.2, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(38421, {	-- Garrison Campaign: Onslaught at Auchindoun (A)
-					["provider"] = { "n", 90309 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun (H)
-					["provider"] = { "n", 90481 },	-- Draka
-					["coord"] = { 61.4, 45.7, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(38560, {	-- Garrison Campaign: The Bane of the Bleeding Hollow (A)
-					["provider"] = { "n", 90481 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38453, {	-- Garrison Campaign: The Bane of the Bleeding Hollow (H)
-					["provider"] = { "n", 90481 },	-- Draka
-					["coord"] = { 61.4, 45.7, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(38561, {	-- Garrison Campaign: The Warlock (A)
-					["provider"] = { "n", 90309 },	-- Exarch Yrel
-					["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38458, {	-- Garrison Campaign: The Warlock (H)
-					["provider"] = { "n", 90481 },	-- Draka
-					["coord"] = { 61.4, 45.8, TANAAN_JUNGLE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(38213, {	-- Get a Clue
-					["provider"] = { "n", 91291 },	-- Reshad
-					["coord"] = { 25.8, 38.8, TANAAN_JUNGLE },
-					["sourceQuests"] = {
-						38267,	-- Friends Above (A)
-						38269,	-- Friends Above (H)
-					},
-				}),
+
 				q(39514, {	-- Harnessing Their Power
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
 					["coord"] = { 61.6, 45.7, TANAAN_JUNGLE },
@@ -300,11 +213,6 @@ _.Zones =
 					["sourceQuest"] = 37935,
 					["isBreadcrumb"] = true,	-- The Assault Base
 				}),
-				q(38273, {	-- Spirits of the Bleeding Hollow
-					["provider"] = { "o", 240547 },	-- Orc Skull
-					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
-					["sourceQuest"] = 38271,	-- Following the Bloody Path
-				}),
 				q(38445, {	-- The Assault Base
 					["provider"] = { "n", 91923 },	-- Exarch Naielle
 					["coord"] = { 62.4, 54.2, TANAAN_JUNGLE },
@@ -324,41 +232,6 @@ _.Zones =
 				q(38577, {	-- The Battle for the West
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 37935,	-- The Assault Base
-				}),
-				q(38272, {	-- The Bleeding Hollow
-					["sourceQuest"] = 38271,
-					["provider"] = { "n", 91421 },	-- Ariok
-					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
-				}),
-				q(39394, {	-- The Cipher of Damnation (A)
-					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38462,	-- Breaching the Barrier
-					["g"] = {
-						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
-					},
-				}),
-				q(38463, {	-- The Cipher of Damnation (H)
-					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38462,	-- Breaching the Barrier
-					["g"] = {
-						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
-					},
-				}),
-				q(38274, {	-- The Eye of Kilrogg
-					["provider"] = { "n", 91324 },	-- Braknoth
-					["g"] = {
-						i(124553, {	-- Baleful Gauntlets
-							["sym"] = { { "fill" } },
-						}),
-					},
 				}),
 				q(39529, {	-- Tooth and Claw
 					["provider"] = { "n", 93396 },	-- Nimi Brightcastle
@@ -675,12 +548,12 @@ _.Zones =
 					q(38870, {	-- Bleeding the Bleeding Hollow (A)
 						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 						["races"] = ALLIANCE_ONLY,
-						--["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+						-- ["sourceQuest"] = 38560,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					}),
 					q(38871, {	-- Bleeding the Bleeding Hollow (H)
 						["coord"] = { 22.0, 50.0, TANAAN_JUNGLE },
 						["races"] = HORDE_ONLY,
-						--["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
+						-- ["sourceQuest"] = 38453,	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					}),
 					q(38045, {	-- Bleeding the Bleeding Hollow (A)
 						["coord"] = { 58.4, 60.2, TANAAN_JUNGLE },

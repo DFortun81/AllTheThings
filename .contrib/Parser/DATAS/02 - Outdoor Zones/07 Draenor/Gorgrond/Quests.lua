@@ -1281,10 +1281,6 @@ _.Zones =
 						33548,	-- We Die Laughing!
 					},
 				}),
-				q(34339, {	-- A Goren's Feast
-					["provider"] = { "n", 89179 },	-- Choluna
-					["sourceQuest"] = 34337,	-- The Giant Cauldron
-				}),
 				q(35647, {	-- A Grim Harvest (A)
 					["provider"] = { "n", 82476 },	-- Khaano
 					["coord"] = { 58.2, 59.9, GORGROND },
@@ -1342,25 +1338,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33694,	-- Reagents from Rakthoth
 				}),
-				q(34336, {	-- Ambushing the Enemy
-					["provider"] = { "n", 78187 },	-- Thisalee Crow
-					["sourceQuests"] = {
-						34409,	-- Garrison Campaign: Crows In The Field
-						34335,	-- Garrison Campaign: Crows In The Field
-					},
-				}),
 				q(35016, {	-- Basic Skulltaking
 					["provider"] = { "n", 81218 },	-- Grulkor
 					["coord"] = { 54.4, 66.6, GORGROND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35667,	-- Skulltakers in Crimson Fen
-				}),
-				o(237821, {	-- Bladefury's Orders
-					["questID"] = 34347,
-					["sourceQuests"] = {
-						34409,	-- Garrison Campaign: Crows In The Field
-						34335,	-- Garrison Campaign: Crows In The Field
-					},
 				}),
 				q(35027, {	-- Clearing the Way
 					["provider"] = { "n", 80757 },
@@ -1377,18 +1359,6 @@ _.Zones =
 						i(112597),	-- Steamburst Gloves
 						i(112598),	-- Wildwood Wrangler Gauntlets
 					},
-				}),
-				q(38254, {	-- Derailment (A)
-					["provider"] = { "n", 90180 },	-- Exarch Naielle
-					["coord"] = { 52.5, 9.8, GORGROND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38257,	-- We Need a Shipwright
-				}),
-				q(38570, {	-- Derailment (H)
-					["provider"] = { "n", 89937 },	-- Sammy Fivefingers
-					["coord"] = { 52.5, 9.8, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38568,	-- We Need a Shipwright
 				}),
 				q(33563, {	-- Eye Candy
 					["provider"] = { "n", 74611 },	-- Limbflayer
@@ -1443,22 +1413,6 @@ _.Zones =
 						i(112604),	-- Steamburst Leggings
 						i(112605),	-- Wildwood Wrangler Leggings
 					},
-				}),
-				q(34340, {	-- Heating Up
-					["provider"] = { "n", 74125 },	-- Aren Mistshade
-					["sourceQuest"] = 34337,	-- The Giant Cauldron
-				}),
-				q(38256, {	-- Hook, Line, and... Sink Him! (A)
-					["provider"] = { "n", 91242 },	-- Solog Roark
-					["coord"] = { 56.7, 17.2, GORGROND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38255,	-- The Train Gang
-				}),
-				q(38572, {	-- Hook, Line, and... Sink Him! (H)
-					["provider"] = { "n", 91242 },	-- Solog Roark
-					["coord"] = { 56.7, 17.2, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38571,	-- The Train Gang
 				}),
 				q(34279, {	-- I Am Blook
 					["provider"] = { "n", 78030 },	-- Blook
@@ -1570,18 +1524,6 @@ _.Zones =
 						{ 46.0, 70.1, GORGROND },
 					},
 				}),
-				q(38258, {	-- Nothing Remains (A)
-					["provider"] = { "n", 91242 },	-- Solog Roark
-					["coord"] = { 50.6, 16.6, GORGROND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38256,	-- Hook, Line, and... Sink Him!
-				}),
-				q(38573, {	-- Nothing Remains (H)
-					["provider"] = { "n", 91242 },	-- Solog Roark
-					["coord"] = { 50.6, 16.6, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38572,	-- Hook, Line, and... Sink Him!
-				}),
 				q(36434, {	-- Penny From Heaven
 					["provider"] = { "n", 74594 },	-- Durotan
 					["coord"] = { 41.4, 74.0, GORGROND },
@@ -1612,16 +1554,6 @@ _.Zones =
 						i(118035),	-- Steamburst Waistwrap
 						i(118036),	-- Wildwood Wrangler Links
 					},
-				}),
-				q(36341, {	-- Primal Fury (A)
-					["provider"] = { "n", 84185 },	-- Thisalee Crow
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 36134,	-- Garrison Campaign: Awakening
-				}),
-				q(36342, {	-- Primal Fury (H)
-					["provider"] = { "n", 88530 },	-- Choluna
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 36136,	-- Garrison Campaign: Awakening
 				}),
 				q(35666, {	-- Rangari in the Red
 					["provider"] = { "n", 75146 },	-- Rangari D'kaan
@@ -1745,35 +1677,6 @@ _.Zones =
 						33660,	-- The Sacking of the Saberon
 					},
 				}),
-				q(34410, {	-- The Beating Heart
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
-					["sourceQuests"] = {
-						34339,	-- A Goren's Feast
-						34340,	-- Heating Up
-						34338,	-- The Descent
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(34341, {	-- The Beating Heart
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
-					["sourceQuests"] = {
-						34339,	-- A Goren's Feast
-						34340,	-- Heating Up
-						34338,	-- The Descent
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(34338, {	-- The Descent
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
-					["sourceQuest"] = 34337,	-- The Giant Cauldron
-				}),
-				q(34337, {	-- The Giant Cauldron
-					["provider"] = { "n", 78187 },	-- Thisalee Crow
-					["sourceQuests"] = {
-						34336,	-- Ambushing the Enemy
-						34347,	-- Bladefury's Orders
-					},
-				}),
 				q(33543, {	-- The Laughing Skull
 					["provider"] = { "n", 74594 },	-- Durotan
 					["coord"] = { 37.2, 77.0, GORGROND },
@@ -1783,12 +1686,6 @@ _.Zones =
 						35557,	-- The Secrets of Gorgrond
 						49546,	-- Warchief's Command: Gorgrond!
 					},
-				}),
-				q(34029, {	-- The Prototype
-					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
-					["coord"] = { 69.6, 26.1, GORGROND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34028,	-- These Look Familiar
 				}),
 				q(35645, {	-- The Secret of the Fungus (A)
 					["provider"] = { "n", 82476 },	-- Khaano
@@ -1815,18 +1712,6 @@ _.Zones =
 					["coord"] = { 42.0, 94.0, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
-				q(38255, {	-- The Train Gang (A)
-					["provider"] = { "n", 90177 },	-- Exarch Yrel
-					["coord"] = { 56.7, 17.1, GORGROND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38254,	-- Derailment
-				}),
-				q(38571, {	-- The Train Gang (H)
-					["provider"] = { "n", 92401 },	-- Durotan
-					["coord"] = { 56.7, 17.1, GORGROND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38570,	-- Derailment
 				}),
 				q(36502, {	-- Trophy of Glory: Biolante (A)
 					["provider"] = { "i", 116159 },	-- Writhing Green Tendril

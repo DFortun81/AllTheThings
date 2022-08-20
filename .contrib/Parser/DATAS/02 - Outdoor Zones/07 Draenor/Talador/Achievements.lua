@@ -61,20 +61,6 @@ _.Zones =
 					},
 				}),
 				ach(9486),		-- Goodness Gracious
-				ach(10067, {	-- In Pursuit of Gul'dan (A)
-					["collectible"] = false,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(5),	-- The Fate of Teron'gor
-					},
-				}),
-				ach(10074, {	-- In Pursuit of Gul'dan (H)
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(5),	-- The Fate of Teron'gor
-					},
-				}),
 				ach(9674,  {	-- I Want More Talador
 					crit(1, {	-- Bonus Objective: Aruuna's Desolation
 						["sourceQuest"] = 34639,	-- Aruuna's Desolation

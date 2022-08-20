@@ -9,25 +9,25 @@ _.ExpansionFeatures =
 			n(ACHIEVEMENTS, {
 				ach(9130),		-- A Rare Friend
 				ach(9131),		-- An Epic Buddy
-				ach(9494,  {	-- Commander (40)
+				ach(9494, {	-- Commander (40)
 					ach(9109),		-- Fearless Leader (25)
 					ach(9108),		-- Where You Go, They Will Follow (10)
 					ach(9107),		-- Follow the Leader (5)
 				}),
-				pvp(ach(9630,  {	-- Defender of Draenor (A)
+				pvp(ach(9630, {	-- Defender of Draenor (A)
 					["races"] = ALLIANCE_ONLY,
 				})),
-				pvp(ach(9248,  {	-- Defender of Draenor (H)
+				pvp(ach(9248, {	-- Defender of Draenor (H)
 					["races"] = HORDE_ONLY,
 				})),
-				ach(9928,  {	-- Don't Call Me Junior (A)
+				ach(9928, {	-- Don't Call Me Junior (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
 						crit(1),	-- Master Relic Hunter
 					},
 				}),
-				ach(9901,  {	-- Don't Call Me Junior (H)
+				ach(9901, {	-- Don't Call Me Junior (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
@@ -35,13 +35,13 @@ _.ExpansionFeatures =
 					},
 				}),
 				petbattle(ach(9264)),	-- Draenor Pet Brawler
-				a(ach(9101,  {	-- Even More Plots (A)
+				a(ach(9101, {	-- Even More Plots (A)
 					a(ach(9100)),		-- More Plots (A)
 				})),
-				h(ach(9546,  {	-- Even More Plots (H)
+				h(ach(9546, {	-- Even More Plots (H)
 					h(ach(9545)),		-- More Plots (H)
 				})),
-				ach(9129,  {	-- Filling the Ranks
+				ach(9129, {	-- Filling the Ranks
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					["g"] = {
 						a(i(111967)),	-- Dwarven Bunker, Level 3 (Garrison Blueprint)
@@ -128,7 +128,7 @@ _.ExpansionFeatures =
 					}),
 					ach(9897),	-- Ten Hit Tunes (Horde) (10)
 				})),
-				ach(9094,  {	-- Garrison Architect
+				ach(9094, {	-- Garrison Architect
 					title(260),		-- Architect
 					crit(1),		-- Draftsman
 					crit(2),		-- Grand Master Draftsman
@@ -136,53 +136,74 @@ _.ExpansionFeatures =
 					crit(4),		-- Master Builder
 					crit(5),		-- Keepin' Busy
 				}),
-				ach(9210,  {	-- Garrison Buddies (A)
+				ach(9210, {	-- Garrison Buddies (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(9132,  {	-- Garrison Buddies (H)
+				ach(9132, {	-- Garrison Buddies (H)
 					["races"] = HORDE_ONLY,
 				}),
-				ach(9487,  {	-- Got My Mind On My Draenor Money (10,000)
+				ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					["g"] = {
 						i(111983),	-- Storehouse, Level 3 (Garrison Blueprint)
 					},
 				}),
-				ach(9128,  {	-- Grand Master Draftsman (60)
+				ach(9128, {	-- Grand Master Draftsman (60)
 					ach(9126),		-- Master Draftsman (40)
 					ach(9125),		-- Draftsman (20)
 				}),
-				-- TODO: maybe re-do these... they're only here to show the criteria in the garrison, so could just map the criteria elsewhere
-				ach(10067, {	-- In Pursuit of Gul'dan
-					["collectible"] = false,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1, {	-- All Hands On Deck
-							["sourceQuest"] = 38259,	-- All Hands On Deck
-						}),
-					},
-				}),
-				ach(10074, {	-- In Pursuit of Gul'dan
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1, {	-- All Hands On Deck
-							["sourceQuest"] = 38574,	-- All Hands On Deck
-						}),
-					},
-				}),
-				ach(9243,  {	-- Item Level Force (20 - lvl 650)
+				a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
+					crit(1, { -- All Hands On Deck
+						["_quests"] = { 38259 },
+					}),
+					crit(2, { -- The Invasion of Tanaan
+						["_quests"] = { 38445 },
+					}),
+					crit(3, { -- Bane of the Bleeding Hollow
+						["_quests"] = { 38274 },
+					}),
+					crit(4, { -- Dark Ascension
+						["_quests"] = { 38223 },
+					}),
+					crit(5, { -- The Fate of Teron'gor
+						["_quests"] = { 38562 },	-- Secrets of the Sargerei (A)
+					}),
+					crit(6, { -- The Cipher of Damnation
+						["_quests"] = { 39394 },
+					}),
+				})),
+				h(ach(10074, {	-- In Pursuit of Gul'dan (Garrison) [H]
+					crit(1, { -- All Hands On Deck
+						["_quests"] = { 38574 },
+					}),
+					crit(2, { -- The Invasion of Tanaan
+						["_quests"] = { 37935 },
+					}),
+					crit(3, { -- Bane of the Bleeding Hollow
+						["_quests"] = { 38274 },
+					}),
+					crit(4, { -- Dark Ascension
+						["_quests"] = { 38223 },
+					}),
+					crit(5, { -- The Fate of Teron'gor
+						["_quests"] = { 38416 },	-- Secrets of the Sargerei (H)
+					}),
+					crit(6, { -- The Cipher of Damnation
+						["_quests"] = { 38463 },
+					}),
+				})),
+				ach(9243, {	-- Item Level Force (20 - lvl 650)
 					ach(9213),	-- Item Level Army (10 - lvl 650)
 					ach(9212),	-- My Item Level Is Way Higher than Yours (1 - lvl 650)
 					ach(9211),	-- My Item Level Is Higher than Yours (1 - lvl 625)
 				}),
-				ach(9097,  {	-- Keepin' Busy
+				ach(9097, {	-- Keepin' Busy
 					crit(1),		-- Mine
 					crit(2),		-- Fishing Shack
 					crit(3),		-- Herb Garden
 					crit(4),		-- Pet Menagerie
 				}),
-				ach(9096,  {	-- Master Builder
+				ach(9096, {	-- Master Builder
 					crit(1),		-- At least 3 small buildings activated
 					crit(2),		-- At least 2 medium buildings activated
 					crit(3),		-- At least 2 large buildings activated
@@ -194,7 +215,7 @@ _.ExpansionFeatures =
 				}),
 				ach(9246),		-- Master Draenor Crafter
 				ach(9265),		-- Master of Apexis
-				ach(9825,  {	-- Master Relic Hunter
+				ach(9825, {	-- Master Relic Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1),		-- The Blessing of Beasts
@@ -205,7 +226,7 @@ _.ExpansionFeatures =
 						crit(6),		-- The Crystal Reborn
 					},
 				}),
-				ach(9836,  {	-- Master Relic Hunter
+				ach(9836, {	-- Master Relic Hunter
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1),	-- The Blessing of Beasts
@@ -216,48 +237,93 @@ _.ExpansionFeatures =
 						crit(6),	-- The Crystal Reborn
 					},
 				}),
-				ach(9098,  {	-- Movin' On Up (Lvl 3)
+				ach(9098, {	-- Movin' On Up (Lvl 3)
 					ach(9099),		-- Time for an Upgrade (Lvl 2)
 				}),
 				ach(8933),		-- Staying Regular
-				-- TODO: more sourceQuests or _quests?
-				ach(9491,  {	-- The Garrison Campaign
+				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- The Warlord's Council
-						crit(2),	-- The Sargerei
-						crit(3),	-- Darktide Roost
-						crit(4, {	-- Iron Siegeworks
-							["sourceQuests"] = { 34033 },	-- And The Mole You Rode In On
+						crit(1, { -- The Warlord's Council
+							["_quests"] = { 35841 },	-- Putting Down the Packleader
 						}),
-						crit(5),	-- The Ring of Blood
-						crit(6),	-- The Fall of Shattrath
-						crit(7),	-- Bloodmaul Compound
-						crit(8),	-- Broken Precipice
-						crit(9),	-- The Exarch's Call
-						crit(10),	-- Heart of the Breakers
-						crit(11),	-- A Strike at the Heart
-						crit(12),	-- Primal Fury
+						crit(2, { -- The Sargerei
+							["_quests"] = { 35196 },	-- Forging Ahead
+						}),
+						crit(3, { -- Darktide Roost
+							["_quests"] = { 34450 },	-- Rylak Rescue
+						}),
+						crit(4, {	-- Iron Siegeworks
+							["_quests"] = { 34033 },	-- And The Mole You Rode In On
+						}),
+						crit(5, { -- The Ring of Blood
+							["_quests"] = { 36289 },	-- Out of the Shadows
+						}),
+						crit(6, { -- The Fall of Shattrath
+							["_quests"] = { 35685 },	-- Socrethar's Demise
+						}),
+						crit(7, { -- Bloodmaul Compound
+							["_quests"] = { 34289 },	-- Soulgrinder Survivor
+						}),
+						crit(8, { -- Broken Precipice
+							["_quests"] = { 37517 },	-- News for Nixxie
+						}),
+						crit(9, { -- The Exarch's Call
+							["_quests"] = { 36169 },	-- The Trial of Champions
+						}),
+						crit(10, { -- Heart of the Breakers
+							["_quests"] = { 34410 },	-- The Beating Heart
+						}),
+						crit(11, { -- A Strike at the Heart
+							["_quests"] = { 36162 },	-- A Stolen Heart
+						}),
+						crit(12, { -- Primal Fury
+							["_quests"] = { 36341 },	-- Primal Fury
+						}),
 					},
 				}),
-				ach(9492,  {	-- The Garrison Campaign
+				ach(9492, {	-- The Garrison Campaign
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1),	-- The Warlord's Council
-						crit(2),	-- The Sargerei
-						crit(3),	-- Darktide Roost
-						crit(4),	-- Iron Siegeworks
-						crit(5),	-- The Ring of Blood
-						crit(6),	-- The Fall of Shattrath
-						crit(7),	-- Bloodmaul Compound
-						crit(8),	-- Ours is the Fury
-						crit(9),	-- Broken Precipice
-						crit(10),	-- Heart of the Breakers
-						crit(11),	-- A Strike at the Heart
-						crit(12),	-- Primal Fury
+						crit(1, { -- The Warlord's Council
+							["_quests"] = { 35842 },	-- Putting Down the Packleader
+						}),
+						crit(2, { -- The Sargerei
+							["_quests"] = { 35197 },	-- Forging Ahead
+						}),
+						crit(3, { -- Darktide Roost
+							["_quests"] = { 34450 },	-- Rylak Rescue
+						}),
+						crit(4, { -- Iron Siegeworks
+							["_quests"] = { 34078 },	-- Payment Due for Services Rendered
+						}),
+						crit(5, { -- The Ring of Blood
+							["_quests"] = { 36290 },	-- Out of the Shadows
+						}),
+						crit(6, { -- The Fall of Shattrath
+							["_quests"] = { 35687 },	-- Socrethar's Demise
+						}),
+						crit(7, { -- Bloodmaul Compound
+							["_quests"] = { 34319 },	-- Soulgrinder Survivor
+						}),
+						crit(8, { -- Broken Precipice
+							["_quests"] = { 37516 },	-- News for Nixxie
+						}),
+						crit(9, { -- Ours is the Fury
+							["_quests"] = { 33427 }, -- Ours is the Fury
+						}),
+						crit(10, { -- Heart of the Breakers
+							["_quests"] = { 34341 },	-- The Beating Heart
+						}),
+						crit(11, { -- A Strike at the Heart
+							["_quests"] = { 36248 },	-- A Stolen Heart
+						}),
+						crit(12, { -- Primal Fury
+							["_quests"] = { 36342 },	-- Primal Fury
+						}),
 					},
 				}),
-				ach(9407,  {	-- Working Many Orders (750)
+				ach(9407, {	-- Working Many Orders (750)
 					ach(9406, {	-- Working More Orders (250)
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						["g"] = {

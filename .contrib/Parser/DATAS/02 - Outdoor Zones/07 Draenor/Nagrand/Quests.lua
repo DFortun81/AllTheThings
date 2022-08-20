@@ -185,11 +185,6 @@ _.Zones =
 					["sourceQuest"] = 35098,	-- Lok-rath is Secured
 					["isBreadcrumb"] = true,
 				}),
-				q(35973, {	-- Brokyo Beatdown
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
-					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
-					["sourceQuest"] = 37511,	-- Dizzy Sparkshift
-				}),
 				q(35331, {	-- Called to the Throne
 					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
@@ -287,14 +282,6 @@ _.Zones =
 						{ 52.0, 68.8, DRAENOR_NAGRAND },
 					},
 				}),
-				q(37511, {	-- Dizzy Sparkshift
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
-					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
-					["sourceQuests"] = {
-						35972,	-- Ogre Onslaught
-						35970,	-- Preservation Capitalization
-					},
-				}),
 				q(34881, {	-- Earth, Wind and Fire...and Water
 					["provider"] = { "n", 80593 },	-- Incineratus
 					["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
@@ -326,11 +313,6 @@ _.Zones =
 					["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34965,	-- Called to the Throne
-				}),
-				q(36221, {	-- Entry Fee
-					["provider"] = { "n", 84720 },	-- Kroggol the Wall
-					["coord"] = { 56.8, 19.2, DRAENOR_NAGRAND },
-					["sourceQuest"] = 36220,	-- How Tough Are You?
 				}),
 				q(35596, {	-- Feline Friends Forever
 					["provider"] = { "n", 80083 },	-- Goldmane the Skinner
@@ -384,14 +366,6 @@ _.Zones =
 					["coord"] = { 71.1, 52.4, DRAENOR_NAGRAND },
 					["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 				}),
-				q(35945, {	-- Greblin Fastfizzle
-					["provider"] = { "n", 83686 },	-- Greblin Fastfizzle
-					["coord"] = { 39.6, 24.6, DRAENOR_NAGRAND },
-					["sourceQuests"] = {
-						35985,	-- Garrison Campaign: The Broken Precipice (alliance)
-						36117,	-- Garrison Campaign: The Broken Precipice (horde)
-					},
-				}),
 				q(34893, {	-- Guardians of the Plateau
 					["provider"] = { "n", 80593 },	-- Incineratus
 					["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
@@ -404,11 +378,6 @@ _.Zones =
 					["provider"] = { "n", 80434 },	-- Gar'rok
 					["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
 					["sourceQuest"] = 34894,	-- A Rare Bloom
-				}),
-				q(36220, {	-- How Tough Are You?
-					["provider"] = { "n", 84637 },	-- Gurgthock
-					["coord"] = { 63.0, 36.0, DRAENOR_NAGRAND },
-					["sourceQuests"] = { 36219, 36280, 36281, 36282 },	-- Garrison Campaign: The Ring of Blood (4 different versions... come on, blizzard)
 				}),
 				q(34915, {	-- I Help Ya Kill Dem
 					["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
@@ -439,18 +408,6 @@ _.Zones =
 						i(118149),	-- Stormsteppe Bracers
 						i(118147),	-- Windshaper Bracers
 					},
-				}),
-				q(35840, {	-- Intercepting the Orders
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35839,	-- Plans of War
-				}),
-				q(35846, {	-- Intercepting the Orders
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35845,	-- Plans of War
 				}),
 				q(35357, {	-- King of the Breezestriders
 					["provider"] = { "n", 82094 },	-- Rangari Laara
@@ -558,18 +515,6 @@ _.Zones =
 						i(114834),	-- Meadowstomper Calf
 					},
 				}),
-				q(37517, {	-- News for Nixxie
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
-					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35973,	-- Brokyo Breakdown
-				}),
-				q(37516, {	-- News for Nixxie
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
-					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35973,	-- Brokyo Breakdown
-				}),
 				q(35332, {	-- Nobundo Sends Word
 					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
@@ -643,11 +588,6 @@ _.Zones =
 						35150,	-- Trouble at the Overwatch
 					},
 				}),
-				q(35972, {	-- Ogre Onslaught
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
-					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
-					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
-				}),
 				q(34717, {	-- Operation: Just Arrowhead
 					["provider"] = { "n", 79722 },	-- Rangari Ogir
 					["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
@@ -667,46 +607,6 @@ _.Zones =
 					["coord"] = { 63.0, 61.9, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 34678,	-- Up and Running
-				}),
-				q(36290, {	-- Out of the Shadows
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
-					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-				}),
-				q(36289, {	-- Out of the Shadows
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
-					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 36222,	-- The Champion of Blood
-				}),
-				q(35845, {	-- Plans of War
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35844,	-- The Warlord's Council
-				}),
-				q(35839, {	-- Plans of War
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35838,	-- The Warlord's Council
-				}),
-				q(35970, {	-- Preservation Capitalization
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
-					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
-					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
-				}),
-				q(35841, {	-- Putting Down the Packleader
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35840,	-- Intercepting the Orders
-				}),
-				q(35842, {	-- Putting Down the Packleader
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
-					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35846,	-- Intercepting the Orders
 				}),
 				q(35350, {	-- Queen of the Clefthoof
 					["provider"] = { "n", 82092 },	-- Kia Herman
@@ -1042,14 +942,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35265,	-- The Ritual of Binding
 				}),
-				q(36222, {	-- The Champion of Blood
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
-					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
-					["sourceQuest"] = 36221,	-- Entry Fee
-					["g"] = {
-						title(261),	-- Blood Champion <Name>
-					},
-				}),
 				q(35396, {	-- The Dark Heart of Oshu'gun
 					["provider"] = { "n", 82181 },	-- Vindicator Nobundo
 					["coord"] = { 46.0, 32.7, 553 },
@@ -1321,18 +1213,6 @@ _.Zones =
 						{ 52.0, 68.8, DRAENOR_NAGRAND },
 					},
 					["sourceQuest"] = 35085,	-- Through the Nether
-				}),
-				q(35844, {	-- The Warlord's Council
-					["provider"] = { "n", 83052 },	-- Shadow Hunter Zasta
-					["coord"] = { 49.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35843,	-- Garrison Campaign: Deep Recon
-				}),
-				q(35838, {	-- The Warlord's Council
-					["provider"] = { "n", 83051 },	-- Jeanine Amrell
-					["coord"] = { 49.8, 37.0, DRAENOR_NAGRAND },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35837,	-- Garrison Campaign: Deep Recon
 				}),
 				q(35271, {	-- The Warsong Threat
 					["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },

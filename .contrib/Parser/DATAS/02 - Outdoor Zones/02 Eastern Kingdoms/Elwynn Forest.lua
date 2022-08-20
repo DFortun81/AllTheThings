@@ -966,7 +966,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						q(26916, {	-- Mastering the Arcane 
+						q(26916, {	-- Mastering the Arcane
 							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["sourceQuest"] = 3104,	-- Glyphic Letter
 							["coord"] = { 38.6, 43.6, NORTHSHIRE_VALLEY },
@@ -1042,7 +1042,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 							["groups"] = {
-								i(6095, {	-- Wandering Boots 
+								i(6095, {	-- Wandering Boots
 									["timeline"] = { "removed 4.0.3.13277" },
 								}),
 							},
@@ -1084,7 +1084,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
-						q(26915, {	-- The Deepest Cut 
+						q(26915, {	-- The Deepest Cut
 							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["sourceQuest"] = 3102,	-- Encrypted Letter
 							["coord"] = { 41.8, 45.8, NORTHSHIRE_VALLEY },
@@ -1100,7 +1100,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
-						q(26918, {	-- The Power of the Light 
+						q(26918, {	-- The Power of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
@@ -1619,7 +1619,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						i(6980, {-- Haggard's Dagger
 							["timeline"] = { "removed 4.0.3" },
-						}),	
+						}),
 						i(6983, {	-- Haggard's Hammer
 							["timeline"] = { "removed 4.0.3" },
 						}),

@@ -103,22 +103,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		}),
 		ach(9483),		-- I Was Framed! (Darktide Roost)
 		ach(9656),		-- In Plain Sight (The Pit)
-		a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
-			crit(1),		-- All Hands On Deck
-			crit(2),		-- The Invasion of Tanaan
-			crit(3),		-- Bane of the Bleeding Hollow
-			crit(4),		-- Dark Ascension
-			crit(5),		-- The Fate of Teron'gor
-			crit(6),		-- The Cipher of Damnation
-		})),
-		h(ach(10074, {	-- In Pursuit of Gul'dan (Garrison) [H]
-			crit(1),		-- All Hands On Deck
-			crit(2),		-- The Invasion of Tanaan
-			crit(3),		-- Bane of the Bleeding Hollow
-			crit(4),		-- Dark Ascension
-			crit(5),		-- The Fate of Teron'gor
-			crit(6),		-- The Cipher of Damnation
-		})),
 		ach(9659),		-- Iron Wings (The Pit)
 		ach(9436),		-- It's the Stones! (Socrethar's Rise)
 		a(ach(9833, {	-- Loremaster of Draenor (Alliance)
@@ -306,34 +290,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(9536),		-- Slagnarok (Magnarok)
 		ach(9435),		-- Take From Them Everything (Socrethar's Rise)
 		ach(9535),		-- That Was Entirely Unnecessary (Magnarok)
-		a(ach(9491, {	-- The Garrison Campaign [A]
-			crit(1),		-- The Warlord's Council
-			crit(2),		-- The Sargerei
-			crit(3),		-- Darktide Roost
-			crit(4),		-- Iron Siegeworks
-			crit(5),		-- The Ring of Blood
-			crit(6),		-- The Fall of Shattrath
-			crit(7),		-- Bloodmaul Compound
-			crit(8),		-- Broken Precipice
-			crit(9),		-- The Exarch's Call / Ours is the Fury
-			crit(10),		-- Heart of the Breakers
-			crit(11),		-- A Strike at the Heart
-			crit(12),		-- Primal Fury
-		})),
-		h(ach(9492, {	-- The Garrison Campaign [H]
-			crit(1),		-- The Warlord's Council
-			crit(2),		-- The Sargerei
-			crit(3),		-- Darktide Roost
-			crit(4),		-- Iron Siegeworks
-			crit(5),		-- The Ring of Blood
-			crit(6),		-- The Fall of Shattrath
-			crit(7),		-- Bloodmaul Compound
-			crit(8),		-- Broken Precipice
-			crit(9),		-- The Exarch's Call / Ours is the Fury
-			crit(10),		-- Heart of the Breakers
-			crit(11),		-- A Strike at the Heart
-			crit(12),		-- Primal Fury
-		})),
 		ach(9632),		-- The Power Is Yours (Shattrath City)
 		ach(9541, {		-- The Song of Silence (Mok'gol Outpost)
 			crit(1),		-- Karosh Blackwind

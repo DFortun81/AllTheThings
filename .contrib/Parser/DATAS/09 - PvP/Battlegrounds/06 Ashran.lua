@@ -891,7 +891,6 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory

@@ -110,7 +110,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 59.7, 70.6, ORIBOS },
 				["g"] = {
 					i(194118, {	-- Cosmic Equipment Chest
-						["timeline"] = { "added 9.2.5" },
+						["timeline"] = { "added 9.2.5", REMOVED_SLS4 },
 						["cost"] = {
 							{ "c", 1602, 375 },	-- 375xConquest
 						},

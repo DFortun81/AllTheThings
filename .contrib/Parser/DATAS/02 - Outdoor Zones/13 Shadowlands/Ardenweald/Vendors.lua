@@ -146,6 +146,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 							{ "select", "headerID" , LEGENDARIES },	-- Legendary header
 							{ "pop" },							-- pop header
 							{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
+							{ "exclude", "itemID",
+								190584,	-- Memory of Unity (DK)
+								190587,	-- Memory of Unity (DH)
+								190588,	-- Memory of Unity (DRUID)
+								190589,	-- Memory of Unity (HUNTER)
+								190590,	-- Memory of Unity (MAGE)
+								190591,	-- Memory of Unity (MONK)
+								190592,	-- Memory of Unity (PALADIN)
+								190593,	-- Memory of Unity (PRIEST)
+								190594,	-- Memory of Unity (ROGUE)
+								190595,	-- Memory of Unity (SHAMAN)
+								190596,	-- Memory of Unity (WARLOCK)
+								190598,	-- Memory of Unity (WARRIOR)
+							},
 						},
 						["cost"] = {
 							{ "c", GRATEFUL, 35 },

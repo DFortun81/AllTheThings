@@ -45,14 +45,14 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78752, {	-- Colossal Dragonplate Battleplate
 			["cost"] = { { "i", 78864, 1 }, },	-- Chest of the Corrupted Protector
 		}),
-		
+
 		i(78763, {	-- Colossal Dragonplate Gauntlets
 			["cost"] = { { "i", 78867, 1 }, },	-- Gauntlets of the Corrupted Protector
 		}),
 		i(78801, {	-- Colossal Dragonplate Legplates
 			["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Protection
 		i(78784, {	-- Colossal Dragonplate Faceguard
 			["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
@@ -87,7 +87,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78807, {	-- Legplates of Radiant Glory
 			["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(78787, {	-- Headguard of Radiant Glory
 			["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -104,7 +104,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78812, {	-- Greaves of Radiant Glory
 			["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Protection
 		i(78790, {	-- Faceguard of Radiant Glory
 			["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -139,7 +139,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78802, {	-- Necrotic Boneplate Greaves
 			["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Protection
 		i(78792, {	-- Necrotic Boneplate Faceguard
 			["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -208,7 +208,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78817, {	-- Leggings of Dying Light
 			["cost"] = { { "i", 78872, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(78795, {	-- Cowl of Dying Light
 			["cost"] = { { "i", 78869, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -243,7 +243,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78799, {	-- Spiritwalker's Legguards
 			["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Elemental
 		i(78780, {	-- Spiritwalker's Headpiece
 			["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
@@ -260,7 +260,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78806, {	-- Spiritwalker's Kilt
 			["cost"] = { { "i", 78873, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Restoration
 		i(78786, {	-- Spiritwalker's Faceguard
 			["cost"] = { { "i", 78870, 1 }, },	-- Crown of the Corrupted Protector
@@ -329,7 +329,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78809, {	-- Deep Earth Leggings
 			["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Feral
 		i(78789, {	-- Deep Earth Headpiece
 			["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -346,7 +346,7 @@ local TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 		i(78808, {	-- Deep Earth Legguards
 			["cost"] = { { "i", 78871, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(78785, {	-- Deep Earth Helm
 			["cost"] = { { "i", 78868, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -377,14 +377,14 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(76984, {	-- Colossal Dragonplate Battleplate
 			["cost"] = { { "i", 78179, 1 }, },	-- Chest of the Corrupted Protector
 		}),
-		
+
 		i(76985, {	-- Colossal Dragonplate Gauntlets
 			["cost"] = { { "i", 78178, 1 }, },	-- Gauntlets of the Corrupted Protector
 		}),
 		i(76986, {	-- Colossal Dragonplate Legplates
 			["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Protection
 		i(76990, {	-- Colossal Dragonplate Faceguard
 			["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
@@ -419,7 +419,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(76877, {	-- Legplates of Radiant Glory
 			["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(76767, {	-- Headguard of Radiant Glory
 			["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -436,7 +436,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(76768, {	-- Greaves of Radiant Glory
 			["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Protection
 		i(77005, {	-- Faceguard of Radiant Glory
 			["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -471,7 +471,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(76977, {	-- Necrotic Boneplate Greaves
 			["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Protection
 		i(77010, {	-- Necrotic Boneplate Faceguard
 			["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -540,7 +540,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(76346, {	-- Leggings of Dying Light
 			["cost"] = { { "i", 78181, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(76358, {	-- Cowl of Dying Light
 			["cost"] = { { "i", 78182, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -575,7 +575,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(77043, {	-- Spiritwalker's Legguards
 			["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Elemental
 		i(77037, {	-- Spiritwalker's Headpiece
 			["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
@@ -592,7 +592,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(77036, {	-- Spiritwalker's Kilt
 			["cost"] = { { "i", 78176, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Restoration
 		i(76758, {	-- Spiritwalker's Faceguard
 			["cost"] = { { "i", 78177, 1 }, },	-- Crown of the Corrupted Protector
@@ -661,7 +661,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(77020, {	-- Deep Earth Leggings
 			["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Feral
 		i(77015, {	-- Deep Earth Headpiece
 			["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -678,7 +678,7 @@ local TIER_THIRTEEN_NORMAL_GROUPS = {	-- Dragon Soul [Tier 13] (Normal)
 		i(77016, {	-- Deep Earth Legguards
 			["cost"] = { { "i", 78171, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(76750, {	-- Deep Earth Helm
 			["cost"] = { { "i", 78172, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -709,14 +709,14 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78657, {	-- Colossal Dragonplate Battleplate
 			["cost"] = { { "i", 78848, 1 }, },	-- Chest of the Corrupted Protector
 		}),
-		
+
 		i(78668, {	-- Colossal Dragonplate Gauntlets
 			["cost"] = { { "i", 78854, 1 }, },	-- Gauntlets of the Corrupted Protector
 		}),
 		i(78706, {	-- Colossal Dragonplate Legplates
 			["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Protection
 		i(78689, {	-- Colossal Dragonplate Faceguard
 			["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
@@ -751,7 +751,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78712, {	-- Legplates of Radiant Glory
 			["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(78692, {	-- Headguard of Radiant Glory
 			["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -768,7 +768,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78717, {	-- Greaves of Radiant Glory
 			["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Protection
 		i(78695, {	-- Faceguard of Radiant Glory
 			["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -803,7 +803,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78707, {	-- Necrotic Boneplate Greaves
 			["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Protection
 		i(78697, {	-- Necrotic Boneplate Faceguard
 			["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -872,7 +872,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78722, {	-- Leggings of Dying Light
 			["cost"] = { { "i", 78856, 1 }, },	-- Leggings of the Corrupted Conqueror
 		}),
-		
+
 		-- Holy
 		i(78700, {	-- Cowl of Dying Light
 			["cost"] = { { "i", 78850, 1 }, },	-- Crown of the Corrupted Conqueror
@@ -907,7 +907,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78704, {	-- Spiritwalker's Legguards
 			["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Elemental
 		i(78685, {	-- Spiritwalker's Headpiece
 			["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
@@ -924,7 +924,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78711, {	-- Spiritwalker's Kilt
 			["cost"] = { { "i", 78857, 1 }, },	-- Leggings of the Corrupted Protector
 		}),
-		
+
 		-- Restoration
 		i(78691, {	-- Spiritwalker's Faceguard
 			["cost"] = { { "i", 78851, 1 }, },	-- Crown of the Corrupted Protector
@@ -993,7 +993,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78714, {	-- Deep Earth Leggings
 			["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Feral
 		i(78694, {	-- Deep Earth Headpiece
 			["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -1010,7 +1010,7 @@ local TIER_THIRTEEN_HEROIC_GROUPS = {	-- Dragon Soul [Tier 13] (Heroic)
 		i(78713, {	-- Deep Earth Legguards
 			["cost"] = { { "i", 78858, 1 }, },	-- Leggings of the Corrupted Vanquisher
 		}),
-		
+
 		-- Restoration
 		i(78690, {	-- Deep Earth Helm
 			["cost"] = { { "i", 78852, 1 }, },	-- Crown of the Corrupted Vanquisher
@@ -1108,8 +1108,8 @@ local TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77150),	-- Zeherah's Dragonskull Crown
 };
 local TIER_THIRTEEN_GROUPS = applyclassicphase(CATA_PHASE_FIVE,
-	appendGroups(TIER_THIRTEEN_COMMON_GROUPS, 
-	appendGroups(TIER_THIRTEEN_HEROIC_GROUPS, 
+	appendGroups(TIER_THIRTEEN_COMMON_GROUPS,
+	appendGroups(TIER_THIRTEEN_HEROIC_GROUPS,
 	appendGroups(TIER_THIRTEEN_NORMAL_GROUPS,
 	appendGroups(TIER_THIRTEEN_RAIDFINDER_GROUPS, {
 })))));
@@ -1991,6 +1991,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.3.0.33062" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(1271, {	-- Feast at the Blue Recluse
+					["qg"] = 1141,	-- Angus Stern
+					["sourceQuest"] = 1222,	-- Stinky's Escape
+					["coord"] = { 51.7, 93.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 1.11.1.10772" },
 				}),
 				q(26177, {	-- Feeling Crabby?
 					["qg"] = 42288,	-- Robby Flay

@@ -221,6 +221,7 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
 				["creatureID"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
+					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed Discord 2022-08-01)
 					i(163829),	-- Toy War Machine (TOY!)
 					i(161455),	-- Battlemage's Collar
 					i(161453),	-- Warscout's Horned Helm

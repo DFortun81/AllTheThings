@@ -192,20 +192,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\INV_DataCrystal11",
 					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
 				}),
-				q(34355, {	-- Dirty Rats
-					["sourceQuests"] = {
-						34353,	-- Shredder Suppressor
-					},
-					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 77982 },	-- Rexxar
-				}),
-				q(34397, {	-- Downsizing the Darktide
-					["sourceQuests"] = {
-						34355,	-- Dirty Rats
-					},
-					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 78258 },	-- Rexxar
-				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
 					["coord"] = { 61.8, 29.1, DRAENOR_SHADOWMOON_VALLEY },
@@ -539,13 +525,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
-				q(34365, {	-- Releasing Rylak
-					["sourceQuests"] = {
-						34355,	-- Dirty Rats
-					},
-					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 78258 },	-- Rexxar
-				}),
 				q(36409, {	-- Restoration
 					["coord"] = { 47.0, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
@@ -572,14 +551,6 @@ _.Zones =
 					["g"] = {
 						follower(183),	-- Rulkan
 					},
-				}),
-				q(34450, {	-- Rylak Rescue
-					["sourceQuests"] = {
-						34365,	-- Releasing Rylak
-						34397,	-- Downsizing the Darktide
-					},
-					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(33113, {	-- Shadowmoonwell
 					["sourceQuests"] = {
@@ -640,14 +611,6 @@ _.Zones =
 						}),
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
-				}),
-				q(34353, {	-- Shredder Suppressor
-					["sourceQuests"] = {
-						35861,	-- Garrison Campaign: Darktide Roost (A)
-						35876,	-- Garrison Campaign: Darktide Roost (H)
-					},
-					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
-					["provider"] = { "n", 77982 },	-- Rexxar
 				}),
 				q(33115, {	-- Shrouding Stones
 					["sourceQuests"] = { 33062 },	-- Catching his Eye
@@ -907,39 +870,6 @@ _.Zones =
 						i(113235),	-- Karabor Skirmisher Wristwraps
 						i(113232),	-- Rangari Initiate Wristwraps
 					},
-				}),
-				q(36169, {	-- The Trial of Champions
-					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 84974 },	-- Exarch Maladaar
-					["sourceQuests"] = {
-						36168,	-- The Trial of Faith
-						36164,	-- The Trial of Courage
-						36167,	-- The Trial of Heart
-					},
-					["g"] = {
-						i(119144, {	-- Touch of the Naaru (TOY!)
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				}),
-				q(36164, {	-- The Trial of Courage
-					["coord"] = { 55.8, 32.8, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 80078 },	-- Exarch Akama
-					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
-				}),
-				q(36168, {	-- The Trial of Faith
-					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 80073 },	-- Exarch Maladaar
-					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
-				}),
-				q(36167, {	-- The Trial of Heart
-					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 80079 },	-- Exarch Naielle
-					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
 				}),
 				q(33070, {	-- Think of the Children!
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome

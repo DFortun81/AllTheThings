@@ -392,10 +392,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64519, {	-- Lost Vaults
 				["sourceQuests"] = {
 					64511,	-- Missing Relics
-				--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
-				--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
-					63915,	-- Drum of Driving
-					63917,	-- Everliving Statuette
 				},
 				["minReputation"] = { 2472, 7500 },	-- Tier 3
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
@@ -886,7 +882,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["timeline"] = { "added 9.1.5" },
 				["isWeekly"] = true,
 			}),
-			q(63777, {	-- Sealed Secrets
+			q(63954, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["isDaily"] = true,
@@ -899,6 +895,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63961, {	-- Sealed Secrets
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178845 },	-- Ve'lonu
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
+			q(63777, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["isDaily"] = true,
@@ -1001,12 +1003,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179194 },	-- Kleia
 				["isDaily"] = true,
 				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			q(63954, {	-- Sealed Secrets
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63955, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
