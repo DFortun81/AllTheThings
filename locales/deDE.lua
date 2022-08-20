@@ -3257,6 +3257,17 @@ local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
 	["Violette Festung"] = "Die Violette Festung";	-- The Violet Hold
 	["Geschmolzener Kern"] = "Der Geschmolzene Kern";	-- Molten Core
+	["Höllenfeuerzitadelle: Bollwerk"] = "Höllenfeuerbollwerk";	-- Hellfire Ramparts
+	["Höllenfeuerzitadelle: Blutkessel"] = "Der Blutkessel";	-- The Blood Furnace
+	["Echsenkessel: Tiefensumpf"] = "Der Tiefensumpf";	-- The Underbog
+	["Auchindoun: Auchenaikrypta"] = "Auchenaikrypta";	-- Auchenai Crypts	--TODO: Not sure about Journal Name
+	["Auchindoun: Managruft"] = "Managruft";	-- Mana-Tombs	--TODO: Not sure about Journal Name
+	["Auchindoun: Sethekkhallen"] = "Sethekkhallen";	-- Sethekk Halls	--TODO: Not sure about Journal Name
+	["Auchindoun: Schattenlabyrinth"] = "Schattenlabyrinth";	-- Shadow Labyrinth
+	["Festung der Stürme: Die Botanika"] = "Die Botanika";	-- The Botanica
+	["Festung der Stürme: Die Mechanar"] = "Die Mechanar";	-- The Mechanar
+	["Echsenkessel: Dampfkammer"] = "Die Dampfkammer";	-- The Steamvault
+	["Festung der Stürme: Die Arkatraz"] = "Die Arkatraz";	-- The Arcatraz
 	["Echsenkessel: Höhle des Schlangenschreins"] = "Höhle des Schlangenschreins";	-- Serpentshrine Cavern
 	["Festung der Stürme"] = "Das Auge";	-- The Eye
 	["Der Sonnenbrunnen"] = "Sonnenbrunnenplateau";	-- Sunwell Plateau
