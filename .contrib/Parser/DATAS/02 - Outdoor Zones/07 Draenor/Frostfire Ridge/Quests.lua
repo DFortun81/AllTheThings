@@ -1020,7 +1020,12 @@ _.Zones =
 					["description"] = "This cannot be acquired with a Level 3 Garrison.",
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 36567,	-- Bigger is Better
+					["sourceQuests"] = {
+						36567,	-- Bigger is Better
+						32796,	-- To the Garrison
+						33493,	-- Return to the Pack
+					},
+					["lockCriteria"] = { 1, "questID", 36614 },	-- My Very Own Fortress
 					["providers"] = {
 						{ "n", 74163 },	-- Durotan
 						{ "n", 88228 },	-- Sergeant Grimjaw
