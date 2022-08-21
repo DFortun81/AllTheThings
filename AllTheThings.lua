@@ -368,6 +368,7 @@ local FunctionRunner = {
 	-- Defines how many functions will be executed per frame
 	["SetPerFrame"] = function(count)
 		Config.PerFrame = math.max(1, tonumber(count) or 1);
+		-- app.PrintDebug("FR:",Config.PerFrame)
 	end,
 	-- Set a function to be run once the queue is empty. This function takes no parameters.
 	["OnEnd"] = function(func)
@@ -6661,7 +6662,7 @@ local function GetPopulatedQuestObject(questID)
 	local questObject = CreateObject(data, true);
 	-- if this quest exists but is Sourced under a _missing group, then it is technically missing itself
 	questObject._missing = GetRelativeValue(data, "_missing");
-	PopulateQuestObject(questObject);
+	app.FunctionRunner.Run(PopulateQuestObject, questObject);
 	return questObject;
 end
 local function ExportDataRecursively(group, indent)
@@ -7775,8 +7776,8 @@ end)();
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
 (function()
-local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData =
-	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestData,HaveQuestRewardData;
+local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_GetAllCompletedQuestIDs,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData =
+	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.GetAllCompletedQuestIDs,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData;
 local GetSpellInfo,math_floor =
 	  GetSpellInfo,math.floor;
 
@@ -21040,11 +21041,11 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
-		self.PartitionSize = 1000;
-		self.Limit = 70000;
+		self.PartitionSize = 2000;
+		self.Limit = 80000;
 		force = true;
 		local HaveQuestData = HaveQuestData;
-		local DGU, Run, SetPerFrame = app.DirectGroupUpdate, app.FunctionRunner.Run, app.FunctionRunner.SetPerFrame;
+		local DGU, Run = app.DirectGroupUpdate, app.FunctionRunner.Run;
 
 		-- custom params for initialization
 		local onlyMissing = app.GetCustomWindowParam("quests", "missing");
@@ -21076,7 +21077,6 @@ customWindowUpdates["quests"] = function(self, force, got)
 			end,
 			OnLoad = function(self)
 				-- app.PrintDebug("DGU-OnLoad:",self.hash)
-				SetPerFrame(20);
 				Run(DGU, self);
 			end,
 		};
