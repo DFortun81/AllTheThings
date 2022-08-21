@@ -2019,6 +2019,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 								i(112750),	-- Treads of Autonomic Motion
 								i(112747),	-- Laser-Slice Signet
 								i(112729),	-- Juggernaut's Focusing Crystal
+								i(140783, {	-- Predictive Combat Operations Databank
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
 							})),
 							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 								crit(3, {	-- Kor'kron Dark Shaman
@@ -2459,6 +2462,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {
@@ -2911,6 +2917,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {
@@ -3386,6 +3395,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {

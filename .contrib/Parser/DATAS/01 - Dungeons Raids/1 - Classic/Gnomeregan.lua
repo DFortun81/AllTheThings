@@ -649,6 +649,21 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(9279, {	-- White Punch Card
 					["description"] = "This can be looted from mobs outside of the instance.",
 				}),
+				i(140781, {	-- X-87 Battle Circuit
+					["timeline"] = { "added 7.0.3.22248" },
+					["crs"] = {
+						6229,	-- Crowd Pummeler 9-60
+						6235,	-- Electrocutioner 6000
+						7800,	-- Mekgineer Thermaplug
+						6232,	-- Arcane Nullifier X-21
+						6234,	-- Mechanized Guardian
+						6233,	-- Mechanized Sentry
+						6226,	-- Mechano-Flamewalker
+						6227,	-- Mechano-Frostwalker
+						6225,	-- Mechano-Tank
+						6230,	-- Peacekeeper Security Suit
+					},
+				}),
 			}),
 			o(142345, {	-- Matrix Punchograph 3005-A
 				["description"] = "This is located outside of the instance just to the north of both the elevator or the transporter.",

@@ -815,6 +815,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45490),	-- Pandora's Plea
 						i(45787),	-- Mimiron's Sigil
 						i(45816),	-- Mimiron's Sigil
+						i(140782, {	-- Neural Net Detangler
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				})),
 				cr(33271, e(1648, {	-- General Vezax

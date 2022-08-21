@@ -2284,6 +2284,39 @@ root("Zones", {
 						},
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(140785, {	-- Hardened Circuitboard Plating
+						["timeline"] = { "added 7.0.3.22248" },
+						["crs"] = {
+							25758,	-- Defendo-tank 66D
+							25814,	-- Fizzcrank Mechagnome
+							25752,	-- Scavenge-bot 004-A8
+							25753,	-- Sentry-bot 57-K
+						},
+						["coords"] = {
+							-- Defendo-tank 66D
+							{ 59.2, 18.4, BOREAN_TUNDRA },
+							{ 64.2, 17.2, BOREAN_TUNDRA },
+							{ 67.0, 24.6, BOREAN_TUNDRA },
+							{ 63.8, 27.8, BOREAN_TUNDRA },
+							-- Fizzcrank Mechagnome
+							{ 59.0, 16.4, BOREAN_TUNDRA },
+							{ 65.4, 17.6, BOREAN_TUNDRA },
+							{ 62.6, 21.6, BOREAN_TUNDRA },
+							{ 65.2, 28.4, BOREAN_TUNDRA },
+							-- Scavenge-bot 004-A8
+							{ 59.2, 17.6, BOREAN_TUNDRA },
+							{ 65.6, 17.6, BOREAN_TUNDRA },
+							{ 61.6, 22.2, BOREAN_TUNDRA },
+							{ 65.0, 28.6, BOREAN_TUNDRA },
+							-- Sentry-bot 57-K
+							{ 58.6, 16.8, BOREAN_TUNDRA },
+							{ 63.4, 29.0, BOREAN_TUNDRA },
+							{ 64.8, 23.6, BOREAN_TUNDRA },
+							{ 68.0, 26.6, BOREAN_TUNDRA },
+						},
+					}),
+				}),
 			},
 		}),
 	})),

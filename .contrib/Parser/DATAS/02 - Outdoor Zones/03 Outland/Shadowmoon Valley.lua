@@ -2217,6 +2217,21 @@ root("Zones", {
 							i(122228),	-- Music Roll: The Black Temple
 						},
 					}),
+					i(140784, {	-- Fel Piston Stabilizer
+						["timeline"] = { "added 7.0.3.22248" },
+						["crs"] = {
+							17711,	-- Doomwalker
+							22859,	-- Shadowhoof Summoner
+							22858,	-- Shadowhoof Assassin
+						},
+						["coords"] = {
+							{ 69.6, 42.4, SHADOWMOON_VALLEY },
+							{ 69.6, 45.4, SHADOWMOON_VALLEY },
+							{ 69.6, 44.0, SHADOWMOON_VALLEY },
+							{ 66.0, 43.4, SHADOWMOON_VALLEY },
+							{ 72.6, 44.0, SHADOWMOON_VALLEY },
+						},
+					}),
 				}),
 			},
 		})),
