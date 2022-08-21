@@ -658,17 +658,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(1001),	-- Maximillian of Northshire
 						},
 					}),
-					--
-					q(44219, {	-- Fate's Blessing
-						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
-						["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
-					}),
-					q(44218, {	-- Champion Armaments
-						["provider"] = { "n", 110434 },	-- Kristoff
-						["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
-					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -677,6 +666,22 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
+					}),
+				}),
+				n(SPECIAL, {
+					gt(398, {	-- Holy Purpose
+						q(44219, {	-- Fate's Blessing
+							["provider"] = { "n", 112986 },	-- Librarian Lightmorne
+							["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
+							["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
+						}),
+					}),
+					gt(400, {	-- Plowshares to Swords
+						q(44218, {	-- Champion Armaments
+							["provider"] = { "n", 110434 },	-- Kristoff
+							["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
+							["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
+						}),
 					}),
 				}),
 				n(VENDORS, {
