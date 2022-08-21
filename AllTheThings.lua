@@ -21199,14 +21199,23 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								acctSpells[recipeID] = 1;
 								tinsert(learned, recipeID);
 							end
-						-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
-						elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
-							-- print("unlearned, enabled RecipeID",recipeID)
-							cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
-							-- verify the merged cached version is not 'super' unobtainable
-							if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
-								-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
-								skipcaching = true;
+						else
+							-- unlearned recipes shouldn't be marked as known by the character
+							if charSpells[recipeID] then
+								charSpells[recipeID] = nil;
+								-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
+								-- app.PrintDebug("Unlearned Recipe", link);
+							end
+							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
+							-- also, don't remove the data if *any* character on the account is marked as knowing the recipe
+							if not spellRecipeInfo.disabled and not acctSpells[recipeID] then
+								-- print("unlearned, enabled RecipeID",recipeID)
+								cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
+								-- verify the merged cached version is not 'super' unobtainable
+								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
+									-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
+									skipcaching = true;
+								end
 							end
 						end
 
