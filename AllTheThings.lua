@@ -2528,7 +2528,7 @@ local PrintQuestInfo = function(questID, new, info)
 			);
 		else
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
-			if GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
+			if questRef.u == 1 or GetRelativeField(questRef, "text", L["NEVER_IMPLEMENTED"]) then
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app:PlayReportSound();
 				-- Linkify the output

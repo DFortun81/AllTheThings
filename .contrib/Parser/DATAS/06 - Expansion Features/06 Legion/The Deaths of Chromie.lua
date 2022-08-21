@@ -392,5 +392,5 @@ root("HiddenQuestTriggers", {
 	q(47921),	-- Ensemble: Chronoscryer's Finery
 	q(47922),	-- Ensemble: Epoch Sentinel's Mail
 	q(47923),	-- Ensemble: Riftscarred Vestments
-	q(64652),	-- unknown reason in Chromie Scenario
+	qNYI(64652),	-- unknown reason in Chromie Scenario
 });

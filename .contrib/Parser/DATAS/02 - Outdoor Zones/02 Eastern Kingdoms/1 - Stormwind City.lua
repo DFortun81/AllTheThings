@@ -7490,7 +7490,6 @@ root("HiddenQuestTriggers", {
 		m(STORMWIND_CITY, {
 			q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core
 			q(59255),	-- completed when turning in 'Fame Waits for Gnome One' (58708)
-			q(63219),	-- unknown reason @ 73.5,91.6 L6 NE Druid, 2022-07-30
 		}),
 	}),
 });
