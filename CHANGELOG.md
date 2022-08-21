@@ -15,6 +15,7 @@ We've added another version of Trashmaster's Mantle! Rejoice!
 - We will try a little harder to only fire "Incorrect quest data detected" messages when the data is in fact incorrect.
 - And at the same time we didn't fire this message in some rare correct cases, this should be fixed as well now.
 - Improved performance of profession windows, this should hopefully fix errors for some people.
+- Fixed Common Boss Drops in WoD dungeon mini lists missing some items. This might fix similarly missing items in mini lists elsewhere.
 - Added/fixed Season 4 content.
 - Further clean up of achievements: Trial of the Crusader, Ice Crown Citadel, WotLK dungeons, Garrison Campaigns and others.
 - Updated various WotLK dungeons: Utgarde Pinnacle, Utgarde Keep, Trial of the Champion, The Violet Hold, The Oculus, The Nexus, The Forge of Souls, The Culling of Stratholme, Pit of Saron.
