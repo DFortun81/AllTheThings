@@ -129,7 +129,7 @@ _.ExpansionFeatures =
 				q(35993, {	-- Tackling Teron'gor
 					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						35990,	-- Core of Flame
 						35991,	-- Core of Iron
 						35992,	-- Core of Life
@@ -224,7 +224,7 @@ _.ExpansionFeatures =
 				}),
 				q(40235, {	-- Abrogator Arbitrator
 					["provider"] = { "n", 99180 },	-- Kluk'kluk <Highmaul Turncoat>
-					["coords"] = { 
+					["coords"] = {
 						{ 57.0, 58.6, TANAAN_JUNGLE },
 						{ 59.6, 46.2, TANAAN_JUNGLE },
 					},
@@ -318,7 +318,7 @@ _.ExpansionFeatures =
 				}),
 				q(40237, {	-- Work Work Stoppage
 					["provider"] = { "n", 99183 },	-- Renegade Ironworker <Blackrock Foundry Strike Organizer>
-					["coords"] = { 
+					["coords"] = {
 						{ 58.0, 58.6, TANAAN_JUNGLE },
 						{ 59.8, 46.2, TANAAN_JUNGLE },
 					},
@@ -490,7 +490,7 @@ _.ExpansionFeatures =
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },
 					},
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						39024,	-- Call of the Archmage
 						37841,	-- The Final Assault
 					},
@@ -521,7 +521,7 @@ _.ExpansionFeatures =
 						{ 52.0, 40.0, FROSTWALL },
 						{ 65.5, 46.5, 661 },
 					},
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						39024,	-- Call of the Archmage
 						37841,	-- The Final Assault
 					},
@@ -609,7 +609,7 @@ _.ExpansionFeatures =
 				q(39022, {	-- Call of the Archmage
 					["u"] = REMOVED_FROM_GAME,
 				}),
-			},		
+			},
 		}),
 	}),
 };

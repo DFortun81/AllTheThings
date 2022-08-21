@@ -697,7 +697,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							}),
 						},
 					}),
-					i(173997, {	-- Whispering Reef Salvage Salvage
+					i(173997, {	-- Whispering Reef Salvage
 						["modID"] = 14,
 						["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 						["g"] = {

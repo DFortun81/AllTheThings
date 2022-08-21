@@ -3388,7 +3388,7 @@ subroutines = {
 			{"where", "headerID", -903},	-- Select only the Zone Rewards Headers
 			{"pop"},	-- Discard the Zone Rewards Headers and acquire all of their children.
 
-			-- Process the the headers for the Azerite Armor pieces.
+			-- Process the headers for the Azerite Armor pieces.
 			{"is", "itemID"},	-- Only Items!
 			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
 			{"myModID"},
@@ -5556,7 +5556,7 @@ function app:RecalculateAccountWideData()
 end
 function app:ReceiveSyncRequest(sender, battleTag)
 	if battleTag ~= select(2, BNGetInfo()) then
-		-- Check to see if the the character/account is linked.
+		-- Check to see if the character/account is linked.
 		if not (app:IsAccountLinked(sender) or AllTheThingsAD.LinkedAccounts[battleTag]) then
 			return false;
 		end

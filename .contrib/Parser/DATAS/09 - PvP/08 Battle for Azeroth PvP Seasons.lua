@@ -477,7 +477,7 @@ _.PVP =
 					i(165107),	-- Sinister Aspirant's Chain Helm (A)
 					i(165111),	-- Sinister Aspirant's Chain Legs (A)
 					i(165100),	-- Sinister Aspirant's Chain Sabatons (A)
-					i(165116),	-- Sinister Aspirant's Chain Chain Spaulders (A)
+					i(165116),	-- Sinister Aspirant's Chain Spaulders (A)
 					i(165119),	-- Sinister Aspirant's Chain Waistguard (A)
 					i(165084),	-- Sinister Aspirant's Chain Armbands (H)
 					i(165077),	-- Sinister Aspirant's Chain Armor (H)
@@ -485,7 +485,7 @@ _.PVP =
 					i(165080),	-- Sinister Aspirant's Chain Helm (H)
 					i(165081),	-- Sinister Aspirant's Chain Legs (H)
 					i(165078),	-- Sinister Aspirant's Chain Sabatons (H)
-					i(165082),	-- Sinister Aspirant's Chain Chain Spaulders (H)
+					i(165082),	-- Sinister Aspirant's Chain Spaulders (H)
 					i(165083),	-- Sinister Aspirant's Chain Waistguard (H)
 				}),
 				filter(PLATE, {
@@ -609,7 +609,7 @@ _.PVP =
 					i(164784),	-- Sinister Gladiator's Silk Mantle (H)
 					i(164843),	-- Sinister Gladiator's Silk Raiment (H)
 					i(164779),	-- Sinister Gladiator's Silk Robe (H)
-					i(164850),	-- Sinister Gladiator's S
+					i(164850),	-- Sinister Gladiator's Silk Sash (H)
 					i(166646),	-- Sinister Gladiator's Silk Shoulderpads (H)
 					i(164844),	-- Sinister Gladiator's Silk Slippers (H)
 					i(164780),	-- Sinister Gladiator's Silk Treads (H)

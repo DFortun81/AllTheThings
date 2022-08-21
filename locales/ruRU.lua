@@ -3196,7 +3196,7 @@ for key,value in pairs({
 	[9999946] = "Призовите Бее'ла",	-- Summon Baa'l
 	[13000000] = "|cFFFFFFFFШаг 1:|r Купите Талисман поиска Истинных Сокровищ",	-- |cFFFFFFFFStep 1:|r Purchase Talisman of True Treasure Tracking
 	[13000001] = "|cFFFFFFFFШаг 2:|r Наденьте Талисман",	-- |cFFFFFFFFStep 2:|r Equip Talisman
-	[13000002] = "|cFFFFFFFFПредмет 1:|r Искрящийся мурлочий лосьон для для кожи",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
+	[13000002] = "|cFFFFFFFFПредмет 1:|r Искрящийся мурлочий лосьон для кожи",	-- |cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion
 	[13000003] = "Чешуйка сверкающего окуня",	-- Glittergill Glitter
 	[13000004] = "|cFFFFFFFFШаг 1:|r Морская ракушка",	-- |cFFFFFFFFStep 1:|r Seashell
 	[13000005] = "|cFFFFFFFFШаг 2:|r Здоровый зуб большой акулы",	-- |cFFFFFFFFStep 2:|r Cavity-Free Great Shark Tooth

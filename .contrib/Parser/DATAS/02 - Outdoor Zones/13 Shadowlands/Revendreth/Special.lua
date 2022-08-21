@@ -53,7 +53,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["DisablePartySync"] = true,
 						["sourceQuests"] = { 62038 },	-- Handful of Oats
 						["coord"] = { 63.4, 61.8, REVENDRETH },
-						["crs"] = { 173570 },	-- Snickersnee Snickersnee <Stable Dredger>
+						["crs"] = { 173570 },	-- Snickersnee <Stable Dredger>
 					}),
 					i(182595, {	-- Sturdy Horseshoe
 						["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r.  They can be found scattered around roads in Revendreth.  Unlike the Sacks of Oats, these sparkle.",

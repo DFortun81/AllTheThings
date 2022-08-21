@@ -921,7 +921,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							}),
 						},
 					}),
-					i(173997, {	-- Whispering Reef Salvage Salvage
+					i(173997, {	-- Whispering Reef Salvage
 						["modID"] = 14,
 						["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 						["g"] = {
@@ -1942,7 +1942,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							i(165107),	-- Sinister Aspirant's Chain Helm
 							i(165111),	-- Sinister Aspirant's Chain Legs
 							i(165100),	-- Sinister Aspirant's Chain Sabatons
-							i(165116),	-- Sinister Aspirant's Chain Chain Spaulders
+							i(165116),	-- Sinister Aspirant's Chain Spaulders
 							i(165119),	-- Sinister Aspirant's Chain Waistguard
 							i(165215),	-- Sinister Aspirant's Drape
 						},

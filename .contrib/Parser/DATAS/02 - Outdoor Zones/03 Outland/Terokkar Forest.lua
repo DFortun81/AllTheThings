@@ -1646,7 +1646,7 @@ root("Zones", {
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
 							22144,    -- Gordunni Elementalist
-							22148,    -- Gordunni Gordunni Head-Splitter
+							22148,    -- Gordunni Head-Splitter
 							23022,    -- Gordunni Soulreaper
 						},
 					}),

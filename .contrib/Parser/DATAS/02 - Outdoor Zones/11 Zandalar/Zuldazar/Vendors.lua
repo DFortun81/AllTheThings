@@ -1010,7 +1010,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							i(165080),	-- Sinister Aspirant's Chain Helm
 							i(165081),	-- Sinister Aspirant's Chain Legs
 							i(165078),	-- Sinister Aspirant's Chain Sabatons
-							i(165082),	-- Sinister Aspirant's Chain Chain Spaulders
+							i(165082),	-- Sinister Aspirant's Chain Spaulders
 							i(165083),	-- Sinister Aspirant's Chain Waistguard
 							i(165211),	-- Sinister Aspirant's Drape
 						},
@@ -1067,7 +1067,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							i(164784),	-- Sinister Gladiator's Silk Mantle (H)
 							i(164843),	-- Sinister Gladiator's Silk Raiment (H)
 							i(164779),	-- Sinister Gladiator's Silk Robe (H)
-							i(164850),	-- Sinister Gladiator's S
+							i(164850),	-- Sinister Gladiator's Silk Sash (H)
 							i(166646),	-- Sinister Gladiator's Silk Shoulderpads (H)
 							i(164844),	-- Sinister Gladiator's Silk Slippers (H)
 							i(164780),	-- Sinister Gladiator's Silk Treads (H)

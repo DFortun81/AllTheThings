@@ -591,7 +591,7 @@ COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({
 	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
 }));
 DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
-	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at the The Forge for 100 gold.",
+	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
 		r(158737, {	-- Blacksmithing (Draenor Master)

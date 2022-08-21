@@ -822,7 +822,7 @@ root("Zones", {
 							{ 43.0, 55.6, BOREAN_TUNDRA },
 						},
 						["races"] = HORDE_ONLY,
-						["description"] = "This version of the quest is only available if you have NOT completed the quest  'There Is No Hope' from from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
+						["description"] = "This version of the quest is only available if you have NOT completed the quest  'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius

@@ -729,7 +729,7 @@ i(163211);	-- Akunda's Firesticks
 i(164375);	-- Bad Mojo Banana
 i(163713);	-- Brazier Cap
 i(163744);	-- Coldrage's Cooler
-i(160740);	-- Croak Croak
+i(160740);	-- Croak Crock
 i(163200);	-- Cursed Spyglass
 i(160751);	-- Dance of the Dead
 i(163463);	-- Dead Ringer

@@ -631,16 +631,16 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(44306, {	-- Blessings of the Order
 						["provider"] = { "n", 111773 },	-- Sister Oriel
 						["coord"] = { 61.6, 45.6, 702 },
-						["description"] = "Only available if you you have the |cFFFFD700Tithe|r order hall upgrade.",
+						["description"] = "Only available if you have the |cFFFFD700Tithe|r order hall upgrade.",
 					}),
 					q(44229, {	-- Champion Armaments
 						-- TBD: fill in other fields
-						["description"] = "Only available if you you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
+						["description"] = "Only available if you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
 					}),
 					q(44230, {	-- The Fates Bless Us
 						["provider"] = { "n", 110819 },	-- Truth
 						["coord"] = { 58.6, 29.9, 702 },
-						["description"] = "Only available if you you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
+						["description"] = "Only available if you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
 					}),
 				}),
 				n(VENDORS, {

@@ -3964,7 +3964,7 @@ root("Zones", {
 										i(40522),	-- Valorous Earthshatter War-Kilt
 									}),
 									i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40500),	-- Valorous Valorous Bonescythe Legplates
+										i(40500),	-- Valorous Bonescythe Legplates
 										i(40462),	-- Valorous Dreamwalker Leggings
 										i(40493),	-- Valorous Dreamwalker Legguards
 										i(40468),	-- Valorous Dreamwalker Trousers
@@ -3989,7 +3989,7 @@ root("Zones", {
 										i(40513),	-- Valorous Earthshatter Spaulders
 									}),
 									i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40502),	-- Valorous Valorous Bonescythe Pauldrons
+										i(40502),	-- Valorous Bonescythe Pauldrons
 										i(40470),	-- Valorous Dreamwalker Mantle
 										i(40494),	-- Valorous Dreamwalker Shoulderpads
 										i(40465),	-- Valorous Dreamwalker Spaulders
@@ -5031,7 +5031,7 @@ root("Zones", {
 										i(40522),	-- Valorous Earthshatter War-Kilt
 									}),
 									i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40500),	-- Valorous Valorous Bonescythe Legplates
+										i(40500),	-- Valorous Bonescythe Legplates
 										i(40462),	-- Valorous Dreamwalker Leggings
 										i(40493),	-- Valorous Dreamwalker Legguards
 										i(40468),	-- Valorous Dreamwalker Trousers
@@ -5056,7 +5056,7 @@ root("Zones", {
 										i(40513),	-- Valorous Earthshatter Spaulders
 									}),
 									i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40502),	-- Valorous Valorous Bonescythe Pauldrons
+										i(40502),	-- Valorous Bonescythe Pauldrons
 										i(40470),	-- Valorous Dreamwalker Mantle
 										i(40494),	-- Valorous Dreamwalker Shoulderpads
 										i(40465),	-- Valorous Dreamwalker Spaulders

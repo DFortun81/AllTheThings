@@ -8610,7 +8610,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(100439)),	-- Grievous Gladiator's Leather Spaulders
 					un(REMOVED_FROM_GAME, i(100431)),	-- Grievous Gladiator's Leather Tunic
 					un(REMOVED_FROM_GAME, i(100426)),	-- Grievous Gladiator's Leather Waistband
-					un(REMOVED_FROM_GAME, i(100428)),	-- Grievous Gladiator's Leather Leather Boots
+					un(REMOVED_FROM_GAME, i(100428)),	-- Grievous Gladiator's Leather Boots
 				}),
 				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(100459)),	-- Grievous Gladiator's Linked Armor
@@ -10275,7 +10275,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(103094)),	-- Prideful Gladiator's Leather Spaulders
 					un(REMOVED_FROM_GAME, i(103090)),	-- Prideful Gladiator's Leather Tunic
 					un(REMOVED_FROM_GAME, i(103088)),	-- Prideful Gladiator's Leather Waistband
-					un(REMOVED_FROM_GAME, i(103089)),	-- Prideful Gladiator's Leather Leather Boots
+					un(REMOVED_FROM_GAME, i(103089)),	-- Prideful Gladiator's Leather Boots
 				}),
 				cl(SHAMAN, {
 					un(REMOVED_FROM_GAME, i(103103)),	-- Prideful Gladiator's Linked Armor
