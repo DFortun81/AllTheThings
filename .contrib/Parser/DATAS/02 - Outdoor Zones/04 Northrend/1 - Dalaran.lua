@@ -5945,6 +5945,7 @@ root("Zones", {
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_VIOLET_HOLD_WRATH },
+						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of Cyanigosa
 								["provider"] = { "i", 43823 },	-- Head of Cyanigosa
@@ -6108,6 +6109,11 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					]]--
+					-- TODO: https://www.wowhead.com/wotlk/npc=31439/archmage-timear
+					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
+						["timeline"] = { "removed 4.0.1" },
+						["isDaily"] = true,
+					}),
 					q(14103, {	-- Titanium Powder
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
 						["qg"] = 28701,	-- Timothy Jones
