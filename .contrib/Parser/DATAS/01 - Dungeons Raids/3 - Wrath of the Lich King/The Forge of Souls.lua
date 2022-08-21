@@ -68,6 +68,20 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(78, 78, 25),
 				}),
+				q(24683, {	-- The Pit of Saron (A)
+					["qg"] = 38160,	-- Lady Jaina Proudmoore
+					["sourceQuest"] = 24499,	-- Echoes of Tortured Souls (A)
+					["maps"] = { PIT_OF_SARON },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(78, 78, 25),
+				}),
+				q(24682, {	-- The Pit of Saron (H)
+					["qg"] = 38161,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["sourceQuest"] = 24511,	-- Echoes of Tortured Souls (H)
+					["maps"] = { PIT_OF_SARON },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(78, 78, 25),
+				}),
 			}),
 			d(1, {	-- Normal
 				n(ZONE_DROPS, {
