@@ -2669,6 +2669,7 @@ root("HiddenQuestTriggers", {
 	q(56672),	-- "One person's pride destroyed so many lives."
 	q(56700),	-- "In the deep, dark sea, no one can hear you scream.  Trust me..."
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
+	q(56702),	-- (got this randomly in nazjatar @ 33.8,47.4)
 	q(56703),	-- "When the naga were keeping me in chains, I never thought I'd be free again.  Shows what I know, huh?"
 	q(56704),	-- (got this randomly in nazjatar)
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."

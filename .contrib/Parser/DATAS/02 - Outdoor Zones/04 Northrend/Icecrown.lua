@@ -1119,12 +1119,12 @@ root("Zones", {
 						["qg"] = 29405,	-- Uzo Deathcaller
 						["sourceQuest"] = 12814,	-- You'll Need a Gryphon
 					}),
-					q(13233, {	-- No Mercy!
+					pvp(q(13233, {	-- No Mercy!
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["description"] = "On the Skybreaker.",
-					}),
+					})),
 					q(13346, {	-- No Rest For The Wicked (A)
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 29799,	-- Thassarian

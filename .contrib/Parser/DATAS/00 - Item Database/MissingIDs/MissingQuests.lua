@@ -2167,7 +2167,6 @@ q(46289),	--
 q(46303),	--
 q(46306),	--
 q(46307),	--
-q(46312),	--
 q(46358),	-- Vindictive Combatant's Dreadplate Armor
 q(46375),	-- Vindictive Combatant's Weapons
 q(46376),	-- Vindictive Combatant's Weapons

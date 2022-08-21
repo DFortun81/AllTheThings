@@ -1272,6 +1272,9 @@ _.Zones =
 	}),
 };
 
-root("HiddenQuestTriggers", {
-	q(58658),	-- selecting an option to hide Vulpera hyena mount canopy/sunshade
-});
+root("HiddenQuestTriggers", m(BROKEN_ISLES, {
+	m(LEGION_DALARAN, {
+		q(46312),	-- triggered after completing 'Where it's Thinnest' (45190)
+		q(58658),	-- selecting an option to hide Vulpera hyena mount canopy/sunshade
+	}),
+}));

@@ -69,7 +69,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(48546),	-- Tracking Quest
 				q(49006),	--
 				q(49162),	--
-				q(49383),	--
 				q(49384),	--
 				q(49385),	--
 				-- 7.3.2
@@ -145,7 +144,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56607),	--
 				q(56618),	--
 				q(56667),	--
-				q(56702),	--
 				q(56742),	--
 				q(56744),	--
 				q(56745),	--
@@ -174,7 +172,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.0.2
 				q(57537),	-- Covering our Tracks
 				q(62990),	--
-				q(63219),	--
 				-- 9.1.0
 				q(64192),	--
 				q(64369),	--

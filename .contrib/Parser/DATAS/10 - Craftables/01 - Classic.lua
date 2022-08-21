@@ -2093,6 +2093,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 				-- #if AFTER TBC
 				i(15062),	-- Devilsaur Leggings
 				-- #endif
+				-- #if AFTER CATA
+				applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
+				-- #endif
 				i(7373),	-- Dusky Leather Leggings
 				i(4242),	-- Embossed Leather Pants
 				i(5958),	-- Fine Leather Pants

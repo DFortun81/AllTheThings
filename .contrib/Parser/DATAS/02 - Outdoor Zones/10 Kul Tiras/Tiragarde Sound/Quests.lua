@@ -1514,9 +1514,14 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			},{
 				-- TODO: Check SQ also probably cant do after a certain level
-				q(49300),	-- Creature Corruption
+				q(49300, {	-- Creature Corruption
+					-- not 100% on this one based on discord info?
+					["sourceQuest"] = 48366,	-- Paddle to Safety
+				}),
 				q(49739),	-- Enemies at the Gate
-				q(50009),	-- Shipwreck Recovery Crew
+				q(50009, {	-- Shipwreck Recovery Crew
+					["sourceQuest"] = 50026,	-- Save our Shipmates
+				}),
 				q(49529),	-- Spring Cleaning
 			})),
 			-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
