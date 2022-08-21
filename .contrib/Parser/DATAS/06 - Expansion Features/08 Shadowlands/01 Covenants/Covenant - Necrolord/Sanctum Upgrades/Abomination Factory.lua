@@ -1032,7 +1032,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 								}),
-								i(184354, {-- Soul Harvester Key
+								i(184354, {	-- Soul Harvester Key
 									["crs"] = { 175510 },	-- Soul Harvester Anka
 								}),
 							},

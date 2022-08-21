@@ -566,7 +566,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(59245, {	-- Head Kickers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(131536, {-- Stormfeather Treads
+						i(131536, {	-- Stormfeather Treads
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},

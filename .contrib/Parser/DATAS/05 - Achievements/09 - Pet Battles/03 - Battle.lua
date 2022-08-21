@@ -541,7 +541,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				ach(13278),	-- Not Quite Dead Yet
 			},
 		}),
-		pvp(ach(12290, {-- Family Brawler
+		pvp(ach(12290, {	-- Family Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
 				{"select","achievementID",

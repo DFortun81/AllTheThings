@@ -1763,7 +1763,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(62995, {-- Underlord's Mandible
+						i(62995, {	-- Underlord's Mandible
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(62994, {	-- Rash Gloves

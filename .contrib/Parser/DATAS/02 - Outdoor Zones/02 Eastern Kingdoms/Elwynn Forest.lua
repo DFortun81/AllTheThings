@@ -1617,7 +1617,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(6979, {	-- Haggard's Axe
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(6980, {-- Haggard's Dagger
+						i(6980, {	-- Haggard's Dagger
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(6983, {	-- Haggard's Hammer
