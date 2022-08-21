@@ -3501,7 +3501,7 @@ end
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
-		-- app.PrintDebug("Cache Resolve:",o.hash)
+		-- app.PrintDebug("Cache Resolve:",o.hash,#(o.resolved or ResolveCache[o.hash]))
 		local cloned = {};
 		MergeObjects(cloned, o.resolved or ResolveCache[o.hash], true);
 		return cloned;
@@ -3767,7 +3767,10 @@ ResolveSymbolicLink = function(o)
 					tremove(args, 1);
 					local commands = subroutine(unpack(args));
 					if commands then
-						ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
+						-- app.PrintDebug("ResolveSymbolicLink:sub",sym[2],sym[3],sym[4])
+						local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
+						-- app.PrintDebug("Added:",#resolved)
+						ArrayAppend(searchResults, resolved);
 					end
 				else
 					print("Could not find subroutine", sym[2]);
@@ -3785,7 +3788,10 @@ ResolveSymbolicLink = function(o)
 						tremove(args, 1);
 						local commands = subroutine(unpack(args));
 						if commands then
-							ArrayAppend(searchResults, ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o})));
+							-- app.PrintDebug("ResolveSymbolicLink:subif",sym[2],sym[3],sym[4])
+							local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
+							-- app.PrintDebug("Added:",#resolved)
+							ArrayAppend(searchResults, resolved);
 						end
 					end
 				else
@@ -3838,8 +3844,8 @@ ResolveSymbolicLink = function(o)
 			if o.key and app.ThingKeys[o.key] then
 				-- global resolve cache if it's a 'Thing'
 				ResolveCache[o.hash] = finalized;
-			else
-				-- otherwise can store it in the object itself (like a header from the Main list with symlink)
+			elseif o.key ~= false then
+				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
 				o.resolved = finalized;
 			end
 			local cloned = {};
