@@ -5,202 +5,230 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(280, {	-- The Forge of Souls
 		["mapID"] = THE_FORGE_OF_SOULS,
 		["coord"] = { 52.3, 89.3, ICECROWN },
-		["lvl"] = 75,
+		["lvl"] = lvlsquish(78, 78, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4516, {	-- The Forge of Souls
-					crit(1, { -- Bronjahm
+					crit(13315, { -- Bronjahm
 						["_encounter"] = { 615, 1 },
 					}),
-					crit(2, { -- Devourer of Souls
+					crit(13316, { -- Devourer of Souls
 						["_encounter"] = { 616, 1 },
 					}),
 				}),
 				ach(4519, {	-- Heroic: The Forge of Souls
-					crit(1, { -- Bronjahm
+					crit(13167, { -- Bronjahm
 						["_encounter"] = { 615, 2 },
 					}),
-					crit(2, { -- Devourer of Souls
+					crit(13168, { -- Devourer of Souls
 						["_encounter"] = { 616, 2 },
 					}),
 				}),
 			}),
 			n(QUESTS, {
-				q(24499, {	-- Echoes of Tortured Souls
-					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
-					["provider"] = { "n", 37597 },	-- Lady Jaina Proudmoore
+				q(24499, {	-- Echoes of Tortured Souls (A)
+					["qg"] = 37597,	-- Lady Jaina Proudmoore
+					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel (A)
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(78, 78, 25),
+					["groups"] = {
+						objective(1, {	-- 0/1 Bronjahm slain
+							["provider"] = { "n", 36497 },	-- Bronjahm <Godfather of Souls>
+						}),
+						objective(2, {	-- 0/1 Devourer of Souls slain
+							["provider"] = { "n", 36502 },	-- Devourer of Souls
+						}),
+					},
 				}),
-				q(24511, {	-- Echoes of Tortured Souls
-					["sourceQuest"] = 24506,	-- Inside the Frozen Citadel
-					["provider"] = { "n", 37596 },	-- Lady Sylvanas Windrunner <Banshee Queen>
+				q(24511, {	-- Echoes of Tortured Souls (H)
+					["qg"] = 37596,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["sourceQuest"] = 24506,	-- Inside the Frozen Citadel (H)
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(78, 78, 25),
+					["groups"] = {
+						objective(1, {	-- 0/1 Bronjahm slain
+							["provider"] = { "n", 36497 },	-- Bronjahm <Godfather of Souls>
+						}),
+						objective(2, {	-- 0/1 Devourer of Souls slain
+							["provider"] = { "n", 36502 },	-- Devourer of Souls
+						}),
+					},
 				}),
-				q(24683, {	-- The Pit of Saron
-					["sourceQuest"] = 24499,	-- Echoes of Tortured Souls
-					["provider"] = { "n", 38160 },	-- Lady Jaina Proudmoore
+				q(24510, {	-- Inside the Frozen Citadel (A)
+					["qg"] = 37776,	-- Apprentice Nelphi <Kirin Tor>
+					["coord"] = { 46.0, 68.1, NORTHREND_DALARAN },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(78, 78, 25),
 				}),
-				q(24682, {	-- The Pit of Saron
-					["sourceQuest"] = 24511,	-- Echoes of Tortured Souls
-					["provider"] = { "n", 38161 },	-- Lady Sylvanas Windrunner <Banshee Queen>
+				q(24506, {	-- Inside the Frozen Citadel (H)
+					["qg"] = 37780,	-- Dark Ranger Vorel
+					["coord"] = { 51.3, 27.3, NORTHREND_DALARAN },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(78, 78, 25),
 				}),
 			}),
-			d(1,   {	-- Normal
+			d(1, {	-- Normal
 				n(ZONE_DROPS, {
-					i(49852, {	-- Coffin Nail
-						["crs"] = {
-							36522,	-- Soul Horror
-							36620,	-- Soulguard Adept
-							36564,	-- Soulguard Bonecaster
-							36478,	-- Soulguard Watchman
-							36666,	-- Spectral Warden
-						},
-					}),
-					i(49854, {	-- Mantle of Tattered Feathers
-						["crs"] = {
-							36522,	-- Soul Horror
-							36516,	-- Soulguard Animator
-							36564,	-- Soulguard Bonecaster
-							36478,	-- Soulguard Watchman
-							36666,	-- Spectral Warden
-						},
-					}),
-					i(49855, {	-- Plated Grips of Korth'azz
-						["crs"] = {
-							36522,	-- Soul Horror
-							36516,	-- Soulguard Animator
-							36499,	-- Soulguard Reaper
-							36478,	-- Soulguard Watchman
-							36666,	-- Spectral Warden
-						},
-					}),
-					i(49853, {	-- Titanium Links of Lore
-						["crs"] = {
-							36522,	-- Soul Horror
-							36620,	-- Soulguard Adept
-							36516,	-- Soulguard Animator
-							36564,	-- Soulguard Bonecaster
-							36478,	-- Soulguard Watchman
-							36666,	-- Spectral Warden
-						},
-					}),
+					i(49852),	-- Coffin Nail
+					i(49854),	-- Mantle of Tattered Feathers
+					i(49855),	-- Plated Grips of Korth'azz
+					i(49853),	-- Titanium Links of Lore
 				}),
-				cr(36497, e(615, {	-- Brojahm
-					i(50316),	-- Papa's Brand New Bag
-					i(50317),	-- Papa's New Bag
-					i(49783),	-- Lucky Old Sun
-					i(50191),	-- Nighttime
-					i(50197),	-- Eyes of Bewilderment
-					i(50196),	-- Love's Prisoner
-					i(49785),	-- Bewildering Shoulderpads
-					i(50193),	-- Very Fashionable Shoulders
-					i(49786),	-- Robes of the Cheating Heart
-					i(49787),	-- Seven Stormy Mornings
-					i(49788),	-- Cold Sweat Grips
-					i(50194),	-- Weeping Gauntlets
-					i(49784),	-- Minister's Number One Legplates
-				})),
-				cr(36502, e(616, {	-- Devourer of Souls
-					i(49790),	-- Blood Boil Lancet
-					i(49793),	-- Tower of the Mouldering Corpse
-					i(50203),	-- Blood Weeper
-					i(49789),	-- Heartshiver
-					i(50210),	-- Seethe
-					i(50206),	-- Frayed Scoundrel's Cap
-					i(50214),	-- Helm of the Spirit Shock
-					i(50211),	-- Arcane Loops of Anger
-					i(49799),	-- Coil of Missing Gems
-					i(50208),	-- Pauldrons of the Souleater
-					i(49792),	-- Accursed Crawling Cape
-					i(49791),	-- Lost Reliquary Chestguard
-					i(50213),	-- Mord'rethar Robes
-					i(49797),	-- Brace Guards of the Starless Night
-					i(50209),	-- Essence of Suffering
-					i(50212),	-- Essence of Desire
-					i(49796),	-- Essence of Anger
-					i(49794),	-- Legplates of Frozen Granite
-					i(50207),	-- Black Spire Sabatons
-					i(50215),	-- Recovered Reliquary Boots
-					i(49795),	-- Sollerets of Suffering
-					i(49798),	-- Soul Screaming Boots
-					i(49800),	-- Spiteful Signet
-					i(50198),	-- Needle-Encrusted Scorpion
-				})),
+				e(615, {	-- Brojahm
+					["creatureID"] = 36497,	-- Brojahm
+					["groups"] = {
+						i(49783),	-- Lucky Old Sun
+						-- #if AFTER 7.3.5
+						i(50191),	-- Nighttime (7.3.5 - Used to be only Heroic Mode)
+						i(50197),	-- Eyes of Bewilderment (7.3.5 - Used to be only Heroic Mode)
+						i(50196),	-- Love's Prisoner (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49785),	-- Bewildering Shoulderpads
+						-- #if AFTER 7.3.5
+						i(50193),	-- Very Fashionable Shoulders (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49786),	-- Robes of the Cheating Heart
+						i(49787),	-- Seven Stormy Mornings
+						i(49788),	-- Cold Sweat Grips
+						-- #if AFTER 7.3.5
+						i(50194),	-- Weeping Gauntlets (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49784),	-- Minister's Number One Legplates
+						-- #if AFTER 7.3.5
+						i(50316),	-- Papa's Brand New Bag (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(50317),	-- Papa's New Bag
+					},
+				}),
+				e(616, {	-- Devourer of Souls
+					["creatureID"] = 36502,	-- Devourer of Souls
+					["groups"] = {
+						i(49790),	-- Blood Boil Lancet
+						i(49793),	-- Tower of the Mouldering Corpse
+						-- #if AFTER 7.3.5
+						i(50203),	-- Blood Weeper (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49789),	-- Heartshiver
+						-- #if AFTER 7.3.5
+						i(50210),	-- Seethe (7.3.5 - Used to be only Heroic Mode)
+						i(50206),	-- Frayed Scoundrel's Cap (7.3.5 - Used to be only Heroic Mode)
+						i(50214),	-- Helm of the Spirit Shock (7.3.5 - Used to be only Heroic Mode)
+						i(50211),	-- Arcane Loops of Anger (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49799),	-- Coil of Missing Gems
+						-- #if AFTER 7.3.5
+						i(50208),	-- Pauldrons of the Souleater (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49792),	-- Accursed Crawling Cape
+						i(49791),	-- Lost Reliquary Chestguard
+						-- #if AFTER 7.3.5
+						i(50213),	-- Mord'rethar Robes (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49797),	-- Brace Guards of the Starless Night
+						-- #if AFTER 7.3.5
+						i(50209),	-- Essence of Suffering (7.3.5 - Used to be only Heroic Mode)
+						i(50212),	-- Essence of Desire (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49796),	-- Essence of Anger
+						i(49794),	-- Legplates of Frozen Granite
+						-- #if AFTER 7.3.5
+						i(50207),	-- Black Spire Sabatons (7.3.5 - Used to be only Heroic Mode)
+						i(50215),	-- Recovered Reliquary Boots (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+						i(49795),	-- Sollerets of Suffering
+						i(49798),	-- Soul Screaming Boots
+						i(49800),	-- Spiteful Signet
+						-- #if AFTER 7.3.5
+						i(50198),	-- Needle-Encrusted Scorpion (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
 			}),
-			d(2,   {	-- Heroic
-				["lvl"] = 80,
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
-						i(50318, {	-- Ghostly Wristwraps
-							["crs"] = {
-								36522,	-- Soul Horror
-								36516,	-- Soulguard Animator
-								36478,	-- Soulguard Watchman
-								36666,	-- Spectral Warden
-							},
-						}),
-						i(50315, {	-- Seven-Fingered Claws
-							["crs"] = {
-								36620,	-- Soulguard Adept
-								36564,	-- Soulguard Bonecaster
-								36499,	-- Soulguard Reaper
-								36478,	-- Soulguard Watchman
-							},
-						}),
-						i(50319, {	-- Unsharpened Ice Razor
-							["crs"] = {
-								36564,	-- Soulguard Bonecaster
-								36499,	-- Soulguard Reaper
-							},
-						}),
+						i(50318),	-- Ghostly Wristwraps
+						i(50315),	-- Seven-Fingered Claws
+						i(50319),	-- Unsharpened Ice Razor
 					}),
-					cr(36497, e(615, {	-- Brojahm
-						ach(4522),	-- Soul Power
-						i(50316),	-- Papa's Brand New Bag
-						i(50317),	-- Papa's New Bag
-						i(49783),	-- Lucky Old Sun
-						i(50191),	-- Nighttime
-						i(50197),	-- Eyes of Bewilderment
-						i(50196),	-- Love's Prisoner
-						i(49785),	-- Bewildering Shoulderpads
-						i(50193),	-- Very Fashionable Shoulders
-						i(49786),	-- Robes of the Cheating Heart
-						i(49787),	-- Seven Stormy Mornings
-						i(49788),	-- Cold Sweat Grips
-						i(50194),	-- Weeping Gauntlets
-						i(49784),	-- Minister's Number One Legplates
-					})),
-					cr(36502, e(616, {	-- Devourer of Souls
-						ach(4523),	-- Three Faced
-						i(49790),	-- Blood Boil Lancet
-						i(49793),	-- Tower of the Mouldering Corpse
-						i(50203),	-- Blood Weeper
-						i(49789),	-- Heartshiver
-						i(50210),	-- Seethe
-						i(50206),	-- Frayed Scoundrel's Cap
-						i(50214),	-- Helm of the Spirit Shock
-						i(50211),	-- Arcane Loops of Anger
-						i(49799),	-- Coil of Missing Gems
-						i(50208),	-- Pauldrons of the Souleater
-						i(49792),	-- Accursed Crawling Cape
-						i(49791),	-- Lost Reliquary Chestguard
-						i(50213),	-- Mord'rethar Robes
-						i(49797),	-- Brace Guards of the Starless Night
-						i(50209),	-- Essence of Suffering
-						i(50212),	-- Essence of Desire
-						i(49796),	-- Essence of Anger
-						i(49794),	-- Legplates of Frozen Granite
-						i(50207),	-- Black Spire Sabatons
-						i(50215),	-- Recovered Reliquary Boots
-						i(49795),	-- Sollerets of Suffering
-						i(49798),	-- Soul Screaming Boots
-						i(49800),	-- Spiteful Signet
-						i(50198),	-- Needle-Encrusted Scorpion
-					})),
+					e(615, {	-- Brojahm
+						["creatureID"] = 36497,	-- Brojahm
+						["groups"] = {
+							ach(4522),	-- Soul Power
+							-- #if AFTER 7.3.5
+							i(49783),	-- Lucky Old Sun (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50191),	-- Nighttime
+							i(50197),	-- Eyes of Bewilderment
+							i(50196),	-- Love's Prisoner
+							-- #if AFTER 7.3.5
+							i(49785),	-- Bewildering Shoulderpads (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50193),	-- Very Fashionable Shoulders
+							-- #if AFTER 7.3.5
+							i(49786),	-- Robes of the Cheating Heart (7.3.5 - Used to be only Normal Mode)
+							i(49787),	-- Seven Stormy Mornings (7.3.5 - Used to be only Normal Mode)
+							i(49788),	-- Cold Sweat Grips (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50194),	-- Weeping Gauntlets
+							-- #if AFTER 7.3.5
+							i(49784),	-- Minister's Number One Legplates (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50316),	-- Papa's Brand New Bag
+							-- #if AFTER 7.3.5
+							i(50317),	-- Papa's New Bag (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+						},
+					}),
+					e(616, {	-- Devourer of Souls
+						["creatureID"] = 36502,	-- Devourer of Souls
+						["groups"] = {
+							ach(4523),	-- Three Faced
+							-- #if AFTER 7.3.5
+							i(49790),	-- Blood Boil Lancet (7.3.5 - Used to be only Normal Mode)
+							i(49793),	-- Tower of the Mouldering Corpse (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50203),	-- Blood Weeper
+							-- #if AFTER 7.3.5
+							i(49789),	-- Heartshiver (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50210),	-- Seethe 
+							i(50206),	-- Frayed Scoundrel's Cap
+							i(50214),	-- Helm of the Spirit Shock
+							i(50211),	-- Arcane Loops of Anger
+							-- #if AFTER 7.3.5
+							i(49799),	-- Coil of Missing Gems (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50208),	-- Pauldrons of the Souleater
+							-- #if AFTER 7.3.5
+							i(49792),	-- Accursed Crawling Cape (7.3.5 - Used to be only Normal Mode)
+							i(49791),	-- Lost Reliquary Chestguard (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50213),	-- Mord'rethar Robes
+							-- #if AFTER 7.3.5
+							i(49797),	-- Brace Guards of the Starless Night (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50209),	-- Essence of Suffering
+							i(50212),	-- Essence of Desire
+							-- #if AFTER 7.3.5
+							i(49796),	-- Essence of Anger (7.3.5 - Used to be only Normal Mode)
+							i(49794),	-- Legplates of Frozen Granite (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50207),	-- Black Spire Sabatons
+							i(50215),	-- Recovered Reliquary Boots
+							-- #if AFTER 7.3.5
+							i(49795),	-- Sollerets of Suffering (7.3.5 - Used to be only Normal Mode)
+							i(49798),	-- Soul Screaming Boots (7.3.5 - Used to be only Normal Mode)
+							i(49800),	-- Spiteful Signet (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(50198),	-- Needle-Encrusted Scorpion
+						},
+					}),
 				},
 			}),
 			-- #if AFTER 9.1.5

@@ -5792,16 +5792,6 @@ root("Zones", {
 							}),
 						},
 					})),
-					q(24510, {	-- Inside the Frozen Citadel
-						["qg"] = 37776,	-- Apprentice Nelphi <Kirin Tor>
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-					}),
-					q(24506, {	-- Inside the Frozen Citadel
-						["qg"] = 37780,	-- Dark Ranger Vorel
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-					}),
 					q(24582, {	-- Instructor Razuvious Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },

@@ -18,9 +18,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(5383, { -- Ormorok the Tree-Shaper
 						["_encounter"] = { 620, 1 },
 					}),
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5622, { -- Keristrasza
 						["_encounter"] = { 621, 1 },
 					}),
+					-- #else
+					crit(5384, { -- Keristrasza
+						["_encounter"] = { 621, 1 },
+					}),
+					-- #endif
 				}),
 				ach(490,  {	-- Heroic: The Nexus
 					crit(5245, { -- Grand Magus Telestra
