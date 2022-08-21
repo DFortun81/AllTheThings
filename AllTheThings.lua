@@ -21122,7 +21122,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 
 		self.initialized = true;
 		self.SkillsInit = {};
-		force = true;
+		self.force = true;
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
@@ -21140,142 +21140,108 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['back'] = 1,
 			['g'] = { },
 		});
-		self.CacheRecipes = function(self)
-			-- Cache Learned Spells
-			local skillCache = fieldCache["spellID"];
-			if skillCache then
-				local tradeSkillID = app.GetTradeSkillLine();
-				if not tradeSkillID or tradeSkillID == self.lastTradeSkillID then
-					return false;
-				end
-				-- If it's not yours, don't take credit for it.
-				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-					return false;
-				end
-				self.lastTradeSkillID = tradeSkillID;
-				local updates = self.SkillsInit[tradeSkillID] or {};
-				self.SkillsInit[tradeSkillID] = updates;
 
-				local currentCategoryID, categories = -1, {};
-				if not updates["Categories"] then
-					updates["Categories"] = true;
-					local categoryIDs = { C_TradeSkillUI.GetCategories() };
-					for i = 1,#categoryIDs do
-						currentCategoryID = categoryIDs[i];
+		local function UpdateLocalizedCategories(self, updates)
+			if not updates["Categories"] then
+				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
+				local currentCategoryID, categories = -1, AllTheThingsAD.LocalizedCategoryNames;
+				updates["Categories"] = true;
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					if not categories[currentCategoryID] then
 						local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
 						if categoryData then
-							if not categories[currentCategoryID] then
-								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-								categories[currentCategoryID] = true;
-							end
+							categories[currentCategoryID] = categoryData.name;
 						end
 					end
 				end
-
-				-- Cache learned recipes
+			end
+		end
+		local function UpdateLearnedRecipes(self, updates)
+			-- Cache learned recipes
+			if not updates["Recipes"] then
+				-- app.PrintDebug("UpdateLearnedRecipes",self.lastTradeSkillID)
+				updates["Recipes"] = true;
 				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local skipcaching;
-				if not updates["Recipes"] then
-					updates["Recipes"] = true;
-					-- print("Scanning recipes",#recipeIDs)
-					for i = 1,#recipeIDs do
-						local spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
-						if spellRecipeInfo then
-							skipcaching = nil;
-							recipeID = spellRecipeInfo.recipeID;
-							currentCategoryID = spellRecipeInfo.categoryID;
-							if not categories[currentCategoryID] then
-								local categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
-								if categoryData then
-									rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
-									categories[currentCategoryID] = true;
-								end
-							end
-							-- cannot be crafted, so don't cache the outputs for reagent tooltips
-							if spellRecipeInfo.disabled then
-								skipcaching = true;
-							end
-							-- recipe is learned, so cache that it's learned regardless of being craftable
-							if spellRecipeInfo.learned then
-								charSpells[recipeID] = 1;
-								if not acctSpells[recipeID] then
-									acctSpells[recipeID] = 1;
-									tinsert(learned, recipeID);
-								end
-							-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
-							elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
-								-- print("unlearned, enabled RecipeID",recipeID)
-								local cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
-								-- verify the merged cached version is not 'super' unobtainable
-								if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
-									-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
-									skipcaching = true;
-								end
-							end
-
-							if not skillCache[recipeID] then
-								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-								skillCache[recipeID] = { {} };
-							end
-
-							local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
-							local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
-							if craftedItemID then
-								local reagentLink, itemID, reagentCount;
-								for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
-									reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
-									reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
-									itemID = reagentLink and GetItemInfoInstant(reagentLink);
-									-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
-
-									-- Make sure a cache table exists for this item.
-									-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-									-- Index 2: The Crafted Item IDs => reagentCount
-									-- TODO: potentially re-design this structure
-									if itemID then
-										if skipcaching then
-											-- remove any existing cached recipes
-											if reagentCache[itemID] then
-												-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
-												reagentCache[itemID][1][recipeID] = nil;
-												reagentCache[itemID][2][craftedItemID] = nil;
-											end
-										else
-											if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-											reagentCache[itemID][1][recipeID] = { craftedItemID, reagentCount };
-											-- if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-											reagentCache[itemID][2][craftedItemID] = reagentCount;
-										end
-									end
-								end
-							-- else
-							-- 	print("recipe does not craft an item",recipeLink)
+				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID, reagentItem;
+				local categories = AllTheThingsAD.LocalizedCategoryNames;
+				-- print("Scanning recipes",#recipeIDs)
+				for i = 1,#recipeIDs do
+					spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeIDs[i]);
+					if spellRecipeInfo then
+						skipcaching = nil;
+						recipeID = spellRecipeInfo.recipeID;
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							categoryData = C_TradeSkillUI_GetCategoryInfo(currentCategoryID);
+							if categoryData then
+								categories[currentCategoryID] = categoryData.name;
 							end
 						end
-					end
-				end
+						-- cannot be crafted, so don't cache the outputs for reagent tooltips
+						if spellRecipeInfo.disabled then
+							skipcaching = true;
+						end
+						-- recipe is learned, so cache that it's learned regardless of being craftable
+						if spellRecipeInfo.learned then
+							charSpells[recipeID] = 1;
+							if not acctSpells[recipeID] then
+								acctSpells[recipeID] = 1;
+								tinsert(learned, recipeID);
+							end
+						-- enabled, unlearned recipes should be checked against ATT data to verify they CAN actually be learned
+						elseif not spellRecipeInfo.disabled and not acctSpells[recipeID] then
+							-- print("unlearned, enabled RecipeID",recipeID)
+							cachedRecipe = app.SearchForMergedObject("spellID", recipeID);
+							-- verify the merged cached version is not 'super' unobtainable
+							if cachedRecipe and cachedRecipe.u and cachedRecipe.u < 3 then
+								-- print("Ignoring Unobtainable RecipeID",recipeID,cachedRecipe.u)
+								skipcaching = true;
+							end
+						end
 
-				-- Open the Tradeskill list for this Profession
-				if self.tradeSkillID ~= tradeSkillID then
-					self.tradeSkillID = tradeSkillID;
-					local data = updates["Data"];
-					if not data then
-						data = app.CreateProfession(tradeSkillID);
-						app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
-						NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
-						app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
-						data.indent = 0;
-						data.visible = true;
-						BuildGroups(data, data.g);
-						updates["Data"] = data;
-						-- only expand the list if this is the first time it is being generated
-						self.ExpandInfo = { Expand = true };
+						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
+						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
+						if craftedItemID then
+							local reagentLink, itemID, reagentCount;
+							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
+								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
+								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
+								itemID = reagentLink and GetItemInfoInstant(reagentLink);
+								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
+
+								-- Make sure a cache table exists for this item.
+								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+								-- Index 2: The Crafted Item IDs => reagentCount
+								-- TODO: potentially re-design this structure
+								if itemID then
+									reagentItem = reagentCache[itemID];
+									if skipcaching then
+										-- remove any existing cached recipes
+										if reagentItem then
+											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
+											reagentItem[1][recipeID] = nil;
+											reagentItem[2][craftedItemID] = nil;
+										end
+									else
+										if not reagentItem then
+											reagentItem = { {}, {} };
+											reagentCache[itemID] = reagentItem;
+										end
+										reagentItem[1][recipeID] = { craftedItemID, reagentCount };
+										-- if craftedItemID then reagentItem[2][craftedItemID] = reagentCount; end
+										reagentItem[2][craftedItemID] = reagentCount;
+									end
+								end
+							end
+						-- else
+						-- 	print("recipe does not craft an item",recipeLink)
+						end
 					end
-					self:SetData(data);
-					self.force = true
 				end
 				-- If something new was "learned", then refresh the data.
 				UpdateRawIDs("spellID", learned);
@@ -21286,16 +21252,49 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				end
 			end
 		end
-		self.RefreshRecipes = function(self)
-			-- print("RefreshRecipes")
-			if app.CollectibleRecipes then
-				DelayedCallback(self.CacheAndUpdate, 0.5, self);
+		local function UpdateData(self, updates)
+			-- Open the Tradeskill list for this Profession
+			local data = updates["Data"];
+			if not data then
+				-- app.PrintDebug("UpdateData",self.lastTradeSkillID)
+				data = app.CreateProfession(self.lastTradeSkillID);
+				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
+				NestObjects(data, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", data.requireSkill));
+				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
+				data.indent = 0;
+				data.visible = true;
+				BuildGroups(data, data.g);
+				updates["Data"] = data;
+				-- only expand the list if this is the first time it is being generated
+				self.ExpandInfo = { Expand = true };
+				self.force = true;
 			end
-		end
-		self.CacheAndUpdate = function(self)
-			self:CacheRecipes();
+			self:SetData(data);
 			self:Update(self.force);
-			self.force = nil;
+		end
+		-- Can trigger multiple times quickly, but will only run once per profession in a row
+		self.RefreshRecipes = function(self)
+			-- app.PrintDebug("RefreshRecipes")
+			if app.CollectibleRecipes then
+				-- Cache Learned Spells
+				local skillCache = fieldCache["spellID"];
+				if not skillCache then return; end
+
+				local tradeSkillID = app.GetTradeSkillLine();
+				if not tradeSkillID or tradeSkillID == self.lastTradeSkillID then return; end
+
+				-- If it's not yours, don't take credit for it.
+				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then return; end
+
+				self.lastTradeSkillID = tradeSkillID;
+				local updates = self.SkillsInit[tradeSkillID] or {};
+				self.SkillsInit[tradeSkillID] = updates;
+
+				app.FunctionRunner.SetPerFrame(1);
+				app.FunctionRunner.Run(UpdateLocalizedCategories, self, updates);
+				app.FunctionRunner.Run(UpdateLearnedRecipes, self, updates);
+				app.FunctionRunner.Run(UpdateData, self, updates);
+			end
 		end
 
 		-- TSM Shenanigans
@@ -21481,7 +21480,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		end
 
 		-- Update the window and all of its row data
-		self:BaseUpdate(force or got, got);
+		self:BaseUpdate(force or self.force or got, got);
+		self.force = nil;
 	end
 end;
 customWindowUpdates["WorldQuests"] = function(self, force, got)
