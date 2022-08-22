@@ -2605,6 +2605,10 @@ namespace ATT
                         return "timeline";
                     }
 
+                case "sourceQuestNumRequired":
+                case "sqreq":
+                    return "sqreq";
+
                 // tags which are accurate already
                 case "azeriteEssenceID":
                 case "buildingID":

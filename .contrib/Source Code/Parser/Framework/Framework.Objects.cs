@@ -1660,6 +1660,7 @@ namespace ATT
                     case "assetID":
                     case "questIDA":
                     case "questIDH":
+                    case "sqreq":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;

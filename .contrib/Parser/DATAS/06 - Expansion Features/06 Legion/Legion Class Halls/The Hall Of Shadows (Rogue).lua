@@ -238,6 +238,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							40849,	-- The Dreadblades
 							41924,	-- Fangs of the Devourer
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 					}),
