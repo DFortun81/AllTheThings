@@ -23162,7 +23162,7 @@ app.InitDataCoroutine = function()
 	Callback(function()
 		local myGUID = app.GUID;
 		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
-		local mySlug = myName.."%-"..myRealm;
+		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
 		local otherName, otherRealm, otherText;
 		local toClean;
 		for guid,character in pairs(characterData) do
@@ -23174,7 +23174,7 @@ app.InitDataCoroutine = function()
 				if otherName == myName and otherRealm == myRealm then
 					if toClean then tinsert(toClean, guid)
 					else toClean = { guid }; end
-				elseif otherText and otherText:match(mySlug) then
+				elseif otherText and otherText:match(myRegex) then
 					if toClean then tinsert(toClean, guid)
 					else toClean = { guid }; end
 				end
@@ -23183,7 +23183,8 @@ app.InitDataCoroutine = function()
 		if toClean then
 			local cleanCharacterFunc = function(guid)
 				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
-				local copyQuests = characterData[guid].Quests;
+				local character = characterData[guid];
+				local copyQuests = character.Quests;
 				if copyQuests then
 					-- app.PrintDebug("Copying Dupe Quests")
 					local currentQuests = currentCharacter.Quests;
@@ -23202,9 +23203,9 @@ app.InitDataCoroutine = function()
 					backups = {};
 					accountWideData["_CharacterBackups"] = backups;
 				end
-				backups[guid] = characterData[guid];
+				backups[guid] = character;
 				characterData[guid] = nil;
-				app.print("Removed/Backed up Duplicate of Current Character:",guid)
+				app.print("Removed/Backed up Duplicate of Current Character:",character.text,guid)
 			end
 			app.FunctionRunner.SetPerFrame(1);
 			for _,guid in ipairs(toClean) do
