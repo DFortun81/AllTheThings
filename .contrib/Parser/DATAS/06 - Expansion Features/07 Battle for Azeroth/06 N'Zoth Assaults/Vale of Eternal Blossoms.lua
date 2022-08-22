@@ -7,7 +7,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
 		["lvl"] = { 50 },
 		["maps"] = {
-			1570,	-- Vale of Eternal Blossoms
 			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
 		},
 		["g"] = {

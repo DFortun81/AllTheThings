@@ -423,6 +423,7 @@ _.Zones =
 					["provider"] = { "n", 36329 },	-- Thargad
 					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 14372,	-- Thargad's Camp
 					["g"] = {
 						i(55931),	-- Demonkiller Mask
 						i(55930),	-- Darkblood Dagger
@@ -578,6 +579,7 @@ _.Zones =
 					["provider"] = { "n", 36329 },	-- Thargad
 					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 14372,	-- Thargad's Camp
 					["g"] = {
 						i(55937),	-- Bracer of Portals
 						i(55938),	-- Spaulders of Sealing

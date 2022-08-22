@@ -981,10 +981,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
 			q(64852, {	-- Aeon Matrix
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
-				},
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "i", 187527 },	-- Aeon Matrix
 			}),
 			q(64860, {	-- Aetheric Lattice
@@ -1082,7 +1079,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(65325, {	-- Motes of Knowledge
 				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),

@@ -516,7 +516,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			q(63911, {	-- Singing Steel Ingot
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63861 },	-- Beginning the Collection
 				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
 				["coord"] = { 62.1, 56.8, KORTHIA },
 			}),

@@ -171,7 +171,6 @@ profession(ENGINEERING, {
 				{ "i", 10507, 20 },	-- Solid Dynamite
 				{ "i", 4384, 5 },	-- Explosive Sheep
 			},
-			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
 		q(3526, {	-- Goblin Engineering

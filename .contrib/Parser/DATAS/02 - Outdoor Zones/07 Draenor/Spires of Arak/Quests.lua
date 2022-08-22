@@ -878,7 +878,6 @@ _.Zones =
 				q(35733, {	-- Rites of the Talonpriests
 					["sourceQuests"] = {
 						34942,	-- Back from Beyond
-						34885,	-- Mother of Thorns
 						34884,	-- The Kaliri Whisperer
 					},
 					["coord"] = { 46.5, 46.5, SPIRES_OF_ARAK },

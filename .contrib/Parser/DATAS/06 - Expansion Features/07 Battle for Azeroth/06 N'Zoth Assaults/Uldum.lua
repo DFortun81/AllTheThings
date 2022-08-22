@@ -9,7 +9,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		-- ["maps"] = {
 			-- TODO: confirm
 			-- ULDUM,	-- pre-120, funky map changes forces us to put the old map here too
-			-- 1571,	-- Uldum (dark vision)
 		-- },
 		["g"] = {
 			q(57157, {	-- Assault: The Black Empire

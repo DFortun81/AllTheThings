@@ -395,6 +395,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						{ 56.6, 31.7, 1527 },
 						{ 84.2, 51.7, 1530 },
 					},
+					["maps"] = {
+						1570,	-- Vale of Eternal Blossoms, Vision
+						1571,	-- Uldum, Vision
+					},
 					["g"] = {
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)
 							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
@@ -407,6 +411,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						{ 56.6, 31.7, 1527 },
 						{ 84.2, 51.7, 1530 },
 					},
+					["maps"] = {
+						1570,	-- Vale of Eternal Blossoms, Vision
+						1571,	-- Uldum, Vision
+					},
 					["g"] = {
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)
 							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
@@ -418,6 +426,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["coords"] = {
 						{ 56.6, 31.7, 1527 },
 						{ 84.2, 51.7, 1530 },
+					},
+					["maps"] = {
+						1570,	-- Vale of Eternal Blossoms, Vision
+						1571,	-- Uldum, Vision
 					},
 					["g"] = {
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)
@@ -432,6 +444,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						{ 56.6, 31.7, 1527 },
 						{ 84.2, 51.7, 1530 },
 					},
+					["maps"] = {
+						1570,	-- Vale of Eternal Blossoms, Vision
+						1571,	-- Uldum, Vision
+					},
 					["g"] = {
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)
 							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
@@ -444,6 +460,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["coords"] = {
 						{ 56.6, 31.7, 1527 },
 						{ 84.2, 51.7, 1530 },
+					},
+					["maps"] = {
+						1570,	-- Vale of Eternal Blossoms, Vision
+						1571,	-- Uldum, Vision
 					},
 					["g"] = {
 						i(174288, {	-- Breath of Everlasting Spirit (once a week)

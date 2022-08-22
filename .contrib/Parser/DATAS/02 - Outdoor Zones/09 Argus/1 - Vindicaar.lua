@@ -302,7 +302,7 @@ root("Zones", {
 						["requireSkill"] = TAILORING,
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
-							i(151571),	-- Lightweave Breeches
+							recipe(247807),	-- Lightweave Breeches (Rank 1)
 						},
 					}),
 					q(46815, {	-- Eredath, Jewel of Argus
