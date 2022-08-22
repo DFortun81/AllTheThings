@@ -1,24 +1,20 @@
 # AllTheThings
 
-## [SL-2.9.2](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.2) (2022-08-21)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.1...SL-2.9.2) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.9.3](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.3) (2022-08-22)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.2...SL-2.9.3) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
-### Trashmaster's Mantle
+### Achievement criteria fix
 
-We've added another version of Trashmaster's Mantle! Rejoice!
+Last release incorrectly had achievement criterias marked as completed even when it wasn't the case. Hope you enjoyed your recent progress jump, but now it's gone!
+
 
 ### Notable changes:
 
-- Fixed not being able to have a Character-Insane mode due to automated filters not giving credit towards 'Insane' status.
-- We will load and update your known professions more reliably now.
-- We will try a little harder to only fire "Incorrect quest data detected" messages when the data is in fact incorrect.
-- And at the same time we didn't fire this message in some rare correct cases, this should be fixed as well now.
-- Improved performance of profession windows, this should hopefully fix errors for some people.
-- Fixed Common Boss Drops in WoD dungeon mini lists missing some items. This might fix similarly missing items in mini lists elsewhere.
-- Added/fixed Season 4 content.
-- Further clean up of achievements: Trial of the Crusader, Ice Crown Citadel, WotLK dungeons, Garrison Campaigns and others.
-- Updated various WotLK dungeons: Utgarde Pinnacle, Utgarde Keep, Trial of the Champion, The Violet Hold, The Oculus, The Nexus, The Forge of Souls, The Culling of Stratholme, Pit of Saron.
-- Garrison Campaign Quest chains are now consolidated in the Expansion Features -> WoD -> Garrison instead of being scattered across Draenor zones. You will still see individual quests in zone mini lists.
-- Fixed some Burning Crusade dungeon tracking of saved instances (green checkmark in your lists) for German locale.
+- Added an automated message for tooltips which have Source information (a collectible Appearance) but fail to return a list of Sources for the Appearance, which notifies about potentially needing to Force-Refresh to be collected (typically happens for Fishing Poles, Mining Picks, etc.).
+- Added a bit of logic to make sure that unlearned Recipes are not cached for the current character when opening their profession list. Maybe this fixes the Shadowlands Ranks of armor? Not 100% sure.
+- Worked around some WoW restrictions that could apparently disconnect you from the game when we were requesting lots of quest data too quickly.
+- Updated various WotLK dungeons: Halls of Stone.
+- Some Season 4 content adjustments.
+- Fixed all Burning Crusade dungeons tracking of saved instances (green checkmark in your lists) for German locale.
 - Other fixes.
