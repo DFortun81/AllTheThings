@@ -8887,17 +8887,19 @@ local criteriaFields = {
 	["name"] = function(t)
 		if t.link then return t.link; end
 		if t.encounterID then
-			return select(1, EJ_GetEncounterInfo(t.encounterID));
+			rawset(t, "name", select(1, EJ_GetEncounterInfo(t.encounterID)));
+			return rawget(t, "name");
 		end
 		local achievementID = t.achievementID;
 		if achievementID then
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				if criteriaID <= GetAchievementNumCriteria(achievementID) then
-					return GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+					rawset(t, "name", select(1, GetAchievementCriteriaInfo(achievementID, criteriaID, true)));
 				elseif criteriaID > 50 then
-					return GetAchievementCriteriaInfoByID(achievementID, criteriaID);
+					rawset(t, "name", select(1, GetAchievementCriteriaInfoByID(achievementID, criteriaID)));
 				end
+				return rawget(t, "name");
 			end
 		end
 		return L["WRONG_FACTION"];
@@ -8960,10 +8962,11 @@ local criteriaFields = {
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				if criteriaID <= GetAchievementNumCriteria(achievementID) then
-					return GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+					rawset(t, "saved", select(3, GetAchievementCriteriaInfo(achievementID, criteriaID, true)));
 				elseif criteriaID > 50 then
-					return GetAchievementCriteriaInfoByID(achievementID, criteriaID);
+					rawset(t, "saved", select(3, GetAchievementCriteriaInfoByID(achievementID, criteriaID)));
 				end
+				return rawget(t, "saved");
 			end
 		end
 	end,
