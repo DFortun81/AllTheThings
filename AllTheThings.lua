@@ -4137,8 +4137,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if sourceID then
 					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if sourceInfo and (sourceInfo.quality or 0) > 1 then
-						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
-						if not allVisualSources or #allVisualSources < 1 then
+						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
+						if #allVisualSources < 1 then
 							-- Items with SourceInfo which don't register as having any visual data...
 							-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
 							tinsert(info, 1, { left = L["FORCE_REFRESH_REQUIRED"], wrap = true, color = app.Colors.TooltipDescription });

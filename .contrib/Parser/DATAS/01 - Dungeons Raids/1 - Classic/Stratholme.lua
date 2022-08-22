@@ -561,6 +561,10 @@ root("Instances", tier(CLASSIC_TIER, {
 				-- #else
 				["coord"] = { 30.9, 16.6, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				-- #endif
+				["sym"] = {
+					{"select","instanceID",236},{"pop"},	-- Select the overall Stratholme instance
+					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
+				},
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(12811, {	-- Righteous Orb
@@ -870,6 +874,10 @@ root("Instances", tier(CLASSIC_TIER, {
 				["coord"] = { 48.18, 21.90, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 				["cost"] = { { "i", 12382, 1 } },	-- Key to the City
 				-- #endif
+				["sym"] = {
+					{"select","instanceID",236},{"pop"},	-- Select the overall Stratholme instance
+					{"contains","headerID",ACHIEVEMENTS,QUESTS,ZONE_DROPS},	-- Select the common Achievements/Quests/Zone Drops
+				},
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
