@@ -1181,6 +1181,12 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						}),
 					},
 				}),
+				i(122191, {	-- Bloody Stack of Invitations
+					["description"] = "Has a chance to be rewarded when killing the target NPC of certain Daily Quests from the special visitor in the Garrison. May also drop on repeat kills while on the respective quest.",
+					["g"] = {
+						i(122190),	-- Ring of Blood Invitation
+					},
+				}),
 				n(89763, {	-- Muradin Bronzebeard
 					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["crs"] = { 91196 },	-- Muradin Bronzebeard
@@ -2363,78 +2369,134 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { TALADOR },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37813, {	-- Death to Amethon!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { TALADOR },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37774, {	-- Death to Gor'thul!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { SPIRES_OF_ARAK },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37814, {	-- Death to Gor'thul!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
+				["maps"] = { SPIRES_OF_ARAK },
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37778, {	-- Death to Hivelord Ik'rix!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { FROSTFIRE_RIDGE },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37818, {	-- Death to Hivelord Ik'rix!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { FROSTFIRE_RIDGE },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37775, {	-- Death to Nullifier Darkoor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { DRAENOR_NAGRAND },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37815, {	-- Death to Nullifier Darkoor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { DRAENOR_NAGRAND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37948, {	-- Death to Nullifier Darkoor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { DRAENOR_NAGRAND },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37949, {	-- Death to Nullifier Darkoor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { DRAENOR_NAGRAND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37777, {	-- Death to Tremor!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { GORGROND },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37817, {	-- Death to Tremor!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { GORGROND },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37776, {	-- Death to Undertow!
 				["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(37816, {	-- Death to Undertow!
 				["coord"] = { 40.2, 56.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 				["isDaily"] = true,
 				["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+				["sym"] = {
+					{"select","itemID",122191},	-- Bloody Sack of Invitations
+				},
 			}),
 			q(34692, {	-- Delegating on Draenor
 				["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
