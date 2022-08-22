@@ -23159,60 +23159,60 @@ app.InitDataCoroutine = function()
 	local currentCharacter = characterData[app.GUID];
 
 	-- Clean up other matching Characters with identical Name-Realm but differing GUID
-	Callback(function()
-		local myGUID = app.GUID;
-		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
-		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
-		local otherName, otherRealm, otherText;
-		local toClean;
-		for guid,character in pairs(characterData) do
-			-- simple check on name/realm first
-			otherName = character.name;
-			otherRealm = character.realm;
-			otherText = character.text;
-			if guid ~= myGUID then
-				if otherName == myName and otherRealm == myRealm then
-					if toClean then tinsert(toClean, guid)
-					else toClean = { guid }; end
-				elseif otherText and otherText:match(myRegex) then
-					if toClean then tinsert(toClean, guid)
-					else toClean = { guid }; end
-				end
-			end
-		end
-		if toClean then
-			local cleanCharacterFunc = function(guid)
-				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
-				local character = characterData[guid];
-				local copyQuests = character.Quests;
-				if copyQuests then
-					-- app.PrintDebug("Copying Dupe Quests")
-					local currentQuests = currentCharacter.Quests;
-					for questID,complete in pairs(copyQuests) do
-						-- app.PrintDebug("Check Quest",questID,complete,"?",currentQuests[questID])
-						if complete and not currentQuests[questID] then
-							-- app.PrintDebug("Copied Completed Quest",questID)
-							currentQuests[questID] = complete;
-						end
-					end
-				end
-				-- Remove the actual dupe data afterwards
-				-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
-				local backups = accountWideData["_CharacterBackups"];
-				if not backups then
-					backups = {};
-					accountWideData["_CharacterBackups"] = backups;
-				end
-				backups[guid] = character;
-				characterData[guid] = nil;
-				app.print("Removed/Backed up Duplicate of Current Character:",character.text,guid)
-			end
-			app.FunctionRunner.SetPerFrame(1);
-			for _,guid in ipairs(toClean) do
-				app.FunctionRunner.Run(cleanCharacterFunc, guid);
-			end
-		end
-	end);
+	-- Callback(function()
+	-- 	local myGUID = app.GUID;
+	-- 	local myName, myRealm = currentCharacter.name, currentCharacter.realm;
+	-- 	local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
+	-- 	local otherName, otherRealm, otherText;
+	-- 	local toClean;
+	-- 	for guid,character in pairs(characterData) do
+	-- 		-- simple check on name/realm first
+	-- 		otherName = character.name;
+	-- 		otherRealm = character.realm;
+	-- 		otherText = character.text;
+	-- 		if guid ~= myGUID then
+	-- 			if otherName == myName and otherRealm == myRealm then
+	-- 				if toClean then tinsert(toClean, guid)
+	-- 				else toClean = { guid }; end
+	-- 			elseif otherText and otherText:match(myRegex) then
+	-- 				if toClean then tinsert(toClean, guid)
+	-- 				else toClean = { guid }; end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- 	if toClean then
+	-- 		local cleanCharacterFunc = function(guid)
+	-- 			-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
+	-- 			local character = characterData[guid];
+	-- 			local copyQuests = character.Quests;
+	-- 			if copyQuests then
+	-- 				-- app.PrintDebug("Copying Dupe Quests")
+	-- 				local currentQuests = currentCharacter.Quests;
+	-- 				for questID,complete in pairs(copyQuests) do
+	-- 					-- app.PrintDebug("Check Quest",questID,complete,"?",currentQuests[questID])
+	-- 					if complete and not currentQuests[questID] then
+	-- 						-- app.PrintDebug("Copied Completed Quest",questID)
+	-- 						currentQuests[questID] = complete;
+	-- 					end
+	-- 				end
+	-- 			end
+	-- 			-- Remove the actual dupe data afterwards
+	-- 			-- move to a backup table temporarily in case anyone reports weird issues, we could potentially resolve them?
+	-- 			local backups = accountWideData["_CharacterBackups"];
+	-- 			if not backups then
+	-- 				backups = {};
+	-- 				accountWideData["_CharacterBackups"] = backups;
+	-- 			end
+	-- 			backups[guid] = character;
+	-- 			characterData[guid] = nil;
+	-- 			app.print("Removed/Backed up Duplicate of Current Character:",character.text,guid)
+	-- 		end
+	-- 		app.FunctionRunner.SetPerFrame(1);
+	-- 		for _,guid in ipairs(toClean) do
+	-- 			app.FunctionRunner.Run(cleanCharacterFunc, guid);
+	-- 		end
+	-- 	end
+	-- end);
 
 	-- Harvest the Spell IDs for Conversion.
 	app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
