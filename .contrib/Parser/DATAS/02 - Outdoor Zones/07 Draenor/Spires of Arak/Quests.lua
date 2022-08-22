@@ -335,6 +335,7 @@ _.Zones =
 						37326,	-- Befriending the Locals (tavern/brewery)
 						35699,	-- Peace Offering (smuggler's den)
 					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 43.9, 48.8, SPIRES_OF_ARAK },
 					["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
 				}),

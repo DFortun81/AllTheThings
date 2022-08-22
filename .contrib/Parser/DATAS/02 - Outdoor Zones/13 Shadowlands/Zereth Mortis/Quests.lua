@@ -1057,7 +1057,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(64861, {	-- Kismetric Disc
 				["sourceQuests"] = {
 					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
 				},
 				["provider"] = { "i", 187792 },	-- Kismetric Disc
 				["g"] = {

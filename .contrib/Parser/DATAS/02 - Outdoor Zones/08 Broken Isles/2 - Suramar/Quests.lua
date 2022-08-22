@@ -197,7 +197,10 @@ _.Zones =
 				q(40324, {	-- Arcane Communion
 					["coord"] = { 37.0, 46.2, SURAMAR },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
-					["sourceQuest"] = 42147,	-- First Contact
+					["sourceQuests"] = {
+						42147,	-- First Contact
+						41138,	-- Feeding Shal'Aran
+					},
 				}),
 				q(40009, {  -- Arcane Thirst
 					["coord"] = { 35.3, 47.3, SURAMAR },
@@ -1097,7 +1100,7 @@ _.Zones =
 				q(45260, {	-- One Day at a Time
 					["coord"] = { 36.4, 46.7, SURAMAR },
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
-					["description"] = "You may need to need Shal'aran before this quest appears.",
+					["description"] = "You may need to leave Shal'aran before this quest appears.",
 					["sourceQuests"] = {
 						43568,	-- Arcan'dor, Gift of the Ancient Magi
 						45271,	-- Insurrection (legacy)
