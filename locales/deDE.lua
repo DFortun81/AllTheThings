@@ -3262,6 +3262,7 @@ for key,value in pairs({
 	["Echsenkessel: Tiefensumpf"] = "Der Tiefensumpf";	-- The Underbog
 	["Auchindoun: Auchenaikrypta"] = "Auchenaikrypta";	-- Auchenai Crypts	--TODO: Not sure about Journal Name
 	["Auchindoun: Managruft"] = "Managruft";	-- Mana-Tombs	--TODO: Not sure about Journal Name
+	["Flucht aus Durnholde"] = "Vorgebirge des Alten Hügellands";	-- Old Hillsbrad Foothills
 	["Auchindoun: Sethekkhallen"] = "Sethekkhallen";	-- Sethekk Halls	--TODO: Not sure about Journal Name
 	["Auchindoun: Schattenlabyrinth"] = "Schattenlabyrinth";	-- Shadow Labyrinth
 	["Festung der Stürme: Die Botanika"] = "Die Botanika";	-- The Botanica
