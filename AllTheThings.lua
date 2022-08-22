@@ -4133,40 +4133,106 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				sourceGroup.missing = true;
 			end
 
-			if sourceID then
-				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-				if sourceInfo and (sourceInfo.quality or 0) > 1 then
-					if topLevelSearch and app.Settings:GetTooltipSetting("SharedAppearances") then
-						local text;
-						if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
-							-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
-							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-								if otherSourceID == sourceID and not sourceGroup.missing then
-									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link or sourceGroup.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if sourceGroup.u then
-											local texture = GetUnobtainableTexture(sourceGroup);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
+			if topLevelSearch then
+				if sourceID then
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+					if sourceInfo and (sourceInfo.quality or 0) > 1 then
+						local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID);
+						if not allVisualSources or #allVisualSources < 1 then
+							-- Items with SourceInfo which don't register as having any visual data...
+							-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
+							tinsert(info, 1, { left = L["FORCE_REFRESH_REQUIRED"], wrap = true, color = app.Colors.TooltipDescription });
+						end
+						if app.Settings:GetTooltipSetting("SharedAppearances") then
+							local text;
+							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
+								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
+								for i,otherSourceID in ipairs(allVisualSources) do
+									if otherSourceID == sourceID and not sourceGroup.missing then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+											local link = sourceGroup.link or sourceGroup.silentLink;
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											if sourceGroup.u then
+												local texture = GetUnobtainableTexture(sourceGroup);
+												if texture then
+													text = "|T" .. texture .. ":0|t";
+												else
+													text = "   ";
+												end
 											else
 												text = "   ";
 											end
-										else
-											text = "   ";
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+									else
+										local otherATTSource = app.SearchForObject("s", otherSourceID);
+										if otherATTSource then
+											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+											if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
+												local link = otherATTSource.link or otherATTSource.silentLink;
+												local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
+												if not link then
+													link = RETRIEVING_DATA;
+													working = true;
+												end
+												if otherATTSource.u then
+													local texture = GetUnobtainableTexture(otherATTSource);
+													if texture then
+														text = "|T" .. texture .. ":0|t";
+													else
+														text = "   ";
+													end
+												else
+													text = "   ";
+												end
+												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+											end
+										else
+											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+											if otherSource then
+												local link = select(2, GetItemInfo(otherSource.itemID));
+												if not link then
+													link = RETRIEVING_DATA;
+													working = true;
+												end
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
+											end
+										end
 									end
-								else
-									local otherATTSource = app.SearchForObject("s", otherSourceID);
-									if otherATTSource then
-										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-										if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
+								end
+							else
+								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
+								for i,otherSourceID in ipairs(allVisualSources) do
+									if otherSourceID == sourceID and not sourceGroup.missing then
+										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+											local link = sourceGroup.link or sourceGroup.silentLink;
+											if not link then
+												link = RETRIEVING_DATA;
+												working = true;
+											end
+											if sourceGroup.u then
+												local texture = GetUnobtainableTexture(sourceGroup);
+												if texture then
+													text = "|T" .. texture .. ":0|t";
+												else
+													text = "   ";
+												end
+											else
+												text = "   ";
+											end
+											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+										end
+									else
+										local otherATTSource = app.SearchForObject("s", otherSourceID);
+										if otherATTSource then
+											-- Show information about the appearance:
+											local failText = "";
 											local link = otherATTSource.link or otherATTSource.silentLink;
-											local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
 											if not link then
 												link = RETRIEVING_DATA;
 												working = true;
@@ -4181,128 +4247,68 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
-										end
-									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
-										end
-									end
-								end
-							end
-						else
-							-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
-							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-								if otherSourceID == sourceID and not sourceGroup.missing then
-									if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
-										local link = sourceGroup.link or sourceGroup.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if sourceGroup.u then
-											local texture = GetUnobtainableTexture(sourceGroup);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
-										else
-											text = "   ";
-										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
-									end
-								else
-									local otherATTSource = app.SearchForObject("s", otherSourceID);
-									if otherATTSource then
-										-- Show information about the appearance:
-										local failText = "";
-										local link = otherATTSource.link or otherATTSource.silentLink;
-										if not link then
-											link = RETRIEVING_DATA;
-											working = true;
-										end
-										if otherATTSource.u then
-											local texture = GetUnobtainableTexture(otherATTSource);
-											if texture then
-												text = "|T" .. texture .. ":0|t";
-											else
-												text = "   ";
-											end
-										else
-											text = "   ";
-										end
-										local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-										text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or "");
+											local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
+											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or "");
 
-										-- Show all of the reasons why an appearance does not meet given criteria.
-										-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-										if sourceGroup.f ~= otherATTSource.f then
-											-- This is NOT the same type. Therefore, no credit for you!
-											if #failText > 0 then failText = failText .. ", "; end
-											failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
-										elseif otherATTSource.nmc then
-											-- This is NOT for your class. Therefore, no credit for you!
-											if #failText > 0 then failText = failText .. ", "; end
-											-- failText = failText .. "Class Locked";
-											for i,classID in ipairs(otherATTSource.c) do
-												if i > 1 then failText = failText .. ", "; end
-												failText = failText .. (GetClassInfo(classID) or "???");
+											-- Show all of the reasons why an appearance does not meet given criteria.
+											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
+											if sourceGroup.f ~= otherATTSource.f then
+												-- This is NOT the same type. Therefore, no credit for you!
+												if #failText > 0 then failText = failText .. ", "; end
+												failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
+											elseif otherATTSource.nmc then
+												-- This is NOT for your class. Therefore, no credit for you!
+												if #failText > 0 then failText = failText .. ", "; end
+												-- failText = failText .. "Class Locked";
+												for i,classID in ipairs(otherATTSource.c) do
+													if i > 1 then failText = failText .. ", "; end
+													failText = failText .. (GetClassInfo(classID) or "???");
+												end
+											elseif otherATTSource.nmr then
+												-- This is NOT for your race. Therefore, no credit for you!
+												if #failText > 1 then failText = failText .. ", "; end
+												failText = failText .. L["RACE_LOCKED"];
+											else
+												-- Should be fine
 											end
-										elseif otherATTSource.nmr then
-											-- This is NOT for your race. Therefore, no credit for you!
-											if #failText > 1 then failText = failText .. ", "; end
-											failText = failText .. L["RACE_LOCKED"];
-										else
-											-- Should be fine
-										end
 
-										if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
-									else
-										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource and (otherSource.quality or 0) > 1 then
-											local link = select(2, GetItemInfo(otherSource.itemID));
-											if not link then
-												link = RETRIEVING_DATA;
-												working = true;
+											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
+											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
+										else
+											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
+											if otherSource and (otherSource.quality or 0) > 1 then
+												local link = select(2, GetItemInfo(otherSource.itemID));
+												if not link then
+													link = RETRIEVING_DATA;
+													working = true;
+												end
+												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
+												tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
-											text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-											if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
-											tinsert(info, { left = text	.. " |CFFFF0000(" .. (link == RETRIEVING_DATA and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 										end
 									end
 								end
 							end
 						end
-					end
 
-					-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
-					-- non-collected SourceID, non-collected* for Account, and in Unique Mode
-					if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
-						local collected = app.ItemSourceFilter(sourceInfo);
-						if collected then
-							-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
-							-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
-							-- this Account as being 'collected'
-							if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
-							-- if the tooltip immediately refreshes for whatever reason the
-							-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
-							if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
-							local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
-							rawset(uniqueSources, sourceID, 1);
+						-- Special case to double-check VisualID collection in Unique/Main modes because blizzard doesn't return consistent data
+						-- non-collected SourceID, non-collected* for Account, and in Unique Mode
+						if not sourceInfo.isCollected and not rawget(ATTAccountWideData.Sources, sourceID) and not app.Settings:Get("Completionist") then
+							local collected = app.ItemSourceFilter(sourceInfo);
+							if collected then
+								-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
+								-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
+								-- this Account as being 'collected'
+								if topLevelSearch then tinsert(info, { left = Colorize(L["ADHOC_UNIQUE_COLLECTED_INFO"], app.Colors.ChatLinkError) }); end
+								-- if the tooltip immediately refreshes for whatever reason the
+								-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
+								if not ATTAccountWideData.BrokenUniqueSources then ATTAccountWideData.BrokenUniqueSources = {}; end
+								local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
+								rawset(uniqueSources, sourceID, 1);
+							end
 						end
-					end
 
-					if topLevelSearch then
 						if app.IsReady and sourceGroup.missing and itemID ~= 53097 then
 							tinsert(info, { left = Colorize("Item Source not found in the " .. app.Version .. " database.\n" .. L["SOURCE_ID_MISSING"], app.Colors.ChatLinkError) });	-- Do not localize first part of the message, it is for contribs
 							tinsert(info, { left = Colorize(sourceID .. ":" .. tostring(sourceInfo.visualID), app.Colors.SourceIgnored) });
@@ -4312,8 +4318,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
 				end
-			end
-			if topLevelSearch then
+
 				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
 				if modID and app.Settings:GetTooltipSetting("modID") then tinsert(info, { left = "Mod ID", right = tostring(modID) }); end
 				if bonusID and app.Settings:GetTooltipSetting("bonusID") then tinsert(info, { left = "Bonus ID", right = tostring(bonusID) }); end

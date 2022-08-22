@@ -241,6 +241,7 @@ app.L = {
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
+	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh (Shift-Click) to properly be collected.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
