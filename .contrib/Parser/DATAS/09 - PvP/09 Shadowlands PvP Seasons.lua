@@ -1189,7 +1189,6 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186781),	-- Cosmic Gladiator's Drape
 				i(186783),	-- Cosmic Gladiator's Greatcloak
 				i(186782),	-- Cosmic Gladiator's Shawl
-				i(186776),	-- Cosmic Gladiator's Prestigious Cloak
 			}),
 			filter(CLOTH, {
 				i(186801),	-- Cosmic Gladiator's Silk Amice
@@ -1641,13 +1640,10 @@ root("PVP", pvp(tier(SL_TIER, {
 		}),
 		n(PVP_ELITE, {
 			n(BACK, {
-				i(192205),	-- Eternal Gladiator's Prestigious Cloak
+				
 			}),
 			filter(MOUNTS, {
 				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
-			}),
-			filter(TABARDS, {
-				i(192206),	-- Eternal Gladiator's Tabard
 			}),
 		}),
 		filter(MOUNTS, {
