@@ -14938,8 +14938,10 @@ app.Windows = {};
 app._UpdateWindows = function(force, got)
 	-- app.PrintDebug("_UpdateWindows",force,got)
 	app._LastUpdateTime = GetTimePreciseSec();
+	app.FunctionRunner.SetPerFrame(1);
+	local Run = app.FunctionRunner.Run;
 	for _,window in pairs(app.Windows) do
-		window:Update(force, got);
+		Run(window.Update, window, force, got);
 	end
 end
 function app:UpdateWindows(force, got)
