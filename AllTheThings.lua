@@ -8171,12 +8171,15 @@ local questFields = {
 		end
 	end,
 	["missingPrequisites"] = function(t)
-		if t.sourceQuests and #t.sourceQuests > 0 then
-			local sq, missing, filter, onQuest;
+		local sourceQuests = t.sourceQuests;
+		if sourceQuests and #sourceQuests > 0 then
+			local sq, filter, onQuest;
 			local prereqs = rawget(t, "prereqs") or {};
+			local sqreq = rawget(t, "sqreq") or #sourceQuests;
+			local missing = 0;
 			rawset(t, "prereqs", prereqs);
 			wipe(prereqs);
-			for _,sourceQuestID in ipairs(t.sourceQuests) do
+			for _,sourceQuestID in ipairs(sourceQuests) do
 				if not IsQuestFlaggedCompletedForce(sourceQuestID) then
 					sq = app.SearchForObject("questID", sourceQuestID);
 					if sq then
@@ -8189,16 +8192,15 @@ local questFields = {
 							..(sq.altcollected and "A" or "")
 							..(not filter and "F" or "");
 						-- missing: meets current character filters, non-breadcrumb, non-locked, not currently on the quest
-						-- TODO: account for future addition of optional amount of source quests being complete
 						if filter and not onQuest and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
-							missing = true;
+							missing = missing + 1;
 						end
 					end
 				else
 					prereqs[sourceQuestID] = "C";
 				end
 			end
-			return missing;
+			return (#sourceQuests - missing) < sqreq;
 		end
 	end,
 	["locked"] = LockedAsQuest,
