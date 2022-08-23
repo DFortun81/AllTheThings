@@ -8867,9 +8867,12 @@ end
 
 -- Achievement Criteria Lib
 local function GetParentAchievementInfo(t, key)
-	local sourceAch = t.sourceParent or t.parent;
-	if sourceAch and sourceAch.achievementID == t.achievementID then
-		rawset(t, key, sourceAch[key]);
+	local achievement = app.SearchForObject("achievementID", t.achievementID);
+	if achievement then
+		rawset(t, "c", achievement["c"]);
+		rawset(t, "classID", achievement["classID"]);
+		rawset(t, "races", achievement["races"]);
+		rawset(t, "r", achievement["r"]);
 		return rawget(t, key);
 	end
 end
@@ -8878,8 +8881,13 @@ local criteriaFields = {
 		return "criteriaID";
 	end,
 	["achievementID"] = function(t)
+		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+		if achievementID then
+			rawset(t, "achievementID", achievementID);
+			return achievementID;
+		end
 		local sourceAch = t.sourceParent or t.parent;
-		local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID or (sourceAch and (sourceAch.achievementID or (sourceAch.parent and sourceAch.parent.achievementID)));
+		achievementID = sourceAch and (sourceAch.achievementID or (sourceAch.parent and sourceAch.parent.achievementID));
 		if achievementID then
 			rawset(t, "achievementID", achievementID);
 			return achievementID;
@@ -8994,7 +9002,6 @@ app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievem
 app.CreateAchievementCriteria = function(id, t)
 	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
-
 
 local HarvestedAchievementDatabase = {};
 local harvesterFields = RawCloneData(fields);
@@ -14966,7 +14973,7 @@ function app:CreateMiniListForGroup(group)
 	if not popout then
 		popout = app:GetWindow(suffix);
 		-- make a search for this group if it is an item/currency/achievement and not already a container for things
-		if not group.g and (group.itemID or group.currencyID or group.achievementID) then
+		if not group.g and not group.criteriaID and (group.itemID or group.currencyID or group.achievementID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			app.SetSkipPurchases(2);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
