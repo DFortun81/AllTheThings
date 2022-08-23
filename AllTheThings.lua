@@ -3875,11 +3875,11 @@ local function ResolveSymlinkGroupAsync(group)
 	if groups then
 		PriorityNestObjects(group, groups, nil, app.RecursiveGroupRequirementsFilter);
 		group.sym = nil;
-		BuildGroups(group, group.g);
 		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
+		BuildGroups(group, group.g);
 		app.DirectGroupUpdate(group);
 	end
 end
@@ -5093,8 +5093,7 @@ app.FillGroups = function(group)
 	-- Check if this group is inside a Window or not
 	isInWindow = app.RecursiveFirstParentWithField(group, "window") and true;
 	-- app.PrintDebug("isInWindow",isInWindow)
-	-- 5 resolves per frame
-	app.FunctionRunner.SetPerFrame(5);
+	app.FunctionRunner.SetPerFrame(1);
 
 	-- Fill the group with all nestable content
 	FillGroupsRecursive(group);
