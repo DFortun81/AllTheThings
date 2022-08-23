@@ -3460,7 +3460,6 @@ subroutines = {
 			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
 			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
 			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
 	-- Wod Dungeon TW
@@ -3470,7 +3469,6 @@ subroutines = {
 			{"where", "u", 1016 },						-- only the Common Dungeon Drops which is marked as TIMEWALKING
 			{"pop"},									-- Discard the Header and acquire all of their children.
 			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-			{"pop"},									-- Discard the Header and acquire all of their children.
 		}
 	end,
 	-- Korthian Armaments
@@ -3880,6 +3878,8 @@ local function ResolveSymlinkGroupAsync(group)
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
 		BuildGroups(group, group.g);
+		-- auto-expand the symlink
+		ExpandGroupsRecursively(group, true, true);
 		app.DirectGroupUpdate(group);
 	end
 end

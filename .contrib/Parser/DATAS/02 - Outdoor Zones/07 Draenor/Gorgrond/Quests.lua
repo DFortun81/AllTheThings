@@ -579,8 +579,8 @@ _.Zones =
 						["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",
 						["isBreadcrumb"] = true,	-- unavailable once you turn in "Leave Every Soldier Behind"
 						["sourceQuests"] = {
-							36209,	-- What's under There?
-							35041,	-- Xuk It!
+							35128,	-- Fair Warning
+							35129,	-- Leave Every Soldier Behind
 						},
 					}),
 					q(35693,  {	-- A Harsh Reminder (A)
