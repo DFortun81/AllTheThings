@@ -1412,18 +1412,23 @@ applyData = function(data, t)
 		end
 	end
 end
--- Applies a copy of the provided data into the tables of the provided array
+-- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
 	if t then
 		for _,group in ipairs(t) do
 			applyData(data, group);
+		end
+		if t.g or t.groups then
+			for _,group in ipairs(t.g or t.groups) do
+				applyData(data, group);
+			end
 		end
 	end
 	return t;
 end
 -- Performs sharedData logic but also applies the data to the top-level table
 sharedDataSelf = function(data, t)
-	-- if this is an array, convert to .g container first to prevent merge confusion
+	-- if this is an array, convert to .groups container first to prevent merge confusion
 	t = togroups(t);
 	-- then apply the data to itself
 	applyData(data, t);
