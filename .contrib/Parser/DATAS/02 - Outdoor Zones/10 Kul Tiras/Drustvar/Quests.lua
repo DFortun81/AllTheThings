@@ -70,8 +70,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 				["coord"] = { 22.8, 46.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-				-- May have other/later sourceQuests; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),
 			q(50175, {	-- An Eight-Legged Curse

@@ -3691,7 +3691,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.0.1.26683
 				-- 8.0.1.26707
 				q(52048),	--
-				q(53317),	-- Dense Storm Silver
 				q(53319),	-- Our Sacred Forest
 				q(53320),	-- Ours For the Taking
 				q(53427),	--

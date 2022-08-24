@@ -22,10 +22,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 				["lvl"] = { 50 },
 			}),
-			q(53317, {	-- Dense Storm Silver
-				["isWorldQuest"] = true,
-				["lvl"] = { 50 },
-			}),
 			q(53302, {	-- Flourishing Riverbud
 				["isWorldQuest"] = true,
 				["lvl"] = { 50 },
@@ -252,6 +248,11 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			q(51461, {	-- Deathcap
 				["lvl"] = { 50 },
 				["isWorldQuest"] = true,
+			}),
+			q(53317, {	-- Dense Storm Silver
+			["isWorldQuest"] = true,
+			["lvl"] = { 50 },
+			["requireSkill"] = MINING,
 			}),
 			q(51754, {	-- Dogged Tenacity
 				["isWorldQuest"] = true,
