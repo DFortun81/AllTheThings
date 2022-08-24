@@ -1646,6 +1646,7 @@ _.Zones =
 					["provider"] = { "n", 82732 },	-- Marrow
 					["coord"] = { 46.3, 70.0, GORGROND },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35151,	-- Your Base, Your Choice
 					["isBreadcrumb"] = true,
 				}),
 				q(33661, {	-- Steamscar "Reagents"
