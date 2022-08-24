@@ -629,7 +629,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
 					q(45561, {	-- Seek Me Out
-						-- ["sourceQuests"] = { },	-- TODO
+						["sourceQuests"] = {
+							24707,	-- The Ballad of Maximillian
+							46045,	-- Champion: Nerus Moonfang
+						},
+						["provider"] = { "i", 143900 },	-- Letter from Maximillian
+						["description"] = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
 					}),
 					q(45770, {	-- Stirring in the Shadows
 						["sourceQuests"] = { 46074 },	-- Leather to Legendary
