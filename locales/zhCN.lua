@@ -219,7 +219,7 @@ local L = app.L;
 	L.LOCK_CRITERIA_SPELL_LABEL = "已学法术/坐骑/配方";
 	L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
-	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
+	L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."-点击）正确已收集。";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
