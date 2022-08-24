@@ -106,6 +106,7 @@ profession(ENGINEERING, {
 			["lvl"] = 30,
 		}),
 		q(29477, {	-- Gnomish Engineering
+			["repeatable"] = true,
 			["qgs"] = {
 				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
 				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
@@ -140,6 +141,7 @@ profession(ENGINEERING, {
 			["lvl"] = 20,
 		}),
 		q(29475, {	-- Goblin Engineering
+			["repeatable"] = true,
 			["qgs"] = {
 				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
 				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
