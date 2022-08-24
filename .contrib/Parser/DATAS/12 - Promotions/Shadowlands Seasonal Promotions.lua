@@ -20,7 +20,7 @@ root("Promotions", {
 			i(97213, {	-- Hood of Hungering Darkness
 				["timeline"] = { "added 9.2.5" },
 				["description"] = "Obtained through Prime Gaming from July 27th 2022 till August 23rd 2022.",
-				["u"] = BLIZZARD_BALANCE,
+				["u"] = REMOVED_FROM_GAME, -- Removed again on August 24th 2022
 			}),
 			i(95474, {	-- Jewel of the Firelord
 				["timeline"] = { "added 9.2.5" },
