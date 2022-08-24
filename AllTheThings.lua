@@ -23191,18 +23191,21 @@ app.InitDataCoroutine = function()
 			end
 		end
 		if toClean then
+			local copyTables = { "Buildings","Factions","FlightPaths","Quests" };
 			local cleanCharacterFunc = function(guid)
 				-- copy the set of QuestIDs from the duplicate character (to persist repeatable Quests collection)
 				local character = characterData[guid];
-				local copyQuests = character.Quests;
-				if copyQuests then
-					-- app.PrintDebug("Copying Dupe Quests")
-					local currentQuests = currentCharacter.Quests;
-					for questID,complete in pairs(copyQuests) do
-						-- app.PrintDebug("Check Quest",questID,complete,"?",currentQuests[questID])
-						if complete and not currentQuests[questID] then
-							-- app.PrintDebug("Copied Completed Quest",questID)
-							currentQuests[questID] = complete;
+				for _,tableName in ipairs(copyTables) do
+					local copyTable = character[tableName];
+					if copyTable then
+						-- app.PrintDebug("Copying Dupe",tableName)
+						local currentTable = currentCharacter[tableName];
+						for ID,complete in pairs(copyTable) do
+							-- app.PrintDebug("Check",ID,complete,"?",currentTable[ID])
+							if complete and not currentTable[ID] then
+								-- app.PrintDebug("Copied Completed",ID)
+								currentTable[ID] = complete;
+							end
 						end
 					end
 				end
