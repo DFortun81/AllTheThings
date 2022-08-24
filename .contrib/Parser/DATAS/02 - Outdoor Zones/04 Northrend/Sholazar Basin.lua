@@ -60,10 +60,10 @@ root("Zones", {
 				-- #endif
 				n(FACTIONS, {
 					faction(1104, {	-- Frenzyheart Tribe
-						
+						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 					}),
 					faction(1105, {	-- The Oracles
-						
+						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
 					}),
 				}),
 				n(FLIGHT_PATHS, {
@@ -175,7 +175,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					
+
 					-- The Oracles dailies
 					q(12735, {	-- A Cleansing Song
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
@@ -276,7 +276,7 @@ root("Zones", {
 							}),
 						},
 					}),
-								
+
 					q(12581, {	-- A Hero's Burden
 						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 						["qg"] = 28122,	-- Moodle
