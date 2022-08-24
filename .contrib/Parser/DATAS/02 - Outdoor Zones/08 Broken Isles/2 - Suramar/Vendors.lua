@@ -309,6 +309,7 @@ _.Zones =
 				}),
 				n(109562, {	-- Sundries Merchant
 					["coord"] = { 50.0, 77.3, SURAMAR },
+					["description"] = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
 					["g"] = {
 						i(147768, {	-- Suramarian Sapphire
 							["b"] = 1,	-- Force BoP since this is only available as a quest item
