@@ -82,6 +82,7 @@ root("ExpansionFeatures", {
 							})),
 							q(44555, {	-- Khadgar's Discovery
 								["lvl"] = 110,
+								["isBreadcrumb"] = true,
 							}),
 							un(REMOVED_FROM_GAME, q(43553, {	-- Maw of Souls: Into the Maw of Souls (Normal)
 								un(REMOVED_FROM_GAME, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)

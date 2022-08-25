@@ -1058,7 +1058,10 @@ _.Zones =
 						["provider"] = { "n", 75127 },	-- Vindicator Maraad
 						["coord"] = { 52.8, 59.6, GORGROND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35702,	-- Chains of Iron
+						["sourceQuests"] = {
+							35702,	-- Chains of Iron
+							35137,  -- The Sparring Arena (A)
+						},
 						["g"] = {
 							i(112885),	-- Commander Gar's Iron Insignia
 							i(112889),	-- Genesaur's Greatness
@@ -1069,7 +1072,10 @@ _.Zones =
 						["provider"] = { "n", 74594 },	-- Durotan
 						["coord"] = { 46.1, 70.1, GORGROND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35136,	-- Chains of Iron
+						["sourceQuests"] = {
+							35136,	-- Chains of Iron
+							35152,	-- The Sparring Arena (H)
+						},
 						["g"] = {
 							i(112885),	-- Commander Gar's Iron Insignia
 							i(112889),	-- Genesaur's Greatness
