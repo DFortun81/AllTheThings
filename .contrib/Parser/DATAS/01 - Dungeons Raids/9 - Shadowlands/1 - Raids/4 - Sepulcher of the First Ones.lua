@@ -1742,18 +1742,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						ach(15489),	-- Mythic: The Jailer
-						ach(15476, {	-- Hall of Fame: The Jailer (A)
+						ach(15476, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
-						}),
-						ach(15475, {	-- Hall of Fame: The Jailer (H)
+						})),
+						ach(15475, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
-						}),
+						})),
 						ach(15471),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination

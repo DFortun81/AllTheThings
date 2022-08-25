@@ -1287,6 +1287,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains
 						}),
+						ach(15197, bubbleDownSelf({["timeline"] = { "added 9.1.0.39185", "removed 9.2" } }, {	-- Hall of Fame: Sylvanas (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								title(448),	-- <Name>, Famed Bane of the Banshee Queen
+							},
+						})),
+						ach(15196, bubbleDownSelf({["timeline"] = { "added 9.1.0.39185", "removed 9.2" } }, {	-- Hall of Fame: Sylvanas (Horde)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(448),	-- <Name>, Famed Bane of the Banshee Queen
+							},
+						})),
 						ach(15134, {	-- Ahead of the Curve: Sylvanas Windrunner
 							["timeline"] = { "added 9.1.0", "removed 9.2.0" },
 						}),

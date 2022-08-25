@@ -1374,6 +1374,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						ach(14649, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								title(440),	-- <Name>, Famed Slayer of Denathrius
+							},
+						})),
+						ach(14650, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(440),	-- <Name>, Famed Slayer of Denathrius
+							},
+						})),
 						ach(14365, {	-- Mythic: Sire Denathrius
 							title(432),	-- Sinbreaker <Name>
 						}),
