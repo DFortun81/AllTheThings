@@ -1949,9 +1949,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
-					["description"] = "Can drop from any troll in Hinterlands or Stranglethorn Vale.",
-				}),
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any troll in The Hinterlands.",

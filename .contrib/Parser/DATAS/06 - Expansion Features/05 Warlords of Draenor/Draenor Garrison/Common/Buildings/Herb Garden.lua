@@ -53,6 +53,11 @@ _.ExpansionFeatures =
 										{ "i", 116053, 500 },	-- 500x Draenic Seeds
 									},
 								}),
+								i(116916, {	-- Gorepetal's Grasp
+									["cost"] = {
+										{ "c", 824, 2000 },	-- 2000x Garrison Resources
+									},
+								}),
 							},
 						}),
 					}),
@@ -91,6 +96,11 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "g", 25000000 },		-- 2,500g
 										{ "i", 116053, 500 },	-- 500x Draenic Seeds
+									},
+								}),
+								i(116916, {	-- Gorepetal's Grasp
+									["cost"] = {
+										{ "c", 824, 2000 },	-- 2000x Garrison Resources
 									},
 								}),
 							},

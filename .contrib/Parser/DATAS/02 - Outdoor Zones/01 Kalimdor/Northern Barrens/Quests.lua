@@ -648,6 +648,7 @@ _.Zones =
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.6, NORTHERN_BARRENS },
 					["requireSkill"] = HERBALISM,
+					["description"] = "To obtain this quest, you must have at least 40 skill in Classic Herbalism.",
 					["g"] = {
 						i(5341),	-- Spore-Covered Tunic
 					},

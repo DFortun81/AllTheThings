@@ -2677,6 +2677,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				i(9294, {	-- Recipe: Wildvine Potion
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["maps"] = { THE_HINTERLANDS },
+					["timeline"] = { "added 1.11.1", "removed 4.0.1" },
 				}),
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },

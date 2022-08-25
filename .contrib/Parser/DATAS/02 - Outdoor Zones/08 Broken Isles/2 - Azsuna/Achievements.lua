@@ -186,6 +186,9 @@ _.Zones =
 						crit(3, {	-- Albatross Chick
 							["crs"] = { 97020 },	-- Albatross Chick
 						}),
+						crit(4, {	-- Coastal Sandpiper
+							["crs"] = { 110826 },	-- Coastal Sandpiper
+					}),
 					},
 				}),
 				ach(11256),	-- Treasures of Azsuna
