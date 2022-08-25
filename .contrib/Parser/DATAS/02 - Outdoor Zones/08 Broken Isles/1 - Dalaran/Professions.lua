@@ -531,6 +531,7 @@ _.Zones =
 					-- 7.3
 					q(48056, {	-- A Harsh Mistress
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
+						["sourceQuests"] = { 48069 },	-- The Wrench Calls
 						["g"] = {
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
