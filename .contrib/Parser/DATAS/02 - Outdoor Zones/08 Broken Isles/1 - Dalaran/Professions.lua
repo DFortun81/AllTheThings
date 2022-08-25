@@ -536,6 +536,14 @@ _.Zones =
 							recipe(247717),	-- Gravitational Reduction Slippers
 						},
 					}),
+					q(48065, {	-- Extraterrestrial Exploration
+						["qg"] = 93520,	-- Didi the Wrench
+						["sourceQuests"] = { 48069 },	-- The Wrench Calls
+						["coord"] = { 38.8, 25.6, LEGION_DALARAN },
+						["g"] = {
+							recipe(247744),	-- Wormhole Generator: Argus
+						},
+					}),
 				}),
 				prof(FISHING, {
 					faction(1975, {	-- Conjurer Margoss

@@ -300,13 +300,5 @@ profession(ENGINEERING, {
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
 			},
 		}),
-		q(48065, {	-- Extraterrestrial Exploration
-			["qg"] = 93520,	-- Didi the Wrench
-			["sourceQuests"] = { 48069 },	-- The Wrench Calls
-			["coord"] = { 38.8, 25.6, LEGION_DALARAN },
-			["g"] = {
-				recipe(247744),	-- Wormhole Generator: Argus
-			},
-		}),
 	}),
 });
