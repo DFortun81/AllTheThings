@@ -3159,11 +3159,15 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				},
 			}),
 			q(40418, {	-- To Tanaan! -- no idea how to get this one
+				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Horde equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
+				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 36615 },	-- My Very Own Castle
 				["races"] = ALLIANCE_ONLY,
 				["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 			}),
 			q(40417, {	-- To Tanaan! -- no idea how to get this one
+				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Alliance equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
+				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["races"] = HORDE_ONLY,
 				["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
