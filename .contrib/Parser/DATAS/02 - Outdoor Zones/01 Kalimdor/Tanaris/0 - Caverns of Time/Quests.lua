@@ -15,6 +15,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
+					["coords"] = {
+						{ 39.4, 44.4, CAVERNS_OF_TIME },
+					},
 					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,

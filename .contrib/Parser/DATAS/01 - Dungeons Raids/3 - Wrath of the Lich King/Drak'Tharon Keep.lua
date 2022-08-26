@@ -40,6 +40,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			n(QUESTS, {
 				q(30120,{	-- Cleansing Drak'Tharon
+					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
 					["provider"] = { "n", 58149 },	-- Image of Drakuru
 					["groups"] = {
 						i(40755),	-- Enticing Sabatons

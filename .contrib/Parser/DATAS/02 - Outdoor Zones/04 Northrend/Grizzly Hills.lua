@@ -324,6 +324,7 @@ root("Zones", {
 						["sourceQuest"] = 12121,	-- See You on the Other Side
 					}),
 					q(12238, {	-- Cleansing Drak'Tharon
+						["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
 						["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
 						["qg"] = 26787,	-- Image of Drakuru
 						["sourceQuest"] = 12068,	-- Voices From the Dust

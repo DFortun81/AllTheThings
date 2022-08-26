@@ -867,9 +867,10 @@ root("Zones", {
 						["coord"] = { 57.6, 55.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(10908, {	-- Speak with Rilak the Redeemed -- aa
+					q(10908, {	-- Speak with Rilak the Redeemed
 						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
+						["altQuests"] = { 10862, },	-- Surrender to the Horde
 						["isBreadcrumb"] = true,
 					}),
 					q(10039, {	-- Speak with Scout Neftis
@@ -914,6 +915,7 @@ root("Zones", {
 						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["altQuests"] = { 10908 },	-- Speak with Rilak the Redeemed
 						["isBreadcrumb"] = true,
 					}),
 					q(10873, {	-- Taken in the Night -- aa
@@ -957,7 +959,7 @@ root("Zones", {
 							i(25975),	-- Wolf Hunter's Guise
 						},
 					}),
-					q(10847, {	-- The Eyes of Skettis -- aa
+					q(10847, {	-- The Eyes of Skettis
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 						["sourceQuests"] = {

@@ -706,6 +706,7 @@ root("Zones", {
 					}),
 					q(10311, {	-- Drijya Needs Your Help
 						["qg"] = 20066,	-- Gahruj
+						["coord"] = { 46.6, 56.8, NETHERSTORM },
 						["isBreadcrumb"] = true,
 					}),
 					q(10411, {	-- Electro-Shock Goodness!

@@ -967,6 +967,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 				["requireSkill"] = ENGINEERING,
 				["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
 				["lockCriteria"] = {1,"lvl",51},
+				["DisablePartySync"] = true,
 				["description"] = "Due to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this quest on the character. Feel free to spam bug reports about this because it is DUMB.",
 			}),
 		}),

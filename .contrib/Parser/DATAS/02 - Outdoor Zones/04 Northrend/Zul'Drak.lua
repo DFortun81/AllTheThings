@@ -151,9 +151,8 @@ root("Zones", {
 						},
 					}),
 					q(12631, {	-- An Invitation, of Sorts...
-						["crs"] = { 28519 },	-- Withered Troll
 						["provider"] = { "i", 38660 },	-- Unliving Choker
-						["altQuests"] = { 12633 },	-- Darkness Calling (Available if you DO complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12633 },	-- Darkness Calling
 					}),
 					q(12504, {	-- Argent Crusade, We Are Leaving!
 						["coord"] = { 40.4, 48.1, ZULDRAK },
@@ -245,7 +244,7 @@ root("Zones", {
 					q(12638, {	-- Close Call
 						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
-						["altQuests"] = { 12637 },	-- Near Miss (Available if you DON'T complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12637 },	-- Near Miss
 						["sourceQuest"] = 12633,	-- Darkness Calling
 					}),
 					q(12606, {	-- Cocooned!
@@ -300,14 +299,13 @@ root("Zones", {
 					q(12664, {	-- Dark Horizon
 						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
-						["altQuests"] = { 12663 },	-- Reunited (Available if you DO complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12663 },	-- Reunited
 						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12649,	-- Suit Up!
 					}),
 					q(12633, {	-- Darkness Calling
-						["crs"] = { 28519 },	-- Withered Troll
 						["provider"] = { "i", 38673 },	-- Writhing Choker
-						["altQuests"] = { 12631 },	-- An Invitation, of Sorts... (Available if you DON'T complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12631 },	-- An Invitation, of Sorts...
 					}),
 					q(12552, {	-- Death to the Necromagi
 						["coord"] = { 58.0, 72.0, ZULDRAK },
@@ -327,7 +325,7 @@ root("Zones", {
 					q(12648, {	-- Dressing Down
 						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
-						["altQuests"] = { 12649 },	-- Suit Up! (Available if you DO complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12649 },	-- Suit Up!
 						["sourceQuest"] = 12629,	-- You Can Run, But You Can't Hide
 					}),
 					q(13556, {	-- Eggs for Dubra'Jin -- aa
@@ -441,8 +439,8 @@ root("Zones", {
 						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuests"] = {
-							12648,	-- Dressing Down (Available if you DON'T complete "Cleansing Drak'Tharon")
-							12649,	-- Suit Up! (Available if you DO complete "Cleansing Drak'Tharon")
+							12648,	-- Dressing Down
+							12649,	-- Suit Up!
 						},
 						["groups"] = {
 							i(39809),	-- Sandals of Spying
@@ -526,7 +524,7 @@ root("Zones", {
 					}),
 					q(12637, {	-- Near Miss
 						["coord"] = { 14.0, 73.8, ZULDRAK },
-						["altQuests"] = { 12638 },	-- Close Call (Available if you DO complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12638 },	-- Close Call
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12631,	-- An Invitation, of Sorts...
 					}),
@@ -635,7 +633,7 @@ root("Zones", {
 					q(12663, {	-- Reunited
 						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
-						["altQuests"] = { 12664 },	-- Dark Horizon (Available if you DON'T complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12664 },	-- Dark Horizon
 						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12649,	-- Suit Up!
 					}),
@@ -735,7 +733,7 @@ root("Zones", {
 					q(12649, {	-- Suit Up!
 						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
-						["altQuests"] = { 12648 },	-- Dressing Down (Available if you DON'T complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12648 },	-- Dressing Down
 						["sourceQuest"] = 12643,	-- Silver Lining
 					}),
 					q(13549, {	-- Tails Up
@@ -1038,7 +1036,7 @@ root("Zones", {
 					q(12629, {	-- You Can Run, But You Can't Hide
 						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
-						["altQuests"] = { 12643 },	-- Silver Lining (Available if you DO complete "Cleansing Drak'Tharon")
+						["altQuests"] = { 12643 },	-- Silver Lining
 						["sourceQuest"] = 12637,	-- Near Miss
 					}),
 					q(12685, {	-- You Reap What You Sow
@@ -1157,6 +1155,27 @@ root("Zones", {
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
 						["cr"] = 29235,	-- Gundrak Savage
+					}),
+					i(38660, {	-- Unliving Choker
+						["description"] = "This Item will drop instead of |cffffffffWrithing Choker|r until |cffffd700Cleansing Drak'Tharon|r has been completed.",
+						["cr"] = 28519,	-- Withered Troll
+						["coords"] = {
+							{ 14.0, 69.0, ZULDRAK },
+							{ 16.2, 75.6, ZULDRAK },
+							{ 17.6, 70.8, ZULDRAK },
+							{ 22.4, 71.6, ZULDRAK },
+						},
+					}),
+					i(38673, {	-- Writhing Choker
+						["description"] = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
+						["sourceQuest"] = 12238,	-- Cleansing Drak'Tharon
+						["cr"] = 28519,	-- Withered Troll
+						["coords"] = {
+							{ 14.0, 69.0, ZULDRAK },
+							{ 16.2, 75.6, ZULDRAK },
+							{ 17.6, 70.8, ZULDRAK },
+							{ 22.4, 71.6, ZULDRAK },
+						},
 					}),
 				}),
 			},
