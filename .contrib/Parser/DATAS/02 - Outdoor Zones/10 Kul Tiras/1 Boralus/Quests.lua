@@ -718,6 +718,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56043, {	-- Send the Fleet -- also triggered 56881
+				["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 				["provider"] = { "n", 153932 },	-- Genn Greymane
 				["coord"] = { 70.6, 27.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -805,6 +806,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
+				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Horde equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
 				["u"] = REMOVED_FROM_GAME,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
