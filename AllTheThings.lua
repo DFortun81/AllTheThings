@@ -341,7 +341,7 @@ local FunctionRunnerCoroutine = function()
 	if OnEnd then OnEnd(); end
 	-- when done with all functions in the queue, reset the queue index and clear the queues of data
 	QueueIndex = 1;
-	-- app.PrintDebug("FRC.End")
+	-- app.PrintDebug("FRC.End",#FunctionQueue)
 	wipe(FunctionQueue);
 	wipe(ParameterBucketQueue);
 	wipe(ParameterSingleQueue);
@@ -6666,7 +6666,7 @@ local function GetPopulatedQuestObject(questID)
 	local questObject = CreateObject(data, true);
 	-- if this quest exists but is Sourced under a _missing group, then it is technically missing itself
 	questObject._missing = GetRelativeValue(data, "_missing");
-	app.FunctionRunner.Run(PopulateQuestObject, questObject);
+	PopulateQuestObject(questObject);
 	return questObject;
 end
 local function ExportDataRecursively(group, indent)
@@ -7825,21 +7825,21 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	local data = QuestsToPopulate[questID];
 	if data then
 		QuestsToPopulate[questID] = nil;
-		local retries = data.retries or 0;
-		data.retries = retries + 1;
-		app.TryPopulateQuestRewards(data, retries > 10);
+		app.TryPopulateQuestRewards(data);
 	end
 end
 -- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 -- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 app.RequestLoadQuestByID = function(questID, data)
-	-- requests for quest information may process at 20 per frame
-	app.FunctionRunner.SetPerFrame(20);
 	-- only allow requests once per frame until received
 	if not QuestsRequested[questID] then
+		-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
+		app.FunctionRunner.SetPerFrame(10);
 		-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 		QuestsRequested[questID] = true;
-		QuestsToPopulate[questID] = data;
+		if data then
+			QuestsToPopulate[questID] = data;
+		end
 		app.FunctionRunner.Run(C_QuestLog_RequestLoadQuestByID, questID);
 	end
 end
@@ -8214,8 +8214,8 @@ local WorldQuestCurrencyItems = {
 	[163036] = true,	-- Polished Pet Charms
 	[116415] = true,	-- Shiny Pet Charms
 };
--- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded. Can specify 'force' to skip attempting API population
-app.TryPopulateQuestRewards = function(questObject, force)
+-- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded
+local function TryPopulateQuestRewards(questObject)
 	local questID = questObject and questObject.questID;
 	if not questID then
 		-- Update the group directly immediately since there's no quest to retrieve
@@ -8224,8 +8224,9 @@ app.TryPopulateQuestRewards = function(questObject, force)
 		app.DirectGroupUpdate(questObject);
 		return;
 	end
-	-- if we've already requested data for this quest, then ignore making another request
-	if not force and not HaveQuestRewardData(questID) then
+	questObject.retries = (questObject.retries or 0) + 1;
+	-- if we've already requested data for this quest a certain number of times, then ignore making another request
+	if questObject.retries < 5 and not HaveQuestRewardData(questID) then
 		app.RequestLoadQuestByID(questID, questObject);
 		return;
 	end
@@ -8398,6 +8399,10 @@ app.TryPopulateQuestRewards = function(questObject, force)
 	BuildGroups(questObject, questObject.g);
 	-- Update the group directly
 	app.DirectGroupUpdate(questObject);
+end
+-- Will attempt to queue populating the rewards of the quest object into itself or request itself to be loaded
+app.TryPopulateQuestRewards = function(questObject)
+	app.FunctionRunner.Run(TryPopulateQuestRewards, questObject);
 end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
@@ -16069,8 +16074,8 @@ RowOnEnter = function (self)
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
-		elseif refQuestID and reference.retries and not reference.itemID then
-			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
+		-- elseif refQuestID and reference.retries and not reference.itemID then
+		-- 	GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 		end
 		if reference.lvl then
 			local minlvl;
