@@ -718,7 +718,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56043, {	-- Send the Fleet -- also triggered 56881
-				["sourceQuests"] = { 56031 },	-- The Wolf's Offensive
 				["provider"] = { "n", 153932 },	-- Genn Greymane
 				["coord"] = { 70.6, 27.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -806,6 +805,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
+				["u"] = REMOVED_FROM_GAME,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),

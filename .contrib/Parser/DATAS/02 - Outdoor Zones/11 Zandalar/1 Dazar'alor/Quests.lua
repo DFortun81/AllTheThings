@@ -679,7 +679,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 				["coord"] = { 58.4, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 56030,	-- The Warchief's Order
 			}),
 			q(49758, {	-- Send the Signal!
 				["sourceQuests"] = {
@@ -780,7 +779,8 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 			}),
 			q(56030, {	-- The Warchief's Order
-			--	might be a breadcrumb?
+			--	might be a breadcrumb? I'm marking this as removed due to wowhead comment showing a DM confirmation that this and The Wolf's Offensive were removed. If anyone is able to get this to trigger, we can add back in.
+				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 				["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.",
 				["races"] = HORDE_ONLY,
