@@ -395,7 +395,6 @@ _.Zones =
 
 				q(30179, {	-- Poisoned!
 					["sourceQuests"] = {
-						30090,	-- Zhu's Despair
 						30121,	-- Search Party
 					},
 					["provider"] = { "n", 58160 },	-- Chizen Dawnchaser
@@ -494,7 +493,7 @@ _.Zones =
 				q(30121, {	-- Search Party
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 58113 },	-- Sunwalker Dezco
-					["coord"] = { 62.6, 19.9, KRASARANG_WILDS },
+					["coord"] = { 59.8, 24.6, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
 				}),
 

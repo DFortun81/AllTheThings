@@ -1168,7 +1168,7 @@ root("Zones", {
 					}),
 					i(38673, {	-- Writhing Choker
 						["description"] = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
-						["sourceQuest"] = 12238,	-- Cleansing Drak'Tharon
+						["sourceQuest"] = 30120,	-- Cleansing Drak'Tharon (Dungeon)
 						["cr"] = 28519,	-- Withered Troll
 						["coords"] = {
 							{ 14.0, 69.0, ZULDRAK },
