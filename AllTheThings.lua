@@ -21056,7 +21056,7 @@ customWindowUpdates["quests"] = function(self, force, got)
 		-- temporarily prevent a force refresh from exploding the game if this window is open
 		self.doesOwnUpdate = true;
 		self.initialized = true;
-		self.PartitionSize = 2000;
+		self.PartitionSize = 1000;
 		self.Limit = 80000;
 		force = true;
 		local HaveQuestData = HaveQuestData;
