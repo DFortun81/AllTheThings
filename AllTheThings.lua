@@ -19023,7 +19023,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self.openedOnLogin = false;
 		self.CurrentMaps = {};
 		self.IsSameMapData = function(self)
-			if self.CurrentMaps[self.mapID] then return true; end
+			if not self.mapID or self.CurrentMaps[self.mapID] then return true; end
 		end
 		self.SetMapID = function(self, mapID)
 			-- print("SetMapID",mapID)
@@ -19239,37 +19239,34 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					end
 				end
 
-				-- Check for timewalking difficulty objects
+				-- Check for difficulty groups
+				local cbd, zd = -1, -1;
+				local groupHeaderID, g;
 				for _,group in ipairs(groups) do
-					if group.difficultyID then
-						if group.difficultyID == 24 and group.g then
-							-- Look for a Common Boss Drop header.
-							local cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.headerID and subgroup.headerID == -1 then
-									cbdIndex = j;
-									break;
-								end
+					g = group.g;
+					if g and group.difficultyID then
+						cbd, zd = -1, -1;
+						-- Look for special headers
+						for j,subgroup in ipairs(g) do
+							groupHeaderID = subgroup.headerID;
+							-- Common Boss Drops
+							if groupHeaderID == -1 then
+								cbd = j;
 							end
+							-- Zone Drops
+							if groupHeaderID == 0 then
+								zd = j;
+							end
+						end
 
-							-- Push the Common Boss Drop header to the top.
-							if cbdIndex > -1 then
-								tinsert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
+						-- Push the Common Boss Drop header to the top
+						if cbd > -1 then
+							tinsert(g, 1, table.remove(g, cbd));
+						end
 
-							-- Look for a Zone Drop header.
-							cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.headerID and subgroup.headerID == 0 then
-									cbdIndex = j;
-									break;
-								end
-							end
-
-							-- Push the Zone Drop header to the top.
-							if cbdIndex > -1 then
-								tinsert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
+						-- Push the Zone Drop header to the bottom
+						if zd > -1 then
+							tinsert(g, table.remove(g, zd));
 						end
 					end
 				end
