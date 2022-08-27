@@ -3253,9 +3253,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 78487 },	-- Rokhan
 				["isBreadcrumb"] = true,
-				-- TODO: convert to lock criteria for learned follower?
-				-- doesn't appear to be available once learning follower(180),	-- Shadow Hunter Rala
-				-- ["DisablePartySync"] = true,	-- not 100% verified, may have pre-requisite
+				["sourceQuest"] = 33657,	-- Moving In
 			}),
 		}),
 	})),
