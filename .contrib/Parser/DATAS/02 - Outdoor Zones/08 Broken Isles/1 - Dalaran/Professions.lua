@@ -272,7 +272,7 @@ _.Zones =
 					n(92183, {	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 						["g"] = {
-							r(239415, {["timeline"]={"added 7.2.0"}}),	-- Rethu's Incessant Courage
+							r(239415, {["timeline"]={"added 7.2.0"}}),	-- Rethu's Incessant Courage (RECIPE!)
 						},
 					}),
 				}),

@@ -6,58 +6,6 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(164, {	-- Blacksmithing
 	filter(RECIPES, {
 		{
-			["name"] = "Training",
-			["categoryID"] = 424,
-			["hash"] = "categoryID424",
-			["g"] = {
-				{
-					["name"] = "Empyrial Back Plate",
-					["hash"] = "recipeID248869",
-					["recipeID"] = 248869
-				},
-				{
-					["name"] = "Empyrial Breastplate",
-					["hash"] = "recipeID248870",
-					["recipeID"] = 248870
-				},
-				{
-					["name"] = "Empyrial Chest Plate",
-					["hash"] = "recipeID248867",
-					["recipeID"] = 248867
-				},
-				{
-					["name"] = "Empyrial Rivets",
-					["hash"] = "recipeID248864",
-					["recipeID"] = 248864
-				},
-				{
-					["name"] = "Handmade Leystone Helm",
-					["hash"] = "recipeID184345",
-					["recipeID"] = 184345
-				},
-				{
-					["name"] = "Leystone Dome",
-					["hash"] = "recipeID184342",
-					["recipeID"] = 184342
-				},
-				{
-					["name"] = "Leystone Faceguard",
-					["hash"] = "recipeID184341",
-					["recipeID"] = 184341
-				},
-				{
-					["name"] = "Leystone Neckplate",
-					["hash"] = "recipeID184343",
-					["recipeID"] = 184343
-				},
-				{
-					["name"] = "Leystone Slag",
-					["hash"] = "recipeID183278",
-					["recipeID"] = 183278
-				},
-			}
-		},
-		{
 			["name"] = "Shadowlands Plans",
 			["categoryID"] = 1311,
 			["hash"] = "categoryID1311",
@@ -1840,44 +1788,6 @@ profession(164, {	-- Blacksmithing
 						}
 					}
 				},
-				{
-					["name"] = "Armor",
-					["categoryID"] = 427,
-					["hash"] = "categoryID427",
-					["g"] = {
-						{
-							["name"] = "Empyrial Breastplate",
-							["hash"] = "recipeID247710",
-							["nextRecipeID"] = 247713,
-							["recipeID"] = 247710
-						},
-						{
-							["name"] = "Empyrial Breastplate",
-							["hash"] = "recipeID247713",
-							["nextRecipeID"] = 247714,
-							["previousRecipeID"] = 247710,
-							["recipeID"] = 247713
-						},
-						{
-							["name"] = "Empyrial Breastplate",
-							["hash"] = "recipeID247714",
-							["previousRecipeID"] = 247713,
-							["recipeID"] = 247714
-						},
-					}
-				},
-				{
-					["name"] = "Other",
-					["categoryID"] = 428,
-					["hash"] = "categoryID428",
-					["g"] = {
-						{
-							["name"] = "Felslate Anchor",
-							["hash"] = "recipeID247700",
-							["recipeID"] = 247700
-						},
-					}
-				}
 			}
 		},
 		{

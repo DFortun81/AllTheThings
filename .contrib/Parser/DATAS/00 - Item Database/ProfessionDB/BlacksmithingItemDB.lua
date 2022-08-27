@@ -1410,13 +1410,14 @@ i(0, 247710);	-- Empyrial Breastplate [Rank 1]
 -- ITEMS --
 i(151712, 247713);	-- Empyrial Breastplate [Rank 2]
 i(151713, 247714);	-- Empyrial Breastplate [Rank 3]
+-- Quest --
+i(0, 248869);	-- Empyrial Back Plate
+i(0, 248870);	-- Empyrial Breastplate
+i(0, 248867);	-- Empyrial Chest Plate
+i(0, 248864);	-- Empyrial Rivets
 -- NYI --
 i(151711, 0);	-- Empyrial Breastplate [Rank 1]
 i(151709, 0);	-- Felslate Anchor
-i(0, 248870);	-- Empyrial Breastplate
-i(0, 248864);	-- Empyrial Rivets
-i(0, 248869);	-- Empyrial Back Plate
-i(0, 248867);	-- Empyrial Chest Plate
 
 -----------------
 -- PATCH 8.0.1 --

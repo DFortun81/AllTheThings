@@ -848,6 +848,69 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2] (RECIPE!)
 				},
 			}),
+			-- Rethu's Incessant Courage Questline
+			q(46696, {	-- The Legend of the Four Hammers
+				["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["cost"] = { { "i", 147197, 1 }, },	-- 1x Legends of the Four Hammers
+				["timeline"] = { "added 7.2.0" },
+			}),
+			q(46700, {	-- Armor of the Ancients
+				["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["cost"] = { { "i", 146708, 20 }, },	-- ~20x Ancient Demonsteel Armor
+				["timeline"] = { "added 7.2.0" },
+			}),
+			q(46698, {	-- The Dragonhunter
+				["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 731 },	-- Neltharion's Lair
+				["repeatable"] = true,
+				["cost"] = { { "i", 146704, 1 }, },	-- 1x Red-Hot Draconic Slag
+				["timeline"] = { "added 7.2.0" },
+			}),
+			q(46697, {	-- The Godfighter
+				["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 703, 704, 705 },	-- Halls of Valor
+				["repeatable"] = true,
+				["cost"] = { { "i", 146702, 1 }, },	-- 1x White Lightningsteel
+				["timeline"] = { "added 7.2.0" },
+			}),
+			q(46699, {	-- The Hellslayer
+				["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 806, 807, 808 },	-- Trial of Valor
+				["repeatable"] = true,
+				["cost"] = { { "i", 146706, 1 }, },	-- 1x Frostveined Shale
+				["timeline"] = { "added 7.2.0" },
+			}),
+			q(46701, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" }, }, {	-- Hammer of Forgotten Heroes
+				["sourceQuests"] = {
+					46700,	-- Armor of the Ancients
+					46698,	-- The Dragonhunter
+					46697,	-- The Godfighter
+					46699,	-- The Hellslayer
+				},
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.1, 59.3, BROKEN_SHORE },
+				["repeatable"] = true,
+				["cost"] = {
+					{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
+					{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
+				},
+				["g"] = {
+					i(146714),	-- Hammer of Forgotten Heroes
+				},
+			})),
+			-- 7.3.0
 			q(48055, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Empyrial Strength
 				["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 				["provider"] = { "n", 125341 },	-- Khamir
@@ -858,10 +921,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				},
 				["g"] = {
 					r(247710),	-- Empyrial Breastplate [Rank 1] (RECIPE!)
-					r(248870, {["u"]=TRAINING}),	-- Empyrial Breastplate
-					r(248864, {["u"]=TRAINING}),	-- Empyrial Rivets
 					r(248869, {["u"]=TRAINING}),	-- Empyrial Back Plate
+					r(248870, {["u"]=TRAINING}),	-- Empyrial Breastplate
 					r(248867, {["u"]=TRAINING}),	-- Empyrial Chest Plate
+					r(248864, {["u"]=TRAINING}),	-- Empyrial Rivets
 				},
 			})),
 			q(48053, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Weigh Anchor
@@ -870,7 +933,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					r(247700),	-- Felslate Anchor
+					r(247700),	-- Felslate Anchor (RECIPE!)
 				},
 			})),
 			q(48054, bubbleDownSelf({ ["timeline"] = { "added 7.3.0" } }, {	-- Weigh Anchor
@@ -879,7 +942,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					r(247700),	-- Felslate Anchor
+					r(247700),	-- Felslate Anchor (RECIPE!)
 				},
 			})),
 		})),
