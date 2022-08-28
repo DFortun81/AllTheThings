@@ -1715,6 +1715,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_TABARD"] = {19},
 };
 local function BuildGroups(parent, g)
+	g = g or parent.g;
 	if g then
 		-- Iterate through the groups
 		for _,group in ipairs(g) do
@@ -1722,7 +1723,7 @@ local function BuildGroups(parent, g)
 			group.parent = parent;
 			group.indent = nil;
 			group.back = nil;
-			BuildGroups(group, group.g);
+			BuildGroups(group);
 		end
 	end
 end
@@ -3877,7 +3878,7 @@ local function ResolveSymlinkGroupAsync(group)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
-		BuildGroups(group, group.g);
+		BuildGroups(group);
 		-- auto-expand the symlink
 		ExpandGroupsRecursively(group, true, true);
 		app.DirectGroupUpdate(group);
@@ -14215,17 +14216,23 @@ app.VerifyRecursion = function(group, checked)
 end
 -- Recursively check outwards to find if any parent group restricts the filter for this character
 app.RecursiveGroupRequirementsFilter = function(group)
-	-- if not app.VerifyRecursion(group) then return; end
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 		local filterParent = group.sourceParent or group.parent;
 		if filterParent then
 			return app.RecursiveGroupRequirementsFilter(filterParent)
 		end
 		return true;
-	-- elseif app.DEBUG_PRINT then
-	-- 	print("FILTERED FROM", app.DEBUG_PRINT)
-	-- 	app.PrintTable(group);
-	-- 	print("--");
+	end
+	return false;
+end
+-- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
+app.RecursiveDirectGroupRequirementsFilter = function(group)
+	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		local filterParent = group.parent;
+		if filterParent then
+			return app.RecursiveGroupRequirementsFilter(filterParent)
+		end
+		return true;
 	end
 	return false;
 end
@@ -14276,6 +14283,7 @@ app.CleanSourceIgnoredGroups = function(groups)
 end
 
 -- Processing Functions
+do
 local function SetGroupVisibility(parent, group)
 	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
 	local forceShowParent;
@@ -14425,6 +14433,7 @@ local function UpdateGroup(parent, group, window)
 	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
 	-- if app.DEBUG_PRINT == 134 then app.DEBUG_PRINT = nil; end
 end
+app.UpdateGroup = UpdateGroup;
 UpdateGroups = function(parent, g, window)
 	if g then
 		for _,group in ipairs(g) do
@@ -14442,6 +14451,7 @@ UpdateGroups = function(parent, g, window)
 		end
 	end
 end
+app.UpdateGroups = UpdateGroups;
 -- Adjusts the progress/total of the group's parent chain
 local function AdjustParentProgress(group, progChange, totalChange)
 	-- rawget, .parent will default to sourceParent in some cases
@@ -14458,10 +14468,6 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		AdjustParentProgress(parent, progChange, totalChange);
 	end
 end
-app.UpdateGroup = UpdateGroup;
-app.UpdateGroups = UpdateGroups;
-app.SetThingVisibility = SetThingVisibility;
-app.SetGroupVisibility = SetGroupVisibility;
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group, window)
 	group.total = 0;
@@ -14489,8 +14495,7 @@ app.TopLevelUpdateGroup = TopLevelUpdateGroup;
 -- and was the cause for the update
 local function DirectGroupUpdate(group, got)
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
-	local parent = rawget(group, "parent");
-	if parent and not app.RecursiveGroupRequirementsFilter(group) then
+	if not app.RecursiveDirectGroupRequirementsFilter(group) then
 		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent.text)
 		return;
 	end
@@ -14514,6 +14519,7 @@ local function DirectGroupUpdate(group, got)
 	end
 	if group.OnUpdate then group.OnUpdate(group); end
 	-- Set proper visibility for the updated group
+	local parent = rawget(group, "parent");
 	if group.g then
 		SetGroupVisibility(parent, group);
 	else
@@ -14532,6 +14538,7 @@ local function DirectGroupUpdate(group, got)
 	end
 end
 app.DirectGroupUpdate = DirectGroupUpdate;
+end -- Processing Functions
 
 -- Helper Methods
 -- The following Helper Methods are used when you obtain a new appearance.
@@ -14918,54 +14925,6 @@ local function CreateMinimapButton()
 	return button;
 end
 app.CreateMinimapButton = CreateMinimapButton;
-
--- Panel Class Library
-(function()
--- Shared Panel Functions
-local function OnCloseButtonPressed(self)
-	self:GetParent():Hide();
-end
-local function SetVisible(self, show, forceUpdate)
-	if show then
-		self:Show();
-		-- apply window position from profile
-		app.Settings.SetWindowFromProfile(self.Suffix);
-		self:Update(forceUpdate);
-	else
-		self:Hide();
-	end
-end
-local function Toggle(self, forceUpdate)
-	return SetVisible(self, not self:IsVisible(), forceUpdate);
-end
-
-app.Windows = {};
-app._UpdateWindows = function(force, got)
-	-- app.PrintDebug("_UpdateWindows",force,got)
-	app._LastUpdateTime = GetTimePreciseSec();
-	app.FunctionRunner.SetPerFrame(1);
-	local Run = app.FunctionRunner.Run;
-	for _,window in pairs(app.Windows) do
-		Run(window.Update, window, force, got);
-	end
-end
-function app:UpdateWindows(force, got)
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
-end
-app._RefreshWindows = function()
-	-- app.PrintDebug("_RefreshWindows")
-	for _,window in pairs(app.Windows) do
-		window:Refresh();
-	end
-end
-function app:RefreshWindows()
-	-- no need to update windows when a refresh is pending
-	if app.refreshDataQueued then return; end
-	AfterCombatOrDelayedCallback(app._RefreshWindows, 0.1);
-end
-local CreateRow;
 function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
@@ -15382,6 +15341,53 @@ function app:CreateMiniListForGroup(group)
 	popout:Toggle(true);
 	return popout;
 end
+
+-- Panel Class Library
+(function()
+-- Shared Panel Functions
+local function OnCloseButtonPressed(self)
+	self:GetParent():Hide();
+end
+local function SetVisible(self, show, forceUpdate)
+	if show then
+		self:Show();
+		-- apply window position from profile
+		app.Settings.SetWindowFromProfile(self.Suffix);
+		self:Update(forceUpdate);
+	else
+		self:Hide();
+	end
+end
+local function Toggle(self, forceUpdate)
+	return SetVisible(self, not self:IsVisible(), forceUpdate);
+end
+
+app.Windows = {};
+app._UpdateWindows = function(force, got)
+	-- app.PrintDebug("_UpdateWindows",force,got)
+	app._LastUpdateTime = GetTimePreciseSec();
+	app.FunctionRunner.SetPerFrame(1);
+	local Run = app.FunctionRunner.Run;
+	for _,window in pairs(app.Windows) do
+		Run(window.Update, window, force, got);
+	end
+end
+function app:UpdateWindows(force, got)
+	-- no need to update windows when a refresh is pending
+	if app.refreshDataQueued then return; end
+	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
+end
+app._RefreshWindows = function()
+	-- app.PrintDebug("_RefreshWindows")
+	for _,window in pairs(app.Windows) do
+		window:Refresh();
+	end
+end
+function app:RefreshWindows()
+	-- no need to update windows when a refresh is pending
+	if app.refreshDataQueued then return; end
+	AfterCombatOrDelayedCallback(app._RefreshWindows, 0.1);
+end
 local function ClearRowData(self)
 	self.ref = nil;
 	self.Background:Hide();
@@ -15536,6 +15542,7 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
+local CreateRow;
 local function Refresh(self)
 	if not app.IsReady or not self:IsVisible() then return; end
 	-- app.PrintDebug("Refresh:",self.Suffix)
@@ -16951,8 +16958,8 @@ local function UpdateWindow(self, force, got)
 			self.data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and self:IsVisible())) then
-				-- app.PrintDebug("UpdateGroups",self.Suffix)
-				TopLevelUpdateGroup(self.data, self);
+				-- app.PrintDebug("TopLevelUpdateGroup",self.Suffix)
+				app.TopLevelUpdateGroup(self.data, self);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
 			end
@@ -17023,7 +17030,7 @@ local function BuildData(self)
 	local data = self.data;
 	if data then
 		-- app.PrintDebug("Window:BuildData",self.Suffix,data.text)
-		BuildGroups(data, data.g);
+		BuildGroups(data);
 	end
 end
 local backdrop = {
@@ -18861,7 +18868,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.indent = 0;
 	self.data.back = 1;
 	BuildGroups(self.data, self.data.g);
-	TopLevelUpdateGroup(self.data, self);
+	app.TopLevelUpdateGroup(self.data, self);
 	self.data.visible = true;
 	self:BaseUpdate(true);
 end;
@@ -19911,7 +19918,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 			self:SetData(db);
 		end
 		self:BuildData();
-		TopLevelUpdateGroup(self.data, self);
+		app.TopLevelUpdateGroup(self.data, self);
 		self:BaseUpdate(true);
 	end
 end;
@@ -22410,7 +22417,7 @@ app.LoadDebugger = function()
 		-- Update the window and all of its row data
 		self:BaseUpdate(force);
 	end);
-	TopLevelUpdateGroup(debuggerWindow.data, debuggerWindow);
+	app.TopLevelUpdateGroup(debuggerWindow.data, debuggerWindow);
 	debuggerWindow:Show();
 	app.LoadDebugger = function()
 		debuggerWindow:Toggle();
@@ -22686,7 +22693,7 @@ app.ProcessAuctionData = function()
 		return (b.priority or 0) > (a.priority or 0);
 	end);
 	BuildGroups(window.data, window.data.g);
-	TopLevelUpdateGroup(window.data, window);
+	app.TopLevelUpdateGroup(window.data, window);
 	window:Show();
 	window:Update();
 end
