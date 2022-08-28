@@ -22,6 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 		}),
 		n(FACTIONS, {
+			faction(2464),	-- Court of Night
 			faction(2465, {	-- The Wild Hunt
 				ach(14337),	-- The Wild Hunt
 			}),

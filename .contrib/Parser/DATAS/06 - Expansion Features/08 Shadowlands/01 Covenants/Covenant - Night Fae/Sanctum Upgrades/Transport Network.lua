@@ -21,6 +21,12 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 							},
 						}),
+						n(FACTIONS, {
+							faction(2463, {	-- Marasmius
+								["crs"] = { 167455 },	-- Marasmius
+								["maps"] = { 1819 },	-- Fungal Terminus
+							}),
+						}),
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(63073, {	-- A Mycelial Network

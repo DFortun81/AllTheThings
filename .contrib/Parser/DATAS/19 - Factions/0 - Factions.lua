@@ -225,42 +225,6 @@ _.Factions =
 	}),
 	tier(SL_TIER, {
 		--faction(2480),	-- Automa (NYI)
-		faction(2464),	-- Court of Night
-		faction(2463, {	-- Marasmius
-			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
-			["crs"] = { 167455 },	-- Marasmius
-			["maps"] = { 1819 },	-- Fungal Terminus
-		}),
-		faction(2462, {	-- Stitchmasters
-			["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
-		}),
-		faction(2439),	-- The Avowed
-		faction(2445, {	-- The Ember Court (Venthyr)
-			["customCollect"] = { "SL_COV_VEN" },
-			["crs"] = { 165399 },	-- Lord Garridan (when selecting Guests for Ember Court)
-			["maps"] = {
-				REVENDRETH,
-				1644,	-- Ember Court (scenario)
-			},
-			["g"] = sharedData({ ["customCollect"] = { "SL_COV_VEN" } },{
-				faction(2450),	-- Alexandros Mograine
-				faction(2446),	-- Baroness Vashj
-				faction(2454),	-- Choofa
-				faction(2455),	-- Cryptkeeper Kassir
-				faction(2456),	-- Droman Aliothe
-				faction(2457),	-- Grandmaster Vole
-				faction(2451),	-- Hunt-Captain Korayn
-				faction(2458),	-- Kleia and Pelagos
-				faction(2447),	-- Lady Moonberry
-				faction(2448),	-- Mikanikos
-				faction(2461),	-- Plague Deviser Marileth
-				faction(2452),	-- Polemarch Adrestes
-				faction(2453),	-- Rendle and Cudgelface
-				faction(2459),	-- Sika
-				faction(2460),	-- Stonehead
-				faction(2449),	-- The Countess
-			}),
-		}),
 		-- faction(2414),	-- Shadowlands (idk what this is)
 	}),
 };
