@@ -250,9 +250,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["isWorldQuest"] = true,
 			}),
 			q(53317, {	-- Dense Storm Silver
-			["isWorldQuest"] = true,
-			["lvl"] = { 50 },
-			["requireSkill"] = MINING,
+				["isWorldQuest"] = true,
+				["lvl"] = { 50 },
+				["requireSkill"] = MINING,
 			}),
 			q(51754, {	-- Dogged Tenacity
 				["isWorldQuest"] = true,
