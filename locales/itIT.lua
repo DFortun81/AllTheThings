@@ -946,8 +946,12 @@ for key,value in pairs({
 	[1738] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1739] = "Syndicate Documents",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1740] = "Documenti della Lega dei Tagliagole",	-- Syndicate Documents
+	[1761] = "Hillsbrad Proclamation",	-- Hillsbrad Proclamation	--TODO: This was taken from classic Wowhead
 	[1763] = "WANTED",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "Cassa di Legno Consumata",	-- Worn Wooden Chest
+	[1768] = "Flame of Azel",	-- Flame of Azel	--TODO: This was taken from classic Wowhead
+	[1769] = "Flame of Veraz",	-- Flame of Veraz	--TODO: This was taken from classic Wowhead
+	[1770] = "Flame of Uzel",	-- Flame of Uzel	--TODO: This was taken from classic Wowhead
 	[2008] = "Dangerous!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadavere di un Nano",	-- A Dwarven Corpse
 	[2076] = "Calderone Ribollente",	-- Bubbling Cauldron

@@ -940,8 +940,12 @@ for key,value in pairs({
 	[1738] = "Документы Синдиката",	-- Syndicate Documents
 	[1739] = "Документы Синдиката",	-- Syndicate Documents
 	[1740] = "Документы Синдиката",	-- Syndicate Documents
+	[1761] = "Хилсбрадское официальное объявление",	-- Hillsbrad Proclamation
 	[1763] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
 	[1765] = "Подержанный деревянный сундук",	-- Worn Wooden Chest
+	[1768] = "Пламя Азеля",	-- Flame of Azel
+	[1769] = "Пламя Вераза",	-- Flame of Veraz
+	[1770] = "Пламя Узеля",	-- Flame of Uzel
 	[2008] = "ОПАСНО!",	-- Dangerous!
 	[2059] = "Труп дворфа",	-- A Dwarven Corpse
 	[2076] = "Бурлящий котел",	-- Bubbling Cauldron

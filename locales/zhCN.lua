@@ -954,8 +954,12 @@ for key, value in pairs({
 	[1738] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1739] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1740] = "辛迪加文档",	-- Syndicate Documents
+	[1761] = "希尔斯布莱德宣言",	-- Hillsbrad Proclamation	--TODO: This was taken from classic Wowhead
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
+	[1768] = "埃希尔之焰",	-- Flame of Azel	--TODO: This was taken from classic Wowhead
+	[1769] = "沃拉兹之焰",	-- Flame of Veraz	--TODO: This was taken from classic Wowhead
+	[1770] = "尤基尔之焰",	-- Flame of Uzel	--TODO: This was taken from classic Wowhead
 	[2008] = "危险！",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron

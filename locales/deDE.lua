@@ -952,8 +952,12 @@ for key,value in pairs({
 	[1738] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1739] = "Dokumente des Syndikats",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1740] = "Dokumente des Syndikats",	-- Syndicate Documents
+	[1761] = "Proklamation des Hügellands",	-- Hillsbrad Proclamation
 	[1763] = "GESUCHT",	-- WANTED
 	[1765] = "Abgenutzte Holztruhe",	-- Worn Wooden Chest
+	[1768] = "Flamme von Azel",	-- Flame of Azel
+	[1769] = "Flamme von Veraz",	-- Flame of Veraz
+	[1770] = "Flamme von Uzel",	-- Flame of Uzel
 	[2008] = "Gefährlich!",	-- Dangerous!
 	[2059] = "Eine Zwergenleiche",	-- A Dwarven Corpse
 	[2076] = "Blubbernder Kessel",	-- Bubbling Cauldron
