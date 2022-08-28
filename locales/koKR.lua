@@ -951,8 +951,12 @@ for key,value in pairs({
 	[1738] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1739] = "비밀결사대 문서",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1740] = "비밀결사대 문서",	-- Syndicate Documents
+	[1761] = "힐스브래드 선언문",	-- Hillsbrad Proclamation	--TODO: This was taken from classic Wowhead
 	[1763] = "현상수배!",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "낡은 나무 궤짝",	-- Worn Wooden Chest
+	[1768] = "아젤의 불꽃",	-- Flame of Azel	--TODO: This was taken from classic Wowhead
+	[1769] = "베라즈의 불꽃",	-- Flame of Veraz	--TODO: This was taken from classic Wowhead
+	[1770] = "우젤의 불꽃",	-- Flame of Uzel	--TODO: This was taken from classic Wowhead
 	[2008] = "위험!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "드워프 시체",	-- A Dwarven Corpse
 	[2076] = "끓고 있는 가마솥",	-- Bubbling Cauldron

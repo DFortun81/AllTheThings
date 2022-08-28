@@ -951,8 +951,12 @@ for key,value in pairs({
 	[1738] = "Documentos da Camarilha",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1739] = "Documentos da Camarilha",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
 	[1740] = "Documentos da Camarilha",	-- Syndicate Documents
+	[1761] = "Proclamação de Eira dos Montes",	-- Hillsbrad Proclamation	--TODO: This was taken from classic Wowhead
 	[1763] = "PROCURA-SE",	-- WANTED	--TODO: This was taken from classic Wowhead
 	[1765] = "Baú de Madeira Gasto",	-- Worn Wooden Chest
+	[1768] = "Chama de Azel",	-- Flame of Azel	--TODO: This was taken from classic Wowhead
+	[1769] = "Chama de Veraz",	-- Flame of Veraz	--TODO: This was taken from classic Wowhead
+	[1770] = "Chama de Uzel",	-- Flame of Uzel	--TODO: This was taken from classic Wowhead
 	[2008] = "Perigo!",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "Cadáver Enânico",	-- A Dwarven Corpse
 	[2076] = "Caldeirão Borbulhante",	-- Bubbling Cauldron
