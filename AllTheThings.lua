@@ -23227,7 +23227,7 @@ app.InitDataCoroutine = function()
 				end
 				backups[guid] = character;
 				characterData[guid] = nil;
-				app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid)
+				-- app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid)
 			end
 			app.FunctionRunner.SetPerFrame(1);
 			for _,guid in ipairs(toClean) do
