@@ -645,6 +645,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 62837 },	-- Hopeful News
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 68.4, ORIBOS },
+				["isBreadcrumb"] = true,
 			}),
 			q(62846, {	-- Sanctum Improvements
 				["sourceQuests"] = { 62845 },	-- Bringing It All Together

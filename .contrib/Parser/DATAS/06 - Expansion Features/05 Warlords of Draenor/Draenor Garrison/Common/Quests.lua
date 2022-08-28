@@ -408,13 +408,13 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35840,	-- Intercepting the Orders
+					["sourceQuest"] = 35839,	-- Plans of War (35840 is too far)
 				}),
 				q(35842, {	-- Putting Down the Packleader
 					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35846,	-- Intercepting the Orders
+					["sourceQuest"] = 35845,	-- Plans of War (35846 is too far)
 				}),
 
 			-- The Bane of the Bleeding Hollow

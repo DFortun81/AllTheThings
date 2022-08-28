@@ -433,19 +433,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["_quests"] = { 60895 },
 				}),
 			}),
-			ach(14737, {	-- What Bastion Remembered
-				["altQuests"] = { 59717, 59705 },	-- Things Remembered
-				["g"] = {
-					crit(1),	-- Eridia, Hand of Purity
-					crit(2),	-- Kalisthene
-					crit(3),	-- Chyrus, Paragon of Humility
-					crit(4),	-- Kleia
-					crit(5),	-- Pelagos
-					crit(6),	-- Forgelite Sophone
-					crit(7),	-- Uther
-					crit(8),	-- Mikanikos
-				},
-			}),
 			ach(14768, {	-- What is that Melody?
 				crit(1, {		-- Hymn of Purity
 					["description"] = "Triangular stacks of bundled scrolls, often found on tables and benches.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Purity.  Part of this temple is full of elite mobs.",

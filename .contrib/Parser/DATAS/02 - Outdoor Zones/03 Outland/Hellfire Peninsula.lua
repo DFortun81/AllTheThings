@@ -2887,11 +2887,11 @@ root("Zones", {
 					n(18991, {	-- Aresella <Medic>
 						["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
 							i(22012),	-- Master First Aid - Doctor in the House
-						},
+						}),
 					}),
 					n(18267, {	-- Battlecryer Blackeye
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
@@ -2950,11 +2950,11 @@ root("Zones", {
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
 							i(22012),	-- Master First Aid - Doctor in the House
-						},
+						}),
 					}),
 					n(16585, {	-- Cookie One-Eye <Food & Drink>
 						["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },

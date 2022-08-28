@@ -141,8 +141,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 				["races"] = HORDE_ONLY,
 			}),
-			a(q(51178)),	-- Hundred Troll Holdout (A)
-			h(q(51232)),	-- Hundred Troll Holdout (H)
+			a(q(51178, { -- Hundred Troll Holdout (A)
+				ach(13035),	-- By de Power of de Loa!
+			})),
+			h(q(51232, { -- Hundred Troll Holdout (H)
+				ach(13035),	-- By de Power of de Loa!
+			})),
 			q(51305),	-- Jelly Clouds (possibly NYI?)
 			q(50859),	-- Kandak
 			q(50869),	-- Kiboku

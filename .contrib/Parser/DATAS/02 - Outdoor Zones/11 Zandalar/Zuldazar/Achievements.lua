@@ -31,12 +31,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 				}
 			}),
-			ach(13035, {	-- By de Power of de Loa!
-				["altQuests"] = {
-					51178,	-- Hundred Troll Holdout (A)
-					51232,	-- Hundred Troll Holdout (H)
-				},
-			}),
 			ach(12480, {	-- A Bargain of Blood
 				["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 				["races"] = HORDE_ONLY,

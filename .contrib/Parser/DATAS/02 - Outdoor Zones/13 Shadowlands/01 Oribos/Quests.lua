@@ -22,6 +22,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				}),
 				q(65649, {	-- A New Deal
 					["provider"] = { "n", 168011 },	-- Zo'sorg
+					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
 					["coord"] = { 35.6, 57.5, ORIBOS },
 					["isWeekly"] = true,
 					["timeline"] = { "added 9.2.0" },
@@ -31,6 +32,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(188775),	-- Cosmic Gladiator's Eternal Aegis
 						i(188524),	-- Cosmic Gladiator's Fastidious Resolve
 						i(188766),	-- Cosmic Gladiator's Resonator
+						currency(1792),	-- Honor
 					},
 				}),
 				q(64304, {	-- New Opportunities Await
@@ -224,7 +226,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 40.5, 65.9, ORIBOS },
 			}),
 			q(64942, {	-- Call of the Primus
-				--["sourceQuests"] = {},
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance (last quest auto-completed via Korthia skip, may not actually require this far)
 				["provider"] = { "n", 181655 },	-- The Primus
 				["coord"] = { 32.6, 51, 2042 },
 				["timeline"] = { "added 9.2.0" },

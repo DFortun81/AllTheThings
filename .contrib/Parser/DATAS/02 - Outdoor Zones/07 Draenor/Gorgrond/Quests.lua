@@ -759,13 +759,21 @@ _.Zones =
 						["provider"] = { "n", 83569 },	-- Rexxar
 						["coord"] = { 46.0, 54.7, GORGROND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+						["sourceQuests"] = {
+							35870,	-- Basilisk Butcher
+							35730,	-- Cauterizing Wounds
+							35026,	-- On the Mend
+						},
 					}),
 					q(35036,  {	-- Is This One of Yours? (H)
 						["provider"] = { "n", 83569 },	-- Rexxar
 						["coord"] = { 46.0, 54.7, GORGROND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35730,	-- Cauterizing Wounds
+						["sourceQuests"] = {
+							35870,	-- Basilisk Butcher
+							35730,	-- Cauterizing Wounds
+							35026,	-- On the Mend
+						},
 					}),
 					q(34702,  {	-- Krav'ogra
 						["provider"] = { "n", 79331 },	-- Beatface
@@ -1207,7 +1215,7 @@ _.Zones =
 							35035,	-- Seedbearers of Bad News
 						},
 					}),
-					q(35038, {	-- What the Bony Xuk?	-- also requires On The Mend and Basilisk Butcher?
+					q(35038, {	-- What the Bony Xuk?
 						["provider"] = { "n", 84743 },	-- Bony Xuk
 						["coord"] = { 46.1, 55.0, GORGROND },
 						["sourceQuest"] = 35036,	-- Is This One of Yours?

@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 51714 },	-- Mission from the King
+							["sourceQuests"] = { 53332 },	-- Time for War (51714 was too far)
 						}),
 						q(51571, {	-- Foothold: Nazmir
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118

@@ -508,7 +508,7 @@ _.Zones =
 				q(40883, {	-- Fate of the Guard
 					["coord"] = { 27.8, 21.1, SURAMAR },
 					["provider"] = { "n", 101766 },	-- Thalrenus Rivertree
-					["sourceQuest"] = 42230,	-- The Valewalker's Burden
+					["sourceQuest"] = 42228,	-- The Hidden City (42230 was too far)
 				}),
 				q(45372, {	-- Fate of the Nightborne
 					["coord"] = { 36.6, 45.1, SURAMAR },

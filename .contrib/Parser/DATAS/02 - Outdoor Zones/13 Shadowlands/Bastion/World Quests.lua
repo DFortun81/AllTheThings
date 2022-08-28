@@ -105,8 +105,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["requireSkill"] = TAILORING,
 			}),
 			q(61791),	-- Thenia's Loyal Companions
-			q(59717),	-- Things Remembered
-			q(59705),	-- Things Remembered
+			q(59717, { -- Things Remembered
+				ach(14737, {	-- What Bastion Remembered
+					crit(1),	-- Eridia, Hand of Purity
+					crit(2),	-- Kalisthene
+					crit(3),	-- Chyrus, Paragon of Humility
+					crit(4),	-- Kleia
+					crit(5),	-- Pelagos
+					crit(6),	-- Forgelite Sophone
+					crit(7),	-- Uther
+					crit(8),	-- Mikanikos
+				}),
+			}),
+			q(59705, { -- Things Remembered
+				["sym"] = {{"select","achievementID",14737}},	-- What Bastion Remembered
+			}),
 			q(62241),	-- Training Regimen
 			q(59680),	-- Vesiphone's Vicious Vesper
 			q(59585),	-- We'll Make an Aspirant Out of You

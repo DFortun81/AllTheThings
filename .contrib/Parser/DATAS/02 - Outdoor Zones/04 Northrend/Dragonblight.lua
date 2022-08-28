@@ -719,7 +719,7 @@ root("Zones", {
 					}),
 					q(12789, {	-- Into the Breach!
 						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
-						-- ["altQuests"] = { 12770 },	-- Reallocating Resources -- TODO: confirm this
+						["altQuests"] = { 12770 },	-- Reallocating Resources -- TODO: confirm this
 						["qg"] = 28228,	-- Crusader Valus
 						["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 						["isBreadcrumb"] = true,
@@ -1392,7 +1392,7 @@ root("Zones", {
 							un(REMOVED_FROM_GAME, i(44596)),	-- Wrynn's Legplates of Carnage
 						},
 					}),
-					
+
 					q(13257, {	-- Herald of War
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["sourceQuest"] = 13242,	-- Darkness Stirs

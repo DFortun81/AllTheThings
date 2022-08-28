@@ -3142,7 +3142,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(42740, {	-- The Battle for Broken Shore
-					-- CRIEVE NOTE: Perhaps move this and related quests/things to the World Events section?
+					-- CRIEVE NOTE: Perhaps move this and related quests/things to the Expansion Features section?
 					-- Also find the right mapID for the scenario.
 					["qg"] = 108916,	-- Knight Dameron
 					["sourceQuest"] = 42782,	-- To Be Prepared

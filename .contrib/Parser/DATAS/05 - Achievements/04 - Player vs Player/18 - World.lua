@@ -4,18 +4,6 @@
 
 root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_WORLD, {
-		ach(13429, {	-- Azerfighter
-			["maps"] = {
-				STORMSONG_VALLEY,
-				NAZMIR,
-			},
-			["altQuests"] = {
-				53768,	-- Furious Fracas (Faction Assault WQ) (A)
-				53769,	-- Furious Fracas (Faction Assault WQ) (H)
-				54539,	-- Skirmish at the Span (Faction Assault WQ) (A)
-				54538,	-- Skirmish at the Span (Faction Assault WQ) (H)
-			},
-		}),
 		ach(12605, {	-- Conqueror of Azeroth (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {

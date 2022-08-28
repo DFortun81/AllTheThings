@@ -323,12 +323,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					{ 33.4, 61.5, NAZMIR },	-- q(53421),
 				},
 			}),
-			ach(13023, {	-- It's Really Getting Out of Hand
-				["altQuests"] = {
-					51127,	-- Getting Out of Hand (A)
-					50559,	-- Getting Out of Hand (H)
-				},
-			}),
 			ach(13048, {	-- Life Finds a Way... To Die!
 				["collectible"] = false,
 				["g"] = {

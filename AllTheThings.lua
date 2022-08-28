@@ -6715,6 +6715,9 @@ local function ExportData(group)
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
 	end
 end
+
+-- Refresh Functions
+do
 local function RefreshSavesCallback()
 	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
 	app.refreshingSaves = app.refreshingSaves or 30;
@@ -6903,139 +6906,139 @@ local function RefreshAppearanceSources()
 end
 app.RefreshAppearanceSources = RefreshAppearanceSources;
 local function RefreshCollections()
-	StartCoroutine("RefreshingCollections", function()
-		app.print(L["REFRESHING_COLLECTION"]);
-		while InCombatLockdown() do coroutine.yield(); end
+	app.print(L["REFRESHING_COLLECTION"]);
+	while InCombatLockdown() do coroutine.yield(); end
 
-		-- Harvest Illusion Collections
-		local collectedIllusions = ATTAccountWideData.Illusions;
-		for _,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
-			if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
+	-- Harvest Illusion Collections
+	local collectedIllusions = ATTAccountWideData.Illusions;
+	for _,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
+		if rawget(illusion, "isCollected") then rawset(collectedIllusions, illusion.sourceID, 1); end
+	end
+	coroutine.yield();
+
+	-- Harvest Title Collections
+	local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
+	for i=1,GetNumTitles(),1 do
+		if IsTitleKnown(i) then
+			if not acctTitles[i] then print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i)) end
+			rawset(charTitles, i, 1);
 		end
-		coroutine.yield();
+	end
+	app.CurrentCharacter.Titles = charTitles;
+	coroutine.yield();
 
-		-- Harvest Title Collections
-		local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
-		for i=1,GetNumTitles(),1 do
-			if IsTitleKnown(i) then
-				if not acctTitles[i] then print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i)) end
-				rawset(charTitles, i, 1);
-			end
-		end
-		app.CurrentCharacter.Titles = charTitles;
-		coroutine.yield();
-
-		-- Refresh Mounts / Pets
-		local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-		local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-		for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID then
-				if isCollected then
-					if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
-					rawset(charSpells, spellID, 1);
-				else
-					rawset(charSpells, spellID, nil);
-				end
-			end
-		end
-		coroutine.yield();
-
-		-- Refresh Factions
-		local Search = app.SearchForObject;
-		local faction;
-		wipe(app.CurrentCharacter.Factions);
-		for factionID,_ in pairs(fieldCache["factionID"]) do
-			faction = Search("factionID", factionID);
-			-- simply reference the .saved property of each known Faction to re-calculate the character value
-			if faction and faction.saved then end
-		end
-		coroutine.yield();
-
-		-- Harvest Item Collections that are used by the addon.
-		app:GetDataCache();
-		coroutine.yield();
-
-		-- Refresh Toys from Cache
-		local acctToys = ATTAccountWideData.Toys;
-		for id,_ in pairs(fieldCache["toyID"]) do
-			if PlayerHasToy(id) then
-				if not acctToys[id] then print("Added Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
-				rawset(acctToys, id, 1);
+	-- Refresh Mounts / Pets
+	local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
+	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
+	for _,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+		if spellID then
+			if isCollected then
+				if not acctSpells[spellID] then print("Added Mount",app:Linkify(spellID,app.Colors.ChatLink,"search:spellID:"..spellID)) end
+				rawset(charSpells, spellID, 1);
 			else
-				-- remove Toys that the account doesnt actually have
-				if acctToys[id] then print("Removed Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
-				acctToys[id] = nil;
+				rawset(charSpells, spellID, nil);
 			end
 		end
-		coroutine.yield();
+	end
+	coroutine.yield();
 
-		-- Refresh RuneforgeLegendaries from Cache
-		local acctRFLs = ATTAccountWideData.RuneforgeLegendaries;
-		local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-		local state;
-		for id,_ in pairs(fieldCache["runeforgePowerID"]) do
-			state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
-			if state == 0 then
-				if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-				rawset(acctRFLs, id, 1);
-			else
-				-- remove RFLs that the account doesnt actually have
-				if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
-				acctRFLs[id] = nil;
-			end
-		end
-		coroutine.yield();
+	-- Refresh Factions
+	local Search = app.SearchForObject;
+	local faction;
+	wipe(app.CurrentCharacter.Factions);
+	for factionID,_ in pairs(fieldCache["factionID"]) do
+		faction = Search("factionID", factionID);
+		-- simply reference the .saved property of each known Faction to re-calculate the character value
+		if faction and faction.saved then end
+	end
+	coroutine.yield();
 
-		-- Refresh Achievements
-		RefreshAchievementCollection();
-		coroutine.yield();
+	-- Harvest Item Collections that are used by the addon.
+	app:GetDataCache();
+	coroutine.yield();
 
-		-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-		local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
-		for questID,questGuid in pairs(oneTimeQuests) do
-			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
-			if CompletedQuests[questID] then
-				-- Throw up a warning to report if this was already completed by another character
-				if questGuid and questGuid ~= charGuid then
-					app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
-				end
-				-- Mark the quest as completed for the Account
-				acctQuests[questID] = 1;
-				-- Mark the character which completed the Quest
-				oneTimeQuests[questID] = charGuid;
-			end
-		end
-		coroutine.yield();
-
-		app:RecalculateAccountWideData();
-
-		-- Refresh Sources from Cache if tracking Transmog
-		if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
-			RefreshAppearanceSources();
-		end
-		coroutine.yield();
-
-		-- Need to update the Settings window as well if User does not have auto-refresh for Settings
-		if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
-			app.Settings:UpdateMode("FORCE");
+	-- Refresh Toys from Cache
+	local acctToys = ATTAccountWideData.Toys;
+	for id,_ in pairs(fieldCache["toyID"]) do
+		if PlayerHasToy(id) then
+			if not acctToys[id] then print("Added Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
+			rawset(acctToys, id, 1);
 		else
-			app:RefreshData(false, false, true);
+			-- remove Toys that the account doesnt actually have
+			if acctToys[id] then print("Removed Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
+			acctToys[id] = nil;
 		end
+	end
+	coroutine.yield();
 
-		-- Wait for refresh to actually finish
-		while app.refreshDataQueued do coroutine.yield(); end
+	-- Refresh RuneforgeLegendaries from Cache
+	local acctRFLs = ATTAccountWideData.RuneforgeLegendaries;
+	local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
+	local state;
+	for id,_ in pairs(fieldCache["runeforgePowerID"]) do
+		state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
+		if state == 0 then
+			if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+			rawset(acctRFLs, id, 1);
+		else
+			-- remove RFLs that the account doesnt actually have
+			if acctRFLs[id] then print("Removed Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end
+			acctRFLs[id] = nil;
+		end
+	end
+	coroutine.yield();
 
-		-- Report success.
-		app.print(L["DONE_REFRESHING"]);
-	end);
+	-- Refresh Achievements
+	RefreshAchievementCollection();
+	coroutine.yield();
+
+	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
+	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
+	for questID,questGuid in pairs(oneTimeQuests) do
+		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
+		if CompletedQuests[questID] then
+			-- Throw up a warning to report if this was already completed by another character
+			if questGuid and questGuid ~= charGuid then
+				app.PrintDebug("One-Time-Quest ID " .. app:Linkify(questID,app.Colors.ChatLink,"search:questID:"..questID) .. " was previously marked as completed, but is also completed on the current character!");
+			end
+			-- Mark the quest as completed for the Account
+			acctQuests[questID] = 1;
+			-- Mark the character which completed the Quest
+			oneTimeQuests[questID] = charGuid;
+		end
+	end
+	coroutine.yield();
+
+	app:RecalculateAccountWideData();
+
+	-- Refresh Sources from Cache if tracking Transmog
+	if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
+		RefreshAppearanceSources();
+	end
+	coroutine.yield();
+
+	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
+	if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
+		app.Settings:UpdateMode("FORCE");
+	else
+		app:RefreshData(false, false, true);
+	end
+
+	-- Wait for refresh to actually finish
+	while app.refreshDataQueued do coroutine.yield(); end
+
+	-- Report success.
+	app.print(L["DONE_REFRESHING"]);
 end
-
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
 end
-app.RefreshCollections = RefreshCollections;
+app.RefreshCollections = function()
+	StartCoroutine("RefreshingCollections", RefreshCollections);
+end
 app.RefreshSaves = RefreshSaves;
+end -- Refresh Functions
 
 
 local npcQuestsCache = {}
@@ -13894,7 +13897,8 @@ local function CurrentCharacterFilters(item)
 	return FilterItemClass_RequiredSkill(item)
 		and FilterItemClass_RequireClasses(item)
 		and FilterItemClass_RequireRaces(item)
-		and FilterItemClass_CustomCollect(item);
+		and FilterItemClass_CustomCollect(item)
+		and FilterItemClass_UnobtainableItem(item);
 end
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
@@ -15901,7 +15905,7 @@ local function RowOnClick(self, button)
 
 					if button == "LeftButton" then
 						-- Default behavior is to Refresh Collections.
-						RefreshCollections();
+						app.RefreshCollections();
 					end
 					return true;
 				end
@@ -23118,11 +23122,7 @@ app.Startup = function()
 	data = GetDataMember("CollectedTitles");
 	if data then accountWideData.Titles = data; end
 	data = GetDataMember("CollectedToys");
-	if data then
-		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
-		if not GetDataMember("ToyCacheRebuilt") then wipe(data); end
-		accountWideData.Toys = data;
-	end
+	if data then accountWideData.Toys = data; end
 
 	-- Clean up settings
 	local oldsettings = {};
@@ -23501,7 +23501,7 @@ app.InitDataCoroutine = function()
 	app.IsReady = true;
 	-- print("ATT is Ready!");
 
-	RefreshSaves();
+	app.RefreshSaves();
 
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- print("Yield prior to Refresh")
@@ -23510,7 +23510,7 @@ app.InitDataCoroutine = function()
 	if needRefresh then
 		-- print("Force Refresh")
 		-- collection refresh includes data refresh
-		RefreshCollections();
+		app.RefreshCollections();
 	else
 		-- print("Refresh")
 		app:RefreshData(false);
@@ -24091,7 +24091,7 @@ end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, now refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	RefreshSaves();
+	app.RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)

@@ -445,6 +445,8 @@ _.ExpansionFeatures =
 						i(122583),	-- Grease Monkey Guide
 						i(114746),	-- Goredrenched Armor Set
 						i(114622),	-- Goredrenched Weaponry
+						i(26045),	-- Halaa Battle Token
+						i(26044),	-- Halaa Research Token
 						i(118475),	-- Hearthstone Strategy Guide
 						i(114822),	-- Heavily Reinforced Armor Enhancement
 						i(128313),	-- Huge Ogre Cache

@@ -404,12 +404,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(64526, {	-- Mysterious Rifts
-				["sourceQuests"] = {	-- TODO: not sure if the prereq is simply Tier 4 research, or if previous relics are required
-					63915,	-- Drum of Driving
-					63917,	-- Everliving Statuette
-					63918,	-- Obelisk of Dark Tidings
-					63916,	-- Sack of Strange Soil
-				},
 				["minReputation"] = { 2472, 14000 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },

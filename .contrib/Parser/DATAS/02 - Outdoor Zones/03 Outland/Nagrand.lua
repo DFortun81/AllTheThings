@@ -2066,7 +2066,12 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(26045, {	-- Halaa Battle Token
-						["description"] = "Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nAs a Level 70, your target must be Level 65+",
+						["description"] =
+						-- #IF ANYCLASSIC
+						"Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nAs a Level 70, your target must be Level 65+",
+						-- #ELSE
+						"Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nThese can also be found as Garrison Mission Rewards.",
+						-- #ENDIF
 					}),
 					i(23608, {	-- Plans: Khorium Belt (RECIPE!)
 						["cr"] = 18203,	-- Murkblood Raider
