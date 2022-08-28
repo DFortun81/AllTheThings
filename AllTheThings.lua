@@ -5190,14 +5190,15 @@ app.BuildSourceParent = function(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
-	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
+	local things = specificSource and { group } or app.CleanSourceIgnoredGroups(app.SearchForLink(groupKey .. ":" .. keyValue));
 	if things then
 		local groupHash = group.hash;
+		local isAchievement = groupKey == "achievementID";
 		-- app.PrintDebug("Found Source things",#things,groupHash)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
-			if thing.hash == groupHash then
+			if thing.hash == groupHash or isAchievement then
 				parent = thing.parent;
 				while parent do
 					-- app.PrintDebug("parent",parent.text,parent.key)
@@ -5207,14 +5208,13 @@ app.BuildSourceParent = function(group)
 						-- or if the parent is directly tied to an NPC
 						if thingKeys[parentKey] or parent.npcID or parent.creatureID then
 							-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
-							if groupKey == "achievementID" then
+							if isAchievement then
+								-- app.PrintDebug("isAchieve:keepSource",keyValue)
 								parent._keepSource = keyValue;
-								if parents then tinsert(parents, parent);
-								else parents = { parent }; end
-							else
-								if parents then tinsert(parents, parent);
-								else parents = { parent }; end
 							end
+							-- add the parent for display later
+							if parents then tinsert(parents, parent);
+							else parents = { parent }; end
 							break;
 						end
 						-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
@@ -14989,6 +14989,9 @@ function app:CreateMiniListForGroup(group)
 		app.BuildSourceParent(group);
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		app.BuildCost(group);
+
+		-- TODO: Crafting Information
+		-- TODO: Lock Criteria
 
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
