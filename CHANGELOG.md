@@ -17,7 +17,7 @@ This is a callout to Quest completionists out there! In this release we have mar
 ### Notable changes:
 
 - Common WoD dungeon boss drops will be shown in dungeon minilists contained in their respective 'equip slot' header (to help distinguish whether there are remaining specific drops vs. common drops from a given boss) (if people find this upsetting we can revert it back, but I thought it would be nice to help distinguish the drops).
-- 'Common Boss Drops' will remain at the top and 'Zone Drops' will be pushed to the end, matching the typical layout for most Zones and making instances like Uldaman and Scarlet Monastery less frightening while farming.
+- 'Common Boss Drops' will remain at the top and 'Zone Drops' will be pushed to the end in the instance mini lists (and only in them, not in the main list or window popouts), matching the typical layout for most Zones and making instances like Uldaman and Scarlet Monastery less frightening while farming.
 - Fixed wrong indentation in some cases.
 - Loading into cities and other big hubs should be less laggy as we will spread loading across more frames.
 - Fixed Achievement Criteria not being filtered by faction or other various data associated with its respective Achievement when the criteria is not directly listed under the Achievement.
