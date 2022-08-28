@@ -1211,7 +1211,7 @@ end
 -- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
 	-- don't create a displayID for groups with a sourceID/itemID already
-	if data.s or data.itemID then return; end
+	if data.s or data.itemID or data.difficultyID then return; end
 	if all then
 		local displayInfo, _ = {};
 		-- specific displayID
@@ -2857,6 +2857,9 @@ local function CreateHash(t)
 					hash = hash .. t.crs[1] .. t.crs[2] .. t.crs[3];
 				end
 			end
+		elseif key == "difficultyID" then
+			local instanceID = GetRelativeValue(t, "instanceID");
+			if instanceID then hash = hash .. "-" .. instanceID; end
 		elseif key == "headerID" then
 			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
 			-- Separate if using Class requirements
@@ -10005,7 +10008,18 @@ local fields = {
 		return "difficultyID";
 	end,
 	["text"] = function(t)
-		return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+		local text = L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+		-- don't follow sourceParent
+		local parent = rawget(t, "parent");
+		local parentInstance = parent and parent.instanceID;
+		if parentInstance then
+			return text;
+		else
+			-- append the name of the Source Instance which contains this diffculty group to help distinguish (LFR Queue NPCs)
+			parentInstance = t.sourceParent;
+			text = sformat("%s [%s]", text, parentInstance and parentInstance.text or UNKNOWN);
+			return text;
+		end
 	end,
 	["icon"] = function(t)
 		return app.DifficultyIcons[t.difficultyID];
