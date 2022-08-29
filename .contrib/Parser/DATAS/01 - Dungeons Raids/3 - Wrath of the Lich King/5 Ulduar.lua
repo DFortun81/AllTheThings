@@ -477,7 +477,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						crit(2),	-- Defeat Algalon the Observer
 					}),
 					ach(3316, {	-- Herald of the Titans
+						-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
+						-- #IF AFTER SHADOWLANDS
 						["lockCriteria"] = { 1, "lvl", 31 },
+						-- #ENDIF
 						["g"] = {
 							title(131),	-- , Herald of the Titans
 						},
