@@ -562,7 +562,8 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 1, BACK},
 								{"sub", "common_wod_dungeon_drop", 1, NECK},
 								{"sub", "common_wod_dungeon_drop", 1, FINGER},
-								{"is", "itemID"},
+								{"pop"},	-- Get the raw Items from each slot header
+								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
 						}),
 						i(119037, {	-- Supply of Storied Rarities [16]
@@ -579,6 +580,8 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 2, BACK},
 								{"sub", "common_wod_dungeon_drop", 2, NECK},
 								{"sub", "common_wod_dungeon_drop", 2, FINGER},
+								{"pop"},	-- Get the raw Items from each slot header
+								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
 						}),
 						q(37228, {	-- A Fruitful Proposition
@@ -677,7 +680,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -800,7 +804,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -860,7 +865,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -911,7 +917,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
