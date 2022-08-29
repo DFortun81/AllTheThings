@@ -118,6 +118,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					64958,	-- The Forces Gather
 					65771,	-- Favor of the First Ones
 					65772,	-- Necessary Harvest
+					65768,	-- Our Forward Scouts
 				},
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.6, ZERETH_MORTIS },

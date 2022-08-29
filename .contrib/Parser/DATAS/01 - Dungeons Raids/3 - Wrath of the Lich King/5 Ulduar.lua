@@ -476,6 +476,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						crit(1),	-- Close 3 Black Holes within 10 seconds
 						crit(2),	-- Defeat Algalon the Observer
 					}),
+					ach(3316, {	-- Herald of the Titans
+						["lockCriteria"] = { 1, "lvl", 31 },
+						["g"] = {
+							title(131),	-- , Herald of the Titans
+						},
+					}),
 					i(46052, {	-- Reply-Code Alpha
 						q(13631, {	-- All Is Well That Ends Well
 							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
