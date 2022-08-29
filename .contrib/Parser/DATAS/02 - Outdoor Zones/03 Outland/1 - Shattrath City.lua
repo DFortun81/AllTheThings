@@ -2037,6 +2037,19 @@ root("Zones", {
 								["cost"] = 30000000,	-- 3,000g
 								["timeline"] = { "added 3.3.0.10772" },
 							}),
+							i(38091, {	-- Gold Eternium Band
+								["cost"] = 30000000,	-- 3,000g
+							}),
+							i(37934, {	-- Noble's Elementium Signet
+								["cost"] = 24000000,	-- 2,400g
+							}),
+							i(38089, {	-- Ruby Shades
+								["timeline"] = { "removed 3.0.8" },
+								["cost"] = 20000000,	-- 2,000g
+							}),
+							i(38090, {	-- Sapphire Pinky Ring
+								["cost"] = 6000000,	-- 600g
+							}),
 						},
 					}),
 					-- #if AFTER WRATH
