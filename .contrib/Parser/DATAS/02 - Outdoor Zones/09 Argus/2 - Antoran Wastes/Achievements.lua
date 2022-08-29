@@ -81,11 +81,3 @@ root("Zones", {
 		}),
 	}),
 });
-
-root("HiddenQuestTriggers", {
-	m(905, {	-- Argus
-		m(885, {	-- Antoran Wastes
-			q(49022),	-- It's clearing the rubble in front of "Forgotten Legion Supplies" (object id: 277204)
-		}),
-	}),
-});

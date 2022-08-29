@@ -860,38 +860,26 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
 root(ROOTS.HiddenQuestTriggers, {
-	q(40514),	-- Warlock Order Hall - Revil convinced
-	q(40686),	-- Warlock Order Hall - Affliction chosen first
-	q(40687),	-- Warlock Order Hall - Destruction chosen first
-	q(40688),	-- Warlock Order Hall - Demonology chosen first
-	q(43981),	-- Warlock Order Hall - Affliction chosen second
-	q(43982),	-- Warlock Order Hall - Demonology chosen second
-	q(43983),	-- Warlock Order Hall - Destruction chosen second
-	q(40686),	-- Warlock Order Hall - Affliction chosen third
-	q(44389),	-- Warlock Order Hall - Destruction chosen third
-	q(44390),	-- Warlock Order Hall - Demonology chosen third
-	q(42084),	-- Selecting a Sixth: Kira
-	q(42085),	-- Selecting a Sixth: Lulubelle
-	q(42203),	-- Using Portal to Scenario during Dark Whispers (42125)
-	q(42205),	-- Using Portal to Scenario during Dark Whispers (42125)
-	q(44390),	-- Warlock Order Hall - Demo chosen third
-	q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
-	q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
-	q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
-	q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
-	q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
-	q(44438),	-- Warlock Order Hall - Tracking Quest: New Blood 1
-	q(44439),	-- Warlock Order Hall - Tracking Quest: New Blood 2
-	q(44440),	-- Warlock Order Hall - Tracking Quest: New Blood 3
-	q(44441),	-- Warlock Order Hall - Tracking Quest: New Blood 4
-	q(44442),	-- Warlock Order Hall - Tracking Quest: New Blood 5
-	q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
-	q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
-	q(43678),	-- Destro hidden artifact from ritual of doom
-	q(41154),	-- Attacking Revil Kost During Artifact Quest
+	tier(LEGION_TIER, {
+		q(41154),	-- Attacking Revil Kost During Artifact Quest
+		q(42205),	-- Entrance Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+		q(40514),	-- Revil convinced
+		q(42203),	-- Ritual Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+		q(42084),	-- Selecting a Sixth: Kira
+		q(42085),	-- Selecting a Sixth: Lulubelle
+		q(44655),	-- Tracking Quest: 7.0 Class Hall - Warlock - Pacing Mission 1 - completed the "Searching the Archives" mission
+		q(44656),	-- Tracking Quest: 7.0 Class Hall - Warlock - Pacing Mission 2a
+		q(44657),	-- Tracking Quest: 7.0 Class Hall - Warlock - Tutorial 1 - Information at Any Cost - completed the "Information at any Cost" mission
+		q(44628),	-- Tracking Quest: Empowering the Soul 1 - completed the "The Harpies' Curse" mission
+		q(44629),	-- Tracking Quest: Empowering the Soul 2 - completed the "Bradensbrook Under Attack" mission
+		q(44630),	-- Tracking Quest: Empowering the Soul 3 - completed the "Cleansing the Vale" mission
+		q(44631),	-- Tracking Quest: Empowering the Soul 4 - completed the "Pesky Pest Problem" mission
+		q(44632),	-- Tracking Quest: Empowering the Soul 5 - completed the "Hunting the Hunters" mission
+		q(44438),	-- Tracking Quest: New Blood 1 - completed the "One Who's Worthy" mission
+		q(44439),	-- Tracking Quest: New Blood 2 - completed the "One Who's Worthy" mission
+		q(44440),	-- Tracking Quest: New Blood 3 - completed the "One Who's Worthy" mission
+		q(44441),	-- Tracking Quest: New Blood 4 - completed the "One Who's Worthy" mission
+		q(44442),	-- Tracking Quest: New Blood 5 - completed the "One Who's Worthy" mission
+	}),
 });
--- #endif

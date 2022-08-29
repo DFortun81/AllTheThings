@@ -601,14 +601,31 @@ root("Instances", tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root("HiddenQuestTriggers", tier(LEGION_TIER, {
-	inst(861, {	-- Trial of Valor
-		q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
-		q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
-
-		q(45226),	-- Garb of the Chosen Dead (Normal)
-		q(45230),	-- Chains of the Chosen Dead (Normal)
-		q(45231),	-- Chains of the Chosen Dead (Heroic)
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(45429),	-- Odyn
+		q(46661),	-- Odyn LFR
+		q(46662),	-- Odyn Normal
+		q(46663),	-- Odyn Heroic
+		q(46664),	-- Odyn Mythic
+		q(45430),	-- Guarm
+		q(45208),	-- Guarm Mythic
+		q(45431),	-- Helya
+		--q(xxxxx),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Normal) -- TODO -Darkal
+		q(45223),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Heroic)
+		q(45224),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Mythic)
+		q(45225),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (LFR)
+		q(45226),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Normal)
+		q(45227),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Heroic)
+		q(45228),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Mythic)
+		q(45229),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (LFR)
+		q(45230),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Normal)
+		q(45231),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Heroic)
+		q(45232),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Mythic)
+		q(45233),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (LFR)
+		q(45234),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (Normal)
+		q(45235),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Heroic)
+		q(45236),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Mythic)
+		q(45237),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (LFR)
 	}),
-}));
+});

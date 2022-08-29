@@ -3927,7 +3927,81 @@ root("PVP", pvp(tier(WOTLK_TIER, {
 		}),
 	}),
 })));
-
+-- #if AFTER LEGION
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- PvP Ensembles
+		q(46555),	-- Savage Gladiator's Chain Armor (Hunter)
+		q(46556),	-- Savage Gladiator's Dragonhide Armor (Druid)
+		q(46557),	-- Savage Gladiator's Dreadplate Armor (Death Knight)
+		q(46558),	-- Savage Gladiator's Felweave Armor (Warlock)
+		q(46559),	-- Savage Gladiator's Leather Armor (Rogue)
+		q(46560),	-- Savage Gladiator's Plate Armor (Warrior)
+		q(46561),	-- Savage Gladiator's Ringmail Armor (Shaman)
+		q(46562),	-- Savage Gladiator's Satin Armor (Priest)
+		q(46563),	-- Savage Gladiator's Scaled Armor (Paladin)
+		q(46564),	-- Savage Gladiator's Silk Armor (Mage)
+		q(46566),	-- Deadly Gladiator's Chain Armor (Hunter)
+		q(46567),	-- Deadly Gladiator's Dragonhide Armor (Druid)
+		q(46568),	-- Deadly Gladiator's Dreadplate Armor (Death Knight)
+		q(46569),	-- Deadly Gladiator's Felweave Armor (Warlock)
+		q(46570),	-- Deadly Gladiator's Leather Armor (Rogue)
+		q(46571),	-- Deadly Gladiator's Plate Armor (Warrior)
+		q(46572),	-- Deadly Gladiator's Ringmail Armor (Shaman)
+		q(46573),	-- Deadly Gladiator's Satin Armor (Priest)
+		q(46574),	-- Deadly Gladiator's Scaled Armor (Paladin)
+		q(46575),	-- Deadly Gladiator's Silk Armor (Mage)
+		q(46577),	-- Wrathful Gladiator's Chain Armor (Hunter)
+		q(46578),	-- Wrathful Gladiator's Dragonhide Armor (Druid)
+		q(46579),	-- Wrathful Gladiator's Dreadplate Armor (Death Knight)
+		q(46580),	-- Wrathful Gladiator's Felweave Armor (Warlock)
+		q(46581),	-- Wrathful Gladiator's Leather Armor (Rogue)
+		q(46582),	-- Wrathful Gladiator's Plate Armor (Warrior)
+		q(46583),	-- Wrathful Gladiator's Ringmail Armor (Shaman)
+		q(46584),	-- Wrathful Gladiator's Satin Armor (Priest)
+		q(46585),	-- Wrathful Gladiator's Scaled Armor (Paladin)
+		q(46586),	-- Wrathful Gladiator's Silk Armor (Mage)
+		q(46588),	-- Hateful Gladiator's Chain Armor (Hunter)
+		q(46589),	-- Hateful Gladiator's Dragonhide Armor (Druid)
+		q(46590),	-- Hateful Gladiator's Dreadplate Armor (Death Knight)
+		q(46591),	-- Hateful Gladiator's Felweave Armor (Warlock)
+		q(46592),	-- Hateful Gladiator's Leather Armor (Rogue)
+		q(46593),	-- Hateful Gladiator's Plate Armor (Warrior)
+		q(46594),	-- Hateful Gladiator's Ringmail Armor (Shaman)
+		q(46595),	-- Hateful Gladiator's Satin Armor (Priest)
+		q(46596),	-- Hateful Gladiator's Scaled Armor (Paladin)
+		q(46597),	-- Hateful Gladiator's Silk Armor (Mage)
+		q(46599),	-- Furious Gladiator's Chain Armor (Hunter)
+		q(46600),	-- Furious Gladiator's Dragonhide Armor (Druid)
+		q(46601),	-- Furious Gladiator's Dreadplate Armor (Death Knight)
+		q(46602),	-- Furious Gladiator's Felweave Armor (Warlock)
+		q(46603),	-- Furious Gladiator's Leather Armor (Rogue)
+		q(46604),	-- Furious Gladiator's Plate Armor (Warrior)
+		q(46605),	-- Furious Gladiator's Ringmail Armor (Shaman)
+		q(46606),	-- Furious Gladiator's Satin Armor (Priest)
+		q(46607),	-- Furious Gladiator's Scaled Armor (Paladin)
+		q(46608),	-- Furious Gladiator's Silk Armor (Mage)
+		q(46610),	-- Relentless Gladiator's Chain Armor (Hunter)
+		q(46611),	-- Relentless Gladiator's Dragonhide Armor (Druid)
+		q(46612),	-- Relentless Gladiator's Dreadplate Armor (Death Knight)
+		q(46613),	-- Relentless Gladiator's Felweave Armor (Warlock)
+		q(46614),	-- Relentless Gladiator's Leather Armor (Rogue)
+		q(46615),	-- Relentless Gladiator's Plate Armor (Warrior)
+		q(46616),	-- Relentless Gladiator's Ringmail Armor (Shaman)
+		q(46617),	-- Relentless Gladiator's Satin Armor (Priest)
+		q(46618),	-- Relentless Gladiator's Scaled Armor (Paladin)
+		q(46619),	-- Relentless Gladiator's Silk Armor (Mage)
+		
+		-- PvP Arsenals
+		q(46565),	-- Savage Gladiator's Arsenal
+		q(46576),	-- Deadly Gladiator's Arsenal
+		q(46587),	-- Wrathful Gladiator's Arsenal
+		q(46598),	-- Hateful Gladiator's Arsenal
+		q(46609),	-- Furious Gladiator's Arsenal
+		q(46620),	-- Relentless Gladiator's Arsenal
+	}),
+});
+-- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(WOTLK_TIER, {
 		n(SEASON_DEADLY, {

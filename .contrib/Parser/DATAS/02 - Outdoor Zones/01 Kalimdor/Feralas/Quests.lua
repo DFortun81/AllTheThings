@@ -1104,7 +1104,8 @@ _.Zones =
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
---	Druid
-	q(42078),	-- Ysondre's Seal. If you are druid and done the quest 25398 Sealing the Dream you can reopen the Feralas portal.
-};
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(42078),	-- Ysondre's Seal - if you are druid and done the "Sealing the Dream" (questID 25398) you can reopen the Feralas portal
+	}),
+});

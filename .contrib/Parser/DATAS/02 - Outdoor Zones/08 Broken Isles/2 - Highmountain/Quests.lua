@@ -984,99 +984,21 @@ _.Zones =
 					q(42373),	-- Vengeance for the Stonedark
 					q(39371),	-- Witches of the Sky
 				})),
-	--[[ TODO: These quests will be organized Soon™
-				q(39646),	-- Albino Elderhorn
-				q(41053),	-- Altar of the Eternal Hunt
-				q(40413),	-- Amateur Hunters
-				q(42505),	-- Arcanist Shal'iman
-				q(46182),	-- Battle for Highmountain
-				q(43961),	-- Bestrix
-				q(42417),	-- Bilebrain
-				q(40243),	-- Break Weapon Racks
-				q(40405),	-- Bristlemaul
-				q(39235),	-- Buba
-				q(44311),	-- Burning Plate of the Worldbreaker Available
-				q(44312),	-- Burning Plate of the Worldbreaker Denied
-				q(43960),	-- Cinderwing
-				q(42699),	-- Coura, Master of Arcana
-				q(39994),	-- Crab Rider Grmlrml
-				q(47073),	-- Delivering Lost Knowledge
-				q(40414),	-- Devouring Darkness
-				q(47020),	-- Discipline: Rumblings Near Feltotem
-				q(40186),	-- Drogbar Durability
-				q(39576),	-- Echoes of Deathwing
-				q(39762),	-- Feltotem Warlock
-				q(39430),	-- Flasking for a Favor
-				q(40347),	-- Gurbog da Basher
-				q(39436),	-- Haglands Treasure
-				q(39827),	-- Haglands Treasure
-				q(42233),	-- Highmountain Tribes
-				q(41186),	-- History of Highmountain
-				q(45572),	-- Holding Our Ground
-				q(42286),	-- Houndmaster Stroxis
-				q(42376),	-- Inquisitor Tivos
-				q(43815),	-- Karthax
-				q(41193),	-- Laying to Rest
-				q(44059),	-- Legion Attacks
-				q(38785),	-- Living Leystone Sample
-				q(40406),	-- Luggut the Eggeater
-				q(43956),	-- Lysanis Shadesoul
-				q(38532),	-- Maw of Souls: Hammered By The Storm
-				q(40242),	-- Mellok, Son of Torok
-				q(41188),	-- Neltharion's Lair: Misdirected
-				q(39533),	-- Nogginclobber Arena
-				q(39435),	-- Oubdob da Smasher
-				q(42381),	-- Ox'iloth
-				q(42700),	-- Quin'el, Master of Chillwind
-				q(41540),	-- Rendezvous with the Courier
-				q(42384),	-- Scouting Reports
-				q(40133),	-- Scrap of Pants
-				q(44039),	-- Sea King Tidross
-				q(42698),	-- Selia, Master of Balefire
-				q(39465),	-- Skywhisker Taskmaster
-				q(40175),	-- Sleeping Bear
-				q(40681),	-- Snarf
-				q(46743),	-- Supplies From Highmountain
-				q(41187),	-- Surveying Student
-				q(40184),	-- Tauren Tanning
-				q(40959),	-- The Campaign Begins
-				q(40202),	-- The Final Lessons
-				q(40135),	-- The Freedom to Roam
-				q(38513),	-- The Highmountain Smiths
-				q(38888),	-- The Highmountain Tauren
-				q(38787),	-- The Legend of Rethu Ironhorn
-				q(44671),	-- The Muscle
-				q(41192),	-- The Right Path
-				q(44055),	-- They Have A Pitlord
-				q(42110),	-- To the Summit!
-				q(44035),	-- Torrentius
-				q(47065),	-- Tracking Quest
-				q(39606),	-- Treasures of Deathwing
-				q(38533),	-- Tribal Knowledge
-				q(40423),	-- Unethical Adventurers
-				q(42280),	-- Vorthax
-				q(38786),	-- Where Respect is Due
-				q(47019),	-- Windwalker: Rumblings Near Feltotem
-				q(41761),	-- Winter Moose Roundup
-				--]]
 			}),
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	--q(40473),	-- Tracking Quest - Highmountain Treasure Chest
-	q(43957),	-- Jade Darkhaven
-	q(39991),	-- Being blessed by Cenarius during 40388, was a real quest during beta but turned into an HQT in retail
-};
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(41846),	-- Power in a Vessel
-		q(41684),	-- The Necrodark
-		q(48394),	-- The Necrodark
-		q(41839),	-- The Taken
-		q(41845),	-- The Tribes Must Be Warned
-		q(47811),	-- Whispers from the Shadows
-		q(48395),	-- Whispers from the Shadows
-		q(41883),	-- Whispers from the Shadows
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(40609),	-- 7.0 Highmountain - Vignette - Windripper Peak - Taurson - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing The Beastly Boxer
+		q(40610),	-- 7.0 Highmountain - Vignette - Worm Treasure - Tracking Quest Credit - See Treasure (JLW/RKS). Triggered after killing Treasure Worm
+		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
+		q(39991),	-- Blessing of Cenarius - being blessed by Cenarius during "Huln's War - Shadowsong" (questID 40388)
+		q(43957),	-- Jade Darkhaven
+		q(42571),	-- Shaman Shrine - Highmountain Earth 01
+		q(42572),	-- Shaman Shrine - Highmountain Earth 02
+		q(42578),	-- Shaman Shrine - Highmountain Wind 01
+		q(42579),	-- Shaman Shrine - Highmountain Wind 02
+		q(41246),	-- Snowblind Mesa Phased Terrain Tracking Quest - when Snowblind Mesa phases during "Highmountain Stands" (questID 42512) 
 	}),
 });

@@ -229,13 +229,12 @@ _.Zones =
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 					["coord"] = { 62.7, 39.4, 882 },
 				}),
---[[
-				q(48636),	-- Fueling the Antoran Campaign
---]]
 			}),
 		}),
 	}),
 };
-_.HiddenQuestTriggers = {
-	q(49204),	-- Arriving in Eredath
-};
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(49204),	-- Arriving in Eredath
+	}),
+});

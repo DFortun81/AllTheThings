@@ -2369,6 +2369,218 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- Death Knight	
+		q(40722),	-- Blood Chosen - Blood Artifact chosen first
+		q(40723),	-- Frost Chosen - Frost Artifact chosen first
+		q(40724),	-- Unholy Chosen - Unholy Artifact chosen first
+		q(43965),	-- Blood Chosen - Blood Artifact chosen second
+		q(43966),	-- Frost Chosen - Frost Artifact chosen second
+		q(43967),	-- Unholy Chosen - Unholy Artifact chosen second
+		q(44402),	-- Blood Chosen - Blood Artifact chosen third
+		q(44403),	-- Frost Chosen - Frost Artifact chosen third
+		q(44404),	-- Unholy Chosen - Unholy Artifact chosen third
+		
+		-- Demon Hunter -- TODO -Darkal
+		-- 5 IDs, I can't find the pattern -Darkal
+		q(40817),	-- Twinblades of the Deceiver Chosen - Havoc Artifact chosen first
+		
+		q(40818),	-- Aldrachi Warblades Chosen - first
+
+		q(44380),	-- Havoc Chosen
+		q(44381),	-- Twinblades of the Deceiver Chosen
+		q(44382),	-- Vengeance Chosen
+
+		-- Druid
+		q(40701),	-- Feral Chosen - Feral Artifact chosen first
+		q(40702),	-- Guardian Chosen - Guardian Artifact chosen first
+		q(40703),	-- Restoration Chosen - Restoration Artifact chosen first
+		q(40781),	-- Balance Chosen - Balance Artifact chosen first
+		q(43976),	-- Balance Chosen - Balance Artifact chosen second
+		q(43977),	-- Guardian Chosen - Guardian Artifact chosen second
+		q(43978),	-- Feral Chosen - Feral Artifact chosen second
+		q(43979),	-- Resto Chosen - Restoration Artifact chosen second
+		q(44432),	-- Balance Chosen - Balance Artifact chosen third
+		q(44433),	-- Feral Chosen - Feral Artifact chosen third
+		q(44434),	-- Guardian Chosen - Guardian Artifact chosen third
+		q(44436),	-- Resto Chosen - Restoration Artifact chosen third
+		q(44444),	-- Balance Chosen - Balance Artifact chosen fourth
+		q(44445),	-- Feral Chosen - Feral Artifact chosen fourth
+		q(44446),	-- Guardian Chosen - Guardian Artifact chosen fourth
+		q(44447),	-- Resto Chosen - Resto Artifact chosen fourth
+
+		-- Hunter
+		q(40619),	-- Survival Chosen - Survival Artifact chosen first
+		q(40620),	-- Marksmanship Chosen - Marksmanship Artifact chosen first
+		q(40621),	-- Beast Mastery Chosen - Beast Mastery Artifact chosen first
+		q(44045),	-- Beast Mastery Chosen - Beast Mastery Artifact chosen second
+		q(44046),	-- Marksmanship Chosen - Marksmanship Artifact chosen second
+		q(44047),	-- Survival Chosen - Survival Artifact chosen second
+		q(44367),	-- Beast Mastery Chosen - Beast Mastery Artifact chosen third
+		q(44368),	-- Marksmanship Chosen - Marksmanship Artifact chosen third
+		q(44369),	-- Survival Chosen - Survival Artifact chosen third
+
+		-- Mage
+		q(41079),	-- Arcane Chosen - Arcane Artifact chosen first
+		q(41080),	-- Fire Chosen - Fire Artifact chosen first
+		q(41081),	-- Frost Chosen - Frost Artifact chosen first
+		q(43442),	-- Arcane Chosen - Arcane Artifact chosen second
+		q(43443),	-- Fire Chosen - Fire Artifact chosen second
+		q(43444),	-- Frost Chosen - Frost Artifact chosen second
+		q(44307),	-- Arcane Chosen - Arcane Artifact chosen third
+		q(44308),	-- Fire Chosen - Fire Artifact chosen third
+		q(44309),	-- Frost Chosen - Frost Artifact chosen third
+
+		-- Monk
+		q(40638),	-- Windwalker Chosen - Windwalker Artifact chosen first
+		q(40639),	-- Mistweaver Chosen - Mistweaver Artifact chosen first
+		q(40640),	-- Brewmaster Chosen - Brewmaster Artifact chosen first
+		q(43970),	-- Brewmaster Chosen - Brewmaster Artifact chosen second
+		q(43971),	-- Windwalker Chosen - Windwalker Artifact chosen second
+		q(43972),	-- Mistweaver Chosen - Mistweaver Artifact chosen second
+		q(44427),	-- Brewmaster Chosen - Brewmaster Artifact chosen third
+		q(44428),	-- Mistweaver Chosen - Mistweaver Artifact chosen third
+		q(44429),	-- Windwalker Chosen - Windwalker Artifact chosen third
+
+		-- Paladin
+		q(40409),	-- Ashbringer Chosen - Retribution Artifact chosen first
+		q(40410),	-- Silver Hand Chosen - Holy Artifact chosen first
+		q(40411),	-- Truthguard Chosen - Protection Artifact chosen first
+		q(42495),	-- Ashbringer Chosen - Retribution Artifact chosen first
+		q(42496),	-- Truthguard Chosen - Holy Artifact chosen first
+		q(42497),	-- Silver Hand Chosen - Protection Artifact chosen first
+		q(44064),	-- Holy Chosen - Holy Artifact chosen second
+		q(44065),	-- Protection Chosen - Protection Artifact chosen second
+		q(44066),	-- Retribution Chosen - Retribution Artifact chosen second
+		q(44371),	-- Holy Chosen - Holy Artifact chosen third
+		q(44372),	-- Protection Chosen - Protection Artifact chosen third
+		q(44373),	-- Retribution Chosen - Retribution Artifact chosen third
+
+		-- Priest
+		q(40707),	-- Shadow Chosen - Shadow Artifact chosen first
+		q(40708),	-- Holy Chosen - Holy Artifact chosen first
+		q(40709),	-- Discipline Chosen - Discipline Artifact chosen first
+		q(43939),	-- Shadow Chosen - Shadow Artifact chosen second
+		q(43941),	-- Discipline - Discipline Artifact chosen Chosen second
+		q(43940),	-- Holy Chosen - Holy Artifact chosen second
+		q(44408),	-- Shadow Chosen - Shadow Artifact chosen third
+		q(44409),	-- Discipline Chosen - Discipline Artifact chosen third
+		q(44410),	-- Holy Chosen - Holy Artifact chosen third
+
+		-- Rogue
+		q(40842),	-- Kingslayers Chosen - Assassination Artifact chosen first
+		q(40843),	-- Dreadblades Chosen - Outlaw Artifact chosen first
+		q(40844),	-- Fangs of the Devourer Chosen - Subtlety Artifact chosen first
+		q(44036),	-- Assassination Chosen  - Assassination Artifact chosen second
+		q(44037),	-- Combat Chosen - Outlaw Artifact chosen second
+		q(44038),	-- Subtlety Chosen - Subtlety Artifact chosen second
+		q(44376),	-- Assassination Chosen  - Assassination Artifact chosen third
+		q(44377),	-- Combat Chosen - Outlaw Artifact chosen third
+		q(44378),	-- Subtlety Chosen - Subtlety Artifact chosen third
+
+		-- Shaman
+		q(41328),	-- Enhancement Artifact Chosen - Enhancement Artifact chosen first
+		q(41329),	-- Elemental Artifact Chosen - Elemental Artifact chosen first
+		q(41330),	-- Restoration Artifact Chosen - Restoration Artifact chosen first
+		
+		-- I have all of those 3 on the same character which makes no sense -- TODO -Darkal
+		-- Also I can't find any other 3 IDs for "second or third" -Darkal
+		q(43946),	-- Enhancement Chosen - reported as second
+		q(43947),	-- Elemental Chosen
+		q(43948),	-- Restoration Chosen - reported as third
+
+		-- Warrior
+		q(40580),	-- Protection Chosen - Protection Artifact chosen first
+		q(40581),	-- Fury Chosen - Fury Artifact chosen first
+		q(40582),	-- Arms Chosen - Arms Artifact chosen first
+		q(43950),	-- Fury Chosen - Fury Artifact chosen second
+		q(43952),	-- Arms Chosen - Arms Artifact chosen second
+		q(43953),	-- Protection Chosen - Protection Artifact chosen second
+		q(44418),	-- Fury Chosen - Fury Artifact chosen third
+		q(44419),	-- Arms Chosen - Arms Artifact chosen third
+		q(44420),	-- Protection Chosen - Protection Artifact chosen third
+
+		-- Warlock
+		q(40686),	-- Affliction Chosen - Affliction Artifact chosen first
+		q(40687),	-- Destruction Chosen - Destruction Artifact chosen first
+		q(40688),	-- Demonology Chosen - Demonology Artifact chosen first
+		q(43981),	-- Affliction Chosen - Affliction Artifact chosen second
+		q(43982),	-- Demonology Chosen - Demonology Artifact chosen second
+		q(43983),	-- Destruction Chosen - Destruction Artifact chosen second
+		q(44388),	-- Affliction Chosen - Affliction Artifact chosen third
+		q(44389),	-- Destruction Chosen - Destruction Artifact chosen third
+		q(44390),	-- Demonology Chosen - Demonology Artifact chosen third
+		
+		-- Mage Tower
+		q(45849),	-- Tracking Quest - 3+ Targets Trait Complete - completed "A Gift From The Six" (questID 45862)
+		q(45850),	-- Tracking Quest - AoE Chosen - completed "A Gift From The Six" (questID 45861)
+		q(45851),	-- Dual Boss Trait Complete - completed "A Gift From The Six" (questID 45842)
+		q(45852),	-- Healer Trait Complete - completed "A Gift From The Six" (questID 45864)
+		q(45853),	-- Melee DPS Trait Complete - completed "A Gift From The Six" (questID 45865)
+		q(45854),	-- Ranged DPS Trait Complete - completed "A Gift From The Six" (questID 45866)
+		q(45855),	-- Tank Trait Complete - completed "A Gift From The Six" (questID 45863)
+		
+		-- Hidden Appearance
+		q(43646),	-- Hidden Appearance Unlocked - Blood Death Knight
+		q(43647),	-- Hidden Appearance Unlocked - Frost Death Knight
+		q(43648),	-- Hidden Appearance Unlocked - Unholy Death Knight
+		q(43649),	-- Hidden Appearance Unlocked - Havoc Demon Hunter
+		q(43650),	-- Hidden Appearance Unlocked - Vengeance Demon Hunter
+		q(43651),	-- Hidden Appearance Unlocked - Balance Druid
+		q(43652),	-- Hidden Appearance Unlocked - Feral Druid
+		q(43653),	-- Hidden Appearance Unlocked - Guardian Druid
+		q(43654),	-- Hidden Appearance Unlocked - Restoration Druid
+		q(43655),	-- Hidden Appearance Unlocked - Beast Mastery Hunter
+		q(43656),	-- Hidden Appearance Unlocked - Marksmanship Hunter
+		q(43657),	-- Hidden Appearance Unlocked - Survival Hunter
+		q(43658),	-- Hidden Appearance Unlocked - Arcane Mage
+		q(43659),	-- Hidden Appearance Unlocked - Fire Mage
+		q(43660),	-- Hidden Appearance Unlocked - Frost Mage
+		q(43661),	-- Hidden Appearance Unlocked - Brewmaster Monk
+		q(43662),	-- Hidden Appearance Unlocked - Mistweaver Monk
+		q(43663),	-- Hidden Appearance Unlocked - Windwalker Monk
+		q(43664),	-- Hidden Appearance Unlocked - Holy Paladin
+		q(43665),	-- Hidden Appearance Unlocked - Protection Paladin
+		q(43666),	-- Hidden Appearance Unlocked - Retribution Paladin
+		q(43667),	-- Hidden Appearance Unlocked - Disco Priest
+		q(43668),	-- Hidden Appearance Unlocked - Holy Priest
+		q(43669),	-- Hidden Appearance Unlocked - Shadow Priest
+		q(43670),	-- Hidden Appearance Unlocked - Assassination Rogue
+		q(43671),	-- Hidden Appearance Unlocked - Outlaw Rogue
+		q(43672),	-- Hidden Appearance Unlocked - Subtlety Rogue
+		q(43673),	-- Hidden Appearance Unlocked - Elemental Shaman
+		q(43674),	-- Hidden Appearance Unlocked - Enhancement Shaman
+		q(43675),	-- Hidden Appearance Unlocked - Restoration Shaman
+		q(43676),	-- Hidden Appearance Unlocked - Affliction Warlock
+		q(43677),	-- Hidden Appearance Unlocked - Demonology Warlock
+		q(43678),	-- Hidden Appearance Unlocked - Destruction Warlock
+		q(43679),	-- Hidden Appearance Unlocked - Arms Warrior
+		q(43680),	-- Hidden Appearance Unlocked - Fury Warrior
+		q(43681),	-- Hidden Appearance Unlocked - Protection Warrior
+
+		-- Various
+		q(41263),	-- Oh! So Powerful! - triggered after unholy dk artifact power questline
+		q(44149),	-- Tracking Quest - Looted frost death knight hidden appearance
+		q(44150),	-- Tracking Quest - Looted enhancement shaman hidden appearance
+		q(44151),	-- Tracking Quest - Looted Skull of Nithogg (itemID 140658) - part of the fury warrior hidden appearance
+		q(43559),	-- Triggers when turning in the "Bindings of the Windlord" (questID 43558) just prior to getting outlaw rogue hidden appearance
+		q(45915),	-- Triggers when you do any of "The Folly of Levia Laurence" quests
+		q(47234),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for mage
+		q(46790),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for rogue
+	}),
+});
+-- Fill certain Artifacts into the Arch Achievement which is needed to earn them
+-- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
+root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+	n(PROFESSIONS, {
+		prof(ARCHAEOLOGY, {
+			ach(10603, {	-- A Keen Eye
+				ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
+			}),
+		}),
+	}),
+})));
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
@@ -2418,15 +2630,3 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
-
--- Fill certain Artifacts into the Arch Achievement which is needed to earn them
--- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
-root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
-	n(PROFESSIONS, {
-		prof(ARCHAEOLOGY, {
-			ach(10603, {	-- A Keen Eye
-				ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
-			}),
-		}),
-	}),
-})));

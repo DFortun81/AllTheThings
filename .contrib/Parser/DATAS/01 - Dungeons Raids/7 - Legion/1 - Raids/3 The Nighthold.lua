@@ -13,6 +13,40 @@ _.Instances = { tier(LEGION_TIER, {
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
+			n(WORLD_QUESTS, {
+				q(44934, {	-- The Nighthold: Creepy Crawlers
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44932, {	-- The Nighthold: Ettin Your Foot In The Door
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44937, {	-- The Nighthold: Focused Power
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44935, {	-- The Nighthold: Gilded Guardian
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44938, {	-- The Nighthold: Love Tap
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44939, {	-- The Nighthold: Seeds of Destruction
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44936, {	-- The Nighthold: Supply Routes
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(44933, {	-- The Nighthold: Wailing In The Night
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+			}),
 			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
 					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
@@ -1509,6 +1543,25 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(45318),	-- Skorpyron
+		q(45319),	-- Chronomatic Anomaly
+		q(45320),	-- Triliax
+		q(45321),	-- Spellblade Aluriel
+		q(45322),	-- Tichondrius
+		q(45323),	-- Krosus
+		q(46329),	-- Krosus Normal
+		q(46330),	-- Krosus Heroic
+		q(46331),	-- Krosus Mythic
+		q(45324),	-- High Botanist Tel'arn
+		q(45325),	-- Star Augur Etraeus
+		q(45326),	-- Elisande
+		q(45327),	-- Gul'dan Mythic
+		q(45328),	-- Triggers when the door to Chronomatic Anomaly opens
+		q(46328),	-- Triggers when the port to Elisande is activated
+	}),
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(786, {	-- The Nighthold

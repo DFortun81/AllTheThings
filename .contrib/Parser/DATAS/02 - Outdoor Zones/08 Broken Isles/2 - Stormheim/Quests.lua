@@ -1066,69 +1066,22 @@ _.Zones =
 						["coord"] = { 45.2, 36.8, STORMHEIM },
 					}),
 				})),
-			--[[ TODO: These quests will be organized soon™
-				q(45534, {	-- A Common Enemy
-					["provider"] = { "n", 117394 },	-- Sigryn
-				}),
-				q(40078),	-- A Heavy Burden
-				q(46006),	-- Arkuthaz
-				q(46110),	-- Battle for Stormheim
-				q(40857),	-- Bits and Pieces
-				q(40867),	-- Bubble Baubles
-				q(40540),	-- Come at Me, Brul
-				q(47767),	-- Death Metal Knight
-				q(39125),	-- Demon Destroyer
-				q(47050),	-- Enhancement: Fate of the Tideskorn
-				q(40542),	-- Eyes of Nashal
-				q(40544),	-- Eyes of Nashal
-				q(40543),	-- Eyes of Nashal
-				q(45527),	-- Eyir's Forgiveness
-				q(41167),	-- Fel Fragments
-				q(41158),	-- Fragments of the Fjords
-				q(38607),	-- Gates of Valhallas
-				q(38625),	-- Hook & Sinker
-				q(38630),	-- Horde Kill Squad (Alliance Only)
-				q(38712),	-- Houndmaster Ely
-				q(40865),	-- It's Not Rocket Science
-				q(46949),	-- Jorvild the Trusted
-				q(40166),	-- Leying with Murlocs
-				q(38785),	-- Living Leystone Sample
-				q(38774),	-- Lost Ettin
-				q(38422),	-- Makrura Wave Event
-				q(39944),	-- Mysterious Messages
-				q(44116),	-- Mystery at Citrine Bay
-				q(39947),	-- Not So Complex?
-				q(41164),	-- One Step Closer
-				q(41161),	-- Out of the Frying Pan
-				q(42399),	-- Ready to Work
-				q(47052),	-- Retribution: Fate of the Tideskorn
-				q(40603),	-- Seeking the Valkyra
-				q(40404),	-- Show Legion Portal
-				q(40541),	-- The Charge Within
-				q(41802),	-- The Gates of Valor
-				q(42193),	-- The Gjallarhorn
-				q(41849),	-- The Iron Fist
-				q(45999),	-- The Legion Assault
-				q(46002),	-- The Legion Assault - Viewed
-				q(40608),	-- The Mark
-				q(38685),	-- The Nameless King
-				q(41170),	-- The Relic Renewed
-				q(45406),	-- The Storm's Fury
-				q(38642),	-- Vrykul Longboat
-				q(38472),	-- Whitewater Typhoon
-				q(38626),	-- Worg Pack
-				q(38627),	-- Worgen Stalkers (Horde Only)
-				SOON™
-				--]]
 			}),
 		}),
 	}),
 };
-
-_.HiddenQuestTriggers = {
-	q(43350),	-- triggered when turning in #40072, "Halls of Valor: Securing the Aegis"
-	q(42574),	-- Shaman Shrine - Stormheim Earth 02, coords 65,40
-};
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(39607),	-- God-King Scene (Vault) - triggers when turning in "Ahead of the Game" (questID 39590)
+		q(43713),	-- Tracking - Statue Climbed - triggers at the top of Nashal the Watcher
+		q(38420),	-- Triggered when turning in "Cry Thunder!" (questID 38624)
+		q(43350),	-- Triggered when turning in "Halls of Valor: Securing the Aegis" (questID 40072)
+		q(42573),	-- Shaman Shrine - Stormheim Earth 01
+		q(42574),	-- Shaman Shrine - Stormheim Earth 02
+		q(40398),	-- Shaman Shrine - Stormheim Water 01 - DGK
+		q(42580),	-- Shaman Shrine - Stormheim Wind 01
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(ARMOR, {

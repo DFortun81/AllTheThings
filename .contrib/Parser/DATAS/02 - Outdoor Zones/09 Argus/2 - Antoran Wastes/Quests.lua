@@ -30,12 +30,7 @@ _.Zones =
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 					["coord"] = { 46.7, 24.6, 831 },
 				}),
-				--[[
-				q(49030),	-- Fragments of the Abyss
-				q(48636),	-- Fueling the Antoran Campaign
-				q(49029),	-- Invasion of Space
-				q(49031),	-- Out With The Inquisitors
---]]			q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
+				q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
 					["sourceQuests"] = { 48201 },	-- Reinforce Light's Purchase
 					["provider"] = { "n", 127051 },	-- Illidan Stormrage
 					["coord"] = { 68.8, 25.9, 885 },
@@ -50,9 +45,6 @@ _.Zones =
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 					["coord"] = { 46.7, 24.6, 831 },
 				}),
---[[
-				q(49027),	-- Targets of Opportunity: Terminus
---]]
 				q(48870, {	-- The Many-Faced Devourer
 					["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
 					["cost"] = { { "i", 152786, 1 } },	-- Call of the Devourer
@@ -81,3 +73,10 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48984),	-- Triggers when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
+		q(49023),	-- Triggers when looting Ancient Legion War Cache. Probably achievement criteria as chests have their own questIDs
+		q(49024),	-- Triggers when looting Fel-Bound Chest. Probably achievement criteria as chests have their own questIDs
+	}),
+});

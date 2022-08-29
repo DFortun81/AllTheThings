@@ -737,41 +737,20 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
-	q(40580),	-- Warrior Order Hall - Protection chosen first
-	q(40581),	-- Warrior Order Hall - Fury chosen first
-	q(40582),	-- Warrior Order Hall - Arms chosen first
-	q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem
-	q(41360),	-- Warrior Order Hall - Stormheim Teleport learned in Valdisdall
-	q(43950),	-- Warrior Order Hall - Fury chosen second
-	q(43952),	-- Warrior Order Hall - Arms chosen second
-	q(43953),	-- Warrior Order Hall - Protection chosen second
-	q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
-	q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
-	q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
-	q(44418),	-- Warrior Order Hall - Fury chosen third
-	q(44419),	-- Warrior Order Hall - Arms chosen third
-	q(44420),	-- Warrior Order Hall - Protection chosen third
-	q(44551),	-- Warrior Order Hall - "Investigate Felsoul Hold" mission complete
-	q(44552),	-- Warrior Order Hall - "Preparing Our Arrival" mission complete
-	q(44553),	-- Warrior Order Hall - "Last Chance" mission complete
-	q(44633),	-- Warrior Order Hall - "Aiding the Valkyra" mission complete
-	q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
-	q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
-	q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
-
-	q(44151),	-- Looting Skull of Nithogg (140658)
-});
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(42617),	-- Champion: King Ymiron
-		q(44482),	-- Recruiting Ebon Knights
-		q(42143),	-- The Champion's Call [WIP]
-		q(43826),	-- Hidden History
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(39174),	-- Guiding Light Tutorialized - triggers when you get your first artifact weapon and go back to Skyhold
+		q(44060),	-- Azsuna Teleport Learned - in Azurewing Repose
+		q(41359),	-- Highmountain Teleport Learned - in Thunder Totem
+		q(41360),	-- Stormheim Teleport Learned - in Valdisdall
+		q(44062),	-- Suramar Teleport Learned - in Meredil
+		q(44061),	-- Val'sharah Teleport Learned - in Loriathil
+		q(44658),	-- Tracking Quest: 7.0 Class Hall - Warrior - Ch1 Trail - completed the "On the Trail of the Great Worm" mission
+		q(44551),	-- Tracking Quest: Capturing the Gateway 1 - completed the "Investigate Felsoul Hold" mission
+		q(44552),	-- Tracking Quest: Capturing the Gateway 2 - completed the "Preparing Our Arrival" mission
+		q(44553),	-- Tracking Quest: Capturing the Gateway 3 - completed the "Last Chance" mission
+		q(44633),	-- Tracking Quest: Preparing for War 1 - completed the "Aiding the Valkyra" mission
+		q(44634),	-- Tracking Quest: Preparing for War 2 - completed the "Lost at Sea" mission
+		q(44635),	-- Tracking Quest: Preparing for War 3 - completed the "Enslaved by Sea Giants" mission
 	}),
-}));
--- #endif
+});

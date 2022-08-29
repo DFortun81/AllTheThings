@@ -350,8 +350,11 @@ root("ExpansionFeatures", {
 		}),
 	}),
 });
-
-root("HiddenQuestTriggers", {
-	q(48309),	-- looting 'Discharged Shock Lance' [152320] when completing a mission
-	q(48310),	-- Tracking Quest for Druids?
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48308),	-- Tracking Quest - triggered after obtaining "Azeroth Invasion Plans" (itemID 152316)
+		q(48309),	-- Tracking Quest - triggered after obtaining "Discharged Shock Lance" (itemID 152320)
+		q(48310),	-- Tracking Quest - triggered after obtaining "Sargerei Manifesto"  (itemID 152324)
+		q(48311),	-- Tracking Quest - triggered after obtaining "Sanguine Argunite"  (itemID 152328)
+	}),
 });

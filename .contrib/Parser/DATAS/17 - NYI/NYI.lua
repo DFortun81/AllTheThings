@@ -87,7 +87,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49764),	--
 				q(49815),	--
 				q(50312),	--
-				-- BFA
 				-- 8.0.1
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",

@@ -1690,9 +1690,8 @@ root("Instances", tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root("HiddenQuestTriggers", tier(LEGION_TIER, {
-	inst(946, {
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
 		q(45460),	-- Garothi Worldbreaker
 		q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
 		q(45461),	-- Felhounds of Sargeras
@@ -1702,7 +1701,9 @@ root("HiddenQuestTriggers", tier(LEGION_TIER, {
 		q(45464),	-- Eonar
 		q(48425),	-- Eonar (triggered at the same time as above)
 		q(49357),	-- Eonar (triggered at the same time as above)
-		q(49359),	-- Eonar (triggered after kill)
+		q(49358),	-- Invasion battle - first kill
+		q(49359),	-- Eonar - triggered after kill
+		q(49360),	-- Eonar Mythic - first Kill
 		q(45463),	-- Portal Keeper Hasabel
 		q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
 		q(45465),	-- Imonar
@@ -1719,20 +1720,16 @@ root("HiddenQuestTriggers", tier(LEGION_TIER, {
 		q(48431),	-- Argus
 		q(49184),	-- Argus (triggered at the same time as above)
 		q(49361),	-- Argus (triggered at the same time as above)
-		q(49363),	-- Argus (Heroic)
-		q(49475),	-- Argus (triggered at the same time as above)
-		q(49364),	-- Argus (triggered first time this character killed Argus on mythic)
-		q(49717),	-- Argus (triggered first time this character killed Argus on mythic)
-		q(49718),	-- Argus (first kill on character) (received Khaz'goroth's Courage 154176 / Aggramar's Conviction 154173)
-		q(49771),	-- Argus (triggered first time this character killed Argus on mythic)
-		d(16, {	-- Mythic
-			q(49358),	-- 'invasion battle' first kill
-			q(49360),	-- Mythic: Eonar -- First Kill
-			q(49362),	-- full raid cleared
-		}),
+		q(49363),	-- Argus Heroic
+		q(49475),	-- Argus Heroic (triggered at the same time as above)
+		q(49364),	-- Argus Mythic - first kill
+		q(49717),	-- Argus Mythic - first kill
+		q(49771),	-- Argus Mythic - first kill?
+		q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173)
+		q(49362),	-- full raid cleared
+		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
 	}),
-}));
-
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(946, {	-- Antorus, the Burning Throne

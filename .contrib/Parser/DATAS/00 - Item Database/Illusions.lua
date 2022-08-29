@@ -298,6 +298,7 @@ _.IllusionDB = {
 		["itemID"] = 138834,
 		["illusionID"] = 5873,
 		["visualID"] = 33,
+		["questID"] = 42943,
 		["classes"] = { SHAMAN },
 	}, -- [48]
 	{

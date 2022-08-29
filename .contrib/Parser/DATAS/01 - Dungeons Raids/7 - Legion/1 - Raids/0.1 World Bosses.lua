@@ -338,3 +338,38 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
+		q(44501),	-- Tracking Quest - Ana-Mouz killID
+		q(44896),	-- Tracking Quest - Ana-Mouz bonus roll
+		q(47084),	-- Tracking Quest - Apocron killID
+		q(47087),	-- Tracking Quest - Apocron bonus roll
+		q(47085),	-- Tracking Quest - Brutallus killID
+		q(47088),	-- Tracking Quest - Brutallus bonus roll
+		q(44502),	-- Tracking Quest - Calamir killID
+		q(44897),	-- Tracking Quest - Calamir bonus roll
+		q(44503),	-- Tracking Quest - Drugon the Frostblood killID
+		q(44898),	-- Tracking Quest - Drugon the Frostblood bonus roll
+		q(44504),	-- Tracking Quest - Flotsam killID
+		q(44899),	-- Tracking Quest - Flotsam bonus roll
+		q(44505),	-- Tracking Quest - Humongris killID
+		q(44900),	-- Tracking Quest - Humongris bonus roll
+		q(44506),	-- Tracking Quest - Levantus killID
+		q(44901),	-- Tracking Quest - Levantus bonus roll
+		q(47086),	-- Tracking Quest - Malificus killID
+		q(47089),	-- Tracking Quest - Malificus bonus roll
+		q(44507),	-- Tracking Quest - Nazak the Fiend killID
+		q(44902),	-- Tracking Quest - Nazak the Fiend bonus roll
+		q(44508),	-- Tracking Quest - Nithogg killID
+		q(44903),	-- Tracking Quest - Nithogg bonus roll
+		q(44509),	-- Tracking Quest - Shar'thos killID
+		q(44904),	-- Tracking Quest - Shar'thos bonus roll
+		q(47090),	-- Tracking Quest - Si'vash killID
+		q(47091),	-- Tracking Quest - Si'vash bonus roll
+		q(44510),	-- Tracking Quest - The Soultakers killID
+		q(44905),	-- Tracking Quest - The Soultakers bonus roll
+		q(44511),	-- Tracking Quest - Withered J'im killID
+		q(44906),	-- Tracking Quest - Withered J'im bonus roll
+	}),
+});

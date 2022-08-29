@@ -17,3 +17,10 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 		},
 	},
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(BFA_TIER, {
+		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
+		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
+		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
+	}),
+});

@@ -1552,11 +1552,49 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
-	n(PROFESSIONS, {
-		prof(ARCHAEOLOGY, {
-			q(41805),	-- Key of Kalyndras tracking quest
-		}),
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		--	Archaeology
+		q(41867),	-- FLAG - Brann Week 1
+		q(41868),	-- FLAG - Brann Week 2
+		q(41869),	-- FLAG - Brann Week 3
+		q(41870),	-- FLAG - Brann Week 4
+		q(41871),	-- FLAG - Brann Week 5
+		q(41805),	-- Key of Kalyndras
+		--	Blacksmithing
+		q(38543),	-- FLAG: Demonsteel Armguards Crafted
+		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
+		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
+		q(38546),	-- FLAG: Demonsteel Boots Crafted
+		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
+		q(38549),	-- FLAG: Demonsteel Helm Crafted
+		q(38550),	-- FLAG: Demonsteel Greaves Crafted
+		q(38551),	-- FLAG: Demonsteel Breastplate Crafted
+		q(47096),	-- Broken Shore - Choice: Blacksmithing
+		--  Cooking
+		q(45341),	-- Tracking Quest - after obtaining the Chef's Hat toy (itemID 134020)
+		--  Engineering
+		q(41100),	-- FLAG - Swap Didis - triggers after completing the "Endless Possibilities" (questID 40854)
+		q(45365),	-- Treasure: Wand of Simulated Life - part of some legion engineering quest
+		--	Jewelcrafting
+		q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
+		q(40302),	-- FLAG - Prospecting 01 - triggered when completing a jewelcrafting world quest in Dalaran
+		q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran
+		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
+		--	Leatherworking
+		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
+		q(47095),	-- Broken Shore - Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
+		--	Tailoring
+		q(38976),	-- FLAG: Undying Silkweave Bracers
+		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+		q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+		q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
+		q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+		q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+		q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+		q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+		q(47093),	-- Broken Shore - Choice: Tailoring
+		-- All professions
+		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armor item
 	}),
-})));
+});

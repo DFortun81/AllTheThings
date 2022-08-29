@@ -761,35 +761,19 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen (first)
-		q(40936),	-- Death Knight Order Hall - Convincing Revil Kost to help during 'Apocalypse' (40930)
-		q(43965),	-- Death Knight Order Hall - Blood Artifact Chosen second
-		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
-		q(40723),	-- Death Knight Order Hall - Frost Artifact Chosen (first)
-		q(40724),	-- Death Knight Order Hall - Unholy Artifact Chosen (first)
-		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
-		q(44587),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds A
-		q(44588),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds B
-		q(44589),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds C
-		q(44590),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds D
-		q(44591),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds E
-		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
-		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
-		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
-		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
-		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
-		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(40936),	-- Tracking: Revil Convinced - triggered during "Apocalypse" (questID 40930)
+		q(44587),	-- Tracking Quest: Fallen Steeds A - completed the "Fallen Steeds: Saddle of the Frozen Crown" mission
+		q(44588),	-- Tracking Quest: Fallen Steeds B - completed the "Fallen Steeds: The Baron's Saddle" mission
+		q(44589),	-- Tracking Quest: Fallen Steeds C - completed the "Fallen Steeds: Saddle of the Headless Horseman" mission
+		q(44590),	-- Tracking Quest: Fallen Steeds D - completed the "Fallen Steeds: Saddle of the Huntsman" mission
+		q(44591),	-- Tracking Quest: Fallen Steeds E - completed the "Fallen Steeds: Reins of Shadow" mission
+		q(44592),	-- Tracking Quest: Unholy Attainment A - completed the "Unholy Attainment: Essence of Undeath" mission
+		q(44593),	-- Tracking Quest: Unholy Attainment B - completed the "Unholy Attainment: Essence of Fear" mission
+		q(44594),	-- Tracking Quest: Unholy Attainment C - completed the "Unholy Attainment: Essence of Shadow" mission
+		q(44595),	-- Tracking Quest: Unholy Attainment D - completed the "Unholy Attainment: Essence of Hatred" mission
+		q(44596),	-- Tracking Quest: Unholy Attainment E - completed the "Unholy Attainment: Essence of Darkness" mission
+		q(44637),	-- Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - triggers when "Salanar the Horseman" mission is completed
 	}),
-}));
--- #endif
+});

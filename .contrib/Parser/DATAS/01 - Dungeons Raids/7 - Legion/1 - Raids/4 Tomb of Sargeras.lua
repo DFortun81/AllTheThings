@@ -1429,14 +1429,30 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
-	inst(875, {	-- Tomb of Sargeras
-		q(48064),	-- first time cinematic prior to Goroth
-		q(48084),	-- Tracking Quest (KJ first kill?) / Heroic KJ
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48064),	-- Goroth Intro - first time cinematic prior to Goroth
+		q(48643),	-- Goroth
+		q(48644),	-- Demonic Inquisition
+		q(48645),	-- Harjatan
+		q(48646),	-- Mistress Sassz'ine
+		q(48647),	-- Sisters of the Moon
+		q(48648),	-- The Desolate Host
+		q(48649),	-- Maiden of Vigilance
+		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
+		q(48650),	-- Fallen Avatar
+		q(48082),	-- Kil'jaeden LFR
+		q(48083),	-- Kil'jaeden Normal
+		q(48084),	-- Kil'jaeden Heroic
+		q(48085),	-- Kil'jaeden Mythic
+		q(48651),	-- Kil'jaeden
+		q(47106),	-- 7.2 Raid - Tomb - 1 - Quest Item Reward - Tracking Quest
+		q(47107),	-- 7.2 Raid - Tomb - 2 - Quest Item Reward - Tracking Quest
+		q(47108),	-- 7.2 Raid - Tomb - 3 - Quest Item Reward - Tracking Quest
+		q(47109),	-- 7.2 Raid - Tomb - 4 - Quest Item Reward - Tracking Quest
+		q(46332),	-- [DNT]Shadow Priests - Elune Death Enabled — for trying to use Xal'atath to absorb Elune's power after Sisters of the Moon
 	}),
-}));
-
+});
 root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(LEGION_TIER, {
 	inst(875, {	-- Tomb of Sargeras
 		i(147036),	-- Fel-Stippled Legguards		(removed Beta)

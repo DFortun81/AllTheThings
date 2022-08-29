@@ -960,43 +960,25 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 		})),
 	}),
 }));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(40619),	-- Hunter Order Hall - Survival Chosen
-	q(40620),	-- Hunter Order Hall - Marksmanship Chosen
-	q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
-	q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
-	q(43159),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
-	q(43366),	-- Hunter Order Hall - Talked With Mimiron Tracking Quest
-	q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
-	q(44046),	-- Hunter Order Hall - Marksmanship Chosen
-	q(44047),	-- Hunter Order Hall - Survival Chosen
-	q(44333),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 1
-	q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
-	q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
-	q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
-	q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
-	q(44368),	-- Hunter Order Hall - Marksmanship Chosen
-	q(44369),	-- Hunter Order Hall - Survival Chosen
-	q(44391),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 1
-	q(44392),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 2
-	q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3
-	q(44394),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 4
-	q(44395),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 5
-	q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
-	q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
-	q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
-	q(66309),	-- After obtaining Dark Ranger's Ensemble
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43819),	-- Hidden History
-		q(41008),	-- Hunter to Hunter
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(43366),	-- Talked With Mimiron
+		q(43158),	-- Tracking Quest - conversation flag for a hidden romance quest
+		q(43159),	-- Tracking Quest - triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories
+		q(44702),	-- Tracking Quest - triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories
+		q(44643),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44644),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
+		q(44333),	-- Tracking Quest: The Missing Vessel 1 - completed the "The Missing Vessel: Highmountain" mission
+		q(44334),	-- Tracking Quest: The Missing Vessel 2 - completed the "The Missing Vessel: Stormheim" mission
+		q(44335),	-- Tracking Quest: The Missing Vessel 3 - completed the "The Missing Vessel: Val'sharah" mission
+		q(44336),	-- Tracking Quest: The Missing Vessel 4 - completed the "The Missing Vessel: Azsuna" mission
+		q(44391),	-- Tracking Quest: Unseen Protection 1 - completed the "Unseen Protection: Defending Dalaran" mission
+		q(44392),	-- Tracking Quest: Unseen Protection 2 - completed the "Unseen Protection: The Mother of Imps" mission
+		q(44393),	-- Tracking Quest: Unseen Protection 3 - completed the "Unseen Protection: Infernal Waves" mission
+		q(44394),	-- Tracking Quest: Unseen Protection 4 - completed the "Unseen Protection: Coastal Invasion" mission
+		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
-}));
--- #endif
+	tier(SL_TIER, {
+		q(66309),	-- After obtaining Dark Ranger's Ensemble
+	}),
+});

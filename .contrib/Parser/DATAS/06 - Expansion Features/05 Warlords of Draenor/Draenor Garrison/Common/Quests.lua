@@ -3297,11 +3297,13 @@ root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
 		q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
 		q(37647),	-- Tracking Quest - Hide Old Baros / Thorn / Brightstone - after picking up the rose quest item during quest "Garrison Campaign: Every Rose Has Its Thorn" (questID 36160)
 		q(39709),	-- Tracking Quest - first time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
-		q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
-		q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
+		q(39710),	-- Tracking Quest - related to the Garrison/Shipyard Mission Table
+		q(39711),	-- Tracking Quest - related to the Garrison/Shipyard Mission Table
 		q(39723),	-- Tracking Quest - related to rare naval missions in the shipyard
 		q(39724),	-- Tracking Quest - related to rare naval missions in the shipyard
 		q(39725),	-- Tracking Quest - related to rare naval missions in the shipyard
+		q(39748),	-- Tracking Quest - related to (rare?) mission table in the Garrison
+		q(39749),	-- Tracking Quest - related to (rare?) mission table in the Garrison
 		q(39750),	-- Tracking Quest - related to rare naval missions in the shipyard
 		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
 		q(36898),	-- Tracking Quest: Delvar Ironfist - assigned Delvar Ironfist as a bodyguard/wingman

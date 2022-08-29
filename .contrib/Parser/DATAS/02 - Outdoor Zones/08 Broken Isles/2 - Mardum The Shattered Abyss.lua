@@ -322,9 +322,6 @@ _.Zones =
 									i(128956),	-- Fel-Etched Glaive
 								},
 							}),
-							q(41226, {	-- Breaking Out (Duplicate? triggers at the same time as 38672)
-								["u"] = NEVER_IMPLEMENTED,
-							}),
 							q(39742, {	-- Vault of the Wardens
 								["description"] = "This is a bonus objective.",
 								["sourceQuests"] = { 38672 },	-- Breaking Out
@@ -498,3 +495,20 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(40375),	-- A New Direction: Obtained Altruis - chose Altruis during "A New Direction" (questID 40373) in the Vault of the Wardens scenario
+		q(40374),	-- A New Direction: Obtained Kayn - chose Kayn during "A New Direction" (questID 40373) in the Vault of the Wardens scenario
+		q(40087),	-- Enter the Illidari: Shivarra - Sevis Brightflame Sacrificed Tracking Event
+		q(39517),	-- Fel Secrets - Havoc Spec Tracking Event - picked Havoc during "Fel Secrets" (questID 40051)
+		q(39518),	-- Fel Secrets - Vengeance Spec Tracking Event - picked Vengeance during "Fel Secrets" (questID 40051)
+		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
+		q(40921),	-- Tracking Quest: Bastillax 1 - triggers when Bastillax dialog starts in the Vault of the Wardens scenario
+		q(40922),	-- Tracking Quest: Mephistos 2
+		q(40923),	-- Tracking Quest: Mephistos 3 - triggers when Bastillax dialog starts when flying to the second floor in the Vault of the Wardens scenario
+		q(40924),	-- Tracking Quest: Bastillax 4 - triggers when Bastillax dialog starts at the top of the Vault of the Wardens scenario
+		q(40386),	-- Tracking Quest: Khadgar Arrival - escaped the Vault of the Wardens entry scenario
+		q(40422),	-- Tracking Quest: VotW Started - triggers when you take the portal to the Black Temple to start the Vault of the Wardens scenario
+		q(42181),	-- Triggered after turning in "The Lone Mountain" (questID 39733)
+	}),
+});

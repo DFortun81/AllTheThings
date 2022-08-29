@@ -689,38 +689,21 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(40707),	-- Priest Order Hall - Shadow chosen first
-	q(40708),	-- Priest Order Hall - Holy chosen first
-	q(40709),	-- Priest Order Hall - Discipline chosen first
-	q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
-	q(42328),	-- Priest Order Hall - Tracking Quest: Lumenstone 1
-	q(42329),	-- Priest Order Hall - Tracking Quest: Lumenstone 2
-	q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
-	q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
-	q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
-	q(43507),	-- Priest Order Hall - Looting the priest altar
-	q(43939),	-- Priest Order Hall - Shadow chosen second
-	q(43941),	-- Priest Order Hall - Discipline chosen second
-	q(44408),	-- Priest Order Hall - Shadow chosen third
-	q(44409),	-- Priest Order Hall - Discipline chosen third
-	q(44410),	-- Priest Order Hall - Holy chosen third
-	q(44608),	-- Priest Order Hall - Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
-	q(44609),	-- Priest Order Hall - Tracking Quest: Holy Ground 2
-	q(44610),	-- Priest Order Hall - Tracking Quest: Holy Ground 3
-	q(44611),	-- Priest Order Hall - Tracking Quest: Holy Ground 4
-	q(44612),	-- Priest Order Hall - Tracking Quest: Holy Ground 5
-	q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
-	q(44059),	-- Legion Attacks
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(42072),	-- Boros Tracker - triggers during "Out of the Darkness" (questID 41967)
+		q(44059),	-- Legion Attacks
+		q(43507),	-- Looted Priest Altar
+		q(42328),	-- Tracking Quest: Lumenstone 1 - completed the "Lumenstone: Faronaar" mission
+		q(42329),	-- Tracking Quest: Lumenstone 2 - completed the "Lumenstone: Suramar City" mission
+		q(42330),	-- Tracking Quest: Lumenstone 3 - completed the "Lumenstone: Stormheim" mission
+		q(42331),	-- Tracking Quest: Lumenstone 4 - completed the "Lumenstone: Broken Shore" mission
+		q(42332),	-- Tracking Quest: Lumenstone 5 - completed the "Lumenstone: Vashj'ir" mission
+		q(44608),	-- Tracking Quest: Holy Ground 1 - completed the "Holy Ground: Light's Hope Chapel" mission
+		q(44609),	-- Tracking Quest: Holy Ground 2 - completed the "Holy Ground: The Exodar" mission
+		q(44610),	-- Tracking Quest: Holy Ground 3 - completed the "Holy Ground: Uther's Tomb" mission
+		q(44611),	-- Tracking Quest: Holy Ground 4 - completed the "Holy Ground: Auchindoun" mission
+		q(44612),	-- Tracking Quest: Holy Ground 5 - completed the "Holy Ground: The Sunwell" mission
+		q(44650),	-- Tracking Quest: 7.0 Class Hall - Priest - Pacing Mission 1 (JAP) - completed the "Relieving the Front Lines" mission
 	}),
-}));
--- #endif
+});

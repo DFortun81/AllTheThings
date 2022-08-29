@@ -39,6 +39,14 @@ _.Instances = { tier(LEGION_TIER, {
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(42755, {	-- Eye of Azshara: Azsunian Pearls
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(42746, {	-- Eye of Azshara: Dread End
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(42713, {	-- Eye of Azshara: Slug It Out
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
@@ -292,7 +300,3 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
-
-_.HiddenQuestTriggers = {
-	q(43675),	-- triggered when learning 'Coil of the Drowned Queen' (139574)
-};

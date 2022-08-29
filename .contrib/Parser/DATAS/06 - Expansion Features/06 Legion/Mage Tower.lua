@@ -408,23 +408,23 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 		},
 	})),
 }));
-
-root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
-	q(64923),	-- unlocking Gravewarden Armaments set
-	q(64924),	-- unlocking Demonbane Armor set
-	q(64925),	-- unlocking Stormheart Raiment set
-	q(64926),	-- unlocking Wildstalker Armor set
-	q(64927),	-- unlocking Regalia of the Arcane Tempest set
-	q(64928),	-- unlocking Xuen's Battlegear set
-	q(64929),	-- unlocking Radiant Lightbringer Armor set
-	q(64930),	-- unlocking Vestments of Blind Absolution set
-	q(64931),	-- unlocking Fanged Slayer's Armor set
-	q(64932),	-- unlocking Regalia of the Skybreaker set
-	q(64933),	-- unlocking Diabolic Raiment set
-	q(64934),	-- unlocking Titanic Onslaught Armor set
-}));
-
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, tier(LEGION_TIER, {
+root(ROOTS.HiddenQuestTriggers, {
+	tier(SL_TIER, {
+		q(64923),	-- unlocking Gravewarden Armaments set
+		q(64924),	-- unlocking Demonbane Armor set
+		q(64925),	-- unlocking Stormheart Raiment set
+		q(64926),	-- unlocking Wildstalker Armor set
+		q(64927),	-- unlocking Regalia of the Arcane Tempest set
+		q(64928),	-- unlocking Xuen's Battlegear set
+		q(64929),	-- unlocking Radiant Lightbringer Armor set
+		q(64930),	-- unlocking Vestments of Blind Absolution set
+		q(64931),	-- unlocking Fanged Slayer's Armor set
+		q(64932),	-- unlocking Regalia of the Skybreaker set
+		q(64933),	-- unlocking Diabolic Raiment set
+		q(64934),	-- unlocking Titanic Onslaught Armor set
+	}),
+});
+root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, tier(SL_TIER, {
 	n(-10048, {	-- Mage Tower
 		cl(MAGE, {	-- Regalia of the Arcane Tempest set
 			i(188643),	-- Raiment of the Arcane Tempest

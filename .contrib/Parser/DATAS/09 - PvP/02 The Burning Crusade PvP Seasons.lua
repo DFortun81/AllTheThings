@@ -3534,7 +3534,56 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 		}),
 	})),
 }))))));
-
+-- #if AFTER LEGION
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- PvP Ensembles
+		q(46621),	-- Gladiator's Chain Armor (Hunter)
+		q(46622),	-- Gladiator's Dragonhide Armor (Druid)
+		q(46623),	-- Gladiator's Felweave Armor (Warlock)
+		q(46624),	-- Gladiator's Leather Armor (Rogue)
+		q(46625),	-- Gladiator's Plate Armor (Warrior)
+		q(46626),	-- Gladiator's Ringmail Armor (Shaman)
+		q(46627),	-- Gladiator's Satin Armor (Priest)
+		q(46628),	-- Gladiator's Scaled Armor (Paladin)
+		q(46629),	-- Gladiator's Silk Armor (Mage)
+		q(46631),	-- Brutal Gladiator's Chain Armor (Hunter)
+		q(46632),	-- Brutal Gladiator's Dragonhide Armor (Druid)
+		q(46633),	-- Brutal Gladiator's Felweave Armor (Warlock)
+		q(46634),	-- Brutal Gladiator's Leather Armor (Rogue)
+		q(46635),	-- Brutal Gladiator's Plate Armor (Warrior)
+		q(46636),	-- Brutal Gladiator's Ringmail Armor (Shaman)
+		q(46637),	-- Brutal Gladiator's Satin Armor (Priest)
+		q(46638),	-- Brutal Gladiator's Scaled Armor (Paladin)
+		q(46639),	-- Brutal Gladiator's Silk Armor (Mage)
+		q(47060),	-- Brutal Gladiator's Dreadplate Armor (Death Knight)
+		q(46641),	-- Vengeful Gladiator's Chain Armor (Hunter)
+		q(46642),	-- Vengeful Gladiator's Dragonhide Armor (Druid)
+		q(46643),	-- Vengeful Gladiator's Felweave Armor (Warlock)
+		q(46644),	-- Vengeful Gladiator's Leather Armor (Rogue)
+		q(46645),	-- Vengeful Gladiator's Plate Armor (Warrior)
+		q(46646),	-- Vengeful Gladiator's Ringmail Armor (Shaman)
+		q(46647),	-- Vengeful Gladiator's Satin Armor (Priest)
+		q(46648),	-- Vengeful Gladiator's Scaled Armor (Paladin)
+		q(46649),	-- Vengeful Gladiator's Silk Armor (Mage)
+		q(46651),	-- Merciless Gladiator's Chain Armor (Hunter)
+		q(46652),	-- Merciless Gladiator's Dragonhide Armor (Druid)
+		q(46653),	-- Merciless Gladiator's Felweave Armor (Warlock)
+		q(46654),	-- Merciless Gladiator's Leather Armor (Rogue)
+		q(46655),	-- Merciless Gladiator's Plate Armor (Warrior)
+		q(46656),	-- Merciless Gladiator's Ringmail Armor (Shaman)
+		q(46657),	-- Merciless Gladiator's Satin Armor (Priest)
+		q(46658),	-- Merciless Gladiator's Scaled Armor (Paladin)
+		q(46659),	-- Merciless Gladiator's Silk Armor (Mage)
+		
+		-- PvP Arsenals
+		q(46630),	-- Gladiator's Arsenal
+		q(46640),	-- Brutal Gladiator's Arsenal
+		q(46650),	-- Vengeful Gladiator's Arsenal
+		q(46660),	-- Merciless Gladiator's Arsenal
+	}),
+});
+-- #endif
 -- #if AFTER TBC
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(TBC_TIER, {

@@ -985,7 +985,17 @@ _.Instances = { tier(LEGION_TIER, {
 		},
 	}),
 })};
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(44142),	-- Nythendra
+		q(44143),	-- Il'gynoth, Heart of Corruption
+		q(44144),	-- Elerethe Renferal
+		q(44145),	-- Ursoc
+		q(44146),	-- Dragons of Nightmare
+		q(44147),	-- Cenarius
+		q(44148),	-- Xavius
+	}),
+});
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		inst(768, {	-- The Emerald Nightmare

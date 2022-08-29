@@ -658,17 +658,17 @@ root("Zones", {
 		}),
 	}),
 });
-
-root("HiddenQuestTriggers", {
-	m(905, {	-- Argus
-		m(886, {	-- Vindicaar
-			q(48308),	-- starting Mythic Azeroth Invasion Plans quest
-			-- Vindicaar Matrix Abilities
-			q(48449),	-- Shroud of Arcane Echoes/Warframe
-			q(48450),	-- Shroud of Arcane Echoes/Fel Heart
-			q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
-			-- Stay a while and Listen
-			q(49164),	-- Silgryn and Liadrin
-		}),
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48668),	-- Lightforged Beacon: City Center - triggers during the cutscene while on "Into the Night" (questID 48440)
+		q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
+		q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)
+		q(49161),	-- Triggers when turning in "Where They Least Expect It" (questID 48461)
+		-- Vindicaar Matrix Abilities
+		q(48449),	-- Shroud of Arcane Echoes/Warframe
+		q(48450),	-- Shroud of Arcane Echoes/Fel Heart
+		q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
+		-- Stay a while and Listen
+		q(49164),	-- Silgryn and Liadrin
 	}),
 });

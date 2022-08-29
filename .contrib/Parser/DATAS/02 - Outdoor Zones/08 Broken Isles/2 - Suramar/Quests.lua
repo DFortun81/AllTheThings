@@ -7,24 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(QUESTS, {
-			--	POSSIBLE TRACKING QUESTS!  commenting out for now, so if they pop we can document exactly what they're for in the NYI file/it'll be more apparent that we don't have any data for them.  if, after someone quests through the zone, they have not been discovered, we can mark them NYI instead.
-			--	q(40749),	-- A Token of Remembrance
-			--	q(43783),	-- Field Rations
-			--	q(44080),	-- Friend of the Animals
-			--	q(44073),	-- Help from Within
-			--	q(44732),	-- Morgalash
-			--	q(40346),	-- Pilfered Provisions
-			--	q(40637),	-- Proof of Honor
-			--	q(40129),	-- Repairing the Source
-			--	q(40635),	-- Sashj'tar Slayer
-			--	q(40659),	-- Seeing Stars
-			--	q(40906),	-- Serpents from the Deep
-			--	q(44078),	-- Supporting Cast
-			--	q(40342),	-- Surprise the Sashj'tar
-			--	q(40779),	-- We Need Even More Power!
-
-
-			--	real quests begin here!
 				q(41916, {	-- A Better Future
 					["coord"] = { 40.5, 53.0, SURAMAR }, -- horde coordinate. Possibly different for alliance?
 					["provider"] = { "n", 114908 },	-- First Arcanist Thalyssra
@@ -387,9 +369,6 @@ _.Zones =
 					["coord"] = { 36.6, 45.0, SURAMAR },
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 38649,	-- Silence in the City
-				}),
-				q(40973, {	-- Creating Time
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(44843, {	-- Crystal Clearing
 					["coord"] = { 40.6, 64.4, SURAMAR },
@@ -1893,36 +1872,31 @@ _.Zones =
 		}),
 	}),
 };
-_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(40749),	-- A Token of Remembrance
-		q(40725),	-- Arganax
-		q(41044),	-- Attack and Assail!
-		q(40393),	-- Axes for Arrows
-		q(41007),	-- Building a Better Boat
-		q(40763),	-- Casual Redistribution
-		q(41005),	-- Coastal Cleanup
-		q(40656),	-- Cutting the Crystal Flow
-		q(40394),	-- Fish and Supplies
-		q(41031),	-- For the People
-		q(40741),	-- In Need of Information
-		q(41004),	-- Jandvik Craftsmanship
-		q(41043),	-- Jandvik's First Sailor
-		q(40674),	-- Jars for Jandvik
-		q(40776),	-- Kazok'thul
-		q(41000),	-- King Forgalash's Burden
-		q(40974),	-- Latosius's Trial
-		q(41027),	-- One Last Breath
-		q(40346),	-- Pilfered Provisions
-		q(40637),	-- Proof of Honor
-		q(40635),	-- Sashj'tar Slayer
-		q(40659),	-- Seeing Stars
-		q(40906),	-- Serpents from the Deep
-		q(40670),	-- Shattering the Sashj'tar
-		q(40342),	-- Surprise the Sashj'tar
-		q(40396),	-- That's the Spirit
-		q(40742),	-- The Elusive Three
-		q(41104),	-- The New Jarl
-		q(40372),	-- The Tidemistress
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(44677),	-- Ancient Mana Tutorial Chest A - triggers during "Ancient Mana" (questID 44672)
+		q(44678),	-- Ancient Mana Tutorial Chest B - triggers during "Ancient Mana" (questID 44672)
+		q(44679),	-- Ancient Mana Tutorial Chest C - triggers during "Ancient Mana" (questID 44672)
+		q(40975),	-- Arluin Bribe Tracking - give Arluin 800 ancient mana during "If Words Don't Work..." (questID 42840)
+		q(42649),	-- Arluin Bribe Tracker 2 - give Arluin 1200 ancient mana during "Or Against Us" (questID 43311)
+		q(42443),	-- Arluin Wants In (Tracking Quest) - Arluin shows up at Shal'Aran after you turn in "Giving It All We've Got" (questID 43562) and completing the follow-up quests
+		q(41137),	-- Fall of the King - triggeres when killing Cora'kar
+		q(43703),	-- Hub Mana Tree Tracking - Stage 01
+		q(43704),	-- Hub Mana Tree Tracking - Stage 02
+		q(43706),	-- Hub Mana Tree Tracking - Stage 03 - triggered after turning in "Make Your Mark" (questID 42792)
+		q(43707),	-- Hub Mana Tree Tracking - Stage 04 - triggered after turning in "Make Your Mark" (questID 42792)
+		q(43708),	-- Hub Mana Tree Tracking - Stage 05 - triggered after turning in "Make Your Mark" (questID 42792)
+		q(43589),	-- Leyline 03
+		q(43840),	-- Treasure 008 - Collapse Depths - secondary trigger for Small Treasure Chest (questID 43839)
+		q(43857),	-- Treasure 022 - Crimson Thicket Cave - secondary trigger for Small Treasure Chest (questID 43855)
+		q(40317),	-- Tree Destroyed
+		q(41212),	-- Triggered when turning in "Scattered Memories". Maybe a quest from beta?
+		q(44071),	-- Vignette: Maia the White Wolf - secondary trigger for Maia the White rare
+		q(41117),	-- Seen Thalrenus Iceblock Shenanigans - saw Thalrenus Rivertree break out of iceblock at Moonfall Approach
+		q(40765),	-- Syrana Tracker - triggers during "Starweaver's Fate" (questID 40969) when finding Syrana and she kills the Imperial Conjurers
+		q(43566),	-- Withered Progress
+		-- #if AFTER LEGION
+		q(24661),	-- Theryn Fed Tracker - (reused ID from WotLK NYI quest)
+		-- #endiff
 	}),
 });

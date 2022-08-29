@@ -976,55 +976,20 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
-		n(CLASS_HALL, {
-			cl(DRUID, {	-- The Dreamgrove (Druid)
-				q(40701),	-- Druid Order Hall - Feral Chosen (First)
-				q(40702),	-- Druid Order Hall - Guardian Chosen (First)
-				q(40703),	-- Druid Order Hall - Restoration Chosen (First)
-				q(40781),	-- Druid Order Hall - Balance Chosen (First)
-				q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
-				q(41885),	-- Druid Order Hall - Naralex Kneel Seen — drinking the potion while next to Naralex during #41436, "In Deep Slumber"
-				q(42360),	-- Chose Broll Bearmantle
-				q(42361),	-- Druid Order Hall - Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
-				q(42362),	-- Chose Zen'Tabra
-				q(42363),	-- Druid Order Hall - Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
-				q(42513),	-- Druid Order Hall - Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
-				q(43353),	-- Druid Order Hall - Gathering the Dreamweavers: Celestine of the Harvest
-				q(43354),	-- Druid Order Hall - Gathering the Dreamweavers: Thisalee Crow
-				q(43355),	-- Druid Order Hall - Gathering the Dreamweavers: Matoclaw
-				q(43356),	-- Druid Order Hall - Gathering the Dreamweavers: Talza
-				q(43357),	-- Druid Order Hall - Gathering the Dreamweavers: Graham Silverclaw
-				q(43976),	-- Druid Order Hall - Balance Chosen (Second)
-				q(43977),	-- Druid Order Hall - Guardian Chosen (Second)
-				q(43978),	-- Druid Order Hall - Feral Chosen (Second)
-				q(43979),	-- Druid Order Hall - Resto Chosen (second)
-				q(44432),	-- Druid Order Hall - Balance Chosen (Third)
-				q(44433),	-- Druid Order Hall - Feral Chosen (Third)
-				q(44434),	-- Druid Order Hall - Guardian Chosen (Third)
-				q(44436),	-- Druid Order Hall - Resto Chosen (third)
-				q(44444),	-- Druid Order Hall - Balance Chosen (Forth)
-				q(44445),	-- Druid Order Hall - Feral Chosen (Forth)
-				q(44446),	-- Druid Order Hall - Guardian Chosen (Forth)
-				q(44447),	-- Druid Order Hall - Resto Chosen (fourth)
-				q(44642),	-- Druid Order Hall - Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
-				q(43652),	-- Hidden Appearance Unlocked, fangs of ashmane
-				q(43653),	-- Hidden Appearance Unlocked, Ursoc
-				q(43654),	-- Hidden Appearance Unlocked, Resto
-			}),
-		}),
+		q(42513),	-- Ashamane's Fall - landing and approaching RPing NPCs at the start of "The Shrine of Ashamane" (questID 42428)
+		q(41885),	-- Naralex Kneel Seen - drinking the potion while next to Naralex during "In Deep Slumber" (questID 41436)
+		q(41194),	-- Remulos Tracker - entering the Emerald Dreamway for the first time
+		q(44642),	-- Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A - completed the "Sampling the Nightmare" mission
+		q(42360),	-- Tracking Quest: Chose Broll - part of "Defenders of the Dream" (questID 42050)
+		q(42361),	-- Tracking Quest: Chose Sylendra - part of "Defenders of the Dream" (questID 42050)
+		q(42362),	-- Tracking Quest: Chose Zen'tabra - part of "Defenders of the Dream" (questID 42050)
+		q(42363),	-- Tracking Quest: Chose Mylune - part of "Defenders of the Dream" (questID 42050)
+		q(43353),	-- Tracking Quest: Celestine of the Harvest - completed the "Gathering the Dreamweavers: Celestine of the Harvest" mission
+		q(43354),	-- Tracking Quest: Thisalee Crow - completed the "Gathering the Dreamweavers: Thisalee Crow" mission
+		q(43355),	-- Tracking Quest: Matoclaw - completed the "Gathering the Dreamweavers: Matoclaw" mission
+		q(43356),	-- Tracking Quest: Talza - completed the "Gathering the Dreamweavers: Talza" mission
+		q(43357),	-- Tracking Quest: Graham Silverclaw - completed the "Gathering the Dreamweavers: Graham Silverclaw" mission
 	}),
 });
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-
-	}),
-}));
--- #endif

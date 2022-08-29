@@ -1111,48 +1111,28 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(40842),	-- Rogue Order Hall - Kingslayers Chosen
-	q(40843),	-- Rogue Order Hall - Dreadblades Chosen
-	q(40844),	-- Rogue Order Hall - Fangs of the Devourer Chosen
-	q(42061),	-- Rogue Order Hall - Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
-	q(43634),	-- Rogue Order Hall - looted the rogue vault
-	q(43716),	-- Rogue Order Hall - loot spawned in the vault
-	q(43719),	-- Rogue Order Hall - Rare Item One Obtained (looted the Suspicious Crate toy)
-	q(44036),	-- Rogue Order Hall - Assassination Chosen second
-	q(44037),	-- Rogue Order Hall - Combat Chosen
-	q(44038),	-- Rogue Order Hall - Subtlety Chosen second
-	q(44376),	-- Rogue Order Hall - Assassination Chosen
-	q(44377),	-- Rogue Order Hall - Combat Chosen
-	q(44378),	-- Rogue Order Hall - Subtlety Chosen third
-	q(44615),	-- Rogue Order Hall - Tracking Quest: Mission 1 (complete first of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-	q(44617),	-- Rogue Order Hall - Tracking Quest: Mission 2 (complete second of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-	q(44618),	-- Rogue Order Hall - Tracking Quest: Mission 3 (complete third of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-	q(44619),	-- Rogue Order Hall - Tracking Quest: Mission 4 (complete fourth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-	q(44620),	-- Rogue Order Hall - Tracking Quest: Mission 5 (complete fifth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-	q(44621),	-- Rogue Order Hall - Tracking Quest: Mission 1
-	q(44622),	-- Rogue Order Hall - Tracking Quest: Mission 2
-	q(44623),	-- Rogue Order Hall - Tracking Quest: Mission 3
-	q(44625),	-- Rogue Order Hall - Tracking Quest: Mission 4
-	q(44626),	-- Rogue Order Hall - Tracking Quest: Mission 5
-	q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
-	q(44652),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition (triggers when completing the "Convincin' Old Yancey" mission)
-	q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
-	q(46790),	-- Rogue Order Hall - triggered when completing A Hero's Weapon (artifact appearances after finishing class campaigh)
-	q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
-	q(44871),	-- 7.1 World - 850 - Special - Moroes 1
-	q(44872),	-- 7.1 World - 850 - Special - Moroes 2
-	q(43720),	-- picking up 'Scroll of Teleport: Ravenholdt (itemid 139590) in the Uncrowned Vault'
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43823),	-- Hidden History
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(44871),	-- 7.1 World - 850 - Special - Moroes 1
+		q(44872),	-- 7.1 World - 850 - Special - Moroes 2
+		q(42061),	-- Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
+		q(43634),	-- Looted Rogue Vault
+		q(50804),	-- Opened the way to the order hall for the first time during "Call of The Uncrowned" (questID 40832)
+		q(43716),	-- Rogue Vault Rare Triggered
+		q(43719),	-- Rare Item One Obtained - looted the "Suspicious Crate" toy (itemID 139587)
+		q(43720),	-- Rare Item Two Obtained - picking up the "Scroll of Teleport: Ravenholdt" (itemID 139590) in the Uncrowned Vault
+		q(44615),	-- Tracking Quest: Mission 1 - completed the "Throwing SI:7 Off the Trail: Dalaran" mission
+		q(44617),	-- Tracking Quest: Mission 2 - completed the "Throwing SI:7 Off the Trail: Stormheim" mission
+		q(44618),	-- Tracking Quest: Mission 3 - completed the "Throwing SI:7 Off the Trail: Azsuna" mission
+		q(44619),	-- Tracking Quest: Mission 4 - completed the "Throwing SI:7 Off the Trail: Highmountain" mission
+		q(44620),	-- Tracking Quest: Mission 5 - completed the "Throwing SI:7 Off the Trail: Suramar" mission
+		q(44621),	-- Tracking Quest: Mission 1 - completed the "Where In the World is Mathias?: Obvious Start" mission
+		q(44622),	-- Tracking Quest: Mission 2 - completed the "Where In the World is Mathias?: Black Rook Hold" mission
+		q(44623),	-- Tracking Quest: Mission 3 - completed the "Where In the World is Mathias?: Altar of End Times" mission
+		q(44625),	-- Tracking Quest: Mission 4 - completed the "Where In the World is Mathias?: Gates of Valor" mission
+		q(44626),	-- Tracking Quest: Mission 5 - completed the "Where In the World is Mathias?: SI:7" mission
+		q(44651),	-- Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission - completed the "Spy Vs Spy" mission
+		q(44652),	-- Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition - completed the "Convincin' Old Yancey" mission
+		q(45447),	-- Turned In Marin's Coin - give a Noggenfogger coin to Marin Noggenfogger
 	}),
-}));
--- #endif
+});
