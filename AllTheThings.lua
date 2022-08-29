@@ -10017,7 +10017,9 @@ local fields = {
 		else
 			-- append the name of the Source Instance which contains this diffculty group to help distinguish (LFR Queue NPCs)
 			parentInstance = t.sourceParent;
-			text = sformat("%s [%s]", text, parentInstance and parentInstance.text or UNKNOWN);
+			if parentInstance then
+				text = sformat("%s [%s]", text, parentInstance and parentInstance.text or UNKNOWN);
+			end
 			return text;
 		end
 	end,
