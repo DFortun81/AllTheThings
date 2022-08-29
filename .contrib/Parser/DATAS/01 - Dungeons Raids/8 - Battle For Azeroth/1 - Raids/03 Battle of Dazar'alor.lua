@@ -38,6 +38,16 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(165765),	-- Cord of Zandalari Resolve
@@ -52,10 +62,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 				}),
 				ach(13286, 13289, {	-- Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2344, {	-- Champion of the Light	-- 2333 Horde
 							["crs"] = {
@@ -151,10 +157,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 				}),
 				ach(13287, 13290, {	-- Empire's Fall (A) / Death's Bargain (H)
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2342, {	-- Opulence
 							["crs"] = {
@@ -254,10 +256,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 				}),
 				ach(13288, 13291, {	-- Might of the Alliance (A) / Victory or Death (H)
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2334, {	-- High Tinker Mekkatorque
 							["crs"] = { 144796 },	-- High Tinker Mekkatorque

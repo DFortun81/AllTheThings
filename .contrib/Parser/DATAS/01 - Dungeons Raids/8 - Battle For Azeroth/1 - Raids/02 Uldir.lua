@@ -118,6 +118,16 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 					},
 				}),
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(17,  {	-- LFR
 				n(ZONE_DROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
@@ -131,10 +141,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 				}),
 				ach(12521, {	-- Halls of Containment
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2168, {	-- Taloc
 							["crs"] = {
@@ -212,10 +218,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 				}),
 				ach(12522, {	-- Crimson Descent
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2146, {	-- Fetid Devourer
 							["crs"] = {
@@ -278,10 +280,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }
 				}),
 				ach(12523, {	-- Heart of Corruption
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2194, {	-- Mythrax the Unraveler
 							["crs"] = { 134546 },	-- Mythrax the Unraveler

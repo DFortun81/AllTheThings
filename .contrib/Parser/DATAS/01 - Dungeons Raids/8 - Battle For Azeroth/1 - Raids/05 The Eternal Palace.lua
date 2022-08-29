@@ -73,6 +73,16 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
@@ -87,10 +97,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13718, {	-- The Grand Reception
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
 							["creatureID"] = 151881,
@@ -171,10 +177,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13719, {	-- Depths of the Devoted
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
 							["creatureID"] = 152236,
@@ -250,10 +252,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13725, {	-- The Circle of Stars
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 							["creatureID"] = 150859,
