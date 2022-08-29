@@ -21,7 +21,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					crit(2, {	-- Gaiagantic
 						["crs"] = { 181223 },
-						["description"] = "Only Available during the Daily Quest: Overgrown Story(64785).",
+						["description"] = "Only Available during the Daily Quest: Overgrown Story (64785).",
 						["coord"] = { 60.9, 64.4, ZERETH_MORTIS },
 					}),
 					crit(3, {
