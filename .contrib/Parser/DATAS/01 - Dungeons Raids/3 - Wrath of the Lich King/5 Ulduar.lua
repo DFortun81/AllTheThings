@@ -108,30 +108,28 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 			}),
 			d(14, {	-- Normal
 				n(ZONE_DROPS, {
-					["groups"] = {
-						i(46351),	-- Bloodcrush Cudgel
-						i(45605),	-- Daschal's Bite
-						i(46350),	-- Pillar of Fortitude
-						i(46342),	-- Golemheart Longbow
-						i(46339),	-- Mimiron's Repeater
-						i(46343),	-- Fervor of the Protectorate
-						i(45539),	-- Pendant of Focused Energies
-						i(45538),	-- Titanstone Pendant
-						i(46344),	-- Iceshear Mantle
-						i(45543),	-- Shoulders of Misfortune
-						i(46341),	-- Drape of the Spellweaver
-						i(46347),	-- Cloak of the Dormant Blaze
-						i(45541),	-- Shroud of Alteration
-						i(46345),	-- Bracers of Righteous Reformation
-						i(46340),	-- Adamant Handguards
-						i(45549),	-- Grips of Chaos
-						i(45548),	-- Belt of the Sleeper
-						i(45547),	-- Relic Hunter's Cord
-						i(45544),	-- Leggings of the Tortured Earth
-						i(46346),	-- Boots of Unsettled Prey
-						i(45542),	-- Greaves of the Stonewarder
-						i(45540),	-- Bladebearer's Signet
-					},
+					i(46351),	-- Bloodcrush Cudgel
+					i(45605),	-- Daschal's Bite
+					i(46350),	-- Pillar of Fortitude
+					i(46342),	-- Golemheart Longbow
+					i(46339),	-- Mimiron's Repeater
+					i(46343),	-- Fervor of the Protectorate
+					i(45539),	-- Pendant of Focused Energies
+					i(45538),	-- Titanstone Pendant
+					i(46344),	-- Iceshear Mantle
+					i(45543),	-- Shoulders of Misfortune
+					i(46341),	-- Drape of the Spellweaver
+					i(46347),	-- Cloak of the Dormant Blaze
+					i(45541),	-- Shroud of Alteration
+					i(46345),	-- Bracers of Righteous Reformation
+					i(46340),	-- Adamant Handguards
+					i(45549),	-- Grips of Chaos
+					i(45548),	-- Belt of the Sleeper
+					i(45547),	-- Relic Hunter's Cord
+					i(45544),	-- Leggings of the Tortured Earth
+					i(46346),	-- Boots of Unsettled Prey
+					i(45542),	-- Greaves of the Stonewarder
+					i(45540),	-- Bladebearer's Signet
 				}),
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -372,7 +370,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					ach(12324),	-- Hot Pocket
 					ach(12323),	-- Shattered
 					ach(12325),	-- Stokin' the Furnace
-					i(142086),	-- Red-Hot Coal (PET!)
+					i(142086, {	-- Red-Hot Coal (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45171),	-- Intensity
 					i(45311),	-- Relentless Edge
 					i(45165),	-- Worldcarver
@@ -401,7 +401,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				cr(33186, e(1639, {	-- Razorscale
 					ach(12321),	-- A Quick Shave
 					ach(12322),	-- Iron Dwarf, Medium Rare
-					i(142087),	-- Ironbound Collar (PET!)
+					i(142087, {	-- Ironbound Collar (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45147),	-- Guiding Star
 					i(45298),	-- Razorscale Talon
 					i(45142),	-- Remorse
@@ -478,9 +480,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					}),
 					ach(3316, {	-- Herald of the Titans
 						-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-						-- #IF AFTER SHADOWLANDS
+						-- #if AFTER SHADOWLANDS
 						["lockCriteria"] = { 1, "lvl", 31 },
-						-- #ENDIF
+						-- #endif
 						["g"] = {
 							title(131),	-- , Herald of the Titans
 						},
@@ -565,7 +567,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					}),
 					ach(12333),	-- I Choose You, Stormcaller Brundir
-					i(142088),	-- Stormforged Rune (PET!)
+					i(142088, {	-- Stormforged Rune (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45234),	-- Rapture
 					i(45233),	-- Stormrune Edge
 					i(45331),	-- Rune-Etched Nightblade
@@ -625,7 +629,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				cr(33515, e(1643, {	-- Auriaya
 					ach(12341),	-- Crazy Cat Lady
 					ach(12342),	-- Nine Lives
-					i(142089),	-- Glittering Ball of Yarn (PET!)
+					i(142089, {	-- Glittering Ball of Yarn (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45437),	-- Runescribed Blade
 					i(45315),	-- Stonerender
 					i(45713),	-- Nurturing Touch
@@ -675,8 +681,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45650),	-- Leggings of the Wayward Conqueror
 					i(45651),	-- Leggings of the Wayward Protector
 					i(45652),	-- Leggings of the Wayward Vanquisher
-					i(142090),	-- Ominous Pile of Snow (PET!)
-					i(138800),	-- Illusion: Blade Ward
+					i(142090, {	-- Ominous Pile of Snow (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45458),	-- Stormedge
 					i(45872),	-- Avalanche
 					i(45450),	-- Northern Barrier
@@ -718,7 +728,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45659),	-- Spaulders of the Wayward Conqueror
 					i(45660),	-- Spaulders of the Wayward Protector
 					i(45661),	-- Spaulders of the Wayward Vanquisher
-					i(138800),	-- Illusion: Blade Ward
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45892),	-- Legacy of Thunder
 					i(45463),	-- Vulmir, the Northern Tempest
 					i(45893),	-- Guise of the Midgard Serpent
@@ -761,7 +773,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45653),	-- Legplates of the Wayward Conqueror
 					i(45654),	-- Legplates of the Wayward Protector
 					i(45655),	-- Legplates of the Wayward Vanquisher
-					i(138800),	-- Illusion: Blade Ward
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45479),	-- The Lifebinder
 					i(45934),	-- Unraveling Reach
 					i(45935),	-- Ironbark Faceguard
@@ -810,8 +824,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45647),	-- Helm of the Wayward Conqueror
 						i(45648),	-- Helm of the Wayward Protector
 						i(45649),	-- Helm of the Wayward Vanquisher
-						i(138800),	-- Illusion: Blade Ward
-						i(142092),	-- Overcomplicated Controller (PET!)
+						i(138800, {	-- Illusion: Blade Ward
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(142092, {	-- Overcomplicated Controller (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						i(45489),	-- Insanity's Grip
 						i(45972),	-- Pulse Baton
 						i(45492),	-- Malleable Steelweave Mantle
@@ -904,8 +922,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45656),	-- Mantle of the Wayward Conqueror
 					i(45657),	-- Mantle of the Wayward Protector
 					i(45658),	-- Mantle of the Wayward Vanquisher
-					i(138801),	-- Illusion: Blood Draining
-					i(142093),	-- Wriggling Darkness (PET!)
+					i(138801, {	-- Illusion: Blood Draining
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(142093, {	-- Wriggling Darkness (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(46016),	-- Abaddon
 					i(46025),	-- Devotion
 					i(45521),	-- Earthshaper

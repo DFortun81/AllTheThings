@@ -4,8 +4,8 @@
 root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	inst(757, {	-- Trial of the Crusader
 		["mapID"] = TRIAL_OF_THE_CRUSADER,
-		["maps"] = { 173 },
 		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
+		["maps"] = { 173 },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["lvl"] = 80,
@@ -92,6 +92,1063 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					}),
 				}),
 			}),
+			n(VENDORS, {
+				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
+					["coord"] = { 75.4, 21.6, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
+							-- DPS
+							
+
+							-- Tank
+							
+							
+							i(48372),	-- Wrynn's Battleplate of Conquest
+							i(48436),	-- Wrynn's Breastplate of Conquest
+							i(48375),	-- Wrynn's Gauntlets of Conquest
+							i(48429),	-- Wrynn's Greathelm of Conquest
+							i(48449),	-- Wrynn's Handguards of Conquest
+							i(48371),	-- Wrynn's Helmet of Conquest
+							i(48445),	-- Wrynn's Legguards of Conquest
+							i(48373),	-- Wrynn's Legplates of Conquest
+							i(48448),	-- Wrynn's Pauldrons of Conquest
+							i(48374),	-- Wrynn's Shoulderplates of Conquest
+						}),
+						cl(PALADIN, {	-- Turalyon's Garb (706)
+							-- DPS
+							
+
+							-- Tank
+							
+
+							-- Healer
+							
+							
+							i(48602),	-- Turalyon's Battleplate of Conquest
+							i(48632),	-- Turalyon's Breastplate of Conquest
+							i(48634),	-- Turalyon's Faceguard of Conquest
+							i(48603),	-- Turalyon's Gauntlets of Conquest
+							i(48574),	-- Turalyon's Gloves of Conquest
+							i(48568),	-- Turalyon's Greaves of Conquest
+							i(48633),	-- Turalyon's Handguards of Conquest
+							i(48564),	-- Turalyon's Headpiece of Conquest
+							i(48604),	-- Turalyon's Helm of Conquest
+							i(48635),	-- Turalyon's Legguards of Conquest
+							i(48605),	-- Turalyon's Legplates of Conquest
+							i(48636),	-- Turalyon's Shoulderguards of Conquest
+							i(48606),	-- Turalyon's Shoulderplates of Conquest
+							i(48572),	-- Turalyon's Spaulders of Conquest
+							i(48566),	-- Turalyon's Tunic of Conquest
+						}),
+						cl(HUNTER, {	-- Windrunner's Battlegear (739)
+							i(48250),	-- Windrunner's Headpiece of Conquest
+							i(48253),	-- Windrunner's Spaulders of Conquest
+							i(48251),	-- Windrunner's Tunic of Conquest
+							i(48254),	-- Windrunner's Handguards of Conquest
+							i(48252),	-- Windrunner's Legguards of Conquest
+						}),
+						cl(ROGUE, {		-- VanCleef's Battlegear (690)
+							i(48218),	-- VanCleef's Helmet of Conquest
+							i(48221),	-- VanCleef's Pauldrons of Conquest
+							i(48219),	-- VanCleef's Breastplate of Conquest
+							i(48222),	-- VanCleef's Gauntlets of Conquest
+							i(48220),	-- VanCleef's Legplates of Conquest
+						}),
+						cl(PRIEST, {	-- Velen's Regalia (349)
+							-- DPS
+							
+
+							-- Healer
+							
+							
+							i(48073),	-- Velen's Circlet of Conquest
+							i(47914),	-- Velen's Cowl of Conquest
+							i(47982),	-- Velen's Gloves of Conquest
+							i(48072),	-- Velen's Handwraps of Conquest
+							i(47980),	-- Velen's Leggings of Conquest
+							i(48076),	-- Velen's Mantle of Conquest
+							i(48074),	-- Velen's Pants of Conquest
+							i(48075),	-- Velen's Raiments of Conquest
+							i(47936),	-- Velen's Robe of Conquest
+							i(47981),	-- Velen's Shoulderpads of Conquest
+						}),
+						cl(SHAMAN, {	-- Nobundo's Plate (640)
+							-- Elemental
+							
+
+							-- Enhancement
+							
+
+							-- Restoration
+							
+							i(48341),	-- Nobundo's Chestguard of Conquest
+							i(48343),	-- Nobundo's Faceguard of Conquest
+							i(48312),	-- Nobundo's Gloves of Conquest
+							i(48342),	-- Nobundo's Grips of Conquest
+							i(48284),	-- Nobundo's Handguards of Conquest
+							i(48310),	-- Nobundo's Hauberk of Conquest
+							i(48280),	-- Nobundo's Headpiece of Conquest
+							i(48313),	-- Nobundo's Helm of Conquest
+							i(48314),	-- Nobundo's Kilt of Conquest
+							i(48282),	-- Nobundo's Legguards of Conquest
+							i(48345),	-- Nobundo's Shoulderguards of Conquest
+							i(48315),	-- Nobundo's Shoulderpads of Conquest
+							i(48283),	-- Nobundo's Spaulders of Conquest
+							i(48281),	-- Nobundo's Tunic of Conquest
+							i(48344),	-- Nobundo's War-Kilt of Conquest
+						}),
+						cl(MAGE, {		-- Khadgar's Regalia (722)
+							i(47748),	-- Khadgar's Hood of Conquest
+							i(47751),	-- Khadgar's Shoulderpads of Conquest
+							i(47749),	-- Khadgar's Robe of Conquest
+							i(47752),	-- Khadgar's Gauntlets of Conquest
+							i(47750),	-- Khadgar's Leggings of Conquest
+						}),
+						cl(WARLOCK, {	-- Kel'Thuzad's Regalia (674)
+							i(47784),	-- Kel'Thuzad's Hood of Conquest
+							i(47787),	-- Kel'Thuzad's Shoulderpads of Conquest
+							i(47786),	-- Kel'Thuzad's Robe of Conquest
+							i(47783),	-- Kel'Thuzad's Gloves of Conquest
+							i(47785),	-- Kel'Thuzad's Leggings of Conquest
+						}),
+						cl(DRUID, {		-- Malfurion's Battlegear (825)
+							-- Boomkin
+							
+
+							-- Feral
+							
+
+							-- Restoration
+							
+							i(48158),	-- Malfurion's Cover of Conquest
+							i(48162),	-- Malfurion's Gloves of Conquest
+							i(48213),	-- Malfurion's Handgrips of Conquest
+							i(48132),	-- Malfurion's Handguards of Conquest
+							i(48214),	-- Malfurion's Headguard of Conquest
+							i(48102),	-- Malfurion's Headpiece of Conquest
+							i(48130),	-- Malfurion's Leggings of Conquest
+							i(48215),	-- Malfurion's Legguards of Conquest
+							i(48161),	-- Malfurion's Mantle of Conquest
+							i(48216),	-- Malfurion's Raiments of Conquest
+							i(48129),	-- Malfurion's Robe of Conquest
+							i(48217),	-- Malfurion's Shoulderpads of Conquest
+							i(48131),	-- Malfurion's Spaulders of Conquest
+							i(48160),	-- Malfurion's Trousers of Conquest
+							i(48159),	-- Malfurion's Vestments of Conquest
+						}),
+						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
+							-- DPS
+							
+							-- Tank
+							
+							
+							i(48474),	-- Thassarian's Battleplate of Conquest
+							i(48531),	-- Thassarian's Chestguard of Conquest
+							i(48529),	-- Thassarian's Faceguard of Conquest
+							i(48480),	-- Thassarian's Gauntlets of Conquest
+							i(48537),	-- Thassarian's Handguards of Conquest
+							i(48472),	-- Thassarian's Helmet of Conquest
+							i(48533),	-- Thassarian's Legguards of Conquest
+							i(48476),	-- Thassarian's Legplates of Conquest
+							i(48535),	-- Thassarian's Pauldrons of Conquest
+							i(48478),	-- Thassarian's Shoulderplates of Conquest
+						}),
+					},
+				}),
+				n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
+					["coord"] = { 75.4, 22.0, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
+							-- DPS
+							
+
+							-- Tank
+							i(48458),	-- Hellscream's Greathelm of Conquest
+							i(48388),	-- Hellscream's Helmet of Conquest
+							i(48460),	-- Hellscream's Pauldrons of Conquest
+							i(48390),	-- Hellscream's Shoulderplates of Conquest
+							i(48386),	-- Hellscream's Battleplate of Conquest
+							i(48456),	-- Hellscream's Breastplate of Conquest
+							i(48387),	-- Hellscream's Gauntlets of Conquest
+							i(48457),	-- Hellscream's Handguards of Conquest
+							i(48459),	-- Hellscream's Legguards of Conquest
+							i(48389),	-- Hellscream's Legplates of Conquest
+						}),
+						cl(PALADIN, {	-- Liadrin's Plate (707)
+							-- DPS
+							
+
+							-- Tank
+							
+
+							-- Healer
+							
+							
+							i(48631),	-- Liadrin's Battleplate of Conquest
+							i(48652),	-- Liadrin's Breastplate of Conquest
+							i(48654),	-- Liadrin's Faceguard of Conquest
+							i(48630),	-- Liadrin's Gauntlets of Conquest
+							i(48598),	-- Liadrin's Gloves of Conquest
+							i(48596),	-- Liadrin's Greaves of Conquest
+							i(48653),	-- Liadrin's Handguards of Conquest
+							i(48597),	-- Liadrin's Headpiece of Conquest
+							i(48629),	-- Liadrin's Helm of Conquest
+							i(48655),	-- Liadrin's Legguards of Conquest
+							i(48628),	-- Liadrin's Legplates of Conquest
+							i(48656),	-- Liadrin's Shoulderguards of Conquest
+							i(48627),	-- Liadrin's Shoulderplates of Conquest
+							i(48595),	-- Liadrin's Spaulders of Conquest
+							i(48599),	-- Liadrin's Tunic of Conquest
+						}),
+						cl(HUNTER, {	-- Windrunner's Pursuit (738)
+							i(48277),	-- Windrunner's Headpiece of Conquest
+							i(48279),	-- Windrunner's Spaulders of Conquest
+							i(48275),	-- Windrunner's Tunic of Conquest
+							i(48276),	-- Windrunner's Handguards of Conquest
+							i(48278),	-- Windrunner's Legguards of Conquest
+						}),
+						cl(ROGUE, {		-- Garona's Battlegear (691)
+							i(48245),	-- Garona's Helmet of Conquest
+							i(48247),	-- Garona's Pauldrons of Conquest
+							i(48243),	-- Garona's Breastplate of Conquest
+							i(48244),	-- Garona's Gauntlets of Conquest
+							i(48246),	-- Garona's Legplates of Conquest
+						}),
+						cl(PRIEST, {	-- Zabra's Regalia (350)
+							-- DPS
+							
+
+							-- Healer
+							
+							
+							i(48098),	-- Zabra's Circlet of Conquest
+							i(48068),	-- Zabra's Cowl of Conquest
+							i(48067),	-- Zabra's Gloves of Conquest
+							i(48097),	-- Zabra's Handwraps of Conquest
+							i(48069),	-- Zabra's Leggings of Conquest
+							i(48101),	-- Zabra's Mantle of Conquest
+							i(48099),	-- Zabra's Pants of Conquest
+							i(48100),	-- Zabra's Raiments of Conquest
+							i(48070),	-- Zabra's Robe of Conquest
+							i(48071),	-- Zabra's Shoulderpads of Conquest
+						}),
+						cl(SHAMAN, {	-- Thrall's Garb (641)
+							-- Elemental
+							
+
+							-- Enhancement
+							
+
+							-- Restoration
+							
+							i(48366),	-- Thrall's Chestguard of Conquest
+							i(48368),	-- Thrall's Faceguard of Conquest
+							i(48337),	-- Thrall's Gloves of Conquest
+							i(48367),	-- Thrall's Grips of Conquest
+							i(48296),	-- Thrall's Handguards of Conquest
+							i(48336),	-- Thrall's Hauberk of Conquest
+							i(48297),	-- Thrall's Headpiece of Conquest
+							i(48338),	-- Thrall's Helm of Conquest
+							i(48339),	-- Thrall's Kilt of Conquest
+							i(48298),	-- Thrall's Legguards of Conquest
+							i(48370),	-- Thrall's Shoulderguards of Conquest
+							i(48340),	-- Thrall's Shoulderpads of Conquest
+							i(48299),	-- Thrall's Spaulders of Conquest
+							i(48295),	-- Thrall's Tunic of Conquest
+							i(48369),	-- Thrall's War-Kilt of Conquest
+						}),
+						cl(MAGE, {		-- Sunstrider's Regalia (723)
+							i(47774),	-- Sunstrider's Hood of Conquest
+							i(47777),	-- Sunstrider's Shoulderpads of Conquest
+							i(47776),	-- Sunstrider's Robe of Conquest
+							i(47773),	-- Sunstrider's Gauntlets of Conquest
+							i(47775),	-- Sunstrider's Leggings of Conquest
+						}),
+						cl(WARLOCK, {	-- Gul'dan's Regalia (675)
+							i(47801),	-- Gul'dan's Hood of Conquest
+							i(47798),	-- Gul'dan's Shoulderpads of Conquest
+							i(47799),	-- Gul'dan's Robe of Conquest
+							i(47802),	-- Gul'dan's Gloves of Conquest
+							i(47800),	-- Gul'dan's Leggings of Conquest
+						}),
+						cl(DRUID, {		-- Runetotem's Battlegear (826)
+							-- Boomkin
+							
+
+							-- Feral
+							
+
+							-- Restoration
+							
+							
+							i(48184),	-- Runetotem's Cover of Conquest
+							i(48183),	-- Runetotem's Gloves of Conquest
+							i(48192),	-- Runetotem's Handgrips of Conquest
+							i(48153),	-- Runetotem's Handguards of Conquest
+							i(48188),	-- Runetotem's Headguard of Conquest
+							i(48154),	-- Runetotem's Headpiece of Conquest
+							i(48155),	-- Runetotem's Leggings of Conquest
+							i(48190),	-- Runetotem's Legguards of Conquest
+							i(48187),	-- Runetotem's Mantle of Conquest
+							i(48189),	-- Runetotem's Raiments of Conquest
+							i(48156),	-- Runetotem's Robe of Conquest
+							i(48191),	-- Runetotem's Shoulderpads of Conquest
+							i(48157),	-- Runetotem's Spaulders of Conquest
+							i(48185),	-- Runetotem's Trousers of Conquest
+							i(48186),	-- Runetotem's Vestments of Conquest
+						}),
+						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
+							-- DPS
+							
+							-- Tank
+							
+							
+							i(48501),	-- Koltira's Battleplate of Conquest
+							i(48558),	-- Koltira's Chestguard of Conquest
+							i(48560),	-- Koltira's Faceguard of Conquest
+							i(48502),	-- Koltira's Gauntlets of Conquest
+							i(48559),	-- Koltira's Handguards of Conquest
+							i(48503),	-- Koltira's Helmet of Conquest
+							i(48561),	-- Koltira's Legguards of Conquest
+							i(48504),	-- Koltira's Legplates of Conquest
+							i(48562),	-- Koltira's Pauldrons of Conquest
+							i(48505),	-- Koltira's Shoulderpads of Conquest
+						}),
+					},
+				}),
+				n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
+					["coord"] = { 75.2, 22.0, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								-- DPS
+								
+
+								-- Tank
+								
+								
+								i(48398),	-- Hellscream's Helmet of Triumph
+								i(48400),	-- Hellscream's Battleplate of Triumph
+								i(48396),	-- Hellscream's Shoulderplates of Triumph
+								i(48397),	-- Hellscream's Gauntlets of Triumph
+								i(48399),	-- Hellscream's Legplates of Triumph
+								i(48468),	-- Hellscream's Greathelm of Triumph
+								i(48470),	-- Hellscream's Pauldrons of Triumph
+								i(48466),	-- Hellscream's Breastplate of Triumph
+								i(48467),	-- Hellscream's Handguards of Triumph
+								i(48469),	-- Hellscream's Legguards of Triumph
+							},
+						}),
+						cl(PALADIN, {	-- Liadrin's Plate (707)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								-- DPS
+								
+
+								-- Tank
+								
+
+								-- Healer
+								
+								i(48587),	-- Liadrin's Headpiece of Triumph
+								i(48585),	-- Liadrin's Spaulders of Triumph
+								i(48589),	-- Liadrin's Tunic of Triumph
+								i(48588),	-- Liadrin's Gloves of Triumph
+								i(48586),	-- Liadrin's Greaves of Triumph
+								i(48649),	-- Liadrin's Faceguard of Triumph
+								i(48647),	-- Liadrin's Shoulderguards of Triumph
+								i(48651),	-- Liadrin's Breastplate of Triumph
+								i(48650),	-- Liadrin's Handguards of Triumph
+								i(48648),	-- Liadrin's Legguards of Triumph
+								i(48619),	-- Liadrin's Helm of Triumph
+								i(48621),	-- Liadrin's Shoulderplates of Triumph
+								i(48617),	-- Liadrin's Battleplate of Triumph
+								i(48618),	-- Liadrin's Gauntlets of Triumph
+								i(48620),	-- Liadrin's Legplates of Triumph
+							},
+						}),
+						cl(HUNTER, {	-- Windrunner's Pursuit (738)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								i(48267),	-- Windrunner's Headpiece of Triumph
+								i(48269),	-- Windrunner's Spaulders of Triumph
+								i(48265),	-- Windrunner's Tunic of Triumph
+								i(48266),	-- Windrunner's Handguards of Triumph
+								i(48268),	-- Windrunner's Legguards of Triumph
+							},
+						}),
+						cl(ROGUE, {		-- Garona's Battlegear (691)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								i(48235),	-- Garona's Helmet of Triumph
+								i(48237),	-- Garona's Pauldrons of Triumph
+								i(48233),	-- Garona's Breastplate of Triumph
+								i(48234),	-- Garona's Gauntlets of Triumph
+								i(48236),	-- Garona's Legplates of Triumph
+							},
+						}),
+						cl(PRIEST, {	-- Zabra's Regalia (350)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								-- DPS
+								
+
+								-- Healer
+								
+								i(48058),	-- Zabra's Cowl of Triumph
+								i(48061),	-- Zabra's Shoulderpads of Triumph
+								i(48060),	-- Zabra's Robe of Triumph
+								i(48057),	-- Zabra's Gloves of Triumph
+								i(48059),	-- Zabra's Leggings of Triumph
+								i(48088),	-- Zabra's Circlet of Triumph
+								i(48091),	-- Zabra's Mantle of Triumph
+								i(48090),	-- Zabra's Raiments of Triumph
+								i(48087),	-- Zabra's Handwraps of Triumph
+								i(48089),	-- Zabra's Pants of Triumph
+							},
+						}),
+						cl(SHAMAN, {	-- Thrall's Garb (641)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								-- Elemental
+								
+
+								-- Enhancement
+								
+
+								-- Restoration
+								
+								i(48328),	-- Thrall's Helm of Triumph
+								i(48330),	-- Thrall's Shoulderpads of Triumph
+								i(48326),	-- Thrall's Hauberk of Triumph
+								i(48327),	-- Thrall's Gloves of Triumph
+								i(48329),	-- Thrall's Kilt of Triumph
+								i(48358),	-- Thrall's Faceguard of Triumph
+								i(48360),	-- Thrall's Shoulderguards of Triumph
+								i(48356),	-- Thrall's Chestguard of Triumph
+								i(48357),	-- Thrall's Grips of Triumph
+								i(48359),	-- Thrall's War-Kilt of Triumph
+								i(48307),	-- Thrall's Headpiece of Triumph
+								i(48309),	-- Thrall's Spaulders of Triumph
+								i(48305),	-- Thrall's Tunic of Triumph
+								i(48306),	-- Thrall's Handguards of Triumph
+								i(48308),	-- Thrall's Legguards of Triumph
+							},
+						}),
+						cl(MAGE, {		-- Sunstrider's Regalia (723)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								i(47764),	-- Sunstrider's Hood of Triumph
+								i(47767),	-- Sunstrider's Shoulderpads of Triumph
+								i(47766),	-- Sunstrider's Robe of Triumph
+								i(47763),	-- Sunstrider's Gauntlets of Triumph
+								i(47765),	-- Sunstrider's Leggings of Triumph
+							},
+						}),
+						cl(WARLOCK, {	-- Gul'dan's Regalia (675)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								i(47796),	-- Gul'dan's Hood of Triumph
+								i(47793),	-- Gul'dan's Shoulderpads of Triumph
+								i(47794),	-- Gul'dan's Robe of Triumph
+								i(47797),	-- Gul'dan's Gloves of Triumph
+								i(47795),	-- Gul'dan's Leggings of Triumph
+							},
+						}),
+						cl(DRUID, {		-- Runetotem's Battlegear (826)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								-- Boomkin
+								
+
+								-- Feral
+								
+
+								-- Restoration
+								
+								i(48201),	-- Runetotem's Headguard of Triumph
+								i(48198),	-- Runetotem's Shoulderpads of Triumph
+								i(48199),	-- Runetotem's Raiments of Triumph
+								i(48202),	-- Runetotem's Handgrips of Triumph
+								i(48200),	-- Runetotem's Legguards of Triumph
+								i(48174),	-- Runetotem's Cover of Triumph
+								i(48177),	-- Runetotem's Mantle of Triumph
+								i(48176),	-- Runetotem's Vestments of Triumph
+								i(48173),	-- Runetotem's Gloves of Triumph
+								i(48175),	-- Runetotem's Trousers of Triumph
+								i(48144),	-- Runetotem's Headpiece of Triumph
+								i(48147),	-- Runetotem's Spaulders of Triumph
+								i(48146),	-- Runetotem's Robe of Triumph
+								i(48143),	-- Runetotem's Handguards of Triumph
+								i(48145),	-- Runetotem's Leggings of Triumph
+							},
+						}),
+						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								-- DPS
+								
+								-- Tank
+								
+								i(48550),	-- Koltira's Faceguard of Triumph
+								i(48552),	-- Koltira's Pauldrons of Triumph
+								i(48548),	-- Koltira's Chestguard of Triumph
+								i(48549),	-- Koltira's Handguards of Triumph
+								i(48551),	-- Koltira's Legguards of Triumph
+								i(48493),	-- Koltira's Helmet of Triumph
+								i(48495),	-- Koltira's Shoulderpads of Triumph
+								i(48491),	-- Koltira's Battleplate of Triumph
+								i(48492),	-- Koltira's Gauntlets of Triumph
+								i(48494),	-- Koltira's Legplates of Triumph
+							},
+						}),
+					},
+				}),
+				n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
+					["coord"] = { 75.2, 21.6, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								-- DPS
+								
+
+								-- Tank
+								
+								
+								i(48385),	-- Wrynn's Battleplate of Triumph
+								i(48451),	-- Wrynn's Breastplate of Triumph
+								i(48384),	-- Wrynn's Gauntlets of Triumph
+								i(48433),	-- Wrynn's Greathelm of Triumph
+								i(48453),	-- Wrynn's Handguards of Triumph
+								i(48383),	-- Wrynn's Helmet of Triumph
+								i(48447),	-- Wrynn's Legguards of Triumph
+								i(48382),	-- Wrynn's Legplates of Triumph
+								i(48455),	-- Wrynn's Pauldrons of Triumph
+								i(48381),	-- Wrynn's Shoulderplates of Triumph
+							},
+						}),
+						cl(PALADIN, {	-- Turalyon's Garb (706)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								-- DPS
+								
+
+								-- Tank
+								
+
+								-- Healer
+								
+								i(48616),	-- Turalyon's Battleplate of Triumph
+								i(48642),	-- Turalyon's Breastplate of Triumph
+								i(48644),	-- Turalyon's Faceguard of Triumph
+								i(48615),	-- Turalyon's Gauntlets of Triumph
+								i(48583),	-- Turalyon's Gloves of Triumph
+								i(48581),	-- Turalyon's Greaves of Triumph
+								i(48643),	-- Turalyon's Handguards of Triumph
+								i(48582),	-- Turalyon's Headpiece of Triumph
+								i(48614),	-- Turalyon's Helm of Triumph
+								i(48645),	-- Turalyon's Legguards of Triumph
+								i(48613),	-- Turalyon's Legplates of Triumph
+								i(48646),	-- Turalyon's Shoulderguards of Triumph
+								i(48612),	-- Turalyon's Shoulderplates of Triumph
+								i(48580),	-- Turalyon's Spaulders of Triumph
+								i(48584),	-- Turalyon's Tunic of Triumph
+							},
+						}),
+						cl(HUNTER, {	-- Windrunner's Battlegear (739)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								i(48262),	-- Windrunner's Headpiece of Triumph
+								i(48260),	-- Windrunner's Spaulders of Triumph
+								i(48264),	-- Windrunner's Tunic of Triumph
+								i(48263),	-- Windrunner's Handguards of Triumph
+								i(48261),	-- Windrunner's Legguards of Triumph
+							},
+						}),
+						cl(ROGUE, {		-- VanCleef's Battlegear (690)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								i(48230),	-- VanCleef's Helmet of Triumph
+								i(48228),	-- VanCleef's Pauldrons of Triumph
+								i(48232),	-- VanCleef's Breastplate of Triumph
+								i(48231),	-- VanCleef's Gauntlets of Triumph
+								i(48229),	-- VanCleef's Legplates of Triumph
+							},
+						}),
+						cl(PRIEST, {	-- Velen's Regalia (349)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								-- DPS
+								
+
+								-- Healer
+								
+								i(48085),	-- Velen's Circlet of Triumph
+								i(48035),	-- Velen's Cowl of Triumph
+								i(48037),	-- Velen's Gloves of Triumph
+								i(48086),	-- Velen's Handwraps of Triumph
+								i(48033),	-- Velen's Leggings of Triumph
+								i(48082),	-- Velen's Mantle of Triumph
+								i(48084),	-- Velen's Pants of Triumph
+								i(48083),	-- Velen's Raiments of Triumph
+								i(48031),	-- Velen's Robe of Triumph
+								i(48029),	-- Velen's Shoulderpads of Triumph
+							},
+						}),
+						cl(SHAMAN, {	-- Nobundo's Plate (640)
+							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							["groups"] = {
+								-- Elemental
+								
+
+								-- Enhancement
+								
+
+								-- Restoration
+								
+								
+								i(48355),	-- Nobundo's Chestguard of Triumph
+								i(48353),	-- Nobundo's Faceguard of Triumph
+								i(48324),	-- Nobundo's Gloves of Triumph
+								i(48354),	-- Nobundo's Grips of Triumph
+								i(48293),	-- Nobundo's Handguards of Triumph
+								i(48325),	-- Nobundo's Hauberk of Triumph
+								i(48292),	-- Nobundo's Headpiece of Triumph
+								i(48323),	-- Nobundo's Helm of Triumph
+								i(48322),	-- Nobundo's Kilt of Triumph
+								i(48291),	-- Nobundo's Legguards of Triumph
+								i(48351),	-- Nobundo's Shoulderguards of Triumph
+								i(48321),	-- Nobundo's Shoulderpads of Triumph
+								i(48290),	-- Nobundo's Spaulders of Triumph
+								i(48294),	-- Nobundo's Tunic of Triumph
+								i(48352),	-- Nobundo's War-Kilt of Triumph
+							},
+						}),
+						cl(MAGE, {		-- Khadgar's Regalia (722)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								i(47761),	-- Khadgar's Hood of Triumph
+								i(47758),	-- Khadgar's Shoulderpads of Triumph
+								i(47759),	-- Khadgar's Robe of Triumph
+								i(47762),	-- Khadgar's Gauntlets of Triumph
+								i(47760),	-- Khadgar's Leggings of Triumph
+							},
+						}),
+						cl(WARLOCK, {	-- Kel'Thuzad's Regalia (674)
+							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							["groups"] = {
+								i(47788),	-- Kel'Thuzad's Gloves of Triumph
+								i(47789),	-- Kel'Thuzad's Hood of Triumph
+								i(47790),	-- Kel'Thuzad's Leggings of Triumph
+								i(47791),	-- Kel'Thuzad's Robe of Triumph
+								i(47792),	-- Kel'Thuzad's Shoulderpads of Triumph
+							},
+						}),
+						cl(DRUID, {		-- Malfurion's Battlegear (825)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								-- Boomkin
+								
+
+								-- Feral
+								
+
+								-- Restoration
+								
+								i(48171),	-- Malfurion's Cover of Triumph
+								i(48172),	-- Malfurion's Gloves of Triumph
+								i(48203),	-- Malfurion's Handgrips of Triumph
+								i(48142),	-- Malfurion's Handguards of Triumph
+								i(48204),	-- Malfurion's Headguard of Triumph
+								i(48141),	-- Malfurion's Headpiece of Triumph
+								i(48140),	-- Malfurion's Leggings of Triumph
+								i(48205),	-- Malfurion's Legguards of Triumph
+								i(48168),	-- Malfurion's Mantle of Triumph
+								i(48206),	-- Malfurion's Raiments of Triumph
+								i(48139),	-- Malfurion's Robe of Triumph
+								i(48207),	-- Malfurion's Shoulderpads of Triumph
+								i(48138),	-- Malfurion's Spaulders of Triumph
+								i(48170),	-- Malfurion's Trousers of Triumph
+								i(48169),	-- Malfurion's Vestments of Triumph
+							},
+						}),
+						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
+							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							["groups"] = {
+								-- DPS
+								
+								-- Tank
+								i(48490),	-- Thassarian's Battleplate of Triumph
+								i(48547),	-- Thassarian's Chestguard of Triumph
+								i(48545),	-- Thassarian's Faceguard of Triumph
+								i(48489),	-- Thassarian's Gauntlets of Triumph
+								i(48546),	-- Thassarian's Handguards of Triumph
+								i(48488),	-- Thassarian's Helmet of Triumph
+								i(48544),	-- Thassarian's Legguards of Triumph
+								i(48487),	-- Thassarian's Legplates of Triumph
+								i(48543),	-- Thassarian's Pauldrons of Triumph
+								i(48486),	-- Thassarian's Shoulderplates of Triumph
+							},
+						}),
+					}),
+				}),
+				n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
+					["coord"] = { 75.4, 22.0, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					-- #endif
+					["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
+							-- DPS
+							
+
+							-- Tank
+							
+							
+							i(48391),	-- Hellscream's Battleplate of Triumph
+							i(48461),	-- Hellscream's Breastplate of Triumph
+							i(48392),	-- Hellscream's Gauntlets of Triumph
+							i(48463),	-- Hellscream's Greathelm of Triumph
+							i(48462),	-- Hellscream's Handguards of Triumph
+							i(48393),	-- Hellscream's Helmet of Triumph
+							i(48464),	-- Hellscream's Legguards of Triumph
+							i(48394),	-- Hellscream's Legplates of Triumph
+							i(48465),	-- Hellscream's Pauldrons of Triumph
+							i(48395),	-- Hellscream's Shoulderplates of Triumph
+						}),
+						cl(PALADIN, {	-- Liadrin's Plate (707)
+							-- DPS
+							
+
+							-- Tank
+							
+
+							-- Healer
+							
+							
+							i(48626),	-- Liadrin's Battleplate of Triumph
+							i(48657),	-- Liadrin's Breastplate of Triumph
+							i(48659),	-- Liadrin's Faceguard of Triumph
+							i(48625),	-- Liadrin's Gauntlets of Triumph
+							i(48593),	-- Liadrin's Gloves of Triumph
+							i(48591),	-- Liadrin's Greaves of Triumph
+							i(48658),	-- Liadrin's Handguards of Triumph
+							i(48592),	-- Liadrin's Headpiece of Triumph
+							i(48624),	-- Liadrin's Helm of Triumph
+							i(48660),	-- Liadrin's Legguards of Triumph
+							i(48623),	-- Liadrin's Legplates of Triumph
+							i(48661),	-- Liadrin's Shoulderguards of Triumph
+							i(48622),	-- Liadrin's Shoulderplates of Triumph
+							i(48590),	-- Liadrin's Spaulders of Triumph
+							i(48594),	-- Liadrin's Tunic of Triumph
+						}),
+						cl(HUNTER, {	-- Windrunner's Pursuit (738)
+							i(48272),	-- Windrunner's Headpiece of Triumph
+							i(48270),	-- Windrunner's Spaulders of Triumph
+							i(48274),	-- Windrunner's Tunic of Triumph
+							i(48273),	-- Windrunner's Handguards of Triumph
+							i(48271),	-- Windrunner's Legguards of Triumph
+						}),
+						cl(ROGUE, {		-- Garona's Battlegear (691)
+							i(48240),	-- Garona's Helmet of Triumph
+							i(48238),	-- Garona's Pauldrons of Triumph
+							i(48242),	-- Garona's Breastplate of Triumph
+							i(48241),	-- Garona's Gauntlets of Triumph
+							i(48239),	-- Garona's Legplates of Triumph
+						}),
+						cl(PRIEST, {	-- Zabra's Regalia (350)
+							-- DPS
+							
+
+							-- Healer
+							
+							i(48095),	-- Zabra's Circlet of Triumph
+							i(48065),	-- Zabra's Cowl of Triumph
+							i(48066),	-- Zabra's Gloves of Triumph
+							i(48096),	-- Zabra's Handwraps of Triumph
+							i(48064),	-- Zabra's Leggings of Triumph
+							i(48092),	-- Zabra's Mantle of Triumph
+							i(48094),	-- Zabra's Pants of Triumph
+							i(48093),	-- Zabra's Raiments of Triumph
+							i(48063),	-- Zabra's Robe of Triumph
+							i(48062),	-- Zabra's Shoulderpads of Triumph
+						}),
+						cl(SHAMAN, {	-- Thrall's Garb (641)
+							-- Elemental
+							
+
+							-- Enhancement
+							
+
+							-- Restoration
+							
+							
+							i(48365),	-- Thrall's Chestguard of Triumph
+							i(48363),	-- Thrall's Faceguard of Triumph
+							i(48334),	-- Thrall's Gloves of Triumph
+							i(48364),	-- Thrall's Grips of Triumph
+							i(48301),	-- Thrall's Handguards of Triumph
+							i(48335),	-- Thrall's Hauberk of Triumph
+							i(48302),	-- Thrall's Headpiece of Triumph
+							i(48333),	-- Thrall's Helm of Triumph
+							i(48332),	-- Thrall's Kilt of Triumph
+							i(48303),	-- Thrall's Legguards of Triumph
+							i(48361),	-- Thrall's Shoulderguards of Triumph
+							i(48331),	-- Thrall's Shoulderpads of Triumph
+							i(48304),	-- Thrall's Spaulders of Triumph
+							i(48300),	-- Thrall's Tunic of Triumph
+							i(48362),	-- Thrall's War-Kilt of Triumph
+						}),
+						cl(MAGE, {		-- Sunstrider's Regalia (723)
+							i(47771),	-- Sunstrider's Hood of Triumph
+							i(47768),	-- Sunstrider's Shoulderpads of Triumph
+							i(47769),	-- Sunstrider's Robe of Triumph
+							i(47772),	-- Sunstrider's Gauntlets of Triumph
+							i(47770),	-- Sunstrider's Leggings of Triumph
+						}),
+						cl(WARLOCK, {	-- Gul'dan's Regalia (675)
+							i(47804),	-- Gul'dan's Hood of Triumph
+							i(47807),	-- Gul'dan's Shoulderpads of Triumph
+							i(47806),	-- Gul'dan's Robe of Triumph
+							i(47803),	-- Gul'dan's Gloves of Triumph
+							i(47805),	-- Gul'dan's Leggings of Triumph
+						}),
+						cl(DRUID, {		-- Runetotem's Battlegear (826)
+							-- Boomkin
+							
+
+							-- Feral
+							
+
+							-- Restoration
+							
+							i(48181),	-- Runetotem's Cover of Triumph
+							i(48182),	-- Runetotem's Gloves of Triumph
+							i(48193),	-- Runetotem's Handgrips of Triumph
+							i(48152),	-- Runetotem's Handguards of Triumph
+							i(48194),	-- Runetotem's Headguard of Triumph
+							i(48151),	-- Runetotem's Headpiece of Triumph
+							i(48150),	-- Runetotem's Leggings of Triumph
+							i(48195),	-- Runetotem's Legguards of Triumph
+							i(48178),	-- Runetotem's Mantle of Triumph
+							i(48196),	-- Runetotem's Raiments of Triumph
+							i(48149),	-- Runetotem's Robe of Triumph
+							i(48197),	-- Runetotem's Shoulderpads of Triumph
+							i(48148),	-- Runetotem's Spaulders of Triumph
+							i(48180),	-- Runetotem's Trousers of Triumph
+							i(48179),	-- Runetotem's Vestments of Triumph
+						}),
+						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
+							-- DPS
+							
+							-- Tank
+							
+							i(48500),	-- Koltira's Battleplate of Triumph
+							i(48557),	-- Koltira's Chestguard of Triumph
+							i(48555),	-- Koltira's Faceguard of Triumph
+							i(48499),	-- Koltira's Gauntlets of Triumph
+							i(48556),	-- Koltira's Handguards of Triumph
+							i(48498),	-- Koltira's Helmet of Triumph
+							i(48554),	-- Koltira's Legguards of Triumph
+							i(48497),	-- Koltira's Legplates of Triumph
+							i(48553),	-- Koltira's Pauldrons of Triumph
+							i(48496),	-- Koltira's Shoulderpads of Triumph
+						}),
+					},
+				}),
+				n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
+					["coord"] = { 75.4, 21.6, ICECROWN },
+					-- #if AFTER LEGION
+					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					-- #endif
+					["cost"] = { { "i", 47242, 1 }, },	-- Trophy of the Crusade
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						-- TODO: Finish sorting this.
+						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
+							-- DPS
+							
+
+							-- Tank
+							
+							i(48376),	-- Wrynn's Battleplate of Triumph
+							i(48450),	-- Wrynn's Breastplate of Triumph
+							i(48377),	-- Wrynn's Gauntlets of Triumph
+							i(48430),	-- Wrynn's Greathelm of Triumph
+							i(48452),	-- Wrynn's Handguards of Triumph
+							i(48378),	-- Wrynn's Helmet of Triumph
+							i(48446),	-- Wrynn's Legguards of Triumph
+							i(48379),	-- Wrynn's Legplates of Triumph
+							i(48454),	-- Wrynn's Pauldrons of Triumph
+							i(48380),	-- Wrynn's Shoulderplates of Triumph
+						}),
+						cl(PALADIN, {	-- Turalyon's Garb (706)
+							-- DPS
+							
+
+							-- Tank
+							
+
+							-- Healer
+							
+							
+							i(48607),	-- Turalyon's Battleplate of Triumph
+							i(48641),	-- Turalyon's Breastplate of Triumph
+							i(48639),	-- Turalyon's Faceguard of Triumph
+							i(48608),	-- Turalyon's Gauntlets of Triumph
+							i(48576),	-- Turalyon's Gloves of Triumph
+							i(48578),	-- Turalyon's Greaves of Triumph
+							i(48640),	-- Turalyon's Handguards of Triumph
+							i(48577),	-- Turalyon's Headpiece of Triumph
+							i(48609),	-- Turalyon's Helm of Triumph
+							i(48638),	-- Turalyon's Legguards of Triumph
+							i(48610),	-- Turalyon's Legplates of Triumph
+							i(48637),	-- Turalyon's Shoulderguards of Triumph
+							i(48611),	-- Turalyon's Shoulderplates of Triumph
+							i(48579),	-- Turalyon's Spaulders of Triumph
+							i(48575),	-- Turalyon's Tunic of Triumph
+						}),
+						cl(HUNTER, {	-- Windrunner's Battlegear (739)
+							i(48257),	-- Windrunner's Headpiece of Triumph
+							i(48259),	-- Windrunner's Spaulders of Triumph
+							i(48255),	-- Windrunner's Tunic of Triumph
+							i(48256),	-- Windrunner's Handguards of Triumph
+							i(48258),	-- Windrunner's Legguards of Triumph
+						}),
+						cl(ROGUE, {		-- VanCleef's Battlegear (690)
+							i(48225),	-- VanCleef's Helmet of Triumph
+							i(48227),	-- VanCleef's Pauldrons of Triumph
+							i(48223),	-- VanCleef's Breastplate of Triumph
+							i(48224),	-- VanCleef's Gauntlets of Triumph
+							i(48226),	-- VanCleef's Legplates of Triumph
+						}),
+						cl(PRIEST, {	-- Velen's Regalia (349)
+							-- DPS
+							
+
+							-- Healer
+							
+							i(48078),	-- Velen's Circlet of Triumph
+							i(47984),	-- Velen's Cowl of Triumph
+							i(47983),	-- Velen's Gloves of Triumph
+							i(48077),	-- Velen's Handwraps of Triumph
+							i(47985),	-- Velen's Leggings of Triumph
+							i(48081),	-- Velen's Mantle of Triumph
+							i(48079),	-- Velen's Pants of Triumph
+							i(48080),	-- Velen's Raiments of Triumph
+							i(47986),	-- Velen's Robe of Triumph
+							i(47987),	-- Velen's Shoulderpads of Triumph
+						}),
+						cl(SHAMAN, {	-- Nobundo's Plate (640)
+							-- Elemental
+							
+
+							-- Enhancement
+							
+
+							-- Restoration
+							
+							i(48346),	-- Nobundo's Chestguard of Triumph
+							i(48348),	-- Nobundo's Faceguard of Triumph
+							i(48317),	-- Nobundo's Gloves of Triumph
+							i(48347),	-- Nobundo's Grips of Triumph
+							i(48286),	-- Nobundo's Handguards of Triumph
+							i(48316),	-- Nobundo's Hauberk of Triumph
+							i(48287),	-- Nobundo's Headpiece of Triumph
+							i(48318),	-- Nobundo's Helm of Triumph
+							i(48319),	-- Nobundo's Kilt of Triumph
+							i(48288),	-- Nobundo's Legguards of Triumph
+							i(48350),	-- Nobundo's Shoulderguards of Triumph
+							i(48320),	-- Nobundo's Shoulderpads of Triumph
+							i(48289),	-- Nobundo's Spaulders of Triumph
+							i(48285),	-- Nobundo's Tunic of Triumph
+							i(48349),	-- Nobundo's War-Kilt of Triumph
+						}),
+						cl(MAGE, {		-- Khadgar's Regalia (722)
+							i(47754),	-- Khadgar's Hood of Triumph
+							i(47757),	-- Khadgar's Shoulderpads of Triumph
+							i(47756),	-- Khadgar's Robe of Triumph
+							i(47753),	-- Khadgar's Gauntlets of Triumph
+							i(47755),	-- Khadgar's Leggings of Triumph
+						}),
+						cl(WARLOCK, {	-- Kel'Thuzad's Regalia (674)
+							i(47778),	-- Kel'Thuzad's Hood of Triumph
+							i(47781),	-- Kel'Thuzad's Shoulderpads of Triumph
+							i(47779),	-- Kel'Thuzad's Robe of Triumph
+							i(47782),	-- Kel'Thuzad's Gloves of Triumph
+							i(47780),	-- Kel'Thuzad's Leggings of Triumph
+						}),
+						cl(DRUID, {		-- Malfurion's Battlegear (825)
+							-- Boomkin
+							
+
+							-- Feral
+							
+
+							-- Restoration
+							
+							
+							i(48164),	-- Malfurion's Cover of Triumph
+							i(48163),	-- Malfurion's Gloves of Triumph
+							i(48212),	-- Malfurion's Handgrips of Triumph
+							i(48133),	-- Malfurion's Handguards of Triumph
+							i(48211),	-- Malfurion's Headguard of Triumph
+							i(48134),	-- Malfurion's Headpiece of Triumph
+							i(48135),	-- Malfurion's Leggings of Triumph
+							i(48210),	-- Malfurion's Legguards of Triumph
+							i(48167),	-- Malfurion's Mantle of Triumph
+							i(48209),	-- Malfurion's Raiments of Triumph
+							i(48136),	-- Malfurion's Robe of Triumph
+							i(48208),	-- Malfurion's Shoulderpads of Triumph
+							i(48137),	-- Malfurion's Spaulders of Triumph
+							i(48165),	-- Malfurion's Trousers of Triumph
+							i(48166),	-- Malfurion's Vestments of Triumph
+						}),
+						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
+							-- DPS
+							
+							-- Tank
+							
+							
+							i(48481),	-- Thassarian's Battleplate of Triumph
+							i(48538),	-- Thassarian's Chestguard of Triumph
+							i(48540),	-- Thassarian's Faceguard of Triumph
+							i(48482),	-- Thassarian's Gauntlets of Triumph
+							i(48539),	-- Thassarian's Handguards of Triumph
+							i(48483),	-- Thassarian's Helmet of Triumph
+							i(48541),	-- Thassarian's Legguards of Triumph
+							i(48484),	-- Thassarian's Legplates of Triumph
+							i(48542),	-- Thassarian's Pauldrons of Triumph
+							i(48485),	-- Thassarian's Shoulderplates of Triumph
+						}),
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					34796,	-- Gormok
@@ -131,7 +1188,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					34496,	-- Eydis Darkbane
 					34564,	-- Anub'arak
 				},
-				["description"] = "These drop on all difficulties, but 10 Man Normal.",
+				["description"] = "These drop on all difficulties other than 10 Man Normal.",
 				["groups"] = {
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
@@ -193,6 +1250,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					i(47645, {	-- Plans: Titanium Spikeguards [H] (RECIPE!)
 						["races"] = HORDE_ONLY,
 					}),
+					i(47556),	-- Crusader Orb
+					i(47242, {	-- Trophy of the Crusade
+						["description"] = "This only drops on either of the 25-Player Modes.",
+					}),
 				},
 			}),
 			d(3, {	-- 10-Player
@@ -204,10 +1265,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						ach(3936),		-- Not One, But Two Jormungars (10 player)
-						ach(3797),		-- Upper Back Pain (10 player)
-						i(142083),		-- Giant Worm Egg (PET!)
-						i(142084),		-- Magnataur Hunting Horn (PET!)
+						ach(3936),	-- Not One, But Two Jormungars (10 player)
+						ach(3797),	-- Upper Back Pain (10 player)
+						i(142083, {	-- Giant Worm Egg (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(142084, {	-- Magnataur Hunting Horn (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						a(i(47612)),	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
 						a(i(47607)),	-- Collar of Ceaseless Torment
@@ -368,8 +1433,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						ach(3800),		-- The Traitor King (10 player)
-						i(142085),		-- Nerubian Relic (PET!)
+						ach(3800),	-- The Traitor King (10 player)
+						i(142085, {	-- Nerubian Relic (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						h(i(47911)),	-- Anguish
 						a(i(47815)),	-- Cold Convergence
 						a(i(47834)),	-- Fordragon Blades
@@ -410,49 +1477,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				}),
 			}),
 			d(5, {	-- 10-Player Heroic
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						34796,	-- Gormok
-						35144,	-- Acidmaw
-						34799,	-- Dreadscale
-						34797,	-- Icehowl
-						34780,	-- Lord Jaraxxus
-						34461,	-- Tyrius Duskblade
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
-						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
-						34466,	-- Anthar Forgemender
-						34473,	-- Brienna Nightfell
-						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
-						34470,	-- Saamul
-						34474,	-- Serissa Grimdabbler
-						34475,	-- Shocuul
-						34458,	-- Gorgrim Shadowcleave
-						34451,	-- Birana Stormhoof
-						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
-						34449,	-- Ginselle Blightslinger
-						34445,	-- Liandra Suncaller
-						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
-						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
-						34453,	-- Narrhok Steelbreaker
-						34497,	-- Fjola Lightbane
-						34496,	-- Eydis Darkbane
-						34564,	-- Anub'arak
-					},
-					["groups"] = {
-						i(47556),		-- Crusader Orb
-					},
-				}),
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl
@@ -461,10 +1485,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						34799,	-- Dreadscale
 					},
 					["groups"] = {
-						ach(3936),		-- Not One, But Two Jormungars (10 player)
-						ach(3797),		-- Upper Back Pain (10 player)
-						i(142083),		-- Giant Worm Egg (PET!)
-						i(142084),		-- Magnataur Hunting Horn (PET!)
+						ach(3936),	-- Not One, But Two Jormungars (10 player)
+						ach(3797),	-- Upper Back Pain (10 player)
+						i(142083, {	-- Giant Worm Egg (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(142084, {	-- Magnataur Hunting Horn (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						a(i(47922)),	-- Rod of Imprisoned Souls
 						h(i(47995)),	-- Scepter of Imprisoned Souls
 						a(i(47915)),	-- Collar of Ceaseless Torment
@@ -625,8 +1653,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						ach(3800),		-- The Traitor King (10 player)
-						i(142085),		-- Nerubian Relic (PET!)
+						ach(3800),	-- The Traitor King (10 player)
+						i(142085, {	-- Nerubian Relic (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						h(i(48056)),	-- Anguish
 						a(i(47968)),	-- Cold Convergence
 						a(i(47979)),	-- Fordragon Blades
@@ -665,52 +1695,70 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						h(i(48053)),	-- Sunwalker Legguards
 					},
 				}),
+				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {	-- Argent Crusade Tribute Chest
+					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
+					--[[
+						Alliance	Description	Horde
+					1-24 Attempts
+						2x Trophy of the Crusade
+						Crusader Orb
+					25-44 Attempts
+						Lothar's Edge	Two-Hand, Axe	Mor'kosh, the Bloodreaver
+						Rhok'shalla, the Shadow's Bane	Ranged, Bow	Frenzystrike Longbow
+						The Spinebreaker	Main Hand, Fist Weapon	The Facebreaker
+						Honor of the Fallen	One-Hand, Mace	Blood and Glory
+						Heartcrusher	Main Hand, Mace	Heartsmasher
+						Paragon's Breadth	Two-Hand, Staff	Attrition
+						Spellstorm Blade	Main Hand, Sword	Spellharvest
+					45-49 Attempts
+						2x Trophy of the Crusade
+					50 Attempts
+						Swift Alliance Steed (100% Drop)	Mount	Swift Horde Wolf (100% Drop)
+						Cloak of the Silver Covenant	Back, DPS	Cloak of Serrated Blades
+						Cloak of the Unmoving Guardian	Back, Tank	Cloak of the Unflinching Guardian
+						Cloak of the Victorious Combatant	Back, DPS	Cloak of the Triumphant Combatant
+						Drape of Bitter Incantation	Back, Caster	Drape of the Sunreavers
+						Shawl of Fervent Crusader	Back, Caster	Shawl of the Devout Crusader
+					]]--
+					["groups"] = {
+						ach(4080, {	-- A Tribute to Dedicated Insanity
+							title(136),	-- the Argent Defender
+						}),
+						ach(3810, {	-- A Tribute to Insanity (10 Player)
+							a(i(49044)),		-- Swift Alliance Steed (MOUNT!)
+							h(i(49046)),		-- Swift Horde Wolf (MOUNT!)
+							h(i(48668)),		-- Cloak of Serrated Blades
+							a(i(48673)),		-- Cloak of the Silver Covenant
+							h(i(48669)),		-- Cloak of the Triumphant Combatant
+							h(i(48670)),		-- Cloak of the Unflinching Guardian
+							a(i(48675)),		-- Cloak of the Unmoving Guardian
+							a(i(48674)),		-- Cloak of the Victorous Combatant
+							a(i(48671)),		-- Drape of Bitter Incantation
+							h(i(48666)),		-- Drape of the Sunreavers
+							a(i(48672)),		-- Shawl of Fervent Crusader
+							h(i(48667)),		-- Shawl of the Devout Crusader
+						}),
+						ach(3809),	-- A Tribute to Mad Skill (10 Player)
+						ach(3808, {	-- A Tribute to Skill (10 Player)
+							h(i(48705)),		-- Attrition
+							h(i(48699)),		-- Blood and Glory
+							h(i(48697)),		-- Frenzystrike Longbow
+							a(i(48709)),		-- Heartcrusher
+							h(i(48693)),		-- Heartsmasher
+							a(i(48714)),		-- Honor of the Fallen
+							a(i(48713)),		-- Lothar's Edge
+							h(i(48695)),		-- Mor'kosh, the Bloodreaver
+							a(i(48710)),		-- Paragon's Breadth
+							a(i(48711)),		-- Rhok'shalla, the Shadow's Bane
+							h(i(48701)),		-- Spellharvest
+							a(i(48708)),		-- Spellstorm Blade
+							h(i(48703)),		-- The Facebreaker
+							a(i(48712)),		-- The Spinebreaker
+						}),
+					},
+				})),
 			}),
 			d(4, {	-- 25-Player
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						34796,	-- Gormok
-						35144,	-- Acidmaw
-						34799,	-- Dreadscale
-						34797,	-- Icehowl
-						34780,	-- Lord Jaraxxus
-						34461,	-- Tyrius Duskblade
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
-						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
-						34466,	-- Anthar Forgemender
-						34473,	-- Brienna Nightfell
-						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
-						34470,	-- Saamul
-						34474,	-- Serissa Grimdabbler
-						34475,	-- Shocuul
-						34458,	-- Gorgrim Shadowcleave
-						34451,	-- Birana Stormhoof
-						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
-						34449,	-- Ginselle Blightslinger
-						34445,	-- Liandra Suncaller
-						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
-						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
-						34453,	-- Narrhok Steelbreaker
-						34497,	-- Fjola Lightbane
-						34496,	-- Eydis Darkbane
-						34564,	-- Anub'arak
-					},
-					["groups"] = {
-						i(47556),		-- Crusader Orb
-						i(47242),		-- Trophy of the Crusade
-					},
-				}),
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl
@@ -721,8 +1769,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					["groups"] = {
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
-						i(142083),		-- Giant Worm Egg (PET!)
-						i(142084),		-- Magnataur Hunting Horn (PET!)
+						i(142083, {	-- Giant Worm Egg (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(142084, {	-- Magnataur Hunting Horn (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						h(i(47261)),	-- Barb of Tarasque
 						a(i(46979)),	-- Blade of Tarasque
 						a(i(46958)),	-- Steel Bladebreaker
@@ -905,8 +1957,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						ach(3816),		-- The Traitor King (25 player)
-						i(142085),		-- Nerubian Relic (PET!)
+						ach(3816),	-- The Traitor King (25 player)
+						i(142085, {	-- Nerubian Relic (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						a(i(47233)),	-- Archon Glaive
 						h(i(47329)),	-- Hellion Glaive
 						h(i(47314)),	-- Hellscream Slicer
@@ -951,50 +2005,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				}),
 			}),
 			d(6, {	-- 25-Player Heroic
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						34796,	-- Gormok
-						35144,	-- Acidmaw
-						34799,	-- Dreadscale
-						34797,	-- Icehowl
-						34780,	-- Lord Jaraxxus
-						34461,	-- Tyrius Duskblade
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
-						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
-						34466,	-- Anthar Forgemender
-						34473,	-- Brienna Nightfell
-						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
-						34470,	-- Saamul
-						34474,	-- Serissa Grimdabbler
-						34475,	-- Shocuul
-						34458,	-- Gorgrim Shadowcleave
-						34451,	-- Birana Stormhoof
-						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
-						34449,	-- Ginselle Blightslinger
-						34445,	-- Liandra Suncaller
-						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
-						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
-						34453,	-- Narrhok Steelbreaker
-						34497,	-- Fjola Lightbane
-						34496,	-- Eydis Darkbane
-						34564,	-- Anub'arak
-					},
-					["groups"] = {
-						i(47556),		-- Crusader Orb
-						i(47242),		-- Trophy of the Crusade
-					},
-				}),
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
 						34797,	-- Icehowl
@@ -1005,8 +2015,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					["groups"] = {
 						ach(3937),		-- Not One, But Two Jormungars (25 player)
 						ach(3813),		-- Upper Back Pain (25 player)
-						i(142083),		-- Giant Worm Egg (PET!)
-						i(142084),		-- Magnataur Hunting Horn (PET!)
+						i(142083, {	-- Giant Worm Egg (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
+						i(142084, {	-- Magnataur Hunting Horn (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						h(i(47422)),	-- Barb of Tarasque
 						a(i(46980)),	-- Blade of Tarasque
 						a(i(46969)),	-- Steel Bladebreaker
@@ -1189,8 +2203,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["groups"] = {
-						ach(3816),		-- The Traitor King (25 player)
-						i(142085),		-- Nerubian Relic (PET!)
+						ach(3816),	-- The Traitor King (25 player)
+						i(142085, {	-- Nerubian Relic (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						a(i(47239)),	-- Archon Glaive
 						h(i(47491)),	-- Hellion Glaive
 						h(i(47475)),	-- Hellscream Slicer
@@ -1233,78 +2249,71 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						a(i(47188)),	-- Reign of the Unliving
 					},
 				}),
+				o(195665, bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {	-- Argent Crusade Tribute Chest
+					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
+					--[[
+						Alliance	Description	Horde
+					1-24 Attempts
+						2x Regalia of the Grand Conqueror // Protector // Vanquisher
+					25-44 Attempts
+						BRK-1000	Ranged, Gun	Fezzik's Autocannon
+						Remorseless	One-Hand, Mace	Cudgel of the Damned
+						Catastrophe	Two-Hand, Mace	Grievance
+						Clemency	Two-Hand, Staff	Sufferance
+						Blade of the Unbroken Covenant	Main Hand, Sword	Mortalis
+						Silverwing Defender	One-Hand, Sword	Orgrim's Deflector
+						Decimation	Two-Hand, Sword	Fleshrender
+					45-49 Attempts
+						2x Regalia of the Grand Conqueror // Protector // Vanquisher
+					50 Attempts
+						Bolvar's Devotion	Back, Caster	Lady Liadrin's Conviction
+						Jaina's Radiance	Back, Caster	Aethas' Intensity
+						Magni's Resolution	Back, Tank	Cairne's Endurance
+						Varian's Furor	Back, DPS	Garrosh's Rage
+						Vereesa's Dexterity	Back, DPS	Sylvanas' Cunning
+					]]--
+					["groups"] = {
+						i(47557),	-- Regalia of the Grand Conqueror
+						i(47558),	-- Regalia of the Grand Protector
+						i(47559),	-- Regalia of the Grand Vanquisher
+						a(ach(4156, {	-- A Tribute to Immortality
+							a(i(49096)),	-- Crusader's White Warhorse (MOUNT!)
+						})),
+						h(ach(4079, {	-- A Tribute to Immortality
+							h(i(49098)),	-- Crusader's Black Warhorse (MOUNT!)
+						})),
+						ach(3819, {	-- A Tribute to Insanity (25 Player)
+							h(i(47551)),		-- Aethas' Intensity
+							a(i(47553)),		-- Bolvar's Devotion
+							h(i(47550)),		-- Cairne's Endurance
+							h(i(47548)),		-- Garrosh's Rage
+							a(i(47552)),		-- Jaina's Radiance
+							h(i(47554)),		-- Lady Liadrin's Conviction
+							a(i(47549)),		-- Magni's Resolution
+							h(i(47546)),		-- Sylvanas' Cunning
+							a(i(47547)),		-- Varian's Furor
+							a(i(47545)),		-- Vereesa's Dexterity
+						}),
+						ach(3818),	-- A Tribute to Mad Skill (25 Player)
+						ach(3817, {	-- A Tribute to Skill (25 Player)
+							a(i(47517)),		-- Blade of the Unbroken Covenant
+							a(i(47521)),		-- BRK-1000
+							a(i(47519)),		-- Catastrophe
+							a(i(47524)),		-- Clemency
+							h(i(47528)),		-- Cudgel of the Damned
+							a(i(47515)),		-- Decimation
+							h(i(47523)),		-- Fezzik's Autocannon
+							h(i(47516)),		-- Fleshrender
+							h(i(47520)),		-- Grievance
+							h(i(47518)),		-- Mortalis
+							h(i(47513)),		-- Orgrim's Deflector
+							a(i(47526)),		-- Remorseless
+							a(i(47506)),		-- Silverwing Defender
+							h(i(47525)),		-- Sufferance
+						}),
+					},
+				})),
 			}),
-			n(-40, bubbleDown({["timeline"] = {"added 3.2.0", "removed 4.0.3"},}, {	-- Legacy
-				ach(4080, {		-- A Tribute to Dedicated Insanity
-					title(136),	-- the Argent Defender
-				}),
-				a(ach(4156, {	-- A Tribute to Immortality
-					a(i(49096)),		-- Crusader's White Warhorse (MOUNT!)
-				})),
-				h(ach(4079, {	-- A Tribute to Immortality
-					h(i(49098)),		-- Crusader's Black Warhorse (MOUNT!)
-				})),
-				ach(3810, {		-- A Tribute to Insanity (10 Player)
-					a(i(49044)),		-- Swift Alliance Steed (MOUNT!)
-					h(i(49046)),		-- Swift Horde Wolf (MOUNT!)
-					h(i(48668)),		-- Cloak of Serrated Blades
-					a(i(48673)),		-- Cloak of the Silver Covenant
-					h(i(48669)),		-- Cloak of the Triumphant Combatant
-					h(i(48670)),		-- Cloak of the Unflinching Guardian
-					a(i(48675)),		-- Cloak of the Unmoving Guardian
-					a(i(48674)),		-- Cloak of the Victorous Combatant
-					a(i(48671)),		-- Drape of Bitter Incantation
-					h(i(48666)),		-- Drape of the Sunreavers
-					a(i(48672)),		-- Shawl of Fervent Crusader
-					h(i(48667)),		-- Shawl of the Devout Crusader
-				}),
-				ach(3819, {		-- A Tribute to Insanity (25 Player)
-					h(i(47551)),		-- Aethas' Intensity
-					a(i(47553)),		-- Bolvar's Devotion
-					h(i(47550)),		-- Cairne's Endurance
-					h(i(47548)),		-- Garrosh's Rage
-					a(i(47552)),		-- Jaina's Radiance
-					h(i(47554)),		-- Lady Liadrin's Conviction
-					a(i(47549)),		-- Magni's Resolution
-					h(i(47546)),		-- Sylvanas' Cunning
-					a(i(47547)),		-- Varian's Furor
-					a(i(47545)),		-- Vereesa's Dexterity
-				}),
-				ach(3809),		-- A Tribute to Mad Skill (10 Player)
-				ach(3818),		-- A Tribute to Mad Skill (25 Player)
-				ach(3808, {		-- A Tribute to Skill (10 Player)
-					h(i(48705)),		-- Attrition
-					h(i(48699)),		-- Blood and Glory
-					h(i(48697)),		-- Frenzystrike Longbow
-					a(i(48709)),		-- Heartcrusher
-					h(i(48693)),		-- Heartsmasher
-					a(i(48714)),		-- Honor of the Fallen
-					a(i(48713)),		-- Lothar's Edge
-					h(i(48695)),		-- Mor'kosh, the Bloodreaver
-					a(i(48710)),		-- Paragon's Breadth
-					a(i(48711)),		-- Rhok'shalla, the Shadow's Bane
-					h(i(48701)),		-- Spellharvest
-					a(i(48708)),		-- Spellstorm Blade
-					h(i(48703)),		-- The Facebreaker
-					a(i(48712)),		-- The Spinebreaker
-				}),
-				ach(3817, {		-- A Tribute to Skill (25 Player)
-					a(i(47517)),		-- Blade of the Unbroken Covenant
-					a(i(47521)),		-- BRK-1000
-					a(i(47519)),		-- Catastrophe
-					a(i(47524)),		-- Clemency
-					h(i(47528)),		-- Cudgel of the Damned
-					a(i(47515)),		-- Decimation
-					h(i(47523)),		-- Fezzik's Autocannon
-					h(i(47516)),		-- Fleshrender
-					h(i(47520)),		-- Grievance
-					h(i(47518)),		-- Mortalis
-					h(i(47513)),		-- Orgrim's Deflector
-					a(i(47526)),		-- Remorseless
-					a(i(47506)),		-- Silverwing Defender
-					h(i(47525)),		-- Sufferance
-				}),
-			})),
 		},
 	}),
 }))));

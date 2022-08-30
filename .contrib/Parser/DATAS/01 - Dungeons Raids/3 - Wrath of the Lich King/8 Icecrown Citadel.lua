@@ -467,25 +467,25 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 						},
 					}),
 					q(24912, {	-- Empowerment
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24548,	-- The Splintered Throne
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					q(24549, {	-- Shadowmourne...
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24548,	-- The Splintered Throne
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 						["groups"] = {
 							i(49623)	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand
+						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24549,	-- Shadowmourne...
-						["provider"] = { "n", 37120 },	-- Highlord Darion Mograine
 					}),
 					i(51315, {	-- Sealed Chest
-						["description"] = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
-						["sourceQuest"] = 24549,	-- Shadowmourne...
-						["provider"] = { "n", 36597 },	-- The Lich King
+						["qg"] = 36597,	-- The Lich King
 						["questID"] = 24914,	-- Personal Property
+						["sourceQuest"] = 24549,	-- Shadowmourne...
+						["description"] = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.",
 						["groups"] = {
 							i(51316, {	-- Unsealed Chest
 								["description"] = "This item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
@@ -524,8 +524,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 										["questID"] = 24916,	-- Jaina's Locket
 										["groups"] = {
 											i(52251, {	-- Jaina's Locket
+												-- #if NOT ANYCLASSIC
 												["ignoreSource"] = true,
 												["collectible"] = false
+												-- #endif
 											})
 										},
 									}),
@@ -535,79 +537,23 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					}),
 				},
 			}),
-			n(37184,  {	-- Zafod Boombox
+			n(37184, {	-- Zafod Boombox
 				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
 				i(49278, {	-- Goblin Rocket Pack
+					-- #if NOT ANYCLASSIC
 					["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
 					["u"] = 15,			-- Unlearnable Filter
+					-- #endif
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["crs"] = {
-					37012,	-- Ancient Skeletal Soldier
-					37022,	-- Blighted Abomination
-					37571,	-- Darkfallen Advisor
-					37664,	-- Darkfallen Archmage
-					37595,	-- Darkfallen Blood Knight
-					37662,	-- Darkfallen Commander
-					37665,	-- Darkfallen Lieutenant
-					37663,	-- Darkfallen Noble
-					37666,	-- Darkfallen Tactician
-					37007,	-- Deathbound Ward
-					36811,	-- Deathspeaker Attendant
-					36807,	-- Deathspeaker Disciple
-					36829,	-- Deathspeaker High Priest
-					36805,	-- Deathspeaker Servant
-					36808,	-- Deathspeaker Zealot
-					36880,	-- Decaying Colossus
-					37546,	-- Frenzied Abomination
-					37531,	-- Frostwarden Handler
-					37229,	-- Frostwarden Sorceress
-					37228,	-- Frostwarden Warrior
-					37532,	-- Frostwing Whelp
-					37032,	-- Kor'kron Defender
-					37033,	-- Kor'kron Invoker
-					37149,	-- Kor'kron Necrolyte
-					37031,	-- Kor'kron Oracle
-					37030,	-- Kor'kron Primalist
-					37029,	-- Kor'kron Reaver
-					37146,	-- Kor'kron Sniper
-					37034,	-- Kor'kron Templar
-					37035,	-- Kor'kron Vanquisher
-					36725,	-- Nerub'ar Broodkeeper
-					37501,	-- Nerub'ar Champion
-					37502,	-- Nerub'ar Webweaver
-					37023,	-- Plague Scientist
-					37217,	-- Precious
-					10404,	-- Pustulating Horror
-					36724,	-- Servant of the Throne
-					37126,	-- Sister Svalna
-					37017,	-- Skybreaker Assassin
-					37004,	-- Skybreaker Dreadblade
-					37027,	-- Skybreaker Hierophant
-					37016,	-- Skybreaker Luminary
-					37144,	-- Skybreaker Marksman
-					36998,	-- Skybreaker Protector
-					37026,	-- Skybreaker Sorcerer
-					37148,	-- Skybreaker Summoner
-					37021,	-- Skybreaker Vicar
-					37230,	-- Spire Frostwyrm
-					37544,	-- Spire Gargoyle
-					37545,	-- Spire Minion
-					37025,	-- Stinky
-					37011,	-- The Damned
-					37098,	-- Val'kyr Herald
-					37038,	-- Vengeful Fleshreaper
-				},
-				["groups"] = {
-					i(50451),	-- Belt of the Lonely Noble
-					i(50447),	-- Harbinger's Bone Band
-					i(50450),	-- Leggings of Dubious Charms
-					i(50453),	-- Ring of Rotting Sinew
-					i(50444),	-- Rowan's Rifle of Silver Bullets
-					i(50449),	-- Stiffened Corpse Shoulderpads
-					i(50452),	-- Wodin's Lucky Necklace
-				},
+				i(50451),	-- Belt of the Lonely Noble
+				i(50447),	-- Harbinger's Bone Band
+				i(50450),	-- Leggings of Dubious Charms
+				i(50453),	-- Ring of Rotting Sinew
+				i(50444),	-- Rowan's Rifle of Silver Bullets
+				i(50449),	-- Stiffened Corpse Shoulderpads
+				i(50452),	-- Wodin's Lucky Necklace
 			}),
 			n(VENDORS, {
 				n(37999, {	-- Alana Moonstrike <Druid Armor>
@@ -2611,7 +2557,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					},
 				}),
 			}),
-			d(3,  {	-- 10-Player (Normal)
+			d(3, {	-- 10-Player (Normal)
 				n(-393, {	-- Storming the Citadel
 					ach(4531, {	-- Storming the Citadel (10 player)
 						crit(1, {	-- Lord Marrowgar
@@ -2627,11 +2573,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1628, 3 },
 						}),
 					}),
-					e(1624,  {	-- Lord Marrowgar
+					e(1624, {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
-							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Fragment of Frozen Bone (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50761),	-- Citadel Enforcer's Claymore
 							i(50759),	-- Bone Warden's Splitter
 							i(50760),	-- Bonebreaker Scepter
@@ -2646,7 +2594,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50339),	-- Sliver of Pure Ice
 						},
 					}),
-					e(1625,  {	-- Lady Deathwhisper
+					e(1625, {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
 							ach(4535),	-- Full House (10 player)
@@ -2664,7 +2612,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50342),	-- Whispering Fanged Skull
 						},
 					}),
-					e(1626,  {	-- Icecrown Gunship Battle
+					e(1626, {	-- Icecrown Gunship Battle
 						["crs"] = {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
@@ -2685,11 +2633,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50340),	-- Muradin's Spyglass
 						},
 					}),
-					e(1628,  {	-- Deathbringer Saurfang
+					e(1628, {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
-							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Remains of a Blood Beast (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50805),	-- Mag'hari Chieftain's Staff
 							i(50798),	-- Ramaladni's Blade of Culling
 							i(50807),	-- Thaumaturge's Crackling Cowl
@@ -2704,6 +2654,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50803),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
@@ -2730,7 +2681,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
 					}),
-					e(1629,  {	-- Festergut
+					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							ach(4577),	-- Flu Shot Shortage (10 player)
@@ -2748,7 +2699,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50986),	-- Signet of Putrefaction
 						},
 					}),
-					e(1630,  {	-- Rotface
+					e(1630, {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							ach(4538),	-- Dances with Oozes (10 player)
@@ -2765,11 +2716,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51001),	-- Rotface's Rupturing Ring
 						},
 					}),
-					e(1631,  {	-- Professor Putricide
+					e(1631, {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51011),	-- Flesh-Carving Scalpel
 							i(51010),	-- The Facelifter
 							i(51013),	-- Discarded Bag of Entrails
@@ -2794,7 +2747,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1633, 3 },
 						}),
 					}),
-					e(1632,  {	-- Blood Prince Council
+					e(1632, {	-- Blood Prince Council
 						["crs"] = {
 							37972,	-- Prince Keleseth
 							37973,	-- Prince Taldaram
@@ -2816,7 +2769,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51024),	-- Thrice Fanged Signet
 						},
 					}),
-					e(1633,  {	-- Blood-Queen Lana'thel
+					e(1633, {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
@@ -2847,7 +2800,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1635, 3 },
 						}),
 					}),
-					e(1634,  {	-- Valithria Dreamwalker
+					e(1634, {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4579),	-- Portal Jockey (10 player)
@@ -2865,11 +2818,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51566),	-- Legguards of the Twisted Dream
 						},
 					}),
-					e(1635,  {	-- Sindragosa
+					e(1635, {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
 							ach(4580),	-- All You Can Eat (10 player)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(142097, {	-- Skull of a Frozen Whelp (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51788),	-- Bleak Coldarra Carver
 							i(51784),	-- Splintershard
 							i(51791),	-- Lost Pavise of the Blue Flight
@@ -2884,7 +2839,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51785),	-- Wyrmwing Treads
 						},
 					}),
-					e(1636,  {	-- The Lich King
+					e(1636, {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
 						["groups"] = {
 							ach(4601),	-- Been Waiting a Long Time for This (10 player)
@@ -2892,8 +2847,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							ach(4530, {	-- The Frozen Throne (10 player)
 								title(140),	-- the Kingslayer
 							}),
-							i(142098),	-- Drudge Remains (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
+							i(142098, {	-- Drudge Remains (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
+							i(138955, {	-- Illusion: Rune of Razorice
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(51799),	-- Halion, Staff of Forgotten Love
 							i(51797),	-- Tainted Twig of Nordrassil
 							i(51796),	-- Warmace of Menethil
@@ -2903,35 +2862,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51795),	-- Troggbane, Axe of the Frostborne King
 							i(51798),	-- Valius, Gavel of the Lightbringer
 							i(51802),	-- Windrunner's Heartseeker
-							i(122229),	-- Music Roll: Invincible
+							i(122229, {	-- Music Roll: Invincible
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
 				}),
 			}),
-			d(5,  {	-- 10-Player (Heroic)
+			d(5, {	-- 10-Player (Heroic)
 				n(COMMON_BOSS_DROPS, {
-					["groups"] = {
-						i(49908, {	-- Primordial Saronite
-							["crs"] = {
-								36612,	-- Lord Marrowgar
-								36855,	-- Lady Deathwhisper
-								36939,	-- High Overlord Saurfang
-								36948,	-- Muradin Bronzebeard
-								37813,	-- Deathbringer Saurfang
-								36626,	-- Festergut
-								36627,	-- Rotface
-								36678,	-- Professor Putricide
-								37970,	-- Blood Prince Council
-								37955,	-- Blood-Queen Lana'thel
-								36789,	-- Valithria Dreamwalker
-								36853,	-- Sindragosa
-								36597,	-- The Lich King
-							},
-						}),
-					},
+					i(49908, {	-- Primordial Saronite
+						["crs"] = {
+							36612,	-- Lord Marrowgar
+							36855,	-- Lady Deathwhisper
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+							37813,	-- Deathbringer Saurfang
+							36626,	-- Festergut
+							36627,	-- Rotface
+							36678,	-- Professor Putricide
+							37970,	-- Blood Prince Council
+							37955,	-- Blood-Queen Lana'thel
+							36789,	-- Valithria Dreamwalker
+							36853,	-- Sindragosa
+							36597,	-- The Lich King
+						},
+					}),
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
@@ -2948,11 +2908,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1628, 5 },
 						}),
 					}),
-					e(1624,  {	-- Lord Marrowgar
+					e(1624, {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
-							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Fragment of Frozen Bone (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51936),	-- Citadel Enforcer's Claymore
 							i(51938),	-- Bone Warden's Splitter
 							i(51937),	-- Bonebreaker Scepter
@@ -2967,7 +2929,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50346),	-- Sliver of Pure Ice
 						},
 					}),
-					e(1625,  {	-- Lady Deathwhisper
+					e(1625, {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
 							ach(4535),	-- Full House (10 player)
@@ -2985,7 +2947,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50343),	-- Whispering Fanged Skull
 						},
 					}),
-					e(1626,  {	-- Icecrown Gunship Battle
+					e(1626, {	-- Icecrown Gunship Battle
 						["crs"] = {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
@@ -3006,14 +2968,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50345),	-- Muradin's Spyglass
 						},
 					}),
-					e(1628,  {	-- Deathbringer Saurfang
+					e(1628, {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Remains of a Blood Beast (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51898),	-- Mag'hari Chieftain's Staff
 							i(51905),	-- Ramaladni's Blade of Culling
 							i(51896),	-- Thaumaturge's Crackling Cowl
@@ -3028,6 +2992,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51900),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
@@ -3054,7 +3019,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
 					}),
-					e(1629,  {	-- Festergut
+					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							ach(4577),	-- Flu Shot Shortage (10 player)
@@ -3072,7 +3037,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51884),	-- Signet of Putrefaction
 						},
 					}),
-					e(1630,  {	-- Rotface
+					e(1630, {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							ach(4538),	-- Dances with Oozes (10 player)
@@ -3089,14 +3054,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51878),	-- Rotface's Rupturing Ring
 						},
 					}),
-					e(1631,  {	-- Professor Putricide
+					e(1631, {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
 							i(51866),	-- Discarded Bag of Entrails
@@ -3121,7 +3088,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1633, 5 },
 						}),
 					}),
-					e(1632,  {	-- Blood Prince Council
+					e(1632, {	-- Blood Prince Council
 						["crs"] = {
 							37972,	-- Prince Keleseth
 							37973,	-- Prince Taldaram
@@ -3143,7 +3110,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51855),	-- Thrice Fanged Signet
 						},
 					}),
-					e(1633,  {	-- Blood-Queen Lana'thel
+					e(1633, {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
@@ -3177,7 +3144,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1635, 5 },
 						}),
 					}),
-					e(1634,  {	-- Valithria Dreamwalker
+					e(1634, {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4579),	-- Portal Jockey (10 player)
@@ -3195,14 +3162,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51829),	-- Legguards of the Twisted Dream
 						},
 					}),
-					e(1635,  {	-- Sindragosa
+					e(1635, {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
 							ach(4580),	-- All You Can Eat (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(142097, {	-- Skull of a Frozen Whelp (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
 							i(51812),	-- Lost Pavise of the Blue Flight
@@ -3217,7 +3186,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51818),	-- Wyrmwing Treads
 						},
 					}),
-					e(1636,  {	-- The Lich King
+					e(1636, {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
 						["groups"] = {
 							ach(4583, {	-- Bane of the Fallen King
@@ -3228,8 +3197,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142099),	-- Call of the Frozen Blade (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
+							i(142099, {	-- Call of the Frozen Blade (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
+							i(138955, {	-- Illusion: Rune of Razorice
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(51943),	-- Halion, Staff of Forgotten Love
 							i(51945),	-- Tainted Twig of Nordrassil
 							i(51946),	-- Warmace of Menethil
@@ -3239,35 +3212,36 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51947),	-- Troggbane, Axe of the Frostborne King
 							i(51944),	-- Valius, Gavel of the Lightbringer
 							i(51940),	-- Windrunner's Heartseeker
-							i(122229),	-- Music Roll: Invincible
+							i(122229, {	-- Music Roll: Invincible
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
 				}),
 			}),
-			d(4,  {	-- 25-Player (Normal)
+			d(4, {	-- 25-Player (Normal)
 				n(COMMON_BOSS_DROPS, {
-					["groups"] = {
-						i(49908, {	-- Primordial Saronite
-							["crs"] = {
-								36612,	-- Lord Marrowgar
-								36855,	-- Lady Deathwhisper
-								36939,	-- High Overlord Saurfang
-								36948,	-- Muradin Bronzebeard
-								37813,	-- Deathbringer Saurfang
-								36626,	-- Festergut
-								36627,	-- Rotface
-								36678,	-- Professor Putricide
-								37970,	-- Blood Prince Council
-								37955,	-- Blood-Queen Lana'thel
-								36789,	-- Valithria Dreamwalker
-								36853,	-- Sindragosa
-								36597,	-- The Lich King
-							},
-						}),
-					},
+					i(49908, {	-- Primordial Saronite
+						["crs"] = {
+							36612,	-- Lord Marrowgar
+							36855,	-- Lady Deathwhisper
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+							37813,	-- Deathbringer Saurfang
+							36626,	-- Festergut
+							36627,	-- Rotface
+							36678,	-- Professor Putricide
+							37970,	-- Blood Prince Council
+							37955,	-- Blood-Queen Lana'thel
+							36789,	-- Valithria Dreamwalker
+							36853,	-- Sindragosa
+							36597,	-- The Lich King
+						},
+					}),
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4604, {	-- Storming the Citadel (25 player)
@@ -3284,11 +3258,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1628, 4 },
 						}),
 					}),
-					e(1624,  {	-- Lord Marrowgar
+					e(1624, {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
-							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Fragment of Frozen Bone (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50415),	-- Bryntroll, the Bone Arbiter
 							i(49968),	-- Frozen Bonespike
 							i(49976),	-- Bulwark of Smouldering Steel
@@ -3306,7 +3282,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(49967),	-- Marrowgar's Frigid Eye
 						},
 					}),
-					e(1625,  {	-- Lady Deathwhisper
+					e(1625, {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
 							ach(4611),	-- Full House (25 player)
@@ -3327,7 +3303,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(49990),	-- Ring of Maddening Whispers
 						},
 					}),
-					e(1626,  {	-- Icecrown Gunship Battle
+					e(1626, {	-- Icecrown Gunship Battle
 						["crs"] = {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
@@ -3351,14 +3327,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50352),	-- Corpse Tongue Coin
 						},
 					}),
-					e(1628,  {	-- Deathbringer Saurfang
+					e(1628, {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Remains of a Blood Beast (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50412),	-- Bloodvenom Blade
 							i(50014),	-- Greatcloak of the Turned Champion
 							i(50333),	-- Toskk's Maximized Wristguards
@@ -3366,6 +3344,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50362),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
@@ -3392,7 +3371,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
 					}),
-					e(1629,  {	-- Festergut
+					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
@@ -3418,7 +3397,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50414),	-- Might of Blight
 						},
 					}),
-					e(1630,  {	-- Rotface
+					e(1630, {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
@@ -3443,14 +3422,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50353),	-- Dislodged Foreign Object
 						},
 					}),
-					e(1631,  {	-- Professor Putricide
+					e(1631, {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
 							i(50067),	-- Astrylian's Sutured Cinch
@@ -3468,7 +3449,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1633, 4 },
 						}),
 					}),
-					e(1632,  {	-- Blood Prince Council
+					e(1632, {	-- Blood Prince Council
 						["crs"] = {
 							37972,	-- Prince Keleseth
 							37973,	-- Prince Taldaram
@@ -3493,7 +3474,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50170),	-- Valanar's Other Signet Ring
 						},
 					}),
-					e(1633,  {	-- Blood-Queen Lana'thel
+					e(1633, {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
@@ -3521,11 +3502,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1635, 4 },
 						}),
 					}),
-					e(1634,  {	-- Valithria Dreamwalker
+					e(1634, {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832),	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(50183),	-- Lungbreaker
 							i(50472),	-- Nightmare Ender
 							i(50202),	-- Snowstorm Helm
@@ -3543,14 +3526,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50186),	-- Frostbrood Sapphire Ring
 						},
 					}),
-					e(1635,  {	-- Sindragosa
+					e(1635, {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(142097, {	-- Skull of a Frozen Whelp (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
 							i(50424),	-- Memory of Malygos
@@ -3558,7 +3543,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50361),	-- Sindragosa's Flawless Fang
 						},
 					}),
-					e(1636,  {	-- The Lich King
+					e(1636, {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
 						["groups"] = {
 							ach(4621),	-- Been Waiting a Long Time for This (25 player)
@@ -3569,8 +3554,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
-							i(142098),	-- Drudge Remains (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
+							i(142098, {	-- Drudge Remains (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
+							i(138955, {	-- Illusion: Rune of Razorice
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(50429),	-- Archus, Greatstaff of Antonidas
 							i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(50425),	-- Oathbinder, Charge of the Ranger-General
@@ -3580,9 +3569,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(49997),	-- Mithrios, Bronzebeard's Legacy
 							i(50428),	-- Royal Scepter of Terenas II
 							i(49981),	-- Fal'inrush, Defender of Quel'thalas
-							i(122229),	-- Music Roll: Invincible
+							i(122229, {	-- Music Roll: Invincible
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
@@ -3590,25 +3582,23 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 			}),
 			d(6, {	-- 25-Player (Heroic)
 				n(COMMON_BOSS_DROPS, {
-					["groups"] = {
-						i(49908, {	-- Primordial Saronite
-							["crs"] = {
-								36612,	-- Lord Marrowgar
-								36855,	-- Lady Deathwhisper
-								36939,	-- High Overlord Saurfang
-								36948,	-- Muradin Bronzebeard
-								37813,	-- Deathbringer Saurfang
-								36626,	-- Festergut
-								36627,	-- Rotface
-								36678,	-- Professor Putricide
-								37970,	-- Blood Prince Council
-								37955,	-- Blood-Queen Lana'thel
-								36789,	-- Valithria Dreamwalker
-								36853,	-- Sindragosa
-								36597,	-- The Lich King
-							},
-						}),
-					},
+					i(49908, {	-- Primordial Saronite
+						["crs"] = {
+							36612,	-- Lord Marrowgar
+							36855,	-- Lady Deathwhisper
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+							37813,	-- Deathbringer Saurfang
+							36626,	-- Festergut
+							36627,	-- Rotface
+							36678,	-- Professor Putricide
+							37970,	-- Blood Prince Council
+							37955,	-- Blood-Queen Lana'thel
+							36789,	-- Valithria Dreamwalker
+							36853,	-- Sindragosa
+							36597,	-- The Lich King
+						},
+					}),
 				}),
 				n(-393, {	-- Storming the Citadel
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
@@ -3625,11 +3615,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1628, 6 },
 						}),
 					}),
-					e(1624,  {	-- Lord Marrowgar
+					e(1624, {	-- Lord Marrowgar
 						["creatureID"] = 36612,	-- Lord Marrowgar
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
-							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(142094, {	-- Fragment of Frozen Bone (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50709),	-- Bryntroll, the Bone Arbiter
 							i(50608),	-- Frozen Bonespike
 							i(50616),	-- Bulwark of Smouldering Steel
@@ -3647,7 +3639,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50610),	-- Marrowgar's Frigid Eye
 						},
 					}),
-					e(1625,  {	-- Lady Deathwhisper
+					e(1625, {	-- Lady Deathwhisper
 						["creatureID"] = 36855,	-- Lady Deathwhisper
 						["groups"] = {
 							ach(4611),	-- Full House (25 player)
@@ -3668,7 +3660,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50644),	-- Ring of Maddening Whispers
 						},
 					}),
-					e(1626,  {	-- Icecrown Gunship Battle
+					e(1626, {	-- Icecrown Gunship Battle
 						["crs"] = {
 							36939,	-- High Overlord Saurfang
 							36948,	-- Muradin Bronzebeard
@@ -3692,7 +3684,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50349),	-- Corpse Tongue Coin
 						},
 					}),
-					e(1628,  {	-- Deathbringer Saurfang
+					e(1628, {	-- Deathbringer Saurfang
 						["creatureID"] = 37813,	-- Deathbringer Saurfang
 						["groups"] = {
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
@@ -3702,7 +3694,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(142095, {	-- Remains of a Blood Beast (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50672),	-- Bloodvenom Blade
 							i(50668),	-- Greatcloak of the Turned Champion
 							i(50670),	-- Toskk's Maximized Wristguards
@@ -3710,6 +3704,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50363),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
@@ -3736,7 +3731,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 					n(37217, {	-- Precious
 						i(52019),	-- Precious' Ribbon
 					}),
-					e(1629,  {	-- Festergut
+					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
 						["groups"] = {
 							i(50226, {	-- Festergut's Acidic Blood
@@ -3762,7 +3757,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50693),	-- Might of Blight
 						},
 					}),
-					e(1630,  {	-- Rotface
+					e(1630, {	-- Rotface
 						["creatureID"] = 36627,	-- Rotface
 						["groups"] = {
 							i(50231, {	-- Rotface's Acidic Blood
@@ -3787,7 +3782,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50348),	-- Dislodged Foreign Object
 						},
 					}),
-					e(1631,  {	-- Professor Putricide
+					e(1631, {	-- Professor Putricide
 						["creatureID"] = 36678,	-- Professor Putricide
 						["groups"] = {
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
@@ -3797,7 +3792,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(142096, {	-- Putricide's Alchemy Supplies (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50708),	-- Last Word
 							i(50704),	-- Rigormortis
 							i(50707),	-- Astrylian's Sutured Cinch
@@ -3815,7 +3812,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1633, 6 },
 						}),
 					}),
-					e(1632,  {	-- Blood Prince Council
+					e(1632, {	-- Blood Prince Council
 						["crs"] = {
 							37972,	-- Prince Keleseth
 							37973,	-- Prince Taldaram
@@ -3840,7 +3837,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50714),	-- Valanar's Other Signet Ring
 						},
 					}),
-					e(1633,  {	-- Blood-Queen Lana'thel
+					e(1633, {	-- Blood-Queen Lana'thel
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
@@ -3871,11 +3868,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							["_encounter"] = { 1635, 6 },
 						}),
 					}),
-					e(1634,  {	-- Valithria Dreamwalker
+					e(1634, {	-- Valithria Dreamwalker
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832),	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(50621),	-- Lungbreaker
 							i(50631),	-- Nightmare Ender
 							i(50626),	-- Snowstorm Helm
@@ -3893,7 +3892,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50618),	-- Frostbrood Sapphire Ring
 						},
 					}),
-					e(1635,  {	-- Sindragosa
+					e(1635, {	-- Sindragosa
 						["creatureID"] = 36853,	-- Sindragosa
 						["groups"] = {
 							ach(4620),	-- All You Can Eat (25 player)
@@ -3903,7 +3902,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(142097, {	-- Skull of a Frozen Whelp (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
 							i(50635),	-- Sundial of Eternal Dusk
 							i(50633),	-- Sindragosa's Cruel Claw
 							i(50636),	-- Memory of Malygos
@@ -3911,7 +3912,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50364),	-- Sindragosa's Flawless Fang
 						},
 					}),
-					e(1636,  {	-- The Lich King
+					e(1636, {	-- The Lich King
 						["creatureID"] = 36597,	-- The Lich King
 						["groups"] = {
 							ach(4621),	-- Been Waiting a Long Time for This (25 player)
@@ -3926,8 +3927,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-							i(142099),	-- Call of the Frozen Blade (PET!)
-							i(138955),	-- Illusion: Rune of Razorice
+							i(142099, {	-- Call of the Frozen Blade (PET!)
+								["timeline"] = { "added 7.1.0.22731" },
+							}),
+							i(138955, {	-- Illusion: Rune of Razorice
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(50731),	-- Archus, Greatstaff of Antonidas
 							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(50735),	-- Oathbinder, Charge of the Ranger-General
@@ -3937,9 +3942,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50738),	-- Mithrios, Bronzebeard's Legacy
 							i(50734),	-- Royal Scepter of Terenas II
 							i(50733),	-- Fal'inrush, Defender of Quel'thalas
-							i(122229),	-- Music Roll: Invincible
+							i(122229, {	-- Music Roll: Invincible
+								["timeline"] = { "added 6.1.0.19445" },
+							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 						},
 					}),
