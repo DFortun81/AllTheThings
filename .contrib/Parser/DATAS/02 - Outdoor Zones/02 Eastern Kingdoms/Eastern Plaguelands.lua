@@ -649,7 +649,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
 					["icon"] = icon("INV_Misc_Token_ArgentDawn3"),
-					["maps"] = { WESTERN_PLAGUELANDS },
+					["maps"] = {
+						WESTERN_PLAGUELANDS,
+						-- #if BEFORE WRATH
+						NAXXRAMAS,
+						-- #endif
+					},
 				}),
 			}),
 			n(FLIGHT_PATHS, {
