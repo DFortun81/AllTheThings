@@ -91,7 +91,7 @@ root("Zones", {
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					removeclassicphase(ach(1190, {	-- Mysteries of the Marsh
+					classicAch(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -234,7 +234,7 @@ root("Zones", {
 							},
 						}),
 						-- #endif
-					})),
+					}),
 					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
@@ -247,14 +247,14 @@ root("Zones", {
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					removeclassicphase(ach(900, {	-- The Czar of Sporeggar
+					classicAch(900, {	-- The Czar of Sporeggar
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -1390,14 +1390,14 @@ root("Zones", {
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
-							removeclassicphase(ach(893, {	-- Cenarion War Hippogryph
+							classicAch(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
 								["timeline"] = { "removed 4.2.0" },

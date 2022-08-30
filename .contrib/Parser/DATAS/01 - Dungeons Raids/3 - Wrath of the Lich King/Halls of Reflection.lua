@@ -33,15 +33,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 			}),
 			n(QUESTS, {
 				q(24500, {	-- Wrath of the Lich King
-					["provider"] = { "n", 37582 },	-- Archmage Koreln <Kirin Tor>
+					["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24802, {	-- Wrath of the Lich King
-					["provider"] = { "n", 37779 },	-- Dark Ranger Loralen
+					["qg"] = 37779,	-- Dark Ranger Loralen
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			d(1,   {	-- Normal
+			d(1, {	-- Normal
 				n(ZONE_DROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
@@ -124,8 +124,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					i(50306),	-- The Lady's Promise
 				})),
 			}),
-			d(2,   {	-- Heroic
-				["lvl"] = 80,
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {
 						i(50379),	-- Battered Hilt (Alliance)

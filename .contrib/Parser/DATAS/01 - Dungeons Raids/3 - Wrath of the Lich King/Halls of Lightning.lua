@@ -40,10 +40,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			n(QUESTS, {
 				q(29862, {	-- Clearing the Way
-					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
+					["qg"] = 56027,	-- Stormherald Eljrrin
 				}),
 				q(29860, {	-- Diametrically Opposed
-					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
+					["qg"] = 56027,	-- Stormherald Eljrrin
 					["groups"] = {
 						i(43193),	-- Lightning Infused Mantle
 						i(43194),	-- Charred Leather Shoulderguards
@@ -53,8 +53,8 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29861, {	-- Whatever it Takes!
-					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
-					["sourceQuests"] = { 29863 },	-- Stormherald Eljrrin
+					["qg"] = 56027,	-- Stormherald Eljrrin
+					["sourceQuest"] = 29863,	-- Stormherald Eljrrin
 					["groups"] = {
 						i(42844),	-- Robes of Lightning
 						i(43207),	-- Hardened Tongue Tunic
@@ -63,70 +63,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 			}),
-			d(1,   {	-- Normal
+			n(ZONE_DROPS, {
+				i(42780),	-- Relics of Ulduar
+			}),
+			d(1, {	-- Normal
 				n(ZONE_DROPS, {
-					i(36999, {	-- Boots of the Terrestrial Guardian
-						["crs"] = {
-							28583,	-- Blistering Steamrager
-							27966,	-- Dark Rune Controller
-							28579,	-- Hardened Steel Berserker
-							28578,	-- Hardened Steel Reaver
-							28580,	-- Hardened Steel Skycaller
-							28835,	-- Stormforged Construct
-							28920,	-- Stormforged Giant
-							28582,	-- Stormforged Mender
-							28836,	-- Stormforged Runeshaper
-							28837,	-- Stormforged Sentinel
-							28581,	-- Stormforged Tactician
-							28547,	-- Storming Vortex
-							28961,	-- Titanium Siegebreaker
-							28965,	-- Titanium Thunderer
-							28838,	-- Titanium Vanguard
-							28584,	-- Unbound Firestorm
-						},
-					}),
-					i(42780),	-- Relics of Ulduar
-					i(36997, {	-- Sash of the Hardened Watcher
-						["crs"] = {
-							28583,	-- Blistering Steamrager
-							27966,	-- Dark Rune Controller
-							28579,	-- Hardened Steel Berserker
-							28578,	-- Hardened Steel Reaver
-							28580,	-- Hardened Steel Skycaller
-							28835,	-- Stormforged Construct
-							28920,	-- Stormforged Giant
-							28582,	-- Stormforged Mender
-							28836,	-- Stormforged Runeshaper
-							28837,	-- Stormforged Sentinel
-							28581,	-- Stormforged Tactician
-							28547,	-- Storming Vortex
-							28961,	-- Titanium Siegebreaker
-							28965,	-- Titanium Thunderer
-							28838,	-- Titanium Vanguard
-							28584,	-- Unbound Firestorm
-						},
-					}),
-					i(37000, {	-- Storming Vortex Bracers
-						["crs"] = {
-							28583,	-- Blistering Steamrager
-							27966,	-- Dark Rune Controller
-							28579,	-- Hardened Steel Berserker
-							28578,	-- Hardened Steel Reaver
-							28580,	-- Hardened Steel Skycaller
-							28835,	-- Stormforged Construct
-							28920,	-- Stormforged Giant
-							28582,	-- Stormforged Mender
-							28836,	-- Stormforged Runeshaper
-							28837,	-- Stormforged Sentinel
-							28581,	-- Stormforged Tactician
-							28826,	-- Stormfury Revenant
-							28547,	-- Storming Vortex
-							28961,	-- Titanium Siegebreaker
-							28965,	-- Titanium Thunderer
-							28838,	-- Titanium Vanguard
-							28584,	-- Unbound Firestorm
-						},
-					}),
+					i(36999),	-- Boots of the Terrestrial Guardian
+					i(36997),	-- Sash of the Hardened Watcher
+					i(37000),	-- Storming Vortex Bracers
 				}),
 				cr(28586, e(597, {	-- General Bjarngrim
 					i(36980),	-- Hewn Sparring Quarterstaff
@@ -177,69 +121,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					i(36992),	-- Leather-Braced Chain Leggins
 					i(37854),	-- Woven Bracae Leggings
 					i(36993),	-- Seal of the Pantheon
-					i(122237),	-- Music Roll: Mountains of Thunder
+					i(122237, {	-- Music Roll: Mountains of Thunder
+						["timeline"] = { "added 6.1.0.19480" },
+					}),
 				})),
 			}),
-			d(2,   {	-- Heroic
-				["lvl"] = 80,
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
 					n(ZONE_DROPS, {
-						i(37858, {	-- Awakened Handguards
-							["crs"] = {
-								28583,	-- Blistering Steamrager
-								28579,	-- Hardened Steel Berserker
-								28578,	-- Hardened Steel Reaver
-								28580,	-- Hardened Steel Skycaller
-								28835,	-- Stormforged Construct
-								28920,	-- Stormforged Giant
-								28582,	-- Stormforged Mender
-								28836,	-- Stormforged Runeshaper
-								28837,	-- Stormforged Sentinel
-								28581,	-- Stormforged Tactician
-								28826,	-- Stormfury Remnant
-								28547,	-- Storming Vortex
-								28961,	-- Titanium Siegebreaker
-								28965,	-- Titanium Thunderer
-								28838,	-- Titanium Vanguard
-								28584,	-- Unbound Firestorm
-							},
-						}),
-						i(37857, {	-- Helm of the Lightning Halls
-							["crs"] = {
-								28583,	-- Blistering Steamrager
-								28579,	-- Hardened Steel Berserker
-								28578,	-- Hardened Steel Reaver
-								28580,	-- Hardened Steel Skycaller
-								28835,	-- Stormforged Construct
-								28920,	-- Stormforged Giant
-								28582,	-- Stormforged Mender
-								28836,	-- Stormforged Runeshaper
-								28837,	-- Stormforged Sentinel
-								28581,	-- Stormforged Tactician
-								28826,	-- Stormfury Remnant
-								28547,	-- Storming Vortex
-								28961,	-- Titanium Siegebreaker
-								28965,	-- Titanium Thunderer
-								28838,	-- Titanium Vanguard
-								28584,	-- Unbound Firestorm
-							},
-						}),
-						i(37856, {	-- Librarian's Paper Cutter
-							["crs"] = {
-								28579,	-- Hardened Steel Berserker
-								28578,	-- Hardened Steel Reaver
-								28580,	-- Hardened Steel Skycaller
-								28920,	-- Stormforged Giant
-								28582,	-- Stormforged Mender
-								28837,	-- Stormforged Sentinel
-								28581,	-- Stormforged Tactician
-								28965,	-- Titanium Thunderer
-								28838,	-- Titanium Vanguard
-								28584,	-- Unbound Firestorm
-							},
-						}),
-						i(42780),	-- Relics of Ulduar
+						i(37858),	-- Awakened Handguards
+						i(37857),	-- Helm of the Lightning Halls
+						i(37856),	-- Librarian's Paper Cutter
 					}),
+					-- #if BEFORE CATA
+					n(COMMON_BOSS_DROPS, {
+						currency(101, {	-- Emblem of Heroism
+							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+						}),
+					}),
+					-- #endif
 					cr(28586, e(597, {	-- General Bjarngrim
 						ach(1834),	-- Lightning Struck
 						i(36980),	-- Hewn Sparring Quarterstaff
@@ -296,7 +197,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(36992),	-- Leather-Braced Chain Leggins
 						i(37854),	-- Woven Bracae Leggings
 						i(36993),	-- Seal of the Pantheon
-						i(122237),	-- Music Roll: Mountains of Thunder
+						i(122237, {	-- Music Roll: Mountains of Thunder
+							["timeline"] = { "added 6.1.0.19445" },
+						}),
 					})),
 				},
 			}),

@@ -82,7 +82,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		["lvl"] = lvlsquish(44, 31, 44),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(5788, {	-- Agent of the Shen'dralar
+				classicAch(5788, {	-- Agent of the Shen'dralar
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "removed 4.0.3" },
 					-- #if BEFORE 3.0.1
@@ -91,7 +91,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809); end]],
 					-- #endif
-				})),
+				}),
 				ach(644, {	-- King of Dire Maul
 					["maps"] = { 239, 235, 236 },	-- All Wings
 				}),
@@ -229,7 +229,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["group"] = {
-						removeclassicphase(ach(2357, {	-- Dreadsteed of Xoroth
+						classicAch(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE 3.0.1
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
@@ -237,7 +237,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },
-						})),
+						}),
 						mount(23161, {	-- Dreadsteed (MOUNT!)
 							["classes"] = { WARLOCK },
 						}),

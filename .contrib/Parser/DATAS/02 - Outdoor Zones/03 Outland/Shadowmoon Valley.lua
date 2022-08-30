@@ -43,7 +43,7 @@ root("Zones", {
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(1195, {	-- Shadow of the Betrayer
+					classicAch(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -133,7 +133,7 @@ root("Zones", {
 							["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -707,12 +707,12 @@ root("Zones", {
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
-							removeclassicphase(ach(1638, {	-- Skyshattered
+							classicAch(1638, {	-- Skyshattered
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(32863),	-- Skybreaker Whip
 						},
 					})),

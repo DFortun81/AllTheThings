@@ -17,7 +17,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(959, {	-- The Scale of the Sands
+				classicAch(959, {	-- The Scale of the Sands
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -25,7 +25,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["description"] = "Raise your reputation with The Scale of the Sands to Exalted.",
 					-- #endif
 					["maps"] = { CAVERNS_OF_TIME },
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(990, {	-- The Scale of the Sands

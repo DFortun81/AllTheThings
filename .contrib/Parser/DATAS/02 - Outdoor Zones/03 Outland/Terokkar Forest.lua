@@ -47,18 +47,18 @@ root("Zones", {
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
+					classicAch(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
 						["requireSkill"] = FISHING,
 						-- #if BEFORE WRATH
 						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
-					})),
+					}),
 					ach(905, {	-- Old Man Barlowned
 						["requireSkill"] = FISHING,
 					}),
-					removeclassicphase(ach(1191, {	-- Terror of Terokkar (A)
+					classicAch(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -150,8 +150,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1272, {	-- Terror of Terokkar (H)
+					}),
+					classicAch(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -241,7 +241,7 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

@@ -16,7 +16,7 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(955, {	-- Hydraxian Waterlords
+				classicAch(955, {	-- Hydraxian Waterlords
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -24,7 +24,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
 					-- #endif
 					["maps"] = { AZSHARA },
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(749, { 	-- Hydraxian Waterlords
@@ -123,13 +123,13 @@ root("Instances", tier(CLASSIC_TIER, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
-						removeclassicphase(ach(2496, {	-- The Fifth Element
+						classicAch(2496, {	-- The Fifth Element
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 					},
 				})),
 				q(6804, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Poisoned Water
@@ -160,14 +160,14 @@ root("Instances", tier(CLASSIC_TIER, {
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						removeclassicphase(ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+						classicAch(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 							-- #if BEFORE WRATH
 							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
-						})),
+						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
@@ -682,7 +682,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1528, {	-- Ragnaros
 				["creatureID"] = 11502,
 				["groups"] = {
-					removeclassicphase(ach(686, {	-- Molten Core
+					classicAch(686, {	-- Molten Core
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							7787,	-- Rise, Thunderfury!
@@ -690,15 +690,15 @@ root("Instances", tier(CLASSIC_TIER, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
-					removeclassicphase(ach(429, {	-- Sulfuras, Hand of Ragnaros
+					}),
+					classicAch(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
-					})),
+					}),
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 						["cost"] = {

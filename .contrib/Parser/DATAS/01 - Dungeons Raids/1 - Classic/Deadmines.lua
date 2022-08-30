@@ -585,7 +585,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
-						removeclassicphase(ach(628, {	-- Deadmines
+						classicAch(628, {	-- Deadmines
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								166,	-- The Defias Brotherhood (7/7)
@@ -594,7 +594,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							["races"] = ALLIANCE_ONLY,
 							-- #endif
-						})),
+						}),
 						-- #endif
 						i(2874, {	-- An Unsent Letter
 							["timeline"] = { "deleted 4.0.3" },

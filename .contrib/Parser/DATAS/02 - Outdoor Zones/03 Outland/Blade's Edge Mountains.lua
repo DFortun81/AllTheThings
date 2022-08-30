@@ -61,7 +61,7 @@ root("Zones", {
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					removeclassicphase(ach(1193, {	-- On the Blade's Edge
+					classicAch(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -132,7 +132,7 @@ root("Zones", {
 							["sourceQuest"] = 10748,	-- Maxnar Must Die!
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

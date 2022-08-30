@@ -196,12 +196,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				e(533, {	-- Kael'thas Sunstrider
 					["creatureID"] = 24664,
 					["groups"] = {
-						removeclassicphase(ach(661, {	-- Magister's Terrace
+						classicAch(661, {	-- Magister's Terrace
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 11492,	-- Hard to Kill
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(35504),	-- Phoenix Hatchling
 						i(34794),	-- Axe of Shattered Dreams
 						i(34798),	-- Band of Celerity
@@ -317,14 +317,14 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						["creatureID"] = 24664,
 						["groups"] = {
 							ach(682),	-- Heroic: Magister's Terrace
-							removeclassicphase(ach(884, {	-- Swift White Hawkstrider
+							classicAch(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)
 							i(35504),	-- Phoenix Hatchling (PET!)
 							i(34794),	-- Axe of Shattered Dreams

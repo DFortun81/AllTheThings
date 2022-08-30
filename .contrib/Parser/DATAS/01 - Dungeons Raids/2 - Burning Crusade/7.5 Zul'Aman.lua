@@ -201,7 +201,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						n(-82, {	-- Final Chest
 							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
-								removeclassicphase(ach(430, {	-- Amani War Bear
+								classicAch(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
 									["timeline"] = { "removed 3.0.2" },
 									["filterID"] = MOUNTS,
@@ -209,7 +209,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
 									["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 									-- #endif
-								})),
+								}),
 								i(33809, {	-- Amani War Bear (MOUNT!)
 									["timeline"] = { "removed 3.0.2" },
 								}),
@@ -295,12 +295,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					-- #endif
 					["hideText"] = true,
 					["groups"] = {
-						removeclassicphase(ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
+						classicAch(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(33102),	-- Blood of Zul'jin
 						i(33474),	-- Ancient Amani Longbow
 						i(33467),	-- Blade of Twisted Visions

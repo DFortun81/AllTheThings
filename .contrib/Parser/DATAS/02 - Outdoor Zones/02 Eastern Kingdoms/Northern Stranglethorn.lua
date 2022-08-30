@@ -43,7 +43,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(940, {	-- The Green Hills of Stranglethorn
+				classicAch(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -56,7 +56,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

@@ -411,13 +411,13 @@ root("Instances", tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 5.0.4" },
 				["groups"] = {
 					-- #if BEFORE 5.0.4
-					removeclassicphase(ach(629, {	-- Ragefire Chasm
+					classicAch(629, {	-- Ragefire Chasm
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = HORDE_ONLY,
 						-- #endif
-					})),
+					}),
 					-- #endif
 					i(14540, {	-- Taragaman the Hungerer's Heart
 						["timeline"] = { "removed 5.0.4" },

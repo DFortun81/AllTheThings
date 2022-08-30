@@ -442,7 +442,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						removeclassicphase(ach(657, {	-- The Shattered Halls
+						classicAch(657, {	-- The Shattered Halls
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								10884,	-- Trial of the Naaru: Mercy
@@ -453,7 +453,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(27533),	-- Demonblood Eviscerator
 						i(27538),	-- Lightsworn Hammer
 						-- #if AFTER 7.3.5
@@ -575,7 +575,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							removeclassicphase(ach(678, {	-- Heroic: The Shattered Halls
+							classicAch(678, {	-- Heroic: The Shattered Halls
 								-- #if BEFORE 3.0.1
 								["sourceQuests"] = {
 									10884,	-- Trial of the Naaru: Mercy
@@ -584,7 +584,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								},
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(27533),	-- Demonblood Eviscerator
 							i(27538),	-- Lightsworn Hammer
 							i(29348),	-- The Bladefist

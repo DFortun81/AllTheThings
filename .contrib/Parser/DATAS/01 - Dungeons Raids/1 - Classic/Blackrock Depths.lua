@@ -2440,7 +2440,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						removeclassicphase(ach(642, {	-- Blackrock Depths
+						classicAch(642, {	-- Blackrock Depths
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								4362,	-- The Fate of the Kingdom
@@ -2448,7 +2448,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(11931),	-- Dreadforge Retaliatior
 						-- #if BEFORE 7.3.2
 						i(11932),	-- Guiding Stave of Wisdom

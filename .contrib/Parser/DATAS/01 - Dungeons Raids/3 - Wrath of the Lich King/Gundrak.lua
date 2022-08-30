@@ -42,7 +42,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			n(QUESTS, {
 				q(29840, {	-- For Posterity
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["qg"] = 55737,	-- Chronicler Bah'Kini
 					["groups"] = {
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
@@ -51,7 +51,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29844, {	-- For Posterity
-					["provider"] = { "n", 55738 },	-- Tol'mar
+					["qg"] = 55738,	-- Tol'mar
 					["groups"] = {
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
@@ -60,7 +60,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29834, {	-- Gal'darah Must Pay
-					["provider"] = { "n", 55738 },	-- Tol'mar
+					["qg"] = 55738,	-- Tol'mar
 					["groups"] = {
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
@@ -69,7 +69,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29835, {	-- Gal'darah Must Pay
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["qg"] = 55737,	-- Chronicler Bah'Kini
 					["groups"] = {
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
@@ -78,7 +78,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29838, {	-- One of a Kind
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["qg"] = 55737,	-- Chronicler Bah'Kini
 					["groups"] = {
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
@@ -88,7 +88,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29839, {	-- One of a Kind
-					["provider"] = { "n", 55738 },	-- Tol'mar
+					["qg"] = 55738,	-- Tol'mar
 					["groups"] = {
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
@@ -100,146 +100,27 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			d(1, {	-- Normal
 				n(ZONE_DROPS, {
-					i(35593, {	-- Steel Bear Trap Bracers
-						["crs"] = {
-							29836,	-- Drakkari Battle Rider
-							29829,	-- Drakkari Earthshaker
-							29822,	-- Drakkari Fire Weaver
-							29820,	-- Drakkari God Hunter
-							29832,	-- Drakkari Golem
-							29874,	-- Drakkari Inciter
-							29819,	-- Drakkari Lancer
-							29826,	-- Drakkari Medicine Man
-							29838,	-- Drakkari Rhino
-							29931,	-- Drakkari Rhino
-							29830,	-- Living Mojo
-							29768,	-- Unyielding Constrictor
-						},
-					}),
-					i(35594, {	-- Snowmelt Silken Cinch
-						["crs"] = {
-							29836,	-- Drakkari Battle Rider
-							29829,	-- Drakkari Earthshaker
-							29822,	-- Drakkari Fire Weaver
-							29820,	-- Drakkari God Hunter
-							29832,	-- Drakkari Golem
-							29874,	-- Drakkari Inciter
-							29819,	-- Drakkari Lancer
-							29826,	-- Drakkari Medicine Man
-							29838,	-- Drakkari Rhino
-							29931,	-- Drakkari Rhino
-							29830,	-- Living Mojo
-							29768,	-- Unyielding Constrictor
-						},
-					}),
+					i(35593),	-- Steel Bear Trap Bracers
+					i(35594),	-- Snowmelt Silken Cinch
 				}),
-				cr(29304, e(592, {	-- Slad'ran
-					i(35583),	-- Witch Doctor's Wildstaff
-					i(37626),	-- Wand of Sseratus
-					i(37627),	-- Snake Den Spaulders
-					i(35584),	-- Embroidered Gown of Zul'drak
-					i(157578),	-- Belt of Vile Concoctions
-					i(37628),	-- Slad'ran Coiled Cord
-					i(35585),	-- Cannibal's Legguards
-					i(37629),	-- Slithering Slippers
-				})),
-				cr(29307, e(593, {	-- Drakkari Colossus
-					i(35590),	-- Drakkari Hunting Bow
-					i(37636),	-- Helm of Cheated Fate
-					i(37635),	-- Pauldrons of the Colossus
-					i(35591),	-- Shoulderguards of the Ice Troll
-					i(35592),	-- Hauberk of Totemic Mastery
-					i(37634),	-- Bracers of the Divine Elemental
-					i(37637),	-- Living Mojo Belt
-				})),
-				cr(29305, e(594, {	-- Moorabi
-					i(37631),	-- Fist of the Deity
-					i(35587),	-- Frozen Scepter of Necromancy
-					i(37633),	-- Ground Tremor Helm
-					i(157584),	-- Drape of Moorabi
-					i(37630),	-- Shroud of Moorabi
-					i(35588),	-- Forlorn Breastplate of War
-					i(37632),	-- Mojo Frenzy Greaves
-					i(35589),	-- Arcane Focal Signet
-				})),
-				cr(29306, e(596, {	-- Gal'darah
-					i(43309),	-- Amulet of the Stampede
-					i(43305),	-- Shroud of Akali
-					i(37641),	-- Arcane Flame Altar-Garb
-					i(37639),	-- Grips of the Beast God
-					i(37645),	-- Horn-Tipped Gauntlets
-					i(37643),	-- Sash of Blood Removal
-					i(37644),	-- Gored Hide Legguards
-					i(37640),	-- Boots of Transformation
-					i(43306),	-- Gal'darah's Signet
-					i(37642),	-- Hemorrhaging Circle
-					i(37638),	-- Offering of Sacrifice
-				})),
-			}),
-			d(2, {	-- Heroic
-				["lvl"] = 80,
-				["groups"] = {
-					n(ZONE_DROPS, {
-						i(37646, {	-- Burning Skull Pendant
-							["crs"] = {
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-							},
-						}),
-						i(37647, {	-- Cloak of Bloodied Waters
-							["crs"] = {
-								29836,	-- Drakkari Battle Rider
-								29829,	-- Drakkari Earthshaker
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29874,	-- Drakkari Inciter
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29838,	-- Drakkari Rhino
-								29931,	-- Drakkari Rhino
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-								29774,	-- Spitting Cobra
-								29768,	-- Unyielding Constrictor
-							},
-						}),
-						i(37648, {	-- Belt of Tasseled Lanterns
-							["crs"] = {
-								29836,	-- Drakkari Battle Rider
-								29829,	-- Drakkari Earthshaker
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29874,	-- Drakkari Inciter
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29838,	-- Drakkari Rhino
-								29931,	-- Drakkari Rhino
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-								29774,	-- Spitting Cobra
-								29768,	-- Unyielding Constrictor
-							},
-						}),
-					}),
-					cr(29304, e(592, {	-- Slad'ran
-						ach(2058),	-- Snakes. Why'd It Have To Be Snakes?
+				e(592, {	-- Slad'ran
+					["creatureID"] = 29304,	-- Slad'ran
+					["groups"] = {
 						i(35583),	-- Witch Doctor's Wildstaff
 						i(37626),	-- Wand of Sseratus
 						i(37627),	-- Snake Den Spaulders
 						i(35584),	-- Embroidered Gown of Zul'drak
-						i(157578),	-- Belt of Vile Concoctions
+						i(157578, {	-- Belt of Vile Concoctions
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
 						i(37628),	-- Slad'ran Coiled Cord
 						i(35585),	-- Cannibal's Legguards
 						i(37629),	-- Slithering Slippers
-					})),
-					cr(29307, e(593, {	-- Drakkari Colossus
+					},
+				}),
+				e(593, {	-- Drakkari Colossus
+					["creatureID"] = 29307,	-- Drakkari Colossus
+					["groups"] = {
 						i(35590),	-- Drakkari Hunting Bow
 						i(37636),	-- Helm of Cheated Fate
 						i(37635),	-- Pauldrons of the Colossus
@@ -247,31 +128,26 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(35592),	-- Hauberk of Totemic Mastery
 						i(37634),	-- Bracers of the Divine Elemental
 						i(37637),	-- Living Mojo Belt
-					})),
-					cr(29305, e(594, {	-- Moorabi
-						ach(2040),	-- Less-rabi
+					},
+				}),
+				e(594, {	-- Moorabi
+					["creatureID"] = 29305,	-- Moorabi
+					["groups"] = {
 						i(37631),	-- Fist of the Deity
 						i(35587),	-- Frozen Scepter of Necromancy
 						i(37633),	-- Ground Tremor Helm
-						i(157584),	-- Drape of Moorabi
+						i(157584, {	-- Drape of Moorabi
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
 						i(37630),	-- Shroud of Moorabi
 						i(35588),	-- Forlorn Breastplate of War
 						i(37632),	-- Mojo Frenzy Greaves
 						i(35589),	-- Arcane Focal Signet
-					})),
-					cr(29932, e(595, {	-- Eck the Ferocious
-						i(43311),	-- Helmet of the Shrine
-						i(43310),	-- Engraved Chestplate of Eck
-						i(43313),	-- Leggings of the Ruins Dweller
-						i(43312),	-- Gorloc Muddy Footwraps
-					})),
-					cr(29306, e(596, {	-- Gal'darah
-						{	-- Champion of the Frozen Wastes
-							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-							["criteriaID"] = 15,		-- Gal'darah slain
-						},
-						ach(2152),	-- Share The Love
-						ach(1864),	-- What the Eck?
+					},
+				}),
+				e(596, {	-- Gal'darah
+					["creatureID"] = 29306,	-- Gal'darah
+					["groups"] = {
 						i(43309),	-- Amulet of the Stampede
 						i(43305),	-- Shroud of Akali
 						i(37641),	-- Arcane Flame Altar-Garb
@@ -283,7 +159,100 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(43306),	-- Gal'darah's Signet
 						i(37642),	-- Hemorrhaging Circle
 						i(37638),	-- Offering of Sacrifice
-					})),
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					n(ZONE_DROPS, {
+						i(37646),	-- Burning Skull Pendant
+						i(37647),	-- Cloak of Bloodied Waters
+						i(37648),	-- Belt of Tasseled Lanterns
+					}),
+					-- #if BEFORE CATA
+					n(COMMON_BOSS_DROPS, {
+						currency(101, {	-- Emblem of Heroism
+							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+						}),
+					}),
+					-- #endif
+					e(592, {	-- Slad'ran
+						["creatureID"] = 29304,	-- Slad'ran
+						["groups"] = {
+							ach(2058),	-- Snakes. Why'd It Have To Be Snakes?
+							i(35583),	-- Witch Doctor's Wildstaff
+							i(37626),	-- Wand of Sseratus
+							i(37627),	-- Snake Den Spaulders
+							i(35584),	-- Embroidered Gown of Zul'drak
+							i(157578, {	-- Belt of Vile Concoctions
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37628),	-- Slad'ran Coiled Cord
+							i(35585),	-- Cannibal's Legguards
+							i(37629),	-- Slithering Slippers
+						},
+					}),
+					e(593, {	-- Drakkari Colossus
+						["creatureID"] = 29307,	-- Drakkari Colossus
+						["groups"] = {
+							i(35590),	-- Drakkari Hunting Bow
+							i(37636),	-- Helm of Cheated Fate
+							i(37635),	-- Pauldrons of the Colossus
+							i(35591),	-- Shoulderguards of the Ice Troll
+							i(35592),	-- Hauberk of Totemic Mastery
+							i(37634),	-- Bracers of the Divine Elemental
+							i(37637),	-- Living Mojo Belt
+						},
+					}),
+					e(594, {	-- Moorabi
+						["creatureID"] = 29305,	-- Moorabi
+						["groups"] = {
+							ach(2040),	-- Less-rabi
+							i(37631),	-- Fist of the Deity
+							i(35587),	-- Frozen Scepter of Necromancy
+							i(37633),	-- Ground Tremor Helm
+							i(157584, {	-- Drape of Moorabi
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37630),	-- Shroud of Moorabi
+							i(35588),	-- Forlorn Breastplate of War
+							i(37632),	-- Mojo Frenzy Greaves
+							i(35589),	-- Arcane Focal Signet
+						},
+					}),
+					e(595, {	-- Eck the Ferocious
+						["creatureID"] = 29932,	-- Eck the Ferocious
+						["groups"] = {
+							i(43311),	-- Helmet of the Shrine
+							i(43310),	-- Engraved Chestplate of Eck
+							i(43313),	-- Leggings of the Ruins Dweller
+							i(43312),	-- Gorloc Muddy Footwraps
+						},
+					}),
+					
+					e(596, {	-- Gal'darah
+						["creatureID"] = 29306,	-- Gal'darah
+						["groups"] = {
+							{	-- Champion of the Frozen Wastes
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 15,		-- Gal'darah slain
+							},
+							ach(2152),	-- Share The Love
+							ach(1864),	-- What the Eck?
+							i(43309),	-- Amulet of the Stampede
+							i(43305),	-- Shroud of Akali
+							i(37641),	-- Arcane Flame Altar-Garb
+							i(37639),	-- Grips of the Beast God
+							i(37645),	-- Horn-Tipped Gauntlets
+							i(37643),	-- Sash of Blood Removal
+							i(37644),	-- Gored Hide Legguards
+							i(37640),	-- Boots of Transformation
+							i(43306),	-- Gal'darah's Signet
+							i(37642),	-- Hemorrhaging Circle
+							i(37638),	-- Offering of Sacrifice
+						},
+					}),
 				},
 			}),
 			-- #if AFTER 6.2.3.20601

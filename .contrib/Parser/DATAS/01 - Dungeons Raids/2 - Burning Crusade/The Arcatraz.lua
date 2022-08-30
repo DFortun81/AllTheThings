@@ -205,7 +205,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						removeclassicphase(ach(660, {	-- The Arcatraz
+						classicAch(660, {	-- The Arcatraz
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								10882,	-- Harbinger of Doom
@@ -213,7 +213,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						-- #if BEFORE 7.3.5
 						i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 						-- #endif
@@ -332,12 +332,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							removeclassicphase(ach(681, {	-- Heroic: The Arcatraz
+							classicAch(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							objective(1, {	-- Millhouse Manastorm Rescued
 								["provider"] = { "n", 20977 },	-- Millhouse Manastorm
 								["questID"] = 10886,	-- Trial of the Naaru: Tenacity

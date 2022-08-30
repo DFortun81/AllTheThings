@@ -16,7 +16,7 @@ root("Zones", {
 						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					removeclassicphase(ach(1194, {	-- Into the Nether
+					classicAch(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -86,7 +86,7 @@ root("Zones", {
 							},
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

@@ -356,7 +356,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
-					removeclassicphase(ach(636, {	-- Razorfen Downs
+					classicAch(636, {	-- Razorfen Downs
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							3636,	-- Bring the Light
@@ -364,7 +364,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute

@@ -320,7 +320,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["groups"] = {
 			-- #endif
 					n(10184, bubbleDown({ ["timeline"] = REMOVED_WITH_RERELEASE }, {	-- Onyxia
-						removeclassicphase(ach(684, {	-- Onyxia's Lair (Level 60)
+						classicAch(684, {	-- Onyxia's Lair (Level 60)
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								7635,	-- A Proper String
@@ -331,7 +331,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(18423, {	-- Head of Onyxia (A)
 							["races"] = ALLIANCE_ONLY,
 						}),

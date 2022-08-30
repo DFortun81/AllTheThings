@@ -113,7 +113,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				removeclassicphase(ach(940, {	-- The Green Hills of Stranglethorn
+				classicAch(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -126,7 +126,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
 					-- #endif
-				})),
+				}),
 			}),
 			o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
@@ -136,13 +136,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 				-- #endif
 				["groups"] = {
-					removeclassicphase(ach(389, {	-- Gurubashi Arena Master
+					classicAch(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
 						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
 						-- #endif
-					})),
+					}),
 					i(18706),	-- Arena Master
 					i(18711),	-- Arena Bands
 					i(18710),	-- Arena Bracers
@@ -383,13 +383,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						removeclassicphase(ach(396, {	-- Arena Grandmaster
+						classicAch(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
-						})),
+						}),
 						i(19024),	-- Arena Grand Master
 					},
 				}),

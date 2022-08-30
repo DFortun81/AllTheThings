@@ -201,12 +201,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(579, {	-- The Black Stalker
 					["creatureID"] = 17882,
 					["groups"] = {
-						removeclassicphase(ach(650, {	-- Underbog
+						classicAch(650, {	-- Underbog
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 9719,	-- Stalk the Stalker
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						-- #if AFTER 7.3.5
 						i(27769),	-- Endbringer
 						-- #endif

@@ -239,13 +239,13 @@ root("Instances", tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					-- #if BEFORE 4.0.1
-					removeclassicphase(ach(633, {	-- Stormwind Stockade
+					classicAch(633, {	-- Stormwind Stockade
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 391,	-- The Stockade Riots
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
-					})),
+					}),
 					-- #endif
 					i(2926, {	-- Head of Bazil Thredd
 						["timeline"] = { "removed 4.0.1.12984" },

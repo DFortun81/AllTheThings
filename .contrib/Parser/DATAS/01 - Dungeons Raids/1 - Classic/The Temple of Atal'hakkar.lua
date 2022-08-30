@@ -755,12 +755,12 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					removeclassicphase(ach(641, {	-- Sunken Temple
+					classicAch(641, {	-- Sunken Temple
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(10454, {	-- Essence of Eranikus
 						["timeline"] = { "removed 4.0.3" },
 					}),

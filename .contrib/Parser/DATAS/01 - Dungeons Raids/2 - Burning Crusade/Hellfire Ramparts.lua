@@ -192,7 +192,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(528, {	-- Omor the Unscarred
 					["creatureID"] = 17308,
 					["groups"] = {
-						removeclassicphase(ach(647, {	-- Hellfire Ramparts
+						classicAch(647, {	-- Hellfire Ramparts
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								9575,	-- Weaken the Ramparts
@@ -200,7 +200,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(24069),	-- Crystalfire Staff
 						i(24094),	-- Heart Fire Warhammer
 						-- #if AFTER 7.3.5

@@ -2016,13 +2016,13 @@ root("Zones", {
 					n(18756, {	-- Haris Pilton <Socialite>
 						["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 						["groups"] = {
-							removeclassicphase(ach(1165, {	-- My Sack is "Gigantique"
+							classicAch(1165, {	-- My Sack is "Gigantique"
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
 								-- #if BEFORE WRATH
 								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(38082, {	-- "Gigantique" Bag
 								["cost"] = 12000000,	-- 1,200g
 							}),

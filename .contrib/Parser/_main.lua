@@ -1629,22 +1629,6 @@ end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return originalLvl;
 end
-removeclassicphase = function(t)
-	if t then
-		if t.g or t.groups then
-			t.u = nil;
-			removeclassicphase(t.groups);
-			removeclassicphase(t.g);
-		elseif isarray(t) then
-			for i,group in ipairs(t) do
-				removeclassicphase(group);
-			end
-		else
-			t.u = nil;
-		end
-		return t;
-	end
-end
 -- #else
 applyclassicphase = function(phase, data)
 	return data;
@@ -1661,9 +1645,6 @@ lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return retailLvl or originalLvl;
 end
 -- #endif
-removeclassicphase = function(t)
-	return t;
-end
 -- #endif
 
 -- SHORTCUTS for Object Class Types
@@ -1705,6 +1686,15 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
+end
+classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
+	if t or type(altID) == "number" then
+		t = struct("allianceAchievementID", id, t or {});
+		t["hordeAchievementID"] = altID;
+		return t;
+	else
+		return struct("achievementID", id, altID);
+	end
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)

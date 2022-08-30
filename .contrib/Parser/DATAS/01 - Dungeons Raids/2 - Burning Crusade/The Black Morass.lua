@@ -124,7 +124,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						removeclassicphase(ach(655, {	-- Opening of the Dark Portal
+						classicAch(655, {	-- Opening of the Dark Portal
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								9836,	-- The Master's Touch
@@ -132,7 +132,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(28188),	-- Bloodfire Greatstaff
 						i(28189),	-- Latro's Shifting Sword
 						i(28206),	-- Cowl of the Guiltless

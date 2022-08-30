@@ -147,7 +147,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					crit(4),	-- Defend a tower
 					crit(5),	-- Kill someone in the Field of Strife
 				}),
-				removeclassicphase(ach(706, {	-- Frostwolf Howler
+				classicAch(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
 					["races"] = HORDE_ONLY,
 					["filterID"] = MOUNTS,
@@ -155,8 +155,8 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
-				})),
-				removeclassicphase(ach(707, {	-- Stormpike Battle Charger
+				}),
+				classicAch(707, {	-- Stormpike Battle Charger
 					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
 					["races"] = ALLIANCE_ONLY,
 					["filterID"] = MOUNTS,
@@ -164,7 +164,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
-				})),
+				}),
 				ach(1166),	-- To the Looter Go the Spoils
 				ach(226),	-- The Alterac Blitz
 			}),

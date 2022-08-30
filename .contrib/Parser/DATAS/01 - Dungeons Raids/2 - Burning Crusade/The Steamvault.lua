@@ -158,7 +158,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(575, {	-- Warlord Kalithresh
 					["creatureID"] = 17798,
 					["groups"] = {
-						removeclassicphase(ach(656, {	-- The Steamvault
+						classicAch(656, {	-- The Steamvault
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								9763,	-- The Warlord's Hideout
@@ -166,7 +166,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						-- #if AFTER 7.3.5
 						i(29351),	-- Wrathtide Longbow
 						-- #endif
@@ -264,12 +264,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(575, {	-- Warlord Kalithresh
 						["creatureID"] = 17798,
 						["groups"] = {
-							removeclassicphase(ach(677, {	-- Heroic: The Steamvault
+							classicAch(677, {	-- Heroic: The Steamvault
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(29351),	-- Wrathtide Longbow
 							i(27801),	-- Beast Lord Mantle
 							i(27738),	-- Incanter's Pauldrons

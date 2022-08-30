@@ -74,27 +74,27 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(902, {	-- Chief Exalted Officer
+					classicAch(902, {	-- Chief Exalted Officer
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 933); end]],
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
-					})),
+					}),
 					explorationAch(866, {	-- Explore Nagrand
 						-- #if BEFORE WRATH
 						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					removeclassicphase(ach(939, {	-- Hills Like White Elekk
+					classicAch(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE 3.0.1
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
-					removeclassicphase(ach(901, {	-- Mag'har of Draenor
+					}),
+					classicAch(901, {	-- Mag'har of Draenor
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -102,8 +102,8 @@ root("Zones", {
 						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
 						["races"] = HORDE_ONLY,
-					})),
-					removeclassicphase(ach(1273, {	-- Nagrand Slam (Horde)
+					}),
+					classicAch(1273, {	-- Nagrand Slam (Horde)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -201,8 +201,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1192, {	-- Nagrand Slam (Alliance)
+					}),
+					classicAch(1192, {	-- Nagrand Slam (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -292,8 +292,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(899, {	-- Oh My, Kurenai
+					}),
+					classicAch(899, {	-- Oh My, Kurenai
 						-- #if BEFORE 3.0.1
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -301,7 +301,7 @@ root("Zones", {
 						["description"] = "Raise your reputation with the Kurenai to Exalted.",
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

@@ -163,7 +163,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					title(101),				-- Brewmaster
 				},
 			}),
-			removeclassicphase(ach(3496, {	-- A Brew-FAST Mount
+			classicAch(3496, {	-- A Brew-FAST Mount
 				["providers"] = {
 					{ "i", 37828 },	-- Great Brewfest Kodo
 					{ "i", 33977 },	-- Swift Brewfest Ram
@@ -173,15 +173,15 @@ root("Holidays", applyholiday(BREWFEST, {
 				["description"] = "Obtain an epic Brewfest mount.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(1260),	-- Almost Blind Luck
-			removeclassicphase(ach(1293, {	-- Blue Brewfest Stein [Removed]
+			classicAch(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(2796, {	-- Brew of the Month
 				["providers"] = {
 					{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (newer)
@@ -228,24 +228,24 @@ root("Holidays", applyholiday(BREWFEST, {
 			}),
 			ach(295),	-- Direbrewfest
 			ach(293),	-- Disturbing the Peace
-			removeclassicphase(ach(1936, {	-- Does Your Wolpertinger Linger?
+			classicAch(1936, {	-- Does Your Wolpertinger Linger?
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 				["timeline"] = { "added 2.2.2" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(1186, {	-- Down With The Dark Iron
 				["timeline"] = { "added 3.0.1", "removed 8.2.0" },
 			}),
-			removeclassicphase(ach(4782, {	-- Green Brewfest Stein [Removed]
+			classicAch(4782, {	-- Green Brewfest Stein [Removed]
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
-			removeclassicphase(ach(303, {	-- Have Keg, Will Travel
+			}),
+			classicAch(303, {	-- Have Keg, Will Travel
 				["providers"] = {
 					{ "i", 33976 },	-- Brewfest Ram
 					{ "i", 37828 },	-- Great Brewfest Kodo
@@ -259,7 +259,7 @@ root("Holidays", applyholiday(BREWFEST, {
 				["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(1184, {	-- Strange Brew (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -350,13 +350,13 @@ root("Holidays", applyholiday(BREWFEST, {
 					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
 				}),
 			}),
-			removeclassicphase(ach(1292, {	-- Yellow Brewfest Stein [Removed]
+			classicAch(1292, {	-- Yellow Brewfest Stein [Removed]
 				["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 		}),
 		n(23872, {	-- Coren Direbrew
 			-- #if AFTER 3.0.1

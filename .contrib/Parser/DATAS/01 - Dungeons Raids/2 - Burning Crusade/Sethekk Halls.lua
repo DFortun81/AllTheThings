@@ -130,7 +130,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 32449 },	-- Essence-Infused Moonstone
 							["cr"] = 23035,	-- Anzu
 						}),
-						removeclassicphase(ach(2359, {	-- Swift Flight Form
+						classicAch(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
@@ -139,7 +139,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						-- #if BEFORE 4.0.1
 						recipe(40120),	-- Swift Flight Form
 						-- #endif
@@ -199,12 +199,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(543, {	-- Talon King Ikiss
 					["creatureID"] = 18473,
 					["groups"] = {
-						removeclassicphase(ach(653, {	-- Sethekk Halls
+						classicAch(653, {	-- Sethekk Halls
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(27986),	-- Crow Wing Reaper
 						-- #if AFTER 7.3.5
 						i(29355),	-- Terokk's Shadowstaff (7.3.5 - Used to be only Heroic Mode)
@@ -290,14 +290,14 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						["creatureID"] = 23035,
 						["groups"] = {
-							removeclassicphase(ach(883, {	-- Reins of the Raven Lord
+							classicAch(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(32768),	-- Raven Lord (MOUNT!)
 							i(32781),	-- Talon of Anzu
 							i(32780),	-- The Boomstick

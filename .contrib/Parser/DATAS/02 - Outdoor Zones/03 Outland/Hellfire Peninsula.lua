@@ -97,7 +97,7 @@ root("Zones", {
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					removeclassicphase(ach(1189, {	-- To Hellfire and Back [Alliance Version]
+					classicAch(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -185,8 +185,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1271, {	-- To Hellfire and Back [Horde Version]
+					}),
+					classicAch(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -288,7 +288,7 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {

@@ -788,7 +788,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(422, {	-- Mekgineer Thermaplugg
 				["creatureID"] = 7800,
 				["groups"] = {
-					removeclassicphase(ach(634, {	-- Gnomeregan
+					classicAch(634, {	-- Gnomeregan
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							2929,	-- The Grand Betrayal
@@ -796,7 +796,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(9153, {	-- Rig Blueprints
 						["description"] = "In a small chest behind the 3rd pillar from the right after defeating Thermaplugg.",
 					}),

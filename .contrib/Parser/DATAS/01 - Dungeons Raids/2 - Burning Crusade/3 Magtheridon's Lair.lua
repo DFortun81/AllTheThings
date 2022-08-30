@@ -50,13 +50,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 2.3.0.10000" },
 							-- #endif
 						}),
-						removeclassicphase(ach(432, {	-- Champion of the Naaru (Achievement)
+						classicAch(432, {	-- Champion of the Naaru (Achievement)
 							["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
 							-- #if BEFORE 3.0.1
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 3.0.1" },
-						})),
+						}),
 						title(36, {	-- Champion of the Naaru
 							["timeline"] = { "removed 3.0.2" },
 						}),
@@ -83,7 +83,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1566, {
 				["creatureID"] = 17257,
 				["groups"] = {
-					removeclassicphase(ach(693, {	-- Magtheridon's Lair
+					classicAch(693, {	-- Magtheridon's Lair
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							11002,	-- The Fall of Magtheridon
@@ -93,7 +93,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(32385, {	-- Magtheridon's Head
 						["races"] = ALLIANCE_ONLY,
 					}),

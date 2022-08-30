@@ -554,7 +554,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(946, {	-- The Argent Dawn
+				classicAch(946, {	-- The Argent Dawn
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -562,7 +562,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
 					-- #endif
 					["maps"] = { WESTERN_PLAGUELANDS },
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

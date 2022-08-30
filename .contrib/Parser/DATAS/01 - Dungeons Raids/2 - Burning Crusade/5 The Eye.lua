@@ -217,7 +217,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1576, {	-- Kael'thas Sunstrider
 				["creatureID"] = 19622,
 				["groups"] = {
-					removeclassicphase(ach(696, {	-- Tempest Keep
+					classicAch(696, {	-- Tempest Keep
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							10445,	-- The Vials of Eternity
@@ -225,15 +225,15 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
-					removeclassicphase(ach(885, {	-- Ashes of Al'ar
+					}),
+					classicAch(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
-					})),
+					}),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)
 					i(32405),	-- Verdant Sphere
 					i(30236, {	-- Chestguard of the Vanquished Champion

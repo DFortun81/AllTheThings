@@ -4,7 +4,7 @@
 root("Promotions", {
 	n(-546, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Recruit A Friend
 		ach(1436, {	-- Friends In High Places
-			["timeline"] = { "added 2.4.3.8601" },
+			["timeline"] = { "added 3.0.1" },
 		}),
 		i(37719, {	-- Swift Zhevra (MOUNT!)
 			["timeline"] = { "added 2.4.3.8601" },

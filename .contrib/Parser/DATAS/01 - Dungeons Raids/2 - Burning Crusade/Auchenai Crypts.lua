@@ -154,7 +154,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(524, {	-- Exarch Maladaar
 					["creatureID"] = 18373,
 					["groups"] = {
-						removeclassicphase(ach(666, {	-- Auchenai Crypts
+						classicAch(666, {	-- Auchenai Crypts
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								10167,	-- Auchindoun...
@@ -162,7 +162,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(27412),	-- Ironstaff of Regeneration
 						-- #if AFTER 7.3.5
 						i(27872),	-- The Harvester of Souls

@@ -475,7 +475,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						["creatureID"] = 12201,
 						["modelScale"] = 2,
 						["groups"] = {
-							removeclassicphase(ach(640, {	-- Maraudon
+							classicAch(640, {	-- Maraudon
 								-- #if BEFORE 3.0.1
 								["sourceQuests"] = {
 									7065,	-- Corruption of Earth and Seed
@@ -483,7 +483,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								},
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(17780),	-- Blade of Eternal Darkness
 							i(17710),	-- Charstone Dirk
 							i(17766),	-- Princess Theradras' Scepter

@@ -1337,14 +1337,14 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				removeclassicphase(ach(897, {	-- You're So Offensive
+				classicAch(897, {	-- You're So Offensive
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1077); end]],
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
 					-- #endif
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1077, {	-- Shattered Sun Offensive

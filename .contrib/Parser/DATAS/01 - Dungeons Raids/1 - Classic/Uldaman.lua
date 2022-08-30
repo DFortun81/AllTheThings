@@ -756,7 +756,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					removeclassicphase(ach(638, {	-- Uldaman
+					classicAch(638, {	-- Uldaman
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							2278,	-- The Platinum Discs
@@ -765,7 +765,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(7672),	-- Shattered Necklace Power Source
 					i(9418),	-- Stoneslayer
 					i(9413),	-- The Rockpounder

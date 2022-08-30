@@ -323,18 +323,6 @@ root("Zones", {
 						["qg"] = 26924,	-- Gan'jo
 						["sourceQuest"] = 12121,	-- See You on the Other Side
 					}),
-					q(12238, {	-- Cleansing Drak'Tharon
-						["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
-						["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
-						["qg"] = 26787,	-- Image of Drakuru
-						["sourceQuest"] = 12068,	-- Voices From the Dust
-						["groups"] = {
-							i(40755),	-- Enticing Sabatons
-							i(40757),	-- Shackles of Dark Whispers
-							i(40756),	-- Shoulders of the Seducer
-							i(40758),	-- Shroud of Temptation
-						},
-					}),
 					q(12293, {	-- Close the Deal
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,

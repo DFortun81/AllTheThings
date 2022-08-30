@@ -14,12 +14,12 @@ root("Instances", tier(CLASSIC_TIER, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(646, {	-- Stratholme
+				classicAch(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
-				})),
+				}),
 			}),
 			n(QUESTS, {
 				q(27422, {	-- A City Under Siege
@@ -1021,14 +1021,14 @@ root("Instances", tier(CLASSIC_TIER, {
 						-- #endif
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
-							removeclassicphase(ach(729, {	-- Deathcharger's Reins
+							classicAch(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
 								["f"] = 100,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 							i(13505),	-- Runeblade of Baron Rivendare
 							i(13368),	-- Bonescraper

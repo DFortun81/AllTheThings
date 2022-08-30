@@ -51,14 +51,14 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(2116, {	-- Tabard of the Argent Dawn
+				classicAch(2116, {	-- Tabard of the Argent Dawn
 					["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
 					-- #if BEFORE WRATH
 					["description"] = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					["timeline"] = { "removed 3.0.2" },
 					-- #endif
-				})),
+				}),
 			}),
 			n(QUESTS, {
 				-- TODO: Find quest giver information for A Desperate Alliance / Desperate Research, all I have resource-wise is "Commoners in Major Cities".
@@ -829,7 +829,7 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { KARAZHAN },
 				["groups"] = {
-					removeclassicphase(ach(2456, {	-- Vampire Hunter
+					classicAch(2456, {	-- Vampire Hunter
 						["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
 						-- #if BEFORE WRATH
 						["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
@@ -838,7 +838,7 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 						-- #else
 						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 						-- #endif
-					})),
+					}),
 					i(38658, {	-- Vampiric Batling Pet
 						-- #if ANYCLASSIC
 						["description"] = "Drops for everyone in the raid. Get one on all of your alts!",

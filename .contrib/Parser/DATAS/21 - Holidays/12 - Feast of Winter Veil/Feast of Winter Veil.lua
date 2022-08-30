@@ -201,16 +201,20 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				crit(3),	-- Hot Apple Cider
 			}),
 			ach(252),	-- With a Little Helper from My Friends
-			removeclassicphase(ach(1705, {	-- Clockwork Rocket Bot (2007)
+			classicAch(1705, {	-- Clockwork Rocket Bot (2007)
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 				["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
+				-- #if ANYCLASSIC
+				["timeline"] = { "created 2.4.3.8601", "added 3.0.1" },
+				-- #else
 				["timeline"] = { "added 2.4.3.8601" },
+				-- #endif
 			}),
 			ach(6059, {	-- Red Rider Air Rifle (2009)
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle

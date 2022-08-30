@@ -2001,13 +2001,13 @@ root("Instances", tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
-						removeclassicphase(ach(631, {	-- Shadowfang Keep
+						classicAch(631, {	-- Shadowfang Keep
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 1014,	-- Arugal Must Die
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							["races"] = HORDE_ONLY,
 							-- #endif
-						})),
+						}),
 						i(5442),	-- Head of Arugal
 						i(6220),	-- Meteor Shard
 						i(6324),	-- Robes of Arugal
