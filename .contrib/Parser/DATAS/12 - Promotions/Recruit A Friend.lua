@@ -11,7 +11,7 @@ root("Promotions", {
 		}),
 
 		ach(4832, {	-- Friends In Even Higher Places
-			["timeline"] = { "added 3.3.3.11723" },
+			["timeline"] = { "added 4.0.0" },
 		}),
 		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723" },

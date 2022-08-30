@@ -946,6 +946,10 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 					i(22974),	-- A Ragged Page
 					i(22975),	-- A Smudged Document
 					i(22977),	-- A Torn Letter
+					i(40110, {	-- Haunted Memento
+						["description"] = "This is probably one of the coolest items in the game. DO NOT GET RID OF IT.",
+						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
+					}),
 				},
 			}),
 			n(RARES, {
