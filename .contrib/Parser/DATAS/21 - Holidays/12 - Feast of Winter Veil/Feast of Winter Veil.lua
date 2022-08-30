@@ -218,7 +218,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			}),
 			ach(6059, {	-- Red Rider Air Rifle (2009)
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-				["timeline"] = { "added 3.3.0.11159" },
+				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			ach(6060),		-- MiniZep Controller (2010)
 			ach(6061),		-- Gaudy Winter Veil Sweater (2011)

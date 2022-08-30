@@ -100,12 +100,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
-						-- #if ANYCLASSIC
-						applyclassicphase(WRATH_PHASE_ONE, title(144)),	-- Bloodsail Admiral <Name>
-						-- #else
-						-- TitleID vs MaskID is confusing... TODO: Figure out titleID mapping without nonsense like this needed.
-						applyclassicphase(WRATH_PHASE_ONE, title(111)),	-- Bloodsail Admiral <Name>
-						-- #endif
+						title(111, {	-- Bloodsail Admiral <Name>
+							["timeline"] = { "added 3.0.1" },
+						}),
 					},
 				})),
 				explorationAch(781, {	-- Explore Stranglethorn Vale

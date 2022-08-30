@@ -85,7 +85,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				classicAch(5788, {	-- Agent of the Shen'dralar
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "removed 4.0.3" },
-					-- #if BEFORE 3.0.1
+					-- #if BEFORE 4.1.0
 					["description"] = "Earn exalted status with the Shen'dralar.",
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
