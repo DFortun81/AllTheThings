@@ -11,6 +11,39 @@ root("Zones", {
 					explorationAch(1269),	-- Explore The Storm Peaks
 					ach(1428),	-- Mine Sweeper
 					ach(38, {	-- The Summit of Storm Peaks
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							12824,	-- Demolitionist Extraordinaire
+							--12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
+							12867,	-- Baby Stealers
+							12868,	-- Sirana Iceshriek
+							12928,	-- Norgannon's Shell (H)
+							12872,	-- Norgannon's Shell (A)
+							12978,	-- Facing the Storm
+							12965,	-- The Gifts of Loken
+							13007,	-- The Iron Colossus
+							12978,	-- Facing the Storm
+							12965,	-- The Gifts of Loken
+							13007,	-- The Iron Colossus
+							13285,	-- Forging the Keystone
+							12973,	-- The Brothers Bronzebeard
+							12876,	-- Unwelcome Guests
+							13058,	-- Changing the Wind's Course
+							12972,	-- You'll Need a Bear
+							13064,	-- Sibling Rivalry
+							12976,	-- A Monument to the Fallen
+							12987,	-- Mounting Hodir's Helm
+							13001,	-- Raising Hodir's Spear
+							13047,	-- Loken
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 100,
+						-- #endif
+						-- #else
 						-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct
 						crit(1, {	-- Defending K3
 							["sourceQuests"] = {
@@ -80,6 +113,7 @@ root("Zones", {
 						crit(9, {	-- Loken
 							["sourceQuest"] = 13047,	-- Loken
 						}),
+						-- #endif
 					}),
 				}),
 				-- #if AFTER MOP

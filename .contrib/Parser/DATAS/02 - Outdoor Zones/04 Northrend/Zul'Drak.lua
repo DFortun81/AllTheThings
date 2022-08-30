@@ -37,6 +37,40 @@ root("Zones", {
 						},
 					}),
 					ach(36, {	-- The Empire of Zul'Drak
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							12516,	-- Too Much of a Good Thing
+							12685,	-- You Reap What You Sow
+							12730,	-- Convocation at Zol'Heb
+							12948,	-- The Champion of Anguish
+							12861,	-- Trolls Is Gone Crazy!
+							-- TODO: verify below:
+							12902,	-- In Search of Answers
+							12859,	-- This Just In: Fire Still Hot!
+							12904,	-- Light Won't Grant Me Vengeance
+							12919,	-- The Storm King's Crusade
+							-- TODO: verify below:
+							12901,	-- Making Something Out Of Nothing
+							12903,	-- That's What Friends Are For...
+							12713,	-- Betrayal
+							12584,	-- Pure Evil
+							12506,	-- Trouble at the Altar of Sseratus
+							-- TODO: confirm the following:
+							12555,	-- A Tangled Skein
+							12504,	-- Argent Crusade, We Are Leaving!
+							12606,	-- Cocooned!
+							12512,	-- Leave No One Behind
+							12554,	-- Malas the Corrupter
+							12508,	-- Mopping Up
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 100,
+						-- #endif
+						-- #else
 						crit(1, {	-- Sseratus
 							["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 						}),
@@ -82,6 +116,7 @@ root("Zones", {
 								12508,	-- Mopping Up
 							},
 						}),
+						-- #endif
 					}),
 				}),
 				-- #if AFTER MOP

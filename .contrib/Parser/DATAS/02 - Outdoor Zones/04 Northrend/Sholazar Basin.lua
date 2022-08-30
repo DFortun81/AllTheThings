@@ -11,6 +11,23 @@ root("Zones", {
 					explorationAch(1268),	-- Explore Sholazar Basin
 					ach(961),	-- Honorary Frenzyheart
 					ach(39, {	-- Into the Basin
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							12595,	-- In Search of Bigger Game
+							12614,	-- Post-partum Aggression
+							12540,	-- Just Following Orders
+							12581,	-- A Hero's Burden
+							12805,	-- Salvaging Life's Strength
+							12546,	-- Reclamation
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 75,
+						-- #endif
+						-- #else
 						crit(1, {	-- Hunting Bigger Game
 							["sourceQuest"] = 12595,	-- In Search of Bigger Game
 						}),
@@ -29,6 +46,7 @@ root("Zones", {
 						crit(6, {	-- Watching Over the Basin
 							["sourceQuest"] = 12546,	-- Reclamation
 						}),
+						-- #endif
 					}),
 					ach(952),	-- Mercenary of Sholazar
 					ach(962),	-- Savior of the Oracles

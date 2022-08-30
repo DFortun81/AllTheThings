@@ -49,11 +49,13 @@ root("Zones", {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with Ogri'la to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
-						["description"] = "Raise your reputation with Ogri'la to Exalted.",
 						-- #endif
 					})),
 					explorationAch(865, {	-- Explore Blade's Edge Mountains
@@ -89,8 +91,10 @@ root("Zones", {
 							-- Ruuan Weald (A+H)
 							10748,	-- Maxnar Must Die!
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 86 quests in Blade's Edge Mountains.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],

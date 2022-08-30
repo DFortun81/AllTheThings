@@ -22,6 +22,31 @@ root("Zones", {
 					})),
 					explorationAch(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							13083,	-- Light Within the Darkness
+							13219,	-- Battle at Valhalas: Final Challenge
+							13235,	-- The Flesh Giant Champion
+							13403,	-- Tirion's Gambit (A)
+							13364,	-- Tirion's Gambit (H)
+							12898,	-- The Shadow Vault (A)
+							12899,	-- The Shadow Vault (H)
+							13174,	-- Amidst the Confusion
+							-- TODO: verify below:
+							13172,	-- Seeds of Chaos
+							13164,	-- The Fate of Bloodbane
+							13157,	-- The Crusaders' Pinnacle
+							13346,	-- No Rest For The Wicked (A)
+							13367,	-- No Rest For The Wicked (H)
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 140,
+						-- #endif
+						-- #else
 						crit(1, {	-- Crusader Bridenbrad
 							["sourceQuest"] = 13083,	-- Light Within the Darkness
 						}),
@@ -68,6 +93,7 @@ root("Zones", {
 						crit(11, {	-- Corp'rethar: The Horror Gate
 							-- NOTE: this was automatically marked as complete for some reason
 						}),
+						-- #endif
 					}),
 				}),
 				-- #if AFTER MOP

@@ -22,6 +22,31 @@ root("Zones", {
 					explorationAch(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							12169,	-- The High Cultist
+							12107,	-- The End of the Line
+							12123,	-- Informing the Queen
+							13343,	-- Mystery of the Infinite, Redux
+							12459,	-- That Which Creates Can Also Destroy
+							-- TODO:: confirm below
+							12266,	-- Tales of Destruction
+							12419,	-- The Fate of the Ruby Dragonshrine
+							12456,	-- The Plume of Alystros
+							12499,	-- Return to Angrathar
+							12478,	-- Frostmourne Cavern
+							12080,	-- Really Big Worm
+							12078,	-- Worm Wrangler
+							12032,	-- Conversing With the Depths
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 115,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- The Warden's Task
 								["sourceQuest"] = 12169,	-- The High Cultist
@@ -58,9 +83,37 @@ root("Zones", {
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},
+						-- #endif
 					}),
 					ach(1359, {	-- Might of Dragonblight (H)
 						["races"] = HORDE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							12008,	-- Agmar's Hammer
+							12136,	-- The Translated Tome
+							12110,	-- The End of the Line
+							12111,	-- Where the Wild Things Roam
+							12500,	-- Return To Angrathar
+							12124,	-- Informing the Queen
+							13343,	-- Mystery of the Infinite, Redux
+							12459,	-- That Which Creates Can Also Destroy
+							-- TODO:: confirm below
+							12266,	-- Tales of Destruction
+							12419,	-- The Fate of the Ruby Dragonshrine
+							12456,	-- The Plume of Alystros
+							12080,	-- Really Big Worm
+							12078,	-- Worm Wrangler
+							12285,	-- Do Unto Others
+							12032,	-- Conversing With the Depths
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 130,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- The Taunka
 								["sourceQuest"] = 12008,	-- Agmar's Hammer
@@ -103,8 +156,8 @@ root("Zones", {
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},
+						-- #endif
 					}),
-					ach(1277),	-- Rapid Defense
 					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
 							12499,	-- Return to Angrathar (A)
@@ -467,10 +520,15 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12372, {	-- Defending Wyrmrest Temple
-						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
 						["qg"] = 27575,	-- Lord Afrasastrasz
 						["sourceQuest"] = 12435,	-- Report to Lord Afrasastrasz
+						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
 						["isDaily"] = true,
+						["groups"] = {
+							ach(1277, {	-- Rapid Defense
+								["sourceQuest"] = 12372,	-- Defending Wyrmrest Temple
+							}),
+						},
 					}),
 					q(12265, {	-- Defiling the Defilers
 						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },

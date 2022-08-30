@@ -619,7 +619,7 @@ root("Zones", {
 						},
 					})),
 					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
 						["cost"] = {
 							{ "i", 31779, 1 },	-- Aldor Tabard
 							{ "i", 31780, 1 },	-- Scryers Tabard
@@ -629,28 +629,34 @@ root("Zones", {
 						-- #endif
 					})),
 					ach(903, applyclassicphase(TBC_PHASE_ONE, {	-- Shattrath Divided
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate(t, 932, 934); end]],
-						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
 						-- #endif
 					})),
 					ach(764, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (A)
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 946); end]],
-						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					})),
 					ach(763, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (H)
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 947); end]],
-						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
 						-- #endif
 						["races"] = HORDE_ONLY,
 					})),

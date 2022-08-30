@@ -150,8 +150,10 @@ root("Zones", {
 							9919,	-- Sporeggar
 							9729,	-- Fhwoor Smash!
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 54 quests in Zangarmarsh.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -237,10 +239,12 @@ root("Zones", {
 					}),
 					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
 						-- #if BEFORE 3.0.1
+						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
-						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
 						-- #endif
 						["groups"] = {
 							-- NOTE: Achievement says it awards 132, but that's wrong.
@@ -249,10 +253,12 @@ root("Zones", {
 					})),
 					classicAch(900, {	-- The Czar of Sporeggar
 						-- #if BEFORE 3.0.1
+						["description"] = "Raise your reputation with Sporeggar to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
-						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
 					}),
 				}),

@@ -20,7 +20,7 @@ root("Zones", {
 						},
 					})),
 					explorationAch(1263),	-- Explore Howling Fjord
-					ach(1254, {	-- Friend or Fowl? [TODO: Move to Howling Fjord]
+					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
 							{ 69.6, 65.8, HOWLING_FJORD },
 							{ 59.4, 63.6, HOWLING_FJORD },
@@ -34,6 +34,36 @@ root("Zones", {
 					}),
 					ach(34, {	-- I've Toured the Fjord (A)
 						["races"] = ALLIANCE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							11291,	-- To Westguard Keep!
+							-- TODO:: confirm the quest below
+							11436,	-- Let's Go Surfing Now
+							11344,	-- Anguish of Nifflevar
+							11501,	-- News From the East
+							11572,	-- Return to Atuik
+							11471,	-- The Jig is Up
+							11467,	-- Dead Man's Debt
+							11332,	-- Mission: Plague This!
+							11250,	-- All Hail the Conqueror of Skorn!
+							11239,	-- In Service of the Light
+							11236,	-- Necro Overlord Mezhen
+							11432,	-- Sleeping Giants
+							11452,	-- The Slumbering King
+							11238,	-- The Frost Wyrm and its Master
+							11428,	-- Keeper Witherleaf
+							11359,	-- Demolishing Megalith
+							11348,	-- The Rune of Command
+							11326,	-- Alpha Worg
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 130,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- The Ill-Equipped Port
 								["sourceQuests"] = {
@@ -85,9 +115,38 @@ root("Zones", {
 								["sourceQuest"] = 11326,	-- Alpha Worg
 							}),
 						},
+						-- #endif
 					}),
 					ach(1356, {	-- I've Toured the Fjord (H)
 						["races"] = HORDE_ONLY,
+						-- #if ANYCLASSIC
+						-- #if AFTER CATA
+						["sourceQuests"] = {
+							11234,	-- Report to Anselm
+							12481,	-- Adding Injury to Insult
+							11307,	-- Field Test
+							11572,	-- Return to Atuik
+							11471,	-- The Jig is Up
+							11467,	-- Dead Man's Debt
+							11310,	-- Warning: Some Assembly Required
+							11428,	-- Keeper Witherleaf
+							11367,	-- Demolishing Megalith
+							11352,	-- The Rune of Command
+							11261,	-- The Conqueror of Skorn!
+							11264,	-- Necro Overlord Mezhen
+							11433,	-- Sleeping Giants
+							11267,	-- The Frost Wyrm and its Master
+							11453,	-- The Slumbering King
+							11268,	-- The Walking Dead
+							11324,	-- Alpha Worg
+						},
+						-- #else
+						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
+						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
+						["rank"] = 105,
+						-- #endif
+						-- #else
 						["groups"] = {
 							crit(1, {	-- Visitors from the Keep
 								["sourceQuest"] = 11234,	-- Report to Anselm
@@ -135,6 +194,7 @@ root("Zones", {
 								["sourceQuest"] = 11324,	-- Alpha Worg
 							}),
 						},
+						-- #endif
 					}),
 				}),
 				-- #if AFTER MOP

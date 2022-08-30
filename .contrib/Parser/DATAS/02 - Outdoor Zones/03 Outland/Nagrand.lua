@@ -75,11 +75,13 @@ root("Zones", {
 						},
 					})),
 					classicAch(902, {	-- Chief Exalted Officer
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with The Consortium to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 933); end]],
-						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
 					}),
 					explorationAch(866, {	-- Explore Nagrand
@@ -95,11 +97,13 @@ root("Zones", {
 						-- #endif
 					}),
 					classicAch(901, {	-- Mag'har of Draenor
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Mag'har to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 941); end]],
-						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
 						["races"] = HORDE_ONLY,
 					}),
@@ -144,8 +148,10 @@ root("Zones", {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 87 quests in Nagrand.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -240,8 +246,10 @@ root("Zones", {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 75 quests in Nagrand.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -294,11 +302,13 @@ root("Zones", {
 						-- #endif
 					}),
 					classicAch(899, {	-- Oh My, Kurenai
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Kurenai to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 978); end]],
-						["description"] = "Raise your reputation with the Kurenai to Exalted.",
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					}),
