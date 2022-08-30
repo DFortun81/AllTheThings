@@ -22,6 +22,14 @@ class Things(Enum):
     Transmog = auto()
 
 
+class NameHelpers(Enum):
+    Creature = auto()
+    SpellItem = auto()
+    SpellName = auto()
+    SkillLine = auto()
+    Item = auto()
+
+
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
@@ -54,18 +62,61 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
     reader = csv.DictReader(request.content.decode("utf-8").splitlines())
     for row in reader:
         match thing:
+            case Things.Achievements:
+                thing_list.append(row["ID"] + "," + row["Title_lang"] + "\n")                                            # Achievement have names in the same db.
+            case Things.Factions:
+                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")                                             # Faction have names in the same db.
+            case Things.FlightPaths:
+                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")                                             # Flight Paths have names in the same db.
+            case Things.Followers:
+                thing_list.append(row["ID"] + "," + row["HordeCreatureID"] + "," + row["AllianceCreatureID"] + "\n")     # Follower Names need creature db
             case Things.Illusions:
-                thing_list.append(row["SpellItemEnchantmentID"] + "\n")
+                thing_list.append(row["SpellItemEnchantmentID"] + "\n")                                                  # Illusion names are in the SpellItemEnchantmentID db.
             case Things.Mounts:
-                thing_list.append(row["SourceSpellID"] + "\n")
+                thing_list.append(row["SourceSpellID"] + "," + row["Name_lang"] + "\n")                                  # Mounts have names in the same db.
+            case Things.Quests:
+                thing_list.append(row["ID"] + "\n")                                                                      # I Think we need wowhead here.
+            case Things.Pets:
+                thing_list.append(row["ID"] + "," + row["CreatureID"] + "\n")                                            # Pet Names need creature db.
             case Things.Recipes:
-                thing_list.append(row["SkillLine"] + "," + row["Spell"] + "\n")
+                thing_list.append(row["SkillLine"] + "," + row["Spell"] + "\n")                                          # Recipes names are in the SpellName db and Profession name are in SkillLine db.
             case Things.Titles:
-                thing_list.append(row["Mask_ID"] + "\n")
+                thing_list.append(row["Mask_ID"] + "," + row["Name_lang"] + "\n")                                        # Title have names in the same db.
             case Things.Toys:
-                thing_list.append(row["ItemID"] + "\n")
-            case _:
-                thing_list.append(row["ID"] + "\n")
+                thing_list.append(row["ItemID"] + "\n")                                                                  # Item names are in Item Sparse db.
+            case Things.Transmog:
+                thing_list.append(row["ID"] + "\n")                                                                      # Item names are in Item Sparse db.
+    return thing_list
+
+
+def get_name_ids(name_helper: NameHelpers, build: str) -> list[str]:
+    """Get the IDs of a thing from a build."""
+    namehelper2table = {
+        NameHelpers.Creature: "creature",
+        NameHelpers.SpellItem: "spellitemenchantment",
+        NameHelpers.SpellName: "spellname",
+        NameHelpers.SkillLine: "skillline",
+        NameHelpers.Item: "itemsparse",
+    }
+    url = f"https://wow.tools/dbc/api/export/?name={namehelper2table[name_helper]}&build={build}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
+    }
+    thing_list = list[str]()
+    request = requests.get(url, headers=headers)
+    reader = csv.DictReader(request.content.decode("utf-8").splitlines())
+    for row in reader:
+        match name_helper:
+            case NameHelpers.Creature:
+                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Followers and Pets to get names
+            case NameHelpers.SpellItem:
+                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Illusion names
+            case NameHelpers.SpellName:
+                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Recipes
+            case NameHelpers.SkillLine:
+                thing_list.append(row["ID"] + "," + row["DisplayName_lang"] + "\n")     # Helps Professions
+            case NameHelpers.Item:
+                thing_list.append(row["ID"] + "," + row["Display_lang"] + "\n")         # Helps Toys and Transmog
     return thing_list
 
 
@@ -97,24 +148,9 @@ def get_existing_ids(thing: Things) -> list[str]:
     return existing_ids
 
 
-def create_raw_file(thing: Things) -> None:
-    """Create a raw file for a thing."""
-    raw_path = Path("Backups", f"Raw{thing.name}.txt")
-    builds_path = Path("BuildLists", f"{thing.name}.txt")
-    with open(builds_path) as builds_file:
-        for build in builds_file:
-            thing_list = get_thing_ids(thing, build.strip())
-            with open(raw_path, "r+") as raw_file:
-                raw_file.write(build)
-                old_lines = raw_file.readlines()
-                # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines), key=float)
-                raw_file.writelines(difference)
-
-
-def create_raw_file_recipes() -> None:
-    """Create raw files for recipes."""
-    profession_dict = {
+def sort_raw_file_recipes() -> None:
+    """Sort raw files for recipes."""
+    profession_dict = {         # This dict should be able to be done automatically from SkillLine Helper
         "Abominable Stitching": 2787,
         "Alchemy": 171,
         "Archaeology": 794,
@@ -140,31 +176,57 @@ def create_raw_file_recipes() -> None:
         profession: Path("Backups", f"Raw{profession}.txt")
         for profession in profession_dict
     }
-    with open(Path("BuildLists", "Recipes.txt")) as builds_file:
-        for build in builds_file:
-            recipe_list = get_thing_ids(Things.Recipes, build.strip())
-            for profession in profession_dict:
-                with open(raw_path_dict[profession], "r+") as raw_file:
-                    raw_file.write(build)
-                    new_lines = list[str]()
-                    # We got the recipe list with each line in the form skillLine,Spell. We only want the SpellIDs for the current SkillLineID we are looking at
-                    for line in recipe_list:
+    with open(Path("Backups", "RawRecipes")) as raw_file, open(Path("BuildLists", "Recipes.txt")) as build_file:
+        builds = build_file.readlines()
+        raw_lines = raw_file.readlines()
+        for profession in profession_dict:
+            with open(raw_path_dict[profession], "r+") as sorted_file:
+                for line in raw_lines:
+                    if line in builds:
+                        sorted_file.write(line)
+                    else:
                         skill_line, spell = line.split(",")
                         if int(skill_line) == profession_dict[profession]:
-                            new_lines.append(spell + "\n")
-                    old_lines = raw_file.readlines()
-                    difference = sorted(set(new_lines) - set(old_lines), key=float)
-                    raw_file.writelines(difference)
+                            sorted_file.write(spell + "\n")
 
 
-def add_latest_data(build: str) -> None:
-    """Add the latest data to the raw files."""
-    raise NotImplementedError
+def create_raw_file(thing: Things) -> None:
+    """Create a raw file for a thing."""
+    raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    builds_path = Path("BuildLists", f"{thing.name}.txt")
+    with open(builds_path) as builds_file:
+        for build in builds_file:
+            thing_list = get_thing_ids(thing, build.strip())
+            with open(raw_path, "r+") as raw_file:
+                raw_file.write(build)
+                old_lines = raw_file.readlines()
+                # TODO: this only finds new Things, not removed Things
+                difference = sorted(set(thing_list) - set(old_lines), key=float)
+                raw_file.writelines(difference)
+    # TODO: Check with Molkree
+    if Things.Recipes:
+        sort_raw_file_recipes()
+
+
+def create_raw_file_name_helper(thing: NameHelpers) -> None:
+    """Create a raw file for a thing."""
+    raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    builds_path = Path("BuildLists", f"{thing.name}.txt")
+    with open(builds_path) as builds_file:
+        for build in builds_file:
+            thing_list = get_name_ids(thing, build.strip())
+            with open(raw_path, "r+") as raw_file:
+                raw_file.write(build)
+                old_lines = raw_file.readlines()
+                # TODO: this only finds new Things, not removed Things
+                difference = sorted(set(thing_list) - set(old_lines), key=float)
+                raw_file.writelines(difference)
 
 
 def create_missing_file(thing: Things) -> None:
     """Create a missing file for a thing using difference between Categories.lua and raw file."""
     raw_path = Path("Backups", f"Raw{thing.name}.txt")
+    exclusion_path = Path("Exclusion", f"Exclusion{thing.name}.txt")
     datas_folder = Path("..", "..", "Parser", "DATAS")
     missing_path = Path(
         datas_folder,
@@ -172,11 +234,12 @@ def create_missing_file(thing: Things) -> None:
         "MissingIDs",
         f"Missing{thing.name}.txt",
     )
-    with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
+    with open(raw_path) as raw_file, open(missing_path, "w") as missing_file, open(exclusion_path) as exclusion_file:
         raw_lines = raw_file.readlines()
+        exclusion_lines = exclusion_file.readlines()
         # TODO: this only finds new Things, not removed Things
         difference = sorted(
-            set(raw_lines) - set(get_existing_ids(thing)), key=raw_lines.index
+            set(raw_lines) - set(get_existing_ids(thing)) - set(exclusion_lines), key=raw_lines.index
         )
         missing_file.writelines(difference)
         # Extra Searches here
@@ -215,8 +278,16 @@ def create_missing_file(thing: Things) -> None:
             missing_file.writelines(difference)
 
 
+def add_latest_data(build: str) -> None:
+    """Add the latest data to the raw files."""
+    raise NotImplementedError
+
+
 def get_name(thing: Things) -> None:
     """Get the name of a thing from Wowhead."""
     # TODO: Should this accept type of Thing and its ID?
     # TODO: Should it return the name?
     raise NotImplementedError
+
+
+create_raw_file(Things.Quests)
