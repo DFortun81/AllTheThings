@@ -8913,19 +8913,17 @@ local criteriaFields = {
 	["name"] = function(t)
 		if t.link then return t.link; end
 		if t.encounterID then
-			rawset(t, "name", select(1, EJ_GetEncounterInfo(t.encounterID)));
-			return rawget(t, "name");
+			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
 		local achievementID = t.achievementID;
 		if achievementID then
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				if criteriaID <= GetAchievementNumCriteria(achievementID) then
-					rawset(t, "name", select(1, GetAchievementCriteriaInfo(achievementID, criteriaID, true)));
+					return select(1, GetAchievementCriteriaInfo(achievementID, criteriaID, true));
 				elseif criteriaID > 50 then
-					rawset(t, "name", select(1, GetAchievementCriteriaInfoByID(achievementID, criteriaID)));
+					return select(1, GetAchievementCriteriaInfoByID(achievementID, criteriaID));
 				end
-				return rawget(t, "name");
 			end
 		end
 		return L["WRONG_FACTION"];

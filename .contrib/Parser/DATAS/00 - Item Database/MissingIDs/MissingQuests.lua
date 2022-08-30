@@ -847,7 +847,6 @@ q(12923),	-- UNUSED
 q(13097),	-- Unfinished Business
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
-q(13190),	-- All Things in Good Time
 q(13205),	-- Disarmament
 q(13210),	-- Blizzard Account: - DEM - E - FLAG
 q(13240),	-- Timear Foresees Centrifuge Constructs in your Future!
