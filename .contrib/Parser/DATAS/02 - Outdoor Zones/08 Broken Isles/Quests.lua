@@ -395,11 +395,6 @@ _.Zones =
 							["sourceQuest"] = 44004,	-- Bringer of the Light
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["coord"] = { 28.7, 48.5, LEGION_DALARAN },
-							["g"] = {
-								crit(2, {	-- Complete the quest, "Light's Charge."
-									["achievementID"] = 10461,	-- Fighting with Style: Classic
-								}),
-							},
 						}),
 						q(44337, {	-- Goddess Watch Over You
 							["description"] = "There are two versions of this quest: One for players that have already finished the quest chain to recover the Tears of Elune and one for those that haven't yet.\n\nThis one is for players that have.",

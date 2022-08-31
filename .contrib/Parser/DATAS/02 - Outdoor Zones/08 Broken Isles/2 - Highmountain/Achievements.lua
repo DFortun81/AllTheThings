@@ -265,9 +265,6 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(11609, {	-- Power Unbound
-				--	q(45841),	-- A Triumphant Report
-				}),
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,
 					["g"] = {

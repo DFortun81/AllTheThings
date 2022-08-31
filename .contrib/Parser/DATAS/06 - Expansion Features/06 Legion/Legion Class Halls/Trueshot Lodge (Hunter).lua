@@ -367,9 +367,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							artifact(454),	-- Titanstrike
 							artifact(211),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(469),	-- Talonclaw
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					-- Chap 2
@@ -621,7 +618,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							artifact(448),	-- Titanstrike
 							artifact(223),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(475),	-- Talonclaw
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

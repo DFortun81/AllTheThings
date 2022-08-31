@@ -364,9 +364,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(695),	-- The Dreadblades [Off-Hand]
 							artifact(70),	-- Fangs of the Devourer [Main Hand]
 							-- artifact(70),	-- Fangs of the Devourer [Off-Hand]
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						}
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
@@ -564,7 +561,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(698),	-- The Dreadblades [Off-Hand]
 							artifact(77),	-- Fangs of the Devourer [Main Hand]
 							-- artifact(77),	-- Fangs of the Devourer [Off-Hand]
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

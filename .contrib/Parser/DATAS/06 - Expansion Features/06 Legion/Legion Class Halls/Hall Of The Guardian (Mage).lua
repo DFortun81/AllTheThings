@@ -508,9 +508,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(492),	-- Felo'melorn
 							artifact(492),	-- Heart of the Phoenix
 							artifact(171),	-- Ebonchill
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
@@ -576,7 +573,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(495),	-- Felo'melorn
 							artifact(495),	-- Heart of the Phoenix
 							artifact(172),	-- Ebonchill
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

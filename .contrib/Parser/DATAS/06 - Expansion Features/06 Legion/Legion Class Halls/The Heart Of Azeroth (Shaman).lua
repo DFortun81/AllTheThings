@@ -311,9 +311,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(774),	-- Shield of the Sea Queen
 							artifact(303),	-- Doomhammer
 							-- artifact(303),	-- Fury of the Stonemother
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(41742, {	-- Champion: Celestos
@@ -527,7 +524,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(775),	-- Shield of the Sea Queen
 							artifact(298),	-- Doomhammer
 							-- artifact(298),	-- Fury of the Stonemother
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

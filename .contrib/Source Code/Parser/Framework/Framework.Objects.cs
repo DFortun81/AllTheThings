@@ -528,16 +528,20 @@ namespace ATT
                 // get the appropriate merge objects for this data based on the matching keys
                 foreach (string key in PostProcessMergeIntos.Keys)
                 {
-                    // does this data contain the key?
-                    if (data.TryGetValue(key, out object keyValue))
+                    // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
+                    if (key != "achID" || !ProcessingAchievementCategory)
                     {
-                        // get the container for objects of this key
-                        if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                        // does this data contain the key?
+                        if (data.TryGetValue(key, out object keyValue))
                         {
-                            // merge the objects into the data object
-                            foreach (Dictionary<string, object> mergeObject in mergeObjects)
-                                // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                            // get the container for objects of this key
+                            if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                            {
+                                // merge the objects into the data object
+                                foreach (Dictionary<string, object> mergeObject in mergeObjects)
+                                    // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                    Merge(data, "g", mergeObject);
+                            }
                         }
                     }
                 }
@@ -1931,6 +1935,8 @@ namespace ATT
                     case "_items":
                     case "_npcs":
                     case "_objects":
+                    case "_achievements":
+                    case "_factions":
                     case "_encounter":
                         if (value is List<object> idList)
                         {

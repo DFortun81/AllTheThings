@@ -304,9 +304,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(511),	-- Sheilun, Staff of the Mists
 							artifact(530),	-- Fists of the Heavens [Main Hand]
 							-- artifact(530),	-- Fists of the Heavens [Off Hand]
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(43319, {	-- The Way of the Tiger
@@ -528,7 +525,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(512),	-- Sheilun, Staff of the Mists
 							artifact(533),	-- Fists of the Heavens [Main Hand]
 							-- artifact(533),	-- Fists of the Heavens [Off Hand]
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

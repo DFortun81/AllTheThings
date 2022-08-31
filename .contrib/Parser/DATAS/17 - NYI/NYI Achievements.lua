@@ -5,6 +5,7 @@
 
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(ACHIEVEMENTS, {
+		ach(11339),	-- Legion's Bane
 		-- NYI Torghast Achievements
 		ach(14587, {	-- Torghast: Coldheart Interstitia: Layer 9
 			ach(14484),	-- Torghast: Coldheart Interstitia: Layer 2

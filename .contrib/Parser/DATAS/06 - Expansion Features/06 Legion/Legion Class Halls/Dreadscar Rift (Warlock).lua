@@ -104,11 +104,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					-- Artifact
 					q(40684, {	-- The Tome of Blighted Implements
-						["sourceQuests"] = { 
-								40729,	-- The New Blood 
+						["sourceQuests"] = {
+								40729,	-- The New Blood
 								40712,	-- The Power Possessed
 								41156,	-- The Power Possessed
-							},	
+							},
 						["provider"] = { "n", 101097 },	-- Calydus
 						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain the breadcrumb quests.",
 						["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
@@ -573,7 +573,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(815),	-- Skull of the Man'ari
 							artifact(815),	-- Spine of Thal'kiel
 							artifact(194),	-- Scepter of Sargeras
-							ach(10746),	-- Forged for Battle
 						}
 					}),
 					-- Interlude

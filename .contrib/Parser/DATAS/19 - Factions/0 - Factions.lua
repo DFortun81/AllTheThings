@@ -33,7 +33,6 @@ _.Factions =
 			faction(1037),	-- Alliance Vanguard
 			faction(1068),	-- Explorer's League
 			faction(1126),	-- The Frostborn
-			faction(1094),	-- The Silver Covenant
 			faction(1050),	-- Valiance Expedition
 		})),
 		tier(CATA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
@@ -84,7 +83,6 @@ _.Factions =
 		tier(WOTLK_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1052),	-- Horde Expedition
 			faction(1067),	-- The Hand of Vengeance
-			faction(1124),	-- The Sunreavers
 			faction(1064),	-- The Taunka
 			faction(1085),	-- Warsong Offensive
 		})),

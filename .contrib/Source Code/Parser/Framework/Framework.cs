@@ -686,7 +686,6 @@ namespace ATT
                 else
                 {
                     DuplicateDataIntoGroups(data, quests, "questID");
-                    data.Remove("_quests");
                     cloned = true;
                 }
             }
@@ -701,7 +700,6 @@ namespace ATT
                 else
                 {
                     DuplicateDataIntoGroups(data, items, "itemID");
-                    data.Remove("_items");
                     cloned = true;
                 }
             }
@@ -710,13 +708,21 @@ namespace ATT
                 // TODO: consolidate when creature/npc are the same... if that ever happens
                 DuplicateDataIntoGroups(data, npcs, "creatureID");
                 DuplicateDataIntoGroups(data, npcs, "npcID");
-                data.Remove("_npcs");
                 cloned = true;
             }
             if (data.TryGetValue("_objects", out object objects))
             {
                 DuplicateDataIntoGroups(data, objects, "objectID");
-                data.Remove("_objects");
+                cloned = true;
+            }
+            if (data.TryGetValue("_achievements", out object achievements))
+            {
+                DuplicateDataIntoGroups(data, achievements, "achID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_factions", out object factions))
+            {
+                DuplicateDataIntoGroups(data, factions, "factionID");
                 cloned = true;
             }
             if (data.TryGetValue("_encounter", out object encounterData))
@@ -725,7 +731,6 @@ namespace ATT
                 decimal encounterHash = Convert.ToDecimal(encounterListData[0])
                     + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
                 DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
-                data.Remove("_encounter");
                 cloned = true;
             }
 
@@ -2702,6 +2707,8 @@ namespace ATT
                 case "_npcs":
                 case "_quests":
                 case "_objects":
+                case "_achievements":
+                case "_factions":
                 case "_encounter":
                 case "_text":
                 case "_type":

@@ -313,9 +313,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(656),	-- Warswords of the Valarjar [Off Hand]
 							artifact(146),	-- Scale of the Earth-Warder
 							-- artifact(146),	-- Scaleshard
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					-- Chap 3
@@ -421,7 +418,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(657),	-- Warswords of the Valarjar [Off Hand]
 							artifact(152),	-- Scale of the Earth-Warder
 							-- artifact(152),	-- Scaleshard
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

@@ -4,20 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
-		ach(11137, {	-- A Legendary Campaign
-			crit(1),	-- Death Knight
-			crit(2),	-- Demon Hunter
-			crit(3),	-- Druid
-			crit(4),	-- Hunter
-			crit(5),	-- Mage
-			crit(6),	-- Monk
-			crit(7),	-- Paladin
-			crit(8),	-- Priest
-			crit(9),	-- Rogue
-			crit(10),	-- Shaman
-			crit(11),	-- Warlock
-			crit(12),	-- Warrior
-		}),
 		--[[ -- Not real achievement
 		ach(13089, {	-- Allied Races: Dark Iron Dwarf
 		ach(12445, {	-- Allied Races: Highmountain Tauren
@@ -59,9 +45,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13779, {		-- Phenomenal Cosmic Power
 			un(REMOVED_FROM_GAME, title(407)),		-- , Azeroth's Champion"
 		})),
-		ach(10334, {	-- Predator
-			title(59),	-- Predator
-		}),
 		un(REMOVED_FROM_GAME, ach(13078)),	-- Realm First! Battle for Azeroth Keystone Master
 		un(REMOVED_FROM_GAME, ach(3259, {	-- Realm First! Celestial Defender
 			un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender

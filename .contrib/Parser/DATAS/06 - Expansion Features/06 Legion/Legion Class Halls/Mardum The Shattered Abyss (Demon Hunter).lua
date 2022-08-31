@@ -840,11 +840,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
-						["g"] = {
-							crit(3, {	-- Complete the first order campaign effort.
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
-						},
 					}),
 					q(44224, {	-- Unleashing our Wrath
 						["u"] = REMOVED_FROM_GAME,

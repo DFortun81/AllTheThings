@@ -320,16 +320,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["g"] = {
 							artifact(357),	-- Maw of the Damned
 							artifact(376),	-- Blades of the Fallen Prince [Main Hand]
-							artifact(376),	-- Blades of the Fallen Prince [Off Hand]
+							-- artifact(376),	-- Blades of the Fallen Prince [Off Hand]
 							artifact(390),	-- Apocalypse
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(44244, {	-- Champion: Koltira Deathweaver
 						["sourceQuest"] = 42708,	-- A Personal Request
-						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
+						["provider"] = { "n", 93453 },	-- Koltira Deathweaver
 						["coord"] = { 66.3, 64.6, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["g"] = {
 							follower(599),	-- Koltira Deathweaver
@@ -481,7 +478,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(370),	-- Blades of the Fallen Prince [Main Hand]
 							artifact(370),	-- Blades of the Fallen Prince [Off Hand]
 							artifact(395),	-- Apocalypse
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude

@@ -59,7 +59,7 @@ end
 		app.print("Cleared Performance Stats");
 	end
 end)(); --]]
--- app.DEBUG_PRINT = true;
+app.DEBUG_PRINT = true;
 
 -- Create an Event Processor.
 local events = {};

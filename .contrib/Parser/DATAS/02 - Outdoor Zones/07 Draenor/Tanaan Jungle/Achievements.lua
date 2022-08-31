@@ -7,6 +7,9 @@ _.Zones =
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
 			n(ACHIEVEMENTS, {
+				ach(10334, {	-- Predator
+					title(59),	-- Predator
+				}),
 				ach(10072, {	-- Rumble in the Jungle (A)
 					["races"] = ALLIANCE_ONLY,
 					-- TODO: convert to symlink meta achieve, verify source of sbu-achievements

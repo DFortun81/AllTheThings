@@ -345,9 +345,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["provider"] = { "n", 106883 },	-- Sylendra Gladesong
 						["coord"] = { 59.8, 75.2, VALSHARAH },
 						["sourceQuests"] = { 42035 },	-- Tracking the Enemy
-						["g"] = {
-							ach(10461, crit(3)),	-- Fighting with Style: Classic / Complete the first order campaign effort.
-						},
 					}),
 					q(41436, {	-- In Deep Slumber
 						["sourceQuests"] = { 41449 },	-- Join the Dreamer
