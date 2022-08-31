@@ -92,24 +92,42 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 			},
 		}),
 		filter(BATTLE_PETS, {
-			i(137599, {	-- Pulsating Sac
-				i(137608, {	-- Growling Sac
-					i(44822),	-- Albino Snake
+			i(137608, {	-- Growling Sac
+				["cost"] = { { "i", 137599, 1 } },	-- Pulsating Sac
+				["timeline"] = { "added 7.0.3.22248" },
+				["groups"] = {
+					i(44822, {	-- Albino Snake
+						["timeline"] = { "added 3.1.0.9658" },
+					}),
 					i(11023),	-- Ancona Chicken
 					i(10360),	-- Black Kingsnake
 					i(29958),	-- Blue Dragonhawk Hatchling
-					i(70160),	-- Crimson Lasher
+					i(70160, {	-- Crimson Lasher
+						["timeline"] = { "added 4.2.0.14333" },
+					}),
 					i(8501),	-- Hawk Owl
-					i(120051),	-- Kaliri Hatchling
+					i(120051, {	-- Kaliri Hatchling
+						["timeline"] = { "added 6.0.2.18764" },
+					}),
 					i(29363),	-- Mana Wyrmling
-					i(129826),	-- Nursery Spider
-					i(48120),	-- Obsidian Hatchling
+					i(129826, {	-- Nursery Spider (PET!)
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(48120, {	-- Obsidian Hatchling
+						["timeline"] = { "added 3.2.0.10026" },
+					}),
 					i(29902),	-- Red Moth Egg
-					i(136905),	-- Ridgeback Piglet
-					i(136908),	-- Thaumaturgical Piglet
-					i(139789),	-- Transmutant
+					i(136905, {	-- Ridgeback Piglet
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(136908, {	-- Thaumaturgical Piglet
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(139789, {	-- Transmutant
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(29903),	-- Yellow Moth Egg
-				}),
+				},
 			}),
 		}),
 		spell(213255, {	-- Transmute: Meat to Pants

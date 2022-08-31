@@ -883,6 +883,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136855, {	-- Hunter's Call (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
 								["cost"] = 500000,	-- 50g
 							}),
 							i(140938, {	-- Huntmaster's Armor Kit

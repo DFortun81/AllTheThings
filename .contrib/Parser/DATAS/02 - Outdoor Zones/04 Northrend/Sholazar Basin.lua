@@ -1029,14 +1029,20 @@ root("Zones", {
 						["classes"] = { HUNTER },
 						["coord"] = { 27.2, 59.6, SHOLAZAR_BASIN },
 						["groups"] = {
-							i(136855),	-- Hunter's Call (TOY!)
+							i(136855, {	-- Hunter's Call (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
+								["cost"] = 500000,	-- 50g
+							}),
 							i(136781, {	-- Pet Training Manual: Fetch
+								["timeline"] = { "added 7.0.3.22248" },
 								["f"] = RECIPES,
 							}),
 							i(136780, {	-- Pet Training Manual: Play Dead
+								["timeline"] = { "added 7.0.3.22248" },
 								["f"] = RECIPES,
 							}),
 							i(136783, {	-- The Art of Concealment
+								["timeline"] = { "added 7.0.3.22248" },
 								["spellID"] = 61648,	-- Aspect of the Chameleon
 							}),
 						},

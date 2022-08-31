@@ -190,7 +190,12 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 				},
 			}),
 			ach(3559, {	-- Turkey Lurkey
-				["provider"] = { "i", 116400 },	-- Silver-Plated Turkey Shooter
+				["providers"] = {
+					-- #if AFTER 6.0.1.18566
+					{ "i", 116400 },	-- Silver-Plated Turkey Shooter
+					-- #endif
+					{ "i", 44812 },	-- Turkey Shooter
+				},
 				["timeline"] = { "added 3.2.2.10505" },
 				["groups"] = {
 					crit(1),	-- Blood Elf Rogue
@@ -568,15 +573,34 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 			},
 			["maps"] = ALL_PILGIM_MAPS,
 			["groups"] = {
-				i(46723),	-- Pilgrim's Hat
-				i(46800),	-- Pilgrim's Attire
-				i(44785),	-- Pilgrim's Dress
-				i(46824),	-- Pilgrim's Robe
-				i(44788),	-- Pilgrim's Boots
+				i(46723, {	-- Pilgrim's Hat
+					["timeline"] = { "added 3.2.2.10505" },
+				}),
+				i(46800, {	-- Pilgrim's Attire
+					["timeline"] = { "added 3.2.2.10505" },
+				}),
+				i(44785, {	-- Pilgrim's Dress
+					["timeline"] = { "added 3.2.2.10505" },
+				}),
+				i(46824, {	-- Pilgrim's Robe
+					["timeline"] = { "added 3.2.2.10505" },
+				}),
+				i(44788, {	-- Pilgrim's Boots
+					["timeline"] = { "added 3.2.2.10505" },
+				}),
 				i(116404, {	-- Pilgrim's Bounty
-					i(116401),	-- Fine Pilgrim's Hat
-					i(116403),	-- Frightened Bush Chicken
-					i(116400),	-- Silver-Plated Turkey Shooter (TOY!)
+					["timeline"] = { "added 6.0.1.18566" },
+					["groups"] = {
+						i(116401, {	-- Fine Pilgrim's Hat
+							["timeline"] = { "added 6.0.1.18566" },
+						}),
+						i(116403, {	-- Frightened Bush Chicken
+							["timeline"] = { "added 6.0.1.18566" },
+						}),
+						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)
+							["timeline"] = { "added 6.0.1.18566" },
+						}),
+					},
 				}),
 			},
 		}),

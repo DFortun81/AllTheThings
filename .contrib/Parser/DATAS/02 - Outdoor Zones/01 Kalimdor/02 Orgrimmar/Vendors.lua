@@ -225,20 +225,42 @@ root("Zones", m(KALIMDOR, {
 				},
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(54436),	-- Blue Clockwork Rocket Bot Pet
-					i(95621),	-- Warbot Ignition Key Pet
-					i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-					i(104324),	-- Foot Ball (TOY!)
-					i(137663),	-- Soft Foam Sword (TOY!)
-					i(104323),	-- The Swineskin (TOY!)
-					i(54438),	-- Tiny Blue Ragdoll (TOY!)
-					i(54437),	-- Tiny Green Ragdoll (TOY!)
-					i(44606),	-- Toy Train Set Toy (TOY!)
-					i(45057),	-- Wind-Up Train Wrecker Toy (TOY!)
-					i(69896, {	-- Yellow Balloon Toy (TOY!)
-						["u"] = CHILDRENS_WEEK,
+					i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
+						["timeline"] = { "added 3.3.3.11573" },
+					}),
+					i(95621, {	-- Warbot Ignition Key (PET!)
+						["timeline"] = { "added 5.2.0.16539" },
+					}),
+					i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+						["timeline"] = { "added 3.3.3.11573" },
+					}),
+					i(104324, {	-- Foot Ball (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
 					}),
 					i(69895, {	-- Green Balloon Toy (TOY!)
+						["timeline"] = { "added 4.1.0.13875" },
+						["u"] = CHILDRENS_WEEK,
+					}),
+					i(137663, {	-- Soft Foam Sword (TOY!)
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(104323, {	-- The Swineskin (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
+					i(54438, {	-- Tiny Blue Ragdoll (TOY!)
+						["timeline"] = { "added 3.3.3.11573" },
+					}),
+					i(54437, {	-- Tiny Green Ragdoll (TOY!)
+						["timeline"] = { "added 3.3.3.11573" },
+					}),
+					i(44606, {	-- Toy Train Set Toy (TOY!)
+						["timeline"] = { "added 3.0.2.8982" },
+					}),
+					i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
+						["timeline"] = { "added 3.1.0.9626" },
+					}),
+					i(69896, {	-- Yellow Balloon Toy (TOY!)
+						["timeline"] = { "added 4.1.0.13875" },
 						["u"] = CHILDRENS_WEEK,
 					}),
 				},

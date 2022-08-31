@@ -664,15 +664,20 @@ root("Zones", {
 						n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 							["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
+							["timeline"] = { "added 7.0.3.22290" },
 							["groups"] = {
 								i(136803, {	-- Dirty Tricks, Vol 1: Detection
 									--["spellID"] = 210108,	-- Detection
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
-								i(136927),	-- Scarlet Confessional Book (TOY!)
+								i(136927, {	-- Scarlet Confessional Book (TOY!)
+									["timeline"] = { "added 7.0.3.22248" },
+								}),
 								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(136972, {	-- Tome of Hex: Cockroach
+									["timeline"] = { "added 7.0.3.22248" },
 									["f"] = RECIPES,
 								}),
 							},
@@ -6639,7 +6644,9 @@ root("Zones", {
 						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
 							i(46398),	-- Cat Carrier (Calico Cat) (PET!)
-							i(129826),	-- Nursery Spider (PET!)
+							i(129826, {	-- Nursery Spider (PET!)
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(48120),	-- Obsidian Hatchling (PET!)
 							i(44820),	-- Red Ribbon Pet Leash (TOY!)
 							i(37460),	-- Rope Pet Leash (TOY!)
@@ -6675,17 +6682,39 @@ root("Zones", {
 					n(29716,  {	-- Clockwork Assistant <Jepetto's Companion>
 						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
 						["groups"] = {
-							i(54436),	-- Blue Clockwork Rocket Bot (PET!)
-							i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-							i(192099, {["timeline"]={"added 9.2.5"}}),  -- Earpieces of Tranquil Focus (TOY!)
-							i(104324),	-- Foot Ball (TOY!)
-							i(137663),	-- Soft Foam Sword (TOY!)
-							i(104323),	-- The Swineskin (TOY!)
-							i(54438),	-- Tiny Blue Ragdoll (TOY!)
-							i(54437),	-- Tiny Green Ragdoll (TOY!)
-							i(44606),	-- Toy Train Set (TOY!)
-							i(95621),	-- Warbot Ignition Key (PET!)
-							i(45057),	-- Wind-Up Train Wreck (TOY!)
+							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
+								["timeline"] = { "added 3.3.3.11573" },
+							}),
+							i(95621, {	-- Warbot Ignition Key (PET!)
+								["timeline"] = { "added 5.2.0.16539" },
+							}),
+							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+								["timeline"] = { "added 3.3.3.11573" },
+							}),
+							i(192099, {  -- Earpieces of Tranquil Focus (TOY!)
+								["timeline"] = { "added 9.2.5" },
+							}),
+							i(104324, {	-- Foot Ball (TOY!)
+								["timeline"] = { "added 5.4.0.17227" },
+							}),
+							i(137663, {	-- Soft Foam Sword (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+							i(104323, {	-- The Swineskin (TOY!)
+								["timeline"] = { "added 5.4.0.17227" },
+							}),
+							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
+								["timeline"] = { "added 3.3.3.11573" },
+							}),
+							i(54437, {	-- Tiny Green Ragdoll (TOY!)
+								["timeline"] = { "added 3.3.3.11573" },
+							}),
+							i(44606, {	-- Toy Train Set Toy (TOY!)
+								["timeline"] = { "added 3.0.2.8982" },
+							}),
+							i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
+								["timeline"] = { "added 3.1.0.9626" },
+							}),
 						},
 					}),
 					n(29528,  {	-- Debbi Moore <Trinkets & Charms>
@@ -6959,26 +6988,32 @@ root("Zones", {
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
 						["groups"] = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran
+								["timeline"] = { "added 5.0.1.15464" },
 								["isLimited"] = true,
 								["spellID"] = 120146,	-- Ancient Portal: Dalaran
 								["classes"] = { MAGE },
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
 								["isLimited"] = true,
 								["classes"] = { MAGE },
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
 								["classes"] = { MAGE },
 							}),
 							i(136797, {	-- Mystical Tome: Arcane Linguist
+								["timeline"] = { "added 7.0.3.22248" },
 								["spellID"] = 210086,	-- Arcane Linguist
 								["classes"] = { MAGE },
 							}),
 							i(136799, {	-- Mystical Tome: Illusion
+								["timeline"] = { "added 7.0.3.22248" },
 								["spellID"] = 131784,	-- Illusion
 								["classes"] = { MAGE },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
+								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
 								["timeline"] = { "added 8.1.5" },
 							}),

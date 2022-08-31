@@ -847,8 +847,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 48.4, 89.5, DAZARALOR },
 				-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
 				["g"] = {
-					i(104324),	-- Foot Ball (TOY!)
-					i(104323),	-- The Swineskin (TOY!)
+					i(104324, {	-- Foot Ball (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
+					i(104323, {	-- The Swineskin (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
 				},
 			}),
 			n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
