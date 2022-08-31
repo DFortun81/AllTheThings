@@ -21,6 +21,20 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #if AFTER MOP
 			d(1, {		-- Normal
 			-- #endif
+				-- #if BEFORE 5.0.4
+				-- #if AFTER 3.0.1
+				n(ACHIEVEMENTS, {
+					ach(645, {	-- Scholomance
+						crit(548, {	-- Ras Frostwhisper
+							["_npcs"] = { 10508 },	-- Ras Frostwhisper
+						}),
+						crit(549, {	-- Darkmaster Gandling
+							["_npcs"] = { 1853 },	-- Darkmaster Gandling
+						}),
+					}),
+				}),
+				-- #endif
+				-- #endif
 				n(QUESTS, sharedData({["modID"] = 0},{
 					q(28756, {	-- Aberrations of Bone
 						["qg"] = 49856,	-- Lord Raymond George
@@ -1160,9 +1174,6 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #endif
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
-						-- #if BEFORE 5.0.4
-						ach(645),	-- Scholomance
-						-- #endif
 						i(14514, {	-- Pattern: Robe of the Void
 							["timeline"] = { "removed 5.0.4" },
 						}),

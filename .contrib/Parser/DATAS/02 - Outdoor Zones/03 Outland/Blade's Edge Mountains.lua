@@ -1736,7 +1736,7 @@ root("Zones", {
 							{ 29.8, 70.8, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(11, {	-- Hemathion
+							crit(4514, {	-- Hemathion
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31155),	-- Drakescale Breastplate
@@ -1765,7 +1765,7 @@ root("Zones", {
 							{ 68.4, 69.4, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(15, {	-- Morcrush
+							crit(4518, {	-- Morcrush
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31159),	-- Felstone Pauldrons
@@ -1846,7 +1846,7 @@ root("Zones", {
 							{ 46.4, 78.6, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(18, {	-- Speaker Mar'grom
+							crit(4521, {	-- Speaker Mar'grom
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31163),	-- Nethersteel Handguards

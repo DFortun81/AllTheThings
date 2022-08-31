@@ -3440,7 +3440,7 @@ namespace ATT
             string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
 #elif WRATH
             // We want Classic WRATH builds of ATT to build the database to the ATT-Classic Classic WRATH folder.
-            string addonRootFolder = "../../../../../../_classic_wrath_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 #elif TBC
             // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
             string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";

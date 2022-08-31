@@ -2823,7 +2823,7 @@ root("Zones", {
 							{ 56.6, 71.8, HELLFIRE_PENINSULA },	-- east path, top
 						},
 						["groups"] = {
-							crit(9, {	-- Fulgorge slain
+							crit(4512, {	-- Fulgorge slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31181),	-- Rockwurm Handwraps
@@ -2844,7 +2844,7 @@ root("Zones", {
 							{ 67.8, 76.8, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(14, {	-- Mekthorg the Wild slain
+							crit(4517, {	-- Mekthorg the Wild slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31174),	-- Demonweave Raiment
@@ -2859,7 +2859,7 @@ root("Zones", {
 							{ 71.4, 56.0, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(20, {	-- Vorakem Doomspeaker Slain
+							crit(4523, {	-- Vorakem Doomspeaker Slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31185),	-- Legion Crown

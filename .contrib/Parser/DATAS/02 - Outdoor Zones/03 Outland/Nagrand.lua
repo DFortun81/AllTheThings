@@ -1533,7 +1533,7 @@ root("Zones", {
 							{ 76.0, 80.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(10, {	-- Goretooth
+							crit(4513, {	-- Goretooth
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31192),	-- Crocolisk Hide Bindings
@@ -1569,7 +1569,7 @@ root("Zones", {
 							{ 33.2, 67.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(19, {	-- Voidhunter Yar
+							crit(4522, {	-- Voidhunter Yar
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31198),	-- Voidhide Cord

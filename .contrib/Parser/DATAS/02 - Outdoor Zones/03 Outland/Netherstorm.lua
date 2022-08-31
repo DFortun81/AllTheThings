@@ -1246,7 +1246,7 @@ root("Zones", {
 							{ 47.4, 84.6, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(3, {	-- Chief Engineer Lorthander
+							crit(4506, {	-- Chief Engineer Lorthander
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31201),	-- Illidari Cloak
@@ -1268,7 +1268,7 @@ root("Zones", {
 							{ 61.2, 32.2, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(8, {	-- Ever-Core the Punisher
+							crit(4511, {	-- Ever-Core the Punisher
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31203),	-- Arcane Loop
@@ -1291,7 +1291,7 @@ root("Zones", {
 							{ 35.2, 19.6, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(16, {	-- Nuramoc
+							crit(4519, {	-- Nuramoc
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31212),	-- Chimaerahide Leggings
