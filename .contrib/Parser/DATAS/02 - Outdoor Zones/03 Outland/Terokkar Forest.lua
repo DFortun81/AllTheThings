@@ -349,7 +349,7 @@ root("Zones", {
 								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(2, {	-- Bait Bandits
+							crit(5707, {	-- Bait Bandits
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
@@ -365,7 +365,7 @@ root("Zones", {
 								["provider"] = { "i", 34864 },	-- Baby Crocolisk
 							}),
 							i(35348),	-- Bag of Fishing Treasures
-							crit(1, {	-- Crocolisks in the City
+							crit(5706, {	-- Crocolisks in the City
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
@@ -381,7 +381,7 @@ root("Zones", {
 								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(3, {	-- Felblood Fillet
+							crit(5708, {	-- Felblood Fillet
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
@@ -397,7 +397,7 @@ root("Zones", {
 								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5, {	-- Shrimpin' Ain't Easy
+							crit(5710, {	-- Shrimpin' Ain't Easy
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},
@@ -413,7 +413,7 @@ root("Zones", {
 								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(4, {	-- The One That Got Away
+							crit(5709, {	-- The One That Got Away
 								["achievementID"] = 905,	-- Old Man Barlowned
 							}),
 						},

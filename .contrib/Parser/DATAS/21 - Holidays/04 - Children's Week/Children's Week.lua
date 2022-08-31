@@ -221,14 +221,14 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
 				["groups"] = {
-					crit(3, {	-- Egbert
-						["cost"] = { { "i", 32616, 1 } },	-- Egbert's Egg
+					crit(9169, {	-- Egbert
+						["provider"] = { "i", 32616 },	-- Egbert's Egg
 					}),
-					crit(1, {	-- Peanut
-						["cost"] = { { "i", 32622, 1 } },	-- Elekk Training Collar
+					crit(9167, {	-- Peanut
+						["provider"] = { "i", 32622 },	-- Elekk Training Collar
 					}),
-					crit(2, {	-- Willy
-						["cost"] = { { "i", 32617, 1 } },	-- Sleepy Willy
+					crit(9168, {	-- Willy
+						["provider"] = { "i", 32617 },	-- Sleepy Willy
 					}),
 				},
 			}),
