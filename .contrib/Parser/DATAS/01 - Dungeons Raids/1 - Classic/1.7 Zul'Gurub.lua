@@ -2,6 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local TOME_OF_POLYMORPH_TURTLE = i(22739);
+local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
+	["timeline"] = { "added 3.2.0.10128" },
+	["cr"] = 14821,	-- Razzashi Raptor
+});
 root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 	map(ZULGURUB, {
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
@@ -980,6 +984,9 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(19702),	-- Vilebranch Coin
 				i(19703),	-- Witherbark Coin
 				i(19698),	-- Zulian Coin
+				-- #if BEFORE CATA
+				RAZZASHI_HATCHLING,
+				-- #endif
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22721, {	-- Band of Servitude
@@ -1520,3 +1527,4 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 
 -- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
 TOME_OF_POLYMORPH_TURTLE.timeline = nil;
+RAZZASHI_HATCHLING.u = nil;
