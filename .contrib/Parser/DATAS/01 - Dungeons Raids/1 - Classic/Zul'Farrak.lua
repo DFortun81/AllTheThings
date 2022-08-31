@@ -279,7 +279,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(12470),	-- Sandstalker Ankleguards
 				},
 			}),
-			e(596, {	-- Theka the Martyr
+			e(485, {	-- Theka the Martyr
 				["creatureID"] = 7272,
 				["groups"] = {
 					i(10660),	-- First Mosh'aru Tablet
