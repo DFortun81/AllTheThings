@@ -831,7 +831,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lvl"] = 115,	-- wowhead says 110.  it's wrong.  tol dagor doesn't unlock until 115, and that's the other requirement to make this quest available.
 			}),
 			q(49715, {	-- Trouble at Greystone Keep
-				["sourceQuests"] = { 50790 },	-- Hot Pursuit
+				-- ["sourceQuests"] = { 50790 },	-- Hot Pursuit	-- TODO maybe earlier? maybe none?
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130377 },	-- Courier Gerald
 				["races"] = ALLIANCE_ONLY,

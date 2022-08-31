@@ -900,6 +900,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
+			q(63955, {	-- Sealed Secrets
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178845 },	-- Ve'lonu
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
 			q(63780, {	-- See How THEY Like It!
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178838 },	-- Lady Moonberry
@@ -997,12 +1003,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179194 },	-- Kleia
 				["isDaily"] = true,
 				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			q(63955, {	-- Sealed Secrets
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			--]]
 		}),

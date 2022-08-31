@@ -41,7 +41,6 @@ _.Zones =
 					["coord"] = { 40.7, 67.0, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
-						33868,	-- The Home of the Frostwolves
 						49545,	-- Warchief's Command: Frostfire Ridge!
 					},
 				}),

@@ -381,6 +381,7 @@ _.ObjectNames = {
 	[195517] = "Elune's Handmaiden",
 	[195600] = "Smouldering Stone",
 	[195642] = "Naga Power Stone",
+	[195665] = "Argent Crusade Tribute Chest",
 	[195676] = "Secret Lab Squakbox",
 	[196393] = "Broken Relic",
 	[196832] = "Upper Scrying Stone",

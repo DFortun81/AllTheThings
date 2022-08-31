@@ -2,16 +2,14 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(BFA_TIER, {
+root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
-		["description"] = "Island expeditions are a 3-player scenario.  Each factiton will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions.  Ships and queuing will take places in Dazar'alor for Horde and Boralus for Alliance.  These unlock at level 116 on your first playthrough and should be open at 110 on your alts once you have finished the introduction line.",
-		["achievementID"] = 12595,	-- Expert Expeditioner
-		["lvl"] = 110,
+		["description"] = "Island expeditions are a 3-player scenario.  Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands.  Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions.  Ships and queueing will take place in Dazar'alor for Horde and Boralus for Alliance. These are unlocked Account-Wide once you have finished the introduction questline on one character.",
 		["crs"] = {
 			143968,	--  Expedition Map [Alliance Side]
 			143967,	--  Expedition Map [Horde Side]
 		},
-		["maps"] = {	-- if you add a map here, also add it to the islands achievements file!
+		["maps"] = {
 			1501,	-- Crestfall
 			1036,	-- Dread Chain
 			1336,	-- Havenswood

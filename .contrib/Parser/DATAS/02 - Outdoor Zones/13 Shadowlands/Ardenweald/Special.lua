@@ -105,14 +105,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			n(181694, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Lost Soul (Cat)
-				["description"] = "This soul is found in the crotch of one of the five super trees in Ardenweald. Target and use /soothe on the Lost Soul to receive the quest.",
+				["description"] = "This soul is found in the crotch of one of the six super trees in Ardenweald. Target and use /soothe on the Lost Soul to receive the quest.",
 				["coords"] = {
-					{ 51.83, 69.23, ARDENWEALD },
-					{ 60.0, 55.13, ARDENWEALD },
-					{ 65.08, 36.46, ARDENWEALD },
-					{ 51.21, 31.04, ARDENWEALD },
-					{ 37.59, 36.25, ARDENWEALD },
-					{ 69.85, 27.32, ARDENWEALD },
+					{ 37.6, 36.3, ARDENWEALD },
+					{ 51.2, 31.0, ARDENWEALD },
+					{ 51.8, 69.2, ARDENWEALD },
+					{ 60.0, 55.1, ARDENWEALD },
+					{ 65.1, 36.5, ARDENWEALD },
+					{ 69.9, 27.3, ARDENWEALD },
 				},
 				["g"] = {
 					i(187819),	-- Cat Soul
