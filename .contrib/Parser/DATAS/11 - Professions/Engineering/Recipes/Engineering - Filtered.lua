@@ -335,6 +335,7 @@ profession(ENGINEERING, {
 						},
 						{
 							["name"] = "High-powered Flashlight",
+							["timeline"] = { "added 3.1.0.9614" },
 							["recipeID"] = 63750
 						},
 						{
