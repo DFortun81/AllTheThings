@@ -15743,15 +15743,15 @@ end
 -- Adds ATT information about the list of Quests into the provided tooltip
 local function AddQuestInfoToTooltip(tooltip, quests)
 	if quests and tooltip.AddLine then
-		local text;
+		local text, mapID;
 		for _,q in ipairs(quests) do
 			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. (q.text or RETRIEVING_DATA);
-			if q.mapID then
-				text = text .. " (" .. (app.GetMapName(q.mapID) or RETRIEVING_DATA) .. ")";
-			elseif q.maps then
-				text = text .. " (" .. (app.GetMapName(q.maps[1]) or RETRIEVING_DATA) .. ")";
-			elseif q.coords then
-				text = text .. " (" .. (app.GetMapName(q.coords[1][3]) or RETRIEVING_DATA) .. ")";
+			mapID = q.mapID
+				or (q.maps and q.maps[1])
+				or (q.coord and q.coord[3])
+				or (q.coords and q.coords[1] and q.coords[1][3]);
+			if mapID then
+				text = text .. " (" .. (app.GetMapName(mapID) or RETRIEVING_DATA) .. ")";
 			end
 			tooltip:AddLine(text);
 		end

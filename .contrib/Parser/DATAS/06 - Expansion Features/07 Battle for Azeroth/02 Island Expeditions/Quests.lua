@@ -128,6 +128,12 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				},
 			}),
 			-- Item drop quests
+			-- reformat:
+			-- q(53160, {	-- Ancient Crypt Key
+			-- 	["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+			-- 	["provider"] = { "i", 163470 },	-- Ancient Crypt Key
+			-- }),
+			-- move Items to 'Island Exps > Rewards'
 			i(163470, {	-- Ancient Crypt Key
 				["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 				["g"] = {

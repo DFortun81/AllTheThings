@@ -504,9 +504,6 @@ root("HiddenQuestTriggers", {
 		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
 		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
-		-- q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
-		-- q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
-		-- q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played)
 		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
 		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
 		q(56910),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
@@ -2307,7 +2304,7 @@ root("HiddenQuestTriggers", {
 		q(43806),	-- The Battle for Broken Shore Scenario Skip (A)
 		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
-		
+
 		-- Generic Order Hall
 		q(38894),	-- Founded Garrison - founded the order hall
 		q(43837),	-- Tracking Quest: Tutorial - Combat Ally Unlocked
@@ -2342,11 +2339,11 @@ root("HiddenQuestTriggers", {
 
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		q(44455),	-- Downfall tracking - in Suramar, possibly tied to a Demon Hunter artifact?
-		
+
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest - triggered when doing my first brawl for BFA
 		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest - completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
 		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest - same as above
-		
+
 		q(46717),	-- Tracking Quest - got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
 		q(42192),	-- Fire Mage - Flavor Event 02
