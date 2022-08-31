@@ -428,7 +428,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7704, {	-- Look at the Size of It!
-					["provider"] = { "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
+					["providers"] = {
+						{ "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
+						{ "n", 14636 },	-- Chambermaid Pillaclencher
+					},
 					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
