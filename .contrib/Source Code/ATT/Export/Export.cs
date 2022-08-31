@@ -28,7 +28,11 @@ namespace ATT
             ObjectData.Create<ToyData>("isToy",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<ToyData>("toyID",     "toy",          "_.CreateToy", "f", "spellID", "modID");
             ObjectData.Create<MountData>("mountID", "mnt",          "_.CreateMount", "f", "spellID", "modID");
+#if ANYCLASSIC
+            ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "modID");
+#else
             ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "spellID", "modID");
+#endif
             ObjectData.Create("musicRollID",        "mr",           "_.CreateMusicRoll", "f", "spellID");
             ObjectData.Create("objectiveID",        "qo",           "_.CreateQuestObjective", "f");
             ObjectData.Create("instanceID",         "inst",         "_.CreateInstance", "f");
