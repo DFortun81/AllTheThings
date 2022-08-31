@@ -621,6 +621,23 @@ root("Zones", {
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
 					}),
+					ach(906, {	-- Kickin' It Up a Notch
+						["requireSkill"] = COOKING,
+						["groups"] = {
+							crit(5702, {	-- Revenge is Tasty
+								["_quests"] = { 11377 },
+							}),
+							crit(5703, {	-- Super Hot Stew
+								["_quests"] = { 11379 },
+							}),
+							crit(5704, {	-- Manalicious
+								["_quests"] = { 11380 },
+							}),
+							crit(5705, {	-- Soup for the Soul
+								["_quests"] = { 11381 },
+							}),
+						},
+					}),
 					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
 						["cost"] = {
