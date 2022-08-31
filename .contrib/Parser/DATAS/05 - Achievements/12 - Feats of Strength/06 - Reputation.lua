@@ -4,7 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_REPUTATION_FOS, {
-		un(REMOVED_FROM_GAME, ach(5788)),	-- Agent of the Shen'dralar
 		ach(871, {			-- Avast Ye, Admiral!
 			title(111),			-- Bloodsail Admiral
 		}),

@@ -8986,11 +8986,10 @@ local criteriaFields = {
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				if criteriaID <= GetAchievementNumCriteria(achievementID) then
-					rawset(t, "saved", select(3, GetAchievementCriteriaInfo(achievementID, criteriaID, true)));
+					return select(3, GetAchievementCriteriaInfo(achievementID, criteriaID, true));
 				elseif criteriaID > 50 then
-					rawset(t, "saved", select(3, GetAchievementCriteriaInfoByID(achievementID, criteriaID)));
+					return select(3, GetAchievementCriteriaInfoByID(achievementID, criteriaID));
 				end
-				return rawget(t, "saved");
 			end
 		end
 	end,

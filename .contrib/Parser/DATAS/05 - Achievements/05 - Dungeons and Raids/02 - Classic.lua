@@ -9,17 +9,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 		ach(685),	-- Blackwing Lair
 		ach(628),	-- Deadmines
 		ach(634),	-- Gnomeregan
-		ach(644, {	-- King of Dire Maul
-			crit(1, {	-- Alzzin the Wildshaper
-				["_npcs"] = { 11492 },
-			}),
-			crit(2, {	-- Immol'thar
-				["_npcs"] = { 11496 },
-			}),
-			crit(3, {	-- King Gordok
-				["_npcs"] = { 11501 },
-			}),
-		}),
 		ach(643),	-- Lower Blackrock Spire
 		ach(640),	-- Maraudon
 		ach(686),	-- Molten Core

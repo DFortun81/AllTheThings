@@ -174,7 +174,7 @@ namespace ATT
             GitCommitChanges(version);
 
             // Determine the name of the ZIP File.
-            var ZipFileName = Path.Combine(directory.FullName, $".contrib/.builds/{directory.Name}-{version}-{CurrentExpansionType.ToString().ToLower()}.zip");
+            var ZipFileName = Path.Combine(directory.FullName, $".contrib/.builds/{directory.Name}-v{version}-{CurrentExpansionType.ToString().ToLower()}.zip");
             Directory.CreateDirectory(Path.GetDirectoryName(ZipFileName));
             using (var zipFile = ZipFile.Open(ZipFileName, ZipArchiveMode.Create))
             {
