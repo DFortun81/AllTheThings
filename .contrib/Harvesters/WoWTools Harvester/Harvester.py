@@ -20,9 +20,8 @@ class Things(Enum):
     Titles = auto()
     Toys = auto()
     Transmog = auto()
-
-
-class NameHelpers(Enum):
+    # Not really collectibles, but we want to process them anyway
+    # Please keep them after real collectibles
     Creature = auto()
     SpellItem = auto()
     SpellName = auto()
@@ -33,6 +32,8 @@ class NameHelpers(Enum):
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
+        if thing == Things.Creature:
+            break
         with open(Path("BuildLists", f"{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
@@ -52,6 +53,11 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
         Things.Titles: "chartitles",
         Things.Toys: "toy",
         Things.Transmog: "itemmodifiedappearance",
+        Things.Creature: "creature",
+        Things.SpellItem: "spellitemenchantment",
+        Things.SpellName: "spellname",
+        Things.SkillLine: "skillline",
+        Things.Item: "itemsparse",
     }
     url = f"https://wow.tools/dbc/api/export/?name={thing2table[thing]}&build={build}"
     headers = {
@@ -63,65 +69,65 @@ def get_thing_ids(thing: Things, build: str) -> list[str]:
     for row in reader:
         match thing:
             case Things.Achievements:
-                thing_list.append(row["ID"] + "," + row["Title_lang"] + "\n")                                            # Achievement have names in the same db.
+                # Achievements have names in the same db
+                thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
             case Things.Factions:
-                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")                                             # Faction have names in the same db.
+                # Factions have names in the same db
+                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
             case Things.FlightPaths:
-                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")                                             # Flight Paths have names in the same db.
+                # Flight Paths have names in the same db
+                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
             case Things.Followers:
-                thing_list.append(row["ID"] + "," + row["HordeCreatureID"] + "," + row["AllianceCreatureID"] + "\n")     # Follower Names need creature db
+                # Follower Names need creature db
+                thing_list.append(
+                    f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
+                )
             case Things.Illusions:
-                thing_list.append(row["SpellItemEnchantmentID"] + "\n")                                                  # Illusion names are in the SpellItemEnchantmentID db.
+                # Illusion names are in the SpellItemEnchantmentID db
+                thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
             case Things.Mounts:
-                thing_list.append(row["SourceSpellID"] + "," + row["Name_lang"] + "\n")                                  # Mounts have names in the same db.
+                # Mounts have names in the same db
+                thing_list.append(f"{row['SourceSpellID']},{row['Name_lang']}\n")
             case Things.Quests:
-                thing_list.append(row["ID"] + "\n")                                                                      # I Think we need wowhead here.
+                # TODO: I think we need wowhead here.
+                thing_list.append(f"{row['ID']}\n")
             case Things.Pets:
-                thing_list.append(row["ID"] + "," + row["CreatureID"] + "\n")                                            # Pet Names need creature db.
+                # Pet Names need creature db
+                thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
             case Things.Recipes:
-                thing_list.append(row["SkillLine"] + "," + row["Spell"] + "\n")                                          # Recipes names are in the SpellName db and Profession name are in SkillLine db.
+                # Recipe names are in the SpellName db and Profession names are in SkillLine db
+                thing_list.append(f"{row['SkillLine']},{row['Spell']}\n")
             case Things.Titles:
-                thing_list.append(row["Mask_ID"] + "," + row["Name_lang"] + "\n")                                        # Title have names in the same db.
+                # Titles have names in the same db
+                thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
             case Things.Toys:
-                thing_list.append(row["ItemID"] + "\n")                                                                  # Item names are in Item Sparse db.
+                # Item names are in Item Sparse db
+                thing_list.append(f"{row['ItemID']}\n")
             case Things.Transmog:
-                thing_list.append(row["ID"] + "\n")                                                                      # Item names are in Item Sparse db.
-    return thing_list
-
-
-def get_name_ids(name_helper: NameHelpers, build: str) -> list[str]:
-    """Get the IDs of a thing from a build."""
-    namehelper2table = {
-        NameHelpers.Creature: "creature",
-        NameHelpers.SpellItem: "spellitemenchantment",
-        NameHelpers.SpellName: "spellname",
-        NameHelpers.SkillLine: "skillline",
-        NameHelpers.Item: "itemsparse",
-    }
-    url = f"https://wow.tools/dbc/api/export/?name={namehelper2table[name_helper]}&build={build}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36"
-    }
-    thing_list = list[str]()
-    request = requests.get(url, headers=headers)
-    reader = csv.DictReader(request.content.decode("utf-8").splitlines())
-    for row in reader:
-        match name_helper:
-            case NameHelpers.Creature:
-                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Followers and Pets to get names
-            case NameHelpers.SpellItem:
-                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Illusion names
-            case NameHelpers.SpellName:
-                thing_list.append(row["ID"] + "," + row["Name_lang"] + "\n")            # Helps Recipes
-            case NameHelpers.SkillLine:
-                thing_list.append(row["ID"] + "," + row["DisplayName_lang"] + "\n")     # Helps Professions
-            case NameHelpers.Item:
-                thing_list.append(row["ID"] + "," + row["Display_lang"] + "\n")         # Helps Toys and Transmog
+                # Item names are in Item Sparse db.
+                thing_list.append(f"{row['ID']}\n")
+            case Things.Creature:
+                # Helps Followers and Pets to get names
+                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+            case Things.SpellItem:
+                # Helps Illusion names
+                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+            case Things.SpellName:
+                # Helps Recipes
+                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+            case Things.SkillLine:
+                # Helps Professions
+                thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+            case Things.Item:
+                # Helps Toys and Transmog
+                thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
     return thing_list
 
 
 def get_existing_ids(thing: Things) -> list[str]:
     """Get the IDs of a thing from Categories.lua."""
+    if thing.value > Things.Transmog.value:
+        raise NotImplementedError("This is not a real collectible.")
     thing2prefix: dict[Things, str | tuple[str, ...]] = {
         Things.Achievements: "ach(",
         Things.Factions: "faction(",
@@ -150,7 +156,8 @@ def get_existing_ids(thing: Things) -> list[str]:
 
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
-    profession_dict = {         # This dict should be able to be done automatically from SkillLine Helper
+    # TODO: This dict should be able to be done automatically from SkillLine Helper
+    profession_dict = {
         "Abominable Stitching": 2787,
         "Alchemy": 171,
         "Archaeology": 794,
@@ -176,7 +183,10 @@ def sort_raw_file_recipes() -> None:
         profession: Path("Backups", f"Raw{profession}.txt")
         for profession in profession_dict
     }
-    with open(Path("Backups", "RawRecipes")) as raw_file, open(Path("BuildLists", "Recipes.txt")) as build_file:
+    with (
+        open(Path("Backups", "RawRecipes")) as raw_file,
+        open(Path("BuildLists", "Recipes.txt")) as build_file,
+    ):
         builds = build_file.readlines()
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
@@ -203,28 +213,14 @@ def create_raw_file(thing: Things) -> None:
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(set(thing_list) - set(old_lines), key=float)
                 raw_file.writelines(difference)
-    # TODO: Check with Molkree
-    if Things.Recipes:
+    if thing == Things.Recipes:
         sort_raw_file_recipes()
-
-
-def create_raw_file_name_helper(thing: NameHelpers) -> None:
-    """Create a raw file for a thing."""
-    raw_path = Path("Backups", f"Raw{thing.name}.txt")
-    builds_path = Path("BuildLists", f"{thing.name}.txt")
-    with open(builds_path) as builds_file:
-        for build in builds_file:
-            thing_list = get_name_ids(thing, build.strip())
-            with open(raw_path, "r+") as raw_file:
-                raw_file.write(build)
-                old_lines = raw_file.readlines()
-                # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines), key=float)
-                raw_file.writelines(difference)
 
 
 def create_missing_file(thing: Things) -> None:
     """Create a missing file for a thing using difference between Categories.lua and raw file."""
+    if thing.value > Things.Transmog.value:
+        raise NotImplementedError("This is not a real collectible.")
     raw_path = Path("Backups", f"Raw{thing.name}.txt")
     exclusion_path = Path("Exclusion", f"Exclusion{thing.name}.txt")
     datas_folder = Path("..", "..", "Parser", "DATAS")
@@ -234,12 +230,17 @@ def create_missing_file(thing: Things) -> None:
         "MissingIDs",
         f"Missing{thing.name}.txt",
     )
-    with open(raw_path) as raw_file, open(missing_path, "w") as missing_file, open(exclusion_path) as exclusion_file:
+    with (
+        open(raw_path) as raw_file,
+        open(missing_path, "w") as missing_file,
+        open(exclusion_path) as exclusion_file,
+    ):
         raw_lines = raw_file.readlines()
         exclusion_lines = exclusion_file.readlines()
         # TODO: this only finds new Things, not removed Things
         difference = sorted(
-            set(raw_lines) - set(get_existing_ids(thing)) - set(exclusion_lines), key=raw_lines.index
+            set(raw_lines) - set(get_existing_ids(thing)) - set(exclusion_lines),
+            key=raw_lines.index,
         )
         missing_file.writelines(difference)
         # Extra Searches here
@@ -288,6 +289,3 @@ def get_name(thing: Things) -> None:
     # TODO: Should this accept type of Thing and its ID?
     # TODO: Should it return the name?
     raise NotImplementedError
-
-
-create_raw_file(Things.Quests)
