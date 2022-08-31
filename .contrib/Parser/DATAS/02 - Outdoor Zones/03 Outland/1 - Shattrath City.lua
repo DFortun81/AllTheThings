@@ -618,6 +618,9 @@ root("Zones", {
 							}),
 						},
 					})),
+					ach(964, {	-- Going Down?
+						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
+					}),
 					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
 						["cost"] = {
