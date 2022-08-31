@@ -23,7 +23,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			["groups"] = {
 				i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
 				i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
-				import(41188),	-- Saronite Mindcrusher
+				i(41188),	-- Saronite Mindcrusher
 			},
 		}),
 		-- #endif
