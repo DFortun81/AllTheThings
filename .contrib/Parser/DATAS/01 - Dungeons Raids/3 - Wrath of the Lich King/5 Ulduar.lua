@@ -766,7 +766,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45488),	-- Leggings of the Enslaved Idol
 						i(45946),	-- Fire Orchid Signet
 					}),
-					i(142091),	-- Blessed Seed (PET!)
+					i(142091, {	-- Blessed Seed (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45644),	-- Gloves of the Wayward Conqueror
 					i(45645),	-- Gloves of the Wayward Protector
 					i(45646),	-- Gloves of the Wayward Vanquisher
