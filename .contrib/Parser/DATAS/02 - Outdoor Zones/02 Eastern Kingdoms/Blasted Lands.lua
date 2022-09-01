@@ -1752,7 +1752,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER 7.0.3
 						i(17050, {	-- Chan's Imperial Robes
-							["description"] = "Removed as World Drop with 4.0. Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
+							["description"] = "Added to Emerald Encrusted Chest in 7.0. & Mith'rethis Rare in Hinterlands in 9.0.",
 							["timeline"] = { "removed 4.0.3", "added 7.0.3" },
 						}),
 						-- #endif

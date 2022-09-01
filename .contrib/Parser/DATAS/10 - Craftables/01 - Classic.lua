@@ -428,6 +428,15 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
 			i(5540),	-- Pearl-handled Dagger
+			i(9718, {	-- Reforged Blade of Heroes
+				["cost"] = {
+					{ "i", 9719, 1 },	-- Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- Elemental Fire
+					{ "i", 3486, 2 },	-- Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- Steel Bar
+					{ "i", 3466, 4 },	-- Strong Flux
+				},
+			}),
 			i(2864),	-- Runed Copper Breastplate
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade

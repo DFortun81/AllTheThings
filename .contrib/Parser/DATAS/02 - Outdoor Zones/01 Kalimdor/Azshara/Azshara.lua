@@ -1554,12 +1554,15 @@ root("Zones", m(KALIMDOR, {
 						i(11305),	-- Dense Shortbow
 					},
 				})),
-				n(8678, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.7272", "removed 4.0.3" } }, {	-- Jubie Gadgetspring <Engineering Supplier>
+				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 					["coord"] = { 45.2, 90.8, AZSHARA },
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(10607),	-- Schematic: Deepdive Helmet
+						i(10607, {	-- Schematic: Deepdive Helmet
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				n(49885, bubbleDownSelf({ ["timeline"] = { "added 4.0.1.12984" } }, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 					["coord"] = { 57.0, 50.6, AZSHARA },
 					["races"] = HORDE_ONLY,

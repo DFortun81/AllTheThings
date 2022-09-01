@@ -2638,7 +2638,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(9296, {	-- Recipe: Gift of Arthas
-					-- #if BEFORE CATA
+					-- #if AFTER CATA
 					["cr"] = 1783,	-- Skeletal Flayer
 					-- #else
 					["crs"] = {

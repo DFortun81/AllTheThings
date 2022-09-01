@@ -40,7 +40,6 @@ root("WorldDrops", tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1
 			i(28279),	-- Formula: Enchant Boots - Cat's Swiftness (BoE version) (RECIPE!)
 			i(22542),	-- Formula: Enchant Boots - Vitality (RECIPE!)
 			i(22532),	-- Formula: Enchant Bracer - Versatility Prime / TBC: Enchant Bracer - Restore Mana Prime (RECIPE!)
-			i(16253),	-- Formula: Enchant Chest - Greater Stats (RECIPE!) (Classic Recipe)
 			i(28270),	-- Formula: Enchant Chest - Major Resilience (RECIPE!)
 			i(22548, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
 			i(22540),	-- Formula: Enchant Shield - Parry / TBC: Formula: Enchant Shield - Shield Block (RECIPE!)
