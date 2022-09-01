@@ -1572,7 +1572,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 			-- TODO: verify if these are available to allied races or not
 				q(13706, {	-- Valiant Of Darnassus
 					["coord"] = { 76.3, 19.0, ICECROWN },
-					["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
+					["races"] = exclude({ NIGHTELF, WORGEN }, ALLIANCE_ONLY),
 					["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 				}),
 				q(13704, {	-- Valiant Of Gnomeregan
