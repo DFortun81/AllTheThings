@@ -596,6 +596,12 @@ root("ExpansionFeatures", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.
 				},
 			}),
 		})),
+		prof(FIRST_AID, {
+			ach(9505, { -- Draenor Medic (700)
+				["timeline"] = { "added 6.0", "removed 8.0" },
+				["requireSkill"] = FIRST_AID,
+			}),
+		}),
 	}),
 })));
 

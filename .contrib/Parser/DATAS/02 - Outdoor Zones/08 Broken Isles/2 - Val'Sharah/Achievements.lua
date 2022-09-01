@@ -154,42 +154,6 @@ _.Zones =
 						}),
 					},
 				})),
-				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
-					["groups"] = {
-						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 3,			-- Bloody Plea (Criteria)
-									["itemID"] = 139527,		-- Bloody Plea
-									--["questID"] = 42308,		-- Bloody Plea (Quest)
-									["description"] = "Furbolgs in southern Val'sharah",
-									["crs"] = {
-										93577,
-										91288,
-									}
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 5,			-- Bloody Request (Criteria)
-									["itemID"] = 139528,		-- Bloody Request
-									--["questID"] = 42309,		-- Bloody Request (Quest)
-									["description"] = "Grizzleweald (68, 73) in Val'sharah",
-									["crs"] = { 109045 }
-								},
-								{
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 10,		-- Fevered Note (Criteria)
-									["itemID"] = 139526,		-- Fevered Note
-									--["questID"] = 42303,		-- Fevered Note (Quest)
-									["description"] = "Southern Val'sharah",
-									["crs"] = { 108675 },
-								}
-							},
-						})),
-					},
-				})),
 				ach(10877, {	-- Pillars of Creation
 					["sourceQuests"] = { 40890 },	-- The Tears of Elune
 				}),

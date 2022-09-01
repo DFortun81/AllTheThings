@@ -372,5 +372,23 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				},
 			}),
 		})),
+		prof(FIRST_AID, {
+			ach(4918, { -- Illustrious Grand Master Medic (525)
+				["timeline"] = { "added 4.0.1", "removed 8.0" },
+				["requireSkill"] = FIRST_AID,
+			}),
+			-- #IF BEFORE BFA
+			ach(5480, {	-- Preparing for Disaster
+				["requireSkill"] = FIRST_AID,
+			}),
+			-- #ENDIF
+		}),
+		prof(TAILORING, {
+			-- #IF AFTER BFA
+			ach(5480, {	-- Preparing for Disaster
+				["requireSkill"] = TAILORING,
+			}),
+			-- #ENDIF
+		}),
 	}),
 })));

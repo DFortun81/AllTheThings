@@ -194,44 +194,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(11139, {	-- Field Medic!
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["g"] = {
-								i(139534, {	-- Bloody Letter
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 1,			-- Bloody Letter
-									--["questID"] = 42350,		-- Bloody Letter
-									["description"] = "Northwest Suramar.",
-									["crs"] = {101783}
-								}),
-								i(139535, {	-- Bloody Prayer
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 4,			-- Bloody Prayer
-									--["questID"] = 42351,		-- Bloody Prayer
-									["description"] = "Southwest Suramar City.",
-									["crs"] = {114470}
-								}),
-								i(139532, {	-- Fevered Prayer
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 12,		-- Fevered Prayer
-									--["questID"] = 42345,		-- Fevered Prayer
-									["description"] = "Northwest Suramar.",
-									["crs"] = {101784}
-								}),
-								i(139533, {	-- Singed Plea
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 16,		-- Singed Plea
-									--["questID"] = 42340,		-- Singed Plea
-									["description"] = "Fal'dorei Tunnels.",
-									["crs"] = {105753, 105625, 113162}
-								})
-							},
-						})),
-					},
-				}),
 				ach(11124, {	-- Good Suramaritan
 					crit(1,  {	-- An Ancient Gift
 						["sourceQuest"] = 42230,	-- The Valewalker's Burden

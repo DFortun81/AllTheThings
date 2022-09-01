@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(PROFESSIONS, {
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(10600),	-- Legion Archaeologist
@@ -1174,6 +1174,118 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 				},
 			}),
 		})),
+		prof(FIRST_AID, {
+			ach(11139, {	-- Field Medic!
+				["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+				["timeline"] = { "added 7.0.3", "removed 8.0" },
+				["g"] = bubbleDown({
+					["timeline"] = { "added 7.0.3", "removed 8.0" },
+				},{
+					title(340),	-- TITLE: Field Medic!
+					ach(11138),	-- Is There a Medic in the Zone? (10 of 16)
+					i(139534, {	-- Bloody Letter
+						["criteriaID"] = 1,		-- Bloody Letter
+						["maps"] = { SURAMAR },
+						["crs"] = {101783},
+						["description"] = "Northwest Suramar."
+					}),
+					i(139522, {	-- Bloody Note
+						["criteriaID"] = 2,		-- Bloody Note
+						["maps"] = { AZSHARA },
+						["crs"] = {108133, 108139, 108153, 108146},
+						["description"] = "Pirates in southern-east Azsuna."
+					}),
+					i(139527, {	-- Bloody Plea
+						["criteriaID"] = 3,		-- Bloody Plea
+						["maps"] = { VALSHARAH },
+						["crs"] = {93577, 91288},
+						["description"] = "Furbolgs in southern Val'sharah"
+					}),
+					i(139535, {	-- Bloody Prayer
+						["criteriaID"] = 4,		-- Bloody Prayer
+						["maps"] = { SURAMAR },
+						["crs"] = {114470},
+						["description"] = "Southwest Suramar City."
+					}),
+					i(139528, {	-- Bloody Request
+						["criteriaID"] = 5,		-- Bloody Request
+						["maps"] = { VALSHARAH },
+						["crs"] = { 109045 },
+						["description"] = "Grizzleweald (68, 73) in Val'sharah"
+					}),
+					i(139524, {	-- Crumpled Letter
+						["criteriaID"] = 6,		-- Crumpled Letter
+						["maps"] = { HIGHMOUNTAIN },
+						["crs"] = {96774},
+						["description"] = "Western Highmountain next to Skyhorn.",
+					}),
+					i(139525, {	-- Crumpled Note
+						["criteriaID"] = 7,		-- Crumpled Note
+						["maps"] = { HIGHMOUNTAIN },
+						["crs"] = {104323},
+						["description"] = "Northern Highmountain."
+					}),
+					i(139531, {	-- Crumpled Request
+						["criteriaID"] = 8,		-- Crumpled Request
+						["maps"] = { STORMHEIM },
+						["crs"] = {108030},
+						["description"] = "Vampirates. (Stormheim)"
+					}),
+					i(139523, {	-- Fevered Letter
+						["criteriaID"] = 9,		-- Fevered Letter
+						["maps"] = { HIGHMOUNTAIN },
+						["crs"] = {103177},
+						["description"] = "Southern Highmountain."
+					}),
+					i(139526, {	-- Fevered Note
+						["criteriaID"] = 10,		-- Fevered Note
+						["maps"] = { VALSHARAH },
+						["crs"] = { 108675 },
+						["description"] = "Southern Val'sharah"
+					}),
+					i(139520, {	-- Fevered Plea
+						["criteriaID"] = 11,		-- Fevered Plea
+						["maps"] = { AZSHARA },
+						["crs"] = {111598, 111630, 111586 },
+						["description"] = "Murlocs at the southern tip in Azsuna."
+					}),
+					i(139532, {	-- Fevered Prayer
+						["criteriaID"] = 12,		-- Fevered Prayer
+						["maps"] = { SURAMAR },
+						["crs"] = {101784},
+						["description"] = "Northwest Suramar."
+					}),
+					i(139529, {	-- Fevered Request
+						["criteriaID"] = 13,		-- Fevered Request
+						["maps"] = { STORMHEIM },
+						["crs"] = {98498, 98500, 98501, 98502, 110258},
+						["description"] = "Murlocs at Morheim (eastern Stormheim)."
+					}),
+					i(139530, {	-- Singed Letter
+						["criteriaID"] = 14,		-- Singed Letter
+						["maps"] = { STORMHEIM },
+						["crs"] = {116600},
+						["description"] = "Southern Stormheim."
+					}),
+					i(139521, {	-- Singed Note
+						["criteriaID"] = 15,		-- Singed Note
+						["maps"] = { AZSHARA },
+						["crs"] = {88101, 88099, 108146},
+						["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
+					}),
+					i(139533, {	-- Singed Plea
+						["criteriaID"] = 16,		-- Singed Plea
+						["maps"] = { SURAMAR },
+						["crs"] = {105753, 105625, 113162},
+						["description"] = "Fal'dorei Tunnels."
+					}),
+				}),
+			}),
+			ach(10599, {	-- Legion Medic (800)
+				["timeline"] = { "added 7.0.3", "removed 8.0" },
+				["requireSkill"] = FIRST_AID,
+			}),
+		}),
 		prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 			o(272768, {	-- Empyrium Deposit
 				["maps"] = {
@@ -1552,6 +1664,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		--	Archaeology
@@ -1576,6 +1689,23 @@ root(ROOTS.HiddenQuestTriggers, {
 		--  Engineering
 		q(41100),	-- FLAG - Swap Didis - triggers after completing the "Endless Possibilities" (questID 40854)
 		q(45365),	-- Treasure: Wand of Simulated Life - part of some legion engineering quest
+		-- First Aid (these used to be actual quests... when Legion Classic rolls around someone will have to make them real quests...)
+		q(42350, { ["name"] = "DEPRECATED: Bloody Letter", }),	-- DEPRECATED: Bloody Letter
+		q(42255, { ["name"] = "DEPRECATED: Bloody Note", }),	-- DEPRECATED: Bloody Note
+		q(42308, { ["name"] = "DEPRECATED: Bloody Plea", }),	-- DEPRECATED: Bloody Plea
+		q(42351, { ["name"] = "DEPRECATED: Bloody Prayer", }),	-- DEPRECATED: Bloody Prayer
+		q(42309, { ["name"] = "DEPRECATED: Bloody Request", }),	-- DEPRECATED: Bloody Request
+		q(42333, { ["name"] = "DEPRECATED: Crumpled Letter", }),	-- DEPRECATED: Crumpled Letter
+		q(42334, { ["name"] = "DEPRECATED: Crumpled Note", }),	-- DEPRECATED: Crumpled Note
+		q(42058, { ["name"] = "DEPRECATED: Crumpled Request", }),	-- DEPRECATED: Crumpled Request
+		q(42323, { ["name"] = "DEPRECATED: Fevered Letter", }),	-- DEPRECATED: Fevered Letter
+		q(42303, { ["name"] = "DEPRECATED: Fevered Note", }),	-- DEPRECATED: Fevered Note
+		q(42250, { ["name"] = "DEPRECATED: Fevered Plea", }),	-- DEPRECATED: Fevered Plea
+		q(42345, { ["name"] = "DEPRECATED: Fevered Prayer", }),	-- DEPRECATED: Fevered Prayer
+		q(41985, { ["name"] = "DEPRECATED: Fevered Request", }),	-- DEPRECATED: Fevered Request
+		q(42215, { ["name"] = "DEPRECATED: Singed Letter", }),	-- DEPRECATED: Singed Letter
+		q(42245, { ["name"] = "DEPRECATED: Singed Note", }),	-- DEPRECATED: Singed Note
+		q(42340, { ["name"] = "DEPRECATED: Singed Plea", }),	-- DEPRECATED: Singed Plea
 		--	Jewelcrafting
 		q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 		q(40302),	-- FLAG - Prospecting 01 - triggered when completing a jewelcrafting world quest in Dalaran
