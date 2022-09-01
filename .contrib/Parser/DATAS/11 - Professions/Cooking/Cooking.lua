@@ -2590,7 +2590,9 @@ profession(COOKING, {
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
 				{ "i", 3712, 10 },	-- Turtle Meat
+				-- #if BEFORE WRATH
 				{ "i", 3713, 1 },	-- Soothing Spices
+				-- #endif
 			},
 			["lvl"] = 28,
 			["groups"] = {
@@ -2608,7 +2610,9 @@ profession(COOKING, {
 			["races"] = HORDE_ONLY,
 			["cost"] = {
 				{ "i", 3712, 10 },	-- Turtle Meat
+				-- #if BEFORE WRATH
 				{ "i", 3713, 1 },	-- Soothing Spices
+				-- #endif
 			},
 			["lvl"] = 28,
 			["groups"] = {
