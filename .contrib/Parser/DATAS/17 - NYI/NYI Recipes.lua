@@ -792,7 +792,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					r(168851),	-- Miniature Flying Carpet
 					i(114872),	-- Recipe: Greater Hexweave Essence
 					r(169669),	-- Hexweave Cloth
-					i(118098),	-- Pettern: Murloc Chew Toy
+					i(118098),	-- Pattern: Murloc Chew Toy
 					r(173415),	-- Murloc Chew Toy
 				})),
 			}),

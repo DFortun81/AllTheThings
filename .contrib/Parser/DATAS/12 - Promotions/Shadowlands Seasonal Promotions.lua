@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root("Promotions", {
 	n(-580, {	-- Shadowlands Seasonal Promotions
-		["timeline"] = { "added 9.2.5" },
+		["timeline"] = { "added 9.0.5" },
 		["groups"] = {
 			i(95475, {	-- Crown of the Eternal Winter
 				["timeline"] = { "added 9.2.5" },
