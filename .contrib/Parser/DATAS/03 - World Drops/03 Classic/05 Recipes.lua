@@ -6,6 +6,56 @@ _.WorldDrops =
 {
 	tier(CLASSIC_TIER, {
 		filter(RECIPES, {
+			-- #if BEFORE 4.0.1
+			cl(DRUID, {
+				{
+					["itemID"] = 17682,		-- Book: Gift of the Wild
+					["spellID"] = 21849,	-- Gift of the Wild
+					["rank"] = 1,
+				},
+				{
+					["itemID"] = 17683,		-- Book: Gift of the Wild II
+					["spellID"] = 21850,	-- Gift of the Wild II
+					["rank"] = 2,
+				},
+			}),
+			cl(MAGE, {
+				{
+					["itemID"] = 18600,		-- Tome of Arcane Brilliance
+					["spellID"] = 23028,	-- Arcane Brilliance
+					["rank"] = 1,
+				},
+				applyclassicphase(PHASE_SIX, {
+					["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
+					["spellID"] = 28609,	-- Frost Ward V
+					["rank"] = 5,
+				}),
+			}),
+			cl(PRIEST, {
+				{
+					["itemID"] = 17413,		-- Codex: Prayer of Fortitude
+					["spellID"] = 21562,	-- Prayer of Fortitude
+					["rank"] = 1,
+				},
+				{
+					["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
+					["spellID"] = 21564,	-- Prayer of Fortitude II
+					["rank"] = 2,
+				},
+				applyclassicphase(PHASE_FIVE, {
+					["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
+					["spellID"] = 27683,	-- Prayer of Shadow Protection
+					["rank"] = 1,
+				}),
+			}),
+			cl(WARLOCK, {
+				applyclassicphase(PHASE_SIX, {
+					["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
+					["spellID"] = 28610,	-- Shadow Ward IV
+					["rank"] = 4,
+				}),
+			}),
+			-- #endif
 			prof(ALCHEMY, {
 				-- #if AFTER 8.0.1.10000
 				i(6454),	-- Manual: Strong Anti-Venom
@@ -17,7 +67,6 @@ _.WorldDrops =
 				i(3396),	-- Recipe: Elixir of Lesser Agility
 				i(2553),	-- Recipe: Elixir of Minor Agility
 				i(6211),	-- Recipe: Elixir of Ogre's Strength
-				un(REMOVED_FROM_GAME, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 				un(REMOVED_FROM_GAME, i(13493)),	-- Recipe: Greater Arcane Elixir
 				i(9296, {	-- Recipe: Gift of Arthas
 					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop

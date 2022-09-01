@@ -1602,7 +1602,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 					["crs"] = { 6146 },	-- Cliff Breaker
 				}),
-				i(14473, {	-- Pettern: Ghostweave Belt
+				i(14473, {	-- Pattern: Ghostweave Belt
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game
 					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					["crs"] = { 7864 },	-- Lingering Highborne
@@ -1624,6 +1624,10 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game
 					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 					["crs"] = { 6201 },	-- Legashi Rogue
+				}),
+				i(13491, {	-- Recipe: Elixir of the Mongoose
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game
