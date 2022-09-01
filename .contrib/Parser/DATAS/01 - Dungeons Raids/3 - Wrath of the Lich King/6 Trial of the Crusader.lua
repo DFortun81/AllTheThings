@@ -103,11 +103,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
 							-- DPS
-							
+
 
 							-- Tank
-							
-							
+
+
 							i(48372),	-- Wrynn's Battleplate of Conquest
 							i(48436),	-- Wrynn's Breastplate of Conquest
 							i(48375),	-- Wrynn's Gauntlets of Conquest
@@ -121,14 +121,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PALADIN, {	-- Turalyon's Garb (706)
 							-- DPS
-							
+
 
 							-- Tank
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48602),	-- Turalyon's Battleplate of Conquest
 							i(48632),	-- Turalyon's Breastplate of Conquest
 							i(48634),	-- Turalyon's Faceguard of Conquest
@@ -161,11 +161,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PRIEST, {	-- Velen's Regalia (349)
 							-- DPS
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48073),	-- Velen's Circlet of Conquest
 							i(47914),	-- Velen's Cowl of Conquest
 							i(47982),	-- Velen's Gloves of Conquest
@@ -179,13 +179,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(SHAMAN, {	-- Nobundo's Plate (640)
 							-- Elemental
-							
+
 
 							-- Enhancement
-							
+
 
 							-- Restoration
-							
+
 							i(48341),	-- Nobundo's Chestguard of Conquest
 							i(48343),	-- Nobundo's Faceguard of Conquest
 							i(48312),	-- Nobundo's Gloves of Conquest
@@ -218,13 +218,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DRUID, {		-- Malfurion's Battlegear (825)
 							-- Boomkin
-							
+
 
 							-- Feral
-							
+
 
 							-- Restoration
-							
+
 							i(48158),	-- Malfurion's Cover of Conquest
 							i(48162),	-- Malfurion's Gloves of Conquest
 							i(48213),	-- Malfurion's Handgrips of Conquest
@@ -243,10 +243,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
 							-- DPS
-							
+
 							-- Tank
-							
-							
+
+
 							i(48474),	-- Thassarian's Battleplate of Conquest
 							i(48531),	-- Thassarian's Chestguard of Conquest
 							i(48529),	-- Thassarian's Faceguard of Conquest
@@ -270,7 +270,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
 							-- DPS
-							
+
 
 							-- Tank
 							i(48458),	-- Hellscream's Greathelm of Conquest
@@ -286,14 +286,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PALADIN, {	-- Liadrin's Plate (707)
 							-- DPS
-							
+
 
 							-- Tank
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48631),	-- Liadrin's Battleplate of Conquest
 							i(48652),	-- Liadrin's Breastplate of Conquest
 							i(48654),	-- Liadrin's Faceguard of Conquest
@@ -326,11 +326,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PRIEST, {	-- Zabra's Regalia (350)
 							-- DPS
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48098),	-- Zabra's Circlet of Conquest
 							i(48068),	-- Zabra's Cowl of Conquest
 							i(48067),	-- Zabra's Gloves of Conquest
@@ -344,13 +344,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(SHAMAN, {	-- Thrall's Garb (641)
 							-- Elemental
-							
+
 
 							-- Enhancement
-							
+
 
 							-- Restoration
-							
+
 							i(48366),	-- Thrall's Chestguard of Conquest
 							i(48368),	-- Thrall's Faceguard of Conquest
 							i(48337),	-- Thrall's Gloves of Conquest
@@ -383,14 +383,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DRUID, {		-- Runetotem's Battlegear (826)
 							-- Boomkin
-							
+
 
 							-- Feral
-							
+
 
 							-- Restoration
-							
-							
+
+
 							i(48184),	-- Runetotem's Cover of Conquest
 							i(48183),	-- Runetotem's Gloves of Conquest
 							i(48192),	-- Runetotem's Handgrips of Conquest
@@ -409,10 +409,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
 							-- DPS
-							
+
 							-- Tank
-							
-							
+
+
 							i(48501),	-- Koltira's Battleplate of Conquest
 							i(48558),	-- Koltira's Chestguard of Conquest
 							i(48560),	-- Koltira's Faceguard of Conquest
@@ -432,17 +432,17 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 3.2.0", "removed 4.0.3" } }, {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Tank
-								
-								
+
+
 								i(48398),	-- Hellscream's Helmet of Triumph
 								i(48400),	-- Hellscream's Battleplate of Triumph
 								i(48396),	-- Hellscream's Shoulderplates of Triumph
@@ -459,13 +459,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Tank
-								
+
 
 								-- Healer
-								
+
 								i(48587),	-- Liadrin's Headpiece of Triumph
 								i(48585),	-- Liadrin's Spaulders of Triumph
 								i(48589),	-- Liadrin's Tunic of Triumph
@@ -507,10 +507,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Healer
-								
+
 								i(48058),	-- Zabra's Cowl of Triumph
 								i(48061),	-- Zabra's Shoulderpads of Triumph
 								i(48060),	-- Zabra's Robe of Triumph
@@ -527,13 +527,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							["groups"] = {
 								-- Elemental
-								
+
 
 								-- Enhancement
-								
+
 
 								-- Restoration
-								
+
 								i(48328),	-- Thrall's Helm of Triumph
 								i(48330),	-- Thrall's Shoulderpads of Triumph
 								i(48326),	-- Thrall's Hauberk of Triumph
@@ -575,13 +575,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							["groups"] = {
 								-- Boomkin
-								
+
 
 								-- Feral
-								
+
 
 								-- Restoration
-								
+
 								i(48201),	-- Runetotem's Headguard of Triumph
 								i(48198),	-- Runetotem's Shoulderpads of Triumph
 								i(48199),	-- Runetotem's Raiments of Triumph
@@ -603,9 +603,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							["groups"] = {
 								-- DPS
-								
+
 								-- Tank
-								
+
 								i(48550),	-- Koltira's Faceguard of Triumph
 								i(48552),	-- Koltira's Pauldrons of Triumph
 								i(48548),	-- Koltira's Chestguard of Triumph
@@ -618,7 +618,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 								i(48494),	-- Koltira's Legplates of Triumph
 							},
 						}),
-					},
+					}),
 				}),
 				n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
 					["coord"] = { 75.2, 21.6, ICECROWN },
@@ -632,11 +632,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Tank
-								
-								
+
+
 								i(48385),	-- Wrynn's Battleplate of Triumph
 								i(48451),	-- Wrynn's Breastplate of Triumph
 								i(48384),	-- Wrynn's Gauntlets of Triumph
@@ -653,13 +653,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Tank
-								
+
 
 								-- Healer
-								
+
 								i(48616),	-- Turalyon's Battleplate of Triumph
 								i(48642),	-- Turalyon's Breastplate of Triumph
 								i(48644),	-- Turalyon's Faceguard of Triumph
@@ -701,10 +701,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							["groups"] = {
 								-- DPS
-								
+
 
 								-- Healer
-								
+
 								i(48085),	-- Velen's Circlet of Triumph
 								i(48035),	-- Velen's Cowl of Triumph
 								i(48037),	-- Velen's Gloves of Triumph
@@ -721,14 +721,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							["groups"] = {
 								-- Elemental
-								
+
 
 								-- Enhancement
-								
+
 
 								-- Restoration
-								
-								
+
+
 								i(48355),	-- Nobundo's Chestguard of Triumph
 								i(48353),	-- Nobundo's Faceguard of Triumph
 								i(48324),	-- Nobundo's Gloves of Triumph
@@ -770,13 +770,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							["groups"] = {
 								-- Boomkin
-								
+
 
 								-- Feral
-								
+
 
 								-- Restoration
-								
+
 								i(48171),	-- Malfurion's Cover of Triumph
 								i(48172),	-- Malfurion's Gloves of Triumph
 								i(48203),	-- Malfurion's Handgrips of Triumph
@@ -798,7 +798,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							["groups"] = {
 								-- DPS
-								
+
 								-- Tank
 								i(48490),	-- Thassarian's Battleplate of Triumph
 								i(48547),	-- Thassarian's Chestguard of Triumph
@@ -825,11 +825,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
 							-- DPS
-							
+
 
 							-- Tank
-							
-							
+
+
 							i(48391),	-- Hellscream's Battleplate of Triumph
 							i(48461),	-- Hellscream's Breastplate of Triumph
 							i(48392),	-- Hellscream's Gauntlets of Triumph
@@ -843,14 +843,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PALADIN, {	-- Liadrin's Plate (707)
 							-- DPS
-							
+
 
 							-- Tank
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48626),	-- Liadrin's Battleplate of Triumph
 							i(48657),	-- Liadrin's Breastplate of Triumph
 							i(48659),	-- Liadrin's Faceguard of Triumph
@@ -883,10 +883,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PRIEST, {	-- Zabra's Regalia (350)
 							-- DPS
-							
+
 
 							-- Healer
-							
+
 							i(48095),	-- Zabra's Circlet of Triumph
 							i(48065),	-- Zabra's Cowl of Triumph
 							i(48066),	-- Zabra's Gloves of Triumph
@@ -900,14 +900,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(SHAMAN, {	-- Thrall's Garb (641)
 							-- Elemental
-							
+
 
 							-- Enhancement
-							
+
 
 							-- Restoration
-							
-							
+
+
 							i(48365),	-- Thrall's Chestguard of Triumph
 							i(48363),	-- Thrall's Faceguard of Triumph
 							i(48334),	-- Thrall's Gloves of Triumph
@@ -940,13 +940,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DRUID, {		-- Runetotem's Battlegear (826)
 							-- Boomkin
-							
+
 
 							-- Feral
-							
+
 
 							-- Restoration
-							
+
 							i(48181),	-- Runetotem's Cover of Triumph
 							i(48182),	-- Runetotem's Gloves of Triumph
 							i(48193),	-- Runetotem's Handgrips of Triumph
@@ -965,9 +965,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
 							-- DPS
-							
+
 							-- Tank
-							
+
 							i(48500),	-- Koltira's Battleplate of Triumph
 							i(48557),	-- Koltira's Chestguard of Triumph
 							i(48555),	-- Koltira's Faceguard of Triumph
@@ -992,10 +992,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
 							-- DPS
-							
+
 
 							-- Tank
-							
+
 							i(48376),	-- Wrynn's Battleplate of Triumph
 							i(48450),	-- Wrynn's Breastplate of Triumph
 							i(48377),	-- Wrynn's Gauntlets of Triumph
@@ -1009,14 +1009,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PALADIN, {	-- Turalyon's Garb (706)
 							-- DPS
-							
+
 
 							-- Tank
-							
+
 
 							-- Healer
-							
-							
+
+
 							i(48607),	-- Turalyon's Battleplate of Triumph
 							i(48641),	-- Turalyon's Breastplate of Triumph
 							i(48639),	-- Turalyon's Faceguard of Triumph
@@ -1049,10 +1049,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(PRIEST, {	-- Velen's Regalia (349)
 							-- DPS
-							
+
 
 							-- Healer
-							
+
 							i(48078),	-- Velen's Circlet of Triumph
 							i(47984),	-- Velen's Cowl of Triumph
 							i(47983),	-- Velen's Gloves of Triumph
@@ -1066,13 +1066,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(SHAMAN, {	-- Nobundo's Plate (640)
 							-- Elemental
-							
+
 
 							-- Enhancement
-							
+
 
 							-- Restoration
-							
+
 							i(48346),	-- Nobundo's Chestguard of Triumph
 							i(48348),	-- Nobundo's Faceguard of Triumph
 							i(48317),	-- Nobundo's Gloves of Triumph
@@ -1105,14 +1105,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DRUID, {		-- Malfurion's Battlegear (825)
 							-- Boomkin
-							
+
 
 							-- Feral
-							
+
 
 							-- Restoration
-							
-							
+
+
 							i(48164),	-- Malfurion's Cover of Triumph
 							i(48163),	-- Malfurion's Gloves of Triumph
 							i(48212),	-- Malfurion's Handgrips of Triumph
@@ -1131,10 +1131,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDo
 						}),
 						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
 							-- DPS
-							
+
 							-- Tank
-							
-							
+
+
 							i(48481),	-- Thassarian's Battleplate of Triumph
 							i(48538),	-- Thassarian's Chestguard of Triumph
 							i(48540),	-- Thassarian's Faceguard of Triumph
