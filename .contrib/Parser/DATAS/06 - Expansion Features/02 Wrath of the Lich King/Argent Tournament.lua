@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(WOTLK_TIER, {
+root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
 	n(-363, {	-- The Argent Tournament
 		["maps"] = { ICECROWN },
 		["g"] = {
@@ -2940,4 +2940,4 @@ root("ExpansionFeatures", tier(WOTLK_TIER, {
 			}),
 		},
 	}),
-}));
+}))));
