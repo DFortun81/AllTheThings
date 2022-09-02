@@ -2251,6 +2251,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 				n(173791, {	-- Crusader Adevald Ironbeard
 					["coord"] = { 69.4, 23.3, ICECROWN },
 					["description"] = "Sells gear from the Shadowlands Pre-Launch event but you must have leftover tokens from the event to buy them.",
+					["timeline"] = { "added 9.0.1.36228" },
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["cost"] = { { "c", 1754, 15 } }}, {
 					-- Alliance items
 						i(183524, {	-- Argent Conscript's Drape
@@ -2752,6 +2753,7 @@ root("ExpansionFeatures", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, 
 					["coord"] = { 72.4, 20.8, ICECROWN },
 					["g"] = {
 						i(134020, {	-- Chef's Hat (TOY!)
+							["timeline"] = { "added 7.0.3.22248" },
 							["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 						}),
 						i(43007, {	-- Northern Spices

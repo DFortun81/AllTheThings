@@ -4681,6 +4681,7 @@ root("Zones", {
 								["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
 								["groups"] = {
 									i(134020, {	-- Chef's Hat (TOY!)
+										["timeline"] = { "added 7.0.3.22248" },
 										["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 									}),
 									i(43007, {	-- Northern Spices
@@ -5625,6 +5626,7 @@ root("Zones", {
 								["coord"] = { 70.0, 38.6, NORTHREND_DALARAN },
 								["groups"] = {
 									i(134020, {	-- Chef's Hat (TOY!)
+										["timeline"] = { "added 7.0.3.22248" },
 										["cost"] = { { "c", 81, 100 }, },	-- 100x Epicurean's Award
 									}),
 									i(43007, {	-- Northern Spices
