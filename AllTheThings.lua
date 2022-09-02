@@ -1499,9 +1499,9 @@ app.TryColorizeName = function(group, name)
 				return Colorize(name, app.Colors.Alliance);
 			end
 		-- un-acquirable color
-		-- TODO: grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
-		-- elseif not app.FilterItemClass(group) then
-		-- 	return Colorize(name, "ff808080");
+		-- grey color for things which are otherwise not available to the current character (would only show in account mode due to filtering)
+		elseif not app.CurrentCharacterFilters(group) then
+			return Colorize(name, "ff808080");
 		end
 	end
 	return name;
