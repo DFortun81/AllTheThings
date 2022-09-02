@@ -59,20 +59,20 @@ root("Zones", {
 					}),
 					ach(905, {	-- Old Man Barlowned
 						["requireSkill"] = FISHING,
-						["g"] = {
-							crit(1, { -- Crocolisks in the City
+						["groups"] = {
+							crit(5706, {	-- Crocolisks in the City
 								["_quests"] = { 11665 },
 							}),
-							crit(2, { -- Bait Bandits
+							crit(5707, {	-- Bait Bandits
 								["_quests"] = { 11666 },
 							}),
-							crit(3, { -- Felblood Fillet
+							crit(5708, {	-- Felblood Fillet
 								["_quests"] = { 11669 },
 							}),
-							crit(4, { -- The One That Got Away
+							crit(5709, {	-- The One That Got Away
 								["_quests"] = { 11667 },
 							}),
-							crit(5, { -- Shrimpin' Ain't Easy
+							crit(5710, {	-- Shrimpin' Ain't Easy
 								["_quests"] = { 11668 },
 							}),
 						},
