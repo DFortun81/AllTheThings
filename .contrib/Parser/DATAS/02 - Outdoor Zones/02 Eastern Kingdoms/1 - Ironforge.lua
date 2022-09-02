@@ -50,19 +50,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Cold Water Fishing
-							["sourceQuest"] = 29342,	-- Cold Water Fishing
+							["_quests"] = { 29342 },	-- Cold Water Fishing
 						}),
 						crit(2, {	-- One fer the Ages
-							["sourceQuest"] = 29343,	-- One fer the Ages
+							["_quests"] = { 29343 },	-- One fer the Ages
 						}),
 						crit(3, {	-- Fish fer Squrky
-							["sourceQuest"] = 29344,	-- Fish fer Squrky
+							["_quests"] = { 29344 },	-- Fish fer Squrky
 						}),
 						crit(4, {	-- Live Bait
-							["sourceQuest"] = 29347,	-- Live Bait
+							["_quests"] = { 29347 },	-- Live Bait
 						}),
 						crit(5, {	-- The Gnomish Bait-o-Matic
-							["sourceQuest"] = 29350,	-- The Gnomish Bait-o-Matic
+							["_quests"] = { 29350 },	-- The Gnomish Bait-o-Matic
 						}),
 					},
 				})),
@@ -72,19 +72,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- A Round for the Guards
-							["sourceQuest"] = 29351,	-- A Round for the Guards
+							["_quests"] = { 29351 },	-- A Round for the Guards
 						}),
 						crit(2, {	-- A Fowl Shortage
-							["sourceQuest"] = 29352,	-- A Fowl Shortage
+							["_quests"] = { 29352 },	-- A Fowl Shortage
 						}),
 						crit(3, {	-- Keepin' the Haggis Flowin'
-							["sourceQuest"] = 29353,	-- Keepin' the Haggis Flowin'
+							["_quests"] = { 29353 },	-- Keepin' the Haggis Flowin'
 						}),
 						crit(4, {	-- Can't Get Enough Spice Bread
-							["sourceQuest"] = 29355,	-- Can't Get Enough Spice Bread
+							["_quests"] = { 29355 },	-- Can't Get Enough Spice Bread
 						}),
 						crit(5, {	-- I Need to Cask a Favor
-							["sourceQuest"] = 29356,	-- I Need to Cask a Favor
+							["_quests"] = { 29356 },	-- I Need to Cask a Favor
 						}),
 					},
 				})),

@@ -8,6 +8,9 @@ _.Zones =
 		m(LEGION_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(ACHIEVEMENTS, {
+					ach(1958, {	-- I Smell A Giant Rat
+						["requireSkill"] = FISHING,
+					}),
 					ach(11066, {	-- Underbelly Tycoon
 						["cost"] = { { "c", 1149, 20000 } },	-- 20,000x Sightless Eyes
 						["g"] = {

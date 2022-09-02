@@ -372,6 +372,20 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				},
 			}),
 		})),
+		prof(FISHING, {
+			ach(5851,  {	-- Gone Fishin'
+				["timeline"] = { "added 4.2.0" },
+				["requireSkill"] = FISHING,
+				["sym"] = {{"select","achievementID",
+					5848,	-- Fish or Cut Bait: Darnassus
+					5847,	-- Fish or Cut Bait: Ironforge
+					5476,	-- Fish or Cut Bait: Stormwind
+					5850,	-- Fish or Cut Bait: Undercity
+					5849,	-- Fish or Cut Bait: Thunder Bluff
+					5477,	-- Fish or Cut Bait: Orgrimmar
+				}},
+			}),
+		}),
 		prof(FIRST_AID, {
 			ach(4918, { -- Illustrious Grand Master Medic (525)
 				["timeline"] = { "added 4.0.1", "removed 8.0" },

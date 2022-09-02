@@ -87,11 +87,6 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(ACHIEVEMENTS, {
-						ach(5848, {	-- Fish or Cut Bait: Darnassus
-							["races"] = ALLIANCE_ONLY,
-						}),
-					}),
 					n(QUESTS, {
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -113,11 +108,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(4, {	-- A Slippery Snack
-										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-									}),
-								},
 							}),
 							q(29359, {	-- An Old Favorite
 								["provider"] = { "n", 4156 },	-- Astaia
@@ -126,11 +116,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(5, {	-- An Old Favorite
-										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-									}),
-								},
 							}),
 							q(29321, {	-- Happy as a Clam Digger
 								["provider"] = { "n", 4156 },	-- Astaia
@@ -139,11 +124,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(1, {	-- Happy as a Clam Digger
-										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-									}),
-								},
 							}),
 							q(29323, {	-- Stocking Up
 								["provider"] = { "n", 4156 },	-- Astaia
@@ -152,11 +132,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(2, {	-- Stocking Up
-										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-									}),
-								},
 							}),
 							q(29324, {	-- The Sister's Pendant
 								["provider"] = { "n", 4156 },	-- Astaia
@@ -165,11 +140,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(3, {	-- The Sister's Pendant
-										["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
-									}),
-								},
 							}),
 						},
 					}),

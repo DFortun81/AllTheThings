@@ -1130,19 +1130,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Hitting a Walleye
-							["sourceQuest"] = 26414,	-- Hitting a Walleye
+							["_quests"] = { 26414 },	-- Hitting a Walleye
 						}),
 						crit(2, {	-- Diggin' For Worms
-							["sourceQuest"] = 26420,	-- Diggin' For Worms
+							["_quests"] = { 26420 },	-- Diggin' For Worms
 						}),
 						crit(3, {	-- Rock Lobster
-							["sourceQuest"] = 26442,	-- Rock Lobster
+							["_quests"] = { 26442 },	-- Rock Lobster
 						}),
 						crit(4, {	-- Big Gulp
-							["sourceQuest"] = 26488,	-- Big Gulp
+							["_quests"] = { 26488 },	-- Big Gulp
 						}),
 						crit(5, {	-- Thunder Falls
-							["sourceQuest"] = 26536,	-- Thunder Falls
+							["_quests"] = { 26536 },	-- Thunder Falls
 						}),
 					},
 				})),

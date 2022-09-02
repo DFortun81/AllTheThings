@@ -34,19 +34,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Fish Head
-							["sourceQuest"] = 29317,	-- Fish Head
+							["_quests"] = { 29317 },	-- Fish Head
 						}),
 						crit(2, {	-- Like Pike?
-							["sourceQuest"] = 29320,	-- Like Pike?
+							["_quests"] = { 29320 },	-- Like Pike?
 						}),
 						crit(3, {	-- Moat Monster!
-							["sourceQuest"] = 29361,	-- Moat Monster!
+							["_quests"] = { 29361 },	-- Moat Monster!
 						}),
 						crit(4, {	-- Tadpole Terror
-							["sourceQuest"] = 29319,	-- Tadpole Terror
+							["_quests"] = { 29319 },	-- Tadpole Terror
 						}),
 						crit(5, {	-- Time for Slime
-							["sourceQuest"] = 29322,	-- Time for Slime
+							["_quests"] = { 29322 },	-- Time for Slime
 						}),
 					},
 				})),

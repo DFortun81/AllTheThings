@@ -200,11 +200,6 @@ root("Zones", m(KALIMDOR, {
 				}),
 			}),
 			prof(FISHING, {
-				n(ACHIEVEMENTS, {
-					ach(5477, {	-- Fish or Cut Bait: Orgrimmar
-						["races"] = HORDE_ONLY,
-					}),
-				}),
 				n(QUESTS, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -225,11 +220,6 @@ root("Zones", m(KALIMDOR, {
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(4, {	-- A Furious Catch
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
 						}),
 						q(26572, {	-- A Golden Opportunity
 							["provider"] = { "n", 43239 },	-- Razgar
@@ -237,11 +227,6 @@ root("Zones", m(KALIMDOR, {
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(5, {	-- A Golden Opportunity
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
 						}),
 						q(26557, {	-- A Staggering Effort
 							["provider"] = { "n", 43239 },	-- Razgar
@@ -249,11 +234,6 @@ root("Zones", m(KALIMDOR, {
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(3, {	-- A Staggering Effort
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
 						}),
 						q(26543, {	-- Clammy Hands
 							["provider"] = { "n", 43239 },	-- Razgar
@@ -261,11 +241,6 @@ root("Zones", m(KALIMDOR, {
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(1, {	-- Clammy Hands
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
 						}),
 						q(26556, {	-- No Dumping Allowed
 							["provider"] = { "n", 43239 },	-- Razgar
@@ -273,11 +248,6 @@ root("Zones", m(KALIMDOR, {
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["groups"] = {
-								crit(2, {	-- No Dumping Allowed
-									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
-								}),
-							},
 						}),
 						q(6608, {	-- You Too Good.
 							["provider"] = { "n", 3332 },	-- Lumak

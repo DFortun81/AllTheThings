@@ -3829,6 +3829,96 @@ root("Zones", {
 						},
 					}),
 				}),
+				n(ACHIEVEMENTS, bubbleDown({	-- Fishing Achievements
+					["requireSkill"] = FISHING,
+				},{
+					ach(3217,  {	-- Chasing Marcia
+						crit(1, { -- The Ghostfish
+							["_quests"] = { 13830 },
+						}),
+						crit(2, { -- Jewel Of The Sewers
+							["_quests"] = { 13832 },
+						}),
+						crit(3, { -- Dangerously Delicious
+							["_quests"] = { 13834 },
+						}),
+						crit(4, { -- Blood Is Thicker
+							["_quests"] = { 13833 },
+						}),
+						crit(5, { -- Disarmed!
+							["_quests"] = { 13836 },
+						}),
+					}),
+					ach(2096,  {	-- The Coin Master
+						["sym"] = {{"select","achievementID",
+							2094,	-- A Penny For Your Thoughts
+							2095,	-- Silver in the City
+							1957,	-- There's Gold In That There Fountain
+						}},
+						["g"] = {
+							i(44430),		-- Titanium Seal of Dalaran (TOY!)
+						},
+					}),
+					-- TODO: could do similar coin Item treatment here eventually as with 'The Wish Remover'
+					ach(2094,  {	-- A Penny For Your Thoughts
+						crit(1),		-- Alonsus Faol's Copper Coin
+						crit(2),		-- Ansirem's Copper Coin
+						crit(3),		-- Attumen's Copper Coin
+						crit(4),		-- Danath's Copper Coin
+						crit(5),		-- Dornaa's Shiny Copper Coin
+						crit(6),		-- Eitrigg's Copper Coin
+						crit(7),		-- Elling Trias' Copper Coin
+						crit(8),		-- Falstad Wildhammer's Copper Coin
+						crit(9),		-- Genn's Copper Coin
+						crit(10),		-- Inigo's Copper Coin
+						crit(11),		-- Krasus' Copper Coin
+						crit(12),		-- Kryll's Copper Coin
+						crit(13),		-- Landro Longshot's Copper Coin
+						crit(14),		-- Molok's Copper Coin
+						crit(15),		-- Murky's Copper Coin
+						crit(16),		-- Princess Calia Menethil's Copper Coin
+						crit(17),		-- Private Marcus Jonathan's Copper Coin
+						crit(18),		-- Salandria's Shiny Copper Coin
+						crit(19),		-- Squire Rowe's Copper Coin
+						crit(20),		-- Stalvan's Copper Coin
+						crit(21),		-- Vareesa's Copper Coin
+						crit(22),		-- Vargoth's Copper Coin
+					}),
+					ach(2095,  {	-- Silver in the City
+						crit(1),		-- Aegwynn's Silver Coin
+						crit(2),		-- Alleria's Silver Coin
+						crit(3),		-- Antonidas' Silver Coin
+						crit(4),		-- Arcanist Doan's Silver Coin
+						crit(5),		-- Fandral Staghelm's Silver Coin
+						crit(6),		-- High Tinker Mekkatorque's Silver Coin
+						crit(7),		-- Khadgar's Silver Coin
+						crit(8),		-- King Anasterian Sunstrider's Silver Coin
+						crit(9),		-- King Terenas Menethil's Silver Coin
+						crit(10),		-- King Varian Wrynn's Silver Coin
+						crit(11),		-- Maiev Shadowsong's Silver Coin
+						crit(12),		-- Medivh's Silver Coin
+						crit(13),		-- Muradin Bronzebeard's Silver Coin
+						crit(14),		-- Prince Magni Bronzebeard's Silver Coin
+						crit(15),		-- A Peasant's Silver Coin
+					}),
+					ach(1957,  {	-- There's Gold In That There Fountain
+						crit(1),		-- Anduin Wrynn's Gold Coin
+						crit(2),		-- Archimonde's Gold Coin
+						crit(3),		-- Arthas' Gold Coin
+						crit(4),		-- Arugal's Gold Coin
+						crit(5),		-- Brann Bronzebeard's Gold Coin
+						crit(6),		-- Chromie's Gold Coin
+						crit(7),		-- Kel'Thuzad's Gold Coin
+						crit(8),		-- Lady Jaina Proudmoore's Gold Coin
+						crit(9),		-- Lady Katrana Prestor's Gold Coin
+						crit(10),		-- Prince Kael'thas Sunstrider's Gold Coin
+						crit(11),		-- Sylvanas Windrunner's Gold Coin
+						crit(12),		-- Teron's Gold Coin
+						crit(13),		-- Thrall's Gold Coin
+						crit(14),		-- Tirion Fordring's Gold Coin
+						crit(15),		-- Uther Lightbringer's Gold Coin
+					}),
+				})),
 				n(FACTIONS, {
 					faction(1090, {	-- Kirin Tor
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },

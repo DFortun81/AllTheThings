@@ -59,6 +59,23 @@ root("Zones", {
 					}),
 					ach(905, {	-- Old Man Barlowned
 						["requireSkill"] = FISHING,
+						["g"] = {
+							crit(1, { -- Crocolisks in the City
+								["_quests"] = { 11665 },
+							}),
+							crit(2, { -- Bait Bandits
+								["_quests"] = { 11666 },
+							}),
+							crit(3, { -- Felblood Fillet
+								["_quests"] = { 11669 },
+							}),
+							crit(4, { -- The One That Got Away
+								["_quests"] = { 11667 },
+							}),
+							crit(5, { -- Shrimpin' Ain't Easy
+								["_quests"] = { 11668 },
+							}),
+						},
 					}),
 					classicAch(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
@@ -349,9 +366,6 @@ root("Zones", {
 								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5707, {	-- Bait Bandits
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11665, {  -- Crocolisks in the City
@@ -365,9 +379,6 @@ root("Zones", {
 								["provider"] = { "i", 34864 },	-- Baby Crocolisk
 							}),
 							i(35348),	-- Bag of Fishing Treasures
-							crit(5706, {	-- Crocolisks in the City
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11669, {	-- Felblood Fillet
@@ -381,9 +392,6 @@ root("Zones", {
 								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5708, {	-- Felblood Fillet
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11668, {	-- Shrimpin' Ain't Easy
@@ -397,9 +405,6 @@ root("Zones", {
 								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5710, {	-- Shrimpin' Ain't Easy
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11667, {	-- The One That Got Away
@@ -413,9 +418,6 @@ root("Zones", {
 								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5709, {	-- The One That Got Away
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood
