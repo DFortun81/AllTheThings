@@ -5829,7 +5829,7 @@ fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value, raw)
-		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
+		if group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
 			-- only cache the modItemID if it is not the same as the itemID
 			-- pulling .modItemID directly will cause a rawset on the group and break iteration while caching
@@ -5868,8 +5868,9 @@ fieldConverters = {
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
 		-- cache as a mount if it is
-		if group.mountID then
-			CacheField(group, "mountID", group.mountID);
+		local mountID = group.mountID;
+		if mountID then
+			CacheField(group, "mountID", mountID);
 		end
 	end,
 	["tierID"] = function(group, value)
@@ -5877,9 +5878,6 @@ fieldConverters = {
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
-	end,
-	["toyID"] = function(group, value)
-		CacheField(group, "toyID", value);
 	end,
 
 	-- Complex Converters
@@ -5895,21 +5893,24 @@ fieldConverters = {
 	end,
 	["titleIDs"] = function(group, value)
 		_cache = rawget(fieldConverters, "titleID");
-		for i,titleID in ipairs(value) do
+		for _,titleID in ipairs(value) do
 			_cache(group, titleID);
 		end
 	end,
 	["providers"] = function(group, value)
+		local t, p;
 		for _,v in pairs(value) do
-			if v[2] > 0 then
-				if v[1] == "n" then
-					cacheCreatureID(group, v[2]);
-				elseif v[1] == "i" then
-					CacheField(group, "itemIDAsCost", v[2]);
-				elseif v[1] == "c" then
-					CacheField(group, "currencyIDAsCost", v[2]);
-				elseif v[1] == "o" then
-					cacheObjectID(group, v[2]);
+			p = v[2];
+			if p > 0 then
+				t = v[1];
+				if t == "n" then
+					cacheCreatureID(group, p);
+				elseif t == "i" then
+					CacheField(group, "itemIDAsCost", p);
+				elseif t == "c" then
+					CacheField(group, "currencyIDAsCost", p);
+				elseif t == "o" then
+					cacheObjectID(group, p);
 				end
 			end
 		end
@@ -5948,13 +5949,18 @@ fieldConverters = {
 		if type(value) == "number" then
 			return;
 		else
+			local t, p;
 			for _,v in pairs(value) do
-				if v[1] == "i" and v[2] > 0 then
-					CacheField(group, "itemIDAsCost", v[2]);
-				elseif v[1] == "c" and v[2] > 0 then
-					CacheField(group, "currencyIDAsCost", v[2]);
-				elseif v[1] == "o" and v[2] > 0 then
-					cacheObjectID(group, v[2]);
+				p = v[2];
+				if p > 0 then
+					t = v[1];
+					if t == "i" then
+						CacheField(group, "itemIDAsCost", p);
+					elseif t == "c" then
+						CacheField(group, "currencyIDAsCost", p);
+					elseif t == "o" then
+						cacheObjectID(group, p);
+					end
 				end
 			end
 		end
@@ -5975,6 +5981,30 @@ fieldConverters = {
 		end
 	end,
 };
+
+-- Performance Tracking for Caching
+if app.__perf then
+	local GetTimePreciseSec = GetTimePreciseSec;
+	local type = "CacheFields";
+	-- init table for this object type
+	if type and not app.__perf[type] then
+		app.__perf[type] = {};
+	end
+	local cacheConverters = {};
+	for key,func in pairs(fieldConverters) do
+		-- replace each function with itself wrapped in a perf update
+		-- app.PrintDebug("Replaced Cache function",key)
+		cacheConverters[key] = function(group, value)
+			local now = GetTimePreciseSec();
+			func(group, value);
+			local typeData = rawget(app.__perf, type);
+			rawset(typeData, key, (rawget(typeData, key) or 0) + 1);
+			rawset(typeData, key.."_Time", (rawget(typeData, key.."_Time") or 0) + (GetTimePreciseSec() - now));
+		end
+	end
+	fieldConverters = cacheConverters;
+end
+
 local uncacheMap = function(group, mapID)
 	if mapID and currentMaps[mapID] == group then
 		currentMaps[mapID] = nil;
