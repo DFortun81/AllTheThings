@@ -2,7 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-
+--[[
 root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 	n(SOURCELESS, {
 		["description"] = "This Category contains Things that probably exist in the game but no known source.",
@@ -455,7 +455,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			i(192800),	-- PH Primal Tallstrider Blue
 			i(192771),	-- [PH] Water Salamander Blue
 			i(191838),	-- [PH] Blue Lava Mammoth
-			
+
 			i(192748),	-- [PH] Moose Bull Brown
 			i(192601),	-- [PH] Orange Lava Mammoth
 			i(192751),	-- [PH] Moose Bull Dark
@@ -1205,7 +1205,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		}),
 	}),
 }));
-
+--]]
 -- NYI Content which should NOT be filtered in game since it is 'technically' there
 root("NeverImplemented", {
 	-- Maps that don't have any data but still exist in game

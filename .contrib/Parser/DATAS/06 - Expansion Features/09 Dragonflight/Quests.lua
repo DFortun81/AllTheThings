@@ -3,6 +3,7 @@
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	n(QUESTS, {
+		-- TODO: START FROM A/H NORMAL AND A/H EVOKER NEEDED
 		q(65436, {	-- The Dragon Isles Await [A]
 			["sourceQuests"] = { xxxxx },	-- Name
 			--["provider"] = { "n", xxxx },	-- Name
@@ -74,12 +75,21 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 		}),
 		q(65439, {	-- Whispers in the Winds [H]
 			["sourceQuests"] = { 65443 },	-- Expeditionary Coordination [H]
-			--["provider"] = { "n", xxxx },	-- Name
-			--["coord"] = { X, Y, MAP },
+			["provider"] = { "n", 193450 },	-- Archmage Khadgar
+			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,
-			--["g"] = {
-
-			--},
+		}),
+		q(70045, {	-- Truths and Revelations
+			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+			["provider"] = { "n", 193889 },	-- Kodethi
+			["coord"] = { 55.9, 12.7, DUROTAR },
+			["races"] = HORDE_ONLY,
+		}),
+		q(70054, {	-- Lessons From Our Past
+			["sourceQuests"] = { 70045 },	-- Truths and Revelations
+			["provider"] = { "n", 193924 },	-- Scalecommander Emberthal
+			["coord"] = { 49.2, 73.8, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
 		}),
 		q(70050, {	-- The Expedition Gathers [A]
 			["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
@@ -91,13 +101,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			--},
 		}),
 		q(69944, {	-- The Expedition Gathers [H]
-			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
-			--["provider"] = { "n", xxxx },	-- Name
-			--["coord"] = { X, Y, MAP },
+			["sourceQuests"] = { 70054 },	-- Lessons From Our Past
+			["provider"] = { "n", 184786 },	-- Scalecommander Cindrethresh
+			["coord"] = { 49.5, 73.6, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			--["g"] = {
-
-			--},
 		}),
 		q(67700, {	-- To the Dragon Isles! [A]
 			["sourceQuests"] = { 70050 },	-- The Expedition Gathers [A]
@@ -110,20 +117,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 		}),
 		q(65444, {	-- To the Dragon Isles! [H]
 			["sourceQuests"] = { 69944 },	-- The Expedition Gathers [H]
-			--["provider"] = { "n", xxxx },	-- Name
-			--["coord"] = { X, Y, MAP },
+			["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
+			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
-			--["g"] = {
-
-			--},
 		}),
 		-- Side
 		q(70044),	-- The Scalecommander's Request
-		q(70045),	-- The Scalecommander's Request
+
 		q(66458),	-- Legacy of Tyr: Secrets of the Past
 		q(66586),	-- Legacy of Tyr: Secrets of the Past
 		q(70053),	-- Lessons From Our Past
-		q(70054),	-- Lessons From Our Past
+
 
 	}),
 })));
