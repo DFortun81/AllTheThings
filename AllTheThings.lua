@@ -3523,13 +3523,7 @@ ResolveSymbolicLink = function(o)
 				for i=3,#sym do
 					cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
 					if cache then
-						for _,s in ipairs(cache) do
-							if s == o or (s.hash and s.hash == o.hash) then
-								print("symlink selected itself and will be ignored in results!",o.hash);
-							else
-								tinsert(searchResults, s);
-							end
-						end
+						ArrayAppend(searchResults, cache);
 					else
 						print("Failed to select ", field, sym[i]);
 					end
@@ -5051,9 +5045,9 @@ local function DetermineSymlinkGroups(group)
 	end
 end
 local function FillGroupsRecursive(group, depth)
-	-- do not fill 'saved' groups
+	-- do not fill 'saved' groups in ATT windows
 	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
+	if isInWindow and not app.MODE_DEBUG_OR_ACCOUNT then
 		-- (unless they are actual Maps or Instances, or a Difficulty header. Also 'saved' Items usually means tied to a questID directly)
 		if group.saved and not (group.instanceID or group.mapID or group.difficultyID or group.itemID) then return; end
 		local parent = group.parent;
@@ -5089,15 +5083,15 @@ local function FillGroupsRecursive(group, depth)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
-	-- app.PrintDebug("FillGroups",group.hash,group.__type)
 	-- Clear search history -- never re-list the starting Thing
 	included = { [group.hash or ""] = 0, [group.itemID or 0] = 0 };
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
 	-- Check if this group is inside a Window or not
 	isInWindow = app.RecursiveFirstParentWithField(group, "window") and true;
-	-- app.PrintDebug("isInWindow",isInWindow)
 	app.FunctionRunner.SetPerFrame(1);
+
+	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
 
 	-- Fill the group with all nestable content
 	FillGroupsRecursive(group);
@@ -8887,6 +8881,7 @@ local fields = {
 		return 0;
 	end,
 	["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
+	-- ["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
 };
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)
