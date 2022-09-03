@@ -700,7 +700,7 @@ settings.ApplyBackdropColor = function(frame, r, g, b, a)
 end
 -- Creates a font string attached to the top of the provided frame with the given text
 local function AddLabel(frame, text)
-	local label = frame:CreateFontString(frame, "OVERLAY", "GameFontNormalSmall");
+	local label = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 	label:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 0, -2);
 	label:SetJustifyH("LEFT");
 	label:SetHeight(18);
@@ -934,6 +934,7 @@ settings.CreateButton = function(self, opts, functions)
 	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, f); end
 	return f;
 end
+
 -- Small library for building a scrolling frame with minimal setup
 (function()
 local scrollWidth = 16;
@@ -4695,7 +4696,6 @@ function tab:InitializeSyncWindow()
 	end
 	syncWindow.CloseButton:Disable();
 	syncWindow:SetClampedToScreen(false);
-	syncWindow:SetUserPlaced(false);
 	syncWindow:SetToplevel(false);
 	syncWindow:SetMovable(false);
 	syncWindow:SetResizable(false);

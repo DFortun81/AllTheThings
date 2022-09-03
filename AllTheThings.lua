@@ -10048,7 +10048,7 @@ app.GetFactionStanding = function(reputationPoints)
 end
 local function GetCurrentFactionStandings(factionID)
 	local standing, maxStanding = 0, 8;
-	local friend = GetFriendshipReputation(factionID);
+	local friend = GetFriendshipReputation and GetFriendshipReputation(factionID);
 	if friend then
 		standing, maxStanding = GetFriendshipReputationRanks(factionID);
 	else
