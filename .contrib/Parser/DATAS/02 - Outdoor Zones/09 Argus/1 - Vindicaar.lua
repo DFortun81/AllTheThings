@@ -232,6 +232,8 @@ root("Zones", {
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = LEATHERWORKING,
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+						["provider"] = { "n", 125349 },	-- Enstraa
+						["coord"] = { 39.6, 73.6, 831 },
 						["g"] = {
 							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)
 							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)
