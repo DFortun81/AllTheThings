@@ -9940,7 +9940,8 @@ end)();
 
 -- Faction Lib
 (function()
-local GetFriendshipReputation, GetFriendshipReputationRanks = GetFriendshipReputation, GetFriendshipReputationRanks;
+local GetFriendshipReputation, GetFriendshipReputationRanks =
+	GetFriendshipReputation or C_GossipInfo.GetFriendshipReputation, GetFriendshipReputationRanks or C_GossipInfo.GetFriendshipReputationRanks;
 local StandingByID = {
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
@@ -10048,9 +10049,14 @@ app.GetFactionStanding = function(reputationPoints)
 end
 local function GetCurrentFactionStandings(factionID)
 	local standing, maxStanding = 0, 8;
-	local friend = GetFriendshipReputation and GetFriendshipReputation(factionID);
+	local friend = GetFriendshipReputation(factionID);
 	if friend then
 		standing, maxStanding = GetFriendshipReputationRanks(factionID);
+		-- 10.0: GetFriendshipReputationRanks is now a table instead of 2 values, so split them
+		if not maxStanding then
+			maxStanding = standing.maxLevel;
+			standing = standing.currentLevel;
+		end
 	else
 		standing = select(3, GetFactionInfoByID(factionID));
 	end

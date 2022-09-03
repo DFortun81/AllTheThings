@@ -43,14 +43,28 @@ settings:SetBackdrop({
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 });
 settings:SetBackdropColor(0, 0, 0, 1);
-InterfaceOptions_AddCategory(settings);
-settings.Open = function(self)
-	-- Open the Options menu.
-	if InterfaceOptionsFrame:IsVisible() then
-		InterfaceOptionsFrame_Show();
+do	-- Add the ATT Settings frame into the WoW Settings options
+	local toc = select(4, GetBuildInfo());
+	-- 10.0: new way to configure settings frame
+	if toc >= 100000 then
+		local category = Settings.RegisterCanvasLayoutCategory(settings, settings.name)
+		Settings.RegisterAddOnCategory(category)
+		settings.Open = function(self)
+			-- Open the Options menu.
+			Settings.OpenToCategory(self.name);
+		end
 	else
-		InterfaceOptionsFrame_OpenToCategory(self.name);
-		InterfaceOptionsFrame_OpenToCategory(self.name);
+		InterfaceOptions_AddCategory(settings);
+		settings.Open = function(self)
+			-- Open the Options menu.
+			if InterfaceOptionsFrame:IsVisible() then
+				InterfaceOptionsFrame_Show();
+			else
+				Settings.OpenToCategory(category);
+				InterfaceOptionsFrame_OpenToCategory(self.name);
+				InterfaceOptionsFrame_OpenToCategory(self.name);
+			end
+		end
 	end
 end
 -- Provides a Unique Counter value for the Key referenced on each reference
