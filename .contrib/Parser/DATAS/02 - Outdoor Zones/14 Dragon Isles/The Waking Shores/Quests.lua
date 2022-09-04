@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THE_WAKING_SHORES, {
 		n(QUESTS, {
 			-- Chapter 0
@@ -151,7 +151,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			q(68795, {	-- Dragonriding
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
+				["provider"] = { "n", 187290 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 				["g"] = {
 					i(194034),	-- Renewed Proto-Drake (MOUNT!)
@@ -206,7 +206,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			q(66115, {	-- The Mandate of the Red
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
+				["provider"] = { "n", 187290 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 				["g"] = {
 					i(194346),	-- League Mercenary's Grips
@@ -225,7 +225,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					68799,	-- Return to the Ruby Lifeshrine
 					70061,	-- Training Wings
 				},
-				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
+				["provider"] = { "n", 187290 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 			}),
 			q(66116, {	-- The Primary Threat
@@ -279,7 +279,141 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			-- Chapter 3
-
+			q(66079, {	-- Wrathion Awaits
+				["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
+				["provider"] = { "n", 187115 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 46.1, 78.3, THE_WAKING_SHORES },
+			}),
+			q(66048, {	-- Best Plans and Intentions
+				["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
+				["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
+			}),
+			q(66078, {	-- Sharp Practice
+				["sourceQuests"] = { 66079 },	-- Wrathion Awaits
+				["provider"] = { "n", 186274 },	-- Wrathion
+				["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
+			}),
+			q(65957, {	-- No Time For Heroes
+				["sourceQuests"] = {
+					66048,	-- Best Plans and Intentions
+					66078,	-- Sharp Practice
+				},
+				["provider"] = { "n", 186274 },	-- Wrathion
+				["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(194370),	-- Drape of the Djaradin Slayer
+				},
+			}),
+			q(65956, {	-- Talon Strike
+				["sourceQuests"] = {
+					66048,	-- Best Plans and Intentions
+					66078,	-- Sharp Practice
+				},
+				["provider"] = { "n", 186274 },	-- Wrathion
+				["coord"] = { 42.5, 66.8, THE_WAKING_SHORES },
+			}),
+			q(65939, {	-- The Courage of One's Convictions
+				["sourceQuests"] = {
+					65957,	-- No Time For Heroes
+					65956,	-- Talon Strike
+				},
+				["provider"] = { "n", 186681 },	-- Wrathion
+				["coord"] = { 34.0, 61.3, THE_WAKING_SHORES },
+			}),
+			q(66044, {	-- Taking the Walls
+				["sourceQuests"] = {
+					65957,	-- No Time For Heroes
+					65956,	-- Talon Strike
+				},
+				["provider"] = { "n", 186933 },	-- Wrathion
+				["coord"] = { 29.2, 58.8, THE_WAKING_SHORES },
+			}),
+			q(66049, {	-- Obsidian Oathstone
+				["sourceQuests"] = { 66044 },	-- Taking the Walls
+				["provider"] = { "n", 196265 },	-- Wrathion
+				["coord"] = { 26.4, 58.8, THE_WAKING_SHORES },
+			}),
+			q(66055, {	-- A Shattered Past
+				["sourceQuests"] = { 66049 },	-- Obsidian Oathstone
+				["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
+				["coord"] = { 27.3, 62.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(194360),	-- League Mercenary's Belt
+				},
+			}),
+			q(66056, {	-- Forging A New Future
+				["sourceQuests"] = {
+					66055,	-- A Shattered Past
+					65939,	-- The Courage of One's Convictions
+				},
+				["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
+				["coord"] = { 27.3, 62.8, THE_WAKING_SHORES },
+			}),
+			q(66354, {	-- The Spark
+				["sourceQuests"] = { 66056 },	-- Forging A New Future
+				["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
+				["coord"] = { 24.7, 61.1, THE_WAKING_SHORES },
+			}),
+			q(66057, {	-- Restoring the Faith
+				["sourceQuests"] = { 66354 },	-- The Spark
+				["provider"] = { "n", 186493 },	-- Forgemaster Bazentus
+				["coord"] = { 24.7, 61.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(194341),	-- League Mercenary's Legguards
+					-- Crit Chapter 3
+				},
+			}),
+			-- Chapter 4
+			q(66780, {	-- Claimant to the Throne
+				["sourceQuests"] = { 66057 },	-- Restoring the Faith
+				["provider"] = { "n", 187495 },	-- Wrathion
+				["coord"] = { 24.4, 55.5, THE_WAKING_SHORES },
+			}),
+			q(66779, {	-- Heir Apparent
+				["sourceQuests"] = { 66057 },	-- Restoring the Faith
+				["provider"] = { "n", 185894 },	-- Sabellian
+				["coord"] = { 24.2, 55.9, THE_WAKING_SHORES },
+			}),
+			q(66779, {	-- Black Wagon Flight
+				["sourceQuests"] = {
+					66780,	-- Claimant to the Throne
+					66779,	-- Heir Apparent
+				},
+				["provider"] = { "n", 185894 },	-- Sabellian
+				["coord"] = { 24.2, 55.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(194364),	-- League Mercenary's Bracers
+				},
+			}),
+			q(66785, {	-- The Last Eggtender
+				["sourceQuests"] = { 66779 },	-- Black Wagon Flight
+				["provider"] = { "n", 190740 },	-- Sabellian
+				["coord"] = { 58.0, 67.3, THE_WAKING_SHORES },
+			}),
+			q(66788, {	-- Eggcited for the Future
+				["sourceQuests"] = { 66785 },	-- The Last Eggtender
+				["provider"] = { "n", 185904 },	-- Mother Elion
+				["coord"] = { 61.6, 68.7, THE_WAKING_SHORES },
+			}),
+			q(65791, {	-- Life-Binder on Duty
+				["sourceQuests"] = { 66788 },	-- Eggcited for the Future
+				["provider"] = { "n", 185904 },	-- Mother Elion
+				["coord"] = { 61.6, 68.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(194399),	-- Lifegift Ruby
+				},
+			}),
+			q(65794, {	-- A Change of Care
+				["sourceQuests"] = { 65791 },	-- Life-Binder on Duty
+				["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
+				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(194348),	-- League Mercenary's Helm
+					-- Crit Last chapter
+				},
+			}),
+			-- THE END
 
 
 
@@ -432,6 +566,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
 			}),
+			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
+				-- TODO: Available at 64?
+				["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
+				["provider"] = { "n", 191893 },	-- Zherrak
+				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(191462),	-- Hochenblume+++
+				},
+			}),
 
 
 			-- SIDE 9 --
@@ -539,9 +682,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 194801 },	-- Kolgar Flameguard
 				["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
-				["g"] = {
-					-- crit all side of story
-				},
 			}),
 			q(70240, {	-- Pain Management
 				["sourceQuests"] = { 70239 },	-- Untold Regrets
@@ -549,8 +689,18 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 57.4, 65.7, THE_WAKING_SHORES },
 				["g"] = {
 					i(198673),	-- Empty Life Pool Vial
-					-- crit all side of story
 				},
+			}),
+			q(70241, {	-- The Bitter End
+				-- TODO: Requirement to continue?? Next Day/Time/Finish Chap 3/4?
+				["sourceQuests"] = { 70240 },	-- Pain Management
+				["provider"] = { "n", 194801 },	-- Kolgar Flameguard
+				["coord"] = { 56.8, 64.5, THE_WAKING_SHORES },
+			}),
+			q(70242, {	-- Life After Life
+				["sourceQuests"] = { 70241 },	--The Bitter End
+				["provider"] = { "n", 194805 },	-- Bathoras
+				["coord"] = { 56.8, 64.4, THE_WAKING_SHORES },
 			}),
 
 			-- SIDE 11 --
@@ -562,6 +712,44 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(192465),	-- Wulferd's Award-Winning Camera
 				},
 			}),
+			q(66525, {	-- Competitive Protography
+				["sourceQuests"] = { 66524 },	-- Amateur Protography
+				["provider"] = { "n", 193740 },	-- Cataloger Wulferd
+				["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(192465),	-- Wulferd's Award-Winning Camera
+				},
+			}),
+			q(66526, {	-- Preserving the Wild
+				["sourceQuests"] = { 66524 },	-- Amateur Protography
+				["provider"] = { "n", 193954 },	-- Dervishian
+				["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+			}),
+			q(66527, {	-- Professional Protography
+				["sourceQuests"] = {
+					66525,	-- Competitive Protography
+					66526,	-- Preserving the Wild
+				},
+				["provider"] = { "n", 193740 },	-- Cataloger Wulferd
+				["coord"] = { 39.0, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(192465),	-- Wulferd's Award-Winning Camera
+				},
+			}),
+			q(66528, {	-- King Without a Crown
+				["sourceQuests"] = { 66527 },	-- Professional Protography
+				["provider"] = { "n", 193954 },	-- Dervishian
+				["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+			}),
+			q(66529, {	-- King Without a Crown
+				["sourceQuests"] = { 66528 },	-- King Without a Crown
+				["provider"] = { "n", 193954 },	-- Dervishian
+				["coord"] = { 39.1, 83.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(192465),	-- Wulferd's Award-Winning Camera
+					-- Crit Professional Protography
+				},
+			}),
 
 
 			-- SIDE 12 --
@@ -570,46 +758,149 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "o", 381670 },	-- Archivist's Request
 				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
 			}),
-			-- BO ---
-			q(65451, {	-- Practice Materials
-				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				["coord"] = { 77.3, 22.1, THE_WAKING_SHORES },
-
-				-- npc 187111 rare??
+			-- SIDE 13 --
+			q(70365, {	-- To the Dragon Isles: Jewelcrafting
+				-- TODO: Might only be Jewelcrafting
+				["sourceQuests"] = { 66057 },	-- Restoring the Faith
+				["provider"] = { "n", 192121 },	-- Falron Greygold
+				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 			}),
-			q(70648, {	-- Firava the Rekindler
-				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
-
-				-- npc 195915 rare??
-			}),
-			q(66956, {	-- Dragonhunter Igordan
-				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
-
-				-- npc 191611 rare??
-			}),
-			q(66960, {	-- Klozicc the Ascended
-				["sourceQuests"] = { 66118 },	-- Basalt Assault
-				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
-
-				-- npc 187209 rare??
-			}),
-			q(65994, {	-- Djaradin Djustice
-				["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
-					65990,	-- Deliver Whelps From Evil
-					65989,	-- Invader Djaradin
+			q(70032, {	-- Artisan's Supply: Jeweler's Specs
+			-- TODO: Available 64??
+				["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
+				["provider"] = { "n", 192121 },	-- Falron Greygold
+				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(192851),	-- Eternity Amber
 				},
-				["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
 			}),
-			q(66117, {	-- Clear the Battlefield
-				-- TODO: MIGHT NOT BE TRUE
-				["sourceQuests"] = { 66116 },	-- The Primary Threat
-				["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
-			}),
-			q(70196, {	-- Pruning the Preserve
+
+
+
+			-- SIDE 14 --
+
+			q(66612, {	-- Gills with Gall
 				--["sourceQuests"] = {  },	-- Unknown
-				["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+				["provider"] = { "n", 193304 },	-- Ru'Kroszk
+				["coord"] = { 59.1, 52.4, THE_WAKING_SHORES },
+			}),
+			q(71141, {	-- Crabtender's Adversary
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
+				["coord"] = { 58.9, 52.2, THE_WAKING_SHORES },
+			}),
+
+
+			-- SIDE 15 --
+			q(66437, {	-- A Key Element
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "i", 191904 },	-- Orb of Primal Stone
+				["coord"] = { 66.5, 57.7, THE_WAKING_SHORES },
+			}),
+			q(66435, {	-- Site Salvage
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 188735 },	-- Elementalist Taiyang
+				["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
+			}),
+			q(66612, {	-- Unearthed Troublemakers
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 188735 },	-- Elementalist Taiyang
+				["coord"] = { 66.1, 58.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(194409),	-- Earth Binding Chain
+				},
+			}),
+			q(66441, {	-- Distilled Effort
+				["sourceQuests"] = {
+					66437,	-- A Key Element
+					66435,	-- Site Salvage
+					66612,	-- Unearthed Troublemakers
+				},
+				["provider"] = { "n", 190352 },	-- Elementalist Taiyang
+				["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(194367),	-- Band of Focused Elements
+				},
+			}),
+			q(66438, {	-- Lofty Goals
+				["sourceQuests"] = {
+					66437,	-- A Key Element
+					66435,	-- Site Salvage
+					66612,	-- Unearthed Troublemakers
+				},
+				["provider"] = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
+				["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+			}),
+			q(66439, {	-- Rapid Fire Plans
+				["sourceQuests"] = {
+					66437,	-- A Key Element
+					66435,	-- Site Salvage
+					66612,	-- Unearthed Troublemakers
+				},
+				["provider"] = { "n", 188053 },	-- Acadia Chistlestone
+				["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+			}),
+			q(66442, {	-- Let's Get Theoretical
+				["sourceQuests"] = {
+					66441,	-- Distilled Effort
+					66438,	-- Lofty Goals
+					66439,	-- Rapid Fire Plans
+				},
+				["provider"] = { "n", 190352 },	-- Elementalist Taiyang
+				["coord"] = { 66.6, 56.1, THE_WAKING_SHORES },
+			}),
+			q(66447, {	-- Beyond the Barrier
+				["sourceQuests"] = { 66442 },	-- Let's Get Theoretical
+				["provider"] = { "n", 190353 },	-- Elementalist Taiyang
+				["coord"] = { 66.4, 55.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(194416),	-- Titan Lightning Generator
+					i(194371),	-- Expedition Guard's Shield
+					i(194386),	-- League Mercenary's Mace
+				},
+			}),
+
+			n(BONUS_OBJECTIVES, {
+				q(65451, {	-- Practice Materials
+					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+					["coord"] = { 77.3, 22.1, THE_WAKING_SHORES },
+
+					-- npc 187111 rare??
+				}),
+				q(70648, {	-- Firava the Rekindler
+					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+					["coord"] = { 56.9, 25.3, THE_WAKING_SHORES },
+
+					-- npc 195915 rare??
+				}),
+				q(66956, {	-- Dragonhunter Igordan
+					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
+
+					-- npc 191611 rare??
+				}),
+				q(66960, {	-- Klozicc the Ascended
+					["sourceQuests"] = { 66118 },	-- Basalt Assault
+					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+
+					-- npc 187209 rare??
+				}),
+				q(65994, {	-- Djaradin Djustice
+					["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
+						65990,	-- Deliver Whelps From Evil
+						65989,	-- Invader Djaradin
+					},
+					["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
+				}),
+				q(66117, {	-- Clear the Battlefield
+					-- TODO: MIGHT NOT BE TRUE
+					["sourceQuests"] = { 66116 },	-- The Primary Threat
+					["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
+				}),
+				q(70196, {	-- Pruning the Preserve
+					--["sourceQuests"] = {  },	-- Unknown
+					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+				}),
 			}),
 
 

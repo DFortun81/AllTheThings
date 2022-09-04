@@ -4,7 +4,7 @@
 --[[
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1199, {	-- Neltharus
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 25.5, 56.9, THE_WAKING_SHORES },
 		["maps"] = {
 
 		},

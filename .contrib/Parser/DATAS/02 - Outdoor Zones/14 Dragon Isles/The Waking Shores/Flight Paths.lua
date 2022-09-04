@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THE_WAKING_SHORES, {
 		n(FLIGHT_PATHS, {
 			fp(2807, {	-- Ruby Life Pools, The Waking Shores
