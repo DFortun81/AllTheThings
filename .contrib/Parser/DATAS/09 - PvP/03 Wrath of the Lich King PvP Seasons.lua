@@ -1064,7 +1064,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				un(REMOVED_FROM_GAME, i(42024)),	-- Hateful Gladiator's Pendant of Ascendance
 				un(REMOVED_FROM_GAME, i(42025)),	-- Hateful Gladiator's Pendant of Deliverance
 				un(REMOVED_FROM_GAME, i(42022)),	-- Hateful Gladiator's Pendant of Dominance
@@ -1073,7 +1073,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
 				un(REMOVED_FROM_GAME, i(42021)),	-- Hateful Gladiator's Pendant of Victory
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
 				un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 			}),
@@ -1736,7 +1736,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
 				i(42032),	-- Deadly Gladiator's Pendant of Deliverance
 				i(42029),	-- Deadly Gladiator's Pendant of Dominance
@@ -1745,7 +1745,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42027),	-- Deadly Gladiator's Pendant of Triumph
 				i(42028),	-- Deadly Gladiator's Pendant of Victory
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(42114),	-- Deadly Gladiator's Band of Ascendancy
 				i(42115),	-- Deadly Gladiator's Band of Victory
 			}),
@@ -1761,7 +1761,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42597)), -- Deadly Gladiator's Totem of the Third Wind
 				un(REMOVED_FROM_GAME, i(42450)), -- Deadly Gladiator's War Edge (Throw Wep)
 			}),
-			filter(53,	{	-- Trinket, see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
+			filter(TRINKET_F, {	-- see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
 				un(REMOVED_FROM_GAME, i(42123)), -- (A) Medallion of the Alliance Patch 3.0.1
 				un(REMOVED_FROM_GAME, i(42122)), -- (H) Medallion of the Horde Patch 3.0.1
 
@@ -2418,7 +2418,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(42037),	-- Furious Gladiator's Pendant of Ascendancy
 				i(42039),	-- Furious Gladiator's Pendant of Deliverance
 				i(42036),	-- Furious Gladiator's Pendant of Dominance
@@ -2428,7 +2428,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42034),	-- Furious Gladiator's Pendant of Triumph
 				i(42035)	-- Furious Gladiator's Pendant of Victory
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(42116),	-- Furious Gladiator's Band of Dominance
 				i(42117),	-- Furious Gladiator's Band of Triumph
 			}),
@@ -2444,7 +2444,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42598)), -- Furious Gladiator's Totem of the Third Wind
 				un(REMOVED_FROM_GAME, i(42451)), -- Furious Gladiator's War Edge (Throw Wep)
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(42124)), -- (A) Medallion of the Alliance
 				un(REMOVED_FROM_GAME, i(42126)), -- (H) Medallion of the Horde
 			}),
@@ -3146,7 +3146,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
 				i(42046),	-- Relentless Gladiator's Pendant of Deliverance
 				i(42043),	-- Relentless Gladiator's Pendant of Dominance
@@ -3156,7 +3156,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42041),	-- Relentless Gladiator's Pendant of Triumph
 				i(42042),	-- Relentless Gladiator's Pendant of Victory
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(42118),	-- Relentless Gladiator's Band of Ascendancy
 				i(42119),	-- Relentless Gladiator's Band of Victory
 			}),
@@ -3172,7 +3172,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42599)), -- Relentless Gladiator's Totem of the Third Wind
 				un(REMOVED_FROM_GAME, i(42483)), -- Relentless Gladiator's War Edge (Throw Wep)
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(42133)), -- Battlemaster's Fury
 				un(REMOVED_FROM_GAME, i(42134)), -- Battlemaster's Precision
 				un(REMOVED_FROM_GAME, i(42136)), -- Battlemaster's Rage
@@ -3875,7 +3875,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
 				i(51349),	-- Wrathful Gladiator's Pendant of Deliverance
 				i(51331),	-- Wrathful Gladiator's Pendant of Dominance
@@ -3885,7 +3885,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(51355),	-- Wrathful Gladiator's Pendant of Triumph
 				i(51357),	-- Wrathful Gladiator's Pendant of Victory
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(51336),	-- Wrathful Gladiator's Band of Dominance
 				i(51358),	-- Wrathful Gladiator's Band of Triumph
 			}),
@@ -3901,7 +3901,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(51501)), -- Wrathful Gladiator's Totem of the Third Wind
 				un(REMOVED_FROM_GAME, i(51535)), -- Wrathful Gladiator's War Edge (Throw Wep)
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(51377)), -- (A) Medallion of the Alliance
 				un(REMOVED_FROM_GAME, i(51378)), -- (H) Medallion of the Horde
 			}),
@@ -4009,7 +4009,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46617),	-- Relentless Gladiator's Satin Armor (Priest)
 		q(46618),	-- Relentless Gladiator's Scaled Armor (Paladin)
 		q(46619),	-- Relentless Gladiator's Silk Armor (Mage)
-		
+
 		-- PvP Arsenals
 		q(46565),	-- Savage Gladiator's Arsenal
 		q(46576),	-- Deadly Gladiator's Arsenal

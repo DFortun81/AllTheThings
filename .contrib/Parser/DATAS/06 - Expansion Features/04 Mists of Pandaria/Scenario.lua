@@ -651,7 +651,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				f(110, sharedData({ ["collectible"] = false }, {	-- Titles
+				filter(TITLES, sharedData({ ["collectible"] = false }, {
 					title(224),	-- Gob Squad Recruit <Name>
 					title(226),	-- Gob Squad Commando <Name>
 				})),

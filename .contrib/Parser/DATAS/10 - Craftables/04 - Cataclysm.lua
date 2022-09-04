@@ -18,7 +18,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 				i(52329),	-- Volatile Life
 			}),
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(58483),	-- Lifebound Alchemist Stone
 			i(68776),	-- Quicksilver Alchemist Stone
 			i(68777),	-- Vibrant Alchemist Stone
@@ -239,7 +239,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		}),
 	}),
 	prof(ENGINEERING, {
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(59594),	-- Gnomish X-Ray Scope
 			i(60223),	-- High-Powered Bolt Gun
 			i(70139),	-- Flintlocke's Woodchucker
@@ -256,11 +256,11 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			-- Trinkets
 			i(60403),	-- Elementium Dragonling*
 		}),
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(60217),	-- Elementium Toolbox*
 			i(60218),	-- Lure Master Tackle Box*
 		}),
-		filter(55, {	-- Consumable
+		filter(CONSUMABLES, {
 			i(67494, {	-- Electrostatic Condenser
 				["collectible"] = false,
 			}),
@@ -290,7 +290,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			r(64262, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 		}),
 		-- #endif
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 			-- #if AFTER WOD
 			i(43335, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
 			i(43390, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
@@ -380,7 +380,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			}),
 			i(52489),	-- Rhinestone Sunglasses
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(52307, {	-- Alicite Pendant
 				i(52312),	-- Alicite Pendant
 			}),
@@ -398,7 +398,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			i(75078),	-- Vicious Ruby Choker
 			i(75074),	-- Vicious Sapphire Necklace
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(52318),	-- Band of Blades
 			un(REMOVED_FROM_GAME, i(70072)),	-- Bloodthirsty Amberjewel Band
 			un(REMOVED_FROM_GAME, i(70073)),	-- Bloodthirsty Ruby Signet
@@ -419,11 +419,11 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(70136),			-- Royal Scribe's Satchel
 			i(70137),			-- Triple-Reinforced Mining Bag
 		}),
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(56502),	-- Scorched Leg Armor
 			i(56503),	-- Twilight Leg Armor
 			i(56517),	-- Heavy Savage Armor Kit
@@ -582,14 +582,14 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		}),
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(54443),	-- Embersilk Bag
 			i(54446),	-- Hyjal Expedition Bag
 			i(54444),	-- Illusionary Bag
 			i(70138),	-- Luxurious Silk Gem Bag
 			i(54445),	-- Otherworldly Bag
 		}),
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(54447),	-- Enchanted Spellthread
 			i(54449),	-- Ghostly Spellthread
 		}),

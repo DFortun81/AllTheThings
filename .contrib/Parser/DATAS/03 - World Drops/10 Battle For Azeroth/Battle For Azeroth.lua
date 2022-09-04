@@ -35,12 +35,12 @@ root("WorldDrops", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } 
 			i(159229),	-- Mistfall Greatcloak
 			i(163932),	-- Wolfpelt Greatcloak
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(163933),	-- Aguas' Band of Augury
 			i(163934),	-- Gnarled Mood Ring
 			i(160136),	-- Golden City Signet
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(163936),	-- 'Bygone Bee' Almanac
 			i(163935),	-- Landoi's Scrutiny
 			i(163937),	-- Leyshock's Grand Compilation

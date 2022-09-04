@@ -283,7 +283,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						f(52,   {	-- Finger
+						filter(FINGER_F, {
 							i(172124, {	-- Deep Rooted Ring
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -331,7 +331,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						f(51,   {	-- Neck
+						filter(NECK_F, {
 							i(172111, {	-- Frostwolf Advisor's Pendant
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -497,7 +497,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						f(52,   {	-- Finger
+						filter(FINGER_F, {
 							i(172124, {	-- Deep Rooted Ring
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor
@@ -559,7 +559,7 @@ root("WorldEvents",  n(FIFTEENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_
 								},
 							}),
 						}),
-						f(51,   {	-- Neck
+						filter(NECK_F, {
 							i(172113, {	-- Stormpike Sage's Pendant
 								["cost"] = {
 									{ "i", 137642, 1 },	-- 1x  Mark of Honor

@@ -607,7 +607,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				f(52,	{	-- Finger
+				filter(FINGER_F, {
 					un(REMOVED_FROM_GAME, i(84370)),	-- Dreadful Gladiator's Band of Accuracy
 					un(REMOVED_FROM_GAME, i(84369)),	-- Dreadful Gladiator's Band of Cruelty
 					un(REMOVED_FROM_GAME, i(84371)),	-- Dreadful Gladiator's Band of Meditation
@@ -616,7 +616,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(84498)),	-- Dreadful Gladiator's Signet of Accuracy
 					un(REMOVED_FROM_GAME, i(84497)),	-- Dreadful Gladiator's Signet of Cruelty
 				}),
-				f(51,	{	-- Neck
+				filter(NECK_F, {
 					un(REMOVED_FROM_GAME, i(84494)),	-- Dreadful Gladiator's Choker of Accuracy
 					un(REMOVED_FROM_GAME, i(84493)),	-- Dreadful Gladiator's Choker of Proficiency
 					un(REMOVED_FROM_GAME, i(84347)),	-- Dreadful Gladiator's Necklace of Proficiency
@@ -625,7 +625,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(84366)),	-- Dreadful Gladiator's Pendant of Cruelty
 					un(REMOVED_FROM_GAME, i(84367)),	-- Dreadful Gladiator's Pendant of Meditation
 				}),
-				f(53,	{	-- Trinket
+				filter(TRINKET_F, {
 					un(REMOVED_FROM_GAME, i(84344)),	-- Dreadful Gladiator's Badge of Conquest
 					un(REMOVED_FROM_GAME, i(84488)),	-- Dreadful Gladiator's Badge of Dominance
 					un(REMOVED_FROM_GAME, i(84490)),	-- Dreadful Gladiator's Badge of Victory
@@ -1548,7 +1548,7 @@ _.PVP =
 						un(NEVER_IMPLEMENTED, i(97842)),	-- Malevolent Gladiator's Treads of Cruelty
 						un(NEVER_IMPLEMENTED, i(97932)),	-- Malevolent Gladiator's Treads of Cruelty
 					}),
-					f(51,	{	-- Neck
+					filter(NECK_F, {
 						-- From Sha of Anger
 						i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 						i(84891),	-- Malevolent Gladiator's Choker of Proficiency
@@ -1561,7 +1561,7 @@ _.PVP =
 						un(NEVER_IMPLEMENTED, i(97924)),	-- Malevolent Gladiator's Pendant of Cruelty
 						un(NEVER_IMPLEMENTED, i(97834)),	-- Malevolent Gladiator's Pendant of Cruelty
 					}),
-					f(52,	{	-- Finger
+					filter(FINGER_F, {
 						-- From Sha of Anger
 						i(84824),	-- Malevolent Gladiator's Band of Accuracy
 						i(84823),	-- Malevolent Gladiator's Band of Cruelty
@@ -1576,7 +1576,7 @@ _.PVP =
 						un(NEVER_IMPLEMENTED, i(97843)),	-- Malevolent Gladiator's Band of Cruelty
 						un(NEVER_IMPLEMENTED, i(97528)),	-- Malevolent Gladiator's Band of Cruelty
 					}),
-					f(53,	{	-- Trinket
+					filter(TRINKET_F, {
 						un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
 						un(REMOVED_FROM_GAME, i(84940)),	-- Malevolent Gladiator's Badge of Dominance
 						un(REMOVED_FROM_GAME, i(84942)),	-- Malevolent Gladiator's Badge of Victory
@@ -2324,7 +2324,7 @@ _.PVP =
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
 					}),
-					f(52,	{	-- Finger
+					filter(FINGER_F, {
 						un(REMOVED_FROM_GAME, i(91492)),	-- Malevolent Gladiator's Band of Accuracy
 						un(REMOVED_FROM_GAME, i(91491)),	-- Malevolent Gladiator's Band of Cruelty
 						un(REMOVED_FROM_GAME, i(91493)),	-- Malevolent Gladiator's Band of Meditation
@@ -2333,7 +2333,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91770)),	-- Malevolent Gladiator's Signet of Accuracy
 						un(REMOVED_FROM_GAME, i(91769)),	-- Malevolent Gladiator's Signet of Cruelty
 					}),
-					f(51,	{	-- Neck
+					filter(NECK_F, {
 						un(REMOVED_FROM_GAME, i(91767)),	-- Malevolent Gladiator's Choker of Accuracy
 						un(REMOVED_FROM_GAME, i(91766)),	-- Malevolent Gladiator's Choker of Proficiency
 						un(REMOVED_FROM_GAME, i(91455)),	-- Malevolent Gladiator's Necklace of Proficiency
@@ -2342,7 +2342,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91488)),	-- Malevolent Gladiator's Pendant of Cruelty
 						un(REMOVED_FROM_GAME, i(91490)),	-- Malevolent Gladiator's Pendant of Meditation
 					}),
-					f(53,	{	-- Trinket
+					filter(TRINKET_F, {
 						un(REMOVED_FROM_GAME, i(91452)),	-- Malevolent Gladiator's Badge of Conquest
 						un(REMOVED_FROM_GAME, i(91753)),	-- Malevolent Gladiator's Badge of Dominance
 						un(REMOVED_FROM_GAME, i(91763)),	-- Malevolent Gladiator's Badge of Victory
@@ -3230,7 +3230,7 @@ _.PVP =
 							i(91303),	-- Tyrannical Gladiator's Warboots of Alacrity
 							i(91301),	-- Tyrannical Gladiator's Warboots of Cruelty
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							-- From Nalak
 							i(91414),	-- Tyrannical Gladiator's Choker of Accuracy
 							i(91413),	-- Tyrannical Gladiator's Choker of Proficiency
@@ -3240,7 +3240,7 @@ _.PVP =
 							i(91135),	-- Tyrannical Gladiator's Pendant of Cruelty
 							i(91137),	-- Tyrannical Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							-- From Nalak
 							i(91139),	-- Tyrannical Gladiator's Band of Accuracy
 							i(91138),	-- Tyrannical Gladiator's Band of Cruelty
@@ -3250,7 +3250,7 @@ _.PVP =
 							i(91417),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(91099)),	-- Tyrannical Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(91400)),	-- Tyrannical Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(91410)),	-- Tyrannical Gladiator's Badge of Victory
@@ -3793,7 +3793,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(REMOVED_FROM_GAME, i(99947)),	-- Tyrannical Gladiator's Choker of Accuracy
 							un(REMOVED_FROM_GAME, i(99946)),	-- Tyrannical Gladiator's Choker of Proficiency
 							un(REMOVED_FROM_GAME, i(99775)),	-- Tyrannical Gladiator's Necklace of Proficiency
@@ -3802,7 +3802,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(99797)),	-- Tyrannical Gladiator's Pendant of Cruelty
 							un(REMOVED_FROM_GAME, i(99799)),	-- Tyrannical Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(REMOVED_FROM_GAME, i(99801)),	-- Tyrannical Gladiator's Band of Accuracy
 							un(REMOVED_FROM_GAME, i(99800)),	-- Tyrannical Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(99802)),	-- Tyrannical Gladiator's Band of Meditation
@@ -3811,7 +3811,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(99950)),	-- Tyrannical Gladiator's Signet of Accuracy
 							un(REMOVED_FROM_GAME, i(99949)),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(99772)),	-- Tyrannical Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(99937)),	-- Tyrannical Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(99943)),	-- Tyrannical Gladiator's Badge of Victory
@@ -4695,7 +4695,7 @@ _.PVP =
 							i(94461),	-- Tyrannical Gladiator's Warboots of Alacrity
 							i(94414),	-- Tyrannical Gladiator's Warboots of Cruelty
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							-- From Nalak
 							i(94354),	-- Tyrannical Gladiator's Choker of Accuracy
 							i(94465),	-- Tyrannical Gladiator's Choker of Proficiency
@@ -4705,7 +4705,7 @@ _.PVP =
 							i(94489),	-- Tyrannical Gladiator's Pendant of Cruelty
 							i(94452),	-- Tyrannical Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							-- From Nalak
 							i(94363),	-- Tyrannical Gladiator's Band of Accuracy
 							i(94390),	-- Tyrannical Gladiator's Band of Cruelty
@@ -4715,7 +4715,7 @@ _.PVP =
 							i(94462),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(94373)),	-- Tyrannical Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(94346)),	-- Tyrannical Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(94349)),	-- Tyrannical Gladiator's Badge of Victory
@@ -5258,7 +5258,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(REMOVED_FROM_GAME, i(100024)),	-- Tyrannical Gladiator's Choker of Accuracy
 							un(REMOVED_FROM_GAME, i(100135)),	-- Tyrannical Gladiator's Choker of Proficiency
 							un(REMOVED_FROM_GAME, i(100064)),	-- Tyrannical Gladiator's Necklace of Proficiency
@@ -5267,7 +5267,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100159)),	-- Tyrannical Gladiator's Pendant of Cruelty
 							un(REMOVED_FROM_GAME, i(100122)),	-- Tyrannical Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(REMOVED_FROM_GAME, i(100033)),	-- Tyrannical Gladiator's Band of Accuracy
 							un(REMOVED_FROM_GAME, i(100060)),	-- Tyrannical Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(100144)),	-- Tyrannical Gladiator's Band of Meditation
@@ -5276,7 +5276,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(100132)),	-- Tyrannical Gladiator's Signet of Accuracy
 							un(REMOVED_FROM_GAME, i(100087)),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(100043)),	-- Tyrannical Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(100016)),	-- Tyrannical Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(100019)),	-- Tyrannical Gladiator's Badge of Victory
@@ -6375,7 +6375,7 @@ _.PVP =
 							i(100399),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100397),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(BLACK_MARKET, i(100504)),	-- Grievous Gladiator's Choker of Accuracy
 							un(BLACK_MARKET, i(100503)),	-- Grievous Gladiator's Choker of Proficiency
 							un(BLACK_MARKET, i(100198)),	-- Grievous Gladiator's Necklace of Proficiency
@@ -6384,7 +6384,7 @@ _.PVP =
 							un(BLACK_MARKET, i(100231)),	-- Grievous Gladiator's Pendant of Cruelty
 							un(BLACK_MARKET, i(100233)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(BLACK_MARKET, i(100235)),	-- Grievous Gladiator's Band of Accuracy
 							un(BLACK_MARKET, i(100234)),	-- Grievous Gladiator's Band of Cruelty
 							un(BLACK_MARKET, i(100236)),	-- Grievous Gladiator's Band of Meditation
@@ -6393,7 +6393,7 @@ _.PVP =
 							un(BLACK_MARKET, i(100507)),	-- Grievous Gladiator's Signet of Accuracy
 							un(BLACK_MARKET, i(100506)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(100195)),	-- Grievous Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(100490)),	-- Grievous Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(100500)),	-- Grievous Gladiator's Badge of Victory
@@ -6945,7 +6945,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(REMOVED_FROM_GAME, i(103318)),	-- Grievous Gladiator's Choker of Accuracy
 							un(REMOVED_FROM_GAME, i(103317)),	-- Grievous Gladiator's Choker of Proficiency
 							un(REMOVED_FROM_GAME, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency
@@ -6954,7 +6954,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(103170)),	-- Grievous Gladiator's Pendant of Cruelty
 							un(REMOVED_FROM_GAME, i(103172)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(REMOVED_FROM_GAME, i(103174)),	-- Grievous Gladiator's Band of Accuracy
 							un(REMOVED_FROM_GAME, i(103173)),	-- Grievous Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(103175)),	-- Grievous Gladiator's Band of Meditation
@@ -6963,7 +6963,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(103321)),	-- Grievous Gladiator's Signet of Accuracy
 							un(REMOVED_FROM_GAME, i(103320)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(103145)),	-- Grievous Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(103308)),	-- Grievous Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(103314)),	-- Grievous Gladiator's Badge of Victory
@@ -7868,7 +7868,7 @@ _.PVP =
 							i(100691),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100644),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(BLACK_MARKET, i(100584)),	-- Grievous Gladiator's Choker of Accuracy
 							un(BLACK_MARKET, i(100695)),	-- Grievous Gladiator's Choker of Proficiency
 							un(BLACK_MARKET, i(100624)),	-- Grievous Gladiator's Necklace of Proficiency
@@ -7877,7 +7877,7 @@ _.PVP =
 							un(BLACK_MARKET, i(100719)),	-- Grievous Gladiator's Pendant of Cruelty
 							un(BLACK_MARKET, i(100682)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(BLACK_MARKET, i(100593)),	-- Grievous Gladiator's Band of Accuracy
 							un(BLACK_MARKET, i(100620)),	-- Grievous Gladiator's Band of Cruelty
 							un(BLACK_MARKET, i(100704)),	-- Grievous Gladiator's Band of Meditation
@@ -7886,7 +7886,7 @@ _.PVP =
 							un(BLACK_MARKET, i(100692)),	-- Grievous Gladiator's Signet of Accuracy
 							un(BLACK_MARKET, i(100647)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(100603)),	-- Grievous Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(100576)),	-- Grievous Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(100579)),	-- Grievous Gladiator's Badge of Victory
@@ -8438,7 +8438,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							un(REMOVED_FROM_GAME, i(102838)),	-- Grievous Gladiator's Choker of Accuracy
 							un(REMOVED_FROM_GAME, i(102946)),	-- Grievous Gladiator's Choker of Proficiency
 							un(REMOVED_FROM_GAME, i(102875)),	-- Grievous Gladiator's Necklace of Proficiency
@@ -8447,7 +8447,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(102970)),	-- Grievous Gladiator's Pendant of Cruelty
 							un(REMOVED_FROM_GAME, i(102933)),	-- Grievous Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							un(REMOVED_FROM_GAME, i(102846)),	-- Grievous Gladiator's Band of Accuracy
 							un(REMOVED_FROM_GAME, i(102871)),	-- Grievous Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(102955)),	-- Grievous Gladiator's Band of Meditation
@@ -8456,7 +8456,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(102943)),	-- Grievous Gladiator's Signet of Accuracy
 							un(REMOVED_FROM_GAME, i(102898)),	-- Grievous Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(102856)),	-- Grievous Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(102830)),	-- Grievous Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(102833)),	-- Grievous Gladiator's Badge of Victory
@@ -9362,7 +9362,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							-- From Celestials
 							i(102641),	-- Prideful Gladiator's Choker of Accuracy
 							i(102749),	-- Prideful Gladiator's Choker of Proficiency
@@ -9372,7 +9372,7 @@ _.PVP =
 							i(102773),	-- Prideful Gladiator's Pendant of Cruelty
 							i(102736),	-- Prideful Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							-- From Celestials
 							i(102649),	-- Prideful Gladiator's Band of Accuracy
 							i(102674),	-- Prideful Gladiator's Band of Cruelty
@@ -9382,7 +9382,7 @@ _.PVP =
 							i(102746),	-- Prideful Gladiator's Signet of Accuracy
 							i(102701),	-- Prideful Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(102659)),	-- Prideful Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(102633)),	-- Prideful Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(102636)),	-- Prideful Gladiator's Badge of Victory
@@ -10101,7 +10101,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
 						}),
-						f(51,	{	-- Neck
+						filter(NECK_F, {
 							-- From Celestials
 							i(103515),	-- Prideful Gladiator's Choker of Accuracy
 							i(103514),	-- Prideful Gladiator's Choker of Proficiency
@@ -10111,7 +10111,7 @@ _.PVP =
 							i(103367),	-- Prideful Gladiator's Pendant of Cruelty
 							i(103369),	-- Prideful Gladiator's Pendant of Meditation
 						}),
-						f(52,	{	-- Finger
+						filter(FINGER_F, {
 							-- From Celestials
 							i(103371),	-- Prideful Gladiator's Band of Accuracy
 							i(103370),	-- Prideful Gladiator's Band of Cruelty
@@ -10121,7 +10121,7 @@ _.PVP =
 							i(103518),	-- Prideful Gladiator's Signet of Accuracy
 							i(103517),	-- Prideful Gladiator's Signet of Cruelty
 						}),
-						f(53,	{	-- Trinket
+						filter(TRINKET_F, {
 							un(REMOVED_FROM_GAME, i(103342)),	-- Prideful Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(103505)),	-- Prideful Gladiator's Badge of Dominance
 							un(REMOVED_FROM_GAME, i(103511)),	-- Prideful Gladiator's Badge of Victory
@@ -10420,7 +10420,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45966),	-- Malevolent Gladiator's Ringmail Armor (Shaman)
 		q(45967),	-- Malevolent Gladiator's Dreadplate Armor (Death Knight)
 		q(45968),	-- Malevolent Gladiator's Chain Armor (Hunter)
-		
+
 		-- PvP Arsenals
 		q(46003),	-- Malevolent Gladiator's Arsenal (Alliance)
 		--q(?????),	-- Malevolent Gladiator's Arsenal (Horde) -- TODO (maybe same ID as alliance?)
@@ -10470,14 +10470,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(84725),	-- Dreadful Gladiator's Staff
 				i(84703),	-- Dreadful Gladiator's Touch of Defeat
 			}),
-			f(52, {	-- Finger
+			filter(FINGER_F, {
 				i(97527),	-- Dreadful Gladiator's Band of Meditation
 				i(97529),	-- Dreadful Gladiator's Band of Meditation
 			}),
 			n(BACK, {
 				i(97518),	-- Dreadful Gladiator's Drape of Prowess
 			}),
-			f(51, {	-- Neck
+			filter(NECK_F, {
 				i(97516),	-- Dreadful Gladiator's Pendant of Meditation
 			}),
 			n(WEAPONS, {
@@ -10623,17 +10623,17 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97842),	-- Malevolent Gladiator's Treads of Cruelty
 				i(97932),	-- Malevolent Gladiator's Treads of Cruelty
 			}),
-			f(51, {	-- Neck
+			filter(NECK_F, {
 				i(97924),	-- Malevolent Gladiator's Pendant of Cruelty
 				i(97834),	-- Malevolent Gladiator's Pendant of Cruelty
 			}),
-			f(52, {	-- Finger
+			filter(FINGER_F, {
 				i(97844),	-- Malevolent Gladiator's Band of Accuracy
 				i(97933),	-- Malevolent Gladiator's Band of Cruelty
 				i(97843),	-- Malevolent Gladiator's Band of Cruelty
 				i(97528),	-- Malevolent Gladiator's Band of Cruelty
 			}),
-			f(53, {	-- Trinket
+			filter(TRINKET_F, {
 				i(97531),	-- Malevolent Gladiator's Badge of Dominance
 				i(97532),	-- Malevolent Gladiator's Badge of Dominance
 				i(97936),	-- Malevolent Gladiator's Badge of Dominance
@@ -10675,7 +10675,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			cl(SHAMAN, {
 				i(91799),	-- Tyrannical Gladiator's Mail Leggings
 			}),
-			f(53, {	-- Trinket
+			filter(TRINKET_F, {
 				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
 				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
 				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)

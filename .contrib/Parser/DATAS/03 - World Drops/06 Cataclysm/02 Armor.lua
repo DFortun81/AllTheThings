@@ -16,7 +16,7 @@ _.WorldDrops =
 				i(67123),	-- Sinman's Helm of Succor
 				i(67147),	-- Je'Tze's Sparkling Tiara
 			}),
-			f(51,   {	-- Neck
+			filter(NECK_F, {
 				i(67040),	-- Amulet of the Howling Watch
 				i(67138),	-- Buc-Zakai Choker
 				i(67130),	-- Dorian's Lost Necklace
@@ -112,7 +112,7 @@ _.WorldDrops =
 				i(67032),	-- Firm-Set Treads
 				i(67113),	-- Medic's Bloodstained Sandals
 			}),
-			f(52,   {	-- Finger
+			filter(FINGER_F, {
 				i(66987),	-- Band of the Virtuous
 				i(67139),	-- Blauvelt's Family Crest
 				i(67136),	-- Gilnean Ring of Ruination
@@ -126,7 +126,7 @@ _.WorldDrops =
 				i(55418),	-- Sishir Ring
 				i(55417),	-- Swamplight Ring
 			}),
-			f(53,   {	-- Trinket
+			filter(TRINKET_F, {
 				i(67037),	-- Binding Promise
 				i(66879),	-- Bottled Lightning
 				i(67118),	-- Electrospark Heartstarter

@@ -1844,21 +1844,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(80968),	-- Scavenger's Cloak
 				i(80969),	-- Scavenger's Manteau
 			}),
-			f(51, {	-- Neck
+			filter(NECK_F, {
 				i(81049),	-- Scavenger's Necklace
 				i(81050),	-- Scavenger's Choker
 				i(81051),	-- Scavenger's Locket
 				i(81052),	-- Scavenger's Amulet
 				i(81053),	-- Scavenger's Pendant
 			}),
-			f(52, {	-- Finger
+			filter(FINGER_F, {
 				i(80955),	-- Scavenger's Loop
 				i(80956),	-- Scavenger's Ring
 				i(80957),	-- Scavenger's Band
 				i(80958),	-- Scavenger's Seal
 				i(80959),	-- Scavenger's Signet
 			}),
-			f(53, {	-- Trinket
+			filter(TRINKET_F, {
 				i(80960),	-- Scavenger's Medal
 				i(80961),	-- Scavenger's Emblem
 				i(80962),	-- Scavenger's Medallion

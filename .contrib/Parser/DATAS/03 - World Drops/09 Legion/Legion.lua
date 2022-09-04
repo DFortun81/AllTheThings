@@ -35,10 +35,10 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 				["bonusID"] = 1812,
 			}),
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(141588),	-- Talisman of Jaimil Lightheart
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(141581),	-- Demar's Band of Amore
 			i(141582),	-- Fran's Intractable Loop
 			i(141583),	-- Sameed's Vision Ring
@@ -51,7 +51,7 @@ root("WorldDrops", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3"
 			i(139065),	-- Dreamwalker's Band
 			i(139103),	-- An'she's Band
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(141584),	-- Eyasu's Mulligan
 			i(141585),	-- Six-feater Fan
 		}),

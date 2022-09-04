@@ -4,7 +4,7 @@
 
 root("PVP", pvp(n(BATTLEGROUNDS, {
 	n(REWARDS, {
-		f(55, {	-- Consumables
+		filter(CONSUMABLES, {
 			["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
 			["g"] = {
 				i(138478),	-- Feast of Ribs

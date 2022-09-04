@@ -598,7 +598,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 		-- #if AFTER WOD
 		i(42743, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
 		i(43316, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Aquatic Form
@@ -661,7 +661,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 		category(868, {	-- Reagents
 			i(31079),	-- Mercurial Adamantite
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			applyclassicphase(TBC_PHASE_FIVE, i(34360)),	-- Amulet of Flowing Life
 			i(24114),	-- Braided Eternium Chain
 			i(24121),	-- Chain of the Twilight Owl
@@ -679,7 +679,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			i(24077),	-- Thick Adamantite Necklace
 			i(24106),	-- Thick Felsteel Necklace
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(24086),	-- Arcane Khorium Band
 			i(24076),	-- Azure Moonstone Ring
 			i(21779),	-- Band of Natural Fire

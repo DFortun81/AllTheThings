@@ -4,7 +4,7 @@
 
 root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_AREANA, {
-		filter(110, bubbleDown({ ["collectible"] = false, },{
+		filter(TITLES, bubbleDown({ ["collectible"] = false, },{
 			title(387),	-- <Name> the Elite Death Knight
 			title(388),	-- <Name> the Elite Demon Hunter
 			title(389),	-- <Name> the Elite Druid

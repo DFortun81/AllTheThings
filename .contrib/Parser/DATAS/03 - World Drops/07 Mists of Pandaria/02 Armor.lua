@@ -16,7 +16,7 @@ _.WorldDrops =
 				i(87456),	-- Hexu's Amplifying Helm
 				i(90573),	-- Wang's Unshakable Smile
 			}),
-			f(51,   {	-- Neck
+			filter(NECK_F, {
 				i(82225),	-- Bejeweled Amulet
 				i(87473),	-- Necklace of the Eternal Watch
 				i(90583),	-- Don Guerrero's Glorious Choker
@@ -108,7 +108,7 @@ _.WorldDrops =
 				i(87436),	-- Sollerets of Immovability
 				i(87695),	-- Treads of Edward the Odd
 			}),
-			f(52,   {	-- Finger
+			filter(FINGER_F, {
 				i(87437),	-- Anaxo's Multi-Layered Seal
 				i(87440),	-- Band of Pricking Needles
 				i(82228),	-- Bejeweled Ring
@@ -120,7 +120,7 @@ _.WorldDrops =
 				i(90591),	-- Ring of the Shipwrecked Prince
 				i(82118),	-- Shamanic Ring
 			}),
-			f(53,   {	-- Trinket
+			filter(TRINKET_F, {
 				i(87496),	-- Daelo's Final Words
 				i(87497),	-- Core of Decency
 				i(87500),	-- Brooch of Munificent Deeds

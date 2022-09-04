@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root("WorldDrops", tier(CLASSIC_TIER, {
-	filter(3, {	-- Cloaks
+	filter(CLOAKS, {
 		i(9938),	-- Abjurer's Cloak
 		i(10258),	-- Adventurer's Cape
 		i(13005),	-- Amy's Blanket
@@ -209,7 +209,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(15371),	-- Wolf Rider's Cloak
 		i(15333),	-- Wrangler's Cloak
 	}),
-	filter(4, {	-- Cloth
+	filter(CLOTH, {
 		i(9937),	-- Abjurer's Bands
 		i(9936),	-- Abjurer's Boots
 		i(9939),	-- Abjurer's Gloves
@@ -773,7 +773,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(14427),	-- Windchaser Wraps
 		i(13101),	-- Wolfrunner Shoes
 	}),
-	filter(5, {	-- Leather
+	filter(LEATHER, {
 		i(10261),	-- Adventurer's Bandana
 		i(10259),	-- Adventurer's Belt
 		i(10257),	-- Adventurer's Boots
@@ -1283,7 +1283,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(15337),	-- Wrangler's Wraps
 		i(15331),	-- Wrangler's Wristbands
 	}),
-	filter(6, {	-- Mail
+	filter(MAIL, {
 		i(15606),	-- Ancient Belt
 		i(15601),	-- Ancient Chestpiece
 		i(15602),	-- Ancient Crown
@@ -1821,7 +1821,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(13130),	-- Windrunner Legguards
 		i(13012),	-- Yorgen Bracers
 	}),
-	filter(7, {	-- Plate
+	filter(PLATE, {
 		i(8312),	-- Alabaster Breastplate
 		i(8314),	-- Alabaster Plate Gauntlets
 		i(8315),	-- Alabaster Plate Girdle
@@ -2626,7 +2626,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(7554),	-- Willow Branch
 		i(15965),	-- Windchaser Orb
 	}),
-	filter(51, {	-- Neck
+	filter(NECK_F, {
 		i(12044),	-- Arctic Pendant
 		i(12028),	-- Basalt Necklace
 		i(12019),	-- Cerulean Talisman
@@ -2669,7 +2669,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(12024),	-- Vanadium Talisman
 		i(12027),	-- Vermilion Necklace
 	}),
-	filter(52, {	-- Finger
+	filter(FINGER_F, {
 		i(11968),	-- Amber Hoop
 		i(11971),	-- Amethyst Band
 		i(11974),	-- Aquamarine Ring
@@ -2750,7 +2750,7 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		i(5011),	-- Welken Ring
 		i(11967),	-- Zircon Band
 	}),
-	filter(53, {	-- Trinkets
+	filter(TRINKET_F, {
 		i(1713),	-- Ankh of Life
 		i(2802),	-- Blazing Emblem
 		i(833),		-- Lifestone
@@ -2763,13 +2763,13 @@ root("WorldDrops", tier(CLASSIC_TIER, {
 		}),
 		i(11302),	-- Uther's Strength
 	}),
-	filter(113, {	-- Bags
+	filter(BAGS, {
 		i(5765),	-- Black Silk Pack
 		i(856),		-- Blue Leather Bag
 		i(4498),	-- Brown Leather Satchel
 		i(4500),	-- Traveler's Backpack
 	}),
-	filter(50, {	-- Miscellaneous
+	filter(MISC, {
 		i(17962),	-- Blue Sack of Gems
 		i(17964),	-- Gray Sack of Gems
 		i(17963),	-- Green Sack of Gems

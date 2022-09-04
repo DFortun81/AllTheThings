@@ -12534,7 +12534,7 @@ root(ROOTS.HiddenQuestTriggers, {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(SEASON_FIERCE, {
-			f(51, {	-- Neck
+			filter(NECK_F, {
 				i(153484),	-- Fierce Combatant's Necklace
 			}),
 		}),

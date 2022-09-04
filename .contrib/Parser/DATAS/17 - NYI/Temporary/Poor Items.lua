@@ -1166,12 +1166,12 @@ local f = root("PoorQualityItems", {
 			i(7997),	-- Red Defias Mask
 			i(151397),	-- Sweaty Wristbands
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(67388),	-- String of Alligator Teeth
 			i(143668),	-- Tarnished Mithril Chain of Heroism
 			i(20422),	-- Twilight Cultist Medallion of Station
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(180352),	-- Cracked Inquisitor's Band
 			i(40687),	-- Flores' Lost Seal of Approval
 			i(180350),	-- Simple Stone Loop
@@ -1179,7 +1179,7 @@ local f = root("PoorQualityItems", {
 			i(20451),	-- Twilight Cultist Ring of Lordship
 			i(180351),	-- Worn Ring of Piety
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(184268),	-- Gladiator's Emblem
 			i(111305),	-- Gladiator's Emblem
 			i(184269),	-- Gladiator's Medallion
