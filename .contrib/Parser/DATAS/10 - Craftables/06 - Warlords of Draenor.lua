@@ -196,7 +196,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(INSCRIPTION, {
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(163294, {	-- Darkmoon Card of Draenor
 				i(112303, {	-- Iron Deck
 					WOD_CRAFTED_ITEM(112319),	-- Knight's Badge

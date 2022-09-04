@@ -1328,7 +1328,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(43342, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
 			i(43371, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
 			i(43379, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Blurred Speed
-			r(58326, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Pocket
+			i(43343, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Pocket
 			-- #if BEFORE WOD
 			i(43390, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 			-- #endif

@@ -608,7 +608,7 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 		i(43378, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Safe Fall
 		-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			i(44317, {	-- Greater Darkmoon Card
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings

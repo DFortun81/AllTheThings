@@ -486,7 +486,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(45622, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 			-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
 				i(79299, {["f"] = 55}),    -- Ace of Crane
 				i(79300, {["f"] = 55}),    -- 2 of Crane

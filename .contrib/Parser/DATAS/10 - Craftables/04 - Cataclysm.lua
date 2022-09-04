@@ -300,7 +300,7 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 			i(45776, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 			-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(86615, {	-- Darkmoon Card of Destruction
 				i(61988, {["f"] = 55}),    -- Ace of embers
 				i(61989, {["f"] = 55}),    -- 2 of embers

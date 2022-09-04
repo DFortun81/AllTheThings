@@ -361,7 +361,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			}),
 			-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(59504, {	-- Darkmoon Card of the North
 				i(44260, {["f"] = 55}),    -- Ace of Prisms
 				i(44261, {["f"] = 55}),    -- 2 of Prisms

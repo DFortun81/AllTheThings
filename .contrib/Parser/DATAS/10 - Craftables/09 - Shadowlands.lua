@@ -346,7 +346,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
 			}),
 		})),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(324035, {	-- Darkmoon Card of Voracity
 				i(173087),	-- Darkmoon Deck: Voracity
 			}),

@@ -331,7 +331,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 				["classes"] = { DRUID },
 			}),
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
 				sp(191654, {	-- Dominion Deck
 					i(128705),	-- Darkmoon Deck: Dominion

@@ -578,7 +578,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		sp(269065, {	-- Scroll of Unlocking
 			i(159825),	-- Scroll of Unlocking
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(278527, {	-- Darkmoon Card of War
 				sp(267087, {	-- Blockades Deck
 					i(159128),	-- Darkmoon Deck: Blockades
