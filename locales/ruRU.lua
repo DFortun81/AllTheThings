@@ -1287,6 +1287,7 @@ for key,value in pairs({
 	[195517] = "Прислужница Элуны",	-- Elune's Handmaiden
 	[195600] = "Тлеющий камень",	-- Smouldering Stone
 	[195642] = "Силовой камень наги",	-- Naga Power Stone
+	[195665] = "Сундук с наградами Серебряного Авангарда",	-- Argent Crusade Tribute Chest
 	[195676] = "Переговорное устройство секретной лаборатории",	-- Secret Lab Squakbox
 	[196393] = "Разбитая реликвия",	-- Broken Relic
 	[196832] = "Верхний гадальный камень",	-- Upper Scrying Stone

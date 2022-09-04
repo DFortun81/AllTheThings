@@ -1298,6 +1298,7 @@ for key,value in pairs({
 	[195517] = "Criada de Eluna",	-- Elune's Handmaiden
 	[195600] = "Pedra Fumegante",	-- Smouldering Stone
 	[195642] = "Pedra do Poder Naga",	-- Naga Power Stone
+	--TODO: [195665] = "Argent Crusade Tribute Chest",	-- Argent Crusade Tribute Chest
 	[195676] = "Tagarela do Laboratório Secreto",	-- Secret Lab Squakbox
 	[196393] = "Relíquia Quebrada",	-- Broken Relic
 	[196832] = "Pedra Divinatória Superior",	-- Upper Scrying Stone
