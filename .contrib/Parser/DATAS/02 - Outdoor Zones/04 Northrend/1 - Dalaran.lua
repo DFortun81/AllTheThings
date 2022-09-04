@@ -4041,57 +4041,12 @@ root("Zones", {
 									i(41314),	-- Hateful Gladiator's Wyrmhide Robes
 									i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
 									i(40743),	-- Kyzoc's Ground Stompers
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(40634, {	-- Legplates of the Lost Conqueror (Paladin, Priest, Warlock)
-										i(40448),	-- Valorous Leggings of Faith
-										i(40457),	-- Valorous Pants of Faith
-										i(40422),	-- Valorous Plagueheart Leggings
-										i(40572),	-- Valorous Redemption Greaves
-										i(40583),	-- Valorous Redemption Legguards
-										i(40577),	-- Valorous Redemption Legplates
-									}),
-									i(40635, {	-- Legplates of the Lost Protector (Hunter, Shaman, Warrior)
-										i(40506),	-- Valorous Crypstalker Legguards
-										i(40547),	-- Valorous Dreadnaught Legguards
-										i(40529),	-- Valorous Dreadnaught Legplates
-										i(40517),	-- Valorous Earthshatter Kilt
-										i(40512),	-- Valorous Earthshatter Legguards
-										i(40522),	-- Valorous Earthshatter War-Kilt
-									}),
-									i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40500),	-- Valorous Bonescythe Legplates
-										i(40462),	-- Valorous Dreamwalker Leggings
-										i(40493),	-- Valorous Dreamwalker Legguards
-										i(40468),	-- Valorous Dreamwalker Trousers
-										i(40417),	-- Valorous Frostfire Leggings
-										i(40567),	-- Valorous Scourgeborne Legguards
-										i(40556),	-- Valorous Scourgeborne Legplates
-									}),
-									i(40637, {	-- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
-										i(40459),	-- Valorous Mantle of Faith
-										i(40450),	-- Valorous Shoulderpads of Faith
-										i(40424),	-- Valorous Plagueheart Shoulderpads
-										i(40584),	-- Valorous Redemption Shoulderguards
-										i(40578),	-- Valorous Redemption Shoulderplates
-										i(40573),	-- Valorous Redemption Spaulders
-									}),
-									i(40638, {	-- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
-										i(40507),	-- Valorous Crypstalker Spaulders
-										i(40548),	-- Valorous Dreadnaught Pauldrons
-										i(40530),	-- Valorous Dreadnaught Shoulderplates
-										i(40524),	-- Valorous Earthshatter Shoulderguards
-										i(40518),	-- Valorous Earthshatter Shoulderpads
-										i(40513),	-- Valorous Earthshatter Spaulders
-									}),
-									i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40502),	-- Valorous Bonescythe Pauldrons
-										i(40470),	-- Valorous Dreamwalker Mantle
-										i(40494),	-- Valorous Dreamwalker Shoulderpads
-										i(40465),	-- Valorous Dreamwalker Spaulders
-										i(40419),	-- Valorous Frostfire Shoulderpads
-										i(40568),	-- Valorous Scourgeborne Pauldrons
-										i(40557),	-- Valorous Scourgeborne Shoulderplates
-									}),
+									i(40634),	-- Legplates of the Lost Conqueror
+									i(40635),	-- Legplates of the Lost Protector
+									i(40636),	-- Legplates of the Lost Vanquisher
+									i(40637),	-- Mantle of the Lost Conqueror
+									i(40638),	-- Mantle of the Lost Protector
+									i(40639),	-- Mantle of the Lost Vanquisher
 									i(40746),	-- Pack-Ice Striders
 									i(40737),	-- Pigmented Clan Bindings
 									i(40722),	-- Platinum Mesh Cloak
@@ -4118,58 +4073,13 @@ root("Zones", {
 									i(45824),	-- Belt of the Singing Blade
 									i(45829),	-- Belt of the Twilight Assassin
 									i(45833),	-- Bladebreaker Gauntlets
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(45632, {	-- Breastplate of the Wayward Conqueror
-										i(46154),	-- Conqueror's Aegis Battleplate
-										i(46173),	-- Conqueror's Aegis Breastplate
-										i(46178),	-- Conqueror's Aegis Tunic
-										i(46137),	-- Conqueror's Deathbringer Robe
-										i(46168),	-- Conqueror's Raiments of Sanctification
-										i(46193),	-- Conqueror's Robe of Sanctification
-									}),
-									i(45633, {	-- Breastplate of the Wayward Protector
-										i(46141),	-- Conqueror's Scourgestalker Tunic
-										i(46146),	-- Conqueror's Siegebreaker Battleplate
-										i(46162),	-- Conqueror's Siegebreaker Breastplate
-										i(46205),	-- Conqueror's Worldbreaker Chestguard
-										i(46206),	-- Conqueror's Worldbreaker Hauberk
-										i(46198),	-- Conqueror's Worldbreaker Tunic
-									}),
-									i(45634, {	-- Breastplate of the Wayward Vanquisher
-										i(46111),	-- Darkruned Battleplate
-										i(46118),	-- Darkruned Chestguard
-										i(46130),	-- Kirin Tor Tunic
-										i(46159),	-- Nightsong Raiments
-										i(46186),	-- Nightsong Robe
-										i(46194),	-- Nightsong Vestments
-										i(46123),	-- Terrorblade Breastplate
-									}),
+									i(45632),	-- Breastplate of the Wayward Conqueror
+									i(45633),	-- Breastplate of the Wayward Protector
+									i(45634),	-- Breastplate of the Wayward Vanquisher
 									i(45820),	-- Brooch of the Wailing Night
-									i(45638, {	-- Crown of the Wayward Conqueror
-										i(46175),	-- Conqueror's Aegis Faceguard
-										i(46180),	-- Conqueror's Aegis Headpiece
-										i(46156),	-- Conqueror's Aegis Helm
-										i(46172),	-- Conqueror's Circlet of Sanctification
-										i(46197),	-- Conqueror's Cowl of Sanctification
-										i(46140),	-- Conqueror's Deathbringer Hood
-									}),
-									i(45639, {	-- Crown of the Wayward Protector
-										i(46143),	-- Conqueror's Scourgestalker Headpiece
-										i(46166),	-- Conqueror's Siegebreaker Greathelm
-										i(46151),	-- Conqueror's Siegebreaker Helmet
-										i(46212),	-- Conqueror's Worldbreaker Faceguard
-										i(46201),	-- Conqueror's Worldbreaker Headpiece
-										i(46209),	-- Conqueror's Worldbreaker Helm
-									}),
-									i(45640, {	-- Crown of the Wayward Vanquisher
-										i(46120),	-- Conqueror's Darkruned Faceguard
-										i(46115),	-- Conqueror's Darkruned Helmet
-										i(46129),	-- Conqueror's Kirin Tor Hood
-										i(46191),	-- Conqueror's Nightsong Cover
-										i(46161),	-- Conqueror's Nightsong Headguard
-										i(46184),	-- Conqueror's Nightsong Headpiece
-										i(46125),	-- Conqueror's Terrorblade Helmet
-									}),
+									i(45638),	-- Crown of the Wayward Conqueror
+									i(45639),	-- Crown of the Wayward Protector
+									i(45640),	-- Crown of the Wayward Vanquisher
 									i(41086),	-- Deadly Gladiator's Chain Armor
 									i(41142),	-- Deadly Gladiator's Chain Gauntlets
 									i(41156),	-- Deadly Gladiator's Chain Helm
@@ -4282,61 +4192,16 @@ root("Zones", {
 								["groups"] = {
 									i(40693),	-- Beadwork Belt of Shamanic Vision
 									i(40679),	-- Chained Military Gorget
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(40610, {	-- Chestguard of the Lost Conqueror
-										i(39497),	-- Heroes' Plagueheart Robe
-										i(39523),	-- Heroes' Raiments of Faith
-										i(39638),	-- Heroes' Redemption Breastplate
-										i(39633),	-- Heroes' Redemption Chestpiece
-										i(39629),	-- Heroes' Redemption Tunic
-										i(39515),	-- Heroes' Robe of Faith
-									}),
-									i(40611, {	-- Chestguard of the Lost Protector
-										i(39579),	-- Heroes' Cryptstalker Tunic
-										i(39606),	-- Heroes' Dreadnaught Battleplate
-										i(39611),	-- Heroes' Dreadnaught Breastplate
-										i(39597),	-- Heroes' Earthshatter Chestguard
-										i(39592),	-- Heroes' Earthshatter Hauberk
-										i(39588),	-- Heroes' Earthshatter Tunic
-									}),
-									i(40612, {	-- Chestguard of the Lost Vanquisher
-										i(39558),	-- Heroes' Bonescythe Breastplate
-										i(39554),	-- Heroes' Dreamwalker Raiments
-										i(39538),	-- Heroes' Dreamwalker Robe
-										i(39547),	-- Heroes' Dreamwalker Vestments
-										i(39492),	-- Heroes' Frostfire Robe
-										i(39617),	-- Heroes' Scourgeborne Battleplate
-										i(39623),	-- Heroes' Scourgeborne Chestguard
-									}),
+									i(40610),	-- Chestguard of the Lost Conqueror
+									i(40611),	-- Chestguard of the Lost Protector
+									i(40612),	-- Chestguard of the Lost Vanquisher
 									i(40701),	-- Crygil's Discarded Plate Panel
 									i(40697),	-- Elegant Temple Gardens' Girdle
 									i(40680),	-- Encircling Burnished Gold Chains
 									i(43102),	-- Frozen Orb
-									i(40613, {	-- Gloves of the Lost Conqueror
-										i(39519),	-- Heroes' Gloves of Faith
-										i(39530),	-- Heroes' Handwraps of Faith
-										i(39500),	-- Heroes' Plagueheart Gloves
-										i(39634),	-- Heroes' Redemption Gauntlets
-										i(39632),	-- Heroes' Redemption Gloves
-										i(39639),	-- Heroes' Redemption Handguards
-									}),
-									i(40614, {	-- Gloves of the Lost Protector
-										i(39582),	-- Heroes' Cryptstalker Handguards
-										i(39609),	-- Heroes' Dreadnaught Gauntlets
-										i(39622),	-- Heroes' Dreadnaught Handguards
-										i(39593),	-- Heroes' Earthshatter Gloves
-										i(39601),	-- Heroes' Earthshatter Grips
-										i(39591),	-- Heroes' Earthshatter Handguards
-									}),
-									i(40615, {	-- Gloves of the Lost Vanquisher
-										i(39560),	-- Heroes' Bonescythe Gauntlets
-										i(39544),	-- Heroes' Dreamwalker Gloves
-										i(39557),	-- Heroes' Dreamwalker Handgrips
-										i(39543),	-- Heroes' Dreamwalker Handguards
-										i(39495),	-- Heroes' Frostfire Gloves
-										i(39618),	-- Heroes' Scourgeborne Gauntlets
-										i(39624),	-- Heroes' Scourgeborne Handguards
-									}),
+									i(40613),	-- Gloves of the Lost Conqueror
+									i(40614),	-- Gloves of the Lost Protector
+									i(40615),	-- Gloves of the Lost Vanquisher
 									i(40703),	-- Grasscutter
 									i(40699),	-- Handbook of Obscure Remedies
 									i(40694),	-- Jorach's Crocolisk Skin Belt
@@ -5109,57 +4974,12 @@ root("Zones", {
 									i(41314),	-- Hateful Gladiator's Wyrmhide Robes
 									i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders
 									i(40743),	-- Kyzoc's Ground Stompers
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(40634, {	-- Legplates of the Lost Conqueror (Paladin, Priest, Warlock)
-										i(40448),	-- Valorous Leggings of Faith
-										i(40457),	-- Valorous Pants of Faith
-										i(40422),	-- Valorous Plagueheart Leggings
-										i(40572),	-- Valorous Redemption Greaves
-										i(40583),	-- Valorous Redemption Legguards
-										i(40577),	-- Valorous Redemption Legplates
-									}),
-									i(40635, {	-- Legplates of the Lost Protector (Hunter, Shaman, Warrior)
-										i(40506),	-- Valorous Crypstalker Legguards
-										i(40547),	-- Valorous Dreadnaught Legguards
-										i(40529),	-- Valorous Dreadnaught Legplates
-										i(40517),	-- Valorous Earthshatter Kilt
-										i(40512),	-- Valorous Earthshatter Legguards
-										i(40522),	-- Valorous Earthshatter War-Kilt
-									}),
-									i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40500),	-- Valorous Bonescythe Legplates
-										i(40462),	-- Valorous Dreamwalker Leggings
-										i(40493),	-- Valorous Dreamwalker Legguards
-										i(40468),	-- Valorous Dreamwalker Trousers
-										i(40417),	-- Valorous Frostfire Leggings
-										i(40567),	-- Valorous Scourgeborne Legguards
-										i(40556),	-- Valorous Scourgeborne Legplates
-									}),
-									i(40637, {	-- Mantle of the Lost Conqueror (Paladin, Priest, Warlock)
-										i(40459),	-- Valorous Mantle of Faith
-										i(40450),	-- Valorous Shoulderpads of Faith
-										i(40424),	-- Valorous Plagueheart Shoulderpads
-										i(40584),	-- Valorous Redemption Shoulderguards
-										i(40578),	-- Valorous Redemption Shoulderplates
-										i(40573),	-- Valorous Redemption Spaulders
-									}),
-									i(40638, {	-- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
-										i(40507),	-- Valorous Crypstalker Spaulders
-										i(40548),	-- Valorous Dreadnaught Pauldrons
-										i(40530),	-- Valorous Dreadnaught Shoulderplates
-										i(40524),	-- Valorous Earthshatter Shoulderguards
-										i(40518),	-- Valorous Earthshatter Shoulderpads
-										i(40513),	-- Valorous Earthshatter Spaulders
-									}),
-									i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
-										i(40502),	-- Valorous Bonescythe Pauldrons
-										i(40470),	-- Valorous Dreamwalker Mantle
-										i(40494),	-- Valorous Dreamwalker Shoulderpads
-										i(40465),	-- Valorous Dreamwalker Spaulders
-										i(40419),	-- Valorous Frostfire Shoulderpads
-										i(40568),	-- Valorous Scourgeborne Pauldrons
-										i(40557),	-- Valorous Scourgeborne Shoulderplates
-									}),
+									i(40634),	-- Legplates of the Lost Conqueror
+									i(40635),	-- Legplates of the Lost Protector
+									i(40636),	-- Legplates of the Lost Vanquisher
+									i(40637),	-- Mantle of the Lost Conqueror
+									i(40638),	-- Mantle of the Lost Protector
+									i(40639),	-- Mantle of the Lost Vanquisher
 									i(40746),	-- Pack-Ice Striders
 									i(40737),	-- Pigmented Clan Bindings
 									i(40722),	-- Platinum Mesh Cloak
@@ -5186,58 +5006,13 @@ root("Zones", {
 									i(45824),	-- Belt of the Singing Blade
 									i(45829),	-- Belt of the Twilight Assassin
 									i(45833),	-- Bladebreaker Gauntlets
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(45632, {	-- Breastplate of the Wayward Conqueror
-										i(46154),	-- Conqueror's Aegis Battleplate
-										i(46173),	-- Conqueror's Aegis Breastplate
-										i(46178),	-- Conqueror's Aegis Tunic
-										i(46137),	-- Conqueror's Deathbringer Robe
-										i(46168),	-- Conqueror's Raiments of Sanctification
-										i(46193),	-- Conqueror's Robe of Sanctification
-									}),
-									i(45633, {	-- Breastplate of the Wayward Protector
-										i(46141),	-- Conqueror's Scourgestalker Tunic
-										i(46146),	-- Conqueror's Siegebreaker Battleplate
-										i(46162),	-- Conqueror's Siegebreaker Breastplate
-										i(46205),	-- Conqueror's Worldbreaker Chestguard
-										i(46206),	-- Conqueror's Worldbreaker Hauberk
-										i(46198),	-- Conqueror's Worldbreaker Tunic
-									}),
-									i(45634, {	-- Breastplate of the Wayward Vanquisher
-										i(46111),	-- Darkruned Battleplate
-										i(46118),	-- Darkruned Chestguard
-										i(46130),	-- Kirin Tor Tunic
-										i(46159),	-- Nightsong Raiments
-										i(46186),	-- Nightsong Robe
-										i(46194),	-- Nightsong Vestments
-										i(46123),	-- Terrorblade Breastplate
-									}),
+									i(45632),	-- Breastplate of the Wayward Conqueror
+									i(45633),	-- Breastplate of the Wayward Protector
+									i(45634),	-- Breastplate of the Wayward Vanquisher
 									i(45820),	-- Brooch of the Wailing Night
-									i(45638, {	-- Crown of the Wayward Conqueror
-										i(46175),	-- Conqueror's Aegis Faceguard
-										i(46180),	-- Conqueror's Aegis Headpiece
-										i(46156),	-- Conqueror's Aegis Helm
-										i(46172),	-- Conqueror's Circlet of Sanctification
-										i(46197),	-- Conqueror's Cowl of Sanctification
-										i(46140),	-- Conqueror's Deathbringer Hood
-									}),
-									i(45639, {	-- Crown of the Wayward Protector
-										i(46143),	-- Conqueror's Scourgestalker Headpiece
-										i(46166),	-- Conqueror's Siegebreaker Greathelm
-										i(46151),	-- Conqueror's Siegebreaker Helmet
-										i(46212),	-- Conqueror's Worldbreaker Faceguard
-										i(46201),	-- Conqueror's Worldbreaker Headpiece
-										i(46209),	-- Conqueror's Worldbreaker Helm
-									}),
-									i(45640, {	-- Crown of the Wayward Vanquisher
-										i(46120),	-- Conqueror's Darkruned Faceguard
-										i(46115),	-- Conqueror's Darkruned Helmet
-										i(46129),	-- Conqueror's Kirin Tor Hood
-										i(46191),	-- Conqueror's Nightsong Cover
-										i(46161),	-- Conqueror's Nightsong Headguard
-										i(46184),	-- Conqueror's Nightsong Headpiece
-										i(46125),	-- Conqueror's Terrorblade Helmet
-									}),
+									i(45638),	-- Crown of the Wayward Conqueror
+									i(45639),	-- Crown of the Wayward Protector
+									i(45640),	-- Crown of the Wayward Vanquisher
 									i(41086),	-- Deadly Gladiator's Chain Armor
 									i(41142),	-- Deadly Gladiator's Chain Gauntlets
 									i(41156),	-- Deadly Gladiator's Chain Helm
@@ -5350,61 +5125,16 @@ root("Zones", {
 								["groups"] = {
 									i(40693),	-- Beadwork Belt of Shamanic Vision
 									i(40679),	-- Chained Military Gorget
-								--	this vendor literally sells these tier tokens for gold, which is why they're attached like they would be on a boss instead of with ["cost"].
-									i(40610, {	-- Chestguard of the Lost Conqueror
-										i(39497),	-- Heroes' Plagueheart Robe
-										i(39523),	-- Heroes' Raiments of Faith
-										i(39638),	-- Heroes' Redemption Breastplate
-										i(39633),	-- Heroes' Redemption Chestpiece
-										i(39629),	-- Heroes' Redemption Tunic
-										i(39515),	-- Heroes' Robe of Faith
-									}),
-									i(40611, {	-- Chestguard of the Lost Protector
-										i(39579),	-- Heroes' Cryptstalker Tunic
-										i(39606),	-- Heroes' Dreadnaught Battleplate
-										i(39611),	-- Heroes' Dreadnaught Breastplate
-										i(39597),	-- Heroes' Earthshatter Chestguard
-										i(39592),	-- Heroes' Earthshatter Hauberk
-										i(39588),	-- Heroes' Earthshatter Tunic
-									}),
-									i(40612, {	-- Chestguard of the Lost Vanquisher
-										i(39558),	-- Heroes' Bonescythe Breastplate
-										i(39554),	-- Heroes' Dreamwalker Raiments
-										i(39538),	-- Heroes' Dreamwalker Robe
-										i(39547),	-- Heroes' Dreamwalker Vestments
-										i(39492),	-- Heroes' Frostfire Robe
-										i(39617),	-- Heroes' Scourgeborne Battleplate
-										i(39623),	-- Heroes' Scourgeborne Chestguard
-									}),
+									i(40610),	-- Chestguard of the Lost Conqueror
+									i(40611),	-- Chestguard of the Lost Protector
+									i(40612),	-- Chestguard of the Lost Vanquisher
 									i(40701),	-- Crygil's Discarded Plate Panel
 									i(40697),	-- Elegant Temple Gardens' Girdle
 									i(40680),	-- Encircling Burnished Gold Chains
 									i(43102),	-- Frozen Orb
-									i(40613, {	-- Gloves of the Lost Conqueror
-										i(39519),	-- Heroes' Gloves of Faith
-										i(39530),	-- Heroes' Handwraps of Faith
-										i(39500),	-- Heroes' Plagueheart Gloves
-										i(39634),	-- Heroes' Redemption Gauntlets
-										i(39632),	-- Heroes' Redemption Gloves
-										i(39639),	-- Heroes' Redemption Handguards
-									}),
-									i(40614, {	-- Gloves of the Lost Protector
-										i(39582),	-- Heroes' Cryptstalker Handguards
-										i(39609),	-- Heroes' Dreadnaught Gauntlets
-										i(39622),	-- Heroes' Dreadnaught Handguards
-										i(39593),	-- Heroes' Earthshatter Gloves
-										i(39601),	-- Heroes' Earthshatter Grips
-										i(39591),	-- Heroes' Earthshatter Handguards
-									}),
-									i(40615, {	-- Gloves of the Lost Vanquisher
-										i(39560),	-- Heroes' Bonescythe Gauntlets
-										i(39544),	-- Heroes' Dreamwalker Gloves
-										i(39557),	-- Heroes' Dreamwalker Handgrips
-										i(39543),	-- Heroes' Dreamwalker Handguards
-										i(39495),	-- Heroes' Frostfire Gloves
-										i(39618),	-- Heroes' Scourgeborne Gauntlets
-										i(39624),	-- Heroes' Scourgeborne Handguards
-									}),
+									i(40613),	-- Gloves of the Lost Conqueror
+									i(40614),	-- Gloves of the Lost Protector
+									i(40615),	-- Gloves of the Lost Vanquisher
 									i(40703),	-- Grasscutter
 									i(40699),	-- Handbook of Obscure Remedies
 									i(40694),	-- Jorach's Crocolisk Skin Belt
