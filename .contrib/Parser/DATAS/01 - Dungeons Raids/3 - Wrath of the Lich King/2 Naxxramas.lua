@@ -552,7 +552,9 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(574),	-- Kel'Thuzad's Defeat (10 player)
 								ach(2184, {	-- Just Can't Get Enough (10 player)
 									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
-									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+									-- #if NOT ANYCLASSIC
+									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
+									-- #endif
 								}),
 								ach(1658, {	-- Champion of the Frozen Wastes
 									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
@@ -590,7 +592,17 @@ root("Instances", tier(WOTLK_TIER, {
 						ach(567),	-- The Plague Quarter (25 player)
 						ach(569),	-- The Military Quarter (25 player)
 						ach(565),	-- The Construct Quarter (25 player)
-						ach(577),	-- The Fall of Naxxramas (25 player)
+						ach(577, {	-- The Fall of Naxxramas (25 player)
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								563,	-- The Arachnid Quarter (25 player)
+								567,	-- The Plague Quarter (25 player)
+								569,	-- The Military Quarter (25 player)
+								565,	-- The Construct Quarter (25 player)
+								573,	-- Sapphiron's Demise (25 player)
+								575,	-- Kel'Thuzad's Defeat (25 player)
+							}},
+						}),
 						ach(2186, {	-- The Immortal
 							["timeline"] = { "removed 4.0.3" },
 							["groups"] = {
@@ -621,10 +633,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 							["groups"] = {
 								ach(563, {	-- The Arachnid Quarter (25 player)
-									["criteriaID"] = 1,	-- Anub'Rekhan slain
+									["criteriaID"] = 5111,	-- Anub'Rekhan slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 1,	-- Anub'Rekhan slain
+									["criteriaID"] = 7159,	-- Anub'Rekhan slain
 								}),
 								i(39714),	-- Webbed Death
 								i(39712),	-- Gemmed Wand of the Nerubians
@@ -657,10 +669,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["groups"] = {
 								ach(2140),	-- Momma Said Knock You Out (25 player)
 								ach(563, {	-- The Arachnid Quarter (25 player)
-									["criteriaID"] = 2,	-- Grand Widow Faerlina slain
+									["criteriaID"] = 5126,	-- Grand Widow Faerlina slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 5,	-- Grand Widow Faerlina slain
+									["criteriaID"] = 7160,	-- Grand Widow Faerlina slain
 								}),
 								i(39730),	-- Widow's Fury
 								i(39732),	-- Faerlina's Madness
@@ -692,10 +704,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["groups"] = {
 								ach(1859),	-- Arachnophobia (25 player)
 								ach(563, {	-- The Arachnid Quarter (25 player)
-									["criteriaID"] = 3,	-- Maexxna slain
+									["criteriaID"] = 6405,	-- Maexxna slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 7,	-- Maexxna slain
+									["criteriaID"] = 7161,	-- Maexxna slain
 								}),
 								i(93030, {	-- Dusty Clutch of Eggs (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -733,10 +745,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
 							["groups"] = {
 								ach(567, {	-- The Plague Quarter (25 player)
-									["criteriaID"] = 1,	-- Noth the Plaguebringer slain
+									["criteriaID"] = 5133,	-- Noth the Plaguebringer slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 14,	-- Noth the Plaguebringer slain
+									["criteriaID"] = 7166,	-- Noth the Plaguebringer slain
 								}),
 								i(40189),	-- Angry Dread
 								i(40192),	-- Accursed Spine
@@ -768,10 +780,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["groups"] = {
 								ach(2139),	-- The Safety Dance (25 player)
 								ach(567, {	-- The Plague Quarter (25 player)
-									["criteriaID"] = 2,	-- Heigan the Unclean slain
+									["criteriaID"] = 5128,	-- Heigan the Unclean slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 2,	-- Heigan the Unclean slain
+									["criteriaID"] = 7167,	-- Heigan the Unclean slain
 								}),
 								i(40208),	-- Cryptfiend's Bite
 								i(40233),	-- The Undeath Carrier
@@ -803,11 +815,18 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
 							["groups"] = {
 								ach(2183),	-- Spore Loser (25 player)
+								-- #if ANYCLASSIC
+								-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 								ach(567, {	-- The Plague Quarter (25 player)
-									["criteriaID"] = 3,	-- Loatheb slain
+									["criteriaID"] = 5131,	-- Loatheb slain
 								}),
+								-- #else
+								ach(567, {	-- The Plague Quarter (25 player)
+									["criteriaID"] = 6409,	-- Loatheb slain
+								}),
+								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 9,	-- Loatheb slain
+									["criteriaID"] = 7168,	-- Loatheb slain
 								}),
 								i(93032, {	-- Blighted Spore (PET!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -834,10 +853,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
 							["groups"] = {
 								ach(569, {	-- The Military Quarter (25 player)
-									["criteriaID"] = 1,	-- Instructor Razuvious slain
+									["criteriaID"] = 6410,	-- Instructor Razuvious slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 13,	-- Instructor Razuvious slain
+									["criteriaID"] = 7169,	-- Instructor Razuvious slain
 								}),
 								i(40071),	-- Chains of Adoration
 								i(40065),	-- Fool's Trial
@@ -868,10 +887,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
 							["groups"] = {
 								ach(569, {	-- The Military Quarter (25 player)
-									["criteriaID"] = 2,	-- Gothik the Harvester slain
+									["criteriaID"] = 5125,	-- Gothik the Harvester slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 4,	-- Gothik the Harvester slain
+									["criteriaID"] = 7170,	-- Gothik the Harvester slain
 								}),
 								i(40336),	-- Life and Death
 								i(40335),	-- Touch of Horror
@@ -908,7 +927,7 @@ root("Instances", tier(WOTLK_TIER, {
 							["groups"] = {
 								ach(2177),	-- And They Would All Go Down Together (25 player)
 								ach(569, {	-- The Military Quarter (25 player)
-									["criteriaID"] = 3,	-- The Four Horsemen slain
+									["criteriaID"] = 7806,	-- The Four Horsemen slain
 								}),
 								i(40343),	-- Armageddon
 								i(40348),	-- Damnation
@@ -936,11 +955,18 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
 							["groups"] = {
 								ach(1857),	-- Make Quick Werk of Him (25 player)
+								-- #if ANYCLASSIC
+								-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 								ach(565, {	-- The Construct Quarter (25 player)
-									["criteriaID"] = 1,	-- Patchwerk slain
+									["criteriaID"] = 5103,	-- Patchwerk slain
 								}),
+								-- #else
+								ach(565, {	-- The Construct Quarter (25 player)
+									["criteriaID"] = 6403,	-- Patchwerk slain
+								}),
+								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 11,	-- Patchwerk slain
+									["criteriaID"] = 7162,	-- Patchwerk slain
 								}),
 								i(40264),	-- Split Greathammer
 								i(40265),	-- Arrowsong
@@ -971,10 +997,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
 							["groups"] = {
 								ach(565, {	-- The Construct Quarter (25 player)
-									["criteriaID"] = 2,	-- Grobbulus slain
+									["criteriaID"] = 6406,	-- Grobbulus slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 3,	-- Grobbulus slain
+									["criteriaID"] = 7163,	-- Grobbulus slain
 								}),
 								i(40280),	-- Origin of Nightmares
 								i(40281),	-- Twilight Mist
@@ -1007,10 +1033,10 @@ root("Instances", tier(WOTLK_TIER, {
 							["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
 							["groups"] = {
 								ach(565, {	-- The Construct Quarter (25 player)
-									["criteriaID"] = 3,	-- Gluth slain
+									["criteriaID"] = 5124,	-- Gluth slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 10,	-- Gluth slain
+									["criteriaID"] = 7164,	-- Gluth slain
 								}),
 								i(93029, {	-- Gluth's Bone (TOY!)
 									["timeline"] = { "added 5.1.0.16309" },
@@ -1182,10 +1208,10 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(2179),	-- Shocking! (25 player)
 								ach(2181),	-- Subtraction (25 player)
 								ach(565, {	-- The Construct Quarter (25 player)
-									["criteriaID"] = 4,	-- Thaddius slain
+									["criteriaID"] = 5134,	-- Thaddius slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 12,	-- Thaddius slain
+									["criteriaID"] = 7165,	-- Thaddius slain
 								}),
 								i(40634),	-- Legplates of the Lost Conqueror
 								i(40635),	-- Legplates of the Lost Protector
@@ -1211,7 +1237,7 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(573),	-- Sapphiron's Demise (25 player)
 								ach(2147),	-- The Hundred Club (25 player)
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 8,	-- Sapphiron slain
+									["criteriaID"] = 7171,	-- Sapphiron slain
 								}),
 								i(44577),	-- Heroic Key to the Focusing Iris (Item)
 								i(40368),	-- Murder
@@ -1251,13 +1277,15 @@ root("Instances", tier(WOTLK_TIER, {
 								ach(575),	-- Kel'Thuzad's Defeat (25 player)
 								ach(2185, {	-- Just Can't Get Enough (25 player)
 									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
-									["description"] = "Pull 1 abomintion from each section and then AOE them all when they get to you. Very easy achievement.",
+									-- #if NOT ANYCLASSIC
+									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
+									-- #endif
 								}),
 								ach(1658, {	-- Champion of the Frozen Wastes
-									["criteriaID"] = 2,	-- Kel'Thuzad (10 or 25 player) slain
+									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
-									["criteriaID"] = 6,	-- Kel'Thuzad slain
+									["criteriaID"] = 7172,	-- Kel'Thuzad slain
 								}),
 								i(40631),	-- Crown of the Lost Conqueror
 								i(40632),	-- Crown of the Lost Protector
