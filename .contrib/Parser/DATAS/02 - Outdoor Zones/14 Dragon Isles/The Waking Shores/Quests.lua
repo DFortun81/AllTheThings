@@ -149,22 +149,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 186795 },	-- Majordomo Selistra
 				["coord"] = { 55.1, 31.0, THE_WAKING_SHORES },
 			}),
-			q(66115, {	-- The Mandate of the Red
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
-				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
-				["g"] = {
-					i(194346),	-- League Mercenary's Grips
-				},
-			}),
-			q(70061, {	-- Training Wings
-				["sourceQuests"] = { 66115 },	-- The Mandate of the Red
-				["provider"] = { "n", 194174 },	-- Amella
-				["coord"] = { 62.2, 70.5, THE_WAKING_SHORES },
-				["g"] = {
-					i(197406),	-- Renewed Proto-Drake: Spined Tail
-				},
-			}),
 			q(68795, {	-- Dragonriding
 				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
@@ -220,6 +204,81 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 193359 },	-- Lord Andestrasz
 				["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 			}),
+			q(66115, {	-- The Mandate of the Red
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
+				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(194346),	-- League Mercenary's Grips
+				},
+			}),
+			q(70061, {	-- Training Wings
+				["sourceQuests"] = { 66115 },	-- The Mandate of the Red
+				["provider"] = { "n", 194174 },	-- Amella
+				["coord"] = { 62.2, 70.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(197406),	-- Renewed Proto-Drake: Spined Tail
+				},
+			}),
+			q(66931, {	-- Who Brought the Ruckus?
+				["sourceQuests"] = {
+					68799,	-- Return to the Ruby Lifeshrine
+					70061,	-- Training Wings
+				},
+				["provider"] = { "n", 187290 },	-- Alexstasza the Life-binder
+				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
+			}),
+			q(66116, {	-- The Primary Threat
+				["sourceQuests"] = { 66931 },	-- Who Brought the Ruckus?
+				["provider"] = { "n", 190293 },	-- Majordomo Selistra
+				["coord"] = { 59.5, 72.6, THE_WAKING_SHORES },
+			}),
+			q(66118, {	-- Basalt Assault
+				["sourceQuests"] = { 66116 },	-- The Primary Threat
+				["provider"] = { "n", 187119 },	-- Commander Lethanak
+				["coord"] = { 59.5, 75.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(194366),	-- Carved Basalt Ring
+				},
+			}),
+			q(66121, {	-- Egg Evac
+				["sourceQuests"] = { 66118 },	-- Basalt Assault
+				["provider"] = { "n", 187129 },	-- Majordomo Selistra
+				["coord"] = { 59.5, 76.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(192436),	-- Ruby Spear
+				},
+			}),
+			q(66122, {	-- Proto-Fight
+				["sourceQuests"] = { 66118 },	-- Basalt Assault
+				["provider"] = { "n", 187119 },	-- Commander Lethanak
+				["coord"] = { 59.5, 75.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(192436),	-- Ruby Spear
+				},
+			}),
+			q(66123, {	-- Cut Off the Head
+				["sourceQuests"] = {
+					66121,	-- Egg Evac
+					66122,	-- Proto-Fight
+				},
+				["provider"] = { "n", 191895 },	-- Majordomo Selistra
+				["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(194357),	-- League Mercenary's Monnion
+					i(192436),	-- Ruby Spear
+				},
+			}),
+			q(66124, {	-- Exeunt, Triumphant
+				["sourceQuests"] = { 66123 },	-- Cut Off the Head
+				["provider"] = { "n", 191895 },	-- Majordomo Selistra
+				["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(197354),	-- Renewed Proto-Drake: Horned Back
+					-- Crit Chapter
+				},
+			}),
+			-- Chapter 3
 
 
 
@@ -324,8 +383,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = { 67564 },	-- Artisan's Courier
 				["provider"] = { "n", 192574 },	-- Thomas Bright
 				["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
+				["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
 				["g"] = {
 					i(194715),	-- Gatherer's Pouch
+				},
+			}),
+			q(67143, {	-- To Give One's Heart
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(194746),	-- Thomas's Empty Bottle (Weird.... Thomas's?)
+				},
+			}),
+			q(67143, {	-- To Give One's Heart
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["coord"] = { 59.9, 71.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(193487),	-- Alchemist's Hat
+					i(193615),	-- Jeweler's Tool Apron
+					i(193534),	-- Wildercloth Chef's Hat
+					i(193529),	-- Wildercloth Fishing Cap
 				},
 			}),
 
@@ -367,18 +446,112 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["provider"] = { "n", 191012 },	-- Akora
 				["coord"] = { 61.7, 73.7, THE_WAKING_SHORES },
 			}),
+			q(66827, {	-- Flowers of our Labor
+				["sourceQuests"] = { 70351 },	-- Garden Party
+				["provider"] = { "n", 190866 },	-- Akora
+				["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(193826),	-- Trusty Dragonkin Rake
+				},
+			}),
+			q(66828, {	-- Huddle at the Hollow
+				["sourceQuests"] = { 66827 },	-- Flowers of our Labor
+				["provider"] = { "n", 190868 },	-- Keshki
+				["coord"] = { 60.2, 66.4, THE_WAKING_SHORES },
+			}),
+			q(66830, {	-- Hornswoggled!
+				["sourceQuests"] = { 66828 },	-- Huddle at the Hollow
+				["provider"] = { "n", 191011 },	-- Keshki
+				["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(193918),	-- Jar of Fireflies
+				},
+			}),
+			q(66831, {	-- Home Is Where the Frogs Are
+				["sourceQuests"] = { 66830 },	-- Hornswoggled!
+				["provider"] = { "n", 191011 },	-- Keshki
+				["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(197399),	-- Renewed Proto-Drake: Razor Snout
+				},
+			}),
+
+
 			q(66879, {	-- Hornstrider Havoc
 				["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
 				["provider"] = { "n", 191176 },	-- Dazakros
 				["coord"] = { 61.7, 73.8, THE_WAKING_SHORES },
 			}),
+			q(66893, {	-- Beaky Reclamation
+				["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
+				["provider"] = { "n", 191280 },	-- Dazakros
+				["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(194434),	-- Pungent Salve
+				},
+			}),
+			q(66892, {	-- Deluge Dilemma
+				["sourceQuests"] = { 66879 },	-- Hornstrider Havoc
+				["provider"] = { "n", 191280 },	-- Dazakros
+				["coord"] = { 53.4, 58.4, THE_WAKING_SHORES },
+			}),
+
+
+
 			q(66997, {	-- Nursery Direction
 				["sourceQuests"] = { 66825 },	-- A Ruby Lifecalling
 				["provider"] = { "n", 191174 },	-- Vaeros
 				["coord"] = { 61.8, 73.6, THE_WAKING_SHORES },
 			}),
+			q(66735, {	-- Just a Trim
+				["sourceQuests"] = { 66997 },	-- Nursery Direction
+				["provider"] = { "n", 190525 },	-- Vaeros
+				["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
+			}),
+			q(66734, {	-- Leave Bee Alone
+				["sourceQuests"] = { 66997 },	-- Nursery Direction
+				["provider"] = { "n", 190525 },	-- Vaeros
+				["coord"] = { 55.3, 63.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(194405),	-- Wasp Repelling Skullcap
+					i(193064),	-- Smoke Diffuser
+				},
+			}),
+			q(66737, {	-- A Better Start
+				["sourceQuests"] = {
+					66735,	-- Just a Trim
+					66734,	-- Leave Bee Alone
+				},
+				["provider"] = { "n", 190533 },	-- Adazius
+				["coord"] = { 55.2, 63.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(194418),	-- Life Pools Watering Can
+				},
+			}),
 
 
+			-- SEEMS TO GET CRIT FOR ACHIEVEMENTS AUTOMATICALLY AFTER ALL THREE LINES ARE DONE..
+
+
+
+			-- SIDE 10 --
+			q(70239, {	-- Untold Regrets
+				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 194801 },	-- Kolgar Flameguard
+				["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
+				["g"] = {
+					-- crit all side of story
+				},
+			}),
+			q(70240, {	-- Pain Management
+				["sourceQuests"] = { 70239 },	-- Untold Regrets
+				["provider"] = { "n", 194805 },	-- Bathoras
+				["coord"] = { 57.4, 65.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(198673),	-- Empty Life Pool Vial
+					-- crit all side of story
+				},
+			}),
 
 
 
@@ -402,12 +575,66 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 
 				-- npc 191611 rare??
 			}),
+			q(66960, {	-- Klozicc the Ascended
+				["sourceQuests"] = { 66118 },	-- Basalt Assault
+				["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
+
+				-- npc 187209 rare??
+			}),
 			q(65994, {	-- Djaradin Djustice
 				["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
 					65990,	-- Deliver Whelps From Evil
 					65989,	-- Invader Djaradin
 				},
 				["coord"] = { 67.6, 38.5, THE_WAKING_SHORES },
+			}),
+			q(66117, {	-- Clear the Battlefield
+				-- TODO: MIGHT NOT BE TRUE
+				["sourceQuests"] = { 66116 },	-- The Primary Threat
+				["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
+			}),
+
+
+			-- Annoying Repeatable Dragon Racing Quests..
+			q(66679, {	-- Ruby Lifeshrine Loop
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+				["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					--- Achievements?
+				},
+			}),
+			q(66692, {	-- Ruby Lifeshrine Loop - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+				["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					--- Achievements?
+				},
+			}),
+			q(66710, {	-- Flashfrost Flyover
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+				["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					--- Achievements?
+				},
+			}),
+			q(66712, {	-- Flashfrost Flyover - Advanced
+				["sourceQuests"] = { 68795 },	-- Dragonriding
+				["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+				["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["g"] = {
+					i(191140),	-- Bronze Timepiece
+					--- Achievements?
+				},
 			}),
 		}),
 	}),

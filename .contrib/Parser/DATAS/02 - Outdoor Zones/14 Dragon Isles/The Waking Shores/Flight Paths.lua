@@ -20,6 +20,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 72.8, 51.9, THE_WAKING_SHORES },
 				["sourceQuests"] = { 68796 },	-- The Skytop Observatory
 			}),
+			fp(2806, {	-- Life Vault Ruins, The Waking Shores
+				["cr"] = 192484,	-- Tallevia Mistsong
+				["coord"] = { 65.0, 57.4, THE_WAKING_SHORES },
+			}),
 		}),
 	}),
 })));

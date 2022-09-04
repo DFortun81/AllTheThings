@@ -3,26 +3,37 @@
 -----------------------------------------------------
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1202, {	-- Ruby Life Pools
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 60.1, 75.7, THE_WAKING_SHORES },
 		["maps"] = {
-
+			2095,	-- Infusion Chambers
+			2094,	-- Ruby Overlook
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(66119, {	-- Defend the Life Pools!
+					["sourceQuests"] = { 66118 },	-- Basalt Assault
+					["provider"] = { "n", 187145 },	-- Kildrumeh
+					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2609, {	-- Melidrussa Chillworn
-					-- ["crs"] = {  },
+					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
-
+						i(193761),	-- Chillworn's Infusion Staff
 					},
 				}),
 				e(2606, {	-- Kokia Blazehoof
-					-- ["crs"] = {  },
+					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
 
 					},
 				}),
 				e(2569, {	-- Kyrakka and Erkhart Stormvein
-					-- ["crs"] = {  },
+					["crs"] = {
+						190484,	-- Kyrakka
+						190485,	-- Erkhart Stormvein
+					},
 					["g"] = {
 
 					},
