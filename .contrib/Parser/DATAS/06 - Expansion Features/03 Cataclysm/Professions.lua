@@ -376,7 +376,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			ach(5851,  {	-- Gone Fishin'
 				["timeline"] = { "added 4.2.0" },
 				["requireSkill"] = FISHING,
-				["sym"] = {{"select","achievementID",
+				["sym"] = {{"meta_achievement",
 					5848,	-- Fish or Cut Bait: Darnassus
 					5847,	-- Fish or Cut Bait: Ironforge
 					5476,	-- Fish or Cut Bait: Stormwind
