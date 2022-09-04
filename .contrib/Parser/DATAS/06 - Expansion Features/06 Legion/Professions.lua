@@ -1287,6 +1287,83 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			}),
 		}),
 		prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
+			ach(10595, {	-- A Cast Above the Rest
+				["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+			}),
+			ach(10596, {	-- Bigger Fish to Fry
+				crit(1, {	-- Ancient Black Barracuda
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["provider"] = { "i", 133742 },
+				}),
+				crit(2, {	-- Ancient Highmountain Salmon
+					["maps"] = { HIGHMOUNTAIN },
+					["provider"] = { "i", 133733 },
+				}),
+				crit(3, {	-- Ancient Mossgill
+					["maps"] = { VALSHARAH },
+					["provider"] = { "i", 133730 },
+				}),
+				crit(4, {	-- Axefish
+					["maps"] = { AZSUNA },
+					["provider"] = { "i", 133740 },
+				}),
+				crit(5, {	-- Coldriver Carp
+					["maps"] = { HIGHMOUNTAIN },
+					["provider"] = { "i", 133732 },
+				}),
+				crit(6, {	-- Ghostly Queenfish
+					["maps"] = { AZSUNA },
+					["provider"] = { "i", 133727 },
+				}),
+				crit(7, {	-- Graybelly Lobster
+					["maps"] = { STORMHEIM },
+					["provider"] = { "i", 133735 },
+				}),
+				crit(8, {	-- Leyshimmer Blenny
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["provider"] = { "i", 133725 },
+				}),
+				crit(9, {	-- Magic-Eater Frog
+					["maps"] = { SURAMAR },
+					["provider"] = { "i", 133737 },
+				}),
+				crit(10, {	-- Mountain Puffer
+					["maps"] = { HIGHMOUNTAIN },
+					["provider"] = { "i", 133731 },
+				}),
+				crit(11, {	-- Nar'thalas Hermit
+					["maps"] = { AZSUNA },
+					["provider"] = { "i", 133726 },
+				}),
+				crit(12, {	-- Oodelfjisk
+					["maps"] = { STORMHEIM },
+					["provider"] = { "i", 133734 },
+				}),
+				crit(13, {	-- Seabottom Squid
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["provider"] = { "i", 133741 },
+				}),
+				crit(14, {	-- Tainted Runescale Koi
+					["maps"] = { SURAMAR },
+					["provider"] = { "i", 133739 },
+				}),
+				crit(15, {	-- Thundering Stormray
+					["maps"] = { STORMHEIM },
+					["provider"] = { "i", 133736 },
+				}),
+				crit(16, {	-- Seerspine Puffer
+					["maps"] = { SURAMAR },
+					["provider"] = { "i", 133738 },
+				}),
+				crit(17, {	-- Terrorfin
+					["maps"] = { VALSHARAH },
+					["provider"] = { "i", 133728 },
+				}),
+				crit(18, {	-- Thorned Flounder
+					["maps"] = { VALSHARAH },
+					["provider"] = { "i", 133729 },
+				}),
+			}),
 			ach(11725, {	-- Fisherfriend of the Isles
 				["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 				["g"] = {
@@ -1387,6 +1464,192 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			}),
 			ach(10597),		-- Legion Aquaculture
 			ach(10594),		-- Legion Fisherman
+			n(-217,   {	-- Lures
+				i(133715, {	-- Ancient Vrykul Ring
+					["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
+					["maps"] = { STORMHEIM },
+					["g"] = {
+						i(133734),	-- Oodelfjisk
+						i(139661),	-- Oodelfjisk [AP]
+					},
+				}),
+				i(133724, {	-- Decayed Whale Blubber
+					["description"] = "Using the item will place a whale blob in front of you, as the item describes. Cast your line, and shortly after a silithid wasp will fly down and hover over the whale blubber.  Click on the fly to add Ravenous Fly to your inventory.",
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["g"] = {
+						i(133795, {	-- Ravenous Fly
+							["description"] = "You must be in c|ffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
+							["g"] = {
+								i(133742),	-- Ancient Black Barracuda
+								i(139669),	-- Ancient Black Barracuda [AP]
+							},
+						}),
+					}
+				}),
+				i(133720, {	-- Demonic Detritus
+					["description"] = "This item will allow you to catch the rare fish Tainted Runescale Koi in Suramar.",
+					["maps"] = { SURAMAR },
+					["g"] = {
+						i(133739),	-- Tainted Runescale Koi
+						i(139666),	-- Tainted Runescale Koi [AP]
+					},
+				}),
+				i(133708, {	-- Drowned Thistleleaf
+					["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
+					["maps"] = { VALSHARAH },
+					["g"] = {
+						i(133729),	-- Thorned Flounder
+						i(139656),	-- Thorned Flounder [AP]
+					},
+				}),
+				i(133717, {	-- Enchanted Lure
+					["description"] = "This item will allow you to catch the rare fish Magic-Eater Frog in Suramar.",
+					["maps"] = { SURAMAR },
+					["g"] = {
+						i(133737),	-- Magic-Eater Frog
+						i(139664),	-- Magic-Eater Frog [AP]
+					},
+				}),
+				i(133712, {	-- Frost Worm
+					["description"] = "This item will allow you to catch the rare fish Coldriver Carp in Highmountain.",
+					["maps"] = { HIGHMOUNTAIN },
+					["g"] = {
+						i(133732),	-- Coldriver Carp
+						i(139659),	-- Coldriver Carp [AP]
+					},
+				}),
+				i(133709, {	-- Funky Sea Snail
+					["description"] = "When the short buff expires, this item will disappear from your inventory and a Bitestone Fishbrul will spawn.  Kill it for the lure.",
+					["maps"] = { HIGHMOUNTAIN },
+					["g"] = {
+						n(102347, {	-- Bitestone Fishbrul
+							i(133710, {	-- Salmon Lure
+								["description"] = "This item will allow you to catch the rare fish Ancient Highmountain Salmon in Highmountain.",
+								["g"] = {
+									i(133733),	-- Ancient Highmountain Salmon
+									i(139660),	-- Ancient Highmountain Salmon [AP]
+								},
+							}),
+						}),
+					},
+				}),
+				i(133721, {	-- Message in a Bottle
+					["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["g"] = {
+						i(133722, {	-- Axefish Lure
+							["description"] = "You must be in c|ffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
+							["g"] = {
+								i(133740),	-- Axefish
+								i(139667),	-- Axefish [AP]
+							},
+						}),
+					},
+				}),
+				i(133713, {	-- Moosehorn Hook
+					["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one.  As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
+					["maps"] = { STORMHEIM },
+					["g"] = {
+						i(133714, {	-- Silverscale Minnow
+							["description"] = "This item will allow you to catch the rare fish Thundering Stormray in Stormheim.",
+							["g"] = {
+								i(133736),	-- Thundering Stormray
+								i(139663),	-- Thundering Stormray [AP]
+							},
+						}),
+					},
+				}),
+				i(133707, {	-- Nightmare Nightcrawler
+					["description"] = "This item will allow you to catch the rare fish Terrorfin in Val'sharah.",
+					["maps"] = { VALSHARAH },
+					["g"] = {
+						i(133728),	-- Terrorfin
+						i(139655),	-- Terrorfin [AP]
+					},
+				}),
+				i(133703, {	-- Pearlescent Conch
+					["description"] = "This item will allow you to catch the rare fish Nar'thalas Hermit in Azsuna.",
+					["maps"] = { AZSUNA },
+					["g"] = {
+						i(133726),	-- Nar'thalas Hermit
+						i(139653),	-- Nar'thalas Hermit [AP]
+					},
+				}),
+				i(133705, {	-- Rotten Fishbone
+					["description"] = "This item will attract a Lorlathil Druid that will cast The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
+					["maps"] = { VALSHARAH },
+					["g"] = {
+						n(102349, {	-- Lorlathil Druid
+							i(133730),	-- Ancient Mossgill
+							i(139657),	-- Ancient Mossgill [AP]
+						}),
+					},
+				}),
+				i(133704, {	-- Rusty Queenfish Brooch
+					["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
+					["maps"] = { AZSUNA },
+					["g"] = {
+						i(133727),	-- Ghostly Queenfish
+						i(139654),	-- Ghostly Queenfish [AP]
+					},
+				}),
+				i(133701, {	-- Skrog Toenail
+					["description"] = "Upon expiration of the Skrog Toenail buff, a Murloc mob will appear. Kill it for the lure.",
+					["maps"] = { AZSUNA },
+					["g"] = {
+						n(102338, {	-- Salteye Skrog-Hunter
+							i(133702, {	-- Aromatic Murloc Slime
+								["description"] = "This item will allow you to catch the rare fish Leyshimmer Blenny in Azsuna.",
+								["g"] = {
+									i(133725),	-- Leyshimmer Blenny
+									i(139652),	-- Leyshimmer Blenny [AP]
+								},
+							}),
+						}),
+					},
+				}),
+				i(133719, {	-- Sleeping Murloc
+					["description"] = "Using this item will awaken a Confused Seerspine Murloc, which will run around briefly and drop some Seerspine Puffers (as well as other fish) nearby.  Run over the fish to pick them up.\n\nIf you use this item on top of a pillar, the murloc won't have anywhere to run and it will be easier to pick up all the fish it drops.\n",
+					["maps"] = { SURAMAR },
+					["g"] = {
+						n(102350, {	-- Confused Seerspine Murloc
+							i(133738),	-- Seerspine Puffer
+							i(139665),	-- Seerspine Puffer [AP]
+						}),
+					},
+				}),
+				i(133716, {	-- Soggy Drakescale
+					["description"] = "This item will allow you to catch the rare fish Graybelly Lobster in Stormheim.",
+					["maps"] = { STORMHEIM },
+					["g"] = {
+						i(133735),	-- Graybelly Lobster
+						i(139662),	-- Graybelly Lobster [AP]
+					},
+				}),
+				i(133723, {	-- Stunned, Angry Shark
+					["description"] = "This item will spawn a Landlocked Shark, which will drop 7-9 Seabottom Squid when killed.  Note that this item only has a 1-minute duration in your bags, and it will disappear if you don't use it by then!\n\nYou must be in c|ffffffffThe Great Sea|r to catch this.",
+					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
+					["g"] = {
+						n(102359, {	-- Landlocked Shark
+							i(133741),	-- Seabottom Squid
+							i(139668),	-- Seabottom Squid [AP]
+						})
+					},
+				}),
+				i(133711, {	-- Swollen Murloc Egg
+					["description"] = "This item will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
+					["maps"] = { HIGHMOUNTAIN },
+					["g"] = {
+						n(102339, {	-- Swamprock Tadpole
+							["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
+							["g"] = {
+								i(133731),	-- Mountain Puffer
+								i(139658),	-- Mountain Puffer [AP]
+							},
+						}),
+					},
+				}),
+			}),
 		})),
 		prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 			o(272768, {	-- Empyrium Deposit

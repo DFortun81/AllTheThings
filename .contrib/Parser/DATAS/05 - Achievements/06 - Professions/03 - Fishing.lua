@@ -11,27 +11,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			ach(1557),		-- 50 Fish
 			ach(1556),		-- 25 Fish
 		}),
-		ach(10596, {	-- Bigger Fish to Fry
-			crit(1),		-- Ancient Black Barracuda
-			crit(2),		-- Ancient Highmountain Salmon
-			crit(3),		-- Ancient Mossgill
-			crit(4),		-- Axefish
-			crit(5),		-- Coldriver Carp
-			crit(6),		-- Ghostly Queenfish
-			crit(7),		-- Graybelly Lobster
-			crit(8),		-- Leyshimmer Blenny
-			crit(9),		-- Magic-Eater Frog
-			crit(10),		-- Mountain Puffer
-			crit(11),		-- Nar'thalas Hermit
-			crit(12),		-- Oodelfjisk
-			crit(13),		-- Seabottom Squid
-			crit(14),		-- Seerspine Puffer
-			crit(15),		-- Tainted Runescale Koi
-			crit(16),		-- Terrorfin
-			crit(17),		-- Thorned Flounder
-			crit(18),		-- Thundering Stormray
-			ach(10595),		-- A Cast Above the Rest
-		}),
 		ach(9456),		-- Abyssal Gulper Eel Angler
 		ach(1516,  {	-- Accomplished Angler
 			title(51),		-- Salty
@@ -54,12 +33,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		ach(128,   {	-- Artisan Fisherman
 			ach(127),		-- Expert Fisherman
 			ach(126),		-- Journeyman Fisherman
-		}),
-		ach(12758, {	-- Baiting the Enemy (A)
-			["races"] = ALLIANCE_ONLY,
-		}),
-		ach(12759, {	-- Baiting the Enemy (H)
-			["races"] = HORDE_ONLY,
 		}),
 		ach(9457),		-- Blackwater Whiptail Angler
 		ach(9458),		-- Blind Lake Sturgeon Angler
@@ -103,8 +76,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(13),		-- Snapclaw
 			crit(14),		-- Piranha!
 		}),
-		ach(306),		-- Master Angler of Azeroth
-		ach(726),		-- Mr. Pinchy's Magical Crawdad Box
 		ach(1517,  {	-- Northrend Angler
 			crit(1),		-- Borean Man O' War School
 			crit(2),		-- Deep Sea Monsterbelly School
@@ -323,7 +294,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(41),		-- Striped Lurker
 			crit(42),		-- Zangarian Sporefish
 		}),
-		ach(144),		-- The Lurker Above
 		ach(5479,  {	-- The Oceanographer
 			crit(1),		-- Abyssal Clam
 			crit(2),		-- Algaefin Rockfish
@@ -364,64 +334,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(3),		-- Schooner Wreckage
 			crit(4),		-- Waterlogged Wreckage
 			crit(5),		-- Floating Wreckage
-		}),
-		ach(10722, {	-- The Wish Remover
-			crit(1),		-- Stellagosa's Silver Coin
-			crit(2),		-- Prince Farondis's Royal Seal
-			crit(3),		-- Runas' Last Copper
-			crit(4),		-- Senegos' Ancient Coin
-			crit(5),		-- Okuna Longtusk's Doubloon
-			crit(6),		-- Ooker's Dookat
-			crit(7),		-- Coin of Golk the Rumble
-			crit(8),		-- Daglop's Infernal Copper Coin
-			crit(9),		-- Tyrande's Coin
-			crit(10),		-- Malfurion's Coin
-			crit(11),		-- Kur'talos Ravencrest's Spectral Coin
-			crit(12),		-- Jarod Shadowsong's Coin
-			crit(13),		-- Penelope Heathrow's Allowance
-			crit(14),		-- Remulos' Sigil
-			crit(15),		-- Elothir's Golden Leaf
-			crit(16),		-- Koda's Sigil
-			crit(17),		-- King Mrgl-Mrgl's Coin
-			crit(18),		-- Hemet Nesingwary's Bullet
-			crit(19),		-- Murky's Coin
-			crit(20),		-- Spiritwalker Ebonhorn's Coin
-			crit(21),		-- Addie Fizzlebog's Coin
-			crit(22),		-- Boomboom Brullingsworth's Coin
-			crit(23),		-- The Candleking's Candlecoin
-			crit(24),		-- Torok Bloodtotem's Coin
-			crit(25),		-- God-King Skovald's Fel-Tainted Coin
-			crit(26),		-- Genn Greymane's Coin
-			crit(27),		-- Nathanos Blightcaller's Coin
-			crit(28),		-- Helya's Coin
-			crit(29),		-- Sir Finley Mrrgglton's Coin
-			crit(30),		-- Havi's Coin
-			crit(31),		-- Vydhar's Wooden Nickel
-			crit(32),		-- Rax Sixtrigger's Gold-Painted Copper Coin
-			crit(33),		-- First Arcanist Thalyssra's Coin
-			crit(34),		-- Magistrix Elisande's Coin
-			crit(35),		-- Oculeth's Vanishing Coin
-			crit(36),		-- Ly'leth Lunastre's Family Crest
-			crit(37),		-- Pearlhunter Phin's Soggy Coin
-			crit(38),		-- Advisor Vandros' Coin
-			crit(39),		-- Gul'dan's Coin
-			crit(40),		-- Yowlon's Mark
-			crit(41),		-- Allari the Souleater's Coin
-			crit(42),		-- Altruis the Sufferer's Coin
-			crit(43),		-- Cyana Nightglaive's Coin
-			crit(44),		-- Falara Nightsong's Coin
-			crit(45),		-- Izal Whitemoon's Coin
-			crit(46),		-- Jace Darkweaver's Coin
-			crit(47),		-- Kayn Sunfury's Coin
-			crit(48),		-- Kor'vas Bloodthorn's Coin
-			crit(49),		-- The Coin
-			crit(50),		-- Blingtron's Botcoin
-			crit(51),		-- Lady Liadrin's Coin
-			crit(52),		-- Lunara's Coin
-			crit(53),		-- Illidan's Coin
-			crit(54),		-- Queen Azshara's Royal Seal
-			crit(55),		-- Gallywix's Coin-on-a-String
-			crit(56),		-- Li Li's Coin
 		}),
 		ach(3218),		-- Turtles All the Way Down
 		ach(12754, {	-- Zandalari Fisherman (H)
