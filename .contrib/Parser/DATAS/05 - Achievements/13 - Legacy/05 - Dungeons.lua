@@ -210,11 +210,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, ach(8997)),		-- Iron Docks Challenger
 			un(REMOVED_FROM_GAME, spell(159896)),	-- Path of the Iron Prow
 		})),
-		un(REMOVED_FROM_GAME, ach(2188, {	-- Leeeeeeeeeeeeeroy!
-			title(110, {	-- Jenkins
-				["style"] = 2,
-			}),
-		})),
 		un(REMOVED_FROM_GAME, ach(6901, {	-- Mogu'shan Palace: Gold
 			un(REMOVED_FROM_GAME, ach(6900)),		-- Mogu'shan Palace: Silver
 			un(REMOVED_FROM_GAME, ach(6899)),		-- Mogu'shan Palace: Bronze
@@ -282,7 +277,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, spell(159901)),	-- Path of the Verdant
 		})),
 		un(REMOVED_FROM_GAME, ach(11218)),	-- There's a Boss In There
-		un(REMOVED_FROM_GAME, ach(1307)),	-- Upper Blackrock Spire (Classic)
 		un(REMOVED_FROM_GAME, ach(8894, {	-- Upper Blackrock Spire: Gold
 			un(REMOVED_FROM_GAME, ach(8893)),		-- Upper Blackrock Spire: Silver
 			un(REMOVED_FROM_GAME, ach(8892)),		-- Upper Blackrock Spire: Bronze
