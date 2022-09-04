@@ -562,44 +562,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 			-- SIDE 6 --
 
-			q(67564, {	-- Artisan's Courier
-			-- TODO: Might be BC
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 192498 },	-- Haephesta
-				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
-				["g"] = {
-					i(198790),	-- I.O.U
-					i(195357),	-- Artisan's Consortium Invoice
-				},
-			}),
-			q(67100, {	-- A Gift for Miguel
-				["sourceQuests"] = { 67564 },	-- Artisan's Courier
-				["provider"] = { "n", 192574 },	-- Thomas Bright
-				["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
-				["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
-				["g"] = {
-					i(194715),	-- Gatherer's Pouch
-				},
-			}),
-			q(67143, {	-- To Give One's Heart
-				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-				["provider"] = { "n", 192574 },	-- Thomas Bright
-				["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
-				["g"] = {
-					i(194746),	-- Thomas's Empty Bottle (Weird.... Thomas's?)
-				},
-			}),
-			q(67143, {	-- To Give One's Heart
-				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
-				["provider"] = { "n", 192539 },	-- Miguel Bright
-				["coord"] = { 59.9, 71.6, THE_WAKING_SHORES },
-				["g"] = {
-					i(193487),	-- Alchemist's Hat
-					i(193615),	-- Jeweler's Tool Apron
-					i(193534),	-- Wildercloth Chef's Hat
-					i(193529),	-- Wildercloth Fishing Cap
-				},
-			}),
+
 
 
 
@@ -617,23 +580,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 
 
-			-- SIDE 8 --
 
-			q(70355, {	-- To the Dragon Isles: Alchemy
-				-- TODO: Might only be Alch
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
-				["provider"] = { "n", 191893 },	-- Zherrak
-				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-			}),
-			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
-				-- TODO: Available at 64?
-				["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
-				["provider"] = { "n", 191893 },	-- Zherrak
-				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["g"] = {
-					i(191462),	-- Hochenblume+++
-				},
-			}),
+
+
 
 
 			-- SIDE 9 --
@@ -817,22 +766,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "o", 381670 },	-- Archivist's Request
 				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
 			}),
-			-- SIDE 13 --
-			q(70365, {	-- To the Dragon Isles: Jewelcrafting
-				-- TODO: Might only be Jewelcrafting
-				["sourceQuests"] = { 66057 },	-- Restoring the Faith
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-			}),
-			q(70032, {	-- Artisan's Supply: Jeweler's Specs
-			-- TODO: Available 64??
-				["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-				["g"] = {
-					i(192851),	-- Eternity Amber
-				},
-			}),
 
 
 
@@ -961,6 +894,97 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 				}),
 			}),
+
+
+			-- HELLO IM A PROFESSION! --
+			n(PROFESSIONS, {
+				-- GENERAL PROFESSION
+				q(67564, {	-- Artisan's Courier
+					-- TODO: Might be BC
+					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["provider"] = { "n", 192498 },	-- Haephesta
+					["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(198790),	-- I.O.U
+						i(195357),	-- Artisan's Consortium Invoice
+					},
+				}),
+				q(67100, {	-- A Gift for Miguel
+					["sourceQuests"] = { 67564 },	-- Artisan's Courier
+					["provider"] = { "n", 192574 },	-- Thomas Bright
+					["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
+					["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
+					["g"] = {
+						i(194715),	-- Gatherer's Pouch
+					},
+				}),
+				q(67143, {	-- To Give One's Heart
+					["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+					["provider"] = { "n", 192574 },	-- Thomas Bright
+					["coord"] = { 60.2, 72.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(194746),	-- Thomas's Empty Bottle (Weird.... Thomas's?)
+					},
+				}),
+				q(67143, {	-- To Give One's Heart
+					["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+					["provider"] = { "n", 192539 },	-- Miguel Bright
+					["coord"] = { 59.9, 71.6, THE_WAKING_SHORES },
+					["g"] = {
+						i(193487),	-- Alchemist's Hat
+						i(193615),	-- Jeweler's Tool Apron
+						i(193534),	-- Wildercloth Chef's Hat
+						i(193529),	-- Wildercloth Fishing Cap
+					},
+				}),
+				prof(ALCHEMY, {
+					q(70355, {	-- To the Dragon Isles: Alchemy
+						["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+						["provider"] = { "n", 191893 },	-- Zherrak
+						["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+					}),
+					q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
+						-- TODO: Available at 64?
+						["sourceQuests"] = { 70355 },	-- To the Dragon Isles: Alchemy
+						["provider"] = { "n", 191893 },	-- Zherrak
+						["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+						["g"] = {
+							i(191462),	-- Hochenblume+++
+						},
+					}),
+				}),
+				prof(JEWELCRAFTING, {
+					q(70365, {	-- To the Dragon Isles: Jewelcrafting
+						["sourceQuests"] = { 66057 },	-- Restoring the Faith
+						["provider"] = { "n", 192121 },	-- Falron Greygold
+						["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+					}),
+					q(70032, {	-- Artisan's Supply: Jeweler's Specs
+						-- TODO: Available 64??
+						["sourceQuests"] = { 70365 },	-- To the Dragon Isles: Jewelcrafting
+						["provider"] = { "n", 192121 },	-- Falron Greygold
+						["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+						["g"] = {
+							i(192851),	-- Eternity Amber
+						},
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					q(70363, {    -- To the Dragon Isles: Leatherworking
+						--["sourceQuests"] = {  },	-- Unknown
+						["provider"] = { "n", 192048 },    -- Deirdre Flemmin
+						["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
+					}),
+				}),
+				prof(SKINNING, {
+					q(70363, {	-- To the Dragon Isles: Skinning
+						--["sourceQuests"] = {  },	-- Unknown
+						["provider"] = { "n", 192558 },    -- Toninaar
+						["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
+					}),
+				}),
+			}),
+
 
 
 			-- Annoying Repeatable Dragon Racing Quests..
