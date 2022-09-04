@@ -6,7 +6,7 @@ root(ROOTS.Holidays, {	-- General Holiday Content
 	ach(2144, {	-- What a Long, Strange Trip It's Been
 		-- Meta Achievement should symlink the contained Achievements from Source
 		["sym"] = {
-			{"select","achievementID",
+			{"meta_achievement",
 				913,	-- To Honor One's Elders
 				1693,	-- Fool For Love
 				2798,	-- Noble Gardener

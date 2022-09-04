@@ -15,7 +15,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(1169, {	-- Master of Arathi Basin
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						155,	-- Arathi Basin Veteran
 						165,	-- Arathi Basin Perfection
 						158,	-- Me and the Cappin' Makin' it Happen

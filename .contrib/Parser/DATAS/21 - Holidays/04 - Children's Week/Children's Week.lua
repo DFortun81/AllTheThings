@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(1793, {	-- For the Children
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						1791,				-- Home Alone
 						1788,				-- Bad Example
 						1789,				-- Daily Chores

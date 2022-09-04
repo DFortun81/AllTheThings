@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(13142),		-- Archipelago Explorer
 			pvp(ach(13134, {	-- Expedition Leader
-				["sym"] = {{"select","achievementID",
+				["sym"] = {{"meta_achievement",
 					13122,	-- Island Conqueror
 					13125,	-- Azerite Admiral
 					13126,	-- Give Me The Energy

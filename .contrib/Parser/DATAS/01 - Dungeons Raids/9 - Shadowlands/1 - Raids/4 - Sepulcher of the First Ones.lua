@@ -23,7 +23,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 				ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
 					-- Meta Achievement
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							15479,	-- Mythic: Vigilant Guardian
 							15480,	-- Mythic: Skolex
 							15481,	-- Mythic: Artificer Xy'mox

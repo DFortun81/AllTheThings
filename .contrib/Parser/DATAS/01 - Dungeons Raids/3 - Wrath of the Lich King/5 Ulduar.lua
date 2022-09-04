@@ -12,14 +12,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 			n(ACHIEVEMENTS, {
 				ach(12311, {	-- The Secrets of Ulduar
 					-- Meta Achievement
-					["sym"] = {
-						{"select","achievementID",
-							12297,	-- The Siege of Ulduar
-							12302,	-- The Antechamber of Ulduar
-							12309,	-- The Keepers of Ulduar
-							12310,	-- The Descent into Madness
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						12297,	-- The Siege of Ulduar
+						12302,	-- The Antechamber of Ulduar
+						12309,	-- The Keepers of Ulduar
+						12310,	-- The Descent into Madness
+					}},
 				}),
 				ach(12297, {	-- The Siege of Ulduar
 					crit(1, {	-- Flame Leviathan

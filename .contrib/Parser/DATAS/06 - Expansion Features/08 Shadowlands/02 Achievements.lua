@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 		ach(14315, {	-- Shadowlands Diplomat
 			-- Meta Achievement
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					14335,	-- The Ascended
 					14336,	-- Undying Army
 					14338,	-- Court of Harvesters

@@ -12,7 +12,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(1172, {	-- Master of Warsong Gulch
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						167,	-- Warsong Gulch Veteran
 						199,	-- Capture the Flag
 						200,	-- Persistent Defender

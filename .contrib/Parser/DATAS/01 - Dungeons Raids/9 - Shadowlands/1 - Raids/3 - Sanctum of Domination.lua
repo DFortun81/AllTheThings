@@ -1051,7 +1051,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 				ach(15128, {	-- Mythic: Sanctum of Domination
 					-- Meta Achievement
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							15112,	-- Mythic: The Tarragrue
 							15113,	-- Mythic: The Eye of the Jailer
 							15114,	-- Mythic: The Nine

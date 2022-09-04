@@ -3850,7 +3850,7 @@ root("Zones", {
 						}),
 					}),
 					ach(2096,  {	-- The Coin Master
-						["sym"] = {{"select","achievementID",
+						["sym"] = {{"meta_achievement",
 							2094,	-- A Penny For Your Thoughts
 							2095,	-- Silver in the City
 							1957,	-- There's Gold In That There Fountain

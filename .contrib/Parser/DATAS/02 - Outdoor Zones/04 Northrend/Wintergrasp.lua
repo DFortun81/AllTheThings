@@ -10,21 +10,19 @@ root("Zones", {
 				pvp(n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp
 						-- Meta Achievement should symlink the contained Achievements from Source
-						["sym"] = {
-							{"select","achievementID",
-								1722,	-- Archavon the Stone Watcher (10 player)
-								1721,	-- Archavon the Stone Watcher (25 player)
-								2080,	-- Black War Mammoth
-								1737,	-- Destruction Derby (A)
-								2476,	-- Destruction Derby (H)
-								1751,	-- Didn't Stand a Chance
-								1727,	-- Leaning Tower
-								1723,	-- Vehicular Gnomeslaughter
-								2199,	-- Wintergrasp Ranger
-								1718,	-- Wintergrasp Veteran
-								1755,	-- Within Our Grasp
-							},
-						},
+						["sym"] = {{"meta_achievement",
+							1722,	-- Archavon the Stone Watcher (10 player)
+							1721,	-- Archavon the Stone Watcher (25 player)
+							2080,	-- Black War Mammoth
+							1737,	-- Destruction Derby (A)
+							2476,	-- Destruction Derby (H)
+							1751,	-- Didn't Stand a Chance
+							1727,	-- Leaning Tower
+							1723,	-- Vehicular Gnomeslaughter
+							2199,	-- Wintergrasp Ranger
+							1718,	-- Wintergrasp Veteran
+							1755,	-- Within Our Grasp
+						}},
 					}),
 					ach(1717, {	-- Wintergrasp Victory
 						["rank"] = 1,

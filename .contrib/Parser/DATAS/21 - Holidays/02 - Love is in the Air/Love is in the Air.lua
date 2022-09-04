@@ -36,7 +36,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			ach(1693, {	-- Fool For Love
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						260,	-- Charming
 						1188,	-- Shafted!
 						1279,	-- Flirt With Disaster [Alliance]

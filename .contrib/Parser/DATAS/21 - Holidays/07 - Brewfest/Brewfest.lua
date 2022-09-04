@@ -151,7 +151,7 @@ root("Holidays", applyholiday(BREWFEST, {
 			ach(1683, {	-- Brewmaster
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						1185,				-- The Brewfest Diet
 						2796,				-- Brew of the Month
 						295,				-- Direbrewfest

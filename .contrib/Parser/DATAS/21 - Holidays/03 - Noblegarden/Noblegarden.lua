@@ -160,7 +160,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 			ach(2798, {	-- Noble Gardener
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						2676,	-- I Found One
 						2418,	-- Chocoholic
 						2436,	-- Desert Rose

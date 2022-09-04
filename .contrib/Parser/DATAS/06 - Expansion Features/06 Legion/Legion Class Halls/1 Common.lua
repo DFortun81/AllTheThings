@@ -172,7 +172,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			}),
 			ach(10748, {	-- Fighting with Style: Valorous
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						10459,	-- Improving on History
 						11160,	-- Unleashed Monstrosities
 						11162,	-- Keystone Master

@@ -389,7 +389,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				ach(1038, {		-- The Flame Warden (Alliance)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1034,				-- The Fires of Azeroth (A)
 							1035,				-- Desecration of the Horde (A)
 							263,				-- Ice the Frost Lord
@@ -405,7 +405,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 
 				ach(1035, {		-- Desecration of the Horde (A)
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1028,	-- Extinguishing Eastern Kingdoms (A)
 							1029,	-- Extinguishing Kalimdor (A)
 							1030,	-- Extinguishing Outland (A)
@@ -812,7 +812,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 
 				ach(1034, {		-- The Fires of Azeroth (A)
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1022,	-- Flame Warden of Eastern Kingdoms (A)
 							1023,	-- Flame Warden of Kalimdor (A)
 							1024,	-- Flame Warden of Outland (A)
@@ -826,7 +826,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 				ach(1039, {		-- The Flame Keeper (Horde)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1036,				-- The Fires of Azeroth (H)
 							1037,				-- Desecration of the Alliance (H)
 							263,				-- Ice the Frost Lord
@@ -842,7 +842,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 
 				ach(1037, {		-- Desecration of the Alliance (H)
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1031,	-- Extinguishing Eastern Kingdoms (H)
 							1032,	-- Extinguishing Kalimdor (H)
 							1033,	-- Extinguishing Outland (H)
@@ -1249,7 +1249,7 @@ root("Holidays", applyholiday(MIDSUMMER_FIRE_FESTIVAL, {
 
 				ach(1036, {		-- The Fires of Azeroth (H)
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1025,	-- Flame Keeper of Eastern Kingdoms (H)
 							1026,	-- Flame Keeper of Kalimdor (H)
 							1027,	-- Flame Keeper of Outland (H)

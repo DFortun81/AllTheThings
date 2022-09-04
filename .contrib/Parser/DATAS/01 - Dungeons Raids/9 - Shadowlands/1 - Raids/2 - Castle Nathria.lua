@@ -1115,7 +1115,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					ach(14718, {	-- Mythic: Castle Nathria
 						-- Meta Achievement
 						["sym"] = {
-							{"select","achievementID",
+							{"meta_achievement",
 								14359,	-- Mythic: Artificer Xy'mox
 								14358,	-- Mythic: Hungering Destroyer
 								14357,	-- Mythic: Huntsman Altimor

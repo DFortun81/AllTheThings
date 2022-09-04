@@ -633,7 +633,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				["g"] = {
 					pvp(n(ACHIEVEMENTS, {	-- pvp map
 						a(ach(5489,	{ -- Master of Tol Barad (A)
-							["sym"] = {{"select","achievementID",
+							["sym"] = {{"meta_achievement",
 								5417,	-- Tol Barad Veteran
 								5415,	-- Tower Plower
 								5488,	-- Towers of Power
@@ -643,7 +643,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 							}},
 						})),
 						h(ach(5490,	{ -- Master of Tol Barad (H)
-							["sym"] = {{"select","achievementID",
+							["sym"] = {{"meta_achievement",
 								5418,	-- Tol Barad Veteran
 								5415,	-- Tower Plower
 								5488,	-- Towers of Power

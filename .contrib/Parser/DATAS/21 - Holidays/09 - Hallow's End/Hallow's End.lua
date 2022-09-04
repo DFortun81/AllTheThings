@@ -394,7 +394,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			ach(1656, {	-- Hallowed Be Thy Name
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						972,				-- Trick or Treat!
 						288,				-- Out With It
 						255,				-- Bring Me The Head of... Oh Wait

@@ -77,7 +77,7 @@ root("Instances", tier(SL_TIER, {
 			ach(15651, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Myths of the Shadowlands Dungeons
 				-- Meta Achievement
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						14368,	-- Mythic: The Necrotic Wake
 						14413,	-- Mythic: Mists of Tirna Scithe
 						14325,	-- Mythic: Spires of Ascension

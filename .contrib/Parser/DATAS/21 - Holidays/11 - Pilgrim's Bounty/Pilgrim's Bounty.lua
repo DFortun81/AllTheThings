@@ -37,7 +37,7 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 			ach(3478, {	-- Pilgrim
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						3579,				-- "FOOD FIGHT!"
 						3576,				-- Now We're Cookin' (A)
 						3577,				-- Now We're Cookin' (H)

@@ -61,7 +61,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(1691, {	-- Merrymaker
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						273,			-- On Metzen!
 						252,			-- With a Little Helper from My Friends
 						1255,			-- Scrooge (A)

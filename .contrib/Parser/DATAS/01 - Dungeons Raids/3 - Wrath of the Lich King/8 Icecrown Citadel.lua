@@ -13,51 +13,43 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 			n(ACHIEVEMENTS, {
 				ach(4532, {	-- Fall of the Lich King (10 player)
 					-- Meta Achievement
-					["sym"] = {
-						{"select","achievementID",
-							4531,	-- Storming the Citadel (10 player)
-							4528,	-- The Plagueworks (10 player)
-							4529,	-- The Crimson Hall (10 player)
-							4527,	-- The Frostwing Halls (10 player)
-							4530,	-- The Frozen Throne (10 player)
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						4531,	-- Storming the Citadel (10 player)
+						4528,	-- The Plagueworks (10 player)
+						4529,	-- The Crimson Hall (10 player)
+						4527,	-- The Frostwing Halls (10 player)
+						4530,	-- The Frozen Throne (10 player)
+					}},
 				}),
 				ach(4636, {	-- Heroic: Fall of the Lich King (10 player)
 					-- Meta Achievement
-					["sym"] = {
-						{"select","achievementID",
-							4628,	-- Heroic: Storming the Citadel (10 player)
-							4629,	-- Heroic: The Plagueworks (10 player)
-							4630,	-- Heroic: The Crimson Hall (10 player)
-							4631,	-- Heroic: The Frostwing Halls (10 player)
-							4583,	-- Bane of the Fallen King
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4583,	-- Bane of the Fallen King
+					}},
 				}),
 				ach(4608, {	-- Fall of the Lich King (25 player)
 					-- Meta Achievement
-					["sym"] = {
-						{"select","achievementID",
-							4604,	-- Storming the Citadel (25 player)
-							4605,	-- The Plagueworks (25 player)
-							4606,	-- The Crimson Hall (25 player)
-							4607,	-- The Frostwing Halls (25 player)
-							4597,	-- The Frozen Throne (25 player)
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						4604,	-- Storming the Citadel (25 player)
+						4605,	-- The Plagueworks (25 player)
+						4606,	-- The Crimson Hall (25 player)
+						4607,	-- The Frostwing Halls (25 player)
+						4597,	-- The Frozen Throne (25 player)
+					}},
 				}),
 				ach(4637, {	-- Heroic: Fall of the Lich King (25 player)
 					-- Meta Achievement
-					["sym"] = {
-						{"select","achievementID",
-							4632,	-- Heroic: Storming the Citadel (25 player)
-							4633,	-- Heroic: The Plagueworks (25 player)
-							4634,	-- Heroic: The Crimson Hall (25 player)
-							4635,	-- Heroic: The Frostwing Halls (25 player)
-							4584,	-- The Light of Dawn
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						4632,	-- Heroic: Storming the Citadel (25 player)
+						4633,	-- Heroic: The Plagueworks (25 player)
+						4634,	-- Heroic: The Crimson Hall (25 player)
+						4635,	-- Heroic: The Frostwing Halls (25 player)
+						4584,	-- The Light of Dawn
+					}},
 				}),
 			}),
 			faction(1156, {	-- The Ashen Verdict
