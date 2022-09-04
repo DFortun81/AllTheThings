@@ -7,32 +7,67 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 		n(QUESTS, {
 			-- Chapter 0
 			-- TODO: ARE THESE HORDE ONLY IN THE START?
-			q(65452, {	-- Explorers in Peril
+			q(70122, {	-- Explorers in Peril [A]
+				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+				["provider"] = { "n", 189022 },	-- Toddy Whiskers
+				["coord"] = { 82.1, 31.9, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(65452, {	-- Explorers in Peril [H]
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 				["provider"] = { "n", 184841 },	-- Naleidea Rivergleam
 				["coord"] = { 80.6, 27.6, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
-			q(65451, {	-- Practice Materials
+			q(70124, {	-- Practice Materials [A]
+				["sourceQuests"] = { 67700 },	-- To The Dragon Isles! [A]
+				["provider"] = { "n", 189021 },	-- Thaelin Darkanvil
+				["coord"] = { 82.1, 31.9, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(65451, {	-- Practice Materials [H]
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 				["provider"] = { "n", 184844 },	-- Boss Magor
 				["coord"] = { 80.6, 27.7, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
-			q(65453, {	-- Primal Pests
+			q(70123, {	-- Primal Pests [A]
+            	["sourceQuests"] = { 67700 },		-- To The Dragon Isles! [A]
+				["provider"] = { "n", 189035 },	-- Scalecommander Azurathel
+				["coord"] = { 82.2, 31.8, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(65453, {	-- Primal Pests [H]
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
 				["provider"] = { "n", 184859 },	-- Scalecommander Cindretresh
 				["coord"] = { 80.7, 27.6, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
-			q(69910, {	-- Where is Wrathion?
+			q(70125, {	-- Where is Wrathion? [A]
 				["sourceQuests"] = {
-					65452,	-- Explorers in Peril
-					65451,	-- Practice Materials
-					65453,	-- Primal Pests
+					70122,	-- Explorers in Peril [A]
+					70124,	-- Practice Materials [A]
+					70123,	-- Primal Pests [A]
+				},
+				["provider"] = { "n", 187251 },	-- Toddy Whiskers
+				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(69910, {	-- Where is Wrathion? [H]
+				["sourceQuests"] = {
+					65452,	-- Explorers in Peril [H]
+					65451,	-- Practice Materials [H]
+					65453,	-- Primal Pests [H]
 				},
 				["provider"] = { "n", 184870 },	-- Naleidea Rivergleam
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
 			q(69911, {	-- Excuse the Mess
-				["sourceQuests"] = { 69910 },	-- Where is Wrathion?
+				["sourceQuests"] = {
+					70125,	-- Where is Wrathion? [A]
+					69910,	-- Where is Wrathion? [H]
+				},
 				["provider"] = { "n", 193362 },	-- Sendrax
 				["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 			}),
@@ -65,6 +100,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 186584 },	-- Commander Lethanak
 				["coord"] = { 71.2, 40.8, THE_WAKING_SHORES },
 				["g"] = {
+					i(194403),	-- Field Scout's Vest
 					i(194402),	-- League Mercenary's Hauberk
 				},
 			}),
@@ -89,6 +125,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(194389),	-- Brush Clearing Axe
 					i(194377),	-- Reliquary Dissection Knife
 					i(198488),	-- Staff of Discovery
+					i(194373),	-- Field Explorer's Stave
 				},
 			}),
 			q(65995, {	-- The Obsidian Citadel
@@ -139,6 +176,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 190171 },	-- Sendrax
 				["coord"] = { 54.0, 22.8, THE_WAKING_SHORES },	-- This isnt true, He follows you....
 				["g"] = {
+					i(194383),	-- Field Scout's Boots
 					i(194382),	-- League Mercenary's Boots
 					-- Crit for Chap.
 				},
@@ -425,19 +463,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 			-- SIDE 1 --
 			-- TODO: PROBABLY HAS ALLIANCE QUEST ALSO
-			q(66110, {	-- Give Peace a Chance
+			q(67053, {	-- Give Peace a Chance [A]
 				["sourceQuests"] = {
-					65452,	-- Explorers in Peril
-					65451,	-- Practice Materials
-					65453,	-- Primal Pests
+					70122,	-- Explorers in Peril [A]
+					70124,	-- Practice Materials [A]
+					70123,	-- Primal Pests [A]
+				},
+				["provider"] = { "n", 184449 },	-- Captain Garrick
+				["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(66110, {	-- Give Peace a Chance [H]
+				["sourceQuests"] = {
+					65452,	-- Explorers in Peril [H]
+					65451,	-- Practice Materials [H]
+					65453,	-- Primal Pests [H]
 				},
 				["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
 				["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 			}),
-			q(66111, {	-- Encroaching Elementals
-				["sourceQuests"] = { 66110 },	-- Give Peace a Chance
+			q(70135, {	-- Encroaching Elementals [A]
+				["sourceQuests"] = { 67053 },	-- Give Peace a Chance [A]
+				["provider"] = { "n", 184452 },	-- Warlord Breka Grimaxe
+				["coord"] = { 76.4, 33.1, THE_WAKING_SHORES },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					--All Sides of the Story Crit 1 (achievement id 16406)
+				},
+			}),
+			q(66111, {	-- Encroaching Elementals [H]
+				["sourceQuests"] = { 66110 },	-- Give Peace a Chance [H]
 				["provider"] = { "n", 184449 },	-- Captain Garrick
 				["coord"] = { 76.7, 34.6, THE_WAKING_SHORES },
+				["races"] = HORDE_ONLY,
 				["g"] = {
 					--All Sides of the Story Crit 1
 				},
