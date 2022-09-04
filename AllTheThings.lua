@@ -13543,7 +13543,7 @@ local tiers = {
 		["lvl"] = 50,
 	},
 	{	-- Dragonflight
-		["icon"] = app.asset("Expansion_DF"),
+		["icon"] = app.asset("Expansion_BFA"),--app.asset("Expansion_DF"),
 		["lore"] = L["DF_TIER_DESC"],
 		["lvl"] = 60,
 	},
@@ -13560,11 +13560,13 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- patch can be included in the id
 	local tierID = math_floor(id);
-	rawset(t, "tierKey", tierID);
-	local patch_decimal = 100 * (id - tierID);
-	local patch = math_floor(patch_decimal + 0.0001);
-	local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
-	-- print("tier cache",id,tierID,patch_decimal,patch,rev)
+	if tierID ~= 10 then
+		rawset(t, "tierKey", tierID);
+		local patch_decimal = 100 * (id - tierID);
+		local patch = math_floor(patch_decimal + 0.0001);
+		local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
+		-- print("tier cache",id,tierID,patch_decimal,patch,rev)
+	end
 	if id > tierID then
 		_t.name = tostring(tierID).."."..tostring(patch).."."..tostring(rev);
 	else

@@ -261,9 +261,9 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191883),	-- Tyrivite Repair Hammer
 			i(191256),	-- Tyrivite Skeleton Key
 		}),
-		filter(PETS, {
-			i(191886),	-- Alvin the Anvil (PET!)
-		}),
+		--filter(PETS, {
+			--i(191886),	-- Alvin the Anvil (PET!)
+		--}),
 		n(WEAPONS, {
 			i(190514),	-- Black Dragon Seared Claymore
 			i(190516),	-- Black Dragon Seared Crusher

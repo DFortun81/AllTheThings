@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	inst(1202, {	-- Ruby Life Pools
 		["coord"] = { 60.1, 75.7, THE_WAKING_SHORES },
 		["maps"] = {
@@ -26,7 +26,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2606, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
-
+						i(193767),	-- Havoc Crusher
 					},
 				}),
 				e(2569, {	-- Kyrakka and Erkhart Stormvein
@@ -35,10 +35,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						190485,	-- Erkhart Stormvein
 					},
 					["g"] = {
-
+						i(193755),	-- Backdraft Cleaver
 					},
 				}),
 			}),
 		},
 	})
-})));
+}))));

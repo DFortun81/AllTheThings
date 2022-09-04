@@ -553,9 +553,23 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 
+			-- SIDE 11 --
+			q(66524, {	-- Amateur Protography
+				--["sourceQuests"] = {  },	Unknown
+				["provider"] = { "n", 187705 },	-- Cataloger Wulferd
+				["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(192465),	-- Wulferd's Award-Winning Camera
+				},
+			}),
 
 
-
+			-- SIDE 12 --
+			q(71008, {	-- Wanted: Stoneheart's Stone Heart
+				--["sourceQuests"] = {  },	Unknown
+				["provider"] = { "o", 381670 },	-- Archivist's Request
+				["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
+			}),
 			-- BO ---
 			q(65451, {	-- Practice Materials
 				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
@@ -592,6 +606,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				-- TODO: MIGHT NOT BE TRUE
 				["sourceQuests"] = { 66116 },	-- The Primary Threat
 				["coord"] = { 58.9, 76.6, THE_WAKING_SHORES },
+			}),
+			q(70196, {	-- Pruning the Preserve
+				--["sourceQuests"] = {  },	-- Unknown
+				["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
 			}),
 
 

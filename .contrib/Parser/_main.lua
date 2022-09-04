@@ -1097,6 +1097,9 @@ BFA_PHASE_ONE = 80;
 -- Shadowlands Phases
 SHADOWLANDS_PHASE_ONE = 90;
 
+-- Dragonflight Phases
+DF_PHASE_ONE = 100;
+
 -- Done defining Phases for Classic
 -- #endif
 

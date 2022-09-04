@@ -1,8 +1,17 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
 	n(QUESTS, {
+		q(65439, {	-- Whispers in the Winds [H]
+			["sourceQuests"] = { 65443 },	-- Expeditionary Coordination [H]
+			["provider"] = { "n", 193450 },	-- Archmage Khadgar
+			["coord"] = { 55.9, 12.6, DUROTAR },
+			["races"] = HORDE_ONLY,
+		}),
+	}),
+}))));
+		--[[
 		-- TODO: START FROM A/H NORMAL AND A/H EVOKER NEEDED
 		q(65436, {	-- The Dragon Isles Await [A]
 			["sourceQuests"] = { xxxxx },	-- Name
@@ -130,4 +139,4 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 
 
 	}),
-})));
+})));]]

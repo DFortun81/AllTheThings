@@ -5,8 +5,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(OHNAHRAN_PLAINS, {
 		--["achievementID"] =
 		--["lore"] =
-		["maps"] = {
+		--["maps"] = {
 
-		},
+		--},
 	}),
 })));

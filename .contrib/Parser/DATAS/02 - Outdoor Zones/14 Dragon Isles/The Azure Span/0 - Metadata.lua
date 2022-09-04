@@ -5,8 +5,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THE_AZURE_SPAN, {
 		--["achievementID"] =
 		--["lore"] =
-		["maps"] = {
+		--["maps"] = {
 
-		},
+		--},
 	}),
 })));
