@@ -1297,6 +1297,7 @@ for key,value in pairs({
 	[195517] = "Suivante d'Élune",	-- Elune's Handmaiden
 	[195600] = "Pierre fumante",	-- Smouldering Stone
 	[195642] = "Pierre de puissance naga",	-- Naga Power Stone
+	[195665] = "Coffre d'offrande de la Croisade d'argent",	-- Argent Crusade Tribute Chest
 	[195676] = "Haut-parleur du Laboratoire secret",	-- Secret Lab Squakbox
 	[196393] = "Relique cassée",	-- Broken Relic
 	[196832] = "Pierre de vision supérieure",	-- Upper Scrying Stone
