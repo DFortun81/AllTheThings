@@ -49,21 +49,21 @@ root("Zones", {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with Ogri'la to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
-						["description"] = "Raise your reputation with Ogri'la to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(865, {	-- Explore Blade's Edge Mountains
+					explorationAch(865, {	-- Explore Blade's Edge Mountains
 						-- #if BEFORE WRATH
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
-					removeclassicphase(ach(1193, {	-- On the Blade's Edge
+					}),
+					classicAch(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -91,8 +91,10 @@ root("Zones", {
 							-- Ruuan Weald (A+H)
 							10748,	-- Maxnar Must Die!
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 86 quests in Blade's Edge Mountains.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -134,7 +136,7 @@ root("Zones", {
 							["sourceQuest"] = 10748,	-- Maxnar Must Die!
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -1734,7 +1736,7 @@ root("Zones", {
 							{ 29.8, 70.8, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(11, {	-- Hemathion
+							crit(4514, {	-- Hemathion
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31155),	-- Drakescale Breastplate
@@ -1763,7 +1765,7 @@ root("Zones", {
 							{ 68.4, 69.4, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(15, {	-- Morcrush
+							crit(4518, {	-- Morcrush
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31159),	-- Felstone Pauldrons
@@ -1844,7 +1846,7 @@ root("Zones", {
 							{ 46.4, 78.6, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(18, {	-- Speaker Mar'grom
+							crit(4521, {	-- Speaker Mar'grom
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31163),	-- Nethersteel Handguards

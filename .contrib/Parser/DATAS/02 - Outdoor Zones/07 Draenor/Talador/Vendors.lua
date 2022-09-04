@@ -8,21 +8,39 @@ _.Zones =
 		m(TALADOR, {
 			n(VENDORS, {
 				n(84212, {	-- Kazbala
-					["description"] = "This vendor is only available until you reach 50(Can be lower). Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
+					["description"] = "This vendor is only available until you reach 50(Can be lower). Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.",
 					["coord"] = { 45.2, 38.8, TALADOR },
 					["g"] = {
-						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
-						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-						i(104324),	-- Foot Ball (TOY!)
-						i(137663),	-- Soft Foam Sword (TOY!)
-						i(104323),	-- The Swineskin (TOY!)
-						i(54438),	-- Tiny Blue Ragdoll (TOY!)
-						i(54437),	-- Tiny Green Ragdoll (TOY!)
-						i(44606),	-- Toy Train Set (TOY!)
-						i(95621, {	-- Warbot Ignition Key (PET!)
-							["cost"] = 5000000,	-- 500g
+						i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
+							["timeline"] = { "added 3.3.3.11573" },
 						}),
-						i(45057),	-- Wind-Up Train Wreck (TOY!)
+						i(95621, {	-- Warbot Ignition Key (PET!)
+							["timeline"] = { "added 5.2.0.16539" },
+						}),
+						i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+							["timeline"] = { "added 3.3.3.11573" },
+						}),
+						i(104324, {	-- Foot Ball (TOY!)
+							["timeline"] = { "added 5.4.0.17227" },
+						}),
+						i(137663, {	-- Soft Foam Sword (TOY!)
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(104323, {	-- The Swineskin (TOY!)
+							["timeline"] = { "added 5.4.0.17227" },
+						}),
+						i(54438, {	-- Tiny Blue Ragdoll (TOY!)
+							["timeline"] = { "added 3.3.3.11573" },
+						}),
+						i(54437, {	-- Tiny Green Ragdoll (TOY!)
+							["timeline"] = { "added 3.3.3.11573" },
+						}),
+						i(44606, {	-- Toy Train Set Toy (TOY!)
+							["timeline"] = { "added 3.0.2.8982" },
+						}),
+						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
+							["timeline"] = { "added 3.1.0.9626" },
+						}),
 					},
 				}),
 				n(84216, {	-- Talgaiir the Ironrender
@@ -77,31 +95,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
-							["spellID"] = 30313,	-- Adamantite Rifle
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(23807, {	-- Schematic: Adamantite Scope
-							["spellID"] = 30329,	-- Adamantite Scope
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
-							["spellID"] = 30316,	-- Cogspinner Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
-							["spellID"] = 30348,	-- Fel Iron Toolbox
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
 							["f"] = RECIPES,

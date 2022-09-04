@@ -641,16 +641,11 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["isWeekly"] = true,
 				["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 			}),
-			q(61333, {	-- Return Lost Souls (5 soul version)
-				["sourceQuests"] = { 59609 },	-- No Rest For the Dead
-				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-				["isWeekly"] = true,
-				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
-			}),
 			q(62844, {	-- Return to Draka
 				["sourceQuests"] = { 62837 },	-- Hopeful News
 				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 68.4, ORIBOS },
+				["isBreadcrumb"] = true,
 			}),
 			q(62846, {	-- Sanctum Improvements
 				["sourceQuests"] = { 62845 },	-- Bringing It All Together
@@ -898,12 +893,20 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					follower(1262),	-- Bonesmith Heirmir
 				},
 			}),
+			q(61333, {	-- Return Lost Souls (5 soul version)
+				["sourceQuests"] = { 59609 },	-- No Rest For the Dead
+				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
+				["isWeekly"] = true,
+				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
+			}),
 			q(62864, {	-- Return Lost Souls (10 soul version)
 				-- ["sourceQuests"] = {  },	-- TODO
 				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["isWeekly"] = true,
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62865, {	-- Return Lost Souls (15 soul version)
 				-- ["sourceQuests"] = {  },	-- TODO
@@ -911,6 +914,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 				["isWeekly"] = true,
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
 				-- ["sourceQuests"] = {  },	-- TODO

@@ -97,11 +97,6 @@ _.Instances = { tier(MOP_TIER, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(56747, e(673, {	-- Gu Cloudstrike
-						{	-- Polyformic Acid Science: Gu Cloudstrike
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["criteriaID"] = 3,	-- Gu Cloudstrike
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						},
 						i(144127),	-- Cloudstrike Pendant
 						i(143961),	-- Azure Serpent Chestguard
 						i(144126),	-- Star Summoner Bracers

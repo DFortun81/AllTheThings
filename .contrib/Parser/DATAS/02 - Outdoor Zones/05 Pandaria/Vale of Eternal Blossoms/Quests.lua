@@ -344,8 +344,8 @@ _.Zones =
 					["sourceQuests"] = {
 						33229,	-- A Flash of Bronze...	(Alliance)
 						33230,	-- A Flash of Bronze...	(Horde)
-						37188,	-- A Flash of Bronze...	(Removed)
-						37194,	-- A Flash of Bronze...	(Removed)
+						37188,	-- A Flash of Bronze...	(NYI)
+						37194,	-- A Flash of Bronze...	(NYI)
 					},
 				}),
 				q(33232, {	-- Journey to the Timeless Isle
@@ -355,8 +355,8 @@ _.Zones =
 					["sourceQuests"] = {
 						33229,	-- A Flash of Bronze...	(Alliance)
 						33230,	-- A Flash of Bronze...	(Horde)
-						37188,	-- A Flash of Bronze...	(Removed)
-						37194,	-- A Flash of Bronze...	(Removed)
+						37188,	-- A Flash of Bronze...	(NYI)
+						37194,	-- A Flash of Bronze...	(NYI)
 					},
 				}),
 				q(30635, {	-- Killing the Quilen

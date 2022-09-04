@@ -99,3 +99,11 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 		},
 	},
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(50344),	-- Ensemble: Mindwrack Raiment
+		q(50345),	-- Ensemble: Tundraspite Armor
+		q(50346),	-- Ensemble: Crimson Sentinel Garb
+		q(50347),	-- Ensemble: Goldspine Plate
+	}),
+});

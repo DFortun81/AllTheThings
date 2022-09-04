@@ -7,44 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(WORLD_QUESTS, bubbleDown({ ["isWorldQuest"] = true, },{
-				--[[	raw quest list to check against
-				-- Unknown
-				q(38693),	-- [DEPRECATED] Kill Feral Dogs
-				q(39032),	-- A Summons from Saylanna
-				q(38737),	-- An End To War
-				q(46830),	-- Battlefield
-				q(39011),	-- Black Rook Invasion
-				q(38648),	-- Black Rook Orders
-				q(38469),	-- Bonus Objective: The Moonclaw Vale
-				q(38660),	-- Cleansing the Corruption
-				q(38219),	-- Defending The Grove
-				q(41880),	-- Den of Shadows
-				q(38839),	-- Done with Waiting
-				q(38341),	-- Halting the Nightmare
-				q(38745),	-- Hard Lessons
-				q(38285),	-- Menacing Sprites
-				q(39388),	-- Moonclaw's Wisdom
-				q(38661),	-- Nightmare Bombs
-				q(46797),	-- Paragon of the Dreamweavers
-				q(38708),	-- Purge the River
-				q(38353),	-- Rescued From Darkness
-				q(46820),	-- REUSE
-				q(39028),	-- REUSE ME
-				q(41879),	-- TBD
-				q(38697),	-- The Sword of Truth
-				q(38673),	-- The Wormtalon Crone
-				q(40921),	-- Tracking Quest: Bastillax 1
-				q(40924),	-- Tracking Quest: Bastillax 4
-				q(40386),	-- Tracking Quest: Khadgar Arrival
-				q(40922),	-- Tracking Quest: Mephistos 2
-				q(40923),	-- Tracking Quest: Mephistos 3
-				q(40422),	-- Tracking Quest: VotW Started
-				q(38304),	-- Val'sharah
-				q(38380),	-- Vignette: Hivequeen Zsala
-				q(43447),	-- Vignette: Wraithtalon
-				q(44825),	-- Wisp in the Willows
-				q(46819),	-- Wrecked Cart
-				]]--
 				q(45924),	-- Abyssal Monstrosity (Invasion WQ)
 				q(45922),	-- Agmozuul (Invasion wq)
 				q(44033),	-- Aw, Nuts!
@@ -348,3 +310,14 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(45485),	-- Val'sharah - WQ rare: Aodh Witherpetal
+		q(45483),	-- Val'sharah - WQ rare: Ealdis
+		q(45484),	-- Val'sharah - WQ rare: Harbinger of Screams
+		q(45501),	-- Val'sharah - WQ rare: Malisandra
+		q(45488),	-- Val'sharah - WQ rare: Nylaathria the Forgotten
+		q(45487),	-- Val'sharah - WQ rare: Rabxach
+		q(45493),	-- Val'sharah - WQ rare: Witchdoctor Grgl-Brgl
+	}),
+});

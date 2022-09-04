@@ -7,6 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
 				["coord"] = { 61.6, 21.7, KORTHIA },
+				["minReputation"] = { 2472, 1 },	-- The Archivist's Codex, Tier 1
 				["g"] = {
 					i(186648, {	-- Soaring Razorwing (MOUNT!)
 						["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
@@ -129,6 +130,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							{ "select", "headerID" , LEGENDARIES },	-- Legendary header
 							{ "pop" },							-- pop header
 							{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
+							{ "exclude", "itemID",
+								190584,	-- Memory of Unity (DK)
+								190587,	-- Memory of Unity (DH)
+								190588,	-- Memory of Unity (DRUID)
+								190589,	-- Memory of Unity (HUNTER)
+								190590,	-- Memory of Unity (MAGE)
+								190591,	-- Memory of Unity (MONK)
+								190592,	-- Memory of Unity (PALADIN)
+								190593,	-- Memory of Unity (PRIEST)
+								190594,	-- Memory of Unity (ROGUE)
+								190595,	-- Memory of Unity (SHAMAN)
+								190596,	-- Memory of Unity (WARLOCK)
+								190598,	-- Memory of Unity (WARRIOR)
+							},
 						},
 					}),
 				},
@@ -153,6 +168,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				["coord"] = { 63.5, 23.3, KORTHIA },
+				["minReputation"] = { 2470, 5 },	-- Death's Advance, Friendly
 				["g"] = {
 					i(186647, {	-- Amber Shardhide (MOUNT!)
 						["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia

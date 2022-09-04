@@ -6,6 +6,14 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3216, {	-- Ambystan Snapper
 				["cr"] = 183277,
+				["coords"] = {
+					{ 35.0, 56.0, ZERETH_MORTIS },
+					{ 35.4, 44.2, ZERETH_MORTIS },
+					{ 39.2, 33.8, ZERETH_MORTIS },
+					{ 39.2, 71.4, ZERETH_MORTIS },
+					{ 45.4, 65.0, ZERETH_MORTIS },
+					{ 48.0, 73.8, ZERETH_MORTIS },
+				},
 			}),
 			pet(3217, {	-- Aurelid Floater
 				["cr"] = 183281,
@@ -43,6 +51,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["description"] = "Requires eating a Questionable Mawshroom from Korthia to see.",
 				["cr"] = 183231,
 				["provider"] = { "i", 187244 },	-- Questionable Mawshroom
+				["coords"] = {
+					{ 61.4, 73.6, ZERETH_MORTIS },
+					{ 61.8, 67.6, ZERETH_MORTIS },
+					{ 64.2, 71.0, ZERETH_MORTIS },
+				},
 			}),
 			pet(3205, {	-- Metallic Scarabid
 				["cr"] = 182568,
@@ -64,6 +77,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			pet(3180, {	-- Venomous Bufonid
 				["cr"] = 182019,
+				["coords"] = {
+					{ 36.6, 70.6, ZERETH_MORTIS },
+					{ 44.8, 58.6, ZERETH_MORTIS },
+					{ 47.6, 85.8, ZERETH_MORTIS },
+					{ 50.6, 74.6, ZERETH_MORTIS },
+					{ 58.2, 82.2, ZERETH_MORTIS },
+					{ 60.2, 72.2, ZERETH_MORTIS },
+					{ 76.8, 45.4, ZERETH_MORTIS },
+					{ 77.2, 51.8, ZERETH_MORTIS },
+					{ 77.6, 58.8, ZERETH_MORTIS },
+					{ 81.0, 46.0, ZERETH_MORTIS },
+				},
 			}),
 			pet(3190, {	-- Vicious Leporid
 				["cr"] = 182216

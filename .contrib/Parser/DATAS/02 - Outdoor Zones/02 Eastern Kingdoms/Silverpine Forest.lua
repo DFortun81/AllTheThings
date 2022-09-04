@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(769, {	-- Explore Silverpine Forest
+				explorationAch(769, {	-- Explore Silverpine Forest
 					-- #if BEFORE WRATH
 					["description"] = "Explore Silverpine Forest, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4894, {	-- Silverpine Forest Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,

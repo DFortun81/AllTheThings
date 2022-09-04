@@ -42,16 +42,16 @@ _.Zones =
 						i(131812, {	-- Darkshard Fragment (TOY!)
 							["cost"] = 5000000,		-- 500g
 						}),
-						i(137855, {	-- Design: Ancient Maelstrom Amulet (Rank 3)
+						i(137855, {	-- Design: Ancient Maelstrom Amulet [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137846, {	-- Design: Dawnlight Band (Rank 3)
+						i(137846, {	-- Design: Dawnlight Band [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137844, {	-- Design: Prophetic Band (Rank 3)
+						i(137844, {	-- Design: Prophetic Band [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(137839, {	-- Design: Skystone Loop (Rank 3)
+						i(137839, {	-- Design: Skystone Loop [Rank 3] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
 						i(139601, {	-- Harpy-Hunter's Gloves
@@ -60,22 +60,22 @@ _.Zones =
 						i(139597, {	-- Mountainforged Chain Hauberk
 							["cost"] = 50000000,	-- 5,000g
 						}),
-						i(123948, {	-- Recipe: Demonsteel Armguards (Rank 3)
+						i(123948, {	-- Recipe: Demonsteel Armguards [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(123955, {	-- Recipe: Demonsteel Breastplate (Rank 3)
+						i(123955, {	-- Recipe: Demonsteel Breastplate [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(123953, {	-- Recipe: Demonsteel Gauntlets (Rank 3)
+						i(123953, {	-- Recipe: Demonsteel Gauntlets [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(142408, {	-- Recipe: Drums of the Mountain (Rank 2)
+						i(142408, {	-- Recipe: Drums of the Mountain [Rank 2] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
-						i(142409, {	-- Recipe: Drums of the Mountain (Rank 3)
+						i(142409, {	-- Recipe: Drums of the Mountain [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
 						}),
-						i(136697, {	-- Recipe: Gleaming Iron Spike
+						i(136697, {	-- Recipe: Gleaming Iron Spike (RECIPE!)
 							["cost"] = 5500000,		-- 550g
 						}),
 						i(140576),	-- Tabard of the Hightmountain Tribe

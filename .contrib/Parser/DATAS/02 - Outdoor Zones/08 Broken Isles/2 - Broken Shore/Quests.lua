@@ -7,12 +7,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		n(QUESTS, {
 			q(46268, {	-- A Found Memento
 				["provider"] = { "o", 268478 },	-- Battered Trinket
+				["timeline"] = { "added 7.2.0.23746" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(47097, {	-- A Walk to Remember
 				["sourceQuests"] = { 47202 },	-- A Personal Message
 				["provider"] = { "n", 121224 },	-- Anduin Wrynn
 				["coord"] = { 41.4, 59.4, BROKEN_SHORE },
+				["timeline"] = { "added 7.2.0.23746" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46832, {	-- Aalgen Point
@@ -121,11 +123,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(47137, {	-- Champions of Legionfall
 				["sourceQuests"] = {
-					--#if AFTER 9.1.5
+					-- #IF AFTER 9.1.5
 					46734,	-- Assault on Broken Shore
-					--#else
+					-- #ELSE
 					46247,	-- Defending Broken Isles
-					--#endif
+					-- #ENDIF
 				},
 				["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 				["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -212,11 +214,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(47045, {	-- Further Progress
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(46501, {	-- Grave Robbin'
 				["sourceQuests"] = { 46499 },	-- Spiders, Huh?
@@ -328,6 +332,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 47097 },	-- A Walk to Remember
 				["provider"] = { "n", 121226 },	-- Anduin Wrynn
 				["coord"] = { 52.5, 48.4, BROKEN_SHORE },
+				["timeline"] = { "added 7.2.0.23746" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(47139, {	-- Mark of the Sentinax
@@ -408,6 +413,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46268 },	-- A Found Memento
 				["provider"] = { "n", 120281 },	-- Captain Shwayder
 				["coord"] = { 41.6, 59.6, BROKEN_SHORE },
+				["timeline"] = { "added 7.2.0.23746" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46250, {	-- Take Out the Head...
@@ -439,6 +445,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 47112 },	-- Lost Souls
 				["provider"] = { "n", 121237 },	-- Anduin Wrynn
 				["coord"] = { 58.2, 26.6, BROKEN_SHORE },
+				["timeline"] = { "added 7.2.0.23746" },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(46772, {	-- The Mage Tower
@@ -447,6 +454,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
 			}),
 			q(46774, {	-- The Nether Disruptor
+				["sourceQuest"] = 46245,	-- Begin Construction
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["g"] = {
 					i(147451),	-- Armorcrafter's Commendation
@@ -480,6 +488,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["repeatable"] = true,
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(46845, {	-- Vengeance Point
 				["sourceQuests"] = { 46832 },	-- Aalgen Point
@@ -501,9 +510,24 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		}),
 	}),
 }));
-
-root(ROOTS.HiddenQuestTriggers, m(BROKEN_ISLES, {
-	m(BROKEN_SHORE, {
-		q(47590),	-- Tier 3 Mob Daily Bonus (DNT) (Daily Kill)
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(47038),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(47044),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
+		q(47053),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
+		q(46870),	-- 7.2 Broken Shore - Buildings - Command Center - Buff Activation - Tracking Quest
+		q(47021),	-- 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
+		q(46283),	-- 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
+		q(46793),	-- 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
+		q(46871),	-- 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activiation - Tracking Quest
+		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" (questID 47137) during the Legionfall Campaign
+		q(46735),	-- Contribute to Command Center - during "Begin Construction" quest, not sure if that matters
+		q(46277),	-- Contribute to Mage Tower
+		q(46709),	-- Ready for Crafted Legendary flag
+		q(47590),	-- Tier 3 Mob Daily Bonus (DNT) - Daily kill
+		q(46665),	-- Tracking Quest - triggers with "Spiders, Huh?"
+		q(46751),	-- Tracking Quest - triggers when turning in "A Found Memento" (#46268)
+		q(47255),	-- Tracking Quest - triggers after completing "Mark of the Sentinax" (questID 47139)
+		q(47092),	-- Working on Crafted Legendary
 	}),
-}));
+});

@@ -65,13 +65,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				-- 6.1.0
 				q(37805),	-- Goblin Looted
-				-- 6.2.0
-				q(39564),	-- Vignette: Murktide Alpha
 				-- 7.3.0
 				q(48546),	-- Tracking Quest
 				q(49006),	--
 				q(49162),	--
-				q(49383),	--
 				q(49384),	--
 				q(49385),	--
 				-- 7.3.2
@@ -90,8 +87,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(49764),	--
 				q(49815),	--
 				q(50312),	--
-				-- BFA
-				q(53468),	-- As a hightauren mountain just arriving on ogrimmar after being transferred from alliance to horde | something concerning Highmountain Tauren Warrior / Orgrimmar / 37.9, 80.9
 				-- 8.0.1
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",
@@ -100,7 +95,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				q(50768),	--
 				q(51692),	--
-				q(52402),	-- Work Order: Viridium
 				q(52934),	--
 				q(53428),	--
 				q(53429),	--
@@ -149,9 +143,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56607),	--
 				q(56618),	--
 				q(56667),	--
-				q(56699),	--
-				q(56702),	--
-				q(56704),	--
 				q(56742),	--
 				q(56744),	--
 				q(56745),	--
@@ -180,7 +171,7 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.0.2
 				q(57537),	-- Covering our Tracks
 				q(62990),	--
-				q(63219),	--
+				q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
 				-- 9.1.0
 				q(64192),	--
 				q(64369),	--
@@ -493,15 +484,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 		i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
 		i(193263),	-- Add Keystone Affix: Shrouded
 
-		i(191926),	-- Confounding Ancient Cypher
-		i(191910),	-- Confounding Antique Cypher
-		i(191911),	-- Cosmic Creation Impetus
-		i(191927),	-- Sacred Creation Impetus
-		-- i(191734),	-- Motion Sick Peon's Magical Elixir
-		i(192438),	-- Cache of Fated Treasures (Heroic)
-		i(192437),	-- Cache of Fated Treasures (Normal)
-		i(192466),	-- Puzzling Cartel Dinar
-
 		i(192441),	-- Rhapsodic Pulverizer
 
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
@@ -783,6 +765,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(137279),	-- Nightfallen Vendor List
 				i(134008),	-- Simple Rosary of Light
 				i(137282),	-- Valarjar Vendor List
+				i(139603, { -- Vault Patroller's Warboots
+					["bonusID"] = 1,
+				}),
 				i(137278),	-- Wardens Vendor List
 			}),
 			tier(LEGION_TIER, 2.0, {
@@ -1164,13 +1149,25 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(187515),	-- Theotar's Bottomless Teapot
 				i(187433),	-- Windcrystal Chimes
 			}),
+			tier(SL_TIER, 1.5, {
+				i(189534),	-- Add Keystone Affix: Infernal
+				i(187610),	-- Court of Farondis Insignia
+				i(189524),	-- Set Keystone Level: 31
+				i(189525),	-- Set Keystone Level: 32
+				i(189526),	-- Set Keystone Level: 33
+				i(189527),	-- Set Keystone Level: 34
+				i(189528),	-- Set Keystone Level: 35
+			}),
 			tier(SL_TIER, 2.0, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
+				i(190938),	-- Add Keystone Affix: Encrypted
 				i(190654),	-- Cache of Sepulcher Treasures
 				i(188796),	-- Cypher Test Item
 				i(190823),	-- Firim's Mysterious Cache
 				i(190383),	-- Progenitor Essentia Lattice
+				i(189546),	-- Set Keystone Map: Tazavesh: So'leah's Gambit
+				i(189545),	-- Set Keystone Map: Tazavesh: Streets of Wonder
 				-- i(190172),	-- Title Reward: Gauntlet Runner
 			}),
 			n(P9xx, {
@@ -1200,6 +1197,18 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			tier(SL_TIER, 2.0, {
 				i(188200),	-- Engraved Stone
+				i(191634),	-- Memory of Unity
+				i(191635),	-- Memory of Unity
+				i(191636),	-- Memory of Unity
+				i(191637),	-- Memory of Unity
+				i(191638),	-- Memory of Unity
+				i(191639),	-- Memory of Unity
+				i(191640),	-- Memory of Unity
+				i(191641),	-- Memory of Unity
+				i(191642),	-- Memory of Unity
+				i(191643),	-- Memory of Unity
+				i(191644),	-- Memory of Unity
+				i(191645),	-- Memory of Unity
 				i(185484),	-- Nathrezim Documents
 			}),
 		}),

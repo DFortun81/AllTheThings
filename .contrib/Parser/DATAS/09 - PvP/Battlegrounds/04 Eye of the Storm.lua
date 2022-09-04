@@ -12,7 +12,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1171, {	-- Master of Eye of the Storm
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							209,	-- Eye of the Storm Veteran
 							783,	-- The Perfect Storm
 							784,	-- Eye of the Storm Domination

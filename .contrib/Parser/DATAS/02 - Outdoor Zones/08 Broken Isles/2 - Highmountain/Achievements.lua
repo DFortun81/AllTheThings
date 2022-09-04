@@ -223,34 +223,6 @@ _.Zones =
 						}),
 					},
 				})),
-				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
-					un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
-						["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-						["groups"] = {
-							i(139524, {	-- Crumpled Letter
-								["achievementID"] = 11139,	-- Field Medic
-								["criteriaID"] = 6,			-- Crumpled Letter
-								--["questID"] = 42333,		-- Crumpled Letter
-								["description"] = "Western Highmountain next to Skyhorn.",
-								["crs"] = {96774}
-							}),
-							i(139525, {	-- Crumpled Note
-								["achievementID"] = 11139,	-- Field Medic
-								["criteriaID"] = 7,			-- Crumpled Note
-								--["questID"] = 42334,		-- Crumpled Note
-								["description"] = "Northern Highmountain.",
-								["crs"] = {104323}
-							}),
-							i(139523, {	-- Fevered Letter
-								["achievementID"] = 11139,	-- Field Medic
-								["criteriaID"] = 9,			-- Fevered Letter
-								--["questID"] = 42323,		-- Fevered Letter
-								["description"] = "Southern Highmountain.",
-								["crs"] = {103177}
-							})
-						},
-					})),
-				})),
 				ach(10774, {	-- Hatchling of the Talon
 					["sourceQuests"] = { 41094 },	-- Hatchlings of the Talon
 					["g"] = {
@@ -264,9 +236,6 @@ _.Zones =
 							["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
 						}),
 					},
-				}),
-				ach(11609, {	-- Power Unbound
-				--	q(45841),	-- A Triumphant Report
 				}),
 				ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 					["collectible"] = false,

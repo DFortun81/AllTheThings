@@ -4,13 +4,75 @@
 root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(274, {	-- Gundrak
 		["mapID"] = GUNDRAK,
+		["coord"] = { 28.6, 86.9, ZULDRAK },
 		["maps"] = { 154 },
-		["lvl"] = 63,
+		["lvl"] = lvlsquish(71, 71, 20),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(484, {	-- Gundrak
+					crit(5448, { -- Slad'ran
+						["_encounter"] = { 592, 1 },
+					}),
+					crit(5449, { -- Moorabi
+						["_encounter"] = { 594, 1 },
+					}),
+					crit(5450, { -- Drakkari Colossus
+						["_encounter"] = { 593, 1 },
+					}),
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
+					crit(5627, { -- Gal'darah
+						["_encounter"] = { 596, 1 },
+					}),
+					-- #else
+					crit(5451, { -- Gal'darah
+						["_encounter"] = { 596, 1 },
+					}),
+					-- #endif
+				}),
+				ach(495,  {	-- Heroic: Gundrak
+					crit(6839, { -- Slad'ran
+						["_encounter"] = { 592, 2 },
+					}),
+					crit(6840, { -- Moorabi
+						["_encounter"] = { 594, 2 },
+					}),
+					crit(6841, { -- Drakkari Colossus
+						["_encounter"] = { 593, 2 },
+					}),
+					crit(5614, { -- Gal'darah
+						["_encounter"] = { 596, 2 },
+					}),
+					crit(5053, { -- Eck the Ferocious
+						["_encounter"] = { 595, 2 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
-				q(29840, {	-- For Posterity
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+				q(13098, {	-- For Posterity
+					["qg"] = 30676,	-- Chronicler Bah'Kini
+					["sourceQuest"] = 13099,	-- Just Checkin'
+					["coord"] = { 70, 21, ZULDRAK },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/6 Drakkari History Tablet
+							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+						}),
+						i(43180),	-- Lion's Head Ring
+						i(43178),	-- Ring of Foul Mojo
+						i(43179),	-- Solid Platinum Band
+						i(43177),	-- Voodoo Signet
+					},
+				}),
+				q(29840, {	-- For Posterity
+					["qg"] = 55737,	-- Chronicler Bah'Kini
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
+					["groups"] = {
+						objective(1, {	-- 0/6 Drakkari History Tablet
+							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+						}),
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
 						i(43179),	-- Solid Platinum Band
@@ -18,17 +80,41 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29844, {	-- For Posterity
-					["provider"] = { "n", 55738 },	-- Tol'mar
+					["qg"] = 55738,	-- Tol'mar
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/6 Drakkari History Tablet
+							["provider"] = { "i", 43140 },	-- Drakkari History Tablet
+						}),
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
 						i(43179),	-- Solid Platinum Band
 						i(43177),	-- Voodoo Signet
 					},
 				}),
-				q(29834, {	-- Gal'darah Must Pay
-					["provider"] = { "n", 55738 },	-- Tol'mar
+				q(13096, {	-- Gal'darah Must Pay
+					["qg"] = 30671,	-- Tol'mar
+					["timeline"] = { "removed 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gal'darah slain
+							["provider"] = { "n", 29306 },	-- Gal'darah
+						}),
+						i(43164),	-- Sly Mojo Sash
+						i(43165),	-- Strange Voodoo Belt
+						i(43167),	-- Ranger's Belt of the Fallen Empire
+						i(43168),	-- Clasp of the Fallen Demi-God
+					},
+				}),
+				q(29834, {	-- Gal'darah Must Pay
+					["qg"] = 55738,	-- Tol'mar
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Gal'darah slain
+							["provider"] = { "n", 29306 },	-- Gal'darah
+						}),
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
 						i(43167),	-- Ranger's Beelt of the Fallen Empire
@@ -36,17 +122,46 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29835, {	-- Gal'darah Must Pay
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["qg"] = 55737,	-- Chronicler Bah'Kini
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/1 Gal'darah slain
+							["provider"] = { "n", 29306 },	-- Gal'darah
+						}),
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
 						i(43167),	-- Ranger's Beelt of the Fallen Empire
 						i(43168),	-- Clasp of the Fallen Demi-God
 					},
 				}),
-				q(29838, {	-- One of a Kind
-					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+				q(13111, {	-- One of a Kind
+					["qg"] = 30676,	-- Chronicler Bah'Kini
+					["sourceQuest"] = 13099,	-- Just Checkin'
+					["coord"] = { 70, 21, ZULDRAK },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/1 Drakkari Colossus Fragment
+							["provider"] = { "i", 43158 },	-- Drakkari Colossus Fragment
+							["cr"] = 29573,	-- Drakkari Elemental
+						}),
+						i(43171),	-- Fur-Lined Moccasins
+						i(43172),	-- Rhino Hide Kneeboots
+						i(43173),	-- Scaled Boots of Fallen Hope
+						i(43176),	-- Slippers of the Mojo Dojo
+						i(43174),	-- Trollkickers
+					},
+				}),
+				q(29838, {	-- One of a Kind
+					["qg"] = 55737,	-- Chronicler Bah'Kini
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
+					["groups"] = {
+						objective(1, {	-- 0/1 Drakkari Colossus Fragment
+							["provider"] = { "i", 43158 },	-- Drakkari Colossus Fragment
+							["cr"] = 29573,	-- Drakkari Elemental
+						}),
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
 						i(43173),	-- Scaled Boots of Fallen Hope
@@ -55,8 +170,14 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(29839, {	-- One of a Kind
-					["provider"] = { "n", 55738 },	-- Tol'mar
+					["qg"] = 55738,	-- Tol'mar
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(74, 74, 20),
 					["groups"] = {
+						objective(1, {	-- 0/1 Drakkari Colossus Fragment
+							["provider"] = { "i", 43158 },	-- Drakkari Colossus Fragment
+							["cr"] = 29573,	-- Drakkari Elemental
+						}),
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
 						i(43173),	-- Scaled Boots of Fallen Hope
@@ -67,234 +188,199 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			}),
 			d(1, {	-- Normal
 				n(ZONE_DROPS, {
-					i(35593, {	-- Steel Bear Trap Bracers
-						["crs"] = {
-							29836,	-- Drakkari Battle Rider
-							29829,	-- Drakkari Earthshaker
-							29822,	-- Drakkari Fire Weaver
-							29820,	-- Drakkari God Hunter
-							29832,	-- Drakkari Golem
-							29874,	-- Drakkari Inciter
-							29819,	-- Drakkari Lancer
-							29826,	-- Drakkari Medicine Man
-							29838,	-- Drakkari Rhino
-							29931,	-- Drakkari Rhino
-							29830,	-- Living Mojo
-							29768,	-- Unyielding Constrictor
-						},
-					}),
-					i(35594, {	-- Snowmelt Silken Cinch
-						["crs"] = {
-							29836,	-- Drakkari Battle Rider
-							29829,	-- Drakkari Earthshaker
-							29822,	-- Drakkari Fire Weaver
-							29820,	-- Drakkari God Hunter
-							29832,	-- Drakkari Golem
-							29874,	-- Drakkari Inciter
-							29819,	-- Drakkari Lancer
-							29826,	-- Drakkari Medicine Man
-							29838,	-- Drakkari Rhino
-							29931,	-- Drakkari Rhino
-							29830,	-- Living Mojo
-							29768,	-- Unyielding Constrictor
-						},
-					}),
+					i(35593),	-- Steel Bear Trap Bracers
+					i(35594),	-- Snowmelt Silken Cinch
 				}),
-				cr(29304, e(592, {	-- Slad'ran
-					{	-- Gundrak: Slad'ran
-						["achievementID"] = 484,	-- Gundrak
-						["criteriaID"] = 1,	-- Slad'ran
-					},
-					i(35583),	-- Witch Doctor's Wildstaff
-					i(37626),	-- Wand of Sseratus
-					i(37627),	-- Snake Den Spaulders
-					i(35584),	-- Embroidered Gown of Zul'drak
-					i(157578),	-- Belt of Vile Concoctions
-					i(37628),	-- Slad'ran Coiled Cord
-					i(35585),	-- Cannibal's Legguards
-					i(37629),	-- Slithering Slippers
-				})),
-				cr(29307, e(593, {	-- Drakkari Colossus
-					{	-- Gundrak: Drakkari Colossus
-						["achievementID"] = 484,	-- Gundrak
-						["criteriaID"] = 3,	-- Drakkari Colossus
-					},
-					i(35590),	-- Drakkari Hunting Bow
-					i(37636),	-- Helm of Cheated Fate
-					i(37635),	-- Pauldrons of the Colossus
-					i(35591),	-- Shoulderguards of the Ice Troll
-					i(35592),	-- Hauberk of Totemic Mastery
-					i(37634),	-- Bracers of the Divine Elemental
-					i(37637),	-- Living Mojo Belt
-				})),
-				cr(29305, e(594, {	-- Moorabi
-					{	-- Gundrak: Moorabi
-						["achievementID"] = 484,	-- Gundrak
-						["criteriaID"] = 2,	-- Moorabi
-					},
-					i(37631),	-- Fist of the Deity
-					i(35587),	-- Frozen Scepter of Necromancy
-					i(37633),	-- Ground Tremor Helm
-					i(157584),	-- Drape of Moorabi
-					i(37630),	-- Shroud of Moorabi
-					i(35588),	-- Forlorn Breastplate of War
-					i(37632),	-- Mojo Frenzy Greaves
-					i(35589),	-- Arcane Focal Signet
-				})),
-				cr(29306, e(596, {	-- Gal'darah
-					{	-- Gundrak: Gal'darah
-						["achievementID"] = 484,	-- Gundrak
-						["criteriaID"] = 4,	-- Gal'darah
-					},
-					i(43309),	-- Amulet of the Stampede
-					i(43305),	-- Shroud of Akali
-					i(37641),	-- Arcane Flame Altar-Garb
-					i(37639),	-- Grips of the Beast God
-					i(37645),	-- Horn-Tipped Gauntlets
-					i(37643),	-- Sash of Blood Removal
-					i(37644),	-- Gored Hide Legguards
-					i(37640),	-- Boots of Transformation
-					i(43306),	-- Gal'darah's Signet
-					i(37642),	-- Hemorrhaging Circle
-					i(37638),	-- Offering of Sacrifice
-				})),
-			}),
-			d(2, {	-- Heroic
-				["lvl"] = 80,
-				["groups"] = {
-					n(ZONE_DROPS, {
-						i(37646, {	-- Burning Skull Pendant
-							["crs"] = {
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-							},
-						}),
-						i(37647, {	-- Cloak of Bloodied Waters
-							["crs"] = {
-								29836,	-- Drakkari Battle Rider
-								29829,	-- Drakkari Earthshaker
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29874,	-- Drakkari Inciter
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29838,	-- Drakkari Rhino
-								29931,	-- Drakkari Rhino
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-								29774,	-- Spitting Cobra
-								29768,	-- Unyielding Constrictor
-							},
-						}),
-						i(37648, {	-- Belt of Tasseled Lanterns
-							["crs"] = {
-								29836,	-- Drakkari Battle Rider
-								29829,	-- Drakkari Earthshaker
-								29822,	-- Drakkari Fire Weaver
-								29820,	-- Drakkari God Hunter
-								29832,	-- Drakkari Golem
-								29874,	-- Drakkari Inciter
-								29819,	-- Drakkari Lancer
-								29826,	-- Drakkari Medicine Man
-								29838,	-- Drakkari Rhino
-								29931,	-- Drakkari Rhino
-								29830,	-- Living Mojo
-								29920,	-- Ruins Dweller
-								29774,	-- Spitting Cobra
-								29768,	-- Unyielding Constrictor
-							},
-						}),
-					}),
-					cr(29304, e(592, {	-- Slad'ran
-						{	-- Heroic: Gundrak: Slad'ran
-							["achievementID"] = 495,	-- Heroic: Gundrak
-							["criteriaID"] = 1,	-- Slad'ran
-						},
-						{	-- Snakes. Why'd It Have To Be Snakes?
-							["achievementID"] = 2058,	-- Snakes. Why'd It Have To Be Snakes?
-						},
+				e(592, {	-- Slad'ran
+					["creatureID"] = 29304,	-- Slad'ran
+					["groups"] = {
 						i(35583),	-- Witch Doctor's Wildstaff
-						i(37626),	-- Wand of Sseratus
-						i(37627),	-- Snake Den Spaulders
+						-- #if AFTER 7.3.5
+						i(37626),	-- Wand of Sseratus (7.3.5 - Used to be only Heroic Mode)
+						i(37627),	-- Snake Den Spaulders (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35584),	-- Embroidered Gown of Zul'drak
-						i(157578),	-- Belt of Vile Concoctions
-						i(37628),	-- Slad'ran Coiled Cord
+						i(157578, {	-- Belt of Vile Concoctions
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						-- #if AFTER 7.3.5
+						i(37628),	-- Slad'ran Coiled Cord (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35585),	-- Cannibal's Legguards
-						i(37629),	-- Slithering Slippers
-					})),
-					cr(29307, e(593, {	-- Drakkari Colossus
-						{	-- Heroic: Gundrak: Drakkari Colossus
-							["achievementID"] = 495,	-- Heroic: Gundrak
-							["criteriaID"] = 3,	-- Drakkari Colossus
-						},
+						-- #if AFTER 7.3.5
+						i(37629),	-- Slithering Slippers (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(593, {	-- Drakkari Colossus
+					["creatureID"] = 29307,	-- Drakkari Colossus
+					["groups"] = {
 						i(35590),	-- Drakkari Hunting Bow
-						i(37636),	-- Helm of Cheated Fate
-						i(37635),	-- Pauldrons of the Colossus
+						-- #if AFTER 7.3.5
+						i(37636),	-- Helm of Cheated Fate (7.3.5 - Used to be only Heroic Mode)
+						i(37635),	-- Pauldrons of the Colossus (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35591),	-- Shoulderguards of the Ice Troll
 						i(35592),	-- Hauberk of Totemic Mastery
-						i(37634),	-- Bracers of the Divine Elemental
-						i(37637),	-- Living Mojo Belt
-					})),
-					cr(29305, e(594, {	-- Moorabi
-						{	-- Less-rabi
-							["achievementID"] = 2040,	-- Less-rabi
-						},
-						{	-- Heroic: Gundrak: Moorabi
-							["achievementID"] = 495,	-- Heroic: Gundrak
-							["criteriaID"] = 2,	-- Moorabi
-						},
-						i(37631),	-- Fist of the Deity
+						-- #if AFTER 7.3.5
+						i(37634),	-- Bracers of the Divine Elemental (7.3.5 - Used to be only Heroic Mode)
+						i(37637),	-- Living Mojo Belt (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+				e(594, {	-- Moorabi
+					["creatureID"] = 29305,	-- Moorabi
+					["groups"] = {
+						-- #if AFTER 7.3.5
+						i(37631),	-- Fist of the Deity (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35587),	-- Frozen Scepter of Necromancy
-						i(37633),	-- Ground Tremor Helm
-						i(157584),	-- Drape of Moorabi
-						i(37630),	-- Shroud of Moorabi
+						-- #if AFTER 7.3.5
+						i(37633),	-- Ground Tremor Helm (7.3.5 - Used to be only Heroic Mode)
+						i(157584, {	-- Drape of Moorabi
+							["timeline"] = { "added 7.3.5.25744" },
+						}),
+						i(37630),	-- Shroud of Moorabi (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35588),	-- Forlorn Breastplate of War
-						i(37632),	-- Mojo Frenzy Greaves
+						-- #if AFTER 7.3.5
+						i(37632),	-- Mojo Frenzy Greaves (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(35589),	-- Arcane Focal Signet
-					})),
-					cr(29932, e(595, {	-- Eck the Ferocious
-						{	-- Heroic: Gundrak: Eck the Ferocious
-							["achievementID"] = 495,	-- Heroic: Gundrak
-							["criteriaID"] = 5,	-- Eck the Ferocious
-						},
-						i(43311),	-- Helmet of the Shrine
-						i(43310),	-- Engraved Chestplate of Eck
-						i(43313),	-- Leggings of the Ruins Dweller
-						i(43312),	-- Gorloc Muddy Footwraps
-					})),
-					cr(29306, e(596, {	-- Gal'darah
-						{	-- Champion of the Frozen Wastes
-							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-							["criteriaID"] = 15,		-- Gal'darah slain
-						},
-						{	-- Heroic: Gundrak: Gal'darah
-							["achievementID"] = 495,	-- Heroic: Gundrak
-							["criteriaID"] = 4,	-- Gal'darah
-						},
-						{	-- Share The Love
-							["achievementID"] = 2152,	-- Share The Love
-						},
-						{	-- What the Eck?
-							["achievementID"] = 1864,	-- What the Eck?
-						},
+					},
+				}),
+				e(596, {	-- Gal'darah
+					["creatureID"] = 29306,	-- Gal'darah
+					["groups"] = {
 						i(43309),	-- Amulet of the Stampede
 						i(43305),	-- Shroud of Akali
-						i(37641),	-- Arcane Flame Altar-Garb
-						i(37639),	-- Grips of the Beast God
-						i(37645),	-- Horn-Tipped Gauntlets
-						i(37643),	-- Sash of Blood Removal
-						i(37644),	-- Gored Hide Legguards
-						i(37640),	-- Boots of Transformation
+						-- #if AFTER 7.3.5
+						i(37641),	-- Arcane Flame Altar-Garb (7.3.5 - Used to be only Heroic Mode)
+						i(37639),	-- Grips of the Beast God (7.3.5 - Used to be only Heroic Mode)
+						i(37645),	-- Horn-Tipped Gauntlets (7.3.5 - Used to be only Heroic Mode)
+						i(37643),	-- Sash of Blood Removal (7.3.5 - Used to be only Heroic Mode)
+						i(37644),	-- Gored Hide Legguards (7.3.5 - Used to be only Heroic Mode)
+						i(37640),	-- Boots of Transformation (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
 						i(43306),	-- Gal'darah's Signet
-						i(37642),	-- Hemorrhaging Circle
-						i(37638),	-- Offering of Sacrifice
-					})),
+						-- #if AFTER 7.3.5
+						i(37642),	-- Hemorrhaging Circle (7.3.5 - Used to be only Heroic Mode)
+						i(37638),	-- Offering of Sacrifice (7.3.5 - Used to be only Heroic Mode)
+						-- #endif
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					n(ZONE_DROPS, {
+						i(37646),	-- Burning Skull Pendant
+						i(37647),	-- Cloak of Bloodied Waters
+						i(37648),	-- Belt of Tasseled Lanterns
+					}),
+					-- #if BEFORE CATA
+					n(COMMON_BOSS_DROPS, {
+						currency(101, {	-- Emblem of Heroism
+							["timeline"] = { "added 3.0.2.8905", "removed 4.0.1" },
+						}),
+					}),
+					-- #endif
+					e(592, {	-- Slad'ran
+						["creatureID"] = 29304,	-- Slad'ran
+						["groups"] = {
+							ach(2058),	-- Snakes. Why'd It Have To Be Snakes?
+							-- #if AFTER 7.3.5
+							i(35583),	-- Witch Doctor's Wildstaff (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37626),	-- Wand of Sseratus
+							i(37627),	-- Snake Den Spaulders
+							-- #if AFTER 7.3.5
+							i(35584),	-- Embroidered Gown of Zul'drak (7.3.5 - Used to be only Normal Mode)
+							i(157578, {	-- Belt of Vile Concoctions
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							-- #endif
+							i(37628),	-- Slad'ran Coiled Cord
+							-- #if AFTER 7.3.5
+							i(35585),	-- Cannibal's Legguards (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37629),	-- Slithering Slippers
+						},
+					}),
+					e(593, {	-- Drakkari Colossus
+						["creatureID"] = 29307,	-- Drakkari Colossus
+						["groups"] = {
+							-- #if AFTER 7.3.5
+							i(35590),	-- Drakkari Hunting Bow (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37636),	-- Helm of Cheated Fate
+							i(37635),	-- Pauldrons of the Colossus
+							-- #if AFTER 7.3.5
+							i(35591),	-- Shoulderguards of the Ice Troll (7.3.5 - Used to be only Normal Mode)
+							i(35592),	-- Hauberk of Totemic Mastery (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37634),	-- Bracers of the Divine Elemental
+							i(37637),	-- Living Mojo Belt
+						},
+					}),
+					e(594, {	-- Moorabi
+						["creatureID"] = 29305,	-- Moorabi
+						["groups"] = {
+							ach(2040),	-- Less-rabi
+							i(37631),	-- Fist of the Deity
+							-- #if AFTER 7.3.5
+							i(35587),	-- Frozen Scepter of Necromancy (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37633),	-- Ground Tremor Helm
+							i(157584, {	-- Drape of Moorabi
+								["timeline"] = { "added 7.3.5.25744" },
+							}),
+							i(37630),	-- Shroud of Moorabi
+							-- #if AFTER 7.3.5
+							i(35588),	-- Forlorn Breastplate of War (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37632),	-- Mojo Frenzy Greaves
+							-- #if AFTER 7.3.5
+							i(35589),	-- Arcane Focal Signet (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+						},
+					}),
+					e(595, {	-- Eck the Ferocious
+						["creatureID"] = 29932,	-- Eck the Ferocious
+						["groups"] = {
+							i(43311),	-- Helmet of the Shrine
+							i(43310),	-- Engraved Chestplate of Eck
+							i(43313),	-- Leggings of the Ruins Dweller
+							i(43312),	-- Gorloc Muddy Footwraps
+						},
+					}),
+					e(596, {	-- Gal'darah
+						["creatureID"] = 29306,	-- Gal'darah
+						["groups"] = {
+							{	-- Champion of the Frozen Wastes
+								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
+								["criteriaID"] = 5614,		-- Gal'darah slain
+							},
+							ach(2152),	-- Share The Love
+							ach(1864),	-- What the Eck?
+							-- #if AFTER 7.3.5
+							i(43309),	-- Amulet of the Stampede (7.3.5 - Used to be only Normal Mode)
+							i(43305),	-- Shroud of Akali (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37641),	-- Arcane Flame Altar-Garb
+							i(37639),	-- Grips of the Beast God
+							i(37645),	-- Horn-Tipped Gauntlets
+							i(37643),	-- Sash of Blood Removal
+							i(37644),	-- Gored Hide Legguards
+							i(37640),	-- Boots of Transformation
+							-- #if AFTER 7.3.5
+							i(43306),	-- Gal'darah's Signet (7.3.5 - Used to be only Normal Mode)
+							-- #endif
+							i(37642),	-- Hemorrhaging Circle
+							i(37638),	-- Offering of Sacrifice
+							
+						},
+					}),
 				},
 			}),
 			-- #if AFTER 6.2.3.20601

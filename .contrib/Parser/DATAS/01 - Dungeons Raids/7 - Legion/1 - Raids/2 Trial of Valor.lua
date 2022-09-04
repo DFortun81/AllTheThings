@@ -9,6 +9,30 @@ root("Instances", tier(LEGION_TIER, {
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(11394, {	-- Trial of Valor
+					crit(1, { -- Odyn
+						["_encounter"] = { 1819, 17 },
+					}),
+					crit(2, { -- Guarm
+						["_encounter"] = { 1830, 17 },
+					}),
+					crit(3, { -- Helya
+						["_encounter"] = { 1829, 17 },
+					}),
+				}),
+				ach(11426, {	-- Heroic: Trial of Valor
+					crit(1, { -- Odyn
+						["_encounter"] = { 1819, 15 },
+					}),
+					crit(2, { -- Guarm
+						["_encounter"] = { 1830, 15 },
+					}),
+					crit(3, { -- Helya
+						["_encounter"] = { 1829, 15 },
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(44868, {	-- Trial of Valor: Odyn's Judgment
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
@@ -77,12 +101,13 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = { 111246 },	-- Archmage Timear
+				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+			}),
 			d(17,  {	-- LFR
 				n(ZONE_DROPS, {
-					["crs"] = { 111246 },	-- Archmage Timear
-					["g"] = {
-						i(142541),	-- Drape of the Forgotten Souls
-					},
+					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -90,7 +115,6 @@ root("Instances", tier(LEGION_TIER, {
 						114344,	-- Guarm
 						114323,	-- Guarm
 						114537,	-- Helya
-						111246,	-- Archmage Timear
 					},
 					["g"] = {
 						i(143509, {	-- Ensemble: Vestment of the Chosen Dead
@@ -160,67 +184,61 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 				ach(11394, {	-- Trial of Valor
-					["crs"] = { 111246 },	-- Archmage Timear
-					["g"] = {
-						cr(114263, e(1819, {	-- Odyn
-							ach(11394, crit(1)),	-- Trial of Valor / Odyn
-							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
-							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
-							i(142540),	-- Mantle of the Victorious Dead
-							i(142431),	-- Gleaming Val'kyr Cuirass
-							i(142410),	-- Robes of Celestial Adornment
-							i(142419),	-- Sky-Valiant's Wristguards
-							i(142430),	-- Gloves of Issued Challenge
-							i(142411),	-- Cinch of Light
-							i(142425),	-- Goldrune Legplates
-							i(142421),	-- Leggings of the Undaunted
-							i(142422),	-- Radiant Soul Sabatons
-							i(142520),	-- Ring of Ascended Glory
-							i(142508),	-- Chains of the Valorous
-							i(142519),	-- Favor of the Prime Designate
-							i(142514),	-- Ravens' Sight
-							i(142511),	-- Unforged Titansteel
-						})),
-						cr(114323, e(1830, {	-- Guarm
-							ach(11394, crit(2)),	-- Trial of Valor / Guarm
-							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
-							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
-							i(142412),	-- Windwhipped Sailcloth
-							i(142432),	-- Helbeast Skin Tunic
-							i(142423),	-- Bite-Resistant Wristclamps
-							i(142415),	-- Helhound Hair Bracers
-							i(142434),	-- Kvaldir Exult's Grips
-							i(142435),	-- Reinforced Hound-Handler's Gauntlets
-							i(142413),	-- Leggings of the Lower Planes
-							i(142426),	-- Lead-Soled Seabed Striders
-							i(142417),	-- Moccasins of Silent Passage
-							i(142512),	-- Accursed Cuspid
-							i(142515),	-- Chilled Incisor
-							i(142506),	-- Eye of Guarm
-							i(142516),	-- Sizzling Fang
-						})),
-						cr(114537, e(1829, {	-- Helya
-							ach(11394, crit(3)),	-- Trial of Valor / Helya
-							i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
-							i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
-							i(142428),	-- Sea Fan Pendant
-							i(142521),	-- Drape of the Unworthy
-							i(142433),	-- Corroded Val'kyr Chainmail
-							i(142427),	-- Calcareous Wristclamps
-							i(142429),	-- Oiled Rigger's Handwraps
-							i(142420),	-- Anchor Chain Waistguard
-							i(142424),	-- Krakenbone Waistplate
-							i(142416),	-- Strand of Whelk Shells
-							i(142418),	-- Sucker-Scarred Leggings
-							i(142414),	-- Treads of the Drowned
-							i(142507),	-- Brinewater Slime in a Bottle
-							i(142518),	-- Fury of the Sea
-							i(142510),	-- Phylactery of Unwilling Servitude
-							i(142517),	-- Swell of the Tides
-							i(142513),	-- Token of the Lightning Keeper
-							i(146706),	-- Frostveined Shale (Blacksmithing QI)
-						})),
-					},
+					cr(114263, e(1819, {	-- Odyn
+						i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
+						i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
+						i(142540),	-- Mantle of the Victorious Dead
+						i(142431),	-- Gleaming Val'kyr Cuirass
+						i(142410),	-- Robes of Celestial Adornment
+						i(142419),	-- Sky-Valiant's Wristguards
+						i(142430),	-- Gloves of Issued Challenge
+						i(142411),	-- Cinch of Light
+						i(142425),	-- Goldrune Legplates
+						i(142421),	-- Leggings of the Undaunted
+						i(142422),	-- Radiant Soul Sabatons
+						i(142520),	-- Ring of Ascended Glory
+						i(142508),	-- Chains of the Valorous
+						i(142519),	-- Favor of the Prime Designate
+						i(142514),	-- Ravens' Sight
+						i(142511),	-- Unforged Titansteel
+					})),
+					cr(114323, e(1830, {	-- Guarm
+						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
+						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
+						i(142412),	-- Windwhipped Sailcloth
+						i(142432),	-- Helbeast Skin Tunic
+						i(142423),	-- Bite-Resistant Wristclamps
+						i(142415),	-- Helhound Hair Bracers
+						i(142434),	-- Kvaldir Exult's Grips
+						i(142435),	-- Reinforced Hound-Handler's Gauntlets
+						i(142413),	-- Leggings of the Lower Planes
+						i(142426),	-- Lead-Soled Seabed Striders
+						i(142417),	-- Moccasins of Silent Passage
+						i(142512),	-- Accursed Cuspid
+						i(142515),	-- Chilled Incisor
+						i(142506),	-- Eye of Guarm
+						i(142516),	-- Sizzling Fang
+					})),
+					cr(114537, e(1829, {	-- Helya
+						i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
+						i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
+						i(142428),	-- Sea Fan Pendant
+						i(142521),	-- Drape of the Unworthy
+						i(142433),	-- Corroded Val'kyr Chainmail
+						i(142427),	-- Calcareous Wristclamps
+						i(142429),	-- Oiled Rigger's Handwraps
+						i(142420),	-- Anchor Chain Waistguard
+						i(142424),	-- Krakenbone Waistplate
+						i(142416),	-- Strand of Whelk Shells
+						i(142418),	-- Sucker-Scarred Leggings
+						i(142414),	-- Treads of the Drowned
+						i(142507),	-- Brinewater Slime in a Bottle
+						i(142518),	-- Fury of the Sea
+						i(142510),	-- Phylactery of Unwilling Servitude
+						i(142517),	-- Swell of the Tides
+						i(142513),	-- Token of the Lightning Keeper
+						i(146706),	-- Frostveined Shale (Blacksmithing QI)
+					})),
 				}),
 			}),
 			d(14,  {	-- Normal
@@ -228,7 +246,6 @@ root("Instances", tier(LEGION_TIER, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
@@ -253,7 +270,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
@@ -273,7 +289,6 @@ root("Instances", tier(LEGION_TIER, {
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
@@ -366,8 +381,6 @@ root("Instances", tier(LEGION_TIER, {
 					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
-					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2] (RECIPE!)
@@ -392,8 +405,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
-						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
@@ -416,8 +427,6 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
-					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1] (RECIPE!)
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2] (RECIPE!)
@@ -444,8 +453,6 @@ root("Instances", tier(LEGION_TIER, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					ach(11394, crit(1)),	-- Trial of Valor / Odyn
-					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11396),	-- Mythic: Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
@@ -471,8 +478,6 @@ root("Instances", tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11394, crit(2)),	-- Trial of Valor / Guarm
-						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11397),	-- Mythic: Guarm
 						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
@@ -499,8 +504,6 @@ root("Instances", tier(LEGION_TIER, {
 					ach(11580, {	-- Cutting Edge: Helya
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					ach(11394, crit(3)),	-- Trial of Valor / Helya
-					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11398),	-- Mythic: Helya
 					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya
@@ -598,14 +601,31 @@ root("Instances", tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root("HiddenQuestTriggers", tier(LEGION_TIER, {
-	inst(861, {	-- Trial of Valor
-		q(45235),	-- learning Ensemble: Funerary Plate of the Chosen Dead (143519)
-		q(45234),	-- learning Ensemble: Funerary Plate of the Chosen Dead (normal)
-
-		q(45226),	-- Garb of the Chosen Dead (Normal)
-		q(45230),	-- Chains of the Chosen Dead (Normal)
-		q(45231),	-- Chains of the Chosen Dead (Heroic)
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(45429),	-- Odyn
+		q(46661),	-- Odyn LFR
+		q(46662),	-- Odyn Normal
+		q(46663),	-- Odyn Heroic
+		q(46664),	-- Odyn Mythic
+		q(45430),	-- Guarm
+		q(45208),	-- Guarm Mythic
+		q(45431),	-- Helya
+		--q(xxxxx),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Normal) -- TODO -Darkal
+		q(45223),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Heroic)
+		q(45224),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (Mythic)
+		q(45225),	-- Tracking Quest - Ensemble: Vestment of the Chosen Dead (LFR)
+		q(45226),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Normal)
+		q(45227),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Heroic)
+		q(45228),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (Mythic)
+		q(45229),	-- Tracking Quest - Ensemble: Garb of the Chosen Dead (LFR)
+		q(45230),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Normal)
+		q(45231),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Heroic)
+		q(45232),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (Mythic)
+		q(45233),	-- Tracking Quest - Ensemble: Chains of the Chosen Dead (LFR)
+		q(45234),	-- Tracking Quest - Ensemble: Funerary Plate of the Chosen Dead (Normal)
+		q(45235),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Heroic)
+		q(45236),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (Mythic)
+		q(45237),	-- Tracking Quest - Ensemble:  Funerary Plate of the Chosen Dead (LFR)
 	}),
-}));
+});

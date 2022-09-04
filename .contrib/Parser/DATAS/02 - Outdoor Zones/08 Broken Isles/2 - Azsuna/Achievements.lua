@@ -135,37 +135,6 @@ _.Zones =
 						}),
 					},
 				})),
-				ach(11139, {	-- Field Medic!
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["g"] = {
-								i(139522, {	-- Bloody Note
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 2,			-- Bloody Note
-									--["questID"] = 42255,		-- Bloody Note
-									["description"] = "Pirates in southern-east Azsuna.",
-									["crs"] = {108133, 108139, 108153, 108146}
-								}),
-								i(139520, {	-- Fevered Plea
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 11,		-- Fevered Plea
-									--["questID"] = 42250,		-- Fevered Plea
-									["description"] = "Murlocs at the southern tip in Azsuna.",
-									["crs"] = {111598, 111630, 111586 }
-								}),
-								i(139521, {	-- Singed Note
-									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 15,		-- Singed Note
-									--["questID"] = 42245,		-- Singed Note
-									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
-									["crs"] = {88101, 88099, 108146}
-								}),
-							}
-						})),
-					},
-				}),
 				ach(10877, {	-- Pillars of Creation
 					["collectible"] = false,
 					["g"] = {
@@ -186,6 +155,9 @@ _.Zones =
 						crit(3, {	-- Albatross Chick
 							["crs"] = { 97020 },	-- Albatross Chick
 						}),
+						crit(4, {	-- Coastal Sandpiper
+							["crs"] = { 110826 },	-- Coastal Sandpiper
+					}),
 					},
 				}),
 				ach(11256),	-- Treasures of Azsuna

@@ -563,7 +563,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } }, -- Jessara Cordell <Enchanting Supplies>
+					["sym"] = { { "sub", "common_recipes_vendor", 3346 } }, -- Kithas <Enchanting Supplies>
 					-- #endif
 					["groups"] = LYNA_GROUPS,
 				}),
@@ -638,13 +638,11 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
-							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["spellID"] = 32455,	-- Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0.10000"},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,

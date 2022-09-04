@@ -246,7 +246,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698),	-- Sunwell Plateau
-					removeclassicphase(ach(725, {	-- Thori'dal, the Stars' Fury
+					classicAch(725, {	-- Thori'dal, the Stars' Fury
 						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
 						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						-- #if BEFORE WRATH
@@ -255,7 +255,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #else
 						["description"] = "You must equip the bow to earn this achievement.",
 						-- #endif
-					})),
+					}),
 					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render
 					i(34337),	-- Golden Staff of the Sin'dorei

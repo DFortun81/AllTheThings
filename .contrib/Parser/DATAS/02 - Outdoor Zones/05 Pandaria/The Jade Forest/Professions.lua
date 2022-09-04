@@ -15,6 +15,12 @@ root("Zones", m(PANDARIA, {
 				}),
 			}),
 		}),
+		prof(BLACKSMITHING, {
+			n(65114, {	-- Len the Hammer <Blacksmithing Trainer>
+				["coord"] = { 48.4, 36.8, THE_JADE_FOREST },
+				["g"] = MOP_BLACKSMITHING,
+			}),
+		}),
 		prof(ENCHANTING, {
 			n(65127, {	-- Lai the Spellpaw <Enchanting Trainer>
 				["coord"] = { 46.8, 42.8, THE_JADE_FOREST },

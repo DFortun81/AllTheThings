@@ -39,13 +39,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(765, {	-- Explore Badlands
+				explorationAch(765, {	-- Explore Badlands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Badlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(5444, {	-- Ready, Set, Goat!
 					["timeline"] = { "added 4.0.3" },
 					["cr"] = 46393,	-- Billy Goat

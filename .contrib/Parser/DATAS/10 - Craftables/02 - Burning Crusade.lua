@@ -998,9 +998,6 @@ root("Craftables", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSel
 			applyclassicphase(TBC_PHASE_ONE, i(29964)),	-- Blackstorm Leggings
 			-- #endif
 			i(29498),	-- Blastguard Pants
-			-- #if AFTER CATA
-			applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
-			-- #endif
 			i(29495),	-- Enchanted Clefthoof Leggings
 			i(29489),	-- Enchanted Felscale Leggings
 			i(25687),	-- Fel Leather Leggings

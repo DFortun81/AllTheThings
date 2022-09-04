@@ -12,12 +12,20 @@ _.Zones =
 				un(REMOVED_FROM_GAME, i(15739, {	-- Pattern: Runic Leather Bracers (now learned from trainer)
 					["crs"] = { 7112 },	-- Jaedenar Cultist
 				})),
+				i(15754, {	-- Pattern: Warbear Woolies
+					["timeline"] = { "removed 1.11.1.5462" },
+					["crs"] = {
+						7158,	-- Deadwood Shaman
+						7156,	-- Deadwood Den Watcher
+					},
+				}),
 				un(REMOVED_FROM_GAME, i(15744, {	-- Pattern: Wicked Leather Headband (now learned from trainer)
 					["crs"] = { 7107 },	-- Jadefire Trickster
 				})),
-				un(REMOVED_FROM_GAME, i(13491, {	-- Recipe: Elixir of the Mongoose
-					["crs"] = { 7106 },	-- Jadefire Rogue
-				})),
+				i(13491, {	-- Recipe: Elixir of the Mongoose
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 7106,	-- Jadefire Rogue
+				}),
 			}),
 		}),
 	}),

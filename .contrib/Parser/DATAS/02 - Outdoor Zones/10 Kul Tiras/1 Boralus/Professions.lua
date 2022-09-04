@@ -472,7 +472,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						{ 73.4, 8.4, BORALUS },	-- Forge
 						{ 41.8, 30.0, BORALUS },	-- Ingot Blessing
 					},
-					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
+					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
 					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

@@ -27,6 +27,9 @@ _.Instances = { tier(WOD_TIER, {
 					},
 				}),
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+			}),
 			d(17, {		-- LFR
 				n(ZONE_DROPS, {
 					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
@@ -48,229 +51,209 @@ _.Instances = { tier(WOD_TIER, {
 					})),
 				}),
 				ach(8989, {	-- Slagworks
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["g"] = {
-						cr(77182, e(1202, {	-- Oregorger
-							{
-								["achievementID"] = 8989,	-- Slagworks
-								["criteriaID"] = 2,			-- Oregorger
-							},
-							i(116381),	-- Oregorger's Blackrock Shanker
-							i(116380),	-- Oregorger's Venomous Canine
-							i(116257),	-- Acid-Munched Greathelm
-							i(116310),	-- Slag-Coated Cabochon
-							i(116308),	-- Greatcloak of Insatiable Hunger
-							i(116007),	-- Bracers of Unending Consumption
-							i(116046),	-- Bracers of Satiation
-							i(116033),	-- Roilgut Gauntlets
-							i(116215),	-- Barrage Blaster Belt
-							i(116240),	-- Waistplate of Caustic Spittle
-							i(116021),	-- Chasmwalker Sandals
-						})),
-						cr(76877, e(1161, {	-- Gruul
-							{
-								["achievementID"] = 8989,	-- Slagworks
-								["criteriaID"] = 1,			-- Gruul
-							},
-							i(116229),	-- Gaze of the Gronn Killer
-							i(116307),	-- Cloak of Unfulfilled Potential
-							i(116045),	-- Spelunker's Chestguard
-							i(116242),	-- Gruul's Smallest Shackles
-							i(116216),	-- Grips of Shackled Power
-							i(116039),	-- Delver's Belt
-							i(116009),	-- Rockfall Girdle
-							i(116018),	-- Cave Smasher Leggings
-							i(116299),	-- Eye of the Gronn
-						})),
-						cr(76806, e(1154, {	-- The Blast Furnace
-							{
-								["achievementID"] = 8989,	-- Slagworks
-								["criteriaID"] = 3,			-- Blast Furnace
-							},
-							i(116382),	-- Spire of Pyroclastic Flame
-							i(116379),	-- Flickering Lantern Wisp
-							i(116004),	-- Pyroclastic Hood
-							i(116228),	-- Spaulders of Tempered Fury
-							i(116037),	-- Chest of Heaving Bellows
-							i(116015),	-- Bracers of Searing Heat
-							i(116241),	-- Gauntlets of Electrocution
-							i(116041),	-- Grips of the Ruptured Furnace
-							i(120385),	-- Ashlink Legguards
-							i(120391),	-- Blacksteel Legplates
-							i(120377),	-- Ebonflame Leggings
-							i(116214),	-- Raging Pyroclasm Leggings
-							i(120379),	-- Sootfur Legwraps
-							i(116303),	-- Firecaller's Scorched Seal
-							i(116315),	-- Furyheart Talisman
-							un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
-						})),
-					},
+					cr(77182, e(1202, {	-- Oregorger
+						{
+							["achievementID"] = 8989,	-- Slagworks
+							["criteriaID"] = 2,			-- Oregorger
+						},
+						i(116381),	-- Oregorger's Blackrock Shanker
+						i(116380),	-- Oregorger's Venomous Canine
+						i(116257),	-- Acid-Munched Greathelm
+						i(116310),	-- Slag-Coated Cabochon
+						i(116308),	-- Greatcloak of Insatiable Hunger
+						i(116007),	-- Bracers of Unending Consumption
+						i(116046),	-- Bracers of Satiation
+						i(116033),	-- Roilgut Gauntlets
+						i(116215),	-- Barrage Blaster Belt
+						i(116240),	-- Waistplate of Caustic Spittle
+						i(116021),	-- Chasmwalker Sandals
+					})),
+					cr(76877, e(1161, {	-- Gruul
+						{
+							["achievementID"] = 8989,	-- Slagworks
+							["criteriaID"] = 1,			-- Gruul
+						},
+						i(116229),	-- Gaze of the Gronn Killer
+						i(116307),	-- Cloak of Unfulfilled Potential
+						i(116045),	-- Spelunker's Chestguard
+						i(116242),	-- Gruul's Smallest Shackles
+						i(116216),	-- Grips of Shackled Power
+						i(116039),	-- Delver's Belt
+						i(116009),	-- Rockfall Girdle
+						i(116018),	-- Cave Smasher Leggings
+						i(116299),	-- Eye of the Gronn
+					})),
+					cr(76806, e(1154, {	-- The Blast Furnace
+						{
+							["achievementID"] = 8989,	-- Slagworks
+							["criteriaID"] = 3,			-- Blast Furnace
+						},
+						i(116382),	-- Spire of Pyroclastic Flame
+						i(116379),	-- Flickering Lantern Wisp
+						i(116004),	-- Pyroclastic Hood
+						i(116228),	-- Spaulders of Tempered Fury
+						i(116037),	-- Chest of Heaving Bellows
+						i(116015),	-- Bracers of Searing Heat
+						i(116241),	-- Gauntlets of Electrocution
+						i(116041),	-- Grips of the Ruptured Furnace
+						i(120385),	-- Ashlink Legguards
+						i(120391),	-- Blacksteel Legplates
+						i(120377),	-- Ebonflame Leggings
+						i(116214),	-- Raging Pyroclasm Leggings
+						i(120379),	-- Sootfur Legwraps
+						i(116303),	-- Firecaller's Scorched Seal
+						i(116315),	-- Furyheart Talisman
+						un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
+					})),
 				}),
 				ach(8990, {	-- Black Forge
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["g"] = {
-						cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-							{
-								["achievementID"] = 8990,	-- Black Forge
-								["criteriaID"] = 1,			-- Hans'gar and Franzok
-							},
-							i(116012),	-- Fresh-Face Hood
-							i(116311),	-- Choker of Infinite Durability
-							i(116256),	-- Elbow Drop Spaulders
-							i(116305),	-- Scorchburn Cloak
-							i(116227),	-- Blood-Binder Chestguard
-							i(116217),	-- Brawler Brother's Bracers
-							i(116034),	-- Drop Kickers
-							i(116238),	-- Heel Protectors
-						})),
-						cr(76814, e(1123, {	-- Flamebender Ka'graz
-							{
-								["achievementID"] = 8990,	-- Black Forge
-								["criteriaID"] = 2,			-- Flamebender Ka'graz
-							},
-							i(116385),	-- Magma Monsoon Mace
-							i(116384),	-- Steelbringer's Polished Shield
-							i(116245),	-- Maw of Charring Breath
-							i(116313),	-- Choker of Oozing Wounds
-							i(120389),	-- Ashlink Hauberk
-							i(120393),	-- Blacksteel Chestplate
-							i(120375),	-- Ebonflame Robes
-							i(120380),	-- Sootfur Harness
-							i(116226),	-- Scorched Gauntlet Liners
-							i(116253),	-- Lava-Crushing Grips
-							i(116264),	-- Cinderhide Belt
-							i(116047),	-- Bloodsteel Warbelt
-							i(116040),	-- Magma-Mauled Leggings
-							i(116011),	-- Fixated Treads
-							i(116316),	-- Captured Flickerspark
-							un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
-						})),
-						cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
-							{
-								["achievementID"] = 8990,	-- Black Forge
-								["criteriaID"] = 3,			-- Kromog
-							},
-							i(116387),	-- Axe of the Stone Geyser
-							i(116386),	-- Earthbound Shield
-							i(116035),	-- Rockbreaker Warcap
-							i(116044),	-- Erupting Mantle-
-							i(116218),	-- Chestguard of Allegorical Shadows
-							i(116243),	-- Chestplate of Runed Earth
-							i(116008),	-- Robes of Living Earth
-							i(116254),	-- Reverberating Bracers
-							i(116006),	-- Thundersmash Gloves
-							i(120387),	-- Ashlink Treads
-							i(120394),	-- Blacksteel Greatboots
-							i(120378),	-- Ebonflame Sandals
-							i(116222),	-- Slam Jammers
-							i(120383),	-- Sootfur Stompers
-							i(116300),	-- Ring of Shattered Faults
-							i(116318),	-- Stoneheart Idol
-						})),
-					},
+					cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
+						{
+							["achievementID"] = 8990,	-- Black Forge
+							["criteriaID"] = 1,			-- Hans'gar and Franzok
+						},
+						i(116012),	-- Fresh-Face Hood
+						i(116311),	-- Choker of Infinite Durability
+						i(116256),	-- Elbow Drop Spaulders
+						i(116305),	-- Scorchburn Cloak
+						i(116227),	-- Blood-Binder Chestguard
+						i(116217),	-- Brawler Brother's Bracers
+						i(116034),	-- Drop Kickers
+						i(116238),	-- Heel Protectors
+					})),
+					cr(76814, e(1123, {	-- Flamebender Ka'graz
+						{
+							["achievementID"] = 8990,	-- Black Forge
+							["criteriaID"] = 2,			-- Flamebender Ka'graz
+						},
+						i(116385),	-- Magma Monsoon Mace
+						i(116384),	-- Steelbringer's Polished Shield
+						i(116245),	-- Maw of Charring Breath
+						i(116313),	-- Choker of Oozing Wounds
+						i(120389),	-- Ashlink Hauberk
+						i(120393),	-- Blacksteel Chestplate
+						i(120375),	-- Ebonflame Robes
+						i(120380),	-- Sootfur Harness
+						i(116226),	-- Scorched Gauntlet Liners
+						i(116253),	-- Lava-Crushing Grips
+						i(116264),	-- Cinderhide Belt
+						i(116047),	-- Bloodsteel Warbelt
+						i(116040),	-- Magma-Mauled Leggings
+						i(116011),	-- Fixated Treads
+						i(116316),	-- Captured Flickerspark
+						un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
+					})),
+					cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
+						{
+							["achievementID"] = 8990,	-- Black Forge
+							["criteriaID"] = 3,			-- Kromog
+						},
+						i(116387),	-- Axe of the Stone Geyser
+						i(116386),	-- Earthbound Shield
+						i(116035),	-- Rockbreaker Warcap
+						i(116044),	-- Erupting Mantle-
+						i(116218),	-- Chestguard of Allegorical Shadows
+						i(116243),	-- Chestplate of Runed Earth
+						i(116008),	-- Robes of Living Earth
+						i(116254),	-- Reverberating Bracers
+						i(116006),	-- Thundersmash Gloves
+						i(120387),	-- Ashlink Treads
+						i(120394),	-- Blacksteel Greatboots
+						i(120378),	-- Ebonflame Sandals
+						i(116222),	-- Slam Jammers
+						i(120383),	-- Sootfur Stompers
+						i(116300),	-- Ring of Shattered Faults
+						i(116318),	-- Stoneheart Idol
+					})),
 				}),
 				ach(8991, {	-- Iron Assembly
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["g"] = {
-						cr(76865, e(1122, {	-- Beastlord Darmac
+					cr(76865, e(1122, {	-- Beastlord Darmac
+						{
+							["achievementID"] = 8991,	-- Iron Assembly
+							["criteriaID"] = 1,			-- Beastlord Darmac
+						},
+						i(116306),	-- Dreaded Wing
+						i(116255),	-- Heartsmasher Chestplate
+						i(116016),	-- Robes of Brutal Tantrums
+						i(116038),	-- Beastmaster's Iron Bracers
+						i(116262),	-- Waistplate of Soothed Beasts
+						i(116223),	-- Legguards of the Unstoppable Charge
+						i(116048),	-- Rylakk-Rider's Legguards
+						i(116213),	-- Black Iron Spurs
+						i(116019),	-- Treads of the Flaming Maw
+						i(116302),	-- Thunderlord Trainer's Insignia
+					})),
+					cr(76906, e(1147, {	-- Operator Thogar
+						{
+							["achievementID"] = 8991,	-- Iron Assembly
+							["criteriaID"] = 2,			-- Operator Thogar
+						},
+						i(116388),	-- Crack-Shot Longrifle
+						i(116389),	-- Thogar's Imperialistic Spire
+						i(120388),	-- Ashlink Pauldrons
+						i(120395),	-- Blacksteel Shoulderplates
+						i(120376),	-- Ebonflame Spaulders
+						i(120381),	-- Sootfur Shoulderguards
+						i(116013),	-- Spaulders of Soothing Flame
+						i(116304),	-- Deadshot Longcloak
+						i(116014),	-- Grips of Cauterization
+						i(116049),	-- Raider's Spikeholder Belt
+						i(116265),	-- Sniper's Ammo Belt
+						i(116252),	-- Waistplate of Obliteration
+						i(116239),	-- Gunnery Sergeant's Legplates
+						i(116301),	-- Lava Shock Seal
+					})),
+					e(1203, {	-- The Iron Maidens
+						["crs"] = {
+							77557,	-- Admiral Gar'an
+							77231,	-- Enforcer Sorka
+							77477,	-- Marak the Blooded
+						},
+						["g"] = {
 							{
 								["achievementID"] = 8991,	-- Iron Assembly
-								["criteriaID"] = 1,			-- Beastlord Darmac
+								["criteriaID"] = 3,			-- The Iron Maidens
 							},
-							i(116306),	-- Dreaded Wing
-							i(116255),	-- Heartsmasher Chestplate
-							i(116016),	-- Robes of Brutal Tantrums
-							i(116038),	-- Beastmaster's Iron Bracers
-							i(116262),	-- Waistplate of Soothed Beasts
-							i(116223),	-- Legguards of the Unstoppable Charge
-							i(116048),	-- Rylakk-Rider's Legguards
-							i(116213),	-- Black Iron Spurs
-							i(116019),	-- Treads of the Flaming Maw
-							i(116302),	-- Thunderlord Trainer's Insignia
-						})),
-						cr(76906, e(1147, {	-- Operator Thogar
-							{
-								["achievementID"] = 8991,	-- Iron Assembly
-								["criteriaID"] = 2,			-- Operator Thogar
-							},
-							i(116388),	-- Crack-Shot Longrifle
-							i(116389),	-- Thogar's Imperialistic Spire
-							i(120388),	-- Ashlink Pauldrons
-							i(120395),	-- Blacksteel Shoulderplates
-							i(120376),	-- Ebonflame Spaulders
-							i(120381),	-- Sootfur Shoulderguards
-							i(116013),	-- Spaulders of Soothing Flame
-							i(116304),	-- Deadshot Longcloak
-							i(116014),	-- Grips of Cauterization
-							i(116049),	-- Raider's Spikeholder Belt
-							i(116265),	-- Sniper's Ammo Belt
-							i(116252),	-- Waistplate of Obliteration
-							i(116239),	-- Gunnery Sergeant's Legplates
-							i(116301),	-- Lava Shock Seal
-						})),
-						e(1203, {	-- The Iron Maidens
-							["crs"] = {
-								77557,	-- Admiral Gar'an
-								77231,	-- Enforcer Sorka
-								77477,	-- Marak the Blooded
-							},
-							["g"] = {
-								{
-									["achievementID"] = 8991,	-- Iron Assembly
-									["criteriaID"] = 3,			-- The Iron Maidens
-								},
-								i(116390),	-- Battle Medic's Wand
-								i(116220),	-- Grapeshot Hood
-								i(116263),	-- Vortex Plate Helm
-								i(116050),	-- Bombardeer's Targeting Helm
-								i(116312),	-- Sorka's Ear Collection
-								i(120386),	-- Ashlink Gloves
-								i(120392),	-- Blacksteel Gauntlets
-								i(120374),	-- Ebonflame Grips
-								i(120384),	-- Sootfur Gauntlets
-								i(116225),	-- Gauntlets of Flickering Blades
-								i(116017),	-- Deckhand's Cord
-								i(116051),	-- Rogg's Earthen Legguards
-								i(116010),	-- Incendiary Leggings
-								i(116250),	-- Impaler's Greatboots
-								i(116314),	-- Blackheart Enforcer's Medallion
-								un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
-							},
-						}),
-					},
+							i(116390),	-- Battle Medic's Wand
+							i(116220),	-- Grapeshot Hood
+							i(116263),	-- Vortex Plate Helm
+							i(116050),	-- Bombardeer's Targeting Helm
+							i(116312),	-- Sorka's Ear Collection
+							i(120386),	-- Ashlink Gloves
+							i(120392),	-- Blacksteel Gauntlets
+							i(120374),	-- Ebonflame Grips
+							i(120384),	-- Sootfur Gauntlets
+							i(116225),	-- Gauntlets of Flickering Blades
+							i(116017),	-- Deckhand's Cord
+							i(116051),	-- Rogg's Earthen Legguards
+							i(116010),	-- Incendiary Leggings
+							i(116250),	-- Impaler's Greatboots
+							i(116314),	-- Blackheart Enforcer's Medallion
+							un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
+						},
+					}),
 				}),
 				ach(8992, {	-- Blackhand's Crucible
-					["crs"] = {
-						94870,	-- Seer Kazal <Shadowmoon Exile>
-					},
-					["g"] = {
-						cr(77325, e(959, {	-- Blackhand
-							i(116391),	-- Blackhand Forgehammer
-							i(116393),	-- Dagger of the Shattered Crucible
-							i(120390),	-- Ashlink Coif
-							i(120396),	-- Blacksteel Casque
-							i(120373),	-- Ebonflame Hood
-							i(120382),	-- Sootfur Cap
-							i(116309),	-- Spiked Foundry Collar
-							i(116036),	-- Deathmark Shoulderguards
-							i(116005),	-- Forgestoker's Shoulderpads
-							i(116219),	-- Spaulders of Erupting Iron
-							i(116244),	-- Spaulders of the Iron Crucible
-							i(116022),	-- Flamestoker Wraps
-							i(116224),	-- Bomb-Carrier's Harness
-							i(116251),	-- Ironshatter Legplates
-							i(116042),	-- Ram-Carrier's Treads
-							i(116317),	-- Storage House Key
-							i(122200),	-- Music Roll: A Siege of Worlds
-							un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
-						})),
-					},
+					cr(77325, e(959, {	-- Blackhand
+						i(116391),	-- Blackhand Forgehammer
+						i(116393),	-- Dagger of the Shattered Crucible
+						i(120390),	-- Ashlink Coif
+						i(120396),	-- Blacksteel Casque
+						i(120373),	-- Ebonflame Hood
+						i(120382),	-- Sootfur Cap
+						i(116309),	-- Spiked Foundry Collar
+						i(116036),	-- Deathmark Shoulderguards
+						i(116005),	-- Forgestoker's Shoulderpads
+						i(116219),	-- Spaulders of Erupting Iron
+						i(116244),	-- Spaulders of the Iron Crucible
+						i(116022),	-- Flamestoker Wraps
+						i(116224),	-- Bomb-Carrier's Harness
+						i(116251),	-- Ironshatter Legplates
+						i(116042),	-- Ram-Carrier's Treads
+						i(116317),	-- Storage House Key
+						i(122200),	-- Music Roll: A Siege of Worlds
+						un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
+					})),
 				}),
 			}),
 			d(14, {		-- Normal

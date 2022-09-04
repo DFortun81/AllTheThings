@@ -30,22 +30,22 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(864, {	-- Explore Shadowmoon Valley
+					explorationAch(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Netherwing to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1015); end]],
-						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(1195, {	-- Shadow of the Betrayer
+					classicAch(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -82,8 +82,10 @@ root("Zones", {
 							-- The Dark Conclave
 							10808,	-- Thwart the Dark Conclave
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 90 quests in Shadowmoon Valley.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -135,7 +137,7 @@ root("Zones", {
 							["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -655,7 +657,12 @@ root("Zones", {
 					}),
 					q(10634, {	-- Divination: Gorefiend's Armor
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -667,7 +674,12 @@ root("Zones", {
 					}),
 					q(10635, {	-- Divination: Gorefiend's Cloak
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -679,7 +691,12 @@ root("Zones", {
 					}),
 					q(10636, {	-- Divination: Gorefiend's Truncheon
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
-						["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend
+						["hordeQuestData"] = {
+							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
+						},
+						["allianceQuestData"] = {
+							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
+						},
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -694,12 +711,12 @@ root("Zones", {
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
-							removeclassicphase(ach(1638, {	-- Skyshattered
-								-- #if BEFORE 3.0.1
+							classicAch(1638, {	-- Skyshattered
 								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
+								-- #if BEFORE WRATH
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(32863),	-- Skybreaker Whip
 						},
 					})),
@@ -1915,7 +1932,7 @@ root("Zones", {
 							{ 46.8, 26.6, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(1, {	-- Ambassador Jerrikar
+							crit(4504, {	-- Ambassador Jerrikar
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31224),	-- Illidari Bracers
@@ -1936,7 +1953,7 @@ root("Zones", {
 							{ 59.2, 70.6, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(5, {	-- Collidus the Warp-Watcher
+							crit(4508, {	-- Collidus the Warp-Watcher
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31219),	-- Emerald Beholder Eye
@@ -1954,7 +1971,7 @@ root("Zones", {
 							{ 42.4, 68.4, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(12, {	-- Kraator
+							crit(4515, {	-- Kraator
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31213),	-- Abyssal Plate Sabatons
@@ -2202,6 +2219,21 @@ root("Zones", {
 						["model"] = 521201,
 						["g"] = {
 							i(122228),	-- Music Roll: The Black Temple
+						},
+					}),
+					i(140784, {	-- Fel Piston Stabilizer
+						["timeline"] = { "added 7.0.3.22248" },
+						["crs"] = {
+							17711,	-- Doomwalker
+							22859,	-- Shadowhoof Summoner
+							22858,	-- Shadowhoof Assassin
+						},
+						["coords"] = {
+							{ 69.6, 42.4, SHADOWMOON_VALLEY },
+							{ 69.6, 45.4, SHADOWMOON_VALLEY },
+							{ 69.6, 44.0, SHADOWMOON_VALLEY },
+							{ 66.0, 43.4, SHADOWMOON_VALLEY },
+							{ 72.6, 44.0, SHADOWMOON_VALLEY },
 						},
 					}),
 				}),

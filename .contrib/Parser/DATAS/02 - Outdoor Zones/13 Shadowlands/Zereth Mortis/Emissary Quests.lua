@@ -8,6 +8,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(64867, {	-- Supplies from The Enlightened
 				["provider"] = { "n", 182257 },	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
+				["minReputation"] = { 2478, 8 },	-- The Enlightened, Exalted
 				["repeatable"] = true,
 				["g"] = {
 					i(187780, {	-- Enlightened Broker Supplies
@@ -30,6 +31,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(190939),	-- Walking Staff of the Enlightened Journey
 					}),
 				},
+			}),
+		}),
+		n(FACTIONS, {
+			faction(2478, {	-- The Enlightened
+				ach(15220),	-- The Enlightened
 			}),
 		}),
 	}),

@@ -437,9 +437,8 @@ _.Instances = { tier(LEGION_TIER, {
 	}),
 })};
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
-		--	Invasion points
 		--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 		--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
 		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
@@ -454,13 +453,17 @@ root("HiddenQuestTriggers", {
 		q(49175),	-- Greater Invasion Point: Matron Folnuna - bonus roll used
 		q(48620),	-- Greater Invasion Point: Mistress Alluradel - weekly completion
 		q(49173),	-- Greater Invasion Point: Mistress Alluradel - bonus roll used
-		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
-		q(49215),	-- triggered upon completing Bonich, but not the official quest.
-		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
-		q(49214),	-- triggered upon completing Naigtal, but not the official quest.
-		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
-		q(49212),	-- triggered upon completing Sangua, but not the official quest.
-		q(49210),	-- triggered upon completing Val, but not the official quest.
-		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
+		q(48671),	-- Lockout Tracking - Normal - Fire - Cen'gar first completion
+		q(48672),	-- Lockout Tracking - Normal - Ice - Val first completion
+		q(48673),	-- Lockout Tracking - Normal - Blood - Sangua first completion
+		q(48674),	-- Lockout Tracking - Normal - Islands - Aurinor first completion
+		q(48675),	-- Lockout Tracking - Normal - Marsh - Naigtal first completion
+		q(48676),	-- Lockout Tracking - Normal - Forest - Bonich first completion
+		q(49210),	-- triggered upon completing Val, but not the official quest
+		q(49211),	-- triggered upon completing Cen'gar, but not the official quest
+		q(49212),	-- triggered upon completing Sangua, but not the official quest
+		q(49213),	-- triggered upon completing Aurinor, but not the official quest
+		q(49214),	-- triggered upon completing Naigtal, but not the official quest
+		q(49215),	-- triggered upon completing Bonich, but not the official quest
 	}),
 });

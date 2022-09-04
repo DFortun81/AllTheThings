@@ -30,7 +30,7 @@ root("HiddenAchievementTriggers", {
 		tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = {"created 9.1.5"} }, {
 			ach(15403),	--[DNT] <Hidden> Mythic+ Rating > 0 (Shadowlands, S2 or later)
 			ach(15395),	-- Fae's Giving [DNT]
-		})),	
+		})),
 
 		-- 9.2.0
 		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = {"created 9.2.0"} }, {

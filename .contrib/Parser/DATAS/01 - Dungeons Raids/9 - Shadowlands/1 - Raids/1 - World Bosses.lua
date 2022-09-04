@@ -7,13 +7,19 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = { 60 },
-		["g"] = {
+		["g"] = sharedData({
+			["isWorldQuest"] = true,
+			["isRaid"] = true,
+		},{
 			n(COMMON_BOSS_DROPS, {
+				["isWorldQuest"] = false,
+				["isRaid"] = false,
 				["crs"] = {
 					167525,	-- Mortanis
 					167526,	-- Nurgash Muckformed
 					167527,	-- Oranomonos the Everbranching
 					167524,	-- Valinor, the Light of Eons
+					182466,	-- Antros
 				},
 				["g"] = {
 					i(181770),	-- Bone Marrow Hops
@@ -72,10 +78,11 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					182466,	-- Antros
 					182863,	-- Sav'thul
 				},
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["questID"] = 65143,	-- (WQ)
+				["questID"] = 65695,
 				["coord"] = { 48, 5, ZERETH_MORTIS },
+				["sym"] = {
+					{"select","itemID",187882},	-- Alpaca Soul
+				},
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
@@ -92,10 +99,20 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					}),
 				}),
 			})),
+			q(65143, {	-- Antros (WQ)
+				["sym"] = {
+					{"select","encounterID",2468,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66619, {	-- Antros (Fated)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2468,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
 			e(2456, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {	-- Mor'geth <Tormentor of the Damned>
-				["isWeekly"] = true,
-				["questID"] = 64531,	-- Mor'geth (WQ)
-				["isRaid"] = true,
+				["questID"] = 64547,
 				["coord"] = { 69.1, 44.2, THE_MAW },
 				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["creatureID"] = 178958,	-- Mor'geth <Tormentor of the Damned>
@@ -114,10 +131,20 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(187447),	-- Soul Cage Fragment
 				}),
 			})),
+			q(64531, {	-- Mor'geth (WQ)
+				["sym"] = {
+					{"select","encounterID",2456,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66618, {	-- Mor'geth (Fated)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2456,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
 			e(2431, {	-- Mortanis
-				["isWeekly"] = true,
-				["questID"] = 61816,	-- Mortanis (WQ)
-				["isRaid"] = true,
+				["questID"] = 62810,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
 				["creatureID"] = 167525,	-- Mortanis
 				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
@@ -137,10 +164,20 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(184133),	-- Spine Crawler Waistcord
 				}),
 			}),
+			q(61816, {	-- Mortanis (WQ)
+				["sym"] = {
+					{"select","encounterID",2431,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66617, {	-- Mortanis (Fated)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2431,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
 			e(2433, {	-- Nurgash Muckformed
-				["isWeekly"] = true,
-				["questID"] = 61814,	-- Nurgash Muckformed (WQ)
-				["isRaid"] = true,
+				["questID"] = 62812,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
 				["creatureID"] = 167526,	-- Nurgash Muckformed
 				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
@@ -160,10 +197,20 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(184137),	-- Sinstone Shoulderpadding
 				}),
 			}),
+			q(61814, {	-- Nurgash Muckfromed (WQ)
+				["sym"] = {
+					{"select","encounterID",2433,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66615, {	-- Nurgash Muckfromed (Fated)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2433,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
 			e(2432, {	-- Oranomonos the Everbranching
-				["isWeekly"] = true,
-				["questID"] = 61815,	-- Oranomonos the Everbranching (WQ)
-				["isRaid"] = true,
+				["questID"] = 62811,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
 				["creatureID"] = 167527,	-- Oranomonos the Everbranching
 				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
@@ -183,10 +230,20 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(184142),	-- Twisted Witherroot Band
 				}),
 			}),
+			q(61815, {	-- Oranomonos the Everbranching (WQ)
+				["sym"] = {
+					{"select","encounterID",2432,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66616, {	-- Oranomonos the Everbranching (Fated WQ)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2432,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
 			e(2430, {	-- Valinor, the Light of Eons
-				["isWeekly"] = true,
-				["questID"] = 61813,	-- Valinor, the Light of Eons (WQ)
-				["isRaid"] = true,
+				["questID"] = 62809,
 				["coord"] = { 26.3, 22.4, BASTION },
 				["creatureID"] = 167524,	-- Valinor, the Light of Eons
 				["sym"] = {	-- attach the Common Boss Drops when showing in a popout
@@ -206,18 +263,21 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					i(184139),	-- Valinor's Ground Pounders
 				}),
 			}),
-		},
+			q(61813, {	-- Valinor, the Light of Eons (WQ)
+				["sym"] = {
+					{"select","encounterID",2430,},{"pop"},	-- Original WB
+				},
+			}),
+			q(66614, {	-- Valinor, the Light of Eons (Fated WQ)
+				["timeline"] = { ADDED_SLS4 },
+				["sym"] = {
+					{"select","encounterID",2430,},{"pop"},	-- Original WB
+					{"modID",89},					-- Make the Items 'Fated'
+				},
+			}),
+		}),
 	}),
 })));
-
-root("HiddenQuestTriggers", {
-	q(64547),	-- Mor'geth kill questID
-	q(62810),	-- Mortanis kill questID
-	q(62812),	-- Nurgash Muckformed kill questID
-	q(62811),	-- Oranomonos kill questID
-	q(62809),	-- Valinor kill questID
-	q(65695),	-- Antros kill questID
-});
 
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(SL_TIER, {

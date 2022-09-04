@@ -50,19 +50,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Cold Water Fishing
-							["sourceQuest"] = 29342,	-- Cold Water Fishing
+							["_quests"] = { 29342 },	-- Cold Water Fishing
 						}),
 						crit(2, {	-- One fer the Ages
-							["sourceQuest"] = 29343,	-- One fer the Ages
+							["_quests"] = { 29343 },	-- One fer the Ages
 						}),
 						crit(3, {	-- Fish fer Squrky
-							["sourceQuest"] = 29344,	-- Fish fer Squrky
+							["_quests"] = { 29344 },	-- Fish fer Squrky
 						}),
 						crit(4, {	-- Live Bait
-							["sourceQuest"] = 29347,	-- Live Bait
+							["_quests"] = { 29347 },	-- Live Bait
 						}),
 						crit(5, {	-- The Gnomish Bait-o-Matic
-							["sourceQuest"] = 29350,	-- The Gnomish Bait-o-Matic
+							["_quests"] = { 29350 },	-- The Gnomish Bait-o-Matic
 						}),
 					},
 				})),
@@ -72,19 +72,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- A Round for the Guards
-							["sourceQuest"] = 29351,	-- A Round for the Guards
+							["_quests"] = { 29351 },	-- A Round for the Guards
 						}),
 						crit(2, {	-- A Fowl Shortage
-							["sourceQuest"] = 29352,	-- A Fowl Shortage
+							["_quests"] = { 29352 },	-- A Fowl Shortage
 						}),
 						crit(3, {	-- Keepin' the Haggis Flowin'
-							["sourceQuest"] = 29353,	-- Keepin' the Haggis Flowin'
+							["_quests"] = { 29353 },	-- Keepin' the Haggis Flowin'
 						}),
 						crit(4, {	-- Can't Get Enough Spice Bread
-							["sourceQuest"] = 29355,	-- Can't Get Enough Spice Bread
+							["_quests"] = { 29355 },	-- Can't Get Enough Spice Bread
 						}),
 						crit(5, {	-- I Need to Cask a Favor
-							["sourceQuest"] = 29356,	-- I Need to Cask a Favor
+							["_quests"] = { 29356 },	-- I Need to Cask a Favor
 						}),
 					},
 				})),
@@ -156,18 +156,30 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["g"] = CLASSIC_WEAPONSMITHING,
 					}),
 				}),
-				applyclassicphase(TBC_PHASE_ONE, prof(FISHING, {
-					i(34864),	-- Baby Crocolisk
+				prof(FISHING, {
+					i(34864, {	-- Baby Crocolisk
+						["timeline"] = { "added 2.4.0.7897" },
+					}),
 					i(67414, {	-- Bag of Shiny Things
 						["description"] = "Fishing Daily Quest Reward",
 						["timeline"] = { "added 4.0.1.12984" },
 						["cr"] = 5161,	-- Grimnur Stonebrand
 						["groups"] = {
-							i(44983),	-- Strand Crawler
-							i(33820),	-- Weather-Beaten Fishing Hat
-							i(45991),	-- Bone Fishing Pole
-							i(45992),	-- Jeweled Fishing Pole
-							i(67410),	-- Very Unlucky Rock
+							i(44983, {	-- Strand Crawler
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(33820, {	-- Weather-Beaten Fishing Hat
+								["timeline"] = { "added 2.4.0.7897" },
+							}),
+							i(45991, {	-- Bone Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(45992, {	-- Jeweled Fishing Pole
+								["timeline"] = { "added 3.1.0.9658" },
+							}),
+							i(67410, {	-- Very Unlucky Rock
+								["timeline"] = { "added 4.0.1.12984" },
+							}),
 						},
 					}),
 					i(122204, {	-- Music Roll: Cold Mountain
@@ -181,7 +193,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
 						-- #endif
 					}),
-				})),
+				}),
 			}),
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity

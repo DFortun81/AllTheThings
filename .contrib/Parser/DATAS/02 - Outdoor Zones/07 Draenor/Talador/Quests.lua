@@ -1127,18 +1127,6 @@ _.Zones =
 						34571,	-- Out of Jovite (alliance, artillery tower)
 					},
 				}),
-				q(35683, {	-- Reclaiming the City
-					["provider"] = { "n", 75028 },	-- Exarch Maladaar
-					["coord"] = { 49.8, 48.6, TALADOR },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35679,	-- Garrison Campaign: The Fall of Shattrath
-				}),
-				q(35684, {	-- Reclaiming the City
-					["provider"] = { "n", 76804 },	-- Lady Liadrin
-					["coord"] = { 50.0, 48.4, TALADOR },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35680,	-- Garrison Campaign: The Fall of Shattrath
-				}),
 				q(34508, {	-- Restalaan, Captain of the Guard
 					["provider"] = { "n", 77869 },	-- Soulbinder Tuulani
 					["coord"] = { 50.4, 87.5, TALADOR },
@@ -1203,34 +1191,6 @@ _.Zones =
 						33972,	-- Vile Defilers
 					},
 				}),
-				q(38562, {	-- Secrets of the Sargerei (A)
-					["provider"] = { "n", 91751 },	-- Exarch Yrel
-					["coord"] = { 44.2, 65.4, TALADOR },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun (A)
-					["g"] = {
-						i(124552, {	-- Baleful Treads
-							i(124573),  -- Axeclaw Boots
-							i(124572),	-- Bladefang Boots
-							i(124574),	-- Felbane Greaves
-							i(124571),	-- Felcast Sandals
-						}),
-					},
-				}),
-				q(38416, {	-- Secrets of the Sargerei (H)
-					["provider"] = { "n", 91750 },	-- Lady Liadrin
-					["coord"] = { 44.2, 65.2, TALADOR },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun (H)
-					["g"] = {
-						i(124552, {	-- Baleful Treads
-							i(124573),  -- Axeclaw Boots
-							i(124572),	-- Bladefang Boots
-							i(124574),	-- Felbane Greaves
-							i(124571),	-- Felcast Sandals
-						}),
-					},
-				}),
 				q(34721, {	-- Seek Out the Seer
 					["provider"] = { "n", 79724 },	-- Elumm
 					["races"] = HORDE_ONLY,
@@ -1280,18 +1240,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33721,	-- Gazlowe's Solution
 					["isBreadcrumb"] = true,
-				}),
-				q(35685, {	-- Socrethar's Demise
-					["provider"] = { "n", 75028 },	-- Exarch Maladaar
-					["coord"] = { 49.8, 48.6, TALADOR },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 35683,	-- Reclaiming the City
-				}),
-				q(35687, {	-- Socrethar's Demise
-					["provider"] = { "n", 76804 },	-- Lady Liadrin
-					["coord"] = { 50.0, 48.4, TALADOR },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 35684,	-- Reclaiming the City
 				}),
 				q(34701, {	-- Speaker for the Dead
 					["provider"] = { "n", 79618 },	-- Vindicator Icia

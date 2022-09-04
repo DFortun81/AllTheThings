@@ -697,7 +697,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							}),
 						},
 					}),
-					i(173997, {	-- Whispering Reef Salvage Salvage
+					i(173997, {	-- Whispering Reef Salvage
 						["modID"] = 14,
 						["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 						["g"] = {
@@ -847,8 +847,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 48.4, 89.5, DAZARALOR },
 				-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
 				["g"] = {
-					i(104324),	-- Foot Ball (TOY!)
-					i(104323),	-- The Swineskin (TOY!)
+					i(104324, {	-- Foot Ball (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
+					i(104323, {	-- The Swineskin (TOY!)
+						["timeline"] = { "added 5.4.0.17227" },
+					}),
 				},
 			}),
 			n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
@@ -1309,27 +1313,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(5, 4),	-- Essence of the Focusing Iris (Rank 4)
-						},
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(7, 4),	-- Anima of Life and Death (Rank 4)
-						},
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = HEALERS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(20, 4),	-- Life-Binder's Invocation (Rank 4)
-						},
 					}),
 					-- This Gear need symlink someday
 					i(174630),	-- Relinquished Azerite Spaulders

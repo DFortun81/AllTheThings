@@ -7,13 +7,13 @@ _.WorldDrops =
 	tier(MOP_TIER, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
-				i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses
+				i(100865, bubbleDownSelf({ ["timeline"] = { "added 5.4.0" }, ["requireSkill"] = BLACKSMITHING }, {	-- Plans: Balanced Trillium Ingot and Its Uses
 					["f"] = MISC,
 					["g"] = {
-						recipe(146921),	-- Accelerated Balanced Trillium Ingot
-						recipe(143255),	-- Balanced Trillium Ingot
+						r(146921),	-- Accelerated Balanced Trillium Ingot
+						r(143255),	-- Balanced Trillium Ingot
 					},
-				}),
+				})),
 			}),
 			prof(ENGINEERING, {
 				i(100910, {	-- Schematic: Chief Engineer Jard's Journal

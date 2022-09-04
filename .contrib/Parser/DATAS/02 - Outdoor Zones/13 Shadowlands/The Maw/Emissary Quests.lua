@@ -7,6 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		n(EMISSARY_QUESTS, {
 			q(64267, {	-- Mysterious Gifts from Ve'nari
 				["repeatable"] = true,
+				["minReputation"] = { 2432, 1 },	-- Ve'nari, Dubious
 				["g"] = {
 					i(187029, {	-- Mysterious Gift from Ve'nari
 						i(186657),	-- Soulbound Gloomcharger (MOUNT!)
@@ -15,9 +16,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 		}),
+		n(FACTIONS, {
+			faction(2432, {	-- Ve'nari
+				ach(14656),	-- Trading Partners
+			}),
+		}),
 	}),
 })));
 
-root("HiddenQuestTriggers", {
-	q(64288),	-- Paragon of Ve'nari
-});
+root("HiddenQuestTriggers", m(SHADOWLANDS, {
+	m(THE_MAW, {
+		q(64288),	-- Paragon of Ve'nari
+	}),
+}));

@@ -25,9 +25,9 @@ local L = app.L;
 	L.REQUIRES = "要求";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "：请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
-	L.REPORT_TIP = "\n（Ctrl+C 将多行报告复制到剪贴板）";
+	L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
-	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 Shift-点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
+	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."-点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
 	L.ITEM_GIVES_REP = "提供声望 '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
@@ -39,12 +39,12 @@ local L = app.L;
 	L.FACTION_SPECIFIC_REP = "并非所有声望都可以在单个角色上查看。例：联盟玩家无法看到战歌骑手，部落玩家无法查看银翼哨兵。";
 	L.VISIT_FLIGHT_MASTER = "访问飞行管理员缓存。";
 	L.FLIGHT_PATHS_DESC = "当你与每个大陆上的飞行管理员交谈时会缓存飞行路径。\n  - Crieve";
-	L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 Shift+点击标题手动刷新插件才能检测到这一点。";
+	L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 "..SHIFT_KEY_TEXT.."+点击标题手动刷新插件才能检测到这一点。";
 	L.HEIRLOOM_TEXT = "解锁传家宝";
 	L.HEIRLOOM_TEXT_DESC = "显示你是否已经获得或购买了传家宝。";
 	L.FAILED_ITEM_INFO = "未能获得物品信息。该物品可能是无效的或者可能还没有被缓存在你的服务器上。";
 	L.HEIRLOOMS_UPGRADES_DESC = "这表明你是否已经将传家宝升级到了一定的级别。\n\n安息吧…金币。\n - Crieve";
-	L.MUSIC_ROLLS_AND_SELFIE_DESC = "这些是按角色解锁且目前尚未在战网中共享。如果暴雪有人在看，如果能把这些战网共享的话那就太好了。\n\n必须通过 Shift+点击要检测的标题手动刷新插件。";
+	L.MUSIC_ROLLS_AND_SELFIE_DESC = "这些是按角色解锁且目前尚未在战网中共享。如果暴雪有人在看，如果能把这些战网共享的话那就太好了。\n\n必须通过 "..SHIFT_KEY_TEXT.."+点击要检测的标题手动刷新插件。";
 	L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\n必须首先通过在要塞中完成动感低音任务来解锁塞点唱机以便掉落此物品。\n\n自拍需要自拍神器玩具。";
 	L.OPPOSITE_FACTION_EQ = "与对立阵营对应：";
 	L.SELFIE_DESC = "使用您的自拍 ";
@@ -145,7 +145,7 @@ local L = app.L;
 	L.TELEPORT_TO_FROM_DUNGEON = "传送到/从地下城传送";
 	L.TELEPORT_TO_FROM_DUNGEON_DESC = "点击此处传送到当前副本或从当前副本传送。\n\n潘达利亚之谜以这种方式快速传送到当前副本之外。";
 	L.RESET_INSTANCES = "重置副本";
-	L.RESET_INSTANCES_DESC = "点击此处重置副本。\n\nAlt+点击可在离开地下城时自动重置副本。\n\n警告：小心使用！";
+	L.RESET_INSTANCES_DESC = "点击此处重置副本。\n\n"..ALT_KEY_TEXT.."+点击可在离开地下城时自动重置副本。\n\n警告：小心使用！";
 	L.DELIST_GROUP = "群组除名";
 	L.DELIST_GROUP_DESC = "点击此处将群组除名。如果您独自一人，它会轻松地离开该组，而不会将您从您所在的任何实例中移出。 ";
 	L.LEAVE_GROUP = "离开队伍";
@@ -186,7 +186,7 @@ local L = app.L;
 	L.WORLD_QUESTS_DESC = "这些都是世界任务和其他有时间限制的事物，目前可以在某个地方获得。去得到他们！";
 	L.QUESTS_DESC = "按数字升序显示游戏中所有可能的任务 ID。";
 	L.UPDATE_WORLD_QUESTS = "立即更新世界任务";
-	L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务 API 很慢或无法返回新数据。如果希望在不更改区域的情况下强制刷新数据，请立即点击此按钮！\n\nAlt+点击以包括当前可用的事物，可能不受时间限制";
+	L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务 API 很慢或无法返回新数据。如果希望在不更改区域的情况下强制刷新数据，请立即点击此按钮！\n\n"..ALT_KEY_TEXT.."+点击以包括当前可用的事物，可能不受时间限制";
 	L.CLEAR_WORLD_QUESTS = "清除世界任务";
 	L.CLEAR_WORLD_QUESTS_DESC = "点击清除世界任务框架内的当前信息";
 	L.ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC = "所有可以用来获得成就的物品都会显示在这里。";
@@ -219,6 +219,7 @@ local L = app.L;
 	L.LOCK_CRITERIA_SPELL_LABEL = "已学法术/坐骑/配方";
 	L.LOCK_CRITERIA_FACTION_LABEL = "阵营声望";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（当前：%s）";
+	L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."-点击）正确已收集。";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品过滤";
@@ -228,15 +229,15 @@ local L = app.L;
 		L.ITEM_FILTER_POPUP_TEXT = "你想搜索哪个物品过滤？";
 
 -- Instructional Text
-	L.MINIMAP_MOUSEOVER_TEXT = "右键改变设置。\n左键打开主列表。\nCtrl+左键打开小列表。\nShift+左键刷新收藏。";
-	L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住并拖拽左键移动\n右键打开设置\nShift+左键刷新收藏\nCtrl+左键展开/折叠列表\nShift+右键单击排序组/弹出列表|r";
-	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\nShift+左键刷新收藏\nCtrl+左键展开/折叠列表\nShift+右键单击排序组/弹出列表\nAlt+右键设置路径点|r";
-	L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff按住并拖拽左键移动\n右键打开设置\nShift+左键搜索拍卖行|r";
-	L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\nShift+左键搜索拍卖行|r";
+	L.MINIMAP_MOUSEOVER_TEXT = "右键改变设置。\n左键打开主列表。\n"..CTRL_KEY_TEXT.."+左键打开小列表。\n"..SHIFT_KEY_TEXT.."+左键刷新收藏。";
+	L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住并拖拽左键移动\n右键打开设置\n"..SHIFT_KEY_TEXT.."+左键刷新收藏\n"..CTRL_KEY_TEXT.."+左键展开/折叠列表\n"..SHIFT_KEY_TEXT.."+右键单击排序组/弹出列表|r";
+	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."+左键刷新收藏\n"..CTRL_KEY_TEXT.."+左键展开/折叠列表\n"..SHIFT_KEY_TEXT.."+右键单击排序组/弹出列表\n"..ALT_KEY_TEXT.."+右键设置路径点|r";
+	L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff按住并拖拽左键移动\n右键打开设置\n"..SHIFT_KEY_TEXT.."+左键搜索拍卖行|r";
+	L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."+左键搜索拍卖行|r";
 	L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000如果你掉落了此项（除回收箱外的\n任何地方），请去 Discord 告诉我们从哪掉的！|r";
 	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000提供越多信息越好，谢谢！|r";
-	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt+点击锁定窗口";
-	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt+点击解锁窗口";
+	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."+点击锁定窗口";
+	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."+点击解锁窗口";
 	L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求";
 	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
@@ -244,7 +245,7 @@ local L = app.L;
 
 -- Settings.lua
 	L.SKIP_AUTO_REFRESH = "不自动刷新！";
-	L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 Shift+点击 ATT 窗口执行全部刷新。";
+	L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."+点击 ATT 窗口执行全部刷新。";
 	L.AFTER_REFRESH = "刷新后";
 
 	-- General tab
@@ -355,6 +356,7 @@ local L = app.L;
 		L.DYNAMIC_CATEGORY_NESTED = "嵌套";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";
+		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 
 	-- Account Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
@@ -369,13 +371,13 @@ local L = app.L;
 		L.ACCOUNT_WIDE_TITLES_TOOLTIP = "|cff00AB00追踪帐号通用|R\n\n大多数头衔都是在账号通用内进行追踪，但是魔兽世界中一些著名的头衔被锁定在赢得他们的角色上。\n\n如果你不关心这个并希望看到那些标记为收藏的头衔是你的小号，请切换此选项。";
 
 	-- Filters tab
-		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF，即使该选项被禁用。|r";
+		L.ITEM_EXPLAIN_LABEL = "|cffFFFFFF始终显示此内容如果位于 |Cff00AB00帐号模式|cffFFFFFF。|r";
 		L.CLASS_DEFAULTS_BUTTON = "职业默认";
 		L.CLASS_DEFAULTS_BUTTON_TOOLTIP = "点击此按钮可将所有过滤重置为职业默认。\n\n注意：只能打开可为职业收藏的过滤。";
 		L.ALL_BUTTON_TOOLTIP = "点击此按钮一次启用所有设备过滤。";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "点击此按钮一次禁用所有设备过滤。";
 		L.CUSTOM_FILTERS_LABEL = "自动过滤";
-		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF这些过滤是根据你当前的角色自动应用的，但可以通过勾选来覆盖，让你看到你的角色目前不能收藏的其他东西。\n在战网或调试模式下无论如何选择，这些过滤都不会被启用。|r";
+		L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 |Cff00AB00账号模式|cffFFFFFF。|r";
 		L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "启用此设置可强行显示%s内容，即使该内容对当前角色不可用。";
 
 	-- Unobtainables tab
@@ -406,7 +408,9 @@ local L = app.L;
 		L.LORE_CHECKBOX = "传言";
 		L.LORE_CHECKBOX_TOOLTIP = "启用此选项可在工具提示中显示传言。这可能包括地下城日志提供的描述性文本或贡献者的趣味。";
 		L.KNOWN_BY_CHECKBOX = "已知";
-		L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到所有知道此配方的服务器上的角色的完整列表，请启用此选项。";
+		L.KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
+		L.COMPLETED_BY_CHECKBOX = "已完成";
+		L.COMPLETED_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已完成任务的完整角色列表，请启用此选项。";
 		L.SHOW_MODELS_CHECKBOX = "模型预览";
 		L.SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
@@ -484,7 +488,7 @@ local L = app.L;
 		L.AUCTION_TAB_CHECKBOX = "显示拍卖行模块标签";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍卖行模块请启用此选项。\n\n一些插件很调皮会大量修改这个框架。ATT 并不总是和那些玩具玩得很好。";
 		L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
-		L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（Shift+右键）按每个组的总进度排序（而不是按名称）请启用此选项";
+		L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."+右键）按每个组的总进度排序（而不是按名称）请启用此选项";
 		L.QUEST_CHAIN_NESTED_CHECKBOX = "显示嵌套任务链";
 		L.QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP = "如果你想让任务链要求（右键单击任务）窗口将所需任务显示为其后续任务的子组，即它们必须从内到外完成，请启用此选项。\n\n这一点很有用，不会错过个别任务，应该主要用于完成任务的考虑。\n\n否则任务链要求将以自上而下的方式显示，最早的任务在最上面。";
 		L.CELEBRATIONS_LABEL = "庆祝和音效";
@@ -508,7 +512,7 @@ local L = app.L;
 		L.PROFILE_NEW_TOOLTIP = "为当前角色创建一个空白配置文件";
 		L.PROFILE_COPY_TOOLTIP = "复制已选配置文件到当前配置文件";
 		L.PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
-		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 Shift-点击切换到它";
+		L.PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."-点击切换到它";
 
 	-- Sync tab
 		L.SYNC = "同步";
@@ -772,7 +776,7 @@ for key,value in pairs({
 		[-576] = "星际争霸II：虚空之遗",										-- StarCraft II: Legacy of the Void
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
-		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
+		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
 		[-581] = "极限冲层：第二季",										-- The Great Push: Season 2
 	-- PvP Header
 		-- PvP Set Names
@@ -936,6 +940,8 @@ for key, value in pairs({
 	[261] = "破损的箱子",	-- Damaged Crate
 	[269] = "被看守着的酒桶",	-- Guarded Thunder Ale Barrel
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
+	[287] = "书呆子赫罗德的档案",	-- Bookie Herod's Records	--TODO: This was taken from classic Wowhead
+	[288] = "书呆子赫罗德的保险箱",	-- Bookie Herod's Strongbox	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
 	[1557] = "莉莉丝的餐桌",	-- Lillith's Dinner Table
 	[1561] = "密封的箱子",	-- Sealed Crate
@@ -945,10 +951,20 @@ for key, value in pairs({
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1609] = "龙喉投石车",	-- Dragonmaw Catapult
 	[1627] = "达拉然板条箱",	-- Dalaran Crate
+	[1738] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1739] = "辛迪加文档",	-- Syndicate Documents	--TODO: This was taken from classic Wowhead
+	[1740] = "辛迪加文档",	-- Syndicate Documents
+	[1761] = "希尔斯布莱德宣言",	-- Hillsbrad Proclamation	--TODO: This was taken from classic Wowhead
 	[1763] = "通缉",	-- WANTED	--TODO: This was taken from classic Wowhead
+	[1765] = "旧木箱",	-- Worn Wooden Chest	--TODO: This was taken from classic Wowhead
+	[1768] = "埃希尔之焰",	-- Flame of Azel	--TODO: This was taken from classic Wowhead
+	[1769] = "沃拉兹之焰",	-- Flame of Veraz	--TODO: This was taken from classic Wowhead
+	[1770] = "尤基尔之焰",	-- Flame of Uzel	--TODO: This was taken from classic Wowhead
+	[2008] = "危险！",	-- Dangerous!	--TODO: This was taken from classic Wowhead
 	[2059] = "矮人的尸体",	-- A Dwarven Corpse
 	[2076] = "冒泡的大锅",	-- Bubbling Cauldron
 	[2083] = "血帆海盗的信件",	-- Bloodsail Correspondence
+	[2289] = "破损的救生艇",	-- Ruined Lifeboat
 	[2553] = "浸水的卷轴",	-- A Soggy Scroll
 	[2555] = "发霉的卷轴",	-- Musty Scroll
 	[2652] = "伊贝尼瑟的尸体",	-- Ebenezer Rustlocke's Corpse
@@ -2683,6 +2699,8 @@ for key, value in pairs({
 	[327592] = "魔力之锁",	-- Enchanted Lock
 	[327596] = "毁坏的深渊法器",	-- Broken Abyssal Focus
 	[327597] = "生锈的旧箱子",	-- Old Rusty Chest
+	[327650] = "战争补给箱",	-- War Supply Chest
+	[327652] = "战争补给箱",	-- War Supply Chest	--TODO: This was manually translated
 	--TODO: [327669] = "Contained Alemental",	-- Contained Alemental
 	--TODO: [328343] = "Direbrew Cog",	-- Direbrew Cog
 	--TODO: [328413] = "Hozen Totem",	-- Hozen Totem
@@ -2873,6 +2891,9 @@ for key, value in pairs({
 	[354856] = "软泥覆盖的箱子",	-- Slime-Coated Crate
 	[354911] = "鼓胀的心能之种",	-- Swollen Anima Seed
 	[355000] = "魅夜宝箱",	-- Cache of the Night	--TODO: This was manually translated
+	[355019] = "梦境原料纤丝",	-- Raw Dream Silk
+	[355020] = "魔化虬枝",	-- Enchanted Bough
+	[355021] = "法夜装饰品",	-- Fae Ornament
 	[355035] = "魂选符文宝匣",	-- Treasure: House of the Chosen
 	[355037] = "符文之缚宝匣",	-- Runebound Coffer
 	[355038] = "符文之缚宝匣",	-- Runebound Coffer
@@ -2894,6 +2915,8 @@ for key, value in pairs({
 	[355880] = "通灵馍典",	-- The Necronom-i-nom
 	[355886] = "凋殇者宝箱",	-- Plaguefallen Chest
 	[355947] = "格拉萨恩的宝箱",	-- Glutharn's Stash
+	[355980] = "祭师的箱子",	-- Ritualist's Cache
+	[356535] = "符语者的宝藏",	-- Runespeaker's Trove
 	[356555] = "欧律迪亚的项链",	-- Eurydea's Necklace
 	[356693] = "瓦丝琪女男爵的奢华礼品",	-- Baroness Vashj's Extravagant Tribute
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",	-- Alexandros Mograine's Extravagant Tribute
@@ -3239,7 +3262,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---TODO:
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
 	-- Arbitrary Filters
@@ -3278,7 +3300,9 @@ do a[key] = value; end
 
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
-	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
+	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。" },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "只有角色获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
+	["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
 })
 do a[key] = value; end

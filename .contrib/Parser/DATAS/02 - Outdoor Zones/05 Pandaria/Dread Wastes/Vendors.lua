@@ -50,46 +50,46 @@ _.Zones =
 							["cost"] = 5001400,	-- 500g 14s
 						}),
 						i(89066),	-- Paragon's Pale Pendant
-						i(83791, {	-- Plans: Breastplate of Ancient Steel
+						i(83791, {	-- Plans: Breastplate of Ancient Steel (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(83792, {	-- Plans: Gauntlets of Ancient Steel
+						i(83792, {	-- Plans: Gauntlets of Ancient Steel (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(90531, {	-- Plans: Ghost Iron Shield Spike
+						i(90531, {	-- Plans: Ghost Iron Shield Spike (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(83787, {	-- Plans: Ghost Reaver's Breastplate
+						i(83787, {	-- Plans: Ghost Reaver's Breastplate (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(83788, {	-- Plans: Ghost Reaver's Gauntlets
+						i(83788, {	-- Plans: Ghost Reaver's Gauntlets (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84196, {	-- Plans: Living Steel Belt Buckle
+						i(84196, {	-- Plans: Living Steel Belt Buckle (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(83789, {	-- Plans: Living Steel Breastplate
+						i(83789, {	-- Plans: Living Steel Breastplate (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(83790, {	-- Plans: Living Steel Gauntlets
+						i(83790, {	-- Plans: Living Steel Gauntlets (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(90532, {	-- Plans: Living Steel Weapon Chain
+						i(90532, {	-- Plans: Living Steel Weapon Chain (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84197, {	-- Plans: Masterwork Forgewire Axe
+						i(84197, {	-- Plans: Masterwork Forgewire Axe (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84198, {	-- Plans: Masterwork Ghost Shard
+						i(84198, {	-- Plans: Masterwork Ghost Shard (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84200, {	-- Plans: Masterwork Ghost-Forged Blade
+						i(84200, {	-- Plans: Masterwork Ghost-Forged Blade (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84217, {	-- Plans: Masterwork Phantasmal Hammer
+						i(84217, {	-- Plans: Masterwork Phantasmal Hammer (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
-						i(84218, {	-- Plans: Masterwork Spiritblade Decimator
+						i(84218, {	-- Plans: Masterwork Spiritblade Decimator (RECIPE!)
 							["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 						}),
 						i(89087),	-- Poisoncrafter's Kilt

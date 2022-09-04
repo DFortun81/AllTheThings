@@ -74,6 +74,23 @@ root("Instances", tier(SL_TIER, {
 				crit(2),	-- Tazavesh: So'leah's Gambit
 			})),
 			ach(15050, {["timeline"] = {"added 9.1.0", REMOVED_SLS4}}),	-- Keystone Hero: Theater of Pain
+			ach(15651, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Myths of the Shadowlands Dungeons
+				-- Meta Achievement
+				["sym"] = {
+					{"meta_achievement",
+						14368,	-- Mythic: The Necrotic Wake
+						14413,	-- Mythic: Mists of Tirna Scithe
+						14325,	-- Mythic: Spires of Ascension
+						14409,	-- Mythic: De Other Side
+						15650,	-- Mythic: Streets of Wonder
+						14415,	-- Mythic: Plaguefall
+						14411,	-- Mythic: Halls of Atonement
+						14417,	-- Mythic: Theater of Pain
+						14199,	-- Mythic: Sanguine Depths
+						15652,	-- Mythic: So'leah's Gambit
+					},
+				},
+			})),
 		}),
 		n(SOULSHAPES, {
 			i(182173, {["timeline"] = {"added 9.0.2" }}),	-- Hyena Soul

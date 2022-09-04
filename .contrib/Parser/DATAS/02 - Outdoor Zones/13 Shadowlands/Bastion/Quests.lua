@@ -1019,7 +1019,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 53.0, 47.6, BASTION },
 			}),
 			q(59426, {	-- Your Personal Assistant
-				["sourceQuests"] = { 59196 },	-- Go in Service
+				["sourceQuests"] = {
+					59196,	-- Go in Service
+					62718,	-- Hero's Rest
+				},
 				["provider"] = { "n", 165045 },	-- Kalisthene
 				["coord"] = { 52.8, 47.8, BASTION },
 			}),

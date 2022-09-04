@@ -542,9 +542,7 @@ namespace ATT
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            if (DebugMode)
-                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
-
+                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
                             item.Remove(field);
                         }
                         else
@@ -554,25 +552,26 @@ namespace ATT
                         break;
                     case "spellID":
                     case "recipeID":
+                        // setting a recipeID on the Item should remove the spellID
+                        if (field == "recipeID")
+                        {
+                            item.Remove("spellID");
+                        }
                         longval = Convert.ToInt64(value);
                         // any 0 value should simply be removed for cleanliness
                         if (longval == 0)
                         {
-                            if (DebugMode)
-                                Trace.WriteLine($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
-
+                            LogDebug($"Removing 0-value {field} from {MiniJSON.Json.Serialize(item)}");
                             item.Remove(field);
                         }
                         else
                         {
-                            // setting a recipeID on the Item should remove the spellID
-                            if (field == "recipeID")
-                            {
-                                item.Remove("spellID");
-                            }
                             // setting a spellID on an Item with a recipeID should do nothing
-                            else if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                            if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                            {
+                                Log($"WARNING: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' : {MiniJSON.Json.Serialize(item)}");
                                 break;
+                            }
 
                             item[field] = longval;
                         }

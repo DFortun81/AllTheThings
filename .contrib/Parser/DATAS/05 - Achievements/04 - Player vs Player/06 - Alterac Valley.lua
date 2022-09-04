@@ -29,7 +29,7 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(1167, {	-- Master of Alterac Valley
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						219,	-- Alterac Valley Veteran
 						221,	-- Alterac Grave Robber
 						222,	-- Tower Defense

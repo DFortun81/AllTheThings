@@ -9,7 +9,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		-- ["maps"] = {
 			-- TODO: confirm
 			-- ULDUM,	-- pre-120, funky map changes forces us to put the old map here too
-			-- 1571,	-- Uldum (dark vision)
 		-- },
 		["g"] = {
 			q(57157, {	-- Assault: The Black Empire
@@ -1030,9 +1029,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						i(174484, {	-- Uldum Accord Supplies
 							i(173283, {	-- Token of a Brilliant Death (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									az(35, 4),	-- Breath of the Dying (Rank 4)
-								},
 							}),
 							i(174481),	-- Cursed Dune Watcher
 						}),
@@ -1335,9 +1331,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 						["g"] = {
-							i(173280, {	-- Token of Death's Door (Rank 1)
-								az(35, 1),	-- Breath of the Dying (Rank 1)
-							}),
+							i(173280),	-- Token of Death's Door (Rank 1)
 						},
 					}),
 					q(56209, {	-- The Halls of Origination
@@ -1357,6 +1351,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["coord"] = { 47.0, 44.6, 1542 },
 						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 						["sourceQuest"] = 56209,	-- The Halls of Origination
+					}),
+					-- These are 'accepted' in order to cause the map to show the current Assault area, and can be clicked in chat
+					q(57562, {	-- Amathet Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",55350},{"pop"}},	-- Assault: Amathet Advance
+					}),
+					q(57565, {	-- Aqir Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",56308},{"pop"}},	-- Assault: Aqir Unearthed
+					}),
+					q(57566, {	-- N'Zoth Assault Tracker (Uldum)
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57157},{"pop"}},	-- Assault: The Black Empire
 					}),
 				}),
 				n(RARES, sharedData({
@@ -1454,9 +1461,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["g"] = {
 							i(173282, {	-- Token of Death's Glee (Rank 3)
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(35, 3),	-- Breath of the Dying (Rank 3)
-								},
 							}),
 							i(174925, {	-- Void Tendril Pet Leash
 								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento

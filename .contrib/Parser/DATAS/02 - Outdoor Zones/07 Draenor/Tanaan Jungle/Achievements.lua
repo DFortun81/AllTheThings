@@ -7,29 +7,14 @@ _.Zones =
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
 			n(ACHIEVEMENTS, {
+				ach(10334, {	-- Predator
+					title(59),	-- Predator
+				}),
 				ach(10072, {	-- Rumble in the Jungle (A)
 					["races"] = ALLIANCE_ONLY,
+					-- TODO: convert to symlink meta achieve, verify source of sbu-achievements
 					["g"] = {
 						title(318),	-- of the Jungle
-						ach(10067, {	-- In Pursuit of Gul'dan (A)
-							["collectible"] = false,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-							--	TODO: add SQs to the rest of the criteria
-								crit(2, {	-- The Invasion of Tanaan [A] / [H]
-									["sourceQuests"] = { 38445 },	-- The Assault Base
-								}),
-								crit(3, {	-- Bane of the Bleeding Hollow
-								--	["sourceQuests"] = {  },	--
-								}),
-								crit(4, {	-- Dark Ascension
-								--	["sourceQuests"] = {  },	--
-								}),
-								crit(6, {	-- The Cipher of Damnation
-								--	["sourceQuests"] = {  },	--
-								}),
-							},
-						}),
 						ach(10068, {	-- Draenor's Last Stand (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -54,26 +39,9 @@ _.Zones =
 				}),
 				ach(10265, {	-- Rumble in the Jungle (H)
 					["races"] = HORDE_ONLY,
+					-- TODO: convert to symlink meta achieve, verify source of sbu-achievements
 					["g"] = {
 						title(318),	-- of the Jungle
-						ach(10074, {	-- In Pursuit of Gul'dan (H)
-							["collectible"] = false,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(2, {	-- The Invasion of Tanaan
-									["sourceQuests"] = { 37935 },	-- The Assault Base
-								}),
-								crit(3, {	-- Bane of the Bleeding Hollow
-								--	["sourceQuests"] = {  },	--
-								}),
-								crit(4, {	-- Dark Ascension
-								--	["sourceQuests"] = {  },	--
-								}),
-								crit(6, {	-- The Cipher of Damnation
-								--	["sourceQuests"] = {  },	--
-								}),
-							},
-						}),
 						ach(10075, {	-- Draenor's Last Stand (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {

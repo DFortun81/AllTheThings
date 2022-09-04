@@ -673,13 +673,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(768, {	-- Explore Tirisfal Glades
+				explorationAch(768, {	-- Explore Tirisfal Glades
 					-- #if BEFORE WRATH
 					["description"] = "Explore Tirisfal Glades, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(15579, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {	-- Return to Lordaeron
 					["sourceQuests"] = {
 						65788,	-- A Walk with Ghosts
@@ -1602,16 +1600,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = { UNDEAD },
 				}),
 				-- #endif
-				q(1881, {	-- Speak with Anastasia
-					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
-					["altQuests"] = { 1883 },	-- Speak with Un'thuwa
-					["coord"] = { 61.8, 52.4, TIRISFAL_GLADES },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { UNDEAD, TROLL },
-					["classes"] = { MAGE },
-					["isBreadcrumb"] = true,
-					["lvl"] = 10,
-				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver

@@ -9,6 +9,64 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(12311, {	-- The Secrets of Ulduar
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						12297,	-- The Siege of Ulduar
+						12302,	-- The Antechamber of Ulduar
+						12309,	-- The Keepers of Ulduar
+						12310,	-- The Descent into Madness
+					}},
+				}),
+				ach(12297, {	-- The Siege of Ulduar
+					crit(1, {	-- Flame Leviathan
+						["_npcs"] = { 33113 },
+					}),
+					crit(2, {	-- Razorscale
+						["_npcs"] = { 33186 },
+					}),
+					crit(3, {	-- Ignis the Furnace Master
+						["_npcs"] = { 33118 },
+					}),
+					crit(4, {	-- XT-002 Deconstructor
+						["_npcs"] = { 33293 },
+					}),
+				}),
+				ach(12302, {	-- The Antechamber of Ulduar
+					crit(1, {	-- Assembly of Iron
+						["_npcs"] = { 32867 },
+					}),
+					crit(2, {	-- Kologarn
+						["_npcs"] = { 32930 },
+					}),
+					crit(3, {	-- Auriaya
+						["_npcs"] = { 33515 },
+					}),
+				}),
+				ach(12309, {	-- The Keepers of Ulduar
+					crit(1, {	-- Hodir
+						["_npcs"] = { 32845 },
+					}),
+					crit(2, {	-- Thorim
+						["_npcs"] = { 32865 },
+					}),
+					crit(3, {	-- Freya
+						["_npcs"] = { 32906 },
+					}),
+					crit(4, {	-- Mimiron
+						["_npcs"] = { 33350 },
+					}),
+				}),
+				ach(12310, {	-- The Descent into Madness
+					crit(1, {	-- General Vezax
+						["_npcs"] = { 33271 },
+					}),
+					crit(2, {	-- Yogg-Saron
+						["_npcs"] = { 33288 },
+					}),
+				}),
+			}),
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
@@ -48,30 +106,28 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 			}),
 			d(14, {	-- Normal
 				n(ZONE_DROPS, {
-					["groups"] = {
-						i(46351),	-- Bloodcrush Cudgel
-						i(45605),	-- Daschal's Bite
-						i(46350),	-- Pillar of Fortitude
-						i(46342),	-- Golemheart Longbow
-						i(46339),	-- Mimiron's Repeater
-						i(46343),	-- Fervor of the Protectorate
-						i(45539),	-- Pendant of Focused Energies
-						i(45538),	-- Titanstone Pendant
-						i(46344),	-- Iceshear Mantle
-						i(45543),	-- Shoulders of Misfortune
-						i(46341),	-- Drape of the Spellweaver
-						i(46347),	-- Cloak of the Dormant Blaze
-						i(45541),	-- Shroud of Alteration
-						i(46345),	-- Bracers of Righteous Reformation
-						i(46340),	-- Adamant Handguards
-						i(45549),	-- Grips of Chaos
-						i(45548),	-- Belt of the Sleeper
-						i(45547),	-- Relic Hunter's Cord
-						i(45544),	-- Leggings of the Tortured Earth
-						i(46346),	-- Boots of Unsettled Prey
-						i(45542),	-- Greaves of the Stonewarder
-						i(45540),	-- Bladebearer's Signet
-					},
+					i(46351),	-- Bloodcrush Cudgel
+					i(45605),	-- Daschal's Bite
+					i(46350),	-- Pillar of Fortitude
+					i(46342),	-- Golemheart Longbow
+					i(46339),	-- Mimiron's Repeater
+					i(46343),	-- Fervor of the Protectorate
+					i(45539),	-- Pendant of Focused Energies
+					i(45538),	-- Titanstone Pendant
+					i(46344),	-- Iceshear Mantle
+					i(45543),	-- Shoulders of Misfortune
+					i(46341),	-- Drape of the Spellweaver
+					i(46347),	-- Cloak of the Dormant Blaze
+					i(45541),	-- Shroud of Alteration
+					i(46345),	-- Bracers of Righteous Reformation
+					i(46340),	-- Adamant Handguards
+					i(45549),	-- Grips of Chaos
+					i(45548),	-- Belt of the Sleeper
+					i(45547),	-- Relic Hunter's Cord
+					i(45544),	-- Leggings of the Tortured Earth
+					i(46346),	-- Boots of Unsettled Prey
+					i(45542),	-- Greaves of the Stonewarder
+					i(45540),	-- Bladebearer's Signet
 				}),
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -262,9 +318,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				}),
 				ach(12312),	-- Dwarfageddon
 				cr(33113, e(1637, {	-- Flame Leviathan
-					crit(1, {	-- Flame Leviathan
-						["achievementID"] = 12297,	-- The Siege of Ulduar
-					}),
 					ach(12320, {	-- Orbit-uary
 						i(45132),	-- Golden Saronite Dragon
 						i(45133),	-- Pendant of Fiery Havoc
@@ -312,13 +365,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45286),	-- Pyrite Infuser
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
-					crit(3, {	-- Ignis the Furnace Master
-						["achievementID"] = 12297,	-- The Siege of Ulduar
-					}),
 					ach(12324),	-- Hot Pocket
 					ach(12323),	-- Shattered
 					ach(12325),	-- Stokin' the Furnace
-					i(142086),	-- Red-Hot Coal (PET!)
+					i(142086, {	-- Red-Hot Coal (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45171),	-- Intensity
 					i(45311),	-- Relentless Edge
 					i(45165),	-- Worldcarver
@@ -345,12 +397,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45158),	-- Heart of Iron
 				})),
 				cr(33186, e(1639, {	-- Razorscale
-					crit(2, {	-- Razorscale
-						["achievementID"] = 12297,	-- The Siege of Ulduar
-					}),
 					ach(12321),	-- A Quick Shave
 					ach(12322),	-- Iron Dwarf, Medium Rare
-					i(142087),	-- Ironbound Collar (PET!)
+					i(142087, {	-- Ironbound Collar (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45147),	-- Guiding Star
 					i(45298),	-- Razorscale Talon
 					i(45142),	-- Remorse
@@ -376,9 +427,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45148),	-- Living Flame
 				})),
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
-					crit(4, {	-- XT-002 Deconstructor
-						["achievementID"] = 12297,	-- The Siege of Ulduar
-					}),
 					ach(12330, {	-- Heartbreaker
 						i(45868),	-- Aesir's Edge
 						i(45442),	-- Sorthalis, Hammer of the Watchers
@@ -427,6 +475,15 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					ach(12400, {	-- Supermassive
 						crit(1),	-- Close 3 Black Holes within 10 seconds
 						crit(2),	-- Defeat Algalon the Observer
+					}),
+					ach(3316, {	-- Herald of the Titans
+						-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
+						-- #if AFTER SHADOWLANDS
+						["lockCriteria"] = { 1, "lvl", 31 },
+						-- #endif
+						["g"] = {
+							title(131),	-- , Herald of the Titans
+						},
 					}),
 					i(46052, {	-- Reply-Code Alpha
 						q(13631, {	-- All Is Well That Ends Well
@@ -483,9 +540,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(46051),	-- Meteorite Crystal
 				})),
 				cr(32867, e(1641, {	-- Assembly of Iron 32927, 32857
-					crit(1, {	-- Assembly of Iron
-						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					}),
 					ach(12335, {	-- But I'm On Your Side!
 						["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 					}),
@@ -511,7 +565,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 					}),
 					ach(12333),	-- I Choose You, Stormcaller Brundir
-					i(142088),	-- Stormforged Rune (PET!)
+					i(142088, {	-- Stormforged Rune (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45234),	-- Rapture
 					i(45233),	-- Stormrune Edge
 					i(45331),	-- Rune-Etched Nightblade
@@ -539,9 +595,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45235),	-- Radiant Seal
 				})),
 				cr(32930, e(1642, {	-- Kologarn
-					crit(2, {	-- Kologarn
-						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					}),
 					ach(12338),	-- Disarmed
 					ach(12339),	-- If Looks Could Kill
 					ach(12340),	-- Rubble and Roll
@@ -572,12 +625,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45263),	-- Wrathstone
 				})),
 				cr(33515, e(1643, {	-- Auriaya
-					crit(3, {	-- Auriaya
-						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-					}),
 					ach(12341),	-- Crazy Cat Lady
 					ach(12342),	-- Nine Lives
-					i(142089),	-- Glittering Ball of Yarn (PET!)
+					i(142089, {	-- Glittering Ball of Yarn (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45437),	-- Runescribed Blade
 					i(45315),	-- Stonerender
 					i(45713),	-- Nurturing Touch
@@ -604,9 +656,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45866),	-- Elemental Focus Stone
 				})),
 				cr(32845, e(1644, {	-- Hodir
-					crit(1, {	-- Hodir
-						["achievementID"] = 12309,	-- The Keepers of Ulduar
-					}),
 					ach(12343),	-- Cheese the Freeze
 					ach(12345),	-- Getting Cold in Here
 					ach(12347, {	-- I Could Say That This Cache Was Rare
@@ -630,8 +679,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45650),	-- Leggings of the Wayward Conqueror
 					i(45651),	-- Leggings of the Wayward Protector
 					i(45652),	-- Leggings of the Wayward Vanquisher
-					i(142090),	-- Ominous Pile of Snow (PET!)
-					i(138800),	-- Illusion: Blade Ward
+					i(142090, {	-- Ominous Pile of Snow (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45458),	-- Stormedge
 					i(45872),	-- Avalanche
 					i(45450),	-- Northern Barrier
@@ -646,9 +699,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45815),	-- Hodir's Sigil
 				})),
 				cr(32865, e(1645, {	-- Thorim
-					crit(2, {	-- Thorim
-						["achievementID"] = 12309,	-- The Keepers of Ulduar
-					}),
 					ach(12348),	-- Don't Stand in the Lightning
 					ach(12349, {	-- I'll Take You All On
 						crit(1),	-- Defeat Thorim
@@ -676,7 +726,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45659),	-- Spaulders of the Wayward Conqueror
 					i(45660),	-- Spaulders of the Wayward Protector
 					i(45661),	-- Spaulders of the Wayward Vanquisher
-					i(138800),	-- Illusion: Blade Ward
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45892),	-- Legacy of Thunder
 					i(45463),	-- Vulmir, the Northern Tempest
 					i(45893),	-- Guise of the Midgard Serpent
@@ -694,9 +746,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					["description"] = "Must be killed before killing Freya or they will despawn.",
 				}),
 				cr(32906, e(1646, {	-- Freya
-					crit(3, {	-- Freya
-						["achievementID"] = 12309,	-- The Keepers of Ulduar
-					}),
 					ach(12361),	-- Con-speed-atory
 					ach(12362),	-- Deforestation
 					ach(12363),	-- Getting Back to Nature
@@ -715,14 +764,18 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45488),	-- Leggings of the Enslaved Idol
 						i(45946),	-- Fire Orchid Signet
 					}),
-					i(142091),	-- Blessed Seed (PET!)
+					i(142091, {	-- Blessed Seed (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(45644),	-- Gloves of the Wayward Conqueror
 					i(45645),	-- Gloves of the Wayward Protector
 					i(45646),	-- Gloves of the Wayward Vanquisher
 					i(45653),	-- Legplates of the Wayward Conqueror
 					i(45654),	-- Legplates of the Wayward Protector
 					i(45655),	-- Legplates of the Wayward Vanquisher
-					i(138800),	-- Illusion: Blade Ward
+					i(138800, {	-- Illusion: Blade Ward
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 					i(45479),	-- The Lifebinder
 					i(45934),	-- Unraveling Reach
 					i(45935),	-- Ironbark Faceguard
@@ -746,9 +799,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						33670,	-- Aerial Command Unit
 					},
 					["groups"] = {
-						crit(4, {	-- Mimiron
-							["achievementID"] = 12309,	-- The Keepers of Ulduar
-						}),
 						ach(12369, {	-- Firefighter
 							i(45494),	-- Delirium's Touch
 							i(45990),	-- Fusion Blade
@@ -774,8 +824,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45647),	-- Helm of the Wayward Conqueror
 						i(45648),	-- Helm of the Wayward Protector
 						i(45649),	-- Helm of the Wayward Vanquisher
-						i(138800),	-- Illusion: Blade Ward
-						i(142092),	-- Overcomplicated Controller (PET!)
+						i(138800, {	-- Illusion: Blade Ward
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
+						i(142092, {	-- Overcomplicated Controller (PET!)
+							["timeline"] = { "added 7.1.0.22731" },
+						}),
 						i(45489),	-- Insanity's Grip
 						i(45972),	-- Pulse Baton
 						i(45492),	-- Malleable Steelweave Mantle
@@ -788,12 +842,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45490),	-- Pandora's Plea
 						i(45787),	-- Mimiron's Sigil
 						i(45816),	-- Mimiron's Sigil
+						i(140782, {	-- Neural Net Detangler
+							["timeline"] = { "added 7.0.3.22248" },
+						}),
 					},
 				})),
 				cr(33271, e(1648, {	-- General Vezax
-					crit(1, {	-- General Vezax
-						["achievementID"] = 12310,	-- The Descent into Madness
-					}),
 					ach(12373, {	-- I Love the Smell of Saronite in the Morning
 						i(46033),	-- Tortured Earth
 						i(45516),	-- Voidrethar, Dark Blade of Oblivion
@@ -832,9 +886,6 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45507),	-- The General's Heart
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron
-					crit(2, {	-- Yogg-Saron
-						["achievementID"] = 12310,	-- The Descent into Madness
-					}),
 					ach(12388, {	-- Alone in the Darkness
 						i(45693),	-- Mimiron's Head (MOUNT!)
 						i(46312),	-- Vanquished Clutches of Yogg-Saron
@@ -871,8 +922,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45656),	-- Mantle of the Wayward Conqueror
 					i(45657),	-- Mantle of the Wayward Protector
 					i(45658),	-- Mantle of the Wayward Vanquisher
-					i(138801),	-- Illusion: Blood Draining
-					i(142093),	-- Wriggling Darkness (PET!)
+					i(138801, {	-- Illusion: Blood Draining
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(142093, {	-- Wriggling Darkness (PET!)
+						["timeline"] = { "added 7.1.0.22731" },
+					}),
 					i(46016),	-- Abaddon
 					i(46025),	-- Devotion
 					i(45521),	-- Earthshaper

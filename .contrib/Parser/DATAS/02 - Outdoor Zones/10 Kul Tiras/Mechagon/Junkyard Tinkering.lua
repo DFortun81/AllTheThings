@@ -65,9 +65,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 					i(167071),	-- Mechano-Treat
 					i(169384),	-- Microbot XD (PET!)
 					i(169647),	-- Orange Spraybot
-					i(168843, {	-- Perfectly Timed Differential
-						az(22, 2),	-- Vision of Perfection (Rank 2)
-					}),
+					i(168843),	-- Perfectly Timed Differential
 					i(169114),	-- Personal Time Displacer
 					i(168483),	-- Protocol Transference Device
 					i(170065),	-- Re-Procedurally Generated Punchcard

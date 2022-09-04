@@ -394,7 +394,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			ach(1656, {	-- Hallowed Be Thy Name
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						972,				-- Trick or Treat!
 						288,				-- Out With It
 						255,				-- Bring Me The Head of... Oh Wait
@@ -496,7 +496,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
 				}),
 			}),
-			removeclassicphase(ach(292, {	-- Sinister Calling
+			classicAch(292, {	-- Sinister Calling
 				-- #if BEFORE WRATH
 				["providers"] = {
 					{ "i", 33154 },	-- Sinister Squashling
@@ -513,7 +513,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					["provider"] = { "i", 33292 },	-- Hallowed Helm
 				}),
 				-- #endif
-			})),
+			}),
 			ach(971, {	-- Tricks and Treats of Azeroth
 				ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1444,7 +1444,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					}),
 				},
 			}),
-			removeclassicphase(ach(980, {	-- The Horseman's Reins
+			classicAch(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				["timeline"] = { "added 2.0.1" },
 				["filterID"] = MOUNTS,
@@ -1452,7 +1452,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 		}),
 		-- #endif
 		n(23682, {	-- Headless Horseman

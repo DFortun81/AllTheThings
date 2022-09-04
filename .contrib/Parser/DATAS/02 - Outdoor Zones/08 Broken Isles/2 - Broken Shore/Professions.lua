@@ -8,75 +8,6 @@ _.Zones =
 		m(BROKEN_SHORE, {
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					ach(10596, {	-- Bigger Fish to Fry
-						["collectible"] = false,
-						["g"] = {
-							n(-218, {	-- Coastal
-								i(133722, {	-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["g"] = {
-										crit(4, {	-- Axefish (Criteria)
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["itemID"] = 133740,	-- Axefish (Item)
-											["races"] = ALLIANCE_ONLY,
-										}),
-										crit(4, {	-- Axefish (Criteria)
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["itemID"] = 139667,	-- Axefish (Item)
-											["races"] = HORDE_ONLY,
-										}),
-									},
-								}),
-								i(133724, {	-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["g"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {	-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["g"] = {
-										i(133722),	-- Axefish Lure
-									},
-								}),
-								i(133795, {	-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["g"] = {
-										crit(1, {	-- Ancient Black Barracuda (Criteria)
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["itemID"] = 139669,	-- Ancient Black Barracuda (Item)
-											["races"] = ALLIANCE_ONLY,
-										}),
-										crit(1, {	-- Ancient Black Barracuda (Criteria)
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["itemID"] = 133742,	-- Ancient Black Barracuda (Item)
-											["races"] = HORDE_ONLY,
-										}),
-									},
-								}),
-								i(133723, {	-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["g"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["g"] = {
-												crit(13, {	-- Seabottom Squid (Criteria)
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["itemID"] = 139668,	-- Seabottom Squid (Item)
-													["races"] = ALLIANCE_ONLY,
-												}),
-												crit(13, {	-- Seabottom Squid (Criteria)
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["itemID"] = 133741,	-- Seabottom Squid (Item)
-													["races"] = HORDE_ONLY,
-												}),
-											},
-										})
-									},
-								}),
-							}),
-						},
-					}),
 					faction(2102, {	-- Impus
 						["creatureID"] = 120460,
 						["coord"] = { 33.9, 49.8, BROKEN_SHORE },
@@ -94,16 +25,15 @@ _.Zones =
 							}),
 							i(133721, {	-- Message in a Bottle
 								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
-								-- ["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-								-- ["g"] = {
-									-- i(133722),	-- Axefish Lure
-								-- },
+								["sym"] = {{"fill"}},
 							}),
 							i(133723, {	-- Stunned, Angry Shark
 								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
+								["sym"] = {{"fill"}},
 							}),
 							i(133724, {	-- Decayed Whale Blubber
 								["cost"] = { { "i", 146963, 25 } },	-- 25x Desecrated Seaweed
+								["sym"] = {{"fill"}},
 							}),
 							i(124112, {	-- Black Barracuda
 								["cost"] = { { "i", 146963, 10 } },	-- 10x Desecrated Seaweed

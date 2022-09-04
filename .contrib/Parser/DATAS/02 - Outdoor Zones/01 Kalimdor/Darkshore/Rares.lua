@@ -29,6 +29,7 @@ _.Zones =
 						{ 46.6, 41.4, DARKSHORE },
 					},
 					["g"] = {
+						un(REMOVED_FROM_GAME, i(6332)),	-- Black Pearl Ring
 						un(REMOVED_FROM_GAME, i(6333)),	-- Spikelash Dagger
 					},
 				}),

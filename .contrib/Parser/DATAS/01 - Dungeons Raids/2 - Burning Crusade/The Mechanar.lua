@@ -134,12 +134,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						removeclassicphase(ach(658, {	-- The Mechanar
+						classicAch(658, {	-- The Mechanar
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(28288),	-- Abacus of Violent Odds
 						i(28269),	-- Baba's Cloak of Arcanistry
 						-- #if BEFORE 7.3.5
@@ -190,7 +190,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							i(29434),	-- Badge of Justice
+							BADGE_OF_JUSTICE,
 							-- #endif
 							i(30566),	-- Defender's Tanzanite
 							i(30565),	-- Jagged Chrysoprase

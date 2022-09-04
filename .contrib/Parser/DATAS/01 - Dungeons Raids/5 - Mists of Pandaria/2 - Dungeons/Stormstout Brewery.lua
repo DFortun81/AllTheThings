@@ -128,10 +128,6 @@ _.Instances = { tier(MOP_TIER, {
 					})),
 					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 						ach(6456),	-- Heroic: Stormstout Brewery
-						crit(6, {	-- Yan-Zhu the Uncasked
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						}),
 						ach(6457),	-- Stormstout Brewery
 						i(144124),	-- Wort Stirring Rod
 						i(144085),	-- Gao's Keg Tapper

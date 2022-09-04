@@ -447,27 +447,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128927 },	-- Venrik
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(160859),	-- Freebooter Hood
-								i(155040),	-- Freebooter Shoulderpads
-								i(160858),	-- Navigator's Crown
-								i(155042),	-- Navigator's Mantle
-								i(160860),	-- Outrigger Coif
-								i(155043),	-- Outrigger Pauldrons
-								i(160861),	-- Sea Raider's Helmet
-								i(155041),	-- Sea Raider's Spaulders
-							},
-					}),
-					i(175315),	-- Freebooter Hood (no azerite version)
-					i(175318),	-- Freebooter Shoulderpads (no azerite version)
-					i(175314),	-- Navigator's Crown (no azerite version)
-					i(175320),	-- Navigator's Mantle (no azerite version)
-					i(175316),	-- Outrigger Coif (no azerite version)
-					i(175321),	-- Outrigger Pauldrons  (no azerite version)
-					i(175317),	-- Sea Raider's Helmet (no azerite version)
-					i(175319),	-- Sea Raider's Spaulders (no azerite version)
+					azeriteItem(160859),	-- Freebooter Hood
+					azeriteItem(155040),	-- Freebooter Shoulderpads
+					azeriteItem(160858),	-- Navigator's Crown
+					azeriteItem(155042),	-- Navigator's Mantle
+					azeriteItem(160860),	-- Outrigger Coif
+					azeriteItem(155043),	-- Outrigger Pauldrons
+					azeriteItem(160861),	-- Sea Raider's Helmet
+					azeriteItem(155041),	-- Sea Raider's Spaulders
+					azewrongItem(175315),	-- Freebooter Hood (no azerite version)
+					azewrongItem(175318),	-- Freebooter Shoulderpads (no azerite version)
+					azewrongItem(175314),	-- Navigator's Crown (no azerite version)
+					azewrongItem(175320),	-- Navigator's Mantle (no azerite version)
+					azewrongItem(175316),	-- Outrigger Coif (no azerite version)
+					azewrongItem(175321),	-- Outrigger Pauldrons  (no azerite version)
+					azewrongItem(175317),	-- Sea Raider's Helmet (no azerite version)
+					azewrongItem(175319),	-- Sea Raider's Spaulders (no azerite version)
 				},
 			}),
 			q(52750, {	-- Farmers Who Fight
@@ -1519,9 +1514,14 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			},{
 				-- TODO: Check SQ also probably cant do after a certain level
-				q(49300),	-- Creature Corruption
+				q(49300, {	-- Creature Corruption
+					-- not 100% on this one based on discord info?
+					["sourceQuest"] = 48366,	-- Paddle to Safety
+				}),
 				q(49739),	-- Enemies at the Gate
-				q(50009),	-- Shipwreck Recovery Crew
+				q(50009, {	-- Shipwreck Recovery Crew
+					["sourceQuest"] = 50026,	-- Save our Shipmates
+				}),
 				q(49529),	-- Spring Cleaning
 			})),
 			-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests

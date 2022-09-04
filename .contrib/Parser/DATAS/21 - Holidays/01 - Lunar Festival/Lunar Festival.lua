@@ -14,7 +14,7 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 			ach(913, {	-- To Honor One's Elders
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						-- #if AFTER CATA
 						6006,				-- Elders of Cataclysm
 						-- #endif

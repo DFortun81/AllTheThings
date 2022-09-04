@@ -440,7 +440,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["description"] = "Inside the cave.",
 				["questID"] = 62210,	-- Sanngror the Torturer
 				["isDaily"] = true,
-				["coord"] = { 55.8, 67.5, THE_MAW },
+				["coords"] = {
+					{ 55.8, 67.5, THE_MAW },
+					{ 55.7, 67.6, THE_MAW },
+				},
 				["g"] = {
 					crit(12, {	-- Sanngror the Torturer
 						["achievementID"] = 14660,	-- It's About Sending a Message

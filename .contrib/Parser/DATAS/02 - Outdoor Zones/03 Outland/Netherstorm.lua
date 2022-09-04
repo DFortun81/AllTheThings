@@ -11,14 +11,12 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					removeclassicphase(ach(843, {	-- Explore Netherstorm
+					explorationAch(843, {	-- Explore Netherstorm
 						-- #if BEFORE WRATH
 						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
-					removeclassicphase(ach(1194, {	-- Into the Nether
+					}),
+					classicAch(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -44,8 +42,10 @@ root("Zones", {
 							-- Destroying the All-Devouring
 							10439,	-- Dimensius the All-Devouring
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 120 quests in Netherstorm.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -88,7 +88,7 @@ root("Zones", {
 							},
 						}),
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -708,6 +708,7 @@ root("Zones", {
 					}),
 					q(10311, {	-- Drijya Needs Your Help
 						["qg"] = 20066,	-- Gahruj
+						["coord"] = { 46.6, 56.8, NETHERSTORM },
 						["isBreadcrumb"] = true,
 					}),
 					q(10411, {	-- Electro-Shock Goodness!
@@ -1245,7 +1246,7 @@ root("Zones", {
 							{ 47.4, 84.6, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(3, {	-- Chief Engineer Lorthander
+							crit(4506, {	-- Chief Engineer Lorthander
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31201),	-- Illidari Cloak
@@ -1267,7 +1268,7 @@ root("Zones", {
 							{ 61.2, 32.2, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(8, {	-- Ever-Core the Punisher
+							crit(4511, {	-- Ever-Core the Punisher
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31203),	-- Arcane Loop
@@ -1290,7 +1291,7 @@ root("Zones", {
 							{ 35.2, 19.6, NETHERSTORM },
 						},
 						["groups"] = {
-							crit(16, {	-- Nuramoc
+							crit(4519, {	-- Nuramoc
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31212),	-- Chimaerahide Leggings
@@ -1774,7 +1775,7 @@ root("Zones", {
 										{"select", "itemID", 35143 },	-- Guardian's Mail Sabatons
 										{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
 										{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
-										{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+										{"select", "itemID", 35147 },   -- Guardian's Ringmail Sabatons
 										{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
 									},
 								}),

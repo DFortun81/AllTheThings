@@ -63,6 +63,43 @@ root("Instances", tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				q(26865, {	-- Enemies Below [Orgrimmar]
+					["qg"] = 39605,	-- Garrosh Hellscream
+					["coord"] = { 48.1, 70.5, ORGRIMMAR },
+					["timeline"] = { "added 4.0.1.12984", "removed 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(31034, {	-- Enemies Below [Orgrimmar]
+					["qg"] = 14720,	-- High Overlord Saurfang
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(26866, {	-- Enemies Below [Thunder Bluff]
+					["qg"] = 36648,	-- Baine Bloodhoof
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+					["timeline"] = { "added 4.0.1.12984", "removed 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31036, {	-- Enemies Below [Thunder Bluff]
+					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(26867, {	-- Enemies Below [Undercity]
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.8, 91.6, UNDERCITY },
+					["timeline"] = { "added 4.0.3.13277", "removed 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31037, {	-- Enemies Below [Undercity]
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.8, 91.6, UNDERCITY },
+					["timeline"] = { "added 5.0.1.15589" },
+					["races"] = HORDE_ONLY,
+				}),
 				q(5728, {	-- Hidden Enemies (3/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
@@ -188,10 +225,15 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 44217,	-- Stone Guard Kurjack
 					["sourceQuests"] = {
 						28003,	-- Adventurer's Wanted: Ragefire Chasm
-						26865,	-- Enemies Below
-						26866,	-- Enemies Below
-						26867,	-- Enemies Below
-						31035,	-- Enemies Below
+						26865,	-- Enemies Below [Orgrimmar]
+						26866,	-- Enemies Below [Thunder Bluff]
+						26867,	-- Enemies Below [Undercity]
+						-- #if AFTER 5.0.1.15589
+						31034,	-- Enemies Below [Orgrimmar]
+						31035,	-- Enemies Below [HQT]
+						31036,	-- Enemies Below [Thunder Bluff]
+						31037,	-- Enemies Below [Undercity]
+						-- #endif
 					},
 					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 					["races"] = HORDE_ONLY,
@@ -369,13 +411,13 @@ root("Instances", tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 5.0.4" },
 				["groups"] = {
 					-- #if BEFORE 5.0.4
-					removeclassicphase(ach(629, {	-- Ragefire Chasm
+					classicAch(629, {	-- Ragefire Chasm
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = HORDE_ONLY,
 						-- #endif
-					})),
+					}),
 					-- #endif
 					i(14540, {	-- Taragaman the Hungerer's Heart
 						["timeline"] = { "removed 5.0.4" },

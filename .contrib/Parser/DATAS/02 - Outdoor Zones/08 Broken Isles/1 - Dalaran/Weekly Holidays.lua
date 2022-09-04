@@ -39,6 +39,7 @@ root("Zones", m(BROKEN_ISLES, {
 				["_drop"] = { "g" },	-- Drop Trash
 			}, {
 				q(44164),					-- A Burning Path Through Time
+				pvp(q(44173)),				-- A Call to Battle
 				q(44166),					-- A Frozen Path Through Time
 				q(44167),					-- A Shattered Path Through Time
 				q(45799),					-- A Shrouded Path Through Time

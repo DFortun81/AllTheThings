@@ -4,9 +4,10 @@
 
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 	m(BORALUS, {
-		n(138704, {	-- Mission Command Table
-			["modelScale"] = 2,
+		n(138704, bubbleDownSelf({	-- Mission Command Table
 			["races"] = ALLIANCE_ONLY,
+		},{
+			["modelScale"] = 2,
 			["g"] = {
 				ach(12898, {	-- Azeroth at War: After Lordaron
 					crit(4, {	-- Alterac Scouting
@@ -137,6 +138,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(160982),	-- Recruitment Orders
 				}),
 			},
-		}),
+		})),
 	}),
 })));

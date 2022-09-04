@@ -367,3 +367,8 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48281),	-- Tracking Quest - getting into the Lightforged Warframe during "Dawn of Justice" (questID 47992)
+	}),
+});

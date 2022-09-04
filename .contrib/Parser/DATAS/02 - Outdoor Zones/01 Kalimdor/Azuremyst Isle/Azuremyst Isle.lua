@@ -10,7 +10,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			99,		-- Stillpine Hold
 		},
 		-- #if AFTER WRATH
-		["achievementID"] = 860,
+		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
 		-- #endif
 		["groups"] = {
 			m(AMMEN_VALE, {
@@ -607,13 +607,11 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(860, {	-- Explore Azuremyst Isle
+				explorationAch(860, {	-- Explore Azuremyst Isle
 					-- #if BEFORE WRATH
 					["description"] = "Explore Azuremyst Isle, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

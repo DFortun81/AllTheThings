@@ -7,18 +7,6 @@ _.Zones =
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
 			n(WORLD_QUESTS, bubbleDown({ ["isWorldQuest"] = true, ["lvl"] = 45, },{
---[[
-			n(WORLD_QUESTS, {
-				q(47061),	-- Apocron
-				q(46947),	-- Brutallus
-				q(45969),	-- Defense of the Ancient
-				q(40390),	-- Hallowed Ground
-				q(45653),	-- Kill it with Fire!
-				q(46046),	-- Life's a Lich
-				q(46755),	-- Mission: Felraging
-				q(46945),	-- Si'vash
-			}),
-]]--
 				q(46209, {	-- A Flare In The Dark
 					["classes"] = { HUNTER },
 				}),
@@ -49,6 +37,9 @@ _.Zones =
 				q(45531),	-- Creeping Fel
 				q(45837),	-- Creeping Fel
 				q(46821),	-- Creepy Crawlies
+				q(45969, {	-- Defense of the Ancient
+					["classes"] = { DRUID },
+				}),
 				q(45970),	-- Duty's End
 				q(46829),	-- Elemental Abuse
 				q(46288),	-- Everyone to the Front
@@ -78,12 +69,21 @@ _.Zones =
 				q(45776, {	-- Keys are a Crutch
 					["classes"] = { ROGUE },
 				}),
+				q(45653, {	-- Kill it with Fire!
+					["classes"] = { MAGE },
+				}),
 				q(45472),	-- Kraken Eggs
 				q(46308),	-- Leave a Trail
+				q(46046, {	-- Life's a Lich
+					["classes"] = { DEATHKNIGHT },
+				}),
 				q(46754, {	-- Magical Beasts
 					["classes"] = { MAGE },
 				}),
 				q(46707),	-- Minion! Kill That One Too!
+				q(46755, {	-- Mission: Felraging
+					-- TODO: ["classes"] = { ? },
+				}),
 				q(46756),	-- Mission: Felrage Destruction
 				q(46825),	-- Mud Mucking
 				q(46822),	-- Natural Selection

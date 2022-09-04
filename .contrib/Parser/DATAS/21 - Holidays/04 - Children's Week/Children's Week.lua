@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(1793, {	-- For the Children
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						1791,				-- Home Alone
 						1788,				-- Bad Example
 						1789,				-- Daily Chores
@@ -105,7 +105,12 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 					},
 				},
 				["groups"] = {
+					-- #if ANYCLASSIC
+					title(104),	-- Matron
+					title(105),	-- Patron
+					-- #else
 					title_gendered(105, 104),	-- Patron / Matron
+					-- #endif
 				},
 			}),
 			ach(1792),	-- Aw, Isn't It Cute?
@@ -216,14 +221,14 @@ root(ROOTS.Holidays, applyholiday(CHILDRENS_WEEK, {
 			ach(275, {	-- Veteran Nanny
 				["maps"] = { SHATTRATH_CITY },
 				["groups"] = {
-					crit(3, {	-- Egbert
-						["cost"] = { { "i", 32616, 1 } },	-- Egbert's Egg
+					crit(9169, {	-- Egbert
+						["provider"] = { "i", 32616 },	-- Egbert's Egg
 					}),
-					crit(1, {	-- Peanut
-						["cost"] = { { "i", 32622, 1 } },	-- Elekk Training Collar
+					crit(9167, {	-- Peanut
+						["provider"] = { "i", 32622 },	-- Elekk Training Collar
 					}),
-					crit(2, {	-- Willy
-						["cost"] = { { "i", 32617, 1 } },	-- Sleepy Willy
+					crit(9168, {	-- Willy
+						["provider"] = { "i", 32617 },	-- Sleepy Willy
 					}),
 				},
 			}),

@@ -134,18 +134,19 @@ _.Zones =
 					["sourceQuest"] = 25661,	-- With a Little Help...
 				}),
 				q(25561, {	-- Circle the Wagons... er, Boats
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(25562, {	-- Circle the Wagons... er, Boats
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 40487 },	-- Razzeric
 					["races"] = HORDE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats
 					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "added 4.0.3" },
 					["g"] = {
 						i(63550),	-- Speedbarge Leggings
 						i(63551),	-- Smooching Gloves
@@ -157,6 +158,7 @@ _.Zones =
 				q(25543, {	-- Circle the Wagons... er, Boats
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing
+					["timeline"] = { "added 4.0.3" },
 					["g"] = {
 						i(63554),	-- Speedbarge Leggings
 						i(63555),	-- Pirate Sinker's Gloves
@@ -420,6 +422,26 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4630 },	-- Pozzik
 					["sourceQuest"] = 1176,	-- Load Lightening
+				}),
+				q(1180,  {	-- Goblin Sponsorship
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 3391 },	-- Gazlowe
+					["sourceQuest"] = 1178,	-- Goblin Sponsorship
+				}),
+				q(1181, {	-- Goblin Sponsorship
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 4631,	-- Wharfmaster Lozgil
+					["sourceQuest"] = 1180,	-- Goblin Sponsorship
+				}),
+				q(1182, {	-- Goblin Sponsorship
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 1181,	-- Goblin Sponsorship
+				}),
+				q(1183, {	-- Goblin Sponsorship
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 1182,	-- Goblin Sponsorship
 				}),
 				q(27318, {	-- Grimtotem Chiefs: Elder Stormhoof
 					["provider"] = { "n", 45277 },	-- Feralas Sentinel
@@ -732,6 +754,11 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 				}),
+				q(1117, {	-- Rumors for Kravel
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 773,	-- Krazek
+					["sourceQuest"] = 1116,	-- Dream Dust in the Swamp
+				}),
 				q(5062, {	-- Sacred Fire
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -927,6 +954,17 @@ _.Zones =
 						28139,	-- Codemaster's Code
 					},
 				}),
+				q(1394, {	-- Final Passage
+					["qg"] = 4488,	-- Parqual Fintallas
+					["sourceQuest"] = 6628,	-- Test of Lore
+					["coord"] = { 57.6, 65.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(6806)),	-- Dancing Flame
+						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
+					},
+				}),
 				q(28045, {	-- The Greatest Flavor in the World!
 					["provider"] = { "n", 47383 },	-- Brivelthwerp
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
@@ -1026,6 +1064,13 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(6628, {	-- Test of Lore
+					["qg"] = 4488,	-- Parqual Fintallas
+					["sourceQuest"] = 1160,	-- Test of Lore
+					["coord"] = { 57.6, 65.0, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(1151,  {	-- Test of Strength
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
 					["coord"] = { 53.8, 41.6, THOUSAND_NEEDLES },
@@ -1061,8 +1106,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 				}),
-				q(28143, {	-- To the Withering (didn't encounter this version in game)
-					["u"] = NEVER_IMPLEMENTED,
+				q(28143, {	-- To the Withering
+					-- (confirmed 2022-08-18, alliance, 51)
+					["coord"] = { 30.4, 49.3, THOUSAND_NEEDLES },
 					["sourceQuest"] = 28140,	-- The Elder Crone
 				}),
 				q(28142, {	-- To the Withering
@@ -1191,6 +1237,14 @@ _.Zones =
 						i(63618),	-- Lilly's Bandana
 						i(63619),	-- Fajardo's Bracers
 						i(63620),	-- Hard Headed Helm
+					},
+				}),
+				q(1119, {	-- Zanzil's Mixture and a Fool's Stout
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 2498,	-- Crank Fizzlebub
+					["sourceQuests"] = {
+						1118,	-- Back to Booty Bay
+						621,	-- Zanzil's Secret
 					},
 				}),
 			}),

@@ -7,7 +7,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
 		["lvl"] = { 50 },
 		["maps"] = {
-			1570,	-- Vale of Eternal Blossoms
 			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
 		},
 		["g"] = {
@@ -846,16 +845,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							i(168816, {	-- Pulsing Star Heart (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
 								["classes"] = HEALERS,
-								["g"] = {
-									az(24, 4),	-- Spirit of Preservation (Rank 4)
-								},
 							}),
 							i(168576, {	-- Roots of Magnificent Revival (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
 								["classes"] = TANKS,
-								["g"] = {
-									az(33, 4),	-- Touch of the Everlasting (Rank 4)
-								},
 							}),
 							i(174479),	-- Jade Defender (PET!)
 						}),
@@ -935,18 +928,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["provider"] = { "n", 154418 },	-- Ra-den
 						["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
 						["g"] = {
-							i(168573, {	-- Death-Resistant Leaf (Rank 1)
-								["classes"] = TANKS,
-								["g"] = {
-									az(33, 1),	-- Touch of the Everlasting (Rank 1)
-								},
-							}),
-							i(168436, {	-- Focused Star Point (Rank 1)
-								["classes"] = HEALERS,
-								["g"] = {
-									az(24, 1),	-- Spirit of Preservation (Rank 1)
-								},
-							}),
+							i(168573),	-- Death-Resistant Leaf (Rank 1)
+							i(168436),	-- Focused Star Point (Rank 1)
 						},
 					}),
 					q(56541, {	-- The Engine of Nalak'sha
@@ -964,6 +947,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["coord"] = { 83.1, 27.2, 1530 },
 						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 						["sourceQuest"] = 56539,	-- Finding the Rajani
+					}),
+					-- These are 'accepted' in order to cause the map to show the current Assault area, and can be clicked in chat
+					q(57564, {	-- Mantid Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57728},{"pop"}},	-- Assault: The Endless Swarm
+					}),
+					q(57563, {	-- Mogu Assault Tracker
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",57008},{"pop"}},	-- Assault: The Warring Clans
+					}),
+					q(57567, {	-- N'Zoth Assault Tracker (Vale)
+						["isWeekly"] = true,
+						["sym"] = {{"select","questID",56064},{"pop"}},	-- Assault: The Black Empire
 					}),
 				}),
 				n(RARES, {
@@ -994,32 +990,16 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["coord"] = { 44.5, 75.4, 1530 },
 						["g"] = {
 							i(168573, {	-- Death-Resistant Leaf (Rank 1)
-								["classes"] = TANKS,
-								["g"] = {
-									az(33, 1),	-- Touch of the Everlasting (Rank 1)
-								},
+								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
 							}),
 							i(168436, {	-- Focused Star Point (Rank 1)
 								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
-								["g"] = {
-									az(24, 1),	-- Spirit of Preservation (Rank 1)
-								},
 							}),
 							i(168440, {	-- Gleaming Star Shard (Rank 3)
-								["classes"] = HEALERS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(24, 3),	-- Spirit of Preservation (Rank 3)
-								},
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
-								["classes"] = TANKS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-								["g"] = {
-									az(33, 3, {	-- Touch of the Everlasting (Rank 3)
-										["classes"] = TANKS,
-									}),
-								},
 							}),
 							i(174649, {	-- Rajani Warserpent (MOUNT!)
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale

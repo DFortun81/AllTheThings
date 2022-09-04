@@ -55,8 +55,10 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(21587),	-- Wristguards of Castigation
 			}),
 			filter(NECK_F, {
+				i(5005),	-- Emberspark Pendant
 				i(13811),	-- Necklace of the Dawn
 				i(23058),	-- Life Channeling Necklace
+				i(5004),	-- Mark of the Kirin Tor
 				--
 				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant
@@ -67,7 +69,9 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				--
 				i(4988),	-- Burning Obsidian Band
 				i(17000),	-- Band of the Wraith
+				i(5010),	-- Inscribed Gold Ring
 				i(17108),	-- Mark of Deflection
+				i(5008),	-- Quicksilver Ring
 			}),
 			filter(TRINKET_F, {
 				i(12805),	-- Orb of Fire
@@ -1528,6 +1532,16 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 			filter(MAIL, {
 				tier(SL_TIER, 0.1, {
+					i(183993),	-- Ye Olde Test Chestguard
+					i(183994),	-- Ye Olde Test Chestguard
+					i(183999),	-- Ye Olde Test Chestguard
+					i(184000),	-- Ye Olde Test Chestguard
+					i(184003),	-- Ye Olde Test Chestguard
+					i(184005),	-- Ye Olde Test Chestguard
+					i(184006),	-- Ye Olde Test Chestguard
+					i(184008),	-- Ye Olde Test Chestguard
+					i(184009),	-- Ye Olde Test Chestguard
+					i(184012),	-- Ye Olde Test Chestguard
 					i(178304),	-- unused
 				}),
 				tier(SL_TIER, 2.0, {
@@ -1647,8 +1661,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				tier(SL_TIER, 1.5, {
 					i(187914),	-- Captain Noteo's Unused Eye Patch
 				}),
-				-- tier(SL_TIER, 2.0, {
-				-- }),
 			}),
 			n(LEGENDARIES, {
 				-- Stupid Things?

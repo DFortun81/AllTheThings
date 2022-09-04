@@ -725,6 +725,10 @@ _.Zones =
 					["provider"] = { "n", 7583 },	-- Sprinkle
 					["sourceQuest"] = 2606,	-- In Good Taste
 				}),
+				q(2872, {	-- Stoley's Debt
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 2501,	-- "Sea Wolf" MacKinley
+				}),
 				q(2873, {	-- Stoley's Shipment
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7881 },	-- Stoley
@@ -921,6 +925,10 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9642)),	-- Band of the Great Tortoise
 						un(REMOVED_FROM_GAME, i(9638)),	-- Chelonian Cuffs
 					},
+				}),
+				q(2864, {	-- Tran'rek
+					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 773,	-- Krazek
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
 					["isBreadcrumb"] = true,

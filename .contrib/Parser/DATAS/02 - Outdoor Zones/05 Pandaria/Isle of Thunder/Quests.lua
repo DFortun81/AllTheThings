@@ -519,24 +519,6 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				{	---------- Lightning Steel
-					["requireSkill"] = BLACKSMITHING,
-					["questID"] = 32621,	-- Lightning Steel
-					["itemID"] = 94721,	-- Strange Metal Ingot
-					["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
-					["provider"] = { "n", 69461 },	-- Itoka
-					["g"] = {
-						i(94553, {	-- Notes on Lightning Steel
-							i(94568),	-- Plans: Drakefist Hammer, Reborn
-							i(94572),	-- Plans: Fireguard, Reborn
-							i(94552),	-- Plans: Lightning Steel Ingot
-							i(94571),	-- Plans: Lionheart Blade, Reborn
-							i(94569),	-- Plans: Lunar Crescent, Reborn
-							i(94570),	-- Plans: Planar Edge, Reborn
-							i(94567),	-- Plans: Thunder, Reborn
-						}),
-					},
-				},
 				q(32606, {	-- Subtle Encouragement (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,

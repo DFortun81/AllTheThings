@@ -27,13 +27,19 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0" } }
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				},
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(17, {	-- LFR
 				ach(13414, {	-- Crucible of Storms
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2328, {	-- The Restless Cabal
 							["crs"] = {

@@ -81,7 +81,6 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	i(44793, {	-- Tome of Polymorph: Rabbit
 		["timeline"] = { "added 3.1.0.9733" },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
-		["spellID"] = 61721,	-- Polymorph (Rabbit)
 		["classes"] = { MAGE },
 		["f"] = RECIPES,
 	}),
@@ -161,7 +160,7 @@ root("Holidays", applyholiday(NOBLEGARDEN, {
 			ach(2798, {	-- Noble Gardener
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						2676,	-- I Found One
 						2418,	-- Chocoholic
 						2436,	-- Desert Rose

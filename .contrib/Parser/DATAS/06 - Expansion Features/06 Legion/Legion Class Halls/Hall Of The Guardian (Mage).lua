@@ -508,9 +508,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(492),	-- Felo'melorn
 							artifact(492),	-- Heart of the Phoenix
 							artifact(171),	-- Ebonchill
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
@@ -576,7 +573,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(495),	-- Felo'melorn
 							artifact(495),	-- Heart of the Phoenix
 							artifact(172),	-- Ebonchill
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude
@@ -598,11 +594,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["description"] = "Granted immediately upon return to the order hall.",
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43415,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							45998,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["timeline"] = { "added 7.2.0" },
 					}),
@@ -922,43 +918,23 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(41079),	-- Mage Order Hall - Arcane chosen first
-	q(41080),	-- Mage Order Hall - Fire chosen first
-	q(41081),	-- Mage Order Hall - Frost chosen first
-	q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)
-	q(42976),	-- Mage Order Hall - Chapter 3 tracking - completed "Three is a lucky number" and saw the Arcane Destroyer be summoned
-	q(43442),	-- Mage Order Hall - Arcane chosen second
-	q(43443),	-- Mage Order Hall - Fire chosen second
-	q(43444),	-- Mage Order Hall - Frost chosen second
-	q(44307),	-- Mage Order Hall - Arcane chosen third
-	q(44308),	-- Mage Order Hall - Fire chosen third
-	q(44309),	-- Mage Order Hall - Frost chosen third
-	q(44467),	-- Mage Order Hall - Completed the "Oculus Preparations: A Nightmarish Situation" mission
-	q(44468),	-- Mage Order Hall - Completed the "Oculus Preparations: Communication Disruption" mission
-	q(44469),	-- Mage Order Hall - Completed the "Oculus Preparations: Ley Them Down" mission
-	q(44470),	-- Mage Order Hall - Completed the "Oculus Preparations: Eternos" mission
-	q(44472),	-- Mage Order Hall - Completed the "Oculus Preparations: On The Offensive" mission
-	q(44474),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Nightborne Vault" mission
-	q(44475),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Ruins of Nar'thalas" mission
-	q(44476),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Scholars of Tel'anor" mission
-	q(44477),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Forests of Ashenvale" mission
-	q(44478),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Best Friends Forever" mission
-	q(44645),	-- Mage Order Hall - Completed the "Ancient Magic" mission
-	q(45914),	-- Mage Order Hall - Chapter 5 tracking - Soulstone Shielded. Triggers after completing "Keep it Secret, Keep it Safe"
-	q(46768),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver"
-	q(46776),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver". Duplicate?
-	q(47234),	-- Mage Order Hall - Unlocked the order hall storyline artifact appearance from "A Hero's Weapon"
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43466),	-- Hidden History
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(46768),	-- Akazamzarak 1 Week Cooldown - triggered after completing "Champion: Aethas Sunreaver"
+		q(46776),	-- Akazamzarak 1 Week Cooldown - triggered after completing "Champion: Aethas Sunreaver"
+		q(45914),	-- Ch 5 Soulstone Shielded Tracking Quest - triggers after completing "Keep it Secret, Keep it Safe" (questID 46351)
+		q(42976),	-- Mage Ch 3 Tracking Quest	- completed "Three Is a Lucky Number" (questID 42959) and saw the Arcane Destroyer be summoned
+		q(44645),	-- Tracking Quest: 7.0 Class Hall - Mage - Pacing Mission 1 - Unlocks Ch 2 - SBV - completed the "Ancient Magic" mission
+		q(44474),	-- Tracking Quest: Following In His Footsteps 1 - completed the "Archmage Vargoth's Travels: The Nightborne Vault" mission
+		q(44475),	-- Tracking Quest: Following In His Footsteps 2 - completed the "Archmage Vargoth's Travels: Ruins of Nar'thalas" mission
+		q(44476),	-- Tracking Quest: Following In His Footsteps 3 - completed the "Archmage Vargoth's Travels: The Scholars of Tel'anor" mission
+		q(44477),	-- Tracking Quest: Following In His Footsteps 4 - completed the "Archmage Vargoth's Travels: The Forests of Ashenvale" mission
+		q(44478),	-- Tracking Quest: Following In His Footsteps 5 - completed the "Archmage Vargoth's Travels: Best Friends Forever" mission
+		q(44467),	-- Tracking Quest: When There's a Will, There's a Way 1 - completed the "Oculus Preparations: A Nightmarish Situation" mission
+		q(44468),	-- Tracking Quest: When There's a Will, There's a Way 2 - completed the "Oculus Preparations: Communication Disruption" mission
+		q(44469),	-- Tracking Quest: When There's a Will, There's a Way 3 - completed the "Oculus Preparations: Ley Them Down" mission
+		q(44470),	-- Tracking Quest: When There's a Will, There's a Way 4 - completed the "Oculus Preparations: Eternos" mission
+		q(44472),	-- Tracking Quest: When There's a Will, There's a Way 5 - completed the "Oculus Preparations: On The Offensive" mission
+		q(42727),	-- Transition to Forge Quests - triggered after completing The Mage Hunter as first artifact weapon
 	}),
-}));
--- #endif
+});

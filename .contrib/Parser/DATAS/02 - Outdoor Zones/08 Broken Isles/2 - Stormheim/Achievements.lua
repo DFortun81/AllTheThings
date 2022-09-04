@@ -154,36 +154,6 @@ _.Zones =
 						}),
 					},
 				})),
-				un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
-					["groups"] = {
-						un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
-							["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-							["groups"] = {
-								i(139531, {	-- Crumpled Request
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 8,			-- Crumpled Request (Criteria)
-									--["questID"] = 42058,		-- Crumpled Request (Quest)
-									["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
-									["crs"] = {108030}
-								}),
-								i(139529, {	-- Fevered Request
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 13,		-- Fevered Request (Criteria)
-									--["questID"] = 41985,		-- Fevered Request (Quest)
-									["description"] = "Murlocs at Morheim (eastern Stormheim).",
-									["crs"] = {98498, 98500, 98501, 98502, 110258}
-								}),
-								i(139530, {	-- Singed Letter
-									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 14,		-- Singed Letter (Criteria)
-									--["questID"] = 42215,		-- Singed Letter (Quest)
-									["description"] = "Southern Stormheim.",
-									["crs"] = {116600}
-								})
-							},
-						})),
-					},
-				})),
 				ach(11232, {	-- Lock, Stock and Two Smoking Goblins
 					["sourceQuests"] = { 43331 },	-- Time to Collect
 				}),

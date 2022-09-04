@@ -1,11 +1,13 @@
 local OTHER = 114;
+local SPIRIT_OF_HARMONY = 76061;
 -------------------
 -- BLACKSMITHING --
 -------------------
 local ELEMENTIUM_BAR = 52186;
 local HARDENED_ELEMENTIUM_BAR = 53039;
 local PYRIUM = 51950;
-APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+local SECRET_OF_DRAENOR_BLACKSMITHING = 118720;
+APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 	r(2018, {	-- Blacksmithing (Apprentice)
 		["collectible"] = false,
 	}),
@@ -17,6 +19,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLA
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264434, {["timeline"]={"added 8.0.1"}})),	-- Blacksmithing
 	n(ARMOR, {
 		r(2661),	-- Copper Chain Belt
 		r(3319),	-- Copper Chain Boots
@@ -90,8 +93,8 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLA
 		r(3294),	-- Thick War Axe
 		applyclassicphase(TBC_PHASE_ONE, r(34981, {["timeline"]={"added 2.0.1","removed 5.0.4"}})),	-- Whirling Steel Axes
 	}),
-});
-ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+};
+ARTISAN_BLACKSMITHING = {
 	r(9785, {	-- Blacksmithing (Artisan)
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
@@ -121,8 +124,8 @@ ARTISAN_BLACKSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 		r(16641),	-- Dense Sharpening Stone
 		r(16640),	-- Dense Weightstone
 	}),
-});
-CLASSIC_WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+};
+CLASSIC_WEAPONSMITHING = {
 	r(9787, {	-- Weaponsmith
 		["timeline"]={ "removed 4.0.3" },
 		["collectible"] = false,
@@ -143,15 +146,15 @@ CLASSIC_WEAPONSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
 	r(10007, {["timeline"]={"removed 4.0.3"}}),	-- Phantom Blade
 	r(10011, {["timeline"]={"removed 4.0.3"}}),	-- Blight
 	r(10015, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Champio
-});
-CLASSIC_ARMORSMITHING = bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
+};
+CLASSIC_ARMORSMITHING = {
 	r(9788, {	-- Armorsmith
 		["timeline"]={ "removed 4.0.3" },
 		["collectible"] = false,
 	}),
 	r(9974, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Breastplate
 	r(9954, {["timeline"]={"removed 4.0.3"}}),	-- Truesilver Gauntlets
-});
+};
 CLASSIC_BLACKSMITHING = appendGroups(APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING,
 -- #if AFTER 2.1.0
 ARTISAN_BLACKSMITHING
@@ -159,11 +162,12 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
-TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(29844, {	-- Blacksmithing (Master)
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264436, {["timeline"]={"added 8.0.1"}})),	-- Outland Blacksmithing
 	n(ARMOR, {
 		r(29553),	-- Fel Iron Chain Bracers
 		r(29551),	-- Fel Iron Chain Coif
@@ -188,7 +192,7 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill
 		r(34983, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Felsteel Whisper Knives
 	}),
 }));
-TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(34533, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Breastplate of Kings
 	r(34534, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of Kings
 	r(36257, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of the Ancient Kings
@@ -200,7 +204,7 @@ TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill
 	r(34530, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
 	r(36124, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Windforged Leggings
 }));
-TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 2.0.1" } }, {
+TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(34542, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Black Planar Edge
 	r(36258, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazefury
 	r(34537, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazeguard
@@ -231,11 +235,12 @@ TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkil
 	r(36131, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Windforged Rapier
 	-- #endif
 }));
-WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(51300, {	-- Blacksmithing (Grand Master)
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264438, {["timeline"]={"added 8.0.1"}})),	-- Northrend Blacksmithing
 	n(ARMOR, {
 		r(59436),	-- Brilliant Saronite Belt
 		r(55057),	-- Brilliant Saronite Boots
@@ -316,7 +321,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireS
 		r(55201),	-- Cobalt Tenderizer
 		r(54550),	-- Cobalt Triangle Shield
 		r(56280),	-- Cudgel of Saronite Justice
-		r(55206, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Deadly Saronite Dirk
+		r(55206),	-- Deadly Saronite Dirk
 		r(55203),	-- Forged Cobalt Claymore
 		r(55182),	-- Furious Saronite Beatstick
 		r(55174),	-- Honed Cobalt Cleaver
@@ -341,22 +346,23 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireS
 		-- #endif
 	}),
 }));
-WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(55186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
 	r(55187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
 }));
-WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 3.0.2" } }, {
+WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(55183, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
 	r(55184, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
 	-- #if BEFORE CATA
 	r(55185),	-- Saronite Mindcrusher
 	-- #endif
 }));
-CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 4.0.3" } }, {
+CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 	r(76666, {	-- Blacksmithing (Illustrious)
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264440, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Blacksmithing
 	n(ARMOR, {
 		r(76181),	-- Hardened Obsidium Belt
 		r(76182),	-- Hardened Obsidium Boots
@@ -384,6 +390,7 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSki
 		r(76286),	-- Stormforged Shoulders
 	}),
 	filter(MISC, {
+		r(92375, {["timeline"]={"added 4.0.3","removed 5.0.4"}}),	-- Elementium Rod
 		r(76441),	-- Elementium Shield Spike
 		r(76178),	-- Folded Obsidium
 		r(76438),	-- Obsidium Skeleton Key
@@ -399,7 +406,7 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSki
 		r(76293),	-- Stormforged Shield
 	}),
 }));
-COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"] = BLACKSMITHING, ["timeline"] = { "added 4.0.3" } }, {
+COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
 		["cost"] = { { "i", PYRIUM, 5 } },
 	}),
@@ -503,6 +510,169 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, bubbl
 		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
 	}),
 }));
+MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
+	r(110396, {	-- Blacksmithing (Zen Master)
+		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
+		["collectible"] = false,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264442, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Blacksmithing
+	n(ARMOR, {
+		r(122583),	-- Ghost-Forged Belt
+		r(122638),	-- Ghost-Forged Blade
+		r(122582),	-- Ghost-Forged Boots
+		r(122581),	-- Ghost-Forged Bracers
+		r(122578),	-- Ghost-Forged Breastplate
+		r(122579),	-- Ghost-Forged Gauntlets
+		r(122576),	-- Ghost-Forged Helm
+		r(122580),	-- Ghost-Forged Legplates
+		r(122577),	-- Ghost-Forged Shoulders
+	}),
+	filter(MISC, {
+		r(126869),	-- Folded Ghost Iron [Unsure when actually added.. But it was NYI than in BFA added? It does nothing as far as material]
+		r(122633),	-- Ghostly Skeleton Key
+		r(139753, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Decorative Spoons
+		r(139756, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Barrel
+		r(139763, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Bells
+		r(139762, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Bowls
+		r(139764, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Crate
+		r(139761, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Cups
+		r(140166, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Frames
+		r(139750, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Hook
+		r(139748, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Ladle
+		r(139755, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Needles
+		r(140167, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pans
+		r(140165, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Picks
+		r(139745, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pins
+		r(139749, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Poker
+		r(139760, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Pot
+		r(139757, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Saw
+		r(139754, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Spade
+		r(139751, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Spatulas
+		r(140168, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Statue
+		r(139759, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Wire
+		r(139747, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Ghost Iron Wok
+		r(139746, {["timeline"]={"added 5.2.0","removed 6.0.2"}}),	-- Training Project: Simple Eating Utensils
+	}),
+	n(WEAPONS, {
+		r(122637),	-- Forgewire Axe
+		r(122641),	-- Ghost Shard
+		r(122635),	-- Lightsteel Shield
+		r(122639),	-- Phantasmal Hammer
+		r(122640),	-- Spiritblade Decimator
+		r(122636),	-- Spiritguard Shield
+	})
+}));
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = { { "i", SPIRIT_OF_HARMONY, 1 }, }, ["timeline"] = { "added 5.0.4" } }, {
+	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
+	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
+	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)
+	i(84161),	-- Plans: Contender's Revenant Breastplate (RECIPE!)
+	i(84162),	-- Plans: Contender's Revenant Gauntlets (RECIPE!)
+	i(84163),	-- Plans: Contender's Revenant Helm (RECIPE!)
+	i(84164),	-- Plans: Contender's Revenant Legplates (RECIPE!)
+	i(84165),	-- Plans: Contender's Revenant Shoulders (RECIPE!)
+	i(84166),	-- Plans: Contender's Spirit Belt (RECIPE!)
+	i(84167),	-- Plans: Contender's Spirit Boots (RECIPE!)
+	i(84168),	-- Plans: Contender's Spirit Bracers (RECIPE!)
+	i(84169),	-- Plans: Contender's Spirit Breastplate (RECIPE!)
+	i(84170),	-- Plans: Contender's Spirit Gauntlets (RECIPE!)
+	i(84171),	-- Plans: Contender's Spirit Helm (RECIPE!)
+	i(84172),	-- Plans: Contender's Spirit Legplates (RECIPE!)
+	i(84173),	-- Plans: Contender's Spirit Shoulders (RECIPE!)
+	i(84208),	-- Plans: Masterwork Lightsteel Shield (RECIPE!)
+	i(84219),	-- Plans: Masterwork Spiritguard Belt (RECIPE!)
+	i(84220),	-- Plans: Masterwork Spiritguard Boots (RECIPE!)
+	i(84221),	-- Plans: Masterwork Spiritguard Bracers (RECIPE!)
+	i(84222),	-- Plans: Masterwork Spiritguard Breastplate (RECIPE!)
+	i(84223),	-- Plans: Masterwork Spiritguard Gauntlets (RECIPE!)
+	i(84224),	-- Plans: Masterwork Spiritguard Helm (RECIPE!)
+	i(84225),	-- Plans: Masterwork Spiritguard Legplates (RECIPE!)
+	i(84226),	-- Plans: Masterwork Spiritguard Shield (RECIPE!)
+	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
+}));
+DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	["filterID"] = MISC,
+	["g"] = {
+		r(158737, {	-- Blacksmithing (Draenor Master)
+			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
+			["collectible"] = false,
+		}),
+		applyclassicphase(BFA_PHASE_ONE, r(264444, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
+		r(171692),	-- Smoldering Breastplate
+		r(171693),	-- Smoldering Greaves
+		r(171691),	-- Smoldering Helm
+		r(176090),	-- Secrets of Draenor Blacksmithing
+		r(171690),	-- Truesteel Ingot
+	},
+})));
+COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
+	-- Missing Essences?
+	i(119329, {	-- Recipe: Soul of the Forge (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(120262, {	-- Recipe: Steelforged Aegis (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(120260, {	-- Recipe: Steelforged Axe (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116731, {	-- Recipe: Steelforged Dagger (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116729, {	-- Recipe: Steelforged Greataxe (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116732, {	-- Recipe: Steelforged Hammer (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116730, {	-- Recipe: Steelforged Saber (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116733, {	-- Recipe: Steelforged Shield (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116740, {	-- Recipe: Truesteel Armguards (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116741, {	-- Recipe: Truesteel Boots (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116739, {	-- Recipe: Truesteel Breastplate (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116738, {	-- Recipe: Truesteel Gauntlets (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116737, {	-- Recipe: Truesteel Greaves (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116734, {	-- Recipe: Truesteel Grinder (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116736, {	-- Recipe: Truesteel Helm (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116735, {	-- Recipe: Truesteel Pauldrons (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(118044, {	-- Recipe: Truesteel Reshaper (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116742, {	-- Recipe: Truesteel Waistguard (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 } },
+	}),
+	i(116743, {	-- Recipe: Truesteel Essence (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
+	}),
+	i(116745, {	-- Recipe: Steelforged Essence (RECIPE!)
+		["collectible"] = false,
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["cost"] = { { "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }, },
+	}),
+}));
 ----------------
 -- ENCHANTING --
 ----------------
@@ -511,7 +681,7 @@ local ARMOR_ENCHANTMENTS = 657;
 local HEAVENLY_SHARD = 52721;
 local MAELSTORM_CRYSTAL = 52722
 local SECRET_OF_DRAENOR_ENCHANTING = 119293;
-APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
+APPRENTICE_JOURNEYMAN_ENCHANTING = {
 	r(7411, {	-- Enchanting (Apprentice)
 		["collectible"] = false,
 	}),
@@ -578,8 +748,8 @@ APPRENTICE_JOURNEYMAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING },
 		r(20016),	-- Superior Spirit / Vitality[LEGION+]
 		-- #endif
 	}),
-});
-EXPERT_ARTISAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
+};
+EXPERT_ARTISAN_ENCHANTING = {
 	r(13920, {	-- Enchanting (Artisan)
 		["timeline"]={ "removed 8.0.1" },
 		["collectible"] = false,
@@ -625,7 +795,7 @@ EXPERT_ARTISAN_ENCHANTING = bubbleDown({ ["requireSkill"] = ENCHANTING }, {
 		r(13659),	-- Spirit / Versatility[LEGION+]
 		r(13693),	-- Striking
 	}),
-});
+};
 CLASSIC_ENCHANTING = appendGroups(APPRENTICE_JOURNEYMAN_ENCHANTING,
 -- #if AFTER 2.1.0
 EXPERT_ARTISAN_ENCHANTING
@@ -633,7 +803,7 @@ EXPERT_ARTISAN_ENCHANTING
 	{}
 -- #endif
 );
-TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 2.0.1" } }, {
+TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"]={ "added 2.0.1", "removed 8.0.1" },
 		["collectible"] = false,
@@ -666,7 +836,7 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["requireSkill"] 
 		r(27944),	-- Tough Shield / Lesser Dodge[CATA+]
 	}),
 }));
-WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 3.0.2" } }, {
+WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(51313, {	-- Enchanting (Grand Master)
 		["timeline"]={ "added 3.0.2", "removed 8.0.1" },
 		["collectible"] = false,
@@ -722,12 +892,12 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkil
 		r(62959, {["timeline"]={"added 3.1.0"}}),	-- Spellpower
 	}),
 }));
-CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 4.0.3" } }, {
+CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 4.0.3" } }, {
 	r(74258, {	-- Enchanting (Illustrious)
 		["timeline"]={ "added 4.0.3", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264464, {["timeline"]={"added 8.0.1"}})),	-- Cataclysm Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(74216, {["timeline"]={"added 4.0.3","removed 6.0.2"}}),	-- Agility
 		r(74201),	-- Critical Strike[Bracer]
@@ -774,7 +944,7 @@ CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["requireSkill"
 		r(74235),	-- Superior Intellect
 	}),
 }));
-COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 4.0.3" } }, {
+COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { "added 4.0.3" } }, {
 	i(64411, {	-- Formula: Enchant Boots - Assassin's Step (RECIPE!)
 		["cost"] = { { "i", HEAVENLY_SHARD, 5 } },
 	}),
@@ -816,12 +986,12 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDa
 		["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 	}),
 }));
-MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 5.0.4" } }, {
+MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 5.0.4" } }, {
 	r(110400, {	-- Enchanting (Zen Master)
 		["timeline"]={ "added 5.0.4", "removed 8.0.1" },
 		["collectible"] = false,
 	}),
-	r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
+	applyclassicphase(BFA_PHASE_ONE, r(264467, {["timeline"]={"added 8.0.1"}})),	-- Pandaria Enchanting
 	cat(ARMOR_ENCHANTMENTS, {
 		r(104398),	-- Accuracy
 		r(104409),	-- Blurred Speed
@@ -863,7 +1033,7 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["requireSkill"] 
 		r(104425),	-- Windsong
 	}),
 }));
-DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 6.0.2" } }, {
+DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
@@ -871,7 +1041,7 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 			["timeline"]={ "added 6.0.2", "removed 8.0.1" },
 			["collectible"] = false,
 		}),
-		r(264469, {["timeline"]={"added 8.0.1"}}),	-- Draenor Enchanting
+		applyclassicphase(BFA_PHASE_ONE, r(264469, {["timeline"]={"added 8.0.1"}})),	-- Draenor Enchanting
 		r(158907),	-- Breath of Critical Strike
 		r(158908),	-- Breath of Haste
 		r(158909),	-- Breath of Mastery
@@ -884,7 +1054,7 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 		r(159236),	-- Mark of the Shattered Hand
 	},
 })));
-COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 6.0.2" } }, {
+COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
 	i(118394, {	-- Formula: Enchant Cloak - Breath of Critical Strike (RECIPE!)
 		["cost"] = { { "i", SECRET_OF_DRAENOR_ENCHANTING, 1 } },
 	}),
@@ -988,7 +1158,7 @@ COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData(
 		["timeline"] = { "added 7.0.3" },
 	}),
 }));
-BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 8.0.1" } }, {
+BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
 	cat(ARMOR_ENCHANTMENTS, {
 		r(271433),	-- Cooled Hearthing
 		r(255075),	-- Pact of Critical Strike [Rank 1]
@@ -1044,7 +1214,7 @@ BFA_ENCHANTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["requireSkill"] 
 		r(268878),	-- Versatile Navigation [Rank 2]
 	}),
 }));
-NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 8.2.0" } }, {
+NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { "added 8.2.0" } }, {
 	cat(OTHER, {
 		r(301412),	-- Light-Step Hoofplates
 		r(294781),	-- Notorious Combatant's Sorcerous Scepter [Rank 1]
@@ -1070,7 +1240,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["requireS
 		r(298437),	-- Oceanic Restoration [Rank 2]
 	}),
 }));
-SL_ENCHANTING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["requireSkill"] = ENCHANTING, ["timeline"] = { "added 9.0.2" } }, {
+SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { "added 9.0.2" } }, {
 	r(309832),	-- Shadowlands Enchanting
 	r(324750, {["collectible"] = false}),	-- Disenchant
 	cat(ARMOR_ENCHANTMENTS, {
@@ -1125,7 +1295,7 @@ SL_ENCHANTING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["requireSkill"] = 
 -----------------
 local GLYPHS = 111;
 local SCROLLS = 107;
-CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["requireSkill"] = INSCRIPTION, ["timeline"] = { "added 3.0.2" } }, {
+CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { "added 3.0.2" } }, {
 	r(51005, {	-- Milling
 		["collectible"] = false,
 	}),

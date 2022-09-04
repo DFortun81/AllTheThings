@@ -4,14 +4,15 @@
 
 root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
-		n(138706, {	-- Mission Command Table
+		n(138706, bubbleDownSelf({	-- Mission Command Table
+			["races"] = HORDE_ONLY,
+		},{
 			["modelScale"] = 3,
 			["crs"] = { 147244 },	-- Dazar'alor: The Great Seal Location
 			["coords"] = {
 				{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
 				{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 			},
-			["races"] = HORDE_ONLY,
 			["g"] = {
 				ach(12869, {	-- Azeroth at War: After Lordaron
 					crit(10, {	-- Azurelode Mine
@@ -141,24 +142,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				mission(1878, {	-- The Shadow War
 					i(160983),	-- Recruitment Orders
 				}),
-				currency(1579, {	-- Champions of Azeroth
-					["repeatable"] = true,
-					["modID"] = 1,
-					["q"] = 3,
-					["ilvl"] = 120,
-					["factionID"] = 2164,
-					["g"] = {
-						i(166298),	-- Champions of Azeroth Supplies
-					},
-				}),
-				currency(1595, {	-- Talanji's Expedition
-					["factionID"] = 2156,	-- Talanji's Expedition
-					["repeatable"] = true,
-					["g"] = {
-						i(166282),	--  Talanji's Expedition Supplies
-					},
-				}),
 			},
-		}),
+		})),
 	}),
 })));

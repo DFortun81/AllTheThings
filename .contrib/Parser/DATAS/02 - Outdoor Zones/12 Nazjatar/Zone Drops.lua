@@ -332,7 +332,6 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			},
 		}),
 		i(170180, {	-- Razorshell
-		--	["description"] = "Only drops when War Mode is enabled.", (i guess they changed this?)
 			["crs"] = {
 				145970,	-- Razorshell Turtle
 				152383,	-- Snapshell Tortoise

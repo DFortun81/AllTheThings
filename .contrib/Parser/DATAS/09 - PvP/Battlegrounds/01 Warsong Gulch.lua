@@ -63,7 +63,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1172, {	-- Master of Warsong Gulch
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							167,	-- Warsong Gulch Veteran
 							199,	-- Capture the Flag
 							200,	-- Persistent Defender
@@ -503,7 +503,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(19582)),	-- Windtalker's Wristguards
 						mark(1, i(19583)),	-- Windtalker's Wristguards
 						mark(1, i(19584)),	-- Windtalker's Wristguards
-						
+
 						applyclassicphase(PHASE_SIX, mark(2, i(22673))),	-- Outrider's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, mark(2, i(22740))),	-- Outrider's Leather Pants
@@ -511,7 +511,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						applyclassicphase(PHASE_SIX, mark(2, i(22676))),	-- Outrider's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22651)),	-- Outrider's Plate Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, mark(2, i(22747))),	-- Outrider's Silk Leggings
-						
+
 						mark(1, i(19518)),	-- Advisor's Ring
 						mark(1, i(19519)),	-- Advisor's Ring
 						mark(1, i(19520)),	-- Advisor's Ring
@@ -522,7 +522,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(19512)),	-- Legionnaire's Band
 						mark(1, i(19513)),	-- Legionnaire's Band
 						mark(1, i(20429)),	-- Legionnaire's Band
-						
+
 						applyclassicphase(PHASE_SIX, mark(1, i(21567))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, mark(1, i(21568))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, mark(1, i(21565))),	-- Rune of Perfection
@@ -580,7 +580,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(19582)),	-- Windtalker's Wristguards
 						mark(1, i(19583)),	-- Windtalker's Wristguards
 						mark(1, i(19584)),	-- Windtalker's Wristguards
-						
+
 						applyclassicphase(PHASE_SIX, mark(2, i(22748))),	-- Sentinel's Chain Leggings
 						applyclassicphase(TBC_PHASE_ONE, mark(2, i(30497))),	-- Sentinel's Mail Leggings
 						applyclassicphase(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
@@ -588,7 +588,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						applyclassicphase(PHASE_SIX, mark(2, i(22750))),	-- Sentinel's Lizardhide Pants
 						applyclassicphase(PHASE_SIX, i(22672)),	-- Sentinel's Plate Legguards [Currently Sold for Gold, may change in the future!]
 						applyclassicphase(PHASE_SIX, mark(2, i(22752))),	-- Sentinel's Silk Leggings
-						
+
 						mark(1, i(19522)),	-- Lorekeeper's Ring
 						mark(1, i(19523)),	-- Lorekeeper's Ring
 						mark(1, i(19524)),	-- Lorekeeper's Ring
@@ -599,7 +599,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(19515)),	-- Protector's Band
 						mark(1, i(19517)),	-- Protector's Band
 						mark(1, i(20439)),	-- Protector's Band
-						
+
 						applyclassicphase(PHASE_SIX, mark(1, i(21567))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, mark(1, i(21568))),	-- Rune of Duty
 						applyclassicphase(PHASE_SIX, mark(1, i(21565))),	-- Rune of Perfection

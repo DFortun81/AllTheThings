@@ -323,11 +323,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["g"] = {
 							i(169396),	-- Echoing Oozeling (PET!)
 							i(169850, {	-- Azeroth Mini Pack: Mechagon
-								i(169844),	-- Azeroth Mini: Overspark
-								i(169852),	-- Azeroth Mini: Blastatron
-								i(169851),	-- Azeroth Mini: Cogstar
-								i(169845),	-- Azeroth Mini: HK-8
-								i(169846),	-- Azeroth Mini: King Mechagon
+								["sym"] = {{"fill"}},	-- fill with sourced content
 							}),
 							i(169692),	-- Vinyl: Triumph of Gnomeregan
 						},
@@ -356,11 +352,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 							i(167795),	-- Paint Vial: Copper Trim
 							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-								i(169843),	-- Azeroth Mini: Cork Stuttguard
-								i(169842),	-- Azeroth Mini: Roadtrogg
-								i(169840),	-- Azeroth Mini: Gazlowe
-								i(169795),	-- Azeroth Mini: Bondo Bigblock
-								i(169849),	-- Azeroth Mini: Naeno Megacrash
+								["sym"] = {{"fill"}},	-- fill with sourced content
 							}),
 						},
 					}),
@@ -369,11 +361,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["isDaily"] = true,
 						["g"] = {
 							i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
-								i(169843),	-- Azeroth Mini: Cork Stuttguard
-								i(169842),	-- Azeroth Mini: Roadtrogg
-								i(169840),	-- Azeroth Mini: Gazlowe
-								i(169795),	-- Azeroth Mini: Bondo Bigblock
-								i(169849),	-- Azeroth Mini: Naeno Megacrash
+								["sym"] = {{"fill"}},	-- fill with sourced content
 							}),
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot

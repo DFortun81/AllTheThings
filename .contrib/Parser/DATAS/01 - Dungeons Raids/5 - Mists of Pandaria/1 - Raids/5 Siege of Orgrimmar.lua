@@ -1734,9 +1734,12 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					}),
 				},
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
+				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
+			}),
 			d(17, {	-- LFR
-				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
-				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
+				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						un(REMOVED_FROM_GAME, i(104275, {	-- Twisted Treasures of the Vale
@@ -1842,432 +1845,415 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						-- i(113229),	-- Zoid's Molten Gauntlets
 					}),
 					ach(8458, {	-- Vale of Eternal Sorrows
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["g"] = {
-							cr(71543, e(852, {	-- Immerseus
-								crit(1, {	-- Immerseus
+						cr(71543, e(852, {	-- Immerseus
+							crit(1, {	-- Immerseus
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+							}),
+							i(110784),	-- Trident of Corrupted Waters
+							i(110785),	-- Encapsulated Essence of Immerseus
+							i(112382),	-- Hood of Blackened Tears
+							i(112424),	-- Hood of Swirling Senses
+							i(110761),	-- Immerseus' Crystalline Eye
+							i(112423),	-- Ichor-Dripping Shoulderpads
+							i(112421),	-- Pauldrons of Violent Eruption
+							i(112425),	-- Cloak of Misguided Power
+							i(112417),	-- Chestplate of Congealed Corrosion
+							i(112429),	-- Bracers of Purified Spirit
+							i(112420),	-- Bracers of Sordid Sleep
+							i(112416),	-- Bubble-Burst Bracers
+							i(112422),	-- Bolt-Burster Grips
+							i(112418),	-- Corruption-Rotted Gauntlets
+							i(112445),	-- Soul-Soaked Gloves
+							i(112447),	-- Greatbelt of Living Waters
+							i(112383),	-- Puddle Punishers
+							i(112428),	-- Salt Water Sandals
+							i(112419),	-- Treads of Unchained Hate
+							i(112448),	-- Waterwalker Greatboots
+							i(112427),	-- Seal of Eternal Sorrow
+							i(112426),	-- Purified Bindings of Immerseus
+						})),
+						e(849, {	-- The Fallen Protectors (Rook Stonetoe)
+							["crs"] = {
+								71479,	-- He Softfoot [The Fallen Protectors]
+								71475,	-- Rook Stonetoe [The Fallen Protectors]
+								71480,	-- Sun Tenderheart [The Fallen Protectors]
+							},
+							["g"] = {
+								crit(2, {	-- Fallen Protectors
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 								}),
-								i(110784),	-- Trident of Corrupted Waters
-								i(110785),	-- Encapsulated Essence of Immerseus
-								i(112382),	-- Hood of Blackened Tears
-								i(112424),	-- Hood of Swirling Senses
-								i(110761),	-- Immerseus' Crystalline Eye
-								i(112423),	-- Ichor-Dripping Shoulderpads
-								i(112421),	-- Pauldrons of Violent Eruption
-								i(112425),	-- Cloak of Misguided Power
-								i(112417),	-- Chestplate of Congealed Corrosion
-								i(112429),	-- Bracers of Purified Spirit
-								i(112420),	-- Bracers of Sordid Sleep
-								i(112416),	-- Bubble-Burst Bracers
-								i(112422),	-- Bolt-Burster Grips
-								i(112418),	-- Corruption-Rotted Gauntlets
-								i(112445),	-- Soul-Soaked Gloves
-								i(112447),	-- Greatbelt of Living Waters
-								i(112383),	-- Puddle Punishers
-								i(112428),	-- Salt Water Sandals
-								i(112419),	-- Treads of Unchained Hate
-								i(112448),	-- Waterwalker Greatboots
-								i(112427),	-- Seal of Eternal Sorrow
-								i(112426),	-- Purified Bindings of Immerseus
-							})),
-							e(849, {	-- The Fallen Protectors (Rook Stonetoe)
-								["crs"] = {
-									71479,	-- He Softfoot [The Fallen Protectors]
-									71475,	-- Rook Stonetoe [The Fallen Protectors]
-									71480,	-- Sun Tenderheart [The Fallen Protectors]
-								},
-								["g"] = {
-									crit(2, {	-- Fallen Protectors
-										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-									}),
-									i(112477),	-- Softfoot's Last Resort
-									i(112478),	-- Death Lotus Crossbow
-									i(112491),	-- Purehearted Cricket Cage
-									i(112496),	-- Gaze of Echoing Despair
-									i(112481),	-- Darkfallen Shoulderplates
-									i(112494),	-- Shoulderguards of Dark Meditations
-									i(112488),	-- Shoulderpads of Dou Dou Chong
-									i(112492),	-- Shoulders of the Roiling Inferno
-									i(112485),	-- Gloomwrap Greatcloak
-									i(112487),	-- Robes of the Tendered Heart
-									i(112489),	-- Lifebane Bracers
-									i(112495),	-- Grips of the Fallen Council
-									i(112480),	-- Grips of Unending Anguish
-									i(112483),	-- Shockstriker Gauntlets
-									i(112482),	-- Poisonbinder Girth
-									i(112493),	-- Sabatons of Defilement
-									i(112486),	-- Sha-Seared Sandals
-									i(112479),	-- Stonetoe's Tormented Treads
-									i(112490),	-- Petrified Pennyroyal Ring
-									i(112484),	-- Sorrowpath Signet
-									i(112476),	-- Rook's Unlucky Talisman
-								},
-							}),
-							e(866, {	-- Norushen
-								["crs"] = {
-									71965,	-- Norushen
-									72276,	-- Amalgam of Corruption
-								},
-								["g"] = {
-									crit(3, {	-- Norushen
-										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
-									}),
-									i(112547),	-- Norushen's Shortblade
-									i(112546),	-- Xifeng, Longblade of the Titanic Guardian
-									i(112560),	-- Norushen's Enigmatic Barrier
-									i(112552),	-- Rage-Blind Greathelm
-									i(112559),	-- Untainted Guardian's Chain
-									i(112550),	-- Quarantine Shoulderguards
-									i(112558),	-- Rime-Rift Shoulders
-									i(112554),	-- Drape of the Despairing Pit
-									i(112549),	-- Robes of the Blackened Watcher
-									i(112545),	-- Bracers of Blind Hatred
-									i(112555),	-- Bracers of Broken Causation
-									i(112563),	-- Bracers of Final Serenity
-									i(112565),	-- Wristplates of Broken Doubt
-									i(112556),	-- Blight Hurlers
-									i(112562),	-- Confident Grips
-									i(112548),	-- Gloves of the Golden Protector
-									i(112557),	-- Sash of the Last Guardian
-									i(112551),	-- Leggings of Unabashed Anger
-									i(112564),	-- Shadow-Binder's Kilt
-									i(112561),	-- Boots of Broken Reliance
-									i(112553),	-- Reality Ripper Ring
-									i(112503),	-- Fusion-Fire Core
-								},
-							}),
-							cr(71734, e(867, {	-- Sha of Pride
-								crit(4, {	-- Sha of Pride
+								i(112477),	-- Softfoot's Last Resort
+								i(112478),	-- Death Lotus Crossbow
+								i(112491),	-- Purehearted Cricket Cage
+								i(112496),	-- Gaze of Echoing Despair
+								i(112481),	-- Darkfallen Shoulderplates
+								i(112494),	-- Shoulderguards of Dark Meditations
+								i(112488),	-- Shoulderpads of Dou Dou Chong
+								i(112492),	-- Shoulders of the Roiling Inferno
+								i(112485),	-- Gloomwrap Greatcloak
+								i(112487),	-- Robes of the Tendered Heart
+								i(112489),	-- Lifebane Bracers
+								i(112495),	-- Grips of the Fallen Council
+								i(112480),	-- Grips of Unending Anguish
+								i(112483),	-- Shockstriker Gauntlets
+								i(112482),	-- Poisonbinder Girth
+								i(112493),	-- Sabatons of Defilement
+								i(112486),	-- Sha-Seared Sandals
+								i(112479),	-- Stonetoe's Tormented Treads
+								i(112490),	-- Petrified Pennyroyal Ring
+								i(112484),	-- Sorrowpath Signet
+								i(112476),	-- Rook's Unlucky Talisman
+							},
+						}),
+						e(866, {	-- Norushen
+							["crs"] = {
+								71965,	-- Norushen
+								72276,	-- Amalgam of Corruption
+							},
+							["g"] = {
+								crit(3, {	-- Norushen
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 								}),
-								i(99678),	-- Chest of the Cursed Conqueror
-								i(99679),	-- Chest of the Cursed Protector
-								i(99677),	-- Chest of the Cursed Vanquisher
-								i(104162),	-- Droplet of Y'Shaarj (PET!)
-								i(104163),	-- Gooey Sha-ling (PET!)
-								i(112951),	-- Gaze of Arrogance
-								i(112949),	-- Greatsword of Pride's Fall
-								i(112950),	-- Shield of Mockery
-								i(112702),	-- Crown of Boastful Words
-								i(112952),	-- Self-Reflecting Mask
-								i(112955),	-- Choker of the Final Word
-								i(112954),	-- Necklace of Fading Light
-								i(112953),	-- Greaves of Sublime Superiority
-								i(112947),	-- Assurance of Consequence
-								i(112948),	-- Prismatic Prison of Pride
-							})),
-						},
+								i(112547),	-- Norushen's Shortblade
+								i(112546),	-- Xifeng, Longblade of the Titanic Guardian
+								i(112560),	-- Norushen's Enigmatic Barrier
+								i(112552),	-- Rage-Blind Greathelm
+								i(112559),	-- Untainted Guardian's Chain
+								i(112550),	-- Quarantine Shoulderguards
+								i(112558),	-- Rime-Rift Shoulders
+								i(112554),	-- Drape of the Despairing Pit
+								i(112549),	-- Robes of the Blackened Watcher
+								i(112545),	-- Bracers of Blind Hatred
+								i(112555),	-- Bracers of Broken Causation
+								i(112563),	-- Bracers of Final Serenity
+								i(112565),	-- Wristplates of Broken Doubt
+								i(112556),	-- Blight Hurlers
+								i(112562),	-- Confident Grips
+								i(112548),	-- Gloves of the Golden Protector
+								i(112557),	-- Sash of the Last Guardian
+								i(112551),	-- Leggings of Unabashed Anger
+								i(112564),	-- Shadow-Binder's Kilt
+								i(112561),	-- Boots of Broken Reliance
+								i(112553),	-- Reality Ripper Ring
+								i(112503),	-- Fusion-Fire Core
+							},
+						}),
+						cr(71734, e(867, {	-- Sha of Pride
+							crit(4, {	-- Sha of Pride
+								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
+							}),
+							i(99678),	-- Chest of the Cursed Conqueror
+							i(99679),	-- Chest of the Cursed Protector
+							i(99677),	-- Chest of the Cursed Vanquisher
+							i(104162),	-- Droplet of Y'Shaarj (PET!)
+							i(104163),	-- Gooey Sha-ling (PET!)
+							i(112951),	-- Gaze of Arrogance
+							i(112949),	-- Greatsword of Pride's Fall
+							i(112950),	-- Shield of Mockery
+							i(112702),	-- Crown of Boastful Words
+							i(112952),	-- Self-Reflecting Mask
+							i(112955),	-- Choker of the Final Word
+							i(112954),	-- Necklace of Fading Light
+							i(112953),	-- Greaves of Sublime Superiority
+							i(112947),	-- Assurance of Consequence
+							i(112948),	-- Prismatic Prison of Pride
+						})),
 					}),
 					ach(8459, {	-- Gates of Retribution
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["g"] = {
-							cr(72249, e(881, {	-- Galakras
-								crit(1, {	-- Galakras
-									["achievementID"] = 8459,	-- Gates of Retribution
-								}),
-								i(112723),	-- Drakebinder Greatstaff
-								i(112710),	-- Dagryn's Discarded Longbow
-								i(112717),	-- Flameslinger's Fiery Cowl
-								i(112713),	-- Thranok's Shattering Helm
-								i(112705),	-- Kruguk's Rigid Shoulderplates
-								i(112719),	-- Shoulderpads of Pulsing Protection
-								i(112704),	-- Arcsmasher Bracers
-								i(112712),	-- Dagryn's Fuselight Bracers
-								i(112716),	-- Scalebone Bracers
-								i(112727),	-- Smoldering Drakescale Bracers
-								i(112726),	-- Grips of Tidal Force
-								i(112707),	-- Korgra's Venom-Soaked Gauntlets
-								i(112711),	-- Cannoneer's Multipocket Gunbelt
-								i(112725),	-- Dragonmaw Emergency Strap
-								i(112728),	-- Windfire Legplates
-								i(112715),	-- Bone-Inlaid Sandals
-								i(112718),	-- Skydancer Boots
-								i(112706),	-- Unrepentant Heels
-								i(112721),	-- Extinguished Ember of Galakras
-								i(112714),	-- Galakrond Control Band
-								i(112709),	-- Swift Serpent Signet
-								i(112703),	-- Evil Eye of Galakras
-							})),
-							cr(71466, e(864, {	-- Iron Juggernaut
-								crit(2, {	-- Iron Juggernaut
-									["achievementID"] = 8459,	-- Gates of Retribution
-								}),
-								i(112736),	-- Seismic Bore
-								i(112748),	-- Juggernaut's Power Core
-								i(112742),	-- Juggernaut's Ignition Keys
-								i(112740),	-- Ricocheting Shoulderguards
-								i(112741),	-- Earthbreaker's Steaming Chestplate
-								i(112746),	-- Shock Pulse Robes
-								i(112745),	-- Bracers of the Broken Fault
-								i(112749),	-- Castlebreaker Bracers
-								i(112751),	-- Cavemaker Wristguards
-								i(112739),	-- Laser Burn Bracers
-								i(112733),	-- Wall-Borer Bracers
-								i(112946),	-- Earthripper Gloves
-								i(112734),	-- Precision Cutters
-								i(112732),	-- Tar-Coated Gauntlets
-								i(112743),	-- Belt of Ominous Trembles
-								i(112735),	-- Demolisher's Reinforced Belt
-								i(112744),	-- Leggings of Furious Flame
-								i(112752),	-- Borer Drill Boots
-								i(112731),	-- Minelayer's Padded Boots
-								i(112750),	-- Treads of Autonomic Motion
-								i(112747),	-- Laser-Slice Signet
-								i(112729),	-- Juggernaut's Focusing Crystal
-							})),
-							cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-								crit(3, {	-- Kor'kron Dark Shaman
-									["achievementID"] = 8459,	-- Gates of Retribution
-								}),
-								i(112759),	-- Haromm's Frozen Crescent
-								i(112769),	-- Kardris' Scepter
-								i(112770),	-- Darkfang Mask
-								i(112762),	-- Haromm's Horrifying Helm
-								i(112766),	-- Iron Wolf Hood
-								i(112767),	-- Ashflare Pendant
-								i(112772),	-- Shoulderguards of Foul Streams
-								i(112774),	-- Shoulderplates of Gushing Geysers
-								i(112764),	-- Poisonmist Nightcloak
-								i(112755),	-- Breastplate of Shamanic Mirrors
-								i(112773),	-- Shackles of Stinking Slime
-								i(112763),	-- Ashen Wall Girdle
-								i(112771),	-- Belt of the Iron Prison
-								i(112760),	-- Damron's Belt of Darkness
-								i(112761),	-- Riou's Vigilant Leggings
-								i(112765),	-- Toxic Tornado Treads
-								i(112757),	-- Wolf-Rider Spurs
-								i(112756),	-- Bloodclaw Band
-								i(112758),	-- Ring of the Iron Tomb
-								i(112754),	-- Haromm's Talisman
-								i(112768),	-- Kardris' Toxic Totem
-							})),
-							cr(71515, e(850, {	-- General Nazgrim
-								crit(4, {	-- General Nazgrim
-									["achievementID"] = 8459,	-- Gates of Retribution
-								}),
-								i(99681),	-- Gauntlets of the Cursed Conqueror
-								i(99667),	-- Gauntlets of the Cursed Protector
-								i(99680),	-- Gauntlets of the Cursed Vanquisher
-								i(112785),	-- Gar'tok, Strength of the Faithful
-								i(112787),	-- Arcweaver Spell Sword
-								i(112780),	-- Naz'grim's Gutripper
-								i(112781),	-- Bulwark of the Fallen General
-								i(112789),	-- Crown of Tragic Truth
-								i(112783),	-- Shoulderguards of the Righteous Stand
-								i(112790),	-- Spaulders of Kor'kron Fealty
-								i(112788),	-- Robes of the Warrior's Fall
-								i(112779),	-- Ravager's Pathwalkers
-								i(112782),	-- Sandals of Two Little Bees
-								i(112778),	-- Nazgrim's Burnished Insignia
-							})),
-						},
+						cr(72249, e(881, {	-- Galakras
+							crit(1, {	-- Galakras
+								["achievementID"] = 8459,	-- Gates of Retribution
+							}),
+							i(112723),	-- Drakebinder Greatstaff
+							i(112710),	-- Dagryn's Discarded Longbow
+							i(112717),	-- Flameslinger's Fiery Cowl
+							i(112713),	-- Thranok's Shattering Helm
+							i(112705),	-- Kruguk's Rigid Shoulderplates
+							i(112719),	-- Shoulderpads of Pulsing Protection
+							i(112704),	-- Arcsmasher Bracers
+							i(112712),	-- Dagryn's Fuselight Bracers
+							i(112716),	-- Scalebone Bracers
+							i(112727),	-- Smoldering Drakescale Bracers
+							i(112726),	-- Grips of Tidal Force
+							i(112707),	-- Korgra's Venom-Soaked Gauntlets
+							i(112711),	-- Cannoneer's Multipocket Gunbelt
+							i(112725),	-- Dragonmaw Emergency Strap
+							i(112728),	-- Windfire Legplates
+							i(112715),	-- Bone-Inlaid Sandals
+							i(112718),	-- Skydancer Boots
+							i(112706),	-- Unrepentant Heels
+							i(112721),	-- Extinguished Ember of Galakras
+							i(112714),	-- Galakrond Control Band
+							i(112709),	-- Swift Serpent Signet
+							i(112703),	-- Evil Eye of Galakras
+						})),
+						cr(71466, e(864, {	-- Iron Juggernaut
+							crit(2, {	-- Iron Juggernaut
+								["achievementID"] = 8459,	-- Gates of Retribution
+							}),
+							i(112736),	-- Seismic Bore
+							i(112748),	-- Juggernaut's Power Core
+							i(112742),	-- Juggernaut's Ignition Keys
+							i(112740),	-- Ricocheting Shoulderguards
+							i(112741),	-- Earthbreaker's Steaming Chestplate
+							i(112746),	-- Shock Pulse Robes
+							i(112745),	-- Bracers of the Broken Fault
+							i(112749),	-- Castlebreaker Bracers
+							i(112751),	-- Cavemaker Wristguards
+							i(112739),	-- Laser Burn Bracers
+							i(112733),	-- Wall-Borer Bracers
+							i(112946),	-- Earthripper Gloves
+							i(112734),	-- Precision Cutters
+							i(112732),	-- Tar-Coated Gauntlets
+							i(112743),	-- Belt of Ominous Trembles
+							i(112735),	-- Demolisher's Reinforced Belt
+							i(112744),	-- Leggings of Furious Flame
+							i(112752),	-- Borer Drill Boots
+							i(112731),	-- Minelayer's Padded Boots
+							i(112750),	-- Treads of Autonomic Motion
+							i(112747),	-- Laser-Slice Signet
+							i(112729),	-- Juggernaut's Focusing Crystal
+							i(140783, {	-- Predictive Combat Operations Databank
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+						})),
+						cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
+							crit(3, {	-- Kor'kron Dark Shaman
+								["achievementID"] = 8459,	-- Gates of Retribution
+							}),
+							i(112759),	-- Haromm's Frozen Crescent
+							i(112769),	-- Kardris' Scepter
+							i(112770),	-- Darkfang Mask
+							i(112762),	-- Haromm's Horrifying Helm
+							i(112766),	-- Iron Wolf Hood
+							i(112767),	-- Ashflare Pendant
+							i(112772),	-- Shoulderguards of Foul Streams
+							i(112774),	-- Shoulderplates of Gushing Geysers
+							i(112764),	-- Poisonmist Nightcloak
+							i(112755),	-- Breastplate of Shamanic Mirrors
+							i(112773),	-- Shackles of Stinking Slime
+							i(112763),	-- Ashen Wall Girdle
+							i(112771),	-- Belt of the Iron Prison
+							i(112760),	-- Damron's Belt of Darkness
+							i(112761),	-- Riou's Vigilant Leggings
+							i(112765),	-- Toxic Tornado Treads
+							i(112757),	-- Wolf-Rider Spurs
+							i(112756),	-- Bloodclaw Band
+							i(112758),	-- Ring of the Iron Tomb
+							i(112754),	-- Haromm's Talisman
+							i(112768),	-- Kardris' Toxic Totem
+						})),
+						cr(71515, e(850, {	-- General Nazgrim
+							crit(4, {	-- General Nazgrim
+								["achievementID"] = 8459,	-- Gates of Retribution
+							}),
+							i(99681),	-- Gauntlets of the Cursed Conqueror
+							i(99667),	-- Gauntlets of the Cursed Protector
+							i(99680),	-- Gauntlets of the Cursed Vanquisher
+							i(112785),	-- Gar'tok, Strength of the Faithful
+							i(112787),	-- Arcweaver Spell Sword
+							i(112780),	-- Naz'grim's Gutripper
+							i(112781),	-- Bulwark of the Fallen General
+							i(112789),	-- Crown of Tragic Truth
+							i(112783),	-- Shoulderguards of the Righteous Stand
+							i(112790),	-- Spaulders of Kor'kron Fealty
+							i(112788),	-- Robes of the Warrior's Fall
+							i(112779),	-- Ravager's Pathwalkers
+							i(112782),	-- Sandals of Two Little Bees
+							i(112778),	-- Nazgrim's Burnished Insignia
+						})),
 					}),
 					ach(8461, {	-- The Underhold
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["g"] = {
-							cr(71454, e(846, {	-- Malkorok
-								crit(1, {	-- Malkorok
-									["achievementID"] = 8461,	-- The Underhold
-								}),
-								i(112805),	-- Halberd of Inner Shadows
-								i(112804),	-- Malkorok's Skullcleaver
-								i(112806),	-- Kor'kron Hand Cannon
-								i(112818),	-- Visage of the Monstrous
-								i(112813),	-- Hood of Perpetual Implosion
-								i(112803),	-- Malkorok's Tainted Dog Tags
-								i(112816),	-- Black-Blooded Drape
-								i(112821),	-- Ebon Blood Chestguard
-								i(112794),	-- Lazahk's Lost Shadowrap
-								i(112814),	-- Robes of Riven Dreams
-								i(112823),	-- Terrorguard Chestplate
-								i(112793),	-- Blood Rage Bracers
-								i(112820),	-- Bracers of Averted Fatality
-								i(112797),	-- Wristguards of Ruination
-								i(112808),	-- Miasmic Skullbelt
-								i(112807),	-- Legplates of Willful Doom
-								i(112819),	-- Boots of Perilous Infusion
-								i(112796),	-- Malkorok's Giant Stompers
-								i(112795),	-- Ring of Restless Energy
-								i(112817),	-- Seal of Sullen Fury
-								i(112815),	-- Frenzied Crystal of Rage
-								i(112792),	-- Vial of Living Corruption
-							})),
-							cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-								crit(2, {	-- Spoils of Pandaria
-									["achievementID"] = 8461,	-- The Underhold
-								}),
-								i(112835),	-- Enchanted Shao-Tien Saber
-								i(112841),	-- Immaculately Preserved Wand
-								i(112829),	-- Ancient Mogu Tower Shield
-								i(112832),	-- Helm of the Night Watchman
-								i(112839),	-- Lost Necklace of the Mogu Empress
-								i(112836),	-- Ancient Archer's Chestguard
-								i(112838),	-- Mantid Vizier's Robes
-								i(112837),	-- Avool's Ancestral Bracers
-								i(112845),	-- Bracers of the Pristine Purifier
-								i(112833),	-- Mantid Carapace Augments
-								i(112842),	-- Klaxxi Grips of Rejuvenation
-								i(112831),	-- Arrowflight Girdle
-								i(112844),	-- Chitin-Link Chain Belt
-								i(112846),	-- Plate Belt of the War-Healer
-								i(112834),	-- Untarnishable Greatbelt
-								i(112843),	-- Shado-Pan Reliquary Kilt
-								i(112847),	-- Mogu Mindbender's Greaves
-								i(112826),	-- Ominous Mogu Greatboots
-								i(112827),	-- Pandaren Roofsprinters
-								i(112828),	-- Seal of the Forgotten Kings
-								i(112825),	-- Sigil of Rampage
-							})),
-							cr(71529, e(851, {	-- Thok the Bloodthirsty
-								crit(3, {	-- Thok the Bloodthirsty
-									["achievementID"] = 8461,	-- The Underhold
-								}),
-								i(99672),	-- Helm of the Cursed Conqueror
-								i(99673),	-- Helm of the Cursed Protector
-								i(99671),	-- Helm of the Cursed Vanquisher
-								i(112862),	-- Britomart's Jagged Pike
-								i(112853),	-- Hvitserk's Formidable Shanker
-								i(112861),	-- Festering Primordial Globule
-								i(112851),	-- Gleaming Eye of the Devilsaur
-								i(112866),	-- Akolik's Acid-Soaked Robes
-								i(112856),	-- Icy Blood Chestplate
-								i(112854),	-- Montak's Grips of Scorching Breath
-								i(112855),	-- Devilfang Band
-								i(112852),	-- Signet of the Dinomancers
-								i(112849),	-- Thok's Acid-Grooved Tooth
-								i(112850),	-- Thok's Tail Tip
-							})),
-						},
+						cr(71454, e(846, {	-- Malkorok
+							crit(1, {	-- Malkorok
+								["achievementID"] = 8461,	-- The Underhold
+							}),
+							i(112805),	-- Halberd of Inner Shadows
+							i(112804),	-- Malkorok's Skullcleaver
+							i(112806),	-- Kor'kron Hand Cannon
+							i(112818),	-- Visage of the Monstrous
+							i(112813),	-- Hood of Perpetual Implosion
+							i(112803),	-- Malkorok's Tainted Dog Tags
+							i(112816),	-- Black-Blooded Drape
+							i(112821),	-- Ebon Blood Chestguard
+							i(112794),	-- Lazahk's Lost Shadowrap
+							i(112814),	-- Robes of Riven Dreams
+							i(112823),	-- Terrorguard Chestplate
+							i(112793),	-- Blood Rage Bracers
+							i(112820),	-- Bracers of Averted Fatality
+							i(112797),	-- Wristguards of Ruination
+							i(112808),	-- Miasmic Skullbelt
+							i(112807),	-- Legplates of Willful Doom
+							i(112819),	-- Boots of Perilous Infusion
+							i(112796),	-- Malkorok's Giant Stompers
+							i(112795),	-- Ring of Restless Energy
+							i(112817),	-- Seal of Sullen Fury
+							i(112815),	-- Frenzied Crystal of Rage
+							i(112792),	-- Vial of Living Corruption
+						})),
+						cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
+							crit(2, {	-- Spoils of Pandaria
+								["achievementID"] = 8461,	-- The Underhold
+							}),
+							i(112835),	-- Enchanted Shao-Tien Saber
+							i(112841),	-- Immaculately Preserved Wand
+							i(112829),	-- Ancient Mogu Tower Shield
+							i(112832),	-- Helm of the Night Watchman
+							i(112839),	-- Lost Necklace of the Mogu Empress
+							i(112836),	-- Ancient Archer's Chestguard
+							i(112838),	-- Mantid Vizier's Robes
+							i(112837),	-- Avool's Ancestral Bracers
+							i(112845),	-- Bracers of the Pristine Purifier
+							i(112833),	-- Mantid Carapace Augments
+							i(112842),	-- Klaxxi Grips of Rejuvenation
+							i(112831),	-- Arrowflight Girdle
+							i(112844),	-- Chitin-Link Chain Belt
+							i(112846),	-- Plate Belt of the War-Healer
+							i(112834),	-- Untarnishable Greatbelt
+							i(112843),	-- Shado-Pan Reliquary Kilt
+							i(112847),	-- Mogu Mindbender's Greaves
+							i(112826),	-- Ominous Mogu Greatboots
+							i(112827),	-- Pandaren Roofsprinters
+							i(112828),	-- Seal of the Forgotten Kings
+							i(112825),	-- Sigil of Rampage
+						})),
+						cr(71529, e(851, {	-- Thok the Bloodthirsty
+							crit(3, {	-- Thok the Bloodthirsty
+								["achievementID"] = 8461,	-- The Underhold
+							}),
+							i(99672),	-- Helm of the Cursed Conqueror
+							i(99673),	-- Helm of the Cursed Protector
+							i(99671),	-- Helm of the Cursed Vanquisher
+							i(112862),	-- Britomart's Jagged Pike
+							i(112853),	-- Hvitserk's Formidable Shanker
+							i(112861),	-- Festering Primordial Globule
+							i(112851),	-- Gleaming Eye of the Devilsaur
+							i(112866),	-- Akolik's Acid-Soaked Robes
+							i(112856),	-- Icy Blood Chestplate
+							i(112854),	-- Montak's Grips of Scorching Breath
+							i(112855),	-- Devilfang Band
+							i(112852),	-- Signet of the Dinomancers
+							i(112849),	-- Thok's Acid-Grooved Tooth
+							i(112850),	-- Thok's Tail Tip
+						})),
 					}),
 					ach(8462, {	-- Downfall
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["g"] = {
-							cr(71504, e(865, {	-- Siegecrafter Blackfuse
-								crit(1, {	-- Siegecrafter Blackfuse
-									["achievementID"] = 8462,	-- Downfall
-								}),
-								i(104158),	-- Blackfuse Bombling (PET!)
-								i(99669),	-- Shoulders of the Cursed Conqueror
-								i(99670),	-- Shoulders of the Cursed Protector
-								i(99668),	-- Shoulders of the Cursed Vanquisher
-								i(112892),	-- Lever of the Megantholithic Apparatus
-								i(112897),	-- Siegecrafter's Forge Hammer
-								i(112894),	-- Blackfuse's Blasting Cord
-								i(112896),	-- Bomber's Blackened Wristwatch
-								i(112895),	-- Bracers of Infinite Pipes
-								i(112882),	-- Calixian Bladebreakers
-								i(112898),	-- Fusespark Gloves
-								i(112890),	-- Powder-Stained Totemic Treads
-								i(112883),	-- Asgorathian Blood Seal
-								i(112877),	-- Dysmorphic Samophlange of Discontinuity
-								i(112879),	-- Ticking Ebon Detonator
-							})),
-							cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
-								crit(2, {	-- Paragons of the Klaxxi
-									["achievementID"] = 8462,	-- Downfall
-								}),
-								title(231, {	-- <Name> the Poisoned Mind
-									["collectible"] = false,
-								}),
-								title(232, {	-- <Name> the Bloodseeker
-									["collectible"] = false,
-								}),
-								title(233, {	-- <Name> the Locust
-									["collectible"] = false,
-								}),
-								title(234, {	-- <Name> the Swarmkeeper
-									["collectible"] = false,
-								}),
-								title(235, {	-- <Name> the Prime
-									["collectible"] = false,
-								}),
-								title(236, {	-- <Name> the Manipulator
-									["collectible"] = false,
-								}),
-								title(237, {	-- <Name> the Dissector
-									["collectible"] = false,
-								}),
-								title(238, {	-- <Name> the Lucid
-									["collectible"] = false,
-								}),
-								title(239, {	-- <Name> the Wind-Reaver
-									["collectible"] = false,
-								}),
-								i(104165),	-- Kovok (PET!)
-								i(99675),	-- Leggings of the Cursed Conqueror
-								i(99676),	-- Leggings of the Cursed Protector
-								i(99674),	-- Leggings of the Cursed Vanquisher
-								i(112921),	-- Kil'ruk's Furious Blade
-								i(112920),	-- Korven's Crimson Crescent
-								i(112922),	-- Rik'kal's Bloody Scalpel
-								i(112918),	-- Hisek's Reserve Longbow
-								i(112923),	-- Amber Parasite Wraps
-								i(112919),	-- Chestguard of Toxic Injections
-								i(112914),	-- Bracers of Sonic Projection
-								i(112915),	-- Gauntlets of Insane Calculations
-								i(112916),	-- Iyyokuk's Hereditary Seal
-								i(112917),	-- Kil'ruk's Band of Ascendancy
-								i(112913),	-- Skeer's Bloodsoaked Talisman
-							})),
-							cr(71865, e(869, {	-- Garrosh Hellscream
-								crit(3, {	-- Garrosh Hellscream
-									["achievementID"] = 8462,	-- Downfall
-								}),
-								i(105861, {	-- Essence of the Cursed Conqueror
-									["classes"] = {
-										PALADIN,
-										PRIEST,
-										WARLOCK,
-									},
-								}),
-								i(105860, {	-- Essence of the Cursed Protector
-									["classes"] = {
-										HUNTER,
-										MONK,
-										SHAMAN,
-										WARRIOR,
-									},
-								}),
-								i(105862, {	-- Essence of the Cursed Vanquisher
-									["classes"] = {
-										DEATHKNIGHT,
-										DRUID,
-										MAGE,
-										ROGUE,
-									},
-								}),
-								i(112932),	-- Kor'kron Spire of Supremacy
-								i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
-								i(112939),	-- Horned Mace of the Old Ones
-								i(112940),	-- Revelations of Y'Shaarj
-								i(112943),	-- Cowl of Smoking Dreams
-								i(112937),	-- Ebon Ritual Hood
-								i(112928),	-- Greathelm of the Warchief
-								i(112926),	-- Kor'kron Elite Skullmask
-								i(112930),	-- Penetrating Gaze of Y'Shaarj
-								i(112942),	-- Hopeglow Spaulders
-								i(112945),	-- Mantle of Looming Darkness
-								i(112927),	-- Shoulderguards of Intended Power
-								i(112934),	-- Spaulders of the Fallen Warchief
-								i(112931),	-- Chestguard of Relentless Tyranny
-								i(112944),	-- Chestplate of Fallen Passion
-								i(112936),	-- Belt of the Broken Pact
-								i(112929),	-- Cord of Black Dreams
-								i(112941),	-- Seal of Karmic Return
-								i(112933),	-- Legplates of Unthinking Strife
-								i(112938),	-- Black Blood of Y'Shaarj
-								i(112924),	-- Curse of Hubris
-							})),
-						},
+						cr(71504, e(865, {	-- Siegecrafter Blackfuse
+							crit(1, {	-- Siegecrafter Blackfuse
+								["achievementID"] = 8462,	-- Downfall
+							}),
+							i(104158),	-- Blackfuse Bombling (PET!)
+							i(99669),	-- Shoulders of the Cursed Conqueror
+							i(99670),	-- Shoulders of the Cursed Protector
+							i(99668),	-- Shoulders of the Cursed Vanquisher
+							i(112892),	-- Lever of the Megantholithic Apparatus
+							i(112897),	-- Siegecrafter's Forge Hammer
+							i(112894),	-- Blackfuse's Blasting Cord
+							i(112896),	-- Bomber's Blackened Wristwatch
+							i(112895),	-- Bracers of Infinite Pipes
+							i(112882),	-- Calixian Bladebreakers
+							i(112898),	-- Fusespark Gloves
+							i(112890),	-- Powder-Stained Totemic Treads
+							i(112883),	-- Asgorathian Blood Seal
+							i(112877),	-- Dysmorphic Samophlange of Discontinuity
+							i(112879),	-- Ticking Ebon Detonator
+						})),
+						cr(71161, e(853, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
+							crit(2, {	-- Paragons of the Klaxxi
+								["achievementID"] = 8462,	-- Downfall
+							}),
+							title(231, {	-- <Name> the Poisoned Mind
+								["collectible"] = false,
+							}),
+							title(232, {	-- <Name> the Bloodseeker
+								["collectible"] = false,
+							}),
+							title(233, {	-- <Name> the Locust
+								["collectible"] = false,
+							}),
+							title(234, {	-- <Name> the Swarmkeeper
+								["collectible"] = false,
+							}),
+							title(235, {	-- <Name> the Prime
+								["collectible"] = false,
+							}),
+							title(236, {	-- <Name> the Manipulator
+								["collectible"] = false,
+							}),
+							title(237, {	-- <Name> the Dissector
+								["collectible"] = false,
+							}),
+							title(238, {	-- <Name> the Lucid
+								["collectible"] = false,
+							}),
+							title(239, {	-- <Name> the Wind-Reaver
+								["collectible"] = false,
+							}),
+							i(104165),	-- Kovok (PET!)
+							i(99675),	-- Leggings of the Cursed Conqueror
+							i(99676),	-- Leggings of the Cursed Protector
+							i(99674),	-- Leggings of the Cursed Vanquisher
+							i(112921),	-- Kil'ruk's Furious Blade
+							i(112920),	-- Korven's Crimson Crescent
+							i(112922),	-- Rik'kal's Bloody Scalpel
+							i(112918),	-- Hisek's Reserve Longbow
+							i(112923),	-- Amber Parasite Wraps
+							i(112919),	-- Chestguard of Toxic Injections
+							i(112914),	-- Bracers of Sonic Projection
+							i(112915),	-- Gauntlets of Insane Calculations
+							i(112916),	-- Iyyokuk's Hereditary Seal
+							i(112917),	-- Kil'ruk's Band of Ascendancy
+							i(112913),	-- Skeer's Bloodsoaked Talisman
+						})),
+						cr(71865, e(869, {	-- Garrosh Hellscream
+							crit(3, {	-- Garrosh Hellscream
+								["achievementID"] = 8462,	-- Downfall
+							}),
+							i(105861, {	-- Essence of the Cursed Conqueror
+								["classes"] = {
+									PALADIN,
+									PRIEST,
+									WARLOCK,
+								},
+							}),
+							i(105860, {	-- Essence of the Cursed Protector
+								["classes"] = {
+									HUNTER,
+									MONK,
+									SHAMAN,
+									WARRIOR,
+								},
+							}),
+							i(105862, {	-- Essence of the Cursed Vanquisher
+								["classes"] = {
+									DEATHKNIGHT,
+									DRUID,
+									MAGE,
+									ROGUE,
+								},
+							}),
+							i(112932),	-- Kor'kron Spire of Supremacy
+							i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
+							i(112939),	-- Horned Mace of the Old Ones
+							i(112940),	-- Revelations of Y'Shaarj
+							i(112943),	-- Cowl of Smoking Dreams
+							i(112937),	-- Ebon Ritual Hood
+							i(112928),	-- Greathelm of the Warchief
+							i(112926),	-- Kor'kron Elite Skullmask
+							i(112930),	-- Penetrating Gaze of Y'Shaarj
+							i(112942),	-- Hopeglow Spaulders
+							i(112945),	-- Mantle of Looming Darkness
+							i(112927),	-- Shoulderguards of Intended Power
+							i(112934),	-- Spaulders of the Fallen Warchief
+							i(112931),	-- Chestguard of Relentless Tyranny
+							i(112944),	-- Chestplate of Fallen Passion
+							i(112936),	-- Belt of the Broken Pact
+							i(112929),	-- Cord of Black Dreams
+							i(112941),	-- Seal of Karmic Return
+							i(112933),	-- Legplates of Unthinking Strife
+							i(112938),	-- Black Blood of Y'Shaarj
+							i(112924),	-- Curse of Hubris
+						})),
 					}),
 				},
 			}),
@@ -2459,6 +2445,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {
@@ -2911,6 +2900,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {
@@ -3386,6 +3378,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(112750),	-- Treads of Autonomic Motion
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
+					i(140783, {	-- Predictive Combat Operations Databank
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 					["crs"] = {

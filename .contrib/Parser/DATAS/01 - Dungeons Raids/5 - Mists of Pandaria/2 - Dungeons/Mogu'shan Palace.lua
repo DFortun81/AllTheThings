@@ -124,11 +124,6 @@ _.Instances = { tier(MOP_TIER, {
 							61444,	-- Ming the Cunning
 						},
 						["g"] = {
-							{	-- Polyformic Acid Science: Trial of the King
-								["achievementID"] = 6715,	-- Polyformic Acid Science
-								["criteriaID"] = 4,	-- Trial of the King
-								["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-							},
 							i(144020),	-- Crest of the Clan Lords
 							i(144021),	-- Meteoric Greathelm
 							i(144144),	-- Whirling Dervish Choker

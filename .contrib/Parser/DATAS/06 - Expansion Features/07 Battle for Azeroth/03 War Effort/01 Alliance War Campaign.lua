@@ -62,7 +62,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					ach(13925, {	-- The Fourth War
+					a(ach(13925, {	-- The Fourth War
 					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 						["sourceQuests"] = { 57002 },	-- Old Soldier
 						["g"] = {
@@ -70,7 +70,7 @@ _.ExpansionFeatures =
 							crit(2),	-- Tides of Vengeance
 							title(412),	-- Veteran of the Fourth War
 						},
-					}),
+					})),
 					n(REWARDS, {
 						["description"] = "You'll be offered these rewards at the end of your first foothold.",
 						["modID"] = 25,
@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 51714 },	-- Mission from the King
+							["sourceQuests"] = { 53332 },	-- Time for War (51714 was too far)
 						}),
 						q(51571, {	-- Foothold: Nazmir
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
@@ -1572,9 +1572,6 @@ _.ExpansionFeatures =
 							["coord"] = { 36.0, 64.0, 1535 },	-- Durotar (instanced version)
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 120,
-							["g"] = {
-								title(412),	-- Veteran of the Fourth War
-							},
 						}),
 					}),
 				},

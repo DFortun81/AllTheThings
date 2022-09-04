@@ -9,16 +9,16 @@ root("PVP", pvp(n(-240, {	-- Rated
 		["description"] = "This had a chance to drop from any rated battleground win during Legion, but has not been seen since Legion ended.",
 	},
 	{
-		i(137975, {	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
+		i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 			["requireSkill"] = TAILORING,
 		}),
-		i(123950, {	-- Recipe: Demonsteel Pauldrons (Rank 3)
+		i(123950, {	-- Recipe: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 			["requireSkill"] = BLACKSMITHING,
 		}),
-		i(137894, {	-- Recipe: Dreadleather Shoulderguard (Rank 3)
+		i(137894, {	-- Recipe: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 			["requireSkill"] = LEATHERWORKING,
 		}),
-		i(137926, {	-- Recipe: Gravenscale Spaulders (Rank 3)
+		i(137926, {	-- Recipe: Gravenscale Spaulders [Rank 3] (RECIPE!)
 			["requireSkill"] = LEATHERWORKING,
 		}),
 	})),

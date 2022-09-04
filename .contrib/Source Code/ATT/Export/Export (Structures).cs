@@ -44,9 +44,7 @@ namespace ATT
         {
             if (STRUCTURE_COUNTS.Any())
             {
-                // Cache the content of the string builder up to this point.
-                //var content = builder.ToString();
-                //builder.Clear();
+                const string CategorySplitter = "_.Categories.";
 
                 // Prepare the shortcuts for commonly repeated structures.
                 var order = STRUCTURE_COUNTS.ToList();
@@ -86,7 +84,7 @@ namespace ATT
 
                 // Split the StringBuilder into smaller string builders based on something which is not related to replaceable content
                 List<StringBuilder> splitBuilders = builder.ToString()
-                    .Split(new string[] { "tinsert(" }, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new string[] { CategorySplitter }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(s => new StringBuilder(s))
                     .ToList();
 
@@ -95,7 +93,7 @@ namespace ATT
 
                 // Replace the main string builder with the multiple builder content
                 builder.Clear();
-                builder.Append(string.Join("tinsert(", splitBuilders.Select(sb => sb.ToString())));
+                builder.Append(string.Join(CategorySplitter, splitBuilders.Select(sb => sb.ToString())));
 
                 // At most, export the maximum number of replacements.
                 //foreach (var pair in order)

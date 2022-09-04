@@ -56,21 +56,14 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				crit(4),	-- Rustbolt Armory
 				crit(5),	-- Reclamation Rig
 			}),
-			ach(13623, {	-- Fighting on Two Fronts
-				["collectible"] = false,
-				["g"] = {
-					crit(2),	-- Kill Players in Mechagon
-				},
-			}),
 			ach(13482),	-- Head Financier of Mechagon
 			ach(13555, {	-- Junkyard Tinkmaster
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						13476,	-- Junkyard Tinkerer
 						13482,	-- Head Financier of Mechagon
-					},
-				},
+					}},
 				["g"] = {
 					title(403),	-- Junkyard
 				},
@@ -257,7 +250,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 			ach(13541, {	-- Mecha-Done
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						13553,	-- The Mechagonian Threat (A)
 						13700,	-- The Mechagonian Threat (H)
 						13556,	-- Outside Influences
@@ -268,8 +261,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						13474,	-- Junkyard Machinist
 						13686,	-- Junkyard Melomaniac
 						13790,	-- Armed for Action
-					},
-				},
+					}},
 				["g"] = {
 					i(168329),	-- Mechacycle Model W (MOUNT!)
 				},

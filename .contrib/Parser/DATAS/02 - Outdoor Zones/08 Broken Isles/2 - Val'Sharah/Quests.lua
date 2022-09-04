@@ -738,7 +738,20 @@ _.Zones =
 		}),
 	}),
 };
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(38666),	-- entering the burning house during 38644	(The Farmsteads)
+		q(45490),	-- Lytheron
+		q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
+		q(44079),	-- Druids of the Scythe - 1 (Killing Feral Worgen 112820)
+		q(42575),	-- Shaman Shrine - Valsharah Earth 01
+		q(42576),	-- Shaman Shrine - Valsharah Earth 02
+		q(42581),	-- Shaman Shrine - Valsharah Wind 01
+		q(38994),	-- TRACKING Encounter Botanist - during/after doing the "To Old Friends" (questID 38582)
+		q(38596),	-- TRACKING Nightmare 02 - during/after doing the "To Old Friends" (questID 38582)
+		q(43447),	-- Vignette: Wraithtalon - secondary trigger for Wraithtalon rare in Val'sharah
+	}),
+});
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(LEGION_TIER, {
 		n(-387,	{	-- Relics
@@ -746,16 +759,3 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
-
-_.HiddenQuestTriggers = {
-	m(BROKEN_ISLES, {
-		m(VALSHARAH, {
-			n(QUESTS, {
-				q(38666),	-- entering the burning house during 38644	(The Farmsteads)
-				q(45490),	-- Lytheron
-				q(44881),	-- Sharptalon Matriarch Tracking Q From the WQ Sharptalon
-				q(44079),	-- Druids of the Scythe - 1 (Killing Feral Worgen 112820)
-			}),
-		}),
-	}),
-};

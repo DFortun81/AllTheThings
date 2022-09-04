@@ -581,6 +581,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = {
 					59621,	-- Breaking a Few Eggs
 					59622,	-- Tending to the Tenders
+					57653,	-- Unsafe Workplace
 				},
 				["provider"] = { "o", 336415 },	-- Discarded Scroll
 				["coord"] = { 47.5, 26.2, ARDENWEALD },

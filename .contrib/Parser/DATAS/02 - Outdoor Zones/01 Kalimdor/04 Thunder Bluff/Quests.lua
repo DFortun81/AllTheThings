@@ -37,9 +37,18 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(15466)),	-- Clink Shield
 					},
 				}),
-				q(3762,  {	-- Assisting Arch Druid Runetotem
+				q(936,   {	-- Assisting Arch Druid Runetotem [Orgrimmar]
+					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(3762,  {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 					["provider"] = { "n", 6746 },	-- Innkeeper Pala
 					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
+					["qg"] = 6741,	-- Innkeeper Norman
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1845,  {	-- Brutal Helm
@@ -64,16 +73,6 @@ _.Zones =
 					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26866, {	-- Enemies Below
-					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(31036, {	-- Enemies Below
-					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-				}),
 				q(1136,  {	-- Frostmaw
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
 					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
@@ -94,12 +93,6 @@ _.Zones =
 					["provider"] = { "n", 3050 },    -- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-				}),
-				q(1065,  {	-- Journey to Tarren Mill
-					["sourceQuests"] = { 1064 },	-- Forsaken Aid
-					["provider"] = { "n", 3419 },	-- Apothecary Zamah
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(769,   {	-- Kodo Hide Bag
 					["requireSkill"] = LEATHERWORKING,
@@ -200,9 +193,9 @@ _.Zones =
 				}),
 				q(3761,  {	-- Un'Goro Soil
 					["sourceQuests"] = {
-						936,	-- Assisting Arch Druid Runetotem
-						3762,	-- Assisting Arch Druid Runetotem
-						3784,	-- Assisting Arch Druid Runetotem
+						936,	-- Assisting Arch Druid Runetotem [Orgrimmar]
+						3762,	-- Assisting Arch Druid Runetotem [Undercity]
+						3784,	-- Assisting Arch Druid Runetotem [Undercity]
 					},
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
 					["u"] = REMOVED_FROM_GAME,

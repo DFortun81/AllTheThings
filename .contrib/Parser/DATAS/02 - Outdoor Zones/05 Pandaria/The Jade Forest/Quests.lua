@@ -1378,6 +1378,13 @@ _.Zones =
 						i(82984),	-- Jade Raccoon
 					},
 				}),
+				q(29547, {	-- The King's Command
+					["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					["coord"] = { 85.6, 32.8, STORMWIND_CITY },
+					["timeline"] = { "added 5.0.4" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(29998, {	-- The Librarian's Quandary
 					["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 					["provider"] = { "n", 56782 },	-- Elder Sage Rain-Zhu
@@ -1391,6 +1398,16 @@ _.Zones =
 					["provider"] = { "n", 54615 },	-- Nodd Codejack
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 50.4, 88.2, THE_JADE_FOREST },
+				}),
+				q(29548, {	-- The Mission
+					["qg"] = 55789,	-- Rell Nightwind
+					["sourceQuests"] = {
+						29547,	-- The King's Command
+						49556,	-- Hero's Call: Jade Forest!
+						49866,	-- To Pandaria!
+					},
+					["coord"] = { 78.9, 39.7, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32461, {	-- The Order of the Cloud Serpent
 					["description"] = "Need to loot a Cloud Serpent without going to The Order of the Cloud Serpent.",

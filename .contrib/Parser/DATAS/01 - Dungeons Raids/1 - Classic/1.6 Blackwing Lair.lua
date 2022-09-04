@@ -329,7 +329,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 			e(1536,  {	-- Nefarian
 				["creatureID"] = 11583,	-- Nefarian
 				["groups"] = {
-					removeclassicphase(ach(685, {	-- Blackwing Lair
+					classicAch(685, {	-- Blackwing Lair
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							7781,	-- The Lord of Blackrock
@@ -338,7 +338,7 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,
 					}),

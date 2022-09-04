@@ -666,7 +666,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(189372, {	-- Terror Jelly
 						["cost"] = {
-							{ "i", GENESIS, 300 },
+							{ "i", GENESIS, 400 },
 							{ "i", AURELID_LATTICE, 1},
 							{ "i", 189165, 1 },	-- 1x Glimmer of Predation
 						},
@@ -801,7 +801,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					}),
 					i(188809, {	-- Prototype Leaper (MOUNT!)
 						["cost"] = {
-							{ "i", GENESIS, 250 },
+							{ "i", GENESIS, 350 },
 							{ "i", BUFONID_LATTICE, 1},
 							{ "i", 189178, 1 },	-- 1x Tools of Incomprehensible Experimentation
 						},

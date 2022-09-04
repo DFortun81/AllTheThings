@@ -129,10 +129,6 @@ _.Instances = { tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(81073)),	-- Stonestep Boots (7.1 - Removed from Game!)
 					})),
 					cr(56732, e(658, {	-- Liu Flameheart
-						crit(2, {	-- Liu Flameheart
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						}),
 						i(144090),	-- Firebelcher Hand Cannon
 						i(143971),	-- Serpentstrike Shoulderpads
 						i(144094),	-- Cape of Entaglement

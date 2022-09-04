@@ -213,7 +213,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 						i(185804),	-- Harmonious Spaulders
 						i(185806),	-- Improvisational Cinch
 						i(185789),	-- Sabatons of Measured Time
-						i(187256, {	-- Hips' Spare Fedora
+						ig(187256, {	-- Hips' Spare Fedora
 							["customCollect"] = "SL_COV_VEN",
 						}),
 					},
@@ -388,7 +388,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.1.0" } },
 							i(185804),	-- Harmonious Spaulders
 							i(185806),	-- Improvisational Cinch
 							i(185789),	-- Sabatons of Measured Time
-							i(187256, {	-- Hips' Spare Fedora
+							ig(187256, {	-- Hips' Spare Fedora
 								["customCollect"] = "SL_COV_VEN",
 							}),
 						},

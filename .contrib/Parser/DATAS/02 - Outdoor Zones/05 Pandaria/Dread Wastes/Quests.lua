@@ -941,7 +941,7 @@ _.Zones =
 					["coord"] = { 55.1, 35.5, DREAD_WASTES },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["minReputation"] = { 1337, EXALTED },
-					["description"] = "Must also have have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
+					["description"] = "Must also have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
 				}),
 				q(31270, {	-- The Fight Against Fear
 					["coord"] = { 54.3, 36.0, DREAD_WASTES },

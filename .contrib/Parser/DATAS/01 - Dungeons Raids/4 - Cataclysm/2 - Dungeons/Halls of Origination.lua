@@ -34,27 +34,9 @@ _.Instances = { tier(CATA_TIER, {
 			}),
 			d(1, {	-- Normal
 				n(ZONE_DROPS, {
-					i(56109, {    -- Book of Origination
-						["crs"] = {
-							39803,	-- Air Warden
-							40310,	-- Blistering Scarab
-							40787,	-- Dustbone Horror
-							40311,	-- Dustbone Tormentor
-							39801,	-- Earth Warden
-							39800,	-- Flame Warden
-							40033,	-- Flux Animator
-							40715,	-- Lifewarden Nymph
-							40170,	-- Spatial Anomaly
-							39373,	-- Sun-Touched Speaker
-							39370,	-- Sun-Touched Spriteling
-							48143,	-- Temple Fireshaper
-							48140,	-- Temple Runecaster
-							48141,	-- Temple Shadowlancer
-							48139,	-- Temple Swiftstalker
-							39440,	-- Venomous Skitterer
-							39802,	-- Water Warden
-						},
-					}),
+					i(56109),	-- Book of Origination
+					i(56110),	-- Charm of the Muse
+					i(56111),	-- Temple Band
 				}),
 				cr(39425, e(124, {	-- Temple Guardian Anhuur
 					i(56411),	-- Darkhowl Amulet
@@ -161,28 +143,10 @@ _.Instances = { tier(CATA_TIER, {
 						ach(5296),	-- Faster Than the Speed of Light
 					}),
 					n(ZONE_DROPS, {
-						i(56109, {    -- Book of Origination
-							["crs"] = {
-								39803,	-- Air Warden
-								40310,	-- Blistering Scarab
-								40787,	-- Dustbone Horror
-								40311,	-- Dustbone Tormentor
-								39801,	-- Earth Warden
-								39800,	-- Flame Warden
-								40033,	-- Flux Animator
-								40715,	-- Lifewarden Nymph
-								40170,	-- Spatial Anomaly
-								39373,	-- Sun-Touched Speaker
-								39370,	-- Sun-Touched Spriteling
-								48143,	-- Temple Fireshaper
-								48140,	-- Temple Runecaster
-								48141,	-- Temple Shadowlancer
-								48139,	-- Temple Swiftstalker
-								39440,	-- Venomous Skitterer
-								39802,	-- Water Warden
-							},
-						}),
+						i(56109),	-- Book of Origination
 						un(REMOVED_FROM_GAME, i(56438)),	-- Book of Origination
+						i(56110),	-- Charm of the Muse
+						i(56111),	-- Temple Band
 					}),
 					cr(39425, e(124, {	-- Temple Guardian Anhuur
 						ach(5293),	-- I Hate That Song

@@ -328,3 +328,43 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- Suramar - Withered Training
+		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
+		q(43051),	-- 7.0 Suramar Collapse Scenario - Door 01
+		q(43052),	-- 7.0 Suramar Collapse Scenario - Door 02
+		q(43053),	-- 7.0 Suramar Collapse Scenario - Door 03
+		q(44491),	-- 7.0 Suramar Collapse Scenario - Run Once
+		q(43070),	-- 7.0 Suramar Collapse Scenario - Treasure 01 - Army Size Increase 01
+		q(43140),	-- 7.0 Suramar Collapse Scenario - Treasure 02 - Army Size Increase 02: no withered army increase anymore, but did contain Traveler's Banking Chest (itemID 140778) (5 withered, objectID 43140)
+		q(43141),	-- 7.0 Suramar Collapse Scenario - Treasure 03 - Army Size Increase 03
+		q(43142),	-- 7.0 Suramar Collapse Scenario - Treasure 04 - Army Size Increase 04: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 43142)
+		q(43143),	-- 7.0 Suramar Collapse Scenario - Treasure 05 - Army Size Increase 05: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 251746)
+		q(43144),	-- 7.0 Suramar Collapse Scenario - Treasure 06 - Army Size Increase 06: used to be from an increase to max withered army size, but no longer in game. Also dropped the Ancient Mana Basin toy (5 withered, objectID 251747)
+		q(43120),	-- 7.0 Suramar Collapse Scenario - Treasure 07 - Focus Attacks 01
+		q(43149),	-- 7.0 Suramar Collapse Scenario - Treasure 08 - Focus Attacks 02: obtained Petrified Silkweave upgrade from a small chest (5 withered, objectID 251749)
+		q(43150),	-- 7.0 Suramar Collapse Scenario - Treasure 09 - Focus Attacks 03
+		q(43111),	-- 7.0 Suramar Collapse Scenario - Treasure 10 - Reduce Runaways 01: obtained Soothing Leystone Shard from a small chest (5 withered, objectID 251751)
+		q(43147),	-- 7.0 Suramar Collapse Scenario - Treasure 11 - Reduce Runaways 02
+		q(43148),	-- 7.0 Suramar Collapse Scenario - Treasure 12 - Reduce Runaways 03: obtained Lens of Qin'dera from a small chest (5 withered, objectID 251753)
+		q(43071),	-- 7.0 Suramar Collapse Scenario - Treasure 13 - Withered Berserker Unlock 01: obtained first Berserking Helm of Ondry'el from a big chest (10 withered, objectID 251754)
+		q(43145),	-- 7.0 Suramar Collapse Scenario - Treasure 14 - Withered Berserker Unlock 02
+		q(43128),	-- 7.0 Suramar Collapse Scenario - Treasure 15 - Withered Mana-Rager Unlock 01: obtained Spellmask of Alla'onus (10 withered, objectID 251756)
+		q(43146),	-- 7.0 Suramar Collapse Scenario - Treasure 16 - Withered Mana-Rager Unlock 02: obtained Spellmask okf Azsylla from a large chest (10 withered, objectID 251757)
+		q(43134),	-- 7.0 Suramar Collapse Scenario - Treasure 17 - Withered Spellseer Unlock 01: obtained Lenses of Spellseer Dellian (10 withered, objectID 251758)
+		q(43135),	-- 7.0 Suramar Collapse Scenario - Treasure 18 - Withered Lodestar Unlock 01: obtained Disc of the Starcaller (10 withered, objectID 251759)
+		q(45478),	-- Suramar - WQ rare: Achronos
+		q(45504),	-- Suramar - WQ rare: Alteria
+		q(45475),	-- Suramar - WQ rare: Auditor Esiel
+		q(45471),	-- Suramar - WQ rare: Az'jatar
+		q(45503),	-- Suramar - WQ rare: Colerian
+		q(39533),	-- Suramar - WQ rare: Durguth - attached WQ to rare so his special drop shows in /attwq
+		q(45476),	-- Suramar - WQ rare: Magistrix Vilessa
+		q(45506),	-- Suramar - WQ rare: Oglok the Furious
+		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
+		q(45502),	-- Suramar - WQ rare: Selenyi
+		q(45477),	-- Suramar - WQ rare: Sorallus
+		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
+	}),
+});

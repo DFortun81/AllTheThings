@@ -18,13 +18,11 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["lvl"] = lvlsquish(10, 1, 10),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(858, {	-- Explore Ghostlands
+				explorationAch(858, {	-- Explore Ghostlands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Ghostlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4908, {	-- Ghostlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,

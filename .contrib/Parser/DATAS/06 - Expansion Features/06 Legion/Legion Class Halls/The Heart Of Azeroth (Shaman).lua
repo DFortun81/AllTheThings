@@ -195,11 +195,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Start Legion Zone
 					q(41510, {	-- Azeroth Needs You
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							40276,	-- The Maelstrom Beckons
-							--#else
+							-- #ELSE
 							40225,	-- A Ring Reforged
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 						["coord"] = { 29.0, 69.1, THE_HEART_Of_AZEROTH },
@@ -311,9 +311,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(774),	-- Shield of the Sea Queen
 							artifact(303),	-- Doomhammer
 							-- artifact(303),	-- Fury of the Stonemother
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(41742, {	-- Champion: Celestos
@@ -474,7 +471,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["maps"] = { 731 },	-- Neltharion's Lair
 					}),
 					q(41772, {	-- Ascendant of Flames
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42208,	-- Return to the Firelands
 							42990,	-- Neltharion's Lair: The Earthen Amulet
 						},
@@ -527,32 +524,31 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							-- artifact(775),	-- Shield of the Sea Queen
 							artifact(298),	-- Doomhammer
 							-- artifact(298),	-- Fury of the Stonemother
-							ach(10746),	-- Forged for Battle
 						},
 					}),
-					-- Interlude (Shaman only missing both these quests?!)
-					--q(, {	-- An Urgent Warning
-						--["sourceQuest"] = 43418,	-- A Hero's Weapon
-						--["provider"] = { "n",  },	-- Injured
-						--["coord"] = { , , },
-						--["isBreadcrumb"] = true,
-						--["timeline"] = { "added 7.1.5", "removed 7.2.0" },
-					--}),
-					--q(, {	-- Investigate the Broken Shore
-						--["sourceQuest"] = ,	-- An Urgent Warning
-						--["provider"] = { "n",  },	--
-						--["coord"] = { , , },
-						--["timeline"] = { "added 7.1.5", "removed 7.2.0" },
-					--}),
+					-- Interlude
+					q(45995, {	-- An Urgent Warning
+						["sourceQuest"] = 43418,	-- A Hero's Weapon
+						["provider"] = { "n", 118427 },	-- Injured Earthcaller
+						["coord"] = { 31.0, 51.2, THE_HEART_Of_AZEROTH },
+						["isBreadcrumb"] = true,
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+					}),
+					q(45996, {	-- Investigate the Broken Shore
+						["sourceQuest"] = 45995,	-- An Urgent Warning
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["timeline"] = { "added 7.1.5", "removed 7.2.0" },
+					}),
 					--
 					q(45652, {	-- A "Humble" Request
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43418,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							--,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
@@ -786,7 +782,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							i(136934),	-- Raging Elemental Stone (TOY!)
 							i(136935),	-- Tadpole Cloudseeder (TOY!)
 							i(136938, {	-- Tome of Hex: Compy
-								["spellID"] = 210873,	-- Hex(Compy)
 								["f"] = RECIPES,
 							}),
 							i(136937),	-- Vol'jin's Serpent Totem (TOY!)
@@ -798,38 +793,20 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
-	q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
-	q(41328),	-- Shaman Order Hall - Enhancement Chosen First
-	q(41329),	-- Shaman Order Hall - Elemental Chosen First
-	q(41330),	-- Shaman Order Hall - Restoration Chosen First
-	q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
-	q(42999),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 3 Mission Completed
-	q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
-	q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
-	q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
-	q(43947),	-- Shaman Order Hall - Elemental Chosen
-	q(43948),	-- Shaman Order Hall - Restoration Chosen Third
-	q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
-	q(44397),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 2
-	q(44398),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 3
-	q(44399),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 4
-	q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
-	q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
-	q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
-	q(44150),	-- Looted enhancement shaman hidden appearance
-	q(43674),	-- Using enhancement shaman hidden appearance item
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43824),	-- Hidden History
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(41116),	-- 7.0 Artifacts - Shaman - Puzzle Room - Treasure - DGK - looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
+		q(44653),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
+		q(44654),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+		q(38275),	-- Tracking Quest: Return to Firelands 1 Mission Completed - completed the "Return to the Firelands" mission
+		q(42998),	-- Tracking Quest: Return to Firelands 2 Mission Completed - completed the "Janai's Famous Flaming Omelettes" mission
+		q(42999),	-- Tracking Quest: Return to Firelands 3 Mission Completed - completed the "Troubling Tremors" mission
+		q(43000),	-- Tracking Quest: Return to Firelands 4 Mission Completed - completed the "Twilight's Return" mission
+		q(43001),	-- Tracking Quest: Return to Firelands 5 Mission Completed - completed the "Trial of the Firelord" mission
+		q(44396),	-- Tracking Quest: Thunderaan's Enemies 1 - commpleted the "Thunderaan's Enemies: Mistius" mission
+		q(44397),	-- Tracking Quest: Thunderaan's Enemies 2 - commpleted the "Thunderaan's Enemies: Zeph" mission
+		q(44398),	-- Tracking Quest: Thunderaan's Enemies 3 - commpleted the "Thunderaan's Enemies: Alacris" mission
+		q(44399),	-- Tracking Quest: Thunderaan's Enemies 4 - commpleted the "Thunderaan's Enemies: Tulmos" mission
+		q(44499),	-- Snowfang Tracking Quest - triggeres after defeating Snowfang battle pet
 	}),
-}));
--- #endif
+});

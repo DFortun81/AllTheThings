@@ -29,6 +29,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FIVE, {
 					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
 					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
 					["maps"] = { DRAGONBLIGHT },
+					["isBreadcrumb"] = true,
 				}),
 			}),
 			n(39751, {	-- Baltharus the Warborn

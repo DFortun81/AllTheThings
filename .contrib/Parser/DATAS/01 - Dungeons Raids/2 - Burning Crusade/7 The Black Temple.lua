@@ -23,14 +23,14 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 30, 68),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(958, {	-- Sworn to the Deathsworn
+				classicAch(958, {	-- Sworn to the Deathsworn
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1012); end]],
 					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
 					-- #endif
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1012),	-- Ashtongue Deathsworn
@@ -43,13 +43,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["timeline"] = { "removed 3.0.1" },
 					["lvl"] = lvlsquish(70, 30, 70),
 					["groups"] = {
-						removeclassicphase(ach(431, {	-- Hand of A'dal (Achievement)
+						classicAch(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
 							-- #if BEFORE 3.0.1
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 3.0.1" },
-						})),
+						}),
 						title(39, {	-- Hand of A'dal
 							["timeline"] = { "removed 3.0.1" },
 						}),
@@ -439,13 +439,13 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1590, {	-- Illidan Stormrage
 						["creatureID"] = 22917,
 						["groups"] = {
-							removeclassicphase(ach(697, {	-- The Black Temple
+							classicAch(697, {	-- The Black Temple
 								-- #if BEFORE 3.0.1
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, removeclassicphase(ach(426, {	-- Warglaives of Azzinoth
+							}),
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, classicAch(426, {	-- Warglaives of Azzinoth
 								["providers"] = {
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
@@ -466,7 +466,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",
 								-- #endif
-							}))),
+							})),
 							i(122196, {	-- Music Roll: The Burning Legion
 								["timeline"] = { "added 6.1.0.19445" },
 							}),

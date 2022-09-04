@@ -15,12 +15,20 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				i(138992, {	-- Grand Marshal's Medal of Valor
-					["questID"] = 42978,	-- A Royal Audience
+					["timeline"] = { "removed 8.0.1.10000" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(42985, {	-- A Royal Audience [Alliance]
+					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
+					["description"]	= "You get this quest when you reach Prestige Rank 2.",
+					["timeline"] = { "removed 8.0.1.10000" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42982, {	-- The Victor's Spoils [Alliance]
-					["sourceQuests"] = { 42978 },	-- A Royal Audience [Alliance]
-					["provider"] = { "n", 109466 },	-- Anduin Wrynn <King of Stormwind>
+					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
+					["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
+					["timeline"] = { "removed 8.0.1.10000" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(10749, {	-- Fighting with Style: War-torn (Alliance)
@@ -47,15 +55,22 @@ root("PVP", pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prest
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(138996, {	-- High Warlord's Medal of Valor
-					["questID"] = 42985,	-- A Royal Audience [Horde]
+					["timeline"] = { "removed 8.0.1.10000" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(42987, {	-- The Victor's Spoils
-					["sourceQuests"] = { 42985 },	-- A Royal Audience
-					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
+				q(42985, {	-- A Royal Audience [Horde]
+					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
+					["description"]	= "You get this quest when you reach Prestige Rank 2.",
 					["timeline"] = { "removed 8.0.1.10000" },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+				}),
+				q(42987, {	-- The Victor's Spoils [Horde]
+					["qg"] = 109471,	-- Lady Sylvanas Windrunner
+					["sourceQuest"] = 42985,	-- A Royal Audience
+					["coord"] = { 57.8, 91.6, UNDERCITY },
+					["timeline"] = { "removed 8.0.1.10000" },
+					["races"] = HORDE_ONLY,
 				}),
 			},
 		}),

@@ -4,14 +4,14 @@
 root("Promotions", {
 	n(-546, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Recruit A Friend
 		ach(1436, {	-- Friends In High Places
-			["timeline"] = { "added 2.4.3.8601" },
+			["timeline"] = { "added 3.0.1" },
 		}),
 		i(37719, {	-- Swift Zhevra (MOUNT!)
 			["timeline"] = { "added 2.4.3.8601" },
 		}),
 
 		ach(4832, {	-- Friends In Even Higher Places
-			["timeline"] = { "added 3.3.3.11723" },
+			["timeline"] = { "added 4.0.0" },
 		}),
 		i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723" },

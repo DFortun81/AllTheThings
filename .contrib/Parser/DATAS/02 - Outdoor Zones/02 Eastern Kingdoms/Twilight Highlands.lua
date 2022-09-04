@@ -4,8 +4,9 @@
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(TWILIGHT_HIGHLANDS, {
 		["lore"] = "Twilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!",
+		["timeline"] = { "added 4.0.3" },
 		-- #if AFTER WRATH
-		["achievementID"] = 4866,
+		["icon"] = "Interface\\Icons\\achievement_zone_twilighthighlands",
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -22,8 +23,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				})),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuests"] = { 27380 },	-- Nightmare
+					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(1, {	-- High Shaman MacKilligan slain
@@ -55,7 +58,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				explorationAch(4866, {	-- Explore Twilight Highlands
+					["timeline"] = { "added 4.0.3" },
+					-- #if BEFORE WRATH
+					["description"] = "Explore Twilight Highlands, revealing the covered areas of the world map.",
+					-- #endif
+				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Good News, For Once
@@ -93,6 +103,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
+					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Goblin Work Ethic
@@ -122,17 +133,21 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				ach(5320, {	-- King of the Mountain (Alliance)
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27787 },	-- Skullcrusher the Mountain (Alliance)
+					["timeline"] = { "added 4.0.3" },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5321, {	-- King of the Mountain (Horde)
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27788 },	-- Skullcrusher the Mountain (Horde)
+					["timeline"] = { "added 4.0.3" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuests"] = { 27868 },	-- The Crucible of Carnage: The Twilight Terror!
+					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(4958, {	-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+					["timeline"] = { "added 4.0.3" },
 					["collectible"] = false,	-- not all criteria are available in this zone, so the header shouldn't be collectible here.
 					["groups"] = {
 						crit(3, {	-- Crucible of Carnage in Twilight Highlands
@@ -141,6 +156,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
+					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Warlord Halthar slain
@@ -165,6 +181,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },
@@ -217,47 +234,59 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["crs"] = { 62904 },
 				}),
 			})),
+			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
+					["cr"] = 47156,	-- Bramok Gorewing <Wind Rider Master>
 					["coord"] = { 54.0, 42.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(656, {	-- Crushblow, Twilight Highlands
+					["cr"] = 47116,	-- Tokrog <Wind Rider Master>
 					["coord"] = { 45.6, 76.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(661, {	-- Dragonmaw Port, Twilight Highlands
+					["cr"] = 47174,	-- Gorthul <Dragonmaw Flight Master>
 					["coord"] = { 73.8, 52.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(664, {	-- Firebeard's Patrol, Twilight Highlands
+					["cr"] = 47147,	-- Farstad Stonegrip <Gryphon Master>
 					["coord"] = { 60.4, 57.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(662, {	-- Highbank, Twilight Highlands
+					["cr"] = 47119,	-- Glenn Arbuckle <Gryphon Master>
 					["coord"] = { 81.6, 77.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(666, {	-- Kirthaven, Twilight Highlands
+					["cr"] = 47155,	-- Shaina Talonheart <Gryphon Master>
 					["coord"] = { 56.6, 15.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(657, {	-- The Gullet, Twilight Highlands
+					["cr"] = 47133,	-- San'shigo <Wind Rider Master>
 					["coord"] = { 36.8, 38.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(660, {	-- The Krazzworks, Twilight Highlands
+					["cr"] = 47061,	-- Harpo Boltknuckle <Flight Master>
 					["coord"] = { 75.4, 18.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(665, {	-- Thundermar, Twilight Highlands
+					["cr"] = 47154,	-- Doran Talonheart <Gryphon Master>
 					["coord"] = { 48.4, 28.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(658, {	-- Vermillion Redoubt, Twilight Highlands
+					["cr"] = 47121,	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 					["coord"] = { 28.4, 24.8, TWILIGHT_HIGHLANDS },
 				}),
 				fp(663, {	-- Victor's Point, Twilight Highlands
+					["cr"] = 47118,	-- Desmond Chadsworth <Gryphon Master>
 					["coord"] = { 43.8, 57.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -274,7 +303,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["model"] = 219405,
 						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
-								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
 							}),
@@ -284,7 +312,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						["model"] = 219405,
 						["groups"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
-								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
 								["f"] = RECIPES,
 							}),
@@ -1979,9 +2006,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 48046 },	-- Ella Forgehammer
 				}),
-				q(28236, {	-- The Lost Brother
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(27812, {	-- The Loyalty of Clan Mullan
 					["sourceQuests"] = {
 						27810,	-- The Fighting Spirit
@@ -2203,10 +2227,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 46804 },	-- Keegan Firebeard
 				}),
 				q(28596, {	-- Welcome to Highbank!
-					["sourceQuests"] = { 28832 },	-- Twilight Shores
+					["provider"] = { "n", 49022 },	-- Lieutenant Fawkes
+					["sourceQuest"] = 28832,	-- Twilight Shores (2/2)
 					["coord"] = { 80.9, 79.4, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 49022 },	-- Lieutenant Fawkes
 				}),
 				q(27641, {	-- While Meeting The Family
 					["sourceQuests"] = { 27640 },	-- Dunwalds Don't Die

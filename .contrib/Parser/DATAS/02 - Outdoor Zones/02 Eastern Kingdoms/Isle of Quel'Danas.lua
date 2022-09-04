@@ -1317,6 +1317,13 @@ local SORYN_GROUPS = {
 	}),
 	-- #endif
 };
+-- #if AFTER CATA
+local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
+-- #elseif AFTER WRATH
+local EPIC_GEM_COSTS = { { "c", 42, 15 } };	-- 15x Badge of Justice
+-- #else
+local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
+-- #endif
 root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 	m(ISLE_OF_QUELDANAS, bubbleDownSelf({ ["timeline"] = { "added 2.4.0" } }, {
 		["lore"] = "The Isle of Quel'Danas is an island located north of Eversong Woods. It is most commonly reached by the direct portal from Shattrath City. It is the major daily quest hub for the Shattered Sun Offensive, a group of Aldor and Scryers working together to reclaim the island from Kael'thas, who reactivated the Sunwell.",
@@ -1325,21 +1332,19 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(868, {	-- Explore Isle of Quel'Danas
+				explorationAch(868, {	-- Explore Isle of Quel'Danas
 					-- #if BEFORE WRATH
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
-				removeclassicphase(ach(897, {	-- You're So Offensive
+				}),
+				classicAch(897, {	-- You're So Offensive
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1077); end]],
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
 					-- #endif
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1077, {	-- Shattered Sun Offensive
@@ -1813,7 +1818,6 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					},
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11496, {	-- The Sanctum Wards (Removed completion of Phase 1)
-					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
@@ -2012,45 +2016,24 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						-- #endif
 
 						-- #if BEFORE 6.0.1
-						-- #if AFTER CATA
 						i(32227, {	-- Crimson Spinel
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32228, {	-- Empyrean Sapphire
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32229, {	-- Lionseye
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32231, {	-- Pyrestone
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32249, {	-- Seaspray Emerald
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
 						i(32230, {	-- Shadowsong Amethyst
-							["cost"] = { { "c", 395, 78 } },	-- 78x Justice Points
+							["cost"] = EPIC_GEM_COSTS,
 						}),
-						-- #else
-						i(32227, {	-- Crimson Spinel
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32228, {	-- Empyrean Sapphire
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32229, {	-- Lionseye
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32231, {	-- Pyrestone
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32249, {	-- Seaspray Emerald
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						i(32230, {	-- Shadowsong Amethyst
-							["cost"] = { { "i", 29434, 15 } },	-- 15x Badge of Justice
-						}),
-						-- #endif
 						-- #endif
 					},
 				})),

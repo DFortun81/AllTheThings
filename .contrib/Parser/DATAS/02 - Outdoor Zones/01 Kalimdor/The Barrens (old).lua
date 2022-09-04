@@ -61,11 +61,6 @@ _.Zones = {
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
 					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 				}),
-				q(1180,  {	-- Goblin Sponsorship
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3391 },	-- Gazlowe
-					["sourceQuest"] = 1178,	-- Goblin Sponsorship
-				}),
 				q(882,   {	-- Ishamuhale
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
@@ -162,6 +157,14 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 4141 },	-- Control Panel
 					["sourceQuest"] = 900,	-- Samophlange
+				}),
+				q(1798, {	-- Seeking Strahad (Stormwind)
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["coord"] = { 39.6, 84.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1068,  {	-- Shredding Machines
 					["u"] = REMOVED_FROM_GAME,

@@ -8,117 +8,6 @@ _.Zones =
 		m(VALSHARAH, {
 			n(PROFESSIONS,  {
 				prof(FISHING, {
-					ach(10596, {	-- Bigger Fish to Fry
-						["collectible"] = false,
-						["g"] = {
-							n(-218, {		-- Coastal
-								i(133722, {		-- Axefish Lure
-									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
-										i(133740, {	-- Axefish
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish
-										}),
-										i(139667, {	-- Axefish
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 4,			-- Axefish
-										}),
-									},
-								}),
-								i(133724, {		-- Decayed Whale Blubber
-									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
-										i(133795),	-- Ravenous Fly
-									}
-								}),
-								i(133721, {		-- Message in a Bottle
-									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
-										i(133722)		-- Axefish Lure
-									},
-								}),
-								i(133795, {		-- Ravenous Fly
-									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
-										i(133742, {	-- Ancient Black Barracuda
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda
-										}),
-										i(139669, {	-- Ancient Black Barracuda
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 1,			-- Ancient Black Barracuda
-										}),
-									},
-								}),
-								i(133723, {		-- Stunned, Angry Shark
-									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
-										n(102359, {		-- Landlocked Shark
-											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
-												i(133741, {	-- Seabottom Squid
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid
-												}),
-												i(139668, {	-- Seabottom Squid
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 13,		-- Seabottom Squid
-												}),
-											},
-										})
-									},
-								}),
-							}),
-							i(133708, {		-- Drowned Thistleleaf
-								["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-								["groups"] = {
-									spell(202067, {		-- Blessing of the Thistleleaf
-										i(133729, {	-- Thorned Flounder
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 18,		-- Thorned Flounder
-										}),
-										i(139656, {	-- Thorned Flounder
-											["achievementID"] = 10596,	-- Bigger Fish to Fry
-											["criteriaID"] = 18,		-- Thorned Flounder
-										}),
-									}),
-								},
-							}),
-							i(133707, {		-- Nightmare Nightcrawler
-								["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-								["groups"] = {
-									i(133728, {	-- Terrorfin
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 17,		-- Terrorfin
-									}),
-									i(139655, {	-- Terrorfin
-										["achievementID"] = 10596,	-- Bigger Fish to Fry
-										["criteriaID"] = 17,		-- Terrorfin
-									}),
-								},
-							}),
-							i(133705, {		-- Rotten Fishbone
-								["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-								["groups"] = {
-									n(102349, {		-- Lorlathil Druid
-										["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-										["groups"] = {
-											spell(201809, {		-- The Cat's Meow (Spell)
-												i(133730, {	-- Ancient Mossgill
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 3,		-- Ancient Mossgill
-												}),
-												i(139657, {	-- Ancient Mossgill
-													["achievementID"] = 10596,	-- Bigger Fish to Fry
-													["criteriaID"] = 3,		-- Ancient Mossgill
-												}),
-											}),
-										},
-									}),
-								},
-							}),
-						},
-					}),
 					faction(2098, {	-- Keeper Raynae
 						["creatureID"] = 120456,
 						["coord"] = { 53.4, 72.8, VALSHARAH },
@@ -136,54 +25,15 @@ _.Zones =
 							}),
 							i(133705, {		-- Rotten Fishbone
 								["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
-								-- ["description"] = "This item that will attract a Lorlathil Druid that casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-								-- ["groups"] = {
-									-- n(102349, {		-- Lorlathil Druid
-										-- ["description"] = "Casts The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
-										-- ["groups"] = {
-											-- spell(201809, {		-- The Cat's Meow (Spell)
-												-- i(133730, {	-- Ancient Mossgill
-													-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-													-- ["criteriaID"] = 3,		-- Ancient Mossgill
-												-- }),
-												-- i(139657, {	-- Ancient Mossgill
-													-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-													-- ["criteriaID"] = 3,		-- Ancient Mossgill
-												-- }),
-											-- }),
-										-- },
-									-- }),
-								-- },
+								["sym"] = {{"fill"}},
 							}),
 							i(133707, {		-- Nightmare Nightcrawler
 								["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
-								-- ["description"] = "This item will allow you to catch the Rare fish Terrorfin in Val'sharah.",
-								-- ["groups"] = {
-									-- i(133728, {	-- Terrorfin
-										-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-										-- ["criteriaID"] = 17,		-- Terrorfin
-									-- }),
-									-- i(139655, {	-- Terrorfin
-										-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-										-- ["criteriaID"] = 17,		-- Terrorfin
-									-- }),
-								-- },
+								["sym"] = {{"fill"}},
 							}),
 							i(133708, {		-- Drowned Thistleleaf
 								["cost"] = { { "i", 146959, 25 }, },	-- 25x Corrupted Globule
-								-- ["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
-								-- ["groups"] = {
-									-- spell(202067, {		-- Blessing of the Thistleleaf
-										-- i(133729, {	-- Thorned Flounder
-											-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-											-- ["criteriaID"] = 18,		-- Thorned Flounder
-										-- }),
-										-- i(139656, {	-- Thorned Flounder
-											-- ["achievementID"] = 10596,	-- Bigger Fish to Fry
-											-- ["criteriaID"] = 18,		-- Thorned Flounder
-										-- }),
-									-- }),
-								-- },
+								["sym"] = {{"fill"}},
 							}),
 							i(124108, {		-- Mossgill Perch
 								["cost"] = { { "i", 146959, 10 }, },	-- 10x Corrupted Globule

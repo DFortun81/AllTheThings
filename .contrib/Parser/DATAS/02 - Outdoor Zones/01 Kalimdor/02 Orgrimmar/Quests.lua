@@ -44,18 +44,12 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(13266, {	-- A Life Without Regret
-				["sourceQuests"] = { 13257 },	-- Herald of War
-				["provider"] = { "n", 31412 },	-- Thrall
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(50341, {	-- A Recent Discovery
 				["sourceQuests"] = { 49977 },	-- Summons to Orgrimmar
 				["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
 				["coord"] = { 49.8, 75.6, ORGRIMMAR },
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(62568, {	-- Adventurers Wanted: Chromie's Call
 				["isBreadcrumb"] = true,
@@ -118,11 +112,6 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 70.9, 49.6, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(936,   {	-- Assisting Arch Druid Runetotem
-				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			q(40976, {	-- Audience with the Warchief
 				["provider"] = { "n", 97296 },	-- Archmage Khadgar
 				["classes"] = { DEMONHUNTER },
@@ -145,9 +134,12 @@ root("Zones", m(KALIMDOR, {
 			q(29401, {	-- Blown Away
 				["provider"] = { "n", 54004 },	-- Jaga
 				["coord"] = { 48.1, 46.8, ORGRIMMAR },
+				["timeline"] = { "added 4.2.0.14133" },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(72045),	-- Horde Balloon
+					i(72045, {	-- Horde Balloon
+						["timeline"] = { "added 4.2.0.14133" },
+					}),
 				},
 			}),
 			q(4300,  {	-- Bone-Bladed Weapons
@@ -239,16 +231,6 @@ root("Zones", m(KALIMDOR, {
 					i(119326),	-- Ring of Pardons
 					i(119327),	-- Durak's Downfall
 				},
-			}),
-			q(26865, {	-- Enemies Below
-				["provider"] = { "n", 39605 },	-- Garrosh Hellscream
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(31034, {	-- Enemies Below
-				["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-				["coord"] = { 48.6, 71.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
 			}),
 			q(60344, {	-- Finding Your Way (H)
 				["customCollect"] = "NPE",	-- New Player Experience
@@ -560,13 +542,6 @@ root("Zones", m(KALIMDOR, {
 					{ 57.8, 90.2, UNDERCITY },	-- Champion Cyssa Dawnrose
 				},
 			}),
-			q(28296, {	-- Meetup with the Caravan
-				["sourceQuests"] = { 28293 },	-- That's No Pyramid!
-				["isBreadcrumb"] = true,
-				["provider"] = { "n", 47571 },	-- Belloc Brightblade
-				["coord"] = { 49.1, 70.5, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-			}),
 			q(51443, {	-- Mission Statement (BfA version)
 				-- available to a level 47, pre-9.0 character during patch 9.0
 			--[[ these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
@@ -713,8 +688,8 @@ root("Zones", m(KALIMDOR, {
 				},
 			}),
 			q(49977, {	-- Summons to Orgrimmar
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(8276,  {	-- Taking Back Silithus
 				["provider"] = { "n", 15188 },	-- Cenarion Emissary Blackhoof
@@ -738,13 +713,69 @@ root("Zones", m(KALIMDOR, {
 				},
 				["races"] = HORDE_ONLY,
 			}),
-			q(1513,  {	-- The Binding
-				["provider"] = { "n", 5875 },	-- Gan'rul Bloodeye
+			-- #if ANYCLASSIC
+			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 65610,	-- Wish You Were Here
+				["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
 				["classes"] = { WARLOCK },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
-					un(REMOVED_FROM_GAME, i(22243)),	-- Small Soul Pouch
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Incubus slain
+						["provider"] = { "n", 185335 },	-- Summoned Incubus
+						["cost"] = { { "i", 190187, 1 } },	-- Withered Scarf
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(713),	-- Summon Incubus
+					-- #endif
+					i(22243, {	-- Small Soul Pouch
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				},
+			}),
+			-- #endif
+			q(1513, {	-- The Binding (Succubus) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 1512,	-- Love's Gift
+				["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
+				["classes"] = { WARLOCK },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Succubus slain
+						["provider"] = { "n", 5677 },	-- Summoned Succubus
+						["cost"] = { { "i", 6626, 1 } },	-- Dogran's Pendant
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(712),	-- Summon Succubus
+					-- #endif
+					i(22243, {	-- Small Soul Pouch
+						["timeline"] = { "removed 4.0.3" },
+					}),
+				},
+			}),
+			q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
+				["qg"] = 5875,	-- Gan'rul Bloodeye
+				["sourceQuest"] = 1501,	-- Creature of the Void [Orgrimmar]
+				["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
+				["coord"] = { 48.2, 45.6, ORGRIMMAR },
+				["timeline"] = { "removed 4.0.3" },
+				["races"] = { ORC, TROLL, UNDEAD },
+				["classes"] = { WARLOCK },
+				["lvl"] = 10,
+				["groups"] = {
+					objective(1, {	-- 0/1 Summoned Voidwalker slain
+						["provider"] = { "n", 5676 },	-- Summoned Voidwalker
+						["cost"] = { { "i", 7464, 1 } },	-- Glyphs of Summoning
+					}),
+					-- #if BEFORE 4.0.3
+					recipe(697),	-- Summon Voidwalker
+					-- #endif
 				},
 			}),
 			q(29440, {	-- The Call of the World-Shaman
@@ -762,20 +793,6 @@ root("Zones", m(KALIMDOR, {
 				["groups"] = {
 					i(65629),	-- Facemask of the Shattered Hand
 				},
-			}),
-			q(7926,  {	-- The Darkmoon Faire
-				["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
-				["coord"] = { 48.0, 62.0, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					currency(515),	-- Darkmoon Prize Ticket
-				},
-			}),
-			q(30094, {	-- The End Time
-				["provider"] = { "n", 52382 },	-- Ziradormi
-				["coord"] = { 48.8, 70.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
 			}),
 			q(28805, {	-- The Eye of the Storm
 				["sourceQuests"] = { 28790 },	-- A Personal Summons
@@ -1041,8 +1058,8 @@ root("Zones", m(KALIMDOR, {
 				["sourceQuests"] = { 50341 },	-- A Recent Discovery
 				["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
 				["coord"] = { 49.8, 75.6, ORGRIMMAR },
+				["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(7660, {	-- Wolf Swapping - Arctic Wolf
 				["qg"] = 3362,	-- Ogunaro Wolfrunner

@@ -15,26 +15,17 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							["modelScale"] = 3,
 							["classes"] = HEALERS,
 							["model"] = 2974000,
-							["g"] = {
-								az(19, 4),	-- The Well of Existence (Rank 4)
-							},
 						}),
 						i(168569, {	-- Null Force Visualizer (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 							["modelScale"] = 3,
 							["classes"] = TANKS,
 							["model"] = 2924336,
-							["g"] = {
-								az(13, 4),	-- Nullification Dynamo (Rank 4)
-							},
 						}),
 						i(168861, {	-- Ultimate Purification Protocols (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 							["modelScale"] = 4,
 							["model"] = 2958033,
-							["g"] = {
-								az(6, 4),	-- Purification Protocol (Rank 4)
-							},
 						}),
 						i(168906),	-- Blueprint: Holographic Digitalization Relay
 						i(169171),	-- Blueprint: Microbot XD

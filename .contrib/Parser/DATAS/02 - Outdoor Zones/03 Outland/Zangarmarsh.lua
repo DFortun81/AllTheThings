@@ -86,14 +86,12 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(863, {	-- Explore Zangarmarsh
+					explorationAch(863, {	-- Explore Zangarmarsh
 						-- #if BEFORE WRATH
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
-					removeclassicphase(ach(1190, {	-- Mysteries of the Marsh
+					}),
+					classicAch(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -152,8 +150,10 @@ root("Zones", {
 							9919,	-- Sporeggar
 							9729,	-- Fhwoor Smash!
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 54 quests in Zangarmarsh.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -236,27 +236,31 @@ root("Zones", {
 							},
 						}),
 						-- #endif
-					})),
+					}),
 					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
 						-- #if BEFORE 3.0.1
+						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
-						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
 						-- #endif
 						["groups"] = {
 							-- NOTE: Achievement says it awards 132, but that's wrong.
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					removeclassicphase(ach(900, {	-- The Czar of Sporeggar
+					classicAch(900, {	-- The Czar of Sporeggar
 						-- #if BEFORE 3.0.1
+						["description"] = "Raise your reputation with Sporeggar to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
-						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -1251,7 +1255,7 @@ root("Zones", {
 							{ 86.0, 91.2, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(2, {	-- Bog Lurker
+							crit(4505, {	-- Bog Lurker
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31248),	-- Bog Epaulets
@@ -1278,7 +1282,7 @@ root("Zones", {
 							{ 73.4, 82.4, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4, {	-- Coilfang Emissary
+							crit(4507, {	-- Coilfang Emissary
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31246),	-- Nagahide Leggings
@@ -1319,7 +1323,7 @@ root("Zones", {
 							{ 78.8, 53.6, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(13, {	-- Marticar
+							crit(4516, {	-- Marticar
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31254),	-- Striderhide Cloak
@@ -1392,14 +1396,14 @@ root("Zones", {
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
-							removeclassicphase(ach(893, {	-- Cenarion War Hippogryph
+							classicAch(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
 								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
-							})),
+							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
 								["timeline"] = { "removed 4.2.0" },

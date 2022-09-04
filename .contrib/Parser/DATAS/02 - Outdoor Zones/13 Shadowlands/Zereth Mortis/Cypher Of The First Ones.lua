@@ -64,10 +64,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					["provider"] = { "n", 181397 },	-- Cypher Console
 					["coord"] = { 33.8, 49.4, ZERETH_MORTIS },
 				}),
-				--
 				q(65700, {	-- Core Control
 					["description"] = "Requires Dealic Understanding.",
-					["sourceQuests"] = { 65433 },	-- Further Research: Trebalim
+					["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				}),
@@ -664,4 +663,16 @@ root("HiddenQuestTriggers", {
 	q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
 	q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
 	q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
+	-- Pocopoc Costumes Applied
+	q(66059),	-- Chef's Hat
+	q(66060),	-- Crown of Flowers
+	q(66061),	-- Pirate Hat
+	q(66062),	-- Safari Hat
+	q(66063),	-- Dapper
+	q(66064),	-- Tricorne Hat
+	q(66065),	-- Witch Hat
+	q(66066),	-- Candle
+	q(66067),	-- Pepe
+	q(66068),	-- Princess Hat
+	q(66069),	-- No Costume
 });

@@ -20,7 +20,24 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			n(ACHIEVEMENTS, {
 				ach(15417),	-- Sepulcher of the First Ones
 				ach(15478),	-- Heroic: Sepulcher of the First Ones
-				ach(15490),	-- Mythic: Sepulcher of the First Ones
+				ach(15490, bubbleDownSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Mythic: Sepulcher of the First Ones
+					-- Meta Achievement
+					["sym"] = {
+						{"meta_achievement",
+							15479,	-- Mythic: Vigilant Guardian
+							15480,	-- Mythic: Skolex
+							15481,	-- Mythic: Artificer Xy'mox
+							15482,	-- Mythic: Dausegne
+							15483,	-- Mythic: Prototype Pantheon
+							15484,	-- Mythic: Lihuvim
+							15485,	-- Mythic: Halondrus
+							15486,	-- Mythic: Anduin Wrynn
+							15487,	-- Mythic: Lords of Dread
+							15488,	-- Mythic: Rygelon
+							15489,	-- Mythic: The Jailer
+						},
+					},
+				})),
 				ach(15491, {	-- Glory of the Sepulcher Raider
 					i(187675),	-- Shimmering Aurelid (MOUNT!)
 				}),
@@ -342,6 +359,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
+					["isWorldQuest"] = true,
+					["timeline"] = { ADDED_SLS4 },
+				}),
+			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(190629),	-- Cartel's Larcenous Toecaps
@@ -355,7 +378,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					i(190631),	-- Vandalized Ephemera Mitts
 				}),
 				ach(15493, {	-- Ephemeral Plains
-					["collectible"] = false,
 					["g"] = {
 						e(2458, {	-- Vigilant Guardian
 							["crs"] = {
@@ -463,7 +485,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				ach(15492, {	-- Cornerstone of Creation
-					["collectible"] = false,
 					["g"] = {
 						e(2459, {	-- Dausegne, the Fallen Oracle
 							["crs"] = { 181224 },	-- Dausegne
@@ -552,7 +573,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				ach(15416, {	-- Domination's Grasp
-					["collectible"] = false,
 					["g"] = {
 						e(2469, {	-- Anduin Wrynn
 							["crs"] = { 181954 },	-- Anduin Wrynn
@@ -672,7 +692,6 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					},
 				}),
 				ach(15418, {	-- The Grand Design
-					["collectible"] = false,
 					["g"] = {
 						e(2464, {	-- The Jailer
 							["crs"] = { 185421 },	-- Zovaal <The Jailer>
@@ -1723,18 +1742,18 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 185421 },	-- Zovaal <The Jailer>
 					["g"] = {
 						ach(15489),	-- Mythic: The Jailer
-						ach(15476, {	-- Hall of Fame: The Jailer (A)
+						ach(15476, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (A)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
-						}),
-						ach(15475, {	-- Hall of Fame: The Jailer (H)
+						})),
+						ach(15475, bubbleDownSelf({["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {	-- Hall of Fame: The Jailer (H)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(454),	-- <Name>, Famed Slayer of The Banished One
 							},
-						}),
+						})),
 						ach(15471),	-- Cutting Edge: The Jailer
 						i(189855),	-- Bindings of the Banished One
 						i(188252),	-- Chains of Domination

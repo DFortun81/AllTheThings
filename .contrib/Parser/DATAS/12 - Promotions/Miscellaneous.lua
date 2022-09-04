@@ -67,7 +67,7 @@ root("Promotions", filter(MISC, {
 			["timeline"] = { "added 4.3.0.15005" },
 		}),
 		ach(414, {	-- Tyrael's Hilt
-			["timeline"] = { "added 2.4.2.8301" },
+			["timeline"] = { "added 3.0.1" },
 		}),
 		i(39656, {	-- Tyrael's Hilt (Mini Tyrael)
 			["description"] = "Reward from the 2008 Worldwide Invitational in Paris.",

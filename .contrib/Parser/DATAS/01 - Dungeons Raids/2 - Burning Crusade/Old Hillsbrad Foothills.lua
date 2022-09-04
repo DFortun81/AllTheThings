@@ -179,12 +179,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(540, {	-- Epoch Hunter
 					["creatureID"] = 18096,
 					["groups"] = {
-						removeclassicphase(ach(652, {	-- The Escape From Durnholde
+						classicAch(652, {	-- The Escape From Durnholde
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						-- #if AFTER 7.3.5
 						i(28222),	-- Reaver of the Infinites
 						-- #endif
@@ -237,7 +237,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							i(29434),	-- Badge of Justice
+							BADGE_OF_JUSTICE,
 							-- #endif
 							i(30589),	-- Dazzling Chrysoprase
 							i(30591),	-- Empowered Fire Opal

@@ -93,7 +93,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 5, 43971 } },
+            { "SHADOWLANDS", new int[] { 9, 2, 7, 45114 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -223,6 +223,16 @@ namespace ATT
         /// Represents the current parent group when processing the 'g' subgroup
         /// </summary>
         private static KeyValuePair<string, object>? CurrentParentGroup { get; set; }
+
+        /// <summary>
+        /// Represents the group which set the NestedDifficultyID
+        /// </summary>
+        private static object DifficultyRoot { get; set; }
+
+        /// <summary>
+        /// Represents the nested DifficultyID currently being processed
+        /// </summary>
+        private static long NestedDifficultyID { get; set; }
 
         /// <summary>
         /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
@@ -407,6 +417,7 @@ namespace ATT
                 var previousParent = CurrentParentGroup;
                 if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
+                var previousDifficultyRoot = DifficultyRoot;
 
                 Process(groups, modID, minLevel);
 
@@ -415,6 +426,7 @@ namespace ATT
                     ConsolidateHeirarchicalFields(data, groups);
 
                 CurrentParentGroup = previousParent;
+                DifficultyRoot = previousDifficultyRoot;
             }
 
             if (!MergeItemData)
@@ -641,8 +653,7 @@ namespace ATT
                         {
                             quest_qgs.Add(providerItems[1]);
                             providers.RemoveAt(p);
-                            if (DebugMode)
-                                Trace.WriteLine($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
+                            LogDebug($"Quest {questID} provider 'n', {providerItems[1]} converted to 'qgs'");
                         }
                     }
 
@@ -675,7 +686,6 @@ namespace ATT
                 else
                 {
                     DuplicateDataIntoGroups(data, quests, "questID");
-                    data.Remove("_quests");
                     cloned = true;
                 }
             }
@@ -690,7 +700,6 @@ namespace ATT
                 else
                 {
                     DuplicateDataIntoGroups(data, items, "itemID");
-                    data.Remove("_items");
                     cloned = true;
                 }
             }
@@ -699,13 +708,42 @@ namespace ATT
                 // TODO: consolidate when creature/npc are the same... if that ever happens
                 DuplicateDataIntoGroups(data, npcs, "creatureID");
                 DuplicateDataIntoGroups(data, npcs, "npcID");
-                data.Remove("_npcs");
+                cloned = true;
+            }
+            if (data.TryGetValue("_objects", out object objects))
+            {
+                DuplicateDataIntoGroups(data, objects, "objectID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_achievements", out object achievements))
+            {
+                DuplicateDataIntoGroups(data, achievements, "achID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_factions", out object factions))
+            {
+                DuplicateDataIntoGroups(data, factions, "factionID");
+                cloned = true;
+            }
+            if (data.TryGetValue("_encounter", out object encounterData))
+            {
+                var encounterListData = Objects.CompressToList(encounterData);
+                decimal encounterHash = Convert.ToDecimal(encounterListData[0])
+                    + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
+                DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                 cloned = true;
             }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             if (cloned && data.ContainsKey("criteriaID"))
                 return false;
+
+            // Track the hierarchy of difficultyID
+            if (data.TryGetValue("difficultyID", out long d))
+            {
+                DifficultyRoot = data;
+                NestedDifficultyID = d;
+            }
 
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
@@ -745,6 +783,10 @@ namespace ATT
             if (data.TryGetValue("s", out f))
             {
                 if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION) data.Remove("s");
+            }
+            if (data.TryGetValue("encounterID", out f))
+            {
+                data["_encounterHash"] = f + NestedDifficultyID / 100M;
             }
 
             minLevel = LevelConsolidation(data, minLevel);
@@ -2568,6 +2610,10 @@ namespace ATT
                         return "timeline";
                     }
 
+                case "sourceQuestNumRequired":
+                case "sqreq":
+                    return "sqreq";
+
                 // tags which are accurate already
                 case "azeriteEssenceID":
                 case "buildingID":
@@ -2660,6 +2706,10 @@ namespace ATT
                 case "_drop":
                 case "_npcs":
                 case "_quests":
+                case "_objects":
+                case "_achievements":
+                case "_factions":
+                case "_encounter":
                 case "_text":
                 case "_type":
 
@@ -2815,6 +2865,49 @@ namespace ATT
                                     if (o is Dictionary<string, object> item)
                                     {
                                         ConditionalItemData.Add(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
+                            }
+                        }
+                        break;
+                    case "RecipeDB":
+                        {
+                            // The format of the RecipeDB is a dictionary of RecipeID -> Values.
+                            if (pair.Value is Dictionary<long, object> recipeDB)
+                            {
+                                foreach (var recipeValuePair in recipeDB)
+                                {
+                                    if (recipeValuePair.Value is Dictionary<string, object> recipe)
+                                    {
+                                        recipe["recipeID"] = recipeValuePair.Key;
+                                        Objects.Merge(recipe);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("RecipeDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(recipeValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else if (pair.Value is List<object> recipes)
+                            {
+                                foreach (var o in recipes)
+                                {
+                                    if (o is Dictionary<string, object> recipe)
+                                    {
+                                        Objects.Merge(recipe);
                                     }
                                     else
                                     {
@@ -3354,7 +3447,7 @@ namespace ATT
             string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
 #elif WRATH
             // We want Classic WRATH builds of ATT to build the database to the ATT-Classic Classic WRATH folder.
-            string addonRootFolder = "../../../../../../_classic_wrath_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 #elif TBC
             // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
             string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";

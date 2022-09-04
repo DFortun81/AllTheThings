@@ -30,45 +30,37 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				COILFANG_ARMAMENTS,
 				i(30280),	-- Pattern: Belt of Blasting
 				i(30302, {	-- Pattern: Belt of Deep Shadow
-					["spellID"] = 36351,	-- Belt of Deep Shadow
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30301, {	-- Pattern: Belt of Natural Power
-					["spellID"] = 36349,	-- Belt of Natural Power
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30303, {	-- Pattern: Belt of the Black Eagle
-					["spellID"] = 36352,	-- Belt of the Black Eagle
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30281),	-- Pattern: Belt of the Long Road
 				i(30282),	-- Pattern: Boots of Blasting
 				i(30305, {	-- Pattern: Boots of Natural Grace
-					["spellID"] = 36355,	-- Boots of Natural Grace
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30307, {	-- Pattern: Boots of the Crimson Hawk
-					["spellID"] = 36358,	-- Boots of the Crimson Hawk
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30283),	-- Pattern: Boots of the Long Road
 				i(30306, {	-- Pattern: Boots of Utter Darkness
-					["spellID"] = 36357,	-- Boots of Utter Darkness
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30308, {	-- Pattern: Hurricane Boots
-					["spellID"] = 36359,	-- Hurricane Boots
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30304, {	-- Pattern: Monsoon Belt
-					["spellID"] = 36353,	-- Monsoon Belt
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
@@ -220,12 +212,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1572, {	-- Lady Vashj
 				["creatureID"] = 21212,
 				["groups"] = {
-					removeclassicphase(ach(694, {	-- Serpentshrine Cavern
+					classicAch(694, {	-- Serpentshrine Cavern
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 10445,	-- The Vials of Eternity
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(97554, {	-- Dripping Strider Egg (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
 					}),

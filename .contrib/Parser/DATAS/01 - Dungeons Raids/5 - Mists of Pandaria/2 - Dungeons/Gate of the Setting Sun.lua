@@ -100,11 +100,6 @@ _.Instances = { tier(MOP_TIER, {
 						un(REMOVED_FROM_GAME, i(81111)),	-- Airstream Treads (7.1 - Removed from Game!)
 					})),
 					cr(56636, e(676, {	-- Commander Ri'mok
-						{	-- Polyformic Acid Science: Commander Ri'mok
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["criteriaID"] = 1,	-- Commander Ri'mok
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						},
 						i(144098),	-- Mantid Trochanter
 						i(144019),	-- Swarmcall Helm
 						i(144138),	-- Ri'mok's Shattered Scale

@@ -8,6 +8,20 @@ local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 		{ "select", "headerID" , LEGENDARIES },	-- Legendary header
 		{ "pop" },							-- pop header
 		{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
+		{ "exclude", "itemID",
+			190584,	-- Memory of Unity (DK)
+			190587,	-- Memory of Unity (DH)
+			190588,	-- Memory of Unity (DRUID)
+			190589,	-- Memory of Unity (HUNTER)
+			190590,	-- Memory of Unity (MAGE)
+			190591,	-- Memory of Unity (MONK)
+			190592,	-- Memory of Unity (PALADIN)
+			190593,	-- Memory of Unity (PRIEST)
+			190594,	-- Memory of Unity (ROGUE)
+			190595,	-- Memory of Unity (SHAMAN)
+			190596,	-- Memory of Unity (WARLOCK)
+			190598,	-- Memory of Unity (WARRIOR)
+		},
 	},
 	["cost"] = {
 		{ "c", GRATEFUL, 35 },
@@ -816,10 +830,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				},
 			}),
 			n(172176, {	-- Su Zettai <Renown Quartermaster>
-				["coords"] = {
-					{ 50.68, 71.38, MALDRAXXUS },
-					{ 52.5, 41.2, SEAT_OF_THE_PRIMUS },
-				},
+				["coord"] = { 52.5, 41.2, SEAT_OF_THE_PRIMUS },
 				["g"] = {
 					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 						["cost"] = {

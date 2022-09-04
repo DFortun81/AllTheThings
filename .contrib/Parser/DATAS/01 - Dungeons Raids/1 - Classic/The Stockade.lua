@@ -15,6 +15,14 @@ root("Instances", tier(CLASSIC_TIER, {
 		["lvl"] = 15,
 		["groups"] = {
 			n(QUESTS, {
+				q(389, {	-- Bazil Thredd
+					["qg"] = 1646,	-- Baros Alexston
+					["sourceQuest"] = 373,	-- The Unsent Letter
+					["coord"] = { 49, 30.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.1.12984" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+				}),
 				q(27737, {	-- By Fire Be Saved!
 					["qg"] = 46410,	-- Nurse Lillian
 					["timeline"] = { "added 4.0.3.13277" },
@@ -231,13 +239,13 @@ root("Instances", tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					-- #if BEFORE 4.0.1
-					removeclassicphase(ach(633, {	-- Stormwind Stockade
+					classicAch(633, {	-- Stormwind Stockade
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 391,	-- The Stockade Riots
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
-					})),
+					}),
 					-- #endif
 					i(2926, {	-- Head of Bazil Thredd
 						["timeline"] = { "removed 4.0.1.12984" },

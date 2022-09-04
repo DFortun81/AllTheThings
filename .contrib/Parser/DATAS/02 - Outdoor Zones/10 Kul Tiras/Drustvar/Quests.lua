@@ -70,8 +70,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 				["coord"] = { 22.8, 46.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-				-- May have other/later sourceQuests; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),
 			q(50175, {	-- An Eight-Legged Curse
@@ -97,28 +95,23 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					-- Awarded "A New Order" criteria.
 				},
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155107),	-- Banisher Cowl
-								i(155104),	-- Waycrest Militia Helmet
-								i(160888),	-- Banisher Jerkin
-								i(160890),	-- Waycrest Militia Battleplate
-								i(160889),	-- Crone-Seeker's Chainmail
-								i(155106),	-- Crone-Seeker's Helm
-								un(NEVER_IMPLEMENTED, i(160891)), -- Wickerwoven Robe
-								i(160887),	-- Wickerwoven Vestments
-								i(155105),	-- Wickerwoven Crown
-							},
-					}),
-					i(175301),	-- Banisher Cowl (no azerite version)
-					i(175298),	-- Waycrest Militia Helmet (no azerite version)
-					i(175380),	-- Banisher Jerkin (no azerite version)
-					i(175382),	-- Waycrest Militia Battleplate (no azerite version)
-					i(175381),	-- Crone-Seeker's Chainmail (no azerite version)
-					i(175300),	-- Crone-Seeker's Helm (no azerite version)
-					i(175379),	-- Wickerwoven Vestments (no azerite version)
-					i(175299),	-- Wickerwoven Crown (no azerite version)
+					azeriteItem(155107),	-- Banisher Cowl
+					azeriteItem(155104),	-- Waycrest Militia Helmet
+					azeriteItem(160888),	-- Banisher Jerkin
+					azeriteItem(160890),	-- Waycrest Militia Battleplate
+					azeriteItem(160889),	-- Crone-Seeker's Chainmail
+					azeriteItem(155106),	-- Crone-Seeker's Helm
+					un(NEVER_IMPLEMENTED, azeriteItem(160891)), -- Wickerwoven Robe
+					azeriteItem(160887),	-- Wickerwoven Vestments
+					azeriteItem(155105),	-- Wickerwoven Crown
+					azewrongItem(175301),	-- Banisher Cowl (no azerite version)
+					azewrongItem(175298),	-- Waycrest Militia Helmet (no azerite version)
+					azewrongItem(175380),	-- Banisher Jerkin (no azerite version)
+					azewrongItem(175382),	-- Waycrest Militia Battleplate (no azerite version)
+					azewrongItem(175381),	-- Crone-Seeker's Chainmail (no azerite version)
+					azewrongItem(175300),	-- Crone-Seeker's Helm (no azerite version)
+					azewrongItem(175379),	-- Wickerwoven Vestments (no azerite version)
+					azewrongItem(175299),	-- Wickerwoven Crown (no azerite version)
 				},
 			}),
 			q(50253, {	-- An Improvised Arsenal
@@ -1041,27 +1034,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					-- Awarded "Storming the Manor" criteria.
 				},
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-							["g"] = {
-								i(155112),	-- Wickerwoven Robe
-								i(155115),	-- Wickerwoven Amice
-								i(155095),	-- Banisher Tunic
-								i(155113),	-- Banisher Shoulderpads
-								i(155094),	-- Crone-Seeker's Breastplate
-								i(155116),	-- Crone-Seeker's Shoulderguards
-								i(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
-								i(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
-							},
-					}),
-					i(175361),	-- Wickerwoven Robe (no azerite version)
-					i(175324),	-- Wickerwoven Amice (no azerite version)
-					i(175360),	-- Banisher Tunic (no azerite version)
-					i(175322),	-- Banisher Shoulderpads (no azerite version)
-					i(175359),	-- Crone-Seeker's Breastplate (no azerite version)
-					i(175325),	-- Crone-Seeker's Shoulderguards (no azerite version)
-					i(175358),	-- Waycrest Militia Breastplate (no azerite version)
-					i(175323),	-- Waycrest Militia Spaulders (no azerite version)
+					azeriteItem(155112),	-- Wickerwoven Robe
+					azeriteItem(155115),	-- Wickerwoven Amice
+					azeriteItem(155095),	-- Banisher Tunic
+					azeriteItem(155113),	-- Banisher Shoulderpads
+					azeriteItem(155094),	-- Crone-Seeker's Breastplate
+					azeriteItem(155116),	-- Crone-Seeker's Shoulderguards
+					azeriteItem(155093),	-- Waycrest Militia Breastplate (Plate reward confirmed by Iyanden 10-13-18)
+					azeriteItem(155114),	-- Waycrest Militia Spaulders (Plate reward confirmed by Iyanden 10-13-18)
+					azewrongItem(175361),	-- Wickerwoven Robe (no azerite version)
+					azewrongItem(175324),	-- Wickerwoven Amice (no azerite version)
+					azewrongItem(175360),	-- Banisher Tunic (no azerite version)
+					azewrongItem(175322),	-- Banisher Shoulderpads (no azerite version)
+					azewrongItem(175359),	-- Crone-Seeker's Breastplate (no azerite version)
+					azewrongItem(175325),	-- Crone-Seeker's Shoulderguards (no azerite version)
+					azewrongItem(175358),	-- Waycrest Militia Breastplate (no azerite version)
+					azewrongItem(175323),	-- Waycrest Militia Spaulders (no azerite version)
 				},
 			}),
 --						   51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.

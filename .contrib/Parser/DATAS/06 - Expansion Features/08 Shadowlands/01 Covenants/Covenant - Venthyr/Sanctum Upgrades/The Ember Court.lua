@@ -172,6 +172,32 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								ach(14725),		-- We Happy Few
 							}),
 						}),
+						n(FACTIONS, {
+							faction(2445, {	-- The Ember Court (Venthyr)
+								["crs"] = { 165399 },	-- Lord Garridan (when selecting Guests for Ember Court)
+								["maps"] = {
+									REVENDRETH,
+								},
+								["g"] = {
+									faction(2450),	-- Alexandros Mograine
+									faction(2446),	-- Baroness Vashj
+									faction(2454),	-- Choofa
+									faction(2455),	-- Cryptkeeper Kassir
+									faction(2456),	-- Droman Aliothe
+									faction(2457),	-- Grandmaster Vole
+									faction(2451),	-- Hunt-Captain Korayn
+									faction(2458),	-- Kleia and Pelagos
+									faction(2447),	-- Lady Moonberry
+									faction(2448),	-- Mikanikos
+									faction(2461),	-- Plague Deviser Marileth
+									faction(2452),	-- Polemarch Adrestes
+									faction(2453),	-- Rendle and Cudgelface
+									faction(2459),	-- Sika
+									faction(2460),	-- Stonehead
+									faction(2449),	-- The Countess
+								},
+							}),
+						}),
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
 								["description"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest.",
@@ -999,7 +1025,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,
-									--["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
@@ -2401,6 +2427,9 @@ root("HiddenQuestTriggers", {
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
+			q(60472),	-- Looting Decree: Baroness Vashj's Esteem
+			q(61533),	-- Looting Decree: The Countess's Favor
+			q(61535),	-- Triggered after ending Ember Court early and looting Mikanikos' Tribute
 
 	-- Misc
 		q(62035),	-- unlocking Soulbreaker's Court Vestments set (TransmogSetID 2065, Soulbreaker's Court items)

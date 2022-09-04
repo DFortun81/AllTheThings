@@ -36,6 +36,18 @@ _.Instances = { tier(CATA_TIER, {
 						i(72874),	-- Boots of the Forked Road
 					},
 				}),
+				q(30094, {	-- The End Time
+					["qg"] = 52382,	-- Ziradormi
+					["coord"] = { 48.8, 70.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(30095, {	-- The End Time
+					["qg"] = 52408,	-- Coridormi
+					["coord"] = { 49.4, 87.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(30098, {	-- The Well of Eternity
 					["provider"] = { "n", 54751 },	-- Nozdormu
 					["sourceQuests"] = { 30096 },	-- Murozond

@@ -9,30 +9,18 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				n(AZERITE_ESSENCES, {
 					i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
 						["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
-						["g"] = {
-							az(32, 1),	-- Conflict and Strife (Rank 1)
-						},
 					}),
 					i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
 						["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
-						["g"] = {
-							az(32, 2),	-- Conflict and Strife (Rank 2)
-						},
 					}),
 					i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
 						["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
-						["g"] = {
-							az(32, 3),	-- Conflict and Strife (Rank 3)
-						},
 					}),
 					i(169899, {	-- Polished Skull Trophy (Rank 4)
 						["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
 						["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
 						["u"] = REMOVED_FROM_GAME,	-- Removed // Old PvP Elite/Gladiator
-						["g"] = {
-							az(32, 4),	-- Conflict and Strife (Rank 4)
-						},
 					}),
 				}),
 				q(54978, {	-- Against Overwhelming Odds
@@ -253,21 +241,9 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 56.4, 25.8, BORALUS },
 					["g"] = {
-						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
-							["classes"] = HEALERS,
-							["g"] = {
-								az(18, 1),	-- Artifice of Time (Rank 1)
-							},
-						}),
-						i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
-							az(23, 1),	-- Blood of the Enemy (Rank 1)
-						}),
-						i(168578, {	-- Sphere of Suppressed Force (Rank 1)
-							["classes"] = TANKS,
-							["g"] = {
-								az(3, 1),	-- Sphere of Suppression (Rank 1)
-							},
-						}),
+						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+						i(168578),	-- Sphere of Suppressed Force (Rank 1)
 					},
 				}),
 			})),
@@ -711,27 +687,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 48.2, 80.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(155034),	-- Freebooter Cowl
-							i(155022),	-- Freebooter Tunic
-							i(155039),	-- Navigator's Robes
-							i(155032),	-- Navigator's Circlet
-							i(155021),	-- Outrigger Chainmail
-							i(155033),	-- Outrigger Helm
-							i(155031),	-- Sea Raider's Greathelm
-							i(155020),	-- Sea Raider's Breastplate
-						},
-					}),
-					i(175297),	-- Freebooter Cowl (no azerite version)
-					i(175356),	-- Freebooter Tunic (no azerite version)
-					i(175357),	-- Navigator's Robes (no azerite version)
-					i(175295),	-- Navigator's Circlet (no azerite version)
-					i(175355),	-- Outrigger Chainmail (no azerite version)
-					i(175296),	-- Outrigger Helm (no azerite version)
-					i(175294),	-- Sea Raider's Greathelm (no azerite version)
-					i(175354),	-- Sea Raider's Breastplate (no azerite version)
+					azeriteItem(155034),	-- Freebooter Cowl
+					azeriteItem(155022),	-- Freebooter Tunic
+					azeriteItem(155039),	-- Navigator's Robes
+					azeriteItem(155032),	-- Navigator's Circlet
+					azeriteItem(155021),	-- Outrigger Chainmail
+					azeriteItem(155033),	-- Outrigger Helm
+					azeriteItem(155031),	-- Sea Raider's Greathelm
+					azeriteItem(155020),	-- Sea Raider's Breastplate
+					azewrongItem(175297),	-- Freebooter Cowl (no azerite version)
+					azewrongItem(175356),	-- Freebooter Tunic (no azerite version)
+					azewrongItem(175357),	-- Navigator's Robes (no azerite version)
+					azewrongItem(175295),	-- Navigator's Circlet (no azerite version)
+					azewrongItem(175355),	-- Outrigger Chainmail (no azerite version)
+					azewrongItem(175296),	-- Outrigger Helm (no azerite version)
+					azewrongItem(175294),	-- Sea Raider's Greathelm (no azerite version)
+					azewrongItem(175354),	-- Sea Raider's Breastplate (no azerite version)
 				},
 			}),
 			q(57324, {	-- Sail With the Tide
@@ -835,6 +806,8 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
+				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Horde equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
+				["u"] = REMOVED_FROM_GAME,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
@@ -858,7 +831,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lvl"] = 115,	-- wowhead says 110.  it's wrong.  tol dagor doesn't unlock until 115, and that's the other requirement to make this quest available.
 			}),
 			q(49715, {	-- Trouble at Greystone Keep
-				["sourceQuests"] = { 50790 },	-- Hot Pursuit
+				-- ["sourceQuests"] = { 50790 },	-- Hot Pursuit	-- TODO maybe earlier? maybe none?
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130377 },	-- Courier Gerald
 				["races"] = ALLIANCE_ONLY,

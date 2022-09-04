@@ -8,6 +8,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(61095, {	-- Supplies from The Undying Army
 				["provider"] = { "n", 173003 },	-- Nalcorn Talsen
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
+				["minReputation"] = { 2410, 8 },	-- The Undying Army, Exalted
 				["repeatable"] = true,
 				["lvl"] = { 60 },
 				["g"] = {
@@ -17,6 +18,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						i(182081),	-- Colossal Slaughterclaw (MOUNT!)
 					}),
 				},
+			}),
+		}),
+		n(FACTIONS, {
+			faction(2410, {	-- The Undying Army
+				ach(14336),	-- The Undying Army
 			}),
 		}),
 	}),

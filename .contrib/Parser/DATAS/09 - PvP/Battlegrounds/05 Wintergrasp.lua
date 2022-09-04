@@ -11,7 +11,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1752, {	-- Master of Wintergrasp
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							1722,	-- Archavon the Stone Watcher (10 player)
 							1721,	-- Archavon the Stone Watcher (25 player)
 							2080,	-- Black War Mammoth

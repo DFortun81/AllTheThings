@@ -124,7 +124,6 @@ _.Zones =
 					},
 				}),
 				i(120138, {	-- Tome of Polymorph: Monkey
-					["spellID"] = 161354,	-- Polymorph(Monkey)
 					["classes"] = { MAGE },
 					["f"] = RECIPES,
 					["crs"] = {
@@ -140,7 +139,6 @@ _.Zones =
 					},
 				}),
 				i(120140, {	-- Tome of Polymorph: Porcupine
-					["spellID"] = 126819,	-- Polymorph(Porcupine)
 					["classes"] = { MAGE },
 					["f"] = RECIPES,
 					["crs"] = {

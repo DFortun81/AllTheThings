@@ -20,9 +20,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["g"] = {
-				i(168846, {	-- Pearl of Lucid Dreams (Rank 1)
-					az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
-				}),
+				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
 		q(56561, {	-- A Curious Discovery (A)
@@ -757,9 +755,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55869,	-- Clearing Out the Cache
 			["g"] = {
-				i(168847, {	-- Pearl of Manifest Ambitions (Rank 2)
-					az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
-				}),
+				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
 		q(56235, {	-- Down Into Nazjatar
@@ -768,33 +764,27 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
 			["g"] = {
-				i(168846, {	-- Pearl of Lucid Dreams (Rank 1)
-					az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
-				}),
+				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
-		q(56433, {	-- Drowning the Alliance
+		pvp(q(56433, {	-- Drowning the Alliance
 			["provider"] = { "n", 154652 },	-- Dazzerian
 			["coord"] = { 48.8, 60.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55481,	-- Scouting the Palace
 			["g"] = {
-				i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
-					az(15, 1),	-- Ripple in Space (Rank 1)
-				}),
+				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
-		}),
-		q(56128, {	-- Drowning the Horde
+		})),
+		pvp(q(56128, {	-- Drowning the Horde
 			["provider"] = { "n", 154653 },	-- Tomas Riogain
 			["coord"] = { 38.1, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 57010,	-- Harnessing the Power
 			["g"] = {
-				i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
-					az(15, 1),	-- Ripple in Space (Rank 1)
-				}),
+				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
-		}),
+		})),
 		q(56001, {	-- Drunk Angry Murlocs
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -969,9 +959,7 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55937,	-- Clearing Out the Cache
 			["g"] = {
-				i(168847, {	-- Pearl of Manifest Ambitions (Rank 2)
-					az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
-				}),
+				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
 		q(56806, {	-- Friends Through Eternity
@@ -2675,12 +2663,15 @@ root("HiddenQuestTriggers", {
 	q(56696),	-- "Have you ever swooped on a ray?  It's out-ray-geous!"
 	q(56697),	-- "We have so many free people in Newhome that we need to gather more food!  This is great!"
 	q(56698),	-- "As a wee sprog. I was told that the Shirakess created our nightmares. I thought that was a myth... until I saw this place for myself."
+	q(56699),	-- (got this randomly in nazjatar)
 --	Vim
 	q(56665),	-- "It's brave to sacrifice yourself to save others.  It's craven to sacrifice others to serve yourself.  And Azshara is anything but brave."
 	q(56672),	-- "One person's pride destroyed so many lives."
 	q(56700),	-- "In the deep, dark sea, no one can hear you scream.  Trust me..."
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
+	q(56702),	-- (got this randomly in nazjatar @ 33.8,47.4)
 	q(56703),	-- "When the naga were keeping me in chains, I never thought I'd be free again.  Shows what I know, huh?"
+	q(56704),	-- (got this randomly in nazjatar)
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
 	q(56706),	-- "Everyone I knew as a sprog is gone.  I've got a new family now, but I'll never forget the one I lost."
 	q(56707),	-- "Those sea giants can tell a mean tale... when you can make sense of what they're saying."

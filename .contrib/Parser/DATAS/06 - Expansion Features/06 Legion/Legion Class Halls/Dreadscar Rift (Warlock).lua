@@ -104,8 +104,13 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					-- Artifact
 					q(40684, {	-- The Tome of Blighted Implements
-						["sourceQuests"] = { 40729 },	-- The New Blood
+						["sourceQuests"] = {
+								40729,	-- The New Blood
+								40712,	-- The Power Possessed
+								41156,	-- The Power Possessed
+							},
 						["provider"] = { "n", 101097 },	-- Calydus
+						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain the breadcrumb quests.",
 						["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
 					}),
 					q(43984, {	-- The Tome Opens Again
@@ -175,14 +180,14 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							},
 						}),
 						q(40712, {	-- The Power Possessed (Good)
-							["description"] = "Obtainable if you are good to Revil Kost",
+							["description"] = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 						q(41156, {	-- The Power Possessed (Bad)
-							["description"] = "Obtainable if you attack Revil Kost",
+							["description"] = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
 							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
 							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
@@ -254,8 +259,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					-- Introduction
 					q(40731, {	-- The Heart of the Dreadscar
 						["sourceQuests"] = {
-							40712,	-- The Power Possessed (Good)
-							41156,	-- The Power Possessed (Bad)
 							42125,	-- Dark Whispers
 							43254,	-- Ritual Ruination
 						},
@@ -570,7 +573,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(815),	-- Skull of the Man'ari
 							artifact(815),	-- Spine of Thal'kiel
 							artifact(194),	-- Scepter of Sargeras
-							ach(10746),	-- Forged for Battle
 						}
 					}),
 					-- Interlude
@@ -857,38 +859,26 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
 root(ROOTS.HiddenQuestTriggers, {
-	q(40514),	-- Warlock Order Hall - Revil convinced
-	q(40686),	-- Warlock Order Hall - Affliction chosen first
-	q(40687),	-- Warlock Order Hall - Destruction chosen first
-	q(40688),	-- Warlock Order Hall - Demonology chosen first
-	q(43981),	-- Warlock Order Hall - Affliction chosen second
-	q(43982),	-- Warlock Order Hall - Demonology chosen second
-	q(43983),	-- Warlock Order Hall - Destruction chosen second
-	q(40686),	-- Warlock Order Hall - Affliction chosen third
-	q(44389),	-- Warlock Order Hall - Destruction chosen third
-	q(44390),	-- Warlock Order Hall - Demonology chosen third
-	q(42084),	-- Selecting a Sixth: Kira
-	q(42085),	-- Selecting a Sixth: Lulubelle
-	q(42203),	-- Using Portal to Scenario during Dark Whispers (42125)
-	q(42205),	-- Using Portal to Scenario during Dark Whispers (42125)
-	q(44390),	-- Warlock Order Hall - Demo chosen third
-	q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
-	q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
-	q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
-	q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
-	q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
-	q(44438),	-- Warlock Order Hall - Tracking Quest: New Blood 1
-	q(44439),	-- Warlock Order Hall - Tracking Quest: New Blood 2
-	q(44440),	-- Warlock Order Hall - Tracking Quest: New Blood 3
-	q(44441),	-- Warlock Order Hall - Tracking Quest: New Blood 4
-	q(44442),	-- Warlock Order Hall - Tracking Quest: New Blood 5
-	q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
-	q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
-	q(43678),	-- Destro hidden artifact from ritual of doom
-	q(41154),	-- Attacking Revil Kost During Artifact Quest
+	tier(LEGION_TIER, {
+		q(41154),	-- Attacking Revil Kost During Artifact Quest
+		q(42205),	-- Entrance Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+		q(40514),	-- Revil convinced
+		q(42203),	-- Ritual Bit -  using Portal to Scenario during "Dark Whispers" (questID 42125)
+		q(42084),	-- Selecting a Sixth: Kira
+		q(42085),	-- Selecting a Sixth: Lulubelle
+		q(44655),	-- Tracking Quest: 7.0 Class Hall - Warlock - Pacing Mission 1 - completed the "Searching the Archives" mission
+		q(44656),	-- Tracking Quest: 7.0 Class Hall - Warlock - Pacing Mission 2a
+		q(44657),	-- Tracking Quest: 7.0 Class Hall - Warlock - Tutorial 1 - Information at Any Cost - completed the "Information at any Cost" mission
+		q(44628),	-- Tracking Quest: Empowering the Soul 1 - completed the "The Harpies' Curse" mission
+		q(44629),	-- Tracking Quest: Empowering the Soul 2 - completed the "Bradensbrook Under Attack" mission
+		q(44630),	-- Tracking Quest: Empowering the Soul 3 - completed the "Cleansing the Vale" mission
+		q(44631),	-- Tracking Quest: Empowering the Soul 4 - completed the "Pesky Pest Problem" mission
+		q(44632),	-- Tracking Quest: Empowering the Soul 5 - completed the "Hunting the Hunters" mission
+		q(44438),	-- Tracking Quest: New Blood 1 - completed the "One Who's Worthy" mission
+		q(44439),	-- Tracking Quest: New Blood 2 - completed the "One Who's Worthy" mission
+		q(44440),	-- Tracking Quest: New Blood 3 - completed the "One Who's Worthy" mission
+		q(44441),	-- Tracking Quest: New Blood 4 - completed the "One Who's Worthy" mission
+		q(44442),	-- Tracking Quest: New Blood 5 - completed the "One Who's Worthy" mission
+	}),
 });
--- #endif

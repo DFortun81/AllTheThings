@@ -93,9 +93,6 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					["g"] = {
 						i(168614, {	-- Charged Scale of the Blue Aspect
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								az(12, 4),	-- The Crucible of Flame (Rank 4)
-							},
 						}),
 					},
 				}),
@@ -104,9 +101,16 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					["coord"] = { 48.1, 72.2, REPAIRED_CHAMBER_OF_HEART },
 					["sourceQuest"] = 55533,	-- MOTHER Knows Best
 				}),
+				q(52946, {	-- A Dying World
+					["qg"] = 142930,	-- Halford Wyrmbane
+					["sourceQuest"] = 51795,	-- The Battle for Lordaeron
+					["coord"] = { 27.7, 21.5, STORMWIND_CITY },
+					["timeline"] = { "added 8.0.1.27291", "removed 9.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53028, {	-- A Dying World
 					--	originally removed, then hotfixed back in for 50 characters
-					--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance, but it looks like that one was permanently removed.
+					--	NOT Horde-only, this ID is offered in both Dazar'alor and Boralus.  there used to be a separate ID for Alliance (52946), but it looks like that one was permanently removed.
 					--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 					["providers"] = {
 						{ "n", 154464 },	-- Earthen Guardian (Alliance)
@@ -298,9 +302,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						1476,	-- Twilight Highlands (Szenario)
 					},
 					["g"] = {
-						i(168613, {	-- Tempered Scale of the Scarlet Broodmother
-							az(12, 3),	-- The Crucible of Flame (Rank 3)
-						}),
+						i(168613),	-- Tempered Scale of the Scarlet Broodmother
 					},
 				}),
 				q(52428, {	-- Infusing the Heart
@@ -342,7 +344,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 				q(57374, {	-- Into the Darkest Depths
 					["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 					["provider"] = { "n", 155496 },	-- Wrathion
-					["sourceQuest"] = 57373,	-- Descending Into Madness
+					["sourceQuest"] = 58634,	-- Opening the Gateway
 					["g"] = {
 						currency(1719),	-- Corrupted Memento
 					},
@@ -376,12 +378,13 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 				}),
 				q(58506, {	-- Network Diagnostics
-					["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 					["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 					["sourceQuests"] = {
 						58502,	-- Where the Heart Is (A)
 						58583,	-- Where the Heart Is (H)
 					},
+					["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
+					["timeline"] = { "added 8.3.0.33062" },
 				}),
 				q(55393, {	-- Null the Void
 					["provider"] = { "n", 151693 },	-- Merithra of the Dream
@@ -593,9 +596,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					["coord"] = { 48.1, 72.4, REPAIRED_CHAMBER_OF_HEART },
 					["sourceQuest"] = 55497,	-- A Friendly Face
 					["g"] = {
-						i(168611, {	-- Petrified Ebony Scale
-							az(12, 1),	-- The Crucible of Flame (Rank 1)
-						}),
+						i(168611),	-- Petrified Ebony Scale
 					},
 				}),
 				q(55398, {	-- The Long Awake
@@ -628,9 +629,7 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 					["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 					["sourceQuest"] = 55397,	-- Before I Wake
 					["g"] = {
-						i(168612, {	-- Dreamglow Dragonscale
-							az(12, 2),	-- The Crucible of Flame (Rank 2)
-						}),
+						i(168612),	-- Dreamglow Dragonscale
 					},
 				}),
 				q(61872, {	-- To Current Matters (A)
@@ -835,218 +834,116 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 							["cost"] = { { "c", 1803, 2000 } },	-- 2000 Echoes of Ny'alotha
 						}),
 						i(168839, {	-- Regenerating Barrier of the Depths
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(25, 3, {	-- Aegis of the Deep
-									["classes"] = TANKS,
-								}),
-							},
 						}),
 						i(168559, {	-- Fetish of the Hidden Labyrinths
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(7, 3),	-- Anima of Life and Death
-							},
 						}),
 						i(168922, {	-- Azerite-Fueled Timequartz
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(18, 3),	-- Artifice of Time
-							},
 						}),
 						i(168537, {	-- Tempered Azerite Formation
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(2, 3),	-- Azeroth's Undying Gift
-							},
 						}),
 						i(168444, {	-- Churning Blood of the Conquered
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(23, 3),	-- Blood of the Enemy
-							},
 						}),
 						i(173282, {	-- Token of Death's Glee
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(35, 3),	-- Breath of the Dying
-							},
 						}),
 						i(168856, {	-- Resonating Elemental Heart
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(14, 3),	-- Condensed Life-Force
-							},
 						}),
 						i(169900, {	-- Rib-Bone Choker of Dominance
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(32, 3),	-- Conflict and Strife
-							},
 						}),
 						i(168622, {	-- Stabilizing Lens of the Focusing Iris
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(5, 3),	-- Essence of the Focusing Iris
-							},
 						}),
 						i(168926, {	-- Lingering Seed of Renewal
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(20, 3),	-- Life-Binder's Invocation
-							},
 						}),
 						i(168848, {	-- Pearl of Perspicuous Intentions
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(27, 3),	-- Memory of Lucid Dreams
-							},
 						}),
 						i(168568, {	-- Null Force Nullifier
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 }, },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(13, 3),	-- Nullification Dynamo
-							},
 						}),
 						i(168860, {	-- Enhanced Purification Protocols
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(6, 3),	-- Purification Protocol
-							},
 						}),
 						i(168852, {	-- Stalwart Battlefield Memento
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(15, 3),	-- Ripple in Space
-							},
 						}),
 						i(173290, {	-- Quickening Azerite Geode
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(36, 3),	-- Spark of Inspiration
-							},
 						}),
 						i(168580, {	-- Sphere of Leeched Mobility
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(3, 3),	-- Sphere of Suppression
-							},
 						}),
 						i(168440, {	-- Gleaming Star Shard
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(24, 3),	-- Spirit of Preservation
-							},
 						}),
 						i(173310, {	-- Manual of Unbalanced Tactics
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(34, 3),	-- Strenghth of the Warden
-							},
 						}),
 						i(168613, {	-- Tempered Scale of the Scarlet Broodmother
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(12, 3),	-- The Crucible of Flame
-							},
 						}),
 						i(168930, {	-- Tome of the Quickening Tides
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(17, 3),	-- The Ever-Rising Tide
-							},
 						}),
 						i(173885, {	-- Volatile Void Droplet
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(37, 3),	-- The Formless Void
-							},
 						}),
 						i(168865, {	-- Polarized Azerite Slivershards
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(28, 3),	-- The Unbound Force
-							},
 						}),
 						i(168934, {	-- Calibrated Existence Gauge
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(19, 3),	-- The Well of Existence
-							},
 						}),
 						i(168575, {	-- Branch of Rejuvenating Rings
-							["classes"] = TANKS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(33, 3, {	-- Touch of the Everlasting
-									["classes"] = TANKS,
-								}),
-							},
 						}),
 						i(168938, {	-- Ward of Mutual Aid
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(16, 3),	-- Unwavering Ward
-							},
 						}),
 						i(168844, {	-- Perfection-Enhancing Gearbox
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(22, 3),	-- Vision of Perfection
-							},
 						}),
 						i(168943, {	-- Grid of Bursting Vitality
-							["classes"] = HEALERS,
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(21, 3),	-- Vitality Conduit
-							},
 						}),
 						i(168617, {	-- Fluctuating Worldvein
 							["modID"] = 14,
 							["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
-							["g"] = {
-								az(4, 3),	-- Worldvein Resonance
-							},
 						}),
 					},
 				}),
@@ -1058,30 +955,19 @@ root("ExpansionFeatures", tier(BFA_TIER, {
 						}),
 						i(173291, {	-- Luminous Azerite Geode (Rank 4)
 							["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
-							["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
+							["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								az(36, 4),	-- Spark of Inspiration (Rank 4)
-							},
 						}),
 						i(173311, {	-- Resplendent Warden's Badge (Rank 4)
 							["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 							["classes"] = TANKS,
-							["cost"] = { { "c", 1719, 10 } },		-- 10x Corrupted Mementos
+							["cost"] = { { "c", 1719, 10 } },	-- 10x Corrupted Mementos
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								az(34, 4, {	-- Strength of the Warden (Rank 4)
-									["classes"] = TANKS,
-								}),
-							},
 						}),
 						i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
 							["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 							["classes"] = HEALERS,
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								az(16, 4),	-- Unwavering Ward (Rank 4)
-							},
 						}),
 						i(174876, {	-- Gouged Eye of N'Zoth
 							["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos

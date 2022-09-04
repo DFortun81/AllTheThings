@@ -514,13 +514,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(771, {	-- Explore Eastern Plaguelands
+				explorationAch(771, {	-- Explore Eastern Plaguelands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Eastern Plaguelands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(5442, {	-- Full Caravan
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
@@ -556,7 +554,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(946, {	-- The Argent Dawn
+				classicAch(946, {	-- The Argent Dawn
 					-- #if BEFORE 3.0.1
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
@@ -564,7 +562,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
 					-- #endif
 					["maps"] = { WESTERN_PLAGUELANDS },
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
@@ -651,7 +649,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
 					["icon"] = icon("INV_Misc_Token_ArgentDawn3"),
-					["maps"] = { WESTERN_PLAGUELANDS },
+					["maps"] = {
+						WESTERN_PLAGUELANDS,
+						-- #if BEFORE WRATH
+						NAXXRAMAS,
+						-- #endif
+					},
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -1650,7 +1653,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 12954 },	-- Davil's Libram
 							["coord"] = { 42.4, 18.9, WESTERN_PLAGUELANDS },
 						}),
-						objective(1, {	-- 0/1 Redpath's Shield
+						objective(2, {	-- 0/1 Redpath's Shield
 							["provider"] = { "i", 12955 },	-- Redpath's Shield
 							["coord"] = { 63.7, 57.2, WESTERN_PLAGUELANDS },
 						}),
@@ -1765,7 +1768,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.5, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(62995, {-- Underlord's Mandible
+						i(62995, {	-- Underlord's Mandible
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(62994, {	-- Rash Gloves
@@ -2392,6 +2395,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
+				}),
+				q(5961, {	-- The Champion of the Banshee Queen
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["coord"] = { 57.8, 91.8, UNDERCITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
 				}),
 				q(27619, {	-- The Commander
 					["qg"] = 16112,	-- Crusade Commander Korfax
@@ -3218,8 +3228,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 						i(136801, {	-- Divine Tome: Contemplation (Paladin)
 							["timeline"] = { "added 7.0.3.22248" },
-							["spellID"] = 121183,	-- Contemplation
 							["classes"] = { PALADIN },
+							["f"] = RECIPES,
 						}),
 						applyclassicphase(PHASE_THREE, i(19447)), 	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19446)), 	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)

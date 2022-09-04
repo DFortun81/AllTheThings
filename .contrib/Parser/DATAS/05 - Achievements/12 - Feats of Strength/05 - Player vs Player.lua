@@ -1316,7 +1316,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 				["timeline"] = { "added 9.1.5" },
 			}),
 		})),
-		n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+		n(SEASON_COSMIC, bubbleDown({ ["timeline"] = { "added 9.2.0", REMOVED_SLS4 } }, {
 			ach(15349),		-- Challenger I: Shadowlands Season 3
 			ach(15379),		-- Challenger II: Shadowlands Season 3
 			ach(15348, {	-- Combatant I: Shadowlands Season 3
@@ -1332,6 +1332,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(15351, {		-- Duelist: Shadowlands Season 3
 				illusion(6351),	-- Cosmic Flow
+				i(186776),	-- Cosmic Gladiator's Prestigious Cloak
 			}),
 			ach(15354, {		-- Elite: Shadowlands Season 3
 				i(186777),	-- Cosmic Gladiator's Tabard
@@ -1362,8 +1363,11 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 			ach(15604, {		-- Duelist: Shadowlands Season 4
 				illusion(6378),	-- Eternal Flux
+				i(192205),	-- Eternal Gladiator's Prestigious Cloak
 			}),
-			ach(15639),		-- Elite: Shadowlands Season 4
+			ach(15639, {	-- Elite: Shadowlands Season 4
+				i(192206),	-- Eternal Gladiator's Tabard
+			}),
 			ach(15605, {		-- Gladiator: Shadowlands Season 4
 				i(191290),	-- Eternal Gladiator's Soul Eater (MOUNT!)
 			}),

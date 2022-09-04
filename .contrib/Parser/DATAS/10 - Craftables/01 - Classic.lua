@@ -428,6 +428,15 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(3853),	-- Moonsteel Broadsword
 			i(12773),	-- Ornate Thorium Handaxe
 			i(5540),	-- Pearl-handled Dagger
+			i(9718, {	-- Reforged Blade of Heroes
+				["cost"] = {
+					{ "i", 9719, 1 },	-- Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- Elemental Fire
+					{ "i", 3486, 2 },	-- Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- Steel Bar
+					{ "i", 3466, 4 },	-- Strong Flux
+				},
+			}),
 			i(2864),	-- Runed Copper Breastplate
 			i(7946),	-- Runed Mithril Hammer
 			i(12260),	-- Searing Golden Blade
@@ -1270,14 +1279,14 @@ root("Craftables", tier(CLASSIC_TIER, {
 	prof(INSCRIPTION, {
 		-- #if BEFORE WOD
 		spell(61288, {	-- Minor Inscription Research
-		-- Midnight
-		r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-		r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
-		-- Lion
-		r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
-		-- Jadefire
-		r(58319, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Levitate
-		-- Celestial
+			-- Midnight
+			r(58317, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
+			r(58318, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
+			-- Lion
+			r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
+			-- Jadefire
+			r(58319, {["timeline"]={"added 3.1.0","removed 6.0.2"}}),	-- Glyph of Levitate
+			-- Celestial
 		}),
 		-- #else
 		spell(165461, {	-- Research: Celestial Ink
@@ -2092,6 +2101,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 				i(5961),	-- Dark Leather Pants
 				-- #if AFTER TBC
 				i(15062),	-- Devilsaur Leggings
+				-- #endif
+				-- #if AFTER CATA
+				applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
 				-- #endif
 				i(7373),	-- Dusky Leather Leggings
 				i(4242),	-- Embossed Leather Pants

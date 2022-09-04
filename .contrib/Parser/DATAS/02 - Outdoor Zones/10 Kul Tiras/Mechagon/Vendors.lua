@@ -23,35 +23,23 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 				["g"] = {
 					i(168400, {	-- Null Force Containment Unit (Rank 1)
 						["minReputation"] = { 2391, FRIENDLY },
-						["classes"] = TANKS,
 						["cost"] = {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
-						["g"] = {
-							az(13, 1),	-- Nullification Dynamo (Rank 1)
-						},
 					}),
 					i(168566, {	-- Null Force Cooling Unit (Rank 2)
 						["minReputation"] = { 2391, HONORED },
-						["classes"] = TANKS,
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
 						},
-						["g"] = {
-							az(13, 2),	-- Nullification Dynamo (Rank 2)
-						},
 					}),
 					i(168568, {	-- Null Force Nullifier (Rank 3)
 						["minReputation"] = { 2391, REVERED },
-						["classes"] = TANKS,
 						["cost"] = {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-						},
-						["g"] = {
-							az(13, 3),	-- Nullification Dynamo (Rank 3)
 						},
 					}),
 					i(168858, {	-- Titan Purification Protocols (Rank 1)
@@ -60,18 +48,12 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
-						["g"] = {
-							az(6, 1),	-- Purification Protocol (Rank 1)
-						},
 					}),
 					i(168859, {	-- Targeted Purification Protocols (Rank 2)
 						["minReputation"] = { 2391, HONORED },
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-						},
-						["g"] = {
-							az(6, 2),	-- Purification Protocol (Rank 2)
 						},
 					}),
 					i(168860, {	-- Enhanced Purification Protocols (Rank 3)
@@ -80,41 +62,26 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
 						},
-						["g"] = {
-							az(6, 3),	-- Purification Protocol (Rank 3)
-						},
 					}),
 					i(168932, {	-- Reactive Existence Battery (Rank 1)
 						["minReputation"] = { 2391, FRIENDLY },
-						["classes"] = HEALERS,
 						["cost"] = {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
-						["g"] = {
-							az(19, 1),	-- The Well of Existence (Rank 1)
-						},
 					}),
 					i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
 						["minReputation"] = { 2391, HONORED },
-						["classes"] = HEALERS,
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
 						},
-						["g"] = {
-							az(19, 2),	-- The Well of Existence (Rank 2)
-						},
 					}),
 					i(168934, {	-- Calibrated Existence Gauge (Rank 3)
 						["minReputation"] = { 2391, REVERED },
-						["classes"] = HEALERS,
 						["cost"] = {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-						},
-						["g"] = {
-							az(19, 3),	-- The Well of Existence (Rank 3)
 						},
 					}),
 					i(169112, {	-- Blueprint: Advanced Adventurer Augment
@@ -148,15 +115,15 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O.
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 				},

@@ -26,157 +26,133 @@ root("Craftables", tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownS
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		f(55, {		-- Consumables
+		n(ARMOR, {
+			i(55073, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Belt
+			i(55074, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Boots
+			i(55071, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Bracers
+			i(55078, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Breastplate
+			i(55072, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Gauntlets
+			i(55077, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Helm
+			i(55076, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Legguards
+			i(55075, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Shoulders
+			i(70018, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Belt
+			i(70013, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Boots
+			i(70019, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Bracers
+			i(70012, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Breastplate
+			i(70014, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Gauntlets
+			i(70015, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Helm
+			i(70016, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Legguards
+			i(70017, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Shoulders
+			i(70010, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Belt
+			i(70005, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Boots
+			i(70011, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Bracers
+			i(70004, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Breastplate
+			i(70006, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Gauntlets
+			i(70007, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Helm
+			i(70008, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Legguards
+			i(70009, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Shoulders
+			i(71992, {["timeline"]={"added 4.3.0"}}),	-- Bracers of Destructive Strength
+			i(55060),	-- Elementium Deathplate
+			i(55061),	-- Elementium Girdle of Pain
+			i(69948, {["timeline"]={"added 4.2.0"}}),	-- Emberforged Elementium Boots
+			i(69937, {["timeline"]={"added 4.2.0"}}),	-- Eternal Elementium Handguards
+			i(69936, {["timeline"]={"added 4.2.0"}}),	-- Fists of Fury
+			i(71984, {["timeline"]={"added 4.3.0"}}),	-- Foundations of Courage
+			i(55059),	-- Hardened Elementium Girdle
+			i(55058),	-- Hardened Elementium Hauberk
+			i(54853),	-- Hardened Obsidium Belt
+			i(54854),	-- Hardened Obsidium Boots
+			i(54850),	-- Hardened Obsidium Bracers
+			i(55024),	-- Hardened Obsidium Breastplate
+			i(54852),	-- Hardened Obsidium Gauntlets
+			i(55023),	-- Hardened Obsidium Helm
+			i(55022),	-- Hardened Obsidium Legguards
+			i(54876),	-- Hardened Obsidium Shoulders
+			i(69938, {["timeline"]={"added 4.2.0"}}),	-- Holy Flame Gauntlets
+			i(55063),	-- Light Elementium Belt
+			i(55062),	-- Light Elementium Chestguard
+			i(69947, {["timeline"]={"added 4.2.0"}}),	-- Mirrored Boots
+			i(55081, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Belt
+			i(55082, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Boots
+			i(55079, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Bracers
+			i(55086, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Breastplate
+			i(55080, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Gauntlets
+			i(55085, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Helm
+			i(55084, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Legguards
+			i(55083, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Shoulders
+			i(71982, {["timeline"]={"added 4.3.0"}}),	-- Pyrium Legplates of Purified Evil
+			i(55027),	-- Redsteel Belt
+			i(55028),	-- Redsteel Boots
+			i(55025),	-- Redsteel Bracers
+			i(55032),	-- Redsteel Breastplate
+			i(55026),	-- Redsteel Gauntlets
+			i(55031),	-- Redsteel Helm
+			i(55030),	-- Redsteel Legguards
+			i(55029),	-- Redsteel Shoulders
+			i(71991, {["timeline"]={"added 4.3.0"}}),	-- Soul Redeemer Bracers
+			i(55035),	-- Stormforged Belt
+			i(55036),	-- Stormforged Boots
+			i(55033),	-- Stormforged Bracers
+			i(55040),	-- Stormforged Breastplate
+			i(55034),	-- Stormforged Gauntlets
+			i(55039),	-- Stormforged Helm
+			i(55038),	-- Stormforged Legguards
+			i(55037),	-- Stormforged Shoulders
+			i(71993, {["timeline"]={"added 4.3.0"}}),	-- Titanguard Wristplates
+			i(71983, {["timeline"]={"added 4.3.0"}}),	-- Unstoppable Destroyer's Legplates
+			i(75118, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Belt
+			i(75132, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Boots
+			i(75125, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Bracers
+			i(75128, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Breastplate
+			i(75121, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Gauntlets
+			i(75129, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Helm
+			i(75133, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Legguards
+			i(75134, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Shoulders
+			i(75123, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Belt
+			i(75120, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Boots
+			i(75124, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Bracers
+			i(75135, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Breastplate
+			i(75122, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Gauntlets
+			i(75126, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Helm
+			i(75136, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Legguards
+			i(75119, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Shoulders
+			i(69946, {["timeline"]={"added 4.2.0"}}),	-- Warboots of Mighty Lords
+		}),
+		filter(MISC, {
 			i(55054),	-- Ebonsteel Belt Buckle
+			i(65365),	-- Folded Obsidium
+			i(65358, {["timeline"]={"added 4.0.3","removed 5.0.4"}}),	-- Elementium Rod
 			i(55055),	-- Elementium Shield Spike
+			i(55053),	-- Obsidium Skeleton Key
+			i(55056),	-- Pyrium Shield Spike
 			i(55057),	-- Pyrium Weapon Chain
 		}),
-		filter(DAGGERS, {
-			i(70155),	-- Brainsplinter
+		n(WEAPONS, {
+			i(70155, {["timeline"]={"added 4.2.0"}}),	-- Brainsplinter
 			i(55044),	-- Cold-Forged Shank
-			i(55068),	-- Elementium Shank
-			i(55064),	-- Elementium Spellblade
-			i(55045),	-- Fire-Etched Dagger
-			i(70156),	-- Masterwork Elementium Spellblade
-		}),
-		filter(ONE_HANDED_AXES, {
 			i(55043),	-- Decapitator's Razor
 			i(55067),	-- Elementium Bonesplitter
-			i(67602),	-- Elementium Gutslicer
-			i(70158),	-- Elementium-Edged Scalper
-		}),
-		filter(ONE_HANDED_MACES, {
-			i(55065),	-- Elementium Hammer
-			i(55046),	-- Lifeforce Hammer
-			i(70157),	-- Lightforged Elementium Hammer
-		}),
-		filter(TWO_HANDED_MACES, {
-			i(67605),	-- Forged Elementium Mindcrusher
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			i(70162),	-- Pyrium Spellward
-			i(70163),	-- Unbreakable Guardian
-		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(70164),	-- Masterwork Elementium Deathblade
-			i(55052),	-- Obsidium Executioner
-		}),
-		filter(POLEARMS, {
-			i(55066),	-- Elementium Poleaxe
-			i(55246),	-- Obsidium Bladespear
-			i(70165),	-- Witch-Hunter's Harvester
-		}),
-		filter(SHIELDS, {
 			i(55069),	-- Elementium Earthguard
+			i(67602),	-- Elementium Gutslicer
+			i(55065),	-- Elementium Hammer
+			i(55066),	-- Elementium Poleaxe
+			i(55068),	-- Elementium Shank
+			i(55064),	-- Elementium Spellblade
 			i(55070),	-- Elementium Stormshield
+			i(70158, {["timeline"]={"added 4.2.0"}}),	-- Elementium-Edged Scalper
+			i(55045),	-- Fire-Etched Dagger
+			i(67605),	-- Forged Elementium Mindcrusher
 			i(55041),	-- Hardened Obsidium Shield
+			i(55046),	-- Lifeforce Hammer
+			i(70157, {["timeline"]={"added 4.2.0"}}),	-- Lightforged Elementium Hammer
+			i(70164, {["timeline"]={"added 4.2.0"}}),	-- Masterwork Elementium Deathblade
+			i(70156, {["timeline"]={"added 4.2.0"}}),	-- Masterwork Elementium Spellblade
+			i(55246),	-- Obsidium Bladespear
+			i(55052),	-- Obsidium Executioner
+			i(70162, {["timeline"]={"added 4.2.0"}}),	-- Pyrium Spellward
 			i(55042),	-- Stormforged Shield
-		}),
-		n(HEAD, {
-			un(REMOVED_FROM_GAME, i(55077)),	-- Bloodied Pyrium Helm
-			un(REMOVED_FROM_GAME, i(70015)),	-- Bloodthirsty Ornate Pyrium Helm
-			un(REMOVED_FROM_GAME, i(70007)),	-- Bloodthirsty Pyrium Helm
-			i(55023),	-- Hardened Obsidium Helm
-			un(REMOVED_FROM_GAME, i(55085)),	-- Ornate Pyrium Helm
-			i(55031),	-- Redsteel Helm
-			i(55039),	-- Stormforged Helm
-			i(75129),	-- Vicious Ornate Pyrium Helm
-			i(75126),	-- Vicious Pyrium Helm
-		}),
-		n(SHOULDER, {
-			un(REMOVED_FROM_GAME, i(55075)),	-- Bloodied Pyrium Shoulders
-			un(REMOVED_FROM_GAME, i(70017)),	-- Bloodthirsty Ornate Pyrium Shoulders
-			un(REMOVED_FROM_GAME, i(70009)),	-- Bloodthirsty Pyrium Shoulders
-			i(54876),	-- Hardened Obsidium Shoulders
-			un(REMOVED_FROM_GAME, i(55083)),	-- Ornate Pyrium Shoulders
-			i(55029),	-- Redsteel Shoulders
-			i(55037),	-- Stormforged Shoulders
-			i(75134),	-- Vicious Ornate Pyrium Shoulders
-			i(75119),	-- Vicious Pyrium Shoulders
-		}),
-		n(CHEST, {
-			un(REMOVED_FROM_GAME, i(55078)),	-- Bloodied Pyrium Breastplate
-			un(REMOVED_FROM_GAME, i(70012)),	-- Bloodthirsty Ornate Pyrium Breastplate
-			un(REMOVED_FROM_GAME, i(70004)),	-- Bloodthirsty Pyrium Breastplate
-			i(55060),	-- Elementium Deathplate
-			i(55058),	-- Hardened Elementium Hauberk
-			i(55024),	-- Hardened Obsidium Breastplate
-			i(55062),	-- Light Elementium Chestguard
-			un(REMOVED_FROM_GAME, i(55086)),	-- Ornate Pyrium Breastplate
-			i(55032),	-- Redsteel Breastplate
-			i(55040),	-- Stormforged Breastplate
-			i(75128),	-- Vicious Ornate Pyrium Breastplate
-			i(75135),	-- Vicious Pyrium Breastplate
-		}),
-		n(HANDS, {
-			un(REMOVED_FROM_GAME, i(55072)),	-- Bloodied Pyrium Gauntlets
-			un(REMOVED_FROM_GAME, i(70014)),	-- Bloodthirsty Ornate Pyrium Gauntlets
-			un(REMOVED_FROM_GAME, i(70006)),	-- Bloodthirsty Pyrium Gauntlets
-			i(69937),	-- Eternal Elementium Handguards
-			i(69936),	-- Fists of Fury
-			i(54852),	-- Hardened Obsidium Gauntlets
-			i(69938),	-- Holy Flame Gauntlets
-			un(REMOVED_FROM_GAME, i(55080)),	-- Ornate Pyrium Gauntlets
-			i(55026),	-- Redsteel Gauntlets
-			i(55034),	-- Stormforged Gauntlets
-			i(75121),	-- Vicious Ornate Pyrium Gauntlets
-			i(75122),	-- Vicious Pyrium Gauntlets
-		}),
-		n(WRIST, {
-			un(REMOVED_FROM_GAME, i(55071)),	-- Bloodied Pyrium Bracers
-			un(REMOVED_FROM_GAME, i(70019)),	-- Bloodthirsty Ornate Pyrium Bracers
-			un(REMOVED_FROM_GAME, i(70011)),	-- Bloodthirsty Pyrium Bracers
-			i(71992),	-- Bracers of Destructive Strength
-			i(54850),	-- Hardened Obsidium Bracers
-			un(REMOVED_FROM_GAME, i(55079)),	-- Ornate Pyrium Bracers
-			i(55025),	-- Redsteel Bracers
-			i(71991),	-- Soul Redeemer Bracers
-			i(55033),	-- Stormforged Bracers
-			i(71993),	-- Titanguard Wristplates
-			i(75125),	-- Vicious Ornate Pyrium Bracers
-			i(75124),	-- Vicious Pyrium Bracers
-		}),
-		n(WAIST, {
-			un(REMOVED_FROM_GAME, i(55073)),	-- Bloodied Pyrium Belt
-			un(REMOVED_FROM_GAME, i(70018)),	-- Bloodthirsty Ornate Pyrium Belt
-			un(REMOVED_FROM_GAME, i(70010)),	-- Bloodthirsty Pyrium Belt
-			i(55061),	-- Elementium Girdle of Pain
-			i(55059),	-- Hardened Elementium Girdle
-			i(54853),	-- Hardened Obsidium Belt
-			i(55063),	-- Light Elementium Belt
-			un(REMOVED_FROM_GAME, i(55081)),	-- Ornate Pyrium Belt
-			i(55027),	-- Redsteel Belt
-			i(55035),	-- Stormforged Belt
-			i(75118),	-- Vicious Ornate Pyrium Belt
-			i(75123),	-- Vicious Pyrium Belt
-		}),
-		n(LEGS, {
-			un(REMOVED_FROM_GAME, i(55076)),	-- Bloodied Pyrium Legguards
-			un(REMOVED_FROM_GAME, i(70016)),	-- Bloodthirsty Ornate Pyrium Legguards
-			un(REMOVED_FROM_GAME, i(70008)),	-- Bloodthirsty Pyrium Legguards
-			i(71984),	-- Foundations of Courage
-			i(55022),	-- Hardened Obsidium Legguards
-			un(REMOVED_FROM_GAME, i(55084)),	-- Ornate Pyrium Legguards
-			i(71982),	-- Pyrium Legplates of Purified Evil
-			i(55030),	-- Redsteel Legguards
-			i(55038),	-- Stormforged Legguards
-			i(71983),	-- Unstoppable Destroyer's Legplates
-			i(75133),	-- Vicious Ornate Pyrium Legguards
-			i(75136),	-- Vicious Pyrium Legguards
-		}),
-		n(FEET, {
-			un(REMOVED_FROM_GAME, i(55074)),	-- Bloodied Pyrium Boots
-			un(REMOVED_FROM_GAME, i(70013)),	-- Bloodthirsty Ornate Pyrium Boots
-			un(REMOVED_FROM_GAME, i(70005)),	-- Bloodthirsty Pyrium Boots
-			i(69948),	-- Emberforged Elementium Boots
-			i(54854),	-- Hardened Obsidium Boots
-			i(69947),	-- Mirrored Boots
-			un(REMOVED_FROM_GAME, i(55082)),	-- Ornate Pyrium Boots
-			i(55028),	-- Redsteel Boots
-			i(55036),	-- Stormforged Boots
-			i(75132),	-- Vicious Ornate Pyrium Boots
-			i(75120),	-- Vicious Pyrium Boots
-			i(69946),	-- Warboots of Mighty Lords
+			i(70163, {["timeline"]={"added 4.2.0"}}),	-- Unbreakable Guardian
+			i(70165, {["timeline"]={"added 4.2.0"}}),	-- Witch-Hunter's Harvester
 		}),
 	}),
 	prof(ENCHANTING, {

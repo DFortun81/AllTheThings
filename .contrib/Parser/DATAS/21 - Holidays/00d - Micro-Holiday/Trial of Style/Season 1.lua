@@ -87,3 +87,11 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 		},
 	},
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48058),	-- Ensemble: Mana-Etched Regalia
+		q(48059),	-- Ensemble: Der'izu Armor
+		q(48060),	-- Ensemble: Righteous Battleplate
+		q(48061),	-- Ensemble: Obsidian Prowler's Garb
+	}),
+});

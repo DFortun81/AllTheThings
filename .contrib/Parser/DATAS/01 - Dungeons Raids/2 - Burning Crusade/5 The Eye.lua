@@ -91,45 +91,37 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				["groups"] = {
 					i(30280),	-- Pattern: Belt of Blasting
 					i(30302, {	-- Pattern: Belt of Deep Shadow
-						["spellID"] = 36351,	-- Belt of Deep Shadow
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30301, {	-- Pattern: Belt of Natural Power
-						["spellID"] = 36349,	-- Belt of Natural Power
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30303, {	-- Pattern: Belt of the Black Eagle
-						["spellID"] = 36352,	-- Belt of the Black Eagle
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30281),	-- Pattern: Belt of the Long Road
 					i(30282),	-- Pattern: Boots of Blasting
 					i(30305, {	-- Pattern: Boots of Natural Grace
-						["spellID"] = 36355,	-- Boots of Natural Grace
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30307, {	-- Pattern: Boots of the Crimson Hawk
-						["spellID"] = 36358,	-- Boots of the Crimson Hawk
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30283),	-- Pattern: Boots of the Long Road
 					i(30306, {	-- Pattern: Boots of Utter Darkness
-						["spellID"] = 36357,	-- Boots of Utter Darkness
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30308, {	-- Pattern: Hurricane Boots
-						["spellID"] = 36359,	-- Hurricane Boots
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(30304, {	-- Pattern: Monsoon Belt
-						["spellID"] = 36353,	-- Monsoon Belt
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
@@ -225,7 +217,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1576, {	-- Kael'thas Sunstrider
 				["creatureID"] = 19622,
 				["groups"] = {
-					removeclassicphase(ach(696, {	-- Tempest Keep
+					classicAch(696, {	-- Tempest Keep
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							10445,	-- The Vials of Eternity
@@ -233,15 +225,15 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
-					removeclassicphase(ach(885, {	-- Ashes of Al'ar
+					}),
+					classicAch(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
 						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
-					})),
+					}),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)
 					i(32405),	-- Verdant Sphere
 					i(30236, {	-- Chestguard of the Vanquished Champion

@@ -13,9 +13,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65119, {	-- Automa Ops
 				["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
 			}),
-			--q(65117, {	-- Bad Samples
-			--	["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
-			--}),
+			q(65117, {	-- Bad Samples
+				["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
+			}),
 			q(65230, {	-- Bot-Any
 				["coord"] = { 47.4, 80.3, ZERETH_MORTIS },
 			}),
@@ -57,9 +57,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 		})),
 		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 }, ["description"] = "Requires Cachial" }, {
-			--q(65406, {	-- Connecting It All
-			--	["coord"] = { 65.7, 41, ZERETH_MORTIS },
-			--}),
+			q(65406, {	-- Connecting It All
+				["coord"] = { 65.7, 41, ZERETH_MORTIS },
+			}),
 			q(65417, {	-- Connecting It All
 				["coord"] = { 55, 48, ZERETH_MORTIS },
 			}),
@@ -84,9 +84,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(65405, {	-- Perplexing Problem
 				["coord"] = { 57.2,65.7, ZERETH_MORTIS },
 			}),
-			--q(65412, {	-- Puzzling It Out
-			--	["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
-			--}),
+			q(65412, {	-- Puzzling It Out
+				["coord"] = { 51.3, 25.8, ZERETH_MORTIS },
+			}),
 			q(65413, {	-- Puzzling It Out
 				["coord"] = { 55.9, 84, ZERETH_MORTIS },
 			}),

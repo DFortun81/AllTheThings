@@ -597,6 +597,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 									i(163355, {	-- 7th Legionnaire's Bloody Drape
 										["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 									}),
+									i(163339),	-- 7th Legionnaire's Hood
 									i(163337),	-- 7th Legionnaire's Amice
 									i(163248),	-- 7th Legionnaire's Robes
 									i(163275),	-- 7th Legionnaire's Cuffs

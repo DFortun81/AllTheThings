@@ -84,3 +84,11 @@ root("Holidays", holiday(1671631, {	-- Trial of Style
 		},
 	},
 }));
+root(ROOTS.HiddenQuestTriggers, {
+	tier(BFA_TIER, {
+		q(55559),	-- Ensemble: Armor of the Amaranthine Path
+		q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
+		q(55572),	-- Ensemble: Restless Dreambound Battlegear
+		q(55587),	-- Ensemble: Tranquil Spiritbind Regalia
+	}),
+});

@@ -86,8 +86,8 @@ namespace ATT
             /// All of the SourceID's harvested for Legion Artifacts
             /// </summary>
             public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
-
             #endregion
+
             #region Filters
             /// <summary>
             /// All of the filter IDs that can be used in the addon.
@@ -528,16 +528,20 @@ namespace ATT
                 // get the appropriate merge objects for this data based on the matching keys
                 foreach (string key in PostProcessMergeIntos.Keys)
                 {
-                    // does this data contain the key?
-                    if (data.TryGetValue(key, out object keyValue))
+                    // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
+                    if (key != "achID" || !ProcessingAchievementCategory)
                     {
-                        // get the container for objects of this key
-                        if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                        // does this data contain the key?
+                        if (data.TryGetValue(key, out object keyValue))
                         {
-                            // merge the objects into the data object
-                            foreach (Dictionary<string, object> mergeObject in mergeObjects)
-                                // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                Merge(data, "g", mergeObject);
+                            // get the container for objects of this key
+                            if (PostProcessMergeIntos.TryGetValue(key, out Dictionary<object, List<Dictionary<string, object>>> typeObjects) && typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                            {
+                                // merge the objects into the data object
+                                foreach (Dictionary<string, object> mergeObject in mergeObjects)
+                                    // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                    Merge(data, "g", mergeObject);
+                            }
                         }
                     }
                 }
@@ -1660,6 +1664,7 @@ namespace ATT
                     case "assetID":
                     case "questIDA":
                     case "questIDH":
+                    case "sqreq":
                         {
                             item[field] = Convert.ToInt64(value);
                             break;
@@ -1929,6 +1934,10 @@ namespace ATT
                     case "_quests":
                     case "_items":
                     case "_npcs":
+                    case "_objects":
+                    case "_achievements":
+                    case "_factions":
+                    case "_encounter":
                         if (value is List<object> idList)
                         {
                             item[field] = idList;
@@ -2228,6 +2237,63 @@ namespace ATT
             {
                 // Find the Object Dictionary that matches the data.
                 Dictionary<string, object> entry = null;
+
+#if RETAIL
+                // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
+                if (data2.TryGetValue("aqd", out Dictionary<string, object> aqd) && data2.TryGetValue("hqd", out Dictionary<string, object> hqd))
+                {
+                    // questID used in both faction data objects
+                    if (aqd.TryGetValue("questID", out long aQuestID) && hqd.TryGetValue("questID", out long hQuestID))
+                    {
+                        // same questID, then extract the questID for the single object, and leave the rest as is
+                        if (aQuestID == hQuestID)
+                        {
+                            data2["questID"] = aQuestID;
+                            aqd.Remove("questID");
+                            hqd.Remove("questID");
+                        }
+                        else
+                        {
+                            // different questID
+                            // split into two separate quest objects
+                            Dictionary<string, object> aQuest = new Dictionary<string, object>();
+                            Dictionary<string, object> hQuest = new Dictionary<string, object>();
+
+                            // remove the faction-specific objects
+                            data2.Remove("aqd");
+                            data2.Remove("hqd");
+
+                            // copy the shared data into each
+                            foreach (KeyValuePair<string, object> info in data2)
+                            {
+                                aQuest.Add(info.Key, info.Value);
+                                hQuest.Add(info.Key, info.Value);
+                            }
+
+                            // copy the faction-specific data into respective objects
+                            foreach (KeyValuePair<string, object> info in aqd)
+                            {
+                                aQuest.Add(info.Key, info.Value);
+                            }
+                            foreach (KeyValuePair<string, object> info in hqd)
+                            {
+                                hQuest.Add(info.Key, info.Value);
+                            }
+
+                            // apply the faction to the quests
+                            aQuest["r"] = 2;
+                            hQuest["r"] = 1;
+
+                            // merge both of them instead of this one
+                            Merge(container, aQuest);
+                            Merge(container, hQuest);
+                            return;
+                        }
+                    }
+
+                    LogDebug($"Converted AQD type into single Quest for Retail. {MiniJSON.Json.Serialize(data2)}");
+                }
+#endif
 
                 // Merge in/out any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group

@@ -21,9 +21,11 @@ _.Zones =
 				}),
 				p(1774, {	-- Eldritch Manafiend
 					["crs"] = { 98386 },	-- Eldritch Manafiend
+					["description"] = "This pet can only spawn during the night between 8:30pm to 6:30am server time.",
 				}),
 				p(1773, {	-- Erudite Manafiend
 					["crs"] = { 98385 },	-- Erudite Manafiend
+					["description"] = "This pet can only spawn during the day between 6:30am to 8:30pm server time.",
 				}),
 				p(1731, {	-- Felspider
 					["crs"] = { 97323 },	-- Felspider

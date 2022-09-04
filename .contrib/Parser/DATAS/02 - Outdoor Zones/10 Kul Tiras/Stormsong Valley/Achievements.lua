@@ -5,12 +5,6 @@
 root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 	m(STORMSONG_VALLEY, {
 		n(ACHIEVEMENTS, {
-			ach(13042, {	-- About To Break
-				["altQuests"] = {
-					53108,	-- Iconoclasm
-					53344	-- Iconoclasm
-				},
-			}),
 			ach(12940),		-- Adventurer of Stormsong Valley
 			ach(13047),		-- Clever Use of Mechanical Explosives
 			ach(13053, {	-- Deadliest Cache

@@ -143,6 +143,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62858, {	-- Return Lost Souls (10 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -150,6 +151,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -157,6 +159,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!

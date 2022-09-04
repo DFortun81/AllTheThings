@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(775, {	-- Explore Burning Steppes
+				explorationAch(775, {	-- Explore Burning Steppes
 					-- #if BEFORE WRATH
 					["description"] = "Explore Burning Steppes, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {

@@ -208,6 +208,7 @@ _.Instances = { tier(CATA_TIER, {
 							i(77983),	-- Indomitable Pride
 							i(77979),	-- Vial of Shadows
 							i(77981),	-- Windward Heart
+							currency(614),	-- Mote of Darkness
 						},
 					}),
 					ach(6106, {	-- Siege of Wyrmrest Temple
@@ -372,12 +373,12 @@ _.Instances = { tier(CATA_TIER, {
 							i(72007),	-- Pattern: Rended Earth Leggings
 							i(72009),	-- Pattern: Thundering Deathscale Wristguards
 							i(72000),	-- Pattern: World Mender's Pants
-							i(72015),	-- Plans: Bracers of Destructive Strength
-							i(72013),	-- Plans: Foundations of Courage
-							i(72001),	-- Plans: Pyrium Legplates of Purified Evil
-							i(72014),	-- Plans: Soul Redeemer Bracers
-							i(72016),	-- Plans: Titanguard Wristplates
-							i(72012),	-- Plans: Unstoppable Destroyer's Legplates
+							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
+							i(72013),	-- Plans: Foundations of Courage (RECIPE!)
+							i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
+							i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
+							i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
+							i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
 							i(77192),	-- Ruinblaster Shotgun
 							i(78879),	-- Sash of Relentless Truth
 							i(78878),	-- Spine of the Thousand Cuts
@@ -639,12 +640,12 @@ _.Instances = { tier(CATA_TIER, {
 							i(72007),	-- Pattern: Rended Earth Leggings
 							i(72009),	-- Pattern: Thundering Deathscale Wristguards
 							i(72000),	-- Pattern: World Mender's Pants
-							i(72015),	-- Plans: Bracers of Destructive Strength
-							i(72013),	-- Plans: Foundations of Courage
-							i(72001),	-- Plans: Pyrium Legplates of Purified Evil
-							i(72014),	-- Plans: Soul Redeemer Bracers
-							i(72016),	-- Plans: Titanguard Wristplates
-							i(72012),	-- Plans: Unstoppable Destroyer's Legplates
+							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
+							i(72013),	-- Plans: Foundations of Courage (RECIPE!)
+							i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
+							i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
+							i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
+							i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
 							i(77192),	-- Ruinblaster Shotgun
 							i(78879),	-- Sash of Relentless Truth
 							i(78878),	-- Spine of the Thousand Cuts

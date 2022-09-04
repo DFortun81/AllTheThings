@@ -8,6 +8,9 @@ _.Zones =
 		m(LEGION_DALARAN, {
 			n(-213, {	-- The Underbelly
 				n(ACHIEVEMENTS, {
+					ach(1958, {	-- I Smell A Giant Rat
+						["requireSkill"] = FISHING,
+					}),
 					ach(11066, {	-- Underbelly Tycoon
 						["cost"] = { { "c", 1149, 20000 } },	-- 20,000x Sightless Eyes
 						["g"] = {
@@ -22,14 +25,20 @@ _.Zones =
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 						["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
+						["timeline"] = { "added 7.0.3.22248" },
 						["g"] = {
 							i(136803, {	-- Dirty Tricks, Vol 1: Detection
 								--["spellID"] = 210108,	-- Detection
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(136927),	-- Scarlet Confessional Book (TOY!)
-							i(141056),	-- Technique: Glyph of Burnout (RECIPE!)
+							i(136927, {	-- Scarlet Confessional Book (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+							i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
 							i(136972, {	-- Tome of Hex: Cockroach
-								["spellID"] = 211015,	-- Hex(Cockroach)
+								["timeline"] = { "added 7.0.3.22248" },
 								["f"] = RECIPES,
 							}),
 						},
@@ -103,7 +112,7 @@ _.Zones =
 					n(97360, {	-- Matthew Rabis <Feral Warlock>
 						["coord"] = { 47.0, 56.6, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137828, {	-- Design: Twisted Pandemonite Choker (Rank 2)
+							i(137828, {	-- Design: Twisted Pandemonite Choker [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
 							i(139425, {	-- Imp-Binding Contract
@@ -120,7 +129,7 @@ _.Zones =
 					n(97361, {	-- Oxana Demonslay <Weapons and Secrets>
 						["coord"] = { 67.4, 18.1, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137831, {	-- Design: Vindictive Pandemonite Choker (Rank 2)
+							i(137831, {	-- Design: Vindictive Pandemonite Choker [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
 							i(141038, {	-- Technique: Glyph of Shadow-Enemies (RECIPE!)
@@ -131,61 +140,61 @@ _.Zones =
 					n(107760, {	-- Strap Bucklebolt <Belts>
 						["coord"] = { 65.8, 80.8, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137966, {	-- Pattern: Imbued Silkweave Cinch (Rank 2)
+							i(137966, {	-- Pattern: Imbued Silkweave Cinch [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137974, {	-- Pattern: Imbued Silkweave Cinch (Rank 3)
+							i(137974, {	-- Pattern: Imbued Silkweave Cinch [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(137954, {	-- Pattern: Silkweave Cinch (Rank 2)
+							i(137954, {	-- Pattern: Silkweave Cinch [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137962, {	-- Pattern: Silkweave Cinch (Rank 3)
+							i(137962, {	-- Pattern: Silkweave Cinch [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(137901, {	-- Recipe: Battlebound Girdle (Rank 2)
+							i(137901, {	-- Recipe: Battlebound Girdle [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137913, {	-- Recipe: Battlebound Girdle (Rank 3)
+							i(137913, {	-- Recipe: Battlebound Girdle [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(123949, {	-- Recipe: Demonsteel Waistguard (Rank 3)
+							i(123949, {	-- Recipe: Demonsteel Waistguard [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(137885, {	-- Recipe: Dreadleather Belt (Rank 2)
+							i(137885, {	-- Recipe: Dreadleather Belt [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137893, {	-- Recipe: Dreadleather Belt (Rank 3)
+							i(137893, {	-- Recipe: Dreadleather Belt [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(137917, {	-- Recipe: Gravenscale Girdle (Rank 2)
+							i(137917, {	-- Recipe: Gravenscale Girdle [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137925, {	-- Recipe: Gravenscale Girdle (Rank 3)
+							i(137925, {	-- Recipe: Gravenscale Girdle [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
 								},
 							}),
-							i(123929, {	-- Recipe: Leystone Waistguard (Rank 2)
+							i(123929, {	-- Recipe: Leystone Waistguard [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(123937, {	-- Recipe: Leystone Waistguard (Rank 3)
+							i(123937, {	-- Recipe: Leystone Waistguard [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
-							i(137869, {	-- Recipe: Warhide Belt (Rank 2)
+							i(137869, {	-- Recipe: Warhide Belt [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137881, {	-- Recipe: Warhide Belt (Rank 3)
+							i(137881, {	-- Recipe: Warhide Belt [Rank 3] (RECIPE!)
 								["cost"] = { { "c", 1149, 500 }, },		-- 500x Sightless Eye
 							}),
 						},
@@ -193,13 +202,13 @@ _.Zones =
 					n(97366, {	-- The Widow <Tools of Deception>
 						["coord"] = { 71.5, 24.0, LEGION_THE_UNDERBELLY },
 						["g"] = {
-							i(137829, {	-- Design: Subtle Shadowruby Pendant (Rank 2)
+							i(137829, {	-- Design: Subtle Shadowruby Pendant [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137706, {	-- Schematic: Gunpowder Charge (Rank 2)
+							i(137706, {	-- Schematic: Gunpowder Charge [Rank 2] (RECIPE!)
 								["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 							}),
-							i(137720, {	-- Schematic: Gunpowder Charge (Rank 3)
+							i(137720, {	-- Schematic: Gunpowder Charge [Rank 3] (RECIPE!)
 								["cost"] = {
 									{ "c", 1149, 500 },	-- 500x Sightless Eye
 									{ "g", 15000000 },	-- 1,500g
@@ -242,3 +251,13 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(42527),	-- FLAG - Portal - Guard Station - using "Portal Key: Sewer Guard Station" (itemID 138027)
+		q(42528),	-- FLAG - Portal - Black Market - using "Portal Key: Black Market" (itemID 138028)
+		q(42529),	-- FLAG - Portal - Inn Entrance - using "Portal Key: Inn Entrance" (itemID 138029)
+		q(42530),	-- FLAG - Portal - Alchemy Room - using "Portal Key: Alchemists' Lair" (itemID 138030)
+		q(42531),	-- FLAG - Portal - Abandoned Shack - using "Portal Key: Abandoned Shack" (itemID 138031)
+		q(42532),	-- FLAG - Portal - Rear Entrance - using "Portal Key: Rear Entrance" (itemID 138032)
+	}),
+});

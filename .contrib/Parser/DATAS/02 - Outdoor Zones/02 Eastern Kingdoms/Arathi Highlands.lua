@@ -45,13 +45,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(761, {	-- Explore Arathi Highlands
+				explorationAch(761, {	-- Explore Arathi Highlands
 					-- #if BEFORE WRATH
 					["description"] = "Explore Arathi Highlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
@@ -1448,6 +1446,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
+				}),
+				q(638, {	-- Trollbane
+					["qg"] = 2497,	-- Nimboya
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 32,
 				}),
 				q(693, {	-- Wand over Fist
 					["qg"] = 2789,	-- Skuerto

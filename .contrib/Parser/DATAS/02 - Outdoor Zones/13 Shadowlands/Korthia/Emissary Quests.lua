@@ -7,6 +7,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		n(EMISSARY_QUESTS, {
 			q(64012, {	-- Supplies from Death's Advance
 				["repeatable"] = true,
+				["minReputation"] = { 2470, 8 },	-- Death's Advance, Exalted
 				["g"] = {
 					i(186650, {	-- Death's Advance Supplies
 						i(186644),	-- Beryl Shardhide (MOUNT!)
@@ -17,12 +18,21 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			q(64266, {	-- Supplies from The Archivist's Codex
 				["repeatable"] = true,
+				["minReputation"] = { 2472, 8 },	-- The Archivist's Codex, Exalted
 				["g"] = {
 					i(187028, {	-- Supplies of the Archivists' Codex
 						i(186641),	-- Tamed Mauler (MOUNT!)
 						i(186538),	-- Gnashtooth (PET!)
 					}),
 				},
+			}),
+		}),
+		n(FACTIONS, {
+			faction(2470, {	-- Death's Advance
+				ach(15059),	-- Death's Advance
+			}),
+			faction(2472, {	-- The Archivist's Codex
+				ach(15069),	-- The Archivist's Codex
 			}),
 		}),
 	}),

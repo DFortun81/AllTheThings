@@ -235,15 +235,7 @@ namespace ATT
                 int startIndex = 0;
                 var builder = new StringBuilder();
                 ProcessContent(builder, content, ref startIndex, startIndex, content.Length);
-                var newContent = builder.ToString();
-
-                /*
-                // For debugging, uncomment and put a break point on the return.
-                File.WriteAllText("D://OldContent.txt", content);
-                File.WriteAllText("D://NewContent.txt", newContent);
-                */
-
-                return newContent;
+                return builder.ToString();
             }
             return content;
         }
@@ -516,6 +508,9 @@ namespace ATT
                 {
                     Trace.WriteLine(fileName);
                     Trace.WriteLine(e.Message);
+#if CRIEVE
+                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
+#endif
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
@@ -546,7 +541,9 @@ namespace ATT
                         }
                     }
                     else Trace.WriteLine(e);
-
+#if CRIEVE
+                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
+#endif
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }

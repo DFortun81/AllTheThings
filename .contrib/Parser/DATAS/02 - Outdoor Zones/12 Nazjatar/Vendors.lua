@@ -83,89 +83,48 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["g"] = {
 				i(168837, {	-- Depth Forged Aegis (Rank 1)
 					["minReputation"] = { 2373, FRIENDLY },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(25, 1),	-- Aegis of the Deep (Rank 1)
-					},
 				}),
 				i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
 					["minReputation"] = { 2373, HONORED },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(25, 2),	-- Aegis of the Deep (Rank 2)
-					},
 				}),
 				i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
 					["minReputation"] = { 2373, REVERED },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(25, 3, {	-- Aegis of the Deep
-							["classes"] = TANKS,
-						}),
-					},
 				}),
 				i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
 					["minReputation"] = { 2373, FRIENDLY },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(17, 1),	-- The Ever-Rising Tide (Rank 1)
-					},
 				}),
 				i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
 					["minReputation"] = { 2373, HONORED },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(17, 2),	-- The Ever-Rising Tide (Rank 2)
-					},
 				}),
 				i(168930, {	-- Tome of the Quickening Tides (Rank 3)
 					["minReputation"] = { 2373, REVERED },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(17, 3),	-- The Ever-Rising Tide (Rank 3)
-					},
 				}),
 				i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
 					["minReputation"] = { 2373, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(28, 1),	-- The Unbound Force (Rank 1)
-					},
 				}),
 				i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
 					["minReputation"] = { 2373, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(28, 2),	-- The Unbound Force (Rank 2)
-					},
 				}),
 				i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
 					["minReputation"] = { 2373, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(28, 3),	-- The Unbound Force (Rank 3)
-					},
 				}),
 				i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 					["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(27, 2),	-- Memory of Lucid Dreams (Rank 3)
-					},
 				}),
 				i(168849, {	-- Pearl of Luminous Designs (Rank 4)
 					["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
-					},
 				}),
 				i(171151, {	-- Conch of Wa'mundi
 					["cost"] = 65000000,	-- 6,500g
@@ -217,26 +176,17 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				i(168851, {	-- Enduring Battlefield Memento (Rank 2)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
-					["g"] = {
-						az(15, 2),	-- Ripple in Space (Rank 2)
-					},
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
 					["cost"] = {
 						{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
 						{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
 					},
-					["g"] = {
-						az(15, 3),	-- Ripple in Space (Rank 3)
-					},
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
 					["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
 					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(15, 4),	-- Ripple in Space (Rank 4)
-					},
 				}),
 				i(169275, {	-- Alliance War Banner (TOY!)
 					["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
@@ -457,25 +407,16 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 				i(168851, {	-- Enduring Battlefield Memento [Rank 2] (RECIPE!)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
-					["g"] = {
-						az(15, 2),	-- Ripple in Space (Rank 2)
-					},
 				}),
 				i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
 					["cost"] = {
 						{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
 						{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
 					},
-					["g"] = {
-						az(15, 3),	-- Ripple in Space (Rank 3)
-					},
 				}),
 				i(168853, {	-- Glinting Battlefield Memento (Rank 4)
 					["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(15, 4),	-- Ripple in Space (Rank 4)
-					},
 				}),
 				i(169357, {	-- Chitterspine Devourer (PET!)
 					["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
@@ -862,89 +803,48 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 			["g"] = {
 				i(168837, {	-- Depth Forged Aegis (Rank 1)
 					["minReputation"] = { 2400, FRIENDLY },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(25, 1),	-- Aegis of the Deep (Rank 1)
-					},
 				}),
 				i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
 					["minReputation"] = { 2400, HONORED },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(25, 2),	-- Aegis of the Deep (Rank 2)
-					},
 				}),
 				i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
 					["minReputation"] = { 2400, REVERED },
-					["classes"] = TANKS,
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(25, 3, {	-- Aegis of the Deep
-							["classes"] = TANKS,
-						}),
-					},
 				}),
 				i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
 					["minReputation"] = { 2400, FRIENDLY },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(17, 1),	-- The Ever-Rising Tide (Rank 1)
-					},
 				}),
 				i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
 					["minReputation"] = { 2400, HONORED },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(17, 2),	-- The Ever-Rising Tide (Rank 2)
-					},
 				}),
 				i(168930, {	-- Tome of the Quickening Tides (Rank 3)
 					["minReputation"] = { 2400, REVERED },
-					["classes"] = HEALERS,
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(17, 3),	-- The Ever-Rising Tide (Rank 3)
-					},
 				}),
 				i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
 					["minReputation"] = { 2400, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					["g"] = {
-						az(28, 1),	-- The Unbound Force (Rank 1)
-					},
 				}),
 				i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
 					["minReputation"] = { 2400, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					["g"] = {
-						az(28, 2),	-- The Unbound Force (Rank 2)
-					},
 				}),
 				i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
 					["minReputation"] = { 2400, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(28, 3),	-- The Unbound Force (Rank 3)
-					},
 				}),
 				i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 					["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
-					["g"] = {
-						az(27, 2),	-- Memory of Lucid Dreams (Rank 3)
-					},
 				}),
 				i(168849, {	-- Pearl of Luminous Designs (Rank 4)
 					["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
 					["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
-					},
 				}),
 				i(163073, {	-- Conch of Wa'mundi
 					["cost"] = 65000000,	-- 6,500g

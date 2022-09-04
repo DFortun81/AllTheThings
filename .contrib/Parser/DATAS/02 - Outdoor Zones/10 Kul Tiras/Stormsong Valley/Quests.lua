@@ -1253,27 +1253,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 75.5, 26.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(155180),	-- Darkwater Hood
-							i(155186),	-- Darkwater Shoulderpads
-							i(155177),	-- Dread Corsair Greathelm
-							i(155187),	-- Dread Corsair Shoulderplates
-							i(155178),	-- Tidespeaker Circlet
-							i(155188),	-- Tidespeaker Mantle
-							i(155189),	-- Stormchaser Pauldrons
-							i(155179),	-- Stormchaser Coif
-						},
-					}),
-					i(175303),	-- Tidespeaker Circlet (no azerite version)
-					i(175328),	-- Tidespeaker Mantle (no azerite version)
-					i(175304),	-- Stormchaser Coif (no azerite version)
-					i(175329),	-- Stormchaser Pauldrons (no azerite version)
-					i(175305),	-- Darkwater Hood (no azerite version)
-					i(175326),	-- Darkwater Shoulderpads (no azerite version)
-					i(175302),	-- Dread Corsair Greathelm (no azerite version)
-					i(175327),	-- Dread Corsair Shoulderplates (no azerite version)
+					azeriteItem(155180),	-- Darkwater Hood
+					azeriteItem(155186),	-- Darkwater Shoulderpads
+					azeriteItem(155177),	-- Dread Corsair Greathelm
+					azeriteItem(155187),	-- Dread Corsair Shoulderplates
+					azeriteItem(155178),	-- Tidespeaker Circlet
+					azeriteItem(155188),	-- Tidespeaker Mantle
+					azeriteItem(155189),	-- Stormchaser Pauldrons
+					azeriteItem(155179),	-- Stormchaser Coif
+					azewrongItem(175303),	-- Tidespeaker Circlet (no azerite version)
+					azewrongItem(175328),	-- Tidespeaker Mantle (no azerite version)
+					azewrongItem(175304),	-- Stormchaser Coif (no azerite version)
+					azewrongItem(175329),	-- Stormchaser Pauldrons (no azerite version)
+					azewrongItem(175305),	-- Darkwater Hood (no azerite version)
+					azewrongItem(175326),	-- Darkwater Shoulderpads (no azerite version)
+					azewrongItem(175302),	-- Dread Corsair Greathelm (no azerite version)
+					azewrongItem(175327),	-- Dread Corsair Shoulderplates (no azerite version)
 				},
 			}),
 			q(49997, {	-- Storm's Judgment
@@ -1286,27 +1281,22 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["coord"] = { 66.4, 56.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(155168),	-- Darkwater Tunic
-							i(160878),	-- Darkwater Shoulderguards
-							i(155166),	-- Dread Corsair Breastplate
-							i(160880),	-- Dread Corsair Pauldrons
-							i(160877),	-- Tidespeaker Amice
-							i(155185),	-- Tidespeaker Vestments
-							i(160879),	-- Stormchaser Shoulderguards
-							i(155167),	-- Stormchaser Chainmail
-						},
-					}),
-					i(175364),	-- Darkwater Tunic (no azerite version)
-					i(175343),	-- Darkwater Shoulderguards (no azerite version)
-					i(175362),	-- Dread Corsair Breastplate (no azerite version)
-					i(175345),	-- Dread Corsair Pauldrons (no azerite version)
-					i(175342),	-- Tidespeaker Amice (no azerite version)
-					i(175365),	-- Tidespeaker Vestments (no azerite version)
-					i(175344),	-- Stormchaser Shoulderguards (no azerite version)
-					i(175363),	-- Stormchaser Chainmail (no azerite version)
+					azeriteItem(155168),	-- Darkwater Tunic
+					azeriteItem(160878),	-- Darkwater Shoulderguards
+					azeriteItem(155166),	-- Dread Corsair Breastplate
+					azeriteItem(160880),	-- Dread Corsair Pauldrons
+					azeriteItem(160877),	-- Tidespeaker Amice
+					azeriteItem(155185),	-- Tidespeaker Vestments
+					azeriteItem(160879),	-- Stormchaser Shoulderguards
+					azeriteItem(155167),	-- Stormchaser Chainmail
+					azewrongItem(175364),	-- Darkwater Tunic (no azerite version)
+					azewrongItem(175343),	-- Darkwater Shoulderguards (no azerite version)
+					azewrongItem(175362),	-- Dread Corsair Breastplate (no azerite version)
+					azewrongItem(175345),	-- Dread Corsair Pauldrons (no azerite version)
+					azewrongItem(175342),	-- Tidespeaker Amice (no azerite version)
+					azewrongItem(175365),	-- Tidespeaker Vestments (no azerite version)
+					azewrongItem(175344),	-- Stormchaser Shoulderguards (no azerite version)
+					azewrongItem(175363),	-- Stormchaser Chainmail (no azerite version)
 				},
 			}),
 			q(50611, {	-- Storm's Vengeance
@@ -1420,20 +1410,14 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["_drop"] = { "g" },
 				["g"] = {
-					n(-862, {	-- Hearth of Azeroth
-						["description"] = "The Heart of Azeroth Necklace is required to obtain these items.",
-						["g"] = {
-							i(163863),	-- Bartered Vrykul Cowl
-							i(163864),	-- Bartered Vrykul Facemask
-							i(163862),	-- Bartered Vrykul Hood
-							i(163865),	-- Bartered Vrykul Warhelm
-						},
-					}),
-				--	azewrong
-					i(180028),	-- Bartered Vrykul Cowl
-					i(180029),	-- Bartered Vrykul Facemask
-					i(180027),	-- Bartered Vrykul Hood
-					i(180030),	-- Bartered Vrykul Warhelm
+					azeriteItem(163863),	-- Bartered Vrykul Cowl
+					azeriteItem(163864),	-- Bartered Vrykul Facemask
+					azeriteItem(163862),	-- Bartered Vrykul Hood
+					azeriteItem(163865),	-- Bartered Vrykul Warhelm
+					azewrongItem(180028),	-- Bartered Vrykul Cowl
+					azewrongItem(180029),	-- Bartered Vrykul Facemask
+					azewrongItem(180027),	-- Bartered Vrykul Hood
+					azewrongItem(180030),	-- Bartered Vrykul Warhelm
 				},
 				["maps"] = {
 					NAZMIR,

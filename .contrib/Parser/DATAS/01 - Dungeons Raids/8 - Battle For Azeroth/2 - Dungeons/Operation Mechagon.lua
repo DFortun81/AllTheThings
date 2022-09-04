@@ -24,9 +24,6 @@ _.Instances = { tier(BFA_TIER, {
 			n(AZERITE_ESSENCES, {
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
 					["cost"] = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
-					["g"] = {
-						az(22, 3),	-- Vision of Perfection (Rank 3)
-					},
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -187,9 +184,7 @@ _.Instances = { tier(BFA_TIER, {
 							},
 							["g"] = {
 							--	i(169378),	-- Golden Snorf
-								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
-									az(22, 1),	-- Vision of Perfection (Rank 1)
-								}),
+								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
@@ -224,9 +219,6 @@ _.Instances = { tier(BFA_TIER, {
 						["g"] = {
 							i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									az(22, 4),	-- Vision of Perfection (Rank 4)
-								},
 							}),
 						},
 					}),
@@ -346,6 +338,17 @@ _.Instances = { tier(BFA_TIER, {
 								i(168972),	-- Pyroclastic Greatboots
 								i(169529),	-- Recipe: Monelite Reinforced Chassis (Rank 3)
 								i(169609),	-- Schematic: Super-Charged Engine (Rank 3)
+								n(-857, {	-- Mythic+
+									-- This one I thoguht was confirmed, but all screenshots were removed once it was fixed...
+									i(199921, {	-- Trashmaster's Mantle
+										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...",
+									}),
+									-- This one confirmed multiple times on Discord from both vault and direct drop, on both Alliance and Horde
+									i(199921, {	-- Trashmaster's Mantle
+										["description"] = "Blizzard didn't want the M+ version of this cloak to be able to be used for the related Quest. So they created a brand new ItemID along with new SourceIDs...\n\nConfirmed as both direct M+ drop and from Great Vault.",
+										["modID"] = 35,
+									}),
+								}),
 							},
 						}),
 						e(2348, {	-- Machinist's Garden
@@ -378,9 +381,7 @@ _.Instances = { tier(BFA_TIER, {
 									i(168830),	-- Aerial Unit R-21/X (MOUNT!)
 								}),
 								i(169378),	-- Golden Snorf
-								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
-									az(22, 1),	-- Vision of Perfection (Rank 1)
-								}),
+								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(169172),	-- Blueprint: Perfectly Timed Differential
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board

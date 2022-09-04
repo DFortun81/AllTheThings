@@ -139,12 +139,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(562, {	-- Warp Splinter
 					["creatureID"] = 17977,
 					["groups"] = {
-						removeclassicphase(ach(659, {	-- The Botanica
+						classicAch(659, {	-- The Botanica
 							-- #if BEFORE 3.0.1
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(28370),	-- Bangle of Endless Blessings
 						-- #if BEFORE 7.3.5
 						i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
@@ -196,7 +196,7 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						},
 						["groups"] = {
 							-- #if BEFORE CATA
-							i(29434),	-- Badge of Justice
+							BADGE_OF_JUSTICE,
 							-- #endif
 							i(30574),	-- Brutal Tanzanite
 							i(30572),	-- Imperial Tanzanite

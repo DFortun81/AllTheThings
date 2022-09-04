@@ -102,6 +102,11 @@ _.Zones =
 						i(65617),	-- Headdress of the Verdant Circle
 					},
 				}),
+				q(1004, {	-- The New Frontier
+					["qg"] = 10879,	-- Harbinger Balthazad
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(29303, {	-- Tragedy and Family
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,

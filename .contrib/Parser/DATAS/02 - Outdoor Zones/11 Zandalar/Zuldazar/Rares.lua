@@ -126,6 +126,8 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			n(134637, {	-- Headhunter Lee'za
 				["questID"] = 50661,
 				["coord"] = { 63.0, 14.0, ZULDAZAR },
+				["isDaily"] = true, -- DO NOT REMOVE THIS. SHE IS DAILY AND I HAD TO FIX IT LIKE 5 TIMES NOW
+				-- MAKE A BUG REPORT TO BLIZZARD IF IT BOTHERS YOU. -- Gold
 				["g"] = {
 					i(161117),	-- Berserker's Juju
 				},

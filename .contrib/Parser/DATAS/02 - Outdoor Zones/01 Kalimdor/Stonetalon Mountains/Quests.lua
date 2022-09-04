@@ -783,6 +783,15 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26010,	-- Ashes to Ashes
 			}),
+			q(1078, {	-- Retrieval for Mauren
+				["qg"] = 4078,	-- Collin Mauren
+				["coord"] = { 52.8, 86.6, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+				["groups"] = {
+					un(REMOVED_FROM_GAME, i(6677)),	-- Spellcrafter Wand
+				},
+			}),
 			q(25615, {	-- Return to Stardust
 				["provider"] = { "n", 39256 },	-- Kalen Trueshot
 				["coord"] = { 71.8, 45.6, STONETALON_MOUNTAINS },

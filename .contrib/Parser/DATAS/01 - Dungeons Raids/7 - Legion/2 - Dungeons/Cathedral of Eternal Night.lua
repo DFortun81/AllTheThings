@@ -197,7 +197,7 @@ _.Instances = { tier(LEGION_TIER, {
 					}),
 				}),
 				cr(117193, e(1905, {	-- Agronox
-					ach(11768),	-- Boom Boom
+					ach(11768),	-- Boom Bloom
 					i(144469),	-- Caretaker's Budding Mantle
 					i(144491),	-- Choking Vine Bindings
 					i(144490),	-- Corruption-Fused Stompers

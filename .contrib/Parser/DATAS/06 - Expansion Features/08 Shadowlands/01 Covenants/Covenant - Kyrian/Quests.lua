@@ -628,18 +628,21 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62861, {	-- Return Lost Souls (10 Souls)
 				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62862, {	-- Return Lost Souls (15 Souls)
 				["description"] = "Requires Renown 24.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["isWeekly"] = true,
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
+				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62863, {	-- Return Lost Souls (20 Souls)
 				["description"] = "Requires Renown 32.",

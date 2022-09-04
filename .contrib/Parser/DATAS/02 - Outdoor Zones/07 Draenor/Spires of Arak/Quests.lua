@@ -335,6 +335,7 @@ _.Zones =
 						37326,	-- Befriending the Locals (tavern/brewery)
 						35699,	-- Peace Offering (smuggler's den)
 					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 43.9, 48.8, SPIRES_OF_ARAK },
 					["provider"] = { "n", 83463 },	-- Dusk-Seer Irizzar
 				}),
@@ -878,7 +879,6 @@ _.Zones =
 				q(35733, {	-- Rites of the Talonpriests
 					["sourceQuests"] = {
 						34942,	-- Back from Beyond
-						34885,	-- Mother of Thorns
 						34884,	-- The Kaliri Whisperer
 					},
 					["coord"] = { 46.5, 46.5, SPIRES_OF_ARAK },

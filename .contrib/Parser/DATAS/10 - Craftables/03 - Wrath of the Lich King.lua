@@ -23,7 +23,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			["groups"] = {
 				i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
 				i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
-				import(41188),	-- Saronite Mindcrusher
+				i(41188),	-- Saronite Mindcrusher
 			},
 		}),
 		-- #endif
@@ -174,7 +174,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(41240),	-- Cobalt Tenderizer
 			i(40668),	-- Cobalt Triangle Shield
 			i(42443),	-- Cudgel of Saronite Justice
-			i(41245, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Deadly Saronite Dirk
+			i(41245, {["timeline"]={"added 3.0.2"}}),	-- Deadly Saronite Dirk
 			i(41242),	-- Forged Cobalt Claymore
 			i(41185),	-- Furious Saronite Beatstick
 			i(41181),	-- Honed Cobalt Cleaver

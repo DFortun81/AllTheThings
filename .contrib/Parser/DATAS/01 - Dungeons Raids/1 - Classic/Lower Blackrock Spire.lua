@@ -1517,7 +1517,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				e(396, {	-- Overlord Wyrmthalak
 					["creatureID"] = 9568,	-- Overlord Wyrmthalak
 					["groups"] = {
-						removeclassicphase(ach(643, {	-- Lower Blackrock Spire
+						classicAch(643, {	-- Lower Blackrock Spire
 							-- #if BEFORE 3.0.1
 							["sourceQuests"] = {
 								5089,	-- General Drakkisath's Command
@@ -1527,7 +1527,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							},
 							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
-						})),
+						}),
 						i(142370, {	-- Plans: Arcanite Champion
 							["timeline"] = { "added 7.1.5.23360" },
 						}),
@@ -1907,7 +1907,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					n(10363, { 	-- General Drakkisath
 						["timeline"] = { "removed 6.0.2" },
 						["groups"] = {
-							removeclassicphase(ach(1307, {	-- Upper Blackrock Spire
+							classicAch(1307, {	-- Upper Blackrock Spire
 								["timeline"] = { "removed 6.0.2" },
 								-- #if BEFORE 3.0.1
 								["sourceQuests"] = {
@@ -1917,7 +1917,7 @@ root("Instances", tier(CLASSIC_TIER, {
 								},
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
-							})),
+							}),
 							i(16663, {	-- Blood of the Black Dragon Champion
 								["timeline"] = { "removed 4.0.3" },
 							}),

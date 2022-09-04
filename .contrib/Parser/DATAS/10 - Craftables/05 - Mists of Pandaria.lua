@@ -47,6 +47,131 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(BLACKSMITHING, {
+		spell(143255, bubbleDownSelf({ ["timeline"] = { "added 5.4.0" } }, {	-- Balanced Trillium Ingot
+			["cost"] = { { "i", 72095, 1 } },	-- 1xTrillium Bar
+			["g"] = {
+				r(142959),	-- Avenger's Trillium Legplates
+				r(142968),	-- Avenger's Trillium Waistplate
+				r(142963),	-- Blessed Trillium Belt
+				r(142954),	-- Blessed Trillium Greaves
+				r(143189),	-- Crafted Malevolent Gladiator's Armplates of Alacrity
+				r(143188),	-- Crafted Malevolent Gladiator's Armplates of Proficiency
+				r(143195),	-- Crafted Malevolent Gladiator's Barrier
+				r(143178),	-- Crafted Malevolent Gladiator's Bracers of Meditation
+				r(143177),	-- Crafted Malevolent Gladiator's Bracers of Prowess
+				r(143173),	-- Crafted Malevolent Gladiator's Clasp of Cruelty
+				r(143174),	-- Crafted Malevolent Gladiator's Clasp of Meditation
+				r(143163),	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+				r(143164),	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+				r(143165),	-- Crafted Malevolent Gladiator's Dreadplate Helm
+				r(143166),	-- Crafted Malevolent Gladiator's Dreadplate Legguards
+				r(143167),	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
+				r(143184),	-- Crafted Malevolent Gladiator's Girdle of Accuracy
+				r(143185),	-- Crafted Malevolent Gladiator's Girdle of Prowess
+				r(143175),	-- Crafted Malevolent Gladiator's Greaves of Alacrity
+				r(143176),	-- Crafted Malevolent Gladiator's Greaves of Meditation
+				r(143179),	-- Crafted Malevolent Gladiator's Ornamented Chestguard
+				r(143181),	-- Crafted Malevolent Gladiator's Ornamented Headcover
+				r(143180),	-- Crafted Malevolent Gladiator's Ornamented Gloves
+				r(143182),	-- Crafted Malevolent Gladiator's Ornamented Legplates
+				r(143183),	-- Crafted Malevolent Gladiator's Ornamented Spaulders
+				r(143190),	-- Crafted Malevolent Gladiator's Plate Chestpiece
+				r(143191),	-- Crafted Malevolent Gladiator's Plate Gauntlets
+				r(143192),	-- Crafted Malevolent Gladiator's Plate Helm
+				r(143193),	-- Crafted Malevolent Gladiator's Plate Legguards
+				r(143194),	-- Crafted Malevolent Gladiator's Plate Shoulders
+				r(143196),	-- Crafted Malevolent Gladiator's Redoubt
+				r(143168),	-- Crafted Malevolent Gladiator's Scaled Chestpiece
+				r(143169),	-- Crafted Malevolent Gladiator's Scaled Gauntlets
+				r(143170),	-- Crafted Malevolent Gladiator's Scaled Helm
+				r(143171),	-- Crafted Malevolent Gladiator's Scaled Legguards
+				r(143172),	-- Crafted Malevolent Gladiator's Scaled Shoulders
+				r(143197),	-- Crafted Malevolent Gladiator's Shield Wall
+				r(143187),	-- Crafted Malevolent Gladiator's Warboots of Alacrity
+				r(143186),	-- Crafted Malevolent Gladiator's Warboots of Cruelty
+				r(142958),	-- Protector's Trillium Legguards
+				r(142967),	-- Protector's Trillium Waistguard
+			},
+		})),
+		spell(138646, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Lightning Steel Ingot
+			["cost"] = { { "i", 72096, 10 } },	-- 10xGhost Iron Bar
+			["g"] = {
+				r(137792),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
+				r(137791),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
+				r(137781),	-- Crafted Dreadful Gladiator's Bracers of Meditation
+				r(137780),	-- Crafted Dreadful Gladiator's Bracers of Prowess
+				r(137776),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
+				r(137777),	-- Crafted Dreadful Gladiator's Clasp of Meditation
+				r(140846),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+				r(140845),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+				r(140844),	-- Crafted Dreadful Gladiator's Dreadplate Helm
+				r(140843),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
+				r(140842),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
+				r(137787),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
+				r(137788),	-- Crafted Dreadful Gladiator's Girdle of Prowess
+				r(137778),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
+				r(137779),	-- Crafted Dreadful Gladiator's Greaves of Meditation
+				r(137782),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
+				r(137783),	-- Crafted Dreadful Gladiator's Ornamented Gloves
+				r(137784),	-- Crafted Dreadful Gladiator's Ornamented Headcover
+				r(137785),	-- Crafted Dreadful Gladiator's Ornamented Legplates
+				r(137786),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
+				r(137793),	-- Crafted Dreadful Gladiator's Plate Chestpiece
+				r(137794),	-- Crafted Dreadful Gladiator's Plate Gauntlets
+				r(137795),	-- Crafted Dreadful Gladiator's Plate Helm
+				r(137796),	-- Crafted Dreadful Gladiator's Plate Legguards
+				r(137797),	-- Crafted Dreadful Gladiator's Plate Shoulders
+				r(140841),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
+				r(137772),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
+				r(137773),	-- Crafted Dreadful Gladiator's Scaled Helm
+				r(137774),	-- Crafted Dreadful Gladiator's Scaled Legguards
+				r(137775),	-- Crafted Dreadful Gladiator's Scaled Shoulders
+				r(137790),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
+				r(137789),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
+				r(137766),	-- Haunted Steel Greaves
+				r(137769),	-- Haunted Steel Greathelm
+				r(137767),	-- Haunted Steel Headcover
+				r(137771),	-- Haunted Steel Headguard
+				r(137768),	-- Haunted Steel Treads
+				r(137770),	-- Haunted Steel Warboots
+			},
+		})),
+		spell(138888, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Fireguard, Reborn
+			r(138890),	-- Blazeguard, Reborn
+		})),
+		spell(138890, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Blazeguard, Reborn
+			r(138892),	-- Blazefury, Reborn
+		})),
+		spell(138876, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- The Planar Edge, Reborn
+			r(138878),	-- Black Planar Edge, Reborn
+		})),
+		spell(138878, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Black Planar Edge, Reborn
+			r(138880),	-- Wicked Edge of the Planes, Reborn
+		})),
+		spell(138882, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Drakefist Hammer, Reborn
+			r(138885),	-- Dragonmaw, Reborn
+		})),
+		spell(138885, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Dragonmaw, Reborn
+			r(138886),	-- Dragonstrike, Reborn
+		})),
+		spell(138889, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Lionheart Blade, Reborn
+			r(138891),	-- Lionheart Champion, Reborn
+		})),
+		spell(138891, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Lionheart Champion, Reborn
+			r(138893),	-- Lionheart Executioner, Reborn
+		})),
+		spell(138877, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Lunar Crescent, Reborn
+			r(138879),	-- Mooncleaver, Reborn
+		})),
+		spell(138879, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Mooncleaver, Reborn
+			r(138881),	-- Bloodmoon, Reborn
+		})),
+		spell(138883, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Thunder, Reborn
+			r(138884),	-- Deep Thunder, Reborn
+		})),
+		spell(138884, bubbleDownSelf({ ["timeline"] = { "added 5.2.0" } }, {	-- Deep Thunder, Reborn
+			r(138887),	-- Stormherald, Reborn
+		})),
 		filter(DAGGERS, {
 			i(82967),	-- Ghost Shard
 			i(82974),	-- Masterwork Ghost Shard

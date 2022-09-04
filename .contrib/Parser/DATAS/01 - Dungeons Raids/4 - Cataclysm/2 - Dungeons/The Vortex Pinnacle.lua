@@ -31,7 +31,6 @@ _.Instances = { tier(CATA_TIER, {
 						27519,	-- Under the Choking Sands
 						27520,	-- Minions of Al'Akir
 						27706,	-- The Scepter of Orsis
-						28779,	-- A Long Way from Home
 					},
 				}),
 				q(28760, {	-- Vengeance for Orsis

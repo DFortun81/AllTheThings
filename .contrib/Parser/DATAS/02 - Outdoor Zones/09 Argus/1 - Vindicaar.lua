@@ -232,17 +232,11 @@ root("Zones", {
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = LEATHERWORKING,
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+						["provider"] = { "n", 125349 },	-- Enstraa
+						["coord"] = { 39.6, 73.6, 831 },
 						["g"] = {
 							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)
 							i(151743),	-- Recipe: Fiendish Spaulders (Rank 1)
-						},
-					}),
-					q(48055, {	-- Empyrial Strength
-						["provider"] = { "n", 125341 },	-- Khamir
-						["requireSkill"] = BLACKSMITHING,
-						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-						["g"] = {
-							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 						},
 					}),
 					q(49143, {	-- Essence of the Light Mother
@@ -310,7 +304,7 @@ root("Zones", {
 						["requireSkill"] = TAILORING,
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
-							i(151571),	-- Lightweave Breeches
+							recipe(247807),	-- Lightweave Breeches (Rank 1)
 						},
 					}),
 					q(46815, {	-- Eredath, Jewel of Argus
@@ -666,17 +660,17 @@ root("Zones", {
 		}),
 	}),
 });
-
-root("HiddenQuestTriggers", {
-	m(905, {	-- Argus
-		m(886, {	-- Vindicaar
-			q(48308),	-- starting Mythic Azeroth Invasion Plans quest
-			-- Vindicaar Matrix Abilities
-			q(48449),	-- Shroud of Arcane Echoes/Warframe
-			q(48450),	-- Shroud of Arcane Echoes/Fel Heart
-			q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
-			-- Stay a while and Listen
-			q(49164),	-- Silgryn and Liadrin
-		}),
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(48668),	-- Lightforged Beacon: City Center - triggers during the cutscene while on "Into the Night" (questID 48440)
+		q(47888),	-- Triggers when turning in "Alone in the Abyss" (questID 46938)
+		q(47869),	-- Triggers when turning in "Light's Exodus" (questID 47223)
+		q(49161),	-- Triggers when turning in "Where They Least Expect It" (questID 48461)
+		-- Vindicaar Matrix Abilities
+		q(48449),	-- Shroud of Arcane Echoes/Warframe
+		q(48450),	-- Shroud of Arcane Echoes/Fel Heart
+		q(48451),	-- Shroud of Arcane Echoes/Light's Judgement/Fel Heart
+		-- Stay a while and Listen
+		q(49164),	-- Silgryn and Liadrin
 	}),
 });

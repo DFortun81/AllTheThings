@@ -495,6 +495,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								["sym"] = {{"select","achievementID",14833}},	-- Fashion Abomination
 							}),
 						}),
+						n(FACTIONS, {
+							faction(2462),	-- Stitchmasters
+						}),
 						n(REWARDS, {
 							i(184304, {	-- Anima-Touched Weapon Fragments
 								["description"] = "Rewarded by the Weekly Quests from your Constructs and Chordy's Treasure Finding.",
@@ -1032,7 +1035,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 								}),
-								i(184354, {-- Soul Harvester Key
+								i(184354, {	-- Soul Harvester Key
 									["crs"] = { 175510 },	-- Soul Harvester Anka
 								}),
 							},

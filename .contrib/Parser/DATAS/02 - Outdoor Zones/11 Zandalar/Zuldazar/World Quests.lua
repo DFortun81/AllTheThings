@@ -54,18 +54,18 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					ach(13439, {	-- Boxing Match (A)
+					pvp(ach(13439, {	-- Boxing Match (A)
 						["races"] = ALLIANCE_ONLY,
-					}),
+					})),
 				},
 			}),
 			q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					ach(13438, {	-- Boxing Match (H)
+					pvp(ach(13438, {	-- Boxing Match (H)
 						["races"] = HORDE_ONLY,
-					}),
+					})),
 				},
 			}),
 			q(50854),	-- Crimsonclaw
@@ -141,8 +141,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 				["races"] = HORDE_ONLY,
 			}),
-			a(q(51178)),	-- Hundred Troll Holdout (A)
-			h(q(51232)),	-- Hundred Troll Holdout (H)
+			a(q(51178, { -- Hundred Troll Holdout (A)
+				ach(13035),	-- By de Power of de Loa!
+			})),
+			h(q(51232, { -- Hundred Troll Holdout (H)
+				ach(13035),	-- By de Power of de Loa!
+			})),
 			q(51305),	-- Jelly Clouds (possibly NYI?)
 			q(50859),	-- Kandak
 			q(50869),	-- Kiboku

@@ -36,7 +36,7 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 			ach(1693, {	-- Fool For Love
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						260,	-- Charming
 						1188,	-- Shafted!
 						1279,	-- Flirt With Disaster [Alliance]
@@ -176,9 +176,18 @@ root("Holidays", applyholiday(LOVE_IS_IN_THE_AIR, {
 				}),
 			}),
 			ach(9394, {	-- They Really Love Me! (50)
-				i(116651),	-- True Love Prism (TOY!)
-				ach(9393),	-- Beacon of Love (25)
-				ach(9392),	-- Love Magnet (10)
+				["timeline"] = { "added 6.0.1.18594" },
+				["groups"] = {
+					i(116651, {	-- True Love Prism (TOY!)
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					ach(9393, {	-- Beacon of Love (25)
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					ach(9392, {	-- Love Magnet (10)
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+				},
 			}),
 			ach(4624),	-- Tough Love (Shadowfang Keep)
 		}),

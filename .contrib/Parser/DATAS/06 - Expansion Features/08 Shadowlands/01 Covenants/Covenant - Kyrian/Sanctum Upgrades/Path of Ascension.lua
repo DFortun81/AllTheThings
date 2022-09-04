@@ -787,7 +787,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 							["g"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
-										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["cost"] = {
@@ -829,7 +829,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61363, {	-- Mad Mortimer
-										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["cost"] = {
@@ -956,7 +956,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									q(61367, {	-- Thran'tiok
-										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["cost"] = {

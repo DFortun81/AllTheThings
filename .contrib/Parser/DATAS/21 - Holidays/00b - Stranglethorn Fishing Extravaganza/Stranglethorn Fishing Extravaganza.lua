@@ -20,7 +20,7 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 	["OnUpdate"] = [[function() _.Settings:CheckWeekDay(]] .. STRANGLETHORN_FISHING_EXTRAVAGANZA .. [[, 1); end]],
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			removeclassicphase(ach(306, {	-- Master Angler of Azeroth
+			classicAch(306, {	-- Master Angler of Azeroth
 				["requireSkill"] = FISHING,
 				-- #if BEFORE WRATH
 				["providers"] = {
@@ -30,7 +30,7 @@ root("Holidays", applyholiday(STRANGLETHORN_FISHING_EXTRAVAGANZA, {
 				["description"] = "Win the Booty Bay fishing contest.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 		}),
 		n(QUESTS, {
 			q(8194, {	-- Apprentice Angler

@@ -346,7 +346,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					--
 					q(43486, {	-- Cracking the Codex
-						["sourceQuests"] = { 42890 },	-- The Codex of Command
+						["sourceQuests"] = {
+							42851,	-- Champion: Vindicator Boros
+							42852,	-- Champion: Justicar Julia Celeste
+						},
 						["provider"] = { "n", 90251 },	-- Aponi Brightmane
 						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 					}),
@@ -626,7 +629,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
 					q(45561, {	-- Seek Me Out
-						-- ["sourceQuests"] = { },	-- TODO
+						["sourceQuests"] = {
+							24707,	-- The Ballad of Maximillian
+							46045,	-- Champion: Nerus Moonfang
+						},
+						["provider"] = { "i", 143900 },	-- Letter from Maximillian
+						["description"] = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
 					}),
 					q(45770, {	-- Stirring in the Shadows
 						["sourceQuests"] = { 46074 },	-- Leather to Legendary
@@ -655,17 +663,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							follower(1001),	-- Maximillian of Northshire
 						},
 					}),
-					--
-					q(44219, {	-- Fate's Blessing
-						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
-						["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
-					}),
-					q(44218, {	-- Champion Armaments
-						["provider"] = { "n", 110434 },	-- Kristoff
-						["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
-						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
-					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
@@ -674,6 +671,22 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
+					}),
+				}),
+				n(SPECIAL, {
+					gt(398, {	-- Holy Purpose
+						q(44219, {	-- Fate's Blessing
+							["provider"] = { "n", 112986 },	-- Librarian Lightmorne
+							["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
+							["description"] = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
+						}),
+					}),
+					gt(400, {	-- Plowshares to Swords
+						q(44218, {	-- Champion Armaments
+							["provider"] = { "n", 110434 },	-- Kristoff
+							["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
+							["description"] = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
+						}),
 					}),
 				}),
 				n(VENDORS, {
@@ -719,7 +732,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136801, {	-- Divine Tome: Contemplation
-								["spellID"] = 121183,	-- Contemplation
+								["f"] = RECIPES,
 							}),
 							i(139692, {	-- Gauntlets of the Silver Hand
 								["cost"] = 5000000,	-- 500g
@@ -765,48 +778,26 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
-	q(38713),	-- Paladin Order Hall - The Crusade Calls. Triggered with An Urgent Gathering 38710
-	q(40409),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
-	q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
-	q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
-	q(42135),	-- Paladin Order Hall - Tracking Quest: Chose Strategy C (choice for 42919 The Scion's Legacy)
-	q(42136),	-- Paladin Order Hall - Tracking Quest: Chose Strategy A (choice for 42919 The Scion's Legacy)
-	q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
-	q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
-	q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
-	q(42960),	-- Paladin Order Hall - Tracking Quest: Chose Strategy B (choice for 42919 The Scion's Legacy)
-	q(42961),	-- Paladin Order Hall - Tracking Quest: Chose Strategy D (choice for 42919 The Scion's Legacy)
-	q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
-	q(44064),	-- Paladin Order Hall - Silver Hand Chosen Second (Holy)
-	q(44066),	-- Paladin Order Hall - Ashbringer Chosen Second (Retribution)
-	q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third (Retribution)
-	q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
-	q(44458),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 1
-	q(44459),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 2
-	q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
-	q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
-	q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
-	q(43696),	-- Paladin Order Hall - Tracking Quest: Lumenstone 1
-	q(42980),	-- Paladin Order Hall - Tracking Quest: Lumenstone 2
-	q(42352),	-- Paladin Order Hall - Tracking Quest: Lumenstone 3
-	q(42353),	-- Paladin Order Hall - Tracking Quest: Lumenstone 4
-	q(42354),	-- Paladin Order Hall - Tracking Quest: Lumenstone 5
-	q(46767),	-- Paladin Order Hall - Maximillian 1 Week Cooldown (triggered after turning in Champion: Nerus Moonfang (46045))
-	q(44371),	-- Holy Chosen
-	q(43688),	-- Unlocking the Walking in the Shadows quest
-	q(43666),	-- Using Heart of Corruption
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(43578),	-- Looted Paladin Daily Mount
+		q(46767),	-- Maximillian 1 Week Cooldown - triggered after turning in "Champion: Nerus Moonfang" (questID 46045)
+		q(43688),	-- Shard Delivered - unlocking the Walking in the Shadows quest
+		q(44426),	-- Talking Pair Flavor Heard - triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin order hall
+		q(44458),	-- Tracking Quest: Blood of Our Enemy 1 - completed the "Blood of Our Enemy: Stormheim" mission
+		q(44459),	-- Tracking Quest: Blood of Our Enemy 2 - completed the "Blood of Our Enemy: Val'sharah" mission
+		q(44460),	-- Tracking Quest: Blood of Our Enemy 3 - completed the "Blood of Our Enemy: Highmountain" mission
+		q(44461),	-- Tracking Quest: Blood of Our Enemy 4 - completed the "Blood of Our Enemy: Azsuna" mission
+		q(44462),	-- Tracking Quest: Blood of Our Enemy 5 - completed the "Blood of Our Enemy: Suramar" mission
+		q(42136),	-- Tracking Quest: Chose Strategy A - choice for "The Scion's Legacy" (questID 42919)
+		q(42960),	-- Tracking Quest: Chose Strategy B - choice for "The Scion's Legacy" (questID 42919)
+		q(42135),	-- Tracking Quest: Chose Strategy C - choice for "The Scion's Legacy" (questID 42919)
+		q(42961),	-- Tracking Quest: Chose Strategy D - choice for "The Scion's Legacy" (questID 42919)
+		q(43696),	-- Tracking Quest: Lumenstone 1 - completed the "Lumenstone: Faronaar" mission
+		q(42980),	-- Tracking Quest: Lumenstone 2 - completed the "Lumenstone: Suramar City" mission
+		q(42352),	-- Tracking Quest: Lumenstone 3 - completed the "Lumenstone: Stormheim" mission
+		q(42353),	-- Tracking Quest: Lumenstone 4 - completed the "Lumenstone: Broken Shore" mission
+		q(42354),	-- Tracking Quest: Lumenstone 5 - completed the "Lumenstone: Val'sharah" mission
+		q(38229),	-- Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 	}),
-}));
--- #endif
+});

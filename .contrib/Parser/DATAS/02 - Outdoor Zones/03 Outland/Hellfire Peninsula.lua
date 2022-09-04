@@ -92,14 +92,12 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(862, {	-- Explore Hellfire Peninsula
+					explorationAch(862, {	-- Explore Hellfire Peninsula
 						-- #if BEFORE WRATH
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
-					removeclassicphase(ach(1189, {	-- To Hellfire and Back [Alliance Version]
+					}),
+					classicAch(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -136,8 +134,10 @@ root("Zones", {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 80 quests in Hellfire Peninsula.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9587, 9575, 9607, 9589, 10754, 10762, 10763, 10764, 9492, 9493, 9494, 11002); end]],
@@ -187,8 +187,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1271, {	-- To Hellfire and Back [Horde Version]
+					}),
+					classicAch(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -231,8 +231,10 @@ root("Zones", {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 90 quests in Hellfire Peninsula.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9588, 9572, 9608, 9590, 10755, 10756, 10757, 10758, 9495, 9496, 11003); end]],
@@ -290,7 +292,7 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -2821,7 +2823,7 @@ root("Zones", {
 							{ 56.6, 71.8, HELLFIRE_PENINSULA },	-- east path, top
 						},
 						["groups"] = {
-							crit(9, {	-- Fulgorge slain
+							crit(4512, {	-- Fulgorge slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31181),	-- Rockwurm Handwraps
@@ -2842,7 +2844,7 @@ root("Zones", {
 							{ 67.8, 76.8, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(14, {	-- Mekthorg the Wild slain
+							crit(4517, {	-- Mekthorg the Wild slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31174),	-- Demonweave Raiment
@@ -2857,7 +2859,7 @@ root("Zones", {
 							{ 71.4, 56.0, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(20, {	-- Vorakem Doomspeaker Slain
+							crit(4523, {	-- Vorakem Doomspeaker Slain
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31185),	-- Legion Crown
@@ -2889,11 +2891,11 @@ root("Zones", {
 					n(18991, {	-- Aresella <Medic>
 						["coord"] = { 26.2, 62.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
 							i(22012),	-- Master First Aid - Doctor in the House
-						},
+						}),
 					}),
 					n(18267, {	-- Battlecryer Blackeye
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
@@ -2952,11 +2954,11 @@ root("Zones", {
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = sharedData({["timeline"] = { "added 2.2.0.7272", "removed 8.0"}},{
 							i(21993),	-- Manual: Heavy Netherweave Bandage
 							i(21992),	-- Manual: Netherweave Bandage
 							i(22012),	-- Master First Aid - Doctor in the House
-						},
+						}),
 					}),
 					n(16585, {	-- Cookie One-Eye <Food & Drink>
 						["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },

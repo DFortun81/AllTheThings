@@ -481,7 +481,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(6622,  {	-- Big City Pet Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					6584,	-- Big City Pet Brawlin' - Alliance
 					6621,	-- Big City Pet Brawlin' - Horde
 				},
@@ -514,7 +514,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(13279, {	-- Family Battler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					13280,	-- Hobbyist Aquarist
 					13270,	-- Beast Mode
 					13271,	-- Critters with Huge Teeth
@@ -525,8 +525,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					13275,	-- Magician's Secrets
 					13277,	-- Machine Learning
 					13278,	-- Not Quite Dead Yet
-				},
-			},
+				}},
 			["groups"] = {
 				i(165907),	-- Wicker Wraith
 				ach(13280),	-- Hobbyist Aquarist
@@ -541,10 +540,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				ach(13278),	-- Not Quite Dead Yet
 			},
 		}),
-		pvp(ach(12290, {-- Family Brawler
+		pvp(ach(12290, {	-- Family Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					12279,	-- Mechanical Brawler
 					12280,	-- Aquatic Brawler
 					12281,	-- Beast Brawler
@@ -555,9 +554,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					12286,	-- Flying Brawler
 					12287,	-- Dragonkin Brawler
 					12289,	-- Humanoid Brawler
-				},
-				{ "isnt", "criteriaID" }
-			},
+				}},
 			["groups"] = {
 				i(156666),	-- Master Trainer's Tabard
 				ach(12279),	-- Mechanical Brawler
@@ -575,7 +572,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(14879, {	-- Family Exorcist
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					14868,	-- Aquatic Apparitions
 					14869,	-- Beast Busters
 					14870,	-- Creepy Critters
@@ -586,9 +583,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					14875,	-- Mummified Magics
 					14876,	-- Macabre Mechanicals
 					14877,	-- Unholy Undead
-				},
-				{ "isnt", "criteriaID" }
-			},
+				}},
 			["groups"] = {
 				i(184509),	-- Spriggan Trickster
 				ach(14868, {	-- Aquatic Apparitions
@@ -1056,7 +1051,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(9696, {		-- Family Familiar
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					9686,	-- Aquatic Acquiescence
 					9687,	-- Best of the Beasts
 					9688,	-- Mousing Around
@@ -1067,9 +1062,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					9693,	-- Master of Magic
 					9694,	-- Roboteer
 					9695,	-- The Lil' Necromancer
-				},
-				{ "isnt", "criteriaID" }
-			},
+				}},
 			["groups"] = {
 				i(140761),	-- Nightmare Treant
 				ach(9686, {	-- Aquatic Acquiescence
@@ -1547,7 +1540,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(12100, {	-- Family Fighter
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
-				{"select","achievementID",
+				{"meta_achievement",
 					12089,	-- Aquatic Assault
 					12091,	-- Beast Blitz
 					12092,	-- Critical Critters
@@ -1558,9 +1551,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 					12097,	-- Magical Mayhem
 					12098,	-- Mechanical Melee
 					12099,	-- Unstoppable Undead
-				},
-				{ "isnt", "criteriaID" }
-			},
+				}},
 			["groups"] = {
 				i(153040),	-- Felclaw Marsuul
 				ach(12089),	-- Aquatic Assault

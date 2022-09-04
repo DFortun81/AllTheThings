@@ -59,7 +59,7 @@ root("ExpansionFeatures", tier(SL_TIER, {
 					["timeline"] = { "added 9.2.5"},
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							14502,	-- Pursuing Loyalty
 							14723,	-- Be Our Guest
 							14752,	-- Things To Do When You're Dead

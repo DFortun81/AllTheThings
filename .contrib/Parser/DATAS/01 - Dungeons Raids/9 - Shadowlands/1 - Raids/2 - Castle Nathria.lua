@@ -389,6 +389,12 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				q(66693, {	-- Tempting Fate: Castle Nathria
+					["isWorldQuest"] = true,
+					["timeline"] = { ADDED_SLS4 },
+				}),
+			}),
 			n(ZONE_DROPS, {
 				i(180453),	-- She Had a Stone Heart
 			}),
@@ -578,9 +584,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 83,
 						}),
@@ -811,9 +816,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 82,
 						}),
@@ -1079,10 +1083,9 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 84,
 						}),
@@ -1109,7 +1112,23 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 			}),
 			d(16, {	-- Mythic
 				n(ACHIEVEMENTS, {
-					ach(14718),	-- Mythic: Castle Nathria
+					ach(14718, {	-- Mythic: Castle Nathria
+						-- Meta Achievement
+						["sym"] = {
+							{"meta_achievement",
+								14359,	-- Mythic: Artificer Xy'mox
+								14358,	-- Mythic: Hungering Destroyer
+								14357,	-- Mythic: Huntsman Altimor
+								14361,	-- Mythic: Lady Inerva Darkvein
+								14356,	-- Mythic: Shriekwing
+								14365,	-- Mythic: Sire Denathrius
+								14363,	-- Mythic: Sludgefist
+								14364,	-- Mythic: Stone Legion Generals
+								14360,	-- Mythic: Sun King's Salvation
+								14362,	-- Mythic: The Council of Blood
+							},
+						},
+					}),
 				}),
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
@@ -1355,14 +1374,25 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						ach(14649, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								title(440),	-- <Name>, Famed Slayer of Denathrius
+							},
+						})),
+						ach(14650, bubbleDownSelf({["timeline"] = { "added 9.0", "removed 9.1" } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								title(440),	-- <Name>, Famed Slayer of Denathrius
+							},
+						})),
 						ach(14365, {	-- Mythic: Sire Denathrius
 							title(432),	-- Sinbreaker <Name>
 						}),
 						ach(14610),	-- Clear Conscience
-						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358),	-- Remornia
-						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
-						i(183395),	-- Pommel Jewel of Remornia (PET!)
+						ig(179358),	-- Remornia
+						ig(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
+						ig(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 85,
 						}),
@@ -1391,10 +1421,50 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } },
 	}),
 })));
 
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(SL_TIER, {
-		inst(1190, {	-- Castle Nathria
-			i(184873),	-- Soul Igniter (Test)
-		}),
+
+root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
+	inst(1190, {	-- Castle Nathria
+		q(60680),	-- LFR 'The Leeching Vaults' Completed
+
+		q(62949),	-- First kill of Sire Denthrius / First full clear ??
+
+		q(62871),	-- Shriekwing
+		q(62872),	-- Huntsman Altimor
+		q(62873),	-- Sun King's Salvation
+		q(62874),	-- Artificer Xy'mox
+		q(62875),	-- Hungering Destroyer
+		q(62876),	-- The Council of Blood
+		q(62877),	-- Lady Inerva Darkvein
+		q(62878),	-- Sludgefist
+		q(62879),	-- Stone Legion Generals
+		q(62880),	-- Sire Denthrius
+
+		-- Fated (All difficulties)
+		q(70451),	-- Shriekwing
+		q(70452),	-- Shriekwing
+		q(70453),	-- Huntsman Altimor
+		q(70454),	-- Huntsman Altimor
+		q(70455),	-- Sun King's Salvation
+		q(70456),	-- Sun King's Salvation
+		q(70457),	-- Artificer Xy'mox
+		q(70458),	-- Artificer Xy'mox
+		q(70459),	-- Hungering Destroyer
+		q(70460),	-- Hungering Destroyer
+		q(70461),	-- The Council of Blood
+		q(70462),	-- The Council of Blood
+		q(70463),	-- Lady Inerva Darkvein
+		q(70464),	-- Lady Inerva Darkvein
+		q(70465),	-- Sludgefist
+		q(70466),	-- Sludgefist
+		q(70467),	-- Stone Legion Generals
+		q(70468),	-- Stone Legion Generals
+		q(70469),	-- Sire Denthrius
+		q(70470),	-- Sire Denthrius
 	}),
 }));
+
+root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, tier(SL_TIER, {
+	inst(1190, {	-- Castle Nathria
+		i(184873),	-- Soul Igniter (Test)
+	}),
+})));

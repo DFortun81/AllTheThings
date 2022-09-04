@@ -310,14 +310,14 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 49.5, LEGION_DALARAN },
 				}),
-				q(40717, {	-- Calling of the Council
+				q(40717, {	-- Calling of the Council [A]
 					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
 					["races"] = ALLIANCE_ONLY,
 					-- ["coord"] = { },
 				}),
-				q(40718, {	-- Calling of the Council
+				q(40718, {	-- Calling of the Council [H]
 					["description"] = "You can start this quest by going to Dalaran (Legion) and talking to Archivist Elysiana in The Violet Citadel.",
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore	-- TODO: confirm sourceQuests
 					["provider"] = { "n", 114550 },	-- Khadgar's Upgraded Servant
@@ -1271,7 +1271,17 @@ _.Zones =
 		}),
 	}),
 };
-
-root("HiddenQuestTriggers", {
-	q(58658),	-- selecting an option to hide Vulpera hyena mount canopy/sunshade
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(40340),	-- Alard Schmied Greeting Seen - "Well, I'll be... the Ashbringer. ...' in Dalaran
+		q(45518),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)
+		q(47282),	-- First Aid Shop Searched - triggered after searching first aid shop during "Confirming Suspicions" (questID 45414)
+		q(46321),	-- Krasus Landing Searched - triggered when finding Velen during "Confirming Suspicions" (questID 45414)
+		q(46312),	-- Triggered after completing 'Where it's Thinnest' (questID 45190)
+		q(46835),	-- Whispers of a Frightened World Tracking - triggers while doing "Whispers of a Frightened World" (questID 46206)
+		q(41694),	-- World Quests Available - triggers when turning in "Uniting the Isles" (questID 45727)
+	}),
+	tier(BFA_TIER, {
+		q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
+	}),
 });

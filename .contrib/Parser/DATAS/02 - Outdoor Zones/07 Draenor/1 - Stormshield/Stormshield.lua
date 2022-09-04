@@ -1795,6 +1795,7 @@ _.Zones =
 						}),
 						n(128756, {	-- Magister Langley
 							["coord"] = { 54.8, 16.8, STORMSHIELD },
+							["minReputation"] = { 1682, 5 },	-- Wrynn's Vanguard, Friendly
 							["g"] = {
 								i(114126),	-- Disposable Pocket Flying Machine
 								i(116776, {	-- Pale Thorngrazer (MOUNT!)
@@ -4312,53 +4313,7 @@ _.Zones =
 						}),
 						n(87062, {	-- Royce Bigbeard <Blacksmithing Plans>
 							["coord"] = { 49.0, 48.7, STORMSHIELD },
-							["g"] = {
-								i(115356, {	-- Draenor Blacksmithing
-									["filterID"] = MISC,
-									["g"] = {
-										i(116727),		-- Recipe: Smoldering Breastplate
-										i(116726),		-- Recipe: Smoldering Helm
-										i(116728),		-- Recipe: Smoldering Greaves
-										recipe(171690),	-- Truesteel Ingot
-										i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
-									},
-								}),
-								i(118720, {	-- Secret of Draenor Blacksmithing
-									["filterID"] = MISC,
-									["g"] = {
-										i(119329),	-- Recipe: Soul of the Forge
-										i(120262),	-- Recipe: Steelforged Aegis
-										i(120260),	-- Recipe: Steelforged Axe
-										i(116731),	-- Recipe: Steelforged Dagger
-										i(116729),	-- Recipe: Steelforged Greataxe
-										i(116732),	-- Recipe: Steelforged Hammer
-										i(116730),	-- Recipe: Steelforged Saber
-										i(116733),	-- Recipe: Steelforged Shield
-										i(116740),	-- Recipe: Truesteel Armguards
-										i(116741),	-- Recipe: Truesteel Boots
-										i(116739),	-- Recipe: Truesteel Breastplate
-										i(116738),	-- Recipe: Truesteel Gauntlets
-										i(116737),	-- Recipe: Truesteel Greaves
-										i(116734),	-- Recipe: Truesteel Grinder
-										i(116736),	-- Recipe: Truesteel Helm
-										i(116735),	-- Recipe: Truesteel Pauldrons
-										i(118044),	-- Recipe: Truesteel Reshaper
-										i(116742),	-- Recipe: Truesteel Waistguard
-										i(116764, {	-- Small Pouch of Coins
-											["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-										}),
-									},
-								}),
-								i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
-									["u"] = NEVER_IMPLEMENTED,
-								}),
-								i(122550, {	-- Recipe: Powerful Steelforged Essence
-									["u"] = REMOVED_FROM_GAME,
-								}),
-								i(122552, {	-- Recipe: Powerful Truesteel Essence
-									["u"] = REMOVED_FROM_GAME,
-								}),
-							},
+							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
 						}),
 						n(87065, {	-- Sean Catchpole
 							["coord"] = { 47.9, 39.9, STORMSHIELD },

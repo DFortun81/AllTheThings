@@ -33,12 +33,12 @@ root("Instances", tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1565, {	-- Gruul the Dragonkiller
 				["creatureID"] = 19044,
 				["groups"] = {
-					removeclassicphase(ach(692, {	-- Gruul's Lair
+					classicAch(692, {	-- Gruul's Lair
 						-- #if BEFORE 3.0.1
 						["sourceQuest"] = 10901,	-- The Cudgel of Kar'desh
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(29766, {	-- Leggings of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),

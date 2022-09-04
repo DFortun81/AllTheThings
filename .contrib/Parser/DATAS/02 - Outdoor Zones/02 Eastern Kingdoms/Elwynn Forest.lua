@@ -654,6 +654,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3.13277" },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
+							["isBreadcrumb"] = true,
 							["lvl"] = 5,
 						}),
 						q(345, {	-- Ink Supplies
@@ -965,7 +966,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						q(26916, {	-- Mastering the Arcane 
+						q(26916, {	-- Mastering the Arcane
 							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["sourceQuest"] = 3104,	-- Glyphic Letter
 							["coord"] = { 38.6, 43.6, NORTHSHIRE_VALLEY },
@@ -1041,7 +1042,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 							["groups"] = {
-								i(6095, {	-- Wandering Boots 
+								i(6095, {	-- Wandering Boots
 									["timeline"] = { "removed 4.0.3.13277" },
 								}),
 							},
@@ -1083,7 +1084,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 						}),
-						q(26915, {	-- The Deepest Cut 
+						q(26915, {	-- The Deepest Cut
 							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["sourceQuest"] = 3102,	-- Encrypted Letter
 							["coord"] = { 41.8, 45.8, NORTHSHIRE_VALLEY },
@@ -1099,7 +1100,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
-						q(26918, {	-- The Power of the Light 
+						q(26918, {	-- The Power of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
@@ -1389,13 +1390,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(776, {	-- Explore Elwynn Forest
+				explorationAch(776, {	-- Explore Elwynn Forest
 					-- #if BEFORE WRATH
 					["description"] = "Explore Elwynn Forest, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {
@@ -1618,9 +1617,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(6979, {	-- Haggard's Axe
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(6980, {-- Haggard's Dagger
+						i(6980, {	-- Haggard's Dagger
 							["timeline"] = { "removed 4.0.3" },
-						}),	
+						}),
 						i(6983, {	-- Haggard's Hammer
 							["timeline"] = { "removed 4.0.3" },
 						}),

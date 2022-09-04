@@ -74,38 +74,40 @@ root("Zones", {
 							}),
 						},
 					})),
-					removeclassicphase(ach(902, {	-- Chief Exalted Officer
-						-- #if BEFORE 3.0.1
+					classicAch(902, {	-- Chief Exalted Officer
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with The Consortium to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 933); end]],
-						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
-					})),
-					removeclassicphase(ach(866, {	-- Explore Nagrand
+					}),
+					explorationAch(866, {	-- Explore Nagrand
 						-- #if BEFORE WRATH
 						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
-					removeclassicphase(ach(939, {	-- Hills Like White Elekk
+					}),
+					classicAch(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE 3.0.1
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
-					removeclassicphase(ach(901, {	-- Mag'har of Draenor
-						-- #if BEFORE 3.0.1
+					}),
+					classicAch(901, {	-- Mag'har of Draenor
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Mag'har to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 941); end]],
-						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
 						["races"] = HORDE_ONLY,
-					})),
-					removeclassicphase(ach(1273, {	-- Nagrand Slam (Horde)
+					}),
+					classicAch(1273, {	-- Nagrand Slam (Horde)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -146,8 +148,10 @@ root("Zones", {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 87 quests in Nagrand.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -203,8 +207,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1192, {	-- Nagrand Slam (Alliance)
+					}),
+					classicAch(1192, {	-- Nagrand Slam (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -242,8 +246,10 @@ root("Zones", {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 75 quests in Nagrand.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -294,16 +300,18 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(899, {	-- Oh My, Kurenai
-						-- #if BEFORE 3.0.1
+					}),
+					classicAch(899, {	-- Oh My, Kurenai
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Kurenai to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 978); end]],
-						["description"] = "Raise your reputation with the Kurenai to Exalted.",
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -1525,7 +1533,7 @@ root("Zones", {
 							{ 76.0, 80.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(10, {	-- Goretooth
+							crit(4513, {	-- Goretooth
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31192),	-- Crocolisk Hide Bindings
@@ -1561,7 +1569,7 @@ root("Zones", {
 							{ 33.2, 67.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(19, {	-- Voidhunter Yar
+							crit(4522, {	-- Voidhunter Yar
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31198),	-- Voidhide Cord
@@ -1683,7 +1691,6 @@ root("Zones", {
 							}),
 							i(136938, {	-- Tome of Hex: Compy
 								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 210873,	-- Hex (Compy)
 								["classes"] = { SHAMAN },
 								["f"] = RECIPES,
 							}),
@@ -2069,7 +2076,12 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(26045, {	-- Halaa Battle Token
-						["description"] = "Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nAs a Level 70, your target must be Level 65+",
+						["description"] =
+						-- #IF ANYCLASSIC
+						"Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nAs a Level 70, your target must be Level 65+",
+						-- #ELSE
+						"Kill members of the opposite faction that are on the plataeu of Halaa or on one of the neighboring assault platforms. Only players of honorable level without res sickness can be used to farm these tokens.\n\nThese can also be found as Garrison Mission Rewards.",
+						-- #ENDIF
 					}),
 					i(23608, {	-- Plans: Khorium Belt (RECIPE!)
 						["cr"] = 18203,	-- Murkblood Raider

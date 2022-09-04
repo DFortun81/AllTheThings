@@ -9,13 +9,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				removeclassicphase(ach(773, {	-- Explore The Hinterlands
+				explorationAch(773, {	-- Explore The Hinterlands
 					-- #if BEFORE WRATH
 					["description"] = "Explore The Hinterlands, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
@@ -568,7 +566,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(59245, {	-- Head Kickers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(131536, {-- Stormfeather Treads
+						i(131536, {	-- Stormfeather Treads
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
@@ -1746,10 +1744,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							-- #if AFTER 4.0.3
-							["description"] = "This item disappeared after the Cataclysm. It might now only be available from the Emerald Encrusted Chest in the Blasted Lands.",
-							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 9.0.0" },
 						}),
 					},
 				}),
@@ -1953,9 +1948,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(15760, {	-- Pattern: Ironfeather Breastplate
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
-				}),
-				i(9294, {	-- Recipe: Wildvine Potion
-					["description"] = "Can drop from any troll in Hinterlands or Stranglethorn Vale.",
 				}),
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3

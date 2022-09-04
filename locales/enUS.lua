@@ -35,9 +35,9 @@ app.L = {
 	["REQUIRES"] = "Requires";
 	["RACE_LOCKED"] = "Race Locked";
 	["PLEASE_REPORT_MESSAGE"] = ": Please report this to the ATT Discord in #retail-errors! Thanks!";
-	["REPORT_TIP"] = "\n(Ctrl+C to copy multiline report to your clipboard)";
+	["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
-	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then Shift-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
+	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.."-Click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	["COST"] = "Cost";
 	["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
@@ -49,12 +49,12 @@ app.L = {
 	["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 	["FLIGHT_PATHS_DESC"] = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
-	["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected Account-wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+	["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected Account-wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.."+Left clicking the header for this to be detected.";
 	["HEIRLOOM_TEXT"] = "Unlocked Heirloom";
 	["HEIRLOOM_TEXT_DESC"] = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	["FAILED_ITEM_INFO"] = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
 	["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
-	["MUSIC_ROLLS_AND_SELFIE_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+	["MUSIC_ROLLS_AND_SELFIE_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.."+Left clicking the header for this to be detected.";
 	["MUSIC_ROLLS_AND_SELFIE_DESC_2"] = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	["OPPOSITE_FACTION_EQ"] = "Opposite faction equivalent: ";
 	["SELFIE_DESC"] = "Take a selfie using your ";
@@ -155,7 +155,7 @@ app.L = {
 	["TELEPORT_TO_FROM_DUNGEON"] = "Teleport to/from Dungeon";
 	["TELEPORT_TO_FROM_DUNGEON_DESC"] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.";
 	["RESET_INSTANCES"] = "Reset Instances";
-	["RESET_INSTANCES_DESC"] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
+	["RESET_INSTANCES_DESC"] = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.."+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
 	["DELIST_GROUP"] = "Delist Group";
 	["DELIST_GROUP_DESC"] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.";
 	["LEAVE_GROUP"] = "Leave Group";
@@ -207,7 +207,7 @@ app.L = {
 	["WORLD_QUESTS_DESC"] = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
 	["QUESTS_DESC"] = "Shows all possible QuestID's in the game in ascending numeric order.";
 	["UPDATE_WORLD_QUESTS"] = "Update World Quests Now";
-	["UPDATE_WORLD_QUESTS_DESC"] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\nAlt + Click to include currently-available Things which may not be time-limited";
+	["UPDATE_WORLD_QUESTS_DESC"] = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\n"..ALT_KEY_TEXT.." + Click to include currently-available Things which may not be time-limited";
 	["CLEAR_WORLD_QUESTS"] = "Clear World Quests";
 	["CLEAR_WORLD_QUESTS_DESC"] = "Click to clear the current information within the World Quests frame";
 	["ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC"] = "All items that can be used to obtain achievements that you are missing are displayed here.";
@@ -241,6 +241,7 @@ app.L = {
 	["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
 	["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
 	["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
+	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.."-Click) to properly be collected.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -250,15 +251,15 @@ app.L = {
 	["ITEM_FILTER_POPUP_TEXT"] = "Which Item Filter would you like to search for?";
 
 	-- Instructional Text
-	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
-	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\nShift + Click to Refresh Collections\nCtrl + Click to Expand/Collapse Recursively\nShift + Right Click to Sort Groups/Popout Lists|r";
-	["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\nShift + Click to Refresh Collections\nCtrl + Click to Expand/Collapse Recursively\nShift + Right Click to Sort Groups/Popout Lists\nAlt + Right Click to Plot Waypoints|r";
-	["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\nShift + Click to Search the Auction House|r";
-	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\nShift + Click to Search the Auction House|r";
+	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\n"..CTRL_KEY_TEXT.." + Left click to open the Mini List.\n"..SHIFT_KEY_TEXT.." + Left click to Refresh Collections.";
+	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." + Click to Refresh Collections\n"..CTRL_KEY_TEXT.." + Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." + Right Click to Sort Groups/Popout Lists|r";
+	["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." + Click to Refresh Collections\n"..CTRL_KEY_TEXT.." + Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." + Right Click to Sort Groups/Popout Lists\n"..ALT_KEY_TEXT.." + Right Click to Plot Waypoints|r";
+	["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." + Click to Search the Auction House|r";
+	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." + Click to Search the Auction House|r";
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
-	["TOP_ROW_TO_LOCK"] = "|cff3399ffAlt + Click to Lock this Window";
-	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000Alt + Click to Unlock this Window";
+	["TOP_ROW_TO_LOCK"] = "|cff3399ff"..ALT_KEY_TEXT.." + Click to Lock this Window";
+	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000"..ALT_KEY_TEXT.." + Click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
 	["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
@@ -266,7 +267,7 @@ app.L = {
 
 	-- Settings.lua
 		["SKIP_AUTO_REFRESH"] = "Skip Settings-Toggle Data Refreshes!";
-		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.."-Clicking on an ATT window.";
 		["AFTER_REFRESH"] = "After Refresh";
 
 		-- General tab
@@ -398,6 +399,9 @@ app.L = {
 	["DYNAMIC_CATEGORY_NESTED"] = "Nested";
 	["DYNAMIC_CATEGORY_NESTED_TOOLTIP"] = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 	["DYNAMIC_CATEGORY_TOOLTIP_NOTE"] = "\n\n|cffff0000Requires Reload|r";
+	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
+	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
+	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
 
 	-- Account Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = "|cff00AB00Track Account-wide|R\n\nAchievement tracking is usually account wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
@@ -414,7 +418,7 @@ app.L = {
 	-- Filters tab
 	["FILTERS_TAB"] = TRACKING;
 	["ITEM_FILTER_LABEL"] = AUCTION_CATEGORY_WEAPONS.." & "..ARMOR;
-	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
+	["ITEM_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 	["CLASS_DEFAULTS_BUTTON"] = "Class Defaults";
 	["CLASS_DEFAULTS_BUTTON_TOOLTIP"] = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
 	["ALL_BUTTON"] = ALL;
@@ -422,7 +426,7 @@ app.L = {
 	["UNCHECK_ALL_BUTTON"] = NONE;
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all options at once.";
 	["CUSTOM_FILTERS_LABEL"] = "Automated";
-	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF, even if the option is disabled.|r";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in |Cff00AB00Account Mode|cffFFFFFF.|r";
 	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
@@ -443,9 +447,9 @@ app.L = {
 	["DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
 	["TOOLTIP_MOD_LABEL"] = "Modifier";
 	["TOOLTIP_MOD_NONE"] = NONE_KEY;
-	["TOOLTIP_MOD_SHIFT"] = "Shift";
-	["TOOLTIP_MOD_CTRL"] = "Ctrl";
-	["TOOLTIP_MOD_ALT"] = "Alt";
+	["TOOLTIP_MOD_SHIFT"] = SHIFT_KEY_TEXT;
+	["TOOLTIP_MOD_CTRL"] = CTRL_KEY_TEXT;
+	["TOOLTIP_MOD_ALT"] = ALT_KEY_TEXT;
 	["TOOLTIP_SHOW_LABEL"] = "Shown Information";
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX"] = "Collection Progress";
 	["SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
@@ -458,7 +462,9 @@ app.L = {
 	["LORE_CHECKBOX"] = "Lore";
 	["LORE_CHECKBOX_TOOLTIP"] = "Enable this option to show lore within the tooltip. This may include the descriptive text supplied by the Dungeon Journal or for flavor by a Contributor.";
 	["KNOWN_BY_CHECKBOX"] = "Known By";
-	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know this recipe in the tooltip.";
+	["KNOWN_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
+	["COMPLETED_BY_CHECKBOX"] = "Completed By";
+	["COMPLETED_BY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
 	["SHOW_MODELS_CHECKBOX"] = "Model Preview";
 	["SHOW_MODELS_CHECKBOX_TOOLTIP"] = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
 	["SHOW_CURRENCY_CALCULATIONS_CHECKBOX"] = "Currency calculation";
@@ -537,7 +543,7 @@ app.L = {
 	["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
 	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 	["SORT_BY_PROGRESS_CHECKBOX"] = "Sort By Progress";
-	["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'Sort' operation (Shift + Right Click) to sort by the total progress of each group (instead of by Name)";
+	["SORT_BY_PROGRESS_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." + Right Click) to sort by the total progress of each group (instead of by Name)";
 	["QUEST_CHAIN_NESTED_CHECKBOX"] = "Show Nested Quest Chains";
 	["QUEST_CHAIN_NESTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
 	["CELEBRATIONS_LABEL"] = "Celebrations & Sound Effects";
@@ -561,7 +567,7 @@ app.L = {
 	["PROFILE_NEW_TOOLTIP"] = "Create a blank Profile to be used by the current Character";
 	["PROFILE_COPY_TOOLTIP"] = "Copy the Selected Profile into the Current Profile";
 	["PROFILE_DELETE_TOOLTIP"] = "Delete the Selected Profile";
-	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be Shift-Clicked to Switch to it";
+	["PROFILE_SWITCH_TOOLTIP"] = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.."-Clicked to Switch to it";
 
 	-- Sync tab
 	["SYNC"] = "Sync";
@@ -2094,11 +2100,13 @@ app.L = {
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
-		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience.blp")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
+		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-		["SL_COV_KYR"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_kyrian.blp")..":0|t", color = "ff516bfe", text = GetSpellInfo(321076) },
-		["SL_COV_NEC"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_necrolord.blp")..":0|t", color = "ff40bf40", text = GetSpellInfo(321078) },
-		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae.blp")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
-		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr.blp")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
+		["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+		["~HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
+		["SL_COV_KYR"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_kyrian")..":0|t", color = "ff516bfe", text = GetSpellInfo(321076) },
+		["SL_COV_NEC"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_necrolord")..":0|t", color = "ff40bf40", text = GetSpellInfo(321078) },
+		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
+		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
 	};
 };

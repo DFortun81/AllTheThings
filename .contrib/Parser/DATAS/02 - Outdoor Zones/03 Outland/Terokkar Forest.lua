@@ -34,33 +34,50 @@ root("Zones", {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					removeclassicphase(ach(867, {	-- Explore Terokkar Forest
+					explorationAch(867, {	-- Explore Terokkar Forest
 						-- #if BEFORE WRATH
 						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
-						["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 						-- #endif
-					})),
+					}),
 					ach(894, applyclassicphase(TBC_PHASE_TWO_SKYGUARD, {	-- Flying High Over Skettis
-						-- #if BEFORE 3.0.1
+						-- #if BEFORE WRATH
+						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
+						-- #endif
+						-- #if ANYCLASSIC
 						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1031); end]],
-						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif
 					})),
-					removeclassicphase(ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
+					classicAch(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
 						["requireSkill"] = FISHING,
 						-- #if BEFORE WRATH
 						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
-					})),
+					}),
 					ach(905, {	-- Old Man Barlowned
 						["requireSkill"] = FISHING,
+						["groups"] = {
+							crit(5706, {	-- Crocolisks in the City
+								["_quests"] = { 11665 },
+							}),
+							crit(5707, {	-- Bait Bandits
+								["_quests"] = { 11666 },
+							}),
+							crit(5708, {	-- Felblood Fillet
+								["_quests"] = { 11669 },
+							}),
+							crit(5709, {	-- The One That Got Away
+								["_quests"] = { 11667 },
+							}),
+							crit(5710, {	-- Shrimpin' Ain't Easy
+								["_quests"] = { 11668 },
+							}),
+						},
 					}),
-					removeclassicphase(ach(1191, {	-- Terror of Terokkar (A)
+					classicAch(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -99,8 +116,10 @@ root("Zones", {
 							9986,	-- Stymying the Arakkoa
 							10028,	-- Vessels of Power
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 63 quests in Terokkar Forest.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -152,8 +171,8 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
-					removeclassicphase(ach(1272, {	-- Terror of Terokkar (H)
+					}),
+					classicAch(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -191,8 +210,10 @@ root("Zones", {
 							9987,	-- Stymying the Arakkoa
 							10036,	-- Torgos!
 						},
-						-- #elseif BEFORE WRATH
+						-- #else
+						-- #if BEFORE WRATH
 						["description"] = "Complete 68 quests in Terokkar Forest.",
+						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -243,7 +264,7 @@ root("Zones", {
 							}),
 						},
 						-- #endif
-					})),
+					}),
 				}),
 				-- #if AFTER MOP
 				petbattle(filter(BATTLE_PETS, {
@@ -345,9 +366,6 @@ root("Zones", {
 								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(2, {	-- Bait Bandits
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11665, {  -- Crocolisks in the City
@@ -361,9 +379,6 @@ root("Zones", {
 								["provider"] = { "i", 34864 },	-- Baby Crocolisk
 							}),
 							i(35348),	-- Bag of Fishing Treasures
-							crit(1, {	-- Crocolisks in the City
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11669, {	-- Felblood Fillet
@@ -377,9 +392,6 @@ root("Zones", {
 								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(3, {	-- Felblood Fillet
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11668, {	-- Shrimpin' Ain't Easy
@@ -393,9 +405,6 @@ root("Zones", {
 								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(5, {	-- Shrimpin' Ain't Easy
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					q(11667, {	-- The One That Got Away
@@ -409,9 +418,6 @@ root("Zones", {
 								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
 							i(34863),  -- Bag of Fishing Treasures
-							crit(4, {	-- The One That Got Away
-								["achievementID"] = 905,	-- Old Man Barlowned
-							}),
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood
@@ -869,9 +875,10 @@ root("Zones", {
 						["coord"] = { 57.6, 55.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(10908, {	-- Speak with Rilak the Redeemed -- aa
+					q(10908, {	-- Speak with Rilak the Redeemed
 						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
+						["altQuests"] = { 10862, },	-- Surrender to the Horde
 						["isBreadcrumb"] = true,
 					}),
 					q(10039, {	-- Speak with Scout Neftis
@@ -916,6 +923,7 @@ root("Zones", {
 						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["altQuests"] = { 10908 },	-- Speak with Rilak the Redeemed
 						["isBreadcrumb"] = true,
 					}),
 					q(10873, {	-- Taken in the Night -- aa
@@ -959,7 +967,7 @@ root("Zones", {
 							i(25975),	-- Wolf Hunter's Guise
 						},
 					}),
-					q(10847, {	-- The Eyes of Skettis -- aa
+					q(10847, {	-- The Eyes of Skettis
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
 						["sourceQuests"] = {
@@ -1258,7 +1266,7 @@ root("Zones", {
 							{ 41.2, 65.4, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(6, {	-- Crippler
+							crit(4509, {	-- Crippler
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31238),	-- Dragonbone Ring
@@ -1313,7 +1321,7 @@ root("Zones", {
 							{ 55.4, 32.6, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(7, {	-- Doomsayer Jurim
+							crit(4510, {	-- Doomsayer Jurim
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31235),	-- Grim Boots
@@ -1402,7 +1410,7 @@ root("Zones", {
 							{ 59.8, 25.2, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(17, {	-- Okrek
+							crit(4520, {	-- Okrek
 								["achievementID"] = 1312,	-- Bloody Rare
 							}),
 							i(31228),	-- Feathered Belt
@@ -1648,7 +1656,7 @@ root("Zones", {
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
 							22144,    -- Gordunni Elementalist
-							22148,    -- Gordunni Gordunni Head-Splitter
+							22148,    -- Gordunni Head-Splitter
 							23022,    -- Gordunni Soulreaper
 						},
 					}),

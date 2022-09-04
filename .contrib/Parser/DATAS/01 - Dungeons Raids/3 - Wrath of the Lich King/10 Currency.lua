@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if NOT ANYCLASSIC
+-- No idea why this file exists.
+--[[
 root("Instances", tier(WOTLK_TIER, {
 	n(REWARDS, {
 		i(40752, {	-- Emblem of Heroism (CurrencyID:101)
@@ -35,3 +38,5 @@ root("Instances", tier(WOTLK_TIER, {
 		}),
 	}),
 }));
+]]--
+-- #endif

@@ -365,14 +365,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(12084),		-- Infused and Abused (Argus)
 		ach(12026),	-- Invasion Obliteration
-		ach(11841, {	-- Naxt Victim
-			crit(1),		-- Than'otalion
-			crit(2),		-- Skulguloth
-			crit(3),		-- Force-Commander Xillious
-			crit(4),		-- An'thyna
-			crit(5),		-- Fel Obliterator
-			crit(6),		-- Illisthyndria
-		}),
 		ach(12083, {	-- Paragon of Argus
 			title(366),		-- the Lightbringer
 			crit(1),		-- You Are Now Prepared!

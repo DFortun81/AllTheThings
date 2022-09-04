@@ -18,7 +18,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					123863,	-- Faithless Aggressor
 					134560,	-- Faithless Auditor
 					128682,	-- Faithless Defender
-					129625,	-- Faithless Dervish
+					129652,	-- Faithless Dervish
 					122782,	-- Faithless Mender
 					123864,	-- Faithless Ravager
 					129778,	-- Faithless Skycaller

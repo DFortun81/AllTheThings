@@ -186,20 +186,22 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					crit(3),	-- Ashmaul Burial Grounds
 					crit(4),	-- Amphitheater of Annihilation
 				}),
-				ach(9473, {	-- Vol'jin's Spear
+			}),
+			n(FACTIONS, {
+				faction(1681, sharedDataSelf({ -- Vol'jin's Spear
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(285),	-- <Name>, Spear of Vol'jin
-						faction(1681),	-- Vol'jin's Spear
-					},
-				}),
-				ach(9474, {	-- Wrynn's Vanguard
+				},{
+					ach(9473, {	-- Vol'jin's Spear
+						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
+					}),
+				})),
+				faction(1682, sharedDataSelf({ -- Wyrnn's Vanguard
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(286),	-- <Name>, Sword of Wrynn
-						faction(1682),	-- Wyrnn's Vanguard
-					},
-				}),
+				},{
+					ach(9474, {	-- Wrynn's Vanguard
+						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn
+					}),
+				})),
 			}),
 			n(QUESTS, {
 				q(35264, {	-- A Bunch of Artifact Fragments (A)
@@ -889,7 +891,6 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
 						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory

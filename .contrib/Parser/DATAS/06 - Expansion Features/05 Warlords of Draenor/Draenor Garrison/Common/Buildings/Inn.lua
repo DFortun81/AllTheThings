@@ -562,7 +562,8 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 1, BACK},
 								{"sub", "common_wod_dungeon_drop", 1, NECK},
 								{"sub", "common_wod_dungeon_drop", 1, FINGER},
-								{"is", "itemID"},
+								{"pop"},	-- Get the raw Items from each slot header
+								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
 						}),
 						i(119037, {	-- Supply of Storied Rarities [16]
@@ -579,6 +580,8 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 2, BACK},
 								{"sub", "common_wod_dungeon_drop", 2, NECK},
 								{"sub", "common_wod_dungeon_drop", 2, FINGER},
+								{"pop"},	-- Get the raw Items from each slot header
+								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
 						}),
 						q(37228, {	-- A Fruitful Proposition
@@ -670,13 +673,15 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
+										{"sub", "common_wod_dungeon_drop", 1, FEET},
 										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
 										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -793,11 +798,14 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
+										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
+										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -847,6 +855,7 @@ _.ExpansionFeatures =
 								i(119040, {	-- Cache of Mingled Treasures
 									["sym"] = {
 										{"sub", "common_wod_dungeon_drop", 1, HANDS},
+										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
 										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
@@ -856,7 +865,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},
@@ -899,6 +909,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, HANDS},
 										{"sub", "common_wod_dungeon_drop", 1, WAIST},
 										{"sub", "common_wod_dungeon_drop", 1, LEGS},
+										{"sub", "common_wod_dungeon_drop", 1, CHEST},
 										{"sub", "common_wod_dungeon_drop", 1, FEET},
 										{"sub", "common_wod_dungeon_drop", 1, HEAD},
 										{"sub", "common_wod_dungeon_drop", 1, WRIST},
@@ -906,7 +917,8 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"is", "itemID"},
+										{"pop"},	-- Get the raw Items from each slot header
+										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
 								}),
 							},

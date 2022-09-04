@@ -126,9 +126,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(160548, {	-- Tabard of the Voldunai
 						["cost"] = 6250000,	-- 625g
 					}),
-					i(163565, {	-- Vulpera Scrapper's Armor (TOY!)
-						["u"] = NEVER_IMPLEMENTED, -- (Was in beta, not there on 9/16/18)
-					}),
 					i(165021, {	-- Words of Akunda (TOY!)
 						["cost"] = 18000000,	-- 1,800g
 					}),

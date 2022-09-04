@@ -2299,6 +2299,7 @@ _.Zones =
 						}),
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, WARSPEAR },
+							["minReputation"] = { 1681, 5 },	-- Vol'jin's Spear, Friendly
 							["g"] = {
 								i(116775, {	-- Breezestrider Stallion (MOUNT!)
 									["cost"] = {
@@ -3726,53 +3727,7 @@ _.Zones =
 						}),
 						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
 							["coord"] = { 75.0, 37.9, WARSPEAR },
-							["g"] = {
-								i(115356, {	-- Draenor Blacksmithing
-									["filterID"] = MISC,
-									["g"] = {
-										i(116727),		-- Recipe: Smoldering Breastplate
-										i(116726),		-- Recipe: Smoldering Helm
-										i(116728),		-- Recipe: Smoldering Greaves
-										recipe(171690),	-- Truesteel Ingot
-										i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
-									},
-								}),
-								i(118720, {	-- Secret of Draenor Blacksmithing
-									["filterID"] = MISC,
-									["g"] = {
-										i(119329),	-- Recipe: Soul of the Forge
-										i(120262),	-- Recipe: Steelforged Aegis
-										i(120260),	-- Recipe: Steelforged Axe
-										i(116731),	-- Recipe: Steelforged Dagger
-										i(116729),	-- Recipe: Steelforged Greataxe
-										i(116732),	-- Recipe: Steelforged Hammer
-										i(116730),	-- Recipe: Steelforged Saber
-										i(116733),	-- Recipe: Steelforged Shield
-										i(116740),	-- Recipe: Truesteel Armguards
-										i(116741),	-- Recipe: Truesteel Boots
-										i(116739),	-- Recipe: Truesteel Breastplate
-										i(116738),	-- Recipe: Truesteel Gauntlets
-										i(116737),	-- Recipe: Truesteel Greaves
-										i(116734),	-- Recipe: Truesteel Grinder
-										i(116736),	-- Recipe: Truesteel Helm
-										i(116735),	-- Recipe: Truesteel Pauldrons
-										i(118044),	-- Recipe: Truesteel Reshaper
-										i(116742),	-- Recipe: Truesteel Waistguard
-										i(116764, {	-- Small Pouch of Coins
-											["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-										}),
-									},
-								}),
-								i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
-									["u"] = NEVER_IMPLEMENTED,
-								}),
-								i(122550, {	-- Recipe: Powerful Steelforged Essence
-									["u"] = REMOVED_FROM_GAME,
-								}),
-								i(122552, {	-- Recipe: Powerful Truesteel Essence
-									["u"] = REMOVED_FROM_GAME,
-								}),
-							},
+							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
 						}),
 						n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 53.4, 59.8, WARSPEAR },

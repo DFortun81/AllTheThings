@@ -648,6 +648,7 @@ _.Zones =
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.6, NORTHERN_BARRENS },
 					["requireSkill"] = HERBALISM,
+					["description"] = "To obtain this quest, you must have at least 40 skill in Classic Herbalism.",
 					["g"] = {
 						i(5341),	-- Spore-Covered Tunic
 					},
@@ -977,15 +978,6 @@ _.Zones =
 					},
 				}),
 				q(1839,  {	-- Ula'elek and the Brutal Gauntlets
-					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
-					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
-					["sourceQuest"] = 1838,	-- Brutal Armor
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(1841,  {	-- Velora Nitely and the Brutal Legguards
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["coord"] = { 57.2, 30.2, NORTHERN_BARRENS },
 					["sourceQuest"] = 1838,	-- Brutal Armor

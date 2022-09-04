@@ -309,6 +309,19 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(7083),	-- Purified Kor Gem
 					},
 				}),
+				q(3765, {	-- The Corruption Abroad
+					["qg"] = 4984,  -- Argos Nightwhisper
+					-- #if AFTER WRATH
+					["coord"] = { 36.2, 67.6, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 21.6, 55.6, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(26899, {	-- The Enemy of My Enemy [Horde] [CATA]
 					["qg"] = 44387,	-- Flaming Eradicator
 					["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },

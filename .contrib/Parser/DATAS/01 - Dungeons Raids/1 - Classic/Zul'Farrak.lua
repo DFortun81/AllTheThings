@@ -255,11 +255,10 @@ root("Instances", tier(CLASSIC_TIER, {
 					["timeline"] = { "added 7.1.5.23360" },
 				}),
 				i(9243),	-- Shriveled Troll Heart
-				i(2040), 	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
 				i(9523),	-- Troll Temper
 			}),
 			n(10080, {	-- Sandarr Dunereaver
-				["description"] = "This is a rare that is not always present.",
+				["description"] = "This is a rare that is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
 				["groups"] = {
 					i(9512), 	-- Blackmetal Cape
 					i(9511), 	-- Bloodletter Scalpel
@@ -270,6 +269,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(862),		-- Runed Ring
 					i(9484), 	-- Spellshock Leggings
 					i(9481), 	-- The Minotaur
+					i(2040), 	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
 					i(9482), 	-- Witch Doctor's Cane
 				},
 			}),
@@ -279,7 +279,7 @@ root("Instances", tier(CLASSIC_TIER, {
 					i(12470),	-- Sandstalker Ankleguards
 				},
 			}),
-			e(596, {	-- Theka the Martyr
+			e(485, {	-- Theka the Martyr
 				["creatureID"] = 7272,
 				["groups"] = {
 					i(10660),	-- First Mosh'aru Tablet

@@ -802,11 +802,6 @@ root("Zones", m(BROKEN_ISLES, {
 					["coord"] = { 62.6, 42.6, AZSUNA },
 				}),
 			})),
-	--[[ TODO: These quests will be organized soon™
-			q(43561),	-- I Believe I Can Fly!
-			q(40133),	-- Scrap of Pants
-			q(37660),	-- The Scythe of Souls
-			--]]
 		}),
 	}),
 }));
@@ -820,10 +815,16 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 }));
 
 root("HiddenQuestTriggers", {
-	q(45515),	-- Valakar the Thirsty
-	q(43815),	-- Karthax
-	q(45496),	-- The Whisperer
-	q(42570),	-- Shaman Shrine - Azsuna Earth 02
-	q(42569),	-- Shaman Shrine - Azsuna Earth 01
-	q(45492),	-- Marlblub the Massive (while on the WQ of the same name)  
+	tier(LEGION_TIER, {
+		q(37526),	-- Farondis Murder Flag - triggers between turning in "The Tidestone: Shattered" (questID 37469) and starting "Save Yourself" (questID 37530)
+		q(40584),	-- FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose" (questID 38443)
+		q(43815),	-- Karthax
+		q(45492),	-- Marlblub the Massive - triggered during WQ (questID 43098)
+		q(45496),	-- The Whisperer
+		q(42569),	-- Shaman Shrine - Azsuna Earth 01
+		q(42570),	-- Shaman Shrine - Azsuna Earth 02
+		q(42595),	-- Shaman Shrine - Azsuna Water 01 - DGK
+		q(42577),	-- Shaman Shrine - Azsuna Wind 01
+		q(45515),	-- Valakar the Thirsty
+	}),
 });

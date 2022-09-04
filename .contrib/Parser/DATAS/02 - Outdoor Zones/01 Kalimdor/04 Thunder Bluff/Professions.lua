@@ -87,11 +87,6 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(ACHIEVEMENTS, {
-						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
-							["races"] = HORDE_ONLY,
-						}),
-					}),
 					n(QUESTS, {
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -113,11 +108,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(4, {	-- Craving Crayfish
-										["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-									}),
-								},
 							}),
 							q(29345, {	-- Pond Predators
 								["provider"] = { "n", 3028 },	-- Kah Mistrunner
@@ -126,11 +116,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(1, {	-- Pond Predators
-										["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-									}),
-								},
 							}),
 							q(29354, {	-- Shiny Baubles
 								["provider"] = { "n", 3028 },	-- Kah Mistrunner
@@ -139,11 +124,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(5, {	-- Shiny Baubles
-										["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-									}),
-								},
 							}),
 							q(29348, {	-- The Race to Restock
 								["provider"] = { "n", 3028 },	-- Kah Mistrunner
@@ -152,11 +132,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(3, {	-- The Race to Restock
-										["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-									}),
-								},
 							}),
 							q(29346, {	-- The Ring's the Thing
 								["provider"] = { "n", 3028 },	-- Kah Mistrunner
@@ -165,11 +140,6 @@ _.Zones =
 								["requireSkill"] = FISHING,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 10,
-								["g"] = {
-									crit(2, {	-- The Ring's the Thing
-										["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
-									}),
-								},
 							}),
 						},
 					}),

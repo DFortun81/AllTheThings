@@ -293,6 +293,7 @@ _.Zones =
 							["g"] = {
 								ach(8717),	-- Candlekeeper
 								ach(8718),	-- Oathguard
+								ach(8719),	-- Blazebinder
 								ach(8720),	-- Kilnmaster
 								ach(8721, {	-- Fire-Watcher
 									title(251),	-- Fire-Watcher

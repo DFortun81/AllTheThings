@@ -1472,8 +1472,11 @@ i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
 -- PATCH 9.2.5 --
 -----------------
 i(191566, 370620);	-- Elusive Emerald Hawkstrider
+i(191290, 370346);	-- Eternal Gladiator's Soul Eater
 i(191123, 369666);	-- Grimhowl
+i(190170, 366791);	-- Jigglesworth Sr.
 --i(0, 367676);		-- Nether-Gorged Greatwyrm
+i(192557, 334482);	-- Restoration Deathwalker
 --i(0, 359843);		-- Tangled Dreamweaver
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719

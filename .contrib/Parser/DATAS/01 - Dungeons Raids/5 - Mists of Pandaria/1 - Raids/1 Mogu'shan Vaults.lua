@@ -15,9 +15,11 @@ _.Instances = { tier(MOP_TIER, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
 			}),
+			d(7, {	-- LFR Queue NPC
+				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
+				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
+			}),
 			d(7, {	-- LFR
-				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",
-				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -90,123 +92,100 @@ _.Instances = { tier(MOP_TIER, {
 								},
 							})),
 						},
-						--[[
-						["crs"] = {
-							60047,	-- Amethyst Guardian
-							60051,	-- Cobalt Guardian
-							60043,	-- Jade Guardian
-							59915,	-- Jasper Guardian
-							60009,	-- Feng the Accursed
-							60143,	-- Gara'jal the Spiritbindre
-							60701,	-- Zian of the Endless Shadow <Sorcer King>
-							60708,	-- Meng the Demented <Mad King>
-							60709,	-- Qiang the Merciless <Warlord King>
-							60710,	-- Subetai the Swift <Bandit King>
-							60410,	-- Elegon
-							60400,	-- Jan-xi <Emperor's Open Hand>
-							60399,	-- Qin-xi <Emperor's Closed Fist>
-						},
-						]]--
 					}),
 					ach(6458, {	-- Guardians of Mogu'shan
-						["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
-						["groups"] = {
-							e(679, {	-- The Stone Guard
-								["crs"] = {
-									60047,	-- Amethyst Guardian
-									60051,	-- Cobalt Guardian
-									60043,	-- Jade Guardian
-									59915,	-- Jasper Guardian
-								},
-								["groups"] = {
-									i(167047),	-- Stoneclaw (PET!)
-									i(86741),	-- Dagger of the Seven Stars
-									i(86745),	-- Sixteen-Fanged Crown
-									i(86739),	-- Beads of the Mogu'shi
-									i(86748),	-- Cape of Three Lanterns
-									i(89964),	-- Stonefang Chestguard
-									i(86740),	-- Stonemaw Armguards
-									i(89966),	-- Claws of Amethyst
-									i(89965),	-- Ruby-Linked Girdle
-									i(86793),	-- Star-Stealer Waistguard
-									i(86746),	-- Stonebound Cinch
-									i(86747),	-- Jade Dust Leggings
-									i(86743),	-- Stoneflesh Leggings
-									i(86744),	-- Heavenly Jade Greatboots
-									i(86742),	-- Jasper Clawfeet
-								},
-							}),
-							e(689, {	-- Feng the Accursed
-								["crs"] = { 60009 },	-- Feng the Accursed
-								["groups"] = {
-									i(89426),	-- Fan of Fiery Winds
-									i(86757),	-- Hood of Cursed Dreams
-									i(86752),	-- Nullification Greathelm
-									i(86754),	-- Amulet of Seven Curses
-									i(86782),	-- Arrow Breaking Windcloak
-									i(86753),	-- Cloak of Peacock Feathers
-									i(86758),	-- Imperial Ghostbinder's Robes
-									i(86751),	-- Bracers of Six Oxen
-									i(86755),	-- Chain of Shadow
-									i(86750),	-- Tomb Raider's Girdle
-									i(86756),	-- Legplates of Sagacious Shadows
-									i(86749),	-- Wildfire Worldwalkers
-									i(89968),	-- Feng's Ring of Dreams
-									i(89967),	-- Feng's Seal of Binding
-								},
-							}),
-							e(682, {	-- Gara'jal the Spiritbinder
-								["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
-								["groups"] = {
-									i(167048),	-- Wayward Spirit (PET!)
-									i(86762),	-- Gara'kal, Fist of the Spiritbinder
-									i(86764),	-- Eye of the Ancient Spirit
-									i(86759),	-- Soulgrasp Choker
-									i(86763),	-- Netherrealm Shoulderpads
-									i(86770),	-- Shadowsummoner Spaulders
-									i(86768),	-- Spaulders of the Divided Mind
-									i(86766),	-- Bindings of Ancient Spirits
-									i(89969),	-- Bonded Soul Bracers
-									i(86761),	-- Fetters of Death
-									i(86769),	-- Leggings of Imprisoned Will
-									i(86765),	-- Sandals of the Severed Soul
-									i(86760),	-- Sollerets of Spirit Splitting
-									i(86767),	-- Circuit of the Frail Soul
-								},
-							}),
-						},
+						e(679, {	-- The Stone Guard
+							["crs"] = {
+								60047,	-- Amethyst Guardian
+								60051,	-- Cobalt Guardian
+								60043,	-- Jade Guardian
+								59915,	-- Jasper Guardian
+							},
+							["groups"] = {
+								i(167047),	-- Stoneclaw (PET!)
+								i(86741),	-- Dagger of the Seven Stars
+								i(86745),	-- Sixteen-Fanged Crown
+								i(86739),	-- Beads of the Mogu'shi
+								i(86748),	-- Cape of Three Lanterns
+								i(89964),	-- Stonefang Chestguard
+								i(86740),	-- Stonemaw Armguards
+								i(89966),	-- Claws of Amethyst
+								i(89965),	-- Ruby-Linked Girdle
+								i(86793),	-- Star-Stealer Waistguard
+								i(86746),	-- Stonebound Cinch
+								i(86747),	-- Jade Dust Leggings
+								i(86743),	-- Stoneflesh Leggings
+								i(86744),	-- Heavenly Jade Greatboots
+								i(86742),	-- Jasper Clawfeet
+							},
+						}),
+						e(689, {	-- Feng the Accursed
+							["crs"] = { 60009 },	-- Feng the Accursed
+							["groups"] = {
+								i(89426),	-- Fan of Fiery Winds
+								i(86757),	-- Hood of Cursed Dreams
+								i(86752),	-- Nullification Greathelm
+								i(86754),	-- Amulet of Seven Curses
+								i(86782),	-- Arrow Breaking Windcloak
+								i(86753),	-- Cloak of Peacock Feathers
+								i(86758),	-- Imperial Ghostbinder's Robes
+								i(86751),	-- Bracers of Six Oxen
+								i(86755),	-- Chain of Shadow
+								i(86750),	-- Tomb Raider's Girdle
+								i(86756),	-- Legplates of Sagacious Shadows
+								i(86749),	-- Wildfire Worldwalkers
+								i(89968),	-- Feng's Ring of Dreams
+								i(89967),	-- Feng's Seal of Binding
+							},
+						}),
+						e(682, {	-- Gara'jal the Spiritbinder
+							["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
+							["groups"] = {
+								i(167048),	-- Wayward Spirit (PET!)
+								i(86762),	-- Gara'kal, Fist of the Spiritbinder
+								i(86764),	-- Eye of the Ancient Spirit
+								i(86759),	-- Soulgrasp Choker
+								i(86763),	-- Netherrealm Shoulderpads
+								i(86770),	-- Shadowsummoner Spaulders
+								i(86768),	-- Spaulders of the Divided Mind
+								i(86766),	-- Bindings of Ancient Spirits
+								i(89969),	-- Bonded Soul Bracers
+								i(86761),	-- Fetters of Death
+								i(86769),	-- Leggings of Imprisoned Will
+								i(86765),	-- Sandals of the Severed Soul
+								i(86760),	-- Sollerets of Spirit Splitting
+								i(86767),	-- Circuit of the Frail Soul
+							},
+						}),
 					}),
 					ach(6844, {	-- The Vault of Mysteries
-						["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from the Elegon chest is NOT tradeable to others in group.",
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["groups"] = {
-							e(687, {	-- The Spirit Kings
-								["crs"] = {
-									60708,	-- Meng the Demented
-									60709,	-- Qiang the Merciless
-									60710,	-- Subetai the Swift
-									60701,	-- Zian of the Endless Shadow
-								},
-								["g"] = {
-									i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
-									i(86778),	-- Steelskin, Qiang's Impervious Shield
-									i(86788),	-- Hood of Blind Eyes
-									i(86776),	-- Amulet of the Hidden Kings
-									i(86783),	-- Zian's Choker of Coalesced Shadow
-									i(86780),	-- Shoulderguards of the Unflanked
-									i(89971),	-- Mindshard Drape
-									i(86779),	-- Breastplate of the Kings' Guard
-									i(86786),	-- Bracers of Dark Thoughts
-									i(89970),	-- Bracers of Violent Meditation
-									i(86787),	-- Undying Shadow Grips
-									i(86785),	-- Girdle of Delirious Visions
-									i(86781),	-- Subetai's Pillaging Leggings
-									i(86784),	-- Meng's Treads of Insanity
-								},
-							}),
-							cr(60410, e(726, {	-- Elegon
+						e(687, {	-- The Spirit Kings
+							["crs"] = {
+								60708,	-- Meng the Demented
+								60709,	-- Qiang the Merciless
+								60710,	-- Subetai the Swift
+								60701,	-- Zian of the Endless Shadow
+							},
+							["g"] = {
+								i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
+								i(86778),	-- Steelskin, Qiang's Impervious Shield
+								i(86788),	-- Hood of Blind Eyes
+								i(86776),	-- Amulet of the Hidden Kings
+								i(86783),	-- Zian's Choker of Coalesced Shadow
+								i(86780),	-- Shoulderguards of the Unflanked
+								i(89971),	-- Mindshard Drape
+								i(86779),	-- Breastplate of the Kings' Guard
+								i(86786),	-- Bracers of Dark Thoughts
+								i(89970),	-- Bracers of Violent Meditation
+								i(86787),	-- Undying Shadow Grips
+								i(86785),	-- Girdle of Delirious Visions
+								i(86781),	-- Subetai's Pillaging Leggings
+								i(86784),	-- Meng's Treads of Insanity
+							},
+						}),
+						cr(60410, e(726, {	-- Elegon
+							["description"] = "Loot from the Elegon chest is NOT tradeable to others in group.",
+							["g"] = {
 								i(167049),	-- Celestial Gift (PET!)
 								i(86799),	-- Starshatter
 								i(86789),	-- Elegion, the Fanged Crescent
@@ -222,26 +201,26 @@ _.Instances = { tier(MOP_TIER, {
 								i(86791),	-- Bottle of Infinite Stars
 								i(86792),	-- Light of the Cosmos
 								i(86790),	-- Vial of Dragon's Blood
-							})),
-							cr(60400, e(677, {	-- Will of the Emperor (60399)
-								i(167050),	-- Mogu Statue (PET!)
-								i(138804),	-- Illusion: Colossus
-								i(86806),	-- Tihan, Scepter of the Sleeping Emperor
-								i(86801),	-- Fang Kung, Spark of Titans
-								i(86804),	-- Crown of Opportunistic Strikes
-								i(89975),	-- Dreadeye Gaze
-								i(86809),	-- Hood of Focused Energy
-								i(86810),	-- Worldwaker Cabochon
-								i(86807),	-- Spaulders of the Emperor's Rage
-								i(89976),	-- Chestguard of Eternal Vigilance
-								i(89977),	-- Enameled Grips of Solemnity
-								i(87826),	-- Grips of Terra Cotta
-								i(86803),	-- Jang-xi's Devastating Legplates
-								i(86808),	-- Magnetized Leggings
-								i(86802),	-- Lei Shen's Final Orders
-								i(86805),	-- Qin-xi's Polarizing Seal
-							})),
-						},
+							},
+						})),
+						cr(60400, e(677, {	-- Will of the Emperor (60399)
+							i(167050),	-- Mogu Statue (PET!)
+							i(138804),	-- Illusion: Colossus
+							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
+							i(86801),	-- Fang Kung, Spark of Titans
+							i(86804),	-- Crown of Opportunistic Strikes
+							i(89975),	-- Dreadeye Gaze
+							i(86809),	-- Hood of Focused Energy
+							i(86810),	-- Worldwaker Cabochon
+							i(86807),	-- Spaulders of the Emperor's Rage
+							i(89976),	-- Chestguard of Eternal Vigilance
+							i(89977),	-- Enameled Grips of Solemnity
+							i(87826),	-- Grips of Terra Cotta
+							i(86803),	-- Jang-xi's Devastating Legplates
+							i(86808),	-- Magnetized Leggings
+							i(86802),	-- Lei Shen's Final Orders
+							i(86805),	-- Qin-xi's Polarizing Seal
+						})),
 					}),
 				},
 			}),
@@ -263,12 +242,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
 							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 							i(86043),	-- Jade Bandit Figurine
 							i(86042),	-- Jade Charioteer Figurine
 							i(86045),	-- Jade Courtesan Figurine
@@ -471,12 +450,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
 							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						},
 					}),
 					e(679, {	-- The Stone Guard

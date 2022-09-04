@@ -4688,6 +4688,58 @@ _.PVP =
 		}),
 	})),
 };
+-- #if AFTER LEGION
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		-- PvP Ensembles
+		q(46512),	-- Bloodthirsty Gladiator's Chain Armor (Hunter)
+		q(46513),	-- Bloodthirsty Gladiator's Dragonhide Armor (Druid)
+		q(46514),	-- Bloodthirsty Gladiator's Dreadplate Armor (Death Knight)
+		q(46515),	-- Bloodthirsty Gladiator's Felweave Armor (Warlock)
+		q(46516),	-- Bloodthirsty Gladiator's Leather Armor (Rogue)
+		q(46517),	-- Bloodthirsty Gladiator's Plate Armor (Warrior)
+		q(46518),	-- Bloodthirsty Gladiator's Ringmail Armor (Shaman)
+		q(46519),	-- Bloodthirsty Gladiator's Satin Armor (Priest)
+		q(46520),	-- Bloodthirsty Gladiator's Scaled Armor (Paladin)
+		q(46521),	-- Bloodthirsty Gladiator's Silk Armor (Mage)
+		q(46355),	-- Cataclysmic Gladiator's Chain Armor (Hunter)
+		q(46523),	-- Cataclysmic Gladiator's Dragonhide Armor (Druid)
+		q(46524),	-- Cataclysmic Gladiator's Dreadplate Armor (Death Knight)
+		q(46525),	-- Cataclysmic Gladiator's Felweave Armor (Warlock)
+		q(46526),	-- Cataclysmic Gladiator's Leather Armor (Rogue)
+		q(46527),	-- Cataclysmic Gladiator's Plate Armor (Warrior)
+		q(46528),	-- Cataclysmic Gladiator's Ringmail Armor (Shaman)
+		q(46529),	-- Cataclysmic Gladiator's Satin Armor (Priest)
+		q(46530),	-- Cataclysmic Gladiator's Scaled Armor (Paladin)
+		q(46531),	-- Cataclysmic Gladiator's Silk Armor (Mage)
+		q(46533),	-- Vicious Gladiator's Chain Armor (Hunter)
+		q(46534),	-- Vicious Gladiator's Dragonhide Armor (Druid)
+		q(46535),	-- Vicious Gladiator's Dreadplate Armor (Death Knight)
+		q(46536),	-- Vicious Gladiator's Felweave Armor (Warlock)
+		q(46537),	-- Vicious Gladiator's Leather Armor (Rogue)
+		q(46538),	-- Vicious Gladiator's Plate Armor (Warrior)
+		q(46539),	-- Vicious Gladiator's Ringmail Armor (Shaman)
+		q(46540),	-- Vicious Gladiator's Satin Armor (Priest)
+		q(46541),	-- Vicious Gladiator's Scaled Armor (Paladin)
+		q(46542),	-- Vicious Gladiator's Silk Armor (Mage)
+		q(46544),	-- Ruthless Gladiator's Chain Armor (Hunter)
+		q(46545),	-- Ruthless Gladiator's Dragonhide Armor (Druid)
+		q(46546),	-- Ruthless Gladiator's Dreadplate Armor (Death Knight)
+		q(46547),	-- Ruthless Gladiator's Felweave Armor (Warlock)
+		q(46548),	-- Ruthless Gladiator's Leather Armor (Rogue)
+		q(46549),	-- Ruthless Gladiator's Plate Armor (Warrior)
+		q(46550),	-- Ruthless Gladiator's Ringmail Armor (Shaman)
+		q(46551),	-- Ruthless Gladiator's Satin Armor (Priest)
+		q(46552),	-- Ruthless Gladiator's Scaled Armor (Paladin)
+		q(46553),	-- Ruthless Gladiator's Silk Armor (Mage)
+		
+		-- PvP Arsenals
+		q(46532),	-- Cataclysmic Gladiator's Arsenal
+		q(46543),	-- Vicious Gladiator's Arsenal
+		q(46554),	-- Ruthless Gladiator's Arsenal
+	}),
+});
+-- #endif
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(SEASON_VICIOUS, {

@@ -921,7 +921,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							}),
 						},
 					}),
-					i(173997, {	-- Whispering Reef Salvage Salvage
+					i(173997, {	-- Whispering Reef Salvage
 						["modID"] = 14,
 						["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 						["g"] = {
@@ -1942,7 +1942,7 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							i(165107),	-- Sinister Aspirant's Chain Helm
 							i(165111),	-- Sinister Aspirant's Chain Legs
 							i(165100),	-- Sinister Aspirant's Chain Sabatons
-							i(165116),	-- Sinister Aspirant's Chain Chain Spaulders
+							i(165116),	-- Sinister Aspirant's Chain Spaulders
 							i(165119),	-- Sinister Aspirant's Chain Waistguard
 							i(165215),	-- Sinister Aspirant's Drape
 						},
@@ -2366,98 +2366,55 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 					i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(18, 1),	-- Artifice of Time (Rank 1)
-						},
 					}),
 					i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(18, 2),	-- Artifice of Time [Rank 2]
-						},
 					}),
 					i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(18, 3),	-- Artifice of Time [Rank 3]
-						},
 					}),
 					i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-						["classes"] = HEALERS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(18, 4),	-- Artifice of Time (Rank 4)
-						},
 					}),
 					i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(23, 1),	-- Blood of the Enemy (Rank 1)
-						},
 					}),
 					i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(23, 2),	-- Blood of the Enemy [Rank 2]
-						},
 					}),
 					i(168444, {	-- Churning Blood of the Conquered [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(23, 3),	-- Blood of the Enemy [Rank 3]
-						},
 					}),
 					i(168814, {	-- Animated Blood of the Decimated (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(23, 4),	-- Blood of the Enemy (Rank 4)
-						},
 					}),
 					i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						["g"] = {
-							az(3, 1),	-- Sphere of Suppression (Rank 1)
-						},
 					}),
 					i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						["g"] = {
-							az(3, 2),	-- Sphere of Suppression [Rank 2]
-						},
 					}),
 					i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(3, 3),	-- Sphere of Suppression [Rank 3]
-						},
 					}),
 					i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						["g"] = {
-							az(3, 4),	-- Sphere of Suppression (Rank 4)
-						},
 					}),
 				},
 			}),
@@ -2625,27 +2582,18 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(5, 4),	-- Essence of the Focusing Iris (Rank 4)
-						},
 					}),
 					i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(7, 4),	-- Anima of Life and Death (Rank 4)
-						},
 					}),
 					i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 						["classes"] = HEALERS,
 						["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
-						["g"] = {
-							az(20, 4),	-- Life-Binder's Invocation (Rank 4)
-						},
 					}),
 					-- This Gear need symlink someday
 					i(174630),	-- Relinquished Azerite Spaulders

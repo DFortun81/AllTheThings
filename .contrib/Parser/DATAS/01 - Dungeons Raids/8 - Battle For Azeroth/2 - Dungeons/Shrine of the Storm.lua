@@ -177,15 +177,7 @@ _.Instances = { tier(BFA_TIER, {
 						["g"] = {
 							i(162598, { -- Ensemble: Vestments of the Tidesages
 								["ignoreBonus"] = true,
-								["g"] = {
-									i(162592),	-- Hood of the Tidesages
-									i(162595),	-- Mantle of the Tidesages
-									i(162594),	-- Robe of the Tidesages
-									i(162597),	-- Bracers of the Tidesages
-									i(162591),	-- Gloves of the Tidesages
-									i(162593),	-- Pantaloons of the Tidesages
-									i(162590),	-- Sandals of the Tidesages
-								},
+								["sym"] = {{"fill"}},
 							}),
 							i(158371),	-- Seabreeze
 							i(159426),	-- Belt of the Unrelenting Gale

@@ -679,7 +679,7 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 				["coord"] = { 58.4, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 56030,	-- The Warchief's Order
+				["sourceQuests"] = { 56030 },	-- The Warchief's Order
 			}),
 			q(49758, {	-- Send the Signal!
 				["sourceQuests"] = {
@@ -780,10 +780,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 			}),
 			q(56030, {	-- The Warchief's Order
-			--	might be a breadcrumb?
+			--	TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Alliance equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
+				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 				["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.",
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49965, {	-- The Warpack
 				["sourceQuests"] = {
@@ -833,10 +835,11 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				["provider"] = { "n", 133050 },	-- Princes Talanji
 			}),
 			q(47513, {	-- Vol'dun
+			-- TODO: noting this as I changed the pre-req from 52131 since it flagged an error message; see note on that quest. If anyone can get 52131 to pop, might need to readjust this.
 				["coord"] = { 41.8, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 135775 },	-- Scouting Map
-				["sourceQuest"] = 52131,	-- We Need Each Other
+				["sourceQuest"] = 46931,	-- Speaker of the Horde
 			}),
 			q(47520, {	-- Walls Have Ears
 				["sourceQuests"] = {

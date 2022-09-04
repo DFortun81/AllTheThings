@@ -27,10 +27,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["cr"] = 179968,	-- Enigmatic Decrypting Device
 					}),
 					q(64522, {	-- Stolen Korthian Supplies
-						["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 						["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
 						["isWeekly"] = true,
 						["cr"] = 178757,	-- Hungering Manifestation (dropped from 1st thing i killed in the Rift)
+						["minReputation"] = { 2472, 7500 },	-- Tier 3
 					}),
 					q(63913, {	-- Unstable Sin'dorei Explosive
 						["sourceQuests"] = { 64506 },	-- What Must Be Found

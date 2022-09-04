@@ -31,12 +31,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					}),
 				}
 			}),
-			ach(13035, {	-- By de Power of de Loa!
-				["altQuests"] = {
-					51178,	-- Hundred Troll Holdout (A)
-					51232,	-- Hundred Troll Holdout (H)
-				},
-			}),
 			ach(12480, {	-- A Bargain of Blood
 				["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 				["races"] = HORDE_ONLY,
@@ -336,18 +330,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 				crit(8, {		-- King K'tal the Devilsaur slain
 					["coord"] = { 71.24, 21.84, ZULDAZAR },
 				}),
-			}),
-			ach(12861, {	-- Master of Duels
-				title(383),		-- Contender
-				ach(12863, {		-- Dueling Master
-					i(163055),		-- Dueler's Tabard
-					ach(12860),		-- Contender
-					ach(12858),		-- Slugfest
-					ach(12857),		-- Trial by Combat
-					ach(12856),		-- The First Rule of Dueler's Guild
-				}),
-				ach(12859),		-- Prize Fighter
-				ach(12862),		-- Thirty Six and Two
 			}),
 			ach(12481, {	-- The Final Seal
 				["sourceQuests"] = { 50954 },	-- Zandalar Forever!

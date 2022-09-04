@@ -41,7 +41,6 @@ _.Zones =
 					["coord"] = { 40.7, 67.0, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
-						33868,	-- The Home of the Frostwolves
 						49545,	-- Warchief's Command: Frostfire Ridge!
 					},
 				}),
@@ -50,11 +49,6 @@ _.Zones =
 					["coord"] = { 31.7, 11.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34230,	-- Eye Need That
-				}),
-				q(34033, {	-- And The Mole You Rode In On
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34032,	-- Privileged Information
 				}),
 				q(36132, {	-- Anglin' In Our Garrison
 					["provider"] = { "n", 79896 },	-- Mokugg Lagerpounder
@@ -152,12 +146,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = INSCRIPTION,
 					["sourceQuest"] = 36435,	-- Unintelligible Intelligence
-				}),
-				q(34287, {	-- Cleansing the Souls
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
-					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34362,	-- The Shadow Gate
 				}),
 				q(36516, {	-- Cut 'Em Out!
 					["requireSkill"] = LEATHERWORKING,
@@ -308,17 +296,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 				}),
-				q(34285, {	-- Gearing Up
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
-					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34281,	-- Out of the Chains
-					["cost"] = {
-						{ "i", 110229, 1 },	-- Owynn's Armor
-						{ "i", 110232, 1 },	-- Owynn's Dagger
-						{ "i", 110149, 1 },	-- Owynn's Mace
-					},
-				}),
 				q(34069, {	-- Getting the Points
 					["coord"] = { 84.1, 65.1, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
@@ -437,12 +414,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36230,	-- The Restless Spirit
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
-						i(115356, {	-- Draenor Blacksmithing
-							["filterID"] = MISC,
-						}),
+					["g"] = appendGroups(DRAENOR_BLACKSMITHING, {
 						i(111813),	-- The Forge, Level 1
-					},
+					}),
 				}),
 				q(33955, {	-- Missing Pack
 					["provider"] = { "n", 76941 },	-- Kar'lak
@@ -456,12 +430,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
 					["sourceQuest"] = 34462,	-- Winds of Change
-				}),
-				q(34048, {	-- "Mole Machine, Go Home"
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
-					["coord"] = { 88.4, 49.4, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34030,	-- The Captive Engineer
 				}),
 				q(33412, {	-- Mopping Up
 					["provider"] = { "n", 81678 },	-- Snowrunner Rolga
@@ -553,15 +521,6 @@ _.Zones =
 						i(111817),	-- Enchanter's Study, Level 1
 					},
 				}),
-				q(34281, {	-- Out of the Chains
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
-					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34284,	-- Garrison Campaign: The Search for Owynn Graddock
-					["cost"] = {
-						{ "i", 110116, 1 },	-- Bloodmaul Shackle Key
-					},
-				}),
 				q(33470, {	-- Pool of Visions
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, FROSTFIRE_RIDGE },
@@ -578,14 +537,6 @@ _.Zones =
 					["provider"] = { "n", 78208 },	-- Shadow Hunter Rala
 					["coord"] = { 52.6, 40.4, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-				}),
-				q(34032, {	-- Privileged Information
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						34048,	-- "Mole Machine, Go Home"
-						34031,	-- Something to Remember Me By
-					},
 				}),
 				q(36131, {	-- Proving Your Worth
 					["provider"] = { "n", 79896 },	-- Mokugg Lagerpounder
@@ -645,12 +596,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 				}),
-				q(34286, {	-- Seeking the Truth
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
-					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34285,	-- Gearing Up
-				}),
 				q(33929, {	-- Shivertail's Den
 					["provider"] = { "n", 76889 },	-- Shivertail
 					["coord"] = { 19.5, 50.9, FROSTFIRE_RIDGE },
@@ -673,24 +618,6 @@ _.Zones =
 					["provider"] = { "n", 74977 },	-- Initiate Na'Shra
 					["coord"] = { 65.0, 39.5, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-				}),
-				q(34031, {	-- Something to Remember Me By
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
-					["coord"] = { 88.4, 49.4, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34030,	-- The Captive Engineer
-				}),
-				q(34289, {	-- Soulgrinder Survivor
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
-					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						34287,	-- Cleansing the Souls
-						34288,	-- The Totems That Bind
-					},
-					["g"] = {
-						i(119151),	-- Soulgrinder
-					},
 				}),
 				q(36475, {	-- Stealing the Declaration
 					["provider"] = { "n", 85440 },	-- Nicholaus Page
@@ -756,12 +683,6 @@ _.Zones =
 						i(107397),	-- Frostwolf Wind-Talker Cowl
 					},
 				}),
-				q(34362, {	-- The Shadow Gate
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
-					["coord"] = { 40.22, 21.46, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34286,	-- Seeking the Truth
-				}),
 				q(34123, {	-- To Thunder Pass
 					["provider"] = { "n", 76720 },	-- Thrall
 					["coord"] = { 53.3, 56.7, 530 },
@@ -779,12 +700,6 @@ _.Zones =
 						i(106148),	-- Frostwolf Stalwart Gauntlets
 						i(106159),	-- Frostwolf Wind-Talker Gloves
 					},
-				}),
-				q(34030, {	-- The Captive Engineer
-					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
-					["coord"] = { 86.3, 48.9, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34029,	-- The Prototype
 				}),
 				q(33454, {	-- The Cure
 					["provider"] = { "n", 74635 },	-- Igrimar the Resolute
@@ -962,13 +877,6 @@ _.Zones =
 						i(113254),	-- Lokra's Fury
 					},
 				}),
-				q(34288, {	-- The Totems That Bind
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
-					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34362,	-- The Shadow Gate
-					["cost"] = { { "i", 110378, 5 } },	-- Borgal's Totem
-				}),
 				q(33450, {	-- The Warlord's Guard
 					["provider"] = { "n", 74635 },	-- Igrimar the Resolute
 					["coord"] = { 24.4, 28.3, FROSTFIRE_RIDGE },
@@ -1023,7 +931,12 @@ _.Zones =
 					["description"] = "This cannot be acquired with a Level 3 Garrison.",
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 36567,	-- Bigger is Better
+					["sourceQuests"] = {
+						36567,	-- Bigger is Better
+						32796,	-- To the Garrison
+						33493,	-- Return to the Pack
+					},
+					["lockCriteria"] = { 1, "questID", 36614 },	-- My Very Own Fortress
 					["providers"] = {
 						{ "n", 74163 },	-- Durotan
 						{ "n", 88228 },	-- Sergeant Grimjaw

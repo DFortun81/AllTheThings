@@ -107,7 +107,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(42),		-- Halls of Origination
 			crit(43),		-- Orgrimmar for Horde | Stormwind for Alliance
 		}),
-		ach(964),		-- Going Down?
 		ach(1833),		-- It's Happy Hour Somewhere
 		ach(43, {		-- Kalimdor Explorer
 			crit(1),		-- Explore Durotar

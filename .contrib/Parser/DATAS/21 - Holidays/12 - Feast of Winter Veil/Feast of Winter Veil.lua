@@ -61,7 +61,7 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 			ach(1691, {	-- Merrymaker
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
-					{"select","achievementID",
+					{"meta_achievement",
 						273,			-- On Metzen!
 						252,			-- With a Little Helper from My Friends
 						1255,			-- Scrooge (A)
@@ -201,20 +201,24 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 				crit(3),	-- Hot Apple Cider
 			}),
 			ach(252),	-- With a Little Helper from My Friends
-			removeclassicphase(ach(1705, {	-- Clockwork Rocket Bot (2007)
+			classicAch(1705, {	-- Clockwork Rocket Bot (2007)
 				["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
 				["timeline"] = { "added 2.3.0.7561" },
 				-- #if BEFORE WRATH
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
-			})),
+			}),
 			ach(1706, {	-- Crashin' Thrashin' Racer (2008)
 				["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
+				-- #if ANYCLASSIC
+				["timeline"] = { "created 2.4.3.8601", "added 3.0.1" },
+				-- #else
 				["timeline"] = { "added 2.4.3.8601" },
+				-- #endif
 			}),
 			ach(6059, {	-- Red Rider Air Rifle (2009)
 				["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-				["timeline"] = { "added 3.3.0.11159" },
+				["timeline"] = { "added 4.3.0.15005" },
 			}),
 			ach(6060),		-- MiniZep Controller (2010)
 			ach(6061),		-- Gaudy Winter Veil Sweater (2011)
@@ -1844,9 +1848,11 @@ root("Holidays", applyholiday(FEAST_OF_WINTER_VEIL, {
 						["questID"] = 39615,
 					}),
 					i(128668, {	-- Festive Outfits
+						["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.\n\nThis may also not be the correct QuestID for this Item unlock.",
 						["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 						["timeline"] = { "added 6.2.2.20395" },
-						["questID"] = 39671,
+						["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
+						["repeatable"] = true,
 					}),
 					i(128666, {	-- Imported Trees
 						["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies

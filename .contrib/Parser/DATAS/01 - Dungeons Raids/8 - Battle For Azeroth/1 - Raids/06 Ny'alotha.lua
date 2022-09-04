@@ -37,27 +37,28 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
 					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 1),	-- The Formless Void (Rank 1)
-					},
 				}),
 				i(173884, {	-- Burgeoning Void Droplet (Rank 2)
 					["cost"] = { { "i", 174279, 30 } },	-- 30x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 2),	-- The Formless Void (Rank 2)
-					},
 				}),
 				i(173885, {	-- Volatile Void Droplet (Rank 3)
 					["cost"] = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
-					["g"] = {
-						az(37, 3),	-- The Formless Void (Rank 3)
-					},
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 1] (RECIPE!)
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
+			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
 			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
@@ -83,10 +84,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 				}),
 				ach(14193, {	-- Vision of Destiny
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2368, {	-- Wrathion, the Black Emperor
 							["crs"] = { 156818 },
@@ -146,10 +143,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 				}),
 				ach(14194, {	-- Halls of Devotion
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2377, {	-- Dark Inquisitor Xanesh
 							["crs"] = { 160229, 156575 },
@@ -227,10 +220,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 				}),
 				ach(14195, {	-- Gift of Flesh
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2367, {	-- Shad'har the Insatiable
 							["crs"] = { 157231 },
@@ -289,10 +278,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 				}),
 				ach(14196, {	-- The Waking Dream
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2366, {	-- Carapace of N'Zoth
 							["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
@@ -1016,7 +1001,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }
 							},
 						})),
 						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", "removed 9.0.1" } }, {	-- Bursting Void Droplet
-							az(37, 4),	-- The Formless Void (Rank 4)
 						})),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (PET!)

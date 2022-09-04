@@ -106,8 +106,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			q(50545, {	-- Forked Lightning (H)
 				["races"] = HORDE_ONLY,
 			}),
-			a(q(51127)),	-- Getting Out of Hand (A)
-			h(q(50559)),	-- Getting Out of Hand (H)
+			a(q(51127, { -- Getting Out of Hand (A)
+				ach(13023),	-- It's Really Getting Out of Hand
+			})),
+			h(q(50559, { -- Getting Out of Hand (H)
+				ach(13023),	-- It's Really Getting Out of Hand
+			})),
 			q(53322, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
 			}),
@@ -218,12 +222,12 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			q(54707, {	-- Siegeotron (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
 			}),
-			q(54539, {	-- Skirmish at the Span (Faction Assault WQ)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(54538, {	-- Skirmish at the Span (Faction Assault WQ)
-				["races"] = HORDE_ONLY,
-			}),
+			a(q(54539, {	-- Skirmish at the Span (Faction Assault WQ)
+				pvp(ach(13429)),	-- Azerfighter
+			})),
+			h(q(54538, {	-- Skirmish at the Span (Faction Assault WQ)
+				pvp(ach(13429)),	-- Azerfighter
+			})),
 			q(50650, {	-- Smashing Zalamar
 				["races"] = HORDE_ONLY,
 			}),

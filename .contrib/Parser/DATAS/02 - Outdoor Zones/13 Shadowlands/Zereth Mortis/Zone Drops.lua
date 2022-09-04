@@ -225,8 +225,26 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			i(189161),	-- Glimmer of Malice
 			i(189162),	-- Glimmer of Metamorphosis
 			i(189163),	-- Glimmer of Motion
-			i(189164),	-- Glimmer of Multiplicity
-			i(189165),	-- Glimmer of Predation
+			i(189164, {	-- Glimmer of Multiplicity
+				["crs"] = {
+					185486,	-- Furious Vespoid
+					182319,	-- Skittering Nibbler
+					178158,	-- Vespoid Worker
+					182323,	-- Sentient Overgrowth
+					181110,	-- Scavenging Mite
+					182213,	-- Sentient Overgrowth
+				},
+			}),	
+			i(189165, {	-- Glimmer of Predation
+				["crs"] = {
+					181116,	-- Dematerializing Worldeater
+				},
+				["coords"] = {
+					{ 40.4, 24.8, ZERETH_MORTIS },
+					{ 43.8, 23.6, ZERETH_MORTIS },
+					{ 47.8, 25.8, ZERETH_MORTIS },
+				},
+			}),
 			i(189166, {	-- Glimmer of Renewal
 				["crs"] = {
 					182322,	-- Carnivorous Overgrowth
@@ -284,7 +302,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			i(189176, {	-- Protoform Sentience Crown
-				["description"] = "Drops from Automas, very easy to farm during the Dangerous State Daily.",
+				["description"] = "Drops from Automas, best farmed during the Dangerous State Daily.",
 			}),
 			i(189180, {	-- Wind's Infinite Call
 				["crs"] = {

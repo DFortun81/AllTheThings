@@ -79,7 +79,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				},
 			}),
 			o(353940, {	-- Gift of Vesiphone
-				["description"] = "Ring one of the Bells of Purification on either side of the treasure.  Then turn around and stand in in the waterfall next to the Purity Steward.  You will get a buff called Proof of Purity, allowing you to open the chest.",
+				["description"] = "Ring one of the Bells of Purification on either side of the treasure.  Then turn around and stand in the waterfall next to the Purity Steward.  You will get a buff called Proof of Purity, allowing you to open the chest.",
 				["questID"] = 60890,
 				["coord"] = { 64.8, 71.1, BASTION },
 				["g"] = {

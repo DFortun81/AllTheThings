@@ -7,9 +7,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		ach(15391, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Adventurer of Zereth Mortis
 			ach(15512),	-- Adventures in Zereth Mortis
 		})),
-		ach(15542, {	-- Apocopocolypse Now
-			["timeline"] = { "added 9.2.0" },
-		}),
 		ach(14774, {	-- Ardenweald Gourmand
 			["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 			["coord"] = { 65.0, 19.6, ARDENWEALD },
@@ -63,6 +60,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 		}),
 		ach(14769, {	-- Bat!
 			["crs"] = { 161015 },	-- Dredbat Statue
+			["description"] = "As of 9.2.5, this achievement is currently bugged and only awarding credit occasionally. To work around this, you may have to ride the bat more than once or try another one.",
 			["coords"] = {	-- there doesn't seem to be a way to track individual bat statue collection, no questID or anything
 				{ 21.7, 50.2, REVENDRETH },
 				{ 25.1, 37.5, REVENDRETH },
@@ -468,11 +466,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 		ach(14658),		-- Soulkeeper's Burden
-		ach(15411, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Synthe-supersized!
-			ach(15406),	-- Synthesized!
-			ach(15407),	-- Synthe-fived!
-			ach(15410),	-- Synthe-superfived!
-		})),
 		ach(15509, {	-- Tales of the Exile
 			["timeline"] = { "added 9.2.0" },
 		}),
@@ -483,23 +476,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(4),		-- Pridefall Carriage
 			crit(5),		-- Darkhaven Carriage
 			crit(6),		-- The Castle Carriage
-		}),
-		ach(14277, {	-- The Accuser's Avowed
-			title(423),		-- Cryptkeeper
-			ach(14273),		-- Crypt Kicker
-			ach(14274),		-- Absolution for All
-			ach(14276, {	-- It's Always Sinny in Revendreth
-				crit(1),		-- Inquisitor Otilia
-				crit(2),		-- Inquisitor Petre
-				crit(3),		-- Inquisitor Sorin
-				crit(4),		-- Inquisitor Traian
-				crit(5),		-- High Inquisitor Dacian
-				crit(6),		-- High Inquisitor Gabi
-				crit(7),		-- High Inquisitor Magda
-				crit(8),		-- High Inquisitor Radu
-				crit(9),		-- Grand Inquisitor Aurica
-				crit(10),		-- Grand Inquisitor Nicu
-			}),
 		}),
 		ach(14731, {	-- To All the Squirrels I've Loved and Lost
 			crit(1, {	-- Dreadfur Kit
@@ -582,12 +558,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(6),	-- Soulkeeper's Burden
 			crit(7),	-- Explore The Maw
 		})),
-		ach(14770, {	-- What We Ride in the Shadows
-			crit(1),		-- Old Gate
-			crit(2),		-- Hole in the Wall
-			crit(3),		-- Dominance Gate Battlements
-			crit(4),		-- Darkhaven
-		}),
 		ach(14768, {	-- What is that Melody?
 			crit(1),		-- Hymn of Purity
 			crit(2),		-- Hymn of Courage

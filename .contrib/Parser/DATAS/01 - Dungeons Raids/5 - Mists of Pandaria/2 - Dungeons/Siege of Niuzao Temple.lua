@@ -83,11 +83,6 @@ _.Instances = { tier(MOP_TIER, {
 				["lvl"] = 90,
 				["groups"] = {
 					cr(61567, e(693, {	-- Vizier Jin'bak
-						{	-- Polyformic Acid Science: Vizier Jin'bak
-							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["criteriaID"] = 5,	-- Vizier Jin'bak
-							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						},
 						i(144022),	-- Hood of Viridian Residue
 						i(144162),	-- Engraved Amber Pendant
 						i(144163),	-- Girdle of Soothing Detonation

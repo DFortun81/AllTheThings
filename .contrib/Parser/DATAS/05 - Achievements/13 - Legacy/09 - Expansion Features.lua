@@ -10,13 +10,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11143)),		-- Honoring the Past
 		un(REMOVED_FROM_GAME, ach(12072)),		-- Now You're Cooking with Netherlight
 		un(REMOVED_FROM_GAME, ach(10853, {		-- Part of History
-			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
-		})),
-		un(REMOVED_FROM_GAME, ach(11772, {		-- Power Ascended
-			un(REMOVED_FROM_GAME, ach(11144)),		-- Power Realized
-		})),
-		un(REMOVED_FROM_GAME, ach(11610, {		-- Power Unleashed
-			un(REMOVED_FROM_GAME, ach(11609)),		-- Power Unbound
 		})),
 	}),
 }));

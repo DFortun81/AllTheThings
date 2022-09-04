@@ -21,6 +21,20 @@ root("Instances", tier(CLASSIC_TIER, {
 			-- #if AFTER MOP
 			d(1, {		-- Normal
 			-- #endif
+				-- #if BEFORE 5.0.4
+				-- #if AFTER 3.0.1
+				n(ACHIEVEMENTS, {
+					ach(645, {	-- Scholomance
+						crit(548, {	-- Ras Frostwhisper
+							["_npcs"] = { 10508 },	-- Ras Frostwhisper
+						}),
+						crit(549, {	-- Darkmaster Gandling
+							["_npcs"] = { 1853 },	-- Darkmaster Gandling
+						}),
+					}),
+				}),
+				-- #endif
+				-- #endif
 				n(QUESTS, sharedData({["modID"] = 0},{
 					q(28756, {	-- Aberrations of Bone
 						["qg"] = 49856,	-- Lord Raymond George
@@ -1160,9 +1174,6 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #endif
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
-						-- #if BEFORE 5.0.4
-						ach(645),	-- Scholomance
-						-- #endif
 						i(14514, {	-- Pattern: Robe of the Void
 							["timeline"] = { "removed 5.0.4" },
 						}),
@@ -1277,6 +1288,19 @@ root("Instances", tier(CLASSIC_TIER, {
 						i(88353),	-- Dark Blaze Gauntlets
 						i(88350),	-- Leggings of Unleashed Anguish
 					},
+				}),
+				n(59613, {	-- Professor Slate <Potions Master>
+					["timeline"] = { "added 5.0.4" },
+					["g"] = bubbleDown({["ignoreBonus"] = true},{
+						i(85580, {	-- Empty Polyformic Acid Vial
+							["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+							["g"] = {
+								i(85589),	-- Nearly Full Vial of Polyformic Acid
+								i(85592),	-- Half Full Vial of Polyformic Acid
+								i(85593),	-- Nearly Empty Vial of Polyformic Acid
+							},
+						}),
+					}),
 				}),
 				e(684, {	-- Darkmaster Gandling
 					["creatureID"] = 59080,
@@ -1488,6 +1512,19 @@ root("Instances", tier(CLASSIC_TIER, {
 								["timeline"] = { "added 5.0.4", "removed 7.1.5.23360" },
 							}),
 						},
+					}),
+					n(59613, {	-- Professor Slate <Potions Master>
+						["timeline"] = { "added 5.0.4" },
+						["g"] = bubbleDown({["ignoreBonus"] = true},{
+							i(85580, {	-- Empty Polyformic Acid Vial
+								["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+								["g"] = {
+									i(85589),	-- Nearly Full Vial of Polyformic Acid
+									i(85592),	-- Half Full Vial of Polyformic Acid
+									i(85593),	-- Nearly Empty Vial of Polyformic Acid
+								},
+							}),
+						}),
 					}),
 					e(684, {	-- Darkmaster Gandling
 						["creatureID"] = 59080,	-- Darkmaster Gandling

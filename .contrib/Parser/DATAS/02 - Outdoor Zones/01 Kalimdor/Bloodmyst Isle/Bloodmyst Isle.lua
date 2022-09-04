@@ -5,7 +5,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(BLOODMYST_ISLE, {
 		["lore"] = "Bloodmyst Isle is a low-level zone covering the struggles of the Draenei to rebuild their civilization. It gets its distinctive red look from the corrupting red crystals found on the Exodar, the Draenei's spaceship that crashed.",
 		-- #if AFTER WRATH
-		["achievementID"] = 861,
+		["icon"] = "Interface\\Icons\\achievement_zone_bloodmystisle_01",
 		-- #endif
 		["lvl"] = 10,
 		["groups"] = {
@@ -45,13 +45,11 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				removeclassicphase(ach(861, {	-- Explore Bloodmyst Isle
+				explorationAch(861, {	-- Explore Bloodmyst Isle
 					-- #if BEFORE WRATH
 					["description"] = "Explore Bloodmyst Isle, revealing the covered areas of the world map.",
-					["OnClick"] = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]],
-					["OnUpdate"] = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]],
 					-- #endif
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			petbattle(filter(BATTLE_PETS, {

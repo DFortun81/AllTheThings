@@ -3,7 +3,7 @@
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
 
-root("Craftables", tier(SL_TIER, applyclassicphase(SL_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
@@ -244,10 +244,6 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SL_PHASE_ONE, bubbleDownSelf(
 			}),
 			i(187888, {	-- Mark of the Shimmering Ardenmoth
 				["questID"] = 64987,
-				["classes"] = { DRUID },
-			}),
-			i(187933, {	-- Mark of the Duskwing Raven
-				["questID"] = 65058,
 				["classes"] = { DRUID },
 			}),
 			i(187931, {	-- Mark of the Regal Dredbat

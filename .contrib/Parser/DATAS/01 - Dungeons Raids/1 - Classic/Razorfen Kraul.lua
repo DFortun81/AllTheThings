@@ -423,7 +423,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(901, {	-- Charlga Razorflank
 				["creatureID"] = 4421,	-- Charlga Razorflank
 				["groups"] = {
-					removeclassicphase(ach(635, {	-- Razorfen Kraul
+					classicAch(635, {	-- Razorfen Kraul
 						-- #if BEFORE 3.0.1
 						["sourceQuests"] = {
 							1102,	-- A Vengeful Fate
@@ -432,7 +432,7 @@ root("Instances", tier(CLASSIC_TIER, {
 						},
 						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
-					})),
+					}),
 					i(5793),	-- Razorflank's Heart
 					i(5792),	-- Razorflank's Medallion
 					i(17008, {	-- Small Scroll (Before Wrathgate)

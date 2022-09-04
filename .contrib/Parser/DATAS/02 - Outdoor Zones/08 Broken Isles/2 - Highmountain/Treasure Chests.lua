@@ -211,13 +211,3 @@ root("Zones", {
 		}),
 	}),
 });
-
-root("HiddenQuestTriggers", {
-	m(BROKEN_ISLES, {
-		m(HIGHMOUNTAIN, {
-			n(TREASURES, {
-				q(40389),	-- creating Rocfeather Skyhorn Kite
-			}),
-		}),
-	}),
-});

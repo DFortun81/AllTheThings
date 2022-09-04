@@ -15,9 +15,12 @@ _.Instances = { tier(MOP_TIER, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power
 				un(REMOVED_FROM_GAME, i(87209)),	-- Sigil of Wisdom
 			}),
+			d(7, {	-- LFR Queue NPC
+				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
+				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
+			}),
 			d(7, {	-- LFR
-				["description"] = "Speak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.",
-				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Seat of Knowledge
+				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -90,125 +93,105 @@ _.Instances = { tier(MOP_TIER, {
 								},
 							})),
 						},
-						--[[
-						["crs"] = {
-							62980,	-- Imperial Vizier Zor'lok
-							62543,  -- Blade Lord Ta'yak
-							62164,	-- Garalon
-							62397,	-- Wind Lord Mel'jarak
-							62511,	-- Amber-Shaper Un'sok
-							62837,	-- Grand Empress Shek'zeer
-						},
-						]]--
 					}),
 					ach(6718, {	-- The Dread Approach
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["groups"] = {
-							cr(62980, e(745, {	-- Imperial Vizier Zor'lok
-								i(167058),	-- Kor'thik Swarmling
-								i(89952),	-- Pheromone-Coated Choker
-								i(86812),	-- Hisek's Chrysanthemum Cape
-								i(86816),	-- Chestplate of the Forbidden Tower
-								i(86818),	-- Mail of Screaming Secrets
-								i(87823),	-- Zor'lok's Fizzing Chestguard
-								i(86815),	-- Attenuating Bracers
-								i(86817),	-- Gauntlets of Undesired Gifts
-								i(86819),	-- Gloves of Grasping Claws
-								i(89954),	-- Warbelt of Sealed Pods
-								i(86854),	-- Articulated Legplates
-								i(86811),	-- Boots of the Still Breath
-								i(89953),	-- Scent-Soaked Sandals
-								i(86814),	-- Fragment of Fear Made Flesh
-								i(86813),	-- Vizier's Ruby Signet
-							})),
-							cr(62543, e(744, {  -- Blade Lord Ta'yak
-								i(167053),	-- Tiny Amber Wings
-								i(86829),	-- Tornado-Summoning Censer
-								i(89957),	-- Hood of Stilled Winds
-								i(86824),	-- Choker of the Unleashed Storm
-								i(89956),	-- Pauldrons of the Broken Blade
-								i(86827),	-- Drape of Gathering Clouds
-								i(86826),	-- Bracers of Tempestuous Fury
-								i(86821),	-- Bracers of Unseen Strikes
-								i(86828),	-- Twisting Wind Bracers
-								i(90739),	-- Kaz'tik's Stormseizer Gauntlets
-								i(86823),	-- Windblade Talons
-								i(86822),	-- Waistplate of Overwhelming Assault
-								i(89955),	-- Sword Dancer's Leggings
-								i(86825),	-- Boots of the Blowing Wind
-								i(86820),	-- Ring of the Bladed Tempest
-							})),
-							cr(62164, e(713, {	-- Garalon
-								i(167054),	-- Spawn of Garalon
-								i(86832),	-- Garalon's Hollow Skull
-								i(86839),	-- Xaril's Hood of Intoxicating Vapors
-								i(86835),	-- Necklace of Congealed Weaknesses
-								i(89959),	-- Shoulders of Foaming Fluids
-								i(86831),	-- Legbreaker Greatcloak
-								i(86840),	-- Stormwake Mistcloak
-								i(89958),	-- Garalon's Graven Carapace
-								i(86838),	-- Robes of Eighty Lights
-								i(89960),	-- Vestments of Steaming Ichor
-								i(86834),	-- Bonebreaker Gauntlets
-								i(86837),	-- Grasps of Panic
-								i(86833),	-- Grips of the Leviathan
-								i(86836),	-- Sandals of the Unbidden
-								i(86830),	-- Ring of the Shattered Shell
-							})),
-						},
+						cr(62980, e(745, {	-- Imperial Vizier Zor'lok
+							i(167058),	-- Kor'thik Swarmling
+							i(89952),	-- Pheromone-Coated Choker
+							i(86812),	-- Hisek's Chrysanthemum Cape
+							i(86816),	-- Chestplate of the Forbidden Tower
+							i(86818),	-- Mail of Screaming Secrets
+							i(87823),	-- Zor'lok's Fizzing Chestguard
+							i(86815),	-- Attenuating Bracers
+							i(86817),	-- Gauntlets of Undesired Gifts
+							i(86819),	-- Gloves of Grasping Claws
+							i(89954),	-- Warbelt of Sealed Pods
+							i(86854),	-- Articulated Legplates
+							i(86811),	-- Boots of the Still Breath
+							i(89953),	-- Scent-Soaked Sandals
+							i(86814),	-- Fragment of Fear Made Flesh
+							i(86813),	-- Vizier's Ruby Signet
+						})),
+						cr(62543, e(744, {  -- Blade Lord Ta'yak
+							i(167053),	-- Tiny Amber Wings
+							i(86829),	-- Tornado-Summoning Censer
+							i(89957),	-- Hood of Stilled Winds
+							i(86824),	-- Choker of the Unleashed Storm
+							i(89956),	-- Pauldrons of the Broken Blade
+							i(86827),	-- Drape of Gathering Clouds
+							i(86826),	-- Bracers of Tempestuous Fury
+							i(86821),	-- Bracers of Unseen Strikes
+							i(86828),	-- Twisting Wind Bracers
+							i(90739),	-- Kaz'tik's Stormseizer Gauntlets
+							i(86823),	-- Windblade Talons
+							i(86822),	-- Waistplate of Overwhelming Assault
+							i(89955),	-- Sword Dancer's Leggings
+							i(86825),	-- Boots of the Blowing Wind
+							i(86820),	-- Ring of the Bladed Tempest
+						})),
+						cr(62164, e(713, {	-- Garalon
+							i(167054),	-- Spawn of Garalon
+							i(86832),	-- Garalon's Hollow Skull
+							i(86839),	-- Xaril's Hood of Intoxicating Vapors
+							i(86835),	-- Necklace of Congealed Weaknesses
+							i(89959),	-- Shoulders of Foaming Fluids
+							i(86831),	-- Legbreaker Greatcloak
+							i(86840),	-- Stormwake Mistcloak
+							i(89958),	-- Garalon's Graven Carapace
+							i(86838),	-- Robes of Eighty Lights
+							i(89960),	-- Vestments of Steaming Ichor
+							i(86834),	-- Bonebreaker Gauntlets
+							i(86837),	-- Grasps of Panic
+							i(86833),	-- Grips of the Leviathan
+							i(86836),	-- Sandals of the Unbidden
+							i(86830),	-- Ring of the Shattered Shell
+						})),
 					}),
 					ach(6845, {	-- Nightmare of Shek'zeer
-						["crs"] = {
-							80633,	-- Lorewalker Han <Raid Finder Storyteller>
-						},
-						["groups"] = {
-							cr(62397, e(741, {	-- Wind Lord Mel'jarak
-								i(89271, {	-- Gauntlets of the Shadowy Conqueror
-									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-								}),
-								i(89272),	-- Gauntlets of the Shadowy Protector
-								i(89270),	-- Gauntlets of the Shadowy Vanquisher
-								i(86856),	-- Korven's Amber-Sealed Beetle
-								i(86855),	-- Wingslasher Pauldrons
-								i(86853),	-- Cloak of Raining Blades
-								i(86911),	-- Robes of Torn Nightmares
-								i(86912),	-- Clutches of Dying Hope
-								i(86852),	-- Impaling Treads
-								i(86851),	-- Painful Thorned Ring
-							})),
-							cr(62511, e(737, {	-- Amber-Shaper Un'sok
-								i(167055),	-- Amber Goo Puddle
-								i(89268, {	-- Leggings of the Shadowy Conqueror
-									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-								}),
-								i(89269),	-- Leggings of the Shadowy Protector
-								i(89267),	-- Leggings of the Shadowy Vanquisher
-								i(86863),	-- Scimitar of Seven Stars
-								i(86862),	-- Un'sok's Amber Scalpel
-								i(86860),	-- Shoulderpads of Misshapen Life
-								i(86857),	-- Belt of Malleable Amber
-								i(86861),	-- Monstrous Stompers
-								i(86859),	-- Treads of Deadly Secretions
-								i(86858),	-- Seal of the Profane
-							})),
-							cr(62837, e(743, {	-- Grand Empress Shek'zeer
-								i(167056),	-- Essence of Pride
-								i(89265, {	-- Chest of the Shadowy Conqueror
-									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-								}),
-								i(89266),	-- Chest of the Shadowy Protector
-								i(89264),	-- Chest of the Shadowy Vanquisher
-								i(86864),	-- Claws of Shek'zeer
-								i(86865),	-- Kri'tak, Imperial Scepter of the Swarm
-								i(86866),	-- Crown of the Doomed Empress
-								i(89962),	-- Hood of Dark Dreams
-								i(89961),	-- Shadow Heart Spaulders
-								i(86867),	-- Leggings of Shadow Infestation
-								i(89963),	-- Legplates of Regal Reinforcement
-							})),
-						},
+						cr(62397, e(741, {	-- Wind Lord Mel'jarak
+							i(89271, {	-- Gauntlets of the Shadowy Conqueror
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							}),
+							i(89272),	-- Gauntlets of the Shadowy Protector
+							i(89270),	-- Gauntlets of the Shadowy Vanquisher
+							i(86856),	-- Korven's Amber-Sealed Beetle
+							i(86855),	-- Wingslasher Pauldrons
+							i(86853),	-- Cloak of Raining Blades
+							i(86911),	-- Robes of Torn Nightmares
+							i(86912),	-- Clutches of Dying Hope
+							i(86852),	-- Impaling Treads
+							i(86851),	-- Painful Thorned Ring
+						})),
+						cr(62511, e(737, {	-- Amber-Shaper Un'sok
+							i(167055),	-- Amber Goo Puddle
+							i(89268, {	-- Leggings of the Shadowy Conqueror
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							}),
+							i(89269),	-- Leggings of the Shadowy Protector
+							i(89267),	-- Leggings of the Shadowy Vanquisher
+							i(86863),	-- Scimitar of Seven Stars
+							i(86862),	-- Un'sok's Amber Scalpel
+							i(86860),	-- Shoulderpads of Misshapen Life
+							i(86857),	-- Belt of Malleable Amber
+							i(86861),	-- Monstrous Stompers
+							i(86859),	-- Treads of Deadly Secretions
+							i(86858),	-- Seal of the Profane
+						})),
+						cr(62837, e(743, {	-- Grand Empress Shek'zeer
+							i(167056),	-- Essence of Pride
+							i(89265, {	-- Chest of the Shadowy Conqueror
+								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							}),
+							i(89266),	-- Chest of the Shadowy Protector
+							i(89264),	-- Chest of the Shadowy Vanquisher
+							i(86864),	-- Claws of Shek'zeer
+							i(86865),	-- Kri'tak, Imperial Scepter of the Swarm
+							i(86866),	-- Crown of the Doomed Empress
+							i(89962),	-- Hood of Dark Dreams
+							i(89961),	-- Shadow Heart Spaulders
+							i(86867),	-- Leggings of Shadow Infestation
+							i(89963),	-- Legplates of Regal Reinforcement
+						})),
 					}),
 				},
 			}),
@@ -245,12 +228,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
 							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						},
 					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok
@@ -389,12 +372,12 @@ _.Instances = { tier(MOP_TIER, {
 							i(86379),	-- Pattern: Robe of Eternal Rule
 							i(86297),	-- Pattern: Stormbreaker Chestguard
 							i(86382),	-- Pattern: Touch of the Light
-							i(87411),	-- Plans: Bloodforged Warfists
-							i(87412),	-- Plans: Chestplate of Limitless Faith
-							i(87409),	-- Plans: Gauntlets of Battle Command
-							i(87413),	-- Plans: Gauntlets of Unbound Devotion
-							i(87410),	-- Plans: Ornate Battleplate of the Master
-							i(87408),	-- Plans: Unyielding Bloodplate
+							i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
+							i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
+							i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
+							i(87413),	-- Plans: Gauntlets of Unbound Devotion (RECIPE!)
+							i(87410),	-- Plans: Ornate Battleplate of the Master (RECIPE!)
+							i(87408),	-- Plans: Unyielding Bloodplate (RECIPE!)
 						},
 					}),
 					cr(62980, e(745, {	-- Imperial Vizier Zor'lok

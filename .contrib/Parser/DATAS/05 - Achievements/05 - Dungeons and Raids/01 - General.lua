@@ -501,7 +501,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(25),		-- Where's My Air Support?
 			crit(26),		-- Return to Sender
 			crit(27),		-- Run with the Wind
-			crit(28),		-- Polyformic Acid Science
 		}),
 		ach(6932, {		-- Glory of the Pandaria Raider
 			i(87773),		-- Heavenly Crimson Cloud Serpent (MOUNT!)

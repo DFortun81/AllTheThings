@@ -254,11 +254,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					-- Choose Legion Zone
 					q(40958, {	-- Tactical Matters
 						["sourceQuests"] = {
-							--#if BEFORE 8.0.1
+							-- #IF BEFORE 8.0.1
 							41047,	-- Infused with Power
-							--#else
+							-- #ELSE
 							40955,	-- Oath of Service
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
@@ -367,9 +367,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							artifact(454),	-- Titanstrike
 							artifact(211),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(469),	-- Talonclaw
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					-- Chap 2
@@ -621,7 +618,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							artifact(448),	-- Titanstrike
 							artifact(223),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(475),	-- Talonclaw
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude
@@ -641,11 +637,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 					-- 7.2.0
 					q(45551, {	-- Devastating Effects
 						["sourceQuests"] = {
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43423,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							46023,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 							47137,	-- Champions of Legionfall
 						},
 						["provider"] = { "n", 108455 },	-- Shandris Feathermoon
@@ -887,6 +883,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136855, {	-- Hunter's Call (TOY!)
+								["timeline"] = { "added 7.0.3.22248" },
 								["cost"] = 500000,	-- 50g
 							}),
 							i(140938, {	-- Huntmaster's Armor Kit
@@ -908,11 +905,9 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136781, {	-- Pet Training Manual: Fetch
-								["spellID"] = 125050,	-- Fetch
 								["f"] = RECIPES,
 							}),
 							i(136780, {	-- Pet Training Manual: Play Dead
-								["spellID"] = 209997,	-- Play Dead
 								["f"] = RECIPES,
 							}),
 							i(139712, {	-- Spaulders of the Unseen Path
@@ -962,43 +957,25 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 		})),
 	}),
 }));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(40619),	-- Hunter Order Hall - Survival Chosen
-	q(40620),	-- Hunter Order Hall - Marksmanship Chosen
-	q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
-	q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
-	q(43159),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
-	q(43366),	-- Hunter Order Hall - Talked With Mimiron Tracking Quest
-	q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
-	q(44046),	-- Hunter Order Hall - Marksmanship Chosen
-	q(44047),	-- Hunter Order Hall - Survival Chosen
-	q(44333),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 1
-	q(44334),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 2
-	q(44335),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 3
-	q(44336),	-- Hunter Order Hall - Tracking Quest: The Missing Vessel 4
-	q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
-	q(44368),	-- Hunter Order Hall - Marksmanship Chosen
-	q(44369),	-- Hunter Order Hall - Survival Chosen
-	q(44391),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 1
-	q(44392),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 2
-	q(44393),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 3
-	q(44394),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 4
-	q(44395),	-- Hunter Order Hall - Tracking Quest: Unseen Protection 5
-	q(44643),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
-	q(44644),	-- Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
-	q(44702),	-- Hunter Order Hall - Tracking Quest (triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories)
-	q(66309),	-- After obtaining Dark Ranger's Ensemble
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43819),	-- Hidden History
-		q(41008),	-- Hunter to Hunter
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(43366),	-- Talked With Mimiron
+		q(43158),	-- Tracking Quest - conversation flag for a hidden romance quest
+		q(43159),	-- Tracking Quest - triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories
+		q(44702),	-- Tracking Quest - triggered after Death Hunter Moorgoth / Dark Ranger Velonara stories
+		q(44643),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 1 (JAP)
+		q(44644),	-- Tracking Quest: 7.0 Class Hall - Hunter - Pacing Mission 3a (JAP)
+		q(44333),	-- Tracking Quest: The Missing Vessel 1 - completed the "The Missing Vessel: Highmountain" mission
+		q(44334),	-- Tracking Quest: The Missing Vessel 2 - completed the "The Missing Vessel: Stormheim" mission
+		q(44335),	-- Tracking Quest: The Missing Vessel 3 - completed the "The Missing Vessel: Val'sharah" mission
+		q(44336),	-- Tracking Quest: The Missing Vessel 4 - completed the "The Missing Vessel: Azsuna" mission
+		q(44391),	-- Tracking Quest: Unseen Protection 1 - completed the "Unseen Protection: Defending Dalaran" mission
+		q(44392),	-- Tracking Quest: Unseen Protection 2 - completed the "Unseen Protection: The Mother of Imps" mission
+		q(44393),	-- Tracking Quest: Unseen Protection 3 - completed the "Unseen Protection: Infernal Waves" mission
+		q(44394),	-- Tracking Quest: Unseen Protection 4 - completed the "Unseen Protection: Coastal Invasion" mission
+		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
-}));
--- #endif
+	tier(SL_TIER, {
+		q(66309),	-- After obtaining Dark Ranger's Ensemble
+	}),
+});

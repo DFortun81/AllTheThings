@@ -38,7 +38,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1169, {	-- Master of Arathi Basin
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {
-						{"select","achievementID",
+						{"meta_achievement",
 							155,	-- Arathi Basin Veteran
 							165,	-- Arathi Basin Perfection
 							158,	-- Me and the Cappin' Makin' it Happen
@@ -996,12 +996,12 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						-- #if AFTER 5.0.4
 						mark(10, i(20131)),	-- Battle Tabard of the Defilers (Was originally a quest reward!)
 						-- #endif
-						
+
 						-- Weapons & Cloak
 						mark(3, i(20220)),	-- Ironbark Staff
 						mark(3, i(20214)),	-- Mindfang
 						mark(2, i(20068)),	-- Deathguard's Cloak
-						
+
 						-- Cloth
 						mark(2, i(20176)),	-- Defiler's Epaulets
 						mark(1, i(20163)),	-- Defiler's Cloth Girdle
@@ -1023,7 +1023,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20189)),	-- Defiler's Leather Boots
 						mark(1, i(20186)),	-- Defiler's Leather Boots
 						mark(1, i(20188)),	-- Defiler's Leather Boots
-						
+
 						-- Lizardhide
 						mark(2, i(20175)),	-- Defiler's Lizardhide Shoulders
 						mark(1, i(20171)),	-- Defiler's Lizardhide Girdle
@@ -1045,7 +1045,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20156)),	-- Defiler's Chain Greaves
 						mark(1, i(20155)),	-- Defiler's Chain Greaves
 						mark(1, i(20157)),	-- Defiler's Chain Greaves
-						
+
 						-- Mail
 						mark(2, i(20203)),	-- Defiler's Mail Pauldrons
 						mark(1, i(20197)),	-- Defiler's Mail Girdle (Defiler's Padded Girdle)
@@ -1067,7 +1067,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20183)),	-- Defiler's Lamellar Greaves
 						mark(1, i(20185)),	-- Defiler's Lamellar Greaves
 						mark(1, i(20182)),	-- Defiler's Lamellar Greaves
-						
+
 						-- Plate
 						mark(2, i(20212)),	-- Defiler's Plate Spaulders
 						mark(1, i(20204)),	-- Defiler's Plate Girdle
@@ -1078,7 +1078,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20208)),	-- Defiler's Plate Greaves
 						mark(1, i(20211)),	-- Defiler's Plate Greaves
 						mark(1, i(20210)),	-- Defiler's Plate Greaves
-						
+
 						-- Trinkets
 						mark(1, i(20072)),	-- Defiler's Talisman
 						mark(1, i(21115)),	-- Defiler's Talisman
@@ -1101,12 +1101,12 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						-- #if AFTER 5.0.4
 						mark(10, i(20132)),	-- Arathor Battle Tabard (Was originally a quest reward!)
 						-- #endif
-						
+
 						-- Weapons & Cloak
 						mark(3, i(20069)),	-- Ironbark Staff
 						mark(3, i(20070)),	-- Sageclaw
 						mark(2, i(20073)),	-- Cloak of the Honor Guard
-						
+
 						-- Cloth
 						mark(2, i(20061)),	-- Highlander's Epaulets
 						mark(1, i(20097)),	-- Highlander's Cloth Girdle
@@ -1128,7 +1128,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20113)),	-- Highlander's Leather Boots
 						mark(1, i(20114)),	-- Highlander's Leather Boots
 						mark(1, i(20052)),	-- Highlander's Leather Boots
-						
+
 						-- Lizardhide
 						mark(2, i(20060)),	-- Highlander's Lizardhide Shoulders
 						mark(1, i(20103)),	-- Highlander's Lizardhide Girdle
@@ -1150,7 +1150,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20050)),	-- Highlander's Chain Greaves
 						mark(1, i(20092)),	-- Highlander's Chain Greaves
 						mark(1, i(20093)),	-- Highlander's Chain Greaves
-						
+
 						-- Mail
 						mark(2, i(20056)),	-- Highlander's Mail Pauldrons
 						mark(1, i(20120)),	-- Highlander's Mail Girdle
@@ -1172,7 +1172,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20110)),	-- Highlander's Lamellar Greaves
 						mark(1, i(20109)),	-- Highlander's Lamellar Greaves
 						mark(1, i(20049)),	-- Highlander's Lamellar Greaves
-						
+
 						-- Plate
 						mark(2, i(20057)),	-- Highlander's Plate Spaulders
 						mark(1, i(20125)),	-- Highlander's Plate Girdle
@@ -1183,7 +1183,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						mark(1, i(20128)),	-- Highlander's Plate Greaves
 						mark(1, i(20048)),	-- Highlander's Plate Greaves
 						mark(1, i(20127)),	-- Highlander's Plate Greaves
-						
+
 						-- Trinkets
 						mark(1, i(20071)),	-- Talisman of Arathor
 						mark(1, i(21117)),	-- Talisman of Arathor

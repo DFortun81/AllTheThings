@@ -224,6 +224,14 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 42.6, 23.7, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
+				q(3564, {	-- Andron's Payment to Jediga
+					["qg"] = 6522,	-- Andron Gant
+					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
+					["coord"] = { 54.8, 76.3, UNDERCITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
+				}),
 				q(14468, {	-- Another Warm Body
 					["sourceQuests"] = {
 						14197,	-- A Quota to Meet
@@ -354,14 +362,14 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 13.8, 64.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 				}),
-				q(8153, {	-- Courser Antlers
+				applyclassicphase(PHASE_FOUR, q(8153, {	-- Courser Antlers
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(14146, {	-- Defend the Gates!
 					["sourceQuests"] = { 14135 },	-- Up a Tree
 					["races"] = HORDE_ONLY,
@@ -1120,7 +1128,7 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["model"] = 198793,
 				}),
-				q(8151, {	-- The Hunter's Charm
+				applyclassicphase(PHASE_FOUR, q(8151, {	-- The Hunter's Charm
 					["qgs"] = {
 						4205,	-- Dorion <Hunter Trainer>
 						5116,	-- Olmin Burningbeard <Hunter Trainer>
@@ -1139,7 +1147,7 @@ root("Zones", m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(8256, {	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
@@ -1332,14 +1340,14 @@ root("Zones", m(KALIMDOR, {
 						i(131340, {["timeline"] = {"added 7.0.3.22248"}}),	-- Capacitance Bands
 					},
 				}),
-				q(8231, {	-- Wavethrashing
+				applyclassicphase(PHASE_FOUR, q(8231, {	-- Wavethrashing
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3" },
-				}),
+				})),
 				q(26294, {	-- Weapons of Mass Dysfunction
 					["sourceQuests"] = { 26293 },	-- Machines of War
 					["provider"] = { "n", 42672 },	-- Foreman Glibbs
@@ -1413,8 +1421,12 @@ root("Zones", m(KALIMDOR, {
 					},
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(18673),	-- Avalanchion's Stony Hide
-						i(18674),	-- Hardened Stone Band
+						i(18673, {	-- Avalanchion's Stony Hide
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(18674, {	-- Hardened Stone Band
+							["timeline"] = { "removed 4.0.3" },
+						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
 				}),
@@ -1542,12 +1554,15 @@ root("Zones", m(KALIMDOR, {
 						i(11305),	-- Dense Shortbow
 					},
 				})),
-				n(8678, bubbleDownSelf({ ["timeline"] = { "added 1.11.1.7272", "removed 4.0.3" } }, {	-- Jubie Gadgetspring <Engineering Supplier>
+				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 					["coord"] = { 45.2, 90.8, AZSHARA },
+					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(10607),	-- Schematic: Deepdive Helmet
+						i(10607, {	-- Schematic: Deepdive Helmet
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
-				})),
+				}),
 				n(49885, bubbleDownSelf({ ["timeline"] = { "added 4.0.1.12984" } }, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 					["coord"] = { 57.0, 50.6, AZSHARA },
 					["races"] = HORDE_ONLY,
@@ -1590,7 +1605,7 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
 					["crs"] = { 6146 },	-- Cliff Breaker
 				}),
-				i(14473, {	-- Pettern: Ghostweave Belt
+				i(14473, {	-- Pattern: Ghostweave Belt
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game
 					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					["crs"] = { 7864 },	-- Lingering Highborne
@@ -1612,6 +1627,10 @@ root("Zones", m(KALIMDOR, {
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game
 					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 					["crs"] = { 6201 },	-- Legashi Rogue
+				}),
+				i(13491, {	-- Recipe: Elixir of the Mongoose
+					["timeline"] = { "removed 4.0.3" },
+					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
 					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },	-- now learned from trainer, formula was removed from game

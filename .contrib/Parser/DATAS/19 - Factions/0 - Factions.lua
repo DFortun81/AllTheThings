@@ -33,7 +33,6 @@ _.Factions =
 			faction(1037),	-- Alliance Vanguard
 			faction(1068),	-- Explorer's League
 			faction(1126),	-- The Frostborn
-			faction(1094),	-- The Silver Covenant
 			faction(1050),	-- Valiance Expedition
 		})),
 		tier(CATA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
@@ -49,7 +48,6 @@ _.Factions =
 			faction(1731),	-- Councils of Exarchs
 			faction(1847),	-- Hand of The Prophet
 			faction(1710),	-- Sha'tari Defense
-			faction(1682),	-- Wyrnn's Vanguard
 			faction(1738),	-- Defender Illona
 			faction(1733),	-- Delvar Ironfist
 		})),
@@ -85,7 +83,6 @@ _.Factions =
 		tier(WOTLK_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1052),	-- Horde Expedition
 			faction(1067),	-- The Hand of Vengeance
-			faction(1124),	-- The Sunreavers
 			faction(1064),	-- The Taunka
 			faction(1085),	-- Warsong Offensive
 		})),
@@ -102,7 +99,6 @@ _.Factions =
 			faction(1445),	-- Frostwolf Orcs
 			faction(1708),	-- Laughing Skull Orcs
 			faction(1848),	-- Vol'jin's Headhunters
-			faction(1681),	-- Vol'jin's Spear
 			faction(1740),	-- Aeda Brightdawn
 			faction(1739),	-- Vivianne
 		})),
@@ -149,29 +145,17 @@ _.Factions =
 		faction(1031),	-- Sha'tari Skyguard
 		faction(1077),	-- Shattered Sun Offensive
 		faction(970),	-- Sporeggar
-		faction(932, {	-- The Aldor
-			["altAchievements"] = { 1205 },	-- Hero of Shattrath
-		}),
 		faction(933),	-- The Consortium
 		faction(990),	-- The Scale of the Sands
-		faction(934, {	-- The Scryer
-			["altAchievements"] = { 1205 },	-- Hero of Shattrath
-		}),
 		faction(935),	-- The Sha'tar
 		faction(967),	-- The Violet Eye
 	}),
 	tier(WOTLK_TIER, {
 		faction(1106),	-- Argent Crusade
-		faction(1104, {	-- Frenzyheart Tribe
-			["altAchievements"] = { 952 },	-- Mercenary of Sholazar
-		}),
 		faction(1090),	-- Kirin Tor
 		faction(1098),	-- Knights of the Ebon Blade
 		faction(1156),	-- The Ashen Verdict
 		faction(1073),	-- The Kalu'ak
-		faction(1105, {	-- The Oracles
-			["altAchievements"] = { 952 },	-- Mercenary of Sholazar
-		}),
 		faction(1119),	-- The Sons of Hodir
 		faction(1091),	-- The Wyrmrest Accord
 	}),
@@ -239,54 +223,6 @@ _.Factions =
 	}),
 	tier(SL_TIER, {
 		--faction(2480),	-- Automa (NYI)
-		faction(2413),	-- Court of Harvesters
-		faction(2464),	-- Court of Night
-		faction(2470, {	-- Death's Advance
-			["timeline"] = { "added 9.1.0.38312" },
-		}),
-		faction(2463, {	-- Marasmius
-			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
-			["crs"] = { 167455 },	-- Marasmius
-			["maps"] = { 1819 },	-- Fungal Terminus
-		}),
-		faction(2462, {	-- Stitchmasters
-			["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
-		}),
-		faction(2472, {	-- The Archivist's Codex
-			["timeline"] = { "added 9.1.0.38312" },
-		}),
-		faction(2407),	-- The Ascended
-		faction(2439),	-- The Avowed
-		faction(2445, {	-- The Ember Court (Venthyr)
-			["customCollect"] = { "SL_COV_VEN" },
-			["crs"] = { 165399 },	-- Lord Garridan (when selecting Guests for Ember Court)
-			["maps"] = {
-				REVENDRETH,
-				1644,	-- Ember Court (scenario)
-			},
-			["g"] = sharedData({ ["customCollect"] = { "SL_COV_VEN" } },{
-				faction(2450),	-- Alexandros Mograine
-				faction(2446),	-- Baroness Vashj
-				faction(2454),	-- Choofa
-				faction(2455),	-- Cryptkeeper Kassir
-				faction(2456),	-- Droman Aliothe
-				faction(2457),	-- Grandmaster Vole
-				faction(2451),	-- Hunt-Captain Korayn
-				faction(2458),	-- Kleia and Pelagos
-				faction(2447),	-- Lady Moonberry
-				faction(2448),	-- Mikanikos
-				faction(2461),	-- Plague Deviser Marileth
-				faction(2452),	-- Polemarch Adrestes
-				faction(2453),	-- Rendle and Cudgelface
-				faction(2459),	-- Sika
-				faction(2460),	-- Stonehead
-				faction(2449),	-- The Countess
-			}),
-		}),
-		faction(2478),	-- The Enlightened
-		faction(2410),	-- The Undying Army
-		faction(2465),	-- The Wild Hunt
-		faction(2432),	-- Ve'nari
 		-- faction(2414),	-- Shadowlands (idk what this is)
 	}),
 };

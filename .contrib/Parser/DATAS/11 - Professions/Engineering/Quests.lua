@@ -106,6 +106,7 @@ profession(ENGINEERING, {
 			["lvl"] = 30,
 		}),
 		q(29477, {	-- Gnomish Engineering
+			["repeatable"] = true,
 			["qgs"] = {
 				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
 				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
@@ -140,6 +141,7 @@ profession(ENGINEERING, {
 			["lvl"] = 20,
 		}),
 		q(29475, {	-- Goblin Engineering
+			["repeatable"] = true,
 			["qgs"] = {
 				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
 				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
@@ -171,7 +173,6 @@ profession(ENGINEERING, {
 				{ "i", 10507, 20 },	-- Solid Dynamite
 				{ "i", 4384, 5 },	-- Explosive Sheep
 			},
-			["u"] = REMOVED_FROM_GAME,
 			["lvl"] = 20,
 		}),
 		q(3526, {	-- Goblin Engineering
@@ -297,14 +298,6 @@ profession(ENGINEERING, {
 				884,	-- Lower Deck [The Vindicaar: Eredath]
 				886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 				887,	-- Lower Deck [The Vindicaar: Antoran Wastes]
-			},
-		}),
-		q(48065, {	-- Extraterrestrial Exploration
-			["qg"] = 93520,	-- Didi the Wrench
-			["sourceQuests"] = { 48069 },	-- The Wrench Calls
-			["coord"] = { 38.8, 25.6, LEGION_DALARAN },
-			["g"] = {
-				recipe(247744),	-- Wormhole Generator: Argus
 			},
 		}),
 	}),

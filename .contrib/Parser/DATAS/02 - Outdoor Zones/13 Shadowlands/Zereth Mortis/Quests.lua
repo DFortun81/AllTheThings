@@ -118,6 +118,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 					64958,	-- The Forces Gather
 					65771,	-- Favor of the First Ones
 					65772,	-- Necessary Harvest
+					65768,	-- Our Forward Scouts
 				},
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.6, ZERETH_MORTIS },
@@ -981,10 +982,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 		n(QUESTS, sharedData({ ["isDaily"] = true }, {
 			-- Confirmed
 			q(64852, {	-- Aeon Matrix
-				["sourceQuests"] = {
-					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
-				},
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "i", 187527 },	-- Aeon Matrix
 			}),
 			q(64860, {	-- Aetheric Lattice
@@ -995,6 +993,16 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "i", 187788 },	-- Aetheric Lattice
 			}),
 			q(65265, {	-- Buried Remnants
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(65268, {	-- Bzzzzt!
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 181179 },	-- Elder Nirav
+				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+			}),
+			q(64964, {	-- Choose Your Fighter
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
@@ -1019,6 +1027,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
+			q(65226, {	-- Fleet-footed and Fastidious
+				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+				["provider"] = { "n", 177958 },	-- Firim
+				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1045,7 +1058,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			q(64861, {	-- Kismetric Disc
 				["sourceQuests"] = {
 					64579,	-- Hallow Efforts
-					64717	-- Materials of Creation
 				},
 				["provider"] = { "i", 187792 },	-- Kismetric Disc
 				["g"] = {
@@ -1067,7 +1079,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 			}),
 			q(65325, {	-- Motes of Knowledge
 				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 			}),
@@ -1076,6 +1088,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+			}),
+			q(65362, {	-- Not of the Body
+				["description"] = "This Daily is available after researching Altonian Understanding",
+				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
+				["provider"] = { "n", 180289 },	-- Mai Soh
+				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["g"] = {
+					i(189449),	-- Jiro Scan
+				},
 			}),
 			q(65072, {	-- Not Safe For Work
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1128,34 +1149,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
 			}),
-			--
-
-			--[[ Unconfirmed out commented until confirmation
-			q(65268, {	-- Bzzzzt!
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			q(64964, {	-- Choose Your Fighter
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 181179 },	-- Elder Nirav
-				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-			}),
-			q(65226, {	-- Fleet-footed and Fastidious
-				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
-				["provider"] = { "n", 177958 },	-- Firim
-				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-			}),
-			q(65362, {	-- Not of the Body
-				["description"] = "This Daily is available after researching Altonian Understanding",
-				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
-				["provider"] = { "n", 180289 },	-- Mai Soh
-				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-				["g"] = {
-					i(189449),	-- Jiro Scan
-				},
-			}),
-			--]]
 		})),
 	}),
 })));

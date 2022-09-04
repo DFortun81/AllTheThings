@@ -272,6 +272,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					i(181267),	-- Writhing Spine (PET!)
 					i(183833),	-- Kash's Bag of Junk
 					i(184287),	-- Scum-Caked Epaulettes
+					i(181797),	-- Strange Cloth
 				},
 			}),
 			n(159886, { -- Sister Chelicerae

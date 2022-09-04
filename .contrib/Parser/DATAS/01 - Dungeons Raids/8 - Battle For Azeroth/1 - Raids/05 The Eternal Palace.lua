@@ -29,64 +29,31 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(2, 1),	-- Azeroth's Undying Gift (Rank 1)
-					},
 				}),
 				i(168536, {	-- Recrystallizing Azerite Formation (Rank 2)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(2, 2),	-- Azeroth's Undying Gift (Rank 2)
-					},
 				}),
 				i(168537, {	-- Tempered Azerite Formation (Rank 3)
-					["classes"] = TANKS,
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(2, 3),	-- Azeroth's Undying Gift (Rank 3)
-					},
 				}),
 				i(168854, {	-- Animated Elemental Heart (Rank 1)
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(14, 1),	-- Condensed Life-Force (Rank 1)
-					},
 				}),
 				i(168855, {	-- Pulsing Elemental Heart (Rank 2)
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(14, 2),	-- Condensed Life-Force (Rank 2)
-					},
 				}),
 				i(168856, {	-- Resonating Elemental Heart (Rank 3)
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(14, 3),	-- Condensed Life-Force (Rank 3)
-					},
 				}),
 				i(168941, {	-- Vitality Redistribution Lattice (Rank 1)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
-					["g"] = {
-						az(21, 1),	-- Vitality Conduit (Rank 1)
-					},
 				}),
 				i(168942, {	-- Mesh of Expanding Vitality (Rank 2)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
-					["g"] = {
-						az(21, 2),	-- Vitality Conduit (Rank 2)
-					},
 				}),
 				i(168943, {	-- Grid of Bursting Vitality (Rank 3)
-					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
-					["g"] = {
-						az(21, 3),	-- Vitality Conduit (Rank 3)
-					},
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -106,6 +73,16 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
 			}),
+			d(17, {	-- LFR Queue NPC
+				["crs"] = {
+					177193,	-- Kiku
+					177208,	-- Eppu
+				},
+				["coords"] = {
+					{ 74.0, 13.4, BORALUS },	-- Kiku
+					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+				},
+			}),
 			d(17, {	-- LFR
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
@@ -120,10 +97,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13718, {	-- The Grand Reception
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
 							["creatureID"] = 151881,
@@ -204,10 +177,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13719, {	-- Depths of the Devoted
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
 							["creatureID"] = 152236,
@@ -283,10 +252,6 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 				}),
 				ach(13725, {	-- The Circle of Stars
 					["collectible"] = false,
-					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
-					},
 					["g"] = {
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 							["creatureID"] = 150859,
@@ -893,18 +858,11 @@ root("Instances", tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.2.0" } }
 						})),
 						i(168538, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Dazzling Azerite Formation (Rank 4)
 							["classes"] = TANKS,
-							["g"] = {
-								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
-							},
 						})),
 						i(168857, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Sparkling Elemental Heart (Rank 4)
-							az(14, 4),	-- Condensed Life-Force (Rank 4)
 						})),
 						i(168944, bubbleDownSelf({["timeline"] = { "added 8.2.0", "removed 9.0.1" } }, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
-							["g"] = {
-								az(21, 4),	-- Vitality Conduit (Rank 4)
-							},
 						})),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary

@@ -212,6 +212,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 				["coord"] = { 39.4, 51.3, KORTHIA },
 			}),
+			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178800 },	-- Voitha
+				["isDaily"] = true,
+				["coord"] = { 61.7, 23.7, KORTHIA },
+			}),
 			q(64314, {	-- Covenants Renewed
 				["sourceQuests"] = { 64213, 64214 },	-- A Symbol of Hope (A/H)
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -386,10 +392,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			q(64519, {	-- Lost Vaults
 				["sourceQuests"] = {
 					64511,	-- Missing Relics
-				--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
-				--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
-					63915,	-- Drum of Driving
-					63917,	-- Everliving Statuette
 				},
 				["minReputation"] = { 2472, 7500 },	-- Tier 3
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
@@ -402,12 +404,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(64526, {	-- Mysterious Rifts
-				["sourceQuests"] = {	-- TODO: not sure if the prereq is simply Tier 4 research, or if previous relics are required
-					63915,	-- Drum of Driving
-					63917,	-- Everliving Statuette
-					63918,	-- Obelisk of Dark Tidings
-					63916,	-- Sack of Strange Soil
-				},
 				["minReputation"] = { 2472, 14000 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
@@ -514,7 +510,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				},
 			}),
 			q(63911, {	-- Singing Steel Ingot
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63861 },	-- Beginning the Collection
 				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
 				["coord"] = { 62.1, 56.8, KORTHIA },
 			}),
@@ -745,6 +741,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					i(186693),	-- Gold Filled Wheelbarrow
 				},
 			}),
+			q(64015, {	-- Into the Meat Grinder
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178805 },	-- Emeni
+				["isDaily"] = true,
+				["coord"] = { 60.1, 27.5, KORTHIA },
+			}),
 			q(64065, {	-- Local Reagents
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -762,6 +764,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178799 },	-- Arios Riftbearer
 				["isDaily"] = true,
 				["coord"] = { 61.5, 23.5, KORTHIA },
+			}),
+			q(63937, {	-- Nasty, Big, Pointy Teeth
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178805 },	-- Emeni
+				["isDaily"] = true,
+				["coord"] = { 59.9, 27.0, KORTHIA },
 			}),
 			q(63776, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -788,6 +796,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63962, {	-- Observational Records
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178844 },	-- Ta'nasi
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
+			q(63959, {	-- Observational Records
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["isDaily"] = true,
@@ -851,13 +865,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.3, 21.3, KORTHIA },
 			}),
+			q(65146, {	-- Relic Hunter
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { "added 9.1.5" },
+			}),
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
 				["timeline"] = { "added 9.1.5" },
 				["isWeekly"] = true,
 			}),
-			q(63777, {	-- Sealed Secrets
+			q(63954, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["isDaily"] = true,
@@ -870,6 +889,18 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 64.6, 25.4, KORTHIA },
 			}),
 			q(63961, {	-- Sealed Secrets
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178845 },	-- Ve'lonu
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
+			q(63777, {	-- Sealed Secrets
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178845 },	-- Ve'lonu
+				["isDaily"] = true,
+				["coord"] = { 64.6, 25.4, KORTHIA },
+			}),
+			q(63955, {	-- Sealed Secrets
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["isDaily"] = true,
@@ -941,14 +972,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 61.4, 23.2, KORTHIA },
 			}),
+			q(63965, {	-- Slitherwing Egg Rescue
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["isDaily"] = true,
+				["coord"] = { 61.4, 21.4, KORTHIA },
+		}),
+			q(64104, {	-- Think of the Critters
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178839 },	-- Dreamweaver
+				["isDaily"] = true,
+				["coord"] = { 61.4, 21.4, KORTHIA },
+		}),
 			--[[ These are only commented out until they are found on live severs // Braghe
 		--	9.1.0 PTR Data
-			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178800 },	-- Voitha
-				["isDaily"] = true,
-				["coord"] = { 61.7, 23.7, KORTHIA },
-			}),
 			q(63785, {	-- Continued Efforts: Seeker's Quorum
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
@@ -966,53 +1003,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 179194 },	-- Kleia
 				["isDaily"] = true,
 				["coord"] = { 61.6, 23.9, KORTHIA },
-			}),
-			q(64015, {	-- Into the Meat Grinder
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
-				["coord"] = { 60.1, 27.5, KORTHIA },
-			}),
-			q(63937, {	-- Nasty, Big, Pointy Teeth
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178805 },	-- Emeni
-				["isDaily"] = true,
-				["coord"] = { 59.9, 27.0, KORTHIA },
-			}),
-			q(63959, {	-- Observational Records
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178844 },	-- Ta'nasi
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(65146, {	-- Relic Hunter
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
-			}),
-			q(63954, {	-- Sealed Secrets
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(63955, {	-- Sealed Secrets
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178845 },	-- Ve'lonu
-				["isDaily"] = true,
-				["coord"] = { 64.6, 25.4, KORTHIA },
-			}),
-			q(63965, {	-- Slitherwing Egg Rescue
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
-			}),
-			q(64104, {	-- Think of the Critters
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178839 },	-- Dreamweaver
-				["isDaily"] = true,
-				["coord"] = { 61.4, 21.4, KORTHIA },
 			}),
 			--]]
 		}),

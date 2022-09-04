@@ -26,9 +26,25 @@ root("Instances", tier(CLASSIC_TIER, {
 			d(1, {	-- Normal
 			-- #endif
 				-- #if BEFORE 5.0.4
-				-- #if AFTER WRATH
+				-- #if AFTER 3.0.1
 				n(ACHIEVEMENTS, {
-					ach(637),	-- Scarlet Monastery
+					ach(637, {	-- Scarlet Monastery
+						crit(533, {	-- High Inquisitor Whitemane
+							["_npcs"] = { 3977 },	-- High Inquisitor Whitemane
+						}),
+						crit(3264, {	-- Scarlet Commander Mograine
+							["_npcs"] = { 3976 },	-- Scarlet Commander Mograine
+						}),
+						crit(536, {	-- Herod
+							["_npcs"] = { 3975 },	-- Herod
+						}),
+						crit(535, {	-- Arcanist Doan
+							["_npcs"] = { 6487 },	-- Arcanist Doan
+						}),
+						crit(537, {	-- Bloodmage Thalnos
+							["_npcs"] = { 4543 },	-- Bloodmage Thalnos
+						}),
+					}),
 				}),
 				-- #endif
 				-- #endif

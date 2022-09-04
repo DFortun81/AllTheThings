@@ -314,3 +314,16 @@ _.Zones =
 		}),
 	}),
 };
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(43961),	-- Azsuna - WQ rare: Bestrix
+		q(44882),	-- Azsuna - WQ rare: Bloodgazer Matriarch
+		q(43960),	-- Azsuna - WQ rare: Cinderwing
+		q(42699),	-- Azsuna - WQ rare: Coura, Mistress of Arcana
+		q(45489),	-- Azsuna - WQ rare: Deepclaw
+		q(45499),	-- Azsuna - WQ rare: Fjordun
+		q(45516),	-- Azsuna - WQ rare: Mortiferous
+		q(45497),	-- Azsuna - WQ rare: Stormfeather
+		q(44035),	-- Azsuna - WQ rare: Torrentius
+	}),
+});

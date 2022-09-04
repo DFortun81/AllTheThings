@@ -386,11 +386,31 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-
-root("HiddenQuestTriggers", {
-	q(47920),	-- Ensemble: Timewarden's Plate
-	q(47921),	-- Ensemble: Chronoscryer's Finery
-	q(47922),	-- Ensemble: Epoch Sentinel's Mail
-	q(47923),	-- Ensemble: Riftscarred Vestments
-	--q(64652),	-- unknown reason
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(47920),	-- Ensemble: Timewarden's Plate
+		q(47921),	-- Ensemble: Chronoscryer's Finery
+		q(47922),	-- Ensemble: Epoch Sentinel's Mail
+		q(47923),	-- Ensemble: Riftscarred Vestments
+		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
+		q(47829),	-- FLAG - Hyjal Complete - kill the fiery behemoth
+		q(47830),	-- FLAG - Andorhal Complete
+		q(48031),	-- FLAG - Andorhal Scene seen
+		q(48044),	-- FLAG - Shields Cleared - immediately after picking up the Lightning Absorption Capsule
+		q(48043),	-- FLAG - Plating Cleared - destroy cannon plating in andorhal
+		q(47831),	-- FLAG - Stratholme Complete
+		q(48030),	-- FLAG - Stratholme Scene seen
+		q(47749),	-- FLAG - Fight Plague With Fire Complete
+		q(47748),	-- FLAG - Holing Up Complete
+		q(48033),	-- FLAG - Well of Eternity Scene seen
+		q(47832),	-- FLAG - Well of Eternity Complete
+		q(47938),	-- Tracking Quest - kill Bloodfeast
+		q(47936),	-- Tracking Quest - kill Bonesunder
+		q(47934),	-- Tracking Quest - kill Dregmar Runebrand
+		q(47937),	-- Tracking Quest - kill Iceshatter
+		q(47935),	-- Tracking Quest - kill Icefist
+	}),	
+	tier(SL_TIER, {
+		qNYI(64652),	-- unknown reason in Chromie Scenario
+	}),
 });

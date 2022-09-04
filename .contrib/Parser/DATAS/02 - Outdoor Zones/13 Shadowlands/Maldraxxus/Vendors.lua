@@ -31,6 +31,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
+				["minReputation"] = { 2410, 5 },	-- The Undying Army, Friendly
 				["g"] = {
 					i(182082, {	-- Lurid Bloodtusk (MOUNT!)
 						["cost"] = 300000000, -- 30,000g

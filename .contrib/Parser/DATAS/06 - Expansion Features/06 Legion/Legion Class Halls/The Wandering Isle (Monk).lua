@@ -197,6 +197,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
+						["timeline"] = { "added 7.0.1", "removed 8.0.1" },
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
@@ -270,9 +271,10 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41729, {	-- Slowing the Spread
-						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["sourceQuests"] = { 41905 },	-- Report from Tian Monastery
 						["provider"] = { "n", 104745 },	-- Instructor Myang
 						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
+						["description"] = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
 					}),
 					q(41730, {	-- Desperate Strike
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
@@ -302,9 +304,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(511),	-- Sheilun, Staff of the Mists
 							artifact(530),	-- Fists of the Heavens [Main Hand]
 							-- artifact(530),	-- Fists of the Heavens [Off Hand]
-							crit(3, {	-- Complete the first order campaign effort
-								["achievementID"] = 10461,	-- Fighting with Style: Classic
-							}),
 						},
 					}),
 					q(43319, {	-- The Way of the Tiger
@@ -526,7 +525,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							artifact(512),	-- Sheilun, Staff of the Mists
 							artifact(533),	-- Fists of the Heavens [Main Hand]
 							-- artifact(533),	-- Fists of the Heavens [Off Hand]
-							ach(10746),	-- Forged for Battle
 						},
 					}),
 					-- Interlude
@@ -547,11 +545,11 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					q(45440, {	-- A Brewing Situation
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
-							--#if AFTER 7.2.0
+							-- #IF AFTER 7.2.0
 							43359,	-- A Hero's Weapon
-							--#else
+							-- #ELSE
 							46025,	-- Investigate the Broken Shore
-							--#endif
+							-- #ENDIF
 						},
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["coord"] = { 51.4, 48.6, THE_WANDERING_ISLE },
@@ -761,7 +759,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136800, {	-- Meditation Manual: Zen Flight
-								["spellID"] = 125883,	-- Zen Flight
+								["f"] = RECIPES,
 							}),
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
@@ -782,39 +780,24 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 		})),
 	}),
 })));
-
-
--- #if AFTER LEGION
--- These quests trigger after specific events occur in the zone.
-root("HiddenQuestTriggers", {
-	q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
-	q(40638),	-- Monk Order Hall - Windwalker Chosen
-	q(40639),	-- Monk Order Hall - Mistweaver Chosen
-	q(40640),	-- Monk Order Hall - Brewmaster Chosen
-	q(40655),	-- Monk Order Hall - Li Li — hopping on kite during "Off to Adventure!"
-	q(41812),	-- Monk Order Hall - Tracking Quest: Saw Boss Cinematic — cinematic during #41732, "The Hand of Keletress"
-	q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
-	q(41858),	-- Monk Order Hall - No Monk Left Behind (obsolete or NYI version, triggers with #41852 version)
-	q(43065),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 1 — during "Tracking the Tideskorn"
-	q(43066),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 2 — during "Tracking the Tideskorn"
-	q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
-	q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
-	q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
-	q(43662),	-- Unlock Hidden Mistweaver appearance
-	q(43970),	-- Monk Order Hall - Brewmaster Chosen
-	q(43971),	-- Monk Order Hall - Windwalker Chosen
-	q(43972),	-- Monk Order Hall - Mistweaver Chosen
-	q(44427),	-- Monk Order Hall - Brewmaster Chosen
-	q(44428),	-- Monk Order Hall - Mistweaver Chosen
-	q(44429),	-- Monk Order Hall - Windwalker Chosen
-	q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
-	q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
-});
-
--- These quests never made it in.
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(QUESTS, {
-		q(43820),	-- Hidden History
+root(ROOTS.HiddenQuestTriggers, {
+	tier(LEGION_TIER, {
+		q(40127),	-- Da-Nel's Quest - Da-Nel sends you from Dalaran to Peak of Serenity
+		q(40655),	-- Li Li - hopping on kite during "Off to Adventure!" (questID 40633)
+		q(40516),	-- The Dawning Bit -  triggered after accepting "The Dawning Light" (questID 40236)
+		q(46939),	-- Monk Finale - Ban-Lu mount cutscene
+		q(44646),	-- Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
+		q(44647),	-- Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 3A-6 - Unlocks Final Quest - completed the "Impending Danger" mission
+		q(43129),	-- Tracking Quest: Freya's Spring 1 - completed the "Freya's Spring: The Mountain" mission
+		q(43130),	-- Tracking Quest: Freya's Spring 2 - completed the "Freya's Spring: Snowblind Mesa" mission
+		q(43131),	-- Tracking Quest: Freya's Spring 3 - completed the "Freya's Spring: The Mountain King" mission
+		q(43132),	-- Tracking Quest: Freya's Spring 4 - completed the "Freya's Spring: Ice Furies" mission
+		q(43133),	-- Tracking Quest: Freya's Spring 5 - completed the "Freya's Spring: Harpy Mother" mission
+		q(41812),	-- Tracking Quest: Saw Boss Cinematic - cinematic during "The Hand of Keletress" (questID 41732)
+		q(43065),	-- Tracking Quest: Vrykul Scouting 1 - completed the "Tracking the Tideskorn: Highlands" mission
+		q(43066),	-- Tracking Quest: Vrykul Scouting 2 - completed the "Tracking the Tideskorn: Restless Dead" mission
+		q(43067),	-- Tracking Quest: Vrykul Scouting 3 - completed the "Tracking the Tideskorn: Savage Beasts" mission
+		q(43068),	-- Tracking Quest: Vrykul Scouting 4 - completed the "Tracking the Tideskorn: The Gates of Valor" mission
+		q(43069),	-- Tracking Quest: Vrykul Scouting 5 - completed the "Tracking the Tideskorn: Storm Drakes" mission
 	}),
-}));
--- #endif
+});

@@ -21,9 +21,6 @@ _.Instances = { tier(BFA_TIER, {
 				},
 				["creatureID"] = 136385,	-- Azurethos, The Winged Typhoon
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(6, {	-- Azurethos
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(161356),	-- Feathered Galeforce Crest
 					i(161352),	-- Chestguard of Dire Winds
 					i(161369),	-- Bindings of the Winged Typhoon
@@ -72,9 +69,6 @@ _.Instances = { tier(BFA_TIER, {
 				},
 				["creatureID"] = 138794,	-- Dunegorger Kraulok
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(5, {	-- Dunegorger Kraulok
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(174842),	-- Mollie (MOUNT!)
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
@@ -112,9 +106,6 @@ _.Instances = { tier(BFA_TIER, {
 				},
 				["creatureID"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(2, {	-- Hailstone
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
 					i(161364),	-- Chill's End Wristguards
@@ -189,9 +180,6 @@ _.Instances = { tier(BFA_TIER, {
 				},
 				["creatureID"] = 132253,	-- Ji'arak
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(4, {	-- Ji'arak
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(161401),	-- Matriarch's Shadowveil
 					i(164384),	-- Windswept Dinorider's Cape
 					i(161409),	-- Stormcrash Chestguard
@@ -212,9 +200,6 @@ _.Instances = { tier(BFA_TIER, {
 				["lvl"] = { 50 },
 				["creatureID"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(3, {	-- T'zane
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
 					i(161392),	-- Bindings of Eternal Fears
@@ -236,6 +221,7 @@ _.Instances = { tier(BFA_TIER, {
 				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
 				["creatureID"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
+					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed Discord 2022-08-01)
 					i(163829),	-- Toy War Machine (TOY!)
 					i(161455),	-- Battlemage's Collar
 					i(161453),	-- Warscout's Horned Helm
@@ -310,9 +296,6 @@ _.Instances = { tier(BFA_TIER, {
 				},
 				["creatureID"] = 140163,	-- Warbringeer Yenajz
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(1, {	-- Warbringer Yenajz
-						["achievementID"] = 12587,	-- Unbound Monstrosities
-					}),
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw
 					i(161351),	-- Wristwraps of Warped Reality
@@ -349,6 +332,26 @@ _.Instances = { tier(BFA_TIER, {
 					i(169925),	-- Serpentskin Splashers
 					i(169928),	-- Wekemara's Warboots
 					i(169318),	-- Shockbiter's Fang
+				}),
+			}),
+			ach(12587, {	-- Unbound Monstrosities
+				crit(1, { -- Warbringer Yenajz
+					["_quests"] = { 52166 },
+				}),
+				crit(2, { -- Hailstone Construct
+					["_quests"] = { 52157 },
+				}),
+				crit(3, { -- T'zane
+					["_quests"] = { 52181 },
+				}),
+				crit(4, { -- Ji'arak
+					["_quests"] = { 52169 },
+				}),
+				crit(5, { -- Dunegorger Kraulok
+					["_quests"] = { 52196 },
+				}),
+				crit(6, { -- Azurethos
+					["_quests"] = { 52163 },
 				}),
 			}),
 		},

@@ -181,7 +181,7 @@ _.Zones =
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						["g"] = {
-							i(127933),	-- Recipe: Flask of Ten Thousand Scars (Rank 2)
+							i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
 						},
 					}),
 					q(39349, {	-- Black Rook Hold: Heavy, But Helpful
@@ -191,7 +191,7 @@ _.Zones =
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
 						["g"] = {
-							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
+							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
 						},
 					}),
 					q(39350, {	-- Maw of Souls: A Hope in Helheim
@@ -201,7 +201,7 @@ _.Zones =
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						["g"] = {
-							i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
+							i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
 						},
 					}),
 					q(39351, {	-- The Emerald Nightmare: Rage Fire
@@ -218,319 +218,6 @@ _.Zones =
 						["sourceQuests"] = { 39351 },	-- The Emerald Nightmare: Rage Fire
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN},
-					}),
-				}),
-				prof(BLACKSMITHING, {
-					q(38499, {	-- Strange New Ores
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							recipe(264446),	-- Legion Blacksmithing
-						},
-					}),
-					q(39681, {	-- The Properties of Leystone
-						["sourceQuest"] = 38499,	-- Strange New Ores
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123899),	-- Recipe: Leystone Armguards (Rank 1)
-							i(123900),	-- Recipe: Leystone Waistguard (Rank 1)
-						},
-					}),
-					q(38502, {	-- The Methods of the Nightfallen
-						["sourceQuest"] = 39681,	-- The Properties of Leystone
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-					}),
-					q(38501, {	-- Hatecoil Hammerwork
-						["sourceQuest"] = 39681,	-- The Properties of Leystone
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123906),	-- Recipe: Leystone Breastplate (Rank 1)
-							i(123901),	-- Recipe: Leystone Pauldrons (Rank 1)
-						},
-					}),
-					q(38505, {	-- Engineers: Not COMPLETELY Useless
-						["sourceQuests"] = {
-							38501,	-- Hatecoil Hammerwork
-							38502,	-- The Methods of the Nightfallen
-						},
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-					}),
-					q(38506, {	-- Chicken Scratch
-						["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
-						["provider"] = { "n", 92194 },	-- Timofey Oshenko
-						["coord"] = { 38.4, 27.4, LEGION_DALARAN },
-					}),
-					q(38507, {	-- Secrets of Leysmithing
-						["sourceQuest"] = 38506,	-- Chicken Scratch
-						["provider"] = { "n", 92195 },	-- Professor Pallin
-						["coord"] = { 41.6, 37.2, LEGION_DALARAN },
-					}),
-					q(38515, {	-- Nature Provides
-						["sourceQuest"] = 38507,	-- Secrets of Leysmithing
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["cost"] = { { "i", 124103,	 10 }, },	-- 10xFoxflower
-					}),
-					q(38500, {	-- Leysmithing Mastery
-						["sourceQuest"] = 38515,	-- Nature Provides
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123905),	-- Recipe: Leystone Boots (Rank 1)
-							i(123904),	-- Recipe: Leystone Gauntlets (Rank 1)
-							i(123902),	-- Recipe: Leystone Greaves (Rank 1)
-							i(123903),	-- Recipe: Leystone Helm (Rank 1)
-						},
-					}),
-					q(38563, {	-- Flower-Pickers and Potion-Quaffers
-						["sourceQuest"] = 38500,	-- Leysmithing Mastery
-						["provider"] = { "n", 97261 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-					}),
-					q(38513, {	-- The Highmountain Smiths
-						["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["isBreadcrumb"] = true,
-					}),
-					q(38514, {	-- You Are Not Worthy
-						["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-					}),
-					q(39699, {	-- Ironhorn Leysmithing
-						["sourceQuests"] = { 38514 },	-- You Are Not Worthy
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-						["g"] = {
-							i(123933),	-- Plans: Leystone Gauntlets (Rank 2)
-						},
-					}),
-					q(38519, {	-- Grayheft
-						["sourceQuests"] = { 39699 },	-- Ironhorn Leysmithing
-						["provider"] = { "n", 92245 },	-- Thala Steeltotem
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-						["g"] = {
-							i(137680),	-- Plans: Leystone Greaves (Rank 2)
-						},
-					}),
-					q(38518, {	-- From One Master to Another
-						["sourceQuests"] = { 38519 },	-- Grayheft
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-						["isBreadcrumb"] = true,
-					}),
-					q(38522, {	-- Not Just Weapons and Armor
-						["sourceQuest"] = 38518,	-- From One Master to Another
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123957),	-- Recipe: Leystone Hoofplates
-						},
-					}),
-					q(38523, {	-- Leystone Hoofplates
-						["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123957),	-- Recipe: Leystone Hoofplates
-						},
-					}),
-					q(39702, {	-- Legend of Black Rook Hold
-						["sourceQuest"] = 38523,	-- Leystone Hoofplates
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["isBreadcrumb"] = true,
-					}),
-					q(39680, {	-- Between the Hammer...
-						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-						["coord"] = { 40.0, 54.8, VALSHARAH },
-						["groups"] = {
-							i(123929),	-- Plans: Leystone Waistguard (Rank 2)
-						},
-					}),
-					q(39726, {	-- ...And the Anvil
-						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-						["coord"] = { 40.0, 54.8, VALSHARAH },
-					}),
-					q(39729, {	-- The Knowledge of Black Rook
-						["sourceQuests"] = {
-							39680,	-- Between the Hammer...
-							39726,	--  ...And the Anvil
-						},
-						["provider"] = { "n", 96763 },	-- Saris Swifthammer
-						["coord"] = { 40.0, 54.8, VALSHARAH },
-						["isBreadcrumb"] = true,
-					}),
-					q(38564, {	-- A Sweet Bargain
-						["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-					}),
-					q(44449, {	-- Advanced Quenching
-						["sourceQuest"] = 38564,	-- A Sweet Bargain
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
-							i(123935),	-- Recipe: Leystone Breastplate (Rank 2)
-						},
-					}),
-					q(38524, {	-- Felsmith Nal'ryssa
-						["sourceQuest"] = 44449,	-- Advanced Quenching
-						["provider"] = { "n", 92183 },	-- Alard Schmied
-						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["isBreadcrumb"] = true,
-					}),
-					q(38525, {	-- Part of the Team
-						["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["coord"] = { 30.0, 53.4, SURAMAR },
-					}),
-					q(38526, {	-- Smith Under Fire
-						["sourceQuest"] = 38525,	-- Part of the Team
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["coord"] = { 30.0, 53.4, SURAMAR },
-						["g"] = {
-							i(123934),	-- Plans: Leystone Boots (Rank 2)
-						},
-					}),
-					q(38527, {	-- Nal'ryssa's Technique
-						["sourceQuest"] = 38526,	-- Smith Under Fire
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["coord"] = { 30.0, 53.4, SURAMAR },
-						["cost"] = {
-							{ "i", 123918, 60 },	-- 60xLeystone Ore
-							{ "i", 123919, 60 },	-- 60xFelslate
-						},
-					}),
-					q(38528, {	-- Leystone's Potential
-						["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["coord"] = { 30.0, 53.4, SURAMAR },
-						["g"] = {
-							i(123928),	-- Plans: Leystone Armguards (Rank 2)
-						},
-					}),
-					q(38530, {	-- The Firmament Stone
-						["sourceQuest"] = 38528,	-- Leystone's Potential
-						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["coord"] = { 30.0, 53.4, SURAMAR },
-						["isBreadcrumb"] = true,
-					}),
-					q(38531, {	-- Leystone Mastery
-						["sourceQuest"] = 38530,	-- The Firmament Stone
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-						["g"] = {
-							spell(191704, {	-- Recipe List: Grand Master Leysmithing
-								recipe(182964),	-- Leystone Pauldrons
-								recipe(182966),	-- Leystone Helm
-							}),
-						},
-					}),
-					q(38532, {	-- Maw of Souls: Hammered By The Storm
-						["description"] = "Remember to loot Heyla to obtain Terrorspike.",
-						["sourceQuests"] = { 38530 },	-- The Firmament Stone
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
-						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["g"] = {
-							i(136696),	-- Recipe: Terrorspike
-						},
-					}),
-					q(38559, {	-- Worthy of the Stone
-						["sourceQuests"] = {
-							38531,	-- Leystone Mastery
-							38532,	-- Maw of Souls: Hammered By The Storm
-						},
-						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
-						["coord"] = { 55.2, 84.2, HIGHMOUNTAIN }
-					}),
-					q(38833, {	-- The Art of Demonsteel
-						["sourceQuests"] = { 38559 },	-- Worthy of the Stone
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(124462),	-- Plans: Demonsteel Bar
-						},
-					}),
-					q(38533, {	-- Tribal Knowledge
-						["sourceQuests"] = { 38833 },	-- The Art of Demonsteel
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123920),	-- Plans: Demonsteel Armguards (Rank 1)
-						},
-					}),
-					q(38534, {	-- Demonsteel Armguards
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123940),	-- Recipe: Demonsteel Armguards (Rank 2)
-						},
-					}),
-					q(38538, {	-- Demonsteel Boots
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123946),	-- Recipe: Demonsteel Boots (Rank 2)
-						},
-					}),
-					q(38542, {	-- Demonsteel Breastplate
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123947),	-- Recipe: Demonsteel Breastplate (Rank 2)
-						},
-					}),
-					q(38539, {	-- Demonsteel Gauntlets
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123945),	-- Recipe: Demonsteel Gauntlets (Rank 2)
-						},
-					}),
-					q(38541, {	-- Demonsteel Greaves
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123943),	-- Recipe: Demonsteel Greaves (Rank 2)
-						},
-					}),
-					q(38540, {	-- Demonsteel Helm
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123944),	-- Recipe: Demonsteel Helm (Rank 2)
-						},
-					}),
-					q(38537, {	-- Demonsteel Pauldrons
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123942),	-- Recipe: Demonsteel Pauldrons (Rank 2)
-						},
-					}),
-					q(38536, {	-- Demonsteel Waistguard
-						["description"] = "Create one Rank 1 of this item.",
-						["provider"] = { "n", 92243 },	-- Muirn Ironhorn <Blacksmithing Trainer>
-						["coord"] = { 54.6, 84.0, HIGHMOUNTAIN },
-						["g"] = {
-							i(123941),	-- Recipe: Demonsteel Waistguard (Rank 2)
-						},
 					}),
 				}),
 				prof(ENGINEERING, {
@@ -637,7 +324,7 @@ _.Zones =
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 						["g"] = {
-							recipe(198974),	-- Pump-Action Bandage Gun (Rank 1)
+							recipe(198974),	-- Pump-Action Bandage Gun [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40865, {	-- It's Not Rocket Science
@@ -722,10 +409,10 @@ _.Zones =
 						["g"] = {
 							-- Schematic: Better Headguns
 							--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
-							recipe(198991),	-- Blink-Trigger Headgun (Rank 2)
-							recipe(198993),	-- Bolt-Action Headgun (Rank 2)
-							recipe(198994),	-- Reinforced Headgun (Rank 2)
-							recipe(198992),	-- Tactical Headgun (Rank 2)
+							recipe(198991),	-- Blink-Trigger Headgun [Rank 2] (RECIPE!)
+							recipe(198993),	-- Bolt-Action Headgun [Rank 2] (RECIPE!)
+							recipe(198994),	-- Reinforced Headgun [Rank 2] (RECIPE!)
+							recipe(198992),	-- Tactical Headgun [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40877, {	-- Halls of Valor: Trigger Happy
@@ -869,7 +556,7 @@ _.Zones =
 							40525,	-- Getting the Band Back Together
 						},
 						["g"] = {
-							i(137794),	-- Design: Azsunite Loop (Rank 1)
+							i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40526, {	-- Finishing Touches (Skystone Loop)
@@ -881,7 +568,7 @@ _.Zones =
 							40525,	-- Getting the Band Back Together
 						},
 						["g"] = {
-							i(137793),	-- Design: Skystone Loop (Rank 1)
+							i(137793),	-- Design: Skystone Loop [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40527, {	-- Finishing Touches (Deep Amber Loop)
@@ -893,7 +580,7 @@ _.Zones =
 							40525,	-- Getting the Band Back Together
 						},
 						["g"] = {
-							i(137792),	-- Design: Deep Amber Loop (Rank 1)
+							i(137792),	-- Design: Deep Amber Loop [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40535,  {	-- Raising the Drogbar
@@ -1007,7 +694,7 @@ _.Zones =
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
 						["g"] = {
-							i(137800),	-- Dawnlight Band (Rank 1)
+							i(137800),	-- Dawnlight Band [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40561,  {	-- Halls of Valor: Jewel of the Heavens
@@ -1016,7 +703,7 @@ _.Zones =
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						["g"] = {
-							i(137799),	-- Maelstrom Band (Rank 1)
+							i(137799),	-- Maelstrom Band [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40560,  {	-- Maw of Souls: Spiriting Away
@@ -1025,7 +712,7 @@ _.Zones =
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 						["g"] = {
-							i(137798),	-- Prophetic Band (Rank 1)
+							i(137798),	-- Prophetic Band [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40562,  {	-- A Personal Touch
@@ -1109,7 +796,7 @@ _.Zones =
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							recipe(194702),	-- Warhide Jerkin (Rank 1)
+							recipe(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40179,  {	-- Stormheim Savagery
@@ -1117,8 +804,8 @@ _.Zones =
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							recipe(194696),	-- Warhide Belt (Rank 1)
-							recipe(194698),	-- Warhide Pants (Rank 1)
+							recipe(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
+							recipe(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40180,  {	-- Mail Men
@@ -1131,8 +818,8 @@ _.Zones =
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							recipe(194736),	-- Battlebound Girdle (Rank 1)
-							recipe(194738),	-- Battlebound Leggings (Rank 1)
+							recipe(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
+							recipe(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40182,  {	-- Too Good To Pass Up
@@ -1140,7 +827,7 @@ _.Zones =
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							recipe(194742),	-- Battlebound Hauberk (Rank 1)
+							recipe(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40176,  {	-- From Head to Toe
@@ -1166,7 +853,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							recipe(194697),	-- Recipe: Warhide Shoulderguard (Rank 1)
+							recipe(194697),	-- Recipe: Warhide Shoulderguard [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40186, {	-- Drogbar Durability
@@ -1174,8 +861,8 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							recipe(194700),	-- Recipe: Warhide Gloves (Rank 1)
-							recipe(194695),	-- Recipe: Warhide Bindings (Rank 1)
+							recipe(194700),	-- Recipe: Warhide Gloves [Rank 1] (RECIPE!)
+							recipe(194695),	-- Recipe: Warhide Bindings [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40187,  {	-- Links in the Chain
@@ -1188,8 +875,8 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							recipe(194735),	-- Battlebound Armbands (Rank 1)
-							recipe(194740),	-- Battlebound Grips (Rank 1)
+							recipe(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
+							recipe(194740),	-- Battlebound Grips [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40189, {	-- Naga Know-How
@@ -1197,7 +884,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
+							i(137902),	-- Recipe: Battlebound Spaulders [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40190,  {	-- Hardening the Hide
@@ -1214,7 +901,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137875),	-- Recipe: Warhide Jerkin (Rank 2)
+							i(137875),	-- Recipe: Warhide Jerkin [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40192, {	-- Claw of the Land
@@ -1222,8 +909,8 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137869),	-- Recipe: Warhide Belt (Rank 2)
-							i(137868),	-- Recipe: Warhide Bindings (Rank 2)
+							i(137869),	-- Recipe: Warhide Belt [Rank 2] (RECIPE!)
+							i(137868),	-- Recipe: Warhide Bindings [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40193,  {	-- Getting the Kinks Out
@@ -1237,8 +924,8 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
-							i(137901),	-- Recipe: Battlebound Girdle (Rank 2)
+							i(137900),	-- Recipe: Battlebound Armbands [Rank 2] (RECIPE!)
+							i(137901),	-- Recipe: Battlebound Girdle [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40195, {	-- A Daring Rescue
@@ -1251,7 +938,7 @@ _.Zones =
 						["provider"] = { "n", 99689 },	-- Taldranis
 						["coord"] = { 51.6, 58.0, AZSUNA },
 						["g"] = {
-							i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
+							i(137907),	-- Recipe: Battlebound Hauberk [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40198, {	-- Rats!
@@ -1262,8 +949,8 @@ _.Zones =
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137874),	-- Recipe: Warhide Footpads (Rank 2)
-							i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
+							i(137874),	-- Recipe: Warhide Footpads [Rank 2] (RECIPE!)
+							i(137870),	-- Recipe: Warhide Shoulderguard [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40199,  {	-- Leather Legwork
@@ -1271,8 +958,8 @@ _.Zones =
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 						["g"] = {
-							i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
-							i(137906),	-- Recipe: Battlebound Treads (Rank 2)
+							i(137902),	-- Recipe: Battlebound Spaulders [Rank 2] (RECIPE!)
+							i(137906),	-- Recipe: Battlebound Treads [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40202,  {	-- The Final Lessons
@@ -1285,7 +972,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137873),	-- Recipe: Warhide Gloves (Rank 2)
+							i(137873),	-- Recipe: Warhide Gloves [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40205, {	-- Respect for the Past
@@ -1293,7 +980,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137871),	-- Recipe: Warhide Pants (Rank 2)
+							i(137871),	-- Recipe: Warhide Pants [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40203, {	-- Strength of the Past
@@ -1301,7 +988,7 @@ _.Zones =
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["coord"] = { 36.8, 78.2, 750 },
 						["g"] = {
-							i(137872),	-- Recipe: Warhide Mask (Rank 2)
+							i(137872),	-- Recipe: Warhide Mask [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40415, {	-- Well Spent Time
@@ -1324,7 +1011,7 @@ _.Zones =
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["maps"] = { 713 },	-- Eye of Azshara
 						["g"] = {
-							i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
+							i(137904),	-- Recipe: Battlebound Warhelm [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40207, {	-- Scales of the Arcane
@@ -1332,7 +1019,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137905),	-- Recipe: Battlebound Grips (Rank 2)
+							i(137905),	-- Recipe: Battlebound Grips [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40209, {	-- Scales of the Earth
@@ -1340,7 +1027,7 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 						["coord"] = { 47.4, 44.2, AZSUNA },
 						["g"] = {
-							i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
+							i(137903),	-- Recipe: Battlebound Leggings [Rank 2] (RECIPE!)
 						},
 					}),
 					q(40210, {	-- Time Well Spent
@@ -1376,8 +1063,8 @@ _.Zones =
 						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 						["coord"] = { 26.6, 71.6, SURAMAR },
 						["g"] = {
-							i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
-							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
+							i(140636),	-- Pattern: Dreadleather Bindings [Rank 1] (RECIPE!)
+							i(140644),	-- Recipe: Gravenscale Armbands [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40215,  {	-- Mounting Made Easy
@@ -1483,7 +1170,7 @@ _.Zones =
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							recipe(185921),	-- Silkweave Pantaloons (Rank 1)
+							recipe(185921),	-- Silkweave Pantaloons [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38958, {	-- The Right Color
@@ -1491,7 +1178,7 @@ _.Zones =
 						["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							recipe(185924),	-- Silkweave Slippers (Rank 1)
+							recipe(185924),	-- Silkweave Slippers [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38959, {	-- Left Behind
@@ -1521,7 +1208,7 @@ _.Zones =
 							r(187058, {["u"]=15}),	-- Slikweave Hood Lining
 							r(187059, {["u"]=15}),	-- Slikweave Hood: Outer Layer
 							r(187060, {["u"]=15}),	-- Handcrafted Slikweave Hood
-							recipe(185922),	-- Silkweave Hood (Rank 1)
+							recipe(185922),	-- Silkweave Hood [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
@@ -1530,7 +1217,7 @@ _.Zones =
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["maps"] = { 713 },	-- Eye of Azshara
 						["g"] = {
-							recipe(185923),	-- Silkweave Gloves (Rank 1)
+							recipe(185923),	-- Silkweave Gloves [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38964, {	-- Where's Lyndras Now?
@@ -1569,10 +1256,10 @@ _.Zones =
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							recipe(185937),	-- Silkweave Pantaloons (Rank 2)
-							recipe(185938),	-- Silkweave Hood (Rank 2)
-							recipe(185939),	-- Silkweave Gloves (Rank 2)
-							recipe(185940),	-- Silkweave Slippers (Rank 2)
+							recipe(185937),	-- Silkweave Pantaloons [Rank 2] (RECIPE!)
+							recipe(185938),	-- Silkweave Hood [Rank 2] (RECIPE!)
+							recipe(185939),	-- Silkweave Gloves [Rank 2] (RECIPE!)
+							recipe(185940),	-- Silkweave Slippers [Rank 2] (RECIPE!)
 						},
 					}),
 					q(38962, {	-- The Path to Suramar City
@@ -1612,7 +1299,7 @@ _.Zones =
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["coord"] = { 26.6, 71.4, SURAMAR },
 						["g"] = {
-							r(185931),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
+							r(185931),	-- Pattern: Imbued Silkweave Gloves [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38974, {	-- Halls of Valor: The Right Question
@@ -1621,7 +1308,7 @@ _.Zones =
 						["coord"] = { 65.6, 56.2, STORMHEIM },
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 						["g"] = {
-							r(185929),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+							r(185929),	-- Pattern: Imbued Silkweave Pantaloons [Rank 1] (RECIPE!)
 						},
 					}),
 					q(38975, {	-- Inspire Me!
@@ -1629,7 +1316,7 @@ _.Zones =
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["coord"] = { 40.2, 69.6, SURAMAR },
 						["g"] = {
-							r(185933),	-- Pattern: Imbued Silkwave Robes (Rank 1)
+							r(185933),	-- Pattern: Imbued Silkwave Robes [Rank 1] (RECIPE!)
 						},
 					}),
 				}),
