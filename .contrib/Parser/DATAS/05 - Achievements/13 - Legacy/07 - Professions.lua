@@ -12,6 +12,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 				}),
 			}
 		}),
+		un(REMOVED_FROM_GAME, ach(135)),	-- Grand Master in First Aid
 		un(REMOVED_FROM_GAME, ach(10580, {	-- Heroic Skills to Pay the Bills(800)
 			crit(1),	-- Legion Fisherman
 			crit(2),	-- Legion Medic
@@ -36,9 +37,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 				crit(4),	-- Illustrious Grand Master Archaeologist
 			}),
 			ach(730, {	-- Skills to Pay the Bills (450)
-				crit(1),	-- Grand Master Fisherman
-				crit(2),	-- Grand Master First Aid
-				crit(3),	-- Grand Master Cook
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					130,	-- Grand Master Fisherman
+					135,	-- Grand Master in First Aid
+					125,	-- Grand Master Cook
+				}},
 			}),
 		})),
 		ach(10586, {	-- Mass Obliteration

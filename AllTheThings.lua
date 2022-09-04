@@ -3496,11 +3496,60 @@ local function Resolve_Extract(results, group, field)
 	end
 	return results;
 end
--- Pops the provided group, returning the results from the combined 'g' and 'sym' properties of the group
-local function Resolve_Pop(group)
-	-- insert raw & symlinked Things from this group
-	return ArrayAppend(nil, group.g, ResolveSymbolicLink(group));
-end
+
+
+-- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
+-- searchResults - the current set of searchResults when reaching the current sym command. this table MUST persist in state throughout execution as there is no return value utilized
+-- sym - the current symlink command being processed
+-- o - the specific group object which contains the symlink commands
+local ResolveFunctions = {
+	["select"] = function(searchResults, sym)
+		-- Instruction to search the full database for multiple of a given type
+		local field = sym[2];
+		local cache;
+		for i=3,#sym do
+			cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
+			if cache then
+				ArrayAppend(searchResults, cache);
+			else
+				print("Failed to select ", field, sym[i]);
+			end
+		end
+	end,
+	["fill"] = function(searchResults, sym, o)
+		-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+		local okey = o.key;
+		if okey then
+			local okeyval = o[okey];
+			if okeyval then
+				local cache = app.CleanSourceIgnoredGroups(app.SearchForField(okey, okeyval));
+				if cache then
+					for _,s in ipairs(cache) do
+						ArrayAppend(searchResults, s.g);
+					end
+				end
+			end
+		end
+	end,
+	["pop"] = function(searchResults)
+		-- Instruction to "pop" all of the group values up one level.
+		local orig = RawCloneData(searchResults);
+		wipe(searchResults);
+		for _,s in ipairs(orig) do
+			-- insert raw & symlinked Things from this group
+			ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+		end
+	end,
+	["extract"] = function(searchResults, sym)
+		-- Instruction to extract all nested results which contain a given field
+		local field = sym[2];
+		local extractSet = RawCloneData(searchResults);
+		wipe(searchResults);
+		for _,o in ipairs(extractSet) do
+			Resolve_Extract(searchResults, o, field);
+		end
+	end
+};
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
@@ -3512,22 +3561,26 @@ ResolveSymbolicLink = function(o)
 	if o and o.sym then
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
 		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, tremove;
-		local newModID;
+		local newModID, cmd, cmdFunc;
 		for j,sym in ipairs(o.sym) do
-			local cmd = sym[1];
+			cmd = sym[1];
+			cmdFunc = ResolveFunctions[cmd];
 			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
-			if cmd == "select" then
+			if cmdFunc then
+				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
+				cmdFunc(searchResults, sym, o);
+			-- elseif cmd == "select" then
 				-- Instruction to search the full database for multiple of a given type
-				local field = sym[2];
-				local cache;
-				for i=3,#sym do
-					cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
-					if cache then
-						ArrayAppend(searchResults, cache);
-					else
-						print("Failed to select ", field, sym[i]);
-					end
-				end
+				-- local field = sym[2];
+				-- local cache;
+				-- for i=3,#sym do
+				-- 	cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
+				-- 	if cache then
+				-- 		ArrayAppend(searchResults, cache);
+				-- 	else
+				-- 		print("Failed to select ", field, sym[i]);
+				-- 	end
+				-- end
 			elseif cmd == "selectparent" then
 				-- Instruction to select the parent object of the parent that owns the symbolic link.
 				local cache = sym[2];
@@ -3553,23 +3606,23 @@ ResolveSymbolicLink = function(o)
 						tinsert(searchResults, k);
 					end
 				end
-			elseif cmd == "fill" then
-				-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
-				if o.key and o[o.key] then
-					local cache = app.CleanSourceIgnoredGroups(app.SearchForField(o.key, o[o.key]));
-					if cache then
-						for _,s in ipairs(cache) do
-							ArrayAppend(searchResults, s.g);
-						end
-					end
-				end
-			elseif cmd == "pop" then
-				-- Instruction to "pop" all of the group values up one level.
-				local orig = searchResults;
-				searchResults = {};
-				for _,s in ipairs(orig) do
-					ArrayAppend(searchResults, Resolve_Pop(s));
-				end
+			-- elseif cmd == "fill" then
+			-- 	-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+			-- 	if o.key and o[o.key] then
+			-- 		local cache = app.CleanSourceIgnoredGroups(app.SearchForField(o.key, o[o.key]));
+			-- 		if cache then
+			-- 			for _,s in ipairs(cache) do
+			-- 				ArrayAppend(searchResults, s.g);
+			-- 			end
+			-- 		end
+			-- 	end
+			-- elseif cmd == "pop" then
+			-- 	-- Instruction to "pop" all of the group values up one level.
+			-- 	local orig = searchResults;
+			-- 	searchResults = {};
+			-- 	for _,s in ipairs(orig) do
+			-- 		ArrayAppend(searchResults, Resolve_Pop(s));
+			-- 	end
 			elseif cmd == "push" then
 				-- Instruction to "push" all of the group values into an object as specified
 				searchResults = { CreateObject({[sym[2]] = sym[3], g = searchResults }) };
@@ -3582,14 +3635,14 @@ ResolveSymbolicLink = function(o)
 						tremove(searchResults, k);
 					end
 				end
-			elseif cmd == "extract" then
-				-- Instruction to extract all nested results which contain a given field
-				local field = sym[2];
-				local results = {};
-				for _,o in ipairs(searchResults) do
-					Resolve_Extract(results, o, field);
-				end
-				searchResults = results;
+			-- elseif cmd == "extract" then
+			-- 	-- Instruction to extract all nested results which contain a given field
+			-- 	local field = sym[2];
+			-- 	local results = {};
+			-- 	for _,o in ipairs(searchResults) do
+			-- 		Resolve_Extract(results, o, field);
+			-- 	end
+			-- 	searchResults = results;
 			elseif cmd == "index" then
 				-- Instruction to include the search result with a given index within each of the selection's groups.
 				local index = sym[2];
@@ -8896,7 +8949,6 @@ local fields = {
 		end
 		return 0;
 	end,
-	["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
 	-- ["OnUpdate"] = function(t) ResolveSymbolicLink(t); end,
 };
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");

@@ -1175,7 +1175,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(28245, { -- Pendant of Dominance
 					["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 				}),
@@ -1183,7 +1183,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 				}),
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(28247, {	-- Band of Dominance
 					["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 				}),
@@ -1191,7 +1191,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 				}),
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				i(28235, { -- Medallion of the Alliance (A) (Druid)
 					["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 				}),
@@ -1939,7 +1939,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(33067, { -- Veteran's Pendant of Conquest
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
@@ -1956,7 +1956,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(33056, { -- Veteran's Band of Dominance
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
@@ -2667,7 +2667,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(33920, { -- Vindicator's Pendant of Conquest
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2687,7 +2687,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(33853, { -- Vindicator's Band of Dominance
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2701,7 +2701,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				applyclassicphase(TBC_PHASE_FOUR, i(35327, { -- Battlemaster's Alacrity
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				})),
@@ -3465,7 +3465,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
 				}),
 			}),
-			filter(51,	{	-- Neck
+			filter(NECK_F, {
 				i(35132, {	-- Guardian's Pendant of Conquest
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
@@ -3485,7 +3485,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
 			}),
-			filter(52,	{	-- Finger
+			filter(FINGER_F, {
 				i(35129, {	-- Guardian's Band of Dominance
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
@@ -3499,7 +3499,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
 			}),
-			filter(53,	{	-- Trinket
+			filter(TRINKET_F, {
 				i(41587, {	-- Battlemaster's Celerity
 					["timeline"] = { "added 3.0.2", "removed 4.0.3" },
 				}),
@@ -3575,7 +3575,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46657),	-- Merciless Gladiator's Satin Armor (Priest)
 		q(46658),	-- Merciless Gladiator's Scaled Armor (Paladin)
 		q(46659),	-- Merciless Gladiator's Silk Armor (Mage)
-		
+
 		-- PvP Arsenals
 		q(46630),	-- Gladiator's Arsenal
 		q(46640),	-- Brutal Gladiator's Arsenal

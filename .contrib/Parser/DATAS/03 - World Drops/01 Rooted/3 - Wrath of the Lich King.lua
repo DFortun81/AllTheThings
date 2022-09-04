@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
-	filter(3, {	-- Cloaks
+	filter(CLOAKS, {
 		i(36411),	-- Brawler's Cape
 		i(36410),	-- Caribou Skin Cloak
 		i(37797),	-- Cloak of the Agile Mind
@@ -21,7 +21,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36415),	-- Vintage Satin Cloak
 		i(37756),	-- Zoe's Comforting Cape
 	}),
-	filter(4, {	-- Cloth
+	filter(CLOTH, {
 		i(36019),	-- Aerie Belt
 		i(36020),	-- Aerie Boots
 		i(36026),	-- Aerie Bracers
@@ -135,7 +135,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(35995),	-- Voldrune Sash
 		i(35996),	-- Voldrune Slippers
 	}),
-	filter(5, {	-- Leather
+	filter(LEATHER, {
 		i(36106),	-- Caribou Bands
 		i(36100),	-- Caribou Boots
 		i(36104),	-- Caribou Britches
@@ -249,7 +249,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36136),	-- Wolverine Leggings
 		i(36137),	-- Wolverine Shoulderguards
 	}),
-	filter(6, {	-- Mail
+	filter(MAIL, {
 		i(36226),	-- Amberpine Bracers
 		i(36221),	-- Amberpine Chain Vest
 		i(36222),	-- Amberpine Gauntlets
@@ -363,7 +363,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36256),	-- Wolvar Legguards
 		i(36257),	-- Wolvar Shoulderguards
 	}),
-	filter(7, {	-- Plate
+	filter(PLATE, {
 		i(36309),	-- Baleheim Armor
 		i(36307),	-- Baleheim Belt
 		i(36313),	-- Baleheim Epaulets
@@ -861,7 +861,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(36472),	-- Carved Rod
 		i(37817),	-- Branch of Sinful Reprieve
 	}),
-	filter(51, {	-- Neck
+	filter(NECK_F, {
 		i(37823),	-- Draconic Choker of Ferocity
 		i(36435),	-- Embroidered Pendant
 		i(36437),	-- Figaro Chain
@@ -881,7 +881,7 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37794),	-- Torta's Oversized Choker
 		i(37748),	-- Winterfall's Frozen Necklace
 	}),
-	filter(52, {	-- Finger
+	filter(FINGER_F, {
 		i(36428),	-- Bouquet Ring
 		i(36424),	-- Cameo Ring
 		i(36421),	-- Devotional Band
@@ -903,10 +903,10 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37822),	-- Twisted Puzzle-Ring
 		i(37820),	-- Worgen's Ring of Revitalization
 	}),
-	filter(53, {	-- Trinket
+	filter(TRINKET_F, {
 		i(37835),	-- Je'Tze's Bell
 	}),
-	filter(50, {	-- Miscellaneous
+	filter(MISC, {
 		i(43297, {	-- Damaged Necklace (Quest Version)
 			["repeatable"] = true,
 			["questID"] = 13148,

@@ -100,8 +100,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			-- removed 'classes' since I've found no evidence this is restricted to Rogues...
 		}),
 		un(REMOVED_FROM_GAME, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
-		un(REMOVED_FROM_GAME, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
-		un(REMOVED_FROM_GAME, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
 		un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
 			un(REMOVED_FROM_GAME, ach(11563)),		-- The Second Rule of Brawler's Guild(Legion)
 			un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)

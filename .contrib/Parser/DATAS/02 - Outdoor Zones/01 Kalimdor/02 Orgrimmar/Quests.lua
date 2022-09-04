@@ -1121,7 +1121,7 @@ root("HiddenQuestTriggers", {
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	tier(CATA_TIER, {
 		n(ARMOR, {
-			f(51,	{	-- Neck
+			filter(NECK_F, {
 				i(49314),	-- Sparkling Onyxia Tooth Pendant
 				i(49312),	-- Purified Onyxia Blood Talisman
 			}),

@@ -7,10 +7,35 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
 		["isRaid"] = true,
-		["lvl"] = 80,
+		["lvl"] = lvlsquish(80, 80, 30),
 		["groups"] = {
+			-- #if AFTER 7.3.5.25727
 			n(ACHIEVEMENTS, {
+				ach(12401, {	-- Glory of the Ulduar Raider
+					["timeline"] = { "added 7.3.5.25727" },
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						12320,	-- Orbit-uary
+						12325,	-- Stokin' the Furnace
+						12322,	-- Iron Dwarf, Medium Rare
+						12330,	-- Heartbreaker
+						12334,	-- I Choose You, Steelbreaker
+						12338,	-- Disarmed
+						12341,	-- Crazy Cat Lady
+						12347,	-- I Could Say That This Cache Was Rare
+						12352,	-- Lose Your Illusion
+						12366,	-- Knock, Knock, Knock on Wood
+						12369,	-- Firefighter
+						12373,	-- I Love the Smell of Saronite in the Morning
+						12387,	-- One Light in the Darkness
+					}},
+					["groups"] = {
+						i(45802),	-- Rusted Proto-Drake (MOUNT!)
+						i(45801),	-- Ironbound Proto-Drake (MOUNT!)
+					},
+				}),
 				ach(12311, {	-- The Secrets of Ulduar
+					["timeline"] = { "added 7.3.5.25727" },
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						12297,	-- The Siege of Ulduar
@@ -20,53 +45,79 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					}},
 				}),
 				ach(12297, {	-- The Siege of Ulduar
-					crit(1, {	-- Flame Leviathan
-						["_npcs"] = { 33113 },
-					}),
-					crit(2, {	-- Razorscale
-						["_npcs"] = { 33186 },
-					}),
-					crit(3, {	-- Ignis the Furnace Master
-						["_npcs"] = { 33118 },
-					}),
-					crit(4, {	-- XT-002 Deconstructor
-						["_npcs"] = { 33293 },
-					}),
+					["timeline"] = { "added 7.3.5.25727" },
+					["groups"] = {
+						crit(1, {	-- Flame Leviathan
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33113 },
+						}),
+						crit(2, {	-- Razorscale
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33186 },
+						}),
+						crit(3, {	-- Ignis the Furnace Master
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33118 },
+						}),
+						crit(4, {	-- XT-002 Deconstructor
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33293 },
+						}),
+					},
 				}),
 				ach(12302, {	-- The Antechamber of Ulduar
-					crit(1, {	-- Assembly of Iron
-						["_npcs"] = { 32867 },
-					}),
-					crit(2, {	-- Kologarn
-						["_npcs"] = { 32930 },
-					}),
-					crit(3, {	-- Auriaya
-						["_npcs"] = { 33515 },
-					}),
+					["timeline"] = { "added 7.3.5.25727" },
+					["groups"] = {
+						crit(1, {	-- Assembly of Iron
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 32867 },
+						}),
+						crit(2, {	-- Kologarn
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 32930 },
+						}),
+						crit(3, {	-- Auriaya
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33515 },
+						}),
+					},
 				}),
 				ach(12309, {	-- The Keepers of Ulduar
-					crit(1, {	-- Hodir
-						["_npcs"] = { 32845 },
-					}),
-					crit(2, {	-- Thorim
-						["_npcs"] = { 32865 },
-					}),
-					crit(3, {	-- Freya
-						["_npcs"] = { 32906 },
-					}),
-					crit(4, {	-- Mimiron
-						["_npcs"] = { 33350 },
-					}),
+					["timeline"] = { "added 7.3.5.25727" },
+					["groups"] = {
+						crit(1, {	-- Hodir
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 32845 },
+						}),
+						crit(2, {	-- Thorim
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 32865 },
+						}),
+						crit(3, {	-- Freya
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 32906 },
+						}),
+						crit(4, {	-- Mimiron
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33350 },
+						}),
+					},
 				}),
 				ach(12310, {	-- The Descent into Madness
-					crit(1, {	-- General Vezax
-						["_npcs"] = { 33271 },
-					}),
-					crit(2, {	-- Yogg-Saron
-						["_npcs"] = { 33288 },
-					}),
+					["timeline"] = { "added 7.3.5.25727" },
+					["groups"] = {
+						crit(1, {	-- General Vezax
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33271 },
+						}),
+						crit(2, {	-- Yogg-Saron
+							["timeline"] = { "added 7.3.5.25727" },
+							["_npcs"] = { 33288 },
+						}),
+					},
 				}),
 			}),
+			-- #endif
 			n(LEGENDARY_QUESTLINE, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
@@ -101,6 +152,218 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							i(46017)	-- Val'anyr, Hammer of Ancient Kings
 						},
+					}),
+				},
+			}),
+			d(3, {	-- 10-Man
+				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					-- This is a temporary solution, file in progress!
+					n(ACHIEVEMENTS, {
+						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								3056,	-- Orbit-uary (10 player)
+								2930,	-- Stokin' the Furnace (10 player)
+								2923,	-- Iron Dwarf, Medium Rare (10 player)
+								3058,	-- Heartbreaker (10 player)
+								2941,	-- I Choose You, Steelbreaker (10 player)
+								2953,	-- Disarmed (10 player)
+								3006,	-- Crazy Cat Lady (10 player)
+								3182,	-- I Could Say That This Cache Was Rare (10 player)
+								3176,	-- Lose Your Illusion (10 player)
+								3179,	-- Knock, Knock, Knock on Wood (10 player)
+								3180,	-- Firefighter (10 player)
+								3181,	-- I Love the Smell of Saronite in the Morning (10 player)
+								3158,	-- One Light in the Darkness (10 player)
+							}},
+							["groups"] = {
+								i(45802),	-- Rusted Proto-Drake (MOUNT!)
+							},
+						}),
+						ach(2919),	-- A Quick Shave (10 player)
+						ach(3159, {	-- Alone in the Darkness (10 player)
+							ach(3158),	-- One Light in the Darkness (10 player)
+							ach(3141),	-- Two Lights in the Darkness (10 player)
+							ach(3157),	-- Three Lights in the Darkness (10 player)
+						}),
+						ach(2945),	-- But I'm On Your Side (10 player)
+						ach(2947),	-- Can't Do That While Stunned (10 player)
+						ach(2903, {	-- Champion of Ulduar
+							title(127),	-- , Champion of Ulduar
+						}),
+						ach(2961),	-- Cheese the Freeze (10 player)
+						ach(2980),	-- Con-speed-atory (10 player)
+						ach(3006),	-- Crazy Cat Lady (10 player)
+						ach(2985),	-- Deforestation (10 player)
+						ach(2953),	-- Disarmed (10 player)
+						ach(2971),	-- Don't Stand in the Lightning (10 player)
+						ach(3008),	-- Drive Me Crazy (10 player)
+						ach(3097),	-- Dwarfageddon (10 player)
+						ach(3180),	-- Firefighter (10 player)
+						ach(2982),	-- Getting Back to Nature (10 player)
+						ach(2967),	-- Getting Cold in Here (10 player)
+						ach(3012),	-- He's Not Getting Any Older (10 player)
+						ach(3058),	-- Heartbreaker (10 player)
+						ach(2927),	-- Hot Pocket (10 player)
+						ach(2939),	-- I Choose You, Runemaster Molgeim (10 player)
+						ach(2941),	-- I Choose You, Steelbreaker (10 player)
+						ach(2940),	-- I Choose You, Stormcaller Brundir (10 player)
+						ach(3182),	-- I Could Say That This Cache Was Rare (10 player)
+						ach(2963),	-- I Have the Coolest Friends (10 player)
+						ach(3181),	-- I Love the Smell of Saronite in the Morning (10 player)
+						ach(2973),	-- I'll Take You All On (10 player)
+						ach(2955),	-- If Looks Could Kill (10 player)
+						ach(3015),	-- In His House He Waits Dreaming (10 player)
+						ach(2923),	-- Iron Dwarf, Medium Rare (10 player)
+						ach(3009),	-- Kiss and Make Up (10 player)
+						ach(3179, {	-- Knock, Knock, Knock on Wood (10 player)
+							ach(3178),	-- Knock, Knock on Wood (10 player)
+							ach(3177),	-- Knock on Wood (10 player)
+						}),
+						ach(3176, {	-- Lose Your Illusion (10 player)
+							ach(2977),	-- Siffed (10 player)
+						}),
+						ach(2979),	-- Lumberjacked (10 player)
+						ach(2937),	-- Must Deconstruct Faster (10 player)
+						ach(2931),	-- Nerf Engineering (10 player)
+						ach(2934),	-- Nerf Gravity Bombs (10 player)
+						ach(2933),	-- Nerf Scrapbots (10 player)
+						ach(3076),	-- Nine Lives (10 player)
+						ach(3138),	-- Not-So-Friendly Fire (10 player)
+						ach(3036),	-- Observed (10 player)
+						ach(3056, {	-- Orbit-uary (10 player)
+							ach(2915),	-- Nuked from Orbit (10 player)
+							ach(2914),	-- Orbital Devastation (10 player)
+							ach(2913),	-- Orbital Bombardment (10 player)
+						}),
+						ach(2959),	-- Rubble and Roll (10 player)
+						ach(2989),	-- Set Up Us the Bomb (10 player)
+						ach(2996),	-- Shadowdodger (10 player)
+						ach(2925),	-- Shattered (10 player)
+						ach(2911),	-- Shutout (10 player)
+						ach(2969),	-- Staying Buffed All Winter (10 player)
+						ach(2930),	-- Stokin' the Furnace (10 player)
+						ach(3003),	-- Supermassive (10 player)
+						ach(2909),	-- Take Out Those Turrets (10 player)
+						ach(2888),	-- The Antechamber of Ulduar (10 player)
+						ach(2892),	-- The Descent into Madness (10 player)
+						ach(2890),	-- The Keepers of Ulduar (10 player)
+						ach(2894),	-- The Secrets of Ulduar (10 player)
+						ach(2886),	-- The Siege of Ulduar (10 player)
+						ach(3014),	-- They're Coming Out of the Walls (10 player)
+						ach(2907),	-- Three Car Garage (10 player)
+						ach(2905),	-- Unbroken (10 player)
+						ach(2975),	-- Who Needs Bloodlust? (10 player)
+						ach(2951),	-- With Open Arms (10 player)
+					}),
+				},
+			}),
+			d(4, {	-- 25-Man
+				["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+				["lvl"] = lvlsquish(80, 80, 30),
+				["groups"] = {
+					-- This is a temporary solution, file in progress!
+					n(ACHIEVEMENTS, {
+						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
+							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+							-- Meta Achievement
+							["sym"] = {{"meta_achievement",
+								3057,	-- Orbit-uary (25 player)
+								2929,	-- Stokin' the Furnace (25 player)
+								2924,	-- Iron Dwarf, Medium Rare (25 player)
+								3059,	-- Heartbreaker (25 player)
+								2944,	-- I Choose You, Steelbreaker (25 player)
+								2954,	-- Disarmed (25 player)
+								3007,	-- Crazy Cat Lady (25 player)
+								3184,	-- I Could Say That This Cache Was Rare (25 player)
+								3183,	-- Lose Your Illusion (25 player)
+								3187,	-- Knock, Knock, Knock on Wood (25 player)
+								3189,	-- Firefighter (25 player)
+								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
+								3163,	-- One Light in the Darkness (25 player)
+							}},
+							["groups"] = {
+								i(45801),	-- Ironbound Proto-Drake (MOUNT!)
+							},
+						}),
+						ach(2921),	-- A Quick Shave (25 player)
+						ach(3164, {	-- Alone in the Darkness (25 player)
+							ach(3163),	-- One Light in the Darkness (25 player)
+							ach(3162),	-- Two Lights in the Darkness (25 player)
+							ach(3161),	-- Three Lights in the Darkness (25 player)
+						}),
+						ach(2946),	-- But I'm On Your Side (25 player)
+						ach(2948),	-- Can't Do That While Stunned (25 player)
+						ach(2962),	-- Cheese the Freeze (25 player)
+						ach(2981),	-- Con-speed-atory (25 player)
+						ach(2904, {	-- Conqueror of Ulduar
+							title(126),	-- , Conqueror of Ulduar
+						}),
+						ach(3007),	-- Crazy Cat Lady (25 player)
+						ach(2984),	-- Deforestation (25 player)
+						ach(2954),	-- Disarmed (25 player)
+						ach(2972),	-- Don't Stand in the Lightning (25 player)
+						ach(3010),	-- Drive Me Crazy (25 player)
+						ach(3098),	-- Dwarfageddon (25 player)
+						ach(3189),	-- Firefighter (25 player)
+						ach(2983),	-- Getting Back to Nature (25 player)
+						ach(2968),	-- Getting Cold in Here (25 player)
+						ach(3013),	-- He's Not Getting Any Older (25 player)
+						ach(3059),	-- Heartbreaker (25 player)
+						ach(2928),	-- Hot Pocket (25 player)
+						ach(2942),	-- I Choose You, Runemaster Molgeim (25 player)
+						ach(2944),	-- I Choose You, Steelbreaker (25 player)
+						ach(2943),	-- I Choose You, Stormcaller Brundir (25 player)
+						ach(3184),	-- I Could Say That This Cache Was Rare (25 player)
+						ach(2965),	-- I Have the Coolest Friends (25 player)
+						ach(3188),	-- I Love the Smell of Saronite in the Morning (25 player)
+						ach(2974),	-- I'll Take You All On (25 player)
+						ach(2956),	-- If Looks Could Kill (25 player)
+						ach(3016),	-- In His House He Waits Dreaming (25 player)
+						ach(2924),	-- Iron Dwarf, Medium Rare (25 player)
+						ach(3011),	-- Kiss and Make Up (25 player)
+						ach(3187, {	-- Knock, Knock, Knock on Wood (25 player)
+							ach(3186),	-- Knock, Knock on Wood (25 player)
+							ach(3185),	-- Knock on Wood (25 player)
+						}),
+						ach(3183, {	-- Lose Your Illusion (25 player)
+							ach(2978),	-- Siffed (25 player)
+						}),
+						ach(3118),	-- Lumberjacked (25 player)
+						ach(2938),	-- Must Deconstruct Faster (25 player)
+						ach(2932),	-- Nerf Engineering (25 player)
+						ach(2936),	-- Nerf Gravity Bombs (25 player)
+						ach(2935),	-- Nerf Scrapbots (25 player)
+						ach(3077),	-- Nine Lives (25 player)
+						ach(2995),	-- Not-So-Friendly Fire (25 player)
+						ach(3037),	-- Observed (25 player)
+						ach(3057, {	-- Orbit-uary (25 player)
+							ach(2917),	-- Nuked from Orbit (25 player)
+							ach(2916),	-- Orbital Devastation (25 player)
+							ach(2918),	-- Orbital Bombardment (25 player)
+						}),
+						ach(2960),	-- Rubble and Roll (25 player)
+						ach(3237),	-- Set Up Us the Bomb (25 player)
+						ach(2997),	-- Shadowdodger (25 player)
+						ach(2926),	-- Shattered (25 player)
+						ach(2912),	-- Shutout (25 player)
+						ach(2970),	-- Staying Buffed All Winter (25 player)
+						ach(2929),	-- Stokin' the Furnace (25 player)
+						ach(3002),	-- Supermassive (25 player)
+						ach(2910),	-- Take Out Those Turrets (25 player)
+						ach(2889),	-- The Antechamber of Ulduar (25 player)
+						ach(2893),	-- The Descent into Madness (25 player)
+						ach(2891),	-- The Keepers of Ulduar (25 player)
+						ach(2895),	-- The Secrets of Ulduar (25 player)
+						ach(2887),	-- The Siege of Ulduar (25 player)
+						ach(3017),	-- They're Coming Out of the Walls (25 player)
+						ach(2908),	-- Three Car Garage (25 player)
+						ach(2906),	-- Unbroken (25 player)
+						ach(2976),	-- Who Needs Bloodlust? (25 player)
+						ach(2952),	-- With Open Arms (25 player)
 					}),
 				},
 			}),

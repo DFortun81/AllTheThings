@@ -1301,6 +1301,7 @@ for key, value in pairs({
 	[195517] = "艾露恩的侍女像",	-- Elune's Handmaiden
 	[195600] = "燃烧之石",	-- Smouldering Stone
 	[195642] = "纳迦能量石",	-- Naga Power Stone
+	--TODO: [195665] = "Argent Crusade Tribute Chest",	-- Argent Crusade Tribute Chest
 	[195676] = "秘密实验室通话器",	-- Secret Lab Squakbox
 	[196393] = "损坏的圣物",	-- Broken Relic
 	[196832] = "上层占卜石",	-- Upper Scrying Stone	--TODO: This was manually translated

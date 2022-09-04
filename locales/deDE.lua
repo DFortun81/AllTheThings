@@ -1299,6 +1299,7 @@ for key,value in pairs({
 	[195517] = "Elunes Dienstmaid",	-- Elune's Handmaiden
 	[195600] = "Schwelender Stein",	-- Smouldering Stone
 	[195642] = "Kraftstein der Naga",	-- Naga Power Stone
+	--TODO: [195665] = "Argent Crusade Tribute Chest",	-- Argent Crusade Tribute Chest
 	[195676] = "Geheimer Laborquäkkasten",	-- Secret Lab Squakbox
 	[196393] = "Zerbrochenes Relikt",	-- Broken Relic
 	[196832] = "Oberer Seherstein",	-- Upper Scrying Stone

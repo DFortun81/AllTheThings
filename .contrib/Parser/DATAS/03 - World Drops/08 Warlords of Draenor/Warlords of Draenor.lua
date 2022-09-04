@@ -400,7 +400,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118894),	-- Toria's Perseverance
 			i(118829),	-- Treasure Hunter's Bandana
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(118847),	-- Amulet of Quel'Riq
 			i(116686),	-- Ancestral Amulet
 			i(116677),	-- Coldsinger Amulet
@@ -489,7 +489,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(118834),	-- Spiffy Chainmail Boots
 			i(118854),	-- Zor's Taboo Treads
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(116722),	-- Ancestral Ring
 			i(116695),	-- Coldsinger Ring
 			i(116704),	-- Evermourn Ring
@@ -504,7 +504,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(116713),	-- Sunsworn Ring
 			i(116707),	-- Zangarra Ring
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(118877),	-- Fizzlebang's Folly
 			i(118876),	-- Lucky Double-Sided Coin
 			i(118883),	-- Bronze Elekk Statue

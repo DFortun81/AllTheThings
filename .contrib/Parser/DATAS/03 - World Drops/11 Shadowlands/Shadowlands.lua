@@ -29,14 +29,14 @@ root("WorldDrops", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0.2" } }
 			i(184781),	-- Fate-Sewn Shawl
 			i(184782),	-- Gast's Cloak of Compression
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(184785),	-- Gaiazelle's Spiked Collar
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(184783),	-- Muirnne's Stormforged Signet
 			i(184784),	-- Punishing Loop
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(184807),	-- Relic of the First Ones
 		}),
 	}),

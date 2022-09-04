@@ -31,7 +31,7 @@ profession(FISHING, {
 			},
 		}),
 	}),
-	filter(57,   {	-- Fishing Poles
+	filter(FISHING_POLES, {
 		i(19970),	-- Arcanite Fishing Pole
 		i(45991),	-- Bone Fishing Pole
 		i(116826, {	-- Draenic Fishing Pole

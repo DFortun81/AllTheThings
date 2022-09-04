@@ -30,7 +30,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 				i(151013),	-- Ethereal Anchor
 			}),
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(168674, {	-- Abyssal Alchemist Stone
 				i(168757),	-- Recipe: Crushing Alchemist Stone
 			}),
@@ -63,7 +63,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 				i(153594),	-- Xiwyllag ATV (MOUNT!)
 			}),
 		}),
-		filter(114, {	-- Mount Equipment
+		filter(MOUNT_EQUIPMENT, {
 			i(168417),	-- Inflatable Mount Shoes
 		}),
 		filter(DAGGERS, {
@@ -405,7 +405,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		filter(BATTLE_PETS, {
 			i(165849),	-- Mechantula
 		}),
-		filter(55, {	-- Consumable
+		filter(CONSUMABLES, {
 			i(165738),	-- Makeshift Azerite Detector
 		}),
 		filter(TOYS, {
@@ -549,7 +549,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(INSCRIPTION, {
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 			i(162022, {	-- Glyph of the Dolphin
 				["questID"] = 62674,
 				["classes"] = { DRUID },
@@ -578,7 +578,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		sp(269065, {	-- Scroll of Unlocking
 			i(159825),	-- Scroll of Unlocking
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(278527, {	-- Darkmoon Card of War
 				sp(267087, {	-- Blockades Deck
 					i(159128),	-- Darkmoon Deck: Blockades
@@ -597,7 +597,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		sp(256236, {	-- Tome of the Quiet Mind
 			i(153647),	-- Tome of the Quiet Mind
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(169302),	-- Highborne Compendium of Mystical Bulwark
 			i(169328),	-- Highborne Compendium of Storms
 			i(169321),	-- Highborne Compendium of Sundering
@@ -615,7 +615,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 			i(170318),	-- Uncanny Combatant's Intuitive Staff
 			i(153638),	-- Viridium Staff of Alacrity
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
 			i(168703),	-- Ascended Leviathan's Eye Loop
 			i(171076, {	-- Awakened Leviathan's Eye Loop
@@ -647,7 +647,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(114, {	-- Mount Equipment
+		filter(MOUNT_EQUIPMENT, {
 			i(168419),	-- Comfortable Rider's Barding
 		}),
 		filter(BOWS, {
@@ -662,7 +662,7 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 			i(170362),	-- Uncanny Combatant's Bow [Alliance]
 			i(170363),	-- Uncanny Combatant's Bow [Horde]
 		}),
-		filter(55, {	-- Consumable
+		filter(CONSUMABLES, {
 			i(154167),	-- Drums of the Maelstrom
 		}),
 		filter(FIST_WEAPONS, {
@@ -945,10 +945,10 @@ root("Craftables", tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(TAILORING, {
-		filter(114, {	-- Mount Equipment
+		filter(MOUNT_EQUIPMENT, {
 			i(168427),	-- Saddlechute
 		}),
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
 		}),

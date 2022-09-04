@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
-	filter(3, {	-- Cloaks
+	filter(CLOAKS, {
 		i(25043),	-- Amber Cape
 		i(25041),	-- Ambusher's Cloak
 		i(25036),	-- Boulderfist Cloak
@@ -22,7 +22,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(25035),	-- Silver-Lined Cloak
 		i(25031),	-- Silvermoon Royal Cloak
 	}),
-	filter(4, {	-- Cloth
+	filter(CLOTH, {
 		i(31230),	-- Abyss Walker's Boots
 		i(24677),	-- Archmage Belt
 		i(24684),	-- Archmage Bracelets
@@ -147,7 +147,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24615),	-- Vindicator Tunic
 		i(31340),	-- Will of Edward the Odd
 	}),
-	filter(5, {	-- Leather
+	filter(LEATHER, {
 		i(31175),	-- Blade Dancer's Wristguards
 		i(24700),	-- Bonechewer Bands
 		i(24695),	-- Bonechewer Chestpiece
@@ -280,7 +280,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24714),	-- Vengeance Legguards
 		i(24715),	-- Vengeance Pauldrons
 	}),
-	filter(6, {	-- Mail
+	filter(MAIL, {
 		i(31173),	-- Boots of Savagery
 		i(31187),	-- Boots of the Pathfinder
 		i(24863),	-- Blood Knight Boots
@@ -406,7 +406,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(24844),	-- Wrathfin Mantle
 		i(24838),	-- Wrathfin Waistband
 	}),
-	filter(7, {	-- Plate
+	filter(PLATE, {
 		i(24926),	-- Ango'rosh Belt
 		i(24928),	-- Ango'rosh Breastplate
 		i(24929),	-- Ango'rosh Gauntlets
@@ -831,7 +831,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(25286),	-- Yew Wand
 		}),
 		-- #if BEFORE MOP
-		filter(36, {	-- Thrown
+		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
 				["timeline"] = { "removed 5.0.4.10000", },
 			}),
@@ -912,7 +912,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(25089),	-- Supplicant's Rod
 		i(25098),	-- Tuurik Torch
 	}),
-	filter(51, {	-- Neck
+	filter(NECK_F, {
 		i(25064),	-- Amethyst Pendant
 		i(31196),	-- Amulet of Sanctification
 		i(31178),	-- Amulet of Unstable Power
@@ -934,7 +934,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(25065),	-- Turquoise Brooch
 		i(25062),	-- Zircon Amulet
 	}),
-	filter(52, {	-- Finger
+	filter(FINGER_F, {
 		i(25055),	-- Alexandrite Ring
 		i(25056),	-- Almandine Ring
 		i(25057),	-- Amber Band
@@ -956,7 +956,7 @@ root("WorldDrops", applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		i(25047),	-- Tourmaline Loop
 		i(31326),	-- Truestrike Ring
 	}),
-	filter(50, {	-- Miscellaneous
+	filter(MISC, {
 		i(29739),	-- Arcane Tome
 		i(29740),	-- Fel Armament
 		i(29426),	-- Firewing Signet [The Scryers]

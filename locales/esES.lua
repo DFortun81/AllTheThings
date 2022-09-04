@@ -1302,6 +1302,7 @@ for key,value in pairs({
 	[195517] = "Fámulas de Elune",	-- Elune's Handmaiden
 	[195600] = "Piedra ardiente",	-- Smouldering Stone
 	[195642] = "Piedra de energía naga",	-- Naga Power Stone
+	--TODO: [195665] = "Argent Crusade Tribute Chest",	-- Argent Crusade Tribute Chest
 	[195676] = "Graznófono del Laboratorio Secreto",	-- Secret Lab Squakbox
 	[196393] = "Reliquia rota",	-- Broken Relic
 	[196832] = "Piedra de visión alta",	-- Upper Scrying Stone

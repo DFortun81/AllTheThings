@@ -177,14 +177,14 @@ root("GroupFinder", n(-10, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, {	--
 			filter(CLOAKS, {
 				i(173671),	-- Travel-Worn Shawl
 			}),
-			filter(51, {	-- Neck
+			filter(NECK_F, {
 				i(173670),	-- Woven Silver Pendant
 			}),
-			filter(52, {	-- Finger
+			filter(FINGER_F, {
 				i(173668),	-- Dingy Golden Band
 				i(173669),	-- Dull Onyx Band
 			}),
-			filter(53, {	-- Trinket
+			filter(TRINKET_F, {
 				i(173667),	-- Burnished Charm
 				i(173666),	-- Lacquered Carving
 			}),

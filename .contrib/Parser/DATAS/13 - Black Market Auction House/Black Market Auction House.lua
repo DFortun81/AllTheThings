@@ -40,7 +40,7 @@ root("BlackMarket", {
 	})),
 });
 root("BlackMarket", bubbleDown({ ["u"] = BLACK_MARKET, },{
-	filter(113, {	-- Bags
+	filter(BAGS, {
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 	}),
 	filter(ILLUSIONS, {

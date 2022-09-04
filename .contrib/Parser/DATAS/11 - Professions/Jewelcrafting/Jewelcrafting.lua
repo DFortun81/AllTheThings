@@ -1,7 +1,7 @@
 local REMOVED_WITH_CATA = "removed 4.0.1.10000";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	tier(CLASSIC_TIER, {
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			{
 				["name"] = "Aquamarine Signet",
 				["recipeID"] = 26874
@@ -139,7 +139,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 26925
 			}
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			{
 				["name"] = "Amulet of the Moon",
 				["recipeID"] = 25339
@@ -246,7 +246,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["recipeID"] = 26878
 			}
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			{
 				["name"] = "Figurine - Black Diamond Crab",
 				["recipeID"] = 26912

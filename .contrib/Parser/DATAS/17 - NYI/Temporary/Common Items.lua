@@ -1396,7 +1396,7 @@ local f = root("CommonQualityItems", {
 			i(2584),	-- Woolen Cape
 			i(53398),	-- Zen'Taji's Cloak
 		}),
-		--filter(SHIRTS, {	
+		--filter(SHIRTS, {
 		--}),
 		filter(TABARDS, {
 			i(168100),	-- Alliance Tabard
@@ -1556,7 +1556,7 @@ local f = root("CommonQualityItems", {
 			i(34086),	-- Winter Boots
 			i(156726),	-- Yellow Crystal Monocle
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(16787),	-- Amulet of Draconic Subversion
 			i(27941),	-- Compassionate Critter's Friend
 			i(69863),	-- Golden Necklace
@@ -1573,7 +1573,7 @@ local f = root("CommonQualityItems", {
 			i(27979),	-- Stone of Stupendous Springing Strides
 			i(27944),	-- Talisman of True Treasure Tracking
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(71037),	-- Black Diamond Ring
 			i(69262),	-- Black Ice
 			i(7341),	-- Cubic Zirconia Ring
@@ -1592,7 +1592,7 @@ local f = root("CommonQualityItems", {
 			i(7337),	-- The Rock
 			i(180214),	-- Venthyr Ring
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(12846),	-- Argent Dawn Commission
 			i(10725),	-- Gnomish Battle Chicken
 			i(10645),	-- Gnomish Death Ray

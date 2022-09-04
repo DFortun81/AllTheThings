@@ -1478,7 +1478,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["g"] = {
 						i(133795, {	-- Ravenous Fly
-							["description"] = "You must be in c|ffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
+							["description"] = "You must be in |cffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
 							["g"] = {
 								i(133742),	-- Ancient Black Barracuda
 								i(139669),	-- Ancient Black Barracuda [AP]
@@ -1538,7 +1538,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["g"] = {
 						i(133722, {	-- Axefish Lure
-							["description"] = "You must be in c|ffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
+							["description"] = "You must be in |cffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
 							["g"] = {
 								i(133740),	-- Axefish
 								i(139667),	-- Axefish [AP]
@@ -1627,7 +1627,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					},
 				}),
 				i(133723, {	-- Stunned, Angry Shark
-					["description"] = "This item will spawn a Landlocked Shark, which will drop 7-9 Seabottom Squid when killed.  Note that this item only has a 1-minute duration in your bags, and it will disappear if you don't use it by then!\n\nYou must be in c|ffffffffThe Great Sea|r to catch this.",
+					["description"] = "This item will spawn a Landlocked Shark, which will drop 7-9 Seabottom Squid when killed.  Note that this item only has a 1-minute duration in your bags, and it will disappear if you don't use it by then!\n\nYou must be in |cffffffffThe Great Sea|r to catch this.",
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["g"] = {
 						n(102359, {	-- Landlocked Shark

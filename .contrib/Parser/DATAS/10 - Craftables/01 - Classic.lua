@@ -810,7 +810,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(38816),	-- Enchant Shield - Versatility / WRATH: Enchant Shield - Spirit
 			i(38860),	-- Enchant Shield - Vitality / WRATH: Enchant Shield - Superior Spirit
 		})),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
 		filter(WANDS, {
@@ -1154,7 +1154,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 				-- #endif
 			}),
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(8350, {	-- The 1 Ring
 				["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
 			}),
@@ -1301,7 +1301,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			r(58320, {["timeline"]={"added 3.1.0"}}),	-- Glyph of Shackle Undead
 		}),
 		-- #endif
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 
 
 
@@ -1328,7 +1328,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(43342, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
 			i(43371, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Fortitude / Glyph of Borrowed Time[MOP+]
 			i(43379, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Blurred Speed
-			r(58326, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Pocket
+			i(43343, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Pick Pocket
 			-- #if BEFORE WOD
 			i(43390, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 			-- #endif
@@ -1571,7 +1571,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 	-- #endif
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(20964),	-- Aquamarine Signet
 			i(20958),	-- Blazing Citrine Ring
 			i(20906),	-- Braided Copper Ring
@@ -1607,7 +1607,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(20833),	-- Wicked Moonstone Ring
 			i(21931),	-- Woven Copper Ring
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(20830),	-- Amulet of the Moon
 			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
 				["timeline"] = { "added 3.1.0.9614" },
@@ -1640,7 +1640,7 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(21784),	-- Figurine - Black Diamond Crab
 			i(21758),	-- Figurine - Black Pearl Panther
 			i(21789),	-- Figurine - Dark Iron Scorpid

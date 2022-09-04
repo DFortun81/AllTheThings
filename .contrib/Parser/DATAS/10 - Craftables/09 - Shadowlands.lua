@@ -8,7 +8,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(171323, {	-- Spiritual Alchemy Stone
 				["collectible"] = false,
 			}),
@@ -191,7 +191,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 		filter(BATTLE_PETS, {
 			i(180208),	-- PHA7-YNX
 		}),
-		filter(55, {	-- Consumable
+		filter(CONSUMABLES, {
 			i(172921),	-- Infra-green Reflex Sight
 		}),
 		n(HEAD, {
@@ -225,7 +225,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 		}),
 	}),
 	prof(INSCRIPTION, {
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 			i(187884, {	-- Mark of the Twilight Runestag
 				["questID"] = 64986,
 				["classes"] = { DRUID },
@@ -261,7 +261,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 			i(173428),	-- Soul Keeper's Column
 			i(173054),	-- Soul Keeper's Spire
 		}),
-		filter(56, sharedData({["crs"] = {	-- Reagents
+		filter(REAGENTS, sharedData({["crs"] = {
 			-- Various Ink Traders
 			66685,	-- Danky
 			164736,	-- Distributor Au'bic
@@ -346,7 +346,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
 			}),
 		})),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(324035, {	-- Darkmoon Card of Voracity
 				i(173087),	-- Darkmoon Deck: Voracity
 			}),
@@ -371,7 +371,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 		n(HEAD, {
 			i(180760),	-- Crown of the Righteous
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(178927),	-- Shadowghast Necklace
 			i(173144),	-- Versatile Solenium Necklace
 			i(173147),	-- Deadly Sinvyr Necklace
@@ -382,7 +382,7 @@ root("Craftables", tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubble
 			i(173143),	-- Deadly Laestrite Choker
 			i(173140),	-- Versatile Laestrite Choker
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(178926),	-- Shadowghast Ring
 			i(173131),	-- Versatile Solenium Ring
 			i(173134),	-- Deadly Sinvyr Ring

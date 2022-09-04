@@ -1298,6 +1298,7 @@ for key,value in pairs({
 	[195517] = "엘룬의 시녀",	-- Elune's Handmaiden
 	[195600] = "연기나는 돌",	-- Smouldering Stone
 	[195642] = "나가 마법석",	-- Naga Power Stone
+	--TODO: [195665] = "Argent Crusade Tribute Chest",	-- Argent Crusade Tribute Chest
 	[195676] = "비밀 실험실 내선 통화기",	-- Secret Lab Squakbox
 	[196393] = "부서진 유물",	-- Broken Relic
 	[196832] = "위쪽 수정점 구슬",	-- Upper Scrying Stone

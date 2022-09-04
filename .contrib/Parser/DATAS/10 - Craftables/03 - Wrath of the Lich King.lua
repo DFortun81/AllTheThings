@@ -3,7 +3,7 @@
 ---------------------------------------------
 root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 	prof(ALCHEMY, {
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(44323),	-- Indestructible Alchemist Stone
 			i(44322),	-- Mercurial Alchemist Stone
 			i(44324),	-- Mighty Alchemist Stone
@@ -314,7 +314,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(40768),	-- MOLL-E (TOY!)
 			i(48933),	-- Wormhole Generator: Northrend (TOY!)
 		}),
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(41146),	-- Sun Scope
 			i(41167),	-- Heartseeker Scope
 		}),
@@ -343,12 +343,12 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(40865),	-- Noise Machine*
 			i(40767),	-- Sonic Booster*
 		}),
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(23775),	-- Titanium Toolbox*
 		}),
 	}),
 	prof(INSCRIPTION, {
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 			-- #if AFTER WOD
 			i(42736, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Explosion
 			i(42898, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
@@ -361,7 +361,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			}),
 			-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(59504, {	-- Darkmoon Card of the North
 				i(44260, {["f"] = 55}),    -- Ace of Prisms
 				i(44261, {["f"] = 55}),    -- 2 of Prisms
@@ -421,7 +421,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(42339),	-- Blood Sun Necklace
 			i(43245),	-- Crystal Chalcedony Amulet
 			i(43244),	-- Crystal Citrine Necklace
@@ -432,7 +432,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(42645),	-- Titanium Impact Choker
 			i(42647),	-- Titanium Spellshock Necklace
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(42336),	-- Bloodstone Band
 			i(42340),	-- Dream Signet
 			i(43246),	-- Earthshadow Ring
@@ -453,7 +453,7 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 			i(42644),	-- Titanium Spellshock Ring
 			i(43252),	-- Windfire Band
 		}),
-		filter(53, {	-- Trinket
+		filter(TRINKET_F, {
 			i(42418),	-- Figurine - Emerald Boar
 			i(44063),	-- Figurine - Monarch Crab
 			i(42341),	-- Figurine - Ruby Hare
@@ -462,14 +462,14 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(38347),			-- Mammoth Mining Bag
 			i(38399),			-- Trapper's Traveling Pack
 			i(44446),			-- Pack of Endless Pockets
 			un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
 			un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
 		}),
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(38371),	-- Jormungar Leg Armor
 			i(38372),	-- Nerubian Leg Armor
 			i(38376),	-- Heavy Borean Armor Kit
@@ -623,14 +623,14 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(41597),	-- Abyssal Bag
 			i(45773),	-- Emerald Bag
 			i(41599),	-- Frostweave Bag
 			i(41600),	-- Glacial Bag
 			i(41598),	-- Mysterious Bag
 		}),
-		f(55, {		-- Consumables
+		filter(CONSUMABLES, {
 			i(41601),	-- Shining Spellthread
 			i(41602),	-- Brilliant Spellthread
 			i(41603),	-- Azure Spellthread

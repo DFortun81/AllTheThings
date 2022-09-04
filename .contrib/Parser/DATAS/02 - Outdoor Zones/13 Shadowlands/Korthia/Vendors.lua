@@ -316,13 +316,13 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 								i(185883),	-- Vault Guardian's Vambraces
 								i(186748),	-- Vault Guardian's Visor*
 							}),
-							f(52,   {	-- Finger
+							filter(FINGER_F, {
 								i(185894),	-- Attendant's Loop*
 								i(185941),	-- Korthian Scholar's Signet*
 								i(185895),	-- Lost Wayfarer's Band*
 								i(185903),	-- Soul-Seeker's Ring*
 							}),
-							f(53,   {	-- Trinkets
+							filter(TRINKET_F, {
 								i(186976),	-- Fine Razorwing Quill
 								i(186155),	-- Harmonic Crowd Breaker
 								i(186156),	-- Tome of Insight

@@ -138,7 +138,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 				i(139395),	-- Reverbium-Flecked Legplates
 			}),
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(151607),	-- Astral Alchemist Stone
 			i(127842),	-- Infernal Alchemist Stone
 		}),
@@ -147,7 +147,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 		filter(MOUNTS, {
 			i(137686),	-- Steelbound Devourer (MOUNT!)
 		}),
-		filter(54, {	-- Relics
+		filter(RELICS, {
 			i(136685),	-- Consecrated Spike
 			i(136686),	-- Flamespike
 			i(136684),	-- Gleaming Iron Spike
@@ -268,7 +268,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 			i(132501),	-- Tactical Headgun*
 			i(144331),	-- Tailored Skullblasters*
 		}),
-		filter(54, {	-- Relics
+		filter(RELICS, {
 			i(136687),	-- "The Felic"*
 			i(136688),	-- Shockinator*
 		}),
@@ -317,7 +317,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 		},
 	}),
 	prof(INSCRIPTION, {
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 			i(140630, {	-- Glyph of the Doe
 				["questID"] = 62678,
 				["classes"] = { DRUID },
@@ -331,7 +331,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 				["classes"] = { DRUID },
 			}),
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
 				sp(191654, {	-- Dominion Deck
 					i(128705),	-- Darkmoon Deck: Dominion
@@ -353,10 +353,10 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 		filter(TOYS, {
 			i(129211),	-- Steamy Romance Novel Kit (TOY!)
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(128978),	-- Prophecy Tarot
 		}),
-		filter(54, {	-- Relics
+		filter(RELICS, {
 			i(136692),	-- Aqual Mark
 			i(136693),	-- Straszan Mark
 		}),
@@ -395,7 +395,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 			i(151589),	-- Empyrial Elemental Crown
 			i(151590),	-- Empyrial Titan Crown
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(130241),	-- Ancient Maelstrom Amulet
 			i(130228),	-- Azsunite Pendant
 			i(130234),	-- Blessed Dawnlight Medallion
@@ -413,7 +413,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 			i(130235),	-- Twisted Pandemonite Choker
 			i(130238),	-- Vindictive Pandemonite Choker
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(130225),	-- Azsunite Loop
 			i(130231),	-- Dawnlight Band
 			i(130223),	-- Deep Amber Loop
@@ -512,7 +512,7 @@ root("Craftables", tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleD
 		}),
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(142075),	-- Imbued Silkweave Bag
 			i(127035),	-- Silkweave Satchel
 		}),

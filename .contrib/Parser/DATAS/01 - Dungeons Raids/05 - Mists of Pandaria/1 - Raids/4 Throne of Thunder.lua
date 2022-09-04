@@ -2144,7 +2144,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(96366), -- Legguards of the Last Mogu
 				i(96367), -- Shoulderguards of the Last Mogu
 			}),
-			f(55, {	-- Consumables
+			filter(CONSUMABLES, {
 				i(96194),	-- Chest of the Crackling Vanquisher
 				i(96195),	-- Chest of the Crackling Conqueror
 				i(96196),	-- Chest of the Crackling Protector

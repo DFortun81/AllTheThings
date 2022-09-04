@@ -42,7 +42,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			},
 		}),
 ]]--
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(75274),	-- Zen Alchemist Stone
 		}),
 	}),
@@ -458,7 +458,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			-- Trinkets
 			i(77530),	-- Ghost Iron Dragonling*
 		}),
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(92747),	-- Advanced Refrigeration Unit*
 		}),
 		i(89991, {  -- Pandaria Fireworks
@@ -475,7 +475,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			r(64258, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 		}),
 		-- #endif
-		filter(111, {	-- Glyphs
+		filter(GLYPHS, {
 		-- #if AFTER WOD
 			i(43350, {["timeline"]={"added 3.0.2"}}),	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
 			i(43359, {["timeline"]={"added 3.0.2","removed 7.0.3"}}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
@@ -486,7 +486,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(45622, {["timeline"]={"added 3.1.0","removed 7.0.3"}}),	-- Glyph of Monsoon / Glyph of Cyclone[MOP+]
 			-- #endif
 		}),
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
 				i(79299, {["f"] = 55}),    -- Ace of Crane
 				i(79300, {["f"] = 55}),    -- 2 of Crane
@@ -539,7 +539,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(89368),	-- Chi-Ji Kite
 			i(89367),	-- Yu'lon Kite
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(102483),	-- Crafted Malevolent Gladiator's Medallion of Tenacity
 		}),
 		filter(HELD_IN_OFF_HAND, {
@@ -577,7 +577,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(82774),	-- Jade Owl
 			i(82775),	-- Sapphire Cub
 		}),
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(83803),	-- Golembreaker Amulet
 			i(83802),	-- Reflection of the Sea
 			i(83794),	-- Shadowfire Necklace
@@ -586,7 +586,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 			i(83806),	-- Tiger Opal Pendant
 			i(83804),	-- Widow Chain
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(83801),	-- Band of Blood
 			i(83796),	-- Heart of the Earth
 			i(83800),	-- Lionsfall Ring
@@ -862,7 +862,7 @@ root("Craftables", tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDownSel
 				i(90902),	-- Imperial Silkworm
 			}),
 		}),
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(82446),	-- Royal Satchel
 		}),
 		n(CHEST, {

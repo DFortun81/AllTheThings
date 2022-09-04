@@ -67,7 +67,7 @@ end
 
 root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
 	prof(ALCHEMY, {
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
 			i(122601),	-- Stone of Wind
 			i(122602),	-- Stone of the Earth
@@ -196,7 +196,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(INSCRIPTION, {
-		n(-491, {	-- Tarot Cards
+		category(106, {	-- Tarot Cards
 			sp(163294, {	-- Darkmoon Card of Draenor
 				i(112303, {	-- Iron Deck
 					WOD_CRAFTED_ITEM(112319),	-- Knight's Badge
@@ -215,7 +215,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		sp(227561, {	-- Tome of the Clear Mind
 			i(141640),	-- Tome of the Clear Mind
 		}),
-		filter(53, {	-- Trinkets
+		filter(TRINKET_F, {
 			i(118602),	-- Laughing Tarot
 			i(118601),	-- Ocean Tarot
 			i(118603),	-- Savage Tarot
@@ -246,7 +246,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		filter(51, {	-- Neck
+		filter(NECK_F, {
 			i(115990),					-- Glowing Iron Choker
 			WOD_CRAFTED_ITEM(115799),	-- Glowing Taladite Pendant
 			i(115991),					-- Shifting Iron Choker
@@ -254,7 +254,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 			i(115992),					-- Whispering Iron Choker
 			WOD_CRAFTED_ITEM(115801),	-- Whispering Taladite Pendant
 		}),
-		filter(52, {	-- Finger
+		filter(FINGER_F, {
 			i(115993),					-- Glowing Blackrock Band
 			i(115987),					-- Glowing Iron Band
 			WOD_CRAFTED_ITEM(115794),	-- Glowing Taladite Ring
@@ -267,7 +267,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(116261),	-- Burnished Inscription Bag
 			i(116259),	-- Burnished Leather Bag
 			i(116260),	-- Burnished Mining Bag
@@ -308,7 +308,7 @@ root("Craftables", tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSel
 		}),
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		filter(BAGS, {
 			i(114821),	-- Hexweave Bag
 		}),
 		n(BACK, {
