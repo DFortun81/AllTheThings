@@ -229,7 +229,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["groups"] = {
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5,			-- Sjonnir The Ironshaper slain
+								["criteriaID"] = 5615,			-- Sjonnir The Ironshaper slain
 							},
 							ach(2155),	-- Abuse the Ooze
 							i(37667),	-- The Fleshshaper

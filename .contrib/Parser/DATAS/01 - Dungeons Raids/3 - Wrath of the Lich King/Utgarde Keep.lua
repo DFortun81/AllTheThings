@@ -307,7 +307,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["groups"] = {
 							{	-- Champion of the Frozen Wastes
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 10,		-- Ingvar the Plunderer slain
+								["criteriaID"] = 5608,		-- Ingvar the Plunderer slain
 							},
 							i(41793),	-- Design: Fierce Monarch Topaz
 							i(37190),	-- Enraged Feral Staff

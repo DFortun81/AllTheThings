@@ -3,10 +3,14 @@
 -----------------------------------------------------
 root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(275, {	-- Halls of Lightning
-		["lore"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",
+		["lore"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",
+		-- #if NOT ANYCLASSIC
+		["description"] = "|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",
+		-- #endif
 		["mapID"] = HALLS_OF_LIGHTNING,
+		["coord"] = { 38.0, 14.7, THE_STORM_PEAKS },
 		["maps"] = { 139 },
-		["lvl"] = 65,
+		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(486, {	-- Halls of Lightning
