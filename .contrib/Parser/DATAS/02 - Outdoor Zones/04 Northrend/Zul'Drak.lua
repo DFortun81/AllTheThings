@@ -400,26 +400,6 @@ root("Zones", {
 						["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 						["sourceQuest"] = 12677,	-- Hazardous Materials
 					}),
-					q(13098, {	-- For Posterity
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 30676,	-- Chronicler Bah'Kini
-						["groups"] = {
-							i(43177),	-- Voodoo Signet
-							i(43178),	-- Ring of Foul Mojo
-							i(43179),	-- Solid Platinum Band
-							i(43180),	-- Lion's Head Ring
-						},
-					}),
-					q(13096, {	-- Gal'darah Must Pay
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 30671,	-- Tol'mar
-						["groups"] = {
-							i(43164),	-- Sly Mojo Sash
-							i(43165),	-- Strange Voodoo Belt
-							i(43167),	-- Ranger's Belt of the Fallen Empire
-							i(43168),	-- Clasp of the Fallen Demi-God
-						},
-					}),
 					q(12527, {	-- Gluttonous Lurkers
 						["coord"] = { 41.3, 65.1, ZULDRAK },
 						["qg"] = 28204,	-- Apprentice Pestlepot
@@ -572,17 +552,6 @@ root("Zones", {
 						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12674,	-- Hell Hath a Fury
-					}),
-					q(13111, {	-- One of a Kind
-						["u"] = REMOVED_FROM_GAME,
-						["qg"] = 30676,	-- Chronicler Bah'Kini
-						["groups"] = {
-							i(43171),	-- Fur-Lined Moccasins
-							i(43172),	-- Rhino Hide Kneeboots
-							i(43173),	-- Scaled Boots of Fallen Hope
-							i(43176),	-- Slippers of the Mojo Dojo
-							i(43174),	-- Trollkickers
-						},
 					}),
 					q(12883, {	-- Orders From Drakuru
 						["coord"] = { 34.9, 83.9, ZULDRAK },
