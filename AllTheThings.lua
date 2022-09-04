@@ -9976,6 +9976,11 @@ local StandingByID = {
 		["threshold"] = 42000,
 	},
 };
+StandingByID[0] =
+{	-- 0: No Standing (Not in a Guild)
+	["color"] = "00404040",
+	["threshold"] = -99999,
+};
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
 	if name then
