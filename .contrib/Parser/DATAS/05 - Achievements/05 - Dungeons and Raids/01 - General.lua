@@ -25,50 +25,41 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(8),		-- Heroic: Deadmines
 			crit(9),		-- Heroic: Shadowfang Keep
 		}),
-		ach(1658, {		-- Champion of the Frozen Wastes
+		applyclassicphase(WRATH_PHASE_ONE, ach(1658, {		-- Champion of the Frozen Wastes
 			title(97),		-- , Champion of the Frozen Wastes
-			crit(1),		-- Sartharion the Onyx Guardian (10 or 25 player)
-			crit(2),		-- Kel'Thuzad (10 or 25 player)
-			crit(3),		-- Malygos (10 or 25 player)
-			crit(4),		-- Heroic: Anub'arak
-			crit(5),		-- Heroic: Sjonnir the Ironshaper
-			crit(6),		-- Heroic: Keristrasza
-			crit(7),		-- Heroic: Herald Volazj
-			crit(8),		-- Heroic: Loken
-			crit(9),		-- Heroic: Ley-Guardian Eregos
-			crit(10),		-- Heroic: Ingvar the Plunderer
-			crit(11),		-- Heroic: King Ymiron
-			crit(12),		-- Heroic: Mal'Ganis
-			crit(13),		-- Heroic: The Prophet Tharon'ja
-			crit(14),		-- Heroic: Cyanigosa
-			crit(15),		-- Heroic: Gal'darah
-		}),
+		})),
 		ach(1283, {		-- Classic Dungeonmaster
-			crit(1),		-- Deadmines
-			crit(2),		-- Ragefire Chasm
-			crit(3),		-- Wailing Caverns
-			crit(4),		-- Shadowfang Keep
-			crit(5),		-- Blackfathom Deeps
-			crit(6),		-- Stormwind Stockade
-			crit(7),		-- Gnomeregan
-			crit(8),		-- Razorfen Kraul
-			crit(9),		-- Razorfen Downs
-			crit(10),		-- Scarlet Monastery
-			crit(11),		-- Uldaman
-			crit(12),		-- Zul'Farrak
-			crit(13),		-- Maraudon
-			crit(14),		-- Sunken Temple
-			crit(15),		-- Blackrock Depths
-			crit(16),		-- Blackrock Spire
-			crit(17),		-- King of Dire Maul
-			crit(18),		-- Scholomance
-			crit(19),		-- Stratholme
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				628,		-- Deadmines
+				629,		-- Ragefire Chasm
+				630,		-- Wailing Caverns
+				631,		-- Shadowfang Keep
+				632,		-- Blackfathom Deeps
+				633,		-- Stormwind Stockade
+				634,		-- Gnomeregan
+				635,		-- Razorfen Kraul
+				636,		-- Razorfen Downs
+				637,		-- Scarlet Monastery
+				638,		-- Uldaman
+				639,		-- Zul'Farrak
+				640,		-- Maraudon
+				641,		-- Sunken Temple
+				642,		-- Blackrock Depths
+				643,		-- Blackrock Spire
+				644,		-- King of Dire Maul
+				645,		-- Scholomance
+				646,		-- Stratholme
+			}},
 		}),
 		ach(1285, {		-- Classic Raider
-			crit(1),		-- Blackwing Lair
-			crit(2),		-- Molten Core
-			crit(3),		-- Temple of Ahn'Qiraj
-			crit(4),		-- Ruins of Ahn'Qiraj
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				685,		-- Blackwing Lair
+				686,		-- Molten Core
+				687,		-- Temple of Ahn'Qiraj
+				689,		-- Ruins of Ahn'Qiraj
+			}},
 		}),
 		ach(5506, {		-- Defender of a Shattered World
 			title(185),		-- <Name>, Defender of a Shattered World
@@ -288,85 +279,100 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(12),		-- Bad Manner(oth)
 			crit(13),		-- Echoes of Doomfire
 		}),
-		ach(2136, {		-- Glory of the Hero
-			i(44160),		-- Red Proto-Drake (MOUNT!)
-			crit(1),		-- On The Rocks
-			crit(2),		-- Split Personality
-			crit(3),		-- Intense Cold
-			crit(4),		-- Chaos Theory
-			crit(5),		-- Watch Him Die
-			crit(6),		-- Hadronox Denied
-			crit(7),		-- Gotta Go!
-			crit(8),		-- Volazj's Quick Demise
-			crit(9),		-- Respect Your Elders
-			crit(10),		-- Volunteer Work
-			crit(11),		-- Consumption Junction
-			crit(12),		-- Better Off Dred
-			crit(13),		-- Oh Novos!
-			crit(14),		-- Defenseless
-			crit(15),		-- Lockdown!
-			crit(16),		-- Dehydration
-			crit(17),		-- A Void Dance
-			crit(18),		-- What the Eck?
-			crit(19),		-- Less-rabi
-			crit(20),		-- Snakes. Why'd It Have To Be Snakes?
-			crit(21),		-- Good Grief
-			crit(22),		-- Brann Spankin' New
-			crit(23),		-- Abuse the Ooze
-			crit(24),		-- Timely Death
-			crit(25),		-- Lightning Struck
-			crit(26),		-- Shatter Resistant
-			crit(27),		-- The Culling of Time
-			crit(28),		-- Zombiefest!
-			crit(29),		-- The Incredible Hulk
-			crit(30),		-- Lodi Dodi We Loves the Skadi
-			crit(31),		-- My Girl Loves to Skadi All the Time
-			crit(32),		-- King's Bane
-			crit(33),		-- Experienced Drake Rider
-			crit(34),		-- Make It Count
-			crit(35),		-- Ruby Void
-			crit(36),		-- Emerald Void
-			crit(37),		-- Amber Void
-		}),
-		ach(4602, {		-- Glory of the Icecrown Raider (10 player)
-			i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
-			crit(1),		-- Heroic: Storming the Citadel (10 player)
-			crit(2),		-- Heroic: The Plagueworks (10 player)
-			crit(3),		-- Heroic: The Crimson Hall (10 player)
-			crit(4),		-- Heroic: The Frostwing Halls (10 player)
-			crit(5),		-- Boned (10 player)
-			crit(6),		-- Full House (10 player)
-			crit(7),		-- I'm on a Boat (10 player)
-			crit(8),		-- I've Gone and Made a Mess (10 player)
-			crit(9),		-- Dances with Oozes (10 player)
-			crit(10),		-- Flu Shot Shortage (10 player)
-			crit(11),		-- Nausea, Heartburn, Indigestion... (10 player)
-			crit(12),		-- The Orb Whisperer (10 player)
-			crit(13),		-- Once Bitten, Twice Shy (10 player)
-			crit(14),		-- Portal Jockey (10 player)
-			crit(15),		-- All You Can Eat (10 player)
-			crit(16),		-- Been Waiting a Long Time for This (10 player)
-		}),
-		ach(4603, {		-- Glory of the Icecrown Raider (25 player)
-			i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
-			crit(1),		-- Heroic: Storming the Citadel (25 player)
-			crit(2),		-- Heroic: The Plagueworks (25 player)
-			crit(3),		-- Heroic: The Crimson Hall (25 player)
-			crit(4),		-- Heroic: The Frostwing Halls (25 player)
-			crit(5),		-- Boned (25 player)
-			crit(6),		-- Full House (25 player)
-			crit(7),		-- I'm on a Boat (25 player)
-			crit(8),		-- I've Gone and Made a Mess (25 player)
-			crit(9),		-- Dances with Oozes (25 player)
-			crit(10),		-- Flu Shot Shortage (25 player)
-			crit(11),		-- Nausea, Heartburn, Indigestion... (25 player)
-			crit(12),		-- The Orb Whisperer (25 player)
-			crit(13),		-- Once Bitten, Twice Shy (25 player)
-			crit(14),		-- Portal Jockey (25 player)
-			crit(15),		-- All You Can Eat (25 player)
-			crit(16),		-- Been Waiting a Long Time for This (25 player)
-			crit(17),		-- Neck-Deep in Vile (25 player)
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {		-- Glory of the Hero
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				1919,		-- On The Rocks
+				2150,		-- Split Personality
+				2036,		-- Intense Cold
+				2037,		-- Chaos Theory
+				1296,		-- Watch Him Die
+				1297,		-- Hadronox Denied
+				1860,		-- Gotta Go!
+				1862,		-- Volazj's Quick Demise
+				2038,		-- Respect Your Elders
+				2056,		-- Volunteer Work
+				2151,		-- Consumption Junction
+				2039,		-- Better Off Dred
+				2057,		-- Oh Novos!
+				1816,		-- Defenseless
+				1865,		-- Lockdown!
+				2041,		-- Dehydration
+				2153,		-- A Void Dance
+				1864,		-- What the Eck?
+				2040,		-- Less-rabi
+				2058,		-- Snakes. Why'd It Have To Be Snakes?
+				1866,		-- Good Grief
+				2154,		-- Brann Spankin' New
+				2155,		-- Abuse the Ooze
+				1867,		-- Timely Death
+				1834,		-- Lightning Struck
+				2042,		-- Shatter Resistant
+				1817,		-- The Culling of Time
+				1872,		-- Zombiefest!
+				2043,		-- The Incredible Hulk
+				1873,		-- Lodi Dodi We Loves the Skadi
+				2156,		-- My Girl Loves to Skadi All the Time
+				2157,		-- King's Bane
+				1871,		-- Experienced Drake Rider
+				1868,		-- Make It Count
+				2044,		-- Ruby Void
+				2045,		-- Emerald Void
+				2046,		-- Amber Void
+			}},
+			["groups"] = {
+				i(44160),		-- Red Proto-Drake (MOUNT!)
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_FOUR, ach(4602, {		-- Glory of the Icecrown Raider (10 player)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				4628,		-- Heroic: Storming the Citadel (10 player)
+				4629,		-- Heroic: The Plagueworks (10 player)
+				4630,		-- Heroic: The Crimson Hall (10 player)
+				4631,		-- Heroic: The Frostwing Halls (10 player)
+				4534,		-- Boned (10 player)
+				4535,		-- Full House (10 player)
+				4536,		-- I'm on a Boat (10 player)
+				4537,		-- I've Gone and Made a Mess (10 player)
+				4538,		-- Dances with Oozes (10 player)
+				4577,		-- Flu Shot Shortage (10 player)
+				4578,		-- Nausea, Heartburn, Indigestion... (10 player)
+				4582,		-- The Orb Whisperer (10 player)
+				4539,		-- Once Bitten, Twice Shy (10 player)
+				4579,		-- Portal Jockey (10 player)
+				4580,		-- All You Can Eat (10 player)
+				4601,		-- Been Waiting a Long Time for This (10 player)
+			}},
+			["groups"] = {
+				i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_FOUR, ach(4603, {		-- Glory of the Icecrown Raider (25 player)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				4632,		-- Heroic: Storming the Citadel (25 player)
+				4633,		-- Heroic: The Plagueworks (25 player)
+				4634,		-- Heroic: The Crimson Hall (25 player)
+				4635,		-- Heroic: The Frostwing Halls (25 player)
+				4610,		-- Boned (25 player)
+				4611,		-- Full House (25 player)
+				4612,		-- I'm on a Boat (25 player)
+				4613,		-- I've Gone and Made a Mess (25 player)
+				4614,		-- Dances with Oozes (25 player)
+				4615,		-- Flu Shot Shortage (25 player)
+				4616,		-- Nausea, Heartburn, Indigestion... (25 player)
+				4617,		-- The Orb Whisperer (25 player)
+				4618,		-- Once Bitten, Twice Shy (25 player)
+				4619,		-- Portal Jockey (25 player)
+				4620,		-- All You Can Eat (25 player)
+				4621,		-- Been Waiting a Long Time for This (25 player)
+				4622,		-- Neck-Deep in Vile (25 player)
+			}},
+			["groups"] = {
+				i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
+			},
+		})),
 		ach(11163, {	-- Glory of the Legion Hero
 			i(141217),		-- Leyfeather Hippogryph (MOUNT!)
 			crit(1),		-- But You Say He's Just a Friend
@@ -534,44 +540,90 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(28),		-- Heroic: Tsulong
 			crit(29),		-- Heroic: Lei Shi
 		}),
-		ach(2137, {		-- Glory of the Raider (10 player)
-			un(REMOVED_FROM_GAME, i(44175)),	-- Plagued Proto-Drake (MOUNT!)
-			crit(1),		-- The Dedicated Few (10 player)
-			crit(2),		-- Arachnophobia (10 player)
-			crit(3),		-- Make Quick Werk of Him (10 player)
-			crit(4),		-- The Safety Dance (10 player)
-			crit(5),		-- Momma Said Knock You Out (10 player)
-			crit(6),		-- Shocking! (10 player)
-			crit(7),		-- Subtraction (10 player)
-			crit(8),		-- The Spellweaver's Downfall (10 player)
-			crit(9),		-- You Don't Have an Eternity (10 player)
-			crit(10),		-- A Poke in the Eye (10 player)
-			crit(11),		-- Gonna Go When the Volcano Blows (10 player)
-			crit(12),		-- The Twilight Zone (10 player)
-			crit(13),		-- The Hundred Club (10 player)
-			crit(14),		-- And They Would All Go Down Together (10 player)
-			crit(15),		-- Denyin' the Scion (10 player)
-			crit(16),		-- Just Can't Get Enough (10 player)
-		}),
-		ach(2138, {		-- Glory of the Raider (25 player)
-			un(REMOVED_FROM_GAME, i(44164)),	-- Black Proto-Drake (MOUNT!)
-			crit(1),		-- The Dedicated Few (25 player)
-			crit(2),		-- Arachnophobia (25 player)
-			crit(3),		-- Make Quick Werk of Him (25 player)
-			crit(4),		-- The Safety Dance (25 player)
-			crit(5),		-- Momma Said Knock You Out (25 player)
-			crit(6),		-- Shocking! (25 player)
-			crit(7),		-- And They Would All Go Down Together (25 player)
-			crit(8),		-- Subtraction (25 player)
-			crit(9),		-- The Spellweaver's Downfall (25 player)
-			crit(10),		-- You Don't Have an Eternity (25 player)
-			crit(11),		-- A Poke in the Eye (25 player)
-			crit(12),		-- Gonna Go When the Volcano Blows (25 player)
-			crit(13),		-- Denyin' the Scion (25 player)
-			crit(14),		-- The Twilight Zone (25 player)
-			crit(15),		-- The Hundred Club (25 player)
-			crit(16),		-- Just Can't Get Enough (25 player)
-		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {		-- Glory of the Raider (10 player)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				-- #if BEFORE 4.0.1
+				2187,	-- The Undying
+				-- #endif
+				578,		-- The Dedicated Few (10 player)
+				1858,		-- Arachnophobia (10 player)
+				1856,		-- Make Quick Werk of Him (10 player)
+				1996,		-- The Safety Dance (10 player)
+				1997,		-- Momma Said Knock You Out (10 player)
+				2178,		-- Shocking! (10 player)
+				2180,		-- Subtraction (10 player)
+				622,		-- The Spellweaver's Downfall (10 player)
+				1874,		-- You Don't Have an Eternity (10 player)
+				1869,		-- A Poke in the Eye (10 player)
+				2047,		-- Gonna Go When the Volcano Blows (10 player)
+				2051,		-- The Twilight Zone (10 player)
+				2146,		-- The Hundred Club (10 player)
+				2176,		-- And They Would All Go Down Together (10 player)
+				2148,		-- Denyin' the Scion (10 player)
+				2184,		-- Just Can't Get Enough (10 player)
+			}},
+			["maps"] = { EYE_OF_ETERNITY, OBSIDIAN_SANCTUM, NAXXRAMAS },
+			["groups"] = {
+				i(44175, {	-- Plagued Proto-Drake (MOUNT!)
+					-- #if ANYCLASSIC
+					["OnUpdate"] = [[function(t)
+						if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+							t.u = ]] .. REMOVED_FROM_GAME .. [[;
+							t.rwp = nil;
+						else
+							t.u = ]] .. WRATH_PHASE_ONE .. [[;
+							t.rwp = 30100;
+						end
+					end]],
+					-- #else
+					["timeline"] = { "removed 3.1.0" },
+					-- #endif
+				}),
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(2138, {		-- Glory of the Raider (25 player)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				579,		-- The Dedicated Few (25 player)
+				1859,		-- Arachnophobia (25 player)
+				1857,		-- Make Quick Werk of Him (25 player)
+				-- #if BEFORE 4.0.1
+				2186,	-- The Immortal
+				-- #endif
+				2139,		-- The Safety Dance (25 player)
+				2140,		-- Momma Said Knock You Out (25 player)
+				2179,		-- Shocking! (25 player)
+				2177,		-- And They Would All Go Down Together (25 player)
+				2181,		-- Subtraction (25 player)
+				623,		-- The Spellweaver's Downfall (25 player)
+				1875,		-- You Don't Have an Eternity (25 player)
+				1870,		-- A Poke in the Eye (25 player)
+				2048,		-- Gonna Go When the Volcano Blows (25 player)
+				2149,		-- Denyin' the Scion (25 player)
+				2054,		-- The Twilight Zone (25 player)
+				2147,		-- The Hundred Club (25 player)
+				2185,		-- Just Can't Get Enough (25 player)
+			}},
+			["maps"] = { EYE_OF_ETERNITY, OBSIDIAN_SANCTUM, NAXXRAMAS },
+			["groups"] = {
+				i(44164, {	-- Black Proto-Drake (MOUNT!)
+					-- #if ANYCLASSIC
+					["OnUpdate"] = [[function(t)
+						if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+							t.u = ]] .. REMOVED_FROM_GAME .. [[;
+							t.rwp = nil;
+						else
+							t.u = ]] .. WRATH_PHASE_ONE .. [[;
+							t.rwp = 30100;
+						end
+					end]],
+					-- #else
+					["timeline"] = { "removed 3.1.0" },
+					-- #endif
+				}),
+			},
+		})),
 		ach(15491, sharedDataSelf({ ["timeline"] = { "added 9.2.0" } }, {	-- Glory of the Sepulcher Raider
 			i(187675),	-- Shimmering Aurelid (MOUNT!)
 			ach(15381),	-- Power ON
@@ -665,23 +717,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(7),		-- Edgelords
 			crit(8),		-- Existential Crisis
 		}),
-		ach(12401, {	-- Glory of the Ulduar Raider
-			i(45802),		-- Rusted Proto-Drake (MOUNT!)
-			i(45801),		-- Ironbound Proto-Drake (MOUNT!)
-			crit(1),		-- Orbit-uary
-			crit(2),		-- Stokin' the Furnace
-			crit(3),		-- Iron Dwarf, Medium Rare
-			crit(4),		-- Heartbreaker
-			crit(5),		-- I Choose You, Steelbreaker
-			crit(6),		-- Disarmed
-			crit(7),		-- Crazy Cat Lady
-			crit(8),		-- I Could Say That This Cache Was Rare
-			crit(9),		-- Lose Your Illusion
-			crit(10),		-- Knock, Knock, Knock on Wood
-			crit(11),		-- Firefighter
-			crit(12),		-- I Love the Smell of Saronite in the Morning
-			crit(13),		-- One Light in the Darkness
-		}),
 		ach(12812, {	-- Glory of the Wartorn Hero
 			i(161215),		-- Obsidian Krolusk (MOUNT!)
 			crit(1),		-- Pecking Order
@@ -735,78 +770,93 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			ach(4476),		-- Looking For More
 		}),
 		ach(1289, {		-- Northrend Dungeon Hero
-			crit(1),		-- Heroic: Utgarde Keep
-			crit(2),		-- Heroic: The Nexus
-			crit(3),		-- Heroic Caverns of Time: Stratholme
-			crit(4),		-- Heroic: Azjol-Nerub
-			crit(5),		-- Heroic: Ahn'kahet: The Old Kingdom
-			crit(6),		-- Heroic: Drak'Tharon Keep
-			crit(7),		-- Heroic: The Violet Hold
-			crit(8),		-- Heroic: Gundrak
-			crit(9),		-- Heroic: Halls of Stone
-			crit(10),		-- Heroic: Halls of Lightning
-			crit(11),		-- Heroic: The Oculus
-			crit(12),		-- Heroic: Utgarde Pinnacle
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				492,		-- Heroic: Ahn'kahet: The Old Kingdom
+				491,		-- Heroic: Azjol-Nerub
+				500,		-- Heroic Caverns of Time: Stratholme
+				493,		-- Heroic: Drak'Tharon Keep
+				495,		-- Heroic: Gundrak
+				497,		-- Heroic: Halls of Lightning
+				496,		-- Heroic: Halls of Stone
+				490,		-- Heroic: The Nexus
+				498,		-- Heroic: The Oculus
+				494,		-- Heroic: The Violet Hold
+				489,		-- Heroic: Utgarde Keep
+				499,		-- Heroic: Utgarde Pinnacle
+			}},
 		}),
 		ach(1288, {		-- Northrend Dungeonmaster
-			crit(1),		-- Utgarde Keep
-			crit(2),		-- The Nexus
-			crit(3),		-- Caverns of Time: Stratholme
-			crit(4),		-- Azjol-Nerub
-			crit(5),		-- Ahn'kahet: The Old Kingdom
-			crit(6),		-- Drak'Tharon Keep
-			crit(7),		-- The Violet Hold
-			crit(8),		-- Gundrak
-			crit(9),		-- Halls of Stone
-			crit(10),		-- Halls of Lightning
-			crit(11),		-- The Oculus
-			crit(12),		-- Utgarde Pinnacle
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				481,		-- Ahn'kahet: The Old Kingdom
+				480,		-- Azjol-Nerub
+				479,		-- Caverns of Time: Stratholme
+				482,		-- Drak'Tharon Keep
+				484,		-- Gundrak
+				486,		-- Halls of Lightning
+				485,		-- Halls of Stone
+				478,		-- The Nexus
+				487,		-- The Oculus
+				483,		-- The Violet Hold
+				477,		-- Utgarde Keep
+				488,		-- Utgarde Pinnacle
+			}},
 		}),
 		ach(1287, {		-- Outland Dungeon Hero
-			crit(1),		-- Heroic: Hellfire Ramparts
-			crit(2),		-- Heroic: The Blood Furnace
-			crit(3),		-- Heroic: The Slave Pens
-			crit(4),		-- Heroic: Underbog
-			crit(5),		-- Heroic: Mana-Tombs
-			crit(6),		-- Heroic: The Escape From Durnholde
-			crit(7),		-- Heroic: Sethekk Halls
-			crit(8),		-- Heroic: Shadow Labyrinth
-			crit(9),		-- Heroic: Opening of the Dark Portal
-			crit(10),		-- Heroic: The Steamvault
-			crit(11),		-- Heroic: The Shattered Halls
-			crit(12),		-- Heroic: The Mechanar
-			crit(13),		-- Heroic: The Botanica
-			crit(14),		-- Heroic: The Arcatraz
-			crit(15),		-- Heroic: Magister's Terrace
-			crit(16),		-- Heroic: Auchenai Crypts
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				672,		-- Heroic: Auchenai Crypts
+				667,		-- Heroic: Hellfire Ramparts
+				682,		-- Heroic: Magister's Terrace
+				671,		-- Heroic: Mana-Tombs
+				676,		-- Heroic: Opening of the Dark Portal
+				674,		-- Heroic: Sethekk Halls
+				675,		-- Heroic: Shadow Labyrinth
+				681,		-- Heroic: The Arcatraz
+				668,		-- Heroic: The Blood Furnace
+				680,		-- Heroic: The Botanica
+				673,		-- Heroic: The Escape From Durnholde
+				679,		-- Heroic: The Mechanar
+				678,		-- Heroic: The Shattered Halls
+				669,		-- Heroic: The Slave Pens
+				677,		-- Heroic: The Steamvault
+				670,		-- Heroic: Underbog
+			}},
 		}),
 		ach(1284, {		-- Outland Dungeonmaster
-			crit(1),		-- Hellfire Ramparts
-			crit(2),		-- The Blood Furnace
-			crit(3),		-- The Slave Pens
-			crit(4),		-- Underbog
-			crit(5),		-- Mana-Tombs
-			crit(6),		-- The Escape From Durnholde
-			crit(7),		-- Sethekk Halls
-			crit(8),		-- Shadow Labyrinth
-			crit(9),		-- Opening of the Dark Portal
-			crit(10),		-- The Steamvault
-			crit(11),		-- The Shattered Halls
-			crit(12),		-- The Mechanar
-			crit(13),		-- The Botanica
-			crit(14),		-- The Arcatraz
-			crit(15),		-- Magister's Terrace
-			crit(16),		-- Auchenai Crypts
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				666,		-- Auchenai Crypts
+				647,		-- Hellfire Ramparts
+				661,		-- Magister's Terrace
+				651,		-- Mana-Tombs
+				655,		-- Opening of the Dark Portal
+				653,		-- Sethekk Halls
+				654,		-- Shadow Labyrinth
+				660,		-- The Arcatraz
+				648,		-- The Blood Furnace
+				659,		-- The Botanica
+				652,		-- The Escape From Durnholde
+				658,		-- The Mechanar
+				657,		-- The Shattered Halls
+				649,		-- The Slave Pens
+				656,		-- The Steamvault
+				650,		-- Underbog
+			}},
 		}),
 		ach(1286, {		-- Outland Raider
-			crit(1),		-- Karazhan
-			crit(2),		-- Gruul's Lair
-			crit(3),		-- Magtheridon's Lair
-			crit(4),		-- Serpentshrine Cavern
-			crit(5),		-- The Battle for Mount Hyjal
-			crit(6),		-- Tempest Keep
-			crit(7),		-- The Black Temple
-			crit(8),		-- Sunwell Plateau
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				690,		-- Karazhan
+				692,		-- Gruul's Lair
+				693,		-- Magtheridon's Lair
+				694,		-- Serpentshrine Cavern
+				695,		-- The Battle for Mount Hyjal
+				696,		-- Tempest Keep
+				697,		-- The Black Temple
+				698,		-- Sunwell Plateau
+			}},
 		}),
 		ach(6925, {		-- Pandaria Dungeon Hero
 			crit(1),		-- Heroic: Temple of the Jade Serpent

@@ -62,8 +62,52 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(2983)),	-- Getting Back to Nature (25 player)
 		un(REMOVED_FROM_GAME, ach(2967)),	-- Getting Cold in Here (10 player)
 		un(REMOVED_FROM_GAME, ach(2968)),	-- Getting Cold in Here (25 player)
-		un(REMOVED_FROM_GAME, ach(2957)),	-- Glory of the Ulduar Raider (10 player)
-		un(REMOVED_FROM_GAME, ach(2958)),	-- Glory of the Ulduar Raider (25 player)
+		-- #if AFTER 7.3.5
+		applyclassicphase(WRATH_PHASE_TWO, ach(2957, {	-- Glory of the Ulduar Raider (10 player)
+			["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				3056,		-- Orbit-uary (10 player)
+				2930,		-- Stokin' the Furnace (10 player)
+				2923,		-- Iron Dwarf, Medium Rare (10 player)
+				3058,		-- Heartbreaker (10 player)
+				2941,		-- I Choose You, Steelbreaker (10 player)
+				2953,		-- Disarmed (10 player)
+				3006,		-- Crazy Cat Lady (10 player)
+				3182,		-- I Could Say That This Cache Was Rare (10 player)
+				3176,		-- Lose Your Illusion (10 player)
+				3179,		-- Knock, Knock, Knock on Wood (10 player)
+				3180,		-- Firefighter (10 player)
+				3181,		-- I Love the Smell of Saronite in the Morning (10 player)
+				3158,		-- One Light in the Darkness (10 player)
+			}},
+			["groups"] = {
+				i(45802),	-- Rusted Proto-Drake (MOUNT!)
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_TWO, ach(2958, {	-- Glory of the Ulduar Raider (25 player)
+			["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				3057,		-- Orbit-uary (25 player)
+				2929,		-- Stokin' the Furnace (25 player)
+				2924,		-- Iron Dwarf, Medium Rare (25 player)
+				3059,		-- Heartbreaker (25 player)
+				2944,		-- I Choose You, Steelbreaker (25 player)
+				2954,		-- Disarmed (25 player)
+				3007,		-- Crazy Cat Lady (25 player)
+				3184,		-- I Could Say That This Cache Was Rare (25 player)
+				3183,		-- Lose Your Illusion (25 player)
+				3187,		-- Knock, Knock, Knock on Wood (25 player)
+				3189,		-- Firefighter (25 player)
+				3188,		-- I Love the Smell of Saronite in the Morning (25 player)
+				3163,		-- One Light in the Darkness (25 player)
+			}},
+			["groups"] = {
+				i(45801),	-- Ironbound Proto-Drake (MOUNT!)
+			},
+		})),
+		-- #endif
 		un(REMOVED_FROM_GAME, ach(431, {	-- Hand of A'dal
 			un(REMOVED_FROM_GAME, title(39)),	-- , Hand of A'dal
 		})),
@@ -91,6 +135,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(2956)),	-- If Looks Could Kill (25 player)
 		un(REMOVED_FROM_GAME, ach(3015)),	-- In His House He Waits Dreaming (10 player)
 		un(REMOVED_FROM_GAME, ach(3016)),	-- In His House He Waits Dreaming (25 player)
+		un(REMOVED_FROM_GAME, ach(2923)),	-- Iron Dwarf, Medium Rare (10 player)
+		un(REMOVED_FROM_GAME, ach(2924)),	-- Iron Dwarf, Medium Rare (25 player)
 		un(REMOVED_FROM_GAME, ach(3009)),	-- Kiss and Make Up (10 player)
 		un(REMOVED_FROM_GAME, ach(3011)),	-- Kiss and Make Up (25 player)
 		un(REMOVED_FROM_GAME, ach(3179, {	-- Knock, Knock, Knock on Wood (10 player)

@@ -551,7 +551,7 @@ root("Instances", tier(WOTLK_TIER, {
 							["groups"] = {
 								ach(574),	-- Kel'Thuzad's Defeat (10 player)
 								ach(2184, {	-- Just Can't Get Enough (10 player)
-									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
+									["cr"] = 16428,	-- Unstoppable Abomination
 									-- #if NOT ANYCLASSIC
 									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 									-- #endif
@@ -1276,7 +1276,7 @@ root("Instances", tier(WOTLK_TIER, {
 								})),
 								ach(575),	-- Kel'Thuzad's Defeat (25 player)
 								ach(2185, {	-- Just Can't Get Enough (25 player)
-									["provider"] = { "n", 16428 },	-- Unstoppable Abomination
+									["cr"] = 16428,	-- Unstoppable Abomination
 									-- #if NOT ANYCLASSIC
 									["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 									-- #endif

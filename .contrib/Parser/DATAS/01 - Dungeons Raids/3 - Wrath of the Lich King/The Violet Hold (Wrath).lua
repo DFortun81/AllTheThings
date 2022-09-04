@@ -279,6 +279,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(628, {	-- Ichoron
 						["creatureID"] = 29313,	-- Ichoron
 						["groups"] = {
+							ach(2041),	-- Dehydration
 							-- #if AFTER 7.3.5
 							i(35643),	-- Spaulders of Ichoron (7.3.5 - Used to be only Normal Mode)
 							-- #endif
