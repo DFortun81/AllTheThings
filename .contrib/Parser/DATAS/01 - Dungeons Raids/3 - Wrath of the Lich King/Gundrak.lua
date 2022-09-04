@@ -19,9 +19,16 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(5450, { -- Drakkari Colossus
 						["_encounter"] = { 593, 1 },
 					}),
+					-- #if ANYCLASSIC
+					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5627, { -- Gal'darah
 						["_encounter"] = { 596, 1 },
 					}),
+					-- #else
+					crit(5451, { -- Gal'darah
+						["_encounter"] = { 596, 1 },
+					}),
+					-- #endif
 				}),
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, { -- Slad'ran
