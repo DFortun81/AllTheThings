@@ -1763,6 +1763,22 @@ _.PVP =
 					}),
 				}),
 				filter(CLOTH, {
+					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
+					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
+					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
+					i(172528),	-- Corrupted Gladiator's Silk Mantle (H)
+					i(172523),	-- Corrupted Gladiator's Silk Robe (H)
+					i(172529),	-- Corrupted Gladiator's Silk Cuffs (H)
+					i(172525),	-- Corrupted Gladiator's Silk Gloves (H)
+					i(172556),	-- Corrupted Gladiator's Silk Robe (A)
+					i(172583),	-- Corrupted Gladiator's Silk Cuffs (A)
+					i(172566),	-- Corrupted Gladiator's Silk Gloves (A)
+					i(172580),	-- Corrupted Gladiator's Silk Cord (A)
+					i(172572),	-- Corrupted Gladiator's Silk Leggings (A)
+					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
+					i(172530),	-- Corrupted Gladiator's Silk Cord (H)
+					i(172527),	-- Corrupted Gladiator's Silk Leggings (H)
+					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
 				}),
 				filter(LEATHER, {
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
@@ -1801,6 +1817,22 @@ _.PVP =
 					i(172540),	-- Corrupted Gladiator's Chain Sabatons (H)
 				}),
 				filter(PLATE, {
+					i(172555),	-- Corrupted Gladiator's Plate Helm (A)
+					i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
+					i(172547),	-- Corrupted Gladiator's Plate Helm (H)
+					i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
+					i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
+					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
+					i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
+					i(172584),	-- Corrupted Gladiator's Plate Armguards (A)
+					i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
+					i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
+					i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
+					i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
+					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
+					i(172551),	-- Corrupted Gladiator's Plate Legguards (H)
+					i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
+					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
 				}),
 			})),
 			n(QUESTS, {
