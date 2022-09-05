@@ -3084,6 +3084,8 @@ local function FillSymLinks(group, recursive)
 end
 
 (function()
+local select, tremove, unpack =
+	  select, tremove, unpack;
 local subroutines;
 subroutines = {
 	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
@@ -3499,24 +3501,47 @@ end
 
 
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
--- searchResults - the current set of searchResults when reaching the current sym command. this table MUST persist in state throughout execution as there is no return value utilized
--- sym - the current symlink command being processed
+-- searchResults - the current set of searchResults when reaching the current sym command
 -- o - the specific group object which contains the symlink commands
+-- (various expected components of the respective sym command)
 local ResolveFunctions = {
-	["select"] = function(searchResults, sym)
+	["select"] = function(searchResults, o, cmd, field, ...)
 		-- Instruction to search the full database for multiple of a given type
-		local field = sym[2];
-		local cache;
-		for i=3,#sym do
-			cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
+		local cache, val;
+		local vals = select("#", ...);
+		for i=1,vals do
+			val = select(i, ...);
+			cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, val));
 			if cache then
 				ArrayAppend(searchResults, cache);
 			else
-				print("Failed to select ", field, sym[i]);
+				print("Failed to select ", field, val);
 			end
 		end
 	end,
-	["fill"] = function(searchResults, sym, o)
+	["selectparent"] = function(searchResults, o, cmd, level)
+		-- Instruction to select the parent object of the parent that owns the symbolic link.
+		if level and level > 0 then
+			local parent = o.parent;
+			while level > 1 do
+				parent = parent and parent.parent;
+				level = level - 1;
+			end
+			if parent then
+				tinsert(searchResults, parent);
+			else
+				print("Failed to select parent " .. level .. " levels up.");
+			end
+		else
+			-- Select the direct parent object.
+			tinsert(searchResults, o.parent);
+		end
+	end,
+	["selectprofession"] = function(searchResults, o, cmd, requireSkill)
+		-- Instruction to find all content marked with the specified 'requireSkill'
+		ArrayAppend(searchResults, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill));
+	end,
+	["fill"] = function(searchResults, o)
 		-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
 		local okey = o.key;
 		if okey then
@@ -3531,6 +3556,12 @@ local ResolveFunctions = {
 			end
 		end
 	end,
+	["push"] = function(searchResults, o, cmd, field, value)
+		-- Instruction to "push" all of the group values into an object as specified
+		local orig = RawCloneData(searchResults);
+		wipe(searchResults);
+		searchResults[1] = CreateObject({[field] = value, g = orig });
+	end,
 	["pop"] = function(searchResults)
 		-- Instruction to "pop" all of the group values up one level.
 		local orig = RawCloneData(searchResults);
@@ -3540,15 +3571,36 @@ local ResolveFunctions = {
 			ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
 		end
 	end,
-	["extract"] = function(searchResults, sym)
+	["where"] = function(searchResults, o, cmd, field, value)
+		-- Instruction to include only search results where a key value is a value
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if not s[field] or s[field] ~= value then
+				tremove(searchResults, k);
+			end
+		end
+	end,
+	["extract"] = function(searchResults, o, cmd, field)
 		-- Instruction to extract all nested results which contain a given field
-		local field = sym[2];
-		local extractSet = RawCloneData(searchResults);
+		local orig = RawCloneData(searchResults);
 		wipe(searchResults);
-		for _,o in ipairs(extractSet) do
+		for _,o in ipairs(orig) do
 			Resolve_Extract(searchResults, o, field);
 		end
-	end
+	end,
+	["index"] = function(searchResults, o, cmd, index)
+		-- Instruction to include the search result with a given index within each of the selection's groups.
+		local orig = RawCloneData(searchResults);
+		wipe(searchResults);
+		local s, g;
+		for k=#orig,1,-1 do
+			s = orig[k];
+			g = s.g;
+			if g and index <= #g then
+				tinsert(searchResults, g[index]);
+			end
+		end
+	end,
 };
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
@@ -3568,92 +3620,7 @@ ResolveSymbolicLink = function(o)
 			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 			if cmdFunc then
 				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
-				cmdFunc(searchResults, sym, o);
-			-- elseif cmd == "select" then
-				-- Instruction to search the full database for multiple of a given type
-				-- local field = sym[2];
-				-- local cache;
-				-- for i=3,#sym do
-				-- 	cache = app.CleanSourceIgnoredGroups(app.SearchForField(field, sym[i]));
-				-- 	if cache then
-				-- 		ArrayAppend(searchResults, cache);
-				-- 	else
-				-- 		print("Failed to select ", field, sym[i]);
-				-- 	end
-				-- end
-			elseif cmd == "selectparent" then
-				-- Instruction to select the parent object of the parent that owns the symbolic link.
-				local cache = sym[2];
-				if cache and cache > 0 then
-					local parent = o.parent;
-					while cache > 1 do
-						parent = parent.parent;
-						cache = cache - 1;
-					end
-					if parent then
-						tinsert(searchResults, parent);
-					else
-						print("Failed to select parent " .. sym[2] .. " levels up.");
-					end
-				else
-					-- Select the direct parent object.
-					tinsert(searchResults, o.parent);
-				end
-			elseif cmd == "selectprofession" then
-				local cache = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", sym[2]);
-				if cache and #cache > 0 then
-					for _,k in ipairs(cache) do
-						tinsert(searchResults, k);
-					end
-				end
-			-- elseif cmd == "fill" then
-			-- 	-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
-			-- 	if o.key and o[o.key] then
-			-- 		local cache = app.CleanSourceIgnoredGroups(app.SearchForField(o.key, o[o.key]));
-			-- 		if cache then
-			-- 			for _,s in ipairs(cache) do
-			-- 				ArrayAppend(searchResults, s.g);
-			-- 			end
-			-- 		end
-			-- 	end
-			-- elseif cmd == "pop" then
-			-- 	-- Instruction to "pop" all of the group values up one level.
-			-- 	local orig = searchResults;
-			-- 	searchResults = {};
-			-- 	for _,s in ipairs(orig) do
-			-- 		ArrayAppend(searchResults, Resolve_Pop(s));
-			-- 	end
-			elseif cmd == "push" then
-				-- Instruction to "push" all of the group values into an object as specified
-				searchResults = { CreateObject({[sym[2]] = sym[3], g = searchResults }) };
-			elseif cmd == "where" then
-				-- Instruction to include only search results where a key value is a value
-				local key, value = sym[2], sym[3];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if not s[key] or s[key] ~= value then
-						tremove(searchResults, k);
-					end
-				end
-			-- elseif cmd == "extract" then
-			-- 	-- Instruction to extract all nested results which contain a given field
-			-- 	local field = sym[2];
-			-- 	local results = {};
-			-- 	for _,o in ipairs(searchResults) do
-			-- 		Resolve_Extract(results, o, field);
-			-- 	end
-			-- 	searchResults = results;
-			elseif cmd == "index" then
-				-- Instruction to include the search result with a given index within each of the selection's groups.
-				local index = sym[2];
-				local orig = searchResults;
-				searchResults = {};
-				for k=#orig,1,-1 do
-					local s = orig[k];
-					if s.g and index <= #s.g then
-						tinsert(searchResults, s.g[index]);
-					end
-				end
+				cmdFunc(searchResults, o, unpack(sym));
 			elseif cmd == "not" then
 				-- Instruction to include only search results where a key value is not a value
 				if #sym > 3 then
