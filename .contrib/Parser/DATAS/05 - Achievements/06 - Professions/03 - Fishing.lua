@@ -323,12 +323,70 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 			crit(31),		-- Winter Squid
 		}),
 		ach(153),		-- The Old Gnome and the Sea
-		ach(1257,  {	-- The Scavenger
-			crit(1),		-- Steam Pump Flotsam
-			crit(2),		-- Bloodsail Wreckage
-			crit(3),		-- Schooner Wreckage
-			crit(4),		-- Waterlogged Wreckage
-			crit(5),		-- Floating Wreckage
+		ach(1257, {	-- The Scavenger
+			["requireSkill"] = FISHING,
+			["groups"] = {
+				crit(3873, {	-- Bloodsail Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						THE_CAPE_OF_STRANGLETHORN,
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+				crit(3876, {	-- Floating Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						EASTERN_PLAGUELANDS,
+						SWAMP_OF_SORROWS,
+						TANARIS,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						FERALAS,
+						TANARIS,
+						-- #endif
+					},
+				}),
+				crit(3874, {	-- Schooner Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						ARATHI_HIGHLANDS,
+						ASHENVALE,
+						-- #endif
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+				}),
+				crit(3872, {	-- Steam Pump Flotsam
+					["requireSkill"] = FISHING,
+					["maps"] = { ZANGARMARSH },
+				}),
+				crit(3875, {	-- Waterlogged Wreckage
+					["requireSkill"] = FISHING,
+					["maps"] = {
+						-- #if AFTER CATA
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ARATHI_HIGHLANDS,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+			},
 		}),
 		ach(3218),		-- Turtles All the Way Down
 		ach(12754, {	-- Zandalari Fisherman (H)
