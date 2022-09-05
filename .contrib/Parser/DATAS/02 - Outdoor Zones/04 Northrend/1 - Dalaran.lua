@@ -14,6 +14,12 @@ root("Zones", {
 			["lvl"] = 58,
 			["groups"] = {
 				m(NORTHREND_THE_UNDERBELLY, {
+					n(ACHIEVEMENTS, {
+						ach(1958, {	-- I Smell A Giant Rat
+							["provider"] = { "i", 43698 },	-- Giant Sewer Rat
+							["requireSkill"] = FISHING,
+						}),
+					}),
 					prof(FISHING, {
 						i(43698),	-- Giant Sewer Rat
 					}),
