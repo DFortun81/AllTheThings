@@ -342,6 +342,17 @@ root("Zones", {
 				}),
 				prof(FISHING, {
 					i(34865),	-- Blackfin Darter
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3869,	-- Highland Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3627,	-- Highland Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					i(27388, {	-- Mr. Pinchy
 						["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
 						["groups"] = {
@@ -354,6 +365,17 @@ root("Zones", {
 							}),
 						},
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3868,	-- School of Darter
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3628,	-- School of Darter
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 				}),
 				n(QUESTS, {
 					q(11666, {	-- Bait Bandits

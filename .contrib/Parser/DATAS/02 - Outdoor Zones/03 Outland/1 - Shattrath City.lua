@@ -1254,6 +1254,7 @@ root("Zones", {
 					q(11382, {	-- WANTED: Aeonus's Hourglass
 						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {

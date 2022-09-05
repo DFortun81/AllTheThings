@@ -385,6 +385,25 @@ root("Zones", {
 					}),
 				}),
 				prof(FISHING, {
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3866,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3867,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3624,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3625,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					i(34868),	-- World's Largest Mudfish
 				}),
 				n(QUESTS, {

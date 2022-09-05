@@ -332,6 +332,17 @@ root("Zones", {
 					i(35313, {	-- Bloated Barbed Gill Trout
 						i(34866),	-- Giant Freshwater Shrimp
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					o(182952, {	-- Steam Pump Flotsam
 						["model"] = 219411,
 						["groups"] = {
@@ -341,6 +352,17 @@ root("Zones", {
 							}),
 						},
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3870,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3628,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 				}),
 				n(QUESTS, {
 					q(50130, {	-- A Friendly Gesture

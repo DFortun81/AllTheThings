@@ -90,13 +90,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ ["req
 		}),
 		ach(130),		-- Northrend Fisherman
 		ach(878),		-- One That Didn't Get Away
-		ach(1225,  {	-- Outland Angler
-			crit(1),		-- Brackish Mixed School
-			crit(2),		-- Bluefish School
-			crit(3),		-- Mudfish School
-			crit(4),		-- School of Darter
-			crit(5),		-- Highland Mixed School
-			crit(6),		-- Sporefish School
+		ach(1225, {	-- Outland Angler
+			["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 		}),
 		ach(129),		-- Outland Fisherman
 		ach(7611,  {	-- Pandarian Angler
