@@ -1260,6 +1260,50 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(167384)),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+				n(BACK, {
+					i(167373, {	-- Notorious Gladiator's Cape (A)
+					}),
+					i(167372, {	-- Notorious Gladiator's Drape (A)
+					}),
+					i(167370, {	-- Notorious Gladiator's Shawl (A)
+					}),
+					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
+					}),
+					i(167369, {	-- Notorious Gladiator's Cape (H)
+					}),
+					i(167368, {	-- Notorious Gladiator's Drape (H)
+					}),
+					i(167366, {	-- Notorious Gladiator's Shawl (H)
+					}),
+					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
+					}),
+				}),
+				filter(CLOTH, {
+				}),
+				filter(LEATHER, {
+				}),
+				filter(MAIL, {
+					i(167296),	-- Notorious Gladiator's Chain Armbands (A)
+					i(167269),	-- Notorious Gladiator's Chain Armor (A)
+					i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
+					i(167280),	-- Notorious Gladiator's Chain Helm (A)
+					i(167284),	-- Notorious Gladiator's Chain Leggings (A)
+					i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
+					i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
+					i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
+					i(167257),	-- Notorious Gladiator's Chain Armbands (H)
+					i(167250),	-- Notorious Gladiator's Chain Armor (H)
+					i(167252),	-- Notorious Gladiator's Chain Gauntlets (H)
+					i(167253),	-- Notorious Gladiator's Chain Helm (H)
+					i(167254),	-- Notorious Gladiator's Chain Leggings (H)
+					i(167251),	-- Notorious Gladiator's Chain Sabatons (H)
+					i(167255),	-- Notorious Gladiator's Chain Spaulders (H)
+					i(167256),	-- Notorious Gladiator's Chain Waistguard (H)
+				}),
+				filter(PLATE, {
+				}),
+			})),
 			n(QUESTS, {
 				q(57274, {	-- Quartermaster's Bounty
 					["providers"] = {
