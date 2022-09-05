@@ -1262,6 +1262,7 @@ _.PVP =
 			}),
 			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
+					-- Was given randomly after winning a pvp match while above 2400 rating
 					i(167373, {	-- Notorious Gladiator's Cape (A)
 					}),
 					i(167372, {	-- Notorious Gladiator's Drape (A)
@@ -1282,9 +1283,25 @@ _.PVP =
 				filter(CLOTH, {
 				}),
 				filter(LEATHER, {
+					i(167281),	-- Notorious Gladiator's Leather Helm (A)
+					i(167245),	-- Notorious Gladiator's Leather Helm (H)
+					i(167286),	-- Notorious Gladiator's Leather Spaulders (A)
+					i(167247),	-- Notorious Gladiator's Leather Spaulders (H)
+					i(167242),	-- Notorious Gladiator's Leather Tunic (H)
+					i(167249),	-- Notorious Gladiator's Leather Bindings (H)
+					i(167297),	-- Notorious Gladiator's Leather Bindings (A)
+					i(167270),	-- Notorious Gladiator's Leather Tunic (A)
+					i(167275),	-- Notorious Gladiator's Leather Gloves (A)
+					i(167293),	-- Notorious Gladiator's Leather Belt (A)
+					i(167244),	-- Notorious Gladiator's Leather Gloves (H)
+					i(167248),	-- Notorious Gladiator's Leather Belt (H)
+					i(167246),	-- Notorious Gladiator's Leather Legguards (H)
+					i(167243),	-- Notorious Gladiator's Leather Boots (H)
+					i(167285),	-- Notorious Gladiator's Leather Legguards (A)
+					i(167274),	-- Notorious Gladiator's Leather Boots (A)
 				}),
 				filter(MAIL, {
-					i(167296),	-- Notorious Gladiator's Chain Armbands (A)
+					i(167296),	-- Notorious Gladiator's Chain Armbands (A) (Never given it seems?)
 					i(167269),	-- Notorious Gladiator's Chain Armor (A)
 					i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
 					i(167280),	-- Notorious Gladiator's Chain Helm (A)
@@ -1292,7 +1309,7 @@ _.PVP =
 					i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
 					i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
 					i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
-					i(167257),	-- Notorious Gladiator's Chain Armbands (H)
+					i(167257),	-- Notorious Gladiator's Chain Armbands (H) (Never given it seems?)
 					i(167250),	-- Notorious Gladiator's Chain Armor (H)
 					i(167252),	-- Notorious Gladiator's Chain Gauntlets (H)
 					i(167253),	-- Notorious Gladiator's Chain Helm (H)
@@ -1725,6 +1742,67 @@ _.PVP =
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6378 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+				n(BACK, {
+					-- Was given randomly after winning a pvp match while above 2400 rating
+					i(167373, {	-- Notorious Gladiator's Cape (A)
+					}),
+					i(167372, {	-- Notorious Gladiator's Drape (A)
+					}),
+					i(167370, {	-- Notorious Gladiator's Shawl (A)
+					}),
+					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
+					}),
+					i(167369, {	-- Notorious Gladiator's Cape (H)
+					}),
+					i(167368, {	-- Notorious Gladiator's Drape (H)
+					}),
+					i(167366, {	-- Notorious Gladiator's Shawl (H)
+					}),
+					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
+					}),
+				}),
+				filter(CLOTH, {
+				}),
+				filter(LEATHER, {
+					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
+					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
+					i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
+					i(172534),	-- Corrupted Gladiator's Leather Helm (H)
+					i(172531),	-- Corrupted Gladiator's Leather Tunic (H)
+					i(172538),	-- Corrupted Gladiator's Leather Bindings (H)
+					i(172559),	-- Corrupted Gladiator's Leather Tunic (A)
+					i(172586),	-- Corrupted Gladiator's Leather Bindings (A)
+					i(172628),	-- Corrupted Gladiator's Leather Handguards (A)
+					i(172537),	-- Corrupted Gladiator's Leather Belt (H)
+					i(172597),	-- Corrupted Gladiator's Leather Handguards (H)
+					i(172582),	-- Corrupted Gladiator's Leather Belt (A)
+					i(172638),	-- Corrupted Gladiator's Leather Pants (A)
+					i(172627),	-- Corrupted Gladiator's Leather Footguards (A)
+					i(172599),	-- Corrupted Gladiator's Leather Pants (H)
+					i(172596),	-- Corrupted Gladiator's Leather Footguards (H)
+				}),
+				filter(MAIL, {
+					i(172569),	-- Corrupted Gladiator's Chain Helm (A)
+					i(172542),	-- Corrupted Gladiator's Chain Helm (H)
+					i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
+					i(172544),	-- Corrupted Gladiator's Chain Spaulders (H)
+					i(172585),	-- Corrupted Gladiator's Chain Armbands (A)
+					i(172558),	-- Corrupted Gladiator's Chain Armor (A)
+					i(172546),	-- Corrupted Gladiator's Chain Armbands (H)
+					i(172539),	-- Corrupted Gladiator's Chain Armor (H)
+					i(172567),	-- Corrupted Gladiator's Chain Gauntlets (A)
+					i(172581),	-- Corrupted Gladiator's Chain Waistguard (A)
+					i(172545),	-- Corrupted Gladiator's Chain Waistguard (H)
+					i(172541),	-- Corrupted Gladiator's Chain Gauntlets (H)
+					i(172573),	-- Corrupted Gladiator's Chain Leggings (A)
+					i(172562),	-- Corrupted Gladiator's Chain Sabatons (A)
+					i(172543),	-- Corrupted Gladiator's Chain Leggings (H)
+					i(172540),	-- Corrupted Gladiator's Chain Sabatons (H)
+				}),
+				filter(PLATE, {
+				}),
+			})),
 			n(QUESTS, {
 				q(58279, {	-- Quartermaster's Bounty
 					["isWeekly"] = true,
