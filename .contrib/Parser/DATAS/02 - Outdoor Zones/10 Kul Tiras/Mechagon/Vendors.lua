@@ -115,15 +115,15 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O.
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.\n\nDue to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this recipe on the character. Feel free to spam bug reports about this because it is DUMB.",
+						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 						["cost"] = 14000000,	-- 1,400g
 					}),
 				},
