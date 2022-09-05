@@ -179,9 +179,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 90265,	-- Master Riding
 					},
 					["races"] = { DRAENEI },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(9598, {	-- Redemption (1/2)
 					["qg"] = 17509,	-- Jol <Paladin Trainer>

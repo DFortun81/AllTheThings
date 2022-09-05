@@ -1769,8 +1769,8 @@ root("Zones", m(KALIMDOR, {
 					},
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
-					["races"] = HORDE_ONLY,
-					["qg"] = 46883,	-- Riding Trainer Pamphlet
+					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1.10000" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -1779,6 +1779,8 @@ root("Zones", m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["races"] = { TROLL },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(25179, {	-- Loss Reduction
 					["qg"] = 39270,	-- Injured Razor Hill Grunt

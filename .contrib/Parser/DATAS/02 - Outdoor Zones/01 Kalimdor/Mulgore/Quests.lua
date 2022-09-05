@@ -76,11 +76,10 @@ _.Zones =
 						"spellID", 90265,	-- Master Riding
 					},
 				}),
-				q(14087, {	-- Learn to Ride
-					["u"] = REMOVED_FROM_GAME,
-					["lvl"] = 20,
-					["races"] = { TAUREN },
+				q(14087, {	-- Learn to Ride in Mulgore
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
+					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1.10000" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -88,6 +87,8 @@ _.Zones =
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["races"] = { TAUREN },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(766,   {	-- Mazzranache
 					["u"] = REMOVED_FROM_GAME,

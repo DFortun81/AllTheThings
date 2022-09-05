@@ -1199,9 +1199,7 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 90265,	-- Master Riding
 					},
 					["races"] = { BLOODELF },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 10, 20),
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(8480, {	-- Lost Armaments
 					["qg"] = 15404,	-- Velendris Whitemorn

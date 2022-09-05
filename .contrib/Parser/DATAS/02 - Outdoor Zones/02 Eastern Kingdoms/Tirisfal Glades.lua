@@ -1414,6 +1414,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -1422,8 +1423,8 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 20,
+					["races"] = { UNDEAD },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(24998, {	-- Maggot Eye
 					["qg"] = 38978,	-- Apprentice Crispin
