@@ -352,7 +352,10 @@ root("Zones", {
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation.
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly StandingID
+						-- #endif
 					}),
 					q(50131, {	-- An Outside Perspective
 						["qg"] = 17923,	-- Fahssn
@@ -366,7 +369,10 @@ root("Zones", {
 						["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already.
 						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral StandingID
+						-- #endif
 					}),
 					q(9788,  {	-- A Damp, Dark Place
 						["qg"] = 17956,	-- Ikeyen

@@ -743,8 +743,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 						-- #if AFTER SHADOWLANDS
 						["lockCriteria"] = { 1, "lvl", 31 },
+						-- #else
+						["lockCriteria"] = { 1, "lvl", 80 },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							title(131),	-- , Herald of the Titans
 						},
 					}),

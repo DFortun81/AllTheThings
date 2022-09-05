@@ -1772,6 +1772,13 @@ root("Zones", m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["qg"] = 46883,	-- Riding Trainer Pamphlet
 					["timeline"] = { "added 3.3.0.10958", "removed 4.0.1.10000" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(25179, {	-- Loss Reduction
 					["qg"] = 39270,	-- Injured Razor Hill Grunt

@@ -81,6 +81,13 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = { TAUREN },
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 				}),
 				q(766,   {	-- Mazzranache
 					["u"] = REMOVED_FROM_GAME,

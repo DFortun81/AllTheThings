@@ -67,6 +67,13 @@ _.Zones =
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),

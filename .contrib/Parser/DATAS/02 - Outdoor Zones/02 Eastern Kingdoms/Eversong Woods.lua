@@ -1191,6 +1191,13 @@ root("Zones", m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0.10958", "removed 5.2.0.10000" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

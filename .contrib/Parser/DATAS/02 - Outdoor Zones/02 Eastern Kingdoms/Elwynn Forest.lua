@@ -1815,6 +1815,13 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),

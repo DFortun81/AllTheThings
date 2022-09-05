@@ -1642,11 +1642,25 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = { GNOME },
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = { DWARF },
 				}),
 				q(1679, {	-- Muren Stormpike
