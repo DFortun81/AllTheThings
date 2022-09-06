@@ -174,7 +174,9 @@ root("Holidays", applyholiday(BREWFEST, {
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			}),
-			ach(1260),	-- Almost Blind Luck
+			-- #if AFTER MOP
+			ach(1260),	-- Almost Blind Luck [MOP+] / Drunken Stupor
+			-- #endif
 			classicAch(1293, {	-- Blue Brewfest Stein [Removed]
 				["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
@@ -226,8 +228,19 @@ root("Holidays", applyholiday(BREWFEST, {
 					["cost"] = { { "i", 37488, 1 } },	-- Wild Winter Pilsner
 				}),
 			}),
-			ach(295),	-- Direbrewfest
-			ach(293),	-- Disturbing the Peace
+			ach(293, {	-- Disturbing the Peace
+				["providers"] = {
+					{ "i", 33968 },	-- Blue Brewfest Hat
+					{ "i", 33864 },	-- Brown Brewfest Hat
+					{ "i", 33967 },	-- Green Brewfest Hat
+					{ "i", 33969 },	-- Purple Brewfest Hat
+					{ "i", 33863 },	-- Brewfest Dress
+					{ "i", 33862 },	-- Brewfest Regalia
+					{ "i", 33868 },	-- Brewfest Boots
+					{ "i", 33966 },	-- Brewfest Slippers
+				},
+				["maps"] = { DALARAN },
+			}),
 			classicAch(1936, {	-- Does Your Wolpertinger Linger?
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 				["timeline"] = { "added 2.2.2" },
@@ -235,9 +248,9 @@ root("Holidays", applyholiday(BREWFEST, {
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
 			}),
-			ach(1186, {	-- Down With The Dark Iron
-				["timeline"] = { "added 3.0.1", "removed 8.2.0" },
-			}),
+			-- #if BEFORE MOP
+			ach(1260),	-- Drunken Stupor / Almost Blind Luck [MOP+]
+			-- #endif
 			classicAch(4782, {	-- Green Brewfest Stein [Removed]
 				["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
@@ -406,6 +419,7 @@ root("Holidays", applyholiday(BREWFEST, {
 			["lvl"] = 65,
 			-- #endif
 			["groups"] = {
+				ach(295),	-- Direbrewfest
 				i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 					["timeline"] = { "added 6.0.1.18594" },
 					["lvl"] = 98,
