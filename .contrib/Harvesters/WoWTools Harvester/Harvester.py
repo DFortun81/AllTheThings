@@ -34,7 +34,7 @@ def add_latest_build(build: str) -> None:
     for thing in Things:
         if thing == Things.Creature:
             break
-        with open(Path("BuildLists", f"{thing.name}.txt"), "a") as build_list:
+        with open(Path("Builds", f"{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
 
@@ -154,38 +154,29 @@ def get_existing_ids(thing: Things) -> list[str]:
     return existing_ids
 
 
+def build_profession_dict() -> dict[str, int]:
+    """This function generate profession dict relating professions and skillLineIDs"""
+    skillline_path = Path("Raw", f"SkillLine.txt")
+    profession_dict = {}
+    with open(skillline_path) as skillline_file:
+        for skillline_line in skillline_file:
+            id, profession = skillline_line.split(",")
+            id = int(re.sub("[^0-9^.]", "", id))
+            profession = re.sub("[^0-9^.]", "", profession)
+            profession_dict[profession] = id
+    return profession_dict
+
+
 def sort_raw_file_recipes() -> None:
     """Sort raw files for recipes."""
-    # TODO: This dict should be able to be done automatically from SkillLine Helper
-    profession_dict = {
-        "Abominable Stitching": 2787,
-        "Alchemy": 171,
-        "Archaeology": 794,
-        "Ascension Crafting": 2791,
-        "Blacksmithing": 164,
-        "Cooking": 185,
-        "Enchanting": 333,
-        "Engineering": 202,
-        "Herbalism": 182,
-        "Fishing": 356,
-        "Inscription": 773,
-        "Jewelcrafting": 755,
-        "Junkyard Tinkering": 2720,
-        "Leatherworking": 165,
-        "Mining": 186,
-        "Protoform Synthesis": 2819,
-        "Runeforging": 960,
-        "Skinning": 393,
-        "Soul Cyphering": 2777,
-        "Tailoring": 197,
-    }
+    profession_dict= build_profession_dict()
     raw_path_dict = {
-        profession: Path("Backups", f"Raw{profession}.txt")
+        profession: Path("Raw", "Professions", f"{profession}.txt")
         for profession in profession_dict
     }
     with (
-        open(Path("Backups", "RawRecipes")) as raw_file,
-        open(Path("BuildLists", "Recipes.txt")) as build_file,
+        open(Path("Raw", "Recipes")) as raw_file,
+        open(Path("Builds", "Recipes.txt")) as build_file,
     ):
         builds = build_file.readlines()
         raw_lines = raw_file.readlines()
@@ -202,8 +193,8 @@ def sort_raw_file_recipes() -> None:
 
 def create_raw_file(thing: Things) -> None:
     """Create a raw file for a thing."""
-    raw_path = Path("Backups", f"Raw{thing.name}.txt")
-    builds_path = Path("BuildLists", f"{thing.name}.txt")
+    raw_path = Path("Raw", f"{thing.name}.txt")
+    builds_path = Path("Builds", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
         for build in builds_file:
             thing_list = get_thing_ids(thing, build.strip())
@@ -213,70 +204,169 @@ def create_raw_file(thing: Things) -> None:
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(set(thing_list) - set(old_lines), key=float)
                 raw_file.writelines(difference)
-    if thing == Things.Recipes:
-        sort_raw_file_recipes()
+
+
+def get_exclusive_recipes(profession: str) -> list[str]:
+    """Get the exclusive IDs of a thing from the Exclusion Folder"""
+    exclusion_path = Path("Exclusion", "Profession", f"{profession}.txt")
+    exclusion_list = list[str]()
+    with open(exclusion_path) as exclusion_file:
+        exclusion_lines = exclusion_file.readlines()
+        for exclusion_line in exclusion_lines:
+            exclusion_id = exclusion_line.split(",")[0]
+            exclusion_list.append(exclusion_id+"\n")
+    return exclusion_list
+
+
+def get_exclusive_ids(thing: Things) -> list[str]:
+    """Get the exclusive IDs of a thing from the Exclusion Folder"""
+    if thing.value > Things.Transmog.value:
+        raise NotImplementedError("This is not a real collectible.")
+    exclusion_path = Path("Exclusion", f"{thing.name}.txt")
+    exclusion_list = list[str]()
+    with open(exclusion_path) as exclusion_file:
+        exclusion_lines = exclusion_file.readlines()
+        for exclusion_line in exclusion_lines:
+            exclusion_id = exclusion_line.split(",")[0]
+            exclusion_list.append(exclusion_id+"\n")
+    return exclusion_list
+
+
+def create_missing_recipes() -> None:
+    """Exactly like create_missing but for recipes.. since they are dumb"""
+    profession_dict = build_profession_dict()
+    datas_folder = Path("..", "..", "Parser", "DATAS")
+    raw_path_dict = {
+        profession: Path("Raw", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    missing_path_dict = {
+        profession: Path(datas_folder, "00 - Item Database", "MissingIDs", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    itemDB_path_dict = {
+        profession: Path(datas_folder, "00 - Item Database", "ProfessionDB", f"{profession}ItemDB.txt")
+        for profession in profession_dict
+    }
+    for profession in profession_dict:
+        with (
+            open(raw_path_dict[profession]) as raw_file,
+            open(missing_path_dict[profession], "w") as missing_file,
+        ):
+            raw_lines = raw_file.readlines()
+            # TODO: this only finds new Things, not removed Things
+            difference = sorted(
+                set(raw_lines) - set(get_existing_ids(Things.Recipes)) - set(get_exclusive_recipes(profession)),
+                key=raw_lines.index,
+            )
+            missing_file.writelines(difference)
+        itemDB_list = list[str]()
+        with open(itemDB_path_dict[profession]) as itemDB_file:
+            for line in itemDB_file:
+                line = line.split(";")[0].split(",")[1]
+                line = re.sub("[^0-9]", "", line)
+                itemDB_list.append(line + "\n")
+            difference = sorted(set(raw_lines) - set(itemDB_list), key=raw_lines.index)
+            missing_file.write(f"\n\n\n\nMissing in {profession}ITemDB.lua\n\n")
+            missing_file.writelines(difference)
+
+
+def seperation(thing: Things, raw_lines: list[str]) -> list[str]:
+    """ Since everything have something else now from getting raw data.. We only need to check ID first. ://. This needs to be done with everything except Quests witch now only has ID"""
+    if thing == Things.Achievements:
+        id_list = list[str]()
+        for raw_line in raw_lines:
+            id = raw_line.split(",")[0]
+            id_list.append(id+"\n")
+    return id_list
 
 
 def create_missing_file(thing: Things) -> None:
-    """Create a missing file for a thing using difference between Categories.lua and raw file."""
+    """Create a missing file for a thing using difference between Categories.lua and raw file and exclusives."""
     if thing.value > Things.Transmog.value:
         raise NotImplementedError("This is not a real collectible.")
-    raw_path = Path("Backups", f"Raw{thing.name}.txt")
-    exclusion_path = Path("Exclusion", f"Exclusion{thing.name}.txt")
-    datas_folder = Path("..", "..", "Parser", "DATAS")
-    missing_path = Path(
-        datas_folder,
-        "00 - Item Database",
-        "MissingIDs",
-        f"Missing{thing.name}.txt",
-    )
-    with (
-        open(raw_path) as raw_file,
-        open(missing_path, "w") as missing_file,
-        open(exclusion_path) as exclusion_file,
-    ):
-        raw_lines = raw_file.readlines()
-        exclusion_lines = exclusion_file.readlines()
-        # TODO: this only finds new Things, not removed Things
-        difference = sorted(
-            set(raw_lines) - set(get_existing_ids(thing)) - set(exclusion_lines),
-            key=raw_lines.index,
+    if thing == Things.Recipes:
+        create_missing_recipes()
+    else:
+        raw_path = Path("Raw", f"{thing.name}.txt")
+        datas_folder = Path("..", "..", "Parser", "DATAS")
+        missing_path = Path(
+            datas_folder,
+            "00 - Item Database",
+            "MissingIDs",
+            f"Missing{thing.name}.txt",
         )
-        missing_file.writelines(difference)
-        # Extra Searches here
-        # elif thing == "Flight Paths":
-        # Maybe need to check Flight Paths file?
-        # elif thing == "Illusions":
-        # There is an Illusions file?
-        if thing == Things.Mounts:
-            mount_path = Path(datas_folder, "00 - DB", "MountDB.lua")
-            mount_list = list[str]()
-            with open(mount_path) as mount_file:
-                for mount_line in mount_file:
-                    mount_line = mount_line.split(";")[0].split(",")[1]
-                    mount_line = re.sub("[^0-9]", "", mount_line)
-                    mount_list.append(mount_line + "\n")
-            # TODO: this only finds new Mounts, not removed Mounts
-            difference = sorted(set(raw_lines) - set(mount_list), key=raw_lines.index)
-            missing_file.write("\n\n\n\n" + "Missing in MountDB.lua\n\n")
+        with (
+            open(raw_path) as raw_file,
+            open(missing_path, "w") as missing_file,
+        ):
+            raw_lines = seperation(raw_file.readlines())
+            # TODO: this only finds new Things, not removed Things
+            difference = sorted(
+                set(raw_lines) - set(get_existing_ids(thing)) - set(get_exclusive_ids(thing)),
+                key=raw_lines.index,
+            )
             missing_file.writelines(difference)
-        # elif thing == "Pets":
-        # Checking Pet.lua
-        # elif thing == "Recipes":
-        # Checking the Profession DBs
-        elif thing == Things.Toys:
-            toy_path = Path(datas_folder, "00 - DB", "ToyDB.lua")
-            toy_list = list[str]()
-            with open(toy_path) as toy_file:
-                for toy_line in toy_file:
-                    toy_line = toy_line.split(";")[0]
-                    if toy_line.startswith("i("):
-                        toy_line = re.sub("[^0-9]", "", toy_line)
-                        toy_list.append(toy_line + "\n")
-            # TODO: this only finds new Toys, not removed Toys
-            difference = sorted(set(raw_lines) - set(toy_list), key=raw_lines.index)
-            missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua\n\n")
-            missing_file.writelines(difference)
+            # Extra Searches here
+            if thing == Things.FlightPaths:
+                FP_path = Path("..", "..", "..", "db", "FlightPathDB.lua")
+                FP_list = list[str]()
+                with open(FP_path) as FP_file:
+                    for FP_line in FP_file:
+                        FP_line = FP_line.split("=")[0]
+                        FP_line = re.sub("[^0-9]", "", FP_line)
+                        FP_list.append(FP_line+"\n")
+                difference = sorted(set(raw_lines) - set(FP_list), key=raw_lines.index)
+                missing_file.write("\n\n\n\n" + "Missing in FligtPathDB.lua\n\n")
+                missing_file.writelines(difference)
+            elif thing == Things.Illusions:
+                illusion_path = Path(datas_folder, "00 - Item Database", "Illusions.lua")
+                illusion_list = list[str]()
+                with open(illusion_path) as illusion_file:
+                    for illusion_line in illusion_file:
+                        illusion_str, illusion_int = illusion_line.split("=")
+                        if '["illusionID"]' in illusion_str:
+                            illusion_int = re.sub("[^0-9]", "", illusion_int)
+                            illusion_list.append(illusion_int + "\n")
+                difference = sorted(set(raw_lines) - set(illusion_list), key=raw_lines.index)
+                missing_file.write("\n\n\n\n" + "Missing in Illusions.lua\n\n")
+                missing_file.writelines(difference)
+            elif thing == Things.Mounts:
+                mount_path = Path(datas_folder, "00 - DB", "MountDB.lua")
+                mount_list = list[str]()
+                with open(mount_path) as mount_file:
+                    for mount_line in mount_file:
+                        mount_line = mount_line.split(";")[0].split(",")[1]
+                        mount_line = re.sub("[^0-9]", "", mount_line)
+                        mount_list.append(mount_line + "\n")
+                # TODO: this only finds new Mounts, not removed Mounts
+                difference = sorted(set(raw_lines) - set(mount_list), key=raw_lines.index)
+                missing_file.write("\n\n\n\n" + "Missing in MountDB.lua\n\n")
+                missing_file.writelines(difference)
+            elif thing == Things.Pets:
+                pet_path = Path(datas_folder, "00 - DB", "PetDB.lua")
+                pet_list = list[str]()
+                with open(pet_path) as pet_file:
+                    for pet_line in pet_file:
+                        pet_line = pet_line.split(";")[0].split(",")[1]
+                        pet_line = re.sub("[^0-9]", "", pet_line)
+                        pet_list.append(pet_line + "\n")
+                difference = sorted(set(raw_lines) - set(pet_list), key=raw_lines.index)
+                missing_file.write("\n\n\n\n" + "Missing in PetDB.lua\n\n")
+                missing_file.writelines(difference)
+            elif thing == Things.Toys:
+                toy_path = Path(datas_folder, "00 - DB", "ToyDB.lua")
+                toy_list = list[str]()
+                with open(toy_path) as toy_file:
+                    for toy_line in toy_file:
+                        toy_line = toy_line.split(";")[0]
+                        if toy_line.startswith("i("):
+                            toy_line = re.sub("[^0-9]", "", toy_line)
+                            toy_list.append(toy_line + "\n")
+                # TODO: this only finds new Toys, not removed Toys
+                difference = sorted(set(raw_lines) - set(toy_list), key=raw_lines.index)
+                missing_file.write("\n\n\n\n" + "Missing in ToyDB.lua\n\n")
+                missing_file.writelines(difference)
 
 
 def add_latest_data(build: str) -> None:
