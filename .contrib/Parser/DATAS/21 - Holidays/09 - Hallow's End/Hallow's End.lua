@@ -658,7 +658,9 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			}),
 			ach(5837, {	-- Tricks and Treats of Cataclysm (A)
 				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(17682, {	-- Deepholm, Temple of Earth
 						["coord"] = { 47.4, 51.7, DEEPHOLM },
@@ -703,10 +705,13 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 49.7, 57.4, 203 },
 					}),
 				},
+				]]--
 			}),
 			ach(5838, {	-- Tricks and Treats of Cataclysm (H)
 				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(17704, {	-- Deepholm, Temple of Earth
 						["coord"] = { 51.2, 50.0, DEEPHOLM },
@@ -748,9 +753,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 51.3, 60.6, 203 },
 					}),
 				},
+				]]--
 			}),
 			ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(18418, {	-- Arathi Highlands, Refuge Point
 						["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
@@ -879,9 +887,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.2.0" },
 					}),
 				},
+				]]--
 			}),
 			ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(2147, {	-- Arathi Highlands, Hammerfall
 						["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
@@ -986,9 +997,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["timeline"] = { "added 4.2.0" },
 					}),
 				},
+				]]--
 			}),
 			ach(963, {	-- Tricks and Treats of Kalimdor (A)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(2071, {	-- Ashenvale, Astranaar
 						["coord"] = { 37.0, 49.3, ASHENVALE },
@@ -1133,9 +1147,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					}),
 					-- #endif
 				},
+				]]--
 			}),
 			ach(965, {	-- Tricks and Treats of Kalimdor (H)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(17610, {	-- Ashenvale, Hellscream's Watch
 						["coord"] = { 38.6, 42.4, ASHENVALE },
@@ -1287,10 +1304,13 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					}),
 					-- #endif
 				},
+				]]--
 			}),
 			ach(5836, {	-- Tricks and Treats of Northrend (A)
 				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(17660, {	-- Borean Tundra, Fizzcrank Airstrip
 						["coord"] = { 57.1, 18.8, BOREAN_TUNDRA },
@@ -1360,10 +1380,13 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 59.3, 57.2, ZULDRAK },
 					}),
 				},
+				]]--
 			}),
 			ach(5835, {	-- Tricks and Treats of Northrend (H)
 				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(17636, {	-- Borean Tundra, Bor'gorok Outpost
 						["coord"] = { 49.7, 10.0, BOREAN_TUNDRA },
@@ -1439,9 +1462,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 59.3, 57.2, ZULDRAK },
 					}),
 				},
+				]]--
 			}),
 			ach(969, {	-- Tricks and Treats of Outlands (A)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(2204, {	-- Blade's Edge Mountains, Evergrove
 						["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -1495,9 +1521,12 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 67.2, 49.0, ZANGARMARSH },
 					}),
 				},
+				]]--
 			}),
 			ach(968, {	-- Tricks and Treats of Outlands (H)
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(2204, {	-- Blade's Edge Mountains, Evergrove
 						["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -1548,10 +1577,13 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 78.5, 62.9, ZANGARMARSH },
 					}),
 				},
+				]]--
 			}),
 			ach(7601, {	-- Tricks and Treats of Pandaria (A)
 				["timeline"] = { "added 5.0.4.16016" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
 					crit(21927, {	-- Dread Wastes, Klaxi'vess
 						["coord"] = { 55.9, 32.3, DREAD_WASTES },
@@ -1620,10 +1652,13 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				},
+				]]--
 			}),
 			ach(7602, {	-- Tricks and Treats of Pandaria (H)
 				["timeline"] = { "added 5.0.4.16016" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
 					crit(21927, {	-- Dread Wastes, Klaxxi'vess
 						["coord"] = { 55.9, 32.3, DREAD_WASTES },
@@ -1698,6 +1733,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				},
+				]]--
 			}),
 		}),
 		-- #endif

@@ -3820,7 +3820,10 @@ ResolveSymbolicLink = function(o)
 					local achievementID = o.achievementID;
 					local cache;
 					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
-						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString = GetAchievementCriteriaInfo(achievementID, criteriaID);
+						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
+						local criteriaObject = app.CreateAchievementCriteria(id);
+						criteriaObject.achievementID = achievementID;
+						tinsert(searchResults, criteriaObject);
 						if criteriaType == 27 then
 							cache = app.SearchForField("questID", assetID);
 						else
@@ -3830,11 +3833,11 @@ ResolveSymbolicLink = function(o)
 							local uniques = {};
 							MergeObjects(uniques, cache);
 							for i,o in ipairs(uniques) do
-								o.g = nil;
-								o.achievementID = nil;
-								app.CacheFields(o);
-								o.achievementID = achievementID;
-								tinsert(searchResults, app.CreateAchievementCriteria(criteriaID, o));
+								rawset(o, "text", nil);
+								for key,value in pairs(o) do
+									criteriaObject[key] = value;
+								end
+								rawset(o, "text", criteriaObject.text);
 							end
 						end
 					end
