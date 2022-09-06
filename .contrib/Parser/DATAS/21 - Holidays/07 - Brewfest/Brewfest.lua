@@ -189,41 +189,41 @@ root("Holidays", applyholiday(BREWFEST, {
 				},
 			}),
 			ach(1183, {	-- Brew of the Year
-				crit(1, {	-- Wild Winter Pilsner
-					["cost"] = { { "i", 37488, 1 } },	-- Wild Winter Pilsner
+				crit(3526, {	-- Aromatic Honey Brew
+					["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
 				}),
-				crit(2, {	-- Stranglethorn Brew
-					["cost"] = { { "i", 37494, 1 } },	-- Stranglethorn Brew
-				}),
-				crit(3, {	-- Springtime Stout
-					["cost"] = { { "i", 37492, 1 } },	-- Springtime Stout
-				}),
-				crit(4, {	-- Metok's Bubble Bock
-					["cost"] = { { "i", 37491, 1 } },	-- Metok's Bubble Bock
-				}),
-				crit(5, {	-- Lord of Frost's Private Label
-					["cost"] = { { "i", 37499, 1 } },	-- Lord of Frost's Private Label
-				}),
-				crit(6, {	-- Izzard's Ever Flavor
-					["cost"] = { { "i", 37489, 1 } },	-- Izzard's Ever Flavor
-				}),
-				crit(7, {	-- Draenic Pale Ale
-					["cost"] = { { "i", 37495, 1 } },	-- Draenic Pale Ale
-				}),
-				crit(8, {	-- Blackrock Lager
-					["cost"] = { { "i", 37493, 1 } },	-- Blackrock Lager
-				}),
-				crit(9, {	-- Binary Brew
-					["cost"] = { { "i", 37496, 1 } },	-- Binary Brew
-				}),
-				crit(10, {	-- Bartlett's Bitter Brew
-					["cost"] = { { "i", 37498, 1 } },	-- Bartlett's Bitter Brew
-				}),
-				crit(11, {	-- Autmunal Acorn Ale
+				crit(3525, {	-- Autmunal Acorn Ale
 					["cost"] = { { "i", 37497, 1 } },	-- Autmunal Acorn Ale
 				}),
-				crit(12, {	-- Aromatic Honey Brew
-					["cost"] = { { "i", 37490, 1 } },	-- Aromatic Honey Brew
+				crit(3524, {	-- Bartlett's Bitter Brew
+					["cost"] = { { "i", 37498, 1 } },	-- Bartlett's Bitter Brew
+				}),
+				crit(3523, {	-- Binary Brew
+					["cost"] = { { "i", 37496, 1 } },	-- Binary Brew
+				}),
+				crit(3522, {	-- Blackrock Lager
+					["cost"] = { { "i", 37493, 1 } },	-- Blackrock Lager
+				}),
+				crit(3521, {	-- Draenic Pale Ale
+					["cost"] = { { "i", 37495, 1 } },	-- Draenic Pale Ale
+				}),
+				crit(3520, {	-- Izzard's Ever Flavor
+					["cost"] = { { "i", 37489, 1 } },	-- Izzard's Ever Flavor
+				}),
+				crit(3519, {	-- Lord of Frost's Private Label
+					["cost"] = { { "i", 37499, 1 } },	-- Lord of Frost's Private Label
+				}),
+				crit(3518, {	-- Metok's Bubble Bock
+					["cost"] = { { "i", 37491, 1 } },	-- Metok's Bubble Bock
+				}),
+				crit(3517, {	-- Springtime Stout
+					["cost"] = { { "i", 37492, 1 } },	-- Springtime Stout
+				}),
+				crit(3516, {	-- Stranglethorn Brew
+					["cost"] = { { "i", 37494, 1 } },	-- Stranglethorn Brew
+				}),
+				crit(3515, {	-- Wild Winter Pilsner
+					["cost"] = { { "i", 37488, 1 } },	-- Wild Winter Pilsner
 				}),
 			}),
 			ach(295),	-- Direbrewfest
@@ -263,31 +263,31 @@ root("Holidays", applyholiday(BREWFEST, {
 			ach(1184, {	-- Strange Brew (A)
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					crit(1, {	-- Barleybrew Clear
+					crit(8885, {	-- Barleybrew Clear
 						["provider"] = { "i", 33030 },	-- Barleybrew Clear
 					}),
-					crit(2, {	-- Barleybrew Dark
+					crit(8884, {	-- Barleybrew Dark
 						["provider"] = { "i", 33029 },	-- Barleybrew Dark
 					}),
-					crit(3, {	-- Barleybrew Light
+					crit(8883, {	-- Barleybrew Light
 						["provider"] = { "i", 33028 },	-- Barleybrew Light
 					}),
-					crit(4, {	-- Gordok Grog
+					crit(8878, {	-- Gordok Grog
 						["provider"] = { "i", 33034 },	-- Gordok Grog
 					}),
-					crit(5, {	-- Mudder's Milk
+					crit(9014, {	-- Mudder's Milk
 						["provider"] = { "i", 33036 },	-- Mudder's Milk
 					}),
-					crit(6, {	-- Ogre Mead
+					crit(8882, {	-- Ogre Mead
 						["provider"] = { "i", 33035 },	-- Ogre Mead
 					}),
-					crit(7, {	-- Thunder 45
+					crit(8879, {	-- Thunder 45
 						["provider"] = { "i", 33031 },	-- Thunder 45
 					}),
-					crit(8, {	-- Thunderbrew Ale
+					crit(8880, {	-- Thunderbrew Ale
 						["provider"] = { "i", 33032 },	-- Thunderbrew Ale
 					}),
-					crit(9, {	-- Thunderbrew Stout
+					crit(8881, {	-- Thunderbrew Stout
 						["provider"] = { "i", 33033 },	-- Thunderbrew Stout
 					}),
 				},
@@ -295,60 +295,87 @@ root("Holidays", applyholiday(BREWFEST, {
 			ach(1203, {	-- Strange Brew (H)
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					crit(1, {	-- Brewdoo Magic
+					crit(8889, {	-- Brewdoo Magic
 						["provider"] = { "i", 34021 },	-- Brewdoo Magic
 					}),
-					crit(2, {	-- Gordok Grog
+					crit(8878, {	-- Gordok Grog
 						["provider"] = { "i", 33034 },	-- Gordok Grog
 					}),
-					crit(3, {	-- Jungle River Water
+					crit(8888, {	-- Jungle River Water
 						["provider"] = { "i", 34020 },	-- Jungle River Water
 					}),
-					crit(4, {	-- Long Stride Brew
+					crit(8886, {	-- Long Stride Brew
 						["provider"] = { "i", 34018 },	-- Long Stride Brew
 					}),
-					crit(5, {	-- Mudder's Milk
+					crit(9014, {	-- Mudder's Milk
 						["provider"] = { "i", 33036 },	-- Mudder's Milk
 					}),
-					crit(6, {	-- Ogre Mead
+					crit(8882, {	-- Ogre Mead
 						["provider"] = { "i", 33035 },	-- Ogre Mead
 					}),
-					crit(7, {	-- Path of Brew
+					crit(8887, {	-- Path of Brew
 						["provider"] = { "i", 34019 },	-- Path of Brew
 					}),
-					crit(8, {	-- Small Step Brew
+					crit(8891, {	-- Small Step Brew
 						["provider"] = { "i", 34017 },	-- Small Step Brew
 					}),
-					crit(9, {	-- Stout Shrunken Head
+					crit(8890, {	-- Stout Shrunken Head
 						["provider"] = { "i", 34022 },	-- Stout Shrunken Head
 					}),
 				},
 			}),
 			ach(1185, {	-- The Brewfest Diet
-				crit(1, {	-- Dried Sausage
+				-- #if ANYCLASSIC
+				crit(3542, {	-- Dried Sausage
 					["cost"] = { { "i", 34063, 1 } },	-- Dried Sausage
 				}),
-				crit(2, {	-- Pickled Sausage
+				crit(3543, {	-- Pickled Sausage
 					["cost"] = { { "i", 33024, 1 } },	-- Pickled Sausage
 				}),
-				crit(3, {	-- Savory Sausage
+				-- #else
+				crit(18619, {	-- Dried Sausage
+					["cost"] = { { "i", 34063, 1 } },	-- Dried Sausage
+				}),
+				crit(18622, {	-- Pickled Sausage
+					["cost"] = { { "i", 33024, 1 } },	-- Pickled Sausage
+				}),
+				-- #endif
+				crit(3544, {	-- Savory Sausage
 					["cost"] = { { "i", 33023, 1 } },	-- Savory Sausage
 				}),
-				crit(4, {	-- Spiced Onion Cheese
+				-- #if ANYCLASSIC
+				crit(3545, {	-- Spiced Onion Cheese
 					["cost"] = { { "i", 34065, 1 } },	-- Spiced Onion Cheese
 				}),
-				crit(5, {	-- Spicy Smoked Sausage
+				crit(3546, {	-- Spicy Smoked Sausage
 					["cost"] = { { "i", 33025, 1 } },	-- Spicy Smoked Sausage
 				}),
-				crit(6, {	-- Succulent Sausage
+				crit(3547, {	-- Succulent Sausage
 					["cost"] = { { "i", 34064, 1 } },	-- Succulent Sausage
 				}),
-				crit(7, {	-- The Essential Brewfest Pretzel
+				-- #else
+				crit(18621, {	-- Spiced Onion Cheese
+					["cost"] = { { "i", 34065, 1 } },	-- Spiced Onion Cheese
+				}),
+				crit(18623, {	-- Spicy Smoked Sausage
+					["cost"] = { { "i", 33025, 1 } },	-- Spicy Smoked Sausage
+				}),
+				crit(18620, {	-- Succulent Sausage
+					["cost"] = { { "i", 34064, 1 } },	-- Succulent Sausage
+				}),
+				-- #endif
+				crit(7987, {	-- The Essential Brewfest Pretzel
 					["cost"] = { { "i", 33043, 1 } },	-- The Essential Brewfest Pretzel
 				}),
-				crit(8, {	-- The Golden Link
+				-- #if ANYCLASSIC
+				crit(3549, {	-- The Golden Link
 					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
 				}),
+				-- #else
+				crit(18624, {	-- The Golden Link
+					["cost"] = { { "i", 33026, 1 } },	-- The Golden Link
+				}),
+				-- #endif
 			}),
 			classicAch(1292, {	-- Yellow Brewfest Stein [Removed]
 				["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
