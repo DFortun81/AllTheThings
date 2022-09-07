@@ -3594,7 +3594,7 @@ local ResolveFunctions = {
 		end
 	end,
 	["index"] = function(searchResults, o, cmd, index)
-		-- Instruction to include the search result with a given index within each of the selection's groups.
+		-- Instruction to include the search result with a given index within each of the selection's groups
 		local orig = RawCloneData(searchResults);
 		wipe(searchResults);
 		local s, g;
@@ -3603,6 +3603,68 @@ local ResolveFunctions = {
 			g = s.g;
 			if g and index <= #g then
 				tinsert(searchResults, g[index]);
+			end
+		end
+	end,
+	["not"] = function(searchResults, o, cmd, field, ...)
+		-- Instruction to include only search results where a key value is not a value
+		local s, value;
+		local vals = select("#", ...);
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			for i=1,vals do
+				value = select(i, ...);
+				if s[field] == value then
+					tremove(searchResults, k);
+					break;
+				end
+			end
+		end
+	end,
+	["is"] = function(searchResults, o, cmd, field)
+		-- Instruction to include only search results where a key exists
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if not s[field] then tremove(searchResults, k); end
+		end
+	end,
+	["isnt"] = function(searchResults, o, cmd, field)
+		-- Instruction to include only search results where a key doesn't exist
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if s[field] then tremove(searchResults, k); end
+		end
+	end,
+	["contains"] = function(searchResults, o, cmd, field, ...)
+		-- Instruction to include only search results where a key value/table contains a value
+		local s, kval;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			kval = s[field];
+			-- key doesn't exist at all on the result
+			if not kval then
+				tremove(searchResults, k);
+			-- none of the values match the contains values
+			elseif type(kval) == "table" then
+				if not containsAny(kval, ...) then
+					tremove(searchResults, k);
+				end
+			-- key exists with single value on the result
+			else
+				local match;
+				local vals = select("#", ...);
+				if vals < 1 then
+					print("'contains' had empty value set")
+				end
+				for i=1,vals do
+					if kval == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if not match then
+					tremove(searchResults, k);
+				end
 			end
 		end
 	end,
@@ -3626,73 +3688,6 @@ ResolveSymbolicLink = function(o)
 			if cmdFunc then
 				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
 				cmdFunc(searchResults, o, unpack(sym));
-			elseif cmd == "not" then
-				-- Instruction to include only search results where a key value is not a value
-				if #sym > 3 then
-					local dict = {};
-					for k=2,#sym,2 do
-						dict[sym[k]] = sym[k + 1];
-					end
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						local matched = true;
-						for key,value in pairs(dict) do
-							if not s[key] or s[key] ~= value then
-								matched = false;
-								break;
-							end
-						end
-						if matched then
-							tremove(searchResults, k);
-						end
-					end
-				else
-					local key, value = sym[2], sym[3];
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and s[key] == value then
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "is" then
-				-- Instruction to include only search results where a key exists
-				local key = sym[2];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if not s[key] then tremove(searchResults, k); end
-				end
-			elseif cmd == "isnt" then
-				-- Instruction to include only search results where a key doesn't exist
-				local key = sym[2];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s[key] then tremove(searchResults, k); end
-				end
-			elseif cmd == "contains" then
-				-- Instruction to include only search results where a key value/table contains a value.
-				local key = sym[2];
-				local clone = {unpack(sym)};
-				tremove(clone, 1);
-				tremove(clone, 1);
-				if #clone > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						-- key doesn't exist at all on the result
-						if not s[key] then
-							tremove(searchResults, k);
-						-- key exists with multiple values on the result
-						elseif type(s[key]) == "table" then
-							-- none of the values match the contains values
-							if not containsAny(clone, s[key]) then
-								tremove(searchResults, k);
-							end
-						-- key exists with single value on the result
-						elseif not contains(clone, s[key]) then
-							tremove(searchResults, k);
-						end
-					end
-				end
 			elseif cmd == "exclude" then
 				-- Instruction to exclude search results where a key value contains a value.
 				local key = sym[2];
