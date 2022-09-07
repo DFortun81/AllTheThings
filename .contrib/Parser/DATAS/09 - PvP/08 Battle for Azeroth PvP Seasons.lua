@@ -1950,7 +1950,7 @@ _.PVP =
 					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
 					}),
 				})),
-				filter(CLOTH, { 
+				filter(CLOTH, bubbleDown({ ["bonusID"] = 6376 }, {	-- Correct BonusID Sep 2022
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
 					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
@@ -1967,7 +1967,7 @@ _.PVP =
 					i(172572),	-- Corrupted Gladiator's Silk Leggings (A)
 					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
 					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
-				}),
+				})),
 				filter(LEATHER, { 
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
 					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
@@ -2022,7 +2022,7 @@ _.PVP =
 					i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
 					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
 				}),
-			})),
+			}),
 			n(QUESTS, {
 				q(58279, {	-- Quartermaster's Bounty
 					["isWeekly"] = true,
