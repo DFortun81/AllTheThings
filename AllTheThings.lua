@@ -15540,42 +15540,41 @@ local function SetRowData(self, row, data)
 			self.processingLinks = true;
 		-- WARNING: DEV ONLY START
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
-		elseif data.reSource and (not data.q or data.q > 1) then
-			-- If it doesn't, the source ID will need to be harvested.
-			local s, success = GetSourceID(text) or (data.artifactID and data.s);
-			if s and s > 0 then
-				data.reSource = nil;
-				-- only save the source if it is different than what we already have
-				if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
-					print("SourceID Update",data.text,data.s,"=>",s);
-					-- print(GetItemInfo(text))
-					data.s = s;
-					if data.collected then
-						data.parent.progress = data.parent.progress + 1;
-					end
-					if data.artifactID then
-						local artifact = AllTheThingsArtifactsItems[data.artifactID];
-						if not artifact then
-							artifact = {};
+		elseif data.reSource then
+			if not data.q or data.q > 1 then
+				-- If it doesn't, the source ID will need to be harvested.
+				local s, success = GetSourceID(text) or (data.artifactID and data.s);
+				if s and s > 0 then
+					-- only save the source if it is different than what we already have
+					if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
+						print("SourceID Update",data.text,data.s,"=>",s);
+						-- print(GetItemInfo(text))
+						data.s = s;
+						if data.collected then
+							data.parent.progress = data.parent.progress + 1;
 						end
-						artifact[data.isOffHand and 1 or 2] = s;
-						AllTheThingsArtifactsItems[data.artifactID] = artifact;
-					else
-						app.SaveHarvestSource(data);
+						if data.artifactID then
+							local artifact = AllTheThingsArtifactsItems[data.artifactID];
+							if not artifact then
+								artifact = {};
+							end
+							artifact[data.isOffHand and 1 or 2] = s;
+							AllTheThingsArtifactsItems[data.artifactID] = artifact;
+						else
+							app.SaveHarvestSource(data);
+						end
 					end
+				elseif success then
+					print("Success without a SourceID", text);
+				else
+					-- print("NARP", text);
+					data.s = nil;
+					data.parent.total = data.parent.total - 1;
 				end
-			elseif success then
-				print("Success without a SourceID", text);
-			else
-				-- print("NARP", text);
-				data.s = nil;
-				data.reSource = nil;
-				data.parent.total = data.parent.total - 1;
 			end
-		-- else
-			-- data.reSource = nil;
-		-- WARNING: DEV ONLY END
+			data.reSource = nil;
 		end
+		-- WARNING: DEV ONLY END
 		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
 		local x = CalculateRowIndent(data) * rowPad + rowPad;
 		row.indent = x;
@@ -19788,11 +19787,12 @@ customWindowUpdates["ItemFinder"] = function(self, ...)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates["Harvester"] = function(self)
+customWindowUpdates["Harvester"] = function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			self.doesOwnUpdate = true;
+			force = true;
 			-- ensure Debug is enabled to fully capture all information
 			if not app.MODE_DEBUG then
 				app.print("Enabled Debug Mode");
@@ -19802,7 +19802,7 @@ customWindowUpdates["Harvester"] = function(self)
 
 			local db = {};
 			db.g = {};
-			db.text = "Harvesting All Items";
+			db.text = "Harvesting All Item SourceIDs";
 			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
 			db.visible = true;
@@ -19813,7 +19813,6 @@ customWindowUpdates["Harvester"] = function(self)
 
 			local harvested = {};
 			local minID,maxID,oldRetries = app.customHarvestMin or self.min,app.customHarvestMax or self.max,app.MaximumItemInfoRetries;
-			local tremove, tonumber = tremove, tonumber;
 			self.min = minID;
 			self.max = maxID;
 			app.MaximumItemInfoRetries = 10;
@@ -19874,57 +19873,61 @@ customWindowUpdates["Harvester"] = function(self)
 					end
 				end
 			end
+			-- total doesnt change
+			local total = #db.g;
+			db.total = total;
+			db.progress = 0;
 			self:SetData(db);
-			BuildGroups(db, db.g);
-			self.ScrollBar:SetValue(#db.g);
+			self:BuildData();
+			self.ScrollBar:SetValue(1);
 			self.UpdateDone = function(self)
-				-- Hide data which have completed their harvest
-				local progress = 0;
-				local total = 0;
-				for i,group in ipairs(db.g) do
-					total = total + 1;
-					if not group.reSource then
-						group.visible = false;
+				-- rowdata = set of visible groups which can show in the window
+				local rowData = self.rowData;
+				-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
+				local progress = rowData[1].progress;
+				-- Adjust progress of first chunk of completed harvests
+				local group, rowSourced;
+				for i=2,100 do
+					group = rowData[i];
+					-- count how many visible & processed groups we find to increment the progress
+					if group and group.visible and not group.reSource then
+						group.visible = nil;
 						progress = progress + 1;
-						group.reSource = nil;
+						rowSourced = true;
 					end
 				end
-				if self.rowData then
-					-- Remove up to 100 completed rows each frame (no need to process through thousands of rows when only a few update each frame)
-					local count = #self.rowData;
-					if count > 1 then
-						self.rowData[1].progress = progress;
-						self.rowData[1].total = total;
-						for i=count,count-100,-1 do
-							if self.rowData[i] and not self.rowData[i].visible then
-								tremove(self.rowData, i);
-							end
-						end
-						self.ScrollBar:SetValue(count);
-					else
-						app.Sort(AllTheThingsHarvestItems);
-						app.Sort(AllTheThingsArtifactsItems);
-						-- revert Debug if it was enabled by the harvester
-						if self.forcedDebug then
-							app.print("Reverted Debug Mode");
-							app.Settings:ToggleDebugMode();
-							self.forcedDebug = nil;
-						end
-						app.print("Source Harvest Complete! ItemIDs:",self.min,"->",self.max);
-						-- revert the number of retries to retrieve item information
-						app.MaximumItemInfoRetries = oldRetries or 400;
-						-- reset the window so it can be used to harvest again without reloading
-						self.UpdateDone = nil;
-						self.initialized = nil;
-						self:SetData(nil);
-						return;
+				-- for some reason the total changes outside of this function... so make sure it stays constant
+				rowData[1].total = total;
+				rowData[1].progress = progress;
+				if progress >= total then
+					app.Sort(AllTheThingsHarvestItems);
+					app.Sort(AllTheThingsArtifactsItems);
+					-- revert Debug if it was enabled by the harvester
+					if self.forcedDebug then
+						app.print("Reverted Debug Mode");
+						app.Settings:ToggleDebugMode();
+						self.forcedDebug = nil;
 					end
+					app.print("Source Harvest Complete! ItemIDs:",self.min,"->",self.max);
+					-- revert the number of retries to retrieve item information
+					app.MaximumItemInfoRetries = oldRetries or 400;
+					-- TODO: reset the window so it can be used to harvest again without reloading, only via the command, not another update
+					self.UpdateDone = nil;
+					-- self.initialized = nil;
+					-- self:SetData(nil);
+					self:BaseUpdate();
+					return;
 				end
-				-- Update the Harvester Window to re-populate row data for next refresh
-				Callback(self.Refresh, self);
+				if not rowSourced then
+					-- Soft-Update if needed to remove processed items
+					self:BaseUpdate();
+				else
+					-- Otherwise refresh the Harvester Window to harvest current row data for next refresh
+					self:Refresh();
+				end
 			end
 		end
-		self:BaseUpdate(true);
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates["SourceFinder"] = function(self)
