@@ -289,10 +289,21 @@ local contains = function(arr, value)
 		if value2 == value then return true; end
 	end
 end
-local containsAny = function(arr, otherArr)
-	for _,v in ipairs(arr) do
-		for _,w in ipairs(otherArr) do
-			if v == w then return true; end
+local containsAny = function(arr, ...)
+	local value = select(1, ...);
+	if value and type(value) == "table" then
+		for _,v in ipairs(arr) do
+			for _,w in ipairs(value) do
+				if v == w then return true; end
+			end
+		end
+	else
+		local vals = select("#", ...);
+		for i=1,vals do
+			value = select(i, ...);
+			for _,v in ipairs(arr) do
+				if v == value then return true; end
+			end
 		end
 	end
 end
