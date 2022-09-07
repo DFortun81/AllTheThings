@@ -1930,8 +1930,8 @@ _.PVP =
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376 }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
-				n(BACK, {
+			n(PVP_ELITE, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
+				n(BACK, bubbleDown({ ["bonusID"] = 6376 }, {	-- Correct BonusID Sep 2022
 					-- Was given randomly after winning a pvp match while above 2400 rating
 					i(167373, {	-- Notorious Gladiator's Cape (A)
 					}),
@@ -1949,8 +1949,8 @@ _.PVP =
 					}),
 					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
 					}),
-				}),
-				filter(CLOTH, {
+				})),
+				filter(CLOTH, { 
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
 					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
@@ -1968,7 +1968,7 @@ _.PVP =
 					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
 					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
 				}),
-				filter(LEATHER, {
+				filter(LEATHER, { 
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
 					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
 					i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
@@ -1986,7 +1986,7 @@ _.PVP =
 					i(172599),	-- Corrupted Gladiator's Leather Pants (H)
 					i(172596),	-- Corrupted Gladiator's Leather Footguards (H)
 				}),
-				filter(MAIL, {
+				filter(MAIL, { 
 					i(172569),	-- Corrupted Gladiator's Chain Helm (A)
 					i(172542),	-- Corrupted Gladiator's Chain Helm (H)
 					i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
@@ -2118,6 +2118,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63573),	-- Dread Gladiator's Chain (Hunter, Shaman - Alliance)
 		q(63574),	-- Dread Gladiator's Leathers (Rogue, Monk, Druid, Demon Hunter - Alliance)
 		q(63575),	-- Dread Gladiator's Vestment (Priest, Mage, Warlock - Alliance)
+		
 		-- PvP Arsenals
 		q(63223),	-- Dread Gladiator's Arsenal (Alliance)
 		q(63224),	-- Dread Gladiator's Arsenal (Horde)
