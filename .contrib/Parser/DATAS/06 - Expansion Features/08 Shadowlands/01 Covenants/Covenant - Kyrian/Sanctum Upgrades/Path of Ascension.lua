@@ -1768,6 +1768,7 @@ root("HiddenQuestTriggers", {
 
 	q(63165),	-- after earning To the Moon achievement
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
+	q(62990),	-- Arsenal: Wisdom's Weapon Cache
 	q(63018),	-- learning Ensemble: Vestments of the Discordant
 	q(63019),	-- learning Ensemble: Garb of the Discordant
 	q(63020),	-- learning Ensemble: Chain of the Discordant
