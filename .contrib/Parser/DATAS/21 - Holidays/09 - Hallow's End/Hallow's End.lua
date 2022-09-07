@@ -2026,7 +2026,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				i(34074, {	-- Witches Band
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				}),
-				-- #if BEFORE WRATH
+				-- #if BEFORE CATA
 				i(33154, {	-- Sinister Squashling
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
