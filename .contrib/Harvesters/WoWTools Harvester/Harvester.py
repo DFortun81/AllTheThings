@@ -210,10 +210,8 @@ def create_raw_file(thing: Things) -> None:
 
 def extract_first_column(csv_path: Path) -> list[str]:
     """Extracts first column from CSV file."""
-    column = list[str]()
     with open(csv_path) as csv_file:
-        column = [line.split(",")[0] + "\n" for line in csv_file]
-    return column
+        return [line.split(",")[0] + "\n" for line in csv_file]
 
 
 def create_missing_recipes() -> None:
