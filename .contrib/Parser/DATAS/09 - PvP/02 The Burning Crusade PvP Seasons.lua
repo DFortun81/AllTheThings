@@ -1146,7 +1146,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
 			-- Horde OG: n(12793,  {	-- Brave Stonehide
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				i(33945, { -- Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -1254,6 +1254,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(24551, { -- Talisman of the Horde
 					["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 				}),
+			}),
+		}),
+		n(REWARDS, {
+			ach(886, {	-- Swift Nether Drake
+				["provider"] = { "i", 30609 },	-- Swift Nether Drake
+				["timeline"] = { "added 2.0.1.6180", "removed 2.3.0.7501" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_ONE .. [[; end]],
+				-- #endif
+			}),
+			i(30609, {	-- Swift Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 2.0.1.6180", "removed 2.3.0.7501" },
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_ONE .. [[; end]],
+				-- #endif
 			}),
 		}),
 	}),
@@ -1910,7 +1927,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				i(33946, { -- Merciless Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -1966,6 +1983,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(33057, { -- Veteran's Band of Triumph
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
+			}),
+		}),
+		n(REWARDS, {
+			ach(887, {	-- Merciless Nether Drake
+				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
+				["timeline"] = { "added 2.3.0.7501", "removed 2.4.2.8301" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_TWO .. [[; end]],
+				-- #endif
+			}),
+			i(34092, {	-- Merciless Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 2.3.0.7501", "removed 2.4.2.8301" },
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_TWO .. [[; end]],
+				-- #endif
 			}),
 		}),
 	})),
@@ -2638,7 +2672,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				i(33947, { -- Vengeful Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2720,6 +2754,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				applyclassicphase(TBC_PHASE_FOUR, i(34580, { -- Battlemaster's Perseverance
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				})),
+			}),
+		}),
+		n(REWARDS, {
+			ach(888, {	-- Vengeful Nether Drake
+				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
+				["timeline"] = { "added 2.4.2.8301", "removed 2.4.3.8600" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
+				-- #endif
+			}),
+			i(37676, {	-- Vengeful Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 2.4.2.8301", "removed 2.4.3.8600" },
+				-- #if BEFORE 3.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
+				-- #endif
 			}),
 		}),
 	})),
@@ -3436,7 +3487,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				i(35019, {	-- Brutal Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
 				}),
@@ -3530,6 +3581,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
 					["timeline"] = { "added 4.1.0", "removed 6.0.1" },
 				}),
+			}),
+		}),
+		n(REWARDS, {
+			ach(2316, {	-- Brutal Nether Drake
+				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
+				["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 4.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE .. [[; end]],
+				-- #endif
+			}),
+			i(43516, {	-- Brutal Nether Drake
+				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
+				-- #if BEFORE 4.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE .. [[; end]],
+				-- #endif
 			}),
 		}),
 	})),

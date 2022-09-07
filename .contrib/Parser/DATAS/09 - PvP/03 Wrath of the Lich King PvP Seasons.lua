@@ -20,401 +20,390 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
-root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
+root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
 	n(SEASON_DEADLY, {
 		n(PVP_HONOR, {
 			n(WEAPONS, {
 				i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 					["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },
 						{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(42557),	-- Savage Gladiator's Barrier
-						i(42511),	-- Savage Gladiator's Baton of Light
-						i(42356),	-- Savage Gladiator's Battle Staff
-						i(42221),	-- Savage Gladiator's Bonecracker
-						i(42295),	-- Savage Gladiator's Bonegrinder
-						i(42212),	-- Savage Gladiator's Chopper
-						i(42206),	-- Savage Gladiator's Cleaver
-						i(42294),	-- Savage Gladiator's Decapitator
-						i(42382),	-- Savage Gladiator's Energy Staff
-						i(42220),	-- Savage Gladiator's Fleshslicer
-						i(44416),	-- Savage Gladiator's Focus Staff
-						i(42344),	-- Savage Gladiator's Gavel
-						i(42297),	-- Savage Gladiator's Greatsword
-						i(42213),	-- Savage Gladiator's Hacker
-						i(42446),	-- Savage Gladiator's Heavy Crossbow
-						i(42445),	-- Savage Gladiator's Longbow
-						i(42215),	-- Savage Gladiator's Mutilator
-						i(42517),	-- Savage Gladiator's Piercing Touch
-						i(42296),	-- Savage Gladiator's Pike
-						i(42222),	-- Savage Gladiator's Pummeler
-						i(42223),	-- Savage Gladiator's Quickblade
-						i(42568),	-- Savage Gladiator's Redoubt
-						i(42447),	-- Savage Gladiator's Rifle
-						i(42218),	-- Savage Gladiator's Ripper
-						i(42216),	-- Savage Gladiator's Shanker
-						i(42556),	-- Savage Gladiator's Shield Wall
-						i(42217),	-- Savage Gladiator's Shiv
-						i(42219),	-- Savage Gladiator's Slasher
-						i(42224),	-- Savage Gladiator's Slicer
-						i(42343),	-- Savage Gladiator's Spellblade
-						i(42388),	-- Savage Gladiator's Staff
-						i(42448),	-- Savage Gladiator's Touch of Defeat
-						i(44415),	-- Savage Gladiator's War Staff
-					},
 				}),
+				i(42557),	-- Savage Gladiator's Barrier
+				i(42511),	-- Savage Gladiator's Baton of Light
+				i(42356),	-- Savage Gladiator's Battle Staff
+				i(42221),	-- Savage Gladiator's Bonecracker
+				i(42295),	-- Savage Gladiator's Bonegrinder
+				i(42212),	-- Savage Gladiator's Chopper
+				i(42206),	-- Savage Gladiator's Cleaver
+				i(42294),	-- Savage Gladiator's Decapitator
+				i(42382),	-- Savage Gladiator's Energy Staff
+				i(42220),	-- Savage Gladiator's Fleshslicer
+				i(44416),	-- Savage Gladiator's Focus Staff
+				i(42344),	-- Savage Gladiator's Gavel
+				i(42297),	-- Savage Gladiator's Greatsword
+				i(42213),	-- Savage Gladiator's Hacker
+				i(42446),	-- Savage Gladiator's Heavy Crossbow
+				i(42445),	-- Savage Gladiator's Longbow
+				i(42215),	-- Savage Gladiator's Mutilator
+				i(42517),	-- Savage Gladiator's Piercing Touch
+				i(42296),	-- Savage Gladiator's Pike
+				i(42222),	-- Savage Gladiator's Pummeler
+				i(42223),	-- Savage Gladiator's Quickblade
+				i(42568),	-- Savage Gladiator's Redoubt
+				i(42447),	-- Savage Gladiator's Rifle
+				i(42218),	-- Savage Gladiator's Ripper
+				i(42216),	-- Savage Gladiator's Shanker
+				i(42556),	-- Savage Gladiator's Shield Wall
+				i(42217),	-- Savage Gladiator's Shiv
+				i(42219),	-- Savage Gladiator's Slasher
+				i(42224),	-- Savage Gladiator's Slicer
+				i(42343),	-- Savage Gladiator's Spellblade
+				i(42388),	-- Savage Gladiator's Staff
+				i(42448),	-- Savage Gladiator's Touch of Defeat
+				i(44415),	-- Savage Gladiator's War Staff
 			}),
 			cl(DEATHKNIGHT, {
 				i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DEATHKNIGHT },
 						{"exclude", "itemID", 146580 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40799, {	-- Savage Gladiator's Dreadplate Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40817, {	-- Savage Gladiator's Dreadplate Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40837, {	-- Savage Gladiator's Dreadplate Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40857, {	-- Savage Gladiator's Dreadplate Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40799, {	-- Savage Gladiator's Dreadplate Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40817, {	-- Savage Gladiator's Dreadplate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40837, {	-- Savage Gladiator's Dreadplate Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40857, {	-- Savage Gladiator's Dreadplate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(DRUID, {
 				i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, DRUID },
 						{"exclude", "itemID", 146579 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41770, {	-- Savage Gladiator's Dragonhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41675, {	-- Savage Gladiator's Dragonhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41664, {	-- Savage Gladiator's Dragonhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41658, {	-- Savage Gladiator's Dragonhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41712, {	-- Savage Gladiator's Dragonhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41268, {	-- Savage Gladiator's Kodohide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41269, {	-- Savage Gladiator's Kodohide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41270, {	-- Savage Gladiator's Kodohide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41272, {	-- Savage Gladiator's Kodohide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41271, {	-- Savage Gladiator's Kodohide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41290, {	-- Savage Gladiator's Wyrmhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41324, {	-- Savage Gladiator's Wyrmhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41301, {	-- Savage Gladiator's Wyrmhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41313, {	-- Savage Gladiator's Wyrmhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41278, {	-- Savage Gladiator's Wyrmhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41770, {	-- Savage Gladiator's Dragonhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41675, {	-- Savage Gladiator's Dragonhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41664, {	-- Savage Gladiator's Dragonhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41658, {	-- Savage Gladiator's Dragonhide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41712, {	-- Savage Gladiator's Dragonhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41268, {	-- Savage Gladiator's Kodohide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41269, {	-- Savage Gladiator's Kodohide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41270, {	-- Savage Gladiator's Kodohide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41272, {	-- Savage Gladiator's Kodohide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41271, {	-- Savage Gladiator's Kodohide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41290, {	-- Savage Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41324, {	-- Savage Gladiator's Wyrmhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41301, {	-- Savage Gladiator's Wyrmhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41313, {	-- Savage Gladiator's Wyrmhide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41278, {	-- Savage Gladiator's Wyrmhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(HUNTER, {
 				i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, HUNTER },
 						{"exclude", "itemID", 146578 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41084, {	-- Savage Gladiator's Chain Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41140, {	-- Savage Gladiator's Chain Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41154, {	-- Savage Gladiator's Chain Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41202, {	-- Savage Gladiator's Chain Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41214, {	-- Savage Gladiator's Chain Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41084, {	-- Savage Gladiator's Chain Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41140, {	-- Savage Gladiator's Chain Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41154, {	-- Savage Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41202, {	-- Savage Gladiator's Chain Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41214, {	-- Savage Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
 				i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, MAGE },
 						{"exclude", "itemID", 146587 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41962, {	-- Savage Gladiator's Silk Amice
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41943, {	-- Savage Gladiator's Silk Cowl
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41968, {	-- Savage Gladiator's Silk Handguards
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41949, {	-- Savage Gladiator's Silk Raiment
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41956, {	-- Savage Gladiator's Silk Trousers
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41962, {	-- Savage Gladiator's Silk Amice
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41943, {	-- Savage Gladiator's Silk Cowl
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41968, {	-- Savage Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41949, {	-- Savage Gladiator's Silk Raiment
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41956, {	-- Savage Gladiator's Silk Trousers
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(PALADIN, {
 				i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PALADIN },
 						{"exclude", "itemID", 146586 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40898, {	-- Savage Gladiator's Ornamented Chestguard
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40918, {	-- Savage Gladiator's Ornamented Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40930, {	-- Savage Gladiator's Ornamented Headcover
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40936, {	-- Savage Gladiator's Ornamented Legplates
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40960, {	-- Savage Gladiator's Ornamented Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40780, {	-- Savage Gladiator's Scaled Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40798, {	-- Savage Gladiator's Scaled Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40818, {	-- Savage Gladiator's Scaled Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40838, {	-- Savage Gladiator's Scaled Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40858, {	-- Savage Gladiator's Scaled Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40898, {	-- Savage Gladiator's Ornamented Chestguard
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40918, {	-- Savage Gladiator's Ornamented Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40930, {	-- Savage Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40936, {	-- Savage Gladiator's Ornamented Legplates
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40960, {	-- Savage Gladiator's Ornamented Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40780, {	-- Savage Gladiator's Scaled Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40798, {	-- Savage Gladiator's Scaled Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40818, {	-- Savage Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40838, {	-- Savage Gladiator's Scaled Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40858, {	-- Savage Gladiator's Scaled Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(PRIEST, {
 				i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, PRIEST },
 						{"exclude", "itemID", 146585 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41847, {	-- Savage Gladiator's Mooncloth Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41848, {	-- Savage Gladiator's Mooncloth Hood
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41849, {	-- Savage Gladiator's Mooncloth Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41850, {	-- Savage Gladiator's Mooncloth Mantle
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41851, {	-- Savage Gladiator's Mooncloth Robe
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41937, {	-- Savage Gladiator's Satin Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41912, {	-- Savage Gladiator's Satin Hood
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41924, {	-- Savage Gladiator's Satin Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41930, {	-- Savage Gladiator's Satin Mantle
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41918, {	-- Savage Gladiator's Satin Robe
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41847, {	-- Savage Gladiator's Mooncloth Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41848, {	-- Savage Gladiator's Mooncloth Hood
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41849, {	-- Savage Gladiator's Mooncloth Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41850, {	-- Savage Gladiator's Mooncloth Mantle
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41851, {	-- Savage Gladiator's Mooncloth Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41937, {	-- Savage Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41912, {	-- Savage Gladiator's Satin Hood
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41924, {	-- Savage Gladiator's Satin Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41930, {	-- Savage Gladiator's Satin Mantle
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41918, {	-- Savage Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(ROGUE, {
 				i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, ROGUE },
 						{"exclude", "itemID", 146582 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41643, {	-- Savage Gladiator's Leather Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41644, {	-- Savage Gladiator's Leather Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41645, {	-- Savage Gladiator's Leather Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41646, {	-- Savage Gladiator's Leather Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41647, {	-- Savage Gladiator's Leather Tunic
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41643, {	-- Savage Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41644, {	-- Savage Gladiator's Leather Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41645, {	-- Savage Gladiator's Leather Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41646, {	-- Savage Gladiator's Leather Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41647, {	-- Savage Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(SHAMAN, {
 				i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, SHAMAN },
 						{"exclude", "itemID", 146584 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41078, {	-- Savage Gladiator's Linked Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41134, {	-- Savage Gladiator's Linked Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41148, {	-- Savage Gladiator's Linked Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41160, {	-- Savage Gladiator's Linked Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41208, {	-- Savage Gladiator's Linked Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40987, {	-- Savage Gladiator's Mail Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41004, {	-- Savage Gladiator's Mail Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41016, {	-- Savage Gladiator's Mail Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41030, {	-- Savage Gladiator's Mail Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41041, {	-- Savage Gladiator's Mail Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40986, {	-- Savage Gladiator's Ringmail Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40998, {	-- Savage Gladiator's Ringmail Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41010, {	-- Savage Gladiator's Ringmail Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41023, {	-- Savage Gladiator's Ringmail Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41024, {	-- Savage Gladiator's Ringmail Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41078, {	-- Savage Gladiator's Linked Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41134, {	-- Savage Gladiator's Linked Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41148, {	-- Savage Gladiator's Linked Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41160, {	-- Savage Gladiator's Linked Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41208, {	-- Savage Gladiator's Linked Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40987, {	-- Savage Gladiator's Mail Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41004, {	-- Savage Gladiator's Mail Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41016, {	-- Savage Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41030, {	-- Savage Gladiator's Mail Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41041, {	-- Savage Gladiator's Mail Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40986, {	-- Savage Gladiator's Ringmail Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40998, {	-- Savage Gladiator's Ringmail Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41010, {	-- Savage Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41023, {	-- Savage Gladiator's Ringmail Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41024, {	-- Savage Gladiator's Ringmail Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
 				i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARLOCK },
 						{"exclude", "itemID", 146581 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(42008, {	-- Savage Gladiator's Felweave Amice
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41990, {	-- Savage Gladiator's Felweave Cowl
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(42014, {	-- Savage Gladiator's Felweave Handguards
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41996, {	-- Savage Gladiator's Felweave Raiment
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(42002, {	-- Savage Gladiator's Felweave Trousers
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(42008, {	-- Savage Gladiator's Felweave Amice
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41990, {	-- Savage Gladiator's Felweave Cowl
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(42014, {	-- Savage Gladiator's Felweave Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41996, {	-- Savage Gladiator's Felweave Raiment
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(42002, {	-- Savage Gladiator's Felweave Trousers
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(WARRIOR, {
 				i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR, WARRIOR },
 						{"exclude", "itemID", 146583 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40778, {	-- Savage Gladiator's Plate Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40797, {	-- Savage Gladiator's Plate Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40816, {	-- Savage Gladiator's Plate Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40836, {	-- Savage Gladiator's Plate Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40856, {	-- Savage Gladiator's Plate Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40778, {	-- Savage Gladiator's Plate Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40797, {	-- Savage Gladiator's Plate Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40816, {	-- Savage Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40836, {	-- Savage Gladiator's Plate Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40856, {	-- Savage Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 		}),
@@ -422,128 +411,129 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			n(WEAPONS, {
 				i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 					["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_weapons_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },
 						{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(42563, {	-- Hateful Gladiator's Barrier
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42512, {	-- Hateful Gladiator's Baton of Light
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42359, {	-- Hateful Gladiator's Battle Staff
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42279, {	-- Hateful Gladiator's Bonecracker
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42321, {	-- Hateful Gladiator's Bonegrinder
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42231, {	-- Hateful Gladiator's Chopper
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42207, {	-- Hateful Gladiator's Cleaver
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42316, {	-- Hateful Gladiator's Decapitator
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42524, {	-- Hateful Gladiator's Endgame
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42383, {	-- Hateful Gladiator's Energy Staff
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42269, {	-- Hateful Gladiator's Fleshslicer
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(44418, {	-- Hateful Gladiator's Focus Staff
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42351, {	-- Hateful Gladiator's Gavel
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42331, {	-- Hateful Gladiator's Greatsword
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42536, {	-- Hateful Gladiator's Grimoire
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42226, {	-- Hateful Gladiator's Hacker
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42494, {	-- Hateful Gladiator's Heavy Crossbow
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42489, {	-- Hateful Gladiator's Longbow
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42254, {	-- Hateful Gladiator's Mutilator
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42518, {	-- Hateful Gladiator's Piercing Touch
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42326, {	-- Hateful Gladiator's Pike
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42274, {	-- Hateful Gladiator's Pummeler
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42289, {	-- Hateful Gladiator's Quickblade
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42569, {	-- Hateful Gladiator's Redoubt
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42530, {	-- Hateful Gladiator's Reprieve
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42484, {	-- Hateful Gladiator's Rifle
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42259, {	-- Hateful Gladiator's Ripper
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42241, {	-- Hateful Gladiator's Shanker
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42558, {	-- Hateful Gladiator's Shield Wall
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42247, {	-- Hateful Gladiator's Shiv
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42264, {	-- Hateful Gladiator's Slasher
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42284, {	-- Hateful Gladiator's Slicer
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42345, {	-- Hateful Gladiator's Spellblade
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42389, {	-- Hateful Gladiator's Staff
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42501, {	-- Hateful Gladiator's Touch of Defeat
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(44417, {	-- Hateful Gladiator's War Staff
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(42236, {	-- Hateful Gladiator's Waraxe
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-					},
 				}),
+				i(42563, {	-- Hateful Gladiator's Barrier
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42512, {	-- Hateful Gladiator's Baton of Light
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42359, {	-- Hateful Gladiator's Battle Staff
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42279, {	-- Hateful Gladiator's Bonecracker
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42321, {	-- Hateful Gladiator's Bonegrinder
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42231, {	-- Hateful Gladiator's Chopper
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42207, {	-- Hateful Gladiator's Cleaver
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42316, {	-- Hateful Gladiator's Decapitator
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42524, {	-- Hateful Gladiator's Endgame
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42383, {	-- Hateful Gladiator's Energy Staff
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42269, {	-- Hateful Gladiator's Fleshslicer
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(44418, {	-- Hateful Gladiator's Focus Staff
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42351, {	-- Hateful Gladiator's Gavel
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42331, {	-- Hateful Gladiator's Greatsword
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42536, {	-- Hateful Gladiator's Grimoire
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42226, {	-- Hateful Gladiator's Hacker
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42494, {	-- Hateful Gladiator's Heavy Crossbow
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42489, {	-- Hateful Gladiator's Longbow
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42254, {	-- Hateful Gladiator's Mutilator
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42518, {	-- Hateful Gladiator's Piercing Touch
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42326, {	-- Hateful Gladiator's Pike
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42274, {	-- Hateful Gladiator's Pummeler
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42289, {	-- Hateful Gladiator's Quickblade
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42569, {	-- Hateful Gladiator's Redoubt
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42530, {	-- Hateful Gladiator's Reprieve
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42484, {	-- Hateful Gladiator's Rifle
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42259, {	-- Hateful Gladiator's Ripper
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42241, {	-- Hateful Gladiator's Shanker
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42558, {	-- Hateful Gladiator's Shield Wall
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42247, {	-- Hateful Gladiator's Shiv
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42264, {	-- Hateful Gladiator's Slasher
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42284, {	-- Hateful Gladiator's Slicer
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42345, {	-- Hateful Gladiator's Spellblade
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42389, {	-- Hateful Gladiator's Staff
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42501, {	-- Hateful Gladiator's Touch of Defeat
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(44417, {	-- Hateful Gladiator's War Staff
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				i(42236, {	-- Hateful Gladiator's Waraxe
+					["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+				}),
+				un(REMOVED_FROM_GAME, i(42449)), -- Hateful Gladiator's War Edge (Throw Wep)
 			}),
 			cl(DEATHKNIGHT, {
 				i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, DEATHKNIGHT },
 						{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
@@ -551,28 +541,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 147585 },	-- Hateful Gladiator's Greaves of Victory
 						{"exclude", "itemID", 146560 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40781, {	-- Hateful Gladiator's Dreadplate Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40803, {	-- Hateful Gladiator's Dreadplate Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40820, {	-- Hateful Gladiator's Dreadplate Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40841, {	-- Hateful Gladiator's Dreadplate Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40860, {	-- Hateful Gladiator's Dreadplate Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40781, {	-- Hateful Gladiator's Dreadplate Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40803, {	-- Hateful Gladiator's Dreadplate Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40820, {	-- Hateful Gladiator's Dreadplate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40841, {	-- Hateful Gladiator's Dreadplate Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40860, {	-- Hateful Gladiator's Dreadplate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(DRUID, {
 				i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, DRUID },
 						{"select", "itemID", 41638 },	-- Hateful Gladiator's Armwraps of Dominance
@@ -583,58 +572,57 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41331 },	-- Hateful Gladiator's Boots of Salvation
 						{"exclude", "itemID", 146559 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41771, {	-- Hateful Gladiator's Dragonhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41676, {	-- Hateful Gladiator's Dragonhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41665, {	-- Hateful Gladiator's Dragonhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41659, {	-- Hateful Gladiator's Dragonhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41713, {	-- Hateful Gladiator's Dragonhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41284, {	-- Hateful Gladiator's Kodohide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41319, {	-- Hateful Gladiator's Kodohide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41296, {	-- Hateful Gladiator's Kodohide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41308, {	-- Hateful Gladiator's Kodohide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41273, {	-- Hateful Gladiator's Kodohide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41291, {	-- Hateful Gladiator's Wyrmhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41325, {	-- Hateful Gladiator's Wyrmhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41302, {	-- Hateful Gladiator's Wyrmhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41314, {	-- Hateful Gladiator's Wyrmhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41279, {	-- Hateful Gladiator's Wyrmhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41771, {	-- Hateful Gladiator's Dragonhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41676, {	-- Hateful Gladiator's Dragonhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41665, {	-- Hateful Gladiator's Dragonhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41659, {	-- Hateful Gladiator's Dragonhide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41713, {	-- Hateful Gladiator's Dragonhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41284, {	-- Hateful Gladiator's Kodohide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41319, {	-- Hateful Gladiator's Kodohide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41296, {	-- Hateful Gladiator's Kodohide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41308, {	-- Hateful Gladiator's Kodohide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41273, {	-- Hateful Gladiator's Kodohide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41291, {	-- Hateful Gladiator's Wyrmhide Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41325, {	-- Hateful Gladiator's Wyrmhide Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41302, {	-- Hateful Gladiator's Wyrmhide Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41314, {	-- Hateful Gladiator's Wyrmhide Robes
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41279, {	-- Hateful Gladiator's Wyrmhide Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(HUNTER, {
 				i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, HUNTER },
 						{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
@@ -642,28 +630,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41228 },	-- Hateful Gladiator's Sabatons of Triumph
 						{"exclude", "itemID", 146558 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41085, {	-- Hateful Gladiator's Chain Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41141, {	-- Hateful Gladiator's Chain Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41155, {	-- Hateful Gladiator's Chain Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41203, {	-- Hateful Gladiator's Chain Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41215, {	-- Hateful Gladiator's Chain Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41085, {	-- Hateful Gladiator's Chain Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41141, {	-- Hateful Gladiator's Chain Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41155, {	-- Hateful Gladiator's Chain Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41203, {	-- Hateful Gladiator's Chain Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41215, {	-- Hateful Gladiator's Chain Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(MAGE, {
 				i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, MAGE },
 						{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
@@ -671,28 +658,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41901 },	-- Hateful Gladiator's Slippers of Dominance
 						{"exclude", "itemID", 146567 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41963, {	-- Hateful Gladiator's Silk Amice
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41944, {	-- Hateful Gladiator's Silk Cowl
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41969, {	-- Hateful Gladiator's Silk Handguards
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41950, {	-- Hateful Gladiator's Silk Raiment
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41957, {	-- Hateful Gladiator's Silk Trousers
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41963, {	-- Hateful Gladiator's Silk Amice
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41944, {	-- Hateful Gladiator's Silk Cowl
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41969, {	-- Hateful Gladiator's Silk Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41950, {	-- Hateful Gladiator's Silk Raiment
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41957, {	-- Hateful Gladiator's Silk Trousers
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(PALADIN, {
 				i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, PALADIN },
 						{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
@@ -700,43 +686,42 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
 						{"exclude", "itemID", 146566 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40904, {	-- Hateful Gladiator's Ornamented Chestguard
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40925, {	-- Hateful Gladiator's Ornamented Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40931, {	-- Hateful Gladiator's Ornamented Headcover
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40937, {	-- Hateful Gladiator's Ornamented Legplates
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40961, {	-- Hateful Gladiator's Ornamented Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40782, {	-- Hateful Gladiator's Scaled Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40802, {	-- Hateful Gladiator's Scaled Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40821, {	-- Hateful Gladiator's Scaled Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40842, {	-- Hateful Gladiator's Scaled Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40861, {	-- Hateful Gladiator's Scaled Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40904, {	-- Hateful Gladiator's Ornamented Chestguard
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40925, {	-- Hateful Gladiator's Ornamented Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40931, {	-- Hateful Gladiator's Ornamented Headcover
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40937, {	-- Hateful Gladiator's Ornamented Legplates
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40961, {	-- Hateful Gladiator's Ornamented Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40782, {	-- Hateful Gladiator's Scaled Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40802, {	-- Hateful Gladiator's Scaled Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40821, {	-- Hateful Gladiator's Scaled Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40842, {	-- Hateful Gladiator's Scaled Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40861, {	-- Hateful Gladiator's Scaled Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(PRIEST, {
 				i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, PRIEST },
 						{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
@@ -744,43 +729,42 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41879 },	-- Hateful Gladiator's Slippers of Salvation
 						{"exclude", "itemID", 146565 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41872, {	-- Hateful Gladiator's Mooncloth Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41852, {	-- Hateful Gladiator's Mooncloth Hood
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41862, {	-- Hateful Gladiator's Mooncloth Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41867, {	-- Hateful Gladiator's Mooncloth Mantle
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41857, {	-- Hateful Gladiator's Mooncloth Robe
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41938, {	-- Hateful Gladiator's Satin Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41913, {	-- Hateful Gladiator's Satin Hood
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41925, {	-- Hateful Gladiator's Satin Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41931, {	-- Hateful Gladiator's Satin Mantle
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41919, {	-- Hateful Gladiator's Satin Robe
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41872, {	-- Hateful Gladiator's Mooncloth Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41852, {	-- Hateful Gladiator's Mooncloth Hood
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41862, {	-- Hateful Gladiator's Mooncloth Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41867, {	-- Hateful Gladiator's Mooncloth Mantle
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41857, {	-- Hateful Gladiator's Mooncloth Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41938, {	-- Hateful Gladiator's Satin Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41913, {	-- Hateful Gladiator's Satin Hood
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41925, {	-- Hateful Gladiator's Satin Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41931, {	-- Hateful Gladiator's Satin Mantle
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41919, {	-- Hateful Gladiator's Satin Robe
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(ROGUE, {
 				i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, ROGUE },
 						{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
@@ -788,28 +772,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41828 },	-- Hateful Gladiator's Boots of Triumph
 						{"exclude", "itemID", 146562 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41765, {	-- Hateful Gladiator's Leather Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41670, {	-- Hateful Gladiator's Leather Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41653, {	-- Hateful Gladiator's Leather Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41681, {	-- Hateful Gladiator's Leather Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41648, {	-- Hateful Gladiator's Leather Tunic
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(41765, {	-- Hateful Gladiator's Leather Gloves
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41670, {	-- Hateful Gladiator's Leather Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41653, {	-- Hateful Gladiator's Leather Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41681, {	-- Hateful Gladiator's Leather Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41648, {	-- Hateful Gladiator's Leather Tunic
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(SHAMAN, {
 				i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, SHAMAN },
 						{"select", "itemID", 41063 },	-- Hateful Gladiator's Wristguards of Dominance
@@ -820,58 +803,57 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 41049 },	-- Hateful Gladiator's Sabatons of Salvation
 						{"exclude", "itemID", 146564 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(41079, {	-- Hateful Gladiator's Linked Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41135, {	-- Hateful Gladiator's Linked Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41149, {	-- Hateful Gladiator's Linked Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41162, {	-- Hateful Gladiator's Linked Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41209, {	-- Hateful Gladiator's Linked Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40989, {	-- Hateful Gladiator's Mail Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41005, {	-- Hateful Gladiator's Mail Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41017, {	-- Hateful Gladiator's Mail Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41031, {	-- Hateful Gladiator's Mail Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41042, {	-- Hateful Gladiator's Mail Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40988, {	-- Hateful Gladiator's Ringmail Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40999, {	-- Hateful Gladiator's Ringmail Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41011, {	-- Hateful Gladiator's Ringmail Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41025, {	-- Hateful Gladiator's Ringmail Leggings
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41036, {	-- Hateful Gladiator's Ringmail Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(41079, {	-- Hateful Gladiator's Linked Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41135, {	-- Hateful Gladiator's Linked Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41149, {	-- Hateful Gladiator's Linked Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41162, {	-- Hateful Gladiator's Linked Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41209, {	-- Hateful Gladiator's Linked Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40989, {	-- Hateful Gladiator's Mail Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41005, {	-- Hateful Gladiator's Mail Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41017, {	-- Hateful Gladiator's Mail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41031, {	-- Hateful Gladiator's Mail Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41042, {	-- Hateful Gladiator's Mail Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40988, {	-- Hateful Gladiator's Ringmail Armor
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40999, {	-- Hateful Gladiator's Ringmail Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41011, {	-- Hateful Gladiator's Ringmail Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41025, {	-- Hateful Gladiator's Ringmail Leggings
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(41036, {	-- Hateful Gladiator's Ringmail Spaulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			cl(WARLOCK, {
 				i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARLOCK },
 						{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
@@ -879,28 +861,27 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 147588 },	-- Hateful Gladiator's Slippers of Ascendancy
 						{"exclude", "itemID", 146561 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(42009, {	-- Hateful Gladiator's Felweave Amice
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41991, {	-- Hateful Gladiator's Felweave Cowl
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(42015, {	-- Hateful Gladiator's Felweave Handguards
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(42001, {	-- Hateful Gladiator's Felweave Raiment
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(42003, {	-- Hateful Gladiator's Felweave Trousers
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-					},
+				}),
+				i(42009, {	-- Hateful Gladiator's Felweave Amice
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(41991, {	-- Hateful Gladiator's Felweave Cowl
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(42015, {	-- Hateful Gladiator's Felweave Handguards
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(42001, {	-- Hateful Gladiator's Felweave Raiment
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(42003, {	-- Hateful Gladiator's Felweave Trousers
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 				}),
 			}),
 			cl(WARRIOR, {
 				i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
 					["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL, WARRIOR },
 						{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
@@ -908,23 +889,21 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
 						{"exclude", "itemID", 146563 },	-- Exclude itself to stop duplicating
 					},
-					["g"] = {
-						i(40783, {	-- Hateful Gladiator's Plate Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40801, {	-- Hateful Gladiator's Plate Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40819, {	-- Hateful Gladiator's Plate Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40840, {	-- Hateful Gladiator's Plate Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40859, {	-- Hateful Gladiator's Plate Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-					},
+				}),
+				i(40783, {	-- Hateful Gladiator's Plate Chestpiece
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40801, {	-- Hateful Gladiator's Plate Gauntlets
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+				}),
+				i(40819, {	-- Hateful Gladiator's Plate Helm
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40840, {	-- Hateful Gladiator's Plate Legguards
+					["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+				}),
+				i(40859, {	-- Hateful Gladiator's Plate Shoulders
+					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
 			n(BACK, {
@@ -968,9 +947,11 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147583, {	-- Hateful Gladiator's Bracers of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(147586, {	-- Hateful Gladiator's Cuffs of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41907, {	-- Hateful Gladiator's Cuffs of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1000,6 +981,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147587, {	-- Hateful Gladiator's Cord of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41896, {	-- Hateful Gladiator's Cord of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1015,6 +997,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147584, {	-- Hateful Gladiator's Girdle of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41068, {	-- Hateful Gladiator's Waistguard of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1044,6 +1027,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147585, {	-- Hateful Gladiator's Greaves of Victory
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41073, {	-- Hateful Gladiator's Sabatons of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1056,6 +1040,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147588, {	-- Hateful Gladiator's Slippers of Ascendancy
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41901, {	-- Hateful Gladiator's Slippers of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1077,7 +1062,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42110)),	-- Hateful Gladiator's Band of Dominance
 				un(REMOVED_FROM_GAME, i(42112)),	-- Hateful Gladiator's Band of Triumph
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				un(REMOVED_FROM_GAME, i(42587)), -- Hateful Gladiator's Idol of Resolve
 				un(REMOVED_FROM_GAME, i(42582)), -- Hateful Gladiator's Idol of Steadfastness
 				un(REMOVED_FROM_GAME, i(42577)), -- Hateful Gladiator's Idol of Tenacity
@@ -1087,7 +1072,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42606)), -- Hateful Gladiator's Totem of Indomitability
 				un(REMOVED_FROM_GAME, i(42601)), -- Hateful Gladiator's Totem of Survival
 				un(REMOVED_FROM_GAME, i(42596)), -- Hateful Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(42449)), -- Hateful Gladiator's War Edge (Throw Wep)
 			}),
 		}),
 		n(PVP_GLADIATOR, {
@@ -1212,6 +1196,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						}),
 					},
 				}),
+				un(REMOVED_FROM_GAME, i(42450)), -- Deadly Gladiator's War Edge (Throw Wep)
 			}),
 			cl(DEATHKNIGHT, {
 				i(146540, {	-- Ensemble: Deadly Gladiator's Dreadplate Armor
@@ -1640,9 +1625,11 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147589, {	-- Deadly Gladiator's Bracers of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(147592, {	-- Deadly Gladiator's Cuffs of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41908, {	-- Deadly Gladiator's Cuffs of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1672,6 +1659,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147593, {	-- Deadly Gladiator's Cord of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41897, {	-- Deadly Gladiator's Cord of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1687,6 +1675,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147590, {	-- Deadly Gladiator's Girdle of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41069, {	-- Deadly Gladiator's Waistguard of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1716,6 +1705,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147591, {	-- Deadly Gladiator's Greaves of Victory
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41074, {	-- Deadly Gladiator's Sabatons of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1728,6 +1718,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147594, {	-- Deadly Gladiator's Treads of Ascendancy
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41902, {	-- Deadly Gladiator's Treads of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1749,7 +1740,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42114),	-- Deadly Gladiator's Band of Ascendancy
 				i(42115),	-- Deadly Gladiator's Band of Victory
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				un(REMOVED_FROM_GAME, i(42588)), -- Deadly Gladiator's Idol of Resolve
 				un(REMOVED_FROM_GAME, i(42583)), -- Deadly Gladiator's Idol of Steadfastness
 				un(REMOVED_FROM_GAME, i(42578)), -- Deadly Gladiator's Idol of Tenacity
@@ -1759,7 +1750,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42607)), -- Deadly Gladiator's Totem of Indomitability
 				un(REMOVED_FROM_GAME, i(42602)), -- Deadly Gladiator's Totem of Survival
 				un(REMOVED_FROM_GAME, i(42597)), -- Deadly Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(42450)), -- Deadly Gladiator's War Edge (Throw Wep)
 			}),
 			filter(TRINKET_F, {	-- see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
 				un(REMOVED_FROM_GAME, i(42123)), -- (A) Medallion of the Alliance Patch 3.0.1
@@ -1772,8 +1762,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42128)), -- Battlemaster's Hostility Patch 3.0.2
 			}),
 		}),
+		n(REWARDS, {
+			ach(3096, {	-- Deadly Gladiator's Frost Wyrm
+				["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
+				["timeline"] = { "added 3.0.1", "removed 3.2.0" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_ONE .. [[; end]],
+				-- #endif
+			}),
+			i(46708, {	-- Deadly Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 3.0.1", "removed 3.2.0" },
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_ONE .. [[; end]],
+				-- #endif
+			}),
+		}),
 	}),
-	n(SEASON_FURIOUS, {
+	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146644, {	-- Arsenal: Furious Gladiator's Weapons
@@ -1894,6 +1901,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						un(REMOVED_FROM_GAME, i(42238)),	-- Furious Gladiator's Waraxe
 					},
 				}),
+				un(REMOVED_FROM_GAME, i(42451)), -- Furious Gladiator's War Edge (Throw Wep)
 			}),
 			cl(DEATHKNIGHT, {
 				i(146550, {	-- Ensemble: Furious Gladiator's Dreadplate Armor
@@ -2322,9 +2330,11 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147598, {	-- Furious Gladiator's Bracers of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(147595, {	-- Furious Gladiator's Cuffs of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41909, {	-- Furious Gladiator's Cuffs of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -2354,6 +2364,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147596, {	-- Furious Gladiator's Cord of Ascendancy
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41898, {	-- Furious Gladiator's Cord of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -2369,6 +2380,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147599, {	-- Furious Gladiator's Girdle of Victory
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41070, {	-- Furious Gladiator's Waistguard of Dominance
 					["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -2398,6 +2410,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147600, {	-- Furious Gladiator's Greaves of Victory
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41075, {	-- Furious Gladiator's Sabatons of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2410,6 +2423,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(147597, {	-- Furious Gladiator's Slippers of Ascendancy
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+					["timeline"] = { "added 7.2.0.23436" },
 				}),
 				i(41903, {	-- Furious Gladiator's Slippers of Dominance
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2432,7 +2446,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42116),	-- Furious Gladiator's Band of Dominance
 				i(42117),	-- Furious Gladiator's Band of Triumph
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				un(REMOVED_FROM_GAME, i(42589)), -- Furious Gladiator's Idol of Resolve
 				un(REMOVED_FROM_GAME, i(42584)), -- Furious Gladiator's Idol of Steadfastness
 				un(REMOVED_FROM_GAME, i(42579)), -- Furious Gladiator's Idol of Tenacity
@@ -2442,7 +2456,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42608)), -- Furious Gladiator's Totem of Indomitability
 				un(REMOVED_FROM_GAME, i(42603)), -- Furious Gladiator's Totem of Survival
 				un(REMOVED_FROM_GAME, i(42598)), -- Furious Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(42451)), -- Furious Gladiator's War Edge (Throw Wep)
 			}),
 			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(42124)), -- (A) Medallion of the Alliance
@@ -2485,8 +2498,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
 			}),
 		}),
-	}),
-	n(SEASON_RELENTLESS, {
+		n(REWARDS, {
+			ach(3756, {	-- Furious Gladiator's Frost Wyrm
+				["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
+				["timeline"] = { "added 3.2.0", "removed 3.4.0" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+				-- #endif
+			}),
+			i(46171, {	-- Furious Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 3.2.0", "removed 3.4.0" },
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+				-- #endif
+			}),
+		}),
+	})),
+	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
@@ -2618,6 +2648,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						}),
 					},
 				}),
+				un(REMOVED_FROM_GAME, i(42483)), -- Relentless Gladiator's War Edge (Throw Wep)
 			}),
 			cl(DEATHKNIGHT, {
 				i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
@@ -3160,7 +3191,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(42118),	-- Relentless Gladiator's Band of Ascendancy
 				i(42119),	-- Relentless Gladiator's Band of Victory
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				un(REMOVED_FROM_GAME, i(42591)), -- Relentless Gladiator's Idol of Resolve
 				un(REMOVED_FROM_GAME, i(42585)), -- Relentless Gladiator's Idol of Steadfastness
 				un(REMOVED_FROM_GAME, i(42580)), -- Relentless Gladiator's Idol of Tenacity
@@ -3170,7 +3201,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(42609)), -- Relentless Gladiator's Totem of Indomitability
 				un(REMOVED_FROM_GAME, i(42604)), -- Relentless Gladiator's Totem of Survival
 				un(REMOVED_FROM_GAME, i(42599)), -- Relentless Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(42483)), -- Relentless Gladiator's War Edge (Throw Wep)
 			}),
 			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(42133)), -- Battlemaster's Fury
@@ -3216,8 +3246,25 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(48511)),	-- Relentless Gladiator's Truncheon
 			}),
 		}),
-	}),
-	n(SEASON_WRATHFUL, {
+		n(REWARDS, {
+			ach(3757, {	-- Relentless Gladiator's Frost Wyrm
+				["provider"] = { "i", 47840 },	-- Relentless Gladiator's Frost Wyrm
+				["timeline"] = { "added 3.2.0", "removed 3.4.0" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_THREE .. [[; end]],
+				-- #endif
+			}),
+			i(47840, {	-- Relentless Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 3.2.0", "removed 3.4.0" },
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_THREE .. [[; end]],
+				-- #endif
+			}),
+		}),
+	})),
+	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
 				i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
@@ -3346,6 +3393,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 						}),
 					},
 				}),
+				un(REMOVED_FROM_GAME, i(51535)), -- Wrathful Gladiator's War Edge (Throw Wep)
 			}),
 			cl(DEATHKNIGHT, {
 				i(146590, {	-- Ensemble: Wrathful Gladiator's Dreadplate Armor
@@ -3889,7 +3937,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				i(51336),	-- Wrathful Gladiator's Band of Dominance
 				i(51358),	-- Wrathful Gladiator's Band of Triumph
 			}),
-			filter(HELD_IN_OFF_HAND, {
+			filter(RELICS, {
 				un(REMOVED_FROM_GAME, i(51429)), -- Wrathful Gladiator's Idol of Resolve
 				un(REMOVED_FROM_GAME, i(51437)), -- Wrathful Gladiator's Idol of Steadfastness
 				un(REMOVED_FROM_GAME, i(51423)), -- Wrathful Gladiator's Idol of Tenacity
@@ -3899,7 +3947,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(51507)), -- Wrathful Gladiator's Totem of Indomitability
 				un(REMOVED_FROM_GAME, i(51513)), -- Wrathful Gladiator's Totem of Survival
 				un(REMOVED_FROM_GAME, i(51501)), -- Wrathful Gladiator's Totem of the Third Wind
-				un(REMOVED_FROM_GAME, i(51535)), -- Wrathful Gladiator's War Edge (Throw Wep)
 			}),
 			filter(TRINKET_F, {
 				un(REMOVED_FROM_GAME, i(51377)), -- (A) Medallion of the Alliance
@@ -3943,7 +3990,24 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				un(REMOVED_FROM_GAME, i(51520)),	-- Wrathful Gladiator's Truncheon
 			}),
 		}),
-	}),
+		n(REWARDS, {
+			ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
+				["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
+				["timeline"] = { "added 3.3.9", "removed 4.0.1" },
+				["filterID"] = MOUNTS,
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. CATA_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_FOUR .. [[; end]],
+				-- #endif
+			}),
+			i(50435, {	-- Wrathful Gladiator's Frost Wyrm
+				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+				["timeline"] = { "added 3.3.9", "removed 4.0.1" },
+				-- #if BEFORE 5.0.1
+				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. CATA_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_FOUR .. [[; end]],
+				-- #endif
+			}),
+		}),
+	})),
 }))))));
 -- #if AFTER LEGION
 root(ROOTS.HiddenQuestTriggers, {
