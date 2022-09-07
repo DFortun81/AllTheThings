@@ -3337,14 +3337,12 @@ subroutines = {
 		if type(invtypes) == 'number' then tinsert(f, invtypes); end
 		if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
 		if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
-		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
 		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
 		return commands;
 	end,
 	["legion_relinquished_relic"] = function(relictype)
 		local commands = subroutines["legion_relinquished_base"]();
 		if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
-		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
 		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
 		return commands;
 	end,
@@ -3383,7 +3381,6 @@ subroutines = {
 			{"pop"},	-- Discard the Map Header and acquire the children.
 			{"where", "headerID", -1 },	-- Select the Common Boss Drop Header.
 			{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			{"is", "itemID"},	-- Only Items!
 			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
 			{"modID", 5},	-- iLvl 340
@@ -3461,7 +3458,6 @@ subroutines = {
 	["tw_instance"] = function(instanceID)
 		return  {
 			{"select", "itemID", 133543},			-- Infinite Timereaver
-			{"postprocess"},						-- de-duplicate
 			{"push", "headerID", -1},				-- Push into 'Common Boss Drops' header
 			{"finalize"},							-- capture current results
 			{"select", "instanceID", instanceID},	-- select this instance
@@ -3736,11 +3732,6 @@ ResolveSymbolicLink = function(o)
 				ArrayAppend(finalized, searchResults);
 				searchResults = finalized;
 				finalized = {};
-			elseif cmd == "postprocess" then
-				-- Instruction to take all of the current search results and ensure that there are no duplicated primary keys.
-				local uniques = {};
-				MergeObjects(uniques, searchResults);
-				searchResults = uniques;
 			elseif cmd == "invtype" then
 				-- Instruction to include only search results where an item is of a specific inventory type.
 				local types = {unpack(sym)};

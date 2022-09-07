@@ -67,7 +67,6 @@ root("Zones", {
 									{"select", "itemID", 152735},	-- Unsullied Ring
 									{"select", "itemID", 152733},	-- Unsullied Trinket
 									{"select", "itemID", 152799},	-- Unsullied Relic
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
 							un(REMOVED_FROM_GAME, i(152650, {	-- Scuffed Krokul Cache
@@ -125,7 +124,6 @@ root("Zones", {
 									{"select", "itemID", 152735},	-- Unsullied Ring
 									{"select", "itemID", 152733},	-- Unsullied Trinket
 									{"select", "itemID", 152799},	-- Unsullied Relic
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
 							un(REMOVED_FROM_GAME, i(154912, {	-- Gilded Trunk

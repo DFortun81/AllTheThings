@@ -43,7 +43,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
 							{"is", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
-							{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 						},
 					}),
 					i(163857, {	-- Azerite Armor Cache
