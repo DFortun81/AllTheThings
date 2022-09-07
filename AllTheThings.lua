@@ -4487,6 +4487,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
+		local clearParent = #group > 1;
 		for _,o in ipairs(group) do
 			tinsert(cloned, CreateObject(o));
 		end
@@ -4632,9 +4633,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
-		-- Ensure no weird parent references attached to the base search result
-		group.sourceParent = nil;
-		group.parent = nil;
+		-- Ensure no weird parent references attached to the base search result if there were multiple search results
+		if clearParent then
+			group.sourceParent = nil;
+			group.parent = nil;
+		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
 		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
