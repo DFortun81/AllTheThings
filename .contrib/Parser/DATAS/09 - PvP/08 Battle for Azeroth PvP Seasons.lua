@@ -1930,27 +1930,8 @@ _.PVP =
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			n(PVP_ELITE, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
-				n(BACK, bubbleDown({ ["bonusID"] = 6376 }, {	-- Correct BonusID Sep 2022
-					-- Was given randomly after winning a pvp match while above 2400 rating
-					i(167373, {	-- Notorious Gladiator's Cape (A)
-					}),
-					i(167372, {	-- Notorious Gladiator's Drape (A)
-					}),
-					i(167370, {	-- Notorious Gladiator's Shawl (A)
-					}),
-					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
-					}),
-					i(167369, {	-- Notorious Gladiator's Cape (H)
-					}),
-					i(167368, {	-- Notorious Gladiator's Drape (H)
-					}),
-					i(167366, {	-- Notorious Gladiator's Shawl (H)
-					}),
-					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
-					}),
-				})),
-				filter(CLOTH, bubbleDown({ ["bonusID"] = 6376 }, {	-- Correct BonusID Sep 2022
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376 }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
+				filter(CLOTH, {
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
 					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
@@ -1967,7 +1948,7 @@ _.PVP =
 					i(172572),	-- Corrupted Gladiator's Silk Leggings (A)
 					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
 					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
-				})),
+				}),
 				filter(LEATHER, { 
 					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
 					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
@@ -2022,7 +2003,7 @@ _.PVP =
 					i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
 					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
 				}),
-			}),
+			})),
 			n(QUESTS, {
 				q(58279, {	-- Quartermaster's Bounty
 					["isWeekly"] = true,
