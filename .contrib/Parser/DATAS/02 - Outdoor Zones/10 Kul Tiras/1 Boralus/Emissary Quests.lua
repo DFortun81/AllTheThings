@@ -49,7 +49,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
 							{"is", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
-							{"merge"},	-- Merge the finalized items back into the processing queue.
 						},
 					}),
 					i(165867, {	-- Kul Tiran Weapons Cache

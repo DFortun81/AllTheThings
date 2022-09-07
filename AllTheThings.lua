@@ -3416,7 +3416,6 @@ subroutines = {
 			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return o.modID == 5; end },
 			{ "finalize" },
 			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
-			{ "merge" },
 		};
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
@@ -3530,11 +3529,11 @@ local ResolveFunctions = {
 		-- Instruction to select the parent object of the group that owns the symbolic link
 		level = level or 1;
 		local parent = o.parent or o.sourceParent;
-		app.PrintDebug("selectparent",level,parent and parent.hash)
+		-- app.PrintDebug("selectparent",level,parent and parent.hash)
 		while level > 1 do
 			parent = parent and parent.parent;
 			level = level - 1;
-			app.PrintDebug("selectparent",level,parent and parent.hash)
+			-- app.PrintDebug("selectparent",level,parent and parent.hash)
 		end
 		if parent then
 			tinsert(searchResults, parent);
