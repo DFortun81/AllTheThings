@@ -3527,21 +3527,19 @@ local ResolveFunctions = {
 		end
 	end,
 	["selectparent"] = function(searchResults, o, cmd, level)
-		-- Instruction to select the parent object of the parent that owns the symbolic link.
-		if level and level > 0 then
-			local parent = o.parent;
-			while level > 1 do
-				parent = parent and parent.parent;
-				level = level - 1;
-			end
-			if parent then
-				tinsert(searchResults, parent);
-			else
-				print("Failed to select parent " .. level .. " levels up.");
-			end
+		-- Instruction to select the parent object of the group that owns the symbolic link
+		level = level or 1;
+		local parent = o.parent or o.sourceParent;
+		app.PrintDebug("selectparent",level,parent and parent.hash)
+		while level > 1 do
+			parent = parent and parent.parent;
+			level = level - 1;
+			app.PrintDebug("selectparent",level,parent and parent.hash)
+		end
+		if parent then
+			tinsert(searchResults, parent);
 		else
-			-- Select the direct parent object.
-			tinsert(searchResults, o.parent);
+			print("Failed to select parent for ",o.hash);
 		end
 	end,
 	["selectprofession"] = function(searchResults, o, cmd, requireSkill)
