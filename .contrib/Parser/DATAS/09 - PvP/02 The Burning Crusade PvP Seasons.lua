@@ -20,6 +20,40 @@ local function MarkOfWHOOOWHATNow(t)
 	-- #endif
 	return t;
 end
+-- #if BEFORE 4.0.1
+local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. TBC_PHASE_ONE .. [[;
+	end
+	if not t.rwp then t.rwp = 20102; end
+end]];
+local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. TBC_PHASE_TWO .. [[;
+	end
+	if not t.rwp then t.rwp = 20300; end
+end]];
+local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. TBC_PHASE_THREE .. [[;
+	end
+	if not t.rwp then t.rwp = 20403; end
+end]];
+local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
+	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. TBC_PHASE_FIVE .. [[;
+	end
+	if not t.rwp then t.rwp = 30001; end
+end]];
+-- #endif
 root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
 	n(PVP_HONOR, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, function(t) return t.itemID; end, {
 		n(FACTION_HEADER_ALLIANCE, {
@@ -1146,35 +1180,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
 			-- Horde OG: n(12793,  {	-- Brave Stonehide
-			filter(RELICS, {
-				i(33945, { -- Gladiator's Idol of Resolve
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33942, { -- Gladiator's Idol of Steadfastness
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(28355, { -- Gladiator's Idol of Tenacity
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33936, { -- Gladiator's Libram of Fortitude
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(28356, { -- Gladiator's Libram of Justice
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33948, { -- Gladiator's Libram of Vengeance
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33939, { -- Gladiator's Totem of Indomitability
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33951, { -- Gladiator's Totem of Survival
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(28357, { -- Gladiator's Totem of the Third Wind
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-			}),
 			filter(NECK_F, {
 				i(28245, { -- Pendant of Dominance
 					["timeline"] = { "added 2.0.3", "removed 2.5.2" },
@@ -1255,24 +1260,50 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 				}),
 			}),
+			filter(RELICS, {
+				i(33945, { -- Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33942, { -- Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(28355, { -- Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33936, { -- Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(28356, { -- Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33948, { -- Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33939, { -- Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33951, { -- Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(28357, { -- Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+			}),
 		}),
-		n(REWARDS, {
-			ach(886, {	-- Swift Nether Drake
+		bubbleDown({
+			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(REWARDS, {
+			classicAch(886, {	-- Swift Nether Drake
 				["provider"] = { "i", 30609 },	-- Swift Nether Drake
-				["timeline"] = { "added 2.0.1.6180", "removed 2.3.0.7501" },
 				["filterID"] = MOUNTS,
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_ONE .. [[; end]],
-				-- #endif
 			}),
 			i(30609, {	-- Swift Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
-				["timeline"] = { "added 2.0.1.6180", "removed 2.3.0.7501" },
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_ONE .. [[; end]],
-				-- #endif
 			}),
-		}),
+		})),
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
 		n(PVP_GLADIATOR, {
@@ -1927,6 +1958,34 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
+			filter(NECK_F, {
+				i(33067, { -- Veteran's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33065, { -- Veteran's Pendant of Dominance
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33068, { -- Veteran's Pendant of Salvation
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33067, { -- Veteran's Pendant of Conquest
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33066, { -- Veteran's Pendant of Triumph
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+			}),
+			filter(FINGER_F, {
+				i(33056, { -- Veteran's Band of Dominance
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33064, { -- Veteran's Band of Salvation
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+				i(33057, { -- Veteran's Band of Triumph
+					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+				}),
+			}),
 			filter(RELICS, {
 				i(33946, { -- Merciless Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
@@ -1956,52 +2015,24 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(NECK_F, {
-				i(33067, { -- Veteran's Pendant of Conquest
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33065, { -- Veteran's Pendant of Dominance
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33068, { -- Veteran's Pendant of Salvation
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33067, { -- Veteran's Pendant of Conquest
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33066, { -- Veteran's Pendant of Triumph
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-			}),
-			filter(FINGER_F, {
-				i(33056, { -- Veteran's Band of Dominance
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33064, { -- Veteran's Band of Salvation
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-				i(33057, { -- Veteran's Band of Triumph
-					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
-				}),
-			}),
 		}),
-		n(REWARDS, {
-			ach(887, {	-- Merciless Nether Drake
+		bubbleDown({
+			["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(REWARDS, {
+			classicAch(418, {	-- Merciless Gladiator: Burning Crusade Season 2
+				title(37),	-- Merciless Gladiator <Name>
+			}),
+			classicAch(887, {	-- Merciless Nether Drake
 				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
-				["timeline"] = { "added 2.3.0.7501", "removed 2.4.2.8301" },
 				["filterID"] = MOUNTS,
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_TWO .. [[; end]],
-				-- #endif
 			}),
 			i(34092, {	-- Merciless Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
-				["timeline"] = { "added 2.3.0.7501", "removed 2.4.2.8301" },
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_TWO .. [[; end]],
-				-- #endif
 			}),
-		}),
+		})),
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
 		n(PVP_GLADIATOR, {
@@ -2672,35 +2703,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 			-- Orinally sold Offhand/Neck/Finger by
 			-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 			-- Horde OG: n(24520, {	-- Doris Volanthius --
-			filter(RELICS, {
-				i(33947, { -- Vengeful Gladiator's Idol of Resolve
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33944, { -- Vengeful Gladiator's Idol of Steadfastness
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33841, { -- Vengeful Gladiator's Idol of Tenacity
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33938, { -- Vengeful Gladiator's Libram of Fortitude
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33842, { -- Vengeful Gladiator's Libram of Justice
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33950, { -- Vengeful Gladiator's Libram of Vengeance
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33941, { -- Vengeful Gladiator's Totem of Indomitability
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33953, { -- Vengeful Gladiator's Totem of Survival
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-				i(33843, { -- Vengeful Gladiator's Totem of the Third Wind
-					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
-				}),
-			}),
 			filter(NECK_F, {
 				i(33920, { -- Vindicator's Pendant of Conquest
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
@@ -2735,6 +2737,35 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
+			filter(RELICS, {
+				i(33947, { -- Vengeful Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33944, { -- Vengeful Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33841, { -- Vengeful Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33938, { -- Vengeful Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33842, { -- Vengeful Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33950, { -- Vengeful Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33941, { -- Vengeful Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33953, { -- Vengeful Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+				i(33843, { -- Vengeful Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+				}),
+			}),
 			filter(TRINKET_F, {
 				applyclassicphase(TBC_PHASE_FOUR, i(35327, { -- Battlemaster's Alacrity
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
@@ -2756,23 +2787,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				})),
 			}),
 		}),
-		n(REWARDS, {
-			ach(888, {	-- Vengeful Nether Drake
+		bubbleDown({
+			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
+			-- #if BEFORE 3.0.1
+			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(REWARDS, {
+			classicAch(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
+				title(40),	-- Vengeful Gladiator <Name>
+			}),
+			classicAch(888, {	-- Vengeful Nether Drake
 				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
-				["timeline"] = { "added 2.4.2.8301", "removed 2.4.3.8600" },
 				["filterID"] = MOUNTS,
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
-				-- #endif
 			}),
 			i(37676, {	-- Vengeful Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
-				["timeline"] = { "added 2.4.2.8301", "removed 2.4.3.8600" },
-				-- #if BEFORE 3.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_THREE .. [[; end]],
-				-- #endif
 			}),
-		}),
+		})),
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
 		n(PVP_GLADIATOR, {
@@ -3487,35 +3518,6 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 				}),
 			}),
-			filter(RELICS, {
-				i(35019, {	-- Brutal Gladiator's Idol of Resolve
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35020, {	-- Brutal Gladiator's Idol of Steadfastness
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35021, {	-- Brutal Gladiator's Idol of Tenacity
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35039, {	-- Brutal Gladiator's Libram of Fortitude
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35040, {	-- Brutal Gladiator's Libram of Justice
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35041, {	-- Brutal Gladiator's Libram of Vengeance
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35104, {	-- Brutal Gladiator's Totem of Indomitability
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35105, {	-- Brutal Gladiator's Totem of Survival
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-				i(35106, {	-- Brutal Gladiator's Totem of the Third Wind
-					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
-				}),
-			}),
 			filter(NECK_F, {
 				i(35132, {	-- Guardian's Pendant of Conquest
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
@@ -3548,6 +3550,35 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 				i(35131, {	-- Guardian's Band of Triumph
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
+				}),
+			}),
+			filter(RELICS, {
+				i(35019, {	-- Brutal Gladiator's Idol of Resolve
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35020, {	-- Brutal Gladiator's Idol of Steadfastness
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35021, {	-- Brutal Gladiator's Idol of Tenacity
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35039, {	-- Brutal Gladiator's Libram of Fortitude
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35040, {	-- Brutal Gladiator's Libram of Justice
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35041, {	-- Brutal Gladiator's Libram of Vengeance
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35104, {	-- Brutal Gladiator's Totem of Indomitability
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35105, {	-- Brutal Gladiator's Totem of Survival
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+				}),
+				i(35106, {	-- Brutal Gladiator's Totem of the Third Wind
+					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
 				}),
 			}),
 			filter(TRINKET_F, {
@@ -3583,23 +3614,23 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 				}),
 			}),
 		}),
-		n(REWARDS, {
-			ach(2316, {	-- Brutal Nether Drake
+		bubbleDown({
+			["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
+			-- #if BEFORE 4.0.1
+			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
+			-- #endif
+		}, n(REWARDS, {
+			classicAch(420, {	-- Brutal Gladiator: Burning Crusade Season 4
+				title(49),	-- Brutal Gladiator <Name>
+			}),
+			classicAch(2316, {	-- Brutal Nether Drake
 				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
-				["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
 				["filterID"] = MOUNTS,
-				-- #if BEFORE 4.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE .. [[; end]],
-				-- #endif
 			}),
 			i(43516, {	-- Brutal Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
-				["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
-				-- #if BEFORE 4.0.1
-				["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE .. [[; end]],
-				-- #endif
 			}),
-		}),
+		})),
 	})),
 }))))));
 -- #if AFTER LEGION
