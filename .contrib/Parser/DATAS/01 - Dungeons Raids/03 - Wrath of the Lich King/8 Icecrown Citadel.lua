@@ -3912,6 +3912,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							ach(4584, {	-- The Light of Dawn
 								title(138),	-- the Light of Dawn
 							}),
+							ach(4625, {	-- Invincible's Reins
+								["provider"] = { "i", 50818 },	-- Invincible's Reins
+								["filterID"] = MOUNTS,
+							}),
 							i(50818),	-- Invincible (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)

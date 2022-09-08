@@ -197,6 +197,8 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					{ "i", 44812 },	-- Turkey Shooter
 				},
 				["timeline"] = { "added 3.2.2.10505" },
+				["sym"] = {{ "achievement_criteria" }},
+				--[[
 				["groups"] = {
 					crit(1),	-- Blood Elf Rogue
 					crit(2),	-- Dwarf Rogue
@@ -209,6 +211,7 @@ root("Holidays", applyholiday(PILGRIMS_BOUNTY, {
 					crit(9),	-- Undead Rogue
 					crit(10),	-- Worgen Rogue
 				},
+				]]--
 			}),
 		}),
 		-- #endif

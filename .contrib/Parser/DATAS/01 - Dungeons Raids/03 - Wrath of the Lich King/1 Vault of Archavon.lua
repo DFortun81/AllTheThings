@@ -18,6 +18,13 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					31125,	-- Archavon the Stone Watcher
 				},
 				["groups"] = {
+					ach(2081, {	-- Grand Black War Mammoth
+						["providers"] = {
+							{ "i", 43959 },	-- Grand Black War Mammoth (A) (MOUNT!)
+							{ "i", 44083 },	-- Grand Black War Mammoth (H) (MOUNT!)
+						},
+						["filterID"] = MOUNTS,
+					}),
 					a(i(43959)),	-- Grand Black War Mammoth (A) (MOUNT!)
 					h(i(44083)),	-- Grand Black War Mammoth (H) (MOUNT!)
 				},

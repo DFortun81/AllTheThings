@@ -1023,7 +1023,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							i(13251),	-- Head of Baron Rivendare
 							classicAch(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
-								["f"] = 100,
+								["f"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
 								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],

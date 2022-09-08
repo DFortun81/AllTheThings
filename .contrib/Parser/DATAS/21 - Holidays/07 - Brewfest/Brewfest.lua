@@ -239,7 +239,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					{ "i", 33868 },	-- Brewfest Boots
 					{ "i", 33966 },	-- Brewfest Slippers
 				},
-				["maps"] = { DALARAN },
+				["maps"] = { NORTHREND_DALARAN },
 			}),
 			classicAch(1936, {	-- Does Your Wolpertinger Linger?
 				["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard

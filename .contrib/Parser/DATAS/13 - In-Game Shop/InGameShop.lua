@@ -1,182 +1,354 @@
 -------------------------------------
 --     I N - G A M E   S H O P     --
 -------------------------------------
-
-root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE },{
-	filter(MOUNTS, {
-		mount(302361, {		-- Alabaster Stormtalon (MOUNT!)
-			["races"] = ALLIANCE_ONLY,
+-- #if AFTER 2.0.1
+root("InGameShop", bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	-- #if AFTER 5.0.1.15662
+	n(ACHIEVEMENTS, {
+		ach(8917, {	-- Collector's Edition: Dread Hatchling
+			["provider"] = { "i", 109014 },	-- Dread Hatchling
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
 		}),
-		mount(302362, {		-- Alabaster Thunderwing (MOUNT!)
+		ach(8916, {	-- Collector's Edition: Dread Raven
+			["provider"] = { "i", 109013 },	-- Dread Raven
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+		}),
+		ach(12230, {	-- Collector's Edition: Gilded Ravasaur
+			["provider"] = { "i", 153540 },	-- Gilded Ravasaur
+			["timeline"] = { "added 7.3.5.25937" },
 			["races"] = HORDE_ONLY,
 		}),
-		i(95341, {			-- Armored Bloodwing (MOUNT!)
-			["u"] = REMOVED_FROM_GAME,
+		ach(10320, {	-- Collector's Edition: Illidari Felstalker
+			["provider"] = { "i", 128425 },	-- Illidari Felstalker
+			["timeline"] = { "added 6.2.2.20395" },
 		}),
-		i(54811),			-- Celestial Steed (MOUNT!)
-		i(109013, {			-- Dread Raven (MOUNT!)
-			["u"] = REMOVED_FROM_GAME,
-			["g"] = {
-				ach(8916, {		-- Collector's Edition: Dread Raven
-					["u"] = REMOVED_FROM_GAME,
+		ach(6849, {	-- Collector's Edition: Imperial Quilen
+			["provider"] = { "i", 85870 },	-- Imperial Quilen
+			["timeline"] = { "added 5.0.1.15662" },
+		}),
+		ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
+			["provider"] = { "i", 85871 },	-- Lucky Quilen Cub
+			["timeline"] = { "added 5.0.1.15662" },
+		}),
+		ach(10321, {	-- Collector's Edition: Nibbles
+			["provider"] = { "i", 128426 },	-- Nibbles
+			["timeline"] = { "added 6.2.2.20395" },
+		}),
+		ach(12229, {	-- Collector's Edition: Seabraid Stallion
+			["provider"] = { "i", 153539 },	-- Seabraid Stallion
+			["timeline"] = { "added 7.3.5.25937" },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(12232, {	-- Collector's Edition: Tottle
+			["provider"] = { "i", 153541 },	-- Tottle
+			["timeline"] = { "added 7.3.5.25937" },
+		}),
+	}),
+	-- #endif
+	filter(MOUNTS, {
+		mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+			["timeline"] = { "added 8.2.5.31958" },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+			["timeline"] = { "added 8.2.5.31958" },
+			["races"] = HORDE_ONLY,
+		}),
+		i(95341, {	-- Armored Bloodwing (MOUNT!)
+			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
+		}),
+		i(54811, {	-- Celestial Steed (MOUNT!)
+			["timeline"] = { "added 3.3.3.11723" },
+		}),
+		i(109013, {	-- Dread Raven (MOUNT!)
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+		}),
+		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
+			["timeline"] = { "added 5.3.0.16758" },
+		}),
+		i(153540, {	-- Gilded Ravasaur (MOUNT!)
+			["timeline"] = { "added 7.3.5.25937" },
+			["races"] = HORDE_ONLY,
+		}),
+		i(112327, {	-- Grinning Reaver (MOUNT!)
+			["timeline"] = { "added 6.0.1.18297", "removed 8.3.0" },
+		}),
+		i(78924, {	-- Heart of the Aspects (MOUNT!)
+			["timeline"] = { "added 4.3.0.15005" },
+		}),
+		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
+			["timeline"] = { "added 8.1.0.29139" },
+		}),
+		i(128425, {	-- Illidari Felstalker (MOUNT!)
+			["timeline"] = { "added 6.2.2.20395" },
+		}),
+		i(85870, {	-- Imperial Quilen (MOUNT!)
+			["timeline"] = { "added 5.0.1.15662" },
+		}),
+		i(107951, {	-- Iron Skyreaver (MOUNT!)
+			["timeline"] = { "added 5.4.2.17585" },
+		}),
+		mount(308087, {	-- Lucky Yun (MOUNT!)
+			["timeline"] = { "added 9.0.2.37176" },
+		}),
+		i(147901, {	-- Luminous Starseeker (MOUNT!)
+			["timeline"] = { "added 7.3.0.24781" },
+		}),
+		i(122469, {	-- Mystic Runesaber (MOUNT!)
+			["timeline"] = { "added 6.1.0.19445" },
+		}),
+		mount(367676, {	-- Nether-Gorged Greatwyrm (MOUNT!)
+			["timeline"] = { "added 9.2.5.44730" },
+		}),
+		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
+			["timeline"] = { "added 9.0.5.37862" },
+		}),
+		i(153539, {	-- Seabraid Stallion (MOUNT!)
+			["timeline"] = { "added 7.3.5.25937" },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
+			["timeline"] = { "added 8.0.1.26032" },
+		}),
+		mount(308078, {	-- Squeakers, the Trickster (MOUNT!)
+			["timeline"] = { "added 8.3.0.33062" },
+		}),
+		mount(326390, {	-- Steamscale Incinerator (MOUNT!)
+			["timeline"] = { "added 8.3.7.35249" },
+		}),
+		mount(317177, {	-- Sunwarmed Purrkin (MOUNT!)
+			["timeline"] = { "added 9.1.0.40725" },
+		}),
+		i(92724, {	-- Swift Windsteed (MOUNT!)
+			["timeline"] = { "added 5.1.0.16309" },
+		}),
+		i(166776, {	-- Sylverian Dreamer (MOUNT!)
+			["timeline"] = { "added 8.2.0.30948" },
+		}),
+		i(160589, {	-- The Dreadwake (MOUNT!)
+			["timeline"] = { "added 8.0.1.27602" },
+		}),
+		i(166775, {	-- Vulpine Familiar (MOUNT!)
+			["timeline"] = { "added 8.1.0.28724" },
+		}),
+		i(112326, {	-- Warforged Nightmare (MOUNT!)
+			["timeline"] = { "added 6.0.1.18297" },
+			["groups"] = {
+				i(112324, {	-- Nightmarish Hitching Post (TOY!)
+					["timeline"] = { "added 6.0.1.18297" },
 				}),
 			},
 		}),
-		i(97989),			-- Enchanted Fey Dragon (MOUNT!)
-		i(153540, {			-- Gilded Ravasaur (MOUNT!)
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				ach(12230),	-- Collector's Edition: Gilded Ravasaur
-			},
+		i(69846, {	-- Winged Guardian (MOUNT!)
+			["timeline"] = { "added 4.1.0.13793" },
 		}),
-		i(112327, {			-- Grinning Reaver (MOUNT!)
-			["u"] = REMOVED_FROM_GAME,
+		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
+			["timeline"] = { "added 9.1.5.42010" },
 		}),
-		i(78924),			-- Heart of the Aspects (MOUNT!)
-		i(166774),			-- Hogrus, Swine of Good Fortune (MOUNT!)
-		i(128425, {			-- Illidari Felstalker (MOUNT!)
-			ach(10320),	-- Collector's Edition: Illidari Felstalker
-		}),
-		i(85870, {			-- Imperial Quilen (MOUNT!)
-			ach(6849),	-- Collector's Edition: Imperial Quilen
-		}),
-		i(107951),			-- Iron Skyreaver (MOUNT!)
-		mount(308087),		-- Lucky Yun (MOUNT!)
-		i(147901),			-- Luminous Starseeker (MOUNT!)
-		i(122469),			-- Mystic Runesaber (MOUNT!)
-		mount(367676),		-- Nether-Gorged Greatwyrm (MOUNT!)
-		mount(347812),		-- Sapphire Skyblazer (MOUNT!)
-		i(153539, {			-- Seabraid Stallion (MOUNT!)
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				ach(12229),	-- Collector's Edition: Seabraid Stallion
-			},
-		}),
-		i(156564),			-- Shu-zen, the Divine Sentinel (MOUNT!)
-		mount(308078),		-- Squeakers, the Trickster (MOUNT!)
-		mount(326390),		-- Steamscale Incinerator (MOUNT!)
-		mount(317177),		-- Sunwarmed Purrkin (MOUNT!)
-		i(92724, {			-- Swift Windsteed (MOUNT!)
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(166776),			-- Sylverian Dreamer (MOUNT!)
-		i(160589),			-- The Dreadwake (MOUNT!)
-		i(166775),			-- Vulpine Familiar (MOUNT!)
-		i(112326, {			-- Warforged Nightmare (MOUNT!)
-			i(112324),		-- Nightmarish Hitching Post (TOY!)
-		}),
-		i(69846),			-- Winged Guardian (MOUNT!)
-		mount(359317),		-- Wen Lo, the River's Edge (MOUNT!)
 	}),
 	filter(BATTLE_PETS, {
-		i(106240),			-- Alterac Brew-Pup
-		i(118516),			-- Argi
+		i(106240, {	-- Alterac Brew-Pup
+			["timeline"] = { "added 5.4.1.17481" },
+		}),
+		i(118516, {	-- Argi
+			["timeline"] = { "added 6.0.1.18711" },
+		}),
 		battlepet(156, {	-- Bananas
-			["u"] = REMOVED_FROM_GAME,
+			["timeline"] = { "added 9.0.5", "removed 9.1.5" },
 		}),
-		pet(3153),			-- Blinky
-		i(98550),			-- Blossoming Ancient
-		i(128424),			-- Brightpaw
-		i(160588),			-- Cap'n Crackers
-		i(70099, {			-- Cenarion Hatchling
-			["u"] = REMOVED_FROM_GAME,
+		pet(3153, {	-- Blinky
+			["timeline"] = { "added 9.1.5.41488" },
 		}),
-		i(92707),			-- Cinder Kitten
-		battlepet(2780),	-- Daisy
-		battlepet(2623),	-- Dottie
-		i(109014, {			-- Dread Hatchling
-			["u"] = REMOVED_FROM_GAME,
-			["g"] = {
-				ach(8917, {	-- Collector's Edition: Dread Hatchling
-					["u"] = REMOVED_FROM_GAME,
-				}),
-			},
+		i(98550, {	-- Blossoming Ancient
+			["timeline"] = { "added 5.3.0.16825" },
 		}),
-		i(69847, {			-- Guardian Cub (Original Version which was bound for 24h)
-			["u"] = REMOVED_FROM_GAME,
+		i(128424, {	-- Brightpaw
+			["timeline"] = { "added 6.2.2.20395" },
 		}),
-		i(72068, {			-- Guardian Cub
-			["u"] = REMOVED_FROM_GAME,
+		i(160588, {	-- Cap'n Crackers
+			["timeline"] = { "added 8.0.1.27602" },
 		}),
-		i(49662, {			-- Gryphon Hatchling
+		i(70099, {	-- Cenarion Hatchling
+			["timeline"] = { "added 4.1.0.13850", "removed 8.3.0" },
+		}),
+		i(92707, {	-- Cinder Kitten
+			["timeline"] = { "added 5.1.0.16309" },
+		}),
+		battlepet(2780, {	-- Daisy
+			["timeline"] = { "added 9.0.5.37864" },
+		}),
+		battlepet(2623, {	-- Dottie
+			["timeline"] = { "added 8.3.0.33062" },
+		}),
+		i(109014, {	-- Dread Hatchling
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+		}),
+		i(69847, {	-- Guardian Cub (Original Version which was bound for 24h)
+			["timeline"] = { "added 4.1.0.13793", "removed 4.2.0.14313" },
+		}),
+		i(72068, {	-- Guardian Cub
+			["timeline"] = { "added 4.2.0.14313", "removed 5.4.8" },
+		}),
+		i(49662, {	-- Gryphon Hatchling
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
-			["u"] = REMOVED_FROM_GAME,
+			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
-		i(49693),			-- Lil' K.T.
-		p(3249, {			-- Lil' Ursoc (PET!)
+		i(49693, {	-- Lil' K.T.
+			["timeline"] = { "added 3.2.2.10505" },
+		}),
+		p(3249, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { "added 9.2.5" },
 		}),
-		i(54847, {			-- Lil' XT
-			["u"] = REMOVED_FROM_GAME,
+		i(54847, {	-- Lil' XT
+			["timeline"] = { "added 3.3.3.11723", "removed 8.3.0" },
 		}),
-		i(68385),			-- Lil' Ragnaros
-		i(85871, {			-- Lucky Quilen Cub
-			ach(6848),			-- Collector's Edition: Lucky Quilen Cub
+		i(68385, {	-- Lil' Ragnaros
+			["timeline"] = { "added 4.0.3.13286" },
 		}),
-		i(141893),			-- Mischief
-		i(68384, {			-- Moonkin egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
-			["u"] = REMOVED_FROM_GAME,
+		i(85871, {	-- Lucky Quilen Cub
+			["timeline"] = { "added 5.0.1.15662" },
 		}),
-		i(68618, {			-- Moonkin Hatchling
+		i(141893, {	-- Mischief
+			["timeline"] = { "added 7.1.0.22996" },
+		}),
+		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
+			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
+		}),
+		i(68618, {	-- Moonkin Hatchling (A)
+			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
 		}),
-		i(68619, {			-- Moonkin Hatchling
+		i(68619, {	-- Moonkin Hatchling (H)
+			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
 		}),
-		i(128426, {			-- Nibbles
-			ach(10321),			-- Collector's Edition: Nibbles
+		i(128426, {	-- Nibbles
+			["timeline"] = { "added 6.2.2.20395" },
 		}),
-		i(49665),			-- Pandaren Monk
-		i(151234),			-- Shadow
-		i(78916),			-- Soul of the Aspects
-		i(153541, {			-- Tottle
-			ach(12232),			-- Collector's Edition: Tottle
+		i(49665, {	-- Pandaren Monk
+			["timeline"] = { "added 3.2.2.10468" },
 		}),
-		i(147900),			-- Twilight
-		i(160587),			-- Whomper
-		i(49663, {			-- Wind Rider Cub
+		i(151234, {	-- Shadow
+			["timeline"] = { "added 7.3.0.25021" },
+		}),
+		i(78916, {	-- Soul of the Aspects
+			["timeline"] = { "added 4.3.0.15005" },
+		}),
+		i(153541, {	-- Tottle
+			["timeline"] = { "added 7.3.5.25937" },
+		}),
+		i(147900, {	-- Twilight
+			["timeline"] = { "added 7.3.0.24781" },
+		}),
+		i(160587, {	-- Whomper
+			["timeline"] = { "added 8.0.1.28153" },
+		}),
+		i(49663, {	-- Wind Rider Cub
+			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
-			["u"] = REMOVED_FROM_GAME,
 		}),
 	}),
+	-- #if AFTER 5.4.0.17153
+	filter(CONSUMABLES, {
+		["description"] = "Only available in the Asian In-Game Shop.",
+		["groups"] = {
+			i(103557, {	-- Enduring Elixir of Wisdom
+				["timeline"] = { "added 5.4.0.17153" },
+			}),
+			i(105911, {	-- Pouch of Enduring Wisdom
+				["timeline"] = { "added 5.4.0.17153" },
+			}),
+			i(105912, {	-- Pouch of Enduring Wisdom (5)
+				["timeline"] = { "added 5.4.0.17153" },
+			}),
+		},
+	}),
+	-- #endif
+	-- #if AFTER 5.4.0.17227
 	filter(COSMETIC, {
-		i(95475, {			-- Crown of Eternal Winter
-			["u"] = REMOVED_FROM_GAME,
+		i(95475, {	-- Crown of Eternal Winter
+			["timeline"] = { "added 5.4.0.17227", "removed 8.3.0" },
 		}),
-		i(97213, {			-- Hood of Hungering Darkness
-			["u"] = REMOVED_FROM_GAME,
+		i(97213, {	-- Hood of Hungering Darkness
+			["timeline"] = { "added 5.4.0.17227", "removed 8.3.0" },
 		}),
-		i(95474, {			-- Jewel of the Firelord
-			["u"] = REMOVED_FROM_GAME,
+		i(95474, {	-- Jewel of the Firelord
+			["timeline"] = { "added 5.4.0.17227", "removed 8.3.0" },
 		}),
-		i(172378),			-- Sprite Darter's Bangle
-		i(172373),			-- Sprite Darter's Flutterers
-		i(172376),			-- Sprite Darter's Galoshes
-		i(172379),			-- Sprite Darter's Glovelettes
-		i(172375),			-- Sprite Darter's Mask
-		i(172377),			-- Sprite Darter's Sash
-		i(172374),			-- Sprite Darter's Shawl
-		i(172380),			-- Sprite Darter's Trousers
-		i(184832),			-- Celestial Observer's Astral Walkers
-		i(184833),			-- Celestial Observer's Buckle
-		i(184829),			-- Celestial Observer's Constellations
-		i(184835),			-- Celestial Observer's Gloves
-		i(184836),			-- Celestial Observer's Leggings
-		i(184830),			-- Celestial Observer's Robe
-		i(184831),			-- Celestial Observer's Skygazer
-		i(184837),			-- Celestial Observer's Starshroud
-		i(184834),			-- Celestial Observer's Wristwrap
-		i(188135),			-- Frrgl's Shaking Shell
-		i(184828),			-- Grrgl's Spotted Shell
-		i(188136),			-- Mrrgl's Shiny Shell
+		i(172378, {	-- Sprite Darter's Bangle
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172373, {	-- Sprite Darter's Flutterers
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172376, {	-- Sprite Darter's Galoshes
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172379, {	-- Sprite Darter's Glovelettes
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172375, {	-- Sprite Darter's Mask
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172377, {	-- Sprite Darter's Sash
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172374, {	-- Sprite Darter's Shawl
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(172380, {	-- Sprite Darter's Trousers
+			["timeline"] = { "added 8.3.0.34963" },
+		}),
+		i(184832, {	-- Celestial Observer's Astral Walkers
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184833, {	-- Celestial Observer's Buckle
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184829, {	-- Celestial Observer's Constellations
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184835, {	-- Celestial Observer's Gloves
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184836, {	-- Celestial Observer's Leggings
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184830, {	-- Celestial Observer's Robe
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184831, {	-- Celestial Observer's Skygazer
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184837, {	-- Celestial Observer's Starshroud
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184834, {	-- Celestial Observer's Wristwrap
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(188135, {	-- Frrgl's Shaking Shell
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(184828, {	-- Grrgl's Spotted Shell
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
+		i(188136, {	-- Mrrgl's Shiny Shell
+			["timeline"] = { "added 9.1.5.41079" },
+		}),
 	}),
+	-- #endif
+	-- #if AFTER 8.1.5.29737
 	filter(TOYS, {
-		i(166778),			-- Horde's Might Firework (TOY!)
-		i(166777),			-- Lion's Pride Firework (TOY!)
-		i(166779),			-- Transmorpher Beacon (TOY!)
+		i(166778, {	-- Horde's Might Firework (TOY!)
+			["timeline"] = { "added 8.1.5.29737" },
+		}),
+		i(166777, {	-- Lion's Pride Firework (TOY!)
+			["timeline"] = { "added 8.1.5.29737" },
+		}),
+		i(166779, {	-- Transmorpher Beacon (TOY!)
+			["timeline"] = { "added 8.1.5.29737" },
+		}),
 	}),
-	un(REMOVED_FROM_GAME, i(105911)),	-- Pouch of Enduring Wisdome (was in asia store during 5.4)
-	un(REMOVED_FROM_GAME, i(105912)),	-- Pouch of Enduring Wisdome 5 (was in asia store during 5.4)
+	-- #endif
 }));
+-- #endif

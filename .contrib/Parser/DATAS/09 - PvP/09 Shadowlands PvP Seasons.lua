@@ -1094,7 +1094,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186860),	-- Cosmic Gladiator's Xiphos
 			}),
 			n(CLASSES,{
-				["description"] = "Can Only be obtained from the great vault/creation catalyst. The Appearances is gained at 1800 raiting",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -1287,7 +1287,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(186860),	-- Cosmic Gladiator's Xiphos
 			}),
 			n(CLASSES,{
-				["description"] = "Can Only be obtained from the great vault/creation catalyst. The Appearances is gained at 1800 raiting",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -1638,7 +1638,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(192289),	-- Eternal Gladiator's Xiphos
 			}),
 			n(CLASSES,{
-				["description"] = "Can Only be obtained from the great vault/creation catalyst. The Appearances is gained at 1800 raiting",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -1831,7 +1831,7 @@ root("PVP", pvp(tier(SL_TIER, {
 				i(192289),	-- Eternal Gladiator's Xiphos
 			}),
 			n(CLASSES,{
-				["description"] = "Can Only be obtained from the great vault/creation catalyst. The Appearances is gained at 1800 raiting",
+				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon

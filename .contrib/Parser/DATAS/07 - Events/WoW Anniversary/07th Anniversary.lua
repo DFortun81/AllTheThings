@@ -1,12 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
-root("WorldEvents", n(SEVENTH_ANNIVERSARY, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
-	ach(5863),	-- 7th Anniversary
-	n(MAILBOX, {
-		i(71134, {	-- Celebration Package
-			["description"] = "Depsite saying 8%, it was 7% during this year's celebration.",
-		}),
-	}),
+root("WorldEvents", bubbleDown({ ["timeline"] = { "added 4.2.2", "removed 4.3" } }, n(SEVENTH_ANNIVERSARY, {
+	classicAch(5863),	-- 7th Anniversary
+	i(71134),	-- Celebration Package
 })));

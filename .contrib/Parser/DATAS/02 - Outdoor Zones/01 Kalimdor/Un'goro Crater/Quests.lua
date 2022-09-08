@@ -669,6 +669,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
 					["g"] = {
+						classicAch(3357, {	-- Venomhide Ravasaur
+							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
+							["timeline"] = { "added 3.2.0.10026" },
+							["races"] = HORDE_ONLY,
+							["f"] = MOUNTS,
+							-- #if BEFORE WRATH
+							["description"] = "Obtain a Venomhide Ravasaur.",
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+							-- #endif
+						}),
 						i(46102),	-- Venomhide Ravasaur (MOUNT!)
 					},
 				}),

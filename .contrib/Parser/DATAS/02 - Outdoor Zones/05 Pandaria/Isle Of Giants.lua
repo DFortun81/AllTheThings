@@ -89,6 +89,10 @@ _.Zones =
 								["repeatable"] = true,
 								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
 								["g"] = {
+									ach(8092, {	-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
+										["provider"] = { "i", 94290 },	-- Bone-White Primal Raptor
+										["filterID"] = MOUNTS,
+									}),
 									i(94290),	-- Bone-White Primal Raptor (MOUNT!)
 								},
 							}),

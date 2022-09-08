@@ -3158,16 +3158,16 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					garrisonBuilding(61),	-- Frostwall Mines lvl 1
 				},
 			}),
-			q(40418, {	-- To Tanaan! 
-				-- TODO: FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
+			q(40418, {	-- To Tanaan!
+				-- FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
 				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 36615 },	-- My Very Own Castle
 				["races"] = ALLIANCE_ONLY,
 				["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 				["description"] = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
 			}),
-			q(40417, {	-- To Tanaan! 
-				-- TODO: FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
+			q(40417, {	-- To Tanaan!
+				-- FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
 				["u"] = REMOVED_FROM_GAME,
 				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["races"] = HORDE_ONLY,

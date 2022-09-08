@@ -170,7 +170,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62578),	--
 				-- 9.0.2
 				q(57537),	-- Covering our Tracks
-				q(62990),	--
 				q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
 				-- 9.1.0
 				q(64192),	--

@@ -1931,26 +1931,7 @@ _.PVP =
 				}),
 			}),
 			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376 }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
-				n(BACK, {
-					-- Was given randomly after winning a pvp match while above 2400 rating
-					i(167373, {	-- Notorious Gladiator's Cape (A)
-					}),
-					i(167372, {	-- Notorious Gladiator's Drape (A)
-					}),
-					i(167370, {	-- Notorious Gladiator's Shawl (A)
-					}),
-					i(167371, {	-- Notorious Gladiator's Greatcloak (A)
-					}),
-					i(167369, {	-- Notorious Gladiator's Cape (H)
-					}),
-					i(167368, {	-- Notorious Gladiator's Drape (H)
-					}),
-					i(167366, {	-- Notorious Gladiator's Shawl (H)
-					}),
-					i(167367, {	-- Notorious Gladiator's Greatcloak (H)
-					}),
-				}),
-				filter(CLOTH, { 
+				filter(CLOTH, {
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
 					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
@@ -2006,21 +1987,21 @@ _.PVP =
 				}),
 				filter(PLATE, {
 					i(172555),	-- Corrupted Gladiator's Plate Helm (A)
-					i(172616),	-- Corrupted Gladiator's Plate Shoulders (H)
 					i(172547),	-- Corrupted Gladiator's Plate Helm (H)
-					i(172640),	-- Corrupted Gladiator's Plate Shoulders (A)
 					i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
-					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
 					i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
+					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
 					i(172584),	-- Corrupted Gladiator's Plate Armguards (A)
 					i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
-					i(172629),	-- Corrupted Gladiator's Plate Gloves (A)
-					i(172614),	-- Corrupted Gladiator's Plate Gloves (H)
 					i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
-					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
 					i(172551),	-- Corrupted Gladiator's Plate Legguards (H)
 					i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
 					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
+					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
+					i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
+					i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
+					i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
+					i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
 				}),
 			})),
 			n(QUESTS, {

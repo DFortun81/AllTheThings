@@ -36,7 +36,10 @@ root("Holidays", applyholiday(LUNAR_FESTIVAL, {
 				},
 			}),
 			-- NOTE: This style is temporary! I'm not sure if it'll be necessary in the future, so making the format consistent for easy Find and Replace to remove them all in one felswoop!
-			ach(6006, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Cataclysm
+			ach(6006, {	-- Elders of Cataclysm
+				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(912, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Eastern Kingdoms
 			ach(911, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of Kalimdor
 			ach(910, { ["sym"] = {{ "achievement_criteria" }}}),	-- Elders of the Dungeons

@@ -1367,13 +1367,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(11382, {	-- Bloodlord Mandokir
 				classicAch(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				}),
-				i(19872),	-- Swift Razzashi Raptor (MOUNT!)
+				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+				}),
 				i(19867),	-- Bloodlord's Defender
 				i(19874),	-- Halberd of Smiting
 				i(20038),	-- Mandokir's Sting
@@ -1426,13 +1429,16 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 			n(14509, {	-- High Priest Thekal
 				classicAch(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
 					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				}),
-				i(19902),	-- Swift Zulian Tiger (MOUNT!)
+				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+				}),
 				i(19896),	-- Thekal's Grasp
 				i(19901),	-- Zulian Slicer
 				i(20266),	-- Peacekeeper Leggings
