@@ -3607,8 +3607,12 @@ local ResolveFunctions = {
 	end,
 	["not"] = function(searchResults, o, cmd, field, ...)
 		-- Instruction to include only search results where a key value is not a value
-		local s, value;
 		local vals = select("#", ...);
+		if vals < 1 then
+			print("'not' had empty value set")
+			return;
+		end
+		local s, value;
 		for k=#searchResults,1,-1 do
 			s = searchResults[k];
 			for i=1,vals do
@@ -3636,6 +3640,11 @@ local ResolveFunctions = {
 	end,
 	["contains"] = function(searchResults, o, cmd, field, ...)
 		-- Instruction to include only search results where a key value/table contains a value
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'contains' had empty value set")
+			return;
+		end
 		local s, kval;
 		for k=#searchResults,1,-1 do
 			s = searchResults[k];
@@ -3651,10 +3660,6 @@ local ResolveFunctions = {
 			-- key exists with single value on the result
 			else
 				local match;
-				local vals = select("#", ...);
-				if vals < 1 then
-					print("'contains' had empty value set")
-				end
 				for i=1,vals do
 					if kval == select(i, ...) then
 						match = true;
@@ -3665,6 +3670,84 @@ local ResolveFunctions = {
 					tremove(searchResults, k);
 				end
 			end
+		end
+	end,
+	["exclude"] = function(searchResults, o, cmd, field, ...)
+		-- Instruction to exclude search results where a key value contains a value.
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'exclude' had empty value set")
+			return;
+		end
+		local s, kval;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			kval = s[field];
+			-- key exists
+			if kval then
+				local match;
+				for i=1,vals do
+					if kval == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if match then
+					-- TEMP logic to allow Ensembles to continue working until they get fixed again...
+					if field == "itemID" and s.g and kval == o[field] then
+						ArrayAppend(searchResults, s.g);
+					end
+					tremove(searchResults, k);
+				end
+			end
+		end
+	end,
+	["invtype"] = function(searchResults, o, cmd, ...)
+		-- Instruction to include only search results where an item is of a specific inventory type.
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'invtype' had empty value set")
+			return;
+		end
+		local s, invtype;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			if s.itemID then
+				invtype = select(4, GetItemInfoInstant(s.itemID));
+				local match;
+				for i=1,vals do
+					if invtype == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if not match then
+					tremove(searchResults, k);
+				end
+			end
+		end
+	end,
+	["meta_achievement"] = function(searchResults, o, cmd, ...)
+		-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'meta_achievement' had empty value set")
+			return;
+		end
+		local cache, value;
+		for i=1,vals do
+			value = select(i, ...);
+			cache = app.CleanSourceIgnoredGroups(app.SearchForField("achievementID", value));
+			if cache then
+				ArrayAppend(searchResults, cache);
+			else
+				print("Failed to select achievementID",value);
+			end
+		end
+		-- Remove any Criteria groups associated with those achievements
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if s.criteriaID then tremove(searchResults, k); end
 		end
 	end,
 };
@@ -3687,34 +3770,7 @@ ResolveSymbolicLink = function(o)
 			if cmdFunc then
 				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
 				cmdFunc(searchResults, o, unpack(sym));
-			elseif cmd == "exclude" then
-				-- Instruction to exclude search results where a key value contains a value.
-				local key = sym[2];
-				local clone = {unpack(sym)};
-				tremove(clone, 1);
-				tremove(clone, 1);
-				if #clone > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and contains(clone, s[key]) then
-							-- TEMP logic to allow Ensembles to continue working until they get fixed again...
-							if key == "itemID" and s.g and s[key] == o[key] then
-								ArrayAppend(searchResults, s.g);
-							end
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "isrelic" then
-				-- Instruction to include only search results where an item is a relic.
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.itemID and IsArtifactRelicItem(s.itemID) then
-						-- We're good.
-					else
-						tremove(searchResults, k);
-					end
-				end
+			-- Special commands that interact outside of the scope of search results
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
 				ArrayAppend(finalized, searchResults);
@@ -3724,18 +3780,22 @@ ResolveSymbolicLink = function(o)
 				ArrayAppend(finalized, searchResults);
 				searchResults = finalized;
 				finalized = {};
-			elseif cmd == "invtype" then
-				-- Instruction to include only search results where an item is of a specific inventory type.
-				local types = {unpack(sym)};
-				tremove(types, 1);
-				if #types > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
-							tremove(searchResults, k);
-						end
-					end
-				end
+			elseif cmd == "modID" then
+				newModID = sym[2];
+			elseif cmd == "myModID" then
+				newModID = o.modID;
+
+			-- Commands not currently utilized
+			-- elseif cmd == "isrelic" then
+			-- 	-- Instruction to include only search results where an item is a relic.
+			-- 	for k=#searchResults,1,-1 do
+			-- 		local s = searchResults[k];
+			-- 		if s.itemID and IsArtifactRelicItem(s.itemID) then
+			-- 			-- We're good.
+			-- 		else
+			-- 			tremove(searchResults, k);
+			-- 		end
+			-- 	end
 			elseif cmd == "relictype" then
 				-- Instruction to include only search results where an item is of a specific relic type.
 				local types = {unpack(sym)};
@@ -3766,10 +3826,6 @@ ResolveSymbolicLink = function(o)
 						end
 					end
 				end
-			elseif cmd == "modID" then
-				newModID = sym[2];
-			elseif cmd == "myModID" then
-				newModID = o.modID;
 			elseif cmd == "sub" then
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
@@ -3838,22 +3894,6 @@ ResolveSymbolicLink = function(o)
 						criteriaObject.parent = o;
 						tinsert(searchResults, criteriaObject);
 					end
-				end
-			elseif cmd == "meta_achievement" then
-				-- Instruction to search the full database for multiple achievementID's
-				local cache;
-				for i=2,#sym do
-					cache = app.CleanSourceIgnoredGroups(app.SearchForField("achievementID", sym[i]));
-					if cache then
-						ArrayAppend(searchResults, cache);
-					else
-						print("Failed to select achievementID",sym[i]);
-					end
-				end
-				-- Remove any Criteria groups associated with those achievements
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.criteriaID then tremove(searchResults, k); end
 				end
 			end
 			-- if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
