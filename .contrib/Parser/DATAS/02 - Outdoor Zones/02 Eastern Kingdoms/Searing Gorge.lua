@@ -365,7 +365,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 14628,	-- Evonice Sootsmoker
 					["coord"] = { 38.4, 27.7, SEARING_GORGE },
 					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dark Iron Pillow
@@ -433,7 +432,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						{ "n", 14636 },	-- Chambermaid Pillaclencher
 					},
 					["timeline"] = { "created 1.12.1.10958", "added 3.3.0", "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
