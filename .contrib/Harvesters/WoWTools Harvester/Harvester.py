@@ -107,7 +107,7 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                 thing_list.append(f"{row['ItemID']}\n")
             case Things.Transmog:
                 # Item names are in Item Sparse db.
-                thing_list.append(f"{row['ID']}\n")
+                thing_list.append(f"{row['ID']},{row['ItemID']}\n")
             case Things.Creature:
                 # Helps Followers and Pets to get names
                 thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
@@ -208,10 +208,10 @@ def create_raw_file(thing: Things) -> None:
                 raw_file.writelines(difference)
 
 
-def extract_first_column(csv_path: Path) -> list[str]:
+def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extracts first column from CSV file."""
     with open(csv_path) as csv_file:
-        return [line.split(",")[0] + "\n" for line in csv_file]
+        return [line.split(",")[n] + "\n" for line in csv_file]
 
 
 def create_missing_recipes() -> None:
@@ -228,8 +228,8 @@ def create_missing_recipes() -> None:
         )
         with open(raw_path) as raw_file, open(missing_path, "w") as missing_file:
             raw_lines = raw_file.readlines()
-            excluded_recipes = extract_first_column(
-                Path("Exclusion", "Professions", f"{profession}.txt")
+            excluded_recipes = extract_nth_column(
+                Path("Exclusion", "Professions", f"{profession}.txt"), 0
             )
             difference = sorted(
                 set(raw_lines)
@@ -278,8 +278,8 @@ def create_missing_file(thing: Things) -> None:
             f"Missing{thing.name}.txt",
         )
         with open(missing_path, "w") as missing_file:
-            raw_ids = extract_first_column(Path("Raw", f"{thing.name}.txt"))
-            excluded_ids = extract_first_column(Path("Exclusion", f"{thing.name}.txt"))
+            raw_ids = extract_nth_column(Path("Raw", f"{thing.name}.txt"), 0)
+            excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.name}.txt"), 0)
             difference = sorted(
                 set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
                 key=raw_ids.index,
@@ -344,13 +344,98 @@ EXTRACTORS = {
 }
 
 
-def add_latest_data(build: str) -> None:
-    """Add the latest data to the raw files."""
-    raise NotImplementedError
+def remove_empty_builds(missing_lines: list[str], build_lines: list[str]) -> list[str]:
+    for n in range(len(missing_lines)):
+        if missing_lines[n-1] in build_lines and missing_lines[n] in build_lines:
+            missing_lines.remove(missing_lines[n-1])
+    return missing_lines
 
 
-def get_name(thing: Things) -> None:
-    """Get the name of a thing from Wowhead."""
+def post_process(thing: Things) -> None:
+    """Get the name of a thing and clean up builds."""
     # TODO: Should this accept type of Thing and its ID?
     # TODO: Should it return the name?
+    if thing.value > Things.Transmog.value:
+        raise NotImplementedError("This is not a real collectible.")
+    thing2prefix: dict[Things, str] = {
+        Things.Achievements: "ach(",
+        Things.Factions: "faction(",
+        Things.FlightPaths: "fp(",
+        Things.Followers: "follower(",
+        Things.Illusions: "ill(",
+        Things.Mounts: "mnt(",
+        Things.Pets: "p(",
+        Things.Quests: "q(",
+        Things.Recipes: "r(",
+        Things.Titles: "title(",
+        Things.Toys: "i(",
+        Things.Transmog: "i(",
+    }
+    raw_path = Path("Raw", f"{thing.name}.txt")
+    builds_path = Path("Builds", f"{thing.name}.txt")
+    missing_path = Path(
+        DATAS_FOLDER,
+        "00 - Item Database",
+        "MissingIDs",
+        f"Missing{thing.name}.txt",
+    )
+    build_lines = extract_nth_column(builds_path, 0)
+    # Might contain previous names?
+    missing_lines = extract_nth_column(missing_path, 0)
+    # Rip out builds?
+    missing_lines = remove_empty_builds(missing_lines, build_lines)
+    if thing == Things.Achievements or thing == Things.Factions or thing == Things.FlightPaths or thing == Things.Mounts or thing == Things.Titles:
+        raw_ids = extract_nth_column(raw_path, 0)
+        names = extract_nth_column(raw_path, 1)
+        for n in range(len(missing_lines)):
+            if missing_lines[n] not in build_lines:
+                if missing_lines[n] in raw_ids:
+                    missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t-- "+names[n]
+                else:
+                    missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t--"
+    #elif thing == Things.Followers:
+                #case Things.Creature:
+                # Helps Followers and Pets to get names
+                # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                # ALLiance and horde names..
+    elif thing == Things.Illusions:
+        raw_ids = extract_nth_column(raw_path, 0)
+        raw_id_to_nameid = extract_nth_column(raw_path, 1)
+        name_ids = extract_nth_column(Path("Raw", f"SpellItem.txt"), 0)
+        names = extract_nth_column(Path("Raw", f"SpellItem.txt"), 1)
+    #elif thing == Things.Quests:
+    elif thing == Things.Pets:
+        raw_ids = extract_nth_column(raw_path, 0)
+        raw_id_to_nameid = extract_nth_column(raw_path, 1)
+        name_ids = extract_nth_column(Path("Raw", f"Creature.txt"), 0)
+        names = extract_nth_column(Path("Raw", f"Creature.txt"), 1)
+    #elif thing == Things.Recipes
+                # Recipe names are in the SpellName db and Profession names are in SkillLine db
+                #case Things.SpellName:
+                # Helps Recipes
+                #thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                #case Things.SkillLine:
+                # Helps Professions
+                #thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+                # Recipes are always stupid
+    elif thing == Things.Toys:
+        raw_ids = extract_nth_column(raw_path, 0)
+        name_ids = raw_id_to_nameid
+        names = extract_nth_column(Path("Raw", f"Item.txt"), 1)
+    elif thing == Things.Transmog:
+        raw_ids = extract_nth_column(raw_path, 0)
+        raw_id_to_nameid =  extract_nth_column(raw_path, 1)
+        name_ids = extract_nth_column(Path("Raw", f"Item.txt"), 0)
+        names = extract_nth_column(Path("Raw", f"Item.txt"), 1)
+        ## This should use itemID instead... have to rework
+    for n in range(len(missing_lines)):
+        if missing_lines[n] not in build_lines:
+            if missing_lines[n] in raw_ids and raw_id_to_nameid[n] in name_ids:
+                missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t-- "+names[n]
+            else:
+                missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t--"
+
+
+def add_latest_data(build: str) -> None:
+    """Add the latest data to the raw files."""
     raise NotImplementedError
