@@ -624,7 +624,12 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
 					q(45644, {	-- Oh Doloria, My Sweet Doloria
-						["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
+						["sourceQuests"] = {
+							45565,	-- Further Training
+							45566,	-- A Knight's Belongings
+							45567,	-- My Kingdom For a Horse
+							45568,	-- They Stole Excaliberto!
+						},
 						["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
