@@ -592,7 +592,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 48.2, 41.0, LEGION_DALARAN },
 					}),
 					q(45566, {	-- A Knight's Belongings
-						["sourceQuests"] = { 45565 },	-- Further Training
+						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
@@ -619,7 +619,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
 					}),
 					q(45567, {	-- My Kingdom for a Horse
-						["sourceQuests"] = { 45566 },	-- A Knight's Belongings
+						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
@@ -651,7 +651,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						["coord"] = { 72.0, 49.3, LEGION_DALARAN },
 					}),
 					q(45568, {	-- They Stole Excaliberto!
-						["sourceQuests"] = { 45567 },	-- My Kingdom for a Horse
+						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
 					}),
