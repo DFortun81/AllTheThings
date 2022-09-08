@@ -368,6 +368,37 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(161674)),	-- Dread Gladiator's Medallion
 				}),
 			}),
+			--[[n(PVP_ELITE, bubbleDown({["modID"] = 3}, {	-- Elite Gear. Do not use more filters,
+				n(BACK, {
+					
+				}),
+				filter(CLOTH, {
+				}),
+				filter(LEATHER, {
+					
+				}),
+				filter(MAIL, {
+					i(161614),	-- Dread Gladiator's Chain Helm (A)
+					i(161623),	-- Dread Gladiator's Chain Spaulders (A)
+					i(161603),	-- Dread Gladiator's Chain Armor (A)
+					i(161630),	-- Dread Gladiator's Chain Armbands (A)
+					i(161612),	-- Dread Gladiator's Chain Gauntlets (A)
+					i(161626),	-- Dread Gladiator's Chain Waistguard (A)
+					i(161618),	-- Dread Gladiator's Chain Leggings (A)
+					i(161607),	-- Dread Gladiator's Chain Sabatons (A)
+					i(161655),	-- Dread Gladiator's Chain Spaulders (H)
+					i(161658),	-- Dread Gladiator's Chain Waistguard (H)
+					i(161639),	-- Dread Gladiator's Chain Sabatons (H)
+					i(161646),	-- Dread Gladiator's Chain Helm (H)
+					i(161650),	-- Dread Gladiator's Chain Leggings (H)
+					i(161644),	-- Dread Gladiator's Chain Gauntlets (H)
+					i(161662),	-- Dread Gladiator's Chain Armbands (H)
+					i(161635),	-- Dread Gladiator's Chain Armor (H)
+				}),
+				filter(PLATE, {
+				}),
+			})),
+			--]]
 			n(QUESTS, {
 				q(53457, {	-- Quartermaster's Bounty
 					["providers"] = {
