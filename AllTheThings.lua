@@ -3099,15 +3099,6 @@ local select, tremove, unpack =
 	  select, tremove, unpack;
 local subroutines;
 subroutines = {
-	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-		};
-	end,
 	["pvp_gear_faction_base"] = function(tierID, headerID1, headerID2, headerID3)
 		return {
 			{"select", "tierID", tierID },	-- Select the Expansion header
@@ -3601,7 +3592,7 @@ local ResolveFunctions = {
 		-- Instruction to include only search results where a key value is not a value
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'not' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, value;
@@ -3634,7 +3625,7 @@ local ResolveFunctions = {
 		-- Instruction to include only search results where a key value/table contains a value
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'contains' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, kval;
@@ -3668,7 +3659,7 @@ local ResolveFunctions = {
 		-- Instruction to exclude search results where a key value contains a value.
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'exclude' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, kval;
@@ -3698,7 +3689,7 @@ local ResolveFunctions = {
 		-- Instruction to include only search results where an item is of a specific inventory type.
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'invtype' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		local s, invtype;
@@ -3723,7 +3714,7 @@ local ResolveFunctions = {
 		-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'meta_achievement' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		local cache, value;
@@ -3746,7 +3737,7 @@ local ResolveFunctions = {
 		-- Instruction to include only search results where an item is of a specific relic type.
 		local vals = select("#", ...);
 		if vals < 1 then
-			print("'relictype' had empty value set")
+			print("'",cmd,"' had empty value set")
 			return;
 		end
 		--[[
@@ -3778,21 +3769,45 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["sub"] = function(searchResults, o, cmd, sub, ...)
-		local subroutine = subroutines[sub];
-		if subroutine then
-			local commands = subroutine(...);
-			if commands then
-				-- app.PrintDebug("ResolveSymbolicLink:sub",sub,...)
-				local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-				-- app.PrintDebug("Added:",resolved and #resolved)
-				ArrayAppend(searchResults, resolved);
-			end
-		else
-			print("Could not find subroutine", sub);
-		end
+};
+-- Subroutine Logic Cache
+local SubroutineCache = {
+	["pvp_gear_base"] = function(searchResults, o, cmd, tierID, headerID1, headerID2)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		-- app.PrintDebug("SubroutineCache.pvp_gear_base",tierID,headerID1,headerID2)
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Set header
+		where(searchResults, o, "where", "headerID", headerID2);
 	end,
 };
+-- Sym commands which reference the Subroutine cache
+ResolveFunctions.sub = function(searchResults, o, cmd, sub, ...)
+	local subroutine = SubroutineCache[sub];
+	-- new logic: no metatable cloning, no table creation for sub-commands
+	if subroutine then
+		subroutine(searchResults, o, cmd, ...);
+		return;
+	end
+	subroutine = subroutines[sub];
+	if subroutine then
+		local commands = subroutine(...);
+		if commands then
+			-- app.PrintDebug("ResolveSymbolicLink:sub",sub,...)
+			local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
+			-- app.PrintDebug("Added:",resolved and #resolved)
+			ArrayAppend(searchResults, resolved);
+		end
+	else
+		print("Could not find subroutine", sub);
+	end
+end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
@@ -3893,7 +3908,7 @@ ResolveSymbolicLink = function(o)
 					end
 				end
 			end
-			-- if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
+			-- app.PrintDebug("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
