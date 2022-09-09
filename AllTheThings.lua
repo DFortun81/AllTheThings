@@ -2745,6 +2745,7 @@ local NPCTitlesFromID = {};
 local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
 app.NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	if not id then return; end
+	id = tonumber(id);
 	if id > 0 then
 		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE");
 		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id));
@@ -22448,7 +22449,7 @@ app.LoadDebugger = function()
 					end
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
 					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if app.DEBUG_PRINT then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id); end
+					if app.DEBUG_PRINT then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]); end
 
 					local rawGroups = {};
 					for i=1,GetNumQuestRewards(),1 do
