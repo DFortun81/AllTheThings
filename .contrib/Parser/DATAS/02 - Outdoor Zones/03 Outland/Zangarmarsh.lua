@@ -1283,9 +1283,6 @@ root("Zones", {
 							{ 86.0, 91.2, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4505, {	-- Bog Lurker
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31248),	-- Bog Epaulets
 							i(31250),	-- Bog Mantle
 							i(31247),	-- Bog Pauldrons
@@ -1310,9 +1307,6 @@ root("Zones", {
 							{ 73.4, 82.4, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4507, {	-- Coilfang Emissary
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31246),	-- Nagahide Leggings
 							i(31244),	-- Nagahide Pants
 							i(31243),	-- Nagascale Legguards
@@ -1351,9 +1345,6 @@ root("Zones", {
 							{ 78.8, 53.6, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4516, {	-- Marticar
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31254),	-- Striderhide Cloak
 						},
 					}),
