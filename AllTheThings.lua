@@ -3129,9 +3129,7 @@ subroutines = {
 			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
+			{"extract","s"},	-- Extract all Items with a SourceID
 		};
 	end,
 	["pvp_set_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3, classID)
@@ -3145,9 +3143,7 @@ subroutines = {
 			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "classID", classID },	-- Select all the class header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
+			{"extract","s"},	-- Extract all Items with a SourceID
 		};
 	end,
 	-- Weapons
@@ -3160,9 +3156,7 @@ subroutines = {
 			{"where", "headerID", headerID2 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
+			{"extract","s"},	-- Extract all Items with a SourceID
 		};
 	end,
 	["pvp_weapons_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3)
@@ -3176,9 +3170,7 @@ subroutines = {
 			{"where", "headerID", headerID3 },	-- Select the Set header
 			{"pop"},	-- Discard the Set header and acquire the children.
 			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
+			{"extract","s"},	-- Extract all Items with a SourceID
 		};
 	end,
 	["legion_relinquished_base"] = function()
@@ -3786,6 +3778,20 @@ local ResolveFunctions = {
 			end
 		end
 	end,
+	["sub"] = function(searchResults, o, cmd, sub, ...)
+		local subroutine = subroutines[sub];
+		if subroutine then
+			local commands = subroutine(...);
+			if commands then
+				-- app.PrintDebug("ResolveSymbolicLink:sub",sub,...)
+				local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
+				-- app.PrintDebug("Added:",resolved and #resolved)
+				ArrayAppend(searchResults, resolved);
+			end
+		else
+			print("Could not find subroutine", sub);
+		end
+	end,
 };
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
@@ -3833,22 +3839,6 @@ ResolveSymbolicLink = function(o)
 			-- 		end
 			-- 	end
 
-			elseif cmd == "sub" then
-				local subroutine = subroutines[sym[2]];
-				if subroutine then
-					local args = {unpack(sym)};
-					tremove(args, 1);
-					tremove(args, 1);
-					local commands = subroutine(unpack(args));
-					if commands then
-						-- app.PrintDebug("ResolveSymbolicLink:sub",sym[2],sym[3],sym[4])
-						local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-						-- app.PrintDebug("Added:",#resolved)
-						ArrayAppend(searchResults, resolved);
-					end
-				else
-					print("Could not find subroutine", sym[2]);
-				end
 			elseif cmd == "subif" then
 				-- Instruction to perform a set of commands if a conditional is returned true.
 				local subroutine = subroutines[sym[2]];
