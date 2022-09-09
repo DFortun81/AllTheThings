@@ -3750,6 +3750,42 @@ local ResolveFunctions = {
 			if s.criteriaID then tremove(searchResults, k); end
 		end
 	end,
+	["relictype"] = function(searchResults, o, cmd, ...)
+		-- Instruction to include only search results where an item is of a specific relic type.
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'relictype' had empty value set")
+			return;
+		end
+		--[[
+		RELIC_SLOT_TYPE_ARCANE = "Arcane";
+		RELIC_SLOT_TYPE_BLOOD = "Blood";
+		RELIC_SLOT_TYPE_FEL = "Fel";
+		RELIC_SLOT_TYPE_FIRE = "Fire";
+		RELIC_SLOT_TYPE_FROST = "Frost";
+		RELIC_SLOT_TYPE_HOLY = "Holy";
+		RELIC_SLOT_TYPE_IRON = "Iron";
+		RELIC_SLOT_TYPE_LIFE = "Life";
+		RELIC_SLOT_TYPE_SHADOW = "Shadow";
+		RELIC_SLOT_TYPE_WATER = "Water";
+		RELIC_SLOT_TYPE_WIND = "Storm";
+		]]--
+		local types = {...};
+		-- replace the short constant values with in-game localized values
+		for i=#types,1,-1 do
+			types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
+		end
+		local s, itemID;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			itemID = s.itemID;
+			if itemID and IsArtifactRelicItem(itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID))) then
+				-- We're good.
+			else
+				tremove(searchResults, k);
+			end
+		end
+	end,
 };
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
@@ -3796,36 +3832,7 @@ ResolveSymbolicLink = function(o)
 			-- 			tremove(searchResults, k);
 			-- 		end
 			-- 	end
-			elseif cmd == "relictype" then
-				-- Instruction to include only search results where an item is of a specific relic type.
-				local types = {unpack(sym)};
-				tremove(types, 1);
-				if #types > 0 then
-					--[[
-					RELIC_SLOT_TYPE_ARCANE = "Arcane";
-					RELIC_SLOT_TYPE_BLOOD = "Blood";
-					RELIC_SLOT_TYPE_FEL = "Fel";
-					RELIC_SLOT_TYPE_FIRE = "Fire";
-					RELIC_SLOT_TYPE_FROST = "Frost";
-					RELIC_SLOT_TYPE_HOLY = "Holy";
-					RELIC_SLOT_TYPE_IRON = "Iron";
-					RELIC_SLOT_TYPE_LIFE = "Life";
-					RELIC_SLOT_TYPE_SHADOW = "Shadow";
-					RELIC_SLOT_TYPE_WATER = "Water";
-					RELIC_SLOT_TYPE_WIND = "Storm";
-					]]--
-					for i=#types,1,-1 do
-						types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
-					end
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID and IsArtifactRelicItem(s.itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(s.itemID))) then
-							-- We're good.
-						else
-							tremove(searchResults, k);
-						end
-					end
-				end
+
 			elseif cmd == "sub" then
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
