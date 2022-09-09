@@ -201,11 +201,12 @@ def create_raw_file(thing: Things) -> None:
         for build in builds_file:
             thing_list = get_thing_data(thing, build.strip())
             with open(raw_path, "r+") as raw_file:
-                raw_file.write(build)
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(set(thing_list) - set(old_lines), key=float)
-                raw_file.writelines(difference)
+                if difference:
+                    raw_file.write(build)
+                    raw_file.writelines(difference)
 
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
@@ -344,13 +345,6 @@ EXTRACTORS = {
 }
 
 
-def remove_empty_builds(missing_lines: list[str], build_lines: list[str]) -> list[str]:
-    for n in range(len(missing_lines)):
-        if missing_lines[n-1] in build_lines and missing_lines[n] in build_lines:
-            missing_lines.remove(missing_lines[n-1])
-    return missing_lines
-
-
 def post_process(thing: Things) -> None:
     """Get the name of a thing and clean up builds."""
     # TODO: Should this accept type of Thing and its ID?
@@ -372,68 +366,81 @@ def post_process(thing: Things) -> None:
         Things.Transmog: "i(",
     }
     raw_path = Path("Raw", f"{thing.name}.txt")
-    builds_path = Path("Builds", f"{thing.name}.txt")
+    raw_ids = extract_nth_column(raw_path, 0)
     missing_path = Path(
         DATAS_FOLDER,
         "00 - Item Database",
         "MissingIDs",
         f"Missing{thing.name}.txt",
     )
-    build_lines = extract_nth_column(builds_path, 0)
     # Might contain previous names?
     missing_lines = extract_nth_column(missing_path, 0)
-    # Rip out builds?
-    missing_lines = remove_empty_builds(missing_lines, build_lines)
-    if thing == Things.Achievements or thing == Things.Factions or thing == Things.FlightPaths or thing == Things.Mounts or thing == Things.Titles:
-        raw_ids = extract_nth_column(raw_path, 0)
+    if thing in (
+        Things.Achievements,
+        Things.Factions,
+        Things.FlightPaths,
+        Things.Mounts,
+        Things.Titles,
+    ):
         names = extract_nth_column(raw_path, 1)
         for n in range(len(missing_lines)):
-            if missing_lines[n] not in build_lines:
-                if missing_lines[n] in raw_ids:
-                    missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t-- "+names[n]
-                else:
-                    missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t--"
-    #elif thing == Things.Followers:
-                #case Things.Creature:
-                # Helps Followers and Pets to get names
-                # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                # ALLiance and horde names..
+            stripped_id = missing_lines[n].rstrip()
+            if stripped_id.isdigit():
+                missing_lines[n] = f"{thing2prefix[thing]}{stripped_id}),\t--"
+                if stripped_id == raw_ids[n].rstrip():
+                    missing_lines[n] += " " + names[n].rstrip()
+        raise NotImplementedError("Should we overwrite some files or return something?")
+    elif thing == Things.Followers:
+        # TODO:
+        raise NotImplementedError("Followers are not implemented yet.")
+    elif thing == Things.Creature:
+        # TODO:
+        # Helps Followers and Pets to get names
+        # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+        # Alliance and Horde names..
+        raise NotImplementedError("Creatures are not implemented yet.")
     elif thing == Things.Illusions:
-        raw_ids = extract_nth_column(raw_path, 0)
         raw_id_to_nameid = extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", f"SpellItem.txt"), 0)
-        names = extract_nth_column(Path("Raw", f"SpellItem.txt"), 1)
-    #elif thing == Things.Quests:
+        name_ids = extract_nth_column(Path("Raw", "SpellItem.txt"), 0)
+        names = extract_nth_column(Path("Raw", "SpellItem.txt"), 1)
+    elif thing == Things.Quests:
+        # TODO:
+        raise NotImplementedError("Quests are not implemented yet.")
     elif thing == Things.Pets:
-        raw_ids = extract_nth_column(raw_path, 0)
         raw_id_to_nameid = extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", f"Creature.txt"), 0)
-        names = extract_nth_column(Path("Raw", f"Creature.txt"), 1)
-    #elif thing == Things.Recipes
-                # Recipe names are in the SpellName db and Profession names are in SkillLine db
-                #case Things.SpellName:
-                # Helps Recipes
-                #thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                #case Things.SkillLine:
-                # Helps Professions
-                #thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
-                # Recipes are always stupid
+        name_ids = extract_nth_column(Path("Raw", "Creature.txt"), 0)
+        names = extract_nth_column(Path("Raw", "Creature.txt"), 1)
+    elif thing == Things.Recipes:
+        # TODO:
+        # Recipe names are in the SpellName db and Profession names are in SkillLine db
+        raise NotImplementedError("Recipes are not implemented yet.")
+    elif thing == Things.SpellName:
+        # TODO:
+        # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+        raise NotImplementedError("SpellNames are not implemented yet.")
+    elif thing == Things.SkillLine:
+        # TODO:
+        # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+        raise NotImplementedError("SkillLines are not implemented yet.")
     elif thing == Things.Toys:
-        raw_ids = extract_nth_column(raw_path, 0)
-        name_ids = raw_id_to_nameid
-        names = extract_nth_column(Path("Raw", f"Item.txt"), 1)
+        # name_ids = raw_id_to_nameid  # TODO: this is not correct
+        names = extract_nth_column(Path("Raw", "Item.txt"), 1)
     elif thing == Things.Transmog:
-        raw_ids = extract_nth_column(raw_path, 0)
-        raw_id_to_nameid =  extract_nth_column(raw_path, 1)
-        name_ids = extract_nth_column(Path("Raw", f"Item.txt"), 0)
-        names = extract_nth_column(Path("Raw", f"Item.txt"), 1)
-        ## This should use itemID instead... have to rework
+        raw_id_to_nameid = extract_nth_column(raw_path, 1)
+        name_ids = extract_nth_column(Path("Raw", "Item.txt"), 0)
+        names = extract_nth_column(Path("Raw", "Item.txt"), 1)
+        # TODO: this should use itemID instead... have to rework
+    # TODO: I guess you want to set names, raw_id_to_nameid and name_ids for all Thing
+    # types above for this loop to work
     for n in range(len(missing_lines)):
-        if missing_lines[n] not in build_lines:
-            if missing_lines[n] in raw_ids and raw_id_to_nameid[n] in name_ids:
-                missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t-- "+names[n]
-            else:
-                missing_lines[n] = thing2prefix[thing]+missing_lines[n]+"),\t--"
+        stripped_id = missing_lines[n].rstrip()
+        if stripped_id.isdigit():
+            missing_lines[n] = f"{thing2prefix[thing]}{stripped_id}),\t--"
+            if (
+                stripped_id == raw_ids[n].rstrip()
+                and raw_id_to_nameid[n].rstrip() == name_ids[n].rstrip()
+            ):
+                missing_lines[n] += " " + names[n].rstrip()
 
 
 def add_latest_data(build: str) -> None:
