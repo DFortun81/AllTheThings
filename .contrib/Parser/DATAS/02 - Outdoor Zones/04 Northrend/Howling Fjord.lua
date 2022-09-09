@@ -2077,14 +2077,13 @@ root("Zones", {
 							{ 33.2, 80.2, HOWLING_FJORD },
 						},
 						["groups"] = {
-							crit(9, {	-- King Ping
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
-							un(REMOVED_FROM_GAME, i(120139, {	-- Tome of Polymorph: Penguin
+							i(120139, {	-- Tome of Polymorph: Penguin
+								["spellID"] = 161355,	-- Polymorph(Penguin)
+								["timeline"] = { "added 6.0.2.18816", "removed 7.0.1" },
+								["classes"] = { MAGE },
 								["f"] = RECIPES,
-							})),
+							}),
 							i(44668),	-- Egg-Warming Blanket
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32377, {	-- Perobas the Bloodthirster
@@ -2096,11 +2095,7 @@ root("Zones", {
 							{ 71.6, 13.6, HOWLING_FJORD },
 						},
 						["groups"] = {
-							crit(7, {	-- Perobas the Bloodthirster
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44669),	-- Worgen-Scored Shackles
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32386, {	-- Vigdis the War Maiden
@@ -2121,11 +2116,7 @@ root("Zones", {
 							{ 69.4, 58.2, HOWLING_FJORD },
 						},
 						["groups"] = {
-							crit(8, {	-- Vigdis the War Maiden
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44670),	-- Soul-Sealed Belt
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

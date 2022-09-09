@@ -2136,11 +2136,7 @@ root("Zones", {
 							{ 71.8, 37.8, ICECROWN },
 						},
 						["groups"] = {
-							crit(2, {	-- High Thane Jorfus
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44695),	-- Corroded Faceguard
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32495, {	-- Hildana Deathstealer
@@ -2150,11 +2146,7 @@ root("Zones", {
 							{ 59.6, 59.2, ICECROWN },
 						},
 						["groups"] = {
-							crit(3, {	-- Hildana Deathstealer
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44697),	-- Val'kyr Vestments
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32487, {	-- Putridus the Ancient
@@ -2169,11 +2161,7 @@ root("Zones", {
 							{ 46.8, 65.2, ICECROWN },
 						},
 						["groups"] = {
-							crit(23, {	-- Putridus the Ancient
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44696),	-- Giant's Toewrap
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

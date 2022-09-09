@@ -1511,7 +1511,6 @@ root("Zones", {
 						["coord"] = { 31.2, 55.4, GRIZZLY_HILLS },
 						["groups"] = {
 							i(51958),	-- Pristine Glowbear Pelt
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32422, {	-- Grocklar
@@ -1537,11 +1536,7 @@ root("Zones", {
 							{ 22.6, 73.6, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(13, {	-- Grocklar
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44675),	-- Rock-Giant's Pinky Cover
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32429, {	-- Seething Hate
@@ -1551,11 +1546,7 @@ root("Zones", {
 							{ 40.0, 50.4, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(14, {	-- Seething Hate
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44674),	-- Ichor-Stained Wraps
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32438, {	-- Syreian the Bonecarver
@@ -1572,11 +1563,7 @@ root("Zones", {
 							{ 75.2, 38.8, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(15, {	-- Syreian the Bonecarver
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44676),	-- Syreian's Leggings
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

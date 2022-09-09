@@ -1384,12 +1384,8 @@ root("Zones", {
 							{ 68.2, 47.6, THE_STORM_PEAKS },
 						},
 						["groups"] = {
-							crit(22, {	-- Dirkee
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44708),	-- Dirkee's Superstructure
 							i(44681),	-- Titanium Brain-Gear
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(35189, {	-- Skoll
@@ -1401,7 +1397,6 @@ root("Zones", {
 						},
 						["groups"] = {
 							i(49227),	-- Skoll's Fang
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32491, {	-- Time-Lost Proto-Drake
@@ -1415,7 +1410,6 @@ root("Zones", {
 						["groups"] = {
 							i(44168),	-- Time-Lost Proto-Drake (MOUNT!)
 							i(44682),	-- Time-Forward Talisman
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32630, {	-- Vyragosa
@@ -1427,11 +1421,7 @@ root("Zones", {
 							{ 52.0, 34.0, THE_STORM_PEAKS },	-- Ulduar Ravine
 						},
 						["groups"] = {
-							crit(21, {	-- Vyragosa
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44732),	-- Azure Dragonleather Helm
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),
