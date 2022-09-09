@@ -1571,7 +1571,7 @@ _.PVP =
 					i(167274),	-- Notorious Gladiator's Leather Boots (A)
 				}),
 				filter(MAIL, {
-					i(167296),	-- Notorious Gladiator's Chain Armbands (A) (Never given it seems?)
+					i(167296),	-- Notorious Gladiator's Chain Armbands (A) 
 					i(167269),	-- Notorious Gladiator's Chain Armor (A)
 					i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
 					i(167280),	-- Notorious Gladiator's Chain Helm (A)
@@ -1579,7 +1579,7 @@ _.PVP =
 					i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
 					i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
 					i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
-					i(167257),	-- Notorious Gladiator's Chain Armbands (H) (Never given it seems?)
+					i(167257),	-- Notorious Gladiator's Chain Armbands (H) 
 					i(167250),	-- Notorious Gladiator's Chain Armor (H)
 					i(167252),	-- Notorious Gladiator's Chain Gauntlets (H)
 					i(167253),	-- Notorious Gladiator's Chain Helm (H)
