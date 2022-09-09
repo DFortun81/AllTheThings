@@ -1768,6 +1768,8 @@ explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Objec
 	-- #if ANYCLASSIC
 	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
 	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #else
+	t.sym = {{ "achievement_criteria" }};
 	-- #endif
 	return t;
 end

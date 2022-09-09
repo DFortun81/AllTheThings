@@ -3823,7 +3823,7 @@ ResolveSymbolicLink = function(o)
 						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
 						if criteriaType == 27 then
 							cache = app.SearchForField("questID", assetID);
-						elseif criteriaType == 110 then
+						elseif criteriaType == 110 or criteriaType == 43 then
 							-- Ignored
 						else
 							print("Unhandled Criteria Type", criteriaType, assetID);

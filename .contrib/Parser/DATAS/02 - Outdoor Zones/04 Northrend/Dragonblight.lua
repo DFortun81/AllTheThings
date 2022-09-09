@@ -5,7 +5,7 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
 			["lore"] = "Dragonblight is located in central Northrend. It makes a reappearance in Cataclysm as the backdrop for Dragon Soul and Hour of Twilight in patch 4.3. It is an icy valley, covered with the bodies of dead dragons. Players learn about two major plotlines here: the dragonflights at Wyrmrest Temple, and the Wrathgate plot, which has very different stories for Alliance and Horde.",
-			["achievementID"] = 1265,
+			["icon"] = "Interface\\Icons\\Achievement_zone_dragonblight_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					petbattle(ach(9069, {	-- An Awfully Big Adventure
