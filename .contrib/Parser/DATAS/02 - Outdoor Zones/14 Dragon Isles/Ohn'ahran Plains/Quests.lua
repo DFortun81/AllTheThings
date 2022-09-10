@@ -531,10 +531,41 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 62.3, 42.3, OHNAHRAN_PLAINS },
 				["isBreadcrumb"] = true,
 			}),
-			q(66459, {	-- The Fields of Ferocity; Terror of the Swamp!
+			q(66459, {	-- The Fields of Ferocity: Terror of the Swamp!
 				["sourceQuests"] = { 70444 },	-- The Fields of Ferocity
 				["provider"] = { "n", 188868 },	-- Gurgthock
 				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+			}),
+			q(66460, {	-- The Fields of Ferocity: Lord of Decay!
+				["sourceQuests"] = { 66459 },	-- The Fields of Ferocity: Terror of the Swamp!
+				["provider"] = { "n", 188868 },	-- Gurgthock
+				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+			}),
+			q(66461, {	-- The Fields of Ferocity: Foe from the Volcano!
+				["sourceQuests"] = { 66460 },	-- The Fields of Ferocity: Lord of Decay!
+				["provider"] = { "n", 188868 },	-- Gurgthock
+				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+			}),
+			q(66462, {	-- The Fields of Ferocity: Lost in the Dream!
+				["sourceQuests"] = { 66461 },	-- The Fields of Ferocity: Foe from the Volcano!
+				["provider"] = { "n", 188868 },	-- Gurgthock
+				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+			}),
+			q(66463, {	-- The Fields of Ferocity: Elemental Revenge Round!
+				["sourceQuests"] = { 66462 },	-- The Fields of Ferocity: Lost in the Dream!
+				["provider"] = { "n", 188868 },	-- Gurgthock
+				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+			}),
+			q(66464, {	-- The Fields of Ferocity: Master of the Hunt!
+				["sourceQuests"] = { 66463 },	-- The Fields of Ferocity: Elemental Revenge Round!
+				["provider"] = { "n", 188868 },	-- Gurgthock
+				["coord"] = { 53.2, 37.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(197961),	-- Amaa's Golden Mace
+					i(197703),	-- Ceeqa's Toothpick
+					i(197679),	-- Rockfang Uppercut
+					i(197690),	-- Staff of the Windsage
+				},
 			}),
 
 			-- SIDE 5 --
@@ -653,6 +684,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 34.2, 54.0, OHNAHRAN_PLAINS },
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(70783, {	-- Skaara
+					-- npcid 192949
+					-- dropped i(198411),	-- Claw of Preparedness
+					-- also Titan Training Matrix I 198048
+					["coord"] = { 44.9, 49.2, OHNAHRAN_PLAINS },
+				}),
+				q(69968, {	-- Prozela Galeshot
+					-- npcid 193669
+					["coord"] = { 59.9, 66.9, OHNAHRAN_PLAINS },
+				}),
 				q(65892, {	-- The Sundered Asunder
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 				}),
@@ -667,6 +708,15 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(OHNAHRAN_PLAINS, {
+		--
+		q(70141),	-- Triggered when killed Skaara
+		--
+		q(71240),	-- Triggered when killed Skaara/Prozela for Alex!!
+		--
+		q(69813),	-- Triggered when Prozela Killed
+		--
+		q(70724),	-- Something to do with webbed Tuskaars 43.5 47.9?
+
 		q(66887),	-- 	Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66889),	-- 	Choose Eagle Feather (Renewal of Vows 66783)
 		q(66888),	-- 	Choose Blood (Renewal of Vows 66783)

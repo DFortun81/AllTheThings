@@ -65,7 +65,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2580, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
-
+						i(197625),	-- Windborne Velocidrake: Feathery Tail
 					},
 				}),
 			}),

@@ -6,6 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 		n(TREASURES, {
 			o(381045, {	-- Replica Dragon Goblet
 				["coord"] = { 48.9, 51.8, THE_WAKING_SHORES },
+				["questID"] = 70600,
 			}),
 		}),
 	}),

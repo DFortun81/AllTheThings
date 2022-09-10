@@ -303,6 +303,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 191895 },	-- Majordomo Selistra
 				["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 				["g"] = {
+					i(194354),	-- Field Scout's Spaulders
 					i(194357),	-- League Mercenary's Monnion
 					i(192436),	-- Ruby Spear
 				},
@@ -413,7 +414,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 185894 },	-- Sabellian
 				["coord"] = { 24.2, 55.9, THE_WAKING_SHORES },
 			}),
-			q(66779, {	-- Black Wagon Flight
+			q(65793, {	-- Black Wagon Flight
 				["sourceQuests"] = {
 					66780,	-- Claimant to the Throne
 					66779,	-- Heir Apparent
@@ -447,6 +448,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 185905 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 62.3, 73.0, THE_WAKING_SHORES },
 				["g"] = {
+					i(194349),	-- Field Scout's Helmet
 					i(194348),	-- League Mercenary's Helm
 					-- Crit Last chapter
 				},
@@ -712,8 +714,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 
 			-- SIDE 11 --
-			q(66524, {	-- Amateur Protography
+			q(66963, {	-- Out For Delivery
 				--["sourceQuests"] = {  },	Unknown
+				["provider"] = { "n", 191698 },	-- Hauler Bennet
+				["coord"] = { 48.5, 78.9, THE_WAKING_SHORES },
+				["isBreadcrumb"] = true,
+			}),
+			q(66524, {	-- Amateur Protography
+				["sourceQuests"] = { 66963 },	-- Out For Delivery
 				["provider"] = { "n", 187705 },	-- Cataloger Wulferd
 				["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
 				["g"] = {
@@ -852,6 +860,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				},
 			}),
 
+			-- SIDE 16 --
+			q(65690, {	-- A Cultist's Misgivings
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 185627 },	-- Ingot
+				["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
+			}),
+			q(65782, {	-- Under Lock and Key
+				["sourceQuests"] = { 65690 },	-- A Cultist's Misgivings
+				["provider"] = { "n", 185628 },	-- Ayasanth
+				["coord"] = { 37.4, 46.7, THE_WAKING_SHORES },
+			}),
+			q(65687, {	-- Punching Up
+				--["sourceQuests"] = {  },	-- Unknown
+				["provider"] = { "n", 185627 },	-- Ingot
+				["coord"] = { 39.4, 48.3, THE_WAKING_SHORES },
+				["g"] = {
+					i(194368),	-- Worldbreaker's Charm
+				},
+			}),
+			q(65691, {	-- The Shadow of His Wings
+				["sourceQuests"] = {
+					65687,	-- Punching Up
+					65782,	-- Under Lock and Key
+				},
+				["provider"] = { "n", 185628 },	-- Ayasanth
+				["coord"] = { 37.4, 46.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(194385),	-- Neltharian Channeler's Rod
+					i(194390),	-- Obsidian Spellsplitter
+					i(194396),	-- Blacktalon Claw
+					-- Crit Sojourner
+				},
+			}),
+
 			n(BONUS_OBJECTIVES, {
 				q(65451, {	-- Practice Materials
 					["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
@@ -870,6 +912,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 64.3, 33.0, THE_WAKING_SHORES },
 
 					-- npc 191611 rare??
+				}),
+				q(66956, {	-- Terillod the Devout
+					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
+
+					-- npc 193171 rare??
+					-- drop Cloud Coalescing Handwraps(200208)
 				}),
 				q(66960, {	-- Klozicc the Ascended
 					["sourceQuests"] = { 66118 },	-- Basalt Assault
@@ -985,7 +1033,40 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 
+			-- Dragonscale Expedition??
+			q(71034, {	-- Dragon Isles Artifacts
+				--["sourceQuests"] = {  },	--
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
+			}),
 
+			q(70822, {	-- Lost Expedition Scouts [Requires Renown 2]
+				--["sourceQuests"] = {  },	--
+				["provider"] = { "n", 187700 },	-- Pathfinder Jeb
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			}),
+			q(72023, {	-- Dragonscale Expedition Supplies [Requires Renown 2]
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+
+			-- New Quests att Dragonscale Expedition camp??
+			q(71011, {	-- Wanted: Torrential Lily
+				--["sourceQuests"] = {  },	Unknown
+				["provider"] = { "o", 381672 },	-- Archivist's Request
+				["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
+			}),
+			q(70992, {	-- Wanted: Lost Tuskaar Kite
+				--["sourceQuests"] = {  },	Unknown
+				["provider"] = { "o", 381650 },	-- Archivist's Request
+				["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
+			}),
 
 			-- Annoying Repeatable Dragon Racing Quests..
 			q(66679, {	-- Ruby Lifeshrine Loop
@@ -1031,3 +1112,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(THE_WAKING_SHORES, {
+		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
+	}),
+}));

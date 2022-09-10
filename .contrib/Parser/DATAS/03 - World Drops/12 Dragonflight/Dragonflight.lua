@@ -50,8 +50,10 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199035),	-- Isle Trapper's Crook
 		i(199022),	-- Isle Trapper's Dagger
 		i(199023),	-- Isle Trapper's Sword
+		i(199038),	-- Rune Carving Knife
 		i(199046),	-- Shorebreaker's Greataxe
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword
+		i(199040),	-- Wind-Blessed Hammer
 	}),
 })));

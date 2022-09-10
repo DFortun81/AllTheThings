@@ -28,7 +28,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					},
 				}),
 				e(2557, {	-- Sentinel Talondras
-					-- ["crs"] = {  },
+					["crs"] = { 184124 },	-- Sentinel Talondras
 					["g"] = {
 
 					},
@@ -40,7 +40,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					},
 				}),
 				e(2559, {	-- Chrono-Lord Deios
-					-- ["crs"] = {  },
+					["crs"] = { 184125 },	-- Chrono-Lord Deios
 					["g"] = {
 
 					},
