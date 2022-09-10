@@ -5,6 +5,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	--[[
 	m(THE_AZURE_SPAN, {
 		n(QUESTS, {
+			q(66340, {	-- Into the Azure
+				["sourceQuests"] = { 66783 },	-- Renewal of Vows
+				["provider"] = { "n", 188181 },	-- Merithra
+				["coord"] = { 22.1, 51.0, OHNAHRAN_PLAINS },
+			}),
 			q(65686, {	-- To the Azure Span
 				--["sourceQuests"] = { xxxx },	-- Name
 				--["provider"] = { "n", xxxx },	-- Name
