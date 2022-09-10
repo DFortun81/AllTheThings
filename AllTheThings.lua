@@ -21320,6 +21320,17 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						end
 						-- recipe is learned, so cache that it's learned regardless of being craftable
 						if spellRecipeInfo.learned then
+							-- Shadowlands recipes are weird...
+							local rank = spellRecipeInfo.unlockedRecipeLevel or 0;
+							if rank > 0 then
+								-- when the recipeID specifically is available, it will show as available for ALL possible ranks
+								-- so we can check if the next known rank is also considered available for this recipeID
+								spellRecipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID, rank + 1);
+								-- app.PrintDebug("NextRankCheck",recipeID,rank + 1, spellRecipeInfo.learned)
+							end
+						end
+						-- recipe is learned, so cache that it's learned regardless of being craftable
+						if spellRecipeInfo.learned then
 							charSpells[recipeID] = 1;
 							if not acctSpells[recipeID] then
 								acctSpells[recipeID] = 1;
@@ -21515,6 +21526,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				end
 				self:RefreshRecipes();
 			elseif e == "NEW_RECIPE_LEARNED" then
+				-- spellID, rank, previousSpellID
 				local spellID = ...;
 				if spellID then
 					local previousState = ATTAccountWideData.Spells[spellID];
