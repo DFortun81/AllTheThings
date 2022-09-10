@@ -3099,71 +3099,6 @@ local select, tremove, unpack =
 	  select, tremove, unpack;
 local subroutines;
 subroutines = {
-	["pvp_gear_faction_base"] = function(tierID, headerID1, headerID2, headerID3)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Faction header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-		};
-	end,
-	-- Set Gear
-	["pvp_set_ensemble"] = function(tierID, headerID1, headerID2, classID)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "classID", classID },	-- Select all the class header.
-			{"extract","s"},	-- Extract all Items with a SourceID
-		};
-	end,
-	["pvp_set_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3, classID)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "classID", classID },	-- Select all the class header.
-			{"extract","s"},	-- Extract all Items with a SourceID
-		};
-	end,
-	-- Weapons
-	["pvp_weapons_ensemble"] = function(tierID, headerID1, headerID2)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"extract","s"},	-- Extract all Items with a SourceID
-		};
-	end,
-	["pvp_weapons_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"extract","s"},	-- Extract all Items with a SourceID
-		};
-	end,
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries
@@ -3400,80 +3335,6 @@ subroutines = {
 			{ "finalize" },
 			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
 		};
-	end,
-	-- Common Northrend/Cataclysm Recipes Vendor
-	["common_recipes_vendor"] = function(npcID)
-		return {
-			{"select", "creatureID", npcID},	-- Main Vendor
-			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
-			{"is", "itemID"},	-- Only Items
-			-- Borya <Tailoring Supplies> Cataclysm Tailoring
-			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
-			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
-			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
-			{"exclude", "itemID", 10317},	-- Pattern: Pink Mageweave Shirt
-			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
-			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
-			{"exclude", "itemID", 12162},	-- Plans: Hardened Iron Shortsword
-			-- Tamar <Leatherworking Supplies> Cataclysm Leatherworking
-			{"exclude", "itemID", 18731},	-- Pattern: Heavy Leather Ball
-			-- Kithas <Enchanting Supplies> Cataclysm Enchanting
-			{"exclude", "itemID", 6349},	-- Formula: Enchant 2H Weapon - Lesser Intellect
-			{"exclude", "itemID", 20753},	-- Formula: Lesser Wizard Oil
-			{"exclude", "itemID", 20752},	-- Formula: Minor Mana Oil
-			{"exclude", "itemID", 20758},	-- Formula: Minor Wizard Oil
-			{"exclude", "itemID", 22307},	-- Pattern: Enchanted Mageweave Pouch
-			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
-			-- Shazdar <Sous Chef> Cataclysm Cooking
-			-- Tiffany Cartier <Jewelcrafting Supplies> Northrend Jewelcrafting
-			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
-		}
-	end,
-	["common_vendor"] = function(npcID)
-		return {
-			{"select", "creatureID", npcID},	-- Main Vendor
-			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
-			{"is", "itemID"},	-- Only Items
-		}
-	end,
-	-- TW Instance
-	["tw_instance"] = function(instanceID)
-		return  {
-			{"select", "itemID", 133543},			-- Infinite Timereaver
-			{"push", "headerID", -1},				-- Push into 'Common Boss Drops' header
-			{"finalize"},							-- capture current results
-			{"select", "instanceID", instanceID},	-- select this instance
-			{"where", "u", 1016},					-- only the instance which is marked as TIMEWALKING
-			{"pop"},								-- pop the instance header
-		}
-	end,
-	-- Wod Dungeon
-	["common_wod_dungeon_drop"] = function(difficultyID, headerID)
-		return {
-			{"select", "headerID", -23},				-- Common Dungeon Drops
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
-			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
-			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		}
-	end,
-	-- Wod Dungeon TW
-	["common_wod_dungeon_drop_tw"] = function(difficultyID, headerID)
-		return {
-			{"select", "headerID", -23},				-- Common Dungeon Drops
-			{"where", "u", 1016 },						-- only the Common Dungeon Drops which is marked as TIMEWALKING
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		}
-	end,
-	-- Korthian Armaments
-	["korthian_armaments"] = function(invtyp)
-		return {
-			{"select", "itemID", 187187 },				-- Korthian Armaments
-			{"pop"},									-- Discard the Item Header and acquire all of their children.
-			{"pop"},									-- Discard the Headers and acquire all of their children.
-			{"invtype", invtyp },						-- Only slot-specific
-		}
 	end,
 };
 local ArrayAppend = app.ArrayAppend;
@@ -3879,17 +3740,215 @@ local ResolveFunctions = {
 local SubroutineCache = {
 	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
-		-- app.PrintDebug("SubroutineCache.pvp_gear_base",tierID,headerID1,headerID2)
 		-- {"select", "tierID", tierID },	-- Select the Expansion header
-		select(searchResults, o, "select", "tierID", tierID);
+		select(finalized, searchResults, o, "select", "tierID", tierID);
 		-- {"pop"},	-- Discard the Expansion header and acquire the children.
-		pop(searchResults);
+		pop(finalized, searchResults);
 		-- {"where", "headerID", headerID1 },	-- Select the Season header
-		where(searchResults, o, "where", "headerID", headerID1);
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
 		-- {"pop"},	-- Discard the Season header and acquire the children.
-		pop(searchResults);
+		pop(finalized, searchResults);
 		-- {"where", "headerID", headerID2 },	-- Select the Set header
-		where(searchResults, o, "where", "headerID", headerID2);
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+	end,
+	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(finalized, searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Faction header
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+		-- {"pop"},	-- Discard the Faction header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID3 },	-- Select the Set header
+		where(finalized, searchResults, o, "where", "headerID", headerID3);
+	end,
+	-- Set Gear
+	["pvp_set_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, classID)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(finalized, searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Set header
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+		-- {"pop"},	-- Discard the Set header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "classID", classID },	-- Select all the class header.
+		where(finalized, searchResults, o, "where", "classID", classID);
+		-- {"extract","s"},	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "s");
+	end,
+	["pvp_set_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3, classID)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(finalized, searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Faction header
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID3 },	-- Select the Set header
+		where(finalized, searchResults, o, "where", "headerID", headerID3);
+		-- {"pop"},	-- Discard the Set header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "classID", classID },	-- Select all the class header.
+		where(finalized, searchResults, o, "where", "classID", classID);
+		-- {"extract","s"},	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "s");
+	end,
+	-- Weapons
+	["pvp_weapons_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(finalized, searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Set header
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+		-- {"pop"},	-- Discard the Set header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", -319 },	-- Select the "Weapons" header.
+		where(finalized, searchResults, o, "where", "headerID", -319);
+		-- {"extract","s"},	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "s");
+	end,
+	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		-- {"select", "tierID", tierID },	-- Select the Expansion header
+		select(finalized, searchResults, o, "select", "tierID", tierID);
+		-- {"pop"},	-- Discard the Expansion header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID1 },	-- Select the Season header
+		where(finalized, searchResults, o, "where", "headerID", headerID1);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID2 },	-- Select the Faction header
+		where(finalized, searchResults, o, "where", "headerID", headerID2);
+		-- {"pop"},	-- Discard the Season header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID3 },	-- Select the Set header
+		where(finalized, searchResults, o, "where", "headerID", headerID3);
+		-- {"pop"},	-- Discard the Set header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", -319 },	-- Select the "Weapons" header.
+		where(finalized, searchResults, o, "where", "headerID", -319);
+		-- {"extract","s"},	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "s");
+	end,
+	-- Common Northrend/Cataclysm Recipes Vendor
+	["common_recipes_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+			local select, pop, is, exclude = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is, ResolveFunctions.exclude;
+		-- {"select", "creatureID", npcID},	-- Main Vendor
+		select(finalized, searchResults, o, "select", "creatureID", npcID);
+		-- {"pop"},	-- Remove Main Vendor and push his children into the processing queue.
+		pop(finalized, searchResults);
+		-- {"is", "itemID"},	-- Only Items
+		is(finalized, searchResults, o, "is", "itemID");
+		-- Exclude items specific to certain vendors
+		exclude(finalized, searchResults, o, "exclude", "itemID",
+			-- Borya <Tailoring Supplies> Cataclysm Tailoring
+			6270,	-- Pattern: Blue Linen Vest
+			6274,	-- Pattern: Blue Overalls
+			10314,	-- Pattern: Lavender Mageweave Shirt
+			10317,	-- Pattern: Pink Mageweave Shirt
+			5772,	-- Pattern: Red Woolen Bag
+			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
+			12162,	-- Plans: Hardened Iron Shortsword
+			-- Tamar <Leatherworking Supplies> Cataclysm Leatherworking
+			18731,	-- Pattern: Heavy Leather Ball
+			-- Kithas <Enchanting Supplies> Cataclysm Enchanting
+			6349,	-- Formula: Enchant 2H Weapon - Lesser Intellect
+			20753,	-- Formula: Lesser Wizard Oil
+			20752,	-- Formula: Minor Mana Oil
+			20758,	-- Formula: Minor Wizard Oil
+			22307,	-- Pattern: Enchanted Mageweave Pouch
+			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
+			-- Shazdar <Sous Chef> Cataclysm Cooking
+			-- Tiffany Cartier <Jewelcrafting Supplies> Northrend Jewelcrafting
+			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
+		0);	-- 0 allows the trailing comma on previous itemIDs for cleanliness
+	end,
+	["common_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+		local select, pop, is = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is;
+		-- {"select", "creatureID", npcID},	-- Main Vendor
+		select(finalized, searchResults, o, "select", "creatureID", npcID);
+		-- {"pop"},	-- Remove Main Vendor and push his children into the processing queue.
+		pop(finalized, searchResults);
+		-- {"is", "itemID"},	-- Only Items
+		is(finalized, searchResults, o, "is", "itemID");
+	end,
+	-- TW Instance
+	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
+		local select, pop, where, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.push, ResolveFunctions.finalize;
+		-- {"select", "itemID", 133543},			-- Infinite Timereaver
+		select(finalized, searchResults, o, "select", "itemID", 133543);
+		-- {"push", "headerID", -1},				-- Push into 'Common Boss Drops' header
+		push(finalized, searchResults, o, "push", "headerID", -1);
+		-- {"finalize"},							-- capture current results
+		finalize(finalized, searchResults);
+		-- {"select", "instanceID", instanceID},	-- select this instance
+		select(finalized, searchResults, o, "select", "instanceID", instanceID);
+		-- {"where", "u", 1016},					-- only the instance which is marked as TIMEWALKING
+		where(finalized, searchResults, o, "where", "u", 1016);
+		-- {"pop"},								-- pop the instance header
+		pop(finalized, searchResults);
+	end,
+	-- Wod Dungeon
+	["common_wod_dungeon_drop"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		-- {"select", "headerID", -23},				-- Common Dungeon Drops
+		select(finalized, searchResults, o, "select", "headerID", -23);
+		-- {"pop"},									-- Discard the Header and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
+		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);
+		-- {"pop"},									-- Discard the Diffculty Header and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+		where(finalized, searchResults, o, "where", "headerID", headerID);
+	end,
+	-- Wod Dungeon TW
+	["common_wod_dungeon_drop_tw"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		-- {"select", "headerID", -23},				-- Common Dungeon Drops
+		select(finalized, searchResults, o, "select", "headerID", -23);
+		-- {"where", "u", 1016 },						-- only the Common Dungeon Drops which is marked as TIMEWALKING
+		where(finalized, searchResults, o, "where", "u", 1016);
+		-- {"pop"},									-- Discard the Header and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+		where(finalized, searchResults, o, "where", "headerID", headerID);
+	end,
+	-- Korthian Armaments
+	["korthian_armaments"] = function(finalized, searchResults, o, cmd, inv)
+		local select, pop, invtype = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.invtype;
+		-- {"select", "itemID", 187187 },				-- Korthian Armaments
+		select(finalized, searchResults, o, "select", "itemID", 187187);
+		-- {"pop"},									-- Discard the Item Header and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"pop"},									-- Discard the Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"invtype", inv },						-- Only slot-specific
+		invtype(finalized, searchResults, o, "invtype", inv);
 	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
@@ -3897,16 +3956,18 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 	local subroutine = SubroutineCache[sub];
 	-- new logic: no metatable cloning, no table creation for sub-commands
 	if subroutine then
+		-- app.PrintDebug("New:sub",o.hash,sub,...)
 		subroutine(finalized, searchResults, o, cmd, ...);
+		-- each subroutine result is finalized after being processed
+		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
 	subroutine = subroutines[sub];
 	if subroutine then
 		local commands = subroutine(...);
 		if commands then
-			-- app.PrintDebug("ResolveSymbolicLink:sub",sub,...)
+			-- app.PrintDebug("Old:sub",sub,...)
 			local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-			-- app.PrintDebug("Added:",resolved and #resolved)
 			ArrayAppend(searchResults, resolved);
 		end
 	else
@@ -3935,11 +3996,11 @@ ResolveSymbolicLink = function(o)
 		for _,sym in ipairs(o.sym) do
 			cmd = sym[1];
 			cmdFunc = ResolveFunctions[cmd];
-			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
+			-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
 			if cmdFunc then
 				cmdFunc(finalized, searchResults, o, unpack(sym));
 			end
-			-- app.PrintDebug("Results",searchResults and #searchResults,"after '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
+			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
