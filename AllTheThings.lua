@@ -3494,8 +3494,8 @@ end
 -- o - the specific group object which contains the symlink commands
 -- (various expected components of the respective sym command)
 local ResolveFunctions = {
-	["select"] = function(searchResults, o, cmd, field, ...)
-		-- Instruction to search the full database for multiple of a given type
+	-- Instruction to search the full database for multiple of a given type
+	["select"] = function(finalized, searchResults, o, cmd, field, ...)
 		local cache, val;
 		local vals = select("#", ...);
 		for i=1,vals do
@@ -3508,8 +3508,8 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["selectparent"] = function(searchResults, o, cmd, level)
-		-- Instruction to select the parent object of the group that owns the symbolic link
+	-- Instruction to select the parent object of the group that owns the symbolic link
+	["selectparent"] = function(finalized, searchResults, o, cmd, level)
 		level = level or 1;
 		local parent = o.parent or o.sourceParent;
 		-- app.PrintDebug("selectparent",level,parent and parent.hash)
@@ -3524,12 +3524,13 @@ local ResolveFunctions = {
 			print("Failed to select parent for ",o.hash);
 		end
 	end,
-	["selectprofession"] = function(searchResults, o, cmd, requireSkill)
-		-- Instruction to find all content marked with the specified 'requireSkill'
-		ArrayAppend(searchResults, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill));
+	-- Instruction to find all content marked with the specified 'requireSkill'
+	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)
+		local search = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+		ArrayAppend(searchResults, search);
 	end,
-	["fill"] = function(searchResults, o)
-		-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+	-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+	["fill"] = function(finalized, searchResults, o)
 		local okey = o.key;
 		if okey then
 			local okeyval = o[okey];
@@ -3543,23 +3544,48 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["push"] = function(searchResults, o, cmd, field, value)
-		-- Instruction to "push" all of the group values into an object as specified
-		local orig = RawCloneData(searchResults);
+	-- Instruction to finalize the current search results and prevent additional queries from affecting this selection
+	["finalize"] = function(finalized, searchResults)
+		ArrayAppend(finalized, searchResults);
+		wipe(searchResults);
+	end,
+	-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue
+	["merge"] = function(finalized, searchResults)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		-- finalized first
+		ArrayAppend(searchResults, finalized);
+		-- then any existing searchResults
+		ArrayAppend(searchResults, orig);
+	end,
+	-- Instruction to "push" all of the group values into an object as specified
+	["push"] = function(finalized, searchResults, o, cmd, field, value)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
 		wipe(searchResults);
 		searchResults[1] = CreateObject({[field] = value, g = orig });
 	end,
-	["pop"] = function(searchResults)
-		-- Instruction to "pop" all of the group values up one level.
-		local orig = RawCloneData(searchResults);
+	-- Instruction to "pop" all of the group values up one level
+	["pop"] = function(finalized, searchResults)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
 		wipe(searchResults);
-		for _,s in ipairs(orig) do
-			-- insert raw & symlinked Things from this group
-			ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+		if orig then
+			for _,s in ipairs(orig) do
+				-- insert raw & symlinked Things from this group
+				ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+			end
 		end
 	end,
-	["where"] = function(searchResults, o, cmd, field, value)
-		-- Instruction to include only search results where a key value is a value
+	-- Instruction to include only search results where a key value is a value
+	["where"] = function(finalized, searchResults, o, cmd, field, value)
 		for k=#searchResults,1,-1 do
 			local s = searchResults[k];
 			if not s[field] or s[field] ~= value then
@@ -3567,29 +3593,39 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["extract"] = function(searchResults, o, cmd, field)
-		-- Instruction to extract all nested results which contain a given field
-		local orig = RawCloneData(searchResults);
-		wipe(searchResults);
-		for _,o in ipairs(orig) do
-			Resolve_Extract(searchResults, o, field);
+	-- Instruction to extract all nested results which contain a given field
+	["extract"] = function(finalized, searchResults, o, cmd, field)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
 		end
-	end,
-	["index"] = function(searchResults, o, cmd, index)
-		-- Instruction to include the search result with a given index within each of the selection's groups
-		local orig = RawCloneData(searchResults);
 		wipe(searchResults);
-		local s, g;
-		for k=#orig,1,-1 do
-			s = orig[k];
-			g = s.g;
-			if g and index <= #g then
-				tinsert(searchResults, g[index]);
+		if orig then
+			for _,o in ipairs(orig) do
+				Resolve_Extract(searchResults, o, field);
 			end
 		end
 	end,
-	["not"] = function(searchResults, o, cmd, field, ...)
-		-- Instruction to include only search results where a key value is not a value
+	-- Instruction to include the search result with a given index within each of the selection's groups
+	["index"] = function(finalized, searchResults, o, cmd, index)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		if orig then
+			local s, g;
+			for k=#orig,1,-1 do
+				s = orig[k];
+				g = s.g;
+				if g and index <= #g then
+					tinsert(searchResults, g[index]);
+				end
+			end
+		end
+	end,
+	-- Instruction to include only search results where a key value is not a value
+	["not"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3607,22 +3643,22 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["is"] = function(searchResults, o, cmd, field)
-		-- Instruction to include only search results where a key exists
+	-- Instruction to include only search results where a key exists
+	["is"] = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
 			local s = searchResults[k];
 			if not s[field] then tremove(searchResults, k); end
 		end
 	end,
-	["isnt"] = function(searchResults, o, cmd, field)
-		-- Instruction to include only search results where a key doesn't exist
+	-- Instruction to include only search results where a key doesn't exist
+	["isnt"] = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
 			local s = searchResults[k];
 			if s[field] then tremove(searchResults, k); end
 		end
 	end,
-	["contains"] = function(searchResults, o, cmd, field, ...)
-		-- Instruction to include only search results where a key value/table contains a value
+	-- Instruction to include only search results where a key value/table contains a value
+	["contains"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3655,8 +3691,8 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["exclude"] = function(searchResults, o, cmd, field, ...)
-		-- Instruction to exclude search results where a key value contains a value.
+	-- Instruction to exclude search results where a key value contains a value
+	["exclude"] = function(finalized, searchResults, o, cmd, field, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3685,8 +3721,8 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["invtype"] = function(searchResults, o, cmd, ...)
-		-- Instruction to include only search results where an item is of a specific inventory type.
+	-- Instruction to include only search results where an item is of a specific inventory type
+	["invtype"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3710,8 +3746,8 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["meta_achievement"] = function(searchResults, o, cmd, ...)
-		-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
+	-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
+	["meta_achievement"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3733,8 +3769,8 @@ local ResolveFunctions = {
 			if s.criteriaID then tremove(searchResults, k); end
 		end
 	end,
-	["relictype"] = function(searchResults, o, cmd, ...)
-		-- Instruction to include only search results where an item is of a specific relic type.
+	-- Instruction to include only search results where an item is of a specific relic type
+	["relictype"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);
 		if vals < 1 then
 			print("'",cmd,"' had empty value set")
@@ -3769,10 +3805,79 @@ local ResolveFunctions = {
 			end
 		end
 	end,
+	-- Instruction to apply a specific modID to any Items within the search results
+	["modID"] = function(finalized, searchResults, o, cmd, modID)
+		local s, itemID;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			itemID = s.itemID;
+			if itemID then
+				s.modID = modID;
+			end
+		end
+	end,
+	-- Instruction to apply the modID from the Source object to any Items within the search results
+	["myModID"] = function(finalized, searchResults, o)
+		local s, itemID;
+		local modID = o.modID;
+		if modID then
+			for k=#searchResults,1,-1 do
+				s = searchResults[k];
+				itemID = s.itemID;
+				if itemID then
+					s.modID = modID;
+				end
+			end
+		end
+	end,
+	["achievement_criteria"] = function(finalized, searchResults, o)
+		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
+		if GetAchievementNumCriteria then
+			local achievementID = o.achievementID;
+			local cache;
+			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
+			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
+				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
+				if criteriaType == 27 then
+					cache = app.SearchForField("questID", assetID);
+				elseif criteriaType == 110 then
+					-- Ignored
+				else
+					print("Unhandled Criteria Type", criteriaType, assetID);
+				end
+				criteriaObject = app.CreateAchievementCriteria(id);
+				if cache then
+					local uniques = {};
+					MergeObjects(uniques, cache);
+					for i,o in ipairs(uniques) do
+						rawset(o, "text", nil);
+						for key,value in pairs(o) do
+							criteriaObject[key] = value;
+						end
+						rawset(o, "text", criteriaObject.text);
+					end
+				end
+				criteriaObject.achievementID = achievementID;
+				criteriaObject.parent = o;
+				tinsert(searchResults, criteriaObject);
+			end
+		end
+	end,
+	-- Instruction to include only search results where an item is a relic (Not used currently)
+	-- ["isrelic"] = function(finalized, searchResults)
+	-- 	local s, itemID;
+	-- 	for k=#searchResults,1,-1 do
+	-- 		s = searchResults[k];
+	-- 		itemID = s.itemID;
+	-- 		if not itemID or not IsArtifactRelicItem(itemID) then
+	-- 			tremove(searchResults, k);
+	-- 		end
+	-- 	end
+	-- end,
 };
 -- Subroutine Logic Cache
 local SubroutineCache = {
-	["pvp_gear_base"] = function(searchResults, o, cmd, tierID, headerID1, headerID2)
+	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
 		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
 		-- app.PrintDebug("SubroutineCache.pvp_gear_base",tierID,headerID1,headerID2)
 		-- {"select", "tierID", tierID },	-- Select the Expansion header
@@ -3787,12 +3892,12 @@ local SubroutineCache = {
 		where(searchResults, o, "where", "headerID", headerID2);
 	end,
 };
--- Sym commands which reference the Subroutine cache
-ResolveFunctions.sub = function(searchResults, o, cmd, sub, ...)
+-- Instruction to perform a specific subroutine using provided input values
+ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 	local subroutine = SubroutineCache[sub];
 	-- new logic: no metatable cloning, no table creation for sub-commands
 	if subroutine then
-		subroutine(searchResults, o, cmd, ...);
+		subroutine(finalized, searchResults, o, cmd, ...);
 		return;
 	end
 	subroutine = subroutines[sub];
@@ -3808,6 +3913,13 @@ ResolveFunctions.sub = function(searchResults, o, cmd, sub, ...)
 		print("Could not find subroutine", sub);
 	end
 end;
+-- Instruction to perform a specific subroutine using provided input values if a conditional of the root object is returned true
+ResolveFunctions.subif = function(finalized, searchResults, o, cmd, sub, conditionFunc, ...)
+	-- If the subroutine's conditional was successful
+	if conditionFunc and conditionFunc(o) then
+		ResolveFunctions.sub(finalized, searchResults, o, cmd, sub, ...);
+	end
+end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
@@ -3818,97 +3930,16 @@ ResolveSymbolicLink = function(o)
 	end
 	if o and o.sym then
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
-		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, tremove;
-		local newModID, cmd, cmdFunc;
-		for j,sym in ipairs(o.sym) do
+		local searchResults, finalized = {}, {};
+		local cmd, cmdFunc;
+		for _,sym in ipairs(o.sym) do
 			cmd = sym[1];
 			cmdFunc = ResolveFunctions[cmd];
 			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 			if cmdFunc then
-				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
-				cmdFunc(searchResults, o, unpack(sym));
-			-- Special commands that interact outside of the scope of search results
-			elseif cmd == "finalize" then
-				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
-				ArrayAppend(finalized, searchResults);
-				wipe(searchResults);
-			elseif cmd == "merge" then
-				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
-				ArrayAppend(finalized, searchResults);
-				searchResults = finalized;
-				finalized = {};
-			elseif cmd == "modID" then
-				newModID = sym[2];
-			elseif cmd == "myModID" then
-				newModID = o.modID;
-
-			-- Commands not currently utilized
-			-- elseif cmd == "isrelic" then
-			-- 	-- Instruction to include only search results where an item is a relic.
-			-- 	for k=#searchResults,1,-1 do
-			-- 		local s = searchResults[k];
-			-- 		if s.itemID and IsArtifactRelicItem(s.itemID) then
-			-- 			-- We're good.
-			-- 		else
-			-- 			tremove(searchResults, k);
-			-- 		end
-			-- 	end
-
-			elseif cmd == "subif" then
-				-- Instruction to perform a set of commands if a conditional is returned true.
-				local subroutine = subroutines[sym[2]];
-				if subroutine then
-					-- If the subroutine's conditional was successful.
-					local conditionFunction = sym[3];
-					if conditionFunction and conditionFunction(o) then
-						local args = {unpack(sym)};
-						tremove(args, 1);
-						tremove(args, 1);
-						tremove(args, 1);
-						local commands = subroutine(unpack(args));
-						if commands then
-							-- app.PrintDebug("ResolveSymbolicLink:subif",sym[2],sym[3],sym[4])
-							local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-							-- app.PrintDebug("Added:",#resolved)
-							ArrayAppend(searchResults, resolved);
-						end
-					end
-				else
-					print("Could not find subroutine", sym[2]);
-				end
-			elseif cmd == "achievement_criteria" then
-				-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
-				if GetAchievementNumCriteria then
-					local achievementID = o.achievementID;
-					local cache;
-					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
-						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
-						if criteriaType == 27 then
-							cache = app.SearchForField("questID", assetID);
-						elseif criteriaType == 110 then
-							-- Ignored
-						else
-							print("Unhandled Criteria Type", criteriaType, assetID);
-						end
-						local criteriaObject = app.CreateAchievementCriteria(id);
-						if cache then
-							local uniques = {};
-							MergeObjects(uniques, cache);
-							for i,o in ipairs(uniques) do
-								rawset(o, "text", nil);
-								for key,value in pairs(o) do
-									criteriaObject[key] = value;
-								end
-								rawset(o, "text", criteriaObject.text);
-							end
-						end
-						criteriaObject.achievementID = achievementID;
-						criteriaObject.parent = o;
-						tinsert(searchResults, criteriaObject);
-					end
-				end
+				cmdFunc(finalized, searchResults, o, unpack(sym));
 			end
-			-- app.PrintDebug("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
+			-- app.PrintDebug("Results",searchResults and #searchResults,"after '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
@@ -3938,9 +3969,6 @@ ResolveSymbolicLink = function(o)
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			for _,s in ipairs(cloned) do
-				if newModID and s.itemID then
-					s.modID = newModID;
-				end
 				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
 				s.sourceParent = nil;
 				s.parent = nil;
@@ -3974,6 +4002,7 @@ app.FillSymlinkAsync = function(o)
 	app.FunctionRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end)();
+
 local function BuildContainsInfo(item, entries, indent, layer)
 	if item and item.g then
 		for i,group in ipairs(item.g) do
