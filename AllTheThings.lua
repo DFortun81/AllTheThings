@@ -3264,78 +3264,6 @@ subroutines = {
 		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
 		return commands;
 	end,
-	["bfa_azerite_armor_chest_dungeons"] = function()
-		return {
-			-- Dungeons
-			{"select", "instanceID",
-				968,	-- Atal'Dazar
-				1001,	-- Freehold
-				1041,	-- King's Rest
-				1178,	-- Operation: Mechagon ??
-				1036,	-- Shrine of the Storm
-				1023,	-- Siege of Boralus
-				1030,	-- Temple of Sethraliss
-				1012,	-- The MOTHERLODE!!
-				1022,	-- The Underrot
-				1002,	-- Tol Dagor
-				1021,	-- Waycrest Manor
-			},
-
-			-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 1},	-- Select only the Normal Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"modID", 1},	-- Normal
-		};
-	end,
-	["bfa_azerite_armor_chest_warfront"] = function()
-		return {
-			{"select", "headerID", -10057},	-- War Effort
-			{"pop"},	-- Discard the War Effort Header and acquire the children.
-			{"where", "mapID", 14},	-- Arathi Highlands
-			{"pop"},	-- Discard the Map Header and acquire the children.
-			{"where", "headerID", -1 },	-- Select the Common Boss Drop Header.
-			{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"modID", 5},	-- iLvl 340
-		}
-	end,
-	["bfa_azerite_armor_chest_zonedrops"] = function()
-		return {
-			-- World Quest Rewards
-			{"select", "mapID",
-				896,	-- Drustvar
-				942,	-- Stormsong Valley
-				895,	-- Tiragarde Sound
-				863,	-- Nazmir
-				864,	-- Vol'dun
-				862,	-- Zuldazar
-			},
-
-			-- Process the World Quest Rewards
-			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "headerID", -903},	-- Select only the Zone Rewards Headers
-			{"pop"},	-- Discard the Zone Rewards Headers and acquire all of their children.
-
-			-- Process the headers for the Azerite Armor pieces.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"myModID"},
-		};
-	end,
-	["bfa_azerite_armor_chest"] = function()
-		return {
-			{ "subif", "bfa_azerite_armor_chest_dungeons", function(o) return o.modID == 1 or o.modID == 2; end },
-			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return o.modID == 5; end },
-			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
-		};
-	end,
 };
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
@@ -3950,6 +3878,112 @@ local SubroutineCache = {
 		-- {"invtype", inv },						-- Only slot-specific
 		invtype(finalized, searchResults, o, "invtype", inv);
 	end,
+	["bfa_azerite_armor_chest_dungeons"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
+		-- Dungeons
+		-- {"select", "instanceID",
+		select(finalized, searchResults, o, "select", "instanceID",
+			968,	-- Atal'Dazar
+			1001,	-- Freehold
+			1041,	-- King's Rest
+			1178,	-- Operation: Mechagon ??
+			1036,	-- Shrine of the Storm
+			1023,	-- Siege of Boralus
+			1030,	-- Temple of Sethraliss
+			1012,	-- The MOTHERLODE!!
+			1022,	-- The Underrot
+			1002,	-- Tol Dagor
+			1021	-- Waycrest Manor
+		);
+
+		-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
+		-- {"pop"},	-- Discard the Instance Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "difficultyID", 1},	-- Select only the Normal Difficulty Headers.
+		where(finalized, searchResults, o, "where", "difficultyID", 1);
+		-- {"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"is", "itemID"},	-- Only Items!
+		is(finalized, searchResults, o, "is", "itemID");
+		-- {"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");
+		-- {"modID", 1},	-- Normal
+		modID(finalized, searchResults, 1);
+	end,
+	["bfa_azerite_armor_chest_warfront"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
+		-- {"select", "headerID", -10057},	-- War Effort
+		select(finalized, searchResults, o, "select", "headerID", -10057);
+		-- {"pop"},	-- Discard the War Effort Header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "mapID", 14},	-- Arathi Highlands
+		where(finalized, searchResults, o, "where", "mapID", 14);
+		-- {"pop"},	-- Discard the Map Header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", -1 },	-- Select the Common Boss Drop Header.
+		where(finalized, searchResults, o, "where", "headerID", -1);
+		-- {"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+		pop(finalized, searchResults);
+		-- {"is", "itemID"},	-- Only Items!
+		is(finalized, searchResults, o, "is", "itemID");
+		-- {"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");
+		-- {"modID", 5},	-- iLvl 340
+		modID(finalized, searchResults, 5);
+	end,
+	["bfa_azerite_armor_chest_zonedrops"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, myModID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.myModID;
+		-- World Quest Rewards
+		-- {"select", "mapID",
+		select(finalized, searchResults, o, "select", "mapID",
+			896,	-- Drustvar
+			942,	-- Stormsong Valley
+			895,	-- Tiragarde Sound
+			863,	-- Nazmir
+			864,	-- Vol'dun
+			862	-- Zuldazar
+		);
+
+		-- Process the World Quest Rewards
+		-- {"pop"},	-- Discard the Map Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", -903},	-- Select only the Zone Rewards Headers
+		where(finalized, searchResults, o, "where", "headerID", -903);
+		-- {"pop"},	-- Discard the Zone Rewards Headers and acquire all of their children.
+		pop(finalized, searchResults);
+
+		-- Process the headers for the Azerite Armor pieces.
+		-- {"is", "itemID"},	-- Only Items!
+		is(finalized, searchResults, o, "is", "itemID");
+		-- {"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");
+		-- {"myModID"},
+		myModID(finalized, searchResults, o);
+
+	end,
+	["bfa_azerite_armor_chest"] = function(finalized, searchResults, o)
+		local sub = ResolveFunctions.sub;
+		local modID = o.modID;
+		-- { "subif", "bfa_azerite_armor_chest_dungeons", function(o) return o.modID == 1 or o.modID == 2; end },
+		if modID == 1 or modID == 2 then
+			sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_dungeons");
+			return;
+		end
+		-- { "finalize" },
+		-- don't need to finalize, sub finalizes automatically
+		-- { "subif", "bfa_azerite_armor_chest_warfront", function(o) return o.modID == 5; end },
+		if modID == 5 then
+			sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_warfront");
+			return;
+		end
+		-- { "finalize" },
+		-- don't need to finalize, sub finalizes automatically
+		-- { "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
+		sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_zonedrops");
+		-- don't need to finalize, sub finalizes automatically
+	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
 ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
@@ -3972,13 +4006,6 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 		end
 	else
 		print("Could not find subroutine", sub);
-	end
-end;
--- Instruction to perform a specific subroutine using provided input values if a conditional of the root object is returned true
-ResolveFunctions.subif = function(finalized, searchResults, o, cmd, sub, conditionFunc, ...)
-	-- If the subroutine's conditional was successful
-	if conditionFunc and conditionFunc(o) then
-		ResolveFunctions.sub(finalized, searchResults, o, cmd, sub, ...);
 	end
 end;
 local ResolveCache = {};
