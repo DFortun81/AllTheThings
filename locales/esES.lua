@@ -856,6 +856,11 @@ for key,value in pairs({
 		[-1009] = "Mítica Alternative",								-- TODO: Mythic Alternative
 		[-1010] = "Gladiador Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Élite Alternative",								-- TODO: Elite Alternative
+	-- Dragonflight
+		--TODO: [-1098] = "Side Quests",							-- Side Quests
+		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		--TODO: [-1120] = "Maruuk",									-- Maruuk
+		--TODO: [-1121] = "Aylaag",									-- Aylaag
 	-- Warrior order hall lore items
 		[-2200] = "El gran Odyn y el Señor del Fuego",				-- Great Odyn and the Firelord
 		[-2201] = "El nómada y la serpiente",						-- The Wanderer and the Serpent

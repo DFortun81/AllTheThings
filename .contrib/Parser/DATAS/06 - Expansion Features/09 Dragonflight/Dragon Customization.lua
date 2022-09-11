@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
-	n(-1100, {
+	n(-1100, {	-- Dragon Customization
 		--[[
 		-- These might be NYI? Two Versions exists
 		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head

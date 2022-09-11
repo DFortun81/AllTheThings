@@ -2,8 +2,8 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
-	n(-1120, {
-		n(-1121, {
+	n(-1120, {	-- Maruuk
+		n(-1121, {	-- Aylaag
 			n(QUESTS, {
 				q(67039, {	-- An Amazing Journey
 					--["sourceQuests"] = {  },

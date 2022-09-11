@@ -838,6 +838,11 @@ for key,value in pairs({
 		[-1009] = "Эпохальный Реколор",								-- Mythic Alternative
 		[-1010] = "Гладиатор Реколор",								-- Gladiator Alternative
 		[-1011] = "Ветеран Реколор",								-- Elite Alternative
+	-- Dragonflight
+		[-1098] = "Побочные Задания",								-- Side Quests
+		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
+		--TODO: [-1120] = "Maruuk",									-- Maruuk
+		--TODO: [-1121] = "Aylaag",									-- Aylaag
 	-- Warrior order hall lore items
 		[-2200] = "Великий Один и Повелитель Огня",
 		[-2201] = "Странник и змей",

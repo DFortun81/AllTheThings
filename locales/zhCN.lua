@@ -857,6 +857,11 @@ for key,value in pairs({
 		[-1009] = "史诗备选",											-- Mythic Alternative
 		[-1010] = "角斗士备选",											-- Gladiator Alternative
 		[-1011] = "精锐备选",											-- Elite Alternative
+	-- Dragonflight
+		--TODO: [-1098] = "Side Quests",							-- Side Quests
+		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
+		--TODO: [-1120] = "Maruuk",									-- Maruuk
+		--TODO: [-1121] = "Aylaag",									-- Aylaag
 	-- Warrior order hall lore items
 		[-2200] = "伟大的奥丁与炎魔之王",
 		[-2201] = "流浪者与蛇",
