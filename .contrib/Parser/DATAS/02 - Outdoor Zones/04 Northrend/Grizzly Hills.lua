@@ -5,7 +5,7 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(GRIZZLY_HILLS, {
 			["lore"] = "Grizzly Hills is a stunning but sinister pine forest in eastern Northrend. Players investigate Arugal and the curse of the Worgen, PvP for control of the Blackriver Logging Camp and Venture Bay, escort Harrison Jones and the rest of the Zul'Aman crew through troll ruins, and heal Vordrassil, a defective World Tree. Grizzly Hills is home to trappers, ice trolls, iron dwarves, and furbolgs.",
-			["achievementID"] = 1266,
+			["icon"] = "Interface\\Icons\\achievement_zone_grizzlyhills_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1266),	-- Explore Grizzly Hills
@@ -1511,7 +1511,6 @@ root("Zones", {
 						["coord"] = { 31.2, 55.4, GRIZZLY_HILLS },
 						["groups"] = {
 							i(51958),	-- Pristine Glowbear Pelt
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32422, {	-- Grocklar
@@ -1537,11 +1536,7 @@ root("Zones", {
 							{ 22.6, 73.6, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(13, {	-- Grocklar
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44675),	-- Rock-Giant's Pinky Cover
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32429, {	-- Seething Hate
@@ -1551,11 +1546,7 @@ root("Zones", {
 							{ 40.0, 50.4, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(14, {	-- Seething Hate
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44674),	-- Ichor-Stained Wraps
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32438, {	-- Syreian the Bonecarver
@@ -1572,11 +1563,7 @@ root("Zones", {
 							{ 75.2, 38.8, GRIZZLY_HILLS },
 						},
 						["groups"] = {
-							crit(15, {	-- Syreian the Bonecarver
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44676),	-- Syreian's Leggings
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

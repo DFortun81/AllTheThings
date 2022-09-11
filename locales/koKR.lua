@@ -2920,8 +2920,8 @@ for key,value in pairs({
 	[356697] = "알렉산드로스 모그레인의 호화로운 공물",	-- Alexandros Mograine's Extravagant Tribute
 	--TODO: [356700] = "Grandmaster Vole's Extravagant Tribute",	-- Grandmaster Vole's Extravagant Tribute
 	--TODO: [356705] = "Plague Deviser Marileth's Extravagant Tribute",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356709] = "대신 문베리의 호화로운 공물",	-- Lady Moonberry's Extravagant Tribute
+	[356712] = "사냥대장 코레인의 호화로운 공물",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "수풀사령관 알리오테의 호화로운 공물",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "츄파의 호화로운 공물",	-- Choofa's Extravagant Tribute
 	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
@@ -2930,7 +2930,7 @@ for key,value in pairs({
 	[356737] = "시카의 호화로운 공물",	-- Sika's Extravagant Tribute
 	[356741] = "백작의 호화로운 공물",	-- The Countess' Extravagant Tribute
 	[356744] = "렌들과 곤봉얼굴의 호화로운 공물",	-- Rendle and Cudgelface's Extravagant Tribute
-	--TODO: [356748] = "Stonehead's Extravagant Tribute",	-- Stonehead's Extravagant Tribute
+	[356748] = "바위머리의 호화로운 공물",	-- Stonehead's Extravagant Tribute
 	[356752] = "묘지지기 카시르의 호화로운 공물",	-- Cryptkeeper Kassir's Extravagant Tribute
 	[356757] = "탐욕의 갈망",	-- Greed's Desire
 	[356818] = "순수의 참회",	-- Penitence of Purity

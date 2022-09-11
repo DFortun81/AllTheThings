@@ -5,7 +5,7 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(ZULDRAK, {
 			["lore"] = "Zul'Drak is a zone in central Northrend, intended for level 20+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.",
-			["achievementID"] = 1267,
+			["icon"] = "Interface\\Icons\\Achievement_zone_zuldrak_03",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					petbattle(ach(9069, {	-- An Awfully Big Adventure
@@ -1078,7 +1078,6 @@ root("Zones", {
 						},
 						["groups"] = {
 							i(46324),	-- Gondria's Spectral Claw
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32471, {	-- Griegen
@@ -1093,11 +1092,7 @@ root("Zones", {
 							{ 21.2, 79.8, ZULDRAK },
 						},
 						["groups"] = {
-							crit(17, {	-- Griegen
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44686),	-- Ethereal Terror Handwraps
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32475, {	-- Terror Spinner
@@ -1111,11 +1106,7 @@ root("Zones", {
 							{ 82.0, 35.0, ZULDRAK },
 						},
 						["groups"] = {
-							crit(18, {	-- Terror Spinner
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44685),	-- Calcified Web Spaulders
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32447, {	-- Zul'drak Sentinel
@@ -1145,11 +1136,7 @@ root("Zones", {
 							{ 21.2, 82.6, ZULDRAK },
 						},
 						["groups"] = {
-							crit(16, {	-- Zul'drak Sentinel
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44677),	-- Eternal Observer's Legplates
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),
@@ -1172,7 +1159,11 @@ root("Zones", {
 					}),
 					i(38673, {	-- Writhing Choker
 						["description"] = "This Item will drop instead of |cffffffffUnliving Choker|r once |cffffd700Cleansing Drak'Tharon|r has been completed.",
-						["sourceQuest"] = 30120,	-- Cleansing Drak'Tharon (Dungeon)
+						-- #if AFTER 4.3.0.14890
+						["sourceQuest"] = 30120,	-- Cleansing Drak'Tharon
+						-- #else
+						["sourceQuest"] = 12238,	-- Cleansing Drak'Tharon
+						-- #endif
 						["cr"] = 28519,	-- Withered Troll
 						["coords"] = {
 							{ 14.0, 69.0, ZULDRAK },

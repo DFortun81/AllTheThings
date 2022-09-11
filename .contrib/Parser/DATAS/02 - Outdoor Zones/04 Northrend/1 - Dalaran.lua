@@ -6853,9 +6853,9 @@ root("Zones", {
 								},
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat
-								["isLimited"] = true,
 								["spellID"] = 61305,	-- Polymorph
 								["classes"] = { MAGE },
+								["isLimited"] = true,
 								["f"] = RECIPES,
 							}),
 						},

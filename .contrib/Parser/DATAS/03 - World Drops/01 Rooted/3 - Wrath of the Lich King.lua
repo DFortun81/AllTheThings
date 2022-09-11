@@ -907,6 +907,38 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37835),	-- Je'Tze's Bell
 	}),
 	filter(MISC, {
+		i(44663, {	-- Abandoned Adventurer's Satchel
+			["description"] = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
+			["crs"] = {
+				32481,	-- Aotona
+				38453,	-- Arcturis
+				32409,	-- Crazed Indu'le Survivor
+				32500,	-- Dirkee
+				32358,	-- Fumblub Gearwind
+				33776,	-- Gondria
+				32471,	-- Griegen
+				32422,	-- Grocklar
+				32501,	-- High Thane Jorfus
+				32495,	-- Hildana Deathstealer
+				32361,	-- Icehorn
+				32485,	-- King Krush
+				32398,	-- King Ping
+				32517,	-- Loque'nahak <Mate of Har'koa>
+				32357,	-- Old Crystalbark
+				32377,	-- Perobas the Bloodthirster
+				32487,	-- Putridus the Ancient
+				32417,	-- Scarlet Highlord Daion
+				32429,	-- Seething Hate
+				35189,	-- Skoll
+				32438,	-- Syreian the Bonecarver
+				32475,	-- Terror Spinner
+				32491,	-- Time-Lost Proto-Drake
+				32400,	-- Tukemuth
+				32386,	-- Vigdis the War Maiden
+				32630,	-- Vyragosa
+				32447,	-- Zul'Drak Sentinel
+			},
+		}),
 		i(43297, {	-- Damaged Necklace (Quest Version)
 			["repeatable"] = true,
 			["questID"] = 13148,

@@ -1932,9 +1932,6 @@ root("Zones", {
 							{ 46.8, 26.6, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(4504, {	-- Ambassador Jerrikar
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31224),	-- Illidari Bracers
 							i(31223),	-- Illidari Wristguards
 							i(31225),	-- Illidari Bindings
@@ -1953,9 +1950,6 @@ root("Zones", {
 							{ 59.2, 70.6, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(4508, {	-- Collidus the Warp-Watcher
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31219),	-- Emerald Beholder Eye
 							i(31220),	-- Amethyst Beholder Eye
 							i(31217),	-- Crimson Beholder Eye
@@ -1971,9 +1965,6 @@ root("Zones", {
 							{ 42.4, 68.4, SHADOWMOON_VALLEY },
 						},
 						["groups"] = {
-							crit(4515, {	-- Kraator
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31213),	-- Abyssal Plate Sabatons
 							i(31214),	-- Abyssal Mail Greaves
 							i(31216),	-- Abyssal Cloth Footwraps

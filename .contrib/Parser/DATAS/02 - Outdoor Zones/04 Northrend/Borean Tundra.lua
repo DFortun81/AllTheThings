@@ -2219,11 +2219,7 @@ root("Zones", {
 							{ 69.6, 31.4, BOREAN_TUNDRA },
 						},
 						["groups"] = {
-							crit(5, {	-- Fumblub Gearwind
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44666),	-- Fumblub's Seat Cushion
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32361, {	-- Icehorn
@@ -2236,21 +2232,13 @@ root("Zones", {
 							{ 84.6, 46.8, BOREAN_TUNDRA },
 						},
 						["groups"] = {
-							crit(6, {	-- Icehorn
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44667),	-- Mammoth-Hair Crown
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32357, {	-- Old Crystalbark
 						["coord"] = { 33.8, 30.8, BOREAN_TUNDRA },
 						["groups"] = {
-							crit(4, {	-- Old Crystalbark
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44649),	-- Crystalbark's Toenail
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

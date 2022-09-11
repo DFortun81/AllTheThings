@@ -5,8 +5,8 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(ICECROWN, {
 			["lore"] = "Icecrown is a zone intended for level 25+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.",
+			["icon"] = "Interface\\Icons\\achievement_zone_icecrown_01",
 			["maps"] = { 170 },	-- Hrothgar's Landing
-			["achievementID"] = 1270,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					petbattle(ach(9069, {	-- An Awfully Big Adventure
@@ -2136,11 +2136,7 @@ root("Zones", {
 							{ 71.8, 37.8, ICECROWN },
 						},
 						["groups"] = {
-							crit(2, {	-- High Thane Jorfus
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44695),	-- Corroded Faceguard
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32495, {	-- Hildana Deathstealer
@@ -2150,11 +2146,7 @@ root("Zones", {
 							{ 59.6, 59.2, ICECROWN },
 						},
 						["groups"] = {
-							crit(3, {	-- Hildana Deathstealer
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44697),	-- Val'kyr Vestments
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32487, {	-- Putridus the Ancient
@@ -2169,11 +2161,7 @@ root("Zones", {
 							{ 46.8, 65.2, ICECROWN },
 						},
 						["groups"] = {
-							crit(23, {	-- Putridus the Ancient
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44696),	-- Giant's Toewrap
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

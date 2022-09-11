@@ -1288,9 +1288,6 @@ root("Zones", {
 							{ 41.2, 65.4, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4509, {	-- Crippler
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31238),	-- Dragonbone Ring
 						},
 					}),
@@ -1343,9 +1340,6 @@ root("Zones", {
 							{ 55.4, 32.6, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4510, {	-- Doomsayer Jurim
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31235),	-- Grim Boots
 							i(31233),	-- Grim Greaves
 							i(31232),	-- Grim Sabatons
@@ -1432,9 +1426,6 @@ root("Zones", {
 							{ 59.8, 25.2, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4520, {	-- Okrek
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31228),	-- Feathered Belt
 							i(31227),	-- Feathered Girdle
 							i(31231),	-- Feathered Sash

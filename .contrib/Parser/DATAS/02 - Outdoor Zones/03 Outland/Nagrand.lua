@@ -1583,9 +1583,6 @@ root("Zones", {
 							{ 76.0, 80.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(4513, {	-- Goretooth
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31192),	-- Crocolisk Hide Bindings
 							i(31191),	-- Crocolisk Hide Bracers
 							i(31188),	-- Crocolisk Scale Vambraces
@@ -1619,9 +1616,6 @@ root("Zones", {
 							{ 33.2, 67.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(4522, {	-- Voidhunter Yar
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31198),	-- Voidhide Cord
 							i(31195),	-- Voidplate Girdle
 							i(31197),	-- Voidscale Belt
