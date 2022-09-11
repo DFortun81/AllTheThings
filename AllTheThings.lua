@@ -7635,6 +7635,14 @@ local ObjectFunctions = {
 	["text"] = function(t)
 		return t.name and app.TryColorizeName(t, t.name) or t.link;
 	end,
+	-- the total cost of a Thing is based on it being collectible as a cost or not
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	-- the cost progress is currently always 0 since it is not considered a cost once it's no longer needed
+	["costProgress"] = function(t)
+		return 0;
+	end,
 };
 local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -8180,42 +8188,43 @@ local questFields = {
 		return QuestConsideredSaved(t.questID);
 	end,
 	["indicatorIcon"] = app.GetQuestIndicator,
-	["collectibleAsReputation"] = function(t)
+	["collectibleAsCost"] = function(t)
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing
 		-- and the Faction itself is Collectible & Not Collected
 		-- and the Quest is not locked from being completed
-		if app.CollectibleReputations and not t.locked then
+		if app.CollectibleReputations and t.maxReputation and not t.locked then
 			local factionID = t.maxReputation[1];
 			local factionRef = app.SearchForObject("factionID", factionID);
 			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
+				-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text)
 				return true;
 			end
 		end
 		-- If Collectible by being a Quest
-		if app.CollectibleQuests or app.CollectibleQuestsLocked then
-			return app.CollectibleAsQuest(t);
-		end
+		-- if app.CollectibleQuests or app.CollectibleQuestsLocked then
+		-- 	return app.CollectibleAsQuest(t);
+		-- end
 	end,
-	["collectedAsReputation"] = function(t)
-		-- If the Quest is completed on this character, then it doesn't matter about the faction
-		if IsQuestFlaggedCompleted(t.questID) then
-			return 1;
-		end
-		-- Check whether this Quest can provide Rep towards an incomplete Faction
-		if app.CollectibleReputations and t.maxReputation then
-			local factionID = t.maxReputation[1];
-			local factionRef = app.SearchForObject("factionID", factionID);
-			-- Completing the quest will increase the Faction, so it is incomplete
-			if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
-				return false;
-			elseif not app.CollectibleQuests and not app.CollectibleQuestsLocked then
-			-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
-				return 2;
-			end
-		end
-		-- Finally, check if the quest is otherwise considered 'collected' by normal logic
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
+	-- ["collectedAsReputation"] = function(t)
+	-- 	-- If the Quest is completed on this character, then it doesn't matter about the faction
+	-- 	if IsQuestFlaggedCompleted(t.questID) then
+	-- 		return 1;
+	-- 	end
+	-- 	-- Check whether this Quest can provide Rep towards an incomplete Faction
+	-- 	if app.CollectibleReputations and t.maxReputation then
+	-- 		local factionID = t.maxReputation[1];
+	-- 		local factionRef = app.SearchForObject("factionID", factionID);
+	-- 		-- Completing the quest will increase the Faction, so it is incomplete
+	-- 		if factionRef and not factionRef.collected and (select(6, GetFactionInfoByID(factionID)) or 0) < t.maxReputation[2] then
+	-- 			return false;
+	-- 		elseif not app.CollectibleQuests and not app.CollectibleQuestsLocked then
+	-- 		-- Completing the quest will not increase the Faction, but User doesn't care about Quests, then consider it 'collected'
+	-- 			return 2;
+	-- 		end
+	-- 	end
+	-- 	-- Finally, check if the quest is otherwise considered 'collected' by normal logic
+	-- 	return IsQuestFlaggedCompletedForObject(t);
+	-- end,
 	["altcollected"] = function(t)
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
@@ -8499,11 +8508,11 @@ app.CheckForBreadcrumbPrevention = function(title, questID)
 end
 
 -- Quest with Reputation
-local fields = RawCloneData(questFields, {
-	["collectible"] = questFields.collectibleAsReputation,
-	["collected"] = questFields.collectedAsReputation,
-});
-app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
+-- local fields = RawCloneData(questFields, {
+-- 	["collectible"] = questFields.collectibleAsReputation,
+-- 	["collected"] = questFields.collectedAsReputation,
+-- });
+-- app.BaseQuestWithReputation = app.BaseObjectFields(fields, "BaseQuestWithReputation");
 app.CreateQuest = function(id, t)
 	if t then
 		-- extract specific faction data
@@ -8516,9 +8525,9 @@ app.CreateQuest = function(id, t)
 				for key,value in pairs(aqd) do t[key] = value; end
 			end
 		end
-		if rawget(t, "maxReputation") then
-			return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
-		end
+		-- if rawget(t, "maxReputation") then
+		-- 	return setmetatable(constructor(id, t, "questID"), app.BaseQuestWithReputation);
+		-- end
 	end
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
@@ -9953,13 +9962,6 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
-	-- ["collectedAsCost"] = app.CollectedAsCost,
-	["costTotal"] = function(t)
-		return t.collectibleAsCost and 1 or 0;
-	end,
-	["costProgress"] = function(t)
-		return t.collectedAsCost and 1 or 0;
-	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
 app.CreateCurrencyClass = function(id, t)
@@ -11560,12 +11562,6 @@ local itemFields = {
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
 	end,
-	["costTotal"] = function(t)
-		return t.collectibleAsCost and 1 or 0;
-	end,
-	["costProgress"] = function(t)
-		return t.collectedAsCost and 1 or 0;
-	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 
@@ -12574,19 +12570,12 @@ local mountFields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
-	-- ["collectedAsCost"] = app.CollectedAsCost,
 	["collected"] = function(t)
 		if ATTAccountWideData.Spells[t.spellID] then return 1; end
 		if app.IsSpellKnownHelper(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
-	end,
-	["costTotal"] = function(t)
-		return t.collectibleAsCost and 1 or 0;
-	end,
-	["costProgress"] = function(t)
-		return t.collectedAsCost and 1 or 0;
 	end,
 	["b"] = function(t)
 		return (t.parent and t.parent.b) or 1;
