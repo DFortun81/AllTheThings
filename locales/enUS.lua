@@ -1899,6 +1899,7 @@ app.L = {
 		[-1100] = "Dragon Customization",											-- Dragon Customization
 		[-1120] = "Maruuk",															-- Maruuk
 		[-1121] = "Aylaag",															-- Aylaag
+		[-1140] = "Valdrakken",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

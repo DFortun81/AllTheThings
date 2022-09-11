@@ -5,7 +5,7 @@
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 73.0, 55.7, THALDRASZUS },
 		["order"] = "01",
 		["maps"] = {
 

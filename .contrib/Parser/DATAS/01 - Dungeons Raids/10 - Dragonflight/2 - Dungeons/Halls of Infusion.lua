@@ -4,7 +4,8 @@
 --[[
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1204, {	-- Halls of Infusion
-		-- ["coord"] = { X, Y, MAP },
+		["description"] = "The Entrance is located at the last layer inside the cyndrical building.",
+		["coord"] = { 59.2, 60.6, THALDRASZUS },
 		["maps"] = {
 
 		},

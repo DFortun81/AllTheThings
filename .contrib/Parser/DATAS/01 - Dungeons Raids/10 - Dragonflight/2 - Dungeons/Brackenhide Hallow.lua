@@ -4,12 +4,19 @@
 
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1196, {	-- Brackenhide Hollow
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 11.6, 48.8, THE_AZURE_SPAN },
 		["maps"] = {
 			2096,	-- Brackenhide Hollow
 			2106,	-- Den of Decay
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(66211, {	-- Brackenhide Hollow: To the Source
+					["sourceQuests"] = { 65849 },	-- To Iskaara
+					["provider"] = { "n", 186480 },	-- Brena
+					["coord"] = { 13.2, 49.6, THE_AZURE_SPAN },
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2570, {	-- Hackclaw's War-Band
 					["crs"] = {
