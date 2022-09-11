@@ -210,9 +210,21 @@ def create_raw_file(thing: Things) -> None:
 
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
-    """Extracts first column from CSV file."""
+    """Extract nth column from CSV file."""
     with open(csv_path) as csv_file:
         return [line.split(",")[n] + "\n" for line in csv_file]
+
+
+def remove_empty_builds(lines: list[str]) -> list[str]:
+    """Remove builds that don't have any IDs."""
+    clean_lines = [lines[0]]
+    for line in lines[1:]:
+        if not line.rstrip().isnumeric() and not clean_lines[-1].rstrip().isnumeric():
+            clean_lines.pop()
+        clean_lines.append(line)
+    if not clean_lines[-1].rstrip().isnumeric():
+        clean_lines.pop()
+    return clean_lines
 
 
 def create_missing_recipes() -> None:
@@ -238,6 +250,7 @@ def create_missing_recipes() -> None:
                 - set(excluded_recipes),
                 key=raw_lines.index,
             )
+            difference = remove_empty_builds(difference)
             missing_file.writelines(difference)
         itemdb_list = list[str]()
         itemdb_path = Path(
@@ -252,6 +265,8 @@ def create_missing_recipes() -> None:
                 line = re.sub("\\D", "", line)
                 itemdb_list.append(line + "\n")
             difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+            if not (difference := remove_empty_builds(difference)):
+                continue
             missing_file.write(f"\n\n\n\nMissing in {profession}ITemDB.lua\n\n")
             missing_file.writelines(difference)
 
@@ -285,6 +300,7 @@ def create_missing_file(thing: Things) -> None:
                 set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
                 key=raw_ids.index,
             )
+            difference = remove_empty_builds(difference)
             missing_file.writelines(difference)
             if thing in (
                 Things.FlightPaths,
@@ -300,6 +316,8 @@ def create_missing_file(thing: Things) -> None:
                     difference = sorted(
                         set(raw_ids) - set(existing_things), key=raw_ids.index
                     )
+                    if not (difference := remove_empty_builds(difference)):
+                        return
                     missing_file.write(f"\n\n\n\nMissing in {DB_PATHS[thing].name}\n\n")
                     missing_file.writelines(difference)
 
