@@ -2515,7 +2515,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
 						-- #ELSE
-						13159,
+						13159,  -- James Clark
 						-- #ENDIF
 					},
 				}),
