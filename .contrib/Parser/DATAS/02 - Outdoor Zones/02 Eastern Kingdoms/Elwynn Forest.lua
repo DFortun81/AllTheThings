@@ -2509,10 +2509,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(1307, {	-- Gold Pickup Schedule
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
+						-- #if BEFORE CATA
 						100,	-- Gruff Swiftbite
 						448,	-- Hogger
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
+						-- #ELSE
+						13159,
+						-- #ENDIF
 					},
 				}),
 				i(778, {	-- Kobold Excavation Pick
