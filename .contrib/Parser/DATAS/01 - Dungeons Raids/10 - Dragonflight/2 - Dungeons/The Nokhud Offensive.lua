@@ -8,16 +8,6 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 		["maps"] = { 2093 },	-- The Nokhud Offensive
 		["g"] = {
 			n(QUESTS, {
-				q(66658, {	-- The Nokhud Offensive: Founders Keepers
-					["sourceQuests"] = { 66657 },	-- And Stay Dead!
-					["provider"] = { "n", 193985 },	-- Initiate Zorig
-					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
-					["g"] = {
-						i(197897),	-- Keratin-Reinforced Coif
-						i(197356),	-- Renewed Proto-Drake: Hairy Back
-						-- Crit Eternak Krugans
-					},
-				}),
 				q(66690, {	-- The Final Ancestor
 					["sourceQuests"] = {
 						70374,	-- Himia, The Blessed
@@ -28,6 +18,16 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["g"] = {
 						i(200251),	-- Medallion of the ancestors
 						-- Crit Elder Nazuun
+					},
+				}),
+				q(66658, {	-- The Nokhud Offensive: Founders Keepers
+					["sourceQuests"] = { 66657 },	-- And Stay Dead!
+					["provider"] = { "n", 193985 },	-- Initiate Zorig
+					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
+					["g"] = {
+						i(197897),	-- Keratin-Reinforced Coif
+						i(197356),	-- Renewed Proto-Drake: Hairy Back
+						-- Crit Eternal Krugans
 					},
 				}),
 				q(66339, {	-- The Wind Belongs to the Sky

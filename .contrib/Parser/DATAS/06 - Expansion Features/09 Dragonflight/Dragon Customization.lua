@@ -1,9 +1,9 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
---[[
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
-	--n(, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+	n(-1100, {
+		--[[
 		-- These might be NYI? Two Versions exists
 		i(194839),	-- Cliffside Wylderdrake Manuscript: Conical Head
 		i(194840),	-- Cliffside Wylderdrake Manuscript: Triple Head Horns
@@ -17,7 +17,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 		i(194833),	-- Windborne Velocidrake Manuscript: Black Fur
 		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
 		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
-
+		--]]
 		-- Obtainable?
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns
@@ -268,5 +268,5 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 		i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		i(197634),	-- Windborne Velocidrake: Windswept Pattern
 		i(197610),	-- Windborne Velocidrake: Yellow Horns
-	--}),
-})));]]
+	}),
+})));

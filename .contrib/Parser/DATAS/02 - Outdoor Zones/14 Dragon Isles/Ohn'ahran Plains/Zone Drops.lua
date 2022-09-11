@@ -9,6 +9,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["cr"] = 186678,	-- Chief Grrlgilmesh
 				["coord"] = { 82.0, 31.4, OHNAHRAN_PLAINS },
 			}),
+			i(194031, {	-- Stormtouched Shards
+				["cr"] = 191541,	-- Craggy Stag
+				["coord"] = { 82.9, 63.5, OHNAHRAN_PLAINS },
+			}),
 		}),
 	}),
 })));

@@ -12,6 +12,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(199919),	-- Yak Milk Pudding
 				},
 			}),
+			n(191397, {	-- Sondo
+				["coord"] = { 80.7, 58.7, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(193890),	-- Diced Meat
+				},
+			}),
 		}),
 	}),
 })));

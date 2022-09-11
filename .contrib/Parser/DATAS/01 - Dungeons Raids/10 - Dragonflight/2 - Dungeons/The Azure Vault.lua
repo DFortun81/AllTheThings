@@ -4,7 +4,7 @@
 --[[
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1203, {	-- The Azure Vault
-		-- ["coord"] = { X, Y, MAP },
+		["coord"] = { 38.9, 64.7, THE_AZURE_SPAN },
 		["maps"] = {
 
 		},

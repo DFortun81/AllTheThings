@@ -1893,6 +1893,12 @@ app.L = {
 		[-1009] = "Mythic Alternative",												-- Mythic Alternative
 		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
 		[-1011] = "Elite Alternative",												-- Elite Alternative
+	-- Dragonflight
+		[-1098] = "Side Quests",
+		[-1099] = "Campaign",
+		[-1100] = "Dragon Customization",											-- Dragon Customization
+		[-1120] = "Maruuk",
+		[-1121] = "Aylaag",
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",
