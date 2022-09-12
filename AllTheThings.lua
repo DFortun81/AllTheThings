@@ -3251,21 +3251,6 @@ subroutines = {
 			{"is", "itemID"},	-- Only Items!
 		};
 	end,
-	["legion_relinquished"] = function(invtypes, ...)
-		local f = {...};
-		local commands = subroutines["legion_relinquished_base"]();
-		if type(invtypes) == 'number' then tinsert(f, invtypes); end
-		if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
-		if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
-		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-		return commands;
-	end,
-	["legion_relinquished_relic"] = function(relictype)
-		local commands = subroutines["legion_relinquished_base"]();
-		if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
-		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-		return commands;
-	end,
 };
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
@@ -3349,6 +3334,7 @@ local ResolveFunctions = {
 		wipe(searchResults);
 		-- finalized first
 		ArrayAppend(searchResults, finalized);
+		wipe(finalized);
 		-- then any existing searchResults
 		ArrayAppend(searchResults, orig);
 	end,
@@ -3969,25 +3955,32 @@ local SubroutineCache = {
 		sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_zonedrops");
 		-- don't need to finalize, sub finalizes automatically
 	end,
-	-- ["legion_relinquished"] = function(finalized, searchResults, o, cmd, invtypes, ...)
-	-- 	local sub = ResolveFunctions.sub;
-	-- 	-- collect the base set of possible relinquished items
-	-- 	sub(finalized, searchResults, o, "sub", "legion_relinquished_base");
-
-	-- 	local f = {...};
-	-- 	local commands = subroutines["legion_relinquished_base"]();
-	-- 	if type(invtypes) == 'number' then tinsert(f, invtypes); end
-	-- 	if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
-	-- 	if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
-	-- 	tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-	-- 	return commands;
-	-- end,
-	-- ["legion_relinquished_relic"] = function(finalized, searchResults, o, cmd, relictype)
-	-- 	local commands = subroutines["legion_relinquished_base"]();
-	-- 	if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
-	-- 	tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-	-- 	return commands;
-	-- end,
+	["legion_relinquished"] = function(finalized, searchResults, o, cmd, invtypes, ...)
+		local sub, merge, invtype, contains, modID = ResolveFunctions.sub, ResolveFunctions.merge, ResolveFunctions.invtype, ResolveFunctions.contains, ResolveFunctions.modID;
+		-- collect the base set of possible relinquished items
+		sub(finalized, searchResults, o, "sub", "legion_relinquished_base");
+		-- merge them back to be processed
+		merge(finalized, searchResults);
+		-- invtypes is a table of inventory slot strings to filter
+		invtype(finalized, searchResults, o, "invtype", unpack(invtypes));
+		-- extra params are a set of allowed filterID (f) values
+		if select("#", ...) > 0 then
+			contains(finalized, searchResults, o, "contains", "f", ...);
+		end
+		-- apply the relinquished modID
+		modID(finalized, searchResults, o, "modID", 43);
+	end,
+	["legion_relinquished_relic"] = function(finalized, searchResults, o, cmd, ...)
+		local sub, merge, relictype, modID = ResolveFunctions.sub, ResolveFunctions.merge, ResolveFunctions.relictype, ResolveFunctions.modID;
+		-- collect the base set of possible relinquished items
+		sub(finalized, searchResults, o, "sub", "legion_relinquished_base");
+		-- merge them back to be processed
+		merge(finalized, searchResults);
+		-- only specific relic type(s)
+		relictype(finalized, searchResults, o, "relictype", ...);
+		-- apply the relinquished modID
+		modID(finalized, searchResults, o, "modID", 43);
+	end,
 };
 -- Instruction to perform a specific subroutine using provided input values
 ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
