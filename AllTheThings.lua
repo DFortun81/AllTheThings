@@ -3099,159 +3099,6 @@ end
 local select, tremove, unpack =
 	  select, tremove, unpack;
 local FinalizeModID;
-local subroutines;
-subroutines = {
-	["legion_relinquished_base"] = function()
-		return {
-			-- Legion Legendaries
-			--[[
-			{"select", "npcID", 106655},	-- Arcanomancer Vridiel
-			{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
-			{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
-			{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
-			{"finalize"},	-- Push the items to the finalized list.
-			]]--
-
-			-- PVP Gear
-			--[[
-			-- Demonic Combatant & Gladiator Season 7 Gear
-			{"select", "headerID", -688},	-- Demonic Gladiator Season 7
-			{"pop"},	-- Remove Season Header and push the children into the processing queue.
-			{"pop"},	-- Remove Faction Header and push the children into the processing queue.
-			{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
-			{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
-			{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
-			{"finalize"},	-- Push the items to the finalized list.
-			]]--
-
-			-- Unsullied Gear
-			{"select", "itemID",
-				152740,	-- Unsullied Cloak
-				152738,	-- Unsullied Cloth Cap
-				152734,	-- Unsullied Cloth Mantle
-				153135,	-- Unsullied Cloth Robes
-				152742,	-- Unsullied Cloth Cuffs
-				153141,	-- Unsullied Cloth Mitts
-				153156,	-- Unsullied Cloth Sash
-				153154,	-- Unsullied Cloth Leggings
-				153144,	-- Unsullied Cloth Slippers
-				153139,	-- Unsullied Leather Headgear
-				153145,	-- Unsullied Leather Spaulders
-				153151,	-- Unsullied Leather Tunic
-				153142,	-- Unsullied Leather Armbands
-				152739,	-- Unsullied Leather Grips
-				153148,	-- Unsullied Leather Belt
-				152737,	-- Unsullied Leather Trousers
-				153136,	-- Unsullied Leather Treads
-				153147,	-- Unsullied Mail Coif
-				153137,	-- Unsullied Mail Spaulders
-				152741,	-- Unsullied Mail Chestguard
-				153158,	-- Unsullied Mail Bracers
-				153149,	-- Unsullied Mail Gloves
-				152744,	-- Unsullied Mail Girdle
-				153138,	-- Unsullied Mail Legguards
-				153152,	-- Unsullied Mail Boots
-				153155,	-- Unsullied Plate Helmet
-				153153,	-- Unsullied Plate Pauldrons
-				153143,	-- Unsullied Plate Breasplate
-				153150,	-- Unsullied Plate Vambraces
-				153157,	-- Unsullied Plate Gauntlets
-				153140,	-- Unsullied Plate Waistplate
-				153146,	-- Unsullied Plate Greaves
-				152743,	-- Unsullied Plate Sabatons
-				152736,	-- Unsullied Necklace
-				152735,	-- Unsullied Ring
-				152733,	-- Unsullied Trinket
-				152799,	-- Unsullied Relic
-			},
-			{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
-			{"finalize"},	-- Push the Unsullied items to the finalized list.
-
-			-- World Bosses
-			{"select", "encounterID",
-				1790,	-- Ana-Mouz
-				1956,	-- Apocron
-				1883,	-- Brutallus
-				1774,	-- Calamir
-				1789,	-- Drugon the Frostblood
-				1795,	-- Flotsam
-				1770,	-- Humongris
-				1769,	-- Levantus
-				1884,	-- Malificus
-				1783,	-- Na'zak the Fiend
-				1749,	-- Nithogg
-				1763,	-- Shar'thos
-				1885,	-- Si'vash
-				1756,	-- The Soultakers
-				1796,	-- Withered J'im
-			},
-			{"pop"},	-- Remove the World Bosses and push the children into the processing queue.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- Raids
-			{"select", "instanceID",
-				768,	-- Emerald Nightmare
-				861,	-- Trial of Valor
-				786,	-- The Nighthold
-				875,	-- Tomb of Sargeras
-			},
-
-			-- Process the Raids, Normal Mode Only Loot for boots.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 14},	-- Select only the Normal Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"is", "encounterID"},	-- Only use the encounters themselves, no zone drops.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- Dungeons
-			{"select", "instanceID",
-				777,	-- Assault on Violet Hold
-				740,	-- Blackrook Hold
-				900,	-- Cathedral of Eternal Night
-				800,	-- Court of Stars
-				762,	-- Darkheart Thicket
-				716,	-- Eye of Azshara
-				721,	-- Halls of Valor
-				727,	-- Maw of Souls
-				767,	-- Neltharion's Lair
-				860,	-- Return to Karazhan
-				945,	-- Seat of the Triumvirate
-				749,	-- The Arcway
-				707,	-- Vault of the Wardens
-			},
-
-			-- Process the Dungeons, Mythic Mode Only Loot for boots.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 23},	-- Select only the Mythic Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- World Quest Rewards
-			{"select", "mapID",
-				905,	-- Argus
-				630,	-- Azsuna
-				646,	-- Broken Shore
-				650,	-- Highmountain
-				634,	-- Stormheim
-				680,	-- Suramar
-				641,	-- Val'sharah
-			},
-
-			-- Process the World Quest Rewards
-			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "headerID", -34},	-- Select only the World Quest Headers
-			{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-			{"is", "headerID"},	-- Only use the item sets themselves, no zone drops.
-			{"pop"},	-- Discard the item set Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			{"merge"},	-- Merge the finalized items back into the processing queue.
-			{"is", "itemID"},	-- Only Items!
-		};
-	end,
-};
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
 	if group[field] then
@@ -3263,7 +3110,6 @@ local function Resolve_Extract(results, group, field)
 	end
 	return results;
 end
-
 
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
 -- searchResults - the current set of searchResults when reaching the current sym command
@@ -3955,6 +3801,183 @@ local SubroutineCache = {
 		sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_zonedrops");
 		-- don't need to finalize, sub finalizes automatically
 	end,
+	["legion_relinquished_base"] = function(finalized, searchResults, o)
+		local select, pop, where, is, finalize, merge, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.finalize, ResolveFunctions.merge, ResolveFunctions.extract;
+		-- Legion Legendaries
+		--[[
+		{"select", "npcID", 106655},	-- Arcanomancer Vridiel
+		{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
+		{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
+		{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
+		{"finalize"},	-- Push the items to the finalized list.
+		]]--
+
+		-- PVP Gear
+		--[[
+		-- Demonic Combatant & Gladiator Season 7 Gear
+		{"select", "headerID", -688},	-- Demonic Gladiator Season 7
+		{"pop"},	-- Remove Season Header and push the children into the processing queue.
+		{"pop"},	-- Remove Faction Header and push the children into the processing queue.
+		{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
+		{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
+		{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
+		{"finalize"},	-- Push the items to the finalized list.
+		]]--
+
+		-- Unsullied Gear
+		-- {"select", "itemID",
+		select(finalized, searchResults, o, "select", "itemID",
+			152740,	-- Unsullied Cloak
+			152738,	-- Unsullied Cloth Cap
+			152734,	-- Unsullied Cloth Mantle
+			153135,	-- Unsullied Cloth Robes
+			152742,	-- Unsullied Cloth Cuffs
+			153141,	-- Unsullied Cloth Mitts
+			153156,	-- Unsullied Cloth Sash
+			153154,	-- Unsullied Cloth Leggings
+			153144,	-- Unsullied Cloth Slippers
+			153139,	-- Unsullied Leather Headgear
+			153145,	-- Unsullied Leather Spaulders
+			153151,	-- Unsullied Leather Tunic
+			153142,	-- Unsullied Leather Armbands
+			152739,	-- Unsullied Leather Grips
+			153148,	-- Unsullied Leather Belt
+			152737,	-- Unsullied Leather Trousers
+			153136,	-- Unsullied Leather Treads
+			153147,	-- Unsullied Mail Coif
+			153137,	-- Unsullied Mail Spaulders
+			152741,	-- Unsullied Mail Chestguard
+			153158,	-- Unsullied Mail Bracers
+			153149,	-- Unsullied Mail Gloves
+			152744,	-- Unsullied Mail Girdle
+			153138,	-- Unsullied Mail Legguards
+			153152,	-- Unsullied Mail Boots
+			153155,	-- Unsullied Plate Helmet
+			153153,	-- Unsullied Plate Pauldrons
+			153143,	-- Unsullied Plate Breasplate
+			153150,	-- Unsullied Plate Vambraces
+			153157,	-- Unsullied Plate Gauntlets
+			153140,	-- Unsullied Plate Waistplate
+			153146,	-- Unsullied Plate Greaves
+			152743,	-- Unsullied Plate Sabatons
+			152736,	-- Unsullied Necklace
+			152735,	-- Unsullied Ring
+			152733,	-- Unsullied Trinket
+			152799	-- Unsullied Relic
+		);
+		-- {"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
+		pop(finalized, searchResults);
+		-- {"finalize"},	-- Push the Unsullied items to the finalized list.
+		finalize(finalized, searchResults);
+
+		-- World Bosses
+		-- {"select", "encounterID",
+		select(finalized, searchResults, o, "select", "encounterID",
+			1790,	-- Ana-Mouz
+			1956,	-- Apocron
+			1883,	-- Brutallus
+			1774,	-- Calamir
+			1789,	-- Drugon the Frostblood
+			1795,	-- Flotsam
+			1770,	-- Humongris
+			1769,	-- Levantus
+			1884,	-- Malificus
+			1783,	-- Na'zak the Fiend
+			1749,	-- Nithogg
+			1763,	-- Shar'thos
+			1885,	-- Si'vash
+			1756,	-- The Soultakers
+			1796	-- Withered J'im
+		);
+		-- {"pop"},	-- Remove the World Bosses and push the children into the processing queue.
+		-- pop(finalized, searchResults);
+		-- {"finalize"},	-- Push the unprocessed Items to the finalized list.
+		finalize(finalized, searchResults);
+
+		-- Raids
+		-- {"select", "instanceID",
+		select(finalized, searchResults, o, "select", "instanceID",
+			768,	-- Emerald Nightmare
+			861,	-- Trial of Valor
+			786,	-- The Nighthold
+			875		-- Tomb of Sargeras
+		);
+
+		-- Process the Raids, Normal Mode Only Loot for boots.
+		-- {"pop"},	-- Discard the Instance Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "difficultyID", 14},	-- Select only the Normal Difficulty Headers.
+		where(finalized, searchResults, o, "where", "difficultyID", 14);
+		-- {"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"is", "encounterID"},	-- Only use the encounters themselves, no zone drops.
+		is(finalized, searchResults, o, "is", "encounterID");
+		-- {"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+		-- pop(finalized, searchResults);
+		-- {"finalize"},	-- Push the unprocessed Items to the finalized list.
+		finalize(finalized, searchResults);
+
+		-- Dungeons
+		-- {"select", "instanceID",
+		select(finalized, searchResults, o, "select", "instanceID",
+			777,	-- Assault on Violet Hold
+			740,	-- Blackrook Hold
+			900,	-- Cathedral of Eternal Night
+			800,	-- Court of Stars
+			762,	-- Darkheart Thicket
+			716,	-- Eye of Azshara
+			721,	-- Halls of Valor
+			727,	-- Maw of Souls
+			767,	-- Neltharion's Lair
+			860,	-- Return to Karazhan
+			945,	-- Seat of the Triumvirate
+			749,	-- The Arcway
+			707		-- Vault of the Wardens
+		);
+
+		-- Process the Dungeons, Mythic Mode Only Loot for bosses
+		-- {"pop"},	-- Discard the Instance Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "difficultyID", 23},	-- Select only the Mythic Difficulty Headers.
+		where(finalized, searchResults, o, "where", "difficultyID", 23);
+		-- {"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"pop"},	-- Discard the Encounter Headers and acquire all of their children.
+		-- pop(finalized, searchResults);
+		-- {"finalize"},	-- Push the unprocessed Items to the finalized list.
+		finalize(finalized, searchResults);
+
+		-- World Quest Rewards
+		-- {"select", "mapID",
+		select(finalized, searchResults, o, "select", "mapID",
+			905,	-- Argus
+			630,	-- Azsuna
+			646,	-- Broken Shore
+			650,	-- Highmountain
+			634,	-- Stormheim
+			680,	-- Suramar
+			641		-- Val'sharah
+		);
+
+		-- Process the World Quest Rewards
+		-- {"pop"},	-- Discard the Map Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"where", "headerID", -34},	-- Select only the World Quest Headers
+		where(finalized, searchResults, o, "where", "headerID", -34);
+		-- {"pop"},	-- Discard the World Quest Headers and acquire all of their children.
+		pop(finalized, searchResults);
+		-- {"is", "headerID"},	-- Only use the item sets themselves, no zone drops.
+		is(finalized, searchResults, o, "is", "headerID");
+		-- {"pop"},	-- Discard the item set Headers and acquire all of their children.
+		-- pop(finalized, searchResults);
+		-- {"finalize"},	-- Push the unprocessed Items to the finalized list.
+		finalize(finalized, searchResults);
+
+		-- {"merge"},	-- Merge the finalized items back into the processing queue.
+		merge(finalized, searchResults);
+		-- {"is", "itemID"},	-- Only Items!
+		extract(finalized, searchResults, o, "extract", "itemID");
+	end,
 	["legion_relinquished"] = function(finalized, searchResults, o, cmd, invtypes, ...)
 		local sub, merge, invtype, contains, modID = ResolveFunctions.sub, ResolveFunctions.merge, ResolveFunctions.invtype, ResolveFunctions.contains, ResolveFunctions.modID;
 		-- collect the base set of possible relinquished items
@@ -3987,23 +4010,13 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 	local subroutine = SubroutineCache[sub];
 	-- new logic: no metatable cloning, no table creation for sub-commands
 	if subroutine then
-		-- app.PrintDebug("New:sub",o.hash,sub,...)
+		-- app.PrintDebug("sub",o.hash,sub,...)
 		subroutine(finalized, searchResults, o, cmd, ...);
 		-- each subroutine result is finalized after being processed
 		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
-	subroutine = subroutines[sub];
-	if subroutine then
-		local commands = subroutine(...);
-		if commands then
-			-- app.PrintDebug("Old:sub",sub,...)
-			local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-			ArrayAppend(searchResults, resolved);
-		end
-	else
-		print("Could not find subroutine", sub);
-	end
+	print("Could not find subroutine", sub);
 end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
