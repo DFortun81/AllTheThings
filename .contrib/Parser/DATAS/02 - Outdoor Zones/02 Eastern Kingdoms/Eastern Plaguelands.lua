@@ -37,7 +37,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 			-- #if AFTER WRATH
 			m(THE_SCARLET_ENCLAVE, {
 				["lore"] = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",
-				["icon"] = "Interface\\Icons\\Classicon_deathknight",
+				["icon"] = "Interface\\Icons\\Spell_Deathknight_ClassIcon",
 				["groups"] = {
 					n(QUESTS, {
 						["classes"] = { DEATHKNIGHT },
@@ -478,6 +478,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 						i(16252, {	-- Formula: Enchant Weapon - Crusader (RECIPE!)
 							["cr"] = 9451,	-- Scarlet Archmage
 						}),
+						-- #if AFTER CATA
 						i(20768, {	-- Oozing Bag
 							["description"] = "The slimes can still be farmed during the 'Massacre At Light's Point' quest at the Death Knight starting area.",
 							["coord"] = { 34.2, 43.8, THE_SCARLET_ENCLAVE },
@@ -489,6 +490,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								i(20769),	-- Disgusting Oozeling
 							},
 						}),
+						-- #endif
 					}),
 				},
 			}),
