@@ -648,7 +648,7 @@ root("Zones", {
 							i(153068, {	-- Relinquished Storm Relic
 								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
-									{"sub", "legion_relinquished_relic", "STORM" },	-- Storm Relics Only!
+									{"sub", "legion_relinquished_relic", "WIND" },	-- Storm Relics Only!
 								},
 							}),
 						},
