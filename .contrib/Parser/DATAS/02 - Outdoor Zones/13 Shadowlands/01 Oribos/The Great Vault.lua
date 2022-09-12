@@ -33,7 +33,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["sym"] = {
 						{"select", "tierID", SL_TIER},			-- Select Shadowlands
 						{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-						{"Where", "instanceID", 1193},			-- Sanctum of Domination
+						{"where", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"is", "difficultyID" },				-- Select only the Difficulty Headers.
 						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
