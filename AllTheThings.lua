@@ -2847,7 +2847,8 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t) or t.text;
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
-		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
+		if key == "criteriaID" and t.achievementID then
+			hash = hash .. ":" .. t.achievementID;
 		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
 			hash = key .. t.modItemID;
 		elseif key == "creatureID" then
@@ -3097,6 +3098,7 @@ end
 (function()
 local select, tremove, unpack =
 	  select, tremove, unpack;
+local FinalizeModID;
 local subroutines;
 subroutines = {
 	["legion_relinquished_base"] = function()
@@ -3594,30 +3596,13 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	-- Instruction to apply a specific modID to any Items within the search results
+	-- Instruction to apply a specific modID to any Items within the finalized search results
 	["modID"] = function(finalized, searchResults, o, cmd, modID)
-		local s, itemID;
-		for k=#searchResults,1,-1 do
-			s = searchResults[k];
-			itemID = s.itemID;
-			if itemID then
-				s.modID = modID;
-			end
-		end
+		FinalizeModID = modID;
 	end,
-	-- Instruction to apply the modID from the Source object to any Items within the search results
+	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
 	["myModID"] = function(finalized, searchResults, o)
-		local s, itemID;
-		local modID = o.modID;
-		if modID then
-			for k=#searchResults,1,-1 do
-				s = searchResults[k];
-				itemID = s.itemID;
-				if itemID then
-					s.modID = modID;
-				end
-			end
-		end
+		FinalizeModID = o.modID;
 	end,
 	["achievement_criteria"] = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
@@ -3984,6 +3969,25 @@ local SubroutineCache = {
 		sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_zonedrops");
 		-- don't need to finalize, sub finalizes automatically
 	end,
+	-- ["legion_relinquished"] = function(finalized, searchResults, o, cmd, invtypes, ...)
+	-- 	local sub = ResolveFunctions.sub;
+	-- 	-- collect the base set of possible relinquished items
+	-- 	sub(finalized, searchResults, o, "sub", "legion_relinquished_base");
+
+	-- 	local f = {...};
+	-- 	local commands = subroutines["legion_relinquished_base"]();
+	-- 	if type(invtypes) == 'number' then tinsert(f, invtypes); end
+	-- 	if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
+	-- 	if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
+	-- 	tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
+	-- 	return commands;
+	-- end,
+	-- ["legion_relinquished_relic"] = function(finalized, searchResults, o, cmd, relictype)
+	-- 	local commands = subroutines["legion_relinquished_base"]();
+	-- 	if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
+	-- 	tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
+	-- 	return commands;
+	-- end,
 };
 -- Instruction to perform a specific subroutine using provided input values
 ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
@@ -4011,12 +4015,13 @@ end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
-		-- app.PrintDebug("Cache Resolve:",o.hash,#(o.resolved or ResolveCache[o.hash]))
+		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",o.hash,#(o.resolved or ResolveCache[o.hash]))
 		local cloned = {};
 		MergeObjects(cloned, o.resolved or ResolveCache[o.hash], true);
 		return cloned;
 	end
 	if o and o.sym then
+		FinalizeModID = nil;
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
 		local searchResults, finalized = {}, {};
 		local cmd, cmdFunc;
@@ -4026,6 +4031,8 @@ ResolveSymbolicLink = function(o)
 			-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
 			if cmdFunc then
 				cmdFunc(finalized, searchResults, o, unpack(sym));
+			else
+				print("Unknown symlink command",cmd);
 			end
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
@@ -4033,34 +4040,55 @@ ResolveSymbolicLink = function(o)
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
 			for _,s in ipairs(searchResults) do
-				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
-				if s == o or (s.hash and s.hash == o.hash) then
-					print("Symlink group pulled itself into final group!",o.key,o.key and o[o.key])
-				else
-					tinsert(finalized, s);
-				end
+				tinsert(finalized, s);
 			end
 		end
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
-		-- If we had any finalized search results, then clone all the records and return it.
+		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
-			if o.key and app.ThingKeys[o.key] then
-				-- global resolve cache if it's a 'Thing'
-				ResolveCache[o.hash] = finalized;
-			elseif o.key ~= false then
-				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
-				o.resolved = finalized;
-			end
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
-			for _,s in ipairs(cloned) do
-				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-				s.sourceParent = nil;
-				s.parent = nil;
-				FillSymLinks(s);
+			-- Apply any modID if necessary
+			if FinalizeModID then
+				-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
+				for _,s in ipairs(cloned) do
+					if s.itemID then
+						s.modID = FinalizeModID;
+					end
+					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+					s.sourceParent = nil;
+					s.parent = nil;
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					if s.hash and s.hash == o.hash then
+						print("Symlink group pulled itself into finalized results!",o.hash)
+					else
+						FillSymLinks(s);
+					end
+				end
+			else
+				for _,s in ipairs(cloned) do
+					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+					s.sourceParent = nil;
+					s.parent = nil;
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					if s.hash and s.hash == o.hash then
+						print("Symlink group pulled itself into finalized results!",o.hash)
+					else
+						FillSymLinks(s);
+					end
+				end
+			end
+			if o.key and app.ThingKeys[o.key] then
+				-- global resolve cache if it's a 'Thing'
+				-- app.PrintDebug("Thing Results",o.hash)
+				ResolveCache[o.hash] = cloned;
+			elseif o.key ~= false then
+				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
+				o.resolved = cloned;
+				-- app.PrintDebug("Object Results",o.hash)
 			end
 			return cloned;
 		else
