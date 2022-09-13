@@ -7813,7 +7813,7 @@ local function CheckCollectible(ref)
 		-- Used as a cost for something which is collectible as a cost itself and not collected
 		elseif ref.collectibleAsCost then
 			-- app.PrintDebug("Cost Required via collectibleAsCost",ref.hash)
-			return true,ref.collectedAsCost;
+			return true;	-- we never have 'collected costs'
 		end
 		-- If this group has sub-groups and not yet updated, then update this group and check the total to see if it has collectibles
 		if ref.g and (total or 0) == 0 then
@@ -7879,19 +7879,19 @@ app.CollectibleAsCost = function(t)
 	local collectibles = t.costCollectibles;
 	-- literally nothing to collect with 't' as a cost, so don't process the logic anymore
 	if not collectibles or #collectibles == 0 then
-		t.collectibleAsCost = false;
+		rawset(t, "collectibleAsCost", false);
 		return;
 	end
 	-- This instance of the Thing 't' is not actually collectible for this character if it is under a saved quest parent
 	if not app.MODE_DEBUG_OR_ACCOUNT then
-		local parent = t.parent;
+		local parent = rawget(t, "parent");
 		if parent and parent.questID and parent.saved then
 			-- app.PrintDebug("CollectibleAsCost:t.parent.saved",t.hash)
 			return;
 		end
 	end
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
-	t.collectibleAsCost = false;
+	rawset(t, "collectibleAsCost", false);
 	-- check the collectibles if any are considered collectible currently
 	local collectible, collected;
 	for _,ref in ipairs(collectibles) do
@@ -7902,13 +7902,11 @@ app.CollectibleAsCost = function(t)
 			-- app.PrintDebug("CollectibleAsCost:true",t.hash,"from",ref.hash)
 			-- Found something collectible for t, make sure t is actually obtainable as well
 			-- Make sure this thing can actually be collectible via hierarchy
-			if GetRelativeValue(t, "altcollected") then
-				-- literally have not seen this message in months, maybe is pointless...
-				app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
-				return;
-			end
-			-- Costs are only collectible until all purchases are collected, thus to be collectible means being not collected as well
-			t.collectedAsCost = false;
+			-- if GetRelativeValue(t, "altcollected") then
+			-- 	-- literally have not seen this message in months, maybe is pointless...
+			-- 	app.PrintDebug("CollectibleAsCost:altcollected",t.hash)
+			-- 	return;
+			-- end
 			return true;
 		end
 	end
@@ -11568,7 +11566,6 @@ local itemFields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
-	-- ["collectedAsCost"] = app.CollectedAsCost,
 	["costsCount"] = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
