@@ -67,7 +67,6 @@ root("Zones", {
 									{"select", "itemID", 152735},	-- Unsullied Ring
 									{"select", "itemID", 152733},	-- Unsullied Trinket
 									{"select", "itemID", 152799},	-- Unsullied Relic
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
 							un(REMOVED_FROM_GAME, i(152650, {	-- Scuffed Krokul Cache
@@ -125,7 +124,6 @@ root("Zones", {
 									{"select", "itemID", 152735},	-- Unsullied Ring
 									{"select", "itemID", 152733},	-- Unsullied Trinket
 									{"select", "itemID", 152799},	-- Unsullied Relic
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								},
 							}),
 							un(REMOVED_FROM_GAME, i(154912, {	-- Gilded Trunk
@@ -650,7 +648,7 @@ root("Zones", {
 							i(153068, {	-- Relinquished Storm Relic
 								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
-									{"sub", "legion_relinquished_relic", "STORM" },	-- Storm Relics Only!
+									{"sub", "legion_relinquished_relic", "WIND" },	-- Storm Relics Only!
 								},
 							}),
 						},

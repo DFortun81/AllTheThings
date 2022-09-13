@@ -54,7 +54,6 @@ _.ExpansionFeatures =
 						{"select", "itemID", 147214},	-- Dauntless Treads
 						{"select", "itemID", 147220},	-- Dauntless Ring
 						{"select", "itemID", 147223},	-- Dauntless Trinket
-						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
 					["g"] = {
 						i(139158),	-- Battle Mace of the Niskaran Guard

@@ -26,7 +26,6 @@ _.Zones =
 								{"select", "itemID", 147214},	-- Dauntless Treads
 								{"select", "itemID", 147220},	-- Dauntless Ring
 								{"select", "itemID", 147223},	-- Dauntless Trinket
-								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(154910, {	-- Legionfall Spoils

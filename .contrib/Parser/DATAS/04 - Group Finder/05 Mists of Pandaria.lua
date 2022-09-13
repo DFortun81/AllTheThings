@@ -645,7 +645,6 @@ _.GroupFinder =
 				{"select", "itemID", 8499},		-- Tiny Crimson Whelpling
 				{"select", "itemID", 44971},	-- Tirisfal Batling
 				{"select", "itemID", 29903},	-- Yellow Moth Egg
-				{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 			},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries

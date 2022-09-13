@@ -1038,31 +1038,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["timeline"] = { "added 9.1.5" },
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["sym"] = {
-					{"select", "mapID", BASTION },
-					{"pop"},
+					{"select", "mapID", BASTION },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", MALDRAXXUS },
-					{"pop"},
+					{"select", "mapID", MALDRAXXUS },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", ARDENWEALD },
-					{"pop"},
+					{"select", "mapID", ARDENWEALD },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", REVENDRETH },
-					{"pop"},
+					{"select", "mapID", REVENDRETH },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
 					{"merge"},
+					{"pop"},
 					{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
 				},
 			})),

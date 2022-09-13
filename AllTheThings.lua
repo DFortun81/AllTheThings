@@ -289,10 +289,21 @@ local contains = function(arr, value)
 		if value2 == value then return true; end
 	end
 end
-local containsAny = function(arr, otherArr)
-	for _,v in ipairs(arr) do
-		for _,w in ipairs(otherArr) do
-			if v == w then return true; end
+local containsAny = function(arr, ...)
+	local value = select(1, ...);
+	if value and type(value) == "table" then
+		for _,v in ipairs(arr) do
+			for _,w in ipairs(value) do
+				if v == w then return true; end
+			end
+		end
+	else
+		local vals = select("#", ...);
+		for i=1,vals do
+			value = select(i, ...);
+			for _,v in ipairs(arr) do
+				if v == value then return true; end
+			end
 		end
 	end
 end
@@ -2836,7 +2847,8 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t) or t.text;
 	if key then
 		local hash = key .. (rawget(t, key) or t[key] or "NOKEY");
-		if key == "criteriaID" and t.achievementID then hash = hash .. ":" .. t.achievementID;
+		if key == "criteriaID" and t.achievementID then
+			hash = hash .. ":" .. t.achievementID;
 		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
 			hash = key .. t.modItemID;
 		elseif key == "creatureID" then
@@ -3086,407 +3098,7 @@ end
 (function()
 local select, tremove, unpack =
 	  select, tremove, unpack;
-local subroutines;
-subroutines = {
-	["pvp_gear_base"] = function(tierID, headerID1, headerID2)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-		};
-	end,
-	["pvp_gear_faction_base"] = function(tierID, headerID1, headerID2, headerID3)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Faction header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-		};
-	end,
-	-- Set Gear
-	["pvp_set_ensemble"] = function(tierID, headerID1, headerID2, classID)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "classID", classID },	-- Select all the class header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
-		};
-	end,
-	["pvp_set_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3, classID)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "classID", classID },	-- Select all the class header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
-		};
-	end,
-	-- Weapons
-	["pvp_weapons_ensemble"] = function(tierID, headerID1, headerID2)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
-		};
-	end,
-	["pvp_weapons_faction_ensemble"] = function(tierID, headerID1, headerID2, headerID3)
-		return {
-			{"select", "tierID", tierID },	-- Select the Expansion header
-			{"pop"},	-- Discard the Expansion header and acquire the children.
-			{"where", "headerID", headerID1 },	-- Select the Season header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID2 },	-- Select the Faction header
-			{"pop"},	-- Discard the Season header and acquire the children.
-			{"where", "headerID", headerID3 },	-- Select the Set header
-			{"pop"},	-- Discard the Set header and acquire the children.
-			{"where", "headerID", -319 },	-- Select the "Weapons" header.
-			{"pop"},	-- Discard the class header and acquire the children.
-			{"is", "itemID"},
-			{"is", "s"},	-- If it has a sourceID, keep it, otherwise throw it away.
-		};
-	end,
-	["legion_relinquished_base"] = function()
-		return {
-			-- Legion Legendaries
-			--[[
-			{"select", "npcID", 106655},	-- Arcanomancer Vridiel
-			{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
-			{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
-			{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
-			{"finalize"},	-- Push the items to the finalized list.
-			]]--
-
-			-- PVP Gear
-			--[[
-			-- Demonic Combatant & Gladiator Season 7 Gear
-			{"select", "headerID", -688},	-- Demonic Gladiator Season 7
-			{"pop"},	-- Remove Season Header and push the children into the processing queue.
-			{"pop"},	-- Remove Faction Header and push the children into the processing queue.
-			{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
-			{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
-			{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
-			{"finalize"},	-- Push the items to the finalized list.
-			]]--
-
-			-- Unsullied Gear
-			{"select", "itemID",
-				152740,	-- Unsullied Cloak
-				152738,	-- Unsullied Cloth Cap
-				152734,	-- Unsullied Cloth Mantle
-				153135,	-- Unsullied Cloth Robes
-				152742,	-- Unsullied Cloth Cuffs
-				153141,	-- Unsullied Cloth Mitts
-				153156,	-- Unsullied Cloth Sash
-				153154,	-- Unsullied Cloth Leggings
-				153144,	-- Unsullied Cloth Slippers
-				153139,	-- Unsullied Leather Headgear
-				153145,	-- Unsullied Leather Spaulders
-				153151,	-- Unsullied Leather Tunic
-				153142,	-- Unsullied Leather Armbands
-				152739,	-- Unsullied Leather Grips
-				153148,	-- Unsullied Leather Belt
-				152737,	-- Unsullied Leather Trousers
-				153136,	-- Unsullied Leather Treads
-				153147,	-- Unsullied Mail Coif
-				153137,	-- Unsullied Mail Spaulders
-				152741,	-- Unsullied Mail Chestguard
-				153158,	-- Unsullied Mail Bracers
-				153149,	-- Unsullied Mail Gloves
-				152744,	-- Unsullied Mail Girdle
-				153138,	-- Unsullied Mail Legguards
-				153152,	-- Unsullied Mail Boots
-				153155,	-- Unsullied Plate Helmet
-				153153,	-- Unsullied Plate Pauldrons
-				153143,	-- Unsullied Plate Breasplate
-				153150,	-- Unsullied Plate Vambraces
-				153157,	-- Unsullied Plate Gauntlets
-				153140,	-- Unsullied Plate Waistplate
-				153146,	-- Unsullied Plate Greaves
-				152743,	-- Unsullied Plate Sabatons
-				152736,	-- Unsullied Necklace
-				152735,	-- Unsullied Ring
-				152733,	-- Unsullied Trinket
-				152799,	-- Unsullied Relic
-			},
-			{"pop"},	-- Remove the Unsullied Tokens and push the children into the processing queue.
-			{"finalize"},	-- Push the Unsullied items to the finalized list.
-
-			-- World Bosses
-			{"select", "encounterID",
-				1790,	-- Ana-Mouz
-				1956,	-- Apocron
-				1883,	-- Brutallus
-				1774,	-- Calamir
-				1789,	-- Drugon the Frostblood
-				1795,	-- Flotsam
-				1770,	-- Humongris
-				1769,	-- Levantus
-				1884,	-- Malificus
-				1783,	-- Na'zak the Fiend
-				1749,	-- Nithogg
-				1763,	-- Shar'thos
-				1885,	-- Si'vash
-				1756,	-- The Soultakers
-				1796,	-- Withered J'im
-			},
-			{"pop"},	-- Remove the World Bosses and push the children into the processing queue.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- Raids
-			{"select", "instanceID",
-				768,	-- Emerald Nightmare
-				861,	-- Trial of Valor
-				786,	-- The Nighthold
-				875,	-- Tomb of Sargeras
-			},
-
-			-- Process the Raids, Normal Mode Only Loot for boots.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 14},	-- Select only the Normal Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"is", "encounterID"},	-- Only use the encounters themselves, no zone drops.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- Dungeons
-			{"select", "instanceID",
-				777,	-- Assault on Violet Hold
-				740,	-- Blackrook Hold
-				900,	-- Cathedral of Eternal Night
-				800,	-- Court of Stars
-				762,	-- Darkheart Thicket
-				716,	-- Eye of Azshara
-				721,	-- Halls of Valor
-				727,	-- Maw of Souls
-				767,	-- Neltharion's Lair
-				860,	-- Return to Karazhan
-				945,	-- Seat of the Triumvirate
-				749,	-- The Arcway
-				707,	-- Vault of the Wardens
-			},
-
-			-- Process the Dungeons, Mythic Mode Only Loot for boots.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 23},	-- Select only the Mythic Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			-- World Quest Rewards
-			{"select", "mapID",
-				905,	-- Argus
-				630,	-- Azsuna
-				646,	-- Broken Shore
-				650,	-- Highmountain
-				634,	-- Stormheim
-				680,	-- Suramar
-				641,	-- Val'sharah
-			},
-
-			-- Process the World Quest Rewards
-			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "headerID", -34},	-- Select only the World Quest Headers
-			{"pop"},	-- Discard the World Quest Headers and acquire all of their children.
-			{"is", "headerID"},	-- Only use the item sets themselves, no zone drops.
-			{"pop"},	-- Discard the item set Headers and acquire all of their children.
-			{"finalize"},	-- Push the unprocessed Items to the finalized list.
-
-			{"merge"},	-- Merge the finalized items back into the processing queue.
-			{"is", "itemID"},	-- Only Items!
-		};
-	end,
-	["legion_relinquished"] = function(invtypes, ...)
-		local f = {...};
-		local commands = subroutines["legion_relinquished_base"]();
-		if type(invtypes) == 'number' then tinsert(f, invtypes); end
-		if #f > 0 then tinsert(commands, {"contains", "f", unpack(f) }); end	-- Specific filterIDs only!
-		if type(invtypes) == 'table' then tinsert(commands, {"invtype", unpack(invtypes)}); end	-- Only pay attention to items equipped in the slots.
-		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
-		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-		return commands;
-	end,
-	["legion_relinquished_relic"] = function(relictype)
-		local commands = subroutines["legion_relinquished_base"]();
-		if relictype then tinsert(commands, {"relictype", relictype}); end	-- Only pay attention to relics of a certain kind
-		tinsert(commands, {"postprocess"});	-- Post Process the search results to ensure no duplicate keys exist.
-		tinsert(commands, {"modID", 43});	-- Reassign the ModID to 43.
-		return commands;
-	end,
-	["bfa_azerite_armor_chest_dungeons"] = function()
-		return {
-			-- Dungeons
-			{"select", "instanceID",
-				968,	-- Atal'Dazar
-				1001,	-- Freehold
-				1041,	-- King's Rest
-				1178,	-- Operation: Mechagon ??
-				1036,	-- Shrine of the Storm
-				1023,	-- Siege of Boralus
-				1030,	-- Temple of Sethraliss
-				1012,	-- The MOTHERLODE!!
-				1022,	-- The Underrot
-				1002,	-- Tol Dagor
-				1021,	-- Waycrest Manor
-			},
-
-			-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
-			{"pop"},	-- Discard the Instance Headers and acquire all of their children.
-			{"where", "difficultyID", 1},	-- Select only the Normal Difficulty Headers.
-			{"pop"},	-- Discard the Difficulty Headers and acquire all of their children.
-			{"pop"},	-- Discard the Encounter Headers and acquire all of their children.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"modID", 1},	-- Normal
-		};
-	end,
-	["bfa_azerite_armor_chest_warfront"] = function()
-		return {
-			{"select", "headerID", -10057},	-- War Effort
-			{"pop"},	-- Discard the War Effort Header and acquire the children.
-			{"where", "mapID", 14},	-- Arathi Highlands
-			{"pop"},	-- Discard the Map Header and acquire the children.
-			{"where", "headerID", -1 },	-- Select the Common Boss Drop Header.
-			{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-			{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"modID", 5},	-- iLvl 340
-		}
-	end,
-	["bfa_azerite_armor_chest_zonedrops"] = function()
-		return {
-			-- World Quest Rewards
-			{"select", "mapID",
-				896,	-- Drustvar
-				942,	-- Stormsong Valley
-				895,	-- Tiragarde Sound
-				863,	-- Nazmir
-				864,	-- Vol'dun
-				862,	-- Zuldazar
-			},
-
-			-- Process the World Quest Rewards
-			{"pop"},	-- Discard the Map Headers and acquire all of their children.
-			{"where", "headerID", -903},	-- Select only the Zone Rewards Headers
-			{"pop"},	-- Discard the Zone Rewards Headers and acquire all of their children.
-
-			-- Process the headers for the Azerite Armor pieces.
-			{"is", "itemID"},	-- Only Items!
-			{"invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE" },	-- Only Head, Shoulders, and Chest items. (azerite)
-			{"myModID"},
-		};
-	end,
-	["bfa_azerite_armor_chest"] = function()
-		return {
-			{ "subif", "bfa_azerite_armor_chest_dungeons", function(o) return o.modID == 1 or o.modID == 2; end },
-			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_warfront", function(o) return o.modID == 5; end },
-			{ "finalize" },
-			{ "subif", "bfa_azerite_armor_chest_zonedrops", function(o) return not o.modID or (o.modID ~= 1 and o.modID ~= 2 and o.modID ~= 5); end },
-			{ "merge" },
-		};
-	end,
-	-- Common Northrend/Cataclysm Recipes Vendor
-	["common_recipes_vendor"] = function(npcID)
-		return {
-			{"select", "creatureID", npcID},	-- Main Vendor
-			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
-			{"is", "itemID"},	-- Only Items
-			-- Borya <Tailoring Supplies> Cataclysm Tailoring
-			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
-			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
-			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
-			{"exclude", "itemID", 10317},	-- Pattern: Pink Mageweave Shirt
-			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
-			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
-			{"exclude", "itemID", 12162},	-- Plans: Hardened Iron Shortsword
-			-- Tamar <Leatherworking Supplies> Cataclysm Leatherworking
-			{"exclude", "itemID", 18731},	-- Pattern: Heavy Leather Ball
-			-- Kithas <Enchanting Supplies> Cataclysm Enchanting
-			{"exclude", "itemID", 6349},	-- Formula: Enchant 2H Weapon - Lesser Intellect
-			{"exclude", "itemID", 20753},	-- Formula: Lesser Wizard Oil
-			{"exclude", "itemID", 20752},	-- Formula: Minor Mana Oil
-			{"exclude", "itemID", 20758},	-- Formula: Minor Wizard Oil
-			{"exclude", "itemID", 22307},	-- Pattern: Enchanted Mageweave Pouch
-			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
-			-- Shazdar <Sous Chef> Cataclysm Cooking
-			-- Tiffany Cartier <Jewelcrafting Supplies> Northrend Jewelcrafting
-			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
-		}
-	end,
-	["common_vendor"] = function(npcID)
-		return {
-			{"select", "creatureID", npcID},	-- Main Vendor
-			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
-			{"is", "itemID"},	-- Only Items
-		}
-	end,
-	-- TW Instance
-	["tw_instance"] = function(instanceID)
-		return  {
-			{"select", "itemID", 133543},			-- Infinite Timereaver
-			{"postprocess"},						-- de-duplicate
-			{"push", "headerID", -1},				-- Push into 'Common Boss Drops' header
-			{"finalize"},							-- capture current results
-			{"select", "instanceID", instanceID},	-- select this instance
-			{"where", "u", 1016},					-- only the instance which is marked as TIMEWALKING
-			{"pop"},								-- pop the instance header
-		}
-	end,
-	-- Wod Dungeon
-	["common_wod_dungeon_drop"] = function(difficultyID, headerID)
-		return {
-			{"select", "headerID", -23},				-- Common Dungeon Drops
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "difficultyID", difficultyID},	-- Normal/Heroic/Mythic/Timewalking
-			{"pop"},									-- Discard the Diffculty Header and acquire all of their children.
-			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		}
-	end,
-	-- Wod Dungeon TW
-	["common_wod_dungeon_drop_tw"] = function(difficultyID, headerID)
-		return {
-			{"select", "headerID", -23},				-- Common Dungeon Drops
-			{"where", "u", 1016 },						-- only the Common Dungeon Drops which is marked as TIMEWALKING
-			{"pop"},									-- Discard the Header and acquire all of their children.
-			{"where", "headerID", headerID},			-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
-		}
-	end,
-	-- Korthian Armaments
-	["korthian_armaments"] = function(invtyp)
-		return {
-			{"select", "itemID", 187187 },				-- Korthian Armaments
-			{"pop"},									-- Discard the Item Header and acquire all of their children.
-			{"pop"},									-- Discard the Headers and acquire all of their children.
-			{"invtype", invtyp },						-- Only slot-specific
-		}
-	end,
-};
+local FinalizeModID;
 local ArrayAppend = app.ArrayAppend;
 local function Resolve_Extract(results, group, field)
 	if group[field] then
@@ -3499,14 +3111,13 @@ local function Resolve_Extract(results, group, field)
 	return results;
 end
 
-
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
 -- searchResults - the current set of searchResults when reaching the current sym command
 -- o - the specific group object which contains the symlink commands
 -- (various expected components of the respective sym command)
 local ResolveFunctions = {
-	["select"] = function(searchResults, o, cmd, field, ...)
-		-- Instruction to search the full database for multiple of a given type
+	-- Instruction to search the full database for multiple of a given type
+	["select"] = function(finalized, searchResults, o, cmd, field, ...)
 		local cache, val;
 		local vals = select("#", ...);
 		for i=1,vals do
@@ -3519,30 +3130,29 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["selectparent"] = function(searchResults, o, cmd, level)
-		-- Instruction to select the parent object of the parent that owns the symbolic link.
-		if level and level > 0 then
-			local parent = o.parent;
-			while level > 1 do
-				parent = parent and parent.parent;
-				level = level - 1;
-			end
-			if parent then
-				tinsert(searchResults, parent);
-			else
-				print("Failed to select parent " .. level .. " levels up.");
-			end
+	-- Instruction to select the parent object of the group that owns the symbolic link
+	["selectparent"] = function(finalized, searchResults, o, cmd, level)
+		level = level or 1;
+		local parent = o.parent or o.sourceParent;
+		-- app.PrintDebug("selectparent",level,parent and parent.hash)
+		while level > 1 do
+			parent = parent and parent.parent;
+			level = level - 1;
+			-- app.PrintDebug("selectparent",level,parent and parent.hash)
+		end
+		if parent then
+			tinsert(searchResults, parent);
 		else
-			-- Select the direct parent object.
-			tinsert(searchResults, o.parent);
+			print("Failed to select parent for ",o.hash);
 		end
 	end,
-	["selectprofession"] = function(searchResults, o, cmd, requireSkill)
-		-- Instruction to find all content marked with the specified 'requireSkill'
-		ArrayAppend(searchResults, app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill));
+	-- Instruction to find all content marked with the specified 'requireSkill'
+	["selectprofession"] = function(finalized, searchResults, o, cmd, requireSkill)
+		local search = app:BuildSearchResponse(app:GetDataCache().g, "requireSkill", requireSkill);
+		ArrayAppend(searchResults, search);
 	end,
-	["fill"] = function(searchResults, o)
-		-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+	-- Instruction to fill with identical content cached elsewhere for this group (no symlinks)
+	["fill"] = function(finalized, searchResults, o)
 		local okey = o.key;
 		if okey then
 			local okeyval = o[okey];
@@ -3556,23 +3166,49 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["push"] = function(searchResults, o, cmd, field, value)
-		-- Instruction to "push" all of the group values into an object as specified
-		local orig = RawCloneData(searchResults);
+	-- Instruction to finalize the current search results and prevent additional queries from affecting this selection
+	["finalize"] = function(finalized, searchResults)
+		ArrayAppend(finalized, searchResults);
+		wipe(searchResults);
+	end,
+	-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue
+	["merge"] = function(finalized, searchResults)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		-- finalized first
+		ArrayAppend(searchResults, finalized);
+		wipe(finalized);
+		-- then any existing searchResults
+		ArrayAppend(searchResults, orig);
+	end,
+	-- Instruction to "push" all of the group values into an object as specified
+	["push"] = function(finalized, searchResults, o, cmd, field, value)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
 		wipe(searchResults);
 		searchResults[1] = CreateObject({[field] = value, g = orig });
 	end,
-	["pop"] = function(searchResults)
-		-- Instruction to "pop" all of the group values up one level.
-		local orig = RawCloneData(searchResults);
+	-- Instruction to "pop" all of the group values up one level
+	["pop"] = function(finalized, searchResults)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
 		wipe(searchResults);
-		for _,s in ipairs(orig) do
-			-- insert raw & symlinked Things from this group
-			ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+		if orig then
+			for _,s in ipairs(orig) do
+				-- insert raw & symlinked Things from this group
+				ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+			end
 		end
 	end,
-	["where"] = function(searchResults, o, cmd, field, value)
-		-- Instruction to include only search results where a key value is a value
+	-- Instruction to include only search results where a key value is a value
+	["where"] = function(finalized, searchResults, o, cmd, field, value)
 		for k=#searchResults,1,-1 do
 			local s = searchResults[k];
 			if not s[field] or s[field] ~= value then
@@ -3580,325 +3216,742 @@ local ResolveFunctions = {
 			end
 		end
 	end,
-	["extract"] = function(searchResults, o, cmd, field)
-		-- Instruction to extract all nested results which contain a given field
-		local orig = RawCloneData(searchResults);
-		wipe(searchResults);
-		for _,o in ipairs(orig) do
-			Resolve_Extract(searchResults, o, field);
+	-- Instruction to extract all nested results which contain a given field
+	["extract"] = function(finalized, searchResults, o, cmd, field)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
 		end
-	end,
-	["index"] = function(searchResults, o, cmd, index)
-		-- Instruction to include the search result with a given index within each of the selection's groups.
-		local orig = RawCloneData(searchResults);
 		wipe(searchResults);
-		local s, g;
-		for k=#orig,1,-1 do
-			s = orig[k];
-			g = s.g;
-			if g and index <= #g then
-				tinsert(searchResults, g[index]);
+		if orig then
+			for _,o in ipairs(orig) do
+				Resolve_Extract(searchResults, o, field);
 			end
 		end
 	end,
+	-- Instruction to include the search result with a given index within each of the selection's groups
+	["index"] = function(finalized, searchResults, o, cmd, index)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		if orig then
+			local s, g;
+			for k=#orig,1,-1 do
+				s = orig[k];
+				g = s.g;
+				if g and index <= #g then
+					tinsert(searchResults, g[index]);
+				end
+			end
+		end
+	end,
+	-- Instruction to include only search results where a key value is not a value
+	["not"] = function(finalized, searchResults, o, cmd, field, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		local s, value;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			for i=1,vals do
+				value = select(i, ...);
+				if s[field] == value then
+					tremove(searchResults, k);
+					break;
+				end
+			end
+		end
+	end,
+	-- Instruction to include only search results where a key exists
+	["is"] = function(finalized, searchResults, o, cmd, field)
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if not s[field] then tremove(searchResults, k); end
+		end
+	end,
+	-- Instruction to include only search results where a key doesn't exist
+	["isnt"] = function(finalized, searchResults, o, cmd, field)
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if s[field] then tremove(searchResults, k); end
+		end
+	end,
+	-- Instruction to include only search results where a key value/table contains a value
+	["contains"] = function(finalized, searchResults, o, cmd, field, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		local s, kval;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			kval = s[field];
+			-- key doesn't exist at all on the result
+			if not kval then
+				tremove(searchResults, k);
+			-- none of the values match the contains values
+			elseif type(kval) == "table" then
+				if not containsAny(kval, ...) then
+					tremove(searchResults, k);
+				end
+			-- key exists with single value on the result
+			else
+				local match;
+				for i=1,vals do
+					if kval == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if not match then
+					tremove(searchResults, k);
+				end
+			end
+		end
+	end,
+	-- Instruction to exclude search results where a key value contains a value
+	["exclude"] = function(finalized, searchResults, o, cmd, field, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		local s, kval;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			kval = s[field];
+			-- key exists
+			if kval then
+				local match;
+				for i=1,vals do
+					if kval == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if match then
+					-- TEMP logic to allow Ensembles to continue working until they get fixed again...
+					if field == "itemID" and s.g and kval == o[field] then
+						ArrayAppend(searchResults, s.g);
+					end
+					tremove(searchResults, k);
+				end
+			end
+		end
+	end,
+	-- Instruction to include only search results where an item is of a specific inventory type
+	["invtype"] = function(finalized, searchResults, o, cmd, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		local s, invtype;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			if s.itemID then
+				invtype = select(4, GetItemInfoInstant(s.itemID));
+				local match;
+				for i=1,vals do
+					if invtype == select(i, ...) then
+						match = true;
+						break;
+					end
+				end
+				if not match then
+					tremove(searchResults, k);
+				end
+			end
+		end
+	end,
+	-- Instruction to search the full database for multiple achievementID's and persist only actual achievements
+	["meta_achievement"] = function(finalized, searchResults, o, cmd, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		local cache, value;
+		for i=1,vals do
+			value = select(i, ...);
+			cache = app.CleanSourceIgnoredGroups(app.SearchForField("achievementID", value));
+			if cache then
+				ArrayAppend(searchResults, cache);
+			else
+				print("Failed to select achievementID",value);
+			end
+		end
+		-- Remove any Criteria groups associated with those achievements
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if s.criteriaID then tremove(searchResults, k); end
+		end
+	end,
+	-- Instruction to include only search results where an item is of a specific relic type
+	["relictype"] = function(finalized, searchResults, o, cmd, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			print("'",cmd,"' had empty value set")
+			return;
+		end
+		--[[
+		RELIC_SLOT_TYPE_ARCANE = "Arcane";
+		RELIC_SLOT_TYPE_BLOOD = "Blood";
+		RELIC_SLOT_TYPE_FEL = "Fel";
+		RELIC_SLOT_TYPE_FIRE = "Fire";
+		RELIC_SLOT_TYPE_FROST = "Frost";
+		RELIC_SLOT_TYPE_HOLY = "Holy";
+		RELIC_SLOT_TYPE_IRON = "Iron";
+		RELIC_SLOT_TYPE_LIFE = "Life";
+		RELIC_SLOT_TYPE_SHADOW = "Shadow";
+		RELIC_SLOT_TYPE_WATER = "Water";
+		RELIC_SLOT_TYPE_WIND = "Storm";
+		]]--
+		local types = {...};
+		-- replace the short constant values with in-game localized values
+		for i=#types,1,-1 do
+			types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
+		end
+		local s, itemID;
+		for k=#searchResults,1,-1 do
+			s = searchResults[k];
+			itemID = s.itemID;
+			if itemID and IsArtifactRelicItem(itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID))) then
+				-- We're good.
+			else
+				tremove(searchResults, k);
+			end
+		end
+	end,
+	-- Instruction to apply a specific modID to any Items within the finalized search results
+	["modID"] = function(finalized, searchResults, o, cmd, modID)
+		FinalizeModID = modID;
+	end,
+	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
+	["myModID"] = function(finalized, searchResults, o)
+		FinalizeModID = o.modID;
+	end,
+	["achievement_criteria"] = function(finalized, searchResults, o)
+		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
+		if GetAchievementNumCriteria then
+			local achievementID = o.achievementID;
+			local cache;
+			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
+			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
+				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
+				if criteriaType == 27 then
+					cache = app.SearchForField("questID", assetID);
+				elseif criteriaType == 110 then
+					-- Ignored
+				else
+					print("Unhandled Criteria Type", criteriaType, assetID);
+				end
+				criteriaObject = app.CreateAchievementCriteria(id);
+				if cache then
+					local uniques = {};
+					MergeObjects(uniques, cache);
+					for i,o in ipairs(uniques) do
+						rawset(o, "text", nil);
+						for key,value in pairs(o) do
+							criteriaObject[key] = value;
+						end
+						rawset(o, "text", criteriaObject.text);
+					end
+				end
+				criteriaObject.achievementID = achievementID;
+				criteriaObject.parent = o;
+				tinsert(searchResults, criteriaObject);
+			end
+		end
+	end,
+	-- Instruction to include only search results where an item is a relic (Not used currently)
+	-- ["isrelic"] = function(finalized, searchResults)
+	-- 	local s, itemID;
+	-- 	for k=#searchResults,1,-1 do
+	-- 		s = searchResults[k];
+	-- 		itemID = s.itemID;
+	-- 		if not itemID or not IsArtifactRelicItem(itemID) then
+	-- 			tremove(searchResults, k);
+	-- 		end
+	-- 	end
+	-- end,
 };
+-- Subroutine Logic Cache
+local SubroutineCache = {
+	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+	end,
+	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
+		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
+	end,
+	-- Set Gear
+	["pvp_set_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, classID)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
+		where(finalized, searchResults, o, "where", "classID", classID);	-- Select all the class header.
+		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+	end,
+	["pvp_set_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3, classID)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
+		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
+		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
+		where(finalized, searchResults, o, "where", "classID", classID);	-- Select all the class header.
+		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+	end,
+	-- Weapons
+	["pvp_weapons_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", -319);	-- Select the "Weapons" header.
+		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+	end,
+	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
+		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
+		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
+		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
+		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", -319);	-- Select the "Weapons" header.
+		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+	end,
+	-- Common Northrend/Cataclysm Recipes Vendor
+	["common_recipes_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+			local select, pop, is, exclude = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is, ResolveFunctions.exclude;
+		select(finalized, searchResults, o, "select", "creatureID", npcID);	-- Main Vendor
+		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
+		is(finalized, searchResults, o, "is", "itemID");	-- Only Items
+		-- Exclude items specific to certain vendors
+		exclude(finalized, searchResults, o, "exclude", "itemID",
+			-- Borya <Tailoring Supplies> Cataclysm Tailoring
+			6270,	-- Pattern: Blue Linen Vest
+			6274,	-- Pattern: Blue Overalls
+			10314,	-- Pattern: Lavender Mageweave Shirt
+			10317,	-- Pattern: Pink Mageweave Shirt
+			5772,	-- Pattern: Red Woolen Bag
+			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
+			12162,	-- Plans: Hardened Iron Shortsword
+			-- Tamar <Leatherworking Supplies> Cataclysm Leatherworking
+			18731,	-- Pattern: Heavy Leather Ball
+			-- Kithas <Enchanting Supplies> Cataclysm Enchanting
+			6349,	-- Formula: Enchant 2H Weapon - Lesser Intellect
+			20753,	-- Formula: Lesser Wizard Oil
+			20752,	-- Formula: Minor Mana Oil
+			20758,	-- Formula: Minor Wizard Oil
+			22307,	-- Pattern: Enchanted Mageweave Pouch
+			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
+			-- Shazdar <Sous Chef> Cataclysm Cooking
+			-- Tiffany Cartier <Jewelcrafting Supplies> Northrend Jewelcrafting
+			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
+		0);	-- 0 allows the trailing comma on previous itemIDs for cleanliness
+	end,
+	["common_vendor"] = function(finalized, searchResults, o, cmd, npcID)
+		local select, pop, is = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is;
+		select(finalized, searchResults, o, "select", "creatureID", npcID);	-- Main Vendor
+		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
+		is(finalized, searchResults, o, "is", "itemID");	-- Only Items
+	end,
+	-- TW Instance
+	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
+		local select, pop, where, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.push, ResolveFunctions.finalize;
+		select(finalized, searchResults, o, "select", "itemID", 133543);	-- Infinite Timereaver
+		push(finalized, searchResults, o, "push", "headerID", -1);	-- Push into 'Common Boss Drops' header
+		finalize(finalized, searchResults);	-- capture current results
+		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
+		where(finalized, searchResults, o, "where", "u", 1016);	-- only the instance which is marked as TIMEWALKING
+		pop(finalized, searchResults);	-- pop the instance header
+	end,
+	-- Wod Dungeon
+	["common_wod_dungeon_drop"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		select(finalized, searchResults, o, "select", "headerID", -23);	-- Common Dungeon Drops
+		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "difficultyID", difficultyID);	-- Normal/Heroic/Mythic/Timewalking
+		pop(finalized, searchResults);	-- Discard the Diffculty Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+	end,
+	-- Wod Dungeon TW
+	["common_wod_dungeon_drop_tw"] = function(finalized, searchResults, o, cmd, difficultyID, headerID)
+		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		select(finalized, searchResults, o, "select", "headerID", -23);	-- Common Dungeon Drops
+		where(finalized, searchResults, o, "where", "u", 1016);	-- only the Common Dungeon Drops which is marked as TIMEWALKING
+		pop(finalized, searchResults);	-- Discard the Header and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", headerID);	-- Head/Shoulder/Chest/Legs/Feet/Wrist/Hands/Waist
+	end,
+	-- Korthian Armaments
+	["korthian_armaments"] = function(finalized, searchResults, o, cmd, inv)
+		local select, pop, invtype = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.invtype;
+		select(finalized, searchResults, o, "select", "itemID", 187187);	-- Korthian Armaments
+		pop(finalized, searchResults);	-- Discard the Item Header and acquire all of their children.
+		pop(finalized, searchResults);	-- Discard the Headers and acquire all of their children.
+		invtype(finalized, searchResults, o, "invtype", inv);	-- Only slot-specific
+	end,
+	["bfa_azerite_armor_chest_dungeons"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
+		-- Dungeons
+		select(finalized, searchResults, o, "select", "instanceID",
+			968,	-- Atal'Dazar
+			1001,	-- Freehold
+			1041,	-- King's Rest
+			1178,	-- Operation: Mechagon ??
+			1036,	-- Shrine of the Storm
+			1023,	-- Siege of Boralus
+			1030,	-- Temple of Sethraliss
+			1012,	-- The MOTHERLODE!!
+			1022,	-- The Underrot
+			1002,	-- Tol Dagor
+			1021	-- Waycrest Manor
+		);
+
+		-- Process the Dungeons, Normal Mode Only Loot for the azerite pieces.
+		pop(finalized, searchResults);	-- Discard the Instance Headers and acquire all of their children.
+		where(finalized, searchResults, o, "where", "difficultyID", 1);	-- Select only the Normal Difficulty Headers.
+		pop(finalized, searchResults);	-- Discard the Difficulty Headers and acquire all of their children.
+		pop(finalized, searchResults);	-- Discard the Encounter Headers and acquire all of their children.
+		is(finalized, searchResults, o, "is", "itemID");	-- Only Items!
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");	-- Only Head, Shoulders, and Chest items. (azerite)
+		modID(finalized, searchResults, 1);	-- Normal
+	end,
+	["bfa_azerite_armor_chest_warfront"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
+		select(finalized, searchResults, o, "select", "headerID", -10057);	-- War Effort
+		pop(finalized, searchResults);	-- Discard the War Effort Header and acquire the children.
+		where(finalized, searchResults, o, "where", "mapID", 14);	-- Arathi Highlands
+		pop(finalized, searchResults);	-- Discard the Map Header and acquire the children.
+		where(finalized, searchResults, o, "where", "headerID", -1);	-- Select the Common Boss Drop Header.
+		pop(finalized, searchResults);	-- Discard the Common Boss Drop Header and acquire the children.
+		is(finalized, searchResults, o, "is", "itemID");	-- Only Items!
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");	-- Only Head, Shoulders, and Chest items. (azerite)
+		modID(finalized, searchResults, 5);	-- iLvl 340
+	end,
+	["bfa_azerite_armor_chest_zonedrops"] = function(finalized, searchResults, o)
+		local select, pop, where, is, invtype, myModID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.myModID;
+		-- World Quest Rewards
+		select(finalized, searchResults, o, "select", "mapID",
+			896,	-- Drustvar
+			942,	-- Stormsong Valley
+			895,	-- Tiragarde Sound
+			863,	-- Nazmir
+			864,	-- Vol'dun
+			862	-- Zuldazar
+		);
+
+		-- Process the World Quest Rewards
+		pop(finalized, searchResults);	-- Discard the Map Headers and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", -903);	-- Select only the Zone Rewards Headers
+		pop(finalized, searchResults);	-- Discard the Zone Rewards Headers and acquire all of their children.
+
+		-- Process the headers for the Azerite Armor pieces.
+		is(finalized, searchResults, o, "is", "itemID");	-- Only Items!
+		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");	-- Only Head, Shoulders, and Chest items. (azerite)
+		myModID(finalized, searchResults, o);	-- Apply matching ModID as source
+
+	end,
+	["bfa_azerite_armor_chest"] = function(finalized, searchResults, o)
+		local sub = ResolveFunctions.sub;
+		local modID = o.modID;
+		-- Conditional checks to see which subroutine applies to this chest
+		if modID == 1 or modID == 2 then
+			sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_dungeons");
+			return;
+		end
+		if modID == 5 then
+			sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_warfront");
+			return;
+		end
+		sub(finalized, searchResults, o, "sub", "bfa_azerite_armor_chest_zonedrops");
+	end,
+	["legion_relinquished_base"] = function(finalized, searchResults, o)
+		local select, pop, where, is, finalize, merge, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.finalize, ResolveFunctions.merge, ResolveFunctions.extract;
+		-- Legion Legendaries
+		--[[
+		{"select", "npcID", 106655},	-- Arcanomancer Vridiel
+		{"pop"},	-- Remove Arcanomancer Vridiel and push his children into the processing queue.
+		{ "exclude", "itemID", 154879, 157796 },	-- Exclude the Purified Titan Essence and the Awoken Titan Essence
+		{"pop"},	-- Remove the Legendary Tokens and push the children into the processing queue.
+		{"finalize"},	-- Push the items to the finalized list.
+		]]--
+
+		-- PVP Gear
+		--[[
+		-- Demonic Combatant & Gladiator Season 7 Gear
+		{"select", "headerID", -688},	-- Demonic Gladiator Season 7
+		{"pop"},	-- Remove Season Header and push the children into the processing queue.
+		{"pop"},	-- Remove Faction Header and push the children into the processing queue.
+		{"contains", "headerID", -660, -661},	-- Select only the Aspirant / Combatant Gear & Gladiator Headers.
+		{"pop"},	-- Remove Aspirant / Combatant Gear Header and push the children into the processing queue.
+		{"pop"},	-- Remove Class / Armor Header and push the children into the processing queue.
+		{"finalize"},	-- Push the items to the finalized list.
+		]]--
+
+		-- Unsullied Gear
+		select(finalized, searchResults, o, "select", "itemID",
+			152740,	-- Unsullied Cloak
+			152738,	-- Unsullied Cloth Cap
+			152734,	-- Unsullied Cloth Mantle
+			153135,	-- Unsullied Cloth Robes
+			152742,	-- Unsullied Cloth Cuffs
+			153141,	-- Unsullied Cloth Mitts
+			153156,	-- Unsullied Cloth Sash
+			153154,	-- Unsullied Cloth Leggings
+			153144,	-- Unsullied Cloth Slippers
+			153139,	-- Unsullied Leather Headgear
+			153145,	-- Unsullied Leather Spaulders
+			153151,	-- Unsullied Leather Tunic
+			153142,	-- Unsullied Leather Armbands
+			152739,	-- Unsullied Leather Grips
+			153148,	-- Unsullied Leather Belt
+			152737,	-- Unsullied Leather Trousers
+			153136,	-- Unsullied Leather Treads
+			153147,	-- Unsullied Mail Coif
+			153137,	-- Unsullied Mail Spaulders
+			152741,	-- Unsullied Mail Chestguard
+			153158,	-- Unsullied Mail Bracers
+			153149,	-- Unsullied Mail Gloves
+			152744,	-- Unsullied Mail Girdle
+			153138,	-- Unsullied Mail Legguards
+			153152,	-- Unsullied Mail Boots
+			153155,	-- Unsullied Plate Helmet
+			153153,	-- Unsullied Plate Pauldrons
+			153143,	-- Unsullied Plate Breasplate
+			153150,	-- Unsullied Plate Vambraces
+			153157,	-- Unsullied Plate Gauntlets
+			153140,	-- Unsullied Plate Waistplate
+			153146,	-- Unsullied Plate Greaves
+			152743,	-- Unsullied Plate Sabatons
+			152736,	-- Unsullied Necklace
+			152735,	-- Unsullied Ring
+			152733,	-- Unsullied Trinket
+			152799	-- Unsullied Relic
+		);
+		pop(finalized, searchResults);	-- Remove the Unsullied Tokens and push the children into the processing queue.
+		finalize(finalized, searchResults);	-- Push the Unsullied items to the finalized list.
+
+		-- World Bosses
+		select(finalized, searchResults, o, "select", "encounterID",
+			1790,	-- Ana-Mouz
+			1956,	-- Apocron
+			1883,	-- Brutallus
+			1774,	-- Calamir
+			1789,	-- Drugon the Frostblood
+			1795,	-- Flotsam
+			1770,	-- Humongris
+			1769,	-- Levantus
+			1884,	-- Malificus
+			1783,	-- Na'zak the Fiend
+			1749,	-- Nithogg
+			1763,	-- Shar'thos
+			1885,	-- Si'vash
+			1756,	-- The Soultakers
+			1796	-- Withered J'im
+		);
+		finalize(finalized, searchResults);	-- Push the unprocessed Bosses to the finalized list.
+
+		-- Raids
+		select(finalized, searchResults, o, "select", "instanceID",
+			768,	-- Emerald Nightmare
+			861,	-- Trial of Valor
+			786,	-- The Nighthold
+			875		-- Tomb of Sargeras
+		);
+
+		-- Process the Raids, Normal Mode Only Loot for bosses
+		pop(finalized, searchResults);	-- Discard the Instance Headers and acquire all of their children.
+		where(finalized, searchResults, o, "where", "difficultyID", 14);	-- Select only the Normal Difficulty Headers.
+		pop(finalized, searchResults);	-- Discard the Difficulty Headers and acquire all of their children.
+		is(finalized, searchResults, o, "is", "encounterID");	-- Only use the encounters themselves, no zone drops.
+		finalize(finalized, searchResults);	-- Push the unprocessed Bosses to the finalized list.
+
+		-- Dungeons
+		select(finalized, searchResults, o, "select", "instanceID",
+			777,	-- Assault on Violet Hold
+			740,	-- Blackrook Hold
+			900,	-- Cathedral of Eternal Night
+			800,	-- Court of Stars
+			762,	-- Darkheart Thicket
+			716,	-- Eye of Azshara
+			721,	-- Halls of Valor
+			727,	-- Maw of Souls
+			767,	-- Neltharion's Lair
+			860,	-- Return to Karazhan
+			945,	-- Seat of the Triumvirate
+			749,	-- The Arcway
+			707		-- Vault of the Wardens
+		);
+
+		-- Process the Dungeons, Mythic Mode Only Loot for bosses
+		pop(finalized, searchResults);	-- Discard the Instance Headers and acquire all of their children.
+		where(finalized, searchResults, o, "where", "difficultyID", 23);	-- Select only the Mythic Difficulty Headers.
+		pop(finalized, searchResults);	-- Discard the Difficulty Headers and acquire all of their children.
+		finalize(finalized, searchResults);	-- Push the unprocessed Bosses to the finalized list.
+
+		-- World Quest Rewards
+		select(finalized, searchResults, o, "select", "mapID",
+			905,	-- Argus
+			630,	-- Azsuna
+			646,	-- Broken Shore
+			650,	-- Highmountain
+			634,	-- Stormheim
+			680,	-- Suramar
+			641		-- Val'sharah
+		);
+
+		-- Process the World Quest Rewards
+		pop(finalized, searchResults);	-- Discard the Map Headers and acquire all of their children.
+		where(finalized, searchResults, o, "where", "headerID", -34);	-- Select only the World Quest Headers
+		pop(finalized, searchResults);	-- Discard the World Quest Headers and acquire all of their children.
+		is(finalized, searchResults, o, "is", "headerID");	-- Only use the item sets themselves, no zone drops.
+		finalize(finalized, searchResults);	-- Push the unprocessed Headers to the finalized list.
+
+		merge(finalized, searchResults);	-- Merge the finalized Groups back into the processing queue.
+		extract(finalized, searchResults, o, "extract", "itemID");	-- Extract all Items
+	end,
+	["legion_relinquished"] = function(finalized, searchResults, o, cmd, invtypes, ...)
+		local sub, merge, invtype, contains, modID = ResolveFunctions.sub, ResolveFunctions.merge, ResolveFunctions.invtype, ResolveFunctions.contains, ResolveFunctions.modID;
+		sub(finalized, searchResults, o, "sub", "legion_relinquished_base");	-- collect the base set of possible relinquished items
+		merge(finalized, searchResults);	-- merge them back to be processed
+		invtype(finalized, searchResults, o, "invtype", unpack(invtypes));	-- invtypes is a table of inventory slot strings to filter
+		if select("#", ...) > 0 then
+			contains(finalized, searchResults, o, "contains", "f", ...);	-- extra params are a set of allowed filterID (f) values
+		end
+		modID(finalized, searchResults, o, "modID", 43);	-- apply the relinquished modID
+	end,
+	["legion_relinquished_relic"] = function(finalized, searchResults, o, cmd, ...)
+		local sub, merge, relictype, modID = ResolveFunctions.sub, ResolveFunctions.merge, ResolveFunctions.relictype, ResolveFunctions.modID;
+		sub(finalized, searchResults, o, "sub", "legion_relinquished_base");	-- collect the base set of possible relinquished items
+		merge(finalized, searchResults);	-- merge them back to be processed
+		if select("#", ...) > 0 then
+			relictype(finalized, searchResults, o, "relictype", ...);	-- only specific relic type(s)
+		end
+		modID(finalized, searchResults, o, "modID", 43);	-- apply the relinquished modID
+	end,
+};
+-- Instruction to perform a specific subroutine using provided input values
+ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
+	local subroutine = SubroutineCache[sub];
+	-- new logic: no metatable cloning, no table creation for sub-commands
+	if subroutine then
+		-- app.PrintDebug("sub",o.hash,sub,...)
+		subroutine(finalized, searchResults, o, cmd, ...);
+		-- each subroutine result is finalized after being processed
+		ResolveFunctions.finalize(finalized, searchResults);
+		return;
+	end
+	print("Could not find subroutine", sub);
+end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	if o.resolved or (o.key and app.ThingKeys[o.key] and ResolveCache[o.hash]) then
-		-- app.PrintDebug("Cache Resolve:",o.hash,#(o.resolved or ResolveCache[o.hash]))
+		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",o.hash,#(o.resolved or ResolveCache[o.hash]))
 		local cloned = {};
 		MergeObjects(cloned, o.resolved or ResolveCache[o.hash], true);
 		return cloned;
 	end
 	if o and o.sym then
+		FinalizeModID = nil;
 		-- app.PrintDebug("Fresh Resolve:",o.hash)
-		local searchResults, finalized, ipairs, tremove = {}, {}, ipairs, tremove;
-		local newModID, cmd, cmdFunc;
-		for j,sym in ipairs(o.sym) do
+		local searchResults, finalized = {}, {};
+		local cmd, cmdFunc;
+		for _,sym in ipairs(o.sym) do
 			cmd = sym[1];
 			cmdFunc = ResolveFunctions[cmd];
-			-- app.PrintDebug("sym: '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
+			-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
 			if cmdFunc then
-				-- app.PrintDebug("sym:",cmd,"via ResolveFunction")
-				cmdFunc(searchResults, o, unpack(sym));
-			elseif cmd == "not" then
-				-- Instruction to include only search results where a key value is not a value
-				if #sym > 3 then
-					local dict = {};
-					for k=2,#sym,2 do
-						dict[sym[k]] = sym[k + 1];
-					end
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						local matched = true;
-						for key,value in pairs(dict) do
-							if not s[key] or s[key] ~= value then
-								matched = false;
-								break;
-							end
-						end
-						if matched then
-							tremove(searchResults, k);
-						end
-					end
-				else
-					local key, value = sym[2], sym[3];
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and s[key] == value then
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "is" then
-				-- Instruction to include only search results where a key exists
-				local key = sym[2];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if not s[key] then tremove(searchResults, k); end
-				end
-			elseif cmd == "isnt" then
-				-- Instruction to include only search results where a key doesn't exist
-				local key = sym[2];
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s[key] then tremove(searchResults, k); end
-				end
-			elseif cmd == "contains" then
-				-- Instruction to include only search results where a key value/table contains a value.
-				local key = sym[2];
-				local clone = {unpack(sym)};
-				tremove(clone, 1);
-				tremove(clone, 1);
-				if #clone > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						-- key doesn't exist at all on the result
-						if not s[key] then
-							tremove(searchResults, k);
-						-- key exists with multiple values on the result
-						elseif type(s[key]) == "table" then
-							-- none of the values match the contains values
-							if not containsAny(clone, s[key]) then
-								tremove(searchResults, k);
-							end
-						-- key exists with single value on the result
-						elseif not contains(clone, s[key]) then
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "exclude" then
-				-- Instruction to exclude search results where a key value contains a value.
-				local key = sym[2];
-				local clone = {unpack(sym)};
-				tremove(clone, 1);
-				tremove(clone, 1);
-				if #clone > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and contains(clone, s[key]) then
-							-- TEMP logic to allow Ensembles to continue working until they get fixed again...
-							if key == "itemID" and s.g and s[key] == o[key] then
-								ArrayAppend(searchResults, s.g);
-							end
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "isrelic" then
-				-- Instruction to include only search results where an item is a relic.
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.itemID and IsArtifactRelicItem(s.itemID) then
-						-- We're good.
-					else
-						tremove(searchResults, k);
-					end
-				end
-			elseif cmd == "finalize" then
-				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
-				ArrayAppend(finalized, searchResults);
-				wipe(searchResults);
-			elseif cmd == "merge" then
-				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
-				ArrayAppend(finalized, searchResults);
-				searchResults = finalized;
-				finalized = {};
-			elseif cmd == "postprocess" then
-				-- Instruction to take all of the current search results and ensure that there are no duplicated primary keys.
-				local uniques = {};
-				MergeObjects(uniques, searchResults);
-				searchResults = uniques;
-			elseif cmd == "invtype" then
-				-- Instruction to include only search results where an item is of a specific inventory type.
-				local types = {unpack(sym)};
-				tremove(types, 1);
-				if #types > 0 then
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "relictype" then
-				-- Instruction to include only search results where an item is of a specific relic type.
-				local types = {unpack(sym)};
-				tremove(types, 1);
-				if #types > 0 then
-					--[[
-					RELIC_SLOT_TYPE_ARCANE = "Arcane";
-					RELIC_SLOT_TYPE_BLOOD = "Blood";
-					RELIC_SLOT_TYPE_FEL = "Fel";
-					RELIC_SLOT_TYPE_FIRE = "Fire";
-					RELIC_SLOT_TYPE_FROST = "Frost";
-					RELIC_SLOT_TYPE_HOLY = "Holy";
-					RELIC_SLOT_TYPE_IRON = "Iron";
-					RELIC_SLOT_TYPE_LIFE = "Life";
-					RELIC_SLOT_TYPE_SHADOW = "Shadow";
-					RELIC_SLOT_TYPE_WATER = "Water";
-					RELIC_SLOT_TYPE_WIND = "Storm";
-					]]--
-					for i=#types,1,-1 do
-						types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
-					end
-					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID and IsArtifactRelicItem(s.itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(s.itemID))) then
-							-- We're good.
-						else
-							tremove(searchResults, k);
-						end
-					end
-				end
-			elseif cmd == "modID" then
-				newModID = sym[2];
-			elseif cmd == "myModID" then
-				newModID = o.modID;
-			elseif cmd == "sub" then
-				local subroutine = subroutines[sym[2]];
-				if subroutine then
-					local args = {unpack(sym)};
-					tremove(args, 1);
-					tremove(args, 1);
-					local commands = subroutine(unpack(args));
-					if commands then
-						-- app.PrintDebug("ResolveSymbolicLink:sub",sym[2],sym[3],sym[4])
-						local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-						-- app.PrintDebug("Added:",#resolved)
-						ArrayAppend(searchResults, resolved);
-					end
-				else
-					print("Could not find subroutine", sym[2]);
-				end
-			elseif cmd == "subif" then
-				-- Instruction to perform a set of commands if a conditional is returned true.
-				local subroutine = subroutines[sym[2]];
-				if subroutine then
-					-- If the subroutine's conditional was successful.
-					local conditionFunction = sym[3];
-					if conditionFunction and conditionFunction(o) then
-						local args = {unpack(sym)};
-						tremove(args, 1);
-						tremove(args, 1);
-						tremove(args, 1);
-						local commands = subroutine(unpack(args));
-						if commands then
-							-- app.PrintDebug("ResolveSymbolicLink:subif",sym[2],sym[3],sym[4])
-							local resolved = ResolveSymbolicLink(setmetatable({sym=commands,key=false}, {__index=o}));
-							-- app.PrintDebug("Added:",#resolved)
-							ArrayAppend(searchResults, resolved);
-						end
-					end
-				else
-					print("Could not find subroutine", sym[2]);
-				end
-			elseif cmd == "achievement_criteria" then
-				-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
-				if GetAchievementNumCriteria then
-					local achievementID = o.achievementID;
-					local cache;
-					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
-						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
-						if criteriaType == 27 then
-							cache = app.SearchForField("questID", assetID);
-						elseif criteriaType == 110 or criteriaType == 43 then
-							-- Ignored
-						else
-							print("Unhandled Criteria Type", criteriaType, assetID);
-						end
-						local criteriaObject = app.CreateAchievementCriteria(id);
-						if cache then
-							local uniques = {};
-							MergeObjects(uniques, cache);
-							for i,o in ipairs(uniques) do
-								rawset(o, "text", nil);
-								for key,value in pairs(o) do
-									criteriaObject[key] = value;
-								end
-								rawset(o, "text", criteriaObject.text);
-							end
-						end
-						criteriaObject.achievementID = achievementID;
-						criteriaObject.parent = o;
-						tinsert(searchResults, criteriaObject);
-					end
-				end
-			elseif cmd == "meta_achievement" then
-				-- Instruction to search the full database for multiple achievementID's
-				local cache;
-				for i=2,#sym do
-					cache = app.CleanSourceIgnoredGroups(app.SearchForField("achievementID", sym[i]));
-					if cache then
-						ArrayAppend(searchResults, cache);
-					else
-						print("Failed to select achievementID",sym[i]);
-					end
-				end
-				-- Remove any Criteria groups associated with those achievements
-				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s.criteriaID then tremove(searchResults, k); end
-				end
+				cmdFunc(finalized, searchResults, o, unpack(sym));
+			else
+				print("Unknown symlink command",cmd);
 			end
-			-- if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
+			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
 			for _,s in ipairs(searchResults) do
-				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
-				if s == o or (s.hash and s.hash == o.hash) then
-					print("Symlink group pulled itself into final group!",o.key,o.key and o[o.key])
-				else
-					tinsert(finalized, s);
-				end
+				tinsert(finalized, s);
 			end
 		end
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
-		-- If we had any finalized search results, then clone all the records and return it.
+		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
-			if o.key and app.ThingKeys[o.key] then
-				-- global resolve cache if it's a 'Thing'
-				ResolveCache[o.hash] = finalized;
-			elseif o.key ~= false then
-				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
-				o.resolved = finalized;
-			end
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
-			for _,s in ipairs(cloned) do
-				if newModID and s.itemID then
-					s.modID = newModID;
+			-- Apply any modID if necessary
+			if FinalizeModID then
+				-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
+				for _,s in ipairs(cloned) do
+					if s.itemID then
+						s.modID = FinalizeModID;
+					end
+					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+					s.sourceParent = nil;
+					s.parent = nil;
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					if s.hash and s.hash == o.hash then
+						print("Symlink group pulled itself into finalized results!",o.hash)
+					else
+						FillSymLinks(s);
+					end
 				end
-				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-				s.sourceParent = nil;
-				s.parent = nil;
-				FillSymLinks(s);
+			else
+				for _,s in ipairs(cloned) do
+					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+					s.sourceParent = nil;
+					s.parent = nil;
+					-- if somehow the symlink pulls in the same item as used as the source of the symlink, then skip putting it in the final group
+					if s.hash and s.hash == o.hash then
+						print("Symlink group pulled itself into finalized results!",o.hash)
+					else
+						FillSymLinks(s);
+					end
+				end
+			end
+			if o.key and app.ThingKeys[o.key] then
+				-- global resolve cache if it's a 'Thing'
+				-- app.PrintDebug("Thing Results",o.hash)
+				ResolveCache[o.hash] = cloned;
+			elseif o.key ~= false then
+				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
+				o.resolved = cloned;
+				-- app.PrintDebug("Object Results",o.hash)
 			end
 			return cloned;
 		else
@@ -3928,6 +3981,7 @@ app.FillSymlinkAsync = function(o)
 	app.FunctionRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end)();
+
 local function BuildContainsInfo(item, entries, indent, layer)
 	if item and item.g then
 		for i,group in ipairs(item.g) do
@@ -4491,6 +4545,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
+		local clearSourceParent = #group > 1;
 		for _,o in ipairs(group) do
 			tinsert(cloned, CreateObject(o));
 		end
@@ -4636,9 +4691,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Replace as the group
 		group = root;
-		-- Ensure no weird parent references attached to the base search result
-		group.sourceParent = nil;
+		-- Ensure no weird parent references attached to the base search result if there were multiple search results
 		group.parent = nil;
+		if clearSourceParent then
+			group.sourceParent = nil;
+		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
 		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
@@ -5130,7 +5187,7 @@ app.FillGroups = function(group)
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
 	-- Check if this group is inside a Window or not
-	isInWindow = app.RecursiveFirstParentWithField(group, "window") and true;
+	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 	app.FunctionRunner.SetPerFrame(1);
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
@@ -14339,6 +14396,12 @@ app.RecursiveFirstParentWithField = function(group, field, followSource)
 		return group[field] or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
+-- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
+app.RecursiveFirstDirectParentWithField = function(group, field)
+	if group then
+		return group[field] or app.RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
+	end
+end
 -- Returns the first found recursive Parent of the group which meets the provided field and value combination
 app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 	if group and field then
@@ -14613,7 +14676,7 @@ local function DirectGroupUpdate(group, got)
 		AdjustParentProgress(group, progChange, totalChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
-	local window = app.RecursiveFirstParentWithField(group, "window");
+	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);

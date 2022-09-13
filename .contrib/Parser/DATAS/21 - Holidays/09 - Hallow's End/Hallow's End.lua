@@ -4226,7 +4226,6 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
-					{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 				-- #endif
 				["groups"] = {
@@ -4264,7 +4263,6 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
 					-- #endif
-					{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 			}),
 			i(20393, {	-- Treat Bag

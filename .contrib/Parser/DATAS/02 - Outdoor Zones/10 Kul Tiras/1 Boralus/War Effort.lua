@@ -733,7 +733,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 									{"pop"},	-- Discard the Map Header and acquire the children.
 									{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 									{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 									{"modID", 6},	-- iLvl 370
 								},
 							}),
@@ -755,7 +754,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							{"pop"},	-- Discard the Map Header and acquire the children.
 							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 							{"modID", 5},	-- iLvl 340
 						},
 					}),
