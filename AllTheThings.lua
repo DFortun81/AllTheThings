@@ -4545,7 +4545,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Clone all the groups so that things don't get modified in the Source
 		local cloned = {};
-		local clearParent = #group > 1;
+		local clearSourceParent = #group > 1;
 		for _,o in ipairs(group) do
 			tinsert(cloned, CreateObject(o));
 		end
@@ -4692,9 +4692,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Replace as the group
 		group = root;
 		-- Ensure no weird parent references attached to the base search result if there were multiple search results
-		if clearParent then
+		group.parent = nil;
+		if clearSourceParent then
 			group.sourceParent = nil;
-			group.parent = nil;
 		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
@@ -5187,7 +5187,7 @@ app.FillGroups = function(group)
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
 	-- Check if this group is inside a Window or not
-	isInWindow = app.RecursiveFirstParentWithField(group, "window") and true;
+	isInWindow = app.RecursiveFirstDirectParentWithField(group, "window") and true;
 	app.FunctionRunner.SetPerFrame(1);
 
 	-- app.PrintDebug("FillGroups",group.hash,group.__type,"window?",isInWindow)
@@ -14396,6 +14396,12 @@ app.RecursiveFirstParentWithField = function(group, field, followSource)
 		return group[field] or app.RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
 	end
 end
+-- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
+app.RecursiveFirstDirectParentWithField = function(group, field)
+	if group then
+		return group[field] or app.RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
+	end
+end
 -- Returns the first found recursive Parent of the group which meets the provided field and value combination
 app.RecursiveFirstParentWithFieldValue = function(group, field, value)
 	if group and field then
@@ -14670,7 +14676,7 @@ local function DirectGroupUpdate(group, got)
 		AdjustParentProgress(group, progChange, totalChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
-	local window = app.RecursiveFirstParentWithField(group, "window");
+	local window = app.RecursiveFirstDirectParentWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Callback Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, 0.5, window, window.isQuestChain, got);
