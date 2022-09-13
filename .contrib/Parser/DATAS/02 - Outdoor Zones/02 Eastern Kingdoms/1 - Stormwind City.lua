@@ -4627,7 +4627,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
@@ -4800,7 +4800,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 				}),
@@ -5276,7 +5276,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
@@ -5414,7 +5414,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },	-- Vicious Gladiator: Season 9 Gladiator Gear
+						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.

@@ -787,6 +787,7 @@ root("PVP", applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown(
 					["timeline"] = { "added 7.2.0.23436" },
 					["sym"] = {
 						{"sub", "pvp_set_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
+						{"merge"},	-- Merge all sub results for processing
 						{"exclude", "itemID", 24553 },	-- General's Dreadweave Hood
 						{"exclude", "itemID", 24554 },	-- General's Dreadweave Mantle
 						-- Crieve NOTE: This list did not originally have the Dreadweave Hood/Mantle. Not sure if that was a bug or intentional.

@@ -334,9 +334,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["timeline"] = { "added 9.1.5" },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_FINGER" },
-							{"finalize"},	-- Push the unprocessed Items to the finalized list.
 							{"sub", "korthian_armaments", "INVTYPE_TRINKET" },
-							{"finalize"},	-- Push the unprocessed Items to the finalized list.
 						},
 					}),
 					i(188161, {	-- Korthian Belt
@@ -365,9 +363,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 						["timeline"] = { "added 9.1.5" },
 						["sym"] = {
 							{"sub", "korthian_armaments", "INVTYPE_CHEST" },
-							{"finalize"},	-- Push the unprocessed Items to the finalized list.
 							{"sub", "korthian_armaments", "INVTYPE_ROBE" },
-							{"finalize"},	-- Push the unprocessed Items to the finalized list.
 						},
 					}),
 					i(188153, {	-- Korthian Cloak

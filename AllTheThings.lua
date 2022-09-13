@@ -3446,7 +3446,9 @@ local ResolveFunctions = {
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
 				if criteriaType == 27 then
 					cache = app.SearchForField("questID", assetID);
-				elseif criteriaType == 110 then
+				elseif criteriaType == 110	-- Casting spells on specific target
+					or criteriaType == 43	-- Exploration
+				then
 					-- Ignored
 				else
 					print("Unhandled Criteria Type", criteriaType, assetID);

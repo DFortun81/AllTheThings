@@ -270,6 +270,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
+					{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 					{"pop"},	-- Discard the Set header and acquire the children.
 					{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 				},
@@ -422,6 +423,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
+					{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 					{"pop"},	-- Discard the Set header and acquire the children.
 					{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 					{"finalize"},	-- Push the Set items to the finalized list.
@@ -2613,6 +2615,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sym"] = {
 					{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },
+					{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 					{"pop"},	-- Discard the Set header and acquire the children.
 				},
 			}),
@@ -3338,7 +3341,7 @@ root("Zones", m(KALIMDOR, {
 				["coord"] = { 38.8, 70.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["sym"] = {
-					{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },
+					{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
 					{"pop"},	-- Discard the Set header and acquire the children.
 					{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
 				},
