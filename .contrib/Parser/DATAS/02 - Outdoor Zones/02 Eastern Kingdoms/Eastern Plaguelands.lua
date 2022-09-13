@@ -305,7 +305,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["coord"] = { 47.7, 29.4, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38707),	-- Runed Soulblade
-									i(142320),	-- Runed Soulsaber
+									i(142320, {	-- Runed Soulsaber
+										["timeline"] = { "added 7.1.0.22731" },
+									}),
 								},
 							}),
 							q(12848, {	-- The Endless Hunger
@@ -338,7 +340,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["groups"] = {
 									i(38633),	-- Greataxe of the Ebon Blade
 									i(38632),	-- Greatsword of the Ebon Blade
-									i(142321),	-- Saber of the Ebon Blade
+									i(142321, {	-- Saber of the Ebon Blade
+										["timeline"] = { "added 7.1.0.22731" },
+									}),
 								},
 							}),
 							q(12657, {	-- The Might of the Scourge
@@ -424,6 +428,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								i(40775),	-- Winged Steed of the Ebon Blade (MOUNT!)
 								i(136796, {	-- Necrophile Tome: Corpse Exploder
 									["spellID"] = 127344,	-- Corpse Exploder
+									["timeline"] = { "added 7.0.3.22248" },
 								}),
 							},
 						}),
@@ -443,15 +448,27 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								i(38662),	-- Bladed Ebon Amulet
 								i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 								i(38667),	-- Bloodbane's Gauntlets of Command
-								i(174485),	-- Burning Greatsword of the Ebon Blade
-								i(174662),	-- Burning Saber of the Ebon Blade
+								i(174485, {	-- Burning Greatsword of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
+								i(174662, {	-- Burning Saber of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
 								i(34657),	-- Choker of Damnation
 								i(38147),	-- Corrupted Band
-								i(174486),	-- Crimson Greatsword of the Ebon Blade
-								i(174659),	-- Crimson Saber of the Ebon Blade
+								i(174486, {	-- Crimson Greatsword of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
+								i(174659, {	-- Crimson Saber of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
 								i(38669),	-- Engraved Saronite Legplates
-								i(174488),	-- Freezing Greatsword of the Ebon Blade
-								i(174660),	-- Freezing Saber of the Ebon Blade
+								i(174488, {	-- Freezing Greatsword of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
+								i(174660, {	-- Freezing Saber of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
 								i(38633),	-- Greataxe of the Ebon Blade
 								i(38661),	-- Greathelm of the Scourge Champion
 								i(38632),	-- Greatsword of the Ebon Blade
@@ -468,8 +485,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								i(38664),	-- Sky Darkener's Shroud of the Unholy
 								i(38674),	-- Soul Harvester's Charm
 								i(38668),	-- The Plaguebringer's Girdle
-								i(174487),	-- Unholy Greatsword of the Ebon Blade
-								i(174661),	-- Unholy Saber of the Ebon Blade
+								i(174487, {	-- Unholy Greatsword of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
+								i(174661, {	-- Unholy Saber of the Ebon Blade
+									["timeline"] = { "added 8.3.0.33062" },
+								}),
 								i(38671),	-- Valanar's Signet Ring
 							},
 						}),
