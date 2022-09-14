@@ -289,21 +289,10 @@ local contains = function(arr, value)
 		if value2 == value then return true; end
 	end
 end
-local containsAny = function(arr, ...)
-	local value = select(1, ...);
-	if value and type(value) == "table" then
-		for _,v in ipairs(arr) do
-			for _,w in ipairs(value) do
-				if v == w then return true; end
-			end
-		end
-	else
-		local vals = select("#", ...);
-		for i=1,vals do
-			value = select(i, ...);
-			for _,v in ipairs(arr) do
-				if v == value then return true; end
-			end
+local containsAny = function(arr, arr2)
+	for _,v in ipairs(arr) do
+		for _,w in ipairs(arr2) do
+			if v == w then return true; end
 		end
 	end
 end
@@ -3100,6 +3089,17 @@ local select, tremove, unpack =
 	  select, tremove, unpack;
 local FinalizeModID;
 local ArrayAppend = app.ArrayAppend;
+-- Checks if any of the provided arguments can be found within the first array object
+local function ContainsAnyValue(arr, ...)
+	local value;
+	local vals = select("#", ...);
+	for i=1,vals do
+		value = select(i, ...);
+		for _,v in ipairs(arr) do
+			if v == value then return true; end
+		end
+	end
+end
 local function Resolve_Extract(results, group, field)
 	if group[field] then
 		tinsert(results, group);
@@ -3296,7 +3296,7 @@ local ResolveFunctions = {
 				tremove(searchResults, k);
 			-- none of the values match the contains values
 			elseif type(kval) == "table" then
-				if not containsAny(kval, ...) then
+				if not ContainsAnyValue(kval, ...) then
 					tremove(searchResults, k);
 				end
 			-- key exists with single value on the result
