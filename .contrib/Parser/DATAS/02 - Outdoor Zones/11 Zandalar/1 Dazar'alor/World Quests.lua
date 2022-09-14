@@ -38,7 +38,6 @@ root("Zones", m(ZANDALAR, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 			}),
 			q(49413, {	-- Scamps With Scrolls
 				["lvl"] = 120,
-				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 			}),
 			q(50737, {	-- Silence the Speakers (Faction Assault WQ)

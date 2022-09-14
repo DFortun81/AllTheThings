@@ -926,6 +926,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["repeatable"] = true,
 					}),
 					q(10918, {	-- More Feathers
@@ -989,6 +990,7 @@ root("Zones", {
 						["sourceQuest"] = 10017,	-- Strained Supplies
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 						["repeatable"] = true,
 					}),
@@ -1093,6 +1095,7 @@ root("Zones", {
 						["qg"] = 18597,	-- Sha'nir
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
@@ -1225,7 +1228,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
-						["repeatable"] = true,
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 					}),
 					q(11369, {	-- WANTED: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
@@ -1270,7 +1273,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/5 Arcatraz Sentinel slain 
+							objective(1, {	-- 0/5 Arcatraz Sentinel slain
 								["provider"] = { "n", 20869 },	-- Arcatraz Sentinel
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1295,7 +1298,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/14 Coilfang Myrmidon slain 
+							objective(1, {	-- 0/14 Coilfang Myrmidon slain
 								["provider"] = { "n", 17800 },	-- Coilfang Myrmidon
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1320,7 +1323,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/3 Malicious Instructor slain 
+							objective(1, {	-- 0/3 Malicious Instructor slain
 								["provider"] = { "n", 18848 },	-- Malicious Instructor
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1369,7 +1372,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Rift Lord slain 
+							objective(1, {	-- 0/4 Rift Lord slain
 								["provider"] = { "n", 17839 },	-- Rift Lord
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1394,7 +1397,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Shattered Hand Centurion slain 
+							objective(1, {	-- 0/4 Shattered Hand Centurion slain
 								["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1407,7 +1410,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Sister of Torment slain 
+							objective(1, {	-- 0/4 Sister of Torment slain
 								["provider"] = { "n", 24697 },	-- Sister of Torment
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1433,7 +1436,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/5 Tempest-Forge Destroyer slain 
+							objective(1, {	-- 0/5 Tempest-Forge Destroyer slain
 								["provider"] = { "n", 19735 },	-- Tempest-Forge Destroyer
 							}),
 							i(29460),	-- Ethereum Prison Key

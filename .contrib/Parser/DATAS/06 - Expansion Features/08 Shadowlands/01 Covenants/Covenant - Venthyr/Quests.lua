@@ -325,7 +325,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(61050, {	-- How to Wear Seven Medallions
 				["sourceQuests"] = {
 					58444,	-- Return to Sinfall
-					63655,	-- Medallion of Wrath
 				},
 				["description"] = "Requires Renown 13.",
 				["provider"] = { "n", 158653 },	-- Prince Renathal

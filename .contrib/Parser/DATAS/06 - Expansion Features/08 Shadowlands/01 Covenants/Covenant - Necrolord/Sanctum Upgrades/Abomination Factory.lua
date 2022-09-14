@@ -1235,7 +1235,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 									}),
 									q(58379, {	-- Construct Part: Indomitable Hide
-										["sourceQuests"] = { 61638 },	-- Iron Solution
+										["sourceQuests"] = { 60048 },	-- Stitching Time
 										["provider"] = { "i", 174070 },	-- Indomitable Hide
 										["repeatable"] = true,
 										["g"] = {
@@ -1243,7 +1243,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 										},
 									}),
 									q(58376, {	-- Construct Part: Necromantic Oil
-										["sourceQuests"] = { 61638 },	-- Iron Solution
+										["sourceQuests"] = { 60048 },	-- Stitching Time
 										["provider"] = { "i", 174076 },	-- Necromantic Oil
 										["repeatable"] = true,
 										["g"] = {

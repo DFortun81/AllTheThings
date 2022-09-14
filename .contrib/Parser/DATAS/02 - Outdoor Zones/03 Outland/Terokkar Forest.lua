@@ -763,7 +763,7 @@ root("Zones", {
 						["qg"] = 18715,	-- Private Weeks
 						["coord"] = { 40.4, 36.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 10023,	-- Patriarch Ironjaw
+						["sourceQuest"] = 10040,	-- Who Are They? (A)
 						["groups"] = {
 							i(25933),	-- Extra Sharp Blade
 							i(25935),	-- Invincible Stave

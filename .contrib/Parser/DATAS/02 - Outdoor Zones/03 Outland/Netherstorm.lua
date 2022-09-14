@@ -287,6 +287,7 @@ root("Zones", {
 						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["minReputation"] = { 933, HONORED },
+						["sourceQuest"] = 10969,	-- Seek Out Ameer
 					}),
 					q(10973, {	-- A Thousand Worlds
 						["qg"] = 20448,	-- Commander Ameer

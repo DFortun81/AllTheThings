@@ -982,7 +982,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					142188,	-- Allison Weber
 					126600,	-- Arthur Seville
 					123639,	-- Harold Atkey
-					137411,	-- Joseph Stephens
 					141853,	-- Rebecca Barnes
 					138905,	-- Rusty Blade Waitress
 					136459,	-- Terry Rigglesmith
@@ -992,7 +991,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					{ 74.25, 17.76, BORALUS },	-- Allison Weber
 					{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 					{ 75.37, 14.48, BORALUS },	-- Harold Atkey
-					{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 					{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
 					{ 50.82, 33.46, STORMSONG_VALLEY },	-- Rusty Blade Waitress
 					{ 53.31, 28.29, TIRAGARDE_SOUND },	-- Terry Rigglesmith
@@ -1169,7 +1167,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					123639,	-- Harold Atkey
 					135525,	-- Jaela Billman
 					136479,	-- Jill McHoonigan
-					137411,	-- Joseph Stephens
 					136468,	-- Lidia Plank
 					137040,	-- Linda Deepwater
 					137455,	-- Quartermaster Rickard
@@ -1185,7 +1182,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 					{ 75.37, 14.48, BORALUS },	-- Harold Atkey
 					{ 72.61, 68.41, BORALUS },	-- Jaela Billman
 					{ 77.38, 83.97, TIRAGARDE_SOUND },	-- Jill McHoonigan
-					{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 					{ 75.88, 50.64, TIRAGARDE_SOUND },	-- Lidia Plank
 					{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 					{ 31.19, 29.78, DRUSTVAR },	-- Quartermaster Rickard

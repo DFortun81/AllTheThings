@@ -896,7 +896,7 @@ _.Zones =
 					["provider"] = { "n", 52669 },	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29203,	-- Into the Depths
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 				}),
 				q(25352, {	-- Sweeping the Shelf
 					["sourceQuest"] = 25278,	-- Cleaning House
@@ -1211,7 +1211,7 @@ _.Zones =
 					["lvl"] = 85,
 					["isDaily"] = true,
 					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
-					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 				}),
 				q(25325, {	-- Through the Dream
 					["provider"] = { "n", 40139 },	-- Captain Saynna Stormrunner

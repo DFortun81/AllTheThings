@@ -545,8 +545,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189808),	-- Lihuvim's Severing Scalpel
 								i(189802),	-- Loquacious Keeper's Peridot
 								i(188269),	-- Pocket Protoforge
-								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+								ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+								ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -870,8 +870,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1228,8 +1228,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1567,8 +1567,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon

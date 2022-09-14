@@ -1002,7 +1002,10 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		-- #endif
 		prof(INSCRIPTION, {
-			i(45912),	-- Book of Glyph Mastery
+			i(45912, {	-- Book of Glyph Mastery
+				["filterID"] = MISC,
+				-- TODO: symlink or source actual Glyphs which can be learned from this book. Only Source Recipes here if there are no other Sources!
+			}),
 		}),
 		prof(JEWELCRAFTING, {
 			-- TODO: Look more closely into these.
@@ -1034,7 +1037,9 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(41787),	-- Design: Thundering Skyflare Diamond
 		}),
 		prof(TAILORING, {
-			i(43876),	-- A Guide to Northern Cloth Scavenging
+			i(43876, {	-- A Guide to Northern Cloth Scavenging
+				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some point
+			}),
 			-- #if AFTER 8.0.1.10000
 			i(39152),	-- Manual: Heavy Frostweave Bandage
 			-- #endif

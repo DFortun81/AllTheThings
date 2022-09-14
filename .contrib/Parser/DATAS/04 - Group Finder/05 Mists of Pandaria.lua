@@ -107,369 +107,372 @@ _.GroupFinder =
 				"added 5.3.0.16781",
 				"removed 9.0.1",	-- no longer available to queue random scenarios post 9.0 squish
 			},
-			["g"] = {
-				i(92821),	-- Bladesnap Breastplate
-				i(92881),	-- Bladesnap Drape
-				i(92820),	-- Bladesnap Gauntlets
-				i(92819),	-- Bladesnap Girdle
-				i(92818),	-- Bladesnap Helm*					— 5/3/19
-				i(92817),	-- Bladesnap Legplates
-				i(92889),	-- Bladesnap Neck
-				i(92816),	-- Bladesnap Pauldrons
-				i(92815),	-- Bladesnap Sabatons
-				i(92883),	-- Bladesnap Seal
-				i(92814),	-- Bladesnap Vambraces
-				i(93048),	-- Brewcarrier Cloak
-				i(93102),	-- Brewfather Cloak
-				i(93110),	-- Brewfather Wristwraps			— 12/4/19
-				i(89501),	-- Brewmoon Cloak
-				i(89492),	-- Brewmoon Cord
-				i(89493),	-- Brewmoon Cowl
-				i(89494),	-- Brewmoon Handwraps
-				i(89495),	-- Brewmoon Leggings
-				i(89509),	-- Brewmoon Necklace
-				i(89496),	-- Brewmoon Robe
-				i(89497),	-- Brewmoon Sandals
-				i(89498),	-- Brewmoon Shoulderpads
-				i(89507),	-- Brewmoon Signet
-				i(89499),	-- Brewmoon Wristwraps
-				i(92879),	-- Bubblebrew Cloak
-				i(92870),	-- Bubblebrew Cord
-				i(92871),	-- Bubblebrew Cowl
-				i(92872),	-- Bubblebrew Handwraps
-				i(92873),	-- Bubblebrew Leggings
-				i(92887),	-- Bubblebrew Necklace				— 11/15/19
-				i(92874),	-- Bubblebrew Robe
-				i(92875),	-- Bubblebrew Sandals
-				i(92876),	-- Bubblebrew Shoulderpads
-				i(92885),	-- Bubblebrew Signet
-				i(92877),	-- Bubblebrew Wristwraps
-				i(92869),	-- Cordwoven Cord
-				i(92868),	-- Cordwoven Cowl
-				i(92867),	-- Cordwoven Handwraps
-				i(92866),	-- Cordwoven Leggings
-				i(92865),	-- Cordwoven Robe
-				i(92864),	-- Cordwoven Sandals
-				i(92863),	-- Cordwoven Shoulderpads
-				i(92862),	-- Cordwoven Wristwraps
-				i(92837),	-- Earthstriker Belt
-				i(92836),	-- Earthstriker Bracers
-				i(92835),	-- Earthstriker Gauntlets
-				i(92834),	-- Earthstriker Greaves
-				i(92833),	-- Earthstriker Helm
-				i(92832),	-- Earthstriker Legguards
-				i(92831),	-- Earthstriker Spaulders
-				i(92830),	-- Earthstriker Vest
-				i(93067),	-- Firebinder Cloak*				— 5/3/19
-				i(89500),	-- Fireheart Cloak
-				i(89508),	-- Fireheart Collar
-				i(89506),	-- Fireheart Ring
-				i(89491),	-- Firewool Cord
-				i(89490),	-- Firewool Cowl
-				i(89485),	-- Firewool Shoulderpads
-				i(89489),	-- Firewool Handwraps
-				i(89488),	-- Firewool Leggings
-				i(89487),	-- Firewool Robe
-				i(89486),	-- Firewool Sandals
-				i(89484),	-- Firewool Wristwraps
-				i(89475),	-- Forgotten Bindings
-				i(89474),	-- Forgotten Boots
-				i(89473),	-- Forgotten Britches
-				i(89472),	-- Forgotten Gloves
-				i(89471),	-- Forgotten Hood
-				i(89470),	-- Forgotten Jerkin
-				i(89469),	-- Forgotten Shoulders
-				i(89468),	-- Forgotten Waistband
-				i(89443),	-- Greenstone Breastplate
-				i(89503),	-- Greenstone Drape
-				i(89442),	-- Greenstone Gauntlets
-				i(89441),	-- Greenstone Girdle
-				i(89440),	-- Greenstone Helm
-				i(89439),	-- Greenstone Legplates
-				i(89511),	-- Greenstone Neck
-				i(89438),	-- Greenstone Pauldrons
-				i(89437),	-- Greenstone Sabatons
-				i(89505),	-- Greenstone Seal
-				i(89435),	-- Greenstone Vambraces
-				i(89477),	-- Hozen-Crafted Boots
-				i(89476),	-- Hozen-Crafted Bindings
-				i(89479),	-- Hozen-Crafted Gloves
-				i(92853),	-- Hozen-Speed Bindings
-				i(92852),	-- Hozen-Speed Boots
-				i(92851),	-- Hozen-Speed Britches
-				i(92850),	-- Hozen-Speed Gloves
-				i(92849),	-- Hozen-Speed Hood
-				i(92848),	-- Hozen-Speed Jerkin
-				i(92847),	-- Hozen-Speed Shoulders
-				i(92846),	-- Hozen-Speed Waistband
-				i(93085),	-- Hozen-Stitched Bindings*			— 10/25/19
-				i(92854),	-- Jinyu-Polished Bindings
-				i(92855),	-- Jinyu-Polished Boots
-				i(92856),	-- Jinyu-Polished Britches
-				i(92857),	-- Jinyu-Polished Gloves
-				i(92858),	-- Jinyu-Polished Hood
-				i(92859),	-- Jinyu-Polished Jerkin
-				i(92860),	-- Jinyu-Polished Shoulders
-				i(92861),	-- Jinyu-Polished Waistband
-				i(92878),	-- Lavasoul Cloak
-				i(92886),	-- Lavasoul Collar
-				i(92884),	-- Lavasoul Ring
-				i(93052),	-- Mogubreaker Hood*				— 5/16/19
-				i(93140),	-- Scavenged Pandaren Axe
-				i(93142),	-- Scavenged Pandaren Axe
-				i(93130),	-- Scavenged Pandaren Broadaxe
-				i(93135),	-- Scavenged Pandaren Crossbow
-				i(93138),	-- Scavenged Pandaren Dagger
-				i(93127),	-- Scavenged Pandaren Greatsword
-				i(93134),	-- Scavenged Pandaren Gun
-				i(93128),	-- Scavenged Pandaren Hammer
-				i(93139),	-- Scavenged Pandaren Knuckles
-				i(93143),	-- Scavenged Pandaren Knuckles
-				i(93137),	-- Scavenged Pandaren Mace
-				i(93144),	-- Scavenged Pandaren Mace
-				i(93132),	-- Scavenged Pandaren Scepter
-				i(93125),	-- Scavenged Pandaren Spear
-				i(93141),	-- Scavenged Pandaren Spear
-				i(93131),	-- Scavenged Pandaren Spellblade
-				i(93126),	-- Scavenged Pandaren Staff
-				i(93129),	-- Scavenged Pandaren Staff
-				i(93136),	-- Scavenged Pandaren Sword
-				i(93133),	-- Scavenged Pandaren Wand
-				i(89510),	-- Stormbound Choker
-				i(89502),	-- Stormbound Cloak
-				i(89504),	-- Stormbound Ring
-				i(89459),	-- Stormbrew Belt
-				i(89458),	-- Stormbrew Bracers
-				i(89457),	-- Stormbrew Gauntlets
-				i(89456),	-- Stormbrew Greaves
-				i(89455),	-- Stormbrew Helm
-				i(89454),	-- Stormbrew Legguards
-				i(89453),	-- Stormbrew Spaulders
-				i(89452),	-- Stormbrew Vest
-				i(92888),	-- Stormcrier Choker
-				i(92880),	-- Stormcrier Cloak
-				i(92882),	-- Stormcrier Ring
-				i(93060),	-- Stormshaper Helm*				— 10/25/19
-				-- From wowhead comments
-				i(93122),	-- Lightning Rod Vambraces
-				i(93119),	-- Lightning Rod Legplates
-				i(93092),	-- Swashbuckling Belt
-				i(93054),	-- Mogubreaker Shoulders
-				i(93079),	-- Hozen-Stitched Boots
-				i(93080),	-- Hozen-Stitched Gloves
-				i(93071),	-- Yak Wool Cowl
-				i(93103),	-- Brewfather Robe
-				i(93112),	-- Brewfather Signet
-				i(93111),	-- Brewfather Necklace
-			},
+			["sym"] = {{"fill"}},
+			-- ["g"] = {
+				-- i(92821),	-- Bladesnap Breastplate
+				-- i(92881),	-- Bladesnap Drape
+				-- i(92820),	-- Bladesnap Gauntlets
+				-- i(92819),	-- Bladesnap Girdle
+				-- i(92818),	-- Bladesnap Helm*					— 5/3/19
+				-- i(92817),	-- Bladesnap Legplates
+				-- i(92889),	-- Bladesnap Neck
+				-- i(92816),	-- Bladesnap Pauldrons
+				-- i(92815),	-- Bladesnap Sabatons
+				-- i(92883),	-- Bladesnap Seal
+				-- i(92814),	-- Bladesnap Vambraces
+				-- i(93048),	-- Brewcarrier Cloak
+				-- i(93102),	-- Brewfather Cloak
+				-- i(93110),	-- Brewfather Wristwraps			— 12/4/19
+				-- i(89501),	-- Brewmoon Cloak
+				-- i(89492),	-- Brewmoon Cord
+				-- i(89493),	-- Brewmoon Cowl
+				-- i(89494),	-- Brewmoon Handwraps
+				-- i(89495),	-- Brewmoon Leggings
+				-- i(89509),	-- Brewmoon Necklace
+				-- i(89496),	-- Brewmoon Robe
+				-- i(89497),	-- Brewmoon Sandals
+				-- i(89498),	-- Brewmoon Shoulderpads
+				-- i(89507),	-- Brewmoon Signet
+				-- i(89499),	-- Brewmoon Wristwraps
+				-- i(92879),	-- Bubblebrew Cloak
+				-- i(92870),	-- Bubblebrew Cord
+				-- i(92871),	-- Bubblebrew Cowl
+				-- i(92872),	-- Bubblebrew Handwraps
+				-- i(92873),	-- Bubblebrew Leggings
+				-- i(92887),	-- Bubblebrew Necklace				— 11/15/19
+				-- i(92874),	-- Bubblebrew Robe
+				-- i(92875),	-- Bubblebrew Sandals
+				-- i(92876),	-- Bubblebrew Shoulderpads
+				-- i(92885),	-- Bubblebrew Signet
+				-- i(92877),	-- Bubblebrew Wristwraps
+				-- i(92869),	-- Cordwoven Cord
+				-- i(92868),	-- Cordwoven Cowl
+				-- i(92867),	-- Cordwoven Handwraps
+				-- i(92866),	-- Cordwoven Leggings
+				-- i(92865),	-- Cordwoven Robe
+				-- i(92864),	-- Cordwoven Sandals
+				-- i(92863),	-- Cordwoven Shoulderpads
+				-- i(92862),	-- Cordwoven Wristwraps
+				-- i(92837),	-- Earthstriker Belt
+				-- i(92836),	-- Earthstriker Bracers
+				-- i(92835),	-- Earthstriker Gauntlets
+				-- i(92834),	-- Earthstriker Greaves
+				-- i(92833),	-- Earthstriker Helm
+				-- i(92832),	-- Earthstriker Legguards
+				-- i(92831),	-- Earthstriker Spaulders
+				-- i(92830),	-- Earthstriker Vest
+				-- i(93067),	-- Firebinder Cloak*				— 5/3/19
+				-- i(89500),	-- Fireheart Cloak
+				-- i(89508),	-- Fireheart Collar
+				-- i(89506),	-- Fireheart Ring
+				-- i(89491),	-- Firewool Cord
+				-- i(89490),	-- Firewool Cowl
+				-- i(89485),	-- Firewool Shoulderpads
+				-- i(89489),	-- Firewool Handwraps
+				-- i(89488),	-- Firewool Leggings
+				-- i(89487),	-- Firewool Robe
+				-- i(89486),	-- Firewool Sandals
+				-- i(89484),	-- Firewool Wristwraps
+				-- i(89475),	-- Forgotten Bindings
+				-- i(89474),	-- Forgotten Boots
+				-- i(89473),	-- Forgotten Britches
+				-- i(89472),	-- Forgotten Gloves
+				-- i(89471),	-- Forgotten Hood
+				-- i(89470),	-- Forgotten Jerkin
+				-- i(89469),	-- Forgotten Shoulders
+				-- i(89468),	-- Forgotten Waistband
+				-- i(89443),	-- Greenstone Breastplate
+				-- i(89503),	-- Greenstone Drape
+				-- i(89442),	-- Greenstone Gauntlets
+				-- i(89441),	-- Greenstone Girdle
+				-- i(89440),	-- Greenstone Helm
+				-- i(89439),	-- Greenstone Legplates
+				-- i(89511),	-- Greenstone Neck
+				-- i(89438),	-- Greenstone Pauldrons
+				-- i(89437),	-- Greenstone Sabatons
+				-- i(89505),	-- Greenstone Seal
+				-- i(89435),	-- Greenstone Vambraces
+				-- i(89477),	-- Hozen-Crafted Boots
+				-- i(89476),	-- Hozen-Crafted Bindings
+				-- i(89479),	-- Hozen-Crafted Gloves
+				-- i(92853),	-- Hozen-Speed Bindings
+				-- i(92852),	-- Hozen-Speed Boots
+				-- i(92851),	-- Hozen-Speed Britches
+				-- i(92850),	-- Hozen-Speed Gloves
+				-- i(92849),	-- Hozen-Speed Hood
+				-- i(92848),	-- Hozen-Speed Jerkin
+				-- i(92847),	-- Hozen-Speed Shoulders
+				-- i(92846),	-- Hozen-Speed Waistband
+				-- i(93085),	-- Hozen-Stitched Bindings*			— 10/25/19
+				-- i(92854),	-- Jinyu-Polished Bindings
+				-- i(92855),	-- Jinyu-Polished Boots
+				-- i(92856),	-- Jinyu-Polished Britches
+				-- i(92857),	-- Jinyu-Polished Gloves
+				-- i(92858),	-- Jinyu-Polished Hood
+				-- i(92859),	-- Jinyu-Polished Jerkin
+				-- i(92860),	-- Jinyu-Polished Shoulders
+				-- i(92861),	-- Jinyu-Polished Waistband
+				-- i(92878),	-- Lavasoul Cloak
+				-- i(92886),	-- Lavasoul Collar
+				-- i(92884),	-- Lavasoul Ring
+				-- i(93052),	-- Mogubreaker Hood*				— 5/16/19
+				-- i(93140),	-- Scavenged Pandaren Axe
+				-- i(93142),	-- Scavenged Pandaren Axe
+				-- i(93130),	-- Scavenged Pandaren Broadaxe
+				-- i(93135),	-- Scavenged Pandaren Crossbow
+				-- i(93138),	-- Scavenged Pandaren Dagger
+				-- i(93127),	-- Scavenged Pandaren Greatsword
+				-- i(93134),	-- Scavenged Pandaren Gun
+				-- i(93128),	-- Scavenged Pandaren Hammer
+				-- i(93139),	-- Scavenged Pandaren Knuckles
+				-- i(93143),	-- Scavenged Pandaren Knuckles
+				-- i(93137),	-- Scavenged Pandaren Mace
+				-- i(93144),	-- Scavenged Pandaren Mace
+				-- i(93132),	-- Scavenged Pandaren Scepter
+				-- i(93125),	-- Scavenged Pandaren Spear
+				-- i(93141),	-- Scavenged Pandaren Spear
+				-- i(93131),	-- Scavenged Pandaren Spellblade
+				-- i(93126),	-- Scavenged Pandaren Staff
+				-- i(93129),	-- Scavenged Pandaren Staff
+				-- i(93136),	-- Scavenged Pandaren Sword
+				-- i(93133),	-- Scavenged Pandaren Wand
+				-- i(89510),	-- Stormbound Choker
+				-- i(89502),	-- Stormbound Cloak
+				-- i(89504),	-- Stormbound Ring
+				-- i(89459),	-- Stormbrew Belt
+				-- i(89458),	-- Stormbrew Bracers
+				-- i(89457),	-- Stormbrew Gauntlets
+				-- i(89456),	-- Stormbrew Greaves
+				-- i(89455),	-- Stormbrew Helm
+				-- i(89454),	-- Stormbrew Legguards
+				-- i(89453),	-- Stormbrew Spaulders
+				-- i(89452),	-- Stormbrew Vest
+				-- i(92888),	-- Stormcrier Choker
+				-- i(92880),	-- Stormcrier Cloak
+				-- i(92882),	-- Stormcrier Ring
+				-- i(93060),	-- Stormshaper Helm*				— 10/25/19
+				-- -- From wowhead comments
+				-- i(93122),	-- Lightning Rod Vambraces
+				-- i(93119),	-- Lightning Rod Legplates
+				-- i(93092),	-- Swashbuckling Belt
+				-- i(93054),	-- Mogubreaker Shoulders
+				-- i(93079),	-- Hozen-Stitched Boots
+				-- i(93080),	-- Hozen-Stitched Gloves
+				-- i(93071),	-- Yak Wool Cowl
+				-- i(93103),	-- Brewfather Robe
+				-- i(93112),	-- Brewfather Signet
+				-- i(93111),	-- Brewfather Necklace
+			-- },
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
 			["u"] = REMOVED_FROM_GAME,
-			["g"] = {
-				i(92821),	-- Bladesnap Breastplate
-				i(92881),	-- Bladesnap Drape
-				i(92820),	-- Bladesnap Gauntlets
-				i(92819),	-- Bladesnap Girdle
-				i(92818),	-- Bladesnap Helm
-				i(92817),	-- Bladesnap Legplates
-				i(92889),	-- Bladesnap Neck
-				i(92816),	-- Bladesnap Pauldrons
-				i(92815),	-- Bladesnap Sabatons
-				i(92883),	-- Bladesnap Seal
-				i(92814),	-- Bladesnap Vambraces
-				i(89501),	-- Brewmoon Cloak
-				i(89492),	-- Brewmoon Cord
-				i(89493),	-- Brewmoon Cowl
-				i(89494),	-- Brewmoon Handwraps
-				i(89495),	-- Brewmoon Leggings
-				i(89496),	-- Brewmoon Robe
-				i(89497),	-- Brewmoon Sandals
-				i(89498),	-- Brewmoon Shoulderpads
-				i(89499),	-- Brewmoon Wristwraps
-				i(92879),	-- Bubblebrew Cloak
-				i(92870),	-- Bubblebrew Cord
-				i(92871),	-- Bubblebrew Cowl
-				i(92872),	-- Bubblebrew Handwraps
-				i(92873),	-- Bubblebrew Leggings
-				i(92874),	-- Bubblebrew Robe
-				i(92875),	-- Bubblebrew Sandals
-				i(92876),	-- Bubblebrew Shoulderpads
-				i(92877),	-- Bubblebrew Wristwraps
-				i(92869),	-- Cordwoven Cord
-				i(92868),	-- Cordwoven Cowl
-				i(92867),	-- Cordwoven Handwraps
-				i(92866),	-- Cordwoven Leggings
-				i(92865),	-- Cordwoven Robe
-				i(92864),	-- Cordwoven Sandals
-				i(92863),	-- Cordwoven Shoulderpads
-				i(92862),	-- Cordwoven Wristwraps
-				i(92837),	-- Earthstriker Belt
-				i(92836),	-- Earthstriker Bracers
-				i(92835),	-- Earthstriker Gauntlets
-				i(92834),	-- Earthstriker Greaves
-				i(92833),	-- Earthstriker Helm
-				i(92832),	-- Earthstriker Legguards
-				i(92831),	-- Earthstriker Spaulders
-				i(92830),	-- Earthstriker Vest
-				i(89500),	-- Fireheart Cloak
-				i(89508),	-- Fireheart Collar
-				i(89506),	-- Fireheart Ring
-				i(89491),	-- Firewool Cord
-				i(89490),	-- Firewool Cowl
-				i(89485),	-- Firewool Shoulderpads
-				i(89489),	-- Firewool Handwraps
-				i(89488),	-- Firewool Leggings
-				i(89487),	-- Firewool Robe
-				i(89486),	-- Firewool Sandals
-				i(89484),	-- Firewool Wristwraps
-				i(89475),	-- Forgotten Bindings
-				i(89474),	-- Forgotten Boots
-				i(89473),	-- Forgotten Britches
-				i(89472),	-- Forgotten Gloves
-				i(89471),	-- Forgotten Hood
-				i(89470),	-- Forgotten Jerkin
-				i(89469),	-- Forgotten Shoulders
-				i(89468),	-- Forgotten Waistband
-				i(89443),	-- Greenstone Breastplate
-				i(89503),	-- Greenstone Drape
-				i(89442),	-- Greenstone Gauntlets
-				i(89441),	-- Greenstone Girdle
-				i(89440),	-- Greenstone Helm
-				i(89439),	-- Greenstone Legplates
-				i(89511),	-- Greenstone Neck
-				i(89438),	-- Greenstone Pauldrons
-				i(89437),	-- Greenstone Sabatons
-				i(89505),	-- Greenstone Seal
-				i(89435),	-- Greenstone Vambraces
-				i(89477),	-- Hozen-Crafted Boots
-				i(89476),	-- Hozen-Crafted Bindings
-				i(89479),	-- Hozen-Crafted Gloves
-				i(92853),	-- Hozen-Speed Bindings
-				i(92852),	-- Hozen-Speed Boots
-				i(92851),	-- Hozen-Speed Britches
-				i(92850),	-- Hozen-Speed Gloves
-				i(92849),	-- Hozen-Speed Hood
-				i(92848),	-- Hozen-Speed Jerkin
-				i(92847),	-- Hozen-Speed Shoulders
-				i(92846),	-- Hozen-Speed Waistband
-				i(92854),	-- Jinyu-Polished Bindings
-				i(92855),	-- Jinyu-Polished Boots
-				i(92856),	-- Jinyu-Polished Britches
-				i(92857),	-- Jinyu-Polished Gloves
-				i(92858),	-- Jinyu-Polished Hood
-				i(92859),	-- Jinyu-Polished Jerkin
-				i(92860),	-- Jinyu-Polished Shoulders
-				i(92861),	-- Jinyu-Polished Waistband
-				i(92878),	-- Lavasoul Cloak
-				i(92886),	-- Lavasoul Collar
-				i(92884),	-- Lavasoul Ring
-				i(93140),	-- Scavenged Pandaren Axe
-				i(93142),	-- Scavenged Pandaren Axe
-				i(93130),	-- Scavenged Pandaren Broadaxe
-				i(93135),	-- Scavenged Pandaren Crossbow
-				i(93138),	-- Scavenged Pandaren Dagger
-				i(93127),	-- Scavenged Pandaren Greatsword
-				i(93134),	-- Scavenged Pandaren Gun
-				i(93128),	-- Scavenged Pandaren Hammer
-				i(93139),	-- Scavenged Pandaren Knuckles
-				i(93143),	-- Scavenged Pandaren Knuckles
-				i(93137),	-- Scavenged Pandaren Mace
-				i(93144),	-- Scavenged Pandaren Mace
-				i(93132),	-- Scavenged Pandaren Scepter
-				i(93125),	-- Scavenged Pandaren Spear
-				i(93141),	-- Scavenged Pandaren Spear
-				i(93131),	-- Scavenged Pandaren Spellblade
-				i(93126),	-- Scavenged Pandaren Staff
-				i(93129),	-- Scavenged Pandaren Staff
-				i(93136),	-- Scavenged Pandaren Sword
-				i(93133),	-- Scavenged Pandaren Wand
-				i(89510),	-- Stormbound Choker
-				i(89502),	-- Stormbound Cloak
-				i(89504),	-- Stormbound Ring
-				i(89459),	-- Stormbrew Belt
-				i(89458),	-- Stormbrew Bracers
-				i(89457),	-- Stormbrew Gauntlets
-				i(89456),	-- Stormbrew Greaves
-				i(89455),	-- Stormbrew Helm
-				i(89454),	-- Stormbrew Legguards
-				i(89453),	-- Stormbrew Spaulders
-				i(89452),	-- Stormbrew Vest
-				i(92888),	-- Stormcrier Choker
-				i(92880),	-- Stormcrier Cloak
-				i(92882),	-- Stormcrier Ring
-			},
+			["sym"] = {{"select","itemID",98133},{"pop"}},
+			-- ["g"] = {
+			-- 	i(92821),	-- Bladesnap Breastplate
+			-- 	i(92881),	-- Bladesnap Drape
+			-- 	i(92820),	-- Bladesnap Gauntlets
+			-- 	i(92819),	-- Bladesnap Girdle
+			-- 	i(92818),	-- Bladesnap Helm
+			-- 	i(92817),	-- Bladesnap Legplates
+			-- 	i(92889),	-- Bladesnap Neck
+			-- 	i(92816),	-- Bladesnap Pauldrons
+			-- 	i(92815),	-- Bladesnap Sabatons
+			-- 	i(92883),	-- Bladesnap Seal
+			-- 	i(92814),	-- Bladesnap Vambraces
+			-- 	i(89501),	-- Brewmoon Cloak
+			-- 	i(89492),	-- Brewmoon Cord
+			-- 	i(89493),	-- Brewmoon Cowl
+			-- 	i(89494),	-- Brewmoon Handwraps
+			-- 	i(89495),	-- Brewmoon Leggings
+			-- 	i(89496),	-- Brewmoon Robe
+			-- 	i(89497),	-- Brewmoon Sandals
+			-- 	i(89498),	-- Brewmoon Shoulderpads
+			-- 	i(89499),	-- Brewmoon Wristwraps
+			-- 	i(92879),	-- Bubblebrew Cloak
+			-- 	i(92870),	-- Bubblebrew Cord
+			-- 	i(92871),	-- Bubblebrew Cowl
+			-- 	i(92872),	-- Bubblebrew Handwraps
+			-- 	i(92873),	-- Bubblebrew Leggings
+			-- 	i(92874),	-- Bubblebrew Robe
+			-- 	i(92875),	-- Bubblebrew Sandals
+			-- 	i(92876),	-- Bubblebrew Shoulderpads
+			-- 	i(92877),	-- Bubblebrew Wristwraps
+			-- 	i(92869),	-- Cordwoven Cord
+			-- 	i(92868),	-- Cordwoven Cowl
+			-- 	i(92867),	-- Cordwoven Handwraps
+			-- 	i(92866),	-- Cordwoven Leggings
+			-- 	i(92865),	-- Cordwoven Robe
+			-- 	i(92864),	-- Cordwoven Sandals
+			-- 	i(92863),	-- Cordwoven Shoulderpads
+			-- 	i(92862),	-- Cordwoven Wristwraps
+			-- 	i(92837),	-- Earthstriker Belt
+			-- 	i(92836),	-- Earthstriker Bracers
+			-- 	i(92835),	-- Earthstriker Gauntlets
+			-- 	i(92834),	-- Earthstriker Greaves
+			-- 	i(92833),	-- Earthstriker Helm
+			-- 	i(92832),	-- Earthstriker Legguards
+			-- 	i(92831),	-- Earthstriker Spaulders
+			-- 	i(92830),	-- Earthstriker Vest
+			-- 	i(89500),	-- Fireheart Cloak
+			-- 	i(89508),	-- Fireheart Collar
+			-- 	i(89506),	-- Fireheart Ring
+			-- 	i(89491),	-- Firewool Cord
+			-- 	i(89490),	-- Firewool Cowl
+			-- 	i(89485),	-- Firewool Shoulderpads
+			-- 	i(89489),	-- Firewool Handwraps
+			-- 	i(89488),	-- Firewool Leggings
+			-- 	i(89487),	-- Firewool Robe
+			-- 	i(89486),	-- Firewool Sandals
+			-- 	i(89484),	-- Firewool Wristwraps
+			-- 	i(89475),	-- Forgotten Bindings
+			-- 	i(89474),	-- Forgotten Boots
+			-- 	i(89473),	-- Forgotten Britches
+			-- 	i(89472),	-- Forgotten Gloves
+			-- 	i(89471),	-- Forgotten Hood
+			-- 	i(89470),	-- Forgotten Jerkin
+			-- 	i(89469),	-- Forgotten Shoulders
+			-- 	i(89468),	-- Forgotten Waistband
+			-- 	i(89443),	-- Greenstone Breastplate
+			-- 	i(89503),	-- Greenstone Drape
+			-- 	i(89442),	-- Greenstone Gauntlets
+			-- 	i(89441),	-- Greenstone Girdle
+			-- 	i(89440),	-- Greenstone Helm
+			-- 	i(89439),	-- Greenstone Legplates
+			-- 	i(89511),	-- Greenstone Neck
+			-- 	i(89438),	-- Greenstone Pauldrons
+			-- 	i(89437),	-- Greenstone Sabatons
+			-- 	i(89505),	-- Greenstone Seal
+			-- 	i(89435),	-- Greenstone Vambraces
+			-- 	i(89477),	-- Hozen-Crafted Boots
+			-- 	i(89476),	-- Hozen-Crafted Bindings
+			-- 	i(89479),	-- Hozen-Crafted Gloves
+			-- 	i(92853),	-- Hozen-Speed Bindings
+			-- 	i(92852),	-- Hozen-Speed Boots
+			-- 	i(92851),	-- Hozen-Speed Britches
+			-- 	i(92850),	-- Hozen-Speed Gloves
+			-- 	i(92849),	-- Hozen-Speed Hood
+			-- 	i(92848),	-- Hozen-Speed Jerkin
+			-- 	i(92847),	-- Hozen-Speed Shoulders
+			-- 	i(92846),	-- Hozen-Speed Waistband
+			-- 	i(92854),	-- Jinyu-Polished Bindings
+			-- 	i(92855),	-- Jinyu-Polished Boots
+			-- 	i(92856),	-- Jinyu-Polished Britches
+			-- 	i(92857),	-- Jinyu-Polished Gloves
+			-- 	i(92858),	-- Jinyu-Polished Hood
+			-- 	i(92859),	-- Jinyu-Polished Jerkin
+			-- 	i(92860),	-- Jinyu-Polished Shoulders
+			-- 	i(92861),	-- Jinyu-Polished Waistband
+			-- 	i(92878),	-- Lavasoul Cloak
+			-- 	i(92886),	-- Lavasoul Collar
+			-- 	i(92884),	-- Lavasoul Ring
+			-- 	i(93140),	-- Scavenged Pandaren Axe
+			-- 	i(93142),	-- Scavenged Pandaren Axe
+			-- 	i(93130),	-- Scavenged Pandaren Broadaxe
+			-- 	i(93135),	-- Scavenged Pandaren Crossbow
+			-- 	i(93138),	-- Scavenged Pandaren Dagger
+			-- 	i(93127),	-- Scavenged Pandaren Greatsword
+			-- 	i(93134),	-- Scavenged Pandaren Gun
+			-- 	i(93128),	-- Scavenged Pandaren Hammer
+			-- 	i(93139),	-- Scavenged Pandaren Knuckles
+			-- 	i(93143),	-- Scavenged Pandaren Knuckles
+			-- 	i(93137),	-- Scavenged Pandaren Mace
+			-- 	i(93144),	-- Scavenged Pandaren Mace
+			-- 	i(93132),	-- Scavenged Pandaren Scepter
+			-- 	i(93125),	-- Scavenged Pandaren Spear
+			-- 	i(93141),	-- Scavenged Pandaren Spear
+			-- 	i(93131),	-- Scavenged Pandaren Spellblade
+			-- 	i(93126),	-- Scavenged Pandaren Staff
+			-- 	i(93129),	-- Scavenged Pandaren Staff
+			-- 	i(93136),	-- Scavenged Pandaren Sword
+			-- 	i(93133),	-- Scavenged Pandaren Wand
+			-- 	i(89510),	-- Stormbound Choker
+			-- 	i(89502),	-- Stormbound Cloak
+			-- 	i(89504),	-- Stormbound Ring
+			-- 	i(89459),	-- Stormbrew Belt
+			-- 	i(89458),	-- Stormbrew Bracers
+			-- 	i(89457),	-- Stormbrew Gauntlets
+			-- 	i(89456),	-- Stormbrew Greaves
+			-- 	i(89455),	-- Stormbrew Helm
+			-- 	i(89454),	-- Stormbrew Legguards
+			-- 	i(89453),	-- Stormbrew Spaulders
+			-- 	i(89452),	-- Stormbrew Vest
+			-- 	i(92888),	-- Stormcrier Choker
+			-- 	i(92880),	-- Stormcrier Cloak
+			-- 	i(92882),	-- Stormcrier Ring
+			-- },
 		}),
 		i(89613, {	-- Cache of Treasures
 			["timeline"] = {
 				"added 5.0.3.15851",
 				"removed 5.1.0.10000",
 			},
-			["g"] = {
-				i(89501),	-- Brewmoon Cloak
-				i(89492),	-- Brewmoon Cord
-				i(89493),	-- Brewmoon Cowl
-				i(89494),	-- Brewmoon Handwraps
-				i(89495),	-- Brewmoon Leggings
-				i(89496),	-- Brewmoon Robe
-				i(89497),	-- Brewmoon Sandals
-				i(89498),	-- Brewmoon Shoulderpads
-				i(89499),	-- Brewmoon Wristwraps
-				i(89509),	-- Brewmoon Necklace
-				i(89507),	-- Brewmoon Signet
-				i(89491),	-- Firewool Cord
-				i(89490),	-- Firewool Cowl
-				i(89485),	-- Firewool Shoulderpads
-				i(89489),	-- Firewool Handwraps
-				i(89488),	-- Firewool Leggings
-				i(89487),	-- Firewool Robe
-				i(89486),	-- Firewool Sandals
-				i(89484),	-- Firewool Wristwraps
-				i(89475),	-- Forgotten Bindings
-				i(89474),	-- Forgotten Boots
-				i(89473),	-- Forgotten Britches
-				i(89472),	-- Forgotten Gloves
-				i(89471),	-- Forgotten Hood
-				i(89470),	-- Forgotten Jerkin
-				i(89469),	-- Forgotten Shoulders
-				i(89468),	-- Forgotten Waistband
-				i(89443),	-- Greenstone Breastplate
-				i(89503),	-- Greenstone Drape
-				i(89442),	-- Greenstone Gauntlets
-				i(89441),	-- Greenstone Girdle
-				i(89440),	-- Greenstone Helm
-				i(89439),	-- Greenstone Legplates
-				i(89511),	-- Greenstone Neck
-				i(89438),	-- Greenstone Pauldrons
-				i(89437),	-- Greenstone Sabatons
-				i(89505),	-- Greenstone Seal
-				i(89435),	-- Greenstone Vambraces
-				i(89477),	-- Hozen-Crafted Boots
-				i(89476),	-- Hozen-Crafted Bindings
-				i(89479),	-- Hozen-Crafted Gloves
-				i(89478),	-- Hozen-Crafted Britches
-				i(89480),	-- Hozen-Crafted Hood
-				i(89481),	-- Hozen-Crafted Jerkin
-				i(89482),	-- Hozen-Crafted Shoulders
-				i(89483),	-- Hozen-Crafted Waistband
-				i(89447),	-- Mogu-Wrought Helm
-				i(89448),	-- Mogu-Wrought Legplates
-				i(89449),	-- Mogu-Wrought Pauldrons
-				i(89450),	-- Mogu-Wrought Sabatons
-				i(89465),	-- Scarshell Legguards
-				i(89510),	-- Stormbound Choker
-				i(89502),	-- Stormbound Cloak
-				i(89504),	-- Stormbound Ring
-				i(89459),	-- Stormbrew Belt
-				i(89458),	-- Stormbrew Bracers
-				i(89457),	-- Stormbrew Gauntlets
-				i(89456),	-- Stormbrew Greaves
-				i(89455),	-- Stormbrew Helm
-				i(89454),	-- Stormbrew Legguards
-				i(89453),	-- Stormbrew Spaulders
-				i(89452),	-- Stormbrew Vest
-				-- From wowhead comments
-				i(89463),	-- Scarshell Greaves
-			},
+			["sym"] = {{"select","itemID",98133},{"pop"}},
+			-- ["g"] = {
+			-- 	i(89501),	-- Brewmoon Cloak
+			-- 	i(89492),	-- Brewmoon Cord
+			-- 	i(89493),	-- Brewmoon Cowl
+			-- 	i(89494),	-- Brewmoon Handwraps
+			-- 	i(89495),	-- Brewmoon Leggings
+			-- 	i(89496),	-- Brewmoon Robe
+			-- 	i(89497),	-- Brewmoon Sandals
+			-- 	i(89498),	-- Brewmoon Shoulderpads
+			-- 	i(89499),	-- Brewmoon Wristwraps
+			-- 	i(89509),	-- Brewmoon Necklace
+			-- 	i(89507),	-- Brewmoon Signet
+			-- 	i(89491),	-- Firewool Cord
+			-- 	i(89490),	-- Firewool Cowl
+			-- 	i(89485),	-- Firewool Shoulderpads
+			-- 	i(89489),	-- Firewool Handwraps
+			-- 	i(89488),	-- Firewool Leggings
+			-- 	i(89487),	-- Firewool Robe
+			-- 	i(89486),	-- Firewool Sandals
+			-- 	i(89484),	-- Firewool Wristwraps
+			-- 	i(89475),	-- Forgotten Bindings
+			-- 	i(89474),	-- Forgotten Boots
+			-- 	i(89473),	-- Forgotten Britches
+			-- 	i(89472),	-- Forgotten Gloves
+			-- 	i(89471),	-- Forgotten Hood
+			-- 	i(89470),	-- Forgotten Jerkin
+			-- 	i(89469),	-- Forgotten Shoulders
+			-- 	i(89468),	-- Forgotten Waistband
+			-- 	i(89443),	-- Greenstone Breastplate
+			-- 	i(89503),	-- Greenstone Drape
+			-- 	i(89442),	-- Greenstone Gauntlets
+			-- 	i(89441),	-- Greenstone Girdle
+			-- 	i(89440),	-- Greenstone Helm
+			-- 	i(89439),	-- Greenstone Legplates
+			-- 	i(89511),	-- Greenstone Neck
+			-- 	i(89438),	-- Greenstone Pauldrons
+			-- 	i(89437),	-- Greenstone Sabatons
+			-- 	i(89505),	-- Greenstone Seal
+			-- 	i(89435),	-- Greenstone Vambraces
+			-- 	i(89477),	-- Hozen-Crafted Boots
+			-- 	i(89476),	-- Hozen-Crafted Bindings
+			-- 	i(89479),	-- Hozen-Crafted Gloves
+			-- 	i(89478),	-- Hozen-Crafted Britches
+			-- 	i(89480),	-- Hozen-Crafted Hood
+			-- 	i(89481),	-- Hozen-Crafted Jerkin
+			-- 	i(89482),	-- Hozen-Crafted Shoulders
+			-- 	i(89483),	-- Hozen-Crafted Waistband
+			-- 	i(89447),	-- Mogu-Wrought Helm
+			-- 	i(89448),	-- Mogu-Wrought Legplates
+			-- 	i(89449),	-- Mogu-Wrought Pauldrons
+			-- 	i(89450),	-- Mogu-Wrought Sabatons
+			-- 	i(89465),	-- Scarshell Legguards
+			-- 	i(89510),	-- Stormbound Choker
+			-- 	i(89502),	-- Stormbound Cloak
+			-- 	i(89504),	-- Stormbound Ring
+			-- 	i(89459),	-- Stormbrew Belt
+			-- 	i(89458),	-- Stormbrew Bracers
+			-- 	i(89457),	-- Stormbrew Gauntlets
+			-- 	i(89456),	-- Stormbrew Greaves
+			-- 	i(89455),	-- Stormbrew Helm
+			-- 	i(89454),	-- Stormbrew Legguards
+			-- 	i(89453),	-- Stormbrew Spaulders
+			-- 	i(89452),	-- Stormbrew Vest
+			-- 	-- From wowhead comments
+			-- 	i(89463),	-- Scarshell Greaves
+			-- },
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
@@ -605,52 +608,54 @@ _.GroupFinder =
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
-				{"select", "itemID", 13335},	-- Deathcharger's Reins
-				{"select", "itemID", 43953},	-- Reins of the Blue Drake
-				{"select", "itemID", 44151},	-- Reins of the Blue Proto-Drake
-				{"select", "itemID", 44707},	-- Reins of the Green Proto-Drake
-				{"select", "itemID", 32768},	-- Reins of the Raven Lord
-				{"select", "itemID", 43962},	-- Reins of the White Polar Bear
-				{"select", "itemID", 35513},	-- Swift White Hawkstrider
-				{"select", "itemID", 44984},	-- Ammen Vale Lashling
-				{"select", "itemID", 34535},	-- Azure Whelpling
-				{"select", "itemID", 54436},	-- Blue Clockwork Rocket Bot
-				{"select", "itemID", 29901},	-- Blue Moth Egg
-				{"select", "itemID", 29960},	-- Captured Firefly
-				{"select", "itemID", 8485},		-- Cat Carrier (Bombay)
-				{"select", "itemID", 46398},	-- Cat Carrier (Calico Cat)
-				{"select", "itemID", 8486},		-- Cat Carrier (Cornish Rex)
-				{"select", "itemID", 8490},		-- Cat Carrier (Siamese)
-				{"select", "itemID", 8488},		-- Cat Carrier (Silver Tabby)
-				{"select", "itemID", 8489},		-- Cat Carrier (White Kitten)
-				{"select", "itemID", 10392},	-- Crimson Snake
-				{"select", "itemID", 48114},	-- Deviate Hatchling
-				{"select", "itemID", 44970},	-- Dun Morogh Cub
-				{"select", "itemID", 44973},	-- Durotaur Scoprion
-				{"select", "itemID", 44974},	-- Elwynn Lamb
-				{"select", "itemID", 44982},	-- Enchanted Broom
-				{"select", "itemID", 43698},	-- Giant Sewer Rat
-				{"select", "itemID", 45002},	-- Mechanopeep
-				{"select", "itemID", 44980},	-- Mulgore Hatchling
-				{"select", "itemID", 48120},	-- Obsidian Hatchling
-				{"select", "itemID", 8496},		-- Parrot Cage (Cockatiel)
-				{"select", "itemID", 8495},		-- Parrot Cage (Senegal)
-				{"select", "itemID", 35504},	-- Phoenix Hatchling
-				{"select", "itemID", 10394},	-- Prairie Dog Whistle
-				{"select", "itemID", 44721},	-- Proto-Drake Whelp
-				{"select", "itemID", 48126},	-- Razzashi Hatchling
-				{"select", "itemID", 45606},	-- Sen'jin Fetish
-				{"select", "itemID", 69992},	-- Shimmering Wyrmling
-				{"select", "itemID", 44965},	-- Teldrassil Sproutling
-				{"select", "itemID", 8499},		-- Tiny Crimson Whelpling
-				{"select", "itemID", 44971},	-- Tirisfal Batling
-				{"select", "itemID", 29903},	-- Yellow Moth Egg
+				{"select", "itemID",
+					13335,	-- Deathcharger's Reins
+					43953,	-- Reins of the Blue Drake
+					44151,	-- Reins of the Blue Proto-Drake
+					44707,	-- Reins of the Green Proto-Drake
+					32768,	-- Reins of the Raven Lord
+					43962,	-- Reins of the White Polar Bear
+					35513,	-- Swift White Hawkstrider
+					44984,	-- Ammen Vale Lashling
+					34535,	-- Azure Whelpling
+					54436,	-- Blue Clockwork Rocket Bot
+					29901,	-- Blue Moth Egg
+					29960,	-- Captured Firefly
+					8485,	-- Cat Carrier (Bombay)
+					46398,	-- Cat Carrier (Calico Cat)
+					8486,	-- Cat Carrier (Cornish Rex)
+					8490,	-- Cat Carrier (Siamese)
+					8488,	-- Cat Carrier (Silver Tabby)
+					8489,	-- Cat Carrier (White Kitten)
+					10392,	-- Crimson Snake
+					48114,	-- Deviate Hatchling
+					44970,	-- Dun Morogh Cub
+					44973,	-- Durotaur Scoprion
+					44974,	-- Elwynn Lamb
+					44982,	-- Enchanted Broom
+					43698,	-- Giant Sewer Rat
+					45002,	-- Mechanopeep
+					44980,	-- Mulgore Hatchling
+					48120,	-- Obsidian Hatchling
+					8496,	-- Parrot Cage (Cockatiel)
+					8495,	-- Parrot Cage (Senegal)
+					35504,	-- Phoenix Hatchling
+					10394,	-- Prairie Dog Whistle
+					44721,	-- Proto-Drake Whelp
+					48126,	-- Razzashi Hatchling
+					45606,	-- Sen'jin Fetish
+					69992,	-- Shimmering Wyrmling
+					44965,	-- Teldrassil Sproutling
+					8499,	-- Tiny Crimson Whelpling
+					44971,	-- Tirisfal Batling
+					29903,	-- Yellow Moth Egg
+				},
 			},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
 			["u"] = REMOVED_FROM_GAME,
 			["sym"] = {
-				{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
+				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 	}),

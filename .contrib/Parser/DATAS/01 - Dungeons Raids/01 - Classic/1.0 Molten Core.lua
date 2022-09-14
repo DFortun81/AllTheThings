@@ -156,7 +156,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -224,7 +225,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					-- #endif
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					-- #if NOT ANYCLASSIC
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10

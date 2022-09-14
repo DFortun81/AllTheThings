@@ -955,7 +955,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 								}),
 								q(61880, {	-- Honored Attendance
-									["sourceQuests"] = { 60236 },	-- RSVP: Cryptkeeper Kassir
+									["sourceQuests"] = { 61704 },	-- Ember Court: Guest RSVPs
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
@@ -2422,13 +2422,14 @@ root("HiddenQuestTriggers", {
 			q(59691),	-- "The Party Herald"
 			q(61931),	-- Restocked Ember Court security/Killing house Iremoore Assassin (npcid:173098)
 			--q(61941),	-- Maybe Etiquette?
-			--q(61926),	-- Maybe Revendreth Etiquette?
+			q(61926),	-- Maybe Revendreth Etiquette?
 			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
 			q(60472),	-- Looting Decree: Baroness Vashj's Esteem
 			q(61533),	-- Looting Decree: The Countess's Favor
+			q(61528),	-- Looted Lady Moonberry cache
 			q(61535),	-- Triggered after ending Ember Court early and looting Mikanikos' Tribute
 
 	-- Misc

@@ -58,8 +58,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Tents",
 					["categoryID"] = 402,
-					["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
-					["g"] = {
+					["g"] = sharedData({
+						["u"] = 15,	-- Temporary Recipes (only available while building is active with LW follower)
+					},{
 						{
 							["recipeID"] = 176413,	-- Blood Elven Tent
 							["races"] = HORDE_ONLY,
@@ -84,7 +85,7 @@ profession(LEATHERWORKING, {
 							["recipeID"] = 176424,	-- Ornate Horde Tent
 							["races"] = HORDE_ONLY,
 						},
-					}
+					}),
 				},
 				{
 					["name"] = "Cloaks",

@@ -1390,7 +1390,7 @@ root("Zones", {
 					}),
 					q(10976, {	-- The Mark of the Nexus-King
 						["qg"] = 22919,	-- Image of Commander Ameer
-						["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
+						["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 						["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 31941, 1 },	-- Mark of the Nexus-King
