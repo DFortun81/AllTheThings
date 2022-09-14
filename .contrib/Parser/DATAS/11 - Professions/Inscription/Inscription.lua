@@ -1577,22 +1577,8 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			})),
 		}),
 	}))),
+	--[[
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
-		r(309805, {	-- Shadowlands Inscription
-			["collectible"] = false,	-- the profession itself is not a recipe
-		}),
-		cat(1409, {	-- Books & Scrolls
-			r(311424),	-- Codex of the Still Mind
-			r(311425),	-- Tome of the Still Mind
-			r(311423),	-- Writ of Grave Robbing
-		}),
-		cat(1411, {	-- Cards
-			r(311441),	-- Darkmoon Card of Death
-			r(324037),	-- Darkmoon Card of Putrescence
-			r(324036),	-- Darkmoon Card of Repose
-			r(324039),	-- Darkmoon Card of the Indomitable
-			r(324035),	-- Darkmoon Card of Voracity
-		}),
 		cat(1410, {	-- Contracts
 			r(354000, {["timeline"]={"added 9.1.0"}}),	-- Contract: Death's Advance
 			r(311412),	-- Contract: Court of Harvesters
@@ -1664,6 +1650,7 @@ root("Professions", prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRI
 			r(359890, {["timeline"]={"added 9.2.0"}}),	-- Vantus Rune: Sepulcher of the First Ones
 		}),
 	}))),
+	--]]
 	n(DISCOVERY, {
 		r(167950, {	-- Research: Warbinder's Ink
 			["collectible"] = false,

@@ -298,6 +298,20 @@ i(0, 57713);	-- Ethereal Ink
 i(0, 57229);	-- Glyph of Corpse Explosion / Glyph of Path of Frost[CATA+]
 i(0, 57215);	-- Glyph of Death's Embrace
 
+-- Profession Teacher
+i(0, 57236);	-- Glyph of Earthliving Weapon / Glyph of Purge[MOP-Legion]
+i(0, 57026);	-- Glyph of Flash of Light[Wrath-Cata] / Glyph of Word of Glory[Cata-Legion]
+i(0, 57221);	-- Glyph of Plague Strike [Removed Cata?]
+i(0, 50602);	-- Scroll of Intellect VI
+i(0, 57122);	-- Glyph of Feint[Legion removed]
+
+
+-- 3.1.0?
+i(0, 58489);	-- Scroll of Strength VI
+i(0, 57226);	-- Glyph of Unbreakable Armor[Removed Cata]
+-- Later Research
+i(0, 56952);	-- Glyph of Rake / Glyph of Pounce[4.1.0-WOD] / Glyph of Rake[Wod-Legion] Ink of the sea
+
 --3.0.1.8303
 i(0, 45358);	-- Inscription (Journeyman)
 i(0, 45360);	-- Inscription (Artisan)
@@ -315,13 +329,11 @@ i(0, 52183);	--
 i(0, 50603);	-- Scroll of Intellect VII
 i(0, 50620);	-- Scroll of Stamina VIII
 i(0, 50611);	-- Scroll of Versatility VIII
-i(0, 50602);	-- Scroll of Intellect VI
 i(0, 50619);	-- Scroll of Stamina VII
 --3.1.0.9767
 i(0, 64294);	--
 i(0, 57208);	--
 i(0, 58322);	--
-i(0, 58489);	-- Scroll of Strength VI
 i(0, 64309);	--
 i(0, 57268);	--
 i(0, 57202);	--
@@ -331,9 +343,7 @@ i(0, 56998);	--
 i(0, 64318);	--
 i(0, 64248);	--
 i(0, 58341);	-- Glyph of Soulwell
-i(0, 56952);	--
 i(0, 57159);	--
-i(0, 57122);	--
 i(0, 58301);	-- Glyph of Lesser Proportion
 i(0, 57714);	-- Darkflame Ink
 i(0, 64317);	--
@@ -460,7 +470,6 @@ i(0, 64271);	--
 i(0, 59559);	--
 i(0, 64304);	--
 i(0, 57169);	--
-i(0, 57221);	--
 i(0, 59339);	--
 i(0, 57003);	--
 i(0, 57223);	--
@@ -468,7 +477,6 @@ i(0, 59500);	--
 i(0, 57124);	--
 i(0, 57190);	--
 i(0, 64283);	--
-i(0, 57026);	--
 i(0, 57192);	--
 i(0, 57273);	--
 i(0, 57214);	--
@@ -515,7 +523,6 @@ i(0, 57160);	--
 i(0, 57198);	--
 i(0, 57231);	--
 i(0, 57195);	--
-i(0, 57226);	--
 i(0, 64303);	--
 i(0, 56977);	--
 i(0, 64255);	--
@@ -525,7 +532,6 @@ i(0, 64297);	--
 i(0, 57212);	--
 i(0, 57113);	--
 i(0, 64299);	--
-i(0, 57236);	--
 i(0, 57275);	--
 i(0, 56949);	--
 i(0, 56960);	-- Swiftmend??
