@@ -78,7 +78,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					-- #if AFTER LEGION
 					["coord"] = { 29.6, 10.6, SILITHUS },
 					-- #else
@@ -518,7 +519,9 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1522, {	-- Garr
 				["creatureID"] = 12057,
 				["groups"] = {
-					i(18564),	-- Bindings of the Windseeker (Right)
+					i(18564, {	-- Bindings of the Windseeker (Right)
+						["classes"] = ALL_CLASSES,
+					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(17105),	-- Aurastone Hammer
 					i(18832),	-- Brutality Blade
@@ -575,7 +578,9 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1524, {	-- Baron Geddon
 				["creatureID"] = 12056,
 				["groups"] = {
-					i(18563),	-- Bindings of the Windseeker (Left)
+					i(18563, {	-- Bindings of the Windseeker (Left)
+						["classes"] = ALL_CLASSES,
+					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(19142),	-- Fire Runed Grimoire
 					i(16797),	-- Arcanist Mantle (Mage)
