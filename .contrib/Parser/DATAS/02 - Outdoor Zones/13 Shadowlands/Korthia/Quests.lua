@@ -88,6 +88,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["description"] = "Requires Renown 52.",
 				["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 				["coord"] = { 63.4, 24.6, KORTHIA },
+				["maps"] = { ARDENWEALD },
 			}),
 			q(64441, {	-- A Loose Thread
 				["sourceQuests"] = { 64314 },	-- Covenants Renewed

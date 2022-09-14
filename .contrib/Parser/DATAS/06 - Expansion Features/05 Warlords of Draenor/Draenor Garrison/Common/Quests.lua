@@ -3030,6 +3030,10 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 78487 },	-- Rokhan
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
+				["sourceQuests"] = {
+					36601,	-- News From Nagrand (Shadow-sage Iskar)
+					36606,	-- News From Nagrand (Lieutenant Willem)
+				},
 			}),
 			q(39041, {	-- The Arena Calls
 				["provider"] = { "n", 94870 },	-- Seer Kazal

@@ -124,7 +124,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { "added 9.2.5", REMOVED_SLS4 },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500xValor
 						},
