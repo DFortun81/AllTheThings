@@ -518,9 +518,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1522, {	-- Garr
 				["creatureID"] = 12057,
 				["groups"] = {
-					i(18564, {	-- Bindings of the Windseeker (Right)
-						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
-					}),
+					i(18564),	-- Bindings of the Windseeker (Right)
 					i(18822),	-- Obsidian Edged Blade
 					i(17105),	-- Aurastone Hammer
 					i(18832),	-- Brutality Blade
@@ -577,9 +575,7 @@ root("Instances", tier(CLASSIC_TIER, {
 			e(1524, {	-- Baron Geddon
 				["creatureID"] = 12056,
 				["groups"] = {
-					i(18563, {	-- Bindings of the Windseeker (Left)
-						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
-					}),
+					i(18563),	-- Bindings of the Windseeker (Left)
 					i(18822),	-- Obsidian Edged Blade
 					i(19142),	-- Fire Runed Grimoire
 					i(16797),	-- Arcanist Mantle (Mage)
