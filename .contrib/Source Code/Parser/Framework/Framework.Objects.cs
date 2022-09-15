@@ -1666,39 +1666,41 @@ namespace ATT
                     case "questIDH":
                     case "sqreq":
                         {
-                            item[field] = Convert.ToInt64(value);
+                            try
+                            {
+                                item[field] = Convert.ToInt64(value);
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                            }
                             break;
                         }
 
                     // Integer -> Integer-Array Data Type conversion
                     case "sourceQuest":
                         {
-                            // Convert a single sourceQuest to a sourceQuests list.
-                            Merge(item, "sourceQuests", new List<object>
+                            try
                             {
-                                Convert.ToInt64(value)
-                            });
+                                // Convert a single sourceQuest to a sourceQuests list.
+                                Merge(item, "sourceQuests", Convert.ToInt64(value));
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                            }
                             break;
                         }
                     case "altQuestID":
-                        // Convert a single altQuestID into an altQuests list.
-                        Merge(item, "altQuests", new List<object>
-                            {
-                                Convert.ToInt64(value)
-                            });
-                        break;
-                    case "aqd":
-                    case "hqd":
                         {
-                            // Convert an object type.
-                            if (value is Dictionary<string, object> data)
+                            try
                             {
-                                if (!item.TryGetValue(field, out Dictionary<string, object> sourceData))
-                                {
-                                    sourceData = new Dictionary<string, object>();
-                                    item[field] = sourceData;
-                                }
-                                Merge(sourceData, data);
+                                // Convert a single altQuestID into an altQuests list.
+                                Merge(item, "altQuests", Convert.ToInt64(value));
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
                             }
                             break;
                         }
@@ -1707,8 +1709,7 @@ namespace ATT
                             try
                             {
                                 // Convert a single qg to a qgs list.
-                                long converted = Convert.ToInt64(value);
-                                Merge(item, "qgs", converted);
+                                Merge(item, "qgs", Convert.ToInt64(value));
                             }
                             catch
                             {
@@ -1721,8 +1722,7 @@ namespace ATT
                             try
                             {
                                 // Convert a single cr to a crs list.
-                                long converted = Convert.ToInt64(value);
-                                Merge(item, "crs", converted);
+                                Merge(item, "crs", Convert.ToInt64(value));
                             }
                             catch
                             {
@@ -1781,6 +1781,21 @@ namespace ATT
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
                             foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
+                            break;
+                        }
+                    case "aqd":
+                    case "hqd":
+                        {
+                            // Convert an object type.
+                            if (value is Dictionary<string, object> data)
+                            {
+                                if (!item.TryGetValue(field, out Dictionary<string, object> sourceData))
+                                {
+                                    sourceData = new Dictionary<string, object>();
+                                    item[field] = sourceData;
+                                }
+                                Merge(sourceData, data);
+                            }
                             break;
                         }
 
