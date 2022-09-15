@@ -182,32 +182,38 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		})),
 	}),
 	tier(CATA_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
-		["timeline"] = { "added 4.0.1" },
-		["groups"] = {
-			ach(5377),	-- Collector's Edition: Lil' Deathwing
-			i(62540),	-- Lil' Deathwing
-		},
+		n(-534, {	-- Original Cata Collectors Edition
+			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
+			["timeline"] = { "added 4.0.1" },
+			["groups"] = {
+				ach(5377),	-- Collector's Edition: Lil' Deathwing
+				i(62540),	-- Lil' Deathwing
+			},
+		}),
 	}),
 	tier(MOP_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { "added 5.0.1" },
-		["groups"] = {
-			ach(6849),	-- Collector's Edition: Imperial Quilen
-			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
-			i(85870),	-- Imperial Quilen (MOUNT!)
-			i(85871),	-- Lucky Quilen Cub
-		},
+		n(-534, {	-- Original MoP Collectors Edition
+			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
+			["timeline"] = { "added 5.0.1" },
+			["groups"] = {
+				ach(6849),	-- Collector's Edition: Imperial Quilen
+				ach(6848),	-- Collector's Edition: Lucky Quilen Cub
+				i(85870),	-- Imperial Quilen (MOUNT!)
+				i(85871),	-- Lucky Quilen Cub
+			},
+		}),
 	}),
 	tier(WOD_TIER, {
-		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
-		["timeline"] = { "added 6.0.1" },
-		["groups"] = {
-			ach(8917),	-- Collector's Edition: Dread Hatchling
-			ach(8916),	-- Collector's Edition: Dread Raven
-			i(109014),	-- Dread Hatchling
-			i(109013),	-- Dread Raven (MOUNT!)
-		},
+		n(-534, {	-- Original WoD Collectors Edition
+			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
+			["timeline"] = { "added 6.0.1" },
+			["groups"] = {
+				ach(8917),	-- Collector's Edition: Dread Hatchling
+				ach(8916),	-- Collector's Edition: Dread Raven
+				i(109014),	-- Dread Hatchling
+				i(109013),	-- Dread Raven (MOUNT!)
+			},
+		}),
 	}),
 	tier(LEGION_TIER, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
