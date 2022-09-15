@@ -93,7 +93,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		},
 	}),
 	tier(TBC_TIER, {
-		tier(TBC_TIER, { -- Original The Burning Crusade Collectors Edition
+		n(-534, { -- Original The Burning Crusade Collectors Edition
 			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 			["timeline"] = { "added 2.0.1" },
 			["groups"] = {
@@ -153,7 +153,7 @@ root("Promotions", n(-534, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Collec
 		}),
 	}),
 	tier(WOTLK_TIER, {
-		tier(WOTLK_TIER, {
+		n(-534, {	-- Original WOTLK Collectors Edition
 			["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
