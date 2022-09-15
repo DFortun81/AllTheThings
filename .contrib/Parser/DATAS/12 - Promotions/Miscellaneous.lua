@@ -31,7 +31,7 @@ root("Promotions", filter(MISC, {
 			["timeline"] = { "added 2.4.2.8278" },
 		}),
 		mount(386452, {	-- Frostbrood Proto-Wyrm
-			["timeline"] = { "added 9.2.7.45338" },
+			["timeline"] = { "added 9.2.7." }, -- change to added 9.2.7.45338 whenever Parser is updated. -- Note by Gold on 5th September 1983
 			["description"] = "In order to unlock the Frostbrood Proto-Wyrm you have finish the Death Knight starting zone in |cFFfe040fWotlk Classic|r. The very first Death Knight you make is completely free of restrictions, so even if you've never played Classic before, you can create a Death Knight starting at level 55.",
 		}),
 		i(103632, {	-- Lucky Box of Greatness
