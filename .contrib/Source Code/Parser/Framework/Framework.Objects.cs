@@ -1704,20 +1704,30 @@ namespace ATT
                         }
                     case "qg":
                         {
-                            // Convert a single qg to a qgs list.
-                            Merge(item, "qgs", new List<object>
+                            try
                             {
-                                Convert.ToInt64(value)
-                            });
+                                // Convert a single qg to a qgs list.
+                                long converted = Convert.ToInt64(value);
+                                Merge(item, "qgs", converted);
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                            }
                             break;
                         }
                     case "cr":
                         {
-                            // Convert a single cr to a crs list.
-                            Merge(item, "crs", new List<object>
+                            try
                             {
-                                Convert.ToInt64(value)
-                            });
+                                // Convert a single cr to a crs list.
+                                long converted = Convert.ToInt64(value);
+                                Merge(item, "crs", converted);
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value) + " within object: " + MiniJSON.Json.Serialize(item));
+                            }
                             break;
                         }
 
@@ -2658,6 +2668,11 @@ namespace ATT
                     found = true;
                     list = new List<object> { valint };
                 }
+                else if (value is long vallng)
+                {
+                    found = true;
+                    list = new List<object> { vallng };
+                }
                 else if (value is double valdbl)
                 {
                     found = true;
@@ -2681,7 +2696,7 @@ namespace ATT
 
                 if (found)
                 {
-                    //Trace.WriteLine("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
+                    //LogDebug("Non-Array '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
                     return list;
                 }
 
