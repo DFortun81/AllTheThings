@@ -2426,7 +2426,7 @@ local function GetFixedItemSpecInfo(itemID)
 					local numSpecializations = GetNumSpecializations();
 					if numSpecializations and numSpecializations > 0 then
 						for i=1,numSpecializations,1 do
-							local specID = select(1, GetSpecializationInfo(i));
+							local specID = GetSpecializationInfo(i);
 							tinsert(specs, specID);
 						end
 					end
@@ -8082,7 +8082,7 @@ local criteriaFuncs = {
     end,
 	["label_spellID"] = L["LOCK_CRITERIA_SPELL_LABEL"],
     ["text_spellID"] = function(v)
-        return select(1, GetSpellInfo(v));
+        return GetSpellInfo(v);
     end,
 
     ["factionID"] = function(v)
@@ -9045,16 +9045,16 @@ local criteriaFields = {
 	["name"] = function(t)
 		if t.link then return t.link; end
 		if t.encounterID then
-			return select(1, EJ_GetEncounterInfo(t.encounterID));
+			return EJ_GetEncounterInfo(t.encounterID);
 		end
 		local achievementID = t.achievementID;
 		if achievementID then
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				if criteriaID <= GetAchievementNumCriteria(achievementID) then
-					return select(1, GetAchievementCriteriaInfo(achievementID, criteriaID, true));
+					return GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 				elseif criteriaID > 50 then
-					return select(1, GetAchievementCriteriaInfoByID(achievementID, criteriaID));
+					return GetAchievementCriteriaInfoByID(achievementID, criteriaID);
 				end
 			end
 		end
@@ -9716,7 +9716,7 @@ app.CreateSpecies = function(id, t)
 end
 
 app.events.NEW_PET_ADDED = function(petID)
-	local speciesID = select(1, C_PetJournal_GetPetInfoByPetID(petID));
+	local speciesID = C_PetJournal_GetPetInfoByPetID(petID);
 	-- app.PrintDebug("NEW_PET_ADDED", petID, speciesID);
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
 		rawset(CollectedSpeciesHelper, speciesID, 1);
@@ -9728,7 +9728,7 @@ app.events.NEW_PET_ADDED = function(petID)
 end
 app.events.PET_JOURNAL_PET_DELETED = function(petID)
 	-- /dump C_PetJournal.GetPetInfoByPetID("BattlePet-0-00001006503D")
-	-- local speciesID = select(1, C_PetJournal.GetPetInfoByPetID(petID));
+	-- local speciesID = C_PetJournal.GetPetInfoByPetID(petID);
 	-- NOTE: Above APIs do not work in the DELETED API, THANKS BLIZZARD
 	-- app.PrintDebug("PET_JOURNAL_PET_DELETED",petID);
 
@@ -10527,7 +10527,7 @@ local fields = {
 		end
 	end,
 	["isFriend"] = function(t)
-		if select(1, GetFriendshipReputation(t.factionID)) then
+		if GetFriendshipReputation(t.factionID) then
 			rawset(t, "isFriend", true);
 			return true;
 		else
@@ -10543,7 +10543,7 @@ local fields = {
 		return ma and m and (ma - m);
 	end,
 	["standing"] = function(t)
-		return select(1, GetCurrentFactionStandings(t.factionID));
+		return GetCurrentFactionStandings(t.factionID);
 	end,
 	["maxstanding"] = function(t)
 		if t.minReputation and t.minReputation[1] == t.factionID then
@@ -11075,7 +11075,7 @@ local fields = {
 		return t.itemID and select(2, GetItemInfo(t.itemID));
 	end,
 	["name"] = function(t)
-		return t.itemID and select(1, GetItemInfo(t.itemID));
+		return t.itemID and GetItemInfo(t.itemID);
 	end,
 	["icon"] = function(t)
 		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
@@ -12485,7 +12485,7 @@ local mapFields = {
 		end
 	end,
 	["lvl"] = function(t)
-		return select(1, C_Map_GetMapLevels(t.mapID));
+		return C_Map_GetMapLevels(t.mapID);
 	end,
 	["iconForAchievement"] = function(t)
 		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
@@ -12762,7 +12762,7 @@ local fields = {
 		return select(3, GetSpellInfo(t.spellID));
 	end,
 	["link"] = function(t)
-		return select(1, GetSpellLink(t.spellID));
+		return GetSpellLink(t.spellID);
 	end,
 	["description"] = function(t)
 		if t.crs and #t.crs > 0 then
@@ -13248,8 +13248,8 @@ local fields = {
 	end,
 	--[[
 	["name"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(1, GetSpellInfo(t.professionID)); end
-		if t.professionID == 129 then return select(1, GetSpellInfo(t.spellID)); end
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellInfo(t.professionID); end
+		if t.professionID == 129 then return GetSpellInfo(t.spellID); end
 		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
@@ -20510,7 +20510,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		self.Spec = GetLootSpecialization();
 		if not self.Spec or self.Spec == 0 then
 			local s = GetSpecialization();
-			if s then self.Spec = select(1, GetSpecializationInfo(s)); end
+			if s then self.Spec = GetSpecializationInfo(s); end
 		end
 
 		-- Update the window and all of its row data
@@ -24030,7 +24030,7 @@ app:RegisterEvent("ADDON_LOADED");
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
-	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
+	local itemID = C_ArtifactUI.GetArtifactInfo();
 	if itemID then
 		local count = C_ArtifactUI.GetNumRelicSlots();
 		if count and count > 0 then
