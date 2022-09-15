@@ -1066,7 +1066,6 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82833 },	-- Tattered Journal Page
-					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
 				}),
 				q(35736, {	-- Writing in the Snow (H)
 					["coords"] = {
@@ -1078,7 +1077,6 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 82833 },	-- Tattered Journal Page
-					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
 				}),
 				q(33915, {	-- Young Hearts
 					["coord"] = { 19.2, 59.1, FROSTFIRE_RIDGE },

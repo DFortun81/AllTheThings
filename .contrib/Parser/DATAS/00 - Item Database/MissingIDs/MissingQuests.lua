@@ -1831,15 +1831,6 @@ q(43544),	--
 q(43579),	-- Looted DK Daily Mount
 q(43584),	-- Battlelord of the Valarjar
 q(43602),	-- Vignette: Randril
-q(43646),	-- Hidden Appearance Unlocked
-q(43651),	-- Hidden Appearance Unlocked
-q(43663),	-- Hidden Appearance Unlocked
-q(43665),	-- Hidden Appearance Unlocked
-q(43667),	-- Hidden Appearance Unlocked
-q(43668),	-- Hidden Appearance Unlocked
-q(43669),	-- Hidden Appearance Unlocked
-q(43672),	-- Hidden Appearance Unlocked
-q(43677),	-- Hidden Appearance Unlocked
 q(43689),	-- Soulfiend Tagerma
 q(43690),	-- Shroudseeker
 q(43691),	-- Plaguemaw

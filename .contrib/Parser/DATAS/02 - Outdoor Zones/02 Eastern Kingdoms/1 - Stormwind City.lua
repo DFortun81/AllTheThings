@@ -2909,6 +2909,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
 					-- #endif
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { DUSKWOOD },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },

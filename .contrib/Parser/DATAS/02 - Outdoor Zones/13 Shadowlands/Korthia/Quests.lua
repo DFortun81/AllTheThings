@@ -78,6 +78,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							i(185114),	-- Redeemed Inquisitor's Wraps
 						},
 					}),
+					i(187000),	-- Pattern: Elusive Pet Treat
 					i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 					i(186548),	-- Chompy (PET!)
 					i(187184),	-- Vesper of Clarity (TOY!)
@@ -848,7 +849,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
-					i(187000),	-- Pattern: Elusive Pet Treat
 				},
 			}),
 			q(63989, {	-- Oozing with Character (Plaguey)

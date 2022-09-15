@@ -399,525 +399,376 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 					follower(1282)	-- Yira'lya
 				},
 			}),
+		}),
 		--	Bonus Quests
+		n(QUESTS, sharedData({
+			["repeatable"] = true,
+			["lvl"] = { 48 },
+		},{
 			q(62229, {	-- Ashraka's Intelligence
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 173750 },	-- Ashraka
 			}),
 			q(64185, {	-- Assist Ella With ?
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179671 },	-- Ella
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61259, {	-- Ayeleth's Hunger
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171920 },	-- Ayeleth
 			}),
 			q(61427, {	-- Blisswing's Rescue
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172244 },	-- Blisswing
 			}),
 			q(61430, {	-- Chalkyth's Saber
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172240 },	-- Chalkyth
 			}),
 			q(61228, {	-- Dug's Missing Shovel
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171867 },	-- Dug Gravewell
 			}),
 			q(61428, {	-- Duskleaf's Revenge
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172259 },	-- Duskleaf
 			}),
 			q(64186, {	-- ELGU - 007's Missing Power Core [Double check]
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179665 },	-- ELGU - 007
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(59340, {	-- Gallath's Bell
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 152418 },	-- Gallath
 			}),
 			q(61348, {	-- Hala's Sword
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172039 },	-- Hala
 			}),
 			q(59777, {	-- Help Calix find Amethia
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 166147 },	-- Calix
 			}),
 			q(59775, {	-- Help Indigo find Penthia
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 166123 },	-- Indigo
 			}),
 			q(59779, {	-- Help Moriaz find Buttons
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 166151 },	-- Moriaz the Red
 			}),
 			q(59778, {	-- Help Sawn find Varrik
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 166148 },	-- Sawn
 			}),
 			q(59346, {	-- Indri's Flute
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 157426 },	-- Indri the Treesinger
 			}),
 			q(61248, {	-- Kaletar's Freedom
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171898 },	-- Kaletar
 			}),
 			q(61429, {	-- Karynmwylyann's Roots
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172260 },	-- Karynmwylyann
 				-- Fracture Chambers 4 / 2
 			}),
 			q(64187, {	-- Kiaranyka's Search
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["timeline"] = { "added 9.1.0" },
 				--["provider"] = { "n", },	-- Kiaranyka (multiple npcid)
 			}),
 			q(64189, {	-- Kinessa's Support
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179677 },	-- Kinessa the Absorbent
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61322, {	-- Kythekios' Memory Stone
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171996 },	-- Kythekios
 			}),
 			q(64191, {	-- Lassik's Gear
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179681 },	-- Lassik Spinebender
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61431, {	-- Lloth'wellyn's Breakthrough
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172263 },	-- Lloth'wellyn
 			}),
 			q(60573, {	-- Meatball's Revenge
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 168979 },	-- Meatball
 			}),
 			q(64184, {	-- Missing Friend [Double check]
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61347, {	-- Molako's Freedom
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172031 },	-- Molako
 			}),
 			q(64190, {	-- Steadyhands' Platter
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179679 },	-- Steadyhands
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61340, {	-- Telethakas' Revenge
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172024 },	-- Telethakas
 			}),
 			q(61243, {	-- Thela's Memory Stone
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171895 },	-- Thela Soulsipper
 			}),
 			q(61262, {	-- Nerith's Vengeance
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171928 },	-- Nerith Darkwing
 			}),
 			q(59345, {	-- Phantoriax's Warsword
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 157432 },	-- Indigo
 			}),
 			q(62236, {	-- Rattlebag's Lost Armor
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 173404 },	-- Lost Armor
 			}),
 			q(59344, {	-- Renavyth's Medallion
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 157406 },	-- Renavyth
 			}),
 			q(64188, {	-- Ryuja's Supplies
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 179673 },	-- Ryuja Shockfist
 				["timeline"] = { "added 9.1.0" },
 			}),
 			q(61395, {	-- Spare Parts
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172157 },	-- Ispiron
 			}),
 			q(61234, {	-- Stonehuck's Sinstone
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 171879 },	-- Stonehuck
 			}),
 			q(62226, {	-- Talethi's Desire
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 173748 },	-- Talethi
 			}),
 			q(61330, {	-- Teliah's Stolen Spear
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 172007 },	-- Teliah
 			}),
 			q(62993, {	-- The Riddle of Death
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 175648 },	-- Croman
 			}),
 			q(62227, {	-- Xertora's Construct
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				-- ["provider"] = { "n", ??? },	-- TODO: ???
 			}),
 			q(63987, {	-- Ve'lor's Lost Parcel
-				["repeatable"] = true,
 				["provider"] = { "n", 178932 },	-- Ve'lor the Messenger
 			}),
 			q(62231, {	-- Velkein's Blade
-				["sourceQuests"] = { 60136 },	-- Into Torghast
-				["repeatable"] = true,
 				["provider"] = { "n", 173753 },	-- Velkein
 				-- Coldheart 8 / 5
 			}),
+		})),
 
 			--------------
 			-- Lockouts --
 			--------------
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		},{
 		--	Coldheart
 			q(58198, {	-- Coldheart Interstitia, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 1",
 			}),
 			q(58199, {	-- Coldheart Interstitia, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 2",
 			}),
 			q(58200, {	-- Coldheart Interstitia, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 3",
 			}),
 			q(58201, {	-- Coldheart Interstitia, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 4",
 			}),
 			q(58202, {	-- Coldheart Interstitia, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 5",
 			}),
 			q(58203, {	-- Coldheart Interstitia, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 6",
 			}),
 			q(61975, {	-- Coldheart Interstitia, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 7",
 			}),
 			q(61976, {	-- Coldheart Interstitia, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 8",
 			}),
 			q(63880, {	-- Coldheart Interstitia, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 9",
 			}),
 			q(63881, {	-- Coldheart Interstitia, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 10",
 			}),
 			q(63882, {	-- Coldheart Interstitia, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 11",
 			}),
 			q(63883, {	-- Coldheart Interstitia, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Coldheart Interstitia, Layer 12",
 			}),
-
 		--	Fracture Chambers
 			q(58186, {	-- Fracture Chambers, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 1",
 			}),
 			q(58187, {	-- Fracture Chambers, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 2",
 			}),
 			q(58188, {	-- Fracture Chambers, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 3",
 			}),
 			q(58189, {	-- Fracture Chambers, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 4",
 			}),
 			q(58190, {	-- Fracture Chambers, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 5",
 			}),
 			q(58191, {	-- Fracture Chambers, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 6",
 			}),
 			q(61971, {	-- Fracture Chambers, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 7",
 			}),
 			q(61972, {	-- Fracture Chambers, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 8",
 			}),
 			q(63872, {	-- Fracture Chambers, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 9",
 			}),
 			q(63873, {	-- Fracture Chambers, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 10",
 			}),
 			q(63874, {	-- Fracture Chambers, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 11",
 			}),
 			q(63875, {	-- Fracture Chambers, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Fracture Chambers, Layer 12",
 			}),
-
 		--	Mort'regar
 			q(58204, {	-- Mort'regar, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 1",
 			}),
 			q(58205, {	-- Mort'regar, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 2",
 			}),
 			q(59326, {	-- Mort'regar, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 3",
 			}),
 			q(59334, {	-- Mort'regar, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 4",
 			}),
 			q(59335, {	-- Mort'regar, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 5",
 			}),
 			q(59336, {	-- Mort'regar, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 6",
 			}),
 			q(61977, {	-- Mort'regar, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 7",
 			}),
 			q(61978, {	-- Mort'regar, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 8",
 			}),
 			q(63884, {	-- Mort'regar, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 9",
 			}),
 			q(63885, {	-- Mort'regar, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 10",
 			}),
 			q(63886, {	-- Mort'regar, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 11",
 			}),
 			q(63887, {	-- Mort'regar, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Mort'regar, Layer 12",
 			}),
-
 		--	Skoldus Hall
 			q(59328, {	-- Skoldus Hall, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 1",
 			}),
 			q(59329, {	-- Skoldus Hall, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 2",
 			}),
 			q(59330, {	-- Skoldus Hall, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 3",
 			}),
 			q(59331, {	-- Skoldus Hall, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 4",
 			}),
 			q(59332, {	-- Skoldus Hall, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 5",
 			}),
 			q(59333, {	-- Skoldus Hall, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 6",
 			}),
 			q(61969, {	-- Skoldus Hall, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 7",
 			}),
 			q(61970, {	-- Skoldus Hall, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 8",
 			}),
 			q(63868, {	-- Skoldus Hall, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 9",
 			}),
 			q(63869, {	-- Skoldus Hall, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 10",
 			}),
 			q(63870, {	-- Skoldus Hall, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 11",
 			}),
 			q(63871, {	-- Skoldus Hall, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Skoldus Hall, Layer 12",
 			}),
-
 		--	Soulforges
 			q(58192, {	-- Soulforges, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 1",
 			}),
 			q(58193, {	-- Soulforges, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 2",
 			}),
 			q(58194, {	-- Soulforges, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 3",
 			}),
 			q(58195, {	-- Soulforges, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 4",
 			}),
 			q(58196, {	-- Soulforges, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 5",
 			}),
 			q(58197, {	-- Soulforges, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 6",
 			}),
 			q(61973, {	-- Soulforges, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 7",
 			}),
 			q(61974, {	-- Soulforges, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 8",
 			}),
 			q(63876, {	-- Soulforges, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 9",
 			}),
 			q(63877, {	-- Soulforges, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 10",
 			}),
 			q(63878, {	-- Soulforges, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 11",
 			}),
 			q(63879, {	-- Soulforges, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Soulforges, Layer 12",
 			}),
-
 		--	Upper Reaches
 			q(59337, {	-- Upper Reaches, Layer 1
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 1",
 			}),
 			q(61101, {	-- Upper Reaches, Layer 2
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 2",
 			}),
 			q(61131, {	-- Upper Reaches, Layer 3
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 3",
 			}),
 			q(61132, {	-- Upper Reaches, Layer 4
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 4",
 			}),
 			q(61133, {	-- Upper Reaches, Layer 5
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 5",
 			}),
 			q(61134, {	-- Upper Reaches, Layer 6
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 6",
 			}),
 			q(61979, {	-- Upper Reaches, Layer 7
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 7",
 			}),
 			q(61980, {	-- Upper Reaches, Layer 8
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 8",
 			}),
 			q(63888, {	-- Upper Reaches, Layer 9
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 9",
 			}),
 			q(63889, {	-- Upper Reaches, Layer 10
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 10",
 			}),
 			q(63890, {	-- Upper Reaches, Layer 11
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 11",
 			}),
 			q(63891, {	-- Upper Reaches, Layer 12
-				["isWeekly"] = true,
 				["name"] = "Upper Reaches, Layer 12",
 			}),
-		}),
+		})),
 	}),
 })));
 

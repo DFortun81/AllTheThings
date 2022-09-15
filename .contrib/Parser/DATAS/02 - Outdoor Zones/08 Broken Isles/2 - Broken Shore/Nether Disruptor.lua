@@ -17,7 +17,7 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["description"] = "Available for Blacksmithing, Leatherworking, and Tailoring Professions.\n\nYou must turn in the Commendation before this quest becomes available.",
 					["repeatable"] = true,
-					["sourceQuest"] = 47015,	-- Boon of the Nether Disruptor
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
 					["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 					["cost"] = {
 						{ "i", 147451, 1 },	-- Armorcrafter's Commendation

@@ -1020,10 +1020,6 @@ root("Zones", {
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
 						["sourceQuest"] = 12979,	-- Armor of Darkness
 					}),
-					q(13417, {	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
-						["u"] = NEVER_IMPLEMENTED,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(12973, {	-- The Brothers Bronzebeard
 						["qg"] = 30382,	-- Brann Bronzebeard
 						["coord"] = { 39.5, 56.3, THE_STORM_PEAKS },
@@ -1515,3 +1511,9 @@ root("Zones", {
 		}),
 	})),
 });
+
+root("HiddenQuestTriggers", m(NORTHREND, {
+	m(THE_STORM_PEAKS, {
+		a(q(13417)),	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
+	}),
+}));

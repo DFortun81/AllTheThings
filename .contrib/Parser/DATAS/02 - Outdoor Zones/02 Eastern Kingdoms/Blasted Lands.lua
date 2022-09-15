@@ -570,6 +570,10 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.0, 13.4, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						28857,	-- Blasted Lands: The Other Side of the World
+						28673,	-- Hero's Call: Blasted Lands!
+					},
 				}),
 				q(36307, {	-- Investigating the Invasion
 					["qg"] = 82270,	-- Vindicator Maraad

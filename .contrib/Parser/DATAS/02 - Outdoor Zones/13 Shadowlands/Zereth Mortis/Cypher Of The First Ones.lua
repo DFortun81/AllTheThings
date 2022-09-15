@@ -565,6 +565,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						i(189986, {	-- Armadillo Soul (SOUL!)
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
+						i(187421, {	-- Ashen Liniment
+							["timeline"] = { "added 9.2.7" },
+						}),
 						i(188793, {	-- Automated Cypher Analysis Tool
 							["questID"] = 65282,
 							["cost"] = { { "c", CYPHER, 150 }, },
@@ -639,6 +642,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 						}),
 						i(191039, {	-- Pocopoc Traveler
 							["cost"] = { { "c", CYPHER, 500 }, },
+						}),
+						i(190739, {	-- Provis Wax
+							["timeline"] = { "added 9.2.7" },
 						}),
 						i(187804, {	-- Recipe: Empty Kettle of Stone Soup (RECIPE!)
 							["cost"] = { { "c", CYPHER, 25 }, },

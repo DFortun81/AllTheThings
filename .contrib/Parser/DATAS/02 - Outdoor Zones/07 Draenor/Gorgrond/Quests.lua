@@ -1462,7 +1462,7 @@ _.Zones =
 					},
 				}),
 				q(33706, {	-- Laying Dionor to Rest (H)
-					["provider"] = { "n", 82225 },	-- Rakthoth
+					["provider"] = { "n", 82302 },	-- Birchus
 					["coord"] = { 52.8, 51.7, GORGROND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33695,	-- Taking the Death Bloom
