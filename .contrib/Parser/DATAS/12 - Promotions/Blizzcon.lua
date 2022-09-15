@@ -138,4 +138,7 @@ root("Promotions", n(-545, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Blizzc
 	pet(3053, {	-- Moon-Touched Netherwhelp
 		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
+	ach(14904, {	-- Netherwhelp Online
+		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
+	}),
 })));

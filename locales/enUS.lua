@@ -1186,8 +1186,11 @@ app.L = {
 		[-576] = "Interface\\Icons\\inv_archonpet",											-- StarCraft II: Legacy of the Void
 		[-577] = "Interface\\Icons\\INV_MISC_FILM_01",										-- Warcraft Movie
 		[-578] = app.asset("Expansion_CLASSIC"),											-- World of Warcraft 15th Anniversary
-		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass
+		[-579] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Dark Portal Pass (TBCC-DE)
 		[-580] = app.asset("Expansion_SL"),													-- Shadowlands Seasonal Promotions
+		[-581] = app.asset("Expansion_TBC"),												-- TBC Classic Deluxe Edition
+		[-582] = app.asset("Expansion_WOTLK"),												-- Northrend Heroic Upgrade ("Cheap")
+		[-583] = app.asset("Expansion_WOTLK"),												-- Northrend Epic Upgrade
 	-- PvP Headers
 		[-650] = 1455894,																	-- Rated Battlegrounds
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
@@ -1716,6 +1719,9 @@ app.L = {
 		[-578] = select(2, GetAchievementInfo(13917)),							-- WoW's 15th Anniversary
 		[-579] = "Dark Portal Pass",											-- Dark Portal Pass
 		[-580] = "Shadowlands Seasonal Promotions",								-- Shadowlands Seasonal Promotions
+		[-581] = "TBC Classic Deluxe Edition",									-- TBC Classic Deluxe Edition
+		[-582] = "WOTLK Northrend Heroic Upgrade",								-- WOTLK Northrend Heroic Upgrade ("Cheap")
+		[-583] = "WOTLK Northrend Epic Upgrade",								-- WOTLK Northrend Epic Upgrade
 	-- PvP Header
 		-- Special Season Tags
 		--[-650] = "Rated Battleground",										-- Listed under Cata PvP Seasons
