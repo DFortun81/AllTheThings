@@ -40,11 +40,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Classic
 				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 				-- TBC
-				q(9989, {	-- BETA Alien Spirits
-					i(28499),	-- Arakkoa Hunter's Supplies
-				}),
-				q(10061),	-- The Unyielding
-				q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership
 				q(10386),	-- The Fel Reaver Slayer
 				q(10387),	-- The Fel Reaver Slayer
 				q(10401),	-- Mission: End All, Be All [Horde]

@@ -3183,6 +3183,14 @@ end
 -- #endif
 
 -- #if AFTER TBC
+root("HiddenQuestTriggers", m(OUTLAND, {
+	m(SHATTRATH_CITY, {
+		q(9989, {	-- BETA Alien Spirits [triggers when completing 10917 "The Outcasts Plight"]
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+	}),
+}));
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10560),	-- Revered Among the Sha'tar

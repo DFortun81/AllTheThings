@@ -1188,8 +1188,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(24992, {	-- Escaped From Gilneas
-					["sourceQuest"] = 24980,	-- The Scarlet Palisade
-					["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing |cFFFFD700Darkhound Pounding|r.",
+					["sourceQuest"] = 24990,	-- Darkhound Pounding
+					["cr"] = 1548,	-- Cursed Darkhound
+					["description"] = "Quest is granted by getting in combat with a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),

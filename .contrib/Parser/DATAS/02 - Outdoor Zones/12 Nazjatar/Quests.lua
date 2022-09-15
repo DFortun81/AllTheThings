@@ -2671,7 +2671,7 @@ root("HiddenQuestTriggers", {
 	q(56701),	-- "Without Neri, we would have scattered with the current.  She brought us together."
 	q(56702),	-- (got this randomly in nazjatar @ 33.8,47.4)
 	q(56703),	-- "When the naga were keeping me in chains, I never thought I'd be free again.  Shows what I know, huh?"
-	q(56704),	-- (got this randomly in nazjatar)
+	q(56704),	-- "This Horde of yours sure reminds me a lot of the Unshackled."
 	q(56705),	-- "Azshara and her 'loyal subjects' are the worst kind of monsters.  We have to stop them here and now."
 	q(56706),	-- "Everyone I knew as a sprog is gone.  I've got a new family now, but I'll never forget the one I lost."
 	q(56707),	-- "Those sea giants can tell a mean tale... when you can make sense of what they're saying."

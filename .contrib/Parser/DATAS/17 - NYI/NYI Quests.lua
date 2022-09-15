@@ -6004,7 +6004,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62645, { ["name"] = "LFGDungeons - SL - Normal Random - Nth", }),	-- LFGDungeons - SL - Normal Random - Nth
 				q(62646, { ["name"] = "LFGDungeons - SL - Raid Finder - 1st", }),	-- LFGDungeons - SL - Raid Finder - 1st
 				q(62647, { ["name"] = "LFGDungeons - SL - Raid Finder - Nth", }),	-- LFGDungeons - SL - Raid Finder - Nth
-				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),	-- Path of Ascension: Trial of Humility
 				q(60023, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(60024, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(60025, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E

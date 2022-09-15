@@ -1123,6 +1123,15 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
+									q(63192, {	-- Path of Ascension: Trial of Humility
+										-- TODO: verify the Tier requirement for this... one random quest per week... good luck!
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
 								}),
 								n(REWARDS, {
 									n(172408, {	-- Alderyn [& Myn'ir]

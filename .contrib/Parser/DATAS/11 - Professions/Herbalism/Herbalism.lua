@@ -179,6 +179,11 @@ profession(HERBALISM, {
 			q(48027, {	-- The Glory of Argus
 				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 151856 },	-- Withered Astral Glory
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["g"] = {
 					recipe(247812),	-- Astral Glory (Rank 1)
 				},
@@ -187,6 +192,11 @@ profession(HERBALISM, {
 				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 151857 },	-- Adolescent Astral Glory
 				["sourceQuest"] = 48027,	-- The Glory of Argus
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["g"] = {
 					recipe(247813),	-- Astral Glory (Rank 2)
 				},
@@ -195,6 +205,11 @@ profession(HERBALISM, {
 				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 151858 },	-- Astral Glory Root Cluster
 				["sourceQuest"] = 48028,	-- Youthful Resistance
+				["maps"] = {
+					885,	-- Antoran Wastes
+					830,	-- Krokuun
+					882,	-- Eredath
+				},
 				["g"] = {
 					recipe(247814),	-- Astral Glory (Rank 3)
 				},
