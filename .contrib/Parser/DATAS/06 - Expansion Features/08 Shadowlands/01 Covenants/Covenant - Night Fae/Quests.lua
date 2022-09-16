@@ -55,6 +55,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(62560, {	-- Growing in Power
 				["sourceQuests"] = {
 					59071,	-- Mending a Broken Hart
+					60272,	-- The Weak Link (not 100% on this, but it's as far in the chain at which I am able to accept this)
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry

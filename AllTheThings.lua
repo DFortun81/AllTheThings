@@ -14607,8 +14607,10 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		parent.total = (parent.total or 0) + totalChange;
 		parent.progress = (parent.progress or 0) + progChange;
 		-- app.PrintDebug("END:",parent.progress,parent.total)
-		-- verify visibility of the group, always a 'group' since it is already a parent of another group
-		SetGroupVisibility(rawget(parent, "parent"), parent);
+		-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
+		if not parent.window then
+			SetGroupVisibility(rawget(parent, "parent"), parent);
+		end
 		AdjustParentProgress(parent, progChange, totalChange);
 	end
 end
