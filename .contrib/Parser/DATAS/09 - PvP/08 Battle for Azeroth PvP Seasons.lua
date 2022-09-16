@@ -825,8 +825,24 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(165807)),	-- Sinister Gladiator's Safeguard
 				}),
 			}),
-			--[[n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
+					i(165051, {	-- Sinister Gladiator's Cape (A)
+					}),
+					i(165050, {	-- Sinister Gladiator's Drape (A)
+					}),
+					i(165049, {	-- Sinister Gladiator's Greatcloak (A)
+					}),
+					i(165048, {	-- Sinister Gladiator's Shawl (A)
+					}),
+					i(165047, {	-- Sinister Gladiator's Cape (H)
+					}),
+					i(165046, {	-- Sinister Gladiator's Drape (H)
+					}),
+					i(165045, {	-- Sinister Gladiator's Greatcloak (H)
+					}),
+					i(165044, {	-- Sinister Gladiator's Shawl (H)
+					}),
 				}),
 				filter(CLOTH, {
 					i(164897),	-- Sinister Gladiator's Silk Amice (A)
@@ -923,48 +939,24 @@ _.PVP =
 				filter(MAIL, {
 					i(164841),	-- Sinister Gladiator's Chain Armbands (A)
 					i(164814),	-- Sinister Gladiator's Chain Armor (A)
-					i(164878),	-- Sinister Gladiator's Chain Chestguard (A)
-					i(164901),	-- Sinister Gladiator's Chain Clasp (A)
-					i(166596),	-- Sinister Gladiator's Chain Coif (A)
-					i(164882),	-- Sinister Gladiator's Chain Footguards (A)
 					i(164823),	-- Sinister Gladiator's Chain Gauntlets (A)
 					i(164887),	-- Sinister Gladiator's Chain Handguards (A)
-					i(166620),	-- Sinister Gladiator's Chain Hauberk (A)
-					i(166604),	-- Sinister Gladiator's Chain Headgear (A)
-					i(164889),	-- Sinister Gladiator's Chain Headpiece (A)
 					i(164825),	-- Sinister Gladiator's Chain Helm (A)
 					i(164829),	-- Sinister Gladiator's Chain Leggings (A)
-					i(164893),	-- Sinister Gladiator's Chain Legguards (A)
-					i(166628),	-- Sinister Gladiator's Chainmail (A)
 					i(166653),	-- Sinister Gladiator's Chain Mantle (A)
-					i(166645),	-- Sinister Gladiator's Chain Pauldrons (A)
 					i(164818),	-- Sinister Gladiator's Chain Sabatons (A)
-					i(164898),	-- Sinister Gladiator's Chain Shoulderguards (A)
 					i(164834),	-- Sinister Gladiator's Chain Spaulders (A)
 					i(164837),	-- Sinister Gladiator's Chain Waistguard (A)
-					i(164905),	-- Sinister Gladiator's Chain Wristguards (A)
 					i(164802),	-- Sinister Gladiator's Chain Armbands (H)
 					i(164795),	-- Sinister Gladiator's Chain Armor (H)
-					i(164859),	-- Sinister Gladiator's Chain Chestguard (H)
-					i(164865),	-- Sinister Gladiator's Chain Clasp (H)
-					i(166592),	-- Sinister Gladiator's Chain Coif (H)
-					i(164860),	-- Sinister Gladiator's Chain Footguards (H)
 					i(164797),	-- Sinister Gladiator's Chain Gauntlets (H)
 					i(164861),	-- Sinister Gladiator's Chain Handguards (H)
-					i(166616),	-- Sinister Gladiator's Chain Hauberk (H)
-					i(166600),	-- Sinister Gladiator's Chain Headgear (H)
-					i(164862),	-- Sinister Gladiator's Chain Headpiece (H)
 					i(164798),	-- Sinister Gladiator's Chain Helm (H)
 					i(164799),	-- Sinister Gladiator's Chain Leggings (H)
-					i(164863),	-- Sinister Gladiator's Chain Legguards (H)
-					i(166624),	-- Sinister Gladiator's Chainmail (H)
 					i(166648),	-- Sinister Gladiator's Chain Mantle (H)
-					i(166640),	-- Sinister Gladiator's Chain Pauldrons (H)
 					i(164796),	-- Sinister Gladiator's Chain Sabatons (H)
-					i(164864),	-- Sinister Gladiator's Chain Shoulderguards (H)
 					i(164800),	-- Sinister Gladiator's Chain Spaulders (H)
 					i(164801),	-- Sinister Gladiator's Chain Waistguard (H)
-					i(164866),	-- Sinister Gladiator's Chain Wristguards (H)
 				}),
 				filter(PLATE, {
 					i(164840),	-- Sinister Gladiator's Plate Armguards (A)
@@ -1013,7 +1005,6 @@ _.PVP =
 					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
 			})),
-			--]]
 			n(QUESTS, {
 				q(53457, {	-- Quartermaster's Bounty
 					["providers"] = {
