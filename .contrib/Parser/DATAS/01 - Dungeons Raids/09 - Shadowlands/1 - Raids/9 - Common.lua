@@ -4,7 +4,10 @@
 
 root(ROOTS.Instances, tier(SL_TIER, {
 	n(ACHIEVEMENTS, {
-		ach(15684, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Fates of the Shadowlands Raids
+		ach(15684, bubbleDownSelf({	-- Fates of the Shadowlands Raids
+				["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+				["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			}, {
 			i(190170),	-- Jigglesworth Sr. (MOUNT!)
 			ach(15663, {	-- Fate of Nathria
 				crit(1),	-- Huntsman Altimor
@@ -44,7 +47,11 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				crit(11),	-- The Jailer
 			}),
 		})),
-		ach(15685, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Heroic: Fates of the Shadowlands Raids
+		ach(15685, bubbleDownSelf({	-- Heroic: Fates of the Shadowlands Raids
+			["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+		}, {
+			title(464),	-- <Name>, Hero of Fate
 			ach(15664, {	-- Heroic: Fate of Nathria
 				crit(1),	-- Huntsman Altimor
 				crit(2),	-- Artificer Xy'mox
@@ -82,11 +89,11 @@ root(ROOTS.Instances, tier(SL_TIER, {
 				crit(10),	-- Rygelon
 				crit(11),	-- The Jailer
 			}),
-			["groups"] = {
-				title(464),	-- <Name>, Hero of Fate
-			},
 		})),
-		ach(15687, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {	-- Mythic: Fates of the Shadowlands Raids
+		ach(15687, bubbleDownSelf({	-- Mythic: Fates of the Shadowlands Raids
+			["timeline"] = { ADDED_SLS4, REMOVED_DFREL },
+			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+		}, {
 			ach(15665, {	-- Mythic: Fate of Nathria
 				crit(1),	-- Huntsman Altimor
 				crit(2),	-- Artificer Xy'mox

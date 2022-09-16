@@ -1393,7 +1393,7 @@ root("PVP", pvp(tier(SL_TIER, {
 			}),
 		}),
 	})),
-	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4 } }, {
+	n(SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_SLS4, REMOVED_DFPRE } }, {
 		n(PVP_ASPIRANT, {
 			n(BACK, {
 				i(192390),	-- Eternal Aspirant's Cape
