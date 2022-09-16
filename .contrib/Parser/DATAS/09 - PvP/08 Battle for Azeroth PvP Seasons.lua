@@ -825,7 +825,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(165807)),	-- Sinister Gladiator's Safeguard
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 450, ["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
 					i(165051, {	-- Sinister Gladiator's Cape (A)
 					}),
@@ -1471,7 +1471,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(167384)),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842 }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842, ["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				n(BACK, {
 					-- Was given randomly after winning a pvp match while above 2400 rating
 					i(167373, {	-- Notorious Gladiator's Cape (A)
@@ -1492,56 +1492,59 @@ _.PVP =
 					}),
 				}),
 				filter(CLOTH, {
+					i(167406),	-- Notorious Gladiator's Silk Cap (A)
 					i(167352),	-- Notorious Gladiator's Silk Amice (A)
 					i(167429),	-- Notorious Gladiator's Silk Armor (A)
 					i(167358),	-- Notorious Gladiator's Silk Bracers (A)
-					i(167406),	-- Notorious Gladiator's Silk Cap (A)
-					i(167421),	-- Notorious Gladiator's Silk Chestwrap (A)
+					i(167277),	-- Notorious Gladiator's Silk Gloves (A)
 					i(167291),	-- Notorious Gladiator's Silk Cord (A)
+					i(167283),	-- Notorious Gladiator's Silk Leggings (A)
+					i(167336),	-- Notorious Gladiator's Silk Slippers (A)
+					i(167401),	-- Notorious Gladiator's Silk Cap (H)
+					i(167425),	-- Notorious Gladiator's Silk Armor (H)
+					i(167303),	-- Notorious Gladiator's Silk Amice (H)
+					i(167304),	-- Notorious Gladiator's Silk Bracers (H)
+					i(167236),	-- Notorious Gladiator's Silk Gloves (H)
+					i(167241),	-- Notorious Gladiator's Silk Cord (H)
+					i(167238),	-- Notorious Gladiator's Silk Leggings (H)
+					i(167299),	-- Notorious Gladiator's Silk Slippers (H)
+					
+					-- You might gotten all 50 different Items, but I'm going with 16
+					i(167421),	-- Notorious Gladiator's Silk Chestwrap (A)
 					i(167398),	-- Notorious Gladiator's Silk Cover (A)
 					i(167343),	-- Notorious Gladiator's Silk Cowl (A)
 					i(167294),	-- Notorious Gladiator's Silk Cuffs (A)
 					i(167439),	-- Notorious Gladiator's Silk Epaulets (A)
-					i(167277),	-- Notorious Gladiator's Silk Gloves (A)
 					i(167341),	-- Notorious Gladiator's Silk Handguards (A)
 					i(167390),	-- Notorious Gladiator's Silk Helm (A)
 					i(167279),	-- Notorious Gladiator's Silk Hood (A)
-					i(167283),	-- Notorious Gladiator's Silk Leggings (A)
 					i(167288),	-- Notorious Gladiator's Silk Mantle (A)
 					i(167331),	-- Notorious Gladiator's Silk Raiment (A)
 					i(167267),	-- Notorious Gladiator's Silk Robe (A)
 					i(167355),	-- Notorious Gladiator's Silk Sash (A)
 					i(167455),	-- Notorious Gladiator's Silk Shoulderguards (A)
 					i(167447),	-- Notorious Gladiator's Silk Shoulderpads (A)
-					i(167336),	-- Notorious Gladiator's Silk Slippers (A)
 					i(167272),	-- Notorious Gladiator's Silk Treads (A)
 					i(167347),	-- Notorious Gladiator's Silk Trousers (A)
 					i(167413),	-- Notorious Gladiator's Silk Vestments (A)
-					i(167303),	-- Notorious Gladiator's Silk Amice (H)
-					i(167425),	-- Notorious Gladiator's Silk Armor (H)
-					i(167304),	-- Notorious Gladiator's Silk Bracers (H)
-					i(167401),	-- Notorious Gladiator's Silk Cap (H)
 					i(167417),	-- Notorious Gladiator's Silk Chestwrap (H)
-					i(167241),	-- Notorious Gladiator's Silk Cord (H)
 					i(167393),	-- Notorious Gladiator's Silk Cover (H)
 					i(167301),	-- Notorious Gladiator's Silk Cowl (H)
 					i(167240),	-- Notorious Gladiator's Silk Cuffs (H)
 					i(167433),	-- Notorious Gladiator's Silk Epaulets (H)
-					i(167236),	-- Notorious Gladiator's Silk Gloves (H)
 					i(167300),	-- Notorious Gladiator's Silk Handguards (H)
 					i(167385),	-- Notorious Gladiator's Silk Helm (H)
 					i(167237),	-- Notorious Gladiator's Silk Hood (H)
-					i(167238),	-- Notorious Gladiator's Silk Leggings (H)
 					i(167239),	-- Notorious Gladiator's Silk Mantle (H)
 					i(167298),	-- Notorious Gladiator's Silk Raiment (H)
 					i(167234),	-- Notorious Gladiator's Silk Robe (H)
 					i(167305),	-- Notorious Gladiator's Silk Sash (H)
 					i(167449),	-- Notorious Gladiator's Silk Shoulderguards (H)
 					i(167441),	-- Notorious Gladiator's Silk Shoulderpads (H)
-					i(167299),	-- Notorious Gladiator's Silk Slippers (H)
 					i(167235),	-- Notorious Gladiator's Silk Treads (H)
 					i(167302),	-- Notorious Gladiator's Silk Trousers (H)
 					i(167409),	-- Notorious Gladiator's Silk Vestments (H)
+					--]]
 				}),
 				filter(LEATHER, {
 					i(167281),	-- Notorious Gladiator's Leather Helm (A)
@@ -1581,55 +1584,60 @@ _.PVP =
 				}),
 				filter(PLATE, {
 					i(167295),	-- Notorious Gladiator's Plate Armguards (A)
+					i(167276),	-- Notorious Gladiator's Plate Gauntlets (A)
+					i(167290),	-- Notorious Gladiator's Plate Girdle (A)
+					i(167282),	-- Notorious Gladiator's Plate Legguards (A)
+					i(167271),	-- Notorious Gladiator's Plate Warboots (A)
+					i(167265),	-- Notorious Gladiator's Plate Armguards (H)
+					i(167261),	-- Notorious Gladiator's Plate Gauntlets (H)
+					i(167264),	-- Notorious Gladiator's Plate Girdle (H)
+					i(167262),	-- Notorious Gladiator's Plate Legguards (H)
+					i(167260),	-- Notorious Gladiator's Plate Warboots (H)
+					
+					-- You might gotten all 50 different Items, but I'm going with 16
+					-- Only those above are confirmed.
 					i(167414),	-- Notorious Gladiator's Plate Armor (A)
-					i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
+					i(167397),	-- Notorious Gladiator's Plate Greathelm (A)
+					i(167351),	-- Notorious Gladiator's Plate Shoulders (A)
+					i(167412),	-- Notorious Gladiator's Plate Armor (H)
+					i(167396),	-- Notorious Gladiator's Plate Greathelm (H)
+					i(167327),	-- Notorious Gladiator's Plate Shoulders (H)
+					--[[i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
 					i(167332),	-- Notorious Gladiator's Plate Chestguard (A)
 					i(167268),	-- Notorious Gladiator's Plate Chestpiece (A)
 					i(167430),	-- Notorious Gladiator's Plate Chestplate (A)
 					i(167354),	-- Notorious Gladiator's Plate Clasp (A)
-					i(167276),	-- Notorious Gladiator's Plate Gauntlets (A)
-					i(167290),	-- Notorious Gladiator's Plate Girdle (A)
 					i(167340),	-- Notorious Gladiator's Plate Gloves (A)
 					i(167397),	-- Notorious Gladiator's Plate Greathelm (A)
 					i(167335),	-- Notorious Gladiator's Plate Greaves (A)
 					i(167330),	-- Notorious Gladiator's Plate Headcover (A)
 					i(167266),	-- Notorious Gladiator's Plate Helm (A)
 					i(167346),	-- Notorious Gladiator's Plate Leg Armor (A)
-					i(167282),	-- Notorious Gladiator's Plate Legguards (A)
 					i(167287),	-- Notorious Gladiator's Plate Pauldrons (A)
 					i(167446),	-- Notorious Gladiator's Plate Shoulderguards (A)
 					i(167351),	-- Notorious Gladiator's Plate Shoulders (A)
 					i(167405),	-- Notorious Gladiator's Plate Skullguard (A)
 					i(167438),	-- Notorious Gladiator's Plate Spaulders (A)
 					i(167359),	-- Notorious Gladiator's Plate Vambraces (A)
-					i(167271),	-- Notorious Gladiator's Plate Warboots (A)
 					i(167389),	-- Notorious Gladiator's Plate Warhelm (A)
 					i(167454),	-- Notorious Gladiator's Shoulderplates (A)
-					i(167265),	-- Notorious Gladiator's Plate Armguards (H)
-					i(167412),	-- Notorious Gladiator's Plate Armor (H)
 					i(167420),	-- Notorious Gladiator's Plate Breastplate (H)
 					i(167323),	-- Notorious Gladiator's Plate Chestguard (H)
 					i(167259),	-- Notorious Gladiator's Plate Chestpiece (H)
 					i(167428),	-- Notorious Gladiator's Plate Chestplate (H)
 					i(167328),	-- Notorious Gladiator's Plate Clasp (H)
-					i(167261),	-- Notorious Gladiator's Plate Gauntlets (H)
-					i(167264),	-- Notorious Gladiator's Plate Girdle (H)
 					i(167325),	-- Notorious Gladiator's Plate Gloves (H)
-					i(167396),	-- Notorious Gladiator's Plate Greathelm (H)
 					i(167324),	-- Notorious Gladiator's Plate Greaves (H)
 					i(167322),	-- Notorious Gladiator's Plate Headcover (H)
 					i(167258),	-- Notorious Gladiator's Plate Helm (H)
 					i(167326),	-- Notorious Gladiator's Plate Leg Armor (H)
-					i(167262),	-- Notorious Gladiator's Plate Legguards (H)
 					i(167263),	-- Notorious Gladiator's Plate Pauldrons (H)
 					i(167444),	-- Notorious Gladiator's Plate Shoulderguards (H)
-					i(167327),	-- Notorious Gladiator's Plate Shoulders (H)
 					i(167404),	-- Notorious Gladiator's Plate Skullguard (H)
 					i(167436),	-- Notorious Gladiator's Plate Spaulders (H)
 					i(167329),	-- Notorious Gladiator's Plate Vambraces (H)
-					i(167260),	-- Notorious Gladiator's Plate Warboots (H)
 					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
-					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
+					i(167452),	-- Notorious Gladiator's Shoulderplates (H)--]]
 				}),
 			})),
 			n(QUESTS, {
