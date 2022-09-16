@@ -14,7 +14,10 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		ach(12447, {	-- Allied Races: Void Elf
 		ach(13207, {	-- Allied Races: Vulpera
 		--]]
-		ach(15654, bubbleDownSelf({ ["timeline"] = { "added 9.2.5" } }, {
+		ach(15654, bubbleDownSelf({	-- Back from the Beyond
+			["timeline"] = { "added 9.2.5", "10.0.3" },
+			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+		},{
 			title(463),	-- Veilstrider <Name>
 			crit(1),	-- Castle Nathria
 			crit(2),	-- Chains of Domination
