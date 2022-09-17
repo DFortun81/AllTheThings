@@ -3049,6 +3049,28 @@ root("Zones", {
 							i(30622, {	-- Flamewrought Key
 								["timeline"] = { "removed 4.2.0.10000" },
 								["races"] = ALLIANCE_ONLY,
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185687;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
 								["timeline"] = { "removed 4.0.1.10000" },
@@ -3140,7 +3162,29 @@ root("Zones", {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
 								["timeline"] = { "removed 4.2.0.10000" },
-								["races"] = ALLIANCE_ONLY,
+								["races"] = HORDE_ONLY,
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185686;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							i(29197, {	-- Glyph of Fire Warding
 								["timeline"] = { "removed 5.0.4" },

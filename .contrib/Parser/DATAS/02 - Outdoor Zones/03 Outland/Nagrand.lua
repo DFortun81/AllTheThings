@@ -529,6 +529,13 @@ root("Zones", {
 						["coord"] = { 61.6, 67.0, NAGRAND },
 						["sourceQuest"] = 10109,	-- I Must Have Them!
 						["groups"] = {
+							objective(1, {	-- Attempt to Steal Egg
+								["provider"] = { "i", 27808 },	-- Jump-a-tron 4000 Key
+								["description"] = "You can also just fly up there if you have flying.",
+							}),
+							objective(2, {	-- Severed Talon of the Matriarch
+								["provider"] = { "i", 27841 },	-- Severed Talon of the Matriarch
+							}),
 							i(28030),	-- Spell-Slinger's Protector
 							i(28032),	-- Delicate Green Poncho
 							i(28031),	-- Nomad's Woven Cloak
