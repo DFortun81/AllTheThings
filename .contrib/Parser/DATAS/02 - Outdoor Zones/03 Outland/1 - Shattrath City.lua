@@ -1651,6 +1651,26 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
 								["timeline"] = { "removed 4.2.0.10000" },
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(185692);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.cachedOtherID then
+										_.CacheField(t, "itemID", 185692);
+										t.cachedOtherID = 1;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
 							i(29179),	-- Xi'ri's Gift
