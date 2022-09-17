@@ -1050,3 +1050,18 @@ i(193588);	-- Timewalker's Hearthstone
 -- NYI --
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
+
+
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER TBC
+i(184871);	-- Dark Portal
+i(38233);	-- Path of Illidan
+-- #endif
+-- #if AFTER WRATH
+i(40110);	-- Haunted Momento
+i(198647);	-- Fishspeaker's Lucky Lure
+-- #endif
+-- #endif

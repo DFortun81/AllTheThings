@@ -63,22 +63,29 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 			n(QUESTS, {
 				-- TODO: Find quest giver information for A Desperate Alliance / Desperate Research, all I have resource-wise is "Commoners in Major Cities".
 				q(12753, {	-- A Desperate Alliance [Dwarf]
+					["qg"] = 20102,	-- Goblin Commoner
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 					["races"] = { DWARF },
 					["lvl"] = 65,
 				}),
-				q(12753, {	-- A Desperate Alliance [Night Elf]
+				q(12772, {	-- A Desperate Alliance [Night Elf]
+					["qg"] = 19173,	-- Night Elf Commoner
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
+					["maps"] = { DARNASSUS },
 					["races"] = { NIGHTELF },
 					["lvl"] = 65,
 				}),
 				q(12775, {	-- A Desperate Alliance [Human]
+					["qg"] = 18927,	-- Human Commoner
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 65,
 				}),
 				q(12777, {	-- A Desperate Alliance [Draenei]
+					["qg"] = 18927,	-- Human Commoner
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = { DRAENEI },
 					["lvl"] = 65,
 				}),
@@ -192,6 +199,7 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 				q(12616, {	-- Chamber of Secrets
 					["qg"] = 16285,	-- Argent Emissary <The Argent Dawn>
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
+					["maps"] = { KARAZHAN },
 					["lvl"] = 70,
 					["groups"] = {
 						i(40354, {	-- Monster Slayer's Kit
@@ -956,7 +964,7 @@ root("WorldEvents", applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(-540, -- The
 				["crs"] = {
 					16380,	-- Bone Witch
 					14697,	-- Lumbering Horror
-					16143,	-- Shadow of Doom
+					16379,	-- Spirit of the Damned
 				},
 				["groups"] = {
 					i(43083, {	-- Blessed Greaves of Undead Slaying

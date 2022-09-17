@@ -1486,3 +1486,16 @@ i(192557, 334482);	-- Restoration Deathwalker
  
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
+
+
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER TBC
+i(184865, 348459);	-- Reawakened Phase-Hunter
+-- #endif
+-- #if AFTER WRATH
+i(192455, 372677);	-- Kalu'ak Whalebone Glider
+-- #endif
+-- #endif

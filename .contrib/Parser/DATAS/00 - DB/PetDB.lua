@@ -1093,3 +1093,13 @@ p(3177, {	-- Drakks (PET!)
 p(3175),	-- Murkastrasza (PET!)
 p(3249, {			-- Lil' Ursoc
 --]]
+
+
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER WRATH
+pet(198665, 384796);	-- Pebble's Pebble
+-- #endif
+-- #endif
