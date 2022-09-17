@@ -2606,9 +2606,10 @@ root("Zones", m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	}),
 })));
 
-root("HiddenQuestTriggers", {
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, { m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } },{
 --	LOOT QUESTS
 	q(57143),	-- looting an Eel Filet
+	q(57144),	-- looting Barnacled Bag of Goods
 	q(57145),	-- looting Voidcaster's Supply Bag
 
 --	RECRUITMENT QUESTS
@@ -2722,4 +2723,4 @@ root("HiddenQuestTriggers", {
 	q(56723),	-- Killed Zomera
 	q(56721),	-- Killed Osgen
 	q(56727),	-- Killed Ungormath
-});
+}))}));

@@ -143,7 +143,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56745),	--
 				q(56766),	--
 				q(56844),	--
-				q(57144),	--
 				-- 8.2.5
 				q(57550),	--
 				-- 8.3.0
@@ -156,7 +155,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56068),	--
 				q(56069),	--
 				q(61923),	--
-				q(61935),	--
 				q(62165),	-- Tal-Inara's Call
 				q(62166),	-- Tal-Inara's Call
 				q(62377),	--
