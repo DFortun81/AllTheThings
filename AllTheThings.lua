@@ -2448,9 +2448,10 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 	local coord;
 	local mapID = app.GetCurrentMapID();
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
-	local covID, covData = C_Covenants.GetActiveCovenantID();
+	local covID, covData, covRenown = C_Covenants.GetActiveCovenantID();
 	if covID and covID > 0 then
 		covData = C_Covenants.GetCovenantData(covID);
+		covRenown = C_CovenantSanctumUI.GetRenownLevel();
 	end
 	if position then
 		local x,y = position:GetXY();
@@ -2471,7 +2472,8 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef)
 		"lvl:"..app.Level,
 		"u:"..tostring(questRef and questRef.u),
 		"sq:"..app.SourceQuestString(questRef or id),
-		"cov:"..(covData and covData.name or "N/A");
+		"lq:"..(app.LastQuestTurnedIn or ""),
+		"cov:"..(covData and covData.name or "N/A")..(covRenown and ":"..covRenown or ""),
 		mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??",
 		coord and ("coord:"..coord) or "coord:??",
 		"ver:"..app.Version,
@@ -24277,6 +24279,7 @@ app.events.CRITERIA_UPDATE = function(...)
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	-- print("QUEST_TURNED_IN")
+	app.LastQuestTurnedIn = questID;
 	app.RefreshQuestInfo(questID);
 end
 app.events.QUEST_LOG_UPDATE = function()
