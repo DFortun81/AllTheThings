@@ -73,7 +73,10 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
             match thing:
                 case Things.Achievements:
                     # Achievements have names in the same db
-                    thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
+                    try:
+                        thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['Title_lang[0]']}\n")
                 case Things.Factions:
                     # Factions have names in the same db
                     try:
