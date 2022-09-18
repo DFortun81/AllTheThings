@@ -209,7 +209,7 @@ def create_raw_file(thing: Things) -> None:
             with open(raw_path, "r+") as raw_file:
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
-                difference = sorted(set(thing_list) - set(old_lines), key=float)
+                difference = sorted(set(thing_list) - set(old_lines), key=lambda x: (float(x.split(",")[0])))
                 if difference:
                     raw_file.write(build)
                     raw_file.writelines(difference)
