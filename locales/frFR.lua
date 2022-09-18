@@ -1262,6 +1262,7 @@ for key,value in pairs({
 	[192060] = "L’enclume de Fjorn",	-- Fjorn's Anvil
 	[192072] = "Caisse de harpons",	-- Harpoon Crate
 	[192833] = "Possessions de Bridenbrad",	-- Bridenbrad's Possessions
+	[193051] = "Œuf de nérubien du Fléau",	-- Nerubian Scourge Egg
 	[193195] = "Cristal vibrant",	-- Pulsing Crystal
 	[193400] = "Pile de bombes en saronite",	-- Saronite Bomb Stack
 	[194032] = "Feu de joie de l'Alliance",	-- Alliance Bonfire

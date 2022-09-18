@@ -1266,6 +1266,7 @@ for key, value in pairs({
 	[192060] = "弗约恩之砧",	-- Fjorn's Anvil	--TODO: This was manually translated
 	[192072] = "鱼叉箱",	-- Harpoon Crate
 	[192833] = "布雷登布莱德的物品",	-- Bridenbrad's Possessions
+	[193051] = "天灾蛛魔之卵",	-- Nerubian Scourge Egg
 	[193195] = "脉动的水晶",	-- Pulsing Crystal
 	[193400] = "萨隆邪铁炸弹堆",	-- Saronite Bomb Stack
 	[194032] = "联盟篝火",	-- Alliance Bonfire
