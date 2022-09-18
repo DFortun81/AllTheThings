@@ -7,35 +7,36 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond
 			["timeline"] = { "added 9.2.5", REMOVED_DFREL },
 			["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				14715,	-- Castle Nathria
+				14961,	-- Chains of Domination
+				15647,	-- Dead Men Tell Some Tales
+				15178,	-- Fake It 'Til You Make It
+				15336,	-- From A to Zereth
+				15079,	-- Many, Many Things
+				15651,	-- Myths of the Shadowlands Dungeons
+				15035,	-- On the Offensive
+				15646,	-- Re-Re-Re-Renowned
+				15025,	-- Sanctum Superior
+				15126,	-- Sanctum of Domination
+				15259,	-- Secrets of the First Ones
+				15417,	-- Sepulcher of the First Ones
+				15649,	-- Shadowlands Dilettante
+				15324,	-- Tower Ranger
+				15648,	-- Walking in Maw-mphis
+			}},
 		},{
 			title(463),	-- Veilstrider <Name>
-			crit(1),	-- Castle Nathria
-			crit(2),	-- Chains of Domination
-			crit(3),	-- Dead Men Tell Some Tales
-			crit(4),	-- Fake It 'Til You Make It
-			crit(5),	-- From A to Zereth
-			crit(6),	-- Many, Many Things
-			crit(7),	-- Myths of the Shadowlands Dungeons
-			crit(8),	-- On the Offensive
-			crit(9),	-- Re-Re-Re-Renowned
-			crit(10),	-- Sanctum Superior
-			crit(11),	-- Sanctum of Domination
-			crit(12),	-- Secrets of the First Ones
-			crit(13),	-- Sepulcher of the First Ones
-			crit(14),	-- Shadowlands Dilettante
-			crit(15),	-- Tower Ranger
-			crit(16),	-- Walking in Maw-mphis
 		})),
 		ach(14315, {	-- Shadowlands Diplomat
 			-- Meta Achievement
-			["sym"] = {
-				{"meta_achievement",
-					14335,	-- The Ascended
-					14336,	-- Undying Army
-					14338,	-- Court of Harvesters
-					14337,	-- The Wild Hunt
-				},
-			},
+			["sym"] = {{"meta_achievement",
+				14335,	-- The Ascended
+				14336,	-- Undying Army
+				14338,	-- Court of Harvesters
+				14337,	-- The Wild Hunt
+			}},
 		}),
 	}),
 }));
