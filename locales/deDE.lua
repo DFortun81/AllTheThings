@@ -853,11 +853,15 @@ for key,value in pairs({
 		[-1009] = "Mythisch Alternative",							-- TODO: Mythic Alternative
 		[-1010] = "Gladiator Alternative",							-- TODO: Gladiator Alternative
 		[-1011] = "Elite Alternative",								-- TODO: Elite Alternative
-	-- Dragonflight
+	-- Temp
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
+	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1120] = "Maruuk",									-- Maruuk
+		--TODO: [-1110] = "Dragonscale Expedition",					-- Dragonscale Expedition
+		--TODO: [-1120] = "Maruuk Centaur",							-- Maruuk Centaur
 		--TODO: [-1121] = "Aylaag",									-- Aylaag
+		--TODO: [-1130] = "Iskaara Tuskarr",						-- Iskaara Tuskarr
+		--TODO: [-1140] = "Valdrakken Accord",						-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Der große Odyn und der Feuerlord",				-- Great Odyn and the Firelord
 		[-2201] = "Der Wanderer und die Schlange",					-- The Wanderer and the Serpent
