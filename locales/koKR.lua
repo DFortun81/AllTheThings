@@ -768,7 +768,9 @@ for key,value in pairs({
 		--TODO: [-543] = "Legion Invasions",						-- Legion Invasions
 		[-579] = "다크 포털 패스",										-- Dark Portal Pass
 		--TODO: [-580] = "Shadowlands Seasonal Promotions",			-- Shadowlands Seasonal Promotions
-		[-581] = "The Great Push 2 시즌이",							-- The Great Push: Season 2
+		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
+		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",	-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",	-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			--TODO: [-659] = "Aspirant Gear",						-- Aspirant PvP Gear (WoD, BfA)

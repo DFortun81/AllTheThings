@@ -754,7 +754,9 @@ for key,value in pairs({
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
 		[-579] = "Пропуск Темного портала",							-- Dark Portal Pass
 		[-580] = "Промо Shadowlands",								-- Shadowlands Seasonal Promotions
-		[-581] = "Great Push: Второй сезон",						-- The Great Push: Season 2
+		[-581] = "TBC Classic Deluxe",								-- TBC Classic Deluxe Edition
+		[-582] = "WotLK Classic Heroic",							-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "WotLK Classic Epic",								-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)

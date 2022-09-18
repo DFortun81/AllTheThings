@@ -141,11 +141,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 						["g"] = {
 							i(185972, {	-- Tormentor's Cache
-							i(185973),	-- Chain of Bahmethra (MOUNT!)
-							i(186977),	-- Beastcaller's Skull Crescent
-							i(186978),	-- Borrowed Eye Crescent
-							i(186562),	-- Tormentor's Manacled Backplate
-							i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
+								i(185973),	-- Chain of Bahmethra (MOUNT!)
+								i(186977),	-- Beastcaller's Skull Crescent
+								i(186978),	-- Borrowed Eye Crescent
+								i(186562),	-- Tormentor's Manacled Backplate
+								i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 							}),
 						},
 					}),
