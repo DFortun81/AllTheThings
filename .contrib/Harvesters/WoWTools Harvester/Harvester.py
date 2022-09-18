@@ -156,9 +156,15 @@ def get_existing_ids(thing: Things) -> list[str]:
         for line in categories_file:
             words = line.split(",")
             for word in words:
-                if any(prefix in word for prefix in thing2prefix[thing]):
-                    thing_id = re.sub("[^\\d^.]", "", word)
-                    existing_ids.append(thing_id + "\n")
+                if thing == Things.Quests:
+                    """Comment to Molkree: I tried different things but it seems this will take every letter of faction(, i.e check f,a,c,t... I tried to make () around the faction( but it didnt work either."""
+                    if any(prefix in thing2prefix[thing] for prefix in word):
+                        thing_id = re.sub("[^\\d^.]", "", word)
+                        existing_ids.append(thing_id + "\n")
+                else:
+                    if thing2prefix[thing] in word:
+                        thing_id = re.sub("[^\\d^.]", "", word)
+                        existing_ids.append(thing_id + "\n")
     return existing_ids
 
 
