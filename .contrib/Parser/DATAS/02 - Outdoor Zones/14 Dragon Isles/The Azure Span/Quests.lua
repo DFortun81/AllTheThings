@@ -385,10 +385,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			n(-1098, {	-- Side Quests
 					-- SIDE 1
 				q(66227, {	-- Some Good Fishing
-					-- PROFESSIONS FISHING
 					["sourceQuests"] = { 65686 },	-- To the Azure Span
 					["provider"] = { "n", 185608 },	-- Khuri
 					["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
+					["requireSkill"] = FISHING,w
 				}),
 					-- SIDE 2
 				q(67174, {	-- Arcane Detection
@@ -417,6 +417,133 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 45.7, 39.8, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true, -- Probably? Need checking
 				}),
+
+
+					-- Further..
+				q(66141, {	-- Broken Traditions, Broken Bodies
+					["sourceQuests"] = { 66671 },	-- Path to Nowhere
+					["provider"] = { "n", 187301 },	-- Garz
+					["coord"] = { 63.2, 58.6, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true, -- Probably? Need checking
+				}),
+				q(66149, {	-- Elemental Influence
+					["sourceQuests"] = { 66141 },	-- Broken Traditions, Broken Bodies
+					["provider"] = { "n", 187308 },	-- Garz
+					["coord"] = { 63.5, 53.0, THE_AZURE_SPAN },
+				}),
+				q(66148, {	-- Former Furbolg Family
+					["sourceQuests"] = { 66141 },	-- Broken Traditions, Broken Bodies
+					["provider"] = { "n", 187308 },	-- Garz
+					["coord"] = { 63.5, 53.0, THE_AZURE_SPAN },
+				}),
+				q(66150, {	-- Rescuing Radza
+					["sourceQuests"] = { 66141 },	-- Broken Traditions, Broken Bodies
+					["provider"] = { "n", 187308 },	-- Garz
+					["coord"] = { 63.5, 53.0, THE_AZURE_SPAN },
+				}),
+				q(66151, {	-- His Stone Heart
+					["sourceQuests"] = {
+						66149,	-- Elemental Influence
+						66148,	-- Former Furbolg Family
+						66150,	-- Rescuing Radza
+					},
+					["provider"] = { "n", 187616 },	-- Radza Thunderclaw
+					["coord"] = { 60.9, 50.5, THE_AZURE_SPAN },
+					["g"] = {
+						i(198034),	-- Rustic Barrier
+						i(198003),	-- Ornate Steel Cleaver
+						i(198004),	-- Steel Draconic Gavel
+					},
+				}),
+				q(66152, {	-- Nowhere to Go
+					["sourceQuests"] = { 66151 },	-- His Stone Heart
+					["provider"] = { "n", 187535 },	-- Garz
+					["coord"] = { 61.0, 50.6, THE_AZURE_SPAN },
+					["g"] = {
+						-- Rustpin Den
+					},
+				}),
+
+
+				q(70627, {	-- What of the Winterpelt Clan?
+					["sourceQuests"] = { 66152 },	-- Nowhere to Go
+					["provider"] = { "n", 191123 },	-- Radza Thunderclaw
+					["coord"] = { 63.2, 58.7, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true,
+				}),
+
+
+
+					-- Further
+				q(66391, {	-- To the Ruins!
+					["sourceQuests"] = { 66671 },	-- Path to Nowhere
+					["provider"] = { "n", 188144 },	-- Rannan Korren
+					["coord"] = { 63.4, 58.0, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true, -- Probably? Need checking
+				}),
+				q(66353, {	-- R.A.D Anomalies
+					["sourceQuests"] = { 66391 },	-- To the Ruins!
+					["provider"] = { "n", 189171 },	-- Rannan Korren
+					["coord"] = { 65.0, 58.6, THE_AZURE_SPAN },
+					["g"] = {
+						i(191909),	-- R.A.D
+					},
+				}),
+				q(66352, {	-- What the Enemy Knows
+					["sourceQuests"] = { 66391 },	-- To the Ruins!
+					["provider"] = { "n", 189166 },	-- Lathos Sunband
+					["coord"] = { 65.0, 58.6, THE_AZURE_SPAN },
+				}),
+				q(66422, {	-- The Expedition Continues!
+					["sourceQuests"] = {
+						66353,	-- R.A.D Anomalies
+						66352,	-- What the Enemy Knows
+					},
+					["provider"] = { "n", 189166 },	-- Lathos Sunband
+					["coord"] = { 65.0, 58.6, THE_AZURE_SPAN },
+				}),
+				q(66423, {	-- Worries and Validations
+					["sourceQuests"] = { 66422 },	-- The Expedition Continues!
+					["provider"] = { "n", 189236 },	-- Lathos Sunband
+					["coord"] = { 65.6, 60.8, THE_AZURE_SPAN },
+				}),
+				q(66425, {	-- Arcane Overload
+					["sourceQuests"] = { 66423 },	-- Worries and Validations
+					["provider"] = { "n", 188845 },	-- Rannan Korren
+					["coord"] = { 65.6, 60.8, THE_AZURE_SPAN },
+					["g"] = {
+						i(192110),	-- R.A.D.D.E.R
+					},
+				}),
+				q(66426, {	-- Running Out of Time
+					["sourceQuests"] = { 66425 },	-- Arcane Overload
+					["provider"] = { "n", 189236 },	-- Lathos Sunband
+					["coord"] = { 65.6, 60.8, THE_AZURE_SPAN },
+				}),
+				q(66427, {	-- A Looming Menace
+					["sourceQuests"] = { 66426 },	-- Running Out of Time
+					["provider"] = { "n", 189792 },	-- Lathos Sunband
+					["coord"] = { 68.5, 60.5, THE_AZURE_SPAN },
+				}),
+				q(66428, {	-- Friendship For Granted
+					["sourceQuests"] = { 66427 },	-- A Looming Menace
+					["provider"] = { "n", 189791 },	-- Rannan Korren
+					["coord"] = { 69.5, 60.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(192475),	-- R.A.D.D.E.R.E.R
+					},
+				}),
+				q(66429, {	-- I Will Remember
+					["sourceQuests"] = { 66428 },	-- Friendship For Granted
+					["provider"] = { "n", 189791 },	-- Rannan Korren
+					["coord"] = { 69.5, 60.4, THE_AZURE_SPAN },
+					["g"] = {
+						-- Crit Ruins of Karnthar
+					},
+				}),
+
+
+
 					-- Side 5
 				q(66488, {	-- WANTED: Frigellus
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
@@ -478,13 +605,244 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						i(200926),	-- Compendium of Love
 					},
 				}),
-				-- SIDE 9
+
+
+
+
+
+				-- Three-Fall Lookout
 				q(71233, {	-- Falling Water
 					["sourceQuests"] = { 66239 },	-- Spreading Decay
 					["provider"] = { "n", 194613 },	-- Unkimi
 					["coord"] = { 28.5, 35.1, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,	-- Probably?
 				}),
+				q(66839, {	-- It's Brew Time
+					["sourceQuests"] = { 71233 },	-- Falling Water
+					["provider"] = { "n", 190672 },	-- Modurun Sixtoes
+					["coord"] = { 19.0, 23.3, THE_AZURE_SPAN },
+				}),
+				q(66838, {	-- It's Cold Up Here
+					["sourceQuests"] = { 71233 },	-- Falling Water
+					["provider"] = { "n", 190315 },	-- Willa Stronghinge
+					["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
+				}),
+				q(66837, {	-- Nothing for Breakfast
+					["sourceQuests"] = { 71233 },	-- Falling Water [Might be the only true SQ here..]
+					["provider"] = { "n", 190315 },	-- Willa Stronghinge
+					["coord"] = { 18.7, 24.5, THE_AZURE_SPAN },
+				}),
+				q(66843, {	-- Out of Lukh
+					["sourceQuests"] = { 71233 },	-- Falling Water
+					["provider"] = { "n", 190884 },	-- Branor Broadbraw
+					["coord"] = { 19.3, 26.9, THE_AZURE_SPAN },
+				}),
+				q(66844, {	-- The Great Shokhari
+					["sourceQuests"] = { 71233 },	-- Falling Water
+					["provider"] = { "n", 190892 },	-- Zon'Wogi
+					["coord"] = { 19.0, 24.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(193619),	-- Yipper (PET!)
+					},
+				}),
+
+
+				q(66841, {	-- A Shard of the Past
+					["sourceQuests"] = {
+						-- DIDNT POP UNTIL ALL IN?? Might be unlucky order..
+						66839,	-- It's Brew Time
+						66838,	-- It's Cold Up Here
+						66837,	-- Nothing for Breakfast
+						66843,	-- Out of Lukh
+						66844,	-- The Great Shokhari
+					},
+					["provider"] = { "n", 190666 },	-- Gannar Fullpack
+					["coord"] = { 19.2, 24.7, THE_AZURE_SPAN },
+				}),
+				q(66840, {	-- Water Safety
+					["sourceQuests"] = {
+						-- DIDNT POP UNTIL ALL IN?? Might be unlucky order..
+						66839,	-- It's Brew Time
+						66838,	-- It's Cold Up Here
+						66837,	-- Nothing for Breakfast
+						66843,	-- Out of Lukh
+						66844,	-- The Great Shokhari
+					},
+					["provider"] = { "n", 190679 },	-- Manny Read
+					["coord"] = { 18.5, 23.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(193569),	-- Water Testing Flask
+					},
+				}),
+
+				q(66845, {	-- Legendary Foil
+					["sourceQuests"] = {
+						66841,	-- A Shard of the Past
+						66840,	-- Water Safety
+					},
+					["provider"] = { "n", 190799 },	-- Manny Read
+					["coord"] = { 18.7, 24.4, THE_AZURE_SPAN },
+				}),
+				q(66846, {	-- The Heart of the Deck
+					["sourceQuests"] = { 66845 },	-- Legendary Foil
+					["provider"] = { "n", 191741 },	-- Mysterious Apparition
+					["coord"] = { 18.8, 24.4, THE_AZURE_SPAN },
+				}),
+
+
+
+				q(66261, {	-- A Minor Setback
+					["sourceQuests"] = { 66026 },	-- Urgent Action Required
+					["provider"] = { "n", 187764 },	-- Illusory Mage
+					["coord"] = { 21.0, 38.9, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true,
+				}),
+				q(66262, {	-- Waste Water Cleanup
+					["sourceQuests"] = { 66261 },	-- A Minor Setback
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66263, {	-- A Precision Approach
+					["sourceQuests"] = { 66262 },	-- Waste Water Cleanup
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66264, {	-- Disarmed and Docile
+					["sourceQuests"] = { 66262 },	-- Waste Water Cleanup
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66266, {	-- Filthy Mongrels
+					["sourceQuests"] = {
+						66263,	-- A Precision Approach
+						66264,	-- Disarmed and Docile
+					},
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66267, {	-- M.E.T.A
+					["sourceQuests"] = {
+						66263,	-- A Precision Approach
+						66264,	-- Disarmed and Docile
+					},
+					["provider"] = { "n", 198202 },	-- Illusory Mage
+					["coord"] = { 23.5, 41.8, THE_AZURE_SPAN },
+				}),
+				q(66265, {	-- Who's Next?
+					["sourceQuests"] = {
+						66263,	-- A Precision Approach
+						66264,	-- Disarmed and Docile
+					},
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+
+
+				q(66269, {	-- Just To Be Sure
+					["sourceQuests"] = {
+						66266,	-- Filthy Mongrels
+						66267,	-- M.E.T.A
+						66265,	-- Who's Next?
+					},
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66268, {	-- Third Try's the Charm
+					["sourceQuests"] = {
+						66266,	-- Filthy Mongrels
+						66267,	-- M.E.T.A
+						66265,	-- Who's Next?
+					},
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+				}),
+				q(66270, {	-- Whack-a-Gnoll
+					["sourceQuests"] = {
+						66269,	-- Just To Be Sure
+						66268,	-- Third Try's the Charm
+					},
+					["provider"] = { "n", 187463 },	-- Detry Hornswald
+					["coord"] = { 22.7, 41.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(198432),	-- Crude Wind Charm
+						i(198036),	-- Spineripper's Fang
+						i(197385),	-- Renewned Proto-Drake: Horned Jaw
+						-- Brackenhide Water Hole
+					},
+				}),
+
+
+
+				q(70166, {	-- The Joy of Painting
+					["sourceQuests"] = { 66026 },	-- Urgent Action Required
+					["provider"] = { "n", 194415 },	-- Rauvros
+					["coord"] = { 22.1, 36.8, THE_AZURE_SPAN },
+					["isBreadcrumb"] = true, -- Probably?
+					["g"] = {
+						i(198476),	-- Painting of Introduction
+					},
+				}),
+				q(70168, {	-- Sad Little Accidents
+					["sourceQuests"] = { 70166 },	-- The Joy of Painting
+					["provider"] = { "n", 194425 },	-- Ranpiata
+					["coord"] = { 7.9, 53.5, THE_AZURE_SPAN },
+				}),
+
+
+				q(65925, {	-- Culling the Cullers
+					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
+					["provider"] = { "n", 186157 },	-- Ruriq
+					["coord"] = { 44.8, 50.6, THE_AZURE_SPAN },
+				}),
+				q(65914, {	-- Mammoths Matter
+					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
+					["provider"] = { "n", 186157 },	-- Ruriq
+					["coord"] = { 44.8, 50.6, THE_AZURE_SPAN },
+				}),
+				q(65926, {	-- Tackling the Falls
+					["sourceQuests"] = {
+						65925,	-- Culling the Cullers
+						65914,	-- Mammoths Matter
+					},
+					["provider"] = { "n", 186157 },	-- Ruriq
+					["coord"] = { 45.4, 54.2, THE_AZURE_SPAN },
+				}),
+				q(65724, {	-- The Gleamfisher
+					["sourceQuests"] = { 65926 },	-- Tackling the Falls
+					["provider"] = { "n", 186386 },	-- Kauj
+					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
+				}),
+				q(65929, {	-- Ice Breakers
+					["sourceQuests"] = { 65724 },	-- The Gleamfisher
+					["provider"] = { "n", 186157 },	-- Ruriq
+					["coord"] = { 45.4, 54.2, THE_AZURE_SPAN },
+				}),
+				q(65928, {	-- Wayward Winds
+					["sourceQuests"] = { 65724 },	-- The Gleamfisher
+					["provider"] = { "n", 186386 },	-- Kauj
+					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
+				}),
+				q(65930, {	-- 	A Wrestle of Wind and Water
+					["sourceQuests"] = {
+						65929,	-- Ice Breakers
+						65928,	-- Wayward Winds
+					},
+					["provider"] = { "n", 186386 },	-- Kauj
+					["coord"] = { 45.5, 54.2, THE_AZURE_SPAN },
+				}),
+				q(66155, {	-- Ruriq's River Rapids Ride
+					["sourceQuests"] = { 65930 },	-- A Wrestle of Wind and Water
+					["provider"] = { "n", 186157 },	-- Ruriq
+					["coord"] = { 45.0, 54.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(199829),	-- Tuskarr Wading Boots
+						i(197607),	-- Windborne Velocidrake: Split Horns
+						-- Kauriq Gleamlet
+					},
+				}),
+
+
+
 				-- SIDE 10
 				q(71009, {	-- Elementary, My Dear Drakonid
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required
@@ -525,10 +883,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 			-- SIDE 13
 			q(66212, {	-- Fishing: Aileron Seamoth
-				-- Require Fishing?
 				["sourceQuests"] = { 65849 },	-- To Iskaara
 				["provider"] = { "n", 186126 },	-- Big Kinook
 				["coord"] = { 13.5, 48.6, THE_AZURE_SPAN },
+				["requireSkill"] = FISHING,
+				["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
 			}),
 			-- SIDE 14
 			q(66217, {	-- WANTED: Krojek the Shoreprowler
@@ -549,6 +908,67 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 14.1, 49.4, THE_AZURE_SPAN },
 				["isBreadcrumb"] = true,
 			}),
+			q(66781, {	-- A Matter of Taste
+				["sourceQuests"] = { 71234 },	-- Nook News
+				["provider"] = { "n", 190691 },	-- Mordigan Ironjaw
+				["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+			}),
+
+			q(66147, {	-- Crystals in the Water
+				["sourceQuests"] = { 66781 },	-- A Matter of Taste
+				["provider"] = { "n", 187156 },	-- Aelnara
+				["coord"] = { 7.6, 44.2, THE_AZURE_SPAN },
+			}),
+			q(66164, {	-- Fishy Fingers
+				["sourceQuests"] = { 66781 },	-- A Matter of Taste
+				["provider"] = { "n", 187198 },	-- LOU-C Fitzcog
+				["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+			}),
+			q(66154, {	-- Salivatory Samples
+				["sourceQuests"] = { 66781 },	-- A Matter of Taste
+				["provider"] = { "n", 187136 },	-- Examiner Rowe
+				["coord"] = { 7.7, 44.3, THE_AZURE_SPAN },
+			}),
+			q(66175, {	-- Field Experiment
+				["sourceQuests"] = {
+					66147,	-- Crystals in the Water
+					66164,	-- Fishy Fingers
+					66154,	-- Salivatory Samples
+				},
+				["provider"] = { "n", 187198 },	-- LOU-C Fitzcog
+				["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+			}),
+			q(66177, {	-- No Dwarf Left Behind
+				["sourceQuests"] = { 66175 },	-- Field Experiment
+				["provider"] = { "n", 187198 },	-- LOU-C Fitzcog
+				["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+			}),
+			q(66232, {	-- Afront 'Till A Salt
+				["sourceQuests"] = { 66175 },	-- Field Experiment
+				["provider"] = { "n", 186212 },	-- Wayun
+				["coord"] = { 7.5, 44.3, THE_AZURE_SPAN },
+			}),
+			q(66187, {	-- Mad Mordigan & The Crystal King
+				["sourceQuests"] = { 66177 },	-- No Dwarf Left Behind
+				["provider"] = { "n", 188030 },	-- Aelnara
+				["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(197381),	-- Renewed Proto-Drake: Gradient Horns
+				},
+			}),
+			q(66559, {	-- Back To Camp
+				["sourceQuests"] = { 66187 },	-- Mad Mordigan & The Crystal King
+				["provider"] = { "n", 188030 },	-- Aelnara
+				["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
+				["g"] = {
+					-- Gorloc Shore
+				},
+			}),
+
+
+
+
+
 			-- SIDE 16
 			q(66708, {	-- Riders in the Snow
 				["sourceQuests"] = { 65886 },	-- To Rhonin's Shield
@@ -607,5 +1027,18 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		-- Fourth Question
 		q(66571),	-- "Ate"
 		q(66570),	-- "Threw"
+
+		-- During The Heart of the Deck (66846)
+		-- First Question
+		q(66992),	-- "Draconic Form"
+		q(66993),	-- "My Form"
+		-- Second Question
+		q(66984),	-- "Destroyer"
+		q(66985),	-- "Guardian"
+		q(66983),	-- "Life-Giver"
+		-- Third Question
+		q(66994),	-- "Motivation"
+		q(66995),	-- "Adaptation"
+		q(66996),	-- "Reaction"
 	}),
 }));

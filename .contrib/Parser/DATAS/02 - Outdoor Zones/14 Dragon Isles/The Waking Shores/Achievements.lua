@@ -5,6 +5,25 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THE_WAKING_SHORES, {
 		n(ACHIEVEMENTS, {
+			ach(15696, {	-- Ruby Lifeshrine Loop: Bronze
+				["_quest"] = { 66679 },	-- Ruby Lifeshrine Loop
+			}),
+			ach(15697, {	-- Ruby Lifeshrine Loop: Silver
+				["_quest"] = { 66679 },	-- Ruby Lifeshrine Loop
+			}),
+			ach(15698, {	-- Ruby Lifeshrine Loop: Gold
+				["_quest"] = { 66679 },	-- Ruby Lifeshrine Loop
+			}),
+			ach(15702, {	-- Ruby Lifeshrine Loop Advanced: Bronze
+				["_quest"] = { 66692 },	-- Ruby Lifeshrine Loop	- Advanced
+			}),
+			ach(15703, {	-- Ruby Lifeshrine Loop Advanced: Silver
+				["_quest"] = { 66692 },	-- Ruby Lifeshrine Loop	- Advanced
+			}),
+			ach(15704, {	-- Ruby Lifeshrine Loop Advanced: Gold
+				["_quest"] = { 66692 },	-- Ruby Lifeshrine Loop	- Advanced
+			}),
+			--
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
 			}),

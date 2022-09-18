@@ -61,25 +61,54 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 
 
-			-- Profession??
-			q(69919, {	-- A Craft in Need
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
-			}),
-			q(69919, {	-- A Craft in Need
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
-				["g"] = {
-					i(193515),	-- Explorer's Cloth Robe
-					i(193390),	-- Resilient Leather Tunic
-					i(193394),	-- Adamant Scale Vest
-					i(189538),	-- Explorer's Plate Chestguard
-				},
+
+
+			-- LEVEL 70
+			-- SIDE 1
+			q(67007, {	-- Archival Assistance
+				["provider"] = { "o", 381687 },	-- Discarded Note
+				["coord"] = { 47.8, 46.6, VALDRAKKEN },
+				["isBreadcrumb"] = true,
 			}),
 
-			q(69981),	-- Customer Satisfaction
+
+			-- SIDE 2
+			q(71238, {	-- The Ruby Fest!
+				["provider"] = { "o", 382166 },	-- The Ruby Fest!
+				["coords"] = {
+					{ 47.8, 46.6, VALDRAKKEN },
+					{ 29.2, 67.9, VALDRAKKEN },
+					{ 72.6, 51.0, VALDRAKKEN },
+				},
+				["isBreadcrumb"] = true,
+			}),
+			q(70930, {	-- All Tea, No Shadeleaf
+				["sourceQuests"] = { 71238 },	-- The Ruby Fest!
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+				["isBreadcrumb"] = true,
+			}),
+
+
+			-- SIDE 3
+			q(70846, {	-- Dragonscale Expedition: Help Needed!
+				["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
+				["coord"] = { 40.8, 48.3, VALDRAKKEN },
+				["isBreadcrumb"] = true,
+			}),
+			q(70180, {	-- Jump-Start? Jump-Starting!
+				["sourceQuests"] = { 70846 },	-- Dragonscale Expedition: Help Needed!
+				["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+				["coord"] = { 84.2, 54.4, VALDRAKKEN },
+			}),
+			q(70845, {	-- In Tyr's Footsteeps
+				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
+				["isBreadcrumb"] = true,
+			}),
+
+
 		}),
 	}),
 })));

@@ -1893,13 +1893,16 @@ app.L = {
 		[-1009] = "Mythic Alternative",												-- Mythic Alternative
 		[-1010] = "Gladiator Alternative",											-- Gladiator Alternative
 		[-1011] = "Elite Alternative",												-- Elite Alternative
-	-- Dragonflight
+	-- Temp
 		[-1098] = "Side Quests",													-- Side Quests
 		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
+	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization
-		[-1120] = "Maruuk",															-- Maruuk
+		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
+ 		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Aylaag",															-- Aylaag
-		[-1140] = "Valdrakken",
+		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
+		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Great Odyn and the Firelord",
 		[-2201] = "The Wanderer and the Serpent",

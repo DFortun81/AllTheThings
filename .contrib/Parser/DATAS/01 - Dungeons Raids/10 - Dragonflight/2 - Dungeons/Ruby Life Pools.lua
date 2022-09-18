@@ -15,6 +15,11 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 					["provider"] = { "n", 187145 },	-- Kildrumeh
 					["coord"] = { 60.0, 76.0, THE_WAKING_SHORES },
 				}),
+				q(66870, {	-- Preserving the Past: Ruby Life Pools
+					["sourceQuests"] = { 67007 },	-- Archival Assistance
+					["provider"] = { "n", 189973 },	-- Kemora
+					["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				}),
 			}),
 			d(1, {	-- Normal
 				e(2609, {	-- Melidrussa Chillworn
@@ -37,6 +42,7 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 					["g"] = {
 						i(197401),	-- Renewed Proto-Drake: Beaked Snout
 						i(193755),	-- Backdraft Cleaver
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (H+ only?)
 					},
 				}),
 			}),

@@ -6,6 +6,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 	i(199018),	-- Bejeweled Stonewatcher's Pendant
 	i(199005),	-- Horn Strider's Bracers (Weird?)
 	n(ARMOR, {
+		i(199019),	-- Aerodynamic Cape
 		i(198990),	-- Drakewatcher's Cord
 		i(198987),	-- Drakewatcher's Handwraps
 		i(198988),	-- Drakewatcher's Hood
@@ -37,12 +38,16 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199006),	-- Shorebreaker's Helm
 		i(199010),	-- Shorebreaker's Legguards
 		i(199011),	-- Shorebreaker's Pauldrons
+		i(199031),	-- Stonewatcher's Eye
 	}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
+		i(199027),	-- Drake Slayer's Greatsword
 		i(199039),	-- Drakewatcher's Beacon
 		i(199033),	-- Drakewatcher's Scriptures
 		i(199045),	-- Earth-Blessed Mace
+		i(199026),	-- Fire-Blessed Blade
+		i(199049),	-- Fire-Blessed Greatsword
 		i(199042),	-- Hornstrider's Crossbow
 		i(199025),	-- Hornstrider's Mace
 		i(199028),	-- Hornstrider's Pike
