@@ -965,10 +965,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.2.0" } },
 			}),
 			q(55979, { -- Iteration is Key
 				["requireSkill"] = ENGINEERING,
+				["provider"] = { "n", 152747 },	-- Christy Punchcog
+				["coord"] = { 69.7, 32.3, MECHAGON },
 				["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
-				["lockCriteria"] = {1,"lvl",51},
+				["minReputation"] = { 2391, HONORED },
 				["DisablePartySync"] = true,
-				["description"] = "Due to Blizzard disabling the Ub3r-Spanner from being usable above level 50, it also disables being able to obtain this quest on the character. Feel free to spam bug reports about this because it is DUMB.",
+				["description"] = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
 			}),
 		}),
 		-- Blueprints

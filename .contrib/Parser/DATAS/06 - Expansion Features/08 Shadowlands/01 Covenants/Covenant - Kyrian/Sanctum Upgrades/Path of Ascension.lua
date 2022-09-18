@@ -1123,6 +1123,15 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
+									q(63192, {	-- Path of Ascension: Trial of Humility
+										-- TODO: verify the Tier requirement for this... one random quest per week... good luck!
+										["provider"] = { "n", 168427 },	-- Artemede
+										["isWeekly"] = true,
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
+										["g"] = {
+											i(184811),	-- Artemede's Bounty
+										},
+									}),
 								}),
 								n(REWARDS, {
 									n(172408, {	-- Alderyn [& Myn'ir]
@@ -1768,6 +1777,7 @@ root("HiddenQuestTriggers", {
 
 	q(63165),	-- after earning To the Moon achievement
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
+	q(62990),	-- Arsenal: Wisdom's Weapon Cache
 	q(63018),	-- learning Ensemble: Vestments of the Discordant
 	q(63019),	-- learning Ensemble: Garb of the Discordant
 	q(63020),	-- learning Ensemble: Chain of the Discordant

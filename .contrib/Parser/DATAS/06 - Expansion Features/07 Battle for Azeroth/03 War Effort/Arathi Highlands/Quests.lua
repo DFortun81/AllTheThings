@@ -46,7 +46,6 @@ _.ExpansionFeatures =
 									{"pop"},	-- Discard the Map Header and acquire the children.
 									{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 									{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 									{"modID", 5},	-- iLvl 340
 								},
 							}),
@@ -82,7 +81,6 @@ _.ExpansionFeatures =
 									{"pop"},	-- Discard the Map Header and acquire the children.
 									{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 									{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-									{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 									{"modID", 5},	-- iLvl 340
 								},
 							}),

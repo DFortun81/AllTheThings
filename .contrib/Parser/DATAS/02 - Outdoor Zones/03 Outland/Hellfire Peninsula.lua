@@ -2823,9 +2823,6 @@ root("Zones", {
 							{ 56.6, 71.8, HELLFIRE_PENINSULA },	-- east path, top
 						},
 						["groups"] = {
-							crit(4512, {	-- Fulgorge slain
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31181),	-- Rockwurm Handwraps
 							i(31179),	-- Rockwurm Hide Gloves
 							i(31177),	-- Rockwurm Scale Gauntlets
@@ -2844,9 +2841,6 @@ root("Zones", {
 							{ 67.8, 76.8, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(4517, {	-- Mekthorg the Wild slain
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31174),	-- Demonweave Raiment
 							i(31172),	-- Demon-Cured Tunic
 							i(31170),	-- Demon-Forged Hauberk
@@ -2859,9 +2853,6 @@ root("Zones", {
 							{ 71.4, 56.0, HELLFIRE_PENINSULA },
 						},
 						["groups"] = {
-							crit(4523, {	-- Vorakem Doomspeaker Slain
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31185),	-- Legion Crown
 							i(31184),	-- Legion Headguard
 							i(31183),	-- Legion Coif
@@ -3058,6 +3049,28 @@ root("Zones", {
 							i(30622, {	-- Flamewrought Key
 								["timeline"] = { "removed 4.2.0.10000" },
 								["races"] = ALLIANCE_ONLY,
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185687;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
 								["timeline"] = { "removed 4.0.1.10000" },
@@ -3149,7 +3162,29 @@ root("Zones", {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
 								["timeline"] = { "removed 4.2.0.10000" },
-								["races"] = ALLIANCE_ONLY,
+								["races"] = HORDE_ONLY,
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185686;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							i(29197, {	-- Glyph of Fire Warding
 								["timeline"] = { "removed 5.0.4" },
@@ -3367,6 +3402,8 @@ appendGroups({
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 root("HiddenQuestTriggers", {
+	q(10061),	-- The Unyielding - completed with 10050 "Unyielding Souls"
+	q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership - completed with 10057 "Looking to the Leadership"
 	q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
 	q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
 	q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143

@@ -51,19 +51,22 @@ local LFR_WEAPON_GROUP = {
 root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(QUESTS, {
-			q(63673, {	-- Hunting Amid Houses
-				["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-				["provider"] = { "n", 160262 },	-- Ysera
-				["coord"] = { 44.3, 38.8, THE_TRUNK },
-			}),
 			-- These quests are not part of the covenant questline chapters, but are Night Fae only
+			q(62560, {	-- Growing in Power
+				["sourceQuests"] = {
+					59071,	-- Mending a Broken Hart
+					60272,	-- The Weak Link (not 100% on this, but it's as far in the chain at which I am able to accept this)
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 161509 },	-- Lady Moonberry
+				["coord"] = { 47.4, 36.1, THE_TRUNK },
+			}),
 			q(61058, {	-- Bound in Dreams
-				-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level
-				-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
 				["sourceQuests"] = {
 					59242,	-- Their New Home [First Covenant]
-					62899,	-- The Endless Forest  [Switched Covenant]
+					62900,	-- A Conduit for Growth  [Switched Covenant]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 160482 },	-- Dreamweaver
 				["coord"] = { 33.7, 47.6, THE_TRUNK },
 				["g"] = {
@@ -73,8 +76,9 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 			q(61057, {	-- By Trials Forged
 				["sourceQuests"] = {
 					60108,	-- Drust and Ashes [First Covenant]
-					62899,	-- The Endless Forest  [Switched Covenant]
+					62900,	-- A Conduit for Growth  [Switched Covenant]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
 				["coord"] = { 35.2, 47.4, THE_TRUNK },
 				["g"] = {
@@ -162,7 +166,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
-				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
@@ -245,6 +249,14 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["sourceQuests"] = { 58159 },	-- What's My Motivation?
 				["provider"] = { "n", 160500 },	-- Ysera
 				["coord"] = { 42.4, 45.2, ARDENWEALD },
+				["altQuests"] = { 63006 },	-- For Queen and Grove! [Covenant Intro Skip]
+			}),
+			q(63006, {	-- For Queen and Grove! [Covenant Intro Skip]
+				["description"] = "Available when skipping Night Fae covenant intro quests.",
+				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
+				["qg"] = 161509,	-- Lady Moonberry
+				["coord"] = { 49.7, 40.1, THE_TRUNK },
+				["altQuests"] = { 58160 },	-- For Queen and Grove! [Covenant Intro Skip]
 			}),
 			q(62883, {	-- Keeper of Great Renown
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -301,7 +313,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["provider"] = { "n", 172431 },	-- Lady Moonberry
 				["coord"] = { 49.5, 40.0, THE_TRUNK },
 			}),
-			q(63008, {	-- The Forge of Bonds
+			q(63008, {	-- The Forge of Bonds [Covenant Skip]
 				["altQuests"] = { 61541 },	-- The Forge of Bonds
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 156634 },	-- Winter Queen
@@ -533,12 +545,6 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 					i(181301),	-- Faewoven Branches
 					i(182172),	-- Equine Soul
 				},
-			}),
-			q(62560, {	-- Growing in Power
-			--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock? - quest text says "you have gathered enough anima," so maybe tied to turning in anima weeklies or something?
-				["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
-				["provider"] = { "n", 161509 },	-- Lady Moonberry
-				["coord"] = { 47.4, 36.1, THE_TRUNK },
 			}),
 
 			-- Chapter 6: Drust to Drust (Renown 13 required to start)

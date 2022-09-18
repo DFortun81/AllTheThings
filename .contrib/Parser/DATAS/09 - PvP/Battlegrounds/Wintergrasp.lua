@@ -1,30 +1,29 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-
-root("PVP", pvp(n(BATTLEGROUNDS, {
+root("PVP", pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 	m(WINTERGRASP_BG, {
-		["achievementID"] = 1752,	-- Master of Wintergrasp
+		["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
+		["icon"] = "Interface\\Icons\\Spell_frost_chillingblast",
 		["timeline"] = { "added 3.0.3" },
-		["g"] = {
+		["maps"] = { WINTERGRASP },
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1752, {	-- Master of Wintergrasp
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							1722,	-- Archavon the Stone Watcher (10 player)
-							1721,	-- Archavon the Stone Watcher (25 player)
-							2080,	-- Black War Mammoth
-							1737,	-- Destruction Derby (A)
-							2476,	-- Destruction Derby (H)
-							1751,	-- Didn't Stand a Chance
-							1727,	-- Leaning Tower
-							1723,	-- Vehicular Gnomeslaughter
-							2199,	-- Wintergrasp Ranger
-							1718,	-- Wintergrasp Veteran
-							1755,	-- Within Our Grasp
-						},
-					},
+					["sym"] = {{"meta_achievement",
+						1722,	-- Archavon the Stone Watcher (10 player)
+						1721,	-- Archavon the Stone Watcher (25 player)
+						2080,	-- Black War Mammoth
+						1737,	-- Destruction Derby (A)
+						2476,	-- Destruction Derby (H)
+						1751,	-- Didn't Stand a Chance
+						1727,	-- Leaning Tower
+						1723,	-- Vehicular Gnomeslaughter
+						2199,	-- Wintergrasp Ranger
+						1718,	-- Wintergrasp Veteran
+						1755,	-- Within Our Grasp
+					}},
 				}),
 				ach(1717, {	-- Wintergrasp Victory
 					["rank"] = 1,
@@ -32,9 +31,15 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(1718, {	-- Wintergrasp Veteran
 					["rank"] = 100,
 				}),
+				ach(2080, {	-- Black War Mammoth
+					["providers"] = {
+						{ "i", 43956 },	-- Black War Mammoth (A)
+						{ "i", 44077 },	-- Black War Mammoth (H)
+					},
+				}),
 				ach(1737, {	-- Destruction Derby (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1),	-- Wintergrasp Catapult
 						crit(2),	-- Wintergrasp Demolisher
 						crit(3),	-- Wintergrasp Siege Engine
@@ -43,7 +48,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(2476, {	-- Destruction Derby (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(1),	-- Wintergrasp Catapult
 						crit(2),	-- Wintergrasp Demolisher
 						crit(3),	-- Wintergrasp Siege Engine
@@ -70,35 +75,34 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			n(QUESTS, {
 				q(55510, {	-- No Mercy for the Merciless
 					["provider"] = { "n", 151795 },	-- Commander Zanneth
-					["isWeekly"] = true,
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(55511, {	-- Slay them all!
 					["provider"] = { "n", 151611 },	-- Commander Dardosh
-					["isWeekly"] = true,
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(55508, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152003 },	-- Tactical Officer Ahbramis
-					["isWeekly"] = true,
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(55509, {	-- Victory in Wintergrasp
 					["provider"] = { "n", 152004 },	-- Tactical Officer Kilrath
-					["isWeekly"] = true,
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 				}),
 			}),
 			n(VENDORS, {
 				n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.8, 17.4, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
-					["g"] = pvp({
+					["groups"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -271,7 +275,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						--------------------------------------------------------------------------
 						i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-							["g"] = {
+							["groups"] = {
 								ach(2080),		-- Black War Mammoth
 							},
 						}),
@@ -399,9 +403,8 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
-					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = ALLIANCE_ONLY,
-					["g"] = pvp({
+					["groups"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -475,7 +478,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 						}),
 						i(43956, {	-- Black War Mammoth (A) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-							["g"] = {
+							["groups"] = {
 								ach(2080),		-- Black War Mammoth
 							},
 						}),
@@ -616,10 +619,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = pvp({
+					["groups"] = pvp({
 						i(48974, {	-- Titan-Forged Armwraps of Dominance
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -719,10 +721,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					}),
 				}),
 				n(30489, {	-- Morgan Day <Jewelcrafter>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 48.8, 17.6, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = pvp({
+					["groups"] = pvp({
 						i(41742, {	-- Design: Enigmatic Skyflare Diamond
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -798,12 +799,11 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 					["coord"] = { 51.6, 17.6, WINTERGRASP_BG },
-					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["g"] = pvp({
+					["groups"] = pvp({
 						i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-							["g"] = {
+							["groups"] = {
 								ach(2080),		-- Black War Mammoth
 							},
 						}),
@@ -997,7 +997,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				n(31101, {	-- Hoodoo Master Fu'jin
 					["coord"] = { 51.6, 21.0, WINTERGRASP_BG },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44067, {	-- Inscription of Triumph
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -1007,9 +1007,10 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(31051, {	-- Sorceress Kaylana
+					-- #if AFTER 8.1.5 
 					["coord"] = { 48.4, 21.08, WINTERGRASP_BG },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(44067, {	-- Inscription of Triumph
 							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 						}),
@@ -1021,4 +1022,4 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			}),
 		},
 	}),
-})));
+}))));

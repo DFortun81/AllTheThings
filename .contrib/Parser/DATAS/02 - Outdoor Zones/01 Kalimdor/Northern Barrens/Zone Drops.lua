@@ -21,6 +21,9 @@ _.Zones =
 						71001,	-- Mercenary Shredder
 					},
 				}),
+				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
+					["timeline"] = { "added 5.3.0" },
+				}),
 				i(6663, {	-- Recipe: Elixir of Giant Growth
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),

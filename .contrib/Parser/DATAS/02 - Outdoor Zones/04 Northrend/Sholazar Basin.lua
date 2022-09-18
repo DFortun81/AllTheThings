@@ -5,7 +5,7 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(SHOLAZAR_BASIN, {
 			["lore"] = "Sholazar Basin is a lush tropical forest in western Northrend. It owes its warm climate to the pylons around the zone, which are maintained by the Titans and also ward off the Scourge. It is a great zone for gathering max-Northrend level items like herbs and ore. There's also some rare beasts hunters like taming for pets, like Loque'nahak. Players will revisit Hemet Nesingwary and prove their hunting prowess for him, become an unwitting ambassador in a faction war between the Oracles and the Frenzyheart tribes, and learn about the power of the pylons.",
-			["achievementID"] = 1268,
+			["icon"] = "Interface\\Icons\\achievement_zone_sholazar_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
@@ -916,11 +916,7 @@ root("Zones", {
 							{ 57.8, 66.4, SHOLAZAR_BASIN },
 						},
 						["groups"] = {
-							crit(19, {	-- Aotona
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44691),	-- Aotona's Collar
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32485, {	-- King Krush
@@ -965,11 +961,7 @@ root("Zones", {
 							{ 66.8, 78.6, SHOLAZAR_BASIN },
 						},
 						["groups"] = {
-							crit(20, {	-- King Krush
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44683),	-- King's Eyesocket
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32517, {	-- Loque'nahak <Mate of Har'koa>
@@ -986,12 +978,8 @@ root("Zones", {
 							{ 71.0, 71.6, SHOLAZAR_BASIN },
 						},
 						["groups"] = {
-							crit(1, {	-- Loque'nahak
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44688),	-- Loque'Nahak's Severed Fang [Neck]
 							i(44687),	-- Loque'Nahak's Pelt
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),

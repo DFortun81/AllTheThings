@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
 							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 53332 },	-- Time for War (51714 was too far)
+							["sourceQuests"] = { 52544 },	-- The War Cache (53332 was too far)
 						}),
 						q(51571, {	-- Foothold: Nazmir
 							["lvl"] = 110,	-- Can pick a foothold at 110, 114, and 118
@@ -234,6 +234,7 @@ _.ExpansionFeatures =
 							["coord"] = { 69.4, 27.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "To get this quest and continue the campaign, you must complete one foothold of your choice.",
+							["sourceQuestNumRequired"] = 1,
 							["sourceQuests"] = {
 								53052,	-- Deeper Into Zandalar
 								51967,	-- Return to Boralus

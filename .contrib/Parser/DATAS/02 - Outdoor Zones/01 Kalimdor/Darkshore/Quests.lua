@@ -487,6 +487,7 @@ _.Zones =
 					["provider"] = { "n", 33131 },	-- Great Moonstalker Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Grants 10% haste.",
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["altQuests"] = {
 						13567,	-- Spirit of the Stag
 						13597,	-- Spirit of the Thistle Bear
@@ -501,6 +502,7 @@ _.Zones =
 					["provider"] = { "n", 33133 },	-- Great Stag Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Stag gives 10% movement speed.",
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["altQuests"] = {
 						13568,	-- Spirit of the Moonstalker
 						13597,	-- Spirit of the Thistle Bear
@@ -515,6 +517,7 @@ _.Zones =
 					["provider"] = { "n", 33132 },	-- Great Thistle Bear Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "10% reduction in damage taken.",
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["altQuests"] = {
 						13568,	-- Spirit of the Moonstalker
 						13567,	-- Spirit of the Stag

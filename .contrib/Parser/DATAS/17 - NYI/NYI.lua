@@ -40,11 +40,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- Classic
 				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 				-- TBC
-				q(9989, {	-- BETA Alien Spirits
-					i(28499),	-- Arakkoa Hunter's Supplies
-				}),
-				q(10061),	-- The Unyielding
-				q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership
 				q(10386),	-- The Fel Reaver Slayer
 				q(10387),	-- The Fel Reaver Slayer
 				q(10401),	-- Mission: End All, Be All [Horde]
@@ -148,7 +143,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56745),	--
 				q(56766),	--
 				q(56844),	--
-				q(57144),	--
 				-- 8.2.5
 				q(57550),	--
 				-- 8.3.0
@@ -161,8 +155,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56068),	--
 				q(56069),	--
 				q(61923),	--
-				q(61926),	--
-				q(61935),	--
 				q(62165),	-- Tal-Inara's Call
 				q(62166),	-- Tal-Inara's Call
 				q(62377),	--
@@ -170,7 +162,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62578),	--
 				-- 9.0.2
 				q(57537),	-- Covering our Tracks
-				q(62990),	--
 				q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
 				-- 9.1.0
 				q(64192),	--

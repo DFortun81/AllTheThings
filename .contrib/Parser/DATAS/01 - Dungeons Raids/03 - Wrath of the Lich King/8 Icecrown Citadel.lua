@@ -1150,6 +1150,7 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
 					["sym"] = {
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
+						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 						{"isnt","c"},	-- Discard headers for Classes [c]
@@ -3911,6 +3912,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							ach(4622),	-- Neck-Deep in Vile (25 player)
 							ach(4584, {	-- The Light of Dawn
 								title(138),	-- the Light of Dawn
+							}),
+							ach(4625, {	-- Invincible's Reins
+								["provider"] = { "i", 50818 },	-- Invincible's Reins
+								["filterID"] = MOUNTS,
 							}),
 							i(50818),	-- Invincible (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)

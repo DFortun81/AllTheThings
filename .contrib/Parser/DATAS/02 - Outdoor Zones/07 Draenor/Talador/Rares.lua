@@ -300,7 +300,7 @@ _.Zones =
 					["crs"] = {
 						88071,	-- Strategist Ankor
 						88072,	-- Archmagus Tekar
-						88073,	-- Soulbinder Naylana
+						88083,	-- Soulbinder Naylana
 					},
 					["coords"] = {
 						{ 43.8, 26.4, TALADOR },

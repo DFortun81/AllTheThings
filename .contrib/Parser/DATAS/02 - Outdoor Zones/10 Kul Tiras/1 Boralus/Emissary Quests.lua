@@ -20,7 +20,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							{"pop"},	-- Discard the Map Header and acquire the children.
 							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 							{"modID", 5},	-- iLvl 340
 						},
 					}),
@@ -42,7 +41,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 						["sym"] = {
 							{"select", "itemID", 157996},	-- Harbormaster Pauldrons
 							{"finalize"},	-- Push the items to the finalized list.
-
 							{"select", "mapID", KUL_TIRAS},
 							{"pop"},	-- Discard the Map Header and acquire the children.
 							{"select", "mapID", TIRAGARDE_SOUND},
@@ -51,9 +49,6 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
 							{"is", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
-
-							{"merge"},	-- Merge the finalized items back into the processing queue.
-							{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 						},
 					}),
 					i(165867, {	-- Kul Tiran Weapons Cache

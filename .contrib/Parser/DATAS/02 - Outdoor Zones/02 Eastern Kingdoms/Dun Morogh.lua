@@ -1641,13 +1641,31 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = { GNOME },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
 					["races"] = { DWARF },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(1679, {	-- Muren Stormpike
 					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>

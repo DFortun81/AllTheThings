@@ -405,6 +405,20 @@ root("Zones", m(KALIMDOR, {
 					"spellID", 90265,	-- Master Riding
 				},
 			}),
+			q(14086, {	-- Learn to Ride in Orgrimmar
+				["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
+				["description"] = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
+				["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+				["lockCriteria"] = { 1,
+					"spellID", 33388,	-- Apprentice Riding
+					"spellID", 33391,	-- Journeyman Riding
+					"spellID", 34090,	-- Expert Riding
+					"spellID", 34091,	-- Artisan Riding
+					"spellID", 90265,	-- Master Riding
+				},
+				["races"] = { ORC },
+				["lvl"] = lvlsquish(20, 20, 10),
+			}),
 			q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
 				["repeatable"] = true,
 				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>

@@ -90,13 +90,13 @@ namespace ATT
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 13, 7, 22248 } },   // NOTE: Values for WoW-Classic
             { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 3, 5, 12340 } },
+            { "WRATH", new int[] { 3, 4, 5, 22248 } },
             { "CATA", new int[] { 4, 3, 4, 15595 } },
             { "MOP", new int[] { 5, 4, 8, 18224 } },
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 2, 7, 45114 } },
+            { "SHADOWLANDS", new int[] { 9, 2, 7, 45338 } },
             { "DF", new int[] { 10, 0, 0, 45335 } },
         };
 

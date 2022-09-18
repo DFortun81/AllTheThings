@@ -97,7 +97,7 @@ root("Zones", m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }
 						}),
 						cat(1412, {	-- Mass Milling
 							r(311413),	-- Mass Mill Deathblossom
-							r(359490, {["timeline"]={"added 9.2.0"}}),	-- Mass Mill First Flower*
+							r(359490, {["timeline"]={"added 9.2.0"}}),	-- Mass Mill First Flower
 							r(311416),	-- Mass Mill Marrowroot
 							r(311418),	-- Mass Mill Nightshade
 							r(311417),	-- Mass Mill Rising Glory

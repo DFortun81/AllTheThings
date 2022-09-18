@@ -6,13 +6,13 @@ root("GroupFinder", tier(WOD_TIER, {
 	i(120334, {	-- Satchel of Cosmic Mysteries
 		["timeline"] = { "added 5.4.0", "removed 6.0.3" },
 		["sym"] = {
-			{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
+			{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 		},
 	}),
 	i(104260, {	-- Satchel of Savage Mysteries
 		["timeline"] = { "added 6.0.3", "removed 6.1.0" },
 		["sym"] = {
-			{"select", "itemID", 69903},	-- Satchel of Exotic Mysteries
+			{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 		},
 	}),
 	i(122607, bubbleDownSelf({ ["timeline"] = { "added 6.1.0", "removed 6.2.0" } }, {	-- Savage Satchel of Cooperation

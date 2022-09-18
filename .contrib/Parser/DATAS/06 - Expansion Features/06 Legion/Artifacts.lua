@@ -2371,7 +2371,7 @@ _.ExpansionFeatures =
 };
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
-		-- Death Knight	
+		-- Death Knight
 		q(40722),	-- Blood Chosen - Blood Artifact chosen first
 		q(40723),	-- Frost Chosen - Frost Artifact chosen first
 		q(40724),	-- Unholy Chosen - Unholy Artifact chosen first
@@ -2381,11 +2381,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44402),	-- Blood Chosen - Blood Artifact chosen third
 		q(44403),	-- Frost Chosen - Frost Artifact chosen third
 		q(44404),	-- Unholy Chosen - Unholy Artifact chosen third
-		
+
 		-- Demon Hunter -- TODO -Darkal
 		-- 5 IDs, I can't find the pattern -Darkal
 		q(40817),	-- Twinblades of the Deceiver Chosen - Havoc Artifact chosen first
-		
+
 		q(40818),	-- Aldrachi Warblades Chosen - first
 
 		q(44380),	-- Havoc Chosen
@@ -2483,7 +2483,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(41328),	-- Enhancement Artifact Chosen - Enhancement Artifact chosen first
 		q(41329),	-- Elemental Artifact Chosen - Elemental Artifact chosen first
 		q(41330),	-- Restoration Artifact Chosen - Restoration Artifact chosen first
-		
+
 		-- I have all of those 3 on the same character which makes no sense -- TODO -Darkal
 		-- Also I can't find any other 3 IDs for "second or third" -Darkal
 		q(43946),	-- Enhancement Chosen - reported as second
@@ -2511,7 +2511,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44388),	-- Affliction Chosen - Affliction Artifact chosen third
 		q(44389),	-- Destruction Chosen - Destruction Artifact chosen third
 		q(44390),	-- Demonology Chosen - Demonology Artifact chosen third
-		
+
 		-- Mage Tower
 		q(45849),	-- Tracking Quest - 3+ Targets Trait Complete - completed "A Gift From The Six" (questID 45862)
 		q(45850),	-- Tracking Quest - AoE Chosen - completed "A Gift From The Six" (questID 45861)
@@ -2520,7 +2520,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45853),	-- Melee DPS Trait Complete - completed "A Gift From The Six" (questID 45865)
 		q(45854),	-- Ranged DPS Trait Complete - completed "A Gift From The Six" (questID 45866)
 		q(45855),	-- Tank Trait Complete - completed "A Gift From The Six" (questID 45863)
-		
+
 		-- Hidden Appearance
 		q(43646),	-- Hidden Appearance Unlocked - Blood Death Knight
 		q(43647),	-- Hidden Appearance Unlocked - Frost Death Knight

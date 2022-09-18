@@ -38,7 +38,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
 		-- #if AFTER WRATH
-		["achievementID"] = 218,	-- Alterac Valley Victory
+		["icon"] = "Interface\\Icons\\Achievement_bg_winav",
 		-- #endif
 		-- #if AFTER 6.0.2
 		["lvl"] = 20,
@@ -76,42 +76,84 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(708, applyclassicphase(PHASE_TWO, {	-- Hero of the Frostwolf Clan
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
+					-- #endif
+					-- #if ANYCLASSIC
+					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 729); end]],
-					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
 				})),
 				ach(709, applyclassicphase(PHASE_TWO, {	-- Hero of the Stormpike Guard
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 730); end]],
-					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif
 				})),
-				ach(1167, {	-- Master of Alterac Valley
+				ach(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							219,	-- Alterac Valley Veteran
-							221,	-- Alterac Grave Robber
-							222,	-- Tower Defense
-							1151,	-- Loyal Defender (A)
-							224,	-- Loyal Defender (H)
-							225,	-- Everything Counts (A)
-							1164,	-- Everything Counts (H)
-							223,	-- The Sickly Gazelle
-							873,	-- Frostwolf Perfection
-							220,	-- Stormpike Perfection
-							582,	-- Alterac Valley All-Star
-							706,	-- Frostwolf Howler
-							707,	-- Stormpike Battle Charger
-							1166,	-- To the Looter Go the Spoils
-						},
-					},
-
+					-- #if AFTER 4.3.0
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						1151,	-- Loyal Defender (A)
+						224,	-- Loyal Defender (H)
+						225,	-- Everything Counts (A)
+						1164,	-- Everything Counts (H)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+					}},
+					-- #else
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						1151,	-- Loyal Defender (A)
+						225,	-- Everything Counts (A)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+						226,	-- The Alterac Blitz
+					}},
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				ach(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						224,	-- Loyal Defender (H)
+						1164,	-- Everything Counts (H)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+						-- #if BEFORE 4.3.0
+						226,	-- The Alterac Blitz
+						-- #endif
+					}},
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(218, {	-- Alterac Valley Victory
 					["rank"] = 1,
@@ -165,7 +207,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
 				}),
-				ach(1166),	-- To the Looter Go the Spoils
+				ach(1166, {	-- To the Looter Go the Spoils
+					["provider"] = { "i", 18228 },	-- Autographed Picture of Foror & Tigule
+				}),
 				ach(226),	-- The Alterac Blitz
 			}),
 			-- #if BEFORE TBC

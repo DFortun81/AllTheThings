@@ -1215,3 +1215,12 @@ pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 
 -- Quests
 pet(193619, 3319);	-- Yipper [Quests?]
+
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER WRATH
+pet(198665, 384796);	-- Pebble's Pebble
+-- #endif
+-- #endif

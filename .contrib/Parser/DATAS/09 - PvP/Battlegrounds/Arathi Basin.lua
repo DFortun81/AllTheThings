@@ -25,7 +25,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 		["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 		-- #endif
 		-- #if AFTER WRATH
-		["achievementID"] = 154,	-- Arathi Basin Victory
+		["icon"] = "Interface\\Icons\\Achievement_bg_winab",
 		["maps"] = {
 			837,	-- Arathi Basin
 			844,	-- Arathi Basin
@@ -83,19 +83,23 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(711, applyclassicphase(PHASE_TWO, {	-- Knight of Arathor
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 509); end]],
-					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
 					-- #endif
 				})),
 				ach(710, applyclassicphase(PHASE_TWO, {	-- The Defiler
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with The Defilers to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 510); end]],
-					["description"] = "Raise your reputation with The Defilers to Exalted.",
 					-- #endif
 				})),
 			}),

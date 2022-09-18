@@ -71,12 +71,14 @@ _.Zones =
 				q(28857, {	-- Blasted Lands: The Other Side of the World
 					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["altQuests"] = { 28673 },	-- Hero's Call: Blasted Lands!
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28858, {	-- Blasted Lands: The Other Side of the World
 					["provider"] = { "n", 11118 },	-- Innkeeper Vizzie
 					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

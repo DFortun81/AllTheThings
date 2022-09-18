@@ -78,6 +78,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							i(185114),	-- Redeemed Inquisitor's Wraps
 						},
 					}),
+					i(187000),	-- Pattern: Elusive Pet Treat
 					i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 					i(186548),	-- Chompy (PET!)
 					i(187184),	-- Vesper of Clarity (TOY!)
@@ -88,6 +89,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["description"] = "Requires Renown 52.",
 				["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 				["coord"] = { 63.4, 24.6, KORTHIA },
+				["maps"] = { ARDENWEALD },
 			}),
 			q(64441, {	-- A Loose Thread
 				["sourceQuests"] = { 64314 },	-- Covenants Renewed
@@ -710,6 +712,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["isDaily"] = true,
 				["coord"] = { 60.4, 28.5, KORTHIA },
 			}),
+			q(63785, {	-- Continued Efforts: Seeker's Quorum
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
+				["isDaily"] = true,
+				["coord"] = { 60.9, 21.7, KORTHIA },
+			}),
 			q(63775, {	-- Cryptograms and Keys
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179082 },	-- Tal-Rahl
@@ -721,6 +729,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 178797 },	-- Sika
 				["isDaily"] = true,
 				["coord"] = { 61.7, 23.9, KORTHIA },
+			}),
+			q(64080, {	-- Down to Earth
+				["sourceQuests"] = { 64556 },	-- In Need of Assistance
+				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
+				["isDaily"] = true,
+				["coord"] = { 60.9, 21.7, KORTHIA },
 			}),
 			q(63784, {	-- Gold's No Object
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -835,7 +849,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
-					i(187000),	-- Pattern: Elusive Pet Treat
 				},
 			}),
 			q(63989, {	-- Oozing with Character (Plaguey)
@@ -986,18 +999,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 		}),
 			--[[ These are only commented out until they are found on live severs // Braghe
 		--	9.1.0 PTR Data
-			q(63785, {	-- Continued Efforts: Seeker's Quorum
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
-				["isDaily"] = true,
-				["coord"] = { 60.9, 21.7, KORTHIA },
-			}),
-			q(64080, {	-- Down to Earth
-				["sourceQuests"] = { 64556 },	-- In Need of Assistance
-				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
-				["isDaily"] = true,
-				["coord"] = { 60.9, 21.7, KORTHIA },
-			}),
 			q(64240, {	-- Flight of the Kyrian
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179194 },	-- Kleia

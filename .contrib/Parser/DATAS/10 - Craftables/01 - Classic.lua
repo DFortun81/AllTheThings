@@ -68,7 +68,9 @@ root("Craftables", tier(CLASSIC_TIER, {
 			i(2459),	-- Swiftness Potion
 			i(6372),	-- Swim Speed Potion
 			i(3382),	-- Weak Troll's Blood Potion
-			i(9144),	-- Wildvine Potion
+			i(9144, {	-- Wildvine Potion
+				["timeline"] = { "added 1.11.1", "removed 4.0.1" },
+			}),
 		}),
 		category(639, {	-- Elixirs
 			i(9155),	-- Arcane Elixir

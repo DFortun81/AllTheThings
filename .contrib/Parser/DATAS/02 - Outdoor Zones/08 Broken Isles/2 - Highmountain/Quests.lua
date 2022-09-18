@@ -39,11 +39,12 @@ _.Zones =
 				}),
 				q(40217, {	-- An Offering of Ammo
 					["isBreadcrumb"] = true,
+					["qg"] = 99905,	-- Shale Greyfeather
+					["coord"] = { 42.4, 46.9, 750 },	-- Thunder Totem
 					["sourceQuests"] = {	-- either quest
 						39387,	-- The Skies of Highmountain
 						39456,	-- Unexpected Allies
 					},
-					["coord"] = { 46.4, 60.5, 750 },	-- Thunder Totem
 				}),
 				q(39429, {	-- Assaulting the Haglands
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -999,6 +1000,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42572),	-- Shaman Shrine - Highmountain Earth 02
 		q(42578),	-- Shaman Shrine - Highmountain Wind 01
 		q(42579),	-- Shaman Shrine - Highmountain Wind 02
-		q(41246),	-- Snowblind Mesa Phased Terrain Tracking Quest - when Snowblind Mesa phases during "Highmountain Stands" (questID 42512) 
+		q(41246),	-- Snowblind Mesa Phased Terrain Tracking Quest - when Snowblind Mesa phases during "Highmountain Stands" (questID 42512)
 	}),
 });

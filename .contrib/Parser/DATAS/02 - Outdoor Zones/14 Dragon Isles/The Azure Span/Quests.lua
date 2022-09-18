@@ -983,6 +983,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
 				["isBreadcrumb"] = true,
 			}),
+
+			q(66964, {	-- Artifacts in the Wrong Hands
+				["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
+				["provider"] = { "n", 196545 },	-- Polky Cogzapper
+				["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
+			}),
+			q(66964, {	-- Artifacts in the Wrong Hands
+				["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
+				["provider"] = { "n", 196545 },	-- Polky Cogzapper
+				["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
+			}),
+
+
+
 			-- SIDE 18
 			q(67299, {	-- Drakes be Gone
 				["sourceQuests"] = { 65886 },	-- To Rhonin's Shield

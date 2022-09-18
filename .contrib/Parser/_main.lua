@@ -993,7 +993,9 @@ MISC = 50;
 NECK_F = 51;
 FINGER_F = 52;
 TRINKET_F = 53;
+LIBRAMS = 54;
 RELICS = 54;
+TOTEMS = 54;
 CONSUMABLES = 55;
 REAGENTS = 56;
 FISHING_POLES = 57;
@@ -1131,6 +1133,8 @@ DF_PHASE_ONE = 100;
 ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
 ADDED_DF = "added 9.2.5";
+REMOVED_DFPRE = "removed 10.0";
+REMOVED_DFREL = "removed 10.0.3";
 
 -- Holiday Filters
 BREWFEST = 1000;
@@ -1808,6 +1812,8 @@ explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Objec
 	-- #if ANYCLASSIC
 	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
 	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #else
+	t.sym = {{ "achievement_criteria" }};
 	-- #endif
 	return t;
 end

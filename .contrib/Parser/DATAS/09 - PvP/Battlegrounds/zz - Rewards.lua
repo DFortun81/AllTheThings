@@ -1,12 +1,11 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-
 root("PVP", pvp(n(BATTLEGROUNDS, {
-	n(REWARDS, {
+	n(REWARDS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248" } }, {
 		filter(CONSUMABLES, {
 			["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
-			["g"] = {
+			["groups"] = {
 				i(138478),	-- Feast of Ribs
 				i(138727),	-- Potion of Defiance
 				i(138729),	-- Potion of Heightened Senses
@@ -19,7 +18,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
 			["description"] = "Rewarded for winning a random battleground in the level 10-59 range.",
 			["lvl"] = { 10, 59 },
-			["g"] = {
+			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
 				i(134640),	-- Auxiliary's Robe
@@ -80,9 +79,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(134691),	-- Recruit's Badge*
 			},
 		}),
-		i(135540, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Crate of Battlefield Goods 40-59 before 9.0
+		i(135540, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Crate of Battlefield Goods 40-59 before 9.0
 			["description"] = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
-			["g"] = {
+			["groups"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
 				i(134669),	-- Auxiliary's Handwraps
@@ -113,9 +112,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(134691),	-- Recruit's Badge*
 			},
 		})),
-		i(135541, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
+		i(135541, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
 			["description"] = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
-			["g"] = {
+			["groups"] = {
 				i(134584),	-- Inciter's Cord
 				i(134585),	-- Inciter's Cuffs
 				i(134583),	-- Inciter's Treads
@@ -141,9 +140,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(134590),	-- Vanguard Baton of Light
 			},
 		})),
-		i(135542, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
+		i(135542, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
 			["description"] = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
-			["g"] = {
+			["groups"] = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
 				i(134723),	-- Icyweave Gloves*
@@ -175,12 +174,12 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(134743),	-- Cold-Touched Accolade*
 			},
 		})),
-		i(135543, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
+		i(135543, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
 			["description"] = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
-			["g"] = {
+			["groups"] = {
 				n(-302, {	-- Level 80-84 before 9.0
 					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
-					["g"] = {
+					["groups"] = {
 						i(134616),	-- Inflammatory Cord*
 						i(134615),	-- Inflammatory Hood*
 						i(134614),	-- Inflammatory Treads*
@@ -210,7 +209,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 				n(-303, {	-- Level 85-89 before 9.0
 					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
-					["g"] = {
+					["groups"] = {
 						i(134754),	-- Veiled Cuffs*
 						i(134752),	-- Veiled Leggings*
 						i(134753),	-- Veiled Mantle*
@@ -243,9 +242,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				}),
 			},
 		})),
-		i(135545, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
+		i(135545, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
 			["description"] = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
-			["g"] = {
+			["groups"] = {
 				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps*
 				i(134784),	-- Entrenched Raiment*
@@ -278,9 +277,9 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				i(134777),	-- Seasoned Accolade*
 			},
 		})),
-		i(135546, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
+		i(135546, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.22248", "removed 9.0.1" } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
 			["description"] = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
-			["g"] = {
+			["groups"] = {
 				i(135578),	-- Battle Touched Banner
 				i(135568),	-- Battle Touched Blood of the Fallen
 				i(135574),	-- Battle Touched Blossom
@@ -315,6 +314,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(165714, {	-- Gold Strongbox - Win (A)
+			["timeline"] = { "added 8.1.0.28724" },
 			["races"] = ALLIANCE_ONLY,
 			["sym"] = {
 				{ "select", "headerID", BATTLEGROUNDS },
@@ -326,6 +326,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 			},
 		}),
 		i(165711, {	-- Gold Strongbox - Win (H)
+			["timeline"] = { "added 8.1.0.28724" },
 			["races"] = HORDE_ONLY,
 			["sym"] = {
 				{ "select", "headerID", BATTLEGROUNDS },
@@ -336,5 +337,5 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				{ "pop" },	-- Discard all headers and acquire the children.
 			},
 		}),
-	}),
+	})),
 })));

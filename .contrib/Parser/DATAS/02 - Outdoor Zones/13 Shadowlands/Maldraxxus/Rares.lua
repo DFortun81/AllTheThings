@@ -46,6 +46,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 					}),
 					i(184177),	-- Grotesque Goring Pick
+					i(183833),	-- Kash's Bag of Junk
 					i(184176),	-- Moroc's Boneslicing Warglaive
 					i(181797),	-- Strange Cloth
 				},

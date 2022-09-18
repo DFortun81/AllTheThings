@@ -1449,6 +1449,7 @@ i(0, 253113);	-- Monel-Hardened Shield
 i(0, 253112);	-- Monel-Hardened Stirrups
 i(0, 253180);	-- Monel-Hardened Waistguard
 
+i(0, 280671);	-- Barbaric Iron Hauberk
 
 i(0, 253156);	-- Stormsteel Dagger [Rank 1]
 i(0, 253157);	-- Stormsteel Dagger [Rank 2]
@@ -1588,7 +1589,6 @@ i(0, 282865);	-- Sinister Combatant's Spellblade
 i(0, 282867);	-- Sinister Combatant's Spellblade
 i(0, 285097);	-- Tempered Stormsteel Girdle
 i(0, 285098);	-- Tempered Stormsteel Legguards
-
 
 -----------------
 -- PATCH 8.1.5 --

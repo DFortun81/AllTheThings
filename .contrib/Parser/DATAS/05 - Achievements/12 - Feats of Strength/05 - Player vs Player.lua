@@ -4,41 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP_FOS, {
-		n(SEASON_MERCILESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
-				title(37),	-- Merciless Gladiator <Name>
-			}),
-		})),
-		n(SEASON_VENGEFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
-				title(40),	-- Vengeful Gladiator <Name>
-			}),
-		})),
-		n(SEASON_BRUTAL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
-				title(49),	-- Brutal Gladiator <Name>
-			}),
-		})),
-		n(SEASON_DEADLY, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
-				title(56),	-- Deadly Gladiator <Name>
-			}),
-		})),
-		n(SEASON_FURIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
-				title(132),	-- Furious Gladiator <Name>
-			}),
-		})),
-		n(SEASON_RELENTLESS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
-				title(134),	-- Relentless Gladiator <Name>
-			}),
-		})),
-		n(SEASON_WRATHFUL, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
-				title(142),	-- Wrathful Gladiator <Name>
-			}),
-		})),
 		n(SEASON_VICIOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 			ach(5344, {	-- Hero of the Alliance: Vicious
 				["races"] = ALLIANCE_ONLY,
@@ -95,7 +60,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 			}),
 		})),
 		n(SEASON_GRIEVOUS, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-			ach(8649),	-- Challenger: WMists of Pandaria Season 3/Season 14
+			ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 			ach(8645),	-- Duelist: Mists of Pandaria Season 3/Season 14
 			ach(8644),	-- Gladiator: Mists of Pandaria Season 3/Season 14	-- Mount is listed under FoS>Mounts.
 			-- Sometimes under Legacy, sometimes under FoS.

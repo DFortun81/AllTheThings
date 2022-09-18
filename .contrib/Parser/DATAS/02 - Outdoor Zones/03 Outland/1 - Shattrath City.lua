@@ -926,6 +926,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["repeatable"] = true,
 					}),
 					q(10918, {	-- More Feathers
@@ -989,6 +990,7 @@ root("Zones", {
 						["sourceQuest"] = 10017,	-- Strained Supplies
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 						["repeatable"] = true,
 					}),
@@ -1093,6 +1095,7 @@ root("Zones", {
 						["qg"] = 18597,	-- Sha'nir
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
@@ -1225,7 +1228,7 @@ root("Zones", {
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
-						["repeatable"] = true,
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 					}),
 					q(11369, {	-- WANTED: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
@@ -1254,6 +1257,7 @@ root("Zones", {
 					q(11382, {	-- WANTED: Aeonus's Hourglass
 						["qg"] = 24369,	-- Wind Trader Zhareem
 						["coord"] = { 75, 37, SHATTRATH_CITY },
+						["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
@@ -1269,7 +1273,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/5 Arcatraz Sentinel slain 
+							objective(1, {	-- 0/5 Arcatraz Sentinel slain
 								["provider"] = { "n", 20869 },	-- Arcatraz Sentinel
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1294,7 +1298,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/14 Coilfang Myrmidon slain 
+							objective(1, {	-- 0/14 Coilfang Myrmidon slain
 								["provider"] = { "n", 17800 },	-- Coilfang Myrmidon
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1319,7 +1323,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/3 Malicious Instructor slain 
+							objective(1, {	-- 0/3 Malicious Instructor slain
 								["provider"] = { "n", 18848 },	-- Malicious Instructor
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1368,7 +1372,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Rift Lord slain 
+							objective(1, {	-- 0/4 Rift Lord slain
 								["provider"] = { "n", 17839 },	-- Rift Lord
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1393,7 +1397,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Shattered Hand Centurion slain 
+							objective(1, {	-- 0/4 Shattered Hand Centurion slain
 								["provider"] = { "n", 17465 },	-- Shattered Hand Centurion
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1406,7 +1410,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/4 Sister of Torment slain 
+							objective(1, {	-- 0/4 Sister of Torment slain
 								["provider"] = { "n", 24697 },	-- Sister of Torment
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1432,7 +1436,7 @@ root("Zones", {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 30),
 						["groups"] = {
-							objective(1, {	-- 0/5 Tempest-Forge Destroyer slain 
+							objective(1, {	-- 0/5 Tempest-Forge Destroyer slain
 								["provider"] = { "n", 19735 },	-- Tempest-Forge Destroyer
 							}),
 							i(29460),	-- Ethereum Prison Key
@@ -1647,6 +1651,28 @@ root("Zones", {
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
 								["timeline"] = { "removed 4.2.0.10000" },
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185692;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
 							i(29179),	-- Xi'ri's Gift
@@ -2004,7 +2030,9 @@ root("Zones", {
 						i(27992),	-- Infallible Tikbalang Ward
 						i(27940),	-- Marvelous Madstone of Immortality
 						i(27976),	-- Polished Pendant of Edible Energy
-						i(74918),	-- Problem Solving Pendant
+						i(74918, {
+							
+						}),	-- Problem Solving Pendant
 						i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
 						i(27978),	-- Soap on a Rope
 						i(27979),	-- Stone of Stupendous Springing Strides
@@ -2184,6 +2212,28 @@ root("Zones", {
 						["groups"] = {
 							i(30633, {	-- Auchenai Key
 								["timeline"] = { "removed 4.2.0" },
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185691;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35405)),	-- Crusader's Ornamented Leggings
 							applyclassicphase(TBC_PHASE_TWO, i(35412)),	-- Crusader's Scaled Chestpiece
@@ -3179,6 +3229,14 @@ end
 -- #endif
 
 -- #if AFTER TBC
+root("HiddenQuestTriggers", m(OUTLAND, {
+	m(SHATTRATH_CITY, {
+		q(9989, {	-- BETA Alien Spirits [triggers when completing 10917 "The Outcasts Plight"]
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+	}),
+}));
+
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(10560),	-- Revered Among the Sha'tar

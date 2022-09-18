@@ -52,7 +52,7 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 	m(WARSONG_GULCH, {
 		["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
 		-- #if AFTER WRATH
-		["achievementID"] = 166,	-- Warsong Gulch Victory
+		["icon"] = "Interface\\Icons\\achievement_bg_captureflag_wsg",
 		["maps"] = {
 			859,	-- Warsong Gulch
 			1339,	-- Warsong Gulch
@@ -116,19 +116,23 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 				ach(713, applyclassicphase(PHASE_TWO, {	-- Silverwing Sentinel (A)
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 890); end]],
-					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
 					-- #endif
 				})),
 				ach(712, applyclassicphase(PHASE_TWO, {	-- Warsong Outrider (H)
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 889); end]],
-					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
 					-- #endif
 				})),
 			}),

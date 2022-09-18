@@ -7951,7 +7951,7 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 6	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, DEATHKNIGHT },	-- Season 7
 								{"exclude", "itemID", 149458 }, -- Exclude itself to stop duplicating
 							},
@@ -8115,8 +8115,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 8	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 8	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, MAGE },	-- Season 7
 								{"exclude", "itemID", 149477 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -8197,8 +8197,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 2	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 2	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PALADIN },	-- Season 7
 								{"exclude", "itemID", 149475 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -8238,8 +8238,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 5	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 5	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, PRIEST },	-- Season 7
 								{"exclude", "itemID", 149473 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -8279,8 +8279,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 4	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 4	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, ROGUE },	-- Season 7
 								{"exclude", "itemID", 149467 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -8361,8 +8361,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 9	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 9	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARLOCK },	-- Season 7
 								{"exclude", "itemID", 149462 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -8402,8 +8402,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, 1	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, 1	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE, WARRIOR },	-- Season 7
 								{"exclude", "itemID", 149469 }, -- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -9696,8 +9696,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, MAGE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 8	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, MAGE	},	-- Season 7
 								{"exclude", "itemID", 149476 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -9819,8 +9819,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 5	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, PRIEST	},	-- Season 7
 								{"exclude", "itemID", 149472 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -9860,7 +9860,7 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, 4	},	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE	},	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, ROGUE },	-- Season 7
 								{"exclude", "itemID", 149466 },	-- Exclude itself to stop duplicating
 							},
@@ -9942,8 +9942,8 @@ _.PVP =
 							-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 5
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 6
-								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, 9	},	-- Season 7
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_ELITE, WARLOCK },	-- Season 7
 								{"exclude", "itemID", 149463 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {

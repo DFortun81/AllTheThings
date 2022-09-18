@@ -562,6 +562,7 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 1, BACK},
 								{"sub", "common_wod_dungeon_drop", 1, NECK},
 								{"sub", "common_wod_dungeon_drop", 1, FINGER},
+								{"merge"},	-- Merge all sub results for processing
 								{"pop"},	-- Get the raw Items from each slot header
 								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
@@ -580,6 +581,7 @@ _.ExpansionFeatures =
 								{"sub", "common_wod_dungeon_drop", 2, BACK},
 								{"sub", "common_wod_dungeon_drop", 2, NECK},
 								{"sub", "common_wod_dungeon_drop", 2, FINGER},
+								{"merge"},	-- Merge all sub results for processing
 								{"pop"},	-- Get the raw Items from each slot header
 								{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 							},
@@ -680,6 +682,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
+										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
 										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
@@ -804,6 +807,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
+										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
 										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
@@ -865,6 +869,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
+										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
 										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},
@@ -917,6 +922,7 @@ _.ExpansionFeatures =
 										{"sub", "common_wod_dungeon_drop", 1, BACK},
 										{"sub", "common_wod_dungeon_drop", 1, NECK},
 										{"sub", "common_wod_dungeon_drop", 1, FINGER},
+										{"merge"},	-- Merge all sub results for processing
 										{"pop"},	-- Get the raw Items from each slot header
 										{"is", "itemID"},	-- Only Items (discards Titanforged headers)
 									},

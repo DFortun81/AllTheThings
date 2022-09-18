@@ -545,8 +545,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 								i(189808),	-- Lihuvim's Severing Scalpel
 								i(189802),	-- Loquacious Keeper's Peridot
 								i(188269),	-- Pocket Protoforge
-								i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-								i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+								ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+								ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 								-- Tier
 								i(191014, {	-- Dreadful Hand Module
 									i(188863),	-- Gauntlets of the First Eidolon
@@ -870,8 +870,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1075,12 +1075,15 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 			}),
 			d(15, {	-- Heroic
 				n(QUESTS, {
-					q(65717, {	-- Final Shape
+					q(65717, bubbleDownSelf({	-- Final Shape
+						["timeline"] = { "added 9.2.0", REMOVED_DFREL },
+						["description"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
 						["g"] = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
- 					}),
+ 					})),
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
 						--["coord"] = { X, Y, Map },	He his moving with us in the raid
@@ -1228,8 +1231,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1375,6 +1378,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						crit(10, {	-- Rygelon
 							["achievementID"] = 15478,	-- Heroic: Sepulcher of the First Ones
 						}),
+						ach(15468, {["timeline"] = { "added 9.2.7", REMOVED_DFREL }}),	-- We Are All Made of Stars [Heroic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard
@@ -1425,7 +1429,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(188253),	-- Scars of Fraternal Strife
 						i(189859),	-- Worldkiller Iris
 						i(189861),	-- Zovastrum, the Unmaking
-						i(190773),	-- Carcinized Protoform (MOUNT! - QUEST)
+						i(190773, {["timeline"] = { "added 9.2.0", REMOVED_DFREL }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 						i(189982),	-- Silithid Soul
 					},
 				}),
@@ -1567,8 +1571,8 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 						i(189808),	-- Lihuvim's Severing Scalpel
 						i(189802),	-- Loquacious Keeper's Peridot
 						i(188269),	-- Pocket Protoforge
-						i(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
-						i(189178),	-- Tools of Incomprehensible Experimentation (PS)
+						ig(189437),	-- Schematic: Stabilized Geomental (RECIPE!)
+						ig(189178),	-- Tools of Incomprehensible Experimentation (PS)
 						-- Tier
 						i(191014, {	-- Dreadful Hand Module
 							i(188863),	-- Gauntlets of the First Eidolon
@@ -1706,6 +1710,7 @@ root("Instances", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } },
 					["crs"] = { 182777 },	-- Rygelon
 					["g"] = {
 						ach(15488),	-- Mythic: Rygelon
+						ach(15469, {["timeline"] = { "added 9.2.7", REMOVED_DFREL }}),	-- We Are All Made of Stars [Mythic]
 						i(189852),	-- Antumbra, Shadow of the Cosmos
 						i(189853),	-- Astral Verdict
 						i(189851),	-- Devastated Worldshard

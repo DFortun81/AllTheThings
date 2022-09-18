@@ -332,6 +332,17 @@ root("Zones", {
 					i(35313, {	-- Bloated Barbed Gill Trout
 						i(34866),	-- Giant Freshwater Shrimp
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					o(182952, {	-- Steam Pump Flotsam
 						["model"] = 219411,
 						["groups"] = {
@@ -341,6 +352,17 @@ root("Zones", {
 							}),
 						},
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3870,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3628,	-- Sporefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 				}),
 				n(QUESTS, {
 					q(50130, {	-- A Friendly Gesture
@@ -352,7 +374,10 @@ root("Zones", {
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation.
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly StandingID
+						-- #endif
 					}),
 					q(50131, {	-- An Outside Perspective
 						["qg"] = 17923,	-- Fahssn
@@ -366,7 +391,10 @@ root("Zones", {
 						["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already.
 						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral StandingID
+						-- #endif
 					}),
 					q(9788,  {	-- A Damp, Dark Place
 						["qg"] = 17956,	-- Ikeyen
@@ -1255,9 +1283,6 @@ root("Zones", {
 							{ 86.0, 91.2, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4505, {	-- Bog Lurker
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31248),	-- Bog Epaulets
 							i(31250),	-- Bog Mantle
 							i(31247),	-- Bog Pauldrons
@@ -1282,9 +1307,6 @@ root("Zones", {
 							{ 73.4, 82.4, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4507, {	-- Coilfang Emissary
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31246),	-- Nagahide Leggings
 							i(31244),	-- Nagahide Pants
 							i(31243),	-- Nagascale Legguards
@@ -1323,9 +1345,6 @@ root("Zones", {
 							{ 78.8, 53.6, ZANGARMARSH },
 						},
 						["groups"] = {
-							crit(4516, {	-- Marticar
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31254),	-- Striderhide Cloak
 						},
 					}),
@@ -1407,6 +1426,28 @@ root("Zones", {
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
 								["timeline"] = { "removed 4.2.0" },
+								-- #if BEFORE 4.2.0
+								-- #if ANYCLASSIC
+								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+								["OnTooltip"] = [[function(t)
+									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+									else
+										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+									end
+									tooltip:Show();
+								end]],
+								["OnUpdate"] = [[function(t)
+									if not t.otherItemID then
+										t.otherItemID = 185690;
+										_.CacheField(t, "itemID", t.otherItemID);
+										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+										t.OnUpdate = nil;
+									end
+								end]],
+								-- #endif
+								-- #endif
 							}),
 							i(29192, {	-- Glyph of Ferocity
 								["timeline"] = { "removed 5.0.4" },

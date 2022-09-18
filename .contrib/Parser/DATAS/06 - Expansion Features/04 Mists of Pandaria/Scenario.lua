@@ -460,6 +460,7 @@ _.ExpansionFeatures =
 							i(92882),	-- Stormcrier Ring
 							i(93064),	-- Stormshaper Bracers				- 25 Jan 2022
 							i(93060),	-- Stormshaper Helm*				— 10/25/19
+							i(93061),	-- Stormshaper Legguards			-- 2022-09-11
 							-- From wowhead comments
 							i(93122),	-- Lightning Rod Vambraces
 							i(93119),	-- Lightning Rod Legplates
@@ -707,7 +708,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(93057),	-- Stormshaper Vest
 						i(93058),	-- Stormshaper Greaves
 						i(93059),	-- Stormshaper Gauntlets
-						i(93061),	-- Stormshaper Legguards
 						i(93062),	-- Stormshaper Spaulders
 						i(93063),	-- Stormshaper Belt
 						i(93086),	-- Swashbuckling Vest

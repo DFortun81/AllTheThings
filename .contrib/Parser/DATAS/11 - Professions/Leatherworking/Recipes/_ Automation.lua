@@ -3227,7 +3227,9 @@ profession(165, {	-- Leatherworking
 					["name"] = "Tents",
 					["categoryID"] = 402,
 					["hash"] = "categoryID402",
-					["g"] = {
+					["g"] = sharedData({
+						["u"] = 15,	-- Temporary Recipes (only available while building is active with LW follower)
+					},{
 						{
 							["name"] = "Archmage's Tent",
 							["hash"] = "recipeID176408",
@@ -3343,7 +3345,7 @@ profession(165, {	-- Leatherworking
 							["hash"] = "recipeID176425",
 							["recipeID"] = 176425
 						}
-					}
+					}),
 				},
 				{
 					["name"] = "Cloaks",

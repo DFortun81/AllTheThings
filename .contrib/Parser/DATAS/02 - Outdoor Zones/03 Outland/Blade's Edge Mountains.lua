@@ -1390,7 +1390,7 @@ root("Zones", {
 					}),
 					q(10976, {	-- The Mark of the Nexus-King
 						["qg"] = 22919,	-- Image of Commander Ameer
-						["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
+						["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 						["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
 							{ "i", 31941, 1 },	-- Mark of the Nexus-King
@@ -1736,9 +1736,6 @@ root("Zones", {
 							{ 29.8, 70.8, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(4514, {	-- Hemathion
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31155),	-- Drakescale Breastplate
 							i(31156),	-- Drakescale Hauberk
 							i(31158),	-- Drakeweave Raiment
@@ -1765,9 +1762,6 @@ root("Zones", {
 							{ 68.4, 69.4, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(4518, {	-- Morcrush
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31159),	-- Felstone Pauldrons
 							i(31161),	-- Felstone Spaulders
 							i(31160),	-- Felstone Epaulets
@@ -1846,9 +1840,6 @@ root("Zones", {
 							{ 46.4, 78.6, BLADES_EDGE_MOUNTAINS },
 						},
 						["groups"] = {
-							crit(4521, {	-- Speaker Mar'grom
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31163),	-- Nethersteel Handguards
 							i(31166),	-- Nethersteel-Lined Handwraps
 							i(31165),	-- Nethersteel-Reinforced Gloves

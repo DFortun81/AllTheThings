@@ -326,13 +326,25 @@ root("ExpansionFeatures", tier(SL_TIER, {
 				q(63728, {	-- Hunting Amid Houses TODO: fix customCollect hiding quest
 					["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr (Night Fae have their own version of the quest)
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-					["provider"] = { "n", 177434 },	-- Ysera
+					["qg"] = 177434,	-- Ysera
 					["coord"] = { 47.8, 53.5, ARDENWEALD },
+				}),
+				q(63673, {	-- Hunting Amid Houses
+					["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
+					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+					["qg"] = 160262,	-- Ysera
+					["coord"] = { 44.3, 38.8, THE_TRUNK },
 				}),
 				q(64437, {	-- Inform the Primus
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
+					["qgs"] = {
+						160262,	-- Ysera [Heart of the Forest]
+						177434,	-- Ysera [Ardenweald]
+					},
+					["coords"] = {
+						{ 45.2, 39.6, THE_TRUNK },	-- Ysera [Heart of the Forest]
+						{ 45.2, 64.8, ARDENWEALD },	-- Ysera [Ardenweald]
+					},
 				}),
 				q(63593, {	-- New Sigil of the Kyrian
 					["sourceQuests"] = { 63592 },	-- A New Path

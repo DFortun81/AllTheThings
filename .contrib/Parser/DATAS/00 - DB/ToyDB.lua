@@ -1074,3 +1074,16 @@ i(198090);	-- Jar of Excess Slime
 i(198402);	-- Maruuk Cooking Pot
 -- Rare Drop
 i(198409);	-- Personal Shell
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER TBC
+i(184871);	-- Dark Portal
+i(38233);	-- Path of Illidan
+-- #endif
+-- #if AFTER WRATH
+i(40110);	-- Haunted Momento
+i(198647);	-- Fishspeaker's Lucky Lure
+-- #endif
+-- #endif

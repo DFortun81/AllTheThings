@@ -78,7 +78,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					-- #if AFTER LEGION
 					["coord"] = { 29.6, 10.6, SILITHUS },
 					-- #else
@@ -156,7 +157,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -224,7 +226,8 @@ root("Instances", tier(CLASSIC_TIER, {
 					-- #else
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					-- #endif
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					-- Completable by any class in Retail... confirm for Classic
+					-- ["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					-- #if NOT ANYCLASSIC
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
@@ -517,7 +520,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 12057,
 				["groups"] = {
 					i(18564, {	-- Bindings of the Windseeker (Right)
-						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+						["classes"] = ALL_CLASSES,
 					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(17105),	-- Aurastone Hammer
@@ -576,7 +579,7 @@ root("Instances", tier(CLASSIC_TIER, {
 				["creatureID"] = 12056,
 				["groups"] = {
 					i(18563, {	-- Bindings of the Windseeker (Left)
-						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+						["classes"] = ALL_CLASSES,
 					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(19142),	-- Fire Runed Grimoire

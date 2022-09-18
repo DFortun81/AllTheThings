@@ -5,10 +5,6 @@
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 	pvp(achcat(ACHIEVEMENT_CATEGORY_PVP_LEGACY, {
 		un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
-		un(REMOVED_FROM_GAME, ach(2191)),		-- Ancient Courtyard Protector
-		un(REMOVED_FROM_GAME, ach(1766)),		-- Ancient Protector
-		un(REMOVED_FROM_GAME, ach(2189)),		-- Artillery Expert
-		un(REMOVED_FROM_GAME, ach(1763)),		-- Artillery Veteran
 		ach(611, {	-- Bleeding Bloodhoof
 			["races"] = ALLIANCE_ONLY,
 			["u"] = REMOVED_FROM_GAME,
@@ -36,8 +32,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		un(REMOVED_FROM_GAME, a(ach(11165))),	-- Crest of Heroism (Alliance)
 		un(REMOVED_FROM_GAME, h(ach(11166))),	-- Crest of Heroism (Horde)
 		un(REMOVED_FROM_GAME, ach(11685)),		-- Decade of Dominance
-		un(REMOVED_FROM_GAME, a(ach(1757))),	-- Defense of the Ancients (Alliance)
-		un(REMOVED_FROM_GAME, h(ach(2200))),	-- Defense of the Ancients (Horde)
 		un(REMOVED_FROM_GAME, ach(12182)),		-- Demonic Double Dozen
 		un(REMOVED_FROM_GAME, ach(11687)),		-- Demonic Dozen
 		un(REMOVED_FROM_GAME, ach(11471)),		-- Don't Hate, Grind to Eight
@@ -46,10 +40,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			["races"] = ALLIANCE_ONLY,
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		un(REMOVED_FROM_GAME, ach(2190)),		-- Drop It Now!
-		un(REMOVED_FROM_GAME, ach(1764)),		-- Drop It!
 		un(REMOVED_FROM_GAME, ach(11693)),		-- Eighteen and Over
-		un(REMOVED_FROM_GAME, ach(2193)),		-- Explosives Expert
 		un(REMOVED_FROM_GAME, a(ach(434, {		-- Field Marshal
 			un(REMOVED_FROM_GAME, a(title(13))),	-- Field Marshal
 		}))),
@@ -124,26 +115,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			})),
 			title(229),	-- Gorgeous
 		})),
-		un(REMOVED_FROM_GAME, ach(2194, {		-- Master of Strand of the Ancients
-			crit(1),				-- Strand of the Ancients Veteran
-			crit(2),				-- Storm the Beach
-			crit(3),				-- Steady Hands
-			crit(4),				-- The Dapper Sapper
-			crit(5),				-- Explosives Expert
-			crit(6),				-- Not Even a Scratch (Alliance);Defense of the Ancients (Horde)
-			crit(7),				-- Artillery Veteran
-			crit(8),				-- Artillery Expert
-			crit(9),				-- Drop It!
-			crit(10),				-- Drop It Now!
-			crit(11),				-- Ancient Protector
-			crit(12),				-- Ancient Courtyard Protector
-			crit(13),				-- Defense of the Ancients (Alliance);Defense of the Ancients (Horde)
-		})),
 		un(REMOVED_FROM_GAME, a(ach(441, {		-- Master Sergeant
 			un(REMOVED_FROM_GAME, a(title(4))),	-- Master Sergeant
 		}))),
-		un(REMOVED_FROM_GAME, a(ach(1762))),	-- Not Even a Scratch (Alliance)
-		un(REMOVED_FROM_GAME, h(ach(2192))),	-- Not Even a Scratch (Horde)
 		un(REMOVED_FROM_GAME, a(ach(610))),		-- Orgrimmar Offensive
 		un(REMOVED_FROM_GAME, ach(12183)),		-- Prestige Quartermaster
 		un(REMOVED_FROM_GAME, a(ach(8451))),	-- Prideful Conquest (Alliance)
@@ -170,22 +144,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, a(title(5))),	-- Sergeant Major
 		}))),
 		un(REMOVED_FROM_GAME, ach(11470)),		-- Slayin' to Seven
-		un(REMOVED_FROM_GAME, ach(1765)),		-- Steady Hands
 		un(REMOVED_FROM_GAME, h(ach(451, {		-- Stone Guard
 			un(REMOVED_FROM_GAME, h(title(20))),	-- Stone Guard
 		}))),
-		un(REMOVED_FROM_GAME, ach(1310)),		-- Storm the Beach
 		ach(615, {								-- Storming Stormwind
 			["races"] = HORDE_ONLY,
 			["u"] = REMOVED_FROM_GAME,
 		}),
-		un(REMOVED_FROM_GAME, ach(1309, {		-- Strand of the Ancients Veteran
-				un(REMOVED_FROM_GAME, ach(1308)),	-- Strand of the Ancients Victory
-		})),
 		un(REMOVED_FROM_GAME, ach(1174, {		-- The Arena Master
 			un(REMOVED_FROM_GAME, title(50)),	-- Arena Master
 		})),
-		un(REMOVED_FROM_GAME, ach(1761)),		-- The Dapper Sapper
 		ach(10743, {	-- The Prestige (A)
 			["races"] = ALLIANCE_ONLY,
 			["u"] = REMOVED_FROM_GAME,

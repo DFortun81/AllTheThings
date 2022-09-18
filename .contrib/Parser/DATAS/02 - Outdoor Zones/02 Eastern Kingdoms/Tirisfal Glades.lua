@@ -1188,8 +1188,9 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(24992, {	-- Escaped From Gilneas
-					["sourceQuest"] = 24980,	-- The Scarlet Palisade
-					["description"] = "Quest is granted by getting a Cursed Darkhound to low health and letting it cast Leaping Bite on you during or after completing |cFFFFD700Darkhound Pounding|r.",
+					["sourceQuest"] = 24990,	-- Darkhound Pounding
+					["cr"] = 1548,	-- Cursed Darkhound
+					["description"] = "Quest is granted by getting in combat with a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1414,9 +1415,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 20,
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
+					["races"] = { UNDEAD },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(24998, {	-- Maggot Eye
 					["qg"] = 38978,	-- Apprentice Crispin

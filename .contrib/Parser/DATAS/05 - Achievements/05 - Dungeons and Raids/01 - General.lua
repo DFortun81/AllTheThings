@@ -540,7 +540,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(28),		-- Heroic: Tsulong
 			crit(29),		-- Heroic: Lei Shi
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {		-- Glory of the Raider (10 player)
+		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {	-- Glory of the Raider (10 player)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				-- #if BEFORE 4.0.1
@@ -563,7 +563,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				2148,		-- Denyin' the Scion (10 player)
 				2184,		-- Just Can't Get Enough (10 player)
 			}},
-			["maps"] = { EYE_OF_ETERNITY, OBSIDIAN_SANCTUM, NAXXRAMAS },
+			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44175, {	-- Plagued Proto-Drake (MOUNT!)
 					-- #if ANYCLASSIC
@@ -582,7 +582,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2138, {		-- Glory of the Raider (25 player)
+		applyclassicphase(WRATH_PHASE_ONE, ach(2138, {	-- Glory of the Raider (25 player)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				579,		-- The Dedicated Few (25 player)
@@ -605,7 +605,7 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				2147,		-- The Hundred Club (25 player)
 				2185,		-- Just Can't Get Enough (25 player)
 			}},
-			["maps"] = { EYE_OF_ETERNITY, OBSIDIAN_SANCTUM, NAXXRAMAS },
+			["maps"] = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 			["groups"] = {
 				i(44164, {	-- Black Proto-Drake (MOUNT!)
 					-- #if ANYCLASSIC

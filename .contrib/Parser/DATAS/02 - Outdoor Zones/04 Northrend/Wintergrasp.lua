@@ -5,67 +5,8 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(WINTERGRASP, {
 			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
-			["achievementID"] = 1752,	--  Master of Wintergrasp
+			["icon"] = "Interface\\Icons\\Spell_frost_chillingblast",
 			["groups"] = {
-				pvp(n(ACHIEVEMENTS, {
-					ach(1752, {	-- Master of Wintergrasp
-						-- Meta Achievement should symlink the contained Achievements from Source
-						["sym"] = {{"meta_achievement",
-							1722,	-- Archavon the Stone Watcher (10 player)
-							1721,	-- Archavon the Stone Watcher (25 player)
-							2080,	-- Black War Mammoth
-							1737,	-- Destruction Derby (A)
-							2476,	-- Destruction Derby (H)
-							1751,	-- Didn't Stand a Chance
-							1727,	-- Leaning Tower
-							1723,	-- Vehicular Gnomeslaughter
-							2199,	-- Wintergrasp Ranger
-							1718,	-- Wintergrasp Veteran
-							1755,	-- Within Our Grasp
-						}},
-					}),
-					ach(1717, {	-- Wintergrasp Victory
-						["rank"] = 1,
-					}),
-					ach(1718, {	-- Wintergrasp Veteran
-						["rank"] = 100,
-					}),
-					ach(2080),	-- Black War Mammoth
-					ach(1737, {	-- Destruction Derby (A)
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(1),	-- Wintergrasp Catapult
-							crit(2),	-- Wintergrasp Demolisher
-							crit(3),	-- Wintergrasp Siege Engine
-							crit(4),	-- Wintergrasp Tower Cannon
-						},
-					}),
-					ach(2476, {	-- Destruction Derby (H)
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(1),	-- Wintergrasp Catapult
-							crit(2),	-- Wintergrasp Demolisher
-							crit(3),	-- Wintergrasp Siege Engine
-							crit(4),	-- Wintergrasp Tower Cannon
-						},
-					}),
-					ach(1751),	-- Didn't Stand a Chance
-					ach(1727),	-- Leaning Tower
-					ach(1723),	-- Vehicular Gnomeslaughter
-					ach(2199, {	-- Wintergrasp Ranger
-						crit(1),	-- Wintergrasp Fortress
-						crit(2),	-- Eastspark Workshop
-						crit(3),	-- Flamewatch Tower
-						crit(4),	-- The Broken Temple
-						crit(5),	-- Shadowsight Tower
-						crit(6),	-- The Cauldron of Flames
-						crit(7),	-- The Sunken Ring
-						crit(8),	-- Winter's Edge Tower
-						crit(9),	-- Westspark Workshop
-						crit(10),	-- The Chilled Quagmire
-					}),
-					ach(1755),	-- Within Our Grasp
-				})),
 				n(FLIGHT_PATHS, {
 					fp(303, {	-- Valiance Landing Camp
 						["coord"] = { 72.0, 31.0, WINTERGRASP },
@@ -78,190 +19,190 @@ root("Zones", {
 					q(13156, {	-- A Rare Herb
 						["qg"] = 31054,	-- Anchorite Tessa
 						["coord"] = { 72.4, 31.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13195, {	-- A Rare Herb
 						["qg"] = 31054,	-- Anchorite Tessa
 						["coord"] = { 72.4, 31.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13193, {	-- Bones and Arrows
 						["qg"] = 31102,	-- Vieron Blazefeather
 						["coord"] = { 22.4, 34.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13199, {	-- Bones and Arrows
 						["qg"] = 31102,	-- Vieron Blazefeather
 						["coord"] = { 22.4, 34.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13196, {	-- Bones and Arrows
 						["qg"] = 31052,	-- Bowyer Randolph
 						["coord"] = { 53.0, 20.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13154, {	-- Bones and Arrows
 						["qg"] = 31052,	-- Bowyer Randolph
 						["coord"] = { 53.0, 20.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13222, {	-- Defend the Siege
 						["qg"] = 31109,	-- Senior Demolitionist Legoso
 						["coord"] = { 71.6, 32.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13223, {	-- Defend the Siege
 						["qg"] = 31107,	-- Lieutenant Murp
 						["coord"] = { 22.4, 35.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13197, {	-- Fueling the Demolishers
 						["qg"] = 31108,	-- Siege Master Stouthandle
 						["coord"] = { 71.8, 31.2, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13191, {	-- Fueling the Demolishers
 						["qg"] = 31106,	-- Siegesmith Stronghoof
 						["coord"] = { 47.0, 21.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13200, {	-- Fueling the Demolishers
 						["qg"] = 31106,	-- Siegesmith Stronghoof
 						["coord"] = { 47.0, 21.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13194, {	-- Healing with Roses
 						["qg"] = 31053,	-- Primalist Mulfort
 						["coord"] = { 22.2, 34.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13201, {	-- Healing with Roses
 						["qg"] = 31053,	-- Primalist Mulfort
 						["coord"] = { 22.2, 34.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13202, {	-- Jinxing the Walls
 						["qg"] = 31101,	-- Hoodoo Master Fu'jin
 						["coord"] = { 51.6, 21.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13179, {	-- No Mercy for the Merciless
 						["qg"] = 31036,	-- Commander Zanneth
 						["coord"] = { 72.0, 32.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13177, {	-- No Mercy for the Merciless
 						["qg"] = 31036,	-- Commander Zanneth
 						["coord"] = { 72.0, 32.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13178, {	-- Slay them all!
 						["qg"] = 31091,	-- Commander Dardosh
 						["coord"] = { 22.0, 35.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13180, {	-- Slay them all!
 						["qg"] = 31091,	-- Commander Dardosh
 						["coord"] = { 22.0, 35.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13538, {	-- Southern Sabotage
 						["qg"] = 31153,	-- Tactical Officer Ahbramis
 						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13186, {	-- Stop the Siege
 						["qg"] = 31109,	-- Senior Demolitionist Legoso
 						["coord"] = { 71.6, 32.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13185, {	-- Stop the Siege
 						["qg"] = 31107,	-- Lieutenant Murp
 						["coord"] = { 22.4, 35.6, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13539, {	-- Toppling the Towers
 						["qg"] = 31151,	-- Tactical Officer Kilrath
 						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13181, {	-- Victory in Wintergrasp
 						["qg"] = 31153,	-- Tactical Officer Ahbramis
 						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13183, {	-- Victory in Wintergrasp
 						["qg"] = 31151,	-- Tactical Officer Kilrath
 						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13192, {	-- Warding the Walls
 						["qg"] = 31101,	-- Hoodoo Master Fu'jin
 						["coord"] = { 51.6, 21.0, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13198, {	-- Warding the Warriors
 						["qg"] = 31051,	-- Sorceress Kaylana
 						["coord"] = { 48.4, 21.08, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 					q(13153, {	-- Warding the Warriors
 						["qg"] = 31051,	-- Sorceress Kaylana
 						["coord"] = { 48.4, 21.08, WINTERGRASP },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 75,
 					}),
 				}),
@@ -269,7 +210,6 @@ root("Zones", {
 					["description"] = "These vendors will only show if your faction controls Wintergrasp.",
 					["groups"] = {
 						n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
-							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.8, 17.4, WINTERGRASP },
 							["races"] = HORDE_ONLY,
 							["groups"] = pvp({
@@ -573,7 +513,6 @@ root("Zones", {
 						}),
 						n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
-							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
 								i(41742, {	-- Design: Enigmatic Skyflare Diamond
@@ -649,9 +588,6 @@ root("Zones", {
 								}),
 								i(43956, {	-- Black War Mammoth (A) (MOUNT!)
 									["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-									["groups"] = {
-										ach(2080),		-- Black War Mammoth
-									},
 								}),
 								i(46058, {	-- Titan-Forged Breastplate of Triumph
 									["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
@@ -790,7 +726,6 @@ root("Zones", {
 							}),
 						}),
 						n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
-							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
@@ -893,7 +828,6 @@ root("Zones", {
 							}),
 						}),
 						n(30489, {	-- Morgan Day <Jewelcrafter>
-							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.8, 17.6, WINTERGRASP },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
@@ -972,14 +906,10 @@ root("Zones", {
 						}),
 						n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 							["coord"] = { 51.6, 17.6, WINTERGRASP },
-							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = HORDE_ONLY,
 							["groups"] = pvp({
 								i(44077, {	-- Black War Mammoth (H) (MOUNT!)
 									["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
-									["groups"] = {
-										ach(2080),		-- Black War Mammoth
-									},
 								}),
 								i(46058, {	-- Titan-Forged Breastplate of Triumph
 									["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor

@@ -1038,31 +1038,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["timeline"] = { "added 9.1.5" },
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["sym"] = {
-					{"select", "mapID", BASTION },
-					{"pop"},
+					{"select", "mapID", BASTION },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", MALDRAXXUS },
-					{"pop"},
+					{"select", "mapID", MALDRAXXUS },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", ARDENWEALD },
-					{"pop"},
+					{"select", "mapID", ARDENWEALD },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
-					{"select", "mapID", REVENDRETH },
-					{"pop"},
+					{"select", "mapID", REVENDRETH },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },
-					{"pop"},
 					{"finalize"},
 
 					{"merge"},
+					{"pop"},
 					{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", },
 				},
 			})),
@@ -1142,6 +1135,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					57878,	-- Choosing Your Purpose [Story] -- TODO: confirm this requirement on a Story-Night Fae?
 					62000,	-- Choosing Your Purpose [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -1152,8 +1146,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["sourceQuests"] = {
 					-- TODO: confirm
 					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
 					63214,	-- Report to Moonberry [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = "SL_COV_NFA",	-- Night Fae
 				["provider"] = { "n", 171795 },	-- Lady Moonberry
 				["coord"] = { 39.7, 61.0, ORIBOS },
@@ -1166,6 +1162,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -1175,8 +1172,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(60491, {	-- Among the Kyrian
 				["sourceQuests"] = {
 					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
 					63211,	-- Report to Adrestes [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = "SL_COV_KYR",	-- Kyrian
 				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 				["coord"] = { 36.1, 64.1, ORIBOS },
@@ -1189,6 +1188,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -1198,8 +1198,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(58609, {	-- Taking The Seat
 				["sourceQuests"] = {
 					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
 					63212,	-- Report to Mevix [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
 				["provider"] = { "n", 171821 },	-- Baroness Draka
 				["coord"] = { 42.9, 74.1, ORIBOS },
@@ -1212,6 +1214,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
@@ -1220,8 +1223,10 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			q(59314, {	-- Sinfall
 				["sourceQuests"] = {
 					57878,	-- Choosing Your Purpose [Story]
+					62000,	-- Choosing Your Purpose [Skip]
 					63215,	-- Report to Draven [Skip]
 				},
+				["sourceQuestNumRequired"] = 1,
 				["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
 				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.8, 68.9, ORIBOS },

@@ -5833,7 +5833,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61507),	--
 				q(61517, { ["name"] = "zz", }),	-- zz
 				q(61521, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-				q(61528),	--
 				q(61536),	--
 				-- 9.0.1.35167
 				q(61563),	--
@@ -6005,7 +6004,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(62645, { ["name"] = "LFGDungeons - SL - Normal Random - Nth", }),	-- LFGDungeons - SL - Normal Random - Nth
 				q(62646, { ["name"] = "LFGDungeons - SL - Raid Finder - 1st", }),	-- LFGDungeons - SL - Raid Finder - 1st
 				q(62647, { ["name"] = "LFGDungeons - SL - Raid Finder - Nth", }),	-- LFGDungeons - SL - Raid Finder - Nth
-				q(63192, { ["name"] = "Path of Ascension: Trial of Humility", ["_drop"] = {"g"} }),	-- Path of Ascension: Trial of Humility
 				q(60023, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(60024, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 				q(60025, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E

@@ -4,17 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_MOUNTS_FOS, {
-		un(BREWFEST, ach(3496)),	-- A Brew-FAST Mount
-		un(REMOVED_FROM_GAME, ach(430)),	-- Amani War Bear
-		ach(4626),			-- And I'll Form the Head!
-		ach(885),			-- Ashes of Al'ar
-		un(LOVE_IS_IN_THE_AIR, ach(4627, {	-- X-45 Heartbreaker
-			["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
-			["timeline"] = { "added 3.3.0" },
-		})),
-		un(REMOVED_FROM_GAME, ach(2316, {	-- Brutal Nether Drake
-			un(REMOVED_FROM_GAME, i(43516)),	-- Brutal Nether Drake (MOUNT!)
-		})),
 		un(REMOVED_FROM_GAME, ach(6741, {	-- Cataclysmic Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(85785)),	-- Cataclysmic Gladiator's Twilight Drake (MOUNT!)
 		})),
@@ -28,10 +17,6 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(11001, {	-- Cruel Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141845)),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(3096, {	-- Deadly Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46708)),	-- Deadly Gladiator's Frost Wyrm (MOUNT!)
-		})),
-		ach(729),			-- Deathcharger's Reins
 		un(REMOVED_FROM_GAME, ach(12140, {	-- Demonic Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(153493)),	-- Demonic Gladiator's Storm Dragon (MOUNT!)
 		})),
@@ -53,26 +38,16 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13450, {	-- Fierce Gladiator's Storm Dragon
 			un(REMOVED_FROM_GAME, i(141847)),	-- Fierce Gladiator's Storm Dragon (MOUNT!)
 		})),
-		ach(882),			-- Fiery Warhorse's Reins
 		un(REMOVED_FROM_GAME, ach(4832)),	-- Friends In Even Higher Places
 		un(REMOVED_FROM_GAME, ach(1436)),	-- Friends In High Places
 		un(REMOVED_FROM_GAME, ach(8794)),	-- Friends In Places Even Higher Than That
 		un(REMOVED_FROM_GAME, ach(8213)),	-- Friends In Places Higher Yet
 		un(REMOVED_FROM_GAME, ach(9925)),	-- Friends In Places Yet Even Higher Than That
-		un(REMOVED_FROM_GAME, ach(3756, {	-- Furious Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(46171)),	-- Furious Gladiator's Frost Wyrm (MOUNT!)
-		})),
-		ach(2081),			-- Grand Black War Mammoth
 		un(REMOVED_FROM_GAME, ach(8705, {	-- Grievous Gladiator's Cloud Serpent
 			un(REMOVED_FROM_GAME, i(104326)),	-- Grievous Gladiator's Cloud Serpent (MOUNT!)
 		})),
-		ach(8092),			-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
-		ach(4625),			-- Invincible's Reins
 		un(REMOVED_FROM_GAME, ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
 			un(REMOVED_FROM_GAME, i(95041)),	-- Malevolent Gladiator's Cloud Serpent (MOUNT!)
-		})),
-		un(REMOVED_FROM_GAME, ach(887, {	-- Merciless Nether Drake
-			un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake (MOUNT!)
 		})),
 		un(REMOVED_FROM_GAME, ach(13632, {	-- Notoroious Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake (MOUNT!)
@@ -102,14 +77,9 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(9229, {	-- Primal Gladiator's Felblood Gronnling
 			un(REMOVED_FROM_GAME, i(128277)),	-- Primal Gladiator's Felblood Gronnling (MOUNT!)
 		})),
-		ach(883),			-- Reins of the Raven Lord
-		un(REMOVED_FROM_GAME, ach(3757, {	-- Relentless Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(47840)),	-- Relentless Gladiator's Frost Wyrm (MOUNT!)
-		})),
 		un(REMOVED_FROM_GAME, ach(6322, {	-- Ruthless Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(71954)),	-- Ruthless Gladiator's Twilight Drake (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(416)),	-- Scarab Lord
 		ach(5767, {			-- Scourer of the Eternal Sands
 			title(143),		-- the Camel-Hoarder
 		}),
@@ -119,25 +89,12 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 			un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
-			un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake (MOUNT!)
-		})),
-		un(BLACK_MARKET, ach(881)),	-- Swift Razzashi Raptor
-		ach(884),			-- Swift White Hawkstrider
-		un(BLACK_MARKET, ach(880)),	-- Swift Zulian Tiger
-		un(HALLOWS_END, ach(980)),	-- The Horseman's Reins
 		un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
 			un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent (MOUNT!)
 		})),
 		ach(14999, bubbleDownSelf({ ["timeline"] = { "added 9.1.0", "removed 9.2.0" } }, {	-- Unchained Gladiator's Soul Eater
 			i(186177),	-- Unchained Gladiator's Soul Eater (MOUNT!)
 		})),
-		un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
-			un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake (MOUNT!)
-		})),
-		ach(3357, {			-- Venomhide Ravasaur
-			["races"] = HORDE_ONLY,
-		}),
 		un(REMOVED_FROM_GAME, ach(6003, {	-- Vicious Gladiator's Twilight Drake
 			un(REMOVED_FROM_GAME, i(71339)),	-- Vicious Gladiator's Twilight Drake (MOUNT!)
 		})),
@@ -147,15 +104,8 @@ root("Achievements", achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(10146, {	-- Warmongering Gladiator's Felblood Gronnling
 			un(REMOVED_FROM_GAME, i(128282)),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
 		})),
-		ach(424),			-- Why? Because It's Red
 		un(REMOVED_FROM_GAME, ach(10137, {	-- Wild Gladiator's Felblood Gronnling
 			un(REMOVED_FROM_GAME, i(128281)),	-- Wild Gladiator's Felblood Gronnling (MOUNT!)
-		})),
-		ach(3356, {			-- Winterspring Frostsaber
-			["races"] = ALLIANCE_ONLY,
-		}),
-		un(REMOVED_FROM_GAME, ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
-			un(REMOVED_FROM_GAME, i(50435)),	-- Wrathful Gladiator's Frost Wyrm (MOUNT!)
 		})),
 	}),
 }));

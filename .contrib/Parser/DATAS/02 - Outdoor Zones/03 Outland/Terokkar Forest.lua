@@ -342,6 +342,17 @@ root("Zones", {
 				}),
 				prof(FISHING, {
 					i(34865),	-- Blackfin Darter
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3869,	-- Highland Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3627,	-- Highland Mixed School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					i(27388, {	-- Mr. Pinchy
 						["description"] = "Fished up from Highland Mixed Schools. You have 3 wishes per Mr. Pinchy, each wish granting one of the following effects:\n\n1) Mr. Pinchy's Blessing (Flask)\n2) Summon Furious Mr. Pinchy (Enemy)\n3) Magical Crawdad Box (Rare Pet)\n4) Mr. Pinchy's Gift (Potions)\n5) Benevolent Mr. Pinchy (Guardian)",
 						["groups"] = {
@@ -354,6 +365,17 @@ root("Zones", {
 							}),
 						},
 					}),
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3868,	-- School of Darter
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3628,	-- School of Darter
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 				}),
 				n(QUESTS, {
 					q(11666, {	-- Bait Bandits
@@ -741,7 +763,7 @@ root("Zones", {
 						["qg"] = 18715,	-- Private Weeks
 						["coord"] = { 40.4, 36.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 10023,	-- Patriarch Ironjaw
+						["sourceQuest"] = 10040,	-- Who Are They? (A)
 						["groups"] = {
 							i(25933),	-- Extra Sharp Blade
 							i(25935),	-- Invincible Stave
@@ -1266,9 +1288,6 @@ root("Zones", {
 							{ 41.2, 65.4, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4509, {	-- Crippler
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31238),	-- Dragonbone Ring
 						},
 					}),
@@ -1321,9 +1340,6 @@ root("Zones", {
 							{ 55.4, 32.6, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4510, {	-- Doomsayer Jurim
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31235),	-- Grim Boots
 							i(31233),	-- Grim Greaves
 							i(31232),	-- Grim Sabatons
@@ -1410,9 +1426,6 @@ root("Zones", {
 							{ 59.8, 25.2, TEROKKAR_FOREST },
 						},
 						["groups"] = {
-							crit(4520, {	-- Okrek
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31228),	-- Feathered Belt
 							i(31227),	-- Feathered Girdle
 							i(31231),	-- Feathered Sash

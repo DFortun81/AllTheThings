@@ -1525,7 +1525,6 @@ root("HiddenQuestTriggers", {
 		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
 		q(57559),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
 		q(62706),	-- Triggered after turning in For Queen and Grove! (58160) / A Call to Service (62695)
-		q(63006),	-- Triggered after turning in For Queen and Grove! (58160)
 		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
 		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
 		q(62959),	-- Triggered after completing first Into The Unknown quest (62296)
@@ -1640,7 +1639,7 @@ root("HiddenQuestTriggers", {
 		-- q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
 		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
 		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
-		q(57615),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
+		q(57615),	-- triggered after summoning Atticus/Neena in Maldraxxus
 		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
 		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
 		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time

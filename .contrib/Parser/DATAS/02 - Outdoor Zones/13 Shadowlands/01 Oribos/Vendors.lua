@@ -24,86 +24,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			}),
 			n(176064, {	-- Adjutant Mikaros <Ascended Quartermaster>
 				["coord"] = { 47.6, 77.2, ORIBOS },
-				["g"] = {
-					i(183740, {	-- Gilded Prowler (MOUNT!)
-						["cost"] = 300000000, -- 30,000g
-					}),
-					i(184410),	-- Aspirant's Stretcher (TOY!)
-					i(183094, {	-- Plans: Shadowsteel Helm
-						-- ["cost"] = , -- TODO:
-					}),
-					i(183097, {	-- Schematic: PHA7-YNX
-						-- ["cost"] = , -- TODO:
-					}),
-					i(183098, {	-- Technique: Codex of the Still Mind (RECIPE!)
-						-- ["cost"] = , -- TODO:
-					}),
-					i(183103, {	-- Technique: Contract: The Ascended (RECIPE!)
-						["cost"] = 17650000, -- 1,765g
-					}),
-					i(183243, {	-- Memory of the Arbiter's Judgment
-						["cost"] = 11000000, -- 1,100g
-						["modID"] = 14,
-					}),
-					i(180857, {	-- Goldenpaw Kit
-						["cost"] = { { "i", 163036, 250 } },
-					}),
-					i(184351),	-- Illusion: Devoted Spirit
-					i(178991),	-- Tabard of the Ascended
-					i(184734),	-- Bracers of Regret
-					i(184728),	-- Casque of the Path
-					i(184730),	-- Cowl of the Path
-					i(184731),	-- Gorget of the Path
-					i(184732),	-- Manacles of Burden
-					i(184729),	-- Masque of the Path
-					i(184756),	-- Smoothed Loop of Contemplation
-					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-					i(184733),	-- Wristclamps of Remorse
-					i(184735),	-- Wristclasps of Shame
-				},
+				["sym"] = {{"select","npcID",160470},	-- Adjutant Nikos <Ascended Quartermaster>
+							{"isnt","repeatable"},		-- Not Paragon quest
+							{"pop"}},
 			}),
 			n(176368, {	-- Archivist Leonara <Avowed Quartermaster>
 				["coord"] = { 46.1, 77.7, ORIBOS },
-				["g"] = {
-					i(184221, {	-- Archivist's Quill
-						["cost"] = { { "c", 1816, 1000 } },
-					}),
-					i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
-						["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
-						["cost"] = { { "c", 1816, 600 } },
-					}),
-					i(184222, {	-- Lemet's Requisition Orders
-						["questID"] = 62822,
-						["cost"] = { { "c", 1816, 350 } },
-					}),
-					i(182890, {	-- Rapid Recitation Quill (TOY!)
-						["cost"] = { { "c", 1816, 500 } },
-					}),
-					i(182660, {	-- Recipe: Shadestone (RECIPE!)
-						["cost"] = { { "c", 1816, 35 } },
-					}),
-					i(184219, {	-- Treatise on Sinstone Fragment Acquisition
-						["questID"] = 62821,
-						["cost"] = { { "c", 1816, 600 } },
-					}),
-					i(184218, {	-- Vulgarity Arbiter (TOY!)
-						["cost"] = { { "c", 1816, 1000 } },
-					}),
-					n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
-						i(180940, {	-- Ebony Crypt Keeper's Mantle
-							["cost"] = { { "c", 1816, 500 } },
-						}),
-						i(182954, {	-- Inquisition Gargon (MOUNT!)
-							["cost"] = { { "c", 1816, 2000 } },
-						}),
-					})),
-				},
+				["sym"] = {{"select","npcID",173705},	-- Archivist Janeera <Avowed Quartermaster>
+							{"isnt","repeatable"},		-- Not Paragon quest
+							{"pop"}},
 			}),
 			n(182864, bubbleDownSelf({ ["timeline"] = { "added 9.1.5" } }, {	-- Au'Dara
 				["description"] = "Next to the flightmaster.",
@@ -124,7 +53,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 						},
 					}),
 					i(194334, {	-- Encrypted Equipment Chest
-					["timeline"] = { "added 9.2.5" },
+					["timeline"] = { "added 9.2.5", REMOVED_SLS4 },
 						["cost"] = {
 							{ "c", 1191, 500 },	-- 500xValor
 						},
@@ -227,121 +156,15 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			})),
 			n(176067, {	-- Dar Vattish <Undying Army Quartermaster>
 				["coord"] = { 47.8, 77.9, ORIBOS },
-				["g"] = {
-					i(182082, {	-- Lurid Bloodtusk (MOUNT!)
-						["cost"] = 300000000, -- 30,000g
-					}),
-					i(183112, {	-- Animated Radius
-						["description"] = "Combine with the other bones to craft the pet:\n|cFF0070ddAnimated Ulna|r: A rare reward from pet battle WQs in Maldraxxus.\n|cFF0070ddFlexing Phalanges|r: Skeletal Hand Fragments (47.4, 62.1 in Maldraxxus).",
-						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
-						["g"] = {
-							i(183114),	-- Carpal (PET!)
-						},
-					}),
-					i(181272, {	-- Toenail
-						["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
-					}),
-					i(183101, {	-- Pattern: Shadowlace Cloak
-						["cost"] = 13500000, -- 1,350g
-					}),
-					i(183095, {	-- Plans: Shadowsteel Pauldrons
-						["cost"] = 13500000, -- 1,350g
-					}),
-					i(183858, {	-- Schematic: Wormhole Generator: Shadowlands
-						["cost"] = 13500000, -- 1,350g
-					}),
-					i(183104, {	-- Technique: Contract: The Undying Army (RECIPE!)
-						["cost"] = 17650000, -- 1,765g
-					}),
-					i(184741),	-- Apprentice Necromancer's Gloves
-					i(184738),	-- Chainmail of the March Warden
-					i(184737),	-- Chestplate of the March Warden
-					i(180456, {	-- Colors of the Undying Army
-						["cost"] = 2500000, -- 250g
-					}),
-					i(184740),	-- Fortified Jawcrackers
-					i(184744),	-- Gnarled Boneloop
-					i(183189, {	-- Illusion: Undying Spirit
-						["cost"] = 12500000, -- 1,250g
-					}),
-					i(183244, {	-- Memory of the Rattle of the Maw
-						["cost"] = 11000000, -- 1,100g
-					}),
-					i(184739),	-- Pallid Stitched Gloves
-					i(184742),	-- Rattling Bonefists
-					i(184736),	-- Robe of the March Warden
-					i(184745),	-- Tunic of the March Warden
-					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-					n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
-						i(181807, {	-- Barbarous Osteowings
-							["cost"] = 5000000, -- 500g
-						}),
-						i(181808, {	-- Death Fetish
-							["cost"] = 5000000, -- 500g
-						}),
-					})),
-				},
+				["sym"] = {{"select","npcID",173003},	-- Nalcorn Talsen <Undying Army Quartermaster>
+							{"isnt","repeatable"},		-- Not Paragon quest
+							{"pop"}},
 			}),
 			n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
 				["coord"] = { 46.6, 77.2, ORIBOS },
-				["g"] = {
-					i(183518, {	-- Court Sinrunner (MOUNT!)
-						["cost"] = 300000000, -- 30,000g
-					}),
-					i(179282, {	-- Court of Harvesters Tabard
-						["cost"] = 2500000, -- 250g
-					}),
-					i(180593, {	-- Court Messenger Scroll
-						["cost"] = { { "i", 163036, 250 } },
-					}),
-					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism
-						["cost"] = 17650000, -- 1,765g
-					}),
-					i(183099, {	-- Design: Revitalizing Jewel Doublet
-						["cost"] = 13500000, -- 1,350g
-					}),
-					i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)
-						["cost"] = 17650000, -- 1,765g
-					}),
-					i(183245, {	-- Memory of Norgannon
-						["cost"] = 11000000, -- 1,100g
-					}),
-					i(183839, {	-- Pattern: Heavy Desolate Hide
-						["cost"] = 17650000, -- 1,765g
-					}),
-					i(183900, {	-- Sinvyr Tea Set (TOY!)
-						["cost"] = 13500000, -- 1,350g
-					}),
-					i(177665),	-- Spectral Hankerchief
-					i(184720),	-- Reflective Waistguard
-					i(184721),	-- Flourished Cummerbund
-					i(184722),	-- Ostentatious Buckle
-					i(184723),	-- Bedazzled Belt
-					i(184724),	-- Courtier's Pauldron
-					i(184725),	-- Courtier's Shoulderplate
-					i(184726),	-- Courtier's Mantle
-					i(184727),	-- Courtier's Shoulderguard
-					i(184755),	-- Reinforced High Collar
-					i(182207),	-- Illusion: Sinsedge
-					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-					n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
-						i(183708, {	-- Glittering Gold Sinstone Chain
-							["cost"] = { { "c", ANIMA, 3500 } },
-						}),
-					})),
-				},
+				["sym"] = {{"select","npcID",156822},	-- Mistress Mihaela <Court of Harvesters Quartermaster>
+							{"isnt","repeatable"},		-- Not Paragon quest
+							{"pop"}},
 			}),
 			n(156690, {	-- Distributor Au'nagl
 				["coord"] = { 47.0, 23.6, ORIBOS },
@@ -516,59 +339,9 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 			})),
 			n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
 				["coord"] = { 47.0, 76.8, ORIBOS },
-				["g"] = {
-					i(180729, {	-- Duskflutter Ardenmoth (MOUNT!)
-						["cost"] = 300000000,	-- 30,000g
-					}),
-					i(178336, {	-- Tabard of the Wild Hunt
-						["cost"] = 2500000,	-- 250g
-					}),
-					i(180641, {	-- Floofa
-						["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
-					}),
-					i(183093, {	-- Technique: Contract: The Wild Hunt (RECIPE!)
-						["cost"] = 17650000,	-- 1,765g
-					}),
-					i(183096, {	-- Formula: Sacred Shard (RECIPE!)
-						["cost"] = 13500000,	-- 1,350g
-					}),
-					i(183100, {	-- Pattern: Heavy Desolate Armor Kit
-						["cost"] = 13500000,	-- 1,350g
-					}),
-					i(183106, {	-- Recipe: Eternal Cauldron (RECIPE!)
-						["cost"] = 17650000,	-- 1,765g
-					}),
-					i(183134, {	-- Illusion: Hunt's Favor
-						["cost"] = 12500000,	-- 1,250g
-					}),
-					i(183242, {	-- Memory of Eonar
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(184750),	-- Amber-Plated Legguards
-					i(184751),	-- Cycle-Tender's Pantaloons
-					i(184747),	-- Gamekeeper's Slippers
-					i(184749),	-- Gametender's Bramblewards
-					i(184746),	-- Gametender's Muckstompers
-					i(184748),	-- Gametender's Wading Boots
-					i(184754),	-- Glitterwing Scarf
-					i(184752),	-- Gormscale Leggings
-					i(184753),	-- Tree-Scaler's Britches
-					i(190644, {	-- Vessel of Profound Possibilities
-						["timeline"] = { "added 9.2.0" },
-						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
-						},
-					}),
-					n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
-						i(182168, {	-- Crane Soul
-							["cost"] = { { "c", ANIMA, 1500 } },	-- Reservoir Anima
-						}),
-						i(181309, {	-- Faewoven Pack
-							["cost"] = { { "c", ANIMA, 3500 } },	-- Reservoir Anima
-						}),
-					})),
-				},
+				["sym"] = {{"select","npcID",158556},	-- Aithlyn <Wild Hunt Quartermaster>
+							{"isnt","repeatable"},		-- Not Paragon quest
+							{"pop"}},
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				["coord"] = { 67.0, 32.2, ORIBOS },

@@ -1814,9 +1814,17 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
+					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
 					["timeline"] = { "added 3.3.0", "removed 4.0.1" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
+					["lockCriteria"] = { 1,
+						"spellID", 33388,	-- Apprentice Riding
+						"spellID", 33391,	-- Journeyman Riding
+						"spellID", 34090,	-- Expert Riding
+						"spellID", 34091,	-- Artisan Riding
+						"spellID", 90265,	-- Master Riding
+					},
+					["races"] = { HUMAN },
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(85, {	-- Lost Necklace
 					["qg"] = 246,	-- "Auntie" Bernice Stonefield
@@ -2501,10 +2509,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				i(1307, {	-- Gold Pickup Schedule
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
+						-- #if BEFORE CATA
 						100,	-- Gruff Swiftbite
 						448,	-- Hogger
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
+						-- #ELSE
+						13159,  -- James Clark
+						-- #ENDIF
 					},
 				}),
 				i(778, {	-- Kobold Excavation Pick

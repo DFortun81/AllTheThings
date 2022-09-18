@@ -1478,6 +1478,12 @@ i(190170, 366791);	-- Jigglesworth Sr.
 --i(0, 367676);		-- Nether-Gorged Greatwyrm
 i(192557, 334482);	-- Restoration Deathwalker
 --i(0, 359843);		-- Tangled Dreamweaver
+
+-----------------
+-- PATCH 9.2.7 --
+-----------------
+ --i(0, 386452);		-- Frostbrood Proto-Wyrm
+
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
 
@@ -1562,3 +1568,15 @@ i(192806, 374275);	-- PH Lava Mammoth Red
 i(192807, 374278);	-- PH Lava Mammoth Yellow
 -- PvP
 i(0, 377071);	-- [PH] Gladiator Drake
+
+-- #if ANYCLASSIC
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if AFTER TBC
+i(184865, 348459);	-- Reawakened Phase-Hunter
+-- #endif
+-- #if AFTER WRATH
+i(192455, 372677);	-- Kalu'ak Whalebone Glider
+-- #endif
+-- #endif

@@ -85,6 +85,15 @@ _.Zones =
 							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 							["sourceQuest"] = 29032,	-- Get Them While They're Young
 							["g"] = {
+								classicAch(3356, {	-- Winterspring Frostsaber
+									["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
+									["races"] = ALLIANCE_ONLY,
+									["f"] = MOUNTS,
+									-- #if BEFORE WRATH
+									["description"] = "Obtain a Winterspring Frosaber.",
+									["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+									-- #endif
+								}),
 								i(13086),	-- Winterspring Frostsaber (MOUNT!)
 							},
 						}),

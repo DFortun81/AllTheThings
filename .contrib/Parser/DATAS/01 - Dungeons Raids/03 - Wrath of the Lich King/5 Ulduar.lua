@@ -191,9 +191,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(2945),	-- But I'm On Your Side (10 player)
 						ach(2947),	-- Can't Do That While Stunned (10 player)
-						ach(2903, {	-- Champion of Ulduar
+						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
+							["timeline"] = { "added 3.1", "removed 4.0" },
+						},{
 							title(127),	-- , Champion of Ulduar
-						}),
+						})),
 						ach(2961),	-- Cheese the Freeze (10 player)
 						ach(2980),	-- Con-speed-atory (10 player)
 						ach(3006),	-- Crazy Cat Lady (10 player)
@@ -299,9 +301,11 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(2948),	-- Can't Do That While Stunned (25 player)
 						ach(2962),	-- Cheese the Freeze (25 player)
 						ach(2981),	-- Con-speed-atory (25 player)
-						ach(2904, {	-- Conqueror of Ulduar
+						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
+							["timeline"] = { "added 3.1", "removed 4.0" },
+						},{
 							title(126),	-- , Conqueror of Ulduar
-						}),
+						})),
 						ach(3007),	-- Crazy Cat Lady (25 player)
 						ach(2984),	-- Deforestation (25 player)
 						ach(2954),	-- Disarmed (25 player)
@@ -743,8 +747,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 						-- #if AFTER SHADOWLANDS
 						["lockCriteria"] = { 1, "lvl", 31 },
+						-- #else
+						["lockCriteria"] = { 1, "lvl", 80 },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							title(131),	-- , Herald of the Titans
 						},
 					}),
@@ -1150,6 +1156,10 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron
 					ach(12388, {	-- Alone in the Darkness
+						ach(4626, {	-- And I'll Form the Head!
+							["provider"] = { "i", 45693 },	-- Mimiron's Head
+							["filterID"] = MOUNTS,
+						}),
 						i(45693),	-- Mimiron's Head (MOUNT!)
 						i(46312),	-- Vanquished Clutches of Yogg-Saron
 					}),

@@ -5,7 +5,7 @@ root("Zones", {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(DRAGONBLIGHT, {
 			["lore"] = "Dragonblight is located in central Northrend. It makes a reappearance in Cataclysm as the backdrop for Dragon Soul and Hour of Twilight in patch 4.3. It is an icy valley, covered with the bodies of dead dragons. Players learn about two major plotlines here: the dragonflights at Wyrmrest Temple, and the Wrathgate plot, which has very different stories for Alliance and Horde.",
-			["achievementID"] = 1265,
+			["icon"] = "Interface\\Icons\\Achievement_zone_dragonblight_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					petbattle(ach(9069, {	-- An Awfully Big Adventure
@@ -2088,11 +2088,7 @@ root("Zones", {
 							{ 33.2, 56.8, DRAGONBLIGHT },
 						},
 						["groups"] = {
-							crit(11, {	-- Crazed Indu'le Survivor
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44672),	-- Seal-Fur Spaulders
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32417, {	-- Scarlet Highlord Daion
@@ -2107,11 +2103,7 @@ root("Zones", {
 							{ 69.2, 75.6, DRAGONBLIGHT },
 						},
 						["groups"] = {
-							crit(12, {	-- Scarlet Highlord Daion
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44671),	-- Highlord's Padded Legguards
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 					n(32400, {	-- Tukemuth
@@ -2134,11 +2126,7 @@ root("Zones", {
 							{ 68.0, 58.8, DRAGONBLIGHT },
 						},
 						["groups"] = {
-							crit(10, {	-- Tukemuth
-								["achievementID"] = 2257,	-- Frostbitten
-							}),
 							i(44673),	-- Mammoth-Riding Boots
-							i(44663),	-- Abandoned Adventurer's Satchel
 						},
 					}),
 				}),
@@ -2235,6 +2223,7 @@ root("Zones", {
 					}),
 					i(120137, {	-- Tome of Polymorph: Polar Bear Cub
 						["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
+						["timeline"] = { "added 6.0.2.18816" },
 						["classes"] = { MAGE },
 						["crs"] = { 26482 },	-- Arctic Grizzly
 						["f"] = RECIPES,

@@ -32,9 +32,7 @@ _.GearSets =
 		i(17182, {	-- Sulfuras
 			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, SHAMAN, DRUID }
 		}),
-		i(19019, {	-- Thunderfury
-			["classes"] = { WARRIOR, WARLOCK, MAGE, ROGUE, MONK, DEMONHUNTER, HUNTER, PALADIN, DEATHKNIGHT }
-		}),
+		i(19019),	-- Thunderfury
 		i(34334, {	-- Thori'dal, the Stars' Fury
 			["classes"] = { WARRIOR, HUNTER, ROGUE }
 		}),

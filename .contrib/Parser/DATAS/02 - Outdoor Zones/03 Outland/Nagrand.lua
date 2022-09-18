@@ -385,6 +385,25 @@ root("Zones", {
 					}),
 				}),
 				prof(FISHING, {
+					-- #if ANYCLASSIC
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3866,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3867,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3624,	-- Bluefish School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1225, {	-- Outland Angler
+						["criteriaID"] = 3625,	-- Mudfish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #endif
 					i(34868),	-- World's Largest Mudfish
 				}),
 				n(QUESTS, {
@@ -510,6 +529,13 @@ root("Zones", {
 						["coord"] = { 61.6, 67.0, NAGRAND },
 						["sourceQuest"] = 10109,	-- I Must Have Them!
 						["groups"] = {
+							objective(1, {	-- Attempt to Steal Egg
+								["provider"] = { "i", 27808 },	-- Jump-a-tron 4000 Key
+								["description"] = "You can also just fly up there if you have flying.",
+							}),
+							objective(2, {	-- Severed Talon of the Matriarch
+								["provider"] = { "i", 27841 },	-- Severed Talon of the Matriarch
+							}),
 							i(28030),	-- Spell-Slinger's Protector
 							i(28032),	-- Delicate Green Poncho
 							i(28031),	-- Nomad's Woven Cloak
@@ -760,7 +786,10 @@ root("Zones", {
 						["coord"] = { 31.8, 56.8, NAGRAND },
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
+						-- #endif
 					}),
 					q(9886, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
@@ -768,7 +797,10 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
+						-- #endif
 						["groups"] = {
 							i(25424),	-- Gem-Stuffed Envelope
 						},
@@ -779,7 +811,10 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, FRIENDLY },
 						["maxReputation"] = { 933, HONORED },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
+						-- #endif
 						["groups"] = {
 							i(25419),	-- Unmarked Bag of Gems
 						},
@@ -796,7 +831,10 @@ root("Zones", {
 						["sourceQuest"] = 10476,	-- Fierce Enemies
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 978, EXALTED },	-- Kurenai, Exalted.
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
+						-- #endif
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -806,7 +844,10 @@ root("Zones", {
 						["isMonthly"] = true,
 						["minReputation"] = { 933, HONORED },
 						["maxReputation"] = { 933, REVERED },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
+						-- #endif
 						["groups"] = {
 							i(25422),	-- Bulging Sack of Gems
 						},
@@ -827,7 +868,10 @@ root("Zones", {
 						["repeatable"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
+						-- #endif
 					}),
 					q(9915, {	-- More Heads Full of Ivory
 						["qg"] = 18333,	-- Shadrek
@@ -836,7 +880,10 @@ root("Zones", {
 						["repeatable"] = true,
 						["minReputation"] = { 933, NEUTRAL },
 						["maxReputation"] = { 933, FRIENDLY },
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
+						-- #endif
 					}),
 					q(9892, {	-- More Obsidian Warbeads
 						["qg"] = 18265,	-- Gezhe <The Consortium>
@@ -846,7 +893,10 @@ root("Zones", {
 						["minReputation"] = { 933, FRIENDLY },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
+						-- #endif
 					}),
 					q(10478, {	-- More Warbeads!
 						["qg"] = 18407,	-- Warden Bullrok
@@ -854,7 +904,10 @@ root("Zones", {
 						["sourceQuest"] = 10479,	-- Proving Your Strength
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { 941, EXALTED },	-- The Maghar, Exalted.
+						-- #if NOT ANYCLASSIC
+						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
+						-- #endif
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
@@ -951,14 +1004,18 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
 						["coord"] = { 33.9, 58.0, NAGRAND },
+						-- #if AFTER 9.0.2
 						["lockCriteria"] = { 1, "lvl", 50 },
+						-- #endif
 					}),
 					q(9872,  {	-- Murkblood Invaders (H)
 						["crs"] = { 18238 },	-- Murkblood Invader
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
 						["coord"] = { 33.9, 58.0, NAGRAND },
+						-- #if AFTER 9.0.2
 						["lockCriteria"] = { 1, "lvl", 50 },
+						-- #endif
 					}),
 					q(9867,  {	-- Murkblood Leaders..
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
@@ -1533,9 +1590,6 @@ root("Zones", {
 							{ 76.0, 80.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(4513, {	-- Goretooth
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31192),	-- Crocolisk Hide Bindings
 							i(31191),	-- Crocolisk Hide Bracers
 							i(31188),	-- Crocolisk Scale Vambraces
@@ -1569,9 +1623,6 @@ root("Zones", {
 							{ 33.2, 67.8, NAGRAND },
 						},
 						["groups"] = {
-							crit(4522, {	-- Voidhunter Yar
-								["achievementID"] = 1312,	-- Bloody Rare
-							}),
 							i(31198),	-- Voidhide Cord
 							i(31195),	-- Voidplate Girdle
 							i(31197),	-- Voidscale Belt

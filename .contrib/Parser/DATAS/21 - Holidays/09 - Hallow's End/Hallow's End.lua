@@ -413,88 +413,190 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					title(92),	-- %s the Hallowed
 				},
 			}),
-			ach(972),	-- Trick or Treat!
-			ach(288, {	-- Out With It
-				["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
-				["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
+			ach(10365, {	-- A Frightening Friend
+				["description"] = "You need Tier 3 garrison for this.",
+				["coords"] = {
+					{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
+					{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
+				},
+				["timeline"] = { "added 6.2.2.20426" },
 			}),
-			ach(255),	-- Bring Me The Head of... Oh Wait
-			ach(979),	-- The Mask Task
-			ach(289),	-- The Savior of Hallow's End
-			ach(981, {	-- That Sparkling Smile
-				["provider"] = { "i", 37604 },	-- Tooth Pick
+			ach(284, {	-- A Mask For All Occasions
+				crit(2260, {	-- Blood Elf Female Mask
+					["provider"] = { "i", 34000 },	-- Blood Elf Female Mask
+				}),
+				crit(2270, {	-- Blood Elf Male Mask
+					["provider"] = { "i", 34002 },	-- Blood Elf Male Mask
+				}),
+				crit(2261, {	-- Draenei Female Mask
+					["provider"] = { "i", 34001 },	-- Draenei Female Mask
+				}),
+				crit(2271, {	-- Draenei Male Mask
+					["provider"] = { "i", 34003 },	-- Draenei Male Mask
+				}),
+				crit(2262, {	-- Dwarf Female Mask
+					["provider"] = { "i", 20562 },	-- Dwarf Female Mask
+				}),
+				crit(2272, {	-- Dwarf Male Mask
+					["provider"] = { "i", 20561 },	-- Dwarf Male Mask
+				}),
+				crit(2263, {	-- Gnome Female Mask
+					["provider"] = { "i", 20392 },	-- Gnome Female Mask
+				}),
+				crit(2273, {	-- Gnome Male Mask
+					["provider"] = { "i", 20391 },	-- Gnome Male Mask
+				}),
+				crit(17590, {	-- Goblin Female Mask
+					["provider"] = { "i", 49212 },	-- Goblin Female Mask
+					["timeline"] = { "added 4.0.1" },
+				}),
+				crit(17591, {	-- Goblin Male Mask
+					["provider"] = { "i", 49210 },	-- Goblin Male Mask
+					["timeline"] = { "added 4.0.1" },
+				}),
+				crit(2264, {	-- Human Female Mask
+					["provider"] = { "i", 20565 },	-- Human Female Mask
+				}),
+				crit(2274, {	-- Human Male Mask
+					["provider"] = { "i", 20566 },	-- Human Male Mask
+				}),
+				crit(2265, {	-- Night Elf Female Mask
+					["provider"] = { "i", 20563 },	-- Night Elf Female Mask
+				}),
+				crit(2275, {	-- Night Elf Male Mask
+					["provider"] = { "i", 20564 },	-- Night Elf Male Mask
+				}),
+				crit(2266, {	-- Orc Female Mask
+					["provider"] = { "i", 20569 },	-- Orc Female Mask
+				}),
+				crit(2276, {	-- Orc Male Mask
+					["provider"] = { "i", 20570 },	-- Orc Male Mask
+				}),
+				crit(2267, {	-- Tauren Female Mask
+					["provider"] = { "i", 20571 },	-- Tauren Female Mask
+				}),
+				crit(2277, {	-- Tauren Male Mask
+					["provider"] = { "i", 20572 },	-- Tauren Male Mask
+				}),
+				crit(2268, {	-- Troll Female Mask
+					["provider"] = { "i", 20567 },	-- Troll Female Mask
+				}),
+				crit(2278, {	-- Troll Male Mask
+					["provider"] = { "i", 20568 },	-- Troll Male Mask
+				}),
+				crit(2269, {	-- Undead Female Mask
+					["provider"] = { "i", 20574 },	-- Undead Female Mask
+				}),
+				crit(2279, {	-- Undead Male Mask
+					["provider"] = { "i", 20573 },	-- Undead Male Mask
+				}),
+				crit(17592, {	-- Worgen Female Mask
+					["provider"] = { "i", 49215 },	-- Worgen Female Mask
+					["timeline"] = { "added 4.0.1" },
+				}),
+				crit(17593, {	-- Worgen Male Mask
+					["provider"] = { "i", 49216 },	-- Worgen Male Mask
+					["timeline"] = { "added 4.0.1" },
+				}),
 			}),
-			ach(1040, {	-- Rotten Hallow (A)
-				["races"] = ALLIANCE_ONLY,
-				-- Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represention of the criteria and avoid duplicity.
-			}),
-			ach(1041, {	-- Rotten Hallow (H)
-				["races"] = HORDE_ONLY,
-				-- Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represention of the criteria and avoid duplicity.
+			ach(291, {	-- Check Your Head
+				crit(5774, {	-- Blood Elf
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5775, {	-- Draenei
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5776, {	-- Dwarf
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5772, {	-- Gnome
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(17855, {	-- Goblin
+					["timeline"] = { "added 4.0.1" },
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5777, {	-- Human
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5778, {	-- Night Elf
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5779, {	-- Orc
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5780, {	-- Tauren
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5781, {	-- Troll
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5782, {	-- Undead
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
+				crit(17854, {	-- Worgen
+					["timeline"] = { "added 4.0.1" },
+					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
+				}),
 			}),
 			ach(1261, {	-- G.N.E.R.D. Rage
 				["cost"] = { { "i", 37583, 1 } },	-- G.N.E.R.D.S.
 			}),
-			ach(291, {	-- Check Your Head
-				crit(1, {	-- Blood Elf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(2, {	-- Draenei
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(3, {	-- Dwarf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(4, {	-- Gnome
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(5, {	-- Goblin
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(6, {	-- Human
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(7, {	-- Night Elf
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(8, {	-- Orc
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(9, {	-- Tauren
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(10, {	-- Troll
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(11, {	-- Undead
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
-				crit(12, {	-- Worgen
-					["cost"] = { { "i", 34068, 1 } },	-- Weighted Jack-o'-Lantern
-				}),
+			ach(288, {	-- Out With It
+				["description"] = "Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",
+				["cost"] = { { "i", 33226, 3 } },	-- Tricky Treat
 			}),
-			ach(283, {	-- The Masquerade
-				crit(1, {	-- Transformed by Hallowed Wand - Bat
-					["provider"] = { "i", 20410 },	-- Hallowed Wand - Bat
-				}),
-				crit(2, {	-- Transformed by Hallowed Wand - Ghost
-					["provider"] = { "i", 20409 },	-- Hallowed Wand - Ghost
-				}),
-				crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
-					["provider"] = { "i", 20399 },	-- Hallowed Wand - Leper Gnome
-				}),
-				crit(4, {	-- Transformed by Hallowed Wand - Ninja
-					["provider"] = { "i", 20398 },	-- Hallowed Wand - Ninja
-				}),
-				crit(5, {	-- Transformed by Hallowed Wand - Pirate
-					["provider"] = { "i", 20397 },	-- Hallowed Wand - Pirate
-				}),
-				crit(6, {	-- Transformed by Hallowed Wand - Skeleton
-					["provider"] = { "i", 20411 },	-- Hallowed Wand - Skeleton
-				}),
-				crit(7, {	-- Transformed by Hallowed Wand - Wisp
-					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
-				}),
+			ach(1040, {	-- Rotten Hallow (A)
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					-- #if AFTER 4.0.1
+					crit(17607, {	-- A Time to Gain
+						["_quests"] = { 29075 },	-- A Time to Gain
+					}),
+					crit(17606, {	-- A Time to Lose
+						["_quests"] = { 29371 },	-- A Time to Lose
+					}),
+					crit(3217, {	-- Clean Up In Stormwind
+						["_quests"] = { 29144 },	-- Clean Up In Stormwind
+					}),
+					crit(3216, {	-- Stink Bombs Away!
+						["_quests"] = { 29054 },	-- Stink Bombs Away!
+					}),
+					-- #else
+					crit(3216, {	-- Crashing the Wickerman Festival
+						["_quests"] = { 1658 },	-- Crashing the Wickerman Festival
+					}),
+					crit(3217, {	-- The Power of Pine
+						["_quests"] = { 8373 },	-- The Power of Pine
+					}),
+					-- #endif
+				},
+			}),
+			ach(1041, {	-- Rotten Hallow (H)
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					-- #if AFTER 4.0.1
+					crit(17608, {	-- A Time to Build Up
+						["_quests"] = { 29376 },	-- A Time to Build Up
+					}),
+					crit(17609, {	-- A Time to Break Down
+						["_quests"] = { 29377 },	-- A Time to Break Down
+					}),
+					crit(3219, {	-- Clean Up in Undercity
+						["_quests"] = { 3219 },	-- Clean Up in Undercity
+					}),
+					crit(3218, {	-- Stink Bombs Away!
+						["_quests"] = { 29374 },	-- Stink Bombs Away!
+					}),
+					-- #else
+					crit(3218, {	-- Rotten Eggs and Ruined Kegs
+						["_quests"] = { 8409 },	-- Rotten Eggs and Ruined Kegs
+					}),
+					crit(3219, {	-- Stinking Up Southshore
+						["_quests"] = { 1657 },	-- Stinking Up Southshore
+					}),
+					-- #endif
+				},
 			}),
 			classicAch(292, {	-- Sinister Calling
 				-- #if BEFORE WRATH
@@ -506,952 +608,1132 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
 				["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]],
 				-- #else
-				crit(1, {	-- Sinister Squashling
+				crit(5783, {	-- Sinister Squashling
 					["provider"] = { "i", 33154 },	-- Sinister Squashling
 				}),
-				crit(2, {	-- Hallowed Helm
+				crit(12908, {	-- Hallowed Helm
 					["provider"] = { "i", 33292 },	-- Hallowed Helm
 				}),
 				-- #endif
 			}),
+			ach(981, {	-- That Sparkling Smile
+				["provider"] = { "i", 37604 },	-- Tooth Pick
+			}),
+			ach(979),	-- The Mask Task
+			ach(283, {	-- The Masquerade
+				crit(3209, {	-- Transformed by Hallowed Wand - Bat
+					["provider"] = { "i", 20410 },	-- Hallowed Wand - Bat
+				}),
+				crit(3210, {	-- Transformed by Hallowed Wand - Ghost
+					["provider"] = { "i", 20409 },	-- Hallowed Wand - Ghost
+				}),
+				crit(3211, {	-- Transformed by Hallowed Wand - Leper Gnome
+					["provider"] = { "i", 20399 },	-- Hallowed Wand - Leper Gnome
+				}),
+				crit(3212, {	-- Transformed by Hallowed Wand - Ninja
+					["provider"] = { "i", 20398 },	-- Hallowed Wand - Ninja
+				}),
+				crit(3213, {	-- Transformed by Hallowed Wand - Pirate
+					["provider"] = { "i", 20397 },	-- Hallowed Wand - Pirate
+				}),
+				crit(3214, {	-- Transformed by Hallowed Wand - Skeleton
+					["provider"] = { "i", 20411 },	-- Hallowed Wand - Skeleton
+				}),
+				crit(3215, {	-- Transformed by Hallowed Wand - Wisp
+					["provider"] = { "i", 20414 },	-- Hallowed Wand - Wisp
+				}),
+			}),
+			ach(289),	-- The Savior of Hallow's End
+			ach(972),	-- Trick or Treat!
 			ach(971, {	-- Tricks and Treats of Azeroth
-				ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Arathi Highlands, Refuge Point
-							["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
-						}),
-						crit(2, {	-- Badlands, Dragon's Mouth
-							["coord"] = { 20.9, 56.2, BADLANDS },
-						}),
-						crit(3, {	-- Badlands, Fuselight
-							["coord"] = { 65.9, 35.8, BADLANDS },
-						}),
-						crit(4, {	-- Blasted Lands, Nethergarde Keep
-							["coord"] = { 60.7, 14.2, BLASTED_LANDS },
-						}),
-						crit(5, {	-- Blasted Lands, Surwich
-							["coord"] = { 44.4, 87.7, BLASTED_LANDS },
-						}),
-						crit(6, {	-- The Cape of Stranglethorn, Booty Bay
-							["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
-						}),
-						crit(7, {	-- Dun Morogh, Kharanos
-							["coord"] = { 54.5, 50.7, DUN_MOROGH },
-						}),
-						crit(8, {	-- Duskwood, Darkshire
-							["coord"] = { 73.9, 44.4, DUSKWOOD },
-						}),
-						crit(9, {	-- Eastern Plaguelands, Light's Hope Chapel
-							["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
-						}),
-						crit(10, {	-- Elwynn Forest, Goldshire
-							["coord"] = { 43.7, 66.0, ELWYNN_FOREST },
-						}),
-						crit(11, {	-- The Hinterlands, Aerie Peak
-							["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
-						}),
-						crit(12, {	-- The Hinterlands, Stormfeather Outpost
-							["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
-						}),
-						crit(13, {	-- Ironforge, The Commons
-							["coord"] = { 18.6, 51.3, IRONFORGE },
-						}),
-						crit(14, {	-- Loch Modan, Farstrider's Lodge
-							["coord"] = { 82.9, 63.6, LOCH_MODAN },
-						}),
-						crit(15, {	-- Loch Modan, Thelsamar
-							["coord"] = { 35.5, 48.4, LOCH_MODAN },
-						}),
-						crit(16, {	-- Northern Stranglethorn, Fort Livingston
-							["coord"] = { 53.1, 66.9, NORTHERN_STRANGLETHORN },
-						}),
-						crit(17, {	-- Redridge Mountains, Lakeshire
-							["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
-						}),
-						crit(18, {	-- Searing Gorge, Iron Summit
-							["coord"] = { 39.4, 66.1, SEARING_GORGE },
-						}),
-						crit(19, {	-- Stormwind, The Trade District
-							["coord"] = { 60.5, 75.2, STORMWIND_CITY },
-						}),
-						crit(20, {	-- Swamp of Sorrows, Bogpaddle
-							["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
-						}),
-						crit(21, {	-- Swamp of Sorrows, The Harborage
-							["coord"] = { 29.0, 32.6, SWAMP_OF_SORROWS },
-						}),
-						crit(22, {	-- Western Plaguelands, Chillwind Camp
-							["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
-						}),
-						crit(23, {	-- Wetlands, Menethil Harbor
-							["coord"] = { 10.8, 60.9, WETLANDS },
-						}),
-						crit(24, {	-- Wetlands, Swiftgear Station
-							["coord"] = { 26.1, 25.9, WETLANDS },
-						}),
-						crit(25, {	-- Westfall, Sentinel Hill
-							["coord"] = { 52.9, 53.6, WESTFALL },
-						}),
-						crit(26, {	-- Wetlands, Greenwarden's Grove
-							["coord"] = { 58.1, 39.2, WETLANDS },
-						}),
-					},
-				}),
-				ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Arathi Highlands, Hammerfall
-							["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
-						}),
-						crit(2, {	-- Badlands, Fuselight
-							["coord"] = { 65.9, 35.8, BADLANDS },
-						}),
-						crit(3, {	-- Badlands, New Kargath
-							["coord"] = { 18.3, 42.8, BADLANDS },
-						}),
-						crit(4, {	-- Blasted Lands, Dreadmaul Hold
-							["coord"] = { 40.5, 11.4, BLASTED_LANDS },
-						}),
-						crit(5, {	-- The Cape of Stranglethorn, Booty Bay
-							["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
-						}),
-						crit(6, {	-- The Cape of Stranglethorn, Hardwrench Hideaway
-							["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
-						}),
-						crit(7, {	-- Eastern Plaguelands, Light's Hope Chapel
-							["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
-						}),
-						crit(8, {	-- Eversong Woods, Fairbreeze Village
-							["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
-						}),
-						crit(9, {	-- Eversong Woods, Falconwing Square
-							["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
-						}),
-						crit(10, {	-- Ghostlands, Tranquillien
-							["coord"] = { 48.6, 32.0, GHOSTLANDS },
-						}),
-						crit(11, {	-- Hillsbrad Foothills, Eastpoint Tower
-							["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
-						}),
-						crit(12, {	-- Hillsbrad Foothills, Tarren Mill
-							["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
-						}),
-						crit(13, {	-- The Hinterlands, Hiri'watha Research Station
-							["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
-						}),
-						crit(14, {	-- The Hinterlands, Revantusk Village
-							["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
-						}),
-						crit(15, {	-- Northern Stranglethorn, Grom'gol Base Camp
-							["coord"] = { 37.3, 51.7, NORTHERN_STRANGLETHORN },
-						}),
-						crit(16, {	-- Searing Gorge, Iron Summit
-							["coord"] = { 39.4, 66.1, SEARING_GORGE },
-						}),
-						crit(17, {	-- Silvermoon City, The Bazaar
-							["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
-						}),
-						crit(18, {	-- Silvermoon City, The Royal Exchange
-							["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
-						}),
-						crit(19, {	-- Silverpine Forest, Forsaken Rear Guard
-							["coord"] = { 44.3, 20.4, SILVERPINE_FOREST },
-						}),
-						crit(20, {	-- Silverpine Forest, The Sepulcher
-							["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
-						}),
-						crit(21, {	-- Swamp of Sorrows, Bogpaddle
-							["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
-						}),
-						crit(22, {	-- Swamp of Sorrows, Stonard
-							["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
-						}),
-						crit(23, {	-- Tirisfal Glades, Brill
-							["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
-						}),
-						crit(24, {	-- Tirisfal Glades, The Bulwark
-							["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
-						}),
-						crit(25, {	-- Undercity, The Trade Quarter
-							["coord"] = { 67.7, 37.9, UNDERCITY },
-						}),
-						crit(26, {	-- Western Plaguelands, Andorhal
-							["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
-						}),
-					},
-				}),
-				ach(963, {	-- Tricks and Treats of Kalimdor (A)
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Ashenvale, Astranaar
-							["coord"] = { 37.0, 49.3, ASHENVALE },
-						}),
-						crit(2, {	-- Azuremyst Isle, Azure Watch
-							["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
-						}),
-						crit(3, {	-- Bloodmyst Isle, Blood Watch
-							["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
-						}),
-						crit(4, {	-- Darkshore, Lor'danel
-							["coord"] = { 50.8, 18.8, DARKSHORE },
-						}),
-						crit(5, {	-- Darnassus, Craftsmen's Terrace
-							["coord"] = { 62.2, 33.0, DARNASSUS },
-						}),
-						crit(6, {	-- Desolace, Karnum's Glade
-							["coord"] = { 56.8, 50.0, DESOLACE },
-						}),
-						crit(7, {	-- Desolace, Nijel's Point
-							["coord"] = { 66.3, 6.70, DESOLACE },
-						}),
-						crit(8, {	-- Dustwallow Marsh, Mudsprocket
-							["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
-						}),
-						crit(9, {	-- Exodar, Seat of the Naaru
-							["coord"] = { 59.3, 19.2, THE_EXODAR },
-						}),
-						crit(10, {	-- Felwood - Talonbranch Glade
-							["coord"] = { 61.8, 26.7, FELWOOD },
-						}),
-						crit(11, {	-- Felwood - Whisperwind Grove
-							["coord"] = { 44.6, 28.9, FELWOOD },
-						}),
-						crit(12, {	-- Feralas, Dreamer's Rest
-							["coord"] = { 51.1, 17.8, FERALAS },
-						}),
-						crit(13, {	-- Feralas, Feathermoon Stronghold
-							["coord"] = { 46.3, 45.2, FERALAS },
-						}),
-						crit(14, {	-- Northern Barrens, Ratchet
-							["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
-						}),
-						crit(15, {	-- Silithus, Cenarion Hold
-							["coord"] = { 55.5, 36.7, SILITHUS },
-						}),
-						crit(16, {	-- Southern Barrens, Fort Triumph
-							["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
-						}),
-						crit(17, {	-- Southern Barrens, Honor's Stand
-							["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
-						}),
-						crit(18, {	-- Southern Barrens, Northwatch Hold
-							["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
-						}),
-						crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
-							["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
-						}),
-						crit(20, {	-- Stonetalon Mountains, Northwatch Expedition Base
-							["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
-						}),
-						crit(21, {	-- Stonetalon Mountains, Thal'darah Overlook
-							["coord"] = { 39.5, 32.8, STONETALON_MOUNTAINS },
-						}),
-						crit(22, {	-- Stonetalon Mountains, Windshear Hold
-							["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
-						}),
-						crit(23, {	-- Tanaris, Bootlegger Outpost
-							["coord"] = { 55.7, 60.9, TANARIS },
-						}),
-						crit(24, {	-- Tanaris, Gadgetzan
-							["coord"] = { 52.6, 27.1, TANARIS },
-						}),
-						crit(25, {	-- Teldrassil, Dolanaar
-							["coord"] = { 55.4, 52.3, TELDRASSIL },
-						}),
-						crit(26, {	-- Un'Goro Crater, Marshal's Stand
-							["coord"] = { 55.2, 62.1, UNGORO_CRATER },
-						}),
-						crit(27, {	-- Winterspring, Everlook
-							["coord"] = { 59.8, 51.2, WINTERSPRING },
-						}),
-					},
-				}),
-				ach(965, {	-- Tricks and Treats of Kalimdor (H)
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Ashenvale, Hellscream's Watch
-							["coord"] = { 38.6, 42.4, ASHENVALE },
-						}),
-						crit(2, {	-- Ashenvale, Silverwind Refuge
-							["coord"] = { 50.2, 67.2, ASHENVALE },
-						}),
-						crit(3, {	-- Ashenvale, Splintertree Post
-							["coord"] = { 73.9, 60.7, ASHENVALE },
-						}),
-						crit(4, {	-- Ashenvale, Zoram'gar Outpost
-							["coord"] = { 13.0, 34.1, ASHENVALE },
-						}),
-						crit(5, {	-- Azshara, Bilgewater Harbor
-							["coord"] = { 57.1, 50.2, AZSHARA },
-						}),
-						crit(6, {	-- Desolace, Karnum's Glade
-							["coord"] = { 56.8, 50.0, DESOLACE },
-						}),
-						crit(7, {	-- Desolace, Shadowprey Village
-							["coord"] = { 24.1, 68.3, DESOLACE },
-						}),
-						crit(8, {	-- Durotar, Razor Hill
-							["coord"] = { 51.6, 41.7, DUROTAR },
-						}),
-						crit(9, {	-- Dustwallow Marsh, Brackenwall Village
-							["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
-						}),
-						crit(10, {	-- Dustwallow Marsh, Mudsprocket
-							["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
-						}),
-						crit(11, {	-- Felwood, Whisperwind Grove
-							["coord"] = { 44.6, 28.9, FELWOOD },
-						}),
-						crit(12, {	-- Feralas, Camp Ataya
-							["coord"] = { 41.4, 15.6, FERALAS },
-						}),
-						crit(13, {	-- Feralas, Camp Mojache
-							["coord"] = { 74.8, 45.1, FERALAS },
-						}),
-						crit(14, {	-- Feralas, Stonemaul Hold
-							["coord"] = { 52.0, 47.7, FERALAS },
-						}),
-						crit(15, {	-- Mulgore, Bloodhoof Village
-							["coord"] = { 46.8, 60.4, MULGORE },
-						}),
-						crit(16, {	-- Northern Barrens, The Crossroads
-							["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
-						}),
-						crit(17, {	-- Northern Barrens, Grol'dom Farm
-							["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
-						}),
-						crit(18, {	-- Northern Barrens, Nozzlepot's Outpost
-							["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
-						}),
-						crit(19, {	-- Northern Barrens, Ratchet
-							["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
-						}),
-						crit(20, {	-- Orgrimmar, Valley of Strength
-							["coord"] = { 53.8, 78.8, ORGRIMMAR },
-						}),
-						crit(21, {	-- Silithus, Cenarion Hold
-							["coord"] = { 55.5, 36.7, SILITHUS },
-						}),
-						crit(22, {	-- Southern Barrens, Desolation Hold
-							["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
-						}),
-						crit(23, {	-- Southern Barrens, Hunter's Hill
-							["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
-						}),
-						crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
-							["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
-						}),
-						crit(25, {	-- Stonetalon Mountains, Sun Rock Retreat
-							["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
-						}),
-						crit(26, {	-- Tanaris, Bootlegger Outpost
-							["coord"] = { 55.7, 60.9, TANARIS },
-						}),
-						crit(27, {	-- Tanaris, Gadgetzan
-							["coord"] = { 52.6, 27.1, TANARIS },
-						}),
-						crit(28, {	-- Thunder Bluff, Lower Rise
-							["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
-						}),
-						crit(29, {	-- Un'Goro Crater, Marshal's Stand
-							["coord"] = { 55.2, 62.1, UNGORO_CRATER },
-						}),
-						crit(30, {	-- Winterspring, Everlook
-							["coord"] = { 59.8, 51.2, WINTERSPRING },
-						}),
-					},
-				}),
-				ach(969, {	-- Tricks and Treats of Outlands (A)
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Blade's Edge Mountains, Evergrove
-							["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(2, {	-- Blade's Edge Mountains, Sylvanaar
-							["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(3, {	-- Blade's Edge Mountains, Toshley's Station
-							["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(4, {	-- Hellfire Peninsula, Honor Hold
-							["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
-						}),
-						crit(5, {	-- Hellfire Peninsula, Temple of Telhamat
-							["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
-						}),
-						crit(6, {	-- Nagrand, Telaar
-							["coord"] = { 54.2, 75.8, NAGRAND },
-						}),
-						crit(7, {	-- Netherstorm, Area 52
-							["coord"] = { 32.0, 64.4, NETHERSTORM },
-						}),
-						crit(8, {	-- Netherstorm, The Stormspire
-							["coord"] = { 43.4, 36.1, NETHERSTORM },
-						}),
-						crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
-							["coords"] = {
-								{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
-								{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
-							},
-						}),
-						crit(10, {	-- Shadowmoon Valley, Wildhammer Stronghold
-							["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
-						}),
-						crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
-							["coords"] = {
-								{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
-								{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
-							},
-						}),
-						crit(12, {	-- Terokkar Forest, Allerian Stronghold
-							["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
-						}),
-						crit(13, {	-- Zangarmarsh, Cenarion Refuge
-							["coord"] = { 78.5, 62.9, ZANGARMARSH },
-						}),
-						crit(14, {	-- Zangarmarsh, Orebor Harborage
-							["coord"] = { 41.9, 26.2, ZANGARMARSH },
-						}),
-						crit(15, {	-- Zangarmarsh, Telredor
-							["coord"] = { 67.2, 49.0, ZANGARMARSH },
-						}),
-					},
-				}),
-				ach(968, {	-- Tricks and Treats of Outlands (H)
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Blade's Edge Mountains, Evergrove
-							["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(2, {	-- Blade's Edge Mountains, Mok'Nathal Village
-							["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(3, {	-- Blade's Edge Mountains, Thunderlord Stronghold
-							["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
-						}),
-						crit(4, {	-- Hellfire Peninsula, Falcon Watch
-							["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
-						}),
-						crit(5, {	-- Hellfire Peninsula, Thrallmar
-							["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
-						}),
-						crit(6, {	-- Nagrand, Garadar
-							["coord"] = { 56.7, 34.6, NAGRAND },
-						}),
-						crit(7, {	-- Netherstorm, Area 52
-							["coord"] = { 32.0, 64.4, NETHERSTORM },
-						}),
-						crit(8, {	-- Netherstorm, The Stormspire
-							["coord"] = { 43.4, 36.1, NETHERSTORM },
-						}),
-						crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
-							["coords"] = {
-								{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
-								{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
-							},
-						}),
-						crit(10, {	-- Shadowmoon Valley, Shadowmoon Village
-							["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
-						}),
-						crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
-							["coords"] = {
-								{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
-								{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
-							},
-						}),
-						crit(12, {	-- Terokkar Forest, Stonebreaker Hold
-							["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
-						}),
-						crit(13, {	-- Zangarmarsh, Zabra'jin
-							["coord"] = { 30.7, 50.9, ZANGARMARSH },
-						}),
-						crit(14, {	-- Zangarmarsh, Cenarion Refuge
-							["coord"] = { 78.5, 62.9, ZANGARMARSH },
-						}),
-					},
-				}),
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					966,	-- Tricks and Treats of Eastern Kingdoms (A)
+					967,	-- Tricks and Treats of Eastern Kingdoms (H)
+					963,	-- Tricks and Treats of Kalimdor (A)
+					965,	-- Tricks and Treats of Kalimdor (H)
+					969,	-- Tricks and Treats of Outlands (A)
+					968,	-- Tricks and Treats of Outlands (H)
+				}},
 			}),
-			ach(10365, {	-- A Frightening Friend
-				["description"] = "You need Tier 3 garrison for this.",
-				["coords"] = {
-					{ 40.1, 70.0, LUNARFALL },	-- Pepe Location (Alliance)
-					{ 70.7, 90.2, FROSTWALL },	-- Pepe Location (Horde)
-				},
-			}),
-			ach(284, {	-- A Mask For All Occasions
-				crit(1, {	-- Blood Elf Female Mask
-					["provider"] = { "i", 34000 },	-- Blood Elf Female Mask
-				}),
-				crit(2, {	-- Blood Elf Male Mask
-					["provider"] = { "i", 34002 },	-- Blood Elf Male Mask
-				}),
-				crit(3, {	-- Draenei Female Mask
-					["provider"] = { "i", 34001 },	-- Draenei Female Mask
-				}),
-				crit(4, {	-- Draenei Male Mask
-					["provider"] = { "i", 34003 },	-- Draenei Male Mask
-				}),
-				crit(5, {	-- Dwarf Female Mask
-					["provider"] = { "i", 20562 },	-- Dwarf Female Mask
-				}),
-				crit(6, {	-- Dwarf Male Mask
-					["provider"] = { "i", 20561 },	-- Dwarf Male Mask
-				}),
-				crit(7, {	-- Gnome Female Mask
-					["provider"] = { "i", 20392 },	-- Gnome Female Mask
-				}),
-				crit(8, {	-- Gnome Male Mask
-					["provider"] = { "i", 20391 },	-- Gnome Male Mask
-				}),
-				crit(9, {	-- Goblin Female Mask
-					["provider"] = { "i", 49212 },	-- Goblin Female Mask
-				}),
-				crit(10, {	-- Goblin Male Mask
-					["provider"] = { "i", 49210 },	-- Goblin Male Mask
-				}),
-				crit(11, {	-- Human Female Mask
-					["provider"] = { "i", 20565 },	-- Human Female Mask
-				}),
-				crit(12, {	-- Human Male Mask
-					["provider"] = { "i", 20566 },	-- Human Male Mask
-				}),
-				crit(13, {	-- Night Elf Female Mask
-					["provider"] = { "i", 20563 },	-- Night Elf Female Mask
-				}),
-				crit(14, {	-- Night Elf Male Mask
-					["provider"] = { "i", 20564 },	-- Night Elf Male Mask
-				}),
-				crit(15, {	-- Orc Female Mask
-					["provider"] = { "i", 20569 },	-- Orc Female Mask
-				}),
-				crit(16, {	-- Orc Male Mask
-					["provider"] = { "i", 20570 },	-- Orc Male Mask
-				}),
-				crit(17, {	-- Tauren Female Mask
-					["provider"] = { "i", 20571 },	-- Tauren Female Mask
-				}),
-				crit(18, {	-- Tauren Male Mask
-					["provider"] = { "i", 20572 },	-- Tauren Male Mask
-				}),
-				crit(19, {	-- Troll Female Mask
-					["provider"] = { "i", 20567 },	-- Troll Female Mask
-				}),
-				crit(20, {	-- Troll Male Mask
-					["provider"] = { "i", 20568 },	-- Troll Male Mask
-				}),
-				crit(21, {	-- Undead Female Mask
-					["provider"] = { "i", 20574 },	-- Undead Female Mask
-				}),
-				crit(22, {	-- Undead Male Mask
-					["provider"] = { "i", 20573 },	-- Undead Male Mask
-				}),
-				crit(23, {	-- Worgen Female Mask
-					["provider"] = { "i", 49215 },	-- Worgen Female Mask
-				}),
-				crit(24, {	-- Worgen Male Mask
-					["provider"] = { "i", 49216 },	-- Worgen Male Mask
-				}),
-			}),
-			ach(5836, {	-- Tricks and Treats of Northrend
+			ach(5837, {	-- Tricks and Treats of Cataclysm (A)
+				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
 				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
-					crit(1, {	-- Borean Tundra, Fizzcrank Airstrip
-						["coord"] = { 57.1, 18.8, BOREAN_TUNDRA },
-					}),
-					crit(2, {	-- Borean Tundra, Unu'pe
-						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
-					}),
-					crit(3, {	-- Borean Tundra, Valiance Keep
-						["coord"] = { 58.5, 67.9, BOREAN_TUNDRA },
-					}),
-					crit(4, {	-- Dalaran, The Legerdemain Lounge
-						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
-					}),
-					crit(5, {	-- Dalaran, Silver Enclave
-						["coord"] = { 42.5, 63.5, NORTHREND_DALARAN },
-					}),
-					crit(6, {	-- Dalaran, The Underbelly
-						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
-						["maps"] = {
-							NORTHREND_DALARAN,
-						},
-					}),
-					crit(7, {	-- Dragonblight, Moa'ki Harbor
-						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
-					}),
-					crit(8, {	-- Dragonblight, Stars' Rest
-						["coord"] = { 29.0, 56.2, DRAGONBLIGHT },
-					}),
-					crit(9, {	-- Dragonblight, Wintergarde Keep
-						["coord"] = { 77.5, 51.3, DRAGONBLIGHT },
-					}),
-					crit(10, {	-- Dragonblight, Wyrmrest Temple
-						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
-					}),
-					crit(11, {	-- Grizzly Hills, Amberpine Lodge
-						["coord"] = { 32.0, 60.2, GRIZZLY_HILLS },
-					}),
-					crit(12, {	-- Grizzly Hills, Westfall Brigade
-						["coord"] = { 59.6, 26.4, GRIZZLY_HILLS },
-					}),
-					crit(13, {	-- Howling Fjord, Fort Wildevar
-						["coord"] = { 60.5, 15.9, HOWLING_FJORD },
-					}),
-					crit(14, {	-- Howling Fjord, Kamagua
-						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
-					}),
-					crit(15, {	-- Howling Fjord, Valgarde
-						["coord"] = { 58.4, 62.8, HOWLING_FJORD },
-					}),
-					crit(16, {	-- Howling Fjord, Westguard Keep
-						["coord"] = { 30.8, 41.5, HOWLING_FJORD },
-					}),
-					crit(17, {	-- Sholazar Basin, Nesingwary Base Camp
-						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
-					}),
-					crit(18, {	-- Storm Peaks, Bouldercrag's Refuge
-						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
-					}),
-					crit(19, {	-- Storm Peaks, Frosthold
-						["coord"] = { 28.7, 74.3, THE_STORM_PEAKS },
-					}),
-					crit(20, {	-- Storm Peaks, K3
-						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
-					}),
-					crit(21, {	-- Zul'Drak, The Argent Stand
-						["coord"] = { 40.8, 66.0, ZULDRAK },
-					}),
-					crit(22, {	-- Zul'Drak, Zim'Torga
-						["coord"] = { 59.3, 57.2, ZULDRAK },
-					}),
-				},
-			}),
-			ach(5835, {	-- Tricks and Treats of Northrend
-				["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
-				["groups"] = {
-					crit(1, {	-- Borean Tundra, Bor'gorok Outpost
-						["coord"] = { 49.7, 10.0, BOREAN_TUNDRA },
-					}),
-					crit(2, {	-- Borean Tundra, Taunka'le Village
-						["coord"] = { 76.7, 37.4, BOREAN_TUNDRA },
-					}),
-					crit(3, {	-- Borean Tundra, Unu'pe
-						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
-					}),
-					crit(4, {	-- Borean Tundra, Warsong Hold
-						["coord"] = { 41.8, 54.4, BOREAN_TUNDRA },
-					}),
-					crit(5, {	-- Dalaran, The Legerdemain Lounge
-						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
-					}),
-					crit(6, {	-- Dalaran, Sunreaver's Sanctuary
-						["coord"] = { 66.6, 30.1, NORTHREND_DALARAN },
-					}),
-					crit(7, {	-- Dalaran, The Underbelly
-						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
-						["maps"] = { NORTHREND_DALARAN },
-					}),
-					crit(8, {	-- Dragonblight, Agmar's Hammer
-						["coord"] = { 37.8, 46.4, DRAGONBLIGHT },
-					}),
-					crit(9, {	-- Dragonblight, Moa'ki Harbor
-						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
-					}),
-					crit(10, {	-- Dragonblight, Venomspite
-						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
-					}),
-					crit(11, {	-- Dragonblight, Wyrmrest Temple
-						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
-					}),
-					crit(12, {	-- Grizzly Hills, Camp Oneqwah
-						["coord"] = { 65.4, 47.0, GRIZZLY_HILLS },
-					}),
-					crit(13, {	-- Grizzly Hills, Conquest Hold
-						["coord"] = { 20.9, 64.7, GRIZZLY_HILLS },
-					}),
-					crit(14, {	-- Howling Fjord, Camp Winterhoof
-						["coord"] = { 49.5, 10.8, HOWLING_FJORD },
-					}),
-					crit(15, {	-- Howling Fjord, Kamagua
-						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
-					}),
-					crit(16, {	-- Howling Fjord, New Agamand
-						["coord"] = { 52.1, 66.2, HOWLING_FJORD },
-					}),
-					crit(17, {	-- Howling Fjord, Vengeance Landing
-						["coord"] = { 79.2, 30.6, HOWLING_FJORD },
-					}),
-					crit(18, {	-- Sholazar Basin, Nesingwary Base Camp
-						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
-					}),
-					crit(19, {	-- Storm Peaks, Bouldercrag's Refuge
-						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
-					}),
-					crit(20, {	-- Storm Peaks, Camp Tunka'lo
-						["coord"] = { 67.6, 50.6, THE_STORM_PEAKS },
-					}),
-					crit(21, {	-- Storm Peaks, Grom'arsh Crash Site
-						["coord"] = { 37.1, 49.6, THE_STORM_PEAKS },
-					}),
-					crit(22, {	-- Storm Peaks, K3
-						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
-					}),
-					crit(23, {	-- Zul'Drak, The Argent Stand
-						["coord"] = { 40.8, 66.0, ZULDRAK },
-					}),
-					crit(24, {	-- Zul'Drak, Zim'Torga
-						["coord"] = { 59.3, 57.2, ZULDRAK },
-					}),
-				},
-			}),
-			ach(5837, {	-- Tricks and Treats of Cataclysm
-				["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
-				["groups"] = {
-					crit(1, {	-- Deepholm, Temple of Earth
+					crit(17682, {	-- Deepholm, Temple of Earth
 						["coord"] = { 47.4, 51.7, DEEPHOLM },
 					}),
-					crit(2, {	-- Mount Hyjal, Grove of Aessina
+					crit(17683, {	-- Mount Hyjal, Grove of Aessina
 						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
 					}),
-					crit(3, {	-- Mount Hyjal, Nordrassil
+					crit(17684, {	-- Mount Hyjal, Nordrassil
 						["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
 					}),
-					crit(4, {	-- Mount Hyjal, Shrine of Aviana
+					crit(17685, {	-- Mount Hyjal, Shrine of Aviana
 						["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
 					}),
-					crit(5, {	-- Twilight Highlands, Firebeard's Patrol
+					crit(17686, {	-- Twilight Highlands, Firebeard's Patrol
 						["coord"] = { 60.4, 58.2, TWILIGHT_HIGHLANDS },
 					}),
-					crit(6, {	-- Twilight Highlands, Highbank
+					crit(17687, {	-- Twilight Highlands, Highbank
 						["coord"] = { 79.5, 78.5, TWILIGHT_HIGHLANDS },
 					}),
-					crit(7, {	-- Twilight Highlands, Thundermar
+					crit(17688, {	-- Twilight Highlands, Thundermar
 						["coord"] = { 49.6, 30.4, TWILIGHT_HIGHLANDS },
 					}),
-					crit(8, {	-- Twilight Highlands, Victor's Point
+					crit(17689, {	-- Twilight Highlands, Victor's Point
 						["coord"] = { 43.6, 57.3, TWILIGHT_HIGHLANDS },
 					}),
-					crit(9, {	-- Uldum, Oasis of Vir'sar
+					crit(17690, {	-- Uldum, Oasis of Vir'sar
 						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
-					crit(10, {	-- Uldum, Ramkahen
+					crit(17691, {	-- Uldum, Ramkahen
 						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
-					crit(11, {	-- Vashj'ir, Darkbreak Cove
+					crit(17692, {	-- Vashj'ir, Darkbreak Cove
 						["coord"] = { 54.7, 72.2, 203 },
 					}),
-					crit(12, {	-- Vashj'ir, Deepmist Grotto
+					crit(17693, {	-- Vashj'ir, Deepmist Grotto
 						["coord"] = { 63.4, 60.2, 203 },
 					}),
-					crit(13, {	-- Vashj'ir, Silver Tide Hollow
+					crit(17694, {	-- Vashj'ir, Silver Tide Hollow
 						["coord"] = { 49.2, 41.9, 203 },
 					}),
-					crit(14, {	-- Vashj'ir, Tranquil Wash
+					crit(17695, {	-- Vashj'ir, Tranquil Wash
 						["coord"] = { 49.7, 57.4, 203 },
 					}),
 				},
+				]]--
 			}),
-			ach(5838, {	-- Tricks and Treats of Cataclysm
-				["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+			ach(5838, {	-- Tricks and Treats of Cataclysm (H)
+				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
-					crit(1, {	-- Deepholm, Temple of Earth
+					crit(17704, {	-- Deepholm, Temple of Earth
 						["coord"] = { 51.2, 50.0, DEEPHOLM },
 					}),
-					crit(2, {	-- Mount Hyjal, Grove of Aessina
+					crit(17683, {	-- Mount Hyjal, Grove of Aessina
 						["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
 					}),
-					crit(3, {	-- Mount Hyjal, Nordrassil
+					crit(17684, {	-- Mount Hyjal, Nordrassil
 						["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
 					}),
-					crit(4, {	-- Mount Hyjal, Shrine of Aviana
+					crit(17685, {	-- Mount Hyjal, Shrine of Aviana
 						["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
 					}),
-					crit(5, {	-- Twilight Highlands, Bloodgulch
+					crit(17708, {	-- Twilight Highlands, Bloodgulch
 						["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },
 					}),
-					crit(6, {	-- Twilight Highlands, Crushblow
+					crit(17709, {	-- Twilight Highlands, Crushblow
 						["coord"] = { 45.1, 76.7,TWILIGHT_HIGHLANDS },
 					}),
-					crit(7, {	-- Twilight Highlands, The Krazzworks
+					crit(17711, {	-- Twilight Highlands, The Krazzworks
 						["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
 					}),
-					crit(8, {	-- Uldum, Oasis of Vir'sar
+					crit(17690, {	-- Uldum, Oasis of Vir'sar
 						["coord"] = { 26.6, 7.30, ULDUM },
 					}),
-					crit(9, {	-- Uldum, Ramkahen
+					crit(17691, {	-- Uldum, Ramkahen
 						["coord"] = { 54.7, 33.0, ULDUM },
 					}),
-					crit(10, {	-- Vashj'ir, Deepmist Grotto
+					crit(17693, {	-- Vashj'ir, Deepmist Grotto
 						["coord"] = { 63.4, 60.2, 203 },
 					}),
-					crit(11, {	-- Vashj'ir, Legion's Rest
+					crit(17714, {	-- Vashj'ir, Legion's Rest
 						["coord"] = { 51.5, 62.5, 203 },
 					}),
-					crit(12, {	-- Vashj'ir, Silver Tide Hollow
+					crit(17694, {	-- Vashj'ir, Silver Tide Hollow
 						["coord"] = { 49.2, 41.9, 203 },
 					}),
-					crit(13, {	-- Vashj'ir, Tenebrous Cavern
+					crit(17717, {	-- Vashj'ir, Tenebrous Cavern
 						["coord"] = { 51.3, 60.6, 203 },
 					}),
 				},
+				]]--
 			}),
-			ach(7601, {	-- Tricks and Treats of Pandaria
-				["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+			ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = ALLIANCE_ONLY,
+				--[[
 				["groups"] = {
-					crit(1, {	-- Dread Wastes, Klaxi'vess
+					crit(18418, {	-- Arathi Highlands, Refuge Point
+						["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18419, {	-- Badlands, Dragon's Mouth
+						["coord"] = { 20.9, 56.2, BADLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18429, {	-- Badlands, Fuselight
+						["coord"] = { 65.9, 35.8, BADLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18420, {	-- Blasted Lands, Nethergarde Keep
+						["coord"] = { 60.7, 14.2, BLASTED_LANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18421, {	-- Blasted Lands, Surwich
+						["coord"] = { 44.4, 87.7, BLASTED_LANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2144, {	-- The Cape of Stranglethorn, Booty Bay
+						["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					-- #endif
+					crit(2132, {	-- Dun Morogh, Kharanos
+						-- #if AFTER CATA
+						["coord"] = { 54.5, 50.7, DUN_MOROGH },
+						-- #else
+						["coord"] = { 47.38, 52.44, DUN_MOROGH },
+						-- #endif
+					}),
+					crit(2133, {	-- Duskwood, Darkshire
+						["coord"] = { 73.9, 44.4, DUSKWOOD },
+					}),
+					-- #if AFTER CATA
+					crit(2143, {	-- Eastern Plaguelands, Light's Hope Chapel
+						["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					}),
+					-- #else
+					crit(2145, {	-- Eastern Plaguelands, Light's Hope Chapel
+						["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					}),
+					-- #endif
+					crit(2134, {	-- Elwynn Forest, Goldshire
+						["coord"] = { 43.7, 66.0, ELWYNN_FOREST },
+					}),
+					-- #if BEFORE CATA
+					crit(2135, {	-- Hillsbrad Foothills, Southshore
+						["coord"] = { 51.1, 59.0, HILLSBRAD_FOOTHILLS },
+					}),
+					-- #endif
+					crit(2136, {	-- The Hinterlands, Aerie Peak
+						-- #if AFTER CATA
+						["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
+						-- #else
+						["coord"] = { 14.1, 41.5, THE_HINTERLANDS },
+						-- #endif
+					}),
+					crit(18422, {	-- The Hinterlands, Stormfeather Outpost
+						["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2137, {	-- Ironforge, The Commons
+						["coord"] = { 18.6, 51.3, IRONFORGE },
+					}),
+					crit(18422, {	-- Loch Modan, Farstrider's Lodge
+						["coord"] = { 82.9, 63.6, LOCH_MODAN },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2138, {	-- Loch Modan, Thelsamar
+						["coord"] = { 35.5, 48.4, LOCH_MODAN },
+					}),
+					crit(18423, {	-- Northern Stranglethorn, Fort Livingston
+						["coord"] = { 53.1, 66.9, NORTHERN_STRANGLETHORN },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2139, {	-- Redridge Mountains, Lakeshire
+						-- #if AFTER CATA
+						["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
+						-- #else
+						["coord"] = { 27.0, 44.9, REDRIDGE_MOUNTAINS },
+						-- #endif
+					}),
+					crit(18430, {	-- Searing Gorge, Iron Summit
+						["coord"] = { 39.4, 66.1, SEARING_GORGE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2140, {	-- Stormwind, The Trade District
+						-- #if AFTER CATA
+						["coord"] = { 60.5, 75.2, STORMWIND_CITY },
+						-- #else
+						["coord"] = { 52.77, 65.77, STORMWIND_CITY },
+						-- #endif
+					}),
+					-- #if BEFORE CATA
+					crit(2146, {	-- Stranglethorn Vale, Booty Bay
+						["coord"] = { 27.1, 77.3, STRANGLETHORN_VALE },
+					}),
+					-- #endif
+					crit(18431, {	-- Swamp of Sorrows, Bogpaddle
+						["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18424, {	-- Swamp of Sorrows, The Harborage
+						["coord"] = { 29.0, 32.6, SWAMP_OF_SORROWS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18426, {	-- Western Plaguelands, Chillwind Camp
+						["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2142, {	-- Wetlands, Menethil Harbor
+						["coord"] = { 10.8, 60.9, WETLANDS },
+					}),
+					crit(18428, {	-- Wetlands, Swiftgear Station
+						["coord"] = { 26.1, 25.9, WETLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2141, {	-- Westfall, Sentinel Hill
+						["coord"] = { 52.9, 53.6, WESTFALL },
+					}),
+					crit(18427, {	-- Wetlands, Greenwarden's Grove
+						["coord"] = { 58.1, 39.2, WETLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+				},
+				]]--
+			}),
+			ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
+				["groups"] = {
+					crit(2147, {	-- Arathi Highlands, Hammerfall
+						["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
+					}),
+					crit(18429, {	-- Badlands, Fuselight
+						["coord"] = { 65.9, 35.8, BADLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17626, {	-- Badlands, New Kargath
+						["coord"] = { 18.3, 42.8, BADLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17627, {	-- Blasted Lands, Dreadmaul Hold
+						["coord"] = { 40.5, 11.4, BLASTED_LANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2144, {	-- The Cape of Stranglethorn, Booty Bay
+						["coord"] = { 40.9, 73.8, THE_CAPE_OF_STRANGLETHORN },
+					}),
+					-- #endif
+					crit(17633, {	-- The Cape of Stranglethorn, Hardwrench Hideaway
+						["coord"] = { 35.1, 27.2, THE_CAPE_OF_STRANGLETHORN },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2143, {	-- Eastern Plaguelands, Light's Hope Chapel
+						["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					}),
+					-- #else
+					crit(2145, {	-- Eastern Plaguelands, Light's Hope Chapel
+						["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+					}),
+					-- #endif
+					crit(2149, {	-- Eversong Woods, Fairbreeze Village
+						["coord"] = { 43.7, 71.1, EVERSONG_WOODS },
+					}),
+					crit(2150, {	-- Eversong Woods, Falconwing Square
+						["coord"] = { 48.1, 47.8, EVERSONG_WOODS },
+					}),
+					crit(2151, {	-- Ghostlands, Tranquillien
+						["coord"] = { 48.6, 32.0, GHOSTLANDS },
+					}),
+					crit(17628, {	-- Hillsbrad Foothills, Eastpoint Tower
+						["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2152, {	-- Hillsbrad Foothills, Tarren Mill
+						["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
+					}),
+					crit(17629, {	-- The Hinterlands, Hiri'watha Research Station
+						["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2153, {	-- The Hinterlands, Revantusk Village
+						["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
+					}),
+					crit(2157, {	-- Northern Stranglethorn, Grom'gol Base Camp
+						["coord"] = { 37.3, 51.7, NORTHERN_STRANGLETHORN },
+					}),
+					crit(18430, {	-- Searing Gorge, Iron Summit
+						["coord"] = { 39.4, 66.1, SEARING_GORGE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2154, {	-- Silvermoon City, The Bazaar
+						["coord"] = { 67.6, 73.2, SILVERMOON_CITY },
+					}),
+					crit(2155, {	-- Silvermoon City, The Royal Exchange
+						["coord"] = { 79.6, 57.9, SILVERMOON_CITY },
+					}),
+					crit(17631, {	-- Silverpine Forest, Forsaken Rear Guard
+						["coord"] = { 44.3, 20.4, SILVERPINE_FOREST },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2156, {	-- Silverpine Forest, The Sepulcher
+						["coord"] = { 46.4, 42.8, SILVERPINE_FOREST },
+					}),
+					-- #if BEFORE CATA
+					crit(2146, {	-- Stranglethorn Vale, Booty Bay
+						["coord"] = { 27.1, 77.3, STRANGLETHORN_VALE },
+					}),
+					-- #endif
+					crit(18431, {	-- Swamp of Sorrows, Bogpaddle
+						["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2158, {	-- Swamp of Sorrows, Stonard
+						["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
+					}),
+					crit(2159, {	-- Tirisfal Glades, Brill
+						["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
+					}),
+					crit(17634, {	-- Tirisfal Glades, The Bulwark
+						["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2160, {	-- Undercity, The Trade Quarter
+						["coord"] = { 67.7, 37.9, UNDERCITY },
+					}),
+					crit(17635, {	-- Western Plaguelands, Andorhal
+						["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+				},
+				]]--
+			}),
+			ach(963, {	-- Tricks and Treats of Kalimdor (A)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = ALLIANCE_ONLY,
+				--[[
+				["groups"] = {
+					crit(2071, {	-- Ashenvale, Astranaar
+						["coord"] = { 37.0, 49.3, ASHENVALE },
+					}),
+					crit(2073, {	-- Azuremyst Isle, Azure Watch
+						["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
+					}),
+					-- #if BEFORE CATA
+					crit(2099, {	-- Barrens, Ratchet
+						["coord"] = { 62.1, 39.4, THE_BARRENS },
+					}),
+					-- #endif
+					crit(2074, {	-- Bloodmyst Isle, Blood Watch
+						["coord"] = { 55.7, 59.9, BLOODMYST_ISLE },
+					}),
+					crit(2075, {	-- Darkshore, Lor'danel
+						["coord"] = { 50.8, 18.8, DARKSHORE },
+					}),
+					crit(2076, {	-- Darnassus, Craftsmen's Terrace
+						-- #if AFTER CATA
+						["coord"] = { 62.2, 33.0, DARNASSUS },
+						-- #else
+						["coord"] = { 67.43, 16.0, DARNASSUS },
+						-- #endif
+					}),
+					crit(18396, {	-- Desolace, Karnum's Glade
+						["coord"] = { 56.8, 50.0, DESOLACE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2077, {	-- Desolace, Nijel's Point
+						["coord"] = { 66.3, 6.70, DESOLACE },
+					}),
+					-- #if AFTER CATA
+					crit(2084, {	-- Dustwallow Marsh, Mudsprocket
+						["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+					}),
+					-- #else
+					crit(2100, {	-- Dustwallow Marsh, Mudsprocket
+						["coord"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
+					}),
+					-- #endif
+					crit(2079, {	-- Exodar, Seat of the Naaru
+						["coord"] = { 59.3, 19.2, THE_EXODAR },
+					}),
+					crit(18398, {	-- Felwood - Talonbranch Glade
+						["coord"] = { 61.8, 26.7, FELWOOD },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18397, {	-- Felwood - Whisperwind Grove
+						["coord"] = { 44.6, 28.9, FELWOOD },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18399, {	-- Feralas, Dreamer's Rest
+						["coord"] = { 51.1, 17.8, FERALAS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2080, {	-- Feralas, Feathermoon Stronghold
+						-- #if AFTER CATA
+						["coord"] = { 46.3, 45.2, FERALAS },
+						-- #else
+						["coord"] = { 30.9, 43.5, FERALAS },
+						-- #endif
+					}),
+					-- #if AFTER CATA
+					crit(2083, {	-- Northern Barrens, Ratchet
+						-- #if AFTER CATA
+						["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+						-- #else
+						["coord"] = { 62.1, 39.4, THE_BARRENS },
+						-- #endif
+					}),
+					crit(2085, {	-- Silithus, Cenarion Hold
+						["coord"] = { 55.5, 36.7, SILITHUS },
+					}),
+					-- #else
+					crit(2101, {	-- Silithus, Cenarion Hold
+						["coord"] = { 51.8, 39.2, SILITHUS },
+					}),
+					-- #endif
+					crit(18400, {	-- Southern Barrens, Fort Triumph
+						["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18401, {	-- Southern Barrens, Honor's Stand
+						["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18402, {	-- Southern Barrens, Northwatch Hold
+						["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18403, {	-- Stonetalon Mountains, Farwatcher's Glen
+						["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18412, {	-- Stonetalon Mountains, Northwatch Expedition Base
+						["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2081, {	-- Stonetalon Mountains, Thal'darah Overlook [CATA+] / Stonetalon Peak
+						-- #if AFTER CATA
+						["coord"] = { 39.5, 32.8, STONETALON_MOUNTAINS },
+						-- #else
+						["coord"] = { 35.53, 6.4, STONETALON_MOUNTAINS },
+						-- #endif
+					}),
+					crit(18413, {	-- Stonetalon Mountains, Windshear Hold
+						["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(18415, {	-- Tanaris, Bootlegger Outpost
+						["coord"] = { 55.7, 60.9, TANARIS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2086, {	-- Tanaris, Gadgetzan
+						["coord"] = { 52.6, 27.1, TANARIS },
+					}),
+					-- #else
+					crit(2102, {	-- Tanaris, Gadgetzan
+						["coord"] = { 52.45, 27.88, TANARIS },
+					}),
+					-- #endif
+					crit(2082, {	-- Teldrassil, Dolanaar
+						-- #if AFTER CATA
+						["coord"] = { 55.4, 52.3, TELDRASSIL },
+						-- #else
+						["coord"] = { 55.6, 59.85, TELDRASSIL },
+						-- #endif
+					}),
+					crit(18417, {	-- Un'Goro Crater, Marshal's Stand
+						["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2087, {	-- Winterspring, Everlook
+						["coord"] = { 59.8, 51.2, WINTERSPRING },
+					}),
+					-- #else
+					crit(2103, {	-- Winterspring, Everlook
+						["coord"] = { 61.33, 38.86, WINTERSPRING },
+					}),
+					-- #endif
+				},
+				]]--
+			}),
+			ach(965, {	-- Tricks and Treats of Kalimdor (H)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
+				["groups"] = {
+					crit(17610, {	-- Ashenvale, Hellscream's Watch
+						["coord"] = { 38.6, 42.4, ASHENVALE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17611, {	-- Ashenvale, Silverwind Refuge
+						["coord"] = { 50.2, 67.2, ASHENVALE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2105, {	-- Ashenvale, Splintertree Post
+						["coord"] = { 73.9, 60.7, ASHENVALE },
+					}),
+					crit(17612, {	-- Ashenvale, Zoram'gar Outpost
+						["coord"] = { 13.0, 34.1, ASHENVALE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17613, {	-- Azshara, Bilgewater Harbor
+						["coord"] = { 57.1, 50.2, AZSHARA },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if BEFORE CATA
+					crit(2106, {	-- Barrens, Camp Taurajo
+						["coord"] = { 45.6, 59.1, THE_BARRENS },
+					}),
+					crit(2099, {	-- Barrens, Ratchet
+						["coord"] = { 62.1, 39.4, THE_BARRENS },
+					}),
+					crit(2107, {	-- Barrens, The Crossroads
+						["coord"] = { 52.0, 29.9, THE_BARRENS },
+					}),
+					-- #endif
+					crit(18396, {	-- Desolace, Karnum's Glade
+						["coord"] = { 56.8, 50.0, DESOLACE },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2108, {	-- Desolace, Shadowprey Village
+						["coord"] = { 24.1, 68.3, DESOLACE },
+					}),
+					crit(2109, {	-- Durotar, Razor Hill
+						["coord"] = { 51.6, 41.7, DUROTAR },
+					}),
+					crit(2110, {	-- Dustwallow Marsh, Brackenwall Village
+						["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
+					}),
+					-- #if AFTER CATA
+					crit(2084, {	-- Dustwallow Marsh, Mudsprocket
+						["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+					}),
+					-- #else
+					crit(2100, {	-- Dustwallow Marsh, Mudsprocket
+						["coord"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
+					}),
+					-- #endif
+					crit(18397, {	-- Felwood, Whisperwind Grove
+						["coord"] = { 44.6, 28.9, FELWOOD },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17616, {	-- Feralas, Camp Ataya
+						["coord"] = { 41.4, 15.6, FERALAS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2111, {	-- Feralas, Camp Mojache
+						["coord"] = { 74.8, 45.1, FERALAS },
+					}),
+					crit(17617, {	-- Feralas, Stonemaul Hold
+						["coord"] = { 52.0, 47.7, FERALAS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2112, {	-- Mulgore, Bloodhoof Village
+						["coord"] = { 46.8, 60.4, MULGORE },
+					}),
+					-- #if AFTER CATA
+					crit(2107, {	-- Northern Barrens, The Crossroads
+						["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
+					}),
+					crit(17618, {	-- Northern Barrens, Grol'dom Farm
+						["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17619, {	-- Northern Barrens, Nozzlepot's Outpost
+						["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2083, {	-- Northern Barrens, Ratchet
+						-- #if AFTER CATA
+						["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+						-- #else
+						["coord"] = { 62.1, 39.4, THE_BARRENS },
+						-- #endif
+					}),
+					-- #endif
+					crit(2113, {	-- Orgrimmar, Valley of Strength
+						["coord"] = { 53.8, 78.8, ORGRIMMAR },
+					}),
+					-- #if AFTER CATA
+					crit(2085, {	-- Silithus, Cenarion Hold
+						["coord"] = { 55.5, 36.7, SILITHUS },
+					}),
+					-- #else
+					crit(2101, {	-- Silithus, Cenarion Hold
+						["coord"] = { 51.8, 39.2, SILITHUS },
+					}),
+					-- #endif
+					crit(17620, {	-- Southern Barrens, Desolation Hold
+						["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17621, {	-- Southern Barrens, Hunter's Hill
+						["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(17622, {	-- Stonetalon Mountains, Krom'gar Fortress
+						["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					crit(2114, {	-- Stonetalon Mountains, Sun Rock Retreat
+						["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
+					}),
+					crit(18415, {	-- Tanaris, Bootlegger Outpost
+						["coord"] = { 55.7, 60.9, TANARIS },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2086, {	-- Tanaris, Gadgetzan
+						["coord"] = { 52.6, 27.1, TANARIS },
+					}),
+					-- #else
+					crit(2102, {	-- Tanaris, Gadgetzan
+						["coord"] = { 52.45, 27.88, TANARIS },
+					}),
+					crit(2161, {	-- Thousand Needles, Freewind Post
+						["coord"] = { 46.1, 51.4, THOUSAND_NEEDLES },
+					}),
+					-- #endif
+					crit(2115, {	-- Thunder Bluff, Lower Rise
+						["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
+					}),
+					crit(18417, {	-- Un'Goro Crater, Marshal's Stand
+						["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+						["timeline"] = { "added 4.2.0" },
+					}),
+					-- #if AFTER CATA
+					crit(2087, {	-- Winterspring, Everlook
+						["coord"] = { 59.8, 51.2, WINTERSPRING },
+					}),
+					-- #else
+					crit(2103, {	-- Winterspring, Everlook
+						["coord"] = { 61.33, 38.86, WINTERSPRING },
+					}),
+					-- #endif
+				},
+				]]--
+			}),
+			ach(5836, {	-- Tricks and Treats of Northrend (A)
+				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = ALLIANCE_ONLY,
+				--[[
+				["groups"] = {
+					crit(17660, {	-- Borean Tundra, Fizzcrank Airstrip
+						["coord"] = { 57.1, 18.8, BOREAN_TUNDRA },
+					}),
+					crit(17661, {	-- Borean Tundra, Unu'pe
+						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
+					}),
+					crit(17662, {	-- Borean Tundra, Valiance Keep
+						["coord"] = { 58.5, 67.9, BOREAN_TUNDRA },
+					}),
+					crit(17663, {	-- Dalaran, The Legerdemain Lounge
+						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
+					}),
+					crit(17664, {	-- Dalaran, Silver Enclave
+						["coord"] = { 42.5, 63.5, NORTHREND_DALARAN },
+					}),
+					crit(17665, {	-- Dalaran, The Underbelly
+						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
+						["maps"] = { NORTHREND_DALARAN },
+					}),
+					crit(17666, {	-- Dragonblight, Moa'ki Harbor
+						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
+					}),
+					crit(17667, {	-- Dragonblight, Stars' Rest
+						["coord"] = { 29.0, 56.2, DRAGONBLIGHT },
+					}),
+					crit(17668, {	-- Dragonblight, Wintergarde Keep
+						["coord"] = { 77.5, 51.3, DRAGONBLIGHT },
+					}),
+					crit(17669, {	-- Dragonblight, Wyrmrest Temple
+						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
+					}),
+					crit(17670, {	-- Grizzly Hills, Amberpine Lodge
+						["coord"] = { 32.0, 60.2, GRIZZLY_HILLS },
+					}),
+					crit(17671, {	-- Grizzly Hills, Westfall Brigade
+						["coord"] = { 59.6, 26.4, GRIZZLY_HILLS },
+					}),
+					crit(17672, {	-- Howling Fjord, Fort Wildevar
+						["coord"] = { 60.5, 15.9, HOWLING_FJORD },
+					}),
+					crit(17673, {	-- Howling Fjord, Kamagua
+						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
+					}),
+					crit(17674, {	-- Howling Fjord, Valgarde
+						["coord"] = { 58.4, 62.8, HOWLING_FJORD },
+					}),
+					crit(17675, {	-- Howling Fjord, Westguard Keep
+						["coord"] = { 30.8, 41.5, HOWLING_FJORD },
+					}),
+					crit(17681, {	-- Sholazar Basin, Nesingwary Base Camp
+						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
+					}),
+					crit(17676, {	-- Storm Peaks, Bouldercrag's Refuge
+						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
+					}),
+					crit(17677, {	-- Storm Peaks, Frosthold
+						["coord"] = { 28.7, 74.3, THE_STORM_PEAKS },
+					}),
+					crit(17678, {	-- Storm Peaks, K3
+						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
+					}),
+					crit(17679, {	-- Zul'Drak, The Argent Stand
+						["coord"] = { 40.8, 66.0, ZULDRAK },
+					}),
+					crit(17680, {	-- Zul'Drak, Zim'Torga
+						["coord"] = { 59.3, 57.2, ZULDRAK },
+					}),
+				},
+				]]--
+			}),
+			ach(5835, {	-- Tricks and Treats of Northrend (H)
+				["timeline"] = { "added 4.2.0" },
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
+				["groups"] = {
+					crit(17636, {	-- Borean Tundra, Bor'gorok Outpost
+						["coord"] = { 49.7, 10.0, BOREAN_TUNDRA },
+					}),
+					crit(17636, {	-- Borean Tundra, Taunka'le Village
+						["coord"] = { 76.7, 37.4, BOREAN_TUNDRA },
+					}),
+					crit(17631, {	-- Borean Tundra, Unu'pe
+						["coord"] = { 78.4, 49.2, BOREAN_TUNDRA },
+					}),
+					crit(17639, {	-- Borean Tundra, Warsong Hold
+						["coord"] = { 41.8, 54.4, BOREAN_TUNDRA },
+					}),
+					crit(17663, {	-- Dalaran, The Legerdemain Lounge
+						["coord"] = { 48.3, 40.8, NORTHREND_DALARAN },
+					}),
+					crit(17641, {	-- Dalaran, Sunreaver's Sanctuary
+						["coord"] = { 66.6, 30.1, NORTHREND_DALARAN },
+					}),
+					crit(17665, {	-- Dalaran, The Underbelly
+						["coord"] = { 27.2, 41.4, NORTHREND_THE_UNDERBELLY },
+						["maps"] = { NORTHREND_DALARAN },
+					}),
+					crit(17643, {	-- Dragonblight, Agmar's Hammer
+						["coord"] = { 37.8, 46.4, DRAGONBLIGHT },
+					}),
+					crit(17666, {	-- Dragonblight, Moa'ki Harbor
+						["coord"] = { 48.2, 74.7, DRAGONBLIGHT },
+					}),
+					crit(17645, {	-- Dragonblight, Venomspite
+						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
+					}),
+					crit(17669, {	-- Dragonblight, Wyrmrest Temple
+						["coord"] = { 60.1, 53.5, DRAGONBLIGHT },
+					}),
+					crit(17647, {	-- Grizzly Hills, Camp Oneqwah
+						["coord"] = { 65.4, 47.0, GRIZZLY_HILLS },
+					}),
+					crit(17648, {	-- Grizzly Hills, Conquest Hold
+						["coord"] = { 20.9, 64.7, GRIZZLY_HILLS },
+					}),
+					crit(17649, {	-- Howling Fjord, Camp Winterhoof
+						["coord"] = { 49.5, 10.8, HOWLING_FJORD },
+					}),
+					crit(17673, {	-- Howling Fjord, Kamagua
+						["coord"] = { 25.4, 59.8, HOWLING_FJORD },
+					}),
+					crit(17651, {	-- Howling Fjord, New Agamand
+						["coord"] = { 52.1, 66.2, HOWLING_FJORD },
+					}),
+					crit(17652, {	-- Howling Fjord, Vengeance Landing
+						["coord"] = { 79.2, 30.6, HOWLING_FJORD },
+					}),
+					crit(17681, {	-- Sholazar Basin, Nesingwary Base Camp
+						["coord"] = { 26.7, 59.2, SHOLAZAR_BASIN },
+					}),
+					crit(17676, {	-- Storm Peaks, Bouldercrag's Refuge
+						["coord"] = { 30.9, 37.2, THE_STORM_PEAKS },
+					}),
+					crit(17655, {	-- Storm Peaks, Camp Tunka'lo
+						["coord"] = { 67.6, 50.6, THE_STORM_PEAKS },
+					}),
+					crit(17656, {	-- Storm Peaks, Grom'arsh Crash Site
+						["coord"] = { 37.1, 49.6, THE_STORM_PEAKS },
+					}),
+					crit(17678, {	-- Storm Peaks, K3
+						["coord"] = { 41.1, 85.9, THE_STORM_PEAKS },
+					}),
+					crit(17679, {	-- Zul'Drak, The Argent Stand
+						["coord"] = { 40.8, 66.0, ZULDRAK },
+					}),
+					crit(17680, {	-- Zul'Drak, Zim'Torga
+						["coord"] = { 59.3, 57.2, ZULDRAK },
+					}),
+				},
+				]]--
+			}),
+			ach(969, {	-- Tricks and Treats of Outlands (A)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = ALLIANCE_ONLY,
+				--[[
+				["groups"] = {
+					crit(2204, {	-- Blade's Edge Mountains, Evergrove
+						["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2195, {	-- Blade's Edge Mountains, Sylvanaar
+						["coord"] = { 35.8, 63.8, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2196, {	-- Blade's Edge Mountains, Toshley's Station
+						["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2197, {	-- Hellfire Peninsula, Honor Hold
+						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
+					}),
+					crit(2198, {	-- Hellfire Peninsula, Temple of Telhamat
+						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
+					}),
+					crit(2199, {	-- Nagrand, Telaar
+						["coord"] = { 54.2, 75.8, NAGRAND },
+					}),
+					crit(2205, {	-- Netherstorm, Area 52
+						["coord"] = { 32.0, 64.4, NETHERSTORM },
+					}),
+					crit(2206, {	-- Netherstorm, The Stormspire
+						["coord"] = { 43.4, 36.1, NETHERSTORM },
+					}),
+					crit(2210, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
+						["coords"] = {
+							{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+							{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
+						},
+					}),
+					crit(2200, {	-- Shadowmoon Valley, Wildhammer Stronghold
+						["coord"] = { 37.1, 58.2, SHADOWMOON_VALLEY },
+					}),
+					crit(2207, {	-- Shattrath City, Aldor Rise or Scryer's Tier
+						["coords"] = {
+							{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+							{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
+						},
+					}),
+					crit(2201, {	-- Terokkar Forest, Allerian Stronghold
+						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
+					}),
+					crit(2209, {	-- Zangarmarsh, Cenarion Refuge
+						["coord"] = { 78.5, 62.9, ZANGARMARSH },
+					}),
+					crit(2202, {	-- Zangarmarsh, Orebor Harborage
+						["coord"] = { 41.9, 26.2, ZANGARMARSH },
+					}),
+					crit(2203, {	-- Zangarmarsh, Telredor
+						["coord"] = { 67.2, 49.0, ZANGARMARSH },
+					}),
+				},
+				]]--
+			}),
+			ach(968, {	-- Tricks and Treats of Outlands (H)
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
+				["groups"] = {
+					crit(2204, {	-- Blade's Edge Mountains, Evergrove
+						["coord"] = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2217, {	-- Blade's Edge Mountains, Mok'Nathal Village
+						["coord"] = { 76.2, 60.4, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2218, {	-- Blade's Edge Mountains, Thunderlord Stronghold
+						["coord"] = { 53.4, 55.5, BLADES_EDGE_MOUNTAINS },
+					}),
+					crit(2219, {	-- Hellfire Peninsula, Falcon Watch
+						["coord"] = { 26.9, 59.6, HELLFIRE_PENINSULA },
+					}),
+					crit(2221, {	-- Hellfire Peninsula, Thrallmar
+						["coord"] = { 56.8, 37.5, HELLFIRE_PENINSULA },
+					}),
+					crit(2220, {	-- Nagrand, Garadar
+						["coord"] = { 56.7, 34.6, NAGRAND },
+					}),
+					crit(2205, {	-- Netherstorm, Area 52
+						["coord"] = { 32.0, 64.4, NETHERSTORM },
+					}),
+					crit(2206, {	-- Netherstorm, The Stormspire
+						["coord"] = { 43.4, 36.1, NETHERSTORM },
+					}),
+					crit(2210, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
+						["coords"] = {
+							{ 30.3, 27.8, SHADOWMOON_VALLEY },	-- Scryer
+							{ 61.0, 28.2, SHADOWMOON_VALLEY },	-- Aldor
+						},
+					}),
+					crit(2222, {	-- Shadowmoon Valley, Shadowmoon Village
+						["coord"] = { 30.3, 27.8, SHADOWMOON_VALLEY },
+					}),
+					crit(2207, {	-- Shattrath City, Aldor Rise or Scryer's Tier
+						["coords"] = {
+							{ 56.2, 81.8, SHATTRATH_CITY },	-- Scryer
+							{ 28.1, 49.0, SHATTRATH_CITY },	-- Aldor
+						},
+					}),
+					crit(2223, {	-- Terokkar Forest, Stonebreaker Hold
+						["coord"] = { 48.8, 45.2, TEROKKAR_FOREST },
+					}),
+					crit(2224, {	-- Zangarmarsh, Zabra'jin
+						["coord"] = { 30.7, 50.9, ZANGARMARSH },
+					}),
+					crit(2209, {	-- Zangarmarsh, Cenarion Refuge
+						["coord"] = { 78.5, 62.9, ZANGARMARSH },
+					}),
+				},
+				]]--
+			}),
+			ach(7601, {	-- Tricks and Treats of Pandaria (A)
+				["timeline"] = { "added 5.0.4.16016" },
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = ALLIANCE_ONLY,
+				--[[
+				["groups"] = {
+					crit(21927, {	-- Dread Wastes, Klaxi'vess
 						["coord"] = { 55.9, 32.3, DREAD_WASTES },
 					}),
-					crit(2, {	-- Dread Wastes, Soggy's Gamble
+					crit(21928, {	-- Dread Wastes, Soggy's Gamble
 						["coord"] = { 55.2, 71.1, DREAD_WASTES },
 					}),
-					crit(3, {	-- Jade Forest, Dawn's Blossom
+					crit(21929, {	-- Jade Forest, Dawn's Blossom
 						["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
 					}),
-					crit(4, {	-- Jade Forest, Greenstone Village
+					crit(21930, {	-- Jade Forest, Greenstone Village
 						["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
 					}),
-					crit(5, {	-- Jade Forest, Jade Temple Grounds
+					crit(21931, {	-- Jade Forest, Jade Temple Grounds
 						["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
 					}),
-					crit(6, {	-- Jade Forest, Paw'don Village
+					crit(21923, {	-- Jade Forest, Paw'don Village
 						["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
 					}),
-					crit(7, {	-- Jade Forest, Pearlfin Village
+					crit(21924, {	-- Jade Forest, Pearlfin Village
 						["coord"] = { 59.6, 83.2, THE_JADE_FOREST },
 					}),
-					crit(8, {	-- Jade Forest, Sri-La Village
+					crit(21932, {	-- Jade Forest, Sri-La Village
 						["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
 					}),
-					crit(9, {	-- Jade Forest, Tian Monastery
+					crit(21933, {	-- Jade Forest, Tian Monastery
 						["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
 					}),
-					crit(10, {	-- Krasarang Wilds, Marista
+					crit(21934, {	-- Krasarang Wilds, Marista
 						["coord"] = { 53.4, 76.5, KRASARANG_WILDS },
 					}),
-					crit(11, {	-- Krasarang Wilds, Zhu's Watch
+					crit(21935, {	-- Krasarang Wilds, Zhu's Watch
 						["coord"] = { 79.8, 0.71, KRASARANG_WILDS },
 					}),
-					crit(12, {	-- Kun-Lai Summit, Binan Village
+					crit(21936, {	-- Kun-Lai Summit, Binan Village
 						["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
 					}),
-					crit(13, {	-- Kun-Lai Summit, The Grummle Bazaar
+					crit(21938, {	-- Kun-Lai Summit, The Grummle Bazaar
 						["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
 					}),
-					crit(14, {	-- Kun-Lai Summit, One Keg
+					crit(21937, {	-- Kun-Lai Summit, One Keg
 						["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
 					}),
-					crit(15, {	-- Kun-Lai Summit, Westwind Rest
+					crit(21925, {	-- Kun-Lai Summit, Westwind Rest
 						["coord"] = { 54.1, 82.8, KUN_LAI_SUMMIT },
 					}),
-					crit(16, {	-- Kun-Lai Summit, Zouchin Village
+					crit(21939, {	-- Kun-Lai Summit, Zouchin Village
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 					}),
-					crit(17, {	-- The Veiled Stair, Tavern in the Mists
+					crit(21940, {	-- The Veiled Stair, Tavern in the Mists
 						["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
 					}),
-					crit(18, {	-- Townlong Steppes, Longying Outpost
+					crit(21941, {	-- Townlong Steppes, Longying Outpost
 						["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
 					}),
-					crit(19, {	-- Vale of Eternal Blossoms, Mistfall Village
+					crit(21942, {	-- Vale of Eternal Blossoms, Mistfall Village
 						["coord"] = { 35.1, 77.7, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					crit(20, {	-- Vale of Eternal Blossoms, Shrine of Seven Stars
+					crit(21943, {	-- Vale of Eternal Blossoms, Shrine of Seven Stars
 						["coord"] = { 37.7, 66.1, 393 },
 					}),
-					crit(21, {	-- Valley of the Four Winds, Pang's Stead
+					crit(21943, {	-- Valley of the Four Winds, Pang's Stead
 						["coord"] = { 83.6, 20.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					crit(22, {	-- Valley of the Four Winds, Stoneplow
+					crit(21945, {	-- Valley of the Four Winds, Stoneplow
 						["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				},
+				]]--
 			}),
-			ach(7602, {	-- Tricks and Treats of Pandaria
-				["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
+			ach(7602, {	-- Tricks and Treats of Pandaria (H)
+				["timeline"] = { "added 5.0.4.16016" },
+				["sym"] = {{ "achievement_criteria" }},
+				["races"] = HORDE_ONLY,
+				--[[
 				["groups"] = {
-					crit(1, {	-- Dread Wastes, Klaxxi'vess
+					crit(21927, {	-- Dread Wastes, Klaxxi'vess
 						["coord"] = { 55.9, 32.3, DREAD_WASTES },
 					}),
-					crit(2, {	-- Dread Wastes, Soggy's Gamble
+					crit(21928, {	-- Dread Wastes, Soggy's Gamble
 						["coord"] = { 55.2, 71.1, DREAD_WASTES },
 					}),
-					crit(3, {	-- Jade Forest, Dawn's Blossom
+					crit(21929, {	-- Jade Forest, Dawn's Blossom
 						["coord"] = { 45.7, 43.6, THE_JADE_FOREST },
 					}),
-					crit(4, {	-- Jade Forest, Greenstone Village
+					crit(21930, {	-- Jade Forest, Greenstone Village
 						["coord"] = { 48.0, 34.6, THE_JADE_FOREST },
 					}),
-					crit(5, {	-- Jade Forest, Grookin, Hill
+					crit(21946, {	-- Jade Forest, Grookin, Hill
 						["coord"] = { 28.0, 47.4, THE_JADE_FOREST },
 					}),
-					crit(6, {	-- Jade Forest, Honeydew Village
+					crit(21947, {	-- Jade Forest, Honeydew Village
 						["coord"] = { 28.5, 13.3, THE_JADE_FOREST },
 					}),
-					crit(7, {	-- Jade Forest, Jade Temple Grounds
+					crit(21931, {	-- Jade Forest, Jade Temple Grounds
 						["coord"] = { 54.6, 63.3, THE_JADE_FOREST },
 					}),
-					crit(8, {	-- Jade Forest, Sri-La Village
+					crit(21932, {	-- Jade Forest, Sri-La Village
 						["coord"] = { 55.7, 24.4, THE_JADE_FOREST },
 					}),
-					crit(9, {	-- Jade Forest, Tian Monastery
+					crit(21933, {	-- Jade Forest, Tian Monastery
 						["coord"] = { 41.6, 23.1, THE_JADE_FOREST },
 					}),
-					crit(10, {	-- Krasarang Wilds, Dawnchaser Retreat
+					crit(21948, {	-- Krasarang Wilds, Dawnchaser Retreat
 						["coord"] = { 28.5, 47.9, KRASARANG_WILDS },
 					}),
-					crit(11, {	-- Krasarang Wilds, Marista
+					crit(21934, {	-- Krasarang Wilds, Marista
 						["coord"] = { 53.4, 76.5, KRASARANG_WILDS },
 					}),
-					crit(12, {	-- Krasarang Wilds, Thunder Cleft
+					crit(21951, {	-- Krasarang Wilds, Thunder Cleft
 						["coord"] = { 63.8, 20.4, KRASARANG_WILDS },
 					}),
-					crit(13, {	-- Krasarang Wilds, Zhu's Watch
+					crit(21935, {	-- Krasarang Wilds, Zhu's Watch
 						["coord"] = { 79.8, 0.71, KRASARANG_WILDS },
 					}),
-					crit(14, {	-- Kun-Lai Summit, Binan Village
+					crit(21936, {	-- Kun-Lai Summit, Binan Village
 						["coord"] = { 72.7, 92.2, KUN_LAI_SUMMIT },
 					}),
-					crit(15, {	-- Kun-Lai Summit, Eastwind Rest
+					crit(21949, {	-- Kun-Lai Summit, Eastwind Rest
 						["coord"] = { 62.7, 80.5, KUN_LAI_SUMMIT },
 					}),
-					crit(16, {	-- Kun-Lai Summit, The Grummle Bazaar
+					crit(21938, {	-- Kun-Lai Summit, The Grummle Bazaar
 						["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
 					}),
-					crit(17, {	-- Kun-Lai Summit, One Keg
+					crit(21937, {	-- Kun-Lai Summit, One Keg
 						["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
 					}),
-					crit(18, {	-- Kun-Lai Summit, Zouchin Village
+					crit(21939, {	-- Kun-Lai Summit, Zouchin Village
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 					}),
-					crit(19, {	-- The Veiled Stair, Tavern in the Mists
+					crit(21940, {	-- The Veiled Stair, Tavern in the Mists
 						["coord"] = { 54.9, 72.3, THE_VEILED_STAIR },
 					}),
-					crit(20, {	-- Townlong Steppes, Longying Outpost
+					crit(21941, {	-- Townlong Steppes, Longying Outpost
 						["coord"] = { 71.1, 57.8, TOWNLONG_STEPPES },
 					}),
-					crit(21, {	-- Vale of Eternal Blossoms, Mistfall Village
+					crit(21942, {	-- Vale of Eternal Blossoms, Mistfall Village
 						["coord"] = { 35.1, 77.7, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					crit(22, {	-- Vale of Eternal Blossoms, Shrine of Two Moons
+					crit(21950, {	-- Vale of Eternal Blossoms, Shrine of Two Moons
 						["coord"] = { 61.9, 16.1, 391 },
 					}),
-					crit(23, {	-- Valley of the Four Winds, Pang's Stead
+					crit(21943, {	-- Valley of the Four Winds, Pang's Stead
 						["coord"] = { 83.6, 20.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					crit(24, {	-- Valley of the Four Winds, Stoneplow
+					crit(21945, {	-- Valley of the Four Winds, Stoneplow
 						["coord"] = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				},
-			}),
-			classicAch(980, {	-- The Horseman's Reins
-				["provider"] = { "i", 37012 },	-- The Horseman's Reins
-				["timeline"] = { "added 2.0.1" },
-				["filterID"] = MOUNTS,
-				-- #if BEFORE WRATH
-				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-				-- #endif
+				]]--
 			}),
 		}),
 		-- #endif
@@ -1524,6 +1806,15 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					["lvl"] = 98,
 					-- #endif
 					["groups"] = {
+						classicAch(980, {	-- The Horseman's Reins
+							["provider"] = { "i", 37012 },	-- The Horseman's Reins
+							["timeline"] = { "added 2.0.1" },
+							["filterID"] = MOUNTS,
+							-- #if BEFORE WRATH
+							["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+							-- #endif
+						}),
 						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
@@ -1594,6 +1885,15 @@ root("Holidays", applyholiday(HALLOWS_END, {
 						-- #endif
 						-- #endif
 						-- #if BEFORE 6.0.1
+						classicAch(980, {	-- The Horseman's Reins
+							["provider"] = { "i", 37012 },	-- The Horseman's Reins
+							["timeline"] = { "added 2.0.1" },
+							["filterID"] = MOUNTS,
+							-- #if BEFORE WRATH
+							["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+							-- #endif
+						}),
 						i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 							["timeline"] = { "added 2.0.1" },
 						}),
@@ -1629,6 +1929,15 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				}),
 
 				-- #if BEFORE CATA
+				classicAch(980, {	-- The Horseman's Reins
+					["provider"] = { "i", 37012 },	-- The Horseman's Reins
+					["timeline"] = { "added 2.0.1" },
+					["filterID"] = MOUNTS,
+					-- #if BEFORE WRATH
+					["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+					-- #endif
+				}),
 				i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 					["timeline"] = { "added 2.0.1" },
 				}),
@@ -1717,7 +2026,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 				i(34074, {	-- Witches Band
 					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 				}),
-				-- #if BEFORE WRATH
+				-- #if BEFORE CATA
 				i(33154, {	-- Sinister Squashling
 					["timeline"] = { "added 2.2.2.7318" },
 				}),
@@ -3917,7 +4226,6 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
-					{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 				-- #endif
 				["groups"] = {
@@ -3955,7 +4263,6 @@ root("Holidays", applyholiday(HALLOWS_END, {
 					{ "select", "itemID", 33292 },	-- Hallowed Helm
 					{ "select", "itemID", 33154 },	-- Sinister Squashling (PET!)
 					-- #endif
-					{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 				},
 			}),
 			i(20393, {	-- Treat Bag
