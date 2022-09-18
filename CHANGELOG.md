@@ -1,26 +1,28 @@
 # AllTheThings
 
-## [SL-2.9.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.6) (2022-09-11)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.5...SL-2.9.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.9.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.7) (2022-09-18)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.6...SL-2.9.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Functional changes
 
-- Modified Quests slightly such that any normally uncollectible Quests marked as providing reputation up to a certain threshold with a faction will now show as a 'Cost' for the respective Faction instead of showing as Uncollected. Example: repeatable Sporeggar quests that you can do for rep.
+- Added Covenant Renown level and 'Last Turned-In Quest' to inaccurate quest dialog text.
 
 
 ### Logic fixes
 
-- Removed accidentally left debug print.
-- We will no longer consider all Shadowlands legendary craftable ranks collected when you craft the first rank. This bug was present the whole expansion!
+- Big overwrite of some internal ATT logic that should improve performance when opening lists of big cities, PvP ensembles, Honor, and all other cases where we "duplicate" same data in multiple places. This should even fix some bugs!
+- Performance improvement to cost calculations.
+- Fixed a bug where `/attwq` could hide everything in the window when it only had 100% complete content (meaning there was no way to refresh the WQ without reloading UI).
 
 
 ### Data fixes
 
-- Fixes for PvP: Wrath of the Lich King, Battle for Azeroth, Shadowlands. While it is better than before we still have some missing data, please report on our Discord server.
-- Burning Crusade, Wrath of the Lich King achievements adjustments.
-- Brewfest, Hallow's End achievements adjustments.
-- Moved a bunch of mount achievements out of Feats of Strength and into where they belong.
-- Updated all of the meta exploration achievements.
-- Updated all Northrend Rares.
+- Fixed some removed content that made a sudden reappearance with WotLK Classic sync in ATT. Fixed some broken content due to the same reason.
+- Further profession fixes (blacksmithing and enchantment).
+- Fixes for Battle for Azeroth PvP Elite Season 2, 3 and 4 items.
+- Updated BfA Essences that previously required M+ but now can be done in M0.
+- Added Frostbrood Proto-Wyrm from WotLK Classic promotion.
+- Marked a bunch of things that will be going away with Dragonflight pre-patch/launch.
+- Various fixes to TBC, WotLK and SL achievements.
 - Other fixes.
