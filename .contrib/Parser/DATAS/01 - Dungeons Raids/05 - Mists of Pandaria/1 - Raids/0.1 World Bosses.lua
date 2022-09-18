@@ -40,6 +40,8 @@ _.Instances = { tier(MOP_TIER, {
 						i(95963),	-- Silentflame Sandals
 						i(95968),	-- Vaultwalker Sabatons
 						i(94295),	-- Primal Egg
+					}),
+					i(95602, bubbleDown({ ["timeline"] = { "added 5.0.3", "removed 9.0.0" } }, {	-- Stormtouched Cache Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
 						i(44970),	-- Dun Morogh Cub
@@ -71,7 +73,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(8495),	-- Parrot Cage (Senegal)
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
-					}),
+					})),
 					-- Necks
 					i(91414),	-- Tyrannical Gladiator's Choker of Accuracy
 					i(94354),	-- Tyrannical Gladiator's Choker of Accuracy
@@ -559,6 +561,8 @@ _.Instances = { tier(MOP_TIER, {
 						i(86775),	-- Jade Warlord Figurine
 						-- Pets
 						i(94295),	-- Primal Egg
+					}),
+					i(90840, bubbleDown({ ["timeline"] = { "added 5.0.3", "removed 9.0.0" } }, {	-- Marauder's Gleaming Sack of Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot
@@ -590,7 +594,7 @@ _.Instances = { tier(MOP_TIER, {
 						i(44965),	-- Teldrassil Sproutling
 						i(69991),	-- Tiny Sporebat
 						i(44971),	-- Tirisfal Batling
-					}),
+					})),
 					i(90410),	-- Cap of Wandering Pride
 					i(90413),	-- Crest of the Grand Warband
 					i(90416),	-- Crown of Ranging Invasion
@@ -693,8 +697,17 @@ _.Instances = { tier(MOP_TIER, {
 						i(86899),	-- Stalker's Cord of Eternal Autumn
 						i(86898),	-- Weaver's Cord of Eternal Autumn
 						i(94295),	-- Primal Egg
+					}),
+					i(90839, bubbleDown({ ["timeline"] = { "added 5.0.3", "removed 9.0.0" } }, {	-- Cache of Sha-Touched Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
+						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot
+						i(29960),	-- Captured Firefly
+						i(8491),	-- Cat Carrier (Black Tabby)
+						i(46398),	-- Cat Carrier (Calico Cat)
+						i(8487),	-- Cat Carrier (Orange Tabby)
+						i(8488),	-- Cat Carrier (Silver Tabby)
+						i(10822),	-- Dark Whelpling
 						i(44970),	-- Dun Morogh Cub
 						i(44973),	-- Durotar Scorpion
 						i(67282),	-- Elementium Geode
@@ -702,30 +715,22 @@ _.Instances = { tier(MOP_TIER, {
 						i(44982),	-- Enchanted Broom
 						i(64403),	-- Fox Kit
 						i(43698),	-- Giant Sewer Rat
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
-						i(45606),	-- Sen'jin Fetish
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-						i(10360),	-- Black Kingsnake
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
 						i(29953),	-- Golden Dragonhawk Hatchling
 						i(48116),	-- Gundrak Hatchling
 						i(48118),	-- Leaping Hatchling
+						i(45002),	-- Mechanopeep
+						i(44980),	-- Mulgore Hatchling
 						i(48120),	-- Obsidian Hatchling
 						i(8496),	-- Parrot Cage (Cockatiel)
 						i(8492),	-- Parrot Cage (Green Wing Macaw)
 						i(8495),	-- Parrot Cage (Senegal)
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
-					}),
+						i(69992),	-- Shimmering Wyrmling
+						i(44965),	-- Teldrassil Sproutling
+						i(69991),	-- Tiny Sporebat
+						i(44971),	-- Tirisfal Batling
+					})),
 
 					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
@@ -917,8 +922,17 @@ _.Instances = { tier(MOP_TIER, {
 						i(105817),	-- Siid's Silent Stranglers
 						i(105825),	-- Turtleshell Greatcloak
 						i(105822),	-- Zoid's Molten Gauntlets
+					}),
+					i(104272, bubbleDown({ ["timeline"] = { "added 5.0.3", "removed 9.0.0" } }, {	-- Celestial Treasure Box Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
+						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot
+						i(29960),	-- Captured Firefly
+						i(8491),	-- Cat Carrier (Black Tabby)
+						i(46398),	-- Cat Carrier (Calico Cat)
+						i(8487),	-- Cat Carrier (Orange Tabby)
+						i(8488),	-- Cat Carrier (Silver Tabby)
+						i(10822),	-- Dark Whelpling
 						i(44970),	-- Dun Morogh Cub
 						i(44973),	-- Durotar Scorpion
 						i(67282),	-- Elementium Geode
@@ -926,30 +940,22 @@ _.Instances = { tier(MOP_TIER, {
 						i(44982),	-- Enchanted Broom
 						i(64403),	-- Fox Kit
 						i(43698),	-- Giant Sewer Rat
-						i(45002),	-- Mechanopeep
-						i(44980),	-- Mulgore Hatchling
-						i(94295),	-- Primal Egg
-						i(69992),	-- Shimmering Wyrmling
-						i(44965),	-- Teldrassil Sproutling
-						i(69991),	-- Tiny Sporebat
-						i(44971),	-- Tirisfal Batling
-						i(10360),	-- Black Kingsnake
-						i(29960),	-- Captured Firefly
-						i(8491),	-- Cat Carrier (Black Tabby)
-						i(46398),	-- Cat Carrier (Calico Cat)
-						i(8487),	-- Cat Carrier (Orange Tabby)
-						i(8488),	-- Cat Carrier (Silver Tabby)
-						i(10822),	-- Dark Whelpling
 						i(29953),	-- Golden Dragonhawk Hatchling
 						i(48116),	-- Gundrak Hatchling
 						i(48118),	-- Leaping Hatchling
+						i(45002),	-- Mechanopeep
+						i(44980),	-- Mulgore Hatchling
 						i(48120),	-- Obsidian Hatchling
 						i(8496),	-- Parrot Cage (Cockatiel)
 						i(8492),	-- Parrot Cage (Green Wing Macaw)
 						i(8495),	-- Parrot Cage (Senegal)
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
-					}),
+						i(69992),	-- Shimmering Wyrmling
+						i(44965),	-- Teldrassil Sproutling
+						i(69991),	-- Tiny Sporebat
+						i(44971),	-- Tirisfal Batling
+					})),
 					-- Neck
 					i(103515),	-- Prideful Gladiator's Choker of Accuracy
 					i(102641),	-- Prideful Gladiator's Choker of Accuracy
