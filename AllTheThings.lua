@@ -1374,8 +1374,8 @@ app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 
 -- Screenshot
-function app:TakeScreenShot()
-	if app.Settings:GetTooltipSetting("Screenshot") then
+function app:TakeScreenShot(type)
+	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
 		Screenshot();
 	end
 end
@@ -9724,7 +9724,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		rawset(CollectedSpeciesHelper, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("BattlePets");
 		wipe(searchCache);
 	end
 end
@@ -12687,7 +12687,7 @@ local RefreshMounts = function(newMountID)
 	UpdateRawIDs("spellID", newMounts);
 	if newMounts and #newMounts > 0 then
 		app:PlayRareFindSound();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Mounts");
 	end
 end
 app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
@@ -14714,7 +14714,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
+			Callback(app.TakeScreenShot, "Transmog");
 		end
 
 		-- Update the groups for the sourceID results
@@ -14763,7 +14763,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				app:PlayReportSound();
 			end
 			Callback(app.PlayFanfare);
-			Callback(app.TakeScreenShot);
+			Callback(app.TakeScreenShot, "Transmog");
 		end
 
 		-- Update the groups for the sourceIDs
@@ -21454,7 +21454,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
 					app:PlayRareFindSound();
-					app:TakeScreenShot();
+					app:TakeScreenShot("Recipes");
 					self.force = true;
 				end
 			end
@@ -21591,7 +21591,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						UpdateSearchResults(SearchForField("spellID",spellID));
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
-							app:TakeScreenShot();
+							app:TakeScreenShot("Recipes");
 							if app.Settings:GetTooltipSetting("Report:Collected") then
 								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
 								print(NEW_RECIPE_LEARNED_TITLE, link);
@@ -24261,7 +24261,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 		app.RefreshQuestInfo();
 		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Heirlooms");
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -24389,7 +24389,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		ATTAccountWideData.Toys[itemID] = 1;
 		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
-		app:TakeScreenShot();
+		app:TakeScreenShot("Toys");
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then

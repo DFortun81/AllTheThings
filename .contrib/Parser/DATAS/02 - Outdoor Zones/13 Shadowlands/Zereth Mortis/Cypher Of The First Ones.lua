@@ -22,6 +22,20 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				ach(15509),	-- Tales of the Exile
 			}),
 			n(QUESTS, {
+				q(64861, {	-- Kismetric Disc
+					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
+					["provider"] = { "i", 187792 },	-- Kismetric Disc
+					["g"] = {
+						i(190062, {	-- Wicked Pocopoc
+							["questID"] = 65530,
+							["g"] = {
+								crit(7, {	-- Wicked Pocopoc
+									["achievementID"] = 15508,	-- Fashion of the First Ones
+								}),
+							},
+						}),
+					},
+				}),
 				q(65674, {	-- What Is This Thing?
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "i", 190579 },	-- Unformed Essence
