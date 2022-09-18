@@ -95,27 +95,65 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 730); end]],
 					-- #endif
 				})),
-				ach(1167, {	-- Master of Alterac Valley
+				ach(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
-						{"meta_achievement",
-							219,	-- Alterac Valley Veteran
-							221,	-- Alterac Grave Robber
-							222,	-- Tower Defense
-							1151,	-- Loyal Defender (A)
-							224,	-- Loyal Defender (H)
-							225,	-- Everything Counts (A)
-							1164,	-- Everything Counts (H)
-							223,	-- The Sickly Gazelle
-							873,	-- Frostwolf Perfection
-							220,	-- Stormpike Perfection
-							582,	-- Alterac Valley All-Star
-							706,	-- Frostwolf Howler
-							707,	-- Stormpike Battle Charger
-							1166,	-- To the Looter Go the Spoils
-						},
-					},
-
+					-- #if AFTER 4.3.0
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						1151,	-- Loyal Defender (A)
+						224,	-- Loyal Defender (H)
+						225,	-- Everything Counts (A)
+						1164,	-- Everything Counts (H)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+					}},
+					-- #else
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						1151,	-- Loyal Defender (A)
+						225,	-- Everything Counts (A)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+						226,	-- The Alterac Blitz
+					}},
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+				}),
+				ach(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
+					-- Meta Achievement should symlink the contained Achievements from Source
+					["sym"] = {{"meta_achievement",
+						219,	-- Alterac Valley Veteran
+						221,	-- Alterac Grave Robber
+						222,	-- Tower Defense
+						224,	-- Loyal Defender (H)
+						1164,	-- Everything Counts (H)
+						223,	-- The Sickly Gazelle
+						873,	-- Frostwolf Perfection
+						220,	-- Stormpike Perfection
+						582,	-- Alterac Valley All-Star
+						706,	-- Frostwolf Howler
+						707,	-- Stormpike Battle Charger
+						1166,	-- To the Looter Go the Spoils
+						-- #if BEFORE 4.3.0
+						226,	-- The Alterac Blitz
+						-- #endif
+					}},
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
+					["races"] = HORDE_ONLY,
 				}),
 				ach(218, {	-- Alterac Valley Victory
 					["rank"] = 1,
