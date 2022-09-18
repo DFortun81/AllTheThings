@@ -69,60 +69,66 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
     request = requests.get(url, headers=headers)
     reader = csv.DictReader(request.content.decode("utf-8").splitlines())
     for row in reader:
-        match thing:
-            case Things.Achievements:
-                # Achievements have names in the same db
-                thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
-            case Things.Factions:
-                # Factions have names in the same db
-                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-            case Things.FlightPaths:
-                # Flight Paths have names in the same db
-                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-            case Things.Followers:
-                # Follower Names need creature db
-                thing_list.append(
-                    f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
-                )
-            case Things.Illusions:
-                # Illusion names are in the SpellItemEnchantmentID db
-                thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
-            case Things.Mounts:
-                # Mounts have names in the same db
-                thing_list.append(f"{row['SourceSpellID']},{row['Name_lang']}\n")
-            case Things.Quests:
-                # TODO: I think we need wowhead here.
-                thing_list.append(f"{row['ID']}\n")
-            case Things.Pets:
-                # Pet Names need creature db
-                thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
-            case Things.Recipes:
-                # Recipe names are in the SpellName db and Profession names are in SkillLine db
-                thing_list.append(f"{row['SkillLine']},{row['Spell']}\n")
-            case Things.Titles:
-                # Titles have names in the same db
-                thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
-            case Things.Toys:
-                # Item names are in Item Sparse db
-                thing_list.append(f"{row['ItemID']}\n")
-            case Things.Transmog:
-                # Item names are in Item Sparse db.
-                thing_list.append(f"{row['ID']},{row['ItemID']}\n")
-            case Things.Creature:
-                # Helps Followers and Pets to get names
-                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-            case Things.SpellItem:
-                # Helps Illusion names
-                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-            case Things.SpellName:
-                # Helps Recipes
-                thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-            case Things.SkillLine:
-                # Helps Professions
-                thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
-            case Things.Item:
-                # Helps Toys and Transmog
-                thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
+        try:
+            match thing:
+                case Things.Achievements:
+                    # Achievements have names in the same db
+                    thing_list.append(f"{row['ID']},{row['Title_lang']}\n")
+                case Things.Factions:
+                    # Factions have names in the same db
+                    try:
+                        thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
+                case Things.FlightPaths:
+                    # Flight Paths have names in the same db
+                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                case Things.Followers:
+                    # Follower Names need creature db
+                    thing_list.append(
+                        f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
+                    )
+                case Things.Illusions:
+                    # Illusion names are in the SpellItemEnchantmentID db
+                    thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
+                case Things.Mounts:
+                    # Mounts have names in the same db
+                    thing_list.append(f"{row['SourceSpellID']},{row['Name_lang']}\n")
+                case Things.Quests:
+                    # TODO: I think we need wowhead here.
+                    thing_list.append(f"{row['ID']}\n")
+                case Things.Pets:
+                    # Pet Names need creature db
+                    thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
+                case Things.Recipes:
+                    # Recipe names are in the SpellName db and Profession names are in SkillLine db
+                    thing_list.append(f"{row['SkillLine']},{row['Spell']}\n")
+                case Things.Titles:
+                    # Titles have names in the same db
+                    thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
+                case Things.Toys:
+                    # Item names are in Item Sparse db
+                    thing_list.append(f"{row['ItemID']}\n")
+                case Things.Transmog:
+                    # Item names are in Item Sparse db.
+                    thing_list.append(f"{row['ID']},{row['ItemID']}\n")
+                case Things.Creature:
+                    # Helps Followers and Pets to get names
+                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                case Things.SpellItem:
+                    # Helps Illusion names
+                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                case Things.SpellName:
+                    # Helps Recipes
+                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                case Things.SkillLine:
+                    # Helps Professions
+                    thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+                case Things.Item:
+                    # Helps Toys and Transmog
+                    thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
+        except KeyError:
+            print(build)
     return thing_list
 
 
