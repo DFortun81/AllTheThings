@@ -12685,7 +12685,7 @@ local RefreshMounts = function(newMountID)
 		end
 	end
 	UpdateRawIDs("spellID", newMounts);
-	if #newMounts > 0 then
+	if newMounts and #newMounts > 0 then
 		app:PlayRareFindSound();
 		app:TakeScreenShot();
 	end
