@@ -472,6 +472,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["isBreadcrumb"] = true,
 				}),
 
+				q(66554, {	-- Aggressive Self-Defence
+					["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?
+					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+				}),
+				q(66553, {	-- Hollow Up
+					["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?
+					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+				}),
+
+
+
+
+
+				q(66622, {	-- Wayward Tools
+					["sourceQuests"] = { 70627 },	-- What of the Winterpelt Clan?
+					["provider"] = { "n", 186755 },	-- Tyrnokos Sunstrike
+					["coord"] = { 65.6, 16.2, THE_AZURE_SPAN },
+				}),
+
 
 
 					-- Further
@@ -976,6 +997,133 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 65.9, 25.5, THE_AZURE_SPAN },
 				["isBreadcrumb"] = true,
 			}),
+			q(66709, {	-- Field Medic 101
+				["sourceQuests"] = { 66708 },	-- Riders in the Snow
+				["provider"] = { "n", 189963 },	-- Old Grimtusk
+				["coord"] = { 59.3, 39.7, THE_AZURE_SPAN },
+			}),
+			q(66715, {	-- The Extraction
+				["sourceQuests"] = { 66709 },	-- Field Medic 101
+				["provider"] = { "n", 189963 },	-- Old Grimtusk
+				["coord"] = { 59.3, 39.7, THE_AZURE_SPAN },
+			}),
+			q(66703, {	-- Snowball Effect
+				["sourceQuests"] = { 66715 },	-- The Extraction
+				["provider"] = { "n", 189625 },	-- Frostbite
+				["coord"] = { 58.4, 42.0, THE_AZURE_SPAN },
+			}),
+			q(67050, {	-- Frostbite: Causes and Symptoms
+				["sourceQuests"] = { 66703 },	-- Snowball Effect
+				["provider"] = { "n", 189625 },	-- Frostbite
+				["coord"] = { 58.4, 42.0, THE_AZURE_SPAN },
+			}),
+			q(66730, {	-- True Survivors
+				["sourceQuests"] = { 67050 },	-- Frostbite: Causes and Symptoms
+				["provider"] = { "n", 189963 },	-- Old Grimtusk
+				["coord"] = { 58.5, 40.5, THE_AZURE_SPAN },
+				["g"] = {
+					-- Snowhide Camp
+				},
+			}),
+
+
+
+
+			q(71013, {	-- No Vengeance on an Empty Stomach
+				["sourceQuests"] = {
+					66730,	-- True Survivors
+					71012,	-- Varsek Recruited [I searched these Grimtusk place... Finally.. Last Destination of Snowhide Camp Line]
+				},
+				["provider"] = { "n", 196812 },	-- Old Grimtusk
+				["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
+				["requireSkill"] = FISHING,
+			}),
+
+
+			q(71014, {	-- A Far Furbolg Friend
+				["sourceQuests"] = { 71013 },	-- No Vengeance on an Empty Stomach
+				["provider"] = { "n", 196812 },	-- Old Grimtusk
+				["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
+			}),
+			q(70996, {	-- A Little Kelp for My Friends
+				["sourceQuests"] = { 71014 },	-- A Far Furbolg Friend
+				["provider"] = { "n", 196806 },	-- Barst
+				["coord"] = { 1.2, 39.2, THE_AZURE_SPAN },
+			}),
+			q(71000, {	-- Barst Recruited
+				["sourceQuests"] = { 70996 },	-- A Little Kelp for My Friends
+				["provider"] = { "n", 196806 },	-- Barst
+				["coord"] = { 1.2, 39.2, THE_AZURE_SPAN },
+			}),
+			q(71015, {	-- All Brawn, No Brains [BUG QUEST CANT COMPLETE]
+				["sourceQuests"] = { 71013 },	-- No Vengeance on an Empty Stomach
+				["provider"] = { "n", 196812 },	-- Old Grimtusk
+				["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
+			}),
+			q(71016, {	-- Grimtusk's Sister
+				["sourceQuests"] = { 71013 },	-- No Vengeance on an Empty Stomach
+				["provider"] = { "n", 196812 },	-- Old Grimtusk
+				["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
+			}),
+			q(71017, {	-- Naluki's Letter
+				["sourceQuests"] = { 71016 },	-- Grimtusk's Sister
+				["provider"] = { "n", 196841 },	-- Naluki
+				["coord"] = { 12.5, 49.2, THE_AZURE_SPAN },
+			}),
+			q(71135, {	-- Loose Ends
+				["sourceQuests"] = {
+					71000,	-- Barst Recruited
+					71015,	-- All Brawn, No Brains [BUG QUEST CANT COMPLETE]
+					71017,	-- Naluki's Letter
+				},
+				["provider"] = { "n", 196812 },	-- Old Grimtusk
+				["coord"] = { 58.8, 34.9, THE_AZURE_SPAN },
+				["g"] = {
+					-- Grimtusk hideaway
+				},
+			}),
+
+			q(65279, {	-- By Royal Decree
+				-- ["sourceQuests"] = {  },
+				["providers"] = {
+					{ "n", 183997 },	-- Gnoll Mon-Ark
+					{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
+				},
+				["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
+			}),
+			q(65306, {	-- Rot Rancher
+				-- ["sourceQuests"] = {  },
+				["providers"] = {
+					{ "n", 183997 },	-- Gnoll Mon-Ark
+					{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
+				},
+				["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
+			}),
+			q(65302, {	-- Keys to the Kingdom
+				["sourceQuests"] = {
+					65279,	-- By Royal Decree
+					65306,	-- Rot Rancher
+				},
+				["provider"] = { "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
+				["coord"] = { 13.8, 21.2, THE_AZURE_SPAN },
+			}),
+			q(65594, {	-- Making a Mountain Out of a Gnoll Hill
+				["sourceQuests"] = { 65302 },	-- Keys to the Kingdom
+				["provider"] = { "n", 183997 },	-- Gnoll Mon-Ark
+				["coord"] = { 15.7, 19.2, THE_AZURE_SPAN },
+			}),
+			q(65595, {	-- One Bad Apple
+				["sourceQuests"] = { 65594 },	-- Making a Mountain Out of a Gnoll Hill
+				["provider"] = { "n", 183997 },	-- Gnoll Mon-Ark
+				["coord"] = { 12.9, 22.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(198671),	-- Mystic's String of Slime
+					i(198090),	-- Jar of Excess Slime (TOY!)
+					-- Creektooth den
+				},
+			}),
+
+
 			-- SIDE 17
 			q(66964, {	-- Artifacts in the Wrong Hands
 				["sourceQuests"] = { 65886 },	-- To Rhonin's Shield
@@ -984,15 +1132,66 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["isBreadcrumb"] = true,
 			}),
 
-			q(66964, {	-- Artifacts in the Wrong Hands
+			q(70856, {	-- Kill It with Fire
 				["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
-				["provider"] = { "n", 196545 },	-- Polky Cogzapper
-				["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
+				["provider"] = { "n", 191715 },	-- To'tik
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(199928),	-- Flamethrower Torch
+				},
 			}),
-			q(66964, {	-- Artifacts in the Wrong Hands
+			q(67111, {	-- The Ailing Apprentice
 				["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
-				["provider"] = { "n", 196545 },	-- Polky Cogzapper
-				["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
+				["provider"] = { "n", 196254 },	-- Kattigat
+				["coord"] = { 67.2, 44.4, THE_AZURE_SPAN },
+			}),
+			q(67724, {	-- The Fending Flames
+				["sourceQuests"] = { 66964 },	-- Artifacts in the Wrong Hands
+				["provider"] = { "n", 191715 },	-- To'tik
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+			}),
+			q(70858, {	-- Back into the Action
+				["sourceQuests"] = {
+					70856,	-- Kill It with Fire
+					67111,	-- The Ailing Apprentice
+					67724,	-- The Fending Flames
+				},
+				["provider"] = { "n", 196254 },	-- Kattigat
+				["coord"] = { 67.2, 44.4, THE_AZURE_SPAN },
+				["g"] = {
+					i(199930),	-- Ice Cold Antidote
+				},
+			}),
+			q(70859, {	-- What the Guardian Beholds
+				["sourceQuests"] = { 70858 },	-- Back into the Action
+				["provider"] = { "n", 196501 },	-- Alia Sunsoar
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+			}),
+			q(70937, {	-- What Valthrux Once Was
+				["sourceQuests"] = { 70858 },	-- Back into the Action
+				["provider"] = { "n", 191715 },	-- To'tik
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+			}),
+			q(70931, {	-- Whispered Fragments
+				["sourceQuests"] = { 70859 },	-- What the Guardian Beholds
+				["provider"] = { "n", 196501 },	-- Alia Sunsoar
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+			}),
+			q(70946, {	-- No One May Wield It
+				["sourceQuests"] = {
+					70937,	-- What Valthrux Once Was
+					70931,	-- Whispered Fragments
+				},
+				["provider"] = { "n", 191715 },	-- To'tik
+				["coord"] = { 67.3, 44.3, THE_AZURE_SPAN },
+			}),
+			q(70970, {	-- Good Intentions
+				["sourceQuests"] = { 70946 },	-- No One May Wield It
+				["provider"] = { "n", 196520 },	-- Kattigat
+				["coord"] = { 67.3, 44.4, THE_AZURE_SPAN },
+				["g"] = {
+					-- Lost Ruins
+				},
 			}),
 
 
@@ -1002,6 +1201,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["sourceQuests"] = { 65886 },	-- To Rhonin's Shield
 				["provider"] = { "n", 189751 },	-- Drok Scrollstabber
 				["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
+			}),
+			q(71235, {	-- Field Mages
+				["sourceQuests"] = { 67299 },	-- Drakes be Gone
+				["provider"] = { "n", 189751 },	-- Drok Scrollstabber
+				["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
+				["isBreadcrumb"] = true,
 			}),
 			n(BONUS_OBJECTIVIES, {
 				q(69864, {	-- Forgotten Creation
