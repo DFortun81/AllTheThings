@@ -1267,6 +1267,7 @@ for key,value in pairs({
 	[192060] = "Yunque de Fjorn",	-- Fjorn's Anvil
 	[192072] = "Cajón de arpones",	-- Harpoon Crate
 	[192833] = "Posesiones de Bridenbrad",	-- Bridenbrad's Possessions
+	[193051] = "Huevo de la Plaga nerubiano",	-- Nerubian Scourge Egg
 	[193195] = "Cristal pulsante",	-- Pulsing Crystal
 	[193400] = "Montón de bombas de saronita",	-- Saronite Bomb Stack
 	[194032] = "Fogata de la Alianza",	-- Alliance Bonfire

@@ -1263,6 +1263,7 @@ for key,value in pairs({
 	[192060] = "피요른의 모루",	-- Fjorn's Anvil
 	[192072] = "작살 상자",	-- Harpoon Crate
 	[192833] = "브라이든브래드의 물건 상자",	-- Bridenbrad's Possessions
+	[193051] = "네루비안 스컬지 알",	-- Nerubian Scourge Egg
 	[193195] = "고동치는 수정",	-- Pulsing Crystal
 	--TODO: [193400] = "Saronite Bomb Stack",	-- Saronite Bomb Stack
 	[194032] = "얼라이언스 화톳불",	-- Alliance Bonfire

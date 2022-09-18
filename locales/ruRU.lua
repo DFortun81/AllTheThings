@@ -1252,6 +1252,7 @@ for key,value in pairs({
 	[192060] = "Наковальня Фьорна",	-- Fjorn's Anvil
 	[192072] = "Гарпунный ящик",	-- Harpoon Crate
 	[192833] = "Имущество Бриденбрада",	-- Bridenbrad's Possessions
+	[193051] = "Нерубское яйцо Плети",	-- Nerubian Scourge Egg
 	[193195] = "Пульсирующий кристалл",	-- Pulsing Crystal
 	[193400] = "Штабель саронитовых бомб",	-- Saronite Bomb Stack
 	[194032] = "Большой костер Альянса",	-- Alliance Bonfire

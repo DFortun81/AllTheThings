@@ -1263,6 +1263,7 @@ for key,value in pairs({
 	[192060] = "Bigorna de Fjorn",	-- Fjorn's Anvil
 	[192072] = "Caixote de Arpões",	-- Harpoon Crate
 	[192833] = "Posses do Brindeiro",	-- Bridenbrad's Possessions
+	[193051] = "Ovo Nerubiano do Flagelo",	-- Nerubian Scourge Egg
 	[193195] = "Cristal Pulsante",	-- Pulsing Crystal
 	[193400] = "Pilha de Bombas de Saronita",	-- Saronite Bomb Stack
 	[194032] = "Fogueira da Aliança",	-- Alliance Bonfire
