@@ -1307,7 +1307,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 48.0, 39.5, DUN_MOROGH },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
@@ -1340,7 +1340,7 @@ root("Holidays", applyholiday(BREWFEST, {
 					["coord"] = { 45.0, 17.4, DUROTAR },
 					-- #endif
 					-- #if ANYCLASSIC
-					["timeline"] = { "created 2.2.2" },	-- Not implemented in Classic, so it seems. :(
+					["timeline"] = { "created 2.2.2", "added 3.0.1" },
 					-- #else
 					["timeline"] = { "added 2.2.2" },
 					-- #endif
