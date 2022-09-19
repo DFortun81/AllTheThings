@@ -809,6 +809,15 @@ root("Zones", {
 							i(37049),	-- Lost Marksman's Rifle
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
+							i(37573, {	-- Idol of the Plainstalker
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37574, {	-- Libram of Furious Blows
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37575, {	-- Totem of the Tundra
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11703, {	-- Get to Getry
@@ -1472,6 +1481,15 @@ root("Zones", {
 							i(37049),	-- Lost Marksman's Rifle
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
+							i(37573, {	-- Idol of the Plainstalker
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37574, {	-- Libram of Furious Blows
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(37575, {	-- Totem of the Tundra
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11629, {	-- Return to the Spirit Talker

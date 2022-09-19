@@ -235,23 +235,23 @@ root("Zones", {
 						["sourceQuest"] = 12293,	-- Close the Deal
 					}),
 					q(12446, {	-- Always Seeking Solvent (A)
-						["u"] = REMOVED_FROM_GAME,
+						["qg"] = 27495,	-- Barblefink
+						["sourceQuest"] = 12443,	-- Seeking Solvent
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27495,	-- Barblefink
 						["repeatable"] = true,
-						["sourceQuest"] = 12443,	-- Seeking Solvent
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							i(37664),	-- Element 115 -- TODO: this isn't a reward. add item to a parser blacklist later
 						},
 					}),
 					q(12434, {	-- Always Seeking Solvent (H)
-						["u"] = REMOVED_FROM_GAME,
+						["qg"] = 27565,	-- Gurtor
+						["sourceQuest"] = 12433,	-- Seeking Solvent
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
-						["qg"] = 27565,	-- Gurtor
 						["repeatable"] = true,
-						["sourceQuest"] = 12433,	-- Seeking Solvent
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12295, {	-- An Exercise in Diplomacy
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
@@ -1574,24 +1574,52 @@ root("Zones", {
 							["coord"] = { 13.8, 86.4, GRIZZLY_HILLS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = pvp({
-								i(38358, {	-- Arcane Revitalizer
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38359, {	-- Goblin Repetition Reducer
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38354, {	-- Oil-Stained Tarp
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38355, {	-- Thick Goblin Back Protector
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38356, {	-- Venture Battle Wand
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38353, {	-- Venture Bay Buccaneer's Cape
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
+								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
+								moh(1, venture(70, i(38358))),	-- Arcane Revitalizer
+								moh(1, venture(70, i(38359))),	-- Goblin Repetition Reducer
+								venture(30, i(38360, {	-- Idol of Arcane Terror
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38365, {	-- Idol of Perspicacious Attacks
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38366, {	-- Idol of Pure Thoughts
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(50, i(38354))),	-- Oil-Stained Tarp
+								venture(30, i(38357, {	-- Sharpened Throwing Gizmo
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40875, {	-- Sigil of Arthritic Binding
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40822, {	-- Sigil of the Frozen Conscience
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40867, {	-- Sigil of the Wild Buck
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(50, i(38355))),	-- Thick Goblin Back Protector
+								venture(30, i(38368, {	-- Totem of the Bay
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(30, i(38356))),	-- Venture Battle Wand
+								moh(1, venture(50, i(38353))),	-- Venture Bay Buccaneer's Cape
+								venture(30, i(38367, {	-- Venture Co. Flame Slicer
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38364, {	-- Venture Co. Libram of Mostly Holy Deeds
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38363, {	-- Venture Co. Libram of Protection
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38362, {	-- Venture Co. Libram of Retribution
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38361, {	-- Venture Co. Lightning Rod
+									["timeline"] = { "removed 5.0.4" },
+								})),
 							}),
 						}),
 						n(26868, {	-- Provisioner Lorkran <General Goods>
@@ -1606,24 +1634,52 @@ root("Zones", {
 							["coord"] = { 13.8, 86.2, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
 							["groups"] = pvp({
-								i(38358, {	-- Arcane Revitalizer
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38359, {	-- Goblin Repetition Reducer
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38354, {	-- Oil-Stained Tarp
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38355, {	-- Thick Goblin Back Protector
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38356, {	-- Venture Battle Wand
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
-								i(38353, {	-- Venture Bay Buccaneer's Cape
-									["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
-								}),
+								-- TODO: For Cata, we're gonna need to add the honor costs... yuck.
+								moh(1, venture(70, i(38358))),	-- Arcane Revitalizer
+								moh(1, venture(70, i(38359))),	-- Goblin Repetition Reducer
+								venture(30, i(38360, {	-- Idol of Arcane Terror
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38365, {	-- Idol of Perspicacious Attacks
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38366, {	-- Idol of Pure Thoughts
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(50, i(38354))),	-- Oil-Stained Tarp
+								venture(30, i(38357, {	-- Sharpened Throwing Gizmo
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40875, {	-- Sigil of Arthritic Binding
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40822, {	-- Sigil of the Frozen Conscience
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(40867, {	-- Sigil of the Wild Buck
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(50, i(38355))),	-- Thick Goblin Back Protector
+								venture(30, i(38368, {	-- Totem of the Bay
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								moh(1, venture(30, i(38356))),	-- Venture Battle Wand
+								moh(1, venture(50, i(38353))),	-- Venture Bay Buccaneer's Cape
+								venture(30, i(38367, {	-- Venture Co. Flame Slicer
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38364, {	-- Venture Co. Libram of Mostly Holy Deeds
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38363, {	-- Venture Co. Libram of Protection
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38362, {	-- Venture Co. Libram of Retribution
+									["timeline"] = { "removed 5.0.4" },
+								})),
+								venture(30, i(38361, {	-- Venture Co. Lightning Rod
+									["timeline"] = { "removed 5.0.4" },
+								})),
 							}),
 						}),
 						n(91632, {	-- Remington Brode <Traveling Lumberjack>

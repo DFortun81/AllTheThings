@@ -193,6 +193,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 							-- #if AFTER 7.3.5
 							i(49784),	-- Minister's Number One Legplates (7.3.5 - Used to be only Normal Mode)
 							-- #endif
+							i(50169, {	-- Papa's Brand New Knife
+								["timeline"] = { "removed 5.0.4" },
+							}),
 							i(50316),	-- Papa's Brand New Bag
 							-- #if AFTER 7.3.5
 							i(50317),	-- Papa's New Bag (7.3.5 - Used to be only Normal Mode)

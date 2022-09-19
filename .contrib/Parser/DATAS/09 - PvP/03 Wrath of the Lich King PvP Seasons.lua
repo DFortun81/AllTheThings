@@ -4184,9 +4184,19 @@ root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(SEASON_DEADLY, {
 			n(WEAPONS, {
 				--i(42214),	-- Savage Gladiator's Waraxe	-- in NYI Sourceless
+				i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
 				i(42523),	-- Savage Gladiator's Endgame
 				i(42529),	-- Savage Gladiator's Reprieve
 				i(42535),	-- Savage Gladiator's Grimoire
+				i(42574),	-- Savage Gladiator's Idol of Resolve
+				i(42575),	-- Savage Gladiator's Idol of Steadfastness
+				i(42576),	-- Savage Gladiator's Idol of Tenacity
+				i(42611),	-- Savage Gladiator's Libram of Fortitude
+				i(42612),	-- Savage Gladiator's Libram of Justice
+				i(42618),	-- Savage Gladiator's Sigil of Strife
+				i(42593),	-- Savage Gladiator's Totem of Indomitability
+				i(42594),	-- Savage Gladiator's Totem of Survival
+				i(42595),	-- Savage Gladiator's Totem of the Third Wind
 			}),
 		}),
 	}),

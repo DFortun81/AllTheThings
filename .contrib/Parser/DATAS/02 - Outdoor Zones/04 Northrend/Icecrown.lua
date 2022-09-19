@@ -489,6 +489,9 @@ root("Zones", {
 						["groups"] = {
 							i(43880),	-- Fair Touch of the Crusader
 							i(43893),	-- Olakin's Enchanted Torch
+							i(43900, {	-- Fleshwerk Throwing Glaive
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(13320, {	-- Cannot Reproduce (A)
@@ -1357,6 +1360,9 @@ root("Zones", {
 							i(39144),	-- Twisted Hooligan Whacker
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
+							i(39138, {	-- Deadly Razordarts
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(13322, {	-- Retest Now (A) (daily)
@@ -1376,6 +1382,9 @@ root("Zones", {
 							i(39144),	-- Twisted Hooligan Whacker
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
+							i(39138, {	-- Deadly Razordarts
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(13357, {	-- Retest Now (H) (daily)

@@ -989,6 +989,9 @@ root("Zones", {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
+							i(35845, {	-- Crystalline Star
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11426, {	-- Locating the Mechanism
@@ -1236,6 +1239,9 @@ root("Zones", {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
+							i(35845, {	-- Crystalline Star
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(11292, {	-- Preying Upon the Weak

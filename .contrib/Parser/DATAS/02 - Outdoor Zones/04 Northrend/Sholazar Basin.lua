@@ -631,6 +631,9 @@ root("Zones", {
 							i(39488),	-- Nesingwary Brush Burner
 							i(39478),	-- Cloak of the Deadliest Game
 							i(40353),	-- Polished Protodrake Cloak
+							i(39490, {	-- Dorian's Prybar
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12613, {	-- Powering the Waygate - The Makers' Overlook
@@ -1052,6 +1055,9 @@ root("Zones", {
 							i(44116),	-- Muddied Crimson Gloves
 							i(44122),	-- Scavenged Feathery Leggings
 							i(44121),	-- Sparkly Shiny Gloves
+							i(44118, {	-- Stolen Vrykul Harpoon
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 				}),

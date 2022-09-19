@@ -759,6 +759,35 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
+				q(14111, {	-- Relic of the Earthen Ring
+					["qgs"] = {
+						35073,	-- Farseer Eannu <The Earthen Ring>
+						23127,	-- Farseer Javad <Shaman Trainer>
+						20407,	-- Farseer Umbrua <Shaman Trainer>
+						17219,	-- Sulaa <Shaman Trainer>
+					},
+					["coords"] = {
+						{ 55.6, 29.2, IRONFORGE },
+						{ 55.2, 29.5, IRONFORGE },
+						{ 67.6, 89.6, STORMWIND_CITY },
+						{ 32.3, 23.9, THE_EXODAR },
+					},
+					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+					["cost"] = {
+						{ "i", 5178, 1 },	-- Air Totem
+						{ "i", 5175, 1 },	-- Earth Totem
+						{ "i", 5176, 1 },	-- Fire Totem
+						{ "i", 5177, 1 },	-- Water Totem
+					},
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(46978, {	-- Totem of the Earthen Ring
+							["timeline"] = { "added 3.3.0.10772", "removed 4.0.3" },
+						}),
+					},
+				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
 					["providers"] = {
 						{ "n", 1573 },	-- Gryth Thurden

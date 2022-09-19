@@ -51,13 +51,29 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["coord"] = { 56.2, 80.1, THE_SCARLET_ENCLAVE },
 							}),
 							q(12755, {	-- A Meeting With Fate
-								["qg"] = 28914,	-- Orbaz Bloodbane
+								["providers"] = {
+									{ "n", 28914 },	-- Orbaz Bloodbane
+									{ "i", 39647 },	-- Scarlet Courier's Message
+								},
 								["sourceQuest"] = 12754,	-- Ambush at the Overlook
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 							}),
 							q(12751, {	-- A Sort of Homecoming
 								["qg"] = 29053,	-- Knight Commander Plaguefist
-								["sourceQuest"] = 28650,	-- A Special Surprise
+								["sourceQuests"] = {
+									12739,	-- A Special Surprise
+									12742,	-- A Special Surprise
+									12743,	-- A Special Surprise
+									12744,	-- A Special Surprise
+									12745,	-- A Special Surprise
+									12746,	-- A Special Surprise
+									12747,	-- A Special Surprise
+									12748,	-- A Special Surprise
+									12749,	-- A Special Surprise
+									12750,	-- A Special Surprise
+									28649,	-- A Special Surprise
+									28650,	-- A Special Surprise
+								},
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38675),	-- Signet of the Dark Brotherhood
@@ -68,81 +84,173 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { TAUREN },
+								["groups"] = {
+									objective(1, {	-- 0/1 Malar Bravehorn slain
+										["provider"] = { "n", 29032 },	-- Malar Bravehorn
+										["coord"] = { 54.4, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12742, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { HUMAN },
+								["groups"] = {
+									objective(1, {	-- 0/1 Ellen Stanbridge slain
+										["provider"] = { "n", 29061 },	-- Ellen Stanbridge
+										["coord"] = { 53.6, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12743, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
-								["races"] = { NIGHTELF, DRAENEI },
+								["races"] = { NIGHTELF },
+								["groups"] = {
+									objective(1, {	-- 0/1 Yazmina Oakenthorn slain
+										["provider"] = { "n", 29065 },	-- Yazmina Oakenthorn
+										["coord"] = { 54.2, 83.8, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12744, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { DWARF },
+								["groups"] = {
+									objective(1, {	-- 0/1 Donovan Pulfrost slain
+										["provider"] = { "n", 29067 },	-- Donovan Pulfrost
+										["coord"] = { 54.0, 83.4, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12745, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { GNOME },
+								["groups"] = {
+									objective(1, {	-- 0/1 Goby Blastenheimer slain
+										["provider"] = { "n", 29068 },	-- Goby Blastenheimer
+										["coord"] = { 54.0, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12746, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { DRAENEI },
+								["groups"] = {
+									objective(1, {	-- 0/1 Valok the Righteous slain
+										["provider"] = { "n", 29070 },	-- Valok the Righteous
+										["coord"] = { 54.4, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12747, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { BLOODELF },
+								["groups"] = {
+									objective(1, {	-- 0/1 Lady Eonys slain
+										["provider"] = { "n", 29074 },	-- Lady Eonys
+										["coord"] = { 54.2, 83.4, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12748, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { ORC, MAGHAR },
+								["groups"] = {
+									objective(1, {	-- 0/1 Kug Ironjaw slain
+										["provider"] = { "n", 29072 },	-- Kug Ironjaw
+										["coord"] = { 53.8, 83.4, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12749, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { TROLL },
+								["groups"] = {
+									objective(1, {	-- 0/1 Iggy Darktusk slain
+										["provider"] = { "n", 29073 },	-- Iggy Darktusk
+										["coord"] = { 53.8, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12750, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { UNDEAD },
+								["groups"] = {
+									objective(1, {	-- 0/1 Antoine Brack slain
+										["provider"] = { "n", 29071 },	-- Antoine Brack
+										["coord"] = { 53.6, 83.4, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(28649, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
+								["timeline"] = { "added 4.0.3.13277" },
 								["races"] = { WORGEN },
+								["groups"] = {
+									objective(1, {	-- 0/1 Lord Harford slain
+										["provider"] = { "n", 49355 },	-- Lord Harford
+										["coord"] = { 54.2, 83.6, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(28650, {	-- A Special Surprise
 								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
+								["timeline"] = { "added 4.0.3.13277" },
 								["races"] = { GOBLIN },
+								["groups"] = {
+									objective(1, {	-- 0/1 Gally Lumpstain slain
+										["provider"] = { "n", 49356 },	-- Gally Lumpstain
+										["coord"] = { 54.2, 83.4, THE_SCARLET_ENCLAVE },
+									}),
+								},
 							}),
 							q(12711, {	-- Abandoned Mail
 								["provider"] = { "o", 190917 },	-- Abandoned Mail
 								["coord"] = { 55.2, 46.2, THE_SCARLET_ENCLAVE },
+								["groups"] = {
+									i(39317, {	-- News From The North
+										["description"] = "This explain the movement of Naxxramas from Eastern Plaguelands.",
+									}),
+								},
 							}),
 							q(12754, {	-- Ambush at the Overlook
 								["qg"] = 28914,	-- Orbaz Bloodbane
 								["sourceQuest"] = 12751,	-- A Sort of Homecoming
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
+								["groups"] = {
+									objective(1, {	-- 0/1 Scarlet Courier's Belongings
+										["provider"] = { "i", 39646 },	-- Scarlet Courier's Belongings
+										["cost"] = { { "i", 39645, 1 } },	-- Makeshift Cover
+										["coord"] = { 60.0, 76.0, THE_SCARLET_ENCLAVE },
+										["cr"] = 29076,	-- Scarlet Courier
+									}),
+									objective(2, {	-- 0/1 Scarlet Courier's Message
+										["provider"] = { "i", 39647 },	-- Scarlet Courier's Message
+										["coord"] = { 60.0, 76.0, THE_SCARLET_ENCLAVE },
+										["cr"] = 29076,	-- Scarlet Courier
+									}),
+								},
 							}),
 							q(12700, {	-- An Attack of Opportunity
 								["qg"] = 28658,	-- Gothik the Harvester
@@ -154,6 +262,14 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 12778,	-- The Scarlet Apocalypse
 								["coord"] = { 53.5, 36.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- 0/150 Scarlet Soldier Proxy slain
+										["provider"] = { "n", 29150 },	-- Scarlet Soldier Proxy
+										["cost"] = { { "i", 39700, 1 } },	-- Horn of the Frostbrood
+									}),
+									objective(2, {	-- 0/10 Scarlet Ballista slain
+										["provider"] = { "n", 29104 },	-- Scarlet Ballista
+										["cost"] = { { "i", 39700, 1 } },	-- Horn of the Frostbrood
+									}),
 									i(38661),	-- Greathelm of the Scourge Champion
 								},
 							}),
@@ -167,6 +283,11 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 12725,	-- Brothers in Death
 								["coord"] = { 62.8, 68.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- 0/1 Valroth's Head
+										["provider"] = { "i", 39510 },	-- Valroth's Head
+										["coord"] = { 63.1, 68.5, THE_SCARLET_ENCLAVE },
+										["cr"] = 29001,	-- High Inquisitor Valroth
+									}),
 									i(38665),	-- Saronite War Plate
 								},
 							}),
@@ -179,12 +300,29 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["qg"] = 25462,	-- The Lich King
 								["sourceQuest"] = 12636,	-- The Eye of Acherus
 								["coord"] = { 51.3, 35.2, THE_SCARLET_ENCLAVE },
+								["groups"] = {
+									objective(1, {	-- 0/1 New Avalon Town Hall Analyzed
+										["provider"] = { "n", 28543 },	-- New Avalon Town Hall
+									}),
+									objective(2, {	-- 0/1 Scarlet Hold Analyzed
+										["provider"] = { "n", 28542 },	-- Scarlet Hold
+									}),
+									objective(3, {	-- 0/1 Chapel of the Crimson Flame Analyzed
+										["provider"] = { "n", 28544 },	-- Chapel of the Crimson Flame
+									}),
+									objective(4, {	-- 0/1 New Avalon Forge Analyzed
+										["provider"] = { "n", 28525 },	-- New Avalon Forge
+									}),
+								},
 							}),
 							q(12733, {	-- Death's Challenge
 								["qg"] = 29047,	-- Olrun the Battlecaller
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
 								["coord"] = { 54.4, 34.1, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- 0/5 Death Knights defeated in a duel
+										["provider"] = { "n", 28406 },	-- Death Knight Initiate
+									}),
 									i(40483),	-- Insignia of the Scourge
 								},
 							}),
@@ -197,12 +335,24 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["qg"] = 28653,	-- Salanar the Horseman
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
 								["coord"] = { 52.4, 34.5, THE_SCARLET_ENCLAVE },
+								["groups"] = {
+									objective(1, {	-- Horse Successfully Stolen
+										["provider"] = { "n", 28605 },	-- Havenshire Stallion
+									}),
+								},
 							}),
 							q(12720, {	-- How to Win Friends and Influence Enemies
 								["qg"] = 28911,	-- Prince Keleseth
 								["sourceQuest"] = 12719,	-- Nowhere to Run and Nowhere to Hide
 								["coord"] = { 54.3, 57.3, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- 	"Crimson Dawn" Revealed
+										["provider"] = { "n", 28939 },	-- Scarlet Preacher
+										["cost"] = { { "i", 39371, 2 } },	-- Keleseth's Persuader
+									}),
+									i(39418, {	-- Ornately Jeweled Box
+										i(39371),	-- Keleseth's Persuader
+									}),
 									i(38672),	-- Keleseth's Signet Ring
 								},
 							}),
@@ -211,6 +361,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- 0/10 Scarlet Crusader slain
+										["provider"] = { "n", 28940 },	-- Scarlet Crusader
+									}),
+									objective(2, {	-- 0/10 Citizen of Havenshire slain
+										["providers"] = {
+											{ "n", 28576 },	-- Citizen of Havenshire
+											{ "n", 28577 },	-- Citizen of Havenshire
+										},
+									}),
 									i(38671),	-- Valanar's Signet Ring
 								},
 							}),
@@ -218,13 +377,19 @@ root("Zones", m(EASTERN_KINGDOMS, {
 								["qg"] = 25462,	-- The Lich King
 								["coord"] = { 51.3, 35.1, THE_SCARLET_ENCLAVE },
 							}),
-							q(12687, {	-- Into the Realm of Shadows (grants mount Acherus Deathcharger, spellID 48778)
+							q(12687, {	-- Into the Realm of Shadows
 								["qg"] = 28653,	-- Salanar the Horseman
 								["sourceQuest"] = 12680,	-- Grand Theft Palomino
 								["coord"] = { 52.2, 34.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
+									objective(1, {	-- The Horseman's Challenge
+										["provider"] = { "n", 28768 },	-- Dark Rider of Acherus
+									}),
 									mount(48778, {	-- Acherus Deathcharger (MOUNT!)
 										["classes"] = { DEATHKNIGHT },
+									}),
+									i(39208, {	-- Sigil of the Dark Rider
+										["timeline"] = { "removed 5.0.4" },
 									}),
 								},
 							}),

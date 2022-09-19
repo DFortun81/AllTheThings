@@ -1021,31 +1021,31 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.3, 18.3, ALTERAC_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						mark(15, i(19030)),	-- Stormpike Battle Charger (MOUNT!)
-						mark(10, i(19032)),	-- Stormpike Battle Tabard
-						mark(1, i(19045)),	-- Stormpike Battle Standard
-						mark(3, i(19102)),	-- Crackling Staff
-						mark(3, i(19100)),	-- Electrified Dagger
-						mark(2, i(19312)),	-- Lei of the Lifegiver
-						mark(3, i(19104)),	-- Stormstrike Hammer
-						mark(3, i(19321)),	-- The Immovable Object
-						mark(3, i(19324)),	-- The Lobotomizer
-						mark(3, i(19323)),	-- The Unstoppable Force
-						mark(2, i(19315)),	-- Therazane's Torch
-						mark(2, i(19308)),	-- Tome of Arcane Domination
-						mark(2, i(19311)),	-- Tome of Fiery Arcana
-						mark(2, i(19309)),	-- Tome of Shadow Force
-						mark(2, i(19310)),	-- Tome of the Ice Lord
-						mark(1, i(19098)),	-- Stormpike Sage's Pendant
-						mark(1, i(19097)),	-- Stormpike Soldier's Pendant
-						mark(1, i(19086)),	-- Stormpike Sage's Cloak
-						mark(1, i(19084)),	-- Stormpike Soldier's Cloak
-						mark(1, i(19094)),	-- Stormpike Cloth Girdle
-						mark(1, i(19093)),	-- Stormpike Leather Girdle
-						mark(1, i(19092)),	-- Stormpike Mail Girgle
-						mark(1, i(19091)),	-- Stormpike Plate Girdle
-						mark(1, i(19325)),	-- Don Julio's Band
-						applyclassicphase(PHASE_FIVE, mark(1, i(21563))),	-- Don Rodrigo's Band
+						moh(15, i(19030)),	-- Stormpike Battle Charger (MOUNT!)
+						moh(10, i(19032)),	-- Stormpike Battle Tabard
+						moh(1, i(19045)),	-- Stormpike Battle Standard
+						moh(3, i(19102)),	-- Crackling Staff
+						moh(3, i(19100)),	-- Electrified Dagger
+						moh(2, i(19312)),	-- Lei of the Lifegiver
+						moh(3, i(19104)),	-- Stormstrike Hammer
+						moh(3, i(19321)),	-- The Immovable Object
+						moh(3, i(19324)),	-- The Lobotomizer
+						moh(3, i(19323)),	-- The Unstoppable Force
+						moh(2, i(19315)),	-- Therazane's Torch
+						moh(2, i(19308)),	-- Tome of Arcane Domination
+						moh(2, i(19311)),	-- Tome of Fiery Arcana
+						moh(2, i(19309)),	-- Tome of Shadow Force
+						moh(2, i(19310)),	-- Tome of the Ice Lord
+						moh(1, i(19098)),	-- Stormpike Sage's Pendant
+						moh(1, i(19097)),	-- Stormpike Soldier's Pendant
+						moh(1, i(19086)),	-- Stormpike Sage's Cloak
+						moh(1, i(19084)),	-- Stormpike Soldier's Cloak
+						moh(1, i(19094)),	-- Stormpike Cloth Girdle
+						moh(1, i(19093)),	-- Stormpike Leather Girdle
+						moh(1, i(19092)),	-- Stormpike Mail Girgle
+						moh(1, i(19091)),	-- Stormpike Plate Girdle
+						moh(1, i(19325)),	-- Don Julio's Band
+						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
 							["timeline"] = { "removed 4.0.1" },
 						}),
@@ -1071,31 +1071,31 @@ root("PVP", pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 49.3, 82.5, ALTERAC_VALLEY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						mark(15, i(19029)),	-- Frostwolf Howler (MOUNT!)
-						mark(10, i(19031)),	-- Frostwolf Battle Tabard
-						mark(1, i(19046)),	-- Frostwolf Battle Standard
-						mark(3, i(19103)),	-- Frostbite
-						mark(3, i(19099)),	-- Glacial Blade
-						mark(2, i(19312)),	-- Lei of the Lifegiver
-						mark(3, i(19321)),	-- The Immovable Object
-						mark(3, i(19324)),	-- The Lobotomizer
-						mark(3, i(19323)),	-- The Unstoppable Force
-						mark(2, i(19315)),	-- Therazane's Torch
-						mark(2, i(19308)),	-- Tome of Arcane Domination
-						mark(2, i(19311)),	-- Tome of Fiery Arcana
-						mark(2, i(19309)),	-- Tome of Shadow Force
-						mark(2, i(19310)),	-- Tome of the Ice Lord
-						mark(3, i(19101)),	-- Whiteout Staff
-						mark(1, i(19096)),	-- Frostwolf Advisor's Pendant
-						mark(1, i(19095)),	-- Frostwolf Legionnaire's Pendant
-						mark(1, i(19085)),	-- Frostwolf Advisor's Cloak
-						mark(1, i(19083)),	-- Frostwolf Legionnaire's Cloak
-						mark(1, i(19090)),	-- Frostwolf Cloth Belt
-						mark(1, i(19089)),	-- Frostwolf Leather Belt
-						mark(1, i(19088)),	-- Frostwolf Mail Belt
-						mark(1, i(19087)),	-- Frostwolf Plate Belt
-						mark(1, i(19325)),	-- Don Julio's Band
-						applyclassicphase(PHASE_FIVE, mark(1, i(21563))),	-- Don Rodrigo's Band
+						moh(15, i(19029)),	-- Frostwolf Howler (MOUNT!)
+						moh(10, i(19031)),	-- Frostwolf Battle Tabard
+						moh(1, i(19046)),	-- Frostwolf Battle Standard
+						moh(3, i(19103)),	-- Frostbite
+						moh(3, i(19099)),	-- Glacial Blade
+						moh(2, i(19312)),	-- Lei of the Lifegiver
+						moh(3, i(19321)),	-- The Immovable Object
+						moh(3, i(19324)),	-- The Lobotomizer
+						moh(3, i(19323)),	-- The Unstoppable Force
+						moh(2, i(19315)),	-- Therazane's Torch
+						moh(2, i(19308)),	-- Tome of Arcane Domination
+						moh(2, i(19311)),	-- Tome of Fiery Arcana
+						moh(2, i(19309)),	-- Tome of Shadow Force
+						moh(2, i(19310)),	-- Tome of the Ice Lord
+						moh(3, i(19101)),	-- Whiteout Staff
+						moh(1, i(19096)),	-- Frostwolf Advisor's Pendant
+						moh(1, i(19095)),	-- Frostwolf Legionnaire's Pendant
+						moh(1, i(19085)),	-- Frostwolf Advisor's Cloak
+						moh(1, i(19083)),	-- Frostwolf Legionnaire's Cloak
+						moh(1, i(19090)),	-- Frostwolf Cloth Belt
+						moh(1, i(19089)),	-- Frostwolf Leather Belt
+						moh(1, i(19088)),	-- Frostwolf Mail Belt
+						moh(1, i(19087)),	-- Frostwolf Plate Belt
+						moh(1, i(19325)),	-- Don Julio's Band
+						applyclassicphase(PHASE_FIVE, moh(1, i(21563))),	-- Don Rodrigo's Band
 						i(19320, {	-- Gnoll Skin Bandolier
 							["timeline"] = { "removed 4.0.1" },
 						}),

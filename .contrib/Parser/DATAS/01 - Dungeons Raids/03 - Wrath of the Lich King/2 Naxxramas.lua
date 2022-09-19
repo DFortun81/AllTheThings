@@ -696,6 +696,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(39757, {	-- Idol of Worship
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(39728, {	-- Totem of Misery
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1603, {	-- Maexxna
@@ -772,6 +778,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40190, {	-- Spinning Fate
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40191, {	-- Libram of Radiance
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1605, {	-- Heigan the Unclean
@@ -808,6 +820,9 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40255),	-- Dying Curse
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
+								i(40207, {	-- Sigil of Awareness
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1606, {	-- Loatheb
@@ -880,6 +895,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40321, {	-- Idol of the Shooting Star
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40322, {	-- Totem of Dueling
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1608, {	-- Gothik the Harvester
@@ -914,6 +935,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40255),	-- Dying Curse
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
+								i(40342, {	-- Idol of Awakening
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40337, {	-- Libram of Resurgence
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1609, {	-- The Four Horsemen
@@ -990,6 +1017,12 @@ root("Instances", tier(WOTLK_TIER, {
 								i(40107),	-- Sand-Worn Band
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
+								i(40268, {	-- Libram of Tolerance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40267, {	-- Totem of Hex
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1611, {	-- Grobbulus
@@ -1199,6 +1232,24 @@ root("Instances", tier(WOTLK_TIER, {
 								i(39706),	-- Sabatons of Sudden Reprisal
 								i(40236),	-- Serene Echoes
 								i(40325),	-- Bindings of the Expansive Mind
+								i(40191, {	-- Libram of Radiance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40337, {	-- Libram of Resurgence
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40268, {	-- Libram of Tolerance
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40321, {	-- Idol of the Shooting Star
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(39757, {	-- Idol of Worship
+									["timeline"] = { "removed 5.0.4" },
+								}),
+								i(40322, {	-- Totem of Dueling
+									["timeline"] = { "removed 5.0.4" },
+								}),
 							},
 						}),
 						e(1613, {	-- Thaddius

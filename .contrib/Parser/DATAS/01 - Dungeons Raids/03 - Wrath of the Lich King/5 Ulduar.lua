@@ -395,6 +395,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(46346),	-- Boots of Unsettled Prey
 					i(45542),	-- Greaves of the Stonewarder
 					i(45540),	-- Bladebearer's Signet
+					i(46138, {	-- Idol of the Flourishing Life
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
@@ -595,6 +598,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45134),	-- Plated Leggings of Ruination
 						i(45135),	-- Boots of Fiery Resolution
 						i(45297),	-- Shimmering Seal
+						i(45296, {	-- Twirling Blades (10 Man, ilvl 232)
+							["timeline"] = { "removed 5.0.4" },
+						}),
 					}),
 					ach(12319),	-- Nuked from Orbit
 					ach(12318),	-- Orbital Devastation
@@ -630,6 +636,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45112),	-- The Leviathan's Coil
 					i(45292),	-- Energy Siphon
 					i(45286),	-- Pyrite Infuser
+					i(45086, {	-- Rising Sun (25 Man)
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45114, {	-- Steamcaller's Totem
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
 					ach(12324),	-- Hot Pocket
@@ -662,6 +674,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45168),	-- Pyrelight Circle
 					i(45313),	-- Furnace Stone
 					i(45158),	-- Heart of Iron
+					i(45169, {	-- Totem of the Dancing Flame
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33186, e(1639, {	-- Razorscale
 					ach(12321),	-- A Quick Shave
@@ -692,6 +707,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45303),	-- Band of Draconic Guile
 					i(45308),	-- Eye of the Broodmother
 					i(45148),	-- Living Flame
+					i(45510, {	-- Libram of Discord
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45144, {	-- Sigil of Deflection
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
 					ach(12330, {	-- Heartbreaker
@@ -733,6 +754,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45250),	-- Crazed Construct Ring
 					i(45675),	-- Power Enhancing Loop
 					i(45247),	-- Signet of the Earthshaker
+					i(45254, {	-- Sigil of the Vengeful Heart
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45255, {	-- Thunderfall Totem
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(32871, e(1650, {	-- Algalon the Observer
 					ach(12399, {	-- Observed
@@ -892,6 +919,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45702),	-- Emerald Signet Ring
 					i(45703),	-- Spark of Hope
 					i(45263),	-- Wrathstone
+					i(45270, {	-- Idol of the Crying Wind
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33515, e(1643, {	-- Auriaya
 					ach(12341),	-- Crazy Cat Lady
@@ -923,6 +953,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45326),	-- Platinum Band of the Aesir
 					i(45438),	-- Ring of the Faithful Servant
 					i(45866),	-- Elemental Focus Stone
+					i(45436, {	-- Libram of the Resolute
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(32845, e(1644, {	-- Hodir
 					ach(12343),	-- Cheese the Freeze
@@ -1153,6 +1186,12 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					i(45503),	-- Metallic Loop of the Sufferer
 					i(45515),	-- Ring of the Vacant Eye
 					i(45507),	-- The General's Heart
+					i(45509, {	-- Idol of the Corruptor
+						["timeline"] = { "removed 5.0.4" },
+					}),
+					i(45145, {	-- Libram of the Sacred Shield
+						["timeline"] = { "removed 5.0.4" },
+					}),
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron
 					ach(12388, {	-- Alone in the Darkness

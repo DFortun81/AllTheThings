@@ -203,6 +203,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					-- #if BEFORE 7.3.5
 					n(ZONE_DROPS, {
 						i(37590),	-- Bands of Fading Light
+						i(37410, {	-- Tracker's Balanced Knives
+							["timeline"] = { "removed 5.0.4" },
+						}),
 						i(37587),	-- Ymirjar Physician's Robe
 					}),
 					-- #endif

@@ -1337,6 +1337,9 @@ root("Zones", {
 								i(45839),	-- Grips of the Secret Grove
 								i(40694),	-- Jorach's Crocolisk Skin Belt
 								i(45846),	-- Leggings of Wavering Shadow
+								emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+									["timeline"] = { "removed 5.0.4" },
+								})),
 								i(40704),	-- Pride
 								i(40749),	-- Rainey's Chewed Boots
 								i(40702),	-- Rolfsen's Ripper
@@ -4192,7 +4195,7 @@ root("Zones", {
 									i(45842),	-- Wyrmguard Legplates
 								},
 							}),
-							n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster>
+							n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster> [CATA+] / Arcanist Ivrenne <Emblem of Heroism Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["coord"] = { 36.9, 55.0, NORTHREND_DALARAN },
 								["groups"] = {
@@ -4210,8 +4213,29 @@ root("Zones", {
 									i(40615),	-- Gloves of the Lost Vanquisher
 									i(40703),	-- Grasscutter
 									i(40699),	-- Handbook of Obscure Remedies
+									i(40711, {	-- Idol of Lush Moss
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40712, {	-- Idol of Steadfast Renewal
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40713, {	-- Idol of the Ravenous Beast
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40694),	-- Jorach's Crocolisk Skin Belt
 									i(40681),	-- Lattice Choker of Light
+									i(40707, {	-- Libram of Obstruction
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40706, {	-- Libram of Reciprocation
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40705, {	-- Libram of Renewal
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+										["timeline"] = { "removed 5.0.4" },
+									})),
 									i(40691),	-- Magroth's Meditative Cincture
 									i(40684),	-- Mirror of Truth
 									i(40678),	-- Pendant of the Outcast Hero
@@ -4299,8 +4323,23 @@ root("Zones", {
 									i(41301),	-- Savage Gladiator's Wyrmhide Legguards
 									i(41313),	-- Savage Gladiator's Wyrmhide Robes
 									i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
+									i(40715, {	-- Sigil of Haunted Dreams
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40714, {	-- Sigil of the Unfaltering Knight
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40682),	-- Sundial of the Exiled
 									i(40685),	-- The Egg of Mortal Essence
+									i(40709, {	-- Totem of Forest Growth
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40710, {	-- Totem of Splintering
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40708, {	-- Totem of the Elemental Plane
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40683),	-- Valor Medal of the First War
 									i(40688),	-- Verdungo's Barbarian Cord
 									i(40692),	-- Vereesa's Silver Chain Belt
@@ -5143,8 +5182,29 @@ root("Zones", {
 									i(40615),	-- Gloves of the Lost Vanquisher
 									i(40703),	-- Grasscutter
 									i(40699),	-- Handbook of Obscure Remedies
+									i(40711, {	-- Idol of Lush Moss
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40712, {	-- Idol of Steadfast Renewal
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40713, {	-- Idol of the Ravenous Beast
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40694),	-- Jorach's Crocolisk Skin Belt
 									i(40681),	-- Lattice Choker of Light
+									i(40707, {	-- Libram of Obstruction
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40706, {	-- Libram of Reciprocation
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40705, {	-- Libram of Renewal
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+										["timeline"] = { "removed 5.0.4" },
+									})),
 									i(40691),	-- Magroth's Meditative Cincture
 									i(40684),	-- Mirror of Truth
 									i(40678),	-- Pendant of the Outcast Hero
@@ -5232,8 +5292,23 @@ root("Zones", {
 									i(41301),	-- Savage Gladiator's Wyrmhide Legguards
 									i(41313),	-- Savage Gladiator's Wyrmhide Robes
 									i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
+									i(40715, {	-- Sigil of Haunted Dreams
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40714, {	-- Sigil of the Unfaltering Knight
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40682),	-- Sundial of the Exiled
 									i(40685),	-- The Egg of Mortal Essence
+									i(40709, {	-- Totem of Forest Growth
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40710, {	-- Totem of Splintering
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(40708, {	-- Totem of the Elemental Plane
+										["timeline"] = { "removed 5.0.4" },
+									}),
 									i(40683),	-- Valor Medal of the First War
 									i(40688),	-- Verdungo's Barbarian Cord
 									i(40692),	-- Vereesa's Silver Chain Belt
@@ -6050,6 +6125,9 @@ root("Zones", {
 						["groups"] = {
 							i(40704),	-- Pride
 							i(40702),	-- Rolfsen's Ripper
+							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+								["timeline"] = { "removed 5.0.4" },
+							})),
 						},
 					}),
 					n(32515,  {	-- Braeg Stoutbeard
@@ -7861,6 +7939,48 @@ root("Zones", {
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
 					}),
+					-- #if BEFORE MOP
+					n(29493, {	-- Jarold Puller <Specialty Ammunition>
+						["coord"] = { 60.0, 51.8, NORTHREND_DALARAN },
+						["groups"] = {
+							emot(25, i(47660, {	-- Blades of the Sable Cross
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							emot(25, i(47659, {	-- Crimson Star
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							i(32883, {	-- Felbane Slugs
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(32882, {	-- Hellfire Shot
+								["timeline"] = { "removed 4.0.1.10000" },
+								["races"] = HORDE_ONLY,
+							}),
+							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							emof(30, i(50474, {	-- Shrapnel Star
+								["timeline"] = { "removed 5.0.4" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
+								["timeline"] = { "removed 4.0.1.20000" },
+							})),
+							i(31949, {	-- Warden's Arrow
+								["timeline"] = { "removed 4.0.1" },
+							}),
+						},
+					}),
+					-- #endif
 					n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
 						["sym"] = {
@@ -8292,6 +8412,43 @@ root("Zones", {
 								["cost"] = 100000000,	-- 10,000g
 							}),
 						},
+					}),
+					n(29529, {	-- Ninsianna <Relics>
+						["description"] = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
+						["groups"] = bubbleDown({ ["timeline"] = { "removed 5.0.4" } }, {
+							emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
+							emov(25, i(40342)),	-- Idol of Awakening
+							emot(25, i(47671)),	-- Idol of Flaring Growth
+							emot(25, i(47670)),	-- Idol of Lunar Fury
+							emot(25, i(47668)),	-- Idol of Mutilation
+							emof(30, i(50454)),	-- Idol of the Black Willow
+							emof(30, i(50456)),	-- Idol of the Crying Moon
+							emof(30, i(50457)),	-- Idol of the Lunar Eclipse
+							emov(25, i(40321)),	-- Idol of the Shooting Star
+							emov(25, i(39757)),	-- Idol of Worship
+							emof(30, i(50460)),	-- Libram of Blinding Light
+							emot(25, i(47664)),	-- Libram of Defiance
+							emov(25, i(40191)),	-- Libram of Radiance
+							emov(25, i(40337)),	-- Libram of Resurgence
+							emof(30, i(50461)),	-- Libram of the Eternal Tower
+							emof(30, i(50455)),	-- Libram of Three Truths
+							emov(25, i(40268)),	-- Libram of Tolerance
+							emot(25, i(47661)),	-- Libram of Valiance
+							emot(25, i(47662)),	-- Libram of Veracity
+							emov(25, i(40207)),	-- Sigil of Awareness
+							emot(25, i(47672)),	-- Sigil of Insolence
+							emof(30, i(50462)),	-- Sigil of the Bone Gryphon
+							emof(30, i(50459)),	-- Sigil of the Hanged Man
+							emot(25, i(47673)),	-- Sigil of Virulence
+							emot(25, i(47665)),	-- Totem of Calming Tides
+							emov(25, i(40322)),	-- Totem of Dueling
+							emot(25, i(47666)),	-- Totem of Electrifying Wind
+							emov(25, i(40267)),	-- Totem of Hex
+							emov(25, i(39728)),	-- Totem of Misery
+							emot(25, i(47667)),	-- Totem of Quaking Earth
+							emof(30, i(50463)),	-- Totem of the Avalanche
+							emof(30, i(50464)),	-- Totem of the Surging Sea
+						}),
 					}),
 					n(29495,  {	-- Norvin Alderman <Cloaks>
 						["coord"] = { 44.7, 48.9, NORTHREND_DALARAN },

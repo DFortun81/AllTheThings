@@ -898,6 +898,9 @@ root("Zones", {
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38176),	-- Stronghold Battlemace
 							i(38134),	-- Bloodtinged Spellblade
+							i(38295, {	-- Idol of the Wastes
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12470, {	-- Mystery of the Infinite
@@ -1622,6 +1625,9 @@ root("Zones", {
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38176),	-- Stronghold Battlemace
 							i(38134),	-- Bloodtinged Spellblade
+							i(38295, {	-- Idol of the Wastes
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12188, {	-- The Forsaken Blight and You: How Not to Die

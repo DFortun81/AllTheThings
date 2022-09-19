@@ -157,6 +157,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(37818),	-- Patroller's War-Kilt (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(36979),	-- Bjarngrim Family Signet
+						i(36981, {	-- Hardened Vrykul Throwing Axe
+							["timeline"] = { "removed 5.0.4" },
+						}),
 					},
 				}),
 				e(598, {	-- Volkhan

@@ -2690,6 +2690,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(50858),	-- Plague-Soaked Leather Leggings
 							i(50812),	-- Taldron's Long Neglected Boots
 							i(50986),	-- Signet of Putrefaction
+							i(50999, {	-- Gluth's Fetching Knife
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					e(1630, {	-- Rotface
@@ -3045,6 +3048,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDow
 							i(51879),	-- Flesh-Shaper's Gurney Strap
 							i(51873),	-- Shuffling Shoes
 							i(51878),	-- Rotface's Rupturing Ring
+							i(51880, {	-- Gluth's Fetching Knife
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					e(1631, {	-- Professor Putricide

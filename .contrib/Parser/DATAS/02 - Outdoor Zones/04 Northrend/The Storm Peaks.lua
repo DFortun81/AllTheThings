@@ -477,6 +477,12 @@ root("Zones", {
 						["groups"] = {
 							i(43186),	-- Iceshrieker's Touch
 							i(43185),	-- Wand of Chilled Renewal
+							i(43188, {	-- Razor-sharp Ice Shards
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(43187, {	-- Weighted Throwing Axe
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12818, {	-- Clean Up
@@ -932,6 +938,12 @@ root("Zones", {
 						["groups"] = {
 							i(43185),	-- Wand of Chilled Renewal
 							i(43186),	-- Iceshrieker's Touch
+							i(43188, {	-- Razor-sharp Ice Shards
+								["timeline"] = { "removed 5.0.4" },
+							}),
+							i(43187, {	-- Weighted Throwing Axe
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(12957, {	-- Slaves of the Stormforged
@@ -1060,6 +1072,9 @@ root("Zones", {
 							i(42865),	-- Frost Hardened Bracers
 							i(42887),	-- Pauldrons of the Ascent
 							i(42876),	-- Light-Touched Mantle
+							i(42863, {	-- Sharpened Hyldnir Harpoon
+								["timeline"] = { "removed 5.0.4" },
+							}),
 						},
 					}),
 					q(13005, {	-- The Earthen Oath
