@@ -227,7 +227,7 @@ def create_raw_file(thing: Things) -> None:
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
     with open(csv_path) as csv_file:
-        return [line.split(",")[n] + "\n" for line in csv_file]
+        return [line.split(",")[n].strip() + "\n" for line in csv_file]
 
 
 def remove_empty_builds(lines: list[str]) -> list[str]:
@@ -344,7 +344,10 @@ def append_flightpoint_id(flight_points: list[str], fp_line: str) -> None:
 
 
 def append_illusion_id(illusions: list[str], illusion_line: str) -> None:
-    illusion_str, illusion_id = illusion_line.split("=")
+    try:
+        illusion_str, illusion_id = illusion_line.split("=")
+    except ValueError:
+        illusion_str = illusion_line
     if '["illusionID"]' in illusion_str:
         illusion_id = re.sub("\\D", "", illusion_id)
         illusions.append(illusion_id + "\n")
