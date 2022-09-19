@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =
+_.PVP =	-- ToDo: S1 Elite, S2 Leather+Plate Elite, S3 Cloth+Plate Elite
 {
 	pvp(tier(BFA_TIER, {
 		n(SEASON_DREAD, {
@@ -845,50 +845,22 @@ _.PVP =
 					}),
 				}),
 				filter(CLOTH, {
-					i(164897),	-- Sinister Gladiator's Silk Amice (A)
-					i(164903),	-- Sinister Gladiator's Silk Bracers (A)
-					i(166626),	-- Sinister Gladiator's Silk Chestwrap (A)
 					i(164836),	-- Sinister Gladiator's Silk Cord (A)
-					i(166603),	-- Sinister Gladiator's Silk Cover (A)
-					i(164888),	-- Sinister Gladiator's Silk Cowl (A)
 					i(164839),	-- Sinister Gladiator's Silk Cuffs (A)
-					i(166644),	-- Sinister Gladiator's Silk Epaulets (A)
 					i(164822),	-- Sinister Gladiator's Silk Gloves (A)
-					i(164886),	-- Sinister Gladiator's Silk Handguards (A)
-					i(166595),	-- Sinister Gladiator's Silk Helm (A)
 					i(164824),	-- Sinister Gladiator's Silk Hood (A)
 					i(164828),	-- Sinister Gladiator's Silk Leggings (A)
 					i(164833),	-- Sinister Gladiator's Silk Mantle (A)
-					i(164876),	-- Sinister Gladiator's Silk Raiment (A)
 					i(164812),	-- Sinister Gladiator's Silk Robe (A)
-					i(164900),	-- Sinister Gladiator's Silk Sash (A)
-					i(166652),	-- Sinister Gladiator's Silk Shoulderpads (A)
-					i(164881),	-- Sinister Gladiator's Silk Slippers (A)
 					i(164817),	-- Sinister Gladiator's Silk Treads (A)
-					i(164892),	-- Sinister Gladiator's Silk Trousers (A)
-					i(166618),	-- Sinister Gladiator's Silk Vestments (A)
-					i(164848),	-- Sinister Gladiator's Si
-					i(164849),	-- Sinister Gladiator's Silk
-					i(166622),	-- Sinister Gladiator's Silk Chestwrap (H)
 					i(164786),	-- Sinister Gladiator's Silk Cord (H)
-					i(166598),	-- Sinister Gladiator's Silk Cover (H)
-					i(164846),	-- Sinister Gladiator's Silk Cowl (H)
 					i(164785),	-- Sinister Gladiator's Silk Cuffs (H)
-					i(166638),	-- Sinister Gladiator's Silk Epaulets (H)
 					i(164781),	-- Sinister Gladiator's Silk Gloves (H)
-					i(164845),	-- Sinister Gladiator's Silk Handguards (H)
-					i(166590),	-- Sinister Gladiator's Silk Helm (H)
 					i(164782),	-- Sinister Gladiator's Silk Hood (H)
 					i(164783),	-- Sinister Gladiator's Silk Leggings (H)
 					i(164784),	-- Sinister Gladiator's Silk Mantle (H)
-					i(164843),	-- Sinister Gladiator's Silk Raiment (H)
 					i(164779),	-- Sinister Gladiator's Silk Robe (H)
-					i(164850),	-- Sinister Gladiator's Silk Sash (H)
-					i(166646),	-- Sinister Gladiator's Silk Shoulderpads (H)
-					i(164844),	-- Sinister Gladiator's Silk Slippers (H)
 					i(164780),	-- Sinister Gladiator's Silk Treads (H)
-					i(164847),	-- Sinister Gladiator's Silk Trousers (H)
-					i(166614),	-- Sinister Gladiator's Silk Vestments (H)
 				}),
 				filter(LEATHER, {
 					i(164906),	-- Sinister Gladiator's Leather Armwraps (A)
