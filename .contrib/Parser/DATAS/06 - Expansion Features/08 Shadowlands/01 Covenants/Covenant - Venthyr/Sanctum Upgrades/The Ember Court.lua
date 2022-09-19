@@ -1665,6 +1665,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 								}),
 								q(62601, {	-- Forgy
 									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy
+									["maps"] = { REVENDRETH },
 								}),
 								q(63691, {	-- Hunt-Captain Korayn's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?

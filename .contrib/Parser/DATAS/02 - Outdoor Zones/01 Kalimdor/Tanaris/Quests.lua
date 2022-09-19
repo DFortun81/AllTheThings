@@ -753,7 +753,7 @@ _.Zones =
 				}),
 				q(10277, {	-- The Caverns of Time
 					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, TANARIS },
+					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
 					["sourceQuest"] = 10279,	-- To The Master's Lair
 				}),
 				q(25068, {	-- The Crumbling Past

@@ -74,11 +74,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							i(187395),	-- Reinforced Stygian Spaulders
 						},
 					}),
-					i(187423, {	-- Legend of the Animaswell
-						["customCollect"] = "SL_COV_NFA",	-- Night Fae
-						["isWeekly"] = true,
-						["questID"] = 64549,	-- Legend of the Animaswell
-					}),
+					i(187423),	-- Legend of the Animaswell
 				},
 			}),
 			n(180042, {	-- Fleshwing
@@ -95,11 +91,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					crit(9, {	-- Fleshwing
 						["achievementID"] = 15107,	-- Conquering Korthia
 					}),
-					i(187424, {	-- Legend of the Animaswell
-						["customCollect"] = "SL_COV_NEC",	-- Necrolord
-						["isWeekly"] = true,
-						["questID"] = 64551,
-					}),
+					i(187424),	-- Legend of the Animaswell
 					i(187372),	-- Miasma Filtering Headpiece
 					i(187181, {	-- Small Corpsefly Egg
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord
@@ -234,11 +226,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							}),
 						},
 					}),
-					i(187428, {	-- Legend of the Animaswell
-						["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-						["isWeekly"] = true,
-						["questID"] = 64553,	-- Legend of the Animaswell
-					}),
+					i(187428),	-- Legend of the Animaswell
 					i(187386),	-- Stygian Crystal Studded Legguards
 				},
 			}),
@@ -305,11 +293,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 							}),
 						},
 					}),
-					i(187426, {	-- Legend of the Animaswell
-						["customCollect"] = "SL_COV_KYR",	-- Kyrian
-						["isWeekly"] = true,
-						["questID"] = 64552,	-- Legend of the Animaswell
-					}),
+					i(187426),	-- Legend of the Animaswell
 					i(187176),	-- Vesper of Harmony (TOY!)
 				},
 			}),
@@ -323,11 +307,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					crit(25, {	-- Xyraxz the Unknowable
 						["achievementID"] = 15107,	-- Conquering Korthia
 					}),
-					i(187104, {	-- Obelisk of Dark Tidings
-					--	TODO: may be available with only the rep unlocked if someone else repairs the teleporter?  but 'lost vaults' is when you first learn about the relic
-						["sourceQuests"] = { 64519 },	-- Lost Vaults
-						["questID"] = 63918,	-- Obelisk of Dark Tidings
-					}),
+					i(187104),	-- Obelisk of Dark Tidings
 					i(187387),	-- Pauldrons of the Unknown Beyond
 					i(187368),	-- Xyraxz's Controlling Rod
 				},
@@ -342,10 +322,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					crit(26, {	-- Chamber of Knowledge
 						["achievementID"] = 15107,	-- Conquering Korthia
 					}),
-					i(187103, {	-- Everliving Statuette
-						["sourceQuests"] = { 64506 },	-- What Must Be Found
-						["questID"] = 63917,	-- Everliving Statuette
-					}),
+					i(187103),	-- Everliving Statuette
 					i(187366),	-- Fallen Vault Guardian's Spire
 					i(187391),	-- Yarxhov's Rib-Cage
 				},

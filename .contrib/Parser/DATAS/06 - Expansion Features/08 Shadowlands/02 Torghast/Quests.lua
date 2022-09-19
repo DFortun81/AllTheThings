@@ -71,7 +71,10 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.0
 			})),
 			q(62719, {	-- The Final Pieces
 				["sourceQuests"] = { 60272 },    -- The Weak Link
-				["provider"] = { "n", 164937 },    -- Runecarver
+				["qgs"] = {
+					164937,	-- Runecarver
+					180509,	-- Runecarver [Alternate Version?]
+				},
 				["coord"] = { 50.4, 53.8, 1912 },    -- The Runecarver's Oubliette
 			}),
 			q(63727, {	-- The Primus Returns

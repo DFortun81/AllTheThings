@@ -506,9 +506,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 4.0.3
 					["isBreadcrumb"] = true,
-					-- #endif
 					["lvl"] = lvlsquish(12, 12, 5),
 				}),
 				q(29344, {	-- Fish fer Squrky

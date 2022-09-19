@@ -1435,6 +1435,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				q(27031, {	-- Wing Nut
 					["qg"] = 6577,	-- Bingles Blastenheimer
+					["sourceQuest"] = 2039,	-- Find Bingles
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,

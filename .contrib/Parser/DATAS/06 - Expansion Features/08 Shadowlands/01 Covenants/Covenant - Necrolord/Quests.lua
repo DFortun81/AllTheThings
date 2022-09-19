@@ -917,7 +917,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV
 				["timeline"] = { "added 9.0.2", "removed 9.1.5" },
 			}),
 			q(62866, {	-- Return Lost Souls (20 soul version)
-				-- ["sourceQuests"] = {  },	-- TODO
+				["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 				["description"] = "Requires Renown 32.",
 				["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 				["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },

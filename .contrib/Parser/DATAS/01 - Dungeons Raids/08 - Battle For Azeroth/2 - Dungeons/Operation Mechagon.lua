@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = { tier(BFA_TIER, {
+root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1178, {	-- Operation: Mechagon
 		["coord"] = { 73.1, 36.3, MECHAGON },
 		["maps"] = {
@@ -20,6 +20,8 @@ _.Instances = { tier(BFA_TIER, {
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
+				i(168756),	-- Hijack Synaptic Circuits
+				i(168798),	-- Trajectory Analysis
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
@@ -412,4 +414,4 @@ _.Instances = { tier(BFA_TIER, {
 			}),
 		},
 	}),
-})};
+}));

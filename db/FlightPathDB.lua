@@ -2355,7 +2355,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 0,
 	},
 	[1978] = {
-		["name"] = "Conservatory of the Arcane, Mac'Aree",
+		["name"] = "Conservatory of the Arcane, Eredath",
 		["faction"] = 0,
 	},
 	[990] = {
@@ -2371,7 +2371,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 	},
 	[1982] = {
-		["name"] = "Triumvirate's End, Mac'Aree",
+		["name"] = "Triumvirate's End, Eredath",
 		["faction"] = 0,
 	},
 	[1988] = {
@@ -2419,11 +2419,11 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 0,
 	},
 	[1991] = {
-		["name"] = "Prophet's Reflection, Mac'Aree",
+		["name"] = "Prophet's Reflection, Eredath",
 		["faction"] = 0,
 	},
 	[1981] = {
-		["name"] = "Shadowguard Incursion, Mac'Aree",
+		["name"] = "Shadowguard Incursion, Eredath",
 		["faction"] = 0,
 	},
 	[2067] = {
@@ -2467,7 +2467,7 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 0,
 	},
 	[2003] = {
-		["name"] = "City Center, Mac'Aree",
+		["name"] = "City Center, Eredath",
 		["faction"] = 0,
 	},
 	[1957] = {

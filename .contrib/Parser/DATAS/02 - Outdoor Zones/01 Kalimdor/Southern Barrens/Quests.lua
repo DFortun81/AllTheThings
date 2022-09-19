@@ -182,10 +182,7 @@ _.Zones =
 					["provider"] = { "n", 37679 },	-- Warlord Bloodhilt
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						24573,	-- Honoring the Dead
-						24572,	-- Taking Back Taurajo
-					},
+					["sourceQuest"] = 24572,	-- Taking Back Taurajo
 				}),
 				q(25104, {	-- Digsite Status
 					["provider"] = { "n", 39118 },	-- General Twinbraid
@@ -328,7 +325,7 @@ _.Zones =
 					["provider"] = { "n", 37717 },	-- Winnoa Pineforest
 					["coord"] = { 41.5, 46.5, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 24569,	-- Siegebreaker
+					["sourceQuest"] = 24572,	-- Taking Back Taurajo
 				}),
 				q(24634, {	-- Intelligence Warfare
 					["provider"] = { "n", 37837 },	-- Warlord Bloodhilt

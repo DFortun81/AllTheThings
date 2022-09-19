@@ -10261,7 +10261,11 @@ end)();
 -- Faction Lib
 (function()
 local GetFriendshipReputation, GetFriendshipReputationRanks = GetFriendshipReputation, GetFriendshipReputationRanks;
-local StandingByID = {
+local StandingByID = setmetatable({
+	[0] = {	-- 0: No Standing (Not in a Guild)
+		["color"] = "00404040",
+		["threshold"] = -99999,
+	},
 	{	-- 1: HATED
 		["color"] = GetProgressColor(0),
 		["threshold"] = -42000,
@@ -10294,12 +10298,12 @@ local StandingByID = {
 		["color"] = GetProgressColor(1),
 		["threshold"] = 42000,
 	},
-};
-StandingByID[0] =
-{	-- 0: No Standing (Not in a Guild)
-	["color"] = "00404040",
-	["threshold"] = -99999,
-};
+}, {
+	__index = function(t, key)
+		app.PrintDebug("Unknown StandingID requested",key)
+		return t[0];
+	end
+});
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
 	if name then
@@ -10359,6 +10363,7 @@ app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
 end
+-- TODO: this does not work properly for some Friendship reputations (i.e. Archivist Codex)
 app.GetFactionStanding = function(reputationPoints)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
@@ -10612,9 +10617,9 @@ local arrOfNodes = {
 	-- Argus only returns specific Flight Points per map
 	885,	-- Antoran Wastes
 	830,	-- Krokuun
-	882,	-- Mac'Aree
+	882,	-- Eredath
 	831,	-- Upper Deck [The Vindicaar: Krokuun]
-	883,	-- Upper Deck [The Vindicaar: Mac'Aree]
+	883,	-- Upper Deck [The Vindicaar: Eredath]
 	886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
 
 	862,	-- Zuldazar
