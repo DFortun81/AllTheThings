@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/DFortun81/AllTheThings/workflows/CI/badge.svg)](https://github.com/DFortun81/AllTheThings/actions?workflow=CI)
+[![Build Status](https://github.com/DFortun81/AllTheThings/workflows/Release/badge.svg)](https://github.com/DFortun81/AllTheThings/actions?workflow=Release)
 [![AllTheThings on Discord](https://img.shields.io/discord/242423099184775169.svg?style=popout&label=Discord)](https://discord.gg/allthethings)
 
 # AllTheThings
