@@ -85,7 +85,14 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                         thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.FlightPaths:
                     # Flight Paths have names in the same db
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    # Cursed Build
+                    if build == "8.0.1.26321":
+                        thing_list.append(f"{row['Name_lang']},--\n")
+                    else:
+                        try:
+                            thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                        except KeyError:
+                            thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.Followers:
                     # Follower Names need creature db
                     thing_list.append(
