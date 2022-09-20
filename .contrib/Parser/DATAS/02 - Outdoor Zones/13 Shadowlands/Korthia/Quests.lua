@@ -225,7 +225,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 49.5, 65.0, KORTHIA },
 			}),
 			q(63892, {	-- Diviner's Rune Chits
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63738 },	-- Establishing the Archive
 				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
 				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
@@ -389,10 +389,8 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 34.9, 35.3, KORTHIA },
 			}),
 			q(64519, {	-- Lost Vaults
-				["sourceQuests"] = {
-					64511,	-- Missing Relics
-				},
-				["minReputation"] = { 2472, 7500 },	-- Tier 3
+				["sourceQuests"] = { 64511 },	-- Missing Relics
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
@@ -403,12 +401,12 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(64526, {	-- Mysterious Rifts
-				["minReputation"] = { 2472, 14000 },	-- Tier 4
+				["minReputation"] = { 2472, 4 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(63918, {	-- Obelisk of Dark Tidings
-				["sourceQuests"] = { 64519 },	-- Lost Vaults
+				["sourceQuests"] = { 64511 },	-- Missing Relics
 				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
 			}),
 			q(64561, {	-- Observational Records (intro version)
@@ -446,7 +444,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			q(64368, {	-- Relic Efficiency
 				-- no known source quests, would need to reach tier 4 without doing other quests I assume...
-				["minReputation"] = { 2472, 14000 },	-- Tier 4
+				["minReputation"] = { 2472, 4 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
@@ -468,7 +466,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 55.6, 22.2, KORTHIA },
 			}),
 			q(63916, {	-- Sack of Strange Soil
-				["sourceQuests"] = { 64506 },	-- What Must Be Found
+				["sourceQuests"] = { 63738 },	-- Establishing the Archive
 				["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
 				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
 				["coord"] = { 45.0, 35.5, KORTHIA },
@@ -550,7 +548,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 					63913,	-- Unstable Sin'dorei Explosive
 				},
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["minReputation"] = { 2472, 25000 },	-- Tier 5
+				["minReputation"] = { 2472, 5 },	-- Tier 5
 				["coord"] = { 62.7, 22.5, KORTHIA },
 			}),
 			q(63705, {	-- The Knowledge Keepers

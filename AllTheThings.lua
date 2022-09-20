@@ -10421,8 +10421,11 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding)
 		local _, maxStanding = GetFriendshipReputationRanks(factionID);
 		-- shift relative to 8 (Exalted) based on the actual max ranks of the friendship faction
 		standing = 8 - (maxStanding - standing);
+		-- if we requested a specific standing, we can't rely on the friendship text to be accurate
+		if requestedStanding then
+			friendStandingText = "Rank "..requestedStanding;
+		end
 	end
-	-- friend factions are shifted up 2 to match regular factions at exalted
 	return app.ColorizeStandingText(standing, friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)

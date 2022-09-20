@@ -18,7 +18,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 			}),
 			q(64266, {	-- Supplies from The Archivist's Codex
 				["repeatable"] = true,
-				["minReputation"] = { 2472, 8 },	-- The Archivist's Codex, Exalted
+				["minReputation"] = { 2472, 6 },	-- The Archivist's Codex, Tier 6
 				["g"] = {
 					i(187028, {	-- Supplies of the Archivists' Codex
 						i(186641),	-- Tamed Mauler (MOUNT!)

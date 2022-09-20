@@ -466,6 +466,7 @@ _.ObjectNames = {
 	[194389] = "Stolen Explorers' League Document",
 	[194390] = "Stolen Explorers' League Document",
 	[194391] = "Stolen Explorers' League Document",
+	[194555] = "Archivum Console",
 	[194714] = "Disgusting Workbench",
 	[195134] = "The Bomb",
 	[195431] = "Headquarters Radio",
