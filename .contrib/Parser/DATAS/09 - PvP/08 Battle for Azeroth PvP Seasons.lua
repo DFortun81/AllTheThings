@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-_.PVP =	-- ToDo: S1 Elite, S2 Leather+Plate Elite, S3 Cloth+Plate Elite
+_.PVP =	-- ToDo: S1 Elite, S2 Leather Elite, S3 Cloth+Plate Elite
 {
 	pvp(tier(BFA_TIER, {
 		n(SEASON_DREAD, {
@@ -932,49 +932,21 @@ _.PVP =	-- ToDo: S1 Elite, S2 Leather+Plate Elite, S3 Cloth+Plate Elite
 				}),
 				filter(PLATE, {
 					i(164840),	-- Sinister Gladiator's Plate Armguards (A)
-					i(166619),	-- Sinister Gladiator's Plate Armor (A)
-					i(166627),	-- Sinister Gladiator's Plate Breastplate (A)
-					i(164877),	-- Sinister Gladiator's Plate Chestguard (A)
-					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)
-					i(164899),	-- Sinister Gladiator's Plate Clasp (A)
+					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)															
 					i(164821),	-- Sinister Gladiator's Plate Gauntlets (A)
-					i(164835),	-- Sinister Gladiator's Plate Girdle (A)
-					i(164885),	-- Sinister Gladiator's Plate Gloves (A)
-					i(166602),	-- Sinister Gladiator's Plate Greathelm (A)
-					i(164880),	-- Sinister Gladiator's Plate Greaves (A)
-					i(164875),	-- Sinister Gladiator's Plate Headcover (A)
+					i(164835),	-- Sinister Gladiator's Plate Girdle (A)					
 					i(164811),	-- Sinister Gladiator's Plate Helm (A)
-					i(164891),	-- Sinister Gladiator's Plate Leg Armor (A)
 					i(164827),	-- Sinister Gladiator's Plate Legguards (A)
 					i(164832),	-- Sinister Gladiator's Plate Pauldrons (A)
-					i(166651),	-- Sinister Gladiator's Plate Shoulderguards (A)
-					i(164896),	-- Sinister Gladiator's Plate Shoulders (A)
-					i(166643),	-- Sinister Gladiator's Plate Spaulders (A)
-					i(164904),	-- Sinister Gladiator's Plate Vambraces (A)
 					i(164816),	-- Sinister Gladiator's Plate Warboots (A)
-					i(166594),	-- Sinister Gladiator's Plate Warhelm (A)
 					i(164810),	-- Sinister Gladiator's Plate Armguards (H)
-					i(166617),	-- Sinister Gladiator's Plate Armor (H)
-					i(166625),	-- Sinister Gladiator's Plate Breastplate (H)
-					i(164868),	-- Sinister Gladiator's Plate Chestguard (H)
 					i(164804),	-- Sinister Gladiator's Plate Chestpiece (H)
-					i(164873),	-- Sinister Gladiator's Plate Clasp (H)
 					i(164806),	-- Sinister Gladiator's Plate Gauntlets (H)
 					i(164809),	-- Sinister Gladiator's Plate Girdle (H)
-					i(164870),	-- Sinister Gladiator's Plate Gloves (H)
-					i(166601),	-- Sinister Gladiator's Plate Greathelm (H)
-					i(164869),	-- Sinister Gladiator's Plate Greaves (H)
-					i(164867),	-- Sinister Gladiator's Plate Headcover (H)
 					i(164803),	-- Sinister Gladiator's Plate Helm (H)
-					i(164871),	-- Sinister Gladiator's Plate Leg Armor (H)
 					i(164807),	-- Sinister Gladiator's Plate Legguards (H)
 					i(164808),	-- Sinister Gladiator's Plate Pauldrons (H)
-					i(166649),	-- Sinister Gladiator's Plate Shoulderguards (H)
-					i(164872),	-- Sinister Gladiator's Plate Shoulders (H)
-					i(166641),	-- Sinister Gladiator's Plate Spaulders (H)
-					i(164874),	-- Sinister Gladiator's Plate Vambraces (H)
 					i(164805),	-- Sinister Gladiator's Plate Warboots (H)
-					i(166593),	-- Sinister Gladiator's Plate Warhelm (H)
 				}),
 			})),
 			n(QUESTS, {
@@ -1566,15 +1538,8 @@ _.PVP =	-- ToDo: S1 Elite, S2 Leather+Plate Elite, S3 Cloth+Plate Elite
 					i(167262),	-- Notorious Gladiator's Plate Legguards (H)
 					i(167260),	-- Notorious Gladiator's Plate Warboots (H)
 					
-					-- You might gotten all 50 different Items, but I'm going with 16
 					-- Only those above are confirmed.
-					i(167414),	-- Notorious Gladiator's Plate Armor (A)
-					i(167397),	-- Notorious Gladiator's Plate Greathelm (A)
-					i(167351),	-- Notorious Gladiator's Plate Shoulders (A)
-					i(167412),	-- Notorious Gladiator's Plate Armor (H)
-					i(167396),	-- Notorious Gladiator's Plate Greathelm (H)
-					i(167327),	-- Notorious Gladiator's Plate Shoulders (H)
-					--[[i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
+					i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
 					i(167332),	-- Notorious Gladiator's Plate Chestguard (A)
 					i(167268),	-- Notorious Gladiator's Plate Chestpiece (A)
 					i(167430),	-- Notorious Gladiator's Plate Chestplate (A)
@@ -1609,7 +1574,7 @@ _.PVP =	-- ToDo: S1 Elite, S2 Leather+Plate Elite, S3 Cloth+Plate Elite
 					i(167436),	-- Notorious Gladiator's Plate Spaulders (H)
 					i(167329),	-- Notorious Gladiator's Plate Vambraces (H)
 					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
-					i(167452),	-- Notorious Gladiator's Shoulderplates (H)--]]
+					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
 			})),
 			n(QUESTS, {
