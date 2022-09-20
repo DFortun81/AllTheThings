@@ -1028,10 +1028,12 @@ app.L = {
 	-- Class Trial
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
 		[-155] = 236566,																	-- Level 50 (Boost)
-		[-156] = 236567,																	-- Level 60
+		[-156] = 236567,																	-- Level 60 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
 		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
+	-- Class Trial
+		[-160] = 236568,																	-- Level 60 (Trial)
 	-- Junkboxes
 		[-165] = "Interface\\Icons\\inv_box_01",											-- Junkboxes
 	-- Emissary
@@ -1553,12 +1555,14 @@ app.L = {
 	-- Class Trial
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."(Boost)",		-- Level 50 (Boost)
-		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60),						-- Level 60
+		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." ".."(Boost)",		-- Level 60 (Boost)
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
 		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
 	-- Class Hall /Artifact
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
+	-- Class Trial
+		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." ".."(Trial)",		-- Level 60 (Trial)
 	-- Junkboxes
 		[-165] = GetItemSubClassInfo(13,1),										-- Junkboxes
 	-- Emissary
