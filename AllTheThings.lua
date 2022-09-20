@@ -10363,10 +10363,12 @@ app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
 end
--- TODO: this does not work properly for some Friendship reputations (i.e. Archivist Codex)
 app.GetFactionStanding = function(reputationPoints)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
+		if type(reputationPoints) == "table" then
+			return app.GetReputationStanding(reputationPoints);
+		end
 		for i=#StandingByID,1,-1 do
 			local threshold = StandingByID[i].threshold;
 			if reputationPoints >= threshold then
@@ -10375,6 +10377,30 @@ app.GetFactionStanding = function(reputationPoints)
 		end
 	end
 	return 1, 0
+end
+-- Given a maxReputation/minReputation table, will return the proper StandingID and Amount into that Standing associated with the data
+app.GetReputationStanding = function(reputationInfo)
+	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
+	-- make it really easy to use threshold checks by directly providing the expected standing
+	-- incoming value can also be negative for hostile standings, so check directly on the table
+	if StandingByID[standingOrAmount] then
+		return standingOrAmount, 0;
+	else
+		local friend = GetFriendshipReputation(factionID);
+		if friend then
+			-- don't think there's a good standard way to determine friendship rank from an arbitrary amount of reputation...
+			print("Convert Friendship Reputation Threshold to StandingID",factionID,standingOrAmount)
+			return 1, standingOrAmount;
+		else
+			-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+			for i=#StandingByID,1,-1 do
+				local threshold = StandingByID[i].threshold;
+				if standingOrAmount >= threshold then
+					return i, threshold < 0 and (threshold - standingOrAmount) or (standingOrAmount - threshold);
+				end
+			end
+		end
+	end
 end
 local function GetCurrentFactionStandings(factionID)
 	local standing, maxStanding = 0, 8;
@@ -16294,7 +16320,7 @@ RowOnEnter = function (self)
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
-			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
+			local standingId, offset = app.GetReputationStanding(reference.minReputation)
 			local factionID = reference.minReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MINUMUM_STANDING"]
@@ -16303,7 +16329,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
-			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
+			local standingId, offset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.maxReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MAXIMUM_STANDING"]
@@ -16312,8 +16338,8 @@ RowOnEnter = function (self)
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
-			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
-			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
+			local minStandingId, minOffset = app.GetReputationStanding(reference.minReputation)
+			local maxStandingId, maxOffset = app.GetReputationStanding(reference.maxReputation)
 			local factionID = reference.minReputation[1];
 			local factionName = GetFactionInfoByID(factionID) or "the opposite faction";
 			local msg = L["MIN_MAX_STANDING"]
