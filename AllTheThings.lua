@@ -10417,8 +10417,13 @@ app.GetCurrentFactionStandings = GetCurrentFactionStandings;
 app.GetCurrentFactionStandingText = function(factionID, requestedStanding)
 	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
 	local friendStandingText = select(7, GetFriendshipReputation(factionID));
+	if friendStandingText then
+		local _, maxStanding = GetFriendshipReputationRanks(factionID);
+		-- shift relative to 8 (Exalted) based on the actual max ranks of the friendship faction
+		standing = 8 - (maxStanding - standing);
+	end
 	-- friend factions are shifted up 2 to match regular factions at exalted
-	return app.ColorizeStandingText(standing + (friendStandingText and 2 or 0), friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
+	return app.ColorizeStandingText(standing, friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = strtrim(replevel);
@@ -10580,6 +10585,7 @@ local fields = {
 	end,
 	["maxstanding"] = function(t)
 		if t.minReputation and t.minReputation[1] == t.factionID then
+			app.PrintDebug("Faction with MinReputation??",t.factionID)
 			return app.GetFactionStanding(t.minReputation[2]);
 		end
 		local _, maxStanding = GetCurrentFactionStandings(t.factionID);
