@@ -10261,7 +10261,7 @@ end)();
 -- Faction Lib
 (function()
 local GetFriendshipReputation, GetFriendshipReputationRanks = GetFriendshipReputation, GetFriendshipReputationRanks;
-local StandingByID = setmetatable({
+local StandingByID = {
 	[0] = {	-- 0: No Standing (Not in a Guild)
 		["color"] = "00404040",
 		["threshold"] = -99999,
@@ -10298,12 +10298,7 @@ local StandingByID = setmetatable({
 		["color"] = GetProgressColor(1),
 		["threshold"] = 42000,
 	},
-}, {
-	__index = function(t, key)
-		app.PrintDebug("Unknown StandingID requested",key)
-		return t[0];
-	end
-});
+};
 app.FactionNameByID = setmetatable({}, { __index = function(t, id)
 	local name = select(1, GetFactionInfoByID(id)) or select(4, GetFriendshipReputation(id));
 	if name then
