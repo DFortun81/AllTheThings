@@ -777,9 +777,9 @@ for key,value in pairs({
 		[-577] = "魔兽电影",											-- Warcraft Movie
 		[-579] = "穿过黑暗之门",											-- Dark Portal Pass
 		[-580] = "暗影国度季节性促销",										-- Shadowlands Seasonal Promotions
-		--TODO: [-581] = "TBC Classic Deluxe Edition",				-- TBC Classic Deluxe Edition
-		--TODO: [-582] = "WotLK Classic Northrend Heroic Upgrade",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
-		--TODO: [-583] = "WotLK Classic Northrend Epic Upgrade",			-- WotLK Classic Northrend Epic Upgrade
+		[-581] = "燃烧的远征经典怀旧服典藏包",				-- TBC Classic Deluxe Edition
+		[-582] = "巫妖王之怒经典怀旧服诺森德英雄礼包",			-- WotLK Classic Northrend Heroic Upgrade ("Cheap")
+		[-583] = "巫妖王之怒经典怀旧服诺森德史诗礼包",			-- WotLK Classic Northrend Epic Upgrade
 	-- PvP Header
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
