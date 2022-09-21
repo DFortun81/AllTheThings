@@ -95,9 +95,15 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                             thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.Followers:
                     # Follower Names need creature db
-                    thing_list.append(
-                        f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
-                    )
+                    # Cursed Build
+                    if build == "6.0.1.18179":
+                        thing_list.append(
+                            f"{row['ID']},{row['Field_6_0_1_18179_001']},{row['Field_6_0_1_18179_002']}\n"
+                        )
+                    else:
+                        thing_list.append(
+                            f"{row['ID']},{row['HordeCreatureID']},{row['AllianceCreatureID']}\n"
+                        )
                 case Things.Illusions:
                     # Illusion names are in the SpellItemEnchantmentID db
                     thing_list.append(f"{row['SpellItemEnchantmentID']}\n")
@@ -138,7 +144,7 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
         except KeyError:
-            print(build)
+            print("Cursed",build)
     return thing_list
 
 
