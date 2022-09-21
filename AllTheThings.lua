@@ -10378,7 +10378,7 @@ app.GetReputationStanding = function(reputationInfo)
 	local factionID, standingOrAmount = reputationInfo[1], reputationInfo[2];
 	-- make it really easy to use threshold checks by directly providing the expected standing
 	-- incoming value can also be negative for hostile standings, so check directly on the table
-	if StandingByID[standingOrAmount] then
+	if standingOrAmount > 0 and StandingByID[standingOrAmount] then
 		return standingOrAmount, 0;
 	else
 		local friend = GetFriendshipReputation(factionID);
