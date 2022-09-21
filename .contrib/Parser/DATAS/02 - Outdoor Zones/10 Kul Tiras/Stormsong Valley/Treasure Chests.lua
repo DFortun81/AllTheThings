@@ -12,6 +12,10 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] =  { "added 8.0.1" } }, {
 					i(154476),	-- Honey-Glazed Vambraces
 				},
 			}),
+			o(303039, {	-- Curious Grain Sack
+				["questID"] = 53635,
+				["coord"] = { 32.1, 66.2, STORMSONG_VALLEY },
+			}),
 		}),
 	}),
 })));

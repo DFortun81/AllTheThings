@@ -2428,6 +2428,7 @@ root("HiddenQuestTriggers", {
 			--q(61932),	-- Maybe Bastion Etiquette
 			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
+			q(60471),	-- Looting Decree: Baroness Vashj's Favor
 			q(60472),	-- Looting Decree: Baroness Vashj's Esteem
 			q(61533),	-- Looting Decree: The Countess's Favor
 			q(61528),	-- Looted Lady Moonberry cache

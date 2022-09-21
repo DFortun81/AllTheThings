@@ -3135,7 +3135,7 @@ local ResolveFunctions = {
 	-- Instruction to select the parent object of the group that owns the symbolic link
 	["selectparent"] = function(finalized, searchResults, o, cmd, level)
 		level = level or 1;
-		local parent = o.parent or o.sourceParent;
+		local parent = o.parent;
 		-- app.PrintDebug("selectparent",level,parent and parent.hash)
 		while level > 1 do
 			parent = parent and parent.parent;

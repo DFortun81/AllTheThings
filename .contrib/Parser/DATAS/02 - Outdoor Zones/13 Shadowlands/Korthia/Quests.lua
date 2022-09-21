@@ -438,15 +438,24 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
 			}),
 			q(65145, {	-- Relic Clues
+				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["minReputation"] = { 2472, 3 },	-- Tier 3
 				["coord"] = { 62.8, 22.6, KORTHIA },
 				["timeline"] = { "added 9.1.5" },
 			}),
 			q(64368, {	-- Relic Efficiency
-				-- no known source quests, would need to reach tier 4 without doing other quests I assume...
+				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["minReputation"] = { 2472, 4 },	-- Tier 4
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
+			}),
+			q(65146, {	-- Relic Hunter
+				["sourceQuest"] = 63861,	-- Beginning the Collection
+				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+				["minReputation"] = { 2472, 5 },	-- Tier 5
+				["coord"] = { 62.8, 22.6, KORTHIA },
+				["timeline"] = { "added 9.1.5" },
 			}),
 			q(63756, {	-- Rescued from Torment
 				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
@@ -541,12 +550,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["coord"] = { 63.1, 25.3, KORTHIA },
 			}),
 			q(64532, {	-- The Final Relics
-			--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
-				["sourceQuests"] = {
-					63914,	-- Cipher of Understanding
-					63920,	-- Enigmatic Decrypting Device
-					63913,	-- Unstable Sin'dorei Explosive
-				},
+				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["minReputation"] = { 2472, 5 },	-- Tier 5
 				["coord"] = { 62.7, 22.5, KORTHIA },
@@ -875,11 +879,6 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.1.0" } }, {
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178837 },	-- Lord Herne
 				["coord"] = { 61.3, 21.3, KORTHIA },
-			}),
-			q(65146, {	-- Relic Hunter
-				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
-				["timeline"] = { "added 9.1.5" },
 			}),
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir

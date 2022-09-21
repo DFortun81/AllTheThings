@@ -502,7 +502,6 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		i(37792),	-- Agin's Crushing Carapace
 	}),
 	category(254, {	-- Bracers
-		i(39235),	-- Bone-Framed Bracers
 		i(37776),	-- Bracers of Accurate Fire
 		i(37777),	-- Bracers of Sizzling Heat
 		i(37766),	-- Bracers of Unmitigated Larceny

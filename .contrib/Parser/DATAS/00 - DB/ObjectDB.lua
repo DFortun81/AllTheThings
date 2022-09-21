@@ -1817,6 +1817,7 @@ _.ObjectNames = {
 	[303016] = "|cFFFFFFFFStep 14:|r Ordinary Pebble XIII",
 	[303017] = "|cFFFFFFFFStep 13:|r Ordinary Pebble XII",
 	[303018] = "|cFFFFFFFFStep 12:|r Ordinary Pebble XI",
+	[303039] = "Curious Grain Sack",
 	[307265] = "Wanted Poster",
 	[307277] = "Old Jug",
 	[307307] = "Broken Barrel",

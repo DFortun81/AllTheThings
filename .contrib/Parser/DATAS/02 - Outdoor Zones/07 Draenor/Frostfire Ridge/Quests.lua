@@ -1054,7 +1054,10 @@ _.Zones =
 					["provider"] = { "n", 70910 },	-- Ga'nar
 					["coord"] = { 46.3, 32.1, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 32929,	-- They Rely on Numbers
+					["sourceQuests"] = {
+						32929,	-- They Rely on Numbers
+						32792,	-- Leave Nothing Behind!
+					},
 				}),
 				q(35737, {	-- Writing in the Snow (A)
 					["coords"] = {
