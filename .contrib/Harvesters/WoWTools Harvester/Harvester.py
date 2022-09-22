@@ -367,7 +367,10 @@ def append_illusion_id(illusions: list[str], illusion_line: str) -> None:
 
 
 def append_mount_id(mounts: list[str], mount_line: str) -> None:
-    mount_line = mount_line.split(";")[0].split(",")[1]
+    try:
+        mount_line = mount_line.split(";")[0].split(",")[1]
+    except IndexError:
+        mount_line = ""
     mount_line = re.sub("\\D", "", mount_line)
     mounts.append(mount_line + "\n")
 
