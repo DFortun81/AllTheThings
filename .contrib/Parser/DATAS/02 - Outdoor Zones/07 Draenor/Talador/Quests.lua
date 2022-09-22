@@ -211,18 +211,12 @@ _.Zones =
 						["sourceQuest"] = 34879,	-- Dropping In
 					}),
 					n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
 						q(37421, {	-- Kuuro's Claim
-							["altQuests"] = { 37422 },	-- Zangarra (other building BO)
 							["coord"] = { 75.1, 23.4, TALADOR },
 							["sourceQuests"] = {
 								34558,	-- At Your Command (A)
 								34566,	-- At Your Command (H)
 							}
-						}),
-						q(35237, {	-- Mor'gran Logworks
-							["coord"] = { 65.4, 32.0, TALADOR },
-							["races"] = HORDE_ONLY,
 						}),
 					}),
 				}),
@@ -417,15 +411,12 @@ _.Zones =
 						["sourceQuest"] = 34569,	-- The Quarry Quandary
 					}),
 					n(BONUS_OBJECTIVES, {
-					-- TODO: Check SQ also probably cant do after a certain level
-						q(35236, {	-- Orunai Coast
-							["coord"] = { 56.9, 13.0, TALADOR },
-							["races"] = ALLIANCE_ONLY,
-						}),
 						q(37422, {	-- Zangarra
-							["altQuests"] = { 37421, },	-- Kuuro's Claim (other building BO)
 							["coord"] = { 83.4, 28.6, TALADOR },
-							["sourceQuest"] = 34566,	-- At Your Command
+							["sourceQuests"] = {
+								34558,	-- At Your Command (A)
+								34566,	-- At Your Command (H)
+							}
 						}),
 					}),
 				}),
@@ -1643,6 +1634,14 @@ _.Zones =
 					}),
 					q(34667, {	-- Court of Souls
 						["coord"] = { 42.5, 60.6, TALADOR },
+					}),
+					q(35237, {	-- Mor'gran Logworks
+						["coord"] = { 65.4, 32.0, TALADOR },
+						["races"] = HORDE_ONLY,
+					}),
+					q(35236, {	-- Orunai Coast
+						["coord"] = { 56.9, 13.0, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34660, {	-- Zorkra's Fall
 						["coord"] = { 54.2, 88.7, TALADOR },

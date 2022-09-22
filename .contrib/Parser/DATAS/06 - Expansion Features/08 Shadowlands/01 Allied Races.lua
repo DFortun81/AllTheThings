@@ -142,7 +142,7 @@ root("ExpansionFeatures", tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2
 				["races"] = { DARKIRON },
 				["g"] = bubbleDown({ ["races"] = { DARKIRON } }, {
 					q(63494, {	-- The Anvil-Thane's Designs
-						["sourceQuests"] = { 53566 },	-- Dark Iron Dwarves
+						["sourceQuests"] = { 51483 },	-- Heritage o' the Dark Iron
 						["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
 						["coord"] = { 57.2, 31.9, 1186 },
 					}),
