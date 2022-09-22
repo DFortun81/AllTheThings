@@ -235,11 +235,11 @@ local TooltipSettingsBase = {
 	},
 };
 
-local OnClickForTab = function(self)
-	local id = self:GetID();
-	local parent = self:GetParent();
+local OnClickForTab = function(self, button, id)
+	local id = id or self:GetID();
+	local parent = self and self:GetParent() or settings;
 	PanelTemplates_SetTab(parent, id);
-	-- print("CLICKED TAB", id, self:GetText());
+	-- print("CLICKED TAB", id, self and self:GetText());
 	for i,tab in ipairs(parent.Tabs) do
 		if i == id then
 			for j,o in ipairs(tab.objects) do
@@ -257,7 +257,8 @@ end;
 
 local RawSettings;
 settings.Initialize = function(self)
-	PanelTemplates_SetNumTabs(self, #self.Tabs);
+	PanelTemplates_SetNumTabs(self, self.numTabs);
+	OnClickForTab(nil, "AUTO", 1);
 
 	-- Assign the default settings
 	if not settings:ApplyProfile() then
@@ -299,7 +300,6 @@ settings.Initialize = function(self)
 	elseif app.Minimap then
 		app.Minimap:Hide();
 	end
-	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -746,16 +746,15 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	return cb;
 end
 settings.CreateTab = function(self, text)
-	local id = #self.Tabs + 1;
-	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "OptionsFrameTabButtonTemplate");
-	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", L["TAB_SPACING"], 0); end
-	table.insert(self.Tabs, tab);
+	local id = (self.numTabs or 0) + 1;
+	self.numTabs = id;
+	local tab = CreateFrame("Button", self:GetName() .. "-Tab" .. id, self, "PanelTopTabButtonTemplate");
+	-- using the PanelTopTabButtonTemplate seems to auto-insert the button into the .Tabs element of the parent now
 	self.MostRecentTab = tab;
 	tab.objects = {};
 	tab:SetID(id);
 	tab:SetText(text);
 	self.TabsByName[text] = tab;
-	PanelTemplates_TabResize(tab, 0);
 	tab:SetScript("OnClick", OnClickForTab);
 	return tab;
 end
@@ -1443,7 +1442,7 @@ tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", -36, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
 line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
-line:SetPoint("TOP", settings.Tabs[1], "BOTTOM", 0, 0);
+line:SetPoint("TOP", tab, "BOTTOM", 0, 0);
 line:SetColorTexture(1, 1, 1, 0.4);
 line:SetHeight(2);
 
