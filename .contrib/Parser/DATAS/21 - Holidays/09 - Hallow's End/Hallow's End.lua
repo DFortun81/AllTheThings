@@ -3222,7 +3222,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			-- Candy Bucket Quests
 			n(FACTION_HEADER_NEUTRAL, {
 				["timeline"] = { "added 2.0.1" },
-				["groups"] = bubbleDown({ ["isYearly"] = true, ["provider"] = { "i", 37586 }, ["_drop"] = { "g" } }, {
+				["groups"] = bubbleDown({ ["isYearly"] = true, ["_drop"] = { "g" } }, {
 					q(28955, {	-- Candy Bucket — Badlands, Fuselight, Neutral
 						["coord"] = { 65.9, 35.8, BADLANDS },
 						["timeline"] = { "added 4.1.0.13726" },
@@ -3499,7 +3499,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			n(FACTION_HEADER_ALLIANCE, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = ALLIANCE_ONLY,
-				["groups"] = bubbleDown({ ["isYearly"] = true, ["provider"] = { "i", 37586 }, ["races"] = ALLIANCE_ONLY, ["_drop"] = { "g" } }, {
+				["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = ALLIANCE_ONLY, ["_drop"] = { "g" } }, {
 					q(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
 						["coord"] = { 40.1, 49, ARATHI_HIGHLANDS },
 						["timeline"] = { "added 4.1.0.13726" },
@@ -3842,7 +3842,7 @@ root("Holidays", applyholiday(HALLOWS_END, {
 			n(FACTION_HEADER_HORDE, {
 				["timeline"] = { "added 2.0.1" },
 				["races"] = HORDE_ONLY,
-				["groups"] = bubbleDown({ ["isYearly"] = true, ["provider"] = { "i", 37586 }, ["races"] = HORDE_ONLY, ["_drop"] = { "g" } }, {
+				["groups"] = bubbleDown({ ["isYearly"] = true, ["races"] = HORDE_ONLY, ["_drop"] = { "g" } }, {
 					q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 						["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
 						["timeline"] = { "added 2.0.1" },

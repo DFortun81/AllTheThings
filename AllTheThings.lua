@@ -1466,7 +1466,7 @@ app.TryColorizeName = function(group, name)
 		return Colorize(name, app.Colors.SourceIgnored);
 	-- faction rep status
 	elseif group.factionID and group.standing then
-		return app.ColorizeStandingText((group.saved and 8) or (group.standing + (group.isFriend and 2 or 0)), name);
+		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
 	-- locked/breadcrumb things
 	elseif group.locked or group.isBreadcrumb then
 		return Colorize(name, app.Colors.Locked);
@@ -3145,7 +3145,20 @@ local ResolveFunctions = {
 		if parent then
 			tinsert(searchResults, parent);
 		else
-			print("Failed to select parent for ",o.hash);
+			-- an extra search for the specific 'o' to retrieve the source parent since the parent is not actually attached to the reference resolving the symlink
+			local searchedObject = app.SearchForMergedObject(o.key, o[o.key]);
+			if searchedObject then
+				parent = searchedObject.parent;
+				while level > 1 do
+					parent = parent and parent.parent;
+					level = level - 1;
+				end
+				if parent then
+					tinsert(searchResults, parent);
+					return;
+				end
+			end
+			print("Failed to select parent for",o.hash);
 		end
 	end,
 	-- Instruction to find all content marked with the specified 'requireSkill'
@@ -10345,15 +10358,6 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
-app.ColorizeStandingText = function(standingID, text)
-	local standing = StandingByID[standingID];
-	if standing then
-		return Colorize(text, standing.color);
-	else
-		local rgb = FACTION_BAR_COLORS[standingID];
-		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
-	end
-end
 app.GetFactionIDByName = function(name)
 	name = strtrim(name);
 	return app.FactionIDByName[name] or name;
@@ -10408,20 +10412,33 @@ local function GetCurrentFactionStandings(factionID)
 	return standing or 1, maxStanding;
 end
 app.GetCurrentFactionStandings = GetCurrentFactionStandings;
--- Returns StandingText or Requested Standing
-app.GetCurrentFactionStandingText = function(factionID, requestedStanding)
+-- Returns the 'text' colorized to match a specific standard 'StandingID'
+local function ColorizeStandingText(standingID, text)
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
+	else
+		local rgb = FACTION_BAR_COLORS[standingID];
+		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+	end
+end
+-- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
+app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textOverride)
 	local standing = requestedStanding or GetCurrentFactionStandings(factionID);
 	local friendStandingText = select(7, GetFriendshipReputation(factionID));
 	if friendStandingText then
 		local _, maxStanding = GetFriendshipReputationRanks(factionID);
-		-- shift relative to 8 (Exalted) based on the actual max ranks of the friendship faction
-		standing = 8 - (maxStanding - standing);
+		-- adjust relative to max based on the actual max ranks of the friendship faction
+		-- prevent any weirdness of requesting a standing higher than the max for the friendship
+		local progress = math.min(standing, maxStanding) / maxStanding;
 		-- if we requested a specific standing, we can't rely on the friendship text to be accurate
 		if requestedStanding then
 			friendStandingText = "Rank "..requestedStanding;
 		end
+		-- friendships simply colored based on rank progress, some friendships have more ranks than faction standings... makes it weird to correlate them
+		return Colorize(textOverride or friendStandingText, GetProgressColor(progress));
 	end
-	return app.ColorizeStandingText(standing, friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
+	return ColorizeStandingText(standing, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = strtrim(replevel);
