@@ -118,7 +118,7 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['ID']},{row['CreatureID']}\n")
                 case Things.Recipes:
                     # Recipe names are in the SpellName db and Profession names are in SkillLine db
-                    thing_list.append(f"{row['SkillLine']},{row['Spell']}\n")
+                    thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
                 case Things.Titles:
                     # Titles have names in the same db
                     thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
@@ -214,15 +214,15 @@ def sort_raw_file_recipes() -> None:
                     if line in builds:
                         sorted_file.write(line)
                     else:
-                        skill_line, spell = line.split(",")
+                        spell,skill_line = line.split(",")
                         if int(skill_line) == profession_dict[profession]:
                             sorted_file.write(spell + "\n")
 
 
 def create_raw_file(thing: Things) -> None:
     """Create a raw file for a thing."""
-    if thing == Things.Recipes:
-        raise ValueError("Use sort_raw_file_recipes() for Recipes.")
+    #if thing == Things.Recipes:
+       # raise ValueError("Use sort_raw_file_recipes() for Recipes.")
     raw_path = Path("Raw", f"{thing.name}.txt")
     builds_path = Path("Builds", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
