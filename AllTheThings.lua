@@ -1058,7 +1058,8 @@ local function GetTradeSkillSpecialization(skillID)
 	return tradeSkillSpecializationMap[skillID];
 end
 app.GetTradeSkillLine = function()
-	return GetBaseTradeSkillID(C_TradeSkillUI.GetTradeSkillLine());
+	local profInfo = C_TradeSkillUI.GetBaseProfessionInfo();
+	return GetBaseTradeSkillID(profInfo.professionID);
 end
 app.GetSpecializationBaseTradeSkill = function(specializationID)
 	return specializationTradeSkillMap[specializationID];
@@ -21312,10 +21313,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		local C_TradeSkillUI = C_TradeSkillUI;
 		local C_TradeSkillUI_GetCategoryInfo = C_TradeSkillUI.GetCategoryInfo;
 		local C_TradeSkillUI_GetRecipeInfo = C_TradeSkillUI.GetRecipeInfo;
-		local C_TradeSkillUI_GetRecipeItemLink = C_TradeSkillUI.GetRecipeItemLink;
-		local C_TradeSkillUI_GetRecipeNumReagents = C_TradeSkillUI.GetRecipeNumReagents;
-		local C_TradeSkillUI_GetRecipeReagentInfo = C_TradeSkillUI.GetRecipeReagentInfo;
-		local C_TradeSkillUI_GetRecipeReagentItemLink = C_TradeSkillUI.GetRecipeReagentItemLink;
+		local C_TradeSkillUI_GetRecipeSchematic = C_TradeSkillUI.GetRecipeSchematic;
 
 		self.initialized = true;
 		self.SkillsInit = {};
@@ -21338,6 +21336,46 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			['g'] = { },
 		});
 
+		-- Adds the pertinent information about a given recipeID to the reagentcache
+		local function CacheRecipeSchematic(recipeID, skipcaching, reagentCache)
+			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
+			local craftedItemID = schematic.outputItemID;
+			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
+			local reagentItem, reagentCount;
+			-- Recipes now have Slots for available Regeants...
+			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
+				-- reagentType: 1 = required, 0 = optional
+				if reagentSlot.reagentType == 1 then
+					reagentCount = reagentSlot.quantityRequired;
+					-- Each available Reagent for the Slot can be associated to the Recipe/Output Item
+					for _,reagentItemID in ipairs(reagentSlot.reagents) do
+						-- Make sure a cache table exists for this item.
+						-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
+						-- Index 2: The Crafted Item IDs => reagentCount
+						-- TODO: potentially re-design this structure
+						if reagentItemID then
+							reagentItem = reagentCache[reagentItemID];
+							if skipcaching then
+								-- remove any existing cached recipes
+								if reagentItem then
+									-- app.PrintDebug("removing reagent cache info",reagentItemID,recipeID,craftedItemID)
+									reagentItem[1][recipeID] = nil;
+									reagentItem[2][craftedItemID] = nil;
+								end
+							else
+								if not reagentItem then
+									reagentItem = { {}, {} };
+									reagentCache[reagentItemID] = reagentItem;
+								end
+								reagentItem[1][recipeID] = { craftedItemID, reagentCount };
+								reagentItem[2][craftedItemID] = reagentCount;
+							end
+						end
+
+					end
+				end
+			end
+		end
 		local function UpdateLocalizedCategories(self, updates)
 			if not updates["Categories"] then
 				-- app.PrintDebug("UpdateLocalizedCategories",self.lastTradeSkillID)
@@ -21364,7 +21402,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
-				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID, reagentItem;
+				local skipcaching, spellRecipeInfo, categoryData, cachedRecipe, currentCategoryID;
 				local categories = AllTheThingsAD.LocalizedCategoryNames;
 				-- print("Scanning recipes",#recipeIDs)
 				for i = 1,#recipeIDs do
@@ -21421,42 +21459,9 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 							end
 						end
 
-						local recipeLink = C_TradeSkillUI_GetRecipeItemLink(recipeID);
-						local craftedItemID = recipeLink and GetItemInfoInstant(recipeLink);
-						if craftedItemID then
-							local reagentLink, itemID, reagentCount;
-							for i=1,C_TradeSkillUI_GetRecipeNumReagents(recipeID) do
-								reagentCount = select(3, C_TradeSkillUI_GetRecipeReagentInfo(recipeID, i));
-								reagentLink = C_TradeSkillUI_GetRecipeReagentItemLink(recipeID, i);
-								itemID = reagentLink and GetItemInfoInstant(reagentLink);
-								-- print(recipeID, itemID, "=",reagentCount,">", craftedItemID);
-
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs => { craftedID, reagentCount }
-								-- Index 2: The Crafted Item IDs => reagentCount
-								-- TODO: potentially re-design this structure
-								if itemID then
-									reagentItem = reagentCache[itemID];
-									if skipcaching then
-										-- remove any existing cached recipes
-										if reagentItem then
-											-- print("removing reagent cache info", itemID,recipeID,craftedItemID)
-											reagentItem[1][recipeID] = nil;
-											reagentItem[2][craftedItemID] = nil;
-										end
-									else
-										if not reagentItem then
-											reagentItem = { {}, {} };
-											reagentCache[itemID] = reagentItem;
-										end
-										reagentItem[1][recipeID] = { craftedItemID, reagentCount };
-										-- if craftedItemID then reagentItem[2][craftedItemID] = reagentCount; end
-										reagentItem[2][craftedItemID] = reagentCount;
-									end
-								end
-							end
-						-- else
-						-- 	print("recipe does not craft an item",recipeLink)
+						-- Does this Recipe craft an Item?
+						if spellRecipeInfo.createsItem then
+							CacheRecipeSchematic(recipeID, skipcaching, reagentCache);
 						end
 					end
 				end
@@ -21542,6 +21547,11 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Default Alignment on the WoW UI.
 				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
 				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+				self:SetMovable(false);
+			elseif ProfessionsFrame then
+				-- Default Alignment on the 10.0 WoW UI
+				self:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT", 0, 0);
+				self:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT", 0, 0);
 				self:SetMovable(false);
 			else
 				self:SetMovable(false);
@@ -22611,7 +22621,7 @@ hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 end)
 hooksecurefunc(GameTooltip, "SetRecipeReagentItem", function(self, recipeID, reagentID, ...)
 	if CanAttachTooltips() then
-		local link = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentID);
+		local link = C_TradeSkillUI.GetRecipeFixedReagentItemLink(recipeID, reagentID);
 		if link then
 			AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 			self:Show();
