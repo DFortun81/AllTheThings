@@ -6,12 +6,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(VALDRAKKEN, {
 		n(QUESTS, {
 			-- SIDE 1
-			q(66159, {	-- Lost to the Skies
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 194578 },	-- Grimla Fizzlecrank
-				["coord"] = { 25.2, 66.1, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- Probably?
-			}),
 			-- SIDE 2
 			q(67094, {	-- A Dryad's Work Is Never Done
 				["sourceQuests"] = { 66244 },	-- To Valdrakken
@@ -31,19 +25,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["isBreadcrumb"] = true,	-- Probably?
 			}),
 			-- SIDE 4
-			q(71219, {	-- The Wayward Waywatcher
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 197533 },	-- Waywatcher Lorin
-				["coord"] = { 50.2, 62.4, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- Probably?
-			}),
+
 			-- SIDE 5
-			q(71179, {	-- Look to the Overlook
-				["sourceQuests"] = { 66252 },	-- Reporting In
-				["provider"] = { "n", 189842 },	-- Captain Drine
-				["coord"] = { 56.0, 40.0, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- Probably?
-			}),
+
 
 
 
@@ -58,6 +42,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["g"] = {
 					i(199175),	-- Lubbins (PET!)
 				},
+			}),
+			q(70697, {	-- An Expert Opinion
+				["sourceQuests"] = { 70647 },	-- h Where, Oh Where Can He Be?
+				["provider"] = { "n", 185563 },	-- Jyhanna
+				["coord"] = { 10.4, 58.3, VALDRAKKEN },
 			}),
 
 
@@ -86,7 +75,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["sourceQuests"] = { 71238 },	-- The Ruby Fest!
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
-				["isBreadcrumb"] = true,
 			}),
 
 
@@ -105,10 +93,36 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
 				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 				["coord"] = { 84.3, 53.5, VALDRAKKEN },
-				["isBreadcrumb"] = true,
+			}),
+			q(70181, {	-- First Challenge of Tyr: Finesse
+				["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
+				["provider"] = { "o", 379290 },	-- Ornamented Statue
+				["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(199197),	-- Bottled Essence
+				},
+			}),
+			q(70182, {	-- The Sweet Taste of Victory
+				["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+				["provider"] = { "n", 195827 },	-- Maiden of Inspiration
+				["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
+			}),
+			q(70633, {	-- Fueling the Engine
+				["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
+				["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+				["coord"] = { 84.3, 53.5, VALDRAKKEN },
 			}),
 
 
 		}),
 	}),
 })));
+
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(VALDRAKKEN, {
+		q(70570),	-- Talked with Watcher Koranos
+		q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
+		q(72011),	-- Starting Ruby Feast
+		q(71243),	-- Weekly Quest?
+	}),
+}));

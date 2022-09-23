@@ -482,6 +482,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 				}),
+				q(66555, {	-- Bear With Me
+					["sourceQuests"] = {
+						66554,	-- Aggressive Self-Defence
+						66553,	-- Hollow Up
+					},
+					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+				}),
+				q(66556, {	-- Ice Cave Ya Got There
+					["sourceQuests"] = { 66555 },	-- Bear With Me
+					["provider"] = { "n", 189401 },	-- Sonova Snowden
+					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(197988),	-- Frozen Shard Ring
+						i(197627),	-- Windborne Velocidrake: Finned Neck
+						-- Crit Winterpeltw
+					},
+				}),
 
 
 
@@ -1208,10 +1226,130 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 65.8, 25.3, THE_AZURE_SPAN },
 				["isBreadcrumb"] = true,
 			}),
+
+			q(68641, {	-- Mossing the Mark
+				["sourceQuests"] = { 71235 },	-- Field Mages
+				["provider"] = { "n", 192830 },	-- Steria Duskgrove
+				["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+			}),
+			q(68639, {	-- Prowling Polar Predators
+				["sourceQuests"] = { 71235 },	-- Field Mages
+				["provider"] = { "n", 192825 },	-- Callisto Windsor
+				["coord"] = { 63.6, 28.9, THE_AZURE_SPAN },
+			}),
+			q(68642, {	-- Needles to Say
+				["sourceQuests"] = {
+					68641,	-- Mossing the Mark
+					68639,	-- Prowling Polar Predators
+				},
+				["provider"] = { "n", 192830 },	-- Steria Duskgrove
+				["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+			}),
+			q(68643, {	-- Vitamins and Minerals
+				["sourceQuests"] = {
+					68641,	-- Mossing the Mark
+					68639,	-- Prowling Polar Predators
+				},
+				["provider"] = { "n", 192825 },	-- Callisto Windsor
+				["coord"] = { 63.6, 28.9, THE_AZURE_SPAN },
+			}),
+			q(68644, {	-- Sugar, Spice, and Everything Nice
+				["sourceQuests"] = {
+					68642,	-- Needles to Say
+					68643,	-- Vitamins and Minerals
+				},
+				["provider"] = { "n", 192830 },	-- Steria Duskgrove
+				["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+			}),
+			q(69862, {	-- Save a Slyvern
+				["sourceQuests"] = { 68644 },	-- Sugar, Spice, and Everything Nice
+				["provider"] = { "n", 192830 },	-- Steria Duskgrove
+				["coord"] = { 63.6, 28.8, THE_AZURE_SPAN },
+			}),
+			q(70338, {	-- They Took the Kits
+				["sourceQuests"] = { 69862 },	-- Save a Slyvern
+				["provider"] = { "n", 192830 },	-- Steria Duskgrove
+				["coord"] = { 65.7, 30.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(200526),	-- Steria's Charm of Invisiblity
+					-- Sylvern Plunge
+				},
+			}),
+
+
+			q(65750, {	-- Eight-Legged Menace
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
+				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
+			}),
+			q(65769, {	-- Icy Webs
+				--["sourceQuests"] = {  },
+				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
+				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
+			}),
+			q(65758, {	-- Grungir the Explorer
+				["sourceQuests"] = {
+					65750,	-- Eight-Legged Menace
+					65769,	-- Icy Webs
+				},
+				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
+				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
+			}),
+			q(65832, {	-- Dwarven Antifreeze
+				["sourceQuests"] = { 65758 },	-- Grungir the Explorer
+				["provider"] = { "n", 185806 },	-- Grungir Ironspout
+				["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+			}),
+			q(65833, {	-- Primalist Tampering
+				["sourceQuests"] = { 65758 },	-- Grungir the Explorer
+				["provider"] = { "n", 185806 },	-- Grungir Ironspout
+				["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+			}),
+			q(65834, {	-- Kill the Queen
+				["sourceQuests"] = {
+					65832,	-- Dwarven Antifreeze
+					65833,	-- Primalist Tampering
+				},
+				["provider"] = { "n", 185806 },	-- Grungir Ironspout
+				["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(191044),	-- Spider Squasher
+					i(198353),	-- Shiverweb Egg (PET!)
+					-- Shiverweb Vale
+				},
+			}),
+
+			-- RUBY FEAST
+			q(67047, {	-- Warm Away These Shivers
+				["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
+				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
+				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(200759),	-- Aruunem Berrytart
+					i(200885),	-- Cinna-Cinderbloom Tea
+					i(200886),	-- Lemon Silverleaf Tea
+				},
+			}),
 			n(BONUS_OBJECTIVIES, {
+				q(69895, {	-- Summoned Destroyer
+					-- id 193288
+					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
+				}),
 				q(69864, {	-- Forgotten Creation
 					-- id 193214
 					["coord"] = { 38.2, 59.0, THE_AZURE_SPAN },
+				}),
+				q(69872, {	-- Vakril, The Strongest Tuskarr
+					-- id 193223
+					["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
+				}),
+				--q(, {	-- Cascade
+				--	-- id 186962
+				--	["coord"] = { 23.7, 33.7, THE_AZURE_SPAN },
+				--}),
+				q(67173, {	-- Thieving Gnolls
+					-- 192749
+					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				}),
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required

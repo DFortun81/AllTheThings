@@ -127,6 +127,17 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(199757),	-- Magic Nipper (PET!)
 				},
 			}),
+			n(187300, {	-- Gryrmpech
+				["coord"] = { 37.9, 75.4, THALDRASZUS },
+				["g"] = {
+						-- RENOWN 5 --
+					i(199654),	-- Dragon Garden Shovel
+					i(199653),	-- Dragon Garden Hand Shovel
+					i(199652),	-- Dragon Garden Rake
+					i(199651),	-- Dragon Garden Hoe
+					i(199647),	-- Dragon Garden Fork
+				},
+			}),
 			n(185561, {	-- Kaestrasz
 				["coord"] = { 46.8, 78.9, VALDRAKKEN },
 				["g"] = {

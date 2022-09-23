@@ -920,7 +920,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 					-- npc 191611 rare??
 				}),
-				q(66956, {	-- Terillod the Devout
+				q(70751, {	-- Terillod the Devout
 					["coord"] = { 60.6, 82.9, THE_WAKING_SHORES },
 
 					-- npc 193171 rare??
@@ -931,6 +931,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 54.7, 82.3, THE_WAKING_SHORES },
 
 					-- npc 187209 rare??
+				}),
+				q(69839, {	-- Azra's Prized Peony
+					["coord"] = { 54.7, 70.8, THE_WAKING_SHORES },
+
+					-- npc 193135 rare??
 				}),
 				q(65994, {	-- Djaradin Djustice
 					["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE

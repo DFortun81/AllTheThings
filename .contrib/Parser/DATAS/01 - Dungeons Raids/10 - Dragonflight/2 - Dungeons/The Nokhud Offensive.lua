@@ -44,13 +44,23 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2637, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
 					["g"] = {
-
+						i(193753),	-- Breastplate of Soaring Terror
+						i(193690),	-- Drake Hunter Shoulderpads
+						i(193694),	-- Drake Slayer's Greaves
+						i(193689),	-- Granyth's Enduring Scale
+						i(193695),	-- Quarry Slayer Glaive
+						i(193693),	-- Shikaar Ranger Bracers
+						i(193692),	-- Stoneroot Headdress
 					},
 				}),
 				e(2636, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
 					["g"] = {
-
+						i(193697),	-- Bottle of Spiraling Winds
+						i(193699),	-- Staff of Violent Storms
+						i(193700),	-- Strike Twice
+						i(193698),	-- Thrashing Wind Vambraces
+						i(193696),	-- Thunderous Downburst Ring
 					},
 				}),
 				e(2581, {	-- Teera and Maruuk
@@ -59,12 +69,123 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						186339,	-- Teera
 					},
 					["g"] = {
-
+						i(193681),	-- Bow of the First Khanam
+						i(193677),	-- Furious Ragefeather
+						i(193679),	-- Idol of Trampling Hooves
+						i(193678),	-- Miniature Singing Stone
+						i(193680),	-- Tunic of the Eternal Hunt
+						i(193676),	-- Ukhel Ancestry Beads
 					},
 				}),
 				e(2580, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
 					["g"] = {
+						i(193683),	-- Blessed Ohn'ir Robes
+						i(193687),	-- Koroleth's Crackling Dagger
+						i(193684),	-- Legguards of Adamant Rule
+						i(193685),	-- Lightning-Charged Striders
+						i(193686),	-- Nokhud Traditionalist's Pauldrons
+						i(193688),	-- Stormslash
+						i(197625),	-- Windborne Velocidrake: Feathery Tail
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				e(2637, {	-- Granyth
+					["crs"] = { 186616 },	-- Granyth
+					["g"] = {
+						i(193753),	-- Breastplate of Soaring Terror
+						i(193690),	-- Drake Hunter Shoulderpads
+						i(193694),	-- Drake Slayer's Greaves
+						i(193689),	-- Granyth's Enduring Scale
+						i(193695),	-- Quarry Slayer Glaive
+						i(193693),	-- Shikaar Ranger Bracers
+						i(193692),	-- Stoneroot Headdress
+					},
+				}),
+				e(2636, {	-- The Raging Tempest
+					["crs"] = { 186615 },	-- The Raging Tempest
+					["g"] = {
+						i(193697),	-- Bottle of Spiraling Winds
+						i(193699),	-- Staff of Violent Storms
+						i(193700),	-- Strike Twice
+						i(193698),	-- Thrashing Wind Vambraces
+						i(193696),	-- Thunderous Downburst Ring
+					},
+				}),
+				e(2581, {	-- Teera and Maruuk
+					["crs"] = {
+						186338,	-- Maruuk
+						186339,	-- Teera
+					},
+					["g"] = {
+						i(193681),	-- Bow of the First Khanam
+						i(193677),	-- Furious Ragefeather
+						i(193679),	-- Idol of Trampling Hooves
+						i(193678),	-- Miniature Singing Stone
+						i(193680),	-- Tunic of the Eternal Hunt
+						i(193676),	-- Ukhel Ancestry Beads
+					},
+				}),
+				e(2580, {	-- Balakar Khan
+					["crs"] = { 186151 },	-- Balakar Khan
+					["g"] = {
+						i(193683),	-- Blessed Ohn'ir Robes
+						i(193687),	-- Koroleth's Crackling Dagger
+						i(193684),	-- Legguards of Adamant Rule
+						i(193685),	-- Lightning-Charged Striders
+						i(193686),	-- Nokhud Traditionalist's Pauldrons
+						i(193688),	-- Stormslash
+						i(197625),	-- Windborne Velocidrake: Feathery Tail
+					},
+				}),
+			}),
+			d(23, {	-- Mythic
+				e(2637, {	-- Granyth
+					["crs"] = { 186616 },	-- Granyth
+					["g"] = {
+						i(193753),	-- Breastplate of Soaring Terror
+						i(193690),	-- Drake Hunter Shoulderpads
+						i(193694),	-- Drake Slayer's Greaves
+						i(193689),	-- Granyth's Enduring Scale
+						i(193695),	-- Quarry Slayer Glaive
+						i(193693),	-- Shikaar Ranger Bracers
+						i(193692),	-- Stoneroot Headdress
+					},
+				}),
+				e(2636, {	-- The Raging Tempest
+					["crs"] = { 186615 },	-- The Raging Tempest
+					["g"] = {
+						i(193697),	-- Bottle of Spiraling Winds
+						i(193699),	-- Staff of Violent Storms
+						i(193700),	-- Strike Twice
+						i(193698),	-- Thrashing Wind Vambraces
+						i(193696),	-- Thunderous Downburst Ring
+					},
+				}),
+				e(2581, {	-- Teera and Maruuk
+					["crs"] = {
+						186338,	-- Maruuk
+						186339,	-- Teera
+					},
+					["g"] = {
+						i(193681),	-- Bow of the First Khanam
+						i(193677),	-- Furious Ragefeather
+						i(193679),	-- Idol of Trampling Hooves
+						i(193678),	-- Miniature Singing Stone
+						i(193680),	-- Tunic of the Eternal Hunt
+						i(193676),	-- Ukhel Ancestry Beads
+					},
+				}),
+				e(2580, {	-- Balakar Khan
+					["crs"] = { 186151 },	-- Balakar Khan
+					["g"] = {
+						i(193683),	-- Blessed Ohn'ir Robes
+						i(193687),	-- Koroleth's Crackling Dagger
+						i(193684),	-- Legguards of Adamant Rule
+						i(193685),	-- Lightning-Charged Striders
+						i(193686),	-- Nokhud Traditionalist's Pauldrons
+						i(193688),	-- Stormslash
 						i(197625),	-- Windborne Velocidrake: Feathery Tail
 					},
 				}),

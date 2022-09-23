@@ -9,6 +9,13 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(71155, {	-- The Azure Vaults
+					--["sourceQuests"] = { },
+					["provider"] = { "n", 186188 },	-- Sindragosa
+					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2582, {	-- Leymor
 					-- ["crs"] = {  },

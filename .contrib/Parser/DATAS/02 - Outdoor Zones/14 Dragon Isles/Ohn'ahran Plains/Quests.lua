@@ -873,6 +873,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				}),
 			}),
 			n(BONUS_OBJECTIVES, {
+				q(69837, {	-- Sunscale Behemoth
+					-- npcid 193133
+					["coord"] = { 63.4, 48.6, OHNAHRAN_PLAINS },
+				}),
 				q(70783, {	-- Skaara
 					-- npcid 192949
 					-- dropped i(198411),	-- Claw of Preparedness

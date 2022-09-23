@@ -39,6 +39,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199010),	-- Shorebreaker's Legguards
 		i(199011),	-- Shorebreaker's Pauldrons
 		i(199031),	-- Stonewatcher's Eye
+		i(199029),	-- Stonewatcher's Toe
 	}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
@@ -59,6 +60,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199046),	-- Shorebreaker's Greataxe
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword
+		i(199047),	-- Wind-Blessed Claw
 		i(199040),	-- Wind-Blessed Hammer
 	}),
 })));

@@ -3,17 +3,11 @@
 ---------------------------------------------------
 
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
-	m(THE_WAKING_SHORES, {
+	m(THALDRASZUS, {
 		n(ZONE_DROPS, {
-			i(193874, {	-- Qalashi Plans
-				["cr"] = 186777,	-- Meatgrinder Sotok
-			}),
-			i(191904, {	-- A Key Element
-				["cr"] = 189795,	-- Unsettled Rubble
-			}),
-			i(191122, {	-- Fullsails Supply Chest Key
-				-- npc 187971/187320
-
+			i(189361, {	-- Screechflight Scroll
+				["cr"] = 184592,	-- Hawthia Roc-Muncher
+				["coord"] = { 48.8, 75.1, THALDRASZUS },
 			}),
 		}),
 	}),

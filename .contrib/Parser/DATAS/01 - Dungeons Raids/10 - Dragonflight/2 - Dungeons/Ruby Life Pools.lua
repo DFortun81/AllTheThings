@@ -26,12 +26,21 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
 					["g"] = {
 						i(193761),	-- Chillworn's Infusion Staff
+						i(193759),	-- Egg Tender's Leggings
+						i(193757),	-- Ruby Whelp Shell
+						i(193728),	-- Scaleguard's Stalwart Greatboots
+						i(193758),	-- Subjugator's Chilling Grip
 					},
 				}),
 				e(2606, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
 					["g"] = {
+						i(193762),	-- Blazebinder's Hoof
+						i(193765),	-- Blazebound Lieutenant's Helm
+						i(193763),	-- Fireproof Drape of Cinders
 						i(193767),	-- Havoc Crusher
+						i(193764),	-- Invader's Firestorm Chestguard
+						i(193766),	-- Kokia's Burnout Rod
 					},
 				}),
 				e(2569, {	-- Kyrakka and Erkhart Stormvein
@@ -40,8 +49,96 @@ root("Instances", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf({
 						190485,	-- Erkhart Stormvein
 					},
 					["g"] = {
-						i(197401),	-- Renewed Proto-Drake: Beaked Snout
 						i(193755),	-- Backdraft Cleaver
+						i(193751),	-- Crown of Roaring Storms
+						i(193754),	-- Drake Rider's Stecktarge
+						i(193752),	-- Galerattle Gauntlets
+						i(193748),	-- Kyrakka's Searing Embers
+						i(193691),	-- Sky Saddle Cord
+						i(193756),	-- Skyferno Rondel
+						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				e(2609, {	-- Melidrussa Chillworn
+					["crs"] = { 188252 },	-- Melidrussa Chillworn
+					["g"] = {
+						i(193761),	-- Chillworn's Infusion Staff
+						i(193759),	-- Egg Tender's Leggings
+						i(193757),	-- Ruby Whelp Shell
+						i(193728),	-- Scaleguard's Stalwart Greatboots
+						i(193758),	-- Subjugator's Chilling Grip
+					},
+				}),
+				e(2606, {	-- Kokia Blazehoof
+					["crs"] = { 189232 },	-- Kokia Blazehoof
+					["g"] = {
+						i(193762),	-- Blazebinder's Hoof
+						i(193765),	-- Blazebound Lieutenant's Helm
+						i(193763),	-- Fireproof Drape of Cinders
+						i(193767),	-- Havoc Crusher
+						i(193764),	-- Invader's Firestorm Chestguard
+						i(193766),	-- Kokia's Burnout Rod
+					},
+				}),
+				e(2569, {	-- Kyrakka and Erkhart Stormvein
+					["crs"] = {
+						190484,	-- Kyrakka
+						190485,	-- Erkhart Stormvein
+					},
+					["g"] = {
+						i(193755),	-- Backdraft Cleaver
+						i(193751),	-- Crown of Roaring Storms
+						i(193754),	-- Drake Rider's Stecktarge
+						i(193752),	-- Galerattle Gauntlets
+						i(193748),	-- Kyrakka's Searing Embers
+						i(193691),	-- Sky Saddle Cord
+						i(193756),	-- Skyferno Rondel
+						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout
+						i(197601),	-- Windborne Velocidrake: Wavy Horns (H+ only?)
+					},
+				}),
+			}),
+			d(23, {	-- Mythic
+				e(2609, {	-- Melidrussa Chillworn
+					["crs"] = { 188252 },	-- Melidrussa Chillworn
+					["g"] = {
+						i(193761),	-- Chillworn's Infusion Staff
+						i(193759),	-- Egg Tender's Leggings
+						i(193757),	-- Ruby Whelp Shell
+						i(193728),	-- Scaleguard's Stalwart Greatboots
+						i(193758),	-- Subjugator's Chilling Grip
+					},
+				}),
+				e(2606, {	-- Kokia Blazehoof
+					["crs"] = { 189232 },	-- Kokia Blazehoof
+					["g"] = {
+						i(193762),	-- Blazebinder's Hoof
+						i(193765),	-- Blazebound Lieutenant's Helm
+						i(193763),	-- Fireproof Drape of Cinders
+						i(193767),	-- Havoc Crusher
+						i(193764),	-- Invader's Firestorm Chestguard
+						i(193766),	-- Kokia's Burnout Rod
+					},
+				}),
+				e(2569, {	-- Kyrakka and Erkhart Stormvein
+					["crs"] = {
+						190484,	-- Kyrakka
+						190485,	-- Erkhart Stormvein
+					},
+					["g"] = {
+						i(193755),	-- Backdraft Cleaver
+						i(193751),	-- Crown of Roaring Storms
+						i(193754),	-- Drake Rider's Stecktarge
+						i(193752),	-- Galerattle Gauntlets
+						i(193748),	-- Kyrakka's Searing Embers
+						i(193691),	-- Sky Saddle Cord
+						i(193756),	-- Skyferno Rondel
+						i(193750),	-- Wind Soarer's Breeches
+						i(197401),	-- Renewed Proto-Drake: Beaked Snout
 						i(197601),	-- Windborne Velocidrake: Wavy Horns (H+ only?)
 					},
 				}),

@@ -22,6 +22,25 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 193015 },	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
 			}),
+				-- RENOWN 5 --
+			q(70883, {	-- A Hand In Cultivation
+				["description"] = "Requires Renown 5.",
+				["provider"] = { "n", 187300 },	-- Gryrmpech
+				["coord"] = { 37.9, 75.4, THALDRASZUS },
+				["g"] = {
+					i(199654),	-- Dragon Garden Shovel
+					i(199653),	-- Dragon Garden Hand Shovel
+					i(199652),	-- Dragon Garden Rake
+					i(199651),	-- Dragon Garden Hoe
+					i(199647),	-- Dragon Garden Fork
+				},
+			}),
+				-- RENOWN 6 --
+			q(71210, {	-- To Dragonbane Keep!
+				["description"] = "Requires Renown 6. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 197478 },	-- Herald Flaps
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
 		}),
 	}),
 })));

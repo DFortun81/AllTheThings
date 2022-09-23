@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	inst(1196, {	-- Brackenhide Hollow
 		["coord"] = { 11.6, 48.8, THE_AZURE_SPAN },
@@ -25,25 +24,142 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						186125,	-- Tricktotem
 					},
 					["g"] = {
-
+						i(193674),	-- Ancestral Stone Shaper
+						i(193671),	-- Bloodied Wedding Ring
+						i(193672),	-- Frenzying Signoll Flare
+						i(193675),	-- Poached Kalu'ak Spear
+						i(193673),	-- Ravenous Pursuer's Footwraps
 					},
 				}),
 				e(2568, {	-- Treemouth
 					["crs"] = { 186120 },	-- Treemouth
 					["g"] = {
-
+						i(193654),	-- Ancient Rot Walkers
+						i(193657),	-- Binders of the Moldering
+						i(193658),	-- Crushing Bough of Deterioration
+						i(193653),	-- Mask of Imperishable Leaves
+						i(193655),	-- Rooted Shoulders of Putrefaction
+						i(193656),	-- Swollen Bark Clasp
+						i(193652),	-- Treemouth's Festering Splinter
 					},
 				}),
 				e(2567, {	-- Gutshot
 					["crs"] = { 186116 },	-- Gutshot
 					["g"] = {
-
+						i(193667),	-- Boastful Stalker's Epaulets
+						i(193793),	-- Ferocious Hyena Hidebinders
+						i(193670),	-- Gutshot's Trophy Hunter
+						i(193669),	-- Trapmaster's Utility Belt
+						i(193666),	-- Tuskarr Bone Necklace
 					},
 				}),
 				e(2569, {	-- Decatriarch Wratheye
 					["crs"] = { 186121 },	-- Decatriarch Wratheye
 					["g"] = {
-
+						i(193661),	-- Blight Weaver's Clutches
+						i(193665),	-- Decatriarch's Bone Pestle
+						i(193663),	-- Decay Mother's Wrathful Gaze
+						i(193662),	-- Densified Ooze Tassets
+						i(193660),	-- Idol of Pure Decay
+						i(193664),	-- Rot-Carved Totemic Shank
+					},
+				}),
+			}),
+			d(2, {	-- Heroic
+				e(2570, {	-- Hackclaw's War-Band
+					["crs"] = {
+						186124,	-- Gashtooth
+						186122,	-- Rira Hackclaw
+						186125,	-- Tricktotem
+					},
+					["g"] = {
+						i(193674),	-- Ancestral Stone Shaper
+						i(193671),	-- Bloodied Wedding Ring
+						i(193672),	-- Frenzying Signoll Flare
+						i(193675),	-- Poached Kalu'ak Spear
+						i(193673),	-- Ravenous Pursuer's Footwraps
+					},
+				}),
+				e(2568, {	-- Treemouth
+					["crs"] = { 186120 },	-- Treemouth
+					["g"] = {
+						i(193654),	-- Ancient Rot Walkers
+						i(193657),	-- Binders of the Moldering
+						i(193658),	-- Crushing Bough of Deterioration
+						i(193653),	-- Mask of Imperishable Leaves
+						i(193655),	-- Rooted Shoulders of Putrefaction
+						i(193656),	-- Swollen Bark Clasp
+						i(193652),	-- Treemouth's Festering Splinter
+					},
+				}),
+				e(2567, {	-- Gutshot
+					["crs"] = { 186116 },	-- Gutshot
+					["g"] = {
+						i(193667),	-- Boastful Stalker's Epaulets
+						i(193793),	-- Ferocious Hyena Hidebinders
+						i(193670),	-- Gutshot's Trophy Hunter
+						i(193669),	-- Trapmaster's Utility Belt
+						i(193666),	-- Tuskarr Bone Necklace
+					},
+				}),
+				e(2569, {	-- Decatriarch Wratheye
+					["crs"] = { 186121 },	-- Decatriarch Wratheye
+					["g"] = {
+						i(193661),	-- Blight Weaver's Clutches
+						i(193665),	-- Decatriarch's Bone Pestle
+						i(193663),	-- Decay Mother's Wrathful Gaze
+						i(193662),	-- Densified Ooze Tassets
+						i(193660),	-- Idol of Pure Decay
+						i(193664),	-- Rot-Carved Totemic Shank
+					},
+				}),
+			}),
+			d(23, {	-- Mythic
+				e(2570, {	-- Hackclaw's War-Band
+					["crs"] = {
+						186124,	-- Gashtooth
+						186122,	-- Rira Hackclaw
+						186125,	-- Tricktotem
+					},
+					["g"] = {
+						i(193674),	-- Ancestral Stone Shaper
+						i(193671),	-- Bloodied Wedding Ring
+						i(193672),	-- Frenzying Signoll Flare
+						i(193675),	-- Poached Kalu'ak Spear
+						i(193673),	-- Ravenous Pursuer's Footwraps
+					},
+				}),
+				e(2568, {	-- Treemouth
+					["crs"] = { 186120 },	-- Treemouth
+					["g"] = {
+						i(193654),	-- Ancient Rot Walkers
+						i(193657),	-- Binders of the Moldering
+						i(193658),	-- Crushing Bough of Deterioration
+						i(193653),	-- Mask of Imperishable Leaves
+						i(193655),	-- Rooted Shoulders of Putrefaction
+						i(193656),	-- Swollen Bark Clasp
+						i(193652),	-- Treemouth's Festering Splinter
+					},
+				}),
+				e(2567, {	-- Gutshot
+					["crs"] = { 186116 },	-- Gutshot
+					["g"] = {
+						i(193667),	-- Boastful Stalker's Epaulets
+						i(193793),	-- Ferocious Hyena Hidebinders
+						i(193670),	-- Gutshot's Trophy Hunter
+						i(193669),	-- Trapmaster's Utility Belt
+						i(193666),	-- Tuskarr Bone Necklace
+					},
+				}),
+				e(2569, {	-- Decatriarch Wratheye
+					["crs"] = { 186121 },	-- Decatriarch Wratheye
+					["g"] = {
+						i(193661),	-- Blight Weaver's Clutches
+						i(193665),	-- Decatriarch's Bone Pestle
+						i(193663),	-- Decay Mother's Wrathful Gaze
+						i(193662),	-- Densified Ooze Tassets
+						i(193660),	-- Idol of Pure Decay
+						i(193664),	-- Rot-Carved Totemic Shank
 					},
 				}),
 			}),
