@@ -17268,12 +17268,13 @@ function app:GetWindow(suffix, parent, onUpdate)
 
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
+		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+		window.CloseButton:SetSize(20, 20);
 		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
 
 		-- The Scroll Bar.
 		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -10);
+		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -15);
 		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
