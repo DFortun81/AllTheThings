@@ -301,23 +301,29 @@ def create_missing_recipes() -> None:
             )
             difference = remove_empty_builds(difference)
             missing_file.writelines(difference)
-        itemdb_list = list[str]()
-        itemdb_path = Path(
-            DATAS_FOLDER,
-            "00 - Item Database",
-            "ProfessionDB",
-            f"{profession}ItemDB.txt",
-        )
-        with open(itemdb_path) as itemdb_file:
-            for line in itemdb_file:
-                line = line.split(";")[0].split(",")[1]
-                line = re.sub("\\D", "", line)
-                itemdb_list.append(line + "\n")
-            difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
-            if not (difference := remove_empty_builds(difference)):
-                continue
-            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
-            missing_file.writelines(difference)
+            itemdb_list = list[str]()
+            itemdb_path = Path(
+                DATAS_FOLDER,
+                "00 - Item Database",
+                "ProfessionDB",
+                f"{profession}ItemDB.lua",
+            )
+            try:
+                with open(itemdb_path) as itemdb_file:
+                    for line in itemdb_file:
+                        try:
+                            line = line.split(";")[0].split(",")[1]
+                        except IndexError:
+                            line = ""
+                        line = re.sub("\\D", "", line)
+                        itemdb_list.append(line + "\n")
+                    difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
+                    if not (difference := remove_empty_builds(difference)):
+                        continue
+                    missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
+                    missing_file.writelines(difference)
+            except FileNotFoundError:
+                print(f"This {profession} has no ItemDB.lua")
 
 
 DB_PATHS = {
