@@ -139,7 +139,10 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
                 case Things.SkillLine:
                     # Helps Professions
-                    thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+                    try:
+                        thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['DisplayName_lang[0]']}\n")
                 case Things.Item:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
