@@ -280,6 +280,14 @@
 934,  All - Specializations
 962,  Pet - Primal Fire Elemental
 963,  Pet - Primal Earth Elemental
+975,    Way of the Grill
+976,    Way of the Wok
+977,    Way of the Pot
+978,    Way of the Steamer
+979,    Way of the Oven
+980,    Way of the Brew
+981,    Apprentice Cooking
+982,    Journeyman Cookbook
 983,  Porcupine
 984,  Crane
 985,  Water Strider
@@ -510,3 +518,21 @@
 2806,  Pet - Courser
 2807,  Pet - Camel
 2817,Language: Cypher
+2592,Classic Fishing
+2808,Racial - Dracthyr
+2810,Evoker
+2822,Dragon Isles Blacksmithing
+2823,Dragon Isles Alchemy
+2824,Dragon Isles Cooking
+2825,Dragon Isles Enchanting
+2826,Dragon Isles Fishing
+2827,Dragon Isles Engineering
+2828,Dragon Isles Inscription
+2829,Dragon Isles Jewelcrafting
+2830,Dragon Isles Leatherworking
+2831,Dragon Isles Tailoring
+2832,Dragon Isles Herbalism
+2833,Dragon Isles Mining
+2834,Dragon Isles Skinning
+2843,Template Character Spells
+2846,Crafting

@@ -187,14 +187,25 @@ def get_existing_ids(thing: Things) -> list[str]:
     return existing_ids
 
 
-def build_profession_dict() -> dict[str, int]:
+def build_profession_dict() -> dict[str, int | dict[str, int]]:
     """Returns dict[profession: str, skillLineID: int]."""
-    profession_dict = dict[str, int]()
-    with open(Path("Raw", "SkillLine.txt")) as skillline_file:
+    profession_dict = dict[str, int | list[str]]()
+    with open(Path("Raw", "SkillLine.txt")) as skillline_file, open(Path("Builds", "SkillLine.txt")) as build_file:
+        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLine.txt"), 0)
+        builds = build_file.readlines()
         for skillline_line in skillline_file:
+            if skillline_line not in builds:
+                skillline_id, profession = skillline_line.split(",")
+                skillline_id = re.sub("\\D", "", skillline_id)
+                if skillline_id+"\n" not in exclusion_list:
+                    profession_dict[profession.strip()] = int(skillline_id)
+    with open(Path("Exclusion", "SkillLineOther.txt")) as skilllineother_file:
+        other_dict = dict[str, int]()
+        for skillline_line in skilllineother_file:
             skillline_id, profession = skillline_line.split(",")
             skillline_id = re.sub("\\D", "", skillline_id)
-            profession_dict[profession] = int(skillline_id)
+            other_dict[profession.strip()] = int(skillline_id)
+            profession_dict["Other"] = other_dict
     return profession_dict
 
 
@@ -212,14 +223,21 @@ def sort_raw_file_recipes() -> None:
         builds = build_file.readlines()
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
+            recipe_list = list[str]()
             with open(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
                     if line in builds:
-                        sorted_file.write(line)
+                        recipe_list.append(line)
                     else:
-                        spell,skill_line = line.split(",")
-                        if int(skill_line) == profession_dict[profession]:
-                            sorted_file.write(spell + "\n")
+                        spell, skill_line = line.split(",")
+                        if profession == "Other":
+                            if int(skill_line.strip()) in list(profession_dict["Other"].values()):
+                                recipe_list.append(spell + "\n")
+                        else:
+                            if int(skill_line) == profession_dict[profession]:
+                                recipe_list.append(spell + "\n")
+                recipe_list = remove_empty_builds(recipe_list)
+                sorted_file.writelines(recipe_list)
 
 
 def create_raw_file(thing: Things) -> None:
@@ -298,7 +316,7 @@ def create_missing_recipes() -> None:
             difference = sorted(set(raw_lines) - set(itemdb_list), key=raw_lines.index)
             if not (difference := remove_empty_builds(difference)):
                 continue
-            missing_file.write(f"\n\n\n\nMissing in {profession}ITemDB.lua\n\n")
+            missing_file.write(f"\n\n\n\nMissing in {profession}ItemDB.lua\n\n")
             missing_file.writelines(difference)
 
 

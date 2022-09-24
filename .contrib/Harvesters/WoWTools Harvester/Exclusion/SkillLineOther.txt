@@ -152,3 +152,18 @@
 2761,  Shadowlands Mining
 2762,  Shadowlands Skinning
 2780,  Shadowlands Tailoring
+2592,Classic Fishing
+2822,Dragon Isles Blacksmithing
+2823,Dragon Isles Alchemy
+2824,Dragon Isles Cooking
+2825,Dragon Isles Enchanting
+2826,Dragon Isles Fishing
+2827,Dragon Isles Engineering
+2828,Dragon Isles Inscription
+2829,Dragon Isles Jewelcrafting
+2830,Dragon Isles Leatherworking
+2831,Dragon Isles Tailoring
+2832,Dragon Isles Herbalism
+2833,Dragon Isles Mining
+2834,Dragon Isles Skinning
+2846,Crafting
