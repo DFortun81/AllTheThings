@@ -1908,9 +1908,12 @@ app.L = {
 		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization
+		[-1101] = "Primal Storms",
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
+		[-1111] = "Climbing",
  		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Aylaag",															-- Aylaag
+		[-1122] = "Grand Hunts",
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 	-- Warrior order hall lore items

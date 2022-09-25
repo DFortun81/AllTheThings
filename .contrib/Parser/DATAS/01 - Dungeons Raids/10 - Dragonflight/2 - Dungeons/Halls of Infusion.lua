@@ -11,10 +11,10 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 		},
 		["g"] = {
 			n(QUESTS, {
-				q(66866, {	-- Relic Recovery: Halls of Infusion
-					["sourceQuests"] = { 67007 },	-- Archival Assistance
-					["provider"] = { "n", 191957 },	-- Theldren
-					["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				q(72192, {	-- Halls of Infusion: Entropy to Order
+					["sourceQuests"] = { 66244 },	-- To Valdrakken
+					["provider"] = { "n", 191369 },	-- Watcher Koranos
+					["coord"] = { 54.4, 40.9, VALDRAKKEN },
 				}),
 			}),
 			d(1, {	-- Normal

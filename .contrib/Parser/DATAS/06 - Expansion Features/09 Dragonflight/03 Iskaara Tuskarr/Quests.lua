@@ -6,15 +6,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 		n(QUESTS, {
 				-- RENOWN 3 --
 			q(70938, {	-- Community Feasts
-				["description"] = "Requires Renown 3. Anywhere in The Azure Span Will Rowie come to.",
+				["description"] = "Requires Renown 3. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197631 },	-- Rowie
-				["maps"] = { THE_AZURE_SPAN },
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 				-- RENOWN 4 --
 			q(70941, {	-- Fishing Holes
-				["description"] = "Requires Renown 4. Anywhere in The Azure Span Will Rowie come to.",
+				["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197631 },	-- Rowie
-				["maps"] = { THE_AZURE_SPAN },
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(70939, {	-- Cooking Utensils
 				["description"] = "Requires Renown 5.",
@@ -29,14 +29,18 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			}),
 				-- RENOWN 5 --
 			q(71230, {	-- Tuskarr Fishing Gear
-				["description"] = "Requires Renown 5. Anywhere in The Azure Span Will Rowie come to.",
+				["description"] = "Requires Renown 5. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197631 },	-- Rowie
-				["maps"] = { THE_AZURE_SPAN },
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(70940, {	-- Tuskarr Champion's Tales
 				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 186448 },	-- Elder Poa
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
+			q(70940, {	-- Tuskarr Champion's Tales
+				["description"] = "Requires Renown 5.",
+				["provider"] = { "i", 201470 },	-- Story of an Unusual Victory
 			}),
 		}),
 	}),

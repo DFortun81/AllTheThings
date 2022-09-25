@@ -3,7 +3,7 @@
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(THALDRASZUS, {
 		n(QUESTS, {
-			n(-2099, {	-- Campaign
+			n(-1099, {	-- Campaign
 					-- Chapter 1
 				q(66244, {	-- To Valdrakken
 					["sourceQuests"] = { 66015 },	-- The Blue Dragon Oathstone
@@ -247,7 +247,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 70040 },	-- Tumbling Through Time
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
-					["maps"] = { 2085 },	-- Primalist Tomorrow
 					["g"] = {
 						currency(2118),	-- Elemental Overflow
 					},
@@ -256,7 +255,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 70040 },	-- Tumbling Through Time
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
-					["maps"] = { 2085, 2092 },	-- Primalist Tomorrow/Azmerloth
+					["maps"] = { 2092 },	-- Azmerloth
 					["g"] = {
 						i(192749),	-- Chrono Crystal
 					},
@@ -264,7 +263,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				q(66031, {	-- Making Time
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 186953 },	-- Possible Future You
-					["coord"] = { 61.4, 50.2, 2085 },	-- Primalist Tomorrow
+					["coord"] = { 61.4, 50.2, PRIMALIST_TOMORROW },
 					["g"] = {
 						currency(2118),	-- Elemental Overflow
 						i(195185),	-- Annihilation Warder's Cloak
@@ -273,7 +272,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				q(66030, {	-- Resistance Isn't Futile
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 183860 },	-- Soridormi
-					["coord"] = { 61.1, 50.8, 2085 },	-- Primalist Tomorrow
+					["coord"] = { 61.1, 50.8, PRIMALIST_TOMORROW },
 					["g"] = {
 						currency(2118),	-- Elemental Overflow
 						i(192467),	-- Bandages
@@ -285,7 +284,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						66030,	-- Resistance Isn't Futile
 					},
 					["provider"] = { "n", 183860 },	-- Soridormi
-					["coord"] = { 61.1, 50.8, 2085 },	-- Primalist Tomorrow
+					["coord"] = { 61.1, 50.8, PRIMALIST_TOMORROW },
 				}),
 				q(66033, {	-- To the... Past?
 					["sourceQuests"] = { 66032 },	-- Return to the Present
@@ -402,11 +401,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["sourceQuests"] = { 67073 },	-- Red Dawn
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.5, 56.2, THALDRASZUS },
-				}),
-				q(70750, {	-- Making a Name
-					["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.7, 58.0, THALDRASZUS },
 				}),
 			}),
 			-- SIDE
@@ -613,6 +607,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				},
 				["provider"] = { "n", 191753 },	-- Waywatcher Alvi
 				["coord"] = { 54.7, 69.5, THALDRASZUS },
+				["g"] = {
+					i(191405),	-- Alvi's "Ledger"
+				},
 			}),
 			q(66456, {	-- A Poisonous Palette
 				["sourceQuests"] = {
@@ -704,7 +701,182 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					-- Bleeding Hearts
 				},
 			}),
+			---
+
+			q(72190, {	-- Reservoir Reservations
+				["sourceQuests"] = { 66244 },	-- To Valdrakken
+				["provider"] = { "n", 198349 },	-- Talikka
+				["coord"] = { 25.5, 40.9, VALDRAKKEN },
+			}),
+			q(65913, {	-- Wotcher, Watcher?
+				["sourceQuests"] = { 72190 },	-- Reservoir Reservations
+				["provider"] = { "n", 190527 },	-- Zuttiki
+				["coord"] = { 49.5, 58.9, THALDRASZUS },
+			}),
+			q(65918, {	-- Preventative Maintenance
+				["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
+				["provider"] = { "n", 190527 },	-- Zuttiki
+				["coord"] = { 49.5, 58.9, THALDRASZUS },
+			}),
+			q(70139, {	-- Where There's a Ward, There's a Way
+				["sourceQuests"] = { 65913 },	-- Wotcher, Watcher?
+				["provider"] = { "n", 189045 },	-- Mara
+				["coord"] = { 49.6, 58.8, THALDRASZUS },
+			}),
+			q(65921, {	-- Refti Retribution
+				["sourceQuests"] = {
+					65918,	-- Preventative Maintenance
+					70139,	-- Where There's a Ward, There's a Way
+				},
+				["provider"] = { "n", 190527 },	-- Zuttiki
+				["coord"] = { 49.5, 58.9, THALDRASZUS },
+			}),
+			q(65916, {	-- We Don't Negotiate with Primalists
+				["sourceQuests"] = {
+					65918,	-- Preventative Maintenance
+					70139,	-- Where There's a Ward, There's a Way
+				},
+				["provider"] = { "n", 189045 },	-- Mara
+				["coord"] = { 49.6, 58.8, THALDRASZUS },
+			}),
+			q(70139, {	-- Where There's a Ward, There's a Way
+				["sourceQuests"] = {
+					65921,	-- Refti Retribution
+					65916,	-- We Don't Negotiate with Primalists
+				},
+				["provider"] = { "n", 189045 },	-- Mara
+				["coord"] = { 49.6, 58.8, THALDRASZUS },
+				["g"] = {
+					i(195192),	-- Sister's Gift
+					-- Crit Tyrhold
+				},
+			}),
+
+
+
+
+
+
+
+			q(71024, {	-- Chaos and Commotion
+				["sourceQuests"] = { 66244 },	-- To Valdrakken
+				["provider"] = { "n", 189842 },	-- Captain Drine
+				["coord"] = { 56.0, 40.0, VALDRAKKEN },
+			}),
+			q(70837, {	-- Follow the Clues
+				["sourceQuests"] = { 71024 },	-- Chaos and Commotion
+				["provider"] = { "n", 196984 },	-- Investigator Erima
+				["coord"] = { 56.4, 43.8, VALDRAKKEN },
+			}),
+			q(70842, {	-- Detonation Locations
+				["sourceQuests"] = { 70837 },	-- Follow the Clues
+				["provider"] = { "n", 196416 },	-- Investigator Erima
+				["coord"] = { 42.7, 81.9, THALDRASZUS },
+				["g"] = {
+					i(200463),	-- Mistyvale Map: Black Market Auction House
+					i(200462),	-- Mistyvale Map: Butterfly Garden
+					i(200461),	-- Mistyvale Map: Training Grounds
+				},
+			}),
+			q(70838, {	-- Rebels With a Cause
+				["sourceQuests"] = { 70837 },	-- Follow the Clues
+				["provider"] = { "n", 196416 },	-- Investigator Erima
+				["coord"] = { 42.7, 81.9, THALDRASZUS },
+			}),
+			q(70843, {	-- Ruin The Runestones
+				["sourceQuests"] = { 70837 },	-- Follow the Clues
+				["provider"] = { "n", 196464 },	-- Unfinished Runestone
+				["coord"] = { 43.6, 81.0, THALDRASZUS },
+			}),
+			q(70850, {	-- Maldra's in Hot Water
+				["sourceQuests"] = {
+					70842,	-- Detonation Locations
+					70838,	-- Rebels With a Cause
+					70843,	-- Ruin The Runestones
+				},
+				["provider"] = { "n", 196432 },	-- Investigator Erima
+				["coord"] = { 42.6, 78.8, THALDRASZUS },
+			}),
+			q(70873, {	-- Chasing Waterfalls
+				["sourceQuests"] = { 70850 },	-- Maldra's in Hot Water
+				["provider"] = { "n", 196562 },	-- Maldra Flametongue
+				["coord"] = { 42.7, 78.8, THALDRASZUS },
+			}),
+			q(70874, {	-- Breaching the Fire Wall
+				["sourceQuests"] = { 70873 },	-- Chasing Waterfalls
+				["provider"] = { "n", 196562 },	-- Maldra Flametongue
+				["coord"] = { 42.7, 78.8, THALDRASZUS },
+			}),
+			q(70876, {	-- Fracture Foci
+				["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+				["provider"] = { "n", 196566 },	-- Investigator Erima
+				["coord"] = { 42.4, 78.9, THALDRASZUS },
+			}),
+			q(70878, {	-- Ring of Fire
+				["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+				["provider"] = { "n", 196608 },	-- Maldra Flametongue
+				["coord"] = { 42.3, 78.9, THALDRASZUS },
+			}),
+			q(70875, {	-- Worst of the Worst
+				["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+				["provider"] = { "n", 196566 },	-- Investigator Erima
+				["coord"] = { 42.4, 78.9, THALDRASZUS },
+			}),
+			q(70879, {	-- Report on the Rebels
+				["sourceQuests"] = { 70874 },	-- Breaching the Fire Wall
+				["provider"] = { "n", 196566 },	-- Investigator Erima
+				["coord"] = { 42.4, 78.9, THALDRASZUS },
+				["g"] = {
+					-- MIsty Vale
+				},
+			}),
+
+
+
+			q(72067, {	-- Relaxation Time!
+				["sourceQuests"] = { 66244 },	-- To Valdrakken
+				["provider"] = { "n", 197986 },	-- Hot Springs Spa Promoter
+				["coord"] = { 48.1, 59.6, VALDRAKKEN },
+				["isBreadcrumb"] = true,	-- Probably?
+			}),
+			q(72246, {	-- Serene Dreams
+				["sourceQuests"] = { 72067 },	-- Relaxation Time!
+				["provider"] = { "n", 197670 },	-- Spa Concierge
+				["coord"] = { 40.4, 49.5, THALDRASZUS },
+			}),
+			q(70738, {	-- Good Reviews
+				["sourceQuests"] = { 72246 },	-- Serene Dreams
+				["provider"] = { "n", 194717 },	-- Xijan Thornpaw
+				["coord"] = { 40.5, 48.9, THALDRASZUS },
+			}),
+			q(70741, {	-- Some Favorite Things
+				["sourceQuests"] = { 72246 },	-- Serene Dreams
+				["provider"] = { "o", 381297 },	-- Misplaced Luggage
+				["coord"] = { 41.5, 47.5, THALDRASZUS },
+			}),
+			q(70740, {	-- Steam Cleaning
+				["sourceQuests"] = { 72246 },	-- Serene Dreams
+				["provider"] = { "n", 196160 },	-- Quilius
+				["coord"] = { 40.5, 48.9, THALDRASZUS },
+			}),
+			q(70743, {	-- Precious Baby
+				["sourceQuests"] = {
+					70738,	-- Good Reviews
+					70741,	-- Some Favorite Things
+					70740,	-- Steam Cleaning
+				},
+				["provider"] = { "n", 194812 },	-- Cae'Ryn
+				["coord"] = { 40.5, 49.0, THALDRASZUS },
+			}),
 			n(BONUS_OBJECTIVES, {
+				q(72114, {	-- Acrosoth
+					-- npc 193243
+					["coord"] = { 40.5, 78.3, THALDRASZUS },
+				}),
+				q(72116, {	-- Liskron the Dazzling
+					-- npc 193273
+					["coord"] = { 36.7, 72.8, THALDRASZUS },
+				}),
 				q(69967, {	-- Lookout Mordren
 					-- npc 193668
 					-- item 200182
@@ -718,6 +890,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					-- npc 193229
 					["coord"] = { 55.6, 77.4, THALDRASZUS },
 				}),
+				q(69962, {	-- Corrupted Proto-Dragon
+					-- npc 193658
+					["coord"] = { 44.9, 69.0, THALDRASZUS },
+				}),
+				q(69964, {	-- Craggravated Elemental
+					-- npc 193663
+					["coord"] = { 52.8, 67.5, THALDRASZUS },
+				}),
 			}),
 		}),
 	}),
@@ -727,5 +907,6 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
 		q(72084),	-- Popped during Quest at South Gate?
 		q(67030),	-- WQ Available?
+		q(70511),	-- Popped when doing quest and lootning 198964 Elementious Splinter from mobs?
 	}),
 }));

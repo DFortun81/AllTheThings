@@ -36,12 +36,15 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			},
 			["g"] = {
 				i(194746),	-- Thomas's Empty Bottle
-				i(191462),	-- Hochenblume+++
-				i(190394),	-- Tyrivite Ore+++
-				i(193211),	-- Resilient Leather+++
+				i(191461),	-- Hochenblume++
+				i(190396),	-- Tyrivite Ore++
+				i(193210),	-- Resilient Leather++
+				i(193214),	-- Adamant Scales++
+				i(193922),	-- Wildercloth
+				i(194123),	-- Chromatic Dust
 			},
 		}),
-		q(67143, {	-- To Give One's Heart [WRONG NAME AND ID...]
+		q(67137, {	-- Professionally Equipped
 			["sourceQuests"] = { 67100 },	-- A Gift for Miguel
 			["provider"] = { "n", 192539 },	-- Miguel Bright
 			["coords"] = {
@@ -51,8 +54,59 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			["g"] = {
 				i(193487),	-- Alchemist's Hat
 				i(193615),	-- Jeweler's Tool Apron
+				i(193486),	-- Leatherworker's Smock
+				i(193482),	-- Skinner's Cap
 				i(193534),	-- Wildercloth Chef's Hat
 				i(193529),	-- Wildercloth Fishing Cap
+			},
+		}),
+		q(70126, {	-- A Finishing Touch
+			["sourceQuests"] = {
+				67143,	-- To Give One's Heart
+				67137,	-- Professionally Equipped
+			},
+			["provider"] = { "n", 192539 },	-- Miguel Bright
+			["coords"] = {
+				{ 60.2, 72.2, THE_WAKING_SHORES },
+				{ 71.7, 81.2, OHNAHRAN_PLAINS },
+			},
+			["g"] = {
+				i(197765),	-- Impossibly Sharp Cutting Knife
+				i(191516),	-- Brood Salt
+				i(190456),	-- Artisan's Mettle
+			},
+		}),
+		q(67295, { -- That's My Specialty
+			["sourceQuests"] = { 70126 },	-- A Finishing Touch
+			["provider"] = { "n", 192539 },	-- Miguel Bright
+			["coords"] = {
+				{ 60.2, 72.2, THE_WAKING_SHORES },
+				{ 71.7, 81.2, OHNAHRAN_PLAINS },
+			},
+			["g"] = {
+				i(191784),	-- Dragon Shard of Knowledge
+			},
+		}),
+		q(67298, { -- The Wonders of the World
+			["sourceQuests"] = { 67295 },	-- That's My Specialty
+			["provider"] = { "n", 192539 },	-- Miguel Bright
+			["coords"] = {
+				{ 60.2, 72.2, THE_WAKING_SHORES },
+				{ 71.7, 81.2, OHNAHRAN_PLAINS },
+			},
+			["g"] = {
+				i(191784),	-- Dragon Shard of Knowledge
+			},
+		}),
+		q(69946, { -- The Master of Their Craft
+			["sourceQuests"] = { 67298 },	-- The Wonders of the World
+			["provider"] = { "n", 192539 },	-- Miguel Bright
+			["coords"] = {
+				{ 60.2, 72.2, THE_WAKING_SHORES },
+				{ 71.7, 81.2, OHNAHRAN_PLAINS },
+			},
+			["g"] = {
+				i(191784),	-- Dragon Shard of Knowledge
 			},
 		}),
 		q(69919, {	-- A Craft in Need
@@ -82,8 +136,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(198048),	-- Titan Training Matrix I
 			},
 		}),
-		q(67143, {	-- To Give One's Heart
-			-- Probably lvl 70?
+		q(70221, {	-- Show Your Mettle
 			["provider"] = { "n", 192574 },	-- Thomas Bright
 			["coords"] = {
 				{ 60.2, 72.2, THE_WAKING_SHORES },
@@ -121,7 +174,8 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 				["g"] = {
-					i(192851),	-- Eternity Amber
+					i(192851),	-- Eternity Amber+++
+					i(192845),	-- Vibrant Emerald+++
 				},
 			}),
 		}),
@@ -131,6 +185,22 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
 				["coord"] = { 76.6, 34.9, THE_WAKING_SHORES },
 			}),
+			q(69979, { -- A Worthy Hunt
+				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(191784),	-- Dragon Shard of Knowledge
+				},
+			}),
+			q(70191, { -- Specialized Secrets: Leatherworking
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
 		}),
 		prof(SKINNING, {
 			q(70363, {	-- To the Dragon Isles: Skinning
@@ -138,6 +208,23 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				["provider"] = { "n", 192558 },    -- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 			}),
+			q(70193, { -- Specialized Secrets: Skinning
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
 		}),
 	}),
 })));
+
+
+root("HiddenQuestTriggers", m(DRAGON_ISLES, {
+	m(VALDRAKKEN, {
+		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?
+		q(71753),	-- Crafted i(193615)
+		q(71704),	-- First time crafting item 193386 (Resilient Leather Boots)
+	}),
+}));

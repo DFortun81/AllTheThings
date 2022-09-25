@@ -10,12 +10,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
+				["cost"] = { { "i", 200093, 1 }, }, 	-- 1xCentaur Hunting Trophy
 			}),
 			q(70929, {	-- More Hunting Trophies
 				["description"] = "Requires Renown 2.",
 				["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 				["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 				["repeatable"] = true,
+				["cost"] = { { "i", 200093, 5 }, }, 	-- 5xCentaur Hunting Trophy
 			}),
 				-- RENOWN 3	--
 			q(72117, {	-- Cultural Exchange
@@ -30,9 +32,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			}),
 				-- RENOWN 4	--
 			q(71229, {	-- Call of the Plains
-				["description"] = "Requires Renown 4. Anywhere in Ohn'ahran Plains Will Roki come to.",
+				["description"] = "Requires Renown 4. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
-				["maps"] = { OHNAHRAN_PLAINS },
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 				-- RENOWN 5	--
 			q(71058, {	-- Observing the Wind
@@ -46,9 +48,9 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			}),
 				-- RENOWN 6	--
 			q(71231, {	-- Call of the Hunt
-				["description"] = "Requires Renown 6. Anywhere in Ohn'ahran Plains Will Roki come to.",
+				["description"] = "Requires Renown 6. Spawns Anywhere on Dragon Isles.",
 				["provider"] = { "n", 197627 },	-- Roki
-				["maps"] = { OHNAHRAN_PLAINS },
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 			}),
 			q(70501, {	-- License to Hunt
 				["description"] = "Requires Renown 6.",

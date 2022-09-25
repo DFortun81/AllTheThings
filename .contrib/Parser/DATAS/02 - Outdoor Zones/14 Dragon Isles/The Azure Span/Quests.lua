@@ -623,6 +623,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 					["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },	-- Moving around alot probably more coords
 				}),
+				q(66968, {	-- Pruning The Pack
+				-- Had to wait one round..
+					["sourceQuests"] = { 66958 },	-- Protect And Herd
+					["provider"] = { "n", 191205 },	-- Hemet Nesingwary
+					["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },	-- Moving around alot probably more coords
+				}),
 				-- SIDE 8
 				q(69904, {	-- Suspiciously Quiet
 					["sourceQuests"] = { 65855 },	-- Aiding Azure Span
@@ -1318,18 +1324,6 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					-- Shiverweb Vale
 				},
 			}),
-
-			-- RUBY FEAST
-			q(67047, {	-- Warm Away These Shivers
-				["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
-				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
-				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
-				["g"] = {
-					i(200759),	-- Aruunem Berrytart
-					i(200885),	-- Cinna-Cinderbloom Tea
-					i(200886),	-- Lemon Silverleaf Tea
-				},
-			}),
 			n(BONUS_OBJECTIVIES, {
 				q(69895, {	-- Summoned Destroyer
 					-- id 193288
@@ -1354,6 +1348,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				q(65841, {	-- Stop the Spread
 					["sourceQuests"] = { 66026 },	-- Urgent Action Required
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
+				}),
+				q(66718, {	-- Gnolls Must Die
+					["sourceQuests"] = { 66709 },	-- Field Medic 101
+					["coord"] = { 58.1, 42.3, THE_AZURE_SPAN },
 				}),
 			}),
 			--- ISAKAARRAA QUESTS

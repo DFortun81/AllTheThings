@@ -2,32 +2,21 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
-	--[[
 	m(THE_FORBIDDEN_REACH, bubbleDownSelf({ ["classes"] = { EVOKER }, ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE } }, {
 		n(QUESTS, {
 			-- Chapter 1
-			q(64864, {	-- Awaken, Dracthyr
-				--["sourceQuests"] = { xxxxx },	-- Name
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
-			}),
+			q(64864),	-- Awaken, Dracthyr
 			q(64863, {	-- Arcane Guardians
 				["sourceQuests"] = { 64864 },	-- Awaken, Dracthyr
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 181596 },	-- Dervishian
+				["coord"] = { 33.0, 80.7, 2109 },
 			}),
 			q(64865, {	-- Gear Up
 				["sourceQuests"] = { 64864 },	-- Awaken, Dracthyr
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 181056 },	-- Scalecommander Azurathel
+				["coord"] = { 32.9, 81.5, 2109 },
 				["g"] = {
-					i(193481),	-- Emblazoned Verdant Staff
+					i(193481),	-- Emblazoned Ruby Staff
 				},
 			}),
 			q(64866, {	-- Into the Cauldron
@@ -35,16 +24,16 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					64863,	-- Arcane Guardians
 					64865,	-- Gear Up
 				},
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 181594 },	-- Scalecommander Azurathel
+				["coord"] = { 46.5, 57.1, 2109 },
 				["g"] = {
-					i(194422),	-- Emerald Dracthyr's Drape
+					i(194422),	-- Crimson Dracthyr's Drape
 				},
 			}),
 			q(64871, {	-- The Dragon at the Door
 				["sourceQuests"] = { 64866 },	-- Into the Cauldron
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 186883 },	-- Scalecommander Cindrethresh
+				["coord"] = { 62.3, 36.5, 2109 },
 				["g"] = {
 					i(193914),	--	Crystalline Lapis
 				},
@@ -52,173 +41,155 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			-- Chapter 2
 			q(65615, {	-- Arcane Intrusion
 				["sourceQuests"] = { 64871 },	-- The Dragon at the Door
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-					i(191807),	-- Emerald Dracthyr Battlegear Helm
-				--},
+				["provider"] = { "n", 182251 },	-- Scalecommander Azurathel
+				["coord"] = { 44.1, 61.4, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(191807),	-- Crimson Dracthyr Battlegear Helm
+				},
 			}),
 			q(64872, {	-- The Fire Within
 				["sourceQuests"] = { 64871 },	-- The Dragon at the Door
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 184269 },	-- Scalecommander Cindrethresh
+				["coord"] = { 44.4, 61.5, THE_FORBIDDEN_REACH },
 			}),
 			q(64873, {	-- Stretch Your Wings
 				["sourceQuests"] = {
 					65615,	-- Arcane Intrusion
 					64872,	-- The Fire Within
 				},
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 181054 },	-- Scalecommander Emberthal
+				["coord"] = { 44.5, 61.1, THE_FORBIDDEN_REACH },
 			}),
 			q(65036, {	-- Train Like We Fight
 				["sourceQuests"] = { 64873 },	-- Stretch Your Wings
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 192889 },	-- Dervishian
+				["coord"] = { 44.7, 57.6, THE_FORBIDDEN_REACH },
 			}),
 			-- Chapter 3
 			q(65060, {	-- Caldera of the Menders
 				["sourceQuests"] = { 65036 },	-- Train Like We Fight
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 181054 },	-- Scalecommander Emberthal
+				["coord"] = { 44.2, 61.2, THE_FORBIDDEN_REACH },
 			}),
 			q(65063, {	-- Into the Hive
 				["sourceQuests"] = { 65060 },	-- Caldera of the Menders
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-					i(191805),	-- Emerald Dracthyr Battlegear Hauberk
-				--},
+				["provider"] = { "n", 184214 },	-- Scalecommander Cindrethresh
+				["coord"] = { 18.8, 15.8, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(191805),	-- Crimson Dracthyr Battlegear Hauberk
+				},
 			}),
 			q(65073, {	-- A Toxic Problem
 				["sourceQuests"] = { 65063 },	-- Into the Hive
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 184163 },	-- Scalecommander Viridia
+				["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH },
 			}),
 			q(65074, {	-- Easy Prey
-			 ["sourceQuests"] = { 65063 },	-- Into the Hive
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-					i(191810),	-- Emerald Dracthyr Battlegear Belt
-				--},
-			}),
+				["sourceQuests"] = { 65063 },	-- Into the Hive
+				["provider"] = { "n", 184214 },	-- Scalecommander Cindrethresh
+				["coord"] = { 20.2, 19.0, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(191810),	-- Crimson Dracthyr Battlegear Belt
+				},
+				}),
 			q(65307, {	-- Mercy First
 				["sourceQuests"] = {
 					65073,	-- A Toxic Problem
 					65074,	-- Easy Prey
 				},
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 184163 },	-- Scalecommander Viridia
+				["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(191806),	-- Crimson Dracthyr Battlegear Grips
+				},
 			}),
 			q(66324, {	-- Never Forgotten
 				["sourceQuests"] = { 65307 },	-- Mercy First
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 184163 },	-- Scalecommander Viridia
+				["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(194109),	-- Verdant Dracthyr's Band
+					i(191729),	-- Toxin Antidote
 				},
 			}),
 			q(65075, {	-- The Healing Wings
 				["sourceQuests"] = { 66324 },	-- Never Forgotten
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 184163 },	-- Scalecommander Viridia
+				["coord"] = { 20.1, 19.1, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(191812),	-- Emerald Dracthyr Battlegear Treads
+					i(191812),	-- Crimson Dracthyr Battlegear Treads
 				},
 			}),
 			-- Chapter 4
+			q(72263, {	-- Stormsunder Crater
+				["sourceQuests"] = { 65075 },	-- The Healing Wings
+				["provider"] = { "n", 198429 },	-- Treysh
+				["coord"] = { 45.3, 61.3, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(201719),	-- Obsidian Vorquin (MOUINT!)
+					i(201704),	-- Sapphire Vorquin (MOUINT!)
+					i(201720),	-- Bronze Vorquin (MOUINT!)
+					i(201702),	-- Crimson Vorquin (MOUINT!)
+				},
+			}),
 			q(65045, {	-- Stormsunder Crater
 				["sourceQuests"] = { 65075 },	-- The Healing Wings
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
-			}),
-			q(65046, {	-- The Primalists
-				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
-			}),
-			q(65049, {	-- Tangle with the Tarasek
-				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				["g"] = {
-					i(191811),	-- Emerald Dracthyr Battlegear Bracers
-				},
+				["provider"] = { "n", 181054 },	-- Scalecommander Emberthal
+				["coord"] = { 44.2, 61.2, THE_FORBIDDEN_REACH },
 			}),
 			q(65050, {	-- Conjured Army
 				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 182274 },	-- Scalecommander Azurathel
+				["coord"] = { 70.4, 64.4, THE_FORBIDDEN_REACH },
+			}),
+			q(65049, {	-- Tangle with the Tarasek
+				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
+				["provider"] = { "n", 182274 },	-- Scalecommander Azurathel
+				["coord"] = { 70.4, 64.4, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(191811),	-- Crimson Dracthyr Battlegear Bracers
+				},
+			}),
+			q(65046, {	-- The Primalists
+				["sourceQuests"] = { 65045 },	-- Stormsunder Crater
+				["provider"] = { "n", 186210 },	-- Dervishian
+				["coord"] = { 70.4, 64.6, THE_FORBIDDEN_REACH },
 			}),
 			q(65052, {	-- The Ebon Scales
 				["sourceQuests"] = {
-					65046,	-- The Primalists
-					65049,	-- Tangle with the Tarasek
 					65050,	-- Conjured Army
+					65049,	-- Tangle with the Tarasek
+					65046,	-- The Primalists
 				},
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 182275 },	-- Scalecommander Azurathel
+				["coord"] = { 79.6, 62.3, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(194333),	-- Ekrazathal's Colored Fang
 				},
 			}),
 			q(65057, {	-- Rally to Emberthal
 				["sourceQuests"] = { 65052 },	-- The Ebon Scales
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 182275 },	-- Scalecommander Sarkareth
+				["coord"] = { 81.2, 54.0, THE_FORBIDDEN_REACH },
 			}),
 			-- Chapter 5
 			q(65701, {	-- Preservation or Devastation
 				["sourceQuests"] = { 65057 },	-- Rally to Emberthal
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 182258 },	-- Scalecommander Emberthal
+				["coord"] = { 44.8, 54.7, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(191808),	-- Emerald Dracthyr Battlegear Leggings
+					i(191808),	-- Crimson Dracthyr Battlegear Leggings
 				},
 			}),
 			q(65084, {	-- The Froststone Vault
 				["sourceQuests"] = { 65701 },	-- Preservation or Devastation
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 182258 },	-- Scalecommander Emberthal
+				["coord"] = { 44.8, 54.7, THE_FORBIDDEN_REACH },
 			}),
 			q(65087, {	-- The Prize Inside
 				["sourceQuests"] = { 65084 },	-- The Froststone Vault
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 184308 },	-- Scalecommander Sarkareth
+				["coord"] = { 56.7, 28.2, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(194335),	-- Emerald Tear Necklace
 				},
@@ -226,27 +197,24 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			-- Chapter 6
 			q(65097, {	-- Run!
 				["sourceQuests"] = { 65087 },	-- The Prize Inside
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 182441 },	-- Scalecommander Emberthal
+				["coord"] = { 54.1, 32.3, THE_FORBIDDEN_REACH },
 			}),
 			q(65098, {	-- The Consequence of Courage
 				["sourceQuests"] = { 65097 },	-- Run!
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 182601 },	-- Wrathion
+				["coord"] = { 47.1, 35.5, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(191809),	-- Emerald Dracthyr Battlegear Monnion
+					i(191809),	-- Crimson Dracthyr Battlegear Monnion
 				},
 			}),
 			q(65100, {	-- Final Orders
 				["sourceQuests"] = { 65098 },	-- The Consequence of Courage
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
+				["provider"] = { "n", 182441 },	-- Scalecommander Emberthal
+				["coord"] = { 41.7, 44.5, THE_FORBIDDEN_REACH },
+				["g"] = {
 					i(193916),	-- Dragonkin Signet Ring
-				--},
+				},
 			}),
 			-- Chapter 6
 			-- Stormwind?
@@ -255,20 +223,14 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
 				["races"] = { DRACTHYR_ALLIANCE },
-				--["g"] = {
-
-				--},
 			}),
 			q(66513, {	-- Ground Leave [A]
 				["sourceQuests"] = { 65286 },	-- Draconic Connections
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
 				["races"] = { DRACTHYR_ALLIANCE },
-				--["g"] = {
-
-				--},
 			}),
-			q(65101, {	-- An Iconic, Draconic, Look
+			q(65101, {	-- An Iconic, Draconic, Look [A]
 				["sourceQuests"] = { 66577 },	-- Alexstrasza's Invitation [A]
 				--["provider"] = { "n", xxxx },	-- Name
 				--["coord"] = { X, Y, MAP },
@@ -280,39 +242,31 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			-- Org
 			q(66237, {	-- Spiritual Allies
 				["sourceQuests"] = { 65100 },	-- Final Orders
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 189386 },	-- Spiritwalker Ebonhorn
+				["coord"] = { 45.6, 12.9, DUROTAR },
 				["races"] = { DRACTHYR_HORDE },
-				--["g"] = {
-
-				--},
 			}),
 			q(66534, {	-- Ground Leave [H]
 				["sourceQuests"] = { 66237 },	-- Spiritual Allies
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+				["provider"] = { "n", 189389 },	-- Scalecommander Cindrethresh
+				["coord"] = { 45.6, 12.9, DUROTAR },
 				["races"] = { DRACTHYR_HORDE },
-				--["g"] = {
-
-				--},
 			}),
-			q(65613, {	-- An Iconic, Draconic, Look
-				["sourceQuests"] = { 65437 },	-- Alexstrasza's Invitation [H]
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
+			q(65613, {	-- An Iconic, Draconic, Look [H]
+				["sourceQuests"] = { 65437 },	-- Aspectral Invitation [H]
+				["provider"] = { "n", 190239 },	-- Ebyssian
+				["coord"] = { 44.1, 38.0, ORGRIMMAR },
 				["races"] = { DRACTHYR_HORDE },
 				["g"] = {
-					i(194675),	-- Gilded Dracthyr's Tabard
+					i(194676),	-- Emboldened Dracthyr's Tabard
+					-- Acheivement
 				},
 			}),
 			-- To'no Side-Quest
 			q(65071, {	-- Halp!
 				["sourceQuests"] = { 65063 },	-- Into the Hive [PROBABLY? Seems to be another BC before this from the parents /Braghe]
-				--["provider"] = { "n", xxxx },	-- Name
-				--["coord"] = { X, Y, MAP },
-				--["g"] = {
-
-				--},
+				["provider"] = { "n", 188692 },	-- To'no
+				["coord"] = { 33.5, 33.3, THE_FORBIDDEN_REACH },
 			}),
 		}),
 	})),

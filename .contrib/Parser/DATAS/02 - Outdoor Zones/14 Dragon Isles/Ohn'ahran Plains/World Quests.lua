@@ -1,9 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 	m(OHNAHRAN_PLAINS, {
-		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 64230 } }, {
+		n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["sourceQuests"] = { 71232 }, }, {
 			q(69988, {	-- Flashy Rocks
 				["coord"] = { 53.2, 50.0, OHNAHRAN_PLAINS }
 			}),

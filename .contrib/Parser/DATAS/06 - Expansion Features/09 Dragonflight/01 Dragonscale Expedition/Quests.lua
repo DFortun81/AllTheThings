@@ -11,6 +11,12 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["repeatable"] = true,
 				["cost"] = { { "i", 192055, 1 }, }, 	-- 1x Dragon Isles Artifact
 			}),
+			q(71035, {	-- Multiple Dragon Isles Artifacts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["repeatable"] = true,
+				["cost"] = { { "i", 192055, 5 }, }, 	-- 5x Dragon Isles Artifact
+			}),
 				-- RENOWN 2 --
 			q(70822, {	-- Lost Expedition Scouts
 				["description"] = "Requires Renown 2.",
@@ -50,6 +56,46 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(199875),	-- Renowned Expeditioner's Drape
 				},
 			}),
+				-- RENOWN 5 --
+			q(70813, {	-- Digging Up Treasure
+				["description"] = "Requires Renown 5.",
+				["provider"] = { "n", 187700 },	-- Pathfinder Jab
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(191294),	-- Small Expedition Shovel
+				},
+			}),
+			q(72026, {	-- Dragonscale Expedition Supplies
+				["description"] = "Requires Renown 5.",
+				["sourceQuests"] = { 70822 },	-- Lost Expedition Scouts
+				["provider"] = { "n", 189226 },	-- Cataloger Jakes
+				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				["g"] = {
+					i(198863),	-- Small Dragon Expedition Supply Pack
+				},
+			}),
+				-- RENOWN 7 --
+			q(69855, {	-- A Climber's Calling
+				["description"] = "Requires Renown 7. Spawns Anywhere on Dragon Isles.",
+				["provider"] = { "n", 196643 },	-- Doc Nanners
+				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+			}),
+			q(66351, {	-- Smoke Over the Mountain
+				["description"] = "Requires Renown 7.",
+				["sourceQuests"] = { 69855 },	-- A Climber's Calling
+				["provider"] = { "n", 187700 },	-- Pathfinder Jab
+				["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+			}),
+			q(70807, {	-- Advanced Excavation Tools
+				["description"] = "Requires Renown 7.",
+				["provider"] = { "n", 188265 },	-- Rae'ana
+				["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(194102),	-- Expedition Excavator
+					i(194326),	-- Trusty Sweeper
+					i(194325),	-- Researcher's Magnifier
+				},
+			}),
 				-- RENOWN 1 --
 			q(71008, {	-- Wanted: Stoneheart's Stone Heart
 				["provider"] = { "o", 381670 },	-- Archivist's Request
@@ -67,6 +113,19 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			q(71005, {	-- Wanted: Fangfall
 				["provider"] = { "o", 381668 },	-- Archivist's Request
 				["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },
+			}),
+
+
+			q(71004, {	-- Wanted: Ohuna Mass-Binding Totem
+				["provider"] = { "o", 381667 },	-- Archivist's Request
+				["coord"] = { 47.1, 82.8, THE_WAKING_SHORES },
+			}),
+			q(71007, {	-- Wanted: Disoriented Wishtail
+				["provider"] = { "o", 381669 },	-- Archivist's Request
+				["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(198490),	-- Bushwhacker's Compass
+				},
 			}),
 		}),
 	}),

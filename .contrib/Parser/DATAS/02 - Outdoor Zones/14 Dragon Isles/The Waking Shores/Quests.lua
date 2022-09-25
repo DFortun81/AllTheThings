@@ -553,6 +553,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 187439 },	-- Bubbled Duckling
 					["coord"] = { 80.1, 42.9, THE_WAKING_SHORES },
 				}),
+				q(70877, {	-- A Quack in Time
+					["sourceQuests"] = { 66104 },	-- Forensic Ecology
+					["provider"] = { "n", 196744 },	-- Bubbled Duckling
+					["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
+				}),
 
 					-- Veritistrasz --
 				q(70132, {	-- Stay a While
@@ -849,6 +854,46 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					},
 				}),
 
+				q(69897, {	-- Behavior Analysis "Homework"
+					["sourceQuests"] = { 66963 },	-- Out For Delivery
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69898, {	-- Scientfic Meat-thod
+					["sourceQuests"] = { 66963 },	-- Out For Delivery
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69899, {	-- Secret Research
+					["sourceQuests"] = {
+						69897,	-- Behavior Analysis "Homework"
+						69898,	-- Scientfic Meat-thod
+					},
+					["provider"] = { "n", 193500 },	-- Iyali
+					["coord"] = { 45.9, 81.4, THE_WAKING_SHORES },
+				}),
+				q(69901, {	-- Bring In the Expert
+					["sourceQuests"] = { 69899 },	-- Secret Research
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(69900, {	-- Identifying the Source
+					["sourceQuests"] = { 69899 },	-- Secret Research
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+				}),
+				q(69902, {	-- [WIP] Theory in Practice
+					["sourceQuests"] = {
+						69901,	-- Bring In the Expert
+						69900,	-- Identifying the Source
+					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
+					["g"] = {
+						-- Crit Brave Researcher
+					},
+				}),
+
 					-- MISC --
 				q(66101, {	-- From Such Great Heights
 					["sourceQuests"] = {
@@ -937,6 +982,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 					-- npc 193135 rare??
 				}),
+				q(66074, {	-- Azra's Prized Peony
+					["coord"] = { 81.2, 37.9, THE_WAKING_SHORES },
+
+					-- npc 184853 Primal Scythid Queen
+				}),
 				q(65994, {	-- Djaradin Djustice
 					["sourceQuests"] = {	-- TODO: MIGHT NOT BE TRUE
 						65990,	-- Deliver Whelps From Evil
@@ -1010,5 +1060,14 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(70709),	-- Promising to Save Wu'de Prepfoot during The Shadow of His Wings(65691)
 		q(72059),	-- Gossip with Commander Lethanak at 62.7, 72.2 unclear when
 		q(70872),	-- Popped After A Sledgehammer of a Solution(66108A) and Don't Be So Shellfish (66106)
+		q(70872),	-- After completing A Quack In Time
+		q(70206),	-- Popped During Stay a While (70132)
+		q(70231),	-- Gossip with Emilia Bellocq 75.4, 33.9 193915
+		-- Namning the Proto-Welp during [WIP] Theory in Practice (69902)
+		q(72176),	-- Toughscale
+		q(72174),	-- Bob
+		q(72177),	-- Mr.Nibbles
+		q(72179),	-- Lord Firegiggle
+		q(72178),	-- Baron von Swoopenbite
 	}),
 }));

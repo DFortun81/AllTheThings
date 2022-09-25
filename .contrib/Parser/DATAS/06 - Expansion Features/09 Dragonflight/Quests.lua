@@ -13,7 +13,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
-				--66513,	-- Ground Leave [A] (Check: Evoker?)
+				66513,	-- Ground Leave [A]
 				65436,	-- The Dragon Isles Await [A]
 			},
 			["provider"] = { "n", 189569 },	-- Wrathion
@@ -22,39 +22,53 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 		}),
 		q(65437, {	-- Aspectral Invitation [H]
 			["sourceQuests"] = {
-				--66534,	-- Ground Leave [H] (Check: Evoker?)
+				66534,	-- Ground Leave [H]
 				65435,	-- The Dragon Isles Await [H]
 			},
-			--["provider"] = { "n", xxxx },	-- Name
-			--["coord"] = { X, Y, MAP },
+			["provider"] = { "n", 190239 },	-- Ebyssian
+			["coord"] = { 44.1, 38.0, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			--["g"] = {
-
-			--},
 		}),
 		q(66589, {	-- Expeditionary Coordination [A]
-			["sourceQuests"] = { 66577 },	-- Aspectral Invitation [A]
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["provider"] = { "n", 189602 },	-- Toddy Whiskers
 			["coord"] = { 79.7, 27.3, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(65443, {	-- Expeditionary Coordination [H]
-			["sourceQuests"] = { 65437 },	-- Aspectral Invitation [H]
-			--["provider"] = { "n", xxxx },	-- Name
-			--["coord"] = { X, Y, MAP },
+			["sourceQuests"] = {
+				65613,	-- An Iconic, Draconic, Look [H]
+				65437,	-- Aspectral Invitation [H]
+			},
+			["provider"] = { "n", 184793 },	-- Naleidea Rivergleam
+			["coord"] = { 44.2, 37.8, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			--["g"] = {
-
-			--},
+		}),
+		q(72256, {	-- The Dark Talons [H]
+			["sourceQuests"] = {
+				65613,	-- An Iconic, Draconic, Look [H]
+				65437,	-- Aspectral Invitation [H]
+			},
+			["provider"] = { "n", 184786 },	-- Scalecommander Cindrethresh
+			["coord"] = { 44.0, 38.3, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
 		}),
 		q(66596, {	-- Whispers in the Winds [A]
-			["sourceQuests"] = { 66589 },	-- Expeditionary Coordination [A]
+			["sourceQuests"] = {
+				66589,	-- Expeditionary Coordination [A]
+			},
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 23.0, 56.1, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(65439, {	-- Whispers in the Winds [H]
-			["sourceQuests"] = { 65443 },	-- Expeditionary Coordination [H]
+			["sourceQuests"] = {
+				65443,	-- Expeditionary Coordination [H]
+				72256,	-- The Dark Talons [H]
+			},
 			["provider"] = { "n", 193450 },	-- Archmage Khadgar
 			["coord"] = { 55.9, 12.6, DUROTAR },
 			["races"] = HORDE_ONLY,

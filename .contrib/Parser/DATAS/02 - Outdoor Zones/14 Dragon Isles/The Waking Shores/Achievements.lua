@@ -42,6 +42,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			ach(15988, {	-- Dragon Glyphs: Ruby Life Pools
 				["coord"] = { 54.5, 74.2, THE_WAKING_SHORES },
 			}),
+			ach(16670, {	-- Dragon Glyphs: Rubyscale Outpost [NOT ADDED TO ANY META IN ATT ATM! I DONT KNOW WHY BLIZZ PUT IN OHNAHRAN META??]
+				["coord"] = { 48.8, 86.7, THE_WAKING_SHORES },
+			}),
 			ach(16052, {	-- Dragon Glyphs: Scalecracker Peak
 				["coord"] = { 73.3, 20.3, THE_WAKING_SHORES },
 			}),

@@ -18,12 +18,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 			}),
 			-- SIDE 3
-			q(72067, {	-- Relaxation Time!
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 197986 },	-- Hot Springs Spa Promoter
-				["coord"] = { 48.1, 59.6, VALDRAKKEN },
-				["isBreadcrumb"] = true,	-- Probably?
-			}),
+
 			-- SIDE 4
 
 			-- SIDE 5
@@ -34,20 +29,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 
 
 
-			-- PET QUESTS?!
-			q(70647, {	-- Oh Where, Oh Where Can He Be?
-				["sourceQuests"] = { 66244 },	-- To Valdrakken
-				["provider"] = { "n", 185563 },	-- Jyhanna
-				["coord"] = { 10.4, 58.3, VALDRAKKEN },
-				["g"] = {
-					i(199175),	-- Lubbins (PET!)
-				},
-			}),
-			q(70697, {	-- An Expert Opinion
-				["sourceQuests"] = { 70647 },	-- h Where, Oh Where Can He Be?
-				["provider"] = { "n", 185563 },	-- Jyhanna
-				["coord"] = { 10.4, 58.3, VALDRAKKEN },
-			}),
+
 
 
 
@@ -75,6 +57,27 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["sourceQuests"] = { 71238 },	-- The Ruby Fest!
 				["provider"] = { "n", 189479 },	-- Rumiastrasza
 				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+			}),
+			q(67047, {	-- Warm Away These Shivers
+				["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
+				["provider"] = { "n", 185778 },	-- Lilial Dawnburst
+				["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
+				["g"] = {
+					i(200759),	-- Aruunem Berrytart
+					i(200885),	-- Cinna-Cinderbloom Tea
+					i(200886),	-- Lemon Silverleaf Tea
+				},
+			}),
+			-- Next week?
+			q(70932, {	-- The Life of Spice
+				["sourceQuests"] = { 67047 },	-- Warm Away These Shivers
+				["provider"] = { "n", 189479 },	-- Rumiastrasza
+				["coord"] = { 61.5, 11.8, VALDRAKKEN },
+			}),
+			q(67063, {	-- 10,000 Years of Roasting
+				["sourceQuests"] = { 70932 },	-- The Life of Spice
+				["provider"] = { "n", 189207 },	-- Griftah
+				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
 			}),
 
 
@@ -114,6 +117,48 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+			-- Weekly
+			q(70750, {	-- Making a Name
+				["sourceQuests"] = { 71232 },	-- Renown of the Dragon Isles
+				["provider"] = { "n", 196499 },	-- Therazal
+				["coord"] = { 50.7, 58.0, THALDRASZUS },
+				["isWeekly"] = true,
+			}),
+			q(66865, {	-- Relic Recovery: The Azure Vault
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(66866, {	-- Relic Recovery: Halls of Infusion
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 191957 },	-- Theldren
+				["coord"] = { 35.1, 27.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(66870, {	-- Preserving the Past: Ruby Life Pools
+				["sourceQuests"] = { 67007 },	-- Archival Assistance
+				["provider"] = { "n", 189973 },	-- Kemora
+				["coord"] = { 35.0, 28.1, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
+			q(72167, {	-- Proving in War
+				["provider"] = { "n", 196191 },	-- Malicia
+				["coord"] = { 43.4, 42.5, VALDRAKKEN },
+				["isWeekly"] = true,
+			}),
 		}),
 	}),
 })));
@@ -124,5 +169,8 @@ root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 		q(65041),	-- Memories of Scoroxia(On wowhead? Something you should return with??) / Talked with Scalecommanders Cindretresh and Azurathel
 		q(72011),	-- Starting Ruby Feast
 		q(71243),	-- Weekly Quest?
+
+		q(67055),	-- Both These popped when doing Ruby Feast
+		q(72009),
 	}),
 }));
