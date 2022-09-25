@@ -1293,6 +1293,7 @@ for key, value in pairs({
 	[194389] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194390] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
 	[194391] = "被盗的探险者协会文件",	-- Stolen Explorers' League Document
+	[194555] = "档案馆控制台",	-- Archivum Console
 	[194714] = "恶心的工作台",	-- Disgusting Workbench
 	[195134] = "大炸弹",	-- The Bomb	--TODO: This was manually translated
 	[195431] = "总部无线电",	-- Headquarters Radio
@@ -2627,6 +2628,7 @@ for key, value in pairs({
 	[303016] = "|cFFFFFFFF第14步:|r 普通的卵石 XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFF第13步:|r 普通的卵石 XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFF第12步:|r 普通的卵石 XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "奇怪的谷物袋",	-- Curious Grain Sack
 	[307265] = "通缉布告",	-- Wanted Poster
 	[307277] = "旧酒壶",	-- Old Jug	--TODO: This was manually translated
 	[307307] = "破损的桶",	-- Broken Barrel
