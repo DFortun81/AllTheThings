@@ -1,28 +1,22 @@
 # AllTheThings
 
-## [SL-2.9.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.7) (2022-09-18)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.6...SL-2.9.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.9.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.9.8) (2022-09-25)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.9.7...SL-2.9.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 
 ### Functional changes
 
-- Added Covenant Renown level and 'Last Turned-In Quest' to inaccurate quest dialog text.
+- Overhauled internal logic concerning reputations: we will work with new Friedship repuatations better, including using proper colors. Also fixed some Lua errors concerning Friendships in the process.
 
 
 ### Logic fixes
 
-- Big overwrite of some internal ATT logic that should improve performance when opening lists of big cities, PvP ensembles, Honor, and all other cases where we "duplicate" same data in multiple places. This should even fix some bugs!
-- Performance improvement to cost calculations.
-- Fixed a bug where `/attwq` could hide everything in the window when it only had 100% complete content (meaning there was no way to refresh the WQ without reloading UI).
+- Screenshots 📸 should now only be taken when collecting a Thing which is actually being tracked as collectible (note that screenshots are only triggered from automated checks of new Things, and many Types of Things do rely on manual refreshes and will not trigger screenshots when collected in this way).
 
 
 ### Data fixes
 
-- Fixed some removed content that made a sudden reappearance with WotLK Classic sync in ATT. Fixed some broken content due to the same reason.
-- Further profession fixes (blacksmithing and enchantment).
-- Fixes for Battle for Azeroth PvP Elite Season 2, 3 and 4 items.
-- Updated BfA Essences that previously required M+ but now can be done in M0.
-- Added Frostbrood Proto-Wyrm from WotLK Classic promotion.
-- Marked a bunch of things that will be going away with Dragonflight pre-patch/launch.
-- Various fixes to TBC, WotLK and SL achievements.
-- Other fixes.
+- More fixes for Battle for Azeroth PvP sets.
+- Fixed Trashmaster Mantle AGAIN. This fix is for the version which specifically comes from Great Vault.
+- Tiny changes for Brewfest and Hallow's End.
+- Other fixes, quite a lot of fixed quest lines in this update.
