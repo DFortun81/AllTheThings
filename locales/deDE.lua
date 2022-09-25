@@ -1291,6 +1291,7 @@ for key,value in pairs({
 	[194389] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
 	[194390] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
 	[194391] = "Gestohlenes Dokument der Forscherliga",	-- Stolen Explorers' League Document
+	[194555] = "Archivumkonsole",	-- Archivum Console
 	[194714] = "Widerliche Werkbank",	-- Disgusting Workbench
 	[195134] = "Die Bombe",	-- The Bomb
 	[195431] = "Hauptquartierfunkgerät",	-- Headquarters Radio
@@ -2625,6 +2626,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFSchritt 14:|r Gewöhnlicher Kieselstein XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFSchritt 13:|r Gewöhnlicher Kieselstein XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFSchritt 12:|r Gewöhnlicher Kieselstein XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Seltsamer Getreidesack",	-- Curious Grain Sack
 	[307265] = "Steckbrief",	-- Wanted Poster
 	[307277] = "Alter Henkelkrug",	-- Old Jug
 	[307307] = "Zerbrochenes Fass",	-- Broken Barrel

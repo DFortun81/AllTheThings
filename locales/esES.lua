@@ -1294,6 +1294,7 @@ for key,value in pairs({
 	[194389] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194390] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
 	[194391] = "Documento de la Liga de Expedicionarios robado",	-- Stolen Explorers' League Document
+	[194555] = "Consola de El Archivum",	-- Archivum Console
 	[194714] = "Banco de trabajo desagradable",	-- Disgusting Workbench
 	[195134] = "La Bomba",	-- The Bomb
 	[195431] = "Radio de puesto de mando",	-- Headquarters Radio
@@ -2628,6 +2629,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Piedra corriente XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFStep 13:|r Piedra corriente XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFStep 12:|r Piedra corriente XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Saco de grano curioso",	-- Curious Grain Sack
 	[307265] = "Cartel de Se busca",	-- Wanted Poster
 	[307277] = "Vieja jarra",	-- Old Jug
 	[307307] = "Barrica rota",	-- Broken Barrel

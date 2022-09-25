@@ -1279,6 +1279,7 @@ for key,value in pairs({
 	[194389] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194390] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
 	[194391] = "Украденный документ Лиги исследователей",	-- Stolen Explorers' League Document
+	[194555] = "Панель управления Архивом",	-- Archivum Console
 	[194714] = "Отвратительная рабочая скамейка",	-- Disgusting Workbench
 	[195134] = "Бомба",	-- The Bomb
 	[195431] = "Штабное радио",	-- Headquarters Radio
@@ -2613,6 +2614,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFШаг 14:|r Обычный камешек XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFШаг 13:|r Обычный камешек XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFШаг 12:|r Обычный камешек XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Странный мешок с зерном",	-- Curious Grain Sack
 	[307265] = "Плакат \"Разыскивается\"",	-- Wanted Poster
 	[307277] = "Старый кувшин",	-- Old Jug
 	[307307] = "Разбитая бочка",	-- Broken Barrel

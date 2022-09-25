@@ -1290,6 +1290,7 @@ for key,value in pairs({
 	[194389] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194390] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
 	[194391] = "훔친 탐험가 연맹 문서",	-- Stolen Explorers' League Document
+	[194555] = "고대 기록관 조작대",	-- Archivum Console
 	[194714] = "구역질나는 작업대",	-- Disgusting Workbench
 	[195134] = "폭탄",	-- The Bomb
 	[195431] = "본부 무전기",	-- Headquarters Radio
@@ -2624,6 +2625,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r 평범한 조약돌 XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFStep 13:|r 평범한 조약돌 XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFStep 12:|r 평범한 조약돌 XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "이상한 곡식 자루",	-- Curious Grain Sack
 	[307265] = "현상 수배 전단",	-- Wanted Poster
 	[307277] = "낡은 단지",	-- Old Jug
 	[307307] = "부서진 통",	-- Broken Barrel

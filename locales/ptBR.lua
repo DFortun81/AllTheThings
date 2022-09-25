@@ -1290,6 +1290,7 @@ for key,value in pairs({
 	[194389] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
 	[194390] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
 	[194391] = "Documento Roubado da Liga dos Exploradores",	-- Stolen Explorers' League Document
+	[194555] = "Console do Arquivo",	-- Archivum Console
 	[194714] = "Bancada de Trabalho Nojenta",	-- Disgusting Workbench
 	[195134] = "A Bomba",	-- The Bomb
 	[195431] = "Rádio do Centro de Operações",	-- Headquarters Radio
@@ -2624,6 +2625,7 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Cascalho Comum XIII",	-- |cFFFFFFFFStep 14:|r Ordinary Pebble XIII
 	[303017] = "|cFFFFFFFFStep 13:|r Cascalho Comum XII",	-- |cFFFFFFFFStep 13:|r Ordinary Pebble XII
 	[303018] = "|cFFFFFFFFStep 12:|r Cascalho Comum XI",	-- |cFFFFFFFFStep 12:|r Ordinary Pebble XI
+	[303039] = "Saco de Grãos Curioso",	-- Curious Grain Sack
 	[307265] = "Cartaz de Procura-se",	-- Wanted Poster
 	[307277] = "Velho Garrafão",	-- Old Jug
 	[307307] = "Barril Quebrado",	-- Broken Barrel
