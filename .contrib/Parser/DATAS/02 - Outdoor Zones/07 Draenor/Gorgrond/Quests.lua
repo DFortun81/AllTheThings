@@ -840,196 +840,6 @@ _.Zones =
 							i(118038),	-- Steamfury Signet
 						},
 					}),
-					q(36092, {	-- Proof of Strength: Ancient Branch (A)
-						["provider"] = { "i", 114029 },	-- Ancient Branch
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
-						},
-					}),
-					q(36094, {	-- Proof of Strength: Ancient Branch (H)
-						["provider"] = { "i", 114030 },	-- Ancient Branch
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81630,	-- Bloom Defender
-							81005,	-- Silent Watcher
-						},
-					}),
-					q(36103, {	-- Proof of Strength: Basilisk Scale (A)
-						["provider"] = { "i", 114035 },	-- Basilisk Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					q(36104, {	-- Proof of Strength: Basilisk Scale (H)
-						["provider"] = { "i", 114036 },	-- Basilisk Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85694,	-- Mire Basilisk
-							74962,	-- Stoneshamble Basilisk
-						},
-					}),
-					q(36084, {	-- Proof of Strength: Botani Bloom (A)
-						["provider"] = { "i", 114024 },	-- Botani Bloom
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					q(36086, {	-- Proof of Strength: Botani Bloom (H)
-						["provider"] = { "i", 114025 },	-- Botani Bloom
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							80696,	-- Botani Greensworn
-							81631,	-- Botani Grovetender
-							81575,	-- Bloom Weaver
-							81721,	-- Dionar Seedpriest
-							83826,	-- Tarlna Thorncaster
-							81634,	-- Voice of Iyu
-						},
-					}),
-					q(36105, {	-- Proof of Strength: Elemental Crystal (A)
-						["provider"] = { "i", 114037 },	-- Elemental Crystal
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					q(36106, {	-- Proof of Strength: Elemental Crystal (H)
-						["provider"] = { "i", 114038 },	-- Elemental Crystal
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							78257,	-- Abyssal Earthwarden
-							86439,	-- Earthen Fury
-							85924,	-- Lesser Brimfury
-							83458,	-- Rippling Steamfury
-							81685,	-- Turbulent Steamfury
-						},
-					}),
-					q(35944, {	-- Proof of Strength: Goren Tooth (A)
-						["provider"] = { "i", 113586 },	-- Acid-Stained Goren Tooth
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					q(35948, {	-- Proof of Strength: Goren Tooth (H)
-						["provider"] = { "i", 113590 },	-- Acid-Stained Goren Tooth
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81729,	-- Enraged Gembiter
-							80690,	-- Goren Gouger
-							81775,	-- Goren Nibbler
-						},
-					}),
-					q(36081, {	-- Proof of Strength: Gronn Eye (A)
-						["provider"] = { "i", 114022 },	-- Gronn Eye
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					q(36083, {	-- Proof of Strength: Gronn Eye (H)
-						["provider"] = { "i", 114023 },	-- Gronn Eye
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81246,	-- Canyon Boulderbreaker
-							80689,	-- Gronn Rockthrower
-							85988,	-- Mangled Boulderbreaker
-						},
-					}),
-					q(36078, {	-- Proof of Strength: Gronnling Scale (A)
-						["provider"] = { "i", 114020 },	-- Gronnling Scale
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					q(36080, {	-- Proof of Strength: Gronnling Scale (H)
-						["provider"] = { "i", 114021 },	-- Gronnling Scale
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							81207,	-- Drywind Bonepicker
-							80685,	-- Gronnling Bonebreaker
-						},
-					}),
-					q(36075, {	-- Proof of Strength: Ogron Horn (A)
-						["provider"] = { "i", 114018 },	-- Worn Ogron Horn
-						["crs"] = { 81240 },	-- Ogron Spinecrusher
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(36076, {	-- Proof of Strength: Ogron Horn (H)
-						["provider"] = { "i", 114019 },	-- Worn Ogron Horn
-						["crs"] = { 81240 },	-- Ogron Spinecrusher
-						["races"] = HORDE_ONLY,
-					}),
-					q(36090, {	-- Proof of Strength: Orc Thorn (A)
-						["provider"] = { "i", 114026 },	-- Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(36091, {	-- Proof of Strength: Orc Thorn (H)
-						["provider"] = { "i", 114027 },	-- Orc Thorn
-						["crs"] = { 81617 },	-- Infested Orc
-						["races"] = HORDE_ONLY,
-					}),
-					q(36096, {	-- Proof of Strength: Ravager Claw (A)
-						["provider"] = { "i", 114031 },	-- Ravager Claw
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					q(36097, {	-- Proof of Strength: Ravager Claw (H)
-						["provider"] = { "i", 114032 },	-- Ravager Claw
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							85516,	-- Cliffscar Ravager
-							83517,	-- Stoneshard Ravager
-							81561,	-- Thicket Ravager
-							86263,	-- Venomous Ravager
-							85779,	-- Verdant Ravager
-						},
-					}),
-					q(36098, {	-- Proof of Strength: Wasp Stinger (A)
-						["provider"] = { "i", 114033 },	-- Wasp Stinger
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
-							84852,	-- Heartsting Pollinator
-							85695,	-- Mistcreep Stinger
-							83520,	-- Stoneshard Hunter
-						},
-					}),
-					q(36101, {	-- Proof of Strength: Wasp Stinger (H)
-						["provider"] = { "i", 114034 },	-- Wasp Stinger
-						["races"] = HORDE_ONLY,
-						["crs"] = {
-							84852,	-- Heartsting Pollinator
-							85695,	-- Mistcreep Stinger
-							83520,	-- Stoneshard Hunter
-						},
-					}),
 					q(35686,  {	-- Rage and Wisdom (A)
 						["provider"] = { "n", 75127 },	-- Vindicator Maraad
 						["coord"] = { 52.8, 59.6, GORGROND },
@@ -1262,7 +1072,7 @@ _.Zones =
 						["sourceQuest"] = 35041,	-- Xuk It!
 					}),
 					n(BONUS_OBJECTIVES, {
-						-- TODO: Check SQ also probably cant do after a certain level
+						-- TODO: Check SQ (completed all at L60 in SL)
 						q(36504, {	-- Evermorn Springs
 							["coord"] = { 43.0, 79.9, GORGROND },
 							["sourceQuest"] = 35151,	-- Your Base, Your Choice
@@ -1277,6 +1087,200 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(-357, sharedData({	-- Sparring Arena (Proofs of Strength)
+					["description"] = "Quest Item will only drop from mobs which are attacked by your special Sparring Arena follower.",
+				},{
+					q(36092, {	-- Proof of Strength: Ancient Branch (A)
+						["provider"] = { "i", 114029 },	-- Ancient Branch
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					q(36094, {	-- Proof of Strength: Ancient Branch (H)
+						["provider"] = { "i", 114030 },	-- Ancient Branch
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81630,	-- Bloom Defender
+							81005,	-- Silent Watcher
+						},
+					}),
+					q(36103, {	-- Proof of Strength: Basilisk Scale (A)
+						["provider"] = { "i", 114035 },	-- Basilisk Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					q(36104, {	-- Proof of Strength: Basilisk Scale (H)
+						["provider"] = { "i", 114036 },	-- Basilisk Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85694,	-- Mire Basilisk
+							74962,	-- Stoneshamble Basilisk
+						},
+					}),
+					q(36084, {	-- Proof of Strength: Botani Bloom (A)
+						["provider"] = { "i", 114024 },	-- Botani Bloom
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					q(36086, {	-- Proof of Strength: Botani Bloom (H)
+						["provider"] = { "i", 114025 },	-- Botani Bloom
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							80696,	-- Botani Greensworn
+							81631,	-- Botani Grovetender
+							81575,	-- Bloom Weaver
+							81721,	-- Dionar Seedpriest
+							83826,	-- Tarlna Thorncaster
+							81634,	-- Voice of Iyu
+						},
+					}),
+					q(36105, {	-- Proof of Strength: Elemental Crystal (A)
+						["provider"] = { "i", 114037 },	-- Elemental Crystal
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					q(36106, {	-- Proof of Strength: Elemental Crystal (H)
+						["provider"] = { "i", 114038 },	-- Elemental Crystal
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							78257,	-- Abyssal Earthwarden
+							86439,	-- Earthen Fury
+							85924,	-- Lesser Brimfury
+							83458,	-- Rippling Steamfury
+							81685,	-- Turbulent Steamfury
+						},
+					}),
+					q(35944, {	-- Proof of Strength: Goren Tooth (A)
+						["provider"] = { "i", 113586 },	-- Acid-Stained Goren Tooth
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					q(35948, {	-- Proof of Strength: Goren Tooth (H)
+						["provider"] = { "i", 113590 },	-- Acid-Stained Goren Tooth
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81729,	-- Enraged Gembiter
+							80690,	-- Goren Gouger
+							81775,	-- Goren Nibbler
+						},
+					}),
+					q(36081, {	-- Proof of Strength: Gronn Eye (A)
+						["provider"] = { "i", 114022 },	-- Gronn Eye
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					q(36083, {	-- Proof of Strength: Gronn Eye (H)
+						["provider"] = { "i", 114023 },	-- Gronn Eye
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81246,	-- Canyon Boulderbreaker
+							80689,	-- Gronn Rockthrower
+							85988,	-- Mangled Boulderbreaker
+						},
+					}),
+					q(36078, {	-- Proof of Strength: Gronnling Scale (A)
+						["provider"] = { "i", 114020 },	-- Gronnling Scale
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					q(36080, {	-- Proof of Strength: Gronnling Scale (H)
+						["provider"] = { "i", 114021 },	-- Gronnling Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							81207,	-- Drywind Bonepicker
+							80685,	-- Gronnling Bonebreaker
+						},
+					}),
+					q(36075, {	-- Proof of Strength: Ogron Horn (A)
+						["provider"] = { "i", 114018 },	-- Worn Ogron Horn
+						["crs"] = { 81240 },	-- Ogron Spinecrusher
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36076, {	-- Proof of Strength: Ogron Horn (H)
+						["provider"] = { "i", 114019 },	-- Worn Ogron Horn
+						["crs"] = { 81240 },	-- Ogron Spinecrusher
+						["races"] = HORDE_ONLY,
+					}),
+					q(36090, {	-- Proof of Strength: Orc Thorn (A)
+						["provider"] = { "i", 114026 },	-- Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(36091, {	-- Proof of Strength: Orc Thorn (H)
+						["provider"] = { "i", 114027 },	-- Orc Thorn
+						["crs"] = { 81617 },	-- Infested Orc
+						["races"] = HORDE_ONLY,
+					}),
+					q(36096, {	-- Proof of Strength: Ravager Claw (A)
+						["provider"] = { "i", 114031 },	-- Ravager Claw
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					q(36097, {	-- Proof of Strength: Ravager Claw (H)
+						["provider"] = { "i", 114032 },	-- Ravager Claw
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							85516,	-- Cliffscar Ravager
+							83517,	-- Stoneshard Ravager
+							81561,	-- Thicket Ravager
+							86263,	-- Venomous Ravager
+							85779,	-- Verdant Ravager
+						},
+					}),
+					q(36098, {	-- Proof of Strength: Wasp Stinger (A)
+						["provider"] = { "i", 114033 },	-- Wasp Stinger
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = {
+							84852,	-- Heartsting Pollinator
+							85695,	-- Mistcreep Stinger
+							83520,	-- Stoneshard Hunter
+						},
+					}),
+					q(36101, {	-- Proof of Strength: Wasp Stinger (H)
+						["provider"] = { "i", 114034 },	-- Wasp Stinger
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							84852,	-- Heartsting Pollinator
+							85695,	-- Mistcreep Stinger
+							83520,	-- Stoneshard Hunter
+						},
+					}),
+				})),
 				q(36037, {	-- A Centurion Without a Cause
 					["provider"] = { "n", 83820 },	-- High Centurion Tormmok
 					["coord"] = { 44.9, 86.9, GORGROND },
@@ -1975,15 +1979,15 @@ _.Zones =
 					q(36603, {	-- Brimstone Springs
 						["coord"] = { 40.4, 54.6, GORGROND },
 					}),
-					q(37921, {	-- Clearing the Way (A)
+					q(37921, {	-- Clearing the Docks (A)
 						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 38257,	-- We Need a Shipwright
+						["sourceQuests"] = { 36615 },	-- My Very Own Castle (A)
 					}),
-					q(38569, {	-- Clearing the Way (H)
+					q(38569, {	-- Clearing the Docks (H)
 						["lvl"] = 100,
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 38568,	-- We Need a Shipwright
+						["sourceQuests"] = { 36614 },	-- My Very Own Fortress (H)
 					}),
 					q(36571, {	-- Iyun Weald
 						["coord"] = { 61.9, 54.4, GORGROND },

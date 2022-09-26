@@ -493,6 +493,7 @@ root("WorldDrops", tier(WOD_TIER, bubbleDown({ ["timeline"] = { "added 6.0.3" } 
 			i(116722),	-- Ancestral Ring
 			i(116695),	-- Coldsinger Ring
 			i(116704),	-- Evermourn Ring
+			i(118867),	-- Evie's Quartz Loop
 			i(116701),	-- Growthshaper Ring
 			i(116698),	-- Moonwhisper Ring
 			i(116725),	-- Oshu'gun Ring

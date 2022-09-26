@@ -586,7 +586,7 @@ root("Zones", {
 						},
 					}),
 					q(12164, {	-- Hour of the Worg
-						["coord"] = { 64.9, 43.4, GRIZZLY_HILLS },
+						["coord"] = { 57.5, 41.3, GRIZZLY_HILLS },
 						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12411,	-- A Sister's Pledge
 						["groups"] = {

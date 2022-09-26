@@ -41,23 +41,23 @@ root("Instances", { tier(LEGION_TIER, {
 					["coord"] = { 56.9, 68.6, 830 },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
-				q(48803, {	-- The Power to Reforge
+				q(48261, {	-- The Power to Reforge
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
 				}),
-				q(48261, {	-- Forging a Key to the Past
+				q(48803, {	-- Forging a Key to the Past
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
 					["sourceQuests"] = {
 						48271,	-- Recovering the Pieces
-						48803,	-- The Power to Reforge
+						48261,	-- The Power to Reforge
 					},
 				}),
 				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, 830 },
-					["sourceQuest"] = 48261, 	-- Forging a Key to the Past
+					["sourceQuest"] = 48803, 	-- Forging a Key to the Past
 					["g"] = {
 						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia
 							i(151337),	-- Head

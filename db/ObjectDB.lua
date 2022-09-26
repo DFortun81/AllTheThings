@@ -1919,6 +1919,7 @@ _.ObjectNames = {
 	[353686] = "Lunarlight Pod",
 	[353687] = "Broken Bell",
 	[353688] = "Broken Bell",
+	[353689] = "Broken Bell",
 	[353691] = "Skyward Bell",
 	[353791] = "Castle Strongbox",
 	[353792] = "Village Strongbox",

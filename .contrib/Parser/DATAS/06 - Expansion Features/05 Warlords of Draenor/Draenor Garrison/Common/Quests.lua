@@ -2221,6 +2221,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				},
 			}),
 			q(37961, {	-- Bringing the Bass
+				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["races"] = HORDE_ONLY,
@@ -2825,10 +2826,10 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				},
 			}),
 			q(38306, {	-- Mystery Notebook
+				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
-				["description"] = "Requires Garrison Rank 3.",
 				["timeline"] = {
 					"added 6.1.0.19480",
 					"removed 9.0",	-- seems inadvertent, maybe blizzard will fix eventually
@@ -2841,10 +2842,10 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(38427, {	-- New Goods
+				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["coord"] = { 39.2, 55.3, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 79740 },	-- Warmaster Zog
-				["description"] = "Requires Garrison Rank 3.",
 			}),
 			q(35174, {	-- Pale Moonlight
 				["provider"] = { "n", 79457 },	-- Vindicator Maraad
@@ -2866,6 +2867,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
+				["isBreadcrumb"] = true,
 				["coords"] = {
 					{ 50.8, 50.7, FROSTWALL },	-- lvl 1 garrison
 					{ 46.8, 45.8, FROSTWALL },	-- lvl 2 garrison
@@ -2890,6 +2892,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 			q(37434, {	-- Proving Grounds
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 79740 },	-- Warmaster Zog
+				["sourceQuest"] = 34378,	-- Establish Your Garrison
 				["coords"] = {
 					{ 53.8, 54.9, FROSTWALL },	-- lvl 1 garrison
 					{ 40.5, 54.8, FROSTWALL },	-- lvl 2 garrison

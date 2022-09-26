@@ -25,6 +25,11 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 					["isDaily"] = true,
 					["coord"] = { 57.6, 40.6, BASTION },
 				}),
+				o(353689, {	-- Broken Bell
+					["questID"] = 60797,
+					["isDaily"] = true,
+					["coord"] = { 42.8, 47.9, BASTION },
+				}),
 			}),
 			o(356823, {	-- Cloudwalker's Coffer
 				["questID"] = 61698,
