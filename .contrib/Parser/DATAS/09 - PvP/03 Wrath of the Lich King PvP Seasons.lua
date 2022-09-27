@@ -2530,7 +2530,8 @@ root("PVP", applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDow
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(PVP_ELITE, {
+		}, 
+		n(PVP_ELITE, {
 			-- Original Sources are:
 			-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 			-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
