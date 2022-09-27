@@ -734,7 +734,7 @@ root("Zones", m(KALIMDOR, {
 					["provider"] = { "n", 34242 },	-- Guardian Gurtar
 					["races"] = HORDE_ONLY,
 					["coord"] = { 89.5, 48.6, ASHENVALE },
-					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
+					["sourceQuest"] = 13871,	-- Security!
 					["g"] = {
 						i(56655),	-- Bloodcup Slippers
 						i(56656),	-- Faithful Treads

@@ -1792,7 +1792,6 @@ root("HiddenQuestTriggers", {
 		q(62527),	-- ""
 		q(62493),	-- Ember Court End (The Countess / Polemarch Adrestes as first-time guests, both Elated)
 		q(62510),	-- ""
-		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(61731),	-- Ember Court - after completing Magical Curios
 
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
@@ -1807,7 +1806,6 @@ root("HiddenQuestTriggers", {
 		q(59694),	-- Using 'Night Fae Arsenal' (177244)
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
-		q(61531),	-- either due to Acquaintence with The Countess, or from the auto-use of "Decree: The Countess's Boon" when opening The Countess's Extravagant Tribute
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
 		q(60610),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)
@@ -1817,7 +1815,6 @@ root("HiddenQuestTriggers", {
 		q(60611),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(60613),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(62460),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
-		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
@@ -1828,9 +1825,6 @@ root("HiddenQuestTriggers", {
 		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(63356),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
 		q(60301),	-- channeling anima to The Shrouded Asylum for the first time
-		q(60473),	-- when looting 'Decree: Baroness Vashj's Boon' / Opening Baroness Vashj's Extravagant Tribute
-		q(61527),	-- when looting 'Decree: Lady Moonberry's Boon' / Opening Lady Moonberry's Extravagant Tribute
-		q(61532),	-- when looting 'Decree: The Countess's Esteem' / Opening The Countess's Substantial Tribute
 		q(61224),	-- "Ashen Urn" buff from Anima Conductor
 		q(61197),	-- "Mobile Mirror Set" buff from Anima Conductor
 		q(61210),	-- "Thirst for Anima" buff from Anima Conductor

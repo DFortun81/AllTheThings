@@ -64,8 +64,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(48546),	-- Tracking Quest
 				q(49006),	--
 				q(49162),	--
-				q(49384),	--
-				q(49385),	--
 				-- 7.3.2
 				q(49619),	--
 				q(49620),	-- completed some missions on the Legion Mission Board
@@ -140,7 +138,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56667),	--
 				q(56742),	--
 				q(56744),	--
-				q(56745),	--
 				q(56766),	--
 				q(56844),	--
 				-- 8.2.5

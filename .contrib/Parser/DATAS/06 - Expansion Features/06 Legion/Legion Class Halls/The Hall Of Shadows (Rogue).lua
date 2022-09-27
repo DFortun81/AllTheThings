@@ -219,12 +219,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 						}),
 					}),
 					q(44252, {	-- A Sheath For Every Blade
-						["sourceQuests"] = {
-							42504,	-- The Unseen Blade (A)
-							42627,	-- The Unseen Blade (H)
-							40849,	-- The Dreadblades
-							41924,	-- Fangs of the Devourer
-						},
+						["sourceQuest"] = 40840,	-- A Worthy Blade
 						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["coord"] = { 26.9, 36.7, THE_HALL_OF_SHADOWS },
 						["g"] = {

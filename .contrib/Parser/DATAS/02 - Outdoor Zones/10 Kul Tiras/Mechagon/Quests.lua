@@ -1139,6 +1139,7 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 			q(56511),	-- Playing Battle of Gnomeregan on the Gramophone
 			--q(56742),	-- Blueprint: Black Market Radio?
 			q(56360, {["repeatable"]=true}),	-- triggered when completing 'Other Interests'
+			q(56745),	-- triggered when completing 56174 'Other Interests'
 			q(56743),	-- triggered when completing 'Other Interests'
 			--q(55417),	-- Paint vial: Bronze/Red or Blueprint: Gramophone or Mining in Mechagon
 			q(55261),	-- Building "Lightning Zap 5000" as a result of the WQ "Toys For Destruction" (ID: 54090).

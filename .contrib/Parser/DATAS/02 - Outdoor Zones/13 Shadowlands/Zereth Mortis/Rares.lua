@@ -420,7 +420,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 				},
 			}),
 			n(183925, {	-- Tahkwitz
-				["description"] = "Use the cosmic enegry system behind the mountain. Work your way to the top level and then jump down to be able to pull him.",
+				["description"] = "Use the cosmic energy system behind the mountain. Work your way to the top level and then jump down to be able to pull him.",
 				["coord"] = { 50.4, 39.8, ZERETH_MORTIS },
 				["questID"] = 65272,
 				["g"] = {

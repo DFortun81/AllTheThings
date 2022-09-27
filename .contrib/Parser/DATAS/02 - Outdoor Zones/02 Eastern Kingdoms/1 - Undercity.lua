@@ -1200,7 +1200,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
-					["coord"] = { 63.6, 48.8, UNDERCITY },
+					["coords"] = {
+						{ 63.6, 48.8, UNDERCITY },
+						-- #IF AFTER 8.0.1
+						{ 56.6, 90.2, ORGRIMMAR },
+						-- #ENDIF
+					},
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

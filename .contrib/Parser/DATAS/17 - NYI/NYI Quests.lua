@@ -2613,7 +2613,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 7.3.0.24904
 				-- 7.3.0.24920
 				-- 7.3.0.24931
-				q(49386),	--
 				-- 7.3.0.24956
 				-- 7.3.0.24970
 				-- 7.3.0.24974
@@ -5832,7 +5831,6 @@ root("NeverImplemented", bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(61507),	--
 				q(61517, { ["name"] = "zz", }),	-- zz
 				q(61521, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-				q(61536),	--
 				-- 9.0.1.35167
 				q(61563),	--
 				q(61565, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
