@@ -500,6 +500,23 @@ local defaultHierarchyComparison = function(a,b)
 	bcomp = b.g and #b.g or 0;
 	return acomp < bcomp;
 end
+local defaultTotalComparison = function(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	local acomp, bcomp;
+	acomp = a.total or 0;
+	bcomp = b.total or 0;
+	return acomp < bcomp;
+end
 app.SortDefaults = {
 	["Global"] = defaultComparison,
 	["Text"] = defaultTextComparison,
@@ -507,6 +524,8 @@ app.SortDefaults = {
 	["Value"] = defaultValueComparison,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	["Hierarchy"] = defaultHierarchyComparison,
+	-- Sorts objects first by how many total collectibles they contain
+	["Total"] = defaultTotalComparison,
 };
 local function Sort(t, compare, nested)
 	if t then
