@@ -948,8 +948,7 @@ root("Zones", m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.0.2" } }, {
 				["coord"] = { 54.7, 41.1, BASTION },
 			}),
 			q(59774, {	-- Welcome to Eternity
-			--	commenting SQs for the first quest in each SL zone to avoid chains that are like...hundreds of quests long
-			--	["sourceQuests"] = { 59773 },	-- Seek the Ascended
+				["sourceQuests"] = { 59773 },	-- Seek the Ascended
 				["provider"] = { "n", 166227 },	-- Kleia
 				["coord"] = { 37.3, 76.4, BASTION },
 			}),

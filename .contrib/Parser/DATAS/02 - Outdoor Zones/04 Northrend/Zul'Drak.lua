@@ -336,7 +336,7 @@ root("Zones", {
 						["qg"] = 28503,	-- Overlord Drakuru
 						["altQuests"] = { 12663 },	-- Reunited
 						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
-						["sourceQuest"] = 12649,	-- Suit Up!
+						["sourceQuest"] = 12648,	-- Dressing Down
 					}),
 					q(12633, {	-- Darkness Calling
 						["provider"] = { "i", 38673 },	-- Writhing Choker
@@ -375,7 +375,7 @@ root("Zones", {
 					q(12652, {	-- Feedin' Da Goolz
 						["coord"] = { 19.8, 75.4, ZULDRAK },
 						["qg"] = 28589,	-- Gristlegut
-						["sourceQuest"] = 12643,	-- Silver Lining
+						["sourceQuest"] = 12649,	-- Suit Up!
 						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.",
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
