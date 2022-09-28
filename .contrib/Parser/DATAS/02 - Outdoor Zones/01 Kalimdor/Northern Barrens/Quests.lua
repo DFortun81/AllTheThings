@@ -150,7 +150,10 @@ _.Zones =
 					["provider"] = { "n", 34258 },	-- Halga Bloodeye
 					["coord"] = { 67.3, 38.7, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 5041,	-- Supplies for the Crossroads
+					["sourceQuests"] = {
+						5041,	-- Supplies for the Crossroads
+						872,	-- The Far Watch Offensive
+					},
 					["g"] = {
 						i(59536),	-- Bloodeye Belt
 						i(59537),	-- Kranal's Vest
