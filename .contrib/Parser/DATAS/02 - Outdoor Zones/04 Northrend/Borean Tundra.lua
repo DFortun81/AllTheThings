@@ -787,16 +787,48 @@ root("Zones", {
 						["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 					}),
 					q(13004, {	-- Gem Perfection (A)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26997,	-- Alestos
+						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(13002, {	-- Gem Perfection (H)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 26982,	-- Geba'li
+						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(11673, {	-- Get Me Outa Here!
 						["coord"] = { 55.5, 12.5, BOREAN_TUNDRA },

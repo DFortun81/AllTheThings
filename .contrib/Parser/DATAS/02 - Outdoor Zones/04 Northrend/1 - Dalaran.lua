@@ -9363,39 +9363,63 @@ root("Zones", {
 							i(41576, {	-- Design: Bold Scarlet Ruby
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(42309, {	-- Design: Brilliant Dragon's Eye
+							-- #if BEFORE CATA
+							i(42299, {	-- Design: Bright Dragon's Eye [WRATH] / Design: Delicate Dragon's Eye [CATA+]
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							i(42309, {	-- Design: Brilliant Dragon's Eye [CATA+] / Design: Runed Dragon's Eye [WRATH]
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(42300, {	-- Design: Brilliant Dragon's Eye
-								["u"] = REMOVED_FROM_GAME,
+								-- #if BEFORE CATA
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+								-- #endif
+								["timeline"] = { "removed 4.0.3" },
 							}),
 							i(41704, {	-- Design: Chaotic Skyflare Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
-							i(41687, {	-- Design: Deft Monarch Topaz
+							-- #if AFTER CATA
+							i(41687, {	-- Design: Deft Monarch Topaz [CATA+] / Design: Stark Monarch Topaz [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41792, {	-- Design: Design: Deft Monarch Topaz
-								["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #endif
 							i(42301, {	-- Design: Delicate Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(42299, {	-- Design: Delicate Dragon's Eye
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(42299, {	-- Design: Delicate Dragon's Eye [CATA+] / Design: Bright Dragon's Eye [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
+							-- #endif
 							i(41577, {	-- Design: Delicate Scarlet Ruby
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41705, {	-- Design: Effulgent Skyflare Diamond [WRATH] / Design: Shielded Skyflare Diamond [CATA+]
+								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
 							i(41706, {	-- Design: Ember Skyflare Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41697, {	-- Design: Enduring Forest Emerald [WRATH] / Design: Regal Forest Emerald [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
 							i(41692, {	-- Design: Energized Forest Emerald
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41694, {	-- Design: Energized Forest Emerald
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(41694, {	-- Design: Energized Forest Emerald [CATA+] / Design: Intricate Forest Emerald [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
+							-- #endif
 							i(42302, {	-- Design: Flashing Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
@@ -9405,91 +9429,147 @@ root("Zones", {
 							i(41693, {	-- Design: Forceful Forest Emerald
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(42303, {	-- Design: Fractured Dragon's Eye [WRATH] / Design: Smooth Dragon's Eye [CATA+]
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
 							i(41582, {	-- Design: Glinting Twilight Opal
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
-							}),
-							i(41785, {	-- Design: Glinting Twilight Opal
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							i(41796, {	-- Design: Glinting Twilight Opal
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(41708, {	-- Design: Insightful Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41694, {	-- Design: Intricate Forest Emerald [WRATH] / Design: Energized Forest Emerald [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
 							i(41709, {	-- Design: Invigorating Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
-							i(41702, {	-- Design: Jagged Forest Emerald
+							-- #if AFTER CATA
+							i(41702, {	-- Design: Jagged Forest Emerald [CATA+] / Design: Puissant Twilight Opal [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41696, {	-- Design: Lightning Forest Emerald
+							-- #endif
+							i(41696, {	-- Design: Lambent Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+] (Not out of alignment after rename)
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41782, {	-- Design: Lightning Forest Emerald
-								["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41565, {	-- Design: Lucent Huge Citrine
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-								["timeline"] = { "added 4.0.3" },
 							}),
-							i(41564, {	-- Design: Lucent Huge Citrine
-								["timeline"] = { "added 3.0.2.8962", "removed 4.0.3" },
+							-- #endif
+							-- #if BEFORE CATA
+							i(41689, {	-- Design: Luminous Monarch Topaz [WRATH] / Design: Reckless Monarch Topaz [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
 							}),
+							i(42304, {	-- Design: Lustrous Dragon's Eye [WRATH] / Design: Sparkling Dragon's Eye [CATA+]
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(41581, {	-- Design: Lustrous Sky Sapphire [WRATH] / Design: Sparkling Sky Sapphire [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41575, {	-- Design: Mysterious Shadow Crystal
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(42305, {	-- Design: Mystic Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41559, {	-- Design: Mystic Sun Crystal
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
-							i(41698, {	-- Design: Nimble Forest Emerald
+							i(41698, {	-- Design: Nimble Forest Emerald [CATA+] / Design: Vivid Forest Emerald [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(41686, {	-- Design: Potent Monarch Topaz
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
 							i(42306, {	-- Design: Precise Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41702, {	-- Design: Puissant Twilight Opal [WRATH] / Design: Jagged Forest Emerald [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							i(41701, {	-- Design: Purified Twilight Opal [CATA+] / Design: Royal Twilight Opal [WRATH]
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(41699, {	-- Design: Purified Twilight Opal [CATA+] / Design: Seer's Forest Emerald [WRATH]
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
 							i(41579, {	-- Design: Quick Autumn's Glow
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
 							i(42307, {	-- Design: Quick Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41570, {	-- Design: Radiant Dark Jade
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(41690, {	-- Design: Reckless Monarch Topaz
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41689, {	-- Design: Reckless Monarch Topaz
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(41689, {	-- Design: Reckless Monarch Topaz [CATA+] / Design: Luminous Monarch Topaz [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(41697, {	-- Design: Regal Forest Emerald
+							-- #endif
+							-- #if AFTER CATA
+							i(41697, {	-- Design: Regal Forest Emerald [CATA+] / Design: Enduring Forest Emerald [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41703, {	-- Design: Regal Forest Emerald
-								["u"] = REMOVED_FROM_GAME,
+							-- #endif
+							i(41703, {	-- Design: Regal Forest Emerald [CATA+] / Design: Regal Twilight Opal [WRATH]
+								-- #if BEFORE CATA
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+								-- #endif
+								["timeline"] = { "removed 4.0.3" },
 							}),
 							i(41710, {	-- Design: Relentless Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41566, {	-- Design: Resplendent Huge Citrine
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(41707, {	-- Design: Revitalizing Skyflare Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #if AFTER CATA
+							i(41580, {	-- Design: Rigid Autumn's Glow [WRATH] / Design: Rigid Sky Sapphire [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
 							i(42308, {	-- Design: Rigid Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(41580, {	-- Design: Rigid Sky Sapphire
+							-- #if AFTER CATA
+							i(41580, {	-- Design: Rigid Sky Sapphire [CATA+] / Design: Rigid Autumn's Glow [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(43317, {	-- Design: Ring of Earthen Might
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),
@@ -9499,27 +9579,47 @@ root("Zones", {
 							i(43318, {	-- Design: Ring of Scarlet Shadows
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41701, {	-- Design: Royal Twilight Opal [WRATH] / Design: Purified Twilight Opal [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							i(42309, {	-- Design: Runed Dragon's Eye [WRATH] / Design: Brilliant Dragon's Eye [CATA+]
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
 							i(43497, {	-- Design: Savage Titanium Band
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),
 							i(43485, {	-- Design: Savage Titanium Ring
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),
+							-- #if BEFORE CATA
+							i(41699, {	-- Design: Seer's Forest Emerald [WRATH] / Design: Purified Twilight Opal [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41569, {	-- Design: Shattered Dark Jade
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
-							i(41705, {	-- Design: Shielded Skyflare Diamond
+							i(41705, {	-- Design: Shielded Skyflare Diamond [CATA+] / Design: Effulgent Skyflare Diamond [WRATH]
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(41747, {	-- Design: Shifting Twilight Opal
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
 							i(42310, {	-- Design: Smooth Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(42303, {	-- Design: Smooth Dragon's Eye
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(42303, {	-- Design: Smooth Dragon's Eye [CATA+] / Design: Fractured Dragon's Eye [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
+							-- #endif
 							i(42311, {	-- Design: Solid Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
@@ -9529,33 +9629,53 @@ root("Zones", {
 							i(42312, {	-- Design: Sparkling Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(42304, {	-- Design: Sparkling Dragon's Eye
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(42304, {	-- Design: Sparkling Dragon's Eye [CATA+] / Design: Lustrous Dragon's Eye [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
-							i(41581, {	-- Design: Sparkling Sky Sapphire
+							i(41581, {	-- Design: Sparkling Sky Sapphire [CATA+] / Design: Lustrous Sky Sapphire [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
+							-- #if BEFORE CATA
+							i(41687, {	-- Design: Stark Monarch Topaz [WRATH] / Design: Deft Monarch Topaz [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41572, {	-- Design: Steady Dark Jade
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
 							i(41560, {	-- Design: Stormy Chalcedony
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(42313, {	-- Design: Stormy Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(41719, {	-- Design: Subtle Autumn's Glow
+							-- #if AFTER CATA
+							i(41719, {	-- Design: Subtle Autumn's Glow [CATA+] / Design: Subtle Scarlet Ruby [WRATH]
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41791, {	-- Design: Subtle Autumn's Glow
-								["u"] = REMOVED_FROM_GAME,
-							}),
+							-- #endif
 							i(42314, {	-- Design: Subtle Dragon's Eye
 								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
 							}),
-							i(42315, {	-- Design: Subtle Dragon's Eye
-								["u"] = REMOVED_FROM_GAME,
+							-- #if AFTER CATA
+							i(42315, {	-- Design: Subtle Dragon's Eye [CATA+] / Design: Thick Dragon's Eye [WRATH]
+								["timeline"] = { "removed 4.0.3" },
 							}),
+							-- #endif
+							-- #if BEFORE CATA
+							i(41719, {	-- Design: Subtle Scarlet Ruby [WRATH] / Design: Subtle Autumn's Glow [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							i(42315, {	-- Design: Thick Dragon's Eye [WRATH] / Design: Subtle Dragon's Eye [CATA+]
+								["cost"] = { { "c", 61, 2 }, },	-- 2x Dalaran Jewelcrafter's Token
+								["timeline"] = { "removed 4.0.3" },
+							}),
+							-- #endif
 							i(42652, {	-- Design: Titanium Earthguard Chain
 								["cost"] = { { "c", 61, 6 }, },	-- 6x Dalaran Jewelcrafter's Token
 							}),
@@ -9580,19 +9700,26 @@ root("Zones", {
 							i(41711, {	-- Design: Trenchant Earthsiege Diamond
 								["cost"] = { { "c", 61, 5 }, },	-- 5x Dalaran Jewelcrafter's Token
 							}),
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
 							i(41571, {	-- Design: Turbid Dark Jade
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
-								["timeline"] = { "added 4.0.3" },
 							}),
-							i(41573, {	-- Design: Turbid Dark Jade
-								["timeline"] = { "added 3.0.2.8962", "removed 4.0.3" },
-							}),
+							-- #endif
 							i(41688, {	-- Design: Veiled Twilight Opal
 								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
 							}),
-							i(41563, {	-- Design: Willful Huge Citrine
+							-- #if BEFORE CATA
+							i(41698, {	-- Design: Vivid Forest Emerald [WRATH] / Design: Nimble Forest Emerald [CATA+]
+								["cost"] = { { "c", 61, 3 }, },	-- 3x Dalaran Jewelcrafter's Token
+							}),
+							-- #endif
+							-- #if AFTER CATA
+							-- NOTE: This was moved from the PVP Jewelcrafting Quartermaster in Org/SW with Cata.
+							i(41563, {	-- Design: Willful Huge Citrine [CATA+] / Design: Durable Huge Citrine [WRATH]
 								["cost"] = { { "c", 61, 1 }, },	-- 1x Dalaran Jewelcrafter's Token
 							}),
+							-- #endif
 							i(43319, {	-- Design: Windfire Band
 								["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
 							}),

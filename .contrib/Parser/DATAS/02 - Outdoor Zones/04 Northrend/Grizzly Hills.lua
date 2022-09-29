@@ -288,20 +288,19 @@ root("Zones", {
 						["qg"] = 27495,	-- Barblefink
 						["sourceQuest"] = 12443,	-- Seeking Solvent
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
+						["timeline"] = { "removed 4.0.1" },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
-							i(37664),	-- Element 115 -- TODO: this isn't a reward. add item to a parser blacklist later
-						},
 					})),
 					pvp(q(12434, {	-- Always Seeking Solvent (H)
 						["qg"] = 27565,	-- Gurtor
 						["sourceQuest"] = 12433,	-- Seeking Solvent
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
+						["timeline"] = { "removed 4.0.1" },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
-						["u"] = REMOVED_FROM_GAME,
 					})),
 					q(12295, {	-- An Exercise in Diplomacy
 						["qg"] = 26875,	-- Lieutenant Dumont
@@ -421,6 +420,11 @@ root("Zones", {
 						["coord"] = { 10.0, 77.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					q(12184, {	-- Cultivating an Image (A)
 						["qg"] = 26885,	-- Mountaineer Kilian
@@ -482,6 +486,11 @@ root("Zones", {
 						["coord"] = { 22.1, 81.2, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					q(12120, {	-- Drak'aguul's Mallet
 						["qg"] = 26886,	-- Kraz
@@ -690,12 +699,22 @@ root("Zones", {
 						["coord"] = { 22.0, 81.3, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					pvp(q(12317, {	-- Keep Them at Bay (H)
 						["qg"] = 27563,	-- Centurion Kaggrum
 						["coord"] = { 10.1, 77.3, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					pvp(q(12289, {	-- Kick 'Em While They're Down
 						["qg"] = 27468,	-- Sergeant Hartsman
@@ -987,11 +1006,21 @@ root("Zones", {
 						["qg"] = 27495,	-- Barblefink
 						["coord"] = { 23.0, 80.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					pvp(q(12433, {	-- Seeking Solvent (H)
 						["qg"] = 27565,	-- Gurtor
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					q(12763, {	-- Shifting Priorities
 						["qg"] = 26666,	-- Scout Vor'takh
@@ -1020,12 +1049,22 @@ root("Zones", {
 						["coord"] = { 21.9, 80.7, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					pvp(q(12324, {	-- Smoke 'Em Out (H)
 						["qg"] = 27606,	-- Stone Guard Ragetotem
 						["coord"] = { 11.3, 76.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						-- #if BEFORE CATA
+						["groups"] = {
+							currency(201),	-- Venture Coin
+						},
+						-- #endif
 					})),
 					q(11998, {	-- Softening the Blow
 						["qg"] = 26212,	-- Captain Gryan Stoutmantle

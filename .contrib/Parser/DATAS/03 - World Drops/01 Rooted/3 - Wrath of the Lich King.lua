@@ -1067,18 +1067,33 @@ root("WorldDrops", applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			i(41780),	-- Design: Champion's Monarch Topaz
 			i(41786),	-- Design: Destructive Skyflare Diamond
 			i(41777),	-- Design: Etched Twilight Opal
+			-- #if AFTER CATA
+			i(41785, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Tenuous Twilight Opal [WRATH]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41789),	-- Design: Inscribed Monarch Topaz
+			-- #if AFTER CATA
+			i(41782, {	-- Design: Lightning Forest Emerald [CATA+] / Design: Shining Forest Emerald [WRATH]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
+			i(41781, {	-- Design: Misty Forest Emerald
+				["timeline"] = { "removed 4.0.3" },
+			}),
 			i(41783),	-- Design: Purified Twilight Opal
-			i(41699, {	-- Design: Purified Twilight Opal
-				["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			i(41701, {	-- Design: Purified Twilight Opal
-				["spellID"] = 0,	-- This is now available via 41783, need to delink the old plans from the recipe
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			i(41778),	-- Design: Resolute Monarch Topaz
+			-- #if BEFORE CATA
+			i(41782, {	-- Design: Shining Forest Emerald [WRATH] / Design: Lightning Forest Emerald [CATA+]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41784),	-- Design: Sovereign Twilight Opal
+			-- #if AFTER CATA
+			i(41785, {	-- Design: Tenuous Twilight Opal [WRATH] / Design: Glinting Twilight Opal [CATA+]
+				["timeline"] = { "removed 4.0.3" },
+			}),
+			-- #endif
 			i(41787),	-- Design: Thundering Skyflare Diamond
 		}),
 		prof(TAILORING, {

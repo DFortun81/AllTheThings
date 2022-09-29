@@ -283,6 +283,9 @@ root("Instances", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							crit(5610, {	-- Anub'arak slain
 								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							}),
+							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH]
+								["timeline"] = { "removed 4.0.3" },
+							}),
 							i(37235),	-- Crypt Lord's Deft Blade
 							i(37238),	-- Rod of the Fallen Monarch
 							i(37237),	-- Chitin Shell Greathelm

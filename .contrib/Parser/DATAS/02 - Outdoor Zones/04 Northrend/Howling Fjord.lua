@@ -709,16 +709,48 @@ root("Zones", {
 						["sourceQuest"] = 11434,	-- Forgotten Treasure
 					}),
 					q(12918, {	-- Gem Perfection (A)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26915,	-- Ounhulo
+						["coord"] = { 59.8, 63.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(12952, {	-- Gem Perfection (H)
-						["u"] = REMOVED_FROM_GAME,
-						["races"] = HORDE_ONLY,
 						["qg"] = 26960,	-- Carter Tiffens
+						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
+						["timeline"] = { "removed 4.0.3" },
+						["cost"] = {
+							{ "i", 36929, 2 },	-- Huge Citrine
+							{ "i", 36932, 2 },	-- Dark Jade
+							{ "i", 36926, 2 },	-- Shadow Crystal
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 4.0.3
+						["groups"] = {
+							i(41888, {	-- Small Velvet Bag
+								["description"] = "Contains a 'perfect' gem.",
+							}),
+							recipe(55534, {	-- Gem Perfection
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+						},
+						-- #endif
 					}),
 					q(12181, {	-- Give it a Name
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
