@@ -162,6 +162,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43441,	-- A Second Weapon
 								44310,	-- Thrice the Power
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 55.3, 38.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 						}),
@@ -210,6 +211,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43441,	-- A Second Weapon
 								44310,	-- Thrice the Power
 							},
+							["sourceQuestNumRequired"] = 1,
 							["sourceQuest"] = 41085,	-- A Mage's Weapon
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 55.3, 38.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -241,6 +243,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43441,	-- A Second Weapon
 								44310,	-- Thrice the Power
 							},
+							["sourceQuestNumRequired"] = 1,
 							["sourceQuest"] = 41085,	-- A Mage's Weapon
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
@@ -299,6 +302,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							11997,	-- The Frozen Flame
 							42479,	-- The Mage Hunter
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 						["coord"] = { 28.6, 49.9, LEGION_DALARAN },
 						["isBreadcrumb"] = true,

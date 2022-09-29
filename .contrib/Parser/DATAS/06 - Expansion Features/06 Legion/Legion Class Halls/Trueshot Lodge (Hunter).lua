@@ -65,6 +65,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								44043,	-- Continuing the Legend
 								44366,	-- One Last Adventure
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 102478 },	-- Emmarel Shadewarden
 								{ "n", 107317 },	-- Emmarel Shadewarden
@@ -110,6 +111,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								44043,	-- Continuing the Legend
 								44366,	-- One Last Adventure
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 102478 },	-- Emmarel Shadewarden
 								{ "n", 107317 },	-- Emmarel Shadewarden
@@ -178,6 +180,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 								44043,	-- Continuing the Legend
 								44366,	-- One Last Adventure
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 102478 },	-- Emmarel Shadewarden
 								{ "n", 107317 },	-- Emmarel Shadewarden
@@ -226,6 +229,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, {
 							41009,	-- Hunter to Hunter
 							40385,	-- The Spear in the Shadow
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 					}),

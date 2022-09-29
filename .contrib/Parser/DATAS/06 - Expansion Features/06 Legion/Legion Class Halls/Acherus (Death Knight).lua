@@ -62,6 +62,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43962,	-- Blades of Destiny
 								44401,	-- A Weapon For Every Occasion
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 101441 },	-- Duke Lankral
 								{ "n", 109788 },	-- Duke Lankral
@@ -85,6 +86,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43962,	-- Blades of Destiny
 								44401,	-- A Weapon For Every Occasion
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 101441 },	-- Duke Lankral
 								{ "n", 109788 },	-- Duke Lankral
@@ -112,6 +114,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43962,	-- Blades of Destiny
 								44401,	-- A Weapon For Every Occasion
 							},
+							["sourceQuestNumRequired"] = 1,
 							["providers"] = {
 								{ "n", 101441 },	-- Duke Lankral
 								{ "n", 109788 },	-- Duke Lankral
@@ -180,6 +183,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							40935,	-- The Call of Vengeance (Good)
 							40987,	-- The Call of Vengeance (Bad)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
 						["coord"] = { 49.6, 52.6, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						["timeline"] = { "added 7.0.3", "removed 8.0.1" },
