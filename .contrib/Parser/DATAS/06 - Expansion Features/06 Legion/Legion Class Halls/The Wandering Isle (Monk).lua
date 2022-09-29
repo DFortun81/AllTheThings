@@ -76,6 +76,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						}),
@@ -127,6 +128,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 							["maps"] = { 728 },	-- Terrace of Endless Spring (Scenario Map)
@@ -144,6 +146,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						}),
@@ -190,6 +193,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 					}),

@@ -96,6 +96,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 						}),
@@ -161,6 +162,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 							["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 						}),
@@ -185,6 +187,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 40.8, 75.4, THE_HALL_OF_SHADOWS },
 						}),

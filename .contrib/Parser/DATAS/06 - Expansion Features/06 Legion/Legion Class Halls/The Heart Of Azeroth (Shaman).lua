@@ -66,6 +66,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43945,	-- Expanding Your Horizons
 								44006,	-- Your Fullest Potential
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 							["coords"] = {
 								{ 34.1, 74.3, 725 },	-- The Maelstrom (Scenario Map)
@@ -94,6 +95,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43945,	-- Expanding Your Horizons
 								44006,	-- Your Fullest Potential
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 							["coords"] = {
 								{ 33.7, 79.2, 725 },	-- The Maelstrom (Scenario Map)
@@ -123,6 +125,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 								43945,	-- Expanding Your Horizons
 								44006,	-- Your Fullest Potential
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96539 },	-- Stormcaller Mylra
 							["coords"] = {
 								{ 34.5, 76.1, 725 },	-- The Maelstrom (Scenario Map)
@@ -175,6 +178,7 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 							40341,	-- Throne of the Tides: Azshara's Power
 							40224,	-- The Hammer in the Deep
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 96539 },	-- Stormcaller Mylra
 						["coord"] = { 34.0, 76.6, THE_HEART_Of_AZEROTH },
 					}),
