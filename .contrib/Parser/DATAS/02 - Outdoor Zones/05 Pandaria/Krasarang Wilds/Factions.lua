@@ -460,7 +460,10 @@ _.Zones =
 							}),
 							q(32398, {	-- The Bell Speaks
 								["minReputation"] = { 1375, EXALTED },
-								["sourceQuests"] = { 32412 },	-- One Last Grasp
+								["sourceQuests"] = { 
+									32412,	-- One Last Grasp
+									32413,	-- A Return to Krasarang
+								},
 								["provider"] = { "n", 67939 },	-- General Nazgrim
 								["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
 								["races"] = HORDE_ONLY,

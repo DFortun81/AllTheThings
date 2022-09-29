@@ -5550,10 +5550,10 @@ root("Zones", {
 				n(QUESTS, {
 					q(32413, {	-- A Return to Krasarang
 						["qg"] = 68586,	-- Grand Magister Rommath
-						["races"] = { BLOODELF, ORC },
-						["classes"] = { WARRIOR, WARLOCK },
+						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 32412,
 						["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+						["isBreadcrumb"] = true,
 					}),
 					--[[
 					q(32406, {	-- A Tactical Assault
