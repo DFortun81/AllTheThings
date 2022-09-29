@@ -99,6 +99,9 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #endif
 							-- #endif
 						}),
+						i(9653, {	-- Speedy Racer Googles
+							["timeline"] = { "removed 4.0.3" },
+						}),
 					},
 				}),
 				q(2991, {	-- Nekrum's Medallion
@@ -422,5 +425,4 @@ root("HiddenQuestTriggers", {
 });
 -- #endif
 root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(9653),	-- Speedy Racer Goggles
 }));
