@@ -8,9 +8,6 @@ root("Zones", {
 			["icon"] = "Interface\\Icons\\achievement_zone_boreantundra_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(561, {	-- D.E.H.T.A's Little P.I.T.A.
-						["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-					}),
 					explorationAch(1264),	-- Explore Borean Tundra
 					ach(33, {	-- Nothing Boring About Borean (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1745,18 +1742,19 @@ root("Zones", {
 					}),
 					q(11892, {	-- The Assassination of Harold Lane
 						["qg"] = 25809,	-- Archdruid Lathorius
-						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
-						["groups"] = {
-							i(38252),	-- Band of Wholesome Preservation
-							i(38251),	-- Ring of Indignant Rage
-							i(38250),	-- Activist's Signet of Blasting
-						},
 						["sourceQuests"] = {
 							11866,	-- Ears of Our Enemies
 							11884,	-- Nedar, Lord of the Rhinos...
 							11879,	-- Kaw the Mammoth Destroyer
 							11868,	-- The Culler Cometh
 							11872,	-- The Nefarious Clam Master...
+						},
+						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
+						["groups"] = {
+							ach(561),	-- D.E.H.T.A's Little P.I.T.A.
+							i(38252),	-- Band of Wholesome Preservation
+							i(38251),	-- Ring of Indignant Rage
+							i(38250),	-- Activist's Signet of Blasting
 						},
 					}),
 					q(11630, {	-- The Bad Earth

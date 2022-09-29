@@ -4,11 +4,6 @@
 
 root("Achievements", achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 	achcat(ACHIEVEMENT_CATEGORY_NORTHREND_QUESTS, {
-		ach(561),		-- D.E.H.T.A's Little P.I.T.A. (Borean Tundra)
-		ach(1596, {		-- Guru of Drakuru
-			crit(1),		-- Cleansing Drak'Tharon
-			crit(2),		-- Betrayal
-		}),
 		ach(961, {		-- Honorary Frenzyheart (Sholazar Basin)
 			crit(1),		-- Chicken Party!
 			crit(2),		-- Kartak's Rampage

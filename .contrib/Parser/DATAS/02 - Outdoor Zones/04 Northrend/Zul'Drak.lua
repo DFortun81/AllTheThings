@@ -21,20 +21,12 @@ root("Zones", {
 					})),
 					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
-						["collectible"] = false,
-						["groups"] = {
-							crit(2, {	-- Betrayal
-								["sourceQuest"] = 12713,	-- Betrayal
-							}),
-						},
-					}),
-					ach(1576, {	-- Of Blood and Anguish
-						["collectible"] = false,
-						["groups"] = {
-							crit(2, {	-- The Champion of Anguish
-								["sourceQuest"] = 12948,	-- The Champion of Anguish
-							}),
-						},
+						crit(5805, {	-- Betrayal
+							["_quests"] = { 12713 },	-- Betrayal
+						}),
+						crit(5804, {	-- Cleansing Drak'Tharon
+							["_quests"] = { 12238 },	-- Cleansing Drak'Tharon
+						}),
 					}),
 					ach(36, {	-- The Empire of Zul'Drak
 						-- #if ANYCLASSIC

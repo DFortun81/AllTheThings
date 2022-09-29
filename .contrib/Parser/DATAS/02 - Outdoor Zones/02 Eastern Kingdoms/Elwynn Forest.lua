@@ -1739,7 +1739,7 @@ root("Zones", m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 4.0.3
 							["description"] = "One of the single best PvE defensive cooldowns. Choose your targets wisely... Save for Patchwerk!",
 							-- #endif
-							["timeline"] = { "added 4.0.3.13287" },
+							["timeline"] = { "removed 4.0.3.13287" },
 						}),
 						i(57400, {	-- Gold Dust Belt
 							["timeline"] = { "added 4.0.3.13287" },

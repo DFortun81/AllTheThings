@@ -97,34 +97,6 @@ root("Achievements", pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				}),
 			},
 		}),
-		ach(2016, {	-- Grizzled Veteran (A)
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				crit(1),		-- Blackriver Skirmish
-				crit(2),		-- Pieces Parts
-				crit(3),		-- Life or Death
-				crit(4),		-- Shredder Repair
-				crit(5),		-- Kick 'Em While They're Down
-				crit(6),		-- Keep Them at Bay!
-				crit(7),		-- Down With Captain Zorna!
-				crit(8),		-- Smoke 'Em Out
-				crit(9),		-- Riding the Red Rocket
-			},
-		}),
-		ach(2017, {	-- Grizzled Veteran (H)
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				crit(1),		-- Blackriver Skirmish
-				crit(2),		-- Pieces Parts
-				crit(3),		-- Life or Death
-				crit(4),		-- Shredder Repair
-				crit(5),		-- Kick 'Em While They're Down
-				crit(6),		-- Keep Them at Bay!
-				crit(7),		-- Down With Captain Zorna!
-				crit(8),		-- Smoke 'Em Out
-				crit(9),		-- Riding the Red Rocket
-			},
-		}),
 		ach(396),	-- Gurubashi Arena Grand Master
 		ach(389),	-- Gurubashi Arena Master
 		ach(10561),	-- Honorable Medallion
