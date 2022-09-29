@@ -17,7 +17,7 @@ _.Zones =
 					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
 				}),
-				q(5242,  {	-- A Final Blow
+				q(5242, {	-- A Final Blow
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10922 },	-- Greta Mosshoof
 					["g"] = {
@@ -68,7 +68,7 @@ _.Zones =
 						27997,	-- The Corruption of the Jadefire
 					},
 				}),
-				q(4261,  {	-- Ancient Spirit
+				q(4261, {	-- Ancient Spirit
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9598 },	-- Arei
 					["races"] = ALLIANCE_ONLY,
@@ -77,7 +77,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(11873)),	-- Ethereal Mist Cape
 					},
 				}),
-				q(4005,  {	-- Aquementas
+				q(4005, {	-- Aquementas
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["sourceQuest"] = 4084,	-- Silver Heart
@@ -152,11 +152,11 @@ _.Zones =
 					["provider"] = { "n", 48339 },	-- Elessa Starbreeze
 					["coord"] = { 43.9, 27.8, FELWOOD },
 				}),
-				q(4119,  {	-- Corrupted Night Dragon
+				q(4119, {	-- Corrupted Night Dragon
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 				}),
-				q(4447,  {	-- Corrupted Night Dragon
+				q(4447, {	-- Corrupted Night Dragon
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 					["repeatable"] = true,
@@ -168,21 +168,21 @@ _.Zones =
 					["provider"] = { "n", 9996 },	-- Winna Hazzard
 					["sourceQuest"] = 4505,	-- Well of Corruption
 				}),
-				q(2523,  {	-- Corrupted Songflower
+				q(2523, {	-- Corrupted Songflower
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 				}),
-				q(3363,  {	-- Corrupted Songflower
+				q(3363, {	-- Corrupted Songflower
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 					["repeatable"] = true,
 					["sourceQuest"] = 2523,	-- Corrupted Songflower
 				}),
-				q(4117,  {	-- Corrupted Whipper Root
+				q(4117, {	-- Corrupted Whipper Root
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 				}),
-				q(4443,  {	-- Corrupted Whipper Root
+				q(4443, {	-- Corrupted Whipper Root
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 					["repeatable"] = true,
@@ -252,7 +252,7 @@ _.Zones =
 					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 				}),
-				q(8460,  {	-- [DEPRECATED]Timbermaw Ally
+				q(8460, {	-- [DEPRECATED]Timbermaw Ally
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11554 },	-- Grazle
 					["g"] = {
@@ -337,7 +337,7 @@ _.Zones =
 					["provider"] = { "n", 11019 },	-- Jessir Moonbow
 					["coord"] = { 44.0, 61.9, FELWOOD },
 				}),
-				q(4906,  {	-- Further Corruption
+				q(4906, {	-- Further Corruption
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["races"] = ALLIANCE_ONLY,
@@ -350,7 +350,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
 				}),
-				q(4883,  {	-- Guarding Secrets
+				q(4883, {	-- Guarding Secrets
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10306 },	-- Trull Failbane
@@ -410,7 +410,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
 				}),
-				q(7603,  {	-- Kroshius' Infernal Core
+				q(7603, {	-- Kroshius' Infernal Core
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { WARLOCK },
@@ -425,7 +425,7 @@ _.Zones =
 						i(65302),	-- Farlus' Staff
 					},
 				}),
-				q(5085,  {	-- Mystery Goo
+				q(5085, {	-- Mystery Goo
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 176091 },	-- Deadwood Cauldron
 					["sourceQuest"] = 5084,
@@ -524,120 +524,120 @@ _.Zones =
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuest"] = 28100,	-- A Talking Totem
 				}),
-				q(4107,  {	-- Salve via Disenchanting
+				q(4107, {	-- Salve via Disenchanting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4112,  {	-- Salve via Disenchanting
+				q(4112, {	-- Salve via Disenchanting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4107,	-- Salve via Disenchanting
 				}),
-				q(5886,  {	-- Salve via Disenchanting
+				q(5886, {	-- Salve via Disenchanting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 				}),
-				q(5891,  {	-- Salve via Disenchanting
+				q(5891, {	-- Salve via Disenchanting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5886,	-- Salve via Disenchanting
 				}),
-				q(4105,  {	-- Salve via Gathering
+				q(4105, {	-- Salve via Gathering
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4110,  {	-- Salve via Gathering
+				q(4110, {	-- Salve via Gathering
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4105,	-- Salve via Gathering
 				}),
-				q(5884,  {	-- Salve via Gathering
+				q(5884, {	-- Salve via Gathering
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 				}),
-				q(5889,  {	-- Salve via Gathering
+				q(5889, {	-- Salve via Gathering
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5884,	-- Salve via Gathering
 				}),
-				q(4103,  {	-- Salve via Hunting
+				q(4103, {	-- Salve via Hunting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4108,  {	-- Salve via Hunting
+				q(4108, {	-- Salve via Hunting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4103,	-- Salve via Hunting
 				}),
-				q(5882,  {	-- Salve via Hunting
+				q(5882, {	-- Salve via Hunting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 				}),
-				q(5887,  {	-- Salve via Hunting
+				q(5887, {	-- Salve via Hunting
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5882,	-- Salve via Hunting
 				}),
-				q(4104,  {	-- Salve via Mining
+				q(4104, {	-- Salve via Mining
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4109,  {	-- Salve via Mining
+				q(4109, {	-- Salve via Mining
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4104,	-- Salve via Mining
 				}),
-				q(5883,  {	-- Salve via Mining
+				q(5883, {	-- Salve via Mining
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 				}),
-				q(5888,  {	-- Salve via Mining
+				q(5888, {	-- Salve via Mining
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 5883,	-- Salve via Mining
 				}),
-				q(4106,  {	-- Salve via Skinning
+				q(4106, {	-- Salve via Skinning
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(4111,  {	-- Salve via Skinning
+				q(4111, {	-- Salve via Skinning
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9528 },	-- Arathandris Silversky
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 4106,	-- Salve via Skinning
 				}),
-				q(5885,  {	-- Salve via Skinning
+				q(5885, {	-- Salve via Skinning
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 				}),
-				q(5890,  {	-- Salve via Skinning
+				q(5890, {	-- Salve via Skinning
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
@@ -667,7 +667,7 @@ _.Zones =
 				q(28153, {	-- Shadow Lord Fel'dan
 					["sourceQuest"] = 28131,	-- Twin Temptresses
 				}),
-				q(4084,  {	-- Silver Heart
+				q(4084, {	-- Silver Heart
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
 					["sourceQuest"] = 3942,	-- Linken's Memory
@@ -720,7 +720,7 @@ _.Zones =
 						28333,	-- It's Time to Oil Up
 					},
 				}),
-				q(8485,  {	-- The Brokering of Peace
+				q(8485, {	-- The Brokering of Peace
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11555 },	-- Gorn One Eye
 					["races"] = HORDE_ONLY,
@@ -806,7 +806,7 @@ _.Zones =
 						28221,	-- These Roots Were Made For Stompin'
 					},
 				}),
-				q(5385,  {	-- The Remains of Trey Lightforge
+				q(5385, {	-- The Remains of Trey Lightforge
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11020 },	-- Remains of Trey Lightforge
 					["g"] = {
@@ -892,7 +892,7 @@ _.Zones =
 						i(65340),	-- Thornward Greaves
 					},
 				}),
-				q(4505,  {	-- Well of Corruption
+				q(4505, {	-- Well of Corruption
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9996 },	-- Winna Hazzard
@@ -907,7 +907,7 @@ _.Zones =
 						28213,	-- Hazzard Disposal
 					},
 				}),
-				q(4521,  {	-- Wild Guardians
+				q(4521, {	-- Wild Guardians
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10306 },	-- Trull Failbane

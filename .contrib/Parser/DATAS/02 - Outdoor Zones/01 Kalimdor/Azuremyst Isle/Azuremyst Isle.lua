@@ -18,13 +18,13 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportExodar",
 				["groups"] = {
 					n(QUESTS, {
-						q(9798,  {	-- Blood Elf Plans
+						q(9798, {	-- Blood Elf Plans
 							["provider"] = { "i", 24414 },	-- Blood Elf Plans
 							["cost"] = { { "i", 23003, 1 } },	-- Blood Elf Plans
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
 						}),
-						q(9311,  {	-- Blood Elf Spy
+						q(9311, {	-- Blood Elf Spy
 							["qg"] = 16546,	-- Tolaan
 							["sourceQuest"] = 10303,	-- The Blood Elves
 							-- #if AFTER MOP
@@ -51,7 +51,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								i(25553),	-- Exodar Staff
 							},
 						}),
-						q(9799,  {	-- Botanical Legwork
+						q(9799, {	-- Botanical Legwork
 							["qg"] = 20233,	-- Apprentice Vishael
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER MOP
@@ -66,7 +66,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(9371,  {	-- Botanist Taerix
+						q(9371, {	-- Botanist Taerix
 							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
 							-- #if AFTER MOP
@@ -77,7 +77,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
-						q(9449,  {	-- Call of Earth (1/3)
+						q(9449, {	-- Call of Earth (1/3)
 							["qg"] = 17089,	-- Firmanvaar
 							-- #if AFTER MOP
 							["coord"] = { 50.2, 43.0, AMMEN_VALE },
@@ -89,7 +89,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { SHAMAN },
 							["lvl"] = lvlsquish(4, 1, 4),
 						}),
-						q(9450,  {	-- Call of Earth (2/3)
+						q(9450, {	-- Call of Earth (2/3)
 							["qg"] = 17087,	-- Spirit of the Vale
 							["sourceQuest"] = 9449,	-- Call of Earth (1/3)
 							-- #if AFTER MOP
@@ -107,7 +107,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(9451,  {	-- Call of Earth (3/3)
+						q(9451, {	-- Call of Earth (3/3)
 							["qg"] = 17087,	-- Spirit of the Vale
 							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
 							-- #if AFTER MOP
@@ -141,7 +141,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9294,  {	-- Healing the Lake
+						q(9294, {	-- Healing the Lake
 							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuest"] = 9293,	-- What Must Be Done...
 							-- #if AFTER MOP
@@ -162,7 +162,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(9288,  {	-- Hunter Training
+						q(9288, {	-- Hunter Training
 							["qg"] = 16499,	-- Keilnei
 							-- #if AFTER MOP
 							["coord"] = { 51.6, 44.2, AMMEN_VALE },
@@ -174,7 +174,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { HUNTER },
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9303,  {	-- Inoculation [Original]
+						q(9303, {	-- Inoculation [Original]
 							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
 							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
 							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
@@ -223,7 +223,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9290,  {	-- Mage Training
+						q(9290, {	-- Mage Training
 							["qg"] = 16500,	-- Valaatu
 							-- #if AFTER MOP
 							["coord"] = { 51.0, 43.0, AMMEN_VALE },
@@ -240,7 +240,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { MONK },
 							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 						}),
-						q(9287,  {	-- Paladin Training
+						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
 							-- #if AFTER MOP
 							["coord"] = { 51.2, 41.2, AMMEN_VALE },
@@ -252,7 +252,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { PALADIN },
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9291,  {	-- Priest Training
+						q(9291, {	-- Priest Training
 							["qg"] = 16502,	-- Zalduun
 							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },
@@ -276,7 +276,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9280,  {	-- Replenishing the Healing Crystals
+						q(9280, {	-- Replenishing the Healing Crystals
 							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9279,	-- You Survived!
 							["altQuests"] = { 9369 },	-- Replenishing the Healing Crystals [Non-Draenei Only]
@@ -299,7 +299,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								-- #endif
 							},
 						}),
-						q(9369,  {	-- Replenishing the Healing Crystals
+						q(9369, {	-- Replenishing the Healing Crystals
 							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9279,	-- You Survived!
 							-- #if AFTER MOP
@@ -321,7 +321,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								-- #endif
 							},
 						}),
-						q(9283,  {	-- Rescue the Survivors!
+						q(9283, {	-- Rescue the Survivors!
 							["qg"] = 16502,	-- Zalduun
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
 							-- #if AFTER MOP
@@ -338,7 +338,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								i(23389),	-- Empty Draenei Supply Pouch
 							},
 						}),
-						q(9421,  {	-- Shaman Training
+						q(9421, {	-- Shaman Training
 							["qg"] = 17089,	-- Firmanvaar
 							-- #if AFTER MOP
 							["coord"] = { 50.2, 43.0, AMMEN_VALE },
@@ -350,7 +350,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { SHAMAN },
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9305,  {	-- Spare Parts
+						q(9305, {	-- Spare Parts
 							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER WOD
@@ -438,7 +438,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								-- #endif
 							},
 						}),
-						q(9312,  {	-- The Emitter
+						q(9312, {	-- The Emitter
 							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 9311,	-- Blood Elf Spy
 							-- #if AFTER MOP
@@ -461,7 +461,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9309,  {	-- The Missing Scout
+						q(9309, {	-- The Missing Scout
 							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 9303,	-- Inoculation [Original]
 							-- #if AFTER MOP
@@ -480,7 +480,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9313,  {	-- Travel to Azure Watch
+						q(9313, {	-- Travel to Azure Watch
 							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 9312,	-- The Emitter
 							-- #if AFTER MOP
@@ -491,7 +491,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(4, 1, 4),
 						}),
-						q(9409,  {	-- Urgent Delivery!
+						q(9409, {	-- Urgent Delivery!
 							["qg"] = 16477,	-- Proenitus
 							["sourceQuests"] = {
 								9369,	-- Replenishing the Healing Crystal (All other ally races)
@@ -542,7 +542,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(9289,  {	-- Warrior Training
+						q(9289, {	-- Warrior Training
 							["qg"] = 16503,	-- Kore
 							-- #if AFTER MOP
 							["coord"] = { 51.0, 43.8, AMMEN_VALE },
@@ -554,7 +554,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { WARRIOR },
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9293,  {	-- What Must Be Done...
+						q(9293, {	-- What Must Be Done...
 							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER MOP
@@ -570,7 +570,7 @@ root("Zones", m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(9279,  {	-- You Survived!
+						q(9279, {	-- You Survived!
 							["qg"] = 16475,	-- Megelon
 							-- #if AFTER MOP
 							["coord"] = { 61.2, 29.5, AMMEN_VALE },

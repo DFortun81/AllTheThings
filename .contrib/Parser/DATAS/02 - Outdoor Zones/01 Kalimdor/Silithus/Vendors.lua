@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			n(VENDORS, {
-				n(15293,  {	-- Aendel Windspear
+				n(15293, {	-- Aendel Windspear
 					["coord"] = { 64.6, 45.8, SILITHUS },
 					["g"] = {
 						i(22769),	-- Pattern: Bramblewood Belt
@@ -22,7 +22,7 @@ _.Zones =
 						i(20508),	-- Pattern: Spitfire Breastplate
 					},
 				}),
-				n(15174,  {	-- Calandrath <Innkeeper>
+				n(15174, {	-- Calandrath <Innkeeper>
 					-- #if AFTER CATA
 					["coord"] = { 55.4, 36.6, SILITHUS },
 					-- #else
@@ -48,7 +48,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(15419,  {	-- Kania <Enchanting Supplies>
+				n(15419, {	-- Kania <Enchanting Supplies>
 					["coord"] = { 55.6, 37.2, SILITHUS },
 					["g"] = {
 						applyclassicphase(PHASE_FIVE, i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
@@ -66,7 +66,7 @@ _.Zones =
 						i(22308),	-- Pattern: Enchanted Runecloth Bag
 					},
 				}),
-				n(15179,  {	-- Mishta <Trade Supplies>
+				n(15179, {	-- Mishta <Trade Supplies>
 					["coord"] = { 53.8, 34.4, SILITHUS },
 					["g"] = {
 						i(21952, {	-- Design: Emerald Crown of Destruction
@@ -80,7 +80,7 @@ _.Zones =
 						i(22774),	-- Pattern: Sylvan Vest
 					},
 				}),
-				n(15176,  {	-- Vargus <Blacksmith>
+				n(15176, {	-- Vargus <Blacksmith>
 					["coord"] = { 55.0, 36.5, SILITHUS },
 					["g"] = {
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22766)),	-- Plans: Ironvine Breastplate (RECIPE!)
@@ -90,7 +90,7 @@ _.Zones =
 						applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
 					},
 				}),
-				n(12956,  {	-- Zannok Hidepiercer <Leatherworking Supplies>
+				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.2, 18.6, SILITHUS },
 					["g"] = {
 						i(15724, {	-- Pattern: Heavy Scorpid Bracers

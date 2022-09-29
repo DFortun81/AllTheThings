@@ -487,7 +487,7 @@ _.Zones =
 						i(131371),  -- Steel-Patched Armbands
 					},
 				}),
-				q(1361,  {	-- Regthar Deathgate
+				q(1361, {	-- Regthar Deathgate
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["qgs"] = {

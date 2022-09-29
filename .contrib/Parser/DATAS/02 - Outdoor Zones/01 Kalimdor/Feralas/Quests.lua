@@ -13,7 +13,7 @@ _.Zones =
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["sourceQuest"] = 2973,	-- A New Cloak's Sheen
 				}),
-				q(2976,  {	-- A Grim Discovery
+				q(2976, {	-- A Grim Discovery
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
@@ -29,7 +29,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25361,	-- A New Cloak's Sheen
 				}),
-				q(4266,  {	-- A Hero's Welcome
+				q(4266, {	-- A Hero's Welcome
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7880 },	-- Ginro Hearthkindle
 					["races"] = ALLIANCE_ONLY,
@@ -118,7 +118,7 @@ _.Zones =
 						i(131417),	-- Captured Heart Bindings
 					},
 				}),
-				q(3062,  {	-- Dark Heart (H)
+				q(3062, {	-- Dark Heart (H)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 					["races"] = HORDE_ONLY,
@@ -137,7 +137,7 @@ _.Zones =
 						i(131417),	-- Captured Heart Bindings
 					},
 				}),
-				q(2871,  {	-- Delivering the Relic
+				q(2871, {	-- Delivering the Relic
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7877 },	-- Latronicus Moonspear
 					["races"] = ALLIANCE_ONLY,
@@ -146,7 +146,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9664)),	-- Sentinel's Guard
 					},
 				}),
-				q(2972,  {	-- Doling Justice
+				q(2972, {	-- Doling Justice
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7957 },	-- Jer'kai Moonweaver
 					["races"] = ALLIANCE_ONLY,
@@ -256,7 +256,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25400,	-- The Gordunni Threat
 				}),
-				q(2987,  {	-- Gordunni Cobalt
+				q(2987, {	-- Gordunni Cobalt
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8021 },	-- Orwin Gizzmick
 					["races"] = HORDE_ONLY,
@@ -276,7 +276,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25336,	-- Testing the Vessel
 				}),
-				q(7733,  {	-- Improved Quality
+				q(7733, {	-- Improved Quality
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -294,7 +294,7 @@ _.Zones =
 						i(131862),	-- Pratt's Handmade Hauberk
 					},
 				}),
-				q(7734,  {	-- Improved Quality
+				q(7734, {	-- Improved Quality
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
 					["races"] = HORDE_ONLY,
@@ -317,7 +317,7 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(2853,  {	-- Master of the Wild Leather
+				q(2853, {	-- Master of the Wild Leather
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -472,7 +472,7 @@ _.Zones =
 					["provider"] = { "o", 203134 },	-- Empty Pedestal
 					["sourceQuest"] = 25368,	-- Verinias the Twisted
 				}),
-				q(4267,  {	-- Rise of the Silithid
+				q(4267, {	-- Rise of the Silithid
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3936 },	-- Shandris Feathermoon
 					["races"] = ALLIANCE_ONLY,
@@ -671,7 +671,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(2903,  {	-- The Battle Plans
+				q(2903, {	-- The Battle Plans
 					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 71.6, 55.9, FERALAS },
 					["races"] = HORDE_ONLY,
@@ -817,7 +817,7 @@ _.Zones =
 						i(131428),	-- Jangdor's Handcrafted Gauntlets
 					},
 				}),
-				q(2942,  {	-- The Morrow Stone
+				q(2942, {	-- The Morrow Stone
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 144063 },	-- Equinex Monolith
@@ -826,7 +826,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9655)),	-- Seedtime Hoop
 					},
 				}),
-				q(3791,  {	-- The Mystery of Morrowgrain
+				q(3791, {	-- The Mystery of Morrowgrain
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7879 },	-- Quintis Jonespyre
 					["races"] = ALLIANCE_ONLY,
@@ -936,7 +936,7 @@ _.Zones =
 						25422,	-- The Darkmist Legacy
 					},
 				}),
-				q(2845,  {	-- Wandering Shay
+				q(2845, {	-- Wandering Shay
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7774 },	-- Shay Leafrunner
 					["g"] = {
@@ -958,7 +958,7 @@ _.Zones =
 					["coord"] = { 74.9, 42.4, FERALAS },
 					["races"] = HORDE_ONLY,
 				}),
-				q(3129,  {	-- Weapons of Spirit
+				q(3129, {	-- Weapons of Spirit
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["g"] = {
@@ -981,7 +981,7 @@ _.Zones =
 						i(157023),	-- Power of the Forest
 					},
 				}),
-				q(2851,  {	-- Wild Leather Boots
+				q(2851, {	-- Wild Leather Boots
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -989,7 +989,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(8406)),	-- Pattern: Wild Leather Boots
 					},
 				}),
-				q(2850,  {	-- Wild Leather Helmet
+				q(2850, {	-- Wild Leather Helmet
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -997,7 +997,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(8405)),	-- Pattern: Wild Leather Helmet
 					},
 				}),
-				q(2852,  {	-- Wild Leather Leggings
+				q(2852, {	-- Wild Leather Leggings
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -1005,7 +1005,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(8407)),	-- Pattern: Wild Leather Leggings
 					},
 				}),
-				q(2848,  {	-- Wild Leather Shoulders
+				q(2848, {	-- Wild Leather Shoulders
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -1013,7 +1013,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(8403)),	-- Pattern: Wild Leather Shoulders
 					},
 				}),
-				q(2849,  {	-- Wild Leather Vest
+				q(2849, {	-- Wild Leather Vest
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7852 },	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
@@ -1067,7 +1067,7 @@ _.Zones =
 						i(54955),	-- Chain of Taerar
 					},
 				}),
-				q(7003,  {	-- Zapped Giants
+				q(7003, {	-- Zapped Giants
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
 					["g"] = {
@@ -1091,7 +1091,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25366,	-- The Battle Plans
 				}),
-				q(7732,  {	-- Zukk'ash Report
+				q(7732, {	-- Zukk'ash Report
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["races"] = HORDE_ONLY,

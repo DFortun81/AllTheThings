@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(MULGORE, {
 			n(QUESTS, {
-				q(6361,  {	-- A Bundle of Hides
+				q(6361, {	-- A Bundle of Hides
 					["provider"] = { "n", 3079 },	-- Varg Windwhisper
 					["coord"] = { 46.0, 58.2, MULGORE },
 					["races"] = { TAUREN },
@@ -157,7 +157,7 @@ _.Zones =
 						i(131212),	-- Plainstrider Handguards
 					},
 				}),
-				q(6362,  {	-- Ride to Thunder Bluff
+				q(6362, {	-- Ride to Thunder Bluff
 					["provider"] = { "n", 40809 },	-- Tak
 					["coord"] = { 47.4, 58.6, MULGORE },
 					["races"] = { TAUREN },

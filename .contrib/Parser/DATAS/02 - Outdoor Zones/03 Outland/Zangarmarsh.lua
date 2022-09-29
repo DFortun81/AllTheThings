@@ -396,7 +396,7 @@ root("Zones", {
 						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral StandingID
 						-- #endif
 					}),
-					q(9788,  {	-- A Damp, Dark Place
+					q(9788, {	-- A Damp, Dark Place
 						["qg"] = 17956,	-- Ikeyen
 						["sourceQuest"] = 9747,	-- The Umbrafen Tribe
 						["coord"] = { 80.4, 64.2, ZANGARMARSH },
@@ -412,7 +412,7 @@ root("Zones", {
 							i(27716),	-- Refuge Armor
 						},
 					}),
-					q(9899,  {	-- A Job Undone
+					q(9899, {	-- A Job Undone
 						["qg"] = 18016,	-- Magasha
 						["sourceQuest"] = 9773,	-- No More Mushrooms!
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },
@@ -425,19 +425,19 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(9792,  {	-- A Message to Telaar
+					q(9792, {	-- A Message to Telaar
 						["qg"] = 18008,	-- Ikuti
 						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(64, 10, 64),
 					}),
-					q(9702,  {	-- A Question of Gluttony
+					q(9702, {	-- A Question of Gluttony
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuest"] = 9701,	-- Observing the Sporelings
 						["coord"] = { 23.3, 66.2, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9847,  {	-- A Spirit Ally?
+					q(9847, {	-- A Spirit Ally?
 						["qg"] = 18017,	-- Seer Janidi
 						["sourceQuest"] = 9846,	-- Spirits of the Feralfen
 						["coord"] = { 32.4, 52.0, ZANGARMARSH },
@@ -449,13 +449,13 @@ root("Zones", {
 							i(25621),	-- Serpent Spirit's Drape
 						},
 					}),
-					q(9728,  {	-- A Warm Welcome
+					q(9728, {	-- A Warm Welcome
 						["qg"] = 17858,	-- Warden Hamoot
 						["sourceQuest"] = 9778,	-- Warden Hamoot
 						["coord"] = { 79.1, 65.3, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9783,  {	-- An Unnatural Drought
+					q(9783, {	-- An Unnatural Drought
 						["qg"] = 18004,	-- Vindicator Idaar
 						["sourceQuest"] = 9782,	-- The Dead Mire
 						["coord"] = { 68.2, 50.0, ZANGARMARSH },
@@ -468,31 +468,31 @@ root("Zones", {
 							i(25597),	-- Vindicator's Cinch
 						},
 					}),
-					q(9845,  {	-- Angling to Beat the Competition
+					q(9845, {	-- Angling to Beat the Competition
 						["qg"] = 18018,	-- Zurjaya
 						["coord"] = { 32.2, 49.6, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9835,  {	-- Ango'rosh Encroachment
+					q(9835, {	-- Ango'rosh Encroachment
 						["qg"] = 18008,	-- Ikuti
 						["coord"] = { 41.8, 27.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9718,  {	-- As the Crow Flies
+					q(9718, {	-- As the Crow Flies
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9716,	-- Disturbance at Umbrafen Lake
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9720,  {	-- Balance Must Be Preserved
+					q(9720, {	-- Balance Must Be Preserved
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9718,	-- As the Crow Flies
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9896,  {	-- Blacksting's Bane
+					q(9896, {	-- Blacksting's Bane
 						["qg"] = 18295,	-- Prospector Conall
 						["sourceQuest"] = 9901,	-- Unfinished Business
 						["coord"] = { 68.6, 49.4, ZANGARMARSH },
@@ -505,12 +505,12 @@ root("Zones", {
 							i(31787),	-- Stalwart Girdle
 						},
 					}),
-					q(9785,  {	-- Blessings of the Ancients
+					q(9785, {	-- Blessings of the Ancients
 						["qg"] = 18070,	-- Windcaller Blackhoof
 						["coord"] = { 80.4, 64.7, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9814,  {	-- Burstcap Mushrooms, Mon!
+					q(9814, {	-- Burstcap Mushrooms, Mon!
 						["qg"] = 18014,	-- Witch Doctor Tor'gash
 						["coord"] = { 32.9, 48.9, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -528,7 +528,7 @@ root("Zones", {
 						},
 						["lvl"] = 70,
 					})),
-					q(9766,  {	-- Coilfang Armaments
+					q(9766, {	-- Coilfang Armaments
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { 942, EXALTED },	-- Cenarion Expedition, Exalted.
@@ -551,14 +551,14 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9790,  {	-- Diaphanous Wings
+					q(9790, {	-- Diaphanous Wings
 						["qg"] = 18005,	-- Haalrun
 						["sourceQuest"] = 9781,	-- Too Many Mouths to Feed
 						["coord"] = { 67.8, 48.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9716,  {	-- Disturbance at Umbrafen Lake
+					q(9716, {	-- Disturbance at Umbrafen Lake
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = {
 							9912,	-- The Cenarion Expedition
@@ -568,7 +568,7 @@ root("Zones", {
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9731,  {	-- Drain Schematics
+					q(9731, {	-- Drain Schematics
 						["provider"] = { "i", 24330 },	-- Drain Schematics
 						["sourceQuest"] = 9718,	-- Balance Must Be Preserved
 						["description"] = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved|r to start this quest.",
@@ -581,7 +581,7 @@ root("Zones", {
 							i(27730),	-- Watcher's Cloak of Vigilance
 						},
 					}),
-					q(9752,  {	-- Escape from Umbrafen
+					q(9752, {	-- Escape from Umbrafen
 						["qg"] = 17969,	-- Kayra Longmane
 						["coord"] = { 83.4, 85.5, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
@@ -594,20 +594,20 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(9708,  {	-- Familiar Fungi
+					q(9708, {	-- Familiar Fungi
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuest"] = 9702,	-- A Question of Gluttony
 						["coord"] = { 23.3, 66.2, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9806,  {	-- Fertile Spores
+					q(9806, {	-- Fertile Spores
 						["qg"] = 17925,	-- Gshaff
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9729,  {	-- Fhwoor Smash!
+					q(9729, {	-- Fhwoor Smash!
 						["qg"] = 17877,	-- Fhwoor
 						["coord"] = { 19.8, 50.8, ZANGARMARSH },
 						-- #if BEFORE CATA
@@ -623,20 +623,20 @@ root("Zones", {
 							i(25538),	-- Sporeling Claw
 						},
 					}),
-					q(9777,  {	-- Fulgor Spores
+					q(9777, {	-- Fulgor Spores
 						["qg"] = 18007,	-- Ruam
 						["coord"] = { 68.6, 48.8, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9801,  {	-- Gathering the Reagents
+					q(9801, {	-- Gathering the Reagents
 						["qg"] = 18003,	-- Anchorite Ahuurn
 						["sourceQuest"] = 9787,	-- Idols of the Feralfen
 						["coord"] = { 68.2, 49.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9808,  {	-- Glowcap Mushrooms
+					q(9808, {	-- Glowcap Mushrooms
 						["qg"] = 17924,	-- Msshi'fn
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
@@ -644,7 +644,7 @@ root("Zones", {
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9816,  {	-- Have You Ever Seen One of These?
+					q(9816, {	-- Have You Ever Seen One of These?
 						["qg"] = 18014,	-- Witch Doctor Tor'gash
 						["sourceQuest"] = 9814,	-- Burstcap Mushrooms, Mon!
 						["coord"] = { 32.9, 48.9, ZANGARMARSH },
@@ -669,21 +669,21 @@ root("Zones", {
 							}),
 						},
 					}),
-					q(9787,  {	-- Idols of the Feralfen
+					q(9787, {	-- Idols of the Feralfen
 						["qg"] = 18003,	-- Anchorite Ahuurn
 						["sourceQuest"] = 9786,	-- The Boha'mu Ruins
 						["coord"] = { 68.2, 49.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9822,  {	-- Impending Attack
+					q(9822, {	-- Impending Attack
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["sourceQuest"] = 9820,	-- WANTED: Boss Grog'ak
 						["coord"] = { 30.6, 50.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9772,  {	-- Jyoba's Report
+					q(9772, {	-- Jyoba's Report
 						["qg"] = 18035,	-- Scout Jyoba
 						["sourceQuest"] = 9771,	-- Searching for Scout Jyoba
 						["coord"] = { 80.7, 36.3, ZANGARMARSH },
@@ -696,7 +696,7 @@ root("Zones", {
 							i(25601),	-- Murk-Darkened Bracers
 						},
 					}),
-					q(9817,  {	-- Leader of the Bloodscale
+					q(9817, {	-- Leader of the Bloodscale
 						["provider"] = { "o", 182115 },	-- Wanted Poster
 						["coord"] = { 79.1, 64.9, ZANGARMARSH },
 						["lvl"] = lvlsquish(58, 10, 58),
@@ -707,7 +707,7 @@ root("Zones", {
 							i(27724),	-- Wild Shoulderpads
 						},
 					}),
-					q(9730,  {	-- Leader of the Darkcrest
+					q(9730, {	-- Leader of the Darkcrest
 						["provider"] = { "o", 182115 },	-- Wanted Poster
 						["coord"] = { 79.1, 64.9, ZANGARMARSH },
 						["lvl"] = lvlsquish(58, 10, 58),
@@ -718,7 +718,7 @@ root("Zones", {
 							i(27727),	-- Swift Cenarion Footwear
 						},
 					}),
-					q(9833,  {	-- Lines of Communication
+					q(9833, {	-- Lines of Communication
 						["qg"] = 18009,	-- Puluu
 						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
@@ -733,20 +733,20 @@ root("Zones", {
 							i(27756),	-- Marshfang Blade Axe
 						},
 					}),
-					q(9905,  {	-- Maktu's Revenge
+					q(9905, {	-- Maktu's Revenge
 						["qg"] = 18010,	-- Maktu
 						["sourceQuest"] = 9834,	-- Natural Armor
 						["coord"] = { 41.6, 27.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9791,  {	-- Menacing Marshfangs [Alliance]
+					q(9791, {	-- Menacing Marshfangs [Alliance]
 						["qg"] = 18006,	-- Noraani
 						["coord"] = { 67.6, 47.8, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9770,  {	-- Menacing Marshfangs [Horde]
+					q(9770, {	-- Menacing Marshfangs [Horde]
 						["qg"] = 18012,	-- Reavij
 						["coord"] = { 85.0, 54.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -759,7 +759,7 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9803,  {	-- Messenger to the Feralfen
+					q(9803, {	-- Messenger to the Feralfen
 						["qg"] = 18003,	-- Anchorite Ahuurn
 						["sourceQuest"] = 9801,	-- Gathering the Reagents
 						["coord"] = { 68.2, 49.4, ZANGARMARSH },
@@ -808,14 +808,14 @@ root("Zones", {
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9834,  {	-- Natural Armor
+					q(9834, {	-- Natural Armor
 						["qg"] = 18010,	-- Maktu
 						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 						["coord"] = { 41.6, 27.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9743,  {	-- Natural Enemies
+					q(9743, {	-- Natural Enemies
 						["qg"] = 17923,	-- Fahssn
 						["coord"] = { 19.0, 62.6, ZANGARMARSH },
 						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
@@ -829,7 +829,7 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9796,  {	-- News from Zangarmarsh
+					q(9796, {	-- News from Zangarmarsh
 						["description"] = "Only one of News from Zangarmarsh(9796) and News for Rakoria(10105) can be picked up",
 						["qg"] = 18011,	-- Zurai
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
@@ -837,20 +837,20 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9773,  {	-- No More Mushrooms!
+					q(9773, {	-- No More Mushrooms!
 						["qg"] = 18016,	-- Magasha
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
-					q(9794,  {	-- No Time for Curiosity
+					q(9794, {	-- No Time for Curiosity
 						["qg"] = 18019,	-- Timothy Daniels
 						["coord"] = { 41.2, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
-					q(9726,  {	-- Now That We're Friends...
+					q(9726, {	-- Now That We're Friends...
 						["qg"] = 17856,	-- Gzhun'tt
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
 						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
@@ -871,13 +871,13 @@ root("Zones", {
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9701,  {	-- Observing the Sporelings
+					q(9701, {	-- Observing the Sporelings
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuest"] = 9697,	-- Watcher Leesa'oh
 						["coord"] = { 23.3, 66.2, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9839,  {	-- Overlord Gorefist
+					q(9839, {	-- Overlord Gorefist
 						["qg"] = 18008,	-- Ikuti
 						["sourceQuest"] = 9835,	-- Ango'rosh Encroachment
 						["coord"] = { 41.8, 27.0, ZANGARMARSH },
@@ -897,7 +897,7 @@ root("Zones", {
 							i(24402),	-- Package of Identified Plants
 						},
 					}),
-					q(9765,  {	-- Preparing for War
+					q(9765, {	-- Preparing for War
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9764,	-- Orders from Lady Vashj
 						["timeline"] = { "removed 4.3.0.14732" },
@@ -906,7 +906,7 @@ root("Zones", {
 						},
 						["lvl"] = lvlsquish(67, 20, 67),
 					}),
-					q(9904,  {	-- Pursuing Terrorclaw
+					q(9904, {	-- Pursuing Terrorclaw
 						["qg"] = 18018,	-- Zurjaya
 						["sourceQuest"] = 9845,	-- Angling to Beat the Competition
 						["coord"] = { 32.9, 48.9, ZANGARMARSH },
@@ -919,14 +919,14 @@ root("Zones", {
 							i(25925),	-- Terrorcloth Mantle
 						},
 					}),
-					q(9797,  {	-- Reinforcements for Garadar
+					q(9797, {	-- Reinforcements for Garadar
 						["qg"] = 18091,	-- Messenger Gazgrigg
 						["coord"] = { 32.0, 50.4, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(64, 10, 64),
 					}),
-					q(9775,  {	-- Report to Shadow Hunter Denjai
+					q(9775, {	-- Report to Shadow Hunter Denjai
 						["qg"] = 18011,	-- Zurai
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -943,7 +943,7 @@ root("Zones", {
 							i(25523),	-- Windcaller's Gauntlets
 						},
 					}),
-					q(9894,  {	-- Safeguarding the Watchers
+					q(9894, {	-- Safeguarding the Watchers
 						["qg"] = 18070,	-- Windcaller Blackhoof
 						["sourceQuest"] = 9747,	-- The Umbrafen Tribe
 						["coord"] = { 80.4, 64.7, ZANGARMARSH },
@@ -961,14 +961,14 @@ root("Zones", {
 							i(31658),	-- Scout's Hood
 						},
 					}),
-					q(9771,  {	-- Searching for Scout Jyoba
+					q(9771, {	-- Searching for Scout Jyoba
 						["qg"] = 18011,	-- Zurai
 						["sourceQuest"] = 9774,	-- Thick Hydra Scales
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9848,  {	-- Secrets of the Daggerfen
+					q(9848, {	-- Secrets of the Daggerfen
 						["qg"] = 18019,	-- Timothy Daniels
 						["coord"] = { 41.2, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
@@ -977,13 +977,13 @@ root("Zones", {
 							i(25616),	-- Tim's Trusty Helmet
 						},
 					}),
-					q(9846,  {	-- Spirits of the Feralfen
+					q(9846, {	-- Spirits of the Feralfen
 						["qg"] = 18017,	-- Seer Janidi
 						["coord"] = { 32.4, 52.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9919,  {	-- Sporeggar
+					q(9919, {	-- Sporeggar
 						["qg"] = 17923,	-- Fahssn
 						-- #if AFTER 7.3.5.25632
 						["sourceQuest"] = 50131,	-- An Outside Perspective
@@ -992,7 +992,7 @@ root("Zones", {
 						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9709,  {	-- Stealing Back the Mushrooms
+					q(9709, {	-- Stealing Back the Mushrooms
 						["qg"] = 17831,	-- Watcher Leesa'oh
 						["sourceQuest"] = 9708,	-- Familiar Fungi
 						["coord"] = { 23.3, 66.2, ZANGARMARSH },
@@ -1004,14 +1004,14 @@ root("Zones", {
 							i(25525),	-- Zangar Epaulets
 						},
 					}),
-					q(9830,  {	-- Stinger Venom
+					q(9830, {	-- Stinger Venom
 						["qg"] = 18009,	-- Puluu
 						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9841,  {	-- Stinging the Stingers
+					q(9841, {	-- Stinging the Stingers
 						["qg"] = 18015,	-- Gambarinka
 						["coord"] = { 31.6, 49.2, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -1024,14 +1024,14 @@ root("Zones", {
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(67, 10, 67),
 					}),
-					q(9903,  {	-- The Biggest of Them All
+					q(9903, {	-- The Biggest of Them All
 						["qg"] = 18018,	-- Zurjaya
 						["sourceQuest"] = 9845,	-- Angling to Beat the Competition
 						["coord"] = { 32.2, 49.6, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9786,  {	-- The Boha'mu Ruins
+					q(9786, {	-- The Boha'mu Ruins
 						["qg"] = 18003,	-- Anchorite Ahuurn
 						["coord"] = { 68.2, 49.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
@@ -1049,18 +1049,18 @@ root("Zones", {
 						["cr"] = 18285,	-- "Count" Ungula
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9782,  {	-- The Dead Mire
+					q(9782, {	-- The Dead Mire
 						["qg"] = 18004,	-- Vindicator Idaar
 						["coord"] = { 68.2, 50.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9895,  {	-- The Dying Balance
+					q(9895, {	-- The Dying Balance
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["coord"] = { 78.6, 63.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9793,  {	-- The Fate of Tuurem
+					q(9793, {	-- The Fate of Tuurem
 						["qg"] = 18004,	-- Vindicator Idaar
 						["coord"] = { 68.2, 50.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
@@ -1068,13 +1068,13 @@ root("Zones", {
 						["lvl"] = lvlsquish(62, 10, 62),
 						["altQuests"] = { 10104 },	-- Concerns About Tuurem
 					}),
-					q(9776,  {	-- The Orebor Harborage
+					q(9776, {	-- The Orebor Harborage
 						["qg"] = 18003,	-- Anchorite Ahuurn
 						["coord"] = { 68.2, 49.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 10, 62),
 					}),
-					q(9898,  {	-- The Respect of Another
+					q(9898, {	-- The Respect of Another
 						["qg"] = 18012,	-- Reavij
 						["sourceQuest"] = 9770,	-- Menacing Marshfangs
 						["coord"] = { 85.0, 54.0, ZANGARMARSH },
@@ -1092,7 +1092,7 @@ root("Zones", {
 							i(31787),	-- Stalwart Girdle
 						},
 					}),
-					q(9842,  {	-- The Sharpest Blades
+					q(9842, {	-- The Sharpest Blades
 						["qg"] = 18015,	-- Gambarinka
 						["sourceQuest"] = 9841,	-- Stinging the Stingers
 						["coord"] = { 31.6, 49.2, ZANGARMARSH },
@@ -1107,12 +1107,12 @@ root("Zones", {
 							i(27756),	-- Marshfang Blade Axe
 						},
 					}),
-					q(9739,  {	-- The Sporelings' Plight
+					q(9739, {	-- The Sporelings' Plight
 						["qg"] = 17923,	-- Fahssn
 						["coord"] = { 19.0, 62.6, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9902,  {	-- The Terror of Marshlight Lake
+					q(9902, {	-- The Terror of Marshlight Lake
 						["qg"] = 18009,	-- Puluu
 						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
@@ -1125,7 +1125,7 @@ root("Zones", {
 							i(25925),	-- Terrorcloth Mantle
 						},
 					}),
-					q(9747,  {	-- The Umbrafen Tribe
+					q(9747, {	-- The Umbrafen Tribe
 						["qg"] = 17956,	-- Ikeyen
 						["coord"] = { 80.4, 64.2, ZANGARMARSH },
 						["lvl"] = lvlsquish(60, 10, 60),
@@ -1143,13 +1143,13 @@ root("Zones", {
 						},
 						["lvl"] = 70,
 					})),
-					q(9769,  {	-- There's No Explanation for Fashion
+					q(9769, {	-- There's No Explanation for Fashion
 						["qg"] = 18016,	-- Magasha
 						["coord"] = { 84.4, 54.3, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9774,  {	-- Thick Hydra Scales
+					q(9774, {	-- Thick Hydra Scales
 						["qg"] = 18011,	-- Zurai
 						["coord"] = { 85.3, 54.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -1164,13 +1164,13 @@ root("Zones", {
 						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
-					q(9781,  {	-- Too Many Mouths to Feed
+					q(9781, {	-- Too Many Mouths to Feed
 						["qg"] = 18005,	-- Haalrun
 						["coord"] = { 67.8, 48.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9780,  {	-- Umbrafen Eel Filets
+					q(9780, {	-- Umbrafen Eel Filets
 						["qg"] = 18006,	-- Noraani
 						["sourceQuest"] = 9791,	-- Menacing Marshfangs
 						["coord"] = { 67.6, 47.8, ZANGARMARSH },
@@ -1184,13 +1184,13 @@ root("Zones", {
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9901,  {	-- Unfinished Business
+					q(9901, {	-- Unfinished Business
 						["qg"] = 18295,	-- Prospector Conall
 						["coord"] = { 68.6, 49.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9823,  {	-- Us or Them
+					q(9823, {	-- Us or Them
 						["qg"] = 18013,	-- Shadow Hunter Denjai
 						["sourceQuest"] = 9822,	-- Impending Attack
 						["coord"] = { 30.6, 50.8, ZANGARMARSH },
@@ -1211,7 +1211,7 @@ root("Zones", {
 						},
 						["lvl"] = 70,
 					})),
-					q(9820,  {	-- WANTED: Boss Grog'ak
+					q(9820, {	-- WANTED: Boss Grog'ak
 						["provider"] = { "o", 182165 },	-- Wanted Poster
 						["coord"] = { 32.0, 49.3, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
@@ -1229,19 +1229,19 @@ root("Zones", {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
-					q(9778,  {	-- Warden Hamoot
+					q(9778, {	-- Warden Hamoot
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["isBreadcrumb"] = true,	-- for "A Warm Welcome"
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9724,  {	-- Warning the Cenarion Circle
+					q(9724, {	-- Warning the Cenarion Circle
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["sourceQuest"] = 9731,	-- Drain Schematics
 						["lvl"] = lvlsquish(61, 10, 61),
 					}),
-					q(9697,  {	-- Watcher Leesa'oh
+					q(9697, {	-- Watcher Leesa'oh
 						["qg"] = 17834,	-- Lethyn Moonfire
 						["coord"] = { 78.6, 63.0, ZANGARMARSH },
 						["isBreadcrumb"] = true,	-- for "Observing the Sporelings"
@@ -1253,7 +1253,7 @@ root("Zones", {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 10, 60),
 					}),
-					q(9828,  {	-- Withered Basidium [Horde]
+					q(9828, {	-- Withered Basidium [Horde]
 						["provider"] = { "i", 24484 },	-- Withered Basidium
 						["cr"] = 18124,	-- Withered Giant
 						["races"] = HORDE_ONLY,

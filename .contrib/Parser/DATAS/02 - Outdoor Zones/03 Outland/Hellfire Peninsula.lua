@@ -2573,7 +2573,7 @@ root("Zones", {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 10, 58),
 					}),
-					q(9407,  {	-- Through the Dark Portal [Horde]
+					q(9407, {	-- Through the Dark Portal [Horde]
 						["qg"] = 19254,	-- Warlord Dar'toon
 						["coord"] = { 54.4, 50.5, BLASTED_LANDS },
 						["timeline"] = { "removed 6.0.3.10000" },

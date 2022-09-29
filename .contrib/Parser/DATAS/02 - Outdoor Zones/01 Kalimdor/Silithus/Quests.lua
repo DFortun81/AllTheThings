@@ -7,14 +7,14 @@ _.Zones =
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			n(QUESTS, {
-				q(9248,  {	-- A Humble Offering
+				q(9248, {	-- A Humble Offering
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22725)),	-- Band of Cenarius
 					},
 				}),
-				q(8287,  {	-- A Terrible Purpose
+				q(8287, {	-- A Terrible Purpose
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
@@ -22,7 +22,7 @@ _.Zones =
 						i(20645),	-- Nature's Whisper (arrives in mail)
 					},
 				}),
-				q(8361,  {	-- Abyssal Contacts
+				q(8361, {	-- Abyssal Contacts
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
@@ -33,7 +33,7 @@ _.Zones =
 						})),
 					},
 				}),
-				q(8316,  {	-- Armaments of War (Warrior)
+				q(8316, {	-- Armaments of War (Warrior)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { WARRIOR },
@@ -43,7 +43,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20710)),	-- Crystal Encrusted Greaves
 					},
 				}),
-				q(8376,  {	-- Armaments of War (Paladin)
+				q(8376, {	-- Armaments of War (Paladin)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { PALADIN },
@@ -53,7 +53,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20711)),	-- Crystal Lined Greaves
 					},
 				}),
-				q(8377,  {	-- Armaments of War (Hunter)
+				q(8377, {	-- Armaments of War (Hunter)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { HUNTER },
@@ -63,7 +63,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20713)),	-- Desertstalkers' Gauntlets
 					},
 				}),
-				q(8378,  {	-- Armaments of War (Rogue)
+				q(8378, {	-- Armaments of War (Rogue)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { ROGUE },
@@ -73,7 +73,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20715)),	-- Dunestalker's Boots
 					},
 				}),
-				q(8379,  {	-- Armaments of War (Priest)
+				q(8379, {	-- Armaments of War (Priest)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { PRIEST },
@@ -83,7 +83,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20717)),	-- Desert Bloom Gloves
 					},
 				}),
-				q(8380,  {	-- Armaments of War (Shaman)
+				q(8380, {	-- Armaments of War (Shaman)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { SHAMAN },
@@ -93,7 +93,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20712)),	-- Wastewalker's Gauntlets
 					},
 				}),
-				q(8381,  {	-- Armaments of War (Mage, Warlock)
+				q(8381, {	-- Armaments of War (Mage, Warlock)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { MAGE, WARLOCK },
@@ -104,7 +104,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20716)),	-- Sandworm Skin Gloves
 					},
 				}),
-				q(8382,  {	-- Armaments of War (Druid)
+				q(8382, {	-- Armaments of War (Druid)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { DRUID },
@@ -114,11 +114,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(20714)),	-- Sandstorm Boots
 					},
 				}),
-				q(8331,  {	-- Aurel Goldleaf
+				q(8331, {	-- Aurel Goldleaf
 					["u"] = REMOVED_FROM_GAME,
 					["minReputation"] = { 609, FRIENDLY },
 				}),
-				q(8308,  {	-- Brann Bronzebeard's Lost Letter
+				q(8308, {	-- Brann Bronzebeard's Lost Letter
 					["provider"] = { "i", 20461 },	-- Brann Bronzebeard's Lost Letter
 					["description"] = "This quest is likely only available during or after 'Dearest Natalia'.",
 					["sourceQuest"] = 8304,	-- Dearest Natalia
@@ -142,16 +142,16 @@ _.Zones =
 						i(20723),	-- Brann's Trusty Pick
 					},
 				}),
-				q(8349,  {	-- Bor Wildmane
+				q(8349, {	-- Bor Wildmane
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
-				q(8351,  {	-- Bor Wishes to Speak
+				q(8351, {	-- Bor Wishes to Speak
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 				}),
-				q(8310,  {	-- Breaking the Code
+				q(8310, {	-- Breaking the Code
 					["provider"] = { "n", 15171 },	-- Frankal Stonebridge
 					["coord"] = { 46.0, 79.4, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
@@ -162,12 +162,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(8800,  {	-- Cenarion Battlegear
+				q(8800, {	-- Cenarion Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15540 },	-- Windcaller Kaldon
 				}),
-				q(8573,  {	-- Champion's Battlegear
+				q(8573, {	-- Champion's Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
@@ -176,47 +176,47 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(21190)),	-- Wrath of Cenarius
 					},
 				}),
-				q(8277,  {	-- Deadly Desert Venom
+				q(8277, {	-- Deadly Desert Venom
 					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
 					["coord"] = { 55.2, 36.3, SILITHUS },
 				}),
-				q(8304,  {	-- Dearest Natalia
+				q(8304, {	-- Dearest Natalia
 					["provider"] = { "n", 15181 },	-- Commander Mar'alith
 					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
-				q(8332,  {	-- Dukes of the COuncil
+				q(8332, {	-- Dukes of the COuncil
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 				}),
-				q(8319,  {	-- Encrypted Twilight Texts
+				q(8319, {	-- Encrypted Twilight Texts
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
 					["repeatable"] = true,
 					["coord"] = { 53.15, 35.12, SILITHUS },
 					["sourceQuest"] = 8318,	-- Secret Communication
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
-				q(8309,  {	-- Glyph Chasing
+				q(8309, {	-- Glyph Chasing
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
-				q(8343,  {	-- Goldleaf's Discovery
+				q(8343, {	-- Goldleaf's Discovery
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1126,  {	-- Hive in the Tower
+				q(1126, {	-- Hive in the Tower
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 				}),
-				q(8306,  {	-- Into The Maw of Madness
+				q(8306, {	-- Into The Maw of Madness
 					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["g"] = {
 						i(20724),	-- Corrupted Blackwood Staff
 					},
 				}),
-				q(8341,  {	-- Lords of the Council
+				q(8341, {	-- Lords of the Council
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
@@ -229,17 +229,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(8278,  {	-- Noggle's Last Hope
+				q(8278, {	-- Noggle's Last Hope
 					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
 					["coord"] = { 55.3, 36.3, SILITHUS },
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 				}),
-				q(8282,  {	-- Noggle's Lost Satchel
+				q(8282, {	-- Noggle's Lost Satchel
 					["provider"] = { "n", 15190 },	-- Noggle Ficklespragg
 					["coord"] = { 55.2, 36.1, SILITHUS },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
-				q(8352,  {	-- Scepter of the Council
+				q(8352, {	-- Scepter of the Council
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
@@ -250,33 +250,33 @@ _.Zones =
 						})),
 					},
 				}),
-				q(8318,  {	-- Secret Communication
+				q(8318, {	-- Secret Communication
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
 					["coord"] = { 53.15, 35.12, SILITHUS },
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
-				q(8857,  {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
+				q(8857, {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
-				q(8858,  {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
+				q(8858, {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
-				q(8859,  {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
+				q(8859, {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
-				q(8280,  {	-- Securing the Supply Lines
+				q(8280, {	-- Securing the Supply Lines
 					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
 					["coord"] = { 54.9, 36.0, SILITHUS },
 					["sourceQuests"] = {
@@ -286,7 +286,7 @@ _.Zones =
 						28527,	-- Warchief's Command: Silithus!
 					},
 				}),
-				q(8348,  {	-- Signet of the Dukes
+				q(8348, {	-- Signet of the Dukes
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
@@ -298,7 +298,7 @@ _.Zones =
 						})),
 					},
 				}),
-				q(8574,  {	-- Stalwart's Battlegear
+				q(8574, {	-- Stalwart's Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
@@ -308,12 +308,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(21186)),	-- Rockfury Bracers
 					},
 				}),
-				q(8281,  {	-- Stepping Up Security
+				q(8281, {	-- Stepping Up Security
 					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
 					["coord"] = { 54.8, 36.0, SILITHUS },
 					["sourceQuest"] = 8280,	-- Securing the Suppy Lines
 				}),
-				q(8324,  {	-- Still Believing
+				q(8324, {	-- Still Believing
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["repeatable"] = true,
 					["coord"] = { 68.66, 63.03, SILITHUS },
@@ -331,88 +331,88 @@ _.Zones =
 						}),
 					},
 				}),
-				q(8770,  {	-- Target: Hive'Ashi Defenders
+				q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8771,  {	-- Target: Hive'Ashi Sandstalkers
+				q(8771, {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8501,  {	-- Target: Hive'Ashi Stingers
+				q(8501, {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8502,  {	-- Target: Hive'Ashi Workers
+				q(8502, {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8774,  {	-- Target: Hive'Regal Ambushers
+				q(8774, {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8777,  {	-- Target: Hive'Regal Burrowers
+				q(8777, {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8776,  {	-- Target: Hive'Regal Slavemakers
+				q(8776, {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8775,  {	-- Target: Hive'Regal Spitfires
+				q(8775, {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8539,  {	-- Target: Hive'Zora Hive Sisters
+				q(8539, {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8773,  {	-- Target: Hive'Zora Reavers
+				q(8773, {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing VI
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8687,  {	-- Target: Hive'Zora Tunnelers
+				q(8687, {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8772,  {	-- Target: Hive'Zora Waywatchers
+				q(8772, {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["repeatable"] = true,
 				}),
-				q(8315,  {	-- The Calling
+				q(8315, {	-- The Calling
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 				}),
-				q(8285,  {	-- The Deserter
+				q(8285, {	-- The Deserter
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				}),
-				q(9023,  {	-- The Perfect Poison
+				q(9023, {	-- The Perfect Poison
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
 					["g"] = {
@@ -424,37 +424,37 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(22377)),	-- The Thunderwood Poker
 					},
 				}),
-				q(1125,  {	-- The Spirits of Southwind
+				q(1125, {	-- The Spirits of Southwind
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
 				}),
-				q(8279,  {	-- The Twilight Lexicon
+				q(8279, {	-- The Twilight Lexicon
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8285,	-- The Deserter
 				}),
-				q(8284,  {	-- The Twilight Mystery
+				q(8284, {	-- The Twilight Mystery
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
-				q(8323,  {	-- True Believers
+				q(8323, {	-- True Believers
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.7, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["cost"] = { { "i", 20404, 10 } },	-- 10x Encrypted Twilight Text
 				}),
-				q(8320,  {	-- Twilight Geolords
+				q(8320, {	-- Twilight Geolords
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, SILITHUS },
 				}),
-				q(6844,  {	-- Umber, Archivist
+				q(6844, {	-- Umber, Archivist
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1126,	-- Hive in the Tower
 				}),
-				q(8314,  {	-- Unraveling the Mystery
+				q(8314, {	-- Unraveling the Mystery
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuests"] = {
@@ -462,7 +462,7 @@ _.Zones =
 						8309,	-- Glyph Chasing
 					},
 				}),
-				q(8572,  {	-- Veteran's Battlegear
+				q(8572, {	-- Veteran's Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
@@ -471,7 +471,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(21181)),	-- Grace of Earth
 					},
 				}),
-				q(8548,  {	-- Volunteer's Battlegear
+				q(8548, {	-- Volunteer's Battlegear
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
@@ -480,7 +480,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(21178)),	-- Gloves of Earthen Power
 					},
 				}),
-				q(8321,  {	-- Vyral the Vile
+				q(8321, {	-- Vyral the Vile
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, SILITHUS },
 					["sourceQuest"] = 8320,	-- Twilight Geolords
@@ -489,7 +489,7 @@ _.Zones =
 						i(20649),	-- Sunprism Pendant
 					},
 				}),
-				q(8283,  {	-- Wanted - Deathclasp, Terror of the Sands
+				q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["coord"] = { 55.0, 35.9, SILITHUS },
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
 					["g"] = {

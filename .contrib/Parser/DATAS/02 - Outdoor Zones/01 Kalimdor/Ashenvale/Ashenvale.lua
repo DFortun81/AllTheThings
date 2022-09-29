@@ -144,7 +144,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 49.31, 65.25, ASHENVALE },
 					["timeline"] = { "added 4.0.3.10000" },
 				}),
-				fp(61,  {	-- Splintertree Post, Ashenvale
+				fp(61, {	-- Splintertree Post, Ashenvale
 					["cr"] = 12616,	-- Vhulgra <Wind Rider Master>
 					["coord"] = { 73.2, 61.6, ASHENVALE },
 					["races"] = HORDE_ONLY,
@@ -154,7 +154,7 @@ root("Zones", m(KALIMDOR, {
 					["coord"] = { 35.02, 72.07, ASHENVALE },
 					["timeline"] = { "added 4.0.3.10000" },
 				}),
-				fp(58,  {	-- Zoram'gar Outpost, Ashenvale
+				fp(58, {	-- Zoram'gar Outpost, Ashenvale
 					["cr"] = 11901,	-- Andruk <Wind Rider Master>
 					["coord"] = { 12.2, 33.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
@@ -280,7 +280,7 @@ root("Zones", m(KALIMDOR, {
 					},
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(6503,  {	-- Ashenvale Outrunners
+				q(6503, {	-- Ashenvale Outrunners
 					["provider"] = { "n", 12867 },	-- Kuray'bin
 					["coord"] = { 73.5, 60.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
@@ -313,7 +313,7 @@ root("Zones", m(KALIMDOR, {
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
-				q(1010,  {	-- Bathran's Hair
+				q(1010, {	-- Bathran's Hair
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -828,7 +828,7 @@ root("Zones", m(KALIMDOR, {
 						i(131216, {["timeline"] = { "added 7.0.3.22248" }}),	-- Nimblereed Chain
 					},
 				})),
-				q(1056,  {	-- Journey to Stonetalon Peak
+				q(1056, {	-- Journey to Stonetalon Peak
 					["provider"] = { "n", 3996 },	-- Faldreas Goeth'Shael
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1648,7 +1648,7 @@ root("Zones", m(KALIMDOR, {
 					["lvl"] = 20,
 					["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000" },
 				}),
-				q(1918,  {	-- The Befouled Element
+				q(1918, {	-- The Befouled Element
 					["sourceQuests"] = { 25 },	-- Stonetalon Standstill [Vanilla] / Simmer Down Now [CATA]
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe
 					["crs"] = { 12759 },	-- Tideress
@@ -2313,7 +2313,7 @@ root("Zones", m(KALIMDOR, {
 						i(1351),	-- Fingerbone Bracers (SALVAGE YARD)
 					},
 				})),
-				n(10559,  {	-- Lady Vespia
+				n(10559, {	-- Lady Vespia
 					["coords"] = {
 						{ 12.0, 15.0, ASHENVALE },
 						{ 15.0, 24.2, ASHENVALE },
@@ -2330,27 +2330,27 @@ root("Zones", m(KALIMDOR, {
 						i(122226),	-- Music Roll: Magic
 					},
 				})),
-				n(10644,  {	-- Mist Howler
+				n(10644, {	-- Mist Howler
 					["coords"] = {
 						{ 26.2, 15.4, ASHENVALE },
 						{ 25.2, 26.8, ASHENVALE },
 					},
 				}),
-				n(10640,  {	-- Oakpaw
+				n(10640, {	-- Oakpaw
 					["coords"] = {
 						{ 57.0, 64.6, ASHENVALE },
 						{ 55.8, 62.6, ASHENVALE },
 						{ 54.2, 62.4, ASHENVALE },
 					},
 				}),
-				n(10647,  {	-- Prince Raze
+				n(10647, {	-- Prince Raze
 					["coords"] = {
 						{ 78.6, 45.2, ASHENVALE },
 						{ 81.0, 49.2, ASHENVALE },
 						{ 66.6, 56.8, ASHENVALE },
 					},
 				}),
-				n(10639,  {	-- Rorgish Jowl
+				n(10639, {	-- Rorgish Jowl
 					["coord"] = { 37.0, 33.6, ASHENVALE },
 				}),
 				n(3792,   {	-- Terrowulf Packlord
@@ -2361,7 +2361,7 @@ root("Zones", m(KALIMDOR, {
 						i(5754),	-- Wolfpack Medallion
 					}),
 				}),
-				n(12037,  {	-- Ursol'lok
+				n(12037, {	-- Ursol'lok
 					["coords"] = {
 						{ 89.6, 46.6, ASHENVALE },
 						{ 92.8, 45.6, ASHENVALE },
@@ -2440,7 +2440,7 @@ root("Zones", m(KALIMDOR, {
 						}),
 					},
 				})),
-				n(3958,  {	-- Lardan <Leatherworking Supplies>
+				n(3958, {	-- Lardan <Leatherworking Supplies>
 					["coord"] = { 34.8, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

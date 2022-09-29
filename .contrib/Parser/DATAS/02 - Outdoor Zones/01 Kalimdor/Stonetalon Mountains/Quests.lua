@@ -5,7 +5,7 @@
 root("Zones", m(KALIMDOR, {
 	m(STONETALON_MOUNTAINS, {
 		n(QUESTS, bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } }, {
-			q(1071,  {	-- A Gnome's Respite
+			q(1071, {	-- A Gnome's Respite
 				["sourceQuest"] = 1085,	-- On Guard in Stonetalon
 				["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle
 				["races"] = ALLIANCE_ONLY,
@@ -585,7 +585,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
 			}),
-			q(1058,  {	-- Jin'Zil's Forest Magic
+			q(1058, {	-- Jin'Zil's Forest Magic
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
 				["races"] = HORDE_ONLY,
@@ -666,7 +666,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 25673,	-- Just Ask Alice
 			}),
-			q(6381,  {	-- New Life
+			q(6381, {	-- New Life
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 11864 },	-- Tammra Windfield
 				["races"] = HORDE_ONLY,
@@ -701,13 +701,13 @@ root("Zones", m(KALIMDOR, {
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 			}),
-			q(1085,  {	-- On Guard in Stonetalon
+			q(1085, {	-- On Guard in Stonetalon
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 4080 },	-- Kaela Shadowspear
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 			}),
-			q(1088,  {	-- Ordanus
+			q(1088, {	-- Ordanus
 				["u"] = REMOVED_FROM_GAME,
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 4198 },	-- Braelyn Firehand
@@ -748,7 +748,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 25891,	-- Last Ditch Effort
 			}),
-			q(1081,  {	-- Reception from Tyrande
+			q(1081, {	-- Reception from Tyrande
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 				["races"] = ALLIANCE_ONLY,
@@ -759,7 +759,7 @@ root("Zones", m(KALIMDOR, {
 					un(REMOVED_FROM_GAME, i(7336)),	-- Wildwood Chain
 				},
 			}),
-			q(1059,  {	-- Reclaiming the Charred Vale
+			q(1059, {	-- Reclaiming the Charred Vale
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 3994 },	-- Keeper Albagorm
 				["races"] = ALLIANCE_ONLY,
@@ -906,7 +906,7 @@ root("Zones", m(KALIMDOR, {
 					i(57498),	-- Bow of Invisible Aim
 				},
 			}),
-			q(1093,  {	-- Super Reaper 6000
+			q(1093, {	-- Super Reaper 6000
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 4201 },	-- Ziz Fizziks
 				["sourceQuest"] = 1483,	-- Ziz Fizziks
@@ -923,7 +923,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 25844,	-- Sating the Savage Beast
 			}),
-			q(1154,  {	-- Test of Lore
+			q(1154, {	-- Test of Lore
 				["provider"] = { "n", 4489 },	-- Braug Dimspirit
 				["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 				["sourceQuest"] = 1152,	-- Test of Lore
@@ -931,7 +931,7 @@ root("Zones", m(KALIMDOR, {
 				["lvl"] = 25,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(6627,  {	-- Test of Lore
+			q(6627, {	-- Test of Lore
 				["provider"] = { "n", 4489 },	-- Braug Dimspirit
 				["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 				["sourceQuest"] = 1154,	-- Test of Lore
@@ -939,7 +939,7 @@ root("Zones", m(KALIMDOR, {
 				["lvl"] = 25,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(1159,  {	-- Test of Lore
+			q(1159, {	-- Test of Lore
 				["provider"] = { "n", 4489 },	-- Braug Dimspirit
 				["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 				["sourceQuest"] = 6627,	-- Test of Lore
@@ -959,7 +959,7 @@ root("Zones", m(KALIMDOR, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
 			}),
-			q(1089,  {	-- The Den
+			q(1089, {	-- The Den
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 4198 },	-- Braelyn Firehand
 				["races"] = HORDE_ONLY,

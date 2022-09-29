@@ -1294,15 +1294,15 @@ root("Zones", {
 					}),
 				}),
 				n(VENDORS, {
-					n(19540,  {	-- Asarnan <Enchanting Trainer>
+					n(19540, {	-- Asarnan <Enchanting Trainer>
 						["coord"] = { 44.2, 33.6, NETHERSTORM },
 						["groups"] = ASARNAN_MALIJ_GROUPS,
 					}),
 					-- #if NOT ANYCLASSIC
-					n(26352,  {	-- Big Zokk Torquewrench Original BC S4 VENDOR
+					n(26352, {	-- Big Zokk Torquewrench Original BC S4 VENDOR
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
+					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["groups"] = pvp({
@@ -2044,7 +2044,7 @@ root("Zones", {
 						},
 					}),
 					-- #endif
-					n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
+					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
 						["groups"] = {
 							i(29380, {	-- Ethereum Phase Blade
@@ -2070,11 +2070,11 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(19537,  {	-- Dealer Malij <Enchanting Supplies>
+					n(19537, {	-- Dealer Malij <Enchanting Supplies>
 						["coord"] = { 44.2, 34.0, NETHERSTORM },
 						["groups"] = ASARNAN_MALIJ_GROUPS,
 					}),
-					n(20980,  {	-- Dealer Rashaad <Exotic Creatures>
+					n(20980, {	-- Dealer Rashaad <Exotic Creatures>
 						["coord"] = { 43.4, 35.2, NETHERSTORM },
 						["groups"] = {
 							i(29958),	-- Blue Dragonhawk Hatchling (PET!)
@@ -2125,7 +2125,7 @@ root("Zones", {
 						--]]
 						},
 					}),
-					n(34091,  {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
+					n(34091, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 						--[[	-- Items are commented out to reduce bloat.
@@ -2199,7 +2199,7 @@ root("Zones", {
 						--]]
 						},
 					}),
-					n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
+					n(40209, {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["groups"] = pvp({
@@ -2953,7 +2953,7 @@ root("Zones", {
 						},
 					}),
 					-- #endif
-					n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
+					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
 						["requireSkill"] = 20222,	-- Goblin Engineering
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 						["coord"] = { 32.9, 63.7, NETHERSTORM },
@@ -2961,7 +2961,7 @@ root("Zones", {
 							recipe(36954),	-- Dimensional Ripper - Area 52
 						},
 					}),
-					n(20242,  {	-- Karaaz <Consortium Quartermaster>
+					n(20242, {	-- Karaaz <Consortium Quartermaster>
 						["coord"] = { 43.6, 34.4, NETHERSTORM },
 						["groups"] = {
 							i(29115),	-- Consortium Blaster
@@ -3013,7 +3013,7 @@ root("Zones", {
 					n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> Added in patch 3.1.1.9806
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(54650,  {	-- Kezzik the Striker <Gladiator and General's Gladiator>
+					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["itemID"] = 137642,	-- Mark of Honor
 						["groups"] = {
@@ -4445,7 +4445,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
+					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["groups"] = pvp({
@@ -4528,7 +4528,7 @@ root("Zones", {
 							}),
 						}),
 					}),
-					n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
+					n(54648, {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["groups"] = pvp({
@@ -4606,7 +4606,7 @@ root("Zones", {
 							i(77825),	-- Replica Legionnaire's Mail Leggings
 						}),
 					}),
-					n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
+					n(58152, {	-- Tini Smalls <Classic Horde Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["groups"] = pvp({
@@ -4714,7 +4714,7 @@ root("Zones", {
 						}),
 					}),
 					-- #endif
-					n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
+					n(20112, {	-- Wind Trader Tuluman <Weapon Merchant>
 						["coord"] = { 34.6, 37.8, NETHERSTORM },
 						["groups"] = {
 							i(30755, {	-- Mag'hari Fighting Claw

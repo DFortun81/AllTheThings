@@ -212,7 +212,7 @@ _.Zones =
 					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(6124,  {	-- Curing the Sick
+				q(6124, {	-- Curing the Sick
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3702 },	-- Alanndarian Nightsong
 					["races"] = ALLIANCE_ONLY,
@@ -283,7 +283,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(5611)),	-- Tear of Grief
 					},
 				}),
-				q(1138,  {	-- Fruit of the Sea
+				q(1138, {	-- Fruit of the Sea
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10216 },	-- Gubber Blump
 					["races"] = ALLIANCE_ONLY,
@@ -396,7 +396,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13508,	-- Swift Response
 				}),
-				q(5713,  {	-- One Shot. One Kill.
+				q(5713, {	-- One Shot. One Kill.
 					["provider"] = { "n", 11711 },	-- Sentinel Aynasha
 					["coord"] = { 47.7, 88.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -567,7 +567,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13584,	-- Calming the Earth
 				}),
-				q(2139,  {	-- Tharnariun's Hope
+				q(2139, {	-- Tharnariun's Hope
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3701 },	-- Tharnariun Treetender
 					["races"] = ALLIANCE_ONLY,
@@ -630,7 +630,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13525,	-- What's Happening to the Blackwood Furbolg?
 				}),
-				q(4763,  {	-- The Blackwood Corrupted
+				q(4763, {	-- The Blackwood Corrupted
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3649 },	-- Thundris Windweaver
 					["races"] = ALLIANCE_ONLY,
@@ -727,7 +727,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 				}),
-				q(4813,  {	-- The Fragments Within
+				q(4813, {	-- The Fragments Within
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal (u=43)
@@ -838,7 +838,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
-				q(5321,  {	-- The Sleeper Has Awakened
+				q(5321, {	-- The Sleeper Has Awakened
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11218 },	-- Kerlonian Evershade
 					["races"] = ALLIANCE_ONLY,
@@ -961,7 +961,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
-				q(4740,  {	-- WANTED: Murkdeep!
+				q(4740, {	-- WANTED: Murkdeep!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
@@ -980,7 +980,7 @@ _.Zones =
 						13505,	-- Remnants of the Highborne
 					},
 				}),
-				q(4681,  {	-- Washed Ashore
+				q(4681, {	-- Washed Ashore
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10219 },	-- Gwennyth Bly'Leggonde
 					["races"] = ALLIANCE_ONLY,

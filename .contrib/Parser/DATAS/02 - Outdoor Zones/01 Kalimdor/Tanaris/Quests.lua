@@ -30,7 +30,7 @@ _.Zones =
 						i(7987),	-- Plans: Ornate Mithril Helm (RECIPE!)
 					},
 				})),
-				q(3913,  {	-- A Grave Situation
+				q(3913, {	-- A Grave Situation
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9299 },	-- Gaeriyan
 					["sourceQuest"] = 3912,	-- Meet at the Grave
@@ -110,7 +110,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				}),
-				q(4496,  {	-- Bungle in the Jungle
+				q(4496, {	-- Bungle in the Jungle
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuests"] = {
@@ -123,14 +123,14 @@ _.Zones =
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, TANARIS },
 				}),
-				q(4508,  {	-- Calm Before the Storm (A)
+				q(4508, {	-- Calm Before the Storm (A)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(4509,  {	-- Calm Before the Storm (H)
+				q(4509, {	-- Calm Before the Storm (H)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
@@ -222,7 +222,7 @@ _.Zones =
 					["provider"] = { "n", 7583 },	-- Sprinkle
 					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
 				}),
-				q(2874,  {	-- Deliver to MacKinley
+				q(2874, {	-- Deliver to MacKinley
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7881 },	-- Stoley
 					["g"] = {
@@ -230,7 +230,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9636)),	-- Swashbuckler Sash
 					},
 				}),
-				q(3321,  {	-- Did You Lose This?
+				q(3321, {	-- Did You Lose This?
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, TANARIS },
 					["sourceQuests"] = {
@@ -289,7 +289,7 @@ _.Zones =
 					["coord"] = { 50.2, 27.5, TANARIS },
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(3161,  {	-- Gahz'ridian
+				q(3161, {	-- Gahz'ridian
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["g"] = {
@@ -448,7 +448,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25018,	-- Andoren Will Know
 				}),
-				q(3914,  {	-- Linken's Sword
+				q(3914, {	-- Linken's Sword
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
 					["sourceQuest"] = 3913,	-- A Grave Situation
@@ -495,7 +495,7 @@ _.Zones =
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(4507,  {	-- Pawn Captures Queen
+				q(4507, {	-- Pawn Captures Queen
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
@@ -608,7 +608,7 @@ _.Zones =
 						i(56866),	-- Failed Liferocket Prototype
 					},
 				}),
-				q(1189,  {	-- Safety First
+				q(1189, {	-- Safety First
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4708 },	-- Shreev
 					["sourceQuest"] = 1188,	-- Safety First
@@ -712,7 +712,7 @@ _.Zones =
 						53817,	-- Whatever Happened to Grizzek Fizzwrench?
 					},
 				}),
-				q(8366,  {	-- Southsea Shakedown
+				q(8366, {	-- Southsea Shakedown
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7882 },	-- Security Chief Bilgewhizzle
 					["g"] = {
@@ -762,7 +762,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				}),
-				q(5863,  {	-- The Dunemaul Compound
+				q(5863, {	-- The Dunemaul Compound
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11758 },	-- Andi Lynn
 					["g"] = {
@@ -918,7 +918,7 @@ _.Zones =
 					["coord"] = { 55.3, 27.7, TANARIS },
 					["isBreadcrumb"] = true,
 				}),
-				q(1560,  {	-- Tooga's Quest
+				q(1560, {	-- Tooga's Quest
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5955 },	-- Tooga
 					["g"] = {
@@ -955,7 +955,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 142122 },	-- Wanted Poster
 				}),
-				q(9268,  {	-- War at Sea
+				q(9268, {	-- War at Sea
 					["provider"] = { "n", 16417 },	-- Rumsen Fizzlebrack
 					["coord"] = { 50.4, 27.2, TANARIS },
 					["repeatable"] = true,

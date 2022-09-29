@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DARNASSUS, {
 			n(QUESTS, {
-				q(6342,  {	-- An Unexpected Gift
+				q(6342, {	-- An Unexpected Gift
 					["sourceQuests"] = { 6341 },	-- To Darnassus
 					["provider"] = { "n", 7316 },	-- Sister Aquinne
 					["coord"] = { 36.0, 53.4, DARNASSUS },
@@ -25,7 +25,7 @@ _.Zones =
 					["coord"] = { 48.2, 14.6, DARNASSUS },
 					["races"] = { WORGEN },
 				}),
-				q(4510,  {	-- Calm Before the Storm
+				q(4510, {	-- Calm Before the Storm
 					["sourceQuests"] = { 4508 },	-- Calm Before the Storm [Alliance]
 					["provider"] = { "n", 7740 },	-- Gracina Spiritmight
 					["coord"] = { 42.0, 85.4, DARNASSUS },
@@ -79,14 +79,14 @@ _.Zones =
 					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
-				q(4493,  {	-- March of the Silithid [Alliance]
+				q(4493, {	-- March of the Silithid [Alliance]
 					["sourceQuests"] = { 162 },	-- Rise of the Silithid [Alliance]
 					["provider"] = { "n", 7740 },	-- Gracina Spiritmight
 					["coord"] = { 42.0, 85.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1711,  {	-- Mathiel's Armor
+				q(1711, {	-- Mathiel's Armor
 					["sourceQuests"] = { 1710 },	-- Sunscorched Shells
 					["provider"] = { "n", 6142 },	-- Mathiel
 					["classes"] = { WARRIOR },
@@ -118,13 +118,13 @@ _.Zones =
 					["repeatable"] = true,
 					["_drop"] = { "g" },
 				}),
-				q(6343,  {	-- Return to Nyoma
+				q(6343, {	-- Return to Nyoma
 					["sourceQuests"] = { 6342 },	-- An Unexpected Gift
 					["provider"] = { "n", 40552 },	-- Leora
 					["coord"] = { 36.5, 47.8, DARNASSUS },
 					["races"] = { NIGHTELF },
 				}),
-				q(1692,  {	-- Smith Mathiel
+				q(1692, {	-- Smith Mathiel
 					["sourceQuests"] = { 1686 },	-- The Shade of Elura
 					["provider"] = { "n", 4088 },	-- Elanaria
 					["classes"] = { WARRIOR },
@@ -132,7 +132,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1710,  {	-- Sunscorched Shells
+				q(1710, {	-- Sunscorched Shells
 					["sourceQuests"] = { 1703 },	-- Mathiel
 					["provider"] = { "n", 6142 },	-- Mathiel
 					["classes"] = { WARRIOR },
@@ -140,14 +140,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1039,  {	-- The Barrens Port
+				q(1039, {	-- The Barrens Port
 					["sourceQuests"] = { 1038 },	-- Velinde's Effects
 					["provider"] = { "n", 8026 },	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1686,  {	-- The Shade of Elura
+				q(1686, {	-- The Shade of Elura
 					["sourceQuests"] = { 1683 },	-- Vorlus Vilehoof
 					["provider"] = { "n", 4088 },	-- Elanaria
 					["classes"] = { WARRIOR },
@@ -155,14 +155,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1038,  {	-- Velinde's Effects
+				q(1038, {	-- Velinde's Effects
 					["sourceQuests"] = { 1037 },	-- Velinde Starsong
 					["provider"] = { "n", 8026 },	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1683,  {	-- Vorlus Vilehoof
+				q(1683, {	-- Vorlus Vilehoof
 					["sourceQuests"] = { 1684 },	-- Elanaria
 					["provider"] = { "n", 4088 },	-- Elanaria
 					["classes"] = { WARRIOR },
@@ -170,7 +170,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1693,  {	-- Weapons of Elunite
+				q(1693, {	-- Weapons of Elunite
 					["sourceQuests"] = { 1692 },	-- Smith Mathiel
 					["provider"] = { "n", 6142 },	-- Mathiel
 					["classes"] = { WARRIOR },

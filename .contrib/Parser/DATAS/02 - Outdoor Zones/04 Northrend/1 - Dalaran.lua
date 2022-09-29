@@ -3841,7 +3841,7 @@ root("Zones", {
 				n(ACHIEVEMENTS, bubbleDown({	-- Fishing Achievements
 					["requireSkill"] = FISHING,
 				},{
-					ach(3217,  {	-- Chasing Marcia
+					ach(3217, {	-- Chasing Marcia
 						crit(1, { -- The Ghostfish
 							["_quests"] = { 13830 },
 						}),
@@ -3858,7 +3858,7 @@ root("Zones", {
 							["_quests"] = { 13836 },
 						}),
 					}),
-					ach(2096,  {	-- The Coin Master
+					ach(2096, {	-- The Coin Master
 						["sym"] = {{"meta_achievement",
 							2094,	-- A Penny For Your Thoughts
 							2095,	-- Silver in the City
@@ -3869,7 +3869,7 @@ root("Zones", {
 						},
 					}),
 					-- TODO: could do similar coin Item treatment here eventually as with 'The Wish Remover'
-					ach(2094,  {	-- A Penny For Your Thoughts
+					ach(2094, {	-- A Penny For Your Thoughts
 						crit(1),		-- Alonsus Faol's Copper Coin
 						crit(2),		-- Ansirem's Copper Coin
 						crit(3),		-- Attumen's Copper Coin
@@ -3893,7 +3893,7 @@ root("Zones", {
 						crit(21),		-- Vareesa's Copper Coin
 						crit(22),		-- Vargoth's Copper Coin
 					}),
-					ach(2095,  {	-- Silver in the City
+					ach(2095, {	-- Silver in the City
 						crit(1),		-- Aegwynn's Silver Coin
 						crit(2),		-- Alleria's Silver Coin
 						crit(3),		-- Antonidas' Silver Coin
@@ -3910,7 +3910,7 @@ root("Zones", {
 						crit(14),		-- Prince Magni Bronzebeard's Silver Coin
 						crit(15),		-- A Peasant's Silver Coin
 					}),
-					ach(1957,  {	-- There's Gold In That There Fountain
+					ach(1957, {	-- There's Gold In That There Fountain
 						crit(1),		-- Anduin Wrynn's Gold Coin
 						crit(2),		-- Archimonde's Gold Coin
 						crit(3),		-- Arthas' Gold Coin
@@ -6084,7 +6084,7 @@ root("Zones", {
 					}),
 				}),
 				n(VENDORS, {
-					n(29548,  {	-- Aimee <Pie, Pastry & Cakes>
+					n(29548, {	-- Aimee <Pie, Pastry & Cakes>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(42439),	-- Big Berry Pie
@@ -6096,7 +6096,7 @@ root("Zones", {
 							i(42429),	-- Red Velvet Cupcake
 						},
 					}),
-					n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
+					n(29512, {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(21895),	-- Pattern: Primal Mooncloth
@@ -6106,21 +6106,21 @@ root("Zones", {
 							i(21918),	-- Pattern: Primal Mooncloth Shoulders
 						},
 					}),
-					n(29628,  {	-- Angelique Butler <First Aid Supplies>
+					n(29628, {	-- Angelique Butler <First Aid Supplies>
 						["coord"] = { 37.0, 37.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44694),	-- Antiseptic-Soaked Dressing
 							i(44693),	-- Wound Dressing
 						},
 					}),
-					n(28990,  {	-- Anthony Durain <Shield Merchant>
+					n(28990, {	-- Anthony Durain <Shield Merchant>
 						["coord"] = { 46.8, 27.6, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40701),	-- Crygil's Discarded Plate Panel
 							i(40700),	-- Protective Barricade of the Light
 						},
 					}),
-					n(29499,  {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
+					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 						["coord"] = { 53.5, 62.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40704),	-- Pride
@@ -6130,7 +6130,7 @@ root("Zones", {
 							})),
 						},
 					}),
-					n(32515,  {	-- Braeg Stoutbeard
+					n(32515, {	-- Braeg Stoutbeard
 						["coord"] = { 37.33, 28.69, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44128, {	-- Arctic Fur
@@ -6282,7 +6282,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(29523,  {	-- Bragund Brightlink <Mail Armor Merchant>
+					n(29523, {	-- Bragund Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.2, 72.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40736),	-- Armguard of the Tower Archer
@@ -6545,7 +6545,7 @@ root("Zones", {
 							i(45828),	-- Windchill Binding
 						},
 					}),
-					n(28951,  {	-- Breanni <Pet Supplies>
+					n(28951, {	-- Breanni <Pet Supplies>
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44822),	-- Albino Snake (PET!)
@@ -6558,7 +6558,7 @@ root("Zones", {
 							i(37460),	-- Rope Pet Leash (TOY!)
 						},
 					}),
-					n(28722,  {	-- Bryan Landers <Engineering Supplies>
+					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
 						["groups"] = {
 							i(136782, {	-- Fireworks Instruction Manual
@@ -6569,7 +6569,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28699,  {	-- Charles Worth <Tailoring Trainer>
+					n(28699, {	-- Charles Worth <Tailoring Trainer>
 						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
 						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
 						["groups"] = {
@@ -6585,7 +6585,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(29716,  {	-- Clockwork Assistant <Jepetto's Companion>
+					n(29716, {	-- Clockwork Assistant <Jepetto's Companion>
 						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
 						["groups"] = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
@@ -6623,7 +6623,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(29528,  {	-- Debbi Moore <Trinkets & Charms>
+					n(29528, {	-- Debbi Moore <Trinkets & Charms>
 						["coord"] = { 49.7, 55.5, NORTHREND_DALARAN },
 						["groups"] = {
 							i(50356),	-- Corroded Skeleton Key
@@ -6640,7 +6640,7 @@ root("Zones", {
 							i(40683),	-- Valor Medal of the First War
 						},
 					}),
-					n(34252,  {	-- Dubin Clay <Plate Armor Merchant>
+					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
 						["coord"] = { 46.2, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(46154, {	-- Conqueror's Aegis Battleplate
@@ -6890,7 +6890,7 @@ root("Zones", {
 							i(48374),	-- Wrynn's Shoulderplates of Conquest
 						},
 					}),
-					n(28715,  {	-- Endora Moorehead
+					n(28715, {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
 						["groups"] = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran
@@ -7046,7 +7046,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
+					n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
 						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(47556, {	-- Crusader Orb
@@ -7081,7 +7081,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28997,  {	-- Griselda Hunderland <Plate Armor Merchant>
+					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(45824),	-- Belt of the Singing Blade
@@ -7323,7 +7323,7 @@ root("Zones", {
 							i(40735),	-- Zartson's Jungle Vambraces
 						},
 					}),
-					n(32172,  {	-- Harold Winston <Jewelry Vendor>
+					n(32172, {	-- Harold Winston <Jewelry Vendor>
 						["coord"] = { 40.2, 34.3, NORTHREND_DALARAN },
 						["groups"] = {
 							ach(2084, {	-- Ring of the Kirin Tor
@@ -7394,13 +7394,13 @@ root("Zones", {
 							i(45819),	-- Spiked Battleguard Choker
 						},
 					}),
-					n(31238,  {	-- Hira Snowdawn <Cold Weather Flying Trainer>
+					n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
 						["coord"] = { 69.73, 45.45, NORTHREND_DALARAN },
 						["groups"] = {
 							un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
 						},
 					}),
-					n(35498,  {	-- Horace Hunderland <Plate Armor Merchant>
+					n(35498, {	-- Horace Hunderland <Plate Armor Merchant>
 						["coord"] = { 46.6, 27.1, NORTHREND_DALARAN },
 						["groups"] = {
 							i(48386),	-- Hellscream's Battleplate of Conquest
@@ -7930,7 +7930,7 @@ root("Zones", {
 							i(50082),	-- Ymirjar Lord's Shoulderplates
 						},
 					}),
-					n(28714,  {	-- Ildine Sorrowspear
+					n(28714, {	-- Ildine Sorrowspear
 						["coord"] = { 38.78, 41.56, NORTHREND_DALARAN },
 						["groups"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
@@ -7981,13 +7981,19 @@ root("Zones", {
 						},
 					}),
 					-- #endif
-					n(96483,  {	-- Jepetto Joybuzz <Toymaker>
+					n(29478, {	-- Jepetto Joybuzz <Toymaker>
 						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
-						["sym"] = {
-							{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
-						},
+						["timeline"] = { "removed 7.0.3.22290" },
+						-- #if BEFORE 7.0.3.22290
+						["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
+						-- #endif
 					}),
-					n(29491,  {	-- Karandonna <Clothier>
+					n(96483, {	-- Jepetto Joybuzz <Toymaker>
+						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
+						["timeline"] = { "added 7.0.3.22290" },
+						["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
+					}),
+					n(29491, {	-- Karandonna <Clothier>
 						["coord"] = { 44.4, 48.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(42365),	-- Amber Filigreed Doublet
@@ -7998,6 +8004,7 @@ root("Zones", {
 							i(42360),	-- Ebon Filigreed Doublet
 							i(42369),	-- Ebon Filigreed Shirt
 							i(53852, {	-- Embroidered Shirt
+								["timeline"] = { "added 4.0.3.13287" },
 								["cost"] = 10000000,	-- 1,000g
 							}),
 							i(42363),	-- Golden Filigreed Doublet
@@ -8010,7 +8017,7 @@ root("Zones", {
 							i(42376),	-- Yellow Martial Shirt
 						},
 					}),
-					n(35826,  {	-- Kaye Toogie
+					n(35826, {	-- Kaye Toogie
 						["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {
@@ -8019,7 +8026,7 @@ root("Zones", {
 							i(10609),	-- Schematic: Mithril Mechanical Dragonling
 						},
 					}),
-					n(29511,  {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
+					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
 						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
 						["groups"] = {
 							i(24316),	-- Pattern: Spellcloth
@@ -8029,7 +8036,7 @@ root("Zones", {
 							i(21910),	-- Pattern: Spellfire Robe
 						},
 					}),
-					n(29510,  {	-- Linna Bruder <Shadoweave Tailoring Specialist>
+					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(21915),	-- Pattern: Ebon Shadowbag
@@ -8039,7 +8046,7 @@ root("Zones", {
 							i(30483),	-- Pattern: Shadowcloth
 						},
 					}),
-					n(35500,  {	-- Matilda Brightlink <Mail Armor Merchant>
+					n(35500, {	-- Matilda Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.7, 73.0, NORTHREND_DALARAN },
 						["groups"] = {
 							i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
@@ -8344,7 +8351,7 @@ root("Zones", {
 							h(i(48275)),	-- Windrunner's Tunic of Conquest (H)
 						},
 					}),
-					n(32216,  {	-- Mei Francis <Exotic Mounts>
+					n(32216, {	-- Mei Francis <Exotic Mounts>
 						["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
 						["groups"] = {
 							ach(2076, {	-- Armored Brown Bear
@@ -8450,7 +8457,7 @@ root("Zones", {
 							emof(30, i(50464)),	-- Totem of the Surging Sea
 						}),
 					}),
-					n(29495,  {	-- Norvin Alderman <Cloaks>
+					n(29495, {	-- Norvin Alderman <Cloaks>
 						["coord"] = { 44.7, 48.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40724),	-- Cloak of Kea Feathers
@@ -8464,14 +8471,14 @@ root("Zones", {
 							i(50469),	-- Volde's Cloak of the Night Sky
 						},
 					}),
-					n(29527,  {	-- Orton Bennet <Offhand Offerings>
+					n(29527, {	-- Orton Bennet <Offhand Offerings>
 						["coord"] = { 51.9, 55.1, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40699),	-- Handbook of Obscure Remedies
 							i(40698),	-- Ward of the Violet Citadel
 						},
 					}),
-					n(28995,  {	-- Paldesse <Cloth Armor Merchant>
+					n(28995, {	-- Paldesse <Cloth Armor Merchant>
 						["coord"] = { 43.8, 49.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(50996),	-- Belt of Omission
@@ -8730,7 +8737,7 @@ root("Zones", {
 							i(40750),	-- Xintor's Expeditionary Boots
 						},
 					}),
-					n(35497,  {	-- Rafael Langrom <Leather Armor Merchant>
+					n(35497, {	-- Rafael Langrom <Leather Armor Merchant>
 						["coord"] = { 51.2, 71.5, NORTHREND_DALARAN },
 						["groups"] = {
 							h(i(48243)),	-- Garona's Breastplate of Conquest
@@ -9035,7 +9042,7 @@ root("Zones", {
 							a(i(48221)),	-- VanCleef's Pauldrons of Conquest
 						},
 					}),
-					n(35496,  {	-- Rueben Lauren <Cloth Armor Merchant>
+					n(35496, {	-- Rueben Lauren <Cloth Armor Merchant>
 						["coord"] = { 44.1, 48.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(50275),	-- Bloodmage Gloves
@@ -9340,7 +9347,7 @@ root("Zones", {
 							h(i(48071)),	-- Zabra's Shoulderpads of Conquest
 						},
 					}),
-					n(29703,  {	-- Sheddle Glossgleam <Cobbler>
+					n(29703, {	-- Sheddle Glossgleam <Cobbler>
 						["coord"] = { 45.0, 46.5, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40742),	-- Bladed Steelboots
@@ -9354,7 +9361,7 @@ root("Zones", {
 							i(40750),	-- Xintor's Expeditionary Boots
 						},
 					}),
-					n(28721,  {	-- Tiffany Cartier <Jewelcrafting Supplies>
+					n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
 						["groups"] = {
 							i(42298, {	-- Design: Bold Dragon's Eye
@@ -9728,7 +9735,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28701,  {	-- Timothy Jones <Jewelcrafting Trainer>
+					n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
 						["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
 						["groups"] = {
 							i(47010, {	-- Design: Accurate Dreadstone
@@ -9952,13 +9959,13 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28991,  {	-- Valaden Silverblade <Sword Merchant>
+					n(28991, {	-- Valaden Silverblade <Sword Merchant>
 						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40703),	-- Grasscutter
 						},
 					}),
-					n(28992,  {	-- Valerie Langrom <Leather Armor Merchant>
+					n(28992, {	-- Valerie Langrom <Leather Armor Merchant>
 						["coord"] = { 51.6, 72.4, NORTHREND_DALARAN },
 						["groups"] = {
 							i(40739),	-- Bands of the Great Tree
@@ -10221,7 +10228,7 @@ root("Zones", {
 							i(40738),	-- Wristwraps of the Cutthroat
 						},
 					}),
-					n(32514,  {	-- Vanessa Sellers
+					n(32514, {	-- Vanessa Sellers
 						["coord"] = { 38.4, 41.1, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44483, {	-- Formula: Enchant 2H Weapon - Massacre (RECIPE!)
@@ -10309,7 +10316,7 @@ root("Zones", {
 							}),
 						},
 					}),
-					n(28994,  {	-- Wanda Chanter
+					n(28994, {	-- Wanda Chanter
 						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
 						["groups"] = {
 							i(47658),	-- Brimstone Igniter

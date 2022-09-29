@@ -44,12 +44,12 @@ root("Zones", m(KALIMDOR, {
 							i(46753),	-- Melithar's Supply Bag
 						},
 					}),
-					q(2159,  {	-- Dolanaar Delivery
+					q(2159, {	-- Dolanaar Delivery
 						["provider"] = { "n", 6780 },	-- Porthannius
 						["coord"] = { 54.5, 84.7, 460 },
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 					}),
-					q(3118,  {	-- Encrypted Sigil
+					q(3118, {	-- Encrypted Sigil
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
 						["races"] = { NIGHTELF },
@@ -61,7 +61,7 @@ root("Zones", m(KALIMDOR, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28713,	-- The Balance of Nature
 					}),
-					q(3119,  {	-- Hallowed Sigil
+					q(3119, {	-- Hallowed Sigil
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
 						["races"] = { NIGHTELF },
@@ -100,7 +100,7 @@ root("Zones", m(KALIMDOR, {
 						["coord"] = { 44.8, 29.0, 460 },
 						["sourceQuest"] = 28727,	-- Vile Touch
 					}),
-					q(3116,  {	-- Simple Sigil
+					q(3116, {	-- Simple Sigil
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2079 },	-- Ilthalaine
 						["classes"] = { WARRIOR },

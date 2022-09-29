@@ -40,7 +40,7 @@ _.Zones = {
 					["provider"] = { "n", 5901 },	-- Islen Waterseer
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 				}),
-				q(1069,  {	-- Deepmoss Spider Eggs
+				q(1069, {	-- Deepmoss Spider Eggs
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 				}),
@@ -55,7 +55,7 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3341 },	-- Gann Stonespire
 				}),
-				q(1062,  {	-- Goblin Invaders
+				q(1062, {	-- Goblin Invaders
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
@@ -85,7 +85,7 @@ _.Zones = {
 					["provider"] = { "n", 11857 },	-- Makaba Flathoof
 					["sourceQuest"] = 6548,	-- Avenge My Village
 				}),
-				q(1060,  {	-- Letter to Jin'Zil
+				q(1060, {	-- Letter to Jin'Zil
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
@@ -102,7 +102,7 @@ _.Zones = {
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
 				}),
-				q(1130,  {	-- Melor Sends Word
+				q(1130, {	-- Melor Sends Word
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
@@ -166,7 +166,7 @@ _.Zones = {
 					["isBreadcrumb"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1068,  {	-- Shredding Machines
+				q(1068, {	-- Shredding Machines
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
@@ -177,13 +177,13 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 				}),
-				q(1063,  {	-- The Elder Crone
+				q(1063, {	-- The Elder Crone
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4049 },	-- Seereth Stonebreak
 					["sourceQuest"] = 1062,	-- Goblin Invaders
 				}),
-				q(1362,  {	-- The Kolkar of Desolace
+				q(1362, {	-- The Kolkar of Desolace
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3389 },	-- Regthar Deathgate
@@ -206,7 +206,7 @@ _.Zones = {
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 10621 },	-- Runed Scroll
 				}),
-				q(1145,  {	-- The Swarm Grows
+				q(1145, {	-- The Swarm Grows
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3428 },	-- Korran

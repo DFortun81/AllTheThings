@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(MOONGLADE, {
 			n(QUESTS, {
-				q(5527,  {	-- A Reliquary of Purity
+				q(5527, {	-- A Reliquary of Purity
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
@@ -14,7 +14,7 @@ _.Zones =
 				q(29298, {	-- A Smoke-Stained Locket
 					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
 				}),
-				q(5061,  {	-- Aquatic Form [A]
+				q(5061, {	-- Aquatic Form [A]
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
 					["classes"] = { DRUID },
@@ -23,7 +23,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16608)),	-- Aquarius Belt
 					},
 				}),
-				q(31,  {	-- Aquatic Form [H]
+				q(31, {	-- Aquatic Form [H]
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
 					["classes"] = { DRUID },
@@ -82,7 +82,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(5526,  {	-- Shards of the Felvine
+				q(5526, {	-- Shards of the Felvine
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
@@ -113,7 +113,7 @@ _.Zones =
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 				}),
-				q(6845,  {	-- Uncovering Past Secrets
+				q(6845, {	-- Uncovering Past Secrets
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11939 },	-- Umber
 					["g"] = {
@@ -121,7 +121,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18400)),	-- Ring of Living Stone
 					},
 				}),
-				q(1185,  {	-- Under the Chitin Was...
+				q(1185, {	-- Under the Chitin Was...
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11939 },	-- Umber
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
@@ -132,7 +132,7 @@ _.Zones =
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 				}),
-				q(1124,  {	-- Wasteland
+				q(1124, {	-- Wasteland
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,

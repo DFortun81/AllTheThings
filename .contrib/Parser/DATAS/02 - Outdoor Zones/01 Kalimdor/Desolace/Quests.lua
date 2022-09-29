@@ -21,7 +21,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
 				}),
-				q(1433,  {	-- Alliance Relations
+				q(1433, {	-- Alliance Relations
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
@@ -29,7 +29,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(1436,  {	-- Alliance Relations
+				q(1436, {	-- Alliance Relations
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["races"] = HORDE_ONLY,
@@ -61,7 +61,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14184,	-- My Time Has Passed
 				}),
-				q(1434,  {	-- Befouled by Satyr
+				q(1434, {	-- Befouled by Satyr
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
@@ -98,21 +98,21 @@ _.Zones =
 						i(55958),	-- Orca-Tooth Ring
 					},
 				}),
-				q(5821,  {	-- Bodyguard for Hire
+				q(5821, {	-- Bodyguard for Hire
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11625 },	-- Cork Gizelton
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15689)),	-- Trader's Ring
 					},
 				}),
-				q(5501,  {	-- Bone Collector
+				q(5501, {	-- Bone Collector
 					["provider"] = { "n", 11438 },	-- Bibbly F'utzbuckle
 					["coord"] = { 62.3, 38.9, DESOLACE },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15690)),	-- Kodobone Necklace NOTE: Reward has been removed from quest but quest is still available
 					},
 				}),
-				q(6027,  {	-- Book of the Ancients
+				q(6027, {	-- Book of the Ancients
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11863 },	-- Azore Aldamort
 					["g"] = {
@@ -146,7 +146,7 @@ _.Zones =
 					["coord"] = { 58.4, 49.8, DESOLACE },
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 				}),
-				q(1387,  {	-- Centaur Bounty (A)
+				q(1387, {	-- Centaur Bounty (A)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5752 },	-- Corporal Melkins
 					["races"] = ALLIANCE_ONLY,
@@ -154,7 +154,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6790)),	-- Ring of Calm
 					},
 				}),
-				q(1366,  {	-- Centaur Bounty (H)
+				q(1366, {	-- Centaur Bounty (H)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 					["races"] = HORDE_ONLY,
@@ -178,7 +178,7 @@ _.Zones =
 						i(131348),	-- Lob Stompers
 					},
 				}),
-				q(6161,  {	-- Claim Rackmore's Treasure!
+				q(6161, {	-- Claim Rackmore's Treasure!
 					["u"] = REMOVED_FROM_GAME,
 					["model"] = 200910,
 					["provider"] = { "o", 177787 },	-- Rackmore's Log (u=43)
@@ -187,7 +187,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(16788)),	-- Captain Rackmore's Wheel
 					},
 				}),
-				q(6142,  {	-- Clam Bait
+				q(6142, {	-- Clam Bait
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12031 },	-- Mai'Lahii
 					["races"] = HORDE_ONLY,
@@ -327,7 +327,7 @@ _.Zones =
 					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14195,	-- All Becoming Clearer
 				}),
-				q(5421,  {	-- Fish in a Bucket
+				q(5421, {	-- Fish in a Bucket
 					["provider"] = { "n", 11317 },	-- Jinar'Zillen
 					["coord"] = { 22.4, 73.1, DESOLACE },
 					["races"] = HORDE_ONLY,
@@ -352,12 +352,12 @@ _.Zones =
 						{ "o", 195433 },	-- Ancient Tablets (model 201275)
 					},
 				}),
-				q(1368,  {	-- Gelkis Alliance
+				q(1368, {	-- Gelkis Alliance
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5412 },	-- Gurda Wildmane
 					["races"] = HORDE_ONLY,
 				}),
-				q(6132,  {	-- Get Me Out of Here!
+				q(6132, {	-- Get Me Out of Here!
 					["provider"] = { "n", 12277 },	-- Melizza Brimbuzzle
 					["coord"] = { 33.9, 53.5, DESOLACE },
 				}),
@@ -368,7 +368,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14311,	-- Taking Part
 				}),
-				q(6134,  {	-- Ghost-o-plasm Round Up
+				q(6134, {	-- Ghost-o-plasm Round Up
 					["provider"] = { "n", 6019 },	-- Hornizz Brimbuzzle
 					["coord"] = { 47.8, 61.8, DESOLACE },
 					["g"] = {
@@ -376,7 +376,7 @@ _.Zones =
 						i(15865),	-- Anchorhold Buckler
 					},
 				}),
-				q(5943,  {	-- Gizelton Caravan
+				q(5943, {	-- Gizelton Caravan
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11626 },	-- Rigger Gizelton
 					["g"] = {
@@ -457,12 +457,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
 				}),
-				q(1365,  {	-- Khan Dez'hepah
+				q(1365, {	-- Khan Dez'hepah
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 				}),
-				q(1381,  {	-- Khan Hratha (Magram Clan Friendly Version)
+				q(1381, {	-- Khan Hratha (Magram Clan Friendly Version)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5398 },	-- Warug
 					["g"] = {
@@ -470,7 +470,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6788)),	-- Magram Hunter's Belt
 					},
 				}),
-				q(1380,  {	-- Khan Hratha (Gelkis Friendly Version)
+				q(1380, {	-- Khan Hratha (Gelkis Friendly Version)
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["g"] = {
@@ -478,11 +478,11 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6774)),	-- Uthek's Finger
 					},
 				}),
-				q(1374,  {	-- Khan Jehn
+				q(1374, {	-- Khan Jehn
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 				}),
-				q(5561,  {	-- Kodo Roundup
+				q(5561, {	-- Kodo Roundup
 					["provider"] = { "n", 11596 },	-- Smeed Scrabblescrew
 					["coord"] = { 60.8, 61.8, DESOLACE },
 					["g"] = {
@@ -554,11 +554,11 @@ _.Zones =
 					["coord"] = { 38.7, 26.9, DESOLACE },
 					["sourceQuest"] = 14301,	-- Return and Report
 				}),
-				q(1373,  {	-- Ongeku
+				q(1373, {	-- Ongeku
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 				}),
-				q(6143,  {	-- Other Fish to Fry
+				q(6143, {	-- Other Fish to Fry
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12340 },	-- Drulzegar Skraghook
 					["races"] = HORDE_ONLY,
@@ -587,7 +587,7 @@ _.Zones =
 						i(131352),	-- Securing Bindings
 					},
 				}),
-				q(5581,  {	-- Portals of the Legion (H)
+				q(5581, {	-- Portals of the Legion (H)
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 					["coord"] = { 56.1, 59.5, DESOLACE },
 					["races"] = HORDE_ONLY,
@@ -632,12 +632,12 @@ _.Zones =
 						i(55929),	-- Skull-Scorched Cloak
 					},
 				}),
-				q(1384,  {	-- Raid on the Kolkar
+				q(1384, {	-- Raid on the Kolkar
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1467,  {	-- Reagents for Reclaimers Inc.
+				q(1467, {	-- Reagents for Reclaimers Inc.
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
@@ -672,7 +672,7 @@ _.Zones =
 						i(156967),	-- Spinescale Hammer
 					},
 				}),
-				q(1440,  {	-- Return to Vahlarriel
+				q(1440, {	-- Return to Vahlarriel
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5644 },	-- Dalinda Malem
 					["races"] = ALLIANCE_ONLY,
@@ -732,7 +732,7 @@ _.Zones =
 					["coord"] = { 55.4, 55.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 				}),
-				q(1370,  {	-- Stealing Supplies
+				q(1370, {	-- Stealing Supplies
 					["provider"] = { "n", 5397 },	-- Uthek the Wise
 					["timeline"] = { "removed 4.0.3.10000" },
 					["g"] = {
@@ -754,7 +754,7 @@ _.Zones =
 						-- #endif
 					},
 				}),
-				q(1382,  {	-- Strange Alliance
+				q(1382, {	-- Strange Alliance
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
 					["races"] = ALLIANCE_ONLY,
@@ -795,7 +795,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 				}),
-				q(1435,  {	-- The Burning of Spirits
+				q(1435, {	-- The Burning of Spirits
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.6, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
@@ -836,7 +836,7 @@ _.Zones =
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
 					["sourceQuest"] = 1482,	-- The Corrupter
 				}),
-				q(1488,  {	-- The Corrupter
+				q(1488, {	-- The Corrupter
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
@@ -859,7 +859,7 @@ _.Zones =
 					["coord"] = { 38.8, 26.9, DESOLACE },
 					["sourceQuest"] = 14282,	-- Mystery Solved
 				}),
-				q(1457,  {	-- The Karnitol Shipwreck
+				q(1457, {	-- The Karnitol Shipwreck
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["races"] = ALLIANCE_ONLY,
@@ -868,7 +868,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6792)),	-- Sanguine Pauldrons
 					},
 				}),
-				q(1454,  {	-- The Karnitol Shipwreck
+				q(1454, {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["sourceQuests"] = {
@@ -877,7 +877,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1456,  {	-- The Karnitol Shipwreck
+				q(1456, {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
@@ -889,7 +889,7 @@ _.Zones =
 						i(131231),	-- Claimant Treads
 					},
 				}),
-				q(1455,  {	-- The Karnitol Shipwreck
+				q(1455, {	-- The Karnitol Shipwreck
 					["model"] = 196979,
 					["provider"] = { "o", 35251 },	-- Karnitol's Chest
 					["coord"] = { 36.1, 30.4, DESOLACE },

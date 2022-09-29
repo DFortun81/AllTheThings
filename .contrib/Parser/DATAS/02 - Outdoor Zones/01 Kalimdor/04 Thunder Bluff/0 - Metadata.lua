@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["isRaid"] = true,
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(5849,  {	-- Fish or Cut Bait: Thunder Bluff (H)
+				ach(5849, {	-- Fish or Cut Bait: Thunder Bluff (H)
 					["timeline"] = { "added 4.2.0" },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = FISHING,

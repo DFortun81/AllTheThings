@@ -7,12 +7,12 @@ _.Zones =
 	m(KALIMDOR, {
 		m(UNGORO_CRATER, {
 			n(QUESTS, {
-				q(3941,  {	-- A Gnome's Assistance
+				q(3941, {	-- A Gnome's Assistance
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3914,	-- Linken's Sword
 				}),
-				q(4491,  {	-- A Little Help From My Friends
+				q(4491, {	-- A Little Help From My Friends
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9999 },	-- Ringo
 					["g"] = {
@@ -50,7 +50,7 @@ _.Zones =
 						45051,	-- Reverse Blacksmithing
 					},
 				}),
-				q(3844,  {	-- A Wrecked Raft
+				q(3844, {	-- A Wrecked Raft
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 161505 },	-- A Wrecked Raft
 				}),
@@ -81,7 +81,7 @@ _.Zones =
 					["provider"] = { "n", 38237 },	-- Maximillian of Northshire
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 				}),
-				q(4501,  {	-- Beware of Pterrordax
+				q(4501, {	-- Beware of Pterrordax
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
 					["g"] = {
@@ -212,7 +212,7 @@ _.Zones =
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["coord"] = { 54.1, 62.5, UNGORO_CRATER },
 				}),
-				q(5150,  {	-- Dadanga is Hungry!
+				q(5150, {	-- Dadanga is Hungry!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9274 },	-- Dadanga
 					["repeatable"] = true,
@@ -317,17 +317,17 @@ _.Zones =
 					["coord"] = { 68.5, 36.5, UNGORO_CRATER },
 					["provider"] = { "o", 161526 },	-- Crate of Foodstuffs
 				}),
-				q(3845,  {	-- It's a Secret to Everybody
+				q(3845, {	-- It's a Secret to Everybody
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 161504 },	-- A Small Pack
 					["sourceQuest"] = 3844,	-- It's a Secret to Everybody
 				}),
-				q(3908,  {	-- It's a Secret to Everybody
+				q(3908, {	-- It's a Secret to Everybody
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3845,	-- It's a Secret to Everybody
 				}),
-				q(3962,  {	-- It's Dangerous to Go Alone
+				q(3962, {	-- It's Dangerous to Go Alone
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3961,	-- Linken's Adventure -- todo: Add this quest line. Maybe blizzard will bring it back!
@@ -342,12 +342,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9118 },	-- Larion
 				}),
-				q(3961,  {	-- Linken's Adventure
+				q(3961, {	-- Linken's Adventure
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4005,	-- Aquementas
 				}),
-				q(3942,  {	-- Linken's Memory
+				q(3942, {	-- Linken's Memory
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 3941,	-- A Gnome's Assistance
@@ -360,7 +360,7 @@ _.Zones =
 						24794,	-- Speak with Spraggle
 					},
 				}),
-				q(4492,  {	-- Lost!
+				q(4492, {	-- Lost!
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9997 },	-- Spraggle Frock
 				}),
@@ -425,7 +425,7 @@ _.Zones =
 					["sourceQuest"] = 45044,	-- Weapon No More
 					["requireSkill"] = BLACKSMITHING,
 				}),
-				q(3882,  {	-- Roll the Bones
+				q(3882, {	-- Roll the Bones
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["g"] = {
@@ -472,7 +472,7 @@ _.Zones =
 						i(53573),	-- Artificial Gorilla Chest
 					},
 				}),
-				q(4503,  {	-- Shizzle's Flyer
+				q(4503, {	-- Shizzle's Flyer
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9998 },	-- Shizzle
 					["g"] = {
@@ -512,7 +512,7 @@ _.Zones =
 					["coord"] = { 43.2, 41.0, UNGORO_CRATER },
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 				}),
-				q(4292,  {	-- The Bait for Lar'korwi
+				q(4292, {	-- The Bait for Lar'korwi
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
@@ -590,7 +590,7 @@ _.Zones =
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
 					["sourceQuest"] = 24730,	-- Roll the Bones
 				}),
-				q(4301,  {	-- The Mighty U'cha
+				q(4301, {	-- The Mighty U'cha
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
@@ -702,7 +702,7 @@ _.Zones =
 						24911,	-- Tropical Paradise Beckons
 					},
 				}),
-				q(3884,  {	-- Williden's Journal
+				q(3884, {	-- Williden's Journal
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 11116 },	-- A Mangled Journal
 				}),

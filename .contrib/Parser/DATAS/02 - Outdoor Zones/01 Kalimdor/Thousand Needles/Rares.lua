@@ -7,7 +7,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THOUSAND_NEEDLES, {
 			n(RARES, {
-				n(5933,  {	-- Achellios the Banished
+				n(5933, {	-- Achellios the Banished
 					["coords"] = {
 						{ 70.0, 49.2, THOUSAND_NEEDLES },
 						{ 72.0, 49.4, THOUSAND_NEEDLES },
@@ -21,7 +21,7 @@ _.Zones =
 				n(50892, {	-- Cyn
 					["coord"] = { 55.2, 40.6, THOUSAND_NEEDLES },
 				}),
-				n(4099,  {	-- Galak Marauder
+				n(4099, {	-- Galak Marauder
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1493)),	-- Heaver Marauder Scimitar
@@ -33,7 +33,7 @@ _.Zones =
 				n(14426, {	-- Harb Foulmountain
 					["coord"] = { 38.6, 26.8, THOUSAND_NEEDLES },
 				}),
-				n(5935,  {	-- Ironeye the Invincible
+				n(5935, {	-- Ironeye the Invincible
 					["coord"] = { 61.1, 67.7, THOUSAND_NEEDLES },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(8223)),	-- Blade of the Basilisk
@@ -42,7 +42,7 @@ _.Zones =
 				n(50741, {	-- Kaxx
 					["coord"] = { 37.6, 56.0, THOUSAND_NEEDLES },
 				}),
-				n(4132,  {	-- Krkk'kx
+				n(4132, {	-- Krkk'kx
 					["coord"] = { 70.0, 85.4, THOUSAND_NEEDLES },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(8224)),	-- Silithid Ripper
@@ -78,7 +78,7 @@ _.Zones =
 				n(51001, {	-- Venomclaw
 					["coord"] = { 81.8, 96.0, THOUSAND_NEEDLES },
 				}),
-				n(5937,  {	-- Vile Sting
+				n(5937, {	-- Vile Sting
 					["coord"] = { 6.0, 42.0, THOUSAND_NEEDLES },
 				}),
 			}),
