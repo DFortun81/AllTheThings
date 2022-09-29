@@ -8208,6 +8208,151 @@ local function LockedAsQuest(t)
 end
 app.LockedAsQuest = LockedAsQuest;
 
+local Search = app.SearchForObject;
+-- Traces backwards in the sequence fpr 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
+local function BackTraceForSelf(parents, questID, checkQuestID)
+	-- app.PrintDebug("Backtrace",questID)
+	local next = parents[questID];
+	while next do
+		-- app.PrintDebug("->",next)
+		if next == checkQuestID then return true; end
+		next = parents[next];
+	end
+end
+local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, depths, parents, refs, inFilters)
+	if not questID then return; end
+
+	-- Compare current depth to existing depth in 'depths' if the current parent of the questID is already in filters
+	local prevDepth = depths[questID];
+	local currentParent = parents[questID];
+	if prevDepth and prevDepth >= currentDepth and inFilters[currentParent] then
+		-- app.PrintDebug("Ignore Depth Quest",questID,"@",currentDepth,"Previous",prevDepth)
+		return;
+	end
+
+	-- Find the quest being added (either existing clone or new search)
+	local questRef = refs[questID];
+	if questRef then
+		-- Verify this quest isn't in the current parent chain
+		if BackTraceForSelf(parents, parentQuestID, questID) then
+			-- app.PrintDebug("Ignore Backtrace Quest",questID)
+			return;
+		-- else
+		-- 	app.PrintDebug("Not in Backtrace",questID)
+		end
+	else
+		questRef = Search("questID",questID);
+		if not questRef then
+			app.report("Failed to find Source Quest",questID)
+			return;
+		end
+
+		-- Save this questRef (depth doesn't change the ref so only clone it once)
+		questRef = CreateObject(questRef, true);
+
+		-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
+		if not questRef.collectible and questRef.trackable then
+			questRef.collectible = true;
+		end
+
+		-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
+		if app.IsInPartySync and questRef.collected then
+			questRef.OnUpdate = app.ShowIfReplayableQuest;
+		end
+
+		-- If the quest is provided by an Item, then show that Item directly under the quest so it can easily show tooltip/Source information if desired
+		if questRef.providers then
+			local id;
+			for _,p in ipairs(questRef.providers) do
+				if p[1] == "i" then
+					id = p[2];
+					-- print("Quest Item Provider",p[1], id);
+					local pRef = app.SearchForObject("itemID", id);
+					if pRef then
+						NestObject(questRef, pRef, true, 1);
+					else
+						pRef = app.CreateItem(id);
+						NestObject(questRef, pRef, nil, 1);
+					end
+					-- Make sure to always show the Quest starting item
+					pRef.OnUpdate = app.AlwaysShowUpdate;
+					-- Quest started by this Item should be represented using any sourceQuests on the Item
+					if pRef.sourceQuests then
+						if not questRef.sourceQuests then questRef.sourceQuests = {}; end
+						-- app.PrintDebug("Add Provider SQs to Quest")
+						app.ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
+					end
+				end
+			end
+		end
+
+		refs[questID] = questRef;
+	end
+
+	-- Save the new depth that this questID will be placed if it has a parent
+	depths[questID] = currentDepth;
+	-- Save the parentQuestID for this questID, but only if this quest has no parent yet, or specifically meets character filters for a different parent
+	if not currentParent then
+		parents[questID] = parentQuestID;
+	elseif currentParent ~= parentQuestID and not inFilters[currentParent] then
+		-- app.PrintDebug("Check Current Parent Filter",questID,"=>",currentParent)
+		if app.CurrentCharacterFilters(refs[parentQuestID]) then
+			-- app.PrintDebug("New Filter Parent",questID,"=>",parentQuestID)
+			parents[questID] = parentQuestID;
+			inFilters[parentQuestID] = true;
+		-- else
+		-- 	app.PrintDebug("New Parent, Filtered",questID,"=>",parentQuestID)
+		end
+	end
+
+	-- Traverse recursive quests via 'sourceQuests'
+	local sqs = questRef.sourceQuests;
+	if not sqs then return; end
+
+	-- Mark the new depth
+	local nextDepth = currentDepth + 1;
+	for _,sq in ipairs(sqs) do
+		-- Recurse against sourceQuests of sq
+		MapSourceQuestsRecursive(questID, sq, nextDepth, depths, parents, refs, inFilters);
+	end
+end
+-- Will find, clone, and nest into 'root' all known source quests starting from the provided 'root', listing each quest once at the maximum depth that it has been encountered
+app.NestSourceQuestsV2 = function(questChainRoot, questID)
+	if not questID then
+		if not questChainRoot.sourceQuests then return; end
+		questID = 0;
+	end
+
+	-- Treat the starting questID as an extremely high depth so that it will not be replaced if it is encountered again due to a looping quest chain
+	local depths = {[questID] = 9999};
+	local parents = {};
+	local refs = {[questID] = questChainRoot};
+	-- represents quests that had to be confirmed for current character filters already
+	local inFilters = {};
+
+	-- Map out the relative positions of the entire quest sequence based on depth from the root quest
+	-- Find the quest being added
+	local questRef = questID > 0 and Search("questID",questID) or app.EmptyTable;
+	-- Traverse recursive quests via 'sourceQuests'
+	local sqs = questRef.sourceQuests or questChainRoot.sourceQuests;
+	if not sqs then return; end
+
+	for _,sq in ipairs(sqs) do
+		-- Recurse against sourceQuests of sq
+		MapSourceQuestsRecursive(questID, sq, 1, depths, parents, refs, inFilters);
+	end
+
+	-- app.PrintDebug("depths")
+	-- app.PrintTable(depths)
+	-- app.PrintDebug("parents")
+	-- app.PrintTable(parents)
+
+	-- Perform a pass along the parents table to move clone references into the appropriate parent quest references
+	for qID,pID in pairs(parents) do
+		NestObject(refs[pID], refs[qID]);
+	end
+end
+
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -15380,11 +15525,12 @@ function app:CreateMiniListForGroup(group)
 
 			-- Show Quest Prereqs
 			if root.sourceQuests then
-				local gTop;
-				if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+				-- local gTop;
+				local useNested = app.Settings:GetTooltipSetting("QuestChain:Nested");
+				if useNested then
 					-- clean out the sub-groups of the root since it will be listed at the top of the popout
-					root.g = nil;
-					gTop = app.NestSourceQuests(root).g or {};
+					-- root.g = nil;
+					-- gTop = app.NestSourceQuests(root).g or {};
 				else
 					local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 					local addedQuests = {};
@@ -15514,15 +15660,23 @@ function app:CreateMiniListForGroup(group)
 				end
 
 				local questChainHeader = {
-					["text"] = gTop and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
+					["text"] = useNested and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
 					["description"] = L["QUEST_CHAIN_REQ_DESC"],
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-					["g"] = gTop or g,
-					["hideText"] = true,
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
+					-- copy any sourceQuests into the header incase the root is not actually a quest
+					["sourceQuests"] = root.sourceQuests,
 				};
 				NestObject(group, questChainHeader);
+				if useNested then
+					app.NestSourceQuestsV2(questChainHeader, group.questID);
+					-- Sort by the totals of the quest chain on the next game frame
+					Callback(app.Sort, questChainHeader.g, app.SortDefaults.Total, true);
+				else
+					questChainHeader.g = g;
+				end
+				questChainHeader.sourceQuests = nil;
 			end
 		end
 
@@ -15558,6 +15712,9 @@ function app:CreateMiniListForGroup(group)
 			-- Populate the Quest Rewards
 			-- think this causes quest popouts to somehow break...
 			-- app.TryPopulateQuestRewards(group)
+
+			-- Then trigger a soft update of the window afterwards
+			DelayedCallback(popout.Update, 0.25, popout);
 		end
 	end
 	popout:Toggle(true);

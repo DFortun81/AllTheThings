@@ -107,7 +107,6 @@ root("ExpansionFeatures", tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added
 					cl(WARRIOR, ARMS, {
 						q(41105, {	-- The Sword of Kings
 							["sourceQuests"] = { 40579 },	-- Weapons of Legend
-							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
