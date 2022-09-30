@@ -419,13 +419,12 @@ root("Instances", tier(CLASSIC_TIER, {
 				i(11382),	-- Blood of the Mountain
 			}),
 			prof(SKINNING, {
-				["crs"] = {
-					11673,	-- Ancient Core Hound
-					11982,	-- Magmadar
-				},
-				["groups"] = {
-					i(17012),	-- Core Leather
-				},
+				i(17012, {	-- Core Leather
+					["crs"] = {
+						11673,	-- Ancient Core Hound
+						11982,	-- Magmadar
+					},
+				}),
 			}),
 			e(1519, {	-- Lucifron
 				["creatureID"] = 12118,

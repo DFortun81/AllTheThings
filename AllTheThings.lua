@@ -13671,6 +13671,19 @@ SpellNameToSpellID = setmetatable({}, {
 	end
 });
 app.SpellNameToSpellID = SpellNameToSpellID;
+-- Represents a small lookup of a select set of Profession/Skill-related icons
+local SkillIcons = setmetatable({
+	[2720] = 2620862,	-- Junkyard Tinkering
+	[2819] = 3747898,	-- Protoform Synthesis
+}, { __index = function(t, key)
+	if not key then return; end
+	local skillSpellID = app.SkillIDToSpellID[key];
+	if skillSpellID then
+		local _, _, icon = GetSpellInfo(skillSpellID);
+		return icon;
+	end
+end
+});
 
 local cache = app.CreateCache("_cachekey");
 local function CacheInfo(t, field)
@@ -13685,7 +13698,8 @@ local function CacheInfo(t, field)
 	else
 		local name, _, icon = GetSpellInfo(id);
 		_t.name = name;
-		_t.icon = icon or 136243;	-- Trade_engineering
+		-- typically, the profession's spell icon will be a better representation of the spell if the spell is tied to a skill
+		_t.icon = SkillIcons[t.skillID] or icon;
 		local link = GetSpellLink(id);
 		_t.link = link;
 	end
@@ -13693,7 +13707,8 @@ local function CacheInfo(t, field)
 	local retries = (_t.retries or 0) + 1;
 	if retries > app.MaximumItemInfoRetries then
 		_t.name = t.itemID and "Item #"..t.itemID or "Spell #"..t.spellID;
-		_t.icon = 136243;
+		-- fallback to skill icon if possible
+		_t.icon = SkillIcons[t.skillID] or 136243;	-- Trade_engineering
 		_t.link = _t.name;
 	end
 	_t.retries = retries;
