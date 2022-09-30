@@ -2225,6 +2225,10 @@ root("Zones", {
 						["timeline"] = { "added 3.3.0" },
 					}),
 					i(41124, {	-- Plans: Reinforced Cobalt Shoulders (RECIPE!)
+						["coords"] = {
+							{ 86.4, 40.4, DRAGONBLIGHT },
+							{ 73.6, 25.0, DRAGONBLIGHT },
+						},
 						["crs"] = { 27333 },	-- Onslaught Mason
 					}),
 					i(120137, {	-- Tome of Polymorph: Polar Bear Cub

@@ -1140,9 +1140,23 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(48116, {	-- Gundrak Hatchling
+						["coords"] = {
+							{ 72.6, 27.8, ZULDRAK },
+							{ 78.2, 16.6, ZULDRAK },
+							{ 87.0, 26.6, ZULDRAK },
+							{ 81.6, 31.6, ZULDRAK },
+							{ 75.2, 38.6, ZULDRAK },
+						},
 						["cr"] = 29334,	-- Gundrak Raptor
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
+						["coords"] = {
+							{ 78.8, 20.2, ZULDRAK },
+							{ 81.6, 24.8, ZULDRAK },
+							{ 78.6, 33.0, ZULDRAK },
+							{ 78.0, 27.0, ZULDRAK },
+							{ 73.6, 23.8, ZULDRAK },
+						},
 						["cr"] = 29235,	-- Gundrak Savage
 					}),
 					i(38660, {	-- Unliving Choker

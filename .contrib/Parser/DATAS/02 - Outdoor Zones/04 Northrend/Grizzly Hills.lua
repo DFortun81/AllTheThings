@@ -1700,6 +1700,7 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(41123, {	-- Plans: Reinforced Cobalt Helm (RECIPE!)
+						["coord"] = { 68.4, 16.0, GRIZZLY_HILLS },
 						["cr"] = 26270,	-- Iron Rune-Shaper
 					}),
 					i(46108, {	-- Technique: Rituals of the New Moon

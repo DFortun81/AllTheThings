@@ -1063,6 +1063,7 @@ root("Zones", {
 				}),
 				n(ZONE_DROPS, {
 					i(41122, {	-- Plans: Reinforced Cobalt Chestpiece (RECIPE!)
+						["coord"] = { 34.1, 46.8, SHOLAZAR_BASIN },
 						["cr"] = 28123,	-- Venture Co. Excavator
 					}),
 				}),
