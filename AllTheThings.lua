@@ -3478,16 +3478,17 @@ local ResolveFunctions = {
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
+				criteriaObject = app.CreateAchievementCriteria(id);
 				if criteriaType == 27 then
 					cache = app.SearchForField("questID", assetID);
+				elseif criteriaType == 36 or criteriaType == 42 then	-- Items
+					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
-					or criteriaType == 43	-- Exploration
-				then
+					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
 					print("Unhandled Criteria Type", criteriaType, assetID);
 				end
-				criteriaObject = app.CreateAchievementCriteria(id);
 				if cache then
 					local uniques = {};
 					MergeObjects(uniques, cache);
@@ -3502,6 +3503,7 @@ local ResolveFunctions = {
 				criteriaObject.achievementID = achievementID;
 				criteriaObject.parent = o;
 				tinsert(searchResults, criteriaObject);
+				app.CacheFields(criteriaObject);
 			end
 		end
 	end,
