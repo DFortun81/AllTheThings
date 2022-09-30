@@ -469,7 +469,6 @@ root("Zones", {
 					}),
 					q(29836, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
-						["altQuests"] = { 29833 },	-- Unfinished Business
 						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["timeline"] = { "added 4.3.0.14732" },
 					}),
@@ -1001,10 +1000,15 @@ root("Zones", {
 						["qg"] = 28062,	-- Hexer Ubungo
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					}),
+					q(13097, {	-- Unfinished Business
+						["qg"] = 28401,	-- Har'koa
+						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
+						["coord"] = { 60.2, 57.7, ZULDRAK },
+						["timeline"] = { "removed 4.3.0.14732" },
+					}),
 					q(29833, {	-- Unfinished Business
 						["qg"] = 28401,	-- Har'koa
-						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb -- TODO: verify
-						["altQuests"] = { 29836 },	-- Just Checkin'
+						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["timeline"] = { "added 4.3.0.14732" },
 					}),

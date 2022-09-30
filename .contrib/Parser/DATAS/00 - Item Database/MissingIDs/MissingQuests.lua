@@ -844,7 +844,6 @@ q(12835),	-- All Grown Up
 q(12837),	-- Tore's Got the Goods
 q(12881),	-- The Brothers Bronzebeard
 q(12923),	-- UNUSED
-q(13097),	-- Unfinished Business
 q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
 q(13173),	-- Amidst the Confusion
 q(13205),	-- Disarmament
