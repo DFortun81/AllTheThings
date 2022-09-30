@@ -3868,7 +3868,6 @@ root("Zones", {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					-- TODO: could do similar coin Item treatment here eventually as with 'The Wish Remover'
 					ach(2094, { ["sym"] = {{ "achievement_criteria" }}}),	-- A Penny For Your Thoughts
 					ach(2095, { ["sym"] = {{ "achievement_criteria" }}}),	-- Silver in the City
 					ach(1957, { ["sym"] = {{ "achievement_criteria" }}}),	-- There's Gold In That There Fountain
