@@ -1483,7 +1483,7 @@ i(192557, 334482);	-- Restoration Deathwalker
 -- PATCH 9.2.7 --
 -----------------
  --i(0, 386452);		-- Frostbrood Proto-Wyrm
- 
+
 -- NYI --
 --i(0, 367190);	-- [DND] Test Mount JZB model:88719
 
