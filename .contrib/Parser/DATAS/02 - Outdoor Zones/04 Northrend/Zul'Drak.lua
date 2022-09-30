@@ -468,9 +468,10 @@ root("Zones", {
 						["timeline"] = { "added 3.3.0.10772", "removed 4.3.0.14732" },
 					}),
 					q(29836, {	-- Just Checkin'
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["altQuests"] = { 29833 },	-- Unfinished Business
+						["coord"] = { 59.9, 57.9, ZULDRAK },
+						["timeline"] = { "added 4.3.0.14732" },
 					}),
 					q(12630, {	-- Kickin' Nass and Takin' Manes
 						["coord"] = { 14.0, 73.8, ZULDRAK },
@@ -1001,10 +1002,11 @@ root("Zones", {
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
 					}),
 					q(29833, {	-- Unfinished Business
-						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb -- TODO: verify
 						["altQuests"] = { 29836 },	-- Just Checkin'
+						["coord"] = { 60.2, 57.7, ZULDRAK },
+						["timeline"] = { "added 4.3.0.14732" },
 					}),
 					q(12857, {	-- Wanted: Ragemane's Flipper
 						["coord"] = { 32.2, 75.6, ZULDRAK },
