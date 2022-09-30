@@ -2088,10 +2088,10 @@ root("Zones", {
 								["cost"] = 30000000,	-- 3,000g
 								["timeline"] = { "added 7.0.3.22248" },
 							}),
-							i(51809, {	-- Portable Hole
+							applyclassicphase(WRATH_PHASE_FOUR, i(51809, {	-- Portable Hole
 								["cost"] = 30000000,	-- 3,000g
 								["timeline"] = { "added 3.3.0.10772" },
-							}),
+							})),
 							i(38091, {	-- Gold Eternium Band
 								["cost"] = 30000000,	-- 3,000g
 							}),
