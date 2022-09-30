@@ -14699,7 +14699,7 @@ local function SetThingVisibility(parent, group)
 	end
 end
 local UpdateGroups;
-local function UpdateGroup(parent, group, window)
+local function UpdateGroup(parent, group)
 	-- if group.key == "runeforgePowerID" and group[group.key] == 134 then app.DEBUG_PRINT = 134; end
 	-- if not app.DEBUG_PRINT and shouldLog then
 	-- 	app.DEBUG_PRINT = shouldLog;
@@ -14765,11 +14765,11 @@ local function UpdateGroup(parent, group, window)
 			if ItemBindFilter ~= NoFilter and ItemBindFilter(group) then
 				app.ItemBindFilter = NoFilter;
 				-- Update the subgroups recursively...
-				UpdateGroups(group, g, window);
+				UpdateGroups(group, g);
 				-- reapply the previous BoE filter
 				app.ItemBindFilter = ItemBindFilter;
 			else
-				UpdateGroups(group, g, window);
+				UpdateGroups(group, g);
 			end
 
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
@@ -14796,19 +14796,19 @@ local function UpdateGroup(parent, group, window)
 	-- if app.DEBUG_PRINT == 134 then app.DEBUG_PRINT = nil; end
 end
 app.UpdateGroup = UpdateGroup;
-UpdateGroups = function(parent, g, window)
+UpdateGroups = function(parent, g)
 	if g then
 		for _,group in ipairs(g) do
 			if group.OnUpdate then
 				if not group:OnUpdate() then
-					UpdateGroup(parent, group, window);
+					UpdateGroup(parent, group);
 				elseif group.visible then
 					group.total = nil;
 					group.progress = nil;
-					UpdateGroups(group, group.g, window);
+					UpdateGroups(group, group.g);
 				end
 			else
-				UpdateGroup(parent, group, window);
+				UpdateGroup(parent, group);
 			end
 		end
 	end
@@ -14833,17 +14833,17 @@ local function AdjustParentProgress(group, progChange, totalChange)
 	end
 end
 -- For directly applying the full Update operation for the top-level data group within a window
-local function TopLevelUpdateGroup(group, window)
+local function TopLevelUpdateGroup(group)
 	group.total = 0;
 	group.progress = 0;
 	local ItemBindFilter = app.ItemBindFilter;
 	if ItemBindFilter ~= app.NoFilter and ItemBindFilter(group) then
 		app.ItemBindFilter = app.NoFilter;
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 		-- reapply the previous BoE filter
 		app.ItemBindFilter = ItemBindFilter;
 	else
-		UpdateGroups(group, group.g, window);
+		UpdateGroups(group, group.g);
 	end
 	if group.collectible then
 		group.total = group.total + 1;
