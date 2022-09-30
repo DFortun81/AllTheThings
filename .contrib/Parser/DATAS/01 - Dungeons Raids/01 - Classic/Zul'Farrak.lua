@@ -100,7 +100,7 @@ root("Instances", tier(CLASSIC_TIER, {
 							-- #endif
 						}),
 						i(9653, {	-- Speedy Racer Googles
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 1.9.3" },
 						}),
 					},
 				}),
@@ -424,5 +424,3 @@ root("HiddenQuestTriggers", {
 	}),
 });
 -- #endif
-root("NeverImplemented", bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-}));
