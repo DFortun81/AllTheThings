@@ -12075,8 +12075,8 @@ app.BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
 -- copy base Item fields
 -- TODO: heirlooms need to cache item information as well
 local fields = RawCloneData(itemFields);
-fields.b = function(t) return 2; end
-fields.filterID = function(t) return 109; end
+-- The fallback filter is the original Item's filter if not collecting the Heirloom itself
+fields.f = function(t) return not app.CollectibleHeirlooms and t.itemFilter; end
 fields.icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end
 fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end
 fields.collectibleAsCost = app.ReturnFalse;
@@ -12105,7 +12105,8 @@ fields.saved = function(t)
 		return t.collected == 1;
 	end
 fields.isWeapon = function(t)
-		if t.f and contains(isWeapon, t.f) then
+		local f = t.itemFilter or t.f;
+		if f and contains(isWeapon, f) then
 			rawset(t, "isWeapon", true);
 			return true;
 		end
@@ -12115,7 +12116,7 @@ fields.isWeapon = function(t)
 fields.g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u }, app.BaseHeirloomUnlocked) });
 			return rawget(t, "g");
 		end
 	end
@@ -12123,6 +12124,14 @@ fields.g = function(t)
 app.BaseHeirloom = app.BaseObjectFields(fields, "BaseHeirloom");
 app.CreateHeirloom = function(id, t)
 	tinsert(heirloomIDs, id);
+	if t then
+		-- TODO: perhaps make Parser store the information properly in the first place...
+		-- save the original filter of the Item for tracking if NOT collecting heirlooms
+		t.itemFilter = t.f;
+		t.f = nil;
+		-- Heirlooms are always BoA
+		t.b = 2;
+	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
 
@@ -14163,8 +14172,9 @@ local function FilterItemClass_RequireClasses(item)
 	return not item.nmc;
 end
 local function FilterItemClass_RequireItemFilter(item)
-	if item.f then
-		return app.Settings:GetFilter(item.f);	-- Filter applied via Settings (character-equippable or manually set)
+	local f = item.f;
+	if f then
+		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -14174,18 +14184,20 @@ local function FilterItemClass_RequireRaces(item)
 end
 local function FilterItemClass_RequireRacesCurrentFaction(item)
 	if item.nmr then
-		if item.r then
-			if item.r == app.FactionID then
+		local r = item.r;
+		if r then
+			if r == app.FactionID then
 				return true;
 			else
 				return false;
 			end
 		end
-		if item.races then
+		local races = item.races;
+		if races then
 			if app.FactionID == Enum.FlightPathFaction.Horde then
-				return containsAny(item.races, HORDE_ONLY);
+				return containsAny(races, HORDE_ONLY);
 			else
-				return containsAny(item.races, ALLIANCE_ONLY);
+				return containsAny(races, ALLIANCE_ONLY);
 			end
 		else
 			return false;
