@@ -158,6 +158,21 @@ root("Zones", {
 						},
 						-- #endif
 					}),
+					ach(1007, {	-- The Wyrmrest Accord
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1091); end]],
+						-- #endif
+					}),
+					ach(949, {	-- Tuskarrmageddon
+						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
+						-- #if ANYCLASSIC
+						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
+						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
+						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1073); end]],
+						-- #endif
+					}),
 					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
 							12499,	-- Return to Angrathar (A)
@@ -539,9 +554,7 @@ root("Zones", {
 						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
 						["isDaily"] = true,
 						["groups"] = {
-							ach(1277, {	-- Rapid Defense
-								["sourceQuest"] = 12372,	-- Defending Wyrmrest Temple
-							}),
+							ach(1277),	-- Rapid Defense
 						},
 					}),
 					q(12265, {	-- Defiling the Defilers

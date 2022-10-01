@@ -10615,7 +10615,7 @@ app.GetFactionStandingThresholdFromString = function(replevel)
 	end
 end
 app.IsFactionExclusive = function(factionID)
-	return factionID == 934 or factionID == 932;
+	return factionID == 934 or factionID == 932 or factionID == 1104 or factionID == 1105;
 end
 local cache = app.CreateCache("factionID");
 local function CacheInfo(t, field)

@@ -744,10 +744,12 @@ root("Zones", m(EASTERN_KINGDOMS, {
 				}),
 				classicAch(946, {	-- The Argent Dawn
 					-- #if BEFORE 3.0.1
+					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
+					-- #endif
+					-- #if ANYCLASSIC
 					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 529); end]],
-					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
 					-- #endif
 					["maps"] = { WESTERN_PLAGUELANDS },
 				}),
