@@ -3887,7 +3887,7 @@ root("Zones", {
 								["coord"] = { 56.7, 45.5, NORTHREND_DALARAN },
 							}),
 							crit(7242, {	-- The Schools of Arcane Magic - Necromancy
-								["description"] = "The Schools of Arcane Magic - Necromancy: Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
+								["description"] = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
 								["coord"] = { 46.8, 39.1, NORTHREND_DALARAN },
 							}),
 							crit(7243, {	-- The Schools of Arcane Magic - Transmutation
@@ -6641,7 +6641,11 @@ root("Zones", {
 					n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
 						["coord"] = { 69.73, 45.45, NORTHREND_DALARAN },
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
+							i(49177, {	-- Tome of Cold Weather Flight
+								["recipeID"] = 54197,	-- Cold Weather Flight
+								["timeline"] = { "removed 4.0.1" },
+								["cost"] = {{ "g", 10000000 }},	-- 1000g
+							}),
 						},
 					}),
 					n(35498, {	-- Horace Hunderland <Plate Armor Merchant>
