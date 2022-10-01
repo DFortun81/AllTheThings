@@ -405,7 +405,10 @@ def append_mount_id(mounts: list[str], mount_line: str) -> None:
 
 
 def append_pet_id(pets: list[str], pet_line: str) -> None:
-    pet_line = pet_line.split(";")[0].split(",")[1]
+    try:
+        pet_line = pet_line.split(";")[0].split(",")[1]
+    except IndexError:
+        pet_line = ""
     pet_line = re.sub("\\D", "", pet_line)
     pets.append(pet_line + "\n")
 
