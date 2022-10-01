@@ -1351,6 +1351,16 @@ app.L = {
 		[-1009] = app.asset("Difficulty_Mythic"),
 		[-1010] = "Interface\\Worldmap\\GlowSkull_64Purple",
 		[-1011] = "Interface\\Worldmap\\GlowSkull_64Red",
+	-- Dragonflight
+		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",											-- Dragon Customization
+		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",													-- Primal Storms
+		[-1110] = "Interface\\Icons\\ui_majorfaction_expedition",											-- Dragonscale Expedition
+		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",														-- Climbing
+		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",													-- Maruuk Centaur
+		[-1121] = "Interface\\Icons\\ability_racial_returntocamp",															-- Aylaag
+		[-1122] = "Interface\\Icons\\inv_scroll_11",													-- Grand Hunts
+		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",												-- Iskaara Tuskarr
+		[-1140] = "Interface\\Icons\\ui_majorfaction_valdrakken",												-- Valdrakken Accord
 	-- Warrior order hall lore items
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1908,12 +1918,12 @@ app.L = {
 		[-1099] = TRACKER_HEADER_CAMPAIGN_QUESTS,									-- Campaign
 	-- Dragonflight
 		[-1100] = "Dragon Customization",											-- Dragon Customization
-		[-1101] = "Primal Storms",
+		[-1101] = "Primal Storms",													-- Primal Storms
 		[-1110] = "Dragonscale Expedition",											-- Dragonscale Expedition
-		[-1111] = "Climbing",
+		[-1111] = "Climbing",														-- Climbing
  		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1121] = "Aylaag",															-- Aylaag
-		[-1122] = "Grand Hunts",
+		[-1122] = "Grand Hunts",													-- Grand Hunts
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1140] = "Valdrakken Accord",												-- Valdrakken Accord
 	-- Warrior order hall lore items
