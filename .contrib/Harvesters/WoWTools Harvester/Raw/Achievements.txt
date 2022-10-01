@@ -435,7 +435,7 @@
 454,Scout
 455,Kel'Thuzad Slayer <PH> <NYI>
 456,<Chamber of Aspects Boss> Slayer <PH> <NYI>
-457,Server First to 80 <PH> <NYI> 
+457,Server First to 80 <PH> <NYI>
 458,Server First Rogue to 80 <PH> <NYI>
 459,Server First Warrior to 80 <PH> <NYI>
 460,Server First Mage to 80 <PH> <NYI>
@@ -458,7 +458,7 @@
 480,Azjol-Nerub
 481,Ahn'kahet: The Old Kingdom <NYI>
 482,Drak'Tharon Keep
-483,The Violet Hold <NYI> 
+483,The Violet Hold <NYI>
 484,Gundrak <NYI>
 485,Halls of Stone
 486,Halls of Lightning
@@ -469,7 +469,7 @@
 491,Heroic Azjol-Nerub  <NYI>
 492,Heroic Ahn'kahet: The Old Kingdom  <NYI>
 493,Heroic Drak'Tharon Keep <NYI>
-494,Heroic The Violet Hold <NYI> 
+494,Heroic The Violet Hold <NYI>
 495,Heroic Gundrak <NYI>
 496,Heroic Halls of Stone <NYI>
 497,Heroic Halls of Lightning <NYI>
@@ -524,7 +524,7 @@
 576,Naxxramas Defeated (10 person) <PH>
 577,Naxxramas Defeated (25 person) <PH> <NYI>
 578,Naxxramas: Kel'Thuzad Hardcore - 8 people (10 person) <PH> <NYI>
-579,Naxxramas: Kel'Thuzad Hardcore - 20 people (25 person) <PH> <NYI> 
+579,Naxxramas: Kel'Thuzad Hardcore - 20 people (25 person) <PH> <NYI>
 582,Alterac Valley All-Star
 583,Arathi Basin All-Star
 584,Arathi Basin Assassin
@@ -1375,7 +1375,7 @@
 203,Not In My House
 207,Save The Day
 271,Burning Hot Pole Dance
-272,Torch Juggler 
+272,Torch Juggler
 279,Simply Abominable
 281,First Aid skill
 283,The Masquerade
@@ -2919,7 +2919,7 @@
 5057,Blackwing Lair Guild Run
 5058,Temple of Ahn'Qiraj Guild Run
 5059,Ruins of Ahn'Qiraj Guild Run
-5060,Heroic: Blackrock Caverns 
+5060,Heroic: Blackrock Caverns
 5061,Heroic: Throne of the Tides
 5062,Heroic: Grim Batol
 5063,Heroic: The Stonecore
@@ -9973,3 +9973,101 @@
 15989,Dragon Glyphs: The Overflowing Spring
 15990,Dragon Glyphs: Life-Binder Observatory
 15991,Dragon Glyphs: Crumbling Life Archway
+10.0.0.44795
+15878,Dragon Isles Leatherworking 75 (DNT)
+15903,Dragon Racing - Thaldraszus - Garden Gallivant - Bronze
+15918,Ohn'ahran Plains - Bronze
+15919,Ohn'ahran Plains - Silver
+15920,Ohn'ahran Plains - Gold
+15930,Ohn'ahran Plains - Advanced - Bronze
+15931,Ohn'ahran Plains - Advanced - Silver
+15932,Ohn'ahran Plains - Advanced - Gold
+15992,<DNT> Dragonscale Expedition Rank 01
+16022,<DNT> Dragonscale Expedition Rank 02
+16023,<DNT> Dragonscale Expedition Rank 03
+16024,<DNT> Dragonscale Expedition Rank 04
+16025,<DNT> Dragonscale Expedition Rank 05
+16026,<DNT> Dragonscale Expedition Rank 06
+16027,<DNT> Dragonscale Expedition Rank 07
+16028,<DNT> Dragonscale Expedition Rank 08
+16029,<DNT> Dragonscale Expedition Rank 09
+16030,<DNT> Dragonscale Expedition Rank 10
+16031,<DNT> Dragonscale Expedition Rank 11
+16032,<DNT> Dragonscale Expedition Rank 12
+16033,<DNT> Dragonscale Expedition Rank 13
+16034,<DNT> Dragonscale Expedition Rank 14
+16035,<DNT> Dragonscale Expedition Rank 15
+16036,<DNT> Dragonscale Expedition Rank 16
+16037,<DNT> Dragonscale Expedition Rank 17
+16038,<DNT> Dragonscale Expedition Rank 18
+16039,<DNT> Dragonscale Expedition Rank 19
+16040,<DNT> Dragonscale Expedition Rank 20
+16041,<DNT> Dragonscale Expedition Rank 21
+16042,<DNT> Dragonscale Expedition Rank 22
+16043,<DNT> Dragonscale Expedition Rank 23
+16044,<DNT> Dragonscale Expedition Rank 24
+16045,<DNT> Dragonscale Expedition Rank 25
+16046,<DNT> Dragonscale Expedition Rank 26
+16047,<DNT> Dragonscale Expedition Rank 27
+16048,<DNT> Dragonscale Expedition Rank 28
+16049,<DNT> Dragonscale Expedition Rank 29
+16050,<DNT> Dragonscale Expedition Rank 30
+16051,Dragon Glyphs: Dragonheart Outpost
+16052,Dragon Glyphs: Scalecracker Peak
+16053,Dragon Glyphs: Obsidian Throne
+16054,Dragon Glyphs: Ohn'ahra's Roost
+16055,Dragon Glyphs: Nokhudon Hold
+16056,Dragon Glyphs: Emerald Gardens
+16057,Dragon Glyphs: The Eternal Kurgans
+16058,Dragon Glyphs: Szar Skeleth
+16059,Dragon Glyphs: Mirror of the Sky
+16060,Dragon Glyphs: Ohn'iri Springs
+16061,Dragon Glyphs: Dragonsprings Summit
+16062,Dragon Glyphs: Rusza'thar Reach
+16063,Dragon Glyphs: Windsong Rise
+16064,Dragon Glyphs: Cobalt Assembly
+16065,Dragon Glyphs: Azure Archive
+16066,Dragon Glyphs: Ruins of Karnthar
+16067,Dragon Glyphs: Lost Ruins
+16068,Dragon Glyphs: Brackenhide Hollow
+16069,Dragon Glyphs: Drake Eye's Pond
+16070,Dragon Glyphs: Imbu
+16071,Dragon Glyphs: Zelthrak Outpost
+16072,Dragon Glyphs: Kalthraz Fortress
+16073,Dragon Glyphs: Vakthros Summit
+16074,Decatriarch Wratheye kills (Normal Brackenhide Hollow)
+16075,Decatriarch Wratheye kills (Heroic Brackenhide Hollow)
+16076,Decatriarch Wratheye kills (Mythic Brackenhide Hollow)
+16077,Primal Tsunami kills (Normal Halls of Infusion)
+16078,Primal Tsunami kills (Heroic Halls of Infusion)
+16079,Primal Tsunami kills (Mythic Halls of Infusion)
+16080,Warlord Sargha kills (Normal Neltharus)
+16081,Warlord Sargha kills (Heroic Neltharus)
+16082,Warlord Sargha kills (Mythic Neltharus)
+16083,Kyrakka and Erkhart Stormvein kills (Normal Ruby Life Pools)
+16084,Kyrakka and Erkhart Stormvein kills (Heroic Ruby Life Pools)
+16085,Kyrakka and Erkhart Stormvein kills (Mythic Ruby Life Pools)
+16086,Headmaster Doragosa kills (Normal Taz'algeth Academy)
+16087,Headmaster Doragosa kills (Heroic Taz'algeth Academy)
+16088,Headmaster Doragosa kills (Mythic Taz'algeth Academy)
+16089,Umbrelskel kills (Normal The Azure Vault)
+16090,Umbrelskel kills (Heroic The Azure Vault)
+16091,Umbrelskel kills (Mythic The Azure Vault)
+16092,Balakar Khan kills (Normal The Nokhud Offensive)
+16093,Balakar Khan kills (Heroic The Nokhud Offensive)
+16094,Balakar Khan kills (Mythic The Nokhud Offensive)
+16095,Chrono-Lord Deios kills (Normal Uldaman: Legacy of Tyr)
+16096,Chrono-Lord Deios kills (Heroic Uldaman: Legacy of Tyr)
+16097,Chrono-Lord Deios kills (Mythic Uldaman: Legacy of Tyr)
+16098,Dragon Glyphs: Temporal Conflux
+16099,Dragon Glyphs: Stormshroud Peak
+16100,Dragon Glyphs: South Hold Gate
+16101,Dragon Glyphs: Valdrakken
+16102,Dragon Glyphs: Algeth'era
+16103,Dragon Glyphs: Tyrhold
+16104,Dragon Glyphs: Taz'algeth Academy
+16105,Dragon Glyphs: Veiled Ossuary
+16106,Dragon Glyphs: Vault of the Incarnates
+16107,Dragon Glyphs: Thaldrazsus Apex
+16109,Dragon Isles Leatherworking 100 (DNT)
+16110,Subscribed to Hyena Facts

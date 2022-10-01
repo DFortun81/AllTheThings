@@ -26,7 +26,7 @@ class Things(Enum):
     # Please keep them after real collectibles
     Creatures = auto()
     SpellItems = auto()
-    SpellName = auto()
+    SpellNames = auto()
     SkillLines = auto()
     Items = auto()
 
