@@ -24,18 +24,16 @@ class Things(Enum):
     Transmog = auto()
     # Not really collectibles, but we want to process them anyway
     # Please keep them after real collectibles
-    Creature = auto()
-    SpellItem = auto()
+    Creatures = auto()
+    SpellItems = auto()
     SpellName = auto()
-    SkillLine = auto()
-    Item = auto()
+    SkillLines = auto()
+    Items = auto()
 
 
 def add_latest_build(build: str) -> None:
     """Append the latest build to all the BuildList files."""
     for thing in Things:
-        if thing == Things.Creature:
-            break
         with open(Path("Builds", f"{thing.name}.txt"), "a") as build_list:
             build_list.write(build + "\n")
 
@@ -55,11 +53,11 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
         Things.Titles: "chartitles",
         Things.Toys: "toy",
         Things.Transmog: "itemmodifiedappearance",
-        Things.Creature: "creature",
-        Things.SpellItem: "spellitemenchantment",
+        Things.Creatures: "creature",
+        Things.SpellItems: "spellitemenchantment",
         Things.SpellName: "spellname",
-        Things.SkillLine: "skillline",
-        Things.Item: "itemsparse",
+        Things.SkillLines: "skillline",
+        Things.Items: "itemsparse",
     }
     url = f"https://wow.tools/dbc/api/export/?name={thing2table[thing]}&build={build}"
     headers = {
@@ -121,33 +119,39 @@ def get_thing_data(thing: Things, build: str) -> list[str]:
                     thing_list.append(f"{row['Spell']},{row['SkillLine']}\n")
                 case Things.Titles:
                     # Titles have names in the same db
-                    thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
+                    try:
+                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['Mask_ID']},{row['Name_lang[0]']}\n")
                 case Things.Toys:
                     # Item names are in Item Sparse db
                     thing_list.append(f"{row['ItemID']}\n")
                 case Things.Transmog:
                     # Item names are in Item Sparse db.
                     thing_list.append(f"{row['ID']},{row['ItemID']}\n")
-                case Things.Creature:
+                case Things.Creatures:
                     # Helps Followers and Pets to get names
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                case Things.SpellItem:
+                case Things.SpellItems:
                     # Helps Illusion names
-                    thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    try:
+                        thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
+                    except KeyError:
+                        thing_list.append(f"{row['ID']},{row['Name_lang[0]']}\n")
                 case Things.SpellName:
                     # Helps Recipes
                     thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
-                case Things.SkillLine:
+                case Things.SkillLines:
                     # Helps Professions
                     try:
                         thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
                     except KeyError:
                         thing_list.append(f"{row['ID']},{row['DisplayName_lang[0]']}\n")
-                case Things.Item:
+                case Things.Items:
                     # Helps Toys and Transmog
                     thing_list.append(f"{row['ID']},{row['Display_lang']}\n")
         except KeyError:
-            print("Cursed",build)
+            print("Cursed", build)
     return thing_list
 
 
@@ -190,8 +194,8 @@ def get_existing_ids(thing: Things) -> list[str]:
 def build_profession_dict() -> dict[str, int | dict[str, int]]:
     """Returns dict[profession: str, skillLineID: int]."""
     profession_dict = dict[str, int | list[str]]()
-    with open(Path("Raw", "SkillLine.txt")) as skillline_file, open(Path("Builds", "SkillLine.txt")) as build_file:
-        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLine.txt"), 0)
+    with open(Path("Raw", "SkillLines.txt")) as skillline_file, open(Path("Builds", "SkillLines.txt")) as build_file:
+        exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
         builds = build_file.readlines()
         for skillline_line in skillline_file:
             if skillline_line not in builds:
@@ -242,8 +246,6 @@ def sort_raw_file_recipes() -> None:
 
 def create_raw_file(thing: Things) -> None:
     """Create a raw file for a thing."""
-    #if thing == Things.Recipes:
-       # raise ValueError("Use sort_raw_file_recipes() for Recipes.")
     raw_path = Path("Raw", f"{thing.name}.txt")
     builds_path = Path("Builds", f"{thing.name}.txt")
     with open(builds_path) as builds_file:
@@ -472,7 +474,7 @@ def post_process(thing: Things) -> None:
     elif thing == Things.Followers:
         # TODO:
         raise NotImplementedError("Followers are not implemented yet.")
-    elif thing == Things.Creature:
+    elif thing == Things.Creatures:
         # TODO:
         # Helps Followers and Pets to get names
         # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
@@ -497,7 +499,7 @@ def post_process(thing: Things) -> None:
         # TODO:
         # thing_list.append(f"{row['ID']},{row['Name_lang']}\n")
         raise NotImplementedError("SpellNames are not implemented yet.")
-    elif thing == Things.SkillLine:
+    elif thing == Things.SkillLines:
         # TODO:
         # thing_list.append(f"{row['ID']},{row['DisplayName_lang']}\n")
         raise NotImplementedError("SkillLines are not implemented yet.")
